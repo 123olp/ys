@@ -1,17 +1,20 @@
-# Possibilistic Maximalism
-
 <div align="center">
+
+# 🌌 Possibilistic Maximalism
 
 **A Three-Dimensional Framework for Eliminating Scarcity**
 *From Finite Existence to Continuous Evolution*
 
-[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
-[![Status: Research](https://img.shields.io/badge/Status-Research-blue.svg)]()
-[![Language: English/中文](https://img.shields.io/badge/Language-English%2F中文-green.svg)]()
+---
 
-[📖 Whitepaper](#whitepaper) • [🎯 Core Concepts](#core-concepts) • [🚀 Three Dimensions](#three-dimensions) • [📚 Resources](#resources) • [🤝 Contributing](#contributing)
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-blue.svg?style=for-the-badge)](https://creativecommons.org/licenses/by/4.0/)
+[![Status: Research](https://img.shields.io/badge/Status-Active%20Research-success.svg?style=for-the-badge)]()
+[![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-brightgreen.svg?style=for-the-badge)]()
+[![Language](https://img.shields.io/badge/Language-English%20%7C%20中文-orange.svg?style=for-the-badge)]()
 
 **[中文版](README.md)** | **English**
+
+[📖 Whitepaper](#-whitepaper) • [🎯 Core Concepts](#-core-concepts) • [🚀 Three Dimensions](#-three-dimensions) • [📚 Resources](#-learning-resources) • [🤝 Contributing](#-contributing)
 
 </div>
 
