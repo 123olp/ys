@@ -1,20 +1,57 @@
-# OS
+# OS generated files
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
 Thumbs.db
 
-# VCS
-.git/
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
 
-# Outputs
+# Temporary files
+*.tmp
+*.bak
+*.log
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+
+# Build outputs
+dist/
+build/
+*.egg-info/
 out/
 *.pdf
 *.html
 
-# Editors
-.vscode/
-.idea/
+# Jupyter Notebook
+.ipynb_checkpoints
 
-# Data caches
-*.log
-*.tmp
+# Personal notes (not for public)
+private/
+drafts/
+personal_notes/
 
+# Large data files
+*.csv.gz
+*.parquet
+data/raw/*
+!data/raw/.gitkeep
+
+# Credentials
+.env
+secrets.yaml
+config_local.yaml
