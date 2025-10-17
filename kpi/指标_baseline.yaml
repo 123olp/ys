@@ -1,0 +1,26 @@
+# v0.1 — KPI Baseline (可迭代)
+version: 0.1
+updated_at: 2025-10-17
+owner: core/metrics
+
+longevity:
+  delta_LE_per_year: null  # 年增寿 (年/年)
+  HALE_over_LE: null       # 健康寿命/总寿命
+  cause_specific_mortality_decline: null  # 主要老年病年降幅
+
+cognition:
+  bci_bandwidth_bps: null         # 读/写带宽 (bit/s)
+  write_error_rate: null          # 写入误差 ε
+  experience_consistency_kappa: null  # 体验一致性 κ
+  adverse_event_rate: null        # AE 发生率
+
+energy:
+  system_efficiency_eta: null     # 系统能效 η
+  eroei: null                     # 能源投资回报比
+  possibility_per_joule: null     # 单位“可能/焦”
+  thermal_emission_intensity: null# 热排强度 q
+
+governance:
+  irb_approval_rate: null
+  audit_trace_completeness: null
+  consent_revocation_latency_ms: null
