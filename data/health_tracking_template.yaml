@@ -1,0 +1,360 @@
+# 个人健康追踪模板
+# 用于永生工程的长期生物标记监测
+# 建议频率：每月更新一次，重要指标每周一次
+
+metadata:
+  person_id: "YOUR_ID"
+  date_of_birth: "YYYY-MM-DD"
+  baseline_date: "YYYY-MM-DD"  # 开始追踪的日期
+  last_updated: "YYYY-MM-DD"
+
+# ============================================
+# 第一部分：基础生命体征（每周）
+# ============================================
+vital_signs:
+  - date: "2025-10-18"
+    weight_kg: null
+    height_cm: null
+    bmi: null
+    body_fat_percentage: null
+    muscle_mass_kg: null
+    resting_heart_rate_bpm: null
+    blood_pressure_systolic: null
+    blood_pressure_diastolic: null
+    body_temperature_celsius: null
+    respiratory_rate: null
+    vo2_max: null  # 最大摄氧量（心肺功能指标）
+
+# ============================================
+# 第二部分：血液生物标记（每3-6个月）
+# ============================================
+blood_biomarkers:
+  - date: "2025-10-18"
+    # 代谢指标
+    glucose_fasting_mmol_L: null
+    hba1c_percentage: null  # 糖化血红蛋白
+    insulin_fasting_uIU_mL: null
+    homa_ir: null  # 胰岛素抵抗指数
+
+    # 脂质面板
+    total_cholesterol_mmol_L: null
+    ldl_cholesterol_mmol_L: null
+    hdl_cholesterol_mmol_L: null
+    triglycerides_mmol_L: null
+    apoB_mg_dL: null
+
+    # 炎症标记
+    crp_high_sensitivity_mg_L: null  # 高敏C反应蛋白
+    il6_pg_mL: null  # 白介素-6
+    tnf_alpha_pg_mL: null  # 肿瘤坏死因子
+
+    # 肝肾功能
+    alt_U_L: null  # 丙氨酸转氨酶
+    ast_U_L: null  # 天冬氨酸转氨酶
+    ggt_U_L: null  # γ-谷氨酰转移酶
+    creatinine_umol_L: null
+    egfr_mL_min: null  # 肾小球滤过率
+
+    # 甲状腺功能
+    tsh_mIU_L: null
+    t3_free_pmol_L: null
+    t4_free_pmol_L: null
+
+    # 性激素（按性别）
+    testosterone_total_nmol_L: null
+    testosterone_free_pmol_L: null
+    estradiol_pmol_L: null
+    dhea_s_umol_L: null
+
+    # 维生素与矿物质
+    vitamin_d_25_oh_nmol_L: null
+    vitamin_b12_pmol_L: null
+    folate_nmol_L: null
+    iron_umol_L: null
+    ferritin_ug_L: null
+    magnesium_mmol_L: null
+
+    # 衰老相关标记
+    igf1_ng_mL: null  # 胰岛素样生长因子
+    cortisol_nmol_L: null
+    homocysteine_umol_L: null
+
+# ============================================
+# 第三部分：衰老生物标记（每年）
+# ============================================
+aging_biomarkers:
+  - date: "2025-10-18"
+    # 端粒长度
+    telomere_length_kb: null
+    telomere_attrition_rate_bp_year: null
+
+    # 表观遗传年龄
+    horvath_clock_age_years: null
+    hannum_clock_age_years: null
+    phenoage_years: null
+    grimage_years: null
+    dunedin_pace: null  # 衰老速度（1.0为正常）
+
+    # 蛋白质组学
+    gdf15_pg_mL: null  # 生长分化因子15（衰老标记）
+    klotho_pg_mL: null  # Klotho蛋白（抗衰老）
+
+    # 细胞衰老标记
+    p16ink4a_expression: null
+    senescent_cell_percentage: null
+
+    # 线粒体功能
+    nad_plus_umol_L: null
+    nadh_umol_L: null
+    nad_nadh_ratio: null
+    mitochondrial_dna_copy_number: null
+
+    # 氧化应激
+    malondialdehyde_umol_L: null  # MDA（脂质过氧化）
+    8_oxo_dg_ng_mL: null  # DNA氧化损伤
+    glutathione_reduced_umol_L: null
+    glutathione_oxidized_umol_L: null
+
+# ============================================
+# 第四部分：基因组数据（一次性+定期验证）
+# ============================================
+genomics:
+  whole_genome_sequencing:
+    date_performed: null
+    provider: null  # "23andMe" / "Nebula Genomics" / etc.
+    data_location: null  # 数据存储路径
+
+  polygenic_risk_scores:
+    alzheimers_disease: null
+    cardiovascular_disease: null
+    type2_diabetes: null
+    cancer_overall: null
+    longevity_score: null
+
+  actionable_variants:
+    apoe_genotype: null  # e.g., "ε3/ε4"
+    mthfr_c677t: null
+    comt_val158met: null
+    other_notes: ""
+
+# ============================================
+# 第五部分：认知功能测试（每季度）
+# ============================================
+cognitive_function:
+  - date: "2025-10-18"
+    # 记忆测试
+    digit_span_forward: null
+    digit_span_backward: null
+    word_recall_immediate: null
+    word_recall_delayed: null
+
+    # 执行功能
+    stroop_test_score: null
+    trail_making_test_a_seconds: null
+    trail_making_test_b_seconds: null
+
+    # 处理速度
+    symbol_digit_modalities_score: null
+    reaction_time_ms: null
+
+    # 整体评估
+    moca_score: null  # Montreal Cognitive Assessment (满分30)
+    mmse_score: null  # Mini-Mental State Examination
+
+    subjective_notes: ""
+
+# ============================================
+# 第六部分：身体机能测试（每季度）
+# ============================================
+physical_function:
+  - date: "2025-10-18"
+    # 肌肉力量
+    grip_strength_kg_dominant: null
+    grip_strength_kg_non_dominant: null
+    leg_press_1rm_kg: null
+
+    # 耐力
+    six_minute_walk_distance_m: null
+    plank_hold_seconds: null
+
+    # 平衡与协调
+    single_leg_stand_seconds: null
+    timed_up_and_go_seconds: null
+
+    # 柔韧性
+    sit_and_reach_cm: null
+
+    subjective_notes: ""
+
+# ============================================
+# 第七部分：影像学检查（每1-2年）
+# ============================================
+imaging:
+  - date: "2025-10-18"
+    type: "brain_mri"  # "brain_mri" / "ct_calcium_score" / "dexa_scan" / etc.
+    findings: ""
+    quantitative_metrics:
+      brain_volume_cm3: null
+      white_matter_hyperintensities_ml: null
+      hippocampal_volume_cm3: null
+      cortical_thickness_mm: null
+
+  - date: null
+    type: "coronary_calcium_score"
+    agatston_score: null
+    percentile_for_age: null
+
+  - date: null
+    type: "dexa_bone_density"
+    lumbar_spine_t_score: null
+    femoral_neck_t_score: null
+    total_hip_t_score: null
+
+# ============================================
+# 第八部分：生活方式追踪（每日/每周）
+# ============================================
+lifestyle:
+  - week_of: "2025-W42"
+    # 睡眠
+    avg_sleep_duration_hours: null
+    avg_sleep_quality_score: null  # 1-10主观评分
+    sleep_tracker_device: null  # "Oura Ring" / "Whoop" / etc.
+
+    # 运动
+    total_exercise_minutes: null
+    cardio_minutes: null
+    strength_training_minutes: null
+    steps_per_day_avg: null
+
+    # 饮食
+    avg_caloric_intake: null
+    protein_g_per_day: null
+    carbs_g_per_day: null
+    fat_g_per_day: null
+    fiber_g_per_day: null
+    fasting_hours_per_day_avg: null  # 间歇性禁食
+
+    # 补充剂（详见supplements部分）
+
+    # 压力与心理健康
+    perceived_stress_scale_score: null  # PSS-10 (0-40)
+    meditation_minutes_per_week: null
+
+    # 社交
+    meaningful_social_interactions_per_week: null
+
+    notes: ""
+
+# ============================================
+# 第九部分：补充剂与干预（持续记录）
+# ============================================
+supplements:
+  current_regimen:
+    - name: "NMN"
+      dosage: "500mg"
+      frequency: "daily"
+      start_date: "2025-10-18"
+      end_date: null
+      purpose: "NAD+补充，线粒体功能"
+
+    - name: "维生素D3+K2"
+      dosage: "5000 IU D3 + 100mcg K2"
+      frequency: "daily"
+      start_date: null
+      end_date: null
+      purpose: "骨骼健康，免疫支持"
+
+    # 添加更多补充剂...
+
+  past_interventions:
+    - name: "雷帕霉素"
+      dosage: "5mg"
+      frequency: "weekly"
+      start_date: "2024-01-01"
+      end_date: "2024-06-30"
+      outcome: "停止因副作用（口腔溃疡）"
+
+# ============================================
+# 第十部分：临床试验参与（记录）
+# ============================================
+clinical_trials:
+  - trial_name: "Senolytics Phase II"
+    clinicaltrials_gov_id: "NCT12345678"
+    start_date: null
+    end_date: null
+    status: "screening"  # screening / enrolled / completed / withdrawn
+    intervention: "达沙替尼+槲皮素"
+    notes: ""
+
+# ============================================
+# 第十一部分：事件日志（重要医疗事件）
+# ============================================
+medical_events:
+  - date: "2025-10-18"
+    type: "diagnosis"  # diagnosis / surgery / hospitalization / injury
+    description: ""
+    impact_on_longevity_trajectory: ""
+
+# ============================================
+# 第十二部分：长期目标与里程碑
+# ============================================
+goals:
+  target_biological_age_by_2030: 25
+  target_dunedin_pace: 0.8  # <1.0 表示衰老减慢
+  target_vo2_max: 50
+
+  milestones:
+    - description: "建立iPSC库"
+      target_date: "2026-12-31"
+      status: "pending"
+
+    - description: "完成全基因组测序"
+      target_date: "2025-12-31"
+      status: "pending"
+
+    - description: "参加首个senolytics临床试验"
+      target_date: "2026-06-30"
+      status: "pending"
+
+# ============================================
+# 数据分析（自动计算部分）
+# ============================================
+analytics:
+  trends:
+    biological_age_trajectory: null  # 计算斜率
+    telomere_attrition_rate: null
+    cognitive_decline_rate: null
+
+  risk_flags:
+    cardiovascular_risk: null  # low / moderate / high
+    metabolic_risk: null
+    neurodegenerative_risk: null
+
+  recommendations:
+    - "基于当前数据，建议增加心肺运动"
+    - "维生素D水平偏低，建议增加剂量至10000 IU"
+
+# ============================================
+# 元数据
+# ============================================
+data_quality:
+  completeness_percentage: null
+  last_comprehensive_checkup: null
+  next_scheduled_tests:
+    - test: "血液全面分析"
+      date: "2026-01-15"
+    - test: "脑部MRI"
+      date: "2027-10-18"
+
+notes: |
+  使用说明：
+  1. 每周更新生命体征部分
+  2. 每3-6个月进行全面血液检查
+  3. 每年进行衰老生物标记测试
+  4. 保持数据完整性，空值用null标记
+  5. 定期备份此文件到加密云存储
+
+  数据隐私：
+  - 此文件包含敏感健康信息
+  - 仅存储在私有仓库
+  - 定期审查访问权限
