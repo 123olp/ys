@@ -39,6 +39,7 @@ ENV/
 env.bak/
 venv.bak/
 *.gz
+1
 
 dump.sql
 
