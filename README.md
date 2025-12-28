@@ -16,19 +16,19 @@ Wetware Engineering proposes treating organs, tissues, actuators, and sensors as
 
 | 中文 | English | 说明 |
 |-----|---------|------|
-| [快速入门指南](i18n/zh/湿件工程快速入门指南.md) | Coming Soon | 5分钟理解核心概念 |
-| [湿件工程](i18n/zh/湿件工程.md) | Coming Soon | 完整概念介绍 |
-| [湿件工程宣言](i18n/zh/湿件工程宣言.md) | Coming Soon | 愿景与原则 |
-| [湿件工程技术规范](i18n/zh/湿件工程技术规范.md) | Coming Soon | Bio-Component Spec & Bio-DSL |
+| [快速入门指南](i18n/zh/湿件工程快速入门指南.md) | [Quick Start](i18n/en/wetware_engineering_quick_start.md) | 5分钟理解核心概念 |
+| [湿件工程](i18n/zh/湿件工程.md) | [Wetware Engineering](i18n/en/wetware_engineering.md) | 完整概念介绍 |
+| [湿件工程宣言](i18n/zh/湿件工程宣言.md) | [Manifesto](i18n/en/wetware_engineering_manifesto.md) | 愿景与原则 |
+| [湿件工程技术规范](i18n/zh/湿件工程技术规范.md) | [Technical Spec](i18n/en/wetware_engineering_technical_spec.md) | Bio-Component Spec & Bio-DSL |
 
 ### 永生计划 (Immortality Project)
 
 | 中文 | English | 说明 |
 |-----|---------|------|
 | [项目概述](i18n/zh/src/immortality/README.md) | [Overview](i18n/en/src/immortality/README.md) | 项目介绍 |
-| [Human 3.0 架构](i18n/zh/src/immortality/docs/core/human_3.0_architecture.md) | [Blueprint](i18n/en/src/immortality/human_3.0_technical_blueprint.md) | 技术架构 |
-| [技术蓝图](i18n/zh/src/immortality/docs/core/human_3.0_technical_blueprint.md) | [Roadmap](i18n/en/src/immortality/immortality_roadmap.md) | 实施路线 |
-| [27要素](i18n/zh/src/immortality/docs/core/immortality_27_elements.md) | - | 永生27要素 |
+| [Human 3.0 架构](i18n/zh/src/immortality/docs/core/human_3.0_architecture.md) | [Architecture](i18n/en/src/immortality/docs/core/human_3.0_architecture.md) | 技术架构 |
+| [27要素](i18n/zh/src/immortality/docs/core/immortality_27_elements.md) | [27 Elements](i18n/en/src/immortality/docs/core/immortality_27_elements.md) | 永生27要素 |
+| [技术蓝图](i18n/zh/src/immortality/docs/core/human_3.0_technical_blueprint.md) | [Blueprint](i18n/en/src/immortality/human_3.0_technical_blueprint.md) | 实施路线 |
 
 ## 🎯 Core Concepts
 
@@ -71,27 +71,19 @@ wetware-engineering/
 ├── CODE_OF_CONDUCT.md
 ├── i18n/
 │   ├── zh/                          # 中文文档
-│   │   ├── README.md
 │   │   ├── 湿件工程.md
 │   │   ├── 湿件工程宣言.md
 │   │   ├── 湿件工程技术规范.md
 │   │   ├── 湿件工程快速入门指南.md
 │   │   └── src/immortality/         # 永生计划 (中文)
-│   │       ├── README.md
-│   │       ├── docs/core/           # 核心文档
-│   │       ├── docs/philosophy/     # 哲学探讨
-│   │       ├── docs/guides/         # 指南
-│   │       └── data/                # 数据模板
 │   └── en/                          # English docs
-│       ├── README.md
+│       ├── wetware_engineering.md
+│       ├── wetware_engineering_manifesto.md
+│       ├── wetware_engineering_technical_spec.md
+│       ├── wetware_engineering_quick_start.md
 │       └── src/immortality/         # Immortality Project (EN)
-│           ├── README.md
-│           ├── human_3.0_technical_blueprint.md
-│           └── immortality_roadmap.md
 └── .github/
-    ├── workflows/lint.yml
-    ├── ISSUE_TEMPLATE/
-    └── PULL_REQUEST_TEMPLATE.md
+    └── workflows/lint.yml
 ```
 
 ## 🗺️ Roadmap
@@ -100,8 +92,8 @@ wetware-engineering/
 - [x] Bio-Component Spec v0.1
 - [x] Bio-DSL syntax draft
 - [x] Chinese documentation
+- [x] English documentation
 - [x] Immortality Project (ZH/EN)
-- [ ] Wetware Engineering English docs
 - [ ] Reference implementation
 - [ ] Tool chain development
 
