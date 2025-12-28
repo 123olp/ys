@@ -18,9 +18,9 @@
 | Document | Description |
 |----------|-------------|
 | [Overview](src/immortality/README.md) | Project introduction |
-| [Academic Version](src/immortality/i18n/en/README_academic.md) | Academic style documentation |
-| [Technical Blueprint](src/immortality/i18n/en/human_3.0_technical_blueprint.md) | Human 3.0 architecture |
-| [Roadmap](src/immortality/i18n/en/immortality_roadmap.md) | Implementation roadmap |
+| [Academic Version](src/immortality/README_academic.md) | Academic style documentation |
+| [Technical Blueprint](src/immortality/human_3.0_technical_blueprint.md) | Human 3.0 architecture |
+| [Roadmap](src/immortality/immortality_roadmap.md) | Implementation roadmap |
 
 ## 🌏 Other Languages
 

@@ -18,7 +18,6 @@
 | 文档 | 说明 |
 |-----|------|
 | [项目概述](src/immortality/README.md) | 永生计划介绍 |
-| [学术版](src/immortality/README_academic.md) | 学术风格文档 |
 | **核心文档** | |
 | [Human 3.0 架构](src/immortality/docs/core/human_3.0_architecture.md) | 技术架构设计 |
 | [Human 3.0 技术蓝图](src/immortality/docs/core/human_3.0_technical_blueprint.md) | 详细技术蓝图 |

@@ -93,7 +93,6 @@ wetware-engineering/
 ├── CONTRIBUTING.md              # 贡献指南
 ├── CODE_OF_CONDUCT.md           # 行为准则
 ├── LICENSE                      # CC BY-SA 4.0
-├── .markdownlint.json           # Markdown lint 配置
 │
 ├── i18n/zh/                     # 中文文档
 │   ├── README.md                # 中文索引
@@ -103,17 +102,29 @@ wetware-engineering/
 │   ├── 湿件工程快速入门指南.md  # 快速入门
 │   └── src/immortality/         # 永生计划（中文）
 │       ├── README.md            # 项目概述
-│       ├── README_academic.md   # 学术版
+│       ├── AGENTS.md            # 子项目 Agent 指南
 │       ├── docs/core/           # 核心文档
+│       │   ├── human_3.0_architecture.md
+│       │   ├── human_3.0_technical_blueprint.md
+│       │   └── immortality_27_elements.md
 │       ├── docs/philosophy/     # 哲学探讨
+│       │   ├── emotion_modeling.md
+│       │   └── ontology_experience_machine.md
 │       ├── docs/guides/         # 指南
+│       │   └── human_3.0_social_media.md
 │       └── data/                # 数据模板
+│           ├── health_tracking_template.yaml
+│           └── refs/核心论文清单.md
 │
 ├── i18n/en/                     # English docs
 │   ├── README.md                # English index
 │   └── src/immortality/         # Immortality Project (EN)
 │       ├── README.md
-│       └── i18n/en/             # English translations
+│       ├── README_academic.md
+│       ├── AGENTS.md
+│       ├── human_3.0_technical_blueprint.md
+│       ├── human_3.0_technical_blueprint_academic.md
+│       └── immortality_roadmap.md
 │
 └── .github/
     ├── workflows/lint.yml       # Markdown lint CI
@@ -125,7 +136,7 @@ wetware-engineering/
 
 | 问题 | 原因 | 解决方案 |
 |-----|------|---------|
-| 链接 404 | 路径缺少 `src/` | 检查实际文件位置，英文永生计划在 `i18n/en/src/immortality/` |
+| 链接 404 | 路径缺少 `src/` | 检查实际文件位置 |
 | CI lint 失败 | Markdown 格式问题 | 本地运行 `npx markdownlint-cli2` 检查 |
 | 中文文件名乱码 | Git 配置问题 | 确保 `git config core.quotepath false` |
 
