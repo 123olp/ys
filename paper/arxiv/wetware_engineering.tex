@@ -1,38 +1,30 @@
 \documentclass{article}
 
 \usepackage{arxiv}
-
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{hyperref}
 \usepackage{url}
 \usepackage{booktabs}
 \usepackage{amsfonts}
-\usepackage{nicefrac}
 \usepackage{microtype}
-\usepackage{cleveref}
 \usepackage{graphicx}
 \usepackage{natbib}
-\usepackage{doi}
 \usepackage{listings}
 \usepackage{xcolor}
-\usepackage{longtable}
-\usepackage{array}
+\usepackage{float}
 
-% Code listing style
 \lstset{
-  basicstyle=\ttfamily\small,
+  basicstyle=\ttfamily\footnotesize,
   breaklines=true,
   frame=single,
-  backgroundcolor=\color{gray!10},
-  xleftmargin=2em,
-  framexleftmargin=1.5em,
+  backgroundcolor=\color{gray!5},
+  xleftmargin=0.5em,
+  aboveskip=0.3em,
+  belowskip=0.3em,
 }
 
 \title{Wetware Engineering: Applying Software Engineering Paradigms to Biological System Construction}
-
-\newif\ifuniqueAffiliation
-\uniqueAffiliationtrue
 
 \author{
   \href{https://orcid.org/0009-0009-6523-1823}{\includegraphics[scale=0.06]{orcid.pdf}\hspace{1mm}123olp} \\
@@ -41,672 +33,236 @@
 
 \renewcommand{\shorttitle}{Wetware Engineering}
 
-\hypersetup{
-  pdftitle={Wetware Engineering: Applying Software Engineering Paradigms to Biological System Construction},
-  pdfsubject={cs.SE, q-bio.OT},
-  pdfauthor={123olp},
-  pdfkeywords={Software Engineering, Biological Systems, Modular Design, Domain-Specific Language},
-}
-
 \begin{document}
 \maketitle
 
 \begin{abstract}
-Software engineering underwent a paradigm shift from monolithic, handcrafted programs to modular, composable systems over five decades---a transformation enabled by standardized interfaces, package managers, version control, and runtime orchestration. Biological engineering, despite remarkable advances in synthetic biology, organoids, and tissue engineering, remains trapped in an analogous ``pre-modular'' era: each biological system is constructed from scratch, results are difficult to reproduce across laboratories, and there exists no universal language for describing biological component composition.
+Software engineering underwent a paradigm shift from monolithic programs to modular, composable systems over five decades---enabled by standardized interfaces, package managers, version control, and runtime orchestration. Biological engineering remains in an analogous ``pre-modular'' era: each system is constructed from scratch, results are difficult to reproduce, and no universal language exists for describing biological component composition.
 
-We propose \textbf{Wetware Engineering}, a cross-disciplinary methodology that systematically transfers software engineering's core abstractions---modularity, interface standardization, dependency management, and runtime orchestration---to biological system construction. This is not merely applying computational tools to biology, but fundamentally reconceptualizing how living systems should be designed, described, and assembled.
+We propose \textbf{Wetware Engineering}, a cross-disciplinary methodology that transfers software engineering's core abstractions---modularity, interface standardization, dependency management, and runtime orchestration---to biological system construction. Our contributions include: (1) the \textbf{Component-Interface-Runtime triad} as foundational abstraction for modular biological systems; (2) \textbf{Bio-Component Spec}, a standardized schema for describing biological modules; (3) \textbf{Bio-DSL}, a domain-specific language for declarative system composition; and (4) systematic analysis identifying both direct translations and fundamental differences requiring novel solutions.
 
-Our contribution is threefold: (1) \textbf{Conceptual Framework}: We define the Component-Interface-Runtime triad as the foundational abstraction for modular biological systems, drawing explicit parallels to software architecture patterns. (2) \textbf{Technical Specifications}: We propose Bio-Component Spec, a standardized schema for describing biological modules, and Bio-DSL, a domain-specific language for declarative system composition---both designed following software engineering best practices. (3) \textbf{Paradigm Analysis}: We systematically analyze how software engineering concepts map to biological contexts, identifying both direct translations and fundamental differences requiring novel solutions.
-
-Wetware Engineering represents a paradigm-level contribution: shifting biological system construction from ``artisanal replication'' to ``engineered composition.'' While implementation faces significant biological challenges, establishing this conceptual and methodological foundation is a necessary first step toward reproducible, iterable, and collaborative biological system development.
+Wetware Engineering represents a paradigm-level contribution: shifting biological system construction from ``artisanal replication'' to ``engineered composition.''
 \end{abstract}
 
-\keywords{Software Engineering \and Biological Systems \and Cross-Disciplinary Methodology \and Modular Design \and Domain-Specific Language \and Systems Biology \and Paradigm Transfer}
-
+\keywords{Software Engineering \and Biological Systems \and Modular Design \and Domain-Specific Language \and Systems Biology}
 
 \section{Introduction: The Case for Paradigm Transfer}
 
 \subsection{Software Engineering's Modular Revolution}
 
-The history of software engineering is fundamentally a history of rising abstraction levels. In the 1950s, programmers wrote machine code---sequences of binary instructions tied to specific hardware. The introduction of assembly language provided the first abstraction: human-readable mnemonics replacing numeric opcodes. Structured programming in the 1960s abstracted control flow. Object-oriented programming in the 1980s encapsulated data and behavior together. Component-based development in the 1990s enabled binary-level reuse. Service-oriented architecture in the 2000s abstracted deployment locations. Microservices in the 2010s achieved independent deployment and elastic scaling.
+The history of software engineering is fundamentally a history of rising abstraction levels. In the 1950s, programmers wrote machine code. Assembly language provided the first abstraction. Structured programming (1960s) abstracted control flow. Object-oriented programming (1980s) encapsulated data and behavior. Component-based development (1990s) enabled binary-level reuse. Service-oriented architecture (2000s) abstracted deployment. Microservices (2010s) achieved independent deployment and elastic scaling.
 
-Each abstraction level brought transformative benefits:
+Each abstraction level did not merely add convenience---it fundamentally changed what was possible. Before package managers, sharing code meant copying files. Before containerization, ``it works on my machine'' was unsolvable. Before version control, collaboration meant emailing zip files.
 
-\begin{table}[h]
-\centering
-\caption{Evolution of Software Engineering Abstractions}
-\begin{tabular}{@{}llll@{}}
-\toprule
-Era & Abstraction & Key Innovation & Impact \\
-\midrule
-1950s & Machine code $\rightarrow$ Assembly & Human-readable instructions & 10x productivity \\
-1960s & Procedures & Structured programming & Manageable complexity \\
-1970s & Modules & Information hiding, interfaces & Team collaboration \\
-1980s & Objects & Data + behavior encapsulation & Reusable libraries \\
-1990s & Components & Binary reuse (COM, JavaBeans) & Third-party ecosystems \\
-2000s & Services & Network-based composition & Enterprise integration \\
-2010s & Microservices & Independent deployment & Cloud-native scalability \\
-\bottomrule
-\end{tabular}
-\label{tab:evolution}
-\end{table}
-
-The critical insight is that each abstraction level did not merely add convenience---it fundamentally changed what was possible. Before package managers like npm and pip, sharing code meant copying files and manually resolving dependencies. Before containerization, ``it works on my machine'' was an unsolvable problem. Before version control, collaboration meant emailing zip files.
-
-Today, a software developer can declare \texttt{import tensorflow} and instantly access millions of lines of tested, documented, version-controlled code. This is not magic---it is the accumulated result of decades of standardization, tooling, and community building.
+Today, a developer can declare \texttt{import tensorflow} and instantly access millions of lines of tested, documented, version-controlled code---the accumulated result of decades of standardization.
 
 \subsection{Biological Engineering's ``Pre-Modular'' State}
 
-Biological engineering in 2025, despite extraordinary advances, remains in a state analogous to software engineering circa 1970. Consider the following comparison:
+Biological engineering in 2025, despite extraordinary advances, remains analogous to software circa 1970:
 
-\begin{table}[h]
+\begin{table}[H]
 \centering
 \caption{Software vs. Biological Engineering: Current State}
 \begin{tabular}{@{}lll@{}}
 \toprule
-Software Engineering Concept & Current State in Biology & The Gap \\
+Software Concept & Biology Status & The Gap \\
 \midrule
 Standard Library & None & Each lab builds from scratch \\
-Package Manager (npm, pip) & None & Cannot declare dependencies \\
-Version Control (git) & None & ``This batch differs from last batch'' \\
+Package Manager & None & Cannot declare dependencies \\
+Version Control & None & ``This batch differs from last'' \\
 API Documentation & None & ``Ask the original author'' \\
 Unit Testing & None & ``How long will it last?'' \\
-CI/CD Pipeline & None & No automated validation \\
-Containerization (Docker) & None & Environments not reproducible \\
 \bottomrule
 \end{tabular}
-\label{tab:comparison}
 \end{table}
 
-When a tissue engineer wants to combine a muscle actuator with a neural controller, they face challenges that software engineers solved decades ago:
-
-\begin{enumerate}
-\item \textbf{No standard interfaces}: The muscle was developed in Lab A with specific culture conditions; the neural tissue in Lab B with different protocols. There is no guarantee they can physically or biochemically connect.
-
-\item \textbf{No dependency declaration}: What exactly does the muscle need? Glucose concentration? Oxygen levels? Stimulation frequency? This information exists in lab notebooks, not machine-readable specifications.
-
-\item \textbf{No version compatibility}: Lab A improved their muscle protocol last month. Does it still work with Lab B's neural tissue? No one knows without re-running experiments.
-
-\item \textbf{No composition language}: How do you describe ``connect muscle output to sensor input, with closed-loop feedback control''? In natural language, buried in a methods section.
-\end{enumerate}
+When a tissue engineer wants to combine a muscle actuator with a neural controller, they face challenges software engineers solved decades ago: no standard interfaces, no dependency declaration, no version compatibility, no composition language.
 
 The fundamental problem is conceptual: biological systems are treated as \textbf{indivisible wholes} rather than \textbf{composable collections of modules}.
 
 \subsection{Why Paradigm Transfer, Not Just Tool Application}
 
-Existing ``computational biology'' primarily means:
-\begin{itemize}
-\item Using computers to \textbf{analyze} biological data (bioinformatics)
-\item Using algorithms to \textbf{simulate} biological processes (systems biology)
-\item Using software to \textbf{control} biological experiments (lab automation)
-\end{itemize}
+Existing ``computational biology'' means using computers to analyze data (bioinformatics), simulate processes (systems biology), or control experiments (automation). These apply software as a \textit{tool} to biology.
 
-These are valuable but insufficient. They apply software as a tool to biology, without changing how biology itself is engineered.
+We propose something different: \textbf{using software engineering's design philosophy to reconceptualize how biological systems are constructed}. This is paradigm transfer, not tool application.
 
-We propose something fundamentally different:
-
-\begin{quote}
-\textbf{Using software engineering's design philosophy to reconceptualize how biological systems are constructed.}
-\end{quote}
-
-\begin{table}[h]
-\centering
-\caption{Levels of Software-Biology Integration}
-\begin{tabular}{@{}lll@{}}
-\toprule
-Level & Existing Approaches & Wetware Engineering \\
-\midrule
-Tool & Software analyzes biology & --- \\
-Method & Algorithms optimize experiments & --- \\
-\textbf{Paradigm} & --- & \textbf{Software thinking restructures bioengineering} \\
-\bottomrule
-\end{tabular}
-\label{tab:levels}
-\end{table}
-
-The distinction matters. Tools and methods operate within existing paradigms. Paradigm transfer creates new possibilities that were previously inconceivable.
-
-\subsection{Contributions and Paper Structure}
-
-This paper makes the following contributions:
+\subsection{Contributions}
 
 \begin{enumerate}
-\item \textbf{Paradigm Definition}: We systematically propose transferring software engineering's core paradigms to biological system construction, articulating why this transfer is both necessary and feasible.
-
-\item \textbf{Abstraction Framework}: We define the Component-Interface-Runtime triad as the foundational abstraction for modular biological systems, with explicit mappings to software architecture patterns.
-
-\item \textbf{Technical Specifications}: We propose Bio-Component Spec v0.1, a standardized schema for describing biological modules, and Bio-DSL, a domain-specific language for declarative system composition.
-
-\item \textbf{Mapping Analysis}: We systematically analyze how software engineering concepts translate to biological contexts, categorizing mappings as Direct, Analogous, or Novel (requiring new solutions).
-
-\item \textbf{Difference Identification}: We identify fundamental differences between software and biological systems that require innovative approaches beyond direct paradigm transfer.
+\item \textbf{Paradigm Definition}: Systematic transfer of software engineering paradigms to biological system construction
+\item \textbf{Abstraction Framework}: Component-Interface-Runtime triad for modular biological systems
+\item \textbf{Technical Specifications}: Bio-Component Spec v0.1 and Bio-DSL
+\item \textbf{Mapping Analysis}: Direct, Analogous, and Novel mappings identified
+\item \textbf{Difference Identification}: Fundamental challenges requiring innovation
 \end{enumerate}
-
-The paper is structured as follows: \S2 defines core abstractions and the Component-Interface-Runtime triad; \S3 presents systematic mappings from software to biological engineering; \S4 details the Bio-Component Specification design; \S5 describes Bio-DSL language design rationale; \S6 analyzes fundamental differences and open challenges; \S7 positions our work relative to existing approaches; \S8 concludes with future directions.
 
 
 \section{Core Abstractions: The Component-Interface-Runtime Triad}
 
 \subsection{Abstraction as the Essence of Engineering}
 
-Edsger Dijkstra observed: ``The purpose of abstraction is not to be vague, but to create a new semantic level in which one can be absolutely precise.'' This insight captures why abstraction is not merely a convenience but the essence of engineering progress.
+Dijkstra observed: ``The purpose of abstraction is not to be vague, but to create a new semantic level in which one can be absolutely precise.'' Software engineering's success stems from identifying correct abstraction boundaries: functions abstract instructions, objects abstract data and behavior, interfaces abstract implementations, containers abstract environments.
 
-Software engineering's success stems from identifying \textbf{correct abstraction boundaries}:
-\begin{itemize}
-\item Functions abstract instruction sequences
-\item Objects abstract data and behavior
-\item Interfaces abstract implementation details
-\item Services abstract deployment locations
-\item Containers abstract operating environments
-\end{itemize}
+The central question for biological engineering: \textbf{What are the correct abstraction boundaries for living systems?}
 
-Each abstraction creates a ``semantic level'' where engineers can reason precisely without concerning themselves with lower-level details. A web developer using React does not think about memory allocation; a data scientist using pandas does not think about CPU cache optimization.
-
-The central question for biological engineering is: \textbf{What are the correct abstraction boundaries for living systems?}
-
-We propose that the answer lies in the same triad that revolutionized software: \textbf{Component}, \textbf{Interface}, and \textbf{Runtime}.
+We propose the same triad that revolutionized software: \textbf{Component}, \textbf{Interface}, and \textbf{Runtime}.
 
 \subsection{Component: The Unit of Biological Reuse}
 
-A \textbf{Bio-Component} is a biological unit that:
-\begin{itemize}
-\item Can exist independently (with appropriate life support)
-\item Can receive energy and nutrients (powerable)
-\item Can respond to control signals (controllable)
-\item Can produce functional outputs (functional)
-\item Can report its state (observable)
-\end{itemize}
+A \textbf{Bio-Component} is a biological unit that: can exist independently (with life support), can receive energy/nutrients, can respond to control signals, can produce functional outputs, and can report its state.
 
-This definition deliberately parallels software component definitions. A software component is similarly self-contained, has defined inputs and outputs, maintains internal state, and can be monitored.
-
-\begin{table}[h]
-\centering
-\caption{Software to Bio-Component Property Mapping}
-\begin{tabular}{@{}ll@{}}
-\toprule
-Software Component Property & Bio-Component Equivalent \\
-\midrule
-Encapsulation & Physical boundary, membrane structure \\
-Interface & Input/output port definitions \\
-State & Physiological state, viability indicators \\
-Lifecycle & Culture, activation, maintenance, senescence \\
-Dependencies & Nutrients, oxygen, signal inputs \\
-Side Effects & Metabolic waste, secretions \\
-\bottomrule
-\end{tabular}
-\label{tab:component-mapping}
-\end{table}
-
-Drawing from software architecture patterns, we propose a typology of Bio-Components:
-
-\begin{table}[h]
+\begin{table}[H]
 \centering
 \caption{Component Typology}
 \begin{tabular}{@{}lll@{}}
 \toprule
 Type & Software Analogy & Biological Examples \\
 \midrule
-Actuator & Output device driver & Muscle, gland, ciliated epithelium \\
-Sensor & Input device driver & Photoreceptor, mechanoreceptor, chemoreceptor \\
-Processor & CPU, logic unit & Ganglion, brain organoid, neural network \\
-Storage & Memory, database & Adipose tissue, bone marrow \\
-Connector & Network interface & Blood vessel, nerve fiber \\
-Metabolic & Power supply & Liver tissue, mitochondria-rich cells \\
+Actuator & Output driver & Muscle, gland \\
+Sensor & Input driver & Photoreceptor, mechanoreceptor \\
+Processor & CPU/logic & Ganglion, brain organoid \\
+Storage & Memory/database & Adipose tissue \\
+Connector & Network interface & Blood vessel, nerve \\
+Metabolic & Power supply & Liver tissue \\
 \bottomrule
 \end{tabular}
-\label{tab:typology}
 \end{table}
 
 \subsection{Interface: The Contract for Composition}
 
-The Gang of Four's design principle states: ``Program to an interface, not an implementation.'' This principle enabled the explosion of software reuse: as long as components agree on interfaces, their internal implementations can vary independently.
+The Gang of Four principle: ``Program to an interface, not an implementation.'' Biological interfaces operate across four dimensions:
 
-An interface is a \textbf{contract} that defines:
-\begin{itemize}
-\item What inputs are accepted (preconditions)
-\item What outputs are produced (postconditions)
-\item What guarantees are maintained (invariants)
-\end{itemize}
+\textbf{Power Interface}: Energy and nutrient flow (perfusion connections, diffusion surfaces)
 
-Biological interfaces are more complex than software interfaces because they operate across multiple physical dimensions simultaneously. We identify four primary dimensions:
+\textbf{Signal Interface}: Information exchange (electrical, chemical, mechanical, optical)
 
-\textbf{Power Interface}: How energy and nutrients flow between components
-\begin{itemize}
-\item Perfusion connections (blood vessel equivalents)
-\item Nutrient diffusion surfaces
-\item Oxygen delivery mechanisms
-\end{itemize}
+\textbf{Isolation Interface}: Protection barriers (immune, toxicity, electrical isolation)
 
-\textbf{Signal Interface}: How information is exchanged
-\begin{itemize}
-\item Electrical signals (neural)
-\item Chemical signals (hormones, neurotransmitters)
-\item Mechanical signals (stretch, pressure)
-\item Optical signals (for optogenetic systems)
-\end{itemize}
+\textbf{Mechanical Interface}: Force transmission (structural attachments, movement coupling)
 
-\textbf{Isolation Interface}: How components are protected from each other
-\begin{itemize}
-\item Immune barriers (preventing rejection)
-\item Toxicity isolation (containing harmful metabolites)
-\item Electrical isolation (preventing signal crosstalk)
-\end{itemize}
-
-\textbf{Mechanical Interface}: How physical forces are transmitted
-\begin{itemize}
-\item Structural attachments
-\item Force transmission surfaces
-\item Movement coupling
-\end{itemize}
+The USB analogy: before USB, every device had proprietary connectors. After USB, one connector fits all. We envision Bio-Interfaces achieving similar transformation.
 
 \subsection{Runtime: The Orchestration Layer}
 
-In software systems, the runtime environment handles resource management, lifecycle management, fault handling, monitoring, and coordination. Modern container orchestrators like Kubernetes exemplify sophisticated runtime systems.
-
-A Bio-Runtime must handle analogous responsibilities:
-
-\begin{table}[h]
-\centering
-\caption{Runtime Responsibilities Mapping}
-\begin{tabular}{@{}ll@{}}
-\toprule
-Software Runtime & Bio-Runtime \\
-\midrule
-Memory allocation & Nutrient allocation \\
-CPU scheduling & Activity timing control \\
-Network I/O & Signal routing \\
-Health checks & Viability monitoring \\
-Auto-restart & Regeneration/replacement triggering \\
-Logging & Biomarker time-series recording \\
-Load balancing & Workload distribution across redundant modules \\
-Fault isolation & Containing necrosis, inflammation \\
-\bottomrule
-\end{tabular}
-\label{tab:runtime}
-\end{table}
+A Bio-Runtime handles: nutrient allocation (memory), activity timing (CPU scheduling), signal routing (network I/O), viability monitoring (health checks), regeneration triggering (auto-restart), biomarker recording (logging), and fault isolation (containing necrosis).
 
 The perfusion system---delivering nutrients and oxygen while removing waste---is the biological equivalent of power and network infrastructure.
 
-\subsection{The Triad in Action: A Conceptual Example}
+\subsection{The Triad in Action}
 
-Consider assembling a simple bio-robotic system: a muscle that contracts in response to detected force.
-
-\textbf{Components}:
-\begin{itemize}
-\item Muscle actuator (Actuator type)
-\item Force sensor (Sensor type)
-\item Neural controller (Processor type)
-\end{itemize}
-
-\textbf{Interfaces}:
-\begin{itemize}
-\item Sensor $\rightarrow$ Controller: electrical signal interface
-\item Controller $\rightarrow$ Muscle: electrical stimulation interface
-\item All components: perfusion interface for nutrients
-\end{itemize}
-
-\textbf{Runtime}:
-\begin{itemize}
-\item Perfusion system maintaining 37°C, pH 7.4
-\item Monitoring system tracking viability and performance
-\item Control loop executing feedback algorithm
-\end{itemize}
-
-In Bio-DSL (detailed in \S5):
+A simple bio-robotic system (muscle responding to force) in Bio-DSL:
 \begin{lstlisting}
 CONNECT sensor.output TO controller.input
 CONNECT controller.output TO muscle.stimulation
 RUNTIME { perfusion: standard_mammalian, control: closed_loop }
 \end{lstlisting}
 
-The power of this abstraction is that the same description could work with different muscle sources (human, mouse, synthetic), different sensor technologies (piezoelectric, biological), and different controller implementations (organoid, silicon chip). As long as interfaces are honored, components are interchangeable.
+The same description works with different implementations (human/mouse/synthetic muscle, piezoelectric/biological sensor) as long as interfaces are honored.
 
-
-\section{Systematic Mapping: Software Engineering to Biological Engineering}
+\section{Systematic Mapping: Software to Biological Engineering}
 
 \subsection{Mapping Framework}
 
-Not all software engineering concepts transfer equally to biology. We propose a three-category framework for analyzing mappings:
-
-\begin{table}[h]
-\centering
-\caption{Mapping Categories}
-\begin{tabular}{@{}lll@{}}
-\toprule
-Mapping Type & Definition & Transfer Difficulty \\
-\midrule
-Direct & Concept transfers with minimal adaptation & Low \\
-Analogous & Core idea transfers but requires domain-specific adaptation & Medium \\
-Novel & No software equivalent; requires new solutions & High \\
-\bottomrule
-\end{tabular}
-\label{tab:mapping-categories}
-\end{table}
+We categorize mappings as:
+\begin{itemize}
+\item \textbf{Direct}: Transfers with minimal adaptation (versioning, dependencies, docs)
+\item \textbf{Analogous}: Core idea transfers but requires adaptation (testing, error handling)
+\item \textbf{Novel}: No software equivalent; requires new solutions (immune, degradation)
+\end{itemize}
 
 \subsection{Direct Mappings}
 
-These concepts can be transferred almost verbatim from software engineering:
+\textbf{Semantic Versioning}: MAJOR.MINOR.PATCH transfers directly. Example: \texttt{muscle-actuator@2.3.1} where MAJOR=interface-breaking, MINOR=backward-compatible additions, PATCH=fixes.
 
-\textbf{Semantic Versioning}: Software's Semantic Versioning (SemVer) specification defines version numbers as MAJOR.MINOR.PATCH. This transfers directly to Bio-Components:
-\begin{itemize}
-\item \textbf{MAJOR}: Interface-incompatible changes (e.g., different input signal type)
-\item \textbf{MINOR}: Backward-compatible enhancements (e.g., improved force output)
-\item \textbf{PATCH}: Optimizations without interface changes (e.g., faster response time)
-\end{itemize}
-
-Example: \texttt{muscle-actuator-human-skeletal@2.3.1}
-
-\textbf{Dependency Declaration}: Software package manifests (package.json, requirements.txt) declare dependencies with version constraints. Bio-Component manifests can use identical syntax:
+\textbf{Dependency Declaration}: Package manifests work identically:
 \begin{lstlisting}
 dependencies:
   perfusion-medium: "DMEM@^1.0"
   oxygen-supply: ">=15%"
-  temperature-control: "37+/-2C"
-  co-culture:
-    - "endothelial-cells@^1.2"
 \end{lstlisting}
 
-\textbf{Documentation Standards}: README files, API documentation, and usage examples transfer directly. A Bio-Component should include description, requirements, interface specification, usage examples, known limitations, and changelog.
-
-\textbf{Licensing}: Software licenses (MIT, Apache, GPL) define usage rights. Biological components need similar frameworks covering usage rights, modification rights, sharing requirements, attribution, and commercial use restrictions.
+\textbf{Documentation and Licensing}: README files, API docs, and license frameworks transfer directly.
 
 \subsection{Analogous Mappings}
 
-These concepts require adaptation but preserve core principles:
+\textbf{Testing → Validation}: Software tests are deterministic and fast; biological tests are statistical and slow. Adaptation: define acceptance criteria as statistical thresholds.
 
-\textbf{Testing $\rightarrow$ Validation}:
+\textbf{Error Handling → Failure Mode Management}: Software has exceptions/errors/warnings; biology has recoverable degradation (fatigue), irreversible damage (necrosis), and systemic risk (inflammation).
 
-\begin{table}[h]
-\centering
-\caption{Testing to Validation Mapping}
-\begin{tabular}{@{}lll@{}}
-\toprule
-Software Testing & Biological Validation & Adaptation Notes \\
-\midrule
-Unit Test & Viability Test & Test single component function \\
-Integration Test & Compatibility Test & Test component interactions \\
-Stress Test & Endurance Test & Long-term, extreme conditions \\
-Regression Test & Batch Consistency Test & New batches match previous \\
-Performance Test & Efficiency Test & Output per resource consumed \\
-\bottomrule
-\end{tabular}
-\label{tab:testing}
-\end{table}
+\textbf{Logging → Biomarker Recording}: Timestamps, measurements, environmental conditions, anomaly indicators.
 
-Key differences: Software tests are deterministic; biological tests are statistical. Software tests run in milliseconds; biological tests take days/weeks. Software tests are automated; biological tests require manual intervention.
+\subsection{Novel Challenges}
 
-Adaptation: Define acceptance criteria as statistical thresholds:
-\begin{lstlisting}
-tests:
-  viability:
-    metric: "cell_survival_rate"
-    threshold: ">= 90%"
-    confidence: "95%"
-    sample_size: 10
-\end{lstlisting}
+\textbf{Immune Compatibility}: Software components don't ``reject'' each other. Required: compatibility scoring, isolation barriers.
 
-\textbf{Error Handling $\rightarrow$ Failure Mode Management}:
+\textbf{Signal Crosstalk}: Software processes are isolated; biological components share chemical environments.
 
-Software distinguishes exceptions (catchable), errors (serious), and warnings (non-critical). Biological systems have analogous categories:
-\begin{itemize}
-\item \textbf{Recoverable Degradation}: Temporary performance drop (fatigue)
-\item \textbf{Irreversible Damage}: Permanent function loss (necrosis)
-\item \textbf{Systemic Risk}: Threats to other components (inflammation, infection)
-\end{itemize}
+\textbf{Metabolic Coupling}: Software components consume resources independently; biological components share metabolites and produce waste affecting neighbors.
 
-\textbf{Logging $\rightarrow$ Biomarker Recording}:
+\textbf{Living Degradation}: Software doesn't age; biological components inherently degrade.
 
-Software logging captures timestamps, event types, contextual data, and stack traces. Biological logging captures timestamps, physiological measurements, environmental conditions, and anomaly indicators.
-
-\subsection{Novel Challenges Requiring New Solutions}
-
-These challenges have no direct software equivalent:
-
-\textbf{Immune Compatibility}: Software components do not ``reject'' each other. Biological components from different sources may trigger immune responses.
-
-Required Innovation---Immune Compatibility Protocol:
-\begin{lstlisting}
-immune_profile:
-  mhc_class_i: ["HLA-A*02:01", "HLA-B*07:02"]
-  mhc_class_ii: ["HLA-DR*04:01"]
-  
-compatibility_requirements:
-  autologous: "preferred"
-  allogeneic: "requires_matching"
-  xenogeneic: "requires_isolation_barrier"
-\end{lstlisting}
-
-\textbf{Signal Crosstalk}: Software processes are isolated by operating system memory protection. Biological components share chemical environments where signals can interfere.
-
-\textbf{Metabolic Coupling}: Software components consume CPU and memory independently. Biological components share metabolic resources and produce waste that affects neighbors.
-
-Required Innovation---Metabolic Dependency Graph:
-\begin{lstlisting}
-metabolism:
-  consumes:
-    - glucose: "2.5 umol/hour"
-    - oxygen: "5.0 umol/hour"
-  produces:
-    - lactate: "4.0 umol/hour"
-    - co2: "4.5 umol/hour"
-  toxic_threshold:
-    lactate: "< 20 mM in shared medium"
-\end{lstlisting}
-
-\textbf{Living Degradation}: Software does not age. Biological components inherently degrade over time.
-
-\textbf{Ethical Constraints}: Software has no inherent ethical status. Biological components, especially those derived from humans or involving neural tissue, raise ethical considerations with no software parallel.
+\textbf{Ethical Constraints}: Software has no ethical status; biological components raise consent, capability, and disposal considerations.
 
 
-\section{Bio-Component Specification: Design Rationale}
+\section{Bio-Component Specification}
 
-\subsection{Design Principles from Software Engineering}
+\subsection{Design Principles}
 
-The Bio-Component Specification draws from established software engineering principles:
+Bio-Component Spec draws from software engineering principles:
 
-\textbf{SOLID Principles Applied}:
+\textbf{SOLID Applied}: Single Responsibility (one biological function), Open/Closed (enhance without changing interfaces), Liskov Substitution (compatible components interchangeable), Interface Segregation (fine-grained definitions), Dependency Inversion (depend on specs, not implementations).
 
-\begin{table}[h]
-\centering
-\caption{SOLID Principles in Bio-Component Design}
-\begin{tabular}{@{}p{3cm}p{4cm}p{5cm}@{}}
-\toprule
-Principle & Software Definition & Bio-Component Application \\
-\midrule
-Single Responsibility & A class should have one reason to change & A component should perform one biological function \\
-Open/Closed & Open for extension, closed for modification & Components can be enhanced without changing interfaces \\
-Liskov Substitution & Subtypes must be substitutable for base types & Compatible components must be interchangeable \\
-Interface Segregation & Many specific interfaces over one general & Fine-grained interface definitions \\
-Dependency Inversion & Depend on abstractions, not concretions & Depend on interface specs, not specific implementations \\
-\bottomrule
-\end{tabular}
-\label{tab:solid}
-\end{table}
+\textbf{Convention over Configuration}: Sensible defaults minimize required configuration.
 
-\textbf{Convention over Configuration}: Borrowed from Ruby on Rails---provide sensible defaults to minimize required configuration.
-
-\textbf{Schema-First Design}: Like OpenAPI/Swagger for REST APIs, we define the schema before implementations.
+\textbf{Schema-First Design}: Define schema before implementations, like OpenAPI for REST APIs.
 
 \subsection{Specification Structure}
 
-The complete Bio-Component Spec schema includes:
-
-\begin{lstlisting}
-bio-component: "1.0"
-
-# === IDENTIFICATION ===
-info:
-  id: string           # Unique identifier
-  name: string         # Human-readable name
-  version: string      # Semantic version
-  description: string  # Brief description
-  license: string      # Usage license
-  authors: [string]    # Contributors
-
-# === CLASSIFICATION ===
-classification:
-  type: enum [actuator, sensor, processor, metabolic, structural, connector]
-  domain: string       # e.g., "musculoskeletal", "neural"
-  tags: [string]       # Searchable tags
-
-# === BIOLOGICAL SOURCE ===
-source:
-  organism: string     # e.g., "Homo sapiens"
-  tissue_type: string  # e.g., "skeletal muscle"
-  cell_types: [string] # e.g., ["myocyte", "fibroblast"]
-  biosafety_level: enum [BSL-1, BSL-2, BSL-3]
-
-# === INTERFACE DEFINITION ===
-interface:
-  inputs: [InputPort]
-  outputs: [OutputPort]
-
-# === ENVIRONMENTAL REQUIREMENTS ===
-requirements:
-  physical: PhysicalRequirements
-  chemical: ChemicalRequirements
-  biological: BiologicalRequirements
-
-# === PERFORMANCE CHARACTERISTICS ===
-performance:
-  functional: FunctionalMetrics
-  reliability: ReliabilityMetrics
-  resources: ResourceConsumption
-
-# === FAILURE MODES ===
-failure_modes: [FailureMode]
-
-# === TESTING ===
-testing:
-  unit_tests: [TestCase]
-  integration_tests: [IntegrationTest]
-
-# === DEPENDENCIES ===
-dependencies:
-  components: [ComponentDependency]
-  adapters: [AdapterDependency]
-\end{lstlisting}
+The complete schema (Appendix~\ref{app:schema}) includes:
+\begin{itemize}
+\item \textbf{Identification}: id, name, version, license, authors
+\item \textbf{Classification}: type (actuator/sensor/processor/...), domain, tags
+\item \textbf{Source}: organism, tissue type, cell types, biosafety level
+\item \textbf{Interface}: input/output port definitions with parameters
+\item \textbf{Requirements}: physical (temperature), chemical (pH, oxygen), biological
+\item \textbf{Performance}: functional metrics, reliability, resource consumption
+\item \textbf{Failure Modes}: detection, type (recoverable/irreversible), mitigation
+\item \textbf{Testing}: unit tests, integration tests
+\item \textbf{Dependencies}: components, adapters, protocols
+\end{itemize}
 
 \subsection{Versioning Strategy}
 
-We adopt SemVer with biological interpretations:
-
-\textbf{MAJOR version} (X.0.0): Interface-breaking changes
+Semantic versioning with biological interpretations:
 \begin{itemize}
-\item Input/output port type changes
-\item Required parameter additions
-\item Environmental requirement changes that affect compatibility
+\item \textbf{MAJOR}: Interface-breaking (port type changes, new required parameters)
+\item \textbf{MINOR}: Backward-compatible (new optional ports, performance improvements)
+\item \textbf{PATCH}: Fixes (protocol optimizations, documentation)
 \end{itemize}
 
-\textbf{MINOR version} (0.X.0): Backward-compatible additions
-\begin{itemize}
-\item New optional output ports
-\item Performance improvements
-\item Additional monitoring capabilities
-\end{itemize}
+Extended format for biological specificity: \texttt{2.3.1+batch20251228.donor42.wildtype}
 
-\textbf{PATCH version} (0.0.X): Backward-compatible fixes
-\begin{itemize}
-\item Protocol optimizations
-\item Documentation updates
-\item Minor performance tuning
-\end{itemize}
+A complete muscle actuator specification is provided in Appendix~\ref{app:muscle}.
 
-Extended version format for biological specificity:
-\begin{verbatim}
-{version}+{batch}.{donor}.{modification}
-Example: 2.3.1+batch20251228.donor42.wildtype
-\end{verbatim}
-
-\subsection{Example: Muscle Actuator Specification}
-
-\begin{lstlisting}
-bio-component: "1.0"
-
-info:
-  id: "muscle-actuator-human-skeletal"
-  name: "Human Skeletal Muscle Actuator"
-  version: "2.3.1"
-  description: "Contractile muscle tissue for force generation"
-  license: "CC-BY-SA-4.0"
-
-classification:
-  type: "actuator"
-  domain: "musculoskeletal"
-  tags: ["muscle", "contractile", "force-generation"]
-
-source:
-  organism: "Homo sapiens"
-  tissue_type: "skeletal muscle"
-  cell_types: ["myocyte", "satellite cell"]
-  biosafety_level: "BSL-1"
-
-interface:
-  inputs:
-    - id: "electrical_stimulation"
-      type: "electrical"
-      parameters:
-        voltage: { range: [0, 5], unit: "V" }
-        frequency: { range: [1, 100], unit: "Hz" }
-  outputs:
-    - id: "force_output"
-      type: "mechanical"
-      parameters:
-        force: { range: [0, 50], unit: "mN" }
-
-requirements:
-  physical:
-    temperature: { optimal: 37, range: [35, 39], unit: "C" }
-  chemical:
-    pH: { optimal: 7.4, range: [7.2, 7.6] }
-    oxygen: { range: [15, 25], unit: "%" }
-
-performance:
-  functional:
-    max_force: { value: 50, unit: "mN" }
-    response_time: { typical: 150, max: 300, unit: "ms" }
-  reliability:
-    lifetime: { mean: 14, std: 3, unit: "days" }
-
-failure_modes:
-  - id: "fatigue"
-    type: "recoverable"
-    detection: "force_output < 80% baseline"
-  - id: "necrosis"
-    type: "irreversible"
-    detection: "viability < 50%"
-\end{lstlisting}
-
-
-\section{Bio-DSL: Language Design Rationale}
+\section{Bio-DSL: Language Design}
 
 \subsection{Why a Domain-Specific Language?}
 
-Martin Fowler defines a domain-specific language (DSL) as ``a computer language specialized to a particular application domain.'' DSLs trade generality for expressiveness within their domain.
-
-\begin{table}[h]
-\centering
-\caption{Benefits of DSLs for Biological Systems}
-\begin{tabular}{@{}lll@{}}
-\toprule
-Benefit & Explanation & Bio-DSL Application \\
-\midrule
-Expressiveness & Say more with less & Describe complex assemblies concisely \\
-Readability & Domain experts can understand & Biologists can read system descriptions \\
-Validation & Domain-specific error checking & Catch interface mismatches at ``compile time'' \\
-Abstraction & Hide implementation details & Focus on what, not how \\
-\bottomrule
-\end{tabular}
-\label{tab:dsl-benefits}
-\end{table}
+DSLs trade generality for expressiveness. Benefits for biological systems:
+\begin{itemize}
+\item \textbf{Expressiveness}: Describe complex assemblies concisely
+\item \textbf{Readability}: Biologists can understand without programming background
+\item \textbf{Validation}: Catch interface mismatches before physical assembly
+\item \textbf{Abstraction}: Focus on what, not how
+\end{itemize}
 
 \subsection{Design Goals}
 
 \begin{enumerate}
 \item \textbf{Declarative}: Describe \textit{what} the system is, not \textit{how} to build it
-\item \textbf{Readable}: A biologist should understand the intent without programming background
-\item \textbf{Verifiable}: Static analysis can catch errors before physical assembly
-\item \textbf{Executable}: Can generate runtime configurations and monitoring dashboards
+\item \textbf{Readable}: Biologists should understand the intent
+\item \textbf{Verifiable}: Static analysis catches errors before assembly
+\item \textbf{Executable}: Generates runtime configurations
 \item \textbf{Composable}: Systems can be nested and reused
 \end{enumerate}
 
@@ -714,482 +270,243 @@ Abstraction & Hide implementation details & Focus on what, not how \\
 
 \textbf{Component Declaration}:
 \begin{lstlisting}
-// Import component from registry with version constraint
-COMPONENT <alias> FROM "<source>@<version>" [AS <local_name>]
-
-// Examples:
-COMPONENT flexor FROM "muscle-actuator-human-skeletal@^2.3"
-COMPONENT sensor FROM "piezo-force-sensor@~1.1" AS force_sensor
-COMPONENT controller FROM "neural-organoid-spinal@>=0.8"
+COMPONENT flexor FROM "muscle-actuator@^2.3"
+COMPONENT sensor FROM "piezo-sensor@~1.1" AS force_sensor
 \end{lstlisting}
 
 \textbf{Connection Declaration}:
 \begin{lstlisting}
-// Basic connection
-CONNECT <source>.<port> TO <target>.<port>
-
-// Connection with adapter
-CONNECT <source>.<port> TO <target>.<port> VIA <adapter>
-
-// Examples:
 CONNECT sensor.output TO controller.input
-CONNECT controller.output TO flexor.stimulation VIA signal_converter
+CONNECT controller.output TO muscle.stim VIA adapter
 \end{lstlisting}
 
 \textbf{Runtime Configuration}:
 \begin{lstlisting}
 RUNTIME {
-  perfusion: {
-    medium: "DMEM + 10% FBS",
-    temperature: 37 C,
-    pH: 7.4,
-    flow_rate: 0.5 mL/min
-  },
-  control: {
-    mode: "closed_loop",
-    algorithm: "PID",
-    parameters: { Kp: 0.8, Ki: 0.2, Kd: 0.1 }
-  },
-  monitoring: {
-    log_interval: 10 s,
-    metrics: ["force", "viability", "temperature"],
-    alerts: {
-      "viability < 80%": "WARNING",
-      "temperature > 39C": "CRITICAL"
-    }
-  }
+  perfusion: { temp: 37C, pH: 7.4 },
+  control: { mode: "closed_loop" }
 }
 \end{lstlisting}
 
 \textbf{Behavioral Logic}:
 \begin{lstlisting}
-ON STARTUP DO {
-  SET perfusion.flow_rate = 0.5 mL/min
-  WAIT 300 s  // Equilibration
-  SET controller.mode = "active"
-}
-
-WHEN flexor.fatigue_index > 0.3 THEN {
-  LOG "Fatigue detected"
-  REDUCE flexor.stimulation_frequency BY 20%
-}
-
-EVERY 1 hour DO {
-  RUN viability_check()
-  IF any.viability < 85% THEN {
-    INCREASE perfusion.flow_rate BY 10%
-  }
-}
+ON STARTUP DO { SET perfusion.flow = 0.5; WAIT 300s }
+WHEN fatigue > 0.3 THEN { REDUCE freq BY 20% }
 \end{lstlisting}
 
 \textbf{Test Declaration}:
 \begin{lstlisting}
-TEST contraction_response {
-  description: "Verify muscle responds to stimulation"
-  
-  GIVEN flexor.state == "ready"
-  WHEN STIMULATE flexor AT 10 Hz, 2 V FOR 1 s
-  THEN EXPECT flexor.force IN [5, 15] mN WITHIN 200 ms
+TEST response {
+  GIVEN muscle.state == "ready"
+  WHEN STIMULATE AT 10Hz FOR 1s
+  THEN EXPECT force IN [5,15] mN
 }
 \end{lstlisting}
 
-\subsection{Comparison with Related Languages}
+\subsection{Relationship to Existing Languages}
 
-\begin{table}[h]
-\centering
-\caption{Comparison with Existing Biological Languages}
-\begin{tabular}{@{}llll@{}}
-\toprule
-Language & Abstraction Level & Purpose & Relationship to Bio-DSL \\
-\midrule
-SBOL & Genetic & DNA sequence description & Lower level; component internals \\
-SBML & Molecular & Biochemical reaction networks & Lower level; component dynamics \\
-CellML & Cellular & Cell mathematical models & Lower level; behavior models \\
-Bio-DSL & Organ/System & Component composition & Higher level; system assembly \\
-\bottomrule
-\end{tabular}
-\label{tab:language-comparison}
-\end{table}
+Bio-DSL complements lower-level languages:
+\begin{itemize}
+\item \textbf{SBOL}: Genetic level (DNA sequences)---component internals
+\item \textbf{SBML}: Molecular level (biochemical networks)---component dynamics
+\item \textbf{CellML}: Cellular level (mathematical models)---behavior models
+\item \textbf{Bio-DSL}: Organ/System level---component composition
+\end{itemize}
 
-Bio-DSL is designed to \textbf{complement} these languages: Use SBOL to describe genetic modifications within a component; use SBML to model biochemical behavior; use Bio-DSL to describe how components connect into systems.
-
-\subsection{Tooling Vision}
-
-A complete Bio-DSL ecosystem would include:
-\begin{enumerate}
-\item \textbf{Parser/Validator}: Check syntax and semantic correctness
-\item \textbf{Type Checker}: Verify interface compatibility
-\item \textbf{Simulator}: Predict system behavior before physical assembly
-\item \textbf{Code Generator}: Produce runtime configurations
-\item \textbf{Visual Editor}: Drag-and-drop system design
-\item \textbf{Package Manager}: Discover and install components
-\item \textbf{Test Runner}: Execute test suites
-\item \textbf{Documentation Generator}: Produce human-readable specs
-\end{enumerate}
+A complete dual-muscle antagonist system example is provided in Appendix~\ref{app:example}.
 
 
 \section{Fundamental Differences and Open Challenges}
 
-While the paradigm transfer from software to biological engineering is powerful, fundamental differences between the domains create challenges that require novel solutions beyond direct mapping.
+While paradigm transfer is powerful, fundamental differences require novel solutions:
 
 \subsection{Determinism vs. Stochasticity}
 
-\begin{table}[h]
-\centering
-\caption{Determinism Comparison}
-\begin{tabular}{@{}ll@{}}
-\toprule
-Software & Biology \\
-\midrule
-Function calls always return & Cells may die unexpectedly \\
-Same input $\rightarrow$ same output & Biological variability is inherent \\
-Errors can be precisely located & Failure modes are complex and interacting \\
-State is fully observable & Internal state is partially hidden \\
-\bottomrule
-\end{tabular}
-\label{tab:determinism}
-\end{table}
+Software: \texttt{add(2,3)} always returns 5. Biology: identical stimulation produces variable force, occasionally no response.
 
-A software function \texttt{add(2, 3)} will always return \texttt{5}. A biological muscle stimulated with identical parameters will produce slightly different force each time, and occasionally may not respond at all.
-
-\textbf{Implications}: Interface contracts must be probabilistic; testing must be statistical; runtime must handle uncertainty through redundant components and graceful degradation strategies.
+\textbf{Implications}: Probabilistic interface contracts, statistical testing, redundant components, graceful degradation.
 
 \subsection{Discrete vs. Continuous}
 
-Software state transitions are instantaneous: a variable is either \texttt{true} or \texttt{false}. Biological state transitions are gradual: a muscle doesn't switch from ``relaxed'' to ``contracted'' but transitions through a continuum.
+Software state transitions are instantaneous (true/false). Biological transitions are gradual (relaxed → contracting → contracted).
 
-\textbf{Implications}: Interface parameters need tolerance ranges; state definitions need thresholds; timing specifications need ranges rather than exact values.
+\textbf{Implications}: Tolerance ranges for parameters, threshold-based state definitions, range-based timing specifications.
 
 \subsection{Isolation vs. Coupling}
 
-Software processes are isolated by the operating system. A bug in one process cannot corrupt another's memory. Biological components share culture medium, and one component's metabolic waste affects all others.
+Software processes are isolated by OS memory protection. Biological components share culture medium; one component's waste affects all others.
 
-\textbf{Implications}: Explicit coupling declarations; isolation adapter specifications; system-level resource budgeting.
+\textbf{Implications}: Explicit coupling declarations, isolation adapters, system-level resource budgeting.
 
-\subsection{The Immune System: No Software Equivalent}
+\subsection{The Immune System}
 
-Software components do not ``reject'' each other. Biological components from different genetic backgrounds may trigger immune responses ranging from mild inflammation to complete destruction.
+Software components don't ``reject'' each other. Biological components from different genetic backgrounds trigger immune responses.
 
-\textbf{Required Innovations}:
-\begin{itemize}
-\item Immune compatibility scoring
-\item Isolation barrier specifications
-\item Compatibility checking in Bio-DSL compiler
-\end{itemize}
+\textbf{Required Innovations}: Immune compatibility scoring, isolation barrier specifications, compatibility checking in Bio-DSL.
 
 \subsection{Living Degradation}
 
-Software does not age. A function written in 1990 executes identically today (given compatible runtime). Biological components inherently degrade: cells senesce, proteins denature, structures weaken.
+Software doesn't age. Biological components inherently degrade: cells senesce, proteins denature, structures weaken.
 
-\textbf{Required Innovations}:
-\begin{itemize}
-\item Degradation modeling (e.g., Weibull distribution)
-\item Maintenance protocols
-\item Replacement strategies (hot-swap with backup)
-\end{itemize}
+\textbf{Required Innovations}: Degradation modeling (Weibull distribution), maintenance protocols, hot-swap replacement strategies.
 
 \subsection{Ethical Constraints}
 
-Software has no inherent ethical status. Biological components, especially those involving human cells or neural tissue, raise ethical considerations:
-\begin{itemize}
-\item \textbf{Source ethics}: How were cells obtained? Was there informed consent?
-\item \textbf{Capability ethics}: Could the assembly develop consciousness?
-\item \textbf{Use ethics}: What applications are acceptable?
-\item \textbf{Disposal ethics}: How should biological materials be destroyed?
-\end{itemize}
+Software has no ethical status. Biological components raise considerations: source ethics (consent), capability ethics (consciousness), use ethics (applications), disposal ethics.
 
-\textbf{Required Innovations}: Ethical metadata in specifications; capability limits enforced by Bio-DSL compiler.
+\textbf{Required Innovations}: Ethical metadata in specifications, capability limits enforced by compiler.
 
-\subsection{Summary: The Innovation Agenda}
+\subsection{Summary: Innovation Agenda}
 
-\begin{table}[h]
+\begin{table}[H]
 \centering
-\caption{Innovation Agenda Summary}
+\caption{Challenges Requiring Innovation}
 \begin{tabular}{@{}lll@{}}
 \toprule
-Challenge & Software Equivalent & Required Innovation \\
+Challenge & Software & Required Innovation \\
 \midrule
-Stochasticity & None (deterministic) & Probabilistic contracts, statistical testing \\
-Continuous states & None (discrete) & Tolerance ranges, threshold definitions \\
-Metabolic coupling & None (isolated) & Coupling declarations, resource budgeting \\
-Immune rejection & None & Compatibility scoring, isolation barriers \\
-Living degradation & None & Degradation models, maintenance protocols \\
-Ethical constraints & Licensing (weak) & Ethical metadata, capability limits \\
+Stochasticity & Deterministic & Probabilistic contracts \\
+Continuous & Discrete & Tolerance ranges \\
+Coupling & Isolated & Resource budgeting \\
+Immune & None & Compatibility scoring \\
+Degradation & None & Maintenance protocols \\
+Ethics & Licensing & Capability limits \\
 \bottomrule
 \end{tabular}
-\label{tab:innovation-agenda}
 \end{table}
 
-These challenges do not invalidate the paradigm transfer---they define the research agenda for making it complete.
-
+These challenges define the research agenda, not invalidate the paradigm transfer.
 
 \section{Related Work and Positioning}
 
-\subsection{Synthetic Biology and Standardization}
+\subsection{Synthetic Biology}
 
-The BioBricks Foundation and iGEM (International Genetically Engineered Machine) competition pioneered biological standardization at the genetic level. BioBricks defined standard assembly methods for DNA parts.
+BioBricks/iGEM pioneered standardization at the genetic level. SBOL provides data formats for genetic designs.
 
-SBOL (Synthetic Biology Open Language) provides a standardized data format for describing genetic designs, enabling exchange between software tools and laboratories.
-
-\textbf{Relationship to Wetware Engineering}:
-\begin{itemize}
-\item BioBricks/SBOL operate at the \textbf{genetic level} (DNA sequences)
-\item Wetware Engineering operates at the \textbf{organ/system level} (tissues, organoids)
-\item They are \textbf{complementary}: BioBricks could define the genetic content \textit{within} a Bio-Component
-\end{itemize}
+\textbf{Relationship}: BioBricks/SBOL operate at genetic level; Wetware Engineering at organ/system level. Complementary: BioBricks defines genetic content \textit{within} Bio-Components.
 
 \subsection{Organ-on-Chip and Organoids}
 
-Organ-on-chip devices culture human cells in microfluidic environments that mimic organ physiology. Organoids are self-organizing 3D tissue cultures that recapitulate organ structure and function.
+Organ-on-chip devices culture cells in microfluidic environments. Organoids are self-organizing 3D tissue cultures.
 
-\textbf{Relationship to Wetware Engineering}:
-\begin{itemize}
-\item Organ-on-chip provides \textbf{physical implementations} of Bio-Components
-\item Current systems lack \textbf{standardized interfaces} between chips
-\item Wetware Engineering provides the \textbf{abstraction framework} they need
-\end{itemize}
+\textbf{Relationship}: These provide physical implementations but lack standardized interfaces. Wetware Engineering provides the abstraction framework.
 
 \subsection{Systems Biology Modeling}
 
-SBML (Systems Biology Markup Language) represents computational models of biological processes. CellML describes mathematical models of cellular function.
+SBML/CellML describe how components behave internally (simulation).
 
-\textbf{Relationship to Wetware Engineering}:
-\begin{itemize}
-\item SBML/CellML describe \textbf{how components behave internally} (simulation)
-\item Bio-DSL describes \textbf{how components connect externally} (composition)
-\item They serve different purposes and can be used together
-\end{itemize}
+\textbf{Relationship}: Bio-DSL describes how components connect externally (composition). Different purposes, can be used together.
 
 \subsection{Biohybrid Robotics}
 
-Research groups have created robots powered by biological actuators: muscle-powered swimmers, insect-machine hybrids, and biohybrid grippers. These works prove biological components can be engineered.
+Research groups have created muscle-powered swimmers, biohybrid grippers. These prove feasibility.
 
-\textbf{Relationship to Wetware Engineering}: Current biohybrid work is bespoke---each system designed from scratch. Wetware Engineering asks: how do we make this \textbf{systematic and reproducible}?
-
-\subsection{Positioning Summary}
-
-Wetware Engineering's unique contribution: Providing the \textbf{system-level abstraction layer} that connects molecular/genetic engineering to functional biological systems, using software engineering principles.
+\textbf{Relationship}: Current work is bespoke. Wetware Engineering provides systematic, reproducible methodology.
 
 \subsection{What We Are NOT Claiming}
 
-To be clear about scope:
 \begin{enumerate}
-\item \textbf{We are not claiming to have built working systems}. This paper proposes a framework; implementation is future work.
-\item \textbf{We are not claiming biology is ``just like'' software}. Section 6 details fundamental differences requiring novel solutions.
-\item \textbf{We are not claiming to replace existing approaches}. We complement synthetic biology, organoid research, and systems biology.
-\item \textbf{We are not claiming immediate practical application}. The roadmap spans decades.
+\item We have not built working systems (framework proposal)
+\item Biology is not ``just like'' software (Section 6 details differences)
+\item We don't replace existing approaches (we complement them)
+\item This is not immediately practical (roadmap spans decades)
 \end{enumerate}
 
-What we ARE claiming: \textbf{The conceptual framework of software engineering---modularity, interfaces, composition, versioning---provides valuable abstractions for biological system construction, and articulating this framework is a necessary first step.}
+\textbf{What we claim}: Software engineering's conceptual framework provides valuable abstractions for biological system construction.
 
 
 \section{Conclusion and Future Directions}
 
 \subsection{Summary of Contributions}
 
-This paper has proposed \textbf{Wetware Engineering}, a cross-disciplinary methodology that systematically transfers software engineering paradigms to biological system construction. Our contributions are:
+This paper proposed \textbf{Wetware Engineering}, transferring software engineering paradigms to biological system construction:
 
-\textbf{Conceptual Framework}: We defined the \textbf{Component-Interface-Runtime triad} as the foundational abstraction for modular biological systems.
-
-\textbf{Technical Specifications}: We proposed concrete specifications:
 \begin{itemize}
-\item \textbf{Bio-Component Spec v0.1}: A standardized schema for describing biological modules
-\item \textbf{Bio-DSL}: A domain-specific language for declarative system composition
+\item \textbf{Conceptual Framework}: Component-Interface-Runtime triad
+\item \textbf{Technical Specifications}: Bio-Component Spec v0.1, Bio-DSL
+\item \textbf{Systematic Analysis}: Direct, Analogous, Novel mappings
+\item \textbf{Honest Assessment}: Fundamental differences requiring innovation
 \end{itemize}
-
-\textbf{Systematic Analysis}: We provided systematic mappings between software and biological engineering, categorized as Direct, Analogous, or Novel.
-
-\textbf{Honest Assessment}: We identified fundamental differences that require innovation beyond paradigm transfer, establishing a research agenda for the field.
 
 \subsection{The Path Forward}
 
-\textbf{Phase 1: Foundation (1-3 years)}
-\begin{itemize}
-\item Refine specifications based on community feedback
-\item Develop proof-of-concept tooling (parser, validator)
-\item Document 10-20 existing biological systems using Bio-Component Spec
-\item Publish reference implementations
-\end{itemize}
+\textbf{Phase 1 (1-3 years)}: Refine specifications, proof-of-concept tooling, document existing systems, reference implementations.
 
-\textbf{Phase 2: Validation (3-7 years)}
-\begin{itemize}
-\item Physically implement 2-3 component systems using the framework
-\item Validate that standardized descriptions improve reproducibility
-\item Develop interface adapters for common connection types
-\item Build component registry infrastructure
-\end{itemize}
+\textbf{Phase 2 (3-7 years)}: Physical implementations, reproducibility validation, interface adapters, component registry.
 
-\textbf{Phase 3: Ecosystem (7-15 years)}
-\begin{itemize}
-\item Establish community governance for standards
-\item Commercial adoption in drug discovery, tissue engineering
-\item Educational curriculum development
-\item International standardization (ISO, IEEE)
-\end{itemize}
+\textbf{Phase 3 (7-15 years)}: Community governance, commercial adoption, educational curriculum, international standardization.
 
 \subsection{Call to Action}
 
-Wetware Engineering requires contributions from multiple communities:
+\textbf{Biologists}: Describe work using Bio-Component Spec; identify interface requirements; share machine-readable protocols.
 
-\textbf{For Biologists and Tissue Engineers}: Describe your work using Bio-Component Spec format; identify interface requirements; share protocols in machine-readable formats.
+\textbf{Software Engineers}: Contribute tooling; apply design patterns; develop testing frameworks.
 
-\textbf{For Software Engineers}: Contribute tooling (parsers, validators, editors); apply design patterns to biological contexts; develop testing frameworks adapted for biological variability.
+\textbf{Standards Bodies}: Engage early; coordinate with SBOL/SBML.
 
-\textbf{For Standards Bodies}: Engage early in specification development; coordinate with existing biological standards (SBOL, SBML).
-
-\textbf{For Funding Agencies}: Support cross-disciplinary methodology research; fund infrastructure (registries, tools) not just applications.
-
-\subsection{Limitations and Caveats}
-
-We acknowledge significant limitations:
-\begin{enumerate}
-\item \textbf{No experimental validation}: This paper proposes a framework; we have not physically built systems using it.
-\item \textbf{Specification incompleteness}: Bio-Component Spec v0.1 is a starting point, not a finished standard.
-\item \textbf{Tooling absence}: The envisioned toolchain does not yet exist.
-\item \textbf{Community adoption uncertainty}: Standards succeed through adoption, which cannot be guaranteed.
-\item \textbf{Biological complexity}: Real biological systems may resist the clean abstractions we propose.
-\end{enumerate}
-
-These limitations do not invalidate the approach---they define the work ahead.
+\textbf{Funding Agencies}: Support cross-disciplinary methodology; fund infrastructure.
 
 \subsection{Closing Thoughts}
 
-Software engineering transformed from craft to discipline over five decades. The journey included conceptual breakthroughs, standardization efforts, tool development, community building, and educational formalization.
+Software engineering transformed from craft to discipline over five decades through conceptual breakthroughs, standardization, tooling, and community building.
 
-Biological engineering stands at a similar inflection point. The question is not whether modularization will come to biology---the complexity of biological systems demands it---but how quickly and how well.
-
-We offer Wetware Engineering not as a finished solution, but as a \textbf{conceptual framework} and \textbf{conversation starter}. The goal is to accelerate the transition from artisanal biological construction to systematic biological engineering.
-
-\begin{quote}
-``Software engineering took 50 years to evolve from monolithic applications to microservices architecture. We hope biological engineering won't need another 50 years.''
-\end{quote}
+Biological engineering stands at a similar inflection point. The question is not whether modularization will come---complexity demands it---but how quickly and how well.
 
 The tools of software engineering---abstraction, modularity, standardization, composition---are not specific to silicon. They are \textbf{general principles of managing complexity}. Biology is complex. These principles can help.
 
-The future of biological engineering is modular. The question is: will we design that future deliberately, or stumble into it accidentally?
+The future of biological engineering is modular. Will we design that future deliberately, or stumble into it accidentally?
 
 We choose to design.
 
-\section*{Acknowledgments}
-
-The author thanks the open-source software engineering community for decades of accumulated wisdom that made this cross-disciplinary transfer possible.
-
 \section*{Data Availability}
+All specifications and examples: \url{https://github.com/tukuaiai/wetware-engineering}
 
-All specifications and examples are available at: \url{https://github.com/tukuaiai/wetware-engineering}
-
-
+%==============================================================================
+% REFERENCES
+%==============================================================================
 \bibliographystyle{unsrtnat}
+\begin{thebibliography}{15}
 
-\begin{thebibliography}{34}
+\bibitem{parnas1972} Parnas, D.L. (1972). On the criteria to be used in decomposing systems into modules. \textit{Commun. ACM}, 15(12), 1053-1058.
 
-\bibitem{parnas1972}
-Parnas, D. L. (1972). On the criteria to be used in decomposing systems into modules. \textit{Communications of the ACM}, 15(12), 1053-1058.
+\bibitem{dijkstra1968} Dijkstra, E.W. (1968). Go to statement considered harmful. \textit{Commun. ACM}, 11(3), 147-148.
 
-\bibitem{dijkstra1968}
-Dijkstra, E. W. (1968). Go to statement considered harmful. \textit{Communications of the ACM}, 11(3), 147-148.
+\bibitem{gamma1994} Gamma, E., Helm, R., Johnson, R., Vlissides, J. (1994). \textit{Design Patterns}. Addison-Wesley.
 
-\bibitem{gamma1994}
-Gamma, E., Helm, R., Johnson, R., \& Vlissides, J. (1994). \textit{Design Patterns: Elements of Reusable Object-Oriented Software}. Addison-Wesley.
+\bibitem{fowler2010} Fowler, M. (2010). \textit{Domain-Specific Languages}. Addison-Wesley.
 
-\bibitem{martin2003}
-Martin, R. C. (2003). \textit{Agile Software Development: Principles, Patterns, and Practices}. Prentice Hall.
+\bibitem{endy2005} Endy, D. (2005). Foundations for engineering biology. \textit{Nature}, 438, 449-453.
 
-\bibitem{fowler2010}
-Fowler, M. (2010). \textit{Domain-Specific Languages}. Addison-Wesley.
+\bibitem{galdzicki2014} Galdzicki, M. et al. (2014). The Synthetic Biology Open Language (SBOL). \textit{Nature Biotechnol.}, 32(6), 545-550.
 
-\bibitem{brooks1975}
-Brooks, F. P. (1975). \textit{The Mythical Man-Month: Essays on Software Engineering}. Addison-Wesley.
+\bibitem{lancaster2014} Lancaster, M.A., Knoblich, J.A. (2014). Organogenesis in a dish. \textit{Science}, 345, 1247125.
 
-\bibitem{newman2015}
-Newman, S. (2015). \textit{Building Microservices: Designing Fine-Grained Systems}. O'Reilly Media.
+\bibitem{bhatia2014} Bhatia, S.N., Ingber, D.E. (2014). Microfluidic organs-on-chips. \textit{Nature Biotechnol.}, 32(8), 760-772.
 
-\bibitem{semver}
-Preston-Werner, T. (2013). Semantic Versioning 2.0.0. https://semver.org/
+\bibitem{hucka2003} Hucka, M. et al. (2003). The systems biology markup language (SBML). \textit{Bioinformatics}, 19(4), 524-531.
 
-\bibitem{endy2005}
-Endy, D. (2005). Foundations for engineering biology. \textit{Nature}, 438(7067), 449-453.
+\bibitem{lloyd2004} Lloyd, C.M., Halstead, M.D., Nielsen, P.F. (2004). CellML: its future, present and past. \textit{Prog. Biophys. Mol. Biol.}, 85, 433-450.
 
-\bibitem{canton2008}
-Canton, B., Labno, A., \& Endy, D. (2008). Refinement and standardization of synthetic biological parts and devices. \textit{Nature Biotechnology}, 26(7), 787-793.
+\bibitem{raman2017} Raman, R., Bashir, R. (2017). Biomimicry, biofabrication, and biohybrid systems. \textit{Adv. Healthcare Mater.}, 6(20), 1700496.
 
-\bibitem{galdzicki2014}
-Galdzicki, M., et al. (2014). The Synthetic Biology Open Language (SBOL) provides a community standard for communicating designs in synthetic biology. \textit{Nature Biotechnology}, 32(6), 545-550.
+\bibitem{ricotti2017} Ricotti, L. et al. (2017). Biohybrid actuators for robotics. \textit{Science Robotics}, 2(12), eaaq0495.
 
-\bibitem{beal2020}
-Beal, J., et al. (2020). Communicating structure and function in synthetic biology diagrams. \textit{ACS Synthetic Biology}, 9(8), 2025-2040.
+\bibitem{park2016} Park, S.J. et al. (2016). Phototactic guidance of a tissue-engineered soft-robotic ray. \textit{Science}, 353, 158-162.
 
-\bibitem{lancaster2014}
-Lancaster, M. A., \& Knoblich, J. A. (2014). Organogenesis in a dish: Modeling development and disease using organoid technologies. \textit{Science}, 345(6194), 1247125.
+\bibitem{yuste2017} Yuste, R. et al. (2017). Four ethical priorities for neurotechnologies and AI. \textit{Nature}, 551, 159-163.
 
-\bibitem{takebe2019}
-Takebe, T., \& Wells, J. M. (2019). Organoids by design. \textit{Science}, 364(6444), 956-959.
-
-\bibitem{clevers2016}
-Clevers, H. (2016). Modeling development and disease with organoids. \textit{Cell}, 165(7), 1586-1597.
-
-\bibitem{rossi2018}
-Rossi, G., Manfrin, A., \& Lutolf, M. P. (2018). Progress and potential in organoid research. \textit{Nature Reviews Genetics}, 19(11), 671-687.
-
-\bibitem{bhatia2014}
-Bhatia, S. N., \& Ingber, D. E. (2014). Microfluidic organs-on-chips. \textit{Nature Biotechnology}, 32(8), 760-772.
-
-\bibitem{huh2010}
-Huh, D., et al. (2010). Reconstituting organ-level lung functions on a chip. \textit{Science}, 328(5986), 1662-1668.
-
-\bibitem{ronaldson2018}
-Ronaldson-Bouchard, K., \& Vunjak-Novakovic, G. (2018). Organs-on-a-chip: A fast track for engineered human tissues in drug development. \textit{Cell Stem Cell}, 22(3), 310-324.
-
-\bibitem{hucka2003}
-Hucka, M., et al. (2003). The systems biology markup language (SBML): A medium for representation and exchange of biochemical network models. \textit{Bioinformatics}, 19(4), 524-531.
-
-\bibitem{lloyd2004}
-Lloyd, C. M., Halstead, M. D., \& Nielsen, P. F. (2004). CellML: Its future, present and past. \textit{Progress in Biophysics and Molecular Biology}, 85(2-3), 433-450.
-
-\bibitem{raman2017}
-Raman, R., \& Bashir, R. (2017). Biomimicry, biofabrication, and biohybrid systems: The emergence and evolution of biological design. \textit{Advanced Healthcare Materials}, 6(20), 1700496.
-
-\bibitem{ricotti2017}
-Ricotti, L., et al. (2017). Biohybrid actuators for robotics: A review of devices actuated by living cells. \textit{Science Robotics}, 2(12), eaaq0495.
-
-\bibitem{park2016}
-Park, S. J., et al. (2016). Phototactic guidance of a tissue-engineered soft-robotic ray. \textit{Science}, 353(6295), 158-162.
-
-\bibitem{cvetkovic2014}
-Cvetkovic, C., et al. (2014). Three-dimensionally printed biological machines powered by skeletal muscle. \textit{Proceedings of the National Academy of Sciences}, 111(28), 10125-10130.
-
-\bibitem{musk2019}
-Musk, E., \& Neuralink. (2019). An integrated brain-machine interface platform with thousands of channels. \textit{Journal of Medical Internet Research}, 21(10), e16194.
-
-\bibitem{lebedev2017}
-Lebedev, M. A., \& Nicolelis, M. A. (2017). Brain-machine interfaces: From basic science to neuroprostheses and neurorehabilitation. \textit{Physiological Reviews}, 97(2), 767-837.
-
-\bibitem{yuste2017}
-Yuste, R., et al. (2017). Four ethical priorities for neurotechnologies and AI. \textit{Nature}, 551(7679), 159-163.
-
-\bibitem{ienca2017}
-Ienca, M., \& Andorno, R. (2017). Towards new human rights in the age of neuroscience and neurotechnology. \textit{Life Sciences, Society and Policy}, 13(1), 5.
-
-\bibitem{hyun2020}
-Hyun, I., Scharf-Deering, J. C., \& Lunshof, J. E. (2020). Ethical issues related to brain organoid research. \textit{Brain Research}, 1732, 146653.
-
-\bibitem{simon1996}
-Simon, H. A. (1996). \textit{The Sciences of the Artificial} (3rd ed.). MIT Press.
-
-\bibitem{alexander1977}
-Alexander, C., Ishikawa, S., \& Silverstein, M. (1977). \textit{A Pattern Language: Towns, Buildings, Construction}. Oxford University Press.
-
-\bibitem{kuhn1962}
-Kuhn, T. S. (1962). \textit{The Structure of Scientific Revolutions}. University of Chicago Press.
+\bibitem{hyun2020} Hyun, I., Scharf-Deering, J.C., Lunshof, J.E. (2020). Ethical issues related to brain organoid research. \textit{Brain Res.}, 1732, 146653.
 
 \end{thebibliography}
 
 
+%==============================================================================
+% APPENDICES
+%==============================================================================
 \appendix
 
 \section{Complete Bio-DSL Example: Dual-Muscle Antagonist System}
-
-The following complete example demonstrates Bio-DSL's expressiveness for describing a realistic biological system:
+\label{app:example}
 
 \begin{lstlisting}
 // ============================================
@@ -1235,11 +552,11 @@ CONNECT controller.output_1 TO flexor.stimulation
 
 CONNECT controller.output_2 TO extensor.stimulation
   VIA stim_converter
+  WITH { frequency: [1, 50] Hz, voltage: [0, 3] V }
 
 CONNECT sensor.output TO controller.feedback_input
   WITH { gain: 1.5 }
 
-// Perfusion connections
 CONNECT perfusion.ch1 TO flexor.perfusion_input
 CONNECT perfusion.ch2 TO extensor.perfusion_input
 CONNECT perfusion.ch3 TO controller.perfusion_input
@@ -1262,8 +579,11 @@ RUNTIME {
   
   monitoring: {
     interval: 10 s,
-    metrics: ["flexor.force", "extensor.force", 
-              "sensor.reading", "*.viability"],
+    metrics: [
+      "flexor.force", "extensor.force",
+      "sensor.reading", "controller.activity",
+      "*.viability"
+    ],
     alerts: {
       "viability < 80%": "WARNING",
       "force > 90 mN": "CRITICAL"
@@ -1286,6 +606,11 @@ ON STARTUP DO {
   RUN calibration_sequence()
   SET controller.mode = "active"
   LOG "System initialized"
+}
+
+WHEN target_position CHANGES THEN {
+  error = target_position - sensor.reading
+  controller.compute(error)
 }
 
 WHEN flexor.fatigue_index > 0.3 THEN {
@@ -1314,6 +639,13 @@ TEST antagonist_balance {
   THEN EXPECT |flexor.force - extensor.force| < 5 mN
 }
 
+TEST tracking_accuracy {
+  description: "Closed-loop tracking test"
+  GIVEN system.mode == "closed_loop"
+  WHEN SET target = sine_wave(0.5 Hz, +/-20 mN) FOR 60 s
+  THEN EXPECT tracking_error < 3 mN RMS
+}
+
 // === Expected Performance ===
 EXPECTED {
   position_accuracy: +/-2 mN,
@@ -1323,16 +655,125 @@ EXPECTED {
 }
 \end{lstlisting}
 
-\section{Complete Bio-Component Specification Schema}
+\section{Complete Muscle Actuator Specification}
+\label{app:muscle}
 
-The full JSON Schema for Bio-Component Spec v0.1:
+\begin{lstlisting}
+bio-component: "1.0"
+
+info:
+  id: "muscle-actuator-human-skeletal"
+  name: "Human Skeletal Muscle Actuator"
+  version: "2.3.1"
+  description: "Contractile muscle tissue for force generation"
+  license: "CC-BY-SA-4.0"
+  authors: ["Wetware Engineering Project"]
+  repository: "https://github.com/wetware/muscle-actuator"
+
+classification:
+  type: "actuator"
+  domain: "musculoskeletal"
+  tags: ["muscle", "contractile", "force-generation", "human"]
+
+source:
+  organism: "Homo sapiens"
+  tissue_type: "skeletal muscle"
+  cell_types: ["myocyte", "satellite cell"]
+  culture_protocol: "https://protocols.io/wetware/muscle-culture-v2"
+  biosafety_level: "BSL-1"
+
+interface:
+  inputs:
+    - id: "electrical_stimulation"
+      type: "electrical"
+      required: true
+      parameters:
+        voltage: { range: [0, 5], unit: "V" }
+        frequency: { range: [1, 100], unit: "Hz" }
+        pulse_width: { range: [0.1, 10], unit: "ms" }
+      response_time: 50  # ms
+    
+    - id: "perfusion_input"
+      type: "perfusion"
+      required: true
+      parameters:
+        flow_rate: { range: [0.1, 2.0], unit: "mL/min" }
+        
+  outputs:
+    - id: "force_output"
+      type: "mechanical"
+      parameters:
+        force: { range: [0, 50], unit: "mN" }
+        displacement: { range: [0, 5], unit: "mm" }
+      latency: 150  # ms
+      monitoring:
+        metrics: ["force", "displacement", "velocity"]
+        sampling_rate: 100  # Hz
+
+requirements:
+  physical:
+    temperature: { optimal: 37, range: [35, 39], unit: "C" }
+  chemical:
+    pH: { optimal: 7.4, range: [7.2, 7.6] }
+    oxygen: { range: [15, 25], unit: "%" }
+    glucose: { range: [5, 25], unit: "mM" }
+
+performance:
+  functional:
+    max_force: { value: 50, unit: "mN" }
+    response_time: { typical: 150, max: 300, unit: "ms" }
+    contraction_velocity: { max: 10, unit: "mm/s" }
+  reliability:
+    lifetime: { mean: 14, std: 3, unit: "days" }
+    failure_rate: { value: 0.01, unit: "per_hour" }
+  resources:
+    oxygen_consumption: { value: 5, unit: "umol/hour" }
+    glucose_consumption: { value: 2.5, unit: "umol/hour" }
+
+failure_modes:
+  - id: "fatigue"
+    type: "recoverable"
+    probability: 0.3
+    detection: "force_output < 80% baseline"
+    impact: "reduced_performance"
+    mitigation: "reduce stimulation, allow recovery"
+  
+  - id: "necrosis"
+    type: "irreversible"
+    probability: 0.05
+    detection: "viability < 50%"
+    impact: "component_loss"
+    mitigation: "replace component"
+
+testing:
+  unit_tests:
+    - id: "contraction_response"
+      description: "Verify force output on stimulation"
+      protocol: "stimulate 10Hz 2V for 1s, measure force"
+      acceptance: "force in [5, 15] mN within 200ms"
+    
+    - id: "viability_check"
+      description: "Verify cell survival"
+      protocol: "live/dead staining"
+      acceptance: "viability > 90%"
+
+dependencies:
+  adapters:
+    - id: "perfusion-adapter"
+      version: "^1.0.0"
+  protocols:
+    - name: "standard-mammalian-culture"
+      version: "2.1"
+\end{lstlisting}
+
+\section{Bio-Component Spec JSON Schema}
+\label{app:schema}
 
 \begin{lstlisting}
 {
   "$schema": "https://wetware-engineering.org/schema/bio-component/1.0",
   "type": "object",
-  "required": ["bio-component", "info", "classification", 
-               "source", "interface"],
+  "required": ["bio-component", "info", "classification", "source", "interface"],
   "properties": {
     "bio-component": {
       "type": "string",
