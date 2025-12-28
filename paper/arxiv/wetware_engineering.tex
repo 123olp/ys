@@ -14,20 +14,26 @@
 \usepackage{xcolor}
 \usepackage{float}
 
+% Code listing style with syntax highlighting
 \lstset{
   basicstyle=\ttfamily\footnotesize,
   breaklines=true,
   frame=single,
   backgroundcolor=\color{gray!5},
   xleftmargin=0.5em,
-  aboveskip=0.3em,
-  belowskip=0.3em,
+  aboveskip=0.5em,
+  belowskip=0.5em,
+  keywordstyle=\bfseries\color{blue!70!black},
+  commentstyle=\color{green!50!black},
+  stringstyle=\color{orange!80!black},
+  morekeywords={COMPONENT,CONNECT,RUNTIME,FROM,TO,VIA,WITH,ON,DO,WHEN,THEN,EVERY,TEST,GIVEN,EXPECT,ADAPTER,SET,WAIT,LOG,RUN,IF,REDUCE,INCREASE,BY,STIMULATE,AT,FOR,IN,WITHIN,AND,AS,RECORD,ACTIVATE,SIMULTANEOUSLY},
 }
 
 \title{Wetware Engineering: Applying Software Engineering Paradigms to Biological System Construction}
 
 \author{
   \href{https://orcid.org/0009-0009-6523-1823}{\includegraphics[scale=0.06]{orcid.pdf}\hspace{1mm}123olp} \\
+  Independent Researcher \\
   \texttt{tukuai.ai@gmail.com}
 }
 
@@ -44,8 +50,6 @@
   pdfcreator={XeLaTeX with arxiv-style template},
   pdfproducer={Wetware Engineering Project},
   pdflang={en-US},
-  pdfcopyright={CC BY-SA 4.0},
-  pdflicenseurl={https://creativecommons.org/licenses/by-sa/4.0/},
 }
 
 \begin{document}
@@ -59,7 +63,7 @@ We propose \textbf{Wetware Engineering}, a cross-disciplinary methodology that t
 Wetware Engineering represents a paradigm-level contribution: shifting biological system construction from ``artisanal replication'' to ``engineered composition.''
 \end{abstract}
 
-\keywords{Software Engineering \and Biological Systems \and Modular Design \and Domain-Specific Language \and Systems Biology}
+\keywords{Software Engineering, Biological Systems, Modular Design, Domain-Specific Language, Systems Biology}
 
 \section{Introduction: The Case for Paradigm Transfer}
 
@@ -298,7 +302,7 @@ CONNECT controller.output TO muscle.stim VIA adapter
 \textbf{Runtime Configuration}:
 \begin{lstlisting}
 RUNTIME {
-  perfusion: { temp: 37C, pH: 7.4 },
+  perfusion: { temp: 37,°C, pH: 7.4 },
   control: { mode: "closed_loop" }
 }
 \end{lstlisting}
@@ -482,35 +486,35 @@ All specifications and examples: \url{https://github.com/tukuaiai/wetware-engine
 \bibliographystyle{unsrtnat}
 \begin{thebibliography}{15}
 
-\bibitem{parnas1972} Parnas, D.L. (1972). On the criteria to be used in decomposing systems into modules. \textit{Commun. ACM}, 15(12), 1053-1058.
+\bibitem{parnas1972} Parnas, D.L. (1972). On the criteria to be used in decomposing systems into modules. \textit{Communications of the ACM}, 15(12), 1053--1058.
 
-\bibitem{dijkstra1968} Dijkstra, E.W. (1968). Go to statement considered harmful. \textit{Commun. ACM}, 11(3), 147-148.
+\bibitem{dijkstra1968} Dijkstra, E.W. (1968). Go to statement considered harmful. \textit{Communications of the ACM}, 11(3), 147--148.
 
-\bibitem{gamma1994} Gamma, E., Helm, R., Johnson, R., Vlissides, J. (1994). \textit{Design Patterns}. Addison-Wesley.
+\bibitem{gamma1994} Gamma, E., Helm, R., Johnson, R., \& Vlissides, J. (1994). \textit{Design Patterns: Elements of Reusable Object-Oriented Software}. Addison-Wesley.
 
 \bibitem{fowler2010} Fowler, M. (2010). \textit{Domain-Specific Languages}. Addison-Wesley.
 
-\bibitem{endy2005} Endy, D. (2005). Foundations for engineering biology. \textit{Nature}, 438, 449-453.
+\bibitem{endy2005} Endy, D. (2005). Foundations for engineering biology. \textit{Nature}, 438(7067), 449--453.
 
-\bibitem{galdzicki2014} Galdzicki, M. et al. (2014). The Synthetic Biology Open Language (SBOL). \textit{Nature Biotechnol.}, 32(6), 545-550.
+\bibitem{galdzicki2014} Galdzicki, M., et al. (2014). The Synthetic Biology Open Language (SBOL) provides a community standard for communicating designs in synthetic biology. \textit{Nature Biotechnology}, 32(6), 545--550.
 
-\bibitem{lancaster2014} Lancaster, M.A., Knoblich, J.A. (2014). Organogenesis in a dish. \textit{Science}, 345, 1247125.
+\bibitem{lancaster2014} Lancaster, M.A., \& Knoblich, J.A. (2014). Organogenesis in a dish: Modeling development and disease using organoid technologies. \textit{Science}, 345(6194), 1247125.
 
-\bibitem{bhatia2014} Bhatia, S.N., Ingber, D.E. (2014). Microfluidic organs-on-chips. \textit{Nature Biotechnol.}, 32(8), 760-772.
+\bibitem{bhatia2014} Bhatia, S.N., \& Ingber, D.E. (2014). Microfluidic organs-on-chips. \textit{Nature Biotechnology}, 32(8), 760--772.
 
-\bibitem{hucka2003} Hucka, M. et al. (2003). The systems biology markup language (SBML). \textit{Bioinformatics}, 19(4), 524-531.
+\bibitem{hucka2003} Hucka, M., et al. (2003). The systems biology markup language (SBML): A medium for representation and exchange of biochemical network models. \textit{Bioinformatics}, 19(4), 524--531.
 
-\bibitem{lloyd2004} Lloyd, C.M., Halstead, M.D., Nielsen, P.F. (2004). CellML: its future, present and past. \textit{Prog. Biophys. Mol. Biol.}, 85, 433-450.
+\bibitem{lloyd2004} Lloyd, C.M., Halstead, M.D., \& Nielsen, P.F. (2004). CellML: Its future, present and past. \textit{Progress in Biophysics and Molecular Biology}, 85(2--3), 433--450.
 
-\bibitem{raman2017} Raman, R., Bashir, R. (2017). Biomimicry, biofabrication, and biohybrid systems. \textit{Adv. Healthcare Mater.}, 6(20), 1700496.
+\bibitem{raman2017} Raman, R., \& Bashir, R. (2017). Biomimicry, biofabrication, and biohybrid systems: The emergence and evolution of biological design. \textit{Advanced Healthcare Materials}, 6(20), 1700496.
 
-\bibitem{ricotti2017} Ricotti, L. et al. (2017). Biohybrid actuators for robotics. \textit{Science Robotics}, 2(12), eaaq0495.
+\bibitem{ricotti2017} Ricotti, L., et al. (2017). Biohybrid actuators for robotics: A review of devices actuated by living cells. \textit{Science Robotics}, 2(12), eaaq0495.
 
-\bibitem{park2016} Park, S.J. et al. (2016). Phototactic guidance of a tissue-engineered soft-robotic ray. \textit{Science}, 353, 158-162.
+\bibitem{park2016} Park, S.J., et al. (2016). Phototactic guidance of a tissue-engineered soft-robotic ray. \textit{Science}, 353(6295), 158--162.
 
-\bibitem{yuste2017} Yuste, R. et al. (2017). Four ethical priorities for neurotechnologies and AI. \textit{Nature}, 551, 159-163.
+\bibitem{yuste2017} Yuste, R., et al. (2017). Four ethical priorities for neurotechnologies and AI. \textit{Nature}, 551(7679), 159--163.
 
-\bibitem{hyun2020} Hyun, I., Scharf-Deering, J.C., Lunshof, J.E. (2020). Ethical issues related to brain organoid research. \textit{Brain Res.}, 1732, 146653.
+\bibitem{hyun2020} Hyun, I., Scharf-Deering, J.C., \& Lunshof, J.E. (2020). Ethical issues related to brain organoid research. \textit{Brain Research}, 1732, 146653.
 
 \end{thebibliography}
 
@@ -523,7 +527,7 @@ All specifications and examples: \url{https://github.com/tukuaiai/wetware-engine
 \section{Complete Bio-DSL Example: Dual-Muscle Antagonist System}
 \label{app:example}
 
-\begin{lstlisting}
+\begin{lstlisting}[basicstyle=\ttfamily\scriptsize]
 // ============================================
 // Bio-Mechanical Arm Unit v0.1
 // Dual-muscle antagonist with closed-loop control
@@ -542,7 +546,7 @@ COMPONENT extensor FROM "muscle-actuator-human-skeletal@^2.3" {
 
 COMPONENT sensor FROM "piezo-force-sensor@~1.1" {
   range: [0, 100] mN,
-  sampling_rate: 100 Hz
+  sampling_rate: 100,Hz
 }
 
 COMPONENT controller FROM "neural-organoid-spinal@>=0.8" {
@@ -553,11 +557,11 @@ COMPONENT controller FROM "neural-organoid-spinal@>=0.8" {
 // === Adapter Declarations ===
 ADAPTER perfusion FROM "microfluidic-4ch@1.0" {
   medium: "DMEM + 10% FBS",
-  flow_rate: 0.5 mL/min PER channel
+  flow_rate: 0.5,mL/min PER channel
 }
 
 ADAPTER stim_converter FROM "opto-electrical@2.0" {
-  wavelength: 470 nm
+  wavelength: 470,nm
 }
 
 // === Connection Topology ===
@@ -580,7 +584,7 @@ CONNECT perfusion.ch4 TO sensor.perfusion_input
 // === Runtime Configuration ===
 RUNTIME {
   perfusion: {
-    temperature: 37 C,
+    temperature: 37,°C,
     pH: 7.4,
     oxygenation: true,
     waste_removal: "continuous"
@@ -601,14 +605,14 @@ RUNTIME {
     ],
     alerts: {
       "viability < 80%": "WARNING",
-      "force > 90 mN": "CRITICAL"
+      "force > 90,mN": "CRITICAL"
     }
   },
   
   safety: {
-    max_force: 100 mN,
+    max_force: 100,mN,
     emergency: {
-      trigger: "viability < 50% OR force > 120 mN",
+      trigger: "viability < 50% OR force > 120,mN",
       action: "STOP_ALL; PERFUSION_ONLY"
     }
   }
@@ -616,8 +620,8 @@ RUNTIME {
 
 // === Behavioral Logic ===
 ON STARTUP DO {
-  SET perfusion.flow_rate = 0.5 mL/min
-  WAIT 300 s  // Equilibration period
+  SET perfusion.flow_rate = 0.5,mL/min
+  WAIT 300,s  // Equilibration period
   RUN calibration_sequence()
   SET controller.mode = "active"
   LOG "System initialized"
@@ -643,27 +647,27 @@ EVERY 1 hour DO {
 TEST unit_response {
   description: "Single muscle contraction test"
   GIVEN flexor.state == "ready"
-  WHEN STIMULATE flexor AT 10 Hz, 2 V FOR 1 s
-  THEN EXPECT flexor.force IN [5, 15] mN WITHIN 200 ms
+  WHEN STIMULATE flexor AT 10,Hz, 2 V FOR 1 s
+  THEN EXPECT flexor.force IN [5, 15] mN WITHIN 200,ms
 }
 
 TEST antagonist_balance {
   description: "Antagonist coordination test"
   GIVEN system.mode == "active"
   WHEN ACTIVATE flexor AND extensor SIMULTANEOUSLY
-  THEN EXPECT |flexor.force - extensor.force| < 5 mN
+  THEN EXPECT |flexor.force - extensor.force| < 5,mN
 }
 
 TEST tracking_accuracy {
   description: "Closed-loop tracking test"
   GIVEN system.mode == "closed_loop"
-  WHEN SET target = sine_wave(0.5 Hz, +/-20 mN) FOR 60 s
+  WHEN SET target = sine_wave(0.5 Hz, $\pm$20 mN) FOR 60 s
   THEN EXPECT tracking_error < 3 mN RMS
 }
 
 // === Expected Performance ===
 EXPECTED {
-  position_accuracy: +/-2 mN,
+  position_accuracy: $\pm$2 mN,
   bandwidth: [0, 2] Hz,
   lifetime: [7, 14] days,
   power_consumption: [50, 100] mW
@@ -673,7 +677,7 @@ EXPECTED {
 \section{Complete Muscle Actuator Specification}
 \label{app:muscle}
 
-\begin{lstlisting}
+\begin{lstlisting}[basicstyle=\ttfamily\scriptsize]
 bio-component: "1.0"
 
 info:
@@ -784,11 +788,13 @@ dependencies:
 \section{Bio-Component Spec JSON Schema}
 \label{app:schema}
 
-\begin{lstlisting}
+\begin{lstlisting}[basicstyle=\ttfamily\scriptsize]
 {
-  "$schema": "https://wetware-engineering.org/schema/bio-component/1.0",
+  "$schema": "https://wetware-engineering.org/schema/
+              bio-component/1.0",
   "type": "object",
-  "required": ["bio-component", "info", "classification", "source", "interface"],
+  "required": ["bio-component", "info", "classification", 
+               "source", "interface"],
   "properties": {
     "bio-component": {
       "type": "string",
