@@ -1,0 +1,549 @@
+\documentclass{article}
+
+\usepackage{arxiv}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{booktabs}
+\usepackage{amsfonts}
+\usepackage{nicefrac}
+\usepackage{microtype}
+\usepackage{cleveref}
+\usepackage{graphicx}
+\usepackage{natbib}
+\usepackage{doi}
+\usepackage{listings}
+\usepackage{xcolor}
+
+% Code listing style
+\lstdefinestyle{yaml}{
+  basicstyle=\ttfamily\small,
+  breaklines=true,
+  frame=single,
+  backgroundcolor=\color{gray!10},
+  keywordstyle=\color{blue},
+  commentstyle=\color{green!50!black},
+}
+
+\lstdefinestyle{biodsl}{
+  basicstyle=\ttfamily\small,
+  breaklines=true,
+  frame=single,
+  backgroundcolor=\color{blue!5},
+  keywordstyle=\color{purple},
+  commentstyle=\color{green!50!black},
+  morekeywords={COMPONENT,FROM,AS,CONNECT,TO,VIA,WITH,RUNTIME,ON,DO,WHEN,THEN,EVERY,TEST,GIVEN,EXPECT,ADAPTER,SET,WAIT,LOG,RUN,IF,REDUCE,INCREASE,BY,STIMULATE,AT,FOR,IN,WITHIN,AND},
+}
+
+\title{Wetware Engineering: Applying Software Engineering Paradigms to Biological System Construction}
+
+\author{
+  \href{https://orcid.org/0009-0009-6523-1823}{\includegraphics[scale=0.06]{orcid.pdf}\hspace{1mm}123olp} \\
+  \texttt{tukuai.ai@gmail.com} \\
+}
+
+\renewcommand{\shorttitle}{Wetware Engineering}
+
+\hypersetup{
+  pdftitle={Wetware Engineering: Applying Software Engineering Paradigms to Biological System Construction},
+  pdfsubject={cs.SE, q-bio.OT},
+  pdfauthor={123olp},
+  pdfkeywords={Software Engineering, Biological Systems, Cross-Disciplinary Methodology, Modular Design, Domain-Specific Language, Systems Biology, Paradigm Transfer},
+}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Software engineering underwent a paradigm shift from monolithic, handcrafted programs to modular, composable systems over five decades---a transformation enabled by standardized interfaces, package managers, version control, and runtime orchestration. Biological engineering, despite remarkable advances in synthetic biology, organoids, and tissue engineering, remains trapped in an analogous ``pre-modular'' era: each biological system is constructed from scratch, results are difficult to reproduce across laboratories, and there exists no universal language for describing biological component composition.
+
+We propose \textbf{Wetware Engineering}, a cross-disciplinary methodology that systematically transfers software engineering's core abstractions---modularity, interface standardization, dependency management, and runtime orchestration---to biological system construction. This is not merely applying computational tools to biology, but fundamentally reconceptualizing how living systems should be designed, described, and assembled.
+
+Our contribution is threefold: (1) \textbf{Conceptual Framework}: We define the Component-Interface-Runtime triad as the foundational abstraction for modular biological systems, drawing explicit parallels to software architecture patterns. (2) \textbf{Technical Specifications}: We propose Bio-Component Spec, a standardized schema for describing biological modules, and Bio-DSL, a domain-specific language for declarative system composition---both designed following software engineering best practices. (3) \textbf{Paradigm Analysis}: We systematically analyze how software engineering concepts map to biological contexts, identifying both direct translations and fundamental differences requiring novel solutions.
+
+Wetware Engineering represents a paradigm-level contribution: shifting biological system construction from ``artisanal replication'' to ``engineered composition.'' While implementation faces significant biological challenges, establishing this conceptual and methodological foundation is a necessary first step toward reproducible, iterable, and collaborative biological system development.
+\end{abstract}
+
+\keywords{Software Engineering \and Biological Systems \and Cross-Disciplinary Methodology \and Modular Design \and Domain-Specific Language \and Systems Biology \and Paradigm Transfer}
+
+\section{Introduction: The Case for Paradigm Transfer}
+
+\subsection{Software Engineering's Modular Revolution}
+
+The history of software engineering is fundamentally a history of rising abstraction levels. In the 1950s, programmers wrote machine code---sequences of binary instructions tied to specific hardware. The introduction of assembly language provided the first abstraction: human-readable mnemonics replacing numeric opcodes. Structured programming in the 1960s abstracted control flow. Object-oriented programming in the 1980s encapsulated data and behavior together. Component-based development in the 1990s enabled binary-level reuse. Service-oriented architecture in the 2000s abstracted deployment locations. Microservices in the 2010s achieved independent deployment and elastic scaling.
+
+Each abstraction level brought transformative benefits:
+
+\begin{table}[h]
+\centering
+\caption{Evolution of Software Engineering Abstractions}
+\begin{tabular}{llll}
+\toprule
+Era & Abstraction & Key Innovation & Impact \\
+\midrule
+1950s & Machine code $\rightarrow$ Assembly & Human-readable instructions & 10x productivity \\
+1960s & Procedures & Structured programming & Manageable complexity \\
+1970s & Modules & Information hiding, interfaces & Team collaboration \\
+1980s & Objects & Data + behavior encapsulation & Reusable libraries \\
+1990s & Components & Binary reuse (COM, JavaBeans) & Third-party ecosystems \\
+2000s & Services & Network-based composition & Enterprise integration \\
+2010s & Microservices & Independent deployment & Cloud-native scalability \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The critical insight is that each abstraction level did not merely add convenience---it fundamentally changed what was possible. Before package managers like npm and pip, sharing code meant copying files and manually resolving dependencies. Before containerization, ``it works on my machine'' was an unsolvable problem.
+
+Today, a software developer can declare \texttt{import tensorflow} and instantly access millions of lines of tested, documented, version-controlled code. This is not magic---it is the accumulated result of decades of standardization, tooling, and community building.
+
+\subsection{Biological Engineering's ``Pre-Modular'' State}
+
+Biological engineering in 2025, despite extraordinary advances, remains in a state analogous to software engineering circa 1970. Consider the following comparison:
+
+\begin{table}[h]
+\centering
+\caption{Software vs. Biological Engineering: Current State}
+\begin{tabular}{lll}
+\toprule
+Software Engineering Concept & Current State in Biology & The Gap \\
+\midrule
+Standard Library & None & Each lab builds from scratch \\
+Package Manager (npm, pip) & None & Cannot declare dependencies \\
+Version Control (git) & None & ``This batch differs from last batch'' \\
+API Documentation & None & ``Ask the original author'' \\
+Unit Testing & None & ``How long will it last? Maybe a week'' \\
+CI/CD Pipeline & None & No automated validation \\
+Containerization (Docker) & None & Environments not reproducible \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+When a tissue engineer wants to combine a muscle actuator with a neural controller, they face challenges that software engineers solved decades ago:
+
+\begin{enumerate}
+\item \textbf{No standard interfaces}: The muscle was developed in Lab A with specific culture conditions; the neural tissue in Lab B with different protocols. There is no guarantee they can physically or biochemically connect.
+
+\item \textbf{No dependency declaration}: What exactly does the muscle need? Glucose concentration? Oxygen levels? Stimulation frequency? This information exists in lab notebooks, not machine-readable specifications.
+
+\item \textbf{No version compatibility}: Lab A improved their muscle protocol last month. Does it still work with Lab B's neural tissue? No one knows without re-running experiments.
+
+\item \textbf{No composition language}: How do you describe ``connect muscle output to sensor input, with closed-loop feedback control''? In natural language, buried in a methods section.
+\end{enumerate}
+
+The fundamental problem is conceptual: biological systems are treated as \textbf{indivisible wholes} rather than \textbf{composable collections of modules}.
+
+\subsection{Why Paradigm Transfer, Not Just Tool Application}
+
+Existing ``computational biology'' primarily means:
+\begin{itemize}
+\item Using computers to \textbf{analyze} biological data (bioinformatics)
+\item Using algorithms to \textbf{simulate} biological processes (systems biology)
+\item Using software to \textbf{control} biological experiments (lab automation)
+\end{itemize}
+
+These are valuable but insufficient. They apply software as a tool to biology, without changing how biology itself is engineered.
+
+We propose something fundamentally different:
+
+\begin{quote}
+\textbf{Using software engineering's design philosophy to reconceptualize how biological systems are constructed.}
+\end{quote}
+
+The distinction matters. Tools and methods operate within existing paradigms. Paradigm transfer creates new possibilities that were previously inconceivable.
+
+\subsection{Contributions and Paper Structure}
+
+This paper makes the following contributions:
+
+\begin{enumerate}
+\item \textbf{Paradigm Definition}: We systematically propose transferring software engineering's core paradigms to biological system construction.
+
+\item \textbf{Abstraction Framework}: We define the Component-Interface-Runtime triad as the foundational abstraction for modular biological systems.
+
+\item \textbf{Technical Specifications}: We propose Bio-Component Spec v0.1 and Bio-DSL for declarative system composition.
+
+\item \textbf{Mapping Analysis}: We systematically analyze how software engineering concepts translate to biological contexts.
+
+\item \textbf{Difference Identification}: We identify fundamental differences requiring innovative approaches beyond direct paradigm transfer.
+\end{enumerate}
+
+The paper is structured as follows: \S2 defines core abstractions; \S3 presents systematic mappings; \S4 details Bio-Component Specification; \S5 describes Bio-DSL; \S6 analyzes fundamental differences; \S7 positions our work; \S8 concludes.
+
+\section{Core Abstractions: The Component-Interface-Runtime Triad}
+
+\subsection{Abstraction as the Essence of Engineering}
+
+Edsger Dijkstra observed: ``The purpose of abstraction is not to be vague, but to create a new semantic level in which one can be absolutely precise.'' This insight captures why abstraction is not merely a convenience but the essence of engineering progress.
+
+Software engineering's success stems from identifying \textbf{correct abstraction boundaries}:
+\begin{itemize}
+\item Functions abstract instruction sequences
+\item Objects abstract data and behavior
+\item Interfaces abstract implementation details
+\item Services abstract deployment locations
+\item Containers abstract operating environments
+\end{itemize}
+
+The central question for biological engineering is: \textbf{What are the correct abstraction boundaries for living systems?}
+
+We propose that the answer lies in the same triad that revolutionized software: \textbf{Component}, \textbf{Interface}, and \textbf{Runtime}.
+
+\subsection{Component: The Unit of Biological Reuse}
+
+A \textbf{Bio-Component} is a biological unit that:
+\begin{itemize}
+\item Can exist independently (with appropriate life support)
+\item Can receive energy and nutrients (powerable)
+\item Can respond to control signals (controllable)
+\item Can produce functional outputs (functional)
+\item Can report its state (observable)
+\end{itemize}
+
+This definition deliberately parallels software component definitions.
+
+\begin{table}[h]
+\centering
+\caption{Component Typology}
+\begin{tabular}{lll}
+\toprule
+Type & Software Analogy & Biological Examples \\
+\midrule
+Actuator & Output device driver & Muscle, gland, ciliated epithelium \\
+Sensor & Input device driver & Photoreceptor, mechanoreceptor \\
+Processor & CPU, logic unit & Ganglion, brain organoid \\
+Storage & Memory, database & Adipose tissue, bone marrow \\
+Connector & Network interface & Blood vessel, nerve fiber \\
+Metabolic & Power supply & Liver tissue, mitochondria-rich cells \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Interface: The Contract for Composition}
+
+The Gang of Four's design principle states: ``Program to an interface, not an implementation.'' This principle enabled the explosion of software reuse.
+
+Biological interfaces are more complex than software interfaces because they operate across multiple physical dimensions simultaneously. We identify four primary dimensions:
+
+\begin{enumerate}
+\item \textbf{Power Interface}: How energy and nutrients flow between components
+\item \textbf{Signal Interface}: How information is exchanged (electrical, chemical, mechanical, optical)
+\item \textbf{Isolation Interface}: How components are protected from each other
+\item \textbf{Mechanical Interface}: How physical forces are transmitted
+\end{enumerate}
+
+\subsection{Runtime: The Orchestration Layer}
+
+A Bio-Runtime must handle responsibilities analogous to software runtimes:
+
+\begin{table}[h]
+\centering
+\caption{Runtime Responsibilities Mapping}
+\begin{tabular}{ll}
+\toprule
+Software Runtime & Bio-Runtime \\
+\midrule
+Memory allocation & Nutrient allocation \\
+CPU scheduling & Activity timing control \\
+Network I/O & Signal routing \\
+Health checks & Viability monitoring \\
+Auto-restart & Regeneration/replacement triggering \\
+Logging & Biomarker time-series recording \\
+Load balancing & Workload distribution \\
+Fault isolation & Containing necrosis, inflammation \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Systematic Mapping: Software $\rightarrow$ Biological Engineering}
+
+\subsection{Mapping Framework}
+
+Not all software engineering concepts transfer equally to biology. We propose a three-category framework:
+
+\begin{table}[h]
+\centering
+\caption{Mapping Categories}
+\begin{tabular}{lll}
+\toprule
+Mapping Type & Definition & Transfer Difficulty \\
+\midrule
+Direct & Concept transfers with minimal adaptation & Low \\
+Analogous & Core idea transfers but requires adaptation & Medium \\
+Novel & No software equivalent; requires new solutions & High \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Direct Mappings}
+
+\textbf{Semantic Versioning}: Software's SemVer specification (MAJOR.MINOR.PATCH) transfers directly to Bio-Components:
+\begin{itemize}
+\item MAJOR: Interface-incompatible changes
+\item MINOR: Backward-compatible enhancements
+\item PATCH: Optimizations without interface changes
+\end{itemize}
+
+\textbf{Dependency Declaration}: Package manifests can use identical syntax for biological dependencies.
+
+\textbf{Documentation Standards}: README files, API documentation, and usage examples transfer directly.
+
+\subsection{Analogous Mappings}
+
+\textbf{Testing $\rightarrow$ Validation}: Key differences include:
+\begin{itemize}
+\item Software tests are deterministic; biological tests are statistical
+\item Software tests run in milliseconds; biological tests take days/weeks
+\item Software tests are automated; biological tests require manual intervention
+\end{itemize}
+
+\textbf{Error Handling $\rightarrow$ Failure Mode Management}: Biological systems have analogous categories:
+\begin{itemize}
+\item Recoverable Degradation (fatigue)
+\item Irreversible Damage (necrosis)
+\item Systemic Risk (inflammation, infection)
+\end{itemize}
+
+\subsection{Novel Challenges}
+
+These challenges have no direct software equivalent:
+
+\begin{enumerate}
+\item \textbf{Immune Compatibility}: Software components do not ``reject'' each other.
+\item \textbf{Signal Crosstalk}: Biological components share chemical environments.
+\item \textbf{Metabolic Coupling}: Components share resources and produce waste.
+\item \textbf{Living Degradation}: Biological components inherently degrade over time.
+\item \textbf{Ethical Constraints}: Biological components raise ethical considerations.
+\end{enumerate}
+
+\section{Bio-Component Specification: Design Rationale}
+
+\subsection{Design Principles}
+
+The Bio-Component Specification draws from established software engineering principles:
+
+\textbf{SOLID Principles Applied}:
+\begin{itemize}
+\item Single Responsibility: A component should perform one biological function
+\item Open/Closed: Components can be enhanced without changing interfaces
+\item Liskov Substitution: Compatible components must be interchangeable
+\item Interface Segregation: Fine-grained interface definitions
+\item Dependency Inversion: Depend on interface specs, not specific implementations
+\end{itemize}
+
+\subsection{Specification Structure}
+
+The complete schema includes:
+\begin{itemize}
+\item Identification (id, name, version, license, authors)
+\item Classification (type, domain, tags)
+\item Biological Source (organism, tissue type, cell types)
+\item Interface Definition (inputs, outputs)
+\item Environmental Requirements (physical, chemical, biological)
+\item Performance Characteristics (functional, reliability, resources)
+\item Failure Modes
+\item Testing specifications
+\item Dependencies
+\end{itemize}
+
+\subsection{Versioning Strategy}
+
+We adopt SemVer with biological interpretations:
+
+\textbf{MAJOR version}: Interface-breaking changes (input/output port type changes, required parameter additions)
+
+\textbf{MINOR version}: Backward-compatible additions (new optional output ports, performance improvements)
+
+\textbf{PATCH version}: Backward-compatible fixes (protocol optimizations, documentation updates)
+
+Extended version format for biological specificity:
+\begin{verbatim}
+{version}+{batch}.{donor}.{modification}
+Example: 2.3.1+batch20251228.donor42.wildtype
+\end{verbatim}
+
+\section{Bio-DSL: Language Design Rationale}
+
+\subsection{Why a Domain-Specific Language?}
+
+Martin Fowler defines a domain-specific language (DSL) as ``a computer language specialized to a particular application domain.'' DSLs trade generality for expressiveness within their domain.
+
+Benefits of DSLs for biological systems:
+\begin{itemize}
+\item \textbf{Expressiveness}: Describe complex assemblies concisely
+\item \textbf{Readability}: Biologists can understand system descriptions
+\item \textbf{Validation}: Catch interface mismatches at ``compile time''
+\item \textbf{Abstraction}: Focus on what, not how
+\end{itemize}
+
+\subsection{Design Goals}
+
+\begin{enumerate}
+\item \textbf{Declarative}: Describe \textit{what} the system is, not \textit{how} to build it
+\item \textbf{Readable}: A biologist should understand without programming background
+\item \textbf{Verifiable}: Static analysis can catch errors before physical assembly
+\item \textbf{Executable}: Can generate runtime configurations
+\item \textbf{Composable}: Systems can be nested and reused
+\end{enumerate}
+
+\subsection{Language Constructs}
+
+\textbf{Component Declaration}:
+\begin{lstlisting}[style=biodsl]
+COMPONENT flexor FROM "muscle-actuator-human-skeletal@^2.3"
+COMPONENT sensor FROM "piezo-force-sensor@~1.1" AS force_sensor
+\end{lstlisting}
+
+\textbf{Connection Declaration}:
+\begin{lstlisting}[style=biodsl]
+CONNECT sensor.output TO controller.input
+CONNECT controller.output TO flexor.stimulation VIA signal_converter
+\end{lstlisting}
+
+\textbf{Runtime Configuration}:
+\begin{lstlisting}[style=biodsl]
+RUNTIME {
+  perfusion: { temperature: 37C, pH: 7.4, flow_rate: 0.5 mL/min },
+  control: { mode: "closed_loop", algorithm: "PID" },
+  monitoring: { log_interval: 10s, metrics: ["force", "viability"] }
+}
+\end{lstlisting}
+
+\textbf{Behavioral Logic}:
+\begin{lstlisting}[style=biodsl]
+ON STARTUP DO {
+  SET perfusion.flow_rate = 0.5 mL/min
+  WAIT 300s
+  SET controller.mode = "active"
+}
+
+WHEN flexor.fatigue_index > 0.3 THEN {
+  LOG "Fatigue detected"
+  REDUCE flexor.stimulation_frequency BY 20%
+}
+\end{lstlisting}
+
+\subsection{Comparison with Related Languages}
+
+\begin{table}[h]
+\centering
+\caption{Comparison with Existing Biological Languages}
+\begin{tabular}{llll}
+\toprule
+Language & Abstraction Level & Purpose & Relationship \\
+\midrule
+SBOL & Genetic & DNA sequence description & Lower level \\
+SBML & Molecular & Biochemical networks & Lower level \\
+CellML & Cellular & Cell mathematical models & Lower level \\
+Bio-DSL & Organ/System & Component composition & Higher level \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Bio-DSL is designed to \textbf{complement} these languages, not replace them.
+
+\section{Fundamental Differences and Open Challenges}
+
+\subsection{Determinism vs. Stochasticity}
+
+A software function \texttt{add(2, 3)} will always return \texttt{5}. A biological muscle stimulated with identical parameters will produce slightly different force each time.
+
+\textbf{Implications}: Interface contracts must be probabilistic; testing must be statistical; runtime must handle uncertainty.
+
+\subsection{Discrete vs. Continuous}
+
+Software state transitions are instantaneous. Biological state transitions are gradual.
+
+\textbf{Implications}: Interface parameters need tolerance ranges; state definitions need thresholds; timing specifications need ranges.
+
+\subsection{Isolation vs. Coupling}
+
+Software processes are isolated by the operating system. Biological components share culture medium.
+
+\textbf{Implications}: Explicit coupling declarations; isolation adapter specifications; system-level resource budgeting.
+
+\subsection{The Immune System: No Software Equivalent}
+
+Software components do not ``reject'' each other. Biological components from different genetic backgrounds may trigger immune responses.
+
+\textbf{Required Innovations}: Immune compatibility scoring; isolation barrier specifications; compatibility checking in Bio-DSL.
+
+\subsection{Living Degradation}
+
+Software does not age. Biological components inherently degrade over time.
+
+\textbf{Required Innovations}: Degradation modeling; maintenance protocols; replacement strategies.
+
+\subsection{Ethical Constraints}
+
+Software has no inherent ethical status. Biological components raise ethical considerations.
+
+\textbf{Required Innovations}: Ethical metadata; capability limits in Bio-DSL.
+
+\section{Related Work and Positioning}
+
+\subsection{Synthetic Biology and Standardization}
+
+BioBricks and iGEM pioneered biological standardization at the genetic level. SBOL provides standardized data formats for genetic designs.
+
+\textbf{Relationship}: BioBricks/SBOL operate at the genetic level; Wetware Engineering operates at the organ/system level. They are complementary.
+
+\subsection{Organ-on-Chip and Organoids}
+
+Organ-on-chip devices and organoids provide physical implementations of Bio-Components. Current systems lack standardized interfaces.
+
+\textbf{Relationship}: Wetware Engineering provides the abstraction framework they need.
+
+\subsection{Systems Biology Modeling}
+
+SBML and CellML describe how components behave internally (simulation). Bio-DSL describes how components connect externally (composition).
+
+\subsection{Positioning Summary}
+
+Wetware Engineering's unique contribution: Providing the \textbf{system-level abstraction layer} that connects molecular/genetic engineering to functional biological systems, using software engineering principles.
+
+\section{Conclusion and Future Directions}
+
+\subsection{Summary of Contributions}
+
+This paper has proposed \textbf{Wetware Engineering}, a cross-disciplinary methodology that systematically transfers software engineering paradigms to biological system construction.
+
+\textbf{Conceptual Framework}: We defined the Component-Interface-Runtime triad as the foundational abstraction.
+
+\textbf{Technical Specifications}: We proposed Bio-Component Spec v0.1 and Bio-DSL.
+
+\textbf{Systematic Analysis}: We provided mappings categorized as Direct, Analogous, or Novel.
+
+\textbf{Honest Assessment}: We identified fundamental differences that require innovation beyond paradigm transfer.
+
+\subsection{The Path Forward}
+
+\textbf{Phase 1 (1-3 years)}: Refine specifications, develop proof-of-concept tooling, document existing systems.
+
+\textbf{Phase 2 (3-7 years)}: Physically implement systems, validate reproducibility, build component registry.
+
+\textbf{Phase 3 (7-15 years)}: Establish community governance, commercial adoption, international standardization.
+
+\subsection{Closing Thoughts}
+
+Software engineering transformed from craft to discipline over five decades. Biological engineering stands at a similar inflection point.
+
+The tools of software engineering---abstraction, modularity, standardization, composition---are not specific to silicon. They are \textbf{general principles of managing complexity}. Biology is complex. These principles can help.
+
+The future of biological engineering is modular. The question is: will we design that future deliberately, or stumble into it accidentally?
+
+We choose to design.
+
+\section*{Acknowledgments}
+
+[To be added]
+
+\section*{Data Availability}
+
+All specifications and examples are available at: \url{https://github.com/tukuaiai/wetware-engineering}
+
+\bibliographystyle{unsrtnat}
+\bibliography{references}
+
+\end{document}
