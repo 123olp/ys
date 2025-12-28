@@ -1,0 +1,3329 @@
+%%
+% Copyright (c) 2017 - 2025, Pascal Wagler;
+% Copyright (c) 2014 - 2025, John MacFarlane
+%
+% All rights reserved.
+%
+% Redistribution and use in source and binary forms, with or without
+% modification, are permitted provided that the following conditions
+% are met:
+%
+% - Redistributions of source code must retain the above copyright
+% notice, this list of conditions and the following disclaimer.
+%
+% - Redistributions in binary form must reproduce the above copyright
+% notice, this list of conditions and the following disclaimer in the
+% documentation and/or other materials provided with the distribution.
+%
+% - Neither the name of John MacFarlane nor the names of other
+% contributors may be used to endorse or promote products derived
+% from this software without specific prior written permission.
+%
+% THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+% "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+% LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS
+% FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE
+% COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,
+% INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,
+% BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+% LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+% CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+% LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN
+% ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+% POSSIBILITY OF SUCH DAMAGE.
+%%
+
+%%
+% This is the Eisvogel pandoc LaTeX template.
+%
+% For usage information and examples visit the official GitHub page:
+% https://github.com/Wandmalfarbe/pandoc-latex-template
+%%
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names,table}{xcolor}
+\documentclass[
+  paper=a4,
+  ,captions=tableheading
+]{scrartcl}
+\usepackage{xcolor}
+\usepackage[margin=2.5cm,includehead=true,includefoot=true,centering,]{geometry}
+\usepackage{amsmath,amssymb}
+
+% add backlinks to footnote references, cf. https://tex.stackexchange.com/questions/302266/make-footnote-clickable-both-ways
+\usepackage{footnotebackref}
+\setcounter{secnumdepth}{5}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+
+% Use setspace anyway because we change the default line spacing.
+% The spacing is changed early to affect the titlepage and the TOC.
+\usepackage{setspace}
+\setstretch{1.2}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\newenvironment{Shaded}{}{}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{#1}}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.49,0.56,0.16}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{#1}}
+\newcommand{\BuiltInTok}[1]{\textcolor[rgb]{0.00,0.50,0.00}{#1}}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.53,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.56,0.13,0.00}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.73,0.13,0.13}{\textit{#1}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.02,0.16,0.49}{#1}}
+\newcommand{\ImportTok}[1]{\textcolor[rgb]{0.00,0.50,0.00}{\textbf{#1}}}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.40,0.40,0.40}{#1}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.74,0.48,0.00}{#1}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.73,0.40,0.53}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.10,0.09,0.49}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+
+% Workaround/bugfix from jannick0.
+% See https://github.com/jgm/pandoc/issues/4302#issuecomment-360669013)
+% or https://github.com/Wandmalfarbe/pandoc-latex-template/issues/2
+%
+% Redefine the verbatim environment 'Highlighting' to break long lines (with
+% the help of fvextra). Redefinition is necessary because it is unlikely that
+% pandoc includes fvextra in the default template.
+\usepackage{fvextra}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{breaklines,fontsize=\small,commandchars=\\\{\}}
+
+\usepackage{longtable,booktabs,array}
+\newcounter{none} % for unnumbered tables
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\definecolor{default-linkcolor}{HTML}{A50000}
+\definecolor{default-filecolor}{HTML}{A50000}
+\definecolor{default-citecolor}{HTML}{4077C0}
+\definecolor{default-urlcolor}{HTML}{4077C0}
+
+\hypersetup{
+  hidelinks,
+  breaklinks=true,
+  pdfcreator={LaTeX via pandoc with the Eisvogel template}}
+
+\author{}
+\date{}
+
+
+%
+% for the background color of the title page
+%
+
+%
+% break urls
+%
+\PassOptionsToPackage{hyphens}{url}
+
+%
+% When using babel or polyglossia with biblatex, loading csquotes is recommended
+% to ensure that quoted texts are typeset according to the rules of your main language.
+%
+\usepackage{csquotes}
+
+%
+% captions
+%
+\definecolor{caption-color}{HTML}{777777}
+\usepackage[font={stretch=1.2}, textfont={color=caption-color}, position=top, skip=4mm, labelfont=bf, singlelinecheck=false, justification=raggedright]{caption}
+\setcapindent{0em}
+
+%
+% blockquote
+%
+\definecolor{blockquote-border}{RGB}{221,221,221}
+\definecolor{blockquote-text}{RGB}{119,119,119}
+\usepackage{mdframed}
+\newmdenv[rightline=false,bottomline=false,topline=false,linewidth=3pt,linecolor=blockquote-border,skipabove=\parskip]{customblockquote}
+\renewenvironment{quote}{\begin{customblockquote}\list{}{\rightmargin=0em\leftmargin=0em}%
+\item\relax\color{blockquote-text}\ignorespaces}{\unskip\unskip\endlist\end{customblockquote}}
+
+%
+% Source Sans Pro as the default font family
+% Source Code Pro for monospace text
+%
+% 'default' option sets the default
+% font family to Source Sans Pro, not \sfdefault.
+%
+% Note that the font has been officially renamed to `Source Sans 3`, and
+% the version provided by the `sourcesanspro` package is slightly outdated.
+% You can install the newer version locally and use it, for example, with
+% `mainfont: "Source Sans 3"` in the YAML metadata (requires XeTeX or LuaTeX).
+%
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+    \usepackage[default]{sourcesanspro}
+  \usepackage{sourcecodepro}
+  \else % if not pdftex
+    \usepackage[default]{sourcesanspro}
+  \usepackage{sourcecodepro}
+
+  % XeLaTeX specific adjustments for straight quotes: https://tex.stackexchange.com/a/354887
+  % This issue is already fixed (see https://github.com/silkeh/latex-sourcecodepro/pull/5) but the
+  % fix is still unreleased.
+  % TODO: Remove this workaround when the new version of sourcecodepro is released on CTAN.
+  \ifxetex
+    \makeatletter
+    \defaultfontfeatures[\ttfamily]
+      { Numbers   = \sourcecodepro@figurestyle,
+        Scale     = \SourceCodePro@scale,
+        Extension = .otf }
+    \setmonofont
+      [ UprightFont    = *-\sourcecodepro@regstyle,
+        ItalicFont     = *-\sourcecodepro@regstyle It,
+        BoldFont       = *-\sourcecodepro@boldstyle,
+        BoldItalicFont = *-\sourcecodepro@boldstyle It ]
+      {SourceCodePro}
+    \makeatother
+  \fi
+  \fi
+
+%
+% heading color
+%
+\definecolor{heading-color}{RGB}{40,40,40}
+% By default, the KOMA-Script classes will typeset sectioning headings in
+% sans-serif. Use the normal body font for headings.
+\addtokomafont{disposition}{\normalfont\color{heading-color}\bfseries}
+
+%
+% variables for title, author and date
+%
+\usepackage{titling}
+\title{}
+\author{}
+\date{}
+
+%
+% tables
+%
+
+\definecolor{table-row-color}{HTML}{F5F5F5}
+\definecolor{table-rule-color}{HTML}{999999}
+
+%\arrayrulecolor{black!40}
+\arrayrulecolor{table-rule-color}     % color of \toprule, \midrule, \bottomrule
+\setlength\heavyrulewidth{0.3ex}      % thickness of \toprule, \bottomrule
+\renewcommand{\arraystretch}{1.3}     % spacing (padding)
+
+
+%
+% remove paragraph indentation
+%
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+
+%
+%
+% Listings
+%
+%
+
+
+%
+% header and footer
+%
+\usepackage[headsepline,footsepline]{scrlayer-scrpage}
+
+\newpairofpagestyles{eisvogel-header-footer}{
+  \clearpairofpagestyles
+  \ihead*{}
+  \chead*{}
+  \ohead*{}
+  \ifoot*{}
+  \cfoot*{}
+  \ofoot*{\thepage}
+  \addtokomafont{pageheadfoot}{\upshape}
+}
+\pagestyle{eisvogel-header-footer}
+
+
+
+%
+% Define watermark
+%
+
+\begin{document}
+
+
+
+
+\hypertarget{wetware-engineering-applying-software-engineering-paradigms-to-biological-system-construction}{%
+\section{Wetware Engineering: Applying Software Engineering Paradigms to
+Biological System
+Construction}\label{wetware-engineering-applying-software-engineering-paradigms-to-biological-system-construction}}
+
+\textbf{A Cross-Disciplinary Methodology for Modular Life Systems}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\textbf{Author}: 123olp\\
+\textbf{Email}: tukuai.ai@gmail.com\\
+\textbf{ORCID}:
+\href{https://orcid.org/0009-0009-6523-1823}{0009-0009-6523-1823}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{abstract}{%
+\subsection{Abstract}\label{abstract}}
+
+Software engineering underwent a paradigm shift from monolithic,
+handcrafted programs to modular, composable systems over five
+decades---a transformation enabled by standardized interfaces, package
+managers, version control, and runtime orchestration. Biological
+engineering, despite remarkable advances in synthetic biology,
+organoids, and tissue engineering, remains trapped in an analogous
+``pre-modular'' era: each biological system is constructed from scratch,
+results are difficult to reproduce across laboratories, and there exists
+no universal language for describing biological component composition.
+
+We propose \textbf{Wetware Engineering}, a cross-disciplinary
+methodology that systematically transfers software engineering's core
+abstractions---modularity, interface standardization, dependency
+management, and runtime orchestration---to biological system
+construction. This is not merely applying computational tools to
+biology, but fundamentally reconceptualizing how living systems should
+be designed, described, and assembled.
+
+Our contribution is threefold: (1) \textbf{Conceptual Framework}: We
+define the Component-Interface-Runtime triad as the foundational
+abstraction for modular biological systems, drawing explicit parallels
+to software architecture patterns. (2) \textbf{Technical
+Specifications}: We propose Bio-Component Spec, a standardized schema
+for describing biological modules, and Bio-DSL, a domain-specific
+language for declarative system composition---both designed following
+software engineering best practices. (3) \textbf{Paradigm Analysis}: We
+systematically analyze how software engineering concepts map to
+biological contexts, identifying both direct translations and
+fundamental differences requiring novel solutions.
+
+Wetware Engineering represents a paradigm-level contribution: shifting
+biological system construction from ``artisanal replication'' to
+``engineered composition.'' While implementation faces significant
+biological challenges, establishing this conceptual and methodological
+foundation is a necessary first step toward reproducible, iterable, and
+collaborative biological system development.
+
+\textbf{Keywords}: Software Engineering, Biological Systems,
+Cross-Disciplinary Methodology, Modular Design, Domain-Specific
+Language, Systems Biology, Paradigm Transfer \# 1. Introduction: The
+Case for Paradigm Transfer
+
+\hypertarget{software-engineerings-modular-revolution}{%
+\subsection{1.1 Software Engineering's Modular
+Revolution}\label{software-engineerings-modular-revolution}}
+
+The history of software engineering is fundamentally a history of rising
+abstraction levels. In the 1950s, programmers wrote machine
+code---sequences of binary instructions tied to specific hardware. The
+introduction of assembly language provided the first abstraction:
+human-readable mnemonics replacing numeric opcodes. Structured
+programming in the 1960s abstracted control flow. Object-oriented
+programming in the 1980s encapsulated data and behavior together.
+Component-based development in the 1990s enabled binary-level reuse.
+Service-oriented architecture in the 2000s abstracted deployment
+locations. Microservices in the 2010s achieved independent deployment
+and elastic scaling.
+
+Each abstraction level brought transformative benefits:
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.1190}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.3095}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.3810}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.1905}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Era
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Abstraction
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Key Innovation
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Impact
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+1950s & Machine code → Assembly & Human-readable instructions & 10x
+productivity \\
+1960s & Procedures & Structured programming & Manageable complexity \\
+1970s & Modules & Information hiding, interfaces & Team collaboration \\
+1980s & Objects & Data + behavior encapsulation & Reusable libraries \\
+1990s & Components & Binary reuse (COM, JavaBeans) & Third-party
+ecosystems \\
+2000s & Services & Network-based composition & Enterprise integration \\
+2010s & Microservices & Independent deployment & Cloud-native
+scalability \\
+\end{longtable}
+
+The critical insight is that each abstraction level did not merely add
+convenience---it fundamentally changed what was possible. Before package
+managers like npm and pip, sharing code meant copying files and manually
+resolving dependencies. Before containerization, ``it works on my
+machine'' was an unsolvable problem. Before version control,
+collaboration meant emailing zip files.
+
+Today, a software developer can declare \texttt{import\ tensorflow} and
+instantly access millions of lines of tested, documented,
+version-controlled code. This is not magic---it is the accumulated
+result of decades of standardization, tooling, and community building.
+
+\hypertarget{biological-engineerings-pre-modular-state}{%
+\subsection{1.2 Biological Engineering's ``Pre-Modular''
+State}\label{biological-engineerings-pre-modular-state}}
+
+Biological engineering in 2025, despite extraordinary advances, remains
+in a state analogous to software engineering circa 1970. Consider the
+following comparison:
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.4688}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3906}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.1406}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Software Engineering Concept
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Current State in Biology
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+The Gap
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Standard Library & None & Each lab builds from scratch \\
+Package Manager (npm, pip) & None & Cannot declare dependencies \\
+Version Control (git) & None & ``This batch differs from last batch'' \\
+API Documentation & None & ``Ask the original author how to culture
+it'' \\
+Unit Testing & None & ``How long will it last? Maybe a week'' \\
+CI/CD Pipeline & None & No automated validation \\
+Containerization (Docker) & None & Environments not reproducible \\
+\end{longtable}
+
+When a tissue engineer wants to combine a muscle actuator with a neural
+controller, they face challenges that software engineers solved decades
+ago:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \textbf{No standard interfaces}: The muscle was developed in Lab A
+  with specific culture conditions; the neural tissue in Lab B with
+  different protocols. There is no guarantee they can physically or
+  biochemically connect.
+\item
+  \textbf{No dependency declaration}: What exactly does the muscle need?
+  Glucose concentration? Oxygen levels? Stimulation frequency? This
+  information exists in lab notebooks, not machine-readable
+  specifications.
+\item
+  \textbf{No version compatibility}: Lab A improved their muscle
+  protocol last month. Does it still work with Lab B's neural tissue? No
+  one knows without re-running experiments.
+\item
+  \textbf{No composition language}: How do you describe ``connect muscle
+  output to sensor input, with closed-loop feedback control''? In
+  natural language, buried in a methods section.
+\end{enumerate}
+
+The fundamental problem is conceptual: biological systems are treated as
+\textbf{indivisible wholes} rather than \textbf{composable collections
+of modules}.
+
+\hypertarget{why-paradigm-transfer-not-just-tool-application}{%
+\subsection{1.3 Why Paradigm Transfer, Not Just Tool
+Application}\label{why-paradigm-transfer-not-just-tool-application}}
+
+Existing ``computational biology'' primarily means: - Using computers to
+\textbf{analyze} biological data (bioinformatics) - Using algorithms to
+\textbf{simulate} biological processes (systems biology) - Using
+software to \textbf{control} biological experiments (lab automation)
+
+These are valuable but insufficient. They apply software as a tool to
+biology, without changing how biology itself is engineered.
+
+We propose something fundamentally different:
+
+\begin{quote}
+\textbf{Using software engineering's design philosophy to
+reconceptualize how biological systems are constructed.}
+\end{quote}
+
+\begin{longtable}[]{@{}lll@{}}
+\toprule\noalign{}
+Level & Existing Approaches & Wetware Engineering \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Tool & Software analyzes biology & --- \\
+Method & Algorithms optimize experiments & --- \\
+\textbf{Paradigm} & --- & \textbf{Software thinking restructures
+bioengineering} \\
+\end{longtable}
+
+The distinction matters. Tools and methods operate within existing
+paradigms. Paradigm transfer creates new possibilities that were
+previously inconceivable.
+
+Consider an analogy: before the germ theory of disease, medicine
+optimized treatments within a paradigm of ``balancing humors.'' Germ
+theory did not merely add new treatments---it reconceptualized what
+disease \emph{is}, enabling entirely new categories of intervention
+(antibiotics, vaccines, sterilization).
+
+Similarly, Wetware Engineering does not merely add new tools to
+biological engineering. It reconceptualizes what a biological system
+\emph{is}: not an indivisible organism, but a composable assembly of
+standardized modules.
+
+\hypertarget{contributions-and-paper-structure}{%
+\subsection{1.4 Contributions and Paper
+Structure}\label{contributions-and-paper-structure}}
+
+This paper makes the following contributions:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \textbf{Paradigm Definition}: We systematically propose transferring
+  software engineering's core paradigms to biological system
+  construction, articulating why this transfer is both necessary and
+  feasible.
+\item
+  \textbf{Abstraction Framework}: We define the
+  Component-Interface-Runtime triad as the foundational abstraction for
+  modular biological systems, with explicit mappings to software
+  architecture patterns.
+\item
+  \textbf{Technical Specifications}: We propose Bio-Component Spec v0.1,
+  a standardized schema for describing biological modules, and Bio-DSL,
+  a domain-specific language for declarative system composition.
+\item
+  \textbf{Mapping Analysis}: We systematically analyze how software
+  engineering concepts translate to biological contexts, categorizing
+  mappings as Direct, Analogous, or Novel (requiring new solutions).
+\item
+  \textbf{Difference Identification}: We identify fundamental
+  differences between software and biological systems that require
+  innovative approaches beyond direct paradigm transfer.
+\end{enumerate}
+
+The paper is structured as follows: - §2 defines core abstractions and
+the Component-Interface-Runtime triad - §3 presents systematic mappings
+from software to biological engineering - §4 details the Bio-Component
+Specification design - §5 describes Bio-DSL language design rationale -
+§6 analyzes fundamental differences and open challenges - §7 positions
+our work relative to existing approaches - §8 concludes with future
+directions \# 2. Core Abstractions: The Component-Interface-Runtime
+Triad
+
+\hypertarget{abstraction-as-the-essence-of-engineering}{%
+\subsection{2.1 Abstraction as the Essence of
+Engineering}\label{abstraction-as-the-essence-of-engineering}}
+
+Edsger Dijkstra observed: ``The purpose of abstraction is not to be
+vague, but to create a new semantic level in which one can be absolutely
+precise.'' This insight captures why abstraction is not merely a
+convenience but the essence of engineering progress.
+
+Software engineering's success stems from identifying \textbf{correct
+abstraction boundaries}: - Functions abstract instruction sequences -
+Objects abstract data and behavior - Interfaces abstract implementation
+details - Services abstract deployment locations - Containers abstract
+operating environments
+
+Each abstraction creates a ``semantic level'' where engineers can reason
+precisely without concerning themselves with lower-level details. A web
+developer using React does not think about memory allocation; a data
+scientist using pandas does not think about CPU cache optimization.
+
+The central question for biological engineering is: \textbf{What are the
+correct abstraction boundaries for living systems?}
+
+We propose that the answer lies in the same triad that revolutionized
+software: \textbf{Component}, \textbf{Interface}, and \textbf{Runtime}.
+
+\hypertarget{component-the-unit-of-biological-reuse}{%
+\subsection{2.2 Component: The Unit of Biological
+Reuse}\label{component-the-unit-of-biological-reuse}}
+
+\hypertarget{definition}{%
+\subsubsection{Definition}\label{definition}}
+
+A \textbf{Bio-Component} is a biological unit that: - Can exist
+independently (with appropriate life support) - Can receive energy and
+nutrients (powerable) - Can respond to control signals (controllable) -
+Can produce functional outputs (functional) - Can report its state
+(observable)
+
+This definition deliberately parallels software component definitions. A
+software component is similarly self-contained, has defined inputs and
+outputs, maintains internal state, and can be monitored.
+
+\hypertarget{mapping-to-software-concepts}{%
+\subsubsection{Mapping to Software
+Concepts}\label{mapping-to-software-concepts}}
+
+\begin{longtable}[]{@{}ll@{}}
+\toprule\noalign{}
+Software Component Property & Bio-Component Equivalent \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Encapsulation & Physical boundary, membrane structure \\
+Interface & Input/output port definitions \\
+State & Physiological state, viability indicators \\
+Lifecycle & Culture, activation, maintenance, senescence \\
+Dependencies & Nutrients, oxygen, signal inputs \\
+Side Effects & Metabolic waste, secretions \\
+\end{longtable}
+
+\hypertarget{component-typology}{%
+\subsubsection{Component Typology}\label{component-typology}}
+
+Drawing from software architecture patterns, we propose a typology of
+Bio-Components:
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.1364}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3864}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.4773}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Type
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Software Analogy
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Biological Examples
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\textbf{Actuator} & Output device driver & Muscle, gland, ciliated
+epithelium \\
+\textbf{Sensor} & Input device driver & Photoreceptor, mechanoreceptor,
+chemoreceptor \\
+\textbf{Processor} & CPU, logic unit & Ganglion, brain organoid, neural
+network \\
+\textbf{Storage} & Memory, database & Adipose tissue, bone marrow \\
+\textbf{Connector} & Network interface & Blood vessel, nerve fiber \\
+\textbf{Metabolic} & Power supply & Liver tissue, mitochondria-rich
+cells \\
+\end{longtable}
+
+This typology is not exhaustive but illustrative. The key insight is
+that biological structures can be categorized by their
+\textbf{functional role} in a system, just as software components are
+categorized by their architectural role.
+
+\hypertarget{interface-the-contract-for-composition}{%
+\subsection{2.3 Interface: The Contract for
+Composition}\label{interface-the-contract-for-composition}}
+
+\hypertarget{the-philosophy-of-interfaces}{%
+\subsubsection{The Philosophy of
+Interfaces}\label{the-philosophy-of-interfaces}}
+
+The Gang of Four's design principle states: ``Program to an interface,
+not an implementation.'' This principle enabled the explosion of
+software reuse: as long as components agree on interfaces, their
+internal implementations can vary independently.
+
+An interface is a \textbf{contract} that defines: - What inputs are
+accepted (preconditions) - What outputs are produced (postconditions) -
+What guarantees are maintained (invariants)
+
+The power of interfaces lies in \textbf{decoupling}: components can be
+developed, tested, and replaced independently as long as they honor the
+interface contract.
+
+\hypertarget{bio-interface-dimensions}{%
+\subsubsection{Bio-Interface
+Dimensions}\label{bio-interface-dimensions}}
+
+Biological interfaces are more complex than software interfaces because
+they operate across multiple physical dimensions simultaneously. We
+identify four primary dimensions:
+
+\begin{verbatim}
+┌─────────────────────────────────────────────────┐
+│                 Bio-Interface                    │
+├─────────────┬─────────────┬─────────────────────┤
+│   Power     │   Signal    │    Isolation        │
+│ (Energy)    │ (Information)│   (Barrier)        │
+├─────────────┴─────────────┴─────────────────────┤
+│            Mechanical (Force Coupling)           │
+└─────────────────────────────────────────────────┘
+\end{verbatim}
+
+\textbf{Power Interface}: How energy and nutrients flow between
+components - Perfusion connections (blood vessel equivalents) - Nutrient
+diffusion surfaces - Oxygen delivery mechanisms
+
+\textbf{Signal Interface}: How information is exchanged - Electrical
+signals (neural) - Chemical signals (hormones, neurotransmitters) -
+Mechanical signals (stretch, pressure) - Optical signals (for
+optogenetic systems)
+
+\textbf{Isolation Interface}: How components are protected from each
+other - Immune barriers (preventing rejection) - Toxicity isolation
+(containing harmful metabolites) - Electrical isolation (preventing
+signal crosstalk)
+
+\textbf{Mechanical Interface}: How physical forces are transmitted -
+Structural attachments - Force transmission surfaces - Movement coupling
+
+\hypertarget{the-usb-analogy}{%
+\subsubsection{The USB Analogy}\label{the-usb-analogy}}
+
+The success of USB (Universal Serial Bus) illustrates the transformative
+power of interface standardization:
+
+\begin{longtable}[]{@{}ll@{}}
+\toprule\noalign{}
+Before USB & After USB \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Every device had proprietary connectors & One connector fits all \\
+Drivers required for each device & Plug-and-play \\
+Limited ecosystem & Massive accessory market \\
+Vendor lock-in & Consumer choice \\
+\end{longtable}
+
+We envision Bio-Interfaces achieving similar transformation: components
+from different laboratories, different species, even synthetic origins,
+connecting through standardized interfaces.
+
+\hypertarget{runtime-the-orchestration-layer}{%
+\subsection{2.4 Runtime: The Orchestration
+Layer}\label{runtime-the-orchestration-layer}}
+
+\hypertarget{software-runtime-responsibilities}{%
+\subsubsection{Software Runtime
+Responsibilities}\label{software-runtime-responsibilities}}
+
+In software systems, the runtime environment handles: - \textbf{Resource
+Management}: Memory allocation, CPU scheduling, network I/O -
+\textbf{Lifecycle Management}: Starting, stopping, restarting components
+- \textbf{Fault Handling}: Exception catching, recovery, graceful
+degradation - \textbf{Monitoring}: Logging, metrics, health checks -
+\textbf{Coordination}: Synchronization, communication routing
+
+Modern container orchestrators like Kubernetes exemplify sophisticated
+runtime systems, managing thousands of components across distributed
+infrastructure.
+
+\hypertarget{bio-runtime-responsibilities}{%
+\subsubsection{Bio-Runtime
+Responsibilities}\label{bio-runtime-responsibilities}}
+
+A Bio-Runtime must handle analogous responsibilities in the biological
+domain:
+
+\begin{longtable}[]{@{}ll@{}}
+\toprule\noalign{}
+Software Runtime & Bio-Runtime \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Memory allocation & Nutrient allocation \\
+CPU scheduling & Activity timing control \\
+Network I/O & Signal routing \\
+Health checks & Viability monitoring \\
+Auto-restart & Regeneration/replacement triggering \\
+Logging & Biomarker time-series recording \\
+Load balancing & Workload distribution across redundant modules \\
+Fault isolation & Containing necrosis, inflammation \\
+\end{longtable}
+
+\hypertarget{the-perfusion-system-as-infrastructure}{%
+\subsubsection{The Perfusion System as
+Infrastructure}\label{the-perfusion-system-as-infrastructure}}
+
+Just as software components rely on operating system services (file
+systems, network stacks), Bio-Components rely on life support
+infrastructure. The perfusion system---delivering nutrients and oxygen
+while removing waste---is the biological equivalent of power and network
+infrastructure.
+
+A Bio-Runtime must manage: - Flow rates and pressures - Temperature
+regulation - pH maintenance - Oxygen levels - Waste removal - Growth
+factor delivery
+
+This is not merely ``keeping cells alive'' but actively orchestrating
+the conditions under which components can function and interact.
+
+\hypertarget{the-triad-in-action-a-conceptual-example}{%
+\subsection{2.5 The Triad in Action: A Conceptual
+Example}\label{the-triad-in-action-a-conceptual-example}}
+
+Consider assembling a simple bio-robotic system: a muscle that contracts
+in response to detected force.
+
+\textbf{Components}: - Muscle actuator (Actuator type) - Force sensor
+(Sensor type) - Neural controller (Processor type)
+
+\textbf{Interfaces}: - Sensor → Controller: electrical signal interface
+- Controller → Muscle: electrical stimulation interface - All
+components: perfusion interface for nutrients
+
+\textbf{Runtime}: - Perfusion system maintaining 37°C, pH 7.4 -
+Monitoring system tracking viability and performance - Control loop
+executing feedback algorithm
+
+In software terms, this is analogous to:
+
+\begin{verbatim}
+sensor.onForceDetected(force => {
+  controller.process(force);
+  muscle.contract(controller.output);
+});
+\end{verbatim}
+
+The Bio-DSL equivalent (detailed in §5):
+
+\begin{verbatim}
+CONNECT sensor.output TO controller.input
+CONNECT controller.output TO muscle.stimulation
+RUNTIME { perfusion: standard_mammalian, control: closed_loop }
+\end{verbatim}
+
+The power of this abstraction is that the same description could work
+with: - Different muscle sources (human, mouse, synthetic) - Different
+sensor technologies (piezoelectric, biological) - Different controller
+implementations (organoid, silicon chip)
+
+As long as interfaces are honored, components are interchangeable. \# 3.
+Systematic Mapping: Software Engineering → Biological Engineering
+
+\hypertarget{mapping-framework}{%
+\subsection{3.1 Mapping Framework}\label{mapping-framework}}
+
+Not all software engineering concepts transfer equally to biology. We
+propose a three-category framework for analyzing mappings:
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.2979}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.2553}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.4468}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Mapping Type
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Definition
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Transfer Difficulty
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\textbf{Direct} & Concept transfers with minimal adaptation & Low \\
+\textbf{Analogous} & Core idea transfers but requires domain-specific
+adaptation & Medium \\
+\textbf{Novel} & No software equivalent; requires new solutions &
+High \\
+\end{longtable}
+
+This categorization helps practitioners understand which software
+practices can be immediately adopted, which require careful adaptation,
+and which represent open research challenges.
+
+\hypertarget{direct-mappings}{%
+\subsection{3.2 Direct Mappings}\label{direct-mappings}}
+
+These concepts can be transferred almost verbatim from software
+engineering:
+
+\hypertarget{semantic-versioning}{%
+\subsubsection{Semantic Versioning}\label{semantic-versioning}}
+
+Software's Semantic Versioning (SemVer) specification defines version
+numbers as MAJOR.MINOR.PATCH: - MAJOR: incompatible API changes - MINOR:
+backward-compatible functionality additions - PATCH: backward-compatible
+bug fixes
+
+This transfers directly to Bio-Components: - \textbf{MAJOR}:
+Interface-incompatible changes (e.g., different input signal type) -
+\textbf{MINOR}: Backward-compatible enhancements (e.g., improved force
+output) - \textbf{PATCH}: Optimizations without interface changes (e.g.,
+faster response time)
+
+Example: \texttt{muscle-actuator-human-skeletal@2.3.1} - Version 2:
+Second-generation interface (incompatible with v1) - .3: Third feature
+addition since v2.0 - .1: First optimization patch
+
+\hypertarget{dependency-declaration}{%
+\subsubsection{Dependency Declaration}\label{dependency-declaration}}
+
+Software package manifests (package.json, requirements.txt) declare
+dependencies with version constraints:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{\{}
+  \DataTypeTok{"dependencies"}\FunctionTok{:} \FunctionTok{\{}
+    \DataTypeTok{"tensorflow"}\FunctionTok{:} \StringTok{"\^{}2.0.0"}\FunctionTok{,}
+    \DataTypeTok{"numpy"}\FunctionTok{:} \StringTok{"\textgreater{}=1.19,\textless{}2.0"}
+  \FunctionTok{\}}
+\FunctionTok{\}}
+\end{Highlighting}
+\end{Shaded}
+
+Bio-Component manifests can use identical syntax:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{dependencies}\KeywordTok{:}
+\AttributeTok{  }\FunctionTok{perfusion{-}medium}\KeywordTok{:}\AttributeTok{ }\StringTok{"DMEM@\^{}1.0"}
+\AttributeTok{  }\FunctionTok{oxygen{-}supply}\KeywordTok{:}\AttributeTok{ }\StringTok{"\textgreater{}=15\%"}
+\AttributeTok{  }\FunctionTok{temperature{-}control}\KeywordTok{:}\AttributeTok{ }\StringTok{"37±2°C"}
+\AttributeTok{  }\FunctionTok{co{-}culture}\KeywordTok{:}
+\AttributeTok{    }\KeywordTok{{-}}\AttributeTok{ }\StringTok{"endothelial{-}cells@\^{}1.2"}\CommentTok{  \# for vascularization}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{documentation-standards}{%
+\subsubsection{Documentation Standards}\label{documentation-standards}}
+
+README files, API documentation, and usage examples transfer directly. A
+Bio-Component should include: - \textbf{Description}: What the component
+does - \textbf{Requirements}: Environmental conditions needed -
+\textbf{Interface Specification}: Inputs, outputs, parameters -
+\textbf{Usage Examples}: How to integrate with other components -
+\textbf{Known Limitations}: Failure modes, incompatibilities -
+\textbf{Changelog}: Version history
+
+\hypertarget{licensing}{%
+\subsubsection{Licensing}\label{licensing}}
+
+Software licenses (MIT, Apache, GPL) define usage rights. Biological
+components need similar frameworks: - \textbf{Usage Rights}: Who can use
+the component - \textbf{Modification Rights}: Can the component be
+genetically modified? - \textbf{Sharing Requirements}: Must derivatives
+be shared? - \textbf{Attribution}: How to credit original developers -
+\textbf{Commercial Use}: Restrictions on commercial applications
+
+\hypertarget{analogous-mappings}{%
+\subsection{3.3 Analogous Mappings}\label{analogous-mappings}}
+
+These concepts require adaptation but preserve core principles:
+
+\hypertarget{testing-validation}{%
+\subsubsection{Testing → Validation}\label{testing-validation}}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.2982}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3860}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3158}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Software Testing
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Biological Validation
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Adaptation Notes
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Unit Test & Viability Test & Test single component function \\
+Integration Test & Compatibility Test & Test component interactions \\
+Stress Test & Endurance Test & Long-term, extreme conditions \\
+Regression Test & Batch Consistency Test & New batches match previous \\
+Performance Test & Efficiency Test & Output per resource consumed \\
+\end{longtable}
+
+Key differences: - Software tests are deterministic; biological tests
+are statistical - Software tests run in milliseconds; biological tests
+take days/weeks - Software tests are automated; biological tests require
+manual intervention
+
+Adaptation: Define \textbf{acceptance criteria} as statistical
+thresholds rather than exact values:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{tests}\KeywordTok{:}
+\AttributeTok{  }\FunctionTok{viability}\KeywordTok{:}
+\AttributeTok{    }\FunctionTok{metric}\KeywordTok{:}\AttributeTok{ }\StringTok{"cell\_survival\_rate"}
+\AttributeTok{    }\FunctionTok{threshold}\KeywordTok{:}\AttributeTok{ }\StringTok{"\textgreater{}= 90\%"}
+\AttributeTok{    }\FunctionTok{confidence}\KeywordTok{:}\AttributeTok{ }\StringTok{"95\%"}
+\AttributeTok{    }\FunctionTok{sample\_size}\KeywordTok{:}\AttributeTok{ }\DecValTok{10}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{api-contract-interface-protocol}{%
+\subsubsection{API Contract → Interface
+Protocol}\label{api-contract-interface-protocol}}
+
+Software APIs define: - Input types and validation rules - Output types
+and guarantees - Error conditions and handling
+
+Bio-Interfaces define: - Input signal types and acceptable ranges -
+Output characteristics and tolerances - Failure modes and detection
+methods
+
+Example software API:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{function} \FunctionTok{processSignal}\NormalTok{(input}\OperatorTok{:} \DataTypeTok{number}\NormalTok{)}\OperatorTok{:} \DataTypeTok{number}\NormalTok{ \{}
+  \CommentTok{// Precondition: 0 \textless{}= input \textless{}= 100}
+  \CommentTok{// Postcondition: returns processed value in [0, 1]}
+  \CommentTok{// Throws: InvalidInputError if precondition violated}
+\NormalTok{\}}
+\end{Highlighting}
+\end{Shaded}
+
+Equivalent Bio-Interface:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{interface}\KeywordTok{:}
+\AttributeTok{  }\FunctionTok{input}\KeywordTok{:}
+\AttributeTok{    }\FunctionTok{type}\KeywordTok{:}\AttributeTok{ }\StringTok{"electrical"}
+\AttributeTok{    }\FunctionTok{voltage}\KeywordTok{:}\AttributeTok{ }\KeywordTok{\{}\AttributeTok{ }\FunctionTok{min}\KeywordTok{:}\AttributeTok{ }\DecValTok{0}\KeywordTok{,}\AttributeTok{ }\FunctionTok{max}\KeywordTok{:}\AttributeTok{ }\DecValTok{5}\KeywordTok{,}\AttributeTok{ }\FunctionTok{unit}\KeywordTok{:}\AttributeTok{ }\StringTok{"V"}\AttributeTok{ }\KeywordTok{\}}
+\AttributeTok{    }\FunctionTok{frequency}\KeywordTok{:}\AttributeTok{ }\KeywordTok{\{}\AttributeTok{ }\FunctionTok{min}\KeywordTok{:}\AttributeTok{ }\DecValTok{1}\KeywordTok{,}\AttributeTok{ }\FunctionTok{max}\KeywordTok{:}\AttributeTok{ }\DecValTok{100}\KeywordTok{,}\AttributeTok{ }\FunctionTok{unit}\KeywordTok{:}\AttributeTok{ }\StringTok{"Hz"}\AttributeTok{ }\KeywordTok{\}}
+\AttributeTok{  }\FunctionTok{output}\KeywordTok{:}
+\AttributeTok{    }\FunctionTok{type}\KeywordTok{:}\AttributeTok{ }\StringTok{"mechanical"}
+\AttributeTok{    }\FunctionTok{force}\KeywordTok{:}\AttributeTok{ }\KeywordTok{\{}\AttributeTok{ }\FunctionTok{min}\KeywordTok{:}\AttributeTok{ }\DecValTok{0}\KeywordTok{,}\AttributeTok{ }\FunctionTok{max}\KeywordTok{:}\AttributeTok{ }\DecValTok{50}\KeywordTok{,}\AttributeTok{ }\FunctionTok{unit}\KeywordTok{:}\AttributeTok{ }\StringTok{"mN"}\AttributeTok{ }\KeywordTok{\}}
+\AttributeTok{    }\FunctionTok{response\_time}\KeywordTok{:}\AttributeTok{ }\KeywordTok{\{}\AttributeTok{ }\FunctionTok{typical}\KeywordTok{:}\AttributeTok{ }\DecValTok{150}\KeywordTok{,}\AttributeTok{ }\FunctionTok{max}\KeywordTok{:}\AttributeTok{ }\DecValTok{300}\KeywordTok{,}\AttributeTok{ }\FunctionTok{unit}\KeywordTok{:}\AttributeTok{ }\StringTok{"ms"}\AttributeTok{ }\KeywordTok{\}}
+\AttributeTok{  }\FunctionTok{failure\_modes}\KeywordTok{:}
+\AttributeTok{    }\KeywordTok{{-}}\AttributeTok{ }\FunctionTok{condition}\KeywordTok{:}\AttributeTok{ }\StringTok{"voltage \textgreater{} 5V"}
+\AttributeTok{      }\FunctionTok{result}\KeywordTok{:}\AttributeTok{ }\StringTok{"cell\_damage"}
+\AttributeTok{      }\FunctionTok{detection}\KeywordTok{:}\AttributeTok{ }\StringTok{"impedance\_spike"}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{error-handling-failure-mode-management}{%
+\subsubsection{Error Handling → Failure Mode
+Management}\label{error-handling-failure-mode-management}}
+
+Software distinguishes: - \textbf{Exceptions}: Unexpected conditions
+that can be caught and handled - \textbf{Errors}: Serious problems that
+may require termination - \textbf{Warnings}: Non-critical issues that
+should be logged
+
+Biological systems have analogous categories: - \textbf{Recoverable
+Degradation}: Temporary performance drop (fatigue) -
+\textbf{Irreversible Damage}: Permanent function loss (necrosis) -
+\textbf{Systemic Risk}: Threats to other components (inflammation,
+infection)
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{failure\_handling}\KeywordTok{:}
+\AttributeTok{  }\FunctionTok{fatigue}\KeywordTok{:}
+\AttributeTok{    }\FunctionTok{type}\KeywordTok{:}\AttributeTok{ }\StringTok{"recoverable"}
+\AttributeTok{    }\FunctionTok{detection}\KeywordTok{:}\AttributeTok{ }\StringTok{"force\_output \textless{} 80\% baseline"}
+\AttributeTok{    }\FunctionTok{response}\KeywordTok{:}\AttributeTok{ }\StringTok{"reduce\_stimulation\_frequency"}
+\AttributeTok{    }\FunctionTok{recovery\_time}\KeywordTok{:}\AttributeTok{ }\StringTok{"2{-}4 hours"}
+\AttributeTok{  }
+\AttributeTok{  }\FunctionTok{necrosis}\KeywordTok{:}
+\AttributeTok{    }\FunctionTok{type}\KeywordTok{:}\AttributeTok{ }\StringTok{"irreversible"}
+\AttributeTok{    }\FunctionTok{detection}\KeywordTok{:}\AttributeTok{ }\StringTok{"viability \textless{} 50\%"}
+\AttributeTok{    }\FunctionTok{response}\KeywordTok{:}\AttributeTok{ }\StringTok{"isolate\_and\_replace"}
+\AttributeTok{    }\FunctionTok{propagation\_risk}\KeywordTok{:}\AttributeTok{ }\StringTok{"medium"}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{logging-biomarker-recording}{%
+\subsubsection{Logging → Biomarker
+Recording}\label{logging-biomarker-recording}}
+
+Software logging captures: - Timestamps - Event types (INFO, WARN,
+ERROR) - Contextual data - Stack traces for debugging
+
+Biological logging captures: - Timestamps - Physiological measurements -
+Environmental conditions - Anomaly indicators
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{logging}\KeywordTok{:}
+\AttributeTok{  }\FunctionTok{continuous}\KeywordTok{:}
+\AttributeTok{    }\KeywordTok{{-}}\AttributeTok{ }\FunctionTok{metric}\KeywordTok{:}\AttributeTok{ }\StringTok{"force\_output"}
+\AttributeTok{      }\FunctionTok{frequency}\KeywordTok{:}\AttributeTok{ }\StringTok{"100 Hz"}
+\AttributeTok{    }\KeywordTok{{-}}\AttributeTok{ }\FunctionTok{metric}\KeywordTok{:}\AttributeTok{ }\StringTok{"temperature"}
+\AttributeTok{      }\FunctionTok{frequency}\KeywordTok{:}\AttributeTok{ }\StringTok{"1 Hz"}
+\AttributeTok{  }
+\AttributeTok{  }\FunctionTok{event\_triggered}\KeywordTok{:}
+\AttributeTok{    }\KeywordTok{{-}}\AttributeTok{ }\FunctionTok{event}\KeywordTok{:}\AttributeTok{ }\StringTok{"stimulation"}
+\AttributeTok{      }\FunctionTok{capture}\KeywordTok{:}\AttributeTok{ }\KeywordTok{[}\StringTok{"voltage"}\KeywordTok{,}\AttributeTok{ }\StringTok{"frequency"}\KeywordTok{,}\AttributeTok{ }\StringTok{"duration"}\KeywordTok{]}
+\AttributeTok{    }\KeywordTok{{-}}\AttributeTok{ }\FunctionTok{event}\KeywordTok{:}\AttributeTok{ }\StringTok{"anomaly"}
+\AttributeTok{      }\FunctionTok{capture}\KeywordTok{:}\AttributeTok{ }\KeywordTok{[}\StringTok{"all\_metrics"}\KeywordTok{,}\AttributeTok{ }\StringTok{"image\_snapshot"}\KeywordTok{]}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{novel-challenges-requiring-new-solutions}{%
+\subsection{3.4 Novel Challenges Requiring New
+Solutions}\label{novel-challenges-requiring-new-solutions}}
+
+These challenges have no direct software equivalent and require
+innovative approaches:
+
+\hypertarget{immune-compatibility}{%
+\subsubsection{Immune Compatibility}\label{immune-compatibility}}
+
+Software components do not ``reject'' each other. Biological components
+from different sources may trigger immune responses.
+
+\textbf{Required Innovation}: Immune Compatibility Protocol
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{immune\_profile}\KeywordTok{:}
+\AttributeTok{  }\FunctionTok{mhc\_class\_i}\KeywordTok{:}\AttributeTok{ }\KeywordTok{[}\StringTok{"HLA{-}A*02:01"}\KeywordTok{,}\AttributeTok{ }\StringTok{"HLA{-}B*07:02"}\KeywordTok{]}
+\AttributeTok{  }\FunctionTok{mhc\_class\_ii}\KeywordTok{:}\AttributeTok{ }\KeywordTok{[}\StringTok{"HLA{-}DR*04:01"}\KeywordTok{]}
+\AttributeTok{  }\FunctionTok{known\_antigens}\KeywordTok{:}\AttributeTok{ }\KeywordTok{[}\StringTok{"collagen\_type\_i"}\KeywordTok{]}
+\AttributeTok{  }
+\FunctionTok{compatibility\_requirements}\KeywordTok{:}
+\AttributeTok{  }\FunctionTok{autologous}\KeywordTok{:}\AttributeTok{ }\StringTok{"preferred"}
+\AttributeTok{  }\FunctionTok{allogeneic}\KeywordTok{:}\AttributeTok{ }\StringTok{"requires\_matching"}
+\AttributeTok{  }\FunctionTok{xenogeneic}\KeywordTok{:}\AttributeTok{ }\StringTok{"requires\_isolation\_barrier"}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{signal-crosstalk}{%
+\subsubsection{Signal Crosstalk}\label{signal-crosstalk}}
+
+Software processes are isolated by operating system memory protection.
+Biological components share chemical environments where signals can
+interfere.
+
+\textbf{Required Innovation}: Biological Noise Isolation Specification
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{signal\_isolation}\KeywordTok{:}
+\AttributeTok{  }\FunctionTok{electrical}\KeywordTok{:}
+\AttributeTok{    }\FunctionTok{shielding}\KeywordTok{:}\AttributeTok{ }\StringTok{"required"}
+\AttributeTok{    }\FunctionTok{max\_crosstalk}\KeywordTok{:}\AttributeTok{ }\StringTok{"{-}40 dB"}
+\AttributeTok{  }
+\AttributeTok{  }\FunctionTok{chemical}\KeywordTok{:}
+\AttributeTok{    }\FunctionTok{diffusion\_barrier}\KeywordTok{:}\AttributeTok{ }\StringTok{"hydrogel\_encapsulation"}
+\AttributeTok{    }\FunctionTok{half\_life\_requirement}\KeywordTok{:}\AttributeTok{ }\StringTok{"\textless{} 10 seconds"}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{metabolic-coupling}{%
+\subsubsection{Metabolic Coupling}\label{metabolic-coupling}}
+
+Software components consume CPU and memory independently. Biological
+components share metabolic resources and produce waste that affects
+neighbors.
+
+\textbf{Required Innovation}: Metabolic Dependency Graph
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{metabolism}\KeywordTok{:}
+\AttributeTok{  }\FunctionTok{consumes}\KeywordTok{:}
+\AttributeTok{    }\KeywordTok{{-}}\AttributeTok{ }\FunctionTok{glucose}\KeywordTok{:}\AttributeTok{ }\StringTok{"2.5 µmol/hour"}
+\AttributeTok{    }\KeywordTok{{-}}\AttributeTok{ }\FunctionTok{oxygen}\KeywordTok{:}\AttributeTok{ }\StringTok{"5.0 µmol/hour"}
+\AttributeTok{  }
+\AttributeTok{  }\FunctionTok{produces}\KeywordTok{:}
+\AttributeTok{    }\KeywordTok{{-}}\AttributeTok{ }\FunctionTok{lactate}\KeywordTok{:}\AttributeTok{ }\StringTok{"4.0 µmol/hour"}
+\AttributeTok{    }\KeywordTok{{-}}\AttributeTok{ }\FunctionTok{co2}\KeywordTok{:}\AttributeTok{ }\StringTok{"4.5 µmol/hour"}
+\AttributeTok{  }
+\AttributeTok{  }\FunctionTok{toxic\_threshold}\KeywordTok{:}
+\AttributeTok{    }\FunctionTok{lactate}\KeywordTok{:}\AttributeTok{ }\StringTok{"\textless{} 20 mM in shared medium"}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{living-degradation}{%
+\subsubsection{Living Degradation}\label{living-degradation}}
+
+Software does not age (though it can become obsolete). Biological
+components inherently degrade over time.
+
+\textbf{Required Innovation}: Degradation Prediction Model
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{degradation}\KeywordTok{:}
+\AttributeTok{  }\FunctionTok{expected\_lifetime}\KeywordTok{:}
+\AttributeTok{    }\FunctionTok{mean}\KeywordTok{:}\AttributeTok{ }\DecValTok{14}
+\AttributeTok{    }\FunctionTok{std}\KeywordTok{:}\AttributeTok{ }\DecValTok{3}
+\AttributeTok{    }\FunctionTok{unit}\KeywordTok{:}\AttributeTok{ }\StringTok{"days"}
+\AttributeTok{  }
+\AttributeTok{  }\FunctionTok{degradation\_markers}\KeywordTok{:}
+\AttributeTok{    }\KeywordTok{{-}}\AttributeTok{ }\FunctionTok{marker}\KeywordTok{:}\AttributeTok{ }\StringTok{"force\_decline"}
+\AttributeTok{      }\FunctionTok{threshold}\KeywordTok{:}\AttributeTok{ }\StringTok{"20\% from baseline"}
+\AttributeTok{      }\FunctionTok{interpretation}\KeywordTok{:}\AttributeTok{ }\StringTok{"approaching\_end\_of\_life"}
+\AttributeTok{  }
+\AttributeTok{  }\FunctionTok{replacement\_protocol}\KeywordTok{:}
+\AttributeTok{    }\FunctionTok{trigger}\KeywordTok{:}\AttributeTok{ }\StringTok{"viability \textless{} 70\%"}
+\AttributeTok{    }\FunctionTok{procedure}\KeywordTok{:}\AttributeTok{ }\StringTok{"hot\_swap\_with\_backup"}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{ethical-constraints}{%
+\subsubsection{Ethical Constraints}\label{ethical-constraints}}
+
+Software has no inherent ethical status. Biological components,
+especially those derived from humans or involving neural tissue, raise
+ethical considerations with no software parallel.
+
+\textbf{Required Innovation}: Ethical Constraint Language
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{ethics}\KeywordTok{:}
+\AttributeTok{  }\FunctionTok{source}\KeywordTok{:}
+\AttributeTok{    }\FunctionTok{consent}\KeywordTok{:}\AttributeTok{ }\StringTok{"informed\_consent\_documented"}
+\AttributeTok{    }\FunctionTok{donor\_type}\KeywordTok{:}\AttributeTok{ }\StringTok{"adult\_volunteer"}
+\AttributeTok{  }
+\AttributeTok{  }\FunctionTok{constraints}\KeywordTok{:}
+\AttributeTok{    }\KeywordTok{{-}}\AttributeTok{ }\StringTok{"no\_consciousness\_capable\_assemblies"}
+\AttributeTok{    }\KeywordTok{{-}}\AttributeTok{ }\StringTok{"no\_reproductive\_applications"}
+\AttributeTok{    }\KeywordTok{{-}}\AttributeTok{ }\StringTok{"destruction\_protocol\_required"}
+\AttributeTok{  }
+\AttributeTok{  }\FunctionTok{oversight}\KeywordTok{:}
+\AttributeTok{    }\FunctionTok{irb\_approval}\KeywordTok{:}\AttributeTok{ }\StringTok{"required"}
+\AttributeTok{    }\FunctionTok{review\_frequency}\KeywordTok{:}\AttributeTok{ }\StringTok{"annual"}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{bio-component-specification-design-rationale}{%
+\section{4. Bio-Component Specification: Design
+Rationale}\label{bio-component-specification-design-rationale}}
+
+\hypertarget{design-principles-from-software-engineering}{%
+\subsection{4.1 Design Principles from Software
+Engineering}\label{design-principles-from-software-engineering}}
+
+The Bio-Component Specification draws from established software
+engineering principles:
+
+\hypertarget{solid-principles-applied}{%
+\subsubsection{SOLID Principles
+Applied}\label{solid-principles-applied}}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.1833}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.4833}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Principle
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Software Definition
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Bio-Component Application
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\textbf{Single Responsibility} & A class should have one reason to
+change & A component should perform one biological function \\
+\textbf{Open/Closed} & Open for extension, closed for modification &
+Components can be enhanced without changing interfaces \\
+\textbf{Liskov Substitution} & Subtypes must be substitutable for base
+types & Compatible components must be interchangeable \\
+\textbf{Interface Segregation} & Many specific interfaces over one
+general & Fine-grained interface definitions \\
+\textbf{Dependency Inversion} & Depend on abstractions, not concretions
+& Depend on interface specs, not specific implementations \\
+\end{longtable}
+
+\hypertarget{convention-over-configuration}{%
+\subsubsection{Convention over
+Configuration}\label{convention-over-configuration}}
+
+Borrowed from Ruby on Rails: provide sensible defaults to minimize
+required configuration.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Minimal specification (defaults applied)}
+\FunctionTok{component}\KeywordTok{:}
+\AttributeTok{  }\FunctionTok{id}\KeywordTok{:}\AttributeTok{ }\StringTok{"muscle{-}actuator{-}v1"}
+\AttributeTok{  }\FunctionTok{type}\KeywordTok{:}\AttributeTok{ }\StringTok{"actuator"}
+\AttributeTok{  }\FunctionTok{source}\KeywordTok{:}\AttributeTok{ }\StringTok{"human{-}skeletal"}
+
+\CommentTok{\# System applies defaults:}
+\CommentTok{\# {-} temperature: 37°C}
+\CommentTok{\# {-} pH: 7.4}
+\CommentTok{\# {-} oxygen: 20\%}
+\CommentTok{\# {-} standard mammalian culture medium}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{schema-first-design}{%
+\subsubsection{Schema-First Design}\label{schema-first-design}}
+
+Like OpenAPI/Swagger for REST APIs, we define the schema before
+implementations:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Bio{-}Component Spec Schema (JSON Schema format)}
+\FunctionTok{$schema}\KeywordTok{:}\AttributeTok{ }\StringTok{"https://wetware{-}engineering.org/schema/bio{-}component/1.0"}
+\FunctionTok{type}\KeywordTok{:}\AttributeTok{ object}
+\FunctionTok{required}\KeywordTok{:}\AttributeTok{ }\KeywordTok{[}\AttributeTok{id}\KeywordTok{,}\AttributeTok{ name}\KeywordTok{,}\AttributeTok{ version}\KeywordTok{,}\AttributeTok{ type}\KeywordTok{,}\AttributeTok{ interface}\KeywordTok{]}
+\FunctionTok{properties}\KeywordTok{:}
+\AttributeTok{  }\FunctionTok{id}\KeywordTok{:}
+\AttributeTok{    }\FunctionTok{type}\KeywordTok{:}\AttributeTok{ string}
+\AttributeTok{    }\FunctionTok{pattern}\KeywordTok{:}\AttributeTok{ }\StringTok{"\^{}[a{-}z0{-}9{-}]+$"}
+\AttributeTok{  }\FunctionTok{version}\KeywordTok{:}
+\AttributeTok{    }\FunctionTok{type}\KeywordTok{:}\AttributeTok{ string}
+\AttributeTok{    }\FunctionTok{pattern}\KeywordTok{:}\AttributeTok{ }\StringTok{"\^{}}\SpecialCharTok{\textbackslash{}\textbackslash{}}\StringTok{d+}\SpecialCharTok{\textbackslash{}\textbackslash{}}\StringTok{.}\SpecialCharTok{\textbackslash{}\textbackslash{}}\StringTok{d+}\SpecialCharTok{\textbackslash{}\textbackslash{}}\StringTok{.}\SpecialCharTok{\textbackslash{}\textbackslash{}}\StringTok{d+$"}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{specification-structure}{%
+\subsection{4.2 Specification Structure}\label{specification-structure}}
+
+\hypertarget{complete-schema-overview}{%
+\subsubsection{Complete Schema
+Overview}\label{complete-schema-overview}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{bio{-}component}\KeywordTok{:}\AttributeTok{ }\StringTok{"1.0"}\CommentTok{  \# Spec version}
+
+\CommentTok{\# === IDENTIFICATION ===}
+\FunctionTok{info}\KeywordTok{:}
+\AttributeTok{  }\FunctionTok{id}\KeywordTok{:}\AttributeTok{ string}\CommentTok{                    \# Unique identifier}
+\AttributeTok{  }\FunctionTok{name}\KeywordTok{:}\AttributeTok{ string}\CommentTok{                  \# Human{-}readable name}
+\AttributeTok{  }\FunctionTok{version}\KeywordTok{:}\AttributeTok{ string}\CommentTok{               \# Semantic version}
+\AttributeTok{  }\FunctionTok{description}\KeywordTok{:}\AttributeTok{ string}\CommentTok{           \# Brief description}
+\AttributeTok{  }\FunctionTok{license}\KeywordTok{:}\AttributeTok{ string}\CommentTok{               \# Usage license}
+\AttributeTok{  }\FunctionTok{authors}\KeywordTok{:}\AttributeTok{ }\KeywordTok{[}\AttributeTok{string}\KeywordTok{]}\CommentTok{             \# Contributors}
+\AttributeTok{  }\FunctionTok{repository}\KeywordTok{:}\AttributeTok{ url}\CommentTok{               \# Source repository}
+
+\CommentTok{\# === CLASSIFICATION ===}
+\FunctionTok{classification}\KeywordTok{:}
+\AttributeTok{  }\FunctionTok{type}\KeywordTok{:}\AttributeTok{ enum [actuator, sensor, processor, metabolic, structural, connector]}
+\AttributeTok{  }\FunctionTok{domain}\KeywordTok{:}\AttributeTok{ string}\CommentTok{                \# e.g., "musculoskeletal", "neural"}
+\AttributeTok{  }\FunctionTok{tags}\KeywordTok{:}\AttributeTok{ }\KeywordTok{[}\AttributeTok{string}\KeywordTok{]}\CommentTok{                \# Searchable tags}
+
+\CommentTok{\# === BIOLOGICAL SOURCE ===}
+\FunctionTok{source}\KeywordTok{:}
+\AttributeTok{  }\FunctionTok{organism}\KeywordTok{:}\AttributeTok{ string}\CommentTok{              \# e.g., "Homo sapiens"}
+\AttributeTok{  }\FunctionTok{tissue\_type}\KeywordTok{:}\AttributeTok{ string}\CommentTok{           \# e.g., "skeletal muscle"}
+\AttributeTok{  }\FunctionTok{cell\_types}\KeywordTok{:}\AttributeTok{ }\KeywordTok{[}\AttributeTok{string}\KeywordTok{]}\CommentTok{          \# e.g., ["myocyte", "fibroblast"]}
+\AttributeTok{  }\FunctionTok{cell\_line}\KeywordTok{:}\AttributeTok{ string}\CommentTok{             \# If immortalized}
+\AttributeTok{  }\FunctionTok{genetic\_modifications}\KeywordTok{:}\AttributeTok{ }\KeywordTok{[}\AttributeTok{string}\KeywordTok{]}
+\AttributeTok{  }\FunctionTok{culture\_protocol}\KeywordTok{:}\AttributeTok{ url}\CommentTok{         \# Reference to protocol}
+\AttributeTok{  }\FunctionTok{biosafety\_level}\KeywordTok{:}\AttributeTok{ enum [BSL{-}1, BSL{-}2, BSL{-}3]}
+
+\CommentTok{\# === INTERFACE DEFINITION ===}
+\FunctionTok{interface}\KeywordTok{:}
+\AttributeTok{  }\FunctionTok{inputs}\KeywordTok{:}\AttributeTok{ }\KeywordTok{[}\AttributeTok{InputPort}\KeywordTok{]}
+\AttributeTok{  }\FunctionTok{outputs}\KeywordTok{:}\AttributeTok{ }\KeywordTok{[}\AttributeTok{OutputPort}\KeywordTok{]}
+\AttributeTok{  }
+\CommentTok{\# === ENVIRONMENTAL REQUIREMENTS ===}
+\FunctionTok{requirements}\KeywordTok{:}
+\AttributeTok{  }\FunctionTok{physical}\KeywordTok{:}\AttributeTok{ PhysicalRequirements}
+\AttributeTok{  }\FunctionTok{chemical}\KeywordTok{:}\AttributeTok{ ChemicalRequirements}
+\AttributeTok{  }\FunctionTok{biological}\KeywordTok{:}\AttributeTok{ BiologicalRequirements}
+
+\CommentTok{\# === PERFORMANCE CHARACTERISTICS ===}
+\FunctionTok{performance}\KeywordTok{:}
+\AttributeTok{  }\FunctionTok{functional}\KeywordTok{:}\AttributeTok{ FunctionalMetrics}
+\AttributeTok{  }\FunctionTok{reliability}\KeywordTok{:}\AttributeTok{ ReliabilityMetrics}
+\AttributeTok{  }\FunctionTok{resources}\KeywordTok{:}\AttributeTok{ ResourceConsumption}
+
+\CommentTok{\# === FAILURE MODES ===}
+\FunctionTok{failure\_modes}\KeywordTok{:}\AttributeTok{ }\KeywordTok{[}\AttributeTok{FailureMode}\KeywordTok{]}
+
+\CommentTok{\# === }\AlertTok{TESTING}\CommentTok{ ===}
+\FunctionTok{testing}\KeywordTok{:}
+\AttributeTok{  }\FunctionTok{unit\_tests}\KeywordTok{:}\AttributeTok{ }\KeywordTok{[}\AttributeTok{TestCase}\KeywordTok{]}
+\AttributeTok{  }\FunctionTok{integration\_tests}\KeywordTok{:}\AttributeTok{ }\KeywordTok{[}\AttributeTok{IntegrationTest}\KeywordTok{]}
+\AttributeTok{  }\FunctionTok{certification}\KeywordTok{:}\AttributeTok{ CertificationStatus}
+
+\CommentTok{\# === DEPENDENCIES ===}
+\FunctionTok{dependencies}\KeywordTok{:}
+\AttributeTok{  }\FunctionTok{components}\KeywordTok{:}\AttributeTok{ }\KeywordTok{[}\AttributeTok{ComponentDependency}\KeywordTok{]}
+\AttributeTok{  }\FunctionTok{adapters}\KeywordTok{:}\AttributeTok{ }\KeywordTok{[}\AttributeTok{AdapterDependency}\KeywordTok{]}
+\AttributeTok{  }\FunctionTok{protocols}\KeywordTok{:}\AttributeTok{ }\KeywordTok{[}\AttributeTok{ProtocolDependency}\KeywordTok{]}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{inputoutput-port-definition}{%
+\subsubsection{Input/Output Port
+Definition}\label{inputoutput-port-definition}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{InputPort}\KeywordTok{:}
+\AttributeTok{  }\FunctionTok{id}\KeywordTok{:}\AttributeTok{ string}\CommentTok{                    \# Port identifier}
+\AttributeTok{  }\FunctionTok{type}\KeywordTok{:}\AttributeTok{ enum [electrical, chemical, mechanical, optical, thermal, perfusion]}
+\AttributeTok{  }\FunctionTok{required}\KeywordTok{:}\AttributeTok{ boolean}\CommentTok{             \# Is this input mandatory?}
+\AttributeTok{  }
+\AttributeTok{  }\FunctionTok{parameters}\KeywordTok{:}
+\AttributeTok{    }\FunctionTok{range}\KeywordTok{:}\AttributeTok{ }\KeywordTok{[}\AttributeTok{min}\KeywordTok{,}\AttributeTok{ max}\KeywordTok{]}\CommentTok{           \# Acceptable input range}
+\AttributeTok{    }\FunctionTok{unit}\KeywordTok{:}\AttributeTok{ string}\CommentTok{                \# Physical unit}
+\AttributeTok{    }\FunctionTok{resolution}\KeywordTok{:}\AttributeTok{ number}\CommentTok{          \# Minimum detectable change}
+\AttributeTok{    }\FunctionTok{response\_time}\KeywordTok{:}\AttributeTok{ number}\CommentTok{       \# Time to respond (ms)}
+\AttributeTok{  }
+\AttributeTok{  }\FunctionTok{defaults}\KeywordTok{:}
+\AttributeTok{    }\FunctionTok{value}\KeywordTok{:}\AttributeTok{ any}\CommentTok{                  \# Default if not connected}
+\AttributeTok{  }
+\AttributeTok{  }\FunctionTok{validation}\KeywordTok{:}
+\AttributeTok{    }\FunctionTok{constraints}\KeywordTok{:}\AttributeTok{ }\KeywordTok{[}\AttributeTok{string}\KeywordTok{]}\CommentTok{       \# e.g., "frequency \textless{} 100 Hz"}
+
+\FunctionTok{OutputPort}\KeywordTok{:}
+\AttributeTok{  }\FunctionTok{id}\KeywordTok{:}\AttributeTok{ string}
+\AttributeTok{  }\FunctionTok{type}\KeywordTok{:}\AttributeTok{ enum [electrical, chemical, mechanical, optical, thermal, secretion]}
+\AttributeTok{  }
+\AttributeTok{  }\FunctionTok{parameters}\KeywordTok{:}
+\AttributeTok{    }\FunctionTok{range}\KeywordTok{:}\AttributeTok{ }\KeywordTok{[}\AttributeTok{min}\KeywordTok{,}\AttributeTok{ max}\KeywordTok{]}
+\AttributeTok{    }\FunctionTok{unit}\KeywordTok{:}\AttributeTok{ string}
+\AttributeTok{    }\FunctionTok{precision}\KeywordTok{:}\AttributeTok{ number}\CommentTok{           \# Output precision}
+\AttributeTok{    }\FunctionTok{latency}\KeywordTok{:}\AttributeTok{ number}\CommentTok{             \# Output delay (ms)}
+\AttributeTok{  }
+\AttributeTok{  }\FunctionTok{monitoring}\KeywordTok{:}
+\AttributeTok{    }\FunctionTok{metrics}\KeywordTok{:}\AttributeTok{ }\KeywordTok{[}\AttributeTok{string}\KeywordTok{]}\CommentTok{           \# Observable metrics}
+\AttributeTok{    }\FunctionTok{sampling\_rate}\KeywordTok{:}\AttributeTok{ number}\CommentTok{       \# Hz}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{environmental-requirements}{%
+\subsubsection{Environmental
+Requirements}\label{environmental-requirements}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{PhysicalRequirements}\KeywordTok{:}
+\AttributeTok{  }\FunctionTok{temperature}\KeywordTok{:}
+\AttributeTok{    }\FunctionTok{optimal}\KeywordTok{:}\AttributeTok{ number}
+\AttributeTok{    }\FunctionTok{range}\KeywordTok{:}\AttributeTok{ }\KeywordTok{[}\AttributeTok{min}\KeywordTok{,}\AttributeTok{ max}\KeywordTok{]}
+\AttributeTok{    }\FunctionTok{unit}\KeywordTok{:}\AttributeTok{ }\StringTok{"°C"}
+\AttributeTok{    }\FunctionTok{tolerance}\KeywordTok{:}\AttributeTok{ number}\CommentTok{           \# Acceptable deviation}
+\AttributeTok{  }
+\AttributeTok{  }\FunctionTok{pressure}\KeywordTok{:}
+\AttributeTok{    }\FunctionTok{range}\KeywordTok{:}\AttributeTok{ }\KeywordTok{[}\AttributeTok{min}\KeywordTok{,}\AttributeTok{ max}\KeywordTok{]}
+\AttributeTok{    }\FunctionTok{unit}\KeywordTok{:}\AttributeTok{ }\StringTok{"mmHg"}
+\AttributeTok{  }
+\AttributeTok{  }\FunctionTok{humidity}\KeywordTok{:}
+\AttributeTok{    }\FunctionTok{range}\KeywordTok{:}\AttributeTok{ }\KeywordTok{[}\AttributeTok{min}\KeywordTok{,}\AttributeTok{ max}\KeywordTok{]}
+\AttributeTok{    }\FunctionTok{unit}\KeywordTok{:}\AttributeTok{ }\StringTok{"\%"}
+
+\FunctionTok{ChemicalRequirements}\KeywordTok{:}
+\AttributeTok{  }\FunctionTok{pH}\KeywordTok{:}
+\AttributeTok{    }\FunctionTok{optimal}\KeywordTok{:}\AttributeTok{ number}
+\AttributeTok{    }\FunctionTok{range}\KeywordTok{:}\AttributeTok{ }\KeywordTok{[}\AttributeTok{min}\KeywordTok{,}\AttributeTok{ max}\KeywordTok{]}
+\AttributeTok{  }
+\AttributeTok{  }\FunctionTok{osmolarity}\KeywordTok{:}
+\AttributeTok{    }\FunctionTok{range}\KeywordTok{:}\AttributeTok{ }\KeywordTok{[}\AttributeTok{min}\KeywordTok{,}\AttributeTok{ max}\KeywordTok{]}
+\AttributeTok{    }\FunctionTok{unit}\KeywordTok{:}\AttributeTok{ }\StringTok{"mOsm/L"}
+\AttributeTok{  }
+\AttributeTok{  }\FunctionTok{oxygen}\KeywordTok{:}
+\AttributeTok{    }\FunctionTok{range}\KeywordTok{:}\AttributeTok{ }\KeywordTok{[}\AttributeTok{min}\KeywordTok{,}\AttributeTok{ max}\KeywordTok{]}
+\AttributeTok{    }\FunctionTok{unit}\KeywordTok{:}\AttributeTok{ }\StringTok{"\%"}
+\AttributeTok{  }
+\AttributeTok{  }\FunctionTok{glucose}\KeywordTok{:}
+\AttributeTok{    }\FunctionTok{range}\KeywordTok{:}\AttributeTok{ }\KeywordTok{[}\AttributeTok{min}\KeywordTok{,}\AttributeTok{ max}\KeywordTok{]}
+\AttributeTok{    }\FunctionTok{unit}\KeywordTok{:}\AttributeTok{ }\StringTok{"mM"}
+\AttributeTok{  }
+\AttributeTok{  }\FunctionTok{custom\_factors}\KeywordTok{:}
+\AttributeTok{    }\KeywordTok{{-}}\AttributeTok{ }\FunctionTok{name}\KeywordTok{:}\AttributeTok{ string}
+\AttributeTok{      }\FunctionTok{concentration}\KeywordTok{:}\AttributeTok{ number}
+\AttributeTok{      }\FunctionTok{unit}\KeywordTok{:}\AttributeTok{ string}
+
+\FunctionTok{BiologicalRequirements}\KeywordTok{:}
+\AttributeTok{  }\FunctionTok{immune\_isolation}\KeywordTok{:}\AttributeTok{ boolean}
+\AttributeTok{  }\FunctionTok{sterility}\KeywordTok{:}\AttributeTok{ enum [sterile, clean, standard]}
+\AttributeTok{  }\FunctionTok{co\_culture\_requirements}\KeywordTok{:}\AttributeTok{ }\KeywordTok{[}\AttributeTok{string}\KeywordTok{]}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{versioning-strategy}{%
+\subsection{4.3 Versioning Strategy}\label{versioning-strategy}}
+
+\hypertarget{semantic-versioning-for-biology}{%
+\subsubsection{Semantic Versioning for
+Biology}\label{semantic-versioning-for-biology}}
+
+We adopt SemVer with biological interpretations:
+
+\textbf{MAJOR version} (X.0.0): Interface-breaking changes -
+Input/output port type changes - Required parameter additions -
+Environmental requirement changes that affect compatibility
+
+\textbf{MINOR version} (0.X.0): Backward-compatible additions - New
+optional output ports - Performance improvements - Additional monitoring
+capabilities
+
+\textbf{PATCH version} (0.0.X): Backward-compatible fixes - Protocol
+optimizations - Documentation updates - Minor performance tuning
+
+\hypertarget{build-metadata}{%
+\subsubsection{Build Metadata}\label{build-metadata}}
+
+Extended version format for biological specificity:
+
+\begin{verbatim}
+{version}+{batch}.{donor}.{modification}
+
+Examples:
+2.3.1+batch20251228.donor42.wildtype
+2.3.1+batch20251228.donor42.gfp-tagged
+\end{verbatim}
+
+\hypertarget{compatibility-declarations}{%
+\subsubsection{Compatibility
+Declarations}\label{compatibility-declarations}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{compatibility}\KeywordTok{:}
+\AttributeTok{  }\FunctionTok{backward\_compatible\_with}\KeywordTok{:}\AttributeTok{ }\KeywordTok{[}\StringTok{"2.2.x"}\KeywordTok{,}\AttributeTok{ }\StringTok{"2.1.x"}\KeywordTok{]}
+\AttributeTok{  }\FunctionTok{known\_incompatible}\KeywordTok{:}\AttributeTok{ }\KeywordTok{[}\StringTok{"1.x.x"}\KeywordTok{]}
+\AttributeTok{  }
+\AttributeTok{  }\FunctionTok{interface\_changes}\KeywordTok{:}
+\AttributeTok{    }\KeywordTok{{-}}\AttributeTok{ }\FunctionTok{version}\KeywordTok{:}\AttributeTok{ }\StringTok{"2.0.0"}
+\AttributeTok{      }\FunctionTok{change}\KeywordTok{:}\AttributeTok{ }\StringTok{"electrical input voltage range expanded"}
+\AttributeTok{      }\FunctionTok{migration}\KeywordTok{:}\AttributeTok{ }\StringTok{"no action required for existing users"}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{example-complete-muscle-actuator-specification}{%
+\subsection{4.4 Example: Complete Muscle Actuator
+Specification}\label{example-complete-muscle-actuator-specification}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{bio{-}component}\KeywordTok{:}\AttributeTok{ }\StringTok{"1.0"}
+
+\FunctionTok{info}\KeywordTok{:}
+\AttributeTok{  }\FunctionTok{id}\KeywordTok{:}\AttributeTok{ }\StringTok{"muscle{-}actuator{-}human{-}skeletal"}
+\AttributeTok{  }\FunctionTok{name}\KeywordTok{:}\AttributeTok{ }\StringTok{"Human Skeletal Muscle Actuator"}
+\AttributeTok{  }\FunctionTok{version}\KeywordTok{:}\AttributeTok{ }\StringTok{"2.3.1"}
+\AttributeTok{  }\FunctionTok{description}\KeywordTok{:}\AttributeTok{ }\StringTok{"Contractile muscle tissue for force generation"}
+\AttributeTok{  }\FunctionTok{license}\KeywordTok{:}\AttributeTok{ }\StringTok{"CC{-}BY{-}SA{-}4.0"}
+\AttributeTok{  }\FunctionTok{authors}\KeywordTok{:}\AttributeTok{ }\KeywordTok{[}\StringTok{"Wetware Engineering Project"}\KeywordTok{]}
+\AttributeTok{  }\FunctionTok{repository}\KeywordTok{:}\AttributeTok{ }\StringTok{"https://github.com/wetware/muscle{-}actuator"}
+
+\FunctionTok{classification}\KeywordTok{:}
+\AttributeTok{  }\FunctionTok{type}\KeywordTok{:}\AttributeTok{ }\StringTok{"actuator"}
+\AttributeTok{  }\FunctionTok{domain}\KeywordTok{:}\AttributeTok{ }\StringTok{"musculoskeletal"}
+\AttributeTok{  }\FunctionTok{tags}\KeywordTok{:}\AttributeTok{ }\KeywordTok{[}\StringTok{"muscle"}\KeywordTok{,}\AttributeTok{ }\StringTok{"contractile"}\KeywordTok{,}\AttributeTok{ }\StringTok{"force{-}generation"}\KeywordTok{,}\AttributeTok{ }\StringTok{"human"}\KeywordTok{]}
+
+\FunctionTok{source}\KeywordTok{:}
+\AttributeTok{  }\FunctionTok{organism}\KeywordTok{:}\AttributeTok{ }\StringTok{"Homo sapiens"}
+\AttributeTok{  }\FunctionTok{tissue\_type}\KeywordTok{:}\AttributeTok{ }\StringTok{"skeletal muscle"}
+\AttributeTok{  }\FunctionTok{cell\_types}\KeywordTok{:}\AttributeTok{ }\KeywordTok{[}\StringTok{"myocyte"}\KeywordTok{,}\AttributeTok{ }\StringTok{"satellite cell"}\KeywordTok{]}
+\AttributeTok{  }\FunctionTok{culture\_protocol}\KeywordTok{:}\AttributeTok{ }\StringTok{"https://protocols.io/wetware/muscle{-}culture{-}v2"}
+\AttributeTok{  }\FunctionTok{biosafety\_level}\KeywordTok{:}\AttributeTok{ }\StringTok{"BSL{-}1"}
+
+\FunctionTok{interface}\KeywordTok{:}
+\AttributeTok{  }\FunctionTok{inputs}\KeywordTok{:}
+\AttributeTok{    }\KeywordTok{{-}}\AttributeTok{ }\FunctionTok{id}\KeywordTok{:}\AttributeTok{ }\StringTok{"electrical\_stimulation"}
+\AttributeTok{      }\FunctionTok{type}\KeywordTok{:}\AttributeTok{ }\StringTok{"electrical"}
+\AttributeTok{      }\FunctionTok{required}\KeywordTok{:}\AttributeTok{ }\CharTok{true}
+\AttributeTok{      }\FunctionTok{parameters}\KeywordTok{:}
+\AttributeTok{        }\FunctionTok{voltage}\KeywordTok{:}\AttributeTok{ }\KeywordTok{\{}\AttributeTok{ }\FunctionTok{range}\KeywordTok{:}\AttributeTok{ }\KeywordTok{[}\DecValTok{0}\KeywordTok{,}\AttributeTok{ }\DecValTok{5}\KeywordTok{],}\AttributeTok{ }\FunctionTok{unit}\KeywordTok{:}\AttributeTok{ }\StringTok{"V"}\AttributeTok{ }\KeywordTok{\}}
+\AttributeTok{        }\FunctionTok{frequency}\KeywordTok{:}\AttributeTok{ }\KeywordTok{\{}\AttributeTok{ }\FunctionTok{range}\KeywordTok{:}\AttributeTok{ }\KeywordTok{[}\DecValTok{1}\KeywordTok{,}\AttributeTok{ }\DecValTok{100}\KeywordTok{],}\AttributeTok{ }\FunctionTok{unit}\KeywordTok{:}\AttributeTok{ }\StringTok{"Hz"}\AttributeTok{ }\KeywordTok{\}}
+\AttributeTok{        }\FunctionTok{pulse\_width}\KeywordTok{:}\AttributeTok{ }\KeywordTok{\{}\AttributeTok{ }\FunctionTok{range}\KeywordTok{:}\AttributeTok{ }\KeywordTok{[}\FloatTok{0.1}\KeywordTok{,}\AttributeTok{ }\DecValTok{10}\KeywordTok{],}\AttributeTok{ }\FunctionTok{unit}\KeywordTok{:}\AttributeTok{ }\StringTok{"ms"}\AttributeTok{ }\KeywordTok{\}}
+\AttributeTok{      }\FunctionTok{response\_time}\KeywordTok{:}\AttributeTok{ }\DecValTok{50}\CommentTok{  \# ms}
+\AttributeTok{    }
+\AttributeTok{    }\KeywordTok{{-}}\AttributeTok{ }\FunctionTok{id}\KeywordTok{:}\AttributeTok{ }\StringTok{"perfusion\_input"}
+\AttributeTok{      }\FunctionTok{type}\KeywordTok{:}\AttributeTok{ }\StringTok{"perfusion"}
+\AttributeTok{      }\FunctionTok{required}\KeywordTok{:}\AttributeTok{ }\CharTok{true}
+\AttributeTok{      }\FunctionTok{parameters}\KeywordTok{:}
+\AttributeTok{        }\FunctionTok{flow\_rate}\KeywordTok{:}\AttributeTok{ }\KeywordTok{\{}\AttributeTok{ }\FunctionTok{range}\KeywordTok{:}\AttributeTok{ }\KeywordTok{[}\FloatTok{0.1}\KeywordTok{,}\AttributeTok{ }\FloatTok{2.0}\KeywordTok{],}\AttributeTok{ }\FunctionTok{unit}\KeywordTok{:}\AttributeTok{ }\StringTok{"mL/min"}\AttributeTok{ }\KeywordTok{\}}
+\AttributeTok{        }
+\AttributeTok{  }\FunctionTok{outputs}\KeywordTok{:}
+\AttributeTok{    }\KeywordTok{{-}}\AttributeTok{ }\FunctionTok{id}\KeywordTok{:}\AttributeTok{ }\StringTok{"force\_output"}
+\AttributeTok{      }\FunctionTok{type}\KeywordTok{:}\AttributeTok{ }\StringTok{"mechanical"}
+\AttributeTok{      }\FunctionTok{parameters}\KeywordTok{:}
+\AttributeTok{        }\FunctionTok{force}\KeywordTok{:}\AttributeTok{ }\KeywordTok{\{}\AttributeTok{ }\FunctionTok{range}\KeywordTok{:}\AttributeTok{ }\KeywordTok{[}\DecValTok{0}\KeywordTok{,}\AttributeTok{ }\DecValTok{50}\KeywordTok{],}\AttributeTok{ }\FunctionTok{unit}\KeywordTok{:}\AttributeTok{ }\StringTok{"mN"}\AttributeTok{ }\KeywordTok{\}}
+\AttributeTok{        }\FunctionTok{displacement}\KeywordTok{:}\AttributeTok{ }\KeywordTok{\{}\AttributeTok{ }\FunctionTok{range}\KeywordTok{:}\AttributeTok{ }\KeywordTok{[}\DecValTok{0}\KeywordTok{,}\AttributeTok{ }\DecValTok{5}\KeywordTok{],}\AttributeTok{ }\FunctionTok{unit}\KeywordTok{:}\AttributeTok{ }\StringTok{"mm"}\AttributeTok{ }\KeywordTok{\}}
+\AttributeTok{      }\FunctionTok{latency}\KeywordTok{:}\AttributeTok{ }\DecValTok{150}\CommentTok{  \# ms}
+\AttributeTok{      }\FunctionTok{monitoring}\KeywordTok{:}
+\AttributeTok{        }\FunctionTok{metrics}\KeywordTok{:}\AttributeTok{ }\KeywordTok{[}\StringTok{"force"}\KeywordTok{,}\AttributeTok{ }\StringTok{"displacement"}\KeywordTok{,}\AttributeTok{ }\StringTok{"velocity"}\KeywordTok{]}
+\AttributeTok{        }\FunctionTok{sampling\_rate}\KeywordTok{:}\AttributeTok{ }\DecValTok{100}\CommentTok{  \# Hz}
+
+\FunctionTok{requirements}\KeywordTok{:}
+\AttributeTok{  }\FunctionTok{physical}\KeywordTok{:}
+\AttributeTok{    }\FunctionTok{temperature}\KeywordTok{:}\AttributeTok{ }\KeywordTok{\{}\AttributeTok{ }\FunctionTok{optimal}\KeywordTok{:}\AttributeTok{ }\DecValTok{37}\KeywordTok{,}\AttributeTok{ }\FunctionTok{range}\KeywordTok{:}\AttributeTok{ }\KeywordTok{[}\DecValTok{35}\KeywordTok{,}\AttributeTok{ }\DecValTok{39}\KeywordTok{],}\AttributeTok{ }\FunctionTok{unit}\KeywordTok{:}\AttributeTok{ }\StringTok{"°C"}\AttributeTok{ }\KeywordTok{\}}
+\AttributeTok{  }\FunctionTok{chemical}\KeywordTok{:}
+\AttributeTok{    }\FunctionTok{pH}\KeywordTok{:}\AttributeTok{ }\KeywordTok{\{}\AttributeTok{ }\FunctionTok{optimal}\KeywordTok{:}\AttributeTok{ }\FloatTok{7.4}\KeywordTok{,}\AttributeTok{ }\FunctionTok{range}\KeywordTok{:}\AttributeTok{ }\KeywordTok{[}\FloatTok{7.2}\KeywordTok{,}\AttributeTok{ }\FloatTok{7.6}\KeywordTok{]}\AttributeTok{ }\KeywordTok{\}}
+\AttributeTok{    }\FunctionTok{oxygen}\KeywordTok{:}\AttributeTok{ }\KeywordTok{\{}\AttributeTok{ }\FunctionTok{range}\KeywordTok{:}\AttributeTok{ }\KeywordTok{[}\DecValTok{15}\KeywordTok{,}\AttributeTok{ }\DecValTok{25}\KeywordTok{],}\AttributeTok{ }\FunctionTok{unit}\KeywordTok{:}\AttributeTok{ }\StringTok{"\%"}\AttributeTok{ }\KeywordTok{\}}
+\AttributeTok{    }\FunctionTok{glucose}\KeywordTok{:}\AttributeTok{ }\KeywordTok{\{}\AttributeTok{ }\FunctionTok{range}\KeywordTok{:}\AttributeTok{ }\KeywordTok{[}\DecValTok{5}\KeywordTok{,}\AttributeTok{ }\DecValTok{25}\KeywordTok{],}\AttributeTok{ }\FunctionTok{unit}\KeywordTok{:}\AttributeTok{ }\StringTok{"mM"}\AttributeTok{ }\KeywordTok{\}}
+
+\FunctionTok{performance}\KeywordTok{:}
+\AttributeTok{  }\FunctionTok{functional}\KeywordTok{:}
+\AttributeTok{    }\FunctionTok{max\_force}\KeywordTok{:}\AttributeTok{ }\KeywordTok{\{}\AttributeTok{ }\FunctionTok{value}\KeywordTok{:}\AttributeTok{ }\DecValTok{50}\KeywordTok{,}\AttributeTok{ }\FunctionTok{unit}\KeywordTok{:}\AttributeTok{ }\StringTok{"mN"}\AttributeTok{ }\KeywordTok{\}}
+\AttributeTok{    }\FunctionTok{response\_time}\KeywordTok{:}\AttributeTok{ }\KeywordTok{\{}\AttributeTok{ }\FunctionTok{typical}\KeywordTok{:}\AttributeTok{ }\DecValTok{150}\KeywordTok{,}\AttributeTok{ }\FunctionTok{max}\KeywordTok{:}\AttributeTok{ }\DecValTok{300}\KeywordTok{,}\AttributeTok{ }\FunctionTok{unit}\KeywordTok{:}\AttributeTok{ }\StringTok{"ms"}\AttributeTok{ }\KeywordTok{\}}
+\AttributeTok{    }\FunctionTok{contraction\_velocity}\KeywordTok{:}\AttributeTok{ }\KeywordTok{\{}\AttributeTok{ }\FunctionTok{max}\KeywordTok{:}\AttributeTok{ }\DecValTok{10}\KeywordTok{,}\AttributeTok{ }\FunctionTok{unit}\KeywordTok{:}\AttributeTok{ }\StringTok{"mm/s"}\AttributeTok{ }\KeywordTok{\}}
+\AttributeTok{  }\FunctionTok{reliability}\KeywordTok{:}
+\AttributeTok{    }\FunctionTok{lifetime}\KeywordTok{:}\AttributeTok{ }\KeywordTok{\{}\AttributeTok{ }\FunctionTok{mean}\KeywordTok{:}\AttributeTok{ }\DecValTok{14}\KeywordTok{,}\AttributeTok{ }\FunctionTok{std}\KeywordTok{:}\AttributeTok{ }\DecValTok{3}\KeywordTok{,}\AttributeTok{ }\FunctionTok{unit}\KeywordTok{:}\AttributeTok{ }\StringTok{"days"}\AttributeTok{ }\KeywordTok{\}}
+\AttributeTok{    }\FunctionTok{failure\_rate}\KeywordTok{:}\AttributeTok{ }\KeywordTok{\{}\AttributeTok{ }\FunctionTok{value}\KeywordTok{:}\AttributeTok{ }\FloatTok{0.01}\KeywordTok{,}\AttributeTok{ }\FunctionTok{unit}\KeywordTok{:}\AttributeTok{ }\StringTok{"per\_hour"}\AttributeTok{ }\KeywordTok{\}}
+\AttributeTok{  }\FunctionTok{resources}\KeywordTok{:}
+\AttributeTok{    }\FunctionTok{oxygen\_consumption}\KeywordTok{:}\AttributeTok{ }\KeywordTok{\{}\AttributeTok{ }\FunctionTok{value}\KeywordTok{:}\AttributeTok{ }\DecValTok{5}\KeywordTok{,}\AttributeTok{ }\FunctionTok{unit}\KeywordTok{:}\AttributeTok{ }\StringTok{"µmol/hour"}\AttributeTok{ }\KeywordTok{\}}
+\AttributeTok{    }\FunctionTok{glucose\_consumption}\KeywordTok{:}\AttributeTok{ }\KeywordTok{\{}\AttributeTok{ }\FunctionTok{value}\KeywordTok{:}\AttributeTok{ }\FloatTok{2.5}\KeywordTok{,}\AttributeTok{ }\FunctionTok{unit}\KeywordTok{:}\AttributeTok{ }\StringTok{"µmol/hour"}\AttributeTok{ }\KeywordTok{\}}
+
+\FunctionTok{failure\_modes}\KeywordTok{:}
+\AttributeTok{  }\KeywordTok{{-}}\AttributeTok{ }\FunctionTok{id}\KeywordTok{:}\AttributeTok{ }\StringTok{"fatigue"}
+\AttributeTok{    }\FunctionTok{type}\KeywordTok{:}\AttributeTok{ }\StringTok{"recoverable"}
+\AttributeTok{    }\FunctionTok{probability}\KeywordTok{:}\AttributeTok{ }\FloatTok{0.3}
+\AttributeTok{    }\FunctionTok{detection}\KeywordTok{:}\AttributeTok{ }\StringTok{"force\_output \textless{} 80\% baseline"}
+\AttributeTok{    }\FunctionTok{impact}\KeywordTok{:}\AttributeTok{ }\StringTok{"reduced\_performance"}
+\AttributeTok{    }\FunctionTok{mitigation}\KeywordTok{:}\AttributeTok{ }\StringTok{"reduce stimulation, allow recovery"}
+\AttributeTok{  }
+\AttributeTok{  }\KeywordTok{{-}}\AttributeTok{ }\FunctionTok{id}\KeywordTok{:}\AttributeTok{ }\StringTok{"necrosis"}
+\AttributeTok{    }\FunctionTok{type}\KeywordTok{:}\AttributeTok{ }\StringTok{"irreversible"}
+\AttributeTok{    }\FunctionTok{probability}\KeywordTok{:}\AttributeTok{ }\FloatTok{0.05}
+\AttributeTok{    }\FunctionTok{detection}\KeywordTok{:}\AttributeTok{ }\StringTok{"viability \textless{} 50\%"}
+\AttributeTok{    }\FunctionTok{impact}\KeywordTok{:}\AttributeTok{ }\StringTok{"component\_loss"}
+\AttributeTok{    }\FunctionTok{mitigation}\KeywordTok{:}\AttributeTok{ }\StringTok{"replace component"}
+
+\FunctionTok{testing}\KeywordTok{:}
+\AttributeTok{  }\FunctionTok{unit\_tests}\KeywordTok{:}
+\AttributeTok{    }\KeywordTok{{-}}\AttributeTok{ }\FunctionTok{id}\KeywordTok{:}\AttributeTok{ }\StringTok{"contraction\_response"}
+\AttributeTok{      }\FunctionTok{description}\KeywordTok{:}\AttributeTok{ }\StringTok{"Verify force output on stimulation"}
+\AttributeTok{      }\FunctionTok{protocol}\KeywordTok{:}\AttributeTok{ }\StringTok{"stimulate 10Hz 2V for 1s, measure force"}
+\AttributeTok{      }\FunctionTok{acceptance}\KeywordTok{:}\AttributeTok{ }\StringTok{"force in [5, 15] mN within 200ms"}
+\AttributeTok{    }
+\AttributeTok{    }\KeywordTok{{-}}\AttributeTok{ }\FunctionTok{id}\KeywordTok{:}\AttributeTok{ }\StringTok{"viability\_check"}
+\AttributeTok{      }\FunctionTok{description}\KeywordTok{:}\AttributeTok{ }\StringTok{"Verify cell survival"}
+\AttributeTok{      }\FunctionTok{protocol}\KeywordTok{:}\AttributeTok{ }\StringTok{"live/dead staining"}
+\AttributeTok{      }\FunctionTok{acceptance}\KeywordTok{:}\AttributeTok{ }\StringTok{"viability \textgreater{} 90\%"}
+
+\FunctionTok{dependencies}\KeywordTok{:}
+\AttributeTok{  }\FunctionTok{adapters}\KeywordTok{:}
+\AttributeTok{    }\KeywordTok{{-}}\AttributeTok{ }\FunctionTok{id}\KeywordTok{:}\AttributeTok{ }\StringTok{"perfusion{-}adapter"}
+\AttributeTok{      }\FunctionTok{version}\KeywordTok{:}\AttributeTok{ }\StringTok{"\^{}1.0.0"}
+\AttributeTok{  }\FunctionTok{protocols}\KeywordTok{:}
+\AttributeTok{    }\KeywordTok{{-}}\AttributeTok{ }\FunctionTok{name}\KeywordTok{:}\AttributeTok{ }\StringTok{"standard{-}mammalian{-}culture"}
+\AttributeTok{      }\FunctionTok{version}\KeywordTok{:}\AttributeTok{ }\StringTok{"2.1"}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{bio-dsl-language-design-rationale}{%
+\section{5. Bio-DSL: Language Design
+Rationale}\label{bio-dsl-language-design-rationale}}
+
+\hypertarget{why-a-domain-specific-language}{%
+\subsection{5.1 Why a Domain-Specific
+Language?}\label{why-a-domain-specific-language}}
+
+Martin Fowler defines a domain-specific language (DSL) as ``a computer
+language specialized to a particular application domain.'' DSLs trade
+generality for expressiveness within their domain.
+
+\hypertarget{benefits-of-dsls}{%
+\subsubsection{Benefits of DSLs}\label{benefits-of-dsls}}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.2093}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3023}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.4884}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Benefit
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Explanation
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Bio-DSL Application
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\textbf{Expressiveness} & Say more with less & Describe complex
+assemblies concisely \\
+\textbf{Readability} & Domain experts can understand & Biologists can
+read system descriptions \\
+\textbf{Validation} & Domain-specific error checking & Catch interface
+mismatches at ``compile time'' \\
+\textbf{Abstraction} & Hide implementation details & Focus on what, not
+how \\
+\end{longtable}
+
+\hypertarget{why-not-use-existing-languages}{%
+\subsubsection{Why Not Use Existing
+Languages?}\label{why-not-use-existing-languages}}
+
+General-purpose languages (Python, JavaScript) could describe biological
+systems, but: - Too much flexibility allows invalid configurations - No
+built-in understanding of biological constraints - Error messages would
+be generic, not domain-specific
+
+Existing biological languages (SBML, SBOL) operate at different
+abstraction levels: - SBML: molecular reaction networks - SBOL: genetic
+sequences - Bio-DSL: organ/system-level composition
+
+\hypertarget{design-goals}{%
+\subsection{5.2 Design Goals}\label{design-goals}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Declarative}: Describe \emph{what} the system is, not
+  \emph{how} to build it
+\item
+  \textbf{Readable}: A biologist should understand the intent without
+  programming background
+\item
+  \textbf{Verifiable}: Static analysis can catch errors before physical
+  assembly
+\item
+  \textbf{Executable}: Can generate runtime configurations and
+  monitoring dashboards
+\item
+  \textbf{Composable}: Systems can be nested and reused
+\end{enumerate}
+
+\hypertarget{language-constructs}{%
+\subsection{5.3 Language Constructs}\label{language-constructs}}
+
+\hypertarget{component-declaration}{%
+\subsubsection{Component Declaration}\label{component-declaration}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{// Import component from registry with version constraint}
+\NormalTok{COMPONENT \textless{}alias\textgreater{} FROM "\textless{}source\textgreater{}@\textless{}version\textgreater{}" [AS \textless{}local\_name\textgreater{}]}
+
+\NormalTok{// Examples:}
+\NormalTok{COMPONENT flexor FROM "muscle{-}actuator{-}human{-}skeletal@\^{}2.3"}
+\NormalTok{COMPONENT sensor FROM "piezo{-}force{-}sensor@\textasciitilde{}1.1" AS force\_sensor}
+\NormalTok{COMPONENT controller FROM "neural{-}organoid{-}spinal@\textgreater{}=0.8"}
+\end{Highlighting}
+\end{Shaded}
+
+Version constraints follow npm conventions: - \texttt{\^{}2.3.0}:
+Compatible with 2.x.x (\textgreater=2.3.0 \textless3.0.0) -
+\texttt{\textasciitilde{}1.1.0}: Approximately 1.1.x (\textgreater=1.1.0
+\textless1.2.0) - \texttt{\textgreater{}=0.8}: At least version 0.8
+
+\hypertarget{connection-declaration}{%
+\subsubsection{Connection Declaration}\label{connection-declaration}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{// Basic connection}
+\NormalTok{CONNECT \textless{}source\textgreater{}.\textless{}port\textgreater{} TO \textless{}target\textgreater{}.\textless{}port\textgreater{}}
+
+\NormalTok{// Connection with adapter}
+\NormalTok{CONNECT \textless{}source\textgreater{}.\textless{}port\textgreater{} TO \textless{}target\textgreater{}.\textless{}port\textgreater{} VIA \textless{}adapter\textgreater{}}
+
+\NormalTok{// Connection with parameters}
+\NormalTok{CONNECT \textless{}source\textgreater{}.\textless{}port\textgreater{} TO \textless{}target\textgreater{}.\textless{}port\textgreater{} WITH \{ \textless{}params\textgreater{} \}}
+
+\NormalTok{// Examples:}
+\NormalTok{CONNECT sensor.output TO controller.input}
+\NormalTok{CONNECT controller.output TO flexor.stimulation VIA signal\_converter}
+\NormalTok{CONNECT flexor.force\_output TO sensor.input WITH \{ gain: 1.5, offset: 0 \}}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{adapter-declaration}{%
+\subsubsection{Adapter Declaration}\label{adapter-declaration}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{// Declare adapter for interface conversion}
+\NormalTok{ADAPTER \textless{}alias\textgreater{} FROM "\textless{}source\textgreater{}@\textless{}version\textgreater{}" [WITH \{ \textless{}config\textgreater{} \}]}
+
+\NormalTok{// Examples:}
+\NormalTok{ADAPTER signal\_converter FROM "opto{-}electrical@2.0" WITH \{}
+\NormalTok{  input\_type: "electrical",}
+\NormalTok{  output\_type: "optical",}
+\NormalTok{  wavelength: 470 nm}
+\NormalTok{\}}
+
+\NormalTok{ADAPTER perfusion\_hub FROM "microfluidic{-}4ch@1.0" WITH \{}
+\NormalTok{  channels: 4,}
+\NormalTok{  flow\_rate: 0.5 mL/min}
+\NormalTok{\}}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{runtime-configuration}{%
+\subsubsection{Runtime Configuration}\label{runtime-configuration}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{RUNTIME \{}
+\NormalTok{  // Perfusion settings}
+\NormalTok{  perfusion: \{}
+\NormalTok{    medium: "DMEM + 10\% FBS",}
+\NormalTok{    temperature: 37 °C,}
+\NormalTok{    pH: 7.4,}
+\NormalTok{    flow\_rate: 0.5 mL/min,}
+\NormalTok{    oxygenation: true}
+\NormalTok{  \},}
+  
+\NormalTok{  // Control settings}
+\NormalTok{  control: \{}
+\NormalTok{    mode: "closed\_loop",}
+\NormalTok{    algorithm: "PID",}
+\NormalTok{    parameters: \{ Kp: 0.8, Ki: 0.2, Kd: 0.1 \}}
+\NormalTok{  \},}
+  
+\NormalTok{  // Monitoring settings}
+\NormalTok{  monitoring: \{}
+\NormalTok{    log\_interval: 10 s,}
+\NormalTok{    metrics: ["force", "viability", "temperature"],}
+\NormalTok{    alerts: \{}
+\NormalTok{      "viability \textless{} 80\%": "WARNING",}
+\NormalTok{      "temperature \textgreater{} 39°C": "CRITICAL"}
+\NormalTok{    \}}
+\NormalTok{  \},}
+  
+\NormalTok{  // Safety settings}
+\NormalTok{  safety: \{}
+\NormalTok{    emergency\_stop: "viability \textless{} 50\%",}
+\NormalTok{    max\_force: 100 mN}
+\NormalTok{  \}}
+\NormalTok{\}}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{behavioral-logic}{%
+\subsubsection{Behavioral Logic}\label{behavioral-logic}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{// Event{-}triggered actions}
+\NormalTok{ON \textless{}event\textgreater{} DO \{ \textless{}actions\textgreater{} \}}
+
+\NormalTok{// Condition{-}triggered actions}
+\NormalTok{WHEN \textless{}condition\textgreater{} THEN \{ \textless{}actions\textgreater{} \}}
+
+\NormalTok{// Periodic actions}
+\NormalTok{EVERY \textless{}interval\textgreater{} DO \{ \textless{}actions\textgreater{} \}}
+
+\NormalTok{// Examples:}
+\NormalTok{ON STARTUP DO \{}
+\NormalTok{  SET perfusion.flow\_rate = 0.5 mL/min}
+\NormalTok{  WAIT 300 s  // Equilibration}
+\NormalTok{  SET controller.mode = "active"}
+\NormalTok{\}}
+
+\NormalTok{WHEN flexor.fatigue\_index \textgreater{} 0.3 THEN \{}
+\NormalTok{  LOG "Fatigue detected"}
+\NormalTok{  REDUCE flexor.stimulation\_frequency BY 20\%}
+\NormalTok{\}}
+
+\NormalTok{EVERY 1 hour DO \{}
+\NormalTok{  RUN viability\_check()}
+\NormalTok{  IF any.viability \textless{} 85\% THEN \{}
+\NormalTok{    INCREASE perfusion.flow\_rate BY 10\%}
+\NormalTok{  \}}
+\NormalTok{\}}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{test-declaration}{%
+\subsubsection{Test Declaration}\label{test-declaration}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{TEST \textless{}name\textgreater{} \{}
+\NormalTok{  description: "\textless{}text\textgreater{}"}
+  
+\NormalTok{  GIVEN \textless{}preconditions\textgreater{}}
+\NormalTok{  WHEN \textless{}actions\textgreater{}}
+\NormalTok{  THEN \textless{}assertions\textgreater{}}
+\NormalTok{\}}
+
+\NormalTok{// Example:}
+\NormalTok{TEST contraction\_response \{}
+\NormalTok{  description: "Verify muscle responds to stimulation"}
+  
+\NormalTok{  GIVEN flexor.state == "ready"}
+\NormalTok{  WHEN STIMULATE flexor AT 10 Hz, 2 V FOR 1 s}
+\NormalTok{  THEN EXPECT flexor.force IN [5, 15] mN WITHIN 200 ms}
+\NormalTok{\}}
+
+\NormalTok{TEST closed\_loop\_tracking \{}
+\NormalTok{  description: "Verify feedback control accuracy"}
+  
+\NormalTok{  GIVEN system.mode == "closed\_loop"}
+\NormalTok{  WHEN SET target = sine\_wave(0.5 Hz, 20 mN) FOR 60 s}
+\NormalTok{  THEN EXPECT tracking\_error \textless{} 3 mN RMS}
+\NormalTok{\}}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{complete-example-dual-muscle-antagonist-system}{%
+\subsection{5.4 Complete Example: Dual-Muscle Antagonist
+System}\label{complete-example-dual-muscle-antagonist-system}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{// ============================================}
+\NormalTok{// Bio{-}Mechanical Arm Unit v0.1}
+\NormalTok{// Dual{-}muscle antagonist with closed{-}loop control}
+\NormalTok{// ============================================}
+
+\NormalTok{// === Component Declarations ===}
+\NormalTok{COMPONENT flexor FROM "muscle{-}actuator{-}human{-}skeletal@\^{}2.3" \{}
+\NormalTok{  role: "agonist",}
+\NormalTok{  force\_range: [0, 50] mN}
+\NormalTok{\}}
+
+\NormalTok{COMPONENT extensor FROM "muscle{-}actuator{-}human{-}skeletal@\^{}2.3" \{}
+\NormalTok{  role: "antagonist", }
+\NormalTok{  force\_range: [0, 50] mN}
+\NormalTok{\}}
+
+\NormalTok{COMPONENT sensor FROM "piezo{-}force{-}sensor@\textasciitilde{}1.1" \{}
+\NormalTok{  range: [0, 100] mN,}
+\NormalTok{  sampling\_rate: 100 Hz}
+\NormalTok{\}}
+
+\NormalTok{COMPONENT controller FROM "neural{-}organoid{-}spinal@\textgreater{}=0.8" \{}
+\NormalTok{  input\_channels: 2,}
+\NormalTok{  output\_channels: 2}
+\NormalTok{\}}
+
+\NormalTok{// === Adapter Declarations ===}
+\NormalTok{ADAPTER perfusion FROM "microfluidic{-}4ch@1.0" \{}
+\NormalTok{  medium: "DMEM + 10\% FBS",}
+\NormalTok{  flow\_rate: 0.5 mL/min PER channel}
+\NormalTok{\}}
+
+\NormalTok{ADAPTER stim\_converter FROM "opto{-}electrical@2.0" \{}
+\NormalTok{  wavelength: 470 nm}
+\NormalTok{\}}
+
+\NormalTok{// === Connection Topology ===}
+
+\NormalTok{// Controller to muscles (via optical stimulation)}
+\NormalTok{CONNECT controller.output\_1 TO flexor.stimulation }
+\NormalTok{  VIA stim\_converter}
+\NormalTok{  WITH \{ frequency: [1, 50] Hz, voltage: [0, 3] V \}}
+
+\NormalTok{CONNECT controller.output\_2 TO extensor.stimulation}
+\NormalTok{  VIA stim\_converter}
+\NormalTok{  WITH \{ frequency: [1, 50] Hz, voltage: [0, 3] V \}}
+
+\NormalTok{// Sensor feedback to controller}
+\NormalTok{CONNECT sensor.output TO controller.feedback\_input}
+\NormalTok{  WITH \{ gain: 1.5 \}}
+
+\NormalTok{// Perfusion connections}
+\NormalTok{CONNECT perfusion.ch1 TO flexor.perfusion\_input}
+\NormalTok{CONNECT perfusion.ch2 TO extensor.perfusion\_input}
+\NormalTok{CONNECT perfusion.ch3 TO controller.perfusion\_input}
+\NormalTok{CONNECT perfusion.ch4 TO sensor.perfusion\_input}
+
+\NormalTok{// === Runtime Configuration ===}
+\NormalTok{RUNTIME \{}
+\NormalTok{  perfusion: \{}
+\NormalTok{    temperature: 37 °C,}
+\NormalTok{    pH: 7.4,}
+\NormalTok{    oxygenation: true,}
+\NormalTok{    waste\_removal: "continuous"}
+\NormalTok{  \},}
+  
+\NormalTok{  control: \{}
+\NormalTok{    mode: "closed\_loop",}
+\NormalTok{    target: "position",}
+\NormalTok{    pid: \{ Kp: 0.8, Ki: 0.2, Kd: 0.1 \}}
+\NormalTok{  \},}
+  
+\NormalTok{  monitoring: \{}
+\NormalTok{    interval: 10 s,}
+\NormalTok{    metrics: [}
+\NormalTok{      "flexor.force", "extensor.force",}
+\NormalTok{      "sensor.reading", "controller.activity",}
+\NormalTok{      "*.viability"}
+\NormalTok{    ],}
+\NormalTok{    alerts: \{}
+\NormalTok{      "viability \textless{} 80\%": "WARNING",}
+\NormalTok{      "force \textgreater{} 90 mN": "CRITICAL"}
+\NormalTok{    \}}
+\NormalTok{  \},}
+  
+\NormalTok{  safety: \{}
+\NormalTok{    max\_force: 100 mN,}
+\NormalTok{    emergency: \{}
+\NormalTok{      trigger: "viability \textless{} 50\% OR force \textgreater{} 120 mN",}
+\NormalTok{      action: "STOP\_ALL; PERFUSION\_ONLY"}
+\NormalTok{    \}}
+\NormalTok{  \}}
+\NormalTok{\}}
+
+\NormalTok{// === Behavioral Logic ===}
+\NormalTok{ON STARTUP DO \{}
+\NormalTok{  SET perfusion.flow\_rate = 0.5 mL/min}
+\NormalTok{  WAIT 300 s  // Equilibration period}
+\NormalTok{  RUN calibration\_sequence()}
+\NormalTok{  SET controller.mode = "active"}
+\NormalTok{  LOG "System initialized"}
+\NormalTok{\}}
+
+\NormalTok{WHEN target\_position CHANGES THEN \{}
+\NormalTok{  error = target\_position {-} sensor.reading}
+\NormalTok{  controller.compute(error)}
+\NormalTok{\}}
+
+\NormalTok{WHEN flexor.fatigue\_index \textgreater{} 0.3 THEN \{}
+\NormalTok{  LOG "Flexor fatigue detected"}
+\NormalTok{  REDUCE flexor.stim\_frequency BY 20\%}
+\NormalTok{  INCREASE extensor.stim\_frequency BY 10\%  // Compensate}
+\NormalTok{\}}
+
+\NormalTok{EVERY 1 hour DO \{}
+\NormalTok{  RUN viability\_check()}
+\NormalTok{  RECORD performance\_snapshot()}
+\NormalTok{\}}
+
+\NormalTok{// === Test Suite ===}
+\NormalTok{TEST unit\_response \{}
+\NormalTok{  description: "Single muscle contraction test"}
+\NormalTok{  GIVEN flexor.state == "ready"}
+\NormalTok{  WHEN STIMULATE flexor AT 10 Hz, 2 V FOR 1 s}
+\NormalTok{  THEN EXPECT flexor.force IN [5, 15] mN WITHIN 200 ms}
+\NormalTok{\}}
+
+\NormalTok{TEST antagonist\_balance \{}
+\NormalTok{  description: "Antagonist coordination test"}
+\NormalTok{  GIVEN system.mode == "active"}
+\NormalTok{  WHEN ACTIVATE flexor AND extensor SIMULTANEOUSLY}
+\NormalTok{  THEN EXPECT |flexor.force {-} extensor.force| \textless{} 5 mN}
+\NormalTok{\}}
+
+\NormalTok{TEST tracking\_accuracy \{}
+\NormalTok{  description: "Closed{-}loop tracking test"}
+\NormalTok{  GIVEN system.mode == "closed\_loop"}
+\NormalTok{  WHEN SET target = sine\_wave(0.5 Hz, ±20 mN) FOR 60 s}
+\NormalTok{  THEN EXPECT tracking\_error \textless{} 3 mN RMS}
+\NormalTok{\}}
+
+\NormalTok{// === Expected Performance ===}
+\NormalTok{EXPECTED \{}
+\NormalTok{  position\_accuracy: ±2 mN,}
+\NormalTok{  bandwidth: [0, 2] Hz,}
+\NormalTok{  lifetime: [7, 14] days,}
+\NormalTok{  power\_consumption: [50, 100] mW}
+\NormalTok{\}}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{comparison-with-related-languages}{%
+\subsection{5.5 Comparison with Related
+Languages}\label{comparison-with-related-languages}}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.1639}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2951}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.1475}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.3934}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Language
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Abstraction Level
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Purpose
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Relationship to Bio-DSL
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\textbf{SBOL} & Genetic & DNA sequence description & Lower level;
+describes component internals \\
+\textbf{SBML} & Molecular & Biochemical reaction networks & Lower level;
+models component dynamics \\
+\textbf{CellML} & Cellular & Cell mathematical models & Lower level;
+component behavior models \\
+\textbf{Bio-DSL} & Organ/System & Component composition & Higher level;
+system assembly \\
+\end{longtable}
+
+Bio-DSL is designed to \textbf{complement} these languages: - Use SBOL
+to describe genetic modifications within a component - Use SBML to model
+the biochemical behavior of a component - Use Bio-DSL to describe how
+components connect into systems
+
+\hypertarget{tooling-vision}{%
+\subsection{5.6 Tooling Vision}\label{tooling-vision}}
+
+A complete Bio-DSL ecosystem would include:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Parser/Validator}: Check syntax and semantic correctness
+\item
+  \textbf{Type Checker}: Verify interface compatibility
+\item
+  \textbf{Simulator}: Predict system behavior before physical assembly
+\item
+  \textbf{Code Generator}: Produce runtime configurations
+\item
+  \textbf{Visual Editor}: Drag-and-drop system design
+\item
+  \textbf{Package Manager}: Discover and install components
+\item
+  \textbf{Test Runner}: Execute test suites
+\item
+  \textbf{Documentation Generator}: Produce human-readable specs \# 6.
+  Fundamental Differences and Open Challenges
+\end{enumerate}
+
+While the paradigm transfer from software to biological engineering is
+powerful, fundamental differences between the domains create challenges
+that require novel solutions beyond direct mapping.
+
+\hypertarget{determinism-vs.-stochasticity}{%
+\subsection{6.1 Determinism
+vs.~Stochasticity}\label{determinism-vs.-stochasticity}}
+
+\hypertarget{the-difference}{%
+\subsubsection{The Difference}\label{the-difference}}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5263}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.4737}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Software
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Biology
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Function calls always return & Cells may die unexpectedly \\
+Same input → same output & Biological variability is inherent \\
+Errors can be precisely located & Failure modes are complex and
+interacting \\
+State is fully observable & Internal state is partially hidden \\
+\end{longtable}
+
+A software function \texttt{add(2,\ 3)} will always return \texttt{5}. A
+biological muscle stimulated with identical parameters will produce
+slightly different force each time, and occasionally may not respond at
+all.
+
+\hypertarget{implications-for-wetware-engineering}{%
+\subsubsection{Implications for Wetware
+Engineering}\label{implications-for-wetware-engineering}}
+
+\textbf{Interface contracts must be probabilistic}:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{output}\KeywordTok{:}
+\AttributeTok{  }\FunctionTok{force}\KeywordTok{:}
+\AttributeTok{    }\FunctionTok{expected}\KeywordTok{:}\AttributeTok{ 10 mN}
+\AttributeTok{    }\FunctionTok{std\_dev}\KeywordTok{:}\AttributeTok{ 2 mN}
+\AttributeTok{    }\FunctionTok{confidence}\KeywordTok{:}\AttributeTok{ 95\%}
+\AttributeTok{    }\FunctionTok{failure\_probability}\KeywordTok{:}\AttributeTok{ }\FloatTok{0.01}
+\end{Highlighting}
+\end{Shaded}
+
+\textbf{Testing must be statistical}:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{acceptance\_criteria}\KeywordTok{:}
+\AttributeTok{  }\FunctionTok{metric}\KeywordTok{:}\AttributeTok{ }\StringTok{"response\_time"}
+\AttributeTok{  }\FunctionTok{threshold}\KeywordTok{:}\AttributeTok{ }\StringTok{"\textless{} 200 ms"}
+\AttributeTok{  }\FunctionTok{required\_success\_rate}\KeywordTok{:}\AttributeTok{ }\StringTok{"95\%"}
+\AttributeTok{  }\FunctionTok{sample\_size}\KeywordTok{:}\AttributeTok{ }\DecValTok{20}
+\end{Highlighting}
+\end{Shaded}
+
+\textbf{Runtime must handle uncertainty}: - Redundant components for
+critical functions - Graceful degradation strategies - Continuous
+monitoring with anomaly detection
+
+\hypertarget{discrete-vs.-continuous}{%
+\subsection{6.2 Discrete vs.~Continuous}\label{discrete-vs.-continuous}}
+
+\hypertarget{the-difference-1}{%
+\subsubsection{The Difference}\label{the-difference-1}}
+
+\begin{longtable}[]{@{}ll@{}}
+\toprule\noalign{}
+Software & Biology \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Digital signals (0/1) & Analog signals (continuous) \\
+Clear state boundaries & Gradual transitions \\
+Instantaneous state changes & Progressive changes over time \\
+Precise timing & Approximate timing \\
+\end{longtable}
+
+Software state transitions are instantaneous: a variable is either
+\texttt{true} or \texttt{false}. Biological state transitions are
+gradual: a muscle doesn't switch from ``relaxed'' to ``contracted'' but
+transitions through a continuum.
+
+\hypertarget{implications-for-wetware-engineering-1}{%
+\subsubsection{Implications for Wetware
+Engineering}\label{implications-for-wetware-engineering-1}}
+
+\textbf{Interface parameters need tolerance ranges}:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{input}\KeywordTok{:}
+\AttributeTok{  }\FunctionTok{voltage}\KeywordTok{:}
+\AttributeTok{    }\FunctionTok{target}\KeywordTok{:}\AttributeTok{ 2.0 V}
+\AttributeTok{    }\FunctionTok{tolerance}\KeywordTok{:}\AttributeTok{ ±0.2 V}
+\AttributeTok{    }\FunctionTok{settling\_time}\KeywordTok{:}\AttributeTok{ 10 ms}
+\end{Highlighting}
+\end{Shaded}
+
+\textbf{State definitions need thresholds}:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{states}\KeywordTok{:}
+\AttributeTok{  }\FunctionTok{relaxed}\KeywordTok{:}\AttributeTok{ }\StringTok{"force \textless{} 5\% max"}
+\AttributeTok{  }\FunctionTok{contracting}\KeywordTok{:}\AttributeTok{ }\StringTok{"5\% \textless{}= force \textless{} 95\% max"}
+\AttributeTok{  }\FunctionTok{contracted}\KeywordTok{:}\AttributeTok{ }\StringTok{"force \textgreater{}= 95\% max"}
+\AttributeTok{  }\FunctionTok{transition\_time}\KeywordTok{:}\AttributeTok{ }\StringTok{"50{-}200 ms"}
+\end{Highlighting}
+\end{Shaded}
+
+\textbf{Timing specifications need ranges}:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{timing}\KeywordTok{:}
+\AttributeTok{  }\FunctionTok{response\_time}\KeywordTok{:}\AttributeTok{ }\KeywordTok{\{}\AttributeTok{ }\FunctionTok{min}\KeywordTok{:}\AttributeTok{ }\DecValTok{100}\KeywordTok{,}\AttributeTok{ }\FunctionTok{typical}\KeywordTok{:}\AttributeTok{ }\DecValTok{150}\KeywordTok{,}\AttributeTok{ }\FunctionTok{max}\KeywordTok{:}\AttributeTok{ }\DecValTok{300}\KeywordTok{,}\AttributeTok{ }\FunctionTok{unit}\KeywordTok{:}\AttributeTok{ }\StringTok{"ms"}\AttributeTok{ }\KeywordTok{\}}
+\AttributeTok{  }\FunctionTok{settling\_time}\KeywordTok{:}\AttributeTok{ }\KeywordTok{\{}\AttributeTok{ }\FunctionTok{typical}\KeywordTok{:}\AttributeTok{ }\DecValTok{500}\KeywordTok{,}\AttributeTok{ }\FunctionTok{max}\KeywordTok{:}\AttributeTok{ }\DecValTok{1000}\KeywordTok{,}\AttributeTok{ }\FunctionTok{unit}\KeywordTok{:}\AttributeTok{ }\StringTok{"ms"}\AttributeTok{ }\KeywordTok{\}}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{isolation-vs.-coupling}{%
+\subsection{6.3 Isolation vs.~Coupling}\label{isolation-vs.-coupling}}
+
+\hypertarget{the-difference-2}{%
+\subsubsection{The Difference}\label{the-difference-2}}
+
+\begin{longtable}[]{@{}ll@{}}
+\toprule\noalign{}
+Software & Biology \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Process isolation (memory protection) & Shared chemical environment \\
+No side effects (pure functions) & Systemic metabolic effects \\
+Independent scaling & Resource competition \\
+Clean interfaces & Signal crosstalk \\
+\end{longtable}
+
+Software processes are isolated by the operating system. A bug in one
+process cannot corrupt another's memory. Biological components share
+culture medium, and one component's metabolic waste affects all others.
+
+\hypertarget{implications-for-wetware-engineering-2}{%
+\subsubsection{Implications for Wetware
+Engineering}\label{implications-for-wetware-engineering-2}}
+
+\textbf{Explicit coupling declarations}:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{coupling}\KeywordTok{:}
+\AttributeTok{  }\FunctionTok{metabolic}\KeywordTok{:}
+\AttributeTok{    }\KeywordTok{{-}}\AttributeTok{ }\FunctionTok{component}\KeywordTok{:}\AttributeTok{ }\StringTok{"flexor"}
+\AttributeTok{      }\FunctionTok{shares\_medium\_with}\KeywordTok{:}\AttributeTok{ }\KeywordTok{[}\StringTok{"extensor"}\KeywordTok{,}\AttributeTok{ }\StringTok{"sensor"}\KeywordTok{]}
+\AttributeTok{      }\FunctionTok{waste\_products}\KeywordTok{:}\AttributeTok{ }\KeywordTok{[}\StringTok{"lactate"}\KeywordTok{,}\AttributeTok{ }\StringTok{"CO2"}\KeywordTok{]}
+\AttributeTok{      }
+\AttributeTok{  }\FunctionTok{electrical}\KeywordTok{:}
+\AttributeTok{    }\KeywordTok{{-}}\AttributeTok{ }\FunctionTok{component}\KeywordTok{:}\AttributeTok{ }\StringTok{"controller"}
+\AttributeTok{      }\FunctionTok{field\_effects\_on}\KeywordTok{:}\AttributeTok{ }\KeywordTok{[}\StringTok{"sensor"}\KeywordTok{]}
+\AttributeTok{      }\FunctionTok{isolation\_required}\KeywordTok{:}\AttributeTok{ }\CharTok{true}
+\end{Highlighting}
+\end{Shaded}
+
+\textbf{Isolation adapter specifications}:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{adapter}\KeywordTok{:}
+\AttributeTok{  }\FunctionTok{type}\KeywordTok{:}\AttributeTok{ }\StringTok{"metabolic\_isolation"}
+\AttributeTok{  }\FunctionTok{mechanism}\KeywordTok{:}\AttributeTok{ }\StringTok{"semipermeable\_membrane"}
+\AttributeTok{  }\FunctionTok{allows}\KeywordTok{:}\AttributeTok{ }\KeywordTok{[}\StringTok{"glucose"}\KeywordTok{,}\AttributeTok{ }\StringTok{"oxygen"}\KeywordTok{,}\AttributeTok{ }\StringTok{"amino\_acids"}\KeywordTok{]}
+\AttributeTok{  }\FunctionTok{blocks}\KeywordTok{:}\AttributeTok{ }\KeywordTok{[}\StringTok{"lactate \textgreater{} 10mM"}\KeywordTok{,}\AttributeTok{ }\StringTok{"inflammatory\_cytokines"}\KeywordTok{]}
+\end{Highlighting}
+\end{Shaded}
+
+\textbf{System-level resource budgeting}:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{resource\_budget}\KeywordTok{:}
+\AttributeTok{  }\FunctionTok{oxygen}\KeywordTok{:}
+\AttributeTok{    }\FunctionTok{supply}\KeywordTok{:}\AttributeTok{ 100 µmol/hour}
+\AttributeTok{    }\FunctionTok{consumers}\KeywordTok{:}
+\AttributeTok{      }\KeywordTok{{-}}\AttributeTok{ }\FunctionTok{flexor}\KeywordTok{:}\AttributeTok{ 30 µmol/hour}
+\AttributeTok{      }\KeywordTok{{-}}\AttributeTok{ }\FunctionTok{extensor}\KeywordTok{:}\AttributeTok{ 30 µmol/hour}
+\AttributeTok{      }\KeywordTok{{-}}\AttributeTok{ }\FunctionTok{controller}\KeywordTok{:}\AttributeTok{ 20 µmol/hour}
+\AttributeTok{      }\KeywordTok{{-}}\AttributeTok{ }\FunctionTok{sensor}\KeywordTok{:}\AttributeTok{ 5 µmol/hour}
+\AttributeTok{    }\FunctionTok{margin}\KeywordTok{:}\AttributeTok{ 15\%}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{the-immune-system-no-software-equivalent}{%
+\subsection{6.4 The Immune System: No Software
+Equivalent}\label{the-immune-system-no-software-equivalent}}
+
+\hypertarget{the-challenge}{%
+\subsubsection{The Challenge}\label{the-challenge}}
+
+Software components do not ``reject'' each other. Biological components
+from different genetic backgrounds may trigger immune responses ranging
+from mild inflammation to complete destruction.
+
+This has no software parallel. The closest analogy might be software
+license incompatibility, but that's a legal/social construct, not a
+physical phenomenon.
+
+\hypertarget{required-innovations}{%
+\subsubsection{Required Innovations}\label{required-innovations}}
+
+\textbf{Immune compatibility scoring}:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{immune\_profile}\KeywordTok{:}
+\AttributeTok{  }\FunctionTok{source}\KeywordTok{:}\AttributeTok{ }\StringTok{"donor\_42"}
+\AttributeTok{  }\FunctionTok{hla\_type}\KeywordTok{:}
+\AttributeTok{    }\FunctionTok{class\_i}\KeywordTok{:}\AttributeTok{ }\KeywordTok{[}\StringTok{"A*02:01"}\KeywordTok{,}\AttributeTok{ }\StringTok{"B*07:02"}\KeywordTok{,}\AttributeTok{ }\StringTok{"C*07:01"}\KeywordTok{]}
+\AttributeTok{    }\FunctionTok{class\_ii}\KeywordTok{:}\AttributeTok{ }\KeywordTok{[}\StringTok{"DRB1*04:01"}\KeywordTok{,}\AttributeTok{ }\StringTok{"DQB1*03:02"}\KeywordTok{]}
+\AttributeTok{  }
+\AttributeTok{  }\FunctionTok{compatibility}\KeywordTok{:}
+\AttributeTok{    }\FunctionTok{autologous}\KeywordTok{:}\AttributeTok{ }\FloatTok{1.0}\CommentTok{      \# Same donor: perfect}
+\AttributeTok{    }\FunctionTok{hla\_matched}\KeywordTok{:}\AttributeTok{ }\FloatTok{0.85}\CommentTok{    \# Matched donor: good}
+\AttributeTok{    }\FunctionTok{allogeneic}\KeywordTok{:}\AttributeTok{ }\FloatTok{0.3}\CommentTok{      \# Random donor: risky}
+\AttributeTok{    }\FunctionTok{xenogeneic}\KeywordTok{:}\AttributeTok{ }\FloatTok{0.05}\CommentTok{     \# Different species: very risky}
+\end{Highlighting}
+\end{Shaded}
+
+\textbf{Isolation barrier specifications}:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{immune\_barrier}\KeywordTok{:}
+\AttributeTok{  }\FunctionTok{type}\KeywordTok{:}\AttributeTok{ }\StringTok{"encapsulation"}
+\AttributeTok{  }\FunctionTok{material}\KeywordTok{:}\AttributeTok{ }\StringTok{"alginate\_hydrogel"}
+\AttributeTok{  }\FunctionTok{pore\_size}\KeywordTok{:}\AttributeTok{ }\StringTok{"100 kDa MWCO"}
+\AttributeTok{  }
+\AttributeTok{  }\FunctionTok{permeability}\KeywordTok{:}
+\AttributeTok{    }\FunctionTok{oxygen}\KeywordTok{:}\AttributeTok{ }\StringTok{"high"}
+\AttributeTok{    }\FunctionTok{glucose}\KeywordTok{:}\AttributeTok{ }\StringTok{"high"}
+\AttributeTok{    }\FunctionTok{insulin}\KeywordTok{:}\AttributeTok{ }\StringTok{"high"}
+\AttributeTok{    }\FunctionTok{antibodies}\KeywordTok{:}\AttributeTok{ }\StringTok{"blocked"}
+\AttributeTok{    }\FunctionTok{immune\_cells}\KeywordTok{:}\AttributeTok{ }\StringTok{"blocked"}
+\AttributeTok{  }
+\AttributeTok{  }\FunctionTok{expected\_lifetime}\KeywordTok{:}\AttributeTok{ }\StringTok{"6 months"}
+\AttributeTok{  }\FunctionTok{failure\_mode}\KeywordTok{:}\AttributeTok{ }\StringTok{"fibrotic\_overgrowth"}
+\end{Highlighting}
+\end{Shaded}
+
+\textbf{Compatibility checking in Bio-DSL}:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{COMPONENT heart FROM "cardiomyocyte{-}human@2.0" \{}
+\NormalTok{  donor: "donor\_42"}
+\NormalTok{\}}
+
+\NormalTok{COMPONENT vessel FROM "endothelial{-}human@1.5" \{}
+\NormalTok{  donor: "donor\_42"  // Same donor: compatible}
+\NormalTok{\}}
+
+\NormalTok{// Compiler warning if donors don\textquotesingle{}t match:}
+\NormalTok{// WARNING: Immune compatibility not verified between }
+\NormalTok{//          heart (donor\_42) and vessel (donor\_17)}
+\NormalTok{//          Consider: HLA matching or isolation barrier}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{living-degradation-1}{%
+\subsection{6.5 Living Degradation}\label{living-degradation-1}}
+
+\hypertarget{the-challenge-1}{%
+\subsubsection{The Challenge}\label{the-challenge-1}}
+
+Software does not age. A function written in 1990 executes identically
+today (given compatible runtime). Biological components inherently
+degrade: cells senesce, proteins denature, structures weaken.
+
+\hypertarget{required-innovations-1}{%
+\subsubsection{Required Innovations}\label{required-innovations-1}}
+
+\textbf{Degradation modeling}:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{degradation}\KeywordTok{:}
+\AttributeTok{  }\FunctionTok{model}\KeywordTok{:}\AttributeTok{ }\StringTok{"weibull"}
+\AttributeTok{  }\FunctionTok{parameters}\KeywordTok{:}
+\AttributeTok{    }\FunctionTok{shape}\KeywordTok{:}\AttributeTok{ }\FloatTok{2.5}
+\AttributeTok{    }\FunctionTok{scale}\KeywordTok{:}\AttributeTok{ }\DecValTok{14}\CommentTok{  \# days}
+\AttributeTok{  }
+\AttributeTok{  }\FunctionTok{markers}\KeywordTok{:}
+\AttributeTok{    }\FunctionTok{early\_warning}\KeywordTok{:}
+\AttributeTok{      }\KeywordTok{{-}}\AttributeTok{ }\StringTok{"force\_output \textless{} 90\% baseline"}
+\AttributeTok{      }\KeywordTok{{-}}\AttributeTok{ }\StringTok{"response\_time \textgreater{} 120\% baseline"}
+\AttributeTok{    }
+\AttributeTok{    }\FunctionTok{end\_of\_life}\KeywordTok{:}
+\AttributeTok{      }\KeywordTok{{-}}\AttributeTok{ }\StringTok{"viability \textless{} 70\%"}
+\AttributeTok{      }\KeywordTok{{-}}\AttributeTok{ }\StringTok{"force\_output \textless{} 50\% baseline"}
+\end{Highlighting}
+\end{Shaded}
+
+\textbf{Maintenance protocols}:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{maintenance}\KeywordTok{:}
+\AttributeTok{  }\FunctionTok{routine}\KeywordTok{:}
+\AttributeTok{    }\KeywordTok{{-}}\AttributeTok{ }\FunctionTok{action}\KeywordTok{:}\AttributeTok{ }\StringTok{"medium\_change"}
+\AttributeTok{      }\FunctionTok{frequency}\KeywordTok{:}\AttributeTok{ }\StringTok{"every 48 hours"}
+\AttributeTok{    }\KeywordTok{{-}}\AttributeTok{ }\FunctionTok{action}\KeywordTok{:}\AttributeTok{ }\StringTok{"viability\_check"}
+\AttributeTok{      }\FunctionTok{frequency}\KeywordTok{:}\AttributeTok{ }\StringTok{"daily"}
+\AttributeTok{  }
+\AttributeTok{  }\FunctionTok{corrective}\KeywordTok{:}
+\AttributeTok{    }\KeywordTok{{-}}\AttributeTok{ }\FunctionTok{trigger}\KeywordTok{:}\AttributeTok{ }\StringTok{"force\_decline \textgreater{} 20\%"}
+\AttributeTok{      }\FunctionTok{action}\KeywordTok{:}\AttributeTok{ }\StringTok{"increase\_growth\_factors"}
+\AttributeTok{    }\KeywordTok{{-}}\AttributeTok{ }\FunctionTok{trigger}\KeywordTok{:}\AttributeTok{ }\StringTok{"viability \textless{} 80\%"}
+\AttributeTok{      }\FunctionTok{action}\KeywordTok{:}\AttributeTok{ }\StringTok{"partial\_medium\_refresh"}
+\end{Highlighting}
+\end{Shaded}
+
+\textbf{Replacement strategies}:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{replacement}\KeywordTok{:}
+\AttributeTok{  }\FunctionTok{strategy}\KeywordTok{:}\AttributeTok{ }\StringTok{"hot\_swap"}
+\AttributeTok{  }\FunctionTok{trigger}\KeywordTok{:}\AttributeTok{ }\StringTok{"viability \textless{} 70\%"}
+\AttributeTok{  }
+\AttributeTok{  }\FunctionTok{procedure}\KeywordTok{:}
+\AttributeTok{    }\FunctionTok{1}\KeywordTok{:}\AttributeTok{ }\StringTok{"activate\_backup\_component"}
+\AttributeTok{    }\FunctionTok{2}\KeywordTok{:}\AttributeTok{ }\StringTok{"transfer\_connections"}
+\AttributeTok{    }\FunctionTok{3}\KeywordTok{:}\AttributeTok{ }\StringTok{"verify\_function"}
+\AttributeTok{    }\FunctionTok{4}\KeywordTok{:}\AttributeTok{ }\StringTok{"remove\_degraded\_component"}
+\AttributeTok{  }
+\AttributeTok{  }\FunctionTok{backup\_inventory}\KeywordTok{:}\AttributeTok{ }\DecValTok{2}\CommentTok{  \# Keep 2 spares ready}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{ethical-constraints-1}{%
+\subsection{6.6 Ethical Constraints}\label{ethical-constraints-1}}
+
+\hypertarget{the-challenge-2}{%
+\subsubsection{The Challenge}\label{the-challenge-2}}
+
+Software has no inherent ethical status. Biological components,
+especially those involving human cells or neural tissue, raise ethical
+considerations:
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Source ethics}: How were cells obtained? Was there informed
+  consent?
+\item
+  \textbf{Capability ethics}: Could the assembly develop consciousness
+  or sentience?
+\item
+  \textbf{Use ethics}: What applications are acceptable?
+\item
+  \textbf{Disposal ethics}: How should biological materials be
+  destroyed?
+\end{itemize}
+
+\hypertarget{required-innovations-2}{%
+\subsubsection{Required Innovations}\label{required-innovations-2}}
+
+\textbf{Ethical metadata}:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{ethics}\KeywordTok{:}
+\AttributeTok{  }\FunctionTok{source}\KeywordTok{:}
+\AttributeTok{    }\FunctionTok{consent\_type}\KeywordTok{:}\AttributeTok{ }\StringTok{"informed\_written"}
+\AttributeTok{    }\FunctionTok{consent\_scope}\KeywordTok{:}\AttributeTok{ }\StringTok{"research\_only"}
+\AttributeTok{    }\FunctionTok{donor\_compensation}\KeywordTok{:}\AttributeTok{ }\StringTok{"none"}
+\AttributeTok{    }\FunctionTok{irb\_approval}\KeywordTok{:}\AttributeTok{ }\StringTok{"IRB{-}2025{-}0142"}
+\AttributeTok{  }
+\AttributeTok{  }\FunctionTok{constraints}\KeywordTok{:}
+\AttributeTok{    }\FunctionTok{prohibited\_uses}\KeywordTok{:}
+\AttributeTok{      }\KeywordTok{{-}}\AttributeTok{ }\StringTok{"reproductive\_cloning"}
+\AttributeTok{      }\KeywordTok{{-}}\AttributeTok{ }\StringTok{"consciousness\_creation"}
+\AttributeTok{      }\KeywordTok{{-}}\AttributeTok{ }\StringTok{"military\_applications"}
+\AttributeTok{    }
+\AttributeTok{    }\FunctionTok{required\_oversight}\KeywordTok{:}
+\AttributeTok{      }\KeywordTok{{-}}\AttributeTok{ }\StringTok{"irb\_review\_annual"}
+\AttributeTok{      }\KeywordTok{{-}}\AttributeTok{ }\StringTok{"ethics\_board\_notification"}
+\AttributeTok{  }
+\AttributeTok{  }\FunctionTok{disposal}\KeywordTok{:}
+\AttributeTok{    }\FunctionTok{method}\KeywordTok{:}\AttributeTok{ }\StringTok{"autoclave\_and\_biohazard\_waste"}
+\AttributeTok{    }\FunctionTok{documentation}\KeywordTok{:}\AttributeTok{ }\StringTok{"required"}
+\end{Highlighting}
+\end{Shaded}
+
+\textbf{Capability limits in Bio-DSL}:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{// Compiler enforces ethical constraints}
+\NormalTok{SYSTEM brain\_organoid\_array \{}
+\NormalTok{  // ERROR: Assembly exceeds neural complexity threshold}
+\NormalTok{  // Maximum allowed: 10\^{}6 neurons}
+\NormalTok{  // This assembly: 10\^{}8 neurons}
+\NormalTok{  // Requires: Enhanced ethics review}
+  
+\NormalTok{  COMPONENT organoid[100] FROM "brain{-}organoid@1.0"}
+\NormalTok{  CONNECT organoid[*] IN mesh\_topology}
+\NormalTok{\}}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{summary-the-innovation-agenda}{%
+\subsection{6.7 Summary: The Innovation
+Agenda}\label{summary-the-innovation-agenda}}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.2157}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3922}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3922}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Challenge
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Software Equivalent
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Required Innovation
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Stochasticity & None (deterministic) & Probabilistic contracts,
+statistical testing \\
+Continuous states & None (discrete) & Tolerance ranges, threshold
+definitions \\
+Metabolic coupling & None (isolated) & Coupling declarations, resource
+budgeting \\
+Immune rejection & None & Compatibility scoring, isolation barriers \\
+Living degradation & None & Degradation models, maintenance protocols \\
+Ethical constraints & Licensing (weak analogy) & Ethical metadata,
+capability limits \\
+\end{longtable}
+
+These challenges do not invalidate the paradigm transfer---they define
+the research agenda for making it complete. \# 7. Related Work and
+Positioning
+
+\hypertarget{synthetic-biology-and-standardization}{%
+\subsection{7.1 Synthetic Biology and
+Standardization}\label{synthetic-biology-and-standardization}}
+
+\hypertarget{biobricks-and-igem}{%
+\subsubsection{BioBricks and iGEM}\label{biobricks-and-igem}}
+
+The BioBricks Foundation and iGEM (International Genetically Engineered
+Machine) competition pioneered biological standardization at the genetic
+level. BioBricks defined standard assembly methods for DNA parts,
+enabling students worldwide to combine genetic components.
+
+\textbf{Relationship to Wetware Engineering}: - BioBricks operates at
+the \textbf{genetic level} (DNA sequences) - Wetware Engineering
+operates at the \textbf{organ/system level} (tissues, organoids) - They
+are \textbf{complementary}: BioBricks could define the genetic content
+\emph{within} a Bio-Component
+
+\hypertarget{sbol-synthetic-biology-open-language}{%
+\subsubsection{SBOL (Synthetic Biology Open
+Language)}\label{sbol-synthetic-biology-open-language}}
+
+SBOL provides a standardized data format for describing genetic designs,
+enabling exchange between software tools and laboratories.
+
+\textbf{Relationship to Wetware Engineering}: - SBOL describes
+\textbf{what genes are in a component} - Bio-Component Spec describes
+\textbf{what the component does as a functional unit} - SBOL could be
+embedded within Bio-Component Spec for genetic traceability
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Bio{-}Component with embedded SBOL reference}
+\FunctionTok{source}\KeywordTok{:}
+\AttributeTok{  }\FunctionTok{genetic\_design}\KeywordTok{:}
+\AttributeTok{    }\FunctionTok{sbol\_uri}\KeywordTok{:}\AttributeTok{ }\StringTok{"https://synbiohub.org/design/muscle{-}v2"}
+\AttributeTok{    }\FunctionTok{modifications}\KeywordTok{:}\AttributeTok{ }\KeywordTok{[}\StringTok{"GFP reporter"}\KeywordTok{,}\AttributeTok{ }\StringTok{"tetracycline{-}inducible"}\KeywordTok{]}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{comparison-table}{%
+\subsubsection{Comparison Table}\label{comparison-table}}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.1818}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3409}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.4773}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Aspect
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+BioBricks/SBOL
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Wetware Engineering
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Abstraction level & Genetic (DNA) & Organ/System (tissue) \\
+Unit of composition & DNA part & Functional module \\
+Assembly method & Restriction enzymes, Gibson & Physical/fluidic
+connection \\
+Standardization focus & Sequence format & Interface protocol \\
+Primary users & Molecular biologists & Tissue engineers, roboticists \\
+\end{longtable}
+
+\hypertarget{organ-on-chip-and-organoids}{%
+\subsection{7.2 Organ-on-Chip and
+Organoids}\label{organ-on-chip-and-organoids}}
+
+\hypertarget{organ-on-chip-technology}{%
+\subsubsection{Organ-on-Chip
+Technology}\label{organ-on-chip-technology}}
+
+Organ-on-chip devices culture human cells in microfluidic environments
+that mimic organ physiology. Companies like Emulate and TissUse have
+commercialized multi-organ systems.
+
+\textbf{Relationship to Wetware Engineering}: - Organ-on-chip provides
+\textbf{physical implementations} of Bio-Components - Current systems
+lack \textbf{standardized interfaces} between chips - Wetware
+Engineering provides the \textbf{abstraction framework} they need
+
+\hypertarget{organoid-research}{%
+\subsubsection{Organoid Research}\label{organoid-research}}
+
+Organoids are self-organizing 3D tissue cultures that recapitulate organ
+structure and function. Brain organoids, gut organoids, and kidney
+organoids have advanced rapidly.
+
+\textbf{Relationship to Wetware Engineering}: - Organoids are excellent
+\textbf{candidate Bio-Components} - Current organoid research focuses on
+\textbf{individual organs}, not composition - Wetware Engineering
+provides \textbf{composition methodology}
+
+\hypertarget{whats-missing}{%
+\subsubsection{What's Missing}\label{whats-missing}}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.3590}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.6410}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Current State
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Wetware Engineering Adds
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Each lab develops proprietary protocols & Standardized specifications \\
+No interface standards between organs & Bio-Interface Protocol \\
+Results described in papers & Machine-readable descriptions \\
+Composition is ad-hoc & Declarative composition language \\
+No version control & Semantic versioning \\
+\end{longtable}
+
+\hypertarget{systems-biology-modeling}{%
+\subsection{7.3 Systems Biology
+Modeling}\label{systems-biology-modeling}}
+
+\hypertarget{sbml-systems-biology-markup-language}{%
+\subsubsection{SBML (Systems Biology Markup
+Language)}\label{sbml-systems-biology-markup-language}}
+
+SBML is a standard format for representing computational models of
+biological processes, particularly biochemical reaction networks.
+
+\hypertarget{cellml}{%
+\subsubsection{CellML}\label{cellml}}
+
+CellML describes mathematical models of cellular function, enabling
+model sharing and reuse.
+
+\textbf{Relationship to Wetware Engineering}: - SBML/CellML describe
+\textbf{how components behave internally} (simulation) - Bio-DSL
+describes \textbf{how components connect externally} (composition) -
+They serve different purposes and can be used together
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Bio{-}Component with SBML behavior model}
+\FunctionTok{behavior}\KeywordTok{:}
+\AttributeTok{  }\FunctionTok{model\_type}\KeywordTok{:}\AttributeTok{ }\StringTok{"SBML"}
+\AttributeTok{  }\FunctionTok{model\_uri}\KeywordTok{:}\AttributeTok{ }\StringTok{"https://biomodels.org/MODEL123"}
+\AttributeTok{  }\FunctionTok{parameters}\KeywordTok{:}
+\AttributeTok{    }\KeywordTok{{-}}\AttributeTok{ }\FunctionTok{name}\KeywordTok{:}\AttributeTok{ }\StringTok{"contraction\_rate"}
+\AttributeTok{      }\FunctionTok{value}\KeywordTok{:}\AttributeTok{ }\FloatTok{0.5}
+\AttributeTok{      }\FunctionTok{unit}\KeywordTok{:}\AttributeTok{ }\StringTok{"1/s"}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{comparison}{%
+\subsubsection{Comparison}\label{comparison}}
+
+\begin{longtable}[]{@{}lll@{}}
+\toprule\noalign{}
+Aspect & SBML/CellML & Bio-DSL \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Purpose & Simulate behavior & Describe composition \\
+Focus & Internal dynamics & External connections \\
+Output & Simulation results & Runtime configuration \\
+Users & Computational biologists & System builders \\
+\end{longtable}
+
+\hypertarget{biohybrid-robotics}{%
+\subsection{7.4 Biohybrid Robotics}\label{biohybrid-robotics}}
+
+\hypertarget{living-machines}{%
+\subsubsection{Living Machines}\label{living-machines}}
+
+Research groups have created robots powered by biological actuators:
+muscle-powered swimmers, insect-machine hybrids, and biohybrid grippers.
+
+\textbf{Relationship to Wetware Engineering}: - Biohybrid robotics
+demonstrates \textbf{feasibility} of biological components - Current
+work is \textbf{bespoke}---each system designed from scratch - Wetware
+Engineering provides \textbf{reusable framework}
+
+\hypertarget{key-publications}{%
+\subsubsection{Key Publications}\label{key-publications}}
+
+\begin{itemize}
+\tightlist
+\item
+  Raman \& Bashir (2017): Biohybrid actuators review
+\item
+  Ricotti et al.~(2017): Biohybrid systems for robotics
+\item
+  Park et al.~(2016): Muscle-powered swimming robot
+\end{itemize}
+
+These works prove biological components can be engineered. Wetware
+Engineering asks: how do we make this \textbf{systematic and
+reproducible}?
+
+\hypertarget{software-engineering-for-biology}{%
+\subsection{7.5 Software Engineering for
+Biology}\label{software-engineering-for-biology}}
+
+\hypertarget{laboratory-automation}{%
+\subsubsection{Laboratory Automation}\label{laboratory-automation}}
+
+Tools like Autoprotocol and Antha provide programming languages for
+laboratory procedures, enabling reproducible experiments.
+
+\textbf{Relationship to Wetware Engineering}: - Lab automation describes
+\textbf{how to make components} - Wetware Engineering describes
+\textbf{how to compose components} - They address different phases of
+the development lifecycle
+
+\hypertarget{workflow-systems}{%
+\subsubsection{Workflow Systems}\label{workflow-systems}}
+
+Galaxy, Nextflow, and Snakemake manage computational biology workflows.
+
+\textbf{Relationship to Wetware Engineering}: - Workflow systems manage
+\textbf{data analysis pipelines} - Bio-DSL manages \textbf{physical
+system composition} - Different domains, similar abstraction principles
+
+\hypertarget{positioning-summary}{%
+\subsection{7.6 Positioning Summary}\label{positioning-summary}}
+
+\begin{verbatim}
+                    Abstraction Level
+                    
+    High    ┌─────────────────────────────────┐
+            │     Wetware Engineering          │
+            │     (System Composition)         │
+            └─────────────────────────────────┘
+                           ↑
+                    Uses components from
+                           ↑
+    Medium  ┌─────────────────────────────────┐
+            │   Organ-on-Chip / Organoids      │
+            │   (Physical Implementation)      │
+            └─────────────────────────────────┘
+                           ↑
+                    Built using
+                           ↑
+    Low     ┌─────────────────────────────────┐
+            │   BioBricks / SBOL / SBML        │
+            │   (Genetic / Molecular)          │
+            └─────────────────────────────────┘
+\end{verbatim}
+
+\textbf{Wetware Engineering's unique contribution}: Providing the
+\textbf{system-level abstraction layer} that connects molecular/genetic
+engineering to functional biological systems, using software engineering
+principles.
+
+\hypertarget{what-we-are-not-claiming}{%
+\subsection{7.7 What We Are NOT
+Claiming}\label{what-we-are-not-claiming}}
+
+To be clear about scope:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \textbf{We are not claiming to have built working systems}. This paper
+  proposes a framework; implementation is future work.
+\item
+  \textbf{We are not claiming biology is ``just like'' software}.
+  Section 6 details fundamental differences requiring novel solutions.
+\item
+  \textbf{We are not claiming to replace existing approaches}. We
+  complement synthetic biology, organoid research, and systems biology.
+\item
+  \textbf{We are not claiming immediate practical application}. The
+  roadmap spans decades.
+\end{enumerate}
+
+What we ARE claiming: \textbf{The conceptual framework of software
+engineering---modularity, interfaces, composition, versioning---provides
+valuable abstractions for biological system construction, and
+articulating this framework is a necessary first step.} \# 8. Conclusion
+and Future Directions
+
+\hypertarget{summary-of-contributions}{%
+\subsection{8.1 Summary of
+Contributions}\label{summary-of-contributions}}
+
+This paper has proposed \textbf{Wetware Engineering}, a
+cross-disciplinary methodology that systematically transfers software
+engineering paradigms to biological system construction. Our
+contributions are:
+
+\hypertarget{conceptual-framework}{%
+\subsubsection{Conceptual Framework}\label{conceptual-framework}}
+
+We defined the \textbf{Component-Interface-Runtime triad} as the
+foundational abstraction for modular biological systems: -
+\textbf{Bio-Component}: Self-contained functional biological units -
+\textbf{Bio-Interface}: Standardized connection protocols across four
+dimensions (power, signal, isolation, mechanical) -
+\textbf{Bio-Runtime}: Orchestration layer for resource management,
+monitoring, and fault handling
+
+\hypertarget{technical-specifications}{%
+\subsubsection{Technical
+Specifications}\label{technical-specifications}}
+
+We proposed concrete specifications: - \textbf{Bio-Component Spec v0.1}:
+A standardized schema for describing biological modules, including
+metadata, interfaces, requirements, performance metrics, and testing -
+\textbf{Bio-DSL}: A domain-specific language for declarative system
+composition, with constructs for component declaration, connection,
+runtime configuration, and behavioral logic
+
+\hypertarget{systematic-analysis}{%
+\subsubsection{Systematic Analysis}\label{systematic-analysis}}
+
+We provided systematic mappings between software and biological
+engineering: - \textbf{Direct mappings}: Versioning, dependency
+declaration, documentation - \textbf{Analogous mappings}: Testing, error
+handling, logging - \textbf{Novel challenges}: Immune compatibility,
+metabolic coupling, living degradation, ethical constraints
+
+\hypertarget{honest-assessment}{%
+\subsubsection{Honest Assessment}\label{honest-assessment}}
+
+We identified fundamental differences that require innovation beyond
+paradigm transfer, establishing a research agenda for the field.
+
+\hypertarget{the-path-forward}{%
+\subsection{8.2 The Path Forward}\label{the-path-forward}}
+
+\hypertarget{phase-1-foundation-1-3-years}{%
+\subsubsection{Phase 1: Foundation (1-3
+years)}\label{phase-1-foundation-1-3-years}}
+
+\textbf{Goals}: - Refine specifications based on community feedback -
+Develop proof-of-concept tooling (parser, validator) - Document 10-20
+existing biological systems using Bio-Component Spec - Publish reference
+implementations
+
+\textbf{Milestones}: - Bio-Component Spec v1.0 release - Bio-DSL parser
+and validator - First community-contributed component specifications -
+Workshop or symposium on wetware engineering
+
+\hypertarget{phase-2-validation-3-7-years}{%
+\subsubsection{Phase 2: Validation (3-7
+years)}\label{phase-2-validation-3-7-years}}
+
+\textbf{Goals}: - Physically implement 2-3 component systems using the
+framework - Validate that standardized descriptions improve
+reproducibility - Develop interface adapters for common connection types
+- Build component registry infrastructure
+
+\textbf{Milestones}: - First physically assembled system from Bio-DSL
+specification - Reproducibility study: same spec, different labs -
+Component registry with 100+ entries - Integration with existing tools
+(SBOL, SBML)
+
+\hypertarget{phase-3-ecosystem-7-15-years}{%
+\subsubsection{Phase 3: Ecosystem (7-15
+years)}\label{phase-3-ecosystem-7-15-years}}
+
+\textbf{Goals}: - Establish community governance for standards -
+Commercial adoption in drug discovery, tissue engineering - Educational
+curriculum development - International standardization (ISO, IEEE)
+
+\textbf{Milestones}: - Industry consortium formation - First commercial
+products using Bio-Component standards - University courses on wetware
+engineering - Formal standardization process initiated
+
+\hypertarget{call-to-action}{%
+\subsection{8.3 Call to Action}\label{call-to-action}}
+
+Wetware Engineering requires contributions from multiple communities:
+
+\hypertarget{for-biologists-and-tissue-engineers}{%
+\subsubsection{For Biologists and Tissue
+Engineers}\label{for-biologists-and-tissue-engineers}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Describe your work} using Bio-Component Spec format
+\item
+  \textbf{Identify interface requirements} that would enable composition
+\item
+  \textbf{Share protocols} in machine-readable formats
+\item
+  \textbf{Provide feedback} on specification usability
+\end{itemize}
+
+\hypertarget{for-software-engineers}{%
+\subsubsection{For Software Engineers}\label{for-software-engineers}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Contribute tooling}: parsers, validators, editors
+\item
+  \textbf{Apply design patterns} to biological contexts
+\item
+  \textbf{Develop testing frameworks} adapted for biological variability
+\item
+  \textbf{Build infrastructure}: registries, package managers
+\end{itemize}
+
+\hypertarget{for-standards-bodies}{%
+\subsubsection{For Standards Bodies}\label{for-standards-bodies}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Engage early} in specification development
+\item
+  \textbf{Coordinate} with existing biological standards (SBOL, SBML)
+\item
+  \textbf{Consider} biological-specific requirements (ethics, safety)
+\end{itemize}
+
+\hypertarget{for-funding-agencies}{%
+\subsubsection{For Funding Agencies}\label{for-funding-agencies}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Support cross-disciplinary} methodology research
+\item
+  \textbf{Fund infrastructure} (registries, tools) not just applications
+\item
+  \textbf{Enable long-term} projects (this is a decades-long endeavor)
+\end{itemize}
+
+\hypertarget{limitations-and-caveats}{%
+\subsection{8.4 Limitations and Caveats}\label{limitations-and-caveats}}
+
+We acknowledge significant limitations:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \textbf{No experimental validation}: This paper proposes a framework;
+  we have not physically built systems using it.
+\item
+  \textbf{Specification incompleteness}: Bio-Component Spec v0.1 is a
+  starting point, not a finished standard.
+\item
+  \textbf{Tooling absence}: The envisioned toolchain does not yet exist.
+\item
+  \textbf{Community adoption uncertainty}: Standards succeed through
+  adoption, which cannot be guaranteed.
+\item
+  \textbf{Biological complexity}: Real biological systems may resist the
+  clean abstractions we propose.
+\end{enumerate}
+
+These limitations do not invalidate the approach---they define the work
+ahead.
+
+\hypertarget{closing-thoughts}{%
+\subsection{8.5 Closing Thoughts}\label{closing-thoughts}}
+
+Software engineering transformed from craft to discipline over five
+decades. The journey included: - Conceptual breakthroughs (structured
+programming, object-orientation) - Standardization efforts (ASCII,
+TCP/IP, HTTP) - Tool development (compilers, IDEs, version control) -
+Community building (open source, Stack Overflow) - Educational
+formalization (CS degrees, bootcamps)
+
+Biological engineering stands at a similar inflection point. The
+question is not whether modularization will come to biology---the
+complexity of biological systems demands it---but how quickly and how
+well.
+
+We offer Wetware Engineering not as a finished solution, but as a
+\textbf{conceptual framework} and \textbf{conversation starter}. The
+goal is to accelerate the transition from artisanal biological
+construction to systematic biological engineering.
+
+\begin{quote}
+``Software engineering took 50 years to evolve from monolithic
+applications to microservices architecture. We hope biological
+engineering won't need another 50 years.''
+\end{quote}
+
+The tools of software engineering---abstraction, modularity,
+standardization, composition---are not specific to silicon. They are
+\textbf{general principles of managing complexity}. Biology is complex.
+These principles can help.
+
+The future of biological engineering is modular. The question is: will
+we design that future deliberately, or stumble into it accidentally?
+
+We choose to design.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{acknowledgments}{%
+\subsection{Acknowledgments}\label{acknowledgments}}
+
+{[}To be added{]}
+
+\hypertarget{author-contributions}{%
+\subsection{Author Contributions}\label{author-contributions}}
+
+{[}Author name{]} conceived the Wetware Engineering concept, designed
+the technical specifications, and wrote the manuscript.
+
+\hypertarget{competing-interests}{%
+\subsection{Competing Interests}\label{competing-interests}}
+
+The author declares no competing interests.
+
+\hypertarget{data-availability}{%
+\subsection{Data Availability}\label{data-availability}}
+
+All specifications and examples are available at:
+https://github.com/tukuaiai/wetware-engineering
+
+\hypertarget{references}{%
+\subsection{References}\label{references}}
+
+{[}See separate references section{]} \# References
+
+\hypertarget{software-engineering-foundations}{%
+\subsection{Software Engineering
+Foundations}\label{software-engineering-foundations}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Parnas, D. L. (1972). On the criteria to be used in decomposing
+  systems into modules. \emph{Communications of the ACM}, 15(12),
+  1053-1058.
+\item
+  Dijkstra, E. W. (1968). Go to statement considered harmful.
+  \emph{Communications of the ACM}, 11(3), 147-148.
+\item
+  Gamma, E., Helm, R., Johnson, R., \& Vlissides, J. (1994).
+  \emph{Design Patterns: Elements of Reusable Object-Oriented Software}.
+  Addison-Wesley.
+\item
+  Martin, R. C. (2003). \emph{Agile Software Development: Principles,
+  Patterns, and Practices}. Prentice Hall.
+\item
+  Fowler, M. (2010). \emph{Domain-Specific Languages}. Addison-Wesley.
+\item
+  Brooks, F. P. (1975). \emph{The Mythical Man-Month: Essays on Software
+  Engineering}. Addison-Wesley.
+\item
+  Newman, S. (2015). \emph{Building Microservices: Designing
+  Fine-Grained Systems}. O'Reilly Media.
+\item
+  Preston-Werner, T. (2013). Semantic Versioning 2.0.0.
+  https://semver.org/
+\end{enumerate}
+
+\hypertarget{synthetic-biology-and-standardization-1}{%
+\subsection{Synthetic Biology and
+Standardization}\label{synthetic-biology-and-standardization-1}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{8}
+\item
+  Endy, D. (2005). Foundations for engineering biology. \emph{Nature},
+  438(7067), 449-453.
+\item
+  Canton, B., Labno, A., \& Endy, D. (2008). Refinement and
+  standardization of synthetic biological parts and devices.
+  \emph{Nature Biotechnology}, 26(7), 787-793.
+\item
+  Galdzicki, M., Clancy, K. P., Oberortner, E., et al.~(2014). The
+  Synthetic Biology Open Language (SBOL) provides a community standard
+  for communicating designs in synthetic biology. \emph{Nature
+  Biotechnology}, 32(6), 545-550.
+\item
+  Beal, J., Nguyen, T., Gorochowski, T. E., et al.~(2020). Communicating
+  structure and function in synthetic biology diagrams. \emph{ACS
+  Synthetic Biology}, 9(8), 2025-2040.
+\item
+  Knight, T. (2003). Idempotent vector design for standard assembly of
+  BioBricks. \emph{MIT Artificial Intelligence Laboratory}.
+\end{enumerate}
+
+\hypertarget{organoids-and-tissue-engineering}{%
+\subsection{Organoids and Tissue
+Engineering}\label{organoids-and-tissue-engineering}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{13}
+\item
+  Lancaster, M. A., \& Knoblich, J. A. (2014). Organogenesis in a dish:
+  Modeling development and disease using organoid technologies.
+  \emph{Science}, 345(6194), 1247125.
+\item
+  Takebe, T., \& Wells, J. M. (2019). Organoids by design.
+  \emph{Science}, 364(6444), 956-959.
+\item
+  Clevers, H. (2016). Modeling development and disease with organoids.
+  \emph{Cell}, 165(7), 1586-1597.
+\item
+  Rossi, G., Manfrin, A., \& Lutolf, M. P. (2018). Progress and
+  potential in organoid research. \emph{Nature Reviews Genetics},
+  19(11), 671-687.
+\end{enumerate}
+
+\hypertarget{organ-on-chip}{%
+\subsection{Organ-on-Chip}\label{organ-on-chip}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{17}
+\item
+  Bhatia, S. N., \& Ingber, D. E. (2014). Microfluidic organs-on-chips.
+  \emph{Nature Biotechnology}, 32(8), 760-772.
+\item
+  Huh, D., Matthews, B. D., Mammoto, A., et al.~(2010). Reconstituting
+  organ-level lung functions on a chip. \emph{Science}, 328(5986),
+  1662-1668.
+\item
+  Ronaldson-Bouchard, K., \& Vunjak-Novakovic, G. (2018).
+  Organs-on-a-chip: A fast track for engineered human tissues in drug
+  development. \emph{Cell Stem Cell}, 22(3), 310-324.
+\end{enumerate}
+
+\hypertarget{systems-biology-modeling-1}{%
+\subsection{Systems Biology Modeling}\label{systems-biology-modeling-1}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{20}
+\item
+  Hucka, M., Finney, A., Sauro, H. M., et al.~(2003). The systems
+  biology markup language (SBML): A medium for representation and
+  exchange of biochemical network models. \emph{Bioinformatics}, 19(4),
+  524-531.
+\item
+  Lloyd, C. M., Halstead, M. D., \& Nielsen, P. F. (2004). CellML: Its
+  future, present and past. \emph{Progress in Biophysics and Molecular
+  Biology}, 85(2-3), 433-450.
+\end{enumerate}
+
+\hypertarget{biohybrid-systems-and-biorobotics}{%
+\subsection{Biohybrid Systems and
+Biorobotics}\label{biohybrid-systems-and-biorobotics}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{22}
+\item
+  Raman, R., \& Bashir, R. (2017). Biomimicry, biofabrication, and
+  biohybrid systems: The emergence and evolution of biological design.
+  \emph{Advanced Healthcare Materials}, 6(20), 1700496.
+\item
+  Ricotti, L., Trimmer, B., Feinberg, A. W., et al.~(2017). Biohybrid
+  actuators for robotics: A review of devices actuated by living cells.
+  \emph{Science Robotics}, 2(12), eaaq0495.
+\item
+  Park, S. J., Gazzola, M., Park, K. S., et al.~(2016). Phototactic
+  guidance of a tissue-engineered soft-robotic ray. \emph{Science},
+  353(6295), 158-162.
+\item
+  Cvetkovic, C., Raman, R., Chan, V., et al.~(2014). Three-dimensionally
+  printed biological machines powered by skeletal muscle.
+  \emph{Proceedings of the National Academy of Sciences}, 111(28),
+  10125-10130.
+\end{enumerate}
+
+\hypertarget{brain-computer-interfaces}{%
+\subsection{Brain-Computer Interfaces}\label{brain-computer-interfaces}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{26}
+\item
+  Musk, E., \& Neuralink. (2019). An integrated brain-machine interface
+  platform with thousands of channels. \emph{Journal of Medical Internet
+  Research}, 21(10), e16194.
+\item
+  Lebedev, M. A., \& Nicolelis, M. A. (2017). Brain-machine interfaces:
+  From basic science to neuroprostheses and neurorehabilitation.
+  \emph{Physiological Reviews}, 97(2), 767-837.
+\end{enumerate}
+
+\hypertarget{ethics-and-governance}{%
+\subsection{Ethics and Governance}\label{ethics-and-governance}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{28}
+\item
+  Yuste, R., Goering, S., Arcas, B. A. Y., et al.~(2017). Four ethical
+  priorities for neurotechnologies and AI. \emph{Nature}, 551(7679),
+  159-163.
+\item
+  Ienca, M., \& Andorno, R. (2017). Towards new human rights in the age
+  of neuroscience and neurotechnology. \emph{Life Sciences, Society and
+  Policy}, 13(1), 5.
+\item
+  Hyun, I., Scharf-Deering, J. C., \& Lunshof, J. E. (2020). Ethical
+  issues related to brain organoid research. \emph{Brain Research},
+  1732, 146653.
+\end{enumerate}
+
+\hypertarget{general-references}{%
+\subsection{General References}\label{general-references}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{31}
+\item
+  Simon, H. A. (1996). \emph{The Sciences of the Artificial} (3rd ed.).
+  MIT Press.
+\item
+  Alexander, C., Ishikawa, S., \& Silverstein, M. (1977). \emph{A
+  Pattern Language: Towns, Buildings, Construction}. Oxford University
+  Press.
+\item
+  Kuhn, T. S. (1962). \emph{The Structure of Scientific Revolutions}.
+  University of Chicago Press.
+\end{enumerate}
+
+\end{document}
