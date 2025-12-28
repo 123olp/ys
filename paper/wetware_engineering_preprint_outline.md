@@ -1,424 +1,590 @@
-# Wetware Engineering: A Software-Inspired Paradigm for Modular Biological System Construction
+# Wetware Engineering: Applying Software Engineering Paradigms to Biological System Construction
 
-**Preprint Draft v0.1**
+**A Cross-Disciplinary Methodology for Modular Life Systems**
+
+**Preprint Draft v0.2**
 
 ---
 
 ## 论文元信息
 
-- **标题**: Wetware Engineering: A Software-Inspired Paradigm for Modular Biological System Construction
-- **中文标题**: 湿件工程：基于软件工程范式的模块化生物系统构建方法
+- **标题**: Wetware Engineering: Applying Software Engineering Paradigms to Biological System Construction
+- **副标题**: A Cross-Disciplinary Methodology for Modular Life Systems
+- **中文标题**: 湿件工程：将软件工程范式应用于生物系统构建——一种跨学科的模块化生命系统方法论
 - **作者**: [作者姓名]
 - **机构**: Independent Researcher / Wetware Engineering Project
 - **通讯邮箱**: [邮箱]
 - **GitHub**: https://github.com/tukuaiai/wetware-engineering
-- **目标平台**: bioRxiv (Systems Biology / Synthetic Biology)
-- **预计篇幅**: 8-12页
+- **目标平台**: 
+  - arXiv: cs.SE (Software Engineering) + q-bio.OT (交叉)
+  - bioRxiv: Systems Biology
+- **预计篇幅**: 10-14页
+- **定位**: 方法论/范式提案 (Methodology / Paradigm Proposal)
 
 ---
 
 ## Abstract (摘要)
 
-**[250词以内]**
+**[300词，强调跨学科方法论创新]**
 
-**Background**: Current biological engineering remains trapped in a "monolithic architecture" paradigm, where each tissue, organoid, or biological system must be constructed from scratch. Unlike software engineering, which underwent a modular revolution over the past five decades, biological engineering lacks standardized interfaces, dependency management, version control, and composition languages.
+Software engineering underwent a paradigm shift from monolithic, handcrafted programs to modular, composable systems over five decades—a transformation enabled by standardized interfaces, package managers, version control, and runtime orchestration. Biological engineering, despite remarkable advances in synthetic biology, organoids, and tissue engineering, remains trapped in an analogous "pre-modular" era: each biological system is constructed from scratch, results are difficult to reproduce across laboratories, and there exists no universal language for describing biological component composition.
 
-**Objective**: We propose Wetware Engineering, a new engineering paradigm that decouples biological capabilities from fixed organisms into reusable "bio-components" with standardized interfaces, enabling free composition, testing, and iteration using software engineering principles.
+We propose **Wetware Engineering**, a cross-disciplinary methodology that systematically transfers software engineering's core abstractions—modularity, interface standardization, dependency management, and runtime orchestration—to biological system construction. This is not merely applying computational tools to biology, but fundamentally reconceptualizing how living systems should be designed, described, and assembled.
 
-**Methods**: We define three core elements: (1) Bio-Component Specification for standardized module description; (2) Bio-Interface Protocol for plug-and-play connectivity across different sources; (3) Bio-DSL (Domain-Specific Language) for declarative system composition. We also propose a Bio-Runtime architecture for orchestration, resource management, and fault isolation.
+Our contribution is threefold: (1) **Conceptual Framework**: We define the Component-Interface-Runtime triad as the foundational abstraction for modular biological systems, drawing explicit parallels to software architecture patterns. (2) **Technical Specifications**: We propose Bio-Component Spec, a standardized schema for describing biological modules, and Bio-DSL, a domain-specific language for declarative system composition—both designed with software engineering best practices. (3) **Paradigm Analysis**: We systematically analyze how software engineering concepts (APIs, versioning, testing, CI/CD) map to biological contexts, identifying both direct translations and fundamental differences requiring novel solutions.
 
-**Results**: We present complete technical specifications including component metadata structures, four interface categories (power, signal, isolation, mechanical), DSL syntax with working examples, and a certification framework. A reference implementation of a dual-muscle antagonist actuator demonstrates the paradigm's feasibility.
+Wetware Engineering represents a paradigm-level contribution: shifting biological system construction from "artisanal replication" to "engineered composition." While implementation faces significant biological challenges, establishing this conceptual and methodological foundation is a necessary first step toward reproducible, iterable, and collaborative biological system development.
 
-**Conclusions**: Wetware Engineering represents a paradigm shift from "whole replication" to "functional assembly" in biological system construction. While significant technical challenges remain, this framework provides a foundation for reproducible, iterable, and shareable biological system development, potentially accelerating innovation across drug discovery, soft robotics, and regenerative medicine.
-
-**Keywords**: Wetware Engineering, Bio-Component, Modular Biology, Bio-DSL, Synthetic Biology, Systems Biology, Biological Interfaces
+**Keywords**: Software Engineering, Biological Systems, Cross-Disciplinary Methodology, Modular Design, Domain-Specific Language, Systems Biology, Paradigm Transfer
 
 ---
 
-## 1. Introduction (引言)
+## 1. Introduction: The Case for Paradigm Transfer (引言：范式迁移的必要性)
 
-### 1.1 The Software Engineering Revolution
+### 1.1 Software Engineering's Modular Revolution
 
-**[阐述软件工程的模块化历程]**
+**[软件工程的模块化革命历程——作为方法论源头]**
 
-- 1970s: 软件危机，每个程序从零开始
-- 1980s-90s: 模块化、面向对象、接口抽象
-- 2000s: 开源生态（Linux, Apache）
-- 2010s: 包管理器（npm, pip）、容器化（Docker）、微服务
-- 2020s: 成熟的软件生态系统
+软件工程的历史是一部**抽象层次不断提升**的历史：
 
-**关键转折点**: 从"手工艺"到"工程化"的范式转移
+| 时代 | 抽象层次 | 关键创新 | 影响 |
+|-----|---------|---------|------|
+| 1950s | 机器码 | 汇编语言 | 人类可读 |
+| 1960s | 过程 | 结构化编程 | 控制流抽象 |
+| 1970s | 模块 | 信息隐藏、接口 | 复杂性管理 |
+| 1980s | 对象 | 面向对象编程 | 数据+行为封装 |
+| 1990s | 组件 | COM/CORBA/JavaBeans | 二进制复用 |
+| 2000s | 服务 | SOA/Web Services | 网络化组合 |
+| 2010s | 微服务 | Docker/Kubernetes | 独立部署、弹性扩展 |
+| 2020s | 函数 | Serverless/FaaS | 极致细粒度 |
 
-### 1.2 The Current State of Biological Engineering
+**核心洞察**：每一次抽象层次的提升，都带来了：
+- 复用性提升
+- 协作效率提升
+- 系统复杂度可管理性提升
 
-**[阐述生物工程的"单体架构"困境]**
+### 1.2 Biological Engineering's "Pre-Modular" State
 
-- **只能克隆，无法组合**: 想要肌肉必须培养整块组织
-- **只能整体替换，无法模块升级**: 类器官成果无法跨实验室复用
-- **只能实验，无法工程化**: 
-  - 无版本管理
-  - 无依赖声明
-  - 无测试标准
-  - 无组合语言
+**[生物工程的"前模块化"状态——问题诊断]**
 
-**类比**: 如同每个程序员必须从CPU开始造计算机
+对比软件工程的成熟度模型，当前生物工程停留在**1960s-1970s水平**：
 
-### 1.3 The Gap: Why Biology Needs Software Thinking
+| 软件工程概念 | 生物工程现状 | 差距 |
+|-------------|-------------|------|
+| 标准库 (stdlib) | 无 | 每个实验室自建"库" |
+| 包管理器 (npm/pip) | 无 | 无法声明依赖 |
+| 版本控制 (git) | 无 | "这批细胞和上批不一样" |
+| API 文档 | 无 | "问原作者怎么培养" |
+| 单元测试 | 无 | "能用多久？大概一周" |
+| CI/CD | 无 | 无自动化验证流程 |
+| 容器化 (Docker) | 无 | 环境不可复现 |
 
-**[分析现有方向的局限]**
+**根本问题**：生物系统被视为**不可分割的整体**，而非**可组合的模块集合**。
 
-| 领域 | 贡献 | 缺失 |
-|-----|------|------|
-| 类器官 | 创建模块 | 无统一接口、无编排体系 |
-| 生物机器人 | 创建执行器 | 无模块库、无版本管理 |
-| 合成生物学 | 基因级编程 | 缺乏器官/功能级编程 |
-| 脑机接口 | 信号通道 | 缺乏模块组合范式 |
+### 1.3 Why Paradigm Transfer, Not Just Tool Application
 
-### 1.4 Our Contribution
+**[为什么是范式迁移，而非仅仅工具应用]**
 
-**[明确本文贡献]**
+现有"计算生物学"主要是：
+- 用计算机**分析**生物数据
+- 用算法**模拟**生物过程
+- 用软件**控制**生物实验
 
-1. **概念框架**: 提出湿件工程范式，定义 Component-Interface-Runtime 三层架构
-2. **技术规范**: Bio-Component Spec v0.1，标准化模块描述格式
-3. **组合语言**: Bio-DSL，声明式生物系统组合语言
-4. **参考实现**: 双肌肉拮抗执行器示例
-5. **实施路线图**: 从增强到模块化到互联化的三阶段路径
+我们提出的是根本不同的方向：
+
+> **用软件工程的设计哲学重新定义生物系统的构建方式本身。**
+
+| 层次 | 现有方法 | 湿件工程 |
+|-----|---------|---------|
+| 工具层 | 用软件分析生物 | — |
+| 方法层 | 用算法优化实验 | — |
+| **范式层** | — | **用软件思维重构生物工程** |
+
+### 1.4 Contribution and Paper Structure
+
+**[贡献与论文结构]**
+
+**本文贡献**：
+
+1. **范式定义**：首次系统性提出将软件工程核心范式迁移到生物系统构建
+2. **抽象框架**：定义 Component-Interface-Runtime 三层抽象
+3. **技术规范**：Bio-Component Spec + Bio-DSL
+4. **映射分析**：软件工程概念到生物工程的系统性映射
+5. **差异识别**：识别需要创新解决方案的根本性差异
+
+**论文结构**：
+- §2: 核心抽象与范式定义
+- §3: 软件工程概念的系统性映射
+- §4: Bio-Component 规范设计
+- §5: Bio-DSL 语言设计
+- §6: 差异与挑战分析
+- §7: 相关工作比较
+- §8: 结论与展望
 
 ---
 
-## 2. The Wetware Engineering Paradigm (湿件工程范式)
+## 2. Core Abstractions: The Component-Interface-Runtime Triad (核心抽象：组件-接口-运行时三元组)
 
-### 2.1 Core Philosophy
+### 2.1 Abstraction as the Essence of Engineering
 
-**[核心理念]**
+**[抽象是工程的本质]**
 
-> 不是"把生物变成软件"，而是**用软件工程的智慧重构生命系统的构建方式**。
+引用 Dijkstra: "The purpose of abstraction is not to be vague, but to create a new semantic level in which one can be absolutely precise."
 
-**核心主张**:
-- 把生命能力从个体中解耦为可复用模块
-- 用标准接口实现跨来源模块的即插即用
-- 用运行时系统实现调度、监控、故障隔离
+软件工程的成功源于**正确的抽象边界**：
+- 函数抽象了指令序列
+- 对象抽象了数据+行为
+- 接口抽象了实现细节
+- 服务抽象了部署位置
 
-### 2.2 The Modularization Triad
+**核心问题**：生物系统的正确抽象边界是什么？
 
-**[模块化三件套]**
+### 2.2 Component: The Unit of Biological Reuse
 
-#### 2.2.1 Component (模块)
+**[组件：生物复用的单元]**
 
-定义：可独立存在、可被供能、可被控制、可输出功能的生物单元
+**定义**：Bio-Component 是一个可独立存在、可被供能、可被控制、可输出功能的生物单元。
 
-**类型分类**:
-- Actuator（执行器）: 肌肉、泵
-- Sensor（传感器）: 神经、感光
-- Processor（处理器）: 神经节、类脑
-- Metabolic（代谢单元）: 肝、肾
-- Structural（结构支撑）: 骨骼、外壳
+**与软件组件的类比**：
 
-#### 2.2.2 Interface (接口)
+| 软件组件属性 | Bio-Component 对应 |
+|-------------|-------------------|
+| 封装 (Encapsulation) | 物理边界、膜结构 |
+| 接口 (Interface) | 输入/输出端口定义 |
+| 状态 (State) | 生理状态、活性指标 |
+| 生命周期 (Lifecycle) | 培养、激活、维持、衰退 |
+| 依赖 (Dependencies) | 营养、氧气、信号输入 |
 
-定义：让不同物种/来源模块能"插上就能用"的标准
+**组件类型学**（借鉴软件架构模式）：
 
-**四大接口类型**:
-1. Power Interface（供能接口）: 灌流/营养/氧气
-2. Signal Interface（信号接口）: 电/化学/光/机械
-3. Isolation Interface（隔离接口）: 免疫屏障/毒性隔离
-4. Mechanical Interface（机械接口）: 力传递/结构耦合
+| 类型 | 软件类比 | 生物实例 |
+|-----|---------|---------|
+| Actuator | Output Device Driver | 肌肉、腺体 |
+| Sensor | Input Device Driver | 感光细胞、机械感受器 |
+| Processor | CPU/Logic Unit | 神经节、类脑器官 |
+| Storage | Memory/Database | 脂肪组织、骨髓 |
+| Connector | Network Interface | 血管、神经纤维 |
 
-#### 2.2.3 Runtime (运行时)
+### 2.3 Interface: The Contract for Composition
 
-定义：类似操作系统，负责模块的调度与协调
+**[接口：组合的契约]**
 
-**核心功能**:
-- 模块调度与协调（时序、反馈控制）
-- 资源管理（供能、灌流、散热）
-- 安全与故障隔离
+**软件工程的接口哲学**：
+- "Program to an interface, not an implementation" (GoF)
+- 接口是**契约**，定义了组件间交互的**规则**而非**实现**
+
+**Bio-Interface 的四个维度**：
+
+```
+┌─────────────────────────────────────────────┐
+│              Bio-Interface                   │
+├─────────────┬─────────────┬─────────────────┤
+│   Power     │   Signal    │   Isolation     │
+│  (能量流)   │  (信息流)   │   (屏障)        │
+├─────────────┴─────────────┴─────────────────┤
+│              Mechanical (力学耦合)           │
+└─────────────────────────────────────────────┘
+```
+
+**接口标准化的价值**（类比 USB 的成功）：
+- USB 之前：每个设备专用接口
+- USB 之后：即插即用、生态繁荣
+
+### 2.4 Runtime: The Orchestration Layer
+
+**[运行时：编排层]**
+
+**软件运行时的职责**：
+- 资源管理（内存、CPU、网络）
+- 生命周期管理（启动、停止、重启）
+- 故障处理（异常捕获、恢复）
 - 监控与日志
 
-### 2.3 Mapping Software Engineering to Biology
+**Bio-Runtime 的对应职责**：
 
-**[软件工程方法的映射]**
-
-| 软件工程 | 湿件工程 |
-|---------|---------|
-| Requirements | 能力需求（力量、感知、代谢） |
-| Architecture | 模块选择 + 拓扑设计 |
-| API/Protocol | Bio-Interface 协议 |
-| Integration Testing | 模块组合兼容性测试 |
-| Version Control | 模块版本 + 组合版本 |
-| CI/CD | Bio-CI 持续集成 |
+| 软件运行时 | Bio-Runtime |
+|-----------|-------------|
+| 内存分配 | 营养分配 |
+| CPU 调度 | 活动时序控制 |
+| 网络 I/O | 信号路由 |
+| 健康检查 | 活性监测 |
+| 自动重启 | 再生/替换触发 |
+| 日志系统 | 状态记录 |
 
 ---
 
-## 3. Bio-Component Specification (生物组件规范)
+## 3. Systematic Mapping: Software Engineering → Biological Engineering (系统性映射)
 
-### 3.1 Metadata Structure
+### 3.1 Mapping Framework
 
-**[组件元数据结构 - YAML格式]**
+**[映射框架]**
+
+我们提出三类映射关系：
+
+| 映射类型 | 定义 | 示例 |
+|---------|------|------|
+| **Direct** | 概念可直接迁移 | 版本号、依赖声明 |
+| **Analogous** | 需要适配但本质相同 | 测试（功能测试→活性测试） |
+| **Novel** | 需要全新解决方案 | 免疫兼容性（软件无对应） |
+
+### 3.2 Direct Mappings
+
+**[直接映射]**
+
+| 软件工程 | 湿件工程 | 映射说明 |
+|---------|---------|---------|
+| Semantic Versioning | Bio-Versioning | major.minor.patch 完全适用 |
+| Package Manifest | Component Manifest | 元数据结构可直接借用 |
+| Dependency Declaration | Dependency Declaration | "requires: oxygen >= 20%" |
+| README/Documentation | Component Documentation | 使用说明、限制条件 |
+| License | Biological License | 使用权、修改权、共享条款 |
+
+### 3.3 Analogous Mappings
+
+**[类比映射]**
+
+| 软件工程 | 湿件工程 | 适配要点 |
+|---------|---------|---------|
+| Unit Test | Viability Test | 测试对象从函数→细胞/组织 |
+| Integration Test | Compatibility Test | 测试组合后的相互作用 |
+| Stress Test | Endurance Test | 长期运行、极端条件 |
+| API Contract | Interface Protocol | 从数据类型→物理/化学参数 |
+| Error Handling | Failure Mode Handling | 从异常→坏死/炎症/失控 |
+| Logging | Biomarker Logging | 从文本日志→生理指标时序 |
+
+### 3.4 Novel Challenges Requiring New Solutions
+
+**[需要创新解决方案的新挑战]**
+
+| 挑战 | 软件无对应 | 需要的创新 |
+|-----|-----------|-----------|
+| 免疫排斥 | — | Immune Compatibility Protocol |
+| 信号串扰 | — | Biological Noise Isolation |
+| 代谢耦合 | — | Metabolic Dependency Graph |
+| 活体降解 | — | Degradation Prediction Model |
+| 伦理约束 | — | Ethical Constraint Language |
+
+---
+
+## 4. Bio-Component Specification: Design Rationale (Bio-Component 规范：设计原理)
+
+### 4.1 Design Principles from Software Engineering
+
+**[来自软件工程的设计原则]**
+
+| 原则 | 软件来源 | Bio-Component 应用 |
+|-----|---------|-------------------|
+| 单一职责 | SOLID | 一个组件只做一件事 |
+| 开闭原则 | SOLID | 对扩展开放，对修改封闭 |
+| 接口隔离 | SOLID | 细粒度接口定义 |
+| 依赖倒置 | SOLID | 依赖抽象接口而非具体实现 |
+| 约定优于配置 | Rails | 合理默认值减少配置负担 |
+
+### 4.2 Specification Schema
+
+**[规范模式]**
+
+借鉴 OpenAPI/Swagger 的设计：
 
 ```yaml
-component:
-  id: string                    # 唯一标识符
-  name: string                  # 人类可读名称
-  version: semver               # 语义化版本号
-  type: enum                    # 组件类型
-  source:                       # 来源信息
-    organism: string
-    tissue_type: string
-    cell_line: string
-    genetic_modification: []
-  function:                     # 功能定义
-    primary: string
-    capabilities: []
-    limitations: []
+bio-component: "1.0"
+info:
+  id: "muscle-actuator-human-skeletal"
+  name: "Human Skeletal Muscle Actuator"
+  version: "2.3.1"
+  license: "CC-BY-SA-4.0"
+  
+source:
+  organism: "Homo sapiens"
+  tissue: "skeletal muscle"
+  cell_line: "primary myocytes"
+  
+interface:
+  inputs:
+    - id: "electrical_stim"
+      type: "electrical"
+      voltage: { min: 0, max: 5, unit: "V" }
+      frequency: { min: 1, max: 100, unit: "Hz" }
+  outputs:
+    - id: "force_output"
+      type: "mechanical"
+      range: { min: 0, max: 50, unit: "mN" }
+      
+requirements:
+  temperature: { optimal: 37, tolerance: 2, unit: "°C" }
+  pH: { optimal: 7.4, tolerance: 0.2 }
+  oxygen: { min: 15, unit: "%" }
+  
+performance:
+  response_time: { typical: 150, unit: "ms" }
+  lifetime: { mean: 14, unit: "days" }
+  failure_modes:
+    - mode: "fatigue"
+      probability: 0.3
+      detection: "force_decline > 20%"
 ```
 
-### 3.2 Interface Definition
+### 4.3 Versioning Strategy
 
-**[接口定义规范]**
+**[版本策略]**
 
-- 输入接口：类型、参数范围、响应时间、是否必需
-- 输出接口：类型、精度、延迟、监测要求
+采用语义化版本 (SemVer) 并扩展：
 
-### 3.3 Environmental Requirements
+- **Major**: 接口不兼容变更（如输入类型改变）
+- **Minor**: 向后兼容的功能增强（如新增输出端口）
+- **Patch**: 向后兼容的优化（如响应时间改善）
+- **Build Metadata**: 培养批次、基因背景
 
-**[环境需求规范]**
-
-- 物理环境：温度、压力、湿度
-- 化学环境：pH、渗透压、氧气、葡萄糖
-- 生物相容性：免疫隔离、排斥风险、毒性代谢物
-
-### 3.4 Performance Metrics
-
-**[性能指标规范]**
-
-- 功能性能：输出范围、响应时间、精度、重复性
-- 可靠性：寿命、失效率、失效模式
-- 资源消耗：能量、营养、废物产生
-
-### 3.5 Testing and Certification
-
-**[测试与认证体系]**
-
-- 单元测试：单组件功能验证
-- 集成测试：组合兼容性验证
-- 认证等级：Level 0-3（概念验证 → 生产就绪）
+示例：`2.3.1+batch20251228.donor42`
 
 ---
 
-## 4. Bio-DSL: A Domain-Specific Language (生物领域特定语言)
+## 5. Bio-DSL: Language Design Rationale (Bio-DSL：语言设计原理)
 
-### 4.1 Design Principles
+### 5.1 Why a DSL?
 
-**[设计原则]**
+**[为什么需要 DSL]**
 
-- 声明式：描述"是什么"而非"怎么做"
-- 可读性：接近自然语言
-- 可验证：可静态检查依赖和兼容性
-- 可执行：可生成运行时配置
+引用 Martin Fowler: "A domain-specific language is a computer language specialized to a particular application domain."
 
-### 4.2 Syntax Specification
+**DSL 的价值**：
+- 提高领域专家的可读性
+- 约束表达范围，减少错误
+- 支持领域特定的验证和优化
 
-**[语法规范]**
+**Bio-DSL 的目标**：
+- 生物学家能读懂
+- 工程师能实现
+- 机器能验证
 
-```
-// 组件声明
-COMPONENT <id> FROM <source> VERSION <version> AS <alias>
+### 5.2 Language Design Decisions
 
-// 接口连接
-CONNECT <component1>.<port> TO <component2>.<port>
-  [VIA <adapter>]
-  [WITH {parameters}]
+**[语言设计决策]**
 
-// 运行时配置
+| 决策点 | 选择 | 理由 |
+|-------|------|------|
+| 范式 | 声明式 | 描述"是什么"而非"怎么做" |
+| 语法风格 | 类 SQL/YAML | 降低学习曲线 |
+| 类型系统 | 静态强类型 | 编译时捕获接口不匹配 |
+| 单位系统 | 内置物理单位 | 避免单位转换错误 |
+
+### 5.3 Syntax Overview
+
+**[语法概览]**
+
+```biodsl
+// 模块导入（类似 import）
+COMPONENT flexor FROM "human-skeletal@^2.3" AS muscle_a
+COMPONENT sensor FROM "piezo-sensor@~1.1" AS force_sensor
+
+// 连接声明（类似依赖注入）
+CONNECT muscle_a.force_output TO force_sensor.input
+  WITH { gain: 1.5 }
+
+// 运行时配置（类似 docker-compose）
 RUNTIME {
-  perfusion: {...}
-  control: {...}
-  monitoring: {...}
+  perfusion: {
+    medium: "DMEM",
+    flow_rate: 0.5 mL/min,
+    temperature: 37 °C
+  }
 }
 
-// 控制逻辑
-ON <event> DO <action>
-WHEN <condition> THEN <action>
-EVERY <interval> DO <action>
+// 行为定义（类似事件处理）
+ON fatigue_detected DO {
+  REDUCE stimulation_frequency BY 20%
+  LOG "Fatigue mitigation activated"
+}
+
+// 测试声明（类似单元测试）
+TEST response_time {
+  GIVEN stimulation AT 10 Hz
+  EXPECT force_output WITHIN 200 ms
+}
 ```
 
-### 4.3 Reference Example: Dual-Muscle Actuator
+### 5.4 Comparison with Existing Biological Languages
 
-**[参考示例：双肌肉执行器]**
+**[与现有生物语言的比较]**
 
-完整的 Bio-DSL 代码示例，包括：
-- 4个组件声明（flexor, extensor, sensor, controller）
-- 2个适配器声明（perfusion, signal converter）
-- 连接拓扑
-- 运行时配置
-- 控制逻辑
-- 测试协议
-
----
-
-## 5. Bio-Adapter Standard (生物适配器标准)
-
-### 5.1 Adapter Classification
-
-**[适配器分类]**
-
-- Power/Perfusion Adapters（供能适配器）
-- Signal Conversion Adapters（信号转换适配器）
-- Immune Isolation Adapters（免疫隔离适配器）
-- Mechanical Coupling Adapters（机械耦合适配器）
-
-### 5.2 Adapter Specification Format
-
-**[适配器规范格式]**
-
-每类适配器的标准描述结构
+| 语言 | 层次 | 目的 | 与 Bio-DSL 关系 |
+|-----|------|------|----------------|
+| SBOL | 基因 | DNA 序列描述 | 更底层，可作为组件内部描述 |
+| SBML | 分子 | 生化反应网络 | 更底层，可描述组件内部动力学 |
+| CellML | 细胞 | 细胞模型 | 可作为组件行为模型 |
+| **Bio-DSL** | **器官/系统** | **组件组合** | **更高层次的组合语言** |
 
 ---
 
-## 6. Implementation Roadmap (实施路线图)
+## 6. Fundamental Differences and Open Challenges (根本差异与开放挑战)
 
-### 6.1 Phase 1: Enhancement (2025-2035)
+### 6.1 Determinism vs. Stochasticity
 
-**[增强阶段]**
+**[确定性 vs 随机性]**
 
-- 目标：通过辅助设备增强现有能力
-- 关键技术：临床BCI、神经假体
-- 里程碑：首个符合规范的模块发布
+| 软件 | 生物 |
+|-----|------|
+| 函数调用必返回 | 细胞可能死亡 |
+| 相同输入→相同输出 | 生物变异性 |
+| 错误可精确定位 | 失效模式复杂 |
 
-### 6.2 Phase 2: Modularization (2035-2050)
+**应对策略**：引入概率性接口契约、统计性验收标准
 
-**[模块化阶段]**
+### 6.2 Discrete vs. Continuous
 
-- 目标：建立标准化接口生态
-- 关键技术：NIP v1.0、即插即用模块
-- 里程碑：模块仓库上线、100+认证模块
+**[离散 vs 连续]**
 
-### 6.3 Phase 3: Interconnection (2050-2070)
+| 软件 | 生物 |
+|-----|------|
+| 数字信号 | 模拟信号 |
+| 明确边界 | 渐变过渡 |
+| 即时切换 | 渐进变化 |
 
-**[互联化阶段]**
+**应对策略**：定义容忍区间、过渡时间参数
 
-- 目标：实现集体智能
-- 关键技术：神经互联网、多核心协作
-- 里程碑：首个多模块复杂系统
+### 6.3 Isolation vs. Coupling
 
----
+**[隔离 vs 耦合]**
 
-## 7. Discussion (讨论)
+| 软件 | 生物 |
+|-----|------|
+| 进程隔离 | 代谢耦合 |
+| 内存保护 | 信号串扰 |
+| 无副作用函数 | 系统性影响 |
 
-### 7.1 Technical Challenges
+**应对策略**：显式声明耦合关系、设计隔离适配器
 
-**[技术挑战]**
+### 6.4 The Immune System: No Software Equivalent
 
-- 生物系统的概率性 vs 软件的确定性
-- 接口标准化的复杂性（免疫、信号串扰）
-- 长期稳定性验证
-- 规模化生产
+**[免疫系统：软件无对应物]**
 
-### 7.2 Comparison with Existing Approaches
+这是最根本的差异。软件组件不会被"排斥"。
 
-**[与现有方法的比较]**
-
-- vs 合成生物学：层次不同（基因级 vs 器官级）
-- vs 组织工程：范式不同（整体培养 vs 模块组合）
-- vs 器官芯片：目标不同（体外模型 vs 可移植系统）
-
-### 7.3 Ethical Considerations
-
-**[伦理考量]**
-
-- 公平可及性：避免"生物特权阶层"
-- 安全性：故障模式和风险控制
-- 身份与自主：模块化对"自我"概念的影响
-
-### 7.4 Limitations
-
-**[局限性]**
-
-- 当前为理论框架，缺乏大规模实验验证
-- 接口标准化需要跨学科共识
-- 实施时间跨度长
+**需要的创新**：
+- Immune Compatibility Score
+- Isolation Adapter Specification
+- Rejection Risk Assessment Protocol
 
 ---
 
-## 8. Conclusion (结论)
+## 7. Related Work and Positioning (相关工作与定位)
 
-**[总结]**
+### 7.1 Synthetic Biology Standards
 
-湿件工程代表了生物系统构建从"整体复制"到"功能拼装"的范式转移。
+**[合成生物学标准]**
 
-**核心贡献**:
-1. 提出完整的模块化生物系统工程框架
-2. 定义 Bio-Component Spec 标准
-3. 设计 Bio-DSL 组合语言
-4. 提供参考实现和实施路线图
+- **SBOL**: 基因层面，与我们互补
+- **BioBricks**: 标准化 DNA 部件，启发了我们的组件思想
+- **iGEM Registry**: 社区驱动的部件库，是我们设想的生态原型
 
-**展望**:
-- 短期：建立标准、发布规范、寻找早期采用者
-- 中期：验证可行性、建立工具链
-- 长期：构建生态系统、实现愿景
+**定位**：我们在更高抽象层次（器官/系统级）工作
 
-> "软件用了30年从单体应用进化到微服务架构。生命工程的模块化革命，从今天开始。"
+### 7.2 Organ-on-Chip and Organoids
+
+**[器官芯片与类器官]**
+
+- 提供了"模块"的物理实现
+- 但缺乏标准化接口和组合语言
+- 我们提供的是**方法论框架**
+
+### 7.3 Systems Biology Modeling
+
+**[系统生物学建模]**
+
+- SBML, CellML 等关注**模拟**
+- 我们关注**构建**
+- 可以互补：用 SBML 描述组件内部，用 Bio-DSL 描述组件组合
+
+---
+
+## 8. Conclusion and Future Directions (结论与未来方向)
+
+### 8.1 Summary of Contributions
+
+**[贡献总结]**
+
+1. **范式级贡献**：首次系统性提出将软件工程范式迁移到生物系统构建
+2. **抽象框架**：Component-Interface-Runtime 三元组
+3. **技术规范**：Bio-Component Spec v0.1
+4. **领域语言**：Bio-DSL 设计
+5. **映射分析**：软件→生物的系统性映射与差异识别
+
+### 8.2 The Path Forward
+
+**[前进路径]**
+
+| 阶段 | 时间 | 目标 |
+|-----|------|------|
+| 概念验证 | 1-2年 | 单个组件的规范化描述 |
+| 原型系统 | 3-5年 | 2-3个组件的组合验证 |
+| 生态建设 | 5-10年 | 组件仓库、工具链、社区 |
+
+### 8.3 Call to Action
+
+**[行动号召]**
+
+> "软件工程用了50年从手工艺走向工业化。我们希望生物工程不需要再等50年。"
+
+我们呼吁：
+- **生物学家**：用模块化思维设计实验
+- **工程师**：将软件最佳实践带入生物领域
+- **标准组织**：参与接口协议制定
+- **资助机构**：支持跨学科方法论研究
 
 ---
 
 ## References (参考文献)
 
-**[预计20-30篇]**
+### 软件工程基础
+1. Parnas, D. L. (1972). On the criteria to be used in decomposing systems into modules. *CACM*.
+2. Gamma, E., et al. (1994). *Design Patterns: Elements of Reusable Object-Oriented Software*.
+3. Fowler, M. (2010). *Domain-Specific Languages*. Addison-Wesley.
+4. Newman, S. (2015). *Building Microservices*. O'Reilly.
 
-### 软件工程历史
-1. Brooks, F. P. (1975). The Mythical Man-Month.
-2. Parnas, D. L. (1972). On the criteria to be used in decomposing systems into modules. CACM.
-
-### 合成生物学
-3. Endy, D. (2005). Foundations for engineering biology. Nature.
-4. Andrianantoandro, E., et al. (2006). Synthetic biology: new engineering rules for an emerging discipline. Molecular Systems Biology.
+### 合成生物学与标准化
+5. Endy, D. (2005). Foundations for engineering biology. *Nature*.
+6. Canton, B., et al. (2008). Refinement and standardization of synthetic biological parts. *Nature Biotechnology*.
+7. Galdzicki, M., et al. (2014). The Synthetic Biology Open Language (SBOL). *Nature Biotechnology*.
 
 ### 类器官与组织工程
-5. Lancaster, M. A., & Knoblich, J. A. (2014). Organogenesis in a dish. Science.
-6. Takebe, T., & Wells, J. M. (2019). Organoids by design. Science.
+8. Lancaster, M. A., & Knoblich, J. A. (2014). Organogenesis in a dish. *Science*.
+9. Takebe, T., & Wells, J. M. (2019). Organoids by design. *Science*.
 
-### 脑机接口
-7. Musk, E., & Neuralink. (2019). An integrated brain-machine interface platform. bioRxiv.
-8. Lebedev, M. A., & Nicolelis, M. A. (2017). Brain-machine interfaces. Physiological Reviews.
+### 系统生物学建模
+10. Hucka, M., et al. (2003). The systems biology markup language (SBML). *Bioinformatics*.
 
 ### 生物机器人
-9. Raman, R., & Bashir, R. (2017). Biomimicry, biofabrication, and biohybrid systems. Advanced Healthcare Materials.
-10. Ricotti, L., et al. (2017). Biohybrid actuators for robotics. Science Robotics.
+11. Raman, R., & Bashir, R. (2017). Biomimicry, biofabrication, and biohybrid systems. *Advanced Healthcare Materials*.
 
-### 标准化与接口
-11. Galdzicki, M., et al. (2014). The Synthetic Biology Open Language (SBOL). Nature Biotechnology.
-12. Canton, B., et al. (2008). Refinement and standardization of synthetic biological parts. Nature Biotechnology.
-
-### 伦理与治理
-13. Yuste, R., et al. (2017). Four ethical priorities for neurotechnologies and AI. Nature.
-14. Ienca, M., & Andorno, R. (2017). Towards new human rights in the age of neuroscience. Life Sciences, Society and Policy.
+### 跨学科方法论
+12. Brooks, F. P. (1975). *The Mythical Man-Month*.
+13. Simon, H. A. (1996). *The Sciences of the Artificial*.
 
 ---
 
 ## Supplementary Materials (补充材料)
 
-### S1. Complete Bio-Component Spec Schema (YAML)
-### S2. Bio-DSL Grammar (BNF)
-### S3. Dual-Muscle Actuator Full Implementation
-### S4. Interface Compatibility Matrix
+- **S1**: Complete Bio-Component Spec JSON Schema
+- **S2**: Bio-DSL Formal Grammar (BNF)
+- **S3**: Software-to-Biology Mapping Table (Extended)
+- **S4**: Reference Implementation: Dual-Muscle Actuator
 
 ---
 
-## 作者贡献声明
+## 作者信息
 
-[作者姓名] 构思了湿件工程概念，设计了技术规范，撰写了全部文稿。
-
-## 利益冲突声明
-
-作者声明无利益冲突。
-
-## 数据可用性声明
-
-所有规范和代码可在 GitHub 获取：https://github.com/tukuaiai/wetware-engineering
+**[作者姓名]**
+Independent Researcher
+Wetware Engineering Project
+GitHub: https://github.com/tukuaiai/wetware-engineering
+Email: [邮箱]
+ORCID: [待注册]
 
 ---
 
-**文档版本**: Draft v0.1
-**字数估计**: 约8000词（正文）
-**预计页数**: 10-12页
+**文档版本**: Draft v0.2
+**更新日期**: 2025-12-28
+**字数估计**: 约6000词（正文，不含代码）
+**预计页数**: 12-14页
+**目标期刊/平台**: arXiv cs.SE / q-bio.OT, bioRxiv Systems Biology
 
