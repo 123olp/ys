@@ -1,0 +1,119 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.jsonl
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+*.csv
+*.zip
+*.jsonl
+*.db
+*.pyc
+*.png
+prompts/
+*.jpg
+
+# Virtual Environment
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+*.gz
+
+dump.sql
+
+
+# IDE
+.vscode/
+.idea/
+.github/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Testing
+.pytest_cache/
+.coverage
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Logs
+*.log
+*.log.[0-9]*
+*.out
+logs/*.log
+logs/*.out
+backups/
+out/
+
+# 项目特定
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# Celery
+*.pyc
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.env.local
+.env.*.local
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# backtest folder
+src/backtest/
+
+# Additional exclusions
+.history/
+.venv_patterns/
+logs/
+
+# Backup files
+*.bak
+*.tmp
+backups/gz/
+
+# Runtime / DB noise
+*.pid
+*.db-wal
+*.db-shm
+*.db.corrupted*
+*.session
+*.session-journal
+/services/**/.runtime/*.pid
+out/
