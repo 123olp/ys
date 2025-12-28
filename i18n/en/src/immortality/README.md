@@ -1,207 +1,354 @@
-<!--
--------------------------------------------------------------------------------
-  永生计划 (Immortality Project)
--------------------------------------------------------------------------------
--->
-<p align="center">
-  <img src="https://github.com/tukuaiai.png" alt="Immortality Project" width="80px">
-</p>
-
 <div align="center">
 
-# 永生计划 | Immortality Project
+# 🌌 Immortality Project
 
-**消除人类文明的三维稀缺性：时间、认知、能量**
-
-**Eliminating the three-dimensional scarcity of human civilization: Time, Cognition, Energy**
+**A systematic framework for eliminating scarcity in Time, Cognition, and Energy, to approach the possibility frontier allowed by the laws of physics.**
+*From Finite Existence to Continuous Evolution*
 
 ---
 
-<!-- 徽章区域 -->
-<p>
-  <a href="LICENSE"><img src="https://img.shields.io/badge/许可证-CC%20BY%204.0-lightgrey?style=for-the-badge" alt="许可证"></a>
-  <a href="https://github.com/tukuaiai/immortality"><img src="https://img.shields.io/github/stars/tukuaiai/immortality?style=for-the-badge&label=Stars" alt="Stars"></a>
-  <a href="https://github.com/tukuaiai/immortality"><img src="https://img.shields.io/github/forks/tukuaiai/immortality?style=for-the-badge&label=Forks" alt="Forks"></a>
-</p>
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-blue.svg?style=for-the-badge)](https://creativecommons.org/licenses/by/4.0/)
+[![Status: Research](https://img.shields.io/badge/Status-Active%20Research-success.svg?style=for-the-badge)]()
+[![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-brightgreen.svg?style=for-the-badge)]()
+[![Language](https://img.shields.io/badge/Language-English%20%7C%20中文-orange.svg?style=for-the-badge)]()
 
-<!-- 多语言入口 -->
-<p>
-  <a href="./i18n/zh/README.md"><img src="https://img.shields.io/badge/语言-中文-red?style=for-the-badge" alt="简体中文"></a>
-  <a href="./i18n/en/README.md"><img src="https://img.shields.io/badge/Language-English-blue?style=for-the-badge" alt="English"></a>
-</p>
+**[中文版](../zh/README.md)** | **English**
 
-<!-- 核心文档直达 -->
-<p>
-  <a href="./i18n/zh/docs/core/human_3.0_technical_blueprint.md"><img src="https://img.shields.io/badge/📐_技术蓝图-Human_3.0-crimson?style=for-the-badge" alt="技术蓝图"></a>
-  <a href="./i18n/zh/docs/core/immortality_27_elements.md"><img src="https://img.shields.io/badge/🧬_27要素-永生工程-gold?style=for-the-badge" alt="27要素"></a>
-  <a href="./i18n/zh/docs/philosophy/ontology_experience_machine.md"><img src="https://img.shields.io/badge/🧠_本体论-体验机器-purple?style=for-the-badge" alt="本体论"></a>
-</p>
-
-[📖 项目简介](#-项目简介) •
-[🎯 核心目标](#-核心目标) •
-[📁 目录结构](#-目录结构) •
-[📚 文档导航](#-文档导航) •
-[🛠️ 构建命令](#️-构建命令) •
-[🤝 参与贡献](#-参与贡献)
+[📖 Whitepaper](#-whitepaper) • [🎯 Core Concepts](#-core-concepts) • [🚀 Three Dimensions](#-three-dimensions) • [📚 Resources](#-learning-resources) • [🤝 Contributing](#-contributing)
 
 </div>
 
 ---
 
-## 📖 项目简介
+## 🌟 Overview
 
-**永生计划**是一个开源的理论框架与技术路线图项目，旨在系统性地探索人类文明如何突破三大根本性稀缺：
+**Immortality Project** is a systematic philosophical framework and technological roadmap aimed at maximizing civilization's possibility space by eliminating three dimensions of human scarcity: time, cognition, and energy.
 
-| 维度 | 稀缺性 | 愿景 |
-|:---:|:---|:---|
-| ⏳ | **时间** | 延长健康寿命，最终实现生物学意义上的永生 |
-| 🧠 | **认知** | 增强人类认知能力，实现意识的数字化与扩展 |
-| ⚡ | **能量** | 突破能源获取限制，实现文明的可持续发展 |
+### Core Thesis
 
----
+> **The ultimate goal of civilization is not to achieve a particular state, but to expand the set of achievable states itself.**
 
-## 🎯 核心目标
+We identify three fundamental scarcities constraining humanity:
+- **Temporal Scarcity**: Limited lifespan restricts completable tasks
+- **Cognitive Scarcity**: Multi-dimensional constraints limit experienceable states
+- **Energetic Scarcity**: Entropic dissipation limits system sustainability
 
-```
-Human 1.0 → Human 2.0 → Human 3.0
-  生物人      增强人      后人类
-```
-
-- **Human 2.0**: 通过生物技术、脑机接口等手段增强现有人类能力
-- **Human 3.0**: 实现神经信息结构的跨基质保存与运行
+By systematically breaking through these three dimensions, we can approach the maximum possibility boundary allowed by physical laws.
 
 ---
 
-## 📁 目录结构
+## 🎯 Core Concepts
+
+### Three Principles
+
+1. **Possibility > Realization** — Options matter more than choices
+2. **Options > Choices** — Potential matters more than actuality
+3. **Potential > Actual** — What can be done matters more than what is done
+
+### Distinction from Other Theories
+
+| Theory | Goal | Immortality Project's Difference |
+|--------|------|--------------------------------------|
+| Utilitarianism | Maximize happiness | Pursue options, not utility |
+| Existentialism | Free choice | Pursue quantity of options |
+| Accelerationism | Technological progress | Clear three-dimensional endpoints with physical boundaries |
+| Transhumanism | Transcend biological limits | Systematic three-dimensional framework with boundary consciousness |
+
+---
+
+## 🚀 Three Dimensions
+
+### Dimension I: Temporal Liberation — Longevity Escape Velocity (LEV)
+
+**Goal**: Transform lifetime work capacity Y from constant to function
+
+```
+Traditional: Y = ∫₀ᵀ W(t)dt  (T ≈ 80 years)
+Breakthrough: Y(t) → ∞  (ΔLE ≥ 1 year/year)
+```
+
+**Key Technologies**:
+- Nine hallmarks of aging intervention
+- Gene editing (CRISPR)
+- Cellular reprogramming
+- Organ regeneration
+- Cross-substrate preservation and operation of neural information structures
+
+**Timeline**: 2025-2060+ progressive implementation
+
+---
+
+### Dimension II: Cognitive Liberation — Brain-Computer Interfaces & Memory Editing
+
+**Goal**: Reduce multi-dimensional constraints {A∩B∩C...∩N} to single-dimensional energy input
+
+```
+Traditional: P(realization) = ∏P(i) → 0  (when N is large)
+Breakthrough: P(realization) ≈ 1  (requires only neural signals)
+```
+
+**Key Technologies**:
+- High-bandwidth BCI (Brain-Computer Interface)
+- Neural encoding decryption
+- Memory editing & perception control
+- Direct skill writing
+- Experience generation technology
+
+**Timeline**: 2030-2050+ phased breakthroughs
+
+---
+
+### Dimension III: Energetic Liberation — Entropy Efficiency & Reversible Computing
+
+**Goal**: Energy cycle efficiency η → 1, entropy increase ΔS → 0
+
+```
+Traditional: η < 1, ΔS > 0  (eventual heat death)
+Breakthrough: η → 1, ΔS → 0  (sustainable existence)
+```
+
+**Key Technologies**:
+- Nuclear fusion
+- High-density energy storage
+- Superconducting materials
+- Reversible computing
+- Waste heat recovery
+
+**Timeline**: 2025-2100+ long-term approach
+
+---
+
+## 📖 Whitepaper
+
+### Core Documents
+
+- **[Scarcity Elimination Plan Whitepaper v1.0](docs/whitepaper_v1.0.md)** — Complete theoretical framework
+- **[Immortality Project: Three-Dimensional Path](docs/three_dimensions.md)** — In-depth technical analysis
+- **[Comprehensive Analysis & Implementation Roadmap](项目全面分析与实施路径_2025_10_17.md)** — Practice guide
+
+### Mathematical Models
+
+**Temporal Dimension**:
+```
+Y(t) = ∫₀^∞ W(t)dt
+If ΔLE ≥ 1 → lim(t→∞) Y = ∞
+```
+
+**Cognitive Dimension**:
+```
+Traditional space: reachability ∝ 2^(-n)
+After dimensionality reduction: reachability ≈ 1
+```
+
+**Energetic Dimension**:
+```
+Landauer limit: Q_min ≈ kT ln2 · ΔI
+Goal: approach this limit
+```
+
+---
+
+## 🔬 Scientific Foundation
+
+### Core Physical Limits
+
+We acknowledge and embrace physical boundaries:
+
+- **Bekenstein Bound**: Information capacity upper limit
+- **Bremermann's Limit**: Computational rate upper limit
+- **Landauer Principle**: Thermodynamic cost of information erasure
+
+**Position**: Maximize the possibility set within physical boundaries, rather than fantasizing about transcending physical laws.
+
+> "We live in a finite but enumerable universe—this is sober optimism."
+
+---
+
+## 📚 Learning Resources
+
+### Must-Read Papers (Top 10)
+
+**Philosophical Foundation**:
+1. Nick Bostrom - "A History of Transhumanist Thought"
+2. Derek Parfit - "Personal Identity" (chapter)
+
+**LEV/Aging**:
+3. López-Otín et al. (2023) - "The Hallmarks of Aging" (*Cell*)
+4. Ocampo et al. (2016) - "Partial Reprogramming" (*Cell*)
+
+**BCI/Cognition**:
+5. Willett et al. (2023) - "High-Performance BCI" (*Nature*)
+6. Neuralink - Technical Paper (latest version)
+
+**Energy/Thermodynamics**:
+7. Landauer (1961) - "Irreversibility and Heat Generation"
+8. Bennett (1982) - "Thermodynamics of Computation"
+
+**Boundaries**:
+9. Bekenstein (1981) - "Universal Upper Bound"
+10. Lloyd (2000) - "Ultimate Physical Limits" (*Nature*)
+
+### Recommended Books
+
+- Aubrey de Grey - *Ending Aging*
+- Nick Bostrom - *Superintelligence*
+- David Sinclair - *Lifespan*
+- Seth Lloyd - *Programming the Universe*
+
+### Online Communities
+
+- [LessWrong](https://www.lesswrong.com) — Rationalist discussion
+- [EA Forum](https://forum.effectivealtruism.org) — Effective altruism
+- [r/Longevity](https://reddit.com/r/longevity) — Life extension technology
+- [r/Futurology](https://reddit.com/r/Futurology) — Futurism
+
+---
+
+## 🗂️ Project Structure
 
 ```
 immortality/
-├── README.md                 # 多语言入口（本文件）
-├── LICENSE                   # CC BY 4.0
-├── AGENTS.md                 # AI Agent 行为准则
-├── CONTRIBUTING.md           # 贡献指南
-├── CODE_OF_CONDUCT.md        # 行为准则
-├── Makefile                  # 构建自动化
-├── metadata.yaml             # Pandoc 元数据配置
-│
-├── i18n/                     # 多语言文档
-│   ├── en/                   # English
-│   │   ├── README.md
-│   │   ├── README_academic.md
-│   │   ├── human_3.0_technical_blueprint.md
-│   │   ├── human_3.0_technical_blueprint_academic.md
-│   │   └── immortality_roadmap.md
-│   │
-│   └── zh/                   # 中文
-│       ├── README.md
-│       ├── README_academic.md
-│       ├── docs/
-│       │   ├── core/         # 核心理论
-│       │   │   ├── human_3.0_technical_blueprint.md
-│       │   │   ├── human_3.0_architecture.md
-│       │   │   ├── immortality_27_elements.md
-│       │   │   └── *_academic.md  # 学术版
-│       │   ├── guides/       # 通俗指南
-│       │   │   ├── human_3.0_social_media.md
-│       │   │   └── human_3.0_social_media_academic.md
-│       │   ├── philosophy/   # 哲学探讨
-│       │   │   ├── ontology_experience_machine.md
-│       │   │   ├── emotion_modeling.md
-│       │   │   └── *_academic.md  # 学术版
-│       │   └── system_architecture.mmd
-│       ├── archives/         # 归档文档
-│       │   ├── audit/        # 审计报告
-│       │   ├── reviews/      # 评审记录
-│       │   └── deprecated_docs/
-│       └── data/             # 数据模板
-│           ├── health_tracking_template.yaml
-│           └── refs/         # 参考文献
-│               └── 核心论文清单.md
-│
-└── .github/                  # GitHub 配置
-    ├── ISSUE_TEMPLATE/
-    ├── pull_request_template.md
-    └── FUNDING.yml
+├── README.md                    # Main documentation (Chinese)
+├── README.en.md                 # English documentation
+├── LICENSE                      # CC BY 4.0 license
+├── CONTRIBUTING.md              # Contribution guidelines
+├── CODE_OF_CONDUCT.md          # Code of conduct
+├── i18n/                        # Multi-language documentation
+│   ├── en/                      # English
+│   └── zh/                      # Chinese
+├── data/                        # Data & evidence database
+├── .github/                     # GitHub templates
+└── .github/                     # GitHub templates
 ```
 
 ---
 
-## 📚 文档导航
+## 🤝 Contributing
 
-### 中文文档 (i18n/zh/)
+### What We Need
 
-| 文档 | 说明 |
-|:---|:---|
-| [README.md](./i18n/zh/README.md) | 项目完整介绍 |
-| [human_3.0_technical_blueprint.md](./i18n/zh/docs/core/human_3.0_technical_blueprint.md) | Human 3.0 技术蓝图 |
-| [immortality_27_elements.md](./i18n/zh/docs/core/immortality_27_elements.md) | 永生工程 27 要素清单 |
-| [human_3.0_architecture.md](./i18n/zh/docs/core/human_3.0_architecture.md) | 人类 3.0 架构 |
-| [human_3.0_social_media.md](./i18n/zh/docs/guides/human_3.0_social_media.md) | 技术蓝图通俗版 |
-| [emotion_modeling.md](./i18n/zh/docs/philosophy/emotion_modeling.md) | 情绪建模与注入 |
-| [ontology_experience_machine.md](./i18n/zh/docs/philosophy/ontology_experience_machine.md) | 本体论分岔：体验机器终局 |
+- **Philosophers**: Refine theoretical framework
+- **Scientists**: Provide technical feedback
+- **Engineers**: Build prototypes and tools
+- **Designers**: Visualize complex concepts
+- **Communicators**: Expand influence
 
-> 💡 每个核心文档均有对应的 `*_academic.md` 学术版本，包含更严谨的引用与论证。
+### How to Contribute
 
-### English Docs (i18n/en/)
+1. **Theoretical Contributions**: Submit issues to discuss philosophical questions
+2. **Data Contributions**: Add to evidence database (LEV/BCI/Energy)
+3. **Code Contributions**: Improve tools and models
+4. **Documentation Contributions**: Enhance translations and explanations
+5. **Outreach Contributions**: Share with relevant communities
 
-| Document | Description |
-|:---|:---|
-| [README.md](./i18n/en/README.md) | Project Overview |
-| [human_3.0_technical_blueprint.md](./i18n/en/human_3.0_technical_blueprint.md) | Human 3.0 Technical Blueprint |
-| [immortality_roadmap.md](./i18n/en/immortality_roadmap.md) | Immortality Roadmap |
+See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.
 
 ---
 
-## 🛠️ 构建命令
+## 📅 Roadmap
 
-本项目使用 `pandoc` 将 Markdown 文档编译为 HTML/PDF 报告。
-
-### 环境要求
-
-- `make`
-- `pandoc`
-- `texlive-xetex`（PDF 生成需要）
-- 中文字体：`Noto Sans CJK SC`
-
-### 常用命令
-
-| 命令 | 说明 |
-|:---|:---|
-| `make all` | 构建 HTML 和 PDF 报告 |
-| `make html` | 仅构建 HTML (`out/report.html`) |
-| `make pdf` | 仅构建 PDF (`out/report.pdf`) |
-| `make clean` | 清理 `out/` 目录 |
+| Phase | Timeline | Goal | Status |
+|-------|----------|------|--------|
+| **0. Foundation** | 0-6 months | Theoretical refinement + survival stabilization | ✅ In Progress |
+| **1. Dissemination** | 6-18 months | Establish academic credibility | 🔄 Planned |
+| **2. Evidence Aggregation** | 18-36 months | Build technical evidence database | ⏳ Pending |
+| **3. Prototype Validation** | 3-5 years | Small-scale experiments | ⏳ Pending |
+| **4. Organization Building** | 5-10 years | Immortality Lab | ⏳ Pending |
+| **5. Technical Breakthrough** | 10-30 years | Substantive progress in at least one dimension | ⏳ Pending |
 
 ---
 
-## 🤝 参与贡献
+## 📊 Key Performance Indicators (KPI)
 
-欢迎任何形式的贡献！请阅读 [CONTRIBUTING.md](CONTRIBUTING.md) 了解详情。
+### Temporal Dimension
+- ΔLE (Life expectancy annual increment)
+- HALE/LE (Healthy life expectancy ratio)
+- Major age-related disease mortality annual decline
 
-- 💡 提出想法：[Open an Issue](https://github.com/tukuaiai/immortality/issues)
-- 📝 改进文档：[Submit a PR](https://github.com/tukuaiai/immortality/pulls)
+### Cognitive Dimension
+- BCI bandwidth (bit/s)
+- Read/write error rate (ε)
+- Experience consistency (κ)
+
+### Energetic Dimension
+- System efficiency (η)
+- EROEI (Energy return on energy invested)
+- Energy cost per possibility unit (J/possibility)
 
 ---
 
-## 📞 联系方式
+## ⚠️ Risks & Ethics
 
-- **GitHub**: [tukuaiai](https://github.com/tukuaiai)
-- **Twitter / X**: [@123olp](https://x.com/123olp)
-- **Telegram**: [@desci0](https://t.me/desci0)
+### Acknowledged Risks
+
+1. **Technical Bottlenecks**: Key technologies may remain unbreakable for long periods
+2. **Ethical Red Lines**: Technologies like neural editing face regulatory restrictions
+3. **Distribution Inequality**: Technology may exacerbate social inequality
+4. **Meaning Crisis**: Risk of nihilism after scarcity elimination
+
+### Ethical Principles
+
+- **Minimal Intrusion**: Technology application follows gradual principles
+- **Auditability**: All operations are traceable and verifiable
+- **Reversibility**: Users retain right to exit
+- **Differentiated Accessibility**: Avoid technological privilege ossification
+
+---
+
+## 📜 License
+
+This project is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+
+You are free to:
+- ✅ Share — copy and redistribute the material
+- ✅ Adapt — remix, transform, and build upon the material
+
+Under the following terms:
+- 📌 Attribution — must give appropriate credit
+
+---
+
+## 💬 Contact
+
+- **GitHub**: [@tukuaiai](https://github.com/tukuaiai)
 - **Email**: tukuai.ai@gmail.com
+- **Discord**: Immortality Hub (to be established)
+- **Twitter**: @PhaseSpaceHub (to be established)
 
 ---
 
-## 📜 许可证
+## 🌈 Core Theses
 
-本项目采用 [CC BY 4.0](LICENSE) 许可证。
+- *"Life is not a countdown, but an accumulator"*
+- *"True freedom is not about what you want to do, but how many possibilities exist"*
+- *"We pursue options, not choices"*
+- *"Entropy is the ultimate enemy of the universe and the ultimate mission of civilization"*
+- *"Even in a universe of infinite possibilities, we live in an enumerable space"*
+
+---
+
+## 🙏 Acknowledgments
+
+Thanks to all researchers, thinkers, and practitioners working to eliminate scarcity.
+
+Special tribute to:
+- Aubrey de Grey (SENS Research Foundation)
+- Nick Bostrom (Future of Humanity Institute)
+- Ray Kurzweil (Singularity concept)
+- All transhumanist and longtermist community members
 
 ---
 
 <div align="center">
 
-**如果这个项目对您有启发，请考虑点亮一颗 Star ⭐**
+**In humanity's great journey against scarcity, this may be the most honest, radical, and feasible philosophical guide.**
 
-[⬆ 返回顶部](#永生计划--immortality-project)
+*— A Vision of Immortality Project*
+
+---
+
+⭐ If this project inspires you, please give us a Star!
+
+[![Star History Chart](https://api.star-history.com/svg?repos=tukuaiai/immortality&type=Date)](https://star-history.com/#tukuaiai/immortality&Date)
 
 </div>

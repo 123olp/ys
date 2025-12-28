@@ -25,10 +25,11 @@ Wetware Engineering proposes treating organs, tissues, actuators, and sensors as
 
 | 中文 | English | 说明 |
 |-----|---------|------|
-| [项目概述](i18n/zh/src/immortality/README.md) | [Overview](i18n/en/immortality/README.md) | 项目介绍 |
-| [学术版](i18n/zh/src/immortality/README_academic.md) | - | 学术风格文档 |
-| [Human 3.0 架构](i18n/zh/src/immortality/docs/core/human_3.0_architecture.md) | [Architecture](i18n/en/immortality/i18n/en/human_3.0_technical_blueprint.md) | 技术架构 |
+| [项目概述](i18n/zh/src/immortality/README.md) | [Overview](i18n/en/src/immortality/README.md) | 项目介绍 |
+| [学术版](i18n/zh/src/immortality/README_academic.md) | [Academic](i18n/en/src/immortality/i18n/en/README_academic.md) | 学术风格文档 |
+| [Human 3.0 架构](i18n/zh/src/immortality/docs/core/human_3.0_architecture.md) | [Blueprint](i18n/en/src/immortality/i18n/en/human_3.0_technical_blueprint.md) | 技术架构 |
 | [27要素](i18n/zh/src/immortality/docs/core/immortality_27_elements.md) | - | 永生27要素 |
+| [实施路线图](i18n/zh/src/immortality/docs/core/human_3.0_technical_blueprint.md) | [Roadmap](i18n/en/src/immortality/i18n/en/immortality_roadmap.md) | 技术蓝图 |
 
 ## 🎯 Core Concepts
 
@@ -64,8 +65,15 @@ RUNTIME {
 
 ```
 wetware-engineering/
+├── README.md
+├── AGENTS.md
+├── LICENSE                          # CC BY-SA 4.0
+├── CONTRIBUTING.md
+├── CODE_OF_CONDUCT.md
+├── .markdownlint.json               # Markdown lint config
 ├── i18n/
 │   ├── zh/                          # 中文文档
+│   │   ├── README.md                # 中文索引
 │   │   ├── 湿件工程.md
 │   │   ├── 湿件工程宣言.md
 │   │   ├── 湿件工程技术规范.md
@@ -73,11 +81,16 @@ wetware-engineering/
 │   │   └── src/immortality/         # 永生计划 (中文)
 │   │       ├── docs/core/           # 核心文档
 │   │       ├── docs/philosophy/     # 哲学探讨
-│   │       └── docs/guides/         # 指南
+│   │       ├── docs/guides/         # 指南
+│   │       └── data/                # 数据模板
 │   └── en/                          # English docs
-│       ├── immortality/             # Immortality Project (EN)
-│       └── (wetware docs coming)
-└── .github/                         # GitHub 配置
+│       ├── README.md                # English index
+│       └── src/immortality/         # Immortality Project (EN)
+│           └── i18n/en/             # English translations
+└── .github/
+    ├── workflows/lint.yml           # Markdown lint CI
+    ├── ISSUE_TEMPLATE/
+    └── PULL_REQUEST_TEMPLATE.md
 ```
 
 ## 🗺️ Roadmap
@@ -86,7 +99,8 @@ wetware-engineering/
 - [x] Bio-Component Spec v0.1
 - [x] Bio-DSL syntax draft
 - [x] Chinese documentation
-- [ ] English documentation
+- [x] Immortality Project (ZH/EN)
+- [ ] Wetware Engineering English docs
 - [ ] Reference implementation
 - [ ] Tool chain development
 
