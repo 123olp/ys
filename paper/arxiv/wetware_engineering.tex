@@ -37,7 +37,7 @@
   \texttt{tukuai.ai@gmail.com}
 }
 
-\date{December 2024}
+\date{December 2025}
 
 \renewcommand{\shorttitle}{Wetware Engineering}
 
@@ -302,7 +302,7 @@ CONNECT controller.output TO muscle.stim VIA adapter
 \textbf{Runtime Configuration}:
 \begin{lstlisting}
 RUNTIME {
-  perfusion: { temp: 37,°C, pH: 7.4 },
+  perfusion: { temp: 37~C, pH: 7.4 },
   control: { mode: "closed_loop" }
 }
 \end{lstlisting}
@@ -584,7 +584,7 @@ CONNECT perfusion.ch4 TO sensor.perfusion_input
 // === Runtime Configuration ===
 RUNTIME {
   perfusion: {
-    temperature: 37,°C,
+    temperature: 37~C,
     pH: 7.4,
     oxygenation: true,
     waste_removal: "continuous"
@@ -661,13 +661,13 @@ TEST antagonist_balance {
 TEST tracking_accuracy {
   description: "Closed-loop tracking test"
   GIVEN system.mode == "closed_loop"
-  WHEN SET target = sine_wave(0.5 Hz, $\pm$20 mN) FOR 60 s
+  WHEN SET target = sine_wave(0.5 Hz, +/-20 mN) FOR 60 s
   THEN EXPECT tracking_error < 3 mN RMS
 }
 
 // === Expected Performance ===
 EXPECTED {
-  position_accuracy: $\pm$2 mN,
+  position_accuracy: +/-2 mN,
   bandwidth: [0, 2] Hz,
   lifetime: [7, 14] days,
   power_consumption: [50, 100] mW
