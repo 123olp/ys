@@ -12,16 +12,23 @@ Wetware Engineering proposes treating organs, tissues, actuators, and sensors as
 
 ## 📚 Documentation
 
-### 中文文档 (Chinese)
-- [快速入门指南](i18n/zh/湿件工程快速入门指南.md) - 5分钟理解核心概念
-- [湿件工程](i18n/zh/湿件工程.md) - 完整概念介绍
-- [湿件工程宣言](i18n/zh/湿件工程宣言.md) - 愿景与原则
-- [湿件工程技术规范](i18n/zh/湿件工程技术规范.md) - Bio-Component Spec & Bio-DSL
+### 湿件工程 (Wetware Engineering)
 
-### English (Coming Soon)
-- Quick Start Guide
-- Manifesto
-- Technical Specification
+| 中文 | English | 说明 |
+|-----|---------|------|
+| [快速入门指南](i18n/zh/湿件工程快速入门指南.md) | Coming Soon | 5分钟理解核心概念 |
+| [湿件工程](i18n/zh/湿件工程.md) | Coming Soon | 完整概念介绍 |
+| [湿件工程宣言](i18n/zh/湿件工程宣言.md) | Coming Soon | 愿景与原则 |
+| [湿件工程技术规范](i18n/zh/湿件工程技术规范.md) | Coming Soon | Bio-Component Spec & Bio-DSL |
+
+### 永生计划 (Immortality Project)
+
+| 中文 | English | 说明 |
+|-----|---------|------|
+| [项目概述](i18n/zh/src/immortality/README.md) | [Overview](i18n/en/immortality/README.md) | 项目介绍 |
+| [学术版](i18n/zh/src/immortality/README_academic.md) | - | 学术风格文档 |
+| [Human 3.0 架构](i18n/zh/src/immortality/docs/core/human_3.0_architecture.md) | [Architecture](i18n/en/immortality/i18n/en/human_3.0_technical_blueprint.md) | 技术架构 |
+| [27要素](i18n/zh/src/immortality/docs/core/immortality_27_elements.md) | - | 永生27要素 |
 
 ## 🎯 Core Concepts
 
@@ -53,14 +60,34 @@ RUNTIME {
 }
 ```
 
+## 📁 Repository Structure
+
+```
+wetware-engineering/
+├── i18n/
+│   ├── zh/                          # 中文文档
+│   │   ├── 湿件工程.md
+│   │   ├── 湿件工程宣言.md
+│   │   ├── 湿件工程技术规范.md
+│   │   ├── 湿件工程快速入门指南.md
+│   │   └── src/immortality/         # 永生计划 (中文)
+│   │       ├── docs/core/           # 核心文档
+│   │       ├── docs/philosophy/     # 哲学探讨
+│   │       └── docs/guides/         # 指南
+│   └── en/                          # English docs
+│       ├── immortality/             # Immortality Project (EN)
+│       └── (wetware docs coming)
+└── .github/                         # GitHub 配置
+```
+
 ## 🗺️ Roadmap
 
 - [x] Core concept definition
 - [x] Bio-Component Spec v0.1
 - [x] Bio-DSL syntax draft
+- [x] Chinese documentation
 - [ ] English documentation
 - [ ] Reference implementation
-- [ ] Community guidelines
 - [ ] Tool chain development
 
 ## 🤝 Contributing
@@ -72,8 +99,5 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 This project is licensed under [CC BY-SA 4.0](LICENSE).
 
 ---
-
-**Contact**: [待添加]  
-**Website**: [待添加]
 
 *Wetware Engineering: Programming the future of life systems* 🧬💻

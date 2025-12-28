@@ -10,8 +10,24 @@ Wetware Engineering - A paradigm for building biological systems using software 
 - **Bio-Runtime**: Orchestration system for scheduling, resource management, monitoring
 
 ## Documentation Structure
-- `/i18n/zh/` - Chinese documentation (primary)
-- `/i18n/en/` - English documentation (planned)
+
+```
+wetware-engineering/
+├── README.md                        # Project overview
+├── i18n/
+│   ├── zh/                          # 中文文档
+│   │   ├── 湿件工程.md              # Core concept
+│   │   ├── 湿件工程宣言.md          # Manifesto
+│   │   ├── 湿件工程技术规范.md      # Technical spec
+│   │   ├── 湿件工程快速入门指南.md  # Quick start
+│   │   └── src/immortality/         # Immortality project (ZH)
+│   │       ├── docs/core/           # Core docs
+│   │       ├── docs/philosophy/     # Philosophy
+│   │       └── docs/guides/         # Guides
+│   └── en/                          # English docs
+│       └── immortality/             # Immortality project (EN)
+└── .github/                         # GitHub config
+```
 
 ## File Conventions
 - Documentation in Markdown
@@ -22,4 +38,6 @@ Wetware Engineering - A paradigm for building biological systems using software 
 - Core concepts: Defined
 - Bio-Component Spec: v0.1 draft
 - Bio-DSL: Syntax draft complete
+- Chinese documentation: Complete
+- English documentation: Partial (Immortality only)
 - Reference implementation: Planned

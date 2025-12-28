@@ -2,7 +2,9 @@
 
 > Decouple biological capabilities from organisms into reusable modules, reconstruct living systems with software engineering paradigms.
 
-## 📚 Documentation (Coming Soon)
+## 📚 Documentation
+
+### Wetware Engineering (Coming Soon)
 
 | Document | Description | Status |
 |----------|-------------|--------|
@@ -10,6 +12,14 @@
 | Wetware Engineering | Complete concept introduction | 🚧 Planned |
 | Manifesto | Vision and principles | 🚧 Planned |
 | Technical Specification | Bio-Component Spec & Bio-DSL | 🚧 Planned |
+
+### Immortality Project
+
+| Document | Description |
+|----------|-------------|
+| [Overview](immortality/README.md) | Project introduction |
+| [Technical Blueprint](immortality/i18n/en/human_3.0_technical_blueprint.md) | Human 3.0 architecture |
+| [Roadmap](immortality/i18n/en/immortality_roadmap.md) | Implementation roadmap |
 
 ## 🌏 Other Languages
 
