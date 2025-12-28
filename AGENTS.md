@@ -6,6 +6,7 @@
 
 ### 允许的操作
 - 编辑/新增 `i18n/` 目录下的文档文件 (`.md`)
+- 编辑/新增 `paper/` 目录下的论文相关文件
 - 更新 README.md、AGENTS.md、CONTRIBUTING.md
 - 添加新的 Bio-DSL 示例
 - 修复文档中的错误链接和格式问题
@@ -19,6 +20,7 @@
 ### 敏感区域（修改需谨慎）
 - `i18n/zh/湿件工程技术规范.md` - Bio-Component Spec 核心定义
 - `i18n/*/src/immortality/` - 永生计划子项目
+- `paper/arxiv/wetware_engineering.tex` - 学术论文 LaTeX 源码
 
 ## 2. Golden Path（推荐执行路径）
 
@@ -51,12 +53,14 @@ git push
 |-----|------|------|
 | 查看结构 | `find i18n -name "*.md" \| head -20` | 列出文档文件 |
 | 格式检查 | `npx markdownlint-cli2 "**/*.md"` | 可选，CI 会自动运行 |
+| 编译论文 | `cd paper/arxiv && xelatex wetware_engineering.tex` | 需要 texlive-full |
 
 ## 4. Code Change Rules（修改约束）
 
 ### 文档编写原则
 - 中文文档放 `i18n/zh/`，英文文档放 `i18n/en/`
 - 永生计划文档放 `i18n/*/src/immortality/`
+- 学术论文放 `paper/`
 - 文件名使用中文（中文文档）或英文小写下划线（英文文档）
 
 ### 链接规则
@@ -71,7 +75,7 @@ git push
 ## 5. Style & Quality（风格与质量标准）
 
 ### Markdown 规范
-- 配置文件：`.markdownlint.json`
+- CI 使用 markdownlint-cli2 检查
 - 已禁用规则：MD013（行长度）、MD033（HTML）、MD041（首行标题）
 
 ### 命名约定
@@ -83,6 +87,11 @@ git push
 - 每个文档必须有一级标题
 - 使用适当的标题层级（不跳级）
 - 代码块标注语言类型
+
+### LaTeX 论文规范
+- 使用 arXiv 标准模板 (`arxiv.sty`)
+- 参考文献使用 `\textit{}` 标注期刊/书名
+- 单位使用 `\,` 分隔数字和单位
 
 ## 6. Project Map（项目结构速览）
 
@@ -104,27 +113,31 @@ wetware-engineering/
 │       ├── README.md            # 项目概述
 │       ├── AGENTS.md            # 子项目 Agent 指南
 │       ├── docs/core/           # 核心文档
-│       │   ├── human_3.0_architecture.md
-│       │   ├── human_3.0_technical_blueprint.md
-│       │   └── immortality_27_elements.md
 │       ├── docs/philosophy/     # 哲学探讨
-│       │   ├── emotion_modeling.md
-│       │   └── ontology_experience_machine.md
 │       ├── docs/guides/         # 指南
-│       │   └── human_3.0_social_media.md
 │       └── data/                # 数据模板
-│           ├── health_tracking_template.yaml
-│           └── refs/核心论文清单.md
 │
 ├── i18n/en/                     # English docs
 │   ├── README.md                # English index
+│   ├── wetware_engineering.md
+│   ├── wetware_engineering_manifesto.md
+│   ├── wetware_engineering_technical_spec.md
+│   ├── wetware_engineering_quick_start.md
 │   └── src/immortality/         # Immortality Project (EN)
-│       ├── README.md
-│       ├── README_academic.md
-│       ├── AGENTS.md
-│       ├── human_3.0_technical_blueprint.md
-│       ├── human_3.0_technical_blueprint_academic.md
-│       └── immortality_roadmap.md
+│
+├── paper/                       # 学术论文
+│   ├── arxiv/                   # arXiv 投稿版本
+│   │   ├── wetware_engineering.tex   # LaTeX 源码
+│   │   ├── wetware_engineering.pdf   # 编译后 PDF (13页)
+│   │   ├── arxiv.sty            # arXiv 样式
+│   │   └── orcid.pdf            # ORCID 图标
+│   ├── sections/                # 论文章节 (Markdown)
+│   └── wetware_engineering_full_paper.md  # 完整草稿
+│
+├── backups/                     # 备份工具
+│   ├── gz/                      # 压缩备份存放
+│   ├── 快速备份.py
+│   └── 一键备份.sh
 │
 └── .github/
     ├── workflows/lint.yml       # Markdown lint CI
@@ -139,6 +152,8 @@ wetware-engineering/
 | 链接 404 | 路径缺少 `src/` | 检查实际文件位置 |
 | CI lint 失败 | Markdown 格式问题 | 本地运行 `npx markdownlint-cli2` 检查 |
 | 中文文件名乱码 | Git 配置问题 | 确保 `git config core.quotepath false` |
+| LaTeX 编译失败 | 缺少依赖 | 安装 `texlive-full` |
+| PDF 字体问题 | 使用 pdflatex | 改用 `xelatex` 编译 |
 
 ## 8. PR / Commit Rules（提交规则）
 
@@ -151,6 +166,7 @@ type: docs / fix / chore / refactor
 
 示例：
 - `docs: add Bio-DSL example for neural controller`
+- `docs: update paper formatting for arXiv submission`
 - `fix: correct link to immortality roadmap`
 - `chore: update .gitignore`
 
@@ -191,5 +207,7 @@ type: docs / fix / chore / refactor
 | Bio-Component Spec | ✅ v0.1 草案 |
 | Bio-DSL 语法 | ✅ 草案完成 |
 | 中文文档 | ✅ 完成 |
-| 英文文档 | 🚧 部分完成（仅永生计划） |
+| 英文文档 | ✅ 完成 |
+| 学术论文 | ✅ Preprint 完成 (13页) |
+| arXiv 投稿 | 📋 待提交 |
 | 参考实现 | 📋 计划中 |

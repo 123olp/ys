@@ -30,6 +30,14 @@ Wetware Engineering proposes treating organs, tissues, actuators, and sensors as
 | [27要素](i18n/zh/src/immortality/docs/core/immortality_27_elements.md) | [27 Elements](i18n/en/src/immortality/docs/core/immortality_27_elements.md) | 永生27要素 |
 | [技术蓝图](i18n/zh/src/immortality/docs/core/human_3.0_technical_blueprint.md) | [Blueprint](i18n/en/src/immortality/human_3.0_technical_blueprint.md) | 实施路线 |
 
+### 📄 Academic Paper
+
+| Document | Description |
+|----------|-------------|
+| [Preprint PDF](paper/arxiv/wetware_engineering.pdf) | Full paper (13 pages, arXiv format) |
+| [LaTeX Source](paper/arxiv/wetware_engineering.tex) | For arXiv submission |
+| [Full Markdown](paper/wetware_engineering_full_paper.md) | Complete draft (~9000 words) |
+
 ## 🎯 Core Concepts
 
 ```
@@ -48,14 +56,15 @@ Wetware Engineering proposes treating organs, tissues, actuators, and sensors as
 
 ## 🔧 Bio-DSL Example
 
-```biomodule
-COMPONENT muscle FROM human-skeletal-v2.3 AS flexor
-COMPONENT sensor FROM synthetic-piezo-v1.1 AS force_sensor
+```biodsl
+COMPONENT muscle FROM "muscle-actuator-human-skeletal@^2.3"
+COMPONENT sensor FROM "piezo-force-sensor@~1.1"
 
-CONNECT muscle.output TO sensor.input
+CONNECT sensor.output TO controller.input
+CONNECT controller.output TO muscle.stimulation
 
 RUNTIME {
-  perfusion: { temperature: 37°C, flow_rate: 0.5 mL/min },
+  perfusion: { temperature: 37 C, flow_rate: 0.5 mL/min },
   control: { mode: "closed_loop" }
 }
 ```
@@ -64,11 +73,12 @@ RUNTIME {
 
 ```
 wetware-engineering/
-├── README.md
-├── AGENTS.md
+├── README.md                        # 项目主页（双语）
+├── AGENTS.md                        # AI Agent 操作手册
 ├── LICENSE                          # CC BY-SA 4.0
-├── CONTRIBUTING.md
-├── CODE_OF_CONDUCT.md
+├── CONTRIBUTING.md                  # 贡献指南
+├── CODE_OF_CONDUCT.md               # 行为准则
+│
 ├── i18n/
 │   ├── zh/                          # 中文文档
 │   │   ├── 湿件工程.md
@@ -82,8 +92,24 @@ wetware-engineering/
 │       ├── wetware_engineering_technical_spec.md
 │       ├── wetware_engineering_quick_start.md
 │       └── src/immortality/         # Immortality Project (EN)
+│
+├── paper/                           # 学术论文
+│   ├── arxiv/                       # arXiv 投稿版本
+│   │   ├── wetware_engineering.tex  # LaTeX 源码
+│   │   ├── wetware_engineering.pdf  # 编译后 PDF
+│   │   └── arxiv.sty                # arXiv 样式
+│   ├── sections/                    # 论文章节 (Markdown)
+│   └── wetware_engineering_full_paper.md
+│
+├── backups/                         # 备份工具
+│   ├── gz/                          # 压缩备份
+│   ├── 快速备份.py
+│   └── 一键备份.sh
+│
 └── .github/
-    └── workflows/lint.yml
+    ├── workflows/lint.yml           # Markdown lint CI
+    ├── ISSUE_TEMPLATE/
+    └── PULL_REQUEST_TEMPLATE.md
 ```
 
 ## 🗺️ Roadmap
@@ -94,6 +120,8 @@ wetware-engineering/
 - [x] Chinese documentation
 - [x] English documentation
 - [x] Immortality Project (ZH/EN)
+- [x] Academic paper (preprint)
+- [ ] arXiv submission
 - [ ] Reference implementation
 - [ ] Tool chain development
 
