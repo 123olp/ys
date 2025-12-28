@@ -4,6 +4,12 @@
 
 ---
 
+**Author**: 123olp  
+**Email**: tukuai.ai@gmail.com  
+**ORCID**: [0009-0009-6523-1823](https://orcid.org/0009-0009-6523-1823)
+
+---
+
 ## Abstract
 
 Software engineering underwent a paradigm shift from monolithic, handcrafted programs to modular, composable systems over five decades—a transformation enabled by standardized interfaces, package managers, version control, and runtime orchestration. Biological engineering, despite remarkable advances in synthetic biology, organoids, and tissue engineering, remains trapped in an analogous "pre-modular" era: each biological system is constructed from scratch, results are difficult to reproduce across laboratories, and there exists no universal language for describing biological component composition.
