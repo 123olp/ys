@@ -1184,4 +1184,241 @@ Kuhn, T. S. (1962). \textit{The Structure of Scientific Revolutions}. University
 
 \end{thebibliography}
 
+
+\appendix
+
+\section{Complete Bio-DSL Example: Dual-Muscle Antagonist System}
+
+The following complete example demonstrates Bio-DSL's expressiveness for describing a realistic biological system:
+
+\begin{lstlisting}
+// ============================================
+// Bio-Mechanical Arm Unit v0.1
+// Dual-muscle antagonist with closed-loop control
+// ============================================
+
+// === Component Declarations ===
+COMPONENT flexor FROM "muscle-actuator-human-skeletal@^2.3" {
+  role: "agonist",
+  force_range: [0, 50] mN
+}
+
+COMPONENT extensor FROM "muscle-actuator-human-skeletal@^2.3" {
+  role: "antagonist", 
+  force_range: [0, 50] mN
+}
+
+COMPONENT sensor FROM "piezo-force-sensor@~1.1" {
+  range: [0, 100] mN,
+  sampling_rate: 100 Hz
+}
+
+COMPONENT controller FROM "neural-organoid-spinal@>=0.8" {
+  input_channels: 2,
+  output_channels: 2
+}
+
+// === Adapter Declarations ===
+ADAPTER perfusion FROM "microfluidic-4ch@1.0" {
+  medium: "DMEM + 10% FBS",
+  flow_rate: 0.5 mL/min PER channel
+}
+
+ADAPTER stim_converter FROM "opto-electrical@2.0" {
+  wavelength: 470 nm
+}
+
+// === Connection Topology ===
+CONNECT controller.output_1 TO flexor.stimulation 
+  VIA stim_converter
+  WITH { frequency: [1, 50] Hz, voltage: [0, 3] V }
+
+CONNECT controller.output_2 TO extensor.stimulation
+  VIA stim_converter
+
+CONNECT sensor.output TO controller.feedback_input
+  WITH { gain: 1.5 }
+
+// Perfusion connections
+CONNECT perfusion.ch1 TO flexor.perfusion_input
+CONNECT perfusion.ch2 TO extensor.perfusion_input
+CONNECT perfusion.ch3 TO controller.perfusion_input
+CONNECT perfusion.ch4 TO sensor.perfusion_input
+
+// === Runtime Configuration ===
+RUNTIME {
+  perfusion: {
+    temperature: 37 C,
+    pH: 7.4,
+    oxygenation: true,
+    waste_removal: "continuous"
+  },
+  
+  control: {
+    mode: "closed_loop",
+    target: "position",
+    pid: { Kp: 0.8, Ki: 0.2, Kd: 0.1 }
+  },
+  
+  monitoring: {
+    interval: 10 s,
+    metrics: ["flexor.force", "extensor.force", 
+              "sensor.reading", "*.viability"],
+    alerts: {
+      "viability < 80%": "WARNING",
+      "force > 90 mN": "CRITICAL"
+    }
+  },
+  
+  safety: {
+    max_force: 100 mN,
+    emergency: {
+      trigger: "viability < 50% OR force > 120 mN",
+      action: "STOP_ALL; PERFUSION_ONLY"
+    }
+  }
+}
+
+// === Behavioral Logic ===
+ON STARTUP DO {
+  SET perfusion.flow_rate = 0.5 mL/min
+  WAIT 300 s  // Equilibration period
+  RUN calibration_sequence()
+  SET controller.mode = "active"
+  LOG "System initialized"
+}
+
+WHEN flexor.fatigue_index > 0.3 THEN {
+  LOG "Flexor fatigue detected"
+  REDUCE flexor.stim_frequency BY 20%
+  INCREASE extensor.stim_frequency BY 10%
+}
+
+EVERY 1 hour DO {
+  RUN viability_check()
+  RECORD performance_snapshot()
+}
+
+// === Test Suite ===
+TEST unit_response {
+  description: "Single muscle contraction test"
+  GIVEN flexor.state == "ready"
+  WHEN STIMULATE flexor AT 10 Hz, 2 V FOR 1 s
+  THEN EXPECT flexor.force IN [5, 15] mN WITHIN 200 ms
+}
+
+TEST antagonist_balance {
+  description: "Antagonist coordination test"
+  GIVEN system.mode == "active"
+  WHEN ACTIVATE flexor AND extensor SIMULTANEOUSLY
+  THEN EXPECT |flexor.force - extensor.force| < 5 mN
+}
+
+// === Expected Performance ===
+EXPECTED {
+  position_accuracy: +/-2 mN,
+  bandwidth: [0, 2] Hz,
+  lifetime: [7, 14] days,
+  power_consumption: [50, 100] mW
+}
+\end{lstlisting}
+
+\section{Complete Bio-Component Specification Schema}
+
+The full JSON Schema for Bio-Component Spec v0.1:
+
+\begin{lstlisting}
+{
+  "$schema": "https://wetware-engineering.org/schema/bio-component/1.0",
+  "type": "object",
+  "required": ["bio-component", "info", "classification", 
+               "source", "interface"],
+  "properties": {
+    "bio-component": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+$"
+    },
+    "info": {
+      "type": "object",
+      "required": ["id", "name", "version"],
+      "properties": {
+        "id": {"type": "string", "pattern": "^[a-z0-9-]+$"},
+        "name": {"type": "string"},
+        "version": {"type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+"},
+        "description": {"type": "string"},
+        "license": {"type": "string"},
+        "authors": {"type": "array", "items": {"type": "string"}},
+        "repository": {"type": "string", "format": "uri"}
+      }
+    },
+    "classification": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": ["actuator", "sensor", "processor", 
+                   "metabolic", "structural", "connector"]
+        },
+        "domain": {"type": "string"},
+        "tags": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "source": {
+      "type": "object",
+      "properties": {
+        "organism": {"type": "string"},
+        "tissue_type": {"type": "string"},
+        "cell_types": {"type": "array", "items": {"type": "string"}},
+        "cell_line": {"type": "string"},
+        "genetic_modifications": {"type": "array"},
+        "culture_protocol": {"type": "string", "format": "uri"},
+        "biosafety_level": {"enum": ["BSL-1", "BSL-2", "BSL-3", "BSL-4"]}
+      }
+    },
+    "interface": {
+      "type": "object",
+      "properties": {
+        "inputs": {"type": "array", "items": {"$ref": "#/defs/Port"}},
+        "outputs": {"type": "array", "items": {"$ref": "#/defs/Port"}}
+      }
+    },
+    "requirements": {
+      "type": "object",
+      "properties": {
+        "physical": {"$ref": "#/defs/PhysicalReq"},
+        "chemical": {"$ref": "#/defs/ChemicalReq"},
+        "biological": {"$ref": "#/defs/BiologicalReq"}
+      }
+    },
+    "performance": {
+      "type": "object",
+      "properties": {
+        "functional": {"type": "object"},
+        "reliability": {"type": "object"},
+        "resources": {"type": "object"}
+      }
+    },
+    "failure_modes": {
+      "type": "array",
+      "items": {"$ref": "#/defs/FailureMode"}
+    },
+    "testing": {
+      "type": "object",
+      "properties": {
+        "unit_tests": {"type": "array"},
+        "integration_tests": {"type": "array"}
+      }
+    },
+    "dependencies": {
+      "type": "object",
+      "properties": {
+        "components": {"type": "array"},
+        "adapters": {"type": "array"},
+        "protocols": {"type": "array"}
+      }
+    }
+  }
+}
+\end{lstlisting}
+
 \end{document}
