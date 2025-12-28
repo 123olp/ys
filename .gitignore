@@ -46,7 +46,6 @@ dump.sql
 # IDE
 .vscode/
 .idea/
-.github/
 *.swp
 *.swo
 *~
