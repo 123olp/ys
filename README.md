@@ -92,6 +92,7 @@ RUNTIME {
 | 中文 | English | 说明 |
 |-----|---------|------|
 | [快速入门指南](i18n/zh/湿件工程快速入门指南.md) | [Quick Start](i18n/en/wetware_engineering_quick_start.md) | 5分钟理解核心概念 |
+| [傻子博士解读版本](i18n/zh/傻子博士解读版本.md) | - | 大白话版本，零门槛理解 |
 | [湿件工程](i18n/zh/湿件工程.md) | [Wetware Engineering](i18n/en/wetware_engineering.md) | 完整概念介绍 |
 | [湿件工程宣言](i18n/zh/湿件工程宣言.md) | [Manifesto](i18n/en/wetware_engineering_manifesto.md) | 愿景与原则 |
 | [技术规范](i18n/zh/湿件工程技术规范.md) | [Technical Spec](i18n/en/wetware_engineering_technical_spec.md) | Bio-Component Spec & Bio-DSL |
