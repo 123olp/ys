@@ -182,11 +182,6 @@ wetware-engineering/
 │   ├── sections/                    # 论文章节（Markdown）
 │   └── wetware_engineering_full_paper.md  # 完整草稿
 │
-├── backups/                         # 备份工具
-│   ├── gz/                          # 压缩备份存放目录
-│   ├── 快速备份.py                  # Python 备份脚本
-│   └── 一键备份.sh                  # Shell 备份脚本
-│
 └── .github/
     ├── workflows/lint.yml           # Markdown lint CI
     ├── ISSUE_TEMPLATE/              # Issue 模板
