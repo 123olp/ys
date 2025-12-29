@@ -30,6 +30,7 @@ MANIFEST
 *.png
 prompts/
 *.jpg
+prototype/
 
 # Virtual Environment
 .venv
@@ -118,3 +119,4 @@ backups/gz/
 *.session-journal
 /services/**/.runtime/*.pid
 out/
+prototype/
