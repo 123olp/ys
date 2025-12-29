@@ -148,6 +148,8 @@ RUNTIME {
 wetware-engineering/
 ├── README.md                        # 本文件 - 项目主页
 ├── AGENTS.md                        # AI Agent 操作手册
+├── Makefile                         # 常用命令（lint/paper/clean/backup）
+├── metadata.yaml                    # 项目元数据
 ├── LICENSE                          # CC BY-SA 4.0 许可证
 ├── CONTRIBUTING.md                  # 贡献指南
 ├── CODE_OF_CONDUCT.md               # 行为准则
