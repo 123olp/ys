@@ -280,6 +280,11 @@ git push origin docs/your-improvement
 - **GitHub**: https://github.com/tukuaiai/wetware-engineering
 - **作者 ORCID**: [0009-0009-6523-1823](https://orcid.org/0009-0009-6523-1823)
 
+### 🤖 AI 解读
+
+- **ZRead AI**: [zread.ai/tukuaiai/wetware-engineering](https://zread.ai/tukuaiai/wetware-engineering) - AI 驱动的仓库解读
+- **NotebookLM**: [Google NotebookLM 笔记本](https://notebooklm.google.com/notebook/11e804ff-ae6f-4b27-b2f0-e94c2e98ce3a) - AI 辅助学习笔记
+
 ---
 
 <p align="center">
