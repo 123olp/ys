@@ -1,12 +1,9 @@
-# Wetware Engineering - 项目元数据
-# Project Metadata
+# Wetware Engineering - Project Metadata
 
 project:
   name: Wetware Engineering
-  name_zh: 湿件工程
   version: 0.1.0
   description: Applying Software Engineering Paradigms to Biological System Construction
-  description_zh: 用软件工程范式重构生命系统
 
 author:
   name: 123olp
@@ -28,5 +25,5 @@ specs:
   bio_dsl: draft
 
 languages:
-  - zh
   - en
+  - zh
