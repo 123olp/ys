@@ -97,43 +97,82 @@ This is a pure documentation project with no build/test commands.
 
 ```
 wetware-engineering/
-├── README.md                    # Project homepage
+├── README.md                    # Project homepage (bilingual)
 ├── AGENTS.md                    # This file - AI Agent guide
 ├── CONTRIBUTING.md              # Contribution guide
 ├── CODE_OF_CONDUCT.md           # Code of conduct
 ├── LICENSE                      # CC BY-SA 4.0
 │
 ├── i18n/zh/                     # Chinese docs
-│   ├── README.md
-│   ├── 湿件工程.md
-│   ├── 湿件工程宣言.md
-│   ├── 湿件工程技术规范.md
-│   ├── 湿件工程快速入门指南.md
-│   ├── 傻子博士解读版本.md
+│   ├── README.md                # Chinese index
+│   ├── 湿件工程.md              # Core concepts
+│   ├── 湿件工程宣言.md          # Manifesto
+│   ├── 湿件工程技术规范.md      # Technical spec (Bio-Component Spec + Bio-DSL)
+│   ├── 湿件工程快速入门指南.md  # Quick start
+│   ├── 傻子博士解读版本.md      # Plain language version
 │   └── src/immortality/         # Immortality Project (Chinese)
-│       ├── docs/core/
-│       ├── docs/philosophy/
-│       └── docs/guides/
+│       ├── README.md            # Project overview
+│       ├── AGENTS.md            # Subproject Agent guide
+│       ├── docs/core/           # Core documents
+│       │   ├── human_3.0_architecture.md
+│       │   ├── human_3.0_architecture_academic.md
+│       │   ├── human_3.0_technical_blueprint.md
+│       │   ├── human_3.0_technical_blueprint_academic.md
+│       │   ├── immortality_27_elements.md
+│       │   └── immortality_27_elements_academic.md
+│       ├── docs/philosophy/     # Philosophy
+│       │   ├── emotion_modeling.md
+│       │   ├── emotion_modeling_academic.md
+│       │   ├── ontology_experience_machine.md
+│       │   └── ontology_experience_machine_academic.md
+│       ├── docs/guides/         # Guides
+│       │   ├── human_3.0_social_media.md
+│       │   └── human_3.0_social_media_academic.md
+│       └── data/                # Data templates
 │
 ├── i18n/en/                     # English docs
-│   ├── README.md
+│   ├── README.md                # English index
 │   ├── wetware_engineering.md
 │   ├── wetware_engineering_manifesto.md
 │   ├── wetware_engineering_technical_spec.md
 │   ├── wetware_engineering_quick_start.md
 │   ├── dummy_doctor_explanation.md
 │   └── src/immortality/         # Immortality Project (EN)
-│       ├── docs/core/
-│       ├── docs/philosophy/
-│       └── docs/guides/
+│       ├── README.md
+│       ├── AGENTS.md
+│       ├── docs/core/           # Core documents
+│       │   ├── human_3.0_architecture.md
+│       │   ├── human_3.0_architecture_academic.md
+│       │   ├── human_3.0_technical_blueprint_academic.md
+│       │   ├── immortality_27_elements.md
+│       │   └── immortality_27_elements_academic.md
+│       ├── docs/philosophy/     # Philosophy
+│       │   ├── emotion_modeling.md
+│       │   ├── emotion_modeling_academic.md
+│       │   ├── ontology_experience_machine.md
+│       │   └── ontology_experience_machine_academic.md
+│       └── docs/guides/         # Guides
+│           ├── human_3.0_social_media.md
+│           └── human_3.0_social_media_academic.md
 │
 ├── paper/                       # Academic paper
-│   ├── arxiv/
-│   └── sections/
+│   ├── arxiv/                   # arXiv submission version
+│   │   ├── wetware_engineering.tex   # LaTeX source
+│   │   ├── wetware_engineering.pdf   # Compiled PDF (13 pages)
+│   │   ├── arxiv.sty            # arXiv style
+│   │   └── orcid.pdf            # ORCID icon
+│   ├── sections/                # Paper sections (Markdown)
+│   └── wetware_engineering_full_paper.md  # Complete draft
+│
+├── backups/                     # Backup tools
+│   ├── gz/                      # Compressed backup storage
+│   ├── 快速备份.py
+│   └── 一键备份.sh
 │
 └── .github/
-    ├── workflows/lint.yml
-    └── ISSUE_TEMPLATE/
+    ├── workflows/lint.yml       # Markdown lint CI
+    ├── ISSUE_TEMPLATE/          # Issue templates
+    └── PULL_REQUEST_TEMPLATE.md # PR template
 ```
 
 ## 7. Common Pitfalls

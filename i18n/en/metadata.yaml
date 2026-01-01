@@ -1,0 +1,29 @@
+# Wetware Engineering - Project Metadata
+
+project:
+  name: Wetware Engineering
+  version: 0.1.0
+  description: Applying Software Engineering Paradigms to Biological System Construction
+
+author:
+  name: 123olp
+  orcid: 0009-0009-6523-1823
+  affiliation: Independent Researcher
+
+repository:
+  url: https://github.com/tukuaiai/wetware-engineering
+  license: CC-BY-SA-4.0
+
+paper:
+  title: "Wetware Engineering: Applying Software Engineering Paradigms to Biological System Construction"
+  format: arXiv
+  pages: 13
+  status: preprint
+
+specs:
+  bio_component_spec: v0.1
+  bio_dsl: draft
+
+languages:
+  - zh
+  - en
