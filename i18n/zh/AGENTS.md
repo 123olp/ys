@@ -1,243 +1,221 @@
 # AGENTS.md
 
-> AI Agent 操作手册 - Wetware Engineering 项目
+> AI Agent Operating Manual - Wetware Engineering Project
 
-## 1. Mission & Scope（目标与边界）
+## 1. Mission & Scope
 
-### 允许的操作
-- 编辑/新增 `i18n/` 目录下的文档文件 (`.md`)
-- 编辑/新增 `paper/` 目录下的论文相关文件
-- 更新 README.md、AGENTS.md、CONTRIBUTING.md
-- 添加新的 Bio-DSL 示例
-- 修复文档中的错误链接和格式问题
+### Allowed Operations
 
-### 禁止的操作
-- 删除任何现有文档（除非明确要求）
-- 修改 LICENSE 文件
-- 修改 `.github/workflows/` 中的 CI 配置（除非明确要求）
-- 在文档中编造技术细节或引用
+- Edit/create documentation files (`.md`) under `i18n/` directory
+- Edit/create paper-related files under `paper/` directory
+- Update README.md, AGENTS.md, CONTRIBUTING.md
+- Add new Bio-DSL examples
+- Fix broken links and formatting issues in documentation
 
-### 敏感区域（修改需谨慎）
-- `i18n/zh/湿件工程技术规范.md` - Bio-Component Spec 核心定义
-- `i18n/*/src/immortality/` - 永生计划子项目
-- `paper/arxiv/wetware_engineering.tex` - 学术论文 LaTeX 源码
+### Prohibited Operations
 
-## 2. Golden Path（推荐执行路径）
+- Delete any existing documentation (unless explicitly requested)
+- Modify LICENSE file
+- Modify CI configuration in `.github/workflows/` (unless explicitly requested)
+- Fabricate technical details or citations in documentation
+
+### Sensitive Areas (Modify with Caution)
+
+- `i18n/zh/湿件工程技术规范.md` - Bio-Component Spec core definitions
+- `i18n/*/src/immortality/` - Immortality Project subproject
+- `paper/arxiv/wetware_engineering.tex` - Academic paper LaTeX source
+
+## 2. Golden Path (Recommended Workflow)
 
 ```bash
-# 1. 克隆仓库
+# 1. Clone repository
 git clone https://github.com/tukuaiai/wetware-engineering.git
 cd wetware-engineering
 
-# 2. 查看文档结构
+# 2. View documentation structure
 ls -la i18n/zh/
 ls -la i18n/en/
 
-# 3. 编辑文档
-# ... 进行修改 ...
+# 3. Edit documentation
+# ... make changes ...
 
-# 4. 检查 Markdown 格式（本地可选）
+# 4. Check Markdown format (optional locally)
 # npx markdownlint-cli2 "**/*.md"
 
-# 5. 提交更改
+# 5. Commit changes
 git add .
-git commit -m "docs: <描述变更>"
+git commit -m "docs: <describe changes>"
 git push
 ```
 
-## 3. Must-Run Commands（必须执行的命令）
+## 3. Must-Run Commands
 
-本项目为纯文档项目，无构建/测试命令。
+This is a pure documentation project with no build/test commands.
 
-| 场景 | 命令 | 说明 |
-|-----|------|------|
-| 查看结构 | `find i18n -name "*.md" \| head -20` | 列出文档文件 |
-| 格式检查 | `npx markdownlint-cli2 "**/*.md"` | 可选，CI 会自动运行 |
-| 编译论文 | `cd paper/arxiv && xelatex wetware_engineering.tex` | 需要 texlive-full |
+| Scenario | Command | Description |
+|----------|---------|-------------|
+| View structure | `find i18n -name "*.md" \| head -20` | List documentation files |
+| Format check | `npx markdownlint-cli2 "**/*.md"` | Optional, CI runs automatically |
+| Compile paper | `cd paper/arxiv && xelatex wetware_engineering.tex` | Requires texlive-full |
 
-## 4. Code Change Rules（修改约束）
+## 4. Code Change Rules
 
-### 文档编写原则
-- 中文文档放 `i18n/zh/`，英文文档放 `i18n/en/`
-- 永生计划文档放 `i18n/*/src/immortality/`
-- 学术论文放 `paper/`
-- 文件名使用中文（中文文档）或英文小写下划线（英文文档）
+### Documentation Writing Principles
 
-### 链接规则
-- 使用相对路径链接
-- 链接到其他文档时确保路径正确（注意 `src/` 层级）
+- Chinese docs go in `i18n/zh/`, English docs go in `i18n/en/`
+- Immortality Project docs go in `i18n/*/src/immortality/`
+- Academic papers go in `paper/`
+- Filenames use Chinese (for Chinese docs) or lowercase_underscore (for English docs)
 
-### 禁止行为
-- 不得随意重构目录结构
-- 不得删除 `_academic.md` 后缀的学术版文档
-- 不得修改 Bio-DSL 语法定义（除非明确要求）
+### Link Rules
 
-## 5. Style & Quality（风格与质量标准）
+- Use relative path links
+- Ensure correct paths when linking to other documents (note `src/` hierarchy)
 
-### Markdown 规范
-- CI 使用 markdownlint-cli2 检查
-- 已禁用规则：MD013（行长度）、MD033（HTML）、MD041（首行标题）
+### Prohibited Behaviors
 
-### 命名约定
-- 中文文档：`湿件工程*.md`
-- 英文文档：`snake_case.md`
-- 学术版后缀：`*_academic.md`
+- Do not arbitrarily restructure directory layout
+- Do not delete `_academic.md` suffixed academic version documents
+- Do not modify Bio-DSL syntax definitions (unless explicitly requested)
 
-### 文档结构
-- 每个文档必须有一级标题
-- 使用适当的标题层级（不跳级）
-- 代码块标注语言类型
+## 5. Style & Quality
 
-### LaTeX 论文规范
-- 使用 arXiv 标准模板 (`arxiv.sty`)
-- 参考文献使用 `\textit{}` 标注期刊/书名
-- 单位使用 `\,` 分隔数字和单位
+### Markdown Standards
 
-## 6. Project Map（项目结构速览）
+- CI uses markdownlint-cli2 for checking
+- Disabled rules: MD013 (line length), MD033 (HTML), MD041 (first line heading)
 
-```
+### Naming Conventions
+
+- Chinese docs: `湿件工程*.md`
+- English docs: `snake_case.md`
+- Academic version suffix: `*_academic.md`
+
+### Document Structure
+
+- Every document must have a level-1 heading
+- Use appropriate heading hierarchy (no skipping levels)
+- Annotate code blocks with language type
+
+### LaTeX Paper Standards
+
+- Use arXiv standard template (`arxiv.sty`)
+- Use `\textit{}` for journal/book names in references
+- Use `\,` to separate numbers and units
+
+## 6. Project Map
+
+```text
 wetware-engineering/
-├── README.md                    # 项目主页（双语）
-├── AGENTS.md                    # 本文件 - AI Agent 指南
-├── CONTRIBUTING.md              # 贡献指南
-├── CODE_OF_CONDUCT.md           # 行为准则
+├── README.md                    # Project homepage
+├── AGENTS.md                    # This file - AI Agent guide
+├── CONTRIBUTING.md              # Contribution guide
+├── CODE_OF_CONDUCT.md           # Code of conduct
 ├── LICENSE                      # CC BY-SA 4.0
 │
-├── i18n/zh/                     # 中文文档
-│   ├── README.md                # 中文索引
-│   ├── 湿件工程.md              # 核心概念
-│   ├── 湿件工程宣言.md          # 宣言
-│   ├── 湿件工程技术规范.md      # 技术规范（Bio-Component Spec + Bio-DSL）
-│   ├── 湿件工程快速入门指南.md  # 快速入门
-│   ├── 傻子博士解读版本.md      # 大白话版本
-│   └── src/immortality/         # 永生计划（中文）
-│       ├── README.md            # 项目概述
-│       ├── AGENTS.md            # 子项目 Agent 指南
-│       ├── docs/core/           # 核心文档
-│       │   ├── human_3.0_architecture.md
-│       │   ├── human_3.0_architecture_academic.md
-│       │   ├── human_3.0_technical_blueprint.md
-│       │   ├── human_3.0_technical_blueprint_academic.md
-│       │   ├── immortality_27_elements.md
-│       │   └── immortality_27_elements_academic.md
-│       ├── docs/philosophy/     # 哲学探讨
-│       │   ├── emotion_modeling.md
-│       │   ├── emotion_modeling_academic.md
-│       │   ├── ontology_experience_machine.md
-│       │   └── ontology_experience_machine_academic.md
-│       ├── docs/guides/         # 指南
-│       │   ├── human_3.0_social_media.md
-│       │   └── human_3.0_social_media_academic.md
-│       └── data/                # 数据模板
+├── i18n/zh/                     # Chinese docs
+│   ├── README.md
+│   ├── 湿件工程.md
+│   ├── 湿件工程宣言.md
+│   ├── 湿件工程技术规范.md
+│   ├── 湿件工程快速入门指南.md
+│   ├── 傻子博士解读版本.md
+│   └── src/immortality/         # Immortality Project (Chinese)
+│       ├── docs/core/
+│       ├── docs/philosophy/
+│       └── docs/guides/
 │
 ├── i18n/en/                     # English docs
-│   ├── README.md                # English index
+│   ├── README.md
 │   ├── wetware_engineering.md
 │   ├── wetware_engineering_manifesto.md
 │   ├── wetware_engineering_technical_spec.md
 │   ├── wetware_engineering_quick_start.md
 │   ├── dummy_doctor_explanation.md
 │   └── src/immortality/         # Immortality Project (EN)
-│       ├── README.md
-│       ├── AGENTS.md
-│       ├── docs/core/           # Core documents
-│       │   ├── human_3.0_architecture.md
-│       │   ├── human_3.0_architecture_academic.md
-│       │   ├── human_3.0_technical_blueprint_academic.md
-│       │   ├── immortality_27_elements.md
-│       │   └── immortality_27_elements_academic.md
-│       ├── docs/philosophy/     # Philosophy
-│       │   ├── emotion_modeling.md
-│       │   ├── emotion_modeling_academic.md
-│       │   ├── ontology_experience_machine.md
-│       │   └── ontology_experience_machine_academic.md
-│       └── docs/guides/         # Guides
-│           ├── human_3.0_social_media.md
-│           └── human_3.0_social_media_academic.md
+│       ├── docs/core/
+│       ├── docs/philosophy/
+│       └── docs/guides/
 │
-├── paper/                       # 学术论文
-│   ├── arxiv/                   # arXiv 投稿版本
-│   │   ├── wetware_engineering.tex   # LaTeX 源码
-│   │   ├── wetware_engineering.pdf   # 编译后 PDF (13页)
-│   │   ├── arxiv.sty            # arXiv 样式
-│   │   └── orcid.pdf            # ORCID 图标
-│   ├── sections/                # 论文章节 (Markdown)
-│   └── wetware_engineering_full_paper.md  # 完整草稿
-│
-├── backups/                     # 备份工具
-│   ├── gz/                      # 压缩备份存放
-│   ├── 快速备份.py
-│   └── 一键备份.sh
+├── paper/                       # Academic paper
+│   ├── arxiv/
+│   └── sections/
 │
 └── .github/
-    ├── workflows/lint.yml       # Markdown lint CI
-    ├── ISSUE_TEMPLATE/          # Issue 模板
-    └── PULL_REQUEST_TEMPLATE.md # PR 模板
+    ├── workflows/lint.yml
+    └── ISSUE_TEMPLATE/
 ```
 
-## 7. Common Pitfalls（常见坑）
+## 7. Common Pitfalls
 
-| 问题 | 原因 | 解决方案 |
-|-----|------|---------|
-| 链接 404 | 路径缺少 `src/` | 检查实际文件位置 |
-| CI lint 失败 | Markdown 格式问题 | 本地运行 `npx markdownlint-cli2` 检查 |
-| 中文文件名乱码 | Git 配置问题 | 确保 `git config core.quotepath false` |
-| LaTeX 编译失败 | 缺少依赖 | 安装 `texlive-full` |
-| PDF 字体问题 | 使用 pdflatex | 改用 `xelatex` 编译 |
+| Problem | Cause | Solution |
+|---------|-------|----------|
+| Link 404 | Path missing `src/` | Check actual file location |
+| CI lint failure | Markdown format issues | Run `npx markdownlint-cli2` locally |
+| Chinese filename garbled | Git config issue | Ensure `git config core.quotepath false` |
+| LaTeX compile failure | Missing dependencies | Install `texlive-full` |
+| PDF font issues | Using pdflatex | Use `xelatex` instead |
 
-## 8. PR / Commit Rules（提交规则）
+## 8. PR / Commit Rules
 
-### Commit Message 格式
-```
+### Commit Message Format
+
+```text
 <type>: <description>
 
 type: docs / fix / chore / refactor
 ```
 
-示例：
+Examples:
+
 - `docs: add Bio-DSL example for neural controller`
 - `docs: update paper formatting for arXiv submission`
 - `fix: correct link to immortality roadmap`
 - `chore: update .gitignore`
 
-### 分支策略
-- 主分支：`main`
-- 功能分支：`feature/<topic>` 或 `docs/<topic>`
+### Branch Strategy
 
-### CI 触发
-- Push 到任意分支的 `.md` 文件变更会触发 Markdown lint
+- Main branch: `main`
+- Feature branches: `feature/<topic>` or `docs/<topic>`
 
-## 9. Documentation Sync Rule（文档同步规则）
+### CI Triggers
 
-### 强制同步要求
-任何以下变更必须同步更新 README.md 和 AGENTS.md：
-- 目录结构变化
-- 新增/删除文档文件
-- 链接路径变更
-- 工作流/CI 配置变更
+- Push to any branch with `.md` file changes triggers Markdown lint
 
-### 不确定时
-- 使用 `TODO: <需要确认的内容>` 标注
-- 不允许猜测或编造
+## 9. Documentation Sync Rule
+
+### Mandatory Sync Requirements
+
+Any of the following changes must sync updates to README.md and AGENTS.md:
+
+- Directory structure changes
+- Adding/removing documentation files
+- Link path changes
+- Workflow/CI configuration changes
+
+### When Uncertain
+
+- Use `TODO: <content needing confirmation>` annotation
+- Do not guess or fabricate
 
 ---
 
-## Key Concepts（核心概念速查）
+## Key Concepts (Quick Reference)
 
-- **Bio-Component**: 可独立功能的生物模块单元（执行器/传感器/处理器/代谢单元）
-- **Bio-Interface**: 标准化连接（供能/信号/隔离/机械）
-- **Bio-DSL**: 描述组件组合的领域特定语言
-- **Bio-Runtime**: 负责调度、资源管理、监控的编排系统
+- **Bio-Component**: Independently functional biological module unit (actuator/sensor/processor/metabolic unit)
+- **Bio-Interface**: Standardized connections (power/signal/isolation/mechanical)
+- **Bio-DSL**: Domain-specific language for describing component composition
+- **Bio-Runtime**: Orchestration system responsible for scheduling, resource management, monitoring
 
-## Current Status（当前状态）
+## Current Status
 
-| 模块 | 状态 |
-|-----|------|
-| 核心概念 | ✅ 已定义 |
-| Bio-Component Spec | ✅ v0.1 草案 |
-| Bio-DSL 语法 | ✅ 草案完成 |
-| 中文文档 | ✅ 完成 |
-| 英文文档 | ✅ 完成 |
-| 学术论文 | ✅ Preprint 完成 (13页) |
-| arXiv 投稿 | 📋 待提交 |
-| 参考实现 | 📋 计划中 |
+| Module | Status |
+|--------|--------|
+| Core Concepts | ✅ Defined |
+| Bio-Component Spec | ✅ v0.1 Draft |
+| Bio-DSL Syntax | ✅ Draft Complete |
+| Chinese Docs | ✅ Complete |
+| English Docs | ✅ Complete |
+| Academic Paper | ✅ Preprint Complete (13 pages) |
+| arXiv Submission | 📋 Pending |
+| Reference Implementation | 📋 Planned |

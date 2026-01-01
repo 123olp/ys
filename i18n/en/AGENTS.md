@@ -5,6 +5,7 @@
 ## 1. Mission & Scope
 
 ### Allowed Operations
+
 - Edit/create documentation files (`.md`) under `i18n/` directory
 - Edit/create paper-related files under `paper/` directory
 - Update README.md, AGENTS.md, CONTRIBUTING.md
@@ -12,12 +13,14 @@
 - Fix broken links and formatting issues in documentation
 
 ### Prohibited Operations
+
 - Delete any existing documentation (unless explicitly requested)
 - Modify LICENSE file
 - Modify CI configuration in `.github/workflows/` (unless explicitly requested)
 - Fabricate technical details or citations in documentation
 
 ### Sensitive Areas (Modify with Caution)
+
 - `i18n/zh/湿件工程技术规范.md` - Bio-Component Spec core definitions
 - `i18n/*/src/immortality/` - Immortality Project subproject
 - `paper/arxiv/wetware_engineering.tex` - Academic paper LaTeX source
@@ -58,16 +61,19 @@ This is a pure documentation project with no build/test commands.
 ## 4. Code Change Rules
 
 ### Documentation Writing Principles
+
 - Chinese docs go in `i18n/zh/`, English docs go in `i18n/en/`
 - Immortality Project docs go in `i18n/*/src/immortality/`
 - Academic papers go in `paper/`
 - Filenames use Chinese (for Chinese docs) or lowercase_underscore (for English docs)
 
 ### Link Rules
+
 - Use relative path links
 - Ensure correct paths when linking to other documents (note `src/` hierarchy)
 
 ### Prohibited Behaviors
+
 - Do not arbitrarily restructure directory layout
 - Do not delete `_academic.md` suffixed academic version documents
 - Do not modify Bio-DSL syntax definitions (unless explicitly requested)
@@ -75,104 +81,69 @@ This is a pure documentation project with no build/test commands.
 ## 5. Style & Quality
 
 ### Markdown Standards
+
 - CI uses markdownlint-cli2 for checking
 - Disabled rules: MD013 (line length), MD033 (HTML), MD041 (first line heading)
 
 ### Naming Conventions
+
 - Chinese docs: `湿件工程*.md`
 - English docs: `snake_case.md`
 - Academic version suffix: `*_academic.md`
 
 ### Document Structure
+
 - Every document must have a level-1 heading
 - Use appropriate heading hierarchy (no skipping levels)
 - Annotate code blocks with language type
 
 ### LaTeX Paper Standards
+
 - Use arXiv standard template (`arxiv.sty`)
 - Use `\textit{}` for journal/book names in references
 - Use `\,` to separate numbers and units
 
 ## 6. Project Map
 
-```
+```text
 wetware-engineering/
-├── README.md                    # Project homepage (bilingual)
+├── README.md                    # Project homepage
 ├── AGENTS.md                    # This file - AI Agent guide
 ├── CONTRIBUTING.md              # Contribution guide
 ├── CODE_OF_CONDUCT.md           # Code of conduct
 ├── LICENSE                      # CC BY-SA 4.0
 │
 ├── i18n/zh/                     # Chinese docs
-│   ├── README.md                # Chinese index
-│   ├── 湿件工程.md              # Core concepts
-│   ├── 湿件工程宣言.md          # Manifesto
-│   ├── 湿件工程技术规范.md      # Technical spec (Bio-Component Spec + Bio-DSL)
-│   ├── 湿件工程快速入门指南.md  # Quick start
-│   ├── 傻子博士解读版本.md      # Plain language version
+│   ├── README.md
+│   ├── 湿件工程.md
+│   ├── 湿件工程宣言.md
+│   ├── 湿件工程技术规范.md
+│   ├── 湿件工程快速入门指南.md
+│   ├── 傻子博士解读版本.md
 │   └── src/immortality/         # Immortality Project (Chinese)
-│       ├── README.md            # Project overview
-│       ├── AGENTS.md            # Subproject Agent guide
-│       ├── docs/core/           # Core documents
-│       │   ├── human_3.0_architecture.md
-│       │   ├── human_3.0_architecture_academic.md
-│       │   ├── human_3.0_technical_blueprint.md
-│       │   ├── human_3.0_technical_blueprint_academic.md
-│       │   ├── immortality_27_elements.md
-│       │   └── immortality_27_elements_academic.md
-│       ├── docs/philosophy/     # Philosophy
-│       │   ├── emotion_modeling.md
-│       │   ├── emotion_modeling_academic.md
-│       │   ├── ontology_experience_machine.md
-│       │   └── ontology_experience_machine_academic.md
-│       ├── docs/guides/         # Guides
-│       │   ├── human_3.0_social_media.md
-│       │   └── human_3.0_social_media_academic.md
-│       └── data/                # Data templates
+│       ├── docs/core/
+│       ├── docs/philosophy/
+│       └── docs/guides/
 │
 ├── i18n/en/                     # English docs
-│   ├── README.md                # English index
+│   ├── README.md
 │   ├── wetware_engineering.md
 │   ├── wetware_engineering_manifesto.md
 │   ├── wetware_engineering_technical_spec.md
 │   ├── wetware_engineering_quick_start.md
 │   ├── dummy_doctor_explanation.md
 │   └── src/immortality/         # Immortality Project (EN)
-│       ├── README.md
-│       ├── AGENTS.md
-│       ├── docs/core/           # Core documents
-│       │   ├── human_3.0_architecture.md
-│       │   ├── human_3.0_architecture_academic.md
-│       │   ├── human_3.0_technical_blueprint_academic.md
-│       │   ├── immortality_27_elements.md
-│       │   └── immortality_27_elements_academic.md
-│       ├── docs/philosophy/     # Philosophy
-│       │   ├── emotion_modeling.md
-│       │   ├── emotion_modeling_academic.md
-│       │   ├── ontology_experience_machine.md
-│       │   └── ontology_experience_machine_academic.md
-│       └── docs/guides/         # Guides
-│           ├── human_3.0_social_media.md
-│           └── human_3.0_social_media_academic.md
+│       ├── docs/core/
+│       ├── docs/philosophy/
+│       └── docs/guides/
 │
 ├── paper/                       # Academic paper
-│   ├── arxiv/                   # arXiv submission version
-│   │   ├── wetware_engineering.tex   # LaTeX source
-│   │   ├── wetware_engineering.pdf   # Compiled PDF (13 pages)
-│   │   ├── arxiv.sty            # arXiv style
-│   │   └── orcid.pdf            # ORCID icon
-│   ├── sections/                # Paper sections (Markdown)
-│   └── wetware_engineering_full_paper.md  # Complete draft
-│
-├── backups/                     # Backup tools
-│   ├── gz/                      # Compressed backup storage
-│   ├── 快速备份.py
-│   └── 一键备份.sh
+│   ├── arxiv/
+│   └── sections/
 │
 └── .github/
-    ├── workflows/lint.yml       # Markdown lint CI
-    ├── ISSUE_TEMPLATE/          # Issue templates
-    └── PULL_REQUEST_TEMPLATE.md # PR template
+    ├── workflows/lint.yml
+    └── ISSUE_TEMPLATE/
 ```
 
 ## 7. Common Pitfalls
@@ -188,35 +159,42 @@ wetware-engineering/
 ## 8. PR / Commit Rules
 
 ### Commit Message Format
-```
+
+```text
 <type>: <description>
 
 type: docs / fix / chore / refactor
 ```
 
 Examples:
+
 - `docs: add Bio-DSL example for neural controller`
 - `docs: update paper formatting for arXiv submission`
 - `fix: correct link to immortality roadmap`
 - `chore: update .gitignore`
 
 ### Branch Strategy
+
 - Main branch: `main`
 - Feature branches: `feature/<topic>` or `docs/<topic>`
 
 ### CI Triggers
+
 - Push to any branch with `.md` file changes triggers Markdown lint
 
 ## 9. Documentation Sync Rule
 
 ### Mandatory Sync Requirements
+
 Any of the following changes must sync updates to README.md and AGENTS.md:
+
 - Directory structure changes
 - Adding/removing documentation files
 - Link path changes
 - Workflow/CI configuration changes
 
 ### When Uncertain
+
 - Use `TODO: <content needing confirmation>` annotation
 - Do not guess or fabricate
 

@@ -1,36 +1,39 @@
 # Contributing to Wetware Engineering
 
-感谢你对湿件工程项目的兴趣！
+Thank you for your interest in the Wetware Engineering project!
 
-## 如何贡献
+## How to Contribute
 
-### 文档改进
-- 修正错误或不清晰的表述
-- 翻译文档到其他语言
-- 添加示例和用例
+### Documentation Improvements
 
-### 规范建议
-- 在 Issues 中提出 Bio-Component Spec 改进建议
-- 讨论 Bio-DSL 语法扩展
-- 提出新的接口类型定义
+- Fix errors or unclear expressions
+- Translate documentation to other languages
+- Add examples and use cases
 
-### 代码贡献
-- 工具链开发
-- 参考实现
-- 测试框架
+### Specification Suggestions
 
-## 提交流程
+- Propose Bio-Component Spec improvements in Issues
+- Discuss Bio-DSL syntax extensions
+- Propose new interface type definitions
 
-1. Fork 本仓库
-2. 创建特性分支 (`git checkout -b feature/your-feature`)
-3. 提交更改 (`git commit -m 'Add some feature'`)
-4. 推送到分支 (`git push origin feature/your-feature`)
-5. 创建 Pull Request
+### Code Contributions
 
-## 行为准则
+- Tool chain development
+- Reference implementations
+- Testing frameworks
 
-请参阅 [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)
+## Submission Process
 
-## 许可
+1. Fork this repository
+2. Create a feature branch (`git checkout -b feature/your-feature`)
+3. Commit your changes (`git commit -m 'Add some feature'`)
+4. Push to the branch (`git push origin feature/your-feature`)
+5. Create a Pull Request
 
-贡献内容将采用 CC BY-SA 4.0 许可证发布。
+## Code of Conduct
+
+Please refer to [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)
+
+## License
+
+Contributions will be released under the CC BY-SA 4.0 license.
