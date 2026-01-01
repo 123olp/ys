@@ -5,6 +5,7 @@
 ## 1. Mission & Scope
 
 ### Allowed Operations
+
 - Edit/create documentation files (`.md`) under `i18n/` directory
 - Edit/create paper-related files under `paper/` directory
 - Update README.md, AGENTS.md, CONTRIBUTING.md
@@ -12,12 +13,14 @@
 - Fix broken links and formatting issues in documentation
 
 ### Prohibited Operations
+
 - Delete any existing documentation (unless explicitly requested)
 - Modify LICENSE file
 - Modify CI configuration in `.github/workflows/` (unless explicitly requested)
 - Fabricate technical details or citations in documentation
 
 ### Sensitive Areas (Modify with Caution)
+
 - `i18n/zh/湿件工程技术规范.md` - Bio-Component Spec core definitions
 - `i18n/*/src/immortality/` - Immortality Project subproject
 - `paper/arxiv/wetware_engineering.tex` - Academic paper LaTeX source
@@ -58,16 +61,19 @@ This is a pure documentation project with no build/test commands.
 ## 4. Code Change Rules
 
 ### Documentation Writing Principles
+
 - Chinese docs go in `i18n/zh/`, English docs go in `i18n/en/`
 - Immortality Project docs go in `i18n/*/src/immortality/`
 - Academic papers go in `paper/`
 - Filenames use Chinese (for Chinese docs) or lowercase_underscore (for English docs)
 
 ### Link Rules
+
 - Use relative path links
 - Ensure correct paths when linking to other documents (note `src/` hierarchy)
 
 ### Prohibited Behaviors
+
 - Do not arbitrarily restructure directory layout
 - Do not delete `_academic.md` suffixed academic version documents
 - Do not modify Bio-DSL syntax definitions (unless explicitly requested)
@@ -75,27 +81,31 @@ This is a pure documentation project with no build/test commands.
 ## 5. Style & Quality
 
 ### Markdown Standards
+
 - CI uses markdownlint-cli2 for checking
 - Disabled rules: MD013 (line length), MD033 (HTML), MD041 (first line heading)
 
 ### Naming Conventions
+
 - Chinese docs: `湿件工程*.md`
 - English docs: `snake_case.md`
 - Academic version suffix: `*_academic.md`
 
 ### Document Structure
+
 - Every document must have a level-1 heading
 - Use appropriate heading hierarchy (no skipping levels)
 - Annotate code blocks with language type
 
 ### LaTeX Paper Standards
+
 - Use arXiv standard template (`arxiv.sty`)
 - Use `\textit{}` for journal/book names in references
 - Use `\,` to separate numbers and units
 
 ## 6. Project Map
 
-```
+```text
 wetware-engineering/
 ├── README.md                    # Project homepage
 ├── AGENTS.md                    # This file - AI Agent guide
@@ -149,35 +159,42 @@ wetware-engineering/
 ## 8. PR / Commit Rules
 
 ### Commit Message Format
-```
+
+```text
 <type>: <description>
 
 type: docs / fix / chore / refactor
 ```
 
 Examples:
+
 - `docs: add Bio-DSL example for neural controller`
 - `docs: update paper formatting for arXiv submission`
 - `fix: correct link to immortality roadmap`
 - `chore: update .gitignore`
 
 ### Branch Strategy
+
 - Main branch: `main`
 - Feature branches: `feature/<topic>` or `docs/<topic>`
 
 ### CI Triggers
+
 - Push to any branch with `.md` file changes triggers Markdown lint
 
 ## 9. Documentation Sync Rule
 
 ### Mandatory Sync Requirements
+
 Any of the following changes must sync updates to README.md and AGENTS.md:
+
 - Directory structure changes
 - Adding/removing documentation files
 - Link path changes
 - Workflow/CI configuration changes
 
 ### When Uncertain
+
 - Use `TODO: <content needing confirmation>` annotation
 - Do not guess or fabricate
 

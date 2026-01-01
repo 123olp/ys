@@ -5,16 +5,19 @@ Thank you for your interest in the Wetware Engineering project!
 ## How to Contribute
 
 ### Documentation Improvements
+
 - Fix errors or unclear expressions
 - Translate documentation to other languages
 - Add examples and use cases
 
 ### Specification Suggestions
+
 - Propose Bio-Component Spec improvements in Issues
 - Discuss Bio-DSL syntax extensions
 - Propose new interface type definitions
 
 ### Code Contributions
+
 - Tool chain development
 - Reference implementations
 - Testing frameworks

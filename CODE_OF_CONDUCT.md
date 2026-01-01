@@ -41,16 +41,19 @@ This Code of Conduct applies both within project spaces and in public spaces whe
 As a project involving philosophy, science, and technology, we particularly value:
 
 ### Citation Standards
+
 - Properly cite others' work
 - Avoid plagiarism and academic misconduct
 - Maintain critical thinking about cited literature
 
 ### Scientific Rigor
+
 - Distinguish between "hypothesis", "theory", and "established fact"
 - Acknowledge research limitations
 - Welcome evidence-based criticism
 
 ### Ethical Responsibility
+
 - Consider ethical implications when discussing technology
 - Respect different values and beliefs
 - Do not promote potentially harmful technological applications
@@ -64,15 +67,16 @@ Project maintainers who do not follow or enforce the Code of Conduct in good fai
 ## Attribution
 
 This Code of Conduct is adapted from the [Contributor Covenant](https://www.contributor-covenant.org), version 2.1,
-available at https://www.contributor-covenant.org/version/2/1/code_of_conduct.html
+available at <https://www.contributor-covenant.org/version/2/1/code_of_conduct.html>
 
 ---
 
 ## Contact
 
 If you have questions or need to report violations:
+
 - Submit a GitHub Issue (public but can be anonymous)
-- Send email to tukuai.ai@gmail.com
+- Send email to <tukuai.ai@gmail.com>
 
 ---
 
