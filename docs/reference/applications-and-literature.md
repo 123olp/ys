@@ -26,6 +26,7 @@
 | 神经伦理与 BCI 安全治理 | BRAIN Neuroethics / OECD Neurotechnology / UNESCO Neurotechnology Ethics / FDA BCI guidance | 神经科技必须同时处理主体性、隐私、同意、临床安全、设备可靠性和试验监管 | 记忆编辑边界、BCI 临床安全、神经数据治理、退出权 | [BRAIN Neuroethics principles](https://pmc.ncbi.nlm.nih.gov/articles/PMC6297371/), [OECD neurotechnology recommendation](https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0457), [UNESCO neurotechnology ethics](https://www.unesco.org/en/ethics-neurotech), [FDA implanted BCI guidance](https://www.fda.gov/regulatory-information/search-fda-guidance-documents/implanted-brain-computer-interface-bci-devices-patients-paralysis-or-amputation-non-clinical-testing) |
 | 系统安全与人机组织 | NASA Human Systems Integration / Leveson STAMP | 人的限制、训练、维护、组织决策和安全控制必须在系统设计中前置 | Human SRE、事故预防、任务系统、安全边界 | [NASA HSI lessons](https://www.nasa.gov/humans-in-space/commercial-space/leo-economy/nasa-shares-lessons-human-systems-integration/), [Engineering a Safer World](https://direct.mit.edu/books/oa-monograph/2908/Engineering-a-Safer-WorldSystems-Thinking-Applied) |
 | AI 与知识工作基础设施 | NIST AI RMF / NASA-TLX / Human-AI Teaming / Generative AI at Work | AI 工具、工作负荷、交互规则、风险治理和生产率影响必须一起看，不能只看模型能力 | 人机协作、认知负荷、注意力恢复、知识工作系统 | [NIST AI RMF](https://www.nist.gov/itl/ai-risk-management-framework), [NASA-TLX](https://www.nasa.gov/human-systems-integration-division/nasa-task-load-index-tlx/), [Guidelines for Human-AI Interaction](https://doi.org/10.1145/3290605.3300233), [Generative AI at Work](https://www.nber.org/papers/w31161) |
+| 组织安全与事件学习 | WHO Patient Safety / AHRQ TeamSTEPPS / CUSP / HRO / RCA2 | 人的错误、疲劳、交接、沟通和事故复盘必须被设计成组织学习系统，而不是只追责个人 | 医疗安全、疲劳管理、班次设计、复盘机制、组织韧性 | [WHO patient safety action plan](https://www.who.int/publications/i/item/9789240032705), [AHRQ TeamSTEPPS](https://www.ahrq.gov/teamstepps-program/index.html), [AHRQ CUSP](https://www.ahrq.gov/hai/cusp/index.html), [IHI RCA2](https://www.ihi.org/resources/tools/rca2-improving-root-cause-analyses-and-actions-prevent-harm) |
 
 ## 公共健康基线
 
@@ -80,6 +81,20 @@
 | 记忆干预伦理 | Memory modification scoping review；molecular memory modification；neuromodulation and memory | 为记忆编辑提供身份、真实性、伤害、同意和治疗边界的伦理语汇 | 不提供药物、刺激、植入或行为干预步骤；只作为伦理和证据边界资料 |
 | 神经数据与主体权利 | UNESCO/OECD neurotechnology ethics；BRAIN neuroethics | 把神经数据视为高度敏感的人格相关信息，要求隐私、控制权、审计和退出机制 | 不把“采集更多神经数据”默认视为进步；必须证明保护和必要性 |
 
+## 组织安全与事件学习底座
+
+这一层用于支撑组织级 Human Infra：如果任务系统依赖人持续判断、交接、值守、复盘和协作，那么疲劳、沟通断裂、告警淹没、隐性工作、惩罚性文化和浅层复盘都会成为基础设施风险。这里的重点不是把医疗安全照搬到所有组织，而是吸收其成熟经验：把错误看成系统信号，把复盘转成改进动作，把疲劳和班次当作设计变量。
+
+| 层级 | 资料或项目 | 对 Human Infra 的意义 | 使用边界 |
+| --- | --- | --- | --- |
+| 患者安全与系统观 | WHO Global Patient Safety Action Plan；To Err is Human | 把伤害、错误和防护从个人失误重构为系统设计、学习和治理问题 | 医疗安全经验不能直接外推到所有行业，必须重建任务语境 |
+| 团队沟通与交接 | AHRQ TeamSTEPPS | 提供团队沟通、情境感知、互相支持和领导力的训练框架 | 培训材料不能替代 staffing、流程、工具和管理责任 |
+| 单元级安全改进 | AHRQ CUSP | 把前线人员、管理支持、缺陷识别和持续改进结合成安全改进流程 | CUSP 是组织改进框架，不是一次性检查表 |
+| 高可靠组织 | AHRQ PSNet High Reliability Organizations；Leveson STAMP | 说明高风险系统需要前置风险感知、韧性、冗余、反馈和组织学习 | “高可靠”不能变成品牌词，必须有事件数据和改进闭环 |
+| 疲劳与班次风险 | NIOSH fatigue resources；OSHA worker fatigue | 把疲劳、长工时、夜班、恢复不足和事故风险纳入组织设计 | 不能把疲劳管理变成要求个人硬扛；排班和资源配置是系统责任 |
+| 事件复盘与 RCA2 | AHRQ root cause analysis；IHI RCA2 | 把事故复盘从“找根因”推进到强行动项、风险降低和组织学习 | 复盘不应制造替罪羊，也不能停在无效建议和口号整改 |
+| 安全文化测量 | AHRQ Surveys on Patient Safety Culture | 提供观察团队报告文化、沟通开放度、管理支持和学习能力的工具 | 测量必须用于改善系统，不应成为压制报告或排名惩罚工具 |
+
 ## 文献主干
 
 | 主题 | 文献或资料 | 为什么重要 | 应放入的后续子域 |
@@ -104,6 +119,8 @@
 | 注意力与恢复 | Attention Restoration Theory | 把环境、注意力疲劳和恢复放进任务系统设计 | 公共健康基线、知识工作、组织设计 |
 | 人机协作 | NIST AI RMF；Guidelines for Human-AI Interaction；Human-AI Teaming | 把 AI 从“模型能力”重新放回人、任务、组织和风险治理系统 | AI 协作、Human SRE、宣传边界 |
 | 生成式 AI 与知识工作 | Generative AI at Work；Microsoft New Future of Work | 为 AI 进入真实工作流提供实证和研究议程，而不是只靠产品宣传 | README 叙事、AI 工具边界、后续应用案例 |
+| 组织安全 | WHO Patient Safety；AHRQ TeamSTEPPS / CUSP / HRO；IHI RCA2 | 把团队沟通、疲劳、事件复盘和组织学习纳入 Human Infra，而不是把失败归咎于个人 | 组织应用、安全边界、Human SRE、后续审查模板 |
+| 疲劳管理 | NIOSH fatigue；OSHA worker fatigue | 把长工时、夜班和恢复不足视为安全风险和组织设计变量 | 职业健康、任务排班、高压组织应用 |
 
 ## 如何用于 README 和宣传
 
@@ -111,7 +128,7 @@
 
 ```text
 Human Infra 不是凭空发明的新词。
-Bryan Johnson、NIA ITP、Geroscience、HAGR、NIOSH Total Worker Health、WHO ICOPE、NASA HRP、Apple Heart Study、军队 H2F、NIH BRAIN、FDA BCI guidance、UNESCO/OECD neurotechnology ethics、NIST AI RMF、NASA-TLX 和系统安全工程，其实都在研究同一个更大的对象：
+Bryan Johnson、NIA ITP、Geroscience、HAGR、NIOSH Total Worker Health、WHO ICOPE、WHO Patient Safety、AHRQ TeamSTEPPS、NASA HRP、Apple Heart Study、军队 H2F、NIH BRAIN、FDA BCI guidance、UNESCO/OECD neurotechnology ethics、NIST AI RMF、NASA-TLX 和系统安全工程，其实都在研究同一个更大的对象：
 支撑人类长期运行、判断、创造、恢复和延续的基础设施。
 ```
 
@@ -124,6 +141,7 @@ Bryan Johnson、NIA ITP、Geroscience、HAGR、NIOSH Total Worker Health、WHO I
 - BRAIN、NESD、Neuralink PRIME 是神经科技研究和试验背景，不表示记忆编辑或去具身中枢已经可执行。
 - FDA BCI guidance、OECD/UNESCO neurotechnology ethics 和记忆干预伦理文献说明神经科技必须进入临床监管、主体权利和长期安全治理，不表示任何植入、刺激或记忆调制可被普通项目复制。
 - NIST AI RMF、Human-AI Interaction guidelines、NASA-TLX 和生成式 AI 工作研究说明 AI 协作必须进入风险、负荷和任务设计，不表示 AI 自动提高所有人的生产率。
+- WHO Patient Safety、AHRQ、IHI、NIOSH 和 OSHA 资料说明组织系统会制造或缓解风险，不表示可以用“安全文化”包装责任转嫁。
 - NASA、军队和职业健康案例能说明 Human Infra 的工程价值，但不能直接迁移到普通生活场景而不考虑伦理和权力关系。
 
 ## 下一批资料队列
@@ -131,7 +149,7 @@ Bryan Johnson、NIA ITP、Geroscience、HAGR、NIOSH Total Worker Health、WHO I
 - 长寿证据子域内部的数据模型、证据等级表和干预条目模板。
 - 人机协作子域或专题页的条目模板：任务、负荷、风险、反馈、恢复和审计。
 - 记忆编辑子域内部的伦理审查模板：主体性、真实性、同意、退出、神经数据和长期伤害。
-- 组织疲劳管理、事故复盘、医疗安全和高可靠组织资料。
+- 组织级 Human Infra 审查模板：排班、疲劳、交接、告警、事件学习、强行动项和安全文化测量。
 
 ## 来源清单
 
@@ -141,6 +159,16 @@ Bryan Johnson、NIA ITP、Geroscience、HAGR、NIOSH Total Worker Health、WHO I
 - Stanford Medicine Apple Heart Study release: https://med.stanford.edu/news/all-news/2019/11/through-apple-heart-study--stanford-medicine-researchers-show-we.html
 - NIOSH Total Worker Health Program: https://www.cdc.gov/niosh/twh/programs/index.html
 - NIOSH Total Worker Health overview: https://www.cdc.gov/niosh/twh/index.html
+- WHO Global Patient Safety Action Plan 2021-2030: https://www.who.int/publications/i/item/9789240032705
+- To Err is Human, NCBI Bookshelf: https://www.ncbi.nlm.nih.gov/books/NBK225182/
+- AHRQ TeamSTEPPS: https://www.ahrq.gov/teamstepps-program/index.html
+- AHRQ Comprehensive Unit-based Safety Program: https://www.ahrq.gov/hai/cusp/index.html
+- AHRQ PSNet High Reliability primer: https://psnet.ahrq.gov/primer/high-reliability
+- AHRQ PSNet Root Cause Analysis primer: https://psnet.ahrq.gov/primer/root-cause-analysis
+- AHRQ Surveys on Patient Safety Culture: https://www.ahrq.gov/sops/index.html
+- IHI RCA2: https://www.ihi.org/resources/tools/rca2-improving-root-cause-analyses-and-actions-prevent-harm
+- NIOSH Fatigue at Work: https://www.cdc.gov/niosh/bulletin/2023/fatigue.html
+- OSHA Worker Fatigue: https://www.osha.gov/worker-fatigue
 - WHO ICOPE handbook: https://www.who.int/publications/i/item/9789240103726
 - WHO ICOPE training programme: https://www.decadeofhealthyageing.org/find-knowledge/support/training-programmes/who-integrated-care-for-older-people-%28icope%29-training-programme-field-testing-version
 - NASA Human Research Program: https://www.nasa.gov/hrp/
