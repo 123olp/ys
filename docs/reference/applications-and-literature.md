@@ -24,6 +24,18 @@
 | 神经科技基础设施 | NIH BRAIN Initiative / DARPA NESD / Neuralink PRIME | 神经接口、脑功能理解和临床设备试验正在形成高风险神经基础设施 | 记忆编辑、去具身中枢、主体权利、安全审计 | [NIH BRAIN Initiative](https://braininitiative.nih.gov/), [DARPA NESD](https://www.darpa.mil/research/programs/neural-engineering-system-design), [Neuralink PRIME on ClinicalTrials.gov](https://clinicaltrials.gov/study/NCT06429735), [FDA IDE overview](https://www.fda.gov/medical-devices/premarket-submissions-selecting-and-preparing-correct-submission/investigational-device-exemption-ide) |
 | 系统安全与人机组织 | NASA Human Systems Integration / Leveson STAMP | 人的限制、训练、维护、组织决策和安全控制必须在系统设计中前置 | Human SRE、事故预防、任务系统、安全边界 | [NASA HSI lessons](https://www.nasa.gov/humans-in-space/commercial-space/leo-economy/nasa-shares-lessons-human-systems-integration/), [Engineering a Safer World](https://direct.mit.edu/books/oa-monograph/2908/Engineering-a-Safer-WorldSystems-Thinking-Applied) |
 
+## 公共健康基线
+
+这些资料不是“优化方案”，而是 Human Infra 的底座：睡眠、运动、营养、心理健康和工作福祉。如果没有这些公共健康基线，任何更激进的长寿、自我量化、神经科技或未来等待叙事都会失去现实约束。
+
+| 基线层 | 一手资料 | 对 Human Infra 的意义 | 使用边界 |
+| --- | --- | --- | --- |
+| 身体活动 | WHO Guidelines on physical activity and sedentary behaviour；HHS Physical Activity Guidelines for Americans | 把运动从个人意志问题转成公共健康和生活基础设施问题 | 不能替代个体医疗评估，尤其是慢病、伤病和高风险人群 |
+| 睡眠 | AASM / Sleep Research Society 成人睡眠时长共识；CDC Sleep and Sleep Disorders | 把恢复视为运行系统的核心依赖，而不是可牺牲时间 | 不能把睡眠建议泛化为诊断或治疗方案 |
+| 营养 | Dietary Guidelines for Americans | 为饮食、代谢和健康寿命讨论提供公共政策基线 | 不能替代医疗营养治疗或个体化饮食处方 |
+| 工作心理健康 | WHO Guidelines on mental health at work；U.S. Surgeon General Workplace Mental Health and Well-Being Framework | 把心理健康和工作设计纳入基础设施，而不是只归因于个人韧性 | 不能被用来包装绩效压榨或组织监控 |
+| 工作者福祉测量 | NIOSH Worker Well-Being Questionnaire | 提供组织层面观察工作者福祉的结构化工具 | 测量必须服务于保护和改善，不应成为惩罚性监控 |
+
 ## 文献主干
 
 | 主题 | 文献或资料 | 为什么重要 | 应放入的后续子域 |
@@ -31,6 +43,7 @@
 | 衰老机制 | Lopez-Otin 等，The Hallmarks of Aging | 提供长寿证据和干预讨论的机制框架，但不能直接等同于人体疗效 | `domains/longevity-evidence/` |
 | 慢性压力与负荷 | McEwen / Stellar 的 allostatic load 线路 | 把压力、恢复和长期疾病风险放进同一套生理成本模型 | `docs/explanations/` 与组织使用边界 |
 | 自我追踪文化 | Gary Wolf / Quantified Self | 解释从个人记录、传感器、指标到生活系统的历史线路 | README 叙事与应用案例 |
+| 公共健康基线 | WHO / HHS / CDC / AASM / Dietary Guidelines | 为睡眠、运动、营养、心理健康和恢复提供低风险底座 | `docs/reference/` 与应用案例 |
 | 工作与福祉 | NIOSH Total Worker Health 文献与工具 | 把“工作设计”作为健康基础设施，而不是只要求个人自律 | 组织应用与安全边界 |
 | 健康老龄化 | WHO ICOPE | 把老年照护从疾病中心转向能力维护和路径设计 | Longevity Evidence 与应用案例 |
 | 数字健康验证 | Apple Heart Study | 展示可穿戴传感器进入健康系统时需要大规模验证、确认和边界沟通 | 数据脚本、证据政策、数字健康案例 |
@@ -57,7 +70,6 @@ Bryan Johnson、NIOSH Total Worker Health、WHO ICOPE、NASA HRP、Apple Heart S
 
 ## 下一批资料队列
 
-- 睡眠、运动、营养和心理健康的公共卫生指南。
 - 长寿干预数据库、NIA Interventions Testing Program、Geroscience 文献。
 - 人机协作、认知负荷、注意力恢复和知识工作研究。
 - 神经伦理、BCI 临床安全、记忆干预伦理文献。
@@ -90,3 +102,11 @@ Bryan Johnson、NIOSH Total Worker Health、WHO ICOPE、NASA HRP、Apple Heart S
 - McEwen and Stellar, allostatic load: https://pubmed.ncbi.nlm.nih.gov/8379800/
 - McEwen, stress and allostatic load review: https://pubmed.ncbi.nlm.nih.gov/9629234/
 - Gary Wolf / Quantified Self background: https://quantifiedself.com/gary-wolf-bio/
+- WHO Guidelines on physical activity and sedentary behaviour: https://www.who.int/publications/i/item/9789240015128
+- HHS Physical Activity Guidelines for Americans: https://odphp.health.gov/our-work/nutrition-physical-activity/physical-activity-guidelines
+- Dietary Guidelines for Americans: https://www.dietaryguidelines.gov/
+- AASM / Sleep Research Society adult sleep duration consensus, PubMed: https://pubmed.ncbi.nlm.nih.gov/26039963/
+- CDC Sleep and Sleep Disorders: https://www.cdc.gov/sleep/
+- WHO Guidelines on mental health at work: https://www.who.int/publications/i/item/9789240053052
+- U.S. Surgeon General Workplace Mental Health and Well-Being Framework: https://www.hhs.gov/surgeongeneral/priorities/workplace-well-being/index.html
+- NIOSH Worker Well-Being Questionnaire: https://www.cdc.gov/niosh/twh/worker-well-being/wellbq.html
