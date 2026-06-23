@@ -54,3 +54,4 @@ All notable repository structure changes are recorded here.
 - Expanded the applications and literature index with mental health services, mhGAP, behavioral health treatment navigation, addiction care, overdose prevention, and crisis support evidence.
 - Expanded the applications and literature index with personal safety, injury prevention, violence prevention, crisis support, emergency care, and disaster preparedness evidence.
 - Condensed the README literature entry and added a compact real-world application overview for easier first-pass navigation.
+- Expanded the applications and literature index with migration, displacement, humanitarian data, health migration, education-in-emergencies, and shelter coordination evidence.
