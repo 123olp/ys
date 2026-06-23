@@ -72,12 +72,25 @@ flowchart LR
 | 查看领域边界 | [docs/reference/domain-map.md](docs/reference/domain-map.md) | Human Infra 的子域地图和拆分原因 |
 | 查看伦理与安全红线 | [docs/reference/ethics-and-safety-boundaries.md](docs/reference/ethics-and-safety-boundaries.md) | 医疗、神经、生命支持和组织使用边界 |
 | 查看证据规则 | [docs/reference/evidence-policy.md](docs/reference/evidence-policy.md) | 如何区分原始资料、证据和稳定结论 |
-| 查看真实应用与文献 | [docs/reference/applications-and-literature.md](docs/reference/applications-and-literature.md) | Bryan Johnson、NIA ITP、All of Us、ClinicalTrials.gov、FDA RWE、PROMIS、GBD、Allostatic Load、WHO SDOH、UN-Habitat Housing、HUD AHAR、Census AHS、Household Pulse、Eviction Lab、WHO social connection、CDC social connectedness、Healthy People social context、NASEM social isolation、NHS social prescribing、ILO Social Protection、World Bank ASPIRE、FMLA、UN time use、FAO SOFI、WFP HungerMap、WHO healthy diet、JMP WASH、World Bank Energy、IEA electricity access、IEA clean cooking、WHO household air pollution、DOE LEAD Tool、DOE Weatherization、EPA IAQ、WHO IA2030、CDC NNDSS、WHO GISRS、IHR、AMR GLASS、WHO maternal health、WHO newborn health、Nurturing Care、CDC PRAMS、DHS、World Bank ECD、UN Legal Identity、UN CRVS、WHO CRVS、World Bank ID4D、UNICEF birth registration、ITU ICT statistics、NTIA Digital Nation、NIST Digital Identity、Login.gov、Digital.gov、USWDS、UNESCO MIL、IMLS PLS、World Bank Transport、FTA NTD、BTS NHTS、USDOT ETCE、FTA ADA、WHO UHC、WHO PHC、WHO Essential Medicines、WHO Health Workforce、World Bank UHC、CDC Access to Health Care、AHRQ NHQDR、WHO World Mental Health Report、WHO mhGAP、WHO Mental Health Atlas、FindTreatment.gov、NIMH Mental Illness、CDC Overdose Prevention、988 Lifeline、WHO injuries and violence、CDC Injury、CDC WISQARS、CDC Violence Prevention、CDC ACEs、CDC Suicide Prevention、988 Lifeline、WHO Emergency Care、CDC Natural Disasters、WHO Housing、CDC BE Tool、AirNow、WHO Rehab、WCAG、Section 508、How People Learn、WWC、O*NET、CDC Caregiving、Medicaid HCBS、WHO long-term care、WHO-CHOICE、NICE HTA、HIPAA、NIST Privacy、GA4GH、FDA BCI、WHO Patient Safety、NASA、BRAIN 等资料索引 |
+| 查看真实应用与文献 | [docs/reference/applications-and-literature.md](docs/reference/applications-and-literature.md) | 真实项目、机构资料、论文和数据源索引，覆盖个体、家庭、社区、医疗、公共服务、环境和高风险技术 |
 | 贡献文档 | [docs/how-to/contribute-docs.md](docs/how-to/contribute-docs.md) | 文档贡献流程 |
 | 加入社区 | [Telegram](https://t.me/human_infra) | 讨论 Human Infra、长寿证据、未来等待路径和研究资料 |
 | 运行质量检查 | [docs/how-to/run-quality-checks.md](docs/how-to/run-quality-checks.md) | 本地和 CI 的检查命令 |
 | 查看所有子域 | [domains/README.md](domains/README.md) | 可独立演化的研究域入口 |
 | 查看结构决策 | [docs/decisions/README.md](docs/decisions/README.md) | ADR 与仓库重组决策 |
+
+## 真实应用速览
+
+| 层级 | 代表资料 | 关注问题 |
+| --- | --- | --- |
+| 个体运行系统 | Bryan Johnson / Blueprint、Apple Heart Study、PROMIS、WHO ICF | 人如何被测量、反馈、恢复和评估 |
+| 健康与照护底座 | WHO UHC、WHO Primary Health Care、WHO mhGAP、WHO ICOPE、CDC Caregiving | 人能否获得医疗、心理健康、康复、长期照护和危机支持 |
+| 社会生活底座 | WHO SDOH、UN-Habitat Housing、ILO Social Protection、FAO SOFI、World Bank Energy、WHO/UNICEF JMP | 住房、收入、食物、水、能源和社区是否支撑长期生活 |
+| 权利与公共服务入口 | UN Legal Identity、NIST Digital Identity、Login.gov、Digital.gov、USWDS、FTA ADA | 人能否被制度承认，并进入数字服务、交通系统和无障碍服务 |
+| 环境与安全底座 | WHO Housing、CDC BE Tool、AirNow、CDC Heat and Health Index、WHO Road Safety、CDC WISQARS、988 Lifeline | 生活空间是否安全、可达、可恢复，且不把风险归咎于个人 |
+| 未来与高风险技术 | NIA ITP、Geroscience、ClinicalTrials.gov、NIH BRAIN、FDA BCI、NASA HRP、NIST AI RMF | 长寿、神经科技、AI 和极端环境如何进入证据、治理与安全边界 |
+
+完整来源、使用边界和后续条目模板统一维护在 [真实应用与文献](docs/reference/applications-and-literature.md)。
 
 ## 项目地图
 
@@ -241,5 +254,6 @@ flowchart LR
 - 2026-06-20：从 Biocat 单项目重组为 Human Infra 总项目；Biocat 迁入 `domains/longevity-evidence/`；新增去具身中枢生命系统与记忆编辑两个研究域；补齐 Docs-as-Code 知识仓库根文件、文档分层、协作模板和结构检查脚本。
 - 2026-06-22：新增 `future-waiting` 子域和“黑洞等待室”未来等待路径。
 - 2026-06-23：新增 GitHub Actions 远程质量门禁，统一运行本地 `make check`。
+- 2026-06-23：压缩 README 的真实应用资料入口，新增真实应用速览，提升首屏导航密度。
 
 完整记录见 [CHANGELOG.md](CHANGELOG.md)。

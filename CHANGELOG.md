@@ -53,3 +53,4 @@ All notable repository structure changes are recorded here.
 - Expanded the applications and literature index with health care access, primary health care, universal health coverage, essential medicines, health workforce, insurance coverage, and quality-disparity evidence.
 - Expanded the applications and literature index with mental health services, mhGAP, behavioral health treatment navigation, addiction care, overdose prevention, and crisis support evidence.
 - Expanded the applications and literature index with personal safety, injury prevention, violence prevention, crisis support, emergency care, and disaster preparedness evidence.
+- Condensed the README literature entry and added a compact real-world application overview for easier first-pass navigation.
