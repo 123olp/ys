@@ -69,6 +69,7 @@ All notable repository structure changes are recorded here.
 
 - Expanded the applications and literature index with insurance, risk transfer, claims continuity, unemployment benefits, workers' compensation, disability assistance, deposit insurance, pension protection, and disaster risk finance evidence.
 - Expanded the applications and literature index with product safety, recalls, incident reporting, FDA enforcement data, adverse-event reporting, consumer product recalls, and vehicle defect complaint evidence.
+- Expanded the applications and literature index with intimate partner violence, sexual violence, victim services, safety entry points, service directories, legal protection, compensation, and trauma-support evidence.
 - Expanded the applications and literature index with household emergency preparedness, personal resilience, survival kits, health readiness, weather preparedness, and family emergency planning evidence.
 - Added a Human Infra sharing guide with public positioning, short-post templates, community links, and communication boundaries.
 - Expanded the applications and literature index with disaster recovery, individual assistance, recovery centers, temporary shelter, financial help, disaster loans, and relief navigation evidence.
