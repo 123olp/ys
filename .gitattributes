@@ -1,0 +1,13 @@
+* text=auto eol=lf
+
+*.md text eol=lf
+*.py text eol=lf
+*.json text eol=lf
+*.jsonl text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.cff text eol=lf
+
+*.zip binary
+*.sqlite binary
+*.db binary

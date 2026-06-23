@@ -1,0 +1,26 @@
+# 系统与编辑器
+.DS_Store
+.idea/
+.vscode/
+.history/
+
+# Python
+__pycache__/
+.pytest_cache/
+.venv/
+venv/
+
+# Node
+node_modules/
+.next/
+dist/
+
+# 数据产物
+**/data/raw/
+**/data/processed/
+*.sqlite
+*.db
+
+# 环境变量
+.env
+.env.*

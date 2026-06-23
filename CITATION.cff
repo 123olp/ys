@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you cite this repository, cite it as a Human Infra knowledge repository."
+title: "Human Infra"
+type: software
+authors:
+  - name: "Human Infra Authors"
+version: "0.1.0"
+date-released: "2026-06-20"
+abstract: "A knowledge-first repository for human runtime infrastructure, longevity evidence, disembodied central nervous system concepts, and memory editing safety boundaries."

@@ -1,0 +1,148 @@
+[
+  {
+    "id": "metformin",
+    "name": "metformin",
+    "category": "drug",
+    "aliases": ["dimethylbiguanide"],
+    "search_terms": ["metformin"],
+    "fda_query": "metformin"
+  },
+  {
+    "id": "rapamycin",
+    "name": "rapamycin",
+    "category": "drug",
+    "aliases": ["sirolimus"],
+    "search_terms": ["rapamycin", "sirolimus"],
+    "fda_query": "sirolimus"
+  },
+  {
+    "id": "acarbose",
+    "name": "acarbose",
+    "category": "drug",
+    "aliases": [],
+    "search_terms": ["acarbose"],
+    "fda_query": "acarbose"
+  },
+  {
+    "id": "exercise",
+    "name": "exercise",
+    "category": "lifestyle",
+    "aliases": ["physical activity"],
+    "search_terms": ["exercise", "physical activity"]
+  },
+  {
+    "id": "resistance-training",
+    "name": "resistance training",
+    "category": "lifestyle",
+    "aliases": ["strength training"],
+    "search_terms": ["resistance training", "strength training"]
+  },
+  {
+    "id": "caloric-restriction",
+    "name": "caloric restriction",
+    "category": "diet",
+    "aliases": ["calorie restriction"],
+    "search_terms": ["caloric restriction", "calorie restriction"]
+  },
+  {
+    "id": "intermittent-fasting",
+    "name": "intermittent fasting",
+    "category": "diet",
+    "aliases": ["time restricted eating", "time-restricted feeding"],
+    "search_terms": ["intermittent fasting", "time restricted eating"]
+  },
+  {
+    "id": "sleep-optimization",
+    "name": "sleep optimization",
+    "category": "lifestyle",
+    "aliases": ["sleep duration", "sleep quality"],
+    "search_terms": ["sleep duration", "sleep quality"]
+  },
+  {
+    "id": "vo2-max",
+    "name": "VO2 max improvement",
+    "category": "biomarker",
+    "aliases": ["cardiorespiratory fitness"],
+    "search_terms": ["VO2 max", "cardiorespiratory fitness"]
+  },
+  {
+    "id": "blood-pressure-control",
+    "name": "blood pressure control",
+    "category": "risk_management",
+    "aliases": ["hypertension control"],
+    "search_terms": ["blood pressure control", "hypertension control"]
+  },
+  {
+    "id": "statins",
+    "name": "statins",
+    "category": "drug",
+    "aliases": ["atorvastatin", "rosuvastatin", "simvastatin"],
+    "search_terms": ["statins", "atorvastatin", "rosuvastatin"],
+    "fda_query": "atorvastatin"
+  },
+  {
+    "id": "glp-1",
+    "name": "GLP-1 receptor agonists",
+    "category": "drug",
+    "aliases": ["semaglutide", "liraglutide", "tirzepatide"],
+    "search_terms": ["GLP-1 receptor agonist", "semaglutide", "tirzepatide"],
+    "fda_query": "semaglutide"
+  },
+  {
+    "id": "senolytics",
+    "name": "senolytics",
+    "category": "drug_class",
+    "aliases": ["senolytic therapy"],
+    "search_terms": ["senolytics", "senolytic therapy"]
+  },
+  {
+    "id": "fisetin",
+    "name": "fisetin",
+    "category": "supplement",
+    "aliases": [],
+    "search_terms": ["fisetin"]
+  },
+  {
+    "id": "quercetin",
+    "name": "quercetin",
+    "category": "supplement",
+    "aliases": [],
+    "search_terms": ["quercetin"]
+  },
+  {
+    "id": "dasatinib",
+    "name": "dasatinib",
+    "category": "drug",
+    "aliases": [],
+    "search_terms": ["dasatinib"],
+    "fda_query": "dasatinib"
+  },
+  {
+    "id": "nad-plus",
+    "name": "NAD+",
+    "category": "metabolite",
+    "aliases": ["nicotinamide adenine dinucleotide"],
+    "search_terms": ["NAD+", "nicotinamide adenine dinucleotide"]
+  },
+  {
+    "id": "nicotinamide-riboside",
+    "name": "nicotinamide riboside",
+    "category": "supplement",
+    "aliases": ["NR"],
+    "search_terms": ["nicotinamide riboside", "NR"]
+  },
+  {
+    "id": "nmn",
+    "name": "NMN",
+    "category": "supplement",
+    "aliases": ["nicotinamide mononucleotide"],
+    "search_terms": ["NMN", "nicotinamide mononucleotide"]
+  },
+  {
+    "id": "taurine",
+    "name": "taurine",
+    "category": "supplement",
+    "aliases": [],
+    "search_terms": ["taurine"]
+  }
+]

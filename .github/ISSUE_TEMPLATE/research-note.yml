@@ -1,0 +1,24 @@
+name: Research note
+description: Propose a source note or new research input.
+title: "[research] "
+labels: ["research"]
+body:
+  - type: textarea
+    id: source
+    attributes:
+      label: Source
+      description: Link, citation, or local source path.
+    validations:
+      required: true
+  - type: textarea
+    id: relevance
+    attributes:
+      label: Relevance
+      description: Which Human Infra domain does this affect?
+    validations:
+      required: true
+  - type: textarea
+    id: boundary
+    attributes:
+      label: Safety or uncertainty boundary
+      description: What should not be overclaimed?

@@ -1,0 +1,27 @@
+name: Data pipeline issue
+description: Report a problem with public data collection or processed outputs.
+title: "[data] "
+labels: ["data"]
+body:
+  - type: textarea
+    id: source
+    attributes:
+      label: Data source
+      description: PubMed, OpenAlex, ClinicalTrials.gov, openFDA, HAGR, or another source.
+    validations:
+      required: true
+  - type: textarea
+    id: command
+    attributes:
+      label: Command
+      description: Command that produced the issue, if any.
+  - type: textarea
+    id: observed
+    attributes:
+      label: Observed behavior
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
