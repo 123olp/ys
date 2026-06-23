@@ -41,3 +41,4 @@ All notable repository structure changes are recorded here.
 - Expanded the applications and literature index with housing health, urban health, built environment assessment, active community design, air quality, heat risk, and road safety evidence.
 - Expanded the applications and literature index with caregiving, family caregiver support, home- and community-based services, home health, hospice, care coordination, and long-term care evidence.
 - Expanded the applications and literature index with economic security, social protection, paid leave, working time, time-use statistics, household financial resilience, financial well-being, and income-support evidence.
+- Expanded the applications and literature index with food security, hunger monitoring, nutrition, food safety, WASH, drinking-water, and sanitation evidence.
