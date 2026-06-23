@@ -58,3 +58,4 @@ All notable repository structure changes are recorded here.
 - Expanded the applications and literature index with access to justice, civil legal needs, legal aid, public justice services, and online legal help evidence.
 - Expanded the applications and literature index with financial inclusion, payment systems, household banking access, consumer complaints, credit trends, and payments evidence.
 - Expanded the applications and literature index with climate risk, early warning, resilience planning, climate-health, heat, and environmental justice evidence.
+- Expanded the applications and literature index with childcare, early education, care work, child care subsidies, service navigation, and family work-continuity evidence.
