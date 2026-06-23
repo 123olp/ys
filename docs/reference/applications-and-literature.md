@@ -23,6 +23,7 @@
 | 极端环境人因 | NASA Human Research Program | 太空飞行把人类健康、表现、风险、训练、任务和环境约束压缩到一个高风险系统里 | 人因工程、生命支持、任务表现、极端环境恢复 | [NASA HRP](https://www.nasa.gov/hrp/), [NASA Human Health and Performance](https://www.nasa.gov/hhp/), [NASA spaceflight risks](https://www.nasa.gov/humans-in-space/hhc-spaceflight-risks/) |
 | 军队人类表现优化 | U.S. Army H2F / Total Force Fitness | 高压组织已经把体能、睡眠、营养、心理和恢复合并成战备基础设施 | 高压任务执行、恢复、训练系统、组织支持 | [Army H2F](https://h2f.army.mil/), [Army H2F overview](https://www.goarmy.com/explore-the-army/holistic-health-fitness), [Total Force Fitness review](https://pmc.ncbi.nlm.nih.gov/articles/PMC10666955/) |
 | 神经科技基础设施 | NIH BRAIN Initiative / DARPA NESD / Neuralink PRIME | 神经接口、脑功能理解和临床设备试验正在形成高风险神经基础设施 | 记忆编辑、去具身中枢、主体权利、安全审计 | [NIH BRAIN Initiative](https://braininitiative.nih.gov/), [DARPA NESD](https://www.darpa.mil/research/programs/neural-engineering-system-design), [Neuralink PRIME on ClinicalTrials.gov](https://clinicaltrials.gov/study/NCT06429735), [FDA IDE overview](https://www.fda.gov/medical-devices/premarket-submissions-selecting-and-preparing-correct-submission/investigational-device-exemption-ide) |
+| 神经伦理与 BCI 安全治理 | BRAIN Neuroethics / OECD Neurotechnology / UNESCO Neurotechnology Ethics / FDA BCI guidance | 神经科技必须同时处理主体性、隐私、同意、临床安全、设备可靠性和试验监管 | 记忆编辑边界、BCI 临床安全、神经数据治理、退出权 | [BRAIN Neuroethics principles](https://pmc.ncbi.nlm.nih.gov/articles/PMC6297371/), [OECD neurotechnology recommendation](https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0457), [UNESCO neurotechnology ethics](https://www.unesco.org/en/ethics-neurotech), [FDA implanted BCI guidance](https://www.fda.gov/regulatory-information/search-fda-guidance-documents/implanted-brain-computer-interface-bci-devices-patients-paralysis-or-amputation-non-clinical-testing) |
 | 系统安全与人机组织 | NASA Human Systems Integration / Leveson STAMP | 人的限制、训练、维护、组织决策和安全控制必须在系统设计中前置 | Human SRE、事故预防、任务系统、安全边界 | [NASA HSI lessons](https://www.nasa.gov/humans-in-space/commercial-space/leo-economy/nasa-shares-lessons-human-systems-integration/), [Engineering a Safer World](https://direct.mit.edu/books/oa-monograph/2908/Engineering-a-Safer-WorldSystems-Thinking-Applied) |
 | AI 与知识工作基础设施 | NIST AI RMF / NASA-TLX / Human-AI Teaming / Generative AI at Work | AI 工具、工作负荷、交互规则、风险治理和生产率影响必须一起看，不能只看模型能力 | 人机协作、认知负荷、注意力恢复、知识工作系统 | [NIST AI RMF](https://www.nist.gov/itl/ai-risk-management-framework), [NASA-TLX](https://www.nasa.gov/human-systems-integration-division/nasa-task-load-index-tlx/), [Guidelines for Human-AI Interaction](https://doi.org/10.1145/3290605.3300233), [Generative AI at Work](https://www.nber.org/papers/w31161) |
 
@@ -66,6 +67,19 @@
 | AI 风险治理 | NIST AI Risk Management Framework | 提供治理、映射、测量和管理 AI 风险的框架，适合接入 Human Infra 的安全边界 | 框架不是合规豁免，也不自动证明具体 AI 系统可信 |
 | 知识工作实证 | Generative AI at Work | 展示生成式 AI 在真实工作任务中可能改变生产率、学习曲线和人员差异 | 单一行业或任务的实证结果不能外推为所有知识工作 ROI |
 
+## 神经伦理与 BCI 安全底座
+
+这一层用于支撑 `domains/memory-editing/` 和 `domains/disembodied-cns/`：神经科技不是“更强输入输出接口”这么简单，它直接触及主体性、人格连续性、同意能力、隐私、可退出性、临床风险和长期设备依赖。仓库只能整理高层证据、审查问题和治理边界，不提供神经操控、植入、刺激、记忆调制或人体实验步骤。
+
+| 层级 | 资料或项目 | 对 Human Infra 的意义 | 使用边界 |
+| --- | --- | --- | --- |
+| 神经伦理原则 | NIH BRAIN Initiative neuroethics guiding principles | 把神经研究中的安全、主体性、隐私、公共参与和公平问题前置为研究设计约束 | 伦理原则不是技术可行性背书，也不能替代 IRB、临床监管或受试者保护 |
+| 国际治理规范 | OECD Responsible Innovation in Neurotechnology；UNESCO Ethics of Neurotechnology | 把 neurotechnology 放入负责任创新、人格尊严、数据治理和社会影响框架 | 国际规范是治理底线，不是批准具体设备或实验的证据 |
+| BCI 临床设备路径 | FDA implanted BCI guidance；FDA IDE | 把植入式 BCI 视为高风险医疗设备，要求非临床测试、临床设计、安全监测和监管路径 | 不能把临床试验登记或早期可行性试验写成产品安全性已经成立 |
+| 试验登记与早期证据 | Neuralink PRIME；Synchron COMMAND | 显示 BCI 已进入真实临床试验和早期可行性研究，但样本量、适应症和终点都非常受限 | 不表示普通人增强、消费级脑控或去具身生命系统已经可执行 |
+| 记忆干预伦理 | Memory modification scoping review；molecular memory modification；neuromodulation and memory | 为记忆编辑提供身份、真实性、伤害、同意和治疗边界的伦理语汇 | 不提供药物、刺激、植入或行为干预步骤；只作为伦理和证据边界资料 |
+| 神经数据与主体权利 | UNESCO/OECD neurotechnology ethics；BRAIN neuroethics | 把神经数据视为高度敏感的人格相关信息，要求隐私、控制权、审计和退出机制 | 不把“采集更多神经数据”默认视为进步；必须证明保护和必要性 |
+
 ## 文献主干
 
 | 主题 | 文献或资料 | 为什么重要 | 应放入的后续子域 |
@@ -82,6 +96,9 @@
 | 数字健康验证 | Apple Heart Study | 展示可穿戴传感器进入健康系统时需要大规模验证、确认和边界沟通 | 数据脚本、证据政策、数字健康案例 |
 | 极端环境人因 | NASA HRP / HSI | 把人的生理、认知、环境和任务风险当作工程约束 | 去具身中枢、未来等待、任务执行模型 |
 | 神经科技治理 | NIH BRAIN、DARPA NESD、ClinicalTrials.gov 神经接口试验 | 提供记忆编辑、神经接口和主体权利讨论的真实研究背景 | `domains/memory-editing/` 与 `domains/disembodied-cns/` |
+| 神经伦理 | BRAIN Neuroethics principles；OECD/UNESCO neurotechnology ethics | 为神经科技的主体性、隐私、同意、公平和公共治理提供规范主干 | `domains/memory-editing/`、`domains/disembodied-cns/` 与安全边界 |
+| BCI 临床安全 | FDA implanted BCI guidance；FDA IDE；ClinicalTrials.gov BCI studies | 把 BCI 从技术演示拉回医疗设备、试验设计和长期安全问题 | BCI 试验、神经接口边界、审查清单 |
+| 记忆干预伦理 | Memory modification ethics reviews；neuromodulation and memory | 连接记忆编辑与身份、真实性、创伤治疗、同意和伤害评估 | `domains/memory-editing/` 的高层伦理材料 |
 | 系统安全 | Nancy Leveson, Engineering a Safer World | 把事故理解为控制、组织和系统约束问题，而不只是个体失误 | Human SRE、审查清单、安全边界 |
 | 认知负荷 | NASA-TLX；Cognitive Load Theory | 把任务执行失败的一部分解释为负荷、界面和工作记忆限制，而不是个人意志不足 | AI 工具、知识工作和组织应用 |
 | 注意力与恢复 | Attention Restoration Theory | 把环境、注意力疲劳和恢复放进任务系统设计 | 公共健康基线、知识工作、组织设计 |
@@ -94,7 +111,7 @@
 
 ```text
 Human Infra 不是凭空发明的新词。
-Bryan Johnson、NIA ITP、Geroscience、HAGR、NIOSH Total Worker Health、WHO ICOPE、NASA HRP、Apple Heart Study、军队 H2F、NIH BRAIN、NIST AI RMF、NASA-TLX 和系统安全工程，其实都在研究同一个更大的对象：
+Bryan Johnson、NIA ITP、Geroscience、HAGR、NIOSH Total Worker Health、WHO ICOPE、NASA HRP、Apple Heart Study、军队 H2F、NIH BRAIN、FDA BCI guidance、UNESCO/OECD neurotechnology ethics、NIST AI RMF、NASA-TLX 和系统安全工程，其实都在研究同一个更大的对象：
 支撑人类长期运行、判断、创造、恢复和延续的基础设施。
 ```
 
@@ -105,6 +122,7 @@ Bryan Johnson、NIA ITP、Geroscience、HAGR、NIOSH Total Worker Health、WHO I
 - MILES / TAME 是 metformin 与衰老生物学转化研究案例，不表示 metformin 已经被证明可用于普通人抗衰。
 - Apple Heart Study 是数字健康验证案例，不表示所有可穿戴功能都可用于诊断。
 - BRAIN、NESD、Neuralink PRIME 是神经科技研究和试验背景，不表示记忆编辑或去具身中枢已经可执行。
+- FDA BCI guidance、OECD/UNESCO neurotechnology ethics 和记忆干预伦理文献说明神经科技必须进入临床监管、主体权利和长期安全治理，不表示任何植入、刺激或记忆调制可被普通项目复制。
 - NIST AI RMF、Human-AI Interaction guidelines、NASA-TLX 和生成式 AI 工作研究说明 AI 协作必须进入风险、负荷和任务设计，不表示 AI 自动提高所有人的生产率。
 - NASA、军队和职业健康案例能说明 Human Infra 的工程价值，但不能直接迁移到普通生活场景而不考虑伦理和权力关系。
 
@@ -112,7 +130,7 @@ Bryan Johnson、NIA ITP、Geroscience、HAGR、NIOSH Total Worker Health、WHO I
 
 - 长寿证据子域内部的数据模型、证据等级表和干预条目模板。
 - 人机协作子域或专题页的条目模板：任务、负荷、风险、反馈、恢复和审计。
-- 神经伦理、BCI 临床安全、记忆干预伦理文献。
+- 记忆编辑子域内部的伦理审查模板：主体性、真实性、同意、退出、神经数据和长期伤害。
 - 组织疲劳管理、事故复盘、医疗安全和高可靠组织资料。
 
 ## 来源清单
@@ -134,7 +152,18 @@ Bryan Johnson、NIA ITP、Geroscience、HAGR、NIOSH Total Worker Health、WHO I
 - NIH BRAIN Initiative: https://braininitiative.nih.gov/
 - DARPA NESD: https://www.darpa.mil/research/programs/neural-engineering-system-design
 - Neuralink PRIME Study, ClinicalTrials.gov: https://clinicaltrials.gov/study/NCT06429735
+- Synchron COMMAND Study, ClinicalTrials.gov: https://clinicaltrials.gov/study/NCT05035823
 - FDA Investigational Device Exemption overview: https://www.fda.gov/medical-devices/premarket-submissions-selecting-and-preparing-correct-submission/investigational-device-exemption-ide
+- FDA implanted BCI guidance: https://www.fda.gov/regulatory-information/search-fda-guidance-documents/implanted-brain-computer-interface-bci-devices-patients-paralysis-or-amputation-non-clinical-testing
+- Neuroethics Guiding Principles for the NIH BRAIN Initiative, PMC: https://pmc.ncbi.nlm.nih.gov/articles/PMC6297371/
+- Neuroethics Guiding Principles for the NIH BRAIN Initiative, PubMed: https://pubmed.ncbi.nlm.nih.gov/30541767/
+- OECD Recommendation on Responsible Innovation in Neurotechnology: https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0457
+- UNESCO Ethics of Neurotechnology: https://www.unesco.org/en/ethics-neurotech
+- UNESCO Recommendation on the Ethics of Neurotechnology: https://www.unesco.org/en/ethics-neurotech/recommendation
+- Ethical Issues in Memory Modification Technology, PubMed: https://pubmed.ncbi.nlm.nih.gov/39417981/
+- Neuromodulation and memory ethics, PMC: https://pmc.ncbi.nlm.nih.gov/articles/PMC10764565/
+- The ethics of molecular memory modification, PubMed: https://pubmed.ncbi.nlm.nih.gov/25552663/
+- Does Memory Modification Threaten Our Authenticity, PMC: https://pmc.ncbi.nlm.nih.gov/articles/PMC3189328/
 - NASA Human Systems Integration lessons: https://www.nasa.gov/humans-in-space/commercial-space/leo-economy/nasa-shares-lessons-human-systems-integration/
 - Nancy Leveson, Engineering a Safer World: https://direct.mit.edu/books/oa-monograph/2908/Engineering-a-Safer-WorldSystems-Thinking-Applied
 - Lopez-Otin et al., The Hallmarks of Aging: https://pmc.ncbi.nlm.nih.gov/articles/PMC3836174/
