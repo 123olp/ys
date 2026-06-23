@@ -36,3 +36,4 @@ All notable repository structure changes are recorded here.
 - Expanded the applications and literature index with disease burden, cost-effectiveness, health technology assessment, value assessment, payment incentives, and health expenditure evidence.
 - Expanded the applications and literature index with chronic stress, allostatic load, perceived stress, workplace mental health, worker well-being, and fatigue-recovery evidence.
 - Expanded the applications and literature index with social determinants, community vulnerability, environmental justice, local health estimates, food access, and health-related social needs evidence.
+- Expanded the applications and literature index with rehabilitation, assistive technology, priority assistive products, digital accessibility, Section 508, and effective communication evidence.
