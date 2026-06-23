@@ -60,6 +60,7 @@ All notable repository structure changes are recorded here.
 - Expanded the applications and literature index with climate risk, early warning, resilience planning, climate-health, heat, and environmental justice evidence.
 - Expanded the applications and literature index with childcare, early education, care work, child care subsidies, service navigation, and family work-continuity evidence.
 - Expanded the applications and literature index with employment services, workforce development, WIOA, apprenticeship, occupational information, and job accommodation evidence.
+- Expanded the applications and literature index with labour standards, wage and hour protections, workplace safety rights, anti-discrimination resources, labour organization governance, and worker complaint entry points.
 - Expanded the applications and literature index with public benefits navigation, service delivery, administrative burden, Medicaid/CHIP, SSI, LIHEAP, and customer experience evidence.
 - Expanded the applications and literature index with language access, plain language, health literacy, clear communication, and cognitive accessibility evidence.
 - Expanded the applications and literature index with medicines access, medication safety, drug shortages, labeling, patient medicine information, prescription coverage, and medication continuity evidence.
