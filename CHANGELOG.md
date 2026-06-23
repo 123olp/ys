@@ -69,3 +69,4 @@ All notable repository structure changes are recorded here.
 
 - Expanded the applications and literature index with telehealth, remote patient monitoring, virtual care access, Medicare/CMS coverage, and digital health oversight evidence.
 - Expanded the applications and literature index with community resource navigation, 211, human-services resource directories, social needs referral standards, and closed-loop service navigation evidence.
+- Expanded the applications and literature index with patient health record access, USCDI, TEFCA, CMS Patient Access, Blue Button, FHIR, and SMART App Launch interoperability evidence.
