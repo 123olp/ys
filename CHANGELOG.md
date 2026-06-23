@@ -26,3 +26,4 @@ All notable repository structure changes are recorded here.
 - Extended repository structure validation to include the remote quality gate.
 - Added the first real-world applications and literature index for Human Infra.
 - Expanded the applications and literature index with a longevity evidence foundation covering NIA ITP, geroscience, HAGR, MILES, and TAME boundaries.
+- Expanded the applications and literature index with cognitive workload, human-AI interaction, attention restoration, AI risk management, and knowledge-work evidence.

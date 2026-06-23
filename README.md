@@ -31,6 +31,7 @@ flowchart LR
     G[神经科技<br/>NIH BRAIN / DARPA NESD] --> H
     I[系统安全<br/>Leveson STAMP] --> H
     K[公共健康基线<br/>睡眠 / 运动 / 营养 / 心理健康] --> H
+    M[人机协作与认知工程<br/>NIST AI RMF / NASA-TLX / Human-AI Teaming] --> H
 
     H --> J[人类如何长期稳定地<br/>执行 / 创造 / 判断 / 恢复 / 延续]
 ```
@@ -45,7 +46,7 @@ flowchart LR
 | 查看领域边界 | [docs/reference/domain-map.md](docs/reference/domain-map.md) | Human Infra 的子域地图和拆分原因 |
 | 查看伦理与安全红线 | [docs/reference/ethics-and-safety-boundaries.md](docs/reference/ethics-and-safety-boundaries.md) | 医疗、神经、生命支持和组织使用边界 |
 | 查看证据规则 | [docs/reference/evidence-policy.md](docs/reference/evidence-policy.md) | 如何区分原始资料、证据和稳定结论 |
-| 查看真实应用与文献 | [docs/reference/applications-and-literature.md](docs/reference/applications-and-literature.md) | Bryan Johnson、NIA ITP、Geroscience、Apple Heart Study、NIOSH、WHO、NASA、H2F、BRAIN 等资料索引 |
+| 查看真实应用与文献 | [docs/reference/applications-and-literature.md](docs/reference/applications-and-literature.md) | Bryan Johnson、NIA ITP、Geroscience、NIST AI RMF、NASA-TLX、Apple Heart Study、NIOSH、WHO、NASA、H2F、BRAIN 等资料索引 |
 | 贡献文档 | [docs/how-to/contribute-docs.md](docs/how-to/contribute-docs.md) | 文档贡献流程 |
 | 加入社区 | [Telegram](https://t.me/human_infra) | 讨论 Human Infra、长寿证据、未来等待路径和研究资料 |
 | 运行质量检查 | [docs/how-to/run-quality-checks.md](docs/how-to/run-quality-checks.md) | 本地和 CI 的检查命令 |

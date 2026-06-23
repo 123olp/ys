@@ -24,6 +24,7 @@
 | 军队人类表现优化 | U.S. Army H2F / Total Force Fitness | 高压组织已经把体能、睡眠、营养、心理和恢复合并成战备基础设施 | 高压任务执行、恢复、训练系统、组织支持 | [Army H2F](https://h2f.army.mil/), [Army H2F overview](https://www.goarmy.com/explore-the-army/holistic-health-fitness), [Total Force Fitness review](https://pmc.ncbi.nlm.nih.gov/articles/PMC10666955/) |
 | 神经科技基础设施 | NIH BRAIN Initiative / DARPA NESD / Neuralink PRIME | 神经接口、脑功能理解和临床设备试验正在形成高风险神经基础设施 | 记忆编辑、去具身中枢、主体权利、安全审计 | [NIH BRAIN Initiative](https://braininitiative.nih.gov/), [DARPA NESD](https://www.darpa.mil/research/programs/neural-engineering-system-design), [Neuralink PRIME on ClinicalTrials.gov](https://clinicaltrials.gov/study/NCT06429735), [FDA IDE overview](https://www.fda.gov/medical-devices/premarket-submissions-selecting-and-preparing-correct-submission/investigational-device-exemption-ide) |
 | 系统安全与人机组织 | NASA Human Systems Integration / Leveson STAMP | 人的限制、训练、维护、组织决策和安全控制必须在系统设计中前置 | Human SRE、事故预防、任务系统、安全边界 | [NASA HSI lessons](https://www.nasa.gov/humans-in-space/commercial-space/leo-economy/nasa-shares-lessons-human-systems-integration/), [Engineering a Safer World](https://direct.mit.edu/books/oa-monograph/2908/Engineering-a-Safer-WorldSystems-Thinking-Applied) |
+| AI 与知识工作基础设施 | NIST AI RMF / NASA-TLX / Human-AI Teaming / Generative AI at Work | AI 工具、工作负荷、交互规则、风险治理和生产率影响必须一起看，不能只看模型能力 | 人机协作、认知负荷、注意力恢复、知识工作系统 | [NIST AI RMF](https://www.nist.gov/itl/ai-risk-management-framework), [NASA-TLX](https://www.nasa.gov/human-systems-integration-division/nasa-task-load-index-tlx/), [Guidelines for Human-AI Interaction](https://doi.org/10.1145/3290605.3300233), [Generative AI at Work](https://www.nber.org/papers/w31161) |
 
 ## 公共健康基线
 
@@ -50,6 +51,21 @@
 | 转化研究网络 | Translational Geroscience Network | 把 geroscience 假说推进到临床试验设计、样本、终点和数据管理 | 临床试验仍需看具体适应症、终点、状态、结果和安全性 |
 | 人体试验范式 | MILES；TAME | MILES 展示 metformin 与人体衰老生物学指标的早期探索；TAME 代表“瞄准衰老而非单病种”的试验范式 | 不能写成 metformin 已经证明可抗衰；TAME 也不能替代已完成的临床终点证据 |
 
+## 认知与人机协作底座
+
+这一层用于支撑 AI 时代的 Human Infra 叙事：人不是被 AI 替代的抽象资源，而是与工具、任务、界面、组织约束和恢复环境共同组成的执行系统。这里的重点不是“使用更多 AI”，而是让协作系统可测量、可解释、可恢复、可审计。
+
+| 层级 | 资料或项目 | 对 Human Infra 的意义 | 使用边界 |
+| --- | --- | --- | --- |
+| 工作负荷测量 | NASA Task Load Index | 提供任务负荷的主观测量框架，适合讨论任务设计、界面压力和人机系统评估 | NASA-TLX 不是心理诊断，也不能单独证明某个工具更安全 |
+| 认知负荷理论 | Sweller 的 Cognitive Load Theory | 把学习、任务设计和工具复杂度接回工作记忆限制，说明“信息更多”不等于“执行更强” | 教育和任务设计框架不能直接简化成通用效率公式 |
+| 注意力恢复 | Kaplan Attention Restoration Theory | 把注意力、环境和恢复纳入工作系统，而不是只归因于自律 | 不能把自然暴露或环境设计包装成医疗治疗 |
+| 以人为中心设计 | ISO 9241-210 | 给交互系统设计提供用户、任务、环境和迭代评估的标准语言 | 以人为中心不是视觉美化，也不是跳过安全验证 |
+| 人机交互规则 | Guidelines for Human-AI Interaction | 把 AI 系统的提示、纠错、置信度、反馈和控制权设计成可审查对象 | 交互指南不能替代模型评估、数据治理或安全测试 |
+| 人机团队 | National Academies Human-AI Teaming 线路 | 把 AI 视为团队成员或任务系统组件，强调信任、透明度、训练、权责和情境适配 | 高风险场景必须做具体任务验证，不能只凭“human-in-the-loop”口号 |
+| AI 风险治理 | NIST AI Risk Management Framework | 提供治理、映射、测量和管理 AI 风险的框架，适合接入 Human Infra 的安全边界 | 框架不是合规豁免，也不自动证明具体 AI 系统可信 |
+| 知识工作实证 | Generative AI at Work | 展示生成式 AI 在真实工作任务中可能改变生产率、学习曲线和人员差异 | 单一行业或任务的实证结果不能外推为所有知识工作 ROI |
+
 ## 文献主干
 
 | 主题 | 文献或资料 | 为什么重要 | 应放入的后续子域 |
@@ -67,6 +83,10 @@
 | 极端环境人因 | NASA HRP / HSI | 把人的生理、认知、环境和任务风险当作工程约束 | 去具身中枢、未来等待、任务执行模型 |
 | 神经科技治理 | NIH BRAIN、DARPA NESD、ClinicalTrials.gov 神经接口试验 | 提供记忆编辑、神经接口和主体权利讨论的真实研究背景 | `domains/memory-editing/` 与 `domains/disembodied-cns/` |
 | 系统安全 | Nancy Leveson, Engineering a Safer World | 把事故理解为控制、组织和系统约束问题，而不只是个体失误 | Human SRE、审查清单、安全边界 |
+| 认知负荷 | NASA-TLX；Cognitive Load Theory | 把任务执行失败的一部分解释为负荷、界面和工作记忆限制，而不是个人意志不足 | AI 工具、知识工作和组织应用 |
+| 注意力与恢复 | Attention Restoration Theory | 把环境、注意力疲劳和恢复放进任务系统设计 | 公共健康基线、知识工作、组织设计 |
+| 人机协作 | NIST AI RMF；Guidelines for Human-AI Interaction；Human-AI Teaming | 把 AI 从“模型能力”重新放回人、任务、组织和风险治理系统 | AI 协作、Human SRE、宣传边界 |
+| 生成式 AI 与知识工作 | Generative AI at Work；Microsoft New Future of Work | 为 AI 进入真实工作流提供实证和研究议程，而不是只靠产品宣传 | README 叙事、AI 工具边界、后续应用案例 |
 
 ## 如何用于 README 和宣传
 
@@ -74,7 +94,7 @@
 
 ```text
 Human Infra 不是凭空发明的新词。
-Bryan Johnson、NIA ITP、Geroscience、HAGR、NIOSH Total Worker Health、WHO ICOPE、NASA HRP、Apple Heart Study、军队 H2F、NIH BRAIN 和系统安全工程，其实都在研究同一个更大的对象：
+Bryan Johnson、NIA ITP、Geroscience、HAGR、NIOSH Total Worker Health、WHO ICOPE、NASA HRP、Apple Heart Study、军队 H2F、NIH BRAIN、NIST AI RMF、NASA-TLX 和系统安全工程，其实都在研究同一个更大的对象：
 支撑人类长期运行、判断、创造、恢复和延续的基础设施。
 ```
 
@@ -85,12 +105,13 @@ Bryan Johnson、NIA ITP、Geroscience、HAGR、NIOSH Total Worker Health、WHO I
 - MILES / TAME 是 metformin 与衰老生物学转化研究案例，不表示 metformin 已经被证明可用于普通人抗衰。
 - Apple Heart Study 是数字健康验证案例，不表示所有可穿戴功能都可用于诊断。
 - BRAIN、NESD、Neuralink PRIME 是神经科技研究和试验背景，不表示记忆编辑或去具身中枢已经可执行。
+- NIST AI RMF、Human-AI Interaction guidelines、NASA-TLX 和生成式 AI 工作研究说明 AI 协作必须进入风险、负荷和任务设计，不表示 AI 自动提高所有人的生产率。
 - NASA、军队和职业健康案例能说明 Human Infra 的工程价值，但不能直接迁移到普通生活场景而不考虑伦理和权力关系。
 
 ## 下一批资料队列
 
 - 长寿证据子域内部的数据模型、证据等级表和干预条目模板。
-- 人机协作、认知负荷、注意力恢复和知识工作研究。
+- 人机协作子域或专题页的条目模板：任务、负荷、风险、反馈、恢复和审计。
 - 神经伦理、BCI 临床安全、记忆干预伦理文献。
 - 组织疲劳管理、事故复盘、医疗安全和高可靠组织资料。
 
@@ -137,6 +158,19 @@ Bryan Johnson、NIA ITP、Geroscience、HAGR、NIOSH Total Worker Health、WHO I
 - Metformin as a Tool to Target Aging, PubMed: https://pubmed.ncbi.nlm.nih.gov/27304507/
 - Targeting Aging with Metformin, PMC: https://pmc.ncbi.nlm.nih.gov/articles/PMC6248732/
 - Critical review of metformin as putative anti-aging drug, PubMed: https://pubmed.ncbi.nlm.nih.gov/34421827/
+- NIST AI Risk Management Framework: https://www.nist.gov/itl/ai-risk-management-framework
+- NIST AI RMF 1.0 PDF: https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf
+- NASA Task Load Index: https://www.nasa.gov/human-systems-integration-division/nasa-task-load-index-tlx/
+- Hart and Staveland, NASA-TLX, NASA NTRS: https://ntrs.nasa.gov/citations/20000021488
+- Sweller, Cognitive load during problem solving, DOI: https://doi.org/10.1007/BF00375122
+- Kaplan, The restorative benefits of nature, DOI: https://doi.org/10.1016/0272-4944(95)90001-2
+- ISO 9241-210 human-centred design: https://www.iso.org/standard/77520.html
+- Guidelines for Human-AI Interaction, DOI: https://doi.org/10.1145/3290605.3300233
+- Microsoft Research, Guidelines for Human-AI Interaction: https://www.microsoft.com/en-us/research/publication/guidelines-for-human-ai-interaction/
+- National Academies Human-AI Teaming report: https://www.nationalacademies.org/read/26355
+- National Academies Human-AI Teaming DOI: https://doi.org/10.17226/26355
+- NBER Generative AI at Work: https://www.nber.org/papers/w31161
+- Microsoft New Future of Work: https://www.microsoft.com/en-us/research/project/the-new-future-of-work/
 - WHO Guidelines on physical activity and sedentary behaviour: https://www.who.int/publications/i/item/9789240015128
 - HHS Physical Activity Guidelines for Americans: https://odphp.health.gov/our-work/nutrition-physical-activity/physical-activity-guidelines
 - Dietary Guidelines for Americans: https://www.dietaryguidelines.gov/
