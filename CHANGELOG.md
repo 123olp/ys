@@ -31,3 +31,4 @@ All notable repository structure changes are recorded here.
 - Expanded the applications and literature index with organizational safety, fatigue management, incident learning, patient safety, and high-reliability organization evidence.
 - Expanded the applications and literature index with population-scale health data, cohort studies, public health surveys, biobanks, and molecular phenotype resources.
 - Expanded the applications and literature index with learning health systems, real-world evidence, clinical trial registries, interoperability standards, and digital health evaluation frameworks.
+- Expanded the applications and literature index with trust, privacy, data governance, cybersecurity, human-subject protection, and genomic data sharing frameworks.
