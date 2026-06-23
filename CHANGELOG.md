@@ -25,3 +25,4 @@ All notable repository structure changes are recorded here.
 - Added GitHub Actions `check.yml` to run `make check` on pushes and pull requests.
 - Extended repository structure validation to include the remote quality gate.
 - Added the first real-world applications and literature index for Human Infra.
+- Expanded the applications and literature index with a longevity evidence foundation covering NIA ITP, geroscience, HAGR, MILES, and TAME boundaries.
