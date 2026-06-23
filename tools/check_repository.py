@@ -46,6 +46,7 @@ REQUIRED_FILES = [
     "docs/how-to/contribute-docs.md",
     "docs/how-to/run-quality-checks.md",
     "docs/reference/README.md",
+    "docs/reference/applications-and-literature.md",
     "docs/source-notes/README.md",
     "docs/templates/README.md",
     "docs/tutorials/README.md",

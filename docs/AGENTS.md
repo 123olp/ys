@@ -23,6 +23,7 @@ docs/
 │   └── run-quality-checks.md
 ├── reference/
 │   ├── README.md
+│   ├── applications-and-literature.md
 │   ├── document-lifecycle.md
 │   ├── domain-map.md
 │   ├── evidence-policy.md
@@ -50,6 +51,7 @@ docs/
 ## 文件职责
 
 - `explanations/human-runtime-infrastructure.md`：定义 Human Infra 的核心模型、七层结构、诊断框架和 Human SRE 类比。
+- `reference/applications-and-literature.md`：整理 Human Infra 的真实应用案例和首批文献主干。
 - `reference/domain-map.md`：定义根项目与子域的边界、迁移切片、主动不做和验证点。
 - `reference/ethics-and-safety-boundaries.md`：定义医疗、组织、去具身中枢、记忆编辑和数据证据边界。
 - `reference/evidence-policy.md`：定义证据、解释、主张、推测和决策的分层规则。
