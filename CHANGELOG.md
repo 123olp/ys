@@ -33,3 +33,4 @@ All notable repository structure changes are recorded here.
 - Expanded the applications and literature index with learning health systems, real-world evidence, clinical trial registries, interoperability standards, and digital health evaluation frameworks.
 - Expanded the applications and literature index with trust, privacy, data governance, cybersecurity, human-subject protection, and genomic data sharing frameworks.
 - Expanded the applications and literature index with functioning, quality-of-life, patient-reported outcome, symptom burden, and value-based outcome measurement frameworks.
+- Expanded the applications and literature index with disease burden, cost-effectiveness, health technology assessment, value assessment, payment incentives, and health expenditure evidence.

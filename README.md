@@ -27,6 +27,7 @@ flowchart LR
     R[验证与监管基础设施<br/>ClinicalTrials.gov / FDA RWE / OMOP] --> H
     T[信任与数据治理<br/>HIPAA / NIST Privacy / GA4GH] --> H
     Q[功能与生活质量结局<br/>PROMIS / WHO ICF / EQ-5D] --> H
+    V[价值与疾病负担<br/>GBD / WHO-CHOICE / NICE HTA] --> H
     B[数字健康与可穿戴<br/>Apple Heart Study] --> H
     C[职业健康与组织设计<br/>NIOSH Total Worker Health] --> H
     D[健康老龄化<br/>WHO ICOPE] --> H
@@ -52,7 +53,7 @@ flowchart LR
 | 查看领域边界 | [docs/reference/domain-map.md](docs/reference/domain-map.md) | Human Infra 的子域地图和拆分原因 |
 | 查看伦理与安全红线 | [docs/reference/ethics-and-safety-boundaries.md](docs/reference/ethics-and-safety-boundaries.md) | 医疗、神经、生命支持和组织使用边界 |
 | 查看证据规则 | [docs/reference/evidence-policy.md](docs/reference/evidence-policy.md) | 如何区分原始资料、证据和稳定结论 |
-| 查看真实应用与文献 | [docs/reference/applications-and-literature.md](docs/reference/applications-and-literature.md) | Bryan Johnson、NIA ITP、All of Us、ClinicalTrials.gov、FDA RWE、PROMIS、WHO ICF、EQ-5D、HIPAA、NIST Privacy、GA4GH、FDA BCI、WHO Patient Safety、NASA、BRAIN 等资料索引 |
+| 查看真实应用与文献 | [docs/reference/applications-and-literature.md](docs/reference/applications-and-literature.md) | Bryan Johnson、NIA ITP、All of Us、ClinicalTrials.gov、FDA RWE、PROMIS、GBD、WHO-CHOICE、NICE HTA、HIPAA、NIST Privacy、GA4GH、FDA BCI、WHO Patient Safety、NASA、BRAIN 等资料索引 |
 | 贡献文档 | [docs/how-to/contribute-docs.md](docs/how-to/contribute-docs.md) | 文档贡献流程 |
 | 加入社区 | [Telegram](https://t.me/human_infra) | 讨论 Human Infra、长寿证据、未来等待路径和研究资料 |
 | 运行质量检查 | [docs/how-to/run-quality-checks.md](docs/how-to/run-quality-checks.md) | 本地和 CI 的检查命令 |
