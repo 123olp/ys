@@ -64,3 +64,7 @@ All notable repository structure changes are recorded here.
 - Expanded the applications and literature index with language access, plain language, health literacy, clear communication, and cognitive accessibility evidence.
 - Expanded the applications and literature index with medicines access, medication safety, drug shortages, labeling, patient medicine information, prescription coverage, and medication continuity evidence.
 - Expanded the applications and literature index with public alerting, emergency communications, 911/NG911, weather radio, and first-responder communications evidence.
+
+## 2026-06-24
+
+- Expanded the applications and literature index with telehealth, remote patient monitoring, virtual care access, Medicare/CMS coverage, and digital health oversight evidence.
