@@ -39,3 +39,4 @@ All notable repository structure changes are recorded here.
 - Expanded the applications and literature index with rehabilitation, assistive technology, priority assistive products, digital accessibility, Section 508, and effective communication evidence.
 - Expanded the applications and literature index with learning science, education evidence, education statistics, lifelong learning, skill taxonomies, and human capital evidence.
 - Expanded the applications and literature index with housing health, urban health, built environment assessment, active community design, air quality, heat risk, and road safety evidence.
+- Expanded the applications and literature index with caregiving, family caregiver support, home- and community-based services, home health, hospice, care coordination, and long-term care evidence.
