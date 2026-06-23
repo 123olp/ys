@@ -59,3 +59,4 @@ All notable repository structure changes are recorded here.
 - Expanded the applications and literature index with financial inclusion, payment systems, household banking access, consumer complaints, credit trends, and payments evidence.
 - Expanded the applications and literature index with climate risk, early warning, resilience planning, climate-health, heat, and environmental justice evidence.
 - Expanded the applications and literature index with childcare, early education, care work, child care subsidies, service navigation, and family work-continuity evidence.
+- Expanded the applications and literature index with employment services, workforce development, WIOA, apprenticeship, occupational information, and job accommodation evidence.
