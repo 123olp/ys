@@ -63,3 +63,4 @@ All notable repository structure changes are recorded here.
 - Expanded the applications and literature index with public benefits navigation, service delivery, administrative burden, Medicaid/CHIP, SSI, LIHEAP, and customer experience evidence.
 - Expanded the applications and literature index with language access, plain language, health literacy, clear communication, and cognitive accessibility evidence.
 - Expanded the applications and literature index with medicines access, medication safety, drug shortages, labeling, patient medicine information, prescription coverage, and medication continuity evidence.
+- Expanded the applications and literature index with public alerting, emergency communications, 911/NG911, weather radio, and first-responder communications evidence.
