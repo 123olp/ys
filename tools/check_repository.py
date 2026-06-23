@@ -25,7 +25,9 @@ REQUIRED_FILES = [
     "README.md",
     "SECURITY.md",
     "SUPPORT.md",
+    ".github/AGENTS.md",
     ".github/PULL_REQUEST_TEMPLATE.md",
+    ".github/workflows/check.yml",
     ".github/ISSUE_TEMPLATE/config.yml",
     ".github/ISSUE_TEMPLATE/documentation.yml",
     ".github/ISSUE_TEMPLATE/research-note.yml",
@@ -77,6 +79,7 @@ REQUIRED_FILES = [
 
 REQUIRED_DIRS = [
     ".github/ISSUE_TEMPLATE",
+    ".github/workflows",
     "docs/decisions",
     "docs/explanations",
     "docs/how-to",

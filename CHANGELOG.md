@@ -17,3 +17,10 @@ All notable repository structure changes are recorded here.
 - Added `domains/future-waiting/` for future-waiting and low-subjective-time paths.
 - Added the `black-hole-waiting-room` path as a general relativity time-dilation thought experiment.
 - Updated domain map, ethics boundaries, glossary, review checklist, and repository validation for the new domain.
+
+## 2026-06-23
+
+- Initialized the repository for remote push on the `main` branch.
+- Added `.github/AGENTS.md` for GitHub collaboration ownership.
+- Added GitHub Actions `check.yml` to run `make check` on pushes and pull requests.
+- Extended repository structure validation to include the remote quality gate.

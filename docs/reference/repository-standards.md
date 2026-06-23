@@ -26,12 +26,15 @@ Required for this repository:
 - `.editorconfig`: baseline editor formatting rules.
 - `.gitattributes`: text normalization and binary artifact hints.
 - `Makefile`: local check and cleanup commands.
+- `.github/workflows/check.yml`: remote `make check` quality gate.
 
 ## Standard Directories
 
 ```text
 .
 ├── .github/
+│   ├── ISSUE_TEMPLATE/
+│   └── workflows/
 ├── docs/
 │   ├── decisions/
 │   ├── explanations/
@@ -49,13 +52,23 @@ Required for this repository:
 
 ## GitHub Community Health Files
 
-The repository keeps issue templates, PR template, and root collaboration files so future public collaboration has a predictable entry point.
+The repository keeps issue templates, PR template, CI workflow, and root collaboration files so future public collaboration has a predictable entry point.
 
 Files that need real maintainer contacts before public launch:
 
 - `SECURITY.md`
 - `CODE_OF_CONDUCT.md`
 - `SUPPORT.md`
+
+## Quality Gates
+
+Local and remote checks share the same command:
+
+```bash
+make check
+```
+
+GitHub Actions should call this command directly instead of duplicating validation logic in YAML.
 
 ## Data Boundary
 

@@ -54,3 +54,13 @@ python3 domains/longevity-evidence/scripts/collect_core_data.py --help
 ```
 
 Do not run network data collection unless you intentionally want to refresh generated data.
+
+## Remote Check
+
+GitHub Actions runs the same command on pushes and pull requests:
+
+```bash
+make check
+```
+
+Keep CI as a thin wrapper around local checks so failures can be reproduced locally.
