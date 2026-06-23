@@ -27,9 +27,11 @@ docs/
 │   ├── add-domain.md
 │   ├── add-source-note.md
 │   ├── contribute-docs.md
-│   └── run-quality-checks.md
+│   ├── run-quality-checks.md
+│   └── share-human-infra.md
 ├── reference/
 │   ├── README.md
+│   ├── applications-and-literature.md
 │   ├── document-lifecycle.md
 │   ├── domain-map.md
 │   ├── evidence-policy.md
@@ -56,6 +58,7 @@ docs/
 2. Read `reference/domain-map.md`.
 3. Read `reference/ethics-and-safety-boundaries.md`.
 4. Read `reference/evidence-policy.md`.
-5. Read `reference/review-checklists.md`.
-6. Read `explanations/human-runtime-infrastructure.md`.
-7. Enter a domain under `../domains/`.
+5. Read `reference/applications-and-literature.md`.
+6. Read `reference/review-checklists.md`.
+7. Read `explanations/human-runtime-infrastructure.md`.
+8. Enter a domain under `../domains/`.

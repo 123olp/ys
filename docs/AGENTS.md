@@ -20,7 +20,8 @@ docs/
 │   ├── add-domain.md
 │   ├── add-source-note.md
 │   ├── contribute-docs.md
-│   └── run-quality-checks.md
+│   ├── run-quality-checks.md
+│   └── share-human-infra.md
 ├── reference/
 │   ├── README.md
 │   ├── applications-and-literature.md
@@ -62,6 +63,7 @@ docs/
 - `how-to/add-domain.md`：说明新增子域的步骤和停止条件。
 - `how-to/add-source-note.md`：说明新增 source note 的步骤和规则。
 - `how-to/run-quality-checks.md`：说明如何运行本地质量检查。
+- `how-to/share-human-infra.md`：说明如何对外介绍 Human Infra、复用短推文模板并保持传播边界。
 - `source-notes/`：保存最新资料原文或轻整理版本，供后续提炼，不直接作为产品说明入口。
 - `source-notes/README.md`：说明原始资料归档的文件职责和使用规则。
 - `templates/`：保存决策记录、子域 README、source note 和 reference 文档模板。

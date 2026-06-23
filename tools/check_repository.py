@@ -45,6 +45,7 @@ REQUIRED_FILES = [
     "docs/how-to/add-source-note.md",
     "docs/how-to/contribute-docs.md",
     "docs/how-to/run-quality-checks.md",
+    "docs/how-to/share-human-infra.md",
     "docs/reference/README.md",
     "docs/reference/applications-and-literature.md",
     "docs/source-notes/README.md",
