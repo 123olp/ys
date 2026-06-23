@@ -17,6 +17,7 @@
 | --- | --- | --- | --- | --- |
 | 自我量化与长寿实践 | Bryan Johnson / Blueprint | 个体可以尝试把睡眠、饮食、运动、补剂、检测和生活流程组织成一套可观测运行系统 | 个体级运行系统、反馈闭环、长寿证据边界 | [Blueprint Protocol](https://protocol.bryanjohnson.com/) |
 | 长寿证据基础设施 | NIA Interventions Testing Program / Geroscience / HAGR | 长寿不只是个人实验，也需要候选干预筛选、模型验证、机制框架、数据库归档和临床试验登记 | 长寿证据账本、干预分层、证据等级、转化边界 | [NIA ITP](https://www.nia.nih.gov/research/dab/interventions-testing-program-itp), [JAX ITP](https://www.jax.org/research-and-faculty/research-centers/aging-center/research/itp), [NIH GSIG](https://oir.nih.gov/sigs/geroscience-interest-group-gsig), [DrugAge](https://genomics.senescence.info/drugs/) |
+| 人口级健康数据基础设施 | All of Us / UK Biobank / NHANES / Framingham / GTEx | 长期健康、基因、表型、环境和生活方式数据正在成为理解人类运行状态的基础设施 | 数据治理、长期随访、多模态表型、代表性、隐私和再识别风险 | [All of Us](https://allofus.nih.gov/), [UK Biobank](https://www.ukbiobank.ac.uk/), [NHANES](https://www.cdc.gov/nchs/nhanes/index.html), [Framingham Heart Study](https://www.nhlbi.nih.gov/science/framingham-heart-study-fhs), [GTEx Portal](https://gtexportal.org/home/) |
 | 可穿戴健康监测 | Apple Heart Study | 消费级传感器可以进入大规模健康筛查和反馈链路，但需要临床验证和风险沟通 | 传感器、反馈、医学边界、数字健康 | [NEJM Apple Heart Study](https://www.nejm.org/doi/full/10.1056/NEJMoa1901183), [PubMed](https://pubmed.ncbi.nlm.nih.gov/31722151/), [Stanford Medicine](https://med.stanford.edu/news/all-news/2019/11/through-apple-heart-study--stanford-medicine-researchers-show-we.html) |
 | 职业健康与组织设计 | NIOSH Total Worker Health | 工作不是背景变量，而是影响健康、安全和福祉的系统条件 | 组织基础设施、恢复、风险控制、反压榨边界 | [NIOSH TWH Program](https://www.cdc.gov/niosh/twh/programs/index.html), [TWH overview](https://www.cdc.gov/niosh/twh/index.html) |
 | 老年整合照护 | WHO ICOPE | 健康老龄化可以围绕内在能力、功能能力和个性化照护路径组织 | 健康寿命、照护路径、主体能力维护 | [WHO ICOPE handbook](https://www.who.int/publications/i/item/9789240103726), [WHO ICOPE training](https://www.decadeofhealthyageing.org/find-knowledge/support/training-programmes/who-integrated-care-for-older-people-%28icope%29-training-programme-field-testing-version) |
@@ -39,6 +40,18 @@
 | 营养 | Dietary Guidelines for Americans | 为饮食、代谢和健康寿命讨论提供公共政策基线 | 不能替代医疗营养治疗或个体化饮食处方 |
 | 工作心理健康 | WHO Guidelines on mental health at work；U.S. Surgeon General Workplace Mental Health and Well-Being Framework | 把心理健康和工作设计纳入基础设施，而不是只归因于个人韧性 | 不能被用来包装绩效压榨或组织监控 |
 | 工作者福祉测量 | NIOSH Worker Well-Being Questionnaire | 提供组织层面观察工作者福祉的结构化工具 | 测量必须服务于保护和改善，不应成为惩罚性监控 |
+
+## 人口级健康数据底座
+
+这一层支撑 Human Infra 的证据基础：如果要理解人类长期运行状态，不能只看单个网红式个案，也不能只看单次体检。All of Us、UK Biobank、NHANES、Framingham 和 GTEx 分别代表多来源长期健康数据、生物样本库、公共健康调查、长期队列和分子表型资源。它们共同提示：Human Infra 需要数据治理、代表性、同意、访问控制、隐私保护和跨层证据解释。
+
+| 层级 | 资料或项目 | 对 Human Infra 的意义 | 使用边界 |
+| --- | --- | --- | --- |
+| 参与者级纵向研究 | NIH All of Us Research Program；All of Us Researcher Workbench | 把电子健康记录、调查、基因组和其他参与者数据组织成研究基础设施，强调多样性和长期开放研究 | 研究数据不能替代个人诊断；使用时必须尊重同意、访问控制、隐私和数据使用规则 |
+| 大型生物样本库 | UK Biobank | 连接基因、影像、生物标志物、生活方式和长期健康结局，适合研究复杂疾病风险和健康轨迹 | 队列有地域、年龄和参与者选择偏倚，不能直接代表全人类 |
+| 公共营养与体检调查 | CDC NHANES | 用调查、体检和实验室数据支持美国人口健康和营养状态监测 | 是人口监测和研究资源，不是个人健康评分或诊断工具 |
+| 长期心血管队列 | Framingham Heart Study | 展示长期随访如何把风险因素、生活方式和疾病结局连接成证据链 | 经典队列有历史和人口结构限制，外推到不同人群时必须谨慎 |
+| 组织特异性分子表型 | GTEx | 把不同人体组织中的基因表达和遗传变异连接起来，为机制解释提供分子层数据 | 分子关联不是干预建议，不能直接推出药物、补剂或个人方案 |
 
 ## 长寿证据底座
 
@@ -103,6 +116,7 @@
 | Geroscience | NIH GeroScience Interest Group；Translational Geroscience Network | 把衰老视为多个慢病和功能衰退的共同风险机制，并推动临床试验基础设施 | `domains/longevity-evidence/` 与 README 叙事 |
 | 长寿干预测试 | NIA ITP / CITP；HAGR DrugAge | 提供候选干预从模型、数据库到证据等级整理的基础资料 | `domains/longevity-evidence/` 数据源和证据模型 |
 | Metformin 与 TAME | MILES；TAME；metformin targeting aging 文献 | 是“把衰老作为干预目标”的经典转化案例，也展示证据边界和监管挑战 | 临床试验、药品安全、宣传边界 |
+| 人口级健康数据 | All of Us；UK Biobank；NHANES；Framingham；GTEx | 为 Human Infra 提供长期队列、公共健康调查、生物样本库和分子表型基础设施 | 数据治理、隐私、代表性、可迁移性和子域证据模型 |
 | 慢性压力与负荷 | McEwen / Stellar 的 allostatic load 线路 | 把压力、恢复和长期疾病风险放进同一套生理成本模型 | `docs/explanations/` 与组织使用边界 |
 | 自我追踪文化 | Gary Wolf / Quantified Self | 解释从个人记录、传感器、指标到生活系统的历史线路 | README 叙事与应用案例 |
 | 公共健康基线 | WHO / HHS / CDC / AASM / Dietary Guidelines | 为睡眠、运动、营养、心理健康和恢复提供低风险底座 | `docs/reference/` 与应用案例 |
@@ -128,7 +142,7 @@
 
 ```text
 Human Infra 不是凭空发明的新词。
-Bryan Johnson、NIA ITP、Geroscience、HAGR、NIOSH Total Worker Health、WHO ICOPE、WHO Patient Safety、AHRQ TeamSTEPPS、NASA HRP、Apple Heart Study、军队 H2F、NIH BRAIN、FDA BCI guidance、UNESCO/OECD neurotechnology ethics、NIST AI RMF、NASA-TLX 和系统安全工程，其实都在研究同一个更大的对象：
+Bryan Johnson、NIA ITP、Geroscience、HAGR、All of Us、UK Biobank、NHANES、Framingham、GTEx、NIOSH Total Worker Health、WHO ICOPE、WHO Patient Safety、AHRQ TeamSTEPPS、NASA HRP、Apple Heart Study、军队 H2F、NIH BRAIN、FDA BCI guidance、UNESCO/OECD neurotechnology ethics、NIST AI RMF、NASA-TLX 和系统安全工程，其实都在研究同一个更大的对象：
 支撑人类长期运行、判断、创造、恢复和延续的基础设施。
 ```
 
@@ -136,6 +150,7 @@ Bryan Johnson、NIA ITP、Geroscience、HAGR、NIOSH Total Worker Health、WHO I
 
 - Bryan Johnson / Blueprint 是自我量化和个人运行系统案例，不是临床证据标准。
 - NIA ITP、CITP、HAGR 和 Geroscience 是长寿证据基础设施，不是人体干预推荐。
+- All of Us、UK Biobank、NHANES、Framingham 和 GTEx 是研究数据基础设施，不是个人诊断、健康评分或抗衰推荐系统。
 - MILES / TAME 是 metformin 与衰老生物学转化研究案例，不表示 metformin 已经被证明可用于普通人抗衰。
 - Apple Heart Study 是数字健康验证案例，不表示所有可穿戴功能都可用于诊断。
 - BRAIN、NESD、Neuralink PRIME 是神经科技研究和试验背景，不表示记忆编辑或去具身中枢已经可执行。
@@ -147,6 +162,7 @@ Bryan Johnson、NIA ITP、Geroscience、HAGR、NIOSH Total Worker Health、WHO I
 ## 下一批资料队列
 
 - 长寿证据子域内部的数据模型、证据等级表和干预条目模板。
+- 人口级健康数据条目模板：数据类型、样本偏倚、同意、访问控制、再识别风险和可迁移性。
 - 人机协作子域或专题页的条目模板：任务、负荷、风险、反馈、恢复和审计。
 - 记忆编辑子域内部的伦理审查模板：主体性、真实性、同意、退出、神经数据和长期伤害。
 - 组织级 Human Infra 审查模板：排班、疲劳、交接、告警、事件学习、强行动项和安全文化测量。
@@ -210,6 +226,14 @@ Bryan Johnson、NIA ITP、Geroscience、HAGR、NIOSH Total Worker Health、WHO I
 - GenAge database: https://genomics.senescence.info/genes/
 - LongevityMap database: https://genomics.senescence.info/longevity/
 - CellAge database: https://genomics.senescence.info/cells/
+- NIH All of Us Research Program: https://allofus.nih.gov/
+- All of Us Researcher Workbench: https://workbench.researchallofus.org/
+- UK Biobank: https://www.ukbiobank.ac.uk/
+- CDC National Health and Nutrition Examination Survey: https://www.cdc.gov/nchs/nhanes/index.html
+- NHLBI Framingham Heart Study: https://www.nhlbi.nih.gov/science/framingham-heart-study-fhs
+- GTEx Portal: https://gtexportal.org/home/
+- NIH / NHGRI Genotype-Tissue Expression Project: https://www.genome.gov/Funded-Programs-Projects/Genotype-Tissue-Expression-Project
+- GTEx Consortium atlas, PubMed: https://pubmed.ncbi.nlm.nih.gov/32913098/
 - MILES, ClinicalTrials.gov: https://clinicaltrials.gov/study/NCT02432287
 - TAME Trial, AFAR: https://www.afar.org/tame-trial
 - Metformin as a Tool to Target Aging, PubMed: https://pubmed.ncbi.nlm.nih.gov/27304507/

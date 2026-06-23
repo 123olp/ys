@@ -29,3 +29,4 @@ All notable repository structure changes are recorded here.
 - Expanded the applications and literature index with cognitive workload, human-AI interaction, attention restoration, AI risk management, and knowledge-work evidence.
 - Expanded the applications and literature index with neuroethics, BCI clinical safety, neurotechnology governance, and memory-modification ethics.
 - Expanded the applications and literature index with organizational safety, fatigue management, incident learning, patient safety, and high-reliability organization evidence.
+- Expanded the applications and literature index with population-scale health data, cohort studies, public health surveys, biobanks, and molecular phenotype resources.
