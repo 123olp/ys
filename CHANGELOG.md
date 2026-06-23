@@ -61,3 +61,4 @@ All notable repository structure changes are recorded here.
 - Expanded the applications and literature index with childcare, early education, care work, child care subsidies, service navigation, and family work-continuity evidence.
 - Expanded the applications and literature index with employment services, workforce development, WIOA, apprenticeship, occupational information, and job accommodation evidence.
 - Expanded the applications and literature index with public benefits navigation, service delivery, administrative burden, Medicaid/CHIP, SSI, LIHEAP, and customer experience evidence.
+- Expanded the applications and literature index with language access, plain language, health literacy, clear communication, and cognitive accessibility evidence.
