@@ -45,3 +45,4 @@ All notable repository structure changes are recorded here.
 - Expanded the applications and literature index with immunization, infectious disease surveillance, public health emergency preparedness, infection prevention, antimicrobial resistance, One Health, and wastewater surveillance evidence.
 - Expanded the applications and literature index with maternal health, newborn health, child health, growth standards, early childhood development, pregnancy monitoring, and household survey evidence.
 - Expanded the applications and literature index with digital inclusion, internet access, digital identity, public service design, media and information literacy, and public library evidence.
+- Expanded the applications and literature index with personal safety, injury prevention, violence prevention, crisis support, emergency care, and disaster preparedness evidence.
