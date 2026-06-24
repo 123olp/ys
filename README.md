@@ -7,88 +7,81 @@
 [![Safety Boundaries](https://img.shields.io/badge/safety-boundaries-critical-b91c1c)](docs/reference/ethics-and-safety-boundaries.md)
 [![Community](https://img.shields.io/badge/community-Telegram-229ED9)](https://t.me/human_infra)
 
-Human Infra 是一个以“人类作为任务执行系统”为中心的基础设施研究与产品化知识仓库。
+Human Infra 是一个研究“能够继续做事的主体”如何被维护、延展和升级的基础设施知识仓库。
 
-它把人类表现从“意志、自律、天赋”的单点解释，重构为一套可诊断、可设计、可维护、可恢复的运行系统：生理、认知、情绪、环境、工具、资源、时间、反馈和恢复共同决定人能否长期稳定地完成复杂任务。
+它的核心判断是：一切价值、目标与创造，都预设一个仍能感知、判断、行动、学习和修正的主体。主体不是稳定给定的抽象人格，而是由生命、认知、工具、环境、资源与协作共同支撑的有限系统。
 
-> Human Infra 研究和构建支持人类长期执行、创造、判断与生活的运行基础设施。
+> Human Infra 的本质，是对主体持续性进行工程化建设。
 
-## 为什么是一个新研究对象
+## 核心命题
 
-过去这些线路常被分开讨论：长寿、自我量化、可穿戴健康、睡眠、运动、营养等公共健康基线、慢性压力与恢复、社会决定因素、住房稳定与无家可归、社会连接与社区归属、经济安全与社会保护、公共福利、行政负担与服务导航、社区资源导航与社会服务转介、金融接入与支付、保险、风险转移与理赔连续性、产品安全、召回与事故报告、食物保障与水卫生、能源接入与基础公用事业、气候风险与社区韧性、家庭应急准备与个人韧性、公共预警、应急通信与求助入口、灾后恢复与个人援助、免疫屏障与感染监测、母婴健康与早期发展、托育、早期教育与家庭工作连续性、法律身份与公民登记、司法可及与法律援助、公民参与与投票可达、迁移、流离失所与人道服务连续性、数字接入与信息可达、个人数字安全与身份盗用恢复、语言可达与清晰沟通、交通可达与日常移动、医疗可及性与基本服务、个人健康记录、患者访问与数据可携带、远程医疗、数字照护与居家监测、药品可及、用药安全与供应连续性、心理健康、成瘾与危机照护、家庭暴力、性暴力与受害者支持、人身安全与伤害预防、建成环境与城市健康、康复与可访问性、学习与技能形成、就业服务与职业转换、劳动权利、工资工时与工作场所保护、家庭照护与长期支持、职业健康、老年照护、极端环境人因、军队表现优化、神经科技、AI 工具和系统安全。
+主体持续性是价值实现的边界条件。
 
-Human Infra 的判断是：它们并不是孤立话题，而是在研究同一个更大的对象。
+| 问题类型 | 典型问题 | Human Infra 判断 |
+| --- | --- | --- |
+| 边界内优化 | 做什么、怎么做、怎样更快、怎样产出更多 | 重要，但仍是主体有限持续性内部的派生问题 |
+| 边界条件问题 | 主体能否继续存在、继续行动、继续学习、继续选择 | 所有事业、成果、排序与未来可能成立的前提 |
+
+如果主体终止，感知、判断、行动、学习、创造与未来选择权同步终止。因而在既定寿命、能力与死亡边界内优化“做什么”，只是倒计时中的局部最优；维护、延展并升级“能够继续做事的主体”，才是更上位的基础设施问题。
+
+## 理论链路
+
+```mermaid
+flowchart TD
+    A[价值 / 目标 / 创造] --> B[预设一个能够持续行动的主体]
+    B --> C[主体由生命、认知、工具、环境、资源与协作支撑]
+    C --> D[衰老、损耗、资源约束与死亡边界持续侵蚀]
+    D --> E{主体持续性是否被维护}
+    E -->|否| F[感知 / 判断 / 行动 / 学习 / 创造 / 未来选择权同步终止]
+    E -->|是| G[持续选择 / 持续创造 / 持续修正 / 持续进入未来]
+    F --> H[边界内优化变成倒计时中的局部最优]
+    G --> I[Human Infra<br/>主体持续性工程]
+    I --> J[健康 / 寿命 / 认知 / AI / 医学 / 工具 / 环境 / 协作 / 资源 / 反馈 / 恢复]
+    J --> K[长寿逃逸速度与未来等待路径<br/>尝试把固定终局转向持续开放]
+```
+
+Human Infra 优化的不是单次产出，而是持续选择、持续创造、持续修正和持续进入未来的资格。长寿逃逸速度、记忆编辑、去未来路径、AI 工具、公共健康、法律身份、住房、食物、水、能源、交通、教育、照护、应急和社会服务，都只有在这个框架下才属于同一个对象。
+
+## 研究范围
+
+Human Infra 不把所有话题混成一个筐，而是用“主体持续性”作为纳入标准：某条线路是否增强主体继续存在、继续行动、继续修正和继续选择的能力。
+
+| 层级 | 关注对象 | 代表线路 |
+| --- | --- | --- |
+| 个体运行系统 | 主体是否可被测量、反馈、恢复和长期维护 | Bryan Johnson / Blueprint、自我量化、可穿戴、PROMIS、WHO ICF |
+| 生物与健康连续性 | 身体、寿命、疾病、康复、照护和药物是否支撑长期行动 | 长寿证据、公共健康基线、医疗可及、远程照护、药品可及、康复、长期照护 |
+| 认知与行动能力 | 判断、学习、心理稳定、压力恢复和高压表现是否可持续 | 心理健康、成瘾与危机照护、学习科学、职业健康、极端环境人因、军队表现优化 |
+| 工具与智能协作 | 工具、AI、数据和神经技术是否放大主体能力而不侵蚀主体权利 | 人机协作、AI 风险管理、个人健康记录、患者数据可携带、神经科技、BCI 安全 |
+| 环境与资源底座 | 生活环境和资源是否让人有继续行动的现实条件 | 住房、食物、水、能源、交通、金融接入、保险、产品安全、气候韧性 |
+| 制度与协作网络 | 身份、权利、服务和社会协作是否把人接入可恢复的公共系统 | 法律身份、司法可及、公共福利、社区资源导航、劳动权利、投票可达、迁移与人道服务 |
+| 未来边界扩展 | 主体持续性边界能否从固定终局转向持续开放 | 长寿逃逸速度、未来等待、去具身中枢生命系统、记忆编辑与人格连续性 |
 
 ```mermaid
 flowchart LR
-    A[长寿与自我量化<br/>Bryan Johnson / Blueprint] --> H[Human Infra]
-    L[长寿证据基础设施<br/>NIA ITP / Geroscience / HAGR] --> H
-    P[人口级健康数据<br/>All of Us / UK Biobank / NHANES] --> H
-    R[验证与监管基础设施<br/>ClinicalTrials.gov / FDA RWE / OMOP] --> H
-    AZ[个人健康记录、患者访问与数据可携带<br/>ONC USCDI / TEFCA / CMS Blue Button] --> H
-    T[信任与数据治理<br/>HIPAA / NIST Privacy / GA4GH] --> H
-    Q[功能与生活质量结局<br/>PROMIS / WHO ICF / EQ-5D] --> H
-    V[价值与疾病负担<br/>GBD / WHO-CHOICE / NICE HTA] --> H
-    S[压力、负荷与恢复<br/>Allostatic Load / WHO Mental Health at Work] --> H
-    U[社会决定因素与生活环境<br/>WHO SDOH / CDC SVI / PLACES] --> H
-    AL[住房稳定、无家可归与驱逐风险<br/>UN-Habitat / HUD AHAR / Census AHS] --> H
-    AH[社会连接、孤独风险与社区归属<br/>WHO Social Connection / CDC / NASEM] --> H
-    AA[经济安全与时间结构<br/>ILO / World Bank / FMLA] --> H
-    AT[公共福利、行政负担与服务导航<br/>USA.gov / Performance.gov CX / Medicaid] --> H
-    AY[社区资源导航与社会服务转介<br/>211 / Open Referral / Gravity / CMS AHC] --> H
-    AP[金融接入、支付与消费者保护<br/>Global Findex / FDIC / CFPB / Fed] --> H
-    BE[保险、风险转移与理赔连续性<br/>NAIC / USA.gov / FDIC / PBGC] --> H
-    BF[产品安全、召回与事故报告<br/>CPSC / openFDA / NHTSA] --> H
-    AB[食物保障、营养与水卫生<br/>FAO / WFP / WHO-UNICEF JMP] --> H
-    AG[能源接入、清洁烹饪与室内空气<br/>World Bank / IEA / WHO HAP] --> H
-    AQ[气候风险、预警与社区韧性<br/>IPCC / WMO / NOAA / CMRA] --> H
-    BD[家庭应急准备、个人韧性与灾前准备<br/>Red Cross / CDC / NOAA] --> H
-    AW[公共预警、应急通信与求助入口<br/>FEMA IPAWS / FCC WEA / 911 / FirstNet] --> H
-    BC[灾后恢复、个人援助与临时安置<br/>USA.gov / FEMA DRC / SBA / Red Cross] --> H
-    AC[免疫、感染监测与公共卫生应急<br/>WHO IA2030 / CDC NNDSS / IHR] --> H
-    AD[母婴健康与早期发展<br/>WHO MNCH / PRAMS / Nurturing Care] --> H
-    AS[托育、早教与家庭工作连续性<br/>World Bank / ACF OCC / DOL / Census] --> H
-    AI[法律身份、公民登记与权利入口<br/>UN Legal Identity / CRVS / ID4D] --> H
-    AO[司法可及、法律援助与权利救济<br/>UN SDG 16 / WJP / LSC / DOJ] --> H
-    BB[公民参与、投票可达与选举基础设施<br/>EAC / NIST Voting / DOJ / IDEA] --> H
-    AN[迁移、流离失所与人道服务连续性<br/>UNHCR / IOM / WHO / IDMC] --> H
-    AE[数字接入、身份与公共服务<br/>ITU / NTIA / NIST Digital ID] --> H
-    BA[个人数字安全、账号恢复与身份盗用防护<br/>FTC / IdentityTheft.gov / IC3 / Login.gov] --> H
-    AU[语言可达、清晰沟通与健康素养<br/>PlainLanguage.gov / LEP.gov / CDC] --> H
-    AJ[交通可达、公共交通与日常移动<br/>World Bank Transport / FTA NTD / BTS NHTS] --> H
-    AK[医疗可及、初级卫生与基本服务<br/>WHO UHC / PHC / Essential Medicines] --> H
-    AX[远程医疗、数字照护与居家监测<br/>HHS Telehealth / HRSA / CMS / FDA Digital Health] --> H
-    AV[药品可及、用药安全与供应连续性<br/>WHO EML / FDA Shortages / DailyMed] --> H
-    AM[心理健康、成瘾与危机照护<br/>WHO mhGAP / SAMHSA / NIMH / 988] --> H
-    AF[人身安全、伤害预防与应急响应<br/>WHO injuries / CDC WISQARS / 988] --> H
-    BG[家庭暴力、性暴力与受害者支持<br/>CDC NISVS / DOJ OVW / OVC] --> H
-    Z[建成环境与环境暴露<br/>WHO Housing / CDC BE Tool / AirNow] --> H
-    X[康复、辅助技术与可访问性<br/>WHO Rehab / WCAG / Section 508] --> H
-    Y[学习与技能形成<br/>How People Learn / WWC / O*NET] --> H
-    AR[就业服务、劳动力发展与职业转换<br/>World Bank Jobs / DOL ETA / Apprenticeship] --> H
-    BH[劳动权利、工资工时与工作场所保护<br/>ILO / DOL WHD / OSHA / EEOC] --> H
-    W[照护与长期支持<br/>CDC Caregiving / HCBS / WHO LTC] --> H
-    B[数字健康与可穿戴<br/>Apple Heart Study] --> H
-    C[职业健康与组织设计<br/>NIOSH Total Worker Health] --> H
-    D[健康老龄化<br/>WHO ICOPE] --> H
-    E[极端环境人因<br/>NASA HRP] --> H
-    F[高压任务表现<br/>Army H2F / Total Force Fitness] --> H
-    G[神经科技<br/>NIH BRAIN / DARPA NESD] --> H
-    N[神经伦理与 BCI 安全<br/>UNESCO / OECD / FDA BCI] --> H
-    I[系统安全<br/>Leveson STAMP] --> H
-    K[公共健康基线<br/>睡眠 / 运动 / 营养 / 心理健康] --> H
-    M[人机协作与认知工程<br/>NIST AI RMF / NASA-TLX / Human-AI Teaming] --> H
-    O[组织安全与事件学习<br/>WHO Patient Safety / AHRQ / HRO] --> H
+    S[主体持续性] --> B[生物连续性]
+    S --> C[认知与行动能力]
+    S --> T[工具与 AI 协作]
+    S --> E[环境与资源底座]
+    S --> N[制度与协作网络]
+    S --> F[未来边界扩展]
 
-    H --> J[人类如何长期稳定地<br/>执行 / 创造 / 判断 / 恢复 / 延续]
+    B --> H[继续存在]
+    C --> A[继续行动]
+    T --> L[继续学习与放大能力]
+    E --> R[继续恢复]
+    N --> P[继续获得权利与支持]
+    F --> O[继续进入未来]
 ```
 
-这不是把所有话题混成一个筐，而是给它们一个共同的上位对象：支撑人长期运行的基础设施。首批真实应用和文献索引见 [真实应用与文献](docs/reference/applications-and-literature.md)。
+首批真实应用和文献索引见 [真实应用与文献](docs/reference/applications-and-literature.md)。
 
 ## 快速入口
 
 | 你想做什么 | 入口 | 说明 |
 | --- | --- | --- |
+| 理解核心理论 | [核心命题](#核心命题) | 主体持续性为什么是价值实现的边界条件 |
+| 查看理论链路 | [理论链路](#理论链路) | 从价值、主体、死亡边界到 Human Infra 的因果链 |
+| 查看研究范围 | [研究范围](#研究范围) | 哪些领域属于主体持续性工程，以及为什么属于 |
 | 先理解项目全貌 | [docs/README.md](docs/README.md) | 文档系统入口与推荐阅读顺序 |
 | 查看领域边界 | [docs/reference/domain-map.md](docs/reference/domain-map.md) | Human Infra 的子域地图和拆分原因 |
 | 查看伦理与安全红线 | [docs/reference/ethics-and-safety-boundaries.md](docs/reference/ethics-and-safety-boundaries.md) | 医疗、神经、生命支持和组织使用边界 |
@@ -138,7 +131,7 @@ flowchart LR
 
 ```mermaid
 flowchart TD
-    H[Human Infra<br/>人类任务执行基础设施]
+    H[Human Infra<br/>主体持续性基础设施]
 
     H --> D[docs<br/>总理论 / 伦理 / 标准 / 资料归档]
     H --> L[longevity-evidence<br/>长寿证据账本]
@@ -178,7 +171,7 @@ flowchart TD
 
 | 角色 | 推荐路径 |
 | --- | --- |
-| 第一次进入项目 | [项目地图](#项目地图) -> [域地图](docs/reference/domain-map.md) -> [伦理与安全边界](docs/reference/ethics-and-safety-boundaries.md) |
+| 第一次进入项目 | [核心命题](#核心命题) -> [理论链路](#理论链路) -> [研究范围](#研究范围) -> [项目地图](#项目地图) |
 | 研究贡献者 | [真实应用与文献](docs/reference/applications-and-literature.md) -> [证据政策](docs/reference/evidence-policy.md) -> [资料管理](docs/reference/source-management.md) |
 | 文档维护者 | [仓库标准](docs/reference/repository-standards.md) -> [文档生命周期](docs/reference/document-lifecycle.md) -> [写作风格](docs/reference/writing-style-guide.md) |
 | 数据脚本维护者 | [Longevity Evidence](domains/longevity-evidence/README.md) -> [数据说明](domains/longevity-evidence/data/README.md) -> [脚本说明](domains/longevity-evidence/scripts/README.md) |
@@ -297,5 +290,6 @@ flowchart LR
 - 2026-06-22：新增 `future-waiting` 子域和“黑洞等待室”未来等待路径。
 - 2026-06-23：新增 GitHub Actions 远程质量门禁，统一运行本地 `make check`。
 - 2026-06-23：压缩 README 的真实应用资料入口，新增真实应用速览，提升首屏导航密度。
+- 2026-06-24：按“主体持续性是价值实现边界条件”的理论链路重组 README 首屏、研究范围和阅读路径。
 
 完整记录见 [CHANGELOG.md](CHANGELOG.md)。
