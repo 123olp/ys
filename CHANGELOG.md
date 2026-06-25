@@ -79,3 +79,11 @@ All notable repository structure changes are recorded here.
 - Expanded the applications and literature index with telehealth, remote patient monitoring, virtual care access, Medicare/CMS coverage, and digital health oversight evidence.
 - Expanded the applications and literature index with community resource navigation, 211, human-services resource directories, social needs referral standards, and closed-loop service navigation evidence.
 - Expanded the applications and literature index with patient health record access, USCDI, TEFCA, CMS Patient Access, Blue Button, FHIR, and SMART App Launch interoperability evidence.
+
+## 2026-06-26
+
+- Added the Life-Path Prediction Model explanation as the quantitative layer under the existing Human Infra qualitative framework.
+- Added the Life-Path Prediction Model Contract for interventions, state transitions, hazards, survival curves, effective time, subjective time, relative time, and future option value.
+- Added the Life-Path Prediction Model Governance document for evidence admission, causal framing, validation, uncertainty reporting, and prohibited uses.
+- Updated documentation navigation, glossary, review checklists, and README links for the quantitative prediction model layer.
+- Added `human-infra-dashboard.html`, a standalone static web dashboard using the golden-ratio three-block layout for life-path prediction model visualization, controls, and governance gates.

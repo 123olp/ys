@@ -8,6 +8,26 @@ The project-level term for human runtime infrastructure: the conditions, tools, 
 
 The core conceptual model that treats humans as task-execution systems operating inside biological, cognitive, emotional, environmental, social, and feedback constraints.
 
+## Life-Path Prediction Model
+
+The quantitative Human Infra layer that models interventions as operators changing a subject's future life-path probability distribution.
+
+## Effective Time
+
+Time in which a subject is alive and retains enough health, cognition, agency, and context to act, learn, create, recover, or choose.
+
+## Subjective Time
+
+Time as experienced by the subject, including waiting cost, perceived duration, and low-subjective-time paths such as sleep, hibernation, or relativistic waiting.
+
+## Relative Time
+
+The relationship between a subject's experienced or proper time and an external reference timeline.
+
+## Future Option Value
+
+The expected future ability of a subject to retain meaningful choices, including medical, cognitive, resource, social, and technological options.
+
 ## Longevity Evidence
 
 The domain that tracks longevity interventions, public evidence, clinical trials, safety signals, and data provenance.

@@ -12,6 +12,7 @@ human_infra/
 │   ├── PULL_REQUEST_TEMPLATE.md
 │   └── workflows/        # GitHub Actions 工作流
 ├── AGENTS.md              # 记录总项目架构、职责边界和维护规则
+├── human-infra-dashboard.html # 静态 Web 看板：展示主体持续性与生命路径预测模型
 ├── README.md              # Human Infra 定位、边界、目录和变更日志
 ├── docs/                  # 总理论、域地图、伦理边界和原始资料归档
 │   ├── AGENTS.md          # docs 目录说明
@@ -33,6 +34,7 @@ human_infra/
 ## 职责边界
 
 - `.github/` 只放 GitHub 协作模板和远程质量门禁，不放长期知识正文。
+- `human-infra-dashboard.html` 是根目录静态展示入口，只承载可直接打开的模型看板，不承载数据采集、个人预测或生产服务逻辑。
 - `docs/` 只放 Human Infra 的上位理论、域边界、伦理原则和原始资料归档，不放具体采集脚本。
 - `domains/` 中每个子域必须有独立 README 和 AGENTS，明确自身对象、非目标、证据要求和上下游关系。
 - `domains/longevity-evidence/` 承接原 Biocat，负责长寿干预证据、临床试验、药品安全、公开数据源和采集脚本。
@@ -62,3 +64,4 @@ human_infra/
 - 2026-06-20：从 Biocat 单项目重组为 Human Infra 总项目；旧 Biocat 迁入 `domains/longevity-evidence/`；新增 `disembodied-cns` 与 `memory-editing` 子域；四份最新资料归档到 `docs/source-notes/`；按 Docs-as-Code 和 Diataxis 补齐根文件、协作模板、文档分层和结构检查脚本。
 - 2026-06-22：新增 `domains/future-waiting/` 和黑洞等待室路径，用于承载“压缩等待 / 去未来”类永生路径思想实验。
 - 2026-06-23：新增 GitHub Actions `make check` 门禁和 `.github/AGENTS.md`，准备远程仓库协作入口。
+- 2026-06-26：新增根目录静态 Web 看板 `human-infra-dashboard.html`，采用黄金分割三块布局展示主体持续性与生命路径预测模型。

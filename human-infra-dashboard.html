@@ -1,0 +1,674 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Human Infra 定量预测看板</title>
+  <style>
+    :root {
+      --phi-major: 61.8034%;
+      --phi-minor: 38.1966%;
+      --phi-major-fr: 1.61803398875fr;
+      --phi-minor-fr: 1fr;
+      --workbench-available-height: calc(100vh - 2rem);
+      --workbench-top-row-height: calc(var(--workbench-available-height) * 0.618034);
+      --panel-gap: 0;
+      --panel-border: #3a3a3a;
+      --panel-bg: #f7f7f7;
+    }
+
+    html { height: 100%; overflow: hidden; }
+
+    body {
+      margin: 0;
+      padding: 1rem;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      overflow: hidden;
+      color: #f2f2f2;
+      background: #111;
+      font-family: "Noto Sans SC", "Microsoft YaHei", Arial, sans-serif;
+    }
+
+    a { color: #9db5ff; }
+    h1 { flex: 0 0 auto; margin: 0 0 1rem; font-size: 1.5rem; }
+    h2, h3 { margin: 0 0 0.75rem; }
+    p { margin: 0 0 0.75rem; }
+    form { margin: 0; }
+
+    fieldset {
+      border: 1px solid #555;
+      margin: 0;
+      padding: 0.75rem;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 0.25rem;
+      font-weight: 700;
+    }
+
+    input, select, textarea, button {
+      box-sizing: border-box;
+      max-width: 100%;
+      font: inherit;
+    }
+
+    input[type="text"], input[type="number"], select, textarea {
+      width: 100%;
+      border: 1px solid #777;
+      border-radius: 0;
+      padding: 0.55rem;
+      color: #111;
+      background: #fff;
+    }
+
+    textarea { min-height: 100%; resize: vertical; line-height: 1.45; }
+
+    button {
+      width: 100%;
+      border: 1px solid #f2f2f2;
+      border-radius: 0;
+      padding: 0.8rem 1rem;
+      color: #111;
+      background: #f2f2f2;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    pre {
+      overflow: auto;
+      padding: 0.75rem;
+      background: #050505;
+      color: #f2f2f2;
+      border: 1px solid #444;
+    }
+
+    details {
+      margin-top: 1rem;
+      border-top: 1px solid #333;
+      padding-top: 0.75rem;
+    }
+
+    summary { cursor: pointer; font-weight: 700; }
+
+    .workbench-grid {
+      flex: 1 1 auto;
+      display: grid;
+      grid-template-columns:
+        minmax(0, min(var(--phi-minor), var(--workbench-top-row-height)))
+        minmax(0, 1fr);
+      grid-template-rows: minmax(0, var(--phi-major-fr)) minmax(0, var(--phi-minor-fr));
+      gap: var(--panel-gap);
+      min-height: 0;
+    }
+
+    .workbench-panel {
+      min-width: 0;
+      min-height: 0;
+      overflow: auto;
+      padding: 0.9rem;
+      border: 1px solid var(--panel-border);
+      background: var(--panel-bg);
+      color: #111;
+    }
+
+    .workbench-preview-panel {
+      grid-column: 1;
+      grid-row: 1;
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+      padding: 0;
+    }
+
+    .workbench-script-panel {
+      grid-column: 2;
+      grid-row: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .script-panel-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .script-panel-header h2 { margin: 0; }
+
+    .script-submit-button {
+      flex: 0 0 auto;
+      width: auto;
+      min-width: 10rem;
+    }
+
+    .workbench-controls-panel { grid-column: 1 / span 2; grid-row: 2; }
+
+    .workbench-script-panel textarea {
+      flex: 0 0 auto;
+      min-height: calc(100% - 3.75rem);
+      overflow: hidden;
+    }
+
+    .control-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 0.75rem;
+      align-items: end;
+    }
+
+    .control-grid .wide { grid-column: span 2; }
+
+    .preview-stage {
+      height: 100%;
+      aspect-ratio: 1 / 1;
+      max-width: 100%;
+      margin: 0;
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+    }
+
+    .preview-placeholder {
+      display: grid;
+      min-height: 60%;
+      place-items: center;
+      border: 1px dashed #777;
+      color: #555;
+      background: #eee;
+    }
+
+    [data-design-preview] canvas {
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: #3c3c3c;
+      object-fit: contain;
+    }
+
+    [data-design-preview] figcaption { display: none; }
+
+    .workbench-inline-status {
+      min-height: 1.5em;
+      margin-top: 0.75rem;
+      color: #333;
+      font-weight: 700;
+    }
+
+    .inline-result {
+      margin-top: 0.25rem;
+      color: #222;
+    }
+
+    .inline-result ul {
+      margin: 0.4rem 0 0;
+      padding-left: 1.25rem;
+    }
+
+    @media (max-width: 56rem) {
+      html, body { height: auto; overflow: auto; }
+
+      .workbench-grid {
+        display: block;
+        height: auto;
+        min-height: 0;
+      }
+
+      .workbench-panel { margin-bottom: 0; }
+      .script-panel-header {
+        align-items: stretch;
+        flex-direction: column;
+      }
+      .script-submit-button {
+        width: 100%;
+        min-width: 0;
+      }
+      .control-grid { grid-template-columns: 1fr; }
+      .control-grid .wide { grid-column: auto; }
+    }
+  </style>
+</head>
+<body>
+<form class="workbench-grid" method="get" action="">
+  <section class="workbench-panel workbench-preview-panel" aria-label="生命路径预览">
+    <figure class="preview-stage" data-design-preview>
+      <canvas data-design-canvas width="900" height="900">
+        当前浏览器不支持 canvas；请查看底部的分布表和原始 JSON。
+      </canvas>
+      <figcaption>寿命分布和长寿逃逸速度预览。</figcaption>
+    </figure>
+  </section>
+
+  <section class="workbench-panel workbench-script-panel" aria-labelledby="contract-panel-title">
+    <div class="script-panel-header">
+      <h2 id="contract-panel-title">模型契约</h2>
+      <button class="script-submit-button" type="submit">生成当前参数 URL</button>
+    </div>
+    <textarea id="model_contract" aria-label="模型契约" readonly></textarea>
+  </section>
+
+  <section class="workbench-panel workbench-controls-panel" aria-labelledby="controls-panel-title">
+    <h2 id="controls-panel-title">参数控件</h2>
+    <div class="control-grid">
+      <p>
+        <label for="importance">变量重要性</label>
+        <input id="importance" name="importance" type="range" min="0" max="10" value="7">
+        <output id="importance_out" for="importance">7</output>
+      </p>
+      <p>
+        <label for="causality">因果可信度</label>
+        <input id="causality" name="causality" type="range" min="0" max="10" value="6">
+        <output id="causality_out" for="causality">6</output>
+      </p>
+      <p>
+        <label for="effect">效应大小</label>
+        <input id="effect" name="effect" type="range" min="0" max="10" value="5">
+        <output id="effect_out" for="effect">5</output>
+      </p>
+      <p>
+        <label for="duration">持续时间</label>
+        <input id="duration" name="duration" type="range" min="0" max="10" value="6">
+        <output id="duration_out" for="duration">6</output>
+      </p>
+      <p>
+        <label for="access">可获得性</label>
+        <input id="access" name="access" type="range" min="0" max="10" value="5">
+        <output id="access_out" for="access">5</output>
+      </p>
+      <p>
+        <label for="composability">可组合性</label>
+        <input id="composability" name="composability" type="range" min="0" max="10" value="6">
+        <output id="composability_out" for="composability">6</output>
+      </p>
+      <p>
+        <label for="risk">风险</label>
+        <input id="risk" name="risk" type="range" min="0" max="10" value="3">
+        <output id="risk_out" for="risk">3</output>
+      </p>
+      <p>
+        <label for="uncertainty">不确定性</label>
+        <input id="uncertainty" name="uncertainty" type="range" min="0" max="10" value="5">
+        <output id="uncertainty_out" for="uncertainty">5</output>
+      </p>
+      <p>
+        <label for="opportunity">机会成本</label>
+        <input id="opportunity" name="opportunity" type="range" min="0" max="10" value="4">
+        <output id="opportunity_out" for="opportunity">4</output>
+      </p>
+      <p>
+        <label for="evidence">证据等级</label>
+        <input id="evidence" name="evidence" type="range" min="0" max="5" value="2">
+        <output id="evidence_out" for="evidence">G2</output>
+      </p>
+      <p>
+        <label for="timeMode">时间对象</label>
+        <select id="timeMode" name="timeMode">
+          <option value="effective">有效时间</option>
+          <option value="lifespan">寿命</option>
+          <option value="subjective">主观时间</option>
+          <option value="relative">相对时间</option>
+          <option value="option">未来选择权</option>
+        </select>
+      </p>
+      <p>
+        <label for="modelLocation">模型位置</label>
+        <select id="modelLocation" name="modelLocation">
+          <option value="state_transition">状态转移</option>
+          <option value="hazard">风险函数</option>
+          <option value="observation">观测能力</option>
+          <option value="policy">行动策略</option>
+        </select>
+      </p>
+    </div>
+    <p class="workbench-inline-status" data-produce-status></p>
+    <div class="inline-result" data-inline-result>
+      <details open>
+        <summary>分布摘要</summary>
+        <pre><code id="distribution_table"></code></pre>
+      </details>
+      <details>
+        <summary>治理门禁</summary>
+        <pre><code id="gate_table"></code></pre>
+      </details>
+      <details>
+        <summary>原始模型参数 JSON</summary>
+        <pre><code id="raw_json">{}</code></pre>
+      </details>
+    </div>
+  </section>
+</form>
+
+<script>
+(() => {
+  const fields = [
+    "importance",
+    "causality",
+    "effect",
+    "duration",
+    "access",
+    "composability",
+    "risk",
+    "uncertainty",
+    "opportunity",
+    "evidence"
+  ];
+
+  const labels = {
+    effective: "有效时间",
+    lifespan: "寿命",
+    subjective: "主观时间",
+    relative: "相对时间",
+    option: "未来选择权",
+    state_transition: "状态转移",
+    hazard: "风险函数",
+    observation: "观测能力",
+    policy: "行动策略"
+  };
+
+  const form = document.querySelector(".workbench-grid");
+  const textarea = document.getElementById("model_contract");
+  const canvas = document.querySelector("[data-design-canvas]");
+  const context = canvas ? canvas.getContext("2d") : null;
+  const ageMin = 40;
+  const ageMax = 125;
+  const baselineMean = 82;
+  const baselineSd = 12;
+
+  function clamp(min, value, max) {
+    return Math.max(min, Math.min(value, max));
+  }
+
+  function signed(value, digits = 2) {
+    return `${value >= 0 ? "+" : ""}${value.toFixed(digits)}`;
+  }
+
+  function valueOf(id) {
+    return Number(document.getElementById(id).value);
+  }
+
+  function normalDensity(age, mean, sd) {
+    const z = (age - mean) / sd;
+    return Math.exp(-0.5 * z * z) / (sd * Math.sqrt(2 * Math.PI));
+  }
+
+  function distribution(mean, sd) {
+    const rows = [];
+    for (let age = ageMin; age <= ageMax; age += 1) {
+      rows.push({ age, density: normalDensity(age, mean, sd) });
+    }
+    const total = rows.reduce((sum, row) => sum + row.density, 0);
+    let remaining = total;
+    return rows.map((row) => {
+      const survival = remaining / total;
+      remaining -= row.density;
+      return { ...row, survival };
+    });
+  }
+
+  function formatPsql(headers, rows) {
+    const allRows = [headers, ...rows.map((row) => row.map((value) => String(value)))];
+    const widths = headers.map((_, index) => Math.max(...allRows.map((row) => row[index].length)));
+    const border = `+${widths.map((width) => "-".repeat(width + 2)).join("+")}+`;
+    const headerLine = `|${headers.map((value, index) => ` ${value.padEnd(widths[index])} `).join("|")}|`;
+    const separator = `|${widths.map((width) => "-".repeat(width + 2)).join("+")}|`;
+    const body = rows.map((row) => `|${row.map((value, index) => ` ${String(value).padEnd(widths[index])} `).join("|")}|`);
+    return [border, headerLine, separator, ...body, border].join("\n");
+  }
+
+  function readInputs() {
+    return {
+      importance: valueOf("importance") / 10,
+      causality: valueOf("causality") / 10,
+      effect: valueOf("effect") / 10,
+      duration: valueOf("duration") / 10,
+      access: valueOf("access") / 10,
+      composability: valueOf("composability") / 10,
+      risk: valueOf("risk") / 10,
+      uncertainty: valueOf("uncertainty") / 10,
+      opportunity: valueOf("opportunity") / 10,
+      evidence: valueOf("evidence"),
+      timeMode: document.getElementById("timeMode").value,
+      modelLocation: document.getElementById("modelLocation").value
+    };
+  }
+
+  function buildModel(input) {
+    const positive =
+      input.importance *
+      input.causality *
+      input.effect *
+      input.duration *
+      input.access *
+      input.composability;
+    const penalty = (input.risk + input.uncertainty + input.opportunity) / 3;
+    const score = clamp(-1, positive - penalty, 1);
+    const evidenceWeight = input.evidence / 5;
+    const distributionShift = clamp(
+      -14,
+      score * 18 + positive * 18 + evidenceWeight * 4 - input.risk * 6,
+      24
+    );
+    const interventionMean = baselineMean + distributionShift;
+    const interventionSd = clamp(
+      9,
+      baselineSd + input.uncertainty * 5 + input.risk * 3 - input.causality * 2,
+      22
+    );
+    const levRatio = clamp(
+      0,
+      0.2 +
+        positive * 2.4 +
+        evidenceWeight * 0.35 +
+        input.composability * 0.25 +
+        input.access * 0.15 -
+        input.risk * 0.35 -
+        input.uncertainty * 0.25 -
+        input.opportunity * 0.15,
+      1.6
+    );
+    return {
+      ...input,
+      positive,
+      penalty,
+      score,
+      distributionShift,
+      baselineMean,
+      baselineSd,
+      interventionMean,
+      interventionSd,
+      levRatio,
+      levState: levRatio >= 1 ? "above_threshold" : "below_threshold"
+    };
+  }
+
+  function contractText(model) {
+    return [
+      "Human Infra Life-Path Prediction Contract",
+      "",
+      "layout:",
+      "  source: pdf/dialogue_cards/web_app.py",
+      "  windows: preview_left_top, contract_right_top, controls_bottom",
+      "",
+      "causal_chain:",
+      "  A_t -> X_t",
+      "  X_t,A_t -> P(X_next | X_t,A_t)",
+      "  X_t,A_t -> lambda(t)",
+      "  lambda(t) -> S(t)",
+      "",
+      "model_claim:",
+      `  outcome: ${labels[model.timeMode]}`,
+      `  model_location: ${labels[model.modelLocation]}`,
+      `  evidence_grade: G${model.evidence}`,
+      `  life_path_shift_score: ${signed(model.score)}`,
+      `  baseline_expected_life: ${model.baselineMean.toFixed(1)} years`,
+      `  intervention_expected_life: ${model.interventionMean.toFixed(1)} years`,
+      `  distribution_shift: ${signed(model.distributionShift, 1)} years`,
+      `  lev_ratio: ${model.levRatio.toFixed(2)}x`,
+      `  lev_state: ${model.levState}`,
+      `  positive_term: ${model.positive.toFixed(3)}`,
+      `  penalty_term: ${model.penalty.toFixed(3)}`,
+      "",
+      "allowed_wording:",
+      "  在明确假设、适用人群和不确定性下，估计干预可能改变生命路径分布。",
+      "",
+      "prohibited_wording:",
+      "  不得宣称个体必然延寿，不得输出死亡日期，不得替代医疗判断。"
+    ].join("\n");
+  }
+
+  function updateOutputs() {
+    for (const id of fields) {
+      const output = document.getElementById(`${id}_out`);
+      if (!output) continue;
+      output.value = id === "evidence" ? `G${valueOf(id)}` : String(valueOf(id));
+    }
+
+    const model = buildModel(readInputs());
+    const baseline = distribution(model.baselineMean, model.baselineSd);
+    const intervention = distribution(model.interventionMean, model.interventionSd);
+
+    textarea.value = contractText(model);
+    resizeTextarea();
+    document.querySelector("[data-produce-status]").textContent =
+      `Life-Path Shift ${signed(model.score)}；LEV ${model.levRatio.toFixed(2)}x；${model.levState}`;
+
+    document.getElementById("distribution_table").textContent = formatPsql(
+      ["metric", "baseline", "intervention", "unit"],
+      [
+        ["expected_life", model.baselineMean.toFixed(1), model.interventionMean.toFixed(1), "year"],
+        ["standard_deviation", model.baselineSd.toFixed(1), model.interventionSd.toFixed(1), "year"],
+        ["distribution_shift", "0.0", signed(model.distributionShift, 1), "year"],
+        ["life_path_shift_score", "0.00", signed(model.score), "score"],
+        ["longevity_escape_velocity", "", model.levRatio.toFixed(2), "x"],
+        ["lev_threshold", "", "1.00", "x"],
+        ["lev_state", "", model.levState, ""]
+      ]
+    );
+
+    document.getElementById("gate_table").textContent = formatPsql(
+      ["gate", "status", "value"],
+      [
+        ["contract", "pass", "declared"],
+        ["causal", model.causality >= 0.6 ? "pass" : model.causality >= 0.35 ? "warn" : "block", model.causality.toFixed(2)],
+        ["evidence", model.evidence >= 4 ? "pass" : model.evidence >= 2 ? "warn" : "block", `G${model.evidence}`],
+        [
+          "safety",
+          model.risk <= 0.4 && model.uncertainty <= 0.5 ? "pass" : model.risk <= 0.7 ? "warn" : "block",
+          `risk=${model.risk.toFixed(2)} uncertainty=${model.uncertainty.toFixed(2)}`
+        ]
+      ]
+    );
+
+    document.getElementById("raw_json").textContent = JSON.stringify(model, null, 2);
+    drawPreview(model, baseline, intervention);
+  }
+
+  function resizeTextarea() {
+    textarea.style.height = "auto";
+    textarea.style.height = `${textarea.scrollHeight}px`;
+  }
+
+  function drawPreview(model, baseline, intervention) {
+    if (!context || !canvas) return;
+    const width = canvas.width;
+    const height = canvas.height;
+    const left = 96;
+    const right = 70;
+    const top = 115;
+    const bottom = 170;
+    const plotWidth = width - left - right;
+    const plotHeight = height - top - bottom;
+    const maxDensity = Math.max(
+      ...baseline.map((row) => row.density),
+      ...intervention.map((row) => row.density)
+    );
+
+    function xForAge(age) {
+      return left + ((age - ageMin) / (ageMax - ageMin)) * plotWidth;
+    }
+
+    function yForDensity(density) {
+      return top + plotHeight - (density / maxDensity) * plotHeight;
+    }
+
+    context.clearRect(0, 0, width, height);
+    context.fillStyle = "#3c3c3c";
+    context.fillRect(0, 0, width, height);
+
+    context.strokeStyle = "#f2f2f2";
+    context.fillStyle = "#f2f2f2";
+    context.lineWidth = 2;
+    context.font = "32px sans-serif";
+    context.fillText("Human Infra Life-Path", left, 62);
+    context.font = "22px sans-serif";
+    context.fillText("solid=baseline  dashed=intervention", left, 92);
+
+    context.beginPath();
+    context.moveTo(left, top);
+    context.lineTo(left, top + plotHeight);
+    context.lineTo(left + plotWidth, top + plotHeight);
+    context.stroke();
+
+    context.beginPath();
+    baseline.forEach((row, index) => {
+      const x = xForAge(row.age);
+      const y = yForDensity(row.density);
+      if (index === 0) context.moveTo(x, y);
+      else context.lineTo(x, y);
+    });
+    context.stroke();
+
+    context.save();
+    context.setLineDash([14, 9]);
+    context.beginPath();
+    intervention.forEach((row, index) => {
+      const x = xForAge(row.age);
+      const y = yForDensity(row.density);
+      if (index === 0) context.moveTo(x, y);
+      else context.lineTo(x, y);
+    });
+    context.stroke();
+    context.restore();
+
+    context.beginPath();
+    context.moveTo(xForAge(model.baselineMean), top);
+    context.lineTo(xForAge(model.baselineMean), top + plotHeight);
+    context.stroke();
+    context.save();
+    context.setLineDash([5, 8]);
+    context.beginPath();
+    context.moveTo(xForAge(model.interventionMean), top);
+    context.lineTo(xForAge(model.interventionMean), top + plotHeight);
+    context.stroke();
+    context.restore();
+
+    context.font = "24px sans-serif";
+    context.fillText(`shift ${signed(model.distributionShift, 1)}y`, left, height - 105);
+    context.fillText(`LEV ${model.levRatio.toFixed(2)}x / threshold 1.00x`, left, height - 72);
+    context.fillText(`score ${signed(model.score)}`, left, height - 39);
+  }
+
+  function hydrateFromSearch() {
+    const params = new URLSearchParams(window.location.search);
+    for (const element of Array.from(form.elements)) {
+      if (!element.name || !params.has(element.name) || element.name === "model_contract") continue;
+      element.value = params.get(element.name);
+    }
+  }
+
+  hydrateFromSearch();
+  for (const id of fields) {
+    document.getElementById(id).addEventListener("input", updateOutputs);
+  }
+  document.getElementById("timeMode").addEventListener("change", updateOutputs);
+  document.getElementById("modelLocation").addEventListener("change", updateOutputs);
+  updateOutputs();
+})();
+</script>
+</body>
+</html>

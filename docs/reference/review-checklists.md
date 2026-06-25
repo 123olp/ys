@@ -19,6 +19,16 @@ Use these checklists when reviewing changes to this repository.
 - Mechanism evidence is not presented as clinical proof.
 - AI summaries are not used as primary facts.
 
+## Quantitative Model Review
+
+- Prediction claims define population, intervention, comparator, outcome, horizon, and uncertainty.
+- The model identifies whether the claimed effect changes state transition, event hazard, observation, or action policy.
+- Causal assumptions are explicit through target-trial framing, causal graph, or equivalent note.
+- Biomarker, mechanism, disease endpoint, mortality, safety, and transferability evidence are separated.
+- Effective time, subjective time, relative time, and option value are not collapsed into simple lifespan claims.
+- The model does not output deterministic death dates or personal treatment recommendations.
+- Validation, calibration, sensitivity analysis, and prohibited uses are visible before publication.
+
 ## Safety Review
 
 - No medical diagnosis or personal treatment instruction is added.
