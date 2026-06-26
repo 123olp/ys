@@ -6,7 +6,7 @@
 
 - `singularity-human-infra.html`：面向传播和学习的专项展示页。
 - `human-infra-dashboard.html`：生命路径预测模型的交互看板。
-- `web/`：基于 Observable Framework 的正式多页科研叙事与交互模型应用。
+- `web/`：基于 Astro + D3 的正式多页科研叙事与交互模型应用。
 - `docs/explanations/life-path-prediction-model.md`、`docs/reference/life-path-prediction-model-contract.md`、`docs/reference/life-path-prediction-model-governance.md`：模型说明、契约和治理。
 
 ## 1. 工作目标
@@ -282,7 +282,7 @@ Known threats:
 | 研究模型页 | 贡献者、审查者 | 展示目标试验、模型族、验证指标和敏感性 |
 | 数据审查页 | 维护者 | 来源、变量、证据等级、偏差风险和更新状态 |
 
-`singularity-human-infra.html` 属于专项传播页。正式科研叙事、预测模型和交互图表应进入 `web/` 的 Observable Framework 应用。
+`singularity-human-infra.html` 属于专项传播页。正式科研叙事、预测模型和交互图表应进入 `web/` 的 Astro + D3 应用。
 
 ### 6.3 主图与审查图分离
 
@@ -410,21 +410,25 @@ Human Infra 复用点：
 - 用“约束侧栏”说明页面如何在模型、证据和仓库类型下运行。
 - 用“详情/技术细节”的思路组织每个研究模块的用途、输入、输出和升级路径。
 
-当前暂缓采用：
+当前采用：
 
-- 暂不引入 React、React Router、Tailwind 和 Vite 构建链。
-- 原因是当前正式 Web 主线已经由 Observable Framework 承载；再引入 React/Tailwind 会增加第二套构建链、样式系统和路由体系。
+- 正式 Web 主线迁移到 Astro，用页面组件承载长文叙事、资料转译和静态发布。
+- 图表层使用 D3，保留对机制图、阈值曲线和预测模型 SVG 的精细控制。
+- 暂不引入 React、React Router 和 Tailwind，避免把研究网页变成重应用壳。
 
 升级触发：
 
-- 出现真实数据集、搜索筛选、模型版本化、图表配置导出或在线实验时，优先扩展 Observable Framework；只有出现复杂状态管理、用户会话或应用级交互时，再评估 React 或 Astro。
+- 出现真实数据集、搜索筛选、模型版本化、图表配置导出或在线实验时，优先在 Astro 中增加 MDX 内容集合、结构化 JSON 和可复用 D3 组件。
+- 只有出现复杂状态管理、用户会话或应用级交互时，再评估 Svelte islands 或 React islands。
 
 ### 9.2 科研解释型网页
 
 代表对象：
 
 - Distill
-- Observable Framework / Observable Plot
+- Astro / MDX
+- D3
+- Observable Plot
 - D3 gallery and examples
 
 复用模式：
@@ -485,12 +489,12 @@ Human Infra 页面约束：
 
 | 标杆模式 | 已采用位置 | 实现方式 |
 | --- | --- | --- |
-| 模板市场卡片 | `web/src/index.md` 页面入口和卡片导航 | Observable Framework `grid` / `card` |
-| 约束侧栏 | `web/src/model.md` 控制台和禁止用途卡片 | Framework responsive card |
-| 科研解释结构 | `web/src/book.md`、`web/src/research-standards.md` | Markdown longform |
-| 可复现图表入口 | `web/src/model.md` | D3 + Observable Plot |
+| 模板市场卡片 | `web/src/pages/index.astro` 页面入口和卡片导航 | Astro 组件 + CSS grid |
+| 约束侧栏 | `web/src/pages/model.astro` 控制台和禁止用途说明 | Astro layout + D3 model script |
+| 科研解释结构 | `web/src/pages/book.astro`、`web/src/pages/research-standards.astro` | Astro longform |
+| 可复现图表入口 | `web/src/pages/model.astro` | D3 |
 | 证据产品入口 | 资料组织层、工具包文档 | Markdown source traceability |
-| 传播型主张 | `web/src/index.md` Hero 和机制图 | narrative copy + D3 map |
+| 传播型主张 | `web/src/pages/index.astro` Hero 和机制图 | narrative copy + D3 map |
 
 ## 10. Source Traceability
 
@@ -539,7 +543,7 @@ Human Infra 页面约束：
   - https://github.com/cloudflare/templates
 - Distill:
   - https://distill.pub/
-- Observable Framework and Plot:
+- Observable and Plot references:
   - https://observablehq.com/framework/
   - https://observablehq.com/plot/
 - Our World in Data:

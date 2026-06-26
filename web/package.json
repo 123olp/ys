@@ -3,14 +3,14 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "observable preview --host 0.0.0.0",
-    "build": "observable build",
-    "clean": "rm -rf dist .observablehq/cache"
+    "dev": "astro dev --host 0.0.0.0",
+    "build": "astro build",
+    "preview": "astro preview --host 0.0.0.0",
+    "clean": "rm -rf dist .astro"
   },
   "dependencies": {
-    "@observablehq/framework": "^1.13.4",
-    "@observablehq/plot": "^0.6.17",
-    "d3": "^7.9.0",
-    "htl": "^1.0.0"
+    "@astrojs/mdx": "^4.3.1",
+    "astro": "^5.11.0",
+    "d3": "^7.9.0"
   }
 }

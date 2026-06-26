@@ -1,0 +1,143 @@
+---
+import ResearchLayout from "../layouts/ResearchLayout.astro";
+import SectionHeader from "../components/SectionHeader.astro";
+---
+<ResearchLayout title="预测模型" description="Human Infra life-path prediction model visualization" section="Life-Path Model">
+  <div class="page" data-model-lab>
+    <section class="section" style="margin-top: 0">
+      <SectionHeader
+        kicker="Quantitative Layer"
+        title="寿命不是一个点，而是一组生命路径概率分布"
+        lead="这个页面展示 Human Infra 的定量方向：把技术、资源、医学、AI、治理和等待路径看成干预算子，观察它们如何改变状态转移、风险函数、生存曲线、有效时间和未来选择权。"
+      />
+      <div class="metric-grid">
+        <article class="metric">
+          <span>预测有效寿命</span>
+          <strong data-output="effectiveLife">计算中</strong>
+          <p>达到或越过 LEV 阈值时不显示个体死亡日期</p>
+        </article>
+        <article class="metric">
+          <span>LEV 比率</span>
+          <strong data-output="levRatio">计算中</strong>
+          <p>医学与技术进步速度相对时间消耗</p>
+        </article>
+        <article class="metric">
+          <span>健康寿命</span>
+          <strong data-output="healthspan">计算中</strong>
+          <p>示意模型中的健康质量积分</p>
+        </article>
+        <article class="metric">
+          <span>未来选择权</span>
+          <strong data-output="optionValue">计算中</strong>
+          <p>主体未来仍能选择策略的模型读数</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="model-lab">
+        <aside class="control-panel" aria-label="模型控制">
+          <label>
+            模型场景
+            <select name="scenario" data-model-input>
+              <option value="baseline">基线</option>
+              <option value="assisted">AI 辅助</option>
+              <option value="convergence" selected>指数技术汇聚</option>
+              <option value="escape">LEV 临界探索</option>
+            </select>
+          </label>
+          <label>
+            AI 工具强度 <output data-for="ai">0.78</output>
+            <input type="range" min="0" max="1" step="0.01" name="ai" value="0.78" data-model-input />
+          </label>
+          <label>
+            医学信息化 <output data-for="biomedical">0.70</output>
+            <input type="range" min="0" max="1" step="0.01" name="biomedical" value="0.70" data-model-input />
+          </label>
+          <label>
+            人机接口水平 <output data-for="interfaceLevel">0.42</output>
+            <input type="range" min="0" max="1" step="0.01" name="interfaceLevel" value="0.42" data-model-input />
+          </label>
+          <label>
+            等待压缩能力 <output data-for="waiting">0.20</output>
+            <input type="range" min="0" max="1" step="0.01" name="waiting" value="0.20" data-model-input />
+          </label>
+          <label>
+            治理能力 <output data-for="governance">0.58</output>
+            <input type="range" min="0" max="1" step="0.01" name="governance" value="0.58" data-model-input />
+          </label>
+        </aside>
+
+        <div>
+          <div class="figure-panel">
+            <div class="chart-frame" data-chart="survival"></div>
+          </div>
+          <div class="status-line" aria-label="模型状态">
+            <div>
+              <span>生命路径位移</span>
+              <strong data-output="effectiveLife">开放边界</strong>
+            </div>
+            <div>
+              <span>阈值状态</span>
+              <strong data-output="threshold">越过阈值 / 开放边界</strong>
+            </div>
+            <div>
+              <span>LEV 比率</span>
+              <strong data-output="levRatio">1.03x</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <SectionHeader
+        kicker="Model Contract"
+        title="技术不是神奇延寿变量，而是改变生命路径分布的干预算子"
+        lead="核心不是问某技术能不能延寿，而是问它通过什么机制改变哪些变量，这些变量如何改变死亡风险、健康寿命、主体能力和未来选择权。"
+      />
+      <div class="paper-panel">
+        <div class="equation-box">技术 T
+  -> 影响中间变量 X
+  -> 中间变量改变主体状态 S
+  -> 系统状态改变风险函数 λ(t)
+  -> 风险函数改变生存曲线 S(t)
+  -> 最终影响寿命、健康寿命、有效时间、主观时间、相对时间和未来选择权</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <SectionHeader
+        kicker="Outputs"
+        title="模型输出应该看什么"
+        lead="Human Infra 的输出不应是个体死亡日期，而是分布位移、阈值状态、健康状态积分、恢复能力和未来选择权。"
+      />
+      <div class="dense-grid">
+        <article class="paper-panel">
+          <h3>有效时间</h3>
+          <p>把生存状态、健康质量、能力权重和主观时间统一到一个积分中。</p>
+          <p><strong data-output="time">49%</strong></p>
+        </article>
+        <article class="paper-panel">
+          <h3>恢复能力</h3>
+          <p>表示主体从疾病、损伤、资源断裂或认知负荷中回到可行动状态的能力。</p>
+          <p><strong data-output="recovery">44%</strong></p>
+        </article>
+        <article class="paper-panel">
+          <h3>未来选择权</h3>
+          <p>表示主体未来仍能进入新技术窗口、改变策略和保持行动余地的能力。</p>
+          <p><strong data-output="option">62%</strong></p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="boundary">
+        本页是研究展示和模型原型，不提供个体预测、医疗建议或寿命承诺。达到 LEV 阈值时显示“开放边界”，不输出具体无限寿命数值或个人死亡日期。
+      </div>
+    </section>
+  </div>
+  <script>
+    import "../scripts/model-charts.js";
+  </script>
+</ResearchLayout>

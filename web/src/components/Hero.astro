@@ -1,0 +1,26 @@
+---
+const {
+  kicker,
+  title,
+  lead,
+  tags = [],
+  chart = false
+} = Astro.props;
+---
+<section class="hero-shell">
+  <div class="hero-copy">
+    <p class="kicker">{kicker}</p>
+    <h1>{title}</h1>
+    <p class="hero-lead">{lead}</p>
+    {tags.length > 0 && (
+      <div class="tag-row" aria-label="主题标签">
+        {tags.map((tag) => <span>{tag}</span>)}
+      </div>
+    )}
+  </div>
+  {chart && (
+    <div class="hero-figure">
+      <div id="mechanism-map" class="chart-frame" data-chart="mechanism"></div>
+    </div>
+  )}
+</section>

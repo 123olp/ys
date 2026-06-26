@@ -96,3 +96,4 @@ All notable repository structure changes are recorded here.
 - Added `docs/reference/project-boundary-v0.1.md` to freeze the current public boundary, included scope, excluded uses, placement rules, and next-version direction.
 - Added `docs/reference/source-card-system.md` and `docs/templates/research-card.md` so papers, books, tools, cases, standards, and datasets pass through a reusable card before entering stable docs, models, or Web pages.
 - Updated README, docs navigation, Web route guidance, repository validation, and the Noah's Ark genealogy with a theory-index entry for incoming material.
+- Migrated `web/` from Observable Framework to Astro + D3, rebuilding the four-page research narrative, book translation, life-path model, and research standards site with a more academic layout.

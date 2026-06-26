@@ -32,10 +32,10 @@ This boundary keeps the project broader than a longevity note collection and nar
 | Multi-perspective value explanation | Keeps both the subject-continuity lens and the resource-budget expansion lens |
 | Genealogy and narrative | Uses Noah's Ark as the continuity metaphor, while preserving theory, institution, and counter-genealogy boundaries |
 | Life-path prediction model | Defines how interventions can affect state transitions, hazards, survival curves, effective time, subjective time, relative time, and option value |
-| Research and visualization toolkit | Records literature-reading, model-reporting, causal-inference, survival-analysis, and D3 / Observable guidance |
+| Research and visualization toolkit | Records literature-reading, model-reporting, causal-inference, survival-analysis, and Astro / D3 guidance |
 | Application and literature map | Collects real systems, standards, institutions, cases, and literature that support Human Infra |
 | Domain structure | Keeps longevity evidence, future waiting, disembodied CNS, and memory editing as separate subdomains |
-| Web presentation | Uses `web/` as the formal Observable Framework application for public research narrative and interactive visualizations |
+| Web presentation | Uses `web/` as the formal Astro + D3 application for public research narrative and interactive visualizations |
 
 ## Excluded From v0.1
 

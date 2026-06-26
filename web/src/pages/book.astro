@@ -1,0 +1,112 @@
+---
+import ResearchLayout from "../layouts/ResearchLayout.astro";
+import Hero from "../components/Hero.astro";
+import SectionHeader from "../components/SectionHeader.astro";
+
+const concepts = [
+  ["奇点", "人类智能与技术能力发生巨大跃迁的阶段，不是数学意义上的真正无限。", "进入主体边界和文明基础设施问题。"],
+  ["加速回报定律", "信息技术进步降低下一轮创新成本，形成反馈。", "转成技术进步速度和干预可获得性变量。"],
+  ["图灵测试", "行为层面的类人交流测试。", "只能作为能力信号，不能证明意识或主体连续性。"],
+  ["长寿逃逸速度", "医学进步每年增加的寿命接近或超过一年消耗。", "进入寿命边界是否开放的临界模型。"],
+  ["人机融合", "生物智能与数字智能、接口和云端计算耦合。", "进入工具连续性、认知连续性和身份边界。"],
+  ["技术风险", "核、生物、纳米和 AI 风险与技术能力同源。", "进入治理能力、尾部风险和禁止用途。"]
+];
+---
+<ResearchLayout title="书籍转译" description="Singularity study notes translated into Human Infra concepts" section="Book Translation">
+  <div class="page">
+    <Hero
+      kicker="Book Translation"
+      title="《奇点更近》如何进入 Human Infra"
+      lead="这页不是替作者预测背书，而是把书内观点整理成 Human Infra 可复用语料：哪些概念能成为变量，哪些只是叙事，哪些必须保留证据边界。"
+      tags={["加速回报", "AI 增强", "医学信息化", "长寿逃逸速度", "人机融合", "风险治理"]}
+    />
+
+    <section class="section">
+      <SectionHeader
+        kicker="Learning Object"
+        title="这本书解决的问题"
+        lead="作者试图说明：人类是否正在进入由 AI、生物技术、纳米技术和脑机接口共同推动的奇点阶段，以及我们如何理解、准备并治理这个过程。"
+      />
+      <div class="two-grid">
+        <article class="paper-panel">
+          <h3>Human Infra 接入价值</h3>
+          <p>书中最有价值的不是单个预测日期，而是把多个技术系统放进同一个指数叙事：计算成本、AI 能力、医学信息化、脑机接口、制造、能源、工作和风险治理相互强化。</p>
+        </article>
+        <article class="paper-panel">
+          <h3>使用边界</h3>
+          <p>本页把书中内容作为学习化整理，不做事实核验结论，不提供投资、医学或政策建议。所有预测都需要区分已经发生的趋势、基于趋势的推断和远期不确定设想。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <SectionHeader
+        kicker="Structure"
+        title="全书主线"
+        lead="从加速回报定律出发，进入六个时代、AI 路径、人机融合、自我问题、社会重组、长寿医学和四类重大风险。"
+      />
+      <div class="paper-panel">
+        <div class="equation-box">信息技术指数进步
+  -> AI 能力提升
+  -> AI 加速科学与工程
+  -> 生物、能源、制造、医学被信息化
+  -> 人类寿命、智能和生产结构被扩展
+  -> 脑机接口与数字智能融合
+  -> 奇点叙事形成
+
+同时：
+技术能力增强
+  -> 核、生物、纳米、AI 风险上升
+  -> 需要安全对齐、制度治理和监测系统</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <SectionHeader
+        kicker="Concept Table"
+        title="核心概念的 Human Infra 转译"
+        lead="每个概念都要从书籍语言转成项目语言：它支持什么变量，处在哪个模型位置，不能被误读成什么。"
+      />
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>概念</th>
+            <th>书内含义</th>
+            <th>Human Infra 接入点</th>
+          </tr>
+        </thead>
+        <tbody>
+          {concepts.map(([name, meaning, mapping]) => (
+            <tr>
+              <td>{name}</td>
+              <td>{meaning}</td>
+              <td>{mapping}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </section>
+
+    <section class="section">
+      <SectionHeader
+        kicker="Critical Reading"
+        title="最容易误读的地方"
+        lead="这本书有强叙事势能，但进入 Human Infra 时必须拆开：证据、预测、隐喻和工程边界不能混在一起。"
+      />
+      <div class="dense-grid">
+        <article class="paper-panel">
+          <h3>图灵测试不等于意识证明</h3>
+          <p>行为表现可以进入能力模型，但不能直接证明主观体验、人格连续性或道德主体地位。</p>
+        </article>
+        <article class="paper-panel">
+          <h3>长寿逃逸速度不等于已经永生</h3>
+          <p>它是关于医学进步速度和寿命消耗速度的临界叙事，需要证据、时间尺度和模型约束。</p>
+        </article>
+        <article class="paper-panel">
+          <h3>技术乐观不等于风险无视</h3>
+          <p>核、生物、纳米和 AI 风险必须进入同一套模型，否则收益曲线会被尾部风险反向吞噬。</p>
+        </article>
+      </div>
+    </section>
+  </div>
+</ResearchLayout>

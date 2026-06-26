@@ -1,0 +1,8 @@
+---
+const {kicker, title, lead} = Astro.props;
+---
+<header class="section-header">
+  {kicker && <p class="kicker">{kicker}</p>}
+  <h2>{title}</h2>
+  {lead && <p>{lead}</p>}
+</header>

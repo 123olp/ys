@@ -1,0 +1,44 @@
+---
+import "../styles/global.css";
+
+const {
+  title = "Human Infra Web",
+  description = "Human Infra research narrative and life-path model",
+  section = "Human Infra"
+} = Astro.props;
+
+const nav = [
+  {href: "/", label: "首页"},
+  {href: "/book/", label: "书籍转译"},
+  {href: "/model/", label: "预测模型"},
+  {href: "/research-standards/", label: "科研标准"}
+];
+---
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <title>{title} | Human Infra Web</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="/">
+        <span class="brand-mark">HI</span>
+        <span>
+          <strong>Human Infra</strong>
+          <small>{section}</small>
+        </span>
+      </a>
+      <nav class="top-nav" aria-label="主导航">
+        {nav.map((item) => (
+          <a href={item.href}>{item.label}</a>
+        ))}
+      </nav>
+    </header>
+    <main>
+      <slot />
+    </main>
+  </body>
+</html>

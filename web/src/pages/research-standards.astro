@@ -1,0 +1,109 @@
+---
+import ResearchLayout from "../layouts/ResearchLayout.astro";
+import Hero from "../components/Hero.astro";
+import SectionHeader from "../components/SectionHeader.astro";
+
+const tools = [
+  ["Astro", "长文叙事、静态发布、组件化页面、MDX 内容组织", "正式网页框架"],
+  ["MDX", "把研究卡片、长文、表格和组件放在同一内容系统中", "资料和文档层"],
+  ["D3", "自定义机制图、状态图、预测曲线和交互 SVG 控制", "核心图表工具"],
+  ["Vega-Lite / Observable Plot", "标准统计图、探索性图表和可复现图表规格", "后续研究图"],
+  ["lifelines / scikit-survival / R survival", "KM、Cox、AFT、C-index、Brier score", "生存分析"],
+  ["DAGitty / DoWhy / EconML", "DAG、因果识别、反事实和干预估计", "因果推断"],
+  ["Stan / PyMC", "参数不确定性、层级模型、后验预测", "贝叶斯建模"],
+  ["OpenAlex / PubMed / Semantic Scholar", "文献元数据、论文发现和资料卡片来源", "研究检索"]
+];
+---
+<ResearchLayout title="科研标准" description="Research standards and toolchain for Human Infra Web" section="Research Standards">
+  <div class="page">
+    <Hero
+      kicker="Research Standards"
+      title="从展示页走向可审查的研究系统"
+      lead="Human Infra 的网页不能只是漂亮页面。它要把资料、理论、变量、证据、模型、图表和边界放进同一条可复核的工作流。"
+      tags={["资料卡片", "生存分析", "因果推断", "D3", "Astro", "模型治理"]}
+    />
+
+    <section class="section">
+      <SectionHeader
+        kicker="Workflow"
+        title="标准工作流"
+        lead="所有外部资料先进入资料卡，再进入稳定文档、模型变量和 Web 数据。"
+      />
+      <div class="paper-panel">
+        <div class="equation-box">source
+  -> research card
+  -> source note / reference update
+  -> domain mapping
+  -> model variable mapping
+  -> structured data
+  -> D3 / Web narrative</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <SectionHeader
+        kicker="Toolchain"
+        title="推荐工具链"
+        lead="框架选择要服从页面目标：长文叙事用 Astro / MDX，定制图表用 D3，统计模型和因果模型留给 Python / R 工具链。"
+      />
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>工具</th>
+            <th>用途</th>
+            <th>Human Infra 位置</th>
+          </tr>
+        </thead>
+        <tbody>
+          {tools.map(([name, use, role]) => (
+            <tr>
+              <td>{name}</td>
+              <td>{use}</td>
+              <td>{role}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </section>
+
+    <section class="section">
+      <SectionHeader
+        kicker="Model Standards"
+        title="定量模型必须先声明估计目标"
+        lead="Human Infra 后续的预测模型要遵守生存分析、目标试验模拟、因果推断和预测模型报告规范，不能把相关性直接写成干预效果。"
+      />
+      <div class="dense-grid">
+        <article class="paper-panel">
+          <h3>生存分析</h3>
+          <p>处理寿命、疾病发生、失能、死亡等事件时间；核心输出包括生存曲线、风险函数、RMST 和竞争风险。</p>
+        </article>
+        <article class="paper-panel">
+          <h3>因果推断</h3>
+          <p>处理“如果改变某变量，生命路径是否改变”的问题；需要 DAG、反事实、目标试验和混杂控制。</p>
+        </article>
+        <article class="paper-panel">
+          <h3>模型治理</h3>
+          <p>要求声明人群、时间零点、干预、对照、结局、证据等级、适用范围和禁止用途。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <SectionHeader
+        kicker="Visualization"
+        title="可视化的任务不是制造神秘感，而是暴露结构"
+        lead="图表应该让读者看见：变量在哪里、路径如何连接、阈值何时出现、边界在哪里、哪些部分仍然只是研究假设。"
+      />
+      <div class="two-grid">
+        <article class="paper-panel">
+          <h3>使用 D3 的原因</h3>
+          <p>Human Infra 需要机制图、路径图、阈值曲线、状态转移和自定义交互。D3 对 SVG 和数据绑定的控制能力最适合这种研究插图。</p>
+        </article>
+        <article class="paper-panel">
+          <h3>使用 Astro 的原因</h3>
+          <p>页面以长文叙事、资料卡和静态发布为主。Astro 能把内容、组件、脚本和构建分开，避免把研究网页做成过重的应用壳。</p>
+        </article>
+      </div>
+    </section>
+  </div>
+</ResearchLayout>
