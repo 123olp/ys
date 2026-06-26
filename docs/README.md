@@ -18,6 +18,7 @@ docs/
 ├── decisions/
 │   ├── 0001-adopt-docs-as-code-knowledge-base-structure.md
 │   ├── 0002-adopt-local-quality-gates.md
+│   ├── 0003-add-future-waiting-domain.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -42,8 +43,11 @@ docs/
 │   ├── glossary.md
 │   ├── life-path-prediction-model-contract.md
 │   ├── life-path-prediction-model-governance.md
+│   ├── project-boundary-v0.1.md
 │   ├── repository-standards.md
+│   ├── research-model-visualization-toolkit.md
 │   ├── review-checklists.md
+│   ├── source-card-system.md
 │   ├── source-management.md
 │   └── writing-style-guide.md
 ├── source-notes/
@@ -51,6 +55,7 @@ docs/
 │   ├── README.md
 │   ├── decision-record.md
 │   ├── domain-readme.md
+│   ├── research-card.md
 │   ├── reference-doc.md
 │   └── source-note.md
 └── tutorials/
@@ -63,12 +68,14 @@ docs/
 2. Read `reference/domain-map.md`.
 3. Read `reference/ethics-and-safety-boundaries.md`.
 4. Read `reference/evidence-policy.md`.
-5. Read `explanations/life-path-prediction-model.md`.
-6. Read `reference/life-path-prediction-model-contract.md`.
-7. Read `reference/life-path-prediction-model-governance.md`.
-8. Read `explanations/noah-ark-genealogy.md`.
-9. Read `explanations/value-lenses.md`.
-10. Read `reference/applications-and-literature.md`.
-11. Read `reference/review-checklists.md`.
-12. Read `explanations/human-runtime-infrastructure.md`.
-13. Enter a domain under `../domains/`.
+5. Read `reference/project-boundary-v0.1.md`.
+6. Read `explanations/life-path-prediction-model.md`.
+7. Read `reference/life-path-prediction-model-contract.md`.
+8. Read `reference/life-path-prediction-model-governance.md`.
+9. Read `reference/source-card-system.md`.
+10. Read `explanations/noah-ark-genealogy.md`.
+11. Read `explanations/value-lenses.md`.
+12. Read `reference/applications-and-literature.md`.
+13. Read `reference/review-checklists.md`.
+14. Read `explanations/human-runtime-infrastructure.md`.
+15. Enter a domain under `../domains/`.

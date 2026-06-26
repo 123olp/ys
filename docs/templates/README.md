@@ -6,6 +6,7 @@ Use these templates when creating new durable documents:
 
 - `decision-record.md`: architecture, safety, domain, or tooling decisions.
 - `domain-readme.md`: a new domain under `domains/`.
+- `research-card.md`: a paper, book, tool, case, standard, or dataset card used before material enters stable docs or quantitative models.
 - `source-note.md`: raw or lightly processed source input.
 - `reference-doc.md`: stable lookup material under `docs/reference/`.
 

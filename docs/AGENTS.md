@@ -11,6 +11,7 @@ docs/
 ├── decisions/
 │   ├── 0001-adopt-docs-as-code-knowledge-base-structure.md
 │   ├── 0002-adopt-local-quality-gates.md
+│   ├── 0003-add-future-waiting-domain.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -35,9 +36,11 @@ docs/
 │   ├── glossary.md
 │   ├── life-path-prediction-model-contract.md
 │   ├── life-path-prediction-model-governance.md
+│   ├── project-boundary-v0.1.md
 │   ├── repository-standards.md
 │   ├── research-model-visualization-toolkit.md
 │   ├── review-checklists.md
+│   ├── source-card-system.md
 │   ├── source-management.md
 │   └── writing-style-guide.md
 ├── source-notes/
@@ -50,6 +53,7 @@ docs/
 │   ├── README.md
 │   ├── decision-record.md
 │   ├── domain-readme.md
+│   ├── research-card.md
 │   ├── reference-doc.md
 │   └── source-note.md
 └── tutorials/
@@ -64,7 +68,9 @@ docs/
 - `reference/applications-and-literature.md`：整理 Human Infra 的真实应用案例和首批文献主干。
 - `reference/life-path-prediction-model-contract.md`：定义干预、状态转移、风险函数、生存曲线、有效时间、主观时间、相对时间和未来选择权的预测模型契约。
 - `reference/life-path-prediction-model-governance.md`：定义定量预测模型的证据准入、偏差审查、验证、报告和禁止用途门禁。
+- `reference/project-boundary-v0.1.md`：定义当前公开版本边界、纳入范围、排除范围、材料落点和后续版本方向。
 - `reference/research-model-visualization-toolkit.md`：沉淀科研论文阅读、文献脊梁、模型工具、可视化标准和 Human Infra 定量页面实现路线。
+- `reference/source-card-system.md`：定义论文、书籍、工具、案例、标准和数据集进入项目之前的资料卡片制度。
 - `reference/domain-map.md`：定义根项目与子域的边界、迁移切片、主动不做和验证点。
 - `reference/ethics-and-safety-boundaries.md`：定义医疗、组织、去具身中枢、记忆编辑和数据证据边界。
 - `reference/evidence-policy.md`：定义证据、解释、主张、推测和决策的分层规则。
@@ -78,7 +84,7 @@ docs/
 - `how-to/share-human-infra.md`：说明如何对外介绍 Human Infra、复用短推文模板并保持传播边界。
 - `source-notes/`：保存最新资料原文或轻整理版本，供后续提炼，不直接作为产品说明入口。
 - `source-notes/README.md`：说明原始资料归档的文件职责和使用规则。
-- `templates/`：保存决策记录、子域 README、source note 和 reference 文档模板。
+- `templates/`：保存决策记录、子域 README、research card、source note 和 reference 文档模板。
 
 ## 依赖关系
 

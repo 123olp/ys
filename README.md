@@ -105,9 +105,11 @@ flowchart LR
 | 从多视角理解项目价值 | [多视角价值解析](#多视角价值解析) / [完整文档](docs/explanations/value-lenses.md) | 主体持续性视角与通用资源预算增量视角 |
 | 先理解项目全貌 | [docs/README.md](docs/README.md) | 文档系统入口与推荐阅读顺序 |
 | 查看领域边界 | [docs/reference/domain-map.md](docs/reference/domain-map.md) | Human Infra 的子域地图和拆分原因 |
+| 查看 v0.1 项目边界 | [docs/reference/project-boundary-v0.1.md](docs/reference/project-boundary-v0.1.md) | 当前公开版本里 Human Infra 是什么、不是什么、材料应该落到哪里 |
 | 查看伦理与安全红线 | [docs/reference/ethics-and-safety-boundaries.md](docs/reference/ethics-and-safety-boundaries.md) | 医疗、神经、生命支持和组织使用边界 |
 | 查看证据规则 | [docs/reference/evidence-policy.md](docs/reference/evidence-policy.md) | 如何区分原始资料、证据和稳定结论 |
 | 查看定量预测模型 | [模型说明](docs/explanations/life-path-prediction-model.md) / [模型契约](docs/reference/life-path-prediction-model-contract.md) / [模型治理](docs/reference/life-path-prediction-model-governance.md) / [科研工具包](docs/reference/research-model-visualization-toolkit.md) | 如何量化判断技术、因素和干预对寿命、有效时间、主观时间、相对时间和未来选择权的影响 |
+| 整理论文、书籍、工具和案例 | [资料卡片制度](docs/reference/source-card-system.md) / [资料卡片模板](docs/templates/research-card.md) | 把外部资料转成可复用语料、模型变量和 Web 展示材料 |
 | 打开正式 Web 应用 | [web/README.md](web/README.md) / [首页源文件](web/src/index.md) | Observable Framework 多页应用，承载书籍转译、科研叙事、预测模型和交互图表 |
 | 打开 Web 看板 | [human-infra-dashboard.html](human-infra-dashboard.html) | 静态三块布局看板，用于演示生命路径预测模型、参数控件和治理门禁 |
 | 查看奇点专项展示 | [singularity-human-infra.html](singularity-human-infra.html) | 将《奇点更近》学习资料转译为 Human Infra 的价值展示、预测模型和 D3 可视化 |
@@ -305,6 +307,7 @@ flowchart LR
 | 默认分支 | `main` |
 | 自动检查 | GitHub Actions `Check` |
 | 数据边界 | `data/raw/` 与 `data/processed/` 默认忽略 |
+| 版本边界 | [docs/reference/project-boundary-v0.1.md](docs/reference/project-boundary-v0.1.md) |
 | 应用与文献入口 | [docs/reference/applications-and-literature.md](docs/reference/applications-and-literature.md) |
 | 许可状态 | [LICENSE.md](LICENSE.md)，当前为权利边界与待定许可说明 |
 | 引用信息 | [CITATION.cff](CITATION.cff) |
@@ -322,5 +325,6 @@ flowchart LR
 - 2026-06-26：新增生命路径定量预测模型说明、模型契约和模型治理草案。
 - 2026-06-26：新增 Human Infra 静态 Web 看板，用三块布局演示生命路径预测模型。
 - 2026-06-26：新增奇点学习资料专项 Web 展示页，独立呈现 Human Infra 价值转译、预测模型和可视化。
+- 2026-06-27：新增 v0.1 项目边界、资料卡片制度、research card 模板、Web 正式路线和谱系理论索引入口。
 
 完整记录见 [CHANGELOG.md](CHANGELOG.md)。

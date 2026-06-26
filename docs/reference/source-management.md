@@ -27,6 +27,10 @@ Source notes become useful only after distillation:
 4. Move durable material into `docs/reference/`, `docs/explanations/`, or a domain directory.
 5. Leave the original note available for traceability.
 
+When a source is expected to support a model, Web page, literature map, or public claim, create a research card before updating stable documents. The card records the source identity, Human Infra mapping, model position, evidence role, transfer boundary, and repository action.
+
+Use [Source Card System](source-card-system.md) and [Research Card Template](../templates/research-card.md).
+
 ## Generated Data Rules
 
 - Raw data goes under `domains/*/data/raw/`.

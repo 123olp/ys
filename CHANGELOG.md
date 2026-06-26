@@ -90,3 +90,9 @@ All notable repository structure changes are recorded here.
 - Added `singularity-human-infra.html`, a dedicated static web page that translates the Singularity study notes into Human Infra value framing, prediction model controls, and D3 visualizations.
 - Added `docs/reference/research-model-visualization-toolkit.md` to capture research literature, scientific modeling tools, visualization standards, and implementation guidance for Human Infra quantitative pages.
 - Added `web/`, an Observable Framework app that turns the Singularity study notes, Human Infra subject-continuity theory, life-path prediction model, and research standards into a multi-page interactive research narrative.
+
+## 2026-06-27
+
+- Added `docs/reference/project-boundary-v0.1.md` to freeze the current public boundary, included scope, excluded uses, placement rules, and next-version direction.
+- Added `docs/reference/source-card-system.md` and `docs/templates/research-card.md` so papers, books, tools, cases, standards, and datasets pass through a reusable card before entering stable docs, models, or Web pages.
+- Updated README, docs navigation, Web route guidance, repository validation, and the Noah's Ark genealogy with a theory-index entry for incoming material.
