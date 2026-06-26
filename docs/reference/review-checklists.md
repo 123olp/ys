@@ -28,6 +28,19 @@ Use these checklists when reviewing changes to this repository.
 - Effective time, subjective time, relative time, and option value are not collapsed into simple lifespan claims.
 - The model does not output deterministic death dates or personal treatment recommendations.
 - Validation, calibration, sensitivity analysis, and prohibited uses are visible before publication.
+- Research-facing model changes identify the model family: survival, multi-state, competing-risk, causal, Bayesian, or decision model.
+- Research-facing model changes state the required performance checks: calibration, discrimination, Brier score, RMST difference, sensitivity analysis, or external validation.
+
+## Frontend Chart Review
+
+- Custom prediction charts use D3 for scales, axes, paths, joins, and annotations when standard HTML or simple Canvas drawing would hide model structure.
+- Study-material dashboards separate source notes, Human Infra translation, model contract, and visualization output.
+- Primary prediction charts stay focused on model output and direct parameter response.
+- Primary prediction charts exclude curve-level assumption labels, per-metric evidence badges, deterministic-death-date warning banners, and uncertainty interval bands.
+- Governance, evidence, uncertainty, and safety boundaries stay in model documentation or review artifacts when needed.
+- Chart interaction must preserve the user's ability to compare baseline and intervention output without visual ambiguity.
+- Research charts define the chart task, data type, mark, encoding, scale, unit, and validation method before implementation.
+- Standard statistical charts should prefer declarative specs or reproducible chart configuration unless D3 customization is needed for mechanism, state, or threshold visualization.
 
 ## Safety Review
 
