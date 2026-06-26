@@ -33,6 +33,17 @@ REQUIRED_FILES = [
     ".github/ISSUE_TEMPLATE/research-note.yml",
     ".github/ISSUE_TEMPLATE/data-pipeline.yml",
     "tools/README.md",
+    "web/AGENTS.md",
+    "web/README.md",
+    "web/package.json",
+    "web/observablehq.config.js",
+    "web/src/index.md",
+    "web/src/book.md",
+    "web/src/model.md",
+    "web/src/research-standards.md",
+    "web/src/style.css",
+    "web/src/components/model.js",
+    "web/src/data/book-signals.json",
     "docs/README.md",
     "docs/AGENTS.md",
     "docs/decisions/README.md",
@@ -93,6 +104,10 @@ REQUIRED_DIRS = [
     "domains/future-waiting/paths",
     "domains",
     "tools",
+    "web",
+    "web/src",
+    "web/src/components",
+    "web/src/data",
 ]
 
 FORBIDDEN_NAME_PARTS = [
@@ -127,7 +142,7 @@ def iter_markdown_without_code(path: Path) -> list[tuple[int, str]]:
 def check_local_markdown_links(errors: list[str]) -> None:
     for path in ROOT.rglob("*.md"):
         rel = relative(path)
-        if rel.startswith(".history/"):
+        if rel.startswith((".history/", "node_modules/", "web/node_modules/", "web/dist/", "web/.observablehq/", "web/src/.observablehq/")):
             continue
         for lineno, line in iter_markdown_without_code(path):
             for match in MARKDOWN_LINK_RE.finditer(line):
@@ -164,6 +179,8 @@ def main() -> int:
 
     for path in ROOT.rglob("*"):
         rel = relative(path)
+        if rel.startswith(("node_modules/", "web/node_modules/", "web/dist/", "web/.observablehq/", "web/src/.observablehq/")):
+            continue
         if any(part in rel for part in FORBIDDEN_NAME_PARTS):
             if ".history/" not in rel:
                 errors.append(f"temporary filename still active: {rel}")

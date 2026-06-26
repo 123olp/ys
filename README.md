@@ -107,8 +107,10 @@ flowchart LR
 | 查看领域边界 | [docs/reference/domain-map.md](docs/reference/domain-map.md) | Human Infra 的子域地图和拆分原因 |
 | 查看伦理与安全红线 | [docs/reference/ethics-and-safety-boundaries.md](docs/reference/ethics-and-safety-boundaries.md) | 医疗、神经、生命支持和组织使用边界 |
 | 查看证据规则 | [docs/reference/evidence-policy.md](docs/reference/evidence-policy.md) | 如何区分原始资料、证据和稳定结论 |
-| 查看定量预测模型 | [模型说明](docs/explanations/life-path-prediction-model.md) / [模型契约](docs/reference/life-path-prediction-model-contract.md) / [模型治理](docs/reference/life-path-prediction-model-governance.md) | 如何量化判断技术、因素和干预对寿命、有效时间、主观时间、相对时间和未来选择权的影响 |
+| 查看定量预测模型 | [模型说明](docs/explanations/life-path-prediction-model.md) / [模型契约](docs/reference/life-path-prediction-model-contract.md) / [模型治理](docs/reference/life-path-prediction-model-governance.md) / [科研工具包](docs/reference/research-model-visualization-toolkit.md) | 如何量化判断技术、因素和干预对寿命、有效时间、主观时间、相对时间和未来选择权的影响 |
+| 打开正式 Web 应用 | [web/README.md](web/README.md) / [首页源文件](web/src/index.md) | Observable Framework 多页应用，承载书籍转译、科研叙事、预测模型和交互图表 |
 | 打开 Web 看板 | [human-infra-dashboard.html](human-infra-dashboard.html) | 静态三块布局看板，用于演示生命路径预测模型、参数控件和治理门禁 |
+| 查看奇点专项展示 | [singularity-human-infra.html](singularity-human-infra.html) | 将《奇点更近》学习资料转译为 Human Infra 的价值展示、预测模型和 D3 可视化 |
 | 查看真实应用与文献 | [docs/reference/applications-and-literature.md](docs/reference/applications-and-literature.md) | 真实项目、机构资料、论文和数据源索引，覆盖个体、家庭、社区、医疗、公共服务、环境和高风险技术 |
 | 分享项目 | [docs/how-to/share-human-infra.md](docs/how-to/share-human-infra.md) | 对外介绍 Human Infra 的标题、主线、短推文模板和边界 |
 | 贡献文档 | [docs/how-to/contribute-docs.md](docs/how-to/contribute-docs.md) | 文档贡献流程 |
@@ -238,6 +240,7 @@ human_infra/
 ├── AGENTS.md                # 代理与维护者架构说明
 ├── CHANGELOG.md             # 结构变更记录
 ├── human-infra-dashboard.html # 静态 Web 看板
+├── singularity-human-infra.html # 奇点学习资料专项展示页
 ├── Makefile                 # 本地质量门禁
 └── README.md                # 项目入口
 ```
@@ -318,5 +321,6 @@ flowchart LR
 - 2026-06-24：按“主体持续性是价值实现边界条件”的理论链路重组 README 首屏、研究范围和阅读路径。
 - 2026-06-26：新增生命路径定量预测模型说明、模型契约和模型治理草案。
 - 2026-06-26：新增 Human Infra 静态 Web 看板，用三块布局演示生命路径预测模型。
+- 2026-06-26：新增奇点学习资料专项 Web 展示页，独立呈现 Human Infra 价值转译、预测模型和可视化。
 
 完整记录见 [CHANGELOG.md](CHANGELOG.md)。

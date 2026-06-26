@@ -1,0 +1,86 @@
+[
+  {
+    "signal": "加速回报定律",
+    "bookRole": "解释信息技术为何可能呈指数级改善",
+    "humanInfraVariable": "技术进步速度",
+    "modelPosition": "改变干预强度 A_t 和状态转移 P(X_{t+1}|X_t,A_t)",
+    "boundary": "适用于可被信息化、数据化、模拟化的部分"
+  },
+  {
+    "signal": "六个时代",
+    "bookRole": "把物理、生命、大脑、技术、人机融合和宇宙智能扩张放入一条演化链",
+    "humanInfraVariable": "主体持续性谱系",
+    "modelPosition": "提供从生命基础设施到智能基础设施的长周期解释框架",
+    "boundary": "属于宏观叙事框架，不能替代具体证据"
+  },
+  {
+    "signal": "AI 接近人类水平",
+    "bookRole": "作为 2029 年图灵测试时间表的核心预测",
+    "humanInfraVariable": "认知放大和行动能力",
+    "modelPosition": "改变决策质量、学习速度、诊断能力和工具预算",
+    "boundary": "行为表现不等于意识证明，也不等于完全可靠"
+  },
+  {
+    "signal": "符号主义与联结主义",
+    "bookRole": "解释 AI 从规则系统到深度学习的路径变化",
+    "humanInfraVariable": "智能实现方式",
+    "modelPosition": "影响工具能力、可解释性、可靠性和任务适配边界",
+    "boundary": "方法路线不能直接推导长期社会效果"
+  },
+  {
+    "signal": "新皮质与云端扩展",
+    "bookRole": "用大脑结构类比 AI 与脑机接口的发展方向",
+    "humanInfraVariable": "认知容量与接口耦合",
+    "modelPosition": "改变主体能力向量 C_t、记忆外部化和未来选择权 O_t",
+    "boundary": "类比不等于完整脑科学解释"
+  },
+  {
+    "signal": "身份连续性问题",
+    "bookRole": "讨论数字复制、2 号你、意识和逝者化身",
+    "humanInfraVariable": "人格连续性与记忆路径",
+    "modelPosition": "进入 memory-editing、digital legacy 和主体边界文档",
+    "boundary": "哲学与工程问题需要分层处理"
+  },
+  {
+    "signal": "长期生活改善",
+    "bookRole": "用识字率、寿命、贫困、能源、教育和卫生趋势反驳线性悲观直觉",
+    "humanInfraVariable": "公共基础设施与资源可及性",
+    "modelPosition": "改变环境变量、资源变量和外部风险暴露",
+    "boundary": "全球趋势不代表每个地区和个体同步改善"
+  },
+  {
+    "signal": "工作的未来",
+    "bookRole": "说明自动化会消灭旧工作，也会创造新任务和新能力需求",
+    "humanInfraVariable": "任务完成资源与协作结构",
+    "modelPosition": "改变时间预算、收入、学习路径、工具使用和心理压力",
+    "boundary": "历史经验不保证 AI 时代平滑过渡"
+  },
+  {
+    "signal": "医学信息化",
+    "bookRole": "说明 AI、基因组学、模拟和药物发现如何重塑健康",
+    "humanInfraVariable": "健康寿命和恢复能力",
+    "modelPosition": "改变风险函数 lambda(t) 和疾病转移概率",
+    "boundary": "实验室进展到临床普及存在验证、监管和安全延迟"
+  },
+  {
+    "signal": "长寿逃逸速度",
+    "bookRole": "描述医学进步速度超过衰老消耗速度的临界构想",
+    "humanInfraVariable": "有效持续时间边界",
+    "modelPosition": "当年度生命收益 / 年度消耗 >= 1 时进入开放边界区",
+    "boundary": "属于模型临界设想，不等于已经实现永生"
+  },
+  {
+    "signal": "纳米机器人",
+    "bookRole": "远期设想中用于体内诊断、修复、免疫增强和身体重构",
+    "humanInfraVariable": "底层修复与恢复能力",
+    "modelPosition": "可能改变损伤修复速度、疾病进展和失能时间",
+    "boundary": "工程、制造、体内安全和监管高度不确定"
+  },
+  {
+    "signal": "核、生物、纳米、AI 风险",
+    "bookRole": "提醒强技术能力带来文明级风险",
+    "humanInfraVariable": "治理压力和尾部风险",
+    "modelPosition": "提高外部风险暴露并约束干预可用性",
+    "boundary": "技术进步必须和治理能力共同建模"
+  }
+]

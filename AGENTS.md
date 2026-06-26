@@ -13,6 +13,11 @@ human_infra/
 │   └── workflows/        # GitHub Actions 工作流
 ├── AGENTS.md              # 记录总项目架构、职责边界和维护规则
 ├── human-infra-dashboard.html # 静态 Web 看板：展示主体持续性与生命路径预测模型
+├── singularity-human-infra.html # 专项 Web 展示页：将《奇点更近》学习资料转译为 Human Infra 价值与预测模型
+├── web/                   # Observable Framework 正式 Web 应用：科研叙事、预测模型和交互图表
+│   ├── AGENTS.md          # web 目录说明
+│   ├── README.md          # 本地运行、构建和页面职责
+│   └── src/               # Framework 页面、组件、样式和展示数据
 ├── README.md              # Human Infra 定位、边界、目录和变更日志
 ├── docs/                  # 总理论、域地图、伦理边界和原始资料归档
 │   ├── AGENTS.md          # docs 目录说明
@@ -35,6 +40,8 @@ human_infra/
 
 - `.github/` 只放 GitHub 协作模板和远程质量门禁，不放长期知识正文。
 - `human-infra-dashboard.html` 是根目录静态展示入口，只承载可直接打开的模型看板，不承载数据采集、个人预测或生产服务逻辑。
+- `singularity-human-infra.html` 是根目录专项展示入口，用于把《奇点更近》学习资料转译为 Human Infra 的价值展示、预测模型和 D3 可视化，不作为事实核验或医学建议。
+- `web/` 是 Observable Framework 正式 Web 应用目录，用于多页科研叙事、书籍转译、预测模型和交互可视化；它不承载采集脚本、个人预测服务或医学决策逻辑。
 - `docs/` 只放 Human Infra 的上位理论、域边界、伦理原则和原始资料归档，不放具体采集脚本。
 - `domains/` 中每个子域必须有独立 README 和 AGENTS，明确自身对象、非目标、证据要求和上下游关系。
 - `domains/longevity-evidence/` 承接原 Biocat，负责长寿干预证据、临床试验、药品安全、公开数据源和采集脚本。
@@ -57,7 +64,7 @@ human_infra/
 - 子域新增数据或脚本前，先确认它是否属于现有子域；若不属于，先更新 `docs/reference/domain-map.md` 再建目录。
 - 不把远期研究域伪装成当前可执行产品。
 - 不把 AI 总结当作事实源；公开结论必须能回到原始资料或公开数据库。
-- 不引入应用框架，除非已有明确产品形态、接口边界和验证路径。
+- 应用框架只允许用于明确产品形态和验证路径的展示层；当前正式 Web 展示统一收敛到 `web/` 的 Observable Framework 结构。
 
 ## 变更日志
 
@@ -65,3 +72,5 @@ human_infra/
 - 2026-06-22：新增 `domains/future-waiting/` 和黑洞等待室路径，用于承载“压缩等待 / 去未来”类永生路径思想实验。
 - 2026-06-23：新增 GitHub Actions `make check` 门禁和 `.github/AGENTS.md`，准备远程仓库协作入口。
 - 2026-06-26：新增根目录静态 Web 看板 `human-infra-dashboard.html`，采用黄金分割三块布局展示主体持续性与生命路径预测模型。
+- 2026-06-26：新增专项 Web 展示页 `singularity-human-infra.html`，将《奇点更近》学习资料转译为 Human Infra 价值展示、预测模型和可视化。
+- 2026-06-26：新增 `web/` Observable Framework 应用，作为科研叙事、书籍转译、预测模型和交互图表的正式 Web 入口。

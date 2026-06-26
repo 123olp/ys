@@ -87,3 +87,6 @@ All notable repository structure changes are recorded here.
 - Added the Life-Path Prediction Model Governance document for evidence admission, causal framing, validation, uncertainty reporting, and prohibited uses.
 - Updated documentation navigation, glossary, review checklists, and README links for the quantitative prediction model layer.
 - Added `human-infra-dashboard.html`, a standalone static web dashboard using the golden-ratio three-block layout for life-path prediction model visualization, controls, and governance gates.
+- Added `singularity-human-infra.html`, a dedicated static web page that translates the Singularity study notes into Human Infra value framing, prediction model controls, and D3 visualizations.
+- Added `docs/reference/research-model-visualization-toolkit.md` to capture research literature, scientific modeling tools, visualization standards, and implementation guidance for Human Infra quantitative pages.
+- Added `web/`, an Observable Framework app that turns the Singularity study notes, Human Infra subject-continuity theory, life-path prediction model, and research standards into a multi-page interactive research narrative.

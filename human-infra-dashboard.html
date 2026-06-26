@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Human Infra 定量预测看板</title>
+  <title>Human Infra 奇点价值与预测看板</title>
   <style>
     :root {
       --phi-major: 61.8034%;
@@ -65,7 +65,7 @@
       background: #fff;
     }
 
-    textarea { min-height: 100%; resize: vertical; line-height: 1.45; }
+    textarea { min-height: 12rem; resize: vertical; line-height: 1.45; }
 
     button {
       width: 100%;
@@ -150,9 +150,9 @@
     .workbench-controls-panel { grid-column: 1 / span 2; grid-row: 2; }
 
     .workbench-script-panel textarea {
-      flex: 0 0 auto;
-      min-height: calc(100% - 3.75rem);
-      overflow: hidden;
+      flex: 1 1 13rem;
+      min-height: 13rem;
+      overflow: auto;
     }
 
     .control-grid {
@@ -183,15 +183,206 @@
       background: #eee;
     }
 
-    [data-design-preview] canvas {
+    [data-design-preview] svg {
       display: block;
       width: 100%;
       height: 100%;
-      background: #3c3c3c;
-      object-fit: contain;
+      background: #2f3437;
     }
 
     [data-design-preview] figcaption { display: none; }
+
+    .chart-title {
+      fill: #f4f4f4;
+      font-size: 30px;
+      font-weight: 700;
+    }
+
+    .chart-subtitle,
+    .chart-label,
+    .chart-legend,
+    .chart-metric {
+      fill: #d8dee4;
+      font-size: 17px;
+    }
+
+    .chart-axis path,
+    .chart-axis line {
+      stroke: #9aa4ad;
+      shape-rendering: crispEdges;
+    }
+
+    .chart-axis text {
+      fill: #d8dee4;
+      font-size: 15px;
+    }
+
+    .chart-grid line {
+      stroke: #555f66;
+      stroke-opacity: 0.55;
+      shape-rendering: crispEdges;
+    }
+
+    .chart-grid path { display: none; }
+
+    .insight-panel {
+      flex: 0 0 auto;
+      margin-bottom: 0.75rem;
+      padding: 0.8rem;
+      border: 1px solid #c8c8c8;
+      background: #fff;
+    }
+
+    .insight-kicker {
+      margin-bottom: 0.35rem;
+      color: #555;
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0;
+      text-transform: uppercase;
+    }
+
+    .insight-panel h3 {
+      margin-bottom: 0.45rem;
+      font-size: 1.05rem;
+      line-height: 1.35;
+    }
+
+    .insight-summary {
+      color: #2c2c2c;
+      font-size: 0.94rem;
+      line-height: 1.55;
+    }
+
+    .insight-kpi {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 0.5rem;
+      margin: 0.7rem 0;
+    }
+
+    .insight-kpi span,
+    .insight-kpi strong {
+      display: block;
+      min-width: 0;
+    }
+
+    .insight-kpi span {
+      color: #555;
+      font-size: 0.78rem;
+      font-weight: 700;
+    }
+
+    .insight-kpi strong {
+      margin-top: 0.16rem;
+      font-size: 1rem;
+    }
+
+    .value-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 0.5rem;
+      margin: 0.7rem 0;
+    }
+
+    .value-tile {
+      min-width: 0;
+      padding: 0.55rem;
+      border: 1px solid #d1d1d1;
+      border-radius: 4px;
+      background: #f7f7f7;
+    }
+
+    .value-tile strong,
+    .value-tile span {
+      display: block;
+    }
+
+    .value-tile strong {
+      margin-bottom: 0.18rem;
+      font-size: 0.88rem;
+    }
+
+    .value-tile span {
+      color: #111;
+      font-size: 1.18rem;
+      font-weight: 700;
+    }
+
+    .value-tile p {
+      margin: 0.25rem 0 0;
+      color: #424242;
+      font-size: 0.78rem;
+      line-height: 1.45;
+    }
+
+    .mechanism-chain {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.35rem;
+      margin: 0.7rem 0;
+      padding: 0;
+      list-style: none;
+      color: #111;
+      font-size: 0.8rem;
+      font-weight: 700;
+    }
+
+    .mechanism-chain li {
+      padding: 0.32rem 0.45rem;
+      border: 1px solid #d0d0d0;
+      border-radius: 4px;
+      background: #fafafa;
+    }
+
+    .translation-grid {
+      display: grid;
+      gap: 0.35rem;
+      margin-top: 0.65rem;
+      font-size: 0.82rem;
+      line-height: 1.45;
+    }
+
+    .translation-row {
+      display: grid;
+      grid-template-columns: 7.5rem minmax(0, 1fr);
+      gap: 0.6rem;
+      padding-top: 0.35rem;
+      border-top: 1px solid #e0e0e0;
+    }
+
+    .translation-row strong {
+      color: #333;
+    }
+
+    .preset-panel {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 0.9rem;
+      padding: 0.65rem;
+      border: 1px solid #c8c8c8;
+      background: #fff;
+    }
+
+    .preset-panel strong {
+      margin-right: 0.2rem;
+    }
+
+    .preset-button {
+      width: auto;
+      padding: 0.45rem 0.65rem;
+      border-color: #555;
+      background: #ededed;
+      font-size: 0.88rem;
+    }
+
+    .preset-button.is-active {
+      border-color: #111;
+      color: #f2f2f2;
+      background: #111;
+    }
 
     .workbench-inline-status {
       min-height: 1.5em;
@@ -228,6 +419,16 @@
         width: 100%;
         min-width: 0;
       }
+      .insight-kpi,
+      .value-grid,
+      .translation-row {
+        grid-template-columns: 1fr;
+      }
+      .preset-panel {
+        align-items: stretch;
+        flex-direction: column;
+      }
+      .preset-button { width: 100%; }
       .control-grid { grid-template-columns: 1fr; }
       .control-grid .wide { grid-column: auto; }
     }
@@ -237,23 +438,101 @@
 <form class="workbench-grid" method="get" action="">
   <section class="workbench-panel workbench-preview-panel" aria-label="生命路径预览">
     <figure class="preview-stage" data-design-preview>
-      <canvas data-design-canvas width="900" height="900">
-        当前浏览器不支持 canvas；请查看底部的分布表和原始 JSON。
-      </canvas>
+      <svg data-design-chart viewBox="0 0 900 900" role="img" aria-labelledby="chart-title chart-desc">
+        <title id="chart-title">Human Infra 生命路径预测图</title>
+        <desc id="chart-desc">基于当前参数显示寿命分布、生存曲线和长寿逃逸速度阈值。</desc>
+      </svg>
       <figcaption>寿命分布和长寿逃逸速度预览。</figcaption>
     </figure>
   </section>
 
   <section class="workbench-panel workbench-script-panel" aria-labelledby="contract-panel-title">
     <div class="script-panel-header">
-      <h2 id="contract-panel-title">模型契约</h2>
+      <h2 id="contract-panel-title">价值展示与模型契约</h2>
       <button class="script-submit-button" type="submit">生成当前参数 URL</button>
+    </div>
+    <div class="insight-panel" aria-label="奇点学习资料价值展示">
+      <p class="insight-kicker">Human Infra × 奇点更近</p>
+      <h3>把指数技术转译成主体持续性基础设施</h3>
+      <p class="insight-summary" data-insight-summary>
+        学习资料中的加速回报、AI 医学、脑机接口、长寿逃逸速度和风险治理，被映射为 Human Infra 的状态转移、风险函数、观测能力和行动策略。
+      </p>
+      <div class="insight-kpi" aria-label="当前模型关键输出">
+        <p>
+          <span>有效边界</span>
+          <strong data-insight-boundary>--</strong>
+        </p>
+        <p>
+          <span>LEV 比率</span>
+          <strong data-insight-lev>--</strong>
+        </p>
+        <p>
+          <span>生命路径位移</span>
+          <strong data-insight-shift>--</strong>
+        </p>
+        <p>
+          <span>模型位置</span>
+          <strong data-insight-location>--</strong>
+        </p>
+      </div>
+      <div class="value-grid" aria-label="四类价值转译">
+        <article class="value-tile">
+          <strong>现实可计算化</strong>
+          <span data-info-score>--</span>
+          <p>把身体、任务、环境和资源转成可观测、可模拟、可优化对象。</p>
+        </article>
+        <article class="value-tile">
+          <strong>AI 加速能力</strong>
+          <span data-ai-score>--</span>
+          <p>让诊断、研发、决策和工具编排进入更快反馈周期。</p>
+        </article>
+        <article class="value-tile">
+          <strong>主体持续性</strong>
+          <span data-continuity-score>--</span>
+          <p>把寿命、有效时间、主观时间和未来选择权放入同一模型。</p>
+        </article>
+        <article class="value-tile">
+          <strong>治理余量</strong>
+          <span data-governance-score>--</span>
+          <p>核、生物、纳米、AI 风险需要监测、对齐和制度承载能力。</p>
+        </article>
+      </div>
+      <ol class="mechanism-chain" aria-label="机制链路">
+        <li>计算成本下降</li>
+        <li>AI 能力提升</li>
+        <li>科学工程加速</li>
+        <li>医学制造信息化</li>
+        <li>主体持续性增强</li>
+        <li>LEV 临界</li>
+      </ol>
+      <div class="translation-grid" aria-label="理论转译表">
+        <div class="translation-row">
+          <strong>加速回报</strong>
+          <span>映射为状态转移函数的改善速度，以及干预组合的复利能力。</span>
+        </div>
+        <div class="translation-row">
+          <strong>长寿逃逸速度</strong>
+          <span>映射为预测有效持续时间边界，临界处从有限年数转向开放边界。</span>
+        </div>
+        <div class="translation-row">
+          <strong>人机融合</strong>
+          <span>映射为主体运行系统扩展：认知、工具、数据、协作和恢复能力被外部化。</span>
+        </div>
+      </div>
     </div>
     <textarea id="model_contract" aria-label="模型契约" readonly></textarea>
   </section>
 
   <section class="workbench-panel workbench-controls-panel" aria-labelledby="controls-panel-title">
     <h2 id="controls-panel-title">参数控件</h2>
+    <div class="preset-panel" aria-label="奇点学习资料场景预设">
+      <strong>场景预设</strong>
+      <button class="preset-button" type="button" data-preset="accelerating_returns">加速回报</button>
+      <button class="preset-button" type="button" data-preset="ai_medicine">AI 医学</button>
+      <button class="preset-button" type="button" data-preset="longevity_escape">长寿逃逸</button>
+      <button class="preset-button" type="button" data-preset="human_ai_fusion">人机融合</button>
+      <button class="preset-button" type="button" data-preset="risk_governance">风险治理</button>
+    </div>
     <div class="control-grid">
       <p>
         <label for="importance">变量重要性</label>
@@ -301,9 +580,9 @@
         <output id="opportunity_out" for="opportunity">4</output>
       </p>
       <p>
-        <label for="evidence">证据等级</label>
+        <label for="evidence">数据强度</label>
         <input id="evidence" name="evidence" type="range" min="0" max="5" value="2">
-        <output id="evidence_out" for="evidence">G2</output>
+        <output id="evidence_out" for="evidence">2</output>
       </p>
       <p>
         <label for="timeMode">时间对象</label>
@@ -332,10 +611,6 @@
         <pre><code id="distribution_table"></code></pre>
       </details>
       <details>
-        <summary>治理门禁</summary>
-        <pre><code id="gate_table"></code></pre>
-      </details>
-      <details>
         <summary>原始模型参数 JSON</summary>
         <pre><code id="raw_json">{}</code></pre>
       </details>
@@ -343,6 +618,7 @@
   </section>
 </form>
 
+<script src="https://d3js.org/d3.v7.min.js"></script>
 <script>
 (() => {
   const fields = [
@@ -370,14 +646,104 @@
     policy: "行动策略"
   };
 
+  const levStateLabels = {
+    above_threshold: "越过阈值",
+    below_threshold: "低于阈值"
+  };
+
+  const scenarioPresets = {
+    accelerating_returns: {
+      importance: 9,
+      causality: 8,
+      effect: 7,
+      duration: 8,
+      access: 7,
+      composability: 9,
+      risk: 4,
+      uncertainty: 4,
+      opportunity: 3,
+      evidence: 3,
+      timeMode: "option",
+      modelLocation: "state_transition"
+    },
+    ai_medicine: {
+      importance: 8,
+      causality: 8,
+      effect: 7,
+      duration: 7,
+      access: 6,
+      composability: 8,
+      risk: 3,
+      uncertainty: 5,
+      opportunity: 3,
+      evidence: 3,
+      timeMode: "lifespan",
+      modelLocation: "observation"
+    },
+    longevity_escape: {
+      importance: 9,
+      causality: 8,
+      effect: 9,
+      duration: 9,
+      access: 7,
+      composability: 9,
+      risk: 2,
+      uncertainty: 3,
+      opportunity: 2,
+      evidence: 4,
+      timeMode: "effective",
+      modelLocation: "state_transition"
+    },
+    human_ai_fusion: {
+      importance: 8,
+      causality: 6,
+      effect: 8,
+      duration: 8,
+      access: 5,
+      composability: 10,
+      risk: 5,
+      uncertainty: 7,
+      opportunity: 4,
+      evidence: 2,
+      timeMode: "subjective",
+      modelLocation: "policy"
+    },
+    risk_governance: {
+      importance: 7,
+      causality: 7,
+      effect: 5,
+      duration: 8,
+      access: 7,
+      composability: 8,
+      risk: 6,
+      uncertainty: 5,
+      opportunity: 4,
+      evidence: 3,
+      timeMode: "option",
+      modelLocation: "policy"
+    }
+  };
+
   const form = document.querySelector(".workbench-grid");
   const textarea = document.getElementById("model_contract");
-  const canvas = document.querySelector("[data-design-canvas]");
-  const context = canvas ? canvas.getContext("2d") : null;
+  const chart = document.querySelector("[data-design-chart]");
+  const presetButtons = Array.from(document.querySelectorAll("[data-preset]"));
+  const insightNodes = {
+    summary: document.querySelector("[data-insight-summary]"),
+    boundary: document.querySelector("[data-insight-boundary]"),
+    lev: document.querySelector("[data-insight-lev]"),
+    shift: document.querySelector("[data-insight-shift]"),
+    location: document.querySelector("[data-insight-location]"),
+    info: document.querySelector("[data-info-score]"),
+    ai: document.querySelector("[data-ai-score]"),
+    continuity: document.querySelector("[data-continuity-score]"),
+    governance: document.querySelector("[data-governance-score]")
+  };
   const ageMin = 40;
   const ageMax = 125;
   const baselineMean = 82;
   const baselineSd = 12;
+  let activePreset = "";
 
   function clamp(min, value, max) {
     return Math.max(min, Math.min(value, max));
@@ -385,6 +751,10 @@
 
   function signed(value, digits = 2) {
     return `${value >= 0 ? "+" : ""}${value.toFixed(digits)}`;
+  }
+
+  function percent(value) {
+    return `${Math.round(clamp(0, value, 1) * 100)}%`;
   }
 
   function valueOf(id) {
@@ -471,6 +841,7 @@
         input.opportunity * 0.15,
       1.6
     );
+    const effectiveDurationBoundary = modelEffectiveDurationBoundary(interventionMean, levRatio);
     return {
       ...input,
       positive,
@@ -482,7 +853,28 @@
       interventionMean,
       interventionSd,
       levRatio,
-      levState: levRatio >= 1 ? "above_threshold" : "below_threshold"
+      levState: levRatio >= 1 ? "above_threshold" : "below_threshold",
+      effectiveDurationBoundary
+    };
+  }
+
+  function modelEffectiveDurationBoundary(interventionMean, levRatio) {
+    if (levRatio >= 1) {
+      return {
+        state: "open_boundary",
+        display: "∞",
+        years: null
+      };
+    }
+    const finiteYears = clamp(
+      interventionMean,
+      interventionMean + (18 * levRatio) / Math.max(0.06, 1 - levRatio),
+      180
+    );
+    return {
+      state: "finite_boundary",
+      display: `${finiteYears.toFixed(1)} years`,
+      years: finiteYears
     };
   }
 
@@ -494,6 +886,13 @@
       "  source: pdf/dialogue_cards/web_app.py",
       "  windows: preview_left_top, contract_right_top, controls_bottom",
       "",
+      "learning_translation:",
+      "  source: 奇点更近学习资料",
+      "  status: 学习整理；不进行作者预测事实核验",
+      "  accelerating_returns: faster state transition and intervention compounding",
+      "  longevity_escape_velocity: effective duration boundary",
+      "  human_ai_fusion: extended subject operating system",
+      "",
       "causal_chain:",
       "  A_t -> X_t",
       "  X_t,A_t -> P(X_next | X_t,A_t)",
@@ -503,29 +902,59 @@
       "model_claim:",
       `  outcome: ${labels[model.timeMode]}`,
       `  model_location: ${labels[model.modelLocation]}`,
-      `  evidence_grade: G${model.evidence}`,
+      `  data_strength: ${model.evidence}/5`,
       `  life_path_shift_score: ${signed(model.score)}`,
       `  baseline_expected_life: ${model.baselineMean.toFixed(1)} years`,
       `  intervention_expected_life: ${model.interventionMean.toFixed(1)} years`,
       `  distribution_shift: ${signed(model.distributionShift, 1)} years`,
       `  lev_ratio: ${model.levRatio.toFixed(2)}x`,
       `  lev_state: ${model.levState}`,
+      `  effective_duration_boundary: ${model.effectiveDurationBoundary.display}`,
       `  positive_term: ${model.positive.toFixed(3)}`,
-      `  penalty_term: ${model.penalty.toFixed(3)}`,
-      "",
-      "allowed_wording:",
-      "  在明确假设、适用人群和不确定性下，估计干预可能改变生命路径分布。",
-      "",
-      "prohibited_wording:",
-      "  不得宣称个体必然延寿，不得输出死亡日期，不得替代医疗判断。"
+      `  penalty_term: ${model.penalty.toFixed(3)}`
     ].join("\n");
+  }
+
+  function updateInsightPanel(model) {
+    if (!insightNodes.summary) return;
+    const informationization = clamp(
+      0,
+      model.importance * 0.35 + model.causality * 0.3 + (model.evidence / 5) * 0.35,
+      1
+    );
+    const aiAcceleration = clamp(
+      0,
+      model.effect * 0.34 + model.duration * 0.24 + model.composability * 0.27 + model.access * 0.15,
+      1
+    );
+    const continuity = clamp(
+      0,
+      (model.levRatio / 1.6) * 0.6 + Math.max(model.score, 0) * 0.4,
+      1
+    );
+    const governance = clamp(0, 1 - model.penalty, 1);
+    const boundaryText = formatEffectiveDuration(model);
+    const stateText = levStateLabels[model.levState];
+
+    insightNodes.summary.textContent =
+      `当前参数把学习资料中的指数技术链路映射到 ${labels[model.modelLocation]}：` +
+      `${labels[model.timeMode]} 的分布位移为 ${signed(model.distributionShift, 1)} 年，` +
+      `预测有效持续时间边界为 ${boundaryText}，LEV 处于 ${stateText}。`;
+    insightNodes.boundary.textContent = boundaryText;
+    insightNodes.lev.textContent = `${model.levRatio.toFixed(2)}x`;
+    insightNodes.shift.textContent = `${signed(model.distributionShift, 1)} 年`;
+    insightNodes.location.textContent = labels[model.modelLocation];
+    insightNodes.info.textContent = percent(informationization);
+    insightNodes.ai.textContent = percent(aiAcceleration);
+    insightNodes.continuity.textContent = percent(continuity);
+    insightNodes.governance.textContent = percent(governance);
   }
 
   function updateOutputs() {
     for (const id of fields) {
       const output = document.getElementById(`${id}_out`);
       if (!output) continue;
-      output.value = id === "evidence" ? `G${valueOf(id)}` : String(valueOf(id));
+      output.value = String(valueOf(id));
     }
 
     const model = buildModel(readInputs());
@@ -534,8 +963,9 @@
 
     textarea.value = contractText(model);
     resizeTextarea();
+    updateInsightPanel(model);
     document.querySelector("[data-produce-status]").textContent =
-      `Life-Path Shift ${signed(model.score)}；LEV ${model.levRatio.toFixed(2)}x；${model.levState}`;
+      `生命路径位移 ${signed(model.score)}；预测有效持续时间边界 ${formatEffectiveDuration(model)}；LEV ${model.levRatio.toFixed(2)}x；${levStateLabels[model.levState]}`;
 
     document.getElementById("distribution_table").textContent = formatPsql(
       ["metric", "baseline", "intervention", "unit"],
@@ -546,21 +976,8 @@
         ["life_path_shift_score", "0.00", signed(model.score), "score"],
         ["longevity_escape_velocity", "", model.levRatio.toFixed(2), "x"],
         ["lev_threshold", "", "1.00", "x"],
+        ["effective_duration_boundary", "", formatEffectiveDuration(model), "year"],
         ["lev_state", "", model.levState, ""]
-      ]
-    );
-
-    document.getElementById("gate_table").textContent = formatPsql(
-      ["gate", "status", "value"],
-      [
-        ["contract", "pass", "declared"],
-        ["causal", model.causality >= 0.6 ? "pass" : model.causality >= 0.35 ? "warn" : "block", model.causality.toFixed(2)],
-        ["evidence", model.evidence >= 4 ? "pass" : model.evidence >= 2 ? "warn" : "block", `G${model.evidence}`],
-        [
-          "safety",
-          model.risk <= 0.4 && model.uncertainty <= 0.5 ? "pass" : model.risk <= 0.7 ? "warn" : "block",
-          `risk=${model.risk.toFixed(2)} uncertainty=${model.uncertainty.toFixed(2)}`
-        ]
       ]
     );
 
@@ -570,87 +987,360 @@
 
   function resizeTextarea() {
     textarea.style.height = "auto";
-    textarea.style.height = `${textarea.scrollHeight}px`;
+    const maxHeight = Math.max(240, window.innerHeight * 0.28);
+    textarea.style.height = `${Math.min(textarea.scrollHeight, maxHeight)}px`;
   }
 
   function drawPreview(model, baseline, intervention) {
-    if (!context || !canvas) return;
-    const width = canvas.width;
-    const height = canvas.height;
-    const left = 96;
-    const right = 70;
-    const top = 115;
-    const bottom = 170;
-    const plotWidth = width - left - right;
-    const plotHeight = height - top - bottom;
+    if (!chart) return;
+    if (!window.d3) {
+      document.querySelector("[data-produce-status]").textContent += "；D3 未加载";
+      return;
+    }
+
+    const width = 900;
+    const height = 900;
+    const colors = {
+      baseline: "#f4f4f4",
+      intervention: "#58d5ff",
+      survival: "#b9ff7a",
+      threshold: "#ffcc66",
+      watch: "#ff8f5a",
+      good: "#63d488",
+      grid: "#555f66",
+      muted: "#d8dee4"
+    };
+    const densityPlot = { left: 82, top: 126, width: 760, height: 285 };
+    const survivalPlot = { left: 82, top: 504, width: 760, height: 205 };
+    const durationPlot = { left: 82, top: 778, width: 760, height: 66 };
     const maxDensity = Math.max(
       ...baseline.map((row) => row.density),
       ...intervention.map((row) => row.density)
     );
+    const svg = d3.select(chart);
+    svg.select("#chart-desc").text(
+      `寿命分布位移 ${signed(model.distributionShift, 1)} 年，LEV ${model.levRatio.toFixed(2)}x。`
+    );
+    svg.selectAll(".chart-dynamic").remove();
 
-    function xForAge(age) {
-      return left + ((age - ageMin) / (ageMax - ageMin)) * plotWidth;
-    }
+    const root = svg
+      .append("g")
+      .attr("class", "chart-dynamic");
+    const defs = root.append("defs");
+    defs
+      .append("marker")
+      .attr("id", "shift-arrow")
+      .attr("viewBox", "0 0 10 10")
+      .attr("refX", 9)
+      .attr("refY", 5)
+      .attr("markerWidth", 7)
+      .attr("markerHeight", 7)
+      .attr("orient", "auto-start-reverse")
+      .append("path")
+      .attr("d", "M 0 0 L 10 5 L 0 10 z")
+      .attr("fill", colors.threshold);
 
-    function yForDensity(density) {
-      return top + plotHeight - (density / maxDensity) * plotHeight;
-    }
+    root
+      .append("rect")
+      .attr("width", width)
+      .attr("height", height)
+      .attr("fill", "#2f3437");
 
-    context.clearRect(0, 0, width, height);
-    context.fillStyle = "#3c3c3c";
-    context.fillRect(0, 0, width, height);
+    root
+      .append("text")
+      .attr("class", "chart-title")
+      .attr("x", 82)
+      .attr("y", 54)
+      .text("Human Infra × 奇点模型");
+    root
+      .append("text")
+      .attr("class", "chart-subtitle")
+      .attr("x", 82)
+      .attr("y", 84)
+      .text(`${labels[model.timeMode]} · ${labels[model.modelLocation]} · D3 预测图`);
 
-    context.strokeStyle = "#f2f2f2";
-    context.fillStyle = "#f2f2f2";
-    context.lineWidth = 2;
-    context.font = "32px sans-serif";
-    context.fillText("Human Infra Life-Path", left, 62);
-    context.font = "22px sans-serif";
-    context.fillText("solid=baseline  dashed=intervention", left, 92);
-
-    context.beginPath();
-    context.moveTo(left, top);
-    context.lineTo(left, top + plotHeight);
-    context.lineTo(left + plotWidth, top + plotHeight);
-    context.stroke();
-
-    context.beginPath();
-    baseline.forEach((row, index) => {
-      const x = xForAge(row.age);
-      const y = yForDensity(row.density);
-      if (index === 0) context.moveTo(x, y);
-      else context.lineTo(x, y);
+    const legend = root
+      .append("g")
+      .attr("class", "chart-legend")
+      .attr("transform", "translate(535,53)");
+    [
+      ["baseline", colors.baseline, "基线"],
+      ["intervention", colors.intervention, "干预后"],
+      ["survival", colors.survival, "生存曲线"]
+    ].forEach(([key, color, label], index) => {
+      const item = legend.append("g").attr("transform", `translate(${index * 122},0)`);
+      item
+        .append("line")
+        .attr("x1", 0)
+        .attr("x2", 31)
+        .attr("y1", 0)
+        .attr("y2", 0)
+        .attr("stroke", color)
+        .attr("stroke-width", 4)
+        .attr("stroke-dasharray", key === "intervention" ? "9 7" : null);
+      item
+        .append("text")
+        .attr("x", 40)
+        .attr("y", 5)
+        .text(label);
     });
-    context.stroke();
 
-    context.save();
-    context.setLineDash([14, 9]);
-    context.beginPath();
-    intervention.forEach((row, index) => {
-      const x = xForAge(row.age);
-      const y = yForDensity(row.density);
-      if (index === 0) context.moveTo(x, y);
-      else context.lineTo(x, y);
+    const ageX = d3.scaleLinear()
+      .domain([ageMin, ageMax])
+      .range([densityPlot.left, densityPlot.left + densityPlot.width]);
+    const densityY = d3.scaleLinear()
+      .domain([0, maxDensity * 1.08])
+      .nice()
+      .range([densityPlot.top + densityPlot.height, densityPlot.top]);
+    const survivalY = d3.scaleLinear()
+      .domain([0, 1])
+      .range([survivalPlot.top + survivalPlot.height, survivalPlot.top]);
+
+    drawGrid(root, ageX, densityY, densityPlot, 5);
+    drawAxes(root, ageX, densityY, densityPlot, "概率密度");
+    drawGrid(root, ageX, survivalY, survivalPlot, 4);
+    drawAxes(root, ageX, survivalY, survivalPlot, "生存概率 S(t)");
+
+    const densityArea = d3.area()
+      .curve(d3.curveMonotoneX)
+      .x((row) => ageX(row.age))
+      .y0(densityPlot.top + densityPlot.height)
+      .y1((row) => densityY(row.density));
+    root
+      .append("path")
+      .datum(intervention)
+      .attr("fill", colors.intervention)
+      .attr("opacity", 0.16)
+      .attr("d", densityArea);
+
+    const densityLine = d3.line()
+      .curve(d3.curveMonotoneX)
+      .x((row) => ageX(row.age))
+      .y((row) => densityY(row.density));
+    const survivalLine = d3.line()
+      .curve(d3.curveMonotoneX)
+      .x((row) => ageX(row.age))
+      .y((row) => survivalY(row.survival));
+
+    drawPath(root, baseline, densityLine, colors.baseline, null);
+    drawPath(root, intervention, densityLine, colors.intervention, "9 7");
+    drawPath(root, baseline, survivalLine, colors.baseline, null, 0.62);
+    drawPath(root, intervention, survivalLine, colors.survival, "9 7");
+    drawMeanLine(root, ageX, densityPlot, model.baselineMean, colors.baseline, "基线均值", null, 22);
+    drawMeanLine(root, ageX, densityPlot, model.interventionMean, colors.intervention, "干预均值", "5 7", 48);
+    drawShiftArrow(root, ageX, densityPlot, model);
+    drawMetrics(root, model, colors);
+    drawEffectiveDurationBoundary(root, durationPlot, model, colors);
+  }
+
+  function formatEffectiveDuration(model) {
+    if (model.effectiveDurationBoundary.state === "open_boundary") return "∞";
+    return `${model.effectiveDurationBoundary.years.toFixed(1)} 年`;
+  }
+
+  function drawGrid(root, x, y, plot, yTicks) {
+    root
+      .append("g")
+      .attr("class", "chart-grid")
+      .attr("transform", `translate(0,${plot.top + plot.height})`)
+      .call(d3.axisBottom(x).ticks(6).tickSize(-plot.height).tickFormat(""));
+    root
+      .append("g")
+      .attr("class", "chart-grid")
+      .attr("transform", `translate(${plot.left},0)`)
+      .call(d3.axisLeft(y).ticks(yTicks).tickSize(-plot.width).tickFormat(""));
+  }
+
+  function drawAxes(root, x, y, plot, yLabel) {
+    root
+      .append("g")
+      .attr("class", "chart-axis")
+      .attr("transform", `translate(0,${plot.top + plot.height})`)
+      .call(d3.axisBottom(x).ticks(6).tickFormat(d3.format("d")));
+    root
+      .append("g")
+      .attr("class", "chart-axis")
+      .attr("transform", `translate(${plot.left},0)`)
+      .call(d3.axisLeft(y).ticks(4));
+    root
+      .append("text")
+      .attr("class", "chart-label")
+      .attr("x", plot.left)
+      .attr("y", plot.top - 16)
+      .text(yLabel);
+    root
+      .append("text")
+      .attr("class", "chart-label")
+      .attr("x", plot.left + plot.width - 24)
+      .attr("y", plot.top + plot.height + 43)
+      .text("年龄");
+  }
+
+  function drawPath(root, rows, line, color, dasharray, opacity = 1) {
+    root
+      .append("path")
+      .datum(rows)
+      .attr("fill", "none")
+      .attr("stroke", color)
+      .attr("stroke-width", 4)
+      .attr("stroke-linejoin", "round")
+      .attr("stroke-linecap", "round")
+      .attr("stroke-dasharray", dasharray)
+      .attr("opacity", opacity)
+      .attr("d", line);
+  }
+
+  function drawMeanLine(root, x, plot, age, color, label, dasharray, labelOffset) {
+    const xPosition = x(age);
+    root
+      .append("line")
+      .attr("x1", xPosition)
+      .attr("x2", xPosition)
+      .attr("y1", plot.top)
+      .attr("y2", plot.top + plot.height)
+      .attr("stroke", color)
+      .attr("stroke-width", 2)
+      .attr("stroke-dasharray", dasharray)
+      .attr("opacity", 0.78);
+    root
+      .append("text")
+      .attr("class", "chart-label")
+      .attr("x", xPosition + 8)
+      .attr("y", plot.top + labelOffset)
+      .style("fill", color)
+      .text(label);
+  }
+
+  function drawShiftArrow(root, x, plot, model) {
+    const y = plot.top + plot.height + 55;
+    root
+      .append("line")
+      .attr("x1", x(model.baselineMean))
+      .attr("x2", x(model.interventionMean))
+      .attr("y1", y)
+      .attr("y2", y)
+      .attr("stroke", "#ffcc66")
+      .attr("stroke-width", 4)
+      .attr("marker-end", "url(#shift-arrow)");
+    root
+      .append("text")
+      .attr("class", "chart-metric")
+      .attr("x", x(Math.min(model.baselineMean, model.interventionMean)) + 10)
+      .attr("y", y + 28)
+      .text(`分布位移 ${signed(model.distributionShift, 1)} 年`);
+  }
+
+  function drawMetrics(root, model, colors) {
+    const rows = [
+      `评分 ${signed(model.score)}`,
+      `均值 ${model.interventionMean.toFixed(1)} 年`,
+      `有效边界 ${formatEffectiveDuration(model)}`
+    ];
+    rows.forEach((label, index) => {
+      root
+      .append("text")
+      .attr("class", "chart-metric")
+      .attr("x", 82 + index * 210)
+      .attr("y", 752)
+      .style("fill", index === 0 ? colors.threshold : colors.muted)
+      .text(label);
     });
-    context.stroke();
-    context.restore();
+  }
 
-    context.beginPath();
-    context.moveTo(xForAge(model.baselineMean), top);
-    context.lineTo(xForAge(model.baselineMean), top + plotHeight);
-    context.stroke();
-    context.save();
-    context.setLineDash([5, 8]);
-    context.beginPath();
-    context.moveTo(xForAge(model.interventionMean), top);
-    context.lineTo(xForAge(model.interventionMean), top + plotHeight);
-    context.stroke();
-    context.restore();
+  function drawEffectiveDurationBoundary(root, plot, model, colors) {
+    const levColor = model.levRatio >= 1 ? colors.good : colors.watch;
+    const x = d3.scaleLinear()
+      .domain([0, 1.6])
+      .range([plot.left, plot.left + plot.width]);
+    const y = d3.scaleLinear()
+      .domain([0, 180])
+      .range([plot.top + plot.height, plot.top]);
+    const curve = d3.line()
+      .curve(d3.curveMonotoneX)
+      .x((row) => x(row.lev))
+      .y((row) => y(row.years));
+    const boundaryRows = d3.range(0, 0.99, 0.03).map((lev) => ({
+      lev,
+      years: clamp(0, model.interventionMean + (18 * lev) / Math.max(0.06, 1 - lev), 180)
+    }));
+    const currentYears = model.effectiveDurationBoundary.years ?? 180;
+    const currentY = y(Math.min(currentYears, 180));
 
-    context.font = "24px sans-serif";
-    context.fillText(`shift ${signed(model.distributionShift, 1)}y`, left, height - 105);
-    context.fillText(`LEV ${model.levRatio.toFixed(2)}x / threshold 1.00x`, left, height - 72);
-    context.fillText(`score ${signed(model.score)}`, left, height - 39);
+    root
+      .append("text")
+      .attr("class", "chart-label")
+      .attr("x", plot.left)
+      .attr("y", plot.top - 16)
+      .text("预测有效持续时间边界");
+    root
+      .append("text")
+      .attr("class", "chart-label")
+      .attr("x", plot.left + plot.width - 170)
+      .attr("y", plot.top - 16)
+      .style("fill", colors.threshold)
+      .text("LEV=1.00x -> ∞");
+    root
+      .append("g")
+      .attr("class", "chart-grid")
+      .attr("transform", `translate(0,${plot.top + plot.height})`)
+      .call(d3.axisBottom(x).tickValues([0, 0.5, 1, 1.5]).tickSize(-plot.height).tickFormat(""));
+    root
+      .append("g")
+      .attr("class", "chart-axis")
+      .attr("transform", `translate(0,${plot.top + plot.height})`)
+      .call(d3.axisBottom(x).tickValues([0, 0.5, 1, 1.5]).tickFormat((value) => `${value.toFixed(1)}x`));
+    root
+      .append("g")
+      .attr("class", "chart-axis")
+      .attr("transform", `translate(${plot.left},0)`)
+      .call(d3.axisLeft(y).tickValues([0, 60, 120, 180]).tickFormat((value) => (value === 180 ? "180+" : value)));
+    root
+      .append("path")
+      .datum(boundaryRows)
+      .attr("fill", "none")
+      .attr("stroke", colors.good)
+      .attr("stroke-width", 4)
+      .attr("stroke-linecap", "round")
+      .attr("d", curve);
+    root
+      .append("line")
+      .attr("x1", x(1))
+      .attr("x2", x(1))
+      .attr("y1", plot.top - 8)
+      .attr("y2", plot.top + plot.height)
+      .attr("stroke", colors.threshold)
+      .attr("stroke-width", 4)
+      .attr("stroke-dasharray", "7 5");
+    root
+      .append("line")
+      .attr("x1", x(model.levRatio))
+      .attr("x2", x(model.levRatio))
+      .attr("y1", plot.top + plot.height)
+      .attr("y2", currentY)
+      .attr("stroke", levColor)
+      .attr("stroke-width", 3);
+    root
+      .append("circle")
+      .attr("cx", x(model.levRatio))
+      .attr("cy", currentY)
+      .attr("r", 9)
+      .attr("fill", levColor)
+      .attr("stroke", "#2f3437")
+      .attr("stroke-width", 3);
+    root
+      .append("text")
+      .attr("class", "chart-metric")
+      .attr("x", plot.left)
+      .attr("y", plot.top + plot.height + 42)
+      .style("fill", levColor)
+      .text(`LEV ${model.levRatio.toFixed(2)}x · ${levStateLabels[model.levState]} · 有效边界 ${formatEffectiveDuration(model)}`);
+    root
+      .append("text")
+      .attr("class", "chart-metric")
+      .attr("x", x(1) + 12)
+      .attr("y", plot.top + 18)
+      .style("fill", colors.threshold)
+      .text("临界阈值");
   }
 
   function hydrateFromSearch() {
@@ -661,12 +1351,39 @@
     }
   }
 
+  function setActivePreset(name) {
+    activePreset = name;
+    for (const button of presetButtons) {
+      button.classList.toggle("is-active", button.dataset.preset === activePreset);
+    }
+  }
+
+  function applyPreset(name) {
+    const preset = scenarioPresets[name];
+    if (!preset) return;
+    for (const [id, value] of Object.entries(preset)) {
+      const element = document.getElementById(id);
+      if (!element) continue;
+      element.value = String(value);
+    }
+    setActivePreset(name);
+    updateOutputs();
+  }
+
+  function markManualInput() {
+    setActivePreset("");
+    updateOutputs();
+  }
+
   hydrateFromSearch();
   for (const id of fields) {
-    document.getElementById(id).addEventListener("input", updateOutputs);
+    document.getElementById(id).addEventListener("input", markManualInput);
   }
-  document.getElementById("timeMode").addEventListener("change", updateOutputs);
-  document.getElementById("modelLocation").addEventListener("change", updateOutputs);
+  document.getElementById("timeMode").addEventListener("change", markManualInput);
+  document.getElementById("modelLocation").addEventListener("change", markManualInput);
+  for (const button of presetButtons) {
+    button.addEventListener("click", () => applyPreset(button.dataset.preset));
+  }
   updateOutputs();
 })();
 </script>

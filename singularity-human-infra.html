@@ -1,0 +1,2577 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Human Infra × 奇点更近：价值展示与预测模型</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #111214;
+      --muted: #5c6470;
+      --line: #d8dde3;
+      --paper: #f5f2ec;
+      --panel: #ffffff;
+      --dark: #15191f;
+      --teal: #087f8c;
+      --blue: #2c67d8;
+      --amber: #c47a18;
+      --rose: #b23a5b;
+      --green: #287d3c;
+      --shadow: 0 12px 30px rgba(20, 24, 31, 0.10);
+      --radius: 8px;
+      font-family: "Noto Sans SC", "Microsoft YaHei", Arial, sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      background: var(--paper);
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--paper);
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    p, h1, h2, h3 {
+      margin: 0;
+    }
+
+    button, input, select {
+      font: inherit;
+    }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 0.9rem clamp(1rem, 4vw, 4rem);
+      border-bottom: 1px solid rgba(17, 18, 20, 0.12);
+      background: rgba(245, 242, 236, 0.96);
+      backdrop-filter: blur(12px);
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.7rem;
+      font-weight: 800;
+      letter-spacing: 0;
+    }
+
+    .brand-mark {
+      width: 2.1rem;
+      height: 2.1rem;
+      display: grid;
+      place-items: center;
+      color: #fff;
+      background: var(--dark);
+      border-radius: 50%;
+      font-size: 0.82rem;
+    }
+
+    .nav {
+      display: flex;
+      gap: 0.35rem;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .nav a {
+      padding: 0.45rem 0.65rem;
+      color: var(--muted);
+      border: 1px solid transparent;
+      border-radius: 999px;
+      font-size: 0.9rem;
+      font-weight: 700;
+    }
+
+    .nav a:hover {
+      color: var(--ink);
+      border-color: rgba(17, 18, 20, 0.2);
+      background: rgba(255, 255, 255, 0.8);
+    }
+
+    .page {
+      overflow: hidden;
+    }
+
+    .section {
+      padding: clamp(3rem, 7vw, 6rem) clamp(1rem, 4vw, 4rem);
+    }
+
+    .section-inner {
+      width: min(1220px, 100%);
+      margin: 0 auto;
+    }
+
+    .hero {
+      min-height: calc(100vh - 4.1rem);
+      display: grid;
+      align-items: stretch;
+      grid-template-columns: minmax(0, 0.88fr) minmax(0, 1.12fr);
+      gap: clamp(1.2rem, 3vw, 2.5rem);
+      padding-top: clamp(2rem, 5vw, 4rem);
+      padding-bottom: clamp(2rem, 5vw, 4rem);
+    }
+
+    .hero-copy {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 1.35rem;
+    }
+
+    .eyebrow {
+      color: var(--teal);
+      font-size: 0.86rem;
+      font-weight: 900;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      max-width: 13ch;
+      font-size: clamp(3rem, 7.8vw, 7.1rem);
+      line-height: 0.96;
+      letter-spacing: 0;
+    }
+
+    .hero-lead {
+      max-width: 43rem;
+      color: #303640;
+      font-size: clamp(1.08rem, 1.8vw, 1.35rem);
+      line-height: 1.75;
+      font-weight: 600;
+    }
+
+    .thesis-strip {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 0.7rem;
+      margin-top: 0.5rem;
+    }
+
+    .thesis-item {
+      min-width: 0;
+      padding: 0.8rem;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, 0.72);
+    }
+
+    .thesis-item strong {
+      display: block;
+      margin-bottom: 0.25rem;
+      font-size: 0.94rem;
+    }
+
+    .thesis-item span {
+      color: var(--muted);
+      font-size: 0.86rem;
+      line-height: 1.55;
+    }
+
+    .cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.7rem;
+      margin-top: 0.15rem;
+    }
+
+    .cta-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 2.8rem;
+      padding: 0 0.95rem;
+      border: 1px solid var(--dark);
+      border-radius: var(--radius);
+      color: #fff;
+      background: var(--dark);
+      font-size: 0.92rem;
+      font-weight: 900;
+    }
+
+    .cta-link.secondary {
+      color: var(--ink);
+      border-color: #bdc5cf;
+      background: #fff;
+    }
+
+    .hero-visual {
+      min-height: 38rem;
+      display: grid;
+      grid-template-rows: minmax(0, 1fr) auto;
+      gap: 1rem;
+      padding: 1rem;
+      border: 1px solid #222832;
+      border-radius: var(--radius);
+      background: var(--dark);
+      box-shadow: var(--shadow);
+    }
+
+    .hero-visual svg {
+      width: 100%;
+      height: 100%;
+      min-height: 29rem;
+      display: block;
+    }
+
+    .hero-metrics {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 0.7rem;
+    }
+
+    .metric {
+      min-width: 0;
+      padding: 0.7rem;
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      border-radius: var(--radius);
+      color: #f4f7fb;
+      background: rgba(255, 255, 255, 0.06);
+    }
+
+    .metric span {
+      display: block;
+      color: #aeb8c6;
+      font-size: 0.75rem;
+      font-weight: 800;
+    }
+
+    .metric strong {
+      display: block;
+      margin-top: 0.18rem;
+      font-size: clamp(1rem, 2vw, 1.35rem);
+      line-height: 1.2;
+    }
+
+    .band-dark {
+      color: #f5f7fa;
+      background: #111214;
+    }
+
+    .section-heading {
+      display: grid;
+      grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+      gap: 2rem;
+      align-items: end;
+      margin-bottom: 2rem;
+    }
+
+    .section-heading h2 {
+      font-size: clamp(2rem, 4vw, 3.9rem);
+      line-height: 1.05;
+      letter-spacing: 0;
+    }
+
+    .section-heading p {
+      color: var(--muted);
+      font-size: 1.05rem;
+      line-height: 1.75;
+    }
+
+    .band-dark .section-heading p {
+      color: #b7c1cf;
+    }
+
+    .translation-matrix {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 0.75rem;
+    }
+
+    .matrix-card {
+      min-width: 0;
+      padding: 1rem;
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, 0.06);
+    }
+
+    .matrix-card b {
+      display: block;
+      margin-bottom: 0.55rem;
+      color: #ffffff;
+      font-size: 1rem;
+    }
+
+    .matrix-card span {
+      display: block;
+      color: #b7c1cf;
+      font-size: 0.92rem;
+      line-height: 1.65;
+    }
+
+    .dense-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 0.85rem;
+    }
+
+    .wide-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+      gap: 1rem;
+      align-items: start;
+    }
+
+    .info-card,
+    .chapter-card,
+    .concept-card,
+    .chain-card {
+      min-width: 0;
+      padding: 1rem;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--panel);
+      box-shadow: var(--shadow);
+    }
+
+    .info-card h3,
+    .chapter-card h3,
+    .concept-card h3,
+    .chain-card h3 {
+      margin-bottom: 0.55rem;
+      font-size: 1.08rem;
+      line-height: 1.35;
+    }
+
+    .info-card p,
+    .chapter-card p,
+    .concept-card p,
+    .chain-card p {
+      color: var(--muted);
+      font-size: 0.95rem;
+      line-height: 1.7;
+    }
+
+    .info-card ul,
+    .chapter-card ul,
+    .concept-card ul,
+    .chain-card ul,
+    .study-list {
+      margin: 0.65rem 0 0;
+      padding-left: 1.15rem;
+      color: var(--muted);
+      font-size: 0.94rem;
+      line-height: 1.7;
+    }
+
+    .tag-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-top: 0.75rem;
+    }
+
+    .tag-row span {
+      display: inline-flex;
+      align-items: center;
+      min-height: 1.8rem;
+      padding: 0 0.5rem;
+      border: 1px solid #c9d0d8;
+      border-radius: 999px;
+      color: #2d3540;
+      background: #f8f9fb;
+      font-size: 0.8rem;
+      font-weight: 800;
+    }
+
+    .timeline {
+      display: grid;
+      gap: 0.6rem;
+    }
+
+    .timeline-step {
+      display: grid;
+      grid-template-columns: 4.2rem minmax(0, 1fr);
+      gap: 0.8rem;
+      align-items: start;
+      padding: 0.75rem;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fff;
+    }
+
+    .timeline-step b {
+      color: var(--teal);
+      font-size: 0.82rem;
+      font-weight: 900;
+    }
+
+    .timeline-step strong {
+      display: block;
+      margin-bottom: 0.2rem;
+      font-size: 0.98rem;
+    }
+
+    .timeline-step span {
+      color: var(--muted);
+      font-size: 0.9rem;
+      line-height: 1.55;
+    }
+
+    .concept-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 0.75rem;
+    }
+
+    .concept-card {
+      box-shadow: none;
+      background: #fff;
+    }
+
+    .concept-card small {
+      display: block;
+      margin-bottom: 0.45rem;
+      color: var(--teal);
+      font-size: 0.78rem;
+      font-weight: 900;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .chain-board {
+      display: grid;
+      grid-template-columns: repeat(6, minmax(0, 1fr));
+      gap: 0.5rem;
+      margin: 1rem 0;
+    }
+
+    .chain-node {
+      position: relative;
+      min-height: 6.2rem;
+      padding: 0.8rem;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fff;
+    }
+
+    .chain-node strong {
+      display: block;
+      margin-bottom: 0.3rem;
+      font-size: 0.94rem;
+    }
+
+    .chain-node span {
+      color: var(--muted);
+      font-size: 0.82rem;
+      line-height: 1.45;
+    }
+
+    .chain-node::after {
+      content: "→";
+      position: absolute;
+      right: -0.6rem;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--teal);
+      font-weight: 900;
+    }
+
+    .chain-node:last-child::after {
+      content: "";
+    }
+
+    .evidence-table {
+      width: 100%;
+      border-collapse: collapse;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fff;
+      box-shadow: var(--shadow);
+    }
+
+    .evidence-table th,
+    .evidence-table td {
+      padding: 0.8rem;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+      font-size: 0.92rem;
+      line-height: 1.55;
+    }
+
+    .evidence-table th {
+      color: #1e2630;
+      background: #edf1f4;
+      font-weight: 900;
+    }
+
+    .evidence-table td {
+      color: var(--muted);
+    }
+
+    .evidence-table tr:last-child td {
+      border-bottom: 0;
+    }
+
+    .exercise-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.85rem;
+    }
+
+    .quote-panel {
+      padding: 1.1rem;
+      border-left: 5px solid var(--teal);
+      border-radius: var(--radius);
+      color: #1f2b36;
+      background: #ffffff;
+      box-shadow: var(--shadow);
+      font-size: 1.05rem;
+      font-weight: 800;
+      line-height: 1.7;
+    }
+
+    .benchmark-grid {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 0.75rem;
+    }
+
+    .benchmark-card {
+      min-width: 0;
+      display: grid;
+      gap: 0.65rem;
+      padding: 1rem;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fff;
+      box-shadow: var(--shadow);
+    }
+
+    .benchmark-card small,
+    .research-module-card small,
+    .adoption-sidebar small {
+      color: var(--teal);
+      font-size: 0.76rem;
+      font-weight: 900;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .benchmark-card h3,
+    .research-module-card h3 {
+      font-size: 1.02rem;
+      line-height: 1.35;
+    }
+
+    .benchmark-card p,
+    .research-module-card p,
+    .adoption-sidebar p {
+      color: var(--muted);
+      font-size: 0.9rem;
+      line-height: 1.65;
+    }
+
+    .benchmark-link {
+      align-self: end;
+      color: #1f5f68;
+      font-size: 0.84rem;
+      font-weight: 900;
+    }
+
+    .adoption-lab {
+      display: grid;
+      grid-template-columns: minmax(16rem, 0.7fr) minmax(0, 1.3fr);
+      gap: 1rem;
+      margin-top: 1rem;
+      align-items: start;
+    }
+
+    .adoption-sidebar {
+      position: sticky;
+      top: 5.2rem;
+      display: grid;
+      gap: 0.85rem;
+      padding: 1rem;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fff;
+      box-shadow: var(--shadow);
+    }
+
+    .adoption-list {
+      display: grid;
+      gap: 0.55rem;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .adoption-list li {
+      display: grid;
+      grid-template-columns: 5.5rem minmax(0, 1fr);
+      gap: 0.65rem;
+      align-items: baseline;
+      padding: 0.55rem 0;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.88rem;
+      line-height: 1.55;
+    }
+
+    .adoption-list b {
+      color: #242b34;
+      font-size: 0.84rem;
+    }
+
+    .template-card-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 1px;
+      border: 1px solid var(--line);
+      background: var(--line);
+    }
+
+    .research-module-card {
+      min-width: 0;
+      display: grid;
+      gap: 0.65rem;
+      padding: 1rem;
+      background: #fff;
+      transition: background 0.16s ease, transform 0.16s ease;
+    }
+
+    .research-module-card:hover {
+      background: #f8fbfc;
+      transform: translateY(-1px);
+    }
+
+    .module-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.35rem;
+    }
+
+    .module-meta span {
+      display: inline-flex;
+      align-items: center;
+      min-height: 1.65rem;
+      padding: 0 0.45rem;
+      border: 1px solid #cad2dc;
+      border-radius: 999px;
+      color: #29313c;
+      background: #f6f8fa;
+      font-size: 0.74rem;
+      font-weight: 800;
+    }
+
+    .module-index {
+      color: #9aa4b1;
+      font-size: 0.76rem;
+      font-weight: 900;
+    }
+
+    .model-grid {
+      display: grid;
+      grid-template-columns: minmax(18rem, 0.85fr) minmax(0, 1.35fr);
+      gap: 1rem;
+      align-items: start;
+    }
+
+    .control-panel,
+    .chart-panel,
+    .model-contract,
+    .source-panel {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--panel);
+      box-shadow: var(--shadow);
+    }
+
+    .control-panel {
+      position: sticky;
+      top: 5.2rem;
+      padding: 1rem;
+    }
+
+    .scenario-row {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.55rem;
+      margin-bottom: 1rem;
+    }
+
+    .scenario-button {
+      min-height: 2.7rem;
+      border: 1px solid #b9c0c9;
+      border-radius: var(--radius);
+      color: var(--ink);
+      background: #f5f6f8;
+      font-weight: 800;
+      cursor: pointer;
+    }
+
+    .scenario-button.is-active {
+      color: #fff;
+      border-color: var(--dark);
+      background: var(--dark);
+    }
+
+    .field {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 3.2rem;
+      gap: 0.65rem;
+      align-items: center;
+      margin: 0 0 0.86rem;
+    }
+
+    .field label {
+      grid-column: 1 / -1;
+      color: #2a3039;
+      font-size: 0.92rem;
+      font-weight: 900;
+    }
+
+    .field input[type="range"] {
+      width: 100%;
+      accent-color: var(--teal);
+    }
+
+    .field output {
+      text-align: right;
+      font-weight: 900;
+    }
+
+    .select-field {
+      margin-top: 1rem;
+    }
+
+    .select-field label {
+      display: block;
+      margin-bottom: 0.35rem;
+      color: #2a3039;
+      font-size: 0.92rem;
+      font-weight: 900;
+    }
+
+    .select-field select {
+      width: 100%;
+      min-height: 2.7rem;
+      border: 1px solid #b9c0c9;
+      border-radius: var(--radius);
+      padding: 0 0.65rem;
+      color: var(--ink);
+      background: #fff;
+      font-weight: 700;
+    }
+
+    .model-stack {
+      display: grid;
+      gap: 1rem;
+    }
+
+    .chart-panel {
+      padding: 1rem;
+    }
+
+    .chart-panel header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .chart-panel h3,
+    .model-contract h3,
+    .source-panel h3 {
+      font-size: 1.1rem;
+    }
+
+    .chart-panel p {
+      color: var(--muted);
+      font-size: 0.9rem;
+      line-height: 1.55;
+    }
+
+    .chart-panel svg {
+      width: 100%;
+      min-height: 19rem;
+      display: block;
+    }
+
+    .dual-chart {
+      display: grid;
+      grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+      gap: 1rem;
+    }
+
+    .model-contract {
+      padding: 1rem;
+    }
+
+    .contract-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 0.7rem;
+      margin: 0.8rem 0 1rem;
+    }
+
+    .contract-cell {
+      padding: 0.8rem;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #f8f9fb;
+    }
+
+    .contract-cell span {
+      display: block;
+      color: var(--muted);
+      font-size: 0.76rem;
+      font-weight: 900;
+    }
+
+    .contract-cell strong {
+      display: block;
+      margin-top: 0.18rem;
+      font-size: 1.18rem;
+      line-height: 1.25;
+    }
+
+    .formula {
+      overflow: auto;
+      margin: 0;
+      padding: 1rem;
+      border-radius: var(--radius);
+      color: #ecf1f7;
+      background: #15191f;
+      font-size: 0.9rem;
+      line-height: 1.6;
+    }
+
+    .source-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 0.8rem;
+    }
+
+    .source-panel {
+      padding: 1rem;
+    }
+
+    .source-panel p {
+      margin-top: 0.55rem;
+      color: var(--muted);
+      font-size: 0.94rem;
+      line-height: 1.7;
+    }
+
+    .footer {
+      padding: 2rem clamp(1rem, 4vw, 4rem);
+      color: #cbd2dc;
+      background: #111214;
+      font-size: 0.92rem;
+      line-height: 1.7;
+    }
+
+    .footer-inner {
+      width: min(1220px, 100%);
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .axis path,
+    .axis line {
+      stroke: #7b8592;
+      shape-rendering: crispEdges;
+    }
+
+    .axis text {
+      fill: #48515d;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .hero-visual .axis text {
+      fill: #aeb8c6;
+    }
+
+    .grid line {
+      stroke: #d9dee5;
+      stroke-opacity: 0.8;
+      shape-rendering: crispEdges;
+    }
+
+    .hero-visual .grid line {
+      stroke: rgba(255, 255, 255, 0.12);
+    }
+
+    .grid path { display: none; }
+
+    .chart-label {
+      fill: #29313c;
+      font-size: 13px;
+      font-weight: 900;
+    }
+
+    .hero-visual .chart-label {
+      fill: #f3f6fb;
+    }
+
+    .legend-text {
+      fill: #29313c;
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    .hero-visual .legend-text {
+      fill: #d9e1ec;
+    }
+
+    @media (max-width: 64rem) {
+      .topbar {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .nav {
+        justify-content: flex-start;
+      }
+
+      .hero,
+      .section-heading,
+      .model-grid,
+      .adoption-lab,
+      .dual-chart,
+      .wide-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        min-height: 0;
+      }
+
+      .hero-visual {
+        min-height: 32rem;
+      }
+
+      .translation-matrix,
+      .source-grid,
+      .dense-grid,
+      .concept-grid,
+      .exercise-grid,
+      .benchmark-grid,
+      .template-card-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .chain-board {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .control-panel {
+        position: static;
+      }
+
+      .adoption-sidebar {
+        position: static;
+      }
+    }
+
+    @media (max-width: 42rem) {
+      .thesis-strip,
+      .hero-metrics,
+      .translation-matrix,
+      .source-grid,
+      .contract-grid,
+      .scenario-row,
+      .dense-grid,
+      .concept-grid,
+      .exercise-grid,
+      .benchmark-grid,
+      .template-card-grid,
+      .chain-board {
+        grid-template-columns: 1fr;
+      }
+
+      .chain-node::after {
+        content: "";
+      }
+
+      .timeline-step {
+        grid-template-columns: 1fr;
+      }
+
+      h1 {
+        font-size: clamp(2.7rem, 16vw, 4.4rem);
+      }
+
+      .hero-visual svg,
+      .chart-panel svg {
+        min-height: 16rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="Human Infra">
+      <span class="brand-mark">HI</span>
+      <span>Human Infra × 奇点更近</span>
+    </a>
+    <nav class="nav" aria-label="页面导航">
+      <a href="#learning">学习入口</a>
+      <a href="#benchmarks">标杆模板</a>
+      <a href="#book-map">全书大图</a>
+      <a href="#knowledge">知识骨架</a>
+      <a href="#translation">理论转译</a>
+      <a href="#mechanism">机制证据</a>
+      <a href="#applications">应用迁移</a>
+      <a href="#research">科研标准</a>
+      <a href="#model">预测模型</a>
+      <a href="#sources">资料组织</a>
+    </nav>
+  </header>
+
+  <main id="top" class="page">
+    <section class="section hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Singularity Study / Subject Continuity</p>
+        <h1>把奇点叙事接入人类基础设施</h1>
+        <p class="hero-lead">
+          这份专项页把《奇点更近》的学习材料转译为 Human Infra 的研究对象：
+          技术进步如何改变主体完成任务所依赖的寿命、有效时间、认知能力、工具系统、资源预算和未来选择权。
+        </p>
+        <div class="thesis-strip" aria-label="核心主张">
+          <article class="thesis-item">
+            <strong>信息化迁移</strong>
+            <span>现实世界被转成可计算、可模拟、可优化的对象，技术飞轮才有模型入口。</span>
+          </article>
+          <article class="thesis-item">
+            <strong>主体持续性</strong>
+            <span>寿命、健康寿命、主观时间和未来选择权共同决定主体能否继续行动。</span>
+          </article>
+          <article class="thesis-item">
+            <strong>临界边界</strong>
+            <span>长寿逃逸速度对应一个模型临界点：有效持续时间从有限边界转向开放边界。</span>
+          </article>
+        </div>
+        <div class="cta-row" aria-label="主要入口">
+          <a class="cta-link" href="#benchmarks">查看标杆模板</a>
+          <a class="cta-link secondary" href="#model">打开预测模型</a>
+        </div>
+      </div>
+      <aside class="hero-visual" aria-label="Human Infra 奇点机制图">
+        <svg id="convergence-map" viewBox="0 0 900 620" role="img" aria-labelledby="map-title map-desc">
+          <title id="map-title">Human Infra 奇点机制图</title>
+          <desc id="map-desc">显示计算、AI、生物医学、接口和治理如何汇入主体持续性。</desc>
+        </svg>
+        <div class="hero-metrics" aria-label="核心模型输出">
+          <p class="metric"><span>有效边界</span><strong data-kpi-boundary>--</strong></p>
+          <p class="metric"><span>LEV 比率</span><strong data-kpi-lev>--</strong></p>
+          <p class="metric"><span>资源预算</span><strong data-kpi-budget>--</strong></p>
+          <p class="metric"><span>治理压力</span><strong data-kpi-governance>--</strong></p>
+        </div>
+      </aside>
+    </section>
+
+    <section id="benchmarks" class="section">
+      <div class="section-inner">
+        <div class="section-heading">
+          <h2>标杆模板研究层</h2>
+          <p>
+            本页参考三类成熟网页：模板市场负责模块入口，科研解释页负责模型推导，数据新闻页负责传播理解。
+            在 Human Infra 的模型约束下，当前实现保留静态 HTML、手写 CSS 和 D3，可直接作为文档仓库中的专项作品页发布。
+          </p>
+        </div>
+
+        <div class="benchmark-grid" aria-label="同类型网页标杆">
+          <article class="benchmark-card">
+            <small>Template Marketplace</small>
+            <h3>Cloudflare Workers Templates</h3>
+            <p>真实结构是 React 应用：橙色 Hero、模板卡片网格、筛选侧栏、详情弹层、技术细节面板和部署入口。</p>
+            <div class="module-meta">
+              <span>React</span><span>Tailwind</span><span>Vite Bundle</span>
+            </div>
+            <a class="benchmark-link" href="https://workers.new/templates/">查看标杆</a>
+          </article>
+          <article class="benchmark-card">
+            <small>Research Explainer</small>
+            <h3>Distill</h3>
+            <p>以长文叙事承载科研概念，用交互图、公式、引用和边注降低复杂模型的理解门槛。</p>
+            <div class="module-meta">
+              <span>Interactive Article</span><span>Citation</span>
+            </div>
+            <a class="benchmark-link" href="https://distill.pub/">查看标杆</a>
+          </article>
+          <article class="benchmark-card">
+            <small>Reproducible Chart</small>
+            <h3>Observable Framework / Plot</h3>
+            <p>强调数据、图表和解释同页组织，适合把生存曲线、DAG、RMST 和敏感性分析做成可复现图表规格。</p>
+            <div class="module-meta">
+              <span>D3</span><span>Observable Plot</span><span>Data App</span>
+            </div>
+            <a class="benchmark-link" href="https://observablehq.com/framework/">查看标杆</a>
+          </article>
+          <article class="benchmark-card">
+            <small>Evidence Product</small>
+            <h3>Our World in Data</h3>
+            <p>用主题页、图表浏览器、来源说明和长期数据更新组织公共知识，适合 Human Infra 的证据资产化。</p>
+            <div class="module-meta">
+              <span>Grapher</span><span>Data Catalog</span><span>Source Notes</span>
+            </div>
+            <a class="benchmark-link" href="https://ourworldindata.org/">查看标杆</a>
+          </article>
+          <article class="benchmark-card">
+            <small>Public Story</small>
+            <h3>The Pudding / Explorable Explanations</h3>
+            <p>用滚动叙事、可操作控件和强视觉入口，把抽象机制转成公众能沿着路径理解的作品。</p>
+            <div class="module-meta">
+              <span>Scrollytelling</span><span>Explorable</span>
+            </div>
+            <a class="benchmark-link" href="https://explorabl.es/">查看标杆</a>
+          </article>
+        </div>
+
+        <div class="adoption-lab" aria-label="Human Infra 页面模板约束与模块">
+          <aside class="adoption-sidebar">
+            <small>Adoption Contract</small>
+            <h3>本页采用的模板规则</h3>
+            <p>借鉴标杆的信息架构，不引入新的前端构建链；当前页面必须能在文档仓库中作为单文件作品运行。</p>
+            <ul class="adoption-list">
+              <li><b>仓库类型</b><span>知识与文档仓库，页面服务于资料组织、传播和模型说明。</span></li>
+              <li><b>技术栈</b><span>静态 HTML + CSS + D3；后续多页数据应用再考虑 Observable Framework 或 React。</span></li>
+              <li><b>布局骨架</b><span>Hero 主张、标杆模板、学习入口、机制证据、科研标准、预测模型、资料组织。</span></li>
+              <li><b>图表职责</b><span>D3 负责机制汇聚、生命路径分布、LEV 临界面和通用资源预算。</span></li>
+              <li><b>升级触发</b><span>出现真实数据集、路由、搜索、版本化模型和可复现实验时，再迁移到数据应用框架。</span></li>
+            </ul>
+          </aside>
+
+          <div class="template-card-grid" aria-label="专项网页研究模块">
+            <article class="research-module-card">
+              <span class="module-index">01</span>
+              <small>Entry</small>
+              <h3>问题入口</h3>
+              <p>用一句话说明研究对象：技术如何改变主体持续行动所依赖的生命路径概率分布。</p>
+              <div class="module-meta"><span>主张</span><span>读者</span></div>
+            </article>
+            <article class="research-module-card">
+              <span class="module-index">02</span>
+              <small>Source</small>
+              <h3>资料谱系</h3>
+              <p>把书内观点、网页标杆、论文标准和 Human Infra 转译分层，避免把预测当作事实。</p>
+              <div class="module-meta"><span>溯源</span><span>边界</span></div>
+            </article>
+            <article class="research-module-card">
+              <span class="module-index">03</span>
+              <small>Mechanism</small>
+              <h3>机制地图</h3>
+              <p>展示计算、AI、生物医学、接口、资源和治理如何汇入主体持续性。</p>
+              <div class="module-meta"><span>D3</span><span>系统图</span></div>
+            </article>
+            <article class="research-module-card">
+              <span class="module-index">04</span>
+              <small>Causal Contract</small>
+              <h3>因果契约</h3>
+              <p>把技术 T 映射到变量 X、系统状态、风险函数、生存曲线和未来选择权。</p>
+              <div class="module-meta"><span>DAG</span><span>SCM</span></div>
+            </article>
+            <article class="research-module-card">
+              <span class="module-index">05</span>
+              <small>Survival</small>
+              <h3>生命路径分布</h3>
+              <p>用寿命、健康寿命、有效时间、主观时间和相对时间表示主体持续性的不同尺度。</p>
+              <div class="module-meta"><span>Survival</span><span>RMST</span></div>
+            </article>
+            <article class="research-module-card">
+              <span class="module-index">06</span>
+              <small>Threshold</small>
+              <h3>LEV 临界面</h3>
+              <p>把长寿逃逸速度做成阈值图：当年度生命收益越过消耗速度时，有效边界进入开放区。</p>
+              <div class="module-meta"><span>临界</span><span>阈值</span></div>
+            </article>
+            <article class="research-module-card">
+              <span class="module-index">07</span>
+              <small>Resource</small>
+              <h3>通用资源预算</h3>
+              <p>表达寿命延长和工具增强带来的二阶效应：注意力、时间、精力和行动窗口获得增量。</p>
+              <div class="module-meta"><span>预算</span><span>二阶效应</span></div>
+            </article>
+            <article class="research-module-card">
+              <span class="module-index">08</span>
+              <small>Communication</small>
+              <h3>传播资产</h3>
+              <p>把复杂模型压缩成推文、卡片、摘要、路线图和社区入口，让外部读者能快速进入项目。</p>
+              <div class="module-meta"><span>推文</span><span>README</span></div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="learning" class="section">
+      <div class="section-inner">
+        <div class="section-heading">
+          <h2>学习入口层</h2>
+          <p>
+            这份资料的核心问题是：人工智能、生物技术、纳米技术和脑机接口正在汇合时，
+            人类怎样理解、准备和治理一个更接近奇点的阶段。Human Infra 的切入点是把这条宏大叙事转成主体持续性的工程问题。
+          </p>
+        </div>
+        <div class="dense-grid">
+          <article class="info-card">
+            <h3>这本书要解决的问题</h3>
+            <p>用指数增长、信息化转化和技术融合解释未来变化，提醒读者用系统视角观察 AI、医学、能源、制造、工作和身份的共同演化。</p>
+            <div class="tag-row">
+              <span>指数增长</span><span>信息技术</span><span>技术融合</span>
+            </div>
+          </article>
+          <article class="info-card">
+            <h3>学习后应获得的能力</h3>
+            <ul>
+              <li>理解加速回报定律的逻辑。</li>
+              <li>看懂 AI、生物技术、脑机接口和纳米技术的相互强化。</li>
+              <li>区分趋势、推断和远期设想。</li>
+              <li>把未来判断转成个人、组织和社会决策框架。</li>
+            </ul>
+          </article>
+          <article class="info-card">
+            <h3>Human Infra 的接入方式</h3>
+            <p>把书中的“技术文明加速”映射为主体持续性的变量：寿命、健康寿命、有效时间、认知能力、资源预算、工具放大、恢复能力和治理压力。</p>
+            <div class="tag-row">
+              <span>主体持续性</span><span>生命路径</span><span>未来选择权</span>
+            </div>
+          </article>
+        </div>
+
+        <div class="wide-grid" style="margin-top: 1rem;">
+          <article class="quote-panel">
+            这本书真正有价值的地方，是提供一套观察未来的方法：把技术看作信息处理能力的扩展，把文明进步看作信息技术不断重塑物质、生命和智能的过程。
+          </article>
+          <article class="info-card">
+            <h3>使用边界</h3>
+            <p>本页按学习资料整理书内观点，不做作者预测的事实核验；不提供短期投资判断、医学治疗建议、法律政策结论，也不把远期技术设想包装成已成熟方案。</p>
+            <ul>
+              <li>书内事实、趋势推断、远期设想需要分层。</li>
+              <li>技术乐观和风险治理需要同时出现。</li>
+              <li>模型输出用于研究展示，不输出个人死亡日期。</li>
+            </ul>
+          </article>
+        </div>
+
+        <table class="evidence-table" style="margin-top: 1rem;" aria-label="前置知识">
+          <thead>
+            <tr>
+              <th>前置知识</th>
+              <th>为什么重要</th>
+              <th>放入 Human Infra 后的作用</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>指数增长与线性直觉</td>
+              <td>读者常用线性直觉低估技术长期变化。</td>
+              <td>解释为什么小幅年度改善可能累积成主体持续性边界变化。</td>
+            </tr>
+            <tr>
+              <td>奇点隐喻</td>
+              <td>用于描述现有认知难以完全理解的巨大转折。</td>
+              <td>作为传播入口，连接 AI、医学、接口、治理和寿命边界。</td>
+            </tr>
+            <tr>
+              <td>符号主义与联结主义</td>
+              <td>解释 AI 从规则系统转向大规模学习系统的路径。</td>
+              <td>帮助区分规则化任务、模式识别任务和人机协作任务。</td>
+            </tr>
+            <tr>
+              <td>新皮质、情境记忆、常识理解</td>
+              <td>这些是作者判断 AI 接近人类能力时反复涉及的结构。</td>
+              <td>对应认知能力、学习速度、判断质量和主体行动策略。</td>
+            </tr>
+            <tr>
+              <td>基因组、蛋白质、药物发现</td>
+              <td>第 6 章把医学转向数据、算法和模拟。</td>
+              <td>对应观测能力、早筛、研发速度、恢复能力和健康寿命。</td>
+            </tr>
+            <tr>
+              <td>对齐、双重用途、制度滞后</td>
+              <td>强技术会同时放大繁荣能力和破坏能力。</td>
+              <td>对应治理压力、风险负荷和模型扣减项。</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="book-map" class="section band-dark">
+      <div class="section-inner">
+        <div class="section-heading">
+          <h2>全书大图层</h2>
+          <p>
+            资料主线可以压缩为一条链：信息技术指数进步，AI 能力提升，AI 反过来加速科学与工程，
+            生物医学和物质制造被信息化，人类通过接口和工具扩展自身，最后进入奇点临界叙事。
+          </p>
+        </div>
+        <div class="translation-matrix" aria-label="全书章节结构">
+          <article class="matrix-card">
+            <b>引言</b>
+            <span>奇点作为隐喻；2045 年时间表；加速回报定律作为解释框架。</span>
+          </article>
+          <article class="matrix-card">
+            <b>六个时代</b>
+            <span>物理化学、生命、大脑、人类技术、人机融合、宇宙智能扩张。</span>
+          </article>
+          <article class="matrix-card">
+            <b>重塑智能</b>
+            <span>符号主义、联结主义、深度学习、新皮质类比、云端扩展。</span>
+          </article>
+          <article class="matrix-card">
+            <b>身份问题</b>
+            <span>意识、自由意志、数字复制、逝者数据化化身、连续性问题。</span>
+          </article>
+          <article class="matrix-card">
+            <b>生活与风险</b>
+            <span>生活改善、工作转型、AI 医学、纳米技术、核/生物/纳米/AI 风险。</span>
+          </article>
+        </div>
+
+        <div class="timeline" style="margin-top: 1rem;" aria-label="六个时代">
+          <div class="timeline-step">
+            <b>时代 1</b>
+            <div><strong>物理与化学定律</strong><span>宇宙中的信息结构从基本物理规律开始形成。</span></div>
+          </div>
+          <div class="timeline-step">
+            <b>时代 2</b>
+            <div><strong>生命与 DNA</strong><span>生物把信息存储、复制和变异嵌入物质系统。</span></div>
+          </div>
+          <div class="timeline-step">
+            <b>时代 3</b>
+            <div><strong>大脑</strong><span>神经系统把环境、身体和行动转成学习与预测能力。</span></div>
+          </div>
+          <div class="timeline-step">
+            <b>时代 4</b>
+            <div><strong>人类技术</strong><span>语言、文字、计算机和互联网扩展信息存储与处理。</span></div>
+          </div>
+          <div class="timeline-step">
+            <b>时代 5</b>
+            <div><strong>生物智能与数字智能融合</strong><span>AI、脑机接口和云端计算进入主体运行系统。</span></div>
+          </div>
+          <div class="timeline-step">
+            <b>时代 6</b>
+            <div><strong>宇宙智能扩张</strong><span>远期设想中，智能把更多物质转化为计算和组织能力。</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="knowledge" class="section">
+      <div class="section-inner">
+        <div class="section-heading">
+          <h2>知识骨架层</h2>
+          <p>
+            要让资料进入 Human Infra，需要把书中的概念拆成可引用的词表、可建模的变量、可审查的边界。
+            下面这组卡片承接你的学习笔记中的核心概念、原理和判断标准。
+          </p>
+        </div>
+        <div class="concept-grid" aria-label="核心概念">
+          <article class="concept-card">
+            <small>Core</small>
+            <h3>奇点</h3>
+            <p>智能与技术能力巨大跃迁的阶段。学习时重点关注它作为文明转折隐喻的组织作用。</p>
+          </article>
+          <article class="concept-card">
+            <small>Law</small>
+            <h3>加速回报定律</h3>
+            <p>信息技术进步降低下一轮创新成本，形成更快反馈周期。</p>
+          </article>
+          <article class="concept-card">
+            <small>AI</small>
+            <h3>图灵测试</h3>
+            <p>行为表现测试，可作为 AI 能力节点，不能直接证明主观体验。</p>
+          </article>
+          <article class="concept-card">
+            <small>AI</small>
+            <h3>符号主义 / 联结主义</h3>
+            <p>规则系统适合边界明确任务，神经网络擅长从数据中学习复杂模式。</p>
+          </article>
+          <article class="concept-card">
+            <small>Brain</small>
+            <h3>新皮质</h3>
+            <p>资料用它解释灵活学习、抽象和层级模式识别，也连接脑机接口叙事。</p>
+          </article>
+          <article class="concept-card">
+            <small>Interface</small>
+            <h3>脑机接口</h3>
+            <p>把大脑和数字系统连接，远期设想中成为云端新皮质入口。</p>
+          </article>
+          <article class="concept-card">
+            <small>Longevity</small>
+            <h3>长寿逃逸速度</h3>
+            <p>医学进步速度超过衰老推进速度时，生命路径边界出现临界变化。</p>
+          </article>
+          <article class="concept-card">
+            <small>Future Tech</small>
+            <h3>纳米机器人</h3>
+            <p>远期身体诊断、修复和增强设想，高度依赖工程、制造、安全和监管突破。</p>
+          </article>
+        </div>
+
+        <div class="dense-grid" style="margin-top: 1rem;">
+          <article class="info-card">
+            <h3>六条原理</h3>
+            <ul>
+              <li>指数进步原理：信息技术改善会压低创新成本。</li>
+              <li>信息化转化原理：领域进入数据和模拟后获得 AI 加速入口。</li>
+              <li>融合放大原理：AI、生物、纳米、接口相互加速。</li>
+              <li>智能扩展原理：主体能力通过非生物计算扩展。</li>
+              <li>风险同源原理：繁荣能力和破坏能力来自同一技术强度。</li>
+              <li>社会滞后原理：制度、教育和伦理可能跟不上技术速度。</li>
+            </ul>
+          </article>
+          <article class="info-card">
+            <h3>趋势判断标准</h3>
+            <ul>
+              <li>对象能否被数字化、数据化、模拟化。</li>
+              <li>是否受算力和算法成本下降影响。</li>
+              <li>AI 是否能参与研发、诊断、生成或优化。</li>
+              <li>是否和其他指数技术形成协同。</li>
+              <li>是否显著降低成本、扩大可及性。</li>
+              <li>是否改变智能、寿命、生产和风险结构。</li>
+            </ul>
+          </article>
+          <article class="info-card">
+            <h3>Human Infra 变量化</h3>
+            <ul>
+              <li>技术因素：AI、检测、自动化、药物发现、接口。</li>
+              <li>主体状态：身体、认知、情绪、资源、环境、疾病。</li>
+              <li>时间对象：寿命、有效时间、主观时间、相对时间、未来选择权。</li>
+              <li>风险约束：治理压力、文明级风险、机会成本、社会滞后。</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="translation" class="section band-dark">
+      <div class="section-inner">
+        <div class="section-heading">
+          <h2>理论转译层</h2>
+          <p>
+            学习资料提供技术文明的大图，Human Infra 提供主体持续性的度量边界。
+            这页把两者合成一条可传播、可建模、可迭代的研究链。
+          </p>
+        </div>
+        <div class="translation-matrix" aria-label="奇点理论到 Human Infra 的映射">
+          <article class="matrix-card">
+            <b>加速回报</b>
+            <span>转译为状态转移函数改善速度：工具越强，下一轮研发、诊断、自动化和学习成本越低。</span>
+          </article>
+          <article class="matrix-card">
+            <b>信息化转化</b>
+            <span>转译为可观测性和可模拟性：身体、环境、任务和风险需要进入数据结构。</span>
+          </article>
+          <article class="matrix-card">
+            <b>AI + 生物技术</b>
+            <span>转译为干预集合：筛查、药物发现、个体反馈、恢复系统和临床决策支持。</span>
+          </article>
+          <article class="matrix-card">
+            <b>人机融合</b>
+            <span>转译为主体运行系统扩展：认知、记忆、工具、协作和反馈被外部化。</span>
+          </article>
+          <article class="matrix-card">
+            <b>技术风险</b>
+            <span>转译为治理约束：核、生物、纳米和 AI 风险会消耗系统收益并改变边界条件。</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="mechanism" class="section">
+      <div class="section-inner">
+        <div class="section-heading">
+          <h2>关系机制层</h2>
+          <p>
+            你的资料里真正关键的部分是“概念如何互相推动”。这里把隐藏因果链拆成两条：
+            技术加速链和主体持续性链，后者是 Human Infra 的建模入口。
+          </p>
+        </div>
+        <div class="chain-board" aria-label="技术奇点机制链">
+          <article class="chain-node">
+            <strong>计算成本下降</strong>
+            <span>更多模型、模拟和搜索可以被运行。</span>
+          </article>
+          <article class="chain-node">
+            <strong>AI 能力提升</strong>
+            <span>语言、代码、诊断、蛋白质和材料任务获得突破。</span>
+          </article>
+          <article class="chain-node">
+            <strong>科学工程加速</strong>
+            <span>AI 参与药物、材料、制造和自动化设计。</span>
+          </article>
+          <article class="chain-node">
+            <strong>现实信息化</strong>
+            <span>医学、能源、制造、农业和工作进入计算系统。</span>
+          </article>
+          <article class="chain-node">
+            <strong>主体能力扩展</strong>
+            <span>寿命、认知、工具、资源和恢复能力被放大。</span>
+          </article>
+          <article class="chain-node">
+            <strong>LEV 临界</strong>
+            <span>有效持续时间边界可能从有限转向开放。</span>
+          </article>
+        </div>
+
+        <div class="wide-grid">
+          <article class="chain-card">
+            <h3>Human Infra 建模链</h3>
+            <p>书中谈“技术改变未来”，Human Infra 把它落到主体生命路径概率分布。</p>
+            <ul>
+              <li>技术 T 影响中间变量 X。</li>
+              <li>变量 X 改变主体状态 S。</li>
+              <li>状态 S 改变风险函数 λ(t)。</li>
+              <li>风险函数改变生存曲线 S(t)。</li>
+              <li>最终影响寿命、健康寿命、有效时间、主观时间和未来选择权。</li>
+            </ul>
+          </article>
+          <article class="chain-card">
+            <h3>二阶后果</h3>
+            <p>当寿命边界、工具放大和恢复系统改变后，注意力、时间、精力和认知预算会从固定消耗项变成可增量管理对象。</p>
+            <ul>
+              <li>单次任务成本相对下降。</li>
+              <li>有效行动密度上升。</li>
+              <li>长期学习和纠错窗口变大。</li>
+              <li>未来选择权被延展。</li>
+            </ul>
+          </article>
+        </div>
+
+        <table class="evidence-table" style="margin-top: 1rem;" aria-label="证据与边界">
+          <thead>
+            <tr>
+              <th>资料观点</th>
+              <th>使用的支撑</th>
+              <th>Human Infra 转译</th>
+              <th>边界与反证</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>信息技术呈指数进步</td>
+              <td>计算性价比长期改善，摩尔定律只是表现之一。</td>
+              <td>把“进步速度”作为状态转移函数改善项。</td>
+              <td>芯片、能源、供应链和物理瓶颈可能放缓曲线。</td>
+            </tr>
+            <tr>
+              <td>AI 接近更多人类任务</td>
+              <td>游戏、语言、代码、考试、医学影像、蛋白质结构等任务突破。</td>
+              <td>把 AI 作为认知、观测、诊断、研发和行动策略放大器。</td>
+              <td>幻觉、常识、长期规划、真实世界行动和安全对齐仍是约束。</td>
+            </tr>
+            <tr>
+              <td>医学逐渐成为信息技术</td>
+              <td>基因测序成本下降，AI 药物发现和生物模拟增强。</td>
+              <td>把检测、早筛、药物研发和恢复系统放入干预集合。</td>
+              <td>临床验证、长期安全、监管、可及性和个体差异决定落地速度。</td>
+            </tr>
+            <tr>
+              <td>长寿逃逸速度</td>
+              <td>作者用医学进步速度超过衰老速度描述临界。</td>
+              <td>转成有效持续时间边界和 LEV 比率。</td>
+              <td>当前属于模型假设和远期判断，需要证据层级、校准和敏感性分析。</td>
+            </tr>
+            <tr>
+              <td>技术风险同源</td>
+              <td>核、生物、纳米、AI 四类风险来自增强后的技术能力。</td>
+              <td>把治理压力和文明级风险作为模型扣减项。</td>
+              <td>治理失败会吞掉技术收益，并可能改变主体持续性边界。</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="applications" class="section">
+      <div class="section-inner">
+        <div class="section-heading">
+          <h2>应用迁移层</h2>
+          <p>
+            这部分把学习资料转成可复用的判断工具：看一个行业、一个技术、一个个人策略或一个治理议题，
+            是否正在被指数技术和 Human Infra 变量共同重塑。
+          </p>
+        </div>
+        <div class="exercise-grid">
+          <article class="info-card">
+            <h3>行业判断步骤</h3>
+            <ul>
+              <li>核心对象能否被数字化。</li>
+              <li>是否已经产生大规模数据。</li>
+              <li>AI 是否能参与识别、模拟、生成或优化。</li>
+              <li>成本曲线是否下降，性能曲线是否上升。</li>
+              <li>监管、伦理、物理基础设施是否形成瓶颈。</li>
+              <li>如果趋势成立，个人、企业和社会应提前准备什么。</li>
+            </ul>
+          </article>
+          <article class="info-card">
+            <h3>个人策略迁移</h3>
+            <ul>
+              <li>识别工作中可自动化的部分。</li>
+              <li>升级到问题定义、判断、创造、关系和伦理能力。</li>
+              <li>把 AI 协作纳入日常学习和任务完成系统。</li>
+              <li>用数据化健康管理支撑长期行动窗口。</li>
+              <li>区分当前可用干预、临床研究和远期预测。</li>
+            </ul>
+          </article>
+          <article class="info-card">
+            <h3>风险治理迁移</h3>
+            <ul>
+              <li>记录证据、假设、反证条件和时间表。</li>
+              <li>同时看繁荣能力和双重用途风险。</li>
+              <li>建立监测、对齐、审计、申诉和退出机制。</li>
+              <li>把技术风险放入主体持续性的约束条件。</li>
+            </ul>
+          </article>
+          <article class="info-card">
+            <h3>常见误读</h3>
+            <ul>
+              <li>把书内预测当作已经发生的事实。</li>
+              <li>把图灵测试当作意识证明。</li>
+              <li>把指数增长理解成无限增长。</li>
+              <li>只看自动化替代，忽略技能升级和制度适应。</li>
+              <li>把长寿逃逸速度读成已经实现永生。</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="research" class="section band-dark">
+      <div class="section-inner">
+        <div class="section-heading">
+          <h2>科研标准层</h2>
+          <p>
+            这一层把论文、科研工具和可视化规范直接接入网页：模型输出不只服务传播，还要能被研究者追问来源、假设、模型族、验证指标和实现工具。
+          </p>
+        </div>
+
+        <div class="translation-matrix" aria-label="科研方法工具链">
+          <article class="matrix-card">
+            <b>读论文</b>
+            <span>采用 Keshav 三遍阅读法：先判断相关性，再抽取方法和证据，最后复现推理和限制条件。</span>
+          </article>
+          <article class="matrix-card">
+            <b>报告标准</b>
+            <span>TRIPOD / TRIPOD+AI 用于预测模型报告，PROBAST 用于偏差风险审查。</span>
+          </article>
+          <article class="matrix-card">
+            <b>因果规格</b>
+            <span>用 target trial emulation 和 DAG 把技术影响改写为可识别、可审查的因果问题。</span>
+          </article>
+          <article class="matrix-card">
+            <b>生命路径模型</b>
+            <span>优先考虑 survival、RMST、competing risks、multi-state、joint models，而不只画均值位移。</span>
+          </article>
+          <article class="matrix-card">
+            <b>可视化语法</b>
+            <span>D3 负责自定义机制图；Vega-Lite、Observable Plot、Altair 负责标准统计图和可复现图表规格。</span>
+          </article>
+        </div>
+
+        <div class="wide-grid" style="margin-top: 1rem;">
+          <article class="chain-card">
+            <h3>模型升级路线</h3>
+            <ul>
+              <li>概念模型：解释技术如何影响主体持续性。</li>
+              <li>证据模型：每个变量绑定来源、证据层级、适用人群和反证条件。</li>
+              <li>统计模型：用生存分析、多状态模型、竞争风险和因果模型估计路径变化。</li>
+              <li>决策模型：输出有效时间、健康状态积分、未来选择权、恢复能力和治理扣减。</li>
+            </ul>
+          </article>
+          <article class="chain-card">
+            <h3>前端实现原则</h3>
+            <ul>
+              <li>传播主图使用 D3，突出机制链、状态流和临界阈值。</li>
+              <li>科研审查图使用声明式规格，方便复现和替换数据。</li>
+              <li>每张图必须说明问题、数据对象、坐标轴、单位、模型假设和禁止解释。</li>
+              <li>主图保持清晰，假设表、参数范围、校准和敏感性进入审查层。</li>
+            </ul>
+          </article>
+        </div>
+
+        <table class="evidence-table" style="margin-top: 1rem;" aria-label="科研工具和页面实现矩阵">
+          <thead>
+            <tr>
+              <th>研究任务</th>
+              <th>推荐论文 / 标准</th>
+              <th>推荐工具</th>
+              <th>HTML 中的落点</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>预测模型报告</td>
+              <td>TRIPOD、TRIPOD+AI、PROBAST</td>
+              <td>模型契约表、审查清单、Quarto / Markdown</td>
+              <td>模型契约、资料组织层、研究工具包链接</td>
+            </tr>
+            <tr>
+              <td>因果结构</td>
+              <td>Target trial emulation、DAG / SCM</td>
+              <td>DAGitty、DoWhy、EconML</td>
+              <td>关系机制层；后续增加因果 DAG 图</td>
+            </tr>
+            <tr>
+              <td>生命路径估计</td>
+              <td>RMST、competing risks、multi-state models</td>
+              <td>lifelines、scikit-survival、R survival / mstate</td>
+              <td>生命路径分布图；后续增加 RMST 和状态占用图</td>
+            </tr>
+            <tr>
+              <td>不确定性和验证</td>
+              <td>Calibration、Brier score、sensitivity analysis</td>
+              <td>scikit-survival、Stan、PyMC</td>
+              <td>后续增加校准图、敏感性条形图和参数表</td>
+            </tr>
+            <tr>
+              <td>可视化实现</td>
+              <td>Grammar of Graphics、D3、Vega-Lite、Munzner nested model</td>
+              <td>D3、Vega-Lite、Observable Plot、Altair</td>
+              <td>当前 D3 主图；后续研究图使用可复现 chart spec</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="dense-grid" style="margin-top: 1rem;">
+          <article class="info-card">
+            <h3>论文和工具来源</h3>
+            <p>已沉淀到 <a href="docs/reference/research-model-visualization-toolkit.md">科研模型与可视化工具包</a>，包括 TRIPOD、PROBAST、D3、Vega-Lite、lifelines、scikit-survival、DoWhy、DAGitty、Stan、PyMC。</p>
+          </article>
+          <article class="info-card">
+            <h3>下一步 HTML 图表</h3>
+            <p>当前页面已有机制汇聚图、生命路径分布、LEV 临界和资源预算。下一轮应新增因果 DAG、状态转移图、RMST 差异、校准图和敏感性图。</p>
+          </article>
+          <article class="info-card">
+            <h3>科研审查口径</h3>
+            <p>任何“技术影响寿命”的表达，都要先落到 population、intervention、comparator、outcome、horizon、model family 和 validation method。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="model" class="section">
+      <div class="section-inner">
+        <div class="section-heading">
+          <h2>预测模型层</h2>
+          <p>
+            这里的模型服务于研究展示：把技术因素放进生命路径概率分布，观察它们如何改变有效持续时间、
+            LEV 临界、资源预算和治理压力。
+          </p>
+        </div>
+        <div class="model-grid">
+          <aside class="control-panel" aria-label="模型参数">
+            <div class="scenario-row" aria-label="场景预设">
+              <button class="scenario-button is-active" type="button" data-scenario="baseline">现状基线</button>
+              <button class="scenario-button" type="button" data-scenario="aiMedicine">AI 医学</button>
+              <button class="scenario-button" type="button" data-scenario="escape">长寿逃逸</button>
+              <button class="scenario-button" type="button" data-scenario="fusion">人机融合</button>
+            </div>
+
+            <p class="field">
+              <label for="computability">现实可计算化</label>
+              <input id="computability" name="computability" type="range" min="0" max="100" value="56">
+              <output id="computability_out" for="computability">56</output>
+            </p>
+            <p class="field">
+              <label for="aiAcceleration">AI 加速能力</label>
+              <input id="aiAcceleration" name="aiAcceleration" type="range" min="0" max="100" value="58">
+              <output id="aiAcceleration_out" for="aiAcceleration">58</output>
+            </p>
+            <p class="field">
+              <label for="bioMedicine">生物医学信息化</label>
+              <input id="bioMedicine" name="bioMedicine" type="range" min="0" max="100" value="45">
+              <output id="bioMedicine_out" for="bioMedicine">45</output>
+            </p>
+            <p class="field">
+              <label for="interfaceDepth">人机接口深度</label>
+              <input id="interfaceDepth" name="interfaceDepth" type="range" min="0" max="100" value="32">
+              <output id="interfaceDepth_out" for="interfaceDepth">32</output>
+            </p>
+            <p class="field">
+              <label for="resourceBase">资源底座</label>
+              <input id="resourceBase" name="resourceBase" type="range" min="0" max="100" value="52">
+              <output id="resourceBase_out" for="resourceBase">52</output>
+            </p>
+            <p class="field">
+              <label for="governanceLoad">治理压力</label>
+              <input id="governanceLoad" name="governanceLoad" type="range" min="0" max="100" value="44">
+              <output id="governanceLoad_out" for="governanceLoad">44</output>
+            </p>
+            <p class="field">
+              <label for="riskLoad">文明级风险负荷</label>
+              <input id="riskLoad" name="riskLoad" type="range" min="0" max="100" value="42">
+              <output id="riskLoad_out" for="riskLoad">42</output>
+            </p>
+            <p class="select-field">
+              <label for="timeLens">时间对象</label>
+              <select id="timeLens" name="timeLens">
+                <option value="effective">有效时间</option>
+                <option value="lifespan">寿命</option>
+                <option value="subjective">主观时间</option>
+                <option value="relative">相对时间</option>
+                <option value="option">未来选择权</option>
+              </select>
+            </p>
+          </aside>
+
+          <div class="model-stack">
+            <section class="model-contract" aria-label="模型契约">
+              <h3>模型契约</h3>
+              <div class="contract-grid">
+                <p class="contract-cell"><span>目标函数</span><strong data-model-objective>--</strong></p>
+                <p class="contract-cell"><span>生命路径位移</span><strong data-model-shift>--</strong></p>
+                <p class="contract-cell"><span>有效边界</span><strong data-model-boundary>--</strong></p>
+                <p class="contract-cell"><span>临界状态</span><strong data-model-state>--</strong></p>
+              </div>
+              <pre class="formula"><code data-formula>--</code></pre>
+            </section>
+
+            <section id="visuals" class="chart-panel" aria-label="生命路径概率分布">
+              <header>
+                <div>
+                  <h3>生命路径概率分布</h3>
+                  <p>基线与当前场景对比，显示分布位移、生存曲线和有效持续时间边界。</p>
+                </div>
+              </header>
+              <svg id="life-chart" viewBox="0 0 940 500" role="img" aria-labelledby="life-chart-title life-chart-desc">
+                <title id="life-chart-title">生命路径概率分布</title>
+                <desc id="life-chart-desc">显示基线与当前场景的生命路径概率分布。</desc>
+              </svg>
+            </section>
+
+            <div class="dual-chart">
+              <section class="chart-panel" aria-label="LEV 临界图">
+                <header>
+                  <div>
+                    <h3>LEV 临界</h3>
+                    <p>当进步速度越过 1.00x，模型显示开放边界。</p>
+                  </div>
+                </header>
+                <svg id="escape-chart" viewBox="0 0 480 360" role="img" aria-labelledby="escape-chart-title escape-chart-desc">
+                  <title id="escape-chart-title">LEV 临界图</title>
+                  <desc id="escape-chart-desc">显示长寿逃逸速度比率和临界状态。</desc>
+                </svg>
+              </section>
+              <section class="chart-panel" aria-label="通用资源预算图">
+                <header>
+                  <div>
+                    <h3>通用资源预算</h3>
+                    <p>把寿命与工具放大带来的二阶收益拆成时间、注意力、认知、恢复和选择权。</p>
+                  </div>
+                </header>
+                <svg id="budget-chart" viewBox="0 0 560 360" role="img" aria-labelledby="budget-chart-title budget-chart-desc">
+                  <title id="budget-chart-title">通用资源预算图</title>
+                  <desc id="budget-chart-desc">显示不同资源预算的增量。</desc>
+                </svg>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sources" class="section">
+      <div class="section-inner">
+        <div class="section-heading">
+          <h2>资料组织层</h2>
+          <p>
+            这份专项页把学习材料整理成三类可复用资产：传播主张、模型变量和可视化框架。
+            书内时间表和远期设想按学习资料处理，公开研究结论仍需回到来源与证据治理。
+          </p>
+        </div>
+        <div class="source-grid" aria-label="资料资产">
+          <article class="source-panel">
+            <h3>传播主张</h3>
+            <p>未来竞争的核心，是谁能更快把现实世界转化为可计算、可模拟、可优化的信息系统。</p>
+          </article>
+          <article class="source-panel">
+            <h3>模型变量</h3>
+            <p>现实可计算化、AI 加速、生物医学信息化、人机接口、资源底座、治理压力和风险负荷。</p>
+          </article>
+          <article class="source-panel">
+            <h3>可视化框架</h3>
+            <p>机制汇聚图、生命路径分布图、LEV 临界图和通用资源预算图共同表达项目价值。</p>
+          </article>
+          <article class="source-panel">
+            <h3>复习卡片</h3>
+            <p>加速回报定律、六个时代、图灵测试、新皮质、长寿逃逸速度、四类巨大危机都可转成问答卡片。</p>
+          </article>
+          <article class="source-panel">
+            <h3>反证条件</h3>
+            <p>AI 无法获得稳健常识、纳米机器人难以安全入体、能源和芯片成本停止下降、制度无法承载风险，都会削弱强预测。</p>
+          </article>
+          <article class="source-panel">
+            <h3>下一轮治理</h3>
+            <p>后续应把书内观点拆成来源、作者预测、Human Infra 转译、模型变量、证据等级和传播素材六张表。</p>
+          </article>
+          <article class="source-panel">
+            <h3>科研工具包</h3>
+            <p><a href="docs/reference/research-model-visualization-toolkit.md">Research Model and Visualization Toolkit</a> 记录论文脊梁、建模工具、可视化标准和实现路线。</p>
+          </article>
+          <article class="source-panel">
+            <h3>HTML 实现路线</h3>
+            <p>当前专项页先承载传播和学习；后续研究页应把 DAG、RMST、校准和敏感性图作为可复现图表规格接入。</p>
+          </article>
+          <article class="source-panel">
+            <h3>审查入口</h3>
+            <p>模型和图表修改统一参考 review checklist，明确模型族、验证指标、图表任务、编码和禁止用途。</p>
+          </article>
+          <article class="source-panel">
+            <h3>网页标杆</h3>
+            <p>布局参考 Cloudflare Workers Templates 的模板市场、Distill 的科研解释、Observable 的可复现图表和 Our World in Data 的证据组织。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <span>Human Infra 专项展示页：学习资料转译、预测模型、D3 可视化。</span>
+      <span>研究展示用途；不提供个体医疗、投资或政策建议。</span>
+    </div>
+  </footer>
+
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script>
+  (() => {
+    const fields = [
+      "computability",
+      "aiAcceleration",
+      "bioMedicine",
+      "interfaceDepth",
+      "resourceBase",
+      "governanceLoad",
+      "riskLoad"
+    ];
+
+    const labels = {
+      effective: "有效时间",
+      lifespan: "寿命",
+      subjective: "主观时间",
+      relative: "相对时间",
+      option: "未来选择权"
+    };
+
+    const scenarios = {
+      baseline: {
+        computability: 56,
+        aiAcceleration: 58,
+        bioMedicine: 45,
+        interfaceDepth: 32,
+        resourceBase: 52,
+        governanceLoad: 44,
+        riskLoad: 42,
+        timeLens: "effective"
+      },
+      aiMedicine: {
+        computability: 72,
+        aiAcceleration: 80,
+        bioMedicine: 76,
+        interfaceDepth: 38,
+        resourceBase: 62,
+        governanceLoad: 42,
+        riskLoad: 38,
+        timeLens: "lifespan"
+      },
+      escape: {
+        computability: 86,
+        aiAcceleration: 88,
+        bioMedicine: 86,
+        interfaceDepth: 64,
+        resourceBase: 78,
+        governanceLoad: 25,
+        riskLoad: 24,
+        timeLens: "effective"
+      },
+      fusion: {
+        computability: 82,
+        aiAcceleration: 90,
+        bioMedicine: 70,
+        interfaceDepth: 86,
+        resourceBase: 72,
+        governanceLoad: 52,
+        riskLoad: 58,
+        timeLens: "subjective"
+      }
+    };
+
+    const palette = {
+      ink: "#111214",
+      muted: "#5c6470",
+      line: "#d8dde3",
+      baseline: "#7d8794",
+      scenario: "#087f8c",
+      teal: "#087f8c",
+      green: "#287d3c",
+      survival: "#287d3c",
+      amber: "#c47a18",
+      rose: "#b23a5b",
+      blue: "#2c67d8",
+      darkText: "#f4f7fb",
+      darkMuted: "#aeb8c6"
+    };
+
+    const ageMin = 35;
+    const ageMax = 125;
+    const baselineMean = 80;
+    const baselineSd = 12;
+
+    function clamp(min, value, max) {
+      return Math.max(min, Math.min(value, max));
+    }
+
+    function valueOf(id) {
+      return Number(document.getElementById(id).value);
+    }
+
+    function signed(value, digits = 1) {
+      return `${value >= 0 ? "+" : ""}${value.toFixed(digits)}`;
+    }
+
+    function normalDensity(age, mean, sd) {
+      const z = (age - mean) / sd;
+      return Math.exp(-0.5 * z * z) / (sd * Math.sqrt(2 * Math.PI));
+    }
+
+    function distribution(mean, sd) {
+      const rows = [];
+      for (let age = ageMin; age <= ageMax; age += 1) {
+        rows.push({ age, density: normalDensity(age, mean, sd) });
+      }
+      const total = rows.reduce((sum, row) => sum + row.density, 0);
+      let remaining = total;
+      return rows.map((row) => {
+        const survival = remaining / total;
+        remaining -= row.density;
+        return { ...row, survival };
+      });
+    }
+
+    function readInputs() {
+      const input = {};
+      for (const id of fields) input[id] = valueOf(id) / 100;
+      input.timeLens = document.getElementById("timeLens").value;
+      return input;
+    }
+
+    function buildModel(input) {
+      const positive =
+        input.computability * 0.22 +
+        input.aiAcceleration * 0.23 +
+        input.bioMedicine * 0.2 +
+        input.interfaceDepth * 0.12 +
+        input.resourceBase * 0.23;
+      const synergy = Math.pow(
+        Math.max(0.001, input.computability) *
+          Math.max(0.001, input.aiAcceleration) *
+          Math.max(0.001, input.bioMedicine) *
+          Math.max(0.001, input.resourceBase),
+        0.25
+      );
+      const friction = input.governanceLoad * 0.48 + input.riskLoad * 0.52;
+      const transitionGain = clamp(-0.2, positive * 0.72 + synergy * 0.34 - friction * 0.46, 1.1);
+      const lensMultiplier = {
+        effective: 1,
+        lifespan: 0.92,
+        subjective: 0.76,
+        relative: 0.66,
+        option: 1.12
+      }[input.timeLens];
+      const distributionShift = clamp(-9, (transitionGain * 34 - friction * 7) * lensMultiplier, 40);
+      const interventionMean = baselineMean + distributionShift;
+      const interventionSd = clamp(8, baselineSd + friction * 8 - input.computability * 3, 22);
+      const levRatio = clamp(
+        0,
+        0.15 +
+          positive * 0.72 +
+          synergy * 0.48 +
+          input.bioMedicine * 0.2 +
+          input.interfaceDepth * 0.16 -
+          friction * 0.38,
+        1.55
+      );
+      const boundary = modelBoundary(interventionMean, levRatio);
+      const budgetGain = clamp(
+        -20,
+        distributionShift * 1.15 + input.aiAcceleration * 28 + input.resourceBase * 24 - friction * 22,
+        120
+      );
+      const governancePressure = Math.round(friction * 100);
+      return {
+        ...input,
+        positive,
+        synergy,
+        friction,
+        transitionGain,
+        distributionShift,
+        baselineMean,
+        interventionMean,
+        baselineSd,
+        interventionSd,
+        levRatio,
+        levState: levRatio >= 1 ? "开放边界" : "有限边界",
+        boundary,
+        budgetGain,
+        governancePressure
+      };
+    }
+
+    function modelBoundary(interventionMean, levRatio) {
+      if (levRatio >= 1) return { label: "∞", years: null };
+      const years = clamp(interventionMean, interventionMean + (18 * levRatio) / Math.max(0.07, 1 - levRatio), 180);
+      return { label: `${years.toFixed(1)} 年`, years };
+    }
+
+    function updateOutputs(model) {
+      for (const id of fields) {
+        document.getElementById(`${id}_out`).value = String(valueOf(id));
+      }
+      document.querySelector("[data-kpi-boundary]").textContent = model.boundary.label;
+      document.querySelector("[data-kpi-lev]").textContent = `${model.levRatio.toFixed(2)}x`;
+      document.querySelector("[data-kpi-budget]").textContent = `${signed(model.budgetGain, 0)}%`;
+      document.querySelector("[data-kpi-governance]").textContent = `${model.governancePressure}%`;
+      document.querySelector("[data-model-objective]").textContent = labels[model.timeLens];
+      document.querySelector("[data-model-shift]").textContent = `${signed(model.distributionShift)} 年`;
+      document.querySelector("[data-model-boundary]").textContent = model.boundary.label;
+      document.querySelector("[data-model-state]").textContent = model.levState;
+      document.querySelector("[data-formula]").textContent = [
+        "技术 T -> 中间变量 X -> 主体状态 S",
+        "S,A -> P(S_next | S,A)",
+        "S,A -> λ(t) -> 生存曲线 S(t)",
+        `${labels[model.timeLens]}_shift = ${signed(model.distributionShift)} 年`,
+        `LEV = ${model.levRatio.toFixed(2)}x；effective_boundary = ${model.boundary.label}`,
+        `resource_budget_delta = ${signed(model.budgetGain, 0)}%`
+      ].join("\n");
+    }
+
+    function drawConvergenceMap(model) {
+      const svg = d3.select("#convergence-map");
+      svg.selectAll("*").remove();
+      const width = 900;
+      const height = 620;
+      const center = { x: 470, y: 318 };
+      const nodes = [
+        { id: "计算成本下降", x: 112, y: 98, color: palette.blue, weight: model.computability },
+        { id: "AI 能力提升", x: 302, y: 92, color: palette.teal, weight: model.aiAcceleration },
+        { id: "科学工程加速", x: 520, y: 102, color: palette.amber, weight: model.synergy },
+        { id: "医学信息化", x: 716, y: 176, color: palette.green, weight: model.bioMedicine },
+        { id: "人机接口", x: 742, y: 360, color: palette.rose, weight: model.interfaceDepth },
+        { id: "资源底座", x: 576, y: 506, color: palette.blue, weight: model.resourceBase },
+        { id: "治理约束", x: 278, y: 514, color: palette.amber, weight: model.friction },
+        { id: "主体持续性", x: center.x, y: center.y, color: "#f4f7fb", weight: 1 }
+      ];
+      const links = [
+        ["计算成本下降", "AI 能力提升"],
+        ["AI 能力提升", "科学工程加速"],
+        ["科学工程加速", "医学信息化"],
+        ["医学信息化", "主体持续性"],
+        ["人机接口", "主体持续性"],
+        ["资源底座", "主体持续性"],
+        ["治理约束", "主体持续性"]
+      ];
+      const byId = new Map(nodes.map((node) => [node.id, node]));
+
+      svg
+        .append("rect")
+        .attr("width", width)
+        .attr("height", height)
+        .attr("fill", "#15191f");
+
+      svg
+        .append("text")
+        .attr("x", 42)
+        .attr("y", 54)
+        .attr("fill", palette.darkText)
+        .attr("font-size", 30)
+        .attr("font-weight", 900)
+        .text("指数技术如何进入 Human Infra");
+
+      const linkGroup = svg.append("g");
+      links.forEach(([source, target]) => {
+        const from = byId.get(source);
+        const to = byId.get(target);
+        const thickness = 2 + Math.max(from.weight, to.weight) * 5;
+        linkGroup
+          .append("path")
+          .attr("d", `M${from.x},${from.y} C${(from.x + to.x) / 2},${from.y} ${(from.x + to.x) / 2},${to.y} ${to.x},${to.y}`)
+          .attr("fill", "none")
+          .attr("stroke", source === "治理约束" ? palette.amber : "#8fb7c4")
+          .attr("stroke-width", thickness)
+          .attr("stroke-opacity", source === "治理约束" ? 0.55 : 0.38);
+      });
+
+      const node = svg
+        .append("g")
+        .selectAll("g")
+        .data(nodes)
+        .join("g")
+        .attr("transform", (d) => `translate(${d.x},${d.y})`);
+
+      node
+        .append("circle")
+        .attr("r", (d) => (d.id === "主体持续性" ? 70 : 34 + d.weight * 18))
+        .attr("fill", (d) => d.color)
+        .attr("fill-opacity", (d) => (d.id === "主体持续性" ? 1 : 0.9))
+        .attr("stroke", (d) => (d.id === "主体持续性" ? "#ffffff" : "rgba(255,255,255,0.35)"))
+        .attr("stroke-width", 2);
+
+      node
+        .append("text")
+        .attr("text-anchor", "middle")
+        .attr("dy", (d) => (d.id === "主体持续性" ? "-0.2em" : "0.25em"))
+        .attr("fill", (d) => (d.id === "主体持续性" ? "#15191f" : "#ffffff"))
+        .attr("font-size", (d) => (d.id === "主体持续性" ? 19 : 14))
+        .attr("font-weight", 900)
+        .text((d) => d.id);
+
+      node
+        .filter((d) => d.id === "主体持续性")
+        .append("text")
+        .attr("text-anchor", "middle")
+        .attr("dy", "1.6em")
+        .attr("fill", "#15191f")
+        .attr("font-size", 15)
+        .attr("font-weight", 900)
+        .text(`LEV ${model.levRatio.toFixed(2)}x`);
+    }
+
+    function drawLifeChart(model) {
+      const svg = d3.select("#life-chart");
+      svg.selectAll("*").remove();
+      const width = 940;
+      const height = 500;
+      const margin = { top: 40, right: 42, bottom: 56, left: 62 };
+      const plot = {
+        left: margin.left,
+        top: margin.top,
+        width: width - margin.left - margin.right,
+        height: 250
+      };
+      const survivalPlot = {
+        left: margin.left,
+        top: 350,
+        width: width - margin.left - margin.right,
+        height: 82
+      };
+      const base = distribution(model.baselineMean, model.baselineSd);
+      const current = distribution(model.interventionMean, model.interventionSd);
+      const maxDensity = Math.max(...base.map((row) => row.density), ...current.map((row) => row.density));
+      const x = d3.scaleLinear().domain([ageMin, ageMax]).range([plot.left, plot.left + plot.width]);
+      const y = d3.scaleLinear().domain([0, maxDensity * 1.1]).nice().range([plot.top + plot.height, plot.top]);
+      const survivalY = d3.scaleLinear().domain([0, 1]).range([survivalPlot.top + survivalPlot.height, survivalPlot.top]);
+
+      drawGrid(svg, x, y, plot, 5);
+      drawGrid(svg, x, survivalY, survivalPlot, 3);
+      drawAxis(svg, x, y, plot, "概率密度");
+      drawAxis(svg, x, survivalY, survivalPlot, "生存概率 S(t)");
+
+      const area = d3.area()
+        .curve(d3.curveMonotoneX)
+        .x((row) => x(row.age))
+        .y0(plot.top + plot.height)
+        .y1((row) => y(row.density));
+      const densityLine = d3.line()
+        .curve(d3.curveMonotoneX)
+        .x((row) => x(row.age))
+        .y((row) => y(row.density));
+      const survivalLine = d3.line()
+        .curve(d3.curveMonotoneX)
+        .x((row) => x(row.age))
+        .y((row) => survivalY(row.survival));
+
+      svg
+        .append("path")
+        .datum(current)
+        .attr("fill", palette.scenario)
+        .attr("opacity", 0.14)
+        .attr("d", area);
+      drawPath(svg, base, densityLine, palette.baseline, null, 1);
+      drawPath(svg, current, densityLine, palette.scenario, "9 6", 1);
+      drawPath(svg, base, survivalLine, palette.baseline, null, 0.65);
+      drawPath(svg, current, survivalLine, palette.survival, "9 6", 1);
+      drawMean(svg, x, plot, model.baselineMean, palette.baseline, "基线均值", 20);
+      drawMean(svg, x, plot, model.interventionMean, palette.scenario, "当前均值", 46);
+
+      svg.append("text").attr("class", "legend-text").attr("x", 690).attr("y", 26).text("基线");
+      svg.append("line").attr("x1", 645).attr("x2", 680).attr("y1", 22).attr("y2", 22).attr("stroke", palette.baseline).attr("stroke-width", 4);
+      svg.append("text").attr("class", "legend-text").attr("x", 800).attr("y", 26).text("当前场景");
+      svg.append("line").attr("x1", 742).attr("x2", 790).attr("y1", 22).attr("y2", 22).attr("stroke", palette.scenario).attr("stroke-width", 4).attr("stroke-dasharray", "9 6");
+      svg.append("text").attr("class", "chart-label").attr("x", 62).attr("y", 482).text(`目标对象：${labels[model.timeLens]} · 分布位移 ${signed(model.distributionShift)} 年 · 有效边界 ${model.boundary.label}`);
+    }
+
+    function drawEscapeChart(model) {
+      const svg = d3.select("#escape-chart");
+      svg.selectAll("*").remove();
+      const width = 480;
+      const height = 360;
+      const cx = 240;
+      const cy = 210;
+      const outer = 126;
+      const inner = 88;
+      const scale = d3.scaleLinear().domain([0, 1.55]).range([-Math.PI * 0.78, Math.PI * 0.78]);
+      const arc = d3.arc().innerRadius(inner).outerRadius(outer).startAngle(scale(0));
+      svg
+        .append("path")
+        .attr("transform", `translate(${cx},${cy})`)
+        .attr("d", arc.endAngle(scale(1.55)))
+        .attr("fill", "#e5e8ed");
+      svg
+        .append("path")
+        .attr("transform", `translate(${cx},${cy})`)
+        .attr("d", arc.endAngle(scale(model.levRatio)))
+        .attr("fill", model.levRatio >= 1 ? palette.green : palette.amber);
+      const thresholdAngle = scale(1);
+      svg
+        .append("line")
+        .attr("x1", cx + Math.sin(thresholdAngle) * (inner - 8))
+        .attr("y1", cy - Math.cos(thresholdAngle) * (inner - 8))
+        .attr("x2", cx + Math.sin(thresholdAngle) * (outer + 12))
+        .attr("y2", cy - Math.cos(thresholdAngle) * (outer + 12))
+        .attr("stroke", palette.rose)
+        .attr("stroke-width", 4);
+      svg
+        .append("text")
+        .attr("x", cx)
+        .attr("y", cy - 8)
+        .attr("text-anchor", "middle")
+        .attr("fill", palette.ink)
+        .attr("font-size", 38)
+        .attr("font-weight", 900)
+        .text(`${model.levRatio.toFixed(2)}x`);
+      svg
+        .append("text")
+        .attr("x", cx)
+        .attr("y", cy + 28)
+        .attr("text-anchor", "middle")
+        .attr("fill", palette.muted)
+        .attr("font-size", 14)
+        .attr("font-weight", 800)
+        .text(model.levState);
+      svg
+        .append("text")
+        .attr("x", 32)
+        .attr("y", 42)
+        .attr("class", "chart-label")
+        .text("长寿逃逸速度临界");
+      svg
+        .append("text")
+        .attr("x", 32)
+        .attr("y", 322)
+        .attr("fill", palette.rose)
+        .attr("font-size", 13)
+        .attr("font-weight", 900)
+        .text("临界阈值 1.00x");
+      svg
+        .append("text")
+        .attr("x", 300)
+        .attr("y", 322)
+        .attr("fill", palette.muted)
+        .attr("font-size", 13)
+        .attr("font-weight", 900)
+        .text(`有效边界 ${model.boundary.label}`);
+    }
+
+    function drawBudgetChart(model) {
+      const svg = d3.select("#budget-chart");
+      svg.selectAll("*").remove();
+      const width = 560;
+      const height = 360;
+      const margin = { top: 46, right: 30, bottom: 44, left: 84 };
+      const rows = [
+        { name: "时间", value: clamp(-20, model.distributionShift * 1.8, 100), color: palette.blue },
+        { name: "注意力", value: clamp(-20, model.aiAcceleration * 68 - model.friction * 30, 100), color: palette.teal },
+        { name: "认知", value: clamp(-20, model.aiAcceleration * 48 + model.interfaceDepth * 42 - model.friction * 24, 100), color: palette.rose },
+        { name: "恢复", value: clamp(-20, model.bioMedicine * 58 + model.resourceBase * 34 - model.riskLoad * 34, 100), color: palette.green },
+        { name: "选择权", value: clamp(-20, model.budgetGain, 100), color: palette.amber }
+      ];
+      const x = d3.scaleLinear().domain([-20, 100]).range([margin.left, width - margin.right]);
+      const y = d3.scaleBand().domain(rows.map((row) => row.name)).range([margin.top, height - margin.bottom]).padding(0.24);
+      svg
+        .append("g")
+        .attr("class", "grid")
+        .attr("transform", `translate(0,${height - margin.bottom})`)
+        .call(d3.axisBottom(x).ticks(5).tickSize(-(height - margin.top - margin.bottom)).tickFormat(""));
+      svg
+        .append("g")
+        .attr("class", "axis")
+        .attr("transform", `translate(0,${height - margin.bottom})`)
+        .call(d3.axisBottom(x).ticks(5).tickFormat((d) => `${d}%`));
+      svg
+        .append("g")
+        .attr("class", "axis")
+        .attr("transform", `translate(${margin.left},0)`)
+        .call(d3.axisLeft(y));
+      svg
+        .append("line")
+        .attr("x1", x(0))
+        .attr("x2", x(0))
+        .attr("y1", margin.top - 8)
+        .attr("y2", height - margin.bottom)
+        .attr("stroke", palette.ink)
+        .attr("stroke-width", 2);
+      svg
+        .selectAll("rect.budget")
+        .data(rows)
+        .join("rect")
+        .attr("class", "budget")
+        .attr("x", (d) => x(Math.min(0, d.value)))
+        .attr("y", (d) => y(d.name))
+        .attr("width", (d) => Math.abs(x(d.value) - x(0)))
+        .attr("height", y.bandwidth())
+        .attr("rx", 4)
+        .attr("fill", (d) => d.color)
+        .attr("opacity", 0.88);
+      svg
+        .selectAll("text.value")
+        .data(rows)
+        .join("text")
+        .attr("x", (d) => x(d.value) + (d.value >= 0 ? 8 : -8))
+        .attr("y", (d) => y(d.name) + y.bandwidth() / 2 + 5)
+        .attr("text-anchor", (d) => (d.value >= 0 ? "start" : "end"))
+        .attr("fill", palette.ink)
+        .attr("font-size", 12)
+        .attr("font-weight", 900)
+        .text((d) => `${signed(d.value, 0)}%`);
+      svg
+        .append("text")
+        .attr("x", margin.left)
+        .attr("y", 28)
+        .attr("class", "chart-label")
+        .text("通用资源预算增量");
+    }
+
+    function drawGrid(svg, x, y, plot, ticks) {
+      svg
+        .append("g")
+        .attr("class", "grid")
+        .attr("transform", `translate(0,${plot.top + plot.height})`)
+        .call(d3.axisBottom(x).ticks(6).tickSize(-plot.height).tickFormat(""));
+      svg
+        .append("g")
+        .attr("class", "grid")
+        .attr("transform", `translate(${plot.left},0)`)
+        .call(d3.axisLeft(y).ticks(ticks).tickSize(-plot.width).tickFormat(""));
+    }
+
+    function drawAxis(svg, x, y, plot, label) {
+      svg
+        .append("g")
+        .attr("class", "axis")
+        .attr("transform", `translate(0,${plot.top + plot.height})`)
+        .call(d3.axisBottom(x).ticks(6).tickFormat(d3.format("d")));
+      svg
+        .append("g")
+        .attr("class", "axis")
+        .attr("transform", `translate(${plot.left},0)`)
+        .call(d3.axisLeft(y).ticks(4));
+      svg
+        .append("text")
+        .attr("class", "chart-label")
+        .attr("x", plot.left)
+        .attr("y", plot.top - 16)
+        .text(label);
+      svg
+        .append("text")
+        .attr("class", "chart-label")
+        .attr("x", plot.left + plot.width - 24)
+        .attr("y", plot.top + plot.height + 42)
+        .text("年龄");
+    }
+
+    function drawPath(svg, rows, line, color, dasharray, opacity) {
+      svg
+        .append("path")
+        .datum(rows)
+        .attr("fill", "none")
+        .attr("stroke", color)
+        .attr("stroke-width", 3.5)
+        .attr("stroke-linejoin", "round")
+        .attr("stroke-linecap", "round")
+        .attr("stroke-dasharray", dasharray)
+        .attr("opacity", opacity)
+        .attr("d", line);
+    }
+
+    function drawMean(svg, x, plot, age, color, label, offset) {
+      const xPosition = x(age);
+      svg
+        .append("line")
+        .attr("x1", xPosition)
+        .attr("x2", xPosition)
+        .attr("y1", plot.top)
+        .attr("y2", plot.top + plot.height)
+        .attr("stroke", color)
+        .attr("stroke-width", 2.4)
+        .attr("stroke-dasharray", label === "当前均值" ? "6 5" : null);
+      svg
+        .append("text")
+        .attr("x", xPosition + 7)
+        .attr("y", plot.top + offset)
+        .attr("fill", color)
+        .attr("font-size", 12)
+        .attr("font-weight", 900)
+        .text(label);
+    }
+
+    function render() {
+      if (!window.d3) return;
+      const model = buildModel(readInputs());
+      updateOutputs(model);
+      drawConvergenceMap(model);
+      drawLifeChart(model);
+      drawEscapeChart(model);
+      drawBudgetChart(model);
+    }
+
+    function applyScenario(name) {
+      const scenario = scenarios[name];
+      if (!scenario) return;
+      for (const [id, value] of Object.entries(scenario)) {
+        const element = document.getElementById(id);
+        if (!element) continue;
+        element.value = String(value);
+      }
+      document.querySelectorAll("[data-scenario]").forEach((button) => {
+        button.classList.toggle("is-active", button.dataset.scenario === name);
+      });
+      render();
+    }
+
+    function clearScenario() {
+      document.querySelectorAll("[data-scenario]").forEach((button) => button.classList.remove("is-active"));
+      render();
+    }
+
+    fields.forEach((id) => document.getElementById(id).addEventListener("input", clearScenario));
+    document.getElementById("timeLens").addEventListener("change", clearScenario);
+    document.querySelectorAll("[data-scenario]").forEach((button) => {
+      button.addEventListener("click", () => applyScenario(button.dataset.scenario));
+    });
+    window.addEventListener("resize", render);
+    render();
+  })();
+  </script>
+</body>
+</html>
