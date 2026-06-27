@@ -4,6 +4,7 @@
 
 ## 当前资料
 
+- `core-literature/`：Human Infra 谱系论文集的下载清单、核心 12 篇 Source Card 草案、扩展文献记录和论文解读报告。
 - `human-runtime-infrastructure-longform.md`：人类运行基础设施长文原始资料。
 - `human-runtime-infrastructure-learning-note.md`：人类运行基础设施的学习与应用整理。
 - `disembodied-cns-interface-architecture.md`：具身半自主生命系统与去具身外部维持型中枢生命系统的接口架构对照。
@@ -14,3 +15,4 @@
 - 稳定结论提炼到 `docs/` 或对应 `domains/*/README.md`。
 - 本目录文件可以保留原始表达，但文件名必须语义化。
 - 不从本目录直接驱动产品、脚本或数据模型。
+- 论文原文缓存放在仓库外显式忽略的 `.research/literature/`，本目录只保存可追溯清单和资料卡片。

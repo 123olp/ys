@@ -45,6 +45,12 @@ docs/
 │   └── writing-style-guide.md
 ├── source-notes/
 │   ├── README.md
+│   ├── core-literature/
+│   │   ├── AGENTS.md
+│   │   ├── README.md
+│   │   ├── reading-reports/
+│   │   ├── 2026-06-28-human-infra-core-12-source-card-pack.md
+│   │   └── 2026-06-28-human-infra-genealogy-download-manifest.md
 │   ├── disembodied-cns-and-memory-editing-brief.md
 │   ├── disembodied-cns-interface-architecture.md
 │   ├── human-runtime-infrastructure-learning-note.md
@@ -84,6 +90,7 @@ docs/
 - `how-to/share-human-infra.md`：说明如何对外介绍 Human Infra、复用短推文模板并保持传播边界。
 - `source-notes/`：保存最新资料原文或轻整理版本，供后续提炼，不直接作为产品说明入口。
 - `source-notes/README.md`：说明原始资料归档的文件职责和使用规则。
+- `source-notes/core-literature/`：保存 Human Infra 谱系论文集的下载清单、核心 Source Card 草案、论文解读报告和缓存边界说明；原文缓存留在 `.research/literature/`。
 - `templates/`：保存决策记录、子域 README、research card、source note 和 reference 文档模板。
 
 ## 依赖关系

@@ -4,6 +4,10 @@
 
 它不是推荐清单，也不是证据等级结论。它的用途是建立一条可追溯的资料主干，帮助后续把宣传叙事、README、美化材料和子域文档都接回真实来源。
 
+## 谱系论文集工作台
+
+第一批 Human Infra 谱系论文下载清单和核心 12 篇 Source Card 草案见 [`../source-notes/core-literature/`](../source-notes/core-literature/README.md)。该工作台负责记录“哪些论文已定位、哪些原文已缓存、哪些只能保留元数据入口、每篇如何迁移进 Human Infra 模型”，本页只保留稳定文献主干和应用地图。
+
 ## 收录标准
 
 - 优先收录官方项目页、政府/机构资料、论文原文、PubMed、ClinicalTrials.gov 或出版社页面。

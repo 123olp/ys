@@ -51,6 +51,7 @@ docs/
 │   ├── source-management.md
 │   └── writing-style-guide.md
 ├── source-notes/
+│   └── core-literature/
 ├── templates/
 │   ├── README.md
 │   ├── decision-record.md
@@ -76,6 +77,7 @@ docs/
 10. Read `explanations/noah-ark-genealogy.md`.
 11. Read `explanations/value-lenses.md`.
 12. Read `reference/applications-and-literature.md`.
-13. Read `reference/review-checklists.md`.
-14. Read `explanations/human-runtime-infrastructure.md`.
-15. Enter a domain under `../domains/`.
+13. Read `source-notes/core-literature/README.md`.
+14. Read `reference/review-checklists.md`.
+15. Read `explanations/human-runtime-infrastructure.md`.
+16. Enter a domain under `../domains/`.
