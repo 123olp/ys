@@ -24,7 +24,7 @@ web/
 
 - `src/pages/*.astro` 是页面真相源，负责叙事结构、页面路由和内容组织。
 - `src/scripts/model-charts.js` 保存演示计算和 D3 图表逻辑，不保存页面长文。
-- `src/layouts/PaperReaderLayout.astro` 直接复用 `public/static/browse/0.3.4/`、`public/use.typekit.net/` 和 `public/p.typekit.net/` 中下载的 arXiv HTML papers CSS/JS/图标/字体资源；模板真相源沉淀在 `../tools/arxiv-html-paper/templates/`，不维护自定义论文阅读器样式或控件脚本。
+- `src/layouts/PaperReaderLayout.astro` 直接复用 `public/static/browse/0.3.4/` 和 `public/use.typekit.net/` 中下载并归一化的 arXiv HTML papers CSS/JS/图标/字体资源；模板真相源沉淀在 `../tools/arxiv-html-paper/templates/`，不维护自定义论文阅读器样式或控件脚本。
 - `src/components/` 保存可复用的 Astro 页面组件。
 - `src/data/` 保存 Web 展示所需的小型结构化数据，不保存原始研究数据、医疗数据或个人数据。
 - `web/dist/` 是构建产物，不进入版本库。

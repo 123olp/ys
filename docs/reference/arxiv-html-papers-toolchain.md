@@ -39,12 +39,11 @@ Generated on Thu Jun 25 07:17:29 2026 by LaTeXML (version 0.8.8)
 https://use.typekit.net/utz6mli.css
 ```
 
-本地实现使用下载镜像中的 Typekit 目录，而不是运行时依赖外链：
+本地实现使用下载镜像中的 Typekit 字体，但会把查询串字体 URL 归一化为稳定的本地 `.woff2` 文件，避免 Astro/Vite 静态服务把 `%3F` 路径解析成 404：
 
 ```text
 /use.typekit.net/utz6mli.css
-/p.typekit.net/*
-/use.typekit.net/af/*
+/use.typekit.net/font-files/*.woff2
 ```
 
 主 CSS 再导入：
@@ -99,7 +98,7 @@ monolith --isolate --ignore-errors --timeout 120 \
 
 ```bash
 wget --page-requisites --convert-links --adjust-extension --span-hosts \
-  --domains=arxiv.org,static.arxiv.org,use.typekit.net,p.typekit.net \
+  --domains=arxiv.org,static.arxiv.org,use.typekit.net \
   --no-parent --wait=0.2 --timeout=30 --tries=2 \
   --directory-prefix=.research/arxiv-html/2606.26689v1/wget \
   https://arxiv.org/html/2606.26689v1
@@ -165,7 +164,7 @@ tools/arxiv-html-paper/
 工具职责：
 
 - `print-mirror-command`：打印 `wget` 与 `monolith` 镜像命令。
-- `install-assets`：从 `wget` 镜像复制 arXiv CSS、JS、图标和 Typekit 字体到目标项目 `public/`。
+- `install-assets`：从 `wget` 镜像复制 arXiv CSS、JS、图标和 Typekit 字体到目标项目 `public/`，并把 Typekit 查询串字体资源归一化为稳定 `.woff2`。
 - `verify-assets`：校验目标项目是否具备核心 arXiv HTML papers 资源。
 - `write-layout`：写入 `PaperReaderLayout.astro`。
 - `write-page`：写入最小 `ltx_*` 论文页面骨架。
@@ -198,7 +197,7 @@ python3 tools/arxiv_html_paper_tool.py scaffold \
 工具边界：
 
 - 只复用前端阅读器框架，不负责生成研究正文。
-- 只安装本地静态资源，不在运行时依赖 arXiv 或 Typekit 外链。
+- 只安装本地静态资源，不在运行时依赖 arXiv 或 Typekit 外链；`p.typekit.net` 的统计 CSS 不进入运行时资源链。
 - 只生成 Astro 页面，不替代 LaTeXML 的 `.tex -> HTML` 转换流水线。
 - `wget` 镜像未必下载所有 favicon 变体；工具包用 `tools/arxiv-html-paper/assets/` 保存小型补丁图标，安装时自动补齐。
 

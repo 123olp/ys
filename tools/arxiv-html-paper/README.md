@@ -85,9 +85,10 @@ python3 tools/arxiv_html_paper_tool.py scaffold \
 ```text
 path/to/astro-app/
 ├── public/
-│   ├── p.typekit.net/
 │   ├── static/browse/0.3.4/
 │   └── use.typekit.net/
+│       ├── font-files/
+│       └── utz6mli.css
 └── src/
     ├── layouts/PaperReaderLayout.astro
     └── pages/paper.astro
@@ -122,13 +123,13 @@ static/browse/0.3.4/images/icons/favicon-32x32.png
 static/browse/0.3.4/images/icons/safari-pinned-tab.svg
 static/browse/0.3.4/images/icons/site.webmanifest
 use.typekit.net/utz6mli.css
-p.typekit.net/p.css*
-use.typekit.net/af/*/*/*/*
+use.typekit.net/font-files/*.woff2
 ```
 
 ## 实现边界
 
 - 复用 arXiv HTML papers 的前端资源和 DOM 协议。
 - 不重写 CSS、JS、主题系统和阅读器控件。
+- Typekit 字体会从下载镜像归一化为稳定本地 `.woff2`，不保留 `p.typekit.net` 统计 CSS 作为运行时依赖。
 - 不把 Human Infra 正文写入模板。
 - 不自动从 LaTeX 生成正文；页面内容仍由目标项目维护。

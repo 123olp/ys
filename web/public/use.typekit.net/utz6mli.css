@@ -21,65 +21,63 @@
  */
 /*{"last_published":"2024-10-15 19:56:54 UTC"}*/
 
-@import url("../p.typekit.net/p.css%3Fs=1&k=utz6mli&ht=tk&f=36207.36211.36212.36213.36219.36220.36221.36222.39868.39877&a=134867473&app=typekit&e=css.css");
-
 @font-face {
 font-family:"rival-sans";
-src:url("af/d9b715/00000000000000007735aa06/30/l%3Fprimer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n1&v=3") format("woff2"),url("af/d9b715/00000000000000007735aa06/30/d%3Fprimer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n1&v=3") format("woff"),url("af/d9b715/00000000000000007735aa06/30/a%3Fprimer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n1&v=3") format("opentype");
+src:url("font-files/rival-sans-n1.woff2") format("woff2");
 font-display:auto;font-style:normal;font-weight:100;font-stretch:normal;
 }
 
 @font-face {
 font-family:"rival-sans";
-src:url("af/b20507/00000000000000007735aa19/30/l%3Fprimer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("woff2"),url("af/b20507/00000000000000007735aa19/30/d%3Fprimer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("woff"),url("af/b20507/00000000000000007735aa19/30/a%3Fprimer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("opentype");
+src:url("font-files/rival-sans-i7.woff2") format("woff2");
 font-display:auto;font-style:italic;font-weight:700;font-stretch:normal;
 }
 
 @font-face {
 font-family:"rival-sans";
-src:url("af/c7b379/00000000000000007735aa1c/30/l%3Fprimer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"),url("af/c7b379/00000000000000007735aa1c/30/d%3Fprimer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"),url("af/c7b379/00000000000000007735aa1c/30/a%3Fprimer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+src:url("font-files/rival-sans-n7.woff2") format("woff2");
 font-display:auto;font-style:normal;font-weight:700;font-stretch:normal;
 }
 
 @font-face {
 font-family:"rival-sans";
-src:url("af/a78e89/00000000000000007735aa1f/30/l%3Fprimer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("woff2"),url("af/a78e89/00000000000000007735aa1f/30/d%3Fprimer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("woff"),url("af/a78e89/00000000000000007735aa1f/30/a%3Fprimer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("opentype");
+src:url("font-files/rival-sans-n3.woff2") format("woff2");
 font-display:auto;font-style:normal;font-weight:300;font-stretch:normal;
 }
 
 @font-face {
 font-family:"rival-sans";
-src:url("af/0d56a2/00000000000000007735aa31/30/l%3Fprimer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff2"),url("af/0d56a2/00000000000000007735aa31/30/d%3Fprimer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff"),url("af/0d56a2/00000000000000007735aa31/30/a%3Fprimer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("opentype");
+src:url("font-files/rival-sans-i4.woff2") format("woff2");
 font-display:auto;font-style:italic;font-weight:400;font-stretch:normal;
 }
 
 @font-face {
 font-family:"rival-sans";
-src:url("af/556d5f/00000000000000007735aa34/30/l%3Fprimer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("af/556d5f/00000000000000007735aa34/30/d%3Fprimer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("af/556d5f/00000000000000007735aa34/30/a%3Fprimer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+src:url("font-files/rival-sans-n4.woff2") format("woff2");
 font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
 }
 
 @font-face {
 font-family:"rival-sans";
-src:url("af/0fd226/00000000000000007735aa36/30/l%3Fprimer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i3&v=3") format("woff2"),url("af/0fd226/00000000000000007735aa36/30/d%3Fprimer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i3&v=3") format("woff"),url("af/0fd226/00000000000000007735aa36/30/a%3Fprimer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i3&v=3") format("opentype");
+src:url("font-files/rival-sans-i3.woff2") format("woff2");
 font-display:auto;font-style:italic;font-weight:300;font-stretch:normal;
 }
 
 @font-face {
 font-family:"rival-sans";
-src:url("af/2843f2/00000000000000007735aa38/30/l%3Fprimer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i1&v=3") format("woff2"),url("af/2843f2/00000000000000007735aa38/30/d%3Fprimer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i1&v=3") format("woff"),url("af/2843f2/00000000000000007735aa38/30/a%3Fprimer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i1&v=3") format("opentype");
+src:url("font-files/rival-sans-i1.woff2") format("woff2");
 font-display:auto;font-style:italic;font-weight:100;font-stretch:normal;
 }
 
 @font-face {
 font-family:"ibm-plex-mono";
-src:url("af/bda79b/00000000000000007735944d/30/l%3Fprimer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("af/bda79b/00000000000000007735944d/30/d%3Fprimer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("af/bda79b/00000000000000007735944d/30/a%3Fprimer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+src:url("font-files/ibm-plex-mono-n4.woff2") format("woff2");
 font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
 }
 
 @font-face {
 font-family:"ibm-plex-mono";
-src:url("af/d37375/00000000000000007735946a/30/l%3Fprimer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n8&v=3") format("woff2"),url("af/d37375/00000000000000007735946a/30/d%3Fprimer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n8&v=3") format("woff"),url("af/d37375/00000000000000007735946a/30/a%3Fprimer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n8&v=3") format("opentype");
+src:url("font-files/ibm-plex-mono-n8.woff2") format("woff2");
 font-display:auto;font-style:normal;font-weight:800;font-stretch:normal;
 }
 

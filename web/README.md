@@ -13,9 +13,10 @@ web/
 ├── astro.config.mjs
 ├── package.json
 ├── public/
-│   ├── p.typekit.net/
 │   ├── static/browse/0.3.4/
 │   └── use.typekit.net/
+│       ├── font-files/
+│       └── utz6mli.css
 └── src/
     ├── components/
     │   ├── Hero.astro
@@ -46,7 +47,7 @@ web/
 - `src/pages/model.astro`：交互预测模型页，展示寿命、有效时间、主观时间、相对时间和未来选择权的模型位置。
 - `src/pages/research-standards.astro`：科研标准页，记录论文阅读、预测模型报告、因果推断、可视化和工具链标准。
 - `src/scripts/model-charts.js`：D3 图表和模型计算脚本，只表达演示模型，不输出个体死亡日期。
-- `public/static/browse/0.3.4/`、`public/use.typekit.net/`、`public/p.typekit.net/`：从 arXiv HTML papers 页面下载并复用的 CSS、JS、图标、webmanifest 和 Typekit 字体资源。
+- `public/static/browse/0.3.4/`、`public/use.typekit.net/`：从 arXiv HTML papers 页面下载并复用的 CSS、JS、图标、webmanifest 和归一化 Typekit 字体资源。
 - `src/data/book-signals.json`：书籍观点到 Human Infra 变量的结构化映射。
 
 arXiv-style 论文页的可复用工具链已经沉淀在 [`../tools/arxiv-html-paper/`](../tools/arxiv-html-paper/README.md)。校验当前资源：

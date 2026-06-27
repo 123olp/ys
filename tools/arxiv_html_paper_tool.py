@@ -33,22 +33,65 @@ REQUIRED_ASSET_PATHS = [
     "static/browse/0.3.4/images/icons/safari-pinned-tab.svg",
     "static/browse/0.3.4/images/icons/site.webmanifest",
     "use.typekit.net/utz6mli.css",
+    "use.typekit.net/font-files/ibm-plex-mono-n4.woff2",
+    "use.typekit.net/font-files/ibm-plex-mono-n8.woff2",
+    "use.typekit.net/font-files/rival-sans-i1.woff2",
+    "use.typekit.net/font-files/rival-sans-i3.woff2",
+    "use.typekit.net/font-files/rival-sans-i4.woff2",
+    "use.typekit.net/font-files/rival-sans-i7.woff2",
+    "use.typekit.net/font-files/rival-sans-n1.woff2",
+    "use.typekit.net/font-files/rival-sans-n3.woff2",
+    "use.typekit.net/font-files/rival-sans-n4.woff2",
+    "use.typekit.net/font-files/rival-sans-n7.woff2",
 ]
 
 OPTIONAL_ASSET_PATHS = [
     "use.typekit.net/robots.txt",
 ]
 
-REQUIRED_ASSET_GLOBS = [
-    "p.typekit.net/p.css*",
-    "use.typekit.net/af/*/*/*/*",
-]
+REQUIRED_ASSET_GLOBS: list[str] = []
 
 COPY_SPECS = [
     ("arxiv.org/static/browse/0.3.4", "static/browse/0.3.4"),
     ("use.typekit.net", "use.typekit.net"),
-    ("p.typekit.net", "p.typekit.net"),
 ]
+
+TYPEKIT_FONT_SPECS = [
+    ("rival-sans", "normal", 100, "d9b715", "00000000000000007735aa06", "rival-sans-n1.woff2"),
+    ("rival-sans", "italic", 700, "b20507", "00000000000000007735aa19", "rival-sans-i7.woff2"),
+    ("rival-sans", "normal", 700, "c7b379", "00000000000000007735aa1c", "rival-sans-n7.woff2"),
+    ("rival-sans", "normal", 300, "a78e89", "00000000000000007735aa1f", "rival-sans-n3.woff2"),
+    ("rival-sans", "italic", 400, "0d56a2", "00000000000000007735aa31", "rival-sans-i4.woff2"),
+    ("rival-sans", "normal", 400, "556d5f", "00000000000000007735aa34", "rival-sans-n4.woff2"),
+    ("rival-sans", "italic", 300, "0fd226", "00000000000000007735aa36", "rival-sans-i3.woff2"),
+    ("rival-sans", "italic", 100, "2843f2", "00000000000000007735aa38", "rival-sans-i1.woff2"),
+    ("ibm-plex-mono", "normal", 400, "bda79b", "00000000000000007735944d", "ibm-plex-mono-n4.woff2"),
+    ("ibm-plex-mono", "normal", 800, "d37375", "00000000000000007735946a", "ibm-plex-mono-n8.woff2"),
+]
+
+TYPEKIT_CSS_HEADER = """/*
+ * The Typekit service used to deliver this font or fonts for use on websites
+ * is provided by Adobe and is subject to these Terms of Use
+ * http://www.adobe.com/products/eulas/tou_typekit. For font license
+ * information, see the list below.
+ *
+ * ibm-plex-mono:
+ *   - http://typekit.com/eulas/00000000000000007735944d
+ *   - http://typekit.com/eulas/00000000000000007735946a
+ * rival-sans:
+ *   - http://typekit.com/eulas/00000000000000007735aa06
+ *   - http://typekit.com/eulas/00000000000000007735aa19
+ *   - http://typekit.com/eulas/00000000000000007735aa1c
+ *   - http://typekit.com/eulas/00000000000000007735aa1f
+ *   - http://typekit.com/eulas/00000000000000007735aa31
+ *   - http://typekit.com/eulas/00000000000000007735aa34
+ *   - http://typekit.com/eulas/00000000000000007735aa36
+ *   - http://typekit.com/eulas/00000000000000007735aa38
+ *
+ * © 2009-2026 Adobe Systems Incorporated. All Rights Reserved.
+ */
+/*{"last_published":"2024-10-15 19:56:54 UTC"}*/
+"""
 
 
 @dataclass
@@ -104,6 +147,45 @@ def copy_tree(src: Path, dst: Path) -> None:
     shutil.copytree(src, dst, dirs_exist_ok=True)
 
 
+def render_typekit_css() -> str:
+    blocks = [TYPEKIT_CSS_HEADER]
+    for family, style, weight, _font_hash, _font_id, filename in TYPEKIT_FONT_SPECS:
+        blocks.append(
+            "\n".join(
+                [
+                    "",
+                    "@font-face {",
+                    f'font-family:"{family}";',
+                    f'src:url("font-files/{filename}") format("woff2");',
+                    f"font-display:auto;font-style:{style};font-weight:{weight};font-stretch:normal;",
+                    "}",
+                ]
+            )
+        )
+    blocks.append("")
+    blocks.append('.tk-rival-sans { font-family: "rival-sans",sans-serif; }')
+    blocks.append('.tk-ibm-plex-mono { font-family: "ibm-plex-mono",sans-serif; }')
+    blocks.append("")
+    return "\n".join(blocks)
+
+
+def normalize_typekit_assets(public_dir: Path) -> None:
+    typekit_dir = public_dir / "use.typekit.net"
+    font_dir = typekit_dir / "font-files"
+    font_dir.mkdir(parents=True, exist_ok=True)
+
+    for _family, _style, _weight, font_hash, font_id, filename in TYPEKIT_FONT_SPECS:
+        source_dir = typekit_dir / "af" / font_hash / font_id / "30"
+        source_candidates = sorted(source_dir.glob("l?*"))
+        if not source_candidates:
+            raise RuntimeError(f"typekit woff2 source missing: {source_dir}")
+        shutil.copy2(source_candidates[0], font_dir / filename)
+
+    (typekit_dir / "utz6mli.css").write_text(render_typekit_css(), encoding="utf-8")
+    shutil.rmtree(typekit_dir / "af", ignore_errors=True)
+    shutil.rmtree(public_dir / "p.typekit.net", ignore_errors=True)
+
+
 def install_assets(source_root: Path, public_dir: Path) -> list[str]:
     source_root = normalize_path(source_root)
     public_dir = normalize_path(public_dir)
@@ -119,6 +201,9 @@ def install_assets(source_root: Path, public_dir: Path) -> list[str]:
         dst = public_dir / dest_rel
         copy_tree(src, dst)
         copied.append(dest_rel)
+
+    normalize_typekit_assets(public_dir)
+    copied.append("normalized Typekit font files")
 
     if DEFAULT_FALLBACK_ASSET_DIR.exists():
         copy_tree(DEFAULT_FALLBACK_ASSET_DIR, public_dir)
@@ -148,7 +233,7 @@ def build_asset_report(public_dir: Path) -> AssetReport:
         if not any(public_dir.glob(pattern)):
             missing_required_globs.append(pattern)
 
-    font_count = sum(1 for path in (public_dir / "use.typekit.net" / "af").rglob("*") if path.is_file())
+    font_count = sum(1 for path in (public_dir / "use.typekit.net" / "font-files").glob("*.woff2"))
 
     return AssetReport(
         public_dir=public_dir,
@@ -255,7 +340,7 @@ def cmd_print_mirror_command(args: argparse.Namespace) -> int:
     url = args.url
     print(
         "wget --page-requisites --convert-links --adjust-extension --span-hosts "
-        "--domains=arxiv.org,static.arxiv.org,use.typekit.net,p.typekit.net "
+        "--domains=arxiv.org,static.arxiv.org,use.typekit.net "
         "--no-parent --wait=0.2 --timeout=30 --tries=2 "
         f"--directory-prefix={output_dir} {url}"
     )
