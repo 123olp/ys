@@ -2,6 +2,11 @@
 
 All notable repository structure changes are recorded here.
 
+## 2026-06-28
+
+- Formalized `tools/arxiv-html-paper/` as a reusable arXiv HTML Paper Reuse Kit with a package version, consumer contract, machine-readable contract, consumer guide, governance document, maintenance runbook, and package changelog.
+- Updated tool navigation and reference documentation so other projects can consume the arXiv-style reader framework without relying on conversation context.
+
 ## 2026-06-20
 
 - Reframed the repository from a Biocat-only project into the Human Infra knowledge repository.

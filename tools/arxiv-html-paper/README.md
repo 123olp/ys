@@ -2,6 +2,19 @@
 
 本工具包把 arXiv HTML papers 的前端阅读器框架沉淀成可迁移工具：下载镜像进入目标 `public/`，写入 `PaperReaderLayout.astro`，生成最小 `ltx_*` 论文页面骨架，并校验 CSS、JS、图标和 Typekit 字体资源是否齐全。
 
+当前版本见 [VERSION](VERSION)。稳定消费边界见 [CONTRACT.md](CONTRACT.md) 和 [arxiv-html-paper.contract.v1.json](arxiv-html-paper.contract.v1.json)。
+
+## 文档入口
+
+| 文档 | 用途 |
+| --- | --- |
+| [CONTRACT.md](CONTRACT.md) | 人读消费契约：稳定接口、DOM 边界、资产要求和非目标 |
+| [arxiv-html-paper.contract.v1.json](arxiv-html-paper.contract.v1.json) | 机器可读契约：给脚本、CI 或其他项目索引使用 |
+| [CONSUMER_GUIDE.md](CONSUMER_GUIDE.md) | 其他项目复制和使用本工具包的操作指南 |
+| [GOVERNANCE.md](GOVERNANCE.md) | 维护治理：版本等级、评审门禁、资源治理和发布清单 |
+| [MAINTENANCE.md](MAINTENANCE.md) | 维护运行手册：镜像刷新、资源安装、模板升级和故障处理 |
+| [CHANGELOG.md](CHANGELOG.md) | 工具包版本变更记录 |
+
 ## 适用场景
 
 - 在 Astro 项目里做 arXiv 同款论文阅读页。
@@ -66,6 +79,8 @@ python3 tools/arxiv_html_paper_tool.py write-page \
 tools/arxiv_html_paper_tool.py
 tools/arxiv-html-paper/
 ```
+
+完整迁移步骤见 [CONSUMER_GUIDE.md](CONSUMER_GUIDE.md)。
 
 在目标仓库执行：
 
@@ -133,3 +148,4 @@ use.typekit.net/font-files/*.woff2
 - Typekit 字体会从下载镜像归一化为稳定本地 `.woff2`，不保留 `p.typekit.net` 统计 CSS 作为运行时依赖。
 - 不把 Human Infra 正文写入模板。
 - 不自动从 LaTeX 生成正文；页面内容仍由目标项目维护。
+- 破坏性变更必须更新 [CONTRACT.md](CONTRACT.md)、机器可读契约和 [CHANGELOG.md](CHANGELOG.md)。

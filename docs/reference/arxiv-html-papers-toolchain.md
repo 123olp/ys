@@ -176,6 +176,26 @@ tools/arxiv-html-paper/
 python3 tools/arxiv_html_paper_tool.py verify-assets --public-dir web/public
 ```
 
+## 消费契约与治理文档
+
+arXiv HTML paper 复用能力已经沉淀为可被其他项目复制的工具包。稳定消费入口：
+
+```text
+tools/arxiv-html-paper/CONTRACT.md
+tools/arxiv-html-paper/arxiv-html-paper.contract.v1.json
+tools/arxiv-html-paper/CONSUMER_GUIDE.md
+tools/arxiv-html-paper/GOVERNANCE.md
+tools/arxiv-html-paper/MAINTENANCE.md
+```
+
+文档分工：
+
+- [消费契约](../../tools/arxiv-html-paper/CONTRACT.md)：稳定 CLI、模板占位符、DOM 类、状态属性、资产路径和非目标。
+- [机器可读契约](../../tools/arxiv-html-paper/arxiv-html-paper.contract.v1.json)：供 CI、脚本或外部项目索引使用。
+- [消费指南](../../tools/arxiv-html-paper/CONSUMER_GUIDE.md)：外部 Astro 项目的复制、安装、验证和升级步骤。
+- [维护治理](../../tools/arxiv-html-paper/GOVERNANCE.md)：版本等级、评审门禁、资源治理和发布清单。
+- [维护手册](../../tools/arxiv-html-paper/MAINTENANCE.md)：镜像刷新、资产安装、模板升级和故障处理。
+
 迁移到其他 Astro 项目时，复制：
 
 ```text

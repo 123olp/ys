@@ -1,0 +1,112 @@
+{
+  "contract_version": "1.0.0",
+  "status": "active",
+  "package_path": "tools/arxiv-html-paper",
+  "cli_path": "tools/arxiv_html_paper_tool.py",
+  "consumer_profile": {
+    "framework": "Astro",
+    "rendering_mode": "static site",
+    "asset_root": "public",
+    "content_owner": "consumer project"
+  },
+  "stable_commands": [
+    "print-mirror-command",
+    "install-assets",
+    "verify-assets",
+    "write-layout",
+    "write-page",
+    "scaffold"
+  ],
+  "default_targets": {
+    "source_mirror": ".research/arxiv-html/2606.26689v1/wget",
+    "public_dir": "web/public",
+    "layout_target": "web/src/layouts/PaperReaderLayout.astro",
+    "page_target": "web/src/pages/paper.astro"
+  },
+  "templates": {
+    "layout": "templates/PaperReaderLayout.astro",
+    "paper_page": "templates/paper.astro",
+    "placeholder_syntax": "{{NAME}}",
+    "placeholders": [
+      "LAYOUT_IMPORT",
+      "TITLE",
+      "AUTHOR",
+      "DATE_LABEL",
+      "ARXIV_ID",
+      "CATEGORY",
+      "ABSTRACT",
+      "KEYWORDS"
+    ]
+  },
+  "required_asset_paths": [
+    "static/browse/0.3.4/css/ar5iv.0.8.5.css",
+    "static/browse/0.3.4/css/arxiv-html-papers-20260131.css",
+    "static/browse/0.3.4/css/arxiv-html-papers-theme-20250131.css",
+    "static/browse/0.3.4/js/arxiv-html-papers-20260131.js",
+    "static/browse/0.3.4/images/arxiv-logo-one-color-white.svg",
+    "static/browse/0.3.4/images/icons/apple-touch-icon.png",
+    "static/browse/0.3.4/images/icons/favicon-16x16.png",
+    "static/browse/0.3.4/images/icons/favicon-32x32.png",
+    "static/browse/0.3.4/images/icons/safari-pinned-tab.svg",
+    "static/browse/0.3.4/images/icons/site.webmanifest",
+    "use.typekit.net/utz6mli.css",
+    "use.typekit.net/font-files/ibm-plex-mono-n4.woff2",
+    "use.typekit.net/font-files/ibm-plex-mono-n8.woff2",
+    "use.typekit.net/font-files/rival-sans-i1.woff2",
+    "use.typekit.net/font-files/rival-sans-i3.woff2",
+    "use.typekit.net/font-files/rival-sans-i4.woff2",
+    "use.typekit.net/font-files/rival-sans-i7.woff2",
+    "use.typekit.net/font-files/rival-sans-n1.woff2",
+    "use.typekit.net/font-files/rival-sans-n3.woff2",
+    "use.typekit.net/font-files/rival-sans-n4.woff2",
+    "use.typekit.net/font-files/rival-sans-n7.woff2"
+  ],
+  "dom_contract": {
+    "preserve_classes": [
+      "arxiv-html-header",
+      "ltx_page_navbar",
+      "ltx_TOC",
+      "ltx_page_main",
+      "ltx_page_content",
+      "ltx_document",
+      "ltx_title_document",
+      "ltx_abstract",
+      "ltx_section",
+      "ltx_bibliography"
+    ],
+    "preserve_attributes": [
+      "data-theme",
+      "data-toc-display",
+      "data-reading-mode"
+    ],
+    "runtime_storage_keys": [
+      "ar5iv_theme",
+      "arxiv_html_paper_toc_display",
+      "arxiv_html_paper_reading_mode"
+    ]
+  },
+  "consumer_must": [
+    "serve installed assets from the target public root",
+    "run verify-assets after installing or upgrading assets",
+    "keep .research mirrors out of version control unless the target project intentionally archives them",
+    "treat generated paper content as project-owned content",
+    "avoid editing copied arXiv CSS, JavaScript, and font files"
+  ],
+  "provider_guarantees": [
+    "the CLI uses the Python standard library only",
+    "the templates do not contain Human Infra-specific article content",
+    "Typekit font URLs are normalized into local woff2 files",
+    "runtime rendering does not require arXiv or Typekit network access after assets are installed"
+  ],
+  "non_goals": [
+    "LaTeX to HTML conversion",
+    "PDF generation",
+    "custom brand visual system",
+    "medical or research content validation",
+    "multi-framework frontend adapter"
+  ],
+  "validation": [
+    "python3 tools/arxiv_html_paper_tool.py verify-assets --public-dir <web-root>/public",
+    "python3 tools/arxiv_html_paper_tool.py verify-assets --public-dir <web-root>/public --json"
+  ]
+}
