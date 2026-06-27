@@ -18,6 +18,11 @@ human_infra/
 │   ├── AGENTS.md          # web 目录说明
 │   ├── README.md          # 本地运行、构建和页面职责
 │   └── src/               # Framework 页面、组件、样式和展示数据
+├── tools/                 # 仓库检查脚本和可复用工程工具
+│   ├── AGENTS.md          # tools 目录说明
+│   ├── check_repository.py
+│   ├── arxiv_html_paper_tool.py
+│   └── arxiv-html-paper/  # arXiv HTML papers 复用模板包
 ├── README.md              # Human Infra 定位、边界、目录和变更日志
 ├── docs/                  # 总理论、域地图、伦理边界和原始资料归档
 │   ├── AGENTS.md          # docs 目录说明
@@ -42,6 +47,7 @@ human_infra/
 - `human-infra-dashboard.html` 是根目录静态展示入口，只承载可直接打开的模型看板，不承载数据采集、个人预测或生产服务逻辑。
 - `singularity-human-infra.html` 是根目录专项展示入口，用于把《奇点更近》学习资料转译为 Human Infra 的价值展示、预测模型和 D3 可视化，不作为事实核验或医学建议。
 - `web/` 是 Observable Framework 正式 Web 应用目录，用于多页科研叙事、书籍转译、预测模型和交互可视化；它不承载采集脚本、个人预测服务或医学决策逻辑。
+- `tools/` 保存仓库维护脚本和可迁移工程工具；其中 arXiv HTML papers 复用工具只负责资源安装、资产校验和 Astro 模板生成，不承载 Human Infra 正文理论。
 - `docs/` 只放 Human Infra 的上位理论、域边界、伦理原则和原始资料归档，不放具体采集脚本。
 - `domains/` 中每个子域必须有独立 README 和 AGENTS，明确自身对象、非目标、证据要求和上下游关系。
 - `domains/longevity-evidence/` 承接原 Biocat，负责长寿干预证据、临床试验、药品安全、公开数据源和采集脚本。
@@ -74,3 +80,4 @@ human_infra/
 - 2026-06-26：新增根目录静态 Web 看板 `human-infra-dashboard.html`，采用黄金分割三块布局展示主体持续性与生命路径预测模型。
 - 2026-06-26：新增专项 Web 展示页 `singularity-human-infra.html`，将《奇点更近》学习资料转译为 Human Infra 价值展示、预测模型和可视化。
 - 2026-06-26：新增 `web/` Observable Framework 应用，作为科研叙事、书籍转译、预测模型和交互图表的正式 Web 入口。
+- 2026-06-27：新增 `tools/arxiv_html_paper_tool.py` 与 `tools/arxiv-html-paper/`，把 arXiv HTML papers 前端框架沉淀为可复用 Astro 工具链。

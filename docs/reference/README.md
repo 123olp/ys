@@ -5,6 +5,7 @@ Reference documents are stable lookup materials: maps, rules, glossaries, standa
 Current documents:
 
 - `applications-and-literature.md`: real-world application cases and literature spine for Human Infra.
+- `arxiv-html-papers-toolchain.md`: arXiv HTML papers toolchain analysis, local mirroring commands, reader controls, reusable CLI tooling, and Human Infra reuse boundary.
 - `domain-map.md`: the Human Infra domain structure and migration slice.
 - `document-lifecycle.md`: document states, promotion rules, review triggers, and deletion rules.
 - `evidence-policy.md`: evidence, interpretation, claim, speculation, and decision boundaries.

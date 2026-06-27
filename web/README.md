@@ -12,6 +12,10 @@ web/
 ├── README.md
 ├── astro.config.mjs
 ├── package.json
+├── public/
+│   ├── p.typekit.net/
+│   ├── static/browse/0.3.4/
+│   └── use.typekit.net/
 └── src/
     ├── components/
     │   ├── Hero.astro
@@ -20,9 +24,11 @@ web/
     ├── data/
     │   └── book-signals.json
     ├── layouts/
+    │   ├── PaperReaderLayout.astro
     │   └── ResearchLayout.astro
     ├── pages/
     │   ├── index.astro
+    │   ├── paper.astro
     │   ├── book.astro
     │   ├── model.astro
     │   └── research-standards.astro
@@ -35,11 +41,19 @@ web/
 ## 页面职责
 
 - `src/pages/index.astro`：首页，把《奇点更近》学习资料、Human Infra 主体持续性和预测模型放在同一个叙事入口。
+- `src/pages/paper.astro`：arXiv HTML papers 风格论文页，用学术阅读器展示 Human Infra 的理论、模型和工具链。
 - `src/pages/book.astro`：书籍介绍与 Human Infra 转译，承载章节主线、技术链路和边界说明。
 - `src/pages/model.astro`：交互预测模型页，展示寿命、有效时间、主观时间、相对时间和未来选择权的模型位置。
 - `src/pages/research-standards.astro`：科研标准页，记录论文阅读、预测模型报告、因果推断、可视化和工具链标准。
 - `src/scripts/model-charts.js`：D3 图表和模型计算脚本，只表达演示模型，不输出个体死亡日期。
+- `public/static/browse/0.3.4/`、`public/use.typekit.net/`、`public/p.typekit.net/`：从 arXiv HTML papers 页面下载并复用的 CSS、JS、图标、webmanifest 和 Typekit 字体资源。
 - `src/data/book-signals.json`：书籍观点到 Human Infra 变量的结构化映射。
+
+arXiv-style 论文页的可复用工具链已经沉淀在 [`../tools/arxiv-html-paper/`](../tools/arxiv-html-paper/README.md)。校验当前资源：
+
+```bash
+python3 tools/arxiv_html_paper_tool.py verify-assets --public-dir web/public
+```
 
 ## 正式路线
 
@@ -60,6 +74,7 @@ web/
 | 页面 | 主要任务 | 不承载 |
 | --- | --- | --- |
 | `index.astro` | 对外解释 Human Infra 与专项资料的整体价值 | 细节方法论堆叠 |
+| `paper.astro` | 承载论文式理论、定义、谱系、模型契约和工具链说明 | 自定义论文阅读器样式或控件逻辑 |
 | `book.astro` | 承载书籍、作者观点和 Human Infra 转译 | 模型参数实现 |
 | `model.astro` | 承载生命路径、有效时间、主观时间、相对时间和未来选择权的模型可视化 | 医疗建议或个人结论 |
 | `research-standards.astro` | 承载论文、工具、模型报告和可视化规范 | 宣传文案 |

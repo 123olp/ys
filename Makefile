@@ -12,6 +12,7 @@ structure:
 
 py-compile:
 	python3 -m py_compile \
+		tools/arxiv_html_paper_tool.py \
 		tools/check_repository.py \
 		domains/longevity-evidence/scripts/collect_mvp_data.py \
 		domains/longevity-evidence/scripts/collect_core_data.py

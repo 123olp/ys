@@ -1,0 +1,1188 @@
+---
+import PaperReaderLayout from "../layouts/PaperReaderLayout.astro";
+import bookSignals from "../data/book-signals.json";
+
+const chapterMap = [
+  ["引言", "奇点为什么更近", "加速回报定律、2045 时间表、奇点作为隐喻。"],
+  ["第 1 章", "六个时代", "物理化学、生命、大脑、人类技术、脑机融合、宇宙智能扩张。"],
+  ["第 2 章", "重塑智能", "符号主义、联结主义、新皮质、深度学习与云端扩展。"],
+  ["第 3 章", "我是谁", "意识、自由意志、身份连续性、数字复制和逝者化身。"],
+  ["第 4 章", "生活改善", "教育、卫生、寿命、贫困、能源、食物、水和制造。"],
+  ["第 5 章", "工作的未来", "自动化、岗位转型、教育、福利制度和人与 AI 融合。"],
+  ["第 6 章", "健康与幸福", "AI 医学、生物技术、纳米机器人、身体和大脑重构。"],
+  ["结语", "四个巨大危机", "核、生物、纳米、AI 风险与治理。"]
+];
+
+const conceptRows = [
+  ["奇点", "人类智能与技术能力发生巨大跃迁，以致现有认知难以完全理解的阶段。", "不是数学上的真正无限，也不是某一天突然魔法式变化。", "描述 AI、脑机接口、纳米技术汇合后的文明转折。"],
+  ["加速回报定律", "信息技术进步会降低下一轮创新成本，从而形成指数级反馈。", "不是简单的摩尔定律。", "解释技术进步为什么会越来越快，以及哪些领域可能被加速。"],
+  ["图灵测试", "判断机器是否能在交流中被误认为人类的测试。", "不是意识证明。", "提供 AI 行为能力信号，但不能证明主观体验。"],
+  ["符号主义", "用规则、逻辑、公理和专家知识解决问题。", "不是自学习系统。", "解释规则系统面对复杂现实时的边界。"],
+  ["联结主义", "通过大量节点和权重从数据中学习模式。", "不是人工手写规则系统。", "解释深度学习为何能突破复杂模式识别任务。"],
+  ["新皮质", "负责高级认知、抽象和学习的重要脑结构。", "不是固定程序库。", "为 AI 与脑机接口的类比提供概念背景。"],
+  ["脑机接口", "大脑与数字系统直接通信的技术。", "不只是普通外接设备。", "进入认知容量、记忆外化、工具耦合和身份边界。"],
+  ["长寿逃逸速度", "医学进步每年为人类预期寿命增加接近或超过一年。", "不是已经保证永生。", "作为预测有效寿命边界是否开放的临界变量。"],
+  ["纳米机器人", "远期分子尺度设备，用于诊断、修复、增强和物质制造。", "不是今天已经成熟的普通微型机器人。", "进入远期修复能力和高不确定干预族。"]
+];
+
+const evidenceRows = [
+  ["技术进步呈指数级", "计算性价比长期提升，摩尔定律只是表现之一。", "主要适用于信息技术化部分，不必然适用于所有物理资源。", "芯片制程瓶颈、能源约束、供应链中断可能放缓趋势。"],
+  ["AI 正接近人类水平", "AI 在游戏、语言、代码、考试、医学影像等任务中突破。", "任务表现不等于通用理解、长期可靠性或意识。", "幻觉、常识缺陷、长期规划不足。"],
+  ["深度学习复制部分新皮质能力", "神经网络层级结构与新皮质模式识别类比。", "类比不等于完整脑科学解释。", "人脑还有情感、身体、社会互动和动机系统。"],
+  ["生活长期改善", "识字率、教育、寿命、贫困、收入、暴力等长期趋势改善。", "全球改善不代表每个地区和个体同步改善。", "战争、气候灾害、贫富差距、政治倒退。"],
+  ["自动化不必然造成永久失业", "农业、工业、服务业历史转型曾创造新工作。", "过去经验不保证 AI 时代完全重复。", "AI 可能同时冲击更多认知岗位，转型速度更快。"],
+  ["医学将成为信息技术", "基因组测序成本下降、AI 蛋白质结构预测、AI 药物发现。", "医学受临床验证、伦理、监管和可及性限制。", "实验室突破到普及治疗可能很慢。"],
+  ["纳米机器人可重构健康", "作者设想分子尺度设备执行诊断、修复和免疫增强。", "目前大量内容属于预测和概念设计。", "工程实现、体内安全、制造和监管高度不确定。"],
+  ["AI 可帮助管理技术风险", "作者认为更强 AI 可用于监测核、生物、纳米风险。", "依赖 AI 对齐、制度可信性和治理能力。", "AI 本身可能成为风险源。"]
+];
+
+const humanInfraMapping = [
+  ["信息化迁移", "现实世界被转化为可计算、可模拟、可优化的信息系统。", "决定哪些领域能被 AI 和数据加速。", "信息化程度 I_t"],
+  ["AI 共同体", "人与 AI 形成认知协作系统。", "改变学习速度、判断质量和任务行动密度。", "认知放大 C_t"],
+  ["医学信息化", "疾病、衰老、药物和身体状态进入数据与模拟。", "改变健康寿命、恢复能力和风险函数。", "λ(t), R_t"],
+  ["长寿逃逸", "剩余寿命增益速度接近或超过时间消耗速度。", "使主体边界从固定终局转向临界开放。", "LEV(t)"],
+  ["身份与数字化身", "记忆、人格、亲情和死亡被数字系统重构。", "进入人格连续性、数据权利和记忆编辑边界。", "Identity_t"],
+  ["技术治理", "强技术收益与尾部风险同时增加。", "决定路径位移是否被灾难性风险抵消。", "Risk_t, Governance_t"]
+];
+
+const checkItems = [
+  "这是作者已经列举的事实、趋势推断，还是远期设想？",
+  "该趋势依赖的底层变量是算力、数据、能源、材料、测序成本还是网络效应？",
+  "这个领域是否真的可被数字化、数据化、模拟化？",
+  "AI 是否能参与识别、模拟、生成、优化或研发？",
+  "是否存在物理、法律、伦理、经济和供应链约束？",
+  "如果作者过于乐观，最可能错在哪里？",
+  "如果作者基本正确，现在最该提前准备什么？",
+  "如果作者错误，哪些行动仍然具有稳健价值？"
+];
+
+const contributionRows = [
+  ["对象贡献", "把 Human Infra 定义为主体持续性基础设施，而不是普通长寿知识库或 AI 未来主义页面。"],
+  ["模型贡献", "把寿命、健康寿命、有效时间、主观时间、相对时间和未来选择权放入同一生命路径概率分布。"],
+  ["方法贡献", "把书籍、论文、工具和谱系资料转成 Source Card、变量表、机制链、反证条件和图表规格。"],
+  ["作品贡献", "把研究内容发布成 arXiv HTML 风格论文页，并为后续 D3 模型页提供契约。"]
+];
+
+const nonGoalRows = [
+  ["不输出个体死亡日期", "模型展示路径分布、阈值和场景，不把个体寿命写成确定预测。"],
+  ["不替代医学建议", "健康、神经、生命支持和干预内容只做研究结构表达。"],
+  ["不把远期技术写成已实现事实", "纳米机器人、强脑机接口、长寿逃逸速度等内容必须保留假设层级。"],
+  ["不把叙事热度当证据强度", "所有判断都要回到机制、变量、证据类型、反证条件和不确定性。"]
+];
+
+const operationalRows = [
+  ["寿命", "T", "死亡事件发生时间。", "生命表、队列研究、疾病终点、死亡登记。", "受人群、地区、时代和数据质量影响。"],
+  ["健康寿命", "H_t", "处于可行动、低失能、低痛苦状态的时间积分。", "ADL/IADL、疾病负担、功能评分、健康质量权重。", "不同文化和量表之间不可直接等同。"],
+  ["有效时间", "E_t", "主体能够完成有价值任务的可用时间。", "工作/学习记录、注意力状态、疲劳恢复、任务吞吐。", "不能简化为清醒时间。"],
+  ["主观时间", "P_t", "主体体验到的时间密度和记忆密度。", "体验采样、记忆事件密度、压力与沉浸记录。", "目前高度依赖自评和代理指标。"],
+  ["相对时间", "R_t", "相对外部世界流速被改变后的等待成本。", "高速旅行、强引力时间膨胀、休眠/冷冻思想实验。", "多数路径仍是远期或思想实验。"],
+  ["未来选择权", "O_t", "未来可选择行动集合的宽度、质量和可逆性。", "资源、健康状态、技能、法律身份、工具权限、社会支持。", "难以单一量化，需要组合指标。"]
+];
+
+const evaluationRows = [
+  ["校准检查", "预测的群体风险分布是否与历史生命表、队列数据或公开统计相容。", "校准曲线、Brier score、分层误差。"],
+  ["敏感性分析", "哪些假设最能改变寿命、健康寿命和有效时间结果。", "单变量扰动、情景矩阵、Sobol/局部敏感性。"],
+  ["消融分析", "去掉 AI、医学信息化、资源、环境或恢复变量后，路径位移如何变化。", "模块消融、贡献分解、对照曲线。"],
+  ["反事实检查", "相关因素是否被误写成干预效果。", "DAG 审查、混杂变量表、反事实问题。"],
+  ["传播检查", "公众是否能理解模型是分布和机制，而不是死亡日期预测。", "页面文案、图注、误读测试、反馈表。"]
+];
+
+const levScenarioRows = [
+  ["有限右移", "LEV(t) < 1", "干预让生存曲线右移，但仍存在清晰有限边界。", "强调风险下降、健康寿命增加和失能推迟。"],
+  ["临界敏感区", "LEV(t) ≈ 1", "微小技术进步、可及性或风险变化会显著影响预测有效寿命边界。", "强调阈值、敏感性和后续技术窗口。"],
+  ["开放边界", "LEV(t) > 1", "剩余寿命增益速度超过日历消耗速度，模型进入开放边界表达。", "强调不输出个体死亡日期，只展示状态类别。"],
+  ["反向破坏", "TailRisk(t) 上升", "灾难性风险、治理失败或医疗不可及会抵消技术收益。", "强调收益曲线必须和风险曲线共同展示。"]
+];
+
+const visualSpecRows = [
+  ["节点", "技术族、变量、状态、风险、治理边界。", "每个节点必须能回到来源、定义和模型位置。"],
+  ["边", "影响路径、因果假设、信息流、资源流。", "边上显示机制类型：直接、间接、观测、行动、转移。"],
+  ["曲线", "生存曲线、健康状态积分、LEV 阈值、有效时间预算。", "曲线表达场景和分布，不表达个人确定命运。"],
+  ["注释", "假设、反证条件、边界说明、来源类型。", "注释必须靠近图中对应对象，避免读者把远期设想读成事实。"],
+  ["交互", "参数切换、技术族筛选、场景对比、来源卡展开。", "交互只能改变模型场景，不能生成医学建议。"]
+];
+
+const limitationRows = [
+  ["资料偏差", "书籍和公开叙事天然偏向高可传播信号。", "后续必须补论文、数据集、公共数据库和反方材料。"],
+  ["时间尺度不一致", "AI、医学、制度、能源、纳米技术的成熟周期不同。", "模型中要拆出短期、中期、远期变量。"],
+  ["代理指标风险", "生物标志物、任务效率和幸福感都可能不是最终终点。", "明确替代终点和真实终点的距离。"],
+  ["个体异质性", "平均效应不等于个人效应。", "先做群体和场景模型，再讨论个体化输入边界。"],
+  ["治理滞后", "制度和安全能力可能慢于技术能力。", "把治理能力作为约束变量，而不是附录。"]
+];
+
+const milestoneRows = [
+  ["M1: 资料资产化", "把书籍、论文、工具、案例转成 Source Card。", "每张卡包含 claim、变量、机制、边界、反证条件。"],
+  ["M2: 模型契约化", "定义变量、单位、状态转移、风险函数和目标函数。", "形成可审查的 model contract。"],
+  ["M3: 图表原型", "完成生命路径分布、LEV 阈值和资源预算三类核心图。", "D3 图表能用中文坐标、图例和状态读数表达模型。"],
+  ["M4: 证据回填", "用论文、数据库和权威报告替换纯书籍叙事。", "每个关键变量至少有来源和证据边界。"],
+  ["M5: 传播版本", "输出论文页、模型页、短文、推文和社区材料。", "不同受众能分别理解价值、边界和下一步。"]
+];
+---
+<PaperReaderLayout
+  title="Human Infra: subject-continuity infrastructure for life-path modeling"
+  description="A LaTeXML-style Human Infra web paper that translates singularity-era technology narratives into subject-continuity infrastructure, life-path modeling, and research visualization."
+  arxivId="human-infra/working-paper.0001"
+  category="cs.HC; q-bio.PE; stat.ME; cs.AI"
+>
+  <nav class="ltx_page_navbar" slot="toc">
+    <nav class="ltx_TOC">
+      <ol class="ltx_toclist">
+        <li class="ltx_tocentry ltx_tocentry_abstract"><a href="#abstract1" title="In Human Infra" class="ltx_ref"><span class="ltx_text ltx_ref_title">Abstract.</span></a></li>
+        <li class="ltx_tocentry ltx_tocentry_section"><a href="#S1" title="In Human Infra" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1 </span>问题定义</span></a></li>
+        <li class="ltx_tocentry ltx_tocentry_subsection"><a href="#S1.SS1" title="In Human Infra" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.1 </span>贡献与非目标</span></a></li>
+        <li class="ltx_tocentry ltx_tocentry_section"><a href="#S2" title="In Human Infra" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2 </span>资料信号</span></a></li>
+        <li class="ltx_tocentry ltx_tocentry_subsection"><a href="#S2.SS1" title="In Human Infra" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2.1 </span>学习入口</span></a></li>
+        <li class="ltx_tocentry ltx_tocentry_subsection"><a href="#S2.SS2" title="In Human Infra" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2.2 </span>全书大图</span></a></li>
+        <li class="ltx_tocentry ltx_tocentry_subsection"><a href="#S2.SS3" title="In Human Infra" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2.3 </span>概念骨架</span></a></li>
+        <li class="ltx_tocentry ltx_tocentry_subsection"><a href="#S2.SS4" title="In Human Infra" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2.4 </span>关系机制</span></a></li>
+        <li class="ltx_tocentry ltx_tocentry_subsection"><a href="#S2.SS5" title="In Human Infra" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2.5 </span>证据边界</span></a></li>
+        <li class="ltx_tocentry ltx_tocentry_section"><a href="#S3" title="In Human Infra" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3 </span>理论转译</span></a></li>
+        <li class="ltx_tocentry ltx_tocentry_subsection"><a href="#S3.SS1" title="In Human Infra" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.1 </span>主体持续性</span></a></li>
+        <li class="ltx_tocentry ltx_tocentry_subsection"><a href="#S3.SS2" title="In Human Infra" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.2 </span>通用资源预算</span></a></li>
+        <li class="ltx_tocentry ltx_tocentry_subsection"><a href="#S3.SS3" title="In Human Infra" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.3 </span>知识到作品</span></a></li>
+        <li class="ltx_tocentry ltx_tocentry_subsection"><a href="#S3.SS4" title="In Human Infra" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.4 </span>隐含变量</span></a></li>
+        <li class="ltx_tocentry ltx_tocentry_section"><a href="#S4" title="In Human Infra" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">4 </span>生命路径模型</span></a></li>
+        <li class="ltx_tocentry ltx_tocentry_subsection"><a href="#S4.SS1" title="In Human Infra" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">4.1 </span>资料到变量</span></a></li>
+        <li class="ltx_tocentry ltx_tocentry_subsection"><a href="#S4.SS2" title="In Human Infra" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">4.2 </span>技术价值公式</span></a></li>
+        <li class="ltx_tocentry ltx_tocentry_subsection"><a href="#S4.SS3" title="In Human Infra" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">4.3 </span>操作化定义</span></a></li>
+        <li class="ltx_tocentry ltx_tocentry_subsection"><a href="#S4.SS4" title="In Human Infra" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">4.4 </span>模型评估</span></a></li>
+        <li class="ltx_tocentry ltx_tocentry_section"><a href="#S5" title="In Human Infra" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">5 </span>长寿逃逸速度</span></a></li>
+        <li class="ltx_tocentry ltx_tocentry_subsection"><a href="#S5.SS1" title="In Human Infra" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">5.1 </span>LEV 场景</span></a></li>
+        <li class="ltx_tocentry ltx_tocentry_section"><a href="#S6" title="In Human Infra" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">6 </span>可视化表达</span></a></li>
+        <li class="ltx_tocentry ltx_tocentry_subsection"><a href="#S6.SS1" title="In Human Infra" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">6.1 </span>图表语法</span></a></li>
+        <li class="ltx_tocentry ltx_tocentry_section"><a href="#S7" title="In Human Infra" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">7 </span>工具链复现</span></a></li>
+        <li class="ltx_tocentry ltx_tocentry_section"><a href="#S8" title="In Human Infra" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">8 </span>治理边界</span></a></li>
+        <li class="ltx_tocentry ltx_tocentry_subsection"><a href="#S8.SS1" title="In Human Infra" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">8.1 </span>局限性</span></a></li>
+        <li class="ltx_tocentry ltx_tocentry_section"><a href="#S9" title="In Human Infra" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">9 </span>研究路线</span></a></li>
+        <li class="ltx_tocentry ltx_tocentry_subsection"><a href="#S9.SS1" title="In Human Infra" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">9.1 </span>决策检查</span></a></li>
+        <li class="ltx_tocentry ltx_tocentry_subsection"><a href="#S9.SS2" title="In Human Infra" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">9.2 </span>里程碑</span></a></li>
+        <li class="ltx_tocentry ltx_tocentry_bibliography"><a href="#references" title="In Human Infra" class="ltx_ref"><span class="ltx_text ltx_ref_title">References</span></a></li>
+      </ol>
+    </nav>
+  </nav>
+
+  <article class="ltx_document ltx_authors_1line ltx_leqno">
+    <h1 class="ltx_title ltx_title_document">Human Infra: 面向主体持续性的生命路径建模、科研叙事与可视化框架</h1>
+    <div class="ltx_authors">
+      <span class="ltx_creator ltx_role_author">
+        <span class="ltx_personname">Human Infra Research Notes</span>
+      </span>
+    </div>
+    <div class="ltx_dates">Working paper / arXiv HTML papers style prototype / 2026-06-27</div>
+
+    <div id="abstract1" class="ltx_abstract">
+      <h6 class="ltx_title ltx_title_abstract">Abstract.</h6>
+      <p class="ltx_p">本文提出 Human Infra 的网页研究对象：把《奇点更近》一类关于 AI、生物技术、脑机接口、纳米技术与长寿逃逸速度的未来叙事，转译为“主体持续性基础设施”的研究材料、模型变量、可视化对象和治理约束。本文的核心判断是：价值、目标、事业和创造并不直接悬浮存在，它们都预设一个能够继续感知、判断、行动、学习、恢复、修正并进入未来的主体。因而，Human Infra 不是普通健康管理、长寿知识库或技术乐观主义展示页，而是一套围绕主体持续窗口、有效行动时间、未来选择权和通用资源预算增量建立的研究框架。</p>
+      <p class="ltx_p">文章给出三层贡献：第一，把书籍资料中的“指数技术信号”拆成变量、机制、证据边界和反证条件；第二，把寿命、健康寿命、有效时间、主观时间、相对时间和未来选择权放入生命路径概率分布模型；第三，把模型表达为可发布的学术网页形态，包括论文式阅读页、机制图、变量表、临界阈值图和后续 D3 交互模型页。本文不声称任何远期预测已经实现，也不输出个体死亡日期；它提供的是一种将宏大技术叙事转化为可讨论、可审查、可建模、可传播研究作品的方法。</p>
+    </div>
+    <div class="ltx_keywords">
+      <h6 class="ltx_title ltx_title_keywords">关键词： </h6>主体持续性；生命路径；有效时间；长寿逃逸速度；通用资源预算；科研叙事网页；Human Infra
+    </div>
+    <div class="ltx_classification">
+      <h6 class="ltx_title ltx_title_classification">研究分类： </h6>cs.HC; q-bio.PE; stat.ME; cs.AI
+    </div>
+
+    <section id="S1" class="ltx_section">
+      <h2 class="ltx_title ltx_title_section"><span class="ltx_tag ltx_tag_section">1. </span>问题定义：从未来叙事到主体持续性工程</h2>
+      <div class="ltx_para">
+        <p class="ltx_p">Human Infra 的核心对象不是单项技术，也不是单个长寿方案，而是一个更上位的问题：一个主体如何在时间中继续存在、继续行动、继续学习、继续修正，并保持进入未来的资格。传统讨论常把“做什么”“如何更高效”“如何获得成果”视为第一问题；Human Infra 反过来追问这些问题的边界条件：如果主体终止，感知、判断、行动、学习、创造和未来选择权同步终止，那么所有边界内优化都只是有限倒计时中的局部最优。</p>
+        <p class="ltx_p">因此，本文把“主体持续性”定义为价值实现的基础设施问题。健康、寿命、认知、AI、医学、工具、环境、协作、资源、反馈、恢复系统和未来等待路径，都只有在它们增强主体持续存在和持续行动的能力时，才进入同一个研究对象。</p>
+      </div>
+      <div id="S1.ThmTheorem1" class="ltx_theorem ltx_theorem_Proposition">
+        <h6 class="ltx_title ltx_runin ltx_title_theorem">
+          <span class="ltx_tag ltx_tag_theorem"><span class="ltx_text ltx_font_bold">命题 1</span></span><span class="ltx_text ltx_font_bold">.</span>
+        </h6>
+        <div class="ltx_para">
+          <p class="ltx_p">在既定寿命、能力和死亡边界内优化任务选择，属于边界内优化；维护、延展并升级“能够继续做事的主体”，属于边界条件工程。</p>
+        </div>
+      </div>
+      <div id="S1.ThmTheorem2" class="ltx_theorem ltx_theorem_Definition">
+        <h6 class="ltx_title ltx_runin ltx_title_theorem">
+          <span class="ltx_tag ltx_tag_theorem"><span class="ltx_text ltx_font_bold">定义 1</span></span><span class="ltx_text ltx_font_bold">.</span>
+        </h6>
+        <div class="ltx_para">
+          <p class="ltx_p">Human Infra 是对主体持续性进行工程化建设的知识与工具系统。它研究哪些条件、技术、制度和环境能够延展主体的生存窗口、健康窗口、行动窗口、学习窗口、恢复窗口和未来选择窗口。</p>
+        </div>
+      </div>
+      <section id="S1.SS1" class="ltx_subsection">
+        <h3 class="ltx_title ltx_title_subsection"><span class="ltx_tag ltx_tag_subsection">1.1 </span>贡献与非目标</h3>
+        <p class="ltx_p">为了避免项目被误解成“讲长寿的网页”或“复述一本书的读书笔记”，本文先把贡献和非目标写成显式契约。贡献说明本文要新增什么研究对象、模型对象和作品对象；非目标说明哪些高风险误读不进入本页承诺。</p>
+        <div class="ltx_table">
+          <table>
+            <thead>
+              <tr>
+                <th>贡献类型</th>
+                <th>具体内容</th>
+              </tr>
+            </thead>
+            <tbody>
+              {contributionRows.map(([kind, content]) => (
+                <tr>
+                  <td>{kind}</td>
+                  <td>{content}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <div class="ltx_table">
+          <table>
+            <thead>
+              <tr>
+                <th>非目标</th>
+                <th>原因</th>
+              </tr>
+            </thead>
+            <tbody>
+              {nonGoalRows.map(([goal, reason]) => (
+                <tr>
+                  <td>{goal}</td>
+                  <td>{reason}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </section>
+
+    <section id="S2" class="ltx_section">
+      <h2 class="ltx_title ltx_title_section"><span class="ltx_tag ltx_tag_section">2. </span>资料信号：从《奇点更近》提取可建模对象</h2>
+      <div class="ltx_para">
+        <p class="ltx_p">《奇点更近》一类资料的价值，不在于把所有时间表当作确定事实，而在于提供一组高密度信号：计算成本下降、AI 能力提升、生物医学信息化、人机接口、纳米技术、长寿逃逸速度和技术风险治理。Human Infra 的处理方式不是直接复述预测，而是把这些信号拆成可进入模型的变量与机制。</p>
+      </div>
+      <figure class="ltx_figure">
+        <svg viewBox="0 0 900 260" role="img" aria-labelledby="fig-signal-title fig-signal-desc">
+          <title id="fig-signal-title">资料信号转译为 Human Infra 模型对象</title>
+          <desc id="fig-signal-desc">从书籍信号到变量、因果机制、生命路径分布和 Web 研究作品的管线。</desc>
+          <defs>
+            <marker id="arrow-signal" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+              <path d="M 0 0 L 10 5 L 0 10 z" fill="#374151"></path>
+            </marker>
+          </defs>
+          <rect x="20" y="35" width="145" height="72" rx="4" fill="#f8fafc" stroke="#334155"></rect>
+          <text x="92" y="63" text-anchor="middle" font-size="17" fill="#111827">学习资料</text>
+          <text x="92" y="88" text-anchor="middle" font-size="13" fill="#4b5563">AI / 生物技术 / BCI</text>
+          <rect x="205" y="35" width="145" height="72" rx="4" fill="#f8fafc" stroke="#334155"></rect>
+          <text x="277" y="63" text-anchor="middle" font-size="17" fill="#111827">技术信号</text>
+          <text x="277" y="88" text-anchor="middle" font-size="13" fill="#4b5563">成本 / 性能 / 融合</text>
+          <rect x="390" y="35" width="145" height="72" rx="4" fill="#f8fafc" stroke="#334155"></rect>
+          <text x="462" y="63" text-anchor="middle" font-size="17" fill="#111827">模型变量</text>
+          <text x="462" y="88" text-anchor="middle" font-size="13" fill="#4b5563">状态 / 转移 / 风险</text>
+          <rect x="575" y="35" width="145" height="72" rx="4" fill="#f8fafc" stroke="#334155"></rect>
+          <text x="647" y="63" text-anchor="middle" font-size="17" fill="#111827">生命路径</text>
+          <text x="647" y="88" text-anchor="middle" font-size="13" fill="#4b5563">分布右移 / 临界阈值</text>
+          <rect x="760" y="35" width="120" height="72" rx="4" fill="#f8fafc" stroke="#334155"></rect>
+          <text x="820" y="63" text-anchor="middle" font-size="17" fill="#111827">Web 作品</text>
+          <text x="820" y="88" text-anchor="middle" font-size="13" fill="#4b5563">论文 / 图表 / 卡片</text>
+          <line x1="168" y1="71" x2="197" y2="71" stroke="#374151" stroke-width="1.8" marker-end="url(#arrow-signal)"></line>
+          <line x1="353" y1="71" x2="382" y2="71" stroke="#374151" stroke-width="1.8" marker-end="url(#arrow-signal)"></line>
+          <line x1="538" y1="71" x2="567" y2="71" stroke="#374151" stroke-width="1.8" marker-end="url(#arrow-signal)"></line>
+          <line x1="723" y1="71" x2="752" y2="71" stroke="#374151" stroke-width="1.8" marker-end="url(#arrow-signal)"></line>
+          <rect x="70" y="155" width="760" height="48" rx="4" fill="#fff7ed" stroke="#9a3412"></rect>
+          <text x="450" y="184" text-anchor="middle" font-size="16" fill="#7c2d12">关键转换：把“未来会怎样”的叙事，改写成“哪些变量通过何种机制改变主体持续性”的研究问题。</text>
+        </svg>
+        <figcaption>Figure 1. 资料信号不是直接成为结论，而是先进入变量、机制、证据边界和可视化对象。</figcaption>
+      </figure>
+      <div class="ltx_table">
+        <table>
+          <thead>
+            <tr>
+              <th>资料信号</th>
+              <th>Human Infra 变量</th>
+              <th>模型位置</th>
+              <th>需要保留的边界</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>AI 能力提升</td>
+              <td>工具接入、诊断速度、学习速度、决策质量</td>
+              <td>改变行动能力 A_t 与观测能力 O_t</td>
+              <td>区分能力演示、稳定产品和可验证结果</td>
+            </tr>
+            <tr>
+              <td>医学信息化</td>
+              <td>早筛、药物发现、临床验证、个体风险预测</td>
+              <td>改变风险函数 λ(t) 与状态转移 P(X_next | X_t, A_t)</td>
+              <td>区分替代指标、疾病终点和寿命终点</td>
+            </tr>
+            <tr>
+              <td>脑机接口</td>
+              <td>认知带宽、记忆外化、身份连续性、权限边界</td>
+              <td>改变认知状态 C_t 与工具耦合强度</td>
+              <td>保留同意、退出、隐私和人格边界</td>
+            </tr>
+            <tr>
+              <td>长寿逃逸速度</td>
+              <td>剩余寿命增益速度、时间窗口、未来技术到达概率</td>
+              <td>形成 LEV(t) 阈值和开放边界状态</td>
+              <td>临界概念不能写成已实现永生</td>
+            </tr>
+            <tr>
+              <td>纳米技术远期设想</td>
+              <td>体内修复、制造精度、免疫增强、未知尾部风险</td>
+              <td>作为远期干预族 T_i 与高度不确定假设</td>
+              <td>必须标注工程、监管和安全不确定性</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <section id="S2.SS1" class="ltx_subsection">
+        <h3 class="ltx_title ltx_title_subsection"><span class="ltx_tag ltx_tag_subsection">2.1 </span>学习入口：这本书到底解决什么问题</h3>
+        <p class="ltx_p">这份学习资料的核心问题是：人类是否正在进入一个由人工智能、生物技术、纳米技术和脑机接口共同推动的“奇点”阶段；如果这个判断有部分成立，我们应该如何理解、准备并管理这个过程。进入 Human Infra 后，这个问题被重写为：指数技术是否正在改变主体持续性的外部条件、内部能力和未来选择权。</p>
+        <p class="ltx_p">资料中最重要的纠偏有四个。第一，线性直觉会低估指数增长，尤其低估长期成本下降和性能提升在后期的突变感。第二，负面新闻会遮蔽识字率、寿命、贫困率、能源成本、卫生条件等长期改善。第三，AI 不只是一种外部竞争者，也可能成为人类智能、学习、诊断、记忆和协作的延伸。第四，衰老、疾病和认知上限不必被当作绝对常量，它们可能被信息化医学、自动化科研和远期修复技术重新建模。</p>
+        <div class="ltx_table">
+          <table>
+            <thead>
+              <tr>
+                <th>学习目标</th>
+                <th>进入 Human Infra 后的用途</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>理解加速回报定律</td>
+                <td>判断某个技术域是否可能通过成本下降和能力上升改变干预可获得性。</td>
+              </tr>
+              <tr>
+                <td>看懂 AI、生物技术、脑机接口、能源、制造的相互强化</td>
+                <td>把单点技术写成组合变量，而不是孤立口号。</td>
+              </tr>
+              <tr>
+                <td>判断预测的证据链和薄弱处</td>
+                <td>把事实、趋势、推断、远期设想和反证条件分层。</td>
+              </tr>
+              <tr>
+                <td>转化为学习、职业、健康和社会决策框架</td>
+                <td>把未来叙事改写成主体能力、资源预算和风险治理问题。</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div id="S2.ThmTheorem1" class="ltx_theorem ltx_theorem_Remark">
+          <h6 class="ltx_title ltx_runin ltx_title_theorem">
+            <span class="ltx_tag ltx_tag_theorem"><span class="ltx_text ltx_font_bold">使用边界</span></span><span class="ltx_text ltx_font_bold">.</span>
+          </h6>
+          <div class="ltx_para">
+            <p class="ltx_p">这份资料不能作为短期投资、医学、法律或政策建议，也不能被当作已经证明的未来蓝图。它的项目价值在于提供变量、链路、假设、反证条件和传播结构。</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="S2.SS2" class="ltx_subsection">
+        <h3 class="ltx_title ltx_title_subsection"><span class="ltx_tag ltx_tag_subsection">2.2 </span>全书大图：从六个时代到风险治理</h3>
+        <p class="ltx_p">全书主线可以压缩成一条结构链：信息技术成本下降，推动 AI 能力提升；AI 又参与科学发现、工程设计、药物发现、材料和制造；当生物、能源、制造和医学被数据化与模拟化，它们开始被信息技术周期改写；随后脑机接口和数字智能扩展人类认知，形成奇点叙事。与此同时，核、生物、纳米和 AI 风险也随技术能力一起增强。</p>
+        <figure class="ltx_figure">
+          <svg viewBox="0 0 900 220" role="img" aria-labelledby="fig-era-title fig-era-desc">
+            <title id="fig-era-title">六个时代与 Human Infra 接入线</title>
+            <desc id="fig-era-desc">把库兹韦尔六个时代转写为主体持续性基础设施的历史尺度。</desc>
+            <defs>
+              <marker id="arrow-era" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+                <path d="M 0 0 L 10 5 L 0 10 z" fill="#374151"></path>
+              </marker>
+            </defs>
+            <line x1="80" y1="98" x2="820" y2="98" stroke="#374151" stroke-width="1.8" marker-end="url(#arrow-era)"></line>
+            <g>
+              <circle cx="90" cy="98" r="17" fill="#f8fafc" stroke="#334155"></circle>
+              <text x="90" y="145" text-anchor="middle" font-size="13" fill="#111827">物理化学</text>
+            </g>
+            <g>
+              <circle cx="230" cy="98" r="17" fill="#f8fafc" stroke="#334155"></circle>
+              <text x="230" y="145" text-anchor="middle" font-size="13" fill="#111827">生命 DNA</text>
+            </g>
+            <g>
+              <circle cx="370" cy="98" r="17" fill="#f8fafc" stroke="#334155"></circle>
+              <text x="370" y="145" text-anchor="middle" font-size="13" fill="#111827">大脑</text>
+            </g>
+            <g>
+              <circle cx="510" cy="98" r="17" fill="#f8fafc" stroke="#334155"></circle>
+              <text x="510" y="145" text-anchor="middle" font-size="13" fill="#111827">人类技术</text>
+            </g>
+            <g>
+              <circle cx="650" cy="98" r="17" fill="#fff7ed" stroke="#9a3412"></circle>
+              <text x="650" y="145" text-anchor="middle" font-size="13" fill="#7c2d12">人机融合</text>
+            </g>
+            <g>
+              <circle cx="790" cy="98" r="17" fill="#ecfdf5" stroke="#166534"></circle>
+              <text x="790" y="145" text-anchor="middle" font-size="13" fill="#166534">宇宙智能</text>
+            </g>
+            <rect x="255" y="24" width="390" height="34" rx="4" fill="#f8fafc" stroke="#64748b"></rect>
+            <text x="450" y="46" text-anchor="middle" font-size="14" fill="#111827">Human Infra 接入点：生命、认知、工具、环境、协作和治理共同支撑主体持续性</text>
+          </svg>
+          <figcaption>Figure 2. 六个时代提供宏观谱系；Human Infra 只把其中能支撑主体持续性的部分转为模型对象。</figcaption>
+        </figure>
+        <div class="ltx_table">
+          <table>
+            <thead>
+              <tr>
+                <th>章节</th>
+                <th>书内主题</th>
+                <th>Human Infra 摘取点</th>
+              </tr>
+            </thead>
+            <tbody>
+              {chapterMap.map(([chapter, topic, mapping]) => (
+                <tr>
+                  <td>{chapter}</td>
+                  <td>{topic}</td>
+                  <td>{mapping}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="S2.SS3" class="ltx_subsection">
+        <h3 class="ltx_title ltx_title_subsection"><span class="ltx_tag ltx_tag_subsection">2.3 </span>概念骨架：哪些概念可以进入模型</h3>
+        <p class="ltx_p">Human Infra 对概念的处理方式是“先拆义，再入模”。同一个词可能同时包含事实、隐喻、预测和价值判断；只有当它能被放入状态、行动、风险、恢复、资源或治理变量时，才适合进入定量模型。</p>
+        <div class="ltx_table">
+          <table>
+            <thead>
+              <tr>
+                <th>概念</th>
+                <th>是什么</th>
+                <th>不是什么</th>
+                <th>模型用途</th>
+              </tr>
+            </thead>
+            <tbody>
+              {conceptRows.map(([name, meaning, notMeaning, use]) => (
+                <tr>
+                  <td>{name}</td>
+                  <td>{meaning}</td>
+                  <td>{notMeaning}</td>
+                  <td>{use}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="S2.SS4" class="ltx_subsection">
+        <h3 class="ltx_title ltx_title_subsection"><span class="ltx_tag ltx_tag_subsection">2.4 </span>关系机制：从指数技术到主体持续性</h3>
+        <p class="ltx_p">资料最值得复用的地方，是它把多个技术域放入同一条关系链。Human Infra 不直接接受“奇点会来”的结论，而是复用其机制写法：成本下降如何改变研发能力，研发能力如何改变医学和工具，医学和工具如何改变主体状态，主体状态如何改变寿命、有效时间和选择权。</p>
+        <div class="ltx_listing">
+          <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">计算成本下降</span></span>
+          <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">  -&gt; AI 训练、模拟、搜索和生成能力增强</span></span>
+          <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">  -&gt; AI 加速科学发现、药物发现、材料与工程设计</span></span>
+          <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">  -&gt; 生物、能源、制造、医学进入信息化迁移</span></span>
+          <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">  -&gt; 试错成本下降，干预可获得性提升，恢复能力增强</span></span>
+          <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">  -&gt; 寿命分布、健康寿命、有效行动时间和未来选择权被重新分布</span></span>
+        </div>
+        <div class="ltx_table">
+          <table>
+            <thead>
+              <tr>
+                <th>容易混淆项</th>
+                <th>应当保留的区分</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>奇点 vs 世界末日</td>
+                <td>奇点是智能扩展的巨大转折叙事，不自动等于毁灭事件。</td>
+              </tr>
+              <tr>
+                <td>AI 超越人类 vs AI 替代人类</td>
+                <td>书内更强调长期融合和增强；项目中需区分替代、协作、外包和扩展。</td>
+              </tr>
+              <tr>
+                <td>图灵测试 vs 意识证明</td>
+                <td>图灵测试只能评价行为表现，不能证明主观体验或人格连续性。</td>
+              </tr>
+              <tr>
+                <td>延寿 vs 永生</td>
+                <td>延寿是风险和状态分布右移；永生是更强的哲学和工程主张，不能混写。</td>
+              </tr>
+              <tr>
+                <td>技术乐观 vs 风险无视</td>
+                <td>同一技术能力既可能带来繁荣，也可能提高核、生物、纳米和 AI 尾部风险。</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="S2.SS5" class="ltx_subsection">
+        <h3 class="ltx_title ltx_title_subsection"><span class="ltx_tag ltx_tag_subsection">2.5 </span>证据边界：把叙事强度降到可审查强度</h3>
+        <p class="ltx_p">资料里的很多判断具有很强的叙事势能，但项目不能把叙事势能等同于证据强度。每个观点都要写清楚它依赖什么证据、证据能支持到哪里、最可能的反例是什么。</p>
+        <div class="ltx_table">
+          <table>
+            <thead>
+              <tr>
+                <th>观点</th>
+                <th>支持材料</th>
+                <th>适用边界</th>
+                <th>可能反例</th>
+              </tr>
+            </thead>
+            <tbody>
+              {evidenceRows.map(([claim, support, boundary, counter]) => (
+                <tr>
+                  <td>{claim}</td>
+                  <td>{support}</td>
+                  <td>{boundary}</td>
+                  <td>{counter}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <div class="ltx_note">
+        <strong>阅读边界.</strong> 本页基于学习资料做研究化转译，不等于事实核验。书中预测可以作为假设、变量和时间表进入模型，不能直接作为已发生事实或医学建议。
+      </div>
+    </section>
+
+    <section id="S3" class="ltx_section">
+      <h2 class="ltx_title ltx_title_section"><span class="ltx_tag ltx_tag_section">3. </span>理论转译：Human Infra 的三条解释线</h2>
+      <div class="ltx_para">
+        <p class="ltx_p">Human Infra 的表达不能停在“长寿”“AI”“未来技术”三个孤立词上。更稳的结构是三条解释线：主体持续性解释为什么这个问题上位；通用资源预算解释寿命扩展的二阶效应；知识到作品解释为什么需要网页、图表、资料卡和工具链。</p>
+      </div>
+
+      <section id="S3.SS1" class="ltx_subsection">
+        <h3 class="ltx_title ltx_title_subsection"><span class="ltx_tag ltx_tag_subsection">3.1 </span>主体持续性</h3>
+        <p class="ltx_p">主体持续性表示一个主体在时间中继续存在、继续判断、继续行动、继续学习、继续恢复、继续修正并继续进入未来窗口的能力。它不是单纯的生物寿命，也不是单纯的意识哲学问题，而是身体、认知、人格、资源、工具、环境、协作和制度共同维持的复杂系统状态。</p>
+        <div class="ltx_listing">
+          <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">主体持续性 = 生存窗口 + 健康窗口 + 认知窗口 + 行动窗口 + 恢复窗口 + 未来选择窗口</span></span>
+        </div>
+      </section>
+
+      <section id="S3.SS2" class="ltx_subsection">
+        <h3 class="ltx_title ltx_title_subsection"><span class="ltx_tag ltx_tag_subsection">3.2 </span>通用资源预算</h3>
+        <p class="ltx_p">寿命延长、健康寿命扩展、长寿逃逸、相对论等待、AI 放大和恢复系统会带来二阶效应：时间、注意力、精力、学习窗口、试错次数和未来选择权不再只是固定常量的消耗项，而可能相对原始边界增加。Human Infra 关心这种资源预算如何被创造、保存、扩展和重新分配。</p>
+        <div id="S3.ThmTheorem1" class="ltx_theorem ltx_theorem_Remark">
+          <h6 class="ltx_title ltx_runin ltx_title_theorem">
+            <span class="ltx_tag ltx_tag_theorem"><span class="ltx_text ltx_font_bold">视角</span></span><span class="ltx_text ltx_font_bold">.</span>
+          </h6>
+          <div class="ltx_para">
+            <p class="ltx_p">Human Infra 不是只保护既有注意力和时间，而是研究主体持续窗口被延展后，通用资源总预算如何发生增量变化。</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="S3.SS3" class="ltx_subsection">
+        <h3 class="ltx_title ltx_title_subsection"><span class="ltx_tag ltx_tag_subsection">3.3 </span>知识到作品</h3>
+        <p class="ltx_p">当前阶段的关键工作是整理资料、作品、谱系、论文和工具，并把它们组织成有价值的定性与定量材料：定性部分负责命名对象、建立谱系、定义边界；定量部分负责把因素、技术和行动放入预测模型；可视化部分负责让公众理解变量、机制、临界和风险。</p>
+      </section>
+
+      <section id="S3.SS4" class="ltx_subsection">
+        <h3 class="ltx_title ltx_title_subsection"><span class="ltx_tag ltx_tag_subsection">3.4 </span>隐含变量：把书中未说透的东西显性化</h3>
+        <p class="ltx_p">这本书没有直接说出口但真正重要的部分，是“现实世界的信息化迁移”。未来竞争不只围绕资源、资本或劳动力展开，而围绕谁能更快把现实世界转化为可计算、可模拟、可优化的信息系统。Human Infra 要把这个隐含变量接到主体持续性：谁拥有更好的信息化、模拟、反馈、工具和治理基础设施，谁就更有可能把未来生命路径推向更长、更稳、更可修正的方向。</p>
+        <div class="ltx_table">
+          <table>
+            <thead>
+              <tr>
+                <th>隐含变量</th>
+                <th>书中含义</th>
+                <th>Human Infra 价值</th>
+                <th>模型变量</th>
+              </tr>
+            </thead>
+            <tbody>
+              {humanInfraMapping.map(([name, bookMeaning, value, variable]) => (
+                <tr>
+                  <td>{name}</td>
+                  <td>{bookMeaning}</td>
+                  <td>{value}</td>
+                  <td>{variable}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p class="ltx_p">这里还要保留二阶后果：如果 AI 降低生产、搜索、学习和研发成本，社会矛盾可能从“有没有足够物质”转向“谁控制智能系统、数据、算力、接口和分配制度”；如果医学和身体可以被信息化，身份、亲情、死亡、教育和职业都会进入新的治理边界。</p>
+      </section>
+    </section>
+
+    <section id="S4" class="ltx_section">
+      <h2 class="ltx_title ltx_title_section"><span class="ltx_tag ltx_tag_section">4. </span>生命路径预测模型：以分布而非口号评价技术</h2>
+      <p class="ltx_p">Human Infra 的定量模型不把技术看成“直接加寿命的神奇变量”。更准确的表达是：技术是一类干预算子，它通过改变中间变量、主体状态、风险函数和恢复能力，改变未来生命路径的概率分布。</p>
+      <div class="ltx_listing">
+        <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">技术 T</span></span>
+        <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">  -&gt; 中间变量 X</span></span>
+        <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">  -&gt; 主体状态 S</span></span>
+        <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">  -&gt; 风险函数 λ(t)</span></span>
+        <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">  -&gt; 生存曲线 S(t)</span></span>
+        <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">  -&gt; 寿命 / 健康寿命 / 有效时间 / 主观时间 / 相对时间 / 未来选择权</span></span>
+      </div>
+      <figure class="ltx_figure">
+        <svg viewBox="0 0 900 320" role="img" aria-labelledby="fig-model-title fig-model-desc">
+          <title id="fig-model-title">生命路径概率分布模型</title>
+          <desc id="fig-model-desc">干预通过状态、风险和恢复能力改变生命路径分布。</desc>
+          <defs>
+            <marker id="arrow-model" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+              <path d="M 0 0 L 10 5 L 0 10 z" fill="#374151"></path>
+            </marker>
+          </defs>
+          <line x1="70" y1="260" x2="820" y2="260" stroke="#111827" stroke-width="2"></line>
+          <line x1="70" y1="260" x2="70" y2="55" stroke="#111827" stroke-width="2"></line>
+          <text x="835" y="265" font-size="15" fill="#111827">年龄 / 时间 t</text>
+          <text x="35" y="52" font-size="15" fill="#111827" transform="rotate(-90 35 52)">生存概率 S(t)</text>
+          <path d="M 80 80 C 170 86, 250 110, 325 154 C 430 215, 525 245, 720 257" fill="none" stroke="#64748b" stroke-width="4"></path>
+          <path d="M 80 78 C 195 78, 300 92, 400 126 C 515 165, 620 218, 780 252" fill="none" stroke="#2563eb" stroke-width="4"></path>
+          <path d="M 80 76 C 210 75, 330 82, 455 104 C 575 127, 690 174, 815 230" fill="none" stroke="#16a34a" stroke-width="4"></path>
+          <text x="610" y="236" font-size="14" fill="#64748b">基线分布</text>
+          <text x="650" y="205" font-size="14" fill="#2563eb">已验证干预组合</text>
+          <text x="645" y="153" font-size="14" fill="#16a34a">高不确定未来技术窗口</text>
+          <rect x="120" y="285" width="190" height="26" rx="3" fill="#f8fafc" stroke="#64748b"></rect>
+          <text x="215" y="303" text-anchor="middle" font-size="13" fill="#111827">死亡风险下降</text>
+          <rect x="340" y="285" width="190" height="26" rx="3" fill="#f8fafc" stroke="#64748b"></rect>
+          <text x="435" y="303" text-anchor="middle" font-size="13" fill="#111827">健康状态积分增加</text>
+          <rect x="560" y="285" width="190" height="26" rx="3" fill="#f8fafc" stroke="#64748b"></rect>
+          <text x="655" y="303" text-anchor="middle" font-size="13" fill="#111827">未来选择权扩大</text>
+          <line x1="215" y1="282" x2="260" y2="214" stroke="#374151" stroke-width="1.4" marker-end="url(#arrow-model)"></line>
+          <line x1="435" y1="282" x2="500" y2="157" stroke="#374151" stroke-width="1.4" marker-end="url(#arrow-model)"></line>
+          <line x1="655" y1="282" x2="705" y2="165" stroke="#374151" stroke-width="1.4" marker-end="url(#arrow-model)"></line>
+        </svg>
+        <figcaption>Figure 3. 技术价值体现在生命路径概率分布的移动，而不是单点口号。</figcaption>
+      </figure>
+      <div class="ltx_table">
+        <table>
+          <thead>
+            <tr>
+              <th>模型层级</th>
+              <th>代表变量</th>
+              <th>数学位置</th>
+              <th>可视化表达</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>状态变量</td>
+              <td>健康、认知、疾病、资源、环境、工具接入</td>
+              <td>X_t</td>
+              <td>当前主体状态雷达 / 条形分解</td>
+            </tr>
+            <tr>
+              <td>行动变量</td>
+              <td>医学干预、AI 工具、风险规避、睡眠、运动、学习</td>
+              <td>A_t</td>
+              <td>干预面板 / 技术族选择器</td>
+            </tr>
+            <tr>
+              <td>状态转移</td>
+              <td>衰退速度、恢复速度、疾病进展、技能累积</td>
+              <td>P(X_next | X_t, A_t)</td>
+              <td>路径箭头 / 转移矩阵</td>
+            </tr>
+            <tr>
+              <td>风险函数</td>
+              <td>死亡风险、失能风险、事故风险、技术尾部风险</td>
+              <td>λ(t | X_t, A_t)</td>
+              <td>风险曲线 / 阈值线</td>
+            </tr>
+            <tr>
+              <td>目标函数</td>
+              <td>寿命、健康寿命、有效时间、主观时间、相对时间、选择权</td>
+              <td>J(π)</td>
+              <td>路径分布 / 面积积分 / 临界状态</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="ltx_listing">
+        <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">J(π) = E[T] + α E[HealthyTime] + β E[EffectiveActionTime] + γ E[OptionValue] - Risk - Uncertainty - OpportunityCost</span></span>
+      </div>
+      <p class="ltx_p">这里的策略 π 不是单一行为，而是在长期时间轴上选择、组合、停止、替换和复核干预的规则。它更接近动态因果决策系统，而不是静态知识库。</p>
+
+      <section id="S4.SS1" class="ltx_subsection">
+        <h3 class="ltx_title ltx_title_subsection"><span class="ltx_tag ltx_tag_subsection">4.1 </span>资料到变量：书籍信号如何进入模型契约</h3>
+        <p class="ltx_p">下面的表把学习资料拆成可复用的数据卡。每一行都回答四个问题：书内信号是什么，它在 Human Infra 中对应什么变量，放在模型哪个位置，以及它不能越过什么边界。</p>
+        <div class="ltx_table">
+          <table>
+            <thead>
+              <tr>
+                <th>信号</th>
+                <th>书内角色</th>
+                <th>Human Infra 变量</th>
+                <th>模型位置</th>
+                <th>边界</th>
+              </tr>
+            </thead>
+            <tbody>
+              {bookSignals.map((row) => (
+                <tr>
+                  <td>{row.signal}</td>
+                  <td>{row.bookRole}</td>
+                  <td>{row.humanInfraVariable}</td>
+                  <td>{row.modelPosition}</td>
+                  <td>{row.boundary}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="S4.SS2" class="ltx_subsection">
+        <h3 class="ltx_title ltx_title_subsection"><span class="ltx_tag ltx_tag_subsection">4.2 </span>技术价值公式：从“是否延寿”改成“如何移动分布”</h3>
+        <p class="ltx_p">判断技术价值时，核心问题不是“这个技术能不能延寿”，而是“这个技术通过什么机制影响哪些变量，这些变量如何改变死亡风险、健康寿命、主体能力和未来选择权”。这使项目从定性资料库进入定量预测模型。</p>
+        <div class="ltx_listing">
+          <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">技术价值 =</span></span>
+          <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">  影响变量的重要性</span></span>
+          <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">  × 因果路径可信度</span></span>
+          <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">  × 效应大小</span></span>
+          <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">  × 持续时间</span></span>
+          <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">  × 可获得性</span></span>
+          <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">  × 可组合性</span></span>
+          <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">  - 风险 - 不确定性 - 机会成本</span></span>
+        </div>
+        <div class="ltx_table">
+          <table>
+            <thead>
+              <tr>
+                <th>理论底座</th>
+                <th>在模型中负责什么</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>生存分析</td>
+                <td>处理寿命 T、生存函数 S(t)、风险函数 λ(t)、健康寿命、失能时间和竞争风险。</td>
+              </tr>
+              <tr>
+                <td>因果推断</td>
+                <td>区分相关性和干预效果，用 DAG、SCM、反事实和 do(X) 表达“如果改变 X 会怎样”。</td>
+              </tr>
+              <tr>
+                <td>动态系统 / 控制论</td>
+                <td>把身体、认知、资源、环境和行动看成随时间演化的状态系统。</td>
+              </tr>
+              <tr>
+                <td>可靠性工程 / 风险工程</td>
+                <td>把死亡和失能看成复杂系统的多子系统失效问题，关注冗余、恢复、单点故障和尾部风险。</td>
+              </tr>
+              <tr>
+                <td>概率论 / 测度论</td>
+                <td>把未来生命路径视为可能世界集合，用干预策略改变路径概率测度。</td>
+              </tr>
+              <tr>
+                <td>统计学</td>
+                <td>从纵向数据、队列、RCT、贝叶斯模型和敏感性分析中估计参数与不确定性。</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div id="S4.ThmTheorem1" class="ltx_theorem ltx_theorem_Proposition">
+          <h6 class="ltx_title ltx_runin ltx_title_theorem">
+            <span class="ltx_tag ltx_tag_theorem"><span class="ltx_text ltx_font_bold">模型命题</span></span><span class="ltx_text ltx_font_bold">.</span>
+          </h6>
+          <div class="ltx_para">
+            <p class="ltx_p">一个技术的价值，不取决于它听起来多先进，而取决于它是否能在可接受风险下，稳定地把主体未来生命路径的分布向右推，并扩大健康状态积分、有效行动时间和未来选择权。</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="S4.SS3" class="ltx_subsection">
+        <h3 class="ltx_title ltx_title_subsection"><span class="ltx_tag ltx_tag_subsection">4.3 </span>操作化定义：把宏大词汇压到可测变量</h3>
+        <p class="ltx_p">定量模型最容易失败的地方，是把“寿命、有效时间、主观时间、未来选择权”当作直观概念使用，却没有说明它们怎样被观测、怎样被估计、怎样被图表展示。下面的操作化表是后续模型契约的最小骨架。</p>
+        <div class="ltx_table">
+          <table>
+            <thead>
+              <tr>
+                <th>对象</th>
+                <th>符号</th>
+                <th>定义</th>
+                <th>候选观测</th>
+                <th>限制</th>
+              </tr>
+            </thead>
+            <tbody>
+              {operationalRows.map(([object, symbol, definition, observation, limit]) => (
+                <tr>
+                  <td>{object}</td>
+                  <td>{symbol}</td>
+                  <td>{definition}</td>
+                  <td>{observation}</td>
+                  <td>{limit}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <div class="ltx_listing">
+          <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">生命路径 ω = &#123;X_t, A_t, O_t, R_t, λ_t, H_t, E_t, P_t, Risk_t&#125;_&#123;t=0..T&#125;</span></span>
+          <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">模型输出 = 分布、积分、阈值状态、场景比较；不是个人确定日期。</span></span>
+        </div>
+      </section>
+
+      <section id="S4.SS4" class="ltx_subsection">
+        <h3 class="ltx_title ltx_title_subsection"><span class="ltx_tag ltx_tag_subsection">4.4 </span>模型评估：如何判断它不是漂亮幻觉</h3>
+        <p class="ltx_p">一个预测模型如果不能被校准、扰动、消融和反证，就只能算叙事图。Human Infra 的模型评估不要求一开始就拥有完整个体级数据，但必须从第一版开始保留可检验结构。</p>
+        <div class="ltx_table">
+          <table>
+            <thead>
+              <tr>
+                <th>评估类型</th>
+                <th>要回答的问题</th>
+                <th>可执行检查</th>
+              </tr>
+            </thead>
+            <tbody>
+              {evaluationRows.map(([kind, question, check]) => (
+                <tr>
+                  <td>{kind}</td>
+                  <td>{question}</td>
+                  <td>{check}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <div id="S4.ThmTheorem2" class="ltx_theorem ltx_theorem_Remark">
+          <h6 class="ltx_title ltx_runin ltx_title_theorem">
+            <span class="ltx_tag ltx_tag_theorem"><span class="ltx_text ltx_font_bold">最小验收</span></span><span class="ltx_text ltx_font_bold">.</span>
+          </h6>
+          <div class="ltx_para">
+            <p class="ltx_p">第一版模型至少要能解释：某个技术信号进入了哪个变量，通过什么机制改变状态转移或风险函数，在哪些假设下让生命路径分布右移，哪些反证会推翻该判断。</p>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <section id="S5" class="ltx_section">
+      <h2 class="ltx_title ltx_title_section"><span class="ltx_tag ltx_tag_section">5. </span>长寿逃逸速度：有限边界、临界区与开放边界</h2>
+      <p class="ltx_p">长寿逃逸速度的可视化重点不是“承诺无限寿命”，而是表达一个临界问题：技术与医学带来的预期剩余寿命增益速度，是否接近或超过日历时间消耗速度。当该比值低于 1，模型展示有限边界下的右移；当它接近 1，展示临界敏感区；当它越过 1，展示开放边界状态，但仍不输出个体死亡日期。</p>
+      <figure class="ltx_figure">
+        <svg viewBox="0 0 900 340" role="img" aria-labelledby="fig-lev-title fig-lev-desc">
+          <title id="fig-lev-title">长寿逃逸速度临界图</title>
+          <desc id="fig-lev-desc">LEV 比值越过 1 后，模型从有限预测边界进入开放边界表达。</desc>
+          <line x1="80" y1="270" x2="820" y2="270" stroke="#111827" stroke-width="2"></line>
+          <line x1="80" y1="270" x2="80" y2="55" stroke="#111827" stroke-width="2"></line>
+          <text x="835" y="275" font-size="15" fill="#111827">时间</text>
+          <text x="35" y="64" font-size="15" fill="#111827" transform="rotate(-90 35 64)">LEV(t)</text>
+          <line x1="80" y1="160" x2="820" y2="160" stroke="#b91c1c" stroke-width="2" stroke-dasharray="8 6"></line>
+          <text x="835" y="165" font-size="14" fill="#b91c1c">阈值 1</text>
+          <path d="M 90 245 C 190 238, 260 224, 345 202 C 430 180, 500 162, 570 150 C 665 134, 742 112, 810 82" fill="none" stroke="#2563eb" stroke-width="4"></path>
+          <circle cx="520" cy="158" r="8" fill="#b91c1c"></circle>
+          <text x="405" y="145" font-size="14" fill="#111827">临界交叉区</text>
+          <rect x="115" y="290" width="190" height="30" rx="3" fill="#f8fafc" stroke="#64748b"></rect>
+          <text x="210" y="310" text-anchor="middle" font-size="13" fill="#111827">低于阈值：有限右移</text>
+          <rect x="355" y="290" width="190" height="30" rx="3" fill="#fff7ed" stroke="#9a3412"></rect>
+          <text x="450" y="310" text-anchor="middle" font-size="13" fill="#7c2d12">接近阈值：敏感区</text>
+          <rect x="595" y="290" width="190" height="30" rx="3" fill="#ecfdf5" stroke="#166534"></rect>
+          <text x="690" y="310" text-anchor="middle" font-size="13" fill="#166534">越过阈值：开放边界</text>
+        </svg>
+        <figcaption>Figure 4. LEV(t) 用阈值表达预测有效寿命边界：低于阈值、接近阈值、越过阈值。</figcaption>
+      </figure>
+      <div class="ltx_listing">
+        <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">LEV(t) = d ExpectedRemainingLifetime(t) / d CalendarTime</span></span>
+        <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">LEV(t) &lt; 1: 有限边界下的寿命右移</span></span>
+        <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">LEV(t) ≈ 1: 临界区，后续技术窗口高度影响预测有效寿命</span></span>
+        <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">LEV(t) &gt; 1: 开放边界表达，不输出个体死亡日期</span></span>
+      </div>
+      <p class="ltx_p">这里更合适的术语可以是“预测有效寿命边界”或“生命路径开放边界”。它强调模型在临界状态下的表达方式，而不是把不确定未来写成确定承诺。</p>
+      <section id="S5.SS1" class="ltx_subsection">
+        <h3 class="ltx_title ltx_title_subsection"><span class="ltx_tag ltx_tag_subsection">5.1 </span>LEV 场景：有效寿命边界如何被表达</h3>
+        <p class="ltx_p">长寿逃逸速度适合做成场景分类，而不是单点预测。页面底部状态可以显示“生命路径位移”“低于阈值”“接近阈值”“越过阈值”等读数，让用户理解模型所在区域，而不是诱导其寻找某个确定寿命日期。</p>
+        <div class="ltx_table">
+          <table>
+            <thead>
+              <tr>
+                <th>场景</th>
+                <th>判据</th>
+                <th>模型含义</th>
+                <th>页面表达</th>
+              </tr>
+            </thead>
+            <tbody>
+              {levScenarioRows.map(([scene, criterion, meaning, display]) => (
+                <tr>
+                  <td>{scene}</td>
+                  <td>{criterion}</td>
+                  <td>{meaning}</td>
+                  <td>{display}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </section>
+
+    <section id="S6" class="ltx_section">
+      <h2 class="ltx_title ltx_title_section"><span class="ltx_tag ltx_tag_section">6. </span>可视化表达：论文页、模型页与资料卡的分工</h2>
+      <p class="ltx_p">Human Infra 的网页不是单张宣传页，而应是一个研究作品系统。论文页负责解释概念、定义、模型和边界；模型页负责交互探索和图表；资料卡负责把书籍、论文、工具和案例转成可复用语料；谱系文档负责为理论提供溯源和关联支持。</p>
+      <div class="ltx_table">
+        <table>
+          <thead>
+            <tr>
+              <th>页面/材料</th>
+              <th>主要任务</th>
+              <th>适合表达</th>
+              <th>不承载</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>HTML Paper</td>
+              <td>定义、理论链、模型契约、治理边界</td>
+              <td>长文论证、变量表、机制图、参考文献</td>
+              <td>复杂实时交互</td>
+            </tr>
+            <tr>
+              <td>Model Lab</td>
+              <td>生命路径曲线、LEV 阈值、有效时间预算</td>
+              <td>D3 曲线、参数面板、状态读数</td>
+              <td>医学建议和个体结论</td>
+            </tr>
+            <tr>
+              <td>Source Cards</td>
+              <td>把外部资料拆成可追踪证据单元</td>
+              <td>来源、观点、变量、证据等级、反证条件</td>
+              <td>未经来源支持的断言</td>
+            </tr>
+            <tr>
+              <td>Genealogy</td>
+              <td>为理论提供历史和概念谱系</td>
+              <td>能力方法、人格连续性、控制论、人因工程、风险治理</td>
+              <td>单点口号式宣传</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div id="S6.ThmTheorem1" class="ltx_theorem ltx_theorem_Proposition">
+        <h6 class="ltx_title ltx_runin ltx_title_theorem">
+          <span class="ltx_tag ltx_tag_theorem"><span class="ltx_text ltx_font_bold">设计原则</span></span><span class="ltx_text ltx_font_bold">.</span>
+        </h6>
+        <div class="ltx_para">
+          <p class="ltx_p">论文页负责把复杂思想变得可审查，模型页负责把变量关系变得可感知，资料卡负责把外部知识变得可复用。</p>
+        </div>
+      </div>
+      <div class="ltx_table">
+        <table>
+          <thead>
+            <tr>
+              <th>图表模块</th>
+              <th>展示对象</th>
+              <th>用户应该读出什么</th>
+              <th>适合实现</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>指数技术汇合图</td>
+              <td>算力、AI、生物技术、纳米技术、BCI、能源、制造</td>
+              <td>单点技术不是核心，组合加速才是关键机制。</td>
+              <td>D3 sankey / force graph / timeline</td>
+            </tr>
+            <tr>
+              <td>生命路径分布图</td>
+              <td>基线、已验证干预组合、远期技术假设</td>
+              <td>技术通过移动概率分布而非给出单点寿命承诺来产生价值。</td>
+              <td>D3 line / area / uncertainty band</td>
+            </tr>
+            <tr>
+              <td>LEV 临界图</td>
+              <td>年度寿命收益与年度时间消耗的比值</td>
+              <td>低于阈值、接近阈值、越过阈值对应不同预测边界。</td>
+              <td>D3 threshold line / annotation</td>
+            </tr>
+            <tr>
+              <td>主体资源预算图</td>
+              <td>寿命、健康寿命、有效时间、主观时间、认知带宽、恢复能力</td>
+              <td>寿命扩展的二阶效应是通用资源总预算变化。</td>
+              <td>D3 stacked area / small multiples</td>
+            </tr>
+            <tr>
+              <td>证据与反证矩阵</td>
+              <td>事实、趋势、推断、远期设想、反证条件</td>
+              <td>宏大叙事必须降到可审查的证据结构。</td>
+              <td>HTML table / filter / source card</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <section id="S6.SS1" class="ltx_subsection">
+        <h3 class="ltx_title ltx_title_subsection"><span class="ltx_tag ltx_tag_subsection">6.1 </span>图表语法：D3 页面应该如何读模型</h3>
+        <p class="ltx_p">后续交互页不应该从视觉效果开始设计，而应该从模型语法开始设计。D3 只负责把研究对象编码成可读形态：节点代表对象，边代表机制，曲线代表路径，注释代表边界，交互代表场景切换。</p>
+        <div class="ltx_table">
+          <table>
+            <thead>
+              <tr>
+                <th>视觉语法</th>
+                <th>承载内容</th>
+                <th>约束</th>
+              </tr>
+            </thead>
+            <tbody>
+              {visualSpecRows.map(([grammar, content, constraint]) => (
+                <tr>
+                  <td>{grammar}</td>
+                  <td>{content}</td>
+                  <td>{constraint}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <div class="ltx_listing">
+          <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">D3 data contract:</span></span>
+          <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">  nodes[] = &#123;id, label_zh, type, source_id, model_variable&#125;</span></span>
+          <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">  links[] = &#123;source, target, mechanism, direction, confidence, boundary&#125;</span></span>
+          <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">  curves[] = &#123;scenario, x_time, y_value, threshold, annotation&#125;</span></span>
+        </div>
+      </section>
+    </section>
+
+    <section id="S7" class="ltx_section">
+      <h2 class="ltx_title ltx_title_section"><span class="ltx_tag ltx_tag_section">7. </span>工具链复现：复用 arXiv HTML papers 的阅读器协议</h2>
+      <p class="ltx_p">本页面采用 arXiv HTML papers 风格作为学术阅读器外壳，保留其资源路径、目录、阅读模式、明暗主题、顶部控件和 `ltx_*` 语义结构。项目只替换正文内容，不改写 arXiv 下载资源的 CSS、JS、字体和控件逻辑。</p>
+      <div class="ltx_listing">
+        <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">页面实现：</span></span>
+        <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">  web/src/pages/paper.astro</span></span>
+        <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">阅读器布局：</span></span>
+        <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">  web/src/layouts/PaperReaderLayout.astro</span></span>
+        <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">复用工具：</span></span>
+        <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">  tools/arxiv_html_paper_tool.py</span></span>
+        <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">  tools/arxiv-html-paper/templates/</span></span>
+      </div>
+      <div class="ltx_note">
+        <strong>本次修改边界.</strong> 本轮只优化 `paper.astro` 正文、表格和图表内容；没有修改 arXiv CSS、JS、字体、图标资源，也没有修改 `PaperReaderLayout.astro`。
+      </div>
+    </section>
+
+    <section id="S8" class="ltx_section">
+      <h2 class="ltx_title ltx_title_section"><span class="ltx_tag ltx_tag_section">8. </span>治理边界：避免把研究展示误读为承诺</h2>
+      <p class="ltx_p">Human Infra 的预测模型和网页表达必须保留治理边界。第一，技术预测要区分事实、趋势、推断和远期设想。第二，寿命模型展示路径分布、阈值和变量机制，不输出个体死亡日期。第三，健康、神经、记忆、生命支持相关内容不替代医学、法律或伦理审查。</p>
+      <div class="ltx_table">
+        <table>
+          <thead>
+            <tr>
+              <th>风险</th>
+              <th>表现</th>
+              <th>页面处理方式</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>预测过度确定</td>
+              <td>把远期设想写成已实现事实</td>
+              <td>标注事实、趋势、推断、远期假设</td>
+            </tr>
+            <tr>
+              <td>个体化误用</td>
+              <td>把模型读成个人寿命结论</td>
+              <td>只表达群体级路径位移和模型机制</td>
+            </tr>
+            <tr>
+              <td>技术神话化</td>
+              <td>把 AI、纳米技术或 BCI 当成万能变量</td>
+              <td>要求进入变量、路径、证据和风险表</td>
+            </tr>
+            <tr>
+              <td>边界混淆</td>
+              <td>把网页展示当成医学或法律建议</td>
+              <td>保留用途边界和来源追踪</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div id="S8.ThmTheorem1" class="ltx_theorem ltx_theorem_Remark">
+        <h6 class="ltx_title ltx_runin ltx_title_theorem">
+          <span class="ltx_tag ltx_tag_theorem"><span class="ltx_text ltx_font_bold">边界条件</span></span><span class="ltx_text ltx_font_bold">.</span>
+        </h6>
+        <div class="ltx_para">
+          <p class="ltx_p">页面可以展示研究框架、因果假设、模型结构和群体层面的路径位移；不能把不确定技术写成已实现承诺，不能把学习材料包装成医疗建议。</p>
+        </div>
+      </div>
+      <section id="S8.SS1" class="ltx_subsection">
+        <h3 class="ltx_title ltx_title_subsection"><span class="ltx_tag ltx_tag_subsection">8.1 </span>局限性：当前版本还不能证明什么</h3>
+        <p class="ltx_p">当前页面是研究框架和模型契约，不是完成版预测系统。它的价值在于把对象、变量、机制、边界和作品形态先组织起来；真正的预测精度需要后续数据、参数估计、模型校准和外部审查。</p>
+        <div class="ltx_table">
+          <table>
+            <thead>
+              <tr>
+                <th>局限</th>
+                <th>问题</th>
+                <th>后续处理</th>
+              </tr>
+            </thead>
+            <tbody>
+              {limitationRows.map(([name, issue, action]) => (
+                <tr>
+                  <td>{name}</td>
+                  <td>{issue}</td>
+                  <td>{action}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </section>
+
+    <section id="S9" class="ltx_section">
+      <h2 class="ltx_title ltx_title_section"><span class="ltx_tag ltx_tag_section">9. </span>研究路线：从资料整理到定量 Web 作品</h2>
+      <p class="ltx_p">下一阶段的目标不是继续堆叙事，而是建立可迭代的研究生产线：资料进入资料卡，资料卡抽取变量，变量进入模型契约，模型契约进入图表，图表进入网页，网页再把用户反馈回流到资料和模型。</p>
+      <div class="ltx_listing">
+        <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">资料 / 论文 / 书籍 / 工具</span></span>
+        <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">  -&gt; Source Card</span></span>
+        <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">  -&gt; 变量与证据边界</span></span>
+        <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">  -&gt; 生命路径模型契约</span></span>
+        <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">  -&gt; D3 可视化与论文页解释</span></span>
+        <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">  -&gt; 审查、反馈、版本化更新</span></span>
+      </div>
+      <p class="ltx_p">这样，Human Infra 的网页就不只是“介绍一个概念”，而是把资料、理论、模型、图表和工具组织成可持续扩展的研究作品。</p>
+      <section id="S9.SS1" class="ltx_subsection">
+        <h3 class="ltx_title ltx_title_subsection"><span class="ltx_tag ltx_tag_subsection">9.1 </span>决策检查：从学习资料进入研究资产前必须问什么</h3>
+        <p class="ltx_p">任何书籍观点、论文观点、工具项目或未来技术进入 Human Infra 前，都要先通过最小检查清单。检查清单不是为了削弱表达，而是保证每个内容块都能成为长期可维护的研究资产。</p>
+        <ol class="ltx_enumerate">
+          {checkItems.map((item) => (
+            <li class="ltx_item">
+              <div class="ltx_para">
+                <p class="ltx_p">{item}</p>
+              </div>
+            </li>
+          ))}
+        </ol>
+        <div class="ltx_listing">
+          <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">Source Card 最小字段：</span></span>
+          <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">  source_id, claim, evidence_type, model_variable, mechanism, boundary, counterexample, next_action</span></span>
+        </div>
+        <p class="ltx_p">最终目标是形成两条并行生产线：一条是谱系线，持续补充概念来源、历史位置和相邻理论；另一条是模型线，持续把因素、技术和行动放入寿命、有效时间、主观时间、相对时间与未来选择权的预测框架。</p>
+      </section>
+      <section id="S9.SS2" class="ltx_subsection">
+        <h3 class="ltx_title ltx_title_subsection"><span class="ltx_tag ltx_tag_subsection">9.2 </span>里程碑：从文章到研究系统</h3>
+        <p class="ltx_p">后续推进应避免“继续加页面”的无序扩张，而是按研究生产线推进：先资产化，再契约化，再图表化，再证据回填，最后做传播版本。每一步都要能回到 Source Card、模型变量和页面表达。</p>
+        <div class="ltx_table">
+          <table>
+            <thead>
+              <tr>
+                <th>阶段</th>
+                <th>任务</th>
+                <th>验收</th>
+              </tr>
+            </thead>
+            <tbody>
+              {milestoneRows.map(([stage, task, acceptance]) => (
+                <tr>
+                  <td>{stage}</td>
+                  <td>{task}</td>
+                  <td>{acceptance}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </section>
+
+    <section id="references" class="ltx_section ltx_bibliography">
+      <h2 class="ltx_title ltx_title_section">References</h2>
+      <ol>
+        <li>arXiv HTML paper sample: <a href="https://arxiv.org/html/2606.26689v1">https://arxiv.org/html/2606.26689v1</a>.</li>
+        <li>LaTeXML: <a href="https://dlmf.nist.gov/LaTeXML/">https://dlmf.nist.gov/LaTeXML/</a>.</li>
+        <li>Human Infra model contract: <a href="/research-standards/">Research standards</a> and repository reference documents.</li>
+        <li>Human Infra arXiv reuse kit: <a href="/paper/">current paper route</a> and local `tools/arxiv_html_paper_tool.py`.</li>
+        <li>Learning source note: 《奇点更近》学习资料，作为书内观点的研究化整理材料使用，不作为事实核验结论。</li>
+      </ol>
+    </section>
+  </article>
+</PaperReaderLayout>

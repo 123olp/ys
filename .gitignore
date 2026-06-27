@@ -3,6 +3,7 @@
 .idea/
 .vscode/
 .history/
+.research/
 
 # Python
 __pycache__/
