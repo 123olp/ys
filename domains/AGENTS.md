@@ -45,6 +45,30 @@ domains/
 │   ├── data/
 │   ├── docs/
 │   └── scripts/
+├── genomic-stability-dna-repair/
+│   ├── AGENTS.md
+│   └── README.md
+├── telomere-maintenance/
+│   ├── AGENTS.md
+│   └── README.md
+├── proteostasis-autophagy/
+│   ├── AGENTS.md
+│   └── README.md
+├── mitochondrial-bioenergetics/
+│   ├── AGENTS.md
+│   └── README.md
+├── cellular-senescence-clearance/
+│   ├── AGENTS.md
+│   └── README.md
+├── microbiome-ecology/
+│   ├── AGENTS.md
+│   └── README.md
+├── stem-cell-reserve-renewal/
+│   ├── AGENTS.md
+│   └── README.md
+├── renal-hepatic-clearance/
+│   ├── AGENTS.md
+│   └── README.md
 ├── nutrition-metabolic-health/
 │   ├── AGENTS.md
 │   └── README.md
@@ -110,6 +134,7 @@ domains/
 ## 职责边界
 
 - `longevity-evidence/` 是当前唯一含数据和采集脚本的产品化子域。
+- `genomic-stability-dna-repair/`、`telomere-maintenance/`、`proteostasis-autophagy/`、`mitochondrial-bioenergetics/`、`cellular-senescence-clearance/`、`microbiome-ecology/`、`stem-cell-reserve-renewal/` 和 `renal-hepatic-clearance/` 负责分子维护、宿主生态、内源性修复和肝肾清除底座。
 - `nutrition-metabolic-health/`、`physical-activity-mobility/`、`cardiovascular-resilience/` 和 `musculoskeletal-integrity/` 负责营养、行动、循环和承载结构这些身体运行条件。
 - `cellular-reprogramming/` 负责山中因子、部分重编程、化学重编程、AI 因子设计和表观遗传编辑等“细胞状态可重写”谱系，不提供实验协议或人体应用建议。
 - `regenerative-medicine/`、`cancer-control/` 和 `immune-maintenance/` 负责身体基底维护相关的机制、风险和证据边界。

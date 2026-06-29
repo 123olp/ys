@@ -40,17 +40,21 @@ human_infra/
     ├── biostasis-cryopreservation/ # 生物停滞与冷冻保存
     ├── cancer-control/    # 癌症控制
     ├── cardiovascular-resilience/ # 心血管韧性
+    ├── cellular-senescence-clearance/ # 细胞衰老与清除
     ├── cellular-reprogramming/ # 细胞重编程与表观遗传年轻化谱系
     ├── cognitive-augmentation/ # 认知增强与工具放大
     ├── disembodied-cns/   # 去具身外部维持型中枢生命系统
     ├── future-waiting/    # 去未来 / 压缩等待路径
     ├── governance-rights/ # 治理与主体权利
+    ├── genomic-stability-dna-repair/ # 基因组稳定性与 DNA 修复
     ├── health-literacy-navigation/ # 健康素养与服务导航
     ├── immune-maintenance/# 免疫系统维护
     ├── longevity-evidence/# 原 Biocat 长寿证据账本
     ├── measurement-feedback/ # 测量、预测与反馈
     ├── mental-health-affective-stability/ # 心理健康与情绪稳定
     ├── memory-editing/    # 记忆编辑与人格连续性
+    ├── microbiome-ecology/ # 微生物生态
+    ├── mitochondrial-bioenergetics/ # 线粒体生物能量学
     ├── musculoskeletal-integrity/ # 肌骨完整性
     ├── neuro-continuity/  # 神经与身份连续性
     ├── nutrition-metabolic-health/ # 营养与代谢健康
@@ -58,14 +62,18 @@ human_infra/
     ├── pain-suffering-control/ # 疼痛与痛苦控制
     ├── physical-activity-mobility/ # 身体活动与移动能力
     ├── planetary-health-environment/ # 星球健康与环境
+    ├── proteostasis-autophagy/ # 蛋白稳态与自噬
     ├── regenerative-medicine/ # 再生医学与组织修复
     ├── rehabilitation-functioning/ # 康复与功能恢复
+    ├── renal-hepatic-clearance/ # 肾脏与肝脏清除能力
     ├── resource-social-infra/ # 资源与社会基础设施
     ├── risk-engineering/  # 风险工程
     ├── sensory-continuity/ # 感官连续性
     ├── sleep-circadian-recovery/ # 睡眠、节律与恢复
     ├── social-connection-relational-infra/ # 社会连接与关系基础设施
-    └── substance-exposure-control/ # 物质暴露控制
+    ├── stem-cell-reserve-renewal/ # 干细胞储备与组织更新
+    ├── substance-exposure-control/ # 物质暴露控制
+    └── telomere-maintenance/ # 端粒维护
 ```
 
 ## 职责边界
@@ -78,6 +86,14 @@ human_infra/
 - `docs/` 只放 Human Infra 的上位理论、域边界、伦理原则和原始资料归档，不放具体采集脚本。
 - `domains/` 中每个子域必须有独立 README 和 AGENTS，明确自身对象、非目标、证据要求和上下游关系。
 - `domains/longevity-evidence/` 承接原 Biocat，负责长寿干预证据、临床试验、药品安全、公开数据源和采集脚本。
+- `domains/genomic-stability-dna-repair/` 负责基因组稳定性、DNA 损伤、修复系统、突变负荷和癌前风险。
+- `domains/telomere-maintenance/` 负责端粒长度、端粒酶、复制衰老、组织更新和癌症风险。
+- `domains/proteostasis-autophagy/` 负责蛋白稳态、自噬、溶酶体、蛋白聚集和细胞质量控制。
+- `domains/mitochondrial-bioenergetics/` 负责线粒体功能、细胞能量、氧化应激、疲劳和行动能力。
+- `domains/cellular-senescence-clearance/` 负责细胞衰老、SASP、senolytics、组织炎症和衰老细胞负担。
+- `domains/microbiome-ecology/` 负责人体微生物生态、菌群失调、代谢、免疫和炎症。
+- `domains/stem-cell-reserve-renewal/` 负责干细胞储备、生态位、组织更新、内源性修复和再生能力。
+- `domains/renal-hepatic-clearance/` 负责肾脏、肝脏、解毒、代谢、药物清除和系统稳态。
 - `domains/nutrition-metabolic-health/` 负责营养、饮食质量、代谢健康、体重、糖尿病风险和食物环境。
 - `domains/physical-activity-mobility/` 负责身体活动、久坐、心肺适能、力量、平衡和移动能力。
 - `domains/cardiovascular-resilience/` 负责心脏、血管、血压、动脉粥样硬化、血栓、卒中、心衰和循环系统韧性。
@@ -114,7 +130,7 @@ human_infra/
 
 - Human Infra 的上位对象是“人类任务执行系统”，不是单一长寿产品。
 - Longevity Evidence 承接原 Biocat，但不再占据根目录概念中心。
-- “永生”的不同路径必须按机制拆分：长寿证据、营养代谢、身体活动、心血管韧性、肌骨完整性、细胞重编程、再生医学、康复功能、癌症控制、免疫维护、抗微生物韧性、神经连续性、感官连续性、未来等待、生物停滞、去具身中枢、记忆编辑、认知增强、心理稳定、睡眠恢复、辅助技术、社会连接、物质暴露控制、资源环境、风险工程、健康素养导航、治理权利、口腔健康、痛苦控制和测量反馈不能混成一个概念桶。
+- “永生”的不同路径必须按机制拆分：长寿证据、营养代谢、基因组稳定性、端粒维护、蛋白稳态、自噬、线粒体、细胞衰老、微生物生态、干细胞储备、肝肾清除、身体活动、心血管韧性、肌骨完整性、细胞重编程、再生医学、康复功能、癌症控制、免疫维护、抗微生物韧性、神经连续性、感官连续性、未来等待、生物停滞、去具身中枢、记忆编辑、认知增强、心理稳定、睡眠恢复、辅助技术、社会连接、物质暴露控制、资源环境、风险工程、健康素养导航、治理权利、口腔健康、痛苦控制和测量反馈不能混成一个概念桶。
 - 所有健康、神经、生命支持相关结论必须保留来源、适用对象、不确定性和伦理边界。
 - 新增研究域必须能回到 `docs/reference/research-domain-atlas.md` 的先验条件和域判定契约。
 - 自研代码只做连接、清洗、归一化、证据编排和产品表达；优先复用官方 API、公开数据库和成熟工具。
@@ -141,3 +157,4 @@ human_infra/
 - 2026-06-30：新增 `docs/reference/research-domain-atlas.md` 和 10 个研究域骨架，把有效永生的先验条件映射为可独立维护的研究域。
 - 2026-06-30：新增第二波 8 个研究域骨架，覆盖康复功能、心理稳定、睡眠恢复、辅助技术、抗微生物韧性、环境底座、感官连续性和痛苦控制。
 - 2026-06-30：新增第三波 8 个研究域骨架，覆盖营养代谢、身体活动、心血管韧性、肌骨完整性、社会连接、物质暴露控制、健康素养导航和口腔健康连续性。
+- 2026-06-30：新增第四波 8 个分子维护研究域骨架，覆盖基因组稳定性、端粒维护、蛋白稳态、自噬、线粒体生物能量学、细胞衰老清除、微生物生态、干细胞储备和肝肾清除。

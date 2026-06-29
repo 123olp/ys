@@ -20,14 +20,7 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 
 | 候选域 | 先验条件 | 可能主变量 | 当前归属建议 | 晋升触发 |
 | --- | --- | --- | --- | --- |
-| `genomic-stability-dna-repair` | 主体细胞必须长期保持基因组完整性 | DNA 损伤、突变负荷、修复能力、癌前风险 | 先归入 `longevity-evidence/` 与 `cancer-control/` 交叉 | 出现足够独立的 DNA 修复干预、风险模型和证据账本 |
-| `telomere-maintenance` | 复制能力和组织更新不能被端粒限制过早截断 | 端粒长度、端粒酶、癌症风险、组织再生 | 先归入 `longevity-evidence/` | 需要独立处理端粒收益与癌症风险时晋升 |
-| `proteostasis-autophagy` | 蛋白错误折叠、聚集和清除能力必须长期稳定 | 蛋白稳态、自噬、溶酶体功能、神经退行风险 | 先归入 `longevity-evidence/` 与 `neuro-continuity/` | 蛋白稳态成为独立治疗和测量主线时晋升 |
-| `mitochondrial-bioenergetics` | 主体行动和修复依赖细胞能源系统 | 线粒体功能、氧化压力、疲劳、肌肉和神经功能 | 先归入 `longevity-evidence/` | 有独立证据矩阵和临床终点时晋升 |
 | `metabolic-nutrient-sensing` | 营养感知决定代谢状态、修复和衰老速度 | 胰岛素、mTOR、AMPK、NAD、代谢健康 | 先归入 `longevity-evidence/` | 与长寿干预证据账本分离价值足够高时晋升 |
-| `cellular-senescence-clearance` | 衰老细胞积累会改变炎症和组织功能 | senescence burden、SASP、senolytics、组织功能 | 先归入 `longevity-evidence/`、`immune-maintenance/` | senolytics / senomorphics 证据与风险足够独立时晋升 |
-| `microbiome-dysbiosis` | 主体免疫、代谢和炎症受微生物生态影响 | 菌群失调、炎症、代谢、免疫 | 先归入 `immune-maintenance/` | 微生物组干预成为独立证据体系时晋升 |
-| `renal-hepatic-clearance` | 解毒、代谢和清除能力支撑长期药物与系统稳定 | 肝肾功能、药物代谢、毒性负担 | 先归入 `longevity-evidence/` | 器官功能维护需要独立体系时晋升 |
 | `reproductive-embryonic-rejuvenation` | 自然繁殖包含年龄重置线索 | 胚胎年龄归零、配子质量、代际连续性 | 先归入 `cellular-reprogramming/` | 若成为细胞年轻化理论主轴则晋升 |
 | `digital-identity-security` | 主体在数字社会中必须保有身份、账户和数据入口 | 账号安全、身份盗用、恢复能力、服务入口 | 先归入 `governance-rights/` 与 `resource-social-infra/` | 数字身份成为主体持续性的独立基础设施时晋升 |
 | `ai-agency-safety` | AI 工具放大主体能力，也可能替代或支配主体 | AI 代理、控制权、可解释性、偏差、失控 | 先归入 `cognitive-augmentation/` 与 `governance-rights/` | AI 代理成为独立行动层时晋升 |
@@ -55,6 +48,14 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `substance-exposure-control/` | 烟草、酒精、成瘾性物质和有害暴露会同时改变风险函数与主体自主性 |
 | `health-literacy-navigation/` | 医疗和社会服务只有可理解、可导航、可复核时才会转化为主体收益 |
 | `oral-health-continuity/` | 口腔健康连接营养、疼痛、感染、沟通和社会参与 |
+| `genomic-stability-dna-repair/` | DNA 损伤、修复能力和突变负荷是癌症、衰老和组织功能的上游变量 |
+| `telomere-maintenance/` | 端粒系统独立连接复制能力、组织更新、细胞衰老和癌症风险 |
+| `proteostasis-autophagy/` | 蛋白稳态和自噬是细胞质量控制、神经连续性和组织功能的基础机制 |
+| `mitochondrial-bioenergetics/` | 线粒体功能决定细胞能源、疲劳、行动能力、神经和代谢风险 |
+| `cellular-senescence-clearance/` | 衰老细胞负担和 SASP 具有独立组织环境、炎症和治疗风险边界 |
+| `microbiome-ecology/` | 宿主-微生物生态连接代谢、免疫、炎症、感染抵抗和药物反应 |
+| `stem-cell-reserve-renewal/` | 干细胞储备和生态位决定内源性组织更新、再生能力和肿瘤风险 |
+| `renal-hepatic-clearance/` | 肾脏和肝脏清除能力约束毒性、药物安全、治疗选择和系统稳态 |
 
 ## 来源信号
 
@@ -80,6 +81,10 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | WHO Tobacco / Alcohol | 提示有害物质暴露和成瘾会改变死亡风险、资源消耗和主体自主性 |
 | CDC / HHS Health Literacy | 提示信息可理解性和服务导航决定医疗资源能否实际转化为主体收益 |
 | WHO / CDC Oral Health | 提示口腔健康连接营养、疼痛、感染、沟通和生活质量 |
+| NIA Biology of Aging / Hallmarks of Aging | 提示 DNA 修复、端粒、蛋白稳态、线粒体、细胞衰老和干细胞耗竭是独立维护机制 |
+| NCI DNA Damage / Telomeres fact sheets | 提示遗传信息稳定、修复系统、端粒和癌症风险之间的边界 |
+| NIH Human Microbiome Project | 提示人体微生物生态是代谢、免疫、感染抵抗和药物反应的宿主接口 |
+| NIDDK Kidney / Liver disease resources | 提示肾脏、肝脏、代谢、解毒和药物清除是长期医学可用性的系统约束 |
 
 Source links:
 
@@ -113,6 +118,12 @@ Source links:
 - https://health.gov/our-work/national-health-initiatives/health-literacy
 - https://www.who.int/news-room/fact-sheets/detail/oral-health
 - https://www.cdc.gov/oral-health/
+- https://www.nia.nih.gov/research/dab/biology-aging-program
+- https://www.cancer.gov/about-cancer/causes-prevention/genetics/dna-damage-fact-sheet
+- https://www.cancer.gov/about-cancer/causes-prevention/genetics/telomeres-fact-sheet
+- https://commonfund.nih.gov/hmp
+- https://www.niddk.nih.gov/health-information/kidney-disease/chronic-kidney-disease-ckd
+- https://www.niddk.nih.gov/health-information/liver-disease
 
 ## 使用规则
 

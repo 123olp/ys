@@ -23,6 +23,7 @@ docs/
 │   ├── 0005-establish-research-domain-atlas.md
 │   ├── 0006-add-second-wave-research-domains.md
 │   ├── 0007-add-third-wave-research-domains.md
+│   ├── 0008-add-fourth-wave-molecular-maintenance-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md

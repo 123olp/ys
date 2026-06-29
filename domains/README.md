@@ -6,7 +6,14 @@
 
 - `longevity-evidence/`：长寿证据账本，承接原 Biocat。
 - `nutrition-metabolic-health/`：营养与代谢健康，整理饮食质量、代谢状态、体重、糖尿病风险和食物环境。
+- `genomic-stability-dna-repair/`：基因组稳定性与 DNA 修复，整理 DNA 损伤、修复系统、突变负荷和癌前风险。
+- `telomere-maintenance/`：端粒维护，整理端粒长度、端粒酶、复制衰老、组织更新和癌症风险。
 - `cellular-reprogramming/`：细胞重编程与表观遗传年轻化谱系，整理山中因子、部分重编程、化学重编程、AI 因子设计和身份保持风险。
+- `proteostasis-autophagy/`：蛋白稳态与自噬，整理蛋白折叠、聚集、清除、溶酶体和细胞质量控制。
+- `mitochondrial-bioenergetics/`：线粒体生物能量学，整理线粒体功能、ATP、氧化还原、疲劳和行动能力。
+- `cellular-senescence-clearance/`：细胞衰老与清除，整理衰老细胞负担、SASP、组织炎症和 senolytic 风险。
+- `microbiome-ecology/`：微生物生态，整理宿主-微生物互作、菌群失调、代谢、免疫和感染抵抗。
+- `stem-cell-reserve-renewal/`：干细胞储备与组织更新，整理干细胞耗竭、生态位、内源性修复和再生能力。
 - `regenerative-medicine/`：再生医学与组织修复，整理干细胞、器官再生、组织工程和生物制造。
 - `physical-activity-mobility/`：身体活动与移动能力，整理运动、久坐、心肺适能、力量、平衡和行动密度。
 - `cardiovascular-resilience/`：心血管韧性，整理心脏、血管、血压、血栓、卒中、心衰和循环风险。
@@ -15,6 +22,7 @@
 - `cancer-control/`：癌症控制，整理肿瘤预防、早筛、治疗、复发和长期风险治理。
 - `immune-maintenance/`：免疫系统维护，整理免疫衰老、感染防御、慢性炎症、自身免疫和免疫监视。
 - `antimicrobial-resilience/`：抗微生物韧性，整理耐药性、感染控制和现代医学抗感染底座。
+- `renal-hepatic-clearance/`：肾脏与肝脏清除能力，整理过滤、代谢、解毒、药物清除和系统稳态。
 - `neuro-continuity/`：神经连续性，整理大脑、记忆、意识、人格和主体身份持续条件。
 - `sensory-continuity/`：感官连续性，整理视觉、听觉、平衡、触觉和感官反馈。
 - `future-waiting/`：未来等待路径，承载度规红移固有时差分路径（黑洞等待室）等“压缩等待 / 去未来”思想实验。

@@ -6,6 +6,7 @@ All notable repository structure changes are recorded here.
 
 - Added third-wave research domain skeletons for nutrition and metabolic health, physical activity and mobility, cardiovascular resilience, musculoskeletal integrity, social connection, substance exposure control, health literacy navigation, and oral health continuity.
 - Updated the Research Domain Atlas, Research Domain Radar, domain map, root README, directory AGENTS files, and repository structure check so the new domains are discoverable and validated.
+- Added fourth-wave molecular maintenance domain skeletons for genomic stability and DNA repair, telomere maintenance, proteostasis and autophagy, mitochondrial bioenergetics, cellular senescence clearance, microbiome ecology, stem-cell reserve renewal, and renal-hepatic clearance.
 
 ## 2026-06-29
 
