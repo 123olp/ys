@@ -36,6 +36,19 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `supply-chain-continuity` | 药物、能源、食物和设备断供会截断主体持续性 | 供应链、库存、替代、断供风险 | 先归入 `resource-social-infra/` | 需要独立建模关键物资连续性时晋升 |
 | `synthetic-biology-biosecurity` | 生物技术既能修复主体，也能制造新型风险 | 合成生物学、病原体风险、双重用途、治理 | 先归入 `risk-engineering/` 与 `governance-rights/` | 双重用途治理成为独立研究主线时晋升 |
 
+## 已从 Radar 晋升的方向
+
+| 晋升域 | 晋升理由 |
+| --- | --- |
+| `rehabilitation-functioning/` | 功能恢复、失能预防和社会参与具有独立变量、证据体系和失败模式 |
+| `mental-health-affective-stability/` | 心理稳定、动机、成瘾、创伤和自杀风险能直接截断主体行动 |
+| `sleep-circadian-recovery/` | 睡眠和昼夜节律是恢复系统的基础调度器 |
+| `assistive-technology-access/` | 辅助技术把损伤从终止条件转化为可补偿条件，并具有独立可及性问题 |
+| `antimicrobial-resilience/` | 抗感染能力是手术、移植、癌症治疗和长期医学体系的底座 |
+| `planetary-health-environment/` | 空气、水、气候、污染和生态系统是主体持续性的上游环境条件 |
+| `sensory-continuity/` | 感官系统是主体感知、沟通、行动和反馈闭环的基础 |
+| `pain-suffering-control/` | 持续存在必须同时审查痛苦、可承受性、尊严和有效时间质量 |
+
 ## 来源信号
 
 | 来源 | 对域雷达的启发 |
@@ -45,6 +58,13 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | Healthy People 2030 SDOH framework | 提示经济稳定、教育、医疗可及、社区环境、社会与社区情境可作为资源基础设施维度 |
 | NIST AI Risk Management Framework | 提示 AI 系统需要从 govern、map、measure、manage 进入主体权利和认知增强治理 |
 | NASA Human Research Program | 提示极端环境、空间飞行、辐射、隔离、医疗支持和人因风险可作为未来主体持续性场景 |
+| WHO Rehabilitation 2030 | 提示康复和功能恢复是健康系统核心组成，不只是医疗后处理 |
+| WHO Assistive Technology | 提示辅助技术可及性是功能持续和社会参与的关键基础设施 |
+| WHO Antimicrobial Resistance | 提示耐药性会侵蚀现代医学和长期感染控制底座 |
+| WHO Vision and Hearing resources | 提示感官系统是主体感知、沟通和行动连续性的基础 |
+| CDC Sleep / NHLBI Sleep resources | 提示睡眠不足和节律失调会影响认知、慢病、心理和恢复能力 |
+| WHO Mental Health / Suicide resources | 提示心理健康、自杀风险和社会连接是主体持续行动的核心条件 |
+| CDC Chronic Pain / WHO Palliative Care | 提示疼痛、症状负担和姑息照护决定持续存在的可承受性 |
 
 Source links:
 
@@ -53,6 +73,15 @@ Source links:
 - https://odphp.health.gov/healthypeople/priority-areas/social-determinants-health
 - https://www.nist.gov/itl/ai-risk-management-framework
 - https://www.nasa.gov/hrp/
+- https://www.who.int/initiatives/rehabilitation-2030
+- https://www.who.int/health-topics/assistive-technology
+- https://www.who.int/news-room/fact-sheets/detail/antimicrobial-resistance
+- https://www.who.int/news-room/fact-sheets/detail/blindness-and-visual-impairment
+- https://www.who.int/news-room/fact-sheets/detail/deafness-and-hearing-loss
+- https://www.cdc.gov/sleep/
+- https://www.who.int/health-topics/mental-health
+- https://www.cdc.gov/chronic-pain/
+- https://www.who.int/news-room/fact-sheets/detail/palliative-care
 
 ## 使用规则
 
