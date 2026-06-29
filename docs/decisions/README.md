@@ -16,3 +16,5 @@ Current decisions:
 - `0001-adopt-docs-as-code-knowledge-base-structure.md`
 - `0002-adopt-local-quality-gates.md`
 - `0003-add-future-waiting-domain.md`
+- `0004-add-cellular-reprogramming-domain.md`
+- `0005-establish-research-domain-atlas.md`

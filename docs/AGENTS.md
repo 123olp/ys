@@ -12,6 +12,8 @@ docs/
 │   ├── 0001-adopt-docs-as-code-knowledge-base-structure.md
 │   ├── 0002-adopt-local-quality-gates.md
 │   ├── 0003-add-future-waiting-domain.md
+│   ├── 0004-add-cellular-reprogramming-domain.md
+│   ├── 0005-establish-research-domain-atlas.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -39,6 +41,8 @@ docs/
 │   ├── life-path-prediction-model-governance.md
 │   ├── project-boundary-v0.1.md
 │   ├── repository-standards.md
+│   ├── research-domain-atlas.md
+│   ├── research-domain-radar.md
 │   ├── research-model-visualization-toolkit.md
 │   ├── review-checklists.md
 │   ├── source-card-system.md
@@ -82,6 +86,8 @@ docs/
 - `reference/life-path-prediction-model-contract.md`：定义干预、状态转移、风险函数、生存曲线、有效时间、主观时间、相对时间和未来选择权的预测模型契约。
 - `reference/life-path-prediction-model-governance.md`：定义定量预测模型的证据准入、偏差审查、验证、报告和禁止用途门禁。
 - `reference/project-boundary-v0.1.md`：定义当前公开版本边界、纳入范围、排除范围、材料落点和后续版本方向。
+- `reference/research-domain-atlas.md`：定义从有效永生先验条件生成研究域的规则、当前域地图和域判定契约。
+- `reference/research-domain-radar.md`：记录尚未晋升为正式子域的潜在研究域、来源信号和晋升触发条件。
 - `reference/research-model-visualization-toolkit.md`：沉淀科研论文阅读、文献脊梁、模型工具、可视化标准和 Human Infra 定量页面实现路线。
 - `reference/source-card-system.md`：定义论文、书籍、工具、案例、标准和数据集进入项目之前的资料卡片制度。
 - `reference/domain-map.md`：定义根项目与子域的边界、迁移切片、主动不做和验证点。

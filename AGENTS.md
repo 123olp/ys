@@ -35,10 +35,21 @@ human_infra/
 │   └── tutorials/         # 学习路径
 └── domains/               # 可独立演化的子域
     ├── AGENTS.md          # 子域目录维护规则
+    ├── biostasis-cryopreservation/ # 生物停滞与冷冻保存
+    ├── cancer-control/    # 癌症控制
+    ├── cellular-reprogramming/ # 细胞重编程与表观遗传年轻化谱系
+    ├── cognitive-augmentation/ # 认知增强与工具放大
     ├── disembodied-cns/   # 去具身外部维持型中枢生命系统
     ├── future-waiting/    # 去未来 / 压缩等待路径
+    ├── governance-rights/ # 治理与主体权利
+    ├── immune-maintenance/# 免疫系统维护
     ├── longevity-evidence/# 原 Biocat 长寿证据账本
-    └── memory-editing/    # 记忆编辑与人格连续性
+    ├── measurement-feedback/ # 测量、预测与反馈
+    ├── memory-editing/    # 记忆编辑与人格连续性
+    ├── neuro-continuity/  # 神经与身份连续性
+    ├── regenerative-medicine/ # 再生医学与组织修复
+    ├── resource-social-infra/ # 资源与社会基础设施
+    └── risk-engineering/  # 风险工程
 ```
 
 ## 职责边界
@@ -51,17 +62,29 @@ human_infra/
 - `docs/` 只放 Human Infra 的上位理论、域边界、伦理原则和原始资料归档，不放具体采集脚本。
 - `domains/` 中每个子域必须有独立 README 和 AGENTS，明确自身对象、非目标、证据要求和上下游关系。
 - `domains/longevity-evidence/` 承接原 Biocat，负责长寿干预证据、临床试验、药品安全、公开数据源和采集脚本。
+- `domains/cellular-reprogramming/` 负责山中因子、部分重编程、化学重编程、AI 因子设计和表观遗传编辑等细胞状态可重写谱系，不提供实验协议或人体应用建议。
+- `domains/regenerative-medicine/` 负责干细胞、组织工程、器官再生、类器官、移植和生物制造的高层研究框架。
+- `domains/cancer-control/` 负责癌症预防、早筛、治疗、复发、肿瘤演化和长期风险治理。
+- `domains/immune-maintenance/` 负责免疫衰老、感染防御、慢性炎症、自身免疫和免疫监视。
+- `domains/neuro-continuity/` 负责大脑、记忆、意识、人格和主体身份连续性。
 - `domains/future-waiting/` 负责度规红移固有时差分路径（黑洞等待室）等“压缩等待 / 去未来”思想实验、证据边界和风险约束。
 - `domains/disembodied-cns/` 负责去具身外部维持型中枢生命系统的高层架构建模，不提供实验操作协议。
 - `domains/memory-editing/` 负责记忆编辑的概念、证据、验证和伦理边界，不提供可执行神经操控步骤。
+- `domains/biostasis-cryopreservation/` 负责冷冻保存、生物停滞、休眠和等待未来修复路径。
+- `domains/cognitive-augmentation/` 负责 AI 辅助、外部记忆、学习系统、脑机接口和行动放大工具。
+- `domains/risk-engineering/` 负责事故、灾害、暴力、环境风险、系统故障和尾部风险工程。
+- `domains/resource-social-infra/` 负责食物、水、能源、住房、医疗、照护、金融、教育、就业和社会支持。
+- `domains/governance-rights/` 负责主体权利、法律身份、同意、退出、数据权、AI 治理和研究伦理。
+- `domains/measurement-feedback/` 负责主体状态测量、风险评分、生物标志物、可穿戴、预测模型和反馈闭环。
 - 原始资料归档在 `docs/source-notes/`；稳定结论必须沉淀到 `docs/` 或对应子域 README，不能长期依赖零散临时文件名。
 
 ## 设计原则
 
 - Human Infra 的上位对象是“人类任务执行系统”，不是单一长寿产品。
 - Longevity Evidence 承接原 Biocat，但不再占据根目录概念中心。
-- “永生”的不同路径必须按机制拆分：长寿证据、未来等待、去具身中枢、记忆编辑不能混成一个概念桶。
+- “永生”的不同路径必须按机制拆分：长寿证据、细胞重编程、再生医学、癌症控制、免疫维护、神经连续性、未来等待、生物停滞、去具身中枢、记忆编辑、认知增强、资源环境、治理权利和测量反馈不能混成一个概念桶。
 - 所有健康、神经、生命支持相关结论必须保留来源、适用对象、不确定性和伦理边界。
+- 新增研究域必须能回到 `docs/reference/research-domain-atlas.md` 的先验条件和域判定契约。
 - 自研代码只做连接、清洗、归一化、证据编排和产品表达；优先复用官方 API、公开数据库和成熟工具。
 
 ## 维护规则
@@ -82,3 +105,5 @@ human_infra/
 - 2026-06-26：新增 `web/` Observable Framework 应用，作为科研叙事、书籍转译、预测模型和交互图表的正式 Web 入口。
 - 2026-06-27：新增 `tools/arxiv_html_paper_tool.py` 与 `tools/arxiv-html-paper/`，把 arXiv HTML papers 前端框架沉淀为可复用 Astro 工具链。
 - 2026-06-29：新增可控度规等待室假设 working paper 入口和审计账本，把黑洞等待室收敛为固有时差分、退出采用、风险扣减和递归等待的可审查模型。
+- 2026-06-30：新增 `domains/cellular-reprogramming/`，承载山中因子、部分重编程、化学重编程、AI 因子设计和表观遗传编辑的机制谱系与安全边界。
+- 2026-06-30：新增 `docs/reference/research-domain-atlas.md` 和 10 个研究域骨架，把有效永生的先验条件映射为可独立维护的研究域。

@@ -8,6 +8,18 @@
 domains/
 ├── AGENTS.md
 ├── README.md
+├── biostasis-cryopreservation/
+│   ├── AGENTS.md
+│   └── README.md
+├── cancer-control/
+│   ├── AGENTS.md
+│   └── README.md
+├── cellular-reprogramming/
+│   ├── AGENTS.md
+│   └── README.md
+├── cognitive-augmentation/
+│   ├── AGENTS.md
+│   └── README.md
 ├── disembodied-cns/
 │   ├── AGENTS.md
 │   └── README.md
@@ -15,13 +27,34 @@ domains/
 │   ├── AGENTS.md
 │   ├── README.md
 │   └── paths/
+├── governance-rights/
+│   ├── AGENTS.md
+│   └── README.md
+├── immune-maintenance/
+│   ├── AGENTS.md
+│   └── README.md
 ├── longevity-evidence/
 │   ├── AGENTS.md
 │   ├── README.md
 │   ├── data/
 │   ├── docs/
 │   └── scripts/
-└── memory-editing/
+├── measurement-feedback/
+│   ├── AGENTS.md
+│   └── README.md
+├── memory-editing/
+│   ├── AGENTS.md
+│   └── README.md
+├── neuro-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── regenerative-medicine/
+│   ├── AGENTS.md
+│   └── README.md
+├── resource-social-infra/
+│   ├── AGENTS.md
+│   └── README.md
+└── risk-engineering/
     ├── AGENTS.md
     └── README.md
 ```
@@ -29,7 +62,12 @@ domains/
 ## 职责边界
 
 - `longevity-evidence/` 是当前唯一含数据和采集脚本的产品化子域。
-- `future-waiting/`、`disembodied-cns/` 和 `memory-editing/` 是高风险远期研究域，当前只做高层建模、证据框架和伦理边界。
+- `cellular-reprogramming/` 负责山中因子、部分重编程、化学重编程、AI 因子设计和表观遗传编辑等“细胞状态可重写”谱系，不提供实验协议或人体应用建议。
+- `regenerative-medicine/`、`cancer-control/` 和 `immune-maintenance/` 负责身体基底维护相关的机制、风险和证据边界。
+- `neuro-continuity/`、`memory-editing/`、`cognitive-augmentation/` 和 `disembodied-cns/` 负责神经、身份、认知和去具身连续性相关边界。
+- `future-waiting/` 和 `biostasis-cryopreservation/` 负责等待未来的时间成本和损耗成本路径。
+- `risk-engineering/`、`resource-social-infra/` 和 `governance-rights/` 负责外部风险、资源底座和主体权利保护。
+- `measurement-feedback/` 负责所有研究域进入定量模型前的测量、预测和反馈接口。
 - 子域之间共享 Human Infra 的伦理和证据原则，但不能共享模糊数据目录或脚本目录。
 
 ## 维护规则

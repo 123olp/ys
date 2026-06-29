@@ -19,6 +19,8 @@ docs/
 │   ├── 0001-adopt-docs-as-code-knowledge-base-structure.md
 │   ├── 0002-adopt-local-quality-gates.md
 │   ├── 0003-add-future-waiting-domain.md
+│   ├── 0004-add-cellular-reprogramming-domain.md
+│   ├── 0005-establish-research-domain-atlas.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -46,6 +48,8 @@ docs/
 │   ├── life-path-prediction-model-governance.md
 │   ├── project-boundary-v0.1.md
 │   ├── repository-standards.md
+│   ├── research-domain-atlas.md
+│   ├── research-domain-radar.md
 │   ├── research-model-visualization-toolkit.md
 │   ├── review-checklists.md
 │   ├── source-card-system.md
@@ -89,4 +93,7 @@ docs/
 17. Read `reference/review-checklists.md`.
 18. Read `explanations/human-runtime-infrastructure.md`.
 19. Read `source-notes/2026-06-29-controllable-metric-waiting-room-hypothesis-revision-notes.md` if you are working on Future Waiting.
-20. Enter a domain under `../domains/`.
+20. Read `reference/research-domain-atlas.md`.
+21. Read `reference/research-domain-radar.md` before proposing a new domain.
+22. Read `../domains/cellular-reprogramming/README.md` if you are working on cellular rejuvenation or epigenetic reprogramming.
+23. Enter a domain under `../domains/`.
