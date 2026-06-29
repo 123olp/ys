@@ -1,0 +1,558 @@
+---
+import PaperReaderLayout from "../../layouts/PaperReaderLayout.astro";
+import paperData from "../../data/proper-time-differential-waiting-hypothesis.json";
+
+const {
+  conceptRows,
+  hypothesisRows,
+  contributionRows,
+  stateRows,
+  modelRows,
+  ladderRows,
+  falsifierRows,
+  protocolRows,
+  sourceCardRows,
+  claimEvidenceRows,
+  scenarioRows,
+  scenarioEvaluationRows,
+  qualitativeNcgScaleRows,
+  scenarioVariableRows,
+  toyNcgProtocolRows,
+  ncgFormulaBlockRows,
+  figurePlanRows,
+  citationBoundaryRows,
+  citationContextRows,
+  preSubmissionReviewRows,
+  referenceRows
+} = paperData;
+
+const ncgMetricColumns = [
+  ["K", "等待倍率", 3],
+  ["U", "技术窗口", 4],
+  ["P_exit", "退出", 5],
+  ["P_adopt", "采用", 6],
+  ["P_cont", "连续性", 7],
+  ["R_life", "生命风险", 8],
+  ["R_eng", "工程风险", 9],
+  ["R_tail", "尾部风险", 10],
+  ["C_opp", "机会成本", 11]
+];
+
+const ncgRatingStyles = {
+  high: { label: "高", fill: "#0077BB", text: "#ffffff" },
+  medium: { label: "中", fill: "#33BBEE", text: "#111111" },
+  low: { label: "低", fill: "#BBBBBB", text: "#111111" },
+  blocked: { label: "阻", fill: "#CC3311", text: "#ffffff" },
+  missing: { label: "缺", fill: "#EE7733", text: "#111111" },
+  "not-applicable": { label: "无", fill: "#f5f5f5", text: "#555555" }
+};
+
+const getRatingStyle = (rating) => ncgRatingStyles[rating] ?? ncgRatingStyles.missing;
+const matrixLeft = 168;
+const matrixTop = 72;
+const matrixCellWidth = 70;
+const matrixCellHeight = 42;
+const matrixWidth = ncgMetricColumns.length * matrixCellWidth;
+const statusLeft = matrixLeft + matrixWidth + 18;
+const figureWidth = 940;
+const figureHeight = matrixTop + scenarioVariableRows.length * matrixCellHeight + 116;
+---
+<PaperReaderLayout
+  title="Metric-Redshift Proper-Time Differential Waiting Hypothesis"
+  description="An arXiv-style Human Infra working paper proposing the metric-redshift proper-time differential waiting path."
+  arxivId="human-infra/working-paper.0004"
+  category="gr-qc; cs.HC; q-bio.PE"
+>
+  <nav class="ltx_page_navbar" slot="toc">
+    <nav class="ltx_TOC">
+      <ol class="ltx_toclist">
+        <li class="ltx_tocentry ltx_tocentry_abstract"><a href="#abstract1" class="ltx_ref"><span class="ltx_text ltx_ref_title">Abstract.</span></a></li>
+        <li class="ltx_tocentry ltx_tocentry_section"><a href="#S1" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1 </span>问题定义</span></a></li>
+        <li class="ltx_tocentry ltx_tocentry_section"><a href="#S2" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2 </span>术语收敛</span></a></li>
+        <li class="ltx_tocentry ltx_tocentry_section"><a href="#S3" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3 </span>核心假设</span></a></li>
+        <li class="ltx_tocentry ltx_tocentry_section"><a href="#S4" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">4 </span>物理接口</span></a></li>
+        <li class="ltx_tocentry ltx_tocentry_section"><a href="#S5" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">5 </span>递归状态机</span></a></li>
+        <li class="ltx_tocentry ltx_tocentry_section"><a href="#S6" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">6 </span>净收益模型</span></a></li>
+        <li class="ltx_tocentry ltx_tocentry_section"><a href="#S7" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">7 </span>可达性阶梯</span></a></li>
+        <li class="ltx_tocentry ltx_tocentry_section"><a href="#S8" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">8 </span>反证条件</span></a></li>
+        <li class="ltx_tocentry ltx_tocentry_section"><a href="#S9" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">9 </span>Human Infra 接口</span></a></li>
+        <li class="ltx_tocentry ltx_tocentry_section"><a href="#S10" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">10 </span>研究协议</span></a></li>
+        <li class="ltx_tocentry ltx_tocentry_section"><a href="#S11" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">11 </span>贡献与 Source Cards</span></a></li>
+        <li class="ltx_tocentry ltx_tocentry_section"><a href="#S12" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">12 </span>Claim-Evidence Matrix</span></a></li>
+        <li class="ltx_tocentry ltx_tocentry_section"><a href="#S13" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">13 </span>Scenario Cards</span></a></li>
+        <li class="ltx_tocentry ltx_tocentry_section"><a href="#S14" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">14 </span>图表计划与引用边界</span></a></li>
+        <li class="ltx_tocentry ltx_tocentry_section"><a href="#S15" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">15 </span>工具链来源</span></a></li>
+        <li class="ltx_tocentry ltx_tocentry_bibliography"><a href="#references" class="ltx_ref"><span class="ltx_text ltx_ref_title">References</span></a></li>
+      </ol>
+    </nav>
+  </nav>
+
+  <article class="ltx_document ltx_authors_1line ltx_leqno">
+    <h1 class="ltx_title ltx_title_document">度规红移固有时差分路径：递归等待技术窗口假设</h1>
+    <div class="ltx_authors">
+      <span class="ltx_creator ltx_role_author">
+        <span class="ltx_personname">tradecatlabs</span>
+      </span>
+    </div>
+    <div class="ltx_dates">Working paper v0.1 / 2026-06-29</div>
+
+    <div id="abstract1" class="ltx_abstract">
+      <h6 class="ltx_title ltx_title_abstract">Abstract.</h6>
+      <p class="ltx_p">本文新建一个 Human Infra 专项论文页，提出“度规红移固有时差分路径”假设：如果未来文明能够制造、捕获或安全利用一种可控强红移时空区域，使主体经历的固有时显著少于外部文明的参考时间，并且同时满足进入、停留、通信、退出、生命支持、主体连续性和治理约束，那么主体可以用较低生命时间成本等待外部技术革命，再退出等待区采用新技术，随后进入下一轮等待。</p>
+      <p class="ltx_p">本文不声称黑洞等待室、人工黑洞或类黑洞工程已经可行，也不把时间膨胀直接写成永生。本文的目的更窄：把传播性的“黑洞等待室”重命名为可研究的理论对象，给出术语、物理接口、状态机、净收益模型、反证条件和研究协议，使后续 source card、scenario card、D3 可视化和外部审查能围绕同一对象积累。</p>
+    </div>
+    <div class="ltx_keywords">
+      <h6 class="ltx_title ltx_title_keywords">关键词： </h6>度规红移；固有时；黑洞等待室；未来等待；有效永生；主体持续性；Human Infra
+    </div>
+    <div class="ltx_classification">
+      <h6 class="ltx_title ltx_title_classification">研究分类： </h6>gr-qc; cs.HC; q-bio.PE
+    </div>
+
+    <section id="S1" class="ltx_section">
+      <h2 class="ltx_title ltx_title_section"><span class="ltx_tag ltx_tag_section">1. </span>问题定义</h2>
+      <p class="ltx_p">Human Infra 的主问题是主体持续性：主体如何继续存在、行动、学习、恢复、选择并进入未来。大多数长寿路径直接作用于身体、疾病风险或恢复能力；未来等待路径作用于另一个变量，即等待未来所消耗的主体时间。</p>
+      <p class="ltx_p">本文研究的不是“靠黑洞永生”，而是一个更严格的问题：能否通过时空度规造成的红移效应，让主体沿自身世界线经历更少固有时，同时让外部文明经历更多参考时间。若外部技术在这段参考时间中升级，主体退出后就可能获得新的医学、AI、材料、能源、生命支持和治理能力。</p>
+      <figure id="F1" class="ltx_figure">
+        <figcaption><span class="ltx_tag ltx_tag_figure">Figure 1. </span>本文主链路。</figcaption>
+        <div class="ltx_listing">
+          <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">可控强红移等待区</span></span>
+          <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">  -&gt; 主体固有时消耗降低</span></span>
+          <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">  -&gt; 外部文明技术时间继续推进</span></span>
+          <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">  -&gt; 主体退出并采用升级技术</span></span>
+          <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">  -&gt; 下一轮等待的安全边界和持续能力提高</span></span>
+        </div>
+      </figure>
+    </section>
+
+    <section id="S2" class="ltx_section">
+      <h2 class="ltx_title ltx_title_section"><span class="ltx_tag ltx_tag_section">2. </span>术语收敛</h2>
+      <p class="ltx_p">“黑洞等待室”保留为传播名；正式论文对象使用“度规红移固有时差分路径”。原因是黑洞只是强时间膨胀的一类极端场景，真正的理论核心是度规决定时钟速率，而不是黑洞这个物体本身。</p>
+      <div class="ltx_table">
+        <table>
+          <thead><tr><th>层级</th><th>命名</th><th>本文用途</th><th>边界</th></tr></thead>
+          <tbody>
+            {conceptRows.map((row) => (
+              <tr><td>{row[0]}</td><td>{row[1]}</td><td>{row[2]}</td><td>{row[3]}</td></tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="S3" class="ltx_section">
+      <h2 class="ltx_title ltx_title_section"><span class="ltx_tag ltx_tag_section">3. </span>核心假设</h2>
+      <p class="ltx_p">本文的假设由四个可拆分断言组成。任何一个断言失败，整条路径都不能作为有效永生或主体持续性工程的正收益路径。</p>
+      <div class="ltx_table">
+        <table>
+          <thead><tr><th>编号</th><th>假设</th><th>必须审查的条件</th></tr></thead>
+          <tbody>
+            {hypothesisRows.map((row) => (
+              <tr><td>{row[0]}</td><td>{row[1]}</td><td>{row[2]}</td></tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <div class="ltx_theorem ltx_theorem_Hypothesis">
+        <h6 class="ltx_title ltx_runin ltx_title_theorem"><span class="ltx_tag ltx_tag_theorem"><span class="ltx_text ltx_font_bold">Hypothesis 1</span></span><span class="ltx_text ltx_font_bold">.</span></h6>
+        <div class="ltx_para"><p class="ltx_p">如果可控红移等待区能稳定产生 K &gt; 1 的未来等待倍率，并且主体能退出等待区采用外部升级技术，则该路径可以被建模为一种“压缩等待”型主体持续性策略。</p></div>
+      </div>
+    </section>
+
+    <section id="S4" class="ltx_section">
+      <h2 class="ltx_title ltx_title_section"><span class="ltx_tag ltx_tag_section">4. </span>物理接口</h2>
+      <p class="ltx_p">广义相对论中，主体经历的时间是沿自身世界线积累的固有时。本文不需要在 v0.1 中解决完整工程问题，只需要保留最小接口：同一等待轮次内，外部参考时间 Delta t_ext 和主体固有时 Delta tau 可以不同。</p>
+      <div class="ltx_listing">
+        <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">d_tau = sqrt(-g_mu_nu dx_mu dx_nu) / c</span></span>
+        <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">K = Delta_t_ext / Delta_tau_subject</span></span>
+      </div>
+      <p class="ltx_p">在静态 Schwarzschild 外部区域的说明性场景中，可以用下面的形式表达远方坐标时间与静止壳层固有时之间的方向性关系：</p>
+      <div class="ltx_listing">
+        <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">d_tau / d_t = sqrt(1 - r_s / r),  r &gt; r_s</span></span>
+        <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">K_static = 1 / sqrt(1 - r_s / r)</span></span>
+      </div>
+      <p class="ltx_p">这个公式只能说明红移方向，不能直接变成工程方案。越接近强红移区域，越需要处理加速度、潮汐力、吸积盘辐射、轨道稳定性、能源、通信、回收和不可逆边界。本文因此把 K 与可采用性分开建模。</p>
+    </section>
+
+    <section id="S5" class="ltx_section">
+      <h2 class="ltx_title ltx_title_section"><span class="ltx_tag ltx_tag_section">5. </span>递归状态机</h2>
+      <p class="ltx_p">真正要研究的是完整生命周期，而不是一个孤立的“进入等待室”动作。每一轮等待至少包含八个状态，每个状态都有独立失败条件。</p>
+      <div class="ltx_table">
+        <table>
+          <thead><tr><th>状态</th><th>动作</th><th>失败模式</th></tr></thead>
+          <tbody>
+            {stateRows.map((row) => (
+              <tr><td>{row[0]}</td><td>{row[1]}</td><td>{row[2]}</td></tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="S6" class="ltx_section">
+      <h2 class="ltx_title ltx_title_section"><span class="ltx_tag ltx_tag_section">6. </span>净收益模型</h2>
+      <p class="ltx_p">度规红移路径不能用单一倍率评价。Human Infra 关心的是净主体持续性收益：等待倍率、外部技术收益、退出概率、采用概率和主体连续性概率共同形成收益项；生命支持风险、工程风险、尾部风险和机会成本形成扣减项。</p>
+      <div class="ltx_listing">
+        <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">NCG_i = K_i * U_i * P_exit_i * P_adopt_i * P_cont_i</span></span>
+        <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">        - R_life_i - R_engineering_i - R_tail_i - C_opportunity_i</span></span>
+      </div>
+      <div class="ltx_table">
+        <table>
+          <thead><tr><th>变量</th><th>名称</th><th>解释</th></tr></thead>
+          <tbody>
+            {modelRows.map((row) => (
+              <tr><td>{row[0]}</td><td>{row[1]}</td><td>{row[2]}</td></tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p class="ltx_p">若 K 很大但 P_exit 接近 0，净收益为负；若外部技术窗口没有出现，U 不能支撑递归；若主体连续性被破坏，路径不再满足有效永生约束。</p>
+    </section>
+
+    <section id="S7" class="ltx_section">
+      <h2 class="ltx_title ltx_title_section"><span class="ltx_tag ltx_tag_section">7. </span>可达性阶梯</h2>
+      <p class="ltx_p">为了避免把远期想象写成当下能力，本文把研究推进分成六层。低层没有完成时，不允许跳到高层主张。</p>
+      <div class="ltx_table">
+        <table>
+          <thead><tr><th>层级</th><th>任务</th><th>验收口径</th></tr></thead>
+          <tbody>
+            {ladderRows.map((row) => (
+              <tr><td>{row[0]}</td><td>{row[1]}</td><td>{row[2]}</td></tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="S8" class="ltx_section">
+      <h2 class="ltx_title ltx_title_section"><span class="ltx_tag ltx_tag_section">8. </span>反证条件</h2>
+      <p class="ltx_p">一个严肃假设必须能被打断。本文把最关键的反证点注册如下：</p>
+      <div class="ltx_table">
+        <table>
+          <thead><tr><th>编号</th><th>反证条件</th><th>结论影响</th></tr></thead>
+          <tbody>
+            {falsifierRows.map((row) => (
+              <tr><td>{row[0]}</td><td>{row[1]}</td><td>{row[2]}</td></tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="S9" class="ltx_section">
+      <h2 class="ltx_title ltx_title_section"><span class="ltx_tag ltx_tag_section">9. </span>Human Infra 接口</h2>
+      <p class="ltx_p">该路径进入 Human Infra 的位置是“相对时间资源工程”。它不是直接治疗衰老，而是尝试改变主体等待未来技术所消耗的固有时。</p>
+      <div class="ltx_listing">
+        <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">度规红移固有时差分</span></span>
+        <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">  -&gt; 等待未来的主体时间成本下降</span></span>
+        <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">  -&gt; 外部技术窗口成熟概率上升</span></span>
+        <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">  -&gt; 主体退出后采用升级技术</span></span>
+        <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">  -&gt; 下一轮主体持续性、修复能力和等待安全性增强</span></span>
+        <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">  -&gt; 递归等待飞轮形成或被反证条件中断</span></span>
+      </div>
+      <p class="ltx_p">它与有效永生飞轮的关系是：有效永生飞轮提高主体在普通时间中的持续行动能力；度规红移路径则试图用相对论机制减少等待未来所消耗的主体固有时。两者都必须服从主体连续性、可行动性、可修复性、风险和伦理边界。</p>
+    </section>
+
+    <section id="S10" class="ltx_section">
+      <h2 class="ltx_title ltx_title_section"><span class="ltx_tag ltx_tag_section">10. </span>研究协议</h2>
+      <p class="ltx_p">下一步不是宣传这个概念，而是把它拆成可审查材料。</p>
+      <div class="ltx_table">
+        <table>
+          <thead><tr><th>项目</th><th>协议</th></tr></thead>
+          <tbody>
+            {protocolRows.map((row) => (
+              <tr><td>{row[0]}</td><td>{row[1]}</td></tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="S11" class="ltx_section">
+      <h2 class="ltx_title ltx_title_section"><span class="ltx_tag ltx_tag_section">11. </span>贡献与 Source Cards</h2>
+      <p class="ltx_p">本页的最低科研要求是：每个贡献都要能回到一个来源角色或模型边界。下表把贡献和对应 artifact 固定下来，避免后续写作漂移。</p>
+      <div class="ltx_table">
+        <table>
+          <thead><tr><th>编号</th><th>贡献</th><th>对应产物</th></tr></thead>
+          <tbody>
+            {contributionRows.map((row) => (
+              <tr><td>{row[0]}</td><td>{row[1]}</td><td>{row[2]}</td></tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p class="ltx_p">Source Cards 只记录来源在本文中的允许用途和禁止外推范围。</p>
+      <div class="ltx_table">
+        <table>
+          <thead><tr><th>卡片</th><th>来源类型</th><th>代表来源</th><th>支持</th><th>不支持</th></tr></thead>
+          <tbody>
+            {sourceCardRows.map((row) => (
+              <tr><td>{row[0]}</td><td>{row[1]}</td><td>{row[2]}</td><td>{row[3]}</td><td>{row[4]}</td></tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="S12" class="ltx_section">
+      <h2 class="ltx_title ltx_title_section"><span class="ltx_tag ltx_tag_section">12. </span>Claim-Evidence Matrix</h2>
+      <p class="ltx_p">Claim-Evidence Matrix 把本文主张压成最小可审查单位。当前版本只允许“定义支持、边界支持、谱系支持和模型约束”，不允许写成工程证明。</p>
+      <div class="ltx_table">
+        <table>
+          <thead><tr><th>Claim</th><th>主张</th><th>来源卡片</th><th>证据角色</th><th>边界</th></tr></thead>
+          <tbody>
+            {claimEvidenceRows.map((row) => (
+              <tr><td>{row[0]}</td><td>{row[1]}</td><td>{row[2]}</td><td>{row[3]}</td><td>{row[4]}</td></tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="S13" class="ltx_section">
+      <h2 class="ltx_title ltx_title_section"><span class="ltx_tag ltx_tag_section">13. </span>Scenario Cards</h2>
+      <p class="ltx_p">Scenario Cards 用来阻止概念混合。度规红移等待必须与普通等待、相对论飞船、休眠和冷冻路径分开比较。</p>
+      <div class="ltx_table">
+        <table>
+          <thead><tr><th>场景</th><th>定义</th><th>潜在优势</th><th>主要阻断</th></tr></thead>
+          <tbody>
+            {scenarioRows.map((row) => (
+              <tr><td>{row[0]}</td><td>{row[1]}</td><td>{row[2]}</td><td>{row[3]}</td></tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <h3 class="ltx_title ltx_title_subsection">Scenario Evaluation Registry</h3>
+      <p class="ltx_p">Scenario Evaluation Registry 把场景名推进为研究分类。这里不输出可行性承诺，只判断每个场景在当前证据下应作为基线、反例、远期假设还是机制对照。</p>
+      <div class="ltx_table">
+        <table>
+          <thead><tr><th>评估</th><th>场景</th><th>分类</th><th>输入状态</th><th>NCG 方向</th><th>决定</th></tr></thead>
+          <tbody>
+            {scenarioEvaluationRows.map((row) => (
+              <tr><td>{row[0]}</td><td>{row[1]}<br />{row[2]}</td><td>{row[3]}</td><td>{row[4]}</td><td>{row[5]}</td><td>{row[6]}</td></tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <h3 class="ltx_title ltx_title_subsection">Qualitative NCG Scale</h3>
+      <p class="ltx_p">Qualitative NCG Scale 是进入定量模型前的等级字典。它只用于统一变量状态，不替代实测参数、工程数据或医学结论。</p>
+      <div class="ltx_table">
+        <table>
+          <thead><tr><th>等级</th><th>含义</th><th>边界</th></tr></thead>
+          <tbody>
+            {qualitativeNcgScaleRows.map((row) => (
+              <tr><td>{row[0]}</td><td>{row[1]}</td><td>{row[2]}</td></tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <h3 class="ltx_title ltx_title_subsection">Scenario Variable Matrix</h3>
+      <p class="ltx_p">Scenario Variable Matrix 用同一组变量审查每个场景。它把“高 K 是否有价值”转成一个更严格的问题：K、U、退出、采用、连续性、风险和机会成本是否共同支持 NCG。</p>
+      <div class="ltx_table">
+        <table>
+          <thead><tr><th>评估</th><th>场景</th><th>K</th><th>U</th><th>P_exit</th><th>P_adopt</th><th>P_cont</th><th>R_life</th><th>R_eng</th><th>R_tail</th><th>C_opp</th><th>NCG</th><th>解释</th></tr></thead>
+          <tbody>
+            {scenarioVariableRows.map((row) => (
+              <tr>
+                <td>{row[0]}</td>
+                <td>{row[1]}<br />{row[2]}</td>
+                <td>{row[3]}</td>
+                <td>{row[4]}</td>
+                <td>{row[5]}</td>
+                <td>{row[6]}</td>
+                <td>{row[7]}</td>
+                <td>{row[8]}</td>
+                <td>{row[9]}</td>
+                <td>{row[10]}</td>
+                <td>{row[11]}</td>
+                <td>{row[12]}</td>
+                <td>{row[13]}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <h3 class="ltx_title ltx_title_subsection">Toy NCG Evaluation Protocol</h3>
+      <p class="ltx_p">Toy NCG Evaluation Protocol 把“能不能算”放在“算出什么”之前。它的输出是研究分类，不是物理实验结果、工程方案、医学建议或个体寿命预测。</p>
+      <div class="ltx_table">
+        <table>
+          <thead><tr><th>步骤</th><th>操作</th><th>理由</th><th>失败条件</th></tr></thead>
+          <tbody>
+            {toyNcgProtocolRows.map((row) => (
+              <tr><td>{row[0]}</td><td>{row[1]}</td><td>{row[2]}</td><td>{row[3]}</td></tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="S14" class="ltx_section">
+      <h2 class="ltx_title ltx_title_section"><span class="ltx_tag ltx_tag_section">14. </span>图表计划与引用边界</h2>
+      <p class="ltx_p">根据 figure-designer 的 solution-overview 规则，本文最重要的图不是装饰图，而是能让读者定位方法结构的 overview figure。优先使用 draw.io 或 Figma 输出矢量图；结果型图表后续再用 D3 或 Matplotlib 生成。</p>
+      <figure id="F3" class="ltx_figure">
+        <figcaption><span class="ltx_tag ltx_tag_figure">Figure 3. </span>NCG Formula Decomposition. K 只是时间倍率输入，路径价值必须同时经过概率门、风险扣减和机会成本审查。</figcaption>
+        <div class="ltx_table">
+          <table>
+            <thead><tr><th>模块</th><th>名称</th><th>变量</th><th>角色</th><th>解释</th></tr></thead>
+            <tbody>
+              {ncgFormulaBlockRows.map((row) => (
+                <tr><td>{row[0]}</td><td>{row[1]}</td><td>{row[2]}</td><td>{row[3]}</td><td>{row[4]}</td></tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </figure>
+      <div class="ltx_table">
+        <table>
+          <thead><tr><th>图</th><th>名称</th><th>设计</th><th>备注</th></tr></thead>
+          <tbody>
+            {figurePlanRows.map((row) => (
+              <tr><td>{row[0]}</td><td>{row[1]}</td><td>{row[2]}</td><td>{row[3]}</td></tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <figure id="F4" class="ltx_figure">
+        <figcaption><span class="ltx_tag ltx_tag_figure">Figure 4. </span>NCG Scenario Comparison. 高 K 场景不自动产生正收益；当退出、采用、主体连续性或风险项被阻断时，场景被归为 blocked-negative、cannot-evaluate 或 comparator。</figcaption>
+        <svg
+          id="scenario-ncg-matrix-svg"
+          role="img"
+          aria-labelledby="scenario-ncg-matrix-title scenario-ncg-matrix-desc"
+          viewBox={`0 0 ${figureWidth} ${figureHeight}`}
+          width="100%"
+        >
+          <title id="scenario-ncg-matrix-title">NCG Scenario Comparison</title>
+          <desc id="scenario-ncg-matrix-desc">A qualitative scenario matrix comparing K, technology window, exit, adoption, continuity, life risk, engineering risk, tail risk, opportunity cost, and NCG classification across five waiting scenarios.</desc>
+          <rect x="0" y="0" width={figureWidth} height={figureHeight} fill="#ffffff" stroke="#d9d9d9" />
+          <text x="24" y="30" font-size="18" font-weight="700" fill="#111111">NCG Scenario Comparison</text>
+          <text x="24" y="52" font-size="12" fill="#555555">分类图只表达玩具模型状态，不输出个体寿命、个人方案或工程可行性承诺。</text>
+
+          <text x="24" y={matrixTop - 18} font-size="11" font-weight="700" fill="#333333">场景</text>
+          {ncgMetricColumns.map((column, columnIndex) => (
+            <text
+              x={matrixLeft + columnIndex * matrixCellWidth + matrixCellWidth / 2}
+              y={matrixTop - 24}
+              font-size="10"
+              text-anchor="middle"
+              fill="#333333"
+            >
+              {column[0]}
+            </text>
+          ))}
+          {ncgMetricColumns.map((column, columnIndex) => (
+            <text
+              x={matrixLeft + columnIndex * matrixCellWidth + matrixCellWidth / 2}
+              y={matrixTop - 9}
+              font-size="9"
+              text-anchor="middle"
+              fill="#555555"
+            >
+              {column[1]}
+            </text>
+          ))}
+          <text x={statusLeft} y={matrixTop - 18} font-size="11" font-weight="700" fill="#333333">NCG 分类</text>
+
+          {scenarioVariableRows.map((row, rowIndex) => (
+            <g transform={`translate(0 ${matrixTop + rowIndex * matrixCellHeight})`}>
+              <rect x="18" y="0" width={figureWidth - 36} height={matrixCellHeight} fill={rowIndex % 2 === 0 ? "#fbfbfb" : "#ffffff"} />
+              <text x="24" y="17" font-size="10" font-weight="700" fill="#111111">{row[1]}</text>
+              <text x="24" y="32" font-size="10" fill="#555555">{row[2]}</text>
+              {ncgMetricColumns.map((column, columnIndex) => {
+                const rating = row[column[2]];
+                const style = getRatingStyle(rating);
+                return (
+                  <g>
+                    <rect
+                      x={matrixLeft + columnIndex * matrixCellWidth + 5}
+                      y="6"
+                      width={matrixCellWidth - 10}
+                      height={matrixCellHeight - 12}
+                      rx="2"
+                      fill={style.fill}
+                      stroke="#444444"
+                      stroke-width="0.6"
+                    />
+                    <text
+                      x={matrixLeft + columnIndex * matrixCellWidth + matrixCellWidth / 2}
+                      y="27"
+                      font-size="12"
+                      font-weight="700"
+                      text-anchor="middle"
+                      fill={style.text}
+                    >
+                      {style.label}
+                    </text>
+                  </g>
+                );
+              })}
+              <text x={statusLeft} y="17" font-size="10" font-weight="700" fill="#111111">{row[12]}</text>
+              <text x={statusLeft} y="32" font-size="9" fill="#555555">{row[13]}</text>
+            </g>
+          ))}
+
+          <g transform={`translate(24 ${matrixTop + scenarioVariableRows.length * matrixCellHeight + 30})`}>
+            <text x="0" y="0" font-size="11" font-weight="700" fill="#333333">图例</text>
+            {Object.entries(ncgRatingStyles).map(([rating, style], index) => (
+              <g transform={`translate(${index * 118} 14)`}>
+                <rect x="0" y="-10" width="22" height="18" rx="2" fill={style.fill} stroke="#444444" stroke-width="0.6" />
+                <text x="30" y="4" font-size="10" fill="#333333">{style.label} = {rating}</text>
+              </g>
+            ))}
+          </g>
+          <text x="24" y={figureHeight - 18} font-size="10" fill="#555555">Note. 该图由 Scenario Variable Matrix 生成；颜色与文字双编码用于保证灰度打印和色觉差异场景下仍可读。</text>
+        </svg>
+      </figure>
+      <div class="ltx_table">
+        <table>
+          <thead><tr><th>来源层</th><th>允许用途</th><th>禁止用途</th></tr></thead>
+          <tbody>
+            {citationBoundaryRows.map((row) => (
+              <tr><td>{row[0]}</td><td>{row[1]}</td><td>{row[2]}</td></tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <h3 class="ltx_title ltx_title_subsection">Citation Context Review Packet</h3>
+      <p class="ltx_p">Citation Context Review Packet 把引用审查推进到句子和主张层：每个上下文都声明它支持什么、不能支持什么，以及是否已准备交给外部 fresh reviewer 做存在性、元数据和上下文一致性核对。</p>
+      <div class="ltx_table">
+        <table>
+          <thead><tr><th>上下文</th><th>主张</th><th>来源</th><th>审查对象</th><th>安全用途</th><th>禁止外推</th><th>状态</th></tr></thead>
+          <tbody>
+            {citationContextRows.map((row) => (
+              <tr><td>{row[0]}</td><td>{row[1]}</td><td>{row[2]}</td><td>{row[3]}</td><td>{row[4]}</td><td>{row[5]}</td><td>{row[6]}</td></tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <h3 class="ltx_title ltx_title_subsection">Pre-Submission Review</h3>
+      <p class="ltx_p">Pre-Submission Review 给出本文当前的提交前状态。它不是外部审稿结论，而是本地门禁对研究对象、来源、引用语境、模型和图表成熟度的审查。</p>
+      <div class="ltx_table">
+        <table>
+          <thead><tr><th>项目</th><th>审查维度</th><th>状态</th><th>当前证据</th><th>剩余限制</th></tr></thead>
+          <tbody>
+            {preSubmissionReviewRows.map((row) => (
+              <tr><td>{row[0]}</td><td>{row[1]}</td><td>{row[2]}</td><td>{row[3]}</td><td>{row[4]}</td></tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="S15" class="ltx_section">
+      <h2 class="ltx_title ltx_title_section"><span class="ltx_tag ltx_tag_section">15. </span>工具链来源</h2>
+      <p class="ltx_p">本页使用 Human Infra 的 arXiv HTML Paper Reuse Kit 新建。工具生成 seed 由 <span class="ltx_text ltx_font_typewriter">tools/arxiv_html_paper_tool.py write-page</span> 生成，并保留在 <span class="ltx_text ltx_font_typewriter">web/src/data/proper-time-differential-waiting-hypothesis/TOOL_GENERATED_PAGE_SEED.astro</span>；结构化研究数据源位于 <span class="ltx_text ltx_font_typewriter">web/src/data/proper-time-differential-waiting-hypothesis.json</span>，正式页面位于 <span class="ltx_text ltx_font_typewriter">web/src/pages/papers/proper-time-differential-waiting-hypothesis.astro</span>。</p>
+      <p class="ltx_p">本页的本地引用审查输入包保留在 <span class="ltx_text ltx_font_typewriter">web/src/data/proper-time-differential-waiting-hypothesis/CITATION_CONTEXT_REVIEW_PACKET.json</span> 和 <span class="ltx_text ltx_font_typewriter">CITATION_CONTEXT_REVIEW_PACKET.md</span>；本地引用语境边界审查账本保留在 <span class="ltx_text ltx_font_typewriter">CITATION_CONTEXT_LOCAL_REVIEW.json</span> 和 <span class="ltx_text ltx_font_typewriter">CITATION_CONTEXT_LOCAL_REVIEW.md</span>；参考来源可达性核验账本保留在 <span class="ltx_text ltx_font_typewriter">REFERENCE_VERIFICATION.json</span> 和 <span class="ltx_text ltx_font_typewriter">REFERENCE_VERIFICATION.md</span>。</p>
+      <p class="ltx_p">本页的预提交审查账本保留在 <span class="ltx_text ltx_font_typewriter">PRE_SUBMISSION_REVIEW.json</span> 和 <span class="ltx_text ltx_font_typewriter">PRE_SUBMISSION_REVIEW.md</span>，用于记录当前 working paper 的提交前状态和剩余限制。</p>
+      <p class="ltx_p">本页的本地覆盖审计账本保留在 <span class="ltx_text ltx_font_typewriter">web/src/data/proper-time-differential-waiting-hypothesis/COVERAGE_AUDIT.json</span> 和 <span class="ltx_text ltx_font_typewriter">COVERAGE_AUDIT.md</span>，由 <span class="ltx_text ltx_font_typewriter">npm run audit:proper-time-differential</span> 统一生成。</p>
+      <p class="ltx_p">本页保留 <span class="ltx_text ltx_font_typewriter">PaperReaderLayout</span>、<span class="ltx_text ltx_font_typewriter">ltx_page_navbar</span>、<span class="ltx_text ltx_font_typewriter">ltx_TOC</span>、<span class="ltx_text ltx_font_typewriter">ltx_document</span>、<span class="ltx_text ltx_font_typewriter">ltx_abstract</span> 和 <span class="ltx_text ltx_font_typewriter">ltx_bibliography</span> DOM 契约，不修改 arXiv CSS、JS 或字体资源。</p>
+    </section>
+
+    <section id="references" class="ltx_section ltx_bibliography">
+      <h2 class="ltx_title ltx_title_section">References</h2>
+      <ol>
+        {referenceRows.map((row) => (
+          <li><span class="ltx_text ltx_font_bold">{row[0]}.</span> {row[1]}. <a href={row[2]}>{row[2]}</a>. {row[3]}</li>
+        ))}
+      </ol>
+    </section>
+  </article>
+</PaperReaderLayout>

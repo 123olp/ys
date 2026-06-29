@@ -1,0 +1,102 @@
+{
+  "audit_skill": "high-risk-citation-context-review",
+  "verdict": "PASS_WITH_LIMITATIONS",
+  "reason_code": "high_risk_contexts_reviewed_with_source_boundaries",
+  "summary": "All locally HIGH/BLOCKER citation contexts have a source-bounded local review and explicit boundary action. Fresh independent citation-context review remains required before formal submission.",
+  "generated_at": "2026-06-29T00:00:00.000Z",
+  "audited_input_hashes": {
+    "src/data/effective-immortality-evidence.json": "sha256:998866fea2f08fe27ad21ffa46f540543955ec3c49e1e2aaef78638e2db33d64",
+    "src/data/effective-immortality-flywheel/CITATION_CONTEXT_RISK_TRIAGE.json": "sha256:d0f49f79ab743c3583879e16969f8b51e8e28e74ebac3c2b81d3015dc56217a5",
+    "src/data/effective-immortality-flywheel/REFERENCE_VERIFICATION.json": "sha256:a98496f727356c88f7c90f252514a927897aed12ca2fa811bad7051ce14414ca"
+  },
+  "details": {
+    "schema_version": "2.0",
+    "high_or_blocker_context_count": 1,
+    "reviewed_context_count": 1,
+    "missing_review_context_count": 0,
+    "missing_review_contexts": [],
+    "reviewed_contexts": [
+      {
+        "context_id": "CTX2",
+        "source_group": "Grossman Health Capital; WHO HALE; NICE QALY",
+        "risk_tier": "HIGH",
+        "claims": [
+          "CL1",
+          "CL2"
+        ],
+        "references": [
+          {
+            "key": "grossman1972healthcapital",
+            "title": "On the Concept of Health Capital and the Demand for Health",
+            "audit_status": "crossref-verified",
+            "live_status": "PASS",
+            "method": "crossref"
+          },
+          {
+            "key": "niceEconomicEvaluation",
+            "title": "Economic evaluation",
+            "audit_status": "official-url-200",
+            "live_status": "PASS",
+            "method": "url"
+          },
+          {
+            "key": "whohale7752",
+            "title": "Healthy life expectancy (HALE) metadata",
+            "audit_status": "official-url-200",
+            "live_status": "PASS",
+            "method": "url"
+          }
+        ],
+        "used_for": "把日历寿命转译为健康质量、有效时间和质量调整时间。",
+        "supports": "T -> E 的测量语言和健康质量调整视角。",
+        "does_not_support": "不能完整定义主体连续性，也不能替代个体医学判断。",
+        "local_verdict": "KEEP_WITH_BOUNDARY",
+        "action": "Keep the context only as T -> E measurement language; keep fresh reviewer review required before formal submission.",
+        "source_findings": [
+          {
+            "reference_key": "grossman1972healthcapital",
+            "title": "On the Concept of Health Capital and the Demand for Health",
+            "source_role": "Health capital lineage and economic-theory entry point.",
+            "inspected_sources": [
+              "https://api.crossref.org/works/10.1086/259880",
+              "https://ideas.repec.org/a/ucp/jpolec/v80y1972i2p223-55.html",
+              "https://EconPapers.repec.org/RePEc:ucp:jpolec:v:80:y:1972:i:2:p:223-55"
+            ],
+            "verification": "METADATA_VERIFIED_FULL_TEXT_RESTRICTED",
+            "context_support": "WEAK_FOR_CONTEXT_WITH_METADATA_ONLY",
+            "evidence_note": "Crossref and RePEc verify the article metadata, DOI, Journal of Political Economy venue, year, and page range. The accessible metadata supports using the source as the health-capital lineage entry, but the local audit did not extract full-text passages because the available PDF is scanned/restricted.",
+            "boundary": "Do not let Grossman alone carry the claim that effective time includes agency, subject continuity, or future option value.",
+            "action": "Keep as lineage source; fresh reviewer should inspect full text if a stronger health-capital claim is made."
+          },
+          {
+            "reference_key": "whohale7752",
+            "title": "Healthy life expectancy (HALE) metadata",
+            "source_role": "Official public-health metric for health-adjusted expected years.",
+            "inspected_sources": [
+              "https://www.who.int/data/gho/indicator-metadata-registry/imr-details/7752"
+            ],
+            "verification": "OFFICIAL_PAGE_VERIFIED",
+            "context_support": "SUPPORTS_HEALTH_ADJUSTED_TIME",
+            "evidence_note": "WHO defines HALE as the average years expected in full health and states that it captures fatal and non-fatal outcomes by adjusting life expectancy across health states.",
+            "boundary": "HALE is population-health measurement language; it does not define subject continuity, individual medical advice, agency, or future option value.",
+            "action": "Use for health-adjusted time only."
+          },
+          {
+            "reference_key": "niceEconomicEvaluation",
+            "title": "Economic evaluation",
+            "source_role": "Policy evaluation language for QALYs and lifetime health effects.",
+            "inspected_sources": [
+              "https://www.nice.org.uk/process/pmg36/chapter/economic-evaluation-2"
+            ],
+            "verification": "OFFICIAL_PAGE_VERIFIED",
+            "context_support": "SUPPORTS_QALY_QUALITY_AND_LENGTH_LANGUAGE",
+            "evidence_note": "NICE states that health effects should be expressed in QALYs and explains that QALYs combine life expectancy with health-related quality of life within the model time horizon.",
+            "boundary": "QALY is a health-economic index with assumptions and valuation choices; it cannot fully represent dignity, identity continuity, agency, subjective time, or option space.",
+            "action": "Use for quality-adjusted time only; keep extra Human Infra fields for agency and option value."
+          }
+        ]
+      }
+    ],
+    "fresh_reviewer_required": true
+  }
+}

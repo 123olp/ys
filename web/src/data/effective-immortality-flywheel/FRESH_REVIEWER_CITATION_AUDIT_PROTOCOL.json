@@ -1,0 +1,802 @@
+{
+  "audit_skill": "fresh-reviewer-citation-audit-protocol",
+  "verdict": "READY_FOR_FRESH_REVIEWER",
+  "reason_code": "external_sentence_level_review_protocol_exported",
+  "summary": "The citation-context queue, reviewer independence contract, pass gate, and per-context prompts are ready for an external fresh reviewer. This artifact does not replace the reviewer run.",
+  "generated_at": "2026-06-29T00:00:00.000Z",
+  "audited_input_hashes": {
+    "src/data/effective-immortality-evidence.json": "sha256:998866fea2f08fe27ad21ffa46f540543955ec3c49e1e2aaef78638e2db33d64",
+    "src/data/effective-immortality-flywheel/CITATION_CONTEXT_REVIEW_PACKET.json": "sha256:3a6142646a2b84348befaada84839fc9dcde49f35e3e5fd4d440cba46c6d0040",
+    "src/data/effective-immortality-flywheel/CITATION_CONTEXT_RISK_TRIAGE.json": "sha256:d0f49f79ab743c3583879e16969f8b51e8e28e74ebac3c2b81d3015dc56217a5",
+    "src/data/effective-immortality-flywheel/CITATION_CONTEXT_LOCAL_REVIEW.json": "sha256:6cb998cbeee3478e8e69e15a2fb4d48fb8783d9951d4458cd069766ec995d28e",
+    "src/data/effective-immortality-flywheel/HIGH_RISK_CITATION_CONTEXT_REVIEW.json": "sha256:842eb70ecbc8b9ea879eb33e562dbaa75de14644ec8aeb47ab269250d37a340d",
+    "src/data/effective-immortality-flywheel/REFERENCE_VERIFICATION.json": "sha256:a98496f727356c88f7c90f252514a927897aed12ca2fa811bad7051ce14414ca",
+    "src/data/effective-immortality-flywheel/CITATION_AUDIT.json": "sha256:c862a0099c18c0d8ff7a3eb68f80b54a7f706d8044421e2115e345db6ceb0d57"
+  },
+  "details": {
+    "schema_version": "2.0",
+    "citation_audit_verdict": "WARN",
+    "citation_audit_reason_code": "metadata_registry_without_fresh_reviewer",
+    "citation_context_risk_triage_verdict": "REQUIRES_FRESH_REVIEW",
+    "citation_context_local_review_verdict": "LOCAL_REVIEW_COMPLETE_REQUIRES_FRESH_REVIEW",
+    "context_count": 12,
+    "high_or_blocker_count": 1,
+    "medium_count": 7,
+    "low_count": 4,
+    "reviewer_independence_contract": [
+      "Fresh thread or independent reviewer required.",
+      "Web or primary-source lookup required for every reviewed context.",
+      "Local review artifacts are allowed only as a queue and boundary map, not as evidence of support.",
+      "Every context verdict must include source URL or retrieval note."
+    ],
+    "verdict_schema": {
+      "reference_existence": [
+        "PASS",
+        "FAIL",
+        "UNCERTAIN"
+      ],
+      "safe_use_support": [
+        "SUPPORTS",
+        "WEAK",
+        "WRONG"
+      ],
+      "forbidden_use_violation": [
+        "NONE",
+        "POSSIBLE",
+        "PRESENT"
+      ],
+      "required_action": [
+        "KEEP",
+        "SOFTEN",
+        "REWRITE",
+        "REMOVE",
+        "REPLACE_SOURCE"
+      ]
+    },
+    "blocking_conditions": [
+      "Any FAIL or UNCERTAIN reference existence verdict without manual resolution.",
+      "Any WRONG safe-use support verdict.",
+      "Any PRESENT forbidden-use violation.",
+      "Any required_action of REMOVE or REPLACE_SOURCE unresolved in manuscript text."
+    ],
+    "review_queue": [
+      {
+        "priority": 1,
+        "context_id": "CTX2",
+        "source_group": "Grossman Health Capital; WHO HALE; NICE QALY",
+        "risk_tier": "HIGH",
+        "risk_score": 6,
+        "claims": [
+          "CL1",
+          "CL2"
+        ],
+        "references": [
+          {
+            "key": "grossman1972healthcapital",
+            "title": "On the Concept of Health Capital and the Demand for Health",
+            "audit_status": "crossref-verified",
+            "live_status": "PASS",
+            "verification_method": "crossref",
+            "used_for": "把健康资本、有效时间和日历时间区分开。"
+          },
+          {
+            "key": "niceEconomicEvaluation",
+            "title": "Economic evaluation",
+            "audit_status": "official-url-200",
+            "live_status": "PASS",
+            "verification_method": "url",
+            "used_for": "提供 QALY 与健康经济评价的政策语言。"
+          },
+          {
+            "key": "whohale7752",
+            "title": "Healthy life expectancy (HALE) metadata",
+            "audit_status": "official-url-200",
+            "live_status": "PASS",
+            "verification_method": "url",
+            "used_for": "提供健康寿命指标的官方定义入口。"
+          }
+        ],
+        "used_for": "把日历寿命转译为健康质量、有效时间和质量调整时间。",
+        "safe_use": "T -> E 的测量语言和健康质量调整视角。",
+        "forbidden_use": "不能完整定义主体连续性，也不能替代个体医学判断。",
+        "local_verdict": "KEEP_WITH_STRICT_BOUNDARY",
+        "dedicated_high_risk_review": true,
+        "reviewer_questions": [
+          "优先检查是否把测量语言、规范语言或任务内效果外推成主体持续性、寿命或未来选择权结论。",
+          "拒绝从方法、关联或指标语言直接跳到具体延寿效果。",
+          "确认 forbidden use 没有在正文、图注、表格或摘要中被暗示。",
+          "确认正文只使用 safe use，不把来源升级为飞轮整体成立的证据。",
+          "该来源是否真实存在，且题名、作者、年份、场所、DOI 或 URL 与登记信息一致？",
+          "该来源是否支持 safe use 中登记的最小用途？",
+          "当前正文、图注或表格是否把该来源扩展成 forbidden use 中禁止的结论？",
+          "如果只支持部分用途，需要把哪一句改成更弱表述？",
+          "高风险检查：是否把指标、机制、治理、任务内效果或预测语言外推为永生、寿命收益或飞轮成立的实证证据？"
+        ],
+        "required_action_before_submission": "Resolve before any submission-facing claim can be treated as clean.",
+        "reviewer_prompt": "你是独立引用语境审稿人。不要使用项目作者的本地结论作为证据，必须重新打开来源并检查正文语境。\n\nContext: CTX2\nSource group: Grossman Health Capital; WHO HALE; NICE QALY\nRisk: HIGH / score 6\nClaims: CL1, CL2\nUsed for: 把日历寿命转译为健康质量、有效时间和质量调整时间。\nSafe use: T -> E 的测量语言和健康质量调整视角。\nForbidden use: 不能完整定义主体连续性，也不能替代个体医学判断。\n\nReferences:\n- grossman1972healthcapital: On the Concept of Health Capital and the Demand for Health (crossref-verified; PASS)\n- niceEconomicEvaluation: Economic evaluation (official-url-200; PASS)\n- whohale7752: Healthy life expectancy (HALE) metadata (official-url-200; PASS)\n\n请逐项输出：\n1. reference_existence: PASS / FAIL / UNCERTAIN，并给出核验 URL。\n2. safe_use_support: SUPPORTS / WEAK / WRONG，并说明来源文本如何支持或不支持。\n3. forbidden_use_violation: NONE / POSSIBLE / PRESENT。\n4. required_action: KEEP / SOFTEN / REWRITE / REMOVE / REPLACE_SOURCE。\n5. one_sentence_reason: 一句话说明 verdict。"
+      },
+      {
+        "priority": 2,
+        "context_id": "CTX3",
+        "source_group": "Hallmarks of Aging; GrimAge; Cognitive Reserve",
+        "risk_tier": "MEDIUM",
+        "risk_score": 4,
+        "claims": [
+          "CL7"
+        ],
+        "references": [
+          {
+            "key": "lopezotin2013hallmarks",
+            "title": "The Hallmarks of Aging",
+            "audit_status": "crossref-verified",
+            "live_status": "PASS",
+            "verification_method": "crossref",
+            "used_for": "提出衰老状态变量和机制入口。"
+          },
+          {
+            "key": "lu2019grimage",
+            "title": "DNA methylation GrimAge strongly predicts lifespan and healthspan",
+            "audit_status": "crossref-verified",
+            "live_status": "PASS",
+            "verification_method": "crossref",
+            "used_for": "作为生物年龄、死亡风险和健康寿命信号入口。"
+          },
+          {
+            "key": "stern2012cognitiveReserve",
+            "title": "Cognitive reserve in ageing and Alzheimer's disease",
+            "audit_status": "crossref-verified",
+            "live_status": "PASS",
+            "verification_method": "crossref",
+            "used_for": "说明认知储备作为状态变量和风险信号的边界。"
+          }
+        ],
+        "used_for": "提出身体状态、衰老机制、生物年龄信号和认知储备候选变量。",
+        "safe_use": "状态变量和风险信号的机制/关联入口。",
+        "forbidden_use": "不能把机制综述、预测关联或认知储备直接写成干预效果。",
+        "local_verdict": "KEEP_WITH_BOUNDARY",
+        "dedicated_high_risk_review": false,
+        "reviewer_questions": [
+          "确认 forbidden use 没有在正文、图注、表格或摘要中被暗示。",
+          "确认正文只使用 safe use，不把来源升级为飞轮整体成立的证据。",
+          "该来源是否真实存在，且题名、作者、年份、场所、DOI 或 URL 与登记信息一致？",
+          "该来源是否支持 safe use 中登记的最小用途？",
+          "当前正文、图注或表格是否把该来源扩展成 forbidden use 中禁止的结论？",
+          "如果只支持部分用途，需要把哪一句改成更弱表述？"
+        ],
+        "required_action_before_submission": "Review after high-risk contexts; keep registered boundary language.",
+        "reviewer_prompt": "你是独立引用语境审稿人。不要使用项目作者的本地结论作为证据，必须重新打开来源并检查正文语境。\n\nContext: CTX3\nSource group: Hallmarks of Aging; GrimAge; Cognitive Reserve\nRisk: MEDIUM / score 4\nClaims: CL7\nUsed for: 提出身体状态、衰老机制、生物年龄信号和认知储备候选变量。\nSafe use: 状态变量和风险信号的机制/关联入口。\nForbidden use: 不能把机制综述、预测关联或认知储备直接写成干预效果。\n\nReferences:\n- lopezotin2013hallmarks: The Hallmarks of Aging (crossref-verified; PASS)\n- lu2019grimage: DNA methylation GrimAge strongly predicts lifespan and healthspan (crossref-verified; PASS)\n- stern2012cognitiveReserve: Cognitive reserve in ageing and Alzheimer's disease (crossref-verified; PASS)\n\n请逐项输出：\n1. reference_existence: PASS / FAIL / UNCERTAIN，并给出核验 URL。\n2. safe_use_support: SUPPORTS / WEAK / WRONG，并说明来源文本如何支持或不支持。\n3. forbidden_use_violation: NONE / POSSIBLE / PRESENT。\n4. required_action: KEEP / SOFTEN / REWRITE / REMOVE / REPLACE_SOURCE。\n5. one_sentence_reason: 一句话说明 verdict。"
+      },
+      {
+        "priority": 3,
+        "context_id": "CTX5",
+        "source_group": "Human Capital; Social Capital; Social Relationships Mortality",
+        "risk_tier": "MEDIUM",
+        "risk_score": 4,
+        "claims": [
+          "CL1",
+          "CL2",
+          "CL5"
+        ],
+        "references": [
+          {
+            "key": "coleman1988socialCapital",
+            "title": "Social Capital in the Creation of Human Capital",
+            "audit_status": "doi-verified",
+            "live_status": "PASS",
+            "verification_method": "crossref",
+            "used_for": "说明关系、信任、规范和网络如何成为能力形成条件。"
+          },
+          {
+            "key": "holtlunstad2010social",
+            "title": "Social Relationships and Mortality Risk: A Meta-analytic Review",
+            "audit_status": "crossref-verified",
+            "live_status": "PASS",
+            "verification_method": "crossref",
+            "used_for": "讨论社会关系与死亡风险的关联证据边界。"
+          },
+          {
+            "key": "mincer1974humanCapital",
+            "title": "Schooling, Experience, and Earnings",
+            "audit_status": "official-archive",
+            "live_status": "PASS",
+            "verification_method": "url",
+            "used_for": "说明教育、经验和长期积累如何进入人力资本模型。"
+          }
+        ],
+        "used_for": "说明经验、资源、信誉和协作网络如何进入 C 与 O，并可能反哺 T/E。",
+        "safe_use": "积累资本、社会支持和死亡风险关联的讨论。",
+        "forbidden_use": "不能把社会关系关联直接升级成具体干预的因果延寿结论。",
+        "local_verdict": "KEEP_WITH_BOUNDARY",
+        "dedicated_high_risk_review": false,
+        "reviewer_questions": [
+          "确认 forbidden use 没有在正文、图注、表格或摘要中被暗示。",
+          "确认正文只使用 safe use，不把来源升级为飞轮整体成立的证据。",
+          "该来源是否真实存在，且题名、作者、年份、场所、DOI 或 URL 与登记信息一致？",
+          "该来源是否支持 safe use 中登记的最小用途？",
+          "当前正文、图注或表格是否把该来源扩展成 forbidden use 中禁止的结论？",
+          "如果只支持部分用途，需要把哪一句改成更弱表述？"
+        ],
+        "required_action_before_submission": "Review after high-risk contexts; keep registered boundary language.",
+        "reviewer_prompt": "你是独立引用语境审稿人。不要使用项目作者的本地结论作为证据，必须重新打开来源并检查正文语境。\n\nContext: CTX5\nSource group: Human Capital; Social Capital; Social Relationships Mortality\nRisk: MEDIUM / score 4\nClaims: CL1, CL2, CL5\nUsed for: 说明经验、资源、信誉和协作网络如何进入 C 与 O，并可能反哺 T/E。\nSafe use: 积累资本、社会支持和死亡风险关联的讨论。\nForbidden use: 不能把社会关系关联直接升级成具体干预的因果延寿结论。\n\nReferences:\n- coleman1988socialCapital: Social Capital in the Creation of Human Capital (doi-verified; PASS)\n- holtlunstad2010social: Social Relationships and Mortality Risk: A Meta-analytic Review (crossref-verified; PASS)\n- mincer1974humanCapital: Schooling, Experience, and Earnings (official-archive; PASS)\n\n请逐项输出：\n1. reference_existence: PASS / FAIL / UNCERTAIN，并给出核验 URL。\n2. safe_use_support: SUPPORTS / WEAK / WRONG，并说明来源文本如何支持或不支持。\n3. forbidden_use_violation: NONE / POSSIBLE / PRESENT。\n4. required_action: KEEP / SOFTEN / REWRITE / REMOVE / REPLACE_SOURCE。\n5. one_sentence_reason: 一句话说明 verdict。"
+      },
+      {
+        "priority": 4,
+        "context_id": "CTX7",
+        "source_group": "Generative AI at Work; Noy and Zhang; GitHub Copilot; Jagged Technological Frontier",
+        "risk_tier": "MEDIUM",
+        "risk_score": 4,
+        "claims": [
+          "CL1",
+          "CL2",
+          "CL4",
+          "CL7"
+        ],
+        "references": [
+          {
+            "key": "brynjolfsson2025generative",
+            "title": "Generative AI at Work",
+            "audit_status": "crossref-verified-corrected-doi",
+            "live_status": "PASS",
+            "verification_method": "crossref",
+            "used_for": "支持限定客服任务中的 AI productivity 证据。"
+          },
+          {
+            "key": "dellacqua2026jagged",
+            "title": "Navigating the Jagged Technological Frontier: Field Experimental Evidence of the Effects of Artificial Intelligence on Knowledge Worker Productivity and Quality",
+            "audit_status": "crossref-verified",
+            "live_status": "PASS",
+            "verification_method": "crossref",
+            "used_for": "支持 AI 收益与风险具有任务边界。"
+          },
+          {
+            "key": "noy2023productivity",
+            "title": "Experimental evidence on the productivity effects of generative artificial intelligence",
+            "audit_status": "crossref-verified",
+            "live_status": "PASS",
+            "verification_method": "crossref",
+            "used_for": "支持写作任务内的生成式 AI 生产率证据。"
+          },
+          {
+            "key": "peng2023copilot",
+            "title": "The Impact of AI on Developer Productivity: Evidence from GitHub Copilot",
+            "audit_status": "arxiv-api-verified",
+            "live_status": "PASS",
+            "verification_method": "arxiv-api",
+            "used_for": "支持限定编程任务中的 AI pair programmer 生产率入口。"
+          }
+        ],
+        "used_for": "支持 A -> Q 在限定任务中的生产率、速度、质量或任务边界证据。",
+        "safe_use": "生成式 AI 在客服、写作、编程或知识工作实验中的任务内效果与异质性。",
+        "forbidden_use": "不能泛化为通用智能增强、健康寿命延长或永生收益。",
+        "local_verdict": "KEEP_WITH_BOUNDARY",
+        "dedicated_high_risk_review": false,
+        "reviewer_questions": [
+          "确认 forbidden use 没有在正文、图注、表格或摘要中被暗示。",
+          "确认正文只使用 safe use，不把来源升级为飞轮整体成立的证据。",
+          "该来源是否真实存在，且题名、作者、年份、场所、DOI 或 URL 与登记信息一致？",
+          "该来源是否支持 safe use 中登记的最小用途？",
+          "当前正文、图注或表格是否把该来源扩展成 forbidden use 中禁止的结论？",
+          "如果只支持部分用途，需要把哪一句改成更弱表述？"
+        ],
+        "required_action_before_submission": "Review after high-risk contexts; keep registered boundary language.",
+        "reviewer_prompt": "你是独立引用语境审稿人。不要使用项目作者的本地结论作为证据，必须重新打开来源并检查正文语境。\n\nContext: CTX7\nSource group: Generative AI at Work; Noy and Zhang; GitHub Copilot; Jagged Technological Frontier\nRisk: MEDIUM / score 4\nClaims: CL1, CL2, CL4, CL7\nUsed for: 支持 A -> Q 在限定任务中的生产率、速度、质量或任务边界证据。\nSafe use: 生成式 AI 在客服、写作、编程或知识工作实验中的任务内效果与异质性。\nForbidden use: 不能泛化为通用智能增强、健康寿命延长或永生收益。\n\nReferences:\n- brynjolfsson2025generative: Generative AI at Work (crossref-verified-corrected-doi; PASS)\n- dellacqua2026jagged: Navigating the Jagged Technological Frontier: Field Experimental Evidence of the Effects of Artificial Intelligence on Knowledge Worker Productivity and Quality (crossref-verified; PASS)\n- noy2023productivity: Experimental evidence on the productivity effects of generative artificial intelligence (crossref-verified; PASS)\n- peng2023copilot: The Impact of AI on Developer Productivity: Evidence from GitHub Copilot (arxiv-api-verified; PASS)\n\n请逐项输出：\n1. reference_existence: PASS / FAIL / UNCERTAIN，并给出核验 URL。\n2. safe_use_support: SUPPORTS / WEAK / WRONG，并说明来源文本如何支持或不支持。\n3. forbidden_use_violation: NONE / POSSIBLE / PRESENT。\n4. required_action: KEEP / SOFTEN / REWRITE / REMOVE / REPLACE_SOURCE。\n5. one_sentence_reason: 一句话说明 verdict。"
+      },
+      {
+        "priority": 5,
+        "context_id": "CTX10",
+        "source_group": "Apple Heart Study; Personal Informatics; Lived Informatics; Dynamic Digital Twin",
+        "risk_tier": "MEDIUM",
+        "risk_score": 4,
+        "claims": [
+          "CL6"
+        ],
+        "references": [
+          {
+            "key": "epstein2015lived",
+            "title": "A lived informatics model of personal informatics",
+            "audit_status": "crossref-verified",
+            "live_status": "PASS",
+            "verification_method": "crossref",
+            "used_for": "说明长期自我追踪系统的生活嵌入、维护负担和断裂点。"
+          },
+          {
+            "key": "li2010personalInformatics",
+            "title": "A stage-based model of personal informatics systems",
+            "audit_status": "crossref-verified",
+            "live_status": "PASS",
+            "verification_method": "crossref",
+            "used_for": "提供个人信息学的准备、收集、整合、反思和行动阶段。"
+          },
+          {
+            "key": "mulder2022dynamicDigitalTwin",
+            "title": "Dynamic Digital Twin: Diagnosis, Treatment, Prediction, and Prevention of Disease During the Life Course",
+            "audit_status": "publisher-verified",
+            "live_status": "PASS",
+            "verification_method": "crossref",
+            "used_for": "说明生命过程中的状态观测、预测、预防和数字孪生建模入口。"
+          },
+          {
+            "key": "perez2019appleHeart",
+            "title": "Large-Scale Assessment of a Smartwatch to Identify Atrial Fibrillation",
+            "audit_status": "crossref-verified",
+            "live_status": "PASS",
+            "verification_method": "crossref",
+            "used_for": "说明可穿戴设备进入大规模风险提示和临床确认通道。"
+          }
+        ],
+        "used_for": "说明观测、反馈、个人数据系统和生命过程建模如何进入状态观测层。",
+        "safe_use": "observation -> action 的路径和自我追踪/数字孪生的系统问题。",
+        "forbidden_use": "早筛、追踪或数字孪生概念不等于死亡风险下降或医疗结局改善。",
+        "local_verdict": "KEEP_WITH_BOUNDARY",
+        "dedicated_high_risk_review": false,
+        "reviewer_questions": [
+          "确认 forbidden use 没有在正文、图注、表格或摘要中被暗示。",
+          "确认正文只使用 safe use，不把来源升级为飞轮整体成立的证据。",
+          "该来源是否真实存在，且题名、作者、年份、场所、DOI 或 URL 与登记信息一致？",
+          "该来源是否支持 safe use 中登记的最小用途？",
+          "当前正文、图注或表格是否把该来源扩展成 forbidden use 中禁止的结论？",
+          "如果只支持部分用途，需要把哪一句改成更弱表述？"
+        ],
+        "required_action_before_submission": "Review after high-risk contexts; keep registered boundary language.",
+        "reviewer_prompt": "你是独立引用语境审稿人。不要使用项目作者的本地结论作为证据，必须重新打开来源并检查正文语境。\n\nContext: CTX10\nSource group: Apple Heart Study; Personal Informatics; Lived Informatics; Dynamic Digital Twin\nRisk: MEDIUM / score 4\nClaims: CL6\nUsed for: 说明观测、反馈、个人数据系统和生命过程建模如何进入状态观测层。\nSafe use: observation -> action 的路径和自我追踪/数字孪生的系统问题。\nForbidden use: 早筛、追踪或数字孪生概念不等于死亡风险下降或医疗结局改善。\n\nReferences:\n- epstein2015lived: A lived informatics model of personal informatics (crossref-verified; PASS)\n- li2010personalInformatics: A stage-based model of personal informatics systems (crossref-verified; PASS)\n- mulder2022dynamicDigitalTwin: Dynamic Digital Twin: Diagnosis, Treatment, Prediction, and Prevention of Disease During the Life Course (publisher-verified; PASS)\n- perez2019appleHeart: Large-Scale Assessment of a Smartwatch to Identify Atrial Fibrillation (crossref-verified; PASS)\n\n请逐项输出：\n1. reference_existence: PASS / FAIL / UNCERTAIN，并给出核验 URL。\n2. safe_use_support: SUPPORTS / WEAK / WRONG，并说明来源文本如何支持或不支持。\n3. forbidden_use_violation: NONE / POSSIBLE / PRESENT。\n4. required_action: KEEP / SOFTEN / REWRITE / REMOVE / REPLACE_SOURCE。\n5. one_sentence_reason: 一句话说明 verdict。"
+      },
+      {
+        "priority": 6,
+        "context_id": "CTX11",
+        "source_group": "Extended Mind; Engelbart; Cognition in the Wild",
+        "risk_tier": "MEDIUM",
+        "risk_score": 4,
+        "claims": [
+          "CL6"
+        ],
+        "references": [
+          {
+            "key": "burwell2017bciEthics",
+            "title": "Ethical aspects of brain computer interfaces: a scoping review",
+            "audit_status": "doi-verified",
+            "live_status": "PASS",
+            "verification_method": "crossref",
+            "used_for": "为脑机接口、神经技术、同意、身份和主体边界提供风险治理入口。"
+          },
+          {
+            "key": "clark1998extended",
+            "title": "The Extended Mind",
+            "audit_status": "crossref-verified",
+            "live_status": "PASS",
+            "verification_method": "crossref",
+            "used_for": "支撑工具、记忆外化和认知扩展进入主体系统。"
+          },
+          {
+            "key": "engelbart1962augmenting",
+            "title": "Augmenting Human Intellect: A Conceptual Framework",
+            "audit_status": "official-archive-registered",
+            "live_status": "PASS",
+            "verification_method": "url",
+            "used_for": "提供人、工具、概念和方法作为增强系统的经典框架。"
+          },
+          {
+            "key": "hutchins1995cognition",
+            "title": "Cognition in the Wild",
+            "audit_status": "author-page-verified",
+            "live_status": "PASS",
+            "verification_method": "url",
+            "used_for": "提供分布式认知和环境嵌入式问题求解框架。"
+          }
+        ],
+        "used_for": "支撑工具、记忆外化、分布式认知和认知增强进入主体系统的理论位置。",
+        "safe_use": "主体能力可以由人、工具、表征、环境和协作流程共同支撑。",
+        "forbidden_use": "哲学和系统框架不提供数值效应估计，也不能证明数字副本等同于本人。",
+        "local_verdict": "KEEP_WITH_BOUNDARY",
+        "dedicated_high_risk_review": false,
+        "reviewer_questions": [
+          "确认 forbidden use 没有在正文、图注、表格或摘要中被暗示。",
+          "确认正文只使用 safe use，不把来源升级为飞轮整体成立的证据。",
+          "该来源是否真实存在，且题名、作者、年份、场所、DOI 或 URL 与登记信息一致？",
+          "该来源是否支持 safe use 中登记的最小用途？",
+          "当前正文、图注或表格是否把该来源扩展成 forbidden use 中禁止的结论？",
+          "如果只支持部分用途，需要把哪一句改成更弱表述？"
+        ],
+        "required_action_before_submission": "Review after high-risk contexts; keep registered boundary language.",
+        "reviewer_prompt": "你是独立引用语境审稿人。不要使用项目作者的本地结论作为证据，必须重新打开来源并检查正文语境。\n\nContext: CTX11\nSource group: Extended Mind; Engelbart; Cognition in the Wild\nRisk: MEDIUM / score 4\nClaims: CL6\nUsed for: 支撑工具、记忆外化、分布式认知和认知增强进入主体系统的理论位置。\nSafe use: 主体能力可以由人、工具、表征、环境和协作流程共同支撑。\nForbidden use: 哲学和系统框架不提供数值效应估计，也不能证明数字副本等同于本人。\n\nReferences:\n- burwell2017bciEthics: Ethical aspects of brain computer interfaces: a scoping review (doi-verified; PASS)\n- clark1998extended: The Extended Mind (crossref-verified; PASS)\n- engelbart1962augmenting: Augmenting Human Intellect: A Conceptual Framework (official-archive-registered; PASS)\n- hutchins1995cognition: Cognition in the Wild (author-page-verified; PASS)\n\n请逐项输出：\n1. reference_existence: PASS / FAIL / UNCERTAIN，并给出核验 URL。\n2. safe_use_support: SUPPORTS / WEAK / WRONG，并说明来源文本如何支持或不支持。\n3. forbidden_use_violation: NONE / POSSIBLE / PRESENT。\n4. required_action: KEEP / SOFTEN / REWRITE / REMOVE / REPLACE_SOURCE。\n5. one_sentence_reason: 一句话说明 verdict。"
+      },
+      {
+        "priority": 7,
+        "context_id": "CTX12",
+        "source_group": "Capability Approach; WHO SDOH; WHO Primary Health Care",
+        "risk_tier": "MEDIUM",
+        "risk_score": 4,
+        "claims": [
+          "CL1",
+          "CL2",
+          "CL5"
+        ],
+        "references": [
+          {
+            "key": "robeyns2021capability",
+            "title": "The Capability Approach",
+            "audit_status": "official-web-registered",
+            "live_status": "PASS",
+            "verification_method": "url",
+            "used_for": "定义真实可行能力和可能性空间。"
+          },
+          {
+            "key": "whoSdhPhc",
+            "title": "Social determinants of health and primary health care",
+            "audit_status": "official-urls-200",
+            "live_status": "PASS",
+            "verification_method": "url",
+            "used_for": "把健康和持续性放回收入、教育、住房、工作、环境和医疗可及条件中。"
+          }
+        ],
+        "used_for": "定义 O 可能性空间为真实可进入路径，并把资源、制度、医疗和社会条件纳入反哺路径。",
+        "safe_use": "真实选择权、健康决定因素、医疗可及和连续照护的规范/公共卫生框架。",
+        "forbidden_use": "规范框架不提供寿命预测，也不能替代具体政策或医疗干预评估。",
+        "local_verdict": "KEEP_WITH_BOUNDARY",
+        "dedicated_high_risk_review": false,
+        "reviewer_questions": [
+          "确认 forbidden use 没有在正文、图注、表格或摘要中被暗示。",
+          "确认正文只使用 safe use，不把来源升级为飞轮整体成立的证据。",
+          "该来源是否真实存在，且题名、作者、年份、场所、DOI 或 URL 与登记信息一致？",
+          "该来源是否支持 safe use 中登记的最小用途？",
+          "当前正文、图注或表格是否把该来源扩展成 forbidden use 中禁止的结论？",
+          "如果只支持部分用途，需要把哪一句改成更弱表述？"
+        ],
+        "required_action_before_submission": "Review after high-risk contexts; keep registered boundary language.",
+        "reviewer_prompt": "你是独立引用语境审稿人。不要使用项目作者的本地结论作为证据，必须重新打开来源并检查正文语境。\n\nContext: CTX12\nSource group: Capability Approach; WHO SDOH; WHO Primary Health Care\nRisk: MEDIUM / score 4\nClaims: CL1, CL2, CL5\nUsed for: 定义 O 可能性空间为真实可进入路径，并把资源、制度、医疗和社会条件纳入反哺路径。\nSafe use: 真实选择权、健康决定因素、医疗可及和连续照护的规范/公共卫生框架。\nForbidden use: 规范框架不提供寿命预测，也不能替代具体政策或医疗干预评估。\n\nReferences:\n- robeyns2021capability: The Capability Approach (official-web-registered; PASS)\n- whoSdhPhc: Social determinants of health and primary health care (official-urls-200; PASS)\n\n请逐项输出：\n1. reference_existence: PASS / FAIL / UNCERTAIN，并给出核验 URL。\n2. safe_use_support: SUPPORTS / WEAK / WRONG，并说明来源文本如何支持或不支持。\n3. forbidden_use_violation: NONE / POSSIBLE / PRESENT。\n4. required_action: KEEP / SOFTEN / REWRITE / REMOVE / REPLACE_SOURCE。\n5. one_sentence_reason: 一句话说明 verdict。"
+      },
+      {
+        "priority": 8,
+        "context_id": "CTX9",
+        "source_group": "Target Trial Emulation; ClinicalTrials.gov; WHO ICTRP; TRIPOD+AI; PROBAST+AI; CONSORT-AI; SPIRIT-AI",
+        "risk_tier": "MEDIUM",
+        "risk_score": 3,
+        "claims": [
+          "CL3",
+          "CL6",
+          "CL7"
+        ],
+        "references": [
+          {
+            "key": "clinicaltrialsGov",
+            "title": "ClinicalTrials.gov",
+            "audit_status": "official-url-200",
+            "live_status": "PASS",
+            "verification_method": "url",
+            "used_for": "提供临床试验登记、人群、比较组、结局和结果回填入口。"
+          },
+          {
+            "key": "clinicaltrialsGovApi",
+            "title": "ClinicalTrials.gov Data API",
+            "audit_status": "official-url-200",
+            "live_status": "PASS",
+            "verification_method": "url",
+            "used_for": "提供结构化试验注册与结果数据的机器读取入口，用于后续试验证据采集和协议字段回填。"
+          },
+          {
+            "key": "consortAi2020",
+            "title": "Reporting guidelines for clinical trial reports for interventions involving artificial intelligence: the CONSORT-AI extension",
+            "audit_status": "doi-verified",
+            "live_status": "PASS",
+            "verification_method": "crossref",
+            "used_for": "约束 AI 干预临床试验结果报告中的干预说明、输入输出、人机交互和错误案例分析。"
+          },
+          {
+            "key": "gradeHandbook",
+            "title": "GRADE Handbook",
+            "audit_status": "official-web",
+            "live_status": "PASS",
+            "verification_method": "url",
+            "used_for": "提供证据确定性、收益风险权衡和从证据到建议的政策语言。"
+          },
+          {
+            "key": "hernan2022targetTrial",
+            "title": "Target Trial Emulation",
+            "audit_status": "crossref-verified",
+            "live_status": "PASS",
+            "verification_method": "crossref",
+            "used_for": "定义因果协议门禁和观察数据因果推断边界。"
+          },
+          {
+            "key": "probastAi2025",
+            "title": "PROBAST+AI: an updated quality, risk of bias, and applicability assessment tool for prediction models using regression or artificial intelligence methods",
+            "audit_status": "doi-and-official-site-verified",
+            "live_status": "PASS",
+            "verification_method": "crossref",
+            "used_for": "提供 AI 预测模型研究的偏倚风险、适用性、可信度、公平性和质量审查门禁。"
+          },
+          {
+            "key": "robins2000marginalStructural",
+            "title": "Marginal Structural Models and Causal Inference in Epidemiology",
+            "audit_status": "pubmed-verified",
+            "live_status": "PASS",
+            "verification_method": "crossref",
+            "used_for": "说明时间变化混杂下的因果估计入口和边界。"
+          },
+          {
+            "key": "spiritAi2020",
+            "title": "Guidelines for clinical trial protocols for interventions involving artificial intelligence: the SPIRIT-AI extension",
+            "audit_status": "doi-verified",
+            "live_status": "PASS",
+            "verification_method": "crossref",
+            "used_for": "约束 AI 干预临床试验方案中的协议透明度、输入输出、人机交互和错误分析计划。"
+          },
+          {
+            "key": "tripodAi2024",
+            "title": "TRIPOD+AI statement: updated guidance for reporting clinical prediction models that use regression or machine learning methods",
+            "audit_status": "doi-and-official-site-verified",
+            "live_status": "PASS",
+            "verification_method": "crossref",
+            "used_for": "提供 AI/机器学习临床预测模型的报告清单、外部验证、校准和透明度门禁。"
+          },
+          {
+            "key": "tripodProbast",
+            "title": "TRIPOD Statement and PROBAST",
+            "audit_status": "official-urls-200",
+            "live_status": "PASS",
+            "verification_method": "url",
+            "used_for": "约束预测模型报告质量、偏倚风险、校准和外部验证。"
+          },
+          {
+            "key": "whoIctrp",
+            "title": "International Clinical Trials Registry Platform (ICTRP)",
+            "audit_status": "official-url-200",
+            "live_status": "PASS",
+            "verification_method": "url",
+            "used_for": "提供国际临床试验注册网络、WHO 数据集和试验透明度原则的上位入口。"
+          }
+        ],
+        "used_for": "定义 U_t -> causal claim 的因果门禁和预测模型报告门禁。",
+        "safe_use": "population、intervention、comparator、time zero、outcome、estimand、试验登记、AI 干预报告、验证、校准和偏倚审查。",
+        "forbidden_use": "不能消除所有不可测混杂，也不证明任何注册试验或预测模型有效。",
+        "local_verdict": "KEEP_WITH_BOUNDARY",
+        "dedicated_high_risk_review": false,
+        "reviewer_questions": [
+          "拒绝从任务内 AI 效果直接跳到通用能力增强、健康寿命收益或永生收益。",
+          "确认 forbidden use 没有在正文、图注、表格或摘要中被暗示。",
+          "确认正文只使用 safe use，不把来源升级为飞轮整体成立的证据。",
+          "该来源是否真实存在，且题名、作者、年份、场所、DOI 或 URL 与登记信息一致？",
+          "该来源是否支持 safe use 中登记的最小用途？",
+          "当前正文、图注或表格是否把该来源扩展成 forbidden use 中禁止的结论？",
+          "如果只支持部分用途，需要把哪一句改成更弱表述？"
+        ],
+        "required_action_before_submission": "Review after high-risk contexts; keep registered boundary language.",
+        "reviewer_prompt": "你是独立引用语境审稿人。不要使用项目作者的本地结论作为证据，必须重新打开来源并检查正文语境。\n\nContext: CTX9\nSource group: Target Trial Emulation; ClinicalTrials.gov; WHO ICTRP; TRIPOD+AI; PROBAST+AI; CONSORT-AI; SPIRIT-AI\nRisk: MEDIUM / score 3\nClaims: CL3, CL6, CL7\nUsed for: 定义 U_t -> causal claim 的因果门禁和预测模型报告门禁。\nSafe use: population、intervention、comparator、time zero、outcome、estimand、试验登记、AI 干预报告、验证、校准和偏倚审查。\nForbidden use: 不能消除所有不可测混杂，也不证明任何注册试验或预测模型有效。\n\nReferences:\n- clinicaltrialsGov: ClinicalTrials.gov (official-url-200; PASS)\n- clinicaltrialsGovApi: ClinicalTrials.gov Data API (official-url-200; PASS)\n- consortAi2020: Reporting guidelines for clinical trial reports for interventions involving artificial intelligence: the CONSORT-AI extension (doi-verified; PASS)\n- gradeHandbook: GRADE Handbook (official-web; PASS)\n- hernan2022targetTrial: Target Trial Emulation (crossref-verified; PASS)\n- probastAi2025: PROBAST+AI: an updated quality, risk of bias, and applicability assessment tool for prediction models using regression or artificial intelligence methods (doi-and-official-site-verified; PASS)\n- robins2000marginalStructural: Marginal Structural Models and Causal Inference in Epidemiology (pubmed-verified; PASS)\n- spiritAi2020: Guidelines for clinical trial protocols for interventions involving artificial intelligence: the SPIRIT-AI extension (doi-verified; PASS)\n- tripodAi2024: TRIPOD+AI statement: updated guidance for reporting clinical prediction models that use regression or machine learning methods (doi-and-official-site-verified; PASS)\n- tripodProbast: TRIPOD Statement and PROBAST (official-urls-200; PASS)\n- whoIctrp: International Clinical Trials Registry Platform (ICTRP) (official-url-200; PASS)\n\n请逐项输出：\n1. reference_existence: PASS / FAIL / UNCERTAIN，并给出核验 URL。\n2. safe_use_support: SUPPORTS / WEAK / WRONG，并说明来源文本如何支持或不支持。\n3. forbidden_use_violation: NONE / POSSIBLE / PRESENT。\n4. required_action: KEEP / SOFTEN / REWRITE / REMOVE / REPLACE_SOURCE。\n5. one_sentence_reason: 一句话说明 verdict。"
+      },
+      {
+        "priority": 9,
+        "context_id": "CTX1",
+        "source_group": "Kaplan-Meier 1958; Cox 1972",
+        "risk_tier": "LOW",
+        "risk_score": 2,
+        "claims": [
+          "CL2",
+          "CL3",
+          "CL7"
+        ],
+        "references": [
+          {
+            "key": "cox1972regression",
+            "title": "Regression Models and Life-Tables",
+            "audit_status": "crossref-verified",
+            "live_status": "PASS",
+            "verification_method": "crossref",
+            "used_for": "定义协变量、风险函数和 lambda(t) 的统计语言。"
+          },
+          {
+            "key": "kaplan1958incomplete",
+            "title": "Nonparametric Estimation from Incomplete Observations",
+            "audit_status": "crossref-verified",
+            "live_status": "PASS",
+            "verification_method": "crossref",
+            "used_for": "定义生存曲线、删失数据和 T 的统计语言。"
+          }
+        ],
+        "used_for": "定义 T、生存函数 S(t)、删失数据和风险函数 lambda(t) 的统计语言。",
+        "safe_use": "事件时间、删失、生存曲线和协变量风险建模的基础方法。",
+        "forbidden_use": "不证明任何具体延寿、健康、AI 或资源干预有效。",
+        "local_verdict": "KEEP_AS_METHOD_OR_FRAME_LANGUAGE",
+        "dedicated_high_risk_review": false,
+        "reviewer_questions": [
+          "确认 forbidden use 没有在正文、图注、表格或摘要中被暗示。",
+          "确认正文只使用 safe use，不把来源升级为飞轮整体成立的证据。",
+          "该来源是否真实存在，且题名、作者、年份、场所、DOI 或 URL 与登记信息一致？",
+          "该来源是否支持 safe use 中登记的最小用途？",
+          "当前正文、图注或表格是否把该来源扩展成 forbidden use 中禁止的结论？",
+          "如果只支持部分用途，需要把哪一句改成更弱表述？"
+        ],
+        "required_action_before_submission": "Review after high-risk contexts; keep registered boundary language.",
+        "reviewer_prompt": "你是独立引用语境审稿人。不要使用项目作者的本地结论作为证据，必须重新打开来源并检查正文语境。\n\nContext: CTX1\nSource group: Kaplan-Meier 1958; Cox 1972\nRisk: LOW / score 2\nClaims: CL2, CL3, CL7\nUsed for: 定义 T、生存函数 S(t)、删失数据和风险函数 lambda(t) 的统计语言。\nSafe use: 事件时间、删失、生存曲线和协变量风险建模的基础方法。\nForbidden use: 不证明任何具体延寿、健康、AI 或资源干预有效。\n\nReferences:\n- cox1972regression: Regression Models and Life-Tables (crossref-verified; PASS)\n- kaplan1958incomplete: Nonparametric Estimation from Incomplete Observations (crossref-verified; PASS)\n\n请逐项输出：\n1. reference_existence: PASS / FAIL / UNCERTAIN，并给出核验 URL。\n2. safe_use_support: SUPPORTS / WEAK / WRONG，并说明来源文本如何支持或不支持。\n3. forbidden_use_violation: NONE / POSSIBLE / PRESENT。\n4. required_action: KEEP / SOFTEN / REWRITE / REMOVE / REPLACE_SOURCE。\n5. one_sentence_reason: 一句话说明 verdict。"
+      },
+      {
+        "priority": 10,
+        "context_id": "CTX4",
+        "source_group": "Deliberate Practice; Law of Practice; Self-Regulated Learning; Feedback Intervention Theory",
+        "risk_tier": "LOW",
+        "risk_score": 2,
+        "claims": [
+          "CL1",
+          "CL2"
+        ],
+        "references": [
+          {
+            "key": "ericsson1993deliberatePractice",
+            "title": "The role of deliberate practice in the acquisition of expert performance",
+            "audit_status": "crossref-verified",
+            "live_status": "PASS",
+            "verification_method": "crossref",
+            "used_for": "解释有效时间进入有反馈练习轮次的条件。"
+          },
+          {
+            "key": "kluger1996feedback",
+            "title": "The effects of feedback interventions on performance: A historical review, a meta-analysis, and a preliminary feedback intervention theory",
+            "audit_status": "crossref-verified",
+            "live_status": "PASS",
+            "verification_method": "crossref",
+            "used_for": "说明反馈可能提升表现，也可能因设计错误降低表现。"
+          },
+          {
+            "key": "newell1981lawPractice",
+            "title": "Mechanisms of Skill Acquisition and the Law of Practice: Allen Newell and Paul S. Rosenbloom",
+            "audit_status": "crossref-verified-corrected-doi",
+            "live_status": "PASS",
+            "verification_method": "crossref",
+            "used_for": "为重复轮次、练习曲线和能力增长提供认知模型入口。"
+          },
+          {
+            "key": "zimmerman2002selfRegulated",
+            "title": "Becoming a Self-Regulated Learner: An Overview",
+            "audit_status": "doi-verified",
+            "live_status": "PASS",
+            "verification_method": "crossref",
+            "used_for": "说明学习轮次需要目标设定、自我监控、反馈和策略调整。"
+          }
+        ],
+        "used_for": "解释 E -> R -> C：有效时间如何在有目标、有反馈和可修正的任务中沉淀为能力。",
+        "safe_use": "学习轮次、反馈质量、练习曲线和能力积累的条件。",
+        "forbidden_use": "时间本身不会自动产生能力；错误反馈和低质量重复可能反向损害表现。",
+        "local_verdict": "KEEP_WITH_BOUNDARY",
+        "dedicated_high_risk_review": false,
+        "reviewer_questions": [
+          "确认 forbidden use 没有在正文、图注、表格或摘要中被暗示。",
+          "确认正文只使用 safe use，不把来源升级为飞轮整体成立的证据。",
+          "该来源是否真实存在，且题名、作者、年份、场所、DOI 或 URL 与登记信息一致？",
+          "该来源是否支持 safe use 中登记的最小用途？",
+          "当前正文、图注或表格是否把该来源扩展成 forbidden use 中禁止的结论？",
+          "如果只支持部分用途，需要把哪一句改成更弱表述？"
+        ],
+        "required_action_before_submission": "Review after high-risk contexts; keep registered boundary language.",
+        "reviewer_prompt": "你是独立引用语境审稿人。不要使用项目作者的本地结论作为证据，必须重新打开来源并检查正文语境。\n\nContext: CTX4\nSource group: Deliberate Practice; Law of Practice; Self-Regulated Learning; Feedback Intervention Theory\nRisk: LOW / score 2\nClaims: CL1, CL2\nUsed for: 解释 E -> R -> C：有效时间如何在有目标、有反馈和可修正的任务中沉淀为能力。\nSafe use: 学习轮次、反馈质量、练习曲线和能力积累的条件。\nForbidden use: 时间本身不会自动产生能力；错误反馈和低质量重复可能反向损害表现。\n\nReferences:\n- ericsson1993deliberatePractice: The role of deliberate practice in the acquisition of expert performance (crossref-verified; PASS)\n- kluger1996feedback: The effects of feedback interventions on performance: A historical review, a meta-analysis, and a preliminary feedback intervention theory (crossref-verified; PASS)\n- newell1981lawPractice: Mechanisms of Skill Acquisition and the Law of Practice: Allen Newell and Paul S. Rosenbloom (crossref-verified-corrected-doi; PASS)\n- zimmerman2002selfRegulated: Becoming a Self-Regulated Learner: An Overview (doi-verified; PASS)\n\n请逐项输出：\n1. reference_existence: PASS / FAIL / UNCERTAIN，并给出核验 URL。\n2. safe_use_support: SUPPORTS / WEAK / WRONG，并说明来源文本如何支持或不支持。\n3. forbidden_use_violation: NONE / POSSIBLE / PRESENT。\n4. required_action: KEEP / SOFTEN / REWRITE / REMOVE / REPLACE_SOURCE。\n5. one_sentence_reason: 一句话说明 verdict。"
+      },
+      {
+        "priority": 11,
+        "context_id": "CTX6",
+        "source_group": "TAM; UTAUT; Diffusion of Innovations",
+        "risk_tier": "LOW",
+        "risk_score": 2,
+        "claims": [
+          "CL1",
+          "CL2"
+        ],
+        "references": [
+          {
+            "key": "davis1989tam",
+            "title": "Perceived Usefulness, Perceived Ease of Use, and User Acceptance of Information Technology",
+            "audit_status": "crossref-verified",
+            "live_status": "PASS",
+            "verification_method": "crossref",
+            "used_for": "解释技术采用能力中的有用性和易用性。"
+          },
+          {
+            "key": "rogers2003diffusion",
+            "title": "Diffusion of Innovations",
+            "audit_status": "bibliographic-record-verified-isbn",
+            "live_status": "PASS",
+            "verification_method": "url",
+            "used_for": "说明技术成熟、扩散、采用者差异和社会系统时间窗口。"
+          },
+          {
+            "key": "venkatesh2003utaut",
+            "title": "User Acceptance of Information Technology: Toward a Unified View",
+            "audit_status": "crossref-verified",
+            "live_status": "PASS",
+            "verification_method": "crossref",
+            "used_for": "解释技术采用中的促进条件、社会影响和努力预期。"
+          }
+        ],
+        "used_for": "解释 C -> A：技术采用受有用性、易用性、促进条件、资源和社会影响约束。",
+        "safe_use": "技术采用能力的分解：access、understanding、evaluation、trial、integration。",
+        "forbidden_use": "不能证明采用后的技术一定有效，也不能覆盖所有高风险医学或神经技术。",
+        "local_verdict": "KEEP_WITH_BOUNDARY",
+        "dedicated_high_risk_review": false,
+        "reviewer_questions": [
+          "确认 forbidden use 没有在正文、图注、表格或摘要中被暗示。",
+          "确认正文只使用 safe use，不把来源升级为飞轮整体成立的证据。",
+          "该来源是否真实存在，且题名、作者、年份、场所、DOI 或 URL 与登记信息一致？",
+          "该来源是否支持 safe use 中登记的最小用途？",
+          "当前正文、图注或表格是否把该来源扩展成 forbidden use 中禁止的结论？",
+          "如果只支持部分用途，需要把哪一句改成更弱表述？"
+        ],
+        "required_action_before_submission": "Review after high-risk contexts; keep registered boundary language.",
+        "reviewer_prompt": "你是独立引用语境审稿人。不要使用项目作者的本地结论作为证据，必须重新打开来源并检查正文语境。\n\nContext: CTX6\nSource group: TAM; UTAUT; Diffusion of Innovations\nRisk: LOW / score 2\nClaims: CL1, CL2\nUsed for: 解释 C -> A：技术采用受有用性、易用性、促进条件、资源和社会影响约束。\nSafe use: 技术采用能力的分解：access、understanding、evaluation、trial、integration。\nForbidden use: 不能证明采用后的技术一定有效，也不能覆盖所有高风险医学或神经技术。\n\nReferences:\n- davis1989tam: Perceived Usefulness, Perceived Ease of Use, and User Acceptance of Information Technology (crossref-verified; PASS)\n- rogers2003diffusion: Diffusion of Innovations (bibliographic-record-verified-isbn; PASS)\n- venkatesh2003utaut: User Acceptance of Information Technology: Toward a Unified View (crossref-verified; PASS)\n\n请逐项输出：\n1. reference_existence: PASS / FAIL / UNCERTAIN，并给出核验 URL。\n2. safe_use_support: SUPPORTS / WEAK / WRONG，并说明来源文本如何支持或不支持。\n3. forbidden_use_violation: NONE / POSSIBLE / PRESENT。\n4. required_action: KEEP / SOFTEN / REWRITE / REMOVE / REPLACE_SOURCE。\n5. one_sentence_reason: 一句话说明 verdict。"
+      },
+      {
+        "priority": 12,
+        "context_id": "CTX8",
+        "source_group": "NIST AI RMF; Guidelines for Human-AI Interaction; NASA-TLX; Automation taxonomy",
+        "risk_tier": "LOW",
+        "risk_score": 2,
+        "claims": [
+          "CL2",
+          "CL4",
+          "CL6",
+          "CL7"
+        ],
+        "references": [
+          {
+            "key": "amershi2019hai",
+            "title": "Guidelines for Human-AI Interaction",
+            "audit_status": "crossref-verified",
+            "live_status": "PASS",
+            "verification_method": "crossref",
+            "used_for": "提供人机协作设计、纠错和控制权边界。"
+          },
+          {
+            "key": "burwell2017bciEthics",
+            "title": "Ethical aspects of brain computer interfaces: a scoping review",
+            "audit_status": "doi-verified",
+            "live_status": "PASS",
+            "verification_method": "crossref",
+            "used_for": "为脑机接口、神经技术、同意、身份和主体边界提供风险治理入口。"
+          },
+          {
+            "key": "dellacqua2026jagged",
+            "title": "Navigating the Jagged Technological Frontier: Field Experimental Evidence of the Effects of Artificial Intelligence on Knowledge Worker Productivity and Quality",
+            "audit_status": "crossref-verified",
+            "live_status": "PASS",
+            "verification_method": "crossref",
+            "used_for": "支持 AI 收益与风险具有任务边界。"
+          },
+          {
+            "key": "nasaTlx",
+            "title": "NASA Task Load Index",
+            "audit_status": "official-web-registered",
+            "live_status": "PASS",
+            "verification_method": "url",
+            "used_for": "提供任务负荷、时间压力、努力和挫败感测量入口。"
+          },
+          {
+            "key": "nist2023airmf",
+            "title": "Artificial Intelligence Risk Management Framework (AI RMF 1.0)",
+            "audit_status": "official-url-200",
+            "live_status": "PASS",
+            "verification_method": "url",
+            "used_for": "提供 AI 风险识别、测量、治理和回滚语言。"
+          },
+          {
+            "key": "parasuraman2000automation",
+            "title": "A model for types and levels of human interaction with automation",
+            "audit_status": "crossref-verified",
+            "live_status": "PASS",
+            "verification_method": "crossref",
+            "used_for": "拆分自动化类型、等级和人机控制权。"
+          }
+        ],
+        "used_for": "给 A/Q -> risk、QA 成本、任务负荷、自动化等级和人机控制权提供治理语言。",
+        "safe_use": "风险识别、测量、纠错、回滚和人机协作设计边界。",
+        "forbidden_use": "治理框架和交互指南不提供收益估计，也不证明 AI 能延寿。",
+        "local_verdict": "KEEP_AS_METHOD_OR_FRAME_LANGUAGE",
+        "dedicated_high_risk_review": false,
+        "reviewer_questions": [
+          "确认 forbidden use 没有在正文、图注、表格或摘要中被暗示。",
+          "确认正文只使用 safe use，不把来源升级为飞轮整体成立的证据。",
+          "该来源是否真实存在，且题名、作者、年份、场所、DOI 或 URL 与登记信息一致？",
+          "该来源是否支持 safe use 中登记的最小用途？",
+          "当前正文、图注或表格是否把该来源扩展成 forbidden use 中禁止的结论？",
+          "如果只支持部分用途，需要把哪一句改成更弱表述？"
+        ],
+        "required_action_before_submission": "Review after high-risk contexts; keep registered boundary language.",
+        "reviewer_prompt": "你是独立引用语境审稿人。不要使用项目作者的本地结论作为证据，必须重新打开来源并检查正文语境。\n\nContext: CTX8\nSource group: NIST AI RMF; Guidelines for Human-AI Interaction; NASA-TLX; Automation taxonomy\nRisk: LOW / score 2\nClaims: CL2, CL4, CL6, CL7\nUsed for: 给 A/Q -> risk、QA 成本、任务负荷、自动化等级和人机控制权提供治理语言。\nSafe use: 风险识别、测量、纠错、回滚和人机协作设计边界。\nForbidden use: 治理框架和交互指南不提供收益估计，也不证明 AI 能延寿。\n\nReferences:\n- amershi2019hai: Guidelines for Human-AI Interaction (crossref-verified; PASS)\n- burwell2017bciEthics: Ethical aspects of brain computer interfaces: a scoping review (doi-verified; PASS)\n- dellacqua2026jagged: Navigating the Jagged Technological Frontier: Field Experimental Evidence of the Effects of Artificial Intelligence on Knowledge Worker Productivity and Quality (crossref-verified; PASS)\n- nasaTlx: NASA Task Load Index (official-web-registered; PASS)\n- nist2023airmf: Artificial Intelligence Risk Management Framework (AI RMF 1.0) (official-url-200; PASS)\n- parasuraman2000automation: A model for types and levels of human interaction with automation (crossref-verified; PASS)\n\n请逐项输出：\n1. reference_existence: PASS / FAIL / UNCERTAIN，并给出核验 URL。\n2. safe_use_support: SUPPORTS / WEAK / WRONG，并说明来源文本如何支持或不支持。\n3. forbidden_use_violation: NONE / POSSIBLE / PRESENT。\n4. required_action: KEEP / SOFTEN / REWRITE / REMOVE / REPLACE_SOURCE。\n5. one_sentence_reason: 一句话说明 verdict。"
+      }
+    ]
+  }
+}

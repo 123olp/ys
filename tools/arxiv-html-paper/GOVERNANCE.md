@@ -74,6 +74,17 @@ Major 变更：
 是否让其他 Astro 项目迁移更困难
 ```
 
+DOM 契约评审必须把阅读器节点当作接口，而不是样式细节。以下情况属于高风险变更：
+
+```text
+绕过 templates/paper.astro 的 slot="toc"
+只把正文 HTML 注入 PaperReaderLayout
+删除或重命名 .ltx_page_navbar、.ltx_TOC、.ltx_document、.ltx_abstract、.ltx_bibliography
+向 layout 传未消费 props 来暗示功能存在
+post-process 生成重复 class 属性
+只验证页面正文可见，不验证控件状态变化
+```
+
 每次修改后至少运行：
 
 ```bash
@@ -92,6 +103,18 @@ make check
 移动端宽度
 字体是否无 404
 ```
+
+涉及静态预览生成、HTML post-process、layout slot 或 TOC 的修改，浏览器检查必须升级为断言：
+
+```text
+.ltx_page_navbar > nav.ltx_TOC 存在
+.ltx_TOC 目录项数量符合页面章节
+.ltx_abstract 与 .ltx_bibliography 存在
+目录按钮点击后 data-toc-display 从 none 变 block 或从 block 变 none
+桌面端和移动端都通过
+```
+
+经验来源：一次消费项目 bug 中，页面正文正常显示，但因为生成器绕过原生 TOC slot，缺少 `.ltx_page_navbar > nav.ltx_TOC`，`toggleNavTOC()` 查找不到目标节点，目录控件静默失效。`verify-assets` 当时通过，因为它只验证资源齐全，不验证 DOM/点击行为。
 
 ## 资源治理
 
@@ -127,4 +150,5 @@ make check
 - [ ] [MAINTENANCE.md](MAINTENANCE.md) 已同步。
 - [ ] `tools/AGENTS.md` 和本目录 `AGENTS.md` 已同步。
 - [ ] `verify-assets` 通过。
+- [ ] 涉及模板、目录或 post-process 时，DOM/点击行为断言通过。
 - [ ] `make check` 通过。

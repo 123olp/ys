@@ -1,0 +1,610 @@
+{
+  "audit_skill": "effective-immortality-coverage-audit",
+  "verdict": "PASS",
+  "reason_code": "all_aliases_resolve",
+  "summary": "All evidence source aliases resolve to Source Cards and Reference Registry entries; AI task evidence rows include required full-text verification and method-audit fields; research declarations, estimand protocol rows, analysis plan rows, AI research failure mode rows, rival model rows, model comparison protocol rows, candidate model specification rows, model comparison reporting rows, model comparison result contract rows, ARS Phase 1/2 research-design fields, search execution records, candidate source verification records, and candidate source extraction records are present; claim/context/edge references are internally consistent.",
+  "generated_at": "2026-06-29T00:00:00.000Z",
+  "audited_input_hashes": {
+    "src/data/effective-immortality-evidence.json": "sha256:998866fea2f08fe27ad21ffa46f540543955ec3c49e1e2aaef78638e2db33d64",
+    "../docs/source-notes/2026-06-28-effective-immortality-flywheel-source-cards.md": "sha256:230047038227722c755615bd77a426186d2199ba83c46ed3e23725c585405036"
+  },
+  "details": {
+    "schema_version": "2.0",
+    "source_alias_count": 54,
+    "ai_task_reference_key_count": 4,
+    "ai_task_required_field_count": 14,
+    "ai_task_method_audit_field_count": 7,
+    "research_declaration_count": 8,
+    "research_declaration_required_type_count": 8,
+    "estimand_registry_count": 9,
+    "estimand_required_field_count": 9,
+    "analysis_plan_registry_count": 9,
+    "analysis_plan_required_field_count": 9,
+    "failure_mode_audit_count": 7,
+    "failure_mode_required_type_count": 7,
+    "rival_model_count": 7,
+    "rival_model_required_field_count": 5,
+    "model_comparison_protocol_count": 7,
+    "model_comparison_protocol_required_field_count": 5,
+    "candidate_model_specification_count": 7,
+    "candidate_model_specification_required_field_count": 9,
+    "model_comparison_reporting_count": 12,
+    "model_comparison_reporting_required_field_count": 5,
+    "model_comparison_result_contract_count": 17,
+    "model_comparison_result_contract_required_field_count": 5,
+    "research_question_brief_required_field_count": 8,
+    "methodology_blueprint_required_field_count": 12,
+    "search_strategy_seed_count": 5,
+    "search_strategy_seed_required_field_count": 5,
+    "systematic_search_database_count": 6,
+    "systematic_search_protocol_required_field_count": 12,
+    "literature_screening_rubric_count": 4,
+    "literature_gap_map_count": 9,
+    "search_execution_register_count": 9,
+    "search_execution_required_field_count": 13,
+    "search_execution_verification_count": 9,
+    "search_execution_verification_required_field_count": 14,
+    "search_execution_extraction_count": 9,
+    "search_execution_extraction_required_field_count": 12,
+    "source_card_count": 47,
+    "reference_registry_count": 53,
+    "alias_coverage": [
+      {
+        "alias": "AI productivity",
+        "cards": [
+          "Generative AI Writing Productivity",
+          "Generative AI at Work QJE Field Evidence",
+          "GitHub Copilot Productivity Experiment",
+          "Jagged Technological Frontier"
+        ],
+        "refs": [
+          "noy2023productivity",
+          "brynjolfsson2025generative",
+          "peng2023copilot",
+          "dellacqua2026jagged"
+        ],
+        "status": "PASS"
+      },
+      {
+        "alias": "AI productivity evidence",
+        "cards": [
+          "Generative AI Writing Productivity",
+          "Generative AI at Work QJE Field Evidence",
+          "GitHub Copilot Productivity Experiment",
+          "Jagged Technological Frontier"
+        ],
+        "refs": [
+          "noy2023productivity",
+          "brynjolfsson2025generative",
+          "peng2023copilot",
+          "dellacqua2026jagged"
+        ],
+        "status": "PASS"
+      },
+      {
+        "alias": "Apple Heart Study",
+        "cards": [
+          "Apple Heart Study"
+        ],
+        "refs": [
+          "perez2019appleHeart"
+        ],
+        "status": "PASS"
+      },
+      {
+        "alias": "BCI ethics",
+        "cards": [
+          "BCI Ethics and Neurotechnology Governance"
+        ],
+        "refs": [
+          "burwell2017bciEthics"
+        ],
+        "status": "PASS"
+      },
+      {
+        "alias": "Capability Approach",
+        "cards": [
+          "Capability Approach"
+        ],
+        "refs": [
+          "robeyns2021capability"
+        ],
+        "status": "PASS"
+      },
+      {
+        "alias": "Care access",
+        "cards": [
+          "WHO Primary Health Care"
+        ],
+        "refs": [
+          "whoSdhPhc"
+        ],
+        "status": "PASS"
+      },
+      {
+        "alias": "ClinicalTrials.gov",
+        "cards": [
+          "ClinicalTrials.gov Trial Registry"
+        ],
+        "refs": [
+          "clinicaltrialsGov"
+        ],
+        "status": "PASS"
+      },
+      {
+        "alias": "ClinicalTrials.gov API",
+        "cards": [
+          "ClinicalTrials.gov Trial Registry"
+        ],
+        "refs": [
+          "clinicaltrialsGovApi"
+        ],
+        "status": "PASS"
+      },
+      {
+        "alias": "Cognition in the Wild",
+        "cards": [
+          "Cognition in the Wild"
+        ],
+        "refs": [
+          "hutchins1995cognition"
+        ],
+        "status": "PASS"
+      },
+      {
+        "alias": "CONSORT-AI",
+        "cards": [
+          "TRIPOD and PROBAST"
+        ],
+        "refs": [
+          "consortAi2020"
+        ],
+        "status": "PASS"
+      },
+      {
+        "alias": "Cox",
+        "cards": [
+          "Cox Proportional Hazards"
+        ],
+        "refs": [
+          "cox1972regression"
+        ],
+        "status": "PASS"
+      },
+      {
+        "alias": "Deliberate Practice",
+        "cards": [
+          "Deliberate Practice"
+        ],
+        "refs": [
+          "ericsson1993deliberatePractice"
+        ],
+        "status": "PASS"
+      },
+      {
+        "alias": "Diffusion of Innovations",
+        "cards": [
+          "Diffusion of Innovations"
+        ],
+        "refs": [
+          "rogers2003diffusion"
+        ],
+        "status": "PASS"
+      },
+      {
+        "alias": "Digital Twin",
+        "cards": [
+          "Dynamic Digital Twin"
+        ],
+        "refs": [
+          "mulder2022dynamicDigitalTwin"
+        ],
+        "status": "PASS"
+      },
+      {
+        "alias": "Dynamic Digital Twin",
+        "cards": [
+          "Dynamic Digital Twin"
+        ],
+        "refs": [
+          "mulder2022dynamicDigitalTwin"
+        ],
+        "status": "PASS"
+      },
+      {
+        "alias": "Engelbart",
+        "cards": [
+          "Augmenting Human Intellect"
+        ],
+        "refs": [
+          "engelbart1962augmenting"
+        ],
+        "status": "PASS"
+      },
+      {
+        "alias": "Evidence policy",
+        "cards": [
+          "GRADE Evidence Certainty"
+        ],
+        "refs": [
+          "gradeHandbook"
+        ],
+        "status": "PASS"
+      },
+      {
+        "alias": "Extended Mind",
+        "cards": [
+          "Extended Mind"
+        ],
+        "refs": [
+          "clark1998extended"
+        ],
+        "status": "PASS"
+      },
+      {
+        "alias": "Feedback Intervention Theory",
+        "cards": [
+          "Feedback Intervention Theory"
+        ],
+        "refs": [
+          "kluger1996feedback"
+        ],
+        "status": "PASS"
+      },
+      {
+        "alias": "Generative AI at Work",
+        "cards": [
+          "Generative AI at Work QJE Field Evidence"
+        ],
+        "refs": [
+          "brynjolfsson2025generative"
+        ],
+        "status": "PASS"
+      },
+      {
+        "alias": "GitHub Copilot",
+        "cards": [
+          "GitHub Copilot Productivity Experiment"
+        ],
+        "refs": [
+          "peng2023copilot"
+        ],
+        "status": "PASS"
+      },
+      {
+        "alias": "GrimAge",
+        "cards": [
+          "DNAm GrimAge"
+        ],
+        "refs": [
+          "lu2019grimage"
+        ],
+        "status": "PASS"
+      },
+      {
+        "alias": "Hallmarks",
+        "cards": [
+          "Hallmarks of Aging"
+        ],
+        "refs": [
+          "lopezotin2013hallmarks"
+        ],
+        "status": "PASS"
+      },
+      {
+        "alias": "Health Capital",
+        "cards": [
+          "Health Capital"
+        ],
+        "refs": [
+          "grossman1972healthcapital"
+        ],
+        "status": "PASS"
+      },
+      {
+        "alias": "Human Capital",
+        "cards": [
+          "Human Capital"
+        ],
+        "refs": [
+          "mincer1974humanCapital"
+        ],
+        "status": "PASS"
+      },
+      {
+        "alias": "Human-AI Interaction Guidelines",
+        "cards": [
+          "Guidelines for Human-AI Interaction"
+        ],
+        "refs": [
+          "amershi2019hai"
+        ],
+        "status": "PASS"
+      },
+      {
+        "alias": "Jagged Frontier",
+        "cards": [
+          "Jagged Technological Frontier"
+        ],
+        "refs": [
+          "dellacqua2026jagged"
+        ],
+        "status": "PASS"
+      },
+      {
+        "alias": "Jagged Technological Frontier",
+        "cards": [
+          "Jagged Technological Frontier"
+        ],
+        "refs": [
+          "dellacqua2026jagged"
+        ],
+        "status": "PASS"
+      },
+      {
+        "alias": "Kaplan-Meier",
+        "cards": [
+          "Kaplan-Meier Survival Curve"
+        ],
+        "refs": [
+          "kaplan1958incomplete"
+        ],
+        "status": "PASS"
+      },
+      {
+        "alias": "Law of Practice",
+        "cards": [
+          "Law of Practice"
+        ],
+        "refs": [
+          "newell1981lawPractice"
+        ],
+        "status": "PASS"
+      },
+      {
+        "alias": "Lived Informatics",
+        "cards": [
+          "Lived Informatics"
+        ],
+        "refs": [
+          "epstein2015lived"
+        ],
+        "status": "PASS"
+      },
+      {
+        "alias": "Marginal Structural Models",
+        "cards": [
+          "Marginal Structural Models"
+        ],
+        "refs": [
+          "robins2000marginalStructural"
+        ],
+        "status": "PASS"
+      },
+      {
+        "alias": "NASA-TLX",
+        "cards": [
+          "NASA Task Load Index"
+        ],
+        "refs": [
+          "nasaTlx"
+        ],
+        "status": "PASS"
+      },
+      {
+        "alias": "NIST AI RMF",
+        "cards": [
+          "NIST AI Risk Management Framework"
+        ],
+        "refs": [
+          "nist2023airmf"
+        ],
+        "status": "PASS"
+      },
+      {
+        "alias": "Noy & Zhang",
+        "cards": [
+          "Generative AI Writing Productivity"
+        ],
+        "refs": [
+          "noy2023productivity"
+        ],
+        "status": "PASS"
+      },
+      {
+        "alias": "Prediction Model Governance",
+        "cards": [
+          "TRIPOD and PROBAST"
+        ],
+        "refs": [
+          "tripodAi2024",
+          "probastAi2025",
+          "consortAi2020",
+          "spiritAi2020"
+        ],
+        "status": "PASS"
+      },
+      {
+        "alias": "PROBAST+AI",
+        "cards": [
+          "TRIPOD and PROBAST"
+        ],
+        "refs": [
+          "probastAi2025"
+        ],
+        "status": "PASS"
+      },
+      {
+        "alias": "QALY",
+        "cards": [
+          "HALE / QALY Effective-Time Language"
+        ],
+        "refs": [
+          "niceEconomicEvaluation"
+        ],
+        "status": "PASS"
+      },
+      {
+        "alias": "Self-Regulated Learning",
+        "cards": [
+          "Self-Regulated Learning"
+        ],
+        "refs": [
+          "zimmerman2002selfRegulated"
+        ],
+        "status": "PASS"
+      },
+      {
+        "alias": "Social Capital",
+        "cards": [
+          "Social Capital"
+        ],
+        "refs": [
+          "coleman1988socialCapital"
+        ],
+        "status": "PASS"
+      },
+      {
+        "alias": "Social Relationships",
+        "cards": [
+          "Social Relationships and Mortality Risk"
+        ],
+        "refs": [
+          "holtlunstad2010social"
+        ],
+        "status": "PASS"
+      },
+      {
+        "alias": "Social relationships mortality",
+        "cards": [
+          "Social Relationships and Mortality Risk"
+        ],
+        "refs": [
+          "holtlunstad2010social"
+        ],
+        "status": "PASS"
+      },
+      {
+        "alias": "SPIRIT-AI",
+        "cards": [
+          "TRIPOD and PROBAST"
+        ],
+        "refs": [
+          "spiritAi2020"
+        ],
+        "status": "PASS"
+      },
+      {
+        "alias": "Stage-Based Personal Informatics",
+        "cards": [
+          "Stage-Based Model of Personal Informatics"
+        ],
+        "refs": [
+          "li2010personalInformatics"
+        ],
+        "status": "PASS"
+      },
+      {
+        "alias": "TAM",
+        "cards": [
+          "Technology Acceptance"
+        ],
+        "refs": [
+          "davis1989tam"
+        ],
+        "status": "PASS"
+      },
+      {
+        "alias": "Target Trial",
+        "cards": [
+          "Target Trial Emulation"
+        ],
+        "refs": [
+          "hernan2022targetTrial"
+        ],
+        "status": "PASS"
+      },
+      {
+        "alias": "Target Trial Emulation",
+        "cards": [
+          "Target Trial Emulation"
+        ],
+        "refs": [
+          "hernan2022targetTrial"
+        ],
+        "status": "PASS"
+      },
+      {
+        "alias": "TRIPOD+AI",
+        "cards": [
+          "TRIPOD and PROBAST"
+        ],
+        "refs": [
+          "tripodAi2024"
+        ],
+        "status": "PASS"
+      },
+      {
+        "alias": "Types and Levels of Automation",
+        "cards": [
+          "Types and Levels of Automation"
+        ],
+        "refs": [
+          "parasuraman2000automation"
+        ],
+        "status": "PASS"
+      },
+      {
+        "alias": "UTAUT",
+        "cards": [
+          "Unified Theory of Acceptance and Use of Technology"
+        ],
+        "refs": [
+          "venkatesh2003utaut"
+        ],
+        "status": "PASS"
+      },
+      {
+        "alias": "WHO HALE",
+        "cards": [
+          "HALE / QALY Effective-Time Language"
+        ],
+        "refs": [
+          "whohale7752"
+        ],
+        "status": "PASS"
+      },
+      {
+        "alias": "WHO ICTRP",
+        "cards": [
+          "ClinicalTrials.gov Trial Registry"
+        ],
+        "refs": [
+          "whoIctrp"
+        ],
+        "status": "PASS"
+      },
+      {
+        "alias": "WHO Primary Health Care",
+        "cards": [
+          "WHO Primary Health Care"
+        ],
+        "refs": [
+          "whoSdhPhc"
+        ],
+        "status": "PASS"
+      },
+      {
+        "alias": "WHO SDOH",
+        "cards": [
+          "WHO Social Determinants of Health"
+        ],
+        "refs": [
+          "whoSdhPhc"
+        ],
+        "status": "PASS"
+      }
+    ],
+    "gaps": []
+  }
+}

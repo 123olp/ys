@@ -1,0 +1,392 @@
+{
+  "audit": "metric-redshift-citation-context-review-packet",
+  "verdict": "READY_FOR_EXTERNAL_REVIEW",
+  "reasonCode": "packet_generated_no_external_judgment",
+  "summary": "MRW citation contexts have been packaged for independent fresh reviewer verification. Local safe-use and forbidden-use boundaries are included, but no external reviewer verdict is claimed.",
+  "generatedAt": "2026-06-29T12:48:37.967Z",
+  "auditedInputHashes": {
+    "src/data/metric-redshift-recursive-waiting.json": "sha256:4bce6bfc7acfdaebdfa4f738b665b1da5b39f0aabe8a0a761f6e30a730ddc979"
+  },
+  "details": {
+    "contextCount": 7,
+    "claimCount": 7,
+    "sourceCount": 12,
+    "contextPackets": [
+      {
+        "id": "MRW-CTX1",
+        "context": "实验和工程系统证明相对论时钟差是现实物理效应。",
+        "claimIds": [
+          "MRW-CL2"
+        ],
+        "sourceKeys": [
+          "pound1959redshift",
+          "vessot1980gravityProbeA",
+          "ashby2003gps"
+        ],
+        "safeUse": "用于支持引力红移、空间钟和工程系统中的相对论校正真实存在。",
+        "forbiddenUse": "不得用于支持黑洞等待室、人工强红移工程、人体等待或退出可行性。",
+        "localReviewStatus": "LOCAL_PRECHECK_ONLY",
+        "claims": [
+          {
+            "id": "MRW-CL2",
+            "claim": "等待倍率 K 只能描述时间差分，不能单独代表安全性、收益或可行性。",
+            "claimType": "model-boundary",
+            "section": "S4/S7"
+          }
+        ],
+        "sources": [
+          {
+            "key": "pound1959redshift",
+            "title": "Gravitational Red-Shift in Nuclear Resonance",
+            "authors": "R. V. Pound and G. A. Rebka Jr.",
+            "year": 1959,
+            "url": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.3.439",
+            "evidenceLayer": "E1 experimental foundation",
+            "supports": "引力红移可被实验观测。",
+            "doesNotSupport": "不支持黑洞等待室、人体等待或强场工程可行性。"
+          },
+          {
+            "key": "vessot1980gravityProbeA",
+            "title": "Test of Relativistic Gravitation with a Space-Borne Hydrogen Maser",
+            "authors": "R. F. C. Vessot et al.",
+            "year": 1980,
+            "url": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.45.2081",
+            "evidenceLayer": "E1 experimental foundation",
+            "supports": "空间氢钟实验检验引力相关时钟速率差。",
+            "doesNotSupport": "不支持长期等待、轨道安全或人工度规工程。"
+          },
+          {
+            "key": "ashby2003gps",
+            "title": "Relativity in the Global Positioning System",
+            "authors": "Neil Ashby",
+            "year": 2003,
+            "url": "https://link.springer.com/article/10.12942/lrr-2003-1",
+            "evidenceLayer": "E1 experimental foundation",
+            "supports": "实际工程系统必须处理相对论时钟修正。",
+            "doesNotSupport": "GPS 弱场修正不支持黑洞附近等待工程。"
+          }
+        ],
+        "reviewerPrompt": "For MRW-CTX1, verify source existence, metadata, and context support. Safe use: 用于支持引力红移、空间钟和工程系统中的相对论校正真实存在。 Forbidden use: 不得用于支持黑洞等待室、人工强红移工程、人体等待或退出可行性。 Return PASS / WARN / FAIL with evidence URLs and sentence-level rationale."
+      },
+      {
+        "id": "MRW-CTX2",
+        "context": "NASA 黑洞材料用于强场直觉、红移风险和事件视界风险说明。",
+        "claimIds": [
+          "MRW-CL1",
+          "MRW-CL5",
+          "MRW-CL6"
+        ],
+        "sourceKeys": [
+          "nasaBlackHoleTooClose",
+          "nasaBlackHoleVisualization"
+        ],
+        "safeUse": "用于通俗解释强引力、时间膨胀、红移和接近事件视界的风险。",
+        "forbiddenUse": "不得作为轨道稳定、生命支持、通信、返航或工程可行性证据。",
+        "localReviewStatus": "LOCAL_PRECHECK_ONLY",
+        "claims": [
+          {
+            "id": "MRW-CL1",
+            "claim": "本文的研究对象是度规红移造成的主体固有时与外部参考时间之间的差分，而不是黑洞本身。",
+            "claimType": "definition",
+            "section": "S1/S3"
+          },
+          {
+            "id": "MRW-CL5",
+            "claim": "如果尾部风险、退出失败、主体连续性损失或机会成本超过时间倍率收益，该路径应被判定为负收益或不可采用。",
+            "claimType": "governance",
+            "section": "S7/S11/S13"
+          },
+          {
+            "id": "MRW-CL6",
+            "claim": "可达性必须从已验证时间膨胀、自然强引力源、近视界轨道、类黑洞结构、人工度规工程到递归等待基础设施分层处理。",
+            "claimType": "research-architecture",
+            "section": "S10"
+          }
+        ],
+        "sources": [
+          {
+            "key": "nasaBlackHoleTooClose",
+            "title": "What Happens When Something Gets Too Close to a Black Hole?",
+            "authors": "NASA Science",
+            "year": 2024,
+            "url": "https://science.nasa.gov/universe/what-happens-when-something-gets-too-close-to-a-black-hole/",
+            "evidenceLayer": "E2 strong-field intuition",
+            "supports": "黑洞附近存在强引力、时间膨胀和事件视界风险的科普解释。",
+            "doesNotSupport": "科普材料不能作为轨道、生命支持或返航可行性证据。"
+          },
+          {
+            "key": "nasaBlackHoleVisualization",
+            "title": "New NASA Black Hole Visualization Takes Viewers Beyond the Brink",
+            "authors": "NASA Science",
+            "year": 2024,
+            "url": "https://science.nasa.gov/universe/black-holes/supermassive-black-holes/new-nasa-black-hole-visualization-takes-viewers-beyond-the-brink/",
+            "evidenceLayer": "E2 strong-field intuition",
+            "supports": "黑洞附近红移、透镜和接近事件视界的视觉直觉。",
+            "doesNotSupport": "可视化不是工程方案。"
+          }
+        ],
+        "reviewerPrompt": "For MRW-CTX2, verify source existence, metadata, and context support. Safe use: 用于通俗解释强引力、时间膨胀、红移和接近事件视界的风险。 Forbidden use: 不得作为轨道稳定、生命支持、通信、返航或工程可行性证据。 Return PASS / WARN / FAIL with evidence URLs and sentence-level rationale."
+      },
+      {
+        "id": "MRW-CTX3",
+        "context": "黑洞未来观察限制文献用于约束“有限固有时看无限未来”的叙述。",
+        "claimIds": [
+          "MRW-CL4",
+          "MRW-CL6"
+        ],
+        "sourceKeys": [
+          "grib2009infiniteFuture",
+          "pavlov2012futureObservation"
+        ],
+        "safeUse": "用于说明普通黑洞自由落体不能直接推出观察外部无限未来，以及 Kerr / 特殊轨道条件需要谨慎。",
+        "forbiddenUse": "不得写成所有强红移等待路径不可能，也不得写成现实等待室可行。",
+        "localReviewStatus": "LOCAL_PRECHECK_ONLY",
+        "claims": [
+          {
+            "id": "MRW-CL4",
+            "claim": "普通黑洞场景不能直接推出有限固有时观察外部无限未来。",
+            "claimType": "literature-boundary",
+            "section": "S9/S11"
+          },
+          {
+            "id": "MRW-CL6",
+            "claim": "可达性必须从已验证时间膨胀、自然强引力源、近视界轨道、类黑洞结构、人工度规工程到递归等待基础设施分层处理。",
+            "claimType": "research-architecture",
+            "section": "S10"
+          }
+        ],
+        "sources": [
+          {
+            "key": "grib2009infiniteFuture",
+            "title": "Can an observer falling into a black hole see the infinite future of the Universe?",
+            "authors": "A. A. Grib and Yu. V. Pavlov",
+            "year": 2009,
+            "url": "https://arxiv.org/abs/0906.1442",
+            "evidenceLayer": "E3 future-observation boundary",
+            "supports": "黑洞自由落体观察外部无限未来存在理论限制。",
+            "doesNotSupport": "不排除所有特殊旋转黑洞轨道，也不提供等待工程。"
+          },
+          {
+            "key": "pavlov2012futureObservation",
+            "title": "On the possibility of observation of the future for movement in the field of black holes of different types",
+            "authors": "Yu. V. Pavlov",
+            "year": 2012,
+            "url": "https://arxiv.org/abs/1203.4000",
+            "evidenceLayer": "E3 future-observation boundary",
+            "supports": "不同黑洞类型下观察未来的理论条件和限制。",
+            "doesNotSupport": "不是安全等待或可退出基础设施证明。"
+          }
+        ],
+        "reviewerPrompt": "For MRW-CTX3, verify source existence, metadata, and context support. Safe use: 用于说明普通黑洞自由落体不能直接推出观察外部无限未来，以及 Kerr / 特殊轨道条件需要谨慎。 Forbidden use: 不得写成所有强红移等待路径不可能，也不得写成现实等待室可行。 Return PASS / WARN / FAIL with evidence URLs and sentence-level rationale."
+      },
+      {
+        "id": "MRW-CTX4",
+        "context": "Malament-Hogarth 文献用于极限时空、相对论超计算和哲学边界。",
+        "claimIds": [
+          "MRW-CL7"
+        ],
+        "sourceKeys": [
+          "etesi2002malamentHogarth",
+          "welch2006malamentHogarth",
+          "earmanNortonForeverDay"
+        ],
+        "safeUse": "用于说明某些理论时空中存在有限固有时接收极长过程结果的概念空间。",
+        "forbiddenUse": "不得转写为普通黑洞、人体等待、可制造等待室或可执行工程路线。",
+        "localReviewStatus": "LOCAL_PRECHECK_ONLY",
+        "claims": [
+          {
+            "id": "MRW-CL7",
+            "claim": "Malament-Hogarth 和时间旅行哲学文献只能提供极限时空与概念边界，不能被直接转写为人体等待工程证据。",
+            "claimType": "conceptual-boundary",
+            "section": "S9/S13"
+          }
+        ],
+        "sources": [
+          {
+            "key": "etesi2002malamentHogarth",
+            "title": "Non-Turing computations via Malament-Hogarth space-times",
+            "authors": "Gabor Etesi and Istvan Nemeti",
+            "year": 2002,
+            "url": "https://arxiv.org/abs/gr-qc/0104023",
+            "evidenceLayer": "E4 extreme spacetime boundary",
+            "supports": "Malament-Hogarth 时空提供有限固有时接收极长计算结果的理论语境。",
+            "doesNotSupport": "不是普通黑洞等待室或人体路径的工程证明。"
+          },
+          {
+            "key": "welch2006malamentHogarth",
+            "title": "The extent of computation in Malament-Hogarth spacetimes",
+            "authors": "P. D. Welch",
+            "year": 2006,
+            "url": "https://arxiv.org/abs/gr-qc/0609035",
+            "evidenceLayer": "E4 extreme spacetime boundary",
+            "supports": "讨论 Malament-Hogarth 时空中的计算能力边界。",
+            "doesNotSupport": "不支持人体等待、生命支持或技术采用。"
+          },
+          {
+            "key": "earmanNortonForeverDay",
+            "title": "Forever is a Day: Supertasks in Pitowsky and Malament-Hogarth Spacetimes",
+            "authors": "John Earman and John D. Norton",
+            "year": 1993,
+            "url": "https://philsci-archive.pitt.edu/1307/",
+            "evidenceLayer": "E4 philosophical boundary",
+            "supports": "提供 supertask 和 Malament-Hogarth 时空的哲学边界讨论。",
+            "doesNotSupport": "不提供物理工程路线。"
+          }
+        ],
+        "reviewerPrompt": "For MRW-CTX4, verify source existence, metadata, and context support. Safe use: 用于说明某些理论时空中存在有限固有时接收极长过程结果的概念空间。 Forbidden use: 不得转写为普通黑洞、人体等待、可制造等待室或可执行工程路线。 Return PASS / WARN / FAIL with evidence URLs and sentence-level rationale."
+      },
+      {
+        "id": "MRW-CTX5",
+        "context": "时间旅行哲学文献用于区分概念悖论和物理工程问题。",
+        "claimIds": [
+          "MRW-CL7"
+        ],
+        "sourceKeys": [
+          "lewis1976timeTravel"
+        ],
+        "safeUse": "用于说明时间旅行相关概念需要逻辑边界。",
+        "forbiddenUse": "不得作为强引力时间膨胀、Malament-Hogarth 时空或黑洞工程证据。",
+        "localReviewStatus": "LOCAL_PRECHECK_ONLY",
+        "claims": [
+          {
+            "id": "MRW-CL7",
+            "claim": "Malament-Hogarth 和时间旅行哲学文献只能提供极限时空与概念边界，不能被直接转写为人体等待工程证据。",
+            "claimType": "conceptual-boundary",
+            "section": "S9/S13"
+          }
+        ],
+        "sources": [
+          {
+            "key": "lewis1976timeTravel",
+            "title": "The Paradoxes of Time Travel",
+            "authors": "David Lewis",
+            "year": 1976,
+            "url": "https://www.jstor.org/stable/2025310",
+            "evidenceLayer": "E4 conceptual boundary",
+            "supports": "时间旅行概念和悖论的哲学边界。",
+            "doesNotSupport": "不支持强引力等待工程。"
+          }
+        ],
+        "reviewerPrompt": "For MRW-CTX5, verify source existence, metadata, and context support. Safe use: 用于说明时间旅行相关概念需要逻辑边界。 Forbidden use: 不得作为强引力时间膨胀、Malament-Hogarth 时空或黑洞工程证据。 Return PASS / WARN / FAIL with evidence URLs and sentence-level rationale."
+      },
+      {
+        "id": "MRW-CTX6",
+        "context": "Human Infra 有效永生飞轮用于把等待收益放回主体持续性、能力系统、技术系统和可能性空间。",
+        "claimIds": [
+          "MRW-CL1",
+          "MRW-CL3",
+          "MRW-CL5"
+        ],
+        "sourceKeys": [
+          "humanInfraEffectiveImmortality"
+        ],
+        "safeUse": "用于支持 Human Infra 价值框架、主体持续性目标和递归升级语言。",
+        "forbiddenUse": "不得替代相对论、生命支持、工程风险或天体物理证据。",
+        "localReviewStatus": "LOCAL_PRECHECK_ONLY",
+        "claims": [
+          {
+            "id": "MRW-CL1",
+            "claim": "本文的研究对象是度规红移造成的主体固有时与外部参考时间之间的差分，而不是黑洞本身。",
+            "claimType": "definition",
+            "section": "S1/S3"
+          },
+          {
+            "id": "MRW-CL3",
+            "claim": "递归等待成立需要同时满足等待、退出、技术采用和下一轮等待条件改善。",
+            "claimType": "mechanism",
+            "section": "S5/S8"
+          },
+          {
+            "id": "MRW-CL5",
+            "claim": "如果尾部风险、退出失败、主体连续性损失或机会成本超过时间倍率收益，该路径应被判定为负收益或不可采用。",
+            "claimType": "governance",
+            "section": "S7/S11/S13"
+          }
+        ],
+        "sources": [
+          {
+            "key": "humanInfraEffectiveImmortality",
+            "title": "Effective Immortality and the Subject-Continuity Acceleration Flywheel",
+            "authors": "Human Infra",
+            "year": 2026,
+            "url": "/papers/effective-immortality-flywheel/",
+            "evidenceLayer": "E5 subject-continuity model",
+            "supports": "把等待收益放回主体持续性、能力系统、技术系统和可能性空间。",
+            "doesNotSupport": "不替代广义相对论、强场工程或生命支持证据。"
+          }
+        ],
+        "reviewerPrompt": "For MRW-CTX6, verify source existence, metadata, and context support. Safe use: 用于支持 Human Infra 价值框架、主体持续性目标和递归升级语言。 Forbidden use: 不得替代相对论、生命支持、工程风险或天体物理证据。 Return PASS / WARN / FAIL with evidence URLs and sentence-level rationale."
+      },
+      {
+        "id": "MRW-CTX7",
+        "context": "治理结论由 Human Infra 目标函数和黑洞风险边界共同限定。",
+        "claimIds": [
+          "MRW-CL5",
+          "MRW-CL6"
+        ],
+        "sourceKeys": [
+          "humanInfraEffectiveImmortality",
+          "nasaBlackHoleTooClose",
+          "pavlov2012futureObservation"
+        ],
+        "safeUse": "用于说明 NCG 必须扣除生命支持、工程、尾部风险和机会成本。",
+        "forbiddenUse": "不得输出个体建议、现实任务方案或安全承诺。",
+        "localReviewStatus": "LOCAL_PRECHECK_ONLY",
+        "claims": [
+          {
+            "id": "MRW-CL5",
+            "claim": "如果尾部风险、退出失败、主体连续性损失或机会成本超过时间倍率收益，该路径应被判定为负收益或不可采用。",
+            "claimType": "governance",
+            "section": "S7/S11/S13"
+          },
+          {
+            "id": "MRW-CL6",
+            "claim": "可达性必须从已验证时间膨胀、自然强引力源、近视界轨道、类黑洞结构、人工度规工程到递归等待基础设施分层处理。",
+            "claimType": "research-architecture",
+            "section": "S10"
+          }
+        ],
+        "sources": [
+          {
+            "key": "humanInfraEffectiveImmortality",
+            "title": "Effective Immortality and the Subject-Continuity Acceleration Flywheel",
+            "authors": "Human Infra",
+            "year": 2026,
+            "url": "/papers/effective-immortality-flywheel/",
+            "evidenceLayer": "E5 subject-continuity model",
+            "supports": "把等待收益放回主体持续性、能力系统、技术系统和可能性空间。",
+            "doesNotSupport": "不替代广义相对论、强场工程或生命支持证据。"
+          },
+          {
+            "key": "nasaBlackHoleTooClose",
+            "title": "What Happens When Something Gets Too Close to a Black Hole?",
+            "authors": "NASA Science",
+            "year": 2024,
+            "url": "https://science.nasa.gov/universe/what-happens-when-something-gets-too-close-to-a-black-hole/",
+            "evidenceLayer": "E2 strong-field intuition",
+            "supports": "黑洞附近存在强引力、时间膨胀和事件视界风险的科普解释。",
+            "doesNotSupport": "科普材料不能作为轨道、生命支持或返航可行性证据。"
+          },
+          {
+            "key": "pavlov2012futureObservation",
+            "title": "On the possibility of observation of the future for movement in the field of black holes of different types",
+            "authors": "Yu. V. Pavlov",
+            "year": 2012,
+            "url": "https://arxiv.org/abs/1203.4000",
+            "evidenceLayer": "E3 future-observation boundary",
+            "supports": "不同黑洞类型下观察未来的理论条件和限制。",
+            "doesNotSupport": "不是安全等待或可退出基础设施证明。"
+          }
+        ],
+        "reviewerPrompt": "For MRW-CTX7, verify source existence, metadata, and context support. Safe use: 用于说明 NCG 必须扣除生命支持、工程、尾部风险和机会成本。 Forbidden use: 不得输出个体建议、现实任务方案或安全承诺。 Return PASS / WARN / FAIL with evidence URLs and sentence-level rationale."
+      }
+    ],
+    "reviewerInstructions": [
+      "Use publisher, arXiv, DOI, or official source lookups rather than this packet as evidence.",
+      "Check whether each source supports the registered safe use.",
+      "Check whether the manuscript or caption could imply any forbidden use.",
+      "Do not upgrade NASA public pages into engineering feasibility evidence.",
+      "Do not upgrade Malament-Hogarth or time-travel philosophy sources into human waiting engineering evidence."
+    ]
+  }
+}

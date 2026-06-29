@@ -1,0 +1,1172 @@
+{
+  "audit_skill": "citation-audit",
+  "verdict": "WARN",
+  "reason_code": "metadata_registry_without_fresh_reviewer",
+  "summary": "Reference Registry exported to BibTeX and machine-readable audit ledger; metadata is locally verified, but no fresh reviewer thread has audited every prose citation context.",
+  "audited_input_hashes": {
+    "src/data/effective-immortality-evidence.json": "sha256:998866fea2f08fe27ad21ffa46f540543955ec3c49e1e2aaef78638e2db33d64",
+    "src/data/effective-immortality-flywheel/references.bib": "sha256:8927b9a089506c3207c1be05733a0401cad7f610cdaec2bdb79f814168a11525"
+  },
+  "trace_path": "docs/source-notes/2026-06-28-effective-immortality-flywheel-citation-audit.md",
+  "thread_id": "not-invoked-local-registry-export",
+  "reviewer_model": "not_invoked",
+  "reviewer_reasoning": "not_invoked",
+  "generated_at": "2026-06-29T00:00:00.000Z",
+  "details": {
+    "total_entries": 53,
+    "counts": {
+      "KEEP": 53,
+      "FIX": 0,
+      "REPLACE": 0,
+      "REMOVE": 0
+    },
+    "per_entry": [
+      {
+        "key": "kaplan1958incomplete",
+        "verdict": "KEEP",
+        "axis_failures": [],
+        "note": "crossref-verified: 定义生存曲线、删失数据和 T 的统计语言。",
+        "metadata": {
+          "entry_type": "article",
+          "title": "Nonparametric Estimation from Incomplete Observations",
+          "year": "1958",
+          "venue": "Journal of the American Statistical Association",
+          "doi": "10.1080/01621459.1958.10501452",
+          "url": "https://www.tandfonline.com/doi/abs/10.1080/01621459.1958.10501452",
+          "audit_status": "crossref-verified"
+        },
+        "uses": [
+          {
+            "file": "web/src/data/effective-immortality-evidence.json",
+            "verdict": "SUPPORTS",
+            "note": "Bounded citation context CTX1"
+          }
+        ]
+      },
+      {
+        "key": "cox1972regression",
+        "verdict": "KEEP",
+        "axis_failures": [],
+        "note": "crossref-verified: 定义协变量、风险函数和 lambda(t) 的统计语言。",
+        "metadata": {
+          "entry_type": "article",
+          "title": "Regression Models and Life-Tables",
+          "year": "1972",
+          "venue": "Journal of the Royal Statistical Society Series B: Statistical Methodology",
+          "doi": "10.1111/j.2517-6161.1972.tb00899.x",
+          "url": "https://rss.onlinelibrary.wiley.com/doi/10.1111/j.2517-6161.1972.tb00899.x",
+          "audit_status": "crossref-verified"
+        },
+        "uses": [
+          {
+            "file": "web/src/data/effective-immortality-evidence.json",
+            "verdict": "SUPPORTS",
+            "note": "Bounded citation context CTX1"
+          }
+        ]
+      },
+      {
+        "key": "grossman1972healthcapital",
+        "verdict": "KEEP",
+        "axis_failures": [],
+        "note": "crossref-verified: 把健康资本、有效时间和日历时间区分开。",
+        "metadata": {
+          "entry_type": "article",
+          "title": "On the Concept of Health Capital and the Demand for Health",
+          "year": "1972",
+          "venue": "Journal of Political Economy",
+          "doi": "10.1086/259880",
+          "url": "https://www.journals.uchicago.edu/doi/10.1086/259880",
+          "audit_status": "crossref-verified"
+        },
+        "uses": [
+          {
+            "file": "web/src/data/effective-immortality-evidence.json",
+            "verdict": "SUPPORTS",
+            "note": "Bounded citation context CTX2"
+          }
+        ]
+      },
+      {
+        "key": "whohale7752",
+        "verdict": "KEEP",
+        "axis_failures": [],
+        "note": "official-url-200: 提供健康寿命指标的官方定义入口。",
+        "metadata": {
+          "entry_type": "official-web",
+          "title": "Healthy life expectancy (HALE) metadata",
+          "year": "n.d.",
+          "venue": "Global Health Observatory Indicator Metadata Registry",
+          "doi": "",
+          "url": "https://www.who.int/data/gho/indicator-metadata-registry/imr-details/7752",
+          "audit_status": "official-url-200"
+        },
+        "uses": [
+          {
+            "file": "web/src/data/effective-immortality-evidence.json",
+            "verdict": "SUPPORTS",
+            "note": "Bounded citation context CTX2"
+          }
+        ]
+      },
+      {
+        "key": "niceEconomicEvaluation",
+        "verdict": "KEEP",
+        "axis_failures": [],
+        "note": "official-url-200: 提供 QALY 与健康经济评价的政策语言。",
+        "metadata": {
+          "entry_type": "official-web",
+          "title": "Economic evaluation",
+          "year": "n.d.",
+          "venue": "NICE health technology evaluations manual",
+          "doi": "",
+          "url": "https://www.nice.org.uk/process/pmg36/chapter/economic-evaluation-2",
+          "audit_status": "official-url-200"
+        },
+        "uses": [
+          {
+            "file": "web/src/data/effective-immortality-evidence.json",
+            "verdict": "SUPPORTS",
+            "note": "Bounded citation context CTX2"
+          }
+        ]
+      },
+      {
+        "key": "lopezotin2013hallmarks",
+        "verdict": "KEEP",
+        "axis_failures": [],
+        "note": "crossref-verified: 提出衰老状态变量和机制入口。",
+        "metadata": {
+          "entry_type": "article",
+          "title": "The Hallmarks of Aging",
+          "year": "2013",
+          "venue": "Cell",
+          "doi": "10.1016/j.cell.2013.05.039",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3836174/",
+          "audit_status": "crossref-verified"
+        },
+        "uses": [
+          {
+            "file": "web/src/data/effective-immortality-evidence.json",
+            "verdict": "SUPPORTS",
+            "note": "Bounded citation context CTX3"
+          }
+        ]
+      },
+      {
+        "key": "lu2019grimage",
+        "verdict": "KEEP",
+        "axis_failures": [],
+        "note": "crossref-verified: 作为生物年龄、死亡风险和健康寿命信号入口。",
+        "metadata": {
+          "entry_type": "article",
+          "title": "DNA methylation GrimAge strongly predicts lifespan and healthspan",
+          "year": "2019",
+          "venue": "Aging",
+          "doi": "10.18632/aging.101684",
+          "url": "https://www.aging-us.com/article/101684",
+          "audit_status": "crossref-verified"
+        },
+        "uses": [
+          {
+            "file": "web/src/data/effective-immortality-evidence.json",
+            "verdict": "SUPPORTS",
+            "note": "Bounded citation context CTX3"
+          }
+        ]
+      },
+      {
+        "key": "mulder2022dynamicDigitalTwin",
+        "verdict": "KEEP",
+        "axis_failures": [],
+        "note": "publisher-verified: 说明生命过程中的状态观测、预测、预防和数字孪生建模入口。",
+        "metadata": {
+          "entry_type": "article",
+          "title": "Dynamic Digital Twin: Diagnosis, Treatment, Prediction, and Prevention of Disease During the Life Course",
+          "year": "2022",
+          "venue": "Journal of Medical Internet Research",
+          "doi": "10.2196/35675",
+          "url": "https://www.jmir.org/2022/9/e35675",
+          "audit_status": "publisher-verified"
+        },
+        "uses": [
+          {
+            "file": "web/src/data/effective-immortality-evidence.json",
+            "verdict": "SUPPORTS",
+            "note": "Bounded citation context CTX10"
+          }
+        ]
+      },
+      {
+        "key": "stern2012cognitiveReserve",
+        "verdict": "KEEP",
+        "axis_failures": [],
+        "note": "crossref-verified: 说明认知储备作为状态变量和风险信号的边界。",
+        "metadata": {
+          "entry_type": "article",
+          "title": "Cognitive reserve in ageing and Alzheimer's disease",
+          "year": "2012",
+          "venue": "The Lancet Neurology",
+          "doi": "10.1016/S1474-4422(12)70191-6",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/23079557/",
+          "audit_status": "crossref-verified"
+        },
+        "uses": [
+          {
+            "file": "web/src/data/effective-immortality-evidence.json",
+            "verdict": "SUPPORTS",
+            "note": "Bounded citation context CTX3"
+          }
+        ]
+      },
+      {
+        "key": "ericsson1993deliberatePractice",
+        "verdict": "KEEP",
+        "axis_failures": [],
+        "note": "crossref-verified: 解释有效时间进入有反馈练习轮次的条件。",
+        "metadata": {
+          "entry_type": "article",
+          "title": "The role of deliberate practice in the acquisition of expert performance",
+          "year": "1993",
+          "venue": "Psychological Review",
+          "doi": "10.1037/0033-295X.100.3.363",
+          "url": "https://eric.ed.gov/?id=EJ471947",
+          "audit_status": "crossref-verified"
+        },
+        "uses": [
+          {
+            "file": "web/src/data/effective-immortality-evidence.json",
+            "verdict": "SUPPORTS",
+            "note": "Bounded citation context CTX4"
+          }
+        ]
+      },
+      {
+        "key": "newell1981lawPractice",
+        "verdict": "KEEP",
+        "axis_failures": [],
+        "note": "crossref-verified-corrected-doi: 为重复轮次、练习曲线和能力增长提供认知模型入口。",
+        "metadata": {
+          "entry_type": "inproceedings",
+          "title": "Mechanisms of Skill Acquisition and the Law of Practice: Allen Newell and Paul S. Rosenbloom",
+          "year": "2013",
+          "venue": "Cognitive Skills and Their Acquisition",
+          "doi": "10.4324/9780203728178-6",
+          "url": "https://www.taylorfrancis.com/chapters/edit/10.4324/9780203728178-6/mechanisms-skill-acquisition-law-practice-allen-newell-paul-rosenbloom",
+          "audit_status": "crossref-verified-corrected-doi"
+        },
+        "uses": [
+          {
+            "file": "web/src/data/effective-immortality-evidence.json",
+            "verdict": "SUPPORTS",
+            "note": "Bounded citation context CTX4"
+          }
+        ]
+      },
+      {
+        "key": "zimmerman2002selfRegulated",
+        "verdict": "KEEP",
+        "axis_failures": [],
+        "note": "doi-verified: 说明学习轮次需要目标设定、自我监控、反馈和策略调整。",
+        "metadata": {
+          "entry_type": "article",
+          "title": "Becoming a Self-Regulated Learner: An Overview",
+          "year": "2002",
+          "venue": "Theory Into Practice",
+          "doi": "10.1207/S15430421TIP4102_2",
+          "url": "https://www.tandfonline.com/doi/abs/10.1207/s15430421tip4102_2",
+          "audit_status": "doi-verified"
+        },
+        "uses": [
+          {
+            "file": "web/src/data/effective-immortality-evidence.json",
+            "verdict": "SUPPORTS",
+            "note": "Bounded citation context CTX4"
+          }
+        ]
+      },
+      {
+        "key": "kluger1996feedback",
+        "verdict": "KEEP",
+        "axis_failures": [],
+        "note": "crossref-verified: 说明反馈可能提升表现，也可能因设计错误降低表现。",
+        "metadata": {
+          "entry_type": "article",
+          "title": "The effects of feedback interventions on performance: A historical review, a meta-analysis, and a preliminary feedback intervention theory",
+          "year": "1996",
+          "venue": "Psychological Bulletin",
+          "doi": "10.1037/0033-2909.119.2.254",
+          "url": "https://doi.org/10.1037/0033-2909.119.2.254",
+          "audit_status": "crossref-verified"
+        },
+        "uses": [
+          {
+            "file": "web/src/data/effective-immortality-evidence.json",
+            "verdict": "SUPPORTS",
+            "note": "Bounded citation context CTX4"
+          }
+        ]
+      },
+      {
+        "key": "davis1989tam",
+        "verdict": "KEEP",
+        "axis_failures": [],
+        "note": "crossref-verified: 解释技术采用能力中的有用性和易用性。",
+        "metadata": {
+          "entry_type": "article",
+          "title": "Perceived Usefulness, Perceived Ease of Use, and User Acceptance of Information Technology",
+          "year": "1989",
+          "venue": "MIS Quarterly",
+          "doi": "10.2307/249008",
+          "url": "https://misq.umn.edu/misq/article/13/3/319/191/Perceived-Usefulness-Perceived-Ease-of-Use-and",
+          "audit_status": "crossref-verified"
+        },
+        "uses": [
+          {
+            "file": "web/src/data/effective-immortality-evidence.json",
+            "verdict": "SUPPORTS",
+            "note": "Bounded citation context CTX6"
+          }
+        ]
+      },
+      {
+        "key": "venkatesh2003utaut",
+        "verdict": "KEEP",
+        "axis_failures": [],
+        "note": "crossref-verified: 解释技术采用中的促进条件、社会影响和努力预期。",
+        "metadata": {
+          "entry_type": "article",
+          "title": "User Acceptance of Information Technology: Toward a Unified View",
+          "year": "2003",
+          "venue": "MIS Quarterly",
+          "doi": "10.2307/30036540",
+          "url": "https://misq.umn.edu/misq/article/27/3/425/1340/User-Acceptance-of-Information-Technology-Toward-A",
+          "audit_status": "crossref-verified"
+        },
+        "uses": [
+          {
+            "file": "web/src/data/effective-immortality-evidence.json",
+            "verdict": "SUPPORTS",
+            "note": "Bounded citation context CTX6"
+          }
+        ]
+      },
+      {
+        "key": "rogers2003diffusion",
+        "verdict": "KEEP",
+        "axis_failures": [],
+        "note": "bibliographic-record-verified-isbn: 说明技术成熟、扩散、采用者差异和社会系统时间窗口。",
+        "metadata": {
+          "entry_type": "book",
+          "title": "Diffusion of Innovations",
+          "year": "2003",
+          "venue": "Free Press",
+          "doi": "",
+          "url": "https://archive.org/details/diffusionofinnov0005roge",
+          "audit_status": "bibliographic-record-verified-isbn"
+        },
+        "uses": [
+          {
+            "file": "web/src/data/effective-immortality-evidence.json",
+            "verdict": "SUPPORTS",
+            "note": "Bounded citation context CTX6"
+          }
+        ]
+      },
+      {
+        "key": "holtlunstad2010social",
+        "verdict": "KEEP",
+        "axis_failures": [],
+        "note": "crossref-verified: 讨论社会关系与死亡风险的关联证据边界。",
+        "metadata": {
+          "entry_type": "article",
+          "title": "Social Relationships and Mortality Risk: A Meta-analytic Review",
+          "year": "2010",
+          "venue": "PLoS Medicine",
+          "doi": "10.1371/journal.pmed.1000316",
+          "url": "https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1000316",
+          "audit_status": "crossref-verified"
+        },
+        "uses": [
+          {
+            "file": "web/src/data/effective-immortality-evidence.json",
+            "verdict": "SUPPORTS",
+            "note": "Bounded citation context CTX5"
+          }
+        ]
+      },
+      {
+        "key": "mincer1974humanCapital",
+        "verdict": "KEEP",
+        "axis_failures": [],
+        "note": "official-archive: 说明教育、经验和长期积累如何进入人力资本模型。",
+        "metadata": {
+          "entry_type": "book",
+          "title": "Schooling, Experience, and Earnings",
+          "year": "1974",
+          "venue": "National Bureau of Economic Research",
+          "doi": "",
+          "url": "https://www.nber.org/books-and-chapters/schooling-experience-and-earnings",
+          "audit_status": "official-archive"
+        },
+        "uses": [
+          {
+            "file": "web/src/data/effective-immortality-evidence.json",
+            "verdict": "SUPPORTS",
+            "note": "Bounded citation context CTX5"
+          }
+        ]
+      },
+      {
+        "key": "coleman1988socialCapital",
+        "verdict": "KEEP",
+        "axis_failures": [],
+        "note": "doi-verified: 说明关系、信任、规范和网络如何成为能力形成条件。",
+        "metadata": {
+          "entry_type": "article",
+          "title": "Social Capital in the Creation of Human Capital",
+          "year": "1988",
+          "venue": "American Journal of Sociology",
+          "doi": "10.1086/228943",
+          "url": "https://www.journals.uchicago.edu/doi/10.1086/228943",
+          "audit_status": "doi-verified"
+        },
+        "uses": [
+          {
+            "file": "web/src/data/effective-immortality-evidence.json",
+            "verdict": "SUPPORTS",
+            "note": "Bounded citation context CTX5"
+          }
+        ]
+      },
+      {
+        "key": "brynjolfsson2025generative",
+        "verdict": "KEEP",
+        "axis_failures": [],
+        "note": "crossref-verified-corrected-doi: 支持限定客服任务中的 AI productivity 证据。",
+        "metadata": {
+          "entry_type": "article",
+          "title": "Generative AI at Work",
+          "year": "2025",
+          "venue": "The Quarterly Journal of Economics",
+          "doi": "10.1093/qje/qjae044",
+          "url": "https://academic.oup.com/qje/article/140/2/889/7990658",
+          "audit_status": "crossref-verified-corrected-doi"
+        },
+        "uses": [
+          {
+            "file": "web/src/data/effective-immortality-evidence.json",
+            "verdict": "SUPPORTS",
+            "note": "Bounded citation context CTX7"
+          }
+        ]
+      },
+      {
+        "key": "noy2023productivity",
+        "verdict": "KEEP",
+        "axis_failures": [],
+        "note": "crossref-verified: 支持写作任务内的生成式 AI 生产率证据。",
+        "metadata": {
+          "entry_type": "article",
+          "title": "Experimental evidence on the productivity effects of generative artificial intelligence",
+          "year": "2023",
+          "venue": "Science",
+          "doi": "10.1126/science.adh2586",
+          "url": "https://www.science.org/doi/10.1126/science.adh2586",
+          "audit_status": "crossref-verified"
+        },
+        "uses": [
+          {
+            "file": "web/src/data/effective-immortality-evidence.json",
+            "verdict": "SUPPORTS",
+            "note": "Bounded citation context CTX7"
+          }
+        ]
+      },
+      {
+        "key": "peng2023copilot",
+        "verdict": "KEEP",
+        "axis_failures": [],
+        "note": "arxiv-api-verified: 支持限定编程任务中的 AI pair programmer 生产率入口。",
+        "metadata": {
+          "entry_type": "arxiv",
+          "title": "The Impact of AI on Developer Productivity: Evidence from GitHub Copilot",
+          "year": "2023",
+          "venue": "arXiv",
+          "doi": "",
+          "url": "https://arxiv.org/abs/2302.06590",
+          "audit_status": "arxiv-api-verified"
+        },
+        "uses": [
+          {
+            "file": "web/src/data/effective-immortality-evidence.json",
+            "verdict": "SUPPORTS",
+            "note": "Bounded citation context CTX7"
+          }
+        ]
+      },
+      {
+        "key": "dellacqua2026jagged",
+        "verdict": "KEEP",
+        "axis_failures": [],
+        "note": "crossref-verified: 支持 AI 收益与风险具有任务边界。",
+        "metadata": {
+          "entry_type": "article",
+          "title": "Navigating the Jagged Technological Frontier: Field Experimental Evidence of the Effects of Artificial Intelligence on Knowledge Worker Productivity and Quality",
+          "year": "2026",
+          "venue": "Organization Science",
+          "doi": "10.1287/orsc.2025.21838",
+          "url": "https://pubsonline.informs.org/doi/10.1287/orsc.2025.21838",
+          "audit_status": "crossref-verified"
+        },
+        "uses": [
+          {
+            "file": "web/src/data/effective-immortality-evidence.json",
+            "verdict": "SUPPORTS",
+            "note": "Bounded citation context CTX7"
+          },
+          {
+            "file": "web/src/data/effective-immortality-evidence.json",
+            "verdict": "SUPPORTS",
+            "note": "Bounded citation context CTX8"
+          }
+        ]
+      },
+      {
+        "key": "hernan2022targetTrial",
+        "verdict": "KEEP",
+        "axis_failures": [],
+        "note": "crossref-verified: 定义因果协议门禁和观察数据因果推断边界。",
+        "metadata": {
+          "entry_type": "article",
+          "title": "Target Trial Emulation",
+          "year": "2022",
+          "venue": "JAMA",
+          "doi": "10.1001/jama.2022.21383",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/36508210/",
+          "audit_status": "crossref-verified"
+        },
+        "uses": [
+          {
+            "file": "web/src/data/effective-immortality-evidence.json",
+            "verdict": "SUPPORTS",
+            "note": "Bounded citation context CTX9"
+          }
+        ]
+      },
+      {
+        "key": "han2022rmstQuickGuide",
+        "verdict": "KEEP",
+        "axis_failures": [],
+        "note": "crossref-verified: 提供 RMST 和有限随访窗口内生存曲线面积的有效时间报告语言。",
+        "metadata": {
+          "entry_type": "article",
+          "title": "Restricted Mean Survival Time for Survival Analysis: A Quick Guide for Clinical Researchers",
+          "year": "2022",
+          "venue": "Korean Journal of Radiology",
+          "doi": "10.3348/kjr.2022.0061",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9081686/",
+          "audit_status": "crossref-verified"
+        },
+        "uses": []
+      },
+      {
+        "key": "pan2024learningAnalyticsReview",
+        "verdict": "KEEP",
+        "axis_failures": [],
+        "note": "crossref-verified: 提供 LMS 日志、学习分析干预和反馈事件作为学习轮次观测入口。",
+        "metadata": {
+          "entry_type": "article",
+          "title": "A Systematic Review of Learning Analytics",
+          "year": "2024",
+          "venue": "Journal of Learning Analytics",
+          "doi": "10.18608/jla.2023.8093",
+          "url": "https://learning-analytics.info/index.php/JLA/article/view/8093",
+          "audit_status": "crossref-verified"
+        },
+        "uses": []
+      },
+      {
+        "key": "deMooij2025srlMultimodalAi",
+        "verdict": "KEEP",
+        "axis_failures": [],
+        "note": "crossref-verified: 提供自我调节学习、多模态数据和 AI 观测作为学习轮次到能力积累的过程测量入口。",
+        "metadata": {
+          "entry_type": "article",
+          "title": "A Systematic Review of Self-Regulated Learning through Integration of Multimodal Data and Artificial Intelligence",
+          "year": "2025",
+          "venue": "Educational Psychology Review",
+          "doi": "10.1007/s10648-025-10028-0",
+          "url": "https://link.springer.com/article/10.1007/s10648-025-10028-0",
+          "audit_status": "crossref-verified"
+        },
+        "uses": []
+      },
+      {
+        "key": "rao2026deployedAiMonitoring",
+        "verdict": "KEEP",
+        "axis_failures": [],
+        "note": "crossref-verified: 提供部署后 AI 监测、漂移、异常输出、人因、合规和大规模影响的治理分类。",
+        "metadata": {
+          "entry_type": "report",
+          "title": "Challenges to the monitoring of deployed AI systems",
+          "year": "2026",
+          "venue": "NIST AI 800-4",
+          "doi": "10.6028/NIST.AI.800-4",
+          "url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.800-4.pdf",
+          "audit_status": "crossref-verified"
+        },
+        "uses": []
+      },
+      {
+        "key": "riggi2026targetTrialBridge",
+        "verdict": "KEEP",
+        "axis_failures": [],
+        "note": "crossref-verified: 提供观察性研究问题转写为目标试验协议的字段和边界语言。",
+        "metadata": {
+          "entry_type": "article",
+          "title": "Target trial emulation: bridging observational studies and randomized trials for health decision-making",
+          "year": "2026",
+          "venue": "Journal of Comparative Effectiveness Research",
+          "doi": "10.57264/cer-2025-0180",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13044815/",
+          "audit_status": "crossref-verified"
+        },
+        "uses": []
+      },
+      {
+        "key": "robins2000marginalStructural",
+        "verdict": "KEEP",
+        "axis_failures": [],
+        "note": "pubmed-verified: 说明时间变化混杂下的因果估计入口和边界。",
+        "metadata": {
+          "entry_type": "article",
+          "title": "Marginal Structural Models and Causal Inference in Epidemiology",
+          "year": "2000",
+          "venue": "Epidemiology",
+          "doi": "10.1097/00001648-200009000-00011",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/10955408/",
+          "audit_status": "pubmed-verified"
+        },
+        "uses": [
+          {
+            "file": "web/src/data/effective-immortality-evidence.json",
+            "verdict": "SUPPORTS",
+            "note": "Bounded citation context CTX9"
+          }
+        ]
+      },
+      {
+        "key": "clark1998extended",
+        "verdict": "KEEP",
+        "axis_failures": [],
+        "note": "crossref-verified: 支撑工具、记忆外化和认知扩展进入主体系统。",
+        "metadata": {
+          "entry_type": "article",
+          "title": "The Extended Mind",
+          "year": "1998",
+          "venue": "Analysis",
+          "doi": "10.1093/analys/58.1.7",
+          "url": "https://academic.oup.com/analysis/article-pdf/58/1/7/359060/58-1-7.pdf",
+          "audit_status": "crossref-verified"
+        },
+        "uses": [
+          {
+            "file": "web/src/data/effective-immortality-evidence.json",
+            "verdict": "SUPPORTS",
+            "note": "Bounded citation context CTX11"
+          }
+        ]
+      },
+      {
+        "key": "engelbart1962augmenting",
+        "verdict": "KEEP",
+        "axis_failures": [],
+        "note": "official-archive-registered: 提供人、工具、概念和方法作为增强系统的经典框架。",
+        "metadata": {
+          "entry_type": "report",
+          "title": "Augmenting Human Intellect: A Conceptual Framework",
+          "year": "1962",
+          "venue": "Stanford Research Institute report",
+          "doi": "",
+          "url": "https://www.dougengelbart.org/pubs/augment-3906.html",
+          "audit_status": "official-archive-registered"
+        },
+        "uses": [
+          {
+            "file": "web/src/data/effective-immortality-evidence.json",
+            "verdict": "SUPPORTS",
+            "note": "Bounded citation context CTX11"
+          }
+        ]
+      },
+      {
+        "key": "robeyns2021capability",
+        "verdict": "KEEP",
+        "axis_failures": [],
+        "note": "official-web-registered: 定义真实可行能力和可能性空间。",
+        "metadata": {
+          "entry_type": "encyclopedia",
+          "title": "The Capability Approach",
+          "year": "2021",
+          "venue": "Stanford Encyclopedia of Philosophy",
+          "doi": "",
+          "url": "https://plato.stanford.edu/entries/capability-approach/",
+          "audit_status": "official-web-registered"
+        },
+        "uses": [
+          {
+            "file": "web/src/data/effective-immortality-evidence.json",
+            "verdict": "SUPPORTS",
+            "note": "Bounded citation context CTX12"
+          }
+        ]
+      },
+      {
+        "key": "nist2023airmf",
+        "verdict": "KEEP",
+        "axis_failures": [],
+        "note": "official-url-200: 提供 AI 风险识别、测量、治理和回滚语言。",
+        "metadata": {
+          "entry_type": "standard",
+          "title": "Artificial Intelligence Risk Management Framework (AI RMF 1.0)",
+          "year": "2023",
+          "venue": "NIST",
+          "doi": "",
+          "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+          "audit_status": "official-url-200"
+        },
+        "uses": [
+          {
+            "file": "web/src/data/effective-immortality-evidence.json",
+            "verdict": "SUPPORTS",
+            "note": "Bounded citation context CTX8"
+          }
+        ]
+      },
+      {
+        "key": "amershi2019hai",
+        "verdict": "KEEP",
+        "axis_failures": [],
+        "note": "crossref-verified: 提供人机协作设计、纠错和控制权边界。",
+        "metadata": {
+          "entry_type": "inproceedings",
+          "title": "Guidelines for Human-AI Interaction",
+          "year": "2019",
+          "venue": "Proceedings of the 2019 CHI Conference on Human Factors in Computing Systems",
+          "doi": "10.1145/3290605.3300233",
+          "url": "https://dl.acm.org/doi/10.1145/3290605.3300233",
+          "audit_status": "crossref-verified"
+        },
+        "uses": [
+          {
+            "file": "web/src/data/effective-immortality-evidence.json",
+            "verdict": "SUPPORTS",
+            "note": "Bounded citation context CTX8"
+          }
+        ]
+      },
+      {
+        "key": "burwell2017bciEthics",
+        "verdict": "KEEP",
+        "axis_failures": [],
+        "note": "doi-verified: 为脑机接口、神经技术、同意、身份和主体边界提供风险治理入口。",
+        "metadata": {
+          "entry_type": "article",
+          "title": "Ethical aspects of brain computer interfaces: a scoping review",
+          "year": "2017",
+          "venue": "BMC Medical Ethics",
+          "doi": "10.1186/s12910-017-0220-y",
+          "url": "https://bmcmedethics.biomedcentral.com/articles/10.1186/s12910-017-0220-y",
+          "audit_status": "doi-verified"
+        },
+        "uses": [
+          {
+            "file": "web/src/data/effective-immortality-evidence.json",
+            "verdict": "SUPPORTS",
+            "note": "Bounded citation context CTX8"
+          },
+          {
+            "file": "web/src/data/effective-immortality-evidence.json",
+            "verdict": "SUPPORTS",
+            "note": "Bounded citation context CTX11"
+          }
+        ]
+      },
+      {
+        "key": "gradeHandbook",
+        "verdict": "KEEP",
+        "axis_failures": [],
+        "note": "official-web: 提供证据确定性、收益风险权衡和从证据到建议的政策语言。",
+        "metadata": {
+          "entry_type": "guideline-web",
+          "title": "GRADE Handbook",
+          "year": "n.d.",
+          "venue": "GRADE Working Group",
+          "doi": "",
+          "url": "https://gdt.gradepro.org/app/handbook/handbook.html",
+          "audit_status": "official-web"
+        },
+        "uses": [
+          {
+            "file": "web/src/data/effective-immortality-evidence.json",
+            "verdict": "SUPPORTS",
+            "note": "Bounded citation context CTX9"
+          }
+        ]
+      },
+      {
+        "key": "clinicaltrialsGov",
+        "verdict": "KEEP",
+        "axis_failures": [],
+        "note": "official-url-200: 提供临床试验登记、人群、比较组、结局和结果回填入口。",
+        "metadata": {
+          "entry_type": "registry",
+          "title": "ClinicalTrials.gov",
+          "year": "n.d.",
+          "venue": "ClinicalTrials.gov",
+          "doi": "",
+          "url": "https://clinicaltrials.gov/",
+          "audit_status": "official-url-200"
+        },
+        "uses": [
+          {
+            "file": "web/src/data/effective-immortality-evidence.json",
+            "verdict": "SUPPORTS",
+            "note": "Bounded citation context CTX9"
+          }
+        ]
+      },
+      {
+        "key": "clinicaltrialsGovApi",
+        "verdict": "KEEP",
+        "axis_failures": [],
+        "note": "official-url-200: 提供结构化试验注册与结果数据的机器读取入口，用于后续试验证据采集和协议字段回填。",
+        "metadata": {
+          "entry_type": "official-web",
+          "title": "ClinicalTrials.gov Data API",
+          "year": "n.d.",
+          "venue": "ClinicalTrials.gov",
+          "doi": "",
+          "url": "https://clinicaltrials.gov/data-api/about-api",
+          "audit_status": "official-url-200"
+        },
+        "uses": [
+          {
+            "file": "web/src/data/effective-immortality-evidence.json",
+            "verdict": "SUPPORTS",
+            "note": "Bounded citation context CTX9"
+          }
+        ]
+      },
+      {
+        "key": "whoIctrp",
+        "verdict": "KEEP",
+        "axis_failures": [],
+        "note": "official-url-200: 提供国际临床试验注册网络、WHO 数据集和试验透明度原则的上位入口。",
+        "metadata": {
+          "entry_type": "registry",
+          "title": "International Clinical Trials Registry Platform (ICTRP)",
+          "year": "n.d.",
+          "venue": "World Health Organization",
+          "doi": "",
+          "url": "https://www.who.int/tools/clinical-trials-registry-platform",
+          "audit_status": "official-url-200"
+        },
+        "uses": [
+          {
+            "file": "web/src/data/effective-immortality-evidence.json",
+            "verdict": "SUPPORTS",
+            "note": "Bounded citation context CTX9"
+          }
+        ]
+      },
+      {
+        "key": "tripodAi2024",
+        "verdict": "KEEP",
+        "axis_failures": [],
+        "note": "doi-and-official-site-verified: 提供 AI/机器学习临床预测模型的报告清单、外部验证、校准和透明度门禁。",
+        "metadata": {
+          "entry_type": "article",
+          "title": "TRIPOD+AI statement: updated guidance for reporting clinical prediction models that use regression or machine learning methods",
+          "year": "2024",
+          "venue": "BMJ",
+          "doi": "10.1136/bmj-2023-078378",
+          "url": "https://www.bmj.com/content/385/bmj-2023-078378",
+          "audit_status": "doi-and-official-site-verified"
+        },
+        "uses": [
+          {
+            "file": "web/src/data/effective-immortality-evidence.json",
+            "verdict": "SUPPORTS",
+            "note": "Bounded citation context CTX9"
+          }
+        ]
+      },
+      {
+        "key": "probastAi2025",
+        "verdict": "KEEP",
+        "axis_failures": [],
+        "note": "doi-and-official-site-verified: 提供 AI 预测模型研究的偏倚风险、适用性、可信度、公平性和质量审查门禁。",
+        "metadata": {
+          "entry_type": "article",
+          "title": "PROBAST+AI: an updated quality, risk of bias, and applicability assessment tool for prediction models using regression or artificial intelligence methods",
+          "year": "2025",
+          "venue": "BMJ",
+          "doi": "10.1136/bmj-2024-082505",
+          "url": "https://www.bmj.com/content/388/bmj-2024-082505",
+          "audit_status": "doi-and-official-site-verified"
+        },
+        "uses": [
+          {
+            "file": "web/src/data/effective-immortality-evidence.json",
+            "verdict": "SUPPORTS",
+            "note": "Bounded citation context CTX9"
+          }
+        ]
+      },
+      {
+        "key": "consortAi2020",
+        "verdict": "KEEP",
+        "axis_failures": [],
+        "note": "doi-verified: 约束 AI 干预临床试验结果报告中的干预说明、输入输出、人机交互和错误案例分析。",
+        "metadata": {
+          "entry_type": "article",
+          "title": "Reporting guidelines for clinical trial reports for interventions involving artificial intelligence: the CONSORT-AI extension",
+          "year": "2020",
+          "venue": "Nature Medicine",
+          "doi": "10.1038/s41591-020-1034-x",
+          "url": "https://www.nature.com/articles/s41591-020-1034-x",
+          "audit_status": "doi-verified"
+        },
+        "uses": [
+          {
+            "file": "web/src/data/effective-immortality-evidence.json",
+            "verdict": "SUPPORTS",
+            "note": "Bounded citation context CTX9"
+          }
+        ]
+      },
+      {
+        "key": "spiritAi2020",
+        "verdict": "KEEP",
+        "axis_failures": [],
+        "note": "doi-verified: 约束 AI 干预临床试验方案中的协议透明度、输入输出、人机交互和错误分析计划。",
+        "metadata": {
+          "entry_type": "article",
+          "title": "Guidelines for clinical trial protocols for interventions involving artificial intelligence: the SPIRIT-AI extension",
+          "year": "2020",
+          "venue": "Nature Medicine",
+          "doi": "10.1038/s41591-020-1037-7",
+          "url": "https://www.nature.com/articles/s41591-020-1037-7",
+          "audit_status": "doi-verified"
+        },
+        "uses": [
+          {
+            "file": "web/src/data/effective-immortality-evidence.json",
+            "verdict": "SUPPORTS",
+            "note": "Bounded citation context CTX9"
+          }
+        ]
+      },
+      {
+        "key": "tripodProbast",
+        "verdict": "KEEP",
+        "axis_failures": [],
+        "note": "official-urls-200: 约束预测模型报告质量、偏倚风险、校准和外部验证。",
+        "metadata": {
+          "entry_type": "guideline-web",
+          "title": "TRIPOD Statement and PROBAST",
+          "year": "n.d.",
+          "venue": "Prediction model reporting and risk-of-bias guidance",
+          "doi": "",
+          "url": "https://www.tripod-statement.org/",
+          "audit_status": "official-urls-200"
+        },
+        "uses": [
+          {
+            "file": "web/src/data/effective-immortality-evidence.json",
+            "verdict": "SUPPORTS",
+            "note": "Bounded citation context CTX9"
+          }
+        ]
+      },
+      {
+        "key": "perez2019appleHeart",
+        "verdict": "KEEP",
+        "axis_failures": [],
+        "note": "crossref-verified: 说明可穿戴设备进入大规模风险提示和临床确认通道。",
+        "metadata": {
+          "entry_type": "article",
+          "title": "Large-Scale Assessment of a Smartwatch to Identify Atrial Fibrillation",
+          "year": "2019",
+          "venue": "New England Journal of Medicine",
+          "doi": "10.1056/NEJMoa1901183",
+          "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa1901183",
+          "audit_status": "crossref-verified"
+        },
+        "uses": [
+          {
+            "file": "web/src/data/effective-immortality-evidence.json",
+            "verdict": "SUPPORTS",
+            "note": "Bounded citation context CTX10"
+          }
+        ]
+      },
+      {
+        "key": "li2010personalInformatics",
+        "verdict": "KEEP",
+        "axis_failures": [],
+        "note": "crossref-verified: 提供个人信息学的准备、收集、整合、反思和行动阶段。",
+        "metadata": {
+          "entry_type": "inproceedings",
+          "title": "A stage-based model of personal informatics systems",
+          "year": "2010",
+          "venue": "Proceedings of the SIGCHI Conference on Human Factors in Computing Systems",
+          "doi": "10.1145/1753326.1753409",
+          "url": "https://dl.acm.org/doi/10.1145/1753326.1753409",
+          "audit_status": "crossref-verified"
+        },
+        "uses": [
+          {
+            "file": "web/src/data/effective-immortality-evidence.json",
+            "verdict": "SUPPORTS",
+            "note": "Bounded citation context CTX10"
+          }
+        ]
+      },
+      {
+        "key": "epstein2015lived",
+        "verdict": "KEEP",
+        "axis_failures": [],
+        "note": "crossref-verified: 说明长期自我追踪系统的生活嵌入、维护负担和断裂点。",
+        "metadata": {
+          "entry_type": "inproceedings",
+          "title": "A lived informatics model of personal informatics",
+          "year": "2015",
+          "venue": "Proceedings of the 2015 ACM International Joint Conference on Pervasive and Ubiquitous Computing",
+          "doi": "10.1145/2750858.2804250",
+          "url": "https://dl.acm.org/doi/10.1145/2750858.2804250",
+          "audit_status": "crossref-verified"
+        },
+        "uses": [
+          {
+            "file": "web/src/data/effective-immortality-evidence.json",
+            "verdict": "SUPPORTS",
+            "note": "Bounded citation context CTX10"
+          }
+        ]
+      },
+      {
+        "key": "hutchins1995cognition",
+        "verdict": "KEEP",
+        "axis_failures": [],
+        "note": "author-page-verified: 提供分布式认知和环境嵌入式问题求解框架。",
+        "metadata": {
+          "entry_type": "book",
+          "title": "Cognition in the Wild",
+          "year": "1995",
+          "venue": "MIT Press",
+          "doi": "",
+          "url": "https://pages.ucsd.edu/~ehutchins/citw.html",
+          "audit_status": "author-page-verified"
+        },
+        "uses": [
+          {
+            "file": "web/src/data/effective-immortality-evidence.json",
+            "verdict": "SUPPORTS",
+            "note": "Bounded citation context CTX11"
+          }
+        ]
+      },
+      {
+        "key": "nasaTlx",
+        "verdict": "KEEP",
+        "axis_failures": [],
+        "note": "official-web-registered: 提供任务负荷、时间压力、努力和挫败感测量入口。",
+        "metadata": {
+          "entry_type": "official-web",
+          "title": "NASA Task Load Index",
+          "year": "n.d.",
+          "venue": "NASA Human Systems Integration Division",
+          "doi": "",
+          "url": "https://www.nasa.gov/human-systems-integration-division/nasa-task-load-index-tlx/",
+          "audit_status": "official-web-registered"
+        },
+        "uses": [
+          {
+            "file": "web/src/data/effective-immortality-evidence.json",
+            "verdict": "SUPPORTS",
+            "note": "Bounded citation context CTX8"
+          }
+        ]
+      },
+      {
+        "key": "parasuraman2000automation",
+        "verdict": "KEEP",
+        "axis_failures": [],
+        "note": "crossref-verified: 拆分自动化类型、等级和人机控制权。",
+        "metadata": {
+          "entry_type": "article",
+          "title": "A model for types and levels of human interaction with automation",
+          "year": "2000",
+          "venue": "IEEE Transactions on Systems, Man, and Cybernetics - Part A: Systems and Humans",
+          "doi": "10.1109/3468.844354",
+          "url": "https://ieeexplore.ieee.org/document/844354",
+          "audit_status": "crossref-verified"
+        },
+        "uses": [
+          {
+            "file": "web/src/data/effective-immortality-evidence.json",
+            "verdict": "SUPPORTS",
+            "note": "Bounded citation context CTX8"
+          }
+        ]
+      },
+      {
+        "key": "whoSdhPhc",
+        "verdict": "KEEP",
+        "axis_failures": [],
+        "note": "official-urls-200: 把健康和持续性放回收入、教育、住房、工作、环境和医疗可及条件中。",
+        "metadata": {
+          "entry_type": "official-web",
+          "title": "Social determinants of health and primary health care",
+          "year": "n.d.",
+          "venue": "WHO health topics",
+          "doi": "",
+          "url": "https://www.who.int/health-topics/social-determinants-of-health",
+          "audit_status": "official-urls-200"
+        },
+        "uses": [
+          {
+            "file": "web/src/data/effective-immortality-evidence.json",
+            "verdict": "SUPPORTS",
+            "note": "Bounded citation context CTX12"
+          }
+        ]
+      },
+      {
+        "key": "humanInfraResearchNotes20260628",
+        "verdict": "KEEP",
+        "axis_failures": [],
+        "note": "local-artifact: 记录本项目内部研究过程、来源卡片和证据矩阵。",
+        "metadata": {
+          "entry_type": "project-note",
+          "title": "Automated research run, Source Cards, and Evidence Matrix for the effective immortality flywheel",
+          "year": "2026",
+          "venue": "Human Infra repository source notes",
+          "doi": "",
+          "url": "/docs/source-notes/2026-06-28-effective-immortality-flywheel-automated-research-run.md",
+          "audit_status": "local-artifact"
+        },
+        "uses": []
+      }
+    ],
+    "assurance_limitations": [
+      "This JSON is generated from the local Reference Registry, not from a fresh cross-model citation-audit reviewer thread.",
+      "Run npm run verify:references for live DOI/Crossref, arXiv API, official URL, and local artifact verification; see REFERENCE_VERIFICATION.json and REFERENCE_VERIFICATION.md.",
+      "The Web paper does not yet use LaTeX \\cite commands, so sentence-level cite contexts are represented by citationContextRegister IDs.",
+      "Official-web entries use URL reachability and source identity instead of fabricated DOI fields."
+    ]
+  }
+}

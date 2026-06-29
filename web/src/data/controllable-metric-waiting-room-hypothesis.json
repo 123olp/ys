@@ -1,0 +1,252 @@
+{
+  "meta": {
+    "title": "Controllable Metric Waiting Room Hypothesis",
+    "displayTitle": "可控度规等待室假设",
+    "author": "tradecatlabs",
+    "dateLabel": "Working paper v0.1 / 2026-06-29",
+    "arxivId": "human-infra/working-paper.0005",
+    "category": "gr-qc; cs.HC; q-bio.PE",
+    "route": "/papers/controllable-metric-waiting-room-hypothesis/",
+    "toolSeed": "web/src/data/controllable-metric-waiting-room-hypothesis/TOOL_GENERATED_PAGE_SEED.astro"
+  },
+  "abstractParagraphs": [
+    "本文提出“可控度规等待室假设”：如果未来文明能够制造、捕获或安全利用一种受控时空区域，使其度规在等待者世界线和外部技术参考系之间产生显著固有时差分，那么主体可以在等待室内用较少固有时等待外部技术升级，再退出等待室采用新技术，并在新的能力条件下进入下一轮等待。",
+    "本文把“黑洞等待室”从传播性想象改写为一个可审查的研究对象。黑洞、类黑洞结构、人工强引力区或其他等效时空工程都只是候选实现；真正的对象是可控度规、固有时差分、退出可达性、主体连续性、技术采用能力和递归等待治理共同构成的系统假设。",
+    "当前版本不是工程可行性声明，不声称人工黑洞或重力控制已经可实现，也不输出个体寿命预测。它的目标是建立命名、变量、状态机、失败条件和研究协议，让后续论文阅读、物理约束、工程可达性和 Human Infra 主体持续性模型能够围绕同一个对象继续积累。"
+  ],
+  "keywords": "可控度规；固有时；度规红移；黑洞等待室；未来等待；主体持续性；递归技术采用；Human Infra",
+  "conceptRows": [
+    ["C1", "可控度规等待室", "一个能够在等待者和外部参考系之间制造可用固有时差分的受控时空区域。", "不是普通房间、冬眠舱或人体冷冻设施。"],
+    ["C2", "固有时差分", "主体沿自身世界线经历的时间少于外部技术系统经历的参考时间。", "不是主观感觉变慢，也不是停止生命。"],
+    ["C3", "外部技术参考系", "等待室之外继续推进的科学、医学、AI、材料、能源和治理系统。", "不是绝对时间，也不是保证进步的神秘变量。"],
+    ["C4", "递归等待", "主体等待、退出、采用新技术、再进入等待的循环结构。", "不是一次性穿越未来，也不是无限未来保证。"],
+    ["C5", "可退出性", "主体能从等待区回到可交互的外部世界并使用新技术。", "不是只进入强红移区而不可返回。"],
+    ["C6", "主体连续性", "主体在等待、退出、升级和再等待之间保持可感知、可行动、可记忆、可归属的连续存在。", "不是复制体替代或仅保存信息记录。"]
+  ],
+  "hypothesisRows": [
+    ["H1", "若存在可控度规等待室，则主体固有时消耗可以低于外部技术参考时间消耗。", "由广义相对论中的固有时和度规红移概念给出理论语言。", "需要具体时空、轨道、能量条件和生命支持工程。"],
+    ["H2", "等待价值来自外部技术系统在主体低固有时消耗期间继续发展。", "Human Infra 把等待收益接入医学、AI、修复、工具和风险治理。", "外部技术可能停滞、失败或产生不可接受风险。"],
+    ["H3", "等待必须包含退出和采用，否则时间差不能转化为主体持续性收益。", "等待后需要回到外部世界，获得新医学、修复或认知增强技术。", "不可退出或不可采用时，等待倍率不构成净收益。"],
+    ["H4", "若每轮退出都提升下一轮等待的安全性、倍率或修复能力，则可能形成递归增强。", "这对应 Human Infra 的加速回报飞轮。", "递归只是假设结构，不代表物理或工程必然可达。"],
+    ["H5", "净价值必须同时扣除生命风险、工程风险、尾部风险和机会成本。", "强时间膨胀收益不能直接等同于寿命收益。", "高倍率但不可控的场景应判为负值或不可评估。"]
+  ],
+  "researchQuestionRows": [
+    ["RQ1", "什么时空结构能够定义稳定的固有时差分？", "先给出度规、边界、世界线和外部参考系，再讨论等待倍率 K。", "没有明确定义时空结构时，不允许计算或宣传等待收益。"],
+    ["RQ2", "等待室生命周期是否闭合？", "进入、停留、通信、退出、回收、采用必须组成一条可审查链。", "只靠近强红移区域但不能退出，不构成 Human Infra 路径。"],
+    ["RQ3", "外部技术升级如何转化为主体收益？", "等待收益必须经过 P_exit、P_adopt 和 P_cont 三个概率门。", "技术存在不等于主体可获得、可理解、可承受和可整合。"],
+    ["RQ4", "递归等待是否改善下一轮条件？", "退出后的新状态 X_next 必须提升下一轮等待的安全、修复、采用或治理能力。", "若下一轮风险不降反升，递归飞轮失败。"],
+    ["RQ5", "该路径何时应被治理否决？", "尾部风险、机会成本和替代路径净收益必须作为硬门槛。", "高 K 不能压过不可接受的灾难性风险。"]
+  ],
+  "stateRows": [
+    ["S0", "外部准备", "主体在普通时空中准备资金、医学支持、AI 工具、轨道方案和回收协议。", "准备失败则不能进入。"],
+    ["S1", "进入等待室", "主体进入或接入强固有时差分区域。", "入口必须控制潮汐力、辐射、加速度和导航误差。"],
+    ["S2", "低固有时等待", "主体经历较少固有时，外部技术参考系继续推进。", "生命支持、通信和认知连续性必须维持。"],
+    ["S3", "外部升级窗口", "外部文明产生新的医学、AI、修复、材料或风险治理能力。", "升级不是自动发生，需要证据和可用性。"],
+    ["S4", "退出与回收", "主体离开等待区或被外部系统回收。", "不可退出则等待不转化为未来访问。"],
+    ["S5", "技术采用", "主体使用外部升级技术增强身体、认知、记忆、工具、恢复或安全。", "不能采用时，等待收益中断。"],
+    ["S6", "下一轮等待", "升级后的主体重新评估是否进入下一轮等待。", "必须重新审计风险和主体连续性。"]
+  ],
+  "loopRows": [
+    ["L1", "可控度规等待室", "制造主体固有时和外部参考时间的差分。"],
+    ["L2", "低固有时等待", "降低等待未来所消耗的主体生命时间。"],
+    ["L3", "外部技术升级", "医学、AI、材料、能源、接口和治理系统继续发展。"],
+    ["L4", "退出等待室", "主体回到可交互外部世界。"],
+    ["L5", "采用新技术", "增强身体、认知、注意力、记忆、恢复和风险控制。"],
+    ["L6", "提升下一轮等待条件", "更安全、更长、更可控或更可恢复地等待。"],
+    ["L7", "递归加速回报", "主体持续性、技术系统和可能性空间相互强化。"]
+  ],
+  "variableRows": [
+    ["K", "未来等待倍率", "外部参考时间除以主体固有时。", "收益放大项，但不是可行性证明。"],
+    ["P_exit", "退出概率", "主体能从等待区回到外部世界的概率。", "没有退出，等待倍率不能兑现。"],
+    ["P_adopt", "技术采用概率", "主体能够理解、获得并使用外部升级技术的概率。", "没有采用，外部进步不一定转化为主体收益。"],
+    ["P_cont", "主体连续性概率", "等待、退出和升级后主体仍保持连续身份和行动能力的概率。", "复制或断裂不能默认等价。"],
+    ["R_life", "生命风险", "潮汐力、辐射、生命支持、疾病、事故导致主体失效的风险。", "必须作为扣减项。"],
+    ["R_engineering", "工程风险", "轨道、能源、控制、通信、材料和回收系统失效风险。", "必须作为扣减项。"],
+    ["R_tail", "尾部风险", "黑洞、类黑洞、强引力工程或高能系统产生灾难性后果的风险。", "必须作为治理硬约束。"],
+    ["C_wait", "机会成本", "等待期间无法参与外部世界、错过其他路径或资源被锁定的成本。", "必须和普通延寿、冬眠、AI 医学等路径比较。"]
+  ],
+  "formalAssumptionRows": [
+    ["A1", "等待区 W 存在", "存在一个边界可定义的候选时空区域 W。", "本文不要求 W 已可工程制造，只要求把它作为假设对象。"],
+    ["A2", "主体世界线可定义", "主体在 W 内外的路径可表示为一条或一组连续世界线。", "若主体中断或被复制替代，需要额外连续性论证。"],
+    ["A3", "外部参考系可定义", "存在一个外部技术参考系 E，用于比较技术进步时间。", "E 不是绝对时间，只是模型中的比较框架。"],
+    ["A4", "固有时差分有限且可比较", "Delta_tau_subject 和 Delta_t_external 都可被定义，并形成有限 K。", "不讨论无限未来保证，也不把坐标奇点写成收益。"],
+    ["A5", "生命周期闭合", "进入、停留、通信、退出、回收、采用至少在概念上构成闭环。", "缺少退出或采用时，等待室不能进入净收益模型。"],
+    ["A6", "外部升级可用", "外部技术进步能够以某种形式被主体接触、理解和采用。", "技术存在不等于主体可用。"],
+    ["A7", "风险可扣减", "生命风险、工程风险、尾部风险和机会成本必须作为扣减项。", "不能只用等待倍率 K 评价路径。"],
+    ["A8", "比较路径存在", "等待室必须和冷冻、休眠、相对论飞船、AI 医学等路径比较。", "单独看等待室会高估叙事价值。"]
+  ],
+  "equationRows": [
+    ["E1", "Delta_tau_subject = integral_gamma sqrt(-g_mu_nu dx_mu dx_nu) / c", "定义主体沿世界线积累的固有时。", "identity"],
+    ["E2", "K = Delta_t_external / Delta_tau_subject", "定义未来等待倍率。", "definition"],
+    ["E3", "P_access = P_enter * P_stay * P_exit * P_adopt * P_cont", "把进入、停留、退出、采用和连续性合成访问概率。", "approximation"],
+    ["E4", "B_wait = K * U_upgrade(Delta_t_external)", "把时间差分和外部升级效用合成等待收益代理。", "interpretation"],
+    ["E5", "R_total = R_life + R_engineering + R_tail + C_wait", "把生命、工程、尾部和机会成本作为扣减项。", "approximation"],
+    ["E6", "NCG = B_wait * P_access - R_total", "定义 toy net continuity gain，用于排序和反证，不用于预测个体寿命。", "definition"],
+    ["E7", "X_next = Adopt(Exit(Wait(X_current, W)), G_external)", "把一轮等待写成状态转移。", "interpretation"],
+    ["E8", "Recursive gain requires NCG_n > 0 and X_next improves feasible future waiting.", "定义递归等待飞轮的必要条件。", "proposition"]
+  ],
+  "propositionRows": [
+    ["PR1", "K 不是净收益", "高等待倍率只说明时间差分大，不说明主体可活着退出、可采用技术或可维持连续性。", "由 E2、E3、E6 得出。"],
+    ["PR2", "可退出性是必要条件", "若 P_exit 接近 0，P_access 接近 0，等待收益不能兑现。", "由 E3、E6 得出。"],
+    ["PR3", "技术采用是必要条件", "若 P_adopt 接近 0，外部技术进步不能自动转化为主体持续性。", "由 E3、E7 得出。"],
+    ["PR4", "递归增强需要状态改进", "只有 X_next 改善下一轮等待的安全、修复、采用或治理条件，才构成飞轮。", "由 E7、E8 得出。"],
+    ["PR5", "尾部风险可以压倒倍率收益", "当 R_tail 或 R_engineering 足够大时，即使 K 很高，NCG 仍可为负。", "由 E5、E6 得出。"],
+    ["PR6", "等待室必须接受路径比较", "如果冷冻、休眠、相对论飞船或 AI 医学的 NCG 更高，等待室只是劣势候选。", "由 A8 和 E6 得出。"]
+  ],
+  "claimEvidenceRows": [
+    ["CE1", "固有时由度规和世界线决定。", "R1", "established-physics-language", "可用于定义 E1。", "不能推出人工等待室可行。"],
+    ["CE2", "黑洞附近未来观察存在强约束。", "R2", "constraint-source", "可用于限制普通黑洞叙事。", "不能写成普通黑洞可看到无限未来。"],
+    ["CE3", "有限固有时与长外部过程有理论谱系。", "R3", "theory-analogy", "可用于说明思想谱系。", "不能写成现实宇宙可部署基础设施。"],
+    ["CE4", "强引力时间膨胀可作为公众解释入口。", "R4", "public-explanation", "可用于传播层说明。", "不能承担严格工程证明。"],
+    ["CE5", "等待收益需要接入主体持续性飞轮。", "R5", "internal-model-link", "可用于接入 Human Infra 变量。", "不能替代外部物理证据。"]
+  ],
+  "citationContextRows": [
+    ["CTX1", "CE1", "R1", "用广义相对论语言定义固有时、度规和世界线。", "可以支持 E1 的物理语言和变量定义。", "不得推出可控度规等待室、人工黑洞或强引力工程已经可行。", "ready-for-external-review"],
+    ["CTX2", "CE2", "R2", "用黑洞未来观察边界约束普通黑洞等待叙事。", "可以作为反证和限制来源。", "不得写成普通黑洞场景能安全观察或进入无限未来。", "ready-for-external-review"],
+    ["CTX3", "CE3", "R3", "用 Malament-Hogarth 谱系说明有限固有时与长外部过程的理论背景。", "可以作为理论谱系和思想实验来源。", "不得写成现实宇宙中的可部署等待室或超计算工程。", "ready-for-external-review"],
+    ["CTX4", "CE4", "R4", "用 NASA 科普材料解释强引力时间膨胀的传播入口。", "可以作为公众层面的概念解释。", "不得承担严格物理推导、工程设计、人体等待或安全承诺。", "ready-for-external-review"],
+    ["CTX5", "CE5", "R5", "用 Human Infra 内部论文连接等待路径与主体持续性飞轮。", "可以支持项目内部模型接口和术语一致性。", "不得替代外部物理、医学、工程或伦理证据。", "ready-for-external-review"]
+  ],
+  "preSubmissionReviewRows": [
+    ["PSR1", "研究对象与命名边界", "PASS_WITH_LIMITATIONS", "页面已经把传播名“黑洞等待室”收敛为可控度规等待室假设。", "仍需外部物理学 reviewer 检查度规、固有时和强场边界是否被过度简化。"],
+    ["PSR2", "来源入口", "PASS_LOCAL", "Reference Verification 负责检查 5 条来源入口或本地路由是否可达。", "入口可达不等于来源语境支持具体主张，仍需逐句引用审查。"],
+    ["PSR3", "引用语境", "NEEDS_FRESH_REVIEW", "Citation Context Review Packet 和 Local Review 登记 safe use、forbidden use、risk tier 和 reviewer focus。", "本地审查不是外部审稿结论，不能替代 fresh reviewer。"],
+    ["PSR4", "模型与公式", "WORKING_MODEL_ONLY", "NCG、P_access、K 和递归状态转移只用于概念排序和反证。", "不是预测器，不输出个体寿命、工程方案或现实任务建议。"],
+    ["PSR5", "提交建议", "NOT_READY_FOR_FORMAL_SUBMISSION", "适合作为 Human Infra arXiv-style working paper 和假设页面。", "不适合作为正式物理论文、强引力工程可行性论文、医学建议或个体决策材料提交。"]
+  ],
+  "scenarioRows": [
+    ["A", "天然超大质量黑洞附近等待", "物理红移强，但进入、辐射、稳定、通信和退出极端困难。", "不可评估或高风险。"],
+    ["B", "类黑洞人工强红移结构", "保留想象空间，但需要未知重力控制、能源和材料能力。", "远期假设。"],
+    ["C", "等效度规工程等待区", "不限定为黑洞，只要求产生可控固有时差分。", "理论对象最清晰。"],
+    ["D", "高速相对论飞船", "通过运动学时间膨胀实现固有时差分。", "可作为比较路径。"],
+    ["E", "人体冷冻或低代谢休眠", "不依赖度规红移，依赖生物保存和未来修复。", "机制对照组。"]
+  ],
+  "qualitativeGateScaleRows": [
+    ["high", "高", "变量强烈存在或风险显著放大。", "只表示方向性等级，不代表数值估计。"],
+    ["medium", "中", "变量存在但不足以单独决定路径价值。", "需要和其他门控变量合成解释。"],
+    ["low", "低", "变量较弱或接近基线。", "不能作为主要收益来源。"],
+    ["blocked", "阻断", "变量被关键失败条件切断。", "不得进入正收益叙事。"],
+    ["missing", "缺失", "缺少定义、证据或模型输入。", "只能进入资料补全队列。"],
+    ["not-applicable", "不适用", "变量不属于该机制或该场景对象。", "只能作为对照或边界。"]
+  ],
+  "scenarioEvaluationRows": [
+    ["A", "天然超大质量黑洞附近等待", "blocked-negative", "K 可能很高。", "P_exit、R_life、R_engineering 和 R_tail 同时恶化。", "作为“高 K 不等于高 NCG”的压力测试反例。"],
+    ["B", "类黑洞人工强红移结构", "cannot-evaluate", "理论上可把 K、P_exit 和 P_cont 写成设计目标。", "缺少重力控制、能量、材料、边界和安全证据。", "保留为远期假设对象，不进入工程承诺。"],
+    ["C", "等效度规工程等待区", "research-candidate", "对象定义比黑洞传播名更清晰。", "候选度规、边界条件和风险项仍缺失。", "适合作为 toy metric、scenario card 和治理门槛的主研究对象。"],
+    ["D", "高速相对论飞船", "comparator", "时间差来自运动学时间膨胀，K 可定义。", "能量、加速度、辐射、返航和任务闭环仍是瓶颈。", "用于区分运动学时间膨胀和度规等待室。"],
+    ["E", "人体冷冻或低代谢休眠", "mechanism-comparator", "不依赖度规红移，机制更接近生命保存。", "未来修复、结构保存和主体连续性仍未解决。", "用于防止把生物保存路径混进强引力路径。"]
+  ],
+  "scenarioMatrixRows": [
+    ["A", "天然黑洞附近等待", "high", "blocked", "missing", "blocked", "high", "high", "high", "high", "blocked-negative"],
+    ["B", "类黑洞人工结构", "missing", "missing", "missing", "missing", "missing", "missing", "high", "high", "cannot-evaluate"],
+    ["C", "等效度规工程等待区", "missing", "missing", "missing", "missing", "missing", "missing", "missing", "medium", "research-candidate"],
+    ["D", "高速相对论飞船", "medium", "medium", "medium", "medium", "high", "high", "medium", "high", "comparator"],
+    ["E", "冷冻或低代谢休眠", "not-applicable", "medium", "medium", "medium", "medium", "medium", "medium", "medium", "mechanism-comparator"]
+  ],
+  "gateColumnRows": [
+    ["K", "等待倍率"],
+    ["P_exit", "退出"],
+    ["P_adopt", "采用"],
+    ["P_cont", "连续性"],
+    ["R_life", "生命风险"],
+    ["R_engineering", "工程风险"],
+    ["R_tail", "尾部风险"],
+    ["C_wait", "机会成本"]
+  ],
+  "falsifierRows": [
+    ["F1", "没有可退出轨道或回收路径", "等待倍率再高也不能转化为主体未来访问。"],
+    ["F2", "潮汐力、辐射或生命支持风险压倒收益", "强场环境造成负净价值。"],
+    ["F3", "外部技术升级不能被主体采用", "等待只产生时间差，不产生持续性收益。"],
+    ["F4", "主体连续性在等待或升级中断裂", "项目对象不再是同一持续主体。"],
+    ["F5", "尾部风险不可接受", "强引力或类黑洞工程不能进入部署讨论。"],
+    ["F6", "普通路径的净收益更高", "冷冻、休眠、AI 医学或相对论飞船可能成为更优路径。"]
+  ],
+  "protocolRows": [
+    ["P1", "先定义度规和世界线", "任何场景必须先给出等待者和外部参考系的时间关系。"],
+    ["P2", "再定义进入、停留、退出", "只讨论靠近强红移区不够，必须有完整生命周期。"],
+    ["P3", "再接入主体连续性", "生命、记忆、认知、行动和身份边界必须同时评估。"],
+    ["P4", "再接入技术采用", "外部技术成熟度、可获得性和主体理解能力必须建模。"],
+    ["P5", "最后计算净持续性增益", "用收益项减去生命风险、工程风险、尾部风险和机会成本。"],
+    ["P6", "保持 working paper 边界", "当前只提出假设和研究协议，不声明工程可行。"]
+  ],
+  "evidenceNeedRows": [
+    ["EN1", "候选度规与世界线", "需要广义相对论推导、数值相对论或明确 toy metric。", "证明 K 的定义和边界，而不是证明工程可行。"],
+    ["EN2", "强场环境约束", "需要潮汐力、辐射、吸积盘、轨道稳定、通信和能量条件资料。", "用于识别 R_life、R_engineering 和 R_tail。"],
+    ["EN3", "退出与回收机制", "需要概念级生命周期模型、可退出性假设和阻断条件。", "用于评估 P_exit，不提供现实任务方案。"],
+    ["EN4", "外部技术窗口", "需要 AI、医学、材料、能源和治理系统的时间窗口模型。", "用于估计 U_upgrade 和 P_adopt 的条件。"],
+    ["EN5", "主体连续性边界", "需要身份连续性、记忆、认知、身体、恢复和授权边界资料。", "用于评估 P_cont，避免复制体替代偷换。"],
+    ["EN6", "替代路径基线", "需要冷冻、休眠、相对论飞船、普通等待和 AI 医学等路径对照。", "用于判断等待室是否只是劣势候选。"],
+    ["EN7", "治理阈值", "需要尾部风险、双重用途、外部性、资源占用和伦理门槛。", "用于决定何时不应推进该路径。"]
+  ],
+  "evaluationRoadmapRows": [
+    ["ER1", "术语与来源基线", "固定命名、引用边界、Source Rows、Claim-Evidence 和 Citation Context。", "当前版本已完成本地结构审计，仍需外部 reviewer。"],
+    ["ER2", "理论玩具模型", "构造简化时空和世界线，验证 K、P_access 和 NCG 的定义是否自洽。", "不得从 toy model 外推工程可行性。"],
+    ["ER3", "场景卡片评估", "为天然黑洞、类黑洞结构、等效度规工程、相对论飞船和休眠路径建立 scenario card。", "输出 blocked、cannot-evaluate、comparator 或 research-candidate 分类。"],
+    ["ER4", "敏感性分析", "扫描 K、P_exit、P_adopt、P_cont、R_tail 和 C_wait 对 NCG 的影响。", "只做群体/路径层方向性分析，不输出个体寿命。"],
+    ["ER5", "外部审稿", "把 Citation Context Review Packet 交给 fresh reviewer 检查来源和语境。", "外部审稿未完成前，不标记正式 submission-ready。"],
+    ["ER6", "交互可视化", "把状态机、概率门、风险扣减和递归飞轮做成 D3 研究图。", "图表必须显示模型边界和非预测器性质。"]
+  ],
+  "sourceRows": [
+    ["R1", "Carroll", "Lecture Notes on General Relativity", "https://arxiv.org/abs/gr-qc/9712019", "提供度规、固有时和黑洞时空的基础语言。"],
+    ["R2", "Zaslavskii", "On the possibility of observation of the future for movement in the field of black holes of different types", "https://arxiv.org/abs/1203.4000", "用于约束黑洞场景中观察外部未来的边界。"],
+    ["R3", "Etesi and Nemeti", "Non-Turing computations via Malament-Hogarth space-times", "https://arxiv.org/abs/gr-qc/0104023", "提供有限固有时与长外部过程的理论谱系。"],
+    ["R4", "NASA Science", "What Happens When Something Gets Too Close to a Black Hole?", "https://science.nasa.gov/universe/what-happens-when-something-gets-too-close-to-a-black-hole/", "用于公众层面的强引力时间膨胀解释。"],
+    ["R5", "Human Infra", "Effective Immortality Flywheel", "/papers/effective-immortality-flywheel/", "把等待路径接入主体持续性、技术采用和可能性空间。"]
+  ],
+  "auditContract": {
+    "minimumCounts": {
+      "conceptRows": 6,
+      "hypothesisRows": 5,
+      "researchQuestionRows": 5,
+      "stateRows": 7,
+      "loopRows": 7,
+      "variableRows": 8,
+      "formalAssumptionRows": 8,
+      "equationRows": 8,
+      "propositionRows": 6,
+      "claimEvidenceRows": 5,
+      "citationContextRows": 5,
+      "preSubmissionReviewRows": 5,
+      "scenarioRows": 5,
+      "qualitativeGateScaleRows": 6,
+      "scenarioEvaluationRows": 5,
+      "scenarioMatrixRows": 5,
+      "gateColumnRows": 8,
+      "falsifierRows": 6,
+      "protocolRows": 6,
+      "evidenceNeedRows": 7,
+      "evaluationRoadmapRows": 6,
+      "sourceRows": 5
+    },
+    "requiredPageStrings": [
+      "可控度规等待室假设",
+      "Controllable Metric Waiting Room Hypothesis",
+      "TOOL_GENERATED_PAGE_SEED.astro",
+      "可控度规等待室",
+      "固有时差分",
+      "等待 -> 退出 -> 采用 -> 再等待",
+      "Research Questions",
+      "Evidence Needs",
+      "Evaluation Roadmap",
+      "Qualitative Gate Scale",
+      "Scenario Evaluation",
+      "Scenario Gate Matrix",
+      "controllable-metric-waiting-room-scenario-matrix-svg",
+      "DERIVATION_PACKAGE.md",
+      "形式化推导",
+      "Claim-Evidence",
+      "Citation Context",
+      "Pre-Submission Review",
+      "REFERENCE_VERIFICATION.json",
+      "CITATION_CONTEXT_REVIEW_PACKET.json",
+      "CITATION_CONTEXT_LOCAL_REVIEW.json",
+      "PRE_SUBMISSION_REVIEW.json",
+      "controllable-metric-waiting-room-loop-svg",
+      "ltx_page_navbar",
+      "ltx_TOC",
+      "ltx_document",
+      "ltx_abstract",
+      "ltx_bibliography"
+    ]
+  }
+}

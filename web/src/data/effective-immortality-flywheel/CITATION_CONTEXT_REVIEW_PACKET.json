@@ -1,0 +1,2829 @@
+{
+  "audit_skill": "citation-context-review-packet",
+  "verdict": "READY_FOR_EXTERNAL_REVIEW",
+  "reason_code": "packet_generated_no_external_judgment",
+  "summary": "A structured packet for fresh reviewer sentence-level citation-context review has been generated from the Claim Register, Claim Evidence Map, Citation Context Register, and Reference Registry.",
+  "generated_at": "2026-06-29T00:00:00.000Z",
+  "audited_input_hashes": {
+    "src/data/effective-immortality-evidence.json": "sha256:998866fea2f08fe27ad21ffa46f540543955ec3c49e1e2aaef78638e2db33d64"
+  },
+  "details": {
+    "schema_version": "2.0",
+    "claim_count": 7,
+    "context_count": 12,
+    "reference_count": 53,
+    "claim_context_link_count": 29,
+    "context_reference_link_count": 49,
+    "reviewer_instructions": [
+      "Use a fresh context with no prior conversation state.",
+      "Verify source existence and metadata through DOI, arXiv, PubMed, publisher, official standard, or official registry pages.",
+      "Judge whether the cited source supports the exact claim and context, not merely a related topic.",
+      "Preserve the does-not-support boundary when the reference only provides method language, governance language, association evidence, or task-limited evidence.",
+      "Flag any source used to support effective immortality, lifespan extension, or individual prediction when it only supports a weaker claim."
+    ],
+    "review_questions": [
+      "Does each reference exist and match the registered title, authors, year, venue, DOI or URL?",
+      "Does each reference support the exact usedFor claim for its citation context?",
+      "Does any prose overstate a method source, governance framework, observational association, mechanism review, or task-limited AI study?",
+      "Are all doesNotSupport boundaries honored by the current working paper and Web page?",
+      "Should any claim be softened, any citation replaced, or any reference removed?"
+    ],
+    "claim_packets": [
+      {
+        "claim_id": "CL1",
+        "claim_text": "有效永生应被建模为主体持续性、能力系统、技术系统和可能性空间的反馈问题，而非单次寿命长度问题。",
+        "claim_type": "Conceptual framing",
+        "current_status": "Framework proposal",
+        "upgrade_condition": "需要通过变量字典和案例研究证明该框架比单一寿命指标更能解释长期行动能力。",
+        "paper_sections": [
+          "S1",
+          "S2",
+          "S4",
+          "S6"
+        ],
+        "evidence_edges": [
+          "T -> E",
+          "E -> R",
+          "R -> C",
+          "C -> A",
+          "A -> Q",
+          "Q -> O",
+          "O -> T/E"
+        ],
+        "alignment_verdict": "FRAMEWORK_ONLY",
+        "current_support": "各局部边有方法、机制、关联、实验或规范来源支撑；完整飞轮仍是综合框架主张。",
+        "falsifiers": [
+          "关键边长期不成立",
+          "负向通道压过正向通道",
+          "新增寿命无法转化为有效时间"
+        ],
+        "upgrade_gate": "完成至少一个案例研究或仿真，证明该框架比单一寿命指标更能解释长期行动能力。",
+        "contexts": [
+          {
+            "context_id": "CTX2",
+            "source_group": "Grossman Health Capital; WHO HALE; NICE QALY",
+            "canonical_record": "Health capital theory, WHO healthy life expectancy metadata, and NICE economic evaluation manual.",
+            "used_for": "把日历寿命转译为健康质量、有效时间和质量调整时间。",
+            "supports": "T -> E 的测量语言和健康质量调整视角。",
+            "does_not_support": "不能完整定义主体连续性，也不能替代个体医学判断。",
+            "citation_status": "KEEP WITH BOUNDARY",
+            "references": [
+              {
+                "key": "grossman1972healthcapital",
+                "entry_type": "article",
+                "authors": "Grossman, M.",
+                "year": "1972",
+                "title": "On the Concept of Health Capital and the Demand for Health",
+                "venue": "Journal of Political Economy",
+                "doi": "10.1086/259880",
+                "url": "https://www.journals.uchicago.edu/doi/10.1086/259880",
+                "used_for": "把健康资本、有效时间和日历时间区分开。",
+                "audit_status": "crossref-verified"
+              },
+              {
+                "key": "niceEconomicEvaluation",
+                "entry_type": "official-web",
+                "authors": "National Institute for Health and Care Excellence",
+                "year": "n.d.",
+                "title": "Economic evaluation",
+                "venue": "NICE health technology evaluations manual",
+                "doi": "",
+                "url": "https://www.nice.org.uk/process/pmg36/chapter/economic-evaluation-2",
+                "used_for": "提供 QALY 与健康经济评价的政策语言。",
+                "audit_status": "official-url-200"
+              },
+              {
+                "key": "whohale7752",
+                "entry_type": "official-web",
+                "authors": "World Health Organization",
+                "year": "n.d.",
+                "title": "Healthy life expectancy (HALE) metadata",
+                "venue": "Global Health Observatory Indicator Metadata Registry",
+                "doi": "",
+                "url": "https://www.who.int/data/gho/indicator-metadata-registry/imr-details/7752",
+                "used_for": "提供健康寿命指标的官方定义入口。",
+                "audit_status": "official-url-200"
+              }
+            ]
+          },
+          {
+            "context_id": "CTX4",
+            "source_group": "Deliberate Practice; Law of Practice; Self-Regulated Learning; Feedback Intervention Theory",
+            "canonical_record": "Psychological Review 1993, law-of-practice learning curve, Zimmerman self-regulated learning, and Psychological Bulletin 1996 feedback intervention meta-analysis.",
+            "used_for": "解释 E -> R -> C：有效时间如何在有目标、有反馈和可修正的任务中沉淀为能力。",
+            "supports": "学习轮次、反馈质量、练习曲线和能力积累的条件。",
+            "does_not_support": "时间本身不会自动产生能力；错误反馈和低质量重复可能反向损害表现。",
+            "citation_status": "KEEP WITH BOUNDARY",
+            "references": [
+              {
+                "key": "ericsson1993deliberatePractice",
+                "entry_type": "article",
+                "authors": "Ericsson, K. A.; Krampe, R. T.; Tesch-Romer, C.",
+                "year": "1993",
+                "title": "The role of deliberate practice in the acquisition of expert performance",
+                "venue": "Psychological Review",
+                "doi": "10.1037/0033-295X.100.3.363",
+                "url": "https://eric.ed.gov/?id=EJ471947",
+                "used_for": "解释有效时间进入有反馈练习轮次的条件。",
+                "audit_status": "crossref-verified"
+              },
+              {
+                "key": "kluger1996feedback",
+                "entry_type": "article",
+                "authors": "Kluger, A. N.; DeNisi, A.",
+                "year": "1996",
+                "title": "The effects of feedback interventions on performance: A historical review, a meta-analysis, and a preliminary feedback intervention theory",
+                "venue": "Psychological Bulletin",
+                "doi": "10.1037/0033-2909.119.2.254",
+                "url": "https://doi.org/10.1037/0033-2909.119.2.254",
+                "used_for": "说明反馈可能提升表现，也可能因设计错误降低表现。",
+                "audit_status": "crossref-verified"
+              },
+              {
+                "key": "newell1981lawPractice",
+                "entry_type": "inproceedings",
+                "authors": "Newell, A.; Rosenbloom, P. S.",
+                "year": "2013",
+                "title": "Mechanisms of Skill Acquisition and the Law of Practice: Allen Newell and Paul S. Rosenbloom",
+                "venue": "Cognitive Skills and Their Acquisition",
+                "doi": "10.4324/9780203728178-6",
+                "url": "https://www.taylorfrancis.com/chapters/edit/10.4324/9780203728178-6/mechanisms-skill-acquisition-law-practice-allen-newell-paul-rosenbloom",
+                "used_for": "为重复轮次、练习曲线和能力增长提供认知模型入口。",
+                "audit_status": "crossref-verified-corrected-doi"
+              },
+              {
+                "key": "zimmerman2002selfRegulated",
+                "entry_type": "article",
+                "authors": "Zimmerman, B. J.",
+                "year": "2002",
+                "title": "Becoming a Self-Regulated Learner: An Overview",
+                "venue": "Theory Into Practice",
+                "doi": "10.1207/S15430421TIP4102_2",
+                "url": "https://www.tandfonline.com/doi/abs/10.1207/s15430421tip4102_2",
+                "used_for": "说明学习轮次需要目标设定、自我监控、反馈和策略调整。",
+                "audit_status": "doi-verified"
+              }
+            ]
+          },
+          {
+            "context_id": "CTX5",
+            "source_group": "Human Capital; Social Capital; Social Relationships Mortality",
+            "canonical_record": "Human/social capital theory and PLoS Medicine 2010 social relationships mortality meta-analysis.",
+            "used_for": "说明经验、资源、信誉和协作网络如何进入 C 与 O，并可能反哺 T/E。",
+            "supports": "积累资本、社会支持和死亡风险关联的讨论。",
+            "does_not_support": "不能把社会关系关联直接升级成具体干预的因果延寿结论。",
+            "citation_status": "KEEP WITH BOUNDARY",
+            "references": [
+              {
+                "key": "coleman1988socialCapital",
+                "entry_type": "article",
+                "authors": "Coleman, J. S.",
+                "year": "1988",
+                "title": "Social Capital in the Creation of Human Capital",
+                "venue": "American Journal of Sociology",
+                "doi": "10.1086/228943",
+                "url": "https://www.journals.uchicago.edu/doi/10.1086/228943",
+                "used_for": "说明关系、信任、规范和网络如何成为能力形成条件。",
+                "audit_status": "doi-verified"
+              },
+              {
+                "key": "holtlunstad2010social",
+                "entry_type": "article",
+                "authors": "Holt-Lunstad, J.; Smith, T. B.; Layton, J. B.",
+                "year": "2010",
+                "title": "Social Relationships and Mortality Risk: A Meta-analytic Review",
+                "venue": "PLoS Medicine",
+                "doi": "10.1371/journal.pmed.1000316",
+                "url": "https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1000316",
+                "used_for": "讨论社会关系与死亡风险的关联证据边界。",
+                "audit_status": "crossref-verified"
+              },
+              {
+                "key": "mincer1974humanCapital",
+                "entry_type": "book",
+                "authors": "Mincer, J.",
+                "year": "1974",
+                "title": "Schooling, Experience, and Earnings",
+                "venue": "National Bureau of Economic Research",
+                "doi": "",
+                "url": "https://www.nber.org/books-and-chapters/schooling-experience-and-earnings",
+                "used_for": "说明教育、经验和长期积累如何进入人力资本模型。",
+                "audit_status": "official-archive"
+              }
+            ]
+          },
+          {
+            "context_id": "CTX6",
+            "source_group": "TAM; UTAUT; Diffusion of Innovations",
+            "canonical_record": "MIS Quarterly 1989 TAM, MIS Quarterly 2003 UTAUT, and Rogers diffusion theory.",
+            "used_for": "解释 C -> A：技术采用受有用性、易用性、促进条件、资源和社会影响约束。",
+            "supports": "技术采用能力的分解：access、understanding、evaluation、trial、integration。",
+            "does_not_support": "不能证明采用后的技术一定有效，也不能覆盖所有高风险医学或神经技术。",
+            "citation_status": "KEEP WITH BOUNDARY",
+            "references": [
+              {
+                "key": "davis1989tam",
+                "entry_type": "article",
+                "authors": "Davis, F. D.",
+                "year": "1989",
+                "title": "Perceived Usefulness, Perceived Ease of Use, and User Acceptance of Information Technology",
+                "venue": "MIS Quarterly",
+                "doi": "10.2307/249008",
+                "url": "https://misq.umn.edu/misq/article/13/3/319/191/Perceived-Usefulness-Perceived-Ease-of-Use-and",
+                "used_for": "解释技术采用能力中的有用性和易用性。",
+                "audit_status": "crossref-verified"
+              },
+              {
+                "key": "rogers2003diffusion",
+                "entry_type": "book",
+                "authors": "Rogers, E. M.",
+                "year": "2003",
+                "title": "Diffusion of Innovations",
+                "venue": "Free Press",
+                "doi": "",
+                "url": "https://archive.org/details/diffusionofinnov0005roge",
+                "used_for": "说明技术成熟、扩散、采用者差异和社会系统时间窗口。",
+                "audit_status": "bibliographic-record-verified-isbn"
+              },
+              {
+                "key": "venkatesh2003utaut",
+                "entry_type": "article",
+                "authors": "Venkatesh, V.; Morris, M. G.; Davis, G. B.; Davis, F. D.",
+                "year": "2003",
+                "title": "User Acceptance of Information Technology: Toward a Unified View",
+                "venue": "MIS Quarterly",
+                "doi": "10.2307/30036540",
+                "url": "https://misq.umn.edu/misq/article/27/3/425/1340/User-Acceptance-of-Information-Technology-Toward-A",
+                "used_for": "解释技术采用中的促进条件、社会影响和努力预期。",
+                "audit_status": "crossref-verified"
+              }
+            ]
+          },
+          {
+            "context_id": "CTX7",
+            "source_group": "Generative AI at Work; Noy and Zhang; GitHub Copilot; Jagged Technological Frontier",
+            "canonical_record": "QJE 2025, Science 2023, arXiv:2302.06590, and Organization Science 2026.",
+            "used_for": "支持 A -> Q 在限定任务中的生产率、速度、质量或任务边界证据。",
+            "supports": "生成式 AI 在客服、写作、编程或知识工作实验中的任务内效果与异质性。",
+            "does_not_support": "不能泛化为通用智能增强、健康寿命延长或永生收益。",
+            "citation_status": "KEEP WITH BOUNDARY",
+            "references": [
+              {
+                "key": "brynjolfsson2025generative",
+                "entry_type": "article",
+                "authors": "Brynjolfsson, E.; Li, D.; Raymond, L.",
+                "year": "2025",
+                "title": "Generative AI at Work",
+                "venue": "The Quarterly Journal of Economics",
+                "doi": "10.1093/qje/qjae044",
+                "url": "https://academic.oup.com/qje/article/140/2/889/7990658",
+                "used_for": "支持限定客服任务中的 AI productivity 证据。",
+                "audit_status": "crossref-verified-corrected-doi"
+              },
+              {
+                "key": "dellacqua2026jagged",
+                "entry_type": "article",
+                "authors": "Dell'Acqua, F.; McFowland, E.; Mollick, E.; Lifshitz-Assaf, H.; Kellogg, K.; Rajendran, S.; Krayer, L.; Candelon, F.; Lakhani, K. R.",
+                "year": "2026",
+                "title": "Navigating the Jagged Technological Frontier: Field Experimental Evidence of the Effects of Artificial Intelligence on Knowledge Worker Productivity and Quality",
+                "venue": "Organization Science",
+                "doi": "10.1287/orsc.2025.21838",
+                "url": "https://pubsonline.informs.org/doi/10.1287/orsc.2025.21838",
+                "used_for": "支持 AI 收益与风险具有任务边界。",
+                "audit_status": "crossref-verified"
+              },
+              {
+                "key": "noy2023productivity",
+                "entry_type": "article",
+                "authors": "Noy, S.; Zhang, W.",
+                "year": "2023",
+                "title": "Experimental evidence on the productivity effects of generative artificial intelligence",
+                "venue": "Science",
+                "doi": "10.1126/science.adh2586",
+                "url": "https://www.science.org/doi/10.1126/science.adh2586",
+                "used_for": "支持写作任务内的生成式 AI 生产率证据。",
+                "audit_status": "crossref-verified"
+              },
+              {
+                "key": "peng2023copilot",
+                "entry_type": "arxiv",
+                "authors": "Peng, S.; Kalliamvakou, E.; Cihon, P.; Demirer, M.",
+                "year": "2023",
+                "title": "The Impact of AI on Developer Productivity: Evidence from GitHub Copilot",
+                "venue": "arXiv",
+                "doi": "",
+                "url": "https://arxiv.org/abs/2302.06590",
+                "used_for": "支持限定编程任务中的 AI pair programmer 生产率入口。",
+                "audit_status": "arxiv-api-verified"
+              }
+            ]
+          },
+          {
+            "context_id": "CTX12",
+            "source_group": "Capability Approach; WHO SDOH; WHO Primary Health Care",
+            "canonical_record": "Stanford Encyclopedia of Philosophy capability approach, WHO social determinants, and WHO primary health care resources.",
+            "used_for": "定义 O 可能性空间为真实可进入路径，并把资源、制度、医疗和社会条件纳入反哺路径。",
+            "supports": "真实选择权、健康决定因素、医疗可及和连续照护的规范/公共卫生框架。",
+            "does_not_support": "规范框架不提供寿命预测，也不能替代具体政策或医疗干预评估。",
+            "citation_status": "KEEP WITH BOUNDARY",
+            "references": [
+              {
+                "key": "robeyns2021capability",
+                "entry_type": "encyclopedia",
+                "authors": "Robeyns, I.; Byskov, M. F.",
+                "year": "2021",
+                "title": "The Capability Approach",
+                "venue": "Stanford Encyclopedia of Philosophy",
+                "doi": "",
+                "url": "https://plato.stanford.edu/entries/capability-approach/",
+                "used_for": "定义真实可行能力和可能性空间。",
+                "audit_status": "official-web-registered"
+              },
+              {
+                "key": "whoSdhPhc",
+                "entry_type": "official-web",
+                "authors": "World Health Organization",
+                "year": "n.d.",
+                "title": "Social determinants of health and primary health care",
+                "venue": "WHO health topics",
+                "doi": "",
+                "url": "https://www.who.int/health-topics/social-determinants-of-health",
+                "used_for": "把健康和持续性放回收入、教育、住房、工作、环境和医疗可及条件中。",
+                "audit_status": "official-urls-200"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "claim_id": "CL2",
+        "claim_text": "T/E/R/C/A/Q/O 是第一版最小变量接口，可把寿命、有效时间、轮次、积累、技术采用、行动质量和可能性空间放入同一模型。",
+        "claim_type": "Model interface",
+        "current_status": "Operational definition",
+        "upgrade_condition": "需要为每个变量补单位、代理指标、缺失处理和可重复测量方案。",
+        "paper_sections": [
+          "S5",
+          "S12",
+          "S13"
+        ],
+        "evidence_edges": [
+          "T -> E",
+          "E -> R",
+          "R -> C",
+          "C -> A",
+          "A -> Q",
+          "Q -> O",
+          "O -> T/E",
+          "A/Q -> risk"
+        ],
+        "alignment_verdict": "OPERATIONAL_INTERFACE",
+        "current_support": "七变量接口把不同文献谱系压缩为可建模字段；当前只证明字段可讨论，不证明字段充分。",
+        "falsifiers": [
+          "变量无法被稳定代理测量",
+          "变量之间高度重叠导致不可识别",
+          "关键主体状态被遗漏"
+        ],
+        "upgrade_gate": "为每个变量补齐单位、代理指标、缺失处理、时间窗、适用人群和可重复测量方案。",
+        "contexts": [
+          {
+            "context_id": "CTX1",
+            "source_group": "Kaplan-Meier 1958; Cox 1972",
+            "canonical_record": "JASA 1958 survival curve estimator; JRSS-B 1972 proportional hazards model.",
+            "used_for": "定义 T、生存函数 S(t)、删失数据和风险函数 lambda(t) 的统计语言。",
+            "supports": "事件时间、删失、生存曲线和协变量风险建模的基础方法。",
+            "does_not_support": "不证明任何具体延寿、健康、AI 或资源干预有效。",
+            "citation_status": "KEEP",
+            "references": [
+              {
+                "key": "cox1972regression",
+                "entry_type": "article",
+                "authors": "Cox, D. R.",
+                "year": "1972",
+                "title": "Regression Models and Life-Tables",
+                "venue": "Journal of the Royal Statistical Society Series B: Statistical Methodology",
+                "doi": "10.1111/j.2517-6161.1972.tb00899.x",
+                "url": "https://rss.onlinelibrary.wiley.com/doi/10.1111/j.2517-6161.1972.tb00899.x",
+                "used_for": "定义协变量、风险函数和 lambda(t) 的统计语言。",
+                "audit_status": "crossref-verified"
+              },
+              {
+                "key": "kaplan1958incomplete",
+                "entry_type": "article",
+                "authors": "Kaplan, E. L.; Meier, P.",
+                "year": "1958",
+                "title": "Nonparametric Estimation from Incomplete Observations",
+                "venue": "Journal of the American Statistical Association",
+                "doi": "10.1080/01621459.1958.10501452",
+                "url": "https://www.tandfonline.com/doi/abs/10.1080/01621459.1958.10501452",
+                "used_for": "定义生存曲线、删失数据和 T 的统计语言。",
+                "audit_status": "crossref-verified"
+              }
+            ]
+          },
+          {
+            "context_id": "CTX2",
+            "source_group": "Grossman Health Capital; WHO HALE; NICE QALY",
+            "canonical_record": "Health capital theory, WHO healthy life expectancy metadata, and NICE economic evaluation manual.",
+            "used_for": "把日历寿命转译为健康质量、有效时间和质量调整时间。",
+            "supports": "T -> E 的测量语言和健康质量调整视角。",
+            "does_not_support": "不能完整定义主体连续性，也不能替代个体医学判断。",
+            "citation_status": "KEEP WITH BOUNDARY",
+            "references": [
+              {
+                "key": "grossman1972healthcapital",
+                "entry_type": "article",
+                "authors": "Grossman, M.",
+                "year": "1972",
+                "title": "On the Concept of Health Capital and the Demand for Health",
+                "venue": "Journal of Political Economy",
+                "doi": "10.1086/259880",
+                "url": "https://www.journals.uchicago.edu/doi/10.1086/259880",
+                "used_for": "把健康资本、有效时间和日历时间区分开。",
+                "audit_status": "crossref-verified"
+              },
+              {
+                "key": "niceEconomicEvaluation",
+                "entry_type": "official-web",
+                "authors": "National Institute for Health and Care Excellence",
+                "year": "n.d.",
+                "title": "Economic evaluation",
+                "venue": "NICE health technology evaluations manual",
+                "doi": "",
+                "url": "https://www.nice.org.uk/process/pmg36/chapter/economic-evaluation-2",
+                "used_for": "提供 QALY 与健康经济评价的政策语言。",
+                "audit_status": "official-url-200"
+              },
+              {
+                "key": "whohale7752",
+                "entry_type": "official-web",
+                "authors": "World Health Organization",
+                "year": "n.d.",
+                "title": "Healthy life expectancy (HALE) metadata",
+                "venue": "Global Health Observatory Indicator Metadata Registry",
+                "doi": "",
+                "url": "https://www.who.int/data/gho/indicator-metadata-registry/imr-details/7752",
+                "used_for": "提供健康寿命指标的官方定义入口。",
+                "audit_status": "official-url-200"
+              }
+            ]
+          },
+          {
+            "context_id": "CTX4",
+            "source_group": "Deliberate Practice; Law of Practice; Self-Regulated Learning; Feedback Intervention Theory",
+            "canonical_record": "Psychological Review 1993, law-of-practice learning curve, Zimmerman self-regulated learning, and Psychological Bulletin 1996 feedback intervention meta-analysis.",
+            "used_for": "解释 E -> R -> C：有效时间如何在有目标、有反馈和可修正的任务中沉淀为能力。",
+            "supports": "学习轮次、反馈质量、练习曲线和能力积累的条件。",
+            "does_not_support": "时间本身不会自动产生能力；错误反馈和低质量重复可能反向损害表现。",
+            "citation_status": "KEEP WITH BOUNDARY",
+            "references": [
+              {
+                "key": "ericsson1993deliberatePractice",
+                "entry_type": "article",
+                "authors": "Ericsson, K. A.; Krampe, R. T.; Tesch-Romer, C.",
+                "year": "1993",
+                "title": "The role of deliberate practice in the acquisition of expert performance",
+                "venue": "Psychological Review",
+                "doi": "10.1037/0033-295X.100.3.363",
+                "url": "https://eric.ed.gov/?id=EJ471947",
+                "used_for": "解释有效时间进入有反馈练习轮次的条件。",
+                "audit_status": "crossref-verified"
+              },
+              {
+                "key": "kluger1996feedback",
+                "entry_type": "article",
+                "authors": "Kluger, A. N.; DeNisi, A.",
+                "year": "1996",
+                "title": "The effects of feedback interventions on performance: A historical review, a meta-analysis, and a preliminary feedback intervention theory",
+                "venue": "Psychological Bulletin",
+                "doi": "10.1037/0033-2909.119.2.254",
+                "url": "https://doi.org/10.1037/0033-2909.119.2.254",
+                "used_for": "说明反馈可能提升表现，也可能因设计错误降低表现。",
+                "audit_status": "crossref-verified"
+              },
+              {
+                "key": "newell1981lawPractice",
+                "entry_type": "inproceedings",
+                "authors": "Newell, A.; Rosenbloom, P. S.",
+                "year": "2013",
+                "title": "Mechanisms of Skill Acquisition and the Law of Practice: Allen Newell and Paul S. Rosenbloom",
+                "venue": "Cognitive Skills and Their Acquisition",
+                "doi": "10.4324/9780203728178-6",
+                "url": "https://www.taylorfrancis.com/chapters/edit/10.4324/9780203728178-6/mechanisms-skill-acquisition-law-practice-allen-newell-paul-rosenbloom",
+                "used_for": "为重复轮次、练习曲线和能力增长提供认知模型入口。",
+                "audit_status": "crossref-verified-corrected-doi"
+              },
+              {
+                "key": "zimmerman2002selfRegulated",
+                "entry_type": "article",
+                "authors": "Zimmerman, B. J.",
+                "year": "2002",
+                "title": "Becoming a Self-Regulated Learner: An Overview",
+                "venue": "Theory Into Practice",
+                "doi": "10.1207/S15430421TIP4102_2",
+                "url": "https://www.tandfonline.com/doi/abs/10.1207/s15430421tip4102_2",
+                "used_for": "说明学习轮次需要目标设定、自我监控、反馈和策略调整。",
+                "audit_status": "doi-verified"
+              }
+            ]
+          },
+          {
+            "context_id": "CTX5",
+            "source_group": "Human Capital; Social Capital; Social Relationships Mortality",
+            "canonical_record": "Human/social capital theory and PLoS Medicine 2010 social relationships mortality meta-analysis.",
+            "used_for": "说明经验、资源、信誉和协作网络如何进入 C 与 O，并可能反哺 T/E。",
+            "supports": "积累资本、社会支持和死亡风险关联的讨论。",
+            "does_not_support": "不能把社会关系关联直接升级成具体干预的因果延寿结论。",
+            "citation_status": "KEEP WITH BOUNDARY",
+            "references": [
+              {
+                "key": "coleman1988socialCapital",
+                "entry_type": "article",
+                "authors": "Coleman, J. S.",
+                "year": "1988",
+                "title": "Social Capital in the Creation of Human Capital",
+                "venue": "American Journal of Sociology",
+                "doi": "10.1086/228943",
+                "url": "https://www.journals.uchicago.edu/doi/10.1086/228943",
+                "used_for": "说明关系、信任、规范和网络如何成为能力形成条件。",
+                "audit_status": "doi-verified"
+              },
+              {
+                "key": "holtlunstad2010social",
+                "entry_type": "article",
+                "authors": "Holt-Lunstad, J.; Smith, T. B.; Layton, J. B.",
+                "year": "2010",
+                "title": "Social Relationships and Mortality Risk: A Meta-analytic Review",
+                "venue": "PLoS Medicine",
+                "doi": "10.1371/journal.pmed.1000316",
+                "url": "https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1000316",
+                "used_for": "讨论社会关系与死亡风险的关联证据边界。",
+                "audit_status": "crossref-verified"
+              },
+              {
+                "key": "mincer1974humanCapital",
+                "entry_type": "book",
+                "authors": "Mincer, J.",
+                "year": "1974",
+                "title": "Schooling, Experience, and Earnings",
+                "venue": "National Bureau of Economic Research",
+                "doi": "",
+                "url": "https://www.nber.org/books-and-chapters/schooling-experience-and-earnings",
+                "used_for": "说明教育、经验和长期积累如何进入人力资本模型。",
+                "audit_status": "official-archive"
+              }
+            ]
+          },
+          {
+            "context_id": "CTX6",
+            "source_group": "TAM; UTAUT; Diffusion of Innovations",
+            "canonical_record": "MIS Quarterly 1989 TAM, MIS Quarterly 2003 UTAUT, and Rogers diffusion theory.",
+            "used_for": "解释 C -> A：技术采用受有用性、易用性、促进条件、资源和社会影响约束。",
+            "supports": "技术采用能力的分解：access、understanding、evaluation、trial、integration。",
+            "does_not_support": "不能证明采用后的技术一定有效，也不能覆盖所有高风险医学或神经技术。",
+            "citation_status": "KEEP WITH BOUNDARY",
+            "references": [
+              {
+                "key": "davis1989tam",
+                "entry_type": "article",
+                "authors": "Davis, F. D.",
+                "year": "1989",
+                "title": "Perceived Usefulness, Perceived Ease of Use, and User Acceptance of Information Technology",
+                "venue": "MIS Quarterly",
+                "doi": "10.2307/249008",
+                "url": "https://misq.umn.edu/misq/article/13/3/319/191/Perceived-Usefulness-Perceived-Ease-of-Use-and",
+                "used_for": "解释技术采用能力中的有用性和易用性。",
+                "audit_status": "crossref-verified"
+              },
+              {
+                "key": "rogers2003diffusion",
+                "entry_type": "book",
+                "authors": "Rogers, E. M.",
+                "year": "2003",
+                "title": "Diffusion of Innovations",
+                "venue": "Free Press",
+                "doi": "",
+                "url": "https://archive.org/details/diffusionofinnov0005roge",
+                "used_for": "说明技术成熟、扩散、采用者差异和社会系统时间窗口。",
+                "audit_status": "bibliographic-record-verified-isbn"
+              },
+              {
+                "key": "venkatesh2003utaut",
+                "entry_type": "article",
+                "authors": "Venkatesh, V.; Morris, M. G.; Davis, G. B.; Davis, F. D.",
+                "year": "2003",
+                "title": "User Acceptance of Information Technology: Toward a Unified View",
+                "venue": "MIS Quarterly",
+                "doi": "10.2307/30036540",
+                "url": "https://misq.umn.edu/misq/article/27/3/425/1340/User-Acceptance-of-Information-Technology-Toward-A",
+                "used_for": "解释技术采用中的促进条件、社会影响和努力预期。",
+                "audit_status": "crossref-verified"
+              }
+            ]
+          },
+          {
+            "context_id": "CTX7",
+            "source_group": "Generative AI at Work; Noy and Zhang; GitHub Copilot; Jagged Technological Frontier",
+            "canonical_record": "QJE 2025, Science 2023, arXiv:2302.06590, and Organization Science 2026.",
+            "used_for": "支持 A -> Q 在限定任务中的生产率、速度、质量或任务边界证据。",
+            "supports": "生成式 AI 在客服、写作、编程或知识工作实验中的任务内效果与异质性。",
+            "does_not_support": "不能泛化为通用智能增强、健康寿命延长或永生收益。",
+            "citation_status": "KEEP WITH BOUNDARY",
+            "references": [
+              {
+                "key": "brynjolfsson2025generative",
+                "entry_type": "article",
+                "authors": "Brynjolfsson, E.; Li, D.; Raymond, L.",
+                "year": "2025",
+                "title": "Generative AI at Work",
+                "venue": "The Quarterly Journal of Economics",
+                "doi": "10.1093/qje/qjae044",
+                "url": "https://academic.oup.com/qje/article/140/2/889/7990658",
+                "used_for": "支持限定客服任务中的 AI productivity 证据。",
+                "audit_status": "crossref-verified-corrected-doi"
+              },
+              {
+                "key": "dellacqua2026jagged",
+                "entry_type": "article",
+                "authors": "Dell'Acqua, F.; McFowland, E.; Mollick, E.; Lifshitz-Assaf, H.; Kellogg, K.; Rajendran, S.; Krayer, L.; Candelon, F.; Lakhani, K. R.",
+                "year": "2026",
+                "title": "Navigating the Jagged Technological Frontier: Field Experimental Evidence of the Effects of Artificial Intelligence on Knowledge Worker Productivity and Quality",
+                "venue": "Organization Science",
+                "doi": "10.1287/orsc.2025.21838",
+                "url": "https://pubsonline.informs.org/doi/10.1287/orsc.2025.21838",
+                "used_for": "支持 AI 收益与风险具有任务边界。",
+                "audit_status": "crossref-verified"
+              },
+              {
+                "key": "noy2023productivity",
+                "entry_type": "article",
+                "authors": "Noy, S.; Zhang, W.",
+                "year": "2023",
+                "title": "Experimental evidence on the productivity effects of generative artificial intelligence",
+                "venue": "Science",
+                "doi": "10.1126/science.adh2586",
+                "url": "https://www.science.org/doi/10.1126/science.adh2586",
+                "used_for": "支持写作任务内的生成式 AI 生产率证据。",
+                "audit_status": "crossref-verified"
+              },
+              {
+                "key": "peng2023copilot",
+                "entry_type": "arxiv",
+                "authors": "Peng, S.; Kalliamvakou, E.; Cihon, P.; Demirer, M.",
+                "year": "2023",
+                "title": "The Impact of AI on Developer Productivity: Evidence from GitHub Copilot",
+                "venue": "arXiv",
+                "doi": "",
+                "url": "https://arxiv.org/abs/2302.06590",
+                "used_for": "支持限定编程任务中的 AI pair programmer 生产率入口。",
+                "audit_status": "arxiv-api-verified"
+              }
+            ]
+          },
+          {
+            "context_id": "CTX8",
+            "source_group": "NIST AI RMF; Guidelines for Human-AI Interaction; NASA-TLX; Automation taxonomy",
+            "canonical_record": "NIST AI RMF 1.0, CHI 2019 HAI guidelines, NASA-TLX, and IEEE TSMC 2000 automation taxonomy.",
+            "used_for": "给 A/Q -> risk、QA 成本、任务负荷、自动化等级和人机控制权提供治理语言。",
+            "supports": "风险识别、测量、纠错、回滚和人机协作设计边界。",
+            "does_not_support": "治理框架和交互指南不提供收益估计，也不证明 AI 能延寿。",
+            "citation_status": "KEEP",
+            "references": [
+              {
+                "key": "amershi2019hai",
+                "entry_type": "inproceedings",
+                "authors": "Amershi, S.; Weld, D.; Vorvoreanu, M.; Fourney, A.; Nushi, B.; Collisson, P.; Suh, J.; Iqbal, S.; Bennett, P. N.; Inkpen, K.; Teevan, J.; Kikin-Gil, R.; Horvitz, E.",
+                "year": "2019",
+                "title": "Guidelines for Human-AI Interaction",
+                "venue": "Proceedings of the 2019 CHI Conference on Human Factors in Computing Systems",
+                "doi": "10.1145/3290605.3300233",
+                "url": "https://dl.acm.org/doi/10.1145/3290605.3300233",
+                "used_for": "提供人机协作设计、纠错和控制权边界。",
+                "audit_status": "crossref-verified"
+              },
+              {
+                "key": "burwell2017bciEthics",
+                "entry_type": "article",
+                "authors": "Burwell, S.; Sample, M.; Racine, E.",
+                "year": "2017",
+                "title": "Ethical aspects of brain computer interfaces: a scoping review",
+                "venue": "BMC Medical Ethics",
+                "doi": "10.1186/s12910-017-0220-y",
+                "url": "https://bmcmedethics.biomedcentral.com/articles/10.1186/s12910-017-0220-y",
+                "used_for": "为脑机接口、神经技术、同意、身份和主体边界提供风险治理入口。",
+                "audit_status": "doi-verified"
+              },
+              {
+                "key": "dellacqua2026jagged",
+                "entry_type": "article",
+                "authors": "Dell'Acqua, F.; McFowland, E.; Mollick, E.; Lifshitz-Assaf, H.; Kellogg, K.; Rajendran, S.; Krayer, L.; Candelon, F.; Lakhani, K. R.",
+                "year": "2026",
+                "title": "Navigating the Jagged Technological Frontier: Field Experimental Evidence of the Effects of Artificial Intelligence on Knowledge Worker Productivity and Quality",
+                "venue": "Organization Science",
+                "doi": "10.1287/orsc.2025.21838",
+                "url": "https://pubsonline.informs.org/doi/10.1287/orsc.2025.21838",
+                "used_for": "支持 AI 收益与风险具有任务边界。",
+                "audit_status": "crossref-verified"
+              },
+              {
+                "key": "nasaTlx",
+                "entry_type": "official-web",
+                "authors": "NASA",
+                "year": "n.d.",
+                "title": "NASA Task Load Index",
+                "venue": "NASA Human Systems Integration Division",
+                "doi": "",
+                "url": "https://www.nasa.gov/human-systems-integration-division/nasa-task-load-index-tlx/",
+                "used_for": "提供任务负荷、时间压力、努力和挫败感测量入口。",
+                "audit_status": "official-web-registered"
+              },
+              {
+                "key": "nist2023airmf",
+                "entry_type": "standard",
+                "authors": "National Institute of Standards and Technology",
+                "year": "2023",
+                "title": "Artificial Intelligence Risk Management Framework (AI RMF 1.0)",
+                "venue": "NIST",
+                "doi": "",
+                "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+                "used_for": "提供 AI 风险识别、测量、治理和回滚语言。",
+                "audit_status": "official-url-200"
+              },
+              {
+                "key": "parasuraman2000automation",
+                "entry_type": "article",
+                "authors": "Parasuraman, R.; Sheridan, T. B.; Wickens, C. D.",
+                "year": "2000",
+                "title": "A model for types and levels of human interaction with automation",
+                "venue": "IEEE Transactions on Systems, Man, and Cybernetics - Part A: Systems and Humans",
+                "doi": "10.1109/3468.844354",
+                "url": "https://ieeexplore.ieee.org/document/844354",
+                "used_for": "拆分自动化类型、等级和人机控制权。",
+                "audit_status": "crossref-verified"
+              }
+            ]
+          },
+          {
+            "context_id": "CTX12",
+            "source_group": "Capability Approach; WHO SDOH; WHO Primary Health Care",
+            "canonical_record": "Stanford Encyclopedia of Philosophy capability approach, WHO social determinants, and WHO primary health care resources.",
+            "used_for": "定义 O 可能性空间为真实可进入路径，并把资源、制度、医疗和社会条件纳入反哺路径。",
+            "supports": "真实选择权、健康决定因素、医疗可及和连续照护的规范/公共卫生框架。",
+            "does_not_support": "规范框架不提供寿命预测，也不能替代具体政策或医疗干预评估。",
+            "citation_status": "KEEP WITH BOUNDARY",
+            "references": [
+              {
+                "key": "robeyns2021capability",
+                "entry_type": "encyclopedia",
+                "authors": "Robeyns, I.; Byskov, M. F.",
+                "year": "2021",
+                "title": "The Capability Approach",
+                "venue": "Stanford Encyclopedia of Philosophy",
+                "doi": "",
+                "url": "https://plato.stanford.edu/entries/capability-approach/",
+                "used_for": "定义真实可行能力和可能性空间。",
+                "audit_status": "official-web-registered"
+              },
+              {
+                "key": "whoSdhPhc",
+                "entry_type": "official-web",
+                "authors": "World Health Organization",
+                "year": "n.d.",
+                "title": "Social determinants of health and primary health care",
+                "venue": "WHO health topics",
+                "doi": "",
+                "url": "https://www.who.int/health-topics/social-determinants-of-health",
+                "used_for": "把健康和持续性放回收入、教育、住房、工作、环境和医疗可及条件中。",
+                "audit_status": "official-urls-200"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "claim_id": "CL3",
+        "claim_text": "技术或干预应被表示为改变状态转移 P(X_{t+1}|X_t,U_t) 或风险函数 lambda(t|X_t,U_t) 的算子。",
+        "claim_type": "Method claim",
+        "current_status": "Methodologically supported",
+        "upgrade_condition": "每个技术族必须写出 population、comparator、time zero、outcome 和 estimand。",
+        "paper_sections": [
+          "S5",
+          "S11",
+          "S13"
+        ],
+        "evidence_edges": [
+          "U_t -> causal claim",
+          "T -> E"
+        ],
+        "alignment_verdict": "METHOD_SUPPORTED",
+        "current_support": "生存分析、风险模型和 target-trial style 因果协议支持把技术写成状态转移或风险函数上的算子。",
+        "falsifiers": [
+          "没有 comparator",
+          "time zero 错误",
+          "结局定义偷换",
+          "不可测混杂压倒识别假设"
+        ],
+        "upgrade_gate": "每个技术族必须给出 population、intervention、comparator、time zero、outcome、estimand 和识别假设。",
+        "contexts": [
+          {
+            "context_id": "CTX1",
+            "source_group": "Kaplan-Meier 1958; Cox 1972",
+            "canonical_record": "JASA 1958 survival curve estimator; JRSS-B 1972 proportional hazards model.",
+            "used_for": "定义 T、生存函数 S(t)、删失数据和风险函数 lambda(t) 的统计语言。",
+            "supports": "事件时间、删失、生存曲线和协变量风险建模的基础方法。",
+            "does_not_support": "不证明任何具体延寿、健康、AI 或资源干预有效。",
+            "citation_status": "KEEP",
+            "references": [
+              {
+                "key": "cox1972regression",
+                "entry_type": "article",
+                "authors": "Cox, D. R.",
+                "year": "1972",
+                "title": "Regression Models and Life-Tables",
+                "venue": "Journal of the Royal Statistical Society Series B: Statistical Methodology",
+                "doi": "10.1111/j.2517-6161.1972.tb00899.x",
+                "url": "https://rss.onlinelibrary.wiley.com/doi/10.1111/j.2517-6161.1972.tb00899.x",
+                "used_for": "定义协变量、风险函数和 lambda(t) 的统计语言。",
+                "audit_status": "crossref-verified"
+              },
+              {
+                "key": "kaplan1958incomplete",
+                "entry_type": "article",
+                "authors": "Kaplan, E. L.; Meier, P.",
+                "year": "1958",
+                "title": "Nonparametric Estimation from Incomplete Observations",
+                "venue": "Journal of the American Statistical Association",
+                "doi": "10.1080/01621459.1958.10501452",
+                "url": "https://www.tandfonline.com/doi/abs/10.1080/01621459.1958.10501452",
+                "used_for": "定义生存曲线、删失数据和 T 的统计语言。",
+                "audit_status": "crossref-verified"
+              }
+            ]
+          },
+          {
+            "context_id": "CTX9",
+            "source_group": "Target Trial Emulation; ClinicalTrials.gov; WHO ICTRP; TRIPOD+AI; PROBAST+AI; CONSORT-AI; SPIRIT-AI",
+            "canonical_record": "JAMA 2022 target trial emulation, NLM and WHO trial registry infrastructure, TRIPOD+AI reporting guidance, PROBAST+AI risk-of-bias guidance, and CONSORT-AI / SPIRIT-AI AI clinical trial reporting guidance.",
+            "used_for": "定义 U_t -> causal claim 的因果门禁和预测模型报告门禁。",
+            "supports": "population、intervention、comparator、time zero、outcome、estimand、试验登记、AI 干预报告、验证、校准和偏倚审查。",
+            "does_not_support": "不能消除所有不可测混杂，也不证明任何注册试验或预测模型有效。",
+            "citation_status": "KEEP",
+            "references": [
+              {
+                "key": "clinicaltrialsGov",
+                "entry_type": "registry",
+                "authors": "U.S. National Library of Medicine",
+                "year": "n.d.",
+                "title": "ClinicalTrials.gov",
+                "venue": "ClinicalTrials.gov",
+                "doi": "",
+                "url": "https://clinicaltrials.gov/",
+                "used_for": "提供临床试验登记、人群、比较组、结局和结果回填入口。",
+                "audit_status": "official-url-200"
+              },
+              {
+                "key": "clinicaltrialsGovApi",
+                "entry_type": "official-web",
+                "authors": "U.S. National Library of Medicine",
+                "year": "n.d.",
+                "title": "ClinicalTrials.gov Data API",
+                "venue": "ClinicalTrials.gov",
+                "doi": "",
+                "url": "https://clinicaltrials.gov/data-api/about-api",
+                "used_for": "提供结构化试验注册与结果数据的机器读取入口，用于后续试验证据采集和协议字段回填。",
+                "audit_status": "official-url-200"
+              },
+              {
+                "key": "consortAi2020",
+                "entry_type": "article",
+                "authors": "Liu, X.; Cruz Rivera, S.; Moher, D.; Calvert, M. J.; Denniston, A. K.; et al.",
+                "year": "2020",
+                "title": "Reporting guidelines for clinical trial reports for interventions involving artificial intelligence: the CONSORT-AI extension",
+                "venue": "Nature Medicine",
+                "doi": "10.1038/s41591-020-1034-x",
+                "url": "https://www.nature.com/articles/s41591-020-1034-x",
+                "used_for": "约束 AI 干预临床试验结果报告中的干预说明、输入输出、人机交互和错误案例分析。",
+                "audit_status": "doi-verified"
+              },
+              {
+                "key": "gradeHandbook",
+                "entry_type": "guideline-web",
+                "authors": "GRADE Working Group",
+                "year": "n.d.",
+                "title": "GRADE Handbook",
+                "venue": "GRADE Working Group",
+                "doi": "",
+                "url": "https://gdt.gradepro.org/app/handbook/handbook.html",
+                "used_for": "提供证据确定性、收益风险权衡和从证据到建议的政策语言。",
+                "audit_status": "official-web"
+              },
+              {
+                "key": "hernan2022targetTrial",
+                "entry_type": "article",
+                "authors": "Hernan, M. A.; Wang, W.; Leaf, D. E.",
+                "year": "2022",
+                "title": "Target Trial Emulation",
+                "venue": "JAMA",
+                "doi": "10.1001/jama.2022.21383",
+                "url": "https://pubmed.ncbi.nlm.nih.gov/36508210/",
+                "used_for": "定义因果协议门禁和观察数据因果推断边界。",
+                "audit_status": "crossref-verified"
+              },
+              {
+                "key": "probastAi2025",
+                "entry_type": "article",
+                "authors": "Moons, K. G. M.; et al.",
+                "year": "2025",
+                "title": "PROBAST+AI: an updated quality, risk of bias, and applicability assessment tool for prediction models using regression or artificial intelligence methods",
+                "venue": "BMJ",
+                "doi": "10.1136/bmj-2024-082505",
+                "url": "https://www.bmj.com/content/388/bmj-2024-082505",
+                "used_for": "提供 AI 预测模型研究的偏倚风险、适用性、可信度、公平性和质量审查门禁。",
+                "audit_status": "doi-and-official-site-verified"
+              },
+              {
+                "key": "robins2000marginalStructural",
+                "entry_type": "article",
+                "authors": "Robins, J. M.; Hernan, M. A.; Brumback, B.",
+                "year": "2000",
+                "title": "Marginal Structural Models and Causal Inference in Epidemiology",
+                "venue": "Epidemiology",
+                "doi": "10.1097/00001648-200009000-00011",
+                "url": "https://pubmed.ncbi.nlm.nih.gov/10955408/",
+                "used_for": "说明时间变化混杂下的因果估计入口和边界。",
+                "audit_status": "pubmed-verified"
+              },
+              {
+                "key": "spiritAi2020",
+                "entry_type": "article",
+                "authors": "Cruz Rivera, S.; Liu, X.; Chan, A.-W.; Denniston, A. K.; Calvert, M. J.; et al.",
+                "year": "2020",
+                "title": "Guidelines for clinical trial protocols for interventions involving artificial intelligence: the SPIRIT-AI extension",
+                "venue": "Nature Medicine",
+                "doi": "10.1038/s41591-020-1037-7",
+                "url": "https://www.nature.com/articles/s41591-020-1037-7",
+                "used_for": "约束 AI 干预临床试验方案中的协议透明度、输入输出、人机交互和错误分析计划。",
+                "audit_status": "doi-verified"
+              },
+              {
+                "key": "tripodAi2024",
+                "entry_type": "article",
+                "authors": "Collins, G. S.; Moons, K. G. M.; et al.",
+                "year": "2024",
+                "title": "TRIPOD+AI statement: updated guidance for reporting clinical prediction models that use regression or machine learning methods",
+                "venue": "BMJ",
+                "doi": "10.1136/bmj-2023-078378",
+                "url": "https://www.bmj.com/content/385/bmj-2023-078378",
+                "used_for": "提供 AI/机器学习临床预测模型的报告清单、外部验证、校准和透明度门禁。",
+                "audit_status": "doi-and-official-site-verified"
+              },
+              {
+                "key": "tripodProbast",
+                "entry_type": "guideline-web",
+                "authors": "TRIPOD Statement; PROBAST",
+                "year": "n.d.",
+                "title": "TRIPOD Statement and PROBAST",
+                "venue": "Prediction model reporting and risk-of-bias guidance",
+                "doi": "",
+                "url": "https://www.tripod-statement.org/",
+                "used_for": "约束预测模型报告质量、偏倚风险、校准和外部验证。",
+                "audit_status": "official-urls-200"
+              },
+              {
+                "key": "whoIctrp",
+                "entry_type": "registry",
+                "authors": "World Health Organization",
+                "year": "n.d.",
+                "title": "International Clinical Trials Registry Platform (ICTRP)",
+                "venue": "World Health Organization",
+                "doi": "",
+                "url": "https://www.who.int/tools/clinical-trials-registry-platform",
+                "used_for": "提供国际临床试验注册网络、WHO 数据集和试验透明度原则的上位入口。",
+                "audit_status": "official-url-200"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "claim_id": "CL4",
+        "claim_text": "AI 工具可在限定任务内提高单位时间行动质量，但收益具有任务边界和人群异质性。",
+        "claim_type": "Task-limited empirical claim",
+        "current_status": "Supported only for bounded tasks",
+        "upgrade_condition": "需要按任务族建立 AI frontier map，并同步统计 QA 成本、幻觉、返工和依赖风险。",
+        "paper_sections": [
+          "S8",
+          "S10",
+          "S12"
+        ],
+        "evidence_edges": [
+          "A -> Q",
+          "A/Q -> risk"
+        ],
+        "alignment_verdict": "BOUNDED_EMPIRICAL",
+        "current_support": "AI 工具在客服、写作、编程和部分知识任务中有任务内收益证据；该证据只支持限定任务边界。",
+        "falsifiers": [
+          "任务进入 jagged frontier 失败区",
+          "QA 成本抵消速度收益",
+          "幻觉或自动化偏差提高返工",
+          "高技能主体收益不稳定"
+        ],
+        "upgrade_gate": "按任务族建立 AI frontier map，并同步记录速度、质量、错误、QA 成本、依赖和异质性。",
+        "contexts": [
+          {
+            "context_id": "CTX7",
+            "source_group": "Generative AI at Work; Noy and Zhang; GitHub Copilot; Jagged Technological Frontier",
+            "canonical_record": "QJE 2025, Science 2023, arXiv:2302.06590, and Organization Science 2026.",
+            "used_for": "支持 A -> Q 在限定任务中的生产率、速度、质量或任务边界证据。",
+            "supports": "生成式 AI 在客服、写作、编程或知识工作实验中的任务内效果与异质性。",
+            "does_not_support": "不能泛化为通用智能增强、健康寿命延长或永生收益。",
+            "citation_status": "KEEP WITH BOUNDARY",
+            "references": [
+              {
+                "key": "brynjolfsson2025generative",
+                "entry_type": "article",
+                "authors": "Brynjolfsson, E.; Li, D.; Raymond, L.",
+                "year": "2025",
+                "title": "Generative AI at Work",
+                "venue": "The Quarterly Journal of Economics",
+                "doi": "10.1093/qje/qjae044",
+                "url": "https://academic.oup.com/qje/article/140/2/889/7990658",
+                "used_for": "支持限定客服任务中的 AI productivity 证据。",
+                "audit_status": "crossref-verified-corrected-doi"
+              },
+              {
+                "key": "dellacqua2026jagged",
+                "entry_type": "article",
+                "authors": "Dell'Acqua, F.; McFowland, E.; Mollick, E.; Lifshitz-Assaf, H.; Kellogg, K.; Rajendran, S.; Krayer, L.; Candelon, F.; Lakhani, K. R.",
+                "year": "2026",
+                "title": "Navigating the Jagged Technological Frontier: Field Experimental Evidence of the Effects of Artificial Intelligence on Knowledge Worker Productivity and Quality",
+                "venue": "Organization Science",
+                "doi": "10.1287/orsc.2025.21838",
+                "url": "https://pubsonline.informs.org/doi/10.1287/orsc.2025.21838",
+                "used_for": "支持 AI 收益与风险具有任务边界。",
+                "audit_status": "crossref-verified"
+              },
+              {
+                "key": "noy2023productivity",
+                "entry_type": "article",
+                "authors": "Noy, S.; Zhang, W.",
+                "year": "2023",
+                "title": "Experimental evidence on the productivity effects of generative artificial intelligence",
+                "venue": "Science",
+                "doi": "10.1126/science.adh2586",
+                "url": "https://www.science.org/doi/10.1126/science.adh2586",
+                "used_for": "支持写作任务内的生成式 AI 生产率证据。",
+                "audit_status": "crossref-verified"
+              },
+              {
+                "key": "peng2023copilot",
+                "entry_type": "arxiv",
+                "authors": "Peng, S.; Kalliamvakou, E.; Cihon, P.; Demirer, M.",
+                "year": "2023",
+                "title": "The Impact of AI on Developer Productivity: Evidence from GitHub Copilot",
+                "venue": "arXiv",
+                "doi": "",
+                "url": "https://arxiv.org/abs/2302.06590",
+                "used_for": "支持限定编程任务中的 AI pair programmer 生产率入口。",
+                "audit_status": "arxiv-api-verified"
+              }
+            ]
+          },
+          {
+            "context_id": "CTX8",
+            "source_group": "NIST AI RMF; Guidelines for Human-AI Interaction; NASA-TLX; Automation taxonomy",
+            "canonical_record": "NIST AI RMF 1.0, CHI 2019 HAI guidelines, NASA-TLX, and IEEE TSMC 2000 automation taxonomy.",
+            "used_for": "给 A/Q -> risk、QA 成本、任务负荷、自动化等级和人机控制权提供治理语言。",
+            "supports": "风险识别、测量、纠错、回滚和人机协作设计边界。",
+            "does_not_support": "治理框架和交互指南不提供收益估计，也不证明 AI 能延寿。",
+            "citation_status": "KEEP",
+            "references": [
+              {
+                "key": "amershi2019hai",
+                "entry_type": "inproceedings",
+                "authors": "Amershi, S.; Weld, D.; Vorvoreanu, M.; Fourney, A.; Nushi, B.; Collisson, P.; Suh, J.; Iqbal, S.; Bennett, P. N.; Inkpen, K.; Teevan, J.; Kikin-Gil, R.; Horvitz, E.",
+                "year": "2019",
+                "title": "Guidelines for Human-AI Interaction",
+                "venue": "Proceedings of the 2019 CHI Conference on Human Factors in Computing Systems",
+                "doi": "10.1145/3290605.3300233",
+                "url": "https://dl.acm.org/doi/10.1145/3290605.3300233",
+                "used_for": "提供人机协作设计、纠错和控制权边界。",
+                "audit_status": "crossref-verified"
+              },
+              {
+                "key": "burwell2017bciEthics",
+                "entry_type": "article",
+                "authors": "Burwell, S.; Sample, M.; Racine, E.",
+                "year": "2017",
+                "title": "Ethical aspects of brain computer interfaces: a scoping review",
+                "venue": "BMC Medical Ethics",
+                "doi": "10.1186/s12910-017-0220-y",
+                "url": "https://bmcmedethics.biomedcentral.com/articles/10.1186/s12910-017-0220-y",
+                "used_for": "为脑机接口、神经技术、同意、身份和主体边界提供风险治理入口。",
+                "audit_status": "doi-verified"
+              },
+              {
+                "key": "dellacqua2026jagged",
+                "entry_type": "article",
+                "authors": "Dell'Acqua, F.; McFowland, E.; Mollick, E.; Lifshitz-Assaf, H.; Kellogg, K.; Rajendran, S.; Krayer, L.; Candelon, F.; Lakhani, K. R.",
+                "year": "2026",
+                "title": "Navigating the Jagged Technological Frontier: Field Experimental Evidence of the Effects of Artificial Intelligence on Knowledge Worker Productivity and Quality",
+                "venue": "Organization Science",
+                "doi": "10.1287/orsc.2025.21838",
+                "url": "https://pubsonline.informs.org/doi/10.1287/orsc.2025.21838",
+                "used_for": "支持 AI 收益与风险具有任务边界。",
+                "audit_status": "crossref-verified"
+              },
+              {
+                "key": "nasaTlx",
+                "entry_type": "official-web",
+                "authors": "NASA",
+                "year": "n.d.",
+                "title": "NASA Task Load Index",
+                "venue": "NASA Human Systems Integration Division",
+                "doi": "",
+                "url": "https://www.nasa.gov/human-systems-integration-division/nasa-task-load-index-tlx/",
+                "used_for": "提供任务负荷、时间压力、努力和挫败感测量入口。",
+                "audit_status": "official-web-registered"
+              },
+              {
+                "key": "nist2023airmf",
+                "entry_type": "standard",
+                "authors": "National Institute of Standards and Technology",
+                "year": "2023",
+                "title": "Artificial Intelligence Risk Management Framework (AI RMF 1.0)",
+                "venue": "NIST",
+                "doi": "",
+                "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+                "used_for": "提供 AI 风险识别、测量、治理和回滚语言。",
+                "audit_status": "official-url-200"
+              },
+              {
+                "key": "parasuraman2000automation",
+                "entry_type": "article",
+                "authors": "Parasuraman, R.; Sheridan, T. B.; Wickens, C. D.",
+                "year": "2000",
+                "title": "A model for types and levels of human interaction with automation",
+                "venue": "IEEE Transactions on Systems, Man, and Cybernetics - Part A: Systems and Humans",
+                "doi": "10.1109/3468.844354",
+                "url": "https://ieeexplore.ieee.org/document/844354",
+                "used_for": "拆分自动化类型、等级和人机控制权。",
+                "audit_status": "crossref-verified"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "claim_id": "CL5",
+        "claim_text": "可能性空间必须定义为主体真实可进入的路径集合，不能只统计抽象机会或叙事愿望。",
+        "claim_type": "Normative and measurement claim",
+        "current_status": "Normative framework with measurement task",
+        "upgrade_condition": "需要把 O 拆成资源入口、制度入口、协作入口、技术窗口和可逆选择，并给出进入条件。",
+        "paper_sections": [
+          "S3",
+          "S8",
+          "S12"
+        ],
+        "evidence_edges": [
+          "Q -> O",
+          "O -> T/E"
+        ],
+        "alignment_verdict": "NORMATIVE_MEASUREMENT",
+        "current_support": "能力方法、社会资本和公共健康框架支持把可能性空间定义为真实可进入路径集合。",
+        "falsifiers": [
+          "产出提高但资源、权限、身份或制度入口不增加",
+          "机会只能叙述不能进入",
+          "新增路径带来更高暴露和恢复负担"
+        ],
+        "upgrade_gate": "把 O 拆成资源入口、制度入口、协作入口、技术窗口和可逆选择，并定义进入条件。",
+        "contexts": [
+          {
+            "context_id": "CTX5",
+            "source_group": "Human Capital; Social Capital; Social Relationships Mortality",
+            "canonical_record": "Human/social capital theory and PLoS Medicine 2010 social relationships mortality meta-analysis.",
+            "used_for": "说明经验、资源、信誉和协作网络如何进入 C 与 O，并可能反哺 T/E。",
+            "supports": "积累资本、社会支持和死亡风险关联的讨论。",
+            "does_not_support": "不能把社会关系关联直接升级成具体干预的因果延寿结论。",
+            "citation_status": "KEEP WITH BOUNDARY",
+            "references": [
+              {
+                "key": "coleman1988socialCapital",
+                "entry_type": "article",
+                "authors": "Coleman, J. S.",
+                "year": "1988",
+                "title": "Social Capital in the Creation of Human Capital",
+                "venue": "American Journal of Sociology",
+                "doi": "10.1086/228943",
+                "url": "https://www.journals.uchicago.edu/doi/10.1086/228943",
+                "used_for": "说明关系、信任、规范和网络如何成为能力形成条件。",
+                "audit_status": "doi-verified"
+              },
+              {
+                "key": "holtlunstad2010social",
+                "entry_type": "article",
+                "authors": "Holt-Lunstad, J.; Smith, T. B.; Layton, J. B.",
+                "year": "2010",
+                "title": "Social Relationships and Mortality Risk: A Meta-analytic Review",
+                "venue": "PLoS Medicine",
+                "doi": "10.1371/journal.pmed.1000316",
+                "url": "https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1000316",
+                "used_for": "讨论社会关系与死亡风险的关联证据边界。",
+                "audit_status": "crossref-verified"
+              },
+              {
+                "key": "mincer1974humanCapital",
+                "entry_type": "book",
+                "authors": "Mincer, J.",
+                "year": "1974",
+                "title": "Schooling, Experience, and Earnings",
+                "venue": "National Bureau of Economic Research",
+                "doi": "",
+                "url": "https://www.nber.org/books-and-chapters/schooling-experience-and-earnings",
+                "used_for": "说明教育、经验和长期积累如何进入人力资本模型。",
+                "audit_status": "official-archive"
+              }
+            ]
+          },
+          {
+            "context_id": "CTX12",
+            "source_group": "Capability Approach; WHO SDOH; WHO Primary Health Care",
+            "canonical_record": "Stanford Encyclopedia of Philosophy capability approach, WHO social determinants, and WHO primary health care resources.",
+            "used_for": "定义 O 可能性空间为真实可进入路径，并把资源、制度、医疗和社会条件纳入反哺路径。",
+            "supports": "真实选择权、健康决定因素、医疗可及和连续照护的规范/公共卫生框架。",
+            "does_not_support": "规范框架不提供寿命预测，也不能替代具体政策或医疗干预评估。",
+            "citation_status": "KEEP WITH BOUNDARY",
+            "references": [
+              {
+                "key": "robeyns2021capability",
+                "entry_type": "encyclopedia",
+                "authors": "Robeyns, I.; Byskov, M. F.",
+                "year": "2021",
+                "title": "The Capability Approach",
+                "venue": "Stanford Encyclopedia of Philosophy",
+                "doi": "",
+                "url": "https://plato.stanford.edu/entries/capability-approach/",
+                "used_for": "定义真实可行能力和可能性空间。",
+                "audit_status": "official-web-registered"
+              },
+              {
+                "key": "whoSdhPhc",
+                "entry_type": "official-web",
+                "authors": "World Health Organization",
+                "year": "n.d.",
+                "title": "Social determinants of health and primary health care",
+                "venue": "WHO health topics",
+                "doi": "",
+                "url": "https://www.who.int/health-topics/social-determinants-of-health",
+                "used_for": "把健康和持续性放回收入、教育、住房、工作、环境和医疗可及条件中。",
+                "audit_status": "official-urls-200"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "claim_id": "CL6",
+        "claim_text": "所有增强技术都必须同时建模正向通道、负向通道、治理门禁和回滚条件。",
+        "claim_type": "Governance claim",
+        "current_status": "Governance requirement",
+        "upgrade_condition": "需要为每个技术族建立 downside channel、监测指标、停止条件和事故复盘模板。",
+        "paper_sections": [
+          "S10",
+          "S11",
+          "S14"
+        ],
+        "evidence_edges": [
+          "A/Q -> risk",
+          "U_t -> causal claim"
+        ],
+        "alignment_verdict": "GOVERNANCE_REQUIRED",
+        "current_support": "AI 风险、人机交互、个人数据系统和认知工具谱系共同要求把副作用、误用、回滚和治理门禁并入模型。",
+        "falsifiers": [
+          "技术收益只记正项",
+          "停止条件缺失",
+          "回滚路径缺失",
+          "事故复盘缺失",
+          "主体权利和同意边界缺失"
+        ],
+        "upgrade_gate": "为每个技术族建立 downside channel、监测指标、停止条件、回滚条件和事故复盘模板。",
+        "contexts": [
+          {
+            "context_id": "CTX8",
+            "source_group": "NIST AI RMF; Guidelines for Human-AI Interaction; NASA-TLX; Automation taxonomy",
+            "canonical_record": "NIST AI RMF 1.0, CHI 2019 HAI guidelines, NASA-TLX, and IEEE TSMC 2000 automation taxonomy.",
+            "used_for": "给 A/Q -> risk、QA 成本、任务负荷、自动化等级和人机控制权提供治理语言。",
+            "supports": "风险识别、测量、纠错、回滚和人机协作设计边界。",
+            "does_not_support": "治理框架和交互指南不提供收益估计，也不证明 AI 能延寿。",
+            "citation_status": "KEEP",
+            "references": [
+              {
+                "key": "amershi2019hai",
+                "entry_type": "inproceedings",
+                "authors": "Amershi, S.; Weld, D.; Vorvoreanu, M.; Fourney, A.; Nushi, B.; Collisson, P.; Suh, J.; Iqbal, S.; Bennett, P. N.; Inkpen, K.; Teevan, J.; Kikin-Gil, R.; Horvitz, E.",
+                "year": "2019",
+                "title": "Guidelines for Human-AI Interaction",
+                "venue": "Proceedings of the 2019 CHI Conference on Human Factors in Computing Systems",
+                "doi": "10.1145/3290605.3300233",
+                "url": "https://dl.acm.org/doi/10.1145/3290605.3300233",
+                "used_for": "提供人机协作设计、纠错和控制权边界。",
+                "audit_status": "crossref-verified"
+              },
+              {
+                "key": "burwell2017bciEthics",
+                "entry_type": "article",
+                "authors": "Burwell, S.; Sample, M.; Racine, E.",
+                "year": "2017",
+                "title": "Ethical aspects of brain computer interfaces: a scoping review",
+                "venue": "BMC Medical Ethics",
+                "doi": "10.1186/s12910-017-0220-y",
+                "url": "https://bmcmedethics.biomedcentral.com/articles/10.1186/s12910-017-0220-y",
+                "used_for": "为脑机接口、神经技术、同意、身份和主体边界提供风险治理入口。",
+                "audit_status": "doi-verified"
+              },
+              {
+                "key": "dellacqua2026jagged",
+                "entry_type": "article",
+                "authors": "Dell'Acqua, F.; McFowland, E.; Mollick, E.; Lifshitz-Assaf, H.; Kellogg, K.; Rajendran, S.; Krayer, L.; Candelon, F.; Lakhani, K. R.",
+                "year": "2026",
+                "title": "Navigating the Jagged Technological Frontier: Field Experimental Evidence of the Effects of Artificial Intelligence on Knowledge Worker Productivity and Quality",
+                "venue": "Organization Science",
+                "doi": "10.1287/orsc.2025.21838",
+                "url": "https://pubsonline.informs.org/doi/10.1287/orsc.2025.21838",
+                "used_for": "支持 AI 收益与风险具有任务边界。",
+                "audit_status": "crossref-verified"
+              },
+              {
+                "key": "nasaTlx",
+                "entry_type": "official-web",
+                "authors": "NASA",
+                "year": "n.d.",
+                "title": "NASA Task Load Index",
+                "venue": "NASA Human Systems Integration Division",
+                "doi": "",
+                "url": "https://www.nasa.gov/human-systems-integration-division/nasa-task-load-index-tlx/",
+                "used_for": "提供任务负荷、时间压力、努力和挫败感测量入口。",
+                "audit_status": "official-web-registered"
+              },
+              {
+                "key": "nist2023airmf",
+                "entry_type": "standard",
+                "authors": "National Institute of Standards and Technology",
+                "year": "2023",
+                "title": "Artificial Intelligence Risk Management Framework (AI RMF 1.0)",
+                "venue": "NIST",
+                "doi": "",
+                "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+                "used_for": "提供 AI 风险识别、测量、治理和回滚语言。",
+                "audit_status": "official-url-200"
+              },
+              {
+                "key": "parasuraman2000automation",
+                "entry_type": "article",
+                "authors": "Parasuraman, R.; Sheridan, T. B.; Wickens, C. D.",
+                "year": "2000",
+                "title": "A model for types and levels of human interaction with automation",
+                "venue": "IEEE Transactions on Systems, Man, and Cybernetics - Part A: Systems and Humans",
+                "doi": "10.1109/3468.844354",
+                "url": "https://ieeexplore.ieee.org/document/844354",
+                "used_for": "拆分自动化类型、等级和人机控制权。",
+                "audit_status": "crossref-verified"
+              }
+            ]
+          },
+          {
+            "context_id": "CTX9",
+            "source_group": "Target Trial Emulation; ClinicalTrials.gov; WHO ICTRP; TRIPOD+AI; PROBAST+AI; CONSORT-AI; SPIRIT-AI",
+            "canonical_record": "JAMA 2022 target trial emulation, NLM and WHO trial registry infrastructure, TRIPOD+AI reporting guidance, PROBAST+AI risk-of-bias guidance, and CONSORT-AI / SPIRIT-AI AI clinical trial reporting guidance.",
+            "used_for": "定义 U_t -> causal claim 的因果门禁和预测模型报告门禁。",
+            "supports": "population、intervention、comparator、time zero、outcome、estimand、试验登记、AI 干预报告、验证、校准和偏倚审查。",
+            "does_not_support": "不能消除所有不可测混杂，也不证明任何注册试验或预测模型有效。",
+            "citation_status": "KEEP",
+            "references": [
+              {
+                "key": "clinicaltrialsGov",
+                "entry_type": "registry",
+                "authors": "U.S. National Library of Medicine",
+                "year": "n.d.",
+                "title": "ClinicalTrials.gov",
+                "venue": "ClinicalTrials.gov",
+                "doi": "",
+                "url": "https://clinicaltrials.gov/",
+                "used_for": "提供临床试验登记、人群、比较组、结局和结果回填入口。",
+                "audit_status": "official-url-200"
+              },
+              {
+                "key": "clinicaltrialsGovApi",
+                "entry_type": "official-web",
+                "authors": "U.S. National Library of Medicine",
+                "year": "n.d.",
+                "title": "ClinicalTrials.gov Data API",
+                "venue": "ClinicalTrials.gov",
+                "doi": "",
+                "url": "https://clinicaltrials.gov/data-api/about-api",
+                "used_for": "提供结构化试验注册与结果数据的机器读取入口，用于后续试验证据采集和协议字段回填。",
+                "audit_status": "official-url-200"
+              },
+              {
+                "key": "consortAi2020",
+                "entry_type": "article",
+                "authors": "Liu, X.; Cruz Rivera, S.; Moher, D.; Calvert, M. J.; Denniston, A. K.; et al.",
+                "year": "2020",
+                "title": "Reporting guidelines for clinical trial reports for interventions involving artificial intelligence: the CONSORT-AI extension",
+                "venue": "Nature Medicine",
+                "doi": "10.1038/s41591-020-1034-x",
+                "url": "https://www.nature.com/articles/s41591-020-1034-x",
+                "used_for": "约束 AI 干预临床试验结果报告中的干预说明、输入输出、人机交互和错误案例分析。",
+                "audit_status": "doi-verified"
+              },
+              {
+                "key": "gradeHandbook",
+                "entry_type": "guideline-web",
+                "authors": "GRADE Working Group",
+                "year": "n.d.",
+                "title": "GRADE Handbook",
+                "venue": "GRADE Working Group",
+                "doi": "",
+                "url": "https://gdt.gradepro.org/app/handbook/handbook.html",
+                "used_for": "提供证据确定性、收益风险权衡和从证据到建议的政策语言。",
+                "audit_status": "official-web"
+              },
+              {
+                "key": "hernan2022targetTrial",
+                "entry_type": "article",
+                "authors": "Hernan, M. A.; Wang, W.; Leaf, D. E.",
+                "year": "2022",
+                "title": "Target Trial Emulation",
+                "venue": "JAMA",
+                "doi": "10.1001/jama.2022.21383",
+                "url": "https://pubmed.ncbi.nlm.nih.gov/36508210/",
+                "used_for": "定义因果协议门禁和观察数据因果推断边界。",
+                "audit_status": "crossref-verified"
+              },
+              {
+                "key": "probastAi2025",
+                "entry_type": "article",
+                "authors": "Moons, K. G. M.; et al.",
+                "year": "2025",
+                "title": "PROBAST+AI: an updated quality, risk of bias, and applicability assessment tool for prediction models using regression or artificial intelligence methods",
+                "venue": "BMJ",
+                "doi": "10.1136/bmj-2024-082505",
+                "url": "https://www.bmj.com/content/388/bmj-2024-082505",
+                "used_for": "提供 AI 预测模型研究的偏倚风险、适用性、可信度、公平性和质量审查门禁。",
+                "audit_status": "doi-and-official-site-verified"
+              },
+              {
+                "key": "robins2000marginalStructural",
+                "entry_type": "article",
+                "authors": "Robins, J. M.; Hernan, M. A.; Brumback, B.",
+                "year": "2000",
+                "title": "Marginal Structural Models and Causal Inference in Epidemiology",
+                "venue": "Epidemiology",
+                "doi": "10.1097/00001648-200009000-00011",
+                "url": "https://pubmed.ncbi.nlm.nih.gov/10955408/",
+                "used_for": "说明时间变化混杂下的因果估计入口和边界。",
+                "audit_status": "pubmed-verified"
+              },
+              {
+                "key": "spiritAi2020",
+                "entry_type": "article",
+                "authors": "Cruz Rivera, S.; Liu, X.; Chan, A.-W.; Denniston, A. K.; Calvert, M. J.; et al.",
+                "year": "2020",
+                "title": "Guidelines for clinical trial protocols for interventions involving artificial intelligence: the SPIRIT-AI extension",
+                "venue": "Nature Medicine",
+                "doi": "10.1038/s41591-020-1037-7",
+                "url": "https://www.nature.com/articles/s41591-020-1037-7",
+                "used_for": "约束 AI 干预临床试验方案中的协议透明度、输入输出、人机交互和错误分析计划。",
+                "audit_status": "doi-verified"
+              },
+              {
+                "key": "tripodAi2024",
+                "entry_type": "article",
+                "authors": "Collins, G. S.; Moons, K. G. M.; et al.",
+                "year": "2024",
+                "title": "TRIPOD+AI statement: updated guidance for reporting clinical prediction models that use regression or machine learning methods",
+                "venue": "BMJ",
+                "doi": "10.1136/bmj-2023-078378",
+                "url": "https://www.bmj.com/content/385/bmj-2023-078378",
+                "used_for": "提供 AI/机器学习临床预测模型的报告清单、外部验证、校准和透明度门禁。",
+                "audit_status": "doi-and-official-site-verified"
+              },
+              {
+                "key": "tripodProbast",
+                "entry_type": "guideline-web",
+                "authors": "TRIPOD Statement; PROBAST",
+                "year": "n.d.",
+                "title": "TRIPOD Statement and PROBAST",
+                "venue": "Prediction model reporting and risk-of-bias guidance",
+                "doi": "",
+                "url": "https://www.tripod-statement.org/",
+                "used_for": "约束预测模型报告质量、偏倚风险、校准和外部验证。",
+                "audit_status": "official-urls-200"
+              },
+              {
+                "key": "whoIctrp",
+                "entry_type": "registry",
+                "authors": "World Health Organization",
+                "year": "n.d.",
+                "title": "International Clinical Trials Registry Platform (ICTRP)",
+                "venue": "World Health Organization",
+                "doi": "",
+                "url": "https://www.who.int/tools/clinical-trials-registry-platform",
+                "used_for": "提供国际临床试验注册网络、WHO 数据集和试验透明度原则的上位入口。",
+                "audit_status": "official-url-200"
+              }
+            ]
+          },
+          {
+            "context_id": "CTX10",
+            "source_group": "Apple Heart Study; Personal Informatics; Lived Informatics; Dynamic Digital Twin",
+            "canonical_record": "NEJM 2019 Apple Heart Study, CHI 2010 personal informatics, UbiComp 2015 lived informatics, and JMIR 2022 dynamic digital twin.",
+            "used_for": "说明观测、反馈、个人数据系统和生命过程建模如何进入状态观测层。",
+            "supports": "observation -> action 的路径和自我追踪/数字孪生的系统问题。",
+            "does_not_support": "早筛、追踪或数字孪生概念不等于死亡风险下降或医疗结局改善。",
+            "citation_status": "KEEP WITH BOUNDARY",
+            "references": [
+              {
+                "key": "epstein2015lived",
+                "entry_type": "inproceedings",
+                "authors": "Epstein, D. A.; Ping, A.; Fogarty, J.; Munson, S. A.",
+                "year": "2015",
+                "title": "A lived informatics model of personal informatics",
+                "venue": "Proceedings of the 2015 ACM International Joint Conference on Pervasive and Ubiquitous Computing",
+                "doi": "10.1145/2750858.2804250",
+                "url": "https://dl.acm.org/doi/10.1145/2750858.2804250",
+                "used_for": "说明长期自我追踪系统的生活嵌入、维护负担和断裂点。",
+                "audit_status": "crossref-verified"
+              },
+              {
+                "key": "li2010personalInformatics",
+                "entry_type": "inproceedings",
+                "authors": "Li, I.; Dey, A.; Forlizzi, J.",
+                "year": "2010",
+                "title": "A stage-based model of personal informatics systems",
+                "venue": "Proceedings of the SIGCHI Conference on Human Factors in Computing Systems",
+                "doi": "10.1145/1753326.1753409",
+                "url": "https://dl.acm.org/doi/10.1145/1753326.1753409",
+                "used_for": "提供个人信息学的准备、收集、整合、反思和行动阶段。",
+                "audit_status": "crossref-verified"
+              },
+              {
+                "key": "mulder2022dynamicDigitalTwin",
+                "entry_type": "article",
+                "authors": "Mulder, W. J. M.; et al.",
+                "year": "2022",
+                "title": "Dynamic Digital Twin: Diagnosis, Treatment, Prediction, and Prevention of Disease During the Life Course",
+                "venue": "Journal of Medical Internet Research",
+                "doi": "10.2196/35675",
+                "url": "https://www.jmir.org/2022/9/e35675",
+                "used_for": "说明生命过程中的状态观测、预测、预防和数字孪生建模入口。",
+                "audit_status": "publisher-verified"
+              },
+              {
+                "key": "perez2019appleHeart",
+                "entry_type": "article",
+                "authors": "Perez, M. V.; Mahaffey, K. W.; Hedlin, H.; Rumsfeld, J. S.; Garcia, A.; Ferris, T.; Balasubramanian, V.; Russo, A. M.; Rajmane, A.; Cheung, L.; Hung, G.; Lee, J.; Kowey, P.; Talati, N.; Nag, D.; Gummidipundi, S. E.; Beatty, A.; Hills, M. T.; Desai, S.; Granger, C. B.; Desai, M.; Turakhia, M. P.",
+                "year": "2019",
+                "title": "Large-Scale Assessment of a Smartwatch to Identify Atrial Fibrillation",
+                "venue": "New England Journal of Medicine",
+                "doi": "10.1056/NEJMoa1901183",
+                "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa1901183",
+                "used_for": "说明可穿戴设备进入大规模风险提示和临床确认通道。",
+                "audit_status": "crossref-verified"
+              }
+            ]
+          },
+          {
+            "context_id": "CTX11",
+            "source_group": "Extended Mind; Engelbart; Cognition in the Wild",
+            "canonical_record": "Analysis 1998, SRI 1962, and MIT Press 1995.",
+            "used_for": "支撑工具、记忆外化、分布式认知和认知增强进入主体系统的理论位置。",
+            "supports": "主体能力可以由人、工具、表征、环境和协作流程共同支撑。",
+            "does_not_support": "哲学和系统框架不提供数值效应估计，也不能证明数字副本等同于本人。",
+            "citation_status": "KEEP WITH BOUNDARY",
+            "references": [
+              {
+                "key": "burwell2017bciEthics",
+                "entry_type": "article",
+                "authors": "Burwell, S.; Sample, M.; Racine, E.",
+                "year": "2017",
+                "title": "Ethical aspects of brain computer interfaces: a scoping review",
+                "venue": "BMC Medical Ethics",
+                "doi": "10.1186/s12910-017-0220-y",
+                "url": "https://bmcmedethics.biomedcentral.com/articles/10.1186/s12910-017-0220-y",
+                "used_for": "为脑机接口、神经技术、同意、身份和主体边界提供风险治理入口。",
+                "audit_status": "doi-verified"
+              },
+              {
+                "key": "clark1998extended",
+                "entry_type": "article",
+                "authors": "Clark, A.; Chalmers, D.",
+                "year": "1998",
+                "title": "The Extended Mind",
+                "venue": "Analysis",
+                "doi": "10.1093/analys/58.1.7",
+                "url": "https://academic.oup.com/analysis/article-pdf/58/1/7/359060/58-1-7.pdf",
+                "used_for": "支撑工具、记忆外化和认知扩展进入主体系统。",
+                "audit_status": "crossref-verified"
+              },
+              {
+                "key": "engelbart1962augmenting",
+                "entry_type": "report",
+                "authors": "Engelbart, D. C.",
+                "year": "1962",
+                "title": "Augmenting Human Intellect: A Conceptual Framework",
+                "venue": "Stanford Research Institute report",
+                "doi": "",
+                "url": "https://www.dougengelbart.org/pubs/augment-3906.html",
+                "used_for": "提供人、工具、概念和方法作为增强系统的经典框架。",
+                "audit_status": "official-archive-registered"
+              },
+              {
+                "key": "hutchins1995cognition",
+                "entry_type": "book",
+                "authors": "Hutchins, E.",
+                "year": "1995",
+                "title": "Cognition in the Wild",
+                "venue": "MIT Press",
+                "doi": "",
+                "url": "https://pages.ucsd.edu/~ehutchins/citw.html",
+                "used_for": "提供分布式认知和环境嵌入式问题求解框架。",
+                "audit_status": "author-page-verified"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "claim_id": "CL7",
+        "claim_text": "本文不证明永生已经实现，不输出个体死亡日期，不把机制合理或短期功能改善升级成寿命延长结论。",
+        "claim_type": "Prohibited claim boundary",
+        "current_status": "Hard boundary",
+        "upgrade_condition": "任何后续图表、页面和模型输出都必须保留该边界。",
+        "paper_sections": [
+          "S3",
+          "S7",
+          "S11",
+          "S14",
+          "S16"
+        ],
+        "evidence_edges": [
+          "U_t -> causal claim",
+          "A/Q -> risk"
+        ],
+        "alignment_verdict": "HARD_BOUNDARY",
+        "current_support": "方法标准、预测模型治理、AI 风险治理和证据政策共同限定本文不能输出个人死亡日期或把短期功能改善升级成寿命结论。",
+        "falsifiers": [
+          "页面输出个体死亡日期",
+          "机制合理被写成干预效果",
+          "短期任务收益被写成寿命延长",
+          "引用上下文越界"
+        ],
+        "upgrade_gate": "后续图表、模型和传播材料必须持续保留非主张边界，并接受 claim-to-source 审计。",
+        "contexts": [
+          {
+            "context_id": "CTX1",
+            "source_group": "Kaplan-Meier 1958; Cox 1972",
+            "canonical_record": "JASA 1958 survival curve estimator; JRSS-B 1972 proportional hazards model.",
+            "used_for": "定义 T、生存函数 S(t)、删失数据和风险函数 lambda(t) 的统计语言。",
+            "supports": "事件时间、删失、生存曲线和协变量风险建模的基础方法。",
+            "does_not_support": "不证明任何具体延寿、健康、AI 或资源干预有效。",
+            "citation_status": "KEEP",
+            "references": [
+              {
+                "key": "cox1972regression",
+                "entry_type": "article",
+                "authors": "Cox, D. R.",
+                "year": "1972",
+                "title": "Regression Models and Life-Tables",
+                "venue": "Journal of the Royal Statistical Society Series B: Statistical Methodology",
+                "doi": "10.1111/j.2517-6161.1972.tb00899.x",
+                "url": "https://rss.onlinelibrary.wiley.com/doi/10.1111/j.2517-6161.1972.tb00899.x",
+                "used_for": "定义协变量、风险函数和 lambda(t) 的统计语言。",
+                "audit_status": "crossref-verified"
+              },
+              {
+                "key": "kaplan1958incomplete",
+                "entry_type": "article",
+                "authors": "Kaplan, E. L.; Meier, P.",
+                "year": "1958",
+                "title": "Nonparametric Estimation from Incomplete Observations",
+                "venue": "Journal of the American Statistical Association",
+                "doi": "10.1080/01621459.1958.10501452",
+                "url": "https://www.tandfonline.com/doi/abs/10.1080/01621459.1958.10501452",
+                "used_for": "定义生存曲线、删失数据和 T 的统计语言。",
+                "audit_status": "crossref-verified"
+              }
+            ]
+          },
+          {
+            "context_id": "CTX3",
+            "source_group": "Hallmarks of Aging; GrimAge; Cognitive Reserve",
+            "canonical_record": "Cell 2013 aging mechanisms, Aging 2019 epigenetic mortality predictor, and Lancet Neurology 2012 cognitive reserve review.",
+            "used_for": "提出身体状态、衰老机制、生物年龄信号和认知储备候选变量。",
+            "supports": "状态变量和风险信号的机制/关联入口。",
+            "does_not_support": "不能把机制综述、预测关联或认知储备直接写成干预效果。",
+            "citation_status": "KEEP WITH BOUNDARY",
+            "references": [
+              {
+                "key": "lopezotin2013hallmarks",
+                "entry_type": "article",
+                "authors": "Lopez-Otin, C.; Blasco, M. A.; Partridge, L.; Serrano, M.; Kroemer, G.",
+                "year": "2013",
+                "title": "The Hallmarks of Aging",
+                "venue": "Cell",
+                "doi": "10.1016/j.cell.2013.05.039",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3836174/",
+                "used_for": "提出衰老状态变量和机制入口。",
+                "audit_status": "crossref-verified"
+              },
+              {
+                "key": "lu2019grimage",
+                "entry_type": "article",
+                "authors": "Lu, A. T.; Quach, A.; Wilson, J. G.; Reiner, A. P.; Aviv, A.; Raj, K.; Hou, L.; Baccarelli, A. A.; Li, Y.; Stewart, J. D.; Whitsel, E. A.; Assimes, T. L.; Ferrucci, L.; Horvath, S.",
+                "year": "2019",
+                "title": "DNA methylation GrimAge strongly predicts lifespan and healthspan",
+                "venue": "Aging",
+                "doi": "10.18632/aging.101684",
+                "url": "https://www.aging-us.com/article/101684",
+                "used_for": "作为生物年龄、死亡风险和健康寿命信号入口。",
+                "audit_status": "crossref-verified"
+              },
+              {
+                "key": "stern2012cognitiveReserve",
+                "entry_type": "article",
+                "authors": "Stern, Y.",
+                "year": "2012",
+                "title": "Cognitive reserve in ageing and Alzheimer's disease",
+                "venue": "The Lancet Neurology",
+                "doi": "10.1016/S1474-4422(12)70191-6",
+                "url": "https://pubmed.ncbi.nlm.nih.gov/23079557/",
+                "used_for": "说明认知储备作为状态变量和风险信号的边界。",
+                "audit_status": "crossref-verified"
+              }
+            ]
+          },
+          {
+            "context_id": "CTX7",
+            "source_group": "Generative AI at Work; Noy and Zhang; GitHub Copilot; Jagged Technological Frontier",
+            "canonical_record": "QJE 2025, Science 2023, arXiv:2302.06590, and Organization Science 2026.",
+            "used_for": "支持 A -> Q 在限定任务中的生产率、速度、质量或任务边界证据。",
+            "supports": "生成式 AI 在客服、写作、编程或知识工作实验中的任务内效果与异质性。",
+            "does_not_support": "不能泛化为通用智能增强、健康寿命延长或永生收益。",
+            "citation_status": "KEEP WITH BOUNDARY",
+            "references": [
+              {
+                "key": "brynjolfsson2025generative",
+                "entry_type": "article",
+                "authors": "Brynjolfsson, E.; Li, D.; Raymond, L.",
+                "year": "2025",
+                "title": "Generative AI at Work",
+                "venue": "The Quarterly Journal of Economics",
+                "doi": "10.1093/qje/qjae044",
+                "url": "https://academic.oup.com/qje/article/140/2/889/7990658",
+                "used_for": "支持限定客服任务中的 AI productivity 证据。",
+                "audit_status": "crossref-verified-corrected-doi"
+              },
+              {
+                "key": "dellacqua2026jagged",
+                "entry_type": "article",
+                "authors": "Dell'Acqua, F.; McFowland, E.; Mollick, E.; Lifshitz-Assaf, H.; Kellogg, K.; Rajendran, S.; Krayer, L.; Candelon, F.; Lakhani, K. R.",
+                "year": "2026",
+                "title": "Navigating the Jagged Technological Frontier: Field Experimental Evidence of the Effects of Artificial Intelligence on Knowledge Worker Productivity and Quality",
+                "venue": "Organization Science",
+                "doi": "10.1287/orsc.2025.21838",
+                "url": "https://pubsonline.informs.org/doi/10.1287/orsc.2025.21838",
+                "used_for": "支持 AI 收益与风险具有任务边界。",
+                "audit_status": "crossref-verified"
+              },
+              {
+                "key": "noy2023productivity",
+                "entry_type": "article",
+                "authors": "Noy, S.; Zhang, W.",
+                "year": "2023",
+                "title": "Experimental evidence on the productivity effects of generative artificial intelligence",
+                "venue": "Science",
+                "doi": "10.1126/science.adh2586",
+                "url": "https://www.science.org/doi/10.1126/science.adh2586",
+                "used_for": "支持写作任务内的生成式 AI 生产率证据。",
+                "audit_status": "crossref-verified"
+              },
+              {
+                "key": "peng2023copilot",
+                "entry_type": "arxiv",
+                "authors": "Peng, S.; Kalliamvakou, E.; Cihon, P.; Demirer, M.",
+                "year": "2023",
+                "title": "The Impact of AI on Developer Productivity: Evidence from GitHub Copilot",
+                "venue": "arXiv",
+                "doi": "",
+                "url": "https://arxiv.org/abs/2302.06590",
+                "used_for": "支持限定编程任务中的 AI pair programmer 生产率入口。",
+                "audit_status": "arxiv-api-verified"
+              }
+            ]
+          },
+          {
+            "context_id": "CTX8",
+            "source_group": "NIST AI RMF; Guidelines for Human-AI Interaction; NASA-TLX; Automation taxonomy",
+            "canonical_record": "NIST AI RMF 1.0, CHI 2019 HAI guidelines, NASA-TLX, and IEEE TSMC 2000 automation taxonomy.",
+            "used_for": "给 A/Q -> risk、QA 成本、任务负荷、自动化等级和人机控制权提供治理语言。",
+            "supports": "风险识别、测量、纠错、回滚和人机协作设计边界。",
+            "does_not_support": "治理框架和交互指南不提供收益估计，也不证明 AI 能延寿。",
+            "citation_status": "KEEP",
+            "references": [
+              {
+                "key": "amershi2019hai",
+                "entry_type": "inproceedings",
+                "authors": "Amershi, S.; Weld, D.; Vorvoreanu, M.; Fourney, A.; Nushi, B.; Collisson, P.; Suh, J.; Iqbal, S.; Bennett, P. N.; Inkpen, K.; Teevan, J.; Kikin-Gil, R.; Horvitz, E.",
+                "year": "2019",
+                "title": "Guidelines for Human-AI Interaction",
+                "venue": "Proceedings of the 2019 CHI Conference on Human Factors in Computing Systems",
+                "doi": "10.1145/3290605.3300233",
+                "url": "https://dl.acm.org/doi/10.1145/3290605.3300233",
+                "used_for": "提供人机协作设计、纠错和控制权边界。",
+                "audit_status": "crossref-verified"
+              },
+              {
+                "key": "burwell2017bciEthics",
+                "entry_type": "article",
+                "authors": "Burwell, S.; Sample, M.; Racine, E.",
+                "year": "2017",
+                "title": "Ethical aspects of brain computer interfaces: a scoping review",
+                "venue": "BMC Medical Ethics",
+                "doi": "10.1186/s12910-017-0220-y",
+                "url": "https://bmcmedethics.biomedcentral.com/articles/10.1186/s12910-017-0220-y",
+                "used_for": "为脑机接口、神经技术、同意、身份和主体边界提供风险治理入口。",
+                "audit_status": "doi-verified"
+              },
+              {
+                "key": "dellacqua2026jagged",
+                "entry_type": "article",
+                "authors": "Dell'Acqua, F.; McFowland, E.; Mollick, E.; Lifshitz-Assaf, H.; Kellogg, K.; Rajendran, S.; Krayer, L.; Candelon, F.; Lakhani, K. R.",
+                "year": "2026",
+                "title": "Navigating the Jagged Technological Frontier: Field Experimental Evidence of the Effects of Artificial Intelligence on Knowledge Worker Productivity and Quality",
+                "venue": "Organization Science",
+                "doi": "10.1287/orsc.2025.21838",
+                "url": "https://pubsonline.informs.org/doi/10.1287/orsc.2025.21838",
+                "used_for": "支持 AI 收益与风险具有任务边界。",
+                "audit_status": "crossref-verified"
+              },
+              {
+                "key": "nasaTlx",
+                "entry_type": "official-web",
+                "authors": "NASA",
+                "year": "n.d.",
+                "title": "NASA Task Load Index",
+                "venue": "NASA Human Systems Integration Division",
+                "doi": "",
+                "url": "https://www.nasa.gov/human-systems-integration-division/nasa-task-load-index-tlx/",
+                "used_for": "提供任务负荷、时间压力、努力和挫败感测量入口。",
+                "audit_status": "official-web-registered"
+              },
+              {
+                "key": "nist2023airmf",
+                "entry_type": "standard",
+                "authors": "National Institute of Standards and Technology",
+                "year": "2023",
+                "title": "Artificial Intelligence Risk Management Framework (AI RMF 1.0)",
+                "venue": "NIST",
+                "doi": "",
+                "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+                "used_for": "提供 AI 风险识别、测量、治理和回滚语言。",
+                "audit_status": "official-url-200"
+              },
+              {
+                "key": "parasuraman2000automation",
+                "entry_type": "article",
+                "authors": "Parasuraman, R.; Sheridan, T. B.; Wickens, C. D.",
+                "year": "2000",
+                "title": "A model for types and levels of human interaction with automation",
+                "venue": "IEEE Transactions on Systems, Man, and Cybernetics - Part A: Systems and Humans",
+                "doi": "10.1109/3468.844354",
+                "url": "https://ieeexplore.ieee.org/document/844354",
+                "used_for": "拆分自动化类型、等级和人机控制权。",
+                "audit_status": "crossref-verified"
+              }
+            ]
+          },
+          {
+            "context_id": "CTX9",
+            "source_group": "Target Trial Emulation; ClinicalTrials.gov; WHO ICTRP; TRIPOD+AI; PROBAST+AI; CONSORT-AI; SPIRIT-AI",
+            "canonical_record": "JAMA 2022 target trial emulation, NLM and WHO trial registry infrastructure, TRIPOD+AI reporting guidance, PROBAST+AI risk-of-bias guidance, and CONSORT-AI / SPIRIT-AI AI clinical trial reporting guidance.",
+            "used_for": "定义 U_t -> causal claim 的因果门禁和预测模型报告门禁。",
+            "supports": "population、intervention、comparator、time zero、outcome、estimand、试验登记、AI 干预报告、验证、校准和偏倚审查。",
+            "does_not_support": "不能消除所有不可测混杂，也不证明任何注册试验或预测模型有效。",
+            "citation_status": "KEEP",
+            "references": [
+              {
+                "key": "clinicaltrialsGov",
+                "entry_type": "registry",
+                "authors": "U.S. National Library of Medicine",
+                "year": "n.d.",
+                "title": "ClinicalTrials.gov",
+                "venue": "ClinicalTrials.gov",
+                "doi": "",
+                "url": "https://clinicaltrials.gov/",
+                "used_for": "提供临床试验登记、人群、比较组、结局和结果回填入口。",
+                "audit_status": "official-url-200"
+              },
+              {
+                "key": "clinicaltrialsGovApi",
+                "entry_type": "official-web",
+                "authors": "U.S. National Library of Medicine",
+                "year": "n.d.",
+                "title": "ClinicalTrials.gov Data API",
+                "venue": "ClinicalTrials.gov",
+                "doi": "",
+                "url": "https://clinicaltrials.gov/data-api/about-api",
+                "used_for": "提供结构化试验注册与结果数据的机器读取入口，用于后续试验证据采集和协议字段回填。",
+                "audit_status": "official-url-200"
+              },
+              {
+                "key": "consortAi2020",
+                "entry_type": "article",
+                "authors": "Liu, X.; Cruz Rivera, S.; Moher, D.; Calvert, M. J.; Denniston, A. K.; et al.",
+                "year": "2020",
+                "title": "Reporting guidelines for clinical trial reports for interventions involving artificial intelligence: the CONSORT-AI extension",
+                "venue": "Nature Medicine",
+                "doi": "10.1038/s41591-020-1034-x",
+                "url": "https://www.nature.com/articles/s41591-020-1034-x",
+                "used_for": "约束 AI 干预临床试验结果报告中的干预说明、输入输出、人机交互和错误案例分析。",
+                "audit_status": "doi-verified"
+              },
+              {
+                "key": "gradeHandbook",
+                "entry_type": "guideline-web",
+                "authors": "GRADE Working Group",
+                "year": "n.d.",
+                "title": "GRADE Handbook",
+                "venue": "GRADE Working Group",
+                "doi": "",
+                "url": "https://gdt.gradepro.org/app/handbook/handbook.html",
+                "used_for": "提供证据确定性、收益风险权衡和从证据到建议的政策语言。",
+                "audit_status": "official-web"
+              },
+              {
+                "key": "hernan2022targetTrial",
+                "entry_type": "article",
+                "authors": "Hernan, M. A.; Wang, W.; Leaf, D. E.",
+                "year": "2022",
+                "title": "Target Trial Emulation",
+                "venue": "JAMA",
+                "doi": "10.1001/jama.2022.21383",
+                "url": "https://pubmed.ncbi.nlm.nih.gov/36508210/",
+                "used_for": "定义因果协议门禁和观察数据因果推断边界。",
+                "audit_status": "crossref-verified"
+              },
+              {
+                "key": "probastAi2025",
+                "entry_type": "article",
+                "authors": "Moons, K. G. M.; et al.",
+                "year": "2025",
+                "title": "PROBAST+AI: an updated quality, risk of bias, and applicability assessment tool for prediction models using regression or artificial intelligence methods",
+                "venue": "BMJ",
+                "doi": "10.1136/bmj-2024-082505",
+                "url": "https://www.bmj.com/content/388/bmj-2024-082505",
+                "used_for": "提供 AI 预测模型研究的偏倚风险、适用性、可信度、公平性和质量审查门禁。",
+                "audit_status": "doi-and-official-site-verified"
+              },
+              {
+                "key": "robins2000marginalStructural",
+                "entry_type": "article",
+                "authors": "Robins, J. M.; Hernan, M. A.; Brumback, B.",
+                "year": "2000",
+                "title": "Marginal Structural Models and Causal Inference in Epidemiology",
+                "venue": "Epidemiology",
+                "doi": "10.1097/00001648-200009000-00011",
+                "url": "https://pubmed.ncbi.nlm.nih.gov/10955408/",
+                "used_for": "说明时间变化混杂下的因果估计入口和边界。",
+                "audit_status": "pubmed-verified"
+              },
+              {
+                "key": "spiritAi2020",
+                "entry_type": "article",
+                "authors": "Cruz Rivera, S.; Liu, X.; Chan, A.-W.; Denniston, A. K.; Calvert, M. J.; et al.",
+                "year": "2020",
+                "title": "Guidelines for clinical trial protocols for interventions involving artificial intelligence: the SPIRIT-AI extension",
+                "venue": "Nature Medicine",
+                "doi": "10.1038/s41591-020-1037-7",
+                "url": "https://www.nature.com/articles/s41591-020-1037-7",
+                "used_for": "约束 AI 干预临床试验方案中的协议透明度、输入输出、人机交互和错误分析计划。",
+                "audit_status": "doi-verified"
+              },
+              {
+                "key": "tripodAi2024",
+                "entry_type": "article",
+                "authors": "Collins, G. S.; Moons, K. G. M.; et al.",
+                "year": "2024",
+                "title": "TRIPOD+AI statement: updated guidance for reporting clinical prediction models that use regression or machine learning methods",
+                "venue": "BMJ",
+                "doi": "10.1136/bmj-2023-078378",
+                "url": "https://www.bmj.com/content/385/bmj-2023-078378",
+                "used_for": "提供 AI/机器学习临床预测模型的报告清单、外部验证、校准和透明度门禁。",
+                "audit_status": "doi-and-official-site-verified"
+              },
+              {
+                "key": "tripodProbast",
+                "entry_type": "guideline-web",
+                "authors": "TRIPOD Statement; PROBAST",
+                "year": "n.d.",
+                "title": "TRIPOD Statement and PROBAST",
+                "venue": "Prediction model reporting and risk-of-bias guidance",
+                "doi": "",
+                "url": "https://www.tripod-statement.org/",
+                "used_for": "约束预测模型报告质量、偏倚风险、校准和外部验证。",
+                "audit_status": "official-urls-200"
+              },
+              {
+                "key": "whoIctrp",
+                "entry_type": "registry",
+                "authors": "World Health Organization",
+                "year": "n.d.",
+                "title": "International Clinical Trials Registry Platform (ICTRP)",
+                "venue": "World Health Organization",
+                "doi": "",
+                "url": "https://www.who.int/tools/clinical-trials-registry-platform",
+                "used_for": "提供国际临床试验注册网络、WHO 数据集和试验透明度原则的上位入口。",
+                "audit_status": "official-url-200"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "context_packets": [
+      {
+        "context_id": "CTX1",
+        "source_group": "Kaplan-Meier 1958; Cox 1972",
+        "used_for": "定义 T、生存函数 S(t)、删失数据和风险函数 lambda(t) 的统计语言。",
+        "supports": "事件时间、删失、生存曲线和协变量风险建模的基础方法。",
+        "does_not_support": "不证明任何具体延寿、健康、AI 或资源干预有效。",
+        "citation_status": "KEEP",
+        "claims": [
+          "CL2",
+          "CL3",
+          "CL7"
+        ],
+        "reference_count": 2,
+        "references": [
+          {
+            "key": "cox1972regression",
+            "entry_type": "article",
+            "authors": "Cox, D. R.",
+            "year": "1972",
+            "title": "Regression Models and Life-Tables",
+            "venue": "Journal of the Royal Statistical Society Series B: Statistical Methodology",
+            "doi": "10.1111/j.2517-6161.1972.tb00899.x",
+            "url": "https://rss.onlinelibrary.wiley.com/doi/10.1111/j.2517-6161.1972.tb00899.x",
+            "used_for": "定义协变量、风险函数和 lambda(t) 的统计语言。",
+            "audit_status": "crossref-verified"
+          },
+          {
+            "key": "kaplan1958incomplete",
+            "entry_type": "article",
+            "authors": "Kaplan, E. L.; Meier, P.",
+            "year": "1958",
+            "title": "Nonparametric Estimation from Incomplete Observations",
+            "venue": "Journal of the American Statistical Association",
+            "doi": "10.1080/01621459.1958.10501452",
+            "url": "https://www.tandfonline.com/doi/abs/10.1080/01621459.1958.10501452",
+            "used_for": "定义生存曲线、删失数据和 T 的统计语言。",
+            "audit_status": "crossref-verified"
+          }
+        ]
+      },
+      {
+        "context_id": "CTX2",
+        "source_group": "Grossman Health Capital; WHO HALE; NICE QALY",
+        "used_for": "把日历寿命转译为健康质量、有效时间和质量调整时间。",
+        "supports": "T -> E 的测量语言和健康质量调整视角。",
+        "does_not_support": "不能完整定义主体连续性，也不能替代个体医学判断。",
+        "citation_status": "KEEP WITH BOUNDARY",
+        "claims": [
+          "CL1",
+          "CL2"
+        ],
+        "reference_count": 3,
+        "references": [
+          {
+            "key": "grossman1972healthcapital",
+            "entry_type": "article",
+            "authors": "Grossman, M.",
+            "year": "1972",
+            "title": "On the Concept of Health Capital and the Demand for Health",
+            "venue": "Journal of Political Economy",
+            "doi": "10.1086/259880",
+            "url": "https://www.journals.uchicago.edu/doi/10.1086/259880",
+            "used_for": "把健康资本、有效时间和日历时间区分开。",
+            "audit_status": "crossref-verified"
+          },
+          {
+            "key": "niceEconomicEvaluation",
+            "entry_type": "official-web",
+            "authors": "National Institute for Health and Care Excellence",
+            "year": "n.d.",
+            "title": "Economic evaluation",
+            "venue": "NICE health technology evaluations manual",
+            "doi": "",
+            "url": "https://www.nice.org.uk/process/pmg36/chapter/economic-evaluation-2",
+            "used_for": "提供 QALY 与健康经济评价的政策语言。",
+            "audit_status": "official-url-200"
+          },
+          {
+            "key": "whohale7752",
+            "entry_type": "official-web",
+            "authors": "World Health Organization",
+            "year": "n.d.",
+            "title": "Healthy life expectancy (HALE) metadata",
+            "venue": "Global Health Observatory Indicator Metadata Registry",
+            "doi": "",
+            "url": "https://www.who.int/data/gho/indicator-metadata-registry/imr-details/7752",
+            "used_for": "提供健康寿命指标的官方定义入口。",
+            "audit_status": "official-url-200"
+          }
+        ]
+      },
+      {
+        "context_id": "CTX3",
+        "source_group": "Hallmarks of Aging; GrimAge; Cognitive Reserve",
+        "used_for": "提出身体状态、衰老机制、生物年龄信号和认知储备候选变量。",
+        "supports": "状态变量和风险信号的机制/关联入口。",
+        "does_not_support": "不能把机制综述、预测关联或认知储备直接写成干预效果。",
+        "citation_status": "KEEP WITH BOUNDARY",
+        "claims": [
+          "CL7"
+        ],
+        "reference_count": 3,
+        "references": [
+          {
+            "key": "lopezotin2013hallmarks",
+            "entry_type": "article",
+            "authors": "Lopez-Otin, C.; Blasco, M. A.; Partridge, L.; Serrano, M.; Kroemer, G.",
+            "year": "2013",
+            "title": "The Hallmarks of Aging",
+            "venue": "Cell",
+            "doi": "10.1016/j.cell.2013.05.039",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3836174/",
+            "used_for": "提出衰老状态变量和机制入口。",
+            "audit_status": "crossref-verified"
+          },
+          {
+            "key": "lu2019grimage",
+            "entry_type": "article",
+            "authors": "Lu, A. T.; Quach, A.; Wilson, J. G.; Reiner, A. P.; Aviv, A.; Raj, K.; Hou, L.; Baccarelli, A. A.; Li, Y.; Stewart, J. D.; Whitsel, E. A.; Assimes, T. L.; Ferrucci, L.; Horvath, S.",
+            "year": "2019",
+            "title": "DNA methylation GrimAge strongly predicts lifespan and healthspan",
+            "venue": "Aging",
+            "doi": "10.18632/aging.101684",
+            "url": "https://www.aging-us.com/article/101684",
+            "used_for": "作为生物年龄、死亡风险和健康寿命信号入口。",
+            "audit_status": "crossref-verified"
+          },
+          {
+            "key": "stern2012cognitiveReserve",
+            "entry_type": "article",
+            "authors": "Stern, Y.",
+            "year": "2012",
+            "title": "Cognitive reserve in ageing and Alzheimer's disease",
+            "venue": "The Lancet Neurology",
+            "doi": "10.1016/S1474-4422(12)70191-6",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/23079557/",
+            "used_for": "说明认知储备作为状态变量和风险信号的边界。",
+            "audit_status": "crossref-verified"
+          }
+        ]
+      },
+      {
+        "context_id": "CTX4",
+        "source_group": "Deliberate Practice; Law of Practice; Self-Regulated Learning; Feedback Intervention Theory",
+        "used_for": "解释 E -> R -> C：有效时间如何在有目标、有反馈和可修正的任务中沉淀为能力。",
+        "supports": "学习轮次、反馈质量、练习曲线和能力积累的条件。",
+        "does_not_support": "时间本身不会自动产生能力；错误反馈和低质量重复可能反向损害表现。",
+        "citation_status": "KEEP WITH BOUNDARY",
+        "claims": [
+          "CL1",
+          "CL2"
+        ],
+        "reference_count": 4,
+        "references": [
+          {
+            "key": "ericsson1993deliberatePractice",
+            "entry_type": "article",
+            "authors": "Ericsson, K. A.; Krampe, R. T.; Tesch-Romer, C.",
+            "year": "1993",
+            "title": "The role of deliberate practice in the acquisition of expert performance",
+            "venue": "Psychological Review",
+            "doi": "10.1037/0033-295X.100.3.363",
+            "url": "https://eric.ed.gov/?id=EJ471947",
+            "used_for": "解释有效时间进入有反馈练习轮次的条件。",
+            "audit_status": "crossref-verified"
+          },
+          {
+            "key": "kluger1996feedback",
+            "entry_type": "article",
+            "authors": "Kluger, A. N.; DeNisi, A.",
+            "year": "1996",
+            "title": "The effects of feedback interventions on performance: A historical review, a meta-analysis, and a preliminary feedback intervention theory",
+            "venue": "Psychological Bulletin",
+            "doi": "10.1037/0033-2909.119.2.254",
+            "url": "https://doi.org/10.1037/0033-2909.119.2.254",
+            "used_for": "说明反馈可能提升表现，也可能因设计错误降低表现。",
+            "audit_status": "crossref-verified"
+          },
+          {
+            "key": "newell1981lawPractice",
+            "entry_type": "inproceedings",
+            "authors": "Newell, A.; Rosenbloom, P. S.",
+            "year": "2013",
+            "title": "Mechanisms of Skill Acquisition and the Law of Practice: Allen Newell and Paul S. Rosenbloom",
+            "venue": "Cognitive Skills and Their Acquisition",
+            "doi": "10.4324/9780203728178-6",
+            "url": "https://www.taylorfrancis.com/chapters/edit/10.4324/9780203728178-6/mechanisms-skill-acquisition-law-practice-allen-newell-paul-rosenbloom",
+            "used_for": "为重复轮次、练习曲线和能力增长提供认知模型入口。",
+            "audit_status": "crossref-verified-corrected-doi"
+          },
+          {
+            "key": "zimmerman2002selfRegulated",
+            "entry_type": "article",
+            "authors": "Zimmerman, B. J.",
+            "year": "2002",
+            "title": "Becoming a Self-Regulated Learner: An Overview",
+            "venue": "Theory Into Practice",
+            "doi": "10.1207/S15430421TIP4102_2",
+            "url": "https://www.tandfonline.com/doi/abs/10.1207/s15430421tip4102_2",
+            "used_for": "说明学习轮次需要目标设定、自我监控、反馈和策略调整。",
+            "audit_status": "doi-verified"
+          }
+        ]
+      },
+      {
+        "context_id": "CTX5",
+        "source_group": "Human Capital; Social Capital; Social Relationships Mortality",
+        "used_for": "说明经验、资源、信誉和协作网络如何进入 C 与 O，并可能反哺 T/E。",
+        "supports": "积累资本、社会支持和死亡风险关联的讨论。",
+        "does_not_support": "不能把社会关系关联直接升级成具体干预的因果延寿结论。",
+        "citation_status": "KEEP WITH BOUNDARY",
+        "claims": [
+          "CL1",
+          "CL2",
+          "CL5"
+        ],
+        "reference_count": 3,
+        "references": [
+          {
+            "key": "coleman1988socialCapital",
+            "entry_type": "article",
+            "authors": "Coleman, J. S.",
+            "year": "1988",
+            "title": "Social Capital in the Creation of Human Capital",
+            "venue": "American Journal of Sociology",
+            "doi": "10.1086/228943",
+            "url": "https://www.journals.uchicago.edu/doi/10.1086/228943",
+            "used_for": "说明关系、信任、规范和网络如何成为能力形成条件。",
+            "audit_status": "doi-verified"
+          },
+          {
+            "key": "holtlunstad2010social",
+            "entry_type": "article",
+            "authors": "Holt-Lunstad, J.; Smith, T. B.; Layton, J. B.",
+            "year": "2010",
+            "title": "Social Relationships and Mortality Risk: A Meta-analytic Review",
+            "venue": "PLoS Medicine",
+            "doi": "10.1371/journal.pmed.1000316",
+            "url": "https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1000316",
+            "used_for": "讨论社会关系与死亡风险的关联证据边界。",
+            "audit_status": "crossref-verified"
+          },
+          {
+            "key": "mincer1974humanCapital",
+            "entry_type": "book",
+            "authors": "Mincer, J.",
+            "year": "1974",
+            "title": "Schooling, Experience, and Earnings",
+            "venue": "National Bureau of Economic Research",
+            "doi": "",
+            "url": "https://www.nber.org/books-and-chapters/schooling-experience-and-earnings",
+            "used_for": "说明教育、经验和长期积累如何进入人力资本模型。",
+            "audit_status": "official-archive"
+          }
+        ]
+      },
+      {
+        "context_id": "CTX6",
+        "source_group": "TAM; UTAUT; Diffusion of Innovations",
+        "used_for": "解释 C -> A：技术采用受有用性、易用性、促进条件、资源和社会影响约束。",
+        "supports": "技术采用能力的分解：access、understanding、evaluation、trial、integration。",
+        "does_not_support": "不能证明采用后的技术一定有效，也不能覆盖所有高风险医学或神经技术。",
+        "citation_status": "KEEP WITH BOUNDARY",
+        "claims": [
+          "CL1",
+          "CL2"
+        ],
+        "reference_count": 3,
+        "references": [
+          {
+            "key": "davis1989tam",
+            "entry_type": "article",
+            "authors": "Davis, F. D.",
+            "year": "1989",
+            "title": "Perceived Usefulness, Perceived Ease of Use, and User Acceptance of Information Technology",
+            "venue": "MIS Quarterly",
+            "doi": "10.2307/249008",
+            "url": "https://misq.umn.edu/misq/article/13/3/319/191/Perceived-Usefulness-Perceived-Ease-of-Use-and",
+            "used_for": "解释技术采用能力中的有用性和易用性。",
+            "audit_status": "crossref-verified"
+          },
+          {
+            "key": "rogers2003diffusion",
+            "entry_type": "book",
+            "authors": "Rogers, E. M.",
+            "year": "2003",
+            "title": "Diffusion of Innovations",
+            "venue": "Free Press",
+            "doi": "",
+            "url": "https://archive.org/details/diffusionofinnov0005roge",
+            "used_for": "说明技术成熟、扩散、采用者差异和社会系统时间窗口。",
+            "audit_status": "bibliographic-record-verified-isbn"
+          },
+          {
+            "key": "venkatesh2003utaut",
+            "entry_type": "article",
+            "authors": "Venkatesh, V.; Morris, M. G.; Davis, G. B.; Davis, F. D.",
+            "year": "2003",
+            "title": "User Acceptance of Information Technology: Toward a Unified View",
+            "venue": "MIS Quarterly",
+            "doi": "10.2307/30036540",
+            "url": "https://misq.umn.edu/misq/article/27/3/425/1340/User-Acceptance-of-Information-Technology-Toward-A",
+            "used_for": "解释技术采用中的促进条件、社会影响和努力预期。",
+            "audit_status": "crossref-verified"
+          }
+        ]
+      },
+      {
+        "context_id": "CTX7",
+        "source_group": "Generative AI at Work; Noy and Zhang; GitHub Copilot; Jagged Technological Frontier",
+        "used_for": "支持 A -> Q 在限定任务中的生产率、速度、质量或任务边界证据。",
+        "supports": "生成式 AI 在客服、写作、编程或知识工作实验中的任务内效果与异质性。",
+        "does_not_support": "不能泛化为通用智能增强、健康寿命延长或永生收益。",
+        "citation_status": "KEEP WITH BOUNDARY",
+        "claims": [
+          "CL1",
+          "CL2",
+          "CL4",
+          "CL7"
+        ],
+        "reference_count": 4,
+        "references": [
+          {
+            "key": "brynjolfsson2025generative",
+            "entry_type": "article",
+            "authors": "Brynjolfsson, E.; Li, D.; Raymond, L.",
+            "year": "2025",
+            "title": "Generative AI at Work",
+            "venue": "The Quarterly Journal of Economics",
+            "doi": "10.1093/qje/qjae044",
+            "url": "https://academic.oup.com/qje/article/140/2/889/7990658",
+            "used_for": "支持限定客服任务中的 AI productivity 证据。",
+            "audit_status": "crossref-verified-corrected-doi"
+          },
+          {
+            "key": "dellacqua2026jagged",
+            "entry_type": "article",
+            "authors": "Dell'Acqua, F.; McFowland, E.; Mollick, E.; Lifshitz-Assaf, H.; Kellogg, K.; Rajendran, S.; Krayer, L.; Candelon, F.; Lakhani, K. R.",
+            "year": "2026",
+            "title": "Navigating the Jagged Technological Frontier: Field Experimental Evidence of the Effects of Artificial Intelligence on Knowledge Worker Productivity and Quality",
+            "venue": "Organization Science",
+            "doi": "10.1287/orsc.2025.21838",
+            "url": "https://pubsonline.informs.org/doi/10.1287/orsc.2025.21838",
+            "used_for": "支持 AI 收益与风险具有任务边界。",
+            "audit_status": "crossref-verified"
+          },
+          {
+            "key": "noy2023productivity",
+            "entry_type": "article",
+            "authors": "Noy, S.; Zhang, W.",
+            "year": "2023",
+            "title": "Experimental evidence on the productivity effects of generative artificial intelligence",
+            "venue": "Science",
+            "doi": "10.1126/science.adh2586",
+            "url": "https://www.science.org/doi/10.1126/science.adh2586",
+            "used_for": "支持写作任务内的生成式 AI 生产率证据。",
+            "audit_status": "crossref-verified"
+          },
+          {
+            "key": "peng2023copilot",
+            "entry_type": "arxiv",
+            "authors": "Peng, S.; Kalliamvakou, E.; Cihon, P.; Demirer, M.",
+            "year": "2023",
+            "title": "The Impact of AI on Developer Productivity: Evidence from GitHub Copilot",
+            "venue": "arXiv",
+            "doi": "",
+            "url": "https://arxiv.org/abs/2302.06590",
+            "used_for": "支持限定编程任务中的 AI pair programmer 生产率入口。",
+            "audit_status": "arxiv-api-verified"
+          }
+        ]
+      },
+      {
+        "context_id": "CTX8",
+        "source_group": "NIST AI RMF; Guidelines for Human-AI Interaction; NASA-TLX; Automation taxonomy",
+        "used_for": "给 A/Q -> risk、QA 成本、任务负荷、自动化等级和人机控制权提供治理语言。",
+        "supports": "风险识别、测量、纠错、回滚和人机协作设计边界。",
+        "does_not_support": "治理框架和交互指南不提供收益估计，也不证明 AI 能延寿。",
+        "citation_status": "KEEP",
+        "claims": [
+          "CL2",
+          "CL4",
+          "CL6",
+          "CL7"
+        ],
+        "reference_count": 6,
+        "references": [
+          {
+            "key": "amershi2019hai",
+            "entry_type": "inproceedings",
+            "authors": "Amershi, S.; Weld, D.; Vorvoreanu, M.; Fourney, A.; Nushi, B.; Collisson, P.; Suh, J.; Iqbal, S.; Bennett, P. N.; Inkpen, K.; Teevan, J.; Kikin-Gil, R.; Horvitz, E.",
+            "year": "2019",
+            "title": "Guidelines for Human-AI Interaction",
+            "venue": "Proceedings of the 2019 CHI Conference on Human Factors in Computing Systems",
+            "doi": "10.1145/3290605.3300233",
+            "url": "https://dl.acm.org/doi/10.1145/3290605.3300233",
+            "used_for": "提供人机协作设计、纠错和控制权边界。",
+            "audit_status": "crossref-verified"
+          },
+          {
+            "key": "burwell2017bciEthics",
+            "entry_type": "article",
+            "authors": "Burwell, S.; Sample, M.; Racine, E.",
+            "year": "2017",
+            "title": "Ethical aspects of brain computer interfaces: a scoping review",
+            "venue": "BMC Medical Ethics",
+            "doi": "10.1186/s12910-017-0220-y",
+            "url": "https://bmcmedethics.biomedcentral.com/articles/10.1186/s12910-017-0220-y",
+            "used_for": "为脑机接口、神经技术、同意、身份和主体边界提供风险治理入口。",
+            "audit_status": "doi-verified"
+          },
+          {
+            "key": "dellacqua2026jagged",
+            "entry_type": "article",
+            "authors": "Dell'Acqua, F.; McFowland, E.; Mollick, E.; Lifshitz-Assaf, H.; Kellogg, K.; Rajendran, S.; Krayer, L.; Candelon, F.; Lakhani, K. R.",
+            "year": "2026",
+            "title": "Navigating the Jagged Technological Frontier: Field Experimental Evidence of the Effects of Artificial Intelligence on Knowledge Worker Productivity and Quality",
+            "venue": "Organization Science",
+            "doi": "10.1287/orsc.2025.21838",
+            "url": "https://pubsonline.informs.org/doi/10.1287/orsc.2025.21838",
+            "used_for": "支持 AI 收益与风险具有任务边界。",
+            "audit_status": "crossref-verified"
+          },
+          {
+            "key": "nasaTlx",
+            "entry_type": "official-web",
+            "authors": "NASA",
+            "year": "n.d.",
+            "title": "NASA Task Load Index",
+            "venue": "NASA Human Systems Integration Division",
+            "doi": "",
+            "url": "https://www.nasa.gov/human-systems-integration-division/nasa-task-load-index-tlx/",
+            "used_for": "提供任务负荷、时间压力、努力和挫败感测量入口。",
+            "audit_status": "official-web-registered"
+          },
+          {
+            "key": "nist2023airmf",
+            "entry_type": "standard",
+            "authors": "National Institute of Standards and Technology",
+            "year": "2023",
+            "title": "Artificial Intelligence Risk Management Framework (AI RMF 1.0)",
+            "venue": "NIST",
+            "doi": "",
+            "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+            "used_for": "提供 AI 风险识别、测量、治理和回滚语言。",
+            "audit_status": "official-url-200"
+          },
+          {
+            "key": "parasuraman2000automation",
+            "entry_type": "article",
+            "authors": "Parasuraman, R.; Sheridan, T. B.; Wickens, C. D.",
+            "year": "2000",
+            "title": "A model for types and levels of human interaction with automation",
+            "venue": "IEEE Transactions on Systems, Man, and Cybernetics - Part A: Systems and Humans",
+            "doi": "10.1109/3468.844354",
+            "url": "https://ieeexplore.ieee.org/document/844354",
+            "used_for": "拆分自动化类型、等级和人机控制权。",
+            "audit_status": "crossref-verified"
+          }
+        ]
+      },
+      {
+        "context_id": "CTX9",
+        "source_group": "Target Trial Emulation; ClinicalTrials.gov; WHO ICTRP; TRIPOD+AI; PROBAST+AI; CONSORT-AI; SPIRIT-AI",
+        "used_for": "定义 U_t -> causal claim 的因果门禁和预测模型报告门禁。",
+        "supports": "population、intervention、comparator、time zero、outcome、estimand、试验登记、AI 干预报告、验证、校准和偏倚审查。",
+        "does_not_support": "不能消除所有不可测混杂，也不证明任何注册试验或预测模型有效。",
+        "citation_status": "KEEP",
+        "claims": [
+          "CL3",
+          "CL6",
+          "CL7"
+        ],
+        "reference_count": 11,
+        "references": [
+          {
+            "key": "clinicaltrialsGov",
+            "entry_type": "registry",
+            "authors": "U.S. National Library of Medicine",
+            "year": "n.d.",
+            "title": "ClinicalTrials.gov",
+            "venue": "ClinicalTrials.gov",
+            "doi": "",
+            "url": "https://clinicaltrials.gov/",
+            "used_for": "提供临床试验登记、人群、比较组、结局和结果回填入口。",
+            "audit_status": "official-url-200"
+          },
+          {
+            "key": "clinicaltrialsGovApi",
+            "entry_type": "official-web",
+            "authors": "U.S. National Library of Medicine",
+            "year": "n.d.",
+            "title": "ClinicalTrials.gov Data API",
+            "venue": "ClinicalTrials.gov",
+            "doi": "",
+            "url": "https://clinicaltrials.gov/data-api/about-api",
+            "used_for": "提供结构化试验注册与结果数据的机器读取入口，用于后续试验证据采集和协议字段回填。",
+            "audit_status": "official-url-200"
+          },
+          {
+            "key": "consortAi2020",
+            "entry_type": "article",
+            "authors": "Liu, X.; Cruz Rivera, S.; Moher, D.; Calvert, M. J.; Denniston, A. K.; et al.",
+            "year": "2020",
+            "title": "Reporting guidelines for clinical trial reports for interventions involving artificial intelligence: the CONSORT-AI extension",
+            "venue": "Nature Medicine",
+            "doi": "10.1038/s41591-020-1034-x",
+            "url": "https://www.nature.com/articles/s41591-020-1034-x",
+            "used_for": "约束 AI 干预临床试验结果报告中的干预说明、输入输出、人机交互和错误案例分析。",
+            "audit_status": "doi-verified"
+          },
+          {
+            "key": "gradeHandbook",
+            "entry_type": "guideline-web",
+            "authors": "GRADE Working Group",
+            "year": "n.d.",
+            "title": "GRADE Handbook",
+            "venue": "GRADE Working Group",
+            "doi": "",
+            "url": "https://gdt.gradepro.org/app/handbook/handbook.html",
+            "used_for": "提供证据确定性、收益风险权衡和从证据到建议的政策语言。",
+            "audit_status": "official-web"
+          },
+          {
+            "key": "hernan2022targetTrial",
+            "entry_type": "article",
+            "authors": "Hernan, M. A.; Wang, W.; Leaf, D. E.",
+            "year": "2022",
+            "title": "Target Trial Emulation",
+            "venue": "JAMA",
+            "doi": "10.1001/jama.2022.21383",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/36508210/",
+            "used_for": "定义因果协议门禁和观察数据因果推断边界。",
+            "audit_status": "crossref-verified"
+          },
+          {
+            "key": "probastAi2025",
+            "entry_type": "article",
+            "authors": "Moons, K. G. M.; et al.",
+            "year": "2025",
+            "title": "PROBAST+AI: an updated quality, risk of bias, and applicability assessment tool for prediction models using regression or artificial intelligence methods",
+            "venue": "BMJ",
+            "doi": "10.1136/bmj-2024-082505",
+            "url": "https://www.bmj.com/content/388/bmj-2024-082505",
+            "used_for": "提供 AI 预测模型研究的偏倚风险、适用性、可信度、公平性和质量审查门禁。",
+            "audit_status": "doi-and-official-site-verified"
+          },
+          {
+            "key": "robins2000marginalStructural",
+            "entry_type": "article",
+            "authors": "Robins, J. M.; Hernan, M. A.; Brumback, B.",
+            "year": "2000",
+            "title": "Marginal Structural Models and Causal Inference in Epidemiology",
+            "venue": "Epidemiology",
+            "doi": "10.1097/00001648-200009000-00011",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/10955408/",
+            "used_for": "说明时间变化混杂下的因果估计入口和边界。",
+            "audit_status": "pubmed-verified"
+          },
+          {
+            "key": "spiritAi2020",
+            "entry_type": "article",
+            "authors": "Cruz Rivera, S.; Liu, X.; Chan, A.-W.; Denniston, A. K.; Calvert, M. J.; et al.",
+            "year": "2020",
+            "title": "Guidelines for clinical trial protocols for interventions involving artificial intelligence: the SPIRIT-AI extension",
+            "venue": "Nature Medicine",
+            "doi": "10.1038/s41591-020-1037-7",
+            "url": "https://www.nature.com/articles/s41591-020-1037-7",
+            "used_for": "约束 AI 干预临床试验方案中的协议透明度、输入输出、人机交互和错误分析计划。",
+            "audit_status": "doi-verified"
+          },
+          {
+            "key": "tripodAi2024",
+            "entry_type": "article",
+            "authors": "Collins, G. S.; Moons, K. G. M.; et al.",
+            "year": "2024",
+            "title": "TRIPOD+AI statement: updated guidance for reporting clinical prediction models that use regression or machine learning methods",
+            "venue": "BMJ",
+            "doi": "10.1136/bmj-2023-078378",
+            "url": "https://www.bmj.com/content/385/bmj-2023-078378",
+            "used_for": "提供 AI/机器学习临床预测模型的报告清单、外部验证、校准和透明度门禁。",
+            "audit_status": "doi-and-official-site-verified"
+          },
+          {
+            "key": "tripodProbast",
+            "entry_type": "guideline-web",
+            "authors": "TRIPOD Statement; PROBAST",
+            "year": "n.d.",
+            "title": "TRIPOD Statement and PROBAST",
+            "venue": "Prediction model reporting and risk-of-bias guidance",
+            "doi": "",
+            "url": "https://www.tripod-statement.org/",
+            "used_for": "约束预测模型报告质量、偏倚风险、校准和外部验证。",
+            "audit_status": "official-urls-200"
+          },
+          {
+            "key": "whoIctrp",
+            "entry_type": "registry",
+            "authors": "World Health Organization",
+            "year": "n.d.",
+            "title": "International Clinical Trials Registry Platform (ICTRP)",
+            "venue": "World Health Organization",
+            "doi": "",
+            "url": "https://www.who.int/tools/clinical-trials-registry-platform",
+            "used_for": "提供国际临床试验注册网络、WHO 数据集和试验透明度原则的上位入口。",
+            "audit_status": "official-url-200"
+          }
+        ]
+      },
+      {
+        "context_id": "CTX10",
+        "source_group": "Apple Heart Study; Personal Informatics; Lived Informatics; Dynamic Digital Twin",
+        "used_for": "说明观测、反馈、个人数据系统和生命过程建模如何进入状态观测层。",
+        "supports": "observation -> action 的路径和自我追踪/数字孪生的系统问题。",
+        "does_not_support": "早筛、追踪或数字孪生概念不等于死亡风险下降或医疗结局改善。",
+        "citation_status": "KEEP WITH BOUNDARY",
+        "claims": [
+          "CL6"
+        ],
+        "reference_count": 4,
+        "references": [
+          {
+            "key": "epstein2015lived",
+            "entry_type": "inproceedings",
+            "authors": "Epstein, D. A.; Ping, A.; Fogarty, J.; Munson, S. A.",
+            "year": "2015",
+            "title": "A lived informatics model of personal informatics",
+            "venue": "Proceedings of the 2015 ACM International Joint Conference on Pervasive and Ubiquitous Computing",
+            "doi": "10.1145/2750858.2804250",
+            "url": "https://dl.acm.org/doi/10.1145/2750858.2804250",
+            "used_for": "说明长期自我追踪系统的生活嵌入、维护负担和断裂点。",
+            "audit_status": "crossref-verified"
+          },
+          {
+            "key": "li2010personalInformatics",
+            "entry_type": "inproceedings",
+            "authors": "Li, I.; Dey, A.; Forlizzi, J.",
+            "year": "2010",
+            "title": "A stage-based model of personal informatics systems",
+            "venue": "Proceedings of the SIGCHI Conference on Human Factors in Computing Systems",
+            "doi": "10.1145/1753326.1753409",
+            "url": "https://dl.acm.org/doi/10.1145/1753326.1753409",
+            "used_for": "提供个人信息学的准备、收集、整合、反思和行动阶段。",
+            "audit_status": "crossref-verified"
+          },
+          {
+            "key": "mulder2022dynamicDigitalTwin",
+            "entry_type": "article",
+            "authors": "Mulder, W. J. M.; et al.",
+            "year": "2022",
+            "title": "Dynamic Digital Twin: Diagnosis, Treatment, Prediction, and Prevention of Disease During the Life Course",
+            "venue": "Journal of Medical Internet Research",
+            "doi": "10.2196/35675",
+            "url": "https://www.jmir.org/2022/9/e35675",
+            "used_for": "说明生命过程中的状态观测、预测、预防和数字孪生建模入口。",
+            "audit_status": "publisher-verified"
+          },
+          {
+            "key": "perez2019appleHeart",
+            "entry_type": "article",
+            "authors": "Perez, M. V.; Mahaffey, K. W.; Hedlin, H.; Rumsfeld, J. S.; Garcia, A.; Ferris, T.; Balasubramanian, V.; Russo, A. M.; Rajmane, A.; Cheung, L.; Hung, G.; Lee, J.; Kowey, P.; Talati, N.; Nag, D.; Gummidipundi, S. E.; Beatty, A.; Hills, M. T.; Desai, S.; Granger, C. B.; Desai, M.; Turakhia, M. P.",
+            "year": "2019",
+            "title": "Large-Scale Assessment of a Smartwatch to Identify Atrial Fibrillation",
+            "venue": "New England Journal of Medicine",
+            "doi": "10.1056/NEJMoa1901183",
+            "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa1901183",
+            "used_for": "说明可穿戴设备进入大规模风险提示和临床确认通道。",
+            "audit_status": "crossref-verified"
+          }
+        ]
+      },
+      {
+        "context_id": "CTX11",
+        "source_group": "Extended Mind; Engelbart; Cognition in the Wild",
+        "used_for": "支撑工具、记忆外化、分布式认知和认知增强进入主体系统的理论位置。",
+        "supports": "主体能力可以由人、工具、表征、环境和协作流程共同支撑。",
+        "does_not_support": "哲学和系统框架不提供数值效应估计，也不能证明数字副本等同于本人。",
+        "citation_status": "KEEP WITH BOUNDARY",
+        "claims": [
+          "CL6"
+        ],
+        "reference_count": 4,
+        "references": [
+          {
+            "key": "burwell2017bciEthics",
+            "entry_type": "article",
+            "authors": "Burwell, S.; Sample, M.; Racine, E.",
+            "year": "2017",
+            "title": "Ethical aspects of brain computer interfaces: a scoping review",
+            "venue": "BMC Medical Ethics",
+            "doi": "10.1186/s12910-017-0220-y",
+            "url": "https://bmcmedethics.biomedcentral.com/articles/10.1186/s12910-017-0220-y",
+            "used_for": "为脑机接口、神经技术、同意、身份和主体边界提供风险治理入口。",
+            "audit_status": "doi-verified"
+          },
+          {
+            "key": "clark1998extended",
+            "entry_type": "article",
+            "authors": "Clark, A.; Chalmers, D.",
+            "year": "1998",
+            "title": "The Extended Mind",
+            "venue": "Analysis",
+            "doi": "10.1093/analys/58.1.7",
+            "url": "https://academic.oup.com/analysis/article-pdf/58/1/7/359060/58-1-7.pdf",
+            "used_for": "支撑工具、记忆外化和认知扩展进入主体系统。",
+            "audit_status": "crossref-verified"
+          },
+          {
+            "key": "engelbart1962augmenting",
+            "entry_type": "report",
+            "authors": "Engelbart, D. C.",
+            "year": "1962",
+            "title": "Augmenting Human Intellect: A Conceptual Framework",
+            "venue": "Stanford Research Institute report",
+            "doi": "",
+            "url": "https://www.dougengelbart.org/pubs/augment-3906.html",
+            "used_for": "提供人、工具、概念和方法作为增强系统的经典框架。",
+            "audit_status": "official-archive-registered"
+          },
+          {
+            "key": "hutchins1995cognition",
+            "entry_type": "book",
+            "authors": "Hutchins, E.",
+            "year": "1995",
+            "title": "Cognition in the Wild",
+            "venue": "MIT Press",
+            "doi": "",
+            "url": "https://pages.ucsd.edu/~ehutchins/citw.html",
+            "used_for": "提供分布式认知和环境嵌入式问题求解框架。",
+            "audit_status": "author-page-verified"
+          }
+        ]
+      },
+      {
+        "context_id": "CTX12",
+        "source_group": "Capability Approach; WHO SDOH; WHO Primary Health Care",
+        "used_for": "定义 O 可能性空间为真实可进入路径，并把资源、制度、医疗和社会条件纳入反哺路径。",
+        "supports": "真实选择权、健康决定因素、医疗可及和连续照护的规范/公共卫生框架。",
+        "does_not_support": "规范框架不提供寿命预测，也不能替代具体政策或医疗干预评估。",
+        "citation_status": "KEEP WITH BOUNDARY",
+        "claims": [
+          "CL1",
+          "CL2",
+          "CL5"
+        ],
+        "reference_count": 2,
+        "references": [
+          {
+            "key": "robeyns2021capability",
+            "entry_type": "encyclopedia",
+            "authors": "Robeyns, I.; Byskov, M. F.",
+            "year": "2021",
+            "title": "The Capability Approach",
+            "venue": "Stanford Encyclopedia of Philosophy",
+            "doi": "",
+            "url": "https://plato.stanford.edu/entries/capability-approach/",
+            "used_for": "定义真实可行能力和可能性空间。",
+            "audit_status": "official-web-registered"
+          },
+          {
+            "key": "whoSdhPhc",
+            "entry_type": "official-web",
+            "authors": "World Health Organization",
+            "year": "n.d.",
+            "title": "Social determinants of health and primary health care",
+            "venue": "WHO health topics",
+            "doi": "",
+            "url": "https://www.who.int/health-topics/social-determinants-of-health",
+            "used_for": "把健康和持续性放回收入、教育、住房、工作、环境和医疗可及条件中。",
+            "audit_status": "official-urls-200"
+          }
+        ]
+      }
+    ]
+  }
+}

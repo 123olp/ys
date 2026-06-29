@@ -5,7 +5,7 @@
 当前子域：
 
 - `longevity-evidence/`：长寿证据账本，承接原 Biocat。
-- `future-waiting/`：未来等待路径，承载黑洞等待室等“压缩等待 / 去未来”思想实验。
+- `future-waiting/`：未来等待路径，承载度规红移固有时差分路径（黑洞等待室）等“压缩等待 / 去未来”思想实验。
 - `disembodied-cns/`：去具身外部维持型中枢生命系统。
 - `memory-editing/`：记忆编辑与人格连续性。
 

@@ -1,0 +1,22 @@
+{
+  "audit_skill": "fresh-reviewer-citation-results-audit",
+  "verdict": "PENDING_EXTERNAL_REVIEW_RESULTS",
+  "reason_code": "fresh_reviewer_results_file_missing",
+  "summary": "Fresh reviewer results have not been recorded yet. A template has been generated for the external reviewer result ledger.",
+  "generated_at": "2026-06-29T00:00:00.000Z",
+  "audited_input_hashes": {
+    "src/data/effective-immortality-flywheel/FRESH_REVIEWER_CITATION_AUDIT_PROTOCOL.json": "sha256:2615318e3e11f7b5d9e0cb7db273b7d0dd0dabf9618b34ad685df8357a9222de"
+  },
+  "details": {
+    "source_protocol_hash": "sha256:2615318e3e11f7b5d9e0cb7db273b7d0dd0dabf9618b34ad685df8357a9222de",
+    "results_file_present": false,
+    "required_context_count": 12,
+    "completed_context_count": 0,
+    "blocking_finding_count": 0,
+    "warning_finding_count": 0,
+    "template_json": "web/src/data/effective-immortality-flywheel/FRESH_REVIEWER_CITATION_AUDIT_RESULTS_TEMPLATE.json",
+    "template_markdown": "web/src/data/effective-immortality-flywheel/FRESH_REVIEWER_CITATION_AUDIT_RESULTS_TEMPLATE.md",
+    "context_packet_index": "web/src/data/effective-immortality-flywheel/fresh-reviewer-context-packets/INDEX.md",
+    "findings": []
+  }
+}

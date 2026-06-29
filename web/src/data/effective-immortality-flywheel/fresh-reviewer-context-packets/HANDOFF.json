@@ -1,0 +1,303 @@
+{
+  "handoff_kind": "fresh-reviewer-citation-context-handoff",
+  "generated_at": "2026-06-29T00:00:00.000Z",
+  "source_protocol_hash": "sha256:2615318e3e11f7b5d9e0cb7db273b7d0dd0dabf9618b34ad685df8357a9222de",
+  "source_index_hash": "sha256:f0c58a433af078dde82e9aeb4cdc019838d6b76d50a4336905efa3436aab7d7d",
+  "packet_count": 12,
+  "result_schema": {
+    "path": "src/data/effective-immortality-flywheel/fresh-reviewer-context-packets/RESULT_SCHEMA.json",
+    "sha256": "sha256:2efec5cdc63f32e4cd9bdbd1d423ef71d2e95b83302cc48020fb5069e7fece9d",
+    "markdown_path": "src/data/effective-immortality-flywheel/fresh-reviewer-context-packets/RESULT_SCHEMA.md",
+    "markdown_sha256": "sha256:04a4b2df190a405d4fbe7558139d5f1948d33f8c4569aedad3746c2f0616b420"
+  },
+  "required_result_files": [
+    "web/src/data/effective-immortality-flywheel/fresh-reviewer-context-packets/results/CTX2.json",
+    "web/src/data/effective-immortality-flywheel/fresh-reviewer-context-packets/results/CTX3.json",
+    "web/src/data/effective-immortality-flywheel/fresh-reviewer-context-packets/results/CTX5.json",
+    "web/src/data/effective-immortality-flywheel/fresh-reviewer-context-packets/results/CTX7.json",
+    "web/src/data/effective-immortality-flywheel/fresh-reviewer-context-packets/results/CTX10.json",
+    "web/src/data/effective-immortality-flywheel/fresh-reviewer-context-packets/results/CTX11.json",
+    "web/src/data/effective-immortality-flywheel/fresh-reviewer-context-packets/results/CTX12.json",
+    "web/src/data/effective-immortality-flywheel/fresh-reviewer-context-packets/results/CTX9.json",
+    "web/src/data/effective-immortality-flywheel/fresh-reviewer-context-packets/results/CTX1.json",
+    "web/src/data/effective-immortality-flywheel/fresh-reviewer-context-packets/results/CTX4.json",
+    "web/src/data/effective-immortality-flywheel/fresh-reviewer-context-packets/results/CTX6.json",
+    "web/src/data/effective-immortality-flywheel/fresh-reviewer-context-packets/results/CTX8.json"
+  ],
+  "reviewer_independence_contract": [
+    "Fresh thread or independent reviewer required.",
+    "Web or primary-source lookup required for every reviewed context.",
+    "Local review artifacts are allowed only as a queue and boundary map, not as evidence of support.",
+    "Every context verdict must include source URL or retrieval note."
+  ],
+  "verdict_schema": {
+    "reference_existence": [
+      "PASS",
+      "FAIL",
+      "UNCERTAIN"
+    ],
+    "safe_use_support": [
+      "SUPPORTS",
+      "WEAK",
+      "WRONG"
+    ],
+    "forbidden_use_violation": [
+      "NONE",
+      "POSSIBLE",
+      "PRESENT"
+    ],
+    "required_action": [
+      "KEEP",
+      "SOFTEN",
+      "REWRITE",
+      "REMOVE",
+      "REPLACE_SOURCE"
+    ],
+    "resolution_status": [
+      "RESOLVED",
+      "ACCEPTED_WITH_BOUNDARY",
+      "PENDING_FIX",
+      "UNRESOLVED"
+    ]
+  },
+  "blocking_conditions": [
+    "Any FAIL or UNCERTAIN reference existence verdict without manual resolution.",
+    "Any WRONG safe-use support verdict.",
+    "Any PRESENT forbidden-use violation.",
+    "Any required_action of REMOVE or REPLACE_SOURCE unresolved in manuscript text."
+  ],
+  "workflow": [
+    "Open HANDOFF.md in a fresh reviewer context.",
+    "Review contexts in priority order and reopen every listed source, DOI page, official page, PDF, or retrieval note.",
+    "Judge reference existence, safe-use support, forbidden-use boundary, required action, and resolution status.",
+    "Write one completed result file per context under fresh-reviewer-context-packets/results/CTX*.json.",
+    "Run the assembler and audit commands; do not hand-edit the canonical results ledger."
+  ],
+  "return_checklist": [
+    "Every CTX*.json contains reviewer_identity_class, reviewed_at, source_urls, reviewer_reason, manuscript_change_required, manuscript_change_summary, and reviewer_trace_path.",
+    "Every source_urls array points to reviewer-opened sources or explicit retrieval notes.",
+    "No result uses local author claims as evidence.",
+    "Any SOFTEN, REWRITE, REMOVE, REPLACE_SOURCE, WEAK, WRONG, POSSIBLE, or PRESENT verdict is either resolved in manuscript text or remains blocking.",
+    "Canonical results are produced only by npm run assemble:fresh-reviewer-results."
+  ],
+  "packets": [
+    {
+      "priority": 1,
+      "context_id": "CTX2",
+      "risk_tier": "HIGH",
+      "risk_score": 6,
+      "source_group": "Grossman Health Capital; WHO HALE; NICE QALY",
+      "source_packet_hash": "sha256:6e1b5510b3cfc90a42b83baa2296fcf00d95cfa2110090862278132faf348b47",
+      "required_result_file": "results/CTX2.json"
+    },
+    {
+      "priority": 2,
+      "context_id": "CTX3",
+      "risk_tier": "MEDIUM",
+      "risk_score": 4,
+      "source_group": "Hallmarks of Aging; GrimAge; Cognitive Reserve",
+      "source_packet_hash": "sha256:1405d79c71101e6485bb2e6a2666a348765014ff32214081abafad499ba94772",
+      "required_result_file": "results/CTX3.json"
+    },
+    {
+      "priority": 3,
+      "context_id": "CTX5",
+      "risk_tier": "MEDIUM",
+      "risk_score": 4,
+      "source_group": "Human Capital; Social Capital; Social Relationships Mortality",
+      "source_packet_hash": "sha256:49f51628c09a88d652b154cebd2dd20fb603ed9857909e4684883c8fe30f0c6b",
+      "required_result_file": "results/CTX5.json"
+    },
+    {
+      "priority": 4,
+      "context_id": "CTX7",
+      "risk_tier": "MEDIUM",
+      "risk_score": 4,
+      "source_group": "Generative AI at Work; Noy and Zhang; GitHub Copilot; Jagged Technological Frontier",
+      "source_packet_hash": "sha256:228a264f327d03c91936ddd37efde486ea264a1e579b48ca784f804bce1f74aa",
+      "required_result_file": "results/CTX7.json"
+    },
+    {
+      "priority": 5,
+      "context_id": "CTX10",
+      "risk_tier": "MEDIUM",
+      "risk_score": 4,
+      "source_group": "Apple Heart Study; Personal Informatics; Lived Informatics; Dynamic Digital Twin",
+      "source_packet_hash": "sha256:aae84842e1fa4b853f6850e7d20f44dca0246b20371cc02a14fe1a0d595a0b14",
+      "required_result_file": "results/CTX10.json"
+    },
+    {
+      "priority": 6,
+      "context_id": "CTX11",
+      "risk_tier": "MEDIUM",
+      "risk_score": 4,
+      "source_group": "Extended Mind; Engelbart; Cognition in the Wild",
+      "source_packet_hash": "sha256:bbe21dd388f5df084be08f67f09be10bc24e1f3e0b61715344a0bde6ba272dbf",
+      "required_result_file": "results/CTX11.json"
+    },
+    {
+      "priority": 7,
+      "context_id": "CTX12",
+      "risk_tier": "MEDIUM",
+      "risk_score": 4,
+      "source_group": "Capability Approach; WHO SDOH; WHO Primary Health Care",
+      "source_packet_hash": "sha256:ff776a253dc911981be4c1029c16c123929689cf6acba9c4a5eda93125f64794",
+      "required_result_file": "results/CTX12.json"
+    },
+    {
+      "priority": 8,
+      "context_id": "CTX9",
+      "risk_tier": "MEDIUM",
+      "risk_score": 3,
+      "source_group": "Target Trial Emulation; ClinicalTrials.gov; WHO ICTRP; TRIPOD+AI; PROBAST+AI; CONSORT-AI; SPIRIT-AI",
+      "source_packet_hash": "sha256:070e6f9334225a7de3cd2284e170dd09b0641da3a82b9563cabf13f580e082b5",
+      "required_result_file": "results/CTX9.json"
+    },
+    {
+      "priority": 9,
+      "context_id": "CTX1",
+      "risk_tier": "LOW",
+      "risk_score": 2,
+      "source_group": "Kaplan-Meier 1958; Cox 1972",
+      "source_packet_hash": "sha256:4451f9eff9343c8ed3de8fadc56b2bdd582f2888a345febc0280d46b9ee0f16a",
+      "required_result_file": "results/CTX1.json"
+    },
+    {
+      "priority": 10,
+      "context_id": "CTX4",
+      "risk_tier": "LOW",
+      "risk_score": 2,
+      "source_group": "Deliberate Practice; Law of Practice; Self-Regulated Learning; Feedback Intervention Theory",
+      "source_packet_hash": "sha256:8316c4ef281a7ad4a59f7d3d76549c58b74b1a56724a2a7c12e2592a00b192e2",
+      "required_result_file": "results/CTX4.json"
+    },
+    {
+      "priority": 11,
+      "context_id": "CTX6",
+      "risk_tier": "LOW",
+      "risk_score": 2,
+      "source_group": "TAM; UTAUT; Diffusion of Innovations",
+      "source_packet_hash": "sha256:8327d94320874e3628d33e2585da1146f6a469794015fb76b1edb24f58d5e2e5",
+      "required_result_file": "results/CTX6.json"
+    },
+    {
+      "priority": 12,
+      "context_id": "CTX8",
+      "risk_tier": "LOW",
+      "risk_score": 2,
+      "source_group": "NIST AI RMF; Guidelines for Human-AI Interaction; NASA-TLX; Automation taxonomy",
+      "source_packet_hash": "sha256:da10b8b501204fcc98a220c29488963000b8070ce220e9d00b24bd0617807cc3",
+      "required_result_file": "results/CTX8.json"
+    }
+  ],
+  "source_files": [
+    {
+      "path": "src/data/effective-immortality-flywheel/FRESH_REVIEWER_CITATION_AUDIT_PROTOCOL.json",
+      "sha256": "sha256:2615318e3e11f7b5d9e0cb7db273b7d0dd0dabf9618b34ad685df8357a9222de"
+    },
+    {
+      "path": "src/data/effective-immortality-flywheel/fresh-reviewer-context-packets/INDEX.json",
+      "sha256": "sha256:f0c58a433af078dde82e9aeb4cdc019838d6b76d50a4336905efa3436aab7d7d"
+    },
+    {
+      "path": "src/data/effective-immortality-flywheel/fresh-reviewer-context-packets/INDEX.md",
+      "sha256": "sha256:9f501d4a91f5691765d0c439e771cbb7e1c8c86f88fa7e6e3c4a4cb302d7d53e"
+    },
+    {
+      "path": "src/data/effective-immortality-flywheel/fresh-reviewer-context-packets/CTX2.json",
+      "sha256": "sha256:977041b50b7312614032958ddc5d16110ab8d7a548613c39335c1070c616ee09"
+    },
+    {
+      "path": "src/data/effective-immortality-flywheel/fresh-reviewer-context-packets/CTX2.md",
+      "sha256": "sha256:46477f71e520e51270656d1bf50b7cd7d73dc70ece2365cf3406cb8c8aec936d"
+    },
+    {
+      "path": "src/data/effective-immortality-flywheel/fresh-reviewer-context-packets/CTX3.json",
+      "sha256": "sha256:dafb1837adca7696d724c0b78fca1b182117b89707ed6dceeba485bbaea8b86d"
+    },
+    {
+      "path": "src/data/effective-immortality-flywheel/fresh-reviewer-context-packets/CTX3.md",
+      "sha256": "sha256:819324cf29e116b00254b5b8541d4b291f88210b24abc426802e1bef20ecc0e8"
+    },
+    {
+      "path": "src/data/effective-immortality-flywheel/fresh-reviewer-context-packets/CTX5.json",
+      "sha256": "sha256:bc72d7180728b65f0024327d8a6569cd58e0af890ad6423a58e16f2f31db8a12"
+    },
+    {
+      "path": "src/data/effective-immortality-flywheel/fresh-reviewer-context-packets/CTX5.md",
+      "sha256": "sha256:0ecad79432476cd626c0a5fc3d6c7a0b91f02916cb6c810bbb590d6ce56dccf3"
+    },
+    {
+      "path": "src/data/effective-immortality-flywheel/fresh-reviewer-context-packets/CTX7.json",
+      "sha256": "sha256:bdf6f6033b2012d38509dba96e287343c3041454f93f036ef572c999a992de0c"
+    },
+    {
+      "path": "src/data/effective-immortality-flywheel/fresh-reviewer-context-packets/CTX7.md",
+      "sha256": "sha256:b86d88927f022afefceefe1b760be5dca7dd0457e3c718b05917db7b0fd0a6f8"
+    },
+    {
+      "path": "src/data/effective-immortality-flywheel/fresh-reviewer-context-packets/CTX10.json",
+      "sha256": "sha256:d741a4f388ef8c6b1a0d72d38a945ebc8400f1b69d7fa9158dca038bd527c048"
+    },
+    {
+      "path": "src/data/effective-immortality-flywheel/fresh-reviewer-context-packets/CTX10.md",
+      "sha256": "sha256:2da6d41d9cfdd385ed7573a3ab8c6f80bf474d6ff5b199d795ec956f4f1641b7"
+    },
+    {
+      "path": "src/data/effective-immortality-flywheel/fresh-reviewer-context-packets/CTX11.json",
+      "sha256": "sha256:7b1a59a1929259fed90f980e65851ff76479e1f0635a108c97aa43844d0e3cc0"
+    },
+    {
+      "path": "src/data/effective-immortality-flywheel/fresh-reviewer-context-packets/CTX11.md",
+      "sha256": "sha256:10c62ba18e1b22f77a6de4df090b8157fbc7604dd4922c4c82441e4c6fe486c0"
+    },
+    {
+      "path": "src/data/effective-immortality-flywheel/fresh-reviewer-context-packets/CTX12.json",
+      "sha256": "sha256:0ff42f44f41ef57fc5326f6eb722fc0dcafa821190915d5e1fda16cfac8f0465"
+    },
+    {
+      "path": "src/data/effective-immortality-flywheel/fresh-reviewer-context-packets/CTX12.md",
+      "sha256": "sha256:d0b3a4b9bcbe6d5a8e0f542af6fbeb90cd69db6fb9e081e35cf5db1cc82433a5"
+    },
+    {
+      "path": "src/data/effective-immortality-flywheel/fresh-reviewer-context-packets/CTX9.json",
+      "sha256": "sha256:87949f98b4f0948bc0e3f8438f2578541bf9fd2281a38bf4d40817e1e213bc33"
+    },
+    {
+      "path": "src/data/effective-immortality-flywheel/fresh-reviewer-context-packets/CTX9.md",
+      "sha256": "sha256:0ac3f28511844cf3ca5f622539321c0fd50e50a00202e14aa565398401d46211"
+    },
+    {
+      "path": "src/data/effective-immortality-flywheel/fresh-reviewer-context-packets/CTX1.json",
+      "sha256": "sha256:36cb34c19c7d6a4e9ac904ff07470e7315338486204841ddd7302440dfc429f8"
+    },
+    {
+      "path": "src/data/effective-immortality-flywheel/fresh-reviewer-context-packets/CTX1.md",
+      "sha256": "sha256:b09a583462214b48d9439a9c3fe87efa2b6c8032fe03b699aef8316162cd36dd"
+    },
+    {
+      "path": "src/data/effective-immortality-flywheel/fresh-reviewer-context-packets/CTX4.json",
+      "sha256": "sha256:1605bc58a237fb1088dccf8ef8ee80f79efd2c1b028fa512c191116bd22b0739"
+    },
+    {
+      "path": "src/data/effective-immortality-flywheel/fresh-reviewer-context-packets/CTX4.md",
+      "sha256": "sha256:fef69ae6031846e7fa931a4f5784c04689496dc6667e41e4d50a8f2a8b97b060"
+    },
+    {
+      "path": "src/data/effective-immortality-flywheel/fresh-reviewer-context-packets/CTX6.json",
+      "sha256": "sha256:cde0eb81fc5ead3e9180393ba1e7f3f54ce2e4cceacf27e2ecca272ed98cb359"
+    },
+    {
+      "path": "src/data/effective-immortality-flywheel/fresh-reviewer-context-packets/CTX6.md",
+      "sha256": "sha256:64d6cad519f8939e49e5c89ee5166a2165bf9cc5f78ab200b3ae3360889afecf"
+    },
+    {
+      "path": "src/data/effective-immortality-flywheel/fresh-reviewer-context-packets/CTX8.json",
+      "sha256": "sha256:fb0d5f8b043304076d89108f6be9105b3936fb78f2a4ad6f54ef74027e661b0e"
+    },
+    {
+      "path": "src/data/effective-immortality-flywheel/fresh-reviewer-context-packets/CTX8.md",
+      "sha256": "sha256:d77105a1e215086d639be7c9363ef2bf12b85aa2fe71b61f0b09ff89a5ce32b0"
+    }
+  ]
+}

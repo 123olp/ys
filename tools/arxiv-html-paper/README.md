@@ -35,6 +35,8 @@
 python3 tools/arxiv_html_paper_tool.py verify-assets --public-dir web/public
 ```
 
+`verify-assets` 只证明资源齐全，不证明阅读器控件可用。涉及 layout、TOC、HTML 注入、post-process 或静态预览时，还必须做浏览器级断言：`.ltx_page_navbar > nav.ltx_TOC` 存在、目录项存在、`.ltx_document` / `.ltx_abstract` / `.ltx_bibliography` 存在、点击目录按钮后 `data-toc-display` 会变化。
+
 在当前 `web/` Astro 应用里重新生成布局和页面：
 
 ```bash
@@ -145,6 +147,7 @@ use.typekit.net/font-files/*.woff2
 
 - 复用 arXiv HTML papers 的前端资源和 DOM 协议。
 - 不重写 CSS、JS、主题系统和阅读器控件。
+- 保留原生 TOC slot 结构和 `.ltx_page_navbar > nav.ltx_TOC`；不要只注入正文来绕过阅读器 DOM 契约。
 - Typekit 字体会从下载镜像归一化为稳定本地 `.woff2`，不保留 `p.typekit.net` 统计 CSS 作为运行时依赖。
 - 不把 Human Infra 正文写入模板。
 - 不自动从 LaTeX 生成正文；页面内容仍由目标项目维护。

@@ -176,6 +176,19 @@ tools/arxiv-html-paper/
 python3 tools/arxiv_html_paper_tool.py verify-assets --public-dir web/public
 ```
 
+注意：`verify-assets` 只检查 CSS、JS、图标和字体等静态资源是否存在，不检查阅读器控件是否可用。凡是修改 layout、目录 slot、HTML 注入、post-process 或本地静态预览生成，必须追加浏览器级断言：
+
+```text
+.ltx_page_navbar > nav.ltx_TOC 存在
+.ltx_TOC 至少有一个目录项
+.ltx_document、.ltx_abstract、.ltx_bibliography 存在
+点击目录按钮后 data-toc-display 在 none/block 间切换
+桌面端和移动端都通过
+生成 HTML 不出现重复 class 属性
+```
+
+经验教训：正文显示正常不代表 arXiv reader 正常。若生成器只把正文注入 `PaperReaderLayout`，绕过 `slot="toc"`，`toggleNavTOC()` 会因为找不到 `.ltx_page_navbar > nav.ltx_TOC` 而静默失效。
+
 ## 消费契约与治理文档
 
 arXiv HTML paper 复用能力已经沉淀为可被其他项目复制的工具包。稳定消费入口：

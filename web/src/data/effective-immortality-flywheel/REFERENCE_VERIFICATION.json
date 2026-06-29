@@ -1,0 +1,876 @@
+{
+  "audit_skill": "reference-registry-primary-source-verification",
+  "verdict": "PASS",
+  "reason_code": "all_references_primary_source_verified",
+  "summary": "All Reference Registry entries passed primary-source verification.",
+  "generated_at": "2026-06-29T00:00:00.000Z",
+  "audited_input_hashes": {
+    "src/data/effective-immortality-evidence.json": "sha256:998866fea2f08fe27ad21ffa46f540543955ec3c49e1e2aaef78638e2db33d64"
+  },
+  "details": {
+    "schema_version": "2.0",
+    "total_entries": 53,
+    "counts": {
+      "PASS": 53,
+      "WARN": 0,
+      "FAIL": 0
+    },
+    "per_entry": [
+      {
+        "key": "kaplan1958incomplete",
+        "entry_type": "article",
+        "title": "Nonparametric Estimation from Incomplete Observations",
+        "year": "1958",
+        "registry_status": "crossref-verified",
+        "live_status": "PASS",
+        "method": "crossref",
+        "url": "https://api.crossref.org/works/10.1080%2F01621459.1958.10501452",
+        "message": "Crossref metadata matches DOI, title, year, and first author.",
+        "canonical": {
+          "doi": "10.1080/01621459.1958.10501452",
+          "title": "Nonparametric Estimation from Incomplete Observations",
+          "year": "1958",
+          "first_author_family": "Kaplan",
+          "container": "Journal of the American Statistical Association"
+        }
+      },
+      {
+        "key": "cox1972regression",
+        "entry_type": "article",
+        "title": "Regression Models and Life-Tables",
+        "year": "1972",
+        "registry_status": "crossref-verified",
+        "live_status": "PASS",
+        "method": "crossref",
+        "url": "https://api.crossref.org/works/10.1111%2Fj.2517-6161.1972.tb00899.x",
+        "message": "Crossref metadata matches DOI, title, year, and first author.",
+        "canonical": {
+          "doi": "10.1111/j.2517-6161.1972.tb00899.x",
+          "title": "Regression Models and Life-Tables",
+          "year": "1972",
+          "first_author_family": "Cox",
+          "container": "Journal of the Royal Statistical Society Series B: Statistical Methodology"
+        }
+      },
+      {
+        "key": "grossman1972healthcapital",
+        "entry_type": "article",
+        "title": "On the Concept of Health Capital and the Demand for Health",
+        "year": "1972",
+        "registry_status": "crossref-verified",
+        "live_status": "PASS",
+        "method": "crossref",
+        "url": "https://api.crossref.org/works/10.1086%2F259880",
+        "message": "Crossref metadata matches DOI, title, year, and first author.",
+        "canonical": {
+          "doi": "10.1086/259880",
+          "title": "On the Concept of Health Capital and the Demand for Health",
+          "year": "1972",
+          "first_author_family": "Grossman",
+          "container": "Journal of Political Economy"
+        }
+      },
+      {
+        "key": "whohale7752",
+        "entry_type": "official-web",
+        "title": "Healthy life expectancy (HALE) metadata",
+        "year": "n.d.",
+        "registry_status": "official-url-200",
+        "live_status": "PASS",
+        "method": "url",
+        "url": "https://www.who.int/data/gho/indicator-metadata-registry/imr-details/7752",
+        "message": "URL reachable with HTTP 200.",
+        "canonical": {}
+      },
+      {
+        "key": "niceEconomicEvaluation",
+        "entry_type": "official-web",
+        "title": "Economic evaluation",
+        "year": "n.d.",
+        "registry_status": "official-url-200",
+        "live_status": "PASS",
+        "method": "url",
+        "url": "https://www.nice.org.uk/process/pmg36/chapter/economic-evaluation-2",
+        "message": "URL reachable with HTTP 200.",
+        "canonical": {}
+      },
+      {
+        "key": "lopezotin2013hallmarks",
+        "entry_type": "article",
+        "title": "The Hallmarks of Aging",
+        "year": "2013",
+        "registry_status": "crossref-verified",
+        "live_status": "PASS",
+        "method": "crossref",
+        "url": "https://api.crossref.org/works/10.1016%2Fj.cell.2013.05.039",
+        "message": "Crossref metadata matches DOI, title, year, and first author.",
+        "canonical": {
+          "doi": "10.1016/j.cell.2013.05.039",
+          "title": "The Hallmarks of Aging",
+          "year": "2013",
+          "first_author_family": "López-Otín",
+          "container": "Cell"
+        }
+      },
+      {
+        "key": "lu2019grimage",
+        "entry_type": "article",
+        "title": "DNA methylation GrimAge strongly predicts lifespan and healthspan",
+        "year": "2019",
+        "registry_status": "crossref-verified",
+        "live_status": "PASS",
+        "method": "crossref",
+        "url": "https://api.crossref.org/works/10.18632%2Faging.101684",
+        "message": "Crossref metadata matches DOI, title, year, and first author.",
+        "canonical": {
+          "doi": "10.18632/aging.101684",
+          "title": "DNA methylation GrimAge strongly predicts lifespan and healthspan",
+          "year": "2019",
+          "first_author_family": "Lu",
+          "container": "Aging"
+        }
+      },
+      {
+        "key": "mulder2022dynamicDigitalTwin",
+        "entry_type": "article",
+        "title": "Dynamic Digital Twin: Diagnosis, Treatment, Prediction, and Prevention of Disease During the Life Course",
+        "year": "2022",
+        "registry_status": "publisher-verified",
+        "live_status": "PASS",
+        "method": "crossref",
+        "url": "https://api.crossref.org/works/10.2196%2F35675",
+        "message": "Crossref metadata matches DOI, title, year, and first author.",
+        "canonical": {
+          "doi": "10.2196/35675",
+          "title": "Dynamic Digital Twin: Diagnosis, Treatment, Prediction, and Prevention of Disease During the Life Course",
+          "year": "2022",
+          "first_author_family": "Mulder",
+          "container": "Journal of Medical Internet Research"
+        }
+      },
+      {
+        "key": "stern2012cognitiveReserve",
+        "entry_type": "article",
+        "title": "Cognitive reserve in ageing and Alzheimer's disease",
+        "year": "2012",
+        "registry_status": "crossref-verified",
+        "live_status": "PASS",
+        "method": "crossref",
+        "url": "https://api.crossref.org/works/10.1016%2FS1474-4422(12)70191-6",
+        "message": "Crossref metadata matches DOI, title, year, and first author.",
+        "canonical": {
+          "doi": "10.1016/s1474-4422(12)70191-6",
+          "title": "Cognitive reserve in ageing and Alzheimer's disease",
+          "year": "2012",
+          "first_author_family": "Stern",
+          "container": "The Lancet Neurology"
+        }
+      },
+      {
+        "key": "ericsson1993deliberatePractice",
+        "entry_type": "article",
+        "title": "The role of deliberate practice in the acquisition of expert performance",
+        "year": "1993",
+        "registry_status": "crossref-verified",
+        "live_status": "PASS",
+        "method": "crossref",
+        "url": "https://api.crossref.org/works/10.1037%2F0033-295X.100.3.363",
+        "message": "Crossref metadata matches DOI, title, year, and first author.",
+        "canonical": {
+          "doi": "10.1037/0033-295x.100.3.363",
+          "title": "The role of deliberate practice in the acquisition of expert performance.",
+          "year": "1993",
+          "first_author_family": "Ericsson",
+          "container": "Psychological Review"
+        }
+      },
+      {
+        "key": "newell1981lawPractice",
+        "entry_type": "inproceedings",
+        "title": "Mechanisms of Skill Acquisition and the Law of Practice: Allen Newell and Paul S. Rosenbloom",
+        "year": "2013",
+        "registry_status": "crossref-verified-corrected-doi",
+        "live_status": "PASS",
+        "method": "crossref",
+        "url": "https://api.crossref.org/works/10.4324%2F9780203728178-6",
+        "message": "Crossref metadata matches DOI, title, year, and first author.",
+        "canonical": {
+          "doi": "10.4324/9780203728178-6",
+          "title": "Mechanisms of Skill Acquisition and the Law of Practice: Allen Newell and Paul S. Rosenbloom",
+          "year": "2013",
+          "first_author_family": "",
+          "container": "Cognitive Skills and Their Acquisition"
+        }
+      },
+      {
+        "key": "zimmerman2002selfRegulated",
+        "entry_type": "article",
+        "title": "Becoming a Self-Regulated Learner: An Overview",
+        "year": "2002",
+        "registry_status": "doi-verified",
+        "live_status": "PASS",
+        "method": "crossref",
+        "url": "https://api.crossref.org/works/10.1207%2FS15430421TIP4102_2",
+        "message": "Crossref metadata matches DOI, title, year, and first author.",
+        "canonical": {
+          "doi": "10.1207/s15430421tip4102_2",
+          "title": "Becoming a Self-Regulated Learner: An Overview",
+          "year": "2002",
+          "first_author_family": "Zimmerman",
+          "container": "Theory Into Practice"
+        }
+      },
+      {
+        "key": "kluger1996feedback",
+        "entry_type": "article",
+        "title": "The effects of feedback interventions on performance: A historical review, a meta-analysis, and a preliminary feedback intervention theory",
+        "year": "1996",
+        "registry_status": "crossref-verified",
+        "live_status": "PASS",
+        "method": "crossref",
+        "url": "https://api.crossref.org/works/10.1037%2F0033-2909.119.2.254",
+        "message": "Crossref metadata matches DOI, title, year, and first author.",
+        "canonical": {
+          "doi": "10.1037/0033-2909.119.2.254",
+          "title": "The effects of feedback interventions on performance: A historical review, a meta-analysis, and a preliminary feedback intervention theory.",
+          "year": "1996",
+          "first_author_family": "Kluger",
+          "container": "Psychological Bulletin"
+        }
+      },
+      {
+        "key": "davis1989tam",
+        "entry_type": "article",
+        "title": "Perceived Usefulness, Perceived Ease of Use, and User Acceptance of Information Technology",
+        "year": "1989",
+        "registry_status": "crossref-verified",
+        "live_status": "PASS",
+        "method": "crossref",
+        "url": "https://api.crossref.org/works/10.2307%2F249008",
+        "message": "Crossref metadata matches DOI, title, year, and first author.",
+        "canonical": {
+          "doi": "10.2307/249008",
+          "title": "Perceived Usefulness, Perceived Ease of Use, and User Acceptance of Information Technology",
+          "year": "1989",
+          "first_author_family": "Davis",
+          "container": "MIS Quarterly"
+        }
+      },
+      {
+        "key": "venkatesh2003utaut",
+        "entry_type": "article",
+        "title": "User Acceptance of Information Technology: Toward a Unified View",
+        "year": "2003",
+        "registry_status": "crossref-verified",
+        "live_status": "PASS",
+        "method": "crossref",
+        "url": "https://api.crossref.org/works/10.2307%2F30036540",
+        "message": "Crossref metadata matches DOI, title, year, and first author.",
+        "canonical": {
+          "doi": "10.2307/30036540",
+          "title": "User Acceptance of Information Technology: Toward A Unified View1",
+          "year": "2003",
+          "first_author_family": "Venkatesh",
+          "container": "MIS Quarterly"
+        }
+      },
+      {
+        "key": "rogers2003diffusion",
+        "entry_type": "book",
+        "title": "Diffusion of Innovations",
+        "year": "2003",
+        "registry_status": "bibliographic-record-verified-isbn",
+        "live_status": "PASS",
+        "method": "url",
+        "url": "https://archive.org/details/diffusionofinnov0005roge",
+        "message": "URL reachable with HTTP 200.",
+        "canonical": {}
+      },
+      {
+        "key": "holtlunstad2010social",
+        "entry_type": "article",
+        "title": "Social Relationships and Mortality Risk: A Meta-analytic Review",
+        "year": "2010",
+        "registry_status": "crossref-verified",
+        "live_status": "PASS",
+        "method": "crossref",
+        "url": "https://api.crossref.org/works/10.1371%2Fjournal.pmed.1000316",
+        "message": "Crossref metadata matches DOI, title, year, and first author.",
+        "canonical": {
+          "doi": "10.1371/journal.pmed.1000316",
+          "title": "Social Relationships and Mortality Risk: A Meta-analytic Review",
+          "year": "2010",
+          "first_author_family": "Holt-Lunstad",
+          "container": "PLoS Medicine"
+        }
+      },
+      {
+        "key": "mincer1974humanCapital",
+        "entry_type": "book",
+        "title": "Schooling, Experience, and Earnings",
+        "year": "1974",
+        "registry_status": "official-archive",
+        "live_status": "PASS",
+        "method": "url",
+        "url": "https://www.nber.org/books-and-chapters/schooling-experience-and-earnings",
+        "message": "URL reachable with HTTP 200.",
+        "canonical": {}
+      },
+      {
+        "key": "coleman1988socialCapital",
+        "entry_type": "article",
+        "title": "Social Capital in the Creation of Human Capital",
+        "year": "1988",
+        "registry_status": "doi-verified",
+        "live_status": "PASS",
+        "method": "crossref",
+        "url": "https://api.crossref.org/works/10.1086%2F228943",
+        "message": "Crossref metadata matches DOI, title, year, and first author.",
+        "canonical": {
+          "doi": "10.1086/228943",
+          "title": "Social Capital in the Creation of Human Capital",
+          "year": "1988",
+          "first_author_family": "Coleman",
+          "container": "American Journal of Sociology"
+        }
+      },
+      {
+        "key": "brynjolfsson2025generative",
+        "entry_type": "article",
+        "title": "Generative AI at Work",
+        "year": "2025",
+        "registry_status": "crossref-verified-corrected-doi",
+        "live_status": "PASS",
+        "method": "crossref",
+        "url": "https://api.crossref.org/works/10.1093%2Fqje%2Fqjae044",
+        "message": "Crossref metadata matches DOI, title, year, and first author.",
+        "canonical": {
+          "doi": "10.1093/qje/qjae044",
+          "title": "Generative AI at Work",
+          "year": "2025",
+          "first_author_family": "Brynjolfsson",
+          "container": "The Quarterly Journal of Economics"
+        }
+      },
+      {
+        "key": "noy2023productivity",
+        "entry_type": "article",
+        "title": "Experimental evidence on the productivity effects of generative artificial intelligence",
+        "year": "2023",
+        "registry_status": "crossref-verified",
+        "live_status": "PASS",
+        "method": "crossref",
+        "url": "https://api.crossref.org/works/10.1126%2Fscience.adh2586",
+        "message": "Crossref metadata matches DOI, title, year, and first author.",
+        "canonical": {
+          "doi": "10.1126/science.adh2586",
+          "title": "Experimental evidence on the productivity effects of generative artificial intelligence",
+          "year": "2023",
+          "first_author_family": "Noy",
+          "container": "Science"
+        }
+      },
+      {
+        "key": "peng2023copilot",
+        "entry_type": "arxiv",
+        "title": "The Impact of AI on Developer Productivity: Evidence from GitHub Copilot",
+        "year": "2023",
+        "registry_status": "arxiv-api-verified",
+        "live_status": "PASS",
+        "method": "arxiv-api",
+        "url": "https://export.arxiv.org/api/query?id_list=2302.06590",
+        "message": "arXiv API metadata matches title and year.",
+        "canonical": {
+          "id": "2302.06590",
+          "title": "The Impact of AI on Developer Productivity: Evidence from GitHub Copilot",
+          "year": "2023"
+        }
+      },
+      {
+        "key": "dellacqua2026jagged",
+        "entry_type": "article",
+        "title": "Navigating the Jagged Technological Frontier: Field Experimental Evidence of the Effects of Artificial Intelligence on Knowledge Worker Productivity and Quality",
+        "year": "2026",
+        "registry_status": "crossref-verified",
+        "live_status": "PASS",
+        "method": "crossref",
+        "url": "https://api.crossref.org/works/10.1287%2Forsc.2025.21838",
+        "message": "Crossref metadata matches DOI, title, year, and first author.",
+        "canonical": {
+          "doi": "10.1287/orsc.2025.21838",
+          "title": "Navigating the Jagged Technological Frontier: Field Experimental Evidence of the Effects of Artificial Intelligence on Knowledge Worker Productivity and Quality",
+          "year": "2026",
+          "first_author_family": "Dell’Acqua",
+          "container": "Organization Science"
+        }
+      },
+      {
+        "key": "hernan2022targetTrial",
+        "entry_type": "article",
+        "title": "Target Trial Emulation",
+        "year": "2022",
+        "registry_status": "crossref-verified",
+        "live_status": "PASS",
+        "method": "crossref",
+        "url": "https://api.crossref.org/works/10.1001%2Fjama.2022.21383",
+        "message": "Crossref metadata matches DOI, title, year, and first author.",
+        "canonical": {
+          "doi": "10.1001/jama.2022.21383",
+          "title": "Target Trial Emulation",
+          "year": "2022",
+          "first_author_family": "Hernán",
+          "container": "JAMA"
+        }
+      },
+      {
+        "key": "han2022rmstQuickGuide",
+        "entry_type": "article",
+        "title": "Restricted Mean Survival Time for Survival Analysis: A Quick Guide for Clinical Researchers",
+        "year": "2022",
+        "registry_status": "crossref-verified",
+        "live_status": "PASS",
+        "method": "crossref",
+        "url": "https://api.crossref.org/works/10.3348%2Fkjr.2022.0061",
+        "message": "Crossref metadata matches DOI, title, year, and first author.",
+        "canonical": {
+          "doi": "10.3348/kjr.2022.0061",
+          "title": "Restricted Mean Survival Time for Survival Analysis: A Quick Guide for Clinical Researchers",
+          "year": "2022",
+          "first_author_family": "Han",
+          "container": "Korean Journal of Radiology"
+        }
+      },
+      {
+        "key": "pan2024learningAnalyticsReview",
+        "entry_type": "article",
+        "title": "A Systematic Review of Learning Analytics",
+        "year": "2024",
+        "registry_status": "crossref-verified",
+        "live_status": "PASS",
+        "method": "crossref",
+        "url": "https://api.crossref.org/works/10.18608%2Fjla.2023.8093",
+        "message": "Crossref metadata matches DOI, title, year, and first author.",
+        "canonical": {
+          "doi": "10.18608/jla.2023.8093",
+          "title": "A Systematic Review of Learning Analytics",
+          "year": "2024",
+          "first_author_family": "Pan",
+          "container": "Journal of Learning Analytics"
+        }
+      },
+      {
+        "key": "deMooij2025srlMultimodalAi",
+        "entry_type": "article",
+        "title": "A Systematic Review of Self-Regulated Learning through Integration of Multimodal Data and Artificial Intelligence",
+        "year": "2025",
+        "registry_status": "crossref-verified",
+        "live_status": "PASS",
+        "method": "crossref",
+        "url": "https://api.crossref.org/works/10.1007%2Fs10648-025-10028-0",
+        "message": "Crossref metadata matches DOI, title, year, and first author.",
+        "canonical": {
+          "doi": "10.1007/s10648-025-10028-0",
+          "title": "A Systematic Review of Self-Regulated Learning through Integration of Multimodal Data and Artificial Intelligence",
+          "year": "2025",
+          "first_author_family": "de Mooij",
+          "container": "Educational Psychology Review"
+        }
+      },
+      {
+        "key": "rao2026deployedAiMonitoring",
+        "entry_type": "report",
+        "title": "Challenges to the monitoring of deployed AI systems",
+        "year": "2026",
+        "registry_status": "crossref-verified",
+        "live_status": "PASS",
+        "method": "crossref",
+        "url": "https://api.crossref.org/works/10.6028%2FNIST.AI.800-4",
+        "message": "Crossref metadata matches DOI, title, year, and first author.",
+        "canonical": {
+          "doi": "10.6028/nist.ai.800-4",
+          "title": "Challenges to the monitoring of deployed AI systems",
+          "year": "2026",
+          "first_author_family": "Rao"
+        }
+      },
+      {
+        "key": "riggi2026targetTrialBridge",
+        "entry_type": "article",
+        "title": "Target trial emulation: bridging observational studies and randomized trials for health decision-making",
+        "year": "2026",
+        "registry_status": "crossref-verified",
+        "live_status": "PASS",
+        "method": "crossref",
+        "url": "https://api.crossref.org/works/10.57264%2Fcer-2025-0180",
+        "message": "Crossref metadata matches DOI, title, year, and first author.",
+        "canonical": {
+          "doi": "10.57264/cer-2025-0180",
+          "title": "Target trial emulation: bridging observational studies and randomized trials for health decision-making",
+          "year": "2026",
+          "first_author_family": "Riggi",
+          "container": "Journal of Comparative Effectiveness Research"
+        }
+      },
+      {
+        "key": "robins2000marginalStructural",
+        "entry_type": "article",
+        "title": "Marginal Structural Models and Causal Inference in Epidemiology",
+        "year": "2000",
+        "registry_status": "pubmed-verified",
+        "live_status": "PASS",
+        "method": "crossref",
+        "url": "https://api.crossref.org/works/10.1097%2F00001648-200009000-00011",
+        "message": "Crossref metadata matches DOI, title, year, and first author.",
+        "canonical": {
+          "doi": "10.1097/00001648-200009000-00011",
+          "title": "Marginal Structural Models and Causal Inference in Epidemiology",
+          "year": "2000",
+          "first_author_family": "Robins",
+          "container": "Epidemiology"
+        }
+      },
+      {
+        "key": "clark1998extended",
+        "entry_type": "article",
+        "title": "The Extended Mind",
+        "year": "1998",
+        "registry_status": "crossref-verified",
+        "live_status": "PASS",
+        "method": "crossref",
+        "url": "https://api.crossref.org/works/10.1093%2Fanalys%2F58.1.7",
+        "message": "Crossref metadata matches DOI, title, year, and first author.",
+        "canonical": {
+          "doi": "10.1093/analys/58.1.7",
+          "title": "The Extended Mind",
+          "year": "1998",
+          "first_author_family": "Clark",
+          "container": "Analysis"
+        }
+      },
+      {
+        "key": "engelbart1962augmenting",
+        "entry_type": "report",
+        "title": "Augmenting Human Intellect: A Conceptual Framework",
+        "year": "1962",
+        "registry_status": "official-archive-registered",
+        "live_status": "PASS",
+        "method": "url",
+        "url": "https://www.dougengelbart.org/pubs/augment-3906.html",
+        "message": "URL reachable with HTTP 200.",
+        "canonical": {}
+      },
+      {
+        "key": "robeyns2021capability",
+        "entry_type": "encyclopedia",
+        "title": "The Capability Approach",
+        "year": "2021",
+        "registry_status": "official-web-registered",
+        "live_status": "PASS",
+        "method": "url",
+        "url": "https://plato.stanford.edu/entries/capability-approach/",
+        "message": "URL reachable with HTTP 200.",
+        "canonical": {}
+      },
+      {
+        "key": "nist2023airmf",
+        "entry_type": "standard",
+        "title": "Artificial Intelligence Risk Management Framework (AI RMF 1.0)",
+        "year": "2023",
+        "registry_status": "official-url-200",
+        "live_status": "PASS",
+        "method": "url",
+        "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+        "message": "URL reachable with HTTP 200.",
+        "canonical": {}
+      },
+      {
+        "key": "amershi2019hai",
+        "entry_type": "inproceedings",
+        "title": "Guidelines for Human-AI Interaction",
+        "year": "2019",
+        "registry_status": "crossref-verified",
+        "live_status": "PASS",
+        "method": "crossref",
+        "url": "https://api.crossref.org/works/10.1145%2F3290605.3300233",
+        "message": "Crossref metadata matches DOI, title, year, and first author.",
+        "canonical": {
+          "doi": "10.1145/3290605.3300233",
+          "title": "Guidelines for Human-AI Interaction",
+          "year": "2019",
+          "first_author_family": "Amershi",
+          "container": "Proceedings of the 2019 CHI Conference on Human Factors in Computing Systems"
+        }
+      },
+      {
+        "key": "burwell2017bciEthics",
+        "entry_type": "article",
+        "title": "Ethical aspects of brain computer interfaces: a scoping review",
+        "year": "2017",
+        "registry_status": "doi-verified",
+        "live_status": "PASS",
+        "method": "crossref",
+        "url": "https://api.crossref.org/works/10.1186%2Fs12910-017-0220-y",
+        "message": "Crossref metadata matches DOI, title, year, and first author.",
+        "canonical": {
+          "doi": "10.1186/s12910-017-0220-y",
+          "title": "Ethical aspects of brain computer interfaces: a scoping review",
+          "year": "2017",
+          "first_author_family": "Burwell",
+          "container": "BMC Medical Ethics"
+        }
+      },
+      {
+        "key": "gradeHandbook",
+        "entry_type": "guideline-web",
+        "title": "GRADE Handbook",
+        "year": "n.d.",
+        "registry_status": "official-web",
+        "live_status": "PASS",
+        "method": "url",
+        "url": "https://gdt.gradepro.org/app/handbook/handbook.html",
+        "message": "URL reachable with HTTP 200.",
+        "canonical": {}
+      },
+      {
+        "key": "clinicaltrialsGov",
+        "entry_type": "registry",
+        "title": "ClinicalTrials.gov",
+        "year": "n.d.",
+        "registry_status": "official-url-200",
+        "live_status": "PASS",
+        "method": "url",
+        "url": "https://clinicaltrials.gov/",
+        "message": "URL reachable with HTTP 200.",
+        "canonical": {}
+      },
+      {
+        "key": "clinicaltrialsGovApi",
+        "entry_type": "official-web",
+        "title": "ClinicalTrials.gov Data API",
+        "year": "n.d.",
+        "registry_status": "official-url-200",
+        "live_status": "PASS",
+        "method": "url",
+        "url": "https://clinicaltrials.gov/data-api/about-api",
+        "message": "URL reachable with HTTP 200.",
+        "canonical": {}
+      },
+      {
+        "key": "whoIctrp",
+        "entry_type": "registry",
+        "title": "International Clinical Trials Registry Platform (ICTRP)",
+        "year": "n.d.",
+        "registry_status": "official-url-200",
+        "live_status": "PASS",
+        "method": "url",
+        "url": "https://www.who.int/tools/clinical-trials-registry-platform",
+        "message": "URL reachable with HTTP 200.",
+        "canonical": {}
+      },
+      {
+        "key": "tripodAi2024",
+        "entry_type": "article",
+        "title": "TRIPOD+AI statement: updated guidance for reporting clinical prediction models that use regression or machine learning methods",
+        "year": "2024",
+        "registry_status": "doi-and-official-site-verified",
+        "live_status": "PASS",
+        "method": "crossref",
+        "url": "https://api.crossref.org/works/10.1136%2Fbmj-2023-078378",
+        "message": "Crossref metadata matches DOI, title, year, and first author.",
+        "canonical": {
+          "doi": "10.1136/bmj-2023-078378",
+          "title": "TRIPOD+AI statement: updated guidance for reporting clinical prediction models that use regression or machine learning methods",
+          "year": "2024",
+          "first_author_family": "Collins",
+          "container": "BMJ"
+        }
+      },
+      {
+        "key": "probastAi2025",
+        "entry_type": "article",
+        "title": "PROBAST+AI: an updated quality, risk of bias, and applicability assessment tool for prediction models using regression or artificial intelligence methods",
+        "year": "2025",
+        "registry_status": "doi-and-official-site-verified",
+        "live_status": "PASS",
+        "method": "crossref",
+        "url": "https://api.crossref.org/works/10.1136%2Fbmj-2024-082505",
+        "message": "Crossref metadata matches DOI, title, year, and first author.",
+        "canonical": {
+          "doi": "10.1136/bmj-2024-082505",
+          "title": "PROBAST+AI: an updated quality, risk of bias, and applicability assessment tool for prediction models using regression or artificial intelligence methods",
+          "year": "2025",
+          "first_author_family": "Moons",
+          "container": "BMJ"
+        }
+      },
+      {
+        "key": "consortAi2020",
+        "entry_type": "article",
+        "title": "Reporting guidelines for clinical trial reports for interventions involving artificial intelligence: the CONSORT-AI extension",
+        "year": "2020",
+        "registry_status": "doi-verified",
+        "live_status": "PASS",
+        "method": "crossref",
+        "url": "https://api.crossref.org/works/10.1038%2Fs41591-020-1034-x",
+        "message": "Crossref metadata matches DOI, title, year, and first author.",
+        "canonical": {
+          "doi": "10.1038/s41591-020-1034-x",
+          "title": "Reporting guidelines for clinical trial reports for interventions involving artificial intelligence: the CONSORT-AI extension",
+          "year": "2020",
+          "first_author_family": "Liu",
+          "container": "Nature Medicine"
+        }
+      },
+      {
+        "key": "spiritAi2020",
+        "entry_type": "article",
+        "title": "Guidelines for clinical trial protocols for interventions involving artificial intelligence: the SPIRIT-AI extension",
+        "year": "2020",
+        "registry_status": "doi-verified",
+        "live_status": "PASS",
+        "method": "crossref",
+        "url": "https://api.crossref.org/works/10.1038%2Fs41591-020-1037-7",
+        "message": "Crossref metadata matches DOI, title, year, and first author.",
+        "canonical": {
+          "doi": "10.1038/s41591-020-1037-7",
+          "title": "Guidelines for clinical trial protocols for interventions involving artificial intelligence: the SPIRIT-AI extension",
+          "year": "2020",
+          "first_author_family": "Cruz Rivera",
+          "container": "Nature Medicine"
+        }
+      },
+      {
+        "key": "tripodProbast",
+        "entry_type": "guideline-web",
+        "title": "TRIPOD Statement and PROBAST",
+        "year": "n.d.",
+        "registry_status": "official-urls-200",
+        "live_status": "PASS",
+        "method": "url",
+        "url": "https://www.tripod-statement.org/",
+        "message": "URL reachable with HTTP 200.",
+        "canonical": {}
+      },
+      {
+        "key": "perez2019appleHeart",
+        "entry_type": "article",
+        "title": "Large-Scale Assessment of a Smartwatch to Identify Atrial Fibrillation",
+        "year": "2019",
+        "registry_status": "crossref-verified",
+        "live_status": "PASS",
+        "method": "crossref",
+        "url": "https://api.crossref.org/works/10.1056%2FNEJMoa1901183",
+        "message": "Crossref metadata matches DOI, title, year, and first author.",
+        "canonical": {
+          "doi": "10.1056/nejmoa1901183",
+          "title": "Large-Scale Assessment of a Smartwatch to Identify Atrial Fibrillation",
+          "year": "2019",
+          "first_author_family": "Perez",
+          "container": "New England Journal of Medicine"
+        }
+      },
+      {
+        "key": "li2010personalInformatics",
+        "entry_type": "inproceedings",
+        "title": "A stage-based model of personal informatics systems",
+        "year": "2010",
+        "registry_status": "crossref-verified",
+        "live_status": "PASS",
+        "method": "crossref",
+        "url": "https://api.crossref.org/works/10.1145%2F1753326.1753409",
+        "message": "Crossref metadata matches DOI, title, year, and first author.",
+        "canonical": {
+          "doi": "10.1145/1753326.1753409",
+          "title": "A stage-based model of personal informatics systems",
+          "year": "2010",
+          "first_author_family": "Li",
+          "container": "Proceedings of the SIGCHI Conference on Human Factors in Computing Systems"
+        }
+      },
+      {
+        "key": "epstein2015lived",
+        "entry_type": "inproceedings",
+        "title": "A lived informatics model of personal informatics",
+        "year": "2015",
+        "registry_status": "crossref-verified",
+        "live_status": "PASS",
+        "method": "crossref",
+        "url": "https://api.crossref.org/works/10.1145%2F2750858.2804250",
+        "message": "Crossref metadata matches DOI, title, year, and first author.",
+        "canonical": {
+          "doi": "10.1145/2750858.2804250",
+          "title": "A lived informatics model of personal informatics",
+          "year": "2015",
+          "first_author_family": "Epstein",
+          "container": "Proceedings of the 2015 ACM International Joint Conference on Pervasive and Ubiquitous Computing"
+        }
+      },
+      {
+        "key": "hutchins1995cognition",
+        "entry_type": "book",
+        "title": "Cognition in the Wild",
+        "year": "1995",
+        "registry_status": "author-page-verified",
+        "live_status": "PASS",
+        "method": "url",
+        "url": "https://pages.ucsd.edu/~ehutchins/citw.html",
+        "message": "URL reachable with HTTP 200.",
+        "canonical": {}
+      },
+      {
+        "key": "nasaTlx",
+        "entry_type": "official-web",
+        "title": "NASA Task Load Index",
+        "year": "n.d.",
+        "registry_status": "official-web-registered",
+        "live_status": "PASS",
+        "method": "url",
+        "url": "https://www.nasa.gov/human-systems-integration-division/nasa-task-load-index-tlx/",
+        "message": "URL reachable with HTTP 200.",
+        "canonical": {}
+      },
+      {
+        "key": "parasuraman2000automation",
+        "entry_type": "article",
+        "title": "A model for types and levels of human interaction with automation",
+        "year": "2000",
+        "registry_status": "crossref-verified",
+        "live_status": "PASS",
+        "method": "crossref",
+        "url": "https://api.crossref.org/works/10.1109%2F3468.844354",
+        "message": "Crossref metadata matches DOI, title, year, and first author.",
+        "canonical": {
+          "doi": "10.1109/3468.844354",
+          "title": "A model for types and levels of human interaction with automation",
+          "year": "2000",
+          "first_author_family": "Parasuraman",
+          "container": "IEEE Transactions on Systems, Man, and Cybernetics - Part A: Systems and Humans"
+        }
+      },
+      {
+        "key": "whoSdhPhc",
+        "entry_type": "official-web",
+        "title": "Social determinants of health and primary health care",
+        "year": "n.d.",
+        "registry_status": "official-urls-200",
+        "live_status": "PASS",
+        "method": "url",
+        "url": "https://www.who.int/health-topics/social-determinants-of-health",
+        "message": "URL reachable with HTTP 200.",
+        "canonical": {}
+      },
+      {
+        "key": "humanInfraResearchNotes20260628",
+        "entry_type": "project-note",
+        "title": "Automated research run, Source Cards, and Evidence Matrix for the effective immortality flywheel",
+        "year": "2026",
+        "registry_status": "local-artifact",
+        "live_status": "PASS",
+        "method": "local-file",
+        "url": "/docs/source-notes/2026-06-28-effective-immortality-flywheel-automated-research-run.md",
+        "message": "Local artifact exists.",
+        "canonical": {}
+      }
+    ]
+  }
+}

@@ -1,0 +1,107 @@
+# Fresh Reviewer Context Packet: CTX7
+
+Protocol hash: `sha256:2615318e3e11f7b5d9e0cb7db273b7d0dd0dabf9618b34ad685df8357a9222de`
+Packet hash: `sha256:228a264f327d03c91936ddd37efde486ea264a1e579b48ca784f804bce1f74aa`
+
+## Review Boundary
+
+This packet is for an external fresh reviewer. Do not treat local review verdicts as proof. Re-open the listed sources or PDFs, then judge whether the sources support the registered safe use and whether the manuscript violates the forbidden-use boundary.
+
+## Context
+
+| Field | Value |
+| --- | --- |
+| Priority | 4 |
+| Context | CTX7 |
+| Risk tier | MEDIUM |
+| Risk score | 4 |
+| Source group | Generative AI at Work; Noy and Zhang; GitHub Copilot; Jagged Technological Frontier |
+| Claims | CL1, CL2, CL4, CL7 |
+| Used for | 支持 A -> Q 在限定任务中的生产率、速度、质量或任务边界证据。 |
+| Safe use | 生成式 AI 在客服、写作、编程或知识工作实验中的任务内效果与异质性。 |
+| Forbidden use | 不能泛化为通用智能增强、健康寿命延长或永生收益。 |
+| Local verdict | KEEP_WITH_BOUNDARY |
+| Required action before submission | Review after high-risk contexts; keep registered boundary language. |
+
+## Reviewer Questions
+
+- 确认 forbidden use 没有在正文、图注、表格或摘要中被暗示。
+- 确认正文只使用 safe use，不把来源升级为飞轮整体成立的证据。
+- 该来源是否真实存在，且题名、作者、年份、场所、DOI 或 URL 与登记信息一致？
+- 该来源是否支持 safe use 中登记的最小用途？
+- 当前正文、图注或表格是否把该来源扩展成 forbidden use 中禁止的结论？
+- 如果只支持部分用途，需要把哪一句改成更弱表述？
+
+## References
+
+| Reference | Title | Audit status | Live status | Registered use |
+| --- | --- | --- | --- | --- |
+| `brynjolfsson2025generative` | Generative AI at Work | crossref-verified-corrected-doi | PASS | 支持限定客服任务中的 AI productivity 证据。 |
+| `dellacqua2026jagged` | Navigating the Jagged Technological Frontier: Field Experimental Evidence of the Effects of Artificial Intelligence on Knowledge Worker Productivity and Quality | crossref-verified | PASS | 支持 AI 收益与风险具有任务边界。 |
+| `noy2023productivity` | Experimental evidence on the productivity effects of generative artificial intelligence | crossref-verified | PASS | 支持写作任务内的生成式 AI 生产率证据。 |
+| `peng2023copilot` | The Impact of AI on Developer Productivity: Evidence from GitHub Copilot | arxiv-api-verified | PASS | 支持限定编程任务中的 AI pair programmer 生产率入口。 |
+
+## Prompt
+
+```text
+你是独立引用语境审稿人。不要使用项目作者的本地结论作为证据，必须重新打开来源并检查正文语境。
+
+Context: CTX7
+Source group: Generative AI at Work; Noy and Zhang; GitHub Copilot; Jagged Technological Frontier
+Risk: MEDIUM / score 4
+Claims: CL1, CL2, CL4, CL7
+Used for: 支持 A -> Q 在限定任务中的生产率、速度、质量或任务边界证据。
+Safe use: 生成式 AI 在客服、写作、编程或知识工作实验中的任务内效果与异质性。
+Forbidden use: 不能泛化为通用智能增强、健康寿命延长或永生收益。
+
+References:
+- brynjolfsson2025generative: Generative AI at Work (crossref-verified-corrected-doi; PASS)
+- dellacqua2026jagged: Navigating the Jagged Technological Frontier: Field Experimental Evidence of the Effects of Artificial Intelligence on Knowledge Worker Productivity and Quality (crossref-verified; PASS)
+- noy2023productivity: Experimental evidence on the productivity effects of generative artificial intelligence (crossref-verified; PASS)
+- peng2023copilot: The Impact of AI on Developer Productivity: Evidence from GitHub Copilot (arxiv-api-verified; PASS)
+
+请逐项输出：
+1. reference_existence: PASS / FAIL / UNCERTAIN，并给出核验 URL。
+2. safe_use_support: SUPPORTS / WEAK / WRONG，并说明来源文本如何支持或不支持。
+3. forbidden_use_violation: NONE / POSSIBLE / PRESENT。
+4. required_action: KEEP / SOFTEN / REWRITE / REMOVE / REPLACE_SOURCE。
+5. one_sentence_reason: 一句话说明 verdict。
+```
+
+## Result Stub
+
+Copy this object into `results/CTX7.json` after review, replacing null values with the external reviewer verdict. Keep that per-context file in the results directory; `npm run assemble:fresh-reviewer-results` is the only supported way to create `FRESH_REVIEWER_CITATION_AUDIT_RESULTS.json`.
+
+```json
+{
+  "context_id": "CTX7",
+  "priority": 4,
+  "risk_tier": "MEDIUM",
+  "source_group": "Generative AI at Work; Noy and Zhang; GitHub Copilot; Jagged Technological Frontier",
+  "claims": [
+    "CL1",
+    "CL2",
+    "CL4",
+    "CL7"
+  ],
+  "references": [
+    "brynjolfsson2025generative",
+    "dellacqua2026jagged",
+    "noy2023productivity",
+    "peng2023copilot"
+  ],
+  "source_protocol_hash": "sha256:2615318e3e11f7b5d9e0cb7db273b7d0dd0dabf9618b34ad685df8357a9222de",
+  "reviewer_identity_class": null,
+  "reviewed_at": null,
+  "source_urls": [],
+  "reference_existence": null,
+  "safe_use_support": null,
+  "forbidden_use_violation": null,
+  "required_action": null,
+  "resolution_status": "NOT_REVIEWED",
+  "reviewer_reason": null,
+  "manuscript_change_required": null,
+  "manuscript_change_summary": null,
+  "reviewer_trace_path": null
+}
+```

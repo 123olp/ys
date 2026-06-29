@@ -1,0 +1,3279 @@
+{
+  "schemaVersion": "2.0",
+  "paper": "effective-immortality-acceleration-flywheel",
+  "updated": "2026-06-29",
+  "researchQuestionBrief": {
+    "version": "0.1",
+    "mode": "ARS deep-research phase 1 scoping",
+    "topicArea": "有效永生、主体持续性、技术采用和未来选择权的动态反馈模型。",
+    "primaryQuestion": "在明确证据和治理约束下，主体持续时间的延展是否会通过有效时间、学习轮次、积累资本、技术采用、行动质量和可能性空间形成可观测的正反馈？",
+    "finerAssessment": [
+      {
+        "criterion": "Feasible",
+        "score": 4,
+        "justification": "可以先用二级数据、任务实验、公开队列、系统日志和仿真模型研究局部边；完整飞轮仍需长期纵向数据。"
+      },
+      {
+        "criterion": "Interesting",
+        "score": 5,
+        "justification": "它把长寿、AI 增强、学习积累、社会支持和风险治理放进同一主体持续性问题。"
+      },
+      {
+        "criterion": "Novel",
+        "score": 4,
+        "justification": "各分支已有成熟谱系，但以 T/E/R/C/A/Q/O 反馈链连接有效永生与加速回报仍是项目级综合模型。"
+      },
+      {
+        "criterion": "Ethical",
+        "score": 4,
+        "justification": "当前只做概念、证据矩阵和群体级模型设计；硬约束是不输出个体死亡日期、不替代医学判断、不把增强技术去风险化。"
+      },
+      {
+        "criterion": "Relevant",
+        "score": 5,
+        "justification": "直接决定 Human Infra 的目标、对象、预测模型、Web 传播和后续研究优先级。"
+      }
+    ],
+    "scope": {
+      "inScope": [
+        "T/E/R/C/A/Q/O 变量定义与可测量代理",
+        "链路边的证据等级、反证条件和因果协议",
+        "AI、医学、可穿戴、知识管理、自动化和资源环境技术族",
+        "群体级、任务级或场景级路径位移模型",
+        "治理边界、风险扣减、停止条件和回滚条件"
+      ],
+      "outOfScope": [
+        "证明永生已经实现",
+        "输出个人死亡日期或个体寿命承诺",
+        "把短期 AI 任务收益外推为健康寿命收益",
+        "把数字副本、记忆保存或工具外化自动视为同一主体延续",
+        "提供医学、投资、法律或政策处方"
+      ],
+      "assumptions": [
+        "主体持续性必须同时保留存在、行动、学习、恢复和选择能力",
+        "技术价值必须通过状态转移、观测能力、行动质量或风险函数进入模型",
+        "任何强因果主张都需要 comparator、time zero、outcome、estimand 和识别假设",
+        "可能性空间只统计主体真实可进入的路径"
+      ]
+    },
+    "subQuestions": [
+      "哪些变量最小充分地连接寿命、有效时间、学习轮次、能力积累、技术采用、行动质量和未来选择权？",
+      "每条链路边已有证据能支持什么、不能支持什么、在哪些条件下会断裂？",
+      "如何把技术或干预写成改变 P(X_{t+1}|X_t,U_t) 或 lambda(t|X_t,U_t) 的算子，而不是神奇延寿变量？",
+      "什么时候完整飞轮模型比单纯寿命模型、健康资本模型、工具增强模型或能力方法模型更有解释力？"
+    ],
+    "selectedBecause": "该问题足够窄，可以被拆成可审查边；也足够上位，能连接 Human Infra 的目标、对象、约束和预测模型。"
+  },
+  "methodologyBlueprint": {
+    "version": "0.1",
+    "paradigm": "Pragmatist mixed-methods",
+    "paradigmJustification": "研究对象横跨生存分析、学习科学、技术采用、人机协作、公共健康和规范治理；单一范式不足以覆盖变量定义、因果识别、仿真和传播边界。",
+    "methodType": "Conceptual modeling plus staged empirical validation",
+    "specificMethod": "框架建模、系统性文献映射、target-trial style 因果协议、竞争模型比较、任务级实验证据整合和可复现 Web 论文表达。",
+    "dataStrategy": {
+      "dataType": "公开二级数据、论文原文、官方标准、公开数据库、后续可选任务实验和仿真数据",
+      "sources": [
+        "生存分析与健康寿命方法文献",
+        "衰老机制、生物年龄和健康资本文献",
+        "学习科学、人力资本和社会资本文献",
+        "AI 任务生产率随机实验、现场实验和边界失败研究",
+        "ClinicalTrials.gov、WHO ICTRP、TRIPOD+AI、CONSORT-AI、NIST AI RMF 等标准或数据库"
+      ],
+      "sampling": "先按链路边做 purposeful sampling，再用 search-fills-gap 补空白边；证据进入 Reference Registry 后必须接受 citation-context audit。",
+      "timeFrame": "先覆盖经典方法源和 2019 年后 AI / 医学 AI / 数字孪生 / 风险治理关键文献；快速变化领域需要持续监测。"
+    },
+    "analyticalFramework": [
+      "把每条来源卡片映射到一个或少数几个链路边",
+      "为每条边记录支持范围、不可支持范围、反证条件和当前置信",
+      "为每类技术族定义 population、intervention、comparator、time zero、outcome 和 estimand",
+      "用 CM1-CM7 竞争模型先解释数据，再检验飞轮反馈项是否有增量",
+      "所有模型输出同步报告风险扣减、不确定性、外推边界和主张升级决策"
+    ],
+    "validityCriteria": [
+      {
+        "criterion": "Construct validity",
+        "strategy": "变量字典必须给出单位、代理指标、失败模式和模型用途，防止概念滑移。"
+      },
+      {
+        "criterion": "Internal validity",
+        "strategy": "强因果主张必须通过 target-trial style 协议，并显式处理混杂、time zero、删失和比较组。"
+      },
+      {
+        "criterion": "External validity",
+        "strategy": "按任务族、人群、资源条件、制度环境和技术可及性分层，不从局部任务收益直接外推。"
+      },
+      {
+        "criterion": "Citation validity",
+        "strategy": "Reference Registry、Citation Context Register、Local Review、Fresh Reviewer Handoff 和结果 schema 共同约束引用语境。"
+      },
+      {
+        "criterion": "Governance validity",
+        "strategy": "每个技术族同时记录 downside channel、停止条件、回滚路径和事故复盘入口。"
+      }
+    ],
+    "limitationsByDesign": [
+      "当前版本是 working paper 和研究基础设施，不是实证确认论文。",
+      "完整飞轮需要长期纵向数据；现阶段只能逐边验证和做玩具模型。",
+      "AI 任务证据多为局部任务，不能被泛化为通用主体增强。",
+      "健康寿命、有效时间和可能性空间均存在代理指标偏差。"
+    ],
+    "ethics": [
+      "不输出个体死亡日期或寿命承诺",
+      "不提供医学处方",
+      "不把技术增强去风险化",
+      "不把数字副本、记忆保存或工具外化偷换为主体连续性"
+    ],
+    "reportingStandard": "作为概念模型与证据映射论文，采用可复现研究声明、claim-to-source audit、citation context audit 和 model comparison reporting matrix；后续系统综述可转 PRISMA，预测模型可转 TRIPOD+AI，临床 AI 干预可转 CONSORT-AI / SPIRIT-AI。",
+    "preregistration": "概念版本不预注册；任何确认性模型比较、系统综述、任务实验或因果评估应在 OSF、PROSPERO 或对应平台预注册。"
+  },
+  "researchExecutionRoadmap": [
+    {
+      "stage": "P1 Scoping",
+      "purpose": "冻结研究问题、变量边界、非主张边界和最小方法蓝图。",
+      "deliverable": "Research Question Brief；Methodology Blueprint；Model Contract",
+      "status": "current"
+    },
+    {
+      "stage": "P2 Literature Mapping",
+      "purpose": "按 T/E/R/C/A/Q/O 和 A/Q -> risk 补齐来源卡片与引用语境。",
+      "deliverable": "Source Cards；Reference Registry；Citation Context Register",
+      "status": "active"
+    },
+    {
+      "stage": "P3 Evidence Synthesis",
+      "purpose": "识别每条链路边的证据强度、冲突、空白和反证条件。",
+      "deliverable": "Evidence Matrix；Claim Evidence Map；Threats to Validity",
+      "status": "active"
+    },
+    {
+      "stage": "P4 Quantitative Contract",
+      "purpose": "把变量、边和技术族写成 estimand、analysis plan 和 model comparison contract。",
+      "deliverable": "Estimand Registry；Analysis Plan Registry；CM1-CM7 Model Comparison Protocol",
+      "status": "active"
+    },
+    {
+      "stage": "P5 External Audit",
+      "purpose": "让独立 reviewer 逐条核查引用语境、主张边界和来源使用。",
+      "deliverable": "Fresh Reviewer CTX results；assembled results ledger",
+      "status": "pending_external"
+    },
+    {
+      "stage": "P6 Visualization",
+      "purpose": "把证据矩阵、模型比较和路径位移做成可审查 Web 图表。",
+      "deliverable": "D3 evidence graph；toy curve；model result panels",
+      "status": "next"
+    }
+  ],
+  "searchStrategySeeds": [
+    {
+      "branch": "Survival and healthspan modeling",
+      "query": "(survival analysis OR restricted mean survival time OR multistate model) AND (healthspan OR healthy life expectancy OR disability-free survival)",
+      "purpose": "补 T -> E 的统计底座和健康质量调整时间表达。",
+      "include": "方法论文、综述、公开标准、可复现应用案例",
+      "exclude": "只给养生建议、无方法细节或无法回到原始来源的材料"
+    },
+    {
+      "branch": "Learning rounds and capability accumulation",
+      "query": "(deliberate practice OR self-regulated learning OR feedback intervention OR learning curve) AND (skill acquisition OR expertise OR longitudinal performance)",
+      "purpose": "补 E -> R 与 R -> C 的轮次、反馈、学习曲线和衰减项。",
+      "include": "学习科学经典文献、纵向能力研究、反馈干预综述",
+      "exclude": "仅凭经验建议说明学习有效的材料"
+    },
+    {
+      "branch": "Technology adoption and human-AI productivity",
+      "query": "(technology acceptance OR UTAUT OR diffusion of innovations OR generative AI productivity OR human-AI collaboration) AND (experiment OR field study OR randomized)",
+      "purpose": "补 C -> A 与 A -> Q 的采用、任务收益、异质性和 QA 成本。",
+      "include": "随机实验、现场实验、任务边界研究、正式发表或可审计预印本",
+      "exclude": "无比较组的宣传性案例和供应商白皮书"
+    },
+    {
+      "branch": "Option space and social determinants",
+      "query": "(capability approach OR social determinants of health OR social capital OR healthcare access) AND (mortality OR healthspan OR agency OR opportunity)",
+      "purpose": "补 Q -> O 与 O -> T/E 的真实可进入路径、资源入口和社会支持。",
+      "include": "规范框架、公共卫生框架、元分析、政策自然实验",
+      "exclude": "只把机会当作抽象愿望、没有进入条件的材料"
+    },
+    {
+      "branch": "Risk governance and failure modes",
+      "query": "(AI risk management OR automation bias OR brain-computer interface ethics OR clinical AI reporting) AND (governance OR safety OR adverse events OR human oversight)",
+      "purpose": "补 A/Q -> risk 和治理门禁。",
+      "include": "NIST、EQUATOR、伦理综述、事故监测和部署后评估文献",
+      "exclude": "只讨论技术乐观愿景、不含风险或治理字段的材料"
+    }
+  ],
+  "systematicSearchProtocol": {
+    "version": "0.1",
+    "protocolType": "Scoping review and evidence map protocol",
+    "reviewQuestion": "哪些研究传统、方法标准、任务实验证据和治理框架能支持或约束 T/E/R/C/A/Q/O 主体持续性飞轮的每一条链路边？",
+    "searchDate": "2026-06-29",
+    "databases": [
+      {
+        "source": "PubMed / MEDLINE",
+        "use": "健康寿命、衰老机制、生物年龄、社会关系、医学 AI 和临床报告标准。",
+        "recordedFields": ["title", "authors", "year", "doi", "pmid", "abstract", "studyDesign", "population", "outcome"]
+      },
+      {
+        "source": "Crossref / DOI resolver",
+        "use": "核验正式出版物元数据，补 DOI、期刊、卷期页和出版年份。",
+        "recordedFields": ["doi", "publisher", "journal", "issued", "url", "metadataMatch"]
+      },
+      {
+        "source": "Semantic Scholar / OpenAlex",
+        "use": "查找引用网络、相邻论文、去重候选和文献簇。",
+        "recordedFields": ["paperId", "doi", "citationCount", "venue", "fieldsOfStudy", "references", "citations"]
+      },
+      {
+        "source": "arXiv / SSRN / NBER",
+        "use": "AI 生产率、工具增强、早期方法论文和预印本证据。",
+        "recordedFields": ["preprintId", "version", "postedDate", "status", "officialUrl", "peerReviewStatus"]
+      },
+      {
+        "source": "ClinicalTrials.gov / WHO ICTRP",
+        "use": "医学干预、AI 医疗工具、可穿戴和预防策略的试验注册入口。",
+        "recordedFields": ["registryId", "population", "intervention", "comparator", "timeZero", "outcomes", "status", "resultsPosted"]
+      },
+      {
+        "source": "Official standards and institutional sources",
+        "use": "NIST AI RMF、EQUATOR guidelines、WHO、OECD、FDA 等治理与报告标准。",
+        "recordedFields": ["organization", "standardName", "version", "publicationDate", "url", "applicableModelGate"]
+      }
+    ],
+    "dateRange": [
+      {
+        "branch": "Seminal methods and theory",
+        "range": "no lower bound",
+        "reason": "Kaplan-Meier、Cox、能力方法、健康资本、扩展心智、技术接受等经典来源不应被现代日期过滤排除。"
+      },
+      {
+        "branch": "AI task evidence and AI governance",
+        "range": "2019-2026",
+        "reason": "生成式 AI、医学 AI、TRIPOD+AI、CONSORT-AI 和部署治理快速变化，需要近年证据优先。"
+      },
+      {
+        "branch": "Biogerontology and healthspan signals",
+        "range": "2010-2026 plus seminal exceptions",
+        "reason": "衰老机制、生物年龄和健康寿命模型需要近期综述和关键经典来源并存。"
+      }
+    ],
+    "languages": ["English", "Chinese if official or directly relevant"],
+    "documentTypes": [
+      "peer-reviewed article",
+      "preprint with explicit status",
+      "book or foundational monograph",
+      "official standard",
+      "clinical trial registry record",
+      "government or institutional report"
+    ],
+    "inclusionCriteria": [
+      {
+        "criterion": "Link relevance",
+        "include": "直接支持或约束 T/E/R/C/A/Q/O、A/Q -> risk 或 U_t -> causal claim 中至少一条边。",
+        "exclude": "只讨论健康、技术或未来主义，但无法映射到任何链路边。"
+      },
+      {
+        "criterion": "Evidence role clarity",
+        "include": "能明确标注为方法标准、机制综述、关联证据、任务实验、治理框架或规范框架。",
+        "exclude": "证据角色不清、只提供结论口号或无法区分事实和预测。"
+      },
+      {
+        "criterion": "Source traceability",
+        "include": "可回到 DOI、PMID、arXiv ID、机构页面、注册号或本地 artifact。",
+        "exclude": "无法追溯原始来源或只有二手摘要。"
+      },
+      {
+        "criterion": "Boundary usefulness",
+        "include": "能说明支持范围、不可支持范围、反证条件或外推边界。",
+        "exclude": "只强化正向叙事，不能提供边界或失败条件。"
+      }
+    ],
+    "screeningFlow": [
+      {
+        "pass": "Pass 1 title and abstract",
+        "decision": "include / exclude / uncertain",
+        "records": "记录链路边、证据角色、排除原因和是否需要全文。"
+      },
+      {
+        "pass": "Pass 2 full text or official page",
+        "decision": "source card / background only / reject",
+        "records": "记录 claim、变量、机制、证据等级、边界、不可支持范围和模型用途。"
+      },
+      {
+        "pass": "Deduplication",
+        "decision": "merge / keep separate / mark version relation",
+        "records": "优先 DOI、PMID、arXiv ID、Semantic Scholar ID 和标题标准化去重。"
+      },
+      {
+        "pass": "Distributional skew advisory",
+        "decision": "keep scope / expand search",
+        "records": "检查时间、地域、方法、证据类型和出版状态是否过度集中。"
+      }
+    ],
+    "qualitySignals": [
+      "study design and comparator clarity",
+      "time zero definition",
+      "outcome and estimand clarity",
+      "uncertainty reporting",
+      "external validity boundary",
+      "conflict of interest or proprietary setting",
+      "peer review or official source status",
+      "data and code availability when applicable"
+    ],
+    "outputs": [
+      "Search Strategy Report",
+      "Screening Log",
+      "Annotated Bibliography",
+      "Source Cards",
+      "Reference Registry updates",
+      "Citation Context Register updates",
+      "Evidence Matrix updates",
+      "Distributional Skew Advisory"
+    ]
+  },
+  "literatureScreeningRubric": [
+    {
+      "decision": "SOURCE_CARD",
+      "meaning": "来源能直接支撑或约束至少一条链路边，并且可明确写出支持范围和不可支持范围。",
+      "requiredAction": "进入 Source Cards、Reference Registry 和 Citation Context Register。"
+    },
+    {
+      "decision": "BACKGROUND_ONLY",
+      "meaning": "来源能帮助理解语境或术语，但不能承担核心主张证据。",
+      "requiredAction": "可进入背景阅读清单，不进入强 claim-to-source map。"
+    },
+    {
+      "decision": "METHOD_GATE",
+      "meaning": "来源主要是方法或报告标准，用来约束模型、因果协议、预测报告或审计流程。",
+      "requiredAction": "进入 Evidence Classes、Model Contract 或审计门禁。"
+    },
+    {
+      "decision": "REJECT",
+      "meaning": "来源不可追溯、证据角色不清、过度宣传或无法映射到链路边。",
+      "requiredAction": "记录排除原因，不进入正文引用。"
+    }
+  ],
+  "literatureGapMap": [
+    {
+      "edge": "T -> E",
+      "currentCoverage": "生存分析、健康资本、HALE/QALY 和健康寿命概念已有框架覆盖。",
+      "gap": "还缺少把主体性、行动能力和健康质量统一成 E_t 路径积分的可操作测量方案。",
+      "nextSearch": "restricted mean survival time healthspan disability-free survival agency"
+    },
+    {
+      "edge": "E -> R",
+      "currentCoverage": "刻意练习、自我调节学习和反馈学习已有理论入口。",
+      "gap": "还缺少把有效时间转换为高质量反馈轮次的日志数据和编码规则。",
+      "nextSearch": "time use feedback loops self-regulated learning longitudinal log data"
+    },
+    {
+      "edge": "R -> C",
+      "currentCoverage": "学习曲线、人力资本和社会资本已有机制支持。",
+      "gap": "还缺少跨任务迁移、遗忘、饱和和错误反馈的衰减模型。",
+      "nextSearch": "skill acquisition transfer forgetting learning curve saturation feedback quality"
+    },
+    {
+      "edge": "C -> A",
+      "currentCoverage": "TAM、UTAUT 和扩散理论支撑采用变量。",
+      "gap": "还缺少从资源、信誉和协作网络到高风险技术整合能力的实证路径。",
+      "nextSearch": "technology adoption resources expertise trust network high risk technology"
+    },
+    {
+      "edge": "A -> Q",
+      "currentCoverage": "AI 客服、写作、编程和咨询任务已有任务级实验证据。",
+      "gap": "还缺少长期任务、QA 成本、依赖、返工和能力退化的纵向证据。",
+      "nextSearch": "generative AI productivity longitudinal quality assurance rework dependency"
+    },
+    {
+      "edge": "Q -> O",
+      "currentCoverage": "能力方法、人力资本和社会资本提供规范与机制语言。",
+      "gap": "还缺少把产出质量转成真实可进入路径集合的测量规则。",
+      "nextSearch": "capability set measurement opportunity set agency resources access"
+    },
+    {
+      "edge": "O -> T/E",
+      "currentCoverage": "社会关系、医疗可及和社会决定因素提供观察和公共健康入口。",
+      "gap": "还缺少区分资源入口、照护可及、恢复系统和风险缓冲的动态因果模型。",
+      "nextSearch": "healthcare access social support survival longitudinal causal model"
+    },
+    {
+      "edge": "A/Q -> risk",
+      "currentCoverage": "Jagged frontier、AI RMF、人机交互指南和 BCI 伦理已覆盖主要风险语言。",
+      "gap": "还缺少部署后事故率、近失事件、停止条件和回滚成功率的实证资料。",
+      "nextSearch": "AI deployment incident monitoring automation bias rollback post deployment safety"
+    },
+    {
+      "edge": "U_t -> causal claim",
+      "currentCoverage": "Target trial emulation、marginal structural models、预测模型治理和临床报告标准已提供方法门禁。",
+      "gap": "还缺少把每个技术族统一改写成 target-trial protocol 的实例库和失败案例库。",
+      "nextSearch": "target trial emulation technology intervention time zero estimand causal protocol examples"
+    }
+  ],
+  "searchExecutionRegister": [
+    {
+      "id": "SER1",
+      "edge": "T -> E",
+      "searchSeedBranch": "Survival and healthspan modeling",
+      "database": "PubMed / MEDLINE",
+      "query": "restricted mean survival time healthspan disability-free survival agency",
+      "retrievalDate": "2026-06-29",
+      "candidateTitle": "Restricted Mean Survival Time for Survival Analysis: A Quick Guide for Clinical Researchers",
+      "candidateUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9081686/",
+      "evidenceRole": "method standard candidate for expressing effective-time gain as area under a survival curve within a time horizon",
+      "screeningDecision": "METHOD_GATE",
+      "boundaryUse": "Can guide RMST-style effective-time reporting; cannot define subject continuity or prove any intervention extends life.",
+      "candidateStatus": "candidate_queue_only",
+      "nextAction": "Review full text, extract RMST assumptions, and decide whether to add a method Source Card."
+    },
+    {
+      "id": "SER2",
+      "edge": "E -> R",
+      "searchSeedBranch": "Learning rounds and capability accumulation",
+      "database": "Learning analytics journal / Crossref",
+      "query": "learning analytics self regulated learning longitudinal log data feedback loops systematic review",
+      "retrievalDate": "2026-06-29",
+      "candidateTitle": "A Systematic Review of Learning Analytics-Incorporated Interventions Implemented on Learning Management Systems",
+      "candidateUrl": "https://learning-analytics.info/index.php/JLA/article/view/8093",
+      "evidenceRole": "candidate source for turning effective time into observed learning actions, feedback events, and LMS-mediated intervention records",
+      "screeningDecision": "SOURCE_CARD",
+      "boundaryUse": "Can support measurement design for learning rounds; cannot show that longer life automatically produces high-quality feedback cycles.",
+      "candidateStatus": "candidate_queue_only",
+      "nextAction": "Extract intervention types, log variables, outcomes, and limitations for E -> R measurement rules."
+    },
+    {
+      "id": "SER3",
+      "edge": "R -> C",
+      "searchSeedBranch": "Learning rounds and capability accumulation",
+      "database": "Springer / Crossref",
+      "query": "self-regulated learning data science measurement review log data",
+      "retrievalDate": "2026-06-29",
+      "candidateTitle": "A Systematic Review of Self-Regulated Learning through Integration with Data Science Techniques",
+      "candidateUrl": "https://link.springer.com/article/10.1007/s10648-025-10028-0",
+      "evidenceRole": "candidate source for mapping learning rounds, monitoring, control actions, and data traces into capability accumulation proxies",
+      "screeningDecision": "SOURCE_CARD",
+      "boundaryUse": "Can improve R -> C measurement and coding; cannot alone solve transfer, forgetting, saturation, or cross-task generalization.",
+      "candidateStatus": "candidate_queue_only",
+      "nextAction": "Check peer-review metadata, extract SRL constructs, and map them to accumulation and decay terms."
+    },
+    {
+      "id": "SER4",
+      "edge": "C -> A",
+      "searchSeedBranch": "Technology adoption and human-AI productivity",
+      "database": "INFORMS / Crossref",
+      "query": "dynamic capabilities resource access technology adoption expertise trust network",
+      "retrievalDate": "2026-06-29",
+      "candidateTitle": "The Impact of Dynamic Capabilities on Resource Access and Development",
+      "candidateUrl": "https://pubsonline.informs.org/doi/10.1287/orsc.1120.0810",
+      "evidenceRole": "candidate mechanism source for how accumulated capabilities affect resource access and usable resource development",
+      "screeningDecision": "SOURCE_CARD",
+      "boundaryUse": "Can support a resource-access mechanism; cannot be generalized to high-risk biomedical or neural technology adoption without additional evidence.",
+      "candidateStatus": "candidate_queue_only",
+      "nextAction": "Verify DOI metadata and decide whether the mechanism belongs in C -> A or Q -> O."
+    },
+    {
+      "id": "SER5",
+      "edge": "A -> Q",
+      "searchSeedBranch": "Technology adoption and human-AI productivity",
+      "database": "BIS working papers",
+      "query": "generative AI labour productivity field experiment coding quality assurance rework",
+      "retrievalDate": "2026-06-29",
+      "candidateTitle": "Generative AI and labour productivity: a field experiment on coding",
+      "candidateUrl": "https://www.bis.org/publ/work1208.htm",
+      "evidenceRole": "candidate task-level field evidence for AI-assisted coding productivity and heterogeneous workflow effects",
+      "screeningDecision": "SOURCE_CARD",
+      "boundaryUse": "Can strengthen task-specific A -> Q evidence; cannot be extrapolated to general intelligence, healthspan, or subject continuity.",
+      "candidateStatus": "candidate_queue_only",
+      "nextAction": "Extract design, comparator, outcome, quality metric, and whether QA or rework costs are measured."
+    },
+    {
+      "id": "SER6",
+      "edge": "Q -> O",
+      "searchSeedBranch": "Option space and social determinants",
+      "database": "IZA / RePEc",
+      "query": "capability set measurement opportunity set agency resources access",
+      "retrievalDate": "2026-06-29",
+      "candidateTitle": "Empirical Challenges in the Capability Approach: Measuring Capability as an Opportunity Set",
+      "candidateUrl": "https://ideas.repec.org/p/iza/izadps/dp18560.html",
+      "evidenceRole": "candidate method source for measuring option space rather than only observed choices or outputs",
+      "screeningDecision": "METHOD_GATE",
+      "boundaryUse": "Can guide O_t measurement; cannot prove that higher task quality automatically expands real options.",
+      "candidateStatus": "candidate_queue_only",
+      "nextAction": "Review method assumptions and decide whether to add an opportunity-set measurement Source Card."
+    },
+    {
+      "id": "SER7",
+      "edge": "O -> T/E",
+      "searchSeedBranch": "Option space and social determinants",
+      "database": "PubMed / PMC",
+      "query": "social support intervention survival medical patients meta analysis",
+      "retrievalDate": "2026-06-29",
+      "candidateTitle": "Effects of Social Support Interventions on Medical Patient Survival",
+      "candidateUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12841574/",
+      "evidenceRole": "candidate intervention-level source for whether social support can change survival-related outcomes rather than only correlate with them",
+      "screeningDecision": "SOURCE_CARD",
+      "boundaryUse": "Can test an O -> T/E support pathway; cannot isolate all social support mechanisms or replace causal protocols for specific interventions.",
+      "candidateStatus": "candidate_queue_only",
+      "nextAction": "Extract intervention type, study design, survival endpoint, heterogeneity, and risk of bias."
+    },
+    {
+      "id": "SER8",
+      "edge": "A/Q -> risk",
+      "searchSeedBranch": "Risk governance and failure modes",
+      "database": "NIST official publication",
+      "query": "AI deployment incident monitoring automation bias rollback post deployment safety",
+      "retrievalDate": "2026-06-29",
+      "candidateTitle": "Challenges to the Monitoring of Deployed AI Systems",
+      "candidateUrl": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.800-4.pdf",
+      "evidenceRole": "candidate governance source for post-deployment monitoring categories, gaps, barriers, and risk controls",
+      "screeningDecision": "METHOD_GATE",
+      "boundaryUse": "Can constrain risk monitoring language; cannot quantify the net benefit of a specific AI intervention.",
+      "candidateStatus": "candidate_queue_only",
+      "nextAction": "Extract monitoring categories and add them to AI research failure mode controls if they survive full review."
+    },
+    {
+      "id": "SER9",
+      "edge": "U_t -> causal claim",
+      "searchSeedBranch": "Risk governance and failure modes",
+      "database": "PubMed / PMC",
+      "query": "target trial emulation protocol time zero estimand examples technology intervention",
+      "retrievalDate": "2026-06-29",
+      "candidateTitle": "Target trial emulation: bridging observational studies and randomized trials",
+      "candidateUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13044815/",
+      "evidenceRole": "candidate method source for translating interventions into protocol components, time zero, comparator, outcome, and estimand",
+      "screeningDecision": "METHOD_GATE",
+      "boundaryUse": "Can strengthen U_t -> causal claim gate; cannot by itself validate any Human Infra intervention.",
+      "candidateStatus": "candidate_queue_only",
+      "nextAction": "Extract protocol checklist and compare it with current Estimand Registry fields."
+    }
+  ],
+  "searchExecutionVerificationRegister": [
+    {
+      "id": "SEV1",
+      "searchExecutionId": "SER1",
+      "urlStatus": "200",
+      "metadataSource": "PMC page plus Crossref DOI lookup",
+      "canonicalTitle": "Restricted Mean Survival Time for Survival Analysis: A Quick Guide for Clinical Researchers",
+      "titleMatch": "exact",
+      "doiOrPersistentId": "10.3348/kjr.2022.0061",
+      "publicationStatus": "peer-reviewed journal article; Korean Journal of Radiology; 2022",
+      "evidenceLevel": "Level VII method/tutorial article for reporting practice; not an effect estimate",
+      "verificationVerdict": "VERIFY_PASS_METHOD_GATE",
+      "coiOrVenueNote": "No immediate venue red flag from DOI metadata; still requires full-text methods extraction before Source Card.",
+      "useDecision": "Keep as method-gate candidate for T -> E effective-time reporting.",
+      "requiredExtraction": "Extract RMST definition, time-horizon requirement, censoring assumptions, interpretation limits, and why RMST does not prove an intervention.",
+      "blockingIssue": "None for candidate queue; not yet eligible for strong claim use."
+    },
+    {
+      "id": "SEV2",
+      "searchExecutionId": "SER2",
+      "urlStatus": "200",
+      "metadataSource": "Journal of Learning Analytics page plus DOI metadata",
+      "canonicalTitle": "A Systematic Review of Learning Analytics",
+      "titleMatch": "normalized_title",
+      "doiOrPersistentId": "10.18608/jla.2023.8093",
+      "publicationStatus": "peer-reviewed journal article; Journal of Learning Analytics; DOI metadata issued 2024",
+      "evidenceLevel": "Level V systematic review candidate for descriptive/intervention evidence",
+      "verificationVerdict": "VERIFY_PASS_SOURCE_CARD_CANDIDATE",
+      "coiOrVenueNote": "Title on page is shorter than candidate title; use canonical title if promoted to Reference Registry.",
+      "useDecision": "Keep as source-card candidate for E -> R measurement of logged learning actions and intervention records.",
+      "requiredExtraction": "Extract included intervention types, LMS/log variables, outcome measures, evidence limits, and whether feedback loops are observed or inferred.",
+      "blockingIssue": "Title normalization required before formal citation."
+    },
+    {
+      "id": "SEV3",
+      "searchExecutionId": "SER3",
+      "urlStatus": "200",
+      "metadataSource": "Springer page plus Crossref DOI lookup",
+      "canonicalTitle": "A Systematic Review of Self-Regulated Learning through Integration of Multimodal Data and Artificial Intelligence",
+      "titleMatch": "title_drift_detected",
+      "doiOrPersistentId": "10.1007/s10648-025-10028-0",
+      "publicationStatus": "peer-reviewed journal article; Educational Psychology Review; 2025",
+      "evidenceLevel": "Level V systematic review candidate for SRL measurement and data-trace constructs",
+      "verificationVerdict": "VERIFY_PASS_SOURCE_CARD_CANDIDATE",
+      "coiOrVenueNote": "Candidate title used 'data science techniques'; canonical metadata says 'multimodal data and artificial intelligence'.",
+      "useDecision": "Keep as source-card candidate for R -> C coding of self-regulated learning rounds, monitoring, control, and decay proxies.",
+      "requiredExtraction": "Extract SRL constructs, modalities, measurement channels, AI/data methods, and limits for transfer or long-term capability accumulation.",
+      "blockingIssue": "Replace candidate title with canonical title before promotion."
+    },
+    {
+      "id": "SEV4",
+      "searchExecutionId": "SER4",
+      "urlStatus": "403_publisher_page",
+      "metadataSource": "Crossref DOI lookup",
+      "canonicalTitle": "The Impact of Dynamic Capabilities on Resource Access and Development",
+      "titleMatch": "exact",
+      "doiOrPersistentId": "10.1287/orsc.1120.0810",
+      "publicationStatus": "peer-reviewed journal article; Organization Science; 2013",
+      "evidenceLevel": "Level VI mechanism/theory-informed organizational study candidate",
+      "verificationVerdict": "VERIFY_PASS_METADATA_ONLY",
+      "coiOrVenueNote": "Publisher page returned 403 in local fetch; DOI metadata resolves. Full-text access or abstract-level verification is still needed.",
+      "useDecision": "Keep as metadata-verified candidate for C -> A or Q -> O resource-access mechanisms, but do not cite strong claims until full text is inspected.",
+      "requiredExtraction": "Extract population, method, resource-access mechanism, dynamic capabilities definition, and transfer limits to high-risk technologies.",
+      "blockingIssue": "Full-text access needed before Source Card."
+    },
+    {
+      "id": "SEV5",
+      "searchExecutionId": "SER5",
+      "urlStatus": "200",
+      "metadataSource": "BIS official working paper page",
+      "canonicalTitle": "Generative AI and labour productivity: a field experiment on coding",
+      "titleMatch": "exact",
+      "doiOrPersistentId": "BIS Working Papers No. 1208",
+      "publicationStatus": "official working paper; Bank for International Settlements; preprint/working-paper evidence",
+      "evidenceLevel": "Level III candidate field experiment, downgraded for working-paper status until peer-review status is known",
+      "verificationVerdict": "VERIFY_PASS_SOURCE_CARD_CANDIDATE",
+      "coiOrVenueNote": "Official institutional source; no DOI found in local metadata pass. Treat as working paper and report status explicitly.",
+      "useDecision": "Keep as source-card candidate for A -> Q task-level AI productivity, with working-paper caveat.",
+      "requiredExtraction": "Extract sample, randomization or assignment design, comparator, coding task, productivity metric, quality metric, QA/rework handling, and heterogeneity.",
+      "blockingIssue": "Peer-review status and QA/rework measurement must be recorded before strong use."
+    },
+    {
+      "id": "SEV6",
+      "searchExecutionId": "SER6",
+      "urlStatus": "200",
+      "metadataSource": "RePEc / IZA discussion paper page",
+      "canonicalTitle": "Empirical Challenges in the Capability Approach: Measuring Capability Sets and Unfreedom through Counterfactual Comparisons",
+      "titleMatch": "title_drift_detected",
+      "doiOrPersistentId": "IZA Discussion Paper No. 18560",
+      "publicationStatus": "discussion paper; IZA / RePEc; working-paper evidence",
+      "evidenceLevel": "Level VII method discussion candidate for opportunity-set measurement",
+      "verificationVerdict": "VERIFY_PASS_METHOD_GATE",
+      "coiOrVenueNote": "Candidate title was shorter and omitted 'unfreedom through counterfactual comparisons'. Use canonical title if promoted.",
+      "useDecision": "Keep as method-gate candidate for Q -> O measurement of capability sets and unobserved options.",
+      "requiredExtraction": "Extract measurement problem, counterfactual comparison method, observable-vs-unobservable option limits, and implications for O_t.",
+      "blockingIssue": "Working-paper status and title normalization required before formal citation."
+    },
+    {
+      "id": "SEV7",
+      "searchExecutionId": "SER7",
+      "urlStatus": "200",
+      "metadataSource": "PMC page plus Crossref DOI lookup",
+      "canonicalTitle": "Effects of Social Support Interventions on Medical Patient Survival: A Meta-Analysis of Non-Randomized Clinical Trials",
+      "titleMatch": "normalized_title",
+      "doiOrPersistentId": "10.3390/healthcare14020277",
+      "publicationStatus": "peer-reviewed journal article; Healthcare; 2026",
+      "evidenceLevel": "Level I meta-analysis form, downgraded for non-randomized included trials and risk-of-bias concerns",
+      "verificationVerdict": "VERIFY_PASS_SOURCE_CARD_CANDIDATE",
+      "coiOrVenueNote": "Recent 2026 source; requires risk-of-bias review before using as O -> T/E evidence.",
+      "useDecision": "Keep as source-card candidate for O -> T/E intervention pathway, with ROBINS-I or equivalent caution.",
+      "requiredExtraction": "Extract inclusion criteria, effect measure, heterogeneity, non-randomized design risks, intervention definition, survival endpoint, and limitations.",
+      "blockingIssue": "Risk-of-bias extraction required before strong causal wording."
+    },
+    {
+      "id": "SEV8",
+      "searchExecutionId": "SER8",
+      "urlStatus": "200_pdf",
+      "metadataSource": "NIST official PDF",
+      "canonicalTitle": "Challenges to the Monitoring of Deployed AI Systems",
+      "titleMatch": "exact",
+      "doiOrPersistentId": "NIST.AI.800-4",
+      "publicationStatus": "official institutional report; NIST AI publication",
+      "evidenceLevel": "Level VII official technical report for governance and monitoring practice",
+      "verificationVerdict": "VERIFY_PASS_METHOD_GATE",
+      "coiOrVenueNote": "Official NIST publication; use for governance categories, not empirical effect size.",
+      "useDecision": "Keep as method-gate candidate for A/Q -> risk deployment monitoring and failure mode controls.",
+      "requiredExtraction": "Extract monitoring taxonomy, deployment failure modes, data drift or oversight barriers, and rollback/incident logging implications.",
+      "blockingIssue": "None for governance use; not eligible for effect-size claims."
+    },
+    {
+      "id": "SEV9",
+      "searchExecutionId": "SER9",
+      "urlStatus": "200",
+      "metadataSource": "PMC page plus Crossref DOI lookup",
+      "canonicalTitle": "Target trial emulation: bridging observational studies and randomized trials for health decision-making",
+      "titleMatch": "normalized_title",
+      "doiOrPersistentId": "10.57264/cer-2025-0180",
+      "publicationStatus": "peer-reviewed journal article; Journal of Comparative Effectiveness Research; 2026",
+      "evidenceLevel": "Level VII method article for causal protocol design",
+      "verificationVerdict": "VERIFY_PASS_METHOD_GATE",
+      "coiOrVenueNote": "Recent method article; use to update protocol fields, not to validate specific interventions.",
+      "useDecision": "Keep as method-gate candidate for U_t -> causal claim and target-trial protocol examples.",
+      "requiredExtraction": "Extract protocol components, eligibility, treatment strategies, assignment, time zero, follow-up, outcome, estimand, and analysis plan requirements.",
+      "blockingIssue": "None for method-gate use; still needs comparison with existing Estimand Registry."
+    }
+  ],
+  "searchExecutionExtractionRegister": [
+    {
+      "id": "SEE1",
+      "verificationId": "SEV1",
+      "searchExecutionId": "SER1",
+      "readScope": "PMC page headings and method article metadata",
+      "extractionStatus": "PARTIAL_METHOD_EXTRACTION",
+      "extractedClaim": "Restricted mean survival time is presented as a time-horizon-dependent summary measure for interpreting survival curves.",
+      "modelUse": "Use as a method candidate for reporting area-under-survival-curve style effective-time differences in T -> E.",
+      "variablesTouched": ["T", "E"],
+      "supports": "Supports RMST-style reporting language for bounded follow-up windows and survival-curve summaries.",
+      "doesNotSupport": "Does not define subject continuity, agency, health quality, or any specific intervention effect.",
+      "promotionDecision": "METHOD_SOURCE_CARD_DRAFT",
+      "nextSourceCardAction": "Draft a method Source Card focused on RMST definition, time horizon, censoring/follow-up requirements, and non-effect boundary."
+    },
+    {
+      "id": "SEE2",
+      "verificationId": "SEV2",
+      "searchExecutionId": "SER2",
+      "readScope": "Journal abstract and metadata",
+      "extractionStatus": "ABSTRACT_EXTRACTION",
+      "extractedClaim": "The review examined 27 studies from 2012 through 2023 on learning analytics interventions implemented in learning management systems and their empirical impacts on teaching and learning practices.",
+      "modelUse": "Use as a candidate measurement source for converting effective time into logged learning actions, intervention exposure, and feedback records in E -> R.",
+      "variablesTouched": ["E", "R"],
+      "supports": "Supports LMS log data and learning analytics interventions as observable proxies for learning rounds and feedback events.",
+      "doesNotSupport": "Does not show that longer lifespan or more calendar time automatically produces high-quality learning loops.",
+      "promotionDecision": "SOURCE_CARD_DRAFT",
+      "nextSourceCardAction": "Extract intervention taxonomy, log variables, outcome measures, included-study design spread, and evidence limits."
+    },
+    {
+      "id": "SEE3",
+      "verificationId": "SEV3",
+      "searchExecutionId": "SER3",
+      "readScope": "Springer abstract and page metadata",
+      "extractionStatus": "ABSTRACT_EXTRACTION",
+      "extractedClaim": "The review maps behavioral, contextual, physiological, multimodal, and AI-enabled data streams used to capture cognitive, affective, metacognitive, and motivational processes in self-regulated learning.",
+      "modelUse": "Use as a candidate construct and measurement source for R -> C, especially monitoring, control, temporal sequence, and multimodal evidence of learning regulation.",
+      "variablesTouched": ["R", "C"],
+      "supports": "Supports SRL constructs and multimodal traces as richer proxies for learning rounds and capability accumulation.",
+      "doesNotSupport": "Does not prove long-term transfer, resistance to forgetting, saturation limits, or cross-domain capability growth.",
+      "promotionDecision": "SOURCE_CARD_DRAFT_WITH_TITLE_FIX",
+      "nextSourceCardAction": "Use canonical title, extract SRL process grid, modality categories, temporal/sequential methods, and limits for accumulation modeling."
+    },
+    {
+      "id": "SEE4",
+      "verificationId": "SEV4",
+      "searchExecutionId": "SER4",
+      "readScope": "Crossref DOI metadata only; publisher page fetch returned 403",
+      "extractionStatus": "METADATA_ONLY_NO_FULLTEXT",
+      "extractedClaim": "Metadata verifies existence of an Organization Science article on dynamic capabilities, resource access, and resource development.",
+      "modelUse": "Hold as a possible mechanism source for C -> A or Q -> O until full text or abstract can be inspected.",
+      "variablesTouched": ["C", "A", "Q", "O"],
+      "supports": "Supports only bibliographic existence at this stage.",
+      "doesNotSupport": "Does not currently support any model edge, causal mechanism, or claim in the paper because no content extraction was completed.",
+      "promotionDecision": "HOLD_METADATA_ONLY",
+      "nextSourceCardAction": "Find legal full text, abstract, author manuscript, or library access before any Source Card or Reference Registry promotion."
+    },
+    {
+      "id": "SEE5",
+      "verificationId": "SEV5",
+      "searchExecutionId": "SER5",
+      "readScope": "BIS official page summary and abstract-like page text",
+      "extractionStatus": "OFFICIAL_PAGE_EXTRACTION",
+      "extractedClaim": "The BIS working paper reports a field experiment around CodeFuse access in programming teams; the official summary reports more than 50% higher code output for the treatment group and stronger statistical significance among junior staff.",
+      "modelUse": "Use as bounded A -> Q task-level AI productivity evidence, with explicit working-paper and task-specific caveats.",
+      "variablesTouched": ["A", "Q"],
+      "supports": "Supports a task-specific hypothesis that AI adoption can affect coding output under a field experiment design.",
+      "doesNotSupport": "Does not support general intelligence improvement, healthspan improvement, subject continuity, or unqualified long-term productivity gains.",
+      "promotionDecision": "SOURCE_CARD_DRAFT_WITH_WORKING_PAPER_CAVEAT",
+      "nextSourceCardAction": "Extract treatment/control definition, assignment design, code-output metric, quality metric, seniority heterogeneity, QA/rework treatment, and acceptance behavior."
+    },
+    {
+      "id": "SEE6",
+      "verificationId": "SEV6",
+      "searchExecutionId": "SER6",
+      "readScope": "RePEc / IZA abstract and metadata",
+      "extractionStatus": "ABSTRACT_EXTRACTION",
+      "extractedClaim": "The discussion paper frames capability measurement as an opportunity-set problem and proposes counterfactual comparisons using panel-data fixed effects to assess potential activities, including unchosen activities.",
+      "modelUse": "Use as method-gate candidate for O_t measurement, especially distinguishing observed choices from feasible but unchosen options.",
+      "variablesTouched": ["Q", "O"],
+      "supports": "Supports the need to measure capability sets as opportunity sets rather than only observed outcomes.",
+      "doesNotSupport": "Does not prove that higher task quality expands real option space, and does not validate the Human Infra flywheel.",
+      "promotionDecision": "METHOD_SOURCE_CARD_DRAFT_WITH_WORKING_PAPER_CAVEAT",
+      "nextSourceCardAction": "Extract opportunity-set measurement logic, counterfactual comparison assumptions, dataset constraints, and unfreedom measurement boundaries."
+    },
+    {
+      "id": "SEE7",
+      "verificationId": "SEV7",
+      "searchExecutionId": "SER7",
+      "readScope": "PMC abstract and metadata",
+      "extractionStatus": "ABSTRACT_EXTRACTION_WITH_CAUTION",
+      "extractedClaim": "The meta-analysis summarized 39,493 patients across 14 non-randomized trials; hazard-ratio results across four studies failed to reach statistical significance and odds-ratio results were smaller in magnitude.",
+      "modelUse": "Use as a boundary-rich O -> T/E candidate showing how social support intervention evidence must be handled with design and significance cautions.",
+      "variablesTouched": ["O", "T", "E"],
+      "supports": "Supports social support interventions as a relevant survival-outcome research branch and highlights the need for risk-of-bias review.",
+      "doesNotSupport": "Does not currently support a strong causal claim that social support interventions reliably improve survival.",
+      "promotionDecision": "SOURCE_CARD_DRAFT_WITH_RISK_OF_BIAS_GATE",
+      "nextSourceCardAction": "Extract intervention definitions, effect measures, confidence intervals, heterogeneity, non-randomized design limitations, and ROBINS-I concerns."
+    },
+    {
+      "id": "SEE8",
+      "verificationId": "SEV8",
+      "searchExecutionId": "SER8",
+      "readScope": "NIST PDF abstract, executive summary, and table of contents",
+      "extractionStatus": "OFFICIAL_REPORT_EXTRACTION",
+      "extractedClaim": "NIST identifies post-deployment monitoring as necessary to validate real-world reliability, track unforeseen outputs and drift, and identify unexpected consequences; it organizes challenges into monitoring categories and gaps.",
+      "modelUse": "Use as A/Q -> risk method-gate evidence for post-deployment monitoring, incident monitoring, drift tracking, human factors, operational, security, compliance, and large-scale impact categories.",
+      "variablesTouched": ["A", "Q"],
+      "supports": "Supports deployment monitoring categories and governance vocabulary for AI-enabled Human Infra tools.",
+      "doesNotSupport": "Does not quantify the net benefit, failure rate, or productivity effect of any specific AI system.",
+      "promotionDecision": "METHOD_SOURCE_CARD_DRAFT",
+      "nextSourceCardAction": "Extract monitoring category codebook, challenge taxonomy, open questions, and mapping into AI research failure mode controls."
+    },
+    {
+      "id": "SEE9",
+      "verificationId": "SEV9",
+      "searchExecutionId": "SER9",
+      "readScope": "PMC abstract and metadata",
+      "extractionStatus": "ABSTRACT_EXTRACTION",
+      "extractedClaim": "The target-trial emulation article describes three steps: precise causal question formulation, explicit target-trial protocol specification, and replicating protocol components such as eligibility, assignment, and follow-up using observational data.",
+      "modelUse": "Use as U_t -> causal claim method-gate evidence for refining estimand and analysis-plan requirements.",
+      "variablesTouched": ["U_t"],
+      "supports": "Supports protocolizing observational causal questions through eligibility, treatment strategy, assignment, follow-up, outcome, estimand, and analysis methods.",
+      "doesNotSupport": "Does not validate any specific Human Infra intervention or remove unmeasured-confounding risk.",
+      "promotionDecision": "METHOD_SOURCE_CARD_DRAFT",
+      "nextSourceCardAction": "Compare its protocol components with current Estimand Registry and add missing protocol fields if needed."
+    }
+  ],
+  "variables": ["T", "E", "R", "C", "A", "Q", "O"],
+  "variableDictionary": [
+    {
+      "symbol": "T",
+      "name": "主体持续时间",
+      "role": "外层时间窗口，决定主体还能参与世界的持续边界。",
+      "stateType": "time / survival",
+      "unit": "年、随访时间或给定时间窗内的生存概率",
+      "proxyMetrics": ["生存状态", "S(t)=P(T>t)", "全因死亡或主体失效终点"],
+      "positiveDirection": "在主体性和行动能力保留时，持续窗口更长。",
+      "failureMode": "日历寿命增加，但失能、失智、依赖或主体性丧失占主导。",
+      "modelUse": "作为有效时间积分的外层边界，并进入风险函数与生存曲线。"
+    },
+    {
+      "symbol": "E",
+      "name": "有效时间",
+      "role": "把活着的时间转换为可行动、可学习、可判断、可创造的时间。",
+      "stateType": "quality-adjusted agency time",
+      "unit": "可行动小时、质量调整年或健康行动时间比例",
+      "proxyMetrics": ["HALE/QALY 代理", "ADL/IADL", "认知功能", "可行动小时"],
+      "positiveDirection": "更多保留健康、认知、恢复和主体性的时间。",
+      "failureMode": "新增时间被疾病、疲劳、疼痛、依赖或注意力碎片化吸收。",
+      "modelUse": "驱动学习轮次 R，是寿命叙事进入问题求解模型的桥梁。"
+    },
+    {
+      "symbol": "R",
+      "name": "学习/修正轮次",
+      "role": "主体在任务中完成学习、试错、反馈、复盘和策略更新的循环次数。",
+      "stateType": "process count",
+      "unit": "反馈闭环、项目迭代或刻意练习周期",
+      "proxyMetrics": ["刻意练习次数", "项目迭代数", "复盘记录", "反馈循环"],
+      "positiveDirection": "更多带目标、反馈、调整和迁移的高质量轮次。",
+      "failureMode": "无反馈重复、目标漂移、错误反馈、低质量练习或学习饱和。",
+      "modelUse": "把有效时间转换为积累资本 C。"
+    },
+    {
+      "symbol": "C",
+      "name": "积累资本",
+      "role": "经验、技能、判断力、知识结构、资源储备、信誉资产和协作网络的存量。",
+      "stateType": "stock",
+      "unit": "潜在能力、资源和网络存量",
+      "proxyMetrics": ["技能测试", "知识资产", "资源储备", "网络强度", "信誉资产"],
+      "positiveDirection": "更多可迁移能力、资源冗余、协作入口和信誉资本。",
+      "failureMode": "遗忘、衰退、路径锁定、不可迁移、资源耗散或关系失效。",
+      "modelUse": "降低长期目标成本，并提高技术采用能力 A。"
+    },
+    {
+      "symbol": "A",
+      "name": "技术采用能力",
+      "role": "发现、理解、评估、试用、整合和长期使用新技术的能力。",
+      "stateType": "policy / action capacity",
+      "unit": "成功整合概率、采用速度或可靠使用率",
+      "proxyMetrics": ["技术可及性", "理解成本", "评估准确率", "试用转整合比例", "工作流嵌入率"],
+      "positiveDirection": "更高的可靠采用率，并通过证据门禁进入主体系统。",
+      "failureMode": "盲目采用、误信工具、工具锁定、不可及、不可维护或误用。",
+      "modelUse": "选择会改变状态转移、观测能力、行动质量或风险函数的干预。"
+    },
+    {
+      "symbol": "Q",
+      "name": "单位时间行动质量",
+      "role": "同样有效时间内完成判断、创造、问题求解和反馈吸收的质量与密度。",
+      "stateType": "performance rate",
+      "unit": "质量调整任务产出 / 有效时间",
+      "proxyMetrics": ["任务吞吐", "质量评分", "错误率", "反馈延迟", "可处理复杂度"],
+      "positiveDirection": "单位有效时间内更高质量、更低错误、更快反馈和更强复杂任务处理。",
+      "failureMode": "速度增加但质量下降、QA 成本上升、幻觉、返工或自动化偏差。",
+      "modelUse": "把技术采用与积累资本转化为可解决问题范围和可能性空间 O。"
+    },
+    {
+      "symbol": "O",
+      "name": "可能性空间",
+      "role": "主体真实可进入的任务、关系、知识、资源、制度和技术路径集合。",
+      "stateType": "feasible option set",
+      "unit": "可进入路径的数量、质量、可逆性和进入概率",
+      "proxyMetrics": ["医疗可及", "资源入口", "制度入口", "协作机会", "可逆选择", "技术窗口"],
+      "positiveDirection": "更多真实可进入、可选择、可逆和可迁移的未来路径。",
+      "failureMode": "机会只停留在叙事层，受身份、资源、制度、风险或健康限制无法进入。",
+      "modelUse": "通过照护、恢复、风险治理、资源和技术窗口反哺主体持续时间 T 与有效时间 E。"
+    }
+  ],
+  "modelContract": {
+    "version": "0.1",
+    "status": "coherent-after-reframing",
+    "invariantObject": "折现主体持续性价值，即主体在未来时间窗内持续存在、行动、学习、恢复和选择的综合价值。",
+    "timeIndex": "离散时间 t，时间步长可按年、季度、月或项目周期设定；所有结论必须声明时间窗。",
+    "stateVector": "X_t=(T_t,E_t,R_t,C_t,A_t,Q_t,O_t,Risk_t)",
+    "actionVector": "U_t=(medical,AI,wearable,knowledge_system,automation,resource_environment)",
+    "transitionOperator": "P(X_{t+1}|X_t,U_t)，表示行动或干预如何改变下一阶段主体状态。",
+    "hazardOperator": "lambda(t|X_t,U_t)，表示当前状态与干预条件下的死亡、失能或主体失效风险。",
+    "objective": "maximize_pi E[sum_t delta^t*(E_t + alpha Q_t + beta O_t - gamma Risk_t)]",
+    "constraints": [
+      "identity_continuity >= threshold",
+      "evidence_gate(U_t) == pass",
+      "consent_and_rights == protected",
+      "no_personal_death_date_output == true",
+      "causal_claim_requires_population_comparator_time_zero_outcome_estimand == true"
+    ],
+    "nonClaims": [
+      "不证明永生已经实现",
+      "不输出个体死亡日期",
+      "不把机制合理或短期功能改善升级成寿命延长结论",
+      "不把技术存在等同于主体增强"
+    ]
+  },
+  "derivationMap": [
+    {
+      "step": "D1",
+      "stepType": "definition",
+      "content": "选择折现主体持续性价值作为不变量，避免把单一寿命长度误当成最终研究对象。"
+    },
+    {
+      "step": "D2",
+      "stepType": "approximation",
+      "content": "用 T/E/R/C/A/Q/O/Risk 表示主体状态的第一版低维代理，而非完整人体、社会和技术系统。"
+    },
+    {
+      "step": "D3",
+      "stepType": "definition",
+      "content": "把医学、AI、检测、知识系统、自动化和资源环境写成行动向量 U_t。"
+    },
+    {
+      "step": "D4",
+      "stepType": "method",
+      "content": "任何技术价值只通过状态转移 P(X_{t+1}|X_t,U_t) 或风险函数 lambda(t|X_t,U_t) 进入模型。"
+    },
+    {
+      "step": "D5",
+      "stepType": "interpretation",
+      "content": "有效永生被解释为受证据、风险、伦理和主体连续性约束的动态策略问题。"
+    },
+    {
+      "step": "D6",
+      "stepType": "boundary",
+      "content": "模型禁止输出个体死亡日期，禁止把探索性相关、机制合理或短期任务收益伪装成寿命结论。"
+    }
+  ],
+  "claimRegister": [
+    {
+      "id": "CL1",
+      "claim": "有效永生应被建模为主体持续性、能力系统、技术系统和可能性空间的反馈问题，而非单次寿命长度问题。",
+      "claimType": "Conceptual framing",
+      "support": ["Effective immortality definition", "Subject continuity chain", "Capability Approach"],
+      "currentStatus": "Framework proposal",
+      "requiredUpgrade": "需要通过变量字典和案例研究证明该框架比单一寿命指标更能解释长期行动能力。"
+    },
+    {
+      "id": "CL2",
+      "claim": "T/E/R/C/A/Q/O 是第一版最小变量接口，可把寿命、有效时间、轮次、积累、技术采用、行动质量和可能性空间放入同一模型。",
+      "claimType": "Model interface",
+      "support": ["Evidence Matrix", "Metric Registry", "Source Cards"],
+      "currentStatus": "Operational definition",
+      "requiredUpgrade": "需要为每个变量补单位、代理指标、缺失处理和可重复测量方案。"
+    },
+    {
+      "id": "CL3",
+      "claim": "技术或干预应被表示为改变状态转移 P(X_{t+1}|X_t,U_t) 或风险函数 lambda(t|X_t,U_t) 的算子。",
+      "claimType": "Method claim",
+      "support": ["Kaplan-Meier", "Cox", "Target Trial Emulation", "Prediction model governance"],
+      "currentStatus": "Methodologically supported",
+      "requiredUpgrade": "每个技术族必须写出 population、comparator、time zero、outcome 和 estimand。"
+    },
+    {
+      "id": "CL4",
+      "claim": "AI 工具可在限定任务内提高单位时间行动质量，但收益具有任务边界和人群异质性。",
+      "claimType": "Task-limited empirical claim",
+      "support": ["Generative AI at Work", "Noy and Zhang", "GitHub Copilot experiment", "Jagged Technological Frontier"],
+      "currentStatus": "Supported only for bounded tasks",
+      "requiredUpgrade": "需要按任务族建立 AI frontier map，并同步统计 QA 成本、幻觉、返工和依赖风险。"
+    },
+    {
+      "id": "CL5",
+      "claim": "可能性空间必须定义为主体真实可进入的路径集合，不能只统计抽象机会或叙事愿望。",
+      "claimType": "Normative and measurement claim",
+      "support": ["Capability Approach", "Human Capital", "Social Capital", "WHO social determinants"],
+      "currentStatus": "Normative framework with measurement task",
+      "requiredUpgrade": "需要把 O 拆成资源入口、制度入口、协作入口、技术窗口和可逆选择，并给出进入条件。"
+    },
+    {
+      "id": "CL6",
+      "claim": "所有增强技术都必须同时建模正向通道、负向通道、治理门禁和回滚条件。",
+      "claimType": "Governance claim",
+      "support": ["NIST AI RMF", "Human-AI Interaction Guidelines", "Jagged Technological Frontier", "BCI ethics"],
+      "currentStatus": "Governance requirement",
+      "requiredUpgrade": "需要为每个技术族建立 downside channel、监测指标、停止条件和事故复盘模板。"
+    },
+    {
+      "id": "CL7",
+      "claim": "本文不证明永生已经实现，不输出个体死亡日期，不把机制合理或短期功能改善升级成寿命延长结论。",
+      "claimType": "Prohibited claim boundary",
+      "support": ["Evidence policy", "Causal protocol", "Threat model"],
+      "currentStatus": "Hard boundary",
+      "requiredUpgrade": "任何后续图表、页面和模型输出都必须保留该边界。"
+    }
+  ],
+  "claimEvidenceMap": [
+    {
+      "claimId": "CL1",
+      "paperSections": ["S1", "S2", "S4", "S6"],
+      "evidenceEdges": ["T -> E", "E -> R", "R -> C", "C -> A", "A -> Q", "Q -> O", "O -> T/E"],
+      "citationContexts": ["CTX2", "CTX4", "CTX5", "CTX6", "CTX7", "CTX12"],
+      "alignmentVerdict": "FRAMEWORK_ONLY",
+      "currentSupport": "各局部边有方法、机制、关联、实验或规范来源支撑；完整飞轮仍是综合框架主张。",
+      "falsifiers": ["关键边长期不成立", "负向通道压过正向通道", "新增寿命无法转化为有效时间"],
+      "upgradeGate": "完成至少一个案例研究或仿真，证明该框架比单一寿命指标更能解释长期行动能力。"
+    },
+    {
+      "claimId": "CL2",
+      "paperSections": ["S5", "S12", "S13"],
+      "evidenceEdges": ["T -> E", "E -> R", "R -> C", "C -> A", "A -> Q", "Q -> O", "O -> T/E", "A/Q -> risk"],
+      "citationContexts": ["CTX1", "CTX2", "CTX4", "CTX5", "CTX6", "CTX7", "CTX8", "CTX12"],
+      "alignmentVerdict": "OPERATIONAL_INTERFACE",
+      "currentSupport": "七变量接口把不同文献谱系压缩为可建模字段；当前只证明字段可讨论，不证明字段充分。",
+      "falsifiers": ["变量无法被稳定代理测量", "变量之间高度重叠导致不可识别", "关键主体状态被遗漏"],
+      "upgradeGate": "为每个变量补齐单位、代理指标、缺失处理、时间窗、适用人群和可重复测量方案。"
+    },
+    {
+      "claimId": "CL3",
+      "paperSections": ["S5", "S11", "S13"],
+      "evidenceEdges": ["U_t -> causal claim", "T -> E"],
+      "citationContexts": ["CTX1", "CTX9"],
+      "alignmentVerdict": "METHOD_SUPPORTED",
+      "currentSupport": "生存分析、风险模型和 target-trial style 因果协议支持把技术写成状态转移或风险函数上的算子。",
+      "falsifiers": ["没有 comparator", "time zero 错误", "结局定义偷换", "不可测混杂压倒识别假设"],
+      "upgradeGate": "每个技术族必须给出 population、intervention、comparator、time zero、outcome、estimand 和识别假设。"
+    },
+    {
+      "claimId": "CL4",
+      "paperSections": ["S8", "S10", "S12"],
+      "evidenceEdges": ["A -> Q", "A/Q -> risk"],
+      "citationContexts": ["CTX7", "CTX8"],
+      "alignmentVerdict": "BOUNDED_EMPIRICAL",
+      "currentSupport": "AI 工具在客服、写作、编程和部分知识任务中有任务内收益证据；该证据只支持限定任务边界。",
+      "falsifiers": ["任务进入 jagged frontier 失败区", "QA 成本抵消速度收益", "幻觉或自动化偏差提高返工", "高技能主体收益不稳定"],
+      "upgradeGate": "按任务族建立 AI frontier map，并同步记录速度、质量、错误、QA 成本、依赖和异质性。"
+    },
+    {
+      "claimId": "CL5",
+      "paperSections": ["S3", "S8", "S12"],
+      "evidenceEdges": ["Q -> O", "O -> T/E"],
+      "citationContexts": ["CTX5", "CTX12"],
+      "alignmentVerdict": "NORMATIVE_MEASUREMENT",
+      "currentSupport": "能力方法、社会资本和公共健康框架支持把可能性空间定义为真实可进入路径集合。",
+      "falsifiers": ["产出提高但资源、权限、身份或制度入口不增加", "机会只能叙述不能进入", "新增路径带来更高暴露和恢复负担"],
+      "upgradeGate": "把 O 拆成资源入口、制度入口、协作入口、技术窗口和可逆选择，并定义进入条件。"
+    },
+    {
+      "claimId": "CL6",
+      "paperSections": ["S10", "S11", "S14"],
+      "evidenceEdges": ["A/Q -> risk", "U_t -> causal claim"],
+      "citationContexts": ["CTX8", "CTX9", "CTX10", "CTX11"],
+      "alignmentVerdict": "GOVERNANCE_REQUIRED",
+      "currentSupport": "AI 风险、人机交互、个人数据系统和认知工具谱系共同要求把副作用、误用、回滚和治理门禁并入模型。",
+      "falsifiers": ["技术收益只记正项", "停止条件缺失", "回滚路径缺失", "事故复盘缺失", "主体权利和同意边界缺失"],
+      "upgradeGate": "为每个技术族建立 downside channel、监测指标、停止条件、回滚条件和事故复盘模板。"
+    },
+    {
+      "claimId": "CL7",
+      "paperSections": ["S3", "S7", "S11", "S14", "S16"],
+      "evidenceEdges": ["U_t -> causal claim", "A/Q -> risk"],
+      "citationContexts": ["CTX1", "CTX3", "CTX7", "CTX8", "CTX9"],
+      "alignmentVerdict": "HARD_BOUNDARY",
+      "currentSupport": "方法标准、预测模型治理、AI 风险治理和证据政策共同限定本文不能输出个人死亡日期或把短期功能改善升级成寿命结论。",
+      "falsifiers": ["页面输出个体死亡日期", "机制合理被写成干预效果", "短期任务收益被写成寿命延长", "引用上下文越界"],
+      "upgradeGate": "后续图表、模型和传播材料必须持续保留非主张边界，并接受 claim-to-source 审计。"
+    }
+  ],
+  "evidenceEdges": [
+    {
+      "edge": "T -> E",
+      "question": "寿命窗口延长是否转化为有效时间，而不是单纯延长失能期。",
+      "sources": ["Kaplan-Meier", "Cox", "Health Capital", "WHO HALE", "QALY"],
+      "evidenceRole": "生存函数、风险函数、健康资本和质量调整时间的语言。",
+      "confidence": "Medium",
+      "breakpoint": "寿命延长但健康质量、行动能力、主体性下降。",
+      "modelTask": "定义 E = survival * health_quality * agency 的路径积分。"
+    },
+    {
+      "edge": "E -> R",
+      "question": "有效时间是否增加学习、试错、复盘和长期项目轮次。",
+      "sources": ["Deliberate Practice", "Law of Practice", "Self-Regulated Learning"],
+      "evidenceRole": "说明轮次必须带有目标、反馈、调整和可迁移练习。",
+      "confidence": "Medium",
+      "breakpoint": "低质量重复、无反馈、注意力碎片、目标漂移。",
+      "modelTask": "区分日历时间、清醒时间、有效学习时间和反馈轮次。"
+    },
+    {
+      "edge": "R -> C",
+      "question": "轮次如何沉淀为经验、技能、判断、知识和网络。",
+      "sources": ["Deliberate Practice", "Law of Practice", "Feedback Intervention Theory", "Human Capital", "Social Capital"],
+      "evidenceRole": "支撑能力积累、学习曲线、反馈质量和资本沉淀。",
+      "confidence": "Medium",
+      "breakpoint": "学习饱和、错误反馈、遗忘、能力不可迁移。",
+      "modelTask": "建立非线性学习曲线和衰减项。"
+    },
+    {
+      "edge": "C -> A",
+      "question": "经验、资源、信誉和网络是否提高技术采用能力。",
+      "sources": ["TAM", "UTAUT", "Diffusion of Innovations", "Human Capital"],
+      "evidenceRole": "技术采用受有用性、易用性、社会影响、资源和情境约束影响。",
+      "confidence": "Medium",
+      "breakpoint": "技术不可及、学习成本过高、信任错误、采用后无法整合。",
+      "modelTask": "将采用拆成 access、understanding、evaluation、trial、integration。"
+    },
+    {
+      "edge": "A -> Q",
+      "question": "技术采用是否提高单位时间行动质量和创造密度。",
+      "sources": ["Generative AI at Work", "Noy & Zhang", "GitHub Copilot", "Jagged Technological Frontier"],
+      "evidenceRole": "AI 工具在限定任务中提升速度、质量或吞吐，并显示异质性。",
+      "confidence": "Medium-High for narrow tasks",
+      "breakpoint": "任务在 AI 能力边界外、过度依赖、幻觉、缺少 QA。",
+      "modelTask": "建立按任务类型分层的 AI frontier map。"
+    },
+    {
+      "edge": "Q -> O",
+      "question": "更高行动质量是否扩大真实可能性空间。",
+      "sources": ["Capability Approach", "Human Capital", "Social Capital", "AI productivity evidence"],
+      "evidenceRole": "把产出能力转译为真实可行选择权和路径入口。",
+      "confidence": "Medium-Low",
+      "breakpoint": "产出不等于选择权；制度、身份、资源和风险限制进入。",
+      "modelTask": "定义 O 为 feasible option set，而不是抽象愿望。"
+    },
+    {
+      "edge": "O -> T/E",
+      "question": "可能性空间如何反过来强化主体持续性。",
+      "sources": ["Social relationships mortality", "Health Capital", "Digital Twin", "Care access"],
+      "evidenceRole": "资源、关系、医疗可及性和恢复系统可能影响生存与健康质量。",
+      "confidence": "Medium",
+      "breakpoint": "选择权无法访问、社会资本排他、资源转化失败。",
+      "modelTask": "拆分 resources、support、care、recovery、risk governance。"
+    },
+    {
+      "edge": "A/Q -> risk",
+      "question": "技术增强是否同时引入副作用和尾部风险。",
+      "sources": ["Jagged Technological Frontier", "NIST AI RMF", "BCI ethics", "Evidence policy"],
+      "evidenceRole": "增强技术可能越界、误导、放大监控或降低判断质量。",
+      "confidence": "Medium",
+      "breakpoint": "把技术效果只记为正收益，忽略误用、依赖和治理失败。",
+      "modelTask": "为每个技术干预增加 downside channel 和治理门禁。"
+    },
+    {
+      "edge": "U_t -> causal claim",
+      "question": "技术或干预能否从相关信号升级为因果主张。",
+      "sources": ["Target Trial Emulation", "Marginal Structural Models", "Prediction Model Governance"],
+      "evidenceRole": "要求先定义 population、comparator、time zero、outcome、estimand 和识别假设。",
+      "confidence": "High as method gate",
+      "breakpoint": "不可测混杂、阳性失败、选择偏差、time zero 错误。",
+      "modelTask": "将每个干预卡片改写成 target-trial protocol。"
+    }
+  ],
+  "estimandRegistry": [
+    {
+      "edge": "T -> E",
+      "population": "给定年龄、疾病状态、资源条件和主体连续性阈值的主体或人群。",
+      "interventionOrExposure": "延长生存窗口或降低死亡/主体失效风险的医学、照护、资源或环境策略。",
+      "comparator": "常规照护、未干预、延迟干预或替代持续性策略。",
+      "timeZero": "策略分配、干预启动或可观测暴露定义成立的时点。",
+      "outcome": "健康质量调整后的有效时间、无失能生存时间、主体性保留时间或生存函数差异。",
+      "estimand": "在预设时间窗内，干预策略相对比较策略对有效时间积分或 S(t) 的平均差异。",
+      "identificationRisk": "immortal time bias、适应证混杂、失访、健康质量代理偏差和主体连续性阈值定义不稳。",
+      "currentStatus": "方法可定义；具体估计需要队列/试验数据和健康质量代理。"
+    },
+    {
+      "edge": "E -> R",
+      "population": "具备最低健康、认知和任务参与能力的主体或人群。",
+      "interventionOrExposure": "可行动有效时间增加，或恢复、睡眠、健康管理使可用于反馈学习的时间比例提高。",
+      "comparator": "有效时间不变、碎片化时间增加或只增加日历寿命的路径。",
+      "timeZero": "有效时间变化被观测或策略启动的第一个周期。",
+      "outcome": "有明确目标、反馈、复盘和策略调整的学习/试错轮次数。",
+      "estimand": "单位时间窗内有效学习轮次数的平均差异或比率差异。",
+      "identificationRisk": "时间质量不可测、任务选择偏差、注意力碎片化、低质量重复被误计为学习轮次。",
+      "currentStatus": "可作为行为或项目日志研究；需要明确轮次定义。"
+    },
+    {
+      "edge": "R -> C",
+      "population": "在可比任务领域持续参与学习、工作或研究项目的主体或团队。",
+      "interventionOrExposure": "更多高质量反馈轮次、刻意练习、复盘或项目迭代。",
+      "comparator": "较少轮次、无反馈重复或低质量反馈路径。",
+      "timeZero": "学习计划、项目周期或反馈系统启动时。",
+      "outcome": "技能、知识资产、判断质量、资源储备、信誉资产和协作网络的变化。",
+      "estimand": "给定时间窗内积累资本 C 的平均变化差异，含能力增长和衰减项。",
+      "identificationRisk": "学习饱和、幸存者偏差、反馈质量混杂、能力不可迁移、网络资源无法量化。",
+      "currentStatus": "可通过项目日志、技能测试和网络指标试建。"
+    },
+    {
+      "edge": "C -> A",
+      "population": "拥有不同经验、资源、技能和协作网络基础的技术使用者或团队。",
+      "interventionOrExposure": "积累资本提高，包括知识结构、资源冗余、信誉入口、技术理解和协作网络增强。",
+      "comparator": "低积累资本或缺少资源、网络、知识支持的主体。",
+      "timeZero": "新技术窗口出现或技术采用任务开始时。",
+      "outcome": "技术发现、理解、评估、试用、整合和长期可靠使用的概率或速度。",
+      "estimand": "积累资本变化对技术采用成功率、采用时滞或整合质量的平均差异。",
+      "identificationRisk": "反向因果、资源可及性混杂、技术类型差异、采用后失败被遗漏。",
+      "currentStatus": "可用 TAM、UTAUT、diffusion 数据结构建初版观测研究。"
+    },
+    {
+      "edge": "A -> Q",
+      "population": "在明确任务族内使用特定技术的人或团队。",
+      "interventionOrExposure": "经证据门禁通过的 AI、自动化、知识系统、检测或医学辅助工具采用。",
+      "comparator": "不使用该工具、延迟使用、替代工具或常规流程。",
+      "timeZero": "工具可用且被允许进入工作流的时点。",
+      "outcome": "单位有效时间内的任务质量、速度、错误率、反馈延迟和复杂任务处理能力。",
+      "estimand": "技术采用相对比较策略对质量调整任务产出率 Q 的平均处理效应。",
+      "identificationRisk": "任务 frontier 错判、QA 成本漏计、幻觉/自动化偏差、选择性使用、短期新奇效应。",
+      "currentStatus": "已有四条 AI 任务证据支持限定任务内估计；不能外推到寿命收益。"
+    },
+    {
+      "edge": "Q -> O",
+      "population": "在任务、资源、制度和协作入口受约束的主体或团队。",
+      "interventionOrExposure": "单位时间行动质量、产出密度、反馈速度和复杂问题处理能力提高。",
+      "comparator": "行动质量不变或速度提升但质量/可信度下降。",
+      "timeZero": "行动质量变化被稳定观测后的第一个周期。",
+      "outcome": "真实可进入任务、关系、资源、制度、知识和技术路径的数量、质量和可逆性。",
+      "estimand": "行动质量变化对可行选择集合 O 的平均边际变化。",
+      "identificationRisk": "抽象机会被误计为真实可进入路径、制度门槛、身份/资源限制、短期产出不转化为入口。",
+      "currentStatus": "规范和测量框架已定义；数值估计仍弱。"
+    },
+    {
+      "edge": "O -> T/E",
+      "population": "拥有不同社会支持、医疗可及、资源缓冲和制度入口的主体或人群。",
+      "interventionOrExposure": "可能性空间扩大，包括医疗、照护、风险缓冲、资源入口和可逆选择增加。",
+      "comparator": "可能性空间受限、资源入口少、照护不足或选择不可逆的路径。",
+      "timeZero": "资源、支持、照护入口形成或政策/环境变化生效时。",
+      "outcome": "生存、健康寿命、恢复能力、主体性保留和有效时间变化。",
+      "estimand": "可能性空间扩大对 T/E 的平均差异，优先报告健康质量调整后的时间。",
+      "identificationRisk": "社会资本选择偏差、地区制度混杂、资源转化失败、反向因果。",
+      "currentStatus": "公共卫生和社会资本证据支持方向；强因果估计需要自然实验或队列。"
+    },
+    {
+      "edge": "A/Q -> risk",
+      "population": "使用增强技术、自动化、AI、检测、医学或神经工具的主体或团队。",
+      "interventionOrExposure": "技术采用和单位时间行动质量提高的同时暴露于副作用、依赖、误用、监控或尾部风险。",
+      "comparator": "不采用技术、低自动化、人工复核更强或治理门禁更严格的策略。",
+      "timeZero": "技术进入主体系统或风险治理策略启动时。",
+      "outcome": "错误率、QA 成本、事故、依赖、隐私泄漏、认知退化、健康副作用和尾部事件。",
+      "estimand": "技术增强策略对风险负项 Risk_t 的平均增量及其对净主体持续性价值的扣减。",
+      "identificationRisk": "负面事件低频、漏报、组织沉默、短随访、幸存者偏差和风险外溢。",
+      "currentStatus": "必须作为所有增强估计的并行负向 estimand。"
+    },
+    {
+      "edge": "U_t -> causal claim",
+      "population": "任何声称技术、医学、工具、环境或资源策略改变主体持续性的研究对象。",
+      "interventionOrExposure": "候选技术或干预 U_t。",
+      "comparator": "明确定义的不干预、常规照护、替代策略、延迟策略或不同强度策略。",
+      "timeZero": "干预策略分配或暴露定义可被无偏识别的时点。",
+      "outcome": "预注册的死亡、失能、健康寿命、有效时间、行动质量、风险或可能性空间结局。",
+      "estimand": "在指定人群、时间窗和策略下，U_t 相对 comparator 对目标结局的因果效应。",
+      "identificationRisk": "比较组缺失、time zero 错误、替代终点偷换、时间变化混杂、阳性失败和不可测混杂。",
+      "currentStatus": "方法门禁；未满足该行时只能保留为机制假设、相关信号或探索性证据。"
+    }
+  ],
+  "analysisPlanRegistry": [
+    {
+      "edge": "T -> E",
+      "studyQuestion": "延长主体持续窗口的策略是否增加健康质量调整后的有效时间，而不是只增加失能期。",
+      "candidateDesign": "优先使用随机试验或 target trial emulation；次选前瞻队列、自然实验或 registry-based cohort。",
+      "minimumData": "time zero、年龄、性别、基线疾病、基线功能、干预/暴露、比较组、随访时间、死亡/失能、健康质量或主体性代理。",
+      "primaryEstimator": "Kaplan-Meier / restricted mean survival time / Cox 或 flexible parametric survival model，并报告健康质量调整时间积分。",
+      "diagnostics": "删失机制、比例风险或时间变化效应、基线平衡、失访模式、结局定义一致性。",
+      "sensitivityChecks": "landmark analysis、competing risks、inverse probability censoring weights、未测混杂 E-value 或定量偏倚分析。",
+      "reportingOutput": "生存曲线差、RMST 差、健康质量调整有效时间差、主要亚组和不可外推边界。",
+      "currentStatus": "方法路径清晰；仍需具体数据源和健康质量代理。"
+    },
+    {
+      "edge": "E -> R",
+      "studyQuestion": "有效时间增加是否转化为更多高质量学习、试错、复盘和策略修正轮次。",
+      "candidateDesign": "纵向日志研究、时间使用研究、N-of-1/多基线设计或任务平台追踪。",
+      "minimumData": "有效时间测量、任务目标、反馈记录、复盘记录、轮次定义、注意力碎片化、健康/疲劳状态、项目周期。",
+      "primaryEstimator": "mixed-effects count model、event-rate model 或 within-subject interrupted time series。",
+      "diagnostics": "轮次编码一致性、过度离散、零膨胀、时间自相关、任务难度漂移。",
+      "sensitivityChecks": "排除无反馈重复、不同轮次阈值、按任务族分层、滞后效应窗口变化。",
+      "reportingOutput": "每单位有效时间的高质量反馈轮次率、轮次质量分布、无效重复比例。",
+      "currentStatus": "适合先做项目日志原型；不能把清醒时间直接等同于学习轮次。"
+    },
+    {
+      "edge": "R -> C",
+      "studyQuestion": "更多高质量轮次是否沉淀为可迁移能力、知识资产、判断力、资源和协作网络。",
+      "candidateDesign": "longitudinal skill assessment、deliberate-practice cohort、learning-curve modeling 或项目组合追踪。",
+      "minimumData": "轮次数、反馈质量、练习间隔、任务难度、技能测试、知识资产、资源变化、协作网络和遗忘/衰退指标。",
+      "primaryEstimator": "hierarchical learning curve、growth curve model 或 state-space model，显式加入饱和和衰减项。",
+      "diagnostics": "测验等值性、学习曲线拟合、 ceiling effect、任务迁移有效性、反馈质量混杂。",
+      "sensitivityChecks": "不同学习曲线形式、排除低质量反馈、迁移任务验证、滞后窗口和衰减率扫描。",
+      "reportingOutput": "能力增长率、迁移效果、资本存量变化、饱和点和衰减率。",
+      "currentStatus": "可作为能力积累模型入口；需要把资本拆成能力、资源和网络子维度。"
+    },
+    {
+      "edge": "C -> A",
+      "studyQuestion": "经验、资源、信誉和协作网络是否提高新技术的发现、理解、评估、试用和整合能力。",
+      "candidateDesign": "technology adoption cohort、diffusion study、quasi-experiment 或平台行为日志。",
+      "minimumData": "基线能力/资源/网络、技术可及性、采用时间、试用记录、整合质量、废弃记录、任务场景和支持条件。",
+      "primaryEstimator": "discrete-time hazard model、adoption time model 或 mediation model。",
+      "diagnostics": "反向因果、选择进入、技术可及性差异、采用定义一致性和右删失。",
+      "sensitivityChecks": "按技术族分层、不同采用成功阈值、工具废弃作为失败事件、倾向评分/IPW 对比。",
+      "reportingOutput": "采用时滞、采用成功率、整合质量、失败/废弃比例和资源门槛。",
+      "currentStatus": "可复用 TAM/UTAUT/diffusion 设计；必须区分接触、试用和可靠整合。"
+    },
+    {
+      "edge": "A -> Q",
+      "studyQuestion": "技术采用是否在明确任务边界内提高单位有效时间行动质量，同时不被 QA 成本抵消。",
+      "candidateDesign": "randomized task experiment、field rollout、stepped-wedge design 或 A/B test。",
+      "minimumData": "任务族、任务难度、工具版本、使用状态、比较流程、时间、质量评分、错误率、QA 成本、返工和使用者异质性。",
+      "primaryEstimator": "intention-to-treat / treatment-on-treated contrasts、difference-in-differences 或 hierarchical task model。",
+      "diagnostics": "任务 frontier 分类、污染、学习效应、评分者一致性、质量和速度的联合分布。",
+      "sensitivityChecks": "QA 成本扣减、边界外任务单独报告、按技能水平分层、不同质量评分协议。",
+      "reportingOutput": "质量调整任务产出率、速度-质量权衡、QA 扣减后净效应、异质性和边界外失败率。",
+      "currentStatus": "已有四条 AI 任务证据；下一步应扩展长期维护成本和隐藏错误。"
+    },
+    {
+      "edge": "Q -> O",
+      "studyQuestion": "单位时间行动质量提高是否扩大主体真实可进入的任务、关系、资源、制度和技术路径。",
+      "candidateDesign": "longitudinal opportunity-set study、career/project panel、network/resource access study 或 mixed methods。",
+      "minimumData": "行动质量指标、可进入路径清单、进入条件、实际进入记录、资源/制度门槛、关系网络、退出和可逆性。",
+      "primaryEstimator": "panel model、transition model、network growth model 或 capability-set index change model。",
+      "diagnostics": "抽象机会与真实进入混淆、机会计数重复、制度门槛遗漏、网络测量偏差。",
+      "sensitivityChecks": "只统计已验证入口、按路径质量加权、不同可逆性阈值、资源限制分层。",
+      "reportingOutput": "可行选择集合变化、真实进入率、路径质量/可逆性分布和资源门槛。",
+      "currentStatus": "测量最弱；需要先建立可行路径编码手册。"
+    },
+    {
+      "edge": "O -> T/E",
+      "studyQuestion": "真实可能性空间扩大是否通过医疗、照护、资源缓冲和社会支持反哺主体持续时间与有效时间。",
+      "candidateDesign": "natural experiment、policy variation study、social support cohort、healthcare access cohort 或 target trial emulation。",
+      "minimumData": "医疗可及、社会支持、资源缓冲、照护入口、风险暴露、健康状态、死亡/失能、有效时间和地区/制度变量。",
+      "primaryEstimator": "marginal structural model、difference-in-differences、instrumental variable 或 survival model with time-varying covariates。",
+      "diagnostics": "时间变化混杂、反向因果、政策暴露定义、地区趋势、社会资本选择偏差。",
+      "sensitivityChecks": "负控结局/暴露、placebo policy timing、不同地区趋势、IPW truncation 和未测混杂分析。",
+      "reportingOutput": "生存/健康寿命差、有效时间差、恢复能力变化和资源转化失败率。",
+      "currentStatus": "公共健康证据方向较强；具体飞轮反哺仍需个案或自然实验。"
+    },
+    {
+      "edge": "A/Q -> risk",
+      "studyQuestion": "增强技术在提高行动质量的同时是否增加副作用、依赖、误用、监控、隐藏错误或尾部事故。",
+      "candidateDesign": "safety surveillance、incident registry、post-deployment monitoring、red-team evaluation 或 prospective cohort。",
+      "minimumData": "技术暴露、使用强度、任务边界、错误/事故、QA 成本、隐私事件、依赖指标、回滚记录和严重程度。",
+      "primaryEstimator": "adverse event rate model、time-to-incident model、risk difference / risk ratio 或 severity-weighted harm index。",
+      "diagnostics": "低频事件功效不足、漏报、组织沉默、选择性记录、暴露强度误分。",
+      "sensitivityChecks": "主动监测 vs 被动报告、严重度加权、近失事件纳入、尾部风险场景分析。",
+      "reportingOutput": "风险增量、净效应扣减、停止条件触发率、回滚成功率和不可接受风险清单。",
+      "currentStatus": "必须与所有增强估计并行；不能后置为伦理附录。"
+    },
+    {
+      "edge": "U_t -> causal claim",
+      "studyQuestion": "候选技术或干预能否从机制假设或相关信号升级为因果主张。",
+      "candidateDesign": "target trial emulation protocol、registered RCT、prospective observational protocol 或 prediction-model validation plan。",
+      "minimumData": "population、eligibility、assignment/exposure rule、comparator、time zero、follow-up、outcome、censoring、covariates、protocol deviations。",
+      "primaryEstimator": "按预注册协议选择 effect measure：risk difference、hazard ratio、RMST difference、ATE/CATE 或 calibration/discrimination metrics。",
+      "diagnostics": "交换性、一致性、阳性、time zero、删失、缺失、模型校准、外部验证和协议偏离。",
+      "sensitivityChecks": "negative controls、quantitative bias analysis、missingness scenarios、alternative estimands、external validation split。",
+      "reportingOutput": "目标试验协议表、主估计、敏感性分析、适用人群、非主张边界和失败原因。",
+      "currentStatus": "作为全局方法门禁；未通过时只能保留为探索性证据。"
+    }
+  ],
+  "aiResearchFailureModeAudit": [
+    {
+      "modeId": "FM1",
+      "failureMode": "Implementation bug passing AI self-review",
+      "appliesTo": "脚本、图表、审计、任何数值生成流程。",
+      "riskInThisPaper": "当前论文包含生成脚本和审计脚本，但不声称新的实验结果；后续 D3 玩具模型和仿真曲线会触发该风险。",
+      "currentEvidence": "JSON smoke、coverage audit、reference export、Astro build、make check 和页面 curl 已作为当前验证证据；无新增未经日志支持的实验效果数值。",
+      "control": "所有生成物必须由 npm scripts 或 make check 重建；任何数值曲线必须保留输入参数、运行命令、输出文件和 hash。",
+      "status": "CLEAR_FOR_CURRENT_DRAFT",
+      "blockCondition": "若新增实验、仿真或模型曲线数值但没有运行日志、参数文件和输出证据，则阻塞。",
+      "nextAction": "为后续 D3 玩具模型增加参数 JSON、运行日志和输出 hash。"
+    },
+    {
+      "modeId": "FM2",
+      "failureMode": "Hallucinated citation",
+      "appliesTo": "Reference Registry、Source Cards、正文引用上下文和 Web References。",
+      "riskInThisPaper": "论文依赖跨领域来源，最容易发生真实来源被用于错误主张或元数据手抄错误。",
+      "currentEvidence": "Reference Registry、Citation Context Register、Claim Evidence Map、Coverage Audit 和 generated references.bib 已建立；citation audit 仍保留 WARN。",
+      "control": "新增来源必须进入 Reference Registry、Source Cards 或官方/DOI/arXiv/PubMed 入口，并通过 export 与 coverage audit。",
+      "status": "WARN_NOT_FULLY_CLEARED",
+      "blockCondition": "正式投稿前若未完成 fresh reviewer thread 的逐句引用语境审查，则不能标记为 citation PASS。",
+      "nextAction": "运行独立 citation-audit 或 fresh reviewer pass，对正文 claim-to-source 做逐句抽样/全量核查。"
+    },
+    {
+      "modeId": "FM3",
+      "failureMode": "Hallucinated experimental result",
+      "appliesTo": "AI task effect estimates、未来仿真曲线、任何百分比提升或风险降低数字。",
+      "riskInThisPaper": "当前 A -> Q 数字来自外部论文 method-audit；如果后续增加玩具模型，曲线可能被误读为实验结果。",
+      "currentEvidence": "AI task evidence register 记录样本、设计、效应估计、统计不确定性、QA 成本和外推边界；当前没有自有实验结果。",
+      "control": "所有外部数字必须带 referenceKey 和 methodAudit；自有数字必须能追溯到脚本输出、日志或数据文件。",
+      "status": "CLEAR_FOR_CURRENT_DRAFT",
+      "blockCondition": "出现本项目自有 X% 改善、Y 年延长或曲线阈值，却无法回到运行证据时阻塞。",
+      "nextAction": "给未来模型页面增加“conceptual simulation / not empirical result” 标签和数据 provenance。"
+    },
+    {
+      "modeId": "FM4",
+      "failureMode": "Shortcut reliance",
+      "appliesTo": "AI productivity 证据、A -> Q 外推、任务边界和模型变量代理。",
+      "riskInThisPaper": "AI 工具在限定任务内有效，可能被错误外推为通用能力增强或寿命收益。",
+      "currentEvidence": "A -> Q 注册表、Jagged Frontier 负向通道、Evidence Classes、Claim Register CL4 和 Threats to Validity 已限制外推。",
+      "control": "所有技术收益必须声明任务族、frontier、QA 成本、错误率和不可外推范围。",
+      "status": "WARN_MONITORED",
+      "blockCondition": "若正文把局部任务收益写成通用智力、有效永生或寿命收益，则阻塞。",
+      "nextAction": "补 AI frontier map，并将边界外任务和隐藏错误作为独立证据表。"
+    },
+    {
+      "modeId": "FM5",
+      "failureMode": "Implementation bug reframed as novel insight",
+      "appliesTo": "任何声称“反直觉”“意外发现”“出现阈值/临界点”的段落。",
+      "riskInThisPaper": "当前论文以理论链路为主，尚无自有反直觉实验结果；后续若出现阈值图或无限临界值，风险会上升。",
+      "currentEvidence": "当前阈值、飞轮和临界叙述均被标为模型设想或研究计划，不作为实证发现。",
+      "control": "所有“意外”或“阈值”主张必须同时给出代码证据、替代解释、反证条件和敏感性分析。",
+      "status": "CLEAR_FOR_CURRENT_DRAFT",
+      "blockCondition": "若把仿真 artifact、bug 或参数设定产物写成新发现，则阻塞。",
+      "nextAction": "在玩具模型前新增 parameter sweep 与 sanity check。"
+    },
+    {
+      "modeId": "FM6",
+      "failureMode": "Methodology fabrication",
+      "appliesTo": "方法流程、analysis plan、target-trial protocol、审计脚本和页面生成说明。",
+      "riskInThisPaper": "本文包含大量方法协议，容易把“计划做”误写为“已经执行”。",
+      "currentEvidence": "正文区分 working paper、protocol、analysis plan、currentStatus 和 nonClaims；验证命令已实际运行并记录。",
+      "control": "未执行的研究设计必须写成 candidateDesign 或 nextAction，不能用完成式描述；已执行验证必须给命令和产物路径。",
+      "status": "CLEAR_WITH_BOUNDARY",
+      "blockCondition": "若 Methods/Research Route 描述不存在的实验、数据收集或模型训练，则阻塞。",
+      "nextAction": "正式论文版将协议和已执行验证分成 Methods、Planned Analyses、Reproducibility Log 三段。"
+    },
+    {
+      "modeId": "FM7",
+      "failureMode": "Frame-lock at early pipeline stage",
+      "appliesTo": "研究问题、有效永生定义、T/E/R/C/A/Q/O 变量接口和主链路。",
+      "riskInThisPaper": "项目早期选择“有效永生飞轮”作为主框架，可能遮蔽更简单解释或负向结果。",
+      "currentEvidence": "Claim Register、Falsifiers、Threats to Validity、Alternative Explanations / Rival Models、Candidate Model Specification Registry、Estimand Registry、Analysis Plan Registry 和 nonClaims 已保留反证路径。",
+      "control": "每条主张必须有 falsifier 和 upgradeGate；框架只作为可反驳 working paper，不写成已证实理论。",
+      "status": "WARN_MONITORED",
+      "blockCondition": "若论文删除反证条件、把飞轮写成必然规律，或把替代框架排除在外，则阻塞。",
+      "nextAction": "把 rival model tests 接入后续玩具模型、D3 曲线和案例研究，对比飞轮模型是否真的提供额外解释力。"
+    }
+  ],
+  "rivalModels": [
+    {
+      "model": "单纯寿命窗口模型",
+      "coreExplanation": "延长日历生存时间 `T`，让主体拥有更多等待和行动机会。",
+      "prediction": "只要 `T` 增加，机会总量可能增加；但不要求健康质量、学习轮次、技术采用或行动质量同步改善。",
+      "distinguishingTest": "如果 `T` 增加后 `E/R/C/A/Q/O` 没有系统性增长，或新增时间主要是低质量等待，则单纯寿命模型足以解释结果，飞轮不成立。",
+      "risk": "把存在时间误读为有效时间。"
+    },
+    {
+      "model": "健康资本 / 有效时间模型",
+      "coreExplanation": "健康质量、功能状态和可行动时间 `E` 是关键中介，寿命价值取决于健康质量调整后的时间。",
+      "prediction": "主体持续性改善主要来自健康质量、无失能时间、恢复能力和医疗可及性的提升。",
+      "distinguishingTest": "如果 `E` 能解释大部分长期行动能力变化，而 `R/C/A/Q/O` 的反馈项没有额外解释力，应采用健康资本模型。",
+      "risk": "把主体持续性压缩成健康效用，遗漏学习、工具、协作和未来选择权。"
+    },
+    {
+      "model": "能力积累 / 人力资本模型",
+      "coreExplanation": "学习轮次、技能、经验、资源、信誉和协作网络 `C` 决定长期任务解决能力。",
+      "prediction": "差异主要来自积累速度、学习曲线、反馈质量和资本可迁移性，而不是寿命本身。",
+      "distinguishingTest": "如果短寿命但高积累主体超过长寿命低积累主体，说明 `C` 的解释力强于 `T`，飞轮必须把积累质量放在中心。",
+      "risk": "忽视健康、死亡风险和时间边界对积累过程的硬约束。"
+    },
+    {
+      "model": "AI / 工具增强模型",
+      "coreExplanation": "AI、自动化、知识系统和检测工具 `A` 直接提高单位时间行动质量 `Q`。",
+      "prediction": "任务表现提升主要发生在工具进入工作流后，且强烈依赖任务是否处于技术能力边界内。",
+      "distinguishingTest": "如果 `A -> Q` 的收益不依赖 `T/E/R/C` 的长期积累，或者 QA 成本和失败率抵消收益，则飞轮应收缩为任务级工具增强模型。",
+      "risk": "把局部任务收益外推为通用能力、健康寿命或主体持续性收益。"
+    },
+    {
+      "model": "能力方法 / 社会决定因素模型",
+      "coreExplanation": "真实可能性空间 `O` 由资源、制度、医疗可及、社会支持、身份权限和环境约束共同决定。",
+      "prediction": "未来选择权增加来自真实可进入路径的扩张，而不是抽象产出或主观愿望。",
+      "distinguishingTest": "如果 `Q` 提升但资源入口、制度入口、照护入口和可逆选择没有增加，则能力方法模型否定飞轮的 `Q -> O` 边。",
+      "risk": "把规范性选择权当成可直接量化的寿命预测变量。"
+    },
+    {
+      "model": "风险反噬 / 治理失败模型",
+      "coreExplanation": "更多时间、更多技术和更复杂系统也会增加依赖、误用、监控、事故、压力和尾部风险。",
+      "prediction": "增强路径可能提高短期产出，却降低净主体持续性价值，甚至让飞轮反转。",
+      "distinguishingTest": "如果 downside channel、风险暴露、恢复负担和治理成本高于收益，飞轮应被判定为负反馈或风险放大器。",
+      "risk": "只计算正向复利，遗漏负向复利。"
+    },
+    {
+      "model": "Human Infra 飞轮模型",
+      "coreExplanation": "`T/E/R/C/A/Q/O` 之间形成可观测正反馈，并且负向通道未压过正向通道。",
+      "prediction": "有效永生不是单点延寿，而是主体持续性、能力系统、技术系统和可能性空间之间的复利循环。",
+      "distinguishingTest": "只有当多条边同时成立、跨时间滞后仍可复现、替代模型不能单独解释，并且风险扣减后净值为正时，飞轮模型才获得额外解释力。",
+      "risk": "过早把研究框架写成事实规律。"
+    }
+  ],
+  "modelComparisonProtocol": [
+    {
+      "stage": "MCP1 候选模型冻结",
+      "purpose": "先冻结所有可竞争解释，防止看到结果后只保留有利于飞轮的模型。",
+      "implementation": "至少同时纳入单纯寿命窗口、健康资本、能力积累、AI/工具增强、能力方法、风险反噬和 Human Infra 飞轮模型。",
+      "upgradeSignal": "候选模型、变量接口、非主张边界和失败条件在分析前写入协议。",
+      "failureSignal": "结果出现后才新增或删除竞争模型，或把飞轮设为默认胜者。"
+    },
+    {
+      "stage": "MCP2 共享结局定义",
+      "purpose": "让所有模型预测同一组结局，避免用不同终点制造胜利。",
+      "implementation": "共同预测 `E`、`R`、`C`、`A`、`Q`、`O`、风险扣减和净主体持续性价值。",
+      "upgradeSignal": "每个模型都能生成同一结局字段的方向、强度和不确定性。",
+      "failureSignal": "某模型只预测容易获胜的终点，或把替代指标偷换成主结局。"
+    },
+    {
+      "stage": "MCP3 简单模型优先",
+      "purpose": "优先检验更少变量、更少反馈项的模型能否解释结果。",
+      "implementation": "先拟合 `T`、`E`、`C`、`A/Q`、`O` 和风险模型，再加入跨变量反馈项。",
+      "upgradeSignal": "飞轮模型在共享结局上提供额外解释力或预测力，而不只是更复杂。",
+      "failureSignal": "简单模型已经解释主要变化，飞轮反馈项没有稳定增量。"
+    },
+    {
+      "stage": "MCP4 反馈项增量检验",
+      "purpose": "把“加速回报”压成可检验的反馈项，而不是形容词。",
+      "implementation": "显式检验 `T/E -> R -> C -> A -> Q -> O -> T/E` 的滞后项、交互项和中介路径。",
+      "upgradeSignal": "反馈项跨时间方向正确、效应不被单个变量吸收，并且在敏感性分析中保持稳定。",
+      "failureSignal": "链路只在同期相关中出现，加入滞后、负控或风险项后消失。"
+    },
+    {
+      "stage": "MCP5 风险扣减与净值判断",
+      "purpose": "防止只计算正向复利，遗漏副作用、治理成本和尾部风险。",
+      "implementation": "为每个模型同步报告 downside channel、QA 成本、恢复负担、事故率、隐私/权利风险和停止条件。",
+      "upgradeSignal": "飞轮模型在风险扣减后仍显示正净值，并且停止条件未触发。",
+      "failureSignal": "行动质量提高但风险、依赖、监控、错误或恢复负担抵消收益。"
+    },
+    {
+      "stage": "MCP6 外推边界检查",
+      "purpose": "防止从局部任务、局部人群或短期工具收益外推到主体持续性。",
+      "implementation": "按任务族、人群、资源条件、制度环境和技术可及性分层报告。",
+      "upgradeSignal": "飞轮机制在至少一个明确边界内可复现，并准确说明不可外推范围。",
+      "failureSignal": "只在单一高资源场景、单一任务或短期窗口成立，却被写成通用规律。"
+    },
+    {
+      "stage": "MCP7 决策规则",
+      "purpose": "规定什么时候允许把结果写成飞轮主张。",
+      "implementation": "只有简单模型不足、反馈项有增量、风险扣减后为正、外推边界清楚且 citation context 通过审查时，才升级为飞轮主张。",
+      "upgradeSignal": "满足模型比较、因果协议、风险治理和引用语境审计四个门槛。",
+      "failureSignal": "任一门槛失败时，只能保留为替代模型、局部机制或研究假设。"
+    }
+  ],
+  "candidateModelSpecifications": [
+    {
+      "modelId": "CM1",
+      "model": "单纯寿命窗口模型",
+      "includedVariables": "`T`",
+      "feedbackTerms": "无反馈项；只允许日历生存窗口进入模型。",
+      "primaryOutcome": "生存时间、等待窗口、可观察未来年份。",
+      "comparisonRole": "最低复杂度基线，用来检验“多活一段时间”是否已经解释主要差异。",
+      "minimumData": "年龄、起点时间、死亡/删失时间、基础生存曲线或随访窗口。",
+      "winningCondition": "`T` 的变化足以解释目标结局，加入 `E/R/C/A/Q/O` 后增量很小。",
+      "downgradeCondition": "`T` 增加但有效时间、能力、技术采用或可能性空间不增长。"
+    },
+    {
+      "modelId": "CM2",
+      "model": "健康资本 / 有效时间模型",
+      "includedVariables": "`T`、`E`、健康质量、失能、恢复能力。",
+      "feedbackTerms": "允许 `T -> E` 和健康状态转移，不默认允许能力/技术正反馈。",
+      "primaryOutcome": "健康质量调整有效时间、无失能生存、可行动小时数。",
+      "comparisonRole": "检验主体持续性是否主要由健康质量解释。",
+      "minimumData": "生存时间、健康质量或功能状态、失能事件、恢复/照护变量。",
+      "winningCondition": "`E` 解释长期行动能力变化，反馈项没有稳定额外解释力。",
+      "downgradeCondition": "健康质量不能解释学习轮次、技术采用或真实选择权变化。"
+    },
+    {
+      "modelId": "CM3",
+      "model": "能力积累 / 人力资本模型",
+      "includedVariables": "`R`、`C`、技能、经验、知识资产、资源、协作网络。",
+      "feedbackTerms": "允许 `R -> C`、学习曲线、衰减项和资本迁移项。",
+      "primaryOutcome": "能力存量、任务迁移表现、资源和协作网络增长。",
+      "comparisonRole": "检验长期表现是否主要来自积累质量，而不是寿命或工具。",
+      "minimumData": "学习/项目轮次、反馈质量、技能测量、资源和协作网络时间序列。",
+      "winningCondition": "`C` 能解释技术采用和行动质量，且 `T/E` 只提供背景窗口。",
+      "downgradeCondition": "能力积累无法迁移，或被健康、资源、技术可及性约束压过。"
+    },
+    {
+      "modelId": "CM4",
+      "model": "AI / 工具增强模型",
+      "includedVariables": "`A`、`Q`、任务类型、QA 成本、错误率、自动化边界。",
+      "feedbackTerms": "允许 `A -> Q`，但不默认允许 `Q -> O -> T/E` 反哺。",
+      "primaryOutcome": "质量调整任务产出率、完成时间、错误率、返工率。",
+      "comparisonRole": "检验技术收益是否只是任务级增强。",
+      "minimumData": "任务族、工具暴露、对照组、产出质量、时间、QA 成本和错误事件。",
+      "winningCondition": "工具进入后 `Q` 提升，且提升不依赖长期主体积累或寿命窗口。",
+      "downgradeCondition": "任务越界、QA 成本、幻觉、返工或依赖抵消收益。"
+    },
+    {
+      "modelId": "CM5",
+      "model": "能力方法 / 社会决定因素模型",
+      "includedVariables": "`O`、资源入口、制度入口、医疗可及、社会支持、环境约束。",
+      "feedbackTerms": "允许 `Q -> O` 和 `O -> T/E`，但要求真实可进入路径证据。",
+      "primaryOutcome": "可行选择集合、真实进入率、资源/制度/照护入口变化。",
+      "comparisonRole": "检验未来选择权是否由社会条件解释，而不是个体能力或技术本身。",
+      "minimumData": "资源、身份权限、医疗可及、社会支持、制度门槛和路径进入记录。",
+      "winningCondition": "`O` 的变化解释主体持续性差异，且 `Q` 只有通过真实入口才产生作用。",
+      "downgradeCondition": "机会只停留在叙事层，无法被主体实际进入。"
+    },
+    {
+      "modelId": "CM6",
+      "model": "风险反噬 / 治理失败模型",
+      "includedVariables": "`Risk_t`、downside channel、事故、依赖、监控、恢复负担、停止条件。",
+      "feedbackTerms": "允许负反馈、尾部风险放大和收益扣减项。",
+      "primaryOutcome": "净主体持续性价值、风险扣减后有效时间、事故率和回滚成功率。",
+      "comparisonRole": "检验飞轮正反馈是否被副作用和治理成本抵消。",
+      "minimumData": "负面事件、近失事件、QA 成本、隐私/权利风险、恢复时间和停止条件触发记录。",
+      "winningCondition": "风险扣减后净值为负，或治理成本高于正向收益。",
+      "downgradeCondition": "风险通道低且可监测、可回滚，未压过正向通道。"
+    },
+    {
+      "modelId": "CM7",
+      "model": "Human Infra 飞轮模型",
+      "includedVariables": "`T/E/R/C/A/Q/O/Risk_t` 全链路。",
+      "feedbackTerms": "`T/E -> R -> C -> A -> Q -> O -> T/E` 正反馈，以及 `A/Q -> risk` 负反馈。",
+      "primaryOutcome": "风险扣减后的主体持续性、行动质量、能力系统和可能性空间复合变化。",
+      "comparisonRole": "完整模型，只在简单模型不足时进入强解释位置。",
+      "minimumData": "跨时间生命路径数据、健康质量、学习轮次、资本积累、技术采用、任务质量、选择权和风险通道。",
+      "winningCondition": "多条边方向正确、反馈项有增量、风险扣减后为正，且替代模型不能单独解释。",
+      "downgradeCondition": "任何关键边失败、反馈项无增量、风险压过收益或 citation context 未通过审查。"
+    }
+  ],
+  "modelComparisonReportingMatrix": [
+    {
+      "reportItem": "MCR1 冻结模型集",
+      "purpose": "证明比较不是事后挑选模型。",
+      "requiredOutput": "列出 CM1-CM7、版本号、变量接口、允许反馈项和排除模型。",
+      "passCriterion": "所有候选模型在分析前可追溯到 Candidate Model Specification Registry。",
+      "failurePattern": "结果出现后才新增、删除或重命名模型。"
+    },
+    {
+      "reportItem": "MCR2 共享结局与估计量",
+      "purpose": "保证所有模型比较的是同一批目标。",
+      "requiredOutput": "`E/R/C/A/Q/O/Risk_t`、净主体持续性价值、主估计量和次要估计量。",
+      "passCriterion": "每个候选模型都对相同结局给出方向、效应大小和不确定性。",
+      "failurePattern": "某个模型只报告对自己有利的结局。"
+    },
+    {
+      "reportItem": "MCR3 Time zero 与随访窗口",
+      "purpose": "防止 immortal time bias、选择偏差和时间顺序错误。",
+      "requiredOutput": "策略分配或暴露起点、随访窗口、滞后窗口和删失规则。",
+      "passCriterion": "所有模型使用同一个 time zero 或明确说明差异理由。",
+      "failurePattern": "技术采用者必须先存活到采用时点才被纳入收益组。"
+    },
+    {
+      "reportItem": "MCR4 缺失、删失和测量误差",
+      "purpose": "把生命路径数据常见缺口显式进入解释范围。",
+      "requiredOutput": "缺失率、删失率、代理指标误差、处理策略和敏感性检查。",
+      "passCriterion": "报告主分析和至少一个缺失/删失敏感性版本。",
+      "failurePattern": "只分析完整个案，忽略失访、失败样本和不可观测状态。"
+    },
+    {
+      "reportItem": "MCR5 简单模型基线表现",
+      "purpose": "让低复杂度模型先解释结果。",
+      "requiredOutput": "CM1-CM6 的拟合、预测、校准或解释性指标。",
+      "passCriterion": "飞轮模型必须和每个简单模型比较，而不是只和空模型比较。",
+      "failurePattern": "直接展示飞轮曲线，不报告简单模型表现。"
+    },
+    {
+      "reportItem": "MCR6 反馈项增量",
+      "purpose": "判断加速回报是否提供额外解释力。",
+      "requiredOutput": "滞后项、交互项、中介路径、增量拟合/预测指标和方向一致性。",
+      "passCriterion": "反馈项在至少一个明确边界内产生稳定增量。",
+      "failurePattern": "反馈只表现为同期相关，加入滞后或负控后消失。"
+    },
+    {
+      "reportItem": "MCR7 风险扣减后净值",
+      "purpose": "把副作用、依赖、事故、监控和恢复负担纳入最终判断。",
+      "requiredOutput": "正向收益、downside channel、QA 成本、恢复负担、停止条件和净值。",
+      "passCriterion": "飞轮模型在风险扣减后仍为正，或明确降级为风险模型。",
+      "failurePattern": "只报告速度、能力或寿命收益，不扣减风险。"
+    },
+    {
+      "reportItem": "MCR8 不确定性与校准",
+      "purpose": "防止确定性叙述掩盖模型不稳定。",
+      "requiredOutput": "置信区间、预测区间、校准曲线、场景范围或贝叶斯后验区间。",
+      "passCriterion": "每个关键效应或预测都带不确定性表达。",
+      "failurePattern": "只给单条曲线或单个点估计。"
+    },
+    {
+      "reportItem": "MCR9 敏感性、负控和反证",
+      "purpose": "检验结果是否由假设、代理变量或选择偏差驱动。",
+      "requiredOutput": "参数扫描、代理替换、负控结局/暴露、反证条件和失败案例。",
+      "passCriterion": "核心结论在合理敏感性范围内不反转，或如实降级。",
+      "failurePattern": "只保留支持飞轮的参数设定。"
+    },
+    {
+      "reportItem": "MCR10 分层与外推边界",
+      "purpose": "防止局部任务或高资源主体结果被写成通用规律。",
+      "requiredOutput": "任务族、人群、资源条件、制度环境、技术可及性和时间尺度分层。",
+      "passCriterion": "报告至少一个成立边界和一个不可外推边界。",
+      "failurePattern": "把单一场景收益写成普遍主体持续性收益。"
+    },
+    {
+      "reportItem": "MCR11 决策与降级",
+      "purpose": "规定结果如何进入论文主张。",
+      "requiredOutput": "模型胜出、平局、降级或拒绝的判定，以及对应可写主张。",
+      "passCriterion": "任一门槛失败时自动降级为替代模型、局部机制或研究假设。",
+      "failurePattern": "门槛失败后仍保留强飞轮叙述。"
+    },
+    {
+      "reportItem": "MCR12 可复现产物",
+      "purpose": "让读者能复查模型比较。",
+      "requiredOutput": "数据字典、参数文件、运行命令、输出表、图表、hash 和审计日志。",
+      "passCriterion": "报告中的每个数值都能回到可复现产物或来源。",
+      "failurePattern": "图表存在但无法追溯输入、参数和运行记录。"
+    }
+  ],
+  "modelComparisonResultContract": [
+    {
+      "field": "runId",
+      "meaning": "一次模型比较运行的唯一标识。",
+      "requiredFor": "把论文表格、网页图表、日志、参数和输出文件绑定到同一次运行。",
+      "validValuesOrFormat": "字符串，建议格式为 `mc-YYYYMMDD-slug-vN`。",
+      "failureIfMissing": "无法证明结果来自哪一次分析，禁止升级任何模型主张。"
+    },
+    {
+      "field": "contractVersion",
+      "meaning": "结果契约版本。",
+      "requiredFor": "确认结果字段、审计规则和渲染逻辑使用同一接口。",
+      "validValuesOrFormat": "当前版本为 `model-comparison-result-contract/0.1`。",
+      "failureIfMissing": "结果可能使用过期或不完整字段，必须重新导出。"
+    },
+    {
+      "field": "modelId",
+      "meaning": "被评估模型的注册编号。",
+      "requiredFor": "把结果回连到 Candidate Model Specification Registry。",
+      "validValuesOrFormat": "`CM1`、`CM2`、`CM3`、`CM4`、`CM5`、`CM6` 或 `CM7`。",
+      "failureIfMissing": "无法判断结果属于基线、替代模型还是飞轮模型。"
+    },
+    {
+      "field": "outcome",
+      "meaning": "模型预测或解释的目标结局。",
+      "requiredFor": "保证不同模型比较同一批主体持续性结局。",
+      "validValuesOrFormat": "`T`、`E`、`R`、`C`、`A`、`Q`、`O`、`Risk_t`、`netSubjectContinuityValue`。",
+      "failureIfMissing": "不能判断结果是在谈寿命、有效时间、行动质量还是风险扣减净值。"
+    },
+    {
+      "field": "estimand",
+      "meaning": "目标效应或预测量。",
+      "requiredFor": "防止把相关性、预测性能、因果效应和叙事解释混写。",
+      "validValuesOrFormat": "指向 Estimand Registry 的 edge，或写明 population、intervention/exposure、comparator、time zero、outcome。",
+      "failureIfMissing": "不能进入因果主张，只能保留为描述性观察。"
+    },
+    {
+      "field": "timeZero",
+      "meaning": "策略分配、暴露开始或模型计时起点。",
+      "requiredFor": "控制 immortal time bias、时间顺序错误和事后筛选。",
+      "validValuesOrFormat": "ISO 日期、相对时间点或明确定义的任务/技术暴露起点。",
+      "failureIfMissing": "结果不能用于比较寿命、有效时间或长期路径收益。"
+    },
+    {
+      "field": "populationOrScope",
+      "meaning": "结果适用的人群、任务族、资源条件或场景范围。",
+      "requiredFor": "避免把局部任务收益外推成一般主体持续性规律。",
+      "validValuesOrFormat": "自由文本，但必须包含主体类型、任务范围和关键纳入/排除条件。",
+      "failureIfMissing": "禁止使用通用化措辞，只能写成未定义范围的探索性结果。"
+    },
+    {
+      "field": "dataWindow",
+      "meaning": "随访窗口、滞后窗口、删失规则和数据时间范围。",
+      "requiredFor": "让风险函数、生存曲线、学习轮次和反馈项可复查。",
+      "validValuesOrFormat": "起止时间、窗口长度、删失条件和滞后设定。",
+      "failureIfMissing": "无法区分短期任务增益和长期主体持续性变化。"
+    },
+    {
+      "field": "estimator",
+      "meaning": "用于估计或比较模型的统计/机器学习方法。",
+      "requiredFor": "确认结果是生存分析、因果估计、预测模型、模拟还是描述统计。",
+      "validValuesOrFormat": "例如 Kaplan-Meier、Cox、MSM、target trial emulation、Bayesian model、simulation、baseline descriptive model。",
+      "failureIfMissing": "无法审查模型假设、诊断指标和适用边界。"
+    },
+    {
+      "field": "effectEstimate",
+      "meaning": "方向、大小和单位明确的主结果。",
+      "requiredFor": "把图形叙事转成可比较的定量输出。",
+      "validValuesOrFormat": "数值 + 单位，或明确写 `not_estimated` 并说明原因。",
+      "failureIfMissing": "结果不能进入模型胜负判断。"
+    },
+    {
+      "field": "uncertainty",
+      "meaning": "结果的不确定性表达。",
+      "requiredFor": "防止单点估计或单条曲线被误读为确定结论。",
+      "validValuesOrFormat": "置信区间、预测区间、后验区间、bootstrap 区间、场景区间或 `not_available_with_reason`。",
+      "failureIfMissing": "结果只能作为图示或假设，不能作为定量结论。"
+    },
+    {
+      "field": "calibrationOrFit",
+      "meaning": "预测校准、拟合、解释性或任务表现指标。",
+      "requiredFor": "判断模型是否只是复杂，还是确实提高解释/预测质量。",
+      "validValuesOrFormat": "校准曲线、Brier score、C-index、AIC/BIC、cross-validation、held-out performance、negative control performance 等。",
+      "failureIfMissing": "飞轮模型不能声称优于简单模型。"
+    },
+    {
+      "field": "riskAdjustment",
+      "meaning": "副作用、QA 成本、依赖、事故、恢复负担和尾部风险扣减。",
+      "requiredFor": "把正向收益转换为风险扣减后的主体持续性净值。",
+      "validValuesOrFormat": "定量扣减、风险等级、停止条件触发记录，或 `not_applicable_with_reason`。",
+      "failureIfMissing": "禁止把能力、速度或寿命收益写成净收益。"
+    },
+    {
+      "field": "sensitivityStatus",
+      "meaning": "敏感性、负控、替代代理变量或反证检查结果。",
+      "requiredFor": "确认结论是否依赖单一参数、单一代理变量或选择偏差。",
+      "validValuesOrFormat": "`PASS`、`WARN`、`FAIL`、`NOT_RUN`，并附一句摘要。",
+      "failureIfMissing": "模型结果必须降级为未完成审查。"
+    },
+    {
+      "field": "reproducibilityArtifacts",
+      "meaning": "复现实验/分析所需的文件和校验信息。",
+      "requiredFor": "让每个数值和图表回到数据、参数、命令、输出和 hash。",
+      "validValuesOrFormat": "数据字典、参数文件、运行命令、输出表、图表路径、日志路径、hash。",
+      "failureIfMissing": "结果不能进入论文主表或网页主图。"
+    },
+    {
+      "field": "claimUpgradeDecision",
+      "meaning": "结果对论文主张强度的影响。",
+      "requiredFor": "把模型比较结果转成可写、可降级、可拒绝的研究主张。",
+      "validValuesOrFormat": "`UPGRADE_TO_FLYWHEEL`、`KEEP_SIMPLE_MODEL`、`DOWNGRADE_TO_HYPOTHESIS`、`REJECT`。",
+      "failureIfMissing": "正文不能根据该结果改变主张强度。"
+    },
+    {
+      "field": "citationContextGate",
+      "meaning": "引用语境审查状态。",
+      "requiredFor": "保证结果解释没有越过来源能支持的范围。",
+      "validValuesOrFormat": "`PASS`、`WARN`、`PENDING`、`FAIL`。",
+      "failureIfMissing": "正式投稿前必须保留 citation audit WARN。"
+    }
+  ],
+  "technologyFamilies": [
+    {
+      "family": "AI 工具",
+      "modelPosition": "observation / policy / action quality",
+      "upside": "提高检索、写作、编程、诊断辅助、决策支持和反馈速度。",
+      "downside": "幻觉、自动化偏差、隐私泄漏、判断退化、QA 成本。",
+      "evidenceSources": ["Noy & Zhang", "Generative AI at Work", "GitHub Copilot", "Jagged Frontier", "NIST AI RMF", "Human-AI Interaction Guidelines"]
+    },
+    {
+      "family": "医学干预",
+      "modelPosition": "state transition / hazard",
+      "upside": "改变疾病进展、恢复速度、健康质量和死亡风险。",
+      "downside": "副作用、适应证错误、长期安全性不足、可及性不平等。",
+      "evidenceSources": ["Hallmarks", "GrimAge", "Target Trial", "ClinicalTrials.gov", "ClinicalTrials.gov API", "WHO ICTRP", "TRIPOD+AI", "PROBAST+AI", "CONSORT-AI", "SPIRIT-AI"]
+    },
+    {
+      "family": "可穿戴与检测",
+      "modelPosition": "observation",
+      "upside": "风险早筛、状态监测、反馈频率、行为提示。",
+      "downside": "误报、焦虑、过度医疗、数据质量差。",
+      "evidenceSources": ["Dynamic Digital Twin", "Apple Heart Study", "Stage-Based Personal Informatics"]
+    },
+    {
+      "family": "知识管理与记忆外化",
+      "modelPosition": "cognitive state / policy",
+      "upside": "降低遗忘和检索成本，支持复盘、学习和跨任务迁移。",
+      "downside": "噪音积累、错误知识固化、工具锁定。",
+      "evidenceSources": ["Extended Mind", "Engelbart", "Lived Informatics", "Cognition in the Wild"]
+    },
+    {
+      "family": "自动化与执行系统",
+      "modelPosition": "action quality / resource",
+      "upside": "降低重复任务成本，提高执行稳定性和反馈速度。",
+      "downside": "脆弱依赖、流程僵化、异常处理失败。",
+      "evidenceSources": ["NASA-TLX", "Types and Levels of Automation", "Human-AI Interaction Guidelines", "AI productivity"]
+    },
+    {
+      "family": "资源与环境干预",
+      "modelPosition": "state / recovery / option value",
+      "upside": "医疗可及、恢复、住房、照护、社会支持和风险缓冲。",
+      "downside": "资源门槛、制度排除、监控、外部依赖。",
+      "evidenceSources": ["Health Capital", "Social Relationships", "Capability Approach", "WHO SDOH", "WHO Primary Health Care"]
+    }
+  ],
+  "evidenceClasses": [
+    {
+      "class": "方法标准",
+      "use": "定义生存曲线、风险函数、因果协议和预测报告。",
+      "limit": "只提供测量与估计方法，不证明具体干预有效。"
+    },
+    {
+      "class": "机制综述",
+      "use": "提出状态变量、机制假设和可能通道。",
+      "limit": "不能直接推出个体预测或可执行干预。"
+    },
+    {
+      "class": "关联证据",
+      "use": "连接生物标志物、社会关系、认知储备等变量与健康结果。",
+      "limit": "需要因果审查，不能把相关性当干预效果。"
+    },
+    {
+      "class": "实验证据",
+      "use": "支持限定任务内的行动质量、速度、反馈或错误率变化。",
+      "limit": "任务和人群边界强，不能泛化成所有问题求解。"
+    },
+    {
+      "class": "规范框架",
+      "use": "定义价值、主体边界、可能性空间和权利约束。",
+      "limit": "不承担数值预测。"
+    },
+    {
+      "class": "治理证据",
+      "use": "识别副作用、误用、监控、尾部风险和回滚要求。",
+      "limit": "主要限制用途和反向路径，不直接提供收益估计。"
+    }
+  ],
+  "citationContextRegister": [
+    {
+      "id": "CTX1",
+      "sourceGroup": "Kaplan-Meier 1958; Cox 1972",
+      "canonicalRecord": "JASA 1958 survival curve estimator; JRSS-B 1972 proportional hazards model.",
+      "usedFor": "定义 T、生存函数 S(t)、删失数据和风险函数 lambda(t) 的统计语言。",
+      "supports": "事件时间、删失、生存曲线和协变量风险建模的基础方法。",
+      "doesNotSupport": "不证明任何具体延寿、健康、AI 或资源干预有效。",
+      "citationStatus": "KEEP"
+    },
+    {
+      "id": "CTX2",
+      "sourceGroup": "Grossman Health Capital; WHO HALE; NICE QALY",
+      "canonicalRecord": "Health capital theory, WHO healthy life expectancy metadata, and NICE economic evaluation manual.",
+      "usedFor": "把日历寿命转译为健康质量、有效时间和质量调整时间。",
+      "supports": "T -> E 的测量语言和健康质量调整视角。",
+      "doesNotSupport": "不能完整定义主体连续性，也不能替代个体医学判断。",
+      "citationStatus": "KEEP WITH BOUNDARY"
+    },
+    {
+      "id": "CTX3",
+      "sourceGroup": "Hallmarks of Aging; GrimAge; Cognitive Reserve",
+      "canonicalRecord": "Cell 2013 aging mechanisms, Aging 2019 epigenetic mortality predictor, and Lancet Neurology 2012 cognitive reserve review.",
+      "usedFor": "提出身体状态、衰老机制、生物年龄信号和认知储备候选变量。",
+      "supports": "状态变量和风险信号的机制/关联入口。",
+      "doesNotSupport": "不能把机制综述、预测关联或认知储备直接写成干预效果。",
+      "citationStatus": "KEEP WITH BOUNDARY"
+    },
+    {
+      "id": "CTX4",
+      "sourceGroup": "Deliberate Practice; Law of Practice; Self-Regulated Learning; Feedback Intervention Theory",
+      "canonicalRecord": "Psychological Review 1993, law-of-practice learning curve, Zimmerman self-regulated learning, and Psychological Bulletin 1996 feedback intervention meta-analysis.",
+      "usedFor": "解释 E -> R -> C：有效时间如何在有目标、有反馈和可修正的任务中沉淀为能力。",
+      "supports": "学习轮次、反馈质量、练习曲线和能力积累的条件。",
+      "doesNotSupport": "时间本身不会自动产生能力；错误反馈和低质量重复可能反向损害表现。",
+      "citationStatus": "KEEP WITH BOUNDARY"
+    },
+    {
+      "id": "CTX5",
+      "sourceGroup": "Human Capital; Social Capital; Social Relationships Mortality",
+      "canonicalRecord": "Human/social capital theory and PLoS Medicine 2010 social relationships mortality meta-analysis.",
+      "usedFor": "说明经验、资源、信誉和协作网络如何进入 C 与 O，并可能反哺 T/E。",
+      "supports": "积累资本、社会支持和死亡风险关联的讨论。",
+      "doesNotSupport": "不能把社会关系关联直接升级成具体干预的因果延寿结论。",
+      "citationStatus": "KEEP WITH BOUNDARY"
+    },
+    {
+      "id": "CTX6",
+      "sourceGroup": "TAM; UTAUT; Diffusion of Innovations",
+      "canonicalRecord": "MIS Quarterly 1989 TAM, MIS Quarterly 2003 UTAUT, and Rogers diffusion theory.",
+      "usedFor": "解释 C -> A：技术采用受有用性、易用性、促进条件、资源和社会影响约束。",
+      "supports": "技术采用能力的分解：access、understanding、evaluation、trial、integration。",
+      "doesNotSupport": "不能证明采用后的技术一定有效，也不能覆盖所有高风险医学或神经技术。",
+      "citationStatus": "KEEP WITH BOUNDARY"
+    },
+    {
+      "id": "CTX7",
+      "sourceGroup": "Generative AI at Work; Noy and Zhang; GitHub Copilot; Jagged Technological Frontier",
+      "canonicalRecord": "QJE 2025, Science 2023, arXiv:2302.06590, and Organization Science 2026.",
+      "usedFor": "支持 A -> Q 在限定任务中的生产率、速度、质量或任务边界证据。",
+      "supports": "生成式 AI 在客服、写作、编程或知识工作实验中的任务内效果与异质性。",
+      "doesNotSupport": "不能泛化为通用智能增强、健康寿命延长或永生收益。",
+      "citationStatus": "KEEP WITH BOUNDARY"
+    },
+    {
+      "id": "CTX8",
+      "sourceGroup": "NIST AI RMF; Guidelines for Human-AI Interaction; NASA-TLX; Automation taxonomy",
+      "canonicalRecord": "NIST AI RMF 1.0, CHI 2019 HAI guidelines, NASA-TLX, and IEEE TSMC 2000 automation taxonomy.",
+      "usedFor": "给 A/Q -> risk、QA 成本、任务负荷、自动化等级和人机控制权提供治理语言。",
+      "supports": "风险识别、测量、纠错、回滚和人机协作设计边界。",
+      "doesNotSupport": "治理框架和交互指南不提供收益估计，也不证明 AI 能延寿。",
+      "citationStatus": "KEEP"
+    },
+    {
+      "id": "CTX9",
+      "sourceGroup": "Target Trial Emulation; ClinicalTrials.gov; WHO ICTRP; TRIPOD+AI; PROBAST+AI; CONSORT-AI; SPIRIT-AI",
+      "canonicalRecord": "JAMA 2022 target trial emulation, NLM and WHO trial registry infrastructure, TRIPOD+AI reporting guidance, PROBAST+AI risk-of-bias guidance, and CONSORT-AI / SPIRIT-AI AI clinical trial reporting guidance.",
+      "usedFor": "定义 U_t -> causal claim 的因果门禁和预测模型报告门禁。",
+      "supports": "population、intervention、comparator、time zero、outcome、estimand、试验登记、AI 干预报告、验证、校准和偏倚审查。",
+      "doesNotSupport": "不能消除所有不可测混杂，也不证明任何注册试验或预测模型有效。",
+      "citationStatus": "KEEP"
+    },
+    {
+      "id": "CTX10",
+      "sourceGroup": "Apple Heart Study; Personal Informatics; Lived Informatics; Dynamic Digital Twin",
+      "canonicalRecord": "NEJM 2019 Apple Heart Study, CHI 2010 personal informatics, UbiComp 2015 lived informatics, and JMIR 2022 dynamic digital twin.",
+      "usedFor": "说明观测、反馈、个人数据系统和生命过程建模如何进入状态观测层。",
+      "supports": "observation -> action 的路径和自我追踪/数字孪生的系统问题。",
+      "doesNotSupport": "早筛、追踪或数字孪生概念不等于死亡风险下降或医疗结局改善。",
+      "citationStatus": "KEEP WITH BOUNDARY"
+    },
+    {
+      "id": "CTX11",
+      "sourceGroup": "Extended Mind; Engelbart; Cognition in the Wild",
+      "canonicalRecord": "Analysis 1998, SRI 1962, and MIT Press 1995.",
+      "usedFor": "支撑工具、记忆外化、分布式认知和认知增强进入主体系统的理论位置。",
+      "supports": "主体能力可以由人、工具、表征、环境和协作流程共同支撑。",
+      "doesNotSupport": "哲学和系统框架不提供数值效应估计，也不能证明数字副本等同于本人。",
+      "citationStatus": "KEEP WITH BOUNDARY"
+    },
+    {
+      "id": "CTX12",
+      "sourceGroup": "Capability Approach; WHO SDOH; WHO Primary Health Care",
+      "canonicalRecord": "Stanford Encyclopedia of Philosophy capability approach, WHO social determinants, and WHO primary health care resources.",
+      "usedFor": "定义 O 可能性空间为真实可进入路径，并把资源、制度、医疗和社会条件纳入反哺路径。",
+      "supports": "真实选择权、健康决定因素、医疗可及和连续照护的规范/公共卫生框架。",
+      "doesNotSupport": "规范框架不提供寿命预测，也不能替代具体政策或医疗干预评估。",
+      "citationStatus": "KEEP WITH BOUNDARY"
+    }
+  ],
+  "referenceRegistry": [
+    {
+      "key": "kaplan1958incomplete",
+      "entryType": "article",
+      "authors": "Kaplan, E. L.; Meier, P.",
+      "year": "1958",
+      "title": "Nonparametric Estimation from Incomplete Observations",
+      "venue": "Journal of the American Statistical Association",
+      "volume": "53",
+      "issue": "282",
+      "pages": "457-481",
+      "doi": "10.1080/01621459.1958.10501452",
+      "url": "https://www.tandfonline.com/doi/abs/10.1080/01621459.1958.10501452",
+      "usedFor": "定义生存曲线、删失数据和 T 的统计语言。",
+      "citationContexts": ["CTX1"],
+      "auditStatus": "crossref-verified"
+    },
+    {
+      "key": "cox1972regression",
+      "entryType": "article",
+      "authors": "Cox, D. R.",
+      "year": "1972",
+      "title": "Regression Models and Life-Tables",
+      "venue": "Journal of the Royal Statistical Society Series B: Statistical Methodology",
+      "volume": "34",
+      "issue": "2",
+      "pages": "187-202",
+      "doi": "10.1111/j.2517-6161.1972.tb00899.x",
+      "url": "https://rss.onlinelibrary.wiley.com/doi/10.1111/j.2517-6161.1972.tb00899.x",
+      "usedFor": "定义协变量、风险函数和 lambda(t) 的统计语言。",
+      "citationContexts": ["CTX1"],
+      "auditStatus": "crossref-verified"
+    },
+    {
+      "key": "grossman1972healthcapital",
+      "entryType": "article",
+      "authors": "Grossman, M.",
+      "year": "1972",
+      "title": "On the Concept of Health Capital and the Demand for Health",
+      "venue": "Journal of Political Economy",
+      "volume": "80",
+      "issue": "2",
+      "pages": "223-255",
+      "doi": "10.1086/259880",
+      "url": "https://www.journals.uchicago.edu/doi/10.1086/259880",
+      "usedFor": "把健康资本、有效时间和日历时间区分开。",
+      "citationContexts": ["CTX2"],
+      "auditStatus": "crossref-verified"
+    },
+    {
+      "key": "whohale7752",
+      "entryType": "official-web",
+      "authors": "World Health Organization",
+      "year": "n.d.",
+      "title": "Healthy life expectancy (HALE) metadata",
+      "venue": "Global Health Observatory Indicator Metadata Registry",
+      "volume": "",
+      "issue": "",
+      "pages": "",
+      "doi": "",
+      "url": "https://www.who.int/data/gho/indicator-metadata-registry/imr-details/7752",
+      "usedFor": "提供健康寿命指标的官方定义入口。",
+      "citationContexts": ["CTX2"],
+      "auditStatus": "official-url-200"
+    },
+    {
+      "key": "niceEconomicEvaluation",
+      "entryType": "official-web",
+      "authors": "National Institute for Health and Care Excellence",
+      "year": "n.d.",
+      "title": "Economic evaluation",
+      "venue": "NICE health technology evaluations manual",
+      "volume": "",
+      "issue": "",
+      "pages": "",
+      "doi": "",
+      "url": "https://www.nice.org.uk/process/pmg36/chapter/economic-evaluation-2",
+      "usedFor": "提供 QALY 与健康经济评价的政策语言。",
+      "citationContexts": ["CTX2"],
+      "auditStatus": "official-url-200"
+    },
+    {
+      "key": "lopezotin2013hallmarks",
+      "entryType": "article",
+      "authors": "Lopez-Otin, C.; Blasco, M. A.; Partridge, L.; Serrano, M.; Kroemer, G.",
+      "year": "2013",
+      "title": "The Hallmarks of Aging",
+      "venue": "Cell",
+      "volume": "153",
+      "issue": "6",
+      "pages": "1194-1217",
+      "doi": "10.1016/j.cell.2013.05.039",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3836174/",
+      "usedFor": "提出衰老状态变量和机制入口。",
+      "citationContexts": ["CTX3"],
+      "auditStatus": "crossref-verified"
+    },
+    {
+      "key": "lu2019grimage",
+      "entryType": "article",
+      "authors": "Lu, A. T.; Quach, A.; Wilson, J. G.; Reiner, A. P.; Aviv, A.; Raj, K.; Hou, L.; Baccarelli, A. A.; Li, Y.; Stewart, J. D.; Whitsel, E. A.; Assimes, T. L.; Ferrucci, L.; Horvath, S.",
+      "year": "2019",
+      "title": "DNA methylation GrimAge strongly predicts lifespan and healthspan",
+      "venue": "Aging",
+      "volume": "11",
+      "issue": "2",
+      "pages": "303-327",
+      "doi": "10.18632/aging.101684",
+      "url": "https://www.aging-us.com/article/101684",
+      "usedFor": "作为生物年龄、死亡风险和健康寿命信号入口。",
+      "citationContexts": ["CTX3"],
+      "auditStatus": "crossref-verified"
+    },
+    {
+      "key": "mulder2022dynamicDigitalTwin",
+      "entryType": "article",
+      "authors": "Mulder, W. J. M.; et al.",
+      "year": "2022",
+      "title": "Dynamic Digital Twin: Diagnosis, Treatment, Prediction, and Prevention of Disease During the Life Course",
+      "venue": "Journal of Medical Internet Research",
+      "volume": "24",
+      "issue": "9",
+      "pages": "e35675",
+      "doi": "10.2196/35675",
+      "url": "https://www.jmir.org/2022/9/e35675",
+      "usedFor": "说明生命过程中的状态观测、预测、预防和数字孪生建模入口。",
+      "citationContexts": ["CTX10"],
+      "auditStatus": "publisher-verified"
+    },
+    {
+      "key": "stern2012cognitiveReserve",
+      "entryType": "article",
+      "authors": "Stern, Y.",
+      "year": "2012",
+      "title": "Cognitive reserve in ageing and Alzheimer's disease",
+      "venue": "The Lancet Neurology",
+      "volume": "11",
+      "issue": "11",
+      "pages": "1006-1012",
+      "doi": "10.1016/S1474-4422(12)70191-6",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/23079557/",
+      "usedFor": "说明认知储备作为状态变量和风险信号的边界。",
+      "citationContexts": ["CTX3"],
+      "auditStatus": "crossref-verified"
+    },
+    {
+      "key": "ericsson1993deliberatePractice",
+      "entryType": "article",
+      "authors": "Ericsson, K. A.; Krampe, R. T.; Tesch-Romer, C.",
+      "year": "1993",
+      "title": "The role of deliberate practice in the acquisition of expert performance",
+      "venue": "Psychological Review",
+      "volume": "100",
+      "issue": "3",
+      "pages": "363-406",
+      "doi": "10.1037/0033-295X.100.3.363",
+      "url": "https://eric.ed.gov/?id=EJ471947",
+      "usedFor": "解释有效时间进入有反馈练习轮次的条件。",
+      "citationContexts": ["CTX4"],
+      "auditStatus": "crossref-verified"
+    },
+    {
+      "key": "newell1981lawPractice",
+      "entryType": "inproceedings",
+      "authors": "Newell, A.; Rosenbloom, P. S.",
+      "year": "2013",
+      "title": "Mechanisms of Skill Acquisition and the Law of Practice: Allen Newell and Paul S. Rosenbloom",
+      "venue": "Cognitive Skills and Their Acquisition",
+      "volume": "",
+      "issue": "",
+      "pages": "1-55",
+      "doi": "10.4324/9780203728178-6",
+      "url": "https://www.taylorfrancis.com/chapters/edit/10.4324/9780203728178-6/mechanisms-skill-acquisition-law-practice-allen-newell-paul-rosenbloom",
+      "usedFor": "为重复轮次、练习曲线和能力增长提供认知模型入口。",
+      "citationContexts": ["CTX4"],
+      "auditStatus": "crossref-verified-corrected-doi"
+    },
+    {
+      "key": "zimmerman2002selfRegulated",
+      "entryType": "article",
+      "authors": "Zimmerman, B. J.",
+      "year": "2002",
+      "title": "Becoming a Self-Regulated Learner: An Overview",
+      "venue": "Theory Into Practice",
+      "volume": "41",
+      "issue": "2",
+      "pages": "64-70",
+      "doi": "10.1207/S15430421TIP4102_2",
+      "url": "https://www.tandfonline.com/doi/abs/10.1207/s15430421tip4102_2",
+      "usedFor": "说明学习轮次需要目标设定、自我监控、反馈和策略调整。",
+      "citationContexts": ["CTX4"],
+      "auditStatus": "doi-verified"
+    },
+    {
+      "key": "kluger1996feedback",
+      "entryType": "article",
+      "authors": "Kluger, A. N.; DeNisi, A.",
+      "year": "1996",
+      "title": "The effects of feedback interventions on performance: A historical review, a meta-analysis, and a preliminary feedback intervention theory",
+      "venue": "Psychological Bulletin",
+      "volume": "119",
+      "issue": "2",
+      "pages": "254-284",
+      "doi": "10.1037/0033-2909.119.2.254",
+      "url": "https://doi.org/10.1037/0033-2909.119.2.254",
+      "usedFor": "说明反馈可能提升表现，也可能因设计错误降低表现。",
+      "citationContexts": ["CTX4"],
+      "auditStatus": "crossref-verified"
+    },
+    {
+      "key": "davis1989tam",
+      "entryType": "article",
+      "authors": "Davis, F. D.",
+      "year": "1989",
+      "title": "Perceived Usefulness, Perceived Ease of Use, and User Acceptance of Information Technology",
+      "venue": "MIS Quarterly",
+      "volume": "13",
+      "issue": "3",
+      "pages": "319-340",
+      "doi": "10.2307/249008",
+      "url": "https://misq.umn.edu/misq/article/13/3/319/191/Perceived-Usefulness-Perceived-Ease-of-Use-and",
+      "usedFor": "解释技术采用能力中的有用性和易用性。",
+      "citationContexts": ["CTX6"],
+      "auditStatus": "crossref-verified"
+    },
+    {
+      "key": "venkatesh2003utaut",
+      "entryType": "article",
+      "authors": "Venkatesh, V.; Morris, M. G.; Davis, G. B.; Davis, F. D.",
+      "year": "2003",
+      "title": "User Acceptance of Information Technology: Toward a Unified View",
+      "venue": "MIS Quarterly",
+      "volume": "27",
+      "issue": "3",
+      "pages": "425-478",
+      "doi": "10.2307/30036540",
+      "url": "https://misq.umn.edu/misq/article/27/3/425/1340/User-Acceptance-of-Information-Technology-Toward-A",
+      "usedFor": "解释技术采用中的促进条件、社会影响和努力预期。",
+      "citationContexts": ["CTX6"],
+      "auditStatus": "crossref-verified"
+    },
+    {
+      "key": "rogers2003diffusion",
+      "entryType": "book",
+      "authors": "Rogers, E. M.",
+      "year": "2003",
+      "title": "Diffusion of Innovations",
+      "venue": "Free Press",
+      "volume": "",
+      "issue": "",
+      "pages": "",
+      "doi": "",
+      "url": "https://archive.org/details/diffusionofinnov0005roge",
+      "usedFor": "说明技术成熟、扩散、采用者差异和社会系统时间窗口。",
+      "citationContexts": ["CTX6"],
+      "auditStatus": "bibliographic-record-verified-isbn"
+    },
+    {
+      "key": "holtlunstad2010social",
+      "entryType": "article",
+      "authors": "Holt-Lunstad, J.; Smith, T. B.; Layton, J. B.",
+      "year": "2010",
+      "title": "Social Relationships and Mortality Risk: A Meta-analytic Review",
+      "venue": "PLoS Medicine",
+      "volume": "7",
+      "issue": "7",
+      "pages": "e1000316",
+      "doi": "10.1371/journal.pmed.1000316",
+      "url": "https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1000316",
+      "usedFor": "讨论社会关系与死亡风险的关联证据边界。",
+      "citationContexts": ["CTX5"],
+      "auditStatus": "crossref-verified"
+    },
+    {
+      "key": "mincer1974humanCapital",
+      "entryType": "book",
+      "authors": "Mincer, J.",
+      "year": "1974",
+      "title": "Schooling, Experience, and Earnings",
+      "venue": "National Bureau of Economic Research",
+      "volume": "",
+      "issue": "",
+      "pages": "",
+      "doi": "",
+      "url": "https://www.nber.org/books-and-chapters/schooling-experience-and-earnings",
+      "usedFor": "说明教育、经验和长期积累如何进入人力资本模型。",
+      "citationContexts": ["CTX5"],
+      "auditStatus": "official-archive"
+    },
+    {
+      "key": "coleman1988socialCapital",
+      "entryType": "article",
+      "authors": "Coleman, J. S.",
+      "year": "1988",
+      "title": "Social Capital in the Creation of Human Capital",
+      "venue": "American Journal of Sociology",
+      "volume": "94",
+      "issue": "Supplement",
+      "pages": "S95-S120",
+      "doi": "10.1086/228943",
+      "url": "https://www.journals.uchicago.edu/doi/10.1086/228943",
+      "usedFor": "说明关系、信任、规范和网络如何成为能力形成条件。",
+      "citationContexts": ["CTX5"],
+      "auditStatus": "doi-verified"
+    },
+    {
+      "key": "brynjolfsson2025generative",
+      "entryType": "article",
+      "authors": "Brynjolfsson, E.; Li, D.; Raymond, L.",
+      "year": "2025",
+      "title": "Generative AI at Work",
+      "venue": "The Quarterly Journal of Economics",
+      "volume": "140",
+      "issue": "2",
+      "pages": "889-942",
+      "doi": "10.1093/qje/qjae044",
+      "url": "https://academic.oup.com/qje/article/140/2/889/7990658",
+      "usedFor": "支持限定客服任务中的 AI productivity 证据。",
+      "citationContexts": ["CTX7"],
+      "auditStatus": "crossref-verified-corrected-doi"
+    },
+    {
+      "key": "noy2023productivity",
+      "entryType": "article",
+      "authors": "Noy, S.; Zhang, W.",
+      "year": "2023",
+      "title": "Experimental evidence on the productivity effects of generative artificial intelligence",
+      "venue": "Science",
+      "volume": "381",
+      "issue": "6654",
+      "pages": "187-192",
+      "doi": "10.1126/science.adh2586",
+      "url": "https://www.science.org/doi/10.1126/science.adh2586",
+      "usedFor": "支持写作任务内的生成式 AI 生产率证据。",
+      "citationContexts": ["CTX7"],
+      "auditStatus": "crossref-verified"
+    },
+    {
+      "key": "peng2023copilot",
+      "entryType": "arxiv",
+      "authors": "Peng, S.; Kalliamvakou, E.; Cihon, P.; Demirer, M.",
+      "year": "2023",
+      "title": "The Impact of AI on Developer Productivity: Evidence from GitHub Copilot",
+      "venue": "arXiv",
+      "volume": "",
+      "issue": "",
+      "pages": "",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2302.06590",
+      "usedFor": "支持限定编程任务中的 AI pair programmer 生产率入口。",
+      "citationContexts": ["CTX7"],
+      "auditStatus": "arxiv-api-verified"
+    },
+    {
+      "key": "dellacqua2026jagged",
+      "entryType": "article",
+      "authors": "Dell'Acqua, F.; McFowland, E.; Mollick, E.; Lifshitz-Assaf, H.; Kellogg, K.; Rajendran, S.; Krayer, L.; Candelon, F.; Lakhani, K. R.",
+      "year": "2026",
+      "title": "Navigating the Jagged Technological Frontier: Field Experimental Evidence of the Effects of Artificial Intelligence on Knowledge Worker Productivity and Quality",
+      "venue": "Organization Science",
+      "volume": "37",
+      "issue": "2",
+      "pages": "403-423",
+      "doi": "10.1287/orsc.2025.21838",
+      "url": "https://pubsonline.informs.org/doi/10.1287/orsc.2025.21838",
+      "usedFor": "支持 AI 收益与风险具有任务边界。",
+      "citationContexts": ["CTX7", "CTX8"],
+      "auditStatus": "crossref-verified"
+    },
+    {
+      "key": "hernan2022targetTrial",
+      "entryType": "article",
+      "authors": "Hernan, M. A.; Wang, W.; Leaf, D. E.",
+      "year": "2022",
+      "title": "Target Trial Emulation",
+      "venue": "JAMA",
+      "volume": "328",
+      "issue": "24",
+      "pages": "2446",
+      "doi": "10.1001/jama.2022.21383",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36508210/",
+      "usedFor": "定义因果协议门禁和观察数据因果推断边界。",
+      "citationContexts": ["CTX9"],
+      "auditStatus": "crossref-verified"
+    },
+    {
+      "key": "han2022rmstQuickGuide",
+      "entryType": "article",
+      "authors": "Han, K.; Jung, I.",
+      "year": "2022",
+      "title": "Restricted Mean Survival Time for Survival Analysis: A Quick Guide for Clinical Researchers",
+      "venue": "Korean Journal of Radiology",
+      "volume": "",
+      "issue": "",
+      "pages": "",
+      "doi": "10.3348/kjr.2022.0061",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9081686/",
+      "usedFor": "提供 RMST 和有限随访窗口内生存曲线面积的有效时间报告语言。",
+      "citationContexts": [],
+      "auditStatus": "crossref-verified"
+    },
+    {
+      "key": "pan2024learningAnalyticsReview",
+      "entryType": "article",
+      "authors": "Pan, Z.; Biegley, L.; Taylor, A.; Zheng, H.",
+      "year": "2024",
+      "title": "A Systematic Review of Learning Analytics",
+      "venue": "Journal of Learning Analytics",
+      "volume": "",
+      "issue": "",
+      "pages": "",
+      "doi": "10.18608/jla.2023.8093",
+      "url": "https://learning-analytics.info/index.php/JLA/article/view/8093",
+      "usedFor": "提供 LMS 日志、学习分析干预和反馈事件作为学习轮次观测入口。",
+      "citationContexts": [],
+      "auditStatus": "crossref-verified"
+    },
+    {
+      "key": "deMooij2025srlMultimodalAi",
+      "entryType": "article",
+      "authors": "de Mooij, S.; Lamsa, J.; Lim, L.; Aksela, O.; Athavale, S.; Bistolfi, G.; Jin, J.; Li, T.; Azevedo, R.; Bannert, M.; Gasevic, D.; Jarvela, S.; Molenaar, I.",
+      "year": "2025",
+      "title": "A Systematic Review of Self-Regulated Learning through Integration of Multimodal Data and Artificial Intelligence",
+      "venue": "Educational Psychology Review",
+      "volume": "",
+      "issue": "",
+      "pages": "",
+      "doi": "10.1007/s10648-025-10028-0",
+      "url": "https://link.springer.com/article/10.1007/s10648-025-10028-0",
+      "usedFor": "提供自我调节学习、多模态数据和 AI 观测作为学习轮次到能力积累的过程测量入口。",
+      "citationContexts": [],
+      "auditStatus": "crossref-verified"
+    },
+    {
+      "key": "rao2026deployedAiMonitoring",
+      "entryType": "report",
+      "authors": "Rao, A.",
+      "year": "2026",
+      "title": "Challenges to the monitoring of deployed AI systems",
+      "venue": "NIST AI 800-4",
+      "volume": "",
+      "issue": "",
+      "pages": "",
+      "doi": "10.6028/NIST.AI.800-4",
+      "url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.800-4.pdf",
+      "usedFor": "提供部署后 AI 监测、漂移、异常输出、人因、合规和大规模影响的治理分类。",
+      "citationContexts": [],
+      "auditStatus": "crossref-verified"
+    },
+    {
+      "key": "riggi2026targetTrialBridge",
+      "entryType": "article",
+      "authors": "Riggi, E.; Segelov, E.; Di Tanna, G. L.",
+      "year": "2026",
+      "title": "Target trial emulation: bridging observational studies and randomized trials for health decision-making",
+      "venue": "Journal of Comparative Effectiveness Research",
+      "volume": "",
+      "issue": "",
+      "pages": "",
+      "doi": "10.57264/cer-2025-0180",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13044815/",
+      "usedFor": "提供观察性研究问题转写为目标试验协议的字段和边界语言。",
+      "citationContexts": [],
+      "auditStatus": "crossref-verified"
+    },
+    {
+      "key": "robins2000marginalStructural",
+      "entryType": "article",
+      "authors": "Robins, J. M.; Hernan, M. A.; Brumback, B.",
+      "year": "2000",
+      "title": "Marginal Structural Models and Causal Inference in Epidemiology",
+      "venue": "Epidemiology",
+      "volume": "11",
+      "issue": "5",
+      "pages": "550-560",
+      "doi": "10.1097/00001648-200009000-00011",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/10955408/",
+      "usedFor": "说明时间变化混杂下的因果估计入口和边界。",
+      "citationContexts": ["CTX9"],
+      "auditStatus": "pubmed-verified"
+    },
+    {
+      "key": "clark1998extended",
+      "entryType": "article",
+      "authors": "Clark, A.; Chalmers, D.",
+      "year": "1998",
+      "title": "The Extended Mind",
+      "venue": "Analysis",
+      "volume": "58",
+      "issue": "1",
+      "pages": "7-19",
+      "doi": "10.1093/analys/58.1.7",
+      "url": "https://academic.oup.com/analysis/article-pdf/58/1/7/359060/58-1-7.pdf",
+      "usedFor": "支撑工具、记忆外化和认知扩展进入主体系统。",
+      "citationContexts": ["CTX11"],
+      "auditStatus": "crossref-verified"
+    },
+    {
+      "key": "engelbart1962augmenting",
+      "entryType": "report",
+      "authors": "Engelbart, D. C.",
+      "year": "1962",
+      "title": "Augmenting Human Intellect: A Conceptual Framework",
+      "venue": "Stanford Research Institute report",
+      "volume": "",
+      "issue": "",
+      "pages": "",
+      "doi": "",
+      "url": "https://www.dougengelbart.org/pubs/augment-3906.html",
+      "usedFor": "提供人、工具、概念和方法作为增强系统的经典框架。",
+      "citationContexts": ["CTX11"],
+      "auditStatus": "official-archive-registered"
+    },
+    {
+      "key": "robeyns2021capability",
+      "entryType": "encyclopedia",
+      "authors": "Robeyns, I.; Byskov, M. F.",
+      "year": "2021",
+      "title": "The Capability Approach",
+      "venue": "Stanford Encyclopedia of Philosophy",
+      "volume": "",
+      "issue": "",
+      "pages": "",
+      "doi": "",
+      "url": "https://plato.stanford.edu/entries/capability-approach/",
+      "usedFor": "定义真实可行能力和可能性空间。",
+      "citationContexts": ["CTX12"],
+      "auditStatus": "official-web-registered"
+    },
+    {
+      "key": "nist2023airmf",
+      "entryType": "standard",
+      "authors": "National Institute of Standards and Technology",
+      "year": "2023",
+      "title": "Artificial Intelligence Risk Management Framework (AI RMF 1.0)",
+      "venue": "NIST",
+      "volume": "",
+      "issue": "",
+      "pages": "",
+      "doi": "",
+      "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+      "usedFor": "提供 AI 风险识别、测量、治理和回滚语言。",
+      "citationContexts": ["CTX8"],
+      "auditStatus": "official-url-200"
+    },
+    {
+      "key": "amershi2019hai",
+      "entryType": "inproceedings",
+      "authors": "Amershi, S.; Weld, D.; Vorvoreanu, M.; Fourney, A.; Nushi, B.; Collisson, P.; Suh, J.; Iqbal, S.; Bennett, P. N.; Inkpen, K.; Teevan, J.; Kikin-Gil, R.; Horvitz, E.",
+      "year": "2019",
+      "title": "Guidelines for Human-AI Interaction",
+      "venue": "Proceedings of the 2019 CHI Conference on Human Factors in Computing Systems",
+      "volume": "",
+      "issue": "",
+      "pages": "1-13",
+      "doi": "10.1145/3290605.3300233",
+      "url": "https://dl.acm.org/doi/10.1145/3290605.3300233",
+      "usedFor": "提供人机协作设计、纠错和控制权边界。",
+      "citationContexts": ["CTX8"],
+      "auditStatus": "crossref-verified"
+    },
+    {
+      "key": "burwell2017bciEthics",
+      "entryType": "article",
+      "authors": "Burwell, S.; Sample, M.; Racine, E.",
+      "year": "2017",
+      "title": "Ethical aspects of brain computer interfaces: a scoping review",
+      "venue": "BMC Medical Ethics",
+      "volume": "18",
+      "issue": "1",
+      "pages": "60",
+      "doi": "10.1186/s12910-017-0220-y",
+      "url": "https://bmcmedethics.biomedcentral.com/articles/10.1186/s12910-017-0220-y",
+      "usedFor": "为脑机接口、神经技术、同意、身份和主体边界提供风险治理入口。",
+      "citationContexts": ["CTX8", "CTX11"],
+      "auditStatus": "doi-verified"
+    },
+    {
+      "key": "gradeHandbook",
+      "entryType": "guideline-web",
+      "authors": "GRADE Working Group",
+      "year": "n.d.",
+      "title": "GRADE Handbook",
+      "venue": "GRADE Working Group",
+      "volume": "",
+      "issue": "",
+      "pages": "",
+      "doi": "",
+      "url": "https://gdt.gradepro.org/app/handbook/handbook.html",
+      "usedFor": "提供证据确定性、收益风险权衡和从证据到建议的政策语言。",
+      "citationContexts": ["CTX9"],
+      "auditStatus": "official-web"
+    },
+    {
+      "key": "clinicaltrialsGov",
+      "entryType": "registry",
+      "authors": "U.S. National Library of Medicine",
+      "year": "n.d.",
+      "title": "ClinicalTrials.gov",
+      "venue": "ClinicalTrials.gov",
+      "volume": "",
+      "issue": "",
+      "pages": "",
+      "doi": "",
+      "url": "https://clinicaltrials.gov/",
+      "usedFor": "提供临床试验登记、人群、比较组、结局和结果回填入口。",
+      "citationContexts": ["CTX9"],
+      "auditStatus": "official-url-200"
+    },
+    {
+      "key": "clinicaltrialsGovApi",
+      "entryType": "official-web",
+      "authors": "U.S. National Library of Medicine",
+      "year": "n.d.",
+      "title": "ClinicalTrials.gov Data API",
+      "venue": "ClinicalTrials.gov",
+      "volume": "",
+      "issue": "",
+      "pages": "",
+      "doi": "",
+      "url": "https://clinicaltrials.gov/data-api/about-api",
+      "usedFor": "提供结构化试验注册与结果数据的机器读取入口，用于后续试验证据采集和协议字段回填。",
+      "citationContexts": ["CTX9"],
+      "auditStatus": "official-url-200"
+    },
+    {
+      "key": "whoIctrp",
+      "entryType": "registry",
+      "authors": "World Health Organization",
+      "year": "n.d.",
+      "title": "International Clinical Trials Registry Platform (ICTRP)",
+      "venue": "World Health Organization",
+      "volume": "",
+      "issue": "",
+      "pages": "",
+      "doi": "",
+      "url": "https://www.who.int/tools/clinical-trials-registry-platform",
+      "usedFor": "提供国际临床试验注册网络、WHO 数据集和试验透明度原则的上位入口。",
+      "citationContexts": ["CTX9"],
+      "auditStatus": "official-url-200"
+    },
+    {
+      "key": "tripodAi2024",
+      "entryType": "article",
+      "authors": "Collins, G. S.; Moons, K. G. M.; et al.",
+      "year": "2024",
+      "title": "TRIPOD+AI statement: updated guidance for reporting clinical prediction models that use regression or machine learning methods",
+      "venue": "BMJ",
+      "volume": "385",
+      "issue": "",
+      "pages": "e078378",
+      "doi": "10.1136/bmj-2023-078378",
+      "url": "https://www.bmj.com/content/385/bmj-2023-078378",
+      "usedFor": "提供 AI/机器学习临床预测模型的报告清单、外部验证、校准和透明度门禁。",
+      "citationContexts": ["CTX9"],
+      "auditStatus": "doi-and-official-site-verified"
+    },
+    {
+      "key": "probastAi2025",
+      "entryType": "article",
+      "authors": "Moons, K. G. M.; et al.",
+      "year": "2025",
+      "title": "PROBAST+AI: an updated quality, risk of bias, and applicability assessment tool for prediction models using regression or artificial intelligence methods",
+      "venue": "BMJ",
+      "volume": "388",
+      "issue": "",
+      "pages": "e082505",
+      "doi": "10.1136/bmj-2024-082505",
+      "url": "https://www.bmj.com/content/388/bmj-2024-082505",
+      "usedFor": "提供 AI 预测模型研究的偏倚风险、适用性、可信度、公平性和质量审查门禁。",
+      "citationContexts": ["CTX9"],
+      "auditStatus": "doi-and-official-site-verified"
+    },
+    {
+      "key": "consortAi2020",
+      "entryType": "article",
+      "authors": "Liu, X.; Cruz Rivera, S.; Moher, D.; Calvert, M. J.; Denniston, A. K.; et al.",
+      "year": "2020",
+      "title": "Reporting guidelines for clinical trial reports for interventions involving artificial intelligence: the CONSORT-AI extension",
+      "venue": "Nature Medicine",
+      "volume": "26",
+      "issue": "9",
+      "pages": "1364-1374",
+      "doi": "10.1038/s41591-020-1034-x",
+      "url": "https://www.nature.com/articles/s41591-020-1034-x",
+      "usedFor": "约束 AI 干预临床试验结果报告中的干预说明、输入输出、人机交互和错误案例分析。",
+      "citationContexts": ["CTX9"],
+      "auditStatus": "doi-verified"
+    },
+    {
+      "key": "spiritAi2020",
+      "entryType": "article",
+      "authors": "Cruz Rivera, S.; Liu, X.; Chan, A.-W.; Denniston, A. K.; Calvert, M. J.; et al.",
+      "year": "2020",
+      "title": "Guidelines for clinical trial protocols for interventions involving artificial intelligence: the SPIRIT-AI extension",
+      "venue": "Nature Medicine",
+      "volume": "26",
+      "issue": "9",
+      "pages": "1351-1363",
+      "doi": "10.1038/s41591-020-1037-7",
+      "url": "https://www.nature.com/articles/s41591-020-1037-7",
+      "usedFor": "约束 AI 干预临床试验方案中的协议透明度、输入输出、人机交互和错误分析计划。",
+      "citationContexts": ["CTX9"],
+      "auditStatus": "doi-verified"
+    },
+    {
+      "key": "tripodProbast",
+      "entryType": "guideline-web",
+      "authors": "TRIPOD Statement; PROBAST",
+      "year": "n.d.",
+      "title": "TRIPOD Statement and PROBAST",
+      "venue": "Prediction model reporting and risk-of-bias guidance",
+      "volume": "",
+      "issue": "",
+      "pages": "",
+      "doi": "",
+      "url": "https://www.tripod-statement.org/",
+      "usedFor": "约束预测模型报告质量、偏倚风险、校准和外部验证。",
+      "citationContexts": ["CTX9"],
+      "auditStatus": "official-urls-200"
+    },
+    {
+      "key": "perez2019appleHeart",
+      "entryType": "article",
+      "authors": "Perez, M. V.; Mahaffey, K. W.; Hedlin, H.; Rumsfeld, J. S.; Garcia, A.; Ferris, T.; Balasubramanian, V.; Russo, A. M.; Rajmane, A.; Cheung, L.; Hung, G.; Lee, J.; Kowey, P.; Talati, N.; Nag, D.; Gummidipundi, S. E.; Beatty, A.; Hills, M. T.; Desai, S.; Granger, C. B.; Desai, M.; Turakhia, M. P.",
+      "year": "2019",
+      "title": "Large-Scale Assessment of a Smartwatch to Identify Atrial Fibrillation",
+      "venue": "New England Journal of Medicine",
+      "volume": "381",
+      "issue": "20",
+      "pages": "1909-1917",
+      "doi": "10.1056/NEJMoa1901183",
+      "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa1901183",
+      "usedFor": "说明可穿戴设备进入大规模风险提示和临床确认通道。",
+      "citationContexts": ["CTX10"],
+      "auditStatus": "crossref-verified"
+    },
+    {
+      "key": "li2010personalInformatics",
+      "entryType": "inproceedings",
+      "authors": "Li, I.; Dey, A.; Forlizzi, J.",
+      "year": "2010",
+      "title": "A stage-based model of personal informatics systems",
+      "venue": "Proceedings of the SIGCHI Conference on Human Factors in Computing Systems",
+      "volume": "",
+      "issue": "",
+      "pages": "557-566",
+      "doi": "10.1145/1753326.1753409",
+      "url": "https://dl.acm.org/doi/10.1145/1753326.1753409",
+      "usedFor": "提供个人信息学的准备、收集、整合、反思和行动阶段。",
+      "citationContexts": ["CTX10"],
+      "auditStatus": "crossref-verified"
+    },
+    {
+      "key": "epstein2015lived",
+      "entryType": "inproceedings",
+      "authors": "Epstein, D. A.; Ping, A.; Fogarty, J.; Munson, S. A.",
+      "year": "2015",
+      "title": "A lived informatics model of personal informatics",
+      "venue": "Proceedings of the 2015 ACM International Joint Conference on Pervasive and Ubiquitous Computing",
+      "volume": "",
+      "issue": "",
+      "pages": "731-742",
+      "doi": "10.1145/2750858.2804250",
+      "url": "https://dl.acm.org/doi/10.1145/2750858.2804250",
+      "usedFor": "说明长期自我追踪系统的生活嵌入、维护负担和断裂点。",
+      "citationContexts": ["CTX10"],
+      "auditStatus": "crossref-verified"
+    },
+    {
+      "key": "hutchins1995cognition",
+      "entryType": "book",
+      "authors": "Hutchins, E.",
+      "year": "1995",
+      "title": "Cognition in the Wild",
+      "venue": "MIT Press",
+      "volume": "",
+      "issue": "",
+      "pages": "",
+      "doi": "",
+      "url": "https://pages.ucsd.edu/~ehutchins/citw.html",
+      "usedFor": "提供分布式认知和环境嵌入式问题求解框架。",
+      "citationContexts": ["CTX11"],
+      "auditStatus": "author-page-verified"
+    },
+    {
+      "key": "nasaTlx",
+      "entryType": "official-web",
+      "authors": "NASA",
+      "year": "n.d.",
+      "title": "NASA Task Load Index",
+      "venue": "NASA Human Systems Integration Division",
+      "volume": "",
+      "issue": "",
+      "pages": "",
+      "doi": "",
+      "url": "https://www.nasa.gov/human-systems-integration-division/nasa-task-load-index-tlx/",
+      "usedFor": "提供任务负荷、时间压力、努力和挫败感测量入口。",
+      "citationContexts": ["CTX8"],
+      "auditStatus": "official-web-registered"
+    },
+    {
+      "key": "parasuraman2000automation",
+      "entryType": "article",
+      "authors": "Parasuraman, R.; Sheridan, T. B.; Wickens, C. D.",
+      "year": "2000",
+      "title": "A model for types and levels of human interaction with automation",
+      "venue": "IEEE Transactions on Systems, Man, and Cybernetics - Part A: Systems and Humans",
+      "volume": "30",
+      "issue": "3",
+      "pages": "286-297",
+      "doi": "10.1109/3468.844354",
+      "url": "https://ieeexplore.ieee.org/document/844354",
+      "usedFor": "拆分自动化类型、等级和人机控制权。",
+      "citationContexts": ["CTX8"],
+      "auditStatus": "crossref-verified"
+    },
+    {
+      "key": "whoSdhPhc",
+      "entryType": "official-web",
+      "authors": "World Health Organization",
+      "year": "n.d.",
+      "title": "Social determinants of health and primary health care",
+      "venue": "WHO health topics",
+      "volume": "",
+      "issue": "",
+      "pages": "",
+      "doi": "",
+      "url": "https://www.who.int/health-topics/social-determinants-of-health",
+      "usedFor": "把健康和持续性放回收入、教育、住房、工作、环境和医疗可及条件中。",
+      "citationContexts": ["CTX12"],
+      "auditStatus": "official-urls-200"
+    },
+    {
+      "key": "humanInfraResearchNotes20260628",
+      "entryType": "project-note",
+      "authors": "Human Infra",
+      "year": "2026",
+      "title": "Automated research run, Source Cards, and Evidence Matrix for the effective immortality flywheel",
+      "venue": "Human Infra repository source notes",
+      "volume": "",
+      "issue": "",
+      "pages": "",
+      "doi": "",
+      "url": "/docs/source-notes/2026-06-28-effective-immortality-flywheel-automated-research-run.md",
+      "usedFor": "记录本项目内部研究过程、来源卡片和证据矩阵。",
+      "citationContexts": [],
+      "auditStatus": "local-artifact"
+    }
+  ],
+  "aiTaskEvidenceRegister": [
+    {
+      "id": "AQ1",
+      "referenceKey": "brynjolfsson2025generative",
+      "taskFamily": "enterprise-customer-support",
+      "taskAndPopulation": "企业客服支持任务；研究在真实客服环境中比较生成式 AI 助手上线前后和不同采用状态下的客服人员表现。",
+      "sampleAndDesign": "QJE 正式版记录约 5,172 名客服；NBER working-paper full-text audit 版本记录 5,179 名客服和约 300 万次聊天。设计是生成式 AI 对话助手的分阶段上线，主要在 agent-month 层级比较处理前后和处理/未处理状态。",
+      "intervention": "向客服人员提供生成式 AI 对话辅助系统，帮助生成回复、诊断问题和吸收高绩效员工的隐性做法。",
+      "comparator": "未使用或尚未使用该 AI 助手的同类客服工作流。",
+      "timeZeroOrDesign": "分阶段工具引入与现场数据分析；需要把正式 causal claim 限定在论文设计可支持的 rollout/采用比较内。",
+      "outcomes": ["每小时解决问题数", "平均处理时间", "客户情绪/质量代理", "新员工学习速度"],
+      "effectSummary": "正式发表版本和 working-paper 版本口径略有差异，保守记录为生产率约 14-15% 提升；低经验/低技能员工约 30-34% 提升，高经验/高技能员工影响很小。",
+      "effectEstimate": "主要结局是 resolutions/issues per hour；NBER full-text audit 显示基线均值约 2.6，每小时解决数提升约 14%。",
+      "uncertaintyOrStats": "使用 difference-in-differences / fixed effects 规格；标准误聚类到 agent location 或相关层级。当前本地审计未逐表复核所有回归列。",
+      "qaOrValidation": "质量需要通过客户结果、监督指标和错误复查共同约束，不能只看回复速度。",
+      "downsideChannel": "工具可能把高绩效模式平均化，也可能在复杂或异常案例中引入错误建议和过度依赖。",
+      "externalBoundary": "只能外推到相似的结构化客服/支持任务，不能直接外推到医学诊断、科学发现或寿命收益。",
+      "modelUse": "A -> Q 的现场实证入口：技术采用通过降低处理成本和学习成本提高单位时间行动质量。",
+      "evidenceLevel": "Level III controlled workplace rollout / quasi-experimental field evidence",
+    "sourceVerification": {
+      "venue": "QJE peer-reviewed article plus NBER working-paper full-text audit",
+      "method": "staggered rollout, panel controls, agent-month outcomes",
+      "coiFlag": "Proprietary workplace setting; include with setting caveat.",
+      "verificationStatus": "FULL_TEXT_PARTIAL_VERIFIED"
+    },
+    "sourceTrace": "Quarterly Journal of Economics 2025 official article, DOI 10.1093/qje/qjae044; NBER working paper PDF used for full-text field extraction.",
+    "methodAudit": {
+      "primaryTableOrFigure": "NBER full-text Table 2 columns 3 and 6; Table 3 columns 1-8; Table 4 columns 1-2; Appendix Table A.1.",
+      "mainSpecification": "Difference-in-differences with year-month, location, agent, and agent-tenure fixed effects; preferred Table 2 columns 3 and 6 include agent and tenure fixed effects.",
+      "statisticalColumns": "Table 2 preferred level outcome: Post AI X Ever Treated = 0.301 resolutions/hour, SE 0.0498, DV mean 2.174; preferred log outcome = 0.138, SE 0.0199. Table 3: AHT -3.750 (0.476), calls/hour 0.366 (0.0363), resolution rate 0.0128 (0.00717), NPS -0.128 (0.660), log(AHT) -0.0851 (0.0110), log(calls/hour) 0.149 (0.0142), log(resolution rate) 0.00973 (0.00529), log(NPS) -0.000406 (0.00915). Table 4: customer sentiment 0.177 (0.0133), agent sentiment 0.0198 (0.00315).",
+      "uncertaintyDetail": "Robust standard errors are clustered at the agent location level in Tables 2-4; Appendix Table A.1 reports alternative log RPH DiD estimators with point estimates from 0.116 to 0.257 and clustered SE from 0.014 to 0.037.",
+      "qualityScoringProtocol": "Productivity is resolutions per hour; quality proxies include average handle time, chats/hour, resolution rate, NPS customer surveys, and conversation sentiment. Sentiment is scored by SiEBERT on a -1 to 1 scale; AI technical suggestions are visible only to agents and must be reviewed or ignored by them.",
+      "qaCostQuantification": "Direct QA review time is not quantified. Observable QA proxies are resolution rate, NPS, sentiment, handle time, and the finding that high-skill/high-tenure agents can see smaller or negative quality effects.",
+      "externalValidityNote": "Field setting is a proprietary customer-support workflow; table estimates should not be transported to open-ended professional judgment without new task-specific validation."
+    }
+  },
+    {
+      "id": "AQ2",
+      "referenceKey": "noy2023productivity",
+      "taskFamily": "professional-writing",
+      "taskAndPopulation": "短篇专业写作任务；参与者为大学学历专业人员或受过高等教育的被试。",
+      "sampleAndDesign": "453 名有经验、大学学历专业人员；预注册在线随机实验；约一半被随机分配到 ChatGPT access；任务为 occupation-specific、incentivized mid-level professional writing。",
+      "intervention": "允许使用 ChatGPT 完成写作任务。",
+      "comparator": "不使用 ChatGPT 的写作任务完成组。",
+      "timeZeroOrDesign": "随机实验；任务开始时分配是否可使用 ChatGPT。",
+      "outcomes": ["完成时间", "外部评分质量", "生产率", "不同能力水平人群差异"],
+      "effectSummary": "论文报告完成时间约下降 40%，输出质量约提高 18%；低初始表现者质量收益更明显。",
+      "effectEstimate": "处理组在后测任务上比对照组少用约 11 分钟；对照组均值约 27 分钟；评价分数提高约 0.45 个标准差。",
+      "uncertaintyOrStats": "时间和评分结果均报告 p<0.001；质量由同职业领域的盲评专业人员评估。处理组注册成功率约 92%，对照组存在约 10-20% ChatGPT 使用污染。",
+      "qaOrValidation": "输出质量来自任务评分而非真实长期影响；事实核查、原创性、责任归属和上下文整合仍需要额外 QA。",
+      "downsideChannel": "短文本看似流畅可能掩盖事实错误、风格同质化和使用者判断力退化。",
+      "externalBoundary": "不能外推到长周期研究、战略判断、医学建议或主体持续性本身。",
+      "modelUse": "A -> Q 的随机实验入口：AI 工具降低单位任务时间并提高评分质量，但边界在任务内。",
+      "evidenceLevel": "Level II randomized online experiment",
+    "sourceVerification": {
+      "venue": "Science peer-reviewed article and author PDF full-text audit",
+      "method": "pre-registered randomized experiment with blinded quality evaluation",
+      "coiFlag": "No critical COI found in local audit; platform/task generalizability caveat remains.",
+      "verificationStatus": "FULL_TEXT_VERIFIED"
+    },
+    "sourceTrace": "Science 2023 article / working-paper lineage, DOI 10.1126/science.adh2586.",
+    "methodAudit": {
+      "primaryTableOrFigure": "Main text Figure 1 and Figure 2; descriptive Table 1; footnotes 22-27 for grading and usage protocol.",
+      "mainSpecification": "Randomized online experiment with within-participant pre/post change regressions; Figure 1 note states treatment effects are estimated from within-participant change on treatment dummy, occupation-by-task-order fixed effects, and incentive-arm fixed effects.",
+      "statisticalColumns": "Treatment reduces post-task time by about 11 minutes, equal to 0.75 SD, relative to a control mean of 27 minutes, p<0.001; evaluator grades increase by 0.45 SD, p<0.001; fixed-effort 15-minute arm raises grades by 0.33 SD but is not statistically significant.",
+      "uncertaintyDetail": "Figure 1 reports 95% confidence intervals visually. For time regressions, SE are heteroskedasticity-robust at participant level; for grade regressions, grader fixed effects are included and SE are clustered at the person level. The main text does not tabulate numeric SE for the headline effects.",
+      "qualityScoringProtocol": "Each output is graded on a 1-7 scale by three blinded experienced professionals in the same occupations. Evaluators receive base pay plus bonus tied to correlation with other evaluators; average within-essay cross-evaluator correlation is 0.44.",
+      "qaCostQuantification": "Treatment take-up: 92% registered and 80% used ChatGPT. Control contamination is about 10-20%. The paper explicitly notes real-world fact-checking needs may reduce time savings; no numeric fact-checking overhead is estimated.",
+      "externalValidityNote": "Tasks are short, generic professional writing assignments that avoid precise factual accuracy and organization-specific context; results are a lower-bound access effect under partial compliance but not a long-horizon knowledge-work effect."
+    }
+  },
+    {
+      "id": "AQ3",
+      "referenceKey": "peng2023copilot",
+      "taskFamily": "programming",
+      "taskAndPopulation": "受试程序员完成小型软件实现任务，如实现 HTTP server。",
+      "sampleAndDesign": "95 名 Upwork 专业程序员；45 名 treatment、50 名 control；任务是尽快用 JavaScript 实现 HTTP server；35 名 treatment 和 35 名 control 完成任务并进入完成时间比较。",
+      "intervention": "使用 GitHub Copilot 作为编程助手。",
+      "comparator": "不使用 Copilot 的程序员完成同一任务。",
+      "timeZeroOrDesign": "随机分配 Copilot 可用性；任务开始时定义处理组和对照组。",
+      "outcomes": ["任务完成时间", "完成率", "程序是否通过任务要求"],
+      "effectSummary": "预印本报告 Copilot 使成功完成任务的程序员约快 55.8%；它支持 AI 编程助手在明确编程任务中提升速度。",
+      "effectEstimate": "完成者平均时间：treatment 71.17 分钟，control 160.89 分钟；完成时间下降 55.8%。",
+      "uncertaintyOrStats": "t-test p=0.0017；95% confidence interval for improvement 为 [21%, 89%]。成功率高 7 个百分点，但 CI [-0.11, 0.25]，不显著。",
+      "qaOrValidation": "核心 QA 是任务测试、代码正确性和后续维护成本；速度收益不能自动等于软件质量收益。",
+      "downsideChannel": "可能引入隐蔽 bug、安全缺陷、许可风险、错误 API 使用和对建议代码的过度信任。",
+      "externalBoundary": "单一编程任务、样本和预印本证据不能泛化到大型系统设计、长期维护或安全关键代码。",
+      "modelUse": "A -> Q 的工程任务实验证据：自动补全和代码生成降低局部实现时间，但需要质量门禁。",
+      "evidenceLevel": "Level II randomized controlled experiment, preprint status",
+    "sourceVerification": {
+      "venue": "arXiv preprint; not peer-reviewed in local audit",
+      "method": "random assignment to Copilot access on one programming task",
+      "coiFlag": "AI coding-tool ecosystem and preprint status require stronger caveat.",
+      "verificationStatus": "FULL_TEXT_VERIFIED_PREPRINT"
+    },
+    "sourceTrace": "arXiv:2302.06590, The Impact of AI on Developer Productivity: Evidence from GitHub Copilot.",
+    "methodAudit": {
+      "primaryTableOrFigure": "Figure 6 for completion-time distribution; Table 1 for heterogeneous treatment-effect regression.",
+      "mainSpecification": "Controlled experiment with random assignment to Copilot access. Primary comparison conditions on participants who completed the task; heterogeneity uses Horvitz-Thomson transformed outcome regressed on observables.",
+      "statisticalColumns": "Completion-time headline: treatment mean 71.17 minutes vs control mean 160.89 minutes among completers; 55.8% reduction, t-test p=0.0017, 95% CI for improvement [21%, 89%]. Table 1 heterogeneity estimates include programming experience 8.23 (SE 4.36, p=0.0629), hours programming/day -11.70 (SE 4.74, p=0.0168), age 25-44 -74.55 (SE 33.52, p=0.0303).",
+      "uncertaintyDetail": "Task success is 7 percentage points higher in treatment but not significant, 95% CI [-0.11, 0.25]. Four completion-time outliers above 300 minutes are all in control; authors state results remain robust if outliers are dropped.",
+      "qualityScoringProtocol": "Task success requires passing all 12 tests for the JavaScript HTTP server. Completion time is measured from repository creation to the first commit that successfully passes all 12 tests.",
+      "qaCostQuantification": "QA is binary task-test pass/fail plus completion time; no long-term maintainability, security, code review time, or hidden defect cost is measured.",
+      "externalValidityNote": "Single small programming task, Upwork sample, preprint status, and conditional-on-completion timing mean the result should be used only as bounded evidence for local implementation speed."
+    }
+  },
+    {
+      "id": "AQ4",
+      "referenceKey": "dellacqua2026jagged",
+      "taskFamily": "knowledge-work-and-consulting",
+      "taskAndPopulation": "管理咨询知识任务；研究对象为专业咨询人员，任务被区分为 AI frontier 内外。",
+      "sampleAndDesign": "852 名咨询人员回应实验，758 名完成实验；随机分配到 no AI、GPT-4、GPT-4 + prompt engineering overview。385 人进入 frontier 内任务，373 人进入 frontier 外任务。",
+      "intervention": "使用 GPT-4 或 GPT-4 加提示工程培训辅助完成咨询任务。",
+      "comparator": "不使用 AI 的同类任务表现。",
+      "timeZeroOrDesign": "实验分配 AI 使用条件，并比较 AI 边界内任务和边界外任务表现。",
+      "outcomes": ["任务完成数量", "完成速度", "质量评分", "边界外任务正确率"],
+      "effectSummary": "AI frontier 内任务中，论文报告完成任务数约提高 12.2%、速度约提高 25.1%、质量约提高 40%；在 frontier 外任务中，AI 使用者正确率可能显著下降。",
+      "effectEstimate": "frontier 内：control 平均完成约 82% 任务，GPT+Overview 约 93%，GPT Only 约 91%；质量提升可超过 40%。frontier 外：control 正确率约 84.5%，AI 条件约 60% 和 70%，合并约下降 19 个百分点。",
+      "uncertaintyOrStats": "使用线性回归比较任务完成、时间、质量和正确率；本地审计已核对摘要、设计和关键效应，未逐表转录所有回归系数。",
+      "qaOrValidation": "必须先判断任务是否在 AI 能力边界内，并为边界外任务设置人工复核、反事实检查和停止条件。",
+      "downsideChannel": "jagged frontier 是核心负向通道：AI 在一些任务增强人，在另一些任务以高可信表达误导人。",
+      "externalBoundary": "最适合支持“任务边界决定 AI 增强方向”的主张，不能被用作通用智能增强或寿命收益证据。",
+      "modelUse": "A -> Q 与 A/Q -> risk 的双重证据：同一技术可同时提高行动质量并制造边界外风险。",
+      "evidenceLevel": "Level II randomized professional-task experiment",
+    "sourceVerification": {
+      "venue": "Organization Science peer-reviewed article; HBS/SSRN working-paper PDF used for full-text field extraction",
+      "method": "random assignment across AI access conditions and inside/outside frontier tasks",
+      "coiFlag": "BCG professional setting; strong external-validity caveat for non-consulting tasks.",
+      "verificationStatus": "FULL_TEXT_VERIFIED"
+    },
+    "sourceTrace": "Organization Science 2026 article, DOI 10.1287/orsc.2025.21838; earlier HBS/SSRN working-paper versions reported the same jagged frontier frame.",
+    "methodAudit": {
+      "primaryTableOrFigure": "Inside-frontier Tables 1-3; outside-frontier Tables 4-6; Figures 3-4 for question-level regressions and Figure 7 for correctness rates.",
+      "mainSpecification": "Random assignment to no AI, GPT-4, or GPT-4 plus prompt overview. Linear regressions compare AI conditions against control, with assessment-task performance and additional controls in richer columns.",
+      "statisticalColumns": "Inside frontier Table 1 quality: GPT+Overview 1.746 (SE 0.074), GPT Only 1.556 (SE 0.080), control mean 4.099; Table 2 completion: GPT+Overview 0.111 (SE 0.020), GPT Only 0.090 (SE 0.021), control mean 0.824; Table 3 timing: GPT+Overview -1129.143 sec (SE 135.181), GPT Only -1388.415 sec (SE 150.204), control mean 5023 sec. Outside frontier Table 4 correctness: GPT+Overview -0.245 (SE 0.054), GPT Only -0.139 (SE 0.053), control mean 0.844; Table 5 timing: GPT+Overview -689.191 sec (SE 115.266), GPT Only -407.329 sec (SE 121.833), control mean 2260 sec; Table 6 recommendation quality: GPT+Overview 1.475 (SE 0.242), GPT Only 1.046 (SE 0.289), control mean 5.856.",
+      "uncertaintyDetail": "Tables report robust standard errors and F-test p-values comparing GPT+Overview with GPT Only. Outside-frontier GPT+Overview vs GPT Only p-values are about 0.082-0.095 for correctness and 0.000-0.022 for timing across specifications.",
+      "qualityScoringProtocol": "Inside-frontier responses are scored question-by-question by two human graders, averaged into composite Quality, and separately scored by GPT-4. Outside-frontier correctness is binary; recommendation quality is scored 1-10 by human graders, including BCG consultants and business-school students, using an author-developed consulting rubric.",
+      "qaCostQuantification": "The study directly quantifies a frontier failure mode: outside-frontier AI reduces time while lowering correctness by 13-25 percentage points depending on condition. This is a measured QA risk because faster output can be less correct while still receiving higher recommendation-quality scores.",
+      "externalValidityNote": "Professional BCG consulting tasks are high-skill but organization-specific; the result should be modeled as task-frontier evidence, not as generic AI productivity evidence."
+    }
+  }
+  ],
+  "threatsToValidity": [
+    {
+      "threat": "证据层级混合",
+      "risk": "Source Cards 同时包含方法标准、机制综述、观察关联、随机实验、治理框架和规范哲学。",
+      "consequence": "读者可能把方法语言、机制合理性或规范框架误读为干预效果证据。",
+      "mitigation": "Claim Register、Evidence Classes 和 Citation Audit 分开标注主张类型、证据用途和不可支持范围。"
+    },
+    {
+      "threat": "外推边界",
+      "risk": "AI 写作、客服、编程和咨询任务实验只覆盖限定任务族。",
+      "consequence": "局部任务收益可能被误用为通用智力、健康寿命或永生收益。",
+      "mitigation": "所有 A -> Q 主张必须保留任务边界、QA 成本、幻觉、返工和异质性说明。"
+    },
+    {
+      "threat": "变量代理偏差",
+      "risk": "E、Q、O 等变量只能通过代理指标观测，且代理会受地区、制度、资源和文化影响。",
+      "consequence": "不同主体或人群之间的数值不可直接比较。",
+      "mitigation": "变量字典要求记录单位、代理指标、失败模式和适用时间窗，后续模型必须做敏感性分析。"
+    },
+    {
+      "threat": "因果识别不足",
+      "risk": "技术采用、资源可及和健康状态之间存在时间变化混杂、选择偏差和中介路径。",
+      "consequence": "相关信号可能被错误升级为干预效果。",
+      "mitigation": "任何强因果主张必须先通过 U_t -> causal claim 门禁，写明 population、comparator、time zero、outcome 和 estimand。"
+    },
+    {
+      "threat": "治理反噬",
+      "risk": "增强技术可能引入依赖、误用、监控、剥削、隐私泄漏和尾部风险。",
+      "consequence": "飞轮可能从主体持续性增强机制变成风险放大器。",
+      "mitigation": "技术族注册表要求同时记录 upside、downside、停止条件、回滚路径和事故复盘入口。"
+    }
+  ],
+  "researchDeclarations": [
+    {
+      "declaration": "Data availability",
+      "statement": "本文当前不使用受限个人数据、临床个体数据或未公开实验数据。结构化证据、引用注册表、coverage audit 和 citation audit 均随仓库文本文件公开维护。",
+      "artifact": "web/src/data/effective-immortality-evidence.json; web/src/data/effective-immortality-flywheel/"
+    },
+    {
+      "declaration": "Code availability",
+      "statement": "Web 论文页、D3 证据图、引用导出脚本和覆盖审计脚本保存在仓库中，可用 npm scripts 和 make check 复现当前静态页面与审计产物。",
+      "artifact": "web/src/pages/papers/effective-immortality-flywheel.astro; web/src/scripts/evidence-graph.js; web/scripts/"
+    },
+    {
+      "declaration": "Ethics and safety",
+      "statement": "本文是概念模型、证据矩阵和科研叙事草案，不招募人类受试者，不输出个人死亡日期，不提供医学、法律、投资或政策建议。所有医学、神经、AI 和增强技术叙述均受证据等级、风险、同意、权利和主体连续性约束。",
+      "artifact": "modelContract.constraints; claimRegister CL7; threatsToValidity"
+    },
+    {
+      "declaration": "AI assistance disclosure",
+      "statement": "本文和 Web 页面由 Human Infra maintainers 使用 AI 辅助进行资料整理、结构化写作、代码生成、审计脚本和页面构建。AI 输出不作为事实源；可发表主张必须回到 Reference Registry、Source Cards、原文 PDF、官方标准或机器审计产物。",
+      "artifact": "docs/source-notes/2026-06-28-effective-immortality-flywheel-automated-research-run.md"
+    },
+    {
+      "declaration": "Competing interests",
+      "statement": "当前仓库未记录与本文主张相关的商业资助、产品推广或受雇利益。后续若引入机构、资助、产品或商业合作，应在本字段和论文声明中更新。",
+      "artifact": "researchDeclarations"
+    },
+    {
+      "declaration": "Funding",
+      "statement": "当前版本未声明外部资助。后续若存在资助，应记录资助方、资助编号、资助方是否参与研究设计、写作、数据解释和发布决策。",
+      "artifact": "researchDeclarations"
+    },
+    {
+      "declaration": "Author contribution",
+      "statement": "当前版本由 Human Infra maintainers 维护；贡献包括问题定义、理论链路、证据矩阵、Source Cards、Web 页面、审计脚本和治理文档。后续多人协作应补 CRediT 风格贡献分工。",
+      "artifact": "CHANGELOG.md; Git history"
+    },
+    {
+      "declaration": "Use limitation",
+      "statement": "本文不证明有效永生已经可行，不证明任何具体技术会延寿，不把短期任务收益升级为寿命收益，不把工具增强等同于主体连续性保持。",
+      "artifact": "claimRegister CL7; modelContract.nonClaims"
+    }
+  ],
+  "reproducibilityAnchors": [
+    {
+      "artifact": "Working paper",
+      "path": "docs/explanations/effective-immortality-acceleration-flywheel.md",
+      "role": "论文主叙事、变量定义、模型契约和研究路线。",
+      "check": "人工审阅章节结构，并运行 make check。"
+    },
+    {
+      "artifact": "Web paper page",
+      "path": "web/src/pages/papers/effective-immortality-flywheel.astro",
+      "role": "arXiv-style 阅读页面，消费结构化数据并展示表格和 D3 图。",
+      "check": "npm run build；curl 页面确认 v0.25、schema 2.0、Citation Context Review Packet v0.1、Citation Context Risk Triage v0.1、High-Risk Citation Context Review v0.1、Citation Context Local Review v0.1、Fresh Reviewer Citation Audit Protocol v0.1、Fresh Reviewer Citation Results Audit v0.1、Claim Context Audit v0.1、Reference Verification v0.1、Pre-Submission Review v0.1、Search Execution Register v0.1、Candidate Source Verification v0.1、Candidate Source Extraction v0.1、Estimand Registry v0.1、Analysis Plan Registry v0.1、AI Research Failure Mode Audit v0.1、AI Task Evidence Register v0.3、AI Task Method Audit、Research Declarations、Claim Evidence Map、Reference Registry 和 U_t 门禁。"
+    },
+    {
+      "artifact": "Structured evidence data",
+      "path": "web/src/data/effective-immortality-evidence.json",
+      "role": "Claim Register、Claim Evidence Map、AI Task Evidence Register、Reference Registry、变量字典、模型契约、证据边、技术族、威胁和可复现锚点的单一数据源。",
+      "check": "Node JSON schema smoke：schemaVersion、变量数、A -> Q 任务证据、证据等级、效应估计、证据边、主张映射、claim context audit anchors、estimand registry、analysis plan registry、failure mode audit、reference verification anchors、参考文献注册表和必需字段。"
+    },
+    {
+      "artifact": "Reference BibTeX",
+      "path": "web/src/data/effective-immortality-flywheel/references.bib",
+      "role": "由 Reference Registry 生成的 BibTeX 风格参考文献文件。",
+      "check": "npm run export:references；确认条目数等于 referenceRegistry.length，且 QJE DOI 为 10.1093/qje/qjae044。"
+    },
+    {
+      "artifact": "Citation Audit JSON",
+      "path": "web/src/data/effective-immortality-flywheel/CITATION_AUDIT.json",
+      "role": "由 Reference Registry 生成的机器可读引用审计账本。",
+      "check": "npm run export:references；Node 检查 verdict、total_entries、hashes 和 assurance_limitations。"
+    },
+    {
+      "artifact": "Citation Audit Markdown",
+      "path": "web/src/data/effective-immortality-flywheel/CITATION_AUDIT.md",
+      "role": "由 Reference Registry 生成的人类可读引用审计报告。",
+      "check": "确认 WARN 边界、48 条 per-entry ledger 和 assurance limitations 存在。"
+    },
+    {
+      "artifact": "Reference Verification JSON",
+      "path": "web/src/data/effective-immortality-flywheel/REFERENCE_VERIFICATION.json",
+      "role": "联网 primary-source 参考文献核验账本，检查 DOI/Crossref、arXiv API、官方 URL、可访问书目/作者页和本地 artifact。",
+      "check": "npm run verify:references；确认 verdict 为 PASS，当前 53 条 Reference Registry 全部完成自动可达性或元数据核验。"
+    },
+    {
+      "artifact": "Reference Verification Markdown",
+      "path": "web/src/data/effective-immortality-flywheel/REFERENCE_VERIFICATION.md",
+      "role": "人类可读 primary-source 参考文献核验报告。",
+      "check": "确认 53 条 Reference Registry 全部通过自动 URL/DOI/arXiv/artifact 可达性核验；书籍引用以可访问书目页或作者页兜底。"
+    },
+    {
+      "artifact": "Claim Context Audit JSON",
+      "path": "web/src/data/effective-immortality-flywheel/CLAIM_CONTEXT_AUDIT.json",
+      "role": "机器可读 claim-context-reference 对齐审计，检查核心主张、引用上下文、不可支持边界和 Reference Registry 反向覆盖。",
+      "check": "npm run audit:claim-context；确认 verdict 为 PASS，7 条 claim evidence rows、12 个 citation contexts、53 条 Reference Registry 和 0 gaps。"
+    },
+    {
+      "artifact": "Claim Context Audit Markdown",
+      "path": "web/src/data/effective-immortality-flywheel/CLAIM_CONTEXT_AUDIT.md",
+      "role": "人类可读 claim-context-reference 对齐审计报告。",
+      "check": "确认 CL1-CL7 均有边界化 claim evidence row，所有 citation contexts 均有 supports 与 doesNotSupport，且无 reference verification FAIL。"
+    },
+    {
+      "artifact": "Citation Context Review Packet JSON",
+      "path": "web/src/data/effective-immortality-flywheel/CITATION_CONTEXT_REVIEW_PACKET.json",
+      "role": "机器可读逐句 citation-context 外部审查输入包，连接 CL1-CL7、CTX1-CTX12、Reference Registry、supports 和 doesNotSupport 边界。",
+      "check": "npm run export:citation-contexts；确认 verdict 为 READY_FOR_EXTERNAL_REVIEW，包含 7 条 claim packet、12 条 context packet、48 条 reference 和完整 reviewer instructions。"
+    },
+    {
+      "artifact": "Citation Context Review Packet Markdown",
+      "path": "web/src/data/effective-immortality-flywheel/CITATION_CONTEXT_REVIEW_PACKET.md",
+      "role": "人类可读逐句 citation-context 外部审查输入包。",
+      "check": "确认每条核心主张均列出引用上下文、可支持范围、不可支持范围、引用键和 fresh reviewer 输出格式。"
+    },
+    {
+      "artifact": "Citation Context Risk Triage JSON",
+      "path": "web/src/data/effective-immortality-flywheel/CITATION_CONTEXT_RISK_TRIAGE.json",
+      "role": "机器可读 L3 引用语境风险分诊账本，按过度外推风险、边界敏感性、参考文献 WARN/FAIL 和主张类型生成 fresh reviewer 优先级队列。",
+      "check": "npm run audit:citation-risk；确认 verdict 为 REQUIRES_FRESH_REVIEW，12 个 citation contexts 都有 risk tier、risk score、required action 和 reviewer focus。"
+    },
+    {
+      "artifact": "Citation Context Risk Triage Markdown",
+      "path": "web/src/data/effective-immortality-flywheel/CITATION_CONTEXT_RISK_TRIAGE.md",
+      "role": "人类可读 L3 引用语境风险分诊报告。",
+      "check": "确认 HIGH/MEDIUM/LOW 队列列出 safe use、forbidden use 和 reviewer focus，且明确不替代 fresh reviewer 逐句来源判断。"
+    },
+    {
+      "artifact": "High-Risk Citation Context Review JSON",
+      "path": "web/src/data/effective-immortality-flywheel/HIGH_RISK_CITATION_CONTEXT_REVIEW.json",
+      "role": "机器可读 HIGH/BLOCKER 引用语境来源边界审查账本，先处理 fresh reviewer 队列中最高风险上下文。",
+      "check": "npm run audit:high-risk-citations；确认 verdict 为 PASS_WITH_LIMITATIONS，所有 HIGH/BLOCKER contexts 均有 source finding、boundary note 和 action。"
+    },
+    {
+      "artifact": "High-Risk Citation Context Review Markdown",
+      "path": "web/src/data/effective-immortality-flywheel/HIGH_RISK_CITATION_CONTEXT_REVIEW.md",
+      "role": "人类可读 HIGH/BLOCKER 引用语境来源边界审查报告。",
+      "check": "确认 CTX2 的 Grossman、WHO HALE 和 NICE QALY 均有来源角色、支持范围、不可支持范围和 fresh reviewer 后续要求。"
+    },
+    {
+      "artifact": "Citation Context Local Review JSON",
+      "path": "web/src/data/effective-immortality-flywheel/CITATION_CONTEXT_LOCAL_REVIEW.json",
+      "role": "机器可读全量引用语境本地来源边界审查账本，覆盖 CTX1-CTX12 的 safe use、forbidden use、reference state 和 fresh reviewer focus。",
+      "check": "npm run audit:citation-contexts-local；确认 verdict 为 LOCAL_REVIEW_COMPLETE_REQUIRES_FRESH_REVIEW，12 个 citation contexts 全部 reviewed，blocked contexts 为 0。"
+    },
+    {
+      "artifact": "Citation Context Local Review Markdown",
+      "path": "web/src/data/effective-immortality-flywheel/CITATION_CONTEXT_LOCAL_REVIEW.md",
+      "role": "人类可读全量引用语境本地来源边界审查报告。",
+      "check": "确认每个 CTX 均列出本地 verdict、边界行动、引用键和正式 fresh reviewer focus。"
+    },
+    {
+      "artifact": "Fresh Reviewer Citation Audit Protocol JSON",
+      "path": "web/src/data/effective-immortality-flywheel/FRESH_REVIEWER_CITATION_AUDIT_PROTOCOL.json",
+      "role": "机器可读外部 fresh reviewer 审稿协议，按风险排序 CTX1-CTX12 并给出独立审查契约、pass gate 和逐项 prompt。",
+      "check": "npm run export:fresh-reviewer-protocol；确认 verdict 为 READY_FOR_FRESH_REVIEWER，队列包含 12 个 contexts，HIGH/BLOCKER 为 1。"
+    },
+    {
+      "artifact": "Fresh Reviewer Citation Audit Protocol Markdown",
+      "path": "web/src/data/effective-immortality-flywheel/FRESH_REVIEWER_CITATION_AUDIT_PROTOCOL.md",
+      "role": "人类可读外部 fresh reviewer 审稿协议。",
+      "check": "确认 reviewer independence contract、pass gate、review queue 和每个 context 的 suggested prompt 存在；它不替代 reviewer verdict。"
+    },
+    {
+      "artifact": "Fresh Reviewer Citation Results Template JSON",
+      "path": "web/src/data/effective-immortality-flywheel/FRESH_REVIEWER_CITATION_AUDIT_RESULTS_TEMPLATE.json",
+      "role": "机器可读外部 reviewer 结果账本模板，用于生成真实 FRESH_REVIEWER_CITATION_AUDIT_RESULTS.json。",
+      "check": "npm run audit:fresh-reviewer-results；确认模板包含 12 个 contexts、source_protocol_hash 和 verdict schema。"
+    },
+    {
+      "artifact": "Fresh Reviewer Citation Results Template Markdown",
+      "path": "web/src/data/effective-immortality-flywheel/FRESH_REVIEWER_CITATION_AUDIT_RESULTS_TEMPLATE.md",
+      "role": "人类可读 reviewer 结果填写说明。",
+      "check": "确认 allowed values、queue 和不得把模板当成 reviewer result 的边界说明存在。"
+    },
+    {
+      "artifact": "Fresh Reviewer Citation Results Audit JSON",
+      "path": "web/src/data/effective-immortality-flywheel/FRESH_REVIEWER_CITATION_AUDIT_RESULTS_AUDIT.json",
+      "role": "机器可读外部 reviewer 结果审计账本；无真实结果时保持 pending，存在真实结果时验证 blocking conditions。",
+      "check": "npm run audit:fresh-reviewer-results；当前确认 verdict 为 PENDING_EXTERNAL_REVIEW_RESULTS，required contexts 为 12，completed contexts 为 0。"
+    },
+    {
+      "artifact": "Fresh Reviewer Citation Results Audit Markdown",
+      "path": "web/src/data/effective-immortality-flywheel/FRESH_REVIEWER_CITATION_AUDIT_RESULTS_AUDIT.md",
+      "role": "人类可读外部 reviewer 结果审计报告。",
+      "check": "确认该报告明确说明当前没有真实 reviewer results，不能把 pending 写成 pass。"
+    },
+    {
+      "artifact": "Pre-Submission Review JSON",
+      "path": "web/src/data/effective-immortality-flywheel/PRE_SUBMISSION_REVIEW.json",
+      "role": "机器可读预提交审查账本，检查版本漂移、必需边界、AI 文风词、em dash、核心审计产物和已知提交阻塞项。",
+      "check": "npm run audit:pre-submission；确认无 CRITICAL，本地结构可以继续推进，fresh reviewer citation audit 仍作为 MAJOR 队列项保留。"
+    },
+    {
+      "artifact": "Pre-Submission Review Markdown",
+      "path": "web/src/data/effective-immortality-flywheel/PRE_SUBMISSION_REVIEW.md",
+      "role": "人类可读预提交审查报告。",
+      "check": "确认版本漂移为 0，文本机械扫描为 0，剩余 MAJOR 明确指向正式提交前的 fresh reviewer 引用语境审查。"
+    },
+    {
+      "artifact": "Coverage Audit JSON",
+      "path": "web/src/data/effective-immortality-flywheel/COVERAGE_AUDIT.json",
+      "role": "机器可读覆盖审计，检查 evidence source alias、AI task reference key、AI task full-text verification、method-audit 必填字段、research declarations、estimand registry、analysis plan registry 和 failure mode audit 是否完整。",
+      "check": "npm run audit:effective-immortality；确认 verdict 为 PASS，source aliases 为 54，AI task reference keys 为 4，AI task required fields 为 14，method-audit fields 为 7，research declarations 为 8，estimand registry rows 为 9，analysis plan rows 为 9，failure mode rows 为 7。"
+    },
+    {
+      "artifact": "Coverage Audit Markdown",
+      "path": "web/src/data/effective-immortality-flywheel/COVERAGE_AUDIT.md",
+      "role": "人类可读覆盖审计报告。",
+      "check": "确认 54 个 alias、4 个 AI task reference key、14 个 AI task 必填字段、7 个 method-audit 字段、8 个 research declarations、9 个 estimand rows、9 个 analysis plan rows、7 个 failure mode rows、47 张 Source Card、53 条 Reference Registry 无断链。"
+    },
+    {
+      "artifact": "Evidence Matrix",
+      "path": "docs/source-notes/2026-06-28-effective-immortality-flywheel-evidence-matrix.md",
+      "role": "可检验边、证据角色、断裂条件、模型任务和数据契约说明。",
+      "check": "与 JSON 字段逐项同步，禁止陈旧符号。"
+    },
+    {
+      "artifact": "Derivation package",
+      "path": "docs/source-notes/2026-06-28-effective-immortality-flywheel-derivation-package.md",
+      "role": "冻结不变量、假设、符号、推导图、主公式、非主张和开放风险。",
+      "check": "确认不变量稳定，定义、近似、方法和边界分开标注。"
+    },
+    {
+      "artifact": "D3 evidence graph",
+      "path": "web/src/scripts/evidence-graph.js",
+      "role": "从嵌入 JSON 生成主链、反哺路径、风险通道和因果门禁图。",
+      "check": "脚本查找 U_t -> causal claim，页面嵌入 JSON 后可渲染。"
+    }
+  ]
+}

@@ -22,6 +22,7 @@ docs/
 │   └── README.md
 ├── explanations/
 │   ├── README.md
+│   ├── effective-immortality-acceleration-flywheel.md
 │   ├── human-runtime-infrastructure.md
 │   ├── life-path-prediction-model.md
 │   ├── noah-ark-genealogy.md
@@ -51,7 +52,11 @@ docs/
 │   ├── source-management.md
 │   └── writing-style-guide.md
 ├── source-notes/
-│   └── core-literature/
+│   ├── core-literature/
+│   ├── 2026-06-28-effective-immortality-flywheel-automated-research-run.md
+│   ├── 2026-06-28-effective-immortality-flywheel-derivation-package.md
+│   ├── 2026-06-28-effective-immortality-flywheel-evidence-matrix.md
+│   └── 2026-06-28-effective-immortality-flywheel-source-cards.md
 ├── templates/
 │   ├── README.md
 │   ├── decision-record.md
@@ -76,8 +81,12 @@ docs/
 9. Read `reference/source-card-system.md`.
 10. Read `explanations/noah-ark-genealogy.md`.
 11. Read `explanations/value-lenses.md`.
-12. Read `reference/applications-and-literature.md`.
-13. Read `source-notes/core-literature/README.md`.
-14. Read `reference/review-checklists.md`.
-15. Read `explanations/human-runtime-infrastructure.md`.
-16. Enter a domain under `../domains/`.
+12. Read `explanations/effective-immortality-acceleration-flywheel.md`.
+13. Read `source-notes/2026-06-28-effective-immortality-flywheel-evidence-matrix.md`.
+14. Read `source-notes/2026-06-28-effective-immortality-flywheel-derivation-package.md`.
+15. Read `reference/applications-and-literature.md`.
+16. Read `source-notes/core-literature/README.md`.
+17. Read `reference/review-checklists.md`.
+18. Read `explanations/human-runtime-infrastructure.md`.
+19. Read `source-notes/2026-06-29-controllable-metric-waiting-room-hypothesis-revision-notes.md` if you are working on Future Waiting.
+20. Enter a domain under `../domains/`.

@@ -42,7 +42,11 @@ The domain for future-waiting paths: ways to reduce the subjective time cost of 
 
 ## Black Hole Waiting Room
 
-A Human Infra thought-experiment term for using strong gravitational time dilation near a black hole to reduce the waiting subject's proper time relative to the outside universe.
+A Human Infra propagation term for the metric-redshift proper-time differential path: using strong-field gravitational time dilation near a black hole to reduce the waiting subject's proper time relative to an outside reference timeline.
+
+## Metric-Redshift Proper-Time Differential Path
+
+The formal Human Infra term for a future-waiting path that uses metric redshift in strong gravitational spacetime to make a subject accumulate less proper time than an outside reference timeline. In Chinese: 度规红移固有时差分路径.
 
 ## Memory Editing
 

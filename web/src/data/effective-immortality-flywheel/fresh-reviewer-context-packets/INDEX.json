@@ -1,0 +1,129 @@
+{
+  "index_kind": "fresh-reviewer-context-packet-index",
+  "generated_at": "2026-06-29T00:00:00.000Z",
+  "source_protocol_hash": "sha256:2615318e3e11f7b5d9e0cb7db273b7d0dd0dabf9618b34ad685df8357a9222de",
+  "source_template_hash": "sha256:7c013c288f192ab01951a5655d9b5b89d21556d2f72c8e6ae765d5017e2e5e31",
+  "packet_count": 12,
+  "packets": [
+    {
+      "priority": 1,
+      "context_id": "CTX2",
+      "risk_tier": "HIGH",
+      "risk_score": 6,
+      "source_group": "Grossman Health Capital; WHO HALE; NICE QALY",
+      "json_path": "./CTX2.json",
+      "markdown_path": "./CTX2.md",
+      "packet_hash": "sha256:6e1b5510b3cfc90a42b83baa2296fcf00d95cfa2110090862278132faf348b47"
+    },
+    {
+      "priority": 2,
+      "context_id": "CTX3",
+      "risk_tier": "MEDIUM",
+      "risk_score": 4,
+      "source_group": "Hallmarks of Aging; GrimAge; Cognitive Reserve",
+      "json_path": "./CTX3.json",
+      "markdown_path": "./CTX3.md",
+      "packet_hash": "sha256:1405d79c71101e6485bb2e6a2666a348765014ff32214081abafad499ba94772"
+    },
+    {
+      "priority": 3,
+      "context_id": "CTX5",
+      "risk_tier": "MEDIUM",
+      "risk_score": 4,
+      "source_group": "Human Capital; Social Capital; Social Relationships Mortality",
+      "json_path": "./CTX5.json",
+      "markdown_path": "./CTX5.md",
+      "packet_hash": "sha256:49f51628c09a88d652b154cebd2dd20fb603ed9857909e4684883c8fe30f0c6b"
+    },
+    {
+      "priority": 4,
+      "context_id": "CTX7",
+      "risk_tier": "MEDIUM",
+      "risk_score": 4,
+      "source_group": "Generative AI at Work; Noy and Zhang; GitHub Copilot; Jagged Technological Frontier",
+      "json_path": "./CTX7.json",
+      "markdown_path": "./CTX7.md",
+      "packet_hash": "sha256:228a264f327d03c91936ddd37efde486ea264a1e579b48ca784f804bce1f74aa"
+    },
+    {
+      "priority": 5,
+      "context_id": "CTX10",
+      "risk_tier": "MEDIUM",
+      "risk_score": 4,
+      "source_group": "Apple Heart Study; Personal Informatics; Lived Informatics; Dynamic Digital Twin",
+      "json_path": "./CTX10.json",
+      "markdown_path": "./CTX10.md",
+      "packet_hash": "sha256:aae84842e1fa4b853f6850e7d20f44dca0246b20371cc02a14fe1a0d595a0b14"
+    },
+    {
+      "priority": 6,
+      "context_id": "CTX11",
+      "risk_tier": "MEDIUM",
+      "risk_score": 4,
+      "source_group": "Extended Mind; Engelbart; Cognition in the Wild",
+      "json_path": "./CTX11.json",
+      "markdown_path": "./CTX11.md",
+      "packet_hash": "sha256:bbe21dd388f5df084be08f67f09be10bc24e1f3e0b61715344a0bde6ba272dbf"
+    },
+    {
+      "priority": 7,
+      "context_id": "CTX12",
+      "risk_tier": "MEDIUM",
+      "risk_score": 4,
+      "source_group": "Capability Approach; WHO SDOH; WHO Primary Health Care",
+      "json_path": "./CTX12.json",
+      "markdown_path": "./CTX12.md",
+      "packet_hash": "sha256:ff776a253dc911981be4c1029c16c123929689cf6acba9c4a5eda93125f64794"
+    },
+    {
+      "priority": 8,
+      "context_id": "CTX9",
+      "risk_tier": "MEDIUM",
+      "risk_score": 3,
+      "source_group": "Target Trial Emulation; ClinicalTrials.gov; WHO ICTRP; TRIPOD+AI; PROBAST+AI; CONSORT-AI; SPIRIT-AI",
+      "json_path": "./CTX9.json",
+      "markdown_path": "./CTX9.md",
+      "packet_hash": "sha256:070e6f9334225a7de3cd2284e170dd09b0641da3a82b9563cabf13f580e082b5"
+    },
+    {
+      "priority": 9,
+      "context_id": "CTX1",
+      "risk_tier": "LOW",
+      "risk_score": 2,
+      "source_group": "Kaplan-Meier 1958; Cox 1972",
+      "json_path": "./CTX1.json",
+      "markdown_path": "./CTX1.md",
+      "packet_hash": "sha256:4451f9eff9343c8ed3de8fadc56b2bdd582f2888a345febc0280d46b9ee0f16a"
+    },
+    {
+      "priority": 10,
+      "context_id": "CTX4",
+      "risk_tier": "LOW",
+      "risk_score": 2,
+      "source_group": "Deliberate Practice; Law of Practice; Self-Regulated Learning; Feedback Intervention Theory",
+      "json_path": "./CTX4.json",
+      "markdown_path": "./CTX4.md",
+      "packet_hash": "sha256:8316c4ef281a7ad4a59f7d3d76549c58b74b1a56724a2a7c12e2592a00b192e2"
+    },
+    {
+      "priority": 11,
+      "context_id": "CTX6",
+      "risk_tier": "LOW",
+      "risk_score": 2,
+      "source_group": "TAM; UTAUT; Diffusion of Innovations",
+      "json_path": "./CTX6.json",
+      "markdown_path": "./CTX6.md",
+      "packet_hash": "sha256:8327d94320874e3628d33e2585da1146f6a469794015fb76b1edb24f58d5e2e5"
+    },
+    {
+      "priority": 12,
+      "context_id": "CTX8",
+      "risk_tier": "LOW",
+      "risk_score": 2,
+      "source_group": "NIST AI RMF; Guidelines for Human-AI Interaction; NASA-TLX; Automation taxonomy",
+      "json_path": "./CTX8.json",
+      "markdown_path": "./CTX8.md",
+      "packet_hash": "sha256:da10b8b501204fcc98a220c29488963000b8070ce220e9d00b24bd0617807cc3"
+    }
+  ]
+}

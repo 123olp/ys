@@ -1,0 +1,94 @@
+{
+  "packet_kind": "fresh-reviewer-context-packet",
+  "generated_at": "2026-06-29T00:00:00.000Z",
+  "source_protocol_hash": "sha256:2615318e3e11f7b5d9e0cb7db273b7d0dd0dabf9618b34ad685df8357a9222de",
+  "source_template_hash": "sha256:7c013c288f192ab01951a5655d9b5b89d21556d2f72c8e6ae765d5017e2e5e31",
+  "context": {
+    "priority": 6,
+    "context_id": "CTX11",
+    "source_group": "Extended Mind; Engelbart; Cognition in the Wild",
+    "risk_tier": "MEDIUM",
+    "risk_score": 4,
+    "claims": [
+      "CL6"
+    ],
+    "references": [
+      {
+        "key": "burwell2017bciEthics",
+        "title": "Ethical aspects of brain computer interfaces: a scoping review",
+        "audit_status": "doi-verified",
+        "live_status": "PASS",
+        "verification_method": "crossref",
+        "used_for": "为脑机接口、神经技术、同意、身份和主体边界提供风险治理入口。"
+      },
+      {
+        "key": "clark1998extended",
+        "title": "The Extended Mind",
+        "audit_status": "crossref-verified",
+        "live_status": "PASS",
+        "verification_method": "crossref",
+        "used_for": "支撑工具、记忆外化和认知扩展进入主体系统。"
+      },
+      {
+        "key": "engelbart1962augmenting",
+        "title": "Augmenting Human Intellect: A Conceptual Framework",
+        "audit_status": "official-archive-registered",
+        "live_status": "PASS",
+        "verification_method": "url",
+        "used_for": "提供人、工具、概念和方法作为增强系统的经典框架。"
+      },
+      {
+        "key": "hutchins1995cognition",
+        "title": "Cognition in the Wild",
+        "audit_status": "author-page-verified",
+        "live_status": "PASS",
+        "verification_method": "url",
+        "used_for": "提供分布式认知和环境嵌入式问题求解框架。"
+      }
+    ],
+    "used_for": "支撑工具、记忆外化、分布式认知和认知增强进入主体系统的理论位置。",
+    "safe_use": "主体能力可以由人、工具、表征、环境和协作流程共同支撑。",
+    "forbidden_use": "哲学和系统框架不提供数值效应估计，也不能证明数字副本等同于本人。",
+    "local_verdict": "KEEP_WITH_BOUNDARY",
+    "dedicated_high_risk_review": false,
+    "reviewer_questions": [
+      "确认 forbidden use 没有在正文、图注、表格或摘要中被暗示。",
+      "确认正文只使用 safe use，不把来源升级为飞轮整体成立的证据。",
+      "该来源是否真实存在，且题名、作者、年份、场所、DOI 或 URL 与登记信息一致？",
+      "该来源是否支持 safe use 中登记的最小用途？",
+      "当前正文、图注或表格是否把该来源扩展成 forbidden use 中禁止的结论？",
+      "如果只支持部分用途，需要把哪一句改成更弱表述？"
+    ],
+    "required_action_before_submission": "Review after high-risk contexts; keep registered boundary language.",
+    "reviewer_prompt": "你是独立引用语境审稿人。不要使用项目作者的本地结论作为证据，必须重新打开来源并检查正文语境。\n\nContext: CTX11\nSource group: Extended Mind; Engelbart; Cognition in the Wild\nRisk: MEDIUM / score 4\nClaims: CL6\nUsed for: 支撑工具、记忆外化、分布式认知和认知增强进入主体系统的理论位置。\nSafe use: 主体能力可以由人、工具、表征、环境和协作流程共同支撑。\nForbidden use: 哲学和系统框架不提供数值效应估计，也不能证明数字副本等同于本人。\n\nReferences:\n- burwell2017bciEthics: Ethical aspects of brain computer interfaces: a scoping review (doi-verified; PASS)\n- clark1998extended: The Extended Mind (crossref-verified; PASS)\n- engelbart1962augmenting: Augmenting Human Intellect: A Conceptual Framework (official-archive-registered; PASS)\n- hutchins1995cognition: Cognition in the Wild (author-page-verified; PASS)\n\n请逐项输出：\n1. reference_existence: PASS / FAIL / UNCERTAIN，并给出核验 URL。\n2. safe_use_support: SUPPORTS / WEAK / WRONG，并说明来源文本如何支持或不支持。\n3. forbidden_use_violation: NONE / POSSIBLE / PRESENT。\n4. required_action: KEEP / SOFTEN / REWRITE / REMOVE / REPLACE_SOURCE。\n5. one_sentence_reason: 一句话说明 verdict。"
+  },
+  "result_stub": {
+    "context_id": "CTX11",
+    "priority": 6,
+    "risk_tier": "MEDIUM",
+    "source_group": "Extended Mind; Engelbart; Cognition in the Wild",
+    "claims": [
+      "CL6"
+    ],
+    "references": [
+      "burwell2017bciEthics",
+      "clark1998extended",
+      "engelbart1962augmenting",
+      "hutchins1995cognition"
+    ],
+    "source_protocol_hash": "sha256:2615318e3e11f7b5d9e0cb7db273b7d0dd0dabf9618b34ad685df8357a9222de",
+    "reviewer_identity_class": null,
+    "reviewed_at": null,
+    "source_urls": [],
+    "reference_existence": null,
+    "safe_use_support": null,
+    "forbidden_use_violation": null,
+    "required_action": null,
+    "resolution_status": "NOT_REVIEWED",
+    "reviewer_reason": null,
+    "manuscript_change_required": null,
+    "manuscript_change_summary": null,
+    "reviewer_trace_path": null
+  },
+  "packet_hash": "sha256:bbe21dd388f5df084be08f67f09be10bc24e1f3e0b61715344a0bde6ba272dbf"
+}

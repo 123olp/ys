@@ -68,6 +68,16 @@ ltx_section
 ltx_bibliography
 ```
 
+其中目录必须保留原生 slot 结构：
+
+```text
+<aside class="ltx_page_navbar">
+  <nav class="ltx_TOC">...</nav>
+</aside>
+```
+
+阅读器 JavaScript 会按 `.ltx_page_navbar > nav.ltx_TOC` 查找目录。只把正文 HTML 注入 layout、但绕过 `slot="toc"` 或删除 `.ltx_page_navbar > nav.ltx_TOC`，会导致目录按钮静默失效。`.ltx_abstract` 和 `.ltx_bibliography` 也属于语义契约，不是可随意删除的样式类。
+
 阅读器状态由这些属性表达：
 
 ```text
@@ -141,4 +151,14 @@ python3 tools/arxiv_html_paper_tool.py verify-assets --public-dir web/public
 python3 tools/arxiv_html_paper_tool.py verify-assets --public-dir web/public --json
 ```
 
-在项目级交付前，还应运行目标仓库自己的构建或检查命令。
+`verify-assets` 只能证明 CSS、JS、字体和图标齐全，不能证明阅读器控件可用。在项目级交付前，还应运行目标仓库自己的构建或检查命令；涉及页面生成、layout 改造、post-process 或静态预览时，必须追加浏览器级断言：
+
+```text
+.ltx_page_navbar > nav.ltx_TOC 存在
+.ltx_TOC 内至少有一个目录项
+.ltx_document 存在
+.ltx_abstract 存在
+.ltx_bibliography 存在
+点击目录按钮后 data-toc-display 在 none/block 间切换
+生成 HTML 不出现重复 class 属性
+```

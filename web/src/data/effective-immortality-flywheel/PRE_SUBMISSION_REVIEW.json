@@ -1,0 +1,74 @@
+{
+  "audit_skill": "pre-submission-review",
+  "version": "v0.1",
+  "verdict": "WARN",
+  "reason_code": "pre_submission_major_queue",
+  "generated_at": "2026-06-29T00:00:00.000Z",
+  "reviewer_scope": "local structural, style, version-drift, and artifact audit; no external fresh reviewer",
+  "summary": {
+    "text": "Local pre-submission audit found items that must remain visible before formal submission.",
+    "counts": {
+      "CRITICAL": 0,
+      "MAJOR": 1,
+      "MINOR": 0
+    }
+  },
+  "audited_input_hashes": {
+    "web/src/data/effective-immortality-evidence.json": "sha256:998866fea2f08fe27ad21ffa46f540543955ec3c49e1e2aaef78638e2db33d64",
+    "docs/explanations/effective-immortality-acceleration-flywheel.md": "sha256:d7b1462da25d4597af7044b1d588bce701d2fa3beaadf71f99ffea4d2c1b4239",
+    "web/src/pages/papers/effective-immortality-flywheel.astro": "sha256:947fb1f4711b2b55f8c57e0810b88599e07c69dd88bd796973d0dc7379624bc7",
+    "docs/source-notes/2026-06-28-effective-immortality-flywheel-evidence-matrix.md": "sha256:6117d964b046faac42c2959e296ebe0541822be13312fabdc5c715d4686f0bd2",
+    "docs/source-notes/2026-06-28-effective-immortality-flywheel-derivation-package.md": "sha256:74695a858507f580b99f9bf0c486dcc204072e95adc25051c207ce5b253eeba8",
+    "docs/source-notes/2026-06-28-effective-immortality-flywheel-automated-research-run.md": "sha256:531f7a5f9c18971d6c5968de6d6106d82ee7da3a317c36c389e0ab76cba73724",
+    "docs/source-notes/2026-06-28-effective-immortality-flywheel-citation-audit.md": "sha256:9763eb684c0782a6cd6b061fbebda0cf96684269b7bf130f49bec0de271d610c",
+    "docs/source-notes/2026-06-29-effective-immortality-flywheel-search-execution-register.md": "sha256:3774ea82917823fbc6dc7943d02c5a68b86417e4da3c102182914a834dc256cc",
+    "docs/source-notes/2026-06-29-effective-immortality-flywheel-candidate-source-verification.md": "sha256:c7ccecc5869282f6cbc678cc9e01ad18b37f97c0ce24e935a3f8962e026f95ac",
+    "web/src/data/effective-immortality-flywheel/CITATION_CONTEXT_REVIEW_PACKET.json": "sha256:3a6142646a2b84348befaada84839fc9dcde49f35e3e5fd4d440cba46c6d0040",
+    "web/src/data/effective-immortality-flywheel/CITATION_CONTEXT_RISK_TRIAGE.json": "sha256:d0f49f79ab743c3583879e16969f8b51e8e28e74ebac3c2b81d3015dc56217a5",
+    "web/src/data/effective-immortality-flywheel/HIGH_RISK_CITATION_CONTEXT_REVIEW.json": "sha256:842eb70ecbc8b9ea879eb33e562dbaa75de14644ec8aeb47ab269250d37a340d",
+    "web/src/data/effective-immortality-flywheel/CITATION_CONTEXT_LOCAL_REVIEW.json": "sha256:6cb998cbeee3478e8e69e15a2fb4d48fb8783d9951d4458cd069766ec995d28e",
+    "web/src/data/effective-immortality-flywheel/FRESH_REVIEWER_CITATION_AUDIT_PROTOCOL.json": "sha256:2615318e3e11f7b5d9e0cb7db273b7d0dd0dabf9618b34ad685df8357a9222de",
+    "web/src/data/effective-immortality-flywheel/fresh-reviewer-context-packets/HANDOFF_AUDIT.json": "sha256:67c3bd754935d23b7e956319318a04e9d088e291ab6a88c3a850c2573e58c61e",
+    "web/src/data/effective-immortality-flywheel/FRESH_REVIEWER_CITATION_AUDIT_RESULTS_AUDIT.json": "sha256:5dafc286132101fae702325b438551eded7871b7fc9fbc7ca03cc323443bc1e6",
+    "web/src/data/effective-immortality-flywheel/CITATION_AUDIT.json": "sha256:c862a0099c18c0d8ff7a3eb68f80b54a7f706d8044421e2115e345db6ceb0d57",
+    "web/src/data/effective-immortality-flywheel/REFERENCE_VERIFICATION.json": "sha256:a98496f727356c88f7c90f252514a927897aed12ca2fa811bad7051ce14414ca",
+    "web/src/data/effective-immortality-flywheel/CLAIM_CONTEXT_AUDIT.json": "sha256:02e2d1051a1d9ef58f640082d86ed206e8c6ea55ffb35454ee12a7d94a41a99a",
+    "web/src/data/effective-immortality-flywheel/COVERAGE_AUDIT.json": "sha256:782e246bb63198933300727e0afbe276a1977ba0d45202e83ea03a44f60bd8e0"
+  },
+  "details": {
+    "expected": {
+      "paperVersion": "v0.25",
+      "schemaVersion": "2.0",
+      "evidenceMatrixVersion": "v1.3",
+      "citationAuditVersion": "v1.1",
+      "preSubmissionReviewVersion": "v0.1",
+      "searchExecutionRegisterVersion": "v0.1",
+      "candidateSourceVerificationVersion": "v0.1",
+      "candidateSourceExtractionVersion": "v0.1"
+    },
+    "scan_results": [
+      {
+        "scan": "em dash / en dash",
+        "count": 0,
+        "status": "PASS"
+      },
+      {
+        "scan": "banned AI-tone terms",
+        "count": 0,
+        "status": "PASS"
+      }
+    ],
+    "findings": [
+      {
+        "severity": "MAJOR",
+        "dimension": "integrity-gate",
+        "code": "fresh_reviewer_citation_audit_pending",
+        "file": "web/src/data/effective-immortality-flywheel/CITATION_AUDIT.json",
+        "line": 1,
+        "quote": "metadata_registry_without_fresh_reviewer; high_risk_local_review=PASS_WITH_LIMITATIONS; all_context_local_review=LOCAL_REVIEW_COMPLETE_REQUIRES_FRESH_REVIEW; fresh_reviewer_protocol=READY_FOR_FRESH_REVIEWER; fresh_reviewer_handoff=PASS; fresh_reviewer_results=PENDING_EXTERNAL_REVIEW_RESULTS",
+        "suggested_fix": "Before formal submission, run the fresh reviewer protocol and record passing sentence-level citation-context results. The local context reviews, protocol, and result template narrow the queue but are not a substitute for reviewer verdicts."
+      }
+    ]
+  },
+  "submission_recommendation": "Needs final external citation-context review before formal submission; local structure can continue."
+}

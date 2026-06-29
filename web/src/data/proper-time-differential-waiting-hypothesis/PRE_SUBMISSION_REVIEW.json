@@ -1,0 +1,55 @@
+{
+  "audit": "proper-time-differential-pre-submission-review",
+  "verdict": "NEEDS_EXTERNAL_REVIEW_BEFORE_FORMAL_SUBMISSION",
+  "reasonCode": "local_gate_clean_external_review_required",
+  "generatedAt": "2026-06-29T14:06:41.333Z",
+  "summary": {
+    "text": "Local pre-submission review found no blocking mechanical issues. The paper remains a working paper and still requires independent external citation-context review before formal submission.",
+    "counts": {
+      "CRITICAL": 0,
+      "MAJOR": 0,
+      "MINOR": 0
+    }
+  },
+  "auditedInputHashes": {
+    "web/src/data/proper-time-differential-waiting-hypothesis.json": "sha256:9405df1e1f5a8eaf78adc6c26e41cceb931da28e0a6319848e0cbeeb17520352",
+    "web/src/pages/papers/proper-time-differential-waiting-hypothesis.astro": "sha256:9e6dd40c63937e705c93f325c9542173670d24c03a6bfd7c447fbdba1c48b2c1",
+    "web/src/data/proper-time-differential-waiting-hypothesis/REFERENCE_VERIFICATION.json": "sha256:8685ace32b9ce4b651edccfbc09884082fbdc4627d69efae5bed48b667324e29",
+    "web/src/data/proper-time-differential-waiting-hypothesis/CITATION_CONTEXT_REVIEW_PACKET.json": "sha256:8efc9614225012729ec432a729a2840cb26c715b77f5f1d74cb2597f8aeacb03",
+    "web/src/data/proper-time-differential-waiting-hypothesis/CITATION_CONTEXT_LOCAL_REVIEW.json": "sha256:bd130f6cd9fdeb949ddb64ed11b244d306e57698fb4b0d77e28e360fe4b70f3e"
+  },
+  "details": {
+    "artifacts": [
+      {
+        "label": "Reference Verification",
+        "file": "web/src/data/proper-time-differential-waiting-hypothesis/REFERENCE_VERIFICATION.json",
+        "expectedVerdicts": [
+          "PASS"
+        ],
+        "status": "PASS",
+        "verdict": "PASS"
+      },
+      {
+        "label": "Citation Context Review Packet",
+        "file": "web/src/data/proper-time-differential-waiting-hypothesis/CITATION_CONTEXT_REVIEW_PACKET.json",
+        "expectedVerdicts": [
+          "READY_FOR_EXTERNAL_REVIEW"
+        ],
+        "status": "PASS",
+        "verdict": "READY_FOR_EXTERNAL_REVIEW"
+      },
+      {
+        "label": "Citation Context Local Review",
+        "file": "web/src/data/proper-time-differential-waiting-hypothesis/CITATION_CONTEXT_LOCAL_REVIEW.json",
+        "expectedVerdicts": [
+          "LOCAL_REVIEW_COMPLETE_REQUIRES_FRESH_REVIEW"
+        ],
+        "status": "PASS",
+        "verdict": "LOCAL_REVIEW_COMPLETE_REQUIRES_FRESH_REVIEW"
+      }
+    ],
+    "preSubmissionRowCount": 5,
+    "findings": []
+  },
+  "submissionRecommendation": "Use as a Human Infra arXiv-style working paper. Do not submit as a formal physics, engineering-feasibility, or medical decision paper until external reviewer results, stronger formal derivation, and figure/model evidence are added."
+}

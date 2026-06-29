@@ -1,0 +1,728 @@
+---
+import PaperReaderLayout from "../../layouts/PaperReaderLayout.astro";
+import metricData from "../../data/metric-redshift-recursive-waiting.json";
+import citationContextPacket from "../../data/metric-redshift-recursive-waiting/CITATION_CONTEXT_REVIEW_PACKET.json";
+import citationContextLocalReview from "../../data/metric-redshift-recursive-waiting/CITATION_CONTEXT_LOCAL_REVIEW.json";
+import scenarioEvaluationAudit from "../../data/metric-redshift-recursive-waiting/SCENARIO_EVALUATION_AUDIT.json";
+
+const contributionRows = metricData.contributionRegister;
+const sourceByKey = new Map(metricData.sourceCards.map((source) => [source.key, source]));
+const claimById = new Map(metricData.claimRegister.map((claim) => [claim.id, claim]));
+const claimEvidenceRows = metricData.claimEvidenceMap.map((entry) => ({
+  ...entry,
+  claim: claimById.get(entry.claimId),
+  sourceLabels: entry.sourceKeys.map((key) => sourceByKey.get(key)?.title || key).join("；"),
+  variableLabels: entry.requiredVariables.join(", "),
+}));
+const claimMaturityRows = metricData.claimMaturityRegister.map((entry) => ({
+  ...entry,
+  claim: claimById.get(entry.claimId),
+}));
+const falsifierRows = metricData.falsifierRegister.map((entry) => ({
+  ...entry,
+  claim: claimById.get(entry.claimId),
+}));
+const variableRows = metricData.variableDictionary;
+const modelAssumptionRows = metricData.modelAssumptions;
+const propositionRows = metricData.propositionRegister;
+const figurePlanRows = metricData.figurePlan;
+const citationContextRows = metricData.citationContextRegister;
+const citationContextLocalReviewRows = citationContextLocalReview.details.contextReviews;
+const scenarioTemplateRows = metricData.scenarioCardTemplate.requiredCards;
+const scenarioEvaluationRows = metricData.scenarioEvaluationRegistry;
+const scenarioById = new Map(metricData.scenarioEvaluationRegistry.map((scenario) => [scenario.id, scenario]));
+const toyNcgSpec = metricData.toyNcgEvaluationSpec;
+const toyNcgInputRows = toyNcgSpec.inputContract;
+const toyNcgStepRows = toyNcgSpec.evaluationSteps;
+const toyNcgEvaluationRows = metricData.toyNcgEvaluationRegistry.map((entry) => ({
+  ...entry,
+  scenario: scenarioById.get(entry.scenarioId),
+  inputSummary: entry.normalizedInputs.map((input) => `${input.symbol}: ${input.status} - ${input.notes}`).join("；"),
+}));
+const scenarioEvaluationAuditRows = scenarioEvaluationAudit.evaluations;
+const ncgFormulaFigure = metricData.ncgFormulaDecompositionFigure;
+const ncgFormulaBlockRows = ncgFormulaFigure.blocks;
+const preSubmissionReviewRows = metricData.preSubmissionReviewRegister;
+const sourceLedgerRows = metricData.sourceCardLedger.map((entry) => ({
+  ...entry,
+  source: sourceByKey.get(entry.sourceKey),
+  claimLabels: entry.mappedClaims.map((claimId) => `${claimId}: ${claimById.get(claimId)?.claimType || "unknown"}`).join("；"),
+  variableLabels: entry.mappedVariables.join(", "),
+}));
+---
+<PaperReaderLayout
+  title="Metric-Redshift Recursive Waiting Hypothesis"
+  description="An arXiv-style Human Infra working paper proposing a metric-redshift proper-time differential waiting loop for future technology windows."
+  arxivId="human-infra/working-paper.0003"
+  category="gr-qc; cs.HC; q-bio.PE; stat.ME"
+>
+  <nav class="ltx_page_navbar" slot="toc">
+    <nav class="ltx_TOC">
+      <ol class="ltx_toclist">
+        <li class="ltx_tocentry ltx_tocentry_abstract"><a href="#abstract1" class="ltx_ref"><span class="ltx_text ltx_ref_title">Abstract.</span></a></li>
+        <li class="ltx_tocentry ltx_tocentry_section"><a href="#S1" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1 </span>研究问题</span></a></li>
+        <li class="ltx_tocentry ltx_tocentry_section"><a href="#S2" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2 </span>贡献</span></a></li>
+        <li class="ltx_tocentry ltx_tocentry_section"><a href="#S3" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3 </span>概念命名</span></a></li>
+        <li class="ltx_tocentry ltx_tocentry_section"><a href="#S4" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">4 </span>物理接口</span></a></li>
+        <li class="ltx_tocentry ltx_tocentry_section"><a href="#S5" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">5 </span>核心假设</span></a></li>
+        <li class="ltx_tocentry ltx_tocentry_section"><a href="#S6" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">6 </span>生命周期状态机</span></a></li>
+        <li class="ltx_tocentry ltx_tocentry_section"><a href="#S7" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">7 </span>最小模型</span></a></li>
+        <li class="ltx_tocentry ltx_tocentry_section"><a href="#S8" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">8 </span>递归等待飞轮</span></a></li>
+        <li class="ltx_tocentry ltx_tocentry_section"><a href="#S9" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">9 </span>文献地图</span></a></li>
+        <li class="ltx_tocentry ltx_tocentry_section"><a href="#S10" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">10 </span>可达性阶梯</span></a></li>
+        <li class="ltx_tocentry ltx_tocentry_section"><a href="#S11" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">11 </span>失败条件</span></a></li>
+        <li class="ltx_tocentry ltx_tocentry_section"><a href="#S12" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">12 </span>研究协议</span></a></li>
+        <li class="ltx_tocentry ltx_tocentry_section"><a href="#S13" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">13 </span>Claim-Evidence Matrix</span></a></li>
+        <li class="ltx_tocentry ltx_tocentry_section"><a href="#S14" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">14 </span>主张成熟度与反证队列</span></a></li>
+        <li class="ltx_tocentry ltx_tocentry_section"><a href="#S15" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">15 </span>变量契约</span></a></li>
+        <li class="ltx_tocentry ltx_tocentry_section"><a href="#S16" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">16 </span>模型假设与命题注册表</span></a></li>
+        <li class="ltx_tocentry ltx_tocentry_section"><a href="#S17" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">17 </span>图表计划与引用预审</span></a></li>
+        <li class="ltx_tocentry ltx_tocentry_section"><a href="#S18" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">18 </span>提交前审稿风险</span></a></li>
+        <li class="ltx_tocentry ltx_tocentry_section"><a href="#S19" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">19 </span>非目标与治理边界</span></a></li>
+        <li class="ltx_tocentry ltx_tocentry_bibliography"><a href="#references" class="ltx_ref"><span class="ltx_text ltx_ref_title">References</span></a></li>
+      </ol>
+    </nav>
+  </nav>
+
+  <article class="ltx_document ltx_authors_1line ltx_leqno">
+    <h1 class="ltx_title ltx_title_document">度规红移递归等待假设</h1>
+    <div class="ltx_authors">
+      <span class="ltx_creator ltx_role_author">
+        <span class="ltx_personname">tradecatlabs</span>
+      </span>
+    </div>
+    <div class="ltx_dates">Working paper v0.2 / 2026-06-29</div>
+
+    <div id="abstract1" class="ltx_abstract">
+      <h6 class="ltx_title ltx_title_abstract">Abstract.</h6>
+      <p class="ltx_p">本文提出“度规红移递归等待假设”：如果未来文明能够制造、捕获或安全利用一种可控强红移时空区域，使主体在其中经历的固有时显著少于外部参考时间，并且同时满足进入、停留、生命支持、通信、退出、主体连续性和治理约束，那么主体可以用较低生命时间成本等待外部技术系统升级，再退出等待区采用新技术，随后进入下一轮等待。</p>
+      <p class="ltx_p">本文的对象不是黑洞本身，而是由时空度规导致的固有时差分如何进入 Human Infra 的主体持续性模型。文章把“黑洞等待室”重写为一个可审查的研究假设：它不声称人工黑洞、类黑洞结构或强引力工程已经可行，也不把时间膨胀等同于永生工程；它只定义术语、物理接口、状态机、收益函数、递归飞轮、文献地图、失败条件和研究协议，使后续资料卡片、模型和网页可视化能够围绕同一对象积累。</p>
+    </div>
+    <div class="ltx_keywords">
+      <h6 class="ltx_title ltx_title_keywords">关键词： </h6>度规红移；固有时；未来等待；黑洞等待室；主体持续性；递归升级；Human Infra
+    </div>
+    <div class="ltx_classification">
+      <h6 class="ltx_title ltx_title_classification">研究分类： </h6>gr-qc; cs.HC; q-bio.PE; stat.ME
+    </div>
+
+    <section id="S1" class="ltx_section">
+      <h2 class="ltx_title ltx_title_section"><span class="ltx_tag ltx_tag_section">1. </span>研究问题</h2>
+      <p class="ltx_p">Human Infra 的核心对象是主体持续性：主体能否继续存在、行动、学习、修复、选择并进入未来。传统延寿路径直接作用于身体状态和死亡风险；Future Waiting 路径则尝试改变“等待未来”所消耗的主体时间。本文讨论其中最强假设版本：通过可控强红移时空区域制造外部参考时间和主体固有时之间的倍率差。</p>
+      <p class="ltx_p">研究问题可以压缩为：如果主体能够在一个可控红移等待区内经历较少固有时，而外部文明经历较多参考时间，那么主体能否通过“等待外部升级 -> 退出采用技术 -> 再进入等待”的循环，形成主体持续性的递归增强？</p>
+      <figure id="F1" class="ltx_figure">
+        <figcaption><span class="ltx_tag ltx_tag_figure">Figure 1. </span>度规红移递归等待的主链路。</figcaption>
+        <div class="ltx_listing">
+          <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">可控强红移等待区</span></span>
+          <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">  -&gt; 主体固有时消耗降低</span></span>
+          <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">  -&gt; 外部技术时间继续推进</span></span>
+          <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">  -&gt; 主体退出等待区并采用升级技术</span></span>
+          <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">  -&gt; 下一轮等待的安全性、倍率或修复能力提高</span></span>
+        </div>
+      </figure>
+    </section>
+
+    <section id="S2" class="ltx_section">
+      <h2 class="ltx_title ltx_title_section"><span class="ltx_tag ltx_tag_section">2. </span>贡献</h2>
+      <p class="ltx_p">本文是一篇假设建模工作论文，而不是工程可行性报告。它的贡献是把传播性想象压缩成可研究对象，并把物理、生命支持、技术采用和主体连续性放进同一个接口。</p>
+      <div class="ltx_table">
+        <table>
+          <thead><tr><th>编号</th><th>贡献</th><th>后续用途</th></tr></thead>
+          <tbody>
+            {contributionRows.map((row) => (
+              <tr><td>{row.id}</td><td>{row.claim}</td><td>{row.artifact}</td></tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="S3" class="ltx_section">
+      <h2 class="ltx_title ltx_title_section"><span class="ltx_tag ltx_tag_section">3. </span>概念命名</h2>
+      <p class="ltx_p">“黑洞等待室”适合作为传播名，但不是正式物理概念。黑洞只是强红移区域的一个极端例子。更严谨的理论对象应从时空度规、红移因子和固有时差分出发。</p>
+      <div class="ltx_table">
+        <table>
+          <thead><tr><th>层级</th><th>命名</th><th>用途</th></tr></thead>
+          <tbody>
+            <tr><td>理论假设</td><td>度规红移递归等待假设</td><td>本文主假设，描述等待与升级循环。</td></tr>
+            <tr><td>路径机制</td><td>度规红移固有时差分路径</td><td>描述主体固有时少于外部参考时间的物理机制。</td></tr>
+            <tr><td>等待区对象</td><td>可控红移等待区</td><td>黑洞、类黑洞或其他等效强红移结构的抽象容器。</td></tr>
+            <tr><td>核心指标</td><td>未来等待倍率</td><td>量化外部参考时间与主体固有时之间的比值。</td></tr>
+            <tr><td>传播名</td><td>黑洞等待室</td><td>用于公众解释，不作为严格物理术语。</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="ltx_p">“引力势差”可以作为弱场近似和通俗解释入口；但在黑洞或类黑洞强场环境下，正式论文应使用“度规红移”而不是只使用牛顿式重力势。</p>
+    </section>
+
+    <section id="S4" class="ltx_section">
+      <h2 class="ltx_title ltx_title_section"><span class="ltx_tag ltx_tag_section">4. </span>物理接口</h2>
+      <p class="ltx_p">本文只需要一个最小广义相对论接口：主体沿世界线积累的固有时由时空度规决定；等待价值来自主体固有时增量和外部参考时间增量之间的差分，而不是来自“暂停生命”。</p>
+      <div class="ltx_listing">
+        <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">d_tau = sqrt(-g_mu_nu dx_mu dx_nu) / c</span></span>
+        <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">K = Delta_t_external / Delta_tau_subject</span></span>
+      </div>
+      <p class="ltx_p">在静态、可比较的参考设置中，可把红移因子粗略写成外部观察者坐标时间和等待者固有时之间的比例。对 Schwarzschild 外部区域的静止壳层，说明性表达为：</p>
+      <div class="ltx_listing">
+        <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">d_tau / d_t = sqrt(1 - r_s / r),  r &gt; r_s</span></span>
+        <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">K_static = 1 / sqrt(1 - r_s / r)</span></span>
+      </div>
+      <p class="ltx_p">这个表达只用于说明“越接近强红移区域，静止观察者固有时相对远方时间越慢”的方向性。它不等于可行轨道方案，因为接近事件视界需要处理巨大加速度、潮汐力、辐射、稳定性、能量、通信和退出问题。本文后续模型因此把 K 和工程可用性分开，不允许用大倍率直接替代可行性。</p>
+      <div class="ltx_table">
+        <table>
+          <thead><tr><th>概念</th><th>本文含义</th><th>不可偷换为</th></tr></thead>
+          <tbody>
+            <tr><td>固有时</td><td>主体沿自身世界线实际经历的时间。</td><td>远方坐标时、日历年或心理感觉的任意重命名。</td></tr>
+            <tr><td>外部参考时间</td><td>外部文明、技术系统或回收系统经历的比较时间。</td><td>绝对时间或所有观察者共享时间。</td></tr>
+            <tr><td>红移因子</td><td>由度规结构导致的时钟速率差。</td><td>普通等待、冬眠、冷冻或代谢降低。</td></tr>
+            <tr><td>等待倍率 K</td><td>外部时间除以主体固有时。</td><td>安全性、寿命收益或永生概率。</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="S5" class="ltx_section">
+      <h2 class="ltx_title ltx_title_section"><span class="ltx_tag ltx_tag_section">5. </span>核心假设</h2>
+      <div class="ltx_theorem ltx_theorem_Hypothesis">
+        <h6 class="ltx_title ltx_runin ltx_title_theorem"><span class="ltx_tag ltx_tag_theorem"><span class="ltx_text ltx_font_bold">假设 1</span></span><span class="ltx_text ltx_font_bold">.</span></h6>
+        <div class="ltx_para"><p class="ltx_p">若存在一个可控红移等待区，使主体在等待区内经历的固有时增量 Delta_tau 小于外部参考时间增量 Delta_t，且等待区满足可进入、可停留、可通信、可退出、可维生和可治理条件，则主体可以用较低生命时间成本等待外部技术窗口成熟。</p></div>
+      </div>
+      <div class="ltx_theorem ltx_theorem_Hypothesis">
+        <h6 class="ltx_title ltx_runin ltx_title_theorem"><span class="ltx_tag ltx_tag_theorem"><span class="ltx_text ltx_font_bold">假设 2</span></span><span class="ltx_text ltx_font_bold">.</span></h6>
+        <div class="ltx_para"><p class="ltx_p">若每次退出等待区后可采用的新技术能提高主体健康、修复、认知、能源、材料、导航、屏蔽、通信或风险治理能力，则下一轮等待的净收益、可等待跨度或安全边界可能提高，形成递归等待循环。</p></div>
+      </div>
+      <div class="ltx_theorem ltx_theorem_Hypothesis">
+        <h6 class="ltx_title ltx_runin ltx_title_theorem"><span class="ltx_tag ltx_tag_theorem"><span class="ltx_text ltx_font_bold">假设 3</span></span><span class="ltx_text ltx_font_bold">.</span></h6>
+        <div class="ltx_para"><p class="ltx_p">若等待区的尾部风险、退出失败概率、主体连续性损失或机会成本超过时间倍率收益，则度规红移等待路径在 Human Infra 模型中应被判定为负收益或不可采用。</p></div>
+      </div>
+      <p class="ltx_p">这三个假设必须同时审查。只有时间倍率而没有退出、修复和采用新技术的能力，该模型只是相对论等待；只有技术升级而没有固有时差分，该模型退化为普通长寿技术采用路径；只有高倍率但高尾部风险，该模型是风险放大器。</p>
+    </section>
+
+    <section id="S6" class="ltx_section">
+      <h2 class="ltx_title ltx_title_section"><span class="ltx_tag ltx_tag_section">6. </span>生命周期状态机</h2>
+      <p class="ltx_p">可控红移等待区不能只用“进去等待”描述。它至少包含七个状态，每个状态都有独立失败模式。</p>
+      <div class="ltx_table">
+        <table>
+          <thead><tr><th>状态</th><th>核心问题</th><th>失败信号</th></tr></thead>
+          <tbody>
+            <tr><td>S0 外部准备</td><td>主体是否有足够健康、资源、工具和协议进入等待。</td><td>当前可修复路径被机会成本吞掉。</td></tr>
+            <tr><td>S1 转移到等待区</td><td>旅行、加速度、辐射、补给和导航是否可控。</td><td>到达成本超过等待收益。</td></tr>
+            <tr><td>S2 进入红移轨道或区域</td><td>能否进入不跨越事件视界且可维持的区域。</td><td>不可逆坠入或轨道不稳定。</td></tr>
+            <tr><td>S3 等待与维生</td><td>生命支持、屏蔽、能源、认知状态和系统冗余是否保持。</td><td>主体仍在，但主体性、记忆或行动能力损坏。</td></tr>
+            <tr><td>S4 外部窗口判断</td><td>能否接收或推断外部技术成熟信号。</td><td>通信红移、延迟、噪声或外部治理失灵。</td></tr>
+            <tr><td>S5 退出与回收</td><td>主体能否离开等待区或被外部系统回收。</td><td>等待可进不可出。</td></tr>
+            <tr><td>S6 技术采用与再进入</td><td>新技术能否真实改善下一轮等待条件。</td><td>升级不作用于安全、倍率、修复或治理。</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="S7" class="ltx_section">
+      <h2 class="ltx_title ltx_title_section"><span class="ltx_tag ltx_tag_section">7. </span>最小模型</h2>
+      <p class="ltx_p">核心指标是未来等待倍率：</p>
+      <div class="ltx_listing">
+        <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">K_i = Delta_t_external_i / Delta_tau_subject_i</span></span>
+      </div>
+      <p class="ltx_p">K 大于 1 表示主体用更少自身时间等待更长外部时间；K 越大，理论上越适合等待远期技术窗口。但 K 本身不能代表可用性，因为工程风险、主体连续性损失和机会成本可能吞掉所有收益。</p>
+      <p class="ltx_p">因此，本文使用净持续性收益而不是单纯倍率：</p>
+      <div class="ltx_listing">
+        <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">NCG_i = K_i * U_i * P_window_i * P_exit_i * P_adopt_i * P_continuity_i</span></span>
+        <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">        - R_life_i - R_engineering_i - R_tail_i - C_opportunity_i</span></span>
+      </div>
+      <div class="ltx_table">
+        <table>
+          <thead><tr><th>符号</th><th>含义</th><th>说明</th></tr></thead>
+          <tbody>
+            <tr><td>K_i</td><td>第 i 轮等待倍率</td><td>外部参考时间除以主体固有时。</td></tr>
+            <tr><td>U_i</td><td>外部技术升级收益</td><td>医学、AI、材料、能源、生命支持和治理的综合收益。</td></tr>
+            <tr><td>P_window_i</td><td>技术窗口出现概率</td><td>外部时间是否真的转化为可用升级。</td></tr>
+            <tr><td>P_exit_i</td><td>退出概率</td><td>主体能否离开等待区或被回收。</td></tr>
+            <tr><td>P_adopt_i</td><td>采用概率</td><td>主体退出后是否能理解、获得、承受并整合新技术。</td></tr>
+            <tr><td>P_continuity_i</td><td>主体连续性保持概率</td><td>身体、认知、记忆、身份和行动能力是否保持。</td></tr>
+            <tr><td>R_life_i</td><td>生命支持风险</td><td>辐射、潮汐、能源、维生、衰退和事故。</td></tr>
+            <tr><td>R_engineering_i</td><td>工程风险</td><td>轨道、导航、结构、通信、制造和维护失败。</td></tr>
+            <tr><td>R_tail_i</td><td>尾部风险</td><td>不可逆坠入、灾难性失控、外部文明崩溃或治理失败。</td></tr>
+            <tr><td>C_opportunity_i</td><td>机会成本</td><td>进入等待区导致错过当前可行动、可治理、可修复的路径。</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <figure id="F4" class="ltx_figure">
+        <figcaption><span class="ltx_tag ltx_tag_figure">Figure 4. </span>NCG Formula Decomposition. {ncgFormulaFigure.caption}</figcaption>
+        <p class="ltx_p">{ncgFormulaFigure.purpose}</p>
+        <div class="ltx_listing">
+          <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">{ncgFormulaFigure.formula}</span></span>
+        </div>
+        <div class="ltx_table">
+          <table>
+            <thead><tr><th>分解块</th><th>运算</th><th>变量</th><th>模型角色</th><th>解释</th></tr></thead>
+            <tbody>
+              {ncgFormulaBlockRows.map((row) => (
+                <tr>
+                  <td>{row.id}<br />{row.group}</td>
+                  <td>{row.operation}</td>
+                  <td>{row.variables.join(", ")}</td>
+                  <td>{row.role}</td>
+                  <td>{row.interpretation}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p class="ltx_p">设计审计：{ncgFormulaFigure.designAudit.paradigm}；{ncgFormulaFigure.designAudit.qualityGate}。</p>
+      </figure>
+      <p class="ltx_p">最小判定规则是：只有当 NCG_i 在保守估计下仍为正，且任何单点失败不会直接造成不可逆主体终止时，等待轮次才有进入下一阶段研究的资格。</p>
+    </section>
+
+    <section id="S8" class="ltx_section">
+      <h2 class="ltx_title ltx_title_section"><span class="ltx_tag ltx_tag_section">8. </span>递归等待飞轮</h2>
+      <p class="ltx_p">递归等待的关键不是一次性等待，而是每一轮外部技术升级都能改变下一轮等待条件。换言之，等待区不是终点，而是把主体送到下一组更高能力工具前的时间桥。</p>
+      <div class="ltx_listing">
+        <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">Wait_i: 进入可控红移等待区</span></span>
+        <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">  -&gt; 外部技术系统经历 Delta_t_i</span></span>
+        <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">  -&gt; 主体只经历 Delta_tau_i</span></span>
+        <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">Exit_i: 退出并接入外部技术窗口</span></span>
+        <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">  -&gt; Upgrade_i: 医学、AI、材料、能源、风险治理升级</span></span>
+        <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">  -&gt; Wait_(i+1): 更高安全性或更高倍率的下一轮等待</span></span>
+      </div>
+      <p class="ltx_p">该链路与 Human Infra 的有效永生飞轮相连：主体持续性越强，越有能力等待、采用和整合技术；技术越强，越可能提高下一轮主体持续性。度规红移路径的特殊性在于，它不只增加寿命或能力，而是改变主体穿越外部技术时间的成本函数。</p>
+      <div class="ltx_table">
+        <table>
+          <thead><tr><th>升级方向</th><th>对下一轮等待的潜在作用</th><th>反向风险</th></tr></thead>
+          <tbody>
+            <tr><td>医学与修复</td><td>提高等待前后恢复能力和健康状态。</td><td>技术不可及或副作用抵消收益。</td></tr>
+            <tr><td>AI 与自动化</td><td>改进导航、监测、异常处置和任务规划。</td><td>系统失控、幻觉、过度依赖或安全对齐失败。</td></tr>
+            <tr><td>材料与屏蔽</td><td>降低辐射、潮汐和结构风险。</td><td>极端环境下失效模式未知。</td></tr>
+            <tr><td>能源与维生</td><td>延长等待区停留时间。</td><td>补给链断裂或闭环维生失败。</td></tr>
+            <tr><td>通信与回收</td><td>提高外部窗口判断和退出成功率。</td><td>红移、距离和噪声导致信息不可达。</td></tr>
+            <tr><td>治理与协议</td><td>降低尾部风险和误用风险。</td><td>外部制度无法覆盖极端工程对象。</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="S9" class="ltx_section">
+      <h2 class="ltx_title ltx_title_section"><span class="ltx_tag ltx_tag_section">9. </span>文献地图</h2>
+      <p class="ltx_p">本文把文献分成五层：已验证相对论效应、强引力时间差分、黑洞未来观察限制、Malament-Hogarth 极限时空、Human Infra 主体连续性。每一层支持的只是模型中的某个部件，不能相互替代。</p>
+      <div class="ltx_table">
+        <table>
+          <thead><tr><th>层级</th><th>代表来源</th><th>支持内容</th><th>边界</th></tr></thead>
+          <tbody>
+            <tr><td>E1 实验基础</td><td>Pound-Rebka；Gravity Probe A；GPS 相对论修正</td><td>引力红移和时钟速率差是可观测物理效应。</td><td>只证明效应存在，不证明等待室可建。</td></tr>
+            <tr><td>E2 强场直觉</td><td>NASA 黑洞科普与可视化</td><td>黑洞附近存在极端时间膨胀、红移和事件视界风险。</td><td>科普材料不能替代轨道和工程论文。</td></tr>
+            <tr><td>E3 未来观察限制</td><td>Grib and Pavlov；Pavlov</td><td>普通黑洞自由落体不能简单推出有限固有时观察外部无限未来。</td><td>Kerr 场景和特殊轨道条件极端，不能泛化。</td></tr>
+            <tr><td>E4 极限时空</td><td>Etesi and Nemeti；Welch；Earman and Norton</td><td>Malament-Hogarth 时空提供相对论超计算和有限固有时接收远程结果的理论边界。</td><td>不是普通黑洞等待室的工程证明。</td></tr>
+            <tr><td>E5 主体持续性</td><td>Human Infra 有效永生飞轮</td><td>把等待收益放回主体存在、行动、学习、恢复和未来选择权。</td><td>规范和模型框架不提供物理可行性。</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="ltx_p">文献地图的作用是防止证据错位：实验红移不能证明黑洞返航，黑洞直觉不能证明递归收益，Malament-Hogarth 讨论不能直接变成人体等待方案，Human Infra 价值框架不能替代广义相对论和工程约束。</p>
+      <div class="ltx_table">
+        <table>
+          <thead><tr><th>Source Card Ledger</th><th>角色</th><th>映射</th><th>允许用途</th><th>禁止用途 / 反证</th><th>下一步</th></tr></thead>
+          <tbody>
+            {sourceLedgerRows.map((row) => (
+              <tr>
+                <td>{row.sourceKey}<br />{row.source?.title}</td>
+                <td>{row.sourceRole}<br />{row.mechanismUse}</td>
+                <td>{row.claimLabels}<br />变量：{row.variableLabels}</td>
+                <td>{row.allowedUse}</td>
+                <td>{row.forbiddenUse}<br />反证：{row.falsifier}</td>
+                <td>{row.nextAction}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="S10" class="ltx_section">
+      <h2 class="ltx_title ltx_title_section"><span class="ltx_tag ltx_tag_section">10. </span>可达性阶梯</h2>
+      <p class="ltx_p">本文把“制造黑洞或类黑洞等待室”拆成阶梯，而不是直接当成单一可行工程。</p>
+      <div class="ltx_table">
+        <table>
+          <thead><tr><th>等级</th><th>对象</th><th>研究状态</th><th>进入本文的位置</th></tr></thead>
+          <tbody>
+            <tr><td>L0</td><td>已验证时间膨胀</td><td>原子钟、卫星、粒子寿命等相对论效应。</td><td>物理基础，不提供等待室工程能力。</td></tr>
+            <tr><td>L1</td><td>自然强引力源</td><td>黑洞、中子星等极端天体。</td><td>证明红移区域存在，但可达性和生存性极弱。</td></tr>
+            <tr><td>L2</td><td>近视界轨道等待</td><td>理论轨道和强场运动分析。</td><td>黑洞等待室的直接思想实验版本。</td></tr>
+            <tr><td>L3</td><td>类黑洞等效结构</td><td>假设存在稳定、可控、可进入的强红移区域。</td><td>本文的抽象等待区，不声明现实可制造。</td></tr>
+            <tr><td>L4</td><td>人工度规工程</td><td>高度远期设想。</td><td>只作为命名空间，不作为当前技术路线。</td></tr>
+            <tr><td>L5</td><td>递归等待基础设施</td><td>需要红移区、生命支持、通信、回收和治理闭环。</td><td>本文最终假设对象。</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="S11" class="ltx_section">
+      <h2 class="ltx_title ltx_title_section"><span class="ltx_tag ltx_tag_section">11. </span>失败条件</h2>
+      <p class="ltx_p">该假设要保留明确失败条件。任何一个关键条件失败，都足以把它降级为纯叙事。</p>
+      <div class="ltx_table">
+        <table>
+          <thead><tr><th>条件</th><th>需要成立</th><th>反证或降级信号</th></tr></thead>
+          <tbody>
+            <tr><td>倍率有效</td><td>K 足够大，能显著压缩主体等待成本。</td><td>K 太低，工程成本超过等待收益。</td></tr>
+            <tr><td>可进入</td><td>主体可安全到达等待区。</td><td>旅行时间、加速度、辐射或补给成本不可接受。</td></tr>
+            <tr><td>可停留</td><td>等待区内能维持生命、认知和系统冗余。</td><td>潮汐力、辐射、能源或闭环维生无法控制。</td></tr>
+            <tr><td>可退出</td><td>主体能离开等待区或被外部回收。</td><td>不可逆跨越事件视界，或轨道不可恢复。</td></tr>
+            <tr><td>可通信</td><td>主体或系统能判断外部技术窗口是否成熟。</td><td>信号红移、延迟、噪声或方向性使信息不可用。</td></tr>
+            <tr><td>连续性保持</td><td>身体、记忆、身份、行动能力在等待中保持。</td><td>等待保住了身体位置，却破坏主体连续性。</td></tr>
+            <tr><td>递归收益</td><td>退出后的升级能提高下一轮等待条件。</td><td>技术升级不作用于等待风险或主体维护。</td></tr>
+            <tr><td>净收益为正</td><td>风险、机会成本和治理成本低于持续性收益。</td><td>路径带来更高死亡风险、失控风险或不可逆损失。</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="S12" class="ltx_section">
+      <h2 class="ltx_title ltx_title_section"><span class="ltx_tag ltx_tag_section">12. </span>研究协议</h2>
+      <p class="ltx_p">下一步不应直接写“制造黑洞”，而应把假设拆成可查证的 Source Cards、变量表和模型接口。每个候选场景至少需要回答以下问题。</p>
+      <div class="ltx_table">
+        <table>
+          <thead><tr><th>协议项</th><th>必须记录</th><th>用途</th></tr></thead>
+          <tbody>
+            <tr><td>Metric Card</td><td>度规、参考观察者、世界线、红移因子、K 的计算条件。</td><td>防止把不同时间概念混用。</td></tr>
+            <tr><td>Orbit / Region Card</td><td>等待区位置、稳定性、潮汐、辐射、能量和退出路径。</td><td>把大倍率和生存性分开。</td></tr>
+            <tr><td>Continuity Card</td><td>身体、认知、记忆、身份、行动能力和恢复状态。</td><td>确保“活着”等于主体仍可行动。</td></tr>
+            <tr><td>Window Card</td><td>等待的外部技术窗口、成熟信号、采用条件和失败替代。</td><td>避免无目标等待。</td></tr>
+            <tr><td>Risk Card</td><td>生命支持风险、工程风险、尾部风险、治理风险和机会成本。</td><td>计算 NCG，不只展示 K。</td></tr>
+            <tr><td>Exit Card</td><td>退出、回收、通信、外部接应和再进入协议。</td><td>阻止可进不可出的叙事。</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="ltx_p">研究路线按四步推进：第一，整理相对论和强场文献的 Source Cards；第二，建立等待倍率和风险扣减的玩具模型；第三，将不同等待路径放入同一 Human Infra 持续性函数；第四，只在有足够来源和边界说明后，制作交互式可视化页面。</p>
+      <p class="ltx_p">为了避免“场景名称”被误当成“可行性证明”，本文把所有候选路径先放进 Scenario Card Template。只有六类卡片都存在，且没有中止条件触发时，才允许进入 NCG toy evaluation。</p>
+      <div class="ltx_table">
+        <table>
+          <thead><tr><th>场景卡片</th><th>必填字段</th><th>缺失即拒绝</th></tr></thead>
+          <tbody>
+            {scenarioTemplateRows.map((row) => (
+              <tr>
+                <td>{row.card}</td>
+                <td>{row.requiredFields.join(", ")}</td>
+                <td>{row.rejectIfMissing.join(", ")}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <div class="ltx_table">
+        <table>
+          <thead><tr><th>候选场景</th><th>类型 / 状态</th><th>用途</th><th>卡片状态</th><th>变量与 NCG 状态</th><th>中止门槛 / 下一步</th></tr></thead>
+          <tbody>
+            {scenarioEvaluationRows.map((row) => (
+              <tr>
+                <td>{row.id}<br />{row.name}</td>
+                <td>{row.scenarioType}<br />{row.status}</td>
+                <td>{row.purpose}<br />关联主张：{row.linkedClaims.join(", ")}</td>
+                <td>{Object.entries(row.cardStatus).map(([card, status]) => `${card}: ${status}`).join("；")}</td>
+                <td>{row.keyVariables.join(", ")}<br />NCG: {row.ncgStatus}</td>
+                <td>{row.stopGate}<br />下一步：{row.nextEvidenceNeeded}<br />非声明：{row.nonClaim}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <h3 class="ltx_title ltx_title_subsection">Toy NCG Evaluation Protocol</h3>
+      <p class="ltx_p">Toy NCG Evaluation Protocol 把“能不能算”放在“算出什么”之前。它的目的不是输出寿命预测，而是把每个等待场景按同一套输入、归一化、概率门、风险扣减和中止条件审查；只有通过该协议的场景，后续才有资格进入可视化或更严格的定量模型。</p>
+      <p class="ltx_p">协议版本：{toyNcgSpec.protocolVersion}。{toyNcgSpec.purpose} 归一化规则：{toyNcgSpec.normalizationRule}</p>
+      <div class="ltx_listing">
+        <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">{toyNcgSpec.formula}</span></span>
+      </div>
+      <div class="ltx_table">
+        <table>
+          <thead><tr><th>输入项</th><th>来源卡片</th><th>变量</th><th>要求状态</th><th>缺失处理</th></tr></thead>
+          <tbody>
+            {toyNcgInputRows.map((row) => (
+              <tr>
+                <td>{row.field}</td>
+                <td>{row.sourceCard}</td>
+                <td>{row.variable}</td>
+                <td>{row.requiredStatus}</td>
+                <td>{row.rejectIfMissing ? "缺失即拒绝" : "可标记缺失"}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <div class="ltx_table">
+        <table>
+          <thead><tr><th>步骤</th><th>操作</th><th>原因</th><th>失败条件</th></tr></thead>
+          <tbody>
+            {toyNcgStepRows.map((row) => (
+              <tr>
+                <td>{row.step}</td>
+                <td>{row.operation}</td>
+                <td>{row.reason}</td>
+                <td>{row.failureIf}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p class="ltx_p">解释规则：{toyNcgSpec.interpretationRule} 禁止用法：{toyNcgSpec.forbiddenUse} 晋升门槛：{toyNcgSpec.promotionGate}</p>
+      <h3 class="ltx_title ltx_title_subsection">Toy NCG Evaluation Registry</h3>
+      <p class="ltx_p">Toy NCG Evaluation Registry 记录当前四个候选场景的研究分类。这里的输出只有 calibration-only、blocked、negative-under-current-evidence 或 cannot-evaluate 等方向性状态；它们用于组织下一步资料补全，不构成现实可行性结论。</p>
+      <div class="ltx_table">
+        <table>
+          <thead><tr><th>评估</th><th>场景</th><th>输入状态</th><th>NCG 方向</th><th>主导阻塞项</th><th>决定 / 下一步</th></tr></thead>
+          <tbody>
+            {toyNcgEvaluationRows.map((row) => (
+              <tr>
+                <td>{row.id}<br />{row.evaluationStatus}</td>
+                <td>{row.scenarioId}<br />{row.scenario?.name || "unknown scenario"}</td>
+                <td>{row.inputSummary}</td>
+                <td>{row.expectedNcgDirection}</td>
+                <td>{row.dominantBlocker}</td>
+                <td>{row.decision}<br />下一步：{row.requiredNextWork}<br />关联主张：{row.linkedClaims.join(", ")}<br />非声明：{row.nonClaim}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <h3 class="ltx_title ltx_title_subsection">Scenario Evaluation Audit</h3>
+      <p class="ltx_p">Scenario Evaluation Audit 由 <span class="ltx_text ltx_font_typewriter">npm run evaluate:metric-redshift</span> 生成，作用是把 toy NCG 注册表转成可复现账本。当前 verdict 为 <span class="ltx_text ltx_font_typewriter">{scenarioEvaluationAudit.verdict}</span>，quantitative-ready evaluations 为 <span class="ltx_text ltx_font_typewriter">{scenarioEvaluationAudit.summary.quantitativeReady}</span>。这意味着页面已经能复现分类逻辑，但仍没有任何场景可以进入真实定量 NCG。</p>
+      <div class="ltx_table">
+        <table>
+          <thead><tr><th>评估</th><th>场景</th><th>分类</th><th>NCG 方向</th><th>可进入定量 NCG</th><th>主导阻塞项</th></tr></thead>
+          <tbody>
+            {scenarioEvaluationAuditRows.map((row) => (
+              <tr>
+                <td>{row.id}</td>
+                <td>{row.scenarioId}<br />{row.scenarioName}</td>
+                <td>{row.evaluationClass}<br />场景状态：{row.scenarioStatus}</td>
+                <td>{row.expectedNcgDirection}</td>
+                <td>{row.canEnterQuantitativeNcg ? "yes" : "no"}</td>
+                <td>{row.dominantBlocker}<br />下一步：{row.requiredNextWork}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="S13" class="ltx_section">
+      <h2 class="ltx_title ltx_title_section"><span class="ltx_tag ltx_tag_section">13. </span>Claim-Evidence Matrix</h2>
+      <p class="ltx_p">本节把论文核心主张映射到来源、变量和使用边界。它的作用是阻止“来源存在”被误读为“工程可行”，也阻止 K 被单独当成收益指标。</p>
+      <div class="ltx_table">
+        <table>
+          <thead><tr><th>主张</th><th>类型</th><th>来源</th><th>变量</th><th>边界</th></tr></thead>
+          <tbody>
+            {claimEvidenceRows.map((row) => (
+              <tr>
+                <td>{row.claimId}: {row.claim?.claim}</td>
+                <td>{row.claim?.claimType}</td>
+                <td>{row.sourceLabels}</td>
+                <td>{row.variableLabels}</td>
+                <td>{row.boundary}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="S14" class="ltx_section">
+      <h2 class="ltx_title ltx_title_section"><span class="ltx_tag ltx_tag_section">14. </span>主张成熟度与反证队列</h2>
+      <p class="ltx_p">本节把每条主张从“已经写入论文”继续拆成成熟度、当前支持、缺失证据、晋升门槛和反证触发条件。这样做的目的不是降低主张价值，而是让后续研究知道哪些内容只是定义、哪些是模型边界、哪些已经有文献约束，哪些只能作为待验证机制。</p>
+      <div class="ltx_table">
+        <table>
+          <thead><tr><th>主张</th><th>成熟度</th><th>当前支持</th><th>缺失证据</th><th>晋升门槛</th></tr></thead>
+          <tbody>
+            {claimMaturityRows.map((row) => (
+              <tr>
+                <td>{row.claimId}: {row.claim?.claim}</td>
+                <td>{row.maturityLevel}<br />{row.evidenceState}</td>
+                <td>{row.currentSupport}</td>
+                <td>{row.missingEvidence}</td>
+                <td>{row.promotionGate}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <div class="ltx_table">
+        <table>
+          <thead><tr><th>主张</th><th>反证或降级触发</th><th>降级动作</th><th>必须检查</th></tr></thead>
+          <tbody>
+            {falsifierRows.map((row) => (
+              <tr>
+                <td>{row.claimId}: {row.claim?.claimType}</td>
+                <td>{row.falsifier}</td>
+                <td>{row.downgradeAction}</td>
+                <td>{row.requiredCheck}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="S15" class="ltx_section">
+      <h2 class="ltx_title ltx_title_section"><span class="ltx_tag ltx_tag_section">15. </span>变量契约</h2>
+      <p class="ltx_p">变量契约规定每个符号在模型中的身份和禁止偷换项。后续交互图表、Source Card 和审查脚本都应复用这张表，而不是在页面里重新发明变量。</p>
+      <div class="ltx_table">
+        <table>
+          <thead><tr><th>符号</th><th>名称</th><th>定义</th><th>模型身份</th><th>不能等同于</th></tr></thead>
+          <tbody>
+            {variableRows.map((row) => (
+              <tr>
+                <td>{row.symbol}</td>
+                <td>{row.name}</td>
+                <td>{row.definition}</td>
+                <td>{row.modelRole}</td>
+                <td>{row.notEquivalentTo}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="S16" class="ltx_section">
+      <h2 class="ltx_title ltx_title_section"><span class="ltx_tag ltx_tag_section">16. </span>模型假设与命题注册表</h2>
+      <p class="ltx_p">本节把最小模型从解释性公式推进到可审查的理论注册表。根据公式推导规范，本文把不变量、假设、命题、解释和非声明分开：K 是局部时间差分指标，NCG 才是决策对象；递归等待只有在本轮升级改变下一轮参数时成立；不可逆失败优先于任何倍率收益。</p>
+      <div class="ltx_table">
+        <table>
+          <thead><tr><th>假设</th><th>内容</th><th>模型角色</th><th>用于</th><th>失败模式</th></tr></thead>
+          <tbody>
+            {modelAssumptionRows.map((row) => (
+              <tr>
+                <td>{row.id}</td>
+                <td>{row.assumption}</td>
+                <td>{row.role}</td>
+                <td>{row.usedBy.join(", ")}</td>
+                <td>{row.failureMode}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <div class="ltx_table">
+        <table>
+          <thead><tr><th>命题</th><th>陈述</th><th>公式</th><th>依赖假设</th><th>解释 / 非声明</th></tr></thead>
+          <tbody>
+            {propositionRows.map((row) => (
+              <tr>
+                <td>{row.id}<br />{row.type}</td>
+                <td>{row.statement}<br />关联主张：{row.claimIds.join(", ")}</td>
+                <td><span class="ltx_text ltx_font_typewriter">{row.formula}</span></td>
+                <td>{row.dependsOn.join(", ")}</td>
+                <td>{row.interpretation}<br />非声明：{row.nonClaim}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p class="ltx_p">这一注册表把后续研究的证明负担显式化：如果某个候选等待场景无法给出参考观察者、世界线、K 的条件、概率门、风险归一化和中止阈值，它就不能进入 NCG 判定，更不能进入递归等待飞轮。</p>
+    </section>
+
+    <section id="S17" class="ltx_section">
+      <h2 class="ltx_title ltx_title_section"><span class="ltx_tag ltx_tag_section">17. </span>图表计划与引用预审</h2>
+      <p class="ltx_p">本节把 paper-plan、figure-designer 和 citation-audit 的本地预审结果写入论文页。它不是正式外部审稿结论，而是给后续科研迭代保留可执行队列：哪些图必须存在、每张图服务哪个论证、每个引用语境允许支持什么、禁止偷换成什么。</p>
+      <p class="ltx_p">页面创建溯源：本论文页的工具生成种子为 <span class="ltx_text ltx_font_typewriter">TOOL_GENERATED_PAGE_SEED.astro</span>，由 <span class="ltx_text ltx_font_typewriter">tools/arxiv_html_paper_tool.py write-page</span> 生成；正式路由只在该 arXiv HTML Paper 契约内扩展正文和结构化研究内容。</p>
+      <div class="ltx_table">
+        <table>
+          <thead><tr><th>图号</th><th>类型</th><th>设计目的</th><th>数据来源</th><th>优先级</th><th>状态</th></tr></thead>
+          <tbody>
+            {figurePlanRows.map((row) => (
+              <tr>
+                <td>{row.id}</td>
+                <td>{row.type}</td>
+                <td>{row.description}<br />设计审查：{row.designAudit}<br />标题草案：{row.caption}</td>
+                <td>{row.dataSource}</td>
+                <td>{row.priority}</td>
+                <td>{row.status}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p class="ltx_p">引用语境预审的作用是把“可以引用”改成“只能在特定语境中引用”。比如 Pound-Rebka、Gravity Probe A 和 GPS 只能支撑相对论时钟差的实验基础，不能被拿来证明黑洞等待室可制造；Malament-Hogarth 文献只能放在极限时空和概念边界层，不能转写为人体等待工程证据。</p>
+      <p class="ltx_p">Citation Context Review Packet 已生成，verdict 为 <span class="ltx_text ltx_font_typewriter">{citationContextPacket.verdict}</span>；Citation Context Local Review 的 verdict 为 <span class="ltx_text ltx_font_typewriter">{citationContextLocalReview.verdict}</span>。这两个账本只说明本地边界与外部审稿输入已准备好，不等于 fresh reviewer 已经通过引用。</p>
+      <div class="ltx_table">
+        <table>
+          <thead><tr><th>语境</th><th>关联主张</th><th>来源键</th><th>安全用法</th><th>禁止用法</th><th>状态</th></tr></thead>
+          <tbody>
+            {citationContextRows.map((row) => (
+              <tr>
+                <td>{row.id}<br />{row.context}</td>
+                <td>{row.claimIds.join(", ")}</td>
+                <td>{row.sourceKeys.join(", ")}</td>
+                <td>{row.safeUse}</td>
+                <td>{row.forbiddenUse}</td>
+                <td>{row.reviewStatus}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <div class="ltx_table">
+        <table>
+          <thead><tr><th>本地审查</th><th>风险层级</th><th>本地 verdict</th><th>来源</th><th>fresh reviewer focus</th></tr></thead>
+          <tbody>
+            {citationContextLocalReviewRows.map((row) => (
+              <tr>
+                <td>{row.contextId}</td>
+                <td>{row.riskTier}</td>
+                <td>{row.localVerdict}</td>
+                <td>{row.sourceKeys.join(", ")}</td>
+                <td>{row.freshReviewerFocus.join("；")}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="S18" class="ltx_section">
+      <h2 class="ltx_title ltx_title_section"><span class="ltx_tag ltx_tag_section">18. </span>提交前审稿风险</h2>
+      <p class="ltx_p">本节是 Pre-Submission Review Register，用来防止工作论文被误读成可直接投稿版本。它按审稿维度列出当前阻塞项、证据片段、提交前 gate 和具体修复动作。CRITICAL 表示在解决前不应进入正式投稿；MAJOR 表示需要主要修订；MINOR 表示提交前润色项。</p>
+      <div class="ltx_table">
+        <table>
+          <thead><tr><th>编号</th><th>维度 / 严重性</th><th>发现</th><th>证据片段</th><th>提交前 gate</th><th>修复动作</th></tr></thead>
+          <tbody>
+            {preSubmissionReviewRows.map((row) => (
+              <tr>
+                <td>{row.id}<br />{row.status}</td>
+                <td>{row.dimension}<br />{row.severity}</td>
+                <td>{row.finding}<br />关联章节：{row.linkedSections.join(", ")}</td>
+                <td>{row.quotedEvidence}</td>
+                <td>{row.blockingGate}</td>
+                <td>{row.suggestedFix}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="S19" class="ltx_section">
+      <h2 class="ltx_title ltx_title_section"><span class="ltx_tag ltx_tag_section">19. </span>非目标与治理边界</h2>
+      <ul>
+        <li>本文不证明人工黑洞、类黑洞或强红移等待区当前可制造。</li>
+        <li>本文不提供黑洞接近、轨道控制、太空任务、生命支持工程或人体实验步骤。</li>
+        <li>本文不声称有限固有时必然可以观察外部宇宙无限未来。</li>
+        <li>本文不把时间膨胀等同于生物停滞、复活或永生。</li>
+        <li>本文不输出个体建议，不建议任何人以现实生命安全为代价追求等待路径。</li>
+        <li>本文只提出 Human Infra 的条件性研究假设、模型接口和资料组织协议。</li>
+      </ul>
+    </section>
+
+    <section id="references" class="ltx_section ltx_bibliography">
+      <h2 class="ltx_title ltx_title_section">References</h2>
+      <ol>
+        <li>R. V. Pound and G. A. Rebka Jr. <a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.3.439">Gravitational Red-Shift in Nuclear Resonance</a>.</li>
+        <li>R. F. C. Vessot et al. <a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.45.2081">Test of Relativistic Gravitation with a Space-Borne Hydrogen Maser</a>.</li>
+        <li>Neil Ashby. <a href="https://link.springer.com/article/10.12942/lrr-2003-1">Relativity in the Global Positioning System</a>.</li>
+        <li>NASA Science. <a href="https://science.nasa.gov/universe/what-happens-when-something-gets-too-close-to-a-black-hole/">What Happens When Something Gets Too Close to a Black Hole?</a></li>
+        <li>NASA Science. <a href="https://science.nasa.gov/universe/black-holes/supermassive-black-holes/new-nasa-black-hole-visualization-takes-viewers-beyond-the-brink/">New NASA Black Hole Visualization Takes Viewers Beyond the Brink</a>.</li>
+        <li>Yu. V. Pavlov. <a href="https://arxiv.org/abs/1203.4000">On the possibility of observation of the future for movement in the field of black holes of different types</a>.</li>
+        <li>A. A. Grib and Yu. V. Pavlov. <a href="https://arxiv.org/abs/0906.1442">Can an observer falling into a black hole see the infinite future of the Universe?</a></li>
+        <li>Gabor Etesi and Istvan Nemeti. <a href="https://arxiv.org/abs/gr-qc/0104023">Non-Turing computations via Malament-Hogarth space-times</a>.</li>
+        <li>P. D. Welch. <a href="https://arxiv.org/abs/gr-qc/0609035">The extent of computation in Malament-Hogarth spacetimes</a>.</li>
+        <li>John Earman and John D. Norton. <a href="https://philsci-archive.pitt.edu/1307/">Forever is a Day: Supertasks in Pitowsky and Malament-Hogarth Spacetimes</a>.</li>
+        <li>David Lewis. <a href="https://www.jstor.org/stable/2025310">The Paradoxes of Time Travel</a>.</li>
+        <li>Human Infra. <a href="/papers/effective-immortality-flywheel/">Effective Immortality and the Subject-Continuity Acceleration Flywheel</a>.</li>
+      </ol>
+    </section>
+  </article>
+</PaperReaderLayout>

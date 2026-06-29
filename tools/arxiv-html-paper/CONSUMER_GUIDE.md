@@ -135,6 +135,19 @@ required_paths_present == required_paths_total
 typekit_font_file_count >= 10
 ```
 
+这一步只验证资源，不验证阅读器 DOM 和控件。凡是你改过 layout、把外部 HTML 注入 `PaperReaderLayout`、写了 post-process、或生成本地静态预览，都必须再做浏览器级检查：
+
+```text
+页面存在 .ltx_page_navbar > nav.ltx_TOC
+目录项数量大于 0
+页面存在 .ltx_document、.ltx_abstract、.ltx_bibliography
+点击目录按钮后 documentElement.dataset.tocDisplay 会在 none/block 间切换
+移动端宽度下目录按钮仍可切换
+DOM 中没有重复 class 属性
+```
+
+不要只看“正文能显示”。arXiv reader 的目录、阅读模式和主题按钮依赖固定 DOM 契约；正文可见但 `.ltx_page_navbar > nav.ltx_TOC` 缺失时，目录控件会静默失效。
+
 ## 内容维护
 
 目标项目只维护正文内容：
@@ -144,6 +157,8 @@ web/src/pages/paper.astro
 ```
 
 建议保留 `ltx_*` 语义类，以便后续承接 LaTeXML、Pandoc 或其他论文转换工具。不要把 Human Infra 的正文复制进模板；模板只做结构，正文属于消费项目。
+
+如果消费项目从数据库、Markdown、LaTeXML 片段或其他 HTML 生成页面，推荐使用原生 `templates/paper.astro` 的 `slot="toc"` 和正文 slot，而不是只向 layout 传一个完整正文字符串。未被 layout 消费的 props 不能当作功能已经存在的证据。
 
 ## 升级流程
 
@@ -178,6 +193,18 @@ use.typekit.net/font-files/*.woff2
 ### 底部黑色浮动控件从哪里来
 
 这是 arXiv HTML papers 阅读器框架自带控件，来自复用的 CSS/JS/DOM 结构，不是消费项目单独添加的组件。
+
+### 目录按钮点击后没反应
+
+先检查 DOM，而不是先改 CSS：
+
+```text
+.ltx_page_navbar > nav.ltx_TOC
+html[data-toc-display]
+button 或控件点击后 data-toc-display 是否变化
+```
+
+常见根因是页面生成时只注入正文，绕过了 `slot="toc"`，导致 `.ltx_TOC` 不在 `.ltx_page_navbar` 下。另一个常见根因是 HTML post-process 追加 class 时生成了重复 `class` 属性，浏览器解析后丢失了框架需要的语义类。
 
 ### 需要完全换视觉风格
 

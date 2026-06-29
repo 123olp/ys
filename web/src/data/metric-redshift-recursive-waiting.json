@@ -1,0 +1,1243 @@
+{
+  "schemaVersion": "0.1",
+  "paper": {
+    "slug": "metric-redshift-recursive-waiting",
+    "title": "度规红移递归等待假设",
+    "version": "Working paper v0.2",
+    "updated": "2026-06-29",
+    "author": "tradecatlabs",
+    "route": "/papers/metric-redshift-recursive-waiting/"
+  },
+  "problemAnchor": {
+    "bottomLineProblem": "强红移时空导致的主体固有时差分，能否在满足进入、停留、通信、退出、维生、治理和主体连续性约束时，成为 Human Infra 的未来等待路径。",
+    "mustSolveBottleneck": "等待倍率 K 不能替代工程可行性；模型必须同时报告退出、技术采用、主体连续性、尾部风险和机会成本。",
+    "nonGoals": [
+      "证明人工黑洞或类黑洞结构当前可制造",
+      "提供黑洞接近、轨道控制、太空任务、生命支持工程或人体实验步骤",
+      "声称有限固有时必然可以观察外部宇宙无限未来",
+      "把时间膨胀等同于复活、冷冻或永生"
+    ],
+    "successCondition": "每个候选等待场景都能被拆成 metric、orbit/region、continuity、window、risk 和 exit 六类卡片，并能计算或审查 NCG 是否为正。"
+  },
+  "paperPlan": {
+    "workingTitle": "度规红移递归等待假设",
+    "oneSentenceContribution": "本文把“黑洞等待室”从传播性想象重构为一个以固有时差分、等待倍率、退出概率、技术采用、主体连续性和尾部风险为核心变量的 Human Infra 工作假设。",
+    "paperType": "theoretical-conceptual working paper",
+    "targetForm": "arXiv-style HTML working paper, later convertible to PDF manuscript",
+    "readerPromise": "读者应能区分时间倍率、工程可行性、主体连续性和递归技术采用，并知道下一步如何用 Source Cards 和模型协议继续研究。",
+    "sectionPlan": [
+      {
+        "section": "Front matter",
+        "purpose": "快速说明本文是条件性假设建模，不是工程可行性声明。",
+        "mustContain": ["Problem Anchor", "non-goals", "core variables"]
+      },
+      {
+        "section": "Concept and physical interface",
+        "purpose": "把黑洞等待室传播名转成度规、红移、固有时和外部参考时间接口。",
+        "mustContain": ["K definition", "proper time distinction", "Schwarzschild illustrative formula caveat"]
+      },
+      {
+        "section": "Model and recursive mechanism",
+        "purpose": "说明 NCG 为什么比 K 更重要，以及 Wait-Exit-Upgrade-Repeat 如何进入 Human Infra 飞轮。",
+        "mustContain": ["NCG formula", "state machine", "recursive waiting loop"]
+      },
+      {
+        "section": "Evidence and boundaries",
+        "purpose": "把实验红移、强场直觉、黑洞未来观察限制、Malament-Hogarth 和主体持续性框架分层。",
+        "mustContain": ["Claim-Evidence Matrix", "Source Cards", "forbidden citation uses"]
+      },
+      {
+        "section": "Research protocol and governance",
+        "purpose": "定义后续场景卡片、变量契约、失败条件和禁止用途。",
+        "mustContain": ["Metric Card", "Exit Card", "Risk Card", "non-goals"]
+      }
+    ]
+  },
+  "contributionRegister": [
+    {
+      "id": "C1",
+      "claim": "把“黑洞等待室”改写为“度规红移固有时差分路径”，避免把黑洞、时间旅行、永生和复活混成一个概念。",
+      "artifact": "术语治理和传播边界"
+    },
+    {
+      "id": "C2",
+      "claim": "提出“度规红移递归等待假设”，强调等待、退出、技术采用和下一轮等待条件改善之间的循环结构。",
+      "artifact": "假设注册和论文页扩展"
+    },
+    {
+      "id": "C3",
+      "claim": "给出固有时、外部参考时间、红移因子、等待倍率 K 和净持续性收益 NCG 的最小接口。",
+      "artifact": "定量模型和图表可视化"
+    },
+    {
+      "id": "C4",
+      "claim": "拆出生命周期状态机和可达性阶梯，把自然黑洞、类黑洞结构和人工度规工程分层处理。",
+      "artifact": "Source Card 和风险审查"
+    },
+    {
+      "id": "C5",
+      "claim": "建立失败条件和研究协议，要求每个候选等待场景同时报告倍率、风险、退出、通信、连续性和机会成本。",
+      "artifact": "治理门禁和反证条件"
+    }
+  ],
+  "claimRegister": [
+    {
+      "id": "MRW-CL1",
+      "claim": "本文的研究对象是度规红移造成的主体固有时与外部参考时间之间的差分，而不是黑洞本身。",
+      "claimType": "definition",
+      "section": "S1/S3"
+    },
+    {
+      "id": "MRW-CL2",
+      "claim": "等待倍率 K 只能描述时间差分，不能单独代表安全性、收益或可行性。",
+      "claimType": "model-boundary",
+      "section": "S4/S7"
+    },
+    {
+      "id": "MRW-CL3",
+      "claim": "递归等待成立需要同时满足等待、退出、技术采用和下一轮等待条件改善。",
+      "claimType": "mechanism",
+      "section": "S5/S8"
+    },
+    {
+      "id": "MRW-CL4",
+      "claim": "普通黑洞场景不能直接推出有限固有时观察外部无限未来。",
+      "claimType": "literature-boundary",
+      "section": "S9/S11"
+    },
+    {
+      "id": "MRW-CL5",
+      "claim": "如果尾部风险、退出失败、主体连续性损失或机会成本超过时间倍率收益，该路径应被判定为负收益或不可采用。",
+      "claimType": "governance",
+      "section": "S7/S11/S13"
+    },
+    {
+      "id": "MRW-CL6",
+      "claim": "可达性必须从已验证时间膨胀、自然强引力源、近视界轨道、类黑洞结构、人工度规工程到递归等待基础设施分层处理。",
+      "claimType": "research-architecture",
+      "section": "S10"
+    },
+    {
+      "id": "MRW-CL7",
+      "claim": "Malament-Hogarth 和时间旅行哲学文献只能提供极限时空与概念边界，不能被直接转写为人体等待工程证据。",
+      "claimType": "conceptual-boundary",
+      "section": "S9/S13"
+    }
+  ],
+  "sourceCards": [
+    {
+      "key": "pound1959redshift",
+      "title": "Gravitational Red-Shift in Nuclear Resonance",
+      "authors": "R. V. Pound and G. A. Rebka Jr.",
+      "year": 1959,
+      "url": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.3.439",
+      "evidenceLayer": "E1 experimental foundation",
+      "supports": "引力红移可被实验观测。",
+      "doesNotSupport": "不支持黑洞等待室、人体等待或强场工程可行性。"
+    },
+    {
+      "key": "vessot1980gravityProbeA",
+      "title": "Test of Relativistic Gravitation with a Space-Borne Hydrogen Maser",
+      "authors": "R. F. C. Vessot et al.",
+      "year": 1980,
+      "url": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.45.2081",
+      "evidenceLayer": "E1 experimental foundation",
+      "supports": "空间氢钟实验检验引力相关时钟速率差。",
+      "doesNotSupport": "不支持长期等待、轨道安全或人工度规工程。"
+    },
+    {
+      "key": "ashby2003gps",
+      "title": "Relativity in the Global Positioning System",
+      "authors": "Neil Ashby",
+      "year": 2003,
+      "url": "https://link.springer.com/article/10.12942/lrr-2003-1",
+      "evidenceLayer": "E1 experimental foundation",
+      "supports": "实际工程系统必须处理相对论时钟修正。",
+      "doesNotSupport": "GPS 弱场修正不支持黑洞附近等待工程。"
+    },
+    {
+      "key": "nasaBlackHoleTooClose",
+      "title": "What Happens When Something Gets Too Close to a Black Hole?",
+      "authors": "NASA Science",
+      "year": 2024,
+      "url": "https://science.nasa.gov/universe/what-happens-when-something-gets-too-close-to-a-black-hole/",
+      "evidenceLayer": "E2 strong-field intuition",
+      "supports": "黑洞附近存在强引力、时间膨胀和事件视界风险的科普解释。",
+      "doesNotSupport": "科普材料不能作为轨道、生命支持或返航可行性证据。"
+    },
+    {
+      "key": "nasaBlackHoleVisualization",
+      "title": "New NASA Black Hole Visualization Takes Viewers Beyond the Brink",
+      "authors": "NASA Science",
+      "year": 2024,
+      "url": "https://science.nasa.gov/universe/black-holes/supermassive-black-holes/new-nasa-black-hole-visualization-takes-viewers-beyond-the-brink/",
+      "evidenceLayer": "E2 strong-field intuition",
+      "supports": "黑洞附近红移、透镜和接近事件视界的视觉直觉。",
+      "doesNotSupport": "可视化不是工程方案。"
+    },
+    {
+      "key": "grib2009infiniteFuture",
+      "title": "Can an observer falling into a black hole see the infinite future of the Universe?",
+      "authors": "A. A. Grib and Yu. V. Pavlov",
+      "year": 2009,
+      "url": "https://arxiv.org/abs/0906.1442",
+      "evidenceLayer": "E3 future-observation boundary",
+      "supports": "黑洞自由落体观察外部无限未来存在理论限制。",
+      "doesNotSupport": "不排除所有特殊旋转黑洞轨道，也不提供等待工程。"
+    },
+    {
+      "key": "pavlov2012futureObservation",
+      "title": "On the possibility of observation of the future for movement in the field of black holes of different types",
+      "authors": "Yu. V. Pavlov",
+      "year": 2012,
+      "url": "https://arxiv.org/abs/1203.4000",
+      "evidenceLayer": "E3 future-observation boundary",
+      "supports": "不同黑洞类型下观察未来的理论条件和限制。",
+      "doesNotSupport": "不是安全等待或可退出基础设施证明。"
+    },
+    {
+      "key": "etesi2002malamentHogarth",
+      "title": "Non-Turing computations via Malament-Hogarth space-times",
+      "authors": "Gabor Etesi and Istvan Nemeti",
+      "year": 2002,
+      "url": "https://arxiv.org/abs/gr-qc/0104023",
+      "evidenceLayer": "E4 extreme spacetime boundary",
+      "supports": "Malament-Hogarth 时空提供有限固有时接收极长计算结果的理论语境。",
+      "doesNotSupport": "不是普通黑洞等待室或人体路径的工程证明。"
+    },
+    {
+      "key": "welch2006malamentHogarth",
+      "title": "The extent of computation in Malament-Hogarth spacetimes",
+      "authors": "P. D. Welch",
+      "year": 2006,
+      "url": "https://arxiv.org/abs/gr-qc/0609035",
+      "evidenceLayer": "E4 extreme spacetime boundary",
+      "supports": "讨论 Malament-Hogarth 时空中的计算能力边界。",
+      "doesNotSupport": "不支持人体等待、生命支持或技术采用。"
+    },
+    {
+      "key": "earmanNortonForeverDay",
+      "title": "Forever is a Day: Supertasks in Pitowsky and Malament-Hogarth Spacetimes",
+      "authors": "John Earman and John D. Norton",
+      "year": 1993,
+      "url": "https://philsci-archive.pitt.edu/1307/",
+      "evidenceLayer": "E4 philosophical boundary",
+      "supports": "提供 supertask 和 Malament-Hogarth 时空的哲学边界讨论。",
+      "doesNotSupport": "不提供物理工程路线。"
+    },
+    {
+      "key": "lewis1976timeTravel",
+      "title": "The Paradoxes of Time Travel",
+      "authors": "David Lewis",
+      "year": 1976,
+      "url": "https://www.jstor.org/stable/2025310",
+      "evidenceLayer": "E4 conceptual boundary",
+      "supports": "时间旅行概念和悖论的哲学边界。",
+      "doesNotSupport": "不支持强引力等待工程。"
+    },
+    {
+      "key": "humanInfraEffectiveImmortality",
+      "title": "Effective Immortality and the Subject-Continuity Acceleration Flywheel",
+      "authors": "Human Infra",
+      "year": 2026,
+      "url": "/papers/effective-immortality-flywheel/",
+      "evidenceLayer": "E5 subject-continuity model",
+      "supports": "把等待收益放回主体持续性、能力系统、技术系统和可能性空间。",
+      "doesNotSupport": "不替代广义相对论、强场工程或生命支持证据。"
+    }
+  ],
+  "sourceCardLedger": [
+    {
+      "sourceKey": "pound1959redshift",
+      "sourceRole": "experimental-foundation",
+      "mappedClaims": ["MRW-CL2", "MRW-CL6"],
+      "mappedVariables": ["K", "DeltaTExternal", "DeltaTauSubject"],
+      "mechanismUse": "用于证明引力红移和时钟速率差属于可观测物理效应。",
+      "allowedUse": "支持 E1 实验基础层和 K 的物理前提。",
+      "forbiddenUse": "不得支持黑洞等待室、人体等待、强场工程或可退出基础设施。",
+      "falsifier": "如果文本把该实验写成强场等待工程证据，则该引用语境失败。",
+      "nextAction": "补一张实验基础 Source Card，记录实验尺度、弱场/强场边界和不能迁移的结论。"
+    },
+    {
+      "sourceKey": "vessot1980gravityProbeA",
+      "sourceRole": "experimental-foundation",
+      "mappedClaims": ["MRW-CL2"],
+      "mappedVariables": ["K", "DeltaTExternal", "DeltaTauSubject"],
+      "mechanismUse": "用于说明空间氢钟实验检验了引力相关时间频率差。",
+      "allowedUse": "支持相对论时钟差的实验基础和工程测量背景。",
+      "forbiddenUse": "不得支持长期等待、强场轨道安全、人工度规工程或人体维生。",
+      "falsifier": "如果引用语境跳过实验尺度差异，直接推出等待室可行，则必须降级。",
+      "nextAction": "补实验参数摘要和与黑洞强场环境的非等价性说明。"
+    },
+    {
+      "sourceKey": "ashby2003gps",
+      "sourceRole": "engineering-foundation",
+      "mappedClaims": ["MRW-CL2", "MRW-CL6"],
+      "mappedVariables": ["K", "DeltaTExternal", "DeltaTauSubject"],
+      "mechanismUse": "用于说明现实工程系统必须处理相对论时间修正。",
+      "allowedUse": "支持相对论效应进入工程系统这一低层事实。",
+      "forbiddenUse": "不得把 GPS 弱场修正迁移成黑洞附近等待工程。",
+      "falsifier": "如果论文把 GPS 直接写成强红移等待基础设施先例，则引用越界。",
+      "nextAction": "补 GPS 弱场工程与强场等待的尺度差异表。"
+    },
+    {
+      "sourceKey": "nasaBlackHoleTooClose",
+      "sourceRole": "strong-field-intuition",
+      "mappedClaims": ["MRW-CL1", "MRW-CL5", "MRW-CL6"],
+      "mappedVariables": ["K", "RLife", "RTail", "PExit"],
+      "mechanismUse": "用于通俗解释黑洞附近强引力、时间膨胀、事件视界和风险边界。",
+      "allowedUse": "支持强场直觉和风险提示。",
+      "forbiddenUse": "不得作为轨道稳定、生命支持、通信、返航或工程可行性证据。",
+      "falsifier": "如果科普材料被当作技术方案或安全承诺，必须移出支持来源。",
+      "nextAction": "补官方科普 source card，并标记为 explanatory source 而非 technical proof。"
+    },
+    {
+      "sourceKey": "nasaBlackHoleVisualization",
+      "sourceRole": "strong-field-intuition",
+      "mappedClaims": ["MRW-CL1", "MRW-CL6"],
+      "mappedVariables": ["K", "RTail"],
+      "mechanismUse": "用于解释黑洞附近红移、透镜和接近事件视界的直觉。",
+      "allowedUse": "支持公众层面的强场可视化说明。",
+      "forbiddenUse": "不得作为人工等待室、轨道控制、维生或回收机制证据。",
+      "falsifier": "如果可视化被写成工程路线图，则该来源必须降级为传播素材。",
+      "nextAction": "在图表计划中把它限定为 intuition asset，不进入 NCG 计算。"
+    },
+    {
+      "sourceKey": "grib2009infiniteFuture",
+      "sourceRole": "literature-boundary",
+      "mappedClaims": ["MRW-CL4", "MRW-CL6"],
+      "mappedVariables": ["K", "PExit", "DeltaTauSubject", "DeltaTExternal"],
+      "mechanismUse": "用于约束“自由落体黑洞观察外部无限未来”的过度叙述。",
+      "allowedUse": "支持普通黑洞自由落体场景的限制讨论。",
+      "forbiddenUse": "不得写成所有强红移等待路径不可能，也不得写成现实等待室可行。",
+      "falsifier": "如果文本把该文献用于支持人体等待工程或泛化否定所有场景，则引用失败。",
+      "nextAction": "补自由落体、静止壳层和特殊轨道的边界对照表。"
+    },
+    {
+      "sourceKey": "pavlov2012futureObservation",
+      "sourceRole": "literature-boundary",
+      "mappedClaims": ["MRW-CL4", "MRW-CL5", "MRW-CL6"],
+      "mappedVariables": ["K", "PExit", "RTail"],
+      "mechanismUse": "用于讨论不同黑洞类型下观察未来的理论条件和限制。",
+      "allowedUse": "支持黑洞未来观察的条件性、类型差异和不可泛化边界。",
+      "forbiddenUse": "不得作为安全等待、可退出基础设施或工程路线证明。",
+      "falsifier": "如果引用忽略黑洞类型和轨道条件，必须重写相关段落。",
+      "nextAction": "补 Kerr / Schwarzschild / Reissner-Nordstrom 场景边界卡。"
+    },
+    {
+      "sourceKey": "etesi2002malamentHogarth",
+      "sourceRole": "extreme-spacetime-boundary",
+      "mappedClaims": ["MRW-CL6", "MRW-CL7"],
+      "mappedVariables": ["DeltaTauSubject", "DeltaTExternal", "PContinuity"],
+      "mechanismUse": "用于说明 Malament-Hogarth 时空和相对论超计算的概念空间。",
+      "allowedUse": "支持极限时空边界和有限固有时接收长过程结果的理论语境。",
+      "forbiddenUse": "不得转写为普通黑洞等待室、人体路径、生命支持或人工制造证据。",
+      "falsifier": "如果 MH 文献被用来支持现实人体等待，引用语境必须判定为错误。",
+      "nextAction": "补 MH boundary card，分离 computation thought experiment 与 Human Infra waiting hypothesis。"
+    },
+    {
+      "sourceKey": "welch2006malamentHogarth",
+      "sourceRole": "extreme-spacetime-boundary",
+      "mappedClaims": ["MRW-CL7"],
+      "mappedVariables": ["DeltaTauSubject", "DeltaTExternal"],
+      "mechanismUse": "用于讨论 Malament-Hogarth 时空中的计算能力边界。",
+      "allowedUse": "支持极限时空中的计算边界讨论。",
+      "forbiddenUse": "不得支持人体等待、生命支持、技术采用或退出机制。",
+      "falsifier": "如果计算边界被转写为主体持续性工程证据，则必须移出支持列。",
+      "nextAction": "补计算边界和主体连续性边界的非等价性表。"
+    },
+    {
+      "sourceKey": "earmanNortonForeverDay",
+      "sourceRole": "philosophical-boundary",
+      "mappedClaims": ["MRW-CL7"],
+      "mappedVariables": ["DeltaTauSubject", "DeltaTExternal"],
+      "mechanismUse": "用于提供 supertask 和 Malament-Hogarth 时空的哲学边界。",
+      "allowedUse": "支持概念边界、悖论和极限时空讨论。",
+      "forbiddenUse": "不得提供物理工程路线、人体等待证据或现实任务方案。",
+      "falsifier": "如果哲学讨论被写成工程可达性证据，则引用越界。",
+      "nextAction": "补 philosophical boundary card，标明它只服务概念澄清。"
+    },
+    {
+      "sourceKey": "lewis1976timeTravel",
+      "sourceRole": "conceptual-boundary",
+      "mappedClaims": ["MRW-CL7"],
+      "mappedVariables": ["DeltaTauSubject", "DeltaTExternal", "PContinuity"],
+      "mechanismUse": "用于说明时间旅行概念和悖论需要逻辑边界。",
+      "allowedUse": "支持时间旅行相关概念区分和悖论边界。",
+      "forbiddenUse": "不得支持强引力时间膨胀、Malament-Hogarth 时空或黑洞工程。",
+      "falsifier": "如果该来源被用于物理机制或工程路线，必须移出证据链。",
+      "nextAction": "补 time-travel concept boundary card，限定为概念卫生来源。"
+    },
+    {
+      "sourceKey": "humanInfraEffectiveImmortality",
+      "sourceRole": "framework-source",
+      "mappedClaims": ["MRW-CL1", "MRW-CL3", "MRW-CL5"],
+      "mappedVariables": ["NCG", "U", "PAdopt", "PContinuity", "COpportunity"],
+      "mechanismUse": "用于把等待收益放回主体持续性、能力系统、技术系统和可能性空间。",
+      "allowedUse": "支持 Human Infra 的价值框架、递归升级语言和主体持续性目标。",
+      "forbiddenUse": "不得替代广义相对论、天体物理、生命支持、工程风险或实验数据。",
+      "falsifier": "如果框架来源被用来证明物理可行性，必须降级为规范背景。",
+      "nextAction": "补 framework source card，明确它只提供目标函数和治理语言。"
+    }
+  ],
+  "claimEvidenceMap": [
+    {
+      "claimId": "MRW-CL1",
+      "sourceKeys": ["nasaBlackHoleTooClose", "nasaBlackHoleVisualization", "humanInfraEffectiveImmortality"],
+      "requiredVariables": ["K", "DeltaTExternal", "DeltaTauSubject"],
+      "boundary": "只能支持研究对象重命名和模型定位，不支持现实可制造性。"
+    },
+    {
+      "claimId": "MRW-CL2",
+      "sourceKeys": ["pound1959redshift", "vessot1980gravityProbeA", "ashby2003gps"],
+      "requiredVariables": ["K", "NCG", "RTail", "COpportunity"],
+      "boundary": "实验基础支持时钟差存在；K 的价值必须由 NCG 另行判定。"
+    },
+    {
+      "claimId": "MRW-CL3",
+      "sourceKeys": ["humanInfraEffectiveImmortality"],
+      "requiredVariables": ["PExit", "PAdopt", "PContinuity", "U"],
+      "boundary": "当前是 Human Infra 模型假设，需要后续技术采用和工程证据。"
+    },
+    {
+      "claimId": "MRW-CL4",
+      "sourceKeys": ["grib2009infiniteFuture", "pavlov2012futureObservation"],
+      "requiredVariables": ["K", "PExit"],
+      "boundary": "支持普通黑洞无限未来观察的限制，不等于所有强场等待路径不可能。"
+    },
+    {
+      "claimId": "MRW-CL5",
+      "sourceKeys": ["humanInfraEffectiveImmortality", "nasaBlackHoleTooClose"],
+      "requiredVariables": ["NCG", "RLife", "REngineering", "RTail", "COpportunity"],
+      "boundary": "治理结论来自模型约束和风险识别，不来自直接实证试验。"
+    },
+    {
+      "claimId": "MRW-CL6",
+      "sourceKeys": ["pound1959redshift", "ashby2003gps", "nasaBlackHoleTooClose", "pavlov2012futureObservation", "etesi2002malamentHogarth"],
+      "requiredVariables": ["K", "PExit", "PContinuity"],
+      "boundary": "可达性阶梯是研究架构，不是技术成熟度声明。"
+    },
+    {
+      "claimId": "MRW-CL7",
+      "sourceKeys": ["etesi2002malamentHogarth", "welch2006malamentHogarth", "earmanNortonForeverDay", "lewis1976timeTravel"],
+      "requiredVariables": ["DeltaTauSubject", "DeltaTExternal", "PContinuity"],
+      "boundary": "这些来源限定概念空间和理论边界，不支持人工等待室、生命支持或现实任务方案。"
+    }
+  ],
+  "claimMaturityRegister": [
+    {
+      "claimId": "MRW-CL1",
+      "maturityLevel": "M2 conceptual-definition",
+      "evidenceState": "terminology and model scope supported by source layering",
+      "currentSupport": "来源足以支持把传播名“黑洞等待室”重命名为以度规红移和固有时差分为对象的研究路径。",
+      "missingEvidence": "还缺少具体候选时空场景的 metric card 和 observer/worldline specification。",
+      "promotionGate": "至少一个候选场景能给出度规、参考观察者、主体世界线、K 的计算条件和不可混用的时间定义。"
+    },
+    {
+      "claimId": "MRW-CL2",
+      "maturityLevel": "M3 model-boundary",
+      "evidenceState": "experimental relativity supports time-differential premise, while NCG framing constrains interpretation",
+      "currentSupport": "Pound-Rebka、Gravity Probe A 和 GPS 文献支持相对论时钟差真实存在；变量契约支持 K 不等于收益。",
+      "missingEvidence": "还缺少具体场景下 K 与风险扣减项共同估计的数值样例。",
+      "promotionGate": "完成一个 toy scenario，能同时报告 K、概率门、风险扣减和 NCG 判定，并展示 K 高但 NCG 低的反例。"
+    },
+    {
+      "claimId": "MRW-CL3",
+      "maturityLevel": "M2 mechanism-hypothesis",
+      "evidenceState": "mechanism is internally specified but not empirically validated",
+      "currentSupport": "Human Infra 有效永生飞轮和本论文状态机支持 Wait-Exit-Upgrade-Repeat 的机制表达。",
+      "missingEvidence": "还缺少 Upgrade_i 如何改变 Theta_{i+1} 的状态转移定义。",
+      "promotionGate": "定义至少三类 Upgrade_i，并说明它们分别如何改善 K、U、PExit、PAdopt、PContinuity 或风险项。"
+    },
+    {
+      "claimId": "MRW-CL4",
+      "maturityLevel": "M3 literature-boundary",
+      "evidenceState": "black-hole future-observation literature constrains overclaiming",
+      "currentSupport": "Grib-Pavlov 和 Pavlov 文献支持普通黑洞场景不能直接推出有限固有时观察外部无限未来。",
+      "missingEvidence": "还缺少对 Kerr、near-horizon orbit、Malament-Hogarth 等边界案例的逐类 source card。",
+      "promotionGate": "完成边界案例表：普通自由落体、静止壳层、Kerr 特殊轨道、Malament-Hogarth 时空分别能支持什么和不能支持什么。"
+    },
+    {
+      "claimId": "MRW-CL5",
+      "maturityLevel": "M3 governance-rule",
+      "evidenceState": "decision rule is specified as model governance, not empirical result",
+      "currentSupport": "NCG、风险项、机会成本和中止条件已在变量契约与命题注册表中定义。",
+      "missingEvidence": "还缺少治理阈值、风险归一化尺度和不可逆失败的分类表。",
+      "promotionGate": "给出 Tail Risk Threshold Card，明确哪些失败条件无论 K 多高都触发 abort。"
+    },
+    {
+      "claimId": "MRW-CL6",
+      "maturityLevel": "M2 research-architecture",
+      "evidenceState": "architecture is useful as taxonomy but not a readiness assessment",
+      "currentSupport": "来源分层支持从已验证相对论效应到极限时空概念边界的阶梯化组织。",
+      "missingEvidence": "还缺少每个可达性等级的最低资料要求和晋升/降级规则。",
+      "promotionGate": "为 L0-L5 每级定义 required cards、forbidden inference、promotion evidence 和 demotion trigger。"
+    },
+    {
+      "claimId": "MRW-CL7",
+      "maturityLevel": "M3 conceptual-boundary",
+      "evidenceState": "philosophical and Malament-Hogarth sources support boundary language only",
+      "currentSupport": "Etesi-Nemeti、Welch、Earman-Norton 和 Lewis 支持极限时空、supertask 和时间旅行概念边界。",
+      "missingEvidence": "还缺少这些文献与具体黑洞等待场景之间的非等价性表。",
+      "promotionGate": "完成 MH/time-travel boundary table，逐条标出可借用概念、不可迁移结论和禁止引用语境。"
+    }
+  ],
+  "falsifierRegister": [
+    {
+      "claimId": "MRW-CL1",
+      "falsifier": "候选等待场景无法定义参考观察者、主体世界线或固有时比较对象。",
+      "downgradeAction": "从研究路径降级为传播隐喻。",
+      "requiredCheck": "Metric Card 必须包含 observer、worldline、metric condition 和 time comparison。"
+    },
+    {
+      "claimId": "MRW-CL2",
+      "falsifier": "页面或模型把 K 直接当成寿命收益、安全性或永生概率。",
+      "downgradeAction": "标记为 model-boundary violation，并阻止进入 NCG 判定。",
+      "requiredCheck": "所有 K 的出现必须绑定至少一个风险或概率门解释。"
+    },
+    {
+      "claimId": "MRW-CL3",
+      "falsifier": "退出后的技术升级不能改善下一轮任何参数。",
+      "downgradeAction": "从递归等待飞轮降级为一次性相对论等待。",
+      "requiredCheck": "Upgrade Card 必须映射到 K、U、PExit、PAdopt、PContinuity、RLife、REngineering、RTail 或 COpportunity。"
+    },
+    {
+      "claimId": "MRW-CL4",
+      "falsifier": "论文声称普通黑洞自由落体可在有限固有时观察外部无限未来。",
+      "downgradeAction": "标记为 literature-overclaim，并要求重写黑洞未来观察段落。",
+      "requiredCheck": "任何无限未来表述必须同时引用限制文献和场景条件。"
+    },
+    {
+      "claimId": "MRW-CL5",
+      "falsifier": "PExit 为 0、PContinuity 为 0，或 RTail 超过治理阈值仍被判定为可采用。",
+      "downgradeAction": "触发 abort gate，路径不可采用。",
+      "requiredCheck": "Risk Card 必须先过退出、连续性和尾部风险三类中止条件。"
+    },
+    {
+      "claimId": "MRW-CL6",
+      "falsifier": "可达性阶梯被写成技术成熟度路线图或现实工程路线。",
+      "downgradeAction": "从 research architecture 降级为 unsupported roadmap。",
+      "requiredCheck": "每个等级必须显示 research status 和 forbidden inference。"
+    },
+    {
+      "claimId": "MRW-CL7",
+      "falsifier": "Malament-Hogarth 或时间旅行哲学文献被直接用于支持人体等待、生命支持或人工等待室可制造。",
+      "downgradeAction": "标记为 citation-context failure，并从支持来源中移除该用法。",
+      "requiredCheck": "所有 MH/time-travel 引用必须通过 Citation Context Register 的 forbiddenUse 检查。"
+    }
+  ],
+  "variableDictionary": [
+    {
+      "symbol": "K",
+      "name": "未来等待倍率",
+      "definition": "外部参考时间增量除以主体固有时增量。",
+      "modelRole": "time-differential scalar",
+      "notEquivalentTo": "安全性、寿命收益、永生概率"
+    },
+    {
+      "symbol": "DeltaTExternal",
+      "name": "外部参考时间",
+      "definition": "外部文明、技术系统或回收系统经历的比较时间。",
+      "modelRole": "reference clock",
+      "notEquivalentTo": "绝对时间"
+    },
+    {
+      "symbol": "DeltaTauSubject",
+      "name": "主体固有时",
+      "definition": "主体沿自身世界线实际经历的时间。",
+      "modelRole": "subject clock",
+      "notEquivalentTo": "远方坐标时或单纯主观感觉"
+    },
+    {
+      "symbol": "U",
+      "name": "外部技术升级收益",
+      "definition": "等待期间外部技术成熟后可带来的医学、AI、材料、能源、生命支持和治理收益。",
+      "modelRole": "upgrade benefit",
+      "notEquivalentTo": "所有未来技术都会可用"
+    },
+    {
+      "symbol": "PWindow",
+      "name": "技术窗口出现概率",
+      "definition": "外部时间是否转化为可用升级窗口。",
+      "modelRole": "probability gate",
+      "notEquivalentTo": "技术进步必然发生"
+    },
+    {
+      "symbol": "PExit",
+      "name": "退出概率",
+      "definition": "主体能否离开等待区或被外部系统回收。",
+      "modelRole": "probability gate",
+      "notEquivalentTo": "进入概率"
+    },
+    {
+      "symbol": "PAdopt",
+      "name": "采用概率",
+      "definition": "主体退出后是否能获得、理解、承受并整合新技术。",
+      "modelRole": "probability gate",
+      "notEquivalentTo": "技术存在"
+    },
+    {
+      "symbol": "PContinuity",
+      "name": "主体连续性保持概率",
+      "definition": "身体、认知、记忆、身份和行动能力是否保持。",
+      "modelRole": "probability gate",
+      "notEquivalentTo": "身体位置仍存在"
+    },
+    {
+      "symbol": "RLife",
+      "name": "生命支持风险",
+      "definition": "辐射、潮汐、能源、维生、衰退和事故风险。",
+      "modelRole": "risk subtraction",
+      "notEquivalentTo": "普通医疗风险"
+    },
+    {
+      "symbol": "REngineering",
+      "name": "工程风险",
+      "definition": "轨道、导航、结构、通信、制造和维护失败。",
+      "modelRole": "risk subtraction",
+      "notEquivalentTo": "单一技术故障"
+    },
+    {
+      "symbol": "RTail",
+      "name": "尾部风险",
+      "definition": "不可逆坠入、灾难性失控、外部文明崩溃或治理失败。",
+      "modelRole": "risk subtraction",
+      "notEquivalentTo": "小概率可忽略项"
+    },
+    {
+      "symbol": "COpportunity",
+      "name": "机会成本",
+      "definition": "进入等待区导致错过当前可行动、可治理、可修复的路径。",
+      "modelRole": "cost subtraction",
+      "notEquivalentTo": "金钱成本"
+    },
+    {
+      "symbol": "NCG",
+      "name": "净持续性收益",
+      "definition": "等待倍率、技术收益、概率门和风险扣减后的主体持续性净收益。",
+      "modelRole": "decision objective",
+      "notEquivalentTo": "K"
+    }
+  ],
+  "modelAssumptions": [
+    {
+      "id": "MRW-A1",
+      "assumption": "等待场景必须指定可比较的外部参考观察者、主体世界线和等待区度规条件。",
+      "role": "well-defined time comparison",
+      "usedBy": ["MRW-P1", "MRW-P2"],
+      "failureMode": "如果参考时间、主体固有时或世界线没有定义，K 只是叙事数值。"
+    },
+    {
+      "id": "MRW-A2",
+      "assumption": "每一轮等待都必须满足 DeltaTauSubject 大于 0，且主体在该固有时内保持最低生命支持和连续性。",
+      "role": "proper-time and continuity domain",
+      "usedBy": ["MRW-P1", "MRW-P3"],
+      "failureMode": "如果主体连续性丢失，等待倍率不能转化为主体收益。"
+    },
+    {
+      "id": "MRW-A3",
+      "assumption": "K 是场景相关的有限倍率，必须与轨道、区域、加速度、潮汐、辐射、通信和退出条件绑定。",
+      "role": "bounded scenario parameter",
+      "usedBy": ["MRW-P1", "MRW-P2", "MRW-P4"],
+      "failureMode": "如果把 K 当成无条件无限变量，模型会把物理边界和工程失败隐藏起来。"
+    },
+    {
+      "id": "MRW-A4",
+      "assumption": "PWindow、PExit、PAdopt 和 PContinuity 是条件概率门，范围在 0 到 1 之间，不默认相互独立。",
+      "role": "probability gate discipline",
+      "usedBy": ["MRW-P2", "MRW-P3", "MRW-P4"],
+      "failureMode": "如果概率门被默认设为 1，NCG 会退化成技术乐观叙事。"
+    },
+    {
+      "id": "MRW-A5",
+      "assumption": "U 只表示主体退出后可获得、可理解、可承受并可整合的技术升级收益。",
+      "role": "realized upgrade benefit",
+      "usedBy": ["MRW-P2", "MRW-P3"],
+      "failureMode": "如果外部技术存在但主体不能采用，等待外部时间不产生主体持续性收益。"
+    },
+    {
+      "id": "MRW-A6",
+      "assumption": "RLife、REngineering、RTail 和 COpportunity 必须先归一到与 NCG 可比较的持续性成本尺度。",
+      "role": "cost scale normalization",
+      "usedBy": ["MRW-P2", "MRW-P4"],
+      "failureMode": "如果风险和成本未归一，收益项和扣减项不能放进同一个判定式。"
+    },
+    {
+      "id": "MRW-A7",
+      "assumption": "递归等待只有在本轮升级能改善下一轮的 K、U、概率门、风险项或机会成本时成立。",
+      "role": "recursive improvement condition",
+      "usedBy": ["MRW-P3"],
+      "failureMode": "如果升级不改变下一轮条件，模型只是重复等待，不是加速回报循环。"
+    },
+    {
+      "id": "MRW-A8",
+      "assumption": "任何单点不可逆失败、主体连续性破坏或不可治理尾部风险，都优先于倍率收益触发中止判定。",
+      "role": "governance abort condition",
+      "usedBy": ["MRW-P4"],
+      "failureMode": "如果没有中止条件，高倍率路径会把灾难性风险包装成理性等待。"
+    }
+  ],
+  "propositionRegister": [
+    {
+      "id": "MRW-P1",
+      "statement": "在 A1-A3 成立时，K 可以作为主体固有时成本压缩的局部指标，但不能作为路径收益指标。",
+      "type": "definition-level proposition",
+      "formula": "K_i = DeltaTExternal_i / DeltaTauSubject_i",
+      "dependsOn": ["MRW-A1", "MRW-A2", "MRW-A3"],
+      "claimIds": ["MRW-CL1", "MRW-CL2"],
+      "interpretation": "K 只回答外部时间和主体时间的比例，不回答主体是否安全、可退出或能采用未来技术。",
+      "nonClaim": "不声明 K 越大路径越好。"
+    },
+    {
+      "id": "MRW-P2",
+      "statement": "在 A1-A6 成立时，单轮等待的最小判定对象应是 NCG，而不是 K。",
+      "type": "decision-object proposition",
+      "formula": "NCG_i = K_i * U_i * PWindow_i * PExit_i * PAdopt_i * PContinuity_i - RLife_i - REngineering_i - RTail_i - COpportunity_i",
+      "dependsOn": ["MRW-A1", "MRW-A2", "MRW-A3", "MRW-A4", "MRW-A5", "MRW-A6"],
+      "claimIds": ["MRW-CL2", "MRW-CL5"],
+      "interpretation": "倍率收益必须通过概率门和风险扣减后，才可能进入主体持续性收益。",
+      "nonClaim": "不声明当前存在任何场景使 NCG 为正。"
+    },
+    {
+      "id": "MRW-P3",
+      "statement": "在 A2、A4、A5 和 A7 成立时，递归等待需要本轮升级改善下一轮参数，否则不形成加速回报。",
+      "type": "recursive-mechanism proposition",
+      "formula": "Theta_{i+1} = F(Theta_i, Upgrade_i), and recursive gain requires NCG_{i+1}(Theta_{i+1}) > NCG_i(Theta_i) under comparable governance bounds",
+      "dependsOn": ["MRW-A2", "MRW-A4", "MRW-A5", "MRW-A7"],
+      "claimIds": ["MRW-CL3"],
+      "interpretation": "等待必须改变下一轮能力、风险或可用技术条件，才从一次性时间差分变成飞轮。",
+      "nonClaim": "不声明递归改善会自动发生。"
+    },
+    {
+      "id": "MRW-P4",
+      "statement": "在 A3、A4、A6 和 A8 成立时，若退出、连续性或治理中止条件失败，则高 K 不能抵消路径不可采用。",
+      "type": "governance proposition",
+      "formula": "Abort if PExit_i = 0 or PContinuity_i = 0 or RTail_i exceeds the governance threshold",
+      "dependsOn": ["MRW-A3", "MRW-A4", "MRW-A6", "MRW-A8"],
+      "claimIds": ["MRW-CL4", "MRW-CL5", "MRW-CL6", "MRW-CL7"],
+      "interpretation": "不可逆失败优先于倍率收益；强红移不是风险豁免。",
+      "nonClaim": "不提供现实任务建议或安全承诺。"
+    }
+  ],
+  "stateMachine": [
+    {"state": "S0", "name": "外部准备", "criticalQuestion": "主体是否有足够健康、资源、工具和协议进入等待。"},
+    {"state": "S1", "name": "转移到等待区", "criticalQuestion": "旅行、加速度、辐射、补给和导航是否可控。"},
+    {"state": "S2", "name": "进入红移轨道或区域", "criticalQuestion": "能否进入不跨越事件视界且可维持的区域。"},
+    {"state": "S3", "name": "等待与维生", "criticalQuestion": "生命支持、屏蔽、能源、认知状态和系统冗余是否保持。"},
+    {"state": "S4", "name": "外部窗口判断", "criticalQuestion": "能否接收或推断外部技术成熟信号。"},
+    {"state": "S5", "name": "退出与回收", "criticalQuestion": "主体能否离开等待区或被外部系统回收。"},
+    {"state": "S6", "name": "技术采用与再进入", "criticalQuestion": "新技术能否真实改善下一轮等待条件。"}
+  ],
+  "researchProtocolCards": [
+    {"card": "Metric Card", "requiredFields": ["metric", "observer", "worldline", "redshiftFactor", "K"], "purpose": "防止混用固有时、坐标时和外部参考时间。"},
+    {"card": "Orbit / Region Card", "requiredFields": ["region", "stability", "tidalForce", "radiation", "energy", "exitPath"], "purpose": "把时间倍率和生存性分开。"},
+    {"card": "Continuity Card", "requiredFields": ["body", "cognition", "memory", "identity", "agency", "recovery"], "purpose": "确保等待后的主体仍可行动。"},
+    {"card": "Window Card", "requiredFields": ["targetTechnology", "maturitySignal", "adoptionCondition", "fallback"], "purpose": "避免无目标等待。"},
+    {"card": "Risk Card", "requiredFields": ["lifeRisk", "engineeringRisk", "tailRisk", "governanceRisk", "opportunityCost"], "purpose": "计算 NCG，而不是只展示 K。"},
+    {"card": "Exit Card", "requiredFields": ["exitMechanism", "recoverySystem", "communication", "externalReceiver", "reEntryCondition"], "purpose": "阻止可进不可出的叙事。"}
+  ],
+  "scenarioCardTemplate": {
+    "templateVersion": "0.1",
+    "purpose": "把候选等待路径从叙事对象转成可审查场景对象；每个场景必须同时提交六类卡片，才能进入 NCG 判定。",
+    "requiredCards": [
+      {
+        "card": "Metric Card",
+        "requiredFields": ["metric", "observer", "worldline", "redshiftFactor", "K", "timeComparisonBoundary"],
+        "rejectIfMissing": ["metric", "observer", "worldline", "K"]
+      },
+      {
+        "card": "Orbit / Region Card",
+        "requiredFields": ["region", "stability", "tidalForce", "radiation", "energy", "exitPath", "engineeringBoundary"],
+        "rejectIfMissing": ["stability", "tidalForce", "radiation", "exitPath"]
+      },
+      {
+        "card": "Continuity Card",
+        "requiredFields": ["body", "cognition", "memory", "identity", "agency", "recovery", "continuityLossTrigger"],
+        "rejectIfMissing": ["cognition", "memory", "agency", "continuityLossTrigger"]
+      },
+      {
+        "card": "Window Card",
+        "requiredFields": ["targetTechnology", "maturitySignal", "adoptionCondition", "fallback", "windowProbability"],
+        "rejectIfMissing": ["targetTechnology", "maturitySignal", "adoptionCondition"]
+      },
+      {
+        "card": "Risk Card",
+        "requiredFields": ["lifeRisk", "engineeringRisk", "tailRisk", "governanceRisk", "opportunityCost", "abortThreshold"],
+        "rejectIfMissing": ["lifeRisk", "engineeringRisk", "tailRisk", "abortThreshold"]
+      },
+      {
+        "card": "Exit Card",
+        "requiredFields": ["exitMechanism", "recoverySystem", "communication", "externalReceiver", "reEntryCondition", "exitProbability"],
+        "rejectIfMissing": ["exitMechanism", "communication", "externalReceiver", "exitProbability"]
+      }
+    ],
+    "entryGate": "只有六类卡片都存在且没有 abort 触发项时，场景才能进入 NCG toy evaluation。",
+    "nonGoal": "模板不提供黑洞接近、航天任务、生命支持或人体实验步骤。"
+  },
+  "scenarioEvaluationRegistry": [
+    {
+      "id": "MRW-SC0",
+      "name": "弱场相对论时钟校准场景",
+      "scenarioType": "calibration-baseline",
+      "status": "not-a-waiting-room",
+      "linkedClaims": ["MRW-CL2", "MRW-CL6"],
+      "purpose": "用已验证弱场相对论效应校准 K 的概念，不进入主体等待收益判断。",
+      "cardStatus": {
+        "Metric Card": "partial",
+        "Orbit / Region Card": "not-applicable",
+        "Continuity Card": "not-applicable",
+        "Window Card": "not-applicable",
+        "Risk Card": "not-applicable",
+        "Exit Card": "not-applicable"
+      },
+      "keyVariables": ["K", "DeltaTExternal", "DeltaTauSubject"],
+      "ncgStatus": "not-evaluated",
+      "stopGate": "如果读者把校准场景当成等待室先例，必须回到 MRW-CL2 的 model-boundary。",
+      "nextEvidenceNeeded": "实验尺度、弱场边界和强场不可迁移说明。",
+      "nonClaim": "不声明该场景产生主体持续性收益。"
+    },
+    {
+      "id": "MRW-SC1",
+      "name": "普通黑洞自由落体未来观察负例",
+      "scenarioType": "negative-boundary-case",
+      "status": "literature-constrained",
+      "linkedClaims": ["MRW-CL4", "MRW-CL6"],
+      "purpose": "用黑洞未来观察限制文献约束“有限固有时看无限未来”的过度叙述。",
+      "cardStatus": {
+        "Metric Card": "partial",
+        "Orbit / Region Card": "blocked",
+        "Continuity Card": "blocked",
+        "Window Card": "missing",
+        "Risk Card": "blocked",
+        "Exit Card": "blocked"
+      },
+      "keyVariables": ["K", "PExit", "PContinuity", "RTail"],
+      "ncgStatus": "blocked-by-exit-and-continuity",
+      "stopGate": "PExit 或 PContinuity 不能定义为正时，不得进入 NCG 正收益叙述。",
+      "nextEvidenceNeeded": "自由落体、静止壳层和特殊轨道边界对照。",
+      "nonClaim": "不声明所有强红移等待路径都不可能。"
+    },
+    {
+      "id": "MRW-SC2",
+      "name": "近视界静止壳层等待思想实验",
+      "scenarioType": "theoretical-stress-test",
+      "status": "blocked-by-engineering-and-risk",
+      "linkedClaims": ["MRW-CL2", "MRW-CL5", "MRW-CL6"],
+      "purpose": "压力测试 K 高但风险、加速度、辐射、退出和机会成本可能使 NCG 为负的情况。",
+      "cardStatus": {
+        "Metric Card": "partial",
+        "Orbit / Region Card": "blocked",
+        "Continuity Card": "missing",
+        "Window Card": "missing",
+        "Risk Card": "blocked",
+        "Exit Card": "missing"
+      },
+      "keyVariables": ["K", "NCG", "RLife", "REngineering", "RTail", "COpportunity"],
+      "ncgStatus": "not-positive-under-current-evidence",
+      "stopGate": "只要加速度、生命支持、通信或退出路径缺失，就只能作为思想实验。",
+      "nextEvidenceNeeded": "明确 reference observer、worldline、proper acceleration、tidal/radiation risk 和 exit path。",
+      "nonClaim": "不提供近黑洞轨道任务方案。"
+    },
+    {
+      "id": "MRW-SC3",
+      "name": "可控红移等待区远期假设场景",
+      "scenarioType": "future-hypothesis",
+      "status": "speculative-architecture",
+      "linkedClaims": ["MRW-CL1", "MRW-CL3", "MRW-CL5", "MRW-CL6"],
+      "purpose": "承载“若未来存在可控强红移区域，则可递归等待”的条件性研究对象。",
+      "cardStatus": {
+        "Metric Card": "missing",
+        "Orbit / Region Card": "missing",
+        "Continuity Card": "missing",
+        "Window Card": "missing",
+        "Risk Card": "missing",
+        "Exit Card": "missing"
+      },
+      "keyVariables": ["K", "U", "PWindow", "PExit", "PAdopt", "PContinuity", "NCG"],
+      "ncgStatus": "cannot-evaluate",
+      "stopGate": "任一必需卡片缺失时，禁止从远期假设跳到可行性判断。",
+      "nextEvidenceNeeded": "完整六卡片、风险阈值、状态转移函数和至少一个 toy NCG 反例。",
+      "nonClaim": "不声明人工黑洞、类黑洞或度规工程当前可制造。"
+    }
+  ],
+  "toyNcgEvaluationSpec": {
+    "protocolVersion": "0.1",
+    "purpose": "把 NCG 从解释性公式推进为可审查的玩具评估协议；它只判断场景是否具备进入定量建模的最低资料条件，不输出现实可行性结论。",
+    "inputContract": [
+      {"field": "timeCompression", "sourceCard": "Metric Card", "variable": "K", "requiredStatus": "defined-or-calibration-only", "rejectIfMissing": true},
+      {"field": "technologyUtility", "sourceCard": "Window Card", "variable": "U", "requiredStatus": "defined-with-target-technology", "rejectIfMissing": true},
+      {"field": "windowProbability", "sourceCard": "Window Card", "variable": "PWindow", "requiredStatus": "bounded-or-explicitly-unknown", "rejectIfMissing": true},
+      {"field": "exitProbability", "sourceCard": "Exit Card", "variable": "PExit", "requiredStatus": "bounded-positive", "rejectIfMissing": true},
+      {"field": "adoptionProbability", "sourceCard": "Window Card", "variable": "PAdopt", "requiredStatus": "bounded-positive", "rejectIfMissing": true},
+      {"field": "continuityProbability", "sourceCard": "Continuity Card", "variable": "PContinuity", "requiredStatus": "bounded-positive", "rejectIfMissing": true},
+      {"field": "riskCosts", "sourceCard": "Risk Card", "variable": "RLife", "requiredStatus": "normalized-cost-scale", "rejectIfMissing": true},
+      {"field": "opportunityCost", "sourceCard": "Risk Card", "variable": "COpportunity", "requiredStatus": "normalized-cost-scale", "rejectIfMissing": true}
+    ],
+    "normalizationRule": "所有收益、概率门、风险扣减和机会成本必须先归一到同一主体持续性尺度；不能用 K 的数量级替代 NCG。",
+    "formula": "NCG_i = K_i * U_i * PWindow_i * PExit_i * PAdopt_i * PContinuity_i - RLife_i - REngineering_i - RTail_i - COpportunity_i",
+    "evaluationSteps": [
+      {"step": "E1", "operation": "检查六类 Scenario Cards 是否完整", "reason": "资料不完整时不能进入玩具评估", "failureIf": "任一 rejectIfMissing 字段缺失"},
+      {"step": "E2", "operation": "标注 K 的参考观察者、世界线和适用边界", "reason": "防止把坐标时、固有时和传播直觉混用", "failureIf": "无法说明 timeComparisonBoundary"},
+      {"step": "E3", "operation": "为概率门设置 bounded / unknown / blocked 状态", "reason": "退出、采用和连续性是等待收益的乘法门", "failureIf": "任一必需概率门被默认为 1"},
+      {"step": "E4", "operation": "把生命、工程、尾部风险和机会成本归一为扣减项", "reason": "高 K 场景可能被风险项完全抵消", "failureIf": "风险只用自然语言形容而没有归一尺度"},
+      {"step": "E5", "operation": "给出 NCG 方向性判定：positive / negative / blocked / cannot-evaluate", "reason": "当前阶段只允许方向性 toy result", "failureIf": "输出具体寿命、个人建议或现实任务方案"},
+      {"step": "E6", "operation": "记录主导阻塞项和下一步资料需求", "reason": "把失败场景转化为后续研究队列", "failureIf": "只给结论，不给 blocker 和 next work"}
+    ],
+    "interpretationRule": "toy NCG 的输出是研究分类结果，不是物理实验结果、工程承诺或个人决策建议。",
+    "forbiddenUse": "不得用 toy NCG 输出替代航天、生命支持、黑洞工程、医学或伦理审查。",
+    "promotionGate": "至少出现一个完整六卡片场景、一个 K 高但 NCG 为负的反例、一个校准基线和一个 cannot-evaluate 远期假设后，才允许进入交互式定量图表。"
+  },
+  "toyNcgEvaluationRegistry": [
+    {
+      "id": "MRW-TOY0",
+      "scenarioId": "MRW-SC0",
+      "evaluationStatus": "calibration-only",
+      "normalizedInputs": [
+        {"symbol": "K", "status": "defined-in-weak-field-clock-context", "notes": "只能校准时间差概念。"},
+        {"symbol": "NCG", "status": "not-applicable", "notes": "没有主体等待、退出、采用或连续性对象。"}
+      ],
+      "expectedNcgDirection": "not-applicable",
+      "dominantBlocker": "不是等待室场景，不能转换成主体持续性收益。",
+      "decision": "保留为物理概念校准基线。",
+      "linkedClaims": ["MRW-CL2", "MRW-CL6"],
+      "requiredNextWork": "补充弱场校准说明，明确不可迁移到强场工程。",
+      "nonClaim": "不声明实验时钟差可以支持黑洞等待室可行。"
+    },
+    {
+      "id": "MRW-TOY1",
+      "scenarioId": "MRW-SC1",
+      "evaluationStatus": "blocked",
+      "normalizedInputs": [
+        {"symbol": "K", "status": "theory-dependent", "notes": "普通黑洞未来观察限制文献已约束过度叙述。"},
+        {"symbol": "PExit", "status": "blocked", "notes": "自由落体或不可退出路径不能成为等待协议。"},
+        {"symbol": "PContinuity", "status": "blocked", "notes": "主体连续性缺少可恢复路径。"}
+      ],
+      "expectedNcgDirection": "blocked-negative",
+      "dominantBlocker": "退出门和主体连续性门无法定义为正。",
+      "decision": "作为负例边界保留，禁止正收益叙述。",
+      "linkedClaims": ["MRW-CL4", "MRW-CL6"],
+      "requiredNextWork": "区分自由落体、静止壳层和特殊轨道的边界。",
+      "nonClaim": "不声明所有强红移等待路径都被该负例否定。"
+    },
+    {
+      "id": "MRW-TOY2",
+      "scenarioId": "MRW-SC2",
+      "evaluationStatus": "blocked-by-risk-costs",
+      "normalizedInputs": [
+        {"symbol": "K", "status": "potentially-high-but-incomplete", "notes": "倍率直觉存在，但世界线和加速度条件不完整。"},
+        {"symbol": "RLife", "status": "dominant-cost", "notes": "潮汐、辐射、生命支持和加速度风险优先扣减。"},
+        {"symbol": "REngineering", "status": "dominant-cost", "notes": "稳定维持和退出路径未给出。"},
+        {"symbol": "COpportunity", "status": "unknown-cost", "notes": "等待外部技术窗口的替代路径未比较。"}
+      ],
+      "expectedNcgDirection": "negative-under-current-evidence",
+      "dominantBlocker": "工程风险、生命风险和机会成本压倒倍率收益。",
+      "decision": "保留为高 K 低 NCG 的压力测试反例。",
+      "linkedClaims": ["MRW-CL2", "MRW-CL5", "MRW-CL6"],
+      "requiredNextWork": "补齐参考观察者、proper acceleration、tidal/radiation risk、communication 和 exit path。",
+      "nonClaim": "不提供近视界等待任务方案。"
+    },
+    {
+      "id": "MRW-TOY3",
+      "scenarioId": "MRW-SC3",
+      "evaluationStatus": "cannot-evaluate",
+      "normalizedInputs": [
+        {"symbol": "K", "status": "missing", "notes": "可控红移区域尚未定义。"},
+        {"symbol": "PWindow", "status": "missing", "notes": "目标技术窗口和成熟信号缺失。"},
+        {"symbol": "PExit", "status": "missing", "notes": "退出和外部回收机制缺失。"},
+        {"symbol": "PContinuity", "status": "missing", "notes": "主体连续性卡片缺失。"},
+        {"symbol": "NCG", "status": "cannot-evaluate", "notes": "六卡片缺失，禁止方向性收益判断。"}
+      ],
+      "expectedNcgDirection": "cannot-evaluate",
+      "dominantBlocker": "远期假设没有提交六类卡片。",
+      "decision": "仅作为未来假设对象保留。",
+      "linkedClaims": ["MRW-CL1", "MRW-CL3", "MRW-CL5", "MRW-CL6"],
+      "requiredNextWork": "提交完整 Scenario Cards 后再进入 toy NCG。",
+      "nonClaim": "不声明人工黑洞、类黑洞或度规工程当前可制造。"
+    }
+  ],
+  "ncgFormulaDecompositionFigure": {
+    "figureId": "F4",
+    "title": "NCG Formula Decomposition",
+    "purpose": "把 NCG 拆成收益放大、概率门、风险扣减和机会成本四组，说明 K 只是固有时压缩代理变量，不是等待路径收益本身。",
+    "layout": "left-to-right formula decomposition without numerical axis",
+    "formula": "NCG_i = K_i * U_i * PWindow_i * PExit_i * PAdopt_i * PContinuity_i - RLife_i - REngineering_i - RTail_i - COpportunity_i",
+    "blocks": [
+      {
+        "id": "NCG-B1",
+        "group": "time-and-upgrade-gain",
+        "operation": "multiply",
+        "variables": ["K", "U"],
+        "role": "把主体固有时压缩和外部技术升级收益合成理论毛收益。",
+        "interpretation": "K 提供等待时间差，U 决定外部世界是否真的产生可采用升级；任一项薄弱都会削弱毛收益。"
+      },
+      {
+        "id": "NCG-B2",
+        "group": "probability-gates",
+        "operation": "multiply",
+        "variables": ["PWindow", "PExit", "PAdopt", "PContinuity"],
+        "role": "把技术窗口、退出、采用和主体连续性变成乘法门。",
+        "interpretation": "概率门不是装饰项；任一门接近零时，高 K 也不能推出正收益。"
+      },
+      {
+        "id": "NCG-B3",
+        "group": "risk-deductions",
+        "operation": "subtract",
+        "variables": ["RLife", "REngineering", "RTail"],
+        "role": "扣除生命支持、工程和尾部失控风险。",
+        "interpretation": "风险项优先约束可行性；不可逆失败不能被平均收益掩盖。"
+      },
+      {
+        "id": "NCG-B4",
+        "group": "opportunity-cost",
+        "operation": "subtract",
+        "variables": ["COpportunity"],
+        "role": "扣除进入等待路径导致错过当前行动、治理和修复路径的成本。",
+        "interpretation": "等待不是免费期权；等待期间放弃的可行动路径必须进入同一持续性尺度。"
+      },
+      {
+        "id": "NCG-B5",
+        "group": "decision-output",
+        "operation": "classify",
+        "variables": ["NCG"],
+        "role": "输出 positive / negative / blocked / cannot-evaluate 的研究分类。",
+        "interpretation": "当前论文只允许方向性研究分类，不输出个人寿命预测或现实任务方案。"
+      }
+    ],
+    "caption": "Figure 4. NCG Formula Decomposition. 净持续性收益把时间倍率 K 降级为一个输入项；等待路径必须同时通过技术收益、概率门、风险扣减和机会成本审查。",
+    "designAudit": {
+      "figureType": "solution-overview model figure",
+      "paradigm": "formula decomposition diagram",
+      "tooling": "arXiv-compatible HTML table now; future vector SVG may reuse the same JSON blocks",
+      "qualityGate": "no numerical axis, no fabricated values, no colour-only encoding, caption states the core claim"
+    }
+  },
+  "failureConditions": [
+    {"condition": "倍率无效", "signal": "K 太低，工程成本超过等待收益。"},
+    {"condition": "进入失败", "signal": "旅行时间、加速度、辐射或补给成本不可接受。"},
+    {"condition": "停留失败", "signal": "潮汐力、辐射、能源或闭环维生无法控制。"},
+    {"condition": "退出失败", "signal": "不可逆跨越事件视界，或轨道不可恢复。"},
+    {"condition": "通信失败", "signal": "信号红移、延迟、噪声或方向性使信息不可用。"},
+    {"condition": "连续性失败", "signal": "等待保住身体位置，却破坏主体连续性。"},
+    {"condition": "递归收益失败", "signal": "技术升级不作用于等待风险或主体维护。"},
+    {"condition": "净收益失败", "signal": "路径带来更高死亡风险、失控风险或不可逆损失。"}
+  ],
+  "figurePlan": [
+    {
+      "id": "F1",
+      "type": "motivated example / mechanism flow",
+      "description": "可控红移等待区到主体固有时压缩、外部技术推进、退出采用技术和下一轮等待改善的主链路。",
+      "dataSource": "manual mechanism sketch backed by problemAnchor and claimRegister",
+      "priority": "HIGH",
+      "caption": "度规红移递归等待把等待未来的成本从外部日历时间改写为主体固有时成本，但只有退出、采用和连续性条件同时成立时才有持续性收益。",
+      "designAudit": "Text figure is acceptable for arXiv-style draft; future visual version should use a left-to-right state machine with explicit risk gates.",
+      "status": "implemented as arXiv-compatible text figure"
+    },
+    {
+      "id": "F2",
+      "type": "solution overview / state machine",
+      "description": "S0-S6 生命周期状态机，展示每个阶段的失败模式。",
+      "dataSource": "stateMachine",
+      "priority": "HIGH",
+      "caption": "等待路径不是“进入等待区”一个动作，而是外部准备、转移、进入、维生、窗口判断、退出回收和技术采用的完整生命周期。",
+      "designAudit": "Current table is accurate; future SVG should encode each state with one critical failure signal and one required card.",
+      "status": "data-backed table"
+    },
+    {
+      "id": "F3",
+      "type": "claim-evidence matrix",
+      "description": "MRW-CL1 到 MRW-CL7 的 claim、sources、variables 和 boundary。",
+      "dataSource": "claimEvidenceMap",
+      "priority": "HIGH",
+      "caption": "每个核心主张必须同时绑定来源、变量和使用边界；来源存在不等于工程可行。",
+      "designAudit": "Current table is submission-useful; future version may split into evidence layer map and claim matrix to reduce width.",
+      "status": "data-backed table"
+    },
+    {
+      "id": "F4",
+      "type": "model figure",
+      "description": "NCG 公式分解图，把 K、U、P_window、P_exit、P_adopt、P_continuity、R_life、R_engineering、R_tail 和 C_opportunity 分成收益门、概率门、风险扣减和机会成本。",
+      "dataSource": "ncgFormulaDecompositionFigure + variableDictionary",
+      "priority": "MEDIUM",
+      "caption": "净持续性收益 NCG 把时间倍率从单一亮点降级为一个必须接受概率门和风险扣减审查的变量。",
+      "designAudit": "Implemented as an arXiv-compatible formula decomposition table. It intentionally avoids axes and numeric encodings until scenario data exists.",
+      "status": "implemented as data-backed formula decomposition figure"
+    }
+  ],
+  "citationContextRegister": [
+    {
+      "id": "MRW-CTX1",
+      "claimIds": ["MRW-CL2"],
+      "sourceKeys": ["pound1959redshift", "vessot1980gravityProbeA", "ashby2003gps"],
+      "context": "实验和工程系统证明相对论时钟差是现实物理效应。",
+      "safeUse": "用于支持引力红移、空间钟和工程系统中的相对论校正真实存在。",
+      "forbiddenUse": "不得用于支持黑洞等待室、人工强红移工程、人体等待或退出可行性。",
+      "reviewStatus": "LOCAL_PRECHECK_ONLY"
+    },
+    {
+      "id": "MRW-CTX2",
+      "claimIds": ["MRW-CL1", "MRW-CL5", "MRW-CL6"],
+      "sourceKeys": ["nasaBlackHoleTooClose", "nasaBlackHoleVisualization"],
+      "context": "NASA 黑洞材料用于强场直觉、红移风险和事件视界风险说明。",
+      "safeUse": "用于通俗解释强引力、时间膨胀、红移和接近事件视界的风险。",
+      "forbiddenUse": "不得作为轨道稳定、生命支持、通信、返航或工程可行性证据。",
+      "reviewStatus": "LOCAL_PRECHECK_ONLY"
+    },
+    {
+      "id": "MRW-CTX3",
+      "claimIds": ["MRW-CL4", "MRW-CL6"],
+      "sourceKeys": ["grib2009infiniteFuture", "pavlov2012futureObservation"],
+      "context": "黑洞未来观察限制文献用于约束“有限固有时看无限未来”的叙述。",
+      "safeUse": "用于说明普通黑洞自由落体不能直接推出观察外部无限未来，以及 Kerr / 特殊轨道条件需要谨慎。",
+      "forbiddenUse": "不得写成所有强红移等待路径不可能，也不得写成现实等待室可行。",
+      "reviewStatus": "LOCAL_PRECHECK_ONLY"
+    },
+    {
+      "id": "MRW-CTX4",
+      "claimIds": ["MRW-CL7"],
+      "sourceKeys": ["etesi2002malamentHogarth", "welch2006malamentHogarth", "earmanNortonForeverDay"],
+      "context": "Malament-Hogarth 文献用于极限时空、相对论超计算和哲学边界。",
+      "safeUse": "用于说明某些理论时空中存在有限固有时接收极长过程结果的概念空间。",
+      "forbiddenUse": "不得转写为普通黑洞、人体等待、可制造等待室或可执行工程路线。",
+      "reviewStatus": "LOCAL_PRECHECK_ONLY"
+    },
+    {
+      "id": "MRW-CTX5",
+      "claimIds": ["MRW-CL7"],
+      "sourceKeys": ["lewis1976timeTravel"],
+      "context": "时间旅行哲学文献用于区分概念悖论和物理工程问题。",
+      "safeUse": "用于说明时间旅行相关概念需要逻辑边界。",
+      "forbiddenUse": "不得作为强引力时间膨胀、Malament-Hogarth 时空或黑洞工程证据。",
+      "reviewStatus": "LOCAL_PRECHECK_ONLY"
+    },
+    {
+      "id": "MRW-CTX6",
+      "claimIds": ["MRW-CL1", "MRW-CL3", "MRW-CL5"],
+      "sourceKeys": ["humanInfraEffectiveImmortality"],
+      "context": "Human Infra 有效永生飞轮用于把等待收益放回主体持续性、能力系统、技术系统和可能性空间。",
+      "safeUse": "用于支持 Human Infra 价值框架、主体持续性目标和递归升级语言。",
+      "forbiddenUse": "不得替代相对论、生命支持、工程风险或天体物理证据。",
+      "reviewStatus": "LOCAL_PRECHECK_ONLY"
+    },
+    {
+      "id": "MRW-CTX7",
+      "claimIds": ["MRW-CL5", "MRW-CL6"],
+      "sourceKeys": ["humanInfraEffectiveImmortality", "nasaBlackHoleTooClose", "pavlov2012futureObservation"],
+      "context": "治理结论由 Human Infra 目标函数和黑洞风险边界共同限定。",
+      "safeUse": "用于说明 NCG 必须扣除生命支持、工程、尾部风险和机会成本。",
+      "forbiddenUse": "不得输出个体建议、现实任务方案或安全承诺。",
+      "reviewStatus": "LOCAL_PRECHECK_ONLY"
+    }
+  ],
+  "preSubmissionReviewRegister": [
+    {
+      "id": "MRW-PSR1",
+      "dimension": "citation-grounding",
+      "severity": "CRITICAL",
+      "finding": "已生成 citation context review packet 和本地边界审查，但尚未完成外部 fresh reviewer 逐项引用语境 verdict。",
+      "quotedEvidence": "CITATION_CONTEXT_LOCAL_REVIEW: LOCAL_REVIEW_COMPLETE_REQUIRES_FRESH_REVIEW",
+      "blockingGate": "每个 MRW-CTX 条目必须由独立 reviewer 完成来源存在、元数据、上下文支持和 forbidden-use 风险核验。",
+      "suggestedFix": "把 CITATION_CONTEXT_REVIEW_PACKET 交给 fresh reviewer，并对 MRW-CTX1 到 MRW-CTX7 逐项记录 PASS / WARN / FAIL。",
+      "linkedSections": ["S9", "S13", "S17"],
+      "status": "blocks-submission"
+    },
+    {
+      "id": "MRW-PSR2",
+      "dimension": "evidence-and-experiment",
+      "severity": "MAJOR",
+      "finding": "已经新增 symbolic scenario evaluator，但当前 4 个场景仍没有任何 quantitative-ready 评估，缺真实工程数据、轨道模型和生命支持模型。",
+      "quotedEvidence": "SCENARIO_EVALUATION_AUDIT: quantitative-ready evaluations = 0",
+      "blockingGate": "至少需要一个完整六卡片场景或可复现 symbolic scenario，能明确给出 K、概率门、风险扣减和 NCG 方向性结果。",
+      "suggestedFix": "继续把 MRW-SC3 拆成完整输入卡片，或新增一个非人体、非工程承诺的 synthetic scenario，用于测试 evaluator 的正负方向性。",
+      "linkedSections": ["S7", "S12"],
+      "status": "major-revision-needed"
+    },
+    {
+      "id": "MRW-PSR3",
+      "dimension": "model-validity",
+      "severity": "MAJOR",
+      "finding": "NCG 的收益、风险和机会成本仍是规范化接口，尚未定义可比较的量纲和尺度。",
+      "quotedEvidence": "所有收益、概率门、风险扣减和机会成本必须先归一到同一主体持续性尺度。",
+      "blockingGate": "必须给出至少一个尺度定义方案，并说明哪些变量只能保持 qualitative 状态。",
+      "suggestedFix": "把 NCG 拆成 qualitative gate、ordinal score 和 future quantitative estimand 三层，避免直接伪装成实证量。",
+      "linkedSections": ["S7", "S15", "S16"],
+      "status": "major-revision-needed"
+    },
+    {
+      "id": "MRW-PSR4",
+      "dimension": "related-work",
+      "severity": "MAJOR",
+      "finding": "文献地图覆盖红移、黑洞未来观察和 Malament-Hogarth 边界，但尚未系统覆盖强场工程、相对论任务设计、生命支持与深空风险治理。",
+      "quotedEvidence": "本文不提供黑洞接近、轨道控制、太空任务、生命支持工程或人体实验步骤。",
+      "blockingGate": "必须补充 related-work screening rubric，区分物理可行性、工程可达性、主体连续性和治理边界四类文献。",
+      "suggestedFix": "新增系统检索协议和候选文献筛选表，不把科普来源替代工程或物理论文。",
+      "linkedSections": ["S9", "S18"],
+      "status": "major-revision-needed"
+    },
+    {
+      "id": "MRW-PSR5",
+      "dimension": "figure-quality",
+      "severity": "MINOR",
+      "finding": "F1 和 F4 当前是 arXiv 兼容文本/表格图，适合作为工作论文，但正式投稿需要统一图号、标题和向量图导出策略。",
+      "quotedEvidence": "implemented as data-backed formula decomposition figure",
+      "blockingGate": "所有核心图必须能从结构化数据再生成，并保留 caption、变量来源和禁止解读。",
+      "suggestedFix": "后续用同一 JSON 生成 SVG/PDF 版本，同时保留 HTML table fallback。",
+      "linkedSections": ["S1", "S7", "S17"],
+      "status": "polish-before-submission"
+    },
+    {
+      "id": "MRW-PSR6",
+      "dimension": "format-and-language",
+      "severity": "MAJOR",
+      "finding": "当前是中文 arXiv-style working paper 页面，不是目标期刊或会议的英文 LaTeX 投稿稿。",
+      "quotedEvidence": "Working paper v0.2 / 2026-06-29",
+      "blockingGate": "如果进入正式投稿，必须确定目标 venue、页限、引用格式、英文术语表和 LaTeX 源稿。",
+      "suggestedFix": "先冻结中文研究页为 source of truth，再生成英文 LaTeX draft 和 references.bib。",
+      "linkedSections": ["abstract1", "S17"],
+      "status": "major-revision-needed"
+    }
+  ],
+  "auditContract": {
+    "requiredPageStrings": [
+      "Working paper v0.2",
+      "Claim-Evidence Matrix",
+      "变量契约",
+      "图表计划与引用预审",
+      "模型假设与命题注册表",
+      "主张成熟度与反证队列",
+      "Source Card Ledger",
+      "Scenario Card Template",
+      "Toy NCG Evaluation Protocol",
+      "Toy NCG Evaluation Registry",
+      "NCG Formula Decomposition",
+      "Pre-Submission Review Register",
+      "Scenario Evaluation Audit",
+      "Citation Context Review Packet",
+      "Citation Context Local Review",
+      "度规红移递归等待假设",
+      "tradecatlabs"
+    ],
+    "minimumCounts": {
+      "claims": 7,
+      "sources": 10,
+      "variables": 12,
+      "stateMachineStates": 7,
+      "researchProtocolCards": 6,
+      "figurePlan": 4,
+      "citationContextRegister": 7,
+      "modelAssumptions": 8,
+      "propositionRegister": 4,
+      "claimMaturityRegister": 7,
+      "falsifierRegister": 7,
+      "sourceCardLedger": 12,
+      "scenarioCardTemplateRequiredCards": 6,
+      "scenarioEvaluationRegistry": 4,
+      "toyNcgEvaluationSpecSteps": 6,
+      "toyNcgEvaluationRegistry": 4,
+      "ncgFormulaDecompositionBlocks": 5,
+      "preSubmissionReviewRegister": 6,
+      "scenarioEvaluationAuditRows": 4,
+      "citationContextReviewPacketRows": 7,
+      "citationContextLocalReviewRows": 7
+    }
+  }
+}

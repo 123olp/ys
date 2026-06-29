@@ -1,0 +1,63 @@
+{
+  "audit": "proper-time-differential-reference-verification",
+  "verdict": "PASS",
+  "reasonCode": "all_reference_urls_accessible",
+  "summary": "All proper-time differential reference URLs were accessible or locally present at verification time.",
+  "generatedAt": "2026-06-29T14:06:41.007Z",
+  "auditedInputHashes": {
+    "src/data/proper-time-differential-waiting-hypothesis.json": "sha256:9405df1e1f5a8eaf78adc6c26e41cceb931da28e0a6319848e0cbeeb17520352"
+  },
+  "details": {
+    "referenceCount": 5,
+    "counts": {
+      "PASS": 5
+    },
+    "perEntry": [
+      {
+        "key": "Carroll",
+        "title": "Lecture Notes on General Relativity",
+        "url": "https://arxiv.org/abs/gr-qc/9712019",
+        "method": "CURL_HEAD",
+        "liveStatus": "PASS",
+        "statusCode": 200,
+        "note": "Reference URL responded successfully."
+      },
+      {
+        "key": "Zaslavskii",
+        "title": "On the possibility of observation of the future for movement in the field of black holes of different types",
+        "url": "https://arxiv.org/abs/1203.4000",
+        "method": "CURL_HEAD",
+        "liveStatus": "PASS",
+        "statusCode": 200,
+        "note": "Reference URL responded successfully."
+      },
+      {
+        "key": "Etesi-Nemeti",
+        "title": "Non-Turing computations via Malament-Hogarth space-times",
+        "url": "https://arxiv.org/abs/gr-qc/0104023",
+        "method": "CURL_HEAD",
+        "liveStatus": "PASS",
+        "statusCode": 200,
+        "note": "Reference URL responded successfully."
+      },
+      {
+        "key": "NASA Science",
+        "title": "What Happens When Something Gets Too Close to a Black Hole?",
+        "url": "https://science.nasa.gov/universe/what-happens-when-something-gets-too-close-to-a-black-hole/",
+        "method": "CURL_HEAD",
+        "liveStatus": "PASS",
+        "statusCode": 200,
+        "note": "Reference URL responded successfully."
+      },
+      {
+        "key": "Human Infra",
+        "title": "Effective Immortality Flywheel",
+        "url": "/papers/effective-immortality-flywheel/",
+        "method": "LOCAL_ROUTE",
+        "liveStatus": "PASS",
+        "statusCode": 200,
+        "note": "Local route source exists at src/pages/papers/effective-immortality-flywheel.astro."
+      }
+    ]
+  }
+}

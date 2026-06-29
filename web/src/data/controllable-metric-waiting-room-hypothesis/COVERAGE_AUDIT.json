@@ -1,0 +1,70 @@
+{
+  "generatedAt": "2026-06-29T14:50:09.034Z",
+  "verdict": "PASS",
+  "summary": {
+    "sectionCount": 14,
+    "tocCount": 14,
+    "duplicateClassAttributes": 0,
+    "collectionCounts": {
+      "conceptRows": 6,
+      "hypothesisRows": 5,
+      "researchQuestionRows": 5,
+      "stateRows": 7,
+      "loopRows": 7,
+      "variableRows": 8,
+      "formalAssumptionRows": 8,
+      "equationRows": 8,
+      "propositionRows": 6,
+      "claimEvidenceRows": 5,
+      "citationContextRows": 5,
+      "preSubmissionReviewRows": 5,
+      "scenarioRows": 5,
+      "qualitativeGateScaleRows": 6,
+      "scenarioEvaluationRows": 5,
+      "scenarioMatrixRows": 5,
+      "gateColumnRows": 8,
+      "falsifierRows": 6,
+      "protocolRows": 6,
+      "evidenceNeedRows": 7,
+      "evaluationRoadmapRows": 6,
+      "sourceRows": 5
+    },
+    "artifacts": [
+      {
+        "label": "Reference Verification",
+        "path": "src/data/controllable-metric-waiting-room-hypothesis/REFERENCE_VERIFICATION.json",
+        "status": "PASS",
+        "verdict": "PASS"
+      },
+      {
+        "label": "Citation Context Review Packet",
+        "path": "src/data/controllable-metric-waiting-room-hypothesis/CITATION_CONTEXT_REVIEW_PACKET.json",
+        "status": "PASS",
+        "verdict": "READY_FOR_EXTERNAL_REVIEW"
+      },
+      {
+        "label": "Citation Context Local Review",
+        "path": "src/data/controllable-metric-waiting-room-hypothesis/CITATION_CONTEXT_LOCAL_REVIEW.json",
+        "status": "PASS",
+        "verdict": "LOCAL_REVIEW_COMPLETE_REQUIRES_FRESH_REVIEW"
+      },
+      {
+        "label": "Pre-Submission Review",
+        "path": "src/data/controllable-metric-waiting-room-hypothesis/PRE_SUBMISSION_REVIEW.json",
+        "status": "PASS",
+        "verdict": "NEEDS_EXTERNAL_REVIEW_BEFORE_FORMAL_SUBMISSION"
+      }
+    ]
+  },
+  "findings": [],
+  "contract": {
+    "toolSeedPath": "src/data/controllable-metric-waiting-room-hypothesis/TOOL_GENERATED_PAGE_SEED.astro",
+    "derivationPackagePath": "src/data/controllable-metric-waiting-room-hypothesis/DERIVATION_PACKAGE.md",
+    "referenceVerificationPath": "src/data/controllable-metric-waiting-room-hypothesis/REFERENCE_VERIFICATION.json",
+    "citationContextPacketPath": "src/data/controllable-metric-waiting-room-hypothesis/CITATION_CONTEXT_REVIEW_PACKET.json",
+    "citationContextLocalReviewPath": "src/data/controllable-metric-waiting-room-hypothesis/CITATION_CONTEXT_LOCAL_REVIEW.json",
+    "preSubmissionReviewPath": "src/data/controllable-metric-waiting-room-hypothesis/PRE_SUBMISSION_REVIEW.json",
+    "pagePath": "src/pages/papers/controllable-metric-waiting-room-hypothesis.astro",
+    "dataPath": "src/data/controllable-metric-waiting-room-hypothesis.json"
+  }
+}

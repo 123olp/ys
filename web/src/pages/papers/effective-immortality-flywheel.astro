@@ -1,0 +1,1150 @@
+---
+import PaperReaderLayout from "../../layouts/PaperReaderLayout.astro";
+import evidenceData from "../../data/effective-immortality-evidence.json";
+
+const hypothesisRows = [
+  ["H1", "主体持续时间延长会增加学习、试错和修正轮次。", "时间是否转化为有效轮次，而不是被疾病、噪音和低效吞噬。"],
+  ["H2", "更多轮次会沉淀为能力、资源和协作网络。", "积累是否可迁移，是否会被遗忘、衰退或路径锁定抵消。"],
+  ["H3", "积累会降低长期目标的信息成本、试错成本和重新开始成本。", "成本下降是否可观测，是否只发生在少数高资源主体。"],
+  ["H4", "长期目标失败成本下降会提高等待、接触、采用和整合新技术的能力。", "主体是否能等到技术成熟，并在出现后实际使用。"],
+  ["H5", "新技术会增强身体、认知、注意力、记忆、工具使用和恢复能力。", "技术是否稳定有效，是否引入依赖、副作用或尾部风险。"],
+  ["H6", "主体增强会提高单位时间行动质量和创造密度。", "同样时间内是否真的能处理更复杂、更长期的问题。"],
+  ["H7", "可解决问题范围扩大后，可能性空间和未来选择权增加。", "新增路径是否真实可进入，而不是抽象愿望。"],
+  ["H8", "可能性空间扩大能反过来强化主体持续性。", "新路径是否带来健康、资源、恢复、风险治理和技术窗口。"]
+];
+
+const contributionRows = [
+  ["C1", "把有效永生从单纯延寿改写为主体持续性、能力系统、技术系统和可能性空间的反馈问题。", "单一主链与因果图。"],
+  ["C2", "提出 T/E/R/C/A/Q/O 七变量接口，连接寿命、有效时间、学习轮次、积累资本、技术采用、行动质量和未来选择权。", "最小变量模型。"],
+  ["C3", "将主链拆成可检验边，并为每条边标注来源、证据角色、置信、断裂条件和模型任务。", "Evidence Matrix v1.3。"],
+  ["C4", "引入因果评估协议，要求技术或干预必须说明 comparator、time zero、outcome、estimand、识别假设和不确定性。", "因果评估协议。"],
+  ["C5", "将技术/干预拆成 AI、医学、可穿戴、知识管理、自动化与资源环境六类，分别进入不同模型位置和风险通道。", "技术族注册表。"]
+];
+
+const falsifierRows = [
+  ["T -> E", "延长的寿命窗口保留健康质量、认知功能、行动能力和主体性。", "寿命延长主要增加失能、痛苦、依赖或不可行动时间。"],
+  ["E -> R", "更多有效时间带来更多有目标、有反馈、有复盘的学习和项目轮次。", "增加的时间被噪音、疾病、碎片化注意力或无反馈重复消耗。"],
+  ["R -> C", "轮次沉淀为可迁移技能、知识结构、判断力、资源和协作网络。", "学习饱和、遗忘、错误反馈、路径锁定或能力不可迁移。"],
+  ["C -> A", "积累降低新技术理解、评估、试用和整合成本。", "技术不可及、学习成本过高、信任错误或采用后无法嵌入工作流。"],
+  ["A -> Q", "技术在明确任务边界内提高速度、质量、反馈吸收或问题复杂度上限。", "技术越界、幻觉、过度依赖、副作用或 QA 成本抵消收益。"],
+  ["O -> T/E", "可能性空间通过医疗可及、恢复、风险治理、社会支持和资源冗余反哺主体持续性。", "新路径无法访问，或带来更大暴露、剥削、监控、风险和恢复负担。"]
+];
+
+const evidenceEdgeRows = evidenceData.evidenceEdges;
+const evidenceClassRows = evidenceData.evidenceClasses;
+const technologyFamilyRows = evidenceData.technologyFamilies;
+const claimRegisterRows = evidenceData.claimRegister;
+const claimEvidenceMapRows = evidenceData.claimEvidenceMap;
+const variableDictionaryRows = evidenceData.variableDictionary;
+const modelContract = evidenceData.modelContract;
+const threatsToValidityRows = evidenceData.threatsToValidity;
+const researchDeclarationRows = evidenceData.researchDeclarations;
+const estimandRegistryRows = evidenceData.estimandRegistry;
+const analysisPlanRows = evidenceData.analysisPlanRegistry;
+const failureModeAuditRows = evidenceData.aiResearchFailureModeAudit;
+const rivalModelRows = evidenceData.rivalModels;
+const modelComparisonProtocolRows = evidenceData.modelComparisonProtocol;
+const candidateModelSpecificationRows = evidenceData.candidateModelSpecifications;
+const modelComparisonReportingRows = evidenceData.modelComparisonReportingMatrix;
+const modelComparisonResultContractRows = evidenceData.modelComparisonResultContract;
+const reproducibilityAnchorRows = evidenceData.reproducibilityAnchors;
+const citationContextRows = evidenceData.citationContextRegister;
+const referenceRegistryRows = evidenceData.referenceRegistry;
+const aiTaskEvidenceRows = evidenceData.aiTaskEvidenceRegister;
+const researchQuestionBrief = evidenceData.researchQuestionBrief;
+const methodologyBlueprint = evidenceData.methodologyBlueprint;
+const researchExecutionRoadmapRows = evidenceData.researchExecutionRoadmap;
+const searchStrategySeedRows = evidenceData.searchStrategySeeds;
+const systematicSearchProtocol = evidenceData.systematicSearchProtocol;
+const literatureScreeningRubricRows = evidenceData.literatureScreeningRubric;
+const literatureGapMapRows = evidenceData.literatureGapMap;
+const searchExecutionRows = evidenceData.searchExecutionRegister;
+const searchExecutionVerificationRows = evidenceData.searchExecutionVerificationRegister;
+const searchExecutionExtractionRows = evidenceData.searchExecutionExtractionRegister;
+const promotionCount = (decision) => searchExecutionExtractionRows.filter((row) => row.promotionDecision === decision).length;
+const candidateSourcePromotionRows = [
+  ["方法卡片草案", "METHOD_SOURCE_CARD_DRAFT", promotionCount("METHOD_SOURCE_CARD_DRAFT"), "RMST、部署后 AI 监测和 target-trial style 因果协议。", "进入方法、报告和治理门禁；不进入干预效果结论。"],
+  ["方法卡片草案（工作论文边界）", "METHOD_SOURCE_CARD_DRAFT_WITH_WORKING_PAPER_CAVEAT", promotionCount("METHOD_SOURCE_CARD_DRAFT_WITH_WORKING_PAPER_CAVEAT"), "机会集合 / capability set 测量方法。", "可用于 Q -> O 测量语言；不得写成任务质量必然扩大真实选项。"],
+  ["来源卡片草案", "SOURCE_CARD_DRAFT", promotionCount("SOURCE_CARD_DRAFT"), "学习分析、LMS 日志和反馈事件。", "可用于 E -> R 观测入口；不得写成寿命自动转化为学习。"],
+  ["来源卡片草案（题名修正）", "SOURCE_CARD_DRAFT_WITH_TITLE_FIX", promotionCount("SOURCE_CARD_DRAFT_WITH_TITLE_FIX"), "自我调节学习、过程数据和多模态轨迹。", "先修正规范题名；不得支持长期迁移或跨域能力增长。"],
+  ["来源卡片草案（工作论文边界）", "SOURCE_CARD_DRAFT_WITH_WORKING_PAPER_CAVEAT", promotionCount("SOURCE_CARD_DRAFT_WITH_WORKING_PAPER_CAVEAT"), "限定编码任务中的 AI 工具采用与单位时间产出。", "只能支持任务内 A -> Q 候选证据；不得泛化为通用增强。"],
+  ["来源卡片草案（风险偏倚门禁）", "SOURCE_CARD_DRAFT_WITH_RISK_OF_BIAS_GATE", promotionCount("SOURCE_CARD_DRAFT_WITH_RISK_OF_BIAS_GATE"), "社会支持干预与生存结局研究分支。", "先补非随机设计风险偏倚；不得写成强因果生存收益。"],
+  ["暂停", "HOLD_METADATA_ONLY", promotionCount("HOLD_METADATA_ONLY"), "仅有元数据的动态能力来源。", "不进入 Source Cards、Reference Registry 或 Citation Context Register。"]
+];
+const modelContractRows = [
+  ["Invariant object", modelContract.invariantObject],
+  ["Time index", modelContract.timeIndex],
+  ["State vector", modelContract.stateVector],
+  ["Action vector", modelContract.actionVector],
+  ["Transition operator", modelContract.transitionOperator],
+  ["Hazard operator", modelContract.hazardOperator],
+  ["Objective", modelContract.objective],
+  ["Constraints", modelContract.constraints.join("；")],
+  ["Non-claims", modelContract.nonClaims.join("；")]
+];
+const derivationMapRows = evidenceData.derivationMap;
+
+const literatureSpineRows = [
+  ["Kaplan-Meier", "T / 生存曲线", "估计寿命路径分布和删失数据。", "方法标准，不证明任何干预有效。"],
+  ["Cox proportional hazards", "X -> lambda(t)", "把变量放入风险函数。", "比例风险假设和混杂需要审查。"],
+  ["Health Capital / HALE / QALY", "T -> E", "把日历生存时间转成健康质量调整时间。", "健康经济学和政策指标不能完整表达主体性、行动能力或未来选择权。"],
+  ["Hallmarks of Aging", "身体状态变量", "给衰老机制和生物状态提供候选变量。", "机制框架不等于人体干预效果。"],
+  ["DNAm GrimAge", "观测与风险信号", "连接生物年龄、死亡风险和健康寿命信号。", "不能输出个体死亡日期。"],
+  ["Cognitive Reserve", "C -> E/Q", "说明经验、教育和认知活动可能影响老化中的功能表现。", "不能推断为不会患病，也不能替代个体诊断。"],
+  ["Deliberate Practice", "R -> C", "说明能力增长依赖有反馈的练习轮次。", "时间堆积不自动等于能力增长。"],
+  ["Law of Practice", "R -> Q", "为重复轮次和表现提升提供学习曲线入口。", "存在饱和、遗忘和任务变化。"],
+  ["Self-Regulated Learning", "E -> R -> C", "强调目标设定、自我监控、反馈和策略调整。", "没有反馈和调节的时间增加可能无效。"],
+  ["Feedback Intervention Theory", "R -> C/Q", "说明反馈能提升表现，也可能因设计错误降低表现。", "反馈不是单向正收益变量。"],
+  ["Human / Social Capital", "C", "说明经验、教育、信誉和协作网络如何形成积累。", "收入或网络不等于主体持续性本身。"],
+  ["Social Relationships Mortality", "O -> T/E", "把社会关系和死亡风险联系到主体持续性讨论。", "观察关联需要因果审查和文化情境校准。"],
+  ["Technology Acceptance", "C -> A", "解释技术采用受有用性、易用性和情境影响。", "采用不等于有效增强。"],
+  ["UTAUT", "C -> A", "拆分绩效预期、努力预期、社会影响和促进条件。", "一般 IT 采用模型不能直接覆盖高风险生物/神经技术。"],
+  ["Generative AI at Work", "A -> Q", "提供 AI 工具提升单位时间产出的实证入口。", "场景有限，收益有异质性。"],
+  ["Noy & Zhang", "A -> Q", "用随机实验展示生成式 AI 对写作生产率的影响。", "写作任务不能代表所有创造和判断任务。"],
+  ["GitHub Copilot Experiment", "A -> Q", "提供 AI 编程助手影响任务完成时间的实验入口。", "编程任务范围有限，预印本证据需标注。"],
+  ["Jagged Technological Frontier", "A -> Q / risk", "说明 AI 增强存在参差任务边界和误导风险。", "技术收益必须和副作用、越界、依赖一起建模。"],
+  ["NIST AI RMF", "A/Q -> risk", "为 AI 工具风险识别、测量、治理和回滚提供标准语言。", "治理框架不提供收益估计，仍需任务实验。"],
+  ["Human-AI Interaction Guidelines", "A -> Q / risk", "把 AI 工具使用拆成可校准、可控、可纠错的人机协作问题。", "交互指南不能证明具体模型有寿命或健康收益。"],
+  ["ClinicalTrials.gov API / WHO ICTRP", "U_t -> causal claim", "为医学干预提供试验登记、机器读取、国际注册网络、人群、比较组、结局和结果回填入口。", "登记存在不等于干预有效。"],
+  ["TRIPOD+AI / PROBAST+AI", "observation -> lambda(t)", "约束 AI/机器学习预测模型的报告质量、偏倚风险、外部验证、校准和适用性。", "报告规范不能替代外部验证、校准和真实世界监测。"],
+  ["CONSORT-AI / SPIRIT-AI", "U_t -> clinical AI evidence", "约束 AI 干预临床试验的协议、结果报告、输入输出、人机交互和错误案例分析。", "报告完整性不能证明 AI 干预有效，仍需临床结局和风险审查。"],
+  ["Apple Heart Study", "observation -> action", "展示可穿戴设备如何进入大规模风险提示和临床确认通道。", "早筛信号不等于死亡风险下降。"],
+  ["Personal Informatics", "E/R/C/A", "把自我追踪拆成准备、收集、整合、反思和行动。", "采集数据不自动改善健康或任务表现。"],
+  ["Lived Informatics", "E -> R / R -> C", "说明长期记录系统会受生活节奏、维护负担和目标变化影响。", "主要解释数据系统断裂，不直接证明寿命收益。"],
+  ["Cognition in the Wild", "C/Q/O", "把认知看成分布在个人、工具、表征、环境和协作流程中的系统。", "分布式认知框架不提供数值效应估计。"],
+  ["NASA-TLX", "A -> Q / risk", "提供任务负荷、时间压力、努力和挫败感的测量入口。", "主观负荷不等于客观产出或健康结局。"],
+  ["Types and Levels of Automation", "A -> Q", "把自动化拆成信息获取、分析、决策选择和行动执行等级。", "更高自动化等级不必然更好。"],
+  ["WHO Social Determinants", "O -> T/E", "把健康和寿命放回收入、教育、住房、工作和环境条件中理解。", "公共卫生框架仍需具体干预评估。"],
+  ["WHO Primary Health Care", "O -> T/E", "把医疗可及、预防、连续照护和社区恢复系统纳入持续性模型。", "效果受制度、资金、地理和服务质量约束。"],
+  ["Target Trial Emulation", "U_t -> causal claim", "要求先定义人群、比较组、time zero、结局、估计量和识别假设。", "不能消除所有不可测混杂，但能阻止把相关性写成干预效果。"],
+  ["Extended Mind / Engelbart", "工具增强", "支撑记忆外化、工具耦合和系统增强。", "哲学与系统框架不是效果估计。"],
+  ["Capability Approach", "O", "把可能性空间表达为真实可行能力。", "规范框架不提供寿命预测。"]
+];
+
+const methodPipelineRows = [
+  ["M0 问题界定", "主链路、定义、边界。", "确定主体、时间尺度、结局和排除用途。", "研究问题与非目标。"],
+  ["M1 来源卡片", "论文、标准、数据库、权威报告。", "提取 claim、变量、机制、证据角色和边界。", "Source Card。"],
+  ["M2 证据矩阵", "Source Cards。", "把 T/E/R/C/A/Q/O 拆成可检验边。", "Evidence Matrix。"],
+  ["M3 因果协议", "候选技术或干预。", "定义 population、comparator、time zero、outcome、estimand。", "Target-trial style protocol。"],
+  ["M4 指标注册", "证据矩阵和因果协议。", "配置正向指标、反证指标和测量说明。", "Metric Registry。"],
+  ["M5 玩具模型", "变量、指标、风险通道。", "写出状态更新、风险、机会和扣减项。", "最小数学草案。"],
+  ["M6 Web 表达", "模型和证据。", "转成图表、表格、路径和边界说明。", "arXiv-style paper / D3 页面。"]
+];
+
+const causalProtocolRows = [
+  ["Population", "对哪个主体或人群成立。", "不允许泛化到所有人。"],
+  ["Intervention", "技术、医学、工具或制度改变到底是什么。", "不允许使用模糊技术名。"],
+  ["Comparator", "和不使用、延迟使用、替代技术还是常规照护比较。", "没有比较组就不能说改善。"],
+  ["Time zero", "从哪个时间点开始分配策略和随访。", "防止 immortal time bias 和选择偏差。"],
+  ["Outcome", "看寿命、健康寿命、有效时间、行动质量还是可能性空间。", "不允许用替代指标偷换终点。"],
+  ["Estimand", "估计风险比、生存差、有效时间增量、功能终点还是选择权变化。", "不允许只给方向性叙事。"],
+  ["Identification", "交换性、一致性、阳性、混杂、选择和中介如何处理。", "假设不清时只能作为探索性主张。"],
+  ["Uncertainty", "如何表达置信区间、敏感性分析、场景范围和外推边界。", "不允许输出确定性个人结论。"]
+];
+
+const metricRows = [
+  ["T -> E", "健康寿命、无失能生存时间、可行动小时数占比。", "失能年数、认知退化、长期不可行动时间增加。", "用 HALE/QALY 作为代理语言，但保留主体性和行动能力字段。"],
+  ["E -> R", "有反馈学习轮次、项目迭代次数、复盘记录数量。", "无反馈重复、注意力碎片化时长、目标漂移次数。", "只统计进入明确任务和反馈闭环的有效时间。"],
+  ["R -> C", "技能测试提升、知识资产增长、可迁移项目数量、协作网络质量。", "学习饱和、遗忘率、错误反馈导致的表现下降。", "区分短期熟练度、长期能力和跨任务迁移。"],
+  ["C -> A", "新技术理解时间缩短、试用转整合比例、工具迁移成功率。", "技术不可及、采用后废弃、误信错误工具。", "采用拆成 access、understanding、evaluation、trial、integration。"],
+  ["A -> Q", "单位时间任务完成量、质量评分、错误率下降、反馈速度提升。", "幻觉率、QA 成本、返工率、过度依赖指标上升。", "按任务族分层，不把局部任务收益泛化为通用增强。"],
+  ["Q -> O", "新任务入口、资源入口、协作入口、制度入口和可逆选择增加。", "产出增加但权限、资源、关系和选择不增加。", "可能性空间只统计主体真实可进入的路径。"],
+  ["O -> T/E", "医疗可及性、恢复资源、社会支持、风险缓冲和技术窗口增加。", "新路径带来监控、剥削、事故暴露、压力和恢复负担。", "反哺项必须同时计算资源增益和风险暴露。"]
+];
+
+const failureRows = [
+  ["健康断点", "寿命增加但失能、疼痛、失智或慢病负担增加。", "持续时间没有转化为有效时间。"],
+  ["学习断点", "时间增加但反馈质量差、目标漂移或重复低效练习。", "轮次没有转化为能力。"],
+  ["资源断点", "能力和技术存在，但主体缺少医疗、资金、身份、工具权限或社会支持。", "积累不能进入下一轮。"],
+  ["技术断点", "新技术不可及、不可理解、不可靠或副作用过高。", "技术采用不能增强主体。"],
+  ["治理断点", "AI、生物技术、神经技术或数据系统放大监控、剥削、歧视或灾难性风险。", "飞轮变成风险放大器。"]
+];
+
+const milestoneRows = [
+  ["M1", "完成资料卡片包", "每条边至少 1-2 张 Source Card，明确来源、变量、证据角色和边界。"],
+  ["M2", "完成变量字典", "将 T/E/R/C/A/Q/O 写成可进入模型的字段、单位和代理指标。"],
+  ["M3", "完成玩具模型", "画出固定寿命、延寿路径和飞轮路径三条曲线。"],
+  ["M4", "完成因果协议", "为每类技术或干预定义 population、comparator、time zero、outcome、estimand 和识别假设。"],
+  ["M5", "完成技术族卡片", "给 AI、医学、可穿戴、知识管理、自动化、资源环境分别补证据卡和风险门禁。"],
+  ["M6", "完成证据回填", "把每个核心断言连接到论文、标准、数据库或权威资料。"],
+  ["M7", "完成交互页面", "用 D3 展示变量、路径、阈值、断点和来源卡片。"]
+];
+
+const toyModelBlock = `E_t = T_t * health_quality_t * agency_t
+R_t = learning_rate_t * E_t
+C_{t+1} = C_t + accumulation_efficiency_t * R_t - decay_t
+A_t = adoption_capacity(C_t, literacy_t, resources_t, access_t)
+Q_t = base_action_quality_t + technology_gain_t * A_t - friction_t
+O_{t+1} = O_t + option_gain(Q_t, C_t, network_t) - option_loss_t
+T_{t+1} = T_t + continuity_gain(O_t, health_t, recovery_t, risk_control_t) - hazard_pressure_t`;
+---
+<PaperReaderLayout
+  title="Effective Immortality and the Subject-Continuity Acceleration Flywheel"
+  description="An arXiv-style Human Infra working paper on effective immortality, subject continuity, research pipeline, technology families, learning rounds, technology adoption, option space, and acceleration feedback loops."
+  arxivId="human-infra/working-paper.0002"
+  category="cs.HC; q-bio.PE; stat.ME; cs.AI"
+>
+  <nav class="ltx_page_navbar" slot="toc">
+    <nav class="ltx_TOC">
+      <ol class="ltx_toclist">
+        <li class="ltx_tocentry ltx_tocentry_abstract"><a href="#abstract1" class="ltx_ref"><span class="ltx_text ltx_ref_title">Abstract.</span></a></li>
+        <li class="ltx_tocentry ltx_tocentry_section"><a href="#S1" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1 </span>研究问题</span></a></li>
+        <li class="ltx_tocentry ltx_tocentry_section"><a href="#S2" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2 </span>贡献</span></a></li>
+        <li class="ltx_tocentry ltx_tocentry_section"><a href="#S3" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3 </span>定义与边界</span></a></li>
+        <li class="ltx_tocentry ltx_tocentry_section"><a href="#S4" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">4 </span>主链路</span></a></li>
+        <li class="ltx_tocentry ltx_tocentry_section"><a href="#S5" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">5 </span>变量模型</span></a></li>
+        <li class="ltx_tocentry ltx_tocentry_section"><a href="#S6" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">6 </span>因果图</span></a></li>
+        <li class="ltx_tocentry ltx_tocentry_section"><a href="#S7" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">7 </span>假设与反证</span></a></li>
+        <li class="ltx_tocentry ltx_tocentry_section"><a href="#S8" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">8 </span>证据脊梁</span></a></li>
+        <li class="ltx_tocentry ltx_tocentry_section"><a href="#S9" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">9 </span>研究流程</span></a></li>
+        <li class="ltx_tocentry ltx_tocentry_section"><a href="#S10" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">10 </span>技术族</span></a></li>
+        <li class="ltx_tocentry ltx_tocentry_section"><a href="#S11" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">11 </span>因果协议</span></a></li>
+        <li class="ltx_tocentry ltx_tocentry_section"><a href="#S12" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">12 </span>指标注册表</span></a></li>
+        <li class="ltx_tocentry ltx_tocentry_section"><a href="#S13" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">13 </span>最小数学草案</span></a></li>
+        <li class="ltx_tocentry ltx_tocentry_section"><a href="#S14" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">14 </span>断点与治理</span></a></li>
+        <li class="ltx_tocentry ltx_tocentry_section"><a href="#S15" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">15 </span>研究路线</span></a></li>
+      <li class="ltx_tocentry ltx_tocentry_section"><a href="#S16" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">16 </span>研究声明</span></a></li>
+      <li class="ltx_tocentry ltx_tocentry_section"><a href="#S17" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">17 </span>结论</span></a></li>
+        <li class="ltx_tocentry ltx_tocentry_bibliography"><a href="#references" class="ltx_ref"><span class="ltx_text ltx_ref_title">References</span></a></li>
+      </ol>
+    </nav>
+  </nav>
+
+  <article class="ltx_document ltx_authors_1line ltx_leqno">
+    <h1 class="ltx_title ltx_title_document">有效永生带来的主体持续性加速回报飞轮</h1>
+    <div class="ltx_authors">
+      <span class="ltx_creator ltx_role_author"><span class="ltx_personname">tradecatlabs</span></span>
+    </div>
+    <div class="ltx_dates">Working paper v0.25 / 2026-06-29</div>
+
+    <div id="abstract1" class="ltx_abstract">
+      <h6 class="ltx_title ltx_title_abstract">Abstract.</h6>
+      <p class="ltx_p">Human Infra 需要研究一个比单次延寿更上位的问题：当主体持续窗口被延展时，主体是否会获得更多学习、修正、技术采用和未来选择机会。现有长寿叙事、AI 工具叙事和未来主义叙事常把寿命、能力、工具和社会条件分开讨论，缺少一个能同时处理主体持续性、有效时间、技术采用、风险和可能性空间的共同模型。</p>
+      <p class="ltx_p">关键挑战是区分日历寿命与有效时间、相关信号与因果干预、技术存在与主体增强、抽象机会与真实可进入路径。本文提出“有效永生带来的主体持续性加速回报飞轮”，将链路拆成 T/E/R/C/A/Q/O 七个变量、八条可证伪假设、六类技术族、因果评估协议、Citation Context Review Packet v0.1、Citation Context Risk Triage v0.1、High-Risk Citation Context Review v0.1、Citation Context Local Review v0.1、Fresh Reviewer Citation Audit Protocol v0.1、Claim Context Audit v0.1、Reference Verification v0.1、Pre-Submission Review v0.1、Search Execution Register v0.1、Candidate Source Verification v0.1、Candidate Source Extraction v0.1、Estimand Registry v0.1、Analysis Plan Registry v0.1、AI Research Failure Mode Audit v0.1、AI Task Evidence Register v0.3、指标注册表、威胁边界和 Source Cards v0.5。本文的当前产物是一个可审查的 working paper 和证据框架，不证明永生已经可行，不输出个体死亡日期，也不替代医学、伦理或政策判断。</p>
+    </div>
+    <div class="ltx_keywords">
+      <h6 class="ltx_title ltx_title_keywords">关键词： </h6>有效永生；主体持续性；加速回报；学习轮次；技术采用；可能性空间；Human Infra
+    </div>
+    <div class="ltx_classification">
+      <h6 class="ltx_title ltx_title_classification">研究分类： </h6>cs.HC; q-bio.PE; stat.ME; cs.AI
+    </div>
+
+    <section id="S1" class="ltx_section">
+      <h2 class="ltx_title ltx_title_section"><span class="ltx_tag ltx_tag_section">1. </span>研究问题</h2>
+      <p class="ltx_p">最小问题是：如果主体能够持续更久，它是否会因为拥有更多学习、试错、积累和技术采用机会，反过来提高自己继续存在、继续行动和继续升级的能力？</p>
+      <p class="ltx_p">Human Infra 的研究版本是：有效永生是否会让主体持续时间、学习轮次、能力积累、技术采用、单位时间行动质量和可能性空间形成正反馈？这个问题必须被拆成中间环节，而不能直接跳到“能不能永生”的宏大判断。</p>
+      <div class="ltx_theorem ltx_theorem_Proposition">
+        <h6 class="ltx_title ltx_runin ltx_title_theorem"><span class="ltx_tag ltx_tag_theorem"><span class="ltx_text ltx_font_bold">命题 1</span></span><span class="ltx_text ltx_font_bold">.</span></h6>
+        <div class="ltx_para"><p class="ltx_p">有效永生的核心价值不只是延长寿命长度，而是增加主体进入更多学习、修正、技术窗口和未来选择路径的机会。</p></div>
+      </div>
+      <p class="ltx_p">贯穿本文的例子是一个长期研究主体 P。P 依赖身体健康、认知能力、记忆系统、AI 工具、医学可及性、协作网络和稳定环境来推进一个二十年以上的研究项目。如果 P 只是日历寿命增加，但健康质量、注意力、资源和工具整合能力没有提高，延长的时间可能无法转化为有效行动。相反，如果 P 的健康寿命、反馈学习、资料管理、AI 协作和医疗可及性同时改善，那么增加的持续时间可能进入下一轮能力积累和技术采用。</p>
+      <h3 class="ltx_title ltx_title_subsection">1.1 ARS Research Question Brief</h3>
+      <p class="ltx_p">本节将论文问题压成 ARS deep-research Phase 1 的研究问题简报。它的作用是先冻结“可回答的问题”，再进入文献映射、证据矩阵和模型比较，避免一开始就滑向宏大叙事。</p>
+      <div class="ltx_table">
+        <table>
+          <tbody>
+            <tr><th>Topic area</th><td>{researchQuestionBrief.topicArea}</td></tr>
+            <tr><th>Primary RQ</th><td>{researchQuestionBrief.primaryQuestion}</td></tr>
+            <tr><th>Selected because</th><td>{researchQuestionBrief.selectedBecause}</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="ltx_table">
+        <table>
+          <thead><tr><th>FINER</th><th>分数</th><th>理由</th></tr></thead>
+          <tbody>
+            {researchQuestionBrief.finerAssessment.map((row) => (
+              <tr><td>{row.criterion}</td><td>{row.score}/5</td><td>{row.justification}</td></tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p class="ltx_p"><strong>子问题。</strong>{researchQuestionBrief.subQuestions.join("；")}</p>
+      <p class="ltx_p"><strong>范围。</strong>In scope: {researchQuestionBrief.scope.inScope.join("；")}。Out of scope: {researchQuestionBrief.scope.outOfScope.join("；")}。</p>
+
+      <h3 class="ltx_title ltx_title_subsection">1.2 Methodology Blueprint</h3>
+      <p class="ltx_p">方法蓝图选择 pragmatist mixed-methods：先做概念建模和证据映射，再逐步进入因果协议、竞争模型比较、任务级实验证据整合和 Web 复现。它不把当前文本包装成实证结论。</p>
+      <div class="ltx_table">
+        <table>
+          <tbody>
+            <tr><th>Paradigm</th><td>{methodologyBlueprint.paradigm}: {methodologyBlueprint.paradigmJustification}</td></tr>
+            <tr><th>Method</th><td>{methodologyBlueprint.methodType}: {methodologyBlueprint.specificMethod}</td></tr>
+            <tr><th>Data strategy</th><td>{methodologyBlueprint.dataStrategy.dataType}。Sampling: {methodologyBlueprint.dataStrategy.sampling}</td></tr>
+            <tr><th>Reporting</th><td>{methodologyBlueprint.reportingStandard}</td></tr>
+            <tr><th>Preregistration</th><td>{methodologyBlueprint.preregistration}</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="ltx_table">
+        <table>
+          <thead><tr><th>Validity criterion</th><th>控制策略</th></tr></thead>
+          <tbody>
+            {methodologyBlueprint.validityCriteria.map((row) => (
+              <tr><td>{row.criterion}</td><td>{row.strategy}</td></tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+      <h3 class="ltx_title ltx_title_subsection">1.3 Research Execution Roadmap</h3>
+      <p class="ltx_p">后续研究按阶段推进。当前仍处在 working paper 与本地科研门禁阶段；外部 fresh reviewer 结果未回填前，不能声明正式投稿级引用审查完成。</p>
+      <div class="ltx_table">
+        <table>
+          <thead><tr><th>阶段</th><th>目的</th><th>产物</th><th>状态</th></tr></thead>
+          <tbody>
+            {researchExecutionRoadmapRows.map((row) => (
+              <tr><td>{row.stage}</td><td>{row.purpose}</td><td>{row.deliverable}</td><td>{row.status}</td></tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <h3 class="ltx_title ltx_title_subsection">1.4 Search Strategy Seeds</h3>
+      <p class="ltx_p">下一轮深度科研从五组检索种子开始，采用 search-fills-gap：已有证据覆盖的边只做更新核验，空白边优先补文献和来源卡片。</p>
+      <div class="ltx_table">
+        <table>
+          <thead><tr><th>分支</th><th>检索式</th><th>目的</th><th>纳入 / 排除</th></tr></thead>
+          <tbody>
+            {searchStrategySeedRows.map((row) => (
+              <tr>
+                <td>{row.branch}</td>
+                <td><code>{row.query}</code></td>
+                <td>{row.purpose}</td>
+                <td><strong>Include:</strong> {row.include}<br /><strong>Exclude:</strong> {row.exclude}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <h3 class="ltx_title ltx_title_subsection">1.5 Systematic Search Protocol</h3>
+      <p class="ltx_p">检索种子只是入口；正式 Phase 2 需要可复现检索协议。当前协议定位为 scoping review and evidence map，目标是把每个来源放到正确链路边和正确证据角色，而不是追求单一结论。</p>
+      <div class="ltx_table">
+        <table>
+          <tbody>
+            <tr><th>Protocol type</th><td>{systematicSearchProtocol.protocolType}</td></tr>
+            <tr><th>Review question</th><td>{systematicSearchProtocol.reviewQuestion}</td></tr>
+            <tr><th>Search date</th><td>{systematicSearchProtocol.searchDate}</td></tr>
+            <tr><th>Languages</th><td>{systematicSearchProtocol.languages.join("；")}</td></tr>
+            <tr><th>Document types</th><td>{systematicSearchProtocol.documentTypes.join("；")}</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="ltx_table">
+        <table>
+          <thead><tr><th>数据库 / 来源</th><th>用途</th><th>记录字段</th></tr></thead>
+          <tbody>
+            {systematicSearchProtocol.databases.map((row) => (
+              <tr>
+                <td>{row.source}</td>
+                <td>{row.use}</td>
+                <td>{row.recordedFields.join("；")}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <div class="ltx_table">
+        <table>
+          <thead><tr><th>筛选决策</th><th>含义</th><th>处理</th></tr></thead>
+          <tbody>
+            {literatureScreeningRubricRows.map((row) => (
+              <tr><td>{row.decision}</td><td>{row.meaning}</td><td>{row.requiredAction}</td></tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <h3 class="ltx_title ltx_title_subsection">1.6 Literature Gap Map</h3>
+      <p class="ltx_p">缺口图把下一轮检索优先级绑定到链路边。每个 gap 都必须产生新的来源卡片、排除记录或明确的无结果说明。</p>
+      <div class="ltx_table">
+        <table>
+          <thead><tr><th>链路边</th><th>当前覆盖</th><th>缺口</th><th>下一轮检索</th></tr></thead>
+          <tbody>
+            {literatureGapMapRows.map((row) => (
+              <tr>
+                <td>{row.edge}</td>
+                <td>{row.currentCoverage}</td>
+                <td>{row.gap}</td>
+                <td><code>{row.nextSearch}</code></td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <h3 class="ltx_title ltx_title_subsection">1.7 Search Execution Register</h3>
+      <p class="ltx_p">Search Execution Register 把缺口图转成候选检索记录。这里的候选来源只表示“进入筛选队列”，不等于已经进入 Reference Registry，也不等于可以承担正文强主张。每条记录都必须保留链路边、数据库、检索式、初筛决策、边界用途和下一步动作。</p>
+      <div class="ltx_table">
+        <table>
+          <thead><tr><th>ID</th><th>链路边</th><th>候选来源</th><th>检索来源</th><th>初筛决策</th><th>证据角色与边界</th><th>下一步</th></tr></thead>
+          <tbody>
+            {searchExecutionRows.map((row) => (
+              <tr>
+                <td>{row.id}</td>
+                <td>{row.edge}</td>
+                <td><a href={row.candidateUrl}>{row.candidateTitle}</a></td>
+                <td>{row.database}<br /><code>{row.query}</code></td>
+                <td>{row.screeningDecision}<br />{row.candidateStatus}</td>
+                <td>{row.evidenceRole}<br /><strong>Boundary:</strong> {row.boundaryUse}</td>
+                <td>{row.nextAction}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <h3 class="ltx_title ltx_title_subsection">1.8 Candidate Source Verification Register</h3>
+      <p class="ltx_p">候选来源进入正文前必须先过来源核验。下面的登记表记录 URL 状态、元数据来源、规范题名、证据等级、核验结论和阻塞项。`metadata-only`、working paper、title drift 和 risk-of-bias 记录不得被写成正式强证据。</p>
+      <div class="ltx_table">
+        <table>
+          <thead><tr><th>ID</th><th>SER</th><th>规范题名</th><th>状态</th><th>证据等级</th><th>使用决策</th><th>阻塞项</th></tr></thead>
+          <tbody>
+            {searchExecutionVerificationRows.map((row) => (
+              <tr>
+                <td>{row.id}</td>
+                <td>{row.searchExecutionId}</td>
+                <td>{row.canonicalTitle}<br /><code>{row.doiOrPersistentId}</code></td>
+                <td>{row.urlStatus}<br />{row.titleMatch}<br />{row.verificationVerdict}</td>
+                <td>{row.evidenceLevel}<br />{row.publicationStatus}</td>
+                <td>{row.useDecision}<br /><strong>Extraction:</strong> {row.requiredExtraction}</td>
+                <td>{row.blockingIssue}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <h3 class="ltx_title ltx_title_subsection">1.9 Candidate Source Extraction Register</h3>
+      <p class="ltx_p">核验通过不等于可引用。Candidate Source Extraction Register 进一步记录从摘要、官方页、PDF 或元数据中实际抽取到的内容，明确它能进入哪条链路边、能支持什么、不能支持什么，以及是否可以晋升为 Source Card 草案。</p>
+      <div class="ltx_table">
+        <table>
+          <thead><tr><th>ID</th><th>读取范围</th><th>抽取内容</th><th>模型用途</th><th>支持 / 不支持</th><th>晋升决策</th></tr></thead>
+          <tbody>
+            {searchExecutionExtractionRows.map((row) => (
+              <tr>
+                <td>{row.id}<br /><code>{row.verificationId}</code></td>
+                <td>{row.readScope}<br />{row.extractionStatus}</td>
+                <td>{row.extractedClaim}</td>
+                <td>{row.modelUse}<br /><strong>Variables:</strong> {row.variablesTouched.join("；")}</td>
+                <td><strong>Supports:</strong> {row.supports}<br /><strong>Does not support:</strong> {row.doesNotSupport}</td>
+                <td>{row.promotionDecision}<br />{row.nextSourceCardAction}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <h3 class="ltx_title ltx_title_subsection">1.10 Candidate Source Promotion Synthesis</h3>
+      <p class="ltx_p">深度科研的下一步不是继续堆来源，而是判断候选来源在模型里能承担什么角色。下表把 9 条候选来源压缩成晋升队列：方法卡片优先进入模型契约和治理门禁，来源卡片草案进入弱证据队列，metadata-only 来源暂停。</p>
+      <div class="ltx_table">
+        <table>
+          <thead><tr><th>队列</th><th>规则</th><th>数量</th><th>用途</th><th>边界</th></tr></thead>
+          <tbody>
+            {candidateSourcePromotionRows.map(([queue, rule, count, use, boundary]) => (
+              <tr>
+                <td>{queue}</td>
+                <td><code>{rule}</code></td>
+                <td>{count}</td>
+                <td>{use}</td>
+                <td>{boundary}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="S2" class="ltx_section">
+      <h2 class="ltx_title ltx_title_section"><span class="ltx_tag ltx_tag_section">2. </span>贡献</h2>
+      <p class="ltx_p">本文当前贡献定位为可进入科研流程的问题框架，尚不构成实证结论。</p>
+      <div class="ltx_table">
+        <table>
+          <thead><tr><th>编号</th><th>贡献</th><th>对应产物</th></tr></thead>
+          <tbody>
+            {contributionRows.map(([id, claim, artifact]) => (
+              <tr><td>{id}</td><td>{claim}</td><td>{artifact}</td></tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <h3 class="ltx_title ltx_title_subsection">2.1 Claim Register</h3>
+      <p class="ltx_p">为了避免把概念框架、方法要求、任务内实证证据和禁止性边界混在一起，本文把核心主张注册为七类。每条主张都记录当前证据状态和下一步升级条件。</p>
+      <div class="ltx_table">
+        <table>
+          <thead><tr><th>编号</th><th>主张</th><th>类型</th><th>当前状态</th><th>升级条件</th></tr></thead>
+          <tbody>
+            {claimRegisterRows.map((row) => (
+              <tr>
+                <td>{row.id}</td>
+                <td>{row.claim}</td>
+                <td>{row.claimType}</td>
+                <td>{row.currentStatus}</td>
+                <td>{row.requiredUpgrade}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <h3 class="ltx_title ltx_title_subsection">2.2 Claim Evidence Map</h3>
+      <p class="ltx_p">Claim Evidence Map 将每个核心主张绑定到正文位置、证据边、引用上下文、反证条件和升级门槛。它是 claim-reference alignment 的本地契约，用于防止论文在后续扩写时把框架主张、方法主张、限定实证主张和禁止性边界混用。</p>
+      <div class="ltx_table">
+        <table>
+          <thead><tr><th>主张</th><th>正文位置</th><th>证据边</th><th>引用上下文</th><th>当前判定</th><th>反证条件</th><th>升级门槛</th></tr></thead>
+          <tbody>
+            {claimEvidenceMapRows.map((row) => (
+              <tr>
+                <td>{row.claimId}</td>
+                <td>{row.paperSections.join("；")}</td>
+                <td>{row.evidenceEdges.join("；")}</td>
+                <td>{row.citationContexts.join("；")}</td>
+                <td>{row.alignmentVerdict}: {row.currentSupport}</td>
+                <td>{row.falsifiers.join("；")}</td>
+                <td>{row.upgradeGate}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="S3" class="ltx_section">
+      <h2 class="ltx_title ltx_title_section"><span class="ltx_tag ltx_tag_section">3. </span>定义与边界</h2>
+      <div class="ltx_table">
+        <table>
+          <thead>
+            <tr><th>概念</th><th>定义</th><th>边界</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>有效永生</td><td>尽可能延展主体持续性，使主体长期维持存在、行动、学习、创造、恢复和进入未来的能力。</td><td>不等于已经不死，不等于数字副本自动等于本人。</td></tr>
+            <tr><td>主体持续性</td><td>一个主体继续感知、判断、行动、学习、修正和选择的能力。</td><td>单纯保存数据、名义身份或外部评价不足以构成持续性。</td></tr>
+            <tr><td>有效时间</td><td>主体可清醒、可行动、可判断、可创造的时间。</td><td>活着但长期失能、失智或不可行动时，有效时间可能很低。</td></tr>
+            <tr><td>可能性空间</td><td>主体未来可进入的任务、关系、资源、制度、知识和技术路径集合。</td><td>机会很多但主体无法行动时，不能转化为真实选择权。</td></tr>
+            <tr><td>加速回报飞轮</td><td>主体持续性提升带来更多积累，积累提高技术采用和能力升级，升级又进一步强化主体持续性的正反馈过程。</td><td>断点失控时，飞轮可能停滞、反转或变成风险放大器。</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="S4" class="ltx_section">
+      <h2 class="ltx_title ltx_title_section"><span class="ltx_tag ltx_tag_section">4. </span>单一主链路</h2>
+      <pre class="ltx_verbatim">有效永生带来的主体持续性加速回报飞轮
+  -> 主体不再被固定寿命窗口完全约束，持续存在、行动、学习和修正的时间边界被延长
+  -> 更长的持续时间增加学习、试错、失败复盘、策略调整和长期项目推进的轮次
+  -> 更多轮次使经验、技能、判断力、知识结构、资源储备、信誉资产和协作网络持续沉淀
+  -> 这些积累降低长期目标中的信息成本、试错成本、协作成本、失败成本和重新开始成本
+  -> 主体更有能力等待尚未成熟的技术窗口，并在新技术出现时接触、理解、采用和整合它
+  -> 新技术进一步增强身体健康、认知能力、注意力控制、记忆外化、工具使用、行动效率和恢复能力
+  -> 单位时间内的行动质量、创造密度、问题处理能力和反馈速度提高
+  -> 可解决问题范围扩大，主体进入更多任务、关系、知识、资源、制度和技术路径
+  -> 可能性空间扩大，未来选择权、行动余地和可迁移资源同步增加
+  -> 更多资源、能力、知识、工具和协作机会进入下一轮积累
+  -> 技术采用、自我升级、系统协作、问题求解和环境改造加速
+  -> 主体持续性进一步增强
+  -> 加速回报飞轮形成
+  -> 主体持续性、能力系统、技术系统和可能性空间进入相互强化的复利循环</pre>
+    </section>
+
+    <section id="S5" class="ltx_section">
+      <h2 class="ltx_title ltx_title_section"><span class="ltx_tag ltx_tag_section">5. </span>最小变量模型</h2>
+      <p class="ltx_p">为了开始科研，先把链路压成七个变量。这些变量是第一版可讨论的建模接口，尚不构成最终真理。v0.3 的关键变化是：每个变量都必须说明单位、代理指标、正向方向、失败模式和模型用途。</p>
+      <div class="ltx_table">
+        <table>
+          <thead>
+            <tr><th>符号</th><th>变量</th><th>角色</th><th>状态类型</th><th>单位</th><th>代理指标</th><th>失败模式</th><th>模型用途</th></tr>
+          </thead>
+          <tbody>
+            {variableDictionaryRows.map((row) => (
+              <tr>
+                <td>{row.symbol}</td>
+                <td>{row.name}</td>
+                <td>{row.role}</td>
+                <td>{row.stateType}</td>
+                <td>{row.unit}</td>
+                <td>{row.proxyMetrics.join("；")}</td>
+                <td>{row.failureMode}</td>
+                <td>{row.modelUse}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <pre class="ltx_verbatim">T -> E -> R -> C -> A -> Q -> O -> T</pre>
+      <p class="ltx_p">更准确地说，可能性空间不直接让人长生，而是通过资源、恢复、医疗可及性、风险规避、技术窗口和社会支持，反过来影响主体持续性。</p>
+      <h3 class="ltx_title ltx_title_subsection">5.1 Model Contract v0.1</h3>
+      <p class="ltx_p">公式推导的稳定对象从单一寿命长度上移到“折现主体持续性价值”。这允许模型同时处理有效时间、行动质量、可能性空间和风险扣减，并把技术放在状态转移或风险函数的位置。</p>
+      <div class="ltx_table">
+        <table>
+          <thead><tr><th>字段</th><th>契约内容</th></tr></thead>
+          <tbody>
+            {modelContractRows.map(([field, value]) => (
+              <tr><td>{field}</td><td>{value}</td></tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <h3 class="ltx_title ltx_title_subsection">5.2 Derivation Map</h3>
+      <p class="ltx_p">下面的推导图把定义、近似、方法步骤、解释和边界拆开，避免把启发式模型包装成已证明定理。</p>
+      <div class="ltx_table">
+        <table>
+          <thead><tr><th>步骤</th><th>类型</th><th>内容</th></tr></thead>
+          <tbody>
+            {derivationMapRows.map((row) => (
+              <tr><td>{row.step}</td><td>{row.stepType}</td><td>{row.content}</td></tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p class="ltx_p">形式化地说，主体 i 在时间 t 的状态可以写成 X_i,t = (health, cognition, memory, resources, tools, environment, network, risk)。行动与干预 U_i,t 包括医学、AI、可穿戴、知识系统、自动化和资源环境改变。技术或干预应被写成改变 P(X_t+1 | X_t, U_t) 或 lambda(t | X_t, U_t) 的算子，不能被写成“直接加寿命”的神奇变量。</p>
+      <pre class="ltx_verbatim">maximize_pi E[sum_t delta^t * (E_t + alpha Q_t + beta O_t - gamma Risk_t)]
+
+subject to:
+  identity_continuity >= threshold
+  evidence_gate(U_t) == pass
+  consent_and_rights == protected
+  no_personal_death_date_output == true</pre>
+      <p class="ltx_p">对主体 P 来说，第一步应追问某项技术改变了哪个模型位置。可穿戴设备主要进入 observation，AI 工具主要进入 policy 和 action quality，医学干预主要进入 state transition 和 hazard，资源环境干预主要进入 option value 和 recovery。</p>
+    </section>
+
+    <section id="S6" class="ltx_section">
+      <h2 class="ltx_title ltx_title_section"><span class="ltx_tag ltx_tag_section">6. </span>第一版因果图</h2>
+      <figure class="ltx_figure">
+        <svg viewBox="0 0 960 420" role="img" aria-labelledby="fig-flywheel-title fig-flywheel-desc">
+          <title id="fig-flywheel-title">有效永生飞轮因果图</title>
+          <desc id="fig-flywheel-desc">主体持续时间、有效时间、学习轮次、积累资本、技术采用、行动质量和可能性空间形成反馈回路。</desc>
+          <defs>
+            <marker id="arrow-flywheel" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+              <path d="M 0 0 L 10 5 L 0 10 z" fill="#374151"></path>
+            </marker>
+          </defs>
+          <g fill="#f8fafc" stroke="#334155" stroke-width="1.4">
+            <rect x="80" y="45" width="155" height="58" rx="4"></rect>
+            <rect x="295" y="45" width="155" height="58" rx="4"></rect>
+            <rect x="510" y="45" width="155" height="58" rx="4"></rect>
+            <rect x="725" y="45" width="155" height="58" rx="4"></rect>
+            <rect x="725" y="245" width="155" height="58" rx="4"></rect>
+            <rect x="510" y="245" width="155" height="58" rx="4"></rect>
+            <rect x="295" y="245" width="155" height="58" rx="4"></rect>
+            <rect x="80" y="245" width="155" height="58" rx="4"></rect>
+          </g>
+          <g font-size="15" fill="#111827" text-anchor="middle">
+            <text x="157" y="71">T 主体持续时间</text>
+            <text x="372" y="71">E 有效时间</text>
+            <text x="587" y="71">R 学习轮次</text>
+            <text x="802" y="71">C 积累资本</text>
+            <text x="802" y="271">A 技术采用</text>
+            <text x="587" y="271">Q 行动质量</text>
+            <text x="372" y="271">O 可能性空间</text>
+            <text x="157" y="271">主体持续性增强</text>
+          </g>
+          <g stroke="#374151" stroke-width="1.8" fill="none" marker-end="url(#arrow-flywheel)">
+            <line x1="235" y1="74" x2="287" y2="74"></line>
+            <line x1="450" y1="74" x2="502" y2="74"></line>
+            <line x1="665" y1="74" x2="717" y2="74"></line>
+            <path d="M802 104 C820 150 820 198 802 237"></path>
+            <line x1="725" y1="274" x2="673" y2="274"></line>
+            <line x1="510" y1="274" x2="458" y2="274"></line>
+            <line x1="295" y1="274" x2="243" y2="274"></line>
+            <path d="M157 245 C120 190 120 135 157 112"></path>
+          </g>
+          <rect x="244" y="145" width="470" height="56" rx="4" fill="#fff7ed" stroke="#9a3412"></rect>
+          <text x="479" y="169" text-anchor="middle" font-size="16" fill="#7c2d12">正反馈只在健康、资源、技术可及、风险治理和主体连续性成立时形成</text>
+          <text x="479" y="190" text-anchor="middle" font-size="14" fill="#7c2d12">任何断点都可能让飞轮停滞或反转</text>
+        </svg>
+        <figcaption>Figure 1. 第一版因果图。它是研究起点，不是最终定论；每条边都需要来源卡片和边界审查。</figcaption>
+      </figure>
+    </section>
+
+    <section id="S7" class="ltx_section">
+      <h2 class="ltx_title ltx_title_section"><span class="ltx_tag ltx_tag_section">7. </span>可验证假设与反证条件</h2>
+      <div class="ltx_table">
+        <table>
+          <thead><tr><th>编号</th><th>假设</th><th>验证重点</th></tr></thead>
+          <tbody>
+            {hypothesisRows.map(([id, claim, test]) => (
+              <tr><td>{id}</td><td>{claim}</td><td>{test}</td></tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p class="ltx_p">飞轮必须能被反驳。只有当每条边至少部分成立，并且负向通道没有压过正向通道时，才可以被称为加速回报。</p>
+      <div class="ltx_table">
+        <table>
+          <thead><tr><th>链路边</th><th>支持时应看到什么</th><th>反证或削弱条件</th></tr></thead>
+          <tbody>
+            {falsifierRows.map(([edge, support, falsifier]) => (
+              <tr><td>{edge}</td><td>{support}</td><td>{falsifier}</td></tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="S8" class="ltx_section">
+      <h2 class="ltx_title ltx_title_section"><span class="ltx_tag ltx_tag_section">8. </span>第一轮证据脊梁</h2>
+      <p class="ltx_p">本页已连接第一轮自动化科研结果。Source Cards v0.5 和 Evidence Matrix v1.3 将每个来源限制在它真正能支持的位置，避免把叙事强度误当成证据强度。</p>
+      <p class="ltx_p">证据脊梁的用法是：每个来源只进入一条或少数几条链路边。生存分析负责定义寿命路径和风险函数；健康资本、认知储备和社会关系帮助解释有效时间与持续性；学习科学负责轮次到能力；技术接受模型负责采用；AI 生产力实验只负责限定任务内的单位时间行动质量；能力方法负责把结果转译为真实可行选择权。</p>
+      <div class="ltx_table">
+        <table>
+          <thead><tr><th>来源</th><th>链路位置</th><th>用途</th><th>边界</th></tr></thead>
+          <tbody>
+            {literatureSpineRows.map(([source, edge, use, boundary]) => (
+              <tr><td>{source}</td><td>{edge}</td><td>{use}</td><td>{boundary}</td></tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <h3 class="ltx_title ltx_title_subsection">8.1 Evidence Matrix 数据层</h3>
+      <p class="ltx_p">下面的矩阵来自 <code>web/src/data/effective-immortality-evidence.json</code>。它把论文主链拆成可验证边，后续 D3 图表、筛选面板和模型契约都应优先消费这份结构化数据，而不是重新从正文里复制表格。</p>
+      <div class="ltx_table">
+        <table>
+          <thead><tr><th>链路边</th><th>可检验问题</th><th>证据入口</th><th>置信</th><th>断点</th><th>模型任务</th></tr></thead>
+          <tbody>
+            {evidenceEdgeRows.map((row) => (
+              <tr>
+                <td>{row.edge}</td>
+                <td>{row.question}</td>
+                <td>{row.sources.join("；")}</td>
+                <td>{row.confidence}</td>
+                <td>{row.breakpoint}</td>
+                <td>{row.modelTask}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <h3 class="ltx_title ltx_title_subsection">8.2 证据等级</h3>
+      <p class="ltx_p">同一个来源不能跨层级滥用。方法标准、机制综述、关联证据、实验结果、规范框架和治理资料在论文里承担不同任务。</p>
+      <div class="ltx_table">
+        <table>
+          <thead><tr><th>证据类别</th><th>用途</th><th>限制</th></tr></thead>
+          <tbody>
+            {evidenceClassRows.map((row) => (
+              <tr><td>{row.class}</td><td>{row.use}</td><td>{row.limit}</td></tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <h3 class="ltx_title ltx_title_subsection">8.3 Citation Context Register</h3>
+      <p class="ltx_p">引用上下文注册表把来源组、使用语境、可支持范围和不可支持范围放在同一行。它的目的在于防止真实来源被用到错误主张上，不额外增加证明强度。</p>
+      <div class="ltx_table">
+        <table>
+          <thead><tr><th>ID</th><th>来源组</th><th>使用语境</th><th>支持范围</th><th>不可支持范围</th><th>状态</th></tr></thead>
+          <tbody>
+            {citationContextRows.map((row) => (
+              <tr>
+                <td>{row.id}</td>
+                <td>{row.sourceGroup}</td>
+                <td>{row.usedFor}</td>
+                <td>{row.supports}</td>
+                <td>{row.doesNotSupport}</td>
+                <td>{row.citationStatus}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <h3 class="ltx_title ltx_title_subsection">8.4 AI Task Evidence Register</h3>
+      <p class="ltx_p">A -> Q 不能写成“AI 提升能力”的空泛句子。下面的注册表把第一批 AI 任务实验证据压成同一契约：任务、人群、干预、比较对象、效应指标、统计不确定性、QA 成本、负向通道和外推边界必须同时出现。它只支持限定任务内的单位时间行动质量变化，不支持通用智力增强、健康寿命延长或有效永生已经成立。</p>
+      <div class="ltx_table">
+        <table>
+          <thead><tr><th>ID</th><th>来源与等级</th><th>样本与设计</th><th>干预与比较</th><th>效应估计</th><th>不确定性 / QA</th><th>外推边界与模型用途</th></tr></thead>
+          <tbody>
+            {aiTaskEvidenceRows.map((row) => (
+              <tr>
+                <td>{row.id}</td>
+                <td>{row.referenceKey}<br /><em>{row.evidenceLevel}</em></td>
+                <td><strong>{row.taskFamily}</strong><br />{row.sampleAndDesign}</td>
+                <td>{row.intervention}<br /><em>Comparator:</em> {row.comparator}</td>
+                <td>{row.outcomes.join("；")}<br />{row.effectEstimate}<br />{row.effectSummary}</td>
+                <td>{row.uncertaintyOrStats}<br />{row.qaOrValidation}<br />{row.downsideChannel}</td>
+                <td>{row.externalBoundary}<br />{row.modelUse}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <h3 class="ltx_title ltx_title_subsection">8.5 AI Task Method Audit</h3>
+      <p class="ltx_p">v0.3 进一步把四条 A -> Q 证据压到原文表格和评分协议层：每条记录必须说明主表/主图、主要规格、统计列、标准误或区间、质量评分协议、QA 成本和外推限制。该表的作用是防止“AI 提效”停留在摘要级叙事。</p>
+      <div class="ltx_table">
+        <table>
+          <thead><tr><th>ID</th><th>原文表格 / 规格</th><th>统计列与不确定性</th><th>评分协议</th><th>QA 成本与外推限制</th></tr></thead>
+          <tbody>
+            {aiTaskEvidenceRows.map((row) => (
+              <tr>
+                <td>{row.id}</td>
+                <td><strong>{row.methodAudit.primaryTableOrFigure}</strong><br />{row.methodAudit.mainSpecification}</td>
+                <td>{row.methodAudit.statisticalColumns}<br /><em>{row.methodAudit.uncertaintyDetail}</em></td>
+                <td>{row.methodAudit.qualityScoringProtocol}</td>
+                <td>{row.methodAudit.qaCostQuantification}<br />{row.methodAudit.externalValidityNote}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <h3 class="ltx_title ltx_title_subsection">8.6 Evidence Matrix 证据链图</h3>
+      <p class="ltx_p">下图由同一份 JSON 数据生成，用来检查主链、反哺路径、风险通道和因果门禁是否同时存在。图中每条边都保留可检验问题、证据入口、置信、断点和模型任务，悬停即可查看。</p>
+      <figure class="ltx_figure">
+        <div id="evidence-graph" aria-live="polite">Evidence Matrix 图表加载中。</div>
+        <figcaption>Figure 2. Evidence Matrix 证据链图。它将 T/E/R/C/A/Q/O 主链、O -> T/E 反哺、A/Q -> risk 风险通道和 U_t -> causal claim 方法门禁放在同一个可审查结构中。</figcaption>
+      </figure>
+    </section>
+
+    <section id="S9" class="ltx_section">
+      <h2 class="ltx_title ltx_title_section"><span class="ltx_tag ltx_tag_section">9. </span>研究设计与方法流程</h2>
+      <p class="ltx_p">本文采用“来源卡片 -> 证据矩阵 -> 因果协议 -> 指标注册表 -> 玩具模型 -> Web 表达”的流程。流程目标是把每个断言放进可审查的研究管线，不承担一次性证明飞轮成立。</p>
+      <div class="ltx_table">
+        <table>
+          <thead><tr><th>阶段</th><th>输入</th><th>处理</th><th>输出</th></tr></thead>
+          <tbody>
+            {methodPipelineRows.map(([stage, input, process, output]) => (
+              <tr><td>{stage}</td><td>{input}</td><td>{process}</td><td>{output}</td></tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p class="ltx_p">这个流程的核心约束是：任何一步都不能把机制合理、相关信号或短期功能改善直接升级成寿命延长。升级到更强主张时，必须补足比较组、时间范围、结局、证据等级和不确定性。</p>
+    </section>
+
+    <section id="S10" class="ltx_section">
+      <h2 class="ltx_title ltx_title_section"><span class="ltx_tag ltx_tag_section">10. </span>技术/干预族拆解</h2>
+      <p class="ltx_p">飞轮模型不能把所有技术都当成同一个变量。不同技术族影响的模型位置不同，副作用也不同。</p>
+      <div class="ltx_table">
+        <table>
+          <thead><tr><th>技术/干预族</th><th>主要影响位置</th><th>可能正向作用</th><th>主要副作用通道</th><th>证据入口</th></tr></thead>
+          <tbody>
+            {technologyFamilyRows.map((row) => (
+              <tr>
+                <td>{row.family}</td>
+                <td>{row.modelPosition}</td>
+                <td>{row.upside}</td>
+                <td>{row.downside}</td>
+                <td>{row.evidenceSources.join("；")}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p class="ltx_p">这张表把 A -> Q 拆成多个子通道。后续定量模型应分别估计技术族对状态、观测、行动策略、风险函数和可能性空间的影响，再汇总到主体持续性。</p>
+    </section>
+
+    <section id="S11" class="ltx_section">
+      <h2 class="ltx_title ltx_title_section"><span class="ltx_tag ltx_tag_section">11. </span>因果评估协议</h2>
+      <p class="ltx_p">任何技术或干预进入飞轮模型之前，都必须先写成一个可审查的因果问题。本文采用 target trial emulation 的思路：先定义理想比较，再讨论观察数据或实验数据能否支撑该比较。</p>
+      <div class="ltx_table">
+        <table>
+          <thead><tr><th>协议字段</th><th>必须回答的问题</th><th>失败时的处理</th></tr></thead>
+          <tbody>
+            {causalProtocolRows.map(([field, question, failure]) => (
+              <tr><td>{field}</td><td>{question}</td><td>{failure}</td></tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <pre class="ltx_verbatim">技术 T
+  -> 改变哪些中间变量 X
+  -> 通过什么机制改变状态 S
+  -> 在什么人群和时间窗口内改变风险函数 lambda(t)
+  -> 如何改变生存曲线、有效时间和未来选择权
+  -> 证据等级、风险和不确定性分别是什么</pre>
+      <h3 class="ltx_title ltx_title_subsection">11.1 Estimand Registry v0.1</h3>
+      <p class="ltx_p">下面的估计对象注册表把每条链路边改写为最小研究契约。它不声称这些效应已经被估计，只规定后续如果要进入定量模型，必须先明确人群、干预或暴露、比较组、time zero、结局、estimand 和识别风险。</p>
+      <div class="ltx_table">
+        <table>
+          <thead><tr><th>链路边</th><th>人群</th><th>干预 / 暴露</th><th>比较组</th><th>Time zero</th><th>结局</th><th>Estimand</th><th>识别风险</th></tr></thead>
+          <tbody>
+            {estimandRegistryRows.map((row) => (
+              <tr>
+                <td>{row.edge}</td>
+                <td>{row.population}</td>
+                <td>{row.interventionOrExposure}</td>
+                <td>{row.comparator}</td>
+                <td>{row.timeZero}</td>
+                <td>{row.outcome}</td>
+                <td>{row.estimand}<br /><em>{row.currentStatus}</em></td>
+                <td>{row.identificationRisk}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <h3 class="ltx_title ltx_title_subsection">11.2 Analysis Plan Registry v0.1</h3>
+      <p class="ltx_p">Estimand 只说明“估计什么”。Analysis Plan 进一步说明“怎么估计”：候选研究设计、最小数据字段、主估计器、诊断项、敏感性检查和报告输出必须同时出现。未满足这些字段时，后续模型只能作为概念仿真，不能升级为实证结论。</p>
+      <div class="ltx_table">
+        <table>
+          <thead><tr><th>链路边</th><th>研究问题</th><th>候选设计</th><th>最小数据</th><th>主估计器</th><th>诊断与敏感性检查</th><th>输出</th></tr></thead>
+          <tbody>
+            {analysisPlanRows.map((row) => (
+              <tr>
+                <td>{row.edge}</td>
+                <td>{row.studyQuestion}</td>
+                <td>{row.candidateDesign}</td>
+                <td>{row.minimumData}</td>
+                <td>{row.primaryEstimator}</td>
+                <td>{row.diagnostics}<br /><em>{row.sensitivityChecks}</em></td>
+                <td>{row.reportingOutput}<br /><em>{row.currentStatus}</em></td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="S12" class="ltx_section">
+      <h2 class="ltx_title ltx_title_section"><span class="ltx_tag ltx_tag_section">12. </span>指标注册表</h2>
+      <p class="ltx_p">第一版定量化不直接追求完整预测，而是先把每条边转成可以观测、可以反驳的指标。</p>
+      <div class="ltx_table">
+        <table>
+          <thead><tr><th>链路边</th><th>正向指标</th><th>反证指标</th><th>测量说明</th></tr></thead>
+          <tbody>
+            {metricRows.map(([edge, positive, falsifier, note]) => (
+              <tr><td>{edge}</td><td>{positive}</td><td>{falsifier}</td><td>{note}</td></tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p class="ltx_p">没有反证指标的变量，不能进入强主张；没有测量说明的指标，不能进入预测页面。</p>
+    </section>
+
+    <section id="S13" class="ltx_section">
+      <h2 class="ltx_title ltx_title_section"><span class="ltx_tag ltx_tag_section">13. </span>最小数学草案</h2>
+      <p class="ltx_p">第一版模型只表达方向和结构，不预测个人寿命。</p>
+      <pre class="ltx_verbatim">{toyModelBlock}</pre>
+      <p class="ltx_p">后续真正定量化时，模型必须接入生命路径预测契约：状态变量、状态转移、风险函数、生存曲线、有效时间、主观时间、相对时间和未来选择权。</p>
+    </section>
+
+    <section id="S14" class="ltx_section">
+      <h2 class="ltx_title ltx_title_section"><span class="ltx_tag ltx_tag_section">14. </span>断点与治理</h2>
+      <p class="ltx_p">飞轮不是自然保证。有效永生如果只延长存在时间，却没有健康、认知、资源、技术可及、制度支持和风险治理，主体持续性不会自动增强。</p>
+      <div class="ltx_table">
+        <table>
+          <thead><tr><th>断点</th><th>表现</th><th>后果</th></tr></thead>
+          <tbody>
+            {failureRows.map(([name, symptom, effect]) => (
+              <tr><td>{name}</td><td>{symptom}</td><td>{effect}</td></tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <div class="ltx_theorem ltx_theorem_Remark">
+        <h6 class="ltx_title ltx_runin ltx_title_theorem"><span class="ltx_tag ltx_tag_theorem"><span class="ltx_text ltx_font_bold">治理边界</span></span><span class="ltx_text ltx_font_bold">.</span></h6>
+        <div class="ltx_para"><p class="ltx_p">本文不主张永生已经实现，不主张延寿一定带来智慧或价值，不主张所有技术都会增强主体，不输出个体死亡日期，也不替代医学、法律、伦理或政策判断。</p></div>
+      </div>
+      <h3 class="ltx_title ltx_title_subsection">14.1 Threats to Validity</h3>
+      <p class="ltx_p">本文目前仍是模型论文草案，不是实证论文。下面的威胁表把证据层级、外推边界、变量代理、因果识别和治理反噬拆开，便于后续审稿和复现实验逐项检查。</p>
+      <div class="ltx_table">
+        <table>
+          <thead><tr><th>威胁</th><th>风险</th><th>后果</th><th>缓解方式</th></tr></thead>
+          <tbody>
+            {threatsToValidityRows.map((row) => (
+              <tr>
+                <td>{row.threat}</td>
+                <td>{row.risk}</td>
+                <td>{row.consequence}</td>
+                <td>{row.mitigation}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <h3 class="ltx_title ltx_title_subsection">14.2 Alternative Explanations / Rival Models</h3>
+      <p class="ltx_p">飞轮模型只有在超过更简单解释时才有研究价值。下面的竞争模型不是反对项，而是识别门槛：如果单纯寿命、健康资本、人力资本、工具增强、能力方法或风险治理模型已经解释了观测结果，就不应把结果升级为“主体持续性加速回报飞轮”。</p>
+      <div class="ltx_table">
+        <table>
+          <thead><tr><th>模型</th><th>核心解释</th><th>会预测什么</th><th>区分检验</th><th>主要风险</th></tr></thead>
+          <tbody>
+            {rivalModelRows.map((row) => (
+              <tr>
+                <td>{row.model}</td>
+                <td>{row.coreExplanation}</td>
+                <td>{row.prediction}</td>
+                <td>{row.distinguishingTest}</td>
+                <td>{row.risk}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p class="ltx_p">因此，后续定量化不是只拟合一条“飞轮曲线”，而是做模型比较：先让简单模型解释数据，再检验飞轮反馈项是否提供额外预测力、解释力和可操作性。</p>
+      <h4 class="ltx_title ltx_title_subsubsection">14.2.1 Model Comparison Protocol</h4>
+      <p class="ltx_p">模型比较协议把“飞轮是否成立”转成一个顺序门禁：先冻结候选模型和共享结局，再让简单模型先解释结果，最后才检查反馈项、风险扣减、外推边界和升级条件。</p>
+      <div class="ltx_table">
+        <table>
+          <thead><tr><th>阶段</th><th>目的</th><th>实现方式</th><th>升级信号</th><th>失败信号</th></tr></thead>
+          <tbody>
+            {modelComparisonProtocolRows.map((row) => (
+              <tr>
+                <td>{row.stage}</td>
+                <td>{row.purpose}</td>
+                <td>{row.implementation}</td>
+                <td>{row.upgradeSignal}</td>
+                <td>{row.failureSignal}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <h4 class="ltx_title ltx_title_subsubsection">14.2.2 Candidate Model Specification Registry</h4>
+      <p class="ltx_p">候选模型规格表把每个竞争解释压成可建模对象。它规定每个模型允许使用哪些变量、哪些反馈项、预测什么结局、需要什么最小数据，以及在什么条件下胜出或降级。</p>
+      <div class="ltx_table">
+        <table>
+          <thead><tr><th>ID</th><th>模型</th><th>变量</th><th>反馈项</th><th>主结局</th><th>比较角色</th><th>胜出 / 降级条件</th></tr></thead>
+          <tbody>
+            {candidateModelSpecificationRows.map((row) => (
+              <tr>
+                <td>{row.modelId}</td>
+                <td>{row.model}</td>
+                <td>{row.includedVariables}</td>
+                <td>{row.feedbackTerms}</td>
+                <td>{row.primaryOutcome}</td>
+                <td>{row.comparisonRole}<br /><em>最小数据：{row.minimumData}</em></td>
+                <td><strong>胜出：</strong>{row.winningCondition}<br /><strong>降级：</strong>{row.downgradeCondition}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <h4 class="ltx_title ltx_title_subsubsection">14.2.3 Model Comparison Reporting Matrix</h4>
+      <p class="ltx_p">模型比较结果必须按统一矩阵报告，不能只展示支持飞轮的曲线。该矩阵要求每次报告都说明模型集、共享结局、time zero、缺失与删失、简单模型表现、反馈增量、风险扣减、不确定性、敏感性、外推边界、降级规则和可复现产物。</p>
+      <div class="ltx_table">
+        <table>
+          <thead><tr><th>项目</th><th>目的</th><th>必须输出</th><th>通过标准</th><th>失败模式</th></tr></thead>
+          <tbody>
+            {modelComparisonReportingRows.map((row) => (
+              <tr>
+                <td>{row.reportItem}</td>
+                <td>{row.purpose}</td>
+                <td>{row.requiredOutput}</td>
+                <td>{row.passCriterion}</td>
+                <td>{row.failurePattern}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <h4 class="ltx_title ltx_title_subsubsection">14.2.4 Model Comparison Result Contract</h4>
+      <p class="ltx_p">结果契约规定未来任何模型比较输出的最小字段。它把“某个模型看起来更好”压成可审查记录：一次运行必须说明 run id、模型编号、目标结局、估计量、time zero、适用范围、数据窗口、估计方法、效应大小、不确定性、校准或拟合、风险扣减、敏感性状态、复现产物、主张升级决策和引用语境门禁。</p>
+      <div class="ltx_table">
+        <table>
+          <thead><tr><th>字段</th><th>含义</th><th>用途</th><th>合法值 / 格式</th><th>缺失后果</th></tr></thead>
+          <tbody>
+            {modelComparisonResultContractRows.map((row) => (
+              <tr>
+                <td>{row.field}</td>
+                <td>{row.meaning}</td>
+                <td>{row.requiredFor}</td>
+                <td>{row.validValuesOrFormat}</td>
+                <td>{row.failureIfMissing}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <h3 class="ltx_title ltx_title_subsection">14.3 AI Research Failure Mode Audit v0.1</h3>
+      <p class="ltx_p">下表把 AI 辅助科研中最容易“看起来正确”的七类失败模式纳入论文完整性门禁。当前版本是 working paper integrity audit，不等同于正式投稿前的独立审稿；全部 12 个引用语境已完成本地来源边界审查，最高风险引用语境另有专门审查，但 Citation Audit 仍保留 WARN，必须在正式提交前完成 fresh reviewer thread。</p>
+      <div class="ltx_table">
+        <table>
+          <thead><tr><th>ID</th><th>失败模式</th><th>适用范围</th><th>本文风险</th><th>当前证据与控制</th><th>状态 / 阻塞条件</th><th>下一步</th></tr></thead>
+          <tbody>
+            {failureModeAuditRows.map((row) => (
+              <tr>
+                <td>{row.modeId}</td>
+                <td>{row.failureMode}</td>
+                <td>{row.appliesTo}</td>
+                <td>{row.riskInThisPaper}</td>
+                <td>{row.currentEvidence}<br /><em>{row.control}</em></td>
+                <td><strong>{row.status}</strong><br />{row.blockCondition}</td>
+                <td>{row.nextAction}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <h3 class="ltx_title ltx_title_subsection">14.4 Reproducibility Anchors</h3>
+      <p class="ltx_p">当前版本把论文、Web 页面、结构化数据、证据矩阵、公式推导包和 D3 图表分成六个可追踪产物。每个产物都保留路径、职责和检查方式。</p>
+      <div class="ltx_table">
+        <table>
+          <thead><tr><th>产物</th><th>路径</th><th>职责</th><th>检查方式</th></tr></thead>
+          <tbody>
+            {reproducibilityAnchorRows.map((row) => (
+              <tr>
+                <td>{row.artifact}</td>
+                <td><code>{row.path}</code></td>
+                <td>{row.role}</td>
+                <td>{row.check}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="S15" class="ltx_section">
+      <h2 class="ltx_title ltx_title_section"><span class="ltx_tag ltx_tag_section">15. </span>研究路线</h2>
+      <div class="ltx_table">
+        <table>
+          <thead><tr><th>阶段</th><th>任务</th><th>产物</th></tr></thead>
+          <tbody>
+            {milestoneRows.map(([id, task, output]) => (
+              <tr><td>{id}</td><td>{task}</td><td>{output}</td></tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p class="ltx_p">本页是论文页面 v0.25。下一步应把模型契约接入 D3 玩具曲线，并把“固定寿命路径、延寿路径、飞轮路径”三条曲线做成可交互可视化。</p>
+    </section>
+
+    <section id="S16" class="ltx_section">
+      <h2 class="ltx_title ltx_title_section"><span class="ltx_tag ltx_tag_section">16. </span>研究声明</h2>
+      <p class="ltx_p">为了让本文接近可提交 working paper 的最低治理标准，以下声明从结构化 JSON 数据渲染。它们限定数据、代码、伦理、安全、AI 辅助和使用边界，防止读者把概念模型误读为医学或投资建议。</p>
+      <div class="ltx_table">
+        <table>
+          <thead><tr><th>声明</th><th>内容</th><th>对应产物</th></tr></thead>
+          <tbody>
+            {researchDeclarationRows.map((row) => (
+              <tr>
+                <td>{row.declaration}</td>
+                <td>{row.statement}</td>
+                <td><code>{row.artifact}</code></td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="S17" class="ltx_section">
+      <h2 class="ltx_title ltx_title_section"><span class="ltx_tag ltx_tag_section">17. </span>结论</h2>
+      <p class="ltx_p">本文把“有效永生”从单纯延寿叙事改写为一个主体持续性研究问题。核心观点是：如果主体持续窗口被延展，并且延展出来的时间能够转化为有效时间、学习轮次、能力积累、技术采用、行动质量和真实可能性空间，那么有效永生可能形成加速回报飞轮。</p>
+      <p class="ltx_p">这个飞轮不是自动成立的；它受健康、认知、资源、社会支持、技术可靠性、因果证据、治理能力和主体连续性约束。Human Infra 的下一步工作，是把本文的 Source Cards、Evidence Matrix、指标注册表和玩具模型接入可复现的 Web 可视化，使每个读者都能看到某条技术路径到底改变了哪个变量、穿过了哪些证据门、在哪里可能失败。</p>
+    </section>
+
+    <section id="references" class="ltx_bibliography">
+      <h2 class="ltx_title ltx_title_bibliography">References</h2>
+      <p class="ltx_p">References are rendered from the structured Reference Registry in <code>web/src/data/effective-immortality-evidence.json</code>. DOI-backed entries use Crossref-verified metadata where available; institutional standards and web resources are marked as official-web or local-artifact entries instead of receiving fabricated DOI fields.</p>
+      <div class="ltx_table">
+        <table>
+          <thead><tr><th>Key</th><th>Type</th><th>Year</th><th>DOI / URL</th><th>Audit status</th><th>Used for</th></tr></thead>
+          <tbody>
+            {referenceRegistryRows.map((ref) => (
+              <tr>
+                <td>{ref.key}</td>
+                <td>{ref.entryType}</td>
+                <td>{ref.year}</td>
+                <td>
+                  {ref.doi ? <a href={`https://doi.org/${ref.doi}`}>{ref.doi}</a> : <a href={ref.url}>official / local link</a>}
+                </td>
+                <td>{ref.auditStatus}</td>
+                <td>{ref.usedFor}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <ol class="ltx_biblist">
+        {referenceRegistryRows.map((ref) => (
+          <li class="ltx_bibitem">
+            {ref.authors}. {ref.title}. <a href={ref.url}>{ref.venue}{ref.volume ? `, ${ref.volume}` : ""}{ref.issue ? `(${ref.issue})` : ""}{ref.pages ? `:${ref.pages}` : ""}{ref.year ? `, ${ref.year}` : ""}</a>{ref.doi ? ` DOI: ${ref.doi}` : ""}.
+          </li>
+        ))}
+      </ol>
+    </section>
+  </article>
+  <script id="effective-immortality-evidence-data" type="application/json" set:html={JSON.stringify(evidenceData)}></script>
+  <script>
+    import "../../scripts/evidence-graph.js";
+  </script>
+</PaperReaderLayout>

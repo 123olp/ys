@@ -1,0 +1,239 @@
+{
+  "audit": "proper-time-differential-citation-context-review-packet",
+  "verdict": "READY_FOR_EXTERNAL_REVIEW",
+  "reasonCode": "packet_generated_no_external_judgment",
+  "summary": "Proper-time differential citation contexts have been packaged for independent fresh reviewer verification. Local safe-use and forbidden-use boundaries are included, but no external reviewer verdict is claimed.",
+  "generatedAt": "2026-06-29T14:06:41.124Z",
+  "auditedInputHashes": {
+    "src/data/proper-time-differential-waiting-hypothesis.json": "sha256:9405df1e1f5a8eaf78adc6c26e41cceb931da28e0a6319848e0cbeeb17520352"
+  },
+  "details": {
+    "contextCount": 5,
+    "claimCount": 5,
+    "sourceCount": 5,
+    "referenceCount": 5,
+    "contextPackets": [
+      {
+        "id": "PTD-CTX1",
+        "claimIds": [
+          "CL1"
+        ],
+        "sourceIds": [
+          "SC1"
+        ],
+        "context": "固有时差分物理接口",
+        "safeUse": "可用于说明度规、世界线、固有时和红移倍率 K 的定义关系。",
+        "forbiddenUse": "不得据此宣称可制造等待区、可安全进入等待区或可用于人体永生。",
+        "reviewStatus": "ready-for-external-review",
+        "claims": [
+          {
+            "id": "CL1",
+            "claim": "固有时差分是本路径的物理核心。",
+            "sourceIds": [
+              "SC1"
+            ],
+            "evidenceRole": "支持定义",
+            "boundary": "只说明理论接口，不说明等待区可制造。"
+          }
+        ],
+        "sources": [
+          {
+            "id": "SC1",
+            "layer": "General Relativity / metric and proper time",
+            "referenceKey": "Carroll GR notes",
+            "referenceTitle": "Lecture Notes on General Relativity",
+            "referenceUrl": "https://arxiv.org/abs/gr-qc/9712019",
+            "supports": "定义度规、世界线、固有时和 Schwarzschild 接口。",
+            "doesNotSupport": "只支持物理语言，不支持可控等待区工程可行。"
+          }
+        ],
+        "reviewerPrompt": "For PTD-CTX1, verify source existence, metadata, and context support. Context: 固有时差分物理接口 Safe use: 可用于说明度规、世界线、固有时和红移倍率 K 的定义关系。 Forbidden use: 不得据此宣称可制造等待区、可安全进入等待区或可用于人体永生。 Return PASS / WARN / FAIL with evidence URLs and sentence-level rationale."
+      },
+      {
+        "id": "PTD-CTX2",
+        "claimIds": [
+          "CL2"
+        ],
+        "sourceIds": [
+          "SC2"
+        ],
+        "context": "黑洞附近未来观察边界",
+        "safeUse": "可用于约束普通黑洞场景中有限固有时观察外部未来的限制。",
+        "forbiddenUse": "不得外推成普通黑洞等待可以看到无限未来或安全等待外部文明升级。",
+        "reviewStatus": "ready-for-external-review",
+        "claims": [
+          {
+            "id": "CL2",
+            "claim": "黑洞相关等待必须保留普通黑洞场景边界。",
+            "sourceIds": [
+              "SC2"
+            ],
+            "evidenceRole": "约束边界",
+            "boundary": "不能外推成无限未来观察或安全等待方案。"
+          }
+        ],
+        "sources": [
+          {
+            "id": "SC2",
+            "layer": "Black-hole future-observation limits",
+            "referenceKey": "Zaslavskii 2012",
+            "referenceTitle": "On the possibility of observation of the future for movement in the field of black holes of different types",
+            "referenceUrl": "https://arxiv.org/abs/1203.4000",
+            "supports": "约束黑洞附近有限固有时观察外部未来的可行边界。",
+            "doesNotSupport": "不能写成普通黑洞场景能看到无限未来。"
+          }
+        ],
+        "reviewerPrompt": "For PTD-CTX2, verify source existence, metadata, and context support. Context: 黑洞附近未来观察边界 Safe use: 可用于约束普通黑洞场景中有限固有时观察外部未来的限制。 Forbidden use: 不得外推成普通黑洞等待可以看到无限未来或安全等待外部文明升级。 Return PASS / WARN / FAIL with evidence URLs and sentence-level rationale."
+      },
+      {
+        "id": "PTD-CTX3",
+        "claimIds": [
+          "CL3"
+        ],
+        "sourceIds": [
+          "SC3",
+          "SC5"
+        ],
+        "context": "未来等待谱系定位",
+        "safeUse": "可用于说明递归等待与 Malament-Hogarth 时空、主体持续性飞轮共享有限固有时 / 长外部过程的思想结构。",
+        "forbiddenUse": "不得把理论谱系写成物理宇宙可部署基础设施，也不得把内部 Human Infra 模型当作外部证据。",
+        "reviewStatus": "ready-for-external-review",
+        "claims": [
+          {
+            "id": "CL3",
+            "claim": "递归等待属于更宽的未来等待思想谱系。",
+            "sourceIds": [
+              "SC3",
+              "SC5"
+            ],
+            "evidenceRole": "谱系支持",
+            "boundary": "不等于证明可实施。"
+          }
+        ],
+        "sources": [
+          {
+            "id": "SC3",
+            "layer": "Malament-Hogarth spacetime",
+            "referenceKey": "Etesi-Nemeti 2001",
+            "referenceTitle": "Non-Turing computations via Malament-Hogarth space-times",
+            "referenceUrl": "https://arxiv.org/abs/gr-qc/0104023",
+            "supports": "提供有限固有时接收长计算或长外部过程结果的理论谱系。",
+            "doesNotSupport": "高度理想化，不代表物理宇宙可部署基础设施。"
+          },
+          {
+            "id": "SC5",
+            "layer": "Human Infra subject-continuity flywheel",
+            "referenceKey": "Effective Immortality Flywheel",
+            "referenceTitle": "Effective Immortality Flywheel",
+            "referenceUrl": "/papers/effective-immortality-flywheel/",
+            "supports": "把等待路径接入主体持续性、技术采用和可能性空间。",
+            "doesNotSupport": "内部理论接口，不是外部物理证据。"
+          }
+        ],
+        "reviewerPrompt": "For PTD-CTX3, verify source existence, metadata, and context support. Context: 未来等待谱系定位 Safe use: 可用于说明递归等待与 Malament-Hogarth 时空、主体持续性飞轮共享有限固有时 / 长外部过程的思想结构。 Forbidden use: 不得把理论谱系写成物理宇宙可部署基础设施，也不得把内部 Human Infra 模型当作外部证据。 Return PASS / WARN / FAIL with evidence URLs and sentence-level rationale."
+      },
+      {
+        "id": "PTD-CTX4",
+        "claimIds": [
+          "CL4"
+        ],
+        "sourceIds": [
+          "SC1",
+          "SC4"
+        ],
+        "context": "传播名与理论名分离",
+        "safeUse": "可用于解释公众可用“黑洞等待室”理解强引力时间膨胀，而正式对象应命名为度规红移固有时差分路径。",
+        "forbiddenUse": "不得用 NASA 科普页承担严格物理论证、工程制造或人体可采用性证明。",
+        "reviewStatus": "ready-for-external-review",
+        "claims": [
+          {
+            "id": "CL4",
+            "claim": "公众解释可以使用黑洞等待室，但正式论文应使用度规红移固有时差分路径。",
+            "sourceIds": [
+              "SC1",
+              "SC4"
+            ],
+            "evidenceRole": "术语支持",
+            "boundary": "传播名不能取代理论名。"
+          }
+        ],
+        "sources": [
+          {
+            "id": "SC1",
+            "layer": "General Relativity / metric and proper time",
+            "referenceKey": "Carroll GR notes",
+            "referenceTitle": "Lecture Notes on General Relativity",
+            "referenceUrl": "https://arxiv.org/abs/gr-qc/9712019",
+            "supports": "定义度规、世界线、固有时和 Schwarzschild 接口。",
+            "doesNotSupport": "只支持物理语言，不支持可控等待区工程可行。"
+          },
+          {
+            "id": "SC4",
+            "layer": "Public black-hole time dilation explanation",
+            "referenceKey": "NASA Science",
+            "referenceTitle": "What Happens When Something Gets Too Close to a Black Hole?",
+            "referenceUrl": "https://science.nasa.gov/universe/what-happens-when-something-gets-too-close-to-a-black-hole/",
+            "supports": "用于传播层解释强引力时间膨胀。",
+            "doesNotSupport": "科普来源不能承担严格工程或模型证明。"
+          }
+        ],
+        "reviewerPrompt": "For PTD-CTX4, verify source existence, metadata, and context support. Context: 传播名与理论名分离 Safe use: 可用于解释公众可用“黑洞等待室”理解强引力时间膨胀，而正式对象应命名为度规红移固有时差分路径。 Forbidden use: 不得用 NASA 科普页承担严格物理论证、工程制造或人体可采用性证明。 Return PASS / WARN / FAIL with evidence URLs and sentence-level rationale."
+      },
+      {
+        "id": "PTD-CTX5",
+        "claimIds": [
+          "CL5"
+        ],
+        "sourceIds": [
+          "SC2",
+          "SC5"
+        ],
+        "context": "NCG 净收益模型边界",
+        "safeUse": "可用于说明高 K 不能单独代表主体持续性收益，必须同时考虑退出、采用、主体连续性、风险和机会成本。",
+        "forbiddenUse": "不得把 NCG 写成实测估计器、个人寿命预测器或现实行动建议。",
+        "reviewStatus": "ready-for-external-review",
+        "claims": [
+          {
+            "id": "CL5",
+            "claim": "评价路径价值必须使用净收益，而不是只看 K。",
+            "sourceIds": [
+              "SC2",
+              "SC5"
+            ],
+            "evidenceRole": "模型约束",
+            "boundary": "NCG 当前仍是玩具模型，不是实测估计器。"
+          }
+        ],
+        "sources": [
+          {
+            "id": "SC2",
+            "layer": "Black-hole future-observation limits",
+            "referenceKey": "Zaslavskii 2012",
+            "referenceTitle": "On the possibility of observation of the future for movement in the field of black holes of different types",
+            "referenceUrl": "https://arxiv.org/abs/1203.4000",
+            "supports": "约束黑洞附近有限固有时观察外部未来的可行边界。",
+            "doesNotSupport": "不能写成普通黑洞场景能看到无限未来。"
+          },
+          {
+            "id": "SC5",
+            "layer": "Human Infra subject-continuity flywheel",
+            "referenceKey": "Effective Immortality Flywheel",
+            "referenceTitle": "Effective Immortality Flywheel",
+            "referenceUrl": "/papers/effective-immortality-flywheel/",
+            "supports": "把等待路径接入主体持续性、技术采用和可能性空间。",
+            "doesNotSupport": "内部理论接口，不是外部物理证据。"
+          }
+        ],
+        "reviewerPrompt": "For PTD-CTX5, verify source existence, metadata, and context support. Context: NCG 净收益模型边界 Safe use: 可用于说明高 K 不能单独代表主体持续性收益，必须同时考虑退出、采用、主体连续性、风险和机会成本。 Forbidden use: 不得把 NCG 写成实测估计器、个人寿命预测器或现实行动建议。 Return PASS / WARN / FAIL with evidence URLs and sentence-level rationale."
+      }
+    ],
+    "reviewerInstructions": [
+      "Use publisher, arXiv, DOI, official science pages, or local Human Infra artifacts rather than this packet as proof.",
+      "Check whether each source supports the registered safe use.",
+      "Check whether the manuscript could imply any forbidden use.",
+      "Do not upgrade public black-hole explanations into engineering feasibility evidence.",
+      "Do not upgrade Malament-Hogarth or Human Infra internal theory into deployable waiting-room evidence.",
+      "Do not treat NCG as an empirical estimator or individual decision tool."
+    ]
+  }
+}

@@ -1,0 +1,162 @@
+{
+  "packet_kind": "fresh-reviewer-context-packet",
+  "generated_at": "2026-06-29T00:00:00.000Z",
+  "source_protocol_hash": "sha256:2615318e3e11f7b5d9e0cb7db273b7d0dd0dabf9618b34ad685df8357a9222de",
+  "source_template_hash": "sha256:7c013c288f192ab01951a5655d9b5b89d21556d2f72c8e6ae765d5017e2e5e31",
+  "context": {
+    "priority": 8,
+    "context_id": "CTX9",
+    "source_group": "Target Trial Emulation; ClinicalTrials.gov; WHO ICTRP; TRIPOD+AI; PROBAST+AI; CONSORT-AI; SPIRIT-AI",
+    "risk_tier": "MEDIUM",
+    "risk_score": 3,
+    "claims": [
+      "CL3",
+      "CL6",
+      "CL7"
+    ],
+    "references": [
+      {
+        "key": "clinicaltrialsGov",
+        "title": "ClinicalTrials.gov",
+        "audit_status": "official-url-200",
+        "live_status": "PASS",
+        "verification_method": "url",
+        "used_for": "提供临床试验登记、人群、比较组、结局和结果回填入口。"
+      },
+      {
+        "key": "clinicaltrialsGovApi",
+        "title": "ClinicalTrials.gov Data API",
+        "audit_status": "official-url-200",
+        "live_status": "PASS",
+        "verification_method": "url",
+        "used_for": "提供结构化试验注册与结果数据的机器读取入口，用于后续试验证据采集和协议字段回填。"
+      },
+      {
+        "key": "consortAi2020",
+        "title": "Reporting guidelines for clinical trial reports for interventions involving artificial intelligence: the CONSORT-AI extension",
+        "audit_status": "doi-verified",
+        "live_status": "PASS",
+        "verification_method": "crossref",
+        "used_for": "约束 AI 干预临床试验结果报告中的干预说明、输入输出、人机交互和错误案例分析。"
+      },
+      {
+        "key": "gradeHandbook",
+        "title": "GRADE Handbook",
+        "audit_status": "official-web",
+        "live_status": "PASS",
+        "verification_method": "url",
+        "used_for": "提供证据确定性、收益风险权衡和从证据到建议的政策语言。"
+      },
+      {
+        "key": "hernan2022targetTrial",
+        "title": "Target Trial Emulation",
+        "audit_status": "crossref-verified",
+        "live_status": "PASS",
+        "verification_method": "crossref",
+        "used_for": "定义因果协议门禁和观察数据因果推断边界。"
+      },
+      {
+        "key": "probastAi2025",
+        "title": "PROBAST+AI: an updated quality, risk of bias, and applicability assessment tool for prediction models using regression or artificial intelligence methods",
+        "audit_status": "doi-and-official-site-verified",
+        "live_status": "PASS",
+        "verification_method": "crossref",
+        "used_for": "提供 AI 预测模型研究的偏倚风险、适用性、可信度、公平性和质量审查门禁。"
+      },
+      {
+        "key": "robins2000marginalStructural",
+        "title": "Marginal Structural Models and Causal Inference in Epidemiology",
+        "audit_status": "pubmed-verified",
+        "live_status": "PASS",
+        "verification_method": "crossref",
+        "used_for": "说明时间变化混杂下的因果估计入口和边界。"
+      },
+      {
+        "key": "spiritAi2020",
+        "title": "Guidelines for clinical trial protocols for interventions involving artificial intelligence: the SPIRIT-AI extension",
+        "audit_status": "doi-verified",
+        "live_status": "PASS",
+        "verification_method": "crossref",
+        "used_for": "约束 AI 干预临床试验方案中的协议透明度、输入输出、人机交互和错误分析计划。"
+      },
+      {
+        "key": "tripodAi2024",
+        "title": "TRIPOD+AI statement: updated guidance for reporting clinical prediction models that use regression or machine learning methods",
+        "audit_status": "doi-and-official-site-verified",
+        "live_status": "PASS",
+        "verification_method": "crossref",
+        "used_for": "提供 AI/机器学习临床预测模型的报告清单、外部验证、校准和透明度门禁。"
+      },
+      {
+        "key": "tripodProbast",
+        "title": "TRIPOD Statement and PROBAST",
+        "audit_status": "official-urls-200",
+        "live_status": "PASS",
+        "verification_method": "url",
+        "used_for": "约束预测模型报告质量、偏倚风险、校准和外部验证。"
+      },
+      {
+        "key": "whoIctrp",
+        "title": "International Clinical Trials Registry Platform (ICTRP)",
+        "audit_status": "official-url-200",
+        "live_status": "PASS",
+        "verification_method": "url",
+        "used_for": "提供国际临床试验注册网络、WHO 数据集和试验透明度原则的上位入口。"
+      }
+    ],
+    "used_for": "定义 U_t -> causal claim 的因果门禁和预测模型报告门禁。",
+    "safe_use": "population、intervention、comparator、time zero、outcome、estimand、试验登记、AI 干预报告、验证、校准和偏倚审查。",
+    "forbidden_use": "不能消除所有不可测混杂，也不证明任何注册试验或预测模型有效。",
+    "local_verdict": "KEEP_WITH_BOUNDARY",
+    "dedicated_high_risk_review": false,
+    "reviewer_questions": [
+      "拒绝从任务内 AI 效果直接跳到通用能力增强、健康寿命收益或永生收益。",
+      "确认 forbidden use 没有在正文、图注、表格或摘要中被暗示。",
+      "确认正文只使用 safe use，不把来源升级为飞轮整体成立的证据。",
+      "该来源是否真实存在，且题名、作者、年份、场所、DOI 或 URL 与登记信息一致？",
+      "该来源是否支持 safe use 中登记的最小用途？",
+      "当前正文、图注或表格是否把该来源扩展成 forbidden use 中禁止的结论？",
+      "如果只支持部分用途，需要把哪一句改成更弱表述？"
+    ],
+    "required_action_before_submission": "Review after high-risk contexts; keep registered boundary language.",
+    "reviewer_prompt": "你是独立引用语境审稿人。不要使用项目作者的本地结论作为证据，必须重新打开来源并检查正文语境。\n\nContext: CTX9\nSource group: Target Trial Emulation; ClinicalTrials.gov; WHO ICTRP; TRIPOD+AI; PROBAST+AI; CONSORT-AI; SPIRIT-AI\nRisk: MEDIUM / score 3\nClaims: CL3, CL6, CL7\nUsed for: 定义 U_t -> causal claim 的因果门禁和预测模型报告门禁。\nSafe use: population、intervention、comparator、time zero、outcome、estimand、试验登记、AI 干预报告、验证、校准和偏倚审查。\nForbidden use: 不能消除所有不可测混杂，也不证明任何注册试验或预测模型有效。\n\nReferences:\n- clinicaltrialsGov: ClinicalTrials.gov (official-url-200; PASS)\n- clinicaltrialsGovApi: ClinicalTrials.gov Data API (official-url-200; PASS)\n- consortAi2020: Reporting guidelines for clinical trial reports for interventions involving artificial intelligence: the CONSORT-AI extension (doi-verified; PASS)\n- gradeHandbook: GRADE Handbook (official-web; PASS)\n- hernan2022targetTrial: Target Trial Emulation (crossref-verified; PASS)\n- probastAi2025: PROBAST+AI: an updated quality, risk of bias, and applicability assessment tool for prediction models using regression or artificial intelligence methods (doi-and-official-site-verified; PASS)\n- robins2000marginalStructural: Marginal Structural Models and Causal Inference in Epidemiology (pubmed-verified; PASS)\n- spiritAi2020: Guidelines for clinical trial protocols for interventions involving artificial intelligence: the SPIRIT-AI extension (doi-verified; PASS)\n- tripodAi2024: TRIPOD+AI statement: updated guidance for reporting clinical prediction models that use regression or machine learning methods (doi-and-official-site-verified; PASS)\n- tripodProbast: TRIPOD Statement and PROBAST (official-urls-200; PASS)\n- whoIctrp: International Clinical Trials Registry Platform (ICTRP) (official-url-200; PASS)\n\n请逐项输出：\n1. reference_existence: PASS / FAIL / UNCERTAIN，并给出核验 URL。\n2. safe_use_support: SUPPORTS / WEAK / WRONG，并说明来源文本如何支持或不支持。\n3. forbidden_use_violation: NONE / POSSIBLE / PRESENT。\n4. required_action: KEEP / SOFTEN / REWRITE / REMOVE / REPLACE_SOURCE。\n5. one_sentence_reason: 一句话说明 verdict。"
+  },
+  "result_stub": {
+    "context_id": "CTX9",
+    "priority": 8,
+    "risk_tier": "MEDIUM",
+    "source_group": "Target Trial Emulation; ClinicalTrials.gov; WHO ICTRP; TRIPOD+AI; PROBAST+AI; CONSORT-AI; SPIRIT-AI",
+    "claims": [
+      "CL3",
+      "CL6",
+      "CL7"
+    ],
+    "references": [
+      "clinicaltrialsGov",
+      "clinicaltrialsGovApi",
+      "consortAi2020",
+      "gradeHandbook",
+      "hernan2022targetTrial",
+      "probastAi2025",
+      "robins2000marginalStructural",
+      "spiritAi2020",
+      "tripodAi2024",
+      "tripodProbast",
+      "whoIctrp"
+    ],
+    "source_protocol_hash": "sha256:2615318e3e11f7b5d9e0cb7db273b7d0dd0dabf9618b34ad685df8357a9222de",
+    "reviewer_identity_class": null,
+    "reviewed_at": null,
+    "source_urls": [],
+    "reference_existence": null,
+    "safe_use_support": null,
+    "forbidden_use_violation": null,
+    "required_action": null,
+    "resolution_status": "NOT_REVIEWED",
+    "reviewer_reason": null,
+    "manuscript_change_required": null,
+    "manuscript_change_summary": null,
+    "reviewer_trace_path": null
+  },
+  "packet_hash": "sha256:070e6f9334225a7de3cd2284e170dd09b0641da3a82b9563cabf13f580e082b5"
+}

@@ -1,0 +1,191 @@
+{
+  "audit": "controllable-metric-waiting-room-citation-context-review-packet",
+  "verdict": "READY_FOR_EXTERNAL_REVIEW",
+  "reasonCode": "packet_generated_no_external_judgment",
+  "summary": "Controllable metric waiting room citation contexts have been packaged for independent fresh reviewer verification. Local safe-use and forbidden-use boundaries are included, but no external reviewer verdict is claimed.",
+  "generatedAt": "2026-06-29T14:50:08.786Z",
+  "auditedInputHashes": {
+    "src/data/controllable-metric-waiting-room-hypothesis.json": "sha256:c6ab38f4b61ec7e33e9e9704f69302fe1649453d00a44e6b9e8be2aa08c82ce0"
+  },
+  "details": {
+    "contextCount": 5,
+    "claimCount": 5,
+    "sourceCount": 5,
+    "contextPackets": [
+      {
+        "id": "CTX1",
+        "claimIds": [
+          "CE1"
+        ],
+        "sourceIds": [
+          "R1"
+        ],
+        "context": "用广义相对论语言定义固有时、度规和世界线。",
+        "safeUse": "可以支持 E1 的物理语言和变量定义。",
+        "forbiddenUse": "不得推出可控度规等待室、人工黑洞或强引力工程已经可行。",
+        "reviewStatus": "ready-for-external-review",
+        "claims": [
+          {
+            "id": "CE1",
+            "claim": "固有时由度规和世界线决定。",
+            "sourceId": "R1",
+            "evidenceStatus": "established-physics-language",
+            "safeInference": "可用于定义 E1。",
+            "forbiddenInference": "不能推出人工等待室可行。"
+          }
+        ],
+        "sources": [
+          {
+            "id": "R1",
+            "author": "Carroll",
+            "title": "Lecture Notes on General Relativity",
+            "url": "https://arxiv.org/abs/gr-qc/9712019",
+            "role": "提供度规、固有时和黑洞时空的基础语言。"
+          }
+        ],
+        "reviewerPrompt": "For CTX1, verify source existence, metadata, and context support. Context: 用广义相对论语言定义固有时、度规和世界线。 Safe use: 可以支持 E1 的物理语言和变量定义。 Forbidden use: 不得推出可控度规等待室、人工黑洞或强引力工程已经可行。 Return PASS / WARN / FAIL with evidence URLs and sentence-level rationale."
+      },
+      {
+        "id": "CTX2",
+        "claimIds": [
+          "CE2"
+        ],
+        "sourceIds": [
+          "R2"
+        ],
+        "context": "用黑洞未来观察边界约束普通黑洞等待叙事。",
+        "safeUse": "可以作为反证和限制来源。",
+        "forbiddenUse": "不得写成普通黑洞场景能安全观察或进入无限未来。",
+        "reviewStatus": "ready-for-external-review",
+        "claims": [
+          {
+            "id": "CE2",
+            "claim": "黑洞附近未来观察存在强约束。",
+            "sourceId": "R2",
+            "evidenceStatus": "constraint-source",
+            "safeInference": "可用于限制普通黑洞叙事。",
+            "forbiddenInference": "不能写成普通黑洞可看到无限未来。"
+          }
+        ],
+        "sources": [
+          {
+            "id": "R2",
+            "author": "Zaslavskii",
+            "title": "On the possibility of observation of the future for movement in the field of black holes of different types",
+            "url": "https://arxiv.org/abs/1203.4000",
+            "role": "用于约束黑洞场景中观察外部未来的边界。"
+          }
+        ],
+        "reviewerPrompt": "For CTX2, verify source existence, metadata, and context support. Context: 用黑洞未来观察边界约束普通黑洞等待叙事。 Safe use: 可以作为反证和限制来源。 Forbidden use: 不得写成普通黑洞场景能安全观察或进入无限未来。 Return PASS / WARN / FAIL with evidence URLs and sentence-level rationale."
+      },
+      {
+        "id": "CTX3",
+        "claimIds": [
+          "CE3"
+        ],
+        "sourceIds": [
+          "R3"
+        ],
+        "context": "用 Malament-Hogarth 谱系说明有限固有时与长外部过程的理论背景。",
+        "safeUse": "可以作为理论谱系和思想实验来源。",
+        "forbiddenUse": "不得写成现实宇宙中的可部署等待室或超计算工程。",
+        "reviewStatus": "ready-for-external-review",
+        "claims": [
+          {
+            "id": "CE3",
+            "claim": "有限固有时与长外部过程有理论谱系。",
+            "sourceId": "R3",
+            "evidenceStatus": "theory-analogy",
+            "safeInference": "可用于说明思想谱系。",
+            "forbiddenInference": "不能写成现实宇宙可部署基础设施。"
+          }
+        ],
+        "sources": [
+          {
+            "id": "R3",
+            "author": "Etesi and Nemeti",
+            "title": "Non-Turing computations via Malament-Hogarth space-times",
+            "url": "https://arxiv.org/abs/gr-qc/0104023",
+            "role": "提供有限固有时与长外部过程的理论谱系。"
+          }
+        ],
+        "reviewerPrompt": "For CTX3, verify source existence, metadata, and context support. Context: 用 Malament-Hogarth 谱系说明有限固有时与长外部过程的理论背景。 Safe use: 可以作为理论谱系和思想实验来源。 Forbidden use: 不得写成现实宇宙中的可部署等待室或超计算工程。 Return PASS / WARN / FAIL with evidence URLs and sentence-level rationale."
+      },
+      {
+        "id": "CTX4",
+        "claimIds": [
+          "CE4"
+        ],
+        "sourceIds": [
+          "R4"
+        ],
+        "context": "用 NASA 科普材料解释强引力时间膨胀的传播入口。",
+        "safeUse": "可以作为公众层面的概念解释。",
+        "forbiddenUse": "不得承担严格物理推导、工程设计、人体等待或安全承诺。",
+        "reviewStatus": "ready-for-external-review",
+        "claims": [
+          {
+            "id": "CE4",
+            "claim": "强引力时间膨胀可作为公众解释入口。",
+            "sourceId": "R4",
+            "evidenceStatus": "public-explanation",
+            "safeInference": "可用于传播层说明。",
+            "forbiddenInference": "不能承担严格工程证明。"
+          }
+        ],
+        "sources": [
+          {
+            "id": "R4",
+            "author": "NASA Science",
+            "title": "What Happens When Something Gets Too Close to a Black Hole?",
+            "url": "https://science.nasa.gov/universe/what-happens-when-something-gets-too-close-to-a-black-hole/",
+            "role": "用于公众层面的强引力时间膨胀解释。"
+          }
+        ],
+        "reviewerPrompt": "For CTX4, verify source existence, metadata, and context support. Context: 用 NASA 科普材料解释强引力时间膨胀的传播入口。 Safe use: 可以作为公众层面的概念解释。 Forbidden use: 不得承担严格物理推导、工程设计、人体等待或安全承诺。 Return PASS / WARN / FAIL with evidence URLs and sentence-level rationale."
+      },
+      {
+        "id": "CTX5",
+        "claimIds": [
+          "CE5"
+        ],
+        "sourceIds": [
+          "R5"
+        ],
+        "context": "用 Human Infra 内部论文连接等待路径与主体持续性飞轮。",
+        "safeUse": "可以支持项目内部模型接口和术语一致性。",
+        "forbiddenUse": "不得替代外部物理、医学、工程或伦理证据。",
+        "reviewStatus": "ready-for-external-review",
+        "claims": [
+          {
+            "id": "CE5",
+            "claim": "等待收益需要接入主体持续性飞轮。",
+            "sourceId": "R5",
+            "evidenceStatus": "internal-model-link",
+            "safeInference": "可用于接入 Human Infra 变量。",
+            "forbiddenInference": "不能替代外部物理证据。"
+          }
+        ],
+        "sources": [
+          {
+            "id": "R5",
+            "author": "Human Infra",
+            "title": "Effective Immortality Flywheel",
+            "url": "/papers/effective-immortality-flywheel/",
+            "role": "把等待路径接入主体持续性、技术采用和可能性空间。"
+          }
+        ],
+        "reviewerPrompt": "For CTX5, verify source existence, metadata, and context support. Context: 用 Human Infra 内部论文连接等待路径与主体持续性飞轮。 Safe use: 可以支持项目内部模型接口和术语一致性。 Forbidden use: 不得替代外部物理、医学、工程或伦理证据。 Return PASS / WARN / FAIL with evidence URLs and sentence-level rationale."
+      }
+    ],
+    "reviewerInstructions": [
+      "Use arXiv, official science pages, or local Human Infra pages as primary evidence rather than this packet.",
+      "Check whether each source supports the registered safe use.",
+      "Check whether the manuscript could imply any forbidden use.",
+      "Do not upgrade public black-hole explanations into engineering feasibility evidence.",
+      "Do not upgrade Malament-Hogarth or black-hole boundary papers into deployable waiting-room evidence.",
+      "Do not treat toy NCG, K, or P_access as empirical estimators or individual decision tools.",
+      "Do not treat Human Infra internal pages as external physics, medicine, or engineering evidence."
+    ]
+  }
+}

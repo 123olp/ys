@@ -74,6 +74,18 @@
       "ltx_section",
       "ltx_bibliography"
     ],
+    "required_selectors": [
+      ".ltx_page_navbar > nav.ltx_TOC",
+      ".ltx_document",
+      ".ltx_abstract",
+      ".ltx_bibliography"
+    ],
+    "interaction_assertions": [
+      "TOC contains at least one entry when the page has sections",
+      "clicking the TOC control changes data-toc-display between none and block",
+      "desktop and mobile previews preserve the TOC interaction",
+      "generated HTML does not contain duplicate class attributes"
+    ],
     "preserve_attributes": [
       "data-theme",
       "data-toc-display",
@@ -88,6 +100,8 @@
   "consumer_must": [
     "serve installed assets from the target public root",
     "run verify-assets after installing or upgrading assets",
+    "run browser-level DOM and interaction assertions when changing templates, layout slots, HTML injection, post-processing, or previews",
+    "preserve the native TOC slot structure under .ltx_page_navbar > nav.ltx_TOC",
     "keep .research mirrors out of version control unless the target project intentionally archives them",
     "treat generated paper content as project-owned content",
     "avoid editing copied arXiv CSS, JavaScript, and font files"
@@ -107,6 +121,8 @@
   ],
   "validation": [
     "python3 tools/arxiv_html_paper_tool.py verify-assets --public-dir <web-root>/public",
-    "python3 tools/arxiv_html_paper_tool.py verify-assets --public-dir <web-root>/public --json"
+    "python3 tools/arxiv_html_paper_tool.py verify-assets --public-dir <web-root>/public --json",
+    "browser assertion: .ltx_page_navbar > nav.ltx_TOC exists and TOC toggle changes data-toc-display",
+    "browser assertion: .ltx_document, .ltx_abstract, and .ltx_bibliography exist"
   ]
 }

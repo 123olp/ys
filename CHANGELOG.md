@@ -2,10 +2,53 @@
 
 All notable repository structure changes are recorded here.
 
+## 2026-06-29
+
+- Added the controllable metric waiting room working paper page, structured data source, derivation package, reference verification, citation-context review packet, local citation-context review, pre-submission review, and coverage audit.
+- Linked the controllable metric waiting room hypothesis from the root README and Future Waiting domain docs so the new recursive waiting model is discoverable without relying on conversation context.
+- Added an anti-scarcity value lens to explain Human Infra's legitimacy as infrastructure for scarce lifetime, healthspan, effective time, attention, cognition, recovery, action capacity, technology access, and future option value.
+
 ## 2026-06-28
 
 - Formalized `tools/arxiv-html-paper/` as a reusable arXiv HTML Paper Reuse Kit with a package version, consumer contract, machine-readable contract, consumer guide, governance document, maintenance runbook, and package changelog.
 - Updated tool navigation and reference documentation so other projects can consume the arXiv-style reader framework without relying on conversation context.
+- Added the effective immortality acceleration flywheel working paper draft, defining the first research chain, variables, hypotheses, evidence plan, toy model, and beginner research route.
+- Added the effective immortality flywheel evidence matrix and expanded source cards, mapping the main chain to verifiable edges, source roles, breakpoints, and model tasks.
+- Expanded the effective immortality flywheel Source Cards to v0.3 with technology-family evidence cards for AI tools, medical interventions, wearables, knowledge externalization, automation, and resource/environment interventions.
+- Upgraded the effective immortality flywheel working paper and Web paper page to v0.4 with a running example, formal objective function, threat model, and conclusion section.
+- Added `web/src/data/effective-immortality-evidence.json` as the structured Evidence Matrix data source and connected the Web paper page to render evidence edges, classes, and technology families from data.
+- Added `web/src/scripts/evidence-graph.js` and connected the working paper page to render a D3 Evidence Matrix graph from the same structured data.
+- Added a Claim Register to the effective immortality flywheel paper and Evidence Matrix data so conceptual, methodological, empirical, governance, and prohibited claims are explicitly separated.
+- Added a partial citation audit note and normalized key AI productivity and target-trial references in the Web paper and Source Cards.
+- Added an independent arXiv-style Web paper page at `web/src/pages/papers/effective-immortality-flywheel.astro` so the effective immortality flywheel paper does not overwrite the existing `/paper/` page.
+- Upgraded the effective immortality flywheel data source to schema v0.3 with a variable dictionary, model contract, and derivation map for the quantitative research layer.
+- Upgraded the effective immortality flywheel working paper to v0.6 and Evidence Matrix to v0.4 with structured threats to validity and reproducibility anchors.
+- Upgraded the effective immortality flywheel working paper to v0.7 and evidence data to schema v0.5 with a Citation Context Register covering 12 critical source groups.
+- Upgraded the effective immortality flywheel working paper to v0.8 and evidence data to schema v0.6 with a Claim Evidence Map linking CL1-CL7 to sections, evidence edges, citation contexts, falsifiers, and upgrade gates.
+- Upgraded the effective immortality flywheel Web paper to v0.9 and evidence data to schema v0.7 with a 33-entry Reference Registry, Crossref/arXiv/official URL audit statuses, data-driven reference rendering, and a corrected QJE DOI for `Generative AI at Work`.
+- Upgraded the effective immortality flywheel paper assets to v0.10 and evidence data to schema v0.8 with a Reference Registry export script plus generated `references.bib`, `CITATION_AUDIT.json`, and `CITATION_AUDIT.md` artifacts.
+- Upgraded the effective immortality flywheel paper assets to v0.11 and evidence data to schema v0.9 with a 42-entry Reference Registry, Source Cards v0.4, and generated coverage audit artifacts that verify 50 evidence source aliases resolve to Source Cards and registry keys.
+- Upgraded the effective immortality flywheel paper assets to v0.12 and evidence data to schema v1.0 with an `aiTaskEvidenceRegister` that normalizes four `A -> Q` AI productivity studies by task, population, intervention, comparator, outcomes, QA boundary, downside channel, and external validity boundary.
+- Upgraded the effective immortality flywheel paper assets to v0.13 and evidence data to schema v1.1 with full-text verification fields for the `aiTaskEvidenceRegister`, including sample/design, effect estimates, uncertainty/statistics, evidence level, COI caveats, and verification status.
+- Upgraded the effective immortality flywheel paper assets to v0.14 while keeping evidence schema v1.1, splitting the prediction-model governance source group into ClinicalTrials.gov API, WHO ICTRP, TRIPOD+AI, PROBAST+AI, CONSORT-AI, and SPIRIT-AI entries; Reference Registry now has 48 entries and coverage audit verifies 54 evidence aliases.
+- Upgraded the effective immortality flywheel paper assets to v0.15 and evidence data to schema v1.2 with AI task method-audit fields for Brynjolfsson, Noy, Peng, and Dell'Acqua, including primary tables/figures, regression specifications, statistical columns, uncertainty details, scoring protocols, QA-cost quantification, and external-validity boundaries.
+- Upgraded the effective immortality flywheel paper assets to v0.16 and evidence data to schema v1.3 with research declarations covering data availability, code availability, ethics and safety, AI assistance disclosure, competing interests, funding, author contribution, and use limitations.
+- Upgraded the effective immortality flywheel paper assets to v0.17 and evidence data to schema v1.4 with an `estimandRegistry` covering all 9 evidence edges, including population, intervention/exposure, comparator, time zero, outcome, estimand, identification risk, and current status; coverage audit now fails if evidence edges lack estimand protocol rows.
+- Upgraded the effective immortality flywheel paper assets to v0.18 and evidence data to schema v1.5 with an `analysisPlanRegistry` covering all 9 evidence edges, including study question, candidate design, minimum data, primary estimator, diagnostics, sensitivity checks, reporting output, and current status; coverage audit now fails if evidence edges lack analysis plan rows.
+- Upgraded the effective immortality flywheel paper assets to v0.19 and evidence data to schema v1.6 with an `aiResearchFailureModeAudit` covering 7 AI-assisted research failure modes; coverage audit now fails if failure-mode audit rows or required fields are missing.
+- Upgraded the effective immortality flywheel paper assets to v0.20 and evidence data to schema v1.7 with a primary-source `verify-reference-registry.mjs` gate plus generated `REFERENCE_VERIFICATION.json` and `REFERENCE_VERIFICATION.md`; corrected the Newell/Rosenbloom chapter DOI and the PROBAST+AI BMJ title.
+- Upgraded the effective immortality flywheel paper assets to v0.21 and evidence data to schema v1.8 with a local `audit-claim-context-alignment.mjs` gate plus generated `CLAIM_CONTEXT_AUDIT.json` and `CLAIM_CONTEXT_AUDIT.md`; added `npm run audit:paper-integrity` to regenerate references, verify primary sources, check claim-context alignment, and run coverage audit in one command.
+- Upgraded the effective immortality flywheel paper assets to v0.22 and evidence data to schema v1.9 with a local `audit-pre-submission-review.mjs` gate plus generated `PRE_SUBMISSION_REVIEW.json` and `PRE_SUBMISSION_REVIEW.md`; fixed stale Evidence Matrix and Citation Audit version references and expanded `npm run audit:paper-integrity` to include pre-submission review.
+- Upgraded the effective immortality flywheel paper assets to v0.23 and evidence data to schema v2.0 with a `export-citation-context-review-packet.mjs` generator plus generated `CITATION_CONTEXT_REVIEW_PACKET.json` and `CITATION_CONTEXT_REVIEW_PACKET.md`; expanded `npm run audit:paper-integrity` to include the fresh-reviewer input packet before local audit gates.
+- Upgraded the effective immortality flywheel paper assets to v0.24 with a `searchExecutionRegister` that turns the Literature Gap Map into a candidate source queue covering all 9 evidence edges; coverage audit now verifies search execution fields, edge coverage, and screening decisions.
+- Added `searchExecutionVerificationRegister` and Candidate Source Verification v0.1 for the effective immortality flywheel paper, recording URL/DOI status, canonical titles, publication status, evidence levels, use decisions, and blocking issues for all 9 candidate search records.
+- Upgraded the effective immortality flywheel paper assets to v0.25 with `searchExecutionExtractionRegister` and Candidate Source Extraction v0.1, extracting candidate support boundaries, non-support boundaries, promotion decisions, and Source Card next actions for all 9 verified candidate records.
+- Expanded the effective immortality flywheel Source Cards to v0.5 by promoting P1 candidate sources into 5 bounded method/source cards and adding 5 matching Reference Registry entries.
+- Added `audit-citation-context-risk-triage.mjs` plus generated `CITATION_CONTEXT_RISK_TRIAGE.json` and `CITATION_CONTEXT_RISK_TRIAGE.md` to rank citation contexts by local overclaim risk before external fresh-reviewer judgment.
+- Added `audit-high-risk-citation-contexts.mjs` plus generated `HIGH_RISK_CITATION_CONTEXT_REVIEW.json` and `HIGH_RISK_CITATION_CONTEXT_REVIEW.md` to source-bound HIGH/BLOCKER citation contexts before formal fresh-reviewer citation audit.
+- Added `audit-citation-context-local-review.mjs` plus generated `CITATION_CONTEXT_LOCAL_REVIEW.json` and `CITATION_CONTEXT_LOCAL_REVIEW.md` to source-bound every registered citation context before formal fresh-reviewer citation audit.
+- Added `export-fresh-reviewer-citation-audit-protocol.mjs` plus generated `FRESH_REVIEWER_CITATION_AUDIT_PROTOCOL.json` and `FRESH_REVIEWER_CITATION_AUDIT_PROTOCOL.md` to export the remaining sentence-level citation-context audit as an executable external reviewer protocol.
+- Added `audit-fresh-reviewer-citation-results.mjs` plus generated `FRESH_REVIEWER_CITATION_AUDIT_RESULTS_TEMPLATE.*` and `FRESH_REVIEWER_CITATION_AUDIT_RESULTS_AUDIT.*` so real external reviewer verdicts can be recorded and machine-validated without confusing pending templates with completed citation review.
 
 ## 2026-06-20
 

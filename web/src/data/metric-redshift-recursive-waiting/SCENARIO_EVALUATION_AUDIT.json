@@ -1,0 +1,185 @@
+{
+  "audit": "metric-redshift-scenario-evaluation",
+  "generatedAt": "2026-06-29T12:48:38.170Z",
+  "verdict": "PASS",
+  "protocolVersion": "0.1",
+  "summary": {
+    "scenarios": 4,
+    "toyEvaluations": 4,
+    "quantitativeReady": 0,
+    "evaluationClasses": {
+      "calibration-only": 1,
+      "blocked": 2,
+      "cannot-evaluate": 1
+    }
+  },
+  "evaluations": [
+    {
+      "id": "MRW-TOY0",
+      "scenarioId": "MRW-SC0",
+      "scenarioName": "弱场相对论时钟校准场景",
+      "scenarioStatus": "not-a-waiting-room",
+      "evaluationStatus": "calibration-only",
+      "evaluationClass": "calibration-only",
+      "expectedNcgDirection": "not-applicable",
+      "canEnterQuantitativeNcg": false,
+      "cardCompleteness": {
+        "total": 6,
+        "complete": 0,
+        "partial": 1,
+        "blocked": 0,
+        "missing": 0,
+        "notApplicable": 5
+      },
+      "normalizedInputs": [
+        {
+          "symbol": "K",
+          "status": "defined-in-weak-field-clock-context",
+          "notes": "只能校准时间差概念。"
+        },
+        {
+          "symbol": "NCG",
+          "status": "not-applicable",
+          "notes": "没有主体等待、退出、采用或连续性对象。"
+        }
+      ],
+      "dominantBlocker": "不是等待室场景，不能转换成主体持续性收益。",
+      "decision": "保留为物理概念校准基线。",
+      "requiredNextWork": "补充弱场校准说明，明确不可迁移到强场工程。",
+      "nonClaim": "不声明实验时钟差可以支持黑洞等待室可行。"
+    },
+    {
+      "id": "MRW-TOY1",
+      "scenarioId": "MRW-SC1",
+      "scenarioName": "普通黑洞自由落体未来观察负例",
+      "scenarioStatus": "literature-constrained",
+      "evaluationStatus": "blocked",
+      "evaluationClass": "blocked",
+      "expectedNcgDirection": "blocked-negative",
+      "canEnterQuantitativeNcg": false,
+      "cardCompleteness": {
+        "total": 6,
+        "complete": 0,
+        "partial": 1,
+        "blocked": 4,
+        "missing": 1,
+        "notApplicable": 0
+      },
+      "normalizedInputs": [
+        {
+          "symbol": "K",
+          "status": "theory-dependent",
+          "notes": "普通黑洞未来观察限制文献已约束过度叙述。"
+        },
+        {
+          "symbol": "PExit",
+          "status": "blocked",
+          "notes": "自由落体或不可退出路径不能成为等待协议。"
+        },
+        {
+          "symbol": "PContinuity",
+          "status": "blocked",
+          "notes": "主体连续性缺少可恢复路径。"
+        }
+      ],
+      "dominantBlocker": "退出门和主体连续性门无法定义为正。",
+      "decision": "作为负例边界保留，禁止正收益叙述。",
+      "requiredNextWork": "区分自由落体、静止壳层和特殊轨道的边界。",
+      "nonClaim": "不声明所有强红移等待路径都被该负例否定。"
+    },
+    {
+      "id": "MRW-TOY2",
+      "scenarioId": "MRW-SC2",
+      "scenarioName": "近视界静止壳层等待思想实验",
+      "scenarioStatus": "blocked-by-engineering-and-risk",
+      "evaluationStatus": "blocked-by-risk-costs",
+      "evaluationClass": "blocked",
+      "expectedNcgDirection": "negative-under-current-evidence",
+      "canEnterQuantitativeNcg": false,
+      "cardCompleteness": {
+        "total": 6,
+        "complete": 0,
+        "partial": 1,
+        "blocked": 2,
+        "missing": 3,
+        "notApplicable": 0
+      },
+      "normalizedInputs": [
+        {
+          "symbol": "K",
+          "status": "potentially-high-but-incomplete",
+          "notes": "倍率直觉存在，但世界线和加速度条件不完整。"
+        },
+        {
+          "symbol": "RLife",
+          "status": "dominant-cost",
+          "notes": "潮汐、辐射、生命支持和加速度风险优先扣减。"
+        },
+        {
+          "symbol": "REngineering",
+          "status": "dominant-cost",
+          "notes": "稳定维持和退出路径未给出。"
+        },
+        {
+          "symbol": "COpportunity",
+          "status": "unknown-cost",
+          "notes": "等待外部技术窗口的替代路径未比较。"
+        }
+      ],
+      "dominantBlocker": "工程风险、生命风险和机会成本压倒倍率收益。",
+      "decision": "保留为高 K 低 NCG 的压力测试反例。",
+      "requiredNextWork": "补齐参考观察者、proper acceleration、tidal/radiation risk、communication 和 exit path。",
+      "nonClaim": "不提供近视界等待任务方案。"
+    },
+    {
+      "id": "MRW-TOY3",
+      "scenarioId": "MRW-SC3",
+      "scenarioName": "可控红移等待区远期假设场景",
+      "scenarioStatus": "speculative-architecture",
+      "evaluationStatus": "cannot-evaluate",
+      "evaluationClass": "cannot-evaluate",
+      "expectedNcgDirection": "cannot-evaluate",
+      "canEnterQuantitativeNcg": false,
+      "cardCompleteness": {
+        "total": 6,
+        "complete": 0,
+        "partial": 0,
+        "blocked": 0,
+        "missing": 6,
+        "notApplicable": 0
+      },
+      "normalizedInputs": [
+        {
+          "symbol": "K",
+          "status": "missing",
+          "notes": "可控红移区域尚未定义。"
+        },
+        {
+          "symbol": "PWindow",
+          "status": "missing",
+          "notes": "目标技术窗口和成熟信号缺失。"
+        },
+        {
+          "symbol": "PExit",
+          "status": "missing",
+          "notes": "退出和外部回收机制缺失。"
+        },
+        {
+          "symbol": "PContinuity",
+          "status": "missing",
+          "notes": "主体连续性卡片缺失。"
+        },
+        {
+          "symbol": "NCG",
+          "status": "cannot-evaluate",
+          "notes": "六卡片缺失，禁止方向性收益判断。"
+        }
+      ],
+      "dominantBlocker": "远期假设没有提交六类卡片。",
+      "decision": "仅作为未来假设对象保留。",
+      "requiredNextWork": "提交完整 Scenario Cards 后再进入 toy NCG。",
+      "nonClaim": "不声明人工黑洞、类黑洞或度规工程当前可制造。"
+    }
+  ],
+  "findings": []
+}

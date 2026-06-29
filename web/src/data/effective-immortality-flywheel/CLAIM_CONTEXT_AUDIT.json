@@ -1,0 +1,164 @@
+{
+  "audit_skill": "claim-context-alignment-audit",
+  "verdict": "PASS",
+  "reason_code": "all_claim_contexts_aligned",
+  "summary": "All core claims have bounded claim evidence rows; all citation contexts state support and non-support boundaries; all contexts are backed by Reference Registry entries; no reference verification FAIL rows are present.",
+  "generated_at": "2026-06-29T00:00:00.000Z",
+  "audited_input_hashes": {
+    "src/data/effective-immortality-evidence.json": "sha256:998866fea2f08fe27ad21ffa46f540543955ec3c49e1e2aaef78638e2db33d64",
+    "src/data/effective-immortality-flywheel/REFERENCE_VERIFICATION.json": "sha256:a98496f727356c88f7c90f252514a927897aed12ca2fa811bad7051ce14414ca"
+  },
+  "details": {
+    "schema_version": "2.0",
+    "claim_count": 7,
+    "claim_evidence_map_count": 7,
+    "citation_context_count": 12,
+    "reference_registry_count": 53,
+    "reference_verification_fail_count": 0,
+    "claim_alignment": [
+      {
+        "claim_id": "CL1",
+        "alignment_verdict": "FRAMEWORK_ONLY",
+        "context_count": 6,
+        "reference_count": 19,
+        "boundary_status": "scoped",
+        "status": "PASS"
+      },
+      {
+        "claim_id": "CL2",
+        "alignment_verdict": "OPERATIONAL_INTERFACE",
+        "context_count": 8,
+        "reference_count": 26,
+        "boundary_status": "scoped",
+        "status": "PASS"
+      },
+      {
+        "claim_id": "CL3",
+        "alignment_verdict": "METHOD_SUPPORTED",
+        "context_count": 2,
+        "reference_count": 13,
+        "boundary_status": "scoped",
+        "status": "PASS"
+      },
+      {
+        "claim_id": "CL4",
+        "alignment_verdict": "BOUNDED_EMPIRICAL",
+        "context_count": 2,
+        "reference_count": 9,
+        "boundary_status": "explicit",
+        "status": "PASS"
+      },
+      {
+        "claim_id": "CL5",
+        "alignment_verdict": "NORMATIVE_MEASUREMENT",
+        "context_count": 2,
+        "reference_count": 5,
+        "boundary_status": "scoped",
+        "status": "PASS"
+      },
+      {
+        "claim_id": "CL6",
+        "alignment_verdict": "GOVERNANCE_REQUIRED",
+        "context_count": 4,
+        "reference_count": 24,
+        "boundary_status": "scoped",
+        "status": "PASS"
+      },
+      {
+        "claim_id": "CL7",
+        "alignment_verdict": "HARD_BOUNDARY",
+        "context_count": 5,
+        "reference_count": 25,
+        "boundary_status": "explicit",
+        "status": "PASS"
+      }
+    ],
+    "context_coverage": [
+      {
+        "context_id": "CTX1",
+        "citation_status": "KEEP",
+        "reference_count": 2,
+        "has_boundary": true,
+        "status": "PASS"
+      },
+      {
+        "context_id": "CTX2",
+        "citation_status": "KEEP WITH BOUNDARY",
+        "reference_count": 3,
+        "has_boundary": true,
+        "status": "PASS"
+      },
+      {
+        "context_id": "CTX3",
+        "citation_status": "KEEP WITH BOUNDARY",
+        "reference_count": 3,
+        "has_boundary": true,
+        "status": "PASS"
+      },
+      {
+        "context_id": "CTX4",
+        "citation_status": "KEEP WITH BOUNDARY",
+        "reference_count": 4,
+        "has_boundary": true,
+        "status": "PASS"
+      },
+      {
+        "context_id": "CTX5",
+        "citation_status": "KEEP WITH BOUNDARY",
+        "reference_count": 3,
+        "has_boundary": true,
+        "status": "PASS"
+      },
+      {
+        "context_id": "CTX6",
+        "citation_status": "KEEP WITH BOUNDARY",
+        "reference_count": 3,
+        "has_boundary": true,
+        "status": "PASS"
+      },
+      {
+        "context_id": "CTX7",
+        "citation_status": "KEEP WITH BOUNDARY",
+        "reference_count": 4,
+        "has_boundary": true,
+        "status": "PASS"
+      },
+      {
+        "context_id": "CTX8",
+        "citation_status": "KEEP",
+        "reference_count": 6,
+        "has_boundary": true,
+        "status": "PASS"
+      },
+      {
+        "context_id": "CTX9",
+        "citation_status": "KEEP",
+        "reference_count": 11,
+        "has_boundary": true,
+        "status": "PASS"
+      },
+      {
+        "context_id": "CTX10",
+        "citation_status": "KEEP WITH BOUNDARY",
+        "reference_count": 4,
+        "has_boundary": true,
+        "status": "PASS"
+      },
+      {
+        "context_id": "CTX11",
+        "citation_status": "KEEP WITH BOUNDARY",
+        "reference_count": 4,
+        "has_boundary": true,
+        "status": "PASS"
+      },
+      {
+        "context_id": "CTX12",
+        "citation_status": "KEEP WITH BOUNDARY",
+        "reference_count": 2,
+        "has_boundary": true,
+        "status": "PASS"
+      }
+    ],
+    "gaps": []
+  }
+}

@@ -15,6 +15,7 @@ docs/
 │   └── README.md
 ├── explanations/
 │   ├── README.md
+│   ├── effective-immortality-acceleration-flywheel.md
 │   ├── human-runtime-infrastructure.md
 │   ├── life-path-prediction-model.md
 │   ├── noah-ark-genealogy.md
@@ -52,6 +53,11 @@ docs/
 │   │   ├── 2026-06-28-human-infra-core-12-source-card-pack.md
 │   │   └── 2026-06-28-human-infra-genealogy-download-manifest.md
 │   ├── disembodied-cns-and-memory-editing-brief.md
+│   ├── 2026-06-29-metric-redshift-recursive-waiting-revision-notes.md
+│   ├── 2026-06-28-effective-immortality-flywheel-automated-research-run.md
+│   ├── 2026-06-28-effective-immortality-flywheel-derivation-package.md
+│   ├── 2026-06-28-effective-immortality-flywheel-evidence-matrix.md
+│   ├── 2026-06-28-effective-immortality-flywheel-source-cards.md
 │   ├── disembodied-cns-interface-architecture.md
 │   ├── human-runtime-infrastructure-learning-note.md
 │   └── human-runtime-infrastructure-longform.md
@@ -68,6 +74,7 @@ docs/
 ## 文件职责
 
 - `explanations/human-runtime-infrastructure.md`：定义 Human Infra 的核心模型、七层结构、诊断框架和 Human SRE 类比。
+- `explanations/effective-immortality-acceleration-flywheel.md`：新建有效永生飞轮 working paper，定义主体持续时间、有效时间、学习轮次、积累资本、技术采用、行动质量和可能性空间之间的研究链路。
 - `explanations/life-path-prediction-model.md`：解释定量生命路径预测层的概念、时间类型、模型族和边界。
 - `explanations/noah-ark-genealogy.md`：定义“诺亚方舟”作为 Human Infra 主隐喻的叙事谱系、理论谱系、映射、使用场景和传播边界。
 - `explanations/value-lenses.md`：定义 Human Infra 的多视角价值理解，补充“寿命延长和逃逸路径带来的通用资源预算增量”视角但不替代主体持续性主线。
@@ -91,6 +98,12 @@ docs/
 - `source-notes/`：保存最新资料原文或轻整理版本，供后续提炼，不直接作为产品说明入口。
 - `source-notes/README.md`：说明原始资料归档的文件职责和使用规则。
 - `source-notes/core-literature/`：保存 Human Infra 谱系论文集的下载清单、核心 Source Card 草案、论文解读报告和缓存边界说明；原文缓存留在 `.research/literature/`。
+- `source-notes/2026-06-28-effective-immortality-flywheel-automated-research-run.md`：记录有效永生飞轮第一轮自动化科研流程、文献脊梁、发现和下一步任务。
+- `source-notes/2026-06-28-effective-immortality-flywheel-derivation-package.md`：保存有效永生飞轮公式推导包，冻结不变量、假设、符号、推导图、主公式、边界和开放风险。
+- `source-notes/2026-06-28-effective-immortality-flywheel-evidence-matrix.md`：保存有效永生飞轮证据矩阵，把主链路拆成可检验边，并记录候选来源、证据角色、断裂条件和下一步模型任务。
+- `source-notes/2026-06-28-effective-immortality-flywheel-source-cards.md`：保存有效永生飞轮第一批来源卡片，服务后续论文扩写、模型变量和 Web 可视化。
+- `source-notes/2026-06-29-metric-redshift-recursive-waiting-revision-notes.md`：保存度规红移递归等待假设论文页 v0.2 优化依据、来源分层和下一步科研任务。
+- `source-notes/2026-06-29-controllable-metric-waiting-room-hypothesis-revision-notes.md`：保存可控度规等待室假设论文页收口记录，包括研究对象、toy NCG 推导、场景比较、引用语境、预提交审查和覆盖审计。
 - `templates/`：保存决策记录、子域 README、research card、source note 和 reference 文档模板。
 
 ## 依赖关系
