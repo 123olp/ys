@@ -2,6 +2,11 @@
 
 All notable repository structure changes are recorded here.
 
+## 2026-06-30
+
+- Added third-wave research domain skeletons for nutrition and metabolic health, physical activity and mobility, cardiovascular resilience, musculoskeletal integrity, social connection, substance exposure control, health literacy navigation, and oral health continuity.
+- Updated the Research Domain Atlas, Research Domain Radar, domain map, root README, directory AGENTS files, and repository structure check so the new domains are discoverable and validated.
+
 ## 2026-06-29
 
 - Added the controllable metric waiting room working paper page, structured data source, derivation package, reference verification, citation-context review packet, local citation-context review, pre-submission review, and coverage audit.

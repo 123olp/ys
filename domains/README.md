@@ -5,8 +5,12 @@
 当前子域：
 
 - `longevity-evidence/`：长寿证据账本，承接原 Biocat。
+- `nutrition-metabolic-health/`：营养与代谢健康，整理饮食质量、代谢状态、体重、糖尿病风险和食物环境。
 - `cellular-reprogramming/`：细胞重编程与表观遗传年轻化谱系，整理山中因子、部分重编程、化学重编程、AI 因子设计和身份保持风险。
 - `regenerative-medicine/`：再生医学与组织修复，整理干细胞、器官再生、组织工程和生物制造。
+- `physical-activity-mobility/`：身体活动与移动能力，整理运动、久坐、心肺适能、力量、平衡和行动密度。
+- `cardiovascular-resilience/`：心血管韧性，整理心脏、血管、血压、血栓、卒中、心衰和循环风险。
+- `musculoskeletal-integrity/`：肌骨完整性，整理肌肉、骨骼、关节、跌倒、疼痛和行动承载结构。
 - `rehabilitation-functioning/`：康复与功能恢复，整理失能预防、活动能力、自理、沟通和社会参与。
 - `cancer-control/`：癌症控制，整理肿瘤预防、早筛、治疗、复发和长期风险治理。
 - `immune-maintenance/`：免疫系统维护，整理免疫衰老、感染防御、慢性炎症、自身免疫和免疫监视。
@@ -21,11 +25,15 @@
 - `mental-health-affective-stability/`：心理健康与情绪稳定，整理动机、压力恢复、成瘾、创伤和自杀风险。
 - `sleep-circadian-recovery/`：睡眠、昼夜节律与恢复，整理疲劳、修复和长期恢复能力。
 - `assistive-technology-access/`：辅助技术可及，整理助听、低视力辅助、轮椅、义肢、沟通辅助和无障碍。
+- `substance-exposure-control/`：物质暴露控制，整理烟草、酒精、成瘾性物质、有害暴露和自主性风险。
 - `risk-engineering/`：风险工程，整理事故、灾害、暴力、系统故障和尾部风险治理。
 - `planetary-health-environment/`：星球健康与环境，整理空气、水、气候、污染、生态系统和食物系统。
 - `resource-social-infra/`：资源与社会基础设施，整理食物、水、能源、住房、医疗、照护和社会支持。
+- `social-connection-relational-infra/`：社会连接与关系基础设施，整理孤独、社会隔离、照护网络、信任和社区关系。
 - `governance-rights/`：治理与主体权利，整理同意、退出、数据权、法律身份、AI 治理和研究伦理。
 - `pain-suffering-control/`：疼痛与痛苦控制，整理慢性疼痛、症状负担、姑息医学和可承受持续性。
+- `health-literacy-navigation/`：健康素养与服务导航，整理可理解信息、风险沟通、共同决策和系统入口。
+- `oral-health-continuity/`：口腔健康连续性，整理牙齿、牙周、咀嚼、疼痛、感染、营养和沟通。
 - `measurement-feedback/`：测量、预测与反馈，整理主体状态测量、风险评分、生物标志物和反馈闭环。
 
 子域之间可以共享上位原则，但不能共享模糊所有权。数据、脚本和结论必须归属到明确子域。

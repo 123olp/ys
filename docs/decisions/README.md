@@ -19,3 +19,4 @@ Current decisions:
 - `0004-add-cellular-reprogramming-domain.md`
 - `0005-establish-research-domain-atlas.md`
 - `0006-add-second-wave-research-domains.md`
+- `0007-add-third-wave-research-domains.md`
