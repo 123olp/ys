@@ -267,6 +267,13 @@
 - `household-composition-dependent-eligibility-continuity/`：家庭组成、受扶养人与资格关系连续性，整理 household、dependent、共同居住、照护关系、税务、保险和福利资格单位。
 - `family-law-custody-child-support-continuity/`：家庭法、监护权与子女抚养连续性，整理亲子关系、监护、养育时间、子女抚养、家庭法院命令和执行记录。
 - `kinship-foster-adoption-care-continuity/`：亲属照护、寄养、收养与儿童安置连续性，整理 kinship care、foster care、adoption、安置稳定性、permanency 和儿童记录连续性。
+- `banking-deposit-account-access-continuity/`：银行账户、存款保险与账户访问连续性，整理账户访问、存款保险、账户恢复、错误交易、争议和支付入口。
+- `debt-obligation-collection-relief-continuity/`：债务义务、催收与债务救济连续性，整理债务压力、催收、信用后果、破产、债务救济和重新开始路径。
+- `real-property-title-deed-record-continuity/`：不动产权属、地契与土地记录连续性，整理地契、产权链、抵押、税费、留置和地方土地记录。
+- `driver-license-vehicle-registration-continuity/`：驾照、车辆登记与个人移动资格连续性，整理驾驶资格、州证件、REAL ID、车辆 title、登记、车牌和地址同步。
+- `passport-travel-document-mobility-continuity/`：护照、旅行证件与跨境移动连续性，整理护照、旅行证件、领事服务、紧急证件、旅行警示和跨境选择权。
+- `contract-subscription-billing-consent-continuity/`：合同、订阅、账单与持续同意连续性，整理合同、自动续费、账单、取消、争议、退款和持续同意。
+- `notary-document-authentication-signature-continuity/`：公证、文件认证与签名连续性，整理公证、电子签名、数字签名、apostille、文件认证和跨机构承认。
 - `supply-chain-continuity/`：供应链连续性，整理关键物资、服务、物流、替代路径和恢复时间。
 - `synthetic-biology-biosecurity/`：合成生物学与生物安全，整理双重用途、生物安全、生物安保和治理边界。
 - `space-extreme-habitation/`：空间与极端栖居，整理辐射、微重力、隔离、闭环资源和远程医疗风险。

@@ -809,6 +809,25 @@ Human Infra 不能被设计成更精密的压榨系统。
 - 不帮助伪造、篡改、借用、购买或滥用身份文件、生命事件记录、地址证明、家庭关系记录、儿童福利记录、法院命令、收入或家庭组成资料；不帮助隐藏地址、隐藏儿童、规避法院命令、逃避抚养义务、逃避债务、逃避执法、福利欺诈、骚扰跟踪、胁迫控制或规避背景审查。
 - 不替代 vital records offices、SSA、State Department、USPS、IRS、HealthCare.gov、ACF、州/地方福利机构、儿童福利机构、法院、学校、律师、税务专业人士、移民顾问、社会工作者、保险人或官方申诉渠道。
 
+## 资源控制、移动资格与交易执行连续性边界
+
+`banking-deposit-account-access-continuity`、`debt-obligation-collection-relief-continuity`、`real-property-title-deed-record-continuity`、`driver-license-vehicle-registration-continuity`、`passport-travel-document-mobility-continuity`、`contract-subscription-billing-consent-continuity` 和 `notary-document-authentication-signature-continuity` 关注账户、债务、产权、移动证件、旅行证件、交易关系和文件认证如何影响主体资源控制、行动半径、授权执行和未来选择权，不是个人银行、债务、破产、房产、车辆、驾驶、护照、签证、移民、订阅取消、合同审查、公证、apostille 或电子签名服务入口。
+
+可以做：
+
+- 整理 FDIC、NCUA、CFPB、U.S. Courts、FTC、USA.gov、State Department、DHS REAL ID、NHTSA、州/地方 DMV、recorder/register/assessor、secretary of state 和官方消费者保护资料的机制、对象、变量和边界。
+- 比较账户访问、债务义务、产权记录、车辆/驾驶凭证、旅行证件、合同账单和文件认证如何分别影响资金可用性、资源负担、住房资产、移动能力、跨境选择权、交易控制和授权可执行性。
+- 记录反欺诈、反规避、反伪造、隐私、消费者保护、文件有效性、数字排除、可访问性和个案建议边界，服务后续建模和资料卡片。
+
+不能做：
+
+- 不提供个人开户、账户恢复、银行争议、债务处理、破产、学生贷款、房产交易、产权调查、房产税、车辆登记、驾照恢复、驾驶许可、护照、签证、旅行安全、订阅取消、退款、合同、公证、apostille、电子签名、移民、税务、金融或法律建议。
+- 不判断某人是否应还款、是否可破产、产权是否有效、车辆是否可登记、能否驾驶、能否入境、合同是否有效、费用是否应付、文件是否需要公证、签名是否有效或案件胜率。
+- 不生成银行/债务/破产/房产/车辆/护照/签证/合同/公证/认证/电子签名/投诉/诉讼/退款/税务/移民/法院材料或个案策略。
+- 不帮助规避 KYC、反洗钱、制裁、税务、债务、法院命令、催收、产权记录、车辆检查、驾照吊销、保险要求、入境规则、服务条款、合同义务、公证认证要求或身份核验。
+- 不帮助伪造、篡改、借用、购买、出售、隐藏或滥用账户、债务、产权、地契、车辆、驾照、护照、旅行、签名、公证、apostille、合同、账单、订阅、电子签名、证书、印章或时间戳记录。
+- 不替代银行、信用社、FDIC、NCUA、CFPB、FTC、法院、律师、财务顾问、税务专业人士、房地产专业人士、title company、DMV、State Department、DHS、领事机构、公证员、文件签发机构、消费者保护机构或官方申诉渠道。
+
 ## 数据与证据边界
 
 - 原始数据、清洗数据和人工判断必须分层保存。

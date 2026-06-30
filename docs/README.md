@@ -63,6 +63,7 @@ docs/
 │   ├── 0045-add-forty-first-wave-income-entitlement-record-continuity-domains.md
 │   ├── 0046-add-forty-second-wave-work-interruption-care-continuity-domains.md
 │   ├── 0047-add-forty-third-wave-life-event-household-record-continuity-domains.md
+│   ├── 0048-add-forty-fourth-wave-asset-account-transaction-continuity-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -327,4 +328,11 @@ docs/
 209. Read `../domains/household-composition-dependent-eligibility-continuity/README.md` if you are working on household composition, dependents, coverage household, benefit household, tax/insurance/welfare household rules, or family eligibility units.
 210. Read `../domains/family-law-custody-child-support-continuity/README.md` if you are working on custody, parenting time, child support, parentage, family court orders, child support services, or family-law record continuity.
 211. Read `../domains/kinship-foster-adoption-care-continuity/README.md` if you are working on kinship care, foster care, adoption, guardianship-like placements, permanency planning, child welfare records, or child placement continuity.
-212. Enter a domain under `../domains/`.
+212. Read `../domains/banking-deposit-account-access-continuity/README.md` if you are working on bank accounts, credit union accounts, deposit insurance, account access, account recovery, payment errors, or bank-account continuity.
+213. Read `../domains/debt-obligation-collection-relief-continuity/README.md` if you are working on consumer debt, medical debt, collections, garnishment, bankruptcy, debt relief, debt records, or debt-related continuity risks.
+214. Read `../domains/real-property-title-deed-record-continuity/README.md` if you are working on property title, deeds, land records, tax assessor records, title insurance, liens, mortgages, or real-property record continuity.
+215. Read `../domains/driver-license-vehicle-registration-continuity/README.md` if you are working on driver's licenses, state IDs, REAL ID, vehicle title, registration, plates, DMV records, or personal mobility credential continuity.
+216. Read `../domains/passport-travel-document-mobility-continuity/README.md` if you are working on passports, travel documents, consular services, emergency documents, travel advisories, or cross-border mobility continuity.
+217. Read `../domains/contract-subscription-billing-consent-continuity/README.md` if you are working on contracts, subscriptions, automatic renewal, billing, cancellation, negative options, ongoing consent, or transaction-friction continuity.
+218. Read `../domains/notary-document-authentication-signature-continuity/README.md` if you are working on notarization, electronic signatures, digital signatures, document authentication, apostilles, or institutional recognition of signed records.
+219. Enter a domain under `../domains/`.

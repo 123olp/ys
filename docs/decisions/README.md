@@ -60,3 +60,4 @@ Current decisions:
 - `0045-add-forty-first-wave-income-entitlement-record-continuity-domains.md`
 - `0046-add-forty-second-wave-work-interruption-care-continuity-domains.md`
 - `0047-add-forty-third-wave-life-event-household-record-continuity-domains.md`
+- `0048-add-forty-fourth-wave-asset-account-transaction-continuity-domains.md`

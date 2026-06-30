@@ -200,6 +200,13 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 家庭组成必须能被资格系统正确建模 | `household-composition-dependent-eligibility-continuity/` | household、dependent、共同居住、照护关系、税务、保险、福利资格单位 | 家庭事实变化或制度定义错配导致错误拒绝、错误支付、覆盖断裂或追缴风险 |
 | 家庭责任必须可执行可审查 | `family-law-custody-child-support-continuity/` | 亲子关系、监护权、养育时间、子女抚养、法院命令、执行记录 | 命令缺失、执行失败或冲突升级让儿童资源、安全、医疗教育授权和照护连续性断裂 |
 | 原照护失稳后儿童安置必须连续 | `kinship-foster-adoption-care-continuity/` | 亲属照护、寄养、收养、安置稳定性、permanency、儿童记录 | 保护过程因频繁转移、记录丢失、服务失败或关系断裂转化为新的创伤和能力形成损失 |
+| 可用资金必须能被持续访问 | `banking-deposit-account-access-continuity/` | 银行账户、信用社账户、存款保险、账户恢复、错误交易、支付入口 | 账户失效、冻结、凭据丢失、机构倒闭或错误交易让收入、福利、储蓄和支付能力断线 |
+| 债务义务必须可被治理和重组 | `debt-obligation-collection-relief-continuity/` | 债务类型、催收、信用后果、破产、债务救济、消费者保护 | 债务压力、催收、诉讼、扣押或错误记录吞噬现金流、注意力、住房和重新开始能力 |
+| 不动产资源必须可证明可追溯 | `real-property-title-deed-record-continuity/` | 地契、产权链、土地记录、抵押、留置、房产税、title insurance | 产权链错误、地契丢失、留置或税费断点让居住、资产、继承和灾后恢复失去制度保护 |
+| 地方移动资格必须连续 | `driver-license-vehicle-registration-continuity/` | 驾照、州 ID、REAL ID、车辆 title、登记、车牌、地址同步 | 移动凭证丢失、吊销、跨州错配或车辆记录断裂压缩工作、医疗、照护和撤离行动半径 |
+| 跨境移动资格必须连续 | `passport-travel-document-mobility-continuity/` | 护照、旅行证件、领事服务、紧急证件、旅行警示、跨境身份 | 证件过期、丢失、扣留或领事服务不可达截断跨境医疗、工作、学习、家庭和撤离选择权 |
+| 持续交易关系必须可理解可退出 | `contract-subscription-billing-consent-continuity/` | 合同、服务条款、订阅、自动续费、账单、取消、争议、持续同意 | 隐性续费、暗黑模式、账单错误和取消摩擦持续消耗金钱、时间、注意力和控制权 |
+| 关键文件必须可签署可认证 | `notary-document-authentication-signature-continuity/` | 公证、签名、电子签名、文件认证、apostille、授权文件、跨机构承认 | 文件无效、认证缺失、身份无法确认或签名记录失效让授权、事实和跨境文件不可执行 |
 | 栖居空间可保护生命 | `building-fire-life-safety-codes/` | 建筑规范、消防规范、疏散、烟雾报警、无障碍、结构韧性 | 居住、照护、学习、工作和公共空间成为火灾、烟雾、结构和疏散风险源 |
 | 关键物质系统可制造修复 | `manufacturing-repair-capacity/` | 制造、维修、维护、备件、质量、本地生产、关键设备恢复 | 设备损坏、备件短缺、质量缺陷和生产能力不足导致服务与工具系统失效 |
 | 公共预算可转化为服务 | `public-procurement-contracting-capacity/` | 公共采购、合同、供应商管理、应急采购、透明度、交付验收 | 有预算和政策但采购失败、合同失效、腐败、延误或劣质交付 |
@@ -493,6 +500,13 @@ risk-engineering
   -> household-composition-dependent-eligibility-continuity
   -> family-law-custody-child-support-continuity
   -> kinship-foster-adoption-care-continuity
+  -> banking-deposit-account-access-continuity
+  -> debt-obligation-collection-relief-continuity
+  -> real-property-title-deed-record-continuity
+  -> driver-license-vehicle-registration-continuity
+  -> passport-travel-document-mobility-continuity
+  -> contract-subscription-billing-consent-continuity
+  -> notary-document-authentication-signature-continuity
   -> community-resource-navigation
   -> social-determinants-community-vulnerability
   -> public-service-design-accessibility

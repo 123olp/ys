@@ -286,6 +286,13 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `household-composition-dependent-eligibility-continuity/` | 家庭组成和受扶养人关系决定资源资格、保险覆盖、税务抵免、福利单位和照护责任是否能被正确建模 |
 | `family-law-custody-child-support-continuity/` | 家庭法、监护权和子女抚养决定儿童与照护者资源、安全、医疗教育授权和家庭责任是否可执行 |
 | `kinship-foster-adoption-care-continuity/` | 亲属照护、寄养和收养决定原照护失稳后儿童身份、关系、教育、医疗、安全和长期发展是否连续 |
+| `banking-deposit-account-access-continuity/` | 银行账户和存款保险决定收入、福利、储蓄和支付能力是否能在机构、凭据、欺诈和错误交易冲击下持续可用 |
+| `debt-obligation-collection-relief-continuity/` | 债务义务、催收和债务救济决定现金流、注意力、信用入口、法律压力和重新开始能力是否被长期债务结构吞噬 |
+| `real-property-title-deed-record-continuity/` | 不动产权属、地契和土地记录决定居住空间、长期资产、继承、融资和灾后恢复是否有可证明资源底座 |
+| `driver-license-vehicle-registration-continuity/` | 驾照和车辆登记决定主体地方移动资格、车辆资产和道路系统使用权是否能跨地址、州和能力变化持续同步 |
+| `passport-travel-document-mobility-continuity/` | 护照和旅行证件决定主体跨境医疗、工作、学习、家庭团聚、撤离和人道服务选择权是否可执行 |
+| `contract-subscription-billing-consent-continuity/` | 合同、订阅和账单决定持续交易关系是否保持可理解、可控制、可取消和可争议，而不是持续吞噬时间和资金 |
+| `notary-document-authentication-signature-continuity/` | 公证、文件认证和签名决定主体意愿、授权、合同和跨境文件是否能被机构长期承认、验证和执行 |
 
 ## 来源信号
 
@@ -423,6 +430,12 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | FEMA IPAWS / FCC WEA-EAS / NOAA Weather Radio / 911.gov / NG911 / FirstNet | 提示预警、求助入口、危机通信和第一响应互操作需要独立通信域 |
 | USA.gov Disaster Assistance / FEMA DRC / SBA Disaster Assistance / Benefits.gov Disaster Relief / Red Cross shelters | 提示灾后恢复、临时安置、个人援助、灾害贷款和救济导航需要独立恢复域 |
 | World Bank Financial Inclusion / Global Findex / Payment Systems / FDIC Household Survey / CFPB complaints / Federal Reserve Payments Study | 提示账户、支付、汇款、数字金融服务和消费者保护是资源流动的独立基础设施 |
+| FDIC Deposit Insurance / NCUA Share Insurance / CFPB bank accounts | 提示账户访问、机构失效、账户争议和支付入口是资源控制和金融韧性的独立基础设施 |
+| CFPB Debt Collection / U.S. Courts Bankruptcy / FTC debt collection materials | 提示债务义务、催收、破产和债务救济需要作为现金流、压力、信用和重新开始能力的独立域 |
+| CFPB mortgage closing and title insurance / local recorder and assessor offices | 提示地契、产权链、土地记录、抵押、税费和 title insurance 是住房资产与继承连续性的独立记录系统 |
+| USA.gov driver licenses and vehicle registration / DHS REAL ID / state DMV materials | 提示驾照、州 ID、REAL ID、车辆 title、登记和地址同步决定地方移动资格与车辆资源连续性 |
+| State Department passports, travel advisories and authentications | 提示护照、领事服务、紧急证件、文件认证和 apostille 决定跨境移动与文件承认连续性 |
+| FTC subscription and negative-option materials / CFPB consumer complaints / FCC billing materials | 提示合同、订阅、自动续费、账单、取消和持续同意是长期资源泄漏与消费者控制权的独立机制 |
 | CareerOneStop / DOL ETA-WIOA / Apprenticeship.gov / O*NET / My Next Move / JAN | 提示就业服务、劳动力发展、职业信息、再就业和合理便利是能力进入工作系统的独立接口 |
 | Red Cross / CDC Prepare Your Health / Ready.gov / NOAA Weather-Ready Nation | 提示家庭计划、物资包、健康准备、备用通信、文件和特殊需求是公共救援抵达前的家庭韧性条件 |
 | UNESCO MIL / IMLS Public Libraries Survey / ALA Libraries Transform | 提示媒体信息素养、公共图书馆、数字技能和社区学习空间是判断、学习和公共服务使用的知识入口 |
@@ -767,7 +780,18 @@ Source links:
 - https://www.worldbank.org/en/topic/financialinclusion/brief/digital-financial-services
 - https://www.worldbank.org/en/topic/paymentsystemsremittances
 - https://www.fdic.gov/analysis/household-survey
+- https://www.fdic.gov/resources/deposit-insurance/
+- https://ncua.gov/support-services/share-insurance-fund
 - https://www.consumerfinance.gov/data-research/consumer-complaints/
+- https://www.consumerfinance.gov/consumer-tools/bank-accounts/
+- https://www.consumerfinance.gov/consumer-tools/debt-collection/
+- https://www.uscourts.gov/services-forms/bankruptcy
+- https://www.consumerfinance.gov/consumer-tools/mortgages/loan-estimate-and-closing-disclosure/
+- https://www.usa.gov/driver-license
+- https://www.dhs.gov/real-id
+- https://travel.state.gov/content/travel/en/passports.html
+- https://travel.state.gov/content/travel/en/replace-certify-docs/authenticate-your-document.html
+- https://www.ftc.gov/business-guidance/advertising-marketing/negative-option-marketing
 - https://www.federalreserve.gov/paymentsystems/fr-payments-study.htm
 - https://www.careeronestop.org/
 - https://www.dol.gov/agencies/eta

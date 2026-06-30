@@ -308,6 +308,27 @@ domains/
 ├── kinship-foster-adoption-care-continuity/
 │   ├── AGENTS.md
 │   └── README.md
+├── banking-deposit-account-access-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── debt-obligation-collection-relief-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── real-property-title-deed-record-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── driver-license-vehicle-registration-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── passport-travel-document-mobility-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── contract-subscription-billing-consent-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── notary-document-authentication-signature-continuity/
+│   ├── AGENTS.md
+│   └── README.md
 ├── cognitive-augmentation/
 │   ├── AGENTS.md
 │   └── README.md
@@ -876,6 +897,7 @@ domains/
 - `income-payroll-employment-record-continuity/`、`tax-administration-filing-record-continuity/`、`social-security-earnings-benefit-record-continuity/`、`retirement-pension-savings-plan-continuity/`、`unemployment-insurance-wage-record-continuity/` 和 `workers-compensation-occupational-injury-benefit-continuity/` 负责工资雇佣记录、税务申报记录、社会保险收入与福利记录、退休养老金计划、失业保险工资记录和工伤职业伤害权益这些劳动成果到未来保障的记录连续性条件。
 - `family-medical-leave-job-protection-continuity/`、`paid-sick-family-leave-wage-replacement-continuity/`、`pregnancy-parental-work-continuity/`、`workplace-accommodation-return-to-work-continuity/`、`disability-income-work-capacity-benefit-continuity/` 和 `family-caregiver-respite-work-continuity/` 负责家庭医疗假岗位保护、带薪病假/家庭假工资替代、孕产育儿工作连续性、合理便利复工、残障收入与工作能力福利、家庭照护者喘息与工作连续性这些工作中断与照护事件连续性条件。
 - `vital-records-life-event-continuity/`、`name-change-identity-record-synchronization-continuity/`、`address-residency-mail-service-continuity/`、`household-composition-dependent-eligibility-continuity/`、`family-law-custody-child-support-continuity/` 和 `kinship-foster-adoption-care-continuity/` 负责生命事件记录、姓名变更同步、地址居住地邮件路由、家庭组成资格关系、家庭法监护抚养、亲属照护寄养收养这些家庭事实与制度记录连续性条件。
+- `banking-deposit-account-access-continuity/`、`debt-obligation-collection-relief-continuity/`、`real-property-title-deed-record-continuity/`、`driver-license-vehicle-registration-continuity/`、`passport-travel-document-mobility-continuity/`、`contract-subscription-billing-consent-continuity/` 和 `notary-document-authentication-signature-continuity/` 负责银行账户存款访问、债务义务催收救济、不动产权属地契、驾照车辆登记、护照旅行证件、合同订阅账单、公证文件认证签名这些资源控制、移动资格与交易执行连续性条件。
 - `access-to-justice-legal-aid/`、`civic-participation-election-access/`、`migration-displacement-humanitarian-continuity/` 和 `digital-inclusion-connectivity/` 负责司法可及、公民参与、迁移流离失所人道连续性和数字连接这些制度参与与公共服务接入条件。
 - `personal-safety-violence-prevention/` 和 `product-safety-recall-systems/` 负责暴力预防、受害者支持、产品缺陷报告、召回和纠正这些公共安全连续性条件。
 - `cellular-reprogramming/` 负责山中因子、部分重编程、化学重编程、AI 因子设计和表观遗传编辑等“细胞状态可重写”谱系，不提供实验协议或人体应用建议。
@@ -894,6 +916,7 @@ domains/
 - `income-payroll-employment-record-continuity/`、`tax-administration-filing-record-continuity/`、`social-security-earnings-benefit-record-continuity/`、`retirement-pension-savings-plan-continuity/`、`unemployment-insurance-wage-record-continuity/` 和 `workers-compensation-occupational-injury-benefit-continuity/` 负责权益记录连续性的证据边界，不提供工资索赔、税务申报、福利申请、退休规划、投资、失业保险申领、工伤索赔、医疗诊断、法律、财务、移民、保险、记录伪造或个人案件建议。
 - `family-medical-leave-job-protection-continuity/`、`paid-sick-family-leave-wage-replacement-continuity/`、`pregnancy-parental-work-continuity/`、`workplace-accommodation-return-to-work-continuity/`、`disability-income-work-capacity-benefit-continuity/` 和 `family-caregiver-respite-work-continuity/` 负责工作中断与照护事件连续性的证据边界，不提供个人请假、带薪假、孕产育儿、合理便利、残障福利、照护服务、医疗、法律、HR、税务、保险、福利申请、申诉或雇主合规建议。
 - `vital-records-life-event-continuity/`、`name-change-identity-record-synchronization-continuity/`、`address-residency-mail-service-continuity/`、`household-composition-dependent-eligibility-continuity/`、`family-law-custody-child-support-continuity/` 和 `kinship-foster-adoption-care-continuity/` 负责家庭事实与制度记录连续性的证据边界，不提供个人证件办理、改名、地址变更、税务/福利 household 判断、监护权、子女抚养、寄养、收养、法律、移民、福利、保险、学校、法院或个案策略建议。
+- `banking-deposit-account-access-continuity/`、`debt-obligation-collection-relief-continuity/`、`real-property-title-deed-record-continuity/`、`driver-license-vehicle-registration-continuity/`、`passport-travel-document-mobility-continuity/`、`contract-subscription-billing-consent-continuity/` 和 `notary-document-authentication-signature-continuity/` 负责资源控制、移动资格与交易执行连续性的证据边界，不提供个人银行、债务、破产、房产、车辆、驾驶、护照、签证、移民、订阅取消、合同审查、公证、apostille、电子签名、法律、金融或个案策略建议。
 - `regenerative-medicine/`、`cancer-control/` 和 `immune-maintenance/` 负责身体基底维护相关的机制、风险和证据边界。
 - `rehabilitation-functioning/`、`assistive-technology-access/`、`skin-barrier-wound-healing/` 和 `sensory-continuity/` 负责功能恢复、能力补偿、外界屏障和感官反馈连续性。
 - `antimicrobial-resilience/` 负责抗微生物耐药、感染控制和现代医学抗感染底座。

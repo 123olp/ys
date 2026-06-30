@@ -137,6 +137,13 @@ human_infra/
     ├── household-composition-dependent-eligibility-continuity/ # 家庭组成、受扶养人与资格关系连续性
     ├── family-law-custody-child-support-continuity/ # 家庭法、监护权与子女抚养连续性
     ├── kinship-foster-adoption-care-continuity/ # 亲属照护、寄养、收养与儿童安置连续性
+    ├── banking-deposit-account-access-continuity/ # 银行账户、存款保险与账户访问连续性
+    ├── debt-obligation-collection-relief-continuity/ # 债务义务、催收与债务救济连续性
+    ├── real-property-title-deed-record-continuity/ # 不动产权属、地契与土地记录连续性
+    ├── driver-license-vehicle-registration-continuity/ # 驾照、车辆登记与个人移动资格连续性
+    ├── passport-travel-document-mobility-continuity/ # 护照、旅行证件与跨境移动连续性
+    ├── contract-subscription-billing-consent-continuity/ # 合同、订阅、账单与持续同意连续性
+    ├── notary-document-authentication-signature-continuity/ # 公证、文件认证与签名连续性
     ├── cognitive-augmentation/ # 认知增强与工具放大
     ├── digital-identity-security/ # 数字身份安全
     ├── disembodied-cns/   # 去具身外部维持型中枢生命系统
@@ -524,6 +531,7 @@ human_infra/
 - `domains/income-payroll-employment-record-continuity/`、`domains/tax-administration-filing-record-continuity/`、`domains/social-security-earnings-benefit-record-continuity/`、`domains/retirement-pension-savings-plan-continuity/`、`domains/unemployment-insurance-wage-record-continuity/` 和 `domains/workers-compensation-occupational-injury-benefit-continuity/` 负责工资雇佣记录、税务申报记录、社会保险收入与福利记录、退休养老金计划、失业保险工资记录和工伤职业伤害权益这些劳动成果到未来保障的记录连续性条件。
 - `domains/family-medical-leave-job-protection-continuity/`、`domains/paid-sick-family-leave-wage-replacement-continuity/`、`domains/pregnancy-parental-work-continuity/`、`domains/workplace-accommodation-return-to-work-continuity/`、`domains/disability-income-work-capacity-benefit-continuity/` 和 `domains/family-caregiver-respite-work-continuity/` 负责家庭医疗假岗位保护、带薪病假/家庭假工资替代、孕产育儿工作连续性、合理便利复工、残障收入与工作能力福利、家庭照护者喘息与工作连续性这些工作中断与照护事件连续性条件。
 - `domains/vital-records-life-event-continuity/`、`domains/name-change-identity-record-synchronization-continuity/`、`domains/address-residency-mail-service-continuity/`、`domains/household-composition-dependent-eligibility-continuity/`、`domains/family-law-custody-child-support-continuity/` 和 `domains/kinship-foster-adoption-care-continuity/` 负责生命事件记录、姓名变更同步、地址居住地邮件路由、家庭组成资格关系、家庭法监护抚养、亲属照护寄养收养这些家庭事实与制度记录连续性条件。
+- `domains/banking-deposit-account-access-continuity/`、`domains/debt-obligation-collection-relief-continuity/`、`domains/real-property-title-deed-record-continuity/`、`domains/driver-license-vehicle-registration-continuity/`、`domains/passport-travel-document-mobility-continuity/`、`domains/contract-subscription-billing-consent-continuity/` 和 `domains/notary-document-authentication-signature-continuity/` 负责银行账户存款访问、债务义务催收救济、不动产权属地契、驾照车辆登记、护照旅行证件、合同订阅账单、公证文件认证签名这些资源控制、移动资格与交易执行连续性条件。
 - `domains/disembodied-cns/` 负责去具身外部维持型中枢生命系统的高层架构建模，不提供实验操作协议。
 - `domains/memory-editing/` 负责记忆编辑的概念、证据、验证和伦理边界，不提供可执行神经操控步骤。
 - `domains/biostasis-cryopreservation/` 负责冷冻保存、生物停滞、休眠和等待未来修复路径。
@@ -571,6 +579,7 @@ human_infra/
 
 - 2026-06-30：新增第四十二波 6 个工作中断与照护事件连续性域，覆盖家庭医疗假岗位保护、带薪病假/家庭假工资替代、孕产育儿工作连续性、合理便利复工、残障收入与工作能力福利、家庭照护者喘息与工作连续性。
 - 2026-06-30：新增第四十三波 6 个生命事件、家庭关系与制度记录连续性域，覆盖生命事件记录、姓名变更同步、地址居住地邮件路由、家庭组成资格关系、家庭法监护抚养、亲属照护寄养收养。
+- 2026-06-30：新增第四十四波 7 个资源控制、移动资格与交易执行连续性域，覆盖银行账户存款访问、债务义务催收救济、不动产权属地契、驾照车辆登记、护照旅行证件、合同订阅账单、公证文件认证签名。
 - 2026-06-20：从 Biocat 单项目重组为 Human Infra 总项目；旧 Biocat 迁入 `domains/longevity-evidence/`；新增 `disembodied-cns` 与 `memory-editing` 子域；四份最新资料归档到 `docs/source-notes/`；按 Docs-as-Code 和 Diataxis 补齐根文件、协作模板、文档分层和结构检查脚本。
 - 2026-06-22：新增 `domains/future-waiting/` 和度规红移固有时差分路径（黑洞等待室），用于承载“压缩等待 / 去未来”类永生路径思想实验。
 - 2026-06-23：新增 GitHub Actions `make check` 门禁和 `.github/AGENTS.md`，准备远程仓库协作入口。
