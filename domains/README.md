@@ -180,6 +180,12 @@
 - `risk-engineering/`：风险工程，整理事故、灾害、暴力、系统故障和尾部风险治理。
 - `planetary-health-environment/`：星球健康与环境，整理空气、水、气候、污染、生态系统和食物系统。
 - `resource-social-infra/`：资源与社会基础设施，整理食物、水、能源、住房、医疗、照护和社会支持。
+- `causal-inference-target-trial-emulation/`：因果推断与目标试验模拟，整理干预效应、混杂、反事实、目标试验和识别条件。
+- `survival-analysis-healthspan-risk-modeling/`：生存分析与健康寿命风险建模，整理风险函数、生存曲线、健康寿命、竞争风险和有效时间终点。
+- `human-digital-twin-life-course-simulation/`：人类数字孪生与生命历程仿真，整理主体状态向量、状态转移、场景模拟和模型反馈。
+- `implementation-science-adherence-behavior-change/`：实施科学、依从性与行为改变，整理技术采用、坚持、实施质量和真实世界效果。
+- `uncertainty-quantification-model-calibration/`：不确定性量化与模型校准，整理校准、外部验证、预测区间、漂移和报告边界。
+- `data-quality-missingness-representativeness/`：数据质量、缺失与代表性，整理缺失机制、测量误差、数据血缘、抽样偏差和适用边界。
 - `supply-chain-continuity/`：供应链连续性，整理关键物资、服务、物流、替代路径和恢复时间。
 - `synthetic-biology-biosecurity/`：合成生物学与生物安全，整理双重用途、生物安全、生物安保和治理边界。
 - `space-extreme-habitation/`：空间与极端栖居，整理辐射、微重力、隔离、闭环资源和远程医疗风险。

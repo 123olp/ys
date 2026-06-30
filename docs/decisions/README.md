@@ -46,3 +46,4 @@ Current decisions:
 - `0031-add-twenty-seventh-wave-coastal-civil-urban-infrastructure-domains.md`
 - `0032-add-twenty-eighth-wave-utility-lifeline-continuity-domains.md`
 - `0033-add-twenty-ninth-wave-biomedical-platform-domains.md`
+- `0034-add-thirtieth-wave-quantitative-methodology-domains.md`

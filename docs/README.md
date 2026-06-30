@@ -49,6 +49,7 @@ docs/
 │   ├── 0031-add-twenty-seventh-wave-coastal-civil-urban-infrastructure-domains.md
 │   ├── 0032-add-twenty-eighth-wave-utility-lifeline-continuity-domains.md
 │   ├── 0033-add-twenty-ninth-wave-biomedical-platform-domains.md
+│   ├── 0034-add-thirtieth-wave-quantitative-methodology-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -226,4 +227,10 @@ docs/
 122. Read `../domains/engineered-cell-therapy-regenerative-platforms/README.md` if you are working on CAR-T, TCR-T, TIL, NK, iPSC-derived cells, programmable cells, or engineered cell therapy safety.
 123. Read `../domains/organoids-organ-on-chip-disease-models/README.md` if you are working on organoids, organ-on-chip, tissue chips, patient-derived models, alternative methods, or disease-model validation.
 124. Read `../domains/xenotransplantation-bioengineered-organ-replacement/README.md` if you are working on xenotransplantation, genetically engineered animal organs, bioengineered organ replacement, organ perfusion, or transplant platform risks.
-125. Enter a domain under `../domains/`.
+125. Read `../domains/causal-inference-target-trial-emulation/README.md` if you are working on causality, target trial emulation, intervention effects, confounding, selection bias, or counterfactual evaluation.
+126. Read `../domains/survival-analysis-healthspan-risk-modeling/README.md` if you are working on survival curves, hazard functions, healthspan, competing risks, disability time, or effective-time endpoints.
+127. Read `../domains/human-digital-twin-life-course-simulation/README.md` if you are working on human digital twins, life-course simulation, state vectors, scenario modeling, or dynamic subject models.
+128. Read `../domains/implementation-science-adherence-behavior-change/README.md` if you are working on implementation science, adherence, adoption, behavior change, RE-AIM, COM-B, or real-world effectiveness.
+129. Read `../domains/uncertainty-quantification-model-calibration/README.md` if you are working on model calibration, validation, uncertainty intervals, prediction reporting, drift, or overconfidence controls.
+130. Read `../domains/data-quality-missingness-representativeness/README.md` if you are working on data quality, missingness, representativeness, measurement error, cohort bias, or data source suitability.
+131. Enter a domain under `../domains/`.

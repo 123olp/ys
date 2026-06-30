@@ -559,6 +559,24 @@ Human Infra 不能被设计成更精密的压榨系统。
 - 将体外模型、动物实验、公司公告、早期安全性试验或 biomarker 改善写成寿命延长、人体逆龄、器官替换可用或有效永生证明。
 - 鼓励 DIY 生物、增强性编辑、自我实验、绕过伦理审查、绕过监管、获取人体材料、处理动物器官或规避感染/生物安全要求。
 
+## 定量方法学与模型治理边界
+
+`causal-inference-target-trial-emulation`、`survival-analysis-healthspan-risk-modeling`、`human-digital-twin-life-course-simulation`、`implementation-science-adherence-behavior-change`、`uncertainty-quantification-model-calibration` 和 `data-quality-missingness-representativeness` 关注 Human Infra 如何把研究域转成可审查的因果问题、风险时间路径、状态仿真、实施概率、模型校准和数据入口门禁，不是个人寿命预测、临床决策或自动化评分系统。
+
+可以做：
+
+- 整理公开方法学论文、报告规范、模型验证工具、数据质量标准和研究设计框架。
+- 建立概念模型、toy model、变量契约、模型状态标签、Source Card 和审查清单。
+- 区分相关、因果、预测、仿真、校准和实施落地之间的证据等级。
+- 明确模型适用人群、数据来源、缺失机制、代表性、不确定性、外部验证状态和禁止用途。
+
+不能做：
+
+- 输出个体死亡日期、确定寿命预测、临床治疗建议、试验入组建议、保险评分、雇佣评分或自动化资格判断。
+- 将未校准模型、toy model、AI 生成解释、公司叙事或早期 biomarker 变化写成现实个体预测。
+- 提供数据再识别、隐私规避、敏感数据爬取、数据买卖、伪造清洗、p-hacking、统计显著性操控或选择性报告方法。
+- 用不确定性图表掩盖模型无效，或用精确数字把不确定推断包装成事实。
+
 ## 数据与证据边界
 
 - 原始数据、清洗数据和人工判断必须分层保存。

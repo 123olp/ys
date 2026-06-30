@@ -403,6 +403,12 @@ flowchart TD
     H --> LAPC[language-access-plain-communication<br/>语言可达 / 清晰沟通]
     H --> LRWP[labor-rights-workplace-protection<br/>劳动权利 / 工作场所保护]
     H --> OH[oral-health-continuity<br/>口腔健康连续性]
+    H --> CITTE[causal-inference-target-trial-emulation<br/>因果推断 / 目标试验模拟]
+    H --> SAHRM[survival-analysis-healthspan-risk-modeling<br/>生存分析 / 健康寿命风险]
+    H --> HDTLCS[human-digital-twin-life-course-simulation<br/>数字孪生 / 生命历程仿真]
+    H --> ISABC[implementation-science-adherence-behavior-change<br/>实施科学 / 依从行为改变]
+    H --> UQMC[uncertainty-quantification-model-calibration<br/>不确定性 / 模型校准]
+    H --> DQMR[data-quality-missingness-representativeness<br/>数据质量 / 缺失代表性]
     H --> MF[measurement-feedback<br/>测量 / 预测 / 反馈]
     H --> C[disembodied-cns<br/>去具身中枢生命系统]
     H --> M[memory-editing<br/>记忆编辑与人格连续性]
@@ -478,6 +484,12 @@ flowchart TD
 | [Engineered Cell Therapy Regenerative Platforms](domains/engineered-cell-therapy-regenerative-platforms/README.md) | CAR-T、TCR-T、TIL、NK、iPSC 衍生细胞和可编程细胞平台 | 活体药物、免疫修复、组织再生、持久性和安全开关 | 不提供细胞制备、靶点设计、给药、临床选择、制造协议或治疗建议 |
 | [Organoids Organ On Chip Disease Models](domains/organoids-organ-on-chip-disease-models/README.md) | 类器官、organ-on-chip、组织芯片、患者来源模型和新方法学 | 降低药物筛选、毒性预测、疾病建模和转化失败成本 | 不提供培养、芯片制造、样本处理、药物筛选操作或人体疗效外推 |
 | [Xenotransplantation Bioengineered Organ Replacement](domains/xenotransplantation-bioengineered-organ-replacement/README.md) | 异种移植、基因编辑动物器官、工程器官、器官保存灌注和器官供给 | 器官衰竭、移植等待、免疫风险、感染风险和长期功能变量 | 不提供移植选择、手术、免疫抑制、动物处理、病原检测或器官保存操作建议 |
+| [Causal Inference Target Trial Emulation](domains/causal-inference-target-trial-emulation/README.md) | 因果推断、反事实、目标试验模拟、混杂和选择偏差 | 判断技术/干预是否真正改变主体状态、风险函数和生命路径分布 | 不提供治疗、试验入组、个体因果结论、医疗建议或把相关性包装成因果 |
+| [Survival Analysis Healthspan Risk Modeling](domains/survival-analysis-healthspan-risk-modeling/README.md) | 生存分析、风险函数、健康寿命、竞争风险和有效时间终点 | 把死亡、疾病、失能、健康质量积分和未来选择权转成时间路径模型 | 不输出个体死亡日期、寿命承诺、保险评分、诊断或治疗建议 |
+| [Human Digital Twin Life Course Simulation](domains/human-digital-twin-life-course-simulation/README.md) | 人类数字孪生、生命历程仿真、状态向量和场景模拟 | 连接多域状态、状态转移、干预策略、风险函数和反馈更新 | 不建立真实个人数字孪生服务，不处理个人敏感数据或临床决策 |
+| [Implementation Science Adherence Behavior Change](domains/implementation-science-adherence-behavior-change/README.md) | 实施科学、依从性、采用、坚持、行为改变和真实世界效果 | 评估技术从论文效果进入现实行动、服务系统和长期维护的概率门 | 不提供个体行为处方、心理治疗、组织监控或操控性行为设计 |
+| [Uncertainty Quantification Model Calibration](domains/uncertainty-quantification-model-calibration/README.md) | 不确定性量化、模型校准、外部验证、漂移和报告规范 | 防止生命路径模型用精确数字制造虚假确定性 | 不输出个体寿命预测、自动化资格判断、保险评分或未校准现实预测 |
+| [Data Quality Missingness Representativeness](domains/data-quality-missingness-representativeness/README.md) | 数据质量、缺失机制、代表性、测量误差和数据血缘 | 在因果、预测、仿真和校准前审查数据入口是否可信 | 不处理个人数据，不提供再识别、隐私规避、数据造假或统计操控 |
 | [Regenerative Medicine](domains/regenerative-medicine/README.md) | 干细胞、组织工程、器官再生、类器官、移植 | 器官/组织修复框架、功能终点和整合风险 | 不提供手术、细胞制备、移植或人体实验步骤 |
 | [Rehabilitation And Functioning](domains/rehabilitation-functioning/README.md) | 康复、功能恢复、失能预防、活动能力、自理和社会参与 | 功能状态、活动能力、参与能力和失能风险模型 | 不提供个人康复处方、训练计划、诊断或治疗建议 |
 | [Cancer Control](domains/cancer-control/README.md) | 癌症预防、早筛、治疗、复发、肿瘤演化 | 癌症风险函数、证据层级和长期控制变量 | 不提供诊断、治疗方案、处方、剂量或个体用药建议 |
@@ -674,6 +686,12 @@ human_infra/
 │   ├── engineered-cell-therapy-regenerative-platforms/
 │   ├── organoids-organ-on-chip-disease-models/
 │   ├── xenotransplantation-bioengineered-organ-replacement/
+│   ├── causal-inference-target-trial-emulation/
+│   ├── survival-analysis-healthspan-risk-modeling/
+│   ├── human-digital-twin-life-course-simulation/
+│   ├── implementation-science-adherence-behavior-change/
+│   ├── uncertainty-quantification-model-calibration/
+│   ├── data-quality-missingness-representativeness/
 │   ├── cognitive-augmentation/
 │   ├── digital-identity-security/
 │   ├── disembodied-cns/
@@ -934,5 +952,6 @@ flowchart LR
 - 2026-06-30：新增第二十七波 6 个海岸、土木与城市基础设施域，覆盖海岸海洋蓝色经济、渔业水生食物、防洪工程安全、公共工程资产管理、城市土地使用规划和城市绿蓝基础设施。
 - 2026-06-30：新增第二十八波 6 个公用事业生命线连续性域，覆盖电网可靠性、水务污水公用事业、燃料热能服务、公共交通运营、关键基础设施生命线互依赖和公用事业可负担性断供保护。
 - 2026-06-30：新增第二十九波 6 个生物医学平台域，覆盖基因治疗与基因编辑递送安全、生物年龄钟验证、多组学个人基线、工程细胞疗法、类器官组织芯片模型和异种移植工程器官替换。
+- 2026-06-30：新增第三十波 6 个定量方法学域，覆盖因果推断与目标试验模拟、生存分析与健康寿命风险建模、人类数字孪生生命历程仿真、实施科学与依从行为改变、不确定性量化与模型校准、数据质量缺失代表性审查。
 
 完整记录见 [CHANGELOG.md](CHANGELOG.md)。

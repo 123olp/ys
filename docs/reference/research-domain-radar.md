@@ -199,6 +199,12 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `engineered-cell-therapy-regenerative-platforms/` | 工程细胞疗法决定细胞能否成为可编程治疗和再生平台，同时控制扩增、脱靶、毒性和制造风险 |
 | `organoids-organ-on-chip-disease-models/` | 类器官和组织芯片决定候选干预、毒性和疾病模型能否降低人体试错成本，同时避免体外模型过度外推 |
 | `xenotransplantation-bioengineered-organ-replacement/` | 异种移植和工程器官替换决定器官失败是否有替代供给路径，同时处理排斥、感染、伦理和长期功能风险 |
+| `causal-inference-target-trial-emulation/` | 因果推断和目标试验模拟决定技术/干预能否从相关性叙事进入可审查的反事实干预问题 |
+| `survival-analysis-healthspan-risk-modeling/` | 生存分析和健康寿命风险建模决定死亡、疾病、失能和有效时间能否被表达为随时间展开的风险路径 |
+| `human-digital-twin-life-course-simulation/` | 人类数字孪生和生命历程仿真决定多域状态、状态转移、干预策略和反馈能否进入动态模型 |
+| `implementation-science-adherence-behavior-change/` | 实施科学和依从行为改变决定论文中的干预效果是否能真实进入主体日常行动和服务系统 |
+| `uncertainty-quantification-model-calibration/` | 不确定性量化和模型校准决定预测输出是否知道自己的边界，避免精确数字制造虚假确定性 |
+| `data-quality-missingness-representativeness/` | 数据质量、缺失和代表性决定后续因果、预测、仿真和治理模型是否被偏倚数据污染 |
 
 ## 来源信号
 
@@ -896,6 +902,18 @@ Source links:
 - https://www.organdonor.gov/
 - https://optn.transplant.hrsa.gov/data/
 - https://www.niaid.nih.gov/research/transplantation
+- https://www.hsph.harvard.edu/miguel-hernan/causal-inference-book/
+- https://pubmed.ncbi.nlm.nih.gov/36508210/
+- https://www.tandfonline.com/doi/abs/10.1080/01621459.1958.10501452
+- https://rss.onlinelibrary.wiley.com/doi/10.1111/j.2517-6161.1972.tb00899.x
+- https://www.jmir.org/2022/9/e35675/
+- https://arxiv.org/abs/2302.03593
+- https://re-aim.org/
+- https://implementationscience.biomedcentral.com/articles/10.1186/1748-5908-6-42
+- https://www.tripod-statement.org/
+- https://www.probast.org/
+- https://www.strobe-statement.org/
+- https://www.record-statement.org/
 - https://www.fao.org/sustainability/en/
 - https://www.fao.org/climate-change/en/
 - https://www.worldbank.org/en/topic/agriculture

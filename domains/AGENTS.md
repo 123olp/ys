@@ -47,6 +47,24 @@ domains/
 ├── xenotransplantation-bioengineered-organ-replacement/
 │   ├── AGENTS.md
 │   └── README.md
+├── causal-inference-target-trial-emulation/
+│   ├── AGENTS.md
+│   └── README.md
+├── survival-analysis-healthspan-risk-modeling/
+│   ├── AGENTS.md
+│   └── README.md
+├── human-digital-twin-life-course-simulation/
+│   ├── AGENTS.md
+│   └── README.md
+├── implementation-science-adherence-behavior-change/
+│   ├── AGENTS.md
+│   └── README.md
+├── uncertainty-quantification-model-calibration/
+│   ├── AGENTS.md
+│   └── README.md
+├── data-quality-missingness-representativeness/
+│   ├── AGENTS.md
+│   └── README.md
 ├── cognitive-augmentation/
 │   ├── AGENTS.md
 │   └── README.md
@@ -601,10 +619,12 @@ domains/
 - `coastal-marine-resilience-blue-economy-continuity/`、`fisheries-aquatic-food-systems-continuity/`、`dams-levees-flood-control-infrastructure-safety/`、`public-works-civil-infrastructure-asset-management/`、`urban-planning-land-use-zoning-resilience/` 和 `green-blue-infrastructure-urban-nature-cooling/` 负责海岸海洋、水生食物、防洪工程、公共工程资产、城市空间治理和绿蓝基础设施这些自然-工程-城市交界条件。
 - `electric-grid-reliability-resilience-continuity/`、`water-wastewater-utility-service-continuity/`、`fuel-thermal-energy-service-continuity/`、`public-transit-service-operations-continuity/`、`critical-infrastructure-lifeline-interdependency-resilience/` 和 `utility-affordability-shutoff-protection-continuity/` 负责电网、水务污水、燃料热能、公共交通、关键基础设施生命线互依赖和公用事业可负担性这些日常运行生命线条件。
 - `gene-therapy-genome-editing-delivery-safety/`、`biological-age-clocks-biomarker-validation/`、`multiomics-personal-baseline-systems-biology/`、`engineered-cell-therapy-regenerative-platforms/`、`organoids-organ-on-chip-disease-models/` 和 `xenotransplantation-bioengineered-organ-replacement/` 负责基因治疗与编辑递送安全、生物年龄钟验证、多组学个人基线、工程细胞疗法、人体相关疾病模型和器官替换平台这些生物医学平台条件。
+- `causal-inference-target-trial-emulation/`、`survival-analysis-healthspan-risk-modeling/`、`human-digital-twin-life-course-simulation/`、`implementation-science-adherence-behavior-change/`、`uncertainty-quantification-model-calibration/` 和 `data-quality-missingness-representativeness/` 负责因果识别、寿命/健康寿命风险、生命历程仿真、实施落地、模型校准和数据质量这些定量方法学条件。
 - `access-to-justice-legal-aid/`、`civic-participation-election-access/`、`migration-displacement-humanitarian-continuity/` 和 `digital-inclusion-connectivity/` 负责司法可及、公民参与、迁移流离失所人道连续性和数字连接这些制度参与与公共服务接入条件。
 - `personal-safety-violence-prevention/` 和 `product-safety-recall-systems/` 负责暴力预防、受害者支持、产品缺陷报告、召回和纠正这些公共安全连续性条件。
 - `cellular-reprogramming/` 负责山中因子、部分重编程、化学重编程、AI 因子设计和表观遗传编辑等“细胞状态可重写”谱系，不提供实验协议或人体应用建议。
 - `gene-therapy-genome-editing-delivery-safety/`、`biological-age-clocks-biomarker-validation/`、`multiomics-personal-baseline-systems-biology/`、`engineered-cell-therapy-regenerative-platforms/`、`organoids-organ-on-chip-disease-models/` 和 `xenotransplantation-bioengineered-organ-replacement/` 负责高杠杆生物医学平台从状态观测、机制扰动、模型验证到器官替换的证据和风险边界，不提供实验协议、制造步骤、个体检测解释、治疗选择或人体应用建议。
+- `causal-inference-target-trial-emulation/`、`survival-analysis-healthspan-risk-modeling/`、`human-digital-twin-life-course-simulation/`、`implementation-science-adherence-behavior-change/`、`uncertainty-quantification-model-calibration/` 和 `data-quality-missingness-representativeness/` 负责各研究域进入定量预测前的因果、风险、仿真、实施、校准和数据入口门禁，不输出个体死亡日期、临床决策、自动化评分或未经验证的寿命承诺。
 - `regenerative-medicine/`、`cancer-control/` 和 `immune-maintenance/` 负责身体基底维护相关的机制、风险和证据边界。
 - `rehabilitation-functioning/`、`assistive-technology-access/`、`skin-barrier-wound-healing/` 和 `sensory-continuity/` 负责功能恢复、能力补偿、外界屏障和感官反馈连续性。
 - `antimicrobial-resilience/` 负责抗微生物耐药、感染控制和现代医学抗感染底座。

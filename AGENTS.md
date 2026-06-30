@@ -50,6 +50,12 @@ human_infra/
     ├── engineered-cell-therapy-regenerative-platforms/ # 工程细胞疗法与再生平台
     ├── organoids-organ-on-chip-disease-models/ # 类器官、组织芯片与疾病模型
     ├── xenotransplantation-bioengineered-organ-replacement/ # 异种移植与工程器官替换
+    ├── causal-inference-target-trial-emulation/ # 因果推断与目标试验模拟
+    ├── survival-analysis-healthspan-risk-modeling/ # 生存分析与健康寿命风险建模
+    ├── human-digital-twin-life-course-simulation/ # 人类数字孪生与生命历程仿真
+    ├── implementation-science-adherence-behavior-change/ # 实施科学、依从性与行为改变
+    ├── uncertainty-quantification-model-calibration/ # 不确定性量化与模型校准
+    ├── data-quality-missingness-representativeness/ # 数据质量、缺失与代表性
     ├── cognitive-augmentation/ # 认知增强与工具放大
     ├── digital-identity-security/ # 数字身份安全
     ├── disembodied-cns/   # 去具身外部维持型中枢生命系统
@@ -382,6 +388,12 @@ human_infra/
 - `domains/engineered-cell-therapy-regenerative-platforms/` 负责 CAR-T、TCR-T、TIL、NK、iPSC 衍生细胞和可编程细胞平台。
 - `domains/organoids-organ-on-chip-disease-models/` 负责类器官、organ-on-chip、组织芯片、患者来源模型和人体相关新方法学。
 - `domains/xenotransplantation-bioengineered-organ-replacement/` 负责异种移植、基因编辑动物器官、工程器官、器官保存灌注和替代性器官供给。
+- `domains/causal-inference-target-trial-emulation/` 负责因果推断、反事实、目标试验模拟、混杂和选择偏差审查。
+- `domains/survival-analysis-healthspan-risk-modeling/` 负责生存分析、风险函数、健康寿命、竞争风险和有效时间终点建模。
+- `domains/human-digital-twin-life-course-simulation/` 负责人类数字孪生、生命历程仿真、主体状态向量、状态转移和场景模拟。
+- `domains/implementation-science-adherence-behavior-change/` 负责实施科学、依从性、技术采用、行为改变和真实世界效果。
+- `domains/uncertainty-quantification-model-calibration/` 负责不确定性量化、模型校准、外部验证、漂移监测和报告边界。
+- `domains/data-quality-missingness-representativeness/` 负责数据质量、缺失机制、代表性、测量误差和数据入口门禁。
 - `domains/insurance-risk-transfer/` 负责健康、失业、工伤、残障、灾害、存款、养老金等风险转移和风险池。
 - `domains/childcare-family-continuity/` 负责托育可及、托育费用、照护质量、早期儿童发展、父母工作连续性和家庭压力。
 - `domains/emergency-preparedness-response/` 负责灾害准备、预警、应急通信、急救医疗、安置、公共卫生应急和灾后恢复。
@@ -453,6 +465,7 @@ human_infra/
 - 2026-06-30：新增海岸海洋蓝色经济、渔业水生食物、防洪工程安全、公共工程资产管理、城市土地使用规划和城市绿蓝基础设施六个研究域，补齐自然-工程-城市交界底座。
 - 2026-06-30：新增电网可靠性、水务污水公用事业、燃料热能服务、公共交通运营、关键基础设施生命线互依赖和公用事业可负担性断供保护六个研究域，补齐公用事业生命线连续性底座。
 - 2026-06-30：新增基因治疗与基因编辑递送安全、生物年龄钟验证、多组学个人基线、工程细胞疗法、类器官组织芯片模型和异种移植工程器官替换六个研究域，补齐生物医学平台层。
+- 2026-06-30：新增因果推断与目标试验模拟、生存分析与健康寿命风险建模、人类数字孪生生命历程仿真、实施科学与依从行为改变、不确定性量化与模型校准、数据质量缺失代表性六个研究域，补齐定量方法学层。
 - 2026-06-30：新增复杂照护导航、交接与决策连续性域，覆盖罕见病诊断漫游、多病共存多重用药、出院交接、居家/缓和/安宁疗护、医疗解释文化中介和患者共同决策。
 - 2026-06-30：新增外部化主体连续性域，覆盖生命日志个人档案、数字遗产继承、可穿戴连续感知、个人知识管理认知卸载、脑机接口治理和机器人具身辅助。
 - 2026-06-30：新增 `domains/cellular-reprogramming/`，承载山中因子、部分重编程、化学重编程、AI 因子设计和表观遗传编辑的机制谱系与安全边界。

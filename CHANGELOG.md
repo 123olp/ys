@@ -32,6 +32,7 @@ All notable repository structure changes are recorded here.
 - Added twenty-seventh-wave coastal, civil, and urban infrastructure domain skeletons for coastal/marine resilience, fisheries/aquatic food systems, dams/levees/flood-control infrastructure, public works asset management, urban planning/land use, and green-blue infrastructure urban cooling.
 - Added twenty-eighth-wave utility lifeline continuity domain skeletons for electric grid reliability, water/wastewater utility service, fuel/thermal energy service, public transit operations, critical infrastructure lifeline interdependencies, and utility affordability/shutoff protection.
 - Added twenty-ninth-wave biomedical platform domain skeletons for gene therapy and genome-editing delivery safety, biological age clock validation, multi-omics personal baselines, engineered cell therapies, organoids/organ-on-chip models, and xenotransplantation/bioengineered organ replacement.
+- Added thirtieth-wave quantitative methodology domain skeletons for causal inference and target trial emulation, survival analysis and healthspan risk modeling, human digital twin life-course simulation, implementation science and adherence behavior change, uncertainty quantification and model calibration, and data quality/missingness/representativeness.
 
 ## 2026-06-29
 

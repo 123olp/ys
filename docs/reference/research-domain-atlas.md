@@ -222,6 +222,12 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 语言和表达可理解 | `language-access-plain-communication/` | plain language、语言服务、LEP、CLAS、认知可访问性、表单理解 | 材料读不懂、听不懂、不能执行，或简化时删掉权利和风险 |
 | 口腔系统可持续 | `oral-health-continuity/` | 咀嚼、牙周、口腔疼痛、感染、沟通 | 营养障碍、疼痛、感染、社交退缩 |
 | 持续存在可承受 | `pain-suffering-control/` | 疼痛、症状负担、生活质量、尊严 | 延长痛苦、有效时间崩塌、退出权受损 |
+| 干预效应必须可识别 | `causal-inference-target-trial-emulation/` | 因果图、反事实、目标试验模拟、混杂、选择偏差 | 把相关性误写成因果，导致错误干预排序 |
+| 寿命和健康寿命风险必须可建模 | `survival-analysis-healthspan-risk-modeling/` | 风险函数、生存曲线、健康寿命、竞争风险、有效时间 | 用静态指标替代时间路径，误读寿命和失能风险 |
+| 主体状态必须可动态仿真 | `human-digital-twin-life-course-simulation/` | 主体状态向量、状态转移、生命历程仿真、场景模拟 | 多域变量无法合成路径，只剩碎片化叙事 |
+| 干预必须真实落地 | `implementation-science-adherence-behavior-change/` | 采用、依从、fidelity、sustainment、行为摩擦 | 论文有效但现实不可获得、不可坚持或不可维护 |
+| 模型必须可校准 | `uncertainty-quantification-model-calibration/` | 校准、外部验证、预测区间、不确定性、漂移 | 精确数字制造虚假确定性，预测越界使用 |
+| 数据入口必须可信 | `data-quality-missingness-representativeness/` | 缺失机制、代表性、测量误差、数据血缘、覆盖偏差 | 偏倚数据污染因果、预测、仿真和治理结论 |
 | 状态可观测和校正 | `measurement-feedback/` | 测量、预测、反馈、风险评分 | 错误预测、偏差、指标替代真实终点 |
 
 ## 主链路
@@ -230,6 +236,7 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 有效永生 / 主体持续性最大化
   -> 生物基底维护
   -> 生物医学平台可验证、可递送、可治理
+  -> 定量方法学可识别、可建模、可校准
   -> 神经与身份连续
   -> 时间窗口延展
   -> 认知与工具增强
@@ -303,6 +310,12 @@ neuro-continuity
 ```text
 future-waiting
   -> biostasis-cryopreservation
+  -> causal-inference-target-trial-emulation
+  -> survival-analysis-healthspan-risk-modeling
+  -> human-digital-twin-life-course-simulation
+  -> implementation-science-adherence-behavior-change
+  -> uncertainty-quantification-model-calibration
+  -> data-quality-missingness-representativeness
   -> measurement-feedback
 ```
 
