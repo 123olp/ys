@@ -41,6 +41,12 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 遗传信息可长期保持 | `genomic-stability-dna-repair/` | DNA 损伤、修复能力、突变负荷、癌前风险 | 把分子指标写成个体寿命或治疗结论 |
 | 复制边界可维护 | `telomere-maintenance/` | 端粒长度、端粒酶、复制能力、癌症风险 | 忽略端粒延长与肿瘤风险的张力 |
 | 细胞状态可重写 | `cellular-reprogramming/` | 表观遗传状态、细胞身份、组织功能 | 去分化、肿瘤化、过度外推 |
+| 遗传状态可被安全改写 | `gene-therapy-genome-editing-delivery-safety/` | 基因治疗、基因编辑、递送载体、表达控制、脱靶和长期随访 | 编辑错误、递送失败、免疫反应、脱靶和长期风险把高杠杆干预转成新风险 |
+| 衰老指标必须被验证 | `biological-age-clocks-biomarker-validation/` | 表观遗传年龄钟、组学年龄、功能年龄、衰老 biomarker 和替代终点 | 指标与真实终点错配，导致伪优化、错误干预和寿命叙事外推 |
+| 主体状态必须可多层观测 | `multiomics-personal-baseline-systems-biology/` | 基因组、表观组、转录组、蛋白组、代谢组、微生物组和个人基线 | 单一指标看不到系统状态，模型误判个体差异、风险轨迹和干预反应 |
+| 细胞可作为治疗平台 | `engineered-cell-therapy-regenerative-platforms/` | CAR-T、TCR-T、TIL、NK、iPSC 衍生细胞、可编程细胞和安全开关 | 活体药物扩增失控、脱靶、毒性、制造失败或长期恶性风险 |
+| 人体相关模型必须降低试错成本 | `organoids-organ-on-chip-disease-models/` | 类器官、organ-on-chip、组织芯片、患者来源模型和替代方法 | 模型失真导致候选干预错误进入或退出临床，或把体外信号外推成人体疗效 |
+| 器官失败必须有替换路径 | `xenotransplantation-bioengineered-organ-replacement/` | 异种移植、工程器官、器官保存灌注、器官供给和移植平台风险 | 器官衰竭、供给不足、免疫排斥、感染和长期功能失败直接截断生命路径 |
 | 蛋白质量控制可稳定 | `proteostasis-autophagy/` | 蛋白稳态、自噬、溶酶体、聚集负担 | 把自噬激活写成无条件有益 |
 | 细胞能源可持续 | `mitochondrial-bioenergetics/` | 线粒体功能、ATP、氧化还原、疲劳 | 把能量指标写成寿命预测 |
 | 衰老细胞负担可治理 | `cellular-senescence-clearance/` | senescence burden、SASP、炎症、组织环境 | 忽略衰老细胞的肿瘤抑制和修复角色 |
@@ -223,6 +229,7 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 ```text
 有效永生 / 主体持续性最大化
   -> 生物基底维护
+  -> 生物医学平台可验证、可递送、可治理
   -> 神经与身份连续
   -> 时间窗口延展
   -> 认知与工具增强
@@ -240,6 +247,12 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 
 ```text
 cellular-reprogramming
+  -> gene-therapy-genome-editing-delivery-safety
+  -> biological-age-clocks-biomarker-validation
+  -> multiomics-personal-baseline-systems-biology
+  -> engineered-cell-therapy-regenerative-platforms
+  -> organoids-organ-on-chip-disease-models
+  -> xenotransplantation-bioengineered-organ-replacement
   -> genomic-stability-dna-repair
   -> telomere-maintenance
   -> proteostasis-autophagy

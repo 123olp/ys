@@ -9,6 +9,12 @@
 - `genomic-stability-dna-repair/`：基因组稳定性与 DNA 修复，整理 DNA 损伤、修复系统、突变负荷和癌前风险。
 - `telomere-maintenance/`：端粒维护，整理端粒长度、端粒酶、复制衰老、组织更新和癌症风险。
 - `cellular-reprogramming/`：细胞重编程与表观遗传年轻化谱系，整理山中因子、部分重编程、化学重编程、AI 因子设计和身份保持风险。
+- `gene-therapy-genome-editing-delivery-safety/`：基因治疗与基因编辑递送安全，整理递送载体、表达控制、脱靶、长期随访和遗传安全边界。
+- `biological-age-clocks-biomarker-validation/`：生物年龄钟与标志物验证，整理表观遗传年龄钟、组学年龄、功能年龄、替代终点和验证边界。
+- `multiomics-personal-baseline-systems-biology/`：多组学个人基线与系统生物学，整理多层组学、纵向个人基线、系统网络和数据治理边界。
+- `engineered-cell-therapy-regenerative-platforms/`：工程细胞疗法与再生平台，整理 CAR-T、TCR-T、TIL、NK、iPSC 衍生细胞和可编程细胞安全边界。
+- `organoids-organ-on-chip-disease-models/`：类器官、组织芯片与疾病模型，整理人体相关模型、患者来源模型、替代方法和模型验证边界。
+- `xenotransplantation-bioengineered-organ-replacement/`：异种移植与工程器官替换，整理基因编辑动物器官、工程器官、器官保存灌注和供给风险边界。
 - `proteostasis-autophagy/`：蛋白稳态与自噬，整理蛋白折叠、聚集、清除、溶酶体和细胞质量控制。
 - `mitochondrial-bioenergetics/`：线粒体生物能量学，整理线粒体功能、ATP、氧化还原、疲劳和行动能力。
 - `cellular-senescence-clearance/`：细胞衰老与清除，整理衰老细胞负担、SASP、组织炎症和 senolytic 风险。

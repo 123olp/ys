@@ -193,6 +193,12 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `public-transit-service-operations-continuity/` | 公共交通运营决定无车、低收入、老年、残障和照护依赖主体是否能真实到达医疗、工作、教育和食物入口 |
 | `critical-infrastructure-lifeline-interdependency-resilience/` | 关键基础设施生命线互依赖决定能源、水务、通信、交通、医疗、食品、金融和政府服务故障是否级联放大 |
 | `utility-affordability-shutoff-protection-continuity/` | 公用事业可负担性和断供保护决定服务存在时，家庭是否仍会因支付、欠费和程序摩擦被切断基础服务 |
+| `gene-therapy-genome-editing-delivery-safety/` | 基因治疗和基因编辑递送安全决定高杠杆遗传干预能否降低风险而不是制造脱靶、免疫、表达失控和长期随访风险 |
+| `biological-age-clocks-biomarker-validation/` | 生物年龄钟和 biomarker 验证决定衰老状态指标能否作为风险反馈，而不是把替代终点误写成寿命承诺 |
+| `multiomics-personal-baseline-systems-biology/` | 多组学个人基线决定主体状态能否被多层、纵向、可治理地观测，而不是被单一指标或横截面均值误导 |
+| `engineered-cell-therapy-regenerative-platforms/` | 工程细胞疗法决定细胞能否成为可编程治疗和再生平台，同时控制扩增、脱靶、毒性和制造风险 |
+| `organoids-organ-on-chip-disease-models/` | 类器官和组织芯片决定候选干预、毒性和疾病模型能否降低人体试错成本，同时避免体外模型过度外推 |
+| `xenotransplantation-bioengineered-organ-replacement/` | 异种移植和工程器官替换决定器官失败是否有替代供给路径，同时处理排斥、感染、伦理和长期功能风险 |
 
 ## 来源信号
 
@@ -358,6 +364,12 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | FTA National Transit Database / FTA Transit Asset Management / DOT Accessible Transportation | 提示公共交通运营、资产状态、班次可靠性和无障碍交通决定服务可达性是否真实发生 |
 | FEMA Community Lifelines / CISA National Critical Functions / CISA Critical Infrastructure Sectors / CISA IRPF | 提示能源、水务、通信、交通、医疗、食品、金融和政府生命线之间存在级联互依赖，需要独立跨部门韧性域 |
 | ACF LIHEAP / DOE LEAD Tool / EPA Water Finance Center / FCC Lifeline | 提示公用事业账单负担、断供保护、援助入口和服务可负担性会把基础设施问题转化为家庭层面的连续性问题 |
+| FDA Cellular and Gene Therapy / FDA genome editing guidance / NIH NHGRI Genome Editing | 提示基因治疗、基因编辑、递送载体、表达控制、脱靶、长期随访和遗传安全需要独立高风险转化域 |
+| Horvath clock / GrimAge / DunedinPACE / NIA biology of aging | 提示生物年龄钟和衰老 biomarker 需要独立处理验证、替代终点、疾病终点、死亡风险和健康寿命外推边界 |
+| NIH HuBMAP / NIH Bridge2AI / GTEx / All of Us / Human Cell Atlas | 提示多组学、组织图谱、人口队列和个人基线是生命路径模型的数据底座，但必须处理隐私、代表性和可迁移性 |
+| NCI CAR-T / FDA CAR-T safety communication / ISSCR Guidelines | 提示工程细胞疗法已经是活体治疗平台，同时存在细胞扩增、脱靶、长期恶性风险和制造质量边界 |
+| NIH NCATS Tissue Chip / FDA Alternative Methods / FDA ISTAND | 提示类器官、组织芯片和新方法学可降低人体试错成本，但需要模型相关性、验证和监管可接受性审查 |
+| FDA Xenotransplantation / HRSA Organ Donation / OPTN data / NIH NIAID transplantation | 提示器官失败、供给缺口、异种移植、工程器官、排斥、感染和长期监测需要独立器官替换平台域 |
 
 Source links:
 
@@ -860,6 +872,30 @@ Source links:
 - https://www.cisa.gov/resources-tools/resources/national-critical-functions-set
 - https://www.acf.hhs.gov/ocs/programs/liheap
 - https://www.fcc.gov/lifeline-consumers
+- https://www.fda.gov/vaccines-blood-biologics/cellular-gene-therapy-products
+- https://www.fda.gov/regulatory-information/search-fda-guidance-documents/human-gene-therapy-products-incorporating-human-genome-editing
+- https://www.fda.gov/regulatory-information/search-fda-guidance-documents/long-term-follow-after-administration-human-gene-therapy-products
+- https://www.genome.gov/about-genomics/policy-issues/Genome-Editing
+- https://genomebiology.biomedcentral.com/articles/10.1186/gb-2013-14-10-r115
+- https://pmc.ncbi.nlm.nih.gov/articles/PMC6366976/
+- https://elifesciences.org/articles/73420
+- https://www.nia.nih.gov/research/dab/biology-aging
+- https://commonfund.nih.gov/hubmap
+- https://commonfund.nih.gov/bridge2ai
+- https://gtexportal.org/
+- https://allofus.nih.gov/
+- https://www.humancellatlas.org/
+- https://www.cancer.gov/about-cancer/treatment/research/car-t-cells
+- https://www.fda.gov/vaccines-blood-biologics/safety-availability-biologics/fda-requires-boxed-warning-secondary-t-cell-malignancies-following-treatment-bcma-directed-or-cd19-directed
+- https://www.isscr.org/guidelines
+- https://ncats.nih.gov/research/research-activities/tissue-chip
+- https://www.fda.gov/science-research/advancing-regulatory-science/alternative-methods
+- https://www.fda.gov/drugs/science-and-research-drugs/innovative-science-and-technology-approaches-new-drugs
+- https://www.fda.gov/vaccines-blood-biologics/xenotransplantation
+- https://www.fda.gov/regulatory-information/search-fda-guidance-documents/source-animal-product-preclinical-and-clinical-issues-concerning-use-xenotransplantation-products
+- https://www.organdonor.gov/
+- https://optn.transplant.hrsa.gov/data/
+- https://www.niaid.nih.gov/research/transplantation
 - https://www.fao.org/sustainability/en/
 - https://www.fao.org/climate-change/en/
 - https://www.worldbank.org/en/topic/agriculture

@@ -48,6 +48,7 @@ docs/
 │   ├── 0030-add-twenty-sixth-wave-primary-production-natural-systems-logistics-domains.md
 │   ├── 0031-add-twenty-seventh-wave-coastal-civil-urban-infrastructure-domains.md
 │   ├── 0032-add-twenty-eighth-wave-utility-lifeline-continuity-domains.md
+│   ├── 0033-add-twenty-ninth-wave-biomedical-platform-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -219,4 +220,10 @@ docs/
 116. Read `../domains/public-transit-service-operations-continuity/README.md` if you are working on bus, rail, ferry, paratransit, service reliability, transit assets, operations workforce, or service restoration.
 117. Read `../domains/critical-infrastructure-lifeline-interdependency-resilience/README.md` if you are working on community lifelines, national critical functions, cascading failures, infrastructure dependencies, or cross-sector resilience.
 118. Read `../domains/utility-affordability-shutoff-protection-continuity/README.md` if you are working on utility bills, arrears, shutoff protection, LIHEAP, Lifeline, energy burden, water affordability, or utility consumer protection.
-119. Enter a domain under `../domains/`.
+119. Read `../domains/gene-therapy-genome-editing-delivery-safety/README.md` if you are working on gene therapy, genome editing, delivery vectors, off-target risk, expression control, or long-term follow-up.
+120. Read `../domains/biological-age-clocks-biomarker-validation/README.md` if you are working on epigenetic clocks, biological age, biomarker validation, surrogate endpoints, or aging feedback metrics.
+121. Read `../domains/multiomics-personal-baseline-systems-biology/README.md` if you are working on genomics, epigenomics, transcriptomics, proteomics, metabolomics, microbiomics, longitudinal personal baselines, or systems biology.
+122. Read `../domains/engineered-cell-therapy-regenerative-platforms/README.md` if you are working on CAR-T, TCR-T, TIL, NK, iPSC-derived cells, programmable cells, or engineered cell therapy safety.
+123. Read `../domains/organoids-organ-on-chip-disease-models/README.md` if you are working on organoids, organ-on-chip, tissue chips, patient-derived models, alternative methods, or disease-model validation.
+124. Read `../domains/xenotransplantation-bioengineered-organ-replacement/README.md` if you are working on xenotransplantation, genetically engineered animal organs, bioengineered organ replacement, organ perfusion, or transplant platform risks.
+125. Enter a domain under `../domains/`.

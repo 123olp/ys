@@ -1,0 +1,54 @@
+# Gene Therapy Genome Editing Delivery Safety
+
+`gene-therapy-genome-editing-delivery-safety/` 研究基因治疗、体内/体外基因编辑、递送载体、表达控制、长期随访和遗传安全如何影响主体持续性。
+
+> 核心问题：如果未来能够直接改写或补偿致病基因、调节表达程序或增强修复能力，那么真正的约束不是“能不能编辑”，而是“能否安全、可控、可验证、可停止并长期随访”。
+
+## 先验位置
+
+```text
+有效永生 / 主体持续性最大化
+  -> 主体需要降低遗传病、癌症易感、退行性损伤和组织失败风险
+  -> 基因治疗和基因编辑可能改变底层状态变量
+  -> 递送、脱靶、插入突变、免疫反应、表达失控和长期随访失败会反过来制造新风险
+  -> 因此基因治疗、编辑与递送安全是身体可维护性的高杠杆研究域
+```
+
+## 关注对象
+
+- AAV、慢病毒、脂质纳米颗粒、mRNA、ex vivo 细胞编辑和 in vivo 递送。
+- CRISPR、base editing、prime editing、表观遗传编辑和转基因表达控制。
+- 脱靶、on-target 大片段改变、插入突变、免疫原性、剂量、组织靶向和长期随访。
+- 与 `cellular-reprogramming/` 的边界：重编程域关注细胞身份与年龄状态；本域关注基因层编辑、递送和长期安全。
+- 与 `clinical-trials-regulatory-science-translation/` 的边界：临床转化域关注试验与监管流程；本域关注平台机制和风险变量。
+
+## Human Infra 模型链路
+
+```text
+基因治疗 / 基因编辑 T
+  -> 改变致病变异、表达程序、细胞功能和修复能力 X
+  -> 改变疾病状态、组织状态和长期风险暴露 S
+  -> 改变死亡风险、失能风险、癌症风险和恢复能力 λ(t)
+  -> 影响健康寿命、有效时间和未来选择权
+```
+
+## 非目标
+
+- 不提供载体构建、编辑设计、靶点选择、剂量、给药、实验流程或人体应用建议。
+- 不把机制可行性、动物结果、早期安全性试验或公司公告写成稳定人体疗效。
+- 不提供胚胎编辑、生殖系编辑、增强性编辑、监管规避或 DIY 生物实验建议。
+- 不把基因编辑写成通用延寿工具；必须绑定具体疾病、组织、递送和证据层级。
+
+## Source Signals
+
+- FDA Cellular & Gene Therapy Products: https://www.fda.gov/vaccines-blood-biologics/cellular-gene-therapy-products
+- FDA human gene therapy with genome editing guidance: https://www.fda.gov/regulatory-information/search-fda-guidance-documents/human-gene-therapy-products-incorporating-human-genome-editing
+- FDA long-term follow-up after human gene therapy products: https://www.fda.gov/regulatory-information/search-fda-guidance-documents/long-term-follow-after-administration-human-gene-therapy-products
+- NIH / NHGRI genome editing policy issues: https://www.genome.gov/about-genomics/policy-issues/Genome-Editing
+- NCBI Gene Therapy overview: https://www.ncbi.nlm.nih.gov/books/NBK22254/
+
+## 下一步
+
+1. 建立变量表：递送方式、编辑方式、靶组织、表达持续时间、脱靶、安全监测和长期随访。
+2. 与 `cancer-control/`、`regenerative-medicine/`、`immune-maintenance/`、`clinical-trials-regulatory-science-translation/` 建立交叉引用。
+3. 将代表性论文转成 Source Cards，区分机制、动物、人体验证和上市后安全。

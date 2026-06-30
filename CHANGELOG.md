@@ -31,6 +31,7 @@ All notable repository structure changes are recorded here.
 - Added twenty-sixth-wave primary production, natural systems, and physical logistics domain skeletons for agricultural production, soil/land/drought resilience, water resources/hydrology/flood/drought management, biodiversity/ecosystem services, wildfire landscape fire resilience, and freight/logistics/port/cold-chain continuity.
 - Added twenty-seventh-wave coastal, civil, and urban infrastructure domain skeletons for coastal/marine resilience, fisheries/aquatic food systems, dams/levees/flood-control infrastructure, public works asset management, urban planning/land use, and green-blue infrastructure urban cooling.
 - Added twenty-eighth-wave utility lifeline continuity domain skeletons for electric grid reliability, water/wastewater utility service, fuel/thermal energy service, public transit operations, critical infrastructure lifeline interdependencies, and utility affordability/shutoff protection.
+- Added twenty-ninth-wave biomedical platform domain skeletons for gene therapy and genome-editing delivery safety, biological age clock validation, multi-omics personal baselines, engineered cell therapies, organoids/organ-on-chip models, and xenotransplantation/bioengineered organ replacement.
 
 ## 2026-06-29
 
