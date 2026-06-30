@@ -435,6 +435,13 @@ flowchart TD
     H --> ESNS[epilepsy-seizure-network-stability<br/>癫痫 / 发作网络稳定]
     H --> ANSH[autonomic-nervous-system-homeostasis<br/>自主神经稳态]
     H --> MHETB[migraine-headache-effective-time-burden<br/>偏头痛 / 有效时间负担]
+    H --> VEHC[vision-eye-health-continuity<br/>视觉 / 眼健康连续性]
+    H --> HACC[hearing-auditory-communication-continuity<br/>听力 / 听觉沟通]
+    H --> VBSO[vestibular-balance-spatial-orientation<br/>前庭 / 平衡定向]
+    H --> SLCC[speech-language-communication-continuity<br/>言语语言 / 沟通连续性]
+    H --> SDAN[swallowing-dysphagia-aspiration-nutrition<br/>吞咽 / 误吸营养]
+    H --> STCC[smell-taste-chemosensory-continuity<br/>嗅味觉 / 化学感知]
+    H --> PNSC[peripheral-neuropathy-somatosensory-continuity<br/>周围神经 / 躯体感觉]
     H --> MF[measurement-feedback<br/>测量 / 预测 / 反馈]
     H --> C[disembodied-cns<br/>去具身中枢生命系统]
     H --> M[memory-editing<br/>记忆编辑与人格连续性]
@@ -542,6 +549,13 @@ flowchart TD
 | [Epilepsy Seizure Network Stability](domains/epilepsy-seizure-network-stability/README.md) | 癫痫、发作频率、脑网络兴奋性、治疗连续性和发作相关伤害 | 保护稳定意识、可预测行动窗口、工作学习参与和社会安全 | 不提供诊断、用药、急救、驾驶许可、设备选择或手术建议 |
 | [Autonomic Nervous System Homeostasis](domains/autonomic-nervous-system-homeostasis/README.md) | 自主神经、心率血压调节、体位耐受、出汗、消化排尿和压力恢复 | 解释隐性自动调节如何决定站立、学习、工作、运动和恢复耐受 | 不提供 POTS/晕厥诊断、补液用盐、药物、运动或设备建议 |
 | [Migraine Headache Effective Time Burden](domains/migraine-headache-effective-time-burden/README.md) | 偏头痛、头痛障碍、感官敏感、认知雾、发作不可预测性和失能天数 | 把低死亡、高失能、高时间损耗疾病纳入有效时间和创造密度模型 | 不提供头痛诊断、药物、急症判断、个体触发因素处方或产品推荐 |
+| [Vision Eye Health Continuity](domains/vision-eye-health-continuity/README.md) | 视力、眼健康、视觉损害、低视力支持、阅读、移动和视觉任务参与 | 把高带宽视觉输入作为学习、移动、安全判断和独立生活的基础输入层 | 不提供眼科诊断、验光处方、检查解释、治疗、手术、设备或个体资格判断 |
+| [Hearing Auditory Communication Continuity](domains/hearing-auditory-communication-continuity/README.md) | 听力损失、听觉沟通、耳鸣、助听支持、声音警报和沟通疲劳 | 把听觉通道作为语言、关系、警报、服务理解和安全参与的输入层 | 不提供听力诊断、听力图解释、助听设备处方、耳鸣治疗或个体医疗建议 |
+| [Vestibular Balance Spatial Orientation](domains/vestibular-balance-spatial-orientation/README.md) | 前庭、眩晕、平衡、空间定向、跌倒和移动信心 | 把空间定向和平衡反馈作为行动半径、外出参与和跌倒风险的底层条件 | 不提供眩晕诊断、前庭测试解释、康复动作、药物、急救或设备建议 |
+| [Speech Language Communication Continuity](domains/speech-language-communication-continuity/README.md) | 失语、构音障碍、言语运动障碍、沟通参与、同意表达和替代沟通 | 把语言表达与理解作为主体偏好、共同决策、求助和社会参与的接口 | 不提供言语语言诊断、训练方案、设备处方、吞咽判断或个体康复建议 |
+| [Swallowing Dysphagia Aspiration Nutrition](domains/swallowing-dysphagia-aspiration-nutrition/README.md) | 吞咽障碍、误吸、窒息、营养水分入口、进食尊严和照护负担 | 把吞咽安全作为营养进入、气道保护、恢复能力和生活尊严的交叉条件 | 不提供吞咽诊断、检查解释、饮食质地调整、管饲、护理、急救或康复建议 |
+| [Smell Taste Chemosensory Continuity](domains/smell-taste-chemosensory-continuity/README.md) | 嗅觉、味觉、化学感知、危险气味识别、食欲、营养和生活质量 | 把化学感知作为危险预警、食欲营养、情绪体验和生活质量反馈层 | 不提供嗅味觉诊断、感染/神经判断、治疗、训练、补剂、药物或个体风险结论 |
+| [Peripheral Neuropathy Somatosensory Continuity](domains/peripheral-neuropathy-somatosensory-continuity/README.md) | 周围神经病变、触觉、痛觉、本体感觉、足部风险和精细操作反馈 | 把躯体感觉作为身体边界、避伤、步态、工具操作和皮肤保护反馈层 | 不提供神经病变诊断、检查解释、足部处置、疼痛治疗、药物、补剂或康复建议 |
 | [Regenerative Medicine](domains/regenerative-medicine/README.md) | 干细胞、组织工程、器官再生、类器官、移植 | 器官/组织修复框架、功能终点和整合风险 | 不提供手术、细胞制备、移植或人体实验步骤 |
 | [Rehabilitation And Functioning](domains/rehabilitation-functioning/README.md) | 康复、功能恢复、失能预防、活动能力、自理和社会参与 | 功能状态、活动能力、参与能力和失能风险模型 | 不提供个人康复处方、训练计划、诊断或治疗建议 |
 | [Cancer Control](domains/cancer-control/README.md) | 癌症预防、早筛、治疗、复发、肿瘤演化 | 癌症风险函数、证据层级和长期控制变量 | 不提供诊断、治疗方案、处方、剂量或个体用药建议 |
@@ -1021,5 +1035,6 @@ flowchart LR
 - 2026-06-30：新增第三十二波 6 个科研证据基础设施域，覆盖可信科研传播与同行评审、研究参与者同意与社区参与、生物样本库保管链、纵向队列随访、登记与真实世界数据治理、科研仪器与传感器校准维护。
 - 2026-06-30：新增第三十三波 7 个未来技术连续性域，覆盖纳米医学靶向递送、AI 药物发现蛋白设计、表观遗传编辑、脑保存连接组仿真、后量子密码、安全关键软件形式化方法和长期数字保存格式迁移。
 - 2026-06-30：新增第三十四波 7 个急性神经连续性与意识韧性域，覆盖卒中脑灌注韧性、TBI 神经创伤恢复、谵妄急性认知失败预防、意识障碍昏迷恢复、癫痫发作网络稳定、自主神经稳态和偏头痛有效时间负担。
+- 2026-06-30：新增第三十五波 7 个感官、沟通与具身反馈连续性域，覆盖视觉眼健康、听力听觉沟通、前庭平衡空间定向、言语语言沟通、吞咽误吸营养、嗅味觉化学感知和周围神经躯体感觉。
 
 完整记录见 [CHANGELOG.md](CHANGELOG.md)。

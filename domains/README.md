@@ -212,6 +212,13 @@
 - `epilepsy-seizure-network-stability/`：癫痫、发作与脑网络稳定，整理发作频率、治疗连续性、伤害风险和社会参与限制。
 - `autonomic-nervous-system-homeostasis/`：自主神经系统稳态，整理心率血压调节、体位耐受、出汗、消化排尿和压力恢复。
 - `migraine-headache-effective-time-burden/`：偏头痛、头痛障碍与有效时间负担，整理发作性疼痛、感官敏感、认知雾和失能天数。
+- `vision-eye-health-continuity/`：视觉与眼健康连续性，整理视力、眼病、视觉功能、低视力支持、阅读、移动和视觉任务参与。
+- `hearing-auditory-communication-continuity/`：听力与听觉沟通连续性，整理听力损失、言语识别、耳鸣、助听支持、声音警报和沟通疲劳。
+- `vestibular-balance-spatial-orientation/`：前庭、平衡与空间定向，整理眩晕、平衡、空间定位、跌倒风险和移动信心。
+- `speech-language-communication-continuity/`：言语、语言与沟通连续性，整理失语、构音障碍、言语运动障碍、沟通参与和主体表达权。
+- `swallowing-dysphagia-aspiration-nutrition/`：吞咽、误吸与营养连续性，整理吞咽安全、气道保护、营养水分、进食尊严和照护负担。
+- `smell-taste-chemosensory-continuity/`：嗅味觉与化学感知连续性，整理嗅觉、味觉、危险气味识别、食欲、营养和生活质量。
+- `peripheral-neuropathy-somatosensory-continuity/`：周围神经病变与躯体感觉连续性，整理触觉、痛觉、本体感觉、足部风险和身体边界反馈。
 - `supply-chain-continuity/`：供应链连续性，整理关键物资、服务、物流、替代路径和恢复时间。
 - `synthetic-biology-biosecurity/`：合成生物学与生物安全，整理双重用途、生物安全、生物安保和治理边界。
 - `space-extreme-habitation/`：空间与极端栖居，整理辐射、微重力、隔离、闭环资源和远程医疗风险。

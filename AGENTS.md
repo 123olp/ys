@@ -82,6 +82,13 @@ human_infra/
     ├── epilepsy-seizure-network-stability/ # 癫痫、发作与脑网络稳定
     ├── autonomic-nervous-system-homeostasis/ # 自主神经系统稳态
     ├── migraine-headache-effective-time-burden/ # 偏头痛、头痛障碍与有效时间负担
+    ├── vision-eye-health-continuity/ # 视觉与眼健康连续性
+    ├── hearing-auditory-communication-continuity/ # 听力与听觉沟通连续性
+    ├── vestibular-balance-spatial-orientation/ # 前庭、平衡与空间定向
+    ├── speech-language-communication-continuity/ # 言语、语言与沟通连续性
+    ├── swallowing-dysphagia-aspiration-nutrition/ # 吞咽、误吸与营养连续性
+    ├── smell-taste-chemosensory-continuity/ # 嗅味觉与化学感知连续性
+    ├── peripheral-neuropathy-somatosensory-continuity/ # 周围神经病变与躯体感觉连续性
     ├── cognitive-augmentation/ # 认知增强与工具放大
     ├── digital-identity-security/ # 数字身份安全
     ├── disembodied-cns/   # 去具身外部维持型中枢生命系统
@@ -460,6 +467,7 @@ human_infra/
 - `domains/neuro-continuity/` 负责大脑、记忆、意识、人格和主体身份连续性。
 - `domains/sensory-continuity/` 负责视觉、听觉、平衡、触觉和感官反馈连续性。
 - `domains/future-waiting/` 负责度规红移固有时差分路径（黑洞等待室）等“压缩等待 / 去未来”思想实验、证据边界和风险约束。
+- `domains/vision-eye-health-continuity/`、`domains/hearing-auditory-communication-continuity/`、`domains/vestibular-balance-spatial-orientation/`、`domains/speech-language-communication-continuity/`、`domains/swallowing-dysphagia-aspiration-nutrition/`、`domains/smell-taste-chemosensory-continuity/` 和 `domains/peripheral-neuropathy-somatosensory-continuity/` 负责视觉输入、听觉沟通、空间平衡、语言表达、吞咽摄食、化学感知和身体边界反馈的机制、证据、变量和禁止用途。
 - `domains/disembodied-cns/` 负责去具身外部维持型中枢生命系统的高层架构建模，不提供实验操作协议。
 - `domains/memory-editing/` 负责记忆编辑的概念、证据、验证和伦理边界，不提供可执行神经操控步骤。
 - `domains/biostasis-cryopreservation/` 负责冷冻保存、生物停滞、休眠和等待未来修复路径。
@@ -513,6 +521,7 @@ human_infra/
 - 2026-06-26：新增 `web/` Observable Framework 应用，作为科研叙事、书籍转译、预测模型和交互图表的正式 Web 入口。
 - 2026-06-27：新增 `tools/arxiv_html_paper_tool.py` 与 `tools/arxiv-html-paper/`，把 arXiv HTML papers 前端框架沉淀为可复用 Astro 工具链。
 - 2026-06-29：新增可控度规等待室假设 working paper 入口和审计账本，把黑洞等待室收敛为固有时差分、退出采用、风险扣减和递归等待的可审查模型。
+- 2026-06-30：新增第三十五波 7 个感官、沟通与具身反馈连续性域，覆盖视觉眼健康、听力听觉沟通、前庭平衡空间定向、言语语言沟通、吞咽误吸营养、嗅味觉化学感知和周围神经躯体感觉。
 - 2026-06-30：新增农业生产、土壤土地、水资源、生态系统服务、野火韧性和物流冷链六个研究域，补齐初级生产、自然系统与物理流通底座。
 - 2026-06-30：新增海岸海洋蓝色经济、渔业水生食物、防洪工程安全、公共工程资产管理、城市土地使用规划和城市绿蓝基础设施六个研究域，补齐自然-工程-城市交界底座。
 - 2026-06-30：新增电网可靠性、水务污水公用事业、燃料热能服务、公共交通运营、关键基础设施生命线互依赖和公用事业可负担性断供保护六个研究域，补齐公用事业生命线连续性底座。

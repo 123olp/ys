@@ -51,3 +51,4 @@ Current decisions:
 - `0036-add-thirty-second-wave-research-evidence-infrastructure-domains.md`
 - `0037-add-thirty-third-wave-future-technology-continuity-domains.md`
 - `0038-add-thirty-fourth-wave-acute-neuro-continuity-domains.md`
+- `0039-add-thirty-fifth-wave-sensory-communication-continuity-domains.md`

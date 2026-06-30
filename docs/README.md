@@ -54,6 +54,7 @@ docs/
 │   ├── 0036-add-thirty-second-wave-research-evidence-infrastructure-domains.md
 │   ├── 0037-add-thirty-third-wave-future-technology-continuity-domains.md
 │   ├── 0038-add-thirty-fourth-wave-acute-neuro-continuity-domains.md
+│   ├── 0039-add-thirty-fifth-wave-sensory-communication-continuity-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -258,9 +259,16 @@ docs/
 149. Read `../domains/long-term-digital-preservation-format-migration/README.md` if you are working on long-term digital preservation, file formats, metadata, fixity, backups, migration, or future readability.
 150. Read `../domains/cerebrovascular-stroke-brain-perfusion-resilience/README.md` if you are working on stroke, brain perfusion, TIA, reperfusion windows, secondary prevention, or brain vascular resilience.
 151. Read `../domains/traumatic-brain-injury-neurotrauma-recovery/README.md` if you are working on traumatic brain injury, concussion, repeated head impacts, neurotrauma recovery, or long-term cognitive/emotional/sleep sequelae.
-152. Read `../domains/delirium-acute-cognitive-failure-prevention/README.md` if you are working on delirium, ICU or hospital acute cognitive failure, sedation, sleep disruption, infection, medications, or postoperative cognitive risk.
-153. Read `../domains/disorders-of-consciousness-coma-recovery/README.md` if you are working on coma, unresponsive wakefulness, minimally conscious state, consciousness assessment, recovery windows, surrogate decisions, or dignity of care.
-154. Read `../domains/epilepsy-seizure-network-stability/README.md` if you are working on epilepsy, seizures, brain-network excitability, seizure-related injury, SUDEP, stigma, or treatment continuity.
-155. Read `../domains/autonomic-nervous-system-homeostasis/README.md` if you are working on autonomic regulation, heart-rate and blood-pressure control, orthostatic intolerance, sweating, digestion, urination, or stress recovery.
-156. Read `../domains/migraine-headache-effective-time-burden/README.md` if you are working on migraine, headache disorders, sensory sensitivity, cognitive fog, attack unpredictability, or disability days.
-157. Enter a domain under `../domains/`.
+152. Read `../domains/delirium-acute-cognitive-failure-prevention/README.md` if you are working on delirium, acute cognitive failure, ICU/hospital cognitive risk, or prevention of acute subject disconnection.
+153. Read `../domains/disorders-of-consciousness-coma-recovery/README.md` if you are working on coma, vegetative/unresponsive wakefulness syndrome, minimally conscious state, recovery windows, or surrogate decision boundaries.
+154. Read `../domains/epilepsy-seizure-network-stability/README.md` if you are working on seizures, epilepsy, brain network stability, treatment continuity, injury risk, or participation limits.
+155. Read `../domains/autonomic-nervous-system-homeostasis/README.md` if you are working on autonomic regulation, orthostatic intolerance, heart-rate/blood-pressure control, sweating, digestion, bladder function, or stress recovery.
+156. Read `../domains/migraine-headache-effective-time-burden/README.md` if you are working on migraine, headache disorders, sensory sensitivity, cognitive fog, disability days, or effective-time burden.
+157. Read `../domains/vision-eye-health-continuity/README.md` if you are working on vision, eye health, visual impairment, low vision support, reading, mobility, or visual task participation.
+158. Read `../domains/hearing-auditory-communication-continuity/README.md` if you are working on hearing loss, auditory communication, tinnitus, hearing support, sound alerts, or communication fatigue.
+159. Read `../domains/vestibular-balance-spatial-orientation/README.md` if you are working on vestibular disorders, dizziness, balance, spatial orientation, falls, or mobility confidence.
+160. Read `../domains/speech-language-communication-continuity/README.md` if you are working on aphasia, dysarthria, apraxia of speech, communication participation, consent expression, or augmentative communication.
+161. Read `../domains/swallowing-dysphagia-aspiration-nutrition/README.md` if you are working on dysphagia, aspiration, swallowing safety, nutrition/hydration entry, feeding dignity, or aspiration pneumonia risk.
+162. Read `../domains/smell-taste-chemosensory-continuity/README.md` if you are working on smell, taste, chemosensory loss, hazard detection, appetite, nutrition, or quality of life.
+163. Read `../domains/peripheral-neuropathy-somatosensory-continuity/README.md` if you are working on peripheral neuropathy, touch, pain, proprioception, foot risk, somatosensory feedback, or fine motor feedback.
+164. Enter a domain under `../domains/`.

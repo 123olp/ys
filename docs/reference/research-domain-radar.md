@@ -231,6 +231,13 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `epilepsy-seizure-network-stability/` | 癫痫和发作网络稳定决定意识与行动窗口是否反复被脑网络兴奋性中断 |
 | `autonomic-nervous-system-homeostasis/` | 自主神经稳态决定心率血压、体位耐受、消化排尿、出汗和压力恢复能否支撑日常行动 |
 | `migraine-headache-effective-time-burden/` | 偏头痛和头痛障碍决定低死亡但高失能疾病如何吞噬学习、工作、关系和创造窗口 |
+| `vision-eye-health-continuity/` | 视觉和眼健康决定阅读、移动、安全判断、工作参与和独立生活是否仍有高带宽外部输入 |
+| `hearing-auditory-communication-continuity/` | 听力和听觉沟通决定语言、关系、服务理解、安全警报和社会参与是否不断线 |
+| `vestibular-balance-spatial-orientation/` | 前庭、平衡和空间定向决定主体能否稳定站立、行走、转身、外出和避免跌倒 |
+| `speech-language-communication-continuity/` | 言语语言沟通决定主体能否表达偏好、理解信息、求助、同意和参与社会关系 |
+| `swallowing-dysphagia-aspiration-nutrition/` | 吞咽安全决定营养水分能否进入身体而不转化为误吸、窒息、肺炎和尊严损害 |
+| `smell-taste-chemosensory-continuity/` | 嗅味觉和化学感知决定危险气味识别、食欲、营养、生活质量和低可见安全反馈 |
+| `peripheral-neuropathy-somatosensory-continuity/` | 周围神经和躯体感觉决定身体边界、保护性痛觉、步态反馈、足部风险和精细操作是否可用 |
 
 ## 来源信号
 
@@ -243,6 +250,13 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | NASA Human Research Program | 提示极端环境、空间飞行、辐射、隔离、医疗支持和人因风险可作为未来主体持续性场景 |
 | WHO Rehabilitation 2030 | 提示康复和功能恢复是健康系统核心组成，不只是医疗后处理 |
 | WHO Assistive Technology | 提示辅助技术可及性是功能持续和社会参与的关键基础设施 |
+| WHO / CDC / NEI vision health resources | 提示视觉损害和眼健康是阅读、移动、独立生活和安全判断的高带宽输入条件 |
+| WHO / NIDCD hearing resources | 提示听力损失和听觉沟通会影响语言参与、社交连接、认知负担和安全警报接收 |
+| NIDCD balance disorders / CDC STEADI | 提示前庭、平衡和跌倒风险把空间行动、外出能力和独立生活连接起来 |
+| NIDCD aphasia resources | 提示语言表达和理解能力决定主体偏好、同意、照护参与和社会角色能否被表达 |
+| NIDCD dysphagia resources | 提示吞咽安全把营养、水分、气道保护、误吸风险和进食尊严连接起来 |
+| NIDCD smell and taste disorder resources | 提示嗅味觉支撑危险气味识别、食欲、营养和生活质量 |
+| NINDS / NIDDK peripheral neuropathy resources | 提示周围神经和躯体感觉把身体边界、步态、足部风险、疼痛和伤口发现连接起来 |
 | WHO Antimicrobial Resistance | 提示耐药性会侵蚀现代医学和长期感染控制底座 |
 | WHO Vision and Hearing resources | 提示感官系统是主体感知、沟通和行动连续性的基础 |
 | CDC Sleep / NHLBI Sleep resources | 提示睡眠不足和节律失调会影响认知、慢病、心理和恢复能力 |
@@ -1021,6 +1035,20 @@ Source links:
 - https://www.ninds.nih.gov/health-information/disorders/migraine
 - https://www.thelancet.com/gbd
 - https://americanmigrainefoundation.org/
+- https://www.who.int/news-room/fact-sheets/detail/blindness-and-visual-impairment
+- https://www.cdc.gov/vision-health/
+- https://www.nei.nih.gov/learn-about-eye-health/eye-conditions-and-diseases
+- https://www.who.int/news-room/fact-sheets/detail/deafness-and-hearing-loss
+- https://www.nidcd.nih.gov/health/age-related-hearing-loss
+- https://www.nidcd.nih.gov/health/balance-disorders
+- https://www.cdc.gov/steadi/
+- https://www.nidcd.nih.gov/health/aphasia
+- https://www.nidcd.nih.gov/health/dysphagia
+- https://www.nidcd.nih.gov/health/smell-disorders
+- https://www.nidcd.nih.gov/health/taste-disorders
+- https://www.ninds.nih.gov/health-information/disorders/peripheral-neuropathy
+- https://www.niddk.nih.gov/health-information/diabetes/overview/preventing-problems/nerve-damage-diabetic-neuropathies
+- https://www.cdc.gov/diabetes/signs-symptoms/diabetes-and-your-feet.html
 
 ## 使用规则
 
