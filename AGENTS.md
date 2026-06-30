@@ -846,6 +846,7 @@ human_infra/
 - `domains/biostasis-cryopreservation/` 负责冷冻保存、生物停滞、休眠和等待未来修复路径。
 - `domains/cognitive-augmentation/` 负责 AI 辅助、外部记忆、学习系统、脑机接口和行动放大工具。
 - `domains/ai-agency-safety/` 负责 AI 代理、工具调用、授权、监督、审计、回滚和失效隔离。
+- `domains/ai-evaluation-benchmark-validity-continuity/`、`domains/ai-red-teaming-adversarial-testing-continuity/`、`domains/ai-incident-reporting-post-deployment-monitoring-continuity/`、`domains/ai-data-provenance-contamination-drift-continuity/`、`domains/synthetic-data-generation-validation-continuity/`、`domains/ai-model-supply-chain-provenance-release-continuity/`、`domains/ai-agent-tool-permission-sandbox-continuity/`、`domains/human-ai-oversight-handoff-accountability-continuity/` 和 `domains/ai-resource-cost-latency-budget-continuity/` 负责 AI 评测、红队、部署后监控、数据谱系、合成数据、模型供应链、agent 工具权限、人机交接问责和资源成本延迟预算这些 AI 运行治理连续性条件。
 - `domains/digital-identity-security/` 负责数字身份、账号、凭据、身份恢复、服务入口和数据可携带。
 - `domains/mental-health-affective-stability/` 负责心理健康、情绪稳定、动机、成瘾、创伤和自杀风险。
 - `domains/depression-mood-disorder-functioning-continuity/`、`domains/anxiety-stress-threat-regulation-continuity/`、`domains/trauma-ptsd-adversity-recovery-continuity/`、`domains/psychosis-reality-testing-community-continuity/`、`domains/bipolar-mood-episode-stability-continuity/`、`domains/adhd-executive-function-neurodevelopment-continuity/`、`domains/autism-neurodiversity-support-continuity/` 和 `domains/eating-disorders-nutrition-body-continuity/` 负责心理健康、神经发育与功能连续性，覆盖抑郁心境功能、焦虑压力威胁调节、创伤/PTSD 恢复、精神病性现实检验、双相情绪周期稳定、ADHD 执行功能、自闭神经多样性支持和进食障碍营养身体连续性。
@@ -975,3 +976,4 @@ human_infra/
 - 2026-07-01：新增第七十六波科研身份、持久标识与可复现研究基础设施研究域，覆盖 ORCID/ROR、DOI 元数据、FAIR 数据仓库、研究软件胶囊、预注册、实验协议版本、贡献者角色、利益冲突披露和研究产物保存。
 - 2026-07-01：新增第七十七波证据综合与指南转化连续性研究域，覆盖系统综述协议/检索/筛选、风险偏倚与批判性评价、Meta 分析与异质性、发表/报告偏倚、GRADE 证据确定性、证据到决策、指南评价/适配/本地化、活证据监测更新和快速综述/紧急证据分诊。
 - 2026-07-01：新增第七十八波科研纠错、出版完整性与科学传播连续性研究域，覆盖科研不端调查纠错、撤稿/表达关注/更正、预印本版本与公开评审、期刊编辑与同行评审完整性、掠夺性出版与 paper mill 检测、引用网络主张传播、科研指标激励、复制/复现/多实验室验证和科学传播证据转译。
+- 2026-07-01：新增第七十九波 AI 评测与运行治理连续性研究域，覆盖 AI 评测基准有效性、红队对抗测试、事故报告部署后监控、数据谱系污染漂移、合成数据验证、模型供应链发布、agent 工具权限沙箱、人机监督交接问责和 AI 资源成本延迟预算。

@@ -1,0 +1,52 @@
+# Human AI Oversight Handoff Accountability Continuity
+
+`human-ai-oversight-handoff-accountability-continuity/` 研究人类监督、交接、责任、升级路径、人工接管、解释、反事实检查和组织问责，如何让 Human Infra 中的 AI 增强不吞没主体判断权。
+
+> 核心问题：Human Infra 的目标是增强主体，不是让主体被自动化系统替代或架空。AI 参与越深，越需要清楚谁判断、谁确认、谁负责、何时交回人类。
+
+## 先验位置
+
+```text
+有效永生 / 主体持续性最大化
+  -> 需要 AI 协助判断、计划、研究、监控和行动
+  -> AI 的建议和自动化会改变人类注意力、责任和决策路径
+  -> 监督不清、交接失败和责任空洞会削弱主体行动权
+  -> 因此人机监督、交接与问责是 AI 增强主体而非替代主体的边界域
+```
+
+## 关注对象
+
+- Human-in-the-loop、human-on-the-loop、human override、handoff、escalation、accountability、appeal 和 contestability。
+- 自动化偏误、过度依赖、模式混淆、责任漂移、解释不足、AI 建议可追溯和人工最终确认。
+- 高风险场景中的监督资格、任务分工、异常升级、人工接管、记录保留和复盘。
+- 与 `automation-bias-mode-confusion-oversight-continuity/` 的关系：该域关注人因失效模式；本域关注 AI 系统中的监督、交接和问责结构。
+- 与 `handoff-checklist-procedure-reliability-continuity/` 的边界：交接清单域关注一般流程可靠性；本域关注 AI 参与决策后的责任与控制链。
+
+## Human Infra 模型链路
+
+```text
+人机监督、交接与问责 T
+  -> 改变人工确认、升级路径、责任归属、解释和申诉变量 X
+  -> 改变 AI 协作系统中的主体控制权、可追溯性和纠错状态 S
+  -> 改变过度依赖、责任真空、错误自动化和主体被动化风险 λ(t)
+  -> 影响主体判断权、行动连续性、协作信任和未来选择权
+```
+
+## 非目标
+
+- 不提供规避人工审核、操控审批、伪造授权、转移责任或压榨劳动者的流程。
+- 不把“有人类在场”写成有效监督，也不把 AI 解释写成责任替代。
+- 不输出法律合规结论、个案责任判断或自动化决策部署建议。
+
+## Source Signals
+
+- NIST AI Risk Management Framework: https://www.nist.gov/itl/ai-risk-management-framework
+- Guidelines for Human-AI Interaction: https://www.microsoft.com/en-us/research/publication/guidelines-for-human-ai-interaction/
+- National Academies Human-AI Teaming report: https://doi.org/10.17226/26355
+- EU AI Act information portal: https://artificialintelligenceact.eu/
+- ISO 9241-210 Human-centred design: https://www.iso.org/standard/77520.html
+
+## 下一步
+
+- 建立 Human-AI Handoff Card 字段：decision owner, AI role, human check, escalation trigger, override, appeal, record, accountability boundary。
+- 与 `automation-bias-mode-confusion-oversight-continuity/`、`ai-agent-tool-permission-sandbox-continuity/` 和 `handoff-checklist-procedure-reliability-continuity/` 建立交接接口。

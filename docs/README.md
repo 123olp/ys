@@ -628,4 +628,13 @@ docs/
 442. Read `../domains/research-metrics-incentives-assessment-continuity/README.md` if you are working on DORA, Leiden Manifesto, impact factor, H-index, Altmetrics, Goodhart risk, or responsible research assessment.
 443. Read `../domains/replication-reproducibility-many-labs-continuity/README.md` if you are working on replication, reproducibility, Many Labs, registered replication reports, reanalysis, robustness, or failed-replication context.
 444. Read `../domains/science-communication-evidence-translation-continuity/README.md` if you are working on science communication, risk communication, public understanding, press releases, uncertainty framing, or evidence translation.
-445. Enter a domain under `../domains/`.
+445. Read `../domains/ai-evaluation-benchmark-validity-continuity/README.md` if you are working on AI benchmarks, evaluation validity, contamination risk, task coverage, or metric interpretation.
+446. Read `../domains/ai-red-teaming-adversarial-testing-continuity/README.md` if you are working on AI red teaming, adversarial testing, threat modeling, mitigation validation, or residual risk.
+447. Read `../domains/ai-incident-reporting-post-deployment-monitoring-continuity/README.md` if you are working on AI incident reporting, post-deployment monitoring, drift alerts, correction actions, or recurrence checks.
+448. Read `../domains/ai-data-provenance-contamination-drift-continuity/README.md` if you are working on AI data provenance, contamination, distribution drift, representativeness, or data lineage.
+449. Read `../domains/synthetic-data-generation-validation-continuity/README.md` if you are working on synthetic data, privacy validation, utility testing, distribution fidelity, or downstream synthetic-to-real gaps.
+450. Read `../domains/ai-model-supply-chain-provenance-release-continuity/README.md` if you are working on model artifact provenance, weights, dependencies, release notes, signing, licensing, or deprecation.
+451. Read `../domains/ai-agent-tool-permission-sandbox-continuity/README.md` if you are working on AI agent tools, permission boundaries, sandboxing, human approval, audit logs, rollback, or abort gates.
+452. Read `../domains/human-ai-oversight-handoff-accountability-continuity/README.md` if you are working on human-AI oversight, handoff, escalation, override, accountability, appeal, or contestability.
+453. Read `../domains/ai-resource-cost-latency-budget-continuity/README.md` if you are working on AI token budgets, compute budgets, latency, rate limits, cost ceilings, caching, fallback, or resource governance.
+454. Enter a domain under `../domains/`.

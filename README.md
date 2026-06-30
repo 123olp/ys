@@ -789,6 +789,15 @@ flowchart TD
 | [Privacy Preserving Computation Federated Learning](domains/privacy-preserving-computation-federated-learning/README.md) | 隐私保护计算、差分隐私、联邦学习、安全多方计算和可信执行环境 | 让敏感主体数据在不被集中暴露的条件下支持研究、模型和审计 | 不提供再识别、模型反演、成员推断、隐私绕过、密码协议实现或生产参数建议 |
 | [Knowledge Graph Ontology Semantic Interoperability](domains/knowledge-graph-ontology-semantic-interoperability/README.md) | 知识图谱、本体、受控词表、语义互操作和 FAIR 知识结构 | 把多域变量、证据、风险和边界组织成可查询、可链接、可版本化的知识系统 | 不提供临床编码、保险编码、诊断映射、许可受限术语转储或自动事实证明 |
 | [Model Cards AI Audit Documentation](domains/model-cards-ai-audit-documentation/README.md) | 模型卡、数据说明、系统卡、AI 审计文档和用途限制 | 让模型、图表、仿真和 AI 输出可解释、可复核、可限制和可追责 | 不输出模型认证、营销背书、个人评分、寿命预测、医疗决策或合规豁免 |
+| [AI Evaluation Benchmark Validity Continuity](domains/ai-evaluation-benchmark-validity-continuity/README.md) | AI 评测、benchmark、污染风险、覆盖率和指标有效性 | 校准 AI 能力信号，防止把排行榜或单项分数当作真实任务可靠性 | 不提供刷榜、测试集污染、评测规避或能力认证结论 |
+| [AI Red Teaming Adversarial Testing Continuity](domains/ai-red-teaming-adversarial-testing-continuity/README.md) | AI 红队、安全测试、对抗性评估和缓解验证 | 在 AI 进入真实任务前暴露失效、滥用和危险能力边界 | 不提供越狱、提示注入 payload、漏洞利用、模型盗取或攻击步骤 |
+| [AI Incident Reporting Post Deployment Monitoring Continuity](domains/ai-incident-reporting-post-deployment-monitoring-continuity/README.md) | AI 事故报告、部署后监控、漂移告警和纠错学习 | 让 AI 运行后的失败、退化和复发风险进入可审查学习系统 | 不提供攻击复现、事故利用、泄露材料扩散或监管规避 |
+| [AI Data Provenance Contamination Drift Continuity](domains/ai-data-provenance-contamination-drift-continuity/README.md) | AI 数据来源、污染、漂移、代表性和版本治理 | 审查模型判断背后的数据地基，防止污染和漂移扭曲输出 | 不提供受限数据抓取、重新识别、来源隐匿或数据造假 |
+| [Synthetic Data Generation Validation Continuity](domains/synthetic-data-generation-validation-continuity/README.md) | 合成数据生成、隐私风险、效用验证和分布保真 | 把合成数据从“看起来可用”转为可审查研究材料 | 不提供隐私攻击、重新识别、合成数据洗白或合规保证 |
+| [AI Model Supply Chain Provenance Release Continuity](domains/ai-model-supply-chain-provenance-release-continuity/README.md) | 模型来源、权重、依赖、许可证、签名和发布治理 | 让 AI 模型 artifact 可追溯、可回滚、可替换和可可信消费 | 不提供模型盗取、供应链投毒、签名伪造、许可证规避或私有 artifact 抓取 |
+| [AI Agent Tool Permission Sandbox Continuity](domains/ai-agent-tool-permission-sandbox-continuity/README.md) | AI agent 工具权限、沙箱、审批、日志、回滚和中止 | 控制 AI 从回答者变成行动者后的真实副作用 | 不提供权限绕过、沙箱逃逸、凭证提取、prompt injection payload 或自动化滥用 |
+| [Human AI Oversight Handoff Accountability Continuity](domains/human-ai-oversight-handoff-accountability-continuity/README.md) | 人机监督、交接、人工接管、升级路径和问责 | 保持 AI 协作中的主体控制权、解释权和纠错权 | 不提供规避审核、伪造授权、转移责任或法律合规结论 |
+| [AI Resource Cost Latency Budget Continuity](domains/ai-resource-cost-latency-budget-continuity/README.md) | AI token、算力、延迟、费用、配额、缓存和降级预算 | 防止 AI 增强被成本、延迟、配额和资源瓶颈反向截断 | 不提供绕过计费、盗用算力、规避速率限制或云服务滥用方法 |
 | [Technology Foresight Horizon Scanning](domains/technology-foresight-horizon-scanning/README.md) | 技术预见、地平线扫描、弱信号、情景分析和早期预警 | 把未来技术窗口转成候选研究域、证据队列、场景假设和复核任务 | 不提供投资建议、市场时机、公司评级、技术必然性叙事或疗效断言 |
 | [Research Portfolio Prioritization Funding Governance](domains/research-portfolio-prioritization-funding-governance/README.md) | 研究组合、优先级设定、资金治理、价值信息和阶段门审查 | 把无限候选域按主体持续性影响、证据缺口、风险和学习价值排序 | 不提供基金申请操控、资助游说、投资建议、商业估值或机构背书 |
 | [Intellectual Property Technology Transfer Access](domains/intellectual-property-technology-transfer-access/README.md) | 知识产权、许可、技术转移、公共资助成果和技术可及性 | 区分技术成熟与主体实际可获得、可负担、可扩散之间的制度差异 | 不提供法律意见、专利策略、侵权分析、许可规避、商业秘密获取或商业估值 |
@@ -1852,5 +1861,6 @@ flowchart LR
 - 2026-07-01：新增第七十六波 9 个科研身份、持久标识与可复现研究基础设施域，覆盖 ORCID/ROR、DOI 元数据、FAIR 数据仓库、研究软件胶囊、预注册、实验协议版本、贡献者角色、利益冲突披露和研究产物保存。
 - 2026-07-01：新增第七十七波 9 个证据综合与指南转化连续性域，覆盖系统综述协议/检索/筛选、风险偏倚与批判性评价、Meta 分析与异质性、发表/报告偏倚、GRADE 证据确定性、证据到决策、指南评价/适配/本地化、活证据监测更新和快速综述/紧急证据分诊。
 - 2026-07-01：新增第七十八波 9 个科研纠错、出版完整性与科学传播连续性域，覆盖科研不端调查纠错、撤稿/表达关注/更正、预印本版本与公开评审、期刊编辑与同行评审完整性、掠夺性出版与 paper mill 检测、引用网络主张传播、科研指标激励、复制/复现/多实验室验证和科学传播证据转译。
+- 2026-07-01：新增第七十九波 9 个 AI 评测与运行治理连续性域，覆盖 AI 评测基准有效性、红队对抗测试、事故报告部署后监控、数据谱系污染漂移、合成数据验证、模型供应链发布、agent 工具权限沙箱、人机监督交接问责和 AI 资源成本延迟预算。
 
 完整记录见 [CHANGELOG.md](CHANGELOG.md)。

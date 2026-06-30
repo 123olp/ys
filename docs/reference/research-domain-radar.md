@@ -73,6 +73,15 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `incident-reporting-just-culture-learning-continuity/` | 事件报告和公正文化决定错误、险情和事故能否转化为组织学习 |
 | `automation-bias-mode-confusion-oversight-continuity/` | 自动化偏误、模式混淆和过度依赖会把工具增强转化为隐形失控 |
 | `alert-fatigue-interruption-signal-management-continuity/` | 告警疲劳和中断管理决定重要信号是否能穿透噪声并获得可靠响应 |
+| `ai-evaluation-benchmark-validity-continuity/` | AI 评测和 benchmark 有效性决定模型能力信号能否迁移到真实主体任务 |
+| `ai-red-teaming-adversarial-testing-continuity/` | AI 红队和对抗性测试决定失效、滥用和危险能力能否在部署前暴露 |
+| `ai-incident-reporting-post-deployment-monitoring-continuity/` | AI 事故报告和部署后监控决定真实运行失败能否转化为纠错学习 |
+| `ai-data-provenance-contamination-drift-continuity/` | AI 数据谱系、污染和漂移决定模型输出背后的数据地基是否可信 |
+| `synthetic-data-generation-validation-continuity/` | 合成数据生成与验证决定稀缺数据能否在隐私、效用和偏差边界内被复用 |
+| `ai-model-supply-chain-provenance-release-continuity/` | AI 模型供应链和发布治理决定模型 artifact 是否可追溯、可回滚、可替换 |
+| `ai-agent-tool-permission-sandbox-continuity/` | AI agent 工具权限和沙箱决定模型行动能力是否有边界、日志和中止机制 |
+| `human-ai-oversight-handoff-accountability-continuity/` | 人机监督、交接和问责决定 AI 增强是否保持主体控制权和纠错权 |
+| `ai-resource-cost-latency-budget-continuity/` | AI 资源、成本和延迟预算决定 AI 增强是否长期可负担、可预测、可持续 |
 | `substance-exposure-control/` | 烟草、酒精、成瘾性物质和有害暴露会同时改变风险函数与主体自主性 |
 | `health-literacy-navigation/` | 医疗和社会服务只有可理解、可导航、可复核时才会转化为主体收益 |
 | `oral-health-continuity/` | 口腔健康连接营养、疼痛、感染、沟通和社会参与 |
@@ -672,6 +681,14 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | WHO Social Determinants of Health | 提示资源、权力、生活环境、工作、社会条件对健康和持续性的基础作用 |
 | Healthy People 2030 SDOH framework | 提示经济稳定、教育、医疗可及、社区环境、社会与社区情境可作为资源基础设施维度 |
 | NIST AI Risk Management Framework | 提示 AI 系统需要从 govern、map、measure、manage 进入主体权利和认知增强治理 |
+| NIST AI RMF Generative AI Profile | 提示生成式 AI 需要针对内容、数据、评测、监控和治理建立专门 profile |
+| NIST Dioptra | 提示 AI 测试、评估、验证和确认需要可复现实验平台与风险度量工具 |
+| Stanford HELM / MLCommons AI Safety | 提示模型能力和安全评测需要多指标、多场景和可比较基准 |
+| MITRE ATLAS / OWASP LLM Top 10 | 提示 AI 红队、安全测试和 agent 工具风险需要分类、缓解和回归验证 |
+| OECD AI Incidents Monitor | 提示 AI 事故和 near miss 需要跨组织记录、分类和部署后监控 |
+| Data Provenance Initiative / Datasheets for Datasets | 提示训练数据、评测数据和合成数据必须保留来源、语境、许可和代表性边界 |
+| OpenSSF SLSA / Sigstore | 提示模型、代码、依赖和发布 artifact 需要供应链来源证明和签名治理 |
+| FinOps Foundation / Green Software Foundation | 提示 AI token、算力、延迟、能源和费用是主体增强系统的持续运行约束 |
 | NASA Human Research Program | 提示极端环境、空间飞行、辐射、隔离、医疗支持和人因风险可作为未来主体持续性场景 |
 | WHO Rehabilitation 2030 | 提示康复和功能恢复是健康系统核心组成，不只是医疗后处理 |
 | WHO Assistive Technology | 提示辅助技术可及性是功能持续和社会参与的关键基础设施 |

@@ -1440,6 +1440,24 @@ Human Infra 不能被设计成更精密的压榨系统。
 - 不收集、复制、处理或要求处方号、药历、诊断、药品清单、医保/保险 ID、prior authorization 文档、药房账户、DME 订单、氧疗设备参数、CPAP/BiPAP 数据、CGM 数据、血糖记录、胰岛素方案、儿童/残障/慢病身份、家庭地址、配送记录、支付信息或个案医疗/保险/药事材料。
 - 不替代医生、药师、护士、糖尿病教育者、呼吸治疗师、DME 供应商、保险计划、PBM、Medicare/CMS、FDA、DEA、CDC、AHRQ、毒物中心、急救服务、法律、执法、监管机构或官方申诉/求助渠道。
 
+## AI 评测与运行治理连续性边界
+
+`ai-evaluation-benchmark-validity-continuity`、`ai-red-teaming-adversarial-testing-continuity`、`ai-incident-reporting-post-deployment-monitoring-continuity`、`ai-data-provenance-contamination-drift-continuity`、`synthetic-data-generation-validation-continuity`、`ai-model-supply-chain-provenance-release-continuity`、`ai-agent-tool-permission-sandbox-continuity`、`human-ai-oversight-handoff-accountability-continuity` 和 `ai-resource-cost-latency-budget-continuity` 关注 AI 评测、红队、事故监控、数据谱系、合成数据、模型供应链、agent 工具权限、人机交接和资源预算如何让 AI 从单点能力展示变成可审查、可授权、可回滚、可负担的主体增强基础设施，不是攻击、绕过、模型盗取、凭证滥用、合规保证或自动化决策入口。
+
+可以做：
+
+- 整理 NIST AI RMF、NIST Generative AI Profile、NIST Dioptra、Stanford HELM、MLCommons AI Safety、MITRE ATLAS、OWASP LLM Top 10、OECD AI Incidents Monitor、Datasheets、SLSA、Sigstore、FinOps 和绿色软件资料中的机制、对象、变量和边界。
+- 比较 AI 评测、红队、部署后监控、数据谱系、合成数据验证、模型发布、agent 权限、人机监督和资源预算如何影响主体认知增强、任务自动化、有效时间、风险暴露和未来选择权。
+- 记录 AI 运行资料中的评测任务、指标、污染风险、失败类别、缓解状态、事故状态、数据来源、模型版本、权限粒度、审批门、日志、回滚、费用、延迟和降级策略。
+
+不能做：
+
+- 不提供 jailbreak、prompt injection payload、漏洞利用、模型盗取、模型权重绕权、供应链投毒、签名伪造、沙箱逃逸、凭证提取、云服务攻击、计费绕过、速率限制规避、数据泄露利用、重新识别、成员推断、合成数据洗白、刷榜、评测污染、攻击复现或红队规避方法。
+- 不判断某个模型、agent、供应商、云服务、数据集、benchmark、事故、许可证、合成数据、部署方案、审批流程、费用预算或人机责任结构是否应在真实组织中采用。
+- 不生成攻击脚本、越狱样例、payload、社工话术、模型抓取流程、供应链规避方案、权限绕过流程、incident exploit、云成本规避、采购建议、合规意见、法律文件、生产部署架构或个体自动化决策。
+- 不收集、复制、处理或要求 API key、token、cookie、模型私有权重、私有 benchmark、内部红队报告、泄露数据、受限训练数据、云账单、组织日志、事故证据、私有构建日志、用户提示、个人敏感数据、医疗/法律/金融资料或员工监控数据。
+- 不替代组织安全团队、法律、合规、隐私官、AI governance board、监管机构、事故响应团队、云服务商、模型供应商、审计机构、采购团队或人类责任主体。
+
 ## 数据与证据边界
 
 - 原始数据、清洗数据和人工判断必须分层保存。

@@ -553,6 +553,15 @@
 - `incident-reporting-just-culture-learning-continuity/`：事件报告与公正文化学习连续性，整理 incident reporting、near miss、just culture、RCA2、纠正措施和学习系统。
 - `automation-bias-mode-confusion-oversight-continuity/`：自动化偏误、模式混淆与监督连续性，整理 automation bias、mode confusion、overreliance、human override 和 meaningful human oversight。
 - `alert-fatigue-interruption-signal-management-continuity/`：告警疲劳、中断与信号管理连续性，整理 alert/alarm fatigue、notification fatigue、interruptions、signal prioritization 和 escalation routing。
+- `ai-evaluation-benchmark-validity-continuity/`：AI 评测与基准有效性连续性，整理 benchmark、任务覆盖、污染风险、指标有效性和能力边界。
+- `ai-red-teaming-adversarial-testing-continuity/`：AI 红队与对抗性测试连续性，整理红队范围、威胁模型、失效样本、缓解验证和剩余风险。
+- `ai-incident-reporting-post-deployment-monitoring-continuity/`：AI 事故报告与部署后监控连续性，整理事件、near miss、漂移告警、纠正措施和复发检查。
+- `ai-data-provenance-contamination-drift-continuity/`：AI 数据谱系、污染与漂移连续性，整理数据来源、许可、污染检测、代表性和生产漂移。
+- `synthetic-data-generation-validation-continuity/`：合成数据生成与验证连续性，整理隐私风险、效用验证、分布保真、偏差扩散和下游影响。
+- `ai-model-supply-chain-provenance-release-continuity/`：AI 模型供应链、来源证明与发布连续性，整理模型 artifact、权重、依赖、签名、许可证和撤回。
+- `ai-agent-tool-permission-sandbox-continuity/`：AI agent 工具权限与沙箱连续性，整理最小权限、审批、审计日志、回滚和中止条件。
+- `human-ai-oversight-handoff-accountability-continuity/`：人机监督、交接与问责连续性，整理人工接管、升级路径、责任归属、解释和申诉。
+- `ai-resource-cost-latency-budget-continuity/`：AI 资源、成本与延迟预算连续性，整理 token、算力、延迟、配额、缓存、降级和费用上限。
 - `governance-rights/`：治理与主体权利，整理同意、退出、数据权、法律身份、AI 治理和研究伦理。
 - `pain-suffering-control/`：疼痛与痛苦控制，整理慢性疼痛、症状负担、姑息医学和可承受持续性。
 - `health-literacy-navigation/`：健康素养与服务导航，整理可理解信息、风险沟通、共同决策和系统入口。

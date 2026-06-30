@@ -1159,6 +1159,15 @@ risk-engineering
   -> incident-reporting-just-culture-learning-continuity
   -> automation-bias-mode-confusion-oversight-continuity
   -> alert-fatigue-interruption-signal-management-continuity
+  -> ai-evaluation-benchmark-validity-continuity
+  -> ai-red-teaming-adversarial-testing-continuity
+  -> ai-incident-reporting-post-deployment-monitoring-continuity
+  -> ai-data-provenance-contamination-drift-continuity
+  -> synthetic-data-generation-validation-continuity
+  -> ai-model-supply-chain-provenance-release-continuity
+  -> ai-agent-tool-permission-sandbox-continuity
+  -> human-ai-oversight-handoff-accountability-continuity
+  -> ai-resource-cost-latency-budget-continuity
   -> health-literacy-navigation
   -> language-access-plain-communication
   -> substance-exposure-control
@@ -1167,6 +1176,23 @@ risk-engineering
 ```
 
 这组关系处理“主体如何避免被外部环境、制度和尾部风险截断”。
+
+```text
+ai-agency-safety
+  -> ai-evaluation-benchmark-validity-continuity
+  -> ai-red-teaming-adversarial-testing-continuity
+  -> ai-incident-reporting-post-deployment-monitoring-continuity
+  -> ai-data-provenance-contamination-drift-continuity
+  -> synthetic-data-generation-validation-continuity
+  -> ai-model-supply-chain-provenance-release-continuity
+  -> ai-agent-tool-permission-sandbox-continuity
+  -> human-ai-oversight-handoff-accountability-continuity
+  -> ai-resource-cost-latency-budget-continuity
+  -> cognitive-augmentation
+  -> measurement-feedback
+```
+
+这组关系处理“AI 如何从单点能力展示变成可评测、可测试、可监控、可追溯、可授权、可交接、可负担的主体增强基础设施”。
 
 ```text
 mental-health-affective-stability

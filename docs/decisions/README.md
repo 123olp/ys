@@ -95,3 +95,4 @@ Current decisions:
 - `0080-add-seventy-sixth-wave-research-identity-reproducibility-infrastructure-domains.md`
 - `0081-add-seventy-seventh-wave-evidence-synthesis-guideline-translation-domains.md`
 - `0082-add-seventy-eighth-wave-research-correction-scientific-integrity-domains.md`
+- `0083-add-seventy-ninth-wave-ai-evaluation-operations-governance-domains.md`
