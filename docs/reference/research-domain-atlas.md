@@ -230,6 +230,14 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 校园心理危机必须有恢复路径 | `campus-mental-health-crisis-student-support-continuity/` | 咨询、危机响应、休学返校、同伴支持、社区转介、隐私同意 | 心理危机、孤立和服务容量不足会截断学习、安全、关系和返校路径 |
 | 校园安全与民权程序必须可信 | `campus-safety-title-ix-clery-continuity/` | Title IX、Clery、校园犯罪数据、预警、支持性措施、安全报告 | 伤害、报复、报告失信或安全通知失败会制造恐惧缺勤、创伤和制度退出 |
 | 国际学生身份必须与学籍同步 | `international-student-sevis-status-continuity/` | SEVIS、I-20、DSO、课程负荷、CPT/OPT、旅行签注、身份维护 | 记录错误、授权误解或期限错过会把学习、工作、旅行和居留路径转成身份风险 |
+| 邮箱恢复入口必须可达 | `email-account-recovery-continuity/` | 邮箱账号、恢复邮箱、密码重置、通知、邮件归档、账号接管风险 | 邮箱丢失或被接管会切断医疗、金融、教育、工作、政府和平台账号恢复链 |
+| 手机号控制权必须稳定 | `phone-number-sim-portability-account-security-continuity/` | 手机号、SIM/eSIM、携号转网、短信验证、运营商账号、SIM swap | 号码丢失、被转出或停机会连带破坏通信、验证、通知和多账户恢复 |
+| 强认证必须可恢复 | `mfa-passkey-credential-recovery-continuity/` | MFA、passkey、硬件密钥、恢复码、可信设备、凭证生命周期 | 强认证若无恢复路径，会把安全工具变成不可恢复锁定和服务排除 |
+| 机密凭证库必须可继承可迁移 | `password-manager-secret-vault-continuity/` | 密码管理器、密钥库、恢复密钥、紧急访问、共享保险库 | 密码库单点失效会让分散账号、家庭代理、团队交接和数字遗产同时断裂 |
+| 数字资料必须可恢复可导出 | `cloud-backup-file-sync-data-portability-continuity/` | 云存储、文件同步、备份、版本历史、数据导出、格式迁移 | 误删、勒索、账号停权或供应商锁定会摧毁作品、证据、记忆和恢复资料 |
+| 联系人图谱必须可迁移 | `messaging-contact-graph-portability-continuity/` | 消息账号、联系人、群组、聊天历史、备份导出、互操作 | 账号停权、设备丢失或平台锁定会切断协作、照护、求助和社会支持网络 |
+| 公共数字地址必须长期可达 | `domain-dns-web-presence-continuity/` | 域名、DNS、注册商、续费、证书、托管、邮箱域、Web 可达性 | 域名过期、DNS 劫持、证书失效或托管中断会让作品、社区和邮件入口消失 |
+| 平台准入必须可申诉可退出 | `platform-account-suspension-appeals-continuity/` | 账号停权、内容移除、申诉、透明度、收入冻结、数据退出 | 错误停权和申诉失败会切断创作、商业、学习、社交和社区参与 |
 | 栖居空间可保护生命 | `building-fire-life-safety-codes/` | 建筑规范、消防规范、疏散、烟雾报警、无障碍、结构韧性 | 居住、照护、学习、工作和公共空间成为火灾、烟雾、结构和疏散风险源 |
 | 关键物质系统可制造修复 | `manufacturing-repair-capacity/` | 制造、维修、维护、备件、质量、本地生产、关键设备恢复 | 设备损坏、备件短缺、质量缺陷和生产能力不足导致服务与工具系统失效 |
 | 公共预算可转化为服务 | `public-procurement-contracting-capacity/` | 公共采购、合同、供应商管理、应急采购、透明度、交付验收 | 有预算和政策但采购失败、合同失效、腐败、延误或劣质交付 |
@@ -553,6 +561,14 @@ risk-engineering
   -> campus-mental-health-crisis-student-support-continuity
   -> campus-safety-title-ix-clery-continuity
   -> international-student-sevis-status-continuity
+  -> email-account-recovery-continuity
+  -> phone-number-sim-portability-account-security-continuity
+  -> mfa-passkey-credential-recovery-continuity
+  -> password-manager-secret-vault-continuity
+  -> cloud-backup-file-sync-data-portability-continuity
+  -> messaging-contact-graph-portability-continuity
+  -> domain-dns-web-presence-continuity
+  -> platform-account-suspension-appeals-continuity
   -> community-resource-navigation
   -> social-determinants-community-vulnerability
   -> public-service-design-accessibility

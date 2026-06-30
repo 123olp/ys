@@ -67,6 +67,7 @@ docs/
 │   ├── 0049-add-forty-fifth-wave-legal-status-coercive-process-continuity-domains.md
 │   ├── 0050-add-forty-sixth-wave-school-service-continuity-domains.md
 │   ├── 0051-add-forty-seventh-wave-postsecondary-student-continuity-domains.md
+│   ├── 0052-add-forty-eighth-wave-digital-account-continuity-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -361,4 +362,12 @@ docs/
 239. Read `../domains/campus-mental-health-crisis-student-support-continuity/README.md` if you are working on campus counseling, student mental health, crisis response, leave/re-entry, peer support, or student recovery continuity.
 240. Read `../domains/campus-safety-title-ix-clery-continuity/README.md` if you are working on campus safety, Title IX, sexual misconduct response, Clery Act, campus crime reporting, emergency notification, or supportive-measure continuity.
 241. Read `../domains/international-student-sevis-status-continuity/README.md` if you are working on SEVIS, F/M student status, I-20, DSO reporting, CPT/OPT, travel signature, or international-student status continuity.
-242. Enter a domain under `../domains/`.
+242. Read `../domains/email-account-recovery-continuity/README.md` if you are working on email account access, recovery email, password reset, service notifications, account takeover, or email-based recovery continuity.
+243. Read `../domains/phone-number-sim-portability-account-security-continuity/README.md` if you are working on phone number control, SIM/eSIM, port-out, SIM swap, SMS verification, carrier accounts, or phone-based recovery continuity.
+244. Read `../domains/mfa-passkey-credential-recovery-continuity/README.md` if you are working on MFA, passkeys, security keys, authenticator apps, recovery codes, trusted devices, or credential recovery continuity.
+245. Read `../domains/password-manager-secret-vault-continuity/README.md` if you are working on password managers, secret vaults, recovery keys, emergency access, shared vaults, or credential portfolio continuity.
+246. Read `../domains/cloud-backup-file-sync-data-portability-continuity/README.md` if you are working on cloud storage, file sync, backup, version history, data export, format migration, or data portability continuity.
+247. Read `../domains/messaging-contact-graph-portability-continuity/README.md` if you are working on messaging accounts, contacts, groups, chat history, backup/export, interoperability, or social graph continuity.
+248. Read `../domains/domain-dns-web-presence-continuity/README.md` if you are working on domain names, DNS, registrar accounts, TLS certificates, hosting, custom email domains, or web presence continuity.
+249. Read `../domains/platform-account-suspension-appeals-continuity/README.md` if you are working on platform account suspension, content removal, moderation appeals, transparency, creator/merchant accounts, or platform exit continuity.
+250. Enter a domain under `../domains/`.

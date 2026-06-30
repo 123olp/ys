@@ -60,6 +60,7 @@ docs/
 │   ├── 0049-add-forty-fifth-wave-legal-status-coercive-process-continuity-domains.md
 │   ├── 0050-add-forty-sixth-wave-school-service-continuity-domains.md
 │   ├── 0051-add-forty-seventh-wave-postsecondary-student-continuity-domains.md
+│   ├── 0052-add-forty-eighth-wave-digital-account-continuity-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -169,6 +170,7 @@ docs/
 - `domains/citizenship-nationality-statelessness-continuity/`、`domains/immigration-status-residency-work-authorization-continuity/`、`domains/asylum-refugee-protection-status-continuity/`、`domains/detention-custody-confinement-status-continuity/`、`domains/civil-commitment-involuntary-treatment-rights-continuity/`、`domains/court-notice-service-process-default-judgment-continuity/` 和 `domains/criminal-record-relief-collateral-consequences-continuity/`：第四十五波正式研究域，分别承载公民国籍无国籍、移民居留工作授权、庇护难民保护、拘押羁押监管状态、非自愿治疗权利、法院通知缺席判决和犯罪记录附带后果连续性。
 - `domains/school-enrollment-attendance-continuity/`、`domains/special-education-iep-504-accommodation-continuity/`、`domains/school-meals-nutrition-access-continuity/`、`domains/school-health-services-chronic-condition-continuity/`、`domains/school-transportation-safe-routes-continuity/`、`domains/school-discipline-exclusion-restraint-continuity/`、`domains/school-mental-health-counseling-support-continuity/` 和 `domains/school-climate-bullying-violence-prevention-continuity/`：第四十六波正式研究域，分别承载入学出勤、特殊教育 IEP/504、校餐营养、学校健康服务、通学安全、纪律排除约束、学校心理健康和学校气候欺凌暴力预防连续性。
 - `domains/postsecondary-admissions-transfer-articulation-continuity/`、`domains/student-financial-aid-grant-scholarship-continuity/`、`domains/academic-advising-degree-progress-continuity/`、`domains/campus-basic-needs-student-support-continuity/`、`domains/campus-disability-accommodations-accessibility-continuity/`、`domains/campus-mental-health-crisis-student-support-continuity/`、`domains/campus-safety-title-ix-clery-continuity/` 和 `domains/international-student-sevis-status-continuity/`：第四十七波正式研究域，分别承载高等教育入学转学衔接、学生资助奖助学金、学业指导学位进度、校园基本需求、校园残障便利、校园心理危机支持、校园安全 Title IX/Clery 和国际学生 SEVIS 身份连续性。
+- `domains/email-account-recovery-continuity/`、`domains/phone-number-sim-portability-account-security-continuity/`、`domains/mfa-passkey-credential-recovery-continuity/`、`domains/password-manager-secret-vault-continuity/`、`domains/cloud-backup-file-sync-data-portability-continuity/`、`domains/messaging-contact-graph-portability-continuity/`、`domains/domain-dns-web-presence-continuity/` 和 `domains/platform-account-suspension-appeals-continuity/`：第四十八波正式研究域，分别承载邮箱账号恢复、手机号/SIM/携转安全、MFA/passkey 凭证恢复、密码管理器密钥库、云备份文件同步数据可携带、消息联系人图谱可携带、域名 DNS Web 存在和平台账号停权申诉连续性。
 - `reference/research-model-visualization-toolkit.md`：沉淀科研论文阅读、文献脊梁、模型工具、可视化标准和 Human Infra 定量页面实现路线。
 - `reference/source-card-system.md`：定义论文、书籍、工具、案例、标准和数据集进入项目之前的资料卡片制度。
 - `reference/domain-map.md`：定义根项目与子域的边界、迁移切片、主动不做和验证点。

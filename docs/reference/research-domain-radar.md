@@ -316,6 +316,14 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `campus-mental-health-crisis-student-support-continuity/` | 校园心理健康与危机支持决定压力、孤立、自伤风险和休学返校是否能进入恢复路径 |
 | `campus-safety-title-ix-clery-continuity/` | 校园安全、Title IX 和 Clery 决定伤害报告、支持性措施、安全通知和民权程序是否可信 |
 | `international-student-sevis-status-continuity/` | 国际学生 SEVIS 身份决定跨境学习、工作授权、旅行和居留路径是否与学籍同步 |
+| `email-account-recovery-continuity/` | 邮箱账号决定数字服务通知、密码重置、资料检索和多账户恢复是否仍可达 |
+| `phone-number-sim-portability-account-security-continuity/` | 手机号、SIM 和携转安全决定通信、短信验证、运营商控制和账号恢复通道是否稳定 |
+| `mfa-passkey-credential-recovery-continuity/` | MFA、passkey 和恢复码决定强认证是否同时具备抗接管能力和可恢复登录能力 |
+| `password-manager-secret-vault-continuity/` | 密码管理器和密钥库决定分散账号凭证、共享机密、紧急访问和数字继承是否可治理 |
+| `cloud-backup-file-sync-data-portability-continuity/` | 云备份、文件同步和数据导出决定资料、作品、证据、记忆和元数据是否可恢复可迁移 |
+| `messaging-contact-graph-portability-continuity/` | 消息联系人图谱决定协作、照护、求助、职业网络和社会支持是否会因平台断裂而丢失 |
+| `domain-dns-web-presence-continuity/` | 域名、DNS、证书和托管决定作品、组织、社区、邮箱域和公共链接是否长期可达 |
+| `platform-account-suspension-appeals-continuity/` | 平台账号停权与申诉决定创作、商业、学习、社交和社区参与是否存在可恢复退出路径 |
 
 ## 来源信号
 
@@ -367,6 +375,12 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | SAMHSA / ED / CDC college mental health resources | 提示高校心理健康支持需要同时处理咨询容量、危机响应、休学返校、隐私同意和社区转介 |
 | ED OCR Title IX / Campus Safety and Security / Clery resources | 提示校园安全、性骚扰暴力响应、支持性措施、犯罪数据、预警和安全报告会影响到场能力与归属 |
 | ICE SEVP / SEVIS / Study in the States / USCIS resources | 提示国际学生身份是学籍、课程负荷、学校报告、工作授权、旅行和移民状态的耦合系统 |
+| NIST Digital Identity Guidelines / CISA Secure Our World / FTC hacked account guidance | 提示邮箱、恢复通道、MFA、passkey、密码和账号恢复共同构成数字服务接入层 |
+| FCC SIM swap / port-out fraud / number portability materials | 提示手机号已经成为通信、短信验证和账号恢复基础设施，需要单独处理号码控制权风险 |
+| CISA ransomware backup guidance / NIST CSF / Data Transfer Initiative / Library of Congress digital preservation | 提示云备份、文件同步、数据导出、格式迁移和恢复演练决定资料与记忆是否可持续 |
+| Data Transfer Initiative / Digital Markets Act interoperability materials | 提示联系人图谱、消息历史、平台互操作和数据迁移会决定社会关系是否被平台锁定 |
+| ICANN / IANA / CISA DNS security resources | 提示域名、DNS、证书和托管是作品、项目、组织、邮箱域和公共链接的可达性底座 |
+| EU Digital Services Act / FTC platform consumer protection / OECD platform governance | 提示平台停权、内容移除、申诉、透明度、收入冻结和数据退出会影响主体行动边界 |
 | WHO Antimicrobial Resistance | 提示耐药性会侵蚀现代医学和长期感染控制底座 |
 | WHO Vision and Hearing resources | 提示感官系统是主体感知、沟通和行动连续性的基础 |
 | CDC Sleep / NHLBI Sleep resources | 提示睡眠不足和节律失调会影响认知、慢病、心理和恢复能力 |

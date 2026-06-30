@@ -882,6 +882,24 @@ Human Infra 不能被设计成更精密的压榨系统。
 - 不收集、复制、处理或要求学生姓名、学号、住址、定位、课程记录、成绩单、资助记录、贷款资料、收入资料、残障记录、健康记录、心理危机资料、性暴力事件细节、犯罪报告、护照、I-20、签证、SEVIS ID 或移民身份细节。
 - 不替代高校、招生办、registrar、financial aid office、academic advisor、basic needs office、disability services、counseling center、campus safety、Title IX office、international student office、DHS/ICE/SEVP、USCIS、State Department、税务人员、律师、医疗人员、危机服务、执法或官方申诉渠道。
 
+## 数字账户与通信可达连续性边界
+
+`email-account-recovery-continuity`、`phone-number-sim-portability-account-security-continuity`、`mfa-passkey-credential-recovery-continuity`、`password-manager-secret-vault-continuity`、`cloud-backup-file-sync-data-portability-continuity`、`messaging-contact-graph-portability-continuity`、`domain-dns-web-presence-continuity` 和 `platform-account-suspension-appeals-continuity` 关注数字账户、通信地址、凭证、资料、联系人、域名和平台准入如何影响主体行动连续性，不是个人账号恢复、绕过验证、黑客、取证、平台申诉、法律或安全事件处置入口。
+
+可以做：
+
+- 整理 NIST、CISA、FTC、FCC、FIDO Alliance、Data Transfer Initiative、ICANN、IANA、DSA/OECD 和主要平台公开资料中的机制、对象、变量和边界。
+- 比较邮箱、手机号、MFA/passkey、密码库、云备份、消息联系人、域名/DNS 和平台账号如何分别影响登录、通知、恢复、迁移、关系、作品、收入和退出能力。
+- 记录账号、验证码、密钥、恢复码、联系方式、聊天记录、联系人、云文件、域名控制台、平台后台、收入数据、身份文件和安全事件细节的隐私与禁止用途边界。
+
+不能做：
+
+- 不提供个人邮箱找回、号码找回、SIM swap 处置、MFA 绕过、passkey 导出、密码恢复、保险库迁移、云盘恢复、文件解密、聊天恢复、联系人抓取、DNS 修改、证书配置、域名抢注、平台申诉文案、规避封禁、法律策略或安全事件处置建议。
+- 不判断某个账号、号码、域名、密码库、云资料、聊天记录、平台停权、内容移除、收入冻结、DNS 配置或申诉案件应如何处理。
+- 不生成账号恢复材料、平台申诉、封禁规避方案、社工话术、钓鱼内容、验证码转发、绕过 MFA 的步骤、DNS 操作步骤、取证报告、勒索谈判、法律文件或个案策略。
+- 不收集、复制、处理或要求邮箱、手机号、验证码、密码、恢复码、passkey、私钥、保险库导出、云文件、聊天内容、联系人、账号 ID、域名控制台、API token、证书私钥、平台后台截图、收入数据或安全事件细节。
+- 不替代邮箱服务商、运营商、身份验证服务商、密码管理器、云服务商、消息平台、注册商、DNS/CA/托管商、平台支持、组织 IT、安全团队、律师、执法、监管机构或官方申诉渠道。
+
 ## 数据与证据边界
 
 - 原始数据、清洗数据和人工判断必须分层保存。

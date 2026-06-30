@@ -297,6 +297,14 @@
 - `campus-mental-health-crisis-student-support-continuity/`：校园心理健康、危机与学生支持连续性，整理咨询、危机响应、休学返校、同伴支持、转介和隐私同意。
 - `campus-safety-title-ix-clery-continuity/`：校园安全、Title IX 与 Clery 连续性，整理性骚扰暴力响应、支持性措施、校园犯罪数据、预警和安全报告。
 - `international-student-sevis-status-continuity/`：国际学生 SEVIS 身份连续性，整理 SEVIS、I-20、DSO、课程负荷、CPT/OPT、旅行签注和身份维护。
+- `email-account-recovery-continuity/`：邮箱账号恢复连续性，整理邮箱账号、恢复邮箱、密码重置、通知入口、邮件归档和账号接管风险。
+- `phone-number-sim-portability-account-security-continuity/`：手机号、SIM 与携转账号安全连续性，整理号码控制、SIM/eSIM、携号转网、短信验证、运营商账号和 SIM swap 风险。
+- `mfa-passkey-credential-recovery-continuity/`：MFA、passkey 与凭证恢复连续性，整理强认证、硬件密钥、恢复码、可信设备和凭证生命周期。
+- `password-manager-secret-vault-continuity/`：密码管理器与密钥库连续性，整理密码库、恢复密钥、紧急访问、共享保险库和机密迁移。
+- `cloud-backup-file-sync-data-portability-continuity/`：云备份、文件同步与数据可携带连续性，整理云存储、同步、备份、版本历史、数据导出和格式迁移。
+- `messaging-contact-graph-portability-continuity/`：消息与联系人图谱可携带连续性，整理消息账号、联系人、群组、聊天历史、备份导出和互操作。
+- `domain-dns-web-presence-continuity/`：域名、DNS 与 Web 存在连续性，整理域名、DNS、注册商、续费、证书、托管、邮箱域和 Web 可达性。
+- `platform-account-suspension-appeals-continuity/`：平台账号停权与申诉连续性，整理账号停权、内容移除、申诉、透明度、收入冻结和数据退出。
 - `supply-chain-continuity/`：供应链连续性，整理关键物资、服务、物流、替代路径和恢复时间。
 - `synthetic-biology-biosecurity/`：合成生物学与生物安全，整理双重用途、生物安全、生物安保和治理边界。
 - `space-extreme-habitation/`：空间与极端栖居，整理辐射、微重力、隔离、闭环资源和远程医疗风险。

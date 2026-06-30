@@ -64,3 +64,4 @@ Current decisions:
 - `0049-add-forty-fifth-wave-legal-status-coercive-process-continuity-domains.md`
 - `0050-add-forty-sixth-wave-school-service-continuity-domains.md`
 - `0051-add-forty-seventh-wave-postsecondary-student-continuity-domains.md`
+- `0052-add-forty-eighth-wave-digital-account-continuity-domains.md`
