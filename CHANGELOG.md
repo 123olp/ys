@@ -26,6 +26,7 @@ All notable repository structure changes are recorded here.
 - Added twenty-first-wave structural-vulnerability and care-continuity domain skeletons for rural health access/geographic equity, homelessness/unsheltered health continuity, correctional health/reentry continuity, disability services/independent living, dementia/cognitive decline care continuity, and chronic infectious disease care continuity.
 - Added twenty-second-wave crisis, exploitation, and recovery-continuity domain skeletons for suicide crisis response continuity, substance-use treatment/recovery continuity, elder justice/adult protective services, child protection/family safety, fraud/scams consumer protection, and online safety/digital harm prevention.
 - Added twenty-third-wave complex care navigation, transition, and decision-continuity domain skeletons for rare disease diagnostic odyssey/care coordination, multimorbidity/polypharmacy care coordination, care transitions/discharge continuity, home health/hospice/palliative care continuity, medical interpreter/cultural mediation, and patient advocacy/shared decision-making.
+- Added twenty-fourth-wave externalized subject-continuity domain skeletons for life logging/personal archives continuity, digital legacy/data succession, wearables/continuous sensing personal informatics, personal knowledge management/cognitive offloading, brain-computer interface/neurotechnology governance, and robotics/embodied assistance care automation.
 
 ## 2026-06-29
 

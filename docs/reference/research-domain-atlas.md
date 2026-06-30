@@ -172,6 +172,12 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 严重疾病可被居家和缓和系统接住 | `home-health-hospice-palliative-care-continuity/` | 居家医疗、缓和医疗、安宁疗护、症状负担、目标照护、照护者支持 | 长寿退化为不可承受痛苦、照护者崩溃、目标失配和尊严丧失 |
 | 临床语言和文化接口可理解 | `medical-interpreter-cultural-mediation/` | 医疗解释、语言协助、CLAS、LEP、文化中介、同意理解 | 风险、同意、治疗和随访信息失真，导致误诊、误用药、失访和权利失效 |
 | 主体偏好能进入医疗决策 | `patient-advocacy-shared-decision-making/` | 患者倡导、共同决策、决策辅助、主体偏好、治疗负担、知情同意 | 信息不对称、被动同意、目标不匹配和治疗负担让医疗路径偏离主体未来选择权 |
+| 主体历史可长期保存 | `life-logging-personal-archives-continuity/` | 生命日志、个人档案、元数据、备份、迁移、长期可读性 | 病史、作品、偏好、证据链和项目上下文丢失，长期主体解释能力下降 |
+| 数字资产和权限可交接 | `digital-legacy-data-succession/` | 数字遗产、账号继承、受托访问、失能代理、资料交接 | 失能、死亡或账号丢失时资料、权益、作品和长期项目断裂或被滥用 |
+| 主体状态可连续观测 | `wearables-continuous-sensing-personal-informatics/` | 可穿戴、连续监测、自我追踪、远程数据采集、反馈闭环 | 风险偏移、恢复不足和行为反馈不可见，主体只能在损害显性化后反应 |
+| 认知上下文可外部承载 | `personal-knowledge-management-cognitive-offloading/` | 外部记忆、笔记、检索、知识库、AI 助手、项目上下文恢复 | 工作记忆负担、重复解释、知识丢失和项目重启成本侵蚀创造密度 |
+| 神经接口可被安全治理 | `brain-computer-interface-neurotechnology-governance/` | BCI、神经记录、刺激、解码、神经数据、设备安全、神经伦理 | 高带宽接口变成神经数据滥用、身份边界混乱、不可逆设备风险和强制控制 |
+| 物理行动可被具身辅助 | `robotics-embodied-assistance-care-automation/` | 机器人、外骨骼、家庭辅助、康复机器人、照护自动化 | 能力下降后移动、操作、康复和日常照护负担失控，独立生活窗口缩短 |
 | 高成本风险可分摊 | `insurance-risk-transfer/` | 覆盖率、保费、自付、理赔、拒赔、风险池、保障缺口 | 疾病、失业、工伤、残障、灾害或养老金风险由个体独自承担 |
 | 托育和家庭运行可持续 | `childcare-family-continuity/` | 托育可及、费用、质量、早期发展、父母工作连续性、家庭压力 | 儿童发展受损、照护者工作中断、时间贫困和家庭压力升级 |
 | 应急响应可接住主体 | `emergency-preparedness-response/` | 灾害准备、预警、应急通信、急救医疗、安置、公共卫生应急、恢复 | 低频高冲击事件一次性清零长期积累，通信、医疗、撤离或恢复失败 |
@@ -350,6 +356,12 @@ risk-engineering
   -> home-health-hospice-palliative-care-continuity
   -> medical-interpreter-cultural-mediation
   -> patient-advocacy-shared-decision-making
+  -> life-logging-personal-archives-continuity
+  -> digital-legacy-data-succession
+  -> wearables-continuous-sensing-personal-informatics
+  -> personal-knowledge-management-cognitive-offloading
+  -> brain-computer-interface-neurotechnology-governance
+  -> robotics-embodied-assistance-care-automation
   -> insurance-risk-transfer
   -> childcare-family-continuity
   -> emergency-preparedness-response

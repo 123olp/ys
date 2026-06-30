@@ -118,6 +118,12 @@
 - `home-health-hospice-palliative-care-continuity/`：居家医疗、缓和医疗、安宁疗护与临终连续性，整理严重疾病、症状负担、家庭照护、目标照护和可承受持续性。
 - `medical-interpreter-cultural-mediation/`：医疗解释、语言可达与文化中介，整理医疗解释服务、CLAS、LEP、知情同意理解和临床沟通安全。
 - `patient-advocacy-shared-decision-making/`：患者倡导与共同决策，整理患者参与、决策辅助、主体偏好、治疗负担、知情同意和未来选择权。
+- `life-logging-personal-archives-continuity/`：生命日志、个人档案与资料连续性，整理个人数字归档、生命日志、元数据、备份、迁移和长期可读性。
+- `digital-legacy-data-succession/`：数字遗产、数据继承与账号连续性，整理数字资产、受托访问、账号恢复、失能代理和资料交接。
+- `wearables-continuous-sensing-personal-informatics/`：可穿戴、连续感知与个人信息学，整理传感器、自我追踪、远程数据采集、反馈闭环和数据质量。
+- `personal-knowledge-management-cognitive-offloading/`：个人知识管理与认知卸载，整理外部记忆、笔记、检索、知识库、AI 助手和项目上下文恢复。
+- `brain-computer-interface-neurotechnology-governance/`：脑机接口、神经技术与治理，整理神经记录、刺激、解码、神经数据、设备安全和神经伦理。
+- `robotics-embodied-assistance-care-automation/`：机器人、具身辅助与照护自动化，整理服务机器人、外骨骼、家庭辅助、康复机器人和照护自动化。
 - `insurance-risk-transfer/`：保险与风险转移，整理健康、失业、工伤、残障、灾害、存款、养老金等风险池和保障缺口。
 - `childcare-family-continuity/`：托育与家庭连续性，整理托育可及、费用、质量、早期儿童发展、父母工作连续性和家庭压力。
 - `emergency-preparedness-response/`：应急准备与响应，整理灾害准备、预警、应急通信、急救医疗、安置和恢复。

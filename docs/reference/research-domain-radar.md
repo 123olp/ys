@@ -163,6 +163,12 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `home-health-hospice-palliative-care-continuity/` | 居家医疗、缓和医疗和安宁疗护决定严重疾病阶段是否仍保持可承受、可照护、可表达目标的持续性 |
 | `medical-interpreter-cultural-mediation/` | 医疗解释和文化中介决定临床风险、同意、治疗和随访信息是否真正进入主体理解 |
 | `patient-advocacy-shared-decision-making/` | 患者倡导和共同决策决定主体偏好、证据、风险承受和治疗负担是否能进入医疗决策 |
+| `life-logging-personal-archives-continuity/` | 生命日志和个人档案决定主体历史、病史、作品、偏好、证据链和项目上下文是否能长期保存与迁移 |
+| `digital-legacy-data-succession/` | 数字遗产和数据继承决定失能、死亡、账号丢失或组织中断时资料、权限和长期项目是否断裂 |
+| `wearables-continuous-sensing-personal-informatics/` | 可穿戴和连续感知决定主体状态、恢复不足、环境暴露和行为反馈是否能成为可行动时间序列 |
+| `personal-knowledge-management-cognitive-offloading/` | 个人知识管理和认知卸载决定记忆、任务、资料和项目上下文能否跨时间被恢复和复用 |
+| `brain-computer-interface-neurotechnology-governance/` | 脑机接口和神经技术治理决定高带宽神经-工具接口能否扩展能力而不破坏同意、身份和神经隐私 |
+| `robotics-embodied-assistance-care-automation/` | 机器人和具身辅助决定工具增强能否从信息层进入移动、操作、康复和照护等物理行动层 |
 
 ## 来源信号
 
@@ -304,6 +310,12 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | CMS Home Health / CMS Hospice / NIA Palliative Care / WHO Palliative Care | 提示居家医疗、缓和医疗、安宁疗护和严重疾病照护需要独立审查可承受持续性、目标照护和照护者支持 |
 | HHS National CLAS / LEP.gov / HHS language access resources | 提示医疗解释、语言协助、文化适宜服务和知情同意理解是临床安全与权利保护的独立接口 |
 | AHRQ SHARE Approach / AHRQ Patient and Family Engagement / CMS person and family engagement | 提示患者倡导、共同决策、决策辅助和主体偏好是医疗路径能否贴合未来选择权的独立域 |
+| Library of Congress Personal Digital Archiving / NDSA Levels of Digital Preservation | 提示个人资料、生命日志、元数据、备份和长期可读性是记忆外化和主体历史连续性的独立基础设施 |
+| Uniform Law Commission RUFADAA / NIST Digital Identity Guidelines | 提示数字遗产、账号继承、受托访问、身份生命周期和账号恢复是死亡与失能边界下的独立连续性域 |
+| FDA Digital Health Technologies remote data acquisition / personal informatics literature | 提示可穿戴、连续感知、自我追踪和远程数据采集需要独立处理准确性、缺失数据、反馈和证据等级 |
+| Clark and Chalmers Extended Mind / Engelbart Augmenting Human Intellect / PKM literature | 提示外部记忆、知识库、检索和 AI 助手是认知增强之外的独立认知卸载与上下文恢复域 |
+| FDA BCI guidance / NIH BRAIN Initiative / neuroethics literature | 提示脑机接口、神经记录、刺激、解码、神经数据和设备安全需要独立神经技术治理域 |
+| NIST Robotics / assistive robotics and human-robot interaction literature | 提示机器人、外骨骼、具身辅助和照护自动化需要独立处理物理行动增强、安全、维护和责任边界 |
 
 Source links:
 
@@ -759,6 +771,15 @@ Source links:
 - https://thinkculturalhealth.hhs.gov/clas
 - https://www.lep.gov/
 - https://www.ahrq.gov/health-literacy/professional-training/shared-decision/index.html
+- https://digitalpreservation.gov/personalarchiving/
+- https://www.loc.gov/preservation/digital/
+- https://ndsa.org/publications/levels-of-digital-preservation/
+- https://www.uniformlaws.org/committees/community-home?CommunityKey=f7237fc4-74c2-4728-81c6-b39a91ecdf22
+- https://pages.nist.gov/800-63-4/
+- https://www.fda.gov/regulatory-information/search-fda-guidance-documents/digital-health-technologies-remote-data-acquisition-clinical-investigations
+- https://www.fda.gov/regulatory-information/search-fda-guidance-documents/implanted-brain-computer-interface-bci-devices-patients-paralysis-or-amputation-non-clinical-testing
+- https://braininitiative.nih.gov/
+- https://www.nist.gov/el/robotics
 
 ## 使用规则
 

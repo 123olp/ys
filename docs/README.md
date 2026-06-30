@@ -43,6 +43,7 @@ docs/
 │   ├── 0025-add-twenty-first-wave-rural-homelessness-correctional-disability-dementia-infectious-continuity-domains.md
 │   ├── 0026-add-twenty-second-wave-crisis-exploitation-recovery-domains.md
 │   ├── 0027-add-twenty-third-wave-complex-care-navigation-transition-decision-domains.md
+│   ├── 0028-add-twenty-fourth-wave-externalized-subject-continuity-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -184,4 +185,10 @@ docs/
 86. Read `../domains/home-health-hospice-palliative-care-continuity/README.md` if you are working on home health, serious illness care, palliative care, hospice, symptom burden, caregiver support, or goals-of-care systems.
 87. Read `../domains/medical-interpreter-cultural-mediation/README.md` if you are working on medical interpreting, language assistance, CLAS, LEP, culturally appropriate care, informed-consent understanding, or clinical communication access.
 88. Read `../domains/patient-advocacy-shared-decision-making/README.md` if you are working on patient advocacy, shared decision-making, decision aids, informed consent, patient participation, treatment burden, or preference-sensitive care.
-89. Enter a domain under `../domains/`.
+89. Read `../domains/life-logging-personal-archives-continuity/README.md` if you are working on life logging, personal digital archives, metadata, backup, migration, long-term readability, or personal history continuity.
+90. Read `../domains/digital-legacy-data-succession/README.md` if you are working on digital legacy, account succession, fiduciary access, disabled-agent access, data handoff, or digital asset continuity.
+91. Read `../domains/wearables-continuous-sensing-personal-informatics/README.md` if you are working on wearables, continuous sensing, self-tracking, remote data acquisition, personal informatics, or feedback loops.
+92. Read `../domains/personal-knowledge-management-cognitive-offloading/README.md` if you are working on personal knowledge management, cognitive offloading, external memory, notes, retrieval, knowledge bases, or AI-assisted context recovery.
+93. Read `../domains/brain-computer-interface-neurotechnology-governance/README.md` if you are working on brain-computer interfaces, neural recording, neural stimulation, neural data, neuroethics, or BCI governance.
+94. Read `../domains/robotics-embodied-assistance-care-automation/README.md` if you are working on robotics, embodied assistance, exoskeletons, care automation, service robots, or rehabilitation robots.
+95. Enter a domain under `../domains/`.

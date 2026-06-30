@@ -1,0 +1,51 @@
+# Wearables Continuous Sensing Personal Informatics
+
+可穿戴、连续感知与个人信息学域研究：主体如何通过可穿戴设备、家庭传感器、移动设备和自我追踪系统连续观察状态，并把信号转化为反馈、预警、行为调整和照护协作。
+
+## 对象
+
+- 可穿戴设备、连续监测、移动健康、远程数据采集、个人信息学和自我追踪。
+- 心率、睡眠、活动、血糖、血压、体温、呼吸、位置、跌倒、症状、用药和环境暴露信号。
+- 传感器准确性、校准、缺失数据、误报漏报、算法偏差、临床效用和用户负担。
+- 反馈闭环、风险预警、远程照护、个人实验、行为改变和长期状态建模。
+- 数据隐私、过度量化、焦虑、误读、医疗化、平台依赖和证据等级边界。
+
+## Human Infra 价值
+
+没有观测，主体只能在风险已经显性化后被动反应。连续感知域把“身体和环境状态”变成可反馈的时间序列：更早发现偏移，更快修正行为，更稳定连接医疗、AI 和自我管理系统。
+
+```text
+主体状态被连续感知
+  -> 风险偏移、恢复不足和行为反馈更早可见
+  -> 主体更容易调整睡眠、活动、用药、照护和环境暴露
+  -> 风险函数、有效寿命和长期行动能力获得更细粒度输入
+```
+
+## 边界
+
+本域只整理公开的可穿戴、连续监测、个人信息学、远程数据采集、传感器质量和反馈系统资料。
+
+不提供：
+
+- 个体诊断、治疗、用药调整、急诊判断、设备选购、算法解释或个人健康预测建议。
+- 将消费级传感器数据直接写成临床结论、死亡风险、寿命预测或保险/雇佣资格判断。
+- 规避设备安全、隐私、安全认证、数据授权或平台条款的操作。
+- 对具体设备、App、平台、算法或服务的背书。
+
+## 上游与下游
+
+- 上游：`measurement-feedback/`、`telehealth-remote-monitoring-access/`、`health-data-privacy-governance/`、`digital-inclusion-connectivity/`。
+- 下游：`longevity-evidence/`、`sleep-circadian-recovery/`、`physical-activity-mobility/`、`cognitive-augmentation/`。
+
+## 初始资料线索
+
+- FDA Digital Health Technologies for Remote Data Acquisition in Clinical Investigations guidance.
+- Personal informatics and lived informatics research literature.
+- NIST and standards materials related to sensor measurement, calibration and data quality.
+- Remote patient monitoring and digital health public materials.
+
+## 下一步
+
+- 建立连续感知变量表：测量对象、频率、准确性、校准、缺失、用户负担、反馈延迟、临床效用和隐私等级。
+- 整理 Source Cards：FDA DHT、personal informatics、sensor validation、RPM 和数字健康证据边界。
+- 区分“个人反馈信号”“研究数据”“临床监测”和“监管级证据”，避免证据等级混用。

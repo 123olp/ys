@@ -143,6 +143,12 @@ human_infra/
     ├── home-health-hospice-palliative-care-continuity/ # 居家医疗、缓和医疗、安宁疗护与临终连续性
     ├── medical-interpreter-cultural-mediation/ # 医疗解释、语言可达与文化中介
     ├── patient-advocacy-shared-decision-making/ # 患者倡导与共同决策
+    ├── life-logging-personal-archives-continuity/ # 生命日志、个人档案与资料连续性
+    ├── digital-legacy-data-succession/ # 数字遗产、数据继承与账号连续性
+    ├── wearables-continuous-sensing-personal-informatics/ # 可穿戴、连续感知与个人信息学
+    ├── personal-knowledge-management-cognitive-offloading/ # 个人知识管理与认知卸载
+    ├── brain-computer-interface-neurotechnology-governance/ # 脑机接口、神经技术与治理
+    ├── robotics-embodied-assistance-care-automation/ # 机器人、具身辅助与照护自动化
     ├── insurance-risk-transfer/ # 保险与风险转移
     ├── childcare-family-continuity/ # 托育与家庭连续性
     ├── learning-skill-acquisition/ # 学习与技能获得
@@ -310,6 +316,12 @@ human_infra/
 - `domains/home-health-hospice-palliative-care-continuity/` 负责居家医疗、缓和医疗、安宁疗护、严重疾病、症状负担、家庭照护和目标照护。
 - `domains/medical-interpreter-cultural-mediation/` 负责医疗解释服务、语言协助、CLAS、LEP、文化中介、知情同意理解和临床沟通安全。
 - `domains/patient-advocacy-shared-decision-making/` 负责患者倡导、共同决策、决策辅助、主体偏好、治疗负担、知情同意和未来选择权。
+- `domains/life-logging-personal-archives-continuity/` 负责生命日志、个人数字档案、元数据、备份、迁移、长期可读性和主体历史资料连续性。
+- `domains/digital-legacy-data-succession/` 负责数字遗产、账号继承、数据授权、受托访问、失能代理、密钥依赖和资料交接。
+- `domains/wearables-continuous-sensing-personal-informatics/` 负责可穿戴、连续监测、个人信息学、自我追踪、远程数据采集和反馈闭环。
+- `domains/personal-knowledge-management-cognitive-offloading/` 负责个人知识管理、外部记忆、认知卸载、检索、知识库、AI 助手和项目上下文恢复。
+- `domains/brain-computer-interface-neurotechnology-governance/` 负责脑机接口、神经记录、刺激、解码、神经数据、设备安全和神经伦理治理。
+- `domains/robotics-embodied-assistance-care-automation/` 负责机器人、具身辅助、外骨骼、家庭辅助、康复机器人和照护自动化。
 - `domains/insurance-risk-transfer/` 负责健康、失业、工伤、残障、灾害、存款、养老金等风险转移和风险池。
 - `domains/childcare-family-continuity/` 负责托育可及、托育费用、照护质量、早期儿童发展、父母工作连续性和家庭压力。
 - `domains/emergency-preparedness-response/` 负责灾害准备、预警、应急通信、急救医疗、安置、公共卫生应急和灾后恢复。
@@ -378,6 +390,7 @@ human_infra/
 - 2026-06-27：新增 `tools/arxiv_html_paper_tool.py` 与 `tools/arxiv-html-paper/`，把 arXiv HTML papers 前端框架沉淀为可复用 Astro 工具链。
 - 2026-06-29：新增可控度规等待室假设 working paper 入口和审计账本，把黑洞等待室收敛为固有时差分、退出采用、风险扣减和递归等待的可审查模型。
 - 2026-06-30：新增复杂照护导航、交接与决策连续性域，覆盖罕见病诊断漫游、多病共存多重用药、出院交接、居家/缓和/安宁疗护、医疗解释文化中介和患者共同决策。
+- 2026-06-30：新增外部化主体连续性域，覆盖生命日志个人档案、数字遗产继承、可穿戴连续感知、个人知识管理认知卸载、脑机接口治理和机器人具身辅助。
 - 2026-06-30：新增 `domains/cellular-reprogramming/`，承载山中因子、部分重编程、化学重编程、AI 因子设计和表观遗传编辑的机制谱系与安全边界。
 - 2026-06-30：新增第十四波公共服务、应急、金融和就业相关域：社会决定因素与社区脆弱性、公共服务设计与可达性、应急预警与通信、灾后恢复与救济连续性、金融包容与支付系统、劳动力与就业服务。
 - 2026-06-30：新增 `docs/reference/research-domain-atlas.md` 和 10 个研究域骨架，把有效永生的先验条件映射为可独立维护的研究域。

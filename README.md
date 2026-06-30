@@ -199,6 +199,7 @@ flowchart LR
 | 结构性脆弱与连续照护断点 | HRSA Rural Health、USICH/HUD Homelessness、WHO Prison Health、ACL CIL、WHO Dementia、WHO HIV/TB/Hepatitis | 农村、无家可归、羁押重返、残障、认知衰退和慢性传染病场景中，主体是否仍能被服务系统持续接住 |
 | 危机、剥削与恢复连续性 | SAMHSA 988、FindTreatment.gov、ACL APS、Child Welfare Information Gateway、FTC scams、NCMEC CyberTipline | 自杀危机、成瘾恢复、老年/成人保护、儿童保护、诈骗和在线伤害能否被及时接住、报告、转介和恢复 |
 | 复杂照护导航、交接与决策连续性 | NIH GARD、FDA Rare Diseases、AHRQ Care Coordination、WHO Medication Without Harm、CMS Home Health/Hospice、HHS CLAS、AHRQ SHARE | 罕见病、复杂慢病、出院交接、严重疾病居家照护、医疗解释和共同决策是否能把碎片化医学转化为主体可执行路径 |
+| 外部化主体连续性 | Library of Congress Personal Digital Archiving、NIST Digital Identity、FDA DHT、NIH BRAIN、FDA BCI、NIST Robotics | 个人资料、账号继承、连续感知、外部记忆、神经接口和具身机器人是否能把主体历史、状态、能力和行动延展到身体之外 |
 | 气候与社区韧性底座 | IPCC AR6、WMO Early Warnings for All、NOAA/NCEI、CMRA、CDC Climate and Health | 极端天气、热、洪水、火灾、空气和基础设施中断是否被预警、适应和恢复 |
 | 家庭应急准备与个人韧性 | Red Cross preparedness、Red Cross survival kit、Red Cross make a plan、CDC Prepare Your Health、NOAA Weather-Ready Nation | 灾害前，人是否有家庭计划、物资包、健康准备、风险认知、备用通信和特殊需求安排 |
 | 公共预警与应急通信 | FEMA IPAWS、FCC WEA/EAS、NOAA Weather Radio、Ready.gov、911.gov、FirstNet | 危机信息能否及时到达、求助能否接通、响应者能否持续通信 |
@@ -343,6 +344,12 @@ flowchart TD
     H --> HHHPCC[home-health-hospice-palliative-care-continuity<br/>居家医疗 / 缓和 / 安宁疗护]
     H --> MICM[medical-interpreter-cultural-mediation<br/>医疗解释 / 文化中介]
     H --> PASDM[patient-advocacy-shared-decision-making<br/>患者倡导 / 共同决策]
+    H --> LLPAC[life-logging-personal-archives-continuity<br/>生命日志 / 个人档案连续性]
+    H --> DLDS[digital-legacy-data-succession<br/>数字遗产 / 数据继承]
+    H --> WCSPI[wearables-continuous-sensing-personal-informatics<br/>可穿戴 / 连续感知]
+    H --> PKMCO[personal-knowledge-management-cognitive-offloading<br/>个人知识管理 / 认知卸载]
+    H --> BCING[brain-computer-interface-neurotechnology-governance<br/>脑机接口 / 神经技术治理]
+    H --> REACA[robotics-embodied-assistance-care-automation<br/>机器人 / 具身辅助]
     H --> SCC[supply-chain-continuity<br/>供应链连续性]
     H --> SBB[synthetic-biology-biosecurity<br/>合成生物学与生物安全]
     H --> SEH[space-extreme-habitation<br/>空间与极端栖居]
@@ -540,6 +547,12 @@ flowchart TD
 | [Home Health Hospice Palliative Care Continuity](domains/home-health-hospice-palliative-care-continuity/README.md) | 居家医疗、缓和医疗、安宁疗护、严重疾病、症状负担、家庭照护和目标照护 | 在严重疾病阶段维护可承受持续性、尊严、关系、症状控制和主体目标 | 不提供个体资格判断、用药镇痛、护理操作、预立指示、保险福利、机构选择、法律或协助死亡建议 |
 | [Medical Interpreter Cultural Mediation](domains/medical-interpreter-cultural-mediation/README.md) | 医疗解释服务、语言协助、CLAS、LEP、文化中介、知情同意理解和临床沟通安全 | 让风险、同意、诊断、治疗和随访信息被正确理解，降低误诊、误用药、失访和权利失效 | 不提供实时医疗解释、临床文本权威翻译、同意书法律解释、医疗/保险/移民/法律建议或文化标签化判断 |
 | [Patient Advocacy Shared Decision Making](domains/patient-advocacy-shared-decision-making/README.md) | 患者倡导、共同决策、决策辅助、主体偏好、治疗负担、知情同意和未来选择权 | 让证据、偏好、风险和长期目标进入医疗决策，减少被动同意和信息不对称 | 不提供个体治疗选择、第二意见、医疗投诉、诉讼、保险申诉、病历纠纷、机构排名或动员话术 |
+| [Life Logging Personal Archives Continuity](domains/life-logging-personal-archives-continuity/README.md) | 生命日志、个人数字档案、元数据、备份、迁移和长期可读性 | 让主体历史、病史、作品、偏好和证据链可保存、检索、迁移和解释 | 不提供隐私配置、取证、监控、账号破解、数据恢复、规避平台规则、法律建议或产品背书 |
+| [Digital Legacy Data Succession](domains/digital-legacy-data-succession/README.md) | 数字遗产、账号继承、数据授权、受托访问、失能代理和资料交接 | 在失能、死亡或账号丢失边界下保护主体意愿、作品、权益和长期项目连续性 | 不提供法律、税务、遗嘱、继承、账号访问、密钥恢复、平台规避或争议处理建议 |
+| [Wearables Continuous Sensing Personal Informatics](domains/wearables-continuous-sensing-personal-informatics/README.md) | 可穿戴、连续监测、个人信息学、自我追踪、远程数据采集和反馈闭环 | 让主体状态成为可反馈时间序列，更早发现风险偏移和恢复不足 | 不提供诊断、治疗、用药调整、急诊判断、设备选购、算法解释或个人健康预测建议 |
+| [Personal Knowledge Management Cognitive Offloading](domains/personal-knowledge-management-cognitive-offloading/README.md) | 外部记忆、笔记、检索、知识库、AI 助手和项目上下文恢复 | 降低认知摩擦、重复解释和项目重启成本，提高长期学习与创造能力 | 不提供隐私抓取、账号接入、版权规避、监控方案、医疗/法律/财务建议或具体工具背书 |
+| [Brain Computer Interface Neurotechnology Governance](domains/brain-computer-interface-neurotechnology-governance/README.md) | 脑机接口、神经记录、刺激、解码、神经数据、设备安全和神经伦理 | 把神经-工具高带宽接口纳入能力扩展、身份边界、同意和安全治理 | 不提供医疗建议、设备使用、刺激参数、植入建议、临床试验报名、设备破解或神经数据攻击方法 |
+| [Robotics Embodied Assistance Care Automation](domains/robotics-embodied-assistance-care-automation/README.md) | 机器人、具身辅助、外骨骼、家庭辅助、康复机器人和照护自动化 | 把工具增强从信息层推进到物理行动层，提高独立生活、康复和照护连续性 | 不提供设备选购、改装、维修、康复处方、照护替代、临床训练、安全认证或绕过安全限制的方法 |
 | [Oral Health Continuity](domains/oral-health-continuity/README.md) | 牙齿、牙周、咀嚼、疼痛、感染、营养和沟通 | 口腔功能、疼痛、感染、营养和社会参与变量 | 不提供牙科诊断、治疗、药物、手术、器械或个体护理建议 |
 | [Measurement And Feedback](domains/measurement-feedback/README.md) | 状态测量、风险评分、生物标志物、可穿戴、反馈控制 | 指标分类、预测接口和模型反馈边界 | 不输出个体死亡日期、确定寿命预测或医学诊断 |
 
@@ -673,6 +686,12 @@ human_infra/
 │   ├── home-health-hospice-palliative-care-continuity/
 │   ├── medical-interpreter-cultural-mediation/
 │   ├── patient-advocacy-shared-decision-making/
+│   ├── life-logging-personal-archives-continuity/
+│   ├── digital-legacy-data-succession/
+│   ├── wearables-continuous-sensing-personal-informatics/
+│   ├── personal-knowledge-management-cognitive-offloading/
+│   ├── brain-computer-interface-neurotechnology-governance/
+│   ├── robotics-embodied-assistance-care-automation/
 │   ├── mitochondrial-bioenergetics/
 │   ├── musculoskeletal-integrity/
 │   ├── neuro-continuity/
@@ -817,5 +836,6 @@ flowchart LR
 - 2026-06-30：新增第二十一波 6 个结构性脆弱与连续照护断点域，覆盖农村健康可及、无家可归健康连续性、羁押重返健康连续性、残障独立生活、痴呆认知衰退照护和慢性传染病照护连续性。
 - 2026-06-30：新增第二十二波 6 个危机、剥削与恢复连续性域，覆盖自杀危机响应、物质使用障碍治疗恢复、老年正义成人保护、儿童保护家庭安全、诈骗消费者保护和在线数字伤害预防。
 - 2026-06-30：新增第二十三波 6 个复杂照护导航、交接与决策连续性域，覆盖罕见病诊断漫游、多病共存多重用药、照护转移出院连续性、居家/缓和/安宁疗护、医疗解释文化中介和患者倡导共同决策。
+- 2026-06-30：新增第二十四波 6 个外部化主体连续性域，覆盖生命日志个人档案、数字遗产继承、可穿戴连续感知、个人知识管理认知卸载、脑机接口神经技术治理和机器人具身辅助。
 
 完整记录见 [CHANGELOG.md](CHANGELOG.md)。
