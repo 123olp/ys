@@ -405,6 +405,15 @@ human_infra/
     ├── contributor-role-authorship-attribution-continuity/ # 贡献者角色、作者身份与归因连续性
     ├── conflict-of-interest-funding-disclosure-continuity/ # 利益冲突、资金与披露连续性
     ├── research-artifact-archive-retention-preservation-continuity/ # 研究产物归档、保留与保存连续性
+    ├── systematic-review-protocol-search-screening-continuity/ # 系统综述协议、检索与筛选连续性
+    ├── risk-of-bias-critical-appraisal-continuity/ # 风险偏倚与批判性评价连续性
+    ├── meta-analysis-effect-size-heterogeneity-continuity/ # Meta 分析、效应量与异质性连续性
+    ├── publication-reporting-bias-detection-continuity/ # 发表与报告偏倚检测连续性
+    ├── evidence-certainty-grade-summary-findings-continuity/ # GRADE 证据确定性与发现摘要连续性
+    ├── evidence-to-decision-guideline-panel-continuity/ # 证据到决策与指南小组连续性
+    ├── guideline-appraisal-adaptation-localization-continuity/ # 指南评价、适配与本地化连续性
+    ├── living-evidence-surveillance-update-continuity/ # 活证据监测与更新连续性
+    ├── rapid-review-emergency-evidence-triage-continuity/ # 快速综述与紧急证据分诊连续性
     ├── standards-metrology-quality-infrastructure/ # 标准计量与质量基础设施
     ├── cybersecurity-resilience-critical-services/ # 网络安全韧性与关键服务
     ├── compute-data-center-ai-infrastructure/ # 算力、数据中心与 AI 基础设施
@@ -657,6 +666,7 @@ human_infra/
 - `domains/education-access-lifelong-learning/` 负责教育可及、成人学习、再培训、基础技能、数字学习和技能迁移。
 - `domains/research-infrastructure-open-science-translation/` 负责科研基础设施、开放科学、复现性、研究数据、资助、转化科学和知识扩散。
 - `domains/scholarly-identity-orcid-affiliation-continuity/`、`domains/persistent-identifier-doi-citation-metadata-continuity/`、`domains/research-data-repository-fair-sharing-continuity/`、`domains/research-software-capsule-reproducibility-continuity/`、`domains/preregistration-registered-report-study-plan-continuity/`、`domains/lab-notebook-protocol-versioning-continuity/`、`domains/contributor-role-authorship-attribution-continuity/`、`domains/conflict-of-interest-funding-disclosure-continuity/` 和 `domains/research-artifact-archive-retention-preservation-continuity/` 负责科研身份、持久标识与可复现研究基础设施，覆盖 ORCID/ROR、DOI 元数据、FAIR 数据仓库、研究软件胶囊、预注册、实验协议版本、贡献者角色、利益冲突披露和研究产物保存。
+- `domains/systematic-review-protocol-search-screening-continuity/`、`domains/risk-of-bias-critical-appraisal-continuity/`、`domains/meta-analysis-effect-size-heterogeneity-continuity/`、`domains/publication-reporting-bias-detection-continuity/`、`domains/evidence-certainty-grade-summary-findings-continuity/`、`domains/evidence-to-decision-guideline-panel-continuity/`、`domains/guideline-appraisal-adaptation-localization-continuity/`、`domains/living-evidence-surveillance-update-continuity/` 和 `domains/rapid-review-emergency-evidence-triage-continuity/` 负责证据综合与指南转化连续性，覆盖系统综述协议、检索筛选、风险偏倚、Meta 分析、报告偏倚、GRADE、证据到决策、指南适配、活证据更新和快速综述边界。
 - `domains/standards-metrology-quality-infrastructure/` 负责标准、计量、校准、认证、合格评定、质量管理和互操作规范。
 - `domains/cybersecurity-resilience-critical-services/` 负责网络安全、关键服务韧性、事件响应、备份恢复和数字风险治理。
 - `domains/compute-data-center-ai-infrastructure/` 负责算力、数据中心、AI 基础设施、芯片、能源、水、网络、成本和接入治理。
@@ -953,3 +963,4 @@ human_infra/
 - 2026-07-01：新增第七十四波数字内容可信、合成媒体与冒充风险连续性研究域，覆盖内容来源凭据、合成媒体水印披露、AI 冒充 deepfake fraud、电话 caller ID 认证、邮件域名认证、官网品牌冒充、数字证据保存链和平台内容审核通知申诉。
 - 2026-07-01：新增第七十五波知识产权、数字作品与 AI 训练数据权利连续性研究域，覆盖版权作者身份登记许可、DMCA 通知反通知、Creative Commons 开放内容、开源软件许可证、商标品牌身份、专利发明披露维护、创作者版税权利元数据和 AI 训练数据权利/退出/provenance。
 - 2026-07-01：新增第七十六波科研身份、持久标识与可复现研究基础设施研究域，覆盖 ORCID/ROR、DOI 元数据、FAIR 数据仓库、研究软件胶囊、预注册、实验协议版本、贡献者角色、利益冲突披露和研究产物保存。
+- 2026-07-01：新增第七十七波证据综合与指南转化连续性研究域，覆盖系统综述协议/检索/筛选、风险偏倚与批判性评价、Meta 分析与异质性、发表/报告偏倚、GRADE 证据确定性、证据到决策、指南评价/适配/本地化、活证据监测更新和快速综述/紧急证据分诊。

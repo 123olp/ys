@@ -127,6 +127,15 @@
 - `contributor-role-authorship-attribution-continuity/`：贡献者角色、作者身份与归因连续性，整理 CRediT、authorship、responsibility statement 和 contribution metadata。
 - `conflict-of-interest-funding-disclosure-continuity/`：利益冲突、资金与披露连续性，整理 COI、funding statement、sponsor role 和 competing interests。
 - `research-artifact-archive-retention-preservation-continuity/`：研究产物归档、保留与保存连续性，整理 artifact archive、retention、link rot、format drift 和 preservation provenance。
+- `systematic-review-protocol-search-screening-continuity/`：系统综述协议、检索与筛选连续性，整理 PRISMA、PROSPERO、检索策略、纳入排除和筛选记录。
+- `risk-of-bias-critical-appraisal-continuity/`：风险偏倚与批判性评价连续性，整理 RoB 2、ROBINS-I、QUADAS-2、PROBAST、CASP 和适用性判断。
+- `meta-analysis-effect-size-heterogeneity-continuity/`：Meta 分析、效应量与异质性连续性，整理效应量、固定/随机效应、异质性、预测区间和敏感性分析。
+- `publication-reporting-bias-detection-continuity/`：发表与报告偏倚检测连续性，整理 publication bias、selective reporting、registry mismatch、outcome switching 和 missing studies。
+- `evidence-certainty-grade-summary-findings-continuity/`：GRADE 证据确定性与发现摘要连续性，整理 certainty downgrade、summary of findings、outcome importance 和 recommendation prerequisite。
+- `evidence-to-decision-guideline-panel-continuity/`：证据到决策与指南小组连续性，整理 benefits/harms、values、resources、equity、acceptability 和 feasibility。
+- `guideline-appraisal-adaptation-localization-continuity/`：指南评价、适配与本地化连续性，整理 AGREE II、guideline appraisal、adaptation、local context 和 update status。
+- `living-evidence-surveillance-update-continuity/`：活证据监测与更新连续性，整理 living review、surveillance search、update trigger、versioned conclusion 和 stale-claim retirement。
+- `rapid-review-emergency-evidence-triage-continuity/`：快速综述与紧急证据分诊连续性，整理 rapid review、evidence map、shortcut disclosure、uncertainty 和 expiry。
 - `standards-metrology-quality-infrastructure/`：标准计量与质量基础设施，整理标准、计量、校准、认证、合格评定、质量管理和互操作规范。
 - `cybersecurity-resilience-critical-services/`：网络安全韧性与关键服务，整理网络防御、事件响应、备份恢复、关键服务连续性和数字风险治理。
 - `compute-data-center-ai-infrastructure/`：算力、数据中心与 AI 基础设施，整理算力、芯片、云服务、能源、水、网络、成本和接入治理。

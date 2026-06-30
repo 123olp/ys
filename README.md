@@ -1184,6 +1184,15 @@ flowchart TD
 | [Contributor Role Authorship Attribution Continuity](domains/contributor-role-authorship-attribution-continuity/README.md) | CRediT、authorship、responsibility statement、acknowledgement 和 contribution metadata | 让贡献、责任、维护所有权和协作激励可审查 | 不提供署名争议裁决、挂名、幽灵作者、贡献造假或私密沟通处理 |
 | [Conflict Of Interest Funding Disclosure Continuity](domains/conflict-of-interest-funding-disclosure-continuity/README.md) | COI、funding statement、sponsor role、competing interests 和 disclosure updates | 让证据进入模型时保留激励结构和偏倚解释背景 | 不提供法律、雇佣、基金合规、投稿策略、指控或隐藏冲突建议 |
 | [Research Artifact Archive Retention Preservation Continuity](domains/research-artifact-archive-retention-preservation-continuity/README.md) | artifact archive、retention、LOCKSS/CLOCKSS、Zenodo、Software Heritage、link rot 和 format drift | 让论文、数据、代码、协议、图表和 Web 研究页可长期取回 | 不归档无授权、私密、受限、版权、危险或保密材料，不把保存等同于许可或正确 |
+| [Systematic Review Protocol Search Screening Continuity](domains/systematic-review-protocol-search-screening-continuity/README.md) | PRISMA、PROSPERO、检索策略、纳入排除、筛选记录和 review protocol | 让文献进入模型前的搜索和筛选过程可复查 | 不提供论文代写、假 PRISMA、受限全文抓取、医学建议或治疗排序 |
+| [Risk Of Bias Critical Appraisal Continuity](domains/risk-of-bias-critical-appraisal-continuity/README.md) | RoB 2、ROBINS-I、QUADAS-2、PROBAST、CASP 和 applicability judgment | 在研究相关性之外审查偏倚、适用性和主张降级 | 不提供不端指控、审稿服务、p-hacking、数据操控或临床建议 |
+| [Meta Analysis Effect Size Heterogeneity Continuity](domains/meta-analysis-effect-size-heterogeneity-continuity/README.md) | effect size、fixed/random effects、heterogeneity、prediction interval 和 sensitivity analysis | 把多研究结果合成为带边界、异质性和敏感性证据的模型输入 | 不提供统计造显著、监管提交、治疗比较或个体预测 |
+| [Publication Reporting Bias Detection Continuity](domains/publication-reporting-bias-detection-continuity/README.md) | publication bias、selective reporting、registry mismatch、outcome switching 和 missing studies | 防止把可见文献误认为完整证据宇宙 | 不提供不端指控、隐藏结果、注册规避、图形操控或法律投诉 |
+| [Evidence Certainty GRADE Summary Findings Continuity](domains/evidence-certainty-grade-summary-findings-continuity/README.md) | GRADE、summary of findings、certainty downgrade、outcome importance 和 recommendation prerequisite | 把效应估计转换为可审查的证据确定性和降级理由 | 不提供治疗建议、覆盖决策、确定性膨胀、诊断或疗法排名 |
+| [Evidence To Decision Guideline Panel Continuity](domains/evidence-to-decision-guideline-panel-continuity/README.md) | GRADE EtD、guideline panel、benefits/harms、values、resources、equity 和 feasibility | 区分证据事实、价值判断、资源约束和采用决策 | 不提供个人医疗建议、医保覆盖建议、政策游说、法律意见或官方推荐 |
+| [Guideline Appraisal Adaptation Localization Continuity](domains/guideline-appraisal-adaptation-localization-continuity/README.md) | AGREE II、guideline appraisal、adaptation、localization、update status 和 context fit | 防止把指南跨地区、跨人群、跨资源环境直接照搬 | 不提供临床实施计划、政策命令、合规判断、评分操控或监管规避 |
+| [Living Evidence Surveillance Update Continuity](domains/living-evidence-surveillance-update-continuity/README.md) | living review、surveillance search、update trigger、versioned conclusion 和 stale-claim retirement | 让研究页和模型能够随新证据、撤稿和安全信号更新或降级 | 不提供实时医疗警报、治疗变更、受限数据库抓取或更新触发操控 |
+| [Rapid Review Emergency Evidence Triage Continuity](domains/rapid-review-emergency-evidence-triage-continuity/README.md) | rapid review、evidence map、crisis evidence triage、shortcut disclosure 和 provisional claim | 在紧急问题下显式记录证据捷径、过期时间和不确定性 | 不提供急救指挥、公共卫生命令、危机分诊、个人/机构自动建议或捷径隐瞒 |
 | [Standards Metrology Quality Infrastructure](domains/standards-metrology-quality-infrastructure/README.md) | 标准、计量、校准、认证、质量管理、合格评定和互操作规范 | 让测量、设备、数据、制造和服务具备可比性与可信度 | 不提供认证规避、检测伪造、设备改装、标准绕过或产品采购建议 |
 | [Cybersecurity Resilience Critical Services](domains/cybersecurity-resilience-critical-services/README.md) | 网络安全、关键服务韧性、事件响应、备份恢复和数字风险治理 | 防止医疗、金融、身份、公共服务和 AI 工具被攻击截断 | 不提供攻击、入侵、漏洞利用、钓鱼、恶意软件或规避检测步骤 |
 | [Compute Data Center AI Infrastructure](domains/compute-data-center-ai-infrastructure/README.md) | 算力、数据中心、AI 基础设施、芯片、能源、水、网络和接入治理 | 支撑 AI 工具、科学模拟、自动化和科研加速的物质底座 | 不提供盗用算力、绕过计费、芯片走私、数据中心攻击、投资采购或监管规避建议 |
@@ -1357,6 +1366,15 @@ human_infra/
 │   ├── contributor-role-authorship-attribution-continuity/
 │   ├── conflict-of-interest-funding-disclosure-continuity/
 │   ├── research-artifact-archive-retention-preservation-continuity/
+│   ├── systematic-review-protocol-search-screening-continuity/
+│   ├── risk-of-bias-critical-appraisal-continuity/
+│   ├── meta-analysis-effect-size-heterogeneity-continuity/
+│   ├── publication-reporting-bias-detection-continuity/
+│   ├── evidence-certainty-grade-summary-findings-continuity/
+│   ├── evidence-to-decision-guideline-panel-continuity/
+│   ├── guideline-appraisal-adaptation-localization-continuity/
+│   ├── living-evidence-surveillance-update-continuity/
+│   ├── rapid-review-emergency-evidence-triage-continuity/
 │   ├── research-participant-consent-community-engagement/
 │   ├── biobanking-biospecimen-quality-chain-of-custody/
 │   ├── longitudinal-cohort-retention-followup-infrastructure/
@@ -1814,5 +1832,6 @@ flowchart LR
 - 2026-07-01：新增第七十四波 8 个数字内容可信、合成媒体与冒充风险连续性域，覆盖内容来源凭据、合成媒体水印披露、AI 冒充 deepfake fraud、电话 caller ID 认证、邮件域名认证、官网品牌冒充、数字证据保存链和平台内容审核通知申诉。
 - 2026-07-01：新增第七十五波 8 个知识产权、数字作品与 AI 训练数据权利连续性域，覆盖版权作者身份登记许可、DMCA 通知反通知、Creative Commons 开放内容、开源软件许可证、商标品牌身份、专利发明披露维护、创作者版税权利元数据和 AI 训练数据权利/退出/provenance。
 - 2026-07-01：新增第七十六波 9 个科研身份、持久标识与可复现研究基础设施域，覆盖 ORCID/ROR、DOI 元数据、FAIR 数据仓库、研究软件胶囊、预注册、实验协议版本、贡献者角色、利益冲突披露和研究产物保存。
+- 2026-07-01：新增第七十七波 9 个证据综合与指南转化连续性域，覆盖系统综述协议/检索/筛选、风险偏倚与批判性评价、Meta 分析与异质性、发表/报告偏倚、GRADE 证据确定性、证据到决策、指南评价/适配/本地化、活证据监测更新和快速综述/紧急证据分诊。
 
 完整记录见 [CHANGELOG.md](CHANGELOG.md)。

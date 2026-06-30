@@ -918,6 +918,25 @@ Human Infra 不能被设计成更精密的压榨系统。
 - 提供 p-hacking、选择性报告、预注册规避、事后改写研究计划、湿实验/临床/双重用途协议、实验记录伪造或回填。
 - 提供署名操控、幽灵作者、挂名作者、贡献角色造假、隐藏利益冲突、资金来源隐匿、保密材料归档、版权规避或访问控制绕过。
 
+## 证据综合与指南转化边界
+
+`systematic-review-protocol-search-screening-continuity`、`risk-of-bias-critical-appraisal-continuity`、`meta-analysis-effect-size-heterogeneity-continuity`、`publication-reporting-bias-detection-continuity`、`evidence-certainty-grade-summary-findings-continuity`、`evidence-to-decision-guideline-panel-continuity`、`guideline-appraisal-adaptation-localization-continuity`、`living-evidence-surveillance-update-continuity` 和 `rapid-review-emergency-evidence-triage-continuity` 关注原始研究如何被系统检索、筛选、评价、综合、降级、转化、适配、更新和临时使用，不是临床建议、政策指令、统计咨询、监管提交、学术操控或紧急决策系统。
+
+可以做：
+
+- 整理公开标准、论文、方法手册和机构资料，建立 systematic review card、risk-of-bias card、meta-analysis card、reporting-bias card、GRADE certainty card、evidence-to-decision card、guideline adaptation card、living-evidence card 和 rapid-review card。
+- 区分原始研究、系统综述、Meta 分析、证据确定性、指南建议、当地适用性、活证据更新和快速综述临时结论。
+- 记录检索日期、数据库、纳入排除、偏倚域、效应量、异质性、发表偏倚、确定性降级、推荐强度、上下文适配、更新触发和过期时间。
+- 将 PRISMA、PROSPERO、Cochrane、RoB 2、ROBINS-I、QUADAS-2、PROBAST、GRADE、AGREE、WHO/NICE、Retraction Watch 和快速综述方法资料作为证据综合信号，而不是个体行动建议。
+
+不能做：
+
+- 提供论文代写、假系统综述、伪造 PRISMA、筛选记录造假、受限全文抓取、版权全文转储、审稿操控或学术影响力操作。
+- 提供 p-hacking、统计造显著、选择性模型、隐藏异质性、结局切换、注册规避、发表偏倚掩盖或 funnel plot 操控。
+- 提供作者不端指控、法律投诉、期刊申诉、监管提交、医保覆盖建议、临床指南代写、政策游说或机构决策自动化。
+- 输出个体诊断、治疗排名、用药建议、试验入组建议、医疗器械建议、公共卫生命令、紧急分诊、灾害指挥或个人寿命预测。
+- 把快速综述、低确定性证据、过期指南、未更新活证据、公司叙事或单一 Meta 分析写成稳定事实、现实可行性或有效永生证明。
+
 ## 未来技术连续性边界
 
 `nanomedicine-targeted-delivery-molecular-repair`、`ai-drug-discovery-protein-design`、`epigenetic-editing-gene-regulation-therapeutics`、`brain-preservation-connectomics-emulation`、`post-quantum-cryptography-long-term-data-security`、`safety-critical-software-formal-methods` 和 `long-term-digital-preservation-format-migration` 关注未来技术能否从候选能力进入可递送、可验证、可保存、可安全执行和可长期读取的主体持续性条件，不是纳米材料制备、生物设计、表观编辑操作、脑保存操作、密码攻击、安全关键系统绕过或档案窃取指南。

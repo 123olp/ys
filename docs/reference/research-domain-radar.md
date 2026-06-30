@@ -207,6 +207,15 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `contributor-role-authorship-attribution-continuity/` | CRediT、作者身份和贡献者角色决定科研协作中的信用、责任和维护所有权能否被审查 |
 | `conflict-of-interest-funding-disclosure-continuity/` | 利益冲突、资金和 sponsor 角色披露决定证据解释时能否看到激励结构 |
 | `research-artifact-archive-retention-preservation-continuity/` | 研究产物归档、保留和格式迁移决定论文、数据、代码、协议和 Web 研究页是否能长期取回 |
+| `systematic-review-protocol-search-screening-continuity/` | 系统综述协议、检索策略和筛选记录决定文献集合是否可复查、可更新和可解释 |
+| `risk-of-bias-critical-appraisal-continuity/` | 风险偏倚和适用性评价决定研究能否从“相关”升级为可用证据 |
+| `meta-analysis-effect-size-heterogeneity-continuity/` | Meta 分析、效应量和异质性决定多研究结果能否成为有边界的模型输入 |
+| `publication-reporting-bias-detection-continuity/` | 发表偏倚、选择性报告和注册不一致决定可见证据是否系统性失真 |
+| `evidence-certainty-grade-summary-findings-continuity/` | GRADE 和发现摘要决定效应估计进入模型前的确定性等级和降级理由 |
+| `evidence-to-decision-guideline-panel-continuity/` | 证据到决策框架决定证据、价值、资源、公平和可行性如何进入采用判断 |
+| `guideline-appraisal-adaptation-localization-continuity/` | 指南评价、适配和本地化决定权威建议能否跨人群、地点和资源环境转移 |
+| `living-evidence-surveillance-update-continuity/` | 活证据监测和更新触发决定研究页和模型能否随新证据、撤稿和安全信号修正 |
+| `rapid-review-emergency-evidence-triage-continuity/` | 快速综述和紧急证据分诊决定临时判断能否显式暴露捷径、不确定性和过期时间 |
 | `standards-metrology-quality-infrastructure/` | 标准、计量、校准、认证和质量基础设施决定测量、设备、数据和制造是否可信可比 |
 | `cybersecurity-resilience-critical-services/` | 网络安全、事件响应、备份恢复和关键服务韧性决定数字化主体系统是否会被攻击截断 |
 | `compute-data-center-ai-infrastructure/` | 算力、数据中心、芯片、云、能源、水和网络决定 AI、科学模拟和自动化能力是否可用 |
@@ -839,6 +848,15 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | UK Biobank / Framingham / NHANES / HRS / All of Us | 提示寿命、健康寿命和生命历程模型需要长期队列、随访留存、事件确认和数据链接 |
 | AHRQ registries / FDA RWE / OHDSI OMOP | 提示真实世界证据需要登记系统、共同数据模型、质量审计和用途边界 |
 | NIST calibration / SRM / ISO 17025 / BIPM | 提示仪器、传感器和实验平台需要校准、参考材料、漂移监测和测量不确定性 |
+| PRISMA / PROSPERO / Cochrane Handbook / EQUATOR | 提示系统综述需要协议、检索、筛选、报告和注册边界 |
+| RoB 2 / ROBINS-I / QUADAS-2 / PROBAST / CASP | 提示研究进入模型前必须审查偏倚、适用性和方法质量 |
+| Cochrane synthesis methods / Campbell Collaboration | 提示 Meta 分析需要效应量、异质性、预测区间和敏感性分析 |
+| ClinicalTrials.gov / WHO ICTRP / COMPare | 提示发表偏倚、选择性报告和注册不一致会扭曲可见证据 |
+| GRADE Handbook / GRADEpro / Summary of Findings | 提示证据确定性和发现摘要需要独立于效应大小进行分级 |
+| GRADE EtD / WHO guideline handbook / NICE HTA / GIN | 提示证据到决策需要记录价值、资源、公平、可接受性和可行性 |
+| AGREE II / GRADE-ADOLOPMENT / GIN | 提示指南质量、适配和本地化需要独立审查 |
+| Cochrane living evidence / Retraction Watch | 提示证据需要监测、更新、版本化和陈旧主张退休机制 |
+| Cochrane Rapid Reviews / JBI / Campbell evidence synthesis | 提示快速综述需要显式披露捷径、不确定性和过期边界 |
 | Model Cards / Datasheets for Datasets / NIST AI RMF | 提示模型、数据、图表和 AI 系统需要可审计文档、用途限制和风险管理语言 |
 | OECD Strategic Foresight / WHO Health Technology Assessment horizon scanning | 提示未来技术窗口需要弱信号、情景分析和地平线扫描，而不是新闻热度驱动 |
 | NIH Office of Portfolio Analysis / WHO research priority setting / ARPA-H / DARPA | 提示无限研究域需要组合优先级、阶段门、学习价值和停止条件 |

@@ -567,6 +567,15 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 贡献和责任必须可归因 | `contributor-role-authorship-attribution-continuity/` | CRediT、authorship、responsibility statement、contribution metadata | 贡献、责任、维护所有权和协作激励失真 |
 | 激励结构必须可披露 | `conflict-of-interest-funding-disclosure-continuity/` | COI、funding statement、sponsor role、competing interests | 证据进入模型时丢失资助、所有权、雇佣和 sponsor 影响语境 |
 | 研究产物必须可长期保存 | `research-artifact-archive-retention-preservation-continuity/` | artifact archive、retention、link rot、format drift、preservation provenance | 论文、数据、代码、协议和 Web 研究页随平台、格式和链接腐烂消失 |
+| 文献集合必须可系统检索 | `systematic-review-protocol-search-screening-continuity/` | PRISMA、PROSPERO、检索策略、纳入排除、筛选记录 | 模型只看到被偶然发现或叙事选择的研究，遗漏和排除不可审查 |
+| 研究偏倚必须可显性降级 | `risk-of-bias-critical-appraisal-continuity/` | RoB 2、ROBINS-I、QUADAS-2、PROBAST、CASP、适用性 | 相关研究被当成强因果、强预测或可直接迁移证据 |
+| 多研究结果必须可合成且保留异质性 | `meta-analysis-effect-size-heterogeneity-continuity/` | effect size、heterogeneity、prediction interval、sensitivity | 单项研究过度外推，或 pooled estimate 掩盖人群、终点和方法不兼容 |
+| 看不见的证据缺口必须可怀疑 | `publication-reporting-bias-detection-continuity/` | publication bias、selective reporting、registry mismatch、outcome switching | 可见文献被误认为完整证据宇宙，正结果和显著结果被系统性放大 |
+| 证据确定性必须可分级 | `evidence-certainty-grade-summary-findings-continuity/` | GRADE、summary of findings、downgrade reason、outcome importance | 效应大小被误读为高确定性，低质量证据进入强模型主张 |
+| 证据和决策必须可分离 | `evidence-to-decision-guideline-panel-continuity/` | EtD、benefits/harms、values、resources、equity、feasibility | 把“有证据”直接跳成“应采用”，忽略价值、成本、公平和可行性 |
+| 指南必须可评价和本地化 | `guideline-appraisal-adaptation-localization-continuity/` | AGREE II、adaptation、local context、update status、conflict | 权威指南被跨地区、跨资源环境和跨人群无边界套用 |
+| 证据必须可持续更新 | `living-evidence-surveillance-update-continuity/` | living review、surveillance search、update trigger、versioned conclusion | 陈旧主张继续支撑模型，忽略新试验、安全信号、撤稿和指南更新 |
+| 紧急证据必须标注捷径 | `rapid-review-emergency-evidence-triage-continuity/` | rapid review、evidence map、shortcut disclosure、expiry、uncertainty | 快速综述被包装成完整系统综述，临时判断变成长期确定结论 |
 | 人体研究必须保留主体合法性 | `research-participant-consent-community-engagement/` | 知情同意、退出、再联系、社区参与、结果回馈、信任 | 长期研究退化为数据抽取，代表性、留存和伦理正当性同时下降 |
 | 生物样本必须可追踪可信 | `biobanking-biospecimen-quality-chain-of-custody/` | 样本质量、预分析变量、冷链、追踪、保管链、二次使用 | 样本退化、污染、错配或同意越界污染组学和 biomarker 证据 |
 | 生命路径必须可长期观察 | `longitudinal-cohort-retention-followup-infrastructure/` | 纵向队列、随访、留存、失访、事件确认、生命历程链接 | 失访、选择偏差和随访断裂扭曲寿命、健康寿命和风险路径 |
@@ -993,6 +1002,15 @@ risk-engineering
   -> contributor-role-authorship-attribution-continuity
   -> conflict-of-interest-funding-disclosure-continuity
   -> research-artifact-archive-retention-preservation-continuity
+  -> systematic-review-protocol-search-screening-continuity
+  -> risk-of-bias-critical-appraisal-continuity
+  -> meta-analysis-effect-size-heterogeneity-continuity
+  -> publication-reporting-bias-detection-continuity
+  -> evidence-certainty-grade-summary-findings-continuity
+  -> evidence-to-decision-guideline-panel-continuity
+  -> guideline-appraisal-adaptation-localization-continuity
+  -> living-evidence-surveillance-update-continuity
+  -> rapid-review-emergency-evidence-triage-continuity
   -> standards-metrology-quality-infrastructure
   -> cybersecurity-resilience-critical-services
   -> compute-data-center-ai-infrastructure

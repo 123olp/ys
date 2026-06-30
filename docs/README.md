@@ -96,6 +96,7 @@ docs/
 │   ├── 0078-add-seventy-fourth-wave-digital-content-trust-continuity-domains.md
 │   ├── 0079-add-seventy-fifth-wave-intellectual-property-digital-rights-continuity-domains.md
 │   ├── 0080-add-seventy-sixth-wave-research-identity-reproducibility-infrastructure-domains.md
+│   ├── 0081-add-seventy-seventh-wave-evidence-synthesis-guideline-translation-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -608,4 +609,13 @@ docs/
 424. Read `../domains/contributor-role-authorship-attribution-continuity/README.md` if you are working on CRediT, authorship, contributor roles, acknowledgements, responsibility statements, or attribution metadata.
 425. Read `../domains/conflict-of-interest-funding-disclosure-continuity/README.md` if you are working on conflicts of interest, funding disclosures, sponsor roles, competing interests, or disclosure updates.
 426. Read `../domains/research-artifact-archive-retention-preservation-continuity/README.md` if you are working on research artifact archives, retention, preservation, link rot, format drift, Zenodo, LOCKSS, CLOCKSS, or Software Heritage.
-427. Enter a domain under `../domains/`.
+427. Read `../domains/systematic-review-protocol-search-screening-continuity/README.md` if you are working on PRISMA, PROSPERO, systematic review protocols, search strategies, eligibility criteria, screening records, or PRISMA flow diagrams.
+428. Read `../domains/risk-of-bias-critical-appraisal-continuity/README.md` if you are working on RoB 2, ROBINS-I, QUADAS-2, PROBAST, CASP, study appraisal, applicability, or bias-domain judgments.
+429. Read `../domains/meta-analysis-effect-size-heterogeneity-continuity/README.md` if you are working on effect sizes, fixed/random effects, heterogeneity, prediction intervals, subgroup analysis, or sensitivity analysis.
+430. Read `../domains/publication-reporting-bias-detection-continuity/README.md` if you are working on publication bias, selective outcome reporting, trial registry mismatch, outcome switching, small-study effects, or missing studies.
+431. Read `../domains/evidence-certainty-grade-summary-findings-continuity/README.md` if you are working on GRADE, evidence certainty, summary-of-findings tables, downgrade reasons, outcome importance, or recommendation prerequisites.
+432. Read `../domains/evidence-to-decision-guideline-panel-continuity/README.md` if you are working on GRADE EtD, guideline panels, recommendation strength, benefits/harms, resources, equity, acceptability, or feasibility.
+433. Read `../domains/guideline-appraisal-adaptation-localization-continuity/README.md` if you are working on AGREE II, guideline appraisal, adaptation, localization, update status, conflicts, or context fit.
+434. Read `../domains/living-evidence-surveillance-update-continuity/README.md` if you are working on living systematic reviews, surveillance searches, evidence update triggers, versioned conclusions, retractions, or stale-claim retirement.
+435. Read `../domains/rapid-review-emergency-evidence-triage-continuity/README.md` if you are working on rapid reviews, evidence maps, crisis evidence triage, shortcut disclosure, provisional claims, or expiry dates.
+436. Enter a domain under `../domains/`.
