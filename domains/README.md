@@ -345,6 +345,14 @@
 - `parks-recreation-green-space-access-continuity/`：公园、娱乐与绿地接入连续性，整理公园、绿地、步道、运动场、游乐场、自然接触和公共娱乐设施。
 - `public-wifi-device-charging-connectivity-continuity/`：公共 Wi-Fi、设备充电与连接连续性，整理公共 Wi-Fi、公共电脑、设备充电点、断电通信恢复和数字服务访问。
 - `public-accommodation-accessibility-service-continuity/`：公共场所无障碍与服务接入连续性，整理无障碍入口、有效沟通、合理便利、服务动物、辅助设备和临时中断。
+- `grocery-retail-food-store-access-continuity/`：Grocery、食品零售与日常食物采购连续性，整理超市、小型食品店、农贸市场、线上取货配送、价格、支付和可达性。
+- `snap-ebt-redemption-retailer-payment-continuity/`：SNAP EBT 兑换、零售商与支付连续性，整理 EBT 卡、PIN、余额、授权零售商、在线购买、交易失败和账户恢复。
+- `wic-benefit-redemption-infant-maternal-nutrition-continuity/`：WIC 兑换、母婴营养与早期食物连续性，整理 WIC 食物包、eWIC、授权商店、婴儿配方、母乳支持和转介服务。
+- `food-bank-pantry-community-food-distribution-continuity/`：食品银行、pantry 与社区食品发放连续性，整理食品银行、TEFAP、社区发放、捐赠物流、开放时段和尊严保护。
+- `emergency-food-disaster-feeding-continuity/`：灾害供餐与应急食品发放连续性，整理灾害供餐、应急食品包、D-SNAP、避难所餐食和恢复过渡。
+- `home-delivered-meals-congregate-nutrition-services-continuity/`：送餐、集体餐与营养服务连续性，整理 home-delivered meals、congregate meals、营养筛查、送餐安全观察和社交接触。
+- `infant-formula-baby-food-supply-safety-continuity/`：婴儿配方与婴幼儿食品供应安全连续性，整理婴儿配方、特殊医学配方、婴幼儿食品、召回、短缺和监管响应。
+- `prepared-food-restaurant-cafeteria-safety-access-continuity/`：熟食、餐馆与 cafeteria 安全可达连续性，整理餐馆、食堂、外卖、即食餐、菜单信息、过敏原和食品安全。
 - `supply-chain-continuity/`：供应链连续性，整理关键物资、服务、物流、替代路径和恢复时间。
 - `synthetic-biology-biosecurity/`：合成生物学与生物安全，整理双重用途、生物安全、生物安保和治理边界。
 - `space-extreme-habitation/`：空间与极端栖居，整理辐射、微重力、隔离、闭环资源和远程医疗风险。

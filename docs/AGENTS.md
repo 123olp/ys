@@ -66,6 +66,7 @@ docs/
 │   ├── 0055-add-fifty-first-wave-household-operations-continuity-domains.md
 │   ├── 0056-add-fifty-second-wave-personal-mobility-execution-continuity-domains.md
 │   ├── 0057-add-fifty-third-wave-public-realm-survival-access-continuity-domains.md
+│   ├── 0058-add-fifty-fourth-wave-food-acquisition-execution-continuity-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -181,6 +182,7 @@ docs/
 - `domains/home-access-lock-key-entry-continuity/`、`domains/household-appliance-maintenance-repair-continuity/`、`domains/home-refrigeration-food-storage-continuity/`、`domains/cooking-meal-preparation-kitchen-safety-continuity/`、`domains/laundry-clothing-footwear-hygiene-continuity/`、`domains/household-cleaning-disinfection-pest-control-continuity/`、`domains/postal-parcel-delivery-pickup-continuity/` 和 `domains/household-maintenance-repair-contractor-continuity/`：第五十一波正式研究域，分别承载住所进入、家电维护、家庭冷藏、烹饪备餐、衣物鞋履卫生、家庭清洁消毒害虫控制、邮件包裹接收和家庭维修承包商连续性。
 - `domains/personal-vehicle-maintenance-recall-repair-continuity/`、`domains/fuel-ev-charging-refueling-access-continuity/`、`domains/parking-curb-access-towing-impound-continuity/`、`domains/walking-bicycling-micromobility-continuity/`、`domains/paratransit-nemt-access-continuity/`、`domains/taxi-rideshare-demand-response-mobility-continuity/`、`domains/transit-fare-payment-toll-account-continuity/` 和 `domains/multimodal-trip-planning-real-time-wayfinding-continuity/`：第五十二波正式研究域，分别承载个人车辆维护召回维修、燃料/EV 充电补能、停车路缘拖车扣押、步行骑行微移动、paratransit/NEMT、出租车网约车需求响应交通、交通票卡/过路费账户和多模式实时导向连续性。
 - `domains/public-restroom-sanitation-hygiene-access-continuity/`、`domains/public-drinking-water-hydration-access-continuity/`、`domains/public-seating-shade-rest-cooling-access-continuity/`、`domains/community-resilience-hub-shelter-center-continuity/`、`domains/public-library-community-anchor-access-continuity/`、`domains/parks-recreation-green-space-access-continuity/`、`domains/public-wifi-device-charging-connectivity-continuity/` 和 `domains/public-accommodation-accessibility-service-continuity/`：第五十三波正式研究域，分别承载公共厕所卫生、公共饮水补水、公共座椅遮阴休息降温、社区韧性/避难中心、公共图书馆社区锚点、公园娱乐绿地、公共 Wi-Fi/设备充电和公共场所无障碍服务连续性。
+- `domains/grocery-retail-food-store-access-continuity/`、`domains/snap-ebt-redemption-retailer-payment-continuity/`、`domains/wic-benefit-redemption-infant-maternal-nutrition-continuity/`、`domains/food-bank-pantry-community-food-distribution-continuity/`、`domains/emergency-food-disaster-feeding-continuity/`、`domains/home-delivered-meals-congregate-nutrition-services-continuity/`、`domains/infant-formula-baby-food-supply-safety-continuity/` 和 `domains/prepared-food-restaurant-cafeteria-safety-access-continuity/`：第五十四波正式研究域，分别承载 grocery/食品零售、SNAP EBT 兑换、WIC 母婴营养兑换、食品银行/pantry、灾害供餐、送餐/集体营养服务、婴儿配方/婴幼儿食品供应安全和餐馆/cafeteria 熟食安全可达连续性。
 - `reference/research-model-visualization-toolkit.md`：沉淀科研论文阅读、文献脊梁、模型工具、可视化标准和 Human Infra 定量页面实现路线。
 - `reference/source-card-system.md`：定义论文、书籍、工具、案例、标准和数据集进入项目之前的资料卡片制度。
 - `reference/domain-map.md`：定义根项目与子域的边界、迁移切片、主动不做和验证点。

@@ -990,6 +990,24 @@ Human Infra 不能被设计成更精密的压榨系统。
 - 不收集、复制、处理或要求个人如厕记录、饮水记录、到访轨迹、残障身份、医疗证明、未成年人信息、安防细节、网络拓扑、登录凭据、避难者身份、实时容量、公共电脑记录、服务动物信息或个案法律/医疗/救援材料。
 - 不替代地方政府、公共卫生、水务、应急管理、图书馆、公园部门、FCC/ISP、CISA、ADA coordinator、无障碍专业人员、社会服务、医疗、法律、执法、监管机构或官方申诉/救援渠道。
 
+## 食物获得执行连续性边界
+
+`grocery-retail-food-store-access-continuity`、`snap-ebt-redemption-retailer-payment-continuity`、`wic-benefit-redemption-infant-maternal-nutrition-continuity`、`food-bank-pantry-community-food-distribution-continuity`、`emergency-food-disaster-feeding-continuity`、`home-delivered-meals-congregate-nutrition-services-continuity`、`infant-formula-baby-food-supply-safety-continuity` 和 `prepared-food-restaurant-cafeteria-safety-access-continuity` 关注主体如何通过食品零售、福利兑换、社区发放、灾害供餐、送餐/集体餐、婴儿配方/婴幼儿食品和外部熟食服务获得连续、安全、可负担的营养输入，不是福利规避、支付攻击、个体喂养处方、餐馆推荐、平台规避、投诉威胁或食品安全个案判断入口。
+
+可以做：
+
+- 整理 USDA ERS Food Access / Food Environment Atlas、USDA FNS SNAP / SNAP Retailer / Online Purchasing / WIC / WIC EBT / TEFAP / FDD / Disaster Assistance / D-SNAP、ACL Nutrition Services / Older Americans Act、FDA Infant Formula / Recalls / Food Code / Food Allergies、CDC Infant Nutrition / Food Safety 等公开资料中的机制、对象、变量和边界。
+- 比较食品零售、SNAP EBT、WIC/eWIC、食品银行/pantry、灾害供餐、送餐/集体餐、婴儿配方/婴幼儿食品和餐馆/cafeteria 熟食如何影响营养输入、健康风险、行动能力、照护发现和灾害恢复。
+- 记录食物获得执行资料中的零售可达、授权 vendor、福利兑换、库存短缺、食品召回、过敏原、卫生规范、隐私、资格边界、脆弱群体和禁止用途。
+
+不能做：
+
+- 不提供福利资格规避、EBT/eWIC 破解、PIN 获取、福利倒卖、授权 retailer 欺诈、重复领取、材料造假、食品银行骗领、灾害供餐骗领、库存操纵、囤货套利、配送路线滥用、餐饮平台规避、餐馆差评攻击、卫生检查规避、召回规避、进口规避、假标签、过敏原隐瞒、食品篡改、恐吓投诉或个案法律/医疗/福利策略。
+- 不判断某个人、家庭、儿童、孕产妇、老人、餐馆、食品店、SNAP/WIC 账户、食品银行资格、灾害供餐资格、婴儿配方替代、召回食品、过敏反应、食源性疾病、餐饮投诉、配送订单或营养方案应如何具体处理。
+- 不生成福利申请造假材料、EBT/eWIC 交易规避步骤、PIN 或账户恢复绕过、食品银行领取脚本、灾害物资骗领路径、婴儿配方自制方法、婴幼儿喂养处方、召回食品继续使用建议、餐馆卫生规避流程、平台申诉威胁、法律文件、医疗建议或监管投诉模板。
+- 不收集、复制、处理或要求 EBT/eWIC 卡号、PIN、benefit balance、交易记录、儿童身份、孕产妇健康资料、婴儿喂养记录、家庭收入、地址、配送路线、食品银行领取记录、灾害受助者身份、餐馆员工身份、过敏史、医疗资料、处方、订单号或个案法律/医疗/福利材料。
+- 不替代 USDA FNS、州 SNAP/WIC 机构、授权 retailer/vendor、食品银行、灾害管理机构、ACL/老龄服务机构、FDA、CDC、地方卫生部门、医疗专业人员、注册营养师、毒物中心、消费者保护机构、法律、执法、监管机构或官方申诉/求助渠道。
+
 ## 数据与证据边界
 
 - 原始数据、清洗数据和人工判断必须分层保存。

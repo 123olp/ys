@@ -518,6 +518,30 @@ domains/
 ├── public-accommodation-accessibility-service-continuity/
 │   ├── AGENTS.md
 │   └── README.md
+├── grocery-retail-food-store-access-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── snap-ebt-redemption-retailer-payment-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── wic-benefit-redemption-infant-maternal-nutrition-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── food-bank-pantry-community-food-distribution-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── emergency-food-disaster-feeding-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── home-delivered-meals-congregate-nutrition-services-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── infant-formula-baby-food-supply-safety-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── prepared-food-restaurant-cafeteria-safety-access-continuity/
+│   ├── AGENTS.md
+│   └── README.md
 ├── cognitive-augmentation/
 │   ├── AGENTS.md
 │   └── README.md
@@ -1096,6 +1120,7 @@ domains/
 - `home-access-lock-key-entry-continuity/`、`household-appliance-maintenance-repair-continuity/`、`home-refrigeration-food-storage-continuity/`、`cooking-meal-preparation-kitchen-safety-continuity/`、`laundry-clothing-footwear-hygiene-continuity/`、`household-cleaning-disinfection-pest-control-continuity/`、`postal-parcel-delivery-pickup-continuity/` 和 `household-maintenance-repair-contractor-continuity/` 负责住所进入、家电维护、家庭冷藏、烹饪备餐、衣物鞋履卫生、家庭清洁消毒害虫控制、邮件包裹接收和家庭维修承包商这些家庭物理运行连续性条件。
 - `personal-vehicle-maintenance-recall-repair-continuity/`、`fuel-ev-charging-refueling-access-continuity/`、`parking-curb-access-towing-impound-continuity/`、`walking-bicycling-micromobility-continuity/`、`paratransit-nemt-access-continuity/`、`taxi-rideshare-demand-response-mobility-continuity/`、`transit-fare-payment-toll-account-continuity/` 和 `multimodal-trip-planning-real-time-wayfinding-continuity/` 负责个人车辆维护召回维修、燃料/EV 充电补能、停车路缘拖车扣押、步行骑行微移动、paratransit/NEMT、出租车网约车需求响应交通、交通票卡/过路费账户和多模式实时导向这些个人移动执行连续性条件。
 - `public-restroom-sanitation-hygiene-access-continuity/`、`public-drinking-water-hydration-access-continuity/`、`public-seating-shade-rest-cooling-access-continuity/`、`community-resilience-hub-shelter-center-continuity/`、`public-library-community-anchor-access-continuity/`、`parks-recreation-green-space-access-continuity/`、`public-wifi-device-charging-connectivity-continuity/` 和 `public-accommodation-accessibility-service-continuity/` 负责公共厕所卫生、公共饮水补水、公共座椅遮阴休息降温、社区韧性/避难中心、公共图书馆社区锚点、公园娱乐绿地、公共 Wi-Fi/设备充电和公共场所无障碍服务这些公共空间生存接入连续性条件。
+- `grocery-retail-food-store-access-continuity/`、`snap-ebt-redemption-retailer-payment-continuity/`、`wic-benefit-redemption-infant-maternal-nutrition-continuity/`、`food-bank-pantry-community-food-distribution-continuity/`、`emergency-food-disaster-feeding-continuity/`、`home-delivered-meals-congregate-nutrition-services-continuity/`、`infant-formula-baby-food-supply-safety-continuity/` 和 `prepared-food-restaurant-cafeteria-safety-access-continuity/` 负责 grocery/食品零售、SNAP EBT 兑换、WIC 母婴营养兑换、食品银行/pantry、灾害供餐、送餐/集体营养服务、婴儿配方/婴幼儿食品供应安全和餐馆/cafeteria 熟食安全可达这些食物获得执行连续性条件。
 - `access-to-justice-legal-aid/`、`civic-participation-election-access/`、`migration-displacement-humanitarian-continuity/` 和 `digital-inclusion-connectivity/` 负责司法可及、公民参与、迁移流离失所人道连续性和数字连接这些制度参与与公共服务接入条件。
 - `personal-safety-violence-prevention/` 和 `product-safety-recall-systems/` 负责暴力预防、受害者支持、产品缺陷报告、召回和纠正这些公共安全连续性条件。
 - `cellular-reprogramming/` 负责山中因子、部分重编程、化学重编程、AI 因子设计和表观遗传编辑等“细胞状态可重写”谱系，不提供实验协议或人体应用建议。
@@ -1124,6 +1149,7 @@ domains/
 - `home-access-lock-key-entry-continuity/`、`household-appliance-maintenance-repair-continuity/`、`home-refrigeration-food-storage-continuity/`、`cooking-meal-preparation-kitchen-safety-continuity/`、`laundry-clothing-footwear-hygiene-continuity/`、`household-cleaning-disinfection-pest-control-continuity/`、`postal-parcel-delivery-pickup-continuity/` 和 `household-maintenance-repair-contractor-continuity/` 负责家庭物理运行连续性的证据边界，不提供开锁入侵、危险维修、燃气电气施工、食品处置、化学品混合、杀虫剂使用、邮件拦截、冒领、承包商规避、理赔策略、法律意见或个体购买建议。
 - `personal-vehicle-maintenance-recall-repair-continuity/`、`fuel-ev-charging-refueling-access-continuity/`、`parking-curb-access-towing-impound-continuity/`、`walking-bicycling-micromobility-continuity/`、`paratransit-nemt-access-continuity/`、`taxi-rideshare-demand-response-mobility-continuity/`、`transit-fare-payment-toll-account-continuity/` 和 `multimodal-trip-planning-real-time-wayfinding-continuity/` 负责个人移动执行连续性的证据边界，不提供车辆维修步骤、危险燃料处理、充电桩破解、停车执法规避、交通违法、共享设备破解、NEMT 资格规避、报销欺诈、平台规避、逃票、票卡破解、过路费规避、路线跟踪或个案申诉/法律策略。
 - `public-restroom-sanitation-hygiene-access-continuity/`、`public-drinking-water-hydration-access-continuity/`、`public-seating-shade-rest-cooling-access-continuity/`、`community-resilience-hub-shelter-center-continuity/`、`public-library-community-anchor-access-continuity/`、`parks-recreation-green-space-access-continuity/`、`public-wifi-device-charging-connectivity-continuity/` 和 `public-accommodation-accessibility-service-continuity/` 负责公共空间生存接入连续性的证据边界，不提供厕所定位跟踪、设施破坏、供水篡改、污染制造、露宿/避难资格规避、公共 Wi-Fi 攻击、设备盗充、服务动物欺诈、ADA 诉讼策略、儿童/弱势群体跟踪、实时拥挤跟踪、执法规避或个案法律/医疗/救援建议。
+- `grocery-retail-food-store-access-continuity/`、`snap-ebt-redemption-retailer-payment-continuity/`、`wic-benefit-redemption-infant-maternal-nutrition-continuity/`、`food-bank-pantry-community-food-distribution-continuity/`、`emergency-food-disaster-feeding-continuity/`、`home-delivered-meals-congregate-nutrition-services-continuity/`、`infant-formula-baby-food-supply-safety-continuity/` 和 `prepared-food-restaurant-cafeteria-safety-access-continuity/` 负责食物获得执行连续性的证据边界，不提供福利资格规避、EBT/eWIC 破解、PIN 获取、盗刷、福利转售、食品发放重复领取、物资骗领、囤积套利、婴儿喂养医疗建议、配方自制、召回规避、餐馆推荐、饮食处方、外卖平台规避、个案投诉/法律/医疗/福利策略。
 - `regenerative-medicine/`、`cancer-control/` 和 `immune-maintenance/` 负责身体基底维护相关的机制、风险和证据边界。
 - `rehabilitation-functioning/`、`assistive-technology-access/`、`skin-barrier-wound-healing/` 和 `sensory-continuity/` 负责功能恢复、能力补偿、外界屏障和感官反馈连续性。
 - `antimicrobial-resilience/` 负责抗微生物耐药、感染控制和现代医学抗感染底座。

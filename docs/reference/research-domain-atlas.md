@@ -23,6 +23,7 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
   -> 家庭物理操作系统必须让住所、食物、卫生、物品、投递和维修可连续
   -> 个人移动执行系统必须让车辆、补能、停车、主动出行、辅助交通、按需交通、支付账户和实时导向可连续
   -> 公共空间生存接入系统必须让离家后的如厕、补水、休息降温、避难、连接、绿地恢复和无障碍服务可连续
+  -> 食物获得执行系统必须让日常采购、福利兑换、社区发放、灾害供餐、送餐服务、婴儿配方和外部熟食可连续
   -> 数字身份、AI 代理、供应链、生物安全和极端栖居等外部技术底座必须可控
   -> 治理和权利必须保护同意、退出和身份
   -> 测量、预测和反馈必须让维护过程可校正
@@ -281,6 +282,14 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 公园绿地必须支撑恢复 | `parks-recreation-green-space-access-continuity/` | 公园、绿地、步道、运动场、游乐场、自然接触、公共娱乐设施 | 绿地不可达会减少身体活动、心理恢复、社交连接和热环境缓冲 |
 | 公共连接和充电必须不断线 | `public-wifi-device-charging-connectivity-continuity/` | 公共 Wi-Fi、公共电脑、设备充电、断电通信恢复、数字服务访问 | 失联、没电、导航支付失败和错过告警会截断离家任务与灾害恢复 |
 | 公共场所无障碍必须连续 | `public-accommodation-accessibility-service-continuity/` | 无障碍入口、有效沟通、合理便利、服务动物、辅助设备、临时中断 | 身体、感官、认知和沟通差异会被服务接口失败转化为制度排除 |
+| 日常食品零售必须可达 | `grocery-retail-food-store-access-continuity/` | Grocery、食品零售、低收入低可达地区、营业时间、支付、替代采购 | 食品店不可达、价格/支付/距离摩擦会把食物供给变成不可执行的营养输入 |
+| SNAP EBT 必须能真实兑换 | `snap-ebt-redemption-retailer-payment-continuity/` | SNAP EBT、授权零售商、在线购买、PIN、交易失败、账户安全 | 福利存在但不能在合规零售端兑换，会把社会保护变成账面权益 |
+| WIC 母婴营养兑换必须连续 | `wic-benefit-redemption-infant-maternal-nutrition-continuity/` | WIC、eWIC、vendor、食品包、婴儿配方、母婴营养 | 母婴营养福利、配方奶和指定食品不可兑换会直接压缩孕产妇、婴儿和儿童发育窗口 |
+| 社区食品发放必须可靠 | `food-bank-pantry-community-food-distribution-continuity/` | 食品银行、pantry、TEFAP、库存、发放点、资格、隐私 | 市场和福利不足时，社区发放失败会让短期饥饿、羞辱成本和健康风险放大 |
+| 灾害供餐必须接住断供窗口 | `emergency-food-disaster-feeding-continuity/` | 灾害供餐、D-SNAP、应急食品、临时餐点、物流、生命线恢复 | 灾害切断零售、交通、冷链和厨房后，供餐失败会把危机变成营养和安全崩溃 |
+| 送餐与集体营养服务必须不中断 | `home-delivered-meals-congregate-nutrition-services-continuity/` | 送餐上门、集体餐、老年营养服务、配送、照护发现 | 行动受限或社交孤立主体无法外出取食时，送餐和集体餐中断会同时削弱营养、监督和关系支持 |
+| 婴儿配方和婴幼儿食品必须安全供应 | `infant-formula-baby-food-supply-safety-continuity/` | 婴儿配方、婴幼儿食品、短缺、召回、过敏原、喂养安全 | 婴儿食品短缺、召回或错误替代会把供应链问题直接转成高脆弱主体风险 |
+| 外部熟食必须安全可达 | `prepared-food-restaurant-cafeteria-safety-access-continuity/` | 餐馆、cafeteria、熟食、食品规范、过敏原、食源性暴发 | 主体依赖外部供餐时，卫生、过敏原、停业或价格摩擦会把便利输入变成感染、过敏和任务失败 |
 | 栖居空间可保护生命 | `building-fire-life-safety-codes/` | 建筑规范、消防规范、疏散、烟雾报警、无障碍、结构韧性 | 居住、照护、学习、工作和公共空间成为火灾、烟雾、结构和疏散风险源 |
 | 关键物质系统可制造修复 | `manufacturing-repair-capacity/` | 制造、维修、维护、备件、质量、本地生产、关键设备恢复 | 设备损坏、备件短缺、质量缺陷和生产能力不足导致服务与工具系统失效 |
 | 公共预算可转化为服务 | `public-procurement-contracting-capacity/` | 公共采购、合同、供应商管理、应急采购、透明度、交付验收 | 有预算和政策但采购失败、合同失效、腐败、延误或劣质交付 |
@@ -652,6 +661,14 @@ risk-engineering
   -> parks-recreation-green-space-access-continuity
   -> public-wifi-device-charging-connectivity-continuity
   -> public-accommodation-accessibility-service-continuity
+  -> grocery-retail-food-store-access-continuity
+  -> snap-ebt-redemption-retailer-payment-continuity
+  -> wic-benefit-redemption-infant-maternal-nutrition-continuity
+  -> food-bank-pantry-community-food-distribution-continuity
+  -> emergency-food-disaster-feeding-continuity
+  -> home-delivered-meals-congregate-nutrition-services-continuity
+  -> infant-formula-baby-food-supply-safety-continuity
+  -> prepared-food-restaurant-cafeteria-safety-access-continuity
   -> community-resource-navigation
   -> social-determinants-community-vulnerability
   -> public-service-design-accessibility

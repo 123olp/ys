@@ -73,6 +73,7 @@ docs/
 │   ├── 0055-add-fifty-first-wave-household-operations-continuity-domains.md
 │   ├── 0056-add-fifty-second-wave-personal-mobility-execution-continuity-domains.md
 │   ├── 0057-add-fifty-third-wave-public-realm-survival-access-continuity-domains.md
+│   ├── 0058-add-fifty-fourth-wave-food-acquisition-execution-continuity-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -399,4 +400,12 @@ docs/
 271. Read `../domains/parks-recreation-green-space-access-continuity/README.md` if you are working on parks, recreation, green space, trails, playgrounds, public exercise, nature access, or restorative public space.
 272. Read `../domains/public-wifi-device-charging-connectivity-continuity/README.md` if you are working on public Wi-Fi, public computers, device charging, outage connectivity, emergency communications, or digital task continuity outside home.
 273. Read `../domains/public-accommodation-accessibility-service-continuity/README.md` if you are working on public accommodations, ADA Title II/III, effective communication, service animals, reasonable accommodations, or accessible service continuity.
-274. Enter a domain under `../domains/`.
+274. Read `../domains/grocery-retail-food-store-access-continuity/README.md` if you are working on grocery stores, food retail, supermarkets, farmers markets, online pickup/delivery, food prices, or retail food access continuity.
+275. Read `../domains/snap-ebt-redemption-retailer-payment-continuity/README.md` if you are working on SNAP EBT, authorized retailers, EBT cards, online SNAP purchasing, benefit redemption, transaction failures, or food-benefit payment continuity.
+276. Read `../domains/wic-benefit-redemption-infant-maternal-nutrition-continuity/README.md` if you are working on WIC, eWIC, food packages, infant formula through WIC, maternal/infant nutrition, or WIC redemption continuity.
+277. Read `../domains/food-bank-pantry-community-food-distribution-continuity/README.md` if you are working on food banks, pantries, TEFAP, community food distribution, donated food logistics, or emergency household food buffers.
+278. Read `../domains/emergency-food-disaster-feeding-continuity/README.md` if you are working on disaster feeding, emergency food distribution, D-SNAP, shelter meals, emergency food packages, or disaster nutrition assistance.
+279. Read `../domains/home-delivered-meals-congregate-nutrition-services-continuity/README.md` if you are working on home-delivered meals, congregate meals, Older Americans Act nutrition services, Meals on Wheels, senior meals, or disability-related meal delivery.
+280. Read `../domains/infant-formula-baby-food-supply-safety-continuity/README.md` if you are working on infant formula, baby food, specialty formula, formula recalls, shortages, WIC substitutions, or early-life food supply safety.
+281. Read `../domains/prepared-food-restaurant-cafeteria-safety-access-continuity/README.md` if you are working on prepared food, restaurants, cafeterias, workplace/school/hospital meals, takeout, food allergens, menu information, or restaurant food safety access.
+282. Enter a domain under `../domains/`.

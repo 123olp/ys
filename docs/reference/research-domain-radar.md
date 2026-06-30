@@ -364,6 +364,14 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `parks-recreation-green-space-access-continuity/` | 公园、娱乐和绿地决定低成本身体活动、心理恢复、社交连接、儿童活动和热环境缓冲是否可达 |
 | `public-wifi-device-charging-connectivity-continuity/` | 公共 Wi-Fi 和设备充电决定主体离家、旅行或断电时是否仍能通信、导航、支付、求助和访问数字服务 |
 | `public-accommodation-accessibility-service-continuity/` | 公共场所无障碍和服务连续性决定身体、感官、认知和沟通差异是否会被公共服务接口排除 |
+| `grocery-retail-food-store-access-continuity/` | Grocery、食品零售和低收入低可达地区决定主体是否能把钱、距离、营业时间和支付方式转化为真实食物 |
+| `snap-ebt-redemption-retailer-payment-continuity/` | SNAP EBT、授权零售商和在线购买决定福利是否能在合规零售场景中被安全、连续、低摩擦兑换 |
+| `wic-benefit-redemption-infant-maternal-nutrition-continuity/` | WIC、eWIC、vendor、食品包和婴儿配方决定孕产妇、婴儿和儿童的指定营养支持是否能真实到手 |
+| `food-bank-pantry-community-food-distribution-continuity/` | 食品银行、pantry、TEFAP 和社区发放决定市场、收入或福利不足时是否还有低门槛食物缓冲 |
+| `emergency-food-disaster-feeding-continuity/` | 灾害供餐、D-SNAP 和应急食品分发决定零售、交通、冷链和厨房中断时主体是否仍能获得食物 |
+| `home-delivered-meals-congregate-nutrition-services-continuity/` | 送餐上门、集体餐和老年营养服务决定行动受限或孤立主体是否能持续获得营养、照护发现和关系支持 |
+| `infant-formula-baby-food-supply-safety-continuity/` | 婴儿配方和婴幼儿食品供应安全决定最脆弱主体是否会被短缺、召回、污染或错误替代直接暴露 |
+| `prepared-food-restaurant-cafeteria-safety-access-continuity/` | 餐馆、cafeteria 和熟食服务决定外部供餐是否在卫生、过敏原、价格和服务连续性上可靠 |
 
 ## 来源信号
 
@@ -380,6 +388,26 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | DOE appliance standards, ENERGY STAR and CPSC recalls | 提示家用电器把能源、食品、清洁、温控和安全风险连接到家庭任务连续性 |
 | USDA FSIS, FDA and CDC food safety | 提示家庭冷藏和食品保存是食物系统进入家庭后的独立风险窗口 |
 | USDA / CDC food safety and NFPA cooking safety | 提示烹饪备餐同时连接营养、火灾、伤害和食源性风险 |
+| https://www.ers.usda.gov/data-products/food-access-research-atlas/ | 提示 grocery 和食品零售可达性可以用低收入、低可达、距离和空间分布变量进入主体营养输入模型 |
+| https://www.ers.usda.gov/data-products/food-environment-atlas/ | 提示食物环境不是单一“有没有食物”，还包括零售、价格、社会经济、健康和地方环境变量 |
+| https://www.fns.usda.gov/snap/supplemental-nutrition-assistance-program | 提示 SNAP 是食物购买能力的关键福利入口，但必须通过兑换、支付和零售可达转化为实际食物 |
+| https://www.fns.usda.gov/snap/retailer | 提示 SNAP 授权零售商是福利权益与食品零售之间的执行接口 |
+| https://www.fns.usda.gov/snap/online-purchasing-pilot | 提示在线购买把 SNAP 兑换扩展到配送、账户、平台、支付和服务地区边界 |
+| https://www.fns.usda.gov/wic | 提示 WIC 将孕产妇、婴儿和儿童营养支持连接到指定食品、授权 vendor 和兑换执行 |
+| https://www.fns.usda.gov/wic/food-packages | 提示 WIC 食品包把营养政策转化为具体可兑换食品类别和供应约束 |
+| https://www.fns.usda.gov/wic/wic-ebt | 提示 eWIC 把母婴营养支持接入电子福利、vendor 系统、支付故障和账户安全边界 |
+| https://www.fns.usda.gov/tefap/emergency-food-assistance-program | 提示 TEFAP 和社区食品发放是市场、收入和福利不足时的补位食物基础设施 |
+| https://www.fns.usda.gov/fdd | 提示 USDA 食品分发系统把采购、库存、配送和机构网络连接到社区营养输入 |
+| https://www.fns.usda.gov/disaster/disaster-assistance | 提示灾害供餐和灾害食品援助是零售、厨房、交通和冷链中断时的短窗口生存接口 |
+| https://www.fns.usda.gov/snap/disaster-snap | 提示 D-SNAP 将灾害状态、资格、申请、兑换和零售可达连接成应急食物执行链 |
+| https://acl.gov/programs/health-wellness/nutrition-services | 提示老年营养服务把送餐、集体餐、照护发现、社交连接和行动受限群体营养输入连接起来 |
+| https://acl.gov/about-acl/authorizing-statutes/older-americans-act | 提示 Older Americans Act 为送餐和集体营养服务提供制度语境与公共服务边界 |
+| https://www.fda.gov/food/people-risk-foodborne-illness/infant-formula | 提示婴儿配方属于高脆弱主体食品安全和供应连续性对象，不能当成普通 grocery 条目处理 |
+| https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts | 提示召回和安全警报决定食品、配方和熟食相关风险能否被及时停止和替代 |
+| https://www.cdc.gov/infant-toddler-nutrition/ | 提示婴幼儿营养资料需要保留医学边界，不能被项目转化为个体喂养处方 |
+| https://www.fda.gov/food/fda-food-code/food-code-2022 | 提示餐馆、cafeteria 和熟食服务依赖食品规范、许可、卫生和机构执行 |
+| https://www.cdc.gov/food-safety/ | 提示食源性风险覆盖家庭、零售、餐馆、机构供餐和社区供餐等外部食物入口 |
+| https://www.fda.gov/food/food-labeling-nutrition/food-allergies | 提示过敏原是熟食、包装食品和婴幼儿食品安全可达性的独立变量 |
 | CDC hygiene, Ready.gov and NIOSH | 提示衣物、鞋履、洗衣和卫生用品影响尊严、外出、工作和灾害恢复 |
 | CDC cleaning, EPA pesticide labels, NPIC and Poison Help | 提示家庭清洁消毒和害虫控制具有独立的感染、化学和毒性边界 |
 | USPS, UPU and FTC consumer guidance | 提示邮件包裹把数字交易、证件、药品和物理资源交付连接到主体 |

@@ -568,6 +568,14 @@ flowchart TD
     H --> PRGSAC[parks-recreation-green-space-access-continuity<br/>公园绿地 / 恢复空间]
     H --> PWDCCC[public-wifi-device-charging-connectivity-continuity<br/>公共 Wi-Fi / 设备充电]
     H --> PAASC[public-accommodation-accessibility-service-continuity<br/>公共场所 / 无障碍服务]
+    H --> GRFSAC[grocery-retail-food-store-access-continuity<br/>食品零售 / Grocery 可达]
+    H --> SERPC[snap-ebt-redemption-retailer-payment-continuity<br/>SNAP EBT / 兑换支付]
+    H --> WBRIMN[wic-benefit-redemption-infant-maternal-nutrition-continuity<br/>WIC / 母婴营养兑换]
+    H --> FBPCFD[food-bank-pantry-community-food-distribution-continuity<br/>食品银行 / 社区发放]
+    H --> EFDFC[emergency-food-disaster-feeding-continuity<br/>灾害供餐 / 应急食品]
+    H --> HDMCNS[home-delivered-meals-congregate-nutrition-services-continuity<br/>送餐集体餐 / 营养服务]
+    H --> IFBFSSC[infant-formula-baby-food-supply-safety-continuity<br/>婴儿配方 / 食品安全供应]
+    H --> PFRCAC[prepared-food-restaurant-cafeteria-safety-access-continuity<br/>熟食餐馆 / 食堂安全可达]
     H --> MF[measurement-feedback<br/>测量 / 预测 / 反馈]
     H --> C[disembodied-cns<br/>去具身中枢生命系统]
     H --> M[memory-editing<br/>记忆编辑与人格连续性]
@@ -808,6 +816,14 @@ flowchart TD
 | [Parks Recreation Green Space Access Continuity](domains/parks-recreation-green-space-access-continuity/README.md) | 公园、绿地、步道、运动场、游乐场、自然接触和公共娱乐设施 | 让身体活动、心理恢复、社交连接和热环境缓冲具备低成本公共空间 | 不提供违规进入、设施破坏、露宿规避、儿童/弱势群体跟踪或野外风险操作 |
 | [Public Wifi Device Charging Connectivity Continuity](domains/public-wifi-device-charging-connectivity-continuity/README.md) | 公共 Wi-Fi、公共电脑、设备充电点、断电通信恢复和数字服务访问 | 防止失联、错过告警、导航支付失败、医疗门户断裂和信息失明 | 不提供网络攻击、认证绕过、蹭网滥用、设备盗充、公共电脑规避或账号盗用 |
 | [Public Accommodation Accessibility Service Continuity](domains/public-accommodation-accessibility-service-continuity/README.md) | 公共场所无障碍、合理便利、有效沟通、服务动物、辅助设备和临时中断 | 让身体、感官、认知和沟通差异不再直接截断公共任务入口 | 不提供 ADA 诉讼策略、服务动物欺诈、伪造残障文件、规避规则或法律建议 |
+| [Grocery Retail Food Store Access Continuity](domains/grocery-retail-food-store-access-continuity/README.md) | 超市、杂货店、小型食品零售、农贸市场、线上取货配送、价格和支付入口 | 让收入、福利、交通和时间能够转化为真实日常食物输入 | 不提供购物推荐、价格套利、偷盗、优惠券滥用、支付规避或配送平台规避 |
+| [SNAP EBT Redemption Retailer Payment Continuity](domains/snap-ebt-redemption-retailer-payment-continuity/README.md) | SNAP EBT 卡、PIN、余额、授权零售商、在线购买、交易失败和账户恢复 | 让营养援助从资格记录转成可购买食物，降低支付与账户摩擦 | 不提供资格规避、福利欺诈、EBT 破解、PIN 获取、盗刷、福利转售或零售商欺诈 |
+| [WIC Benefit Redemption Infant Maternal Nutrition Continuity](domains/wic-benefit-redemption-infant-maternal-nutrition-continuity/README.md) | WIC 食物包、eWIC、授权商店、婴儿配方、母婴营养和转介服务 | 让孕产妇、婴幼儿和儿童获得稳定营养输入与早期发展支持 | 不提供资格规避、eWIC 破解、配方囤积转售、婴儿喂养医疗建议或个案申诉策略 |
+| [Food Bank Pantry Community Food Distribution Continuity](domains/food-bank-pantry-community-food-distribution-continuity/README.md) | 食品银行、pantry、TEFAP、社区发放、捐赠物流、开放时段和尊严保护 | 在收入、福利、零售或灾害冲击下提供最后食物缓冲层 | 不提供资格规避、重复领取、捐赠食品转售、库存操纵、食品处置决策或福利策略 |
+| [Emergency Food Disaster Feeding Continuity](domains/emergency-food-disaster-feeding-continuity/README.md) | 灾害供餐、应急食品包、D-SNAP、避难所餐食、学校/社区紧急供餐 | 在厨房、商店、交通、电力、支付和常规福利断裂时维持能量输入 | 不提供 D-SNAP 规避、骗领、物资抢占、发放点实时跟踪、囤积套利或救援指挥 |
+| [Home Delivered Meals Congregate Nutrition Services Continuity](domains/home-delivered-meals-congregate-nutrition-services-continuity/README.md) | Home-delivered meals、congregate meals、营养筛查、送餐安全观察和社交接触 | 让老年、残障和行动受限主体在家或社区中维持摄食、社交和独立生活 | 不提供资格判断、餐食处方、医疗饮食建议、配送路线、志愿者调度或个案申诉 |
+| [Infant Formula Baby Food Supply Safety Continuity](domains/infant-formula-baby-food-supply-safety-continuity/README.md) | 婴儿配方、特殊医学配方、婴幼儿食品、召回、短缺、WIC 替代和制造质量 | 让早期生命营养输入在短缺、污染、召回和替代失败中保持可信 | 不提供配方替代建议、配方自制、囤积转售、进口规避、召回规避或个案护理建议 |
+| [Prepared Food Restaurant Cafeteria Safety Access Continuity](domains/prepared-food-restaurant-cafeteria-safety-access-continuity/README.md) | 餐馆、食堂、外卖、即食餐、菜单信息、过敏原、食品安全和可负担外食 | 在离家、厨房不可用、时间受限或照护压力下提供替代餐食基础设施 | 不提供餐馆推荐、点餐建议、饮食处方、过敏医疗建议、外卖平台规避或投诉策略 |
 | [Regenerative Medicine](domains/regenerative-medicine/README.md) | 干细胞、组织工程、器官再生、类器官、移植 | 器官/组织修复框架、功能终点和整合风险 | 不提供手术、细胞制备、移植或人体实验步骤 |
 | [Rehabilitation And Functioning](domains/rehabilitation-functioning/README.md) | 康复、功能恢复、失能预防、活动能力、自理和社会参与 | 功能状态、活动能力、参与能力和失能风险模型 | 不提供个人康复处方、训练计划、诊断或治疗建议 |
 | [Cancer Control](domains/cancer-control/README.md) | 癌症预防、早筛、治疗、复发、肿瘤演化 | 癌症风险函数、证据层级和长期控制变量 | 不提供诊断、治疗方案、处方、剂量或个体用药建议 |
@@ -1038,6 +1054,14 @@ human_infra/
 │   ├── parks-recreation-green-space-access-continuity/
 │   ├── public-wifi-device-charging-connectivity-continuity/
 │   ├── public-accommodation-accessibility-service-continuity/
+│   ├── grocery-retail-food-store-access-continuity/
+│   ├── snap-ebt-redemption-retailer-payment-continuity/
+│   ├── wic-benefit-redemption-infant-maternal-nutrition-continuity/
+│   ├── food-bank-pantry-community-food-distribution-continuity/
+│   ├── emergency-food-disaster-feeding-continuity/
+│   ├── home-delivered-meals-congregate-nutrition-services-continuity/
+│   ├── infant-formula-baby-food-supply-safety-continuity/
+│   ├── prepared-food-restaurant-cafeteria-safety-access-continuity/
 │   ├── cognitive-augmentation/
 │   ├── digital-identity-security/
 │   ├── disembodied-cns/
@@ -1322,5 +1346,6 @@ flowchart LR
 - 2026-06-30：新增第五十一波 8 个家庭物理运行连续性域，覆盖住所进入钥匙门禁、家用电器维护维修、家庭冷藏食品保存、烹饪备餐厨房安全、洗衣衣物鞋履卫生、家庭清洁消毒害虫控制、邮件包裹投递自提和家庭维修承包商服务。
 - 2026-06-30：新增第五十二波 8 个个人移动执行连续性域，覆盖个人车辆维护召回维修、燃料/EV 充电补能、停车路缘拖车扣押、步行骑行微移动、paratransit/NEMT、出租车网约车需求响应交通、交通票卡/过路费账户和多模式实时导向。
 - 2026-06-30：新增第五十三波 8 个公共空间生存接入连续性域，覆盖公共厕所卫生、公共饮水补水、公共座椅遮阴休息降温、社区韧性/避难中心、公共图书馆社区锚点、公园娱乐绿地、公共 Wi-Fi/设备充电和公共场所无障碍服务。
+- 2026-06-30：新增第五十四波 8 个食物获得执行连续性域，覆盖 grocery/食品零售、SNAP EBT 兑换、WIC 母婴营养兑换、食品银行/pantry、灾害供餐、送餐/集体营养服务、婴儿配方/婴幼儿食品供应安全和餐馆/cafeteria 熟食安全可达。
 
 完整记录见 [CHANGELOG.md](CHANGELOG.md)。
