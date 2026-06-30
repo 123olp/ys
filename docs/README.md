@@ -40,6 +40,7 @@ docs/
 │   ├── 0022-add-eighteenth-wave-lab-blood-waste-radiation-chemical-critical-materials-domains.md
 │   ├── 0023-add-nineteenth-wave-air-food-occupational-device-sterilization-accessibility-domains.md
 │   ├── 0024-add-twentieth-wave-clinical-drug-ems-surgical-road-safety-domains.md
+│   ├── 0025-add-twenty-first-wave-rural-homelessness-correctional-disability-dementia-infectious-continuity-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -163,4 +164,10 @@ docs/
 68. Read `../domains/emergency-medical-services-prehospital-care/README.md` if you are working on EMS, prehospital care, dispatch, response time, ambulance systems, or time-critical acute response.
 69. Read `../domains/surgical-anesthesia-perioperative-safety/README.md` if you are working on surgical safety, anesthesia safety, perioperative quality, surgical checklist, or preventable surgical complications.
 70. Read `../domains/road-traffic-injury-prevention-safe-mobility/README.md` if you are working on road traffic injury prevention, safe system, speed management, vehicle safety, or safe mobility.
-71. Enter a domain under `../domains/`.
+71. Read `../domains/rural-health-access-geographic-equity/README.md` if you are working on rural health, geographic access, rural workforce, hospital/pharmacy closure, telehealth, EMS distance, or rural equity.
+72. Read `../domains/homelessness-unsheltered-health-continuity/README.md` if you are working on homelessness, unsheltered health, shelters, street outreach, housing continuity, hygiene, safety, or service access.
+73. Read `../domains/correctional-health-reentry-continuity/README.md` if you are working on correctional health, incarceration, jail/prison healthcare, reentry, medication continuity, Medicaid transition, or release planning systems.
+74. Read `../domains/disability-services-independent-living/README.md` if you are working on disability services, independent living, HCBS, personal assistance, reasonable accommodation, assistive technology, or community integration.
+75. Read `../domains/dementia-cognitive-decline-care-continuity/README.md` if you are working on dementia, cognitive decline, Alzheimer’s, caregiver burden, dementia care continuity, safety, dignity, or service navigation.
+76. Read `../domains/chronic-infectious-disease-care-continuity/README.md` if you are working on HIV, TB, viral hepatitis, long-course infectious disease care, treatment continuity, stigma, drug resistance, or public-health follow-up.
+77. Enter a domain under `../domains/`.

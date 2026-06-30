@@ -100,6 +100,12 @@
 - `emergency-medical-services-prehospital-care/`：急救医疗服务与院前照护，整理 EMS、调度、响应时间、院前分诊、转运和时间关键响应。
 - `surgical-anesthesia-perioperative-safety/`：手术、麻醉与围手术期安全，整理手术安全、麻醉安全、团队检查、并发症预防和围手术期质量。
 - `road-traffic-injury-prevention-safe-mobility/`：道路交通伤害预防与安全移动，整理安全系统、速度管理、车辆安全、交通伤害监测和安全移动。
+- `rural-health-access-geographic-equity/`：农村健康可及与地理公平，整理地理距离、服务密度、宽带、交通、卫生人力和农村服务连续性。
+- `homelessness-unsheltered-health-continuity/`：无家可归、露宿状态与健康连续性，整理庇护、住房服务、卫生、安全、身份、外展和照护断点。
+- `correctional-health-reentry-continuity/`：羁押健康与重返社会连续性，整理羁押内健康、释放转介、药物、身份、住房、福利和社区重返。
+- `disability-services-independent-living/`：残障服务与独立生活，整理独立生活、HCBS、个人协助、合理便利、辅助技术和社区融合。
+- `dementia-cognitive-decline-care-continuity/`：痴呆、认知衰退与照护连续性，整理认知退行、照护计划、照护者负担、尊严、安全和服务导航。
+- `chronic-infectious-disease-care-continuity/`：慢性与长疗程传染病照护连续性，整理 HIV、结核、病毒性肝炎、治疗连续性、耐药、隐私和去污名。
 - `insurance-risk-transfer/`：保险与风险转移，整理健康、失业、工伤、残障、灾害、存款、养老金等风险池和保障缺口。
 - `childcare-family-continuity/`：托育与家庭连续性，整理托育可及、费用、质量、早期儿童发展、父母工作连续性和家庭压力。
 - `emergency-preparedness-response/`：应急准备与响应，整理灾害准备、预警、应急通信、急救医疗、安置和恢复。

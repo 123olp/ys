@@ -23,6 +23,7 @@ All notable repository structure changes are recorded here.
 - Added eighteenth-wave laboratory, biovigilance, waste, radiation, chemical, and critical-materials domain skeletons for public health laboratory diagnostic capacity, blood/organ/tissue biovigilance and transplantation, waste management and hazardous-materials continuity, radiation/nuclear safety protection, chemical safety/poison control toxicology, and critical minerals/materials resilience.
 - Added nineteenth-wave air, food, occupational, device, sterilization, and accessibility domain skeletons for air quality/ventilation exposure control, food safety/contamination control, occupational exposure/industrial hygiene, medical device/equipment safety maintenance, sterilization/disinfection infection control, and built-environment accessibility/universal design.
 - Added twentieth-wave clinical, drug, EMS, surgical, and road-safety domain skeletons for clinical laboratory diagnostic quality, pharmacovigilance/drug safety monitoring, pharmaceutical quality/supply integrity, emergency medical services/prehospital care, surgical/anesthesia perioperative safety, and road traffic injury prevention/safe mobility.
+- Added twenty-first-wave structural-vulnerability and care-continuity domain skeletons for rural health access/geographic equity, homelessness/unsheltered health continuity, correctional health/reentry continuity, disability services/independent living, dementia/cognitive decline care continuity, and chronic infectious disease care continuity.
 
 ## 2026-06-29
 

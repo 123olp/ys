@@ -33,6 +33,7 @@ docs/
 │   ├── 0022-add-eighteenth-wave-lab-blood-waste-radiation-chemical-critical-materials-domains.md
 │   ├── 0023-add-nineteenth-wave-air-food-occupational-device-sterilization-accessibility-domains.md
 │   ├── 0024-add-twentieth-wave-clinical-drug-ems-surgical-road-safety-domains.md
+│   ├── 0025-add-twenty-first-wave-rural-homelessness-correctional-disability-dementia-infectious-continuity-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -115,6 +116,7 @@ docs/
 - `domains/public-health-laboratory-diagnostic-capacity/`、`domains/blood-organ-tissue-biovigilance-transplantation/`、`domains/waste-management-hazardous-materials-continuity/`、`domains/radiation-nuclear-safety-protection/`、`domains/chemical-safety-poison-control-toxicology/` 和 `domains/critical-minerals-materials-resilience/`：第十八波正式研究域，分别承载公共卫生实验室诊断能力、血液器官组织生物警戒、废弃物危险材料连续性、辐射核安全防护、化学安全中毒控制和关键矿物材料韧性。
 - `domains/air-quality-ventilation-exposure-control/`、`domains/food-safety-contamination-control/`、`domains/occupational-exposure-industrial-hygiene/`、`domains/medical-device-equipment-safety-maintenance/`、`domains/sterilization-disinfection-infection-control/` 和 `domains/built-environment-accessibility-universal-design/`：第十九波正式研究域，分别承载空气质量通风暴露控制、食品安全污染控制、职业暴露工业卫生、医疗设备安全维护、灭菌消毒感染控制和建成环境无障碍通用设计。
 - `domains/clinical-laboratory-diagnostic-quality/`、`domains/pharmacovigilance-drug-safety-monitoring/`、`domains/pharmaceutical-quality-supply-integrity/`、`domains/emergency-medical-services-prehospital-care/`、`domains/surgical-anesthesia-perioperative-safety/` 和 `domains/road-traffic-injury-prevention-safe-mobility/`：第二十波正式研究域，分别承载临床检验诊断质量、药物警戒药品安全、药品质量供应完整性、急救医疗服务院前照护、手术麻醉围手术期安全和道路交通伤害预防。
+- `domains/rural-health-access-geographic-equity/`、`domains/homelessness-unsheltered-health-continuity/`、`domains/correctional-health-reentry-continuity/`、`domains/disability-services-independent-living/`、`domains/dementia-cognitive-decline-care-continuity/` 和 `domains/chronic-infectious-disease-care-continuity/`：第二十一波正式研究域，分别承载农村健康可及、无家可归健康连续性、羁押重返健康连续性、残障独立生活、痴呆认知衰退照护和慢性传染病照护连续性。
 - `reference/research-model-visualization-toolkit.md`：沉淀科研论文阅读、文献脊梁、模型工具、可视化标准和 Human Infra 定量页面实现路线。
 - `reference/source-card-system.md`：定义论文、书籍、工具、案例、标准和数据集进入项目之前的资料卡片制度。
 - `reference/domain-map.md`：定义根项目与子域的边界、迁移切片、主动不做和验证点。

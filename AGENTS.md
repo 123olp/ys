@@ -125,6 +125,12 @@ human_infra/
     ├── emergency-medical-services-prehospital-care/ # 急救医疗服务与院前照护
     ├── surgical-anesthesia-perioperative-safety/ # 手术、麻醉与围手术期安全
     ├── road-traffic-injury-prevention-safe-mobility/ # 道路交通伤害预防与安全移动
+    ├── rural-health-access-geographic-equity/ # 农村健康可及与地理公平
+    ├── homelessness-unsheltered-health-continuity/ # 无家可归与露宿健康连续性
+    ├── correctional-health-reentry-continuity/ # 羁押健康与重返社会连续性
+    ├── disability-services-independent-living/ # 残障服务与独立生活
+    ├── dementia-cognitive-decline-care-continuity/ # 痴呆认知衰退与照护连续性
+    ├── chronic-infectious-disease-care-continuity/ # 慢性传染病照护连续性
     ├── insurance-risk-transfer/ # 保险与风险转移
     ├── childcare-family-continuity/ # 托育与家庭连续性
     ├── learning-skill-acquisition/ # 学习与技能获得
@@ -274,6 +280,12 @@ human_infra/
 - `domains/emergency-medical-services-prehospital-care/` 负责 EMS、调度、响应时间、院前照护、转运和时间关键急性响应。
 - `domains/surgical-anesthesia-perioperative-safety/` 负责手术安全、麻醉安全、团队检查、围手术期并发症预防和质量改进。
 - `domains/road-traffic-injury-prevention-safe-mobility/` 负责道路交通伤害、安全系统、速度管理、车辆安全、交通数据和安全移动。
+- `domains/rural-health-access-geographic-equity/` 负责农村地理距离、服务密度、宽带、交通、卫生人力和农村健康公平。
+- `domains/homelessness-unsheltered-health-continuity/` 负责无家可归、露宿、庇护、外展、住房服务、卫生、安全和照护断点。
+- `domains/correctional-health-reentry-continuity/` 负责羁押内健康、释放转介、药物连续性、身份、住房、福利和重返社会服务。
+- `domains/disability-services-independent-living/` 负责独立生活、HCBS、个人协助、合理便利、辅助技术、无障碍和社区融合。
+- `domains/dementia-cognitive-decline-care-continuity/` 负责痴呆、认知衰退、照护计划、照护者负担、尊严、安全和服务导航。
+- `domains/chronic-infectious-disease-care-continuity/` 负责 HIV、结核、病毒性肝炎、长期治疗连续性、耐药、隐私和去污名。
 - `domains/insurance-risk-transfer/` 负责健康、失业、工伤、残障、灾害、存款、养老金等风险转移和风险池。
 - `domains/childcare-family-continuity/` 负责托育可及、托育费用、照护质量、早期儿童发展、父母工作连续性和家庭压力。
 - `domains/emergency-preparedness-response/` 负责灾害准备、预警、应急通信、急救医疗、安置、公共卫生应急和灾后恢复。
@@ -362,3 +374,4 @@ human_infra/
 - 2026-06-30：新增第十八波 6 个实验室、人体材料、废弃物、辐射、化学和关键材料相关域骨架，覆盖公共卫生实验室诊断能力、血液器官组织生物警戒、废弃物危险材料连续性、辐射核安全防护、化学安全中毒控制和关键矿物材料韧性。
 - 2026-06-30：新增第十九波 6 个日常环境与工具可靠性域骨架，覆盖空气质量通风、食品安全污染控制、职业暴露工业卫生、医疗设备安全维护、灭菌消毒感染控制和建成环境无障碍通用设计。
 - 2026-06-30：新增第二十波 6 个临床可靠性与急性风险窗口域骨架，覆盖临床检验诊断质量、药物警戒药品安全、药品质量供应完整性、急救医疗服务院前照护、手术麻醉围手术期安全和道路交通伤害预防。
+- 2026-06-30：新增第二十一波 6 个结构性脆弱与连续照护断点域骨架，覆盖农村健康可及、无家可归健康连续性、羁押重返健康连续性、残障独立生活、痴呆认知衰退照护和慢性传染病照护连续性。

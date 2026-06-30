@@ -270,6 +270,24 @@ domains/
 ├── road-traffic-injury-prevention-safe-mobility/
 │   ├── AGENTS.md
 │   └── README.md
+├── rural-health-access-geographic-equity/
+│   ├── AGENTS.md
+│   └── README.md
+├── homelessness-unsheltered-health-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── correctional-health-reentry-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── disability-services-independent-living/
+│   ├── AGENTS.md
+│   └── README.md
+├── dementia-cognitive-decline-care-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── chronic-infectious-disease-care-continuity/
+│   ├── AGENTS.md
+│   └── README.md
 ├── insurance-risk-transfer/
 │   ├── AGENTS.md
 │   └── README.md
@@ -430,6 +448,7 @@ domains/
 - `public-health-laboratory-diagnostic-capacity/`、`blood-organ-tissue-biovigilance-transplantation/`、`waste-management-hazardous-materials-continuity/`、`radiation-nuclear-safety-protection/`、`chemical-safety-poison-control-toxicology/` 和 `critical-minerals-materials-resilience/` 负责风险确认、外部生物材料安全、残余物治理、不可见高能暴露、化学毒理和未来技术物质输入这些外部安全与材料支撑条件。
 - `air-quality-ventilation-exposure-control/`、`food-safety-contamination-control/`、`occupational-exposure-industrial-hygiene/`、`medical-device-equipment-safety-maintenance/`、`sterilization-disinfection-infection-control/` 和 `built-environment-accessibility-universal-design/` 负责可呼吸环境、食物污染控制、工作暴露控制、医疗设备可靠性、感染控制屏障和物理空间可达性这些日常环境与工具可靠性条件。
 - `clinical-laboratory-diagnostic-quality/`、`pharmacovigilance-drug-safety-monitoring/`、`pharmaceutical-quality-supply-integrity/`、`emergency-medical-services-prehospital-care/`、`surgical-anesthesia-perioperative-safety/` 和 `road-traffic-injury-prevention-safe-mobility/` 负责临床检验质量、真实世界药品安全、药品质量完整性、院前急救窗口、围手术期安全和道路交通伤害预防这些临床可靠性与急性风险窗口条件。
+- `rural-health-access-geographic-equity/`、`homelessness-unsheltered-health-continuity/`、`correctional-health-reentry-continuity/`、`disability-services-independent-living/`、`dementia-cognitive-decline-care-continuity/` 和 `chronic-infectious-disease-care-continuity/` 负责农村地理可及、无家可归健康连续性、羁押重返服务连续性、残障独立生活、认知衰退照护和慢性传染病长期照护这些结构性脆弱与连续照护断点。
 - `access-to-justice-legal-aid/`、`civic-participation-election-access/`、`migration-displacement-humanitarian-continuity/` 和 `digital-inclusion-connectivity/` 负责司法可及、公民参与、迁移流离失所人道连续性和数字连接这些制度参与与公共服务接入条件。
 - `personal-safety-violence-prevention/` 和 `product-safety-recall-systems/` 负责暴力预防、受害者支持、产品缺陷报告、召回和纠正这些公共安全连续性条件。
 - `cellular-reprogramming/` 负责山中因子、部分重编程、化学重编程、AI 因子设计和表观遗传编辑等“细胞状态可重写”谱系，不提供实验协议或人体应用建议。

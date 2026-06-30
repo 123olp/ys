@@ -196,6 +196,7 @@ flowchart LR
 | 公民数据与开放政府透明 | Data.gov、Resources.data.gov、FOIA.gov、Open.USA.gov、Federal Data Strategy | 公共系统是否可被观察、审查、复用和反馈，从而支撑问责、服务改进和公共参与 |
 | 日常环境与工具可靠性 | WHO Air Pollution、EPA IAQ、WHO Food Safety、NIOSH Hierarchy of Controls、FDA Medical Devices、CDC Disinfection and Sterilization、U.S. Access Board ADA | 空气、食品、工作暴露、医疗设备、感染控制和物理空间是否把日常生活与照护环境变成可持续行动条件 |
 | 临床可靠性与急性安全窗口 | CMS CLIA、FDA FAERS、FDA Pharmaceutical Quality、NHTSA EMS、WHO Surgical Safety Checklist、WHO Road Traffic Injuries | 临床检测、真实世界药品安全、药品质量、院前急救、围手术期安全和道路安全是否把可修复风险转化为持续行动机会 |
+| 结构性脆弱与连续照护断点 | HRSA Rural Health、USICH/HUD Homelessness、WHO Prison Health、ACL CIL、WHO Dementia、WHO HIV/TB/Hepatitis | 农村、无家可归、羁押重返、残障、认知衰退和慢性传染病场景中，主体是否仍能被服务系统持续接住 |
 | 气候与社区韧性底座 | IPCC AR6、WMO Early Warnings for All、NOAA/NCEI、CMRA、CDC Climate and Health | 极端天气、热、洪水、火灾、空气和基础设施中断是否被预警、适应和恢复 |
 | 家庭应急准备与个人韧性 | Red Cross preparedness、Red Cross survival kit、Red Cross make a plan、CDC Prepare Your Health、NOAA Weather-Ready Nation | 灾害前，人是否有家庭计划、物资包、健康准备、风险认知、备用通信和特殊需求安排 |
 | 公共预警与应急通信 | FEMA IPAWS、FCC WEA/EAS、NOAA Weather Radio、Ready.gov、911.gov、FirstNet | 危机信息能否及时到达、求助能否接通、响应者能否持续通信 |
@@ -322,6 +323,12 @@ flowchart TD
     H --> EMSPC[emergency-medical-services-prehospital-care<br/>急救医疗 / 院前照护]
     H --> SAPS[surgical-anesthesia-perioperative-safety<br/>手术麻醉 / 围手术期安全]
     H --> RTIPSM[road-traffic-injury-prevention-safe-mobility<br/>道路交通伤害预防 / 安全移动]
+    H --> RHAGE[rural-health-access-geographic-equity<br/>农村健康可及 / 地理公平]
+    H --> HUHC[homelessness-unsheltered-health-continuity<br/>无家可归 / 健康连续性]
+    H --> CHRC[correctional-health-reentry-continuity<br/>羁押健康 / 重返连续性]
+    H --> DSIL[disability-services-independent-living<br/>残障服务 / 独立生活]
+    H --> DCDCC[dementia-cognitive-decline-care-continuity<br/>痴呆认知衰退 / 照护连续性]
+    H --> CIDCC[chronic-infectious-disease-care-continuity<br/>慢性传染病 / 照护连续性]
     H --> SCC[supply-chain-continuity<br/>供应链连续性]
     H --> SBB[synthetic-biology-biosecurity<br/>合成生物学与生物安全]
     H --> SEH[space-extreme-habitation<br/>空间与极端栖居]
@@ -501,6 +508,12 @@ flowchart TD
 | [Emergency Medical Services Prehospital Care](domains/emergency-medical-services-prehospital-care/README.md) | EMS、调度、响应时间、院前照护、转运和时间关键急性响应 | 在创伤、心脏骤停、卒中等急性事件中保住可逆损伤窗口 | 不提供急救操作、医疗处置、分诊、现场指挥、医院选择、路线、法律或危险现场建议 |
 | [Surgical Anesthesia Perioperative Safety](domains/surgical-anesthesia-perioperative-safety/README.md) | 手术安全、麻醉安全、团队检查、并发症预防和围手术期质量 | 让高风险修复通道把疾病修复转化为功能恢复，而不是新伤害 | 不提供手术、麻醉、护理、康复、医院选择、个体风险判断、操作步骤或法律建议 |
 | [Road Traffic Injury Prevention Safe Mobility](domains/road-traffic-injury-prevention-safe-mobility/README.md) | 道路交通伤害、安全系统、速度管理、车辆安全、交通数据和安全移动 | 让出行从可达性进一步成为不制造死亡和失能的行动基础设施 | 不提供驾驶、路线、事故责任、保险、法律、车辆改装、危险驾驶、规避执法或急救建议 |
+| [Rural Health Access Geographic Equity](domains/rural-health-access-geographic-equity/README.md) | 地理距离、服务密度、宽带、交通、卫生人力和农村健康公平 | 防止可修复风险因为地点、交通、宽带和服务稀缺被延误或放弃 | 不提供个体医疗、保险、转诊、迁居、急救路线、补助申请、政策游说或商业选址建议 |
+| [Homelessness Unsheltered Health Continuity](domains/homelessness-unsheltered-health-continuity/README.md) | 无家可归、露宿、庇护、外展、住房服务、卫生、安全和照护断点 | 让没有稳定住所的主体仍能维持医疗、卫生、身份、睡眠、安全和福利入口 | 不提供个体庇护、住房申请、法律救济、福利申请、露宿规避、执法规避或生存技巧 |
+| [Correctional Health Reentry Continuity](domains/correctional-health-reentry-continuity/README.md) | 羁押内健康、释放转介、药物连续性、身份、住房、福利和重返社会 | 防止羁押和释放制度转换把健康、身份、服务和社会连接一次性切断 | 不提供法律策略、监管规避、设施安全弱点、违禁品、个体医疗、假释/缓刑或释放计划建议 |
+| [Disability Services Independent Living](domains/disability-services-independent-living/README.md) | 独立生活、HCBS、个人协助、合理便利、辅助技术、无障碍和社区融合 | 让能力状态变化后的主体仍能自主行动、沟通、移动、使用服务和参与社会 | 不提供福利申请、资格判断、法律投诉、医疗诊断、护理计划、辅助设备处方或家庭个案建议 |
+| [Dementia Cognitive Decline Care Continuity](domains/dementia-cognitive-decline-care-continuity/README.md) | 痴呆、认知衰退、照护计划、照护者负担、尊严、安全和服务导航 | 当记忆和判断逐步失稳时，保护主体身份、尊严、参与和可承受持续性 | 不提供诊断、治疗、用药、法律财务、代理决策、监护、定位监控、约束或家庭个案建议 |
+| [Chronic Infectious Disease Care Continuity](domains/chronic-infectious-disease-care-continuity/README.md) | HIV、结核、病毒性肝炎、长期治疗连续性、耐药、隐私和去污名 | 同时维护个体健康寿命和公共卫生屏障，降低传播、耐药、器官损伤和照护中断 | 不提供检测诊断、用药治疗、PEP/PrEP、隔离、传播规避、追踪规避、实验室操作或个体风险判断 |
 | [Oral Health Continuity](domains/oral-health-continuity/README.md) | 牙齿、牙周、咀嚼、疼痛、感染、营养和沟通 | 口腔功能、疼痛、感染、营养和社会参与变量 | 不提供牙科诊断、治疗、药物、手术、器械或个体护理建议 |
 | [Measurement And Feedback](domains/measurement-feedback/README.md) | 状态测量、风险评分、生物标志物、可穿戴、反馈控制 | 指标分类、预测接口和模型反馈边界 | 不输出个体死亡日期、确定寿命预测或医学诊断 |
 
@@ -616,6 +629,12 @@ human_infra/
 │   ├── emergency-medical-services-prehospital-care/
 │   ├── surgical-anesthesia-perioperative-safety/
 │   ├── road-traffic-injury-prevention-safe-mobility/
+│   ├── rural-health-access-geographic-equity/
+│   ├── homelessness-unsheltered-health-continuity/
+│   ├── correctional-health-reentry-continuity/
+│   ├── disability-services-independent-living/
+│   ├── dementia-cognitive-decline-care-continuity/
+│   ├── chronic-infectious-disease-care-continuity/
 │   ├── mitochondrial-bioenergetics/
 │   ├── musculoskeletal-integrity/
 │   ├── neuro-continuity/
@@ -757,5 +776,6 @@ flowchart LR
 - 2026-06-30：新增第十八波 6 个外部安全、材料和公共健康支撑域，覆盖公共卫生实验室诊断能力、血液器官组织生物警戒、废弃物危险材料连续性、辐射核安全防护、化学安全中毒控制和关键矿物材料韧性。
 - 2026-06-30：新增第十九波 6 个日常环境与工具可靠性域，覆盖空气质量通风、食品安全污染控制、职业暴露工业卫生、医疗设备安全维护、灭菌消毒感染控制和建成环境无障碍通用设计。
 - 2026-06-30：新增第二十波 6 个临床可靠性与急性风险窗口域，覆盖临床检验诊断质量、药物警戒药品安全、药品质量供应完整性、急救医疗服务院前照护、手术麻醉围手术期安全和道路交通伤害预防。
+- 2026-06-30：新增第二十一波 6 个结构性脆弱与连续照护断点域，覆盖农村健康可及、无家可归健康连续性、羁押重返健康连续性、残障独立生活、痴呆认知衰退照护和慢性传染病照护连续性。
 
 完整记录见 [CHANGELOG.md](CHANGELOG.md)。

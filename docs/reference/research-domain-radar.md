@@ -145,6 +145,12 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `emergency-medical-services-prehospital-care/` | EMS、调度、响应时间和院前照护决定急性事件能否在可逆窗口内进入医疗系统 |
 | `surgical-anesthesia-perioperative-safety/` | 手术、麻醉和围手术期安全决定高风险修复干预是否减少而不是制造失能和死亡 |
 | `road-traffic-injury-prevention-safe-mobility/` | 道路交通伤害预防和安全移动决定出行是否持续制造死亡、严重伤害和长期失能 |
+| `rural-health-access-geographic-equity/` | 农村地理距离、服务密度、宽带、交通和卫生人力决定可修复风险是否因地点被延误或放弃 |
+| `homelessness-unsheltered-health-continuity/` | 无家可归和露宿状态决定睡眠、卫生、身份、安全、医疗和福利入口是否会同时断线 |
+| `correctional-health-reentry-continuity/` | 羁押和释放制度转换决定药物、慢病、心理、感染、身份、住房和社会连接是否连续 |
+| `disability-services-independent-living/` | 残障服务、独立生活、HCBS、合理便利和辅助技术决定能力变化后主体是否仍能自主参与 |
+| `dementia-cognitive-decline-care-continuity/` | 痴呆和认知衰退照护决定记忆、判断、用药、居住、安全、尊严和照护者负担是否被系统承接 |
+| `chronic-infectious-disease-care-continuity/` | HIV、结核、病毒性肝炎等长疗程感染决定治疗连续性、耐药、污名和公共卫生屏障是否可维持 |
 
 ## 来源信号
 
@@ -268,6 +274,12 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | NHTSA Office of EMS / EMS.gov / WHO Emergency Care | 提示院前照护、调度、响应时间和转运系统是急性可逆窗口基础设施 |
 | WHO Surgical Safety Checklist / WHO Safe Surgery / AHRQ Surgical Safety | 提示手术、麻醉和围手术期团队安全是高风险修复通道的独立风险层 |
 | WHO Road Traffic Injuries / NHTSA / FHWA Safe System Approach | 提示道路交通伤害预防、安全系统和速度管理是交通可达之外的安全移动域 |
+| HRSA Rural Health / CDC Rural Health | 提示农村地理距离、服务密度、医院药房可达、宽带和卫生人力是医疗可及之外的地理公平域 |
+| USICH / HUD Homelessness / CDC Homelessness | 提示无家可归、露宿、庇护、外展、卫生、安全和住房服务连续性是住房稳定之外的独立断点 |
+| WHO Prison Health / CDC Correctional Health | 提示羁押健康、释放转介、药物连续性、感染、心理健康和重返社会服务需要独立制度转换域 |
+| ACL Centers for Independent Living / CMS HCBS / WHO Disability | 提示残障服务、独立生活、社区支持、个人协助和无障碍不仅是辅助技术或建成环境问题 |
+| WHO Dementia / CDC Dementia / NIA Alzheimer’s | 提示认知衰退、照护计划、照护者负担、尊严和安全支持需要独立照护连续性域 |
+| WHO HIV-TB-Hepatitis / CDC HIV-TB-Hepatitis | 提示 HIV、结核、病毒性肝炎等长期感染需要把治疗连续性、耐药、隐私、去污名和公共卫生屏障一起建模 |
 
 Source links:
 
@@ -676,6 +688,23 @@ Source links:
 - https://www.who.int/news-room/fact-sheets/detail/road-traffic-injuries
 - https://www.nhtsa.gov/traffic-safety
 - https://highways.dot.gov/safety/zero-deaths/safe-system-approach
+- https://www.hrsa.gov/rural-health
+- https://www.cdc.gov/rural-health/
+- https://www.usich.gov/
+- https://www.hud.gov/program_offices/comm_planning/homeless
+- https://www.who.int/europe/health-topics/prisons-and-health
+- https://www.cdc.gov/correctional-health/
+- https://acl.gov/programs/aging-and-disability-networks/centers-independent-living
+- https://www.medicaid.gov/medicaid/home-community-based-services/index.html
+- https://www.who.int/news-room/fact-sheets/detail/dementia
+- https://www.cdc.gov/aging/dementia/
+- https://www.nia.nih.gov/health/alzheimers-and-dementia
+- https://www.who.int/health-topics/hiv-aids
+- https://www.who.int/health-topics/tuberculosis
+- https://www.who.int/health-topics/hepatitis
+- https://www.cdc.gov/hiv/
+- https://www.cdc.gov/tb/
+- https://www.cdc.gov/hepatitis/
 
 ## 使用规则
 

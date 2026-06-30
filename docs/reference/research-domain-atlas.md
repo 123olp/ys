@@ -154,6 +154,12 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 急性可逆窗口可接入 | `emergency-medical-services-prehospital-care/` | EMS、调度、响应时间、院前照护、转运、质量改进 | 创伤、心脏骤停、卒中或呼吸急症未在可逆窗口内进入医疗系统 |
 | 高风险修复通道可安全执行 | `surgical-anesthesia-perioperative-safety/` | 手术安全、麻醉安全、团队检查、围手术期监测、并发症预防 | 修复性干预因可预防错误、感染、出血、麻醉风险或团队失效变成新伤害 |
 | 移动过程可避免严重伤害 | `road-traffic-injury-prevention-safe-mobility/` | 道路安全系统、速度管理、车辆安全、执法公平、交通伤害监测 | 出行过程制造死亡、严重伤害、长期失能、家庭收入中断和照护负担 |
+| 地理距离不能排除主体 | `rural-health-access-geographic-equity/` | 农村服务密度、距离、交通、宽带、卫生人力、药房/医院可达 | 可修复风险因地点、距离、宽带、人力和设施稀缺被延误或放弃 |
+| 住所缺失时服务不能断线 | `homelessness-unsheltered-health-continuity/` | 庇护、外展、卫生、睡眠、安全、身份、住房服务、医疗连续性 | 露宿、卫生缺失、暴露、创伤、慢病失控和服务断点把主体推出恢复路径 |
+| 制度转换不能切断健康连续性 | `correctional-health-reentry-continuity/` | 羁押健康、释放转介、药物、慢病、心理、感染、身份、住房、福利 | 释放后药物中断、过量死亡、复发、无家可归、感染失访和社会连接断裂 |
+| 功能状态变化后仍能自主生活 | `disability-services-independent-living/` | HCBS、独立生活、个人协助、合理便利、辅助技术、无障碍、社区融合 | 机构化、照护中断、孤立、公共服务排除和主体自主性下降 |
+| 认知退行时主体仍被保护 | `dementia-cognitive-decline-care-continuity/` | 认知衰退、照护计划、照护者负担、记忆/判断支持、安全、尊严 | 用药、财务、居住、安全和照护风险失控，导致主体失权和危机迁移 |
+| 长疗程感染照护可连续 | `chronic-infectious-disease-care-continuity/` | HIV、结核、病毒性肝炎、治疗连续性、耐药、隐私、去污名、随访 | 失访、耐药、器官损伤、传播、污名和公共卫生屏障失效 |
 | 高成本风险可分摊 | `insurance-risk-transfer/` | 覆盖率、保费、自付、理赔、拒赔、风险池、保障缺口 | 疾病、失业、工伤、残障、灾害或养老金风险由个体独自承担 |
 | 托育和家庭运行可持续 | `childcare-family-continuity/` | 托育可及、费用、质量、早期发展、父母工作连续性、家庭压力 | 儿童发展受损、照护者工作中断、时间贫困和家庭压力升级 |
 | 应急响应可接住主体 | `emergency-preparedness-response/` | 灾害准备、预警、应急通信、急救医疗、安置、公共卫生应急、恢复 | 低频高冲击事件一次性清零长期积累，通信、医疗、撤离或恢复失败 |
@@ -314,6 +320,12 @@ risk-engineering
   -> emergency-medical-services-prehospital-care
   -> surgical-anesthesia-perioperative-safety
   -> road-traffic-injury-prevention-safe-mobility
+  -> rural-health-access-geographic-equity
+  -> homelessness-unsheltered-health-continuity
+  -> correctional-health-reentry-continuity
+  -> disability-services-independent-living
+  -> dementia-cognitive-decline-care-continuity
+  -> chronic-infectious-disease-care-continuity
   -> insurance-risk-transfer
   -> childcare-family-continuity
   -> emergency-preparedness-response
