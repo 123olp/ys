@@ -71,3 +71,4 @@ Current decisions:
 - `0056-add-fifty-second-wave-personal-mobility-execution-continuity-domains.md`
 - `0057-add-fifty-third-wave-public-realm-survival-access-continuity-domains.md`
 - `0058-add-fifty-fourth-wave-food-acquisition-execution-continuity-domains.md`
+- `0059-add-fifty-fifth-wave-treatment-execution-medical-supply-continuity-domains.md`

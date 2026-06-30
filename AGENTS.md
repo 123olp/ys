@@ -223,6 +223,14 @@ human_infra/
     ├── home-delivered-meals-congregate-nutrition-services-continuity/ # 送餐、集体餐与营养服务连续性
     ├── infant-formula-baby-food-supply-safety-continuity/ # 婴儿配方与婴幼儿食品供应安全连续性
     ├── prepared-food-restaurant-cafeteria-safety-access-continuity/ # 熟食、餐馆与 cafeteria 安全可达连续性
+    ├── retail-pharmacy-prescription-dispensing-continuity/ # 药房处方配药连续性
+    ├── pharmacy-benefit-formulary-prior-authorization-continuity/ # 药品福利、处方集与事前授权连续性
+    ├── medication-reconciliation-regimen-adherence-continuity/ # 用药核对与依从执行连续性
+    ├── patient-medication-labeling-counseling-continuity/ # 患者药品标签与咨询理解连续性
+    ├── unused-medicine-takeback-disposal-continuity/ # 未用药回收处置连续性
+    ├── durable-medical-equipment-supplier-repair-continuity/ # DME 供应商与维修连续性
+    ├── home-oxygen-respiratory-equipment-supply-continuity/ # 居家氧疗与呼吸设备供应连续性
+    ├── diabetes-insulin-glucose-monitoring-supplies-continuity/ # 糖尿病胰岛素与血糖监测耗材连续性
     ├── cognitive-augmentation/ # 认知增强与工具放大
     ├── digital-identity-security/ # 数字身份安全
     ├── disembodied-cns/   # 去具身外部维持型中枢生命系统
@@ -621,6 +629,7 @@ human_infra/
 - `domains/personal-vehicle-maintenance-recall-repair-continuity/`、`domains/fuel-ev-charging-refueling-access-continuity/`、`domains/parking-curb-access-towing-impound-continuity/`、`domains/walking-bicycling-micromobility-continuity/`、`domains/paratransit-nemt-access-continuity/`、`domains/taxi-rideshare-demand-response-mobility-continuity/`、`domains/transit-fare-payment-toll-account-continuity/` 和 `domains/multimodal-trip-planning-real-time-wayfinding-continuity/` 负责车辆、补能、停车、主动出行、辅助交通、按需交通、移动支付和出行信息这些个人移动执行连续性条件。
 - `domains/public-restroom-sanitation-hygiene-access-continuity/`、`domains/public-drinking-water-hydration-access-continuity/`、`domains/public-seating-shade-rest-cooling-access-continuity/`、`domains/community-resilience-hub-shelter-center-continuity/`、`domains/public-library-community-anchor-access-continuity/`、`domains/parks-recreation-green-space-access-continuity/`、`domains/public-wifi-device-charging-connectivity-continuity/` 和 `domains/public-accommodation-accessibility-service-continuity/` 负责公共厕所、公共饮水、公共休息遮阴、社区韧性/避难中心、图书馆社区锚点、公园绿地、公共 Wi-Fi/设备充电和公共场所无障碍服务这些公共空间生存接入连续性条件。
 - `domains/grocery-retail-food-store-access-continuity/`、`domains/snap-ebt-redemption-retailer-payment-continuity/`、`domains/wic-benefit-redemption-infant-maternal-nutrition-continuity/`、`domains/food-bank-pantry-community-food-distribution-continuity/`、`domains/emergency-food-disaster-feeding-continuity/`、`domains/home-delivered-meals-congregate-nutrition-services-continuity/`、`domains/infant-formula-baby-food-supply-safety-continuity/` 和 `domains/prepared-food-restaurant-cafeteria-safety-access-continuity/` 负责 grocery/食品零售、SNAP EBT 兑换、WIC 母婴营养兑换、食品银行/pantry、灾害供餐、送餐/集体营养服务、婴儿配方/婴幼儿食品供应安全和餐馆/cafeteria 熟食安全可达这些食物获得执行连续性条件。
+- `domains/retail-pharmacy-prescription-dispensing-continuity/`、`domains/pharmacy-benefit-formulary-prior-authorization-continuity/`、`domains/medication-reconciliation-regimen-adherence-continuity/`、`domains/patient-medication-labeling-counseling-continuity/`、`domains/unused-medicine-takeback-disposal-continuity/`、`domains/durable-medical-equipment-supplier-repair-continuity/`、`domains/home-oxygen-respiratory-equipment-supply-continuity/` 和 `domains/diabetes-insulin-glucose-monitoring-supplies-continuity/` 负责药房配药、药品福利/处方集/事前授权、用药核对与依从执行、患者药品标签/咨询理解、未用药回收处置、DME 供应维修、居家氧疗/呼吸设备供应和糖尿病胰岛素/血糖监测耗材这些治疗获得与医用品执行连续性条件。
 - `domains/disembodied-cns/` 负责去具身外部维持型中枢生命系统的高层架构建模，不提供实验操作协议。
 - `domains/memory-editing/` 负责记忆编辑的概念、证据、验证和伦理边界，不提供可执行神经操控步骤。
 - `domains/biostasis-cryopreservation/` 负责冷冻保存、生物停滞、休眠和等待未来修复路径。
@@ -677,6 +686,7 @@ human_infra/
 - 2026-06-30：新增第五十二波 8 个个人移动执行连续性域，覆盖个人车辆维护召回维修、燃料/EV 充电补能、停车路缘拖车扣押、步行骑行微移动、paratransit/NEMT、出租车网约车需求响应交通、交通票卡/过路费账户和多模式实时导向。
 - 2026-06-30：新增第五十三波 8 个公共空间生存接入连续性域，覆盖公共厕所卫生、公共饮水补水、公共座椅遮阴休息降温、社区韧性/避难中心、公共图书馆社区锚点、公园娱乐绿地、公共 Wi-Fi/设备充电和公共场所无障碍服务。
 - 2026-06-30：新增第五十四波 8 个食物获得执行连续性域，覆盖 grocery/食品零售、SNAP EBT 兑换、WIC 母婴营养兑换、食品银行/pantry、灾害供餐、送餐/集体营养服务、婴儿配方/婴幼儿食品供应安全和餐馆/cafeteria 熟食安全可达。
+- 2026-06-30：新增第五十五波 8 个治疗获得与医用品执行连续性域，覆盖药房处方配药、药品福利/处方集/事前授权、用药核对与依从执行、患者药品标签/咨询理解、未用药回收处置、DME 供应维修、居家氧疗/呼吸设备供应和糖尿病胰岛素/血糖监测耗材连续性。
 - 2026-06-20：从 Biocat 单项目重组为 Human Infra 总项目；旧 Biocat 迁入 `domains/longevity-evidence/`；新增 `disembodied-cns` 与 `memory-editing` 子域；四份最新资料归档到 `docs/source-notes/`；按 Docs-as-Code 和 Diataxis 补齐根文件、协作模板、文档分层和结构检查脚本。
 - 2026-06-22：新增 `domains/future-waiting/` 和度规红移固有时差分路径（黑洞等待室），用于承载“压缩等待 / 去未来”类永生路径思想实验。
 - 2026-06-23：新增 GitHub Actions `make check` 门禁和 `.github/AGENTS.md`，准备远程仓库协作入口。

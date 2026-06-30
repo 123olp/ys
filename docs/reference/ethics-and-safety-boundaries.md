@@ -1008,6 +1008,24 @@ Human Infra 不能被设计成更精密的压榨系统。
 - 不收集、复制、处理或要求 EBT/eWIC 卡号、PIN、benefit balance、交易记录、儿童身份、孕产妇健康资料、婴儿喂养记录、家庭收入、地址、配送路线、食品银行领取记录、灾害受助者身份、餐馆员工身份、过敏史、医疗资料、处方、订单号或个案法律/医疗/福利材料。
 - 不替代 USDA FNS、州 SNAP/WIC 机构、授权 retailer/vendor、食品银行、灾害管理机构、ACL/老龄服务机构、FDA、CDC、地方卫生部门、医疗专业人员、注册营养师、毒物中心、消费者保护机构、法律、执法、监管机构或官方申诉/求助渠道。
 
+## 治疗获得与医用品执行连续性边界
+
+`retail-pharmacy-prescription-dispensing-continuity`、`pharmacy-benefit-formulary-prior-authorization-continuity`、`medication-reconciliation-regimen-adherence-continuity`、`patient-medication-labeling-counseling-continuity`、`unused-medicine-takeback-disposal-continuity`、`durable-medical-equipment-supplier-repair-continuity`、`home-oxygen-respiratory-equipment-supply-continuity` 和 `diabetes-insulin-glucose-monitoring-supplies-continuity` 关注主体如何把处方、药品福利、药历、标签咨询、未用药处置、DME、居家氧疗/呼吸设备和糖尿病耗材转化为连续、可理解、可补给、可维修、可治理的治疗执行能力，不是医疗、药事、保险、设备维修、急救或个案申诉入口。
+
+可以做：
+
+- 整理 FDA Drug Shortages、Medication Guides、Patient Medication Information、unused medicine disposal，CMS/Medicare Part D、DME、oxygen equipment、diabetes supplies，AHRQ medication reconciliation，DEA Take Back，CDC medication safety / diabetes 等公开资料中的对象、机制、变量、证据边界和禁止用途。
+- 比较药房配药、药品福利授权、用药核对与依从、患者标签咨询、未用药回收、DME 供应维修、居家氧疗/呼吸设备和糖尿病耗材如何影响治疗获得、风险控制、家庭执行、设备依赖、恢复能力和未来选择权。
+- 记录治疗获得执行资料中的处方传递、库存短缺、授权摩擦、药历错配、标签理解、家庭药品储存、设备维修、耗材补给、冷藏、电力依赖、隐私数据和监管边界。
+
+不能做：
+
+- 不提供处方、换药、停药、加药、剂量、漏服处理、药物相互作用判断、副作用处理、替代药选择、个人糖尿病管理、氧流量、CPAP/BiPAP 参数、设备设置、设备维修、DME 改装、急救或临床决策建议。
+- 不代写医保申诉、prior authorization、coverage exception、medical necessity letter、诊断证明、供应商投诉、保险谈判、药房/PBM 规避、药品计划选择、DME 索赔、供应商争议、监管投诉或法律文件。
+- 不生成处方规避、药房规则绕过、PBM/保险系统规避、管制药规避、药品转赠/出售、药物囤积套利、药品处置规避、DME 维修绕过、呼吸设备绕过、CGM/泵设置规避、数据抓取或敏感医疗账户访问方法。
+- 不收集、复制、处理或要求处方号、药历、诊断、药品清单、医保/保险 ID、prior authorization 文档、药房账户、DME 订单、氧疗设备参数、CPAP/BiPAP 数据、CGM 数据、血糖记录、胰岛素方案、儿童/残障/慢病身份、家庭地址、配送记录、支付信息或个案医疗/保险/药事材料。
+- 不替代医生、药师、护士、糖尿病教育者、呼吸治疗师、DME 供应商、保险计划、PBM、Medicare/CMS、FDA、DEA、CDC、AHRQ、毒物中心、急救服务、法律、执法、监管机构或官方申诉/求助渠道。
+
 ## 数据与证据边界
 
 - 原始数据、清洗数据和人工判断必须分层保存。

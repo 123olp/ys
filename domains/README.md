@@ -353,6 +353,14 @@
 - `home-delivered-meals-congregate-nutrition-services-continuity/`：送餐、集体餐与营养服务连续性，整理 home-delivered meals、congregate meals、营养筛查、送餐安全观察和社交接触。
 - `infant-formula-baby-food-supply-safety-continuity/`：婴儿配方与婴幼儿食品供应安全连续性，整理婴儿配方、特殊医学配方、婴幼儿食品、召回、短缺和监管响应。
 - `prepared-food-restaurant-cafeteria-safety-access-continuity/`：熟食、餐馆与 cafeteria 安全可达连续性，整理餐馆、食堂、外卖、即食餐、菜单信息、过敏原和食品安全。
+- `retail-pharmacy-prescription-dispensing-continuity/`：药房处方配药连续性，整理零售药房、邮寄药房、专科药房、处方传递、库存、取药、配送和 refill。
+- `pharmacy-benefit-formulary-prior-authorization-continuity/`：药品福利、处方集与事前授权连续性，整理 Part D、PBM、formulary、prior authorization、step therapy、exceptions 和 coverage determination。
+- `medication-reconciliation-regimen-adherence-continuity/`：用药核对与依从执行连续性，整理药历一致性、出院/转诊用药、服药计划、依从性和治疗负担。
+- `patient-medication-labeling-counseling-continuity/`：患者药品标签与咨询理解连续性，整理 Medication Guide、Patient Medication Information、处方标签、药师咨询和语言可及。
+- `unused-medicine-takeback-disposal-continuity/`：未用药回收处置连续性，整理未用药、过期药、管制药、take-back、drop box、mail-back 和家庭药品储存风险。
+- `durable-medical-equipment-supplier-repair-continuity/`：DME 供应商与维修连续性，整理 DMEPOS、供应商、coverage、配送、维修、替换、耗材和居家设备可用性。
+- `home-oxygen-respiratory-equipment-supply-continuity/`：居家氧疗与呼吸设备供应连续性，整理居家氧疗、氧气浓缩机、便携氧、CPAP/BiPAP、耗材、电力依赖和供应商补给。
+- `diabetes-insulin-glucose-monitoring-supplies-continuity/`：糖尿病胰岛素与血糖监测耗材连续性，整理胰岛素、注射用品、泵耗材、CGM、血糖仪、试纸、传感器、冷藏和支付。
 - `supply-chain-continuity/`：供应链连续性，整理关键物资、服务、物流、替代路径和恢复时间。
 - `synthetic-biology-biosecurity/`：合成生物学与生物安全，整理双重用途、生物安全、生物安保和治理边界。
 - `space-extreme-habitation/`：空间与极端栖居，整理辐射、微重力、隔离、闭环资源和远程医疗风险。

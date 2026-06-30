@@ -74,6 +74,7 @@ docs/
 │   ├── 0056-add-fifty-second-wave-personal-mobility-execution-continuity-domains.md
 │   ├── 0057-add-fifty-third-wave-public-realm-survival-access-continuity-domains.md
 │   ├── 0058-add-fifty-fourth-wave-food-acquisition-execution-continuity-domains.md
+│   ├── 0059-add-fifty-fifth-wave-treatment-execution-medical-supply-continuity-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -408,4 +409,12 @@ docs/
 279. Read `../domains/home-delivered-meals-congregate-nutrition-services-continuity/README.md` if you are working on home-delivered meals, congregate meals, Older Americans Act nutrition services, Meals on Wheels, senior meals, or disability-related meal delivery.
 280. Read `../domains/infant-formula-baby-food-supply-safety-continuity/README.md` if you are working on infant formula, baby food, specialty formula, formula recalls, shortages, WIC substitutions, or early-life food supply safety.
 281. Read `../domains/prepared-food-restaurant-cafeteria-safety-access-continuity/README.md` if you are working on prepared food, restaurants, cafeterias, workplace/school/hospital meals, takeout, food allergens, menu information, or restaurant food safety access.
-282. Enter a domain under `../domains/`.
+282. Read `../domains/retail-pharmacy-prescription-dispensing-continuity/README.md` if you are working on retail pharmacies, mail-order pharmacies, specialty pharmacies, prescription dispensing, refill continuity, pharmacy deserts, pharmacy delivery, or prescription transfer.
+283. Read `../domains/pharmacy-benefit-formulary-prior-authorization-continuity/README.md` if you are working on pharmacy benefits, formularies, prior authorization, step therapy, coverage determination, exceptions, Part D, PBMs, or prescription benefit friction.
+284. Read `../domains/medication-reconciliation-regimen-adherence-continuity/README.md` if you are working on medication reconciliation, medication lists, care transitions, adherence, regimen burden, pill organization, or household medication execution.
+285. Read `../domains/patient-medication-labeling-counseling-continuity/README.md` if you are working on medication labels, Medication Guides, Patient Medication Information, pharmacist counseling, prescription instructions, plain-language drug information, or medication communication.
+286. Read `../domains/unused-medicine-takeback-disposal-continuity/README.md` if you are working on unused medicines, expired medicines, medicine take-back, disposal sites, mail-back envelopes, drug drop boxes, or household medication storage risk.
+287. Read `../domains/durable-medical-equipment-supplier-repair-continuity/README.md` if you are working on DME, DMEPOS suppliers, wheelchair/walker/hospital-bed access, equipment repair, replacement, consumables, coverage, or home medical equipment continuity.
+288. Read `../domains/home-oxygen-respiratory-equipment-supply-continuity/README.md` if you are working on home oxygen, oxygen concentrators, portable oxygen, CPAP/BiPAP, respiratory equipment, oxygen accessories, electricity dependency, or respiratory supply continuity.
+289. Read `../domains/diabetes-insulin-glucose-monitoring-supplies-continuity/README.md` if you are working on insulin, diabetes supplies, CGM, glucose meters, test strips, pump supplies, diabetes device access, refrigeration, or diabetes treatment supply continuity.
+290. Enter a domain under `../domains/`.

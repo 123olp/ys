@@ -372,6 +372,14 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `home-delivered-meals-congregate-nutrition-services-continuity/` | 送餐上门、集体餐和老年营养服务决定行动受限或孤立主体是否能持续获得营养、照护发现和关系支持 |
 | `infant-formula-baby-food-supply-safety-continuity/` | 婴儿配方和婴幼儿食品供应安全决定最脆弱主体是否会被短缺、召回、污染或错误替代直接暴露 |
 | `prepared-food-restaurant-cafeteria-safety-access-continuity/` | 餐馆、cafeteria 和熟食服务决定外部供餐是否在卫生、过敏原、价格和服务连续性上可靠 |
+| `retail-pharmacy-prescription-dispensing-continuity/` | 零售、邮寄和专科药房决定处方是否能从临床指令变成主体真实获得、可补给、可交付的治疗材料 |
+| `pharmacy-benefit-formulary-prior-authorization-continuity/` | 药品福利、处方集和事前授权决定治疗方案是否会被支付规则、网络药房和行政摩擦截断 |
+| `medication-reconciliation-regimen-adherence-continuity/` | 用药核对、药历一致性和依从执行决定药物进入家庭后是否仍能被正确、持续、可承受地执行 |
+| `patient-medication-labeling-counseling-continuity/` | 标签、Medication Guide、患者信息和药师咨询决定药物风险、警示和执行要求是否能被主体理解 |
+| `unused-medicine-takeback-disposal-continuity/` | 未用药和过期药回收处置决定治疗材料是否会在治疗结束后转化为误服、滥用、中毒、过量和环境风险 |
+| `durable-medical-equipment-supplier-repair-continuity/` | DME 供应商、配送、维修、替换和耗材决定居家治疗、残障支持和独立生活设备是否不中断 |
+| `home-oxygen-respiratory-equipment-supply-continuity/` | 居家氧疗、呼吸设备、耗材和电力依赖决定呼吸支持能否在家庭、睡眠和灾害中保持可用 |
+| `diabetes-insulin-glucose-monitoring-supplies-continuity/` | 胰岛素、注射/泵耗材、CGM、血糖仪和试纸决定糖尿病日常风险控制是否能保持反馈闭环 |
 
 ## 来源信号
 
@@ -408,6 +416,22 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | https://www.fda.gov/food/fda-food-code/food-code-2022 | 提示餐馆、cafeteria 和熟食服务依赖食品规范、许可、卫生和机构执行 |
 | https://www.cdc.gov/food-safety/ | 提示食源性风险覆盖家庭、零售、餐馆、机构供餐和社区供餐等外部食物入口 |
 | https://www.fda.gov/food/food-labeling-nutrition/food-allergies | 提示过敏原是熟食、包装食品和婴幼儿食品安全可达性的独立变量 |
+| https://www.fda.gov/drugs/drug-safety-and-availability/drug-shortages | 提示药品短缺会把处方、药房库存、替代路径和治疗连续性连接成独立执行风险 |
+| https://www.fda.gov/drugs/safe-disposal-medicines/disposal-unused-medicines-what-you-should-know | 提示未用药处置是家庭安全、误服、滥用、过量和环境风险的治理接口 |
+| https://www.fda.gov/drugs/fdas-labeling-resources-human-prescription-drugs/medication-guides | 提示 Medication Guides 是患者理解高风险药物信息和执行要求的正式资料入口 |
+| https://www.fda.gov/drugs/information-consumers-and-patients-drugs/patient-medication-information | 提示 Patient Medication Information 把药物说明、风险、用法和患者理解接入治疗执行 |
+| https://www.ahrq.gov/patient-safety/settings/hospital/match/index.html | 提示 medication reconciliation 是照护转换和药历一致性的患者安全基础设施 |
+| https://www.cms.gov/medicare/appeals-grievances/prescription-drug/coverage-determinations | 提示 Medicare Part D 将处方药覆盖、处方集、药房网络、coverage determination 和授权规则连接成支付执行层 |
+| https://www.cms.gov/medicare/appeals-grievances/prescription-drug/exceptions | 提示 formulary exception、tiering exception、prior authorization 和 step therapy waiver 是药品福利摩擦的正式治理接口 |
+| https://www.medicare.gov/health-drug-plans/health-plans/your-health-plan-options/compare-medicare-advantage-drug-plans | 提示药品计划选择和福利差异会影响药物获得、药房可达和支付摩擦 |
+| https://www.medicare.gov/coverage/durable-medical-equipment-dme-coverage | 提示 DME coverage 把居家设备、供应商、维修、替换和耗材纳入治疗执行基础设施 |
+| https://www.medicare.gov/coverage/oxygen-equipment-accessories | 提示居家氧疗设备和附件有独立覆盖、供应商和补给边界，不能并入一般 DME |
+| https://www.medicare.gov/coverage/insulin | 提示 insulin 和注射用品覆盖把药物、支付、泵类型和补给连续性连接到日常风险控制 |
+| https://www.medicare.gov/coverage/continuous-glucose-monitors | 提示 CGM 和传感器覆盖把持续监测、训练和补给要求连接到糖尿病反馈闭环 |
+| https://www.medicare.gov/coverage/blood-sugar-test-strips | 提示 test strips 是传统血糖监测耗材连续性的独立覆盖对象 |
+| https://www.dea.gov/takebackday | 提示受监管药品回收和 Take Back 体系是未用药、过期药和管制药处置的公共接口 |
+| https://www.cdc.gov/diabetes/ | 提示糖尿病日常管理依赖药物、监测、耗材、教育和持续反馈，不只是单次临床处方 |
+| https://www.cdc.gov/medication-safety/ | 提示 medication safety 覆盖家庭用药、误用、相互作用、教育和系统性安全风险 |
 | CDC hygiene, Ready.gov and NIOSH | 提示衣物、鞋履、洗衣和卫生用品影响尊严、外出、工作和灾害恢复 |
 | CDC cleaning, EPA pesticide labels, NPIC and Poison Help | 提示家庭清洁消毒和害虫控制具有独立的感染、化学和毒性边界 |
 | USPS, UPU and FTC consumer guidance | 提示邮件包裹把数字交易、证件、药品和物理资源交付连接到主体 |

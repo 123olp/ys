@@ -67,6 +67,7 @@ docs/
 │   ├── 0056-add-fifty-second-wave-personal-mobility-execution-continuity-domains.md
 │   ├── 0057-add-fifty-third-wave-public-realm-survival-access-continuity-domains.md
 │   ├── 0058-add-fifty-fourth-wave-food-acquisition-execution-continuity-domains.md
+│   ├── 0059-add-fifty-fifth-wave-treatment-execution-medical-supply-continuity-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -183,6 +184,7 @@ docs/
 - `domains/personal-vehicle-maintenance-recall-repair-continuity/`、`domains/fuel-ev-charging-refueling-access-continuity/`、`domains/parking-curb-access-towing-impound-continuity/`、`domains/walking-bicycling-micromobility-continuity/`、`domains/paratransit-nemt-access-continuity/`、`domains/taxi-rideshare-demand-response-mobility-continuity/`、`domains/transit-fare-payment-toll-account-continuity/` 和 `domains/multimodal-trip-planning-real-time-wayfinding-continuity/`：第五十二波正式研究域，分别承载个人车辆维护召回维修、燃料/EV 充电补能、停车路缘拖车扣押、步行骑行微移动、paratransit/NEMT、出租车网约车需求响应交通、交通票卡/过路费账户和多模式实时导向连续性。
 - `domains/public-restroom-sanitation-hygiene-access-continuity/`、`domains/public-drinking-water-hydration-access-continuity/`、`domains/public-seating-shade-rest-cooling-access-continuity/`、`domains/community-resilience-hub-shelter-center-continuity/`、`domains/public-library-community-anchor-access-continuity/`、`domains/parks-recreation-green-space-access-continuity/`、`domains/public-wifi-device-charging-connectivity-continuity/` 和 `domains/public-accommodation-accessibility-service-continuity/`：第五十三波正式研究域，分别承载公共厕所卫生、公共饮水补水、公共座椅遮阴休息降温、社区韧性/避难中心、公共图书馆社区锚点、公园娱乐绿地、公共 Wi-Fi/设备充电和公共场所无障碍服务连续性。
 - `domains/grocery-retail-food-store-access-continuity/`、`domains/snap-ebt-redemption-retailer-payment-continuity/`、`domains/wic-benefit-redemption-infant-maternal-nutrition-continuity/`、`domains/food-bank-pantry-community-food-distribution-continuity/`、`domains/emergency-food-disaster-feeding-continuity/`、`domains/home-delivered-meals-congregate-nutrition-services-continuity/`、`domains/infant-formula-baby-food-supply-safety-continuity/` 和 `domains/prepared-food-restaurant-cafeteria-safety-access-continuity/`：第五十四波正式研究域，分别承载 grocery/食品零售、SNAP EBT 兑换、WIC 母婴营养兑换、食品银行/pantry、灾害供餐、送餐/集体营养服务、婴儿配方/婴幼儿食品供应安全和餐馆/cafeteria 熟食安全可达连续性。
+- `domains/retail-pharmacy-prescription-dispensing-continuity/`、`domains/pharmacy-benefit-formulary-prior-authorization-continuity/`、`domains/medication-reconciliation-regimen-adherence-continuity/`、`domains/patient-medication-labeling-counseling-continuity/`、`domains/unused-medicine-takeback-disposal-continuity/`、`domains/durable-medical-equipment-supplier-repair-continuity/`、`domains/home-oxygen-respiratory-equipment-supply-continuity/` 和 `domains/diabetes-insulin-glucose-monitoring-supplies-continuity/`：第五十五波正式研究域，分别承载药房处方配药、药品福利/处方集/事前授权、用药核对与依从执行、患者药品标签/咨询理解、未用药回收处置、DME 供应维修、居家氧疗/呼吸设备供应和糖尿病胰岛素/血糖监测耗材连续性。
 - `reference/research-model-visualization-toolkit.md`：沉淀科研论文阅读、文献脊梁、模型工具、可视化标准和 Human Infra 定量页面实现路线。
 - `reference/source-card-system.md`：定义论文、书籍、工具、案例、标准和数据集进入项目之前的资料卡片制度。
 - `reference/domain-map.md`：定义根项目与子域的边界、迁移切片、主动不做和验证点。

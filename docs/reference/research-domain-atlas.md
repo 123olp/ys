@@ -24,6 +24,7 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
   -> 个人移动执行系统必须让车辆、补能、停车、主动出行、辅助交通、按需交通、支付账户和实时导向可连续
   -> 公共空间生存接入系统必须让离家后的如厕、补水、休息降温、避难、连接、绿地恢复和无障碍服务可连续
   -> 食物获得执行系统必须让日常采购、福利兑换、社区发放、灾害供餐、送餐服务、婴儿配方和外部熟食可连续
+  -> 治疗获得执行系统必须让处方、药品福利、用药核对、药品信息、未用药处置、DME、氧疗和糖尿病耗材可连续
   -> 数字身份、AI 代理、供应链、生物安全和极端栖居等外部技术底座必须可控
   -> 治理和权利必须保护同意、退出和身份
   -> 测量、预测和反馈必须让维护过程可校正
@@ -290,6 +291,14 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 送餐与集体营养服务必须不中断 | `home-delivered-meals-congregate-nutrition-services-continuity/` | 送餐上门、集体餐、老年营养服务、配送、照护发现 | 行动受限或社交孤立主体无法外出取食时，送餐和集体餐中断会同时削弱营养、监督和关系支持 |
 | 婴儿配方和婴幼儿食品必须安全供应 | `infant-formula-baby-food-supply-safety-continuity/` | 婴儿配方、婴幼儿食品、短缺、召回、过敏原、喂养安全 | 婴儿食品短缺、召回或错误替代会把供应链问题直接转成高脆弱主体风险 |
 | 外部熟食必须安全可达 | `prepared-food-restaurant-cafeteria-safety-access-continuity/` | 餐馆、cafeteria、熟食、食品规范、过敏原、食源性暴发 | 主体依赖外部供餐时，卫生、过敏原、停业或价格摩擦会把便利输入变成感染、过敏和任务失败 |
+| 处方必须能被真实配出 | `retail-pharmacy-prescription-dispensing-continuity/` | 零售药房、邮寄药房、专科药房、处方传递、库存、取药、配送、refill | 临床处方如果无法传递、配药、取药或补药，就会从治疗方案退化为纸面指令 |
+| 药品福利和事前授权必须可执行 | `pharmacy-benefit-formulary-prior-authorization-continuity/` | formulary、prior authorization、step therapy、exceptions、coverage determination、PBM | 支付规则和授权摩擦会把医学方案截断在药房柜台或保险系统内 |
+| 用药核对和依从执行必须连续 | `medication-reconciliation-regimen-adherence-continuity/` | 药历、出院转诊用药、服药计划、依从性、治疗负担 | 药物进入家庭后，清单错配、重复用药、漏服或负担过高会把治疗转成风险 |
+| 药品标签和咨询必须可理解 | `patient-medication-labeling-counseling-continuity/` | Medication Guide、Patient Medication Information、处方标签、药师咨询、语言可及 | 主体不理解用法、警示和风险时，药物材料无法稳定转化为正确行动 |
+| 未用药必须可安全回收处置 | `unused-medicine-takeback-disposal-continuity/` | 过期药、未用药、管制药、take-back、drop box、mail-back、家庭储存 | 治疗结束后的药品如果留在家庭中，会形成误服、滥用、中毒、过量和环境风险 |
+| DME 供应维修必须不中断 | `durable-medical-equipment-supplier-repair-continuity/` | DMEPOS、供应商、coverage、配送、维修、替换、耗材 | 居家治疗和残障支持设备若供应、维修或耗材中断，主体独立生活和治疗执行会断裂 |
+| 居家氧疗和呼吸设备必须可补给 | `home-oxygen-respiratory-equipment-supply-continuity/` | 氧气浓缩机、便携氧、CPAP/BiPAP、耗材、电力依赖、供应商补给 | 呼吸支持被设备、耗材、电力或配送故障截断时，日常生存和睡眠恢复都会失稳 |
+| 糖尿病药物与监测耗材必须连续 | `diabetes-insulin-glucose-monitoring-supplies-continuity/` | 胰岛素、泵耗材、CGM、血糖仪、试纸、传感器、冷藏、支付 | 胰岛素、监测和耗材任一断点都会让日常风险控制从连续反馈退化为盲飞 |
 | 栖居空间可保护生命 | `building-fire-life-safety-codes/` | 建筑规范、消防规范、疏散、烟雾报警、无障碍、结构韧性 | 居住、照护、学习、工作和公共空间成为火灾、烟雾、结构和疏散风险源 |
 | 关键物质系统可制造修复 | `manufacturing-repair-capacity/` | 制造、维修、维护、备件、质量、本地生产、关键设备恢复 | 设备损坏、备件短缺、质量缺陷和生产能力不足导致服务与工具系统失效 |
 | 公共预算可转化为服务 | `public-procurement-contracting-capacity/` | 公共采购、合同、供应商管理、应急采购、透明度、交付验收 | 有预算和政策但采购失败、合同失效、腐败、延误或劣质交付 |
@@ -669,6 +678,14 @@ risk-engineering
   -> home-delivered-meals-congregate-nutrition-services-continuity
   -> infant-formula-baby-food-supply-safety-continuity
   -> prepared-food-restaurant-cafeteria-safety-access-continuity
+  -> retail-pharmacy-prescription-dispensing-continuity
+  -> pharmacy-benefit-formulary-prior-authorization-continuity
+  -> medication-reconciliation-regimen-adherence-continuity
+  -> patient-medication-labeling-counseling-continuity
+  -> unused-medicine-takeback-disposal-continuity
+  -> durable-medical-equipment-supplier-repair-continuity
+  -> home-oxygen-respiratory-equipment-supply-continuity
+  -> diabetes-insulin-glucose-monitoring-supplies-continuity
   -> community-resource-navigation
   -> social-determinants-community-vulnerability
   -> public-service-design-accessibility

@@ -576,6 +576,14 @@ flowchart TD
     H --> HDMCNS[home-delivered-meals-congregate-nutrition-services-continuity<br/>送餐集体餐 / 营养服务]
     H --> IFBFSSC[infant-formula-baby-food-supply-safety-continuity<br/>婴儿配方 / 食品安全供应]
     H --> PFRCAC[prepared-food-restaurant-cafeteria-safety-access-continuity<br/>熟食餐馆 / 食堂安全可达]
+    H --> RPPDC[retail-pharmacy-prescription-dispensing-continuity<br/>药房配药 / 处方执行]
+    H --> PBFPAC[pharmacy-benefit-formulary-prior-authorization-continuity<br/>药品福利 / 事前授权]
+    H --> MRRA[medication-reconciliation-regimen-adherence-continuity<br/>用药核对 / 依从执行]
+    H --> PMLCC[patient-medication-labeling-counseling-continuity<br/>药品标签 / 咨询理解]
+    H --> UMTD[unused-medicine-takeback-disposal-continuity<br/>未用药回收 / 安全处置]
+    H --> DMESR[durable-medical-equipment-supplier-repair-continuity<br/>DME / 供应维修]
+    H --> HORSC[home-oxygen-respiratory-equipment-supply-continuity<br/>居家氧疗 / 呼吸设备]
+    H --> DIGM[diabetes-insulin-glucose-monitoring-supplies-continuity<br/>糖尿病耗材 / 监测供应]
     H --> MF[measurement-feedback<br/>测量 / 预测 / 反馈]
     H --> C[disembodied-cns<br/>去具身中枢生命系统]
     H --> M[memory-editing<br/>记忆编辑与人格连续性]
@@ -824,6 +832,14 @@ flowchart TD
 | [Home Delivered Meals Congregate Nutrition Services Continuity](domains/home-delivered-meals-congregate-nutrition-services-continuity/README.md) | Home-delivered meals、congregate meals、营养筛查、送餐安全观察和社交接触 | 让老年、残障和行动受限主体在家或社区中维持摄食、社交和独立生活 | 不提供资格判断、餐食处方、医疗饮食建议、配送路线、志愿者调度或个案申诉 |
 | [Infant Formula Baby Food Supply Safety Continuity](domains/infant-formula-baby-food-supply-safety-continuity/README.md) | 婴儿配方、特殊医学配方、婴幼儿食品、召回、短缺、WIC 替代和制造质量 | 让早期生命营养输入在短缺、污染、召回和替代失败中保持可信 | 不提供配方替代建议、配方自制、囤积转售、进口规避、召回规避或个案护理建议 |
 | [Prepared Food Restaurant Cafeteria Safety Access Continuity](domains/prepared-food-restaurant-cafeteria-safety-access-continuity/README.md) | 餐馆、食堂、外卖、即食餐、菜单信息、过敏原、食品安全和可负担外食 | 在离家、厨房不可用、时间受限或照护压力下提供替代餐食基础设施 | 不提供餐馆推荐、点餐建议、饮食处方、过敏医疗建议、外卖平台规避或投诉策略 |
+| [Retail Pharmacy Prescription Dispensing Continuity](domains/retail-pharmacy-prescription-dispensing-continuity/README.md) | 零售/邮寄/专科药房、处方传递、配药、库存、取药、配送和 refill | 把临床处方转化为主体真实获得的治疗物质 | 不提供处方、换药、剂量、停药、药房规避、保险规避或个体药事建议 |
+| [Pharmacy Benefit Formulary Prior Authorization Continuity](domains/pharmacy-benefit-formulary-prior-authorization-continuity/README.md) | 处方药福利、处方集、prior authorization、step therapy、coverage determination 和 exceptions | 防止医学方案在支付治理、药房网络和行政授权层失败 | 不代写医保申诉、PA 材料、诊断证明、临床理由或规避策略 |
+| [Medication Reconciliation Regimen Adherence Continuity](domains/medication-reconciliation-regimen-adherence-continuity/README.md) | 用药核对、药历一致性、出院/转诊用药、服药计划、依从性和治疗负担 | 让药物进入家庭后仍能被正确、持续、可承受地执行 | 不提供个体用药、停药、加药、剂量、相互作用或漏服处理建议 |
+| [Patient Medication Labeling Counseling Continuity](domains/patient-medication-labeling-counseling-continuity/README.md) | 药品标签、Medication Guide、Patient Medication Information、处方标签、药师咨询和语言可及 | 让药物风险和执行要求以主体能理解的形式进入行动 | 不解释个案药品、诊断、副作用、停药、替代药或患者教育个案 |
+| [Unused Medicine Takeback Disposal Continuity](domains/unused-medicine-takeback-disposal-continuity/README.md) | 未用药、过期药、管制药、take-back、drop box、mail-back 和家庭药品储存风险 | 防止治疗材料在结束后转化为误服、滥用、中毒、过量和环境风险 | 不指导个案药品处置、药品转赠/出售、管制药规避或执法规避 |
+| [Durable Medical Equipment Supplier Repair Continuity](domains/durable-medical-equipment-supplier-repair-continuity/README.md) | DMEPOS、供应商、coverage、配送、维修、替换、耗材和居家设备可用性 | 让居家治疗、残障支持和独立生活设备不中断 | 不提供设备维修、改装、采购、索赔、供应商谈判或医保个案建议 |
+| [Home Oxygen Respiratory Equipment Supply Continuity](domains/home-oxygen-respiratory-equipment-supply-continuity/README.md) | 居家氧疗、氧气浓缩机、便携氧、CPAP/BiPAP、耗材、电力依赖和供应商补给 | 防止呼吸支持被电力、配送、耗材或设备故障截断 | 不提供氧流量、设备设置、CPAP 参数、急救、维修或电力施工建议 |
+| [Diabetes Insulin Glucose Monitoring Supplies Continuity](domains/diabetes-insulin-glucose-monitoring-supplies-continuity/README.md) | 胰岛素、注射用品、泵耗材、CGM、血糖仪、试纸、传感器、冷藏和支付 | 防止糖尿病日常风险控制被药物、耗材、监测设备或冷链断点击穿 | 不提供血糖目标、胰岛素剂量、饮食、运动、泵/CGM 设置或急救建议 |
 | [Regenerative Medicine](domains/regenerative-medicine/README.md) | 干细胞、组织工程、器官再生、类器官、移植 | 器官/组织修复框架、功能终点和整合风险 | 不提供手术、细胞制备、移植或人体实验步骤 |
 | [Rehabilitation And Functioning](domains/rehabilitation-functioning/README.md) | 康复、功能恢复、失能预防、活动能力、自理和社会参与 | 功能状态、活动能力、参与能力和失能风险模型 | 不提供个人康复处方、训练计划、诊断或治疗建议 |
 | [Cancer Control](domains/cancer-control/README.md) | 癌症预防、早筛、治疗、复发、肿瘤演化 | 癌症风险函数、证据层级和长期控制变量 | 不提供诊断、治疗方案、处方、剂量或个体用药建议 |
@@ -1062,6 +1078,14 @@ human_infra/
 │   ├── home-delivered-meals-congregate-nutrition-services-continuity/
 │   ├── infant-formula-baby-food-supply-safety-continuity/
 │   ├── prepared-food-restaurant-cafeteria-safety-access-continuity/
+│   ├── retail-pharmacy-prescription-dispensing-continuity/
+│   ├── pharmacy-benefit-formulary-prior-authorization-continuity/
+│   ├── medication-reconciliation-regimen-adherence-continuity/
+│   ├── patient-medication-labeling-counseling-continuity/
+│   ├── unused-medicine-takeback-disposal-continuity/
+│   ├── durable-medical-equipment-supplier-repair-continuity/
+│   ├── home-oxygen-respiratory-equipment-supply-continuity/
+│   ├── diabetes-insulin-glucose-monitoring-supplies-continuity/
 │   ├── cognitive-augmentation/
 │   ├── digital-identity-security/
 │   ├── disembodied-cns/
@@ -1347,5 +1371,6 @@ flowchart LR
 - 2026-06-30：新增第五十二波 8 个个人移动执行连续性域，覆盖个人车辆维护召回维修、燃料/EV 充电补能、停车路缘拖车扣押、步行骑行微移动、paratransit/NEMT、出租车网约车需求响应交通、交通票卡/过路费账户和多模式实时导向。
 - 2026-06-30：新增第五十三波 8 个公共空间生存接入连续性域，覆盖公共厕所卫生、公共饮水补水、公共座椅遮阴休息降温、社区韧性/避难中心、公共图书馆社区锚点、公园娱乐绿地、公共 Wi-Fi/设备充电和公共场所无障碍服务。
 - 2026-06-30：新增第五十四波 8 个食物获得执行连续性域，覆盖 grocery/食品零售、SNAP EBT 兑换、WIC 母婴营养兑换、食品银行/pantry、灾害供餐、送餐/集体营养服务、婴儿配方/婴幼儿食品供应安全和餐馆/cafeteria 熟食安全可达。
+- 2026-06-30：新增第五十五波 8 个治疗获得与医用品执行连续性域，覆盖药房处方配药、药品福利/处方集/事前授权、用药核对与依从执行、患者药品标签/咨询理解、未用药回收处置、DME 供应维修、居家氧疗/呼吸设备供应和糖尿病胰岛素/血糖监测耗材连续性。
 
 完整记录见 [CHANGELOG.md](CHANGELOG.md)。
