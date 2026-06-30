@@ -86,6 +86,7 @@ docs/
 │   ├── 0068-add-sixty-fourth-wave-mental-health-neurodevelopment-functioning-domains.md
 │   ├── 0069-add-sixty-fifth-wave-companion-service-animal-continuity-domains.md
 │   ├── 0070-add-sixty-sixth-wave-travel-lodging-border-continuity-domains.md
+│   ├── 0071-add-sixty-seventh-wave-consumer-transaction-continuity-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -371,6 +372,14 @@ docs/
 229. Read `../domains/travel-advisory-consular-assistance-continuity/README.md` if you are working on travel advisories, STEP, embassies, consular assistance, emergency passports, overseas crisis communication, or citizen services abroad.
 230. Read `../domains/travel-health-preparedness-continuity/README.md` if you are working on travelers' health, destination health risks, travel vaccines, chronic-condition travel preparation, medicines, travel clinics, or overseas medical access.
 231. Read `../domains/customs-border-entry-declaration-continuity/README.md` if you are working on customs declarations, border entry, I-94 records, prohibited/restricted items, agriculture inspection, duties, or trusted traveler systems.
+232. Read `../domains/online-retail-order-shipping-fulfillment-continuity/README.md` if you are working on online retail orders, mail/telephone orders, order confirmation, shipping promises, delivery delays, non-delivery, cancellation, or fulfillment disputes.
+233. Read `../domains/consumer-return-refund-dispute-resolution-continuity/README.md` if you are working on returns, refunds, exchanges, store credit, cancellation, merchant disputes, consumer complaints, or transaction-failure recovery.
+234. Read `../domains/consumer-warranty-service-contract-repair-continuity/README.md` if you are working on consumer warranties, service contracts, repair/replacement promises, warranty registration, warranty documentation, or product-failure recovery.
+235. Read `../domains/right-to-repair-parts-manuals-access-continuity/README.md` if you are working on right to repair, repair manuals, parts, diagnostic tools, software locks, independent repair, or product repairability.
+236. Read `../domains/payment-card-dispute-unauthorized-charge-continuity/README.md` if you are working on credit-card disputes, debit-card errors, EFT errors, unauthorized charges, billing errors, provisional credits, or payment error resolution.
+237. Read `../domains/gift-card-prepaid-stored-value-continuity/README.md` if you are working on gift cards, prepaid cards, store credit, platform balances, loyalty balances, expiration, fees, or stored-value scams.
+238. Read `../domains/price-fee-disclosure-junk-fee-continuity/README.md` if you are working on price disclosure, total price, drip pricing, junk fees, mandatory fees, hidden fees, or bill transparency.
+239. Read `../domains/consumer-reviews-endorsements-marketplace-trust-continuity/README.md` if you are working on consumer reviews, fake reviews, endorsements, influencer disclosures, testimonials, review suppression, or marketplace trust.
 224. Read `../domains/contract-subscription-billing-consent-continuity/README.md` if you are working on contracts, subscriptions, automatic renewal, billing, cancellation, negative options, ongoing consent, or transaction-friction continuity.
 225. Read `../domains/notary-document-authentication-signature-continuity/README.md` if you are working on notarization, electronic signatures, digital signatures, document authentication, apostilles, or institutional recognition of signed records.
 226. Read `../domains/citizenship-nationality-statelessness-continuity/README.md` if you are working on citizenship, nationality, naturalization, consular protection, statelessness, nationality proof, or national-membership continuity.

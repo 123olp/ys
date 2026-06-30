@@ -296,6 +296,14 @@
 - `travel-advisory-consular-assistance-continuity/`：旅行警示与领事协助连续性，整理旅行警示、海外登记、领事协助、紧急证件和海外危机通信。
 - `travel-health-preparedness-continuity/`：旅行健康准备连续性，整理目的地健康资料、旅行健康风险、疫苗与预防资料、慢病旅行准备、药品供应和境外医疗可及。
 - `customs-border-entry-declaration-continuity/`：海关、边境入境与申报连续性，整理海关申报、边境检查、I-94、受限物品、农业检疫、关税和可信旅客系统。
+- `online-retail-order-shipping-fulfillment-continuity/`：在线零售订单、发货与履约连续性，整理订单确认、发货承诺、延迟、未交付、取消和履约纠错。
+- `consumer-return-refund-dispute-resolution-continuity/`：消费者退货、退款与争议解决连续性，整理退货政策、退款、换货、store credit、取消、商家争议和投诉入口。
+- `consumer-warranty-service-contract-repair-continuity/`：消费品保修、服务合同与维修连续性，整理书面保修、服务合同、维修、替换、保修登记和产品恢复。
+- `right-to-repair-parts-manuals-access-continuity/`：维修权、零件、手册与诊断接入连续性，整理维修手册、零件、诊断工具、软件锁、独立维修和产品可修复性。
+- `payment-card-dispute-unauthorized-charge-continuity/`：支付卡争议、错误交易与未授权扣款连续性，整理信用卡、借记卡、EFT、账单错误、未授权扣款和错误解决。
+- `gift-card-prepaid-stored-value-continuity/`：礼品卡、预付卡与储值余额连续性，整理礼品卡、预付卡、store credit、平台余额、到期、费用、余额查询和诈骗风险。
+- `price-fee-disclosure-junk-fee-continuity/`：价格、费用披露与垃圾费用连续性，整理标价、强制费用、drip pricing、junk fees、总价披露和账单透明度。
+- `consumer-reviews-endorsements-marketplace-trust-continuity/`：消费者评价、背书与市场信任连续性，整理在线评价、虚假评价、背书、网红披露、评价压制和推荐信任。
 - `contract-subscription-billing-consent-continuity/`：合同、订阅、账单与持续同意连续性，整理合同、自动续费、账单、取消、争议、退款和持续同意。
 - `notary-document-authentication-signature-continuity/`：公证、文件认证与签名连续性，整理公证、电子签名、数字签名、apostille、文件认证和跨机构承认。
 - `citizenship-nationality-statelessness-continuity/`：公民身份、国籍与无国籍连续性，整理公民身份、自然化、国籍证明、领事保护、无国籍风险和身份恢复。

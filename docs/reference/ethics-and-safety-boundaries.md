@@ -1031,6 +1031,24 @@ Human Infra 不能被设计成更精密的压榨系统。
 - 不帮助逃票、身份规避、安检规避、机场安全漏洞利用、走私、虚假申报、违禁品隐藏、服务条款规避、酒店入住规避、占住、逃费、骚扰、跟踪、位置暴露或敏感旅行数据收集。
 - 不替代航空公司、U.S. DOT、TSA、DHS、State Department、使领馆、CDC、旅行医学专业人士、CBP、FTC、ADA.gov、FEMA、住宿服务商、保险人、律师、医疗专业人士或官方申诉渠道。
 
+## 消费者交易、履约、维修与市场信任连续性边界
+
+`online-retail-order-shipping-fulfillment-continuity`、`consumer-return-refund-dispute-resolution-continuity`、`consumer-warranty-service-contract-repair-continuity`、`right-to-repair-parts-manuals-access-continuity`、`payment-card-dispute-unauthorized-charge-continuity`、`gift-card-prepaid-stored-value-continuity`、`price-fee-disclosure-junk-fee-continuity` 和 `consumer-reviews-endorsements-marketplace-trust-continuity` 关注普通消费者交易如何通过订单履约、退货退款、保修维修、维修权、支付纠错、储值余额、价格披露和评价背书维持主体资源转换能力，不是个人购物、退款、支付争议、维修操作、礼品卡交易、营销、金融、合同或法律服务入口。
+
+可以做：
+
+- 整理 FTC、CFPB、USA.gov、州消费者保护机构和官方消费者金融资料的机制、对象、变量和边界。
+- 比较订单履约、失败交易恢复、保修维修、维修接入、支付争议、储值余额、价格费用披露和评价信任如何分别影响现金流、等待成本、替代采购、产品寿命、交易纠错、市场选择和信息成本。
+- 记录反欺诈、反套利、反刷评、反规避、隐私、可访问性、证据链、消费者投诉、支付错误解决、维修安全和个案建议边界，服务后续资料卡片与变量建模。
+
+不能做：
+
+- 不提供个人购物推荐、商家选择、退货退款、投诉文案、chargeback、拒付、保修索赔、服务合同审查、维修拆机、礼品卡找回、卡密买卖、费用规避、刷评删评、营销投放、声誉修复、金融或法律建议。
+- 不判断某笔订单是否应退款、某项保修是否有效、某个维修限制是否违法、某笔扣款是否未授权、某张礼品卡是否可追回、某项费用是否应付、某条评论是否违法或某个争议胜率。
+- 不生成退款、投诉、支付争议、保修、维修、费用、评价、营销、诉讼、仲裁、监管投诉或个案消费者争议策略。
+- 不帮助虚假下单、刷单、套券、退货滥用、虚构未收到货、伪造证据、重复索赔、虚假 chargeback、盗刷、洗钱、礼品卡交易、卡密转卖、绕过维修锁、DRM 规避、固件破解、费用逃避、刷评、删评、评价轰炸、隐性广告、骚扰评论者或平台审核规避。
+- 不替代 FTC、CFPB、USA.gov、州消费者保护机构、银行、信用卡发行机构、支付网络、商家、平台、维修专业人士、产品制造商、保修服务商、消费者投诉渠道、律师、金融专业人士或法院。
+
 ## 法律状态、保护身份、强制程序与记录救济连续性边界
 
 `citizenship-nationality-statelessness-continuity`、`immigration-status-residency-work-authorization-continuity`、`asylum-refugee-protection-status-continuity`、`detention-custody-confinement-status-continuity`、`civil-commitment-involuntary-treatment-rights-continuity`、`court-notice-service-process-default-judgment-continuity` 和 `criminal-record-relief-collateral-consequences-continuity` 关注国籍、居留工作授权、保护身份、拘押状态、非自愿治疗、法院程序通知和犯罪记录救济如何影响主体制度承认、自由边界、服务入口和未来选择权，不是个人公民身份、移民、庇护、拘押、强制治疗、法院、刑事记录、税务、医疗或法律服务入口。

@@ -340,6 +340,14 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `travel-advisory-consular-assistance-continuity/` | 旅行警示、海外登记和领事协助决定跨境风险、海外危机通信、紧急证件和家庭通知是否可接入 |
 | `travel-health-preparedness-continuity/` | 旅行健康准备决定目的地疾病、慢病、药品、医疗设备、保险和境外医疗可及性是否提前进入风险治理 |
 | `customs-border-entry-declaration-continuity/` | 海关申报和边境入境记录决定主体、物品、药品、食品、设备和后续身份记录是否能通过边境门槛 |
+| `online-retail-order-shipping-fulfillment-continuity/` | 在线零售订单履约决定主体下单后的金钱、时间和信任能否转化为实际可用物品，而不是被延迟、未交付或平台推诿锁住 |
+| `consumer-return-refund-dispute-resolution-continuity/` | 退货退款争议决定失败交易能否把资金、时间和替代采购窗口返还给主体 |
+| `consumer-warranty-service-contract-repair-continuity/` | 消费品保修和服务合同决定产品故障后能否维修、替换、恢复或保留记录，而不是强制替换和资源浪费 |
+| `right-to-repair-parts-manuals-access-continuity/` | 维修权、零件、手册和诊断接入决定主体拥有的产品是否真能维护和延寿 |
+| `payment-card-dispute-unauthorized-charge-continuity/` | 支付卡争议和未授权扣款纠错决定资金异常后能否恢复现金流、账户安全和交易信任 |
+| `gift-card-prepaid-stored-value-continuity/` | 礼品卡、预付卡和储值余额决定非现金资源是否保持可见、可用、低费用和可恢复 |
+| `price-fee-disclosure-junk-fee-continuity/` | 价格、费用披露和垃圾费用决定主体能否在交易前看见真实成本并比较选择 |
+| `consumer-reviews-endorsements-marketplace-trust-continuity/` | 消费者评价、背书和市场信任决定主体能否在有限时间内用可信信号降低交易选择错误 |
 | `contract-subscription-billing-consent-continuity/` | 合同、订阅和账单决定持续交易关系是否保持可理解、可控制、可取消和可争议，而不是持续吞噬时间和资金 |
 | `notary-document-authentication-signature-continuity/` | 公证、文件认证和签名决定主体意愿、授权、合同和跨境文件是否能被机构长期承认、验证和执行 |
 | `citizenship-nationality-statelessness-continuity/` | 公民身份、国籍和无国籍状态决定主体是否被国家或国际保护框架承认为成员、受保护对象和权利主体 |
@@ -758,6 +766,10 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | USA.gov driver licenses and vehicle registration / DHS REAL ID / state DMV materials | 提示驾照、州 ID、REAL ID、车辆 title、登记和地址同步决定地方移动资格与车辆资源连续性 |
 | State Department passports, travel advisories and authentications | 提示护照、领事服务、紧急证件、文件认证和 apostille 决定跨境移动与文件承认连续性 |
 | FTC subscription and negative-option materials / CFPB consumer complaints / FCC billing materials | 提示合同、订阅、自动续费、账单、取消和持续同意是长期资源泄漏与消费者控制权的独立机制 |
+| FTC online shopping and Mail Order Rule / USA.gov consumer complaints | 提示在线、电话、邮购和平台订单履约是资金、等待、交付承诺和消费者投诉之间的独立交易连续性机制 |
+| FTC warranties and Nixing the Fix / state right-to-repair materials | 提示保修、服务合同、维修权、零件、手册和诊断接入决定产品寿命与故障后恢复能力 |
+| CFPB card disputes and prepaid cards / FTC gift-card scam materials | 提示支付争议、未授权扣款、预付卡、礼品卡和储值余额决定非现金资源与异常交易恢复能力 |
+| FTC junk-fee, endorsement, and consumer-review materials | 提示真实价格、强制费用、评价、背书和市场信任是消费者选择质量与资源预算的独立基础设施 |
 | USCIS citizenship / State Department nationality / UNHCR statelessness | 提示国家成员资格、国籍证明、领事保护和无国籍风险是法律身份之上的独立状态门 |
 | USCIS green card, employment authorization, change status and I-9 materials | 提示居留、工作授权、身份续期、雇佣核验和身份等待状态决定工作、教育、医疗、住房和家庭连续性 |
 | UNHCR protection and refugee statistics / USCIS asylum and refugee materials | 提示庇护、难民、临时保护、安置和保护身份转换是人道连续性中的独立法律状态链 |

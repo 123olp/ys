@@ -544,6 +544,14 @@ flowchart TD
     H --> TACAC[travel-advisory-consular-assistance-continuity<br/>旅行警示 / 领事协助]
     H --> THPC[travel-health-preparedness-continuity<br/>旅行健康 / 准备]
     H --> CBEDC[customs-border-entry-declaration-continuity<br/>海关边境 / 入境申报]
+    H --> OROSF[online-retail-order-shipping-fulfillment-continuity<br/>在线零售 / 订单履约]
+    H --> CRRDR[consumer-return-refund-dispute-resolution-continuity<br/>退货退款 / 争议解决]
+    H --> CWSCR[consumer-warranty-service-contract-repair-continuity<br/>保修服务 / 维修承诺]
+    H --> RTPMA[right-to-repair-parts-manuals-access-continuity<br/>维修权 / 零件手册]
+    H --> PCDUC[payment-card-dispute-unauthorized-charge-continuity<br/>支付争议 / 未授权扣款]
+    H --> GCPSV[gift-card-prepaid-stored-value-continuity<br/>礼品卡预付卡 / 储值余额]
+    H --> PFDJF[price-fee-disclosure-junk-fee-continuity<br/>价格费用 / 垃圾费用]
+    H --> CREMT[consumer-reviews-endorsements-marketplace-trust-continuity<br/>评价背书 / 市场信任]
     H --> CSBCC[contract-subscription-billing-consent-continuity<br/>合同订阅 / 账单同意]
     H --> NDASC[notary-document-authentication-signature-continuity<br/>公证认证 / 签名]
     H --> CNSC[citizenship-nationality-statelessness-continuity<br/>公民国籍 / 无国籍]
@@ -848,6 +856,14 @@ flowchart TD
 | [Travel Advisory Consular Assistance Continuity](domains/travel-advisory-consular-assistance-continuity/README.md) | 旅行警示、STEP、领事协助、紧急证件、海外医疗/逮捕/死亡/危机通信 | 把海外风险治理和求助入口纳入跨境主体持续性基础设施 | 不提供旅行安全、撤离路线、冲突区行动、海外法律、签证、移民或个案领事建议 |
 | [Travel Health Preparedness Continuity](domains/travel-health-preparedness-continuity/README.md) | 目的地健康资料、旅行健康风险、疫苗与预防资料、慢病准备、药品供应和境外医疗可及 | 把短期旅行建模为健康寿命与有效时间的暴露管理问题 | 不提供个人诊断、疫苗、处方、用药、旅行门诊、疫情判断、保险或医疗转运建议 |
 | [Customs Border Entry Declaration Continuity](domains/customs-border-entry-declaration-continuity/README.md) | 海关申报、边境检查、I-94、受限物品、农业检疫、关税和可信旅客系统 | 把边境通过建模为主体跨境行动链的身份、物品和记录门槛 | 不提供签证、移民、入境资格、申报策略、走私、规避检查、违禁品携带或个案边境建议 |
+| [Online Retail Order Shipping Fulfillment Continuity](domains/online-retail-order-shipping-fulfillment-continuity/README.md) | 在线、电话、邮购和平台订单、确认、发货、延迟、未交付、取消和履约纠错 | 把购买意图转化为可追踪、可纠错、可恢复的资源转换过程 | 不提供购物推荐、价格套利、投诉脚本、退款策略、虚假下单或个案法律建议 |
+| [Consumer Return Refund Dispute Resolution Continuity](domains/consumer-return-refund-dispute-resolution-continuity/README.md) | 退货政策、退款、换货、store credit、取消、商家争议和消费者投诉 | 把失败交易从资源沉没转化为可恢复的资金与时间纠错流程 | 不提供个案退款、投诉、chargeback、诉讼、证据伪造、退货滥用或法律建议 |
+| [Consumer Warranty Service Contract Repair Continuity](domains/consumer-warranty-service-contract-repair-continuity/README.md) | 消费品保修、服务合同、维修承诺、替换承诺、保修登记和文件说明 | 把产品故障后的维修、替换和记录恢复纳入主体任务资产维护 | 不提供保修索赔、合同审查、维修建议、产品推荐、序列号篡改或法律建议 |
+| [Right To Repair Parts Manuals Access Continuity](domains/right-to-repair-parts-manuals-access-continuity/README.md) | 维修权、零件、维修手册、诊断工具、软件锁、独立维修和产品可修复性 | 把产品所有权从强制替换转化为可维护、可延寿、可恢复的行动资产 | 不提供拆机、破解、DRM 规避、危险维修、设备入侵或个案法律建议 |
+| [Payment Card Dispute Unauthorized Charge Continuity](domains/payment-card-dispute-unauthorized-charge-continuity/README.md) | 信用卡、借记卡、EFT、账单错误、未授权扣款和错误解决 | 把支付异常从不可逆损失转化为可审查的资金纠错机制 | 不提供 chargeback 策略、拒付滥用、逃债、洗钱、盗刷、欺诈或金融法律建议 |
+| [Gift Card Prepaid Stored Value Continuity](domains/gift-card-prepaid-stored-value-continuity/README.md) | 礼品卡、预付卡、store credit、平台余额、到期、费用和余额查询 | 把非现金储值余额纳入主体资源账本、流动性和诈骗风险治理 | 不提供卡密买卖、余额找回、套利、提现、洗钱、诈骗追回或平台规避建议 |
+| [Price Fee Disclosure Junk Fee Continuity](domains/price-fee-disclosure-junk-fee-continuity/README.md) | 标价、强制费用、drip pricing、junk fees、总价披露和账单透明度 | 把交易真实成本从事后冲击转化为事前可比较、可预算变量 | 不提供省钱攻略、费用谈判、拒付、费用规避、虚假投诉、套利或个案法律建议 |
+| [Consumer Reviews Endorsements Marketplace Trust Continuity](domains/consumer-reviews-endorsements-marketplace-trust-continuity/README.md) | 在线评价、虚假评价、背书、网红披露、评价压制、推荐排名和市场信任 | 把交易选择从噪声判断转化为可审查的信息与信任基础设施 | 不提供刷评、删评、评价轰炸、营销投放、声誉操控、骚扰评论者或平台规避建议 |
 | [Contract Subscription Billing Consent Continuity](domains/contract-subscription-billing-consent-continuity/README.md) | 合同、服务条款、订阅、自动续费、账单、取消、争议和持续同意 | 防止交易关系通过隐性续费、账单错误和取消摩擦吞噬时间与资金 | 不提供合同审查、订阅取消、退款、投诉、诉讼、信用卡争议或法律建议 |
 | [Notary Document Authentication Signature Continuity](domains/notary-document-authentication-signature-continuity/README.md) | 公证、电子签名、数字签名、文件认证、apostille、授权文件和跨机构承认 | 把主体意愿、授权和事实转化为可验证、可迁移、可执行的承认链 | 不提供公证、apostille、签署、电子签名、移民、学校、继承、法院或法律建议 |
 | [Citizenship Nationality Statelessness Continuity](domains/citizenship-nationality-statelessness-continuity/README.md) | 公民身份、国籍、自然化、国籍证明、无国籍风险和领事保护 | 把主体从身份文件推进到国家成员资格和跨境制度保护 | 不提供公民身份、自然化、国籍、无国籍、护照、签证、税务或法律建议 |
@@ -1642,5 +1658,6 @@ flowchart LR
 - 2026-07-01：新增第六十四波 8 个心理健康、神经发育与功能连续性域，覆盖抑郁心境功能、焦虑压力威胁调节、创伤/PTSD 恢复、精神病性现实检验、双相情绪周期稳定、ADHD 执行功能、自闭神经多样性支持和进食障碍营养身体连续性。
 - 2026-07-01：新增第六十五波 8 个伴侣动物、服务动物与宠物照护连续性域，覆盖人-动物纽带/伴侣照护、兽医可及费用、服务动物残障可达、宠物身份微芯片重聚、宠物食药供应安全、宠物灾害撤离避难、动物收容救助再安置和动物福利虐待报告。
 - 2026-07-01：新增第六十六波 8 个旅行、临时住宿与跨境移动执行连续性域，覆盖长距离旅行预订行程、航空中断退款、航空安检身份核验、行李个人物品、临时住宿接入、旅行警示领事协助、旅行健康准备和海关边境申报。
+- 2026-07-01：新增第六十七波 8 个消费者交易、履约与市场信任连续性域，覆盖在线零售订单履约、退货退款争议、保修服务维修、维修权零件手册、支付卡争议未授权扣款、礼品卡预付储值、价格费用披露和消费者评价背书市场信任。
 
 完整记录见 [CHANGELOG.md](CHANGELOG.md)。

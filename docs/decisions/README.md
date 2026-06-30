@@ -83,3 +83,4 @@ Current decisions:
 - `0068-add-sixty-fourth-wave-mental-health-neurodevelopment-functioning-domains.md`
 - `0069-add-sixty-fifth-wave-companion-service-animal-continuity-domains.md`
 - `0070-add-sixty-sixth-wave-travel-lodging-border-continuity-domains.md`
+- `0071-add-sixty-seventh-wave-consumer-transaction-continuity-domains.md`

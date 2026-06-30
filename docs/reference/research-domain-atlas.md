@@ -227,6 +227,14 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 海外求助链必须可达 | `travel-advisory-consular-assistance-continuity/` | 旅行警示、STEP、使领馆、领事协助、紧急证件、海外危机通信 | 警示失读、登记缺失或求助边界误解会放大海外医疗、自由、身份和家庭断裂 |
 | 旅行健康暴露必须提前治理 | `travel-health-preparedness-continuity/` | 目的地健康资料、旅行健康风险、疫苗与预防资料、慢病准备、药品供应 | 旅行暴露和医疗可及性变化会改变健康状态转移函数并造成治疗中断 |
 | 边境申报与入境记录必须可信 | `customs-border-entry-declaration-continuity/` | 海关申报、边境检查、I-94、受限物品、农业检疫、关税、可信旅客 | 申报、记录、证件或物品边界失败会损失时间、物资、医疗用品和后续身份记录 |
+| 订单承诺必须转化为实际履约 | `online-retail-order-shipping-fulfillment-continuity/` | 在线订单、邮购/电话订单、确认、发货、延迟、未交付、取消、履约纠错 | 下单后未履约、延迟、虚假发货或平台推诿会锁住资金、时间和替代采购窗口 |
+| 失败交易必须可回收 | `consumer-return-refund-dispute-resolution-continuity/` | 退货、退款、换货、store credit、取消、商家争议、消费者投诉 | 商品或服务不匹配时，缺少退款争议机制会把可恢复资源变成沉没成本 |
+| 产品故障后必须可维修可替换 | `consumer-warranty-service-contract-repair-continuity/` | 保修、服务合同、维修、替换、登记、产品文件 | 保修和服务合同不透明会把产品故障转化为强制替换、等待和长期资源浪费 |
+| 产品所有权必须包含最低维修接入 | `right-to-repair-parts-manuals-access-continuity/` | 维修权、零件、手册、诊断工具、软件锁、独立维修 | 手册、零件或诊断入口被封闭时，故障产品无法进入恢复路径，设备寿命被人为缩短 |
+| 支付错误必须可纠正 | `payment-card-dispute-unauthorized-charge-continuity/` | 信用卡、借记卡、EFT、账单错误、未授权扣款、错误解决 | 未授权扣款或账单错误无法纠正会直接削弱现金流、账户安全和交易信任 |
+| 储值余额必须保持可见可用 | `gift-card-prepaid-stored-value-continuity/` | 礼品卡、预付卡、store credit、平台余额、到期、费用、余额查询 | 余额到期、费用侵蚀、诈骗或平台关闭会把名义资源变成不可用资源 |
+| 真实交易成本必须事前可见 | `price-fee-disclosure-junk-fee-continuity/` | 标价、总价披露、强制费用、drip pricing、junk fees、账单透明 | 隐藏费用和分段加价会污染预算、比较和退出选择，使低成本判断变成高成本结果 |
+| 市场信任输入必须可审查 | `consumer-reviews-endorsements-marketplace-trust-continuity/` | 在线评价、虚假评价、背书、网红披露、评价压制、推荐排名 | 刷评、隐性广告和评价压制会污染选择输入，增加错误交易、诈骗和资源浪费概率 |
 | 持续交易关系必须可理解可退出 | `contract-subscription-billing-consent-continuity/` | 合同、服务条款、订阅、自动续费、账单、取消、争议、持续同意 | 隐性续费、暗黑模式、账单错误和取消摩擦持续消耗金钱、时间、注意力和控制权 |
 | 关键文件必须可签署可认证 | `notary-document-authentication-signature-continuity/` | 公证、签名、电子签名、文件认证、apostille、授权文件、跨机构承认 | 文件无效、认证缺失、身份无法确认或签名记录失效让授权、事实和跨境文件不可执行 |
 | 国家成员资格必须可证明 | `citizenship-nationality-statelessness-continuity/` | 公民身份、国籍、自然化、国籍证明、无国籍风险、领事保护 | 无国籍、国籍争议或证明缺失使旅行、保护、投票、福利、家庭团聚和法律救济断裂 |
@@ -695,6 +703,14 @@ risk-engineering
   -> travel-advisory-consular-assistance-continuity
   -> travel-health-preparedness-continuity
   -> customs-border-entry-declaration-continuity
+  -> online-retail-order-shipping-fulfillment-continuity
+  -> consumer-return-refund-dispute-resolution-continuity
+  -> consumer-warranty-service-contract-repair-continuity
+  -> right-to-repair-parts-manuals-access-continuity
+  -> payment-card-dispute-unauthorized-charge-continuity
+  -> gift-card-prepaid-stored-value-continuity
+  -> price-fee-disclosure-junk-fee-continuity
+  -> consumer-reviews-endorsements-marketplace-trust-continuity
   -> contract-subscription-billing-consent-continuity
   -> notary-document-authentication-signature-continuity
   -> citizenship-nationality-statelessness-continuity
