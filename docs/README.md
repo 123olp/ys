@@ -25,6 +25,7 @@ docs/
 │   ├── 0007-add-third-wave-research-domains.md
 │   ├── 0008-add-fourth-wave-molecular-maintenance-domains.md
 │   ├── 0009-add-fifth-wave-external-technology-risk-domains.md
+│   ├── 0010-add-sixth-wave-physiological-structural-maintenance-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md

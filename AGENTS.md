@@ -46,12 +46,16 @@ human_infra/
     ├── cognitive-augmentation/ # 认知增强与工具放大
     ├── digital-identity-security/ # 数字身份安全
     ├── disembodied-cns/   # 去具身外部维持型中枢生命系统
+    ├── endocrine-hormonal-regulation/ # 内分泌与激素调节
+    ├── extracellular-matrix-glycation/ # 细胞外基质与糖化
     ├── future-waiting/    # 去未来 / 压缩等待路径
     ├── governance-rights/ # 治理与主体权利
     ├── genomic-stability-dna-repair/ # 基因组稳定性与 DNA 修复
+    ├── blood-oxygen-hemostasis/ # 血液氧运与止血
     ├── health-literacy-navigation/ # 健康素养与服务导航
     ├── immune-maintenance/# 免疫系统维护
     ├── longevity-evidence/# 原 Biocat 长寿证据账本
+    ├── lymphatic-glymphatic-clearance/ # 淋巴与脑淋巴清除
     ├── measurement-feedback/ # 测量、预测与反馈
     ├── mental-health-affective-stability/ # 心理健康与情绪稳定
     ├── memory-editing/    # 记忆编辑与人格连续性
@@ -68,10 +72,12 @@ human_infra/
     ├── regenerative-medicine/ # 再生医学与组织修复
     ├── rehabilitation-functioning/ # 康复与功能恢复
     ├── renal-hepatic-clearance/ # 肾脏与肝脏清除能力
+    ├── respiratory-oxygenation/ # 呼吸氧合
     ├── resource-social-infra/ # 资源与社会基础设施
     ├── risk-engineering/  # 风险工程
     ├── sensory-continuity/ # 感官连续性
     ├── sleep-circadian-recovery/ # 睡眠、节律与恢复
+    ├── skin-barrier-wound-healing/ # 皮肤屏障与伤口愈合
     ├── social-connection-relational-infra/ # 社会连接与关系基础设施
     ├── space-extreme-habitation/ # 空间与极端栖居
     ├── stem-cell-reserve-renewal/ # 干细胞储备与组织更新
@@ -96,13 +102,19 @@ human_infra/
 - `domains/proteostasis-autophagy/` 负责蛋白稳态、自噬、溶酶体、蛋白聚集和细胞质量控制。
 - `domains/mitochondrial-bioenergetics/` 负责线粒体功能、细胞能量、氧化应激、疲劳和行动能力。
 - `domains/cellular-senescence-clearance/` 负责细胞衰老、SASP、senolytics、组织炎症和衰老细胞负担。
+- `domains/extracellular-matrix-glycation/` 负责细胞外基质、胶原、弹性、AGEs、交联、纤维化和组织力学。
 - `domains/microbiome-ecology/` 负责人体微生物生态、菌群失调、代谢、免疫和炎症。
 - `domains/stem-cell-reserve-renewal/` 负责干细胞储备、生态位、组织更新、内源性修复和再生能力。
 - `domains/renal-hepatic-clearance/` 负责肾脏、肝脏、解毒、代谢、药物清除和系统稳态。
+- `domains/respiratory-oxygenation/` 负责肺、气道、通气、氧合、睡眠呼吸、空气暴露和呼吸失败风险。
+- `domains/blood-oxygen-hemostasis/` 负责红细胞、血红蛋白、氧气运输、凝血、出血、血栓和血液安全。
+- `domains/endocrine-hormonal-regulation/` 负责激素轴、反馈环、代谢信号、压力反应、生殖、骨骼和情绪调节。
+- `domains/lymphatic-glymphatic-clearance/` 负责淋巴系统、组织液、免疫运输、脑膜淋巴、glymphatic clearance 和水肿。
 - `domains/nutrition-metabolic-health/` 负责营养、饮食质量、代谢健康、体重、糖尿病风险和食物环境。
 - `domains/physical-activity-mobility/` 负责身体活动、久坐、心肺适能、力量、平衡和移动能力。
 - `domains/cardiovascular-resilience/` 负责心脏、血管、血压、动脉粥样硬化、血栓、卒中、心衰和循环系统韧性。
 - `domains/musculoskeletal-integrity/` 负责肌肉、骨骼、关节、肌少症、骨质疏松、跌倒和行动承载结构。
+- `domains/skin-barrier-wound-healing/` 负责皮肤屏障、伤口愈合、压力损伤、感染入口、热调节和感觉边界。
 - `domains/cellular-reprogramming/` 负责山中因子、部分重编程、化学重编程、AI 因子设计和表观遗传编辑等细胞状态可重写谱系，不提供实验协议或人体应用建议。
 - `domains/regenerative-medicine/` 负责干细胞、组织工程、器官再生、类器官、移植和生物制造的高层研究框架。
 - `domains/rehabilitation-functioning/` 负责康复、功能恢复、失能预防、活动能力、自理、沟通和社会参与。
@@ -140,7 +152,7 @@ human_infra/
 
 - Human Infra 的上位对象是“人类任务执行系统”，不是单一长寿产品。
 - Longevity Evidence 承接原 Biocat，但不再占据根目录概念中心。
-- “永生”的不同路径必须按机制拆分：长寿证据、营养代谢、基因组稳定性、端粒维护、蛋白稳态、自噬、线粒体、细胞衰老、微生物生态、干细胞储备、肝肾清除、身体活动、心血管韧性、肌骨完整性、细胞重编程、再生医学、康复功能、癌症控制、免疫维护、抗微生物韧性、神经连续性、感官连续性、未来等待、生物停滞、去具身中枢、记忆编辑、认知增强、AI 代理安全、数字身份安全、心理稳定、睡眠恢复、辅助技术、社会连接、物质暴露控制、资源环境、供应链连续性、合成生物学与生物安全、空间极端栖居、风险工程、健康素养导航、治理权利、口腔健康、痛苦控制和测量反馈不能混成一个概念桶。
+- “永生”的不同路径必须按机制拆分：长寿证据、营养代谢、基因组稳定性、端粒维护、蛋白稳态、自噬、线粒体、细胞衰老、细胞外基质与糖化、微生物生态、干细胞储备、肝肾清除、呼吸氧合、血液氧运与止血、内分泌激素调节、淋巴与脑淋巴清除、身体活动、心血管韧性、肌骨完整性、皮肤屏障与伤口愈合、细胞重编程、再生医学、康复功能、癌症控制、免疫维护、抗微生物韧性、神经连续性、感官连续性、未来等待、生物停滞、去具身中枢、记忆编辑、认知增强、AI 代理安全、数字身份安全、心理稳定、睡眠恢复、辅助技术、社会连接、物质暴露控制、资源环境、供应链连续性、合成生物学与生物安全、空间极端栖居、风险工程、健康素养导航、治理权利、口腔健康、痛苦控制和测量反馈不能混成一个概念桶。
 - 所有健康、神经、生命支持相关结论必须保留来源、适用对象、不确定性和伦理边界。
 - 新增研究域必须能回到 `docs/reference/research-domain-atlas.md` 的先验条件和域判定契约。
 - 自研代码只做连接、清洗、归一化、证据编排和产品表达；优先复用官方 API、公开数据库和成熟工具。
@@ -169,3 +181,4 @@ human_infra/
 - 2026-06-30：新增第三波 8 个研究域骨架，覆盖营养代谢、身体活动、心血管韧性、肌骨完整性、社会连接、物质暴露控制、健康素养导航和口腔健康连续性。
 - 2026-06-30：新增第四波 8 个分子维护研究域骨架，覆盖基因组稳定性、端粒维护、蛋白稳态、自噬、线粒体生物能量学、细胞衰老清除、微生物生态、干细胞储备和肝肾清除。
 - 2026-06-30：新增第五波 5 个外部技术风险域骨架，覆盖数字身份安全、AI 代理安全、供应链连续性、合成生物学与生物安全、空间与极端栖居。
+- 2026-06-30：新增第六波 6 个生理与结构维护域骨架，覆盖呼吸氧合、内分泌激素调节、血液氧运与止血、皮肤屏障与伤口愈合、细胞外基质与糖化、淋巴与脑淋巴清除。

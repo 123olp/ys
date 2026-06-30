@@ -12,12 +12,18 @@
 - `proteostasis-autophagy/`：蛋白稳态与自噬，整理蛋白折叠、聚集、清除、溶酶体和细胞质量控制。
 - `mitochondrial-bioenergetics/`：线粒体生物能量学，整理线粒体功能、ATP、氧化还原、疲劳和行动能力。
 - `cellular-senescence-clearance/`：细胞衰老与清除，整理衰老细胞负担、SASP、组织炎症和 senolytic 风险。
+- `extracellular-matrix-glycation/`：细胞外基质与糖化，整理胶原、弹性、组织力学、AGEs、交联和纤维化。
 - `microbiome-ecology/`：微生物生态，整理宿主-微生物互作、菌群失调、代谢、免疫和感染抵抗。
 - `stem-cell-reserve-renewal/`：干细胞储备与组织更新，整理干细胞耗竭、生态位、内源性修复和再生能力。
 - `regenerative-medicine/`：再生医学与组织修复，整理干细胞、器官再生、组织工程和生物制造。
+- `respiratory-oxygenation/`：呼吸氧合，整理肺、气道、气体交换、通气、氧合和呼吸失败风险。
+- `blood-oxygen-hemostasis/`：血液氧运与止血，整理红细胞、血红蛋白、凝血、出血、血栓和血液安全。
+- `endocrine-hormonal-regulation/`：内分泌与激素调节，整理激素轴、反馈环、代谢信号、压力反应和跨器官稳态。
+- `lymphatic-glymphatic-clearance/`：淋巴与脑淋巴清除，整理组织液、免疫运输、水肿、脑废物清除和恢复网络。
 - `physical-activity-mobility/`：身体活动与移动能力，整理运动、久坐、心肺适能、力量、平衡和行动密度。
 - `cardiovascular-resilience/`：心血管韧性，整理心脏、血管、血压、血栓、卒中、心衰和循环风险。
 - `musculoskeletal-integrity/`：肌骨完整性，整理肌肉、骨骼、关节、跌倒、疼痛和行动承载结构。
+- `skin-barrier-wound-healing/`：皮肤屏障与伤口愈合，整理皮肤屏障、伤口、压力损伤、感染入口和热调节。
 - `rehabilitation-functioning/`：康复与功能恢复，整理失能预防、活动能力、自理、沟通和社会参与。
 - `cancer-control/`：癌症控制，整理肿瘤预防、早筛、治疗、复发和长期风险治理。
 - `immune-maintenance/`：免疫系统维护，整理免疫衰老、感染防御、慢性炎症、自身免疫和免疫监视。

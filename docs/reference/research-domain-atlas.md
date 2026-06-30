@@ -44,12 +44,18 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 蛋白质量控制可稳定 | `proteostasis-autophagy/` | 蛋白稳态、自噬、溶酶体、聚集负担 | 把自噬激活写成无条件有益 |
 | 细胞能源可持续 | `mitochondrial-bioenergetics/` | 线粒体功能、ATP、氧化还原、疲劳 | 把能量指标写成寿命预测 |
 | 衰老细胞负担可治理 | `cellular-senescence-clearance/` | senescence burden、SASP、炎症、组织环境 | 忽略衰老细胞的肿瘤抑制和修复角色 |
+| 组织材料结构可维护 | `extracellular-matrix-glycation/` | ECM、胶原、弹性、糖化、交联、纤维化 | 把抗糖化或组织硬度写成个体处方 |
 | 宿主-微生物生态可稳定 | `microbiome-ecology/` | 菌群结构、代谢物、免疫互作、炎症 | 把相关性写成因果干预结论 |
 | 内源性修复储备可维护 | `stem-cell-reserve-renewal/` | 干细胞储备、生态位、组织更新、再生能力 | 把干细胞激活写成无条件有益 |
 | 身体部件可修复 | `regenerative-medicine/` | 器官功能、组织修复、替代能力 | 整合失败、免疫排斥、功能不持久 |
+| 呼吸氧合可持续 | `respiratory-oxygenation/` | 通气、氧合、肺储备、空气暴露 | 把血氧或肺功能写成个体诊断 |
+| 血液运输与止血可平衡 | `blood-oxygen-hemostasis/` | 血红蛋白、氧运、凝血、出血、血栓 | 把血液指标写成用药或急救建议 |
+| 跨器官激素协调可稳定 | `endocrine-hormonal-regulation/` | 激素轴、反馈环、代谢信号、压力反应 | 把激素指标写成补充、处方或寿命判断 |
+| 清除网络可运行 | `lymphatic-glymphatic-clearance/` | 淋巴运输、组织液、脑废物清除、水肿 | 把清除假说写成确定治疗路径 |
 | 行动输入可维持 | `physical-activity-mobility/` | 身体活动、心肺适能、力量、移动能力 | 把运动表现写成通用处方或忽视损伤恢复 |
 | 循环系统可韧性运行 | `cardiovascular-resilience/` | 血压、血脂、血管、心脏、卒中和心衰风险 | 把单项指标写成确定风险或治疗建议 |
 | 承载结构可持续 | `musculoskeletal-integrity/` | 肌肉、骨骼、关节、跌倒、疼痛和独立性 | 存活但失能、跌倒骨折、长期疼痛 |
+| 外界屏障可维护 | `skin-barrier-wound-healing/` | 皮肤屏障、伤口愈合、感染入口、热调节 | 把伤口或皮肤表现写成诊断和护理方案 |
 | 功能可恢复 | `rehabilitation-functioning/` | 活动能力、自理能力、沟通能力、社会参与 | 存活但失能、长期依赖、参与中断 |
 | 癌症风险可压低 | `cancer-control/` | 肿瘤发生、进展、复发、死亡风险 | 耐药、复发、筛查误判、治疗伤害 |
 | 免疫系统可维护 | `immune-maintenance/` | 感染防御、炎症、免疫监视 | 感染、慢性炎症、自身免疫 |
@@ -106,12 +112,18 @@ cellular-reprogramming
   -> proteostasis-autophagy
   -> mitochondrial-bioenergetics
   -> cellular-senescence-clearance
+  -> extracellular-matrix-glycation
   -> stem-cell-reserve-renewal
   -> regenerative-medicine
+  -> respiratory-oxygenation
+  -> blood-oxygen-hemostasis
+  -> endocrine-hormonal-regulation
+  -> lymphatic-glymphatic-clearance
   -> nutrition-metabolic-health
   -> physical-activity-mobility
   -> cardiovascular-resilience
   -> musculoskeletal-integrity
+  -> skin-barrier-wound-healing
   -> rehabilitation-functioning
   -> cancer-control
   -> immune-maintenance

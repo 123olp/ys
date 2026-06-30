@@ -66,6 +66,9 @@ domains/
 ├── cellular-senescence-clearance/
 │   ├── AGENTS.md
 │   └── README.md
+├── extracellular-matrix-glycation/
+│   ├── AGENTS.md
+│   └── README.md
 ├── microbiome-ecology/
 │   ├── AGENTS.md
 │   └── README.md
@@ -73,6 +76,18 @@ domains/
 │   ├── AGENTS.md
 │   └── README.md
 ├── renal-hepatic-clearance/
+│   ├── AGENTS.md
+│   └── README.md
+├── respiratory-oxygenation/
+│   ├── AGENTS.md
+│   └── README.md
+├── blood-oxygen-hemostasis/
+│   ├── AGENTS.md
+│   └── README.md
+├── endocrine-hormonal-regulation/
+│   ├── AGENTS.md
+│   └── README.md
+├── lymphatic-glymphatic-clearance/
 │   ├── AGENTS.md
 │   └── README.md
 ├── nutrition-metabolic-health/
@@ -85,6 +100,9 @@ domains/
 │   ├── AGENTS.md
 │   └── README.md
 ├── musculoskeletal-integrity/
+│   ├── AGENTS.md
+│   └── README.md
+├── skin-barrier-wound-healing/
 │   ├── AGENTS.md
 │   └── README.md
 ├── measurement-feedback/
@@ -149,11 +167,12 @@ domains/
 ## 职责边界
 
 - `longevity-evidence/` 是当前唯一含数据和采集脚本的产品化子域。
-- `genomic-stability-dna-repair/`、`telomere-maintenance/`、`proteostasis-autophagy/`、`mitochondrial-bioenergetics/`、`cellular-senescence-clearance/`、`microbiome-ecology/`、`stem-cell-reserve-renewal/` 和 `renal-hepatic-clearance/` 负责分子维护、宿主生态、内源性修复和肝肾清除底座。
+- `genomic-stability-dna-repair/`、`telomere-maintenance/`、`proteostasis-autophagy/`、`mitochondrial-bioenergetics/`、`cellular-senescence-clearance/`、`extracellular-matrix-glycation/`、`microbiome-ecology/`、`stem-cell-reserve-renewal/` 和 `renal-hepatic-clearance/` 负责分子维护、结构材料、宿主生态、内源性修复和肝肾清除底座。
+- `respiratory-oxygenation/`、`blood-oxygen-hemostasis/`、`endocrine-hormonal-regulation/` 和 `lymphatic-glymphatic-clearance/` 负责氧合、血液运输、激素协调和清除网络这些跨器官稳态条件。
 - `nutrition-metabolic-health/`、`physical-activity-mobility/`、`cardiovascular-resilience/` 和 `musculoskeletal-integrity/` 负责营养、行动、循环和承载结构这些身体运行条件。
 - `cellular-reprogramming/` 负责山中因子、部分重编程、化学重编程、AI 因子设计和表观遗传编辑等“细胞状态可重写”谱系，不提供实验协议或人体应用建议。
 - `regenerative-medicine/`、`cancer-control/` 和 `immune-maintenance/` 负责身体基底维护相关的机制、风险和证据边界。
-- `rehabilitation-functioning/`、`assistive-technology-access/` 和 `sensory-continuity/` 负责功能恢复、能力补偿和感官反馈连续性。
+- `rehabilitation-functioning/`、`assistive-technology-access/`、`skin-barrier-wound-healing/` 和 `sensory-continuity/` 负责功能恢复、能力补偿、外界屏障和感官反馈连续性。
 - `antimicrobial-resilience/` 负责抗微生物耐药、感染控制和现代医学抗感染底座。
 - `neuro-continuity/`、`memory-editing/`、`cognitive-augmentation/`、`ai-agency-safety/`、`digital-identity-security/` 和 `disembodied-cns/` 负责神经、身份、认知、AI 代理、数字入口和去具身连续性相关边界。
 - `mental-health-affective-stability/`、`sleep-circadian-recovery/` 和 `pain-suffering-control/` 负责心理稳定、恢复调度和持续存在的可承受性。

@@ -56,6 +56,12 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `supply-chain-continuity/` | 药品、能源、食物、设备、通信和物流断供具有独立依赖链与恢复模型 |
 | `synthetic-biology-biosecurity/` | 生物技术双重用途风险需要独立的生物安全、生物安保和禁止用途边界 |
 | `space-extreme-habitation/` | 空间和极端环境把辐射、微重力、隔离、闭环资源和远程医疗变成综合风险域 |
+| `respiratory-oxygenation/` | 通气、氧合、肺储备和慢性呼吸风险具有独立生理机制和急性失败模式 |
+| `endocrine-hormonal-regulation/` | 激素轴和反馈环跨越代谢、压力、骨骼、情绪和修复，是独立稳态系统 |
+| `blood-oxygen-hemostasis/` | 血液同时承担氧气运输、止血、凝血和血栓风险，不能只归入心血管 |
+| `skin-barrier-wound-healing/` | 皮肤屏障和伤口愈合是外界接口、感染入口、疼痛和照护负担的独立域 |
+| `extracellular-matrix-glycation/` | 细胞外基质、糖化、交联和纤维化决定组织力学与结构性老化 |
+| `lymphatic-glymphatic-clearance/` | 淋巴和脑淋巴清除连接组织液、免疫运输、水肿、睡眠和神经退行 |
 
 ## 来源信号
 
@@ -90,6 +96,12 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | CISA ICT Supply Chain Risk Management | 提示关键供应链、供应商依赖和 ICT 连续性是资源与工具系统的外部失败模式 |
 | NIH recombinant or synthetic nucleic-acid guidelines / WHO Laboratory Biosafety Manual | 提示合成生物学、生物安全、生物安保和双重用途风险需要单独治理边界 |
 | NASA Human Research Program risks and evidence | 提示空间飞行、辐射、微重力、隔离、闭环生命支持和远程医疗是未来可达性场景 |
+| WHO chronic respiratory diseases / NHLBI lung diseases | 提示呼吸系统、肺储备、气体交换和缺氧风险需要独立模型接口 |
+| NIDDK endocrine diseases / Endocrine Society hormone resources | 提示激素轴、反馈环和跨器官信号是代谢、压力、骨骼和情绪稳态的独立条件 |
+| NHLBI blood diseases / CDC blood disorders | 提示血液氧运、贫血、凝血、出血和血栓风险构成独立运输与止血系统 |
+| NCBI wound healing / pressure injury resources | 提示皮肤屏障、伤口愈合、压力损伤和感染入口是外界接口维护域 |
+| Extracellular matrix / advanced glycation end-products aging reviews | 提示组织材料结构、糖化交联和纤维化是结构性衰老和器官功能下降机制 |
+| Lymphatic aging / glymphatic review literature | 提示淋巴、脑膜淋巴和类淋巴清除连接免疫、睡眠、脑废物和神经连续性 |
 
 Source links:
 
@@ -138,6 +150,24 @@ Source links:
 - https://www.nasa.gov/hrp/
 - https://humanresearchroadmap.nasa.gov/evidence/
 - https://humanresearchroadmap.nasa.gov/risks/
+- https://www.who.int/health-topics/chronic-respiratory-diseases
+- https://www.who.int/news-room/fact-sheets/detail/chronic-obstructive-pulmonary-disease-(copd)
+- https://www.nhlbi.nih.gov/health-topics/lung-diseases
+- https://www.niddk.nih.gov/health-information/endocrine-diseases
+- https://www.niddk.nih.gov/health-information/diabetes
+- https://www.endocrine.org/patient-engagement/endocrine-library
+- https://www.nhlbi.nih.gov/health-topics/blood-diseases
+- https://www.nhlbi.nih.gov/health/anemia
+- https://www.cdc.gov/ncbddd/blooddisorders/
+- https://www.ncbi.nlm.nih.gov/books/NBK470443/
+- https://www.ncbi.nlm.nih.gov/books/NBK553107/
+- https://pmc.ncbi.nlm.nih.gov/articles/PMC3583892/
+- https://pmc.ncbi.nlm.nih.gov/articles/PMC4181688/
+- https://pmc.ncbi.nlm.nih.gov/articles/PMC3583887/
+- https://www.ncbi.nlm.nih.gov/books/NBK26810/
+- https://pmc.ncbi.nlm.nih.gov/articles/PMC9026931/
+- https://pubmed.ncbi.nlm.nih.gov/25947369/
+- https://pmc.ncbi.nlm.nih.gov/articles/PMC6198085/
 
 ## 使用规则
 
