@@ -334,6 +334,14 @@ human_infra/
     ├── housing-habitability-inspection-code-enforcement-continuity/ # 住房可居住性、检查与 code enforcement 连续性
     ├── hud-approved-housing-counseling-navigation-continuity/ # HUD 批准住房咨询与导航连续性
     ├── manufactured-housing-park-tenure-safety-continuity/ # 制造房屋园区 tenure 安全连续性
+    ├── self-represented-litigant-court-self-help-continuity/ # 自行诉讼人与法院自助连续性
+    ├── court-efiling-document-submission-continuity/ # 法院电子 filing 与文档提交连续性
+    ├── remote-hybrid-court-hearing-access-continuity/ # 远程/混合法院 hearing 可达连续性
+    ├── court-language-access-interpreter-continuity/ # 法院语言服务与口译连续性
+    ├── court-disability-accommodation-accessibility-continuity/ # 法院残障便利与可达连续性
+    ├── court-fees-fines-ability-to-pay-continuity/ # 法院费用罚金与支付能力连续性
+    ├── jury-service-summons-hardship-continuity/ # 陪审传票与 hardship 连续性
+    ├── small-claims-civil-dispute-resolution-continuity/ # 小额民事纠纷解决连续性
     ├── governance-rights/ # 治理与主体权利
     ├── genomic-stability-dna-repair/ # 基因组稳定性与 DNA 修复
     ├── gastrointestinal-barrier-absorption/ # 消化屏障与吸收
@@ -589,6 +597,7 @@ human_infra/
 - `domains/caregiving-long-term-care/` 负责家庭照护、长期照护、居家社区支持、照护协调、照护者负担和尊严边界。
 - `domains/housing-built-environment-stability/` 负责住房稳定、住房质量、室内环境、无障碍、社区资源和建成环境健康。
 - `domains/rental-lease-tenancy-rights-continuity/`、`domains/eviction-prevention-court-diversion-continuity/`、`domains/emergency-rental-assistance-arrears-continuity/`、`domains/housing-choice-voucher-public-housing-continuity/`、`domains/fair-housing-discrimination-reasonable-accommodation-continuity/`、`domains/housing-habitability-inspection-code-enforcement-continuity/`、`domains/hud-approved-housing-counseling-navigation-continuity/` 和 `domains/manufactured-housing-park-tenure-safety-continuity/` 负责住房 tenure 稳定与可居住性执行连续性，覆盖租赁居住权、驱逐预防、欠租援助、住房补贴、公平住房、可居住性检查、住房咨询和制造房屋园区稳定。
+- `domains/self-represented-litigant-court-self-help-continuity/`、`domains/court-efiling-document-submission-continuity/`、`domains/remote-hybrid-court-hearing-access-continuity/`、`domains/court-language-access-interpreter-continuity/`、`domains/court-disability-accommodation-accessibility-continuity/`、`domains/court-fees-fines-ability-to-pay-continuity/`、`domains/jury-service-summons-hardship-continuity/` 和 `domains/small-claims-civil-dispute-resolution-continuity/` 负责法院接入与民事程序执行连续性，覆盖自助中心、电子提交、远程听证、语言口译、残障便利、费用罚金、陪审义务和小额纠纷恢复。
 - `domains/transportation-access-mobility/` 负责公共交通、无障碍交通、出行时间、医疗交通、交通成本和外部资源可达性。
 - `domains/legal-identity-civil-registration/` 负责法律身份、出生登记、民事登记、生命统计、身份文件、身份覆盖和服务资格。
 - `domains/access-to-justice-legal-aid/` 负责民事法律需求、法律援助、司法可及、程序负担和权利救济。
@@ -902,3 +911,4 @@ human_infra/
 - 2026-07-01：新增第六十九波个人保险、财产责任、灾害与理赔执行连续性研究域，覆盖汽车保险责任碰撞理赔、房主租客财产理赔、洪水/NFIP 理赔、风暴野火地震巨灾保险、残障收入保险理赔、长期照护福利启动、旅行保险行程保护理赔和个人责任伞形保险防御。
 - 2026-07-01：新增第七十波受害者安全、服务与恢复执行连续性研究域，覆盖家庭暴力/胁迫控制、性暴力医疗 forensic exam 与 advocacy、跟踪骚扰保护令、受害者/证人权利通知、犯罪受害者补偿与 restitution、安全住所 emergency transfer、人口贩运受害者识别服务和失踪人员/无名遗体身份恢复。
 - 2026-07-01：新增第七十一波住房 tenure 稳定与可居住性执行连续性研究域，覆盖租赁租约居住权、驱逐预防法院 diversion、应急租金援助与欠租、住房选择券/公屋、公平住房/合理便利、住房可居住性检查 code enforcement、HUD 批准住房咨询和制造房屋园区 tenure 安全。
+- 2026-07-01：新增第七十二波法院接入与民事程序执行连续性研究域，覆盖自行诉讼人自助、法院电子 filing、远程/混合 hearing、法院语言服务、法院残障便利、法院罚金费用支付能力、陪审传票 hardship 和小额民事纠纷恢复。

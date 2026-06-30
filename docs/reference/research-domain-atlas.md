@@ -146,6 +146,14 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 居住空间可居住性可被执行 | `housing-habitability-inspection-code-enforcement-continuity/` | 可居住性、NSPIRE、code enforcement、健康安全检查、修复责任、室内危害 | 房屋看似稳定却持续制造霉菌、害虫、温控、结构、安全和健康损耗 |
 | 住房问题可被中立咨询导航 | `hud-approved-housing-counseling-navigation-continuity/` | HUD 批准住房咨询、租赁/违约/止赎/灾后住房导航、预算理解、服务转介 | 复杂住房、债务、止赎、租赁或灾后恢复程序因无人解释而转成不可逆损失 |
 | 制造房屋园区 tenure 可稳定 | `manufactured-housing-park-tenure-safety-continuity/` | 制造房屋、园区、地租、搬迁风险、设施责任、融资、居民组织、基础服务 | 房屋可移动性低而土地/园区控制不稳，导致低收入自有住房变成高脆弱 tenure |
+| 法院程序可被非律师主体理解 | `self-represented-litigant-court-self-help-continuity/` | 自助中心、法律信息边界、表格导航、程序素养、转介、plain language | 主体没有律师时因不知道步骤、材料、入口或后果而默认失败 |
+| 法院材料可提交可纠错 | `court-efiling-document-submission-continuity/` | e-filing、纸面替代、格式、签名、时间戳、rejection、通知、fee waiver 接口 | 权利因无法提交、提交被拒、通知丢失或数字排除而断裂 |
+| 法院 hearing 可达可参与 | `remote-hybrid-court-hearing-access-continuity/` | 远程/混合/电话 hearing、登录、连接、设备、隐私、口译、便利 | 交通/时间成本降低的同时，数字鸿沟和隐私约束制造 failure-to-appear |
+| 法院语言障碍可被制度接住 | `court-language-access-interpreter-continuity/` | LEP、口译、翻译通知、语言计划、远程 hearing 集成、保密 | 语言障碍导致主体无法理解通知、参与 hearing 或表达选择 |
+| 法院残障障碍可被便利接住 | `court-disability-accommodation-accessibility-continuity/` | ADA、无障碍、auxiliary aids、有效沟通、数字可达、grievance | 法院建筑、网站、听证、陪审或安全流程把残障主体排除在程序之外 |
+| 法院金钱义务不应扩大贫困惩罚 | `court-fees-fines-ability-to-pay-continuity/` | fees、fines、surcharges、fee waiver、ability-to-pay、payment plan、collections | 费用罚金把法律事件放大为债务、吊照、失业、拘押或住房风险 |
+| 陪审义务可被生活约束吸收 | `jury-service-summons-hardship-continuity/` | summons、资格、豁免、延期、hardship、工资、照护、交通、可达 | 公民义务在缺少支持时变成工作、照护、健康和收入中断 |
+| 小额纠纷可低成本恢复 | `small-claims-civil-dispute-resolution-continuity/` | small claims、ODR、调解、filing、service、hearing、judgment、appeal 边界 | 低金额纠纷因程序成本过高而长期损伤现金流、信任和资源恢复 |
 | 日常移动和服务接入可达 | `transportation-access-mobility/` | 公共交通、无障碍交通、出行时间、医疗交通、交通成本、交通安全 | 有资源但到不了，服务延误、缺席、孤立或撤离不可达 |
 | 法律身份可被承认 | `legal-identity-civil-registration/` | 法律身份、出生登记、民事登记、生命统计、身份文件、服务资格 | 无证、登记缺失、身份错误或制度不承认导致权利与服务断线 |
 | 权利救济可达 | `access-to-justice-legal-aid/` | 民事法律需求、法律援助、司法可及、程序负担、代理缺口、申诉执行 | 名义权利无法转化为住房、收入、安全、身份和服务恢复 |
@@ -693,6 +701,14 @@ risk-engineering
   -> housing-habitability-inspection-code-enforcement-continuity
   -> hud-approved-housing-counseling-navigation-continuity
   -> manufactured-housing-park-tenure-safety-continuity
+  -> self-represented-litigant-court-self-help-continuity
+  -> court-efiling-document-submission-continuity
+  -> remote-hybrid-court-hearing-access-continuity
+  -> court-language-access-interpreter-continuity
+  -> court-disability-accommodation-accessibility-continuity
+  -> court-fees-fines-ability-to-pay-continuity
+  -> jury-service-summons-hardship-continuity
+  -> small-claims-civil-dispute-resolution-continuity
   -> transportation-access-mobility
   -> legal-identity-civil-registration
   -> access-to-justice-legal-aid

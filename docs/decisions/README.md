@@ -88,3 +88,4 @@ Current decisions:
 - `0073-add-sixty-ninth-wave-personal-insurance-claims-continuity-domains.md`
 - `0074-add-seventieth-wave-victim-safety-recovery-continuity-domains.md`
 - `0075-add-seventy-first-wave-housing-tenure-stability-continuity-domains.md`
+- `0076-add-seventy-second-wave-court-access-procedure-continuity-domains.md`

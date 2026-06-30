@@ -195,6 +195,23 @@ Human Infra 不能被设计成更精密的压榨系统。
 - 收集、推断、公开或关联租户、房东、幸存者、补贴户、儿童、残障状态、移民状态、欠租、案件编号、地址、园区位置、投诉记录、庇护或安全住所信息等高风险敏感信息。
 - 把失屋、欠租、住房质量、驱逐记录、补贴断裂、歧视、残障便利失败或园区 tenure 脆弱性归因于个人道德、消费选择、自律不足或单一理财失败。
 
+## 法院接入与民事程序执行连续性边界
+
+`self-represented-litigant-court-self-help-continuity`、`court-efiling-document-submission-continuity`、`remote-hybrid-court-hearing-access-continuity`、`court-language-access-interpreter-continuity`、`court-disability-accommodation-accessibility-continuity`、`court-fees-fines-ability-to-pay-continuity`、`jury-service-summons-hardship-continuity` 和 `small-claims-civil-dispute-resolution-continuity` 关注主体进入法院系统后，能否理解程序、提交材料、参加 hearing、获得语言与残障便利、承受费用罚金、处理陪审义务并通过小额民事纠纷路径恢复生活秩序，不是法律代理、个案诉讼策略、法院文书服务、实时 filing、远程出庭指导、口译翻译、残障便利申请、费用豁免建议、陪审规避或债务 collection 工具。
+
+可以做：
+
+- 整理 NCSC、U.S. Courts、DOJ、ADA.gov、LSC、FTC、CFPB 等公开资料的对象、入口类型、变量、证据边界和禁止用途。
+- 建模自行诉讼人自助、e-filing、远程/混合 hearing、法院语言服务、残障便利、费用罚金、陪审传票和小额纠纷如何影响主体的时间、注意力、现金流、工作/照护连续性、记录后果和未来选择权。
+- 区分法律信息、程序可达性、法院系统接口、民事法律援助入口、语言/残障可达、费用负担、陪审 civic burden、消费者争议恢复和个案法律建议之间的边界。
+
+不能做：
+
+- 提供法律建议、案件策略、起诉/答辩建议、期限计算、文书起草、表格填写、e-filing 操作、法院账号操作、送达策略、证据策略、hearing 发言稿、settlement/collection 建议、费用豁免/付款策略、残障便利申请代写、口译翻译替代、陪审规避或结果预测。
+- 生成虚假 filing、伪造证据、隐藏资产、逃避送达、规避法院通知、规避费用罚金、骚扰当事人/证人、操控小额诉讼、利用程序拖延、绕过法院访问控制、批量抓取案卷或滥用 PACER/法院系统的方法。
+- 收集、推断、公开或关联案件编号、当事人姓名、地址、联系方式、移民状态、残障/健康信息、收入、债务、家庭暴力/庇护信息、儿童信息、陪审员信息、证人信息、法院账号或 filing 材料等高风险敏感信息。
+- 把程序失败、缺席判决、费用负担、语言障碍、残障障碍、陪审冲突、小额纠纷损失或无律师状态归因于个人道德、智力不足、自律不足、消费选择或不愿学习。
+
 ## 基础生计与风险分摊域边界
 
 `food-security-nutrition-access`、`water-sanitation-hygiene-continuity`、`energy-access-resilience`、`social-protection-benefits-delivery`、`insurance-risk-transfer` 和 `childcare-family-continuity` 关注食物、水卫生、能源、公共福利、保险风险池和托育家庭支持如何作为反稀缺基础设施支撑主体持续性，不是个体饮食、申请、理赔、设备、施工或家庭处置指南。

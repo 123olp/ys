@@ -1080,6 +1080,14 @@ flowchart TD
 | [Housing Habitability Inspection Code Enforcement Continuity](domains/housing-habitability-inspection-code-enforcement-continuity/README.md) | habitability、NSPIRE、inspection、code enforcement、供热、霉菌、铅、害虫和结构安全 | 防止住所从恢复场所变成慢性暴露、疾病、睡眠剥夺和财产损失源 | 不提供检测解释、维修建议、施工方案、扣租、投诉策略或法律索赔 |
 | [HUD Approved Housing Counseling Navigation Continuity](domains/hud-approved-housing-counseling-navigation-continuity/README.md) | HUD-approved housing counseling、rental/default/foreclosure/disaster/HECM counseling 和导航 | 降低住房系统中的信息成本、程序成本、诈骗风险和错误决策成本 | 不提供购房、租房、贷款、止赎、预算、信用、债务、税务、投资或法律建议 |
 | [Manufactured Housing Park Tenure Safety Continuity](domains/manufactured-housing-park-tenure-safety-continuity/README.md) | manufactured housing、mobile home park、lot rent、park rules、relocation 和基础设施 | 处理房屋所有权与土地租赁分离带来的可负担住房稳定风险 | 不提供购房、融资、租地、园区争议、搬迁、维修、产权、税务或法律建议 |
+| [Self Represented Litigant Court Self-Help Continuity](domains/self-represented-litigant-court-self-help-continuity/README.md) | 自助中心、自行诉讼人、法律信息/法律建议边界、表格导航和程序理解 | 把法院程序从黑箱降级为可理解、可转介、可纠错的公共服务入口 | 不提供法律意见、诉讼策略、表格填写、期限计算、文书或案件预测 |
+| [Court E-Filing Document Submission Continuity](domains/court-efiling-document-submission-continuity/README.md) | 电子 filing、纸面替代、格式、签名、状态、rejection/correction 和通知路由 | 防止权利因无法提交、文件被拒、账号失效或数字排除而断裂 | 不提供 filing 策略、文书生成、期限判断、批量 filing、伪造或绕过系统 |
+| [Remote Hybrid Court Hearing Access Continuity](domains/remote-hybrid-court-hearing-access-continuity/README.md) | 远程/混合/电话 hearing、登录说明、设备连接、隐私、解释和便利 | 降低出庭时间交通成本，同时审查数字鸿沟和远程参与失败 | 不提供庭审策略、证据展示、录音录像、听证行为建议或未经授权访问 |
+| [Court Language Access Interpreter Continuity](domains/court-language-access-interpreter-continuity/README.md) | 法院语言服务、interpreters、LEP、翻译通知、语言计划和远程 hearing 集成 | 防止语言障碍把主体排除在权利理解、参与和恢复路径之外 | 不提供翻译、口译、法律意见、投诉代写、移民身份推断或个案策略 |
+| [Court Disability Accommodation Accessibility Continuity](domains/court-disability-accommodation-accessibility-continuity/README.md) | 法院残障便利、ADA、无障碍、auxiliary aids、有效沟通和数字可达 | 防止法院建筑、网站、听证、陪审和安全流程排除残障主体 | 不提供便利申请代写、医疗证明建议、诊断、法律策略或可达性认证 |
+| [Court Fees Fines Ability To Pay Continuity](domains/court-fees-fines-ability-to-pay-continuity/README.md) | court fees、fines、surcharges、fee waivers、ability-to-pay、collections 和后果 | 防止法院金钱义务把可修复事件放大成债务、吊照、就业和失屋风险 | 不提供付款、债务、破产、减免申请、逃避缴费、隐藏资产或个案建议 |
+| [Jury Service Summons Hardship Continuity](domains/jury-service-summons-hardship-continuity/README.md) | jury summons、资格、延期/豁免、hardship、工资/照护/交通/残障/语言障碍 | 把陪审义务建模为公民参与与生活中断管理的双重基础设施 | 不提供如何回应传票、逃避陪审、voir dire、借口、医学或就业建议 |
+| [Small Claims Civil Dispute Resolution Continuity](domains/small-claims-civil-dispute-resolution-continuity/README.md) | 小额诉讼、低额民事纠纷、ODR、调解、费用、service、hearing 和 judgment | 让低金额纠纷有低成本恢复路径，避免资源损失长期化 | 不提供诉状、证据、和解、送达、执行、上诉、管辖或法律建议 |
 | [Transportation Access Mobility](domains/transportation-access-mobility/README.md) | 公共交通、无障碍交通、出行时间、交通成本、医疗交通和交通安全 | 外部可达性、行动半径、服务连接和等待成本 | 不提供路线、驾驶、车辆、交通法律、撤离或出行操作建议 |
 | [Supply Chain Continuity](domains/supply-chain-continuity/README.md) | 药品、能源、食物、设备、通信、芯片、物流和替代路径 | 关键输入、依赖链、断供模式、替代路径和恢复时间 | 不提供囤积恐慌、黑市采购、制裁规避、非法获取或供应链攻击建议 |
 | [Synthetic Biology Biosecurity](domains/synthetic-biology-biosecurity/README.md) | 合成生物学、生物安全、生物安保、双重用途风险和治理边界 | 高风险研究边界、审查门槛、禁止用途和生物风险变量 | 不提供病原体工程、培养、传播、规避筛查、实验协议或湿实验步骤 |
@@ -1408,6 +1416,14 @@ human_infra/
 │   ├── housing-habitability-inspection-code-enforcement-continuity/
 │   ├── hud-approved-housing-counseling-navigation-continuity/
 │   ├── manufactured-housing-park-tenure-safety-continuity/
+│   ├── self-represented-litigant-court-self-help-continuity/
+│   ├── court-efiling-document-submission-continuity/
+│   ├── remote-hybrid-court-hearing-access-continuity/
+│   ├── court-language-access-interpreter-continuity/
+│   ├── court-disability-accommodation-accessibility-continuity/
+│   ├── court-fees-fines-ability-to-pay-continuity/
+│   ├── jury-service-summons-hardship-continuity/
+│   ├── small-claims-civil-dispute-resolution-continuity/
 │   ├── future-waiting/
 │   ├── fluid-electrolyte-acid-base-homeostasis/
 │   ├── governance-rights/
@@ -1727,5 +1743,6 @@ flowchart LR
 - 2026-07-01：新增第六十九波 8 个个人保险、财产责任、灾害与理赔执行连续性域，覆盖汽车保险责任理赔、房主租客财产理赔、洪水/NFIP 理赔、风暴野火地震巨灾保险、残障收入保险理赔、长期照护福利启动、旅行保险行程保护理赔和个人责任伞形保险防御。
 - 2026-07-01：新增第七十波 8 个受害者安全、服务与恢复执行连续性域，覆盖家庭暴力/胁迫控制、性暴力医疗 forensic exam 与 advocacy、跟踪骚扰保护令、受害者/证人权利通知、犯罪受害者补偿与 restitution、安全住所 emergency transfer、人口贩运受害者识别服务和失踪人员/无名遗体身份恢复。
 - 2026-07-01：新增第七十一波 8 个住房 tenure 稳定与可居住性执行连续性域，覆盖租赁租约居住权、驱逐预防法院 diversion、应急租金援助与欠租、住房选择券/公屋、公平住房/合理便利、住房可居住性检查 code enforcement、HUD 批准住房咨询和制造房屋园区 tenure 安全。
+- 2026-07-01：新增第七十二波 8 个法院接入与民事程序执行连续性域，覆盖自行诉讼人自助、法院电子 filing、远程/混合 hearing、法院语言服务、法院残障便利、法院罚金费用支付能力、陪审传票 hardship 和小额民事纠纷恢复。
 
 完整记录见 [CHANGELOG.md](CHANGELOG.md)。

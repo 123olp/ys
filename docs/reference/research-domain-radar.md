@@ -117,6 +117,14 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `housing-habitability-inspection-code-enforcement-continuity/` | 可居住性、检查、code enforcement 和修复责任决定住房是否持续制造霉菌、害虫、温控、结构和安全损耗 |
 | `hud-approved-housing-counseling-navigation-continuity/` | HUD 批准住房咨询决定租赁、违约、止赎、灾后住房和服务导航能否被解释、连接和纠错 |
 | `manufactured-housing-park-tenure-safety-continuity/` | 制造房屋园区、地租、搬迁风险和基础设施责任决定低收入自有住房是否会被土地 tenure 脆弱性击穿 |
+| `self-represented-litigant-court-self-help-continuity/` | 自行诉讼人自助中心和法律信息边界决定没有律师时主体能否理解法院程序并获得正确转介 |
+| `court-efiling-document-submission-continuity/` | 法院 e-filing、纸面替代和提交状态决定权利是否会因文件、账号、格式或通知失败而断裂 |
+| `remote-hybrid-court-hearing-access-continuity/` | 远程/混合 hearing 决定法院参与能否降低交通时间成本而不制造数字排除、隐私和 failure-to-appear 风险 |
+| `court-language-access-interpreter-continuity/` | 法院语言服务和口译决定 LEP 主体能否理解通知、参加 hearing 并表达选择 |
+| `court-disability-accommodation-accessibility-continuity/` | 法院残障便利和无障碍决定建筑、网站、听证、陪审和通信是否排除残障主体 |
+| `court-fees-fines-ability-to-pay-continuity/` | 法院费用罚金和支付能力审查决定法律事件是否会被放大成债务、吊照、就业和住房风险 |
+| `jury-service-summons-hardship-continuity/` | 陪审传票、hardship 和可达支持决定公民义务是否会过度击穿工作、照护、收入和健康安排 |
+| `small-claims-civil-dispute-resolution-continuity/` | 小额诉讼和简化民事纠纷渠道决定低金额资源损失是否能低成本恢复 |
 | `transportation-access-mobility/` | 外部交通可达性决定医疗、工作、食物、社区、照护和应急资源能否实际到达 |
 | `legal-identity-civil-registration/` | 法律身份、出生登记、民事登记和身份文件决定主体能否被制度承认为权利与服务对象 |
 | `emergency-preparedness-response/` | 灾害准备、预警、通信、急救医疗、安置和恢复决定尾部风险能否被响应而不是一次性清零 |
@@ -755,6 +763,14 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | HUD NSPIRE / Healthy Homes / local code enforcement materials | 提示可居住性、检查、室内危害和修复责任需要从一般建成环境中拆成可执行质量保障域 |
 | HUD-approved housing counseling / CFPB housing resources | 提示住房咨询和消费者金融资料可作为租赁、违约、止赎、灾后住房和预算理解的中立导航层 |
 | HUD manufactured housing / CFPB manufactured-housing finance materials | 提示制造房屋和园区 tenure 把住宅、土地租赁、融资、搬迁成本和基础服务脆弱性连接成独立风险链 |
+| NCSC self-represented litigant / access-to-justice resources | 提示法院自助、法律信息边界、表格导航、程序理解和转介是没有律师时的独立执行基础设施 |
+| U.S. Courts CM/ECF and PACER / state e-filing materials | 提示 filing 不只是法律行为，也是账号、格式、签名、时间戳、rejection、通知和纸面替代的公共服务接口 |
+| NCSC remote hearing research / digital access resources | 提示远程 hearing 同时降低交通和等待成本，也引入设备、带宽、隐私、语言、残障和身份验证断点 |
+| DOJ language access / U.S. Courts interpreter services / NCSC language access | 提示 LEP 参与者需要把语言 access 和口译作为法院程序连续性的独立变量 |
+| ADA.gov court and state-local government accessibility materials | 提示法院建筑、网站、辅助工具、有效沟通和陪审可达必须独立于一般无障碍域建模 |
+| NCSC fines and fees / DOJ court fines-fees civil-rights materials | 提示法院金钱义务会把小额违规或案件成本扩散为债务、吊照、拘押、就业和住房风险 |
+| U.S. Courts jury service / NCSC jury service materials | 提示陪审传票、资格、延期、hardship、雇主约束、照护、交通和可达性是公民参与中的生活连续性问题 |
+| NCSC civil justice / FTC and CFPB consumer dispute materials | 提示小额诉讼、ODR、调解和低额民事纠纷恢复需要独立于消费投诉和社区调解建模 |
 | CDC Transportation and Health / U.S. DOT Health / CDC Transportation Toolkit | 提示交通可达、无障碍交通、出行时间、交通成本和交通安全影响医疗、工作、食物和社区接入 |
 | World Bank ID4D / UNICEF Birth Registration / UN Legal Identity Agenda | 提示法律身份、出生登记、民事登记、身份文件和服务资格是制度承认与公共服务入口 |
 | CDC Emergency Preparedness / Ready.gov / WHO Emergency Care / WHO Public Health Emergency Preparedness | 提示预警、通信、急救医疗、公共卫生应急、安置和灾后恢复是尾部风险下的主体连续性条件 |
@@ -1101,6 +1117,24 @@ Source links:
 - https://www.consumerfinance.gov/owning-a-home/
 - https://www.hud.gov/program_offices/housing/rmra/mhs
 - https://www.consumerfinance.gov/data-research/research-reports/manufactured-housing-finance-new-insights-hmda/
+- https://www.ncsc.org/consulting-and-research/areas-of-expertise/access-to-justice
+- https://www.uscourts.gov/about-federal-courts/court-website-links
+- https://www.uscourts.gov/services-forms/cmecf
+- https://pacer.uscourts.gov/
+- https://www.ncsc.org/consulting-and-research/areas-of-expertise/court-management-and-performance/remote-hearings
+- https://www.justice.gov/language-access
+- https://www.lep.gov/
+- https://www.uscourts.gov/services-forms/federal-court-interpreters
+- https://www.ncsc.org/consulting-and-research/areas-of-expertise/access-to-justice/language-access
+- https://www.ada.gov/topics/title-ii/
+- https://www.ada.gov/topics/justice/
+- https://www.uscourts.gov/services-forms/jury-service
+- https://www.ncsc.org/consulting-and-research/areas-of-expertise/court-management-and-performance/jury-management
+- https://www.ncsc.org/consulting-and-research/areas-of-expertise/fines-fees-and-bail-practices
+- https://www.justice.gov/opa/pr/justice-department-issues-guidance-state-and-local-courts-ensure-fairness-court-fines-and-fees
+- https://www.ncsc.org/consulting-and-research/areas-of-expertise/civil-justice
+- https://consumer.ftc.gov/consumer-alerts/2024/06/going-small-claims-court
+- https://www.consumerfinance.gov/consumer-tools/submit-a-complaint/
 - https://www.cdc.gov/transportation/
 - https://www.transportation.gov/mission/health
 - https://www.cdc.gov/healthy-places/php/toolkit/transportation.html

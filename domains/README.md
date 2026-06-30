@@ -64,6 +64,14 @@
 - `housing-habitability-inspection-code-enforcement-continuity/`：住房可居住性、检查与 code enforcement 连续性，整理 habitability、NSPIRE、inspection、供热、霉菌、铅、害虫和结构安全。
 - `hud-approved-housing-counseling-navigation-continuity/`：HUD 批准住房咨询与导航连续性，整理 rental/default/foreclosure/disaster/HECM counseling、住房导航和反诈骗。
 - `manufactured-housing-park-tenure-safety-continuity/`：制造房屋、移动房屋园区与 tenure 安全连续性，整理 lot rent、park rules、park sale、relocation、infrastructure 和 financing。
+- `self-represented-litigant-court-self-help-continuity/`：自行诉讼人与法院自助连续性，整理 self-help center、legal information/advice boundary、forms navigation、deadlines 和 referral。
+- `court-efiling-document-submission-continuity/`：法院电子 filing 与文档提交连续性，整理 e-filing、paper alternatives、format rejection、timestamps、notifications 和 fee waiver interfaces。
+- `remote-hybrid-court-hearing-access-continuity/`：远程/混合法院 hearing 可达连续性，整理 remote hearing、telephonic access、device/connectivity、privacy、interpretation 和 accommodation。
+- `court-language-access-interpreter-continuity/`：法院语言服务与口译连续性，整理 LEP、interpreter services、translated notices、language access plans 和 remote hearing integration。
+- `court-disability-accommodation-accessibility-continuity/`：法院残障便利与可达连续性，整理 ADA、auxiliary aids、effective communication、digital access、jury accessibility 和 grievance interfaces。
+- `court-fees-fines-ability-to-pay-continuity/`：法院费用罚金与支付能力连续性，整理 fees、fines、surcharges、fee waivers、ability-to-pay、collections 和 nonpayment consequences。
+- `jury-service-summons-hardship-continuity/`：陪审传票与 hardship 连续性，整理 summons、qualification、exemption、deferral、hardship、employer/childcare/transport barriers。
+- `small-claims-civil-dispute-resolution-continuity/`：小额民事纠纷解决连续性，整理 small claims、ODR、mediation、filing fees、service、hearing access 和 judgment recovery boundaries。
 - `transportation-access-mobility/`：交通接入与日常移动，整理公共交通、无障碍交通、出行时间、医疗交通、交通成本和外部可达性。
 - `legal-identity-civil-registration/`：法律身份与民事登记，整理法律身份、出生登记、民事登记、生命统计、身份文件和服务资格。
 - `access-to-justice-legal-aid/`：司法可及与法律援助，整理民事法律需求、法律援助、程序负担、代理缺口和权利救济。

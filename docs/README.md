@@ -91,6 +91,7 @@ docs/
 │   ├── 0073-add-sixty-ninth-wave-personal-insurance-claims-continuity-domains.md
 │   ├── 0074-add-seventieth-wave-victim-safety-recovery-continuity-domains.md
 │   ├── 0075-add-seventy-first-wave-housing-tenure-stability-continuity-domains.md
+│   ├── 0076-add-seventy-second-wave-court-access-procedure-continuity-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -562,4 +563,12 @@ docs/
 383. Read `../domains/housing-habitability-inspection-code-enforcement-continuity/README.md` if you are working on habitability, NSPIRE, housing inspections, code enforcement, heating, mold, lead, pests, structural safety, or housing-quality continuity.
 384. Read `../domains/hud-approved-housing-counseling-navigation-continuity/README.md` if you are working on HUD-approved housing counseling, rental counseling, default or foreclosure counseling, disaster housing counseling, HECM counseling, or anti-scam housing navigation.
 385. Read `../domains/manufactured-housing-park-tenure-safety-continuity/README.md` if you are working on manufactured housing, mobile-home parks, lot rent, park rules, park closure, relocation, infrastructure, or manufactured-home tenure safety.
-386. Enter a domain under `../domains/`.
+386. Read `../domains/self-represented-litigant-court-self-help-continuity/README.md` if you are working on self-represented litigants, court self-help centers, legal information/advice boundaries, court forms navigation, or procedural literacy.
+387. Read `../domains/court-efiling-document-submission-continuity/README.md` if you are working on court e-filing, document submission, paper alternatives, format rejection, timestamps, filing notifications, or fee-waiver interfaces.
+388. Read `../domains/remote-hybrid-court-hearing-access-continuity/README.md` if you are working on remote hearings, hybrid court participation, telephonic appearances, connectivity, privacy, interpretation, or hearing accessibility.
+389. Read `../domains/court-language-access-interpreter-continuity/README.md` if you are working on court language access, LEP participants, court interpreters, translated notices, language access plans, or interpreter continuity.
+390. Read `../domains/court-disability-accommodation-accessibility-continuity/README.md` if you are working on court disability accommodations, ADA court access, auxiliary aids, effective communication, digital access, or accessible jury service.
+391. Read `../domains/court-fees-fines-ability-to-pay-continuity/README.md` if you are working on court fees, fines, surcharges, fee waivers, ability-to-pay review, payment plans, collections, or nonpayment consequences.
+392. Read `../domains/jury-service-summons-hardship-continuity/README.md` if you are working on jury summons, juror qualification, exemption, deferral, hardship, employer constraints, childcare, transportation, or juror accessibility.
+393. Read `../domains/small-claims-civil-dispute-resolution-continuity/README.md` if you are working on small claims, low-value civil disputes, online dispute resolution, mediation, simplified civil procedure, or judgment recovery boundaries.
+394. Enter a domain under `../domains/`.
