@@ -1072,6 +1072,14 @@ flowchart TD
 | [Telehealth Remote Monitoring Access](domains/telehealth-remote-monitoring-access/README.md) | 远程医疗、远程患者监测、居家设备、数字照护和升级路径 | 距离成本、随访频率、监测可见性和居家连续照护 | 不提供远程诊断、分诊、设备选择、治疗、报销或平台背书 |
 | [Caregiving Long Term Care](domains/caregiving-long-term-care/README.md) | 家庭照护、长期照护、居家社区支持、照护协调和照护者负担 | 失能支持、照护连续性、尊严和长期生活支持 | 不提供个体护理计划、机构选择、保险福利、法律监护或医学处理 |
 | [Housing Built Environment Stability](domains/housing-built-environment-stability/README.md) | 住房稳定、住房质量、室内环境、无障碍、社区资源和建成环境 | 生活空间、恢复空间、照护可行性和环境暴露边界 | 不提供房地产、租买房、维修、法律、福利或个体环境医学建议 |
+| [Rental Lease Tenancy Rights Continuity](domains/rental-lease-tenancy-rights-continuity/README.md) | 租赁协议、租金、押金、通知、维修责任、续租和终止 | 把租赁关系转化为可理解、可记录、可恢复的居住权执行链 | 不提供法律意见、租约解释、驱逐抗辩、押金争议、维修策略或文书代写 |
+| [Eviction Prevention Court Diversion Continuity](domains/eviction-prevention-court-diversion-continuity/README.md) | 驱逐通知、法院 filing、diversion、mediation、法律援助转介和记录影响 | 在失去住所之前缓冲租赁断裂，降低住房、信用、学校和工作级联损害 | 不提供驱逐案件策略、答辩、听证、期限判断、文书或法律建议 |
+| [Emergency Rental Assistance Arrears Continuity](domains/emergency-rental-assistance-arrears-continuity/README.md) | 租金欠缴、utility arrears、应急租金援助、证明负担和支付时限 | 把短期收入冲击从驱逐风险降级为可修复现金流缺口 | 不提供资格判断、材料准备、金额估算、申请代写、申诉或欺诈方法 |
+| [Housing Choice Voucher Public Housing Continuity](domains/housing-choice-voucher-public-housing-continuity/README.md) | Housing Choice Voucher、公屋、等待名单、inspection、recertification 和 portability | 把住房补贴从名义资格转化为可入住、可续租、可迁移的住房稳定 | 不提供资格、申请、等待名单、房源、租金、申诉、搬迁或法律建议 |
+| [Fair Housing Discrimination Reasonable Accommodation Continuity](domains/fair-housing-discrimination-reasonable-accommodation-continuity/README.md) | 公平住房、歧视、合理便利、合理修改、service animals 和报复边界 | 防止住房入口和居住过程因受保护特征或残障支持失败而排除主体 | 不提供投诉策略、证据整理、便利申请代写、案件评估或法律建议 |
+| [Housing Habitability Inspection Code Enforcement Continuity](domains/housing-habitability-inspection-code-enforcement-continuity/README.md) | habitability、NSPIRE、inspection、code enforcement、供热、霉菌、铅、害虫和结构安全 | 防止住所从恢复场所变成慢性暴露、疾病、睡眠剥夺和财产损失源 | 不提供检测解释、维修建议、施工方案、扣租、投诉策略或法律索赔 |
+| [HUD Approved Housing Counseling Navigation Continuity](domains/hud-approved-housing-counseling-navigation-continuity/README.md) | HUD-approved housing counseling、rental/default/foreclosure/disaster/HECM counseling 和导航 | 降低住房系统中的信息成本、程序成本、诈骗风险和错误决策成本 | 不提供购房、租房、贷款、止赎、预算、信用、债务、税务、投资或法律建议 |
+| [Manufactured Housing Park Tenure Safety Continuity](domains/manufactured-housing-park-tenure-safety-continuity/README.md) | manufactured housing、mobile home park、lot rent、park rules、relocation 和基础设施 | 处理房屋所有权与土地租赁分离带来的可负担住房稳定风险 | 不提供购房、融资、租地、园区争议、搬迁、维修、产权、税务或法律建议 |
 | [Transportation Access Mobility](domains/transportation-access-mobility/README.md) | 公共交通、无障碍交通、出行时间、交通成本、医疗交通和交通安全 | 外部可达性、行动半径、服务连接和等待成本 | 不提供路线、驾驶、车辆、交通法律、撤离或出行操作建议 |
 | [Supply Chain Continuity](domains/supply-chain-continuity/README.md) | 药品、能源、食物、设备、通信、芯片、物流和替代路径 | 关键输入、依赖链、断供模式、替代路径和恢复时间 | 不提供囤积恐慌、黑市采购、制裁规避、非法获取或供应链攻击建议 |
 | [Synthetic Biology Biosecurity](domains/synthetic-biology-biosecurity/README.md) | 合成生物学、生物安全、生物安保、双重用途风险和治理边界 | 高风险研究边界、审查门槛、禁止用途和生物风险变量 | 不提供病原体工程、培养、传播、规避筛查、实验协议或湿实验步骤 |
@@ -1392,6 +1400,14 @@ human_infra/
 │   ├── telehealth-remote-monitoring-access/
 │   ├── caregiving-long-term-care/
 │   ├── housing-built-environment-stability/
+│   ├── rental-lease-tenancy-rights-continuity/
+│   ├── eviction-prevention-court-diversion-continuity/
+│   ├── emergency-rental-assistance-arrears-continuity/
+│   ├── housing-choice-voucher-public-housing-continuity/
+│   ├── fair-housing-discrimination-reasonable-accommodation-continuity/
+│   ├── housing-habitability-inspection-code-enforcement-continuity/
+│   ├── hud-approved-housing-counseling-navigation-continuity/
+│   ├── manufactured-housing-park-tenure-safety-continuity/
 │   ├── future-waiting/
 │   ├── fluid-electrolyte-acid-base-homeostasis/
 │   ├── governance-rights/
@@ -1710,5 +1726,6 @@ flowchart LR
 - 2026-07-01：新增第六十八波 8 个消费者信贷、贷款服务与跨期资源连续性域，覆盖信用卡循环信用成本、消费贷款发放 APR 披露、房贷服务止赎、车贷租赁收车、学生贷款还款减免、发薪日小额高成本贷款、BNPL 分期融资和汇款转账费用汇率披露。
 - 2026-07-01：新增第六十九波 8 个个人保险、财产责任、灾害与理赔执行连续性域，覆盖汽车保险责任理赔、房主租客财产理赔、洪水/NFIP 理赔、风暴野火地震巨灾保险、残障收入保险理赔、长期照护福利启动、旅行保险行程保护理赔和个人责任伞形保险防御。
 - 2026-07-01：新增第七十波 8 个受害者安全、服务与恢复执行连续性域，覆盖家庭暴力/胁迫控制、性暴力医疗 forensic exam 与 advocacy、跟踪骚扰保护令、受害者/证人权利通知、犯罪受害者补偿与 restitution、安全住所 emergency transfer、人口贩运受害者识别服务和失踪人员/无名遗体身份恢复。
+- 2026-07-01：新增第七十一波 8 个住房 tenure 稳定与可居住性执行连续性域，覆盖租赁租约居住权、驱逐预防法院 diversion、应急租金援助与欠租、住房选择券/公屋、公平住房/合理便利、住房可居住性检查 code enforcement、HUD 批准住房咨询和制造房屋园区 tenure 安全。
 
 完整记录见 [CHANGELOG.md](CHANGELOG.md)。

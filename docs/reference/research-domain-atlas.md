@@ -138,6 +138,14 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 医疗组织可从错误中学习 | `patient-safety-organizational-learning/` | 事件报告、近失误、团队沟通、根因分析、安全文化、行动闭环 | 把患者安全写成追责、机构背书、法律判断或惩罚性监控 |
 | 照护可持续 | `caregiving-long-term-care/` | 家庭照护、长期照护、居家社区支持、照护协调、照护者负担 | 长寿退化为无人照护、照护者崩溃、失能支持中断或尊严丧失 |
 | 居住环境可稳定 | `housing-built-environment-stability/` | 住房稳定、住房质量、室内环境、无障碍、社区资源、建成环境 | 居住空间持续制造暴露、跌倒、孤立、服务断点或照护不可行 |
+| 租赁关系可理解可执行 | `rental-lease-tenancy-rights-continuity/` | 租约、租金、押金、通知、维修责任、续租、终止、记录保全 | 住所存在但居住权因合同、通知、费用、维修或程序摩擦而随时断裂 |
+| 驱逐风险可被早期降级 | `eviction-prevention-court-diversion-continuity/` | eviction diversion、调解、法律援助转介、付款计划、法院导航、住房稳定服务 | 欠租或纠纷直接进入失屋、记录污名、儿童换校、工作医疗断裂和无家可归风险 |
+| 欠租冲击可被公共资金桥接 | `emergency-rental-assistance-arrears-continuity/` | 应急租金援助、欠租、公共资金、申请材料、支付闭环、房东参与、申诉 | 短期现金流冲击演变为驱逐、债务、信用/筛查记录损伤和长期住房排除 |
+| 补贴住房资格和居住链可连续 | `housing-choice-voucher-public-housing-continuity/` | HCV、公屋、等待名单、租金再认证、检查、portability、转移、终止保护 | 补贴资格、检查、再认证或迁移断裂导致低收入主体失去可负担住所 |
+| 住房系统不能因受保护特征排除主体 | `fair-housing-discrimination-reasonable-accommodation-continuity/` | 公平住房、歧视禁止、合理便利、残障可达、语言可达、投诉入口 | 歧视、拒绝便利或不平等条件把主体排除在住所、社区、照护和恢复空间之外 |
+| 居住空间可居住性可被执行 | `housing-habitability-inspection-code-enforcement-continuity/` | 可居住性、NSPIRE、code enforcement、健康安全检查、修复责任、室内危害 | 房屋看似稳定却持续制造霉菌、害虫、温控、结构、安全和健康损耗 |
+| 住房问题可被中立咨询导航 | `hud-approved-housing-counseling-navigation-continuity/` | HUD 批准住房咨询、租赁/违约/止赎/灾后住房导航、预算理解、服务转介 | 复杂住房、债务、止赎、租赁或灾后恢复程序因无人解释而转成不可逆损失 |
+| 制造房屋园区 tenure 可稳定 | `manufactured-housing-park-tenure-safety-continuity/` | 制造房屋、园区、地租、搬迁风险、设施责任、融资、居民组织、基础服务 | 房屋可移动性低而土地/园区控制不稳，导致低收入自有住房变成高脆弱 tenure |
 | 日常移动和服务接入可达 | `transportation-access-mobility/` | 公共交通、无障碍交通、出行时间、医疗交通、交通成本、交通安全 | 有资源但到不了，服务延误、缺席、孤立或撤离不可达 |
 | 法律身份可被承认 | `legal-identity-civil-registration/` | 法律身份、出生登记、民事登记、生命统计、身份文件、服务资格 | 无证、登记缺失、身份错误或制度不承认导致权利与服务断线 |
 | 权利救济可达 | `access-to-justice-legal-aid/` | 民事法律需求、法律援助、司法可及、程序负担、代理缺口、申诉执行 | 名义权利无法转化为住房、收入、安全、身份和服务恢复 |
@@ -677,6 +685,14 @@ risk-engineering
   -> patient-safety-organizational-learning
   -> caregiving-long-term-care
   -> housing-built-environment-stability
+  -> rental-lease-tenancy-rights-continuity
+  -> eviction-prevention-court-diversion-continuity
+  -> emergency-rental-assistance-arrears-continuity
+  -> housing-choice-voucher-public-housing-continuity
+  -> fair-housing-discrimination-reasonable-accommodation-continuity
+  -> housing-habitability-inspection-code-enforcement-continuity
+  -> hud-approved-housing-counseling-navigation-continuity
+  -> manufactured-housing-park-tenure-safety-continuity
   -> transportation-access-mobility
   -> legal-identity-civil-registration
   -> access-to-justice-legal-aid

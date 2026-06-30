@@ -873,6 +873,30 @@ domains/
 ├── housing-built-environment-stability/
 │   ├── AGENTS.md
 │   └── README.md
+├── rental-lease-tenancy-rights-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── eviction-prevention-court-diversion-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── emergency-rental-assistance-arrears-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── housing-choice-voucher-public-housing-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── fair-housing-discrimination-reasonable-accommodation-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── housing-habitability-inspection-code-enforcement-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── hud-approved-housing-counseling-navigation-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── manufactured-housing-park-tenure-safety-continuity/
+│   ├── AGENTS.md
+│   └── README.md
 ├── transportation-access-mobility/
 │   ├── AGENTS.md
 │   └── README.md
@@ -1422,6 +1446,7 @@ domains/
 - `food-security-nutrition-access/`、`water-sanitation-hygiene-continuity/`、`energy-access-resilience/`、`social-protection-benefits-delivery/`、`community-resource-navigation/`、`social-determinants-community-vulnerability/`、`public-service-design-accessibility/`、`administrative-burden-procedural-friction/`、`civic-data-open-government-transparency/`、`insurance-risk-transfer/` 和 `childcare-family-continuity/` 负责食物、水卫生、能源、公共福利、社区资源导航、社区脆弱性、公共服务可达、行政负担、开放数据透明、保险风险池和托育家庭连续性这些基础生计、公共服务与风险分摊条件。
 - `research-infrastructure-open-science-translation/`、`standards-metrology-quality-infrastructure/`、`compute-data-center-ai-infrastructure/`、`cybersecurity-resilience-critical-services/`、`geospatial-navigation-location-infrastructure/`、`manufacturing-repair-capacity/`、`supply-chain-continuity/` 和 `ai-agency-safety/` 负责科研转化、标准计量质量、算力 AI 基础设施、网络安全韧性、空间定位导航、制造维修能力、供应链连续和 AI 代理安全这些技术窗口生成、可信化和可用性的外部底座。
 - `healthcare-access-continuity/`、`medicine-access-treatment-continuity/`、`patient-data-interoperability/`、`telehealth-remote-monitoring-access/`、`health-data-privacy-governance/`、`functioning-quality-of-life-outcomes/`、`health-economics-value-assessment/`、`clinical-trials-regulatory-science-translation/`、`immunization-public-health-surveillance/`、`animal-health-zoonotic-interface-one-health/`、`maternal-newborn-child-development/`、`patient-safety-organizational-learning/`、`health-workforce-capacity/`、`community-health-workers-peer-support/`、`caregiving-long-term-care/`、`housing-built-environment-stability/`、`building-fire-life-safety-codes/`、`transportation-access-mobility/`、`legal-identity-civil-registration/`、`emergency-preparedness-response/`、`weather-climate-observation-forecasting/`、`emergency-alerts-communications/`、`household-emergency-preparedness-resilience/` 和 `disaster-recovery-relief-continuity/` 负责医疗接入、药品治疗连续性、患者数据互操作、远程照护、健康数据治理、结局评估、价值评估、临床监管转化、公共卫生监测、动物健康界面、早期生命发展、患者安全、健康劳动力、社区中介支持、长期照护、居住空间、建筑消防生命安全、交通可达、法律身份、应急响应、天气气候观测、预警通信、家庭准备和灾后恢复这些服务接入与生活连续性条件。
+- `rental-lease-tenancy-rights-continuity/`、`eviction-prevention-court-diversion-continuity/`、`emergency-rental-assistance-arrears-continuity/`、`housing-choice-voucher-public-housing-continuity/`、`fair-housing-discrimination-reasonable-accommodation-continuity/`、`housing-habitability-inspection-code-enforcement-continuity/`、`hud-approved-housing-counseling-navigation-continuity/` 和 `manufactured-housing-park-tenure-safety-continuity/` 负责住房 tenure 稳定与可居住性执行连续性，覆盖租赁居住权、驱逐预防、欠租援助、住房补贴、公平住房、可居住性检查、住房咨询和制造房屋园区稳定。
 - `human-animal-bond-companion-care-continuity/`、`veterinary-care-access-cost-continuity/`、`service-animal-disability-access-continuity/`、`pet-identification-microchip-reunification-continuity/`、`pet-food-medication-supply-safety-continuity/`、`pet-disaster-evacuation-sheltering-continuity/`、`animal-shelter-rescue-rehoming-continuity/` 和 `animal-welfare-cruelty-reporting-continuity/` 负责伴侣动物、服务动物与宠物照护连续性，把关系支持、兽医入口、辅助接口、身份重聚、食药供应、灾害撤离、收容转接和福利报告纳入主体持续性模型。
 - 上述伴侣/服务动物域不提供动物诊疗、训练、购买、领养、繁育、救助行动、微芯片/寻宠操作、实时灾害撤离、动物举报取证、法律策略、家庭纠纷处理、宠物食品/药品建议、动物虐待或规避检查方法。
 - `public-procurement-contracting-capacity/` 负责公共采购、合同、供应商管理、应急采购、透明度和交付验收这些公共能力落地条件。

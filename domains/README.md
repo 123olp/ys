@@ -56,6 +56,14 @@
 - `patient-safety-organizational-learning/`：患者安全与组织学习，整理事件报告、团队沟通、根因分析、CUSP、TeamSTEPPS 和安全文化。
 - `caregiving-long-term-care/`：照护与长期照护，整理家庭照护、长期照护、居家社区支持、照护协调和照护者负担。
 - `housing-built-environment-stability/`：住房与建成环境稳定，整理住房稳定、住房质量、室内环境、无障碍、社区资源和建成环境。
+- `rental-lease-tenancy-rights-continuity/`：租赁、租约与居住权连续性，整理租约、租金、押金、通知、维修责任、续租和终止。
+- `eviction-prevention-court-diversion-continuity/`：驱逐预防、法院 diversion 与住房断裂缓冲连续性，整理 eviction notice、court filing、mediation、legal aid referral 和 rental assistance。
+- `emergency-rental-assistance-arrears-continuity/`：应急租金援助与欠租连续性，整理 rent burden、arrears、utility arrears、援助支付、证明负担和现金流冲击。
+- `housing-choice-voucher-public-housing-continuity/`：住房选择券、公屋与补贴住房连续性，整理 voucher、public housing、waiting list、inspection、recertification 和 portability。
+- `fair-housing-discrimination-reasonable-accommodation-continuity/`：公平住房、住房歧视与合理便利连续性，整理 Fair Housing Act、protected classes、reasonable accommodation、reasonable modification 和 retaliation。
+- `housing-habitability-inspection-code-enforcement-continuity/`：住房可居住性、检查与 code enforcement 连续性，整理 habitability、NSPIRE、inspection、供热、霉菌、铅、害虫和结构安全。
+- `hud-approved-housing-counseling-navigation-continuity/`：HUD 批准住房咨询与导航连续性，整理 rental/default/foreclosure/disaster/HECM counseling、住房导航和反诈骗。
+- `manufactured-housing-park-tenure-safety-continuity/`：制造房屋、移动房屋园区与 tenure 安全连续性，整理 lot rent、park rules、park sale、relocation、infrastructure 和 financing。
 - `transportation-access-mobility/`：交通接入与日常移动，整理公共交通、无障碍交通、出行时间、医疗交通、交通成本和外部可达性。
 - `legal-identity-civil-registration/`：法律身份与民事登记，整理法律身份、出生登记、民事登记、生命统计、身份文件和服务资格。
 - `access-to-justice-legal-aid/`：司法可及与法律援助，整理民事法律需求、法律援助、程序负担、代理缺口和权利救济。

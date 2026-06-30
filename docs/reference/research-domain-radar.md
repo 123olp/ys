@@ -109,6 +109,14 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `healthcare-access-continuity/` | 医疗可及、连续照护、转诊、随访、费用和质量决定可修复问题能否转化为恢复机会 |
 | `caregiving-long-term-care/` | 长期照护、家庭照护、居家社区支持和照护者负担决定失能、慢病和脆弱状态能否被持续接住 |
 | `housing-built-environment-stability/` | 住房稳定、住房质量、无障碍和建成环境决定睡眠、恢复、照护、服务接入和环境暴露 |
+| `rental-lease-tenancy-rights-continuity/` | 租约、租金、押金、通知、维修责任、续租和终止决定稳定住所能否在日常制度执行中持续存在 |
+| `eviction-prevention-court-diversion-continuity/` | 驱逐预防、法院 diversion、调解、付款计划和法律援助转介决定失屋风险能否在进入无家可归前降级 |
+| `emergency-rental-assistance-arrears-continuity/` | 应急租金援助、欠租和支付闭环决定短期现金流冲击是否会放大成驱逐、债务和住房筛查污名 |
+| `housing-choice-voucher-public-housing-continuity/` | Housing Choice Voucher、公屋、等待名单、再认证、检查和转移决定低收入主体能否保持可负担住所 |
+| `fair-housing-discrimination-reasonable-accommodation-continuity/` | 公平住房、歧视禁止、合理便利和语言/残障可达决定主体是否会因身份或功能差异被住所系统排除 |
+| `housing-habitability-inspection-code-enforcement-continuity/` | 可居住性、检查、code enforcement 和修复责任决定住房是否持续制造霉菌、害虫、温控、结构和安全损耗 |
+| `hud-approved-housing-counseling-navigation-continuity/` | HUD 批准住房咨询决定租赁、违约、止赎、灾后住房和服务导航能否被解释、连接和纠错 |
+| `manufactured-housing-park-tenure-safety-continuity/` | 制造房屋园区、地租、搬迁风险和基础设施责任决定低收入自有住房是否会被土地 tenure 脆弱性击穿 |
 | `transportation-access-mobility/` | 外部交通可达性决定医疗、工作、食物、社区、照护和应急资源能否实际到达 |
 | `legal-identity-civil-registration/` | 法律身份、出生登记、民事登记和身份文件决定主体能否被制度承认为权利与服务对象 |
 | `emergency-preparedness-response/` | 灾害准备、预警、通信、急救医疗、安置和恢复决定尾部风险能否被响应而不是一次性清零 |
@@ -740,6 +748,13 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | WHO UHC / WHO Primary Health Care / Healthy People Access to Health Services | 提示医疗服务连续性、初级卫生保健、费用、质量、转诊和随访是可修复风险进入恢复路径的条件 |
 | NIA Caregiving / NIA Long-Term Care / WHO Ageing and Health | 提示长期照护、家庭照护、照护者负担和居家社区支持是长寿社会的核心连续性条件 |
 | WHO Housing and Health / CDC Healthy Places / Healthy People Quality of Housing | 提示住房质量、室内环境、无障碍、建成环境和住房稳定会影响健康、恢复和服务接入 |
+| HUD tenant rights / USA.gov rent help / LSC legal aid | 提示租赁关系、通知、押金、维修责任、居住权理解和法律援助入口是住房稳定从“有房”转成“可持续居住”的执行层 |
+| Treasury Emergency Rental Assistance / USA.gov rental assistance | 提示欠租、公共资金、申请摩擦、支付闭环和房东参与会决定短期资源冲击是否变成驱逐和长期排除 |
+| HUD Housing Choice Voucher / Public Housing | 提示补贴住房不是单次资源，而是等待名单、租金再认证、检查、转移、终止保护和家庭状态同步的连续系统 |
+| HUD Fair Housing / ADA reasonable accommodation resources | 提示公平住房、歧视禁止、残障合理便利和投诉入口决定住房系统是否对不同主体保持可达 |
+| HUD NSPIRE / Healthy Homes / local code enforcement materials | 提示可居住性、检查、室内危害和修复责任需要从一般建成环境中拆成可执行质量保障域 |
+| HUD-approved housing counseling / CFPB housing resources | 提示住房咨询和消费者金融资料可作为租赁、违约、止赎、灾后住房和预算理解的中立导航层 |
+| HUD manufactured housing / CFPB manufactured-housing finance materials | 提示制造房屋和园区 tenure 把住宅、土地租赁、融资、搬迁成本和基础服务脆弱性连接成独立风险链 |
 | CDC Transportation and Health / U.S. DOT Health / CDC Transportation Toolkit | 提示交通可达、无障碍交通、出行时间、交通成本和交通安全影响医疗、工作、食物和社区接入 |
 | World Bank ID4D / UNICEF Birth Registration / UN Legal Identity Agenda | 提示法律身份、出生登记、民事登记、身份文件和服务资格是制度承认与公共服务入口 |
 | CDC Emergency Preparedness / Ready.gov / WHO Emergency Care / WHO Public Health Emergency Preparedness | 提示预警、通信、急救医疗、公共卫生应急、安置和灾后恢复是尾部风险下的主体连续性条件 |
@@ -1072,6 +1087,20 @@ Source links:
 - https://www.who.int/publications/i/item/9789241550376
 - https://www.cdc.gov/healthy-places/
 - https://www.healthypeople.gov/2020/topics-objectives/topic/social-determinants-health/interventions-resources/quality-of-housing
+- https://www.hud.gov/topics/rental_assistance/tenantrights
+- https://www.usa.gov/rent-housing
+- https://www.lsc.gov/initiatives/effect-state-local-laws-evictions/eviction-laws-database
+- https://home.treasury.gov/policy-issues/coronavirus/assistance-for-state-local-and-tribal-governments/emergency-rental-assistance-program
+- https://www.hud.gov/program_offices/public_indian_housing/programs/hcv
+- https://www.hud.gov/program_offices/public_indian_housing/programs/ph
+- https://www.hud.gov/fairhousing
+- https://www.ada.gov/topics/housing/
+- https://www.hud.gov/program_offices/housing/rmra/nspire
+- https://www.hud.gov/program_offices/healthy_homes
+- https://www.hud.gov/program_offices/housing/sfh/hcc
+- https://www.consumerfinance.gov/owning-a-home/
+- https://www.hud.gov/program_offices/housing/rmra/mhs
+- https://www.consumerfinance.gov/data-research/research-reports/manufactured-housing-finance-new-insights-hmda/
 - https://www.cdc.gov/transportation/
 - https://www.transportation.gov/mission/health
 - https://www.cdc.gov/healthy-places/php/toolkit/transportation.html

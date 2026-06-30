@@ -178,6 +178,23 @@ Human Infra 不能被设计成更精密的压榨系统。
 - 提供证件欺诈、身份冒用、制度规避、违法获取资源、危险环境进入、武器、暴力、恐慌囤积、生存操作或官方应急指挥替代方案。
 - 把结构性服务缺口改写成个人努力问题，或把服务接入数据写成个体寿命、健康、法律或安全结论。
 
+## 住房 tenure 稳定与可居住性执行连续性边界
+
+`rental-lease-tenancy-rights-continuity`、`eviction-prevention-court-diversion-continuity`、`emergency-rental-assistance-arrears-continuity`、`housing-choice-voucher-public-housing-continuity`、`fair-housing-discrimination-reasonable-accommodation-continuity`、`housing-habitability-inspection-code-enforcement-continuity`、`hud-approved-housing-counseling-navigation-continuity` 和 `manufactured-housing-park-tenure-safety-continuity` 关注住房取得之后，租赁关系、欠租冲击、驱逐程序、补贴住房、公平住房、可居住性执行、住房咨询和制造房屋园区 tenure 如何继续支撑主体睡眠、恢复、照护、工作、儿童上学、身份文件保存和服务接入，不是个案法律代理、租赁策略、驱逐抗辩、住房申请、维修指挥、歧视认定、咨询替代或园区纠纷处理。
+
+可以做：
+
+- 整理 HUD、Treasury、USA.gov、CFPB、LSC、Eviction Lab 等公开资料的对象、入口类型、变量、证据边界和禁止用途。
+- 建模租约通知、欠租、驱逐 diversion、租金援助、补贴住房再认证、合理便利、住房检查、咨询导航和制造房屋园区 tenure 如何影响住房稳定、现金流、健康暴露、学校/工作连续性、照护可行性和未来选择权。
+- 区分住房制度执行、服务导航、公共资金递送、反歧视与合理便利、可居住性质量、法律援助入口、金融/债务压力和个体专业建议之间的边界。
+
+不能做：
+
+- 提供租约解释、法律意见、驱逐抗辩、法院策略、付款承诺、文书起草、保护令或住房转移申请、投诉代写、维修谈判、押金争议、补贴资格判断、合理便利请求、歧视认定、园区纠纷策略、贷款/融资建议或具体机构推荐。
+- 生成规避租金、伪造材料、隐藏收入或 household 信息、绕过等待名单、欺诈补贴、非法占用、报复房东/租户、恐吓、破坏设施、阻挠检查、规避 code enforcement、规避法院通知或操控筛查记录的方法。
+- 收集、推断、公开或关联租户、房东、幸存者、补贴户、儿童、残障状态、移民状态、欠租、案件编号、地址、园区位置、投诉记录、庇护或安全住所信息等高风险敏感信息。
+- 把失屋、欠租、住房质量、驱逐记录、补贴断裂、歧视、残障便利失败或园区 tenure 脆弱性归因于个人道德、消费选择、自律不足或单一理财失败。
+
 ## 基础生计与风险分摊域边界
 
 `food-security-nutrition-access`、`water-sanitation-hygiene-continuity`、`energy-access-resilience`、`social-protection-benefits-delivery`、`insurance-risk-transfer` 和 `childcare-family-continuity` 关注食物、水卫生、能源、公共福利、保险风险池和托育家庭支持如何作为反稀缺基础设施支撑主体持续性，不是个体饮食、申请、理赔、设备、施工或家庭处置指南。

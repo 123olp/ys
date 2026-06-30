@@ -90,6 +90,7 @@ docs/
 │   ├── 0072-add-sixty-eighth-wave-consumer-credit-lending-continuity-domains.md
 │   ├── 0073-add-sixty-ninth-wave-personal-insurance-claims-continuity-domains.md
 │   ├── 0074-add-seventieth-wave-victim-safety-recovery-continuity-domains.md
+│   ├── 0075-add-seventy-first-wave-housing-tenure-stability-continuity-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -553,4 +554,12 @@ docs/
 375. Read `../domains/survivor-safe-housing-emergency-transfer-continuity/README.md` if you are working on survivor shelter, safe housing, VAWA housing protections, emergency transfer, confidentiality, or housing-stability recovery.
 376. Read `../domains/human-trafficking-victim-identification-services-continuity/README.md` if you are working on trafficking victim identification, service referral, protection, labor/sex trafficking support, benefits navigation, or anti-retraumatization boundaries.
 377. Read `../domains/missing-persons-unidentified-remains-resolution-continuity/README.md` if you are working on missing persons, unidentified remains, NamUs, family notification, identity resolution, or long-term ambiguous loss continuity.
-378. Enter a domain under `../domains/`.
+378. Read `../domains/rental-lease-tenancy-rights-continuity/README.md` if you are working on rental leases, tenancy rights, rent, deposits, notices, renewal, termination, repair responsibility, or lease communication continuity.
+379. Read `../domains/eviction-prevention-court-diversion-continuity/README.md` if you are working on eviction prevention, court diversion, mediation, legal-aid referral, rental assistance linkage, eviction records, or housing-loss buffering.
+380. Read `../domains/emergency-rental-assistance-arrears-continuity/README.md` if you are working on rent arrears, emergency rental assistance, utility arrears, payment timing, documentation burden, or housing-cost shock continuity.
+381. Read `../domains/housing-choice-voucher-public-housing-continuity/README.md` if you are working on Housing Choice Vouchers, public housing, waitlists, inspections, recertification, portability, or subsidized housing continuity.
+382. Read `../domains/fair-housing-discrimination-reasonable-accommodation-continuity/README.md` if you are working on fair housing, protected classes, reasonable accommodations, reasonable modifications, service animals, retaliation, or housing discrimination boundaries.
+383. Read `../domains/housing-habitability-inspection-code-enforcement-continuity/README.md` if you are working on habitability, NSPIRE, housing inspections, code enforcement, heating, mold, lead, pests, structural safety, or housing-quality continuity.
+384. Read `../domains/hud-approved-housing-counseling-navigation-continuity/README.md` if you are working on HUD-approved housing counseling, rental counseling, default or foreclosure counseling, disaster housing counseling, HECM counseling, or anti-scam housing navigation.
+385. Read `../domains/manufactured-housing-park-tenure-safety-continuity/README.md` if you are working on manufactured housing, mobile-home parks, lot rent, park rules, park closure, relocation, infrastructure, or manufactured-home tenure safety.
+386. Enter a domain under `../domains/`.
