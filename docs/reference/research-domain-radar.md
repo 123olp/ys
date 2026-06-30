@@ -187,6 +187,12 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `public-works-civil-infrastructure-asset-management/` | 公共工程资产管理决定道路、桥梁、排水、公用设施和维护积压是否会转化为服务断点和安全风险 |
 | `urban-planning-land-use-zoning-resilience/` | 城市规划、土地使用和分区决定住房、交通、服务布局、风险避让、机会结构和空间公平 |
 | `green-blue-infrastructure-urban-nature-cooling/` | 城市绿蓝基础设施决定热岛、内涝、恢复空间、雨洪缓冲和自然服务能否进入日常生活环境 |
+| `electric-grid-reliability-resilience-continuity/` | 电网可靠性决定医疗、通信、水务、冷链、温控、支付和 AI 工具是否获得连续供电 |
+| `water-wastewater-utility-service-continuity/` | 水务和污水公用事业决定安全饮水、卫生排泄、医疗清洁和灾后恢复是否持续可用 |
+| `fuel-thermal-energy-service-continuity/` | 燃料和热能服务决定取暖、制冷、热水、烹饪、备用电源和关键设施热负荷是否可持续 |
+| `public-transit-service-operations-continuity/` | 公共交通运营决定无车、低收入、老年、残障和照护依赖主体是否能真实到达医疗、工作、教育和食物入口 |
+| `critical-infrastructure-lifeline-interdependency-resilience/` | 关键基础设施生命线互依赖决定能源、水务、通信、交通、医疗、食品、金融和政府服务故障是否级联放大 |
+| `utility-affordability-shutoff-protection-continuity/` | 公用事业可负担性和断供保护决定服务存在时，家庭是否仍会因支付、欠费和程序摩擦被切断基础服务 |
 
 ## 来源信号
 
@@ -346,6 +352,12 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | FHWA Asset Management / World Bank Infrastructure / OECD Infrastructure | 提示公共工程资产的登记、状态评估、维护优先级和全生命周期管理决定服务连续性 |
 | UN-Habitat Urban Planning / World Bank Urban Development / OECD Cities | 提示土地使用、分区、密度、服务布局和城市空间公平会长期塑造主体机会结构 |
 | EPA Green Infrastructure / WHO Urban Green Spaces / UNEP Nature-based Solutions | 提示城市树冠、绿地、水体、湿地和自然基设施能缓冲热、雨洪和恢复空间不足 |
+| DOE Grid Resilience / NERC Reliability / EIA Electricity / CISA Energy Sector | 提示电网可靠性、资源充足性、关键负荷、停电恢复和能源部门安全是现代主体持续性的电力生命线 |
+| EPA Water Resilience / EPA Drinking Water / EPA NPDES / WHO Drinking-water | 提示饮用水、污水处理、管网、泵站、水质和应急供水需要独立水务服务连续性域 |
+| IEA Energy Security / EIA Heating Oil and Propane / DOE Heating and Cooling / WHO Housing and Health | 提示燃料、热能、取暖、制冷和室内温度安全是身体恢复、药品食物保存和关键设施运行的底座 |
+| FTA National Transit Database / FTA Transit Asset Management / DOT Accessible Transportation | 提示公共交通运营、资产状态、班次可靠性和无障碍交通决定服务可达性是否真实发生 |
+| FEMA Community Lifelines / CISA National Critical Functions / CISA Critical Infrastructure Sectors / CISA IRPF | 提示能源、水务、通信、交通、医疗、食品、金融和政府生命线之间存在级联互依赖，需要独立跨部门韧性域 |
+| ACF LIHEAP / DOE LEAD Tool / EPA Water Finance Center / FCC Lifeline | 提示公用事业账单负担、断供保护、援助入口和服务可负担性会把基础设施问题转化为家庭层面的连续性问题 |
 
 Source links:
 
@@ -837,6 +849,17 @@ Source links:
 - https://www.epa.gov/green-infrastructure
 - https://www.who.int/europe/publications/i/item/9789289052498
 - https://www.unep.org/unep-and-nature-based-solutions
+- https://www.energy.gov/gdo/grid-resilience
+- https://www.nerc.com/pa/Pages/default.aspx
+- https://www.eia.gov/electricity/
+- https://www.epa.gov/waterresilience
+- https://www.epa.gov/ground-water-and-drinking-water
+- https://www.epa.gov/npdes
+- https://www.transit.dot.gov/ntd
+- https://www.fema.gov/emergency-managers/practitioners/lifelines
+- https://www.cisa.gov/resources-tools/resources/national-critical-functions-set
+- https://www.acf.hhs.gov/ocs/programs/liheap
+- https://www.fcc.gov/lifeline-consumers
 - https://www.fao.org/sustainability/en/
 - https://www.fao.org/climate-change/en/
 - https://www.worldbank.org/en/topic/agriculture

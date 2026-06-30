@@ -47,6 +47,7 @@ docs/
 │   ├── 0029-add-twenty-fifth-wave-civilizational-continuity-collective-security-domains.md
 │   ├── 0030-add-twenty-sixth-wave-primary-production-natural-systems-logistics-domains.md
 │   ├── 0031-add-twenty-seventh-wave-coastal-civil-urban-infrastructure-domains.md
+│   ├── 0032-add-twenty-eighth-wave-utility-lifeline-continuity-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -212,4 +213,10 @@ docs/
 110. Read `../domains/public-works-civil-infrastructure-asset-management/README.md` if you are working on roads, bridges, tunnels, drainage, public works maintenance, civil infrastructure asset management, or maintenance backlog.
 111. Read `../domains/urban-planning-land-use-zoning-resilience/README.md` if you are working on urban planning, land use, zoning, service layout, spatial equity, or resilience planning.
 112. Read `../domains/green-blue-infrastructure-urban-nature-cooling/README.md` if you are working on urban green spaces, tree canopy, stormwater green infrastructure, blue-green corridors, heat island mitigation, or nature-based urban cooling.
-113. Enter a domain under `../domains/`.
+113. Read `../domains/electric-grid-reliability-resilience-continuity/README.md` if you are working on electric grid reliability, distribution resilience, outages, restoration, critical loads, or grid lifeline continuity.
+114. Read `../domains/water-wastewater-utility-service-continuity/README.md` if you are working on drinking-water utilities, wastewater systems, water quality, sewer service, pump stations, or water utility resilience.
+115. Read `../domains/fuel-thermal-energy-service-continuity/README.md` if you are working on heating fuel, cooling energy, gas, propane, district energy, backup fuel, or thermal service continuity.
+116. Read `../domains/public-transit-service-operations-continuity/README.md` if you are working on bus, rail, ferry, paratransit, service reliability, transit assets, operations workforce, or service restoration.
+117. Read `../domains/critical-infrastructure-lifeline-interdependency-resilience/README.md` if you are working on community lifelines, national critical functions, cascading failures, infrastructure dependencies, or cross-sector resilience.
+118. Read `../domains/utility-affordability-shutoff-protection-continuity/README.md` if you are working on utility bills, arrears, shutoff protection, LIHEAP, Lifeline, energy burden, water affordability, or utility consumer protection.
+119. Enter a domain under `../domains/`.

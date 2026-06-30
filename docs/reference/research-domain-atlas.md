@@ -196,6 +196,12 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 公共工程资产必须持续维护 | `public-works-civil-infrastructure-asset-management/` | 道路、桥梁、隧道、排水、公用设施、资产状态、维护优先级 | 公共工程老化、维护积压和资产不可见导致服务、移动和安全失败 |
 | 城市空间必须支撑生命路径 | `urban-planning-land-use-zoning-resilience/` | 土地使用、分区、密度、服务布局、公共空间、风险避让 | 空间排布把住房、交通、服务、热风险、灾害风险和机会结构固化为不平等 |
 | 城市自然系统必须降温蓄水 | `green-blue-infrastructure-urban-nature-cooling/` | 树冠、绿地、水体、湿地、雨洪自然基设施、热岛缓解 | 城市热岛、内涝、恢复空间缺失和自然服务不足侵蚀健康与有效时间 |
+| 电力生命线必须可靠 | `electric-grid-reliability-resilience-continuity/` | 电网可靠性、资源充足性、输配电、停电恢复、关键负荷 | 停电使医疗、通信、水务、冷链、温控、支付和数字工具同时中断 |
+| 水务污水服务必须连续 | `water-wastewater-utility-service-continuity/` | 饮用水、污水处理、管网、泵站、水质监测、应急供水 | 饮水、卫生、医疗清洁和公共卫生因水务中断失效 |
+| 热能服务必须可持续 | `fuel-thermal-energy-service-continuity/` | 取暖燃料、燃气、区域能源、热泵、备用燃料、热服务 | 寒冷、热暴露、食品药品损坏和关键设施中断放大 |
+| 公共交通必须真实运营 | `public-transit-service-operations-continuity/` | 班次、覆盖、车辆、站点、paratransit、运营人力、服务恢复 | 医疗、工作、教育、食物和照护因公共交通断点不可达 |
+| 生命线互依赖必须可审查 | `critical-infrastructure-lifeline-interdependency-resilience/` | 能源、水务、通信、交通、医疗、食品、金融、政府互依赖 | 单部门故障级联放大，多个主体支撑条件同时断裂 |
+| 公用事业必须可负担不断供 | `utility-affordability-shutoff-protection-continuity/` | 账单负担、欠费、援助、分期、断供保护、消费者申诉 | 服务存在但被费用和程序摩擦切断，家庭层面基础设施失效 |
 | 高成本风险可分摊 | `insurance-risk-transfer/` | 覆盖率、保费、自付、理赔、拒赔、风险池、保障缺口 | 疾病、失业、工伤、残障、灾害或养老金风险由个体独自承担 |
 | 托育和家庭运行可持续 | `childcare-family-continuity/` | 托育可及、费用、质量、早期发展、父母工作连续性、家庭压力 | 儿童发展受损、照护者工作中断、时间贫困和家庭压力升级 |
 | 应急响应可接住主体 | `emergency-preparedness-response/` | 灾害准备、预警、应急通信、急救医疗、安置、公共卫生应急、恢复 | 低频高冲击事件一次性清零长期积累，通信、医疗、撤离或恢复失败 |
@@ -222,7 +228,7 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
   -> 认知与工具增强
   -> 风险函数压低
   -> 资源环境支撑
-  -> 初级生产、自然资本、物理物流、海岸土木与城市空间底座可持续
+  -> 初级生产、自然资本、物理物流、海岸土木、城市空间与公用事业生命线底座可持续
   -> 外部技术底座可控
   -> 文明连续性、集体安全与宏观制度底座可维持
   -> 制度治理保护
@@ -400,6 +406,12 @@ risk-engineering
   -> public-works-civil-infrastructure-asset-management
   -> urban-planning-land-use-zoning-resilience
   -> green-blue-infrastructure-urban-nature-cooling
+  -> electric-grid-reliability-resilience-continuity
+  -> water-wastewater-utility-service-continuity
+  -> fuel-thermal-energy-service-continuity
+  -> public-transit-service-operations-continuity
+  -> critical-infrastructure-lifeline-interdependency-resilience
+  -> utility-affordability-shutoff-protection-continuity
   -> insurance-risk-transfer
   -> childcare-family-continuity
   -> emergency-preparedness-response

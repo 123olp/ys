@@ -142,6 +142,12 @@
 - `public-works-civil-infrastructure-asset-management/`：公共工程与土木基础设施资产管理，整理道路、桥梁、排水、公共设施、维护优先级和服务水平。
 - `urban-planning-land-use-zoning-resilience/`：城市规划、土地使用与分区韧性，整理空间结构、服务布局、密度、风险避让和空间公平。
 - `green-blue-infrastructure-urban-nature-cooling/`：绿蓝基础设施、城市自然与降温，整理树冠、绿地、水体、雨洪自然基设施、热岛缓解和恢复空间。
+- `electric-grid-reliability-resilience-continuity/`：电网可靠性与韧性连续性，整理资源充足性、输配电资产、停电恢复、关键负荷和韧性投资。
+- `water-wastewater-utility-service-continuity/`：水务与污水公用事业连续性，整理饮用水、污水处理、管网、泵站、水质监测和服务恢复。
+- `fuel-thermal-energy-service-continuity/`：燃料与热能服务连续性，整理取暖燃料、燃气、液体燃料、区域能源、热泵、备用燃料和热服务恢复。
+- `public-transit-service-operations-continuity/`：公共交通服务运营连续性，整理公交、轨道、轮渡、paratransit、班次可靠性、运营人力和服务恢复。
+- `critical-infrastructure-lifeline-interdependency-resilience/`：关键基础设施生命线互依赖韧性，整理能源、水务、通信、交通、医疗、食品、金融和政府系统的级联风险。
+- `utility-affordability-shutoff-protection-continuity/`：公用事业可负担性与断供保护，整理账单负担、欠费、援助入口、断供保护、消费者申诉和程序摩擦。
 - `insurance-risk-transfer/`：保险与风险转移，整理健康、失业、工伤、残障、灾害、存款、养老金等风险池和保障缺口。
 - `childcare-family-continuity/`：托育与家庭连续性，整理托育可及、费用、质量、早期儿童发展、父母工作连续性和家庭压力。
 - `emergency-preparedness-response/`：应急准备与响应，整理灾害准备、预警、应急通信、急救医疗、安置和恢复。

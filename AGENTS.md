@@ -167,6 +167,12 @@ human_infra/
     ├── public-works-civil-infrastructure-asset-management/ # 公共工程与土木基础设施资产管理
     ├── urban-planning-land-use-zoning-resilience/ # 城市规划、土地使用与分区韧性
     ├── green-blue-infrastructure-urban-nature-cooling/ # 绿蓝基础设施、城市自然与降温
+    ├── electric-grid-reliability-resilience-continuity/ # 电网可靠性与韧性连续性
+    ├── water-wastewater-utility-service-continuity/ # 水务与污水公用事业连续性
+    ├── fuel-thermal-energy-service-continuity/ # 燃料与热能服务连续性
+    ├── public-transit-service-operations-continuity/ # 公共交通服务运营连续性
+    ├── critical-infrastructure-lifeline-interdependency-resilience/ # 关键基础设施生命线互依赖韧性
+    ├── utility-affordability-shutoff-protection-continuity/ # 公用事业可负担性与断供保护
     ├── insurance-risk-transfer/ # 保险与风险转移
     ├── childcare-family-continuity/ # 托育与家庭连续性
     ├── learning-skill-acquisition/ # 学习与技能获得
@@ -358,6 +364,12 @@ human_infra/
 - `domains/public-works-civil-infrastructure-asset-management/` 负责道路、桥梁、隧道、排水、公共设施、资产状态、维护优先级和服务水平。
 - `domains/urban-planning-land-use-zoning-resilience/` 负责城市规划、土地使用、分区、密度、服务布局、公共空间、风险避让和空间公平。
 - `domains/green-blue-infrastructure-urban-nature-cooling/` 负责城市树冠、绿地、水体、湿地、雨洪自然基设施、热岛缓解和城市恢复环境。
+- `domains/electric-grid-reliability-resilience-continuity/` 负责电网可靠性、资源充足性、输配电资产、停电恢复、关键负荷和韧性投资。
+- `domains/water-wastewater-utility-service-continuity/` 负责饮用水、污水处理、管网、泵站、水质监测、应急供水和水务服务恢复。
+- `domains/fuel-thermal-energy-service-continuity/` 负责取暖燃料、燃气、液体燃料、区域能源、热泵、备用燃料和热服务恢复。
+- `domains/public-transit-service-operations-continuity/` 负责公交、轨道、轮渡、paratransit、班次可靠性、运营人力、资产状态和服务恢复。
+- `domains/critical-infrastructure-lifeline-interdependency-resilience/` 负责能源、水务、通信、交通、医疗、食品、金融和政府生命线之间的互依赖与级联风险。
+- `domains/utility-affordability-shutoff-protection-continuity/` 负责公用事业账单负担、欠费、援助入口、断供保护、消费者申诉和程序摩擦。
 - `domains/insurance-risk-transfer/` 负责健康、失业、工伤、残障、灾害、存款、养老金等风险转移和风险池。
 - `domains/childcare-family-continuity/` 负责托育可及、托育费用、照护质量、早期儿童发展、父母工作连续性和家庭压力。
 - `domains/emergency-preparedness-response/` 负责灾害准备、预警、应急通信、急救医疗、安置、公共卫生应急和灾后恢复。
@@ -427,6 +439,7 @@ human_infra/
 - 2026-06-29：新增可控度规等待室假设 working paper 入口和审计账本，把黑洞等待室收敛为固有时差分、退出采用、风险扣减和递归等待的可审查模型。
 - 2026-06-30：新增农业生产、土壤土地、水资源、生态系统服务、野火韧性和物流冷链六个研究域，补齐初级生产、自然系统与物理流通底座。
 - 2026-06-30：新增海岸海洋蓝色经济、渔业水生食物、防洪工程安全、公共工程资产管理、城市土地使用规划和城市绿蓝基础设施六个研究域，补齐自然-工程-城市交界底座。
+- 2026-06-30：新增电网可靠性、水务污水公用事业、燃料热能服务、公共交通运营、关键基础设施生命线互依赖和公用事业可负担性断供保护六个研究域，补齐公用事业生命线连续性底座。
 - 2026-06-30：新增复杂照护导航、交接与决策连续性域，覆盖罕见病诊断漫游、多病共存多重用药、出院交接、居家/缓和/安宁疗护、医疗解释文化中介和患者共同决策。
 - 2026-06-30：新增外部化主体连续性域，覆盖生命日志个人档案、数字遗产继承、可穿戴连续感知、个人知识管理认知卸载、脑机接口治理和机器人具身辅助。
 - 2026-06-30：新增 `domains/cellular-reprogramming/`，承载山中因子、部分重编程、化学重编程、AI 因子设计和表观遗传编辑的机制谱系与安全边界。

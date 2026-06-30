@@ -396,6 +396,24 @@ domains/
 ├── green-blue-infrastructure-urban-nature-cooling/
 │   ├── AGENTS.md
 │   └── README.md
+├── electric-grid-reliability-resilience-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── water-wastewater-utility-service-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── fuel-thermal-energy-service-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── public-transit-service-operations-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── critical-infrastructure-lifeline-interdependency-resilience/
+│   ├── AGENTS.md
+│   └── README.md
+├── utility-affordability-shutoff-protection-continuity/
+│   ├── AGENTS.md
+│   └── README.md
 ├── insurance-risk-transfer/
 │   ├── AGENTS.md
 │   └── README.md
@@ -563,6 +581,7 @@ domains/
 - `armed-conflict-civilian-protection-ihl/`、`peacebuilding-conflict-prevention-social-cohesion/`、`continuity-of-government-public-administration-resilience/`、`telecommunications-network-resilience-continuity/`、`macroeconomic-monetary-fiscal-stability/` 和 `anti-corruption-public-integrity-accountability/` 负责武装冲突平民保护、和平建设、政府连续性、通信网络韧性、宏观稳定和公共廉洁这些文明连续性与集体安全条件。
 - `agricultural-production-food-system-resilience/`、`soil-health-land-degradation-drought-resilience/`、`water-resources-hydrology-flood-drought-management/`、`biodiversity-ecosystem-services-resilience/`、`wildfire-landscape-fire-resilience/` 和 `freight-logistics-port-cold-chain-continuity/` 负责农业生产、土壤土地、水资源、生态系统服务、野火韧性和物流冷链这些初级生产、自然系统与物理流通条件。
 - `coastal-marine-resilience-blue-economy-continuity/`、`fisheries-aquatic-food-systems-continuity/`、`dams-levees-flood-control-infrastructure-safety/`、`public-works-civil-infrastructure-asset-management/`、`urban-planning-land-use-zoning-resilience/` 和 `green-blue-infrastructure-urban-nature-cooling/` 负责海岸海洋、水生食物、防洪工程、公共工程资产、城市空间治理和绿蓝基础设施这些自然-工程-城市交界条件。
+- `electric-grid-reliability-resilience-continuity/`、`water-wastewater-utility-service-continuity/`、`fuel-thermal-energy-service-continuity/`、`public-transit-service-operations-continuity/`、`critical-infrastructure-lifeline-interdependency-resilience/` 和 `utility-affordability-shutoff-protection-continuity/` 负责电网、水务污水、燃料热能、公共交通、关键基础设施生命线互依赖和公用事业可负担性这些日常运行生命线条件。
 - `access-to-justice-legal-aid/`、`civic-participation-election-access/`、`migration-displacement-humanitarian-continuity/` 和 `digital-inclusion-connectivity/` 负责司法可及、公民参与、迁移流离失所人道连续性和数字连接这些制度参与与公共服务接入条件。
 - `personal-safety-violence-prevention/` 和 `product-safety-recall-systems/` 负责暴力预防、受害者支持、产品缺陷报告、召回和纠正这些公共安全连续性条件。
 - `cellular-reprogramming/` 负责山中因子、部分重编程、化学重编程、AI 因子设计和表观遗传编辑等“细胞状态可重写”谱系，不提供实验协议或人体应用建议。
