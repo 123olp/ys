@@ -21,6 +21,7 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
   -> 家庭事实、生命事件、姓名、地址、监护和儿童安置关系必须可被制度持续识别
   -> 工具和认知系统必须放大主体而不是吞噬主体
   -> 家庭物理操作系统必须让住所、食物、卫生、物品、投递和维修可连续
+  -> 个人移动执行系统必须让车辆、补能、停车、主动出行、辅助交通、按需交通、支付账户和实时导向可连续
   -> 数字身份、AI 代理、供应链、生物安全和极端栖居等外部技术底座必须可控
   -> 治理和权利必须保护同意、退出和身份
   -> 测量、预测和反馈必须让维护过程可校正
@@ -263,6 +264,14 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 家庭卫生必须可治理 | `household-cleaning-disinfection-pest-control-continuity/` | 清洁、消毒、化学品安全、害虫控制、室内卫生 | 清洁不足、化学误用或害虫暴露会制造感染、过敏、毒性和居住压力 |
 | 邮件包裹必须可接收 | `postal-parcel-delivery-pickup-continuity/` | 邮件、包裹、签收、自提、追踪、地址同步 | 文件、药品、设备、账单或身份材料收不到会切断远程服务和物理资源交付 |
 | 家庭故障必须可被可信维修 | `household-maintenance-repair-contractor-continuity/` | 维修请求、承包商、报价、许可、投诉、维修记录 | 维修延误、诈骗、无证服务或记录缺失会让住房、设备、水电、卫生和安全持续恶化 |
+| 个人车辆必须可维护 | `personal-vehicle-maintenance-recall-repair-continuity/` | 车辆维护、轮胎、制动、召回、维修记录、替代路径 | 车辆故障、召回漏接或维修失败会把医疗、工作、照护、教育和食物任务截断 |
+| 移动能源入口必须可达 | `fuel-ev-charging-refueling-access-continuity/` | 加油、EV 充电、站点、支付、排队、停电、灾害补能 | 补能失败会让车辆资产、撤离能力、照护任务和跨区域服务可达性同时失效 |
+| 到达后的路缘空间必须可用 | `parking-curb-access-towing-impound-continuity/` | 停车、装卸、无障碍停车、路缘、拖车、扣押、费用通知 | 找不到停车、被拖车扣押或路缘不可用会把名义到达转成任务失败 |
+| 短距离主动移动必须安全 | `walking-bicycling-micromobility-continuity/` | 人行道、自行车道、交叉口、照明、共享设备、微移动 | 最后一公里不安全或不可达会切断低成本通勤、医疗、学习和邻里服务 |
+| 医疗与残障相关出行必须可预约 | `paratransit-nemt-access-continuity/` | ADA paratransit、NEMT、资格、预约、接送窗口、缺乘 | 资格、调度或缺乘失败会让治疗、复诊、康复和日常参与断裂 |
+| 按需交通必须可补位 | `taxi-rideshare-demand-response-mobility-continuity/` | 出租车、网约车、需求响应交通、供给、价格、无障碍车辆、平台治理 | 固定线路或私车不足时，按需交通失败会放大服务不可达和时间损耗 |
+| 交通支付账户必须不中断 | `transit-fare-payment-toll-account-continuity/` | 票卡、移动支付、优惠资格、余额、过路费、罚费、账户恢复 | 支付和账户失败会把公共交通、收费道路和优惠资格从可用资源变成摩擦 |
+| 实时路线与导向必须可信 | `multimodal-trip-planning-real-time-wayfinding-continuity/` | GTFS/Realtime、换乘、延误、无障碍路径、标识、离线备份 | 信息不准、换乘失败或导向缺失会让复杂交通网络在行动时失效 |
 | 栖居空间可保护生命 | `building-fire-life-safety-codes/` | 建筑规范、消防规范、疏散、烟雾报警、无障碍、结构韧性 | 居住、照护、学习、工作和公共空间成为火灾、烟雾、结构和疏散风险源 |
 | 关键物质系统可制造修复 | `manufacturing-repair-capacity/` | 制造、维修、维护、备件、质量、本地生产、关键设备恢复 | 设备损坏、备件短缺、质量缺陷和生产能力不足导致服务与工具系统失效 |
 | 公共预算可转化为服务 | `public-procurement-contracting-capacity/` | 公共采购、合同、供应商管理、应急采购、透明度、交付验收 | 有预算和政策但采购失败、合同失效、腐败、延误或劣质交付 |
@@ -618,6 +627,14 @@ risk-engineering
   -> household-cleaning-disinfection-pest-control-continuity
   -> postal-parcel-delivery-pickup-continuity
   -> household-maintenance-repair-contractor-continuity
+  -> personal-vehicle-maintenance-recall-repair-continuity
+  -> fuel-ev-charging-refueling-access-continuity
+  -> parking-curb-access-towing-impound-continuity
+  -> walking-bicycling-micromobility-continuity
+  -> paratransit-nemt-access-continuity
+  -> taxi-rideshare-demand-response-mobility-continuity
+  -> transit-fare-payment-toll-account-continuity
+  -> multimodal-trip-planning-real-time-wayfinding-continuity
   -> community-resource-navigation
   -> social-determinants-community-vulnerability
   -> public-service-design-accessibility

@@ -552,6 +552,14 @@ flowchart TD
     H --> HCDPCC[household-cleaning-disinfection-pest-control-continuity<br/>家庭清洁 / 消毒害虫控制]
     H --> PPDPC[postal-parcel-delivery-pickup-continuity<br/>邮件包裹 / 投递自提]
     H --> HMRCC[household-maintenance-repair-contractor-continuity<br/>家庭维修 / 承包商服务]
+    H --> PVMRRC[personal-vehicle-maintenance-recall-repair-continuity<br/>车辆维护 / 召回维修]
+    H --> FECRC[fuel-ev-charging-refueling-access-continuity<br/>燃料 EV / 充电补能]
+    H --> PCTIC[parking-curb-access-towing-impound-continuity<br/>停车路缘 / 拖车扣押]
+    H --> WBMIC[walking-bicycling-micromobility-continuity<br/>步行骑行 / 微移动]
+    H --> PNAC[paratransit-nemt-access-continuity<br/>Paratransit / NEMT]
+    H --> TRDRMC[taxi-rideshare-demand-response-mobility-continuity<br/>出租网约 / 需求响应]
+    H --> TFPTAC[transit-fare-payment-toll-account-continuity<br/>票卡支付 / 过路费账户]
+    H --> MTPRWC[multimodal-trip-planning-real-time-wayfinding-continuity<br/>路线规划 / 实时导向]
     H --> MF[measurement-feedback<br/>测量 / 预测 / 反馈]
     H --> C[disembodied-cns<br/>去具身中枢生命系统]
     H --> M[memory-editing<br/>记忆编辑与人格连续性]
@@ -776,6 +784,14 @@ flowchart TD
 | [Household Cleaning Disinfection Pest Control Continuity](domains/household-cleaning-disinfection-pest-control-continuity/README.md) | 表面清洁、消毒、化学品安全、害虫控制、垃圾和室内卫生 | 在感染控制、害虫风险和化学暴露之间建立可治理的家庭卫生边界 | 不提供消毒配方、化学混合、杀虫剂使用、毒物处理、霉菌清除或医疗处置步骤 |
 | [Postal Parcel Delivery Pickup Continuity](domains/postal-parcel-delivery-pickup-continuity/README.md) | 邮件、包裹、投递、自提、签收、追踪、地址同步和最后一公里接收 | 让文件、药品、设备、账单、身份材料和远程交易实物能到达主体 | 不提供邮件拦截、包裹盗取、冒领、地址欺诈、追踪滥用或物流攻击方法 |
 | [Household Maintenance Repair Contractor Continuity](domains/household-maintenance-repair-contractor-continuity/README.md) | 家庭维修、承包商、服务预约、报价、许可、投诉和维修记录 | 让住房和设备故障能被发现、排程、修复和记录 | 不提供 DIY 危险维修、电气燃气施工、合同争议策略、理赔策略或法律意见 |
+| [Personal Vehicle Maintenance Recall Repair Continuity](domains/personal-vehicle-maintenance-recall-repair-continuity/README.md) | 车辆维护、轮胎、制动、召回、维修记录、替代交通和安全故障 | 让个人车辆从名义资产转化为可维护、可召回、可替代的移动工具 | 不提供车辆维修步骤、召回规避、里程篡改、安全系统绕过、非法改装或事故处理 |
+| [Fuel EV Charging Refueling Access Continuity](domains/fuel-ev-charging-refueling-access-continuity/README.md) | 加油、EV 充电、站点可达、支付、排队、停电和灾害补能 | 防止能源入口失败把车辆、医疗、照护、工作和撤离行动截断 | 不提供危险燃料储存、充电桩破解、计费规避、站点攻击、车辆改装或补能投资建议 |
+| [Parking Curb Access Towing Impound Continuity](domains/parking-curb-access-towing-impound-continuity/README.md) | 停车空间、路缘装卸、无障碍停车、拖车扣押、费用通知和恢复路径 | 让到达目的地后的最后 50 米、临时停靠和车辆保全不成为任务中断点 | 不提供停车执法规避、拖车逃避、非法占用、车牌遮挡、罚单申诉策略或法律意见 |
+| [Walking Bicycling Micromobility Continuity](domains/walking-bicycling-micromobility-continuity/README.md) | 人行道、自行车道、交叉口、照明、微移动设备、共享车辆和短距离安全 | 让短距离移动保持低成本、低排放、可恢复、可独立完成 | 不提供交通违法、危险骑行、设备破解、共享车绕锁、路线跟踪或事故个案建议 |
+| [Paratransit NEMT Access Continuity](domains/paratransit-nemt-access-continuity/README.md) | ADA paratransit、非紧急医疗交通、资格、预约、接送窗口、陪同和缺乘 | 让残障、慢病和医疗预约相关出行不因资格、预约或调度摩擦而失败 | 不提供资格规避、报销欺诈、医疗交通个案申诉、福利申请策略或医疗建议 |
+| [Taxi Rideshare Demand Response Mobility Continuity](domains/taxi-rideshare-demand-response-mobility-continuity/README.md) | 出租车、网约车、需求响应交通、供给覆盖、价格激增、无障碍车辆和平台治理 | 在固定路线、私家车和步行骑行不足时提供可调度的补位移动能力 | 不提供平台规避、刷单、司机乘客骚扰、价格操纵、账号规避、绕过安全审核或个案投诉策略 |
+| [Transit Fare Payment Toll Account Continuity](domains/transit-fare-payment-toll-account-continuity/README.md) | 公交票卡、移动支付、优惠资格、账户余额、过路费、罚费和账户恢复 | 防止支付、票卡、折扣资格和收费账户失败把公共交通和道路使用变成不可达 | 不提供逃票、票卡破解、过路费规避、优惠资格冒用、账户接管或罚费申诉策略 |
+| [Multimodal Trip Planning Real Time Wayfinding Continuity](domains/multimodal-trip-planning-real-time-wayfinding-continuity/README.md) | GTFS/Realtime、换乘、延误、无障碍路径、导向标识、离线备份和服务变更 | 让主体在复杂交通网络中知道如何走、何时换乘、何处中止和如何恢复 | 不提供路线跟踪、隐私侵害、系统爬取滥用、运营调度攻击、逃票路线或个案出行建议 |
 | [Regenerative Medicine](domains/regenerative-medicine/README.md) | 干细胞、组织工程、器官再生、类器官、移植 | 器官/组织修复框架、功能终点和整合风险 | 不提供手术、细胞制备、移植或人体实验步骤 |
 | [Rehabilitation And Functioning](domains/rehabilitation-functioning/README.md) | 康复、功能恢复、失能预防、活动能力、自理和社会参与 | 功能状态、活动能力、参与能力和失能风险模型 | 不提供个人康复处方、训练计划、诊断或治疗建议 |
 | [Cancer Control](domains/cancer-control/README.md) | 癌症预防、早筛、治疗、复发、肿瘤演化 | 癌症风险函数、证据层级和长期控制变量 | 不提供诊断、治疗方案、处方、剂量或个体用药建议 |
@@ -990,6 +1006,14 @@ human_infra/
 │   ├── longitudinal-cohort-retention-followup-infrastructure/
 │   ├── registries-real-world-data-governance/
 │   ├── scientific-instrumentation-sensor-calibration-maintenance/
+│   ├── personal-vehicle-maintenance-recall-repair-continuity/
+│   ├── fuel-ev-charging-refueling-access-continuity/
+│   ├── parking-curb-access-towing-impound-continuity/
+│   ├── walking-bicycling-micromobility-continuity/
+│   ├── paratransit-nemt-access-continuity/
+│   ├── taxi-rideshare-demand-response-mobility-continuity/
+│   ├── transit-fare-payment-toll-account-continuity/
+│   ├── multimodal-trip-planning-real-time-wayfinding-continuity/
 │   ├── cognitive-augmentation/
 │   ├── digital-identity-security/
 │   ├── disembodied-cns/
@@ -1272,5 +1296,6 @@ flowchart LR
 - 2026-06-30：新增第四十九波 8 个软件、设备与信任连续性域，覆盖个人计算设备生命周期维修、家庭网络路由器 IoT 安全、软件供应链依赖来源证明、软件更新漏洞补丁、开源维护者可持续、PKI 证书密码信任、云服务退出互操作和 API 平台运行时依赖。
 - 2026-06-30：新增第五十波 8 个个人操作与任务协调连续性域，覆盖日历排程预约、通知警报路由、提醒闹钟例行任务、会议视频远程协作、文件捕获 OCR PDF 记录流、搜索索引发现检索、个人自动化集成工作流和协作文档权限版本。
 - 2026-06-30：新增第五十一波 8 个家庭物理运行连续性域，覆盖住所进入钥匙门禁、家用电器维护维修、家庭冷藏食品保存、烹饪备餐厨房安全、洗衣衣物鞋履卫生、家庭清洁消毒害虫控制、邮件包裹投递自提和家庭维修承包商服务。
+- 2026-06-30：新增第五十二波 8 个个人移动执行连续性域，覆盖个人车辆维护召回维修、燃料/EV 充电补能、停车路缘拖车扣押、步行骑行微移动、paratransit/NEMT、出租车网约车需求响应交通、交通票卡/过路费账户和多模式实时导向。
 
 完整记录见 [CHANGELOG.md](CHANGELOG.md)。

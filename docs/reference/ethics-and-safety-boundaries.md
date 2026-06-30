@@ -954,6 +954,24 @@ Human Infra 不能被设计成更精密的压榨系统。
 - 不收集、复制、处理或要求家庭地址、门禁码、钥匙照片、锁具型号、智能锁日志、物业账号、家电序列号、食品照片、冰箱温度日志、邮件追踪号、承包商合同、发票、许可证、保险单、投诉记录或家庭安全细节。
 - 不替代消防、急救、食品安全、毒物中心、设备厂商、维修商、物业、邮政/快递、消费者保护机构、保险、法律、执法、监管机构或官方应急渠道。
 
+## 个人移动执行连续性边界
+
+`personal-vehicle-maintenance-recall-repair-continuity`、`fuel-ev-charging-refueling-access-continuity`、`parking-curb-access-towing-impound-continuity`、`walking-bicycling-micromobility-continuity`、`paratransit-nemt-access-continuity`、`taxi-rideshare-demand-response-mobility-continuity`、`transit-fare-payment-toll-account-continuity` 和 `multimodal-trip-planning-real-time-wayfinding-continuity` 关注车辆、补能、停车、主动出行、辅助医疗交通、按需交通、支付账户和实时导向如何把交通服务转化为主体真实到达能力，不是车辆维修、补能操作、交通规避、平台攻击、逃票或个案申诉入口。
+
+可以做：
+
+- 整理 NHTSA、DOE/AFDC、Energy.gov、FHWA、FTA、ADA.gov、Medicaid.gov、GTFS、CFPB、FDIC、FTC、MUTCD 和地方交通主管部门公开资料中的机制、对象、变量和边界。
+- 比较车辆维护召回、燃料/EV 充电补能、停车路缘拖车扣押、步行骑行微移动、paratransit/NEMT、出租车网约车需求响应交通、票卡过路费账户和实时导向如何影响医疗、工作、照护、学习、食物和公共服务到达。
+- 记录个人移动执行资料中的车辆安全、补能韧性、无障碍、支付账户、调度可靠性、路权、隐私、消费者保护和禁止用途边界。
+
+不能做：
+
+- 不提供车辆维修步骤、召回规避、里程篡改、安全系统绕过、非法改装、危险燃料储存、充电桩破解、计费规避、停车执法规避、交通违法、共享设备破解、NEMT 资格规避、报销欺诈、平台规避、逃票、票卡破解、过路费规避、路线跟踪或调度攻击。
+- 不判断某个车辆、维修、召回、燃料站、充电站、停车罚单、拖车扣押、交通事故、共享设备、NEMT 资格、网约车行程、票卡账户、过路费账户、路线规划或服务变更应如何具体处理。
+- 不生成维修操作流程、补能危险操作、停车或拖车规避策略、平台申诉脚本、交通执法应对、优惠资格冒用、逃票路线、票卡破解、账户接管、路线跟踪、个案医疗交通申诉、法律文件或保险材料。
+- 不收集、复制、处理或要求车牌、VIN、驾照、保险、行程轨迹、位置历史、票卡号、过路费账户、支付账号、NEMT 资格资料、医疗预约、残障证明、网约车订单、司机乘客身份、停车罚单或拖车扣押文件。
+- 不替代车辆制造商、维修商、交通主管部门、公共交通机构、NEMT 服务方、ADA coordinator、消费者保护机构、支付机构、保险、医疗、法律、执法、监管机构或官方申诉渠道。
+
 ## 数据与证据边界
 
 - 原始数据、清洗数据和人工判断必须分层保存。

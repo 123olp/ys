@@ -348,6 +348,14 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `household-cleaning-disinfection-pest-control-continuity/` | 家庭清洁、消毒和害虫控制决定居住空间是否在感染、过敏、毒性和虫害暴露中保持可恢复 |
 | `postal-parcel-delivery-pickup-continuity/` | 邮件、包裹、签收、自提和地址同步决定证件、药品、设备、账单和关键物资能否从外部系统抵达主体 |
 | `household-maintenance-repair-contractor-continuity/` | 家庭维修、承包商、报价、许可、投诉和记录决定住房、设备、水电、卫生和安全故障能否被可信修复 |
+| `personal-vehicle-maintenance-recall-repair-continuity/` | 个人车辆维护、召回和维修记录决定车辆是否能持续承担医疗、工作、照护、教育和食物任务 |
+| `fuel-ev-charging-refueling-access-continuity/` | 燃料和 EV 充电入口决定车辆行动是否会被补能、支付、排队、停电或灾害场景截断 |
+| `parking-curb-access-towing-impound-continuity/` | 停车、路缘、拖车和扣押决定主体到达目的地后能否保留车辆、完成装卸和恢复行动 |
+| `walking-bicycling-micromobility-continuity/` | 步行、骑行和微移动决定最后一公里、低成本通勤和邻里服务是否安全可达 |
+| `paratransit-nemt-access-continuity/` | Paratransit 与 NEMT 决定残障、慢病和医疗预约相关出行是否会因资格、预约或缺乘而断裂 |
+| `taxi-rideshare-demand-response-mobility-continuity/` | 出租车、网约车和需求响应交通决定固定线路或私车不足时主体是否还有补位移动能力 |
+| `transit-fare-payment-toll-account-continuity/` | 交通票卡、移动支付和过路费账户决定公共交通与收费道路是否会被账户、余额、罚费和优惠资格摩擦截断 |
+| `multimodal-trip-planning-real-time-wayfinding-continuity/` | 多模式路线规划、实时信息和导向决定复杂交通网络是否能被主体理解、换乘、修正和恢复 |
 
 ## 来源信号
 
@@ -368,6 +376,14 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | CDC cleaning, EPA pesticide labels, NPIC and Poison Help | 提示家庭清洁消毒和害虫控制具有独立的感染、化学和毒性边界 |
 | USPS, UPU and FTC consumer guidance | 提示邮件包裹把数字交易、证件、药品和物理资源交付连接到主体 |
 | FTC home improvement scams, FEMA recovery and CPSC recalls | 提示家庭维修服务连接住房故障、消费者保护、灾后恢复和承包商风险 |
+| NHTSA recalls and vehicle safety resources | 提示个人车辆维护、召回、维修记录和安全故障是移动执行连续性的独立入口 |
+| DOE AFDC station locator and Energy.gov EV resources | 提示燃料、EV 充电、站点可达、补能支付和停电韧性决定车辆行动能否持续 |
+| FHWA curb management, parking and operations resources | 提示停车、路缘装卸、拖车扣押和费用通知把名义到达转化为可完成任务或任务失败 |
+| FHWA bicycle/pedestrian resources, NHTSA pedestrian safety and MUTCD | 提示步行、骑行、交叉口、照明、标志标线和微移动安全需要独立治理 |
+| FTA ADA paratransit guidance, ADA.gov transportation and Medicaid.gov NEMT | 提示残障与医疗相关出行依赖资格、预约、接送窗口、缺乘、陪同和运营合规 |
+| FTA Mobility on Demand, DOT Complete Trip and FTC platform consumer guidance | 提示出租车、网约车和需求响应交通是固定线路与私车之外的补位移动系统 |
+| FTA fare collection, FHWA tolling, CFPB and FDIC resources | 提示票卡、移动支付、优惠资格、过路费、余额、罚费和账户恢复是交通可达性的支付层 |
+| GTFS Schedule, GTFS Realtime, FTA transit data and ADA.gov transportation | 提示路线规划、实时延误、换乘、无障碍路径、导向和离线备份是把交通网络转成行动的认知层 |
 | Hallmarks of Aging: An Expanding Universe | 提示基因组稳定性、端粒、蛋白稳态、自噬、营养感知、线粒体、细胞衰老、干细胞耗竭、细胞通讯、慢性炎症和菌群失调等候选机制 |
 | WHO Social Determinants of Health | 提示资源、权力、生活环境、工作、社会条件对健康和持续性的基础作用 |
 | Healthy People 2030 SDOH framework | 提示经济稳定、教育、医疗可及、社区环境、社会与社区情境可作为资源基础设施维度 |

@@ -329,6 +329,14 @@
 - `household-cleaning-disinfection-pest-control-continuity/`：家庭清洁、消毒与害虫控制连续性，整理表面清洁、消毒、化学品安全、害虫控制和室内卫生。
 - `postal-parcel-delivery-pickup-continuity/`：邮件、包裹、投递与自提连续性，整理邮件包裹、签收、自提、追踪、地址错配和最后一公里接收。
 - `household-maintenance-repair-contractor-continuity/`：家庭维修、承包商与修复服务连续性，整理维修请求、承包商、报价、许可、记录、投诉和修复恢复。
+- `personal-vehicle-maintenance-recall-repair-continuity/`：个人车辆维护、召回与维修连续性，整理车辆维护、轮胎、制动、召回、维修记录和替代路径。
+- `fuel-ev-charging-refueling-access-continuity/`：燃料、EV 充电与补能入口连续性，整理加油、充电、站点可达、支付、排队、停电和灾害补能。
+- `parking-curb-access-towing-impound-continuity/`：停车、路缘、拖车与扣押连续性，整理停车空间、装卸、无障碍停车、路缘管理、拖车扣押和费用通知。
+- `walking-bicycling-micromobility-continuity/`：步行、骑行与微移动连续性，整理人行道、自行车道、交叉口、照明、共享设备和短距离安全。
+- `paratransit-nemt-access-continuity/`：Paratransit 与 NEMT 可达连续性，整理 ADA paratransit、非紧急医疗交通、资格、预约、接送窗口和缺乘风险。
+- `taxi-rideshare-demand-response-mobility-continuity/`：出租车、网约车与需求响应交通连续性，整理按需车辆、供给覆盖、价格激增、无障碍车辆、司机取消和平台治理。
+- `transit-fare-payment-toll-account-continuity/`：交通票卡、支付与过路费账户连续性，整理公交票卡、移动支付、优惠资格、账户余额、过路费、罚费和账户恢复。
+- `multimodal-trip-planning-real-time-wayfinding-continuity/`：多模式路线规划、实时信息与导向连续性，整理 GTFS/Realtime、换乘、延误、无障碍路径、导向标识和离线备份。
 - `supply-chain-continuity/`：供应链连续性，整理关键物资、服务、物流、替代路径和恢复时间。
 - `synthetic-biology-biosecurity/`：合成生物学与生物安全，整理双重用途、生物安全、生物安保和治理边界。
 - `space-extreme-habitation/`：空间与极端栖居，整理辐射、微重力、隔离、闭环资源和远程医疗风险。
