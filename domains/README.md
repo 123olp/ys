@@ -118,6 +118,15 @@
 - `civic-data-open-government-transparency/`：公民数据与开放政府透明，整理开放数据、公共记录、FOIA、绩效数据、元数据、问责和公共反馈。
 - `education-access-lifelong-learning/`：教育可及与终身学习，整理基础教育、成人学习、再培训、基础技能、数字学习和技能迁移。
 - `research-infrastructure-open-science-translation/`：科研基础设施、开放科学与转化，整理开放科学、复现性、研究数据、资助、转化科学和知识扩散。
+- `scholarly-identity-orcid-affiliation-continuity/`：科研身份、ORCID 与机构归属连续性，整理 researcher identifiers、ROR、affiliation drift 和贡献者可识别性。
+- `persistent-identifier-doi-citation-metadata-continuity/`：持久标识符、DOI 与引用元数据连续性，整理 DOI、Crossref、DataCite、citation metadata 和版本化引用。
+- `research-data-repository-fair-sharing-continuity/`：研究数据仓库与 FAIR 共享连续性，整理 FAIR、DMS、repository selection、metadata、access level 和 reuse boundary。
+- `research-software-capsule-reproducibility-continuity/`：研究软件、计算胶囊与可复现性连续性，整理 software citation、environment capture、archival snapshot 和 executable context。
+- `preregistration-registered-report-study-plan-continuity/`：预注册、注册报告与研究计划连续性，整理 preregistration、registered reports、analysis plan 和 deviation tracking。
+- `lab-notebook-protocol-versioning-continuity/`：实验记录、协议与版本连续性，整理 lab notebook、protocol versioning、method provenance 和 deviation disclosure。
+- `contributor-role-authorship-attribution-continuity/`：贡献者角色、作者身份与归因连续性，整理 CRediT、authorship、responsibility statement 和 contribution metadata。
+- `conflict-of-interest-funding-disclosure-continuity/`：利益冲突、资金与披露连续性，整理 COI、funding statement、sponsor role 和 competing interests。
+- `research-artifact-archive-retention-preservation-continuity/`：研究产物归档、保留与保存连续性，整理 artifact archive、retention、link rot、format drift 和 preservation provenance。
 - `standards-metrology-quality-infrastructure/`：标准计量与质量基础设施，整理标准、计量、校准、认证、合格评定、质量管理和互操作规范。
 - `cybersecurity-resilience-critical-services/`：网络安全韧性与关键服务，整理网络防御、事件响应、备份恢复、关键服务连续性和数字风险治理。
 - `compute-data-center-ai-infrastructure/`：算力、数据中心与 AI 基础设施，整理算力、芯片、云服务、能源、水、网络、成本和接入治理。

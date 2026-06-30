@@ -899,6 +899,25 @@ Human Infra 不能被设计成更精密的压榨系统。
 - 提供队列参与者重新识别、越权数据链接、真实世界数据越权访问、选择性登记报告或把相关性包装成因果。
 - 提供伪造校准、篡改设备、绕过认证、医疗器械改装、设备弱点利用、个人诊断、用药建议或寿命预测。
 
+## 科研身份、持久标识与可复现研究基础设施边界
+
+`scholarly-identity-orcid-affiliation-continuity`、`persistent-identifier-doi-citation-metadata-continuity`、`research-data-repository-fair-sharing-continuity`、`research-software-capsule-reproducibility-continuity`、`preregistration-registered-report-study-plan-continuity`、`lab-notebook-protocol-versioning-continuity`、`contributor-role-authorship-attribution-continuity`、`conflict-of-interest-funding-disclosure-continuity` 和 `research-artifact-archive-retention-preservation-continuity` 关注研究者、机构、对象、数据、代码、计划、方法、贡献、披露和归档如何保持可追溯、可复现、可审查，不是学术身份包装、论文服务、数据访问规避、湿实验操作、署名争议处理或法律合规服务。
+
+可以做：
+
+- 整理公开标准、论文、政策和机构资料，建立 researcher identity card、persistent identifier card、FAIR repository card、software reproducibility card、preregistration card、protocol version card、contributor role card、disclosure card 和 artifact preservation card。
+- 区分研究身份、机构标识、持久对象、引用元数据、数据仓库、代码胶囊、研究计划、方法版本、贡献角色、利益披露和归档保存的不同证据层。
+- 记录 link rot、identifier ambiguity、metadata drift、repository withdrawal、dependency rot、execution environment decay、protocol drift、preregistration-result mismatch、authorship ambiguity、disclosure staleness 和 archive retention failure。
+- 将 ORCID、ROR、DOI、Crossref、DataCite、FAIR、Software Heritage、CITATION.cff、OSF、protocols.io、CRediT、ICMJE disclosure、LOCKSS/CLOCKSS 和 Zenodo 等来源作为证据基础设施信号，而不是模型结论本身。
+
+不能做：
+
+- 提供学术身份伪造、机构冒用、姓名混淆利用、刷引用、假 DOI、指标操控、论文代写、伪造审稿、出版规避或学术不端洗白策略。
+- 提供受限数据抓取、越权访问、数据再识别、同意绕过、PHI/人类受试者敏感数据存储、数据买卖或保密资料泄露。
+- 提供恶意代码、漏洞复现、凭据泄露、受限数据打包、不安全执行、绕过补丁、供应链投毒或研究软件运行环境滥用方法。
+- 提供 p-hacking、选择性报告、预注册规避、事后改写研究计划、湿实验/临床/双重用途协议、实验记录伪造或回填。
+- 提供署名操控、幽灵作者、挂名作者、贡献角色造假、隐藏利益冲突、资金来源隐匿、保密材料归档、版权规避或访问控制绕过。
+
 ## 未来技术连续性边界
 
 `nanomedicine-targeted-delivery-molecular-repair`、`ai-drug-discovery-protein-design`、`epigenetic-editing-gene-regulation-therapeutics`、`brain-preservation-connectomics-emulation`、`post-quantum-cryptography-long-term-data-security`、`safety-critical-software-formal-methods` 和 `long-term-digital-preservation-format-migration` 关注未来技术能否从候选能力进入可递送、可验证、可保存、可安全执行和可长期读取的主体持续性条件，不是纳米材料制备、生物设计、表观编辑操作、脑保存操作、密码攻击、安全关键系统绕过或档案窃取指南。

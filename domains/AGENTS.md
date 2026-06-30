@@ -1059,6 +1059,33 @@ domains/
 ├── research-infrastructure-open-science-translation/
 │   ├── AGENTS.md
 │   └── README.md
+├── scholarly-identity-orcid-affiliation-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── persistent-identifier-doi-citation-metadata-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── research-data-repository-fair-sharing-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── research-software-capsule-reproducibility-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── preregistration-registered-report-study-plan-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── lab-notebook-protocol-versioning-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── contributor-role-authorship-attribution-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── conflict-of-interest-funding-disclosure-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── research-artifact-archive-retention-preservation-continuity/
+│   ├── AGENTS.md
+│   └── README.md
 ├── standards-metrology-quality-infrastructure/
 │   ├── AGENTS.md
 │   └── README.md
@@ -1541,6 +1568,7 @@ domains/
 - `financial-resilience-access/`、`financial-inclusion-payment-systems/`、`workforce-employment-services/`、`education-access-lifelong-learning/`、`occupational-work-design/`、`labor-rights-workplace-protection/`、`language-access-plain-communication/`、`media-information-literacy-public-libraries/` 和 `information-integrity-trust/` 负责财务韧性、金融支付入口、就业服务、教育与终身学习、工作环境、劳动权利、语言理解入口、公共知识入口和信息可信度这些资源入口与认知环境条件。
 - `food-security-nutrition-access/`、`water-sanitation-hygiene-continuity/`、`energy-access-resilience/`、`social-protection-benefits-delivery/`、`community-resource-navigation/`、`social-determinants-community-vulnerability/`、`public-service-design-accessibility/`、`administrative-burden-procedural-friction/`、`civic-data-open-government-transparency/`、`insurance-risk-transfer/` 和 `childcare-family-continuity/` 负责食物、水卫生、能源、公共福利、社区资源导航、社区脆弱性、公共服务可达、行政负担、开放数据透明、保险风险池和托育家庭连续性这些基础生计、公共服务与风险分摊条件。
 - `research-infrastructure-open-science-translation/`、`standards-metrology-quality-infrastructure/`、`compute-data-center-ai-infrastructure/`、`cybersecurity-resilience-critical-services/`、`geospatial-navigation-location-infrastructure/`、`manufacturing-repair-capacity/`、`supply-chain-continuity/` 和 `ai-agency-safety/` 负责科研转化、标准计量质量、算力 AI 基础设施、网络安全韧性、空间定位导航、制造维修能力、供应链连续和 AI 代理安全这些技术窗口生成、可信化和可用性的外部底座。
+- `scholarly-identity-orcid-affiliation-continuity/`、`persistent-identifier-doi-citation-metadata-continuity/`、`research-data-repository-fair-sharing-continuity/`、`research-software-capsule-reproducibility-continuity/`、`preregistration-registered-report-study-plan-continuity/`、`lab-notebook-protocol-versioning-continuity/`、`contributor-role-authorship-attribution-continuity/`、`conflict-of-interest-funding-disclosure-continuity/` 和 `research-artifact-archive-retention-preservation-continuity/` 负责科研身份、持久标识与可复现研究基础设施，覆盖 ORCID/ROR、DOI 元数据、FAIR 数据仓库、研究软件胶囊、预注册、协议版本、贡献者角色、利益冲突披露和研究产物保存。
 - `healthcare-access-continuity/`、`medicine-access-treatment-continuity/`、`patient-data-interoperability/`、`telehealth-remote-monitoring-access/`、`health-data-privacy-governance/`、`functioning-quality-of-life-outcomes/`、`health-economics-value-assessment/`、`clinical-trials-regulatory-science-translation/`、`immunization-public-health-surveillance/`、`animal-health-zoonotic-interface-one-health/`、`maternal-newborn-child-development/`、`patient-safety-organizational-learning/`、`health-workforce-capacity/`、`community-health-workers-peer-support/`、`caregiving-long-term-care/`、`housing-built-environment-stability/`、`building-fire-life-safety-codes/`、`transportation-access-mobility/`、`legal-identity-civil-registration/`、`emergency-preparedness-response/`、`weather-climate-observation-forecasting/`、`emergency-alerts-communications/`、`household-emergency-preparedness-resilience/` 和 `disaster-recovery-relief-continuity/` 负责医疗接入、药品治疗连续性、患者数据互操作、远程照护、健康数据治理、结局评估、价值评估、临床监管转化、公共卫生监测、动物健康界面、早期生命发展、患者安全、健康劳动力、社区中介支持、长期照护、居住空间、建筑消防生命安全、交通可达、法律身份、应急响应、天气气候观测、预警通信、家庭准备和灾后恢复这些服务接入与生活连续性条件。
 - `rental-lease-tenancy-rights-continuity/`、`eviction-prevention-court-diversion-continuity/`、`emergency-rental-assistance-arrears-continuity/`、`housing-choice-voucher-public-housing-continuity/`、`fair-housing-discrimination-reasonable-accommodation-continuity/`、`housing-habitability-inspection-code-enforcement-continuity/`、`hud-approved-housing-counseling-navigation-continuity/` 和 `manufactured-housing-park-tenure-safety-continuity/` 负责住房 tenure 稳定与可居住性执行连续性，覆盖租赁居住权、驱逐预防、欠租援助、住房补贴、公平住房、可居住性检查、住房咨询和制造房屋园区稳定。
 - `self-represented-litigant-court-self-help-continuity/`、`court-efiling-document-submission-continuity/`、`remote-hybrid-court-hearing-access-continuity/`、`court-language-access-interpreter-continuity/`、`court-disability-accommodation-accessibility-continuity/`、`court-fees-fines-ability-to-pay-continuity/`、`jury-service-summons-hardship-continuity/` 和 `small-claims-civil-dispute-resolution-continuity/` 负责法院接入与民事程序执行连续性，覆盖自助中心、电子提交、远程 hearing、语言口译、残障便利、费用罚金、陪审义务和小额纠纷恢复。

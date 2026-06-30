@@ -95,6 +95,7 @@ docs/
 │   ├── 0077-add-seventy-third-wave-personal-data-privacy-continuity-domains.md
 │   ├── 0078-add-seventy-fourth-wave-digital-content-trust-continuity-domains.md
 │   ├── 0079-add-seventy-fifth-wave-intellectual-property-digital-rights-continuity-domains.md
+│   ├── 0080-add-seventy-sixth-wave-research-identity-reproducibility-infrastructure-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -598,4 +599,13 @@ docs/
 415. Read `../domains/patent-invention-disclosure-maintenance-continuity/README.md` if you are working on patents, invention disclosure, publication, assignment, maintenance fees, prior art records, or technology access.
 416. Read `../domains/creator-royalty-rights-metadata-continuity/README.md` if you are working on creator royalties, rights metadata, work identifiers, collective management, usage reports, platform revenue, or attribution-linked income.
 417. Read `../domains/ai-training-data-rights-opt-out-provenance-continuity/README.md` if you are working on AI training data rights, dataset provenance, opt-out signals, robots/noai markers, content credentials, or model data-use disclosure.
-418. Enter a domain under `../domains/`.
+418. Read `../domains/scholarly-identity-orcid-affiliation-continuity/README.md` if you are working on ORCID, ROR, researcher identity, affiliation continuity, name ambiguity, or durable scholarly attribution.
+419. Read `../domains/persistent-identifier-doi-citation-metadata-continuity/README.md` if you are working on DOI, Crossref, DataCite, citation metadata, persistent scholarly objects, or reference stability.
+420. Read `../domains/research-data-repository-fair-sharing-continuity/README.md` if you are working on FAIR data, data repositories, NIH DMS, repository selection, metadata, access levels, or reuse boundaries.
+421. Read `../domains/research-software-capsule-reproducibility-continuity/README.md` if you are working on research software, CITATION.cff, Software Heritage, Zenodo, executable environments, or computational reproducibility.
+422. Read `../domains/preregistration-registered-report-study-plan-continuity/README.md` if you are working on preregistration, registered reports, analysis plans, protocol transparency, deviations, or confirmatory/exploratory claim boundaries.
+423. Read `../domains/lab-notebook-protocol-versioning-continuity/README.md` if you are working on lab notebooks, protocols, method versioning, procedural provenance, timestamps, or deviation disclosure.
+424. Read `../domains/contributor-role-authorship-attribution-continuity/README.md` if you are working on CRediT, authorship, contributor roles, acknowledgements, responsibility statements, or attribution metadata.
+425. Read `../domains/conflict-of-interest-funding-disclosure-continuity/README.md` if you are working on conflicts of interest, funding disclosures, sponsor roles, competing interests, or disclosure updates.
+426. Read `../domains/research-artifact-archive-retention-preservation-continuity/README.md` if you are working on research artifact archives, retention, preservation, link rot, format drift, Zenodo, LOCKSS, CLOCKSS, or Software Heritage.
+427. Enter a domain under `../domains/`.

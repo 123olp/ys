@@ -92,3 +92,4 @@ Current decisions:
 - `0077-add-seventy-third-wave-personal-data-privacy-continuity-domains.md`
 - `0078-add-seventy-fourth-wave-digital-content-trust-continuity-domains.md`
 - `0079-add-seventy-fifth-wave-intellectual-property-digital-rights-continuity-domains.md`
+- `0080-add-seventy-sixth-wave-research-identity-reproducibility-infrastructure-domains.md`

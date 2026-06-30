@@ -1175,6 +1175,15 @@ flowchart TD
 | [Civic Data Open Government Transparency](domains/civic-data-open-government-transparency/README.md) | 开放数据、公共记录、FOIA、绩效数据、元数据和透明机制 | 公共系统可观测、可审查、可反馈和可问责的治理基础设施 | 不提供人肉搜索、隐私攻击、监控目标定位、访问控制规避或 FOIA 个案法律建议 |
 | [Education Access Lifelong Learning](domains/education-access-lifelong-learning/README.md) | 基础教育、成人学习、再培训、基础技能、数字学习和技能迁移 | 把延长时间窗口转化为能力复利、技术采用和未来选择权 | 不提供升学、择校、留学、考试、职业证书或教育投资建议 |
 | [Research Infrastructure Open Science Translation](domains/research-infrastructure-open-science-translation/README.md) | 科研基础设施、开放科学、复现性、研究数据、资助、转化科学和知识扩散 | 让未来技术窗口持续生成、验证、共享和扩散 | 不提供论文代写、学术操控、数据造假、刷引用或同行评审规避策略 |
+| [Scholarly Identity ORCID Affiliation Continuity](domains/scholarly-identity-orcid-affiliation-continuity/README.md) | ORCID、ROR、研究者身份、机构归属、姓名变更和贡献者可识别性 | 让人、机构和长期研究产物在平台、职位和时间迁移中保持可链接 | 不提供学术职业策略、身份伪造、机构冒用、profile 操控或私密资料抓取 |
+| [Persistent Identifier DOI Citation Metadata Continuity](domains/persistent-identifier-doi-citation-metadata-continuity/README.md) | DOI、Crossref、DataCite、citation metadata、版本化对象和解析入口 | 让论文、数据、代码和资料卡片拥有长期可解析的证据锚点 | 不提供刷引用、假 DOI、指标操控、出版规避或访问控制绕过 |
+| [Research Data Repository FAIR Sharing Continuity](domains/research-data-repository-fair-sharing-continuity/README.md) | FAIR、研究数据仓库、DMS、metadata、access level、retention 和 reuse boundary | 让定量模型依赖的数据可发现、可审查、可复用且有治理边界 | 不提供数据抓取、重新识别、受限数据访问、同意绕过或 PHI 存储 |
+| [Research Software Capsule Reproducibility Continuity](domains/research-software-capsule-reproducibility-continuity/README.md) | research software、CITATION.cff、Software Heritage、Zenodo、环境捕获和计算胶囊 | 让代码、依赖、参数和运行环境成为可复查的研究产物 | 不提供恶意代码、漏洞复现、凭据泄漏、受限数据打包或安全补丁规避 |
+| [Preregistration Registered Report Study Plan Continuity](domains/preregistration-registered-report-study-plan-continuity/README.md) | preregistration、registered reports、analysis plan、protocol transparency 和 deviation tracking | 防止结果出现后倒写问题、方法和解释，把确认性与探索性证据分开 | 不提供 p-hacking、选择性报告、试验注册规避、临床/监管建议或保密材料处理 |
+| [Lab Notebook Protocol Versioning Continuity](domains/lab-notebook-protocol-versioning-continuity/README.md) | lab notebook、protocol versioning、method provenance、timestamp 和 deviation disclosure | 让方法、材料、时间和偏差成为可复查的实验记忆 | 不提供湿实验操作、临床程序、双重用途步骤、记录伪造、回填或保密实验资料处理 |
+| [Contributor Role Authorship Attribution Continuity](domains/contributor-role-authorship-attribution-continuity/README.md) | CRediT、authorship、responsibility statement、acknowledgement 和 contribution metadata | 让贡献、责任、维护所有权和协作激励可审查 | 不提供署名争议裁决、挂名、幽灵作者、贡献造假或私密沟通处理 |
+| [Conflict Of Interest Funding Disclosure Continuity](domains/conflict-of-interest-funding-disclosure-continuity/README.md) | COI、funding statement、sponsor role、competing interests 和 disclosure updates | 让证据进入模型时保留激励结构和偏倚解释背景 | 不提供法律、雇佣、基金合规、投稿策略、指控或隐藏冲突建议 |
+| [Research Artifact Archive Retention Preservation Continuity](domains/research-artifact-archive-retention-preservation-continuity/README.md) | artifact archive、retention、LOCKSS/CLOCKSS、Zenodo、Software Heritage、link rot 和 format drift | 让论文、数据、代码、协议、图表和 Web 研究页可长期取回 | 不归档无授权、私密、受限、版权、危险或保密材料，不把保存等同于许可或正确 |
 | [Standards Metrology Quality Infrastructure](domains/standards-metrology-quality-infrastructure/README.md) | 标准、计量、校准、认证、质量管理、合格评定和互操作规范 | 让测量、设备、数据、制造和服务具备可比性与可信度 | 不提供认证规避、检测伪造、设备改装、标准绕过或产品采购建议 |
 | [Cybersecurity Resilience Critical Services](domains/cybersecurity-resilience-critical-services/README.md) | 网络安全、关键服务韧性、事件响应、备份恢复和数字风险治理 | 防止医疗、金融、身份、公共服务和 AI 工具被攻击截断 | 不提供攻击、入侵、漏洞利用、钓鱼、恶意软件或规避检测步骤 |
 | [Compute Data Center AI Infrastructure](domains/compute-data-center-ai-infrastructure/README.md) | 算力、数据中心、AI 基础设施、芯片、能源、水、网络和接入治理 | 支撑 AI 工具、科学模拟、自动化和科研加速的物质底座 | 不提供盗用算力、绕过计费、芯片走私、数据中心攻击、投资采购或监管规避建议 |
@@ -1339,6 +1348,15 @@ human_infra/
 │   ├── research-portfolio-prioritization-funding-governance/
 │   ├── intellectual-property-technology-transfer-access/
 │   ├── trustworthy-scientific-communication-peer-review/
+│   ├── scholarly-identity-orcid-affiliation-continuity/
+│   ├── persistent-identifier-doi-citation-metadata-continuity/
+│   ├── research-data-repository-fair-sharing-continuity/
+│   ├── research-software-capsule-reproducibility-continuity/
+│   ├── preregistration-registered-report-study-plan-continuity/
+│   ├── lab-notebook-protocol-versioning-continuity/
+│   ├── contributor-role-authorship-attribution-continuity/
+│   ├── conflict-of-interest-funding-disclosure-continuity/
+│   ├── research-artifact-archive-retention-preservation-continuity/
 │   ├── research-participant-consent-community-engagement/
 │   ├── biobanking-biospecimen-quality-chain-of-custody/
 │   ├── longitudinal-cohort-retention-followup-infrastructure/
@@ -1795,5 +1813,6 @@ flowchart LR
 - 2026-07-01：新增第七十三波 8 个个人数据权利、隐私暴露与数据经纪连续性域，覆盖数据经纪登记/退出/删除、隐私权访问更正删除、退出偏好信号与同意撤回、商业监控广告画像、敏感位置数据、生物特征模板治理、儿童青少年数据隐私和数据泄露通知身份恢复。
 - 2026-07-01：新增第七十四波 8 个数字内容可信、合成媒体与冒充风险连续性域，覆盖内容来源凭据、合成媒体水印披露、AI 冒充 deepfake fraud、电话 caller ID 认证、邮件域名认证、官网品牌冒充、数字证据保存链和平台内容审核通知申诉。
 - 2026-07-01：新增第七十五波 8 个知识产权、数字作品与 AI 训练数据权利连续性域，覆盖版权作者身份登记许可、DMCA 通知反通知、Creative Commons 开放内容、开源软件许可证、商标品牌身份、专利发明披露维护、创作者版税权利元数据和 AI 训练数据权利/退出/provenance。
+- 2026-07-01：新增第七十六波 9 个科研身份、持久标识与可复现研究基础设施域，覆盖 ORCID/ROR、DOI 元数据、FAIR 数据仓库、研究软件胶囊、预注册、实验协议版本、贡献者角色、利益冲突披露和研究产物保存。
 
 完整记录见 [CHANGELOG.md](CHANGELOG.md)。

@@ -558,6 +558,15 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 研究资源必须可排序 | `research-portfolio-prioritization-funding-governance/` | 组合优先级、价值信息、阶段门、学习价值、停止条件 | 无限发散、资源错配、单一指标压倒公共价值 |
 | 技术成熟必须转化为可及 | `intellectual-property-technology-transfer-access/` | 专利、许可、技术转移、生产扩散、价格和地域可及性 | 技术存在但不可获得、不可负担、许可锁定或转化失败 |
 | 科研传播必须可纠错 | `trustworthy-scientific-communication-peer-review/` | 同行评审、预印本、撤稿、勘误、引用语境、利益冲突 | 把未审查、已撤回、被夸大或断章引用的材料写成稳定证据 |
+| 科研主体必须可识别 | `scholarly-identity-orcid-affiliation-continuity/` | ORCID、ROR、姓名歧义、机构归属、研究者标识 | 人、机构和作品无法稳定链接，信用、责任、合作和追溯断裂 |
+| 研究对象必须可长期解析 | `persistent-identifier-doi-citation-metadata-continuity/` | DOI、Crossref、DataCite、citation metadata、版本化对象 | 证据锚点随 URL、平台和元数据漂移消失，引用链失效 |
+| 研究数据必须可发现可复用 | `research-data-repository-fair-sharing-continuity/` | FAIR、数据仓库、DMS、metadata、访问级别、reuse boundary | 定量模型无法复查、合并、更新或解释数据适用边界 |
+| 研究计算必须可重跑 | `research-software-capsule-reproducibility-continuity/` | software citation、CITATION.cff、环境捕获、计算胶囊、归档快照 | 代码、依赖、参数和运行环境丢失，模型结论不可复现 |
+| 研究计划必须可前置锁定 | `preregistration-registered-report-study-plan-continuity/` | preregistration、registered reports、analysis plan、deviation tracking | 结果出现后倒写问题、方法和解释，确认性证据被叙事污染 |
+| 实验方法必须可版本化 | `lab-notebook-protocol-versioning-continuity/` | lab notebook、protocol versioning、method provenance、timestamp | 复现失败无法区分是机制失败、材料变化、流程漂移还是记录缺失 |
+| 贡献和责任必须可归因 | `contributor-role-authorship-attribution-continuity/` | CRediT、authorship、responsibility statement、contribution metadata | 贡献、责任、维护所有权和协作激励失真 |
+| 激励结构必须可披露 | `conflict-of-interest-funding-disclosure-continuity/` | COI、funding statement、sponsor role、competing interests | 证据进入模型时丢失资助、所有权、雇佣和 sponsor 影响语境 |
+| 研究产物必须可长期保存 | `research-artifact-archive-retention-preservation-continuity/` | artifact archive、retention、link rot、format drift、preservation provenance | 论文、数据、代码、协议和 Web 研究页随平台、格式和链接腐烂消失 |
 | 人体研究必须保留主体合法性 | `research-participant-consent-community-engagement/` | 知情同意、退出、再联系、社区参与、结果回馈、信任 | 长期研究退化为数据抽取，代表性、留存和伦理正当性同时下降 |
 | 生物样本必须可追踪可信 | `biobanking-biospecimen-quality-chain-of-custody/` | 样本质量、预分析变量、冷链、追踪、保管链、二次使用 | 样本退化、污染、错配或同意越界污染组学和 biomarker 证据 |
 | 生命路径必须可长期观察 | `longitudinal-cohort-retention-followup-infrastructure/` | 纵向队列、随访、留存、失访、事件确认、生命历程链接 | 失访、选择偏差和随访断裂扭曲寿命、健康寿命和风险路径 |
@@ -975,6 +984,15 @@ risk-engineering
   -> civic-data-open-government-transparency
   -> education-access-lifelong-learning
   -> research-infrastructure-open-science-translation
+  -> scholarly-identity-orcid-affiliation-continuity
+  -> persistent-identifier-doi-citation-metadata-continuity
+  -> research-data-repository-fair-sharing-continuity
+  -> research-software-capsule-reproducibility-continuity
+  -> preregistration-registered-report-study-plan-continuity
+  -> lab-notebook-protocol-versioning-continuity
+  -> contributor-role-authorship-attribution-continuity
+  -> conflict-of-interest-funding-disclosure-continuity
+  -> research-artifact-archive-retention-preservation-continuity
   -> standards-metrology-quality-infrastructure
   -> cybersecurity-resilience-critical-services
   -> compute-data-center-ai-infrastructure

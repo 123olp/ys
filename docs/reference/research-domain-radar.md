@@ -198,6 +198,15 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `civic-data-open-government-transparency/` | 开放数据、公共记录、FOIA、绩效数据和透明机制决定公共系统是否可观察、可审查和可反馈 |
 | `education-access-lifelong-learning/` | 教育可及、成人学习、再培训、基础技能和数字学习决定延长时间能否转化为能力复利 |
 | `research-infrastructure-open-science-translation/` | 科研基础设施、开放科学、复现性和转化科学决定未来技术窗口能否持续生成和扩散 |
+| `scholarly-identity-orcid-affiliation-continuity/` | ORCID、ROR 和机构归属决定研究者、机构、作品、贡献和责任能否长期链接 |
+| `persistent-identifier-doi-citation-metadata-continuity/` | DOI、Crossref、DataCite 和引用元数据决定论文、数据、代码和资料卡是否有稳定证据锚点 |
+| `research-data-repository-fair-sharing-continuity/` | FAIR 数据仓库、元数据、访问级别和复用边界决定模型证据能否被复查和更新 |
+| `research-software-capsule-reproducibility-continuity/` | 研究软件、环境捕获、计算胶囊和归档快照决定计算结论能否被重跑 |
+| `preregistration-registered-report-study-plan-continuity/` | 预注册、注册报告和分析计划决定确认性证据是否能和事后解释分离 |
+| `lab-notebook-protocol-versioning-continuity/` | 实验记录、协议版本和方法 provenance 决定复现失败能否被定位和解释 |
+| `contributor-role-authorship-attribution-continuity/` | CRediT、作者身份和贡献者角色决定科研协作中的信用、责任和维护所有权能否被审查 |
+| `conflict-of-interest-funding-disclosure-continuity/` | 利益冲突、资金和 sponsor 角色披露决定证据解释时能否看到激励结构 |
+| `research-artifact-archive-retention-preservation-continuity/` | 研究产物归档、保留和格式迁移决定论文、数据、代码、协议和 Web 研究页是否能长期取回 |
 | `standards-metrology-quality-infrastructure/` | 标准、计量、校准、认证和质量基础设施决定测量、设备、数据和制造是否可信可比 |
 | `cybersecurity-resilience-critical-services/` | 网络安全、事件响应、备份恢复和关键服务韧性决定数字化主体系统是否会被攻击截断 |
 | `compute-data-center-ai-infrastructure/` | 算力、数据中心、芯片、云、能源、水和网络决定 AI、科学模拟和自动化能力是否可用 |
