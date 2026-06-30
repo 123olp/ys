@@ -205,6 +205,12 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `implementation-science-adherence-behavior-change/` | 实施科学和依从行为改变决定论文中的干预效果是否能真实进入主体日常行动和服务系统 |
 | `uncertainty-quantification-model-calibration/` | 不确定性量化和模型校准决定预测输出是否知道自己的边界，避免精确数字制造虚假确定性 |
 | `data-quality-missingness-representativeness/` | 数据质量、缺失和代表性决定后续因果、预测、仿真和治理模型是否被偏倚数据污染 |
+| `privacy-preserving-computation-federated-learning/` | 隐私保护计算和联邦学习决定敏感主体数据能否在不集中暴露的条件下支持研究和模型审计 |
+| `knowledge-graph-ontology-semantic-interoperability/` | 知识图谱和语义互操作决定多域变量、证据、风险和边界能否被机器读取、查询和组合 |
+| `model-cards-ai-audit-documentation/` | 模型卡和 AI 审计文档决定预测模型、图表、仿真和 AI 输出能否被复核并限制用途 |
+| `technology-foresight-horizon-scanning/` | 技术预见和地平线扫描决定未来技术信号能否从新闻热度转化为候选研究域和复核任务 |
+| `research-portfolio-prioritization-funding-governance/` | 研究组合优先级和资金治理决定有限资源能否投入最高学习价值、最大主体持续性影响和可停止的研究路径 |
+| `intellectual-property-technology-transfer-access/` | 知识产权和技术转移可及决定技术成熟能否真正进入主体可获得、可负担和可扩散的服务路径 |
 
 ## 来源信号
 
@@ -281,6 +287,12 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | PlainLanguage.gov / LEP.gov / National CLAS / W3C Cognitive Accessibility | 提示清晰语言、语言服务、文化与语言适配、认知可访问性是公共服务可达条件 |
 | ILO International Labour Standards / DOL WHD / FLSA / OSHA workers / EEOC / DOL OLMS | 提示劳动标准、工资工时、安全权利、反歧视、反报复和申诉执行需要独立劳动保护域 |
 | HHS HIPAA / Common Rule / NIST Privacy / NIST CSF / NIH GDS / GA4GH / ONC Information Blocking | 提示敏感健康、基因、行为、神经和服务数据需要同意、退出、安全、共享、二次使用和信息阻断边界 |
+| NIST Privacy Framework / Differential Privacy / Collaborative Learning | 提示敏感主体数据需要隐私保护计算、协作学习和隐私-效用边界，而不是简单集中化 |
+| FAIR Principles / OBO Foundry / W3C RDF and OWL | 提示多域知识需要本体、知识图谱、语义互操作和可复用元数据 |
+| Model Cards / Datasheets for Datasets / NIST AI RMF | 提示模型、数据、图表和 AI 系统需要可审计文档、用途限制和风险管理语言 |
+| OECD Strategic Foresight / WHO Health Technology Assessment horizon scanning | 提示未来技术窗口需要弱信号、情景分析和地平线扫描，而不是新闻热度驱动 |
+| NIH Office of Portfolio Analysis / WHO research priority setting / ARPA-H / DARPA | 提示无限研究域需要组合优先级、阶段门、学习价值和停止条件 |
+| WIPO Technology Transfer / NIH Technology Transfer / NIST Bayh-Dole | 提示技术成熟到主体可及之间存在专利、许可、生产、定价和制度扩散层 |
 | PROMIS / WHO ICF / EQ-5D / ICHOM / PRO-CTCAE / WHOQOL | 提示主体持续性必须用功能、生活质量、症状负担和患者报告结局审查，而不能只看替代指标 |
 | IHME GBD / WHO Global Health Estimates / WHO-CHOICE / NICE HTA / ICER / AHRQ MEPS | 提示疾病负担、成本效果、HTA、预算影响、公平和公共价值评估需要独立域 |
 | WHO vaccines / IA2030 / CDC NNDSS / WHO GISRS / IHR / IPC / NHSN / GLASS / CDC NWSS | 提示群体免疫、传染病监测、公共卫生应急、感染防控、AMR、One Health 和废水监测是独立风险屏障 |

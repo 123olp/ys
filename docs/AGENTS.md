@@ -43,6 +43,7 @@ docs/
 │   ├── 0032-add-twenty-eighth-wave-utility-lifeline-continuity-domains.md
 │   ├── 0033-add-twenty-ninth-wave-biomedical-platform-domains.md
 │   ├── 0034-add-thirtieth-wave-quantitative-methodology-domains.md
+│   ├── 0035-add-thirty-first-wave-knowledge-governance-technology-diffusion-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -135,6 +136,7 @@ docs/
 - `domains/electric-grid-reliability-resilience-continuity/`、`domains/water-wastewater-utility-service-continuity/`、`domains/fuel-thermal-energy-service-continuity/`、`domains/public-transit-service-operations-continuity/`、`domains/critical-infrastructure-lifeline-interdependency-resilience/` 和 `domains/utility-affordability-shutoff-protection-continuity/`：第二十八波正式研究域，分别承载电网可靠性、水务污水公用事业、燃料热能服务、公共交通运营、关键基础设施生命线互依赖和公用事业可负担性断供保护。
 - `domains/gene-therapy-genome-editing-delivery-safety/`、`domains/biological-age-clocks-biomarker-validation/`、`domains/multiomics-personal-baseline-systems-biology/`、`domains/engineered-cell-therapy-regenerative-platforms/`、`domains/organoids-organ-on-chip-disease-models/` 和 `domains/xenotransplantation-bioengineered-organ-replacement/`：第二十九波正式研究域，分别承载基因治疗与基因编辑递送安全、生物年龄钟验证、多组学个人基线、工程细胞疗法、类器官组织芯片模型和异种移植工程器官替换。
 - `domains/causal-inference-target-trial-emulation/`、`domains/survival-analysis-healthspan-risk-modeling/`、`domains/human-digital-twin-life-course-simulation/`、`domains/implementation-science-adherence-behavior-change/`、`domains/uncertainty-quantification-model-calibration/` 和 `domains/data-quality-missingness-representativeness/`：第三十波正式研究域，分别承载因果推断与目标试验模拟、生存分析与健康寿命风险建模、人类数字孪生生命历程仿真、实施科学与依从行为改变、不确定性量化与模型校准、数据质量缺失代表性审查。
+- `domains/privacy-preserving-computation-federated-learning/`、`domains/knowledge-graph-ontology-semantic-interoperability/`、`domains/model-cards-ai-audit-documentation/`、`domains/technology-foresight-horizon-scanning/`、`domains/research-portfolio-prioritization-funding-governance/` 和 `domains/intellectual-property-technology-transfer-access/`：第三十一波正式研究域，分别承载隐私保护计算、知识图谱本体语义互操作、模型卡 AI 审计文档、技术预见地平线扫描、研究组合资金治理和知识产权技术转移可及。
 - `reference/research-model-visualization-toolkit.md`：沉淀科研论文阅读、文献脊梁、模型工具、可视化标准和 Human Infra 定量页面实现路线。
 - `reference/source-card-system.md`：定义论文、书籍、工具、案例、标准和数据集进入项目之前的资料卡片制度。
 - `reference/domain-map.md`：定义根项目与子域的边界、迁移切片、主动不做和验证点。

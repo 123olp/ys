@@ -56,6 +56,12 @@ human_infra/
     ├── implementation-science-adherence-behavior-change/ # 实施科学、依从性与行为改变
     ├── uncertainty-quantification-model-calibration/ # 不确定性量化与模型校准
     ├── data-quality-missingness-representativeness/ # 数据质量、缺失与代表性
+    ├── privacy-preserving-computation-federated-learning/ # 隐私保护计算与联邦学习
+    ├── knowledge-graph-ontology-semantic-interoperability/ # 知识图谱、本体与语义互操作
+    ├── model-cards-ai-audit-documentation/ # 模型卡与 AI 审计文档
+    ├── technology-foresight-horizon-scanning/ # 技术预见与地平线扫描
+    ├── research-portfolio-prioritization-funding-governance/ # 研究组合优先级与资金治理
+    ├── intellectual-property-technology-transfer-access/ # 知识产权、技术转移与可及性
     ├── cognitive-augmentation/ # 认知增强与工具放大
     ├── digital-identity-security/ # 数字身份安全
     ├── disembodied-cns/   # 去具身外部维持型中枢生命系统
@@ -394,6 +400,12 @@ human_infra/
 - `domains/implementation-science-adherence-behavior-change/` 负责实施科学、依从性、技术采用、行为改变和真实世界效果。
 - `domains/uncertainty-quantification-model-calibration/` 负责不确定性量化、模型校准、外部验证、漂移监测和报告边界。
 - `domains/data-quality-missingness-representativeness/` 负责数据质量、缺失机制、代表性、测量误差和数据入口门禁。
+- `domains/privacy-preserving-computation-federated-learning/` 负责隐私保护计算、差分隐私、联邦学习、安全协作学习和隐私-效用边界。
+- `domains/knowledge-graph-ontology-semantic-interoperability/` 负责知识图谱、本体、受控词表、语义互操作和 FAIR 知识结构。
+- `domains/model-cards-ai-audit-documentation/` 负责模型卡、数据说明、系统卡、AI 审计文档和模型用途限制。
+- `domains/technology-foresight-horizon-scanning/` 负责技术预见、地平线扫描、弱信号、情景分析和未来技术候选队列。
+- `domains/research-portfolio-prioritization-funding-governance/` 负责研究组合优先级、资金治理、阶段门、学习价值和停止条件。
+- `domains/intellectual-property-technology-transfer-access/` 负责知识产权、许可、技术转移、公共资助成果和技术可及性。
 - `domains/insurance-risk-transfer/` 负责健康、失业、工伤、残障、灾害、存款、养老金等风险转移和风险池。
 - `domains/childcare-family-continuity/` 负责托育可及、托育费用、照护质量、早期儿童发展、父母工作连续性和家庭压力。
 - `domains/emergency-preparedness-response/` 负责灾害准备、预警、应急通信、急救医疗、安置、公共卫生应急和灾后恢复。
@@ -466,6 +478,7 @@ human_infra/
 - 2026-06-30：新增电网可靠性、水务污水公用事业、燃料热能服务、公共交通运营、关键基础设施生命线互依赖和公用事业可负担性断供保护六个研究域，补齐公用事业生命线连续性底座。
 - 2026-06-30：新增基因治疗与基因编辑递送安全、生物年龄钟验证、多组学个人基线、工程细胞疗法、类器官组织芯片模型和异种移植工程器官替换六个研究域，补齐生物医学平台层。
 - 2026-06-30：新增因果推断与目标试验模拟、生存分析与健康寿命风险建模、人类数字孪生生命历程仿真、实施科学与依从行为改变、不确定性量化与模型校准、数据质量缺失代表性六个研究域，补齐定量方法学层。
+- 2026-06-30：新增隐私保护计算、知识图谱本体语义互操作、模型卡 AI 审计文档、技术预见地平线扫描、研究组合资金治理和知识产权技术转移可及六个研究域，补齐知识治理与技术扩散层。
 - 2026-06-30：新增复杂照护导航、交接与决策连续性域，覆盖罕见病诊断漫游、多病共存多重用药、出院交接、居家/缓和/安宁疗护、医疗解释文化中介和患者共同决策。
 - 2026-06-30：新增外部化主体连续性域，覆盖生命日志个人档案、数字遗产继承、可穿戴连续感知、个人知识管理认知卸载、脑机接口治理和机器人具身辅助。
 - 2026-06-30：新增 `domains/cellular-reprogramming/`，承载山中因子、部分重编程、化学重编程、AI 因子设计和表观遗传编辑的机制谱系与安全边界。

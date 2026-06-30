@@ -186,6 +186,12 @@
 - `implementation-science-adherence-behavior-change/`：实施科学、依从性与行为改变，整理技术采用、坚持、实施质量和真实世界效果。
 - `uncertainty-quantification-model-calibration/`：不确定性量化与模型校准，整理校准、外部验证、预测区间、漂移和报告边界。
 - `data-quality-missingness-representativeness/`：数据质量、缺失与代表性，整理缺失机制、测量误差、数据血缘、抽样偏差和适用边界。
+- `privacy-preserving-computation-federated-learning/`：隐私保护计算与联邦学习，整理差分隐私、协作学习、安全计算、合成数据和隐私-效用边界。
+- `knowledge-graph-ontology-semantic-interoperability/`：知识图谱、本体与语义互操作，整理概念、变量、证据、关系和 FAIR 知识结构。
+- `model-cards-ai-audit-documentation/`：模型卡与 AI 审计文档，整理模型、数据、图表、AI 系统和用途边界的可追溯说明。
+- `technology-foresight-horizon-scanning/`：技术预见与地平线扫描，整理弱信号、情景分析、技术成熟度、证据缺口和未来窗口。
+- `research-portfolio-prioritization-funding-governance/`：研究组合优先级与资金治理，整理有限资源下的研究排序、阶段门、学习价值和停止条件。
+- `intellectual-property-technology-transfer-access/`：知识产权、技术转移与可及性，整理专利、许可、公共资助成果、生产扩散和主体可获得性。
 - `supply-chain-continuity/`：供应链连续性，整理关键物资、服务、物流、替代路径和恢复时间。
 - `synthetic-biology-biosecurity/`：合成生物学与生物安全，整理双重用途、生物安全、生物安保和治理边界。
 - `space-extreme-habitation/`：空间与极端栖居，整理辐射、微重力、隔离、闭环资源和远程医疗风险。

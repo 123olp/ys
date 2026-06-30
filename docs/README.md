@@ -50,6 +50,7 @@ docs/
 │   ├── 0032-add-twenty-eighth-wave-utility-lifeline-continuity-domains.md
 │   ├── 0033-add-twenty-ninth-wave-biomedical-platform-domains.md
 │   ├── 0034-add-thirtieth-wave-quantitative-methodology-domains.md
+│   ├── 0035-add-thirty-first-wave-knowledge-governance-technology-diffusion-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -233,4 +234,10 @@ docs/
 128. Read `../domains/implementation-science-adherence-behavior-change/README.md` if you are working on implementation science, adherence, adoption, behavior change, RE-AIM, COM-B, or real-world effectiveness.
 129. Read `../domains/uncertainty-quantification-model-calibration/README.md` if you are working on model calibration, validation, uncertainty intervals, prediction reporting, drift, or overconfidence controls.
 130. Read `../domains/data-quality-missingness-representativeness/README.md` if you are working on data quality, missingness, representativeness, measurement error, cohort bias, or data source suitability.
-131. Enter a domain under `../domains/`.
+131. Read `../domains/privacy-preserving-computation-federated-learning/README.md` if you are working on differential privacy, federated learning, privacy-enhancing technologies, collaborative analytics, synthetic data, or privacy-utility tradeoffs.
+132. Read `../domains/knowledge-graph-ontology-semantic-interoperability/README.md` if you are working on ontology, knowledge graph, RDF/OWL, FAIR data, semantic interoperability, controlled vocabulary, or domain relation modeling.
+133. Read `../domains/model-cards-ai-audit-documentation/README.md` if you are working on model cards, datasheets, AI audit documentation, system cards, model limitations, or visualization governance.
+134. Read `../domains/technology-foresight-horizon-scanning/README.md` if you are working on horizon scanning, technology foresight, weak signals, scenario planning, emerging technology watch, or future technology windows.
+135. Read `../domains/research-portfolio-prioritization-funding-governance/README.md` if you are working on research prioritization, portfolio governance, funding allocation, value of information, stage gates, or stop conditions.
+136. Read `../domains/intellectual-property-technology-transfer-access/README.md` if you are working on patents, licensing, technology transfer, public-funded inventions, Bayh-Dole, march-in rights, or technology access.
+137. Enter a domain under `../domains/`.

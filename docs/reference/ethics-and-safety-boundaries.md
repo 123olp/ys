@@ -577,6 +577,24 @@ Human Infra 不能被设计成更精密的压榨系统。
 - 提供数据再识别、隐私规避、敏感数据爬取、数据买卖、伪造清洗、p-hacking、统计显著性操控或选择性报告方法。
 - 用不确定性图表掩盖模型无效，或用精确数字把不确定推断包装成事实。
 
+## 知识治理、隐私计算与技术扩散边界
+
+`privacy-preserving-computation-federated-learning`、`knowledge-graph-ontology-semantic-interoperability`、`model-cards-ai-audit-documentation`、`technology-foresight-horizon-scanning`、`research-portfolio-prioritization-funding-governance` 和 `intellectual-property-technology-transfer-access` 关注 Human Infra 研究系统如何可信、可组合、可审计、可预警、可排序和可实际扩散，不是隐私攻击、临床编码、模型认证、投资咨询、资助操控、专利法律意见或商业估值系统。
+
+可以做：
+
+- 整理公开标准、论文、政策和机构资料，建立隐私计算卡、知识图谱种子、模型卡、地平线扫描卡、研究组合卡和技术可及卡。
+- 区分数据权利、隐私机制、语义映射、模型说明、技术信号、研究优先级、许可安排和真实可及性。
+- 明确每个模型、图表、技术信号和转化路径的适用对象、证据缺口、失败模式、许可边界、审查状态和禁止用途。
+- 将未来技术信号进入 Research Domain Radar，而不是直接写成确定时间表或现实可行性。
+
+不能做：
+
+- 提供再识别、模型反演、成员推断、隐私绕过、密码攻击、临床编码服务、保险编码、诊断映射或许可受限术语转储。
+- 将模型卡、AI 审计文档、知识图谱或标准引用写成系统可信、合规通过、临床有效或监管认可的证明。
+- 输出投资建议、市场时机、公司评级、融资判断、专利申请策略、侵权分析、许可规避、资助游说或基金申请操控。
+- 将新闻、公司公告、专利、融资、弱信号或早期原型写成疗效、可及性、工程可行性或有效永生证明。
+
 ## 数据与证据边界
 
 - 原始数据、清洗数据和人工判断必须分层保存。

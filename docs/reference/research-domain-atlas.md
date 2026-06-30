@@ -228,6 +228,12 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 干预必须真实落地 | `implementation-science-adherence-behavior-change/` | 采用、依从、fidelity、sustainment、行为摩擦 | 论文有效但现实不可获得、不可坚持或不可维护 |
 | 模型必须可校准 | `uncertainty-quantification-model-calibration/` | 校准、外部验证、预测区间、不确定性、漂移 | 精确数字制造虚假确定性，预测越界使用 |
 | 数据入口必须可信 | `data-quality-missingness-representativeness/` | 缺失机制、代表性、测量误差、数据血缘、覆盖偏差 | 偏倚数据污染因果、预测、仿真和治理结论 |
+| 敏感数据必须可安全学习 | `privacy-preserving-computation-federated-learning/` | 差分隐私、联邦学习、协作分析、隐私预算、效用损失 | 数据集中化、再识别、模型反演、隐私叙事过度承诺 |
+| 知识必须可组合可查询 | `knowledge-graph-ontology-semantic-interoperability/` | 本体、知识图谱、语义互操作、受控词表、FAIR 元数据 | 概念漂移、域重复、证据错配、许可受限术语误用 |
+| 模型必须可审计 | `model-cards-ai-audit-documentation/` | 模型卡、数据说明、系统卡、审计记录、禁止用途 | 模型输出被误读为权威、营销背书、个人评分或寿命承诺 |
+| 未来技术必须可预警 | `technology-foresight-horizon-scanning/` | 弱信号、情景分析、成熟度、证据缺口、复核周期 | 被新闻热度、融资叙事、专利数量或公司公告牵引 |
+| 研究资源必须可排序 | `research-portfolio-prioritization-funding-governance/` | 组合优先级、价值信息、阶段门、学习价值、停止条件 | 无限发散、资源错配、单一指标压倒公共价值 |
+| 技术成熟必须转化为可及 | `intellectual-property-technology-transfer-access/` | 专利、许可、技术转移、生产扩散、价格和地域可及性 | 技术存在但不可获得、不可负担、许可锁定或转化失败 |
 | 状态可观测和校正 | `measurement-feedback/` | 测量、预测、反馈、风险评分 | 错误预测、偏差、指标替代真实终点 |
 
 ## 主链路
@@ -237,6 +243,7 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
   -> 生物基底维护
   -> 生物医学平台可验证、可递送、可治理
   -> 定量方法学可识别、可建模、可校准
+  -> 知识治理与技术扩散可追踪、可审计、可排序、可获得
   -> 神经与身份连续
   -> 时间窗口延展
   -> 认知与工具增强
