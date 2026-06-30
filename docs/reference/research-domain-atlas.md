@@ -462,6 +462,14 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 托育和家庭运行可持续 | `childcare-family-continuity/` | 托育可及、费用、质量、早期发展、父母工作连续性、家庭压力 | 儿童发展受损、照护者工作中断、时间贫困和家庭压力升级 |
 | 应急响应可接住主体 | `emergency-preparedness-response/` | 灾害准备、预警、应急通信、急救医疗、安置、公共卫生应急、恢复 | 低频高冲击事件一次性清零长期积累，通信、医疗、撤离或恢复失败 |
 | 人身安全可保护 | `personal-safety-violence-prevention/` | 暴力暴露、求助入口、受害者服务、法律保护、创伤支持、住房安全 | 暴力、胁迫、跟踪、犯罪伤害和创伤直接截断生命、行动能力和未来选择权 |
+| 家庭暴力安全退出必须可执行 | `domestic-violence-coercive-control-safety-continuity/` | 亲密伴侣暴力、胁迫控制、安全联系、求助入口、保护资源、恢复支持 | 家庭和亲密关系变成控制系统，住房、医疗、工作、照护、通信和未来选择权被持续压缩 |
+| 性暴力后的医疗取证与倡导必须可达 | `sexual-assault-forensic-exam-advocacy-continuity/` | forensic exam、医疗照护、advocacy、保密选项、证据边界、创伤支持 | 伤害后医疗、证据、心理恢复和制度入口断裂，主体被迫独自承担恢复成本 |
+| 跟踪骚扰保护必须持续 | `stalking-harassment-protection-order-continuity/` | 跟踪模式、骚扰威胁、保护令、通知执行、安全沟通、记录边界 | 持续威胁使行动半径、工作学习、居住稳定和社交参与长期收缩 |
+| 受害者/证人权利通知必须可理解 | `victim-witness-rights-notification-continuity/` | 案件通知、参与权利、保护安排、服务转介、程序可理解性 | 司法过程不可见或不可理解时，安全、恢复、出庭协作和权利实现同时失败 |
+| 犯罪伤害后的财务恢复必须可接续 | `crime-victim-compensation-restitution-continuity/` | victim compensation、restitution、医疗心理费用、丧葬费用、收入损失 | 犯罪伤害转化为医疗债务、收入中断、住房失稳和长期恢复失败 |
+| 幸存者安全住所必须可转移 | `survivor-safe-housing-emergency-transfer-continuity/` | 庇护、临时住房、VAWA housing protections、emergency transfer、保密联系 | 离开危险关系或犯罪伤害后无安全住所，主体被迫在危险和无家可归之间选择 |
+| 人口贩运受害者必须可识别并接入服务 | `human-trafficking-victim-identification-services-continuity/` | 识别、转介、保护、医疗法律服务、福利导航、反二次伤害 | 剥削被误读为普通违规、移民问题或个人选择，导致主体继续被控制和伤害 |
+| 失踪与无名身份必须可追踪恢复 | `missing-persons-unidentified-remains-resolution-continuity/` | 失踪报告、无名遗体、NamUs、家属通知、身份线索、长期不确定性 | 人的存在状态、家属行动、法律事务和哀悼恢复长期悬空 |
 | 缺陷产品可发现和召回 | `product-safety-recall-systems/` | 缺陷报告、不良事件、投诉、召回覆盖、通知到达、纠正、替代路径 | 缺陷产品持续使用，导致伤害、医疗中断、交通风险和家庭安全风险 |
 | 关键供应链可连续 | `supply-chain-continuity/` | 药品、能源、食物、设备、通信、物流 | 断供、单点故障、替代失败 |
 | 生物技术双重用途可治理 | `synthetic-biology-biosecurity/` | 生物安全、生物安保、双重用途、治理 | 病原风险、误用、实验外泄 |
@@ -975,6 +983,14 @@ risk-engineering
   -> childcare-family-continuity
   -> emergency-preparedness-response
   -> personal-safety-violence-prevention
+  -> domestic-violence-coercive-control-safety-continuity
+  -> sexual-assault-forensic-exam-advocacy-continuity
+  -> stalking-harassment-protection-order-continuity
+  -> victim-witness-rights-notification-continuity
+  -> crime-victim-compensation-restitution-continuity
+  -> survivor-safe-housing-emergency-transfer-continuity
+  -> human-trafficking-victim-identification-services-continuity
+  -> missing-persons-unidentified-remains-resolution-continuity
   -> product-safety-recall-systems
   -> financial-resilience-access
   -> occupational-work-design

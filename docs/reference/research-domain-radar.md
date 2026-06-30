@@ -123,6 +123,14 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `migration-displacement-humanitarian-continuity/` | 迁移、难民和流离失所状态下的身份、医疗、教育、庇护和保护连续性决定主体是否被跨制度接住 |
 | `digital-inclusion-connectivity/` | 连接、设备、可负担性、数字技能和无障碍决定数字化公共服务是否成为入口还是排除机制 |
 | `personal-safety-violence-prevention/` | 暴力预防、求助入口、受害者服务、法律保护和创伤支持决定主体能否免于伤害、胁迫和长期控制 |
+| `domestic-violence-coercive-control-safety-continuity/` | 家庭暴力、亲密伴侣暴力和胁迫控制决定主体能否保有安全退出、通信、住房、照护和长期恢复窗口 |
+| `sexual-assault-forensic-exam-advocacy-continuity/` | 性暴力 forensic exam、医疗照护和 advocacy 决定伤害后证据、恢复、保密选择和制度入口是否断裂 |
+| `stalking-harassment-protection-order-continuity/` | 跟踪骚扰、保护令和执行通知决定持续威胁能否被制度性识别、限制和降级 |
+| `victim-witness-rights-notification-continuity/` | 受害者/证人权利、案件通知和服务转介决定司法过程是否可理解、可参与且不制造二次伤害 |
+| `crime-victim-compensation-restitution-continuity/` | 犯罪受害者补偿和 restitution 决定犯罪伤害后的医疗、心理、丧葬、收入和恢复成本能否被部分吸收 |
+| `survivor-safe-housing-emergency-transfer-continuity/` | 安全住所、庇护和 emergency transfer 决定幸存者能否离开危险环境而不丧失住房稳定 |
+| `human-trafficking-victim-identification-services-continuity/` | 人口贩运受害者识别和服务转介决定剥削状态能否被看见、保护和恢复，而不是被误归类为个人违规 |
+| `missing-persons-unidentified-remains-resolution-continuity/` | 失踪人员、无名遗体和身份恢复决定人的存在状态、家属行动、法律事务和哀悼恢复能否闭合 |
 | `product-safety-recall-systems/` | 缺陷报告、不良事件、召回通知、纠正措施和替代路径决定外部产品系统能否避免反向伤害主体 |
 | `medicine-access-treatment-continuity/` | 药品可及、短缺、标签、费用覆盖和用药安全决定处方能否转化为持续治疗 |
 | `patient-data-interoperability/` | 患者记录访问、数据可携带和互操作决定照护、保险、转诊和监测数据能否跟随主体 |
@@ -746,6 +754,11 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | UNHCR / IOM / IDMC / WHO Refugee and Migrant Health | 提示迁移、难民、国内流离失所、身份连续、健康、教育、庇护和保护是跨制度主体连续性条件 |
 | NTIA Digital Inclusion / ITU ICT Statistics / FCC Broadband / UNESCO MIL | 提示互联网接入、设备、可负担性、数字技能和数字公共服务可达性是现代资源入口 |
 | CDC Violence Prevention / OVC / OVW / VictimConnect | 提示暴力预防、受害者服务、求助入口、法律保护和创伤支持是人身安全与恢复底座 |
+| DOJ OVW / CDC IPV / CDC NISVS | 提示家庭暴力、亲密伴侣暴力、性暴力和跟踪需要拆成安全退出、医疗取证、保护令、长期恢复和反受害者归因边界 |
+| OVC Help for Victims / OVC victim compensation / VOCA | 提示犯罪受害者服务、权利通知、补偿、restitution 和本地服务目录是伤害后恢复执行基础设施 |
+| HUD VAWA housing protections / emergency transfer materials | 提示幸存者安全住所、保密联系、住房保护和 emergency transfer 是离开危险环境的执行条件 |
+| HHS OTIP / DHS Blue Campaign | 提示人口贩运受害者识别、转介、服务资格、保护和反二次伤害需要独立于普通迁移或犯罪治理域 |
+| NamUs / NIJ missing persons resources | 提示失踪人员、无名遗体、身份恢复、家属通知和长期不确定性是主体存在记录与家庭恢复连续性问题 |
 | CPSC recalls / FDA recalls / NHTSA recalls / openFDA enforcement | 提示产品缺陷报告、召回通知、纠正措施和风险沟通是外部工具安全层 |
 | WHO Essential Medicines / WHO Medication Without Harm / FDA Drug Shortages / DailyMed / CDC Medication Safety | 提示关键药物选择、供应、标签、患者理解、覆盖和用药错误防护需要独立治疗连续性域 |
 | ONC health record access / USCDI / TEFCA / CMS Blue Button / HL7 FHIR / SMART App Launch | 提示患者访问、数据可携带、互操作和授权应用是连续照护的数据接口 |
@@ -1106,6 +1119,14 @@ Source links:
 - https://ovc.ojp.gov/
 - https://www.justice.gov/ovw
 - https://victimconnect.org/
+- https://www.cdc.gov/intimate-partner-violence/
+- https://www.cdc.gov/nisvs/
+- https://ovc.ojp.gov/help-for-victims
+- https://ovc.ojp.gov/program/victims-crime-act-voca-administrators/victim-compensation
+- https://www.hud.gov/vawa
+- https://www.acf.hhs.gov/otip
+- https://www.dhs.gov/blue-campaign
+- https://namus.nij.ojp.gov/
 - https://www.cpsc.gov/Recalls
 - https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts
 - https://www.nhtsa.gov/recalls

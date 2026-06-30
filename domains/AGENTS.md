@@ -1203,6 +1203,30 @@ domains/
 ├── personal-safety-violence-prevention/
 │   ├── AGENTS.md
 │   └── README.md
+├── domestic-violence-coercive-control-safety-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── sexual-assault-forensic-exam-advocacy-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── stalking-harassment-protection-order-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── victim-witness-rights-notification-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── crime-victim-compensation-restitution-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── survivor-safe-housing-emergency-transfer-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── human-trafficking-victim-identification-services-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── missing-persons-unidentified-remains-resolution-continuity/
+│   ├── AGENTS.md
+│   └── README.md
 ├── product-safety-recall-systems/
 │   ├── AGENTS.md
 │   └── README.md
@@ -1454,6 +1478,7 @@ domains/
 - `depression-mood-disorder-functioning-continuity/`、`anxiety-stress-threat-regulation-continuity/`、`trauma-ptsd-adversity-recovery-continuity/`、`psychosis-reality-testing-community-continuity/`、`bipolar-mood-episode-stability-continuity/`、`adhd-executive-function-neurodevelopment-continuity/`、`autism-neurodiversity-support-continuity/` 和 `eating-disorders-nutrition-body-continuity/` 负责心理健康、神经发育与功能连续性，覆盖抑郁心境功能、焦虑压力威胁调节、创伤/PTSD 恢复、精神病性现实检验、双相情绪周期稳定、ADHD 执行功能、自闭神经多样性支持和进食障碍营养身体连续性。
 - `access-to-justice-legal-aid/`、`civic-participation-election-access/`、`migration-displacement-humanitarian-continuity/` 和 `digital-inclusion-connectivity/` 负责司法可及、公民参与、迁移流离失所人道连续性和数字连接这些制度参与与公共服务接入条件。
 - `personal-safety-violence-prevention/` 和 `product-safety-recall-systems/` 负责暴力预防、受害者支持、产品缺陷报告、召回和纠正这些公共安全连续性条件。
+- `domestic-violence-coercive-control-safety-continuity/`、`sexual-assault-forensic-exam-advocacy-continuity/`、`stalking-harassment-protection-order-continuity/`、`victim-witness-rights-notification-continuity/`、`crime-victim-compensation-restitution-continuity/`、`survivor-safe-housing-emergency-transfer-continuity/`、`human-trafficking-victim-identification-services-continuity/` 和 `missing-persons-unidentified-remains-resolution-continuity/` 负责把综合人身安全域拆成受害者安全、服务、权利通知、住房转移、补偿恢复、人口贩运识别和失踪身份恢复这些可独立审查的执行连续性条件。
 - `cellular-reprogramming/` 负责山中因子、部分重编程、化学重编程、AI 因子设计和表观遗传编辑等“细胞状态可重写”谱系，不提供实验协议或人体应用建议。
 - `gene-therapy-genome-editing-delivery-safety/`、`biological-age-clocks-biomarker-validation/`、`multiomics-personal-baseline-systems-biology/`、`engineered-cell-therapy-regenerative-platforms/`、`organoids-organ-on-chip-disease-models/` 和 `xenotransplantation-bioengineered-organ-replacement/` 负责高杠杆生物医学平台从状态观测、机制扰动、模型验证到器官替换的证据和风险边界，不提供实验协议、制造步骤、个体检测解释、治疗选择或人体应用建议。
 - `causal-inference-target-trial-emulation/`、`survival-analysis-healthspan-risk-modeling/`、`human-digital-twin-life-course-simulation/`、`implementation-science-adherence-behavior-change/`、`uncertainty-quantification-model-calibration/` 和 `data-quality-missingness-representativeness/` 负责各研究域进入定量预测前的因果、风险、仿真、实施、校准和数据入口门禁，不输出个体死亡日期、临床决策、自动化评分或未经验证的寿命承诺。

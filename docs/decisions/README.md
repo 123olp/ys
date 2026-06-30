@@ -86,3 +86,4 @@ Current decisions:
 - `0071-add-sixty-seventh-wave-consumer-transaction-continuity-domains.md`
 - `0072-add-sixty-eighth-wave-consumer-credit-lending-continuity-domains.md`
 - `0073-add-sixty-ninth-wave-personal-insurance-claims-continuity-domains.md`
+- `0074-add-seventieth-wave-victim-safety-recovery-continuity-domains.md`

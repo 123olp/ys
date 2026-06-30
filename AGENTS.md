@@ -476,6 +476,14 @@ human_infra/
     ├── risk-engineering/  # 风险工程
     ├── emergency-preparedness-response/ # 应急准备与响应
     ├── personal-safety-violence-prevention/ # 人身安全与暴力预防
+    ├── domestic-violence-coercive-control-safety-continuity/ # 家庭暴力、亲密伴侣暴力与胁迫控制安全连续性
+    ├── sexual-assault-forensic-exam-advocacy-continuity/ # 性暴力、医疗鉴定与受害者 advocacy 连续性
+    ├── stalking-harassment-protection-order-continuity/ # 跟踪骚扰、威胁与保护令连续性
+    ├── victim-witness-rights-notification-continuity/ # 受害者/证人权利、通知与法院导航连续性
+    ├── crime-victim-compensation-restitution-continuity/ # 犯罪受害者补偿与 restitution 连续性
+    ├── survivor-safe-housing-emergency-transfer-continuity/ # 受害者安全住所与 emergency transfer 连续性
+    ├── human-trafficking-victim-identification-services-continuity/ # 人口贩运受害者识别与服务连续性
+    ├── missing-persons-unidentified-remains-resolution-continuity/ # 失踪人员、无名遗体与身份恢复连续性
     ├── product-safety-recall-systems/ # 产品安全与召回系统
     ├── sensory-continuity/ # 感官连续性
     ├── sleep-circadian-recovery/ # 睡眠、节律与恢复
@@ -714,6 +722,7 @@ human_infra/
 - `domains/childcare-family-continuity/` 负责托育可及、托育费用、照护质量、早期儿童发展、父母工作连续性和家庭压力。
 - `domains/emergency-preparedness-response/` 负责灾害准备、预警、应急通信、急救医疗、安置、公共卫生应急和灾后恢复。
 - `domains/personal-safety-violence-prevention/` 负责人身安全、暴力预防、求助入口、受害者服务、法律保护和创伤支持。
+- `domains/domestic-violence-coercive-control-safety-continuity/`、`domains/sexual-assault-forensic-exam-advocacy-continuity/`、`domains/stalking-harassment-protection-order-continuity/`、`domains/victim-witness-rights-notification-continuity/`、`domains/crime-victim-compensation-restitution-continuity/`、`domains/survivor-safe-housing-emergency-transfer-continuity/`、`domains/human-trafficking-victim-identification-services-continuity/` 和 `domains/missing-persons-unidentified-remains-resolution-continuity/` 负责家庭暴力/胁迫控制、性暴力 forensic exam 与 advocacy、跟踪骚扰保护令、受害者/证人权利通知、犯罪受害者补偿、受害者安全住所、人口贩运受害者服务和失踪/无名身份恢复这些受害者安全、服务与恢复执行连续性条件。
 - `domains/product-safety-recall-systems/` 负责消费品、食品、药品、医疗器械、车辆缺陷报告、召回通知、纠正措施和风险沟通。
 - `domains/cellular-reprogramming/` 负责山中因子、部分重编程、化学重编程、AI 因子设计和表观遗传编辑等细胞状态可重写谱系，不提供实验协议或人体应用建议。
 - `domains/regenerative-medicine/` 负责干细胞、组织工程、器官再生、类器官、移植和生物制造的高层研究框架。
@@ -882,3 +891,4 @@ human_infra/
 - 2026-07-01：新增第六十七波消费者交易、履约与市场信任连续性研究域，覆盖在线零售订单履约、退货退款争议、消费品保修维修、维修权零件手册、支付卡争议未授权扣款、礼品卡预付储值、价格费用披露和消费者评价背书市场信任。
 - 2026-07-01：新增第六十八波消费者信贷、贷款服务与跨期资源连续性研究域，覆盖信用卡循环信用成本、消费贷款 APR 披露、房贷服务止赎、车贷租赁收车、学生贷款还款减免、发薪日小额高成本贷款、BNPL 分期融资和汇款转账费用汇率披露。
 - 2026-07-01：新增第六十九波个人保险、财产责任、灾害与理赔执行连续性研究域，覆盖汽车保险责任碰撞理赔、房主租客财产理赔、洪水/NFIP 理赔、风暴野火地震巨灾保险、残障收入保险理赔、长期照护福利启动、旅行保险行程保护理赔和个人责任伞形保险防御。
+- 2026-07-01：新增第七十波受害者安全、服务与恢复执行连续性研究域，覆盖家庭暴力/胁迫控制、性暴力医疗 forensic exam 与 advocacy、跟踪骚扰保护令、受害者/证人权利通知、犯罪受害者补偿与 restitution、安全住所 emergency transfer、人口贩运受害者识别服务和失踪人员/无名遗体身份恢复。

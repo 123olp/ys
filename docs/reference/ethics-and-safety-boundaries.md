@@ -215,6 +215,23 @@ Human Infra 不能被设计成更精密的压榨系统。
 - 提供产品购买、维修、改装、药品停用、医疗器械使用、车辆维修、法律索赔、绕过召回或安全装置规避建议。
 - 把司法、选举、人道、数字、安全和召回的结构性缺口改写成个人努力、道德判断或单一消费选择问题。
 
+## 受害者安全、服务与恢复执行连续性边界
+
+`domestic-violence-coercive-control-safety-continuity`、`sexual-assault-forensic-exam-advocacy-continuity`、`stalking-harassment-protection-order-continuity`、`victim-witness-rights-notification-continuity`、`crime-victim-compensation-restitution-continuity`、`survivor-safe-housing-emergency-transfer-continuity`、`human-trafficking-victim-identification-services-continuity` 和 `missing-persons-unidentified-remains-resolution-continuity` 关注受害者和幸存者如何从危险、伤害、剥削、案件程序、经济损失、住房断裂和身份不确定中恢复行动能力，不是个案安全计划、法律代理、执法调查、医疗处置、住房申请、赔偿申请、人口贩运识别结论或失踪案件指挥系统。
+
+可以做：
+
+- 整理 DOJ OVW、CDC、OVC、HUD、HHS OTIP、DHS Blue Campaign、NamUs 等公开资料的适用范围、变量、入口类型、证据边界和禁止用途。
+- 建模家庭暴力、性暴力、跟踪、犯罪受害、住房转移、人口贩运和失踪身份恢复如何影响安全、住房、医疗、收入、照护、创伤恢复、法律程序可理解性和未来选择权。
+- 区分服务系统能力、权利通知、补偿恢复、住房保护、身份记录、家属通知、隐私安全、创伤知情支持和个体化专业决策之间的边界。
+
+不能做：
+
+- 提供个人危险评估、安全计划、撤离时间地点、藏身位置、保护令填写、报警话术、取证策略、法庭策略、医疗建议、赔偿资格判断、住房申请建议、人口贩运身份判断、失踪案件调查或遗骸/DNA 解释。
+- 生成或优化跟踪、骚扰、胁迫控制、定位、监控、恐吓、报复、规避保护令、规避平台/执法发现、诱骗、人口贩运、证人干扰、身份伪造、虚假报案或二次伤害方法。
+- 收集、推断、公开或关联受害者、证人、幸存者、失踪人员、家属、服务机构位置、庇护所、移民身份、案件状态、联系方式、住址、工作学校、儿童或照护安排等高风险敏感信息。
+- 把危险、暴力、性侵、跟踪、人口贩运、失踪、犯罪损失或恢复失败归因于受害者个人选择、道德缺陷、关系处理失败或缺乏自我管理。
+
 ## 治疗连续性、服务理解与劳动保护域边界
 
 `medicine-access-treatment-continuity`、`patient-data-interoperability`、`telehealth-remote-monitoring-access`、`community-resource-navigation`、`language-access-plain-communication` 和 `labor-rights-workplace-protection` 关注药品治疗连续、患者数据互操作、远程照护、社区资源导航、语言理解和劳动权利如何支撑主体持续性，不是医疗、用药、数据绕过、资格申请、翻译认证或劳动争议操作指南。

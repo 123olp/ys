@@ -89,6 +89,7 @@ docs/
 │   ├── 0071-add-sixty-seventh-wave-consumer-transaction-continuity-domains.md
 │   ├── 0072-add-sixty-eighth-wave-consumer-credit-lending-continuity-domains.md
 │   ├── 0073-add-sixty-ninth-wave-personal-insurance-claims-continuity-domains.md
+│   ├── 0074-add-seventieth-wave-victim-safety-recovery-continuity-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -544,4 +545,12 @@ docs/
 367. Read `../domains/adhd-executive-function-neurodevelopment-continuity/README.md` if you are working on ADHD, executive function, task initiation, time sense, impulse control, school/work supports, or neurodevelopmental task continuity.
 368. Read `../domains/autism-neurodiversity-support-continuity/README.md` if you are working on autism, neurodiversity, sensory differences, communication access, routines, support needs, or inclusive participation.
 369. Read `../domains/eating-disorders-nutrition-body-continuity/README.md` if you are working on eating disorders, body image, restrictive eating, binge/purge behavior, nutrition risk, or eating-disorder service continuity.
-370. Enter a domain under `../domains/`.
+370. Read `../domains/domestic-violence-coercive-control-safety-continuity/README.md` if you are working on domestic violence, intimate partner violence, coercive control, confidential contact, safe exit, advocacy, or survivor recovery continuity.
+371. Read `../domains/sexual-assault-forensic-exam-advocacy-continuity/README.md` if you are working on sexual assault forensic examinations, medical advocacy, evidence boundaries, trauma-informed support, confidential options, or survivor service continuity.
+372. Read `../domains/stalking-harassment-protection-order-continuity/README.md` if you are working on stalking, harassment, protection orders, pattern documentation boundaries, notification, enforcement pathways, or safety communication continuity.
+373. Read `../domains/victim-witness-rights-notification-continuity/README.md` if you are working on victim-witness rights, case notification, participation rights, protection arrangements, service referral, or justice-process continuity.
+374. Read `../domains/crime-victim-compensation-restitution-continuity/README.md` if you are working on crime victim compensation, restitution, medical or counseling costs, funeral costs, lost income, or financial recovery continuity.
+375. Read `../domains/survivor-safe-housing-emergency-transfer-continuity/README.md` if you are working on survivor shelter, safe housing, VAWA housing protections, emergency transfer, confidentiality, or housing-stability recovery.
+376. Read `../domains/human-trafficking-victim-identification-services-continuity/README.md` if you are working on trafficking victim identification, service referral, protection, labor/sex trafficking support, benefits navigation, or anti-retraumatization boundaries.
+377. Read `../domains/missing-persons-unidentified-remains-resolution-continuity/README.md` if you are working on missing persons, unidentified remains, NamUs, family notification, identity resolution, or long-term ambiguous loss continuity.
+378. Enter a domain under `../domains/`.

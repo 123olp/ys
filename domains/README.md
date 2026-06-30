@@ -166,6 +166,14 @@
 - `childcare-family-continuity/`：托育与家庭连续性，整理托育可及、费用、质量、早期儿童发展、父母工作连续性和家庭压力。
 - `emergency-preparedness-response/`：应急准备与响应，整理灾害准备、预警、应急通信、急救医疗、安置和恢复。
 - `personal-safety-violence-prevention/`：人身安全与暴力预防，整理暴力预防、求助入口、受害者服务、法律保护和创伤支持。
+- `domestic-violence-coercive-control-safety-continuity/`：家庭暴力、亲密伴侣暴力与胁迫控制安全连续性，整理安全退出、保密联系、求助入口、保护资源和长期恢复。
+- `sexual-assault-forensic-exam-advocacy-continuity/`：性暴力 forensic exam 与 advocacy 连续性，整理医疗取证、倡导陪伴、保密选项、创伤知情支持和证据边界。
+- `stalking-harassment-protection-order-continuity/`：跟踪骚扰与保护令连续性，整理行为模式、记录边界、保护令制度、通知执行和安全沟通。
+- `victim-witness-rights-notification-continuity/`：受害者/证人权利与通知连续性，整理案件通知、参与权利、服务转介、保护安排和程序可理解性。
+- `crime-victim-compensation-restitution-continuity/`：犯罪受害者补偿与 restitution 连续性，整理医疗、心理、丧葬、收入损失、赔偿和追偿恢复。
+- `survivor-safe-housing-emergency-transfer-continuity/`：幸存者安全住所与 emergency transfer 连续性，整理庇护、临时住房、VAWA housing protections、紧急转移和隐私保护。
+- `human-trafficking-victim-identification-services-continuity/`：人口贩运受害者识别与服务连续性，整理识别、转介、保护、医疗法律服务和反二次伤害。
+- `missing-persons-unidentified-remains-resolution-continuity/`：失踪人员与无名遗体身份恢复连续性，整理报失、身份线索、NamUs、家属通知、遗骸身份恢复和长期不确定性。
 - `product-safety-recall-systems/`：产品安全与召回系统，整理缺陷报告、不良事件、召回通知、纠正措施和风险沟通。
 - `rehabilitation-functioning/`：康复与功能恢复，整理失能预防、活动能力、自理、沟通和社会参与。
 - `cancer-control/`：癌症控制，整理肿瘤预防、早筛、治疗、复发和长期风险治理。

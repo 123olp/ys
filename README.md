@@ -438,6 +438,14 @@ flowchart TD
     H --> CFC[childcare-family-continuity<br/>托育 / 家庭连续性]
     H --> EPR[emergency-preparedness-response<br/>应急准备 / 响应]
     H --> PSVP[personal-safety-violence-prevention<br/>人身安全 / 暴力预防]
+    H --> DVCC[domestic-violence-coercive-control-safety-continuity<br/>家庭暴力 / 胁迫控制]
+    H --> SAFEAC[sexual-assault-forensic-exam-advocacy-continuity<br/>性暴力 / 医疗鉴定]
+    H --> SHPOC[stalking-harassment-protection-order-continuity<br/>跟踪骚扰 / 保护令]
+    H --> VWRNC[victim-witness-rights-notification-continuity<br/>受害者证人 / 权利通知]
+    H --> CVCRC[crime-victim-compensation-restitution-continuity<br/>受害者补偿 / 赔偿]
+    H --> SSHET[survivor-safe-housing-emergency-transfer-continuity<br/>安全住所 / 紧急转移]
+    H --> HTVISC[human-trafficking-victim-identification-services-continuity<br/>人口贩运 / 识别服务]
+    H --> MPURC[missing-persons-unidentified-remains-resolution-continuity<br/>失踪人员 / 身份恢复]
     H --> PSRS[product-safety-recall-systems<br/>产品安全 / 召回系统]
     H --> PS[pain-suffering-control<br/>疼痛与痛苦控制]
     H --> HN[health-literacy-navigation<br/>健康素养 / 服务导航]
@@ -1109,6 +1117,14 @@ flowchart TD
 | [Emergency Preparedness Response](domains/emergency-preparedness-response/README.md) | 灾害准备、预警、应急通信、急救医疗、撤离支持、安置和恢复 | 尾部风险响应、危机连续性、灾后恢复和抗冲击能力 | 不提供急救、医疗处理、撤离路线、危险环境、武器、暴力或生存操作指南 |
 | [Household Emergency Preparedness Resilience](domains/household-emergency-preparedness-resilience/README.md) | 家庭计划、物资包、备用通信、健康准备、重要文件和特殊需求安排 | 公共救援抵达前的家庭级主体连续性和恢复前置能力 | 不提供实时灾害指挥、撤离路线、急救医疗、危险物储存或极端生存主义指南 |
 | [Personal Safety Violence Prevention](domains/personal-safety-violence-prevention/README.md) | 亲密伴侣暴力、性暴力、跟踪、犯罪伤害、求助入口和受害者支持 | 人身安全、创伤支持、法律保护、住房安全和恢复连续性 | 不提供自卫战术、武器、报复、跟踪、监控、定位或危险对抗建议 |
+| [Domestic Violence Coercive Control Safety Continuity](domains/domestic-violence-coercive-control-safety-continuity/README.md) | 亲密伴侣暴力、家庭暴力、胁迫控制、经济虐待、技术辅助控制和服务转介 | 把关系内部暴力从隐性控制转化为可求助、可保密、可恢复的安全基础设施 | 不提供个案安全计划、逃离路线、庇护所定位、法律策略、监控、报复或危险对抗建议 |
+| [Sexual Assault Forensic Exam Advocacy Continuity](domains/sexual-assault-forensic-exam-advocacy-continuity/README.md) | 性暴力、医疗 forensic exam、SANE/SAFE、advocacy、报告选项、保密和创伤支持 | 把性暴力后的身体照护、证据时效、权利告知和心理恢复纳入连续性接口 | 不提供医疗建议、证据策略、报警策略、诉讼策略、校园投诉策略或个案安全计划 |
+| [Stalking Harassment Protection Order Continuity](domains/stalking-harassment-protection-order-continuity/README.md) | 跟踪、骚扰、威胁、protective order、restraining order、地址保密和执行接口 | 防止持续威胁把主体移动、通信、住所、学校和工作自由长期压缩 | 不提供保护令申请、送达、取证、安全计划、跟踪、定位、监控、规避或报复方法 |
+| [Victim Witness Rights Notification Continuity](domains/victim-witness-rights-notification-continuity/README.md) | 受害者权利、证人协助、案件通知、释放通知、court accompaniment 和程序参与 | 把案件状态和权利告知转化为受害者/证人可行动的信息与尊严保护 | 不提供诉讼策略、证词准备、证据整理、影响陈述代写、定位受害者/证人或干扰司法 |
+| [Crime Victim Compensation Restitution Continuity](domains/crime-victim-compensation-restitution-continuity/README.md) | victim compensation、VOCA、restitution、医疗/心理费用、lost wages、丧葬成本和 appeal | 把犯罪伤害后的经济负担接入恢复现金流、治疗连续性和重新开始能力 | 不提供申请建议、赔偿估值、资格判断、上诉策略、伪造损失、重复索赔或欺诈 |
+| [Survivor Safe Housing Emergency Transfer Continuity](domains/survivor-safe-housing-emergency-transfer-continuity/README.md) | VAWA housing protections、emergency transfer、confidentiality、transitional housing 和 shelter referral | 防止安全事件升级为住房断裂、无家可归和服务中断 | 不提供逃离路线、庇护所定位、转移申请策略、租约法律建议、跟踪定位或骗取服务 |
+| [Human Trafficking Victim Identification Services Continuity](domains/human-trafficking-victim-identification-services-continuity/README.md) | labor trafficking、sex trafficking、force/fraud/coercion、screening、service referral 和 survivor services | 把剥削控制转化为识别、服务、身份恢复和长期自由恢复路径 | 不提供救援计划、逃离路线、执法策略、移民建议、招募控制、规避执法或追踪方法 |
+| [Missing Persons Unidentified Remains Resolution Continuity](domains/missing-persons-unidentified-remains-resolution-continuity/README.md) | missing persons、unidentified remains、unclaimed persons、NamUs、法医数据和家属通知 | 把失踪和身份未确认造成的家庭悬置转化为记录、身份和死亡事实恢复接口 | 不提供个案搜索、定位、私自调查、线索扩散、公开指认、案件信息或人肉搜索 |
 | [Product Safety Recall Systems](domains/product-safety-recall-systems/README.md) | 消费品、食品、药品、医疗器械、车辆缺陷报告、召回和纠正 | 外部产品安全、风险预警、召回通知、替代路径和伤害降低 | 不提供购买、维修、改装、药品停用、医疗器械操作、车辆处理或索赔建议 |
 | [Pain And Suffering Control](domains/pain-suffering-control/README.md) | 慢性疼痛、症状负担、姑息医学、生活质量和可承受持续性 | 疼痛、痛苦、症状负担、尊严和有效时间边界 | 不提供药物、剂量、处方、个体治疗或危机替代服务 |
 | [Health Literacy Navigation](domains/health-literacy-navigation/README.md) | 健康素养、服务导航、可理解信息、风险沟通、共同决策 | 理解能力、服务入口、行政负担和误用风险 | 不提供医学、法律、保险、福利申请或规避制度建议 |
@@ -1693,5 +1709,6 @@ flowchart LR
 - 2026-07-01：新增第六十七波 8 个消费者交易、履约与市场信任连续性域，覆盖在线零售订单履约、退货退款争议、保修服务维修、维修权零件手册、支付卡争议未授权扣款、礼品卡预付储值、价格费用披露和消费者评价背书市场信任。
 - 2026-07-01：新增第六十八波 8 个消费者信贷、贷款服务与跨期资源连续性域，覆盖信用卡循环信用成本、消费贷款发放 APR 披露、房贷服务止赎、车贷租赁收车、学生贷款还款减免、发薪日小额高成本贷款、BNPL 分期融资和汇款转账费用汇率披露。
 - 2026-07-01：新增第六十九波 8 个个人保险、财产责任、灾害与理赔执行连续性域，覆盖汽车保险责任理赔、房主租客财产理赔、洪水/NFIP 理赔、风暴野火地震巨灾保险、残障收入保险理赔、长期照护福利启动、旅行保险行程保护理赔和个人责任伞形保险防御。
+- 2026-07-01：新增第七十波 8 个受害者安全、服务与恢复执行连续性域，覆盖家庭暴力/胁迫控制、性暴力医疗 forensic exam 与 advocacy、跟踪骚扰保护令、受害者/证人权利通知、犯罪受害者补偿与 restitution、安全住所 emergency transfer、人口贩运受害者识别服务和失踪人员/无名遗体身份恢复。
 
 完整记录见 [CHANGELOG.md](CHANGELOG.md)。
