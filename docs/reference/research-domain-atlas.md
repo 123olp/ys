@@ -187,6 +187,12 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 工作期资源必须延续到退休期 | `retirement-pension-savings-plan-continuity/` | 养老金、401(k)、IRA、rollover、vesting、受益人、丢失账户、计划终止 | 账户遗失、计划终止、受益人错误或转移失败削弱劳动退出后的资源连续性 |
 | 失业冲击必须可被工资记录接住 | `unemployment-insurance-wage-record-continuity/` | UI wage records、基期、雇主报送、资格判定、申诉、overpayment、欺诈防控 | 工资记录错配、身份盗用、申诉困难或支付延迟放大失业对住房、健康和学习窗口的冲击 |
 | 工作伤害必须转化为恢复支持 | `workers-compensation-occupational-injury-benefit-continuity/` | 工伤、职业病、伤害记录、医疗给付、工资替代、复工、OSHA 记录 | 报告缺失、记录争议或复工压力把工作伤害转成长期失能和收入断裂 |
+| 家庭医疗事件不能自动切断工作角色 | `family-medical-leave-job-protection-continuity/` | 家庭医疗假、严重健康状况、照护假、军属照护、岗位保护、反报复、复工入口 | 疾病或照护责任直接导致岗位、保险、收入和职业身份断裂 |
+| 疾病与照护窗口必须有工资替代 | `paid-sick-family-leave-wage-replacement-continuity/` | 带薪病假、带薪家庭假、带薪医疗假、替代率、等待期、公共/雇主计划 | 名义休假存在但无法负担，主体被迫带病工作、治疗中断或退出工作 |
+| 孕产育儿不能被排除出工作系统 | `pregnancy-parental-work-continuity/` | 怀孕便利、分娩恢复、父母假、哺乳/泵奶支持、育儿责任、反歧视 | 生育和育儿责任被转化为职业惩罚、收入下降和长期工作轨迹中断 |
+| 能力变化必须能被合理便利和复工路径接住 | `workplace-accommodation-return-to-work-continuity/` | 合理便利、interactive process、modified duty、phased return、工作能力、辅助技术 | 工作系统只有完全可用/完全退出两种状态，能力变化被永久化为失业或失能 |
+| 残障收入与工作能力必须可连续治理 | `disability-income-work-capacity-benefit-continuity/` | SSDI、SSI、残障收入、工作 credits、工作能力、复工激励、福利悬崖 | 长期功能受限后现金流、医疗覆盖、复工试探和未来选择权同时断裂 |
+| 家庭照护者不能被照护责任耗尽退出系统 | `family-caregiver-respite-work-continuity/` | 家庭照护者支持、respite care、照护培训、工作灵活性、照护者健康、负担 | 家庭照护被当作无限免费资源，照护者失去健康、收入、睡眠、社交和职业角色 |
 | 栖居空间可保护生命 | `building-fire-life-safety-codes/` | 建筑规范、消防规范、疏散、烟雾报警、无障碍、结构韧性 | 居住、照护、学习、工作和公共空间成为火灾、烟雾、结构和疏散风险源 |
 | 关键物质系统可制造修复 | `manufacturing-repair-capacity/` | 制造、维修、维护、备件、质量、本地生产、关键设备恢复 | 设备损坏、备件短缺、质量缺陷和生产能力不足导致服务与工具系统失效 |
 | 公共预算可转化为服务 | `public-procurement-contracting-capacity/` | 公共采购、合同、供应商管理、应急采购、透明度、交付验收 | 有预算和政策但采购失败、合同失效、腐败、延误或劣质交付 |
@@ -468,6 +474,12 @@ risk-engineering
   -> retirement-pension-savings-plan-continuity
   -> unemployment-insurance-wage-record-continuity
   -> workers-compensation-occupational-injury-benefit-continuity
+  -> family-medical-leave-job-protection-continuity
+  -> paid-sick-family-leave-wage-replacement-continuity
+  -> pregnancy-parental-work-continuity
+  -> workplace-accommodation-return-to-work-continuity
+  -> disability-income-work-capacity-benefit-continuity
+  -> family-caregiver-respite-work-continuity
   -> community-resource-navigation
   -> social-determinants-community-vulnerability
   -> public-service-design-accessibility

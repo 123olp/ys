@@ -61,6 +61,7 @@ docs/
 │   ├── 0043-add-thirty-ninth-wave-algorithmic-access-screening-domains.md
 │   ├── 0044-add-fortieth-wave-credential-licensure-continuity-domains.md
 │   ├── 0045-add-forty-first-wave-income-entitlement-record-continuity-domains.md
+│   ├── 0046-add-forty-second-wave-work-interruption-care-continuity-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -313,4 +314,10 @@ docs/
 197. Read `../domains/retirement-pension-savings-plan-continuity/README.md` if you are working on pensions, 401(k), IRA, retirement plan records, vesting, rollovers, beneficiaries, lost accounts, or pension guarantees.
 198. Read `../domains/unemployment-insurance-wage-record-continuity/README.md` if you are working on unemployment insurance wage records, UI claims, base periods, eligibility determinations, appeals, overpayments, or fraud controls.
 199. Read `../domains/workers-compensation-occupational-injury-benefit-continuity/README.md` if you are working on workers compensation, occupational injury records, occupational disease, wage replacement, return-to-work, vocational rehabilitation, or OSHA injury logs.
-200. Enter a domain under `../domains/`.
+200. Read `../domains/family-medical-leave-job-protection-continuity/README.md` if you are working on family or medical leave, job-protected leave, serious health conditions, caregiving leave, military caregiver leave, anti-retaliation, insurance continuity, or return-to-role after leave.
+201. Read `../domains/paid-sick-family-leave-wage-replacement-continuity/README.md` if you are working on paid sick leave, paid family leave, paid medical leave, wage replacement, waiting periods, replacement rates, or leave-related payroll continuity.
+202. Read `../domains/pregnancy-parental-work-continuity/README.md` if you are working on pregnancy accommodation, childbirth recovery, parental leave, bonding leave, lactation or pumping at work, parental work continuity, or pregnancy discrimination.
+203. Read `../domains/workplace-accommodation-return-to-work-continuity/README.md` if you are working on reasonable accommodation, interactive process, stay-at-work, return-to-work, modified duty, phased return, work capacity, or assistive technology in employment.
+204. Read `../domains/disability-income-work-capacity-benefit-continuity/README.md` if you are working on SSDI, SSI, disability income, work credits, work capacity, return-to-work incentives, benefit cliffs, or disability benefit continuity.
+205. Read `../domains/family-caregiver-respite-work-continuity/README.md` if you are working on family caregiver support, respite care, caregiver training, caregiver employment continuity, eldercare, disability caregiving, or caregiver burden.
+206. Enter a domain under `../domains/`.

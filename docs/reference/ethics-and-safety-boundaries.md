@@ -773,6 +773,24 @@ Human Infra 不能被设计成更精密的压榨系统。
 - 不帮助伪造薪资单、隐瞒收入、规避税务、冒用身份、欺诈退税、操纵社会保险记录、隐藏退休资产、虚假申领失业保险、伪造工伤记录、隐瞒事故或规避 OSHA / workers compensation 报告。
 - 不替代 DOL、IRS、SSA、EBSA、PBGC、州级失业保险机构、州级 workers compensation 机构、OSHA、税务专业人士、律师、财务顾问、医生、雇主、保险人、计划管理人或官方申诉渠道。
 
+## 工作中断、照护事件与工作收入连续性边界
+
+`family-medical-leave-job-protection-continuity`、`paid-sick-family-leave-wage-replacement-continuity`、`pregnancy-parental-work-continuity`、`workplace-accommodation-return-to-work-continuity`、`disability-income-work-capacity-benefit-continuity` 和 `family-caregiver-respite-work-continuity` 关注疾病、家庭照护、孕产育儿、残障、复工和家庭照护者负担如何影响岗位、收入、保险、照护和长期工作角色连续性，不是个人请假、福利申领、残障案件、医疗限制、法律争议、HR 操作、税务、保险、照护计划或雇主合规入口。
+
+可以做：
+
+- 整理 FMLA、带薪病假/家庭医疗假、PWFA、PUMP Act、ADA reasonable accommodation、DOL ODEP、SSA disability、ACL caregiver support 和 respite care 等公开来源、机制、对象、边界和资料入口。
+- 比较岗位保护、工资替代、孕产育儿便利、合理便利复工、残障收入和家庭照护者喘息如何分别降低工作中断、收入断裂、照护崩溃和长期退出风险。
+- 记录资格口径、证明负担、隐私、反报复、复工路径、覆盖缺口、行政负担和禁止用途，帮助后续建模而不是输出个案行动方案。
+
+不能做：
+
+- 不提供个人 FMLA、带薪假、产假/育儿假、怀孕便利、泵奶安排、ADA accommodation、复工许可、SSDI/SSI、残障保险、照护服务、respite、Medicaid/HCBS、法律、医疗、税务、保险、HR 或福利申请建议。
+- 不判断某人是否符合请假、工资替代、便利、残障福利、照护者支持、雇主责任、医疗限制、复工能力、争议胜率或最优行动策略。
+- 不生成请假申请、便利请求、医生证明、HR 政策、福利申请、申诉策略、雇主合规方案、照护计划、医疗建议或法律文书。
+- 不帮助伪造疾病、怀孕、照护、残障、工作能力、工资、休假或照护记录；不帮助隐瞒收入、欺诈申领、规避报告义务、报复劳动者、规避合理便利或压制照护者/残障者权利。
+- 不替代 DOL、EEOC、SSA、ACL、州级 paid leave / disability / Medicaid / workers compensation 机构、律师、医生、HR、雇主、保险人、照护机构、福利顾问或官方申诉渠道。
+
 ## 数据与证据边界
 
 - 原始数据、清洗数据和人工判断必须分层保存。

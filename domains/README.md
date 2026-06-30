@@ -255,6 +255,12 @@
 - `retirement-pension-savings-plan-continuity/`：退休、养老金与储蓄计划连续性，整理养老金、401(k)、IRA、rollover、vesting、受益人、丢失账户和计划终止。
 - `unemployment-insurance-wage-record-continuity/`：失业保险工资记录连续性，整理 UI wage records、基期、雇主报送、索赔状态、资格判定、申诉和欺诈防控。
 - `workers-compensation-occupational-injury-benefit-continuity/`：工伤与职业伤害权益连续性，整理工伤、职业病、伤害记录、医疗给付、工资替代、复工和 OSHA 记录。
+- `family-medical-leave-job-protection-continuity/`：家庭医疗假与岗位保护连续性，整理疾病、家庭照护、军属照护、岗位保护、反报复和复工入口。
+- `paid-sick-family-leave-wage-replacement-continuity/`：带薪病假、家庭假与工资替代连续性，整理短期疾病、照护和家庭事件期间的现金流、替代率、等待期和覆盖缺口。
+- `pregnancy-parental-work-continuity/`：孕产育儿工作连续性，整理怀孕便利、分娩恢复、父母假、哺乳/泵奶支持、育儿责任和工作连续性。
+- `workplace-accommodation-return-to-work-continuity/`：工作场所合理便利与复工连续性，整理合理便利、interactive process、modified duty、phased return 和工作能力匹配。
+- `disability-income-work-capacity-benefit-continuity/`：残障收入、工作能力与福利连续性，整理 SSDI、SSI、残障收入、工作能力、复工激励和福利悬崖。
+- `family-caregiver-respite-work-continuity/`：家庭照护者、喘息服务与工作连续性，整理家庭照护者支持、respite care、照护培训、工作灵活性和照护者负担。
 - `supply-chain-continuity/`：供应链连续性，整理关键物资、服务、物流、替代路径和恢复时间。
 - `synthetic-biology-biosecurity/`：合成生物学与生物安全，整理双重用途、生物安全、生物安保和治理边界。
 - `space-extreme-habitation/`：空间与极端栖居，整理辐射、微重力、隔离、闭环资源和远程医疗风险。

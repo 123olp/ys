@@ -274,6 +274,12 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `retirement-pension-savings-plan-continuity/` | 退休计划、养老金和长期储蓄账户决定工作期资源是否能延续到劳动退出后的生活与照护窗口 |
 | `unemployment-insurance-wage-record-continuity/` | 失业保险工资记录决定劳动收入中断时主体是否能获得短期收入稳定、申诉和再就业衔接 |
 | `workers-compensation-occupational-injury-benefit-continuity/` | 工伤与职业伤害权益记录决定工作伤害后医疗、工资替代、职业康复和复工机会是否不断线 |
+| `family-medical-leave-job-protection-continuity/` | 家庭医疗假和岗位保护决定疾病、照护和家庭事件是否会自动切断岗位、保险、收入和职业身份 |
+| `paid-sick-family-leave-wage-replacement-continuity/` | 带薪病假和家庭/医疗假工资替代决定短期无法工作时主体是否仍有现金流、治疗窗口和照护空间 |
+| `pregnancy-parental-work-continuity/` | 孕产育儿工作连续性决定怀孕、分娩、哺乳、育儿和托育责任是否会被转化为职业惩罚 |
+| `workplace-accommodation-return-to-work-continuity/` | 合理便利和复工路径决定疾病、伤害或残障后的能力变化是否能被任务、环境和节奏重新接住 |
+| `disability-income-work-capacity-benefit-continuity/` | 残障收入与工作能力福利决定长期功能受限时现金流、医疗覆盖、复工试探和未来选择权是否不断线 |
+| `family-caregiver-respite-work-continuity/` | 家庭照护者和喘息服务决定长期照护责任是否会耗尽照护者的时间、健康、收入和工作角色 |
 
 ## 来源信号
 

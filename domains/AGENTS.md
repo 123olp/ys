@@ -272,6 +272,24 @@ domains/
 ├── workers-compensation-occupational-injury-benefit-continuity/
 │   ├── AGENTS.md
 │   └── README.md
+├── family-medical-leave-job-protection-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── paid-sick-family-leave-wage-replacement-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── pregnancy-parental-work-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── workplace-accommodation-return-to-work-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── disability-income-work-capacity-benefit-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── family-caregiver-respite-work-continuity/
+│   ├── AGENTS.md
+│   └── README.md
 ├── cognitive-augmentation/
 │   ├── AGENTS.md
 │   └── README.md
@@ -838,6 +856,7 @@ domains/
 - `credit-consumer-reporting-access-continuity/`、`tenant-screening-rental-access-continuity/`、`background-check-record-screening-continuity/`、`employment-algorithmic-hiring-screening-continuity/`、`insurance-underwriting-algorithmic-risk-scoring-continuity/` 和 `public-benefits-eligibility-automated-decision-continuity/` 负责信用与消费者报告、租房筛查、背景记录筛查、算法招聘、保险算法评分和公共福利自动资格系统这些算法化准入、筛查与资格连续性条件。
 - `education-record-transcript-verification-continuity/`、`professional-licensure-certification-continuity/`、`skills-competency-credentialing-continuity/`、`continuing-education-recertification-continuity/`、`apprenticeship-work-based-learning-continuity/` 和 `verifiable-credential-wallet-interoperability/` 负责教育记录核验、职业证照认证、技能胜任力凭证、继续教育再认证、学徒制工作中学习和可验证凭证钱包互操作这些资格证明、授权与能力可携带连续性条件。
 - `income-payroll-employment-record-continuity/`、`tax-administration-filing-record-continuity/`、`social-security-earnings-benefit-record-continuity/`、`retirement-pension-savings-plan-continuity/`、`unemployment-insurance-wage-record-continuity/` 和 `workers-compensation-occupational-injury-benefit-continuity/` 负责工资雇佣记录、税务申报记录、社会保险收入与福利记录、退休养老金计划、失业保险工资记录和工伤职业伤害权益这些劳动成果到未来保障的记录连续性条件。
+- `family-medical-leave-job-protection-continuity/`、`paid-sick-family-leave-wage-replacement-continuity/`、`pregnancy-parental-work-continuity/`、`workplace-accommodation-return-to-work-continuity/`、`disability-income-work-capacity-benefit-continuity/` 和 `family-caregiver-respite-work-continuity/` 负责家庭医疗假岗位保护、带薪病假/家庭假工资替代、孕产育儿工作连续性、合理便利复工、残障收入与工作能力福利、家庭照护者喘息与工作连续性这些工作中断与照护事件连续性条件。
 - `access-to-justice-legal-aid/`、`civic-participation-election-access/`、`migration-displacement-humanitarian-continuity/` 和 `digital-inclusion-connectivity/` 负责司法可及、公民参与、迁移流离失所人道连续性和数字连接这些制度参与与公共服务接入条件。
 - `personal-safety-violence-prevention/` 和 `product-safety-recall-systems/` 负责暴力预防、受害者支持、产品缺陷报告、召回和纠正这些公共安全连续性条件。
 - `cellular-reprogramming/` 负责山中因子、部分重编程、化学重编程、AI 因子设计和表观遗传编辑等“细胞状态可重写”谱系，不提供实验协议或人体应用建议。
@@ -854,6 +873,7 @@ domains/
 - `credit-consumer-reporting-access-continuity/`、`tenant-screening-rental-access-continuity/`、`background-check-record-screening-continuity/`、`employment-algorithmic-hiring-screening-continuity/`、`insurance-underwriting-algorithmic-risk-scoring-continuity/` 和 `public-benefits-eligibility-automated-decision-continuity/` 负责算法化准入、筛查与资格连续性的证据边界，不提供信用修复、租房申请、背景调查规避、求职作弊、保险购买理赔、福利申请申诉、资格判断、法律、税务、投资或个案行动建议。
 - `education-record-transcript-verification-continuity/`、`professional-licensure-certification-continuity/`、`skills-competency-credentialing-continuity/`、`continuing-education-recertification-continuity/`、`apprenticeship-work-based-learning-continuity/` 和 `verifiable-credential-wallet-interoperability/` 负责资格证明、证照与能力可携带连续性的证据边界，不提供升学、求职、考试、执照申请、续证、培训选择、学历认证、法律、移民、金融、KYC、证书购买、伪造、作弊或规避核验建议。
 - `income-payroll-employment-record-continuity/`、`tax-administration-filing-record-continuity/`、`social-security-earnings-benefit-record-continuity/`、`retirement-pension-savings-plan-continuity/`、`unemployment-insurance-wage-record-continuity/` 和 `workers-compensation-occupational-injury-benefit-continuity/` 负责权益记录连续性的证据边界，不提供工资索赔、税务申报、福利申请、退休规划、投资、失业保险申领、工伤索赔、医疗诊断、法律、财务、移民、保险、记录伪造或个人案件建议。
+- `family-medical-leave-job-protection-continuity/`、`paid-sick-family-leave-wage-replacement-continuity/`、`pregnancy-parental-work-continuity/`、`workplace-accommodation-return-to-work-continuity/`、`disability-income-work-capacity-benefit-continuity/` 和 `family-caregiver-respite-work-continuity/` 负责工作中断与照护事件连续性的证据边界，不提供个人请假、带薪假、孕产育儿、合理便利、残障福利、照护服务、医疗、法律、HR、税务、保险、福利申请、申诉或雇主合规建议。
 - `regenerative-medicine/`、`cancer-control/` 和 `immune-maintenance/` 负责身体基底维护相关的机制、风险和证据边界。
 - `rehabilitation-functioning/`、`assistive-technology-access/`、`skin-barrier-wound-healing/` 和 `sensory-continuity/` 负责功能恢复、能力补偿、外界屏障和感官反馈连续性。
 - `antimicrobial-resilience/` 负责抗微生物耐药、感染控制和现代医学抗感染底座。

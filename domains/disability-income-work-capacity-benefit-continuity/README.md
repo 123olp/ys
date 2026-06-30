@@ -1,0 +1,47 @@
+# 残障收入、工作能力与福利连续性
+
+本域整理残障状态下的收入保障、工作能力边界、福利资格、复工激励和福利悬崖风险。它关注主体在长期功能受限时，是否仍能维持现金流、医疗覆盖、工作参与和未来选择权。
+
+## 研究对象
+
+- Social Security Disability Insurance、SSI、长期/短期残障保险和公共残障援助。
+- 工作 credits、substantial gainful activity、试工期、复工激励、福利悬崖和收入报告。
+- 工作能力、医学证据、功能限制、职业因素和申诉摩擦。
+- 与合理便利、职业康复、工伤、医疗服务、住房和社会保护的接口。
+
+## 价值链路
+
+```text
+长期疾病或残障会降低稳定劳动能力
+  -> 若收入支持缺失，主体会同时失去现金流、医疗覆盖、住房和恢复空间
+  -> 残障收入与工作能力规则提供最低连续性和复工试探边界
+  -> 福利悬崖、证明负担和申诉摩擦会改变真实可及性
+  -> 稳定收入与可控复工路径保留主体继续生活、恢复和选择的能力
+```
+
+## 关键问题
+
+- 残障收入如何与工作能力、复工激励和医疗覆盖共同决定行动窗口。
+- 福利资格、收入报告、等待、申诉和错误记录如何消耗有效时间。
+- 什么情况下应转入合理便利、职业康复、工伤、医疗、住房或社会保护域。
+- 如何避免把残障只建模为“不能工作”，而忽略可支持、可调整、可恢复的能力状态。
+
+## 上游与下游
+
+- 上游：疾病、残障服务、雇佣记录、收入记录、医疗记录和功能评估。
+- 下游：现金流、医疗覆盖、住房稳定、工作参与、职业康复和未来选择权。
+- 相关域：`social-security-earnings-benefit-record-continuity/`、`disability-services-independent-living/`、`workplace-accommodation-return-to-work-continuity/`、`workers-compensation-occupational-injury-benefit-continuity/`、`social-protection-benefits-delivery/`、`financial-resilience-access/`。
+
+## 非目标
+
+- 不提供个人 SSDI、SSI、私营残障保险、福利申请、申诉、收入报告、税务或法律建议。
+- 不判断残障资格、工作能力、医学证据充分性、给付金额或案件胜负。
+- 不生成申请材料、申诉策略、医学证明、收入报告建议或福利优化方案。
+- 不帮助隐瞒收入、伪造残障、规避报告义务或欺诈申领。
+
+## 初始资料入口
+
+- Social Security Administration disability benefits materials.
+- SSA work incentives and Ticket to Work materials.
+- USA.gov and Benefits.gov disability assistance navigation materials.
+- DOL ODEP disability employment resources, as work-participation context.
