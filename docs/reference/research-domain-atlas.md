@@ -18,6 +18,7 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
   -> 失能或不能表达时，意愿、权限、资源和责任必须可连续
   -> 进入金融、住房、工作、保险和福利系统前，准入判定必须可观察、可纠错、可申诉
   -> 学习、技能、授权和合规状态必须可被长期证明、核验、携带和恢复
+  -> 家庭事实、生命事件、姓名、地址、监护和儿童安置关系必须可被制度持续识别
   -> 工具和认知系统必须放大主体而不是吞噬主体
   -> 数字身份、AI 代理、供应链、生物安全和极端栖居等外部技术底座必须可控
   -> 治理和权利必须保护同意、退出和身份
@@ -193,6 +194,12 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 能力变化必须能被合理便利和复工路径接住 | `workplace-accommodation-return-to-work-continuity/` | 合理便利、interactive process、modified duty、phased return、工作能力、辅助技术 | 工作系统只有完全可用/完全退出两种状态，能力变化被永久化为失业或失能 |
 | 残障收入与工作能力必须可连续治理 | `disability-income-work-capacity-benefit-continuity/` | SSDI、SSI、残障收入、工作 credits、工作能力、复工激励、福利悬崖 | 长期功能受限后现金流、医疗覆盖、复工试探和未来选择权同时断裂 |
 | 家庭照护者不能被照护责任耗尽退出系统 | `family-caregiver-respite-work-continuity/` | 家庭照护者支持、respite care、照护培训、工作灵活性、照护者健康、负担 | 家庭照护被当作无限免费资源，照护者失去健康、收入、睡眠、社交和职业角色 |
+| 生命事件必须成为可核验身份锚点 | `vital-records-life-event-continuity/` | 出生、死亡、婚姻、离婚、认证副本、记录更正、生命统计 | 生命事件记录缺失、错误或不可访问让身份、亲属关系、服务资格和权益交接断线 |
+| 姓名变化必须跨系统同步 | `name-change-identity-record-synchronization-continuity/` | 姓名变更、SSA、护照、州证件、税务、雇主、金融、医疗、福利记录 | 同一主体在不同系统中被拆成多个身份，导致资格延迟、支付失败、旅行受阻或服务拒绝 |
+| 地址和邮件必须能路由服务 | `address-residency-mail-service-continuity/` | 地址变更、居住地、邮件转递、关键通知、辖区、服务路由 | 迁居、无固定住址、邮件丢失或地址不同步使通知、资格、投票、税务、福利和救援断线 |
+| 家庭组成必须能被资格系统正确建模 | `household-composition-dependent-eligibility-continuity/` | household、dependent、共同居住、照护关系、税务、保险、福利资格单位 | 家庭事实变化或制度定义错配导致错误拒绝、错误支付、覆盖断裂或追缴风险 |
+| 家庭责任必须可执行可审查 | `family-law-custody-child-support-continuity/` | 亲子关系、监护权、养育时间、子女抚养、法院命令、执行记录 | 命令缺失、执行失败或冲突升级让儿童资源、安全、医疗教育授权和照护连续性断裂 |
+| 原照护失稳后儿童安置必须连续 | `kinship-foster-adoption-care-continuity/` | 亲属照护、寄养、收养、安置稳定性、permanency、儿童记录 | 保护过程因频繁转移、记录丢失、服务失败或关系断裂转化为新的创伤和能力形成损失 |
 | 栖居空间可保护生命 | `building-fire-life-safety-codes/` | 建筑规范、消防规范、疏散、烟雾报警、无障碍、结构韧性 | 居住、照护、学习、工作和公共空间成为火灾、烟雾、结构和疏散风险源 |
 | 关键物质系统可制造修复 | `manufacturing-repair-capacity/` | 制造、维修、维护、备件、质量、本地生产、关键设备恢复 | 设备损坏、备件短缺、质量缺陷和生产能力不足导致服务与工具系统失效 |
 | 公共预算可转化为服务 | `public-procurement-contracting-capacity/` | 公共采购、合同、供应商管理、应急采购、透明度、交付验收 | 有预算和政策但采购失败、合同失效、腐败、延误或劣质交付 |
@@ -480,6 +487,12 @@ risk-engineering
   -> workplace-accommodation-return-to-work-continuity
   -> disability-income-work-capacity-benefit-continuity
   -> family-caregiver-respite-work-continuity
+  -> vital-records-life-event-continuity
+  -> name-change-identity-record-synchronization-continuity
+  -> address-residency-mail-service-continuity
+  -> household-composition-dependent-eligibility-continuity
+  -> family-law-custody-child-support-continuity
+  -> kinship-foster-adoption-care-continuity
   -> community-resource-navigation
   -> social-determinants-community-vulnerability
   -> public-service-design-accessibility

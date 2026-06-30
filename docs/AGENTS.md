@@ -55,6 +55,7 @@ docs/
 │   ├── 0044-add-fortieth-wave-credential-licensure-continuity-domains.md
 │   ├── 0045-add-forty-first-wave-income-entitlement-record-continuity-domains.md
 │   ├── 0046-add-forty-second-wave-work-interruption-care-continuity-domains.md
+│   ├── 0047-add-forty-third-wave-life-event-household-record-continuity-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -159,6 +160,7 @@ docs/
 - `domains/education-record-transcript-verification-continuity/`、`domains/professional-licensure-certification-continuity/`、`domains/skills-competency-credentialing-continuity/`、`domains/continuing-education-recertification-continuity/`、`domains/apprenticeship-work-based-learning-continuity/` 和 `domains/verifiable-credential-wallet-interoperability/`：第四十波正式研究域，分别承载教育记录核验、职业证照认证、技能胜任力凭证、继续教育再认证、学徒制工作中学习和可验证凭证钱包互操作。
 - `domains/income-payroll-employment-record-continuity/`、`domains/tax-administration-filing-record-continuity/`、`domains/social-security-earnings-benefit-record-continuity/`、`domains/retirement-pension-savings-plan-continuity/`、`domains/unemployment-insurance-wage-record-continuity/` 和 `domains/workers-compensation-occupational-injury-benefit-continuity/`：第四十一波正式研究域，分别承载工资雇佣记录、税务申报记录、社会保险收入与福利记录、退休养老金计划、失业保险工资记录和工伤职业伤害权益。
 - `domains/family-medical-leave-job-protection-continuity/`、`domains/paid-sick-family-leave-wage-replacement-continuity/`、`domains/pregnancy-parental-work-continuity/`、`domains/workplace-accommodation-return-to-work-continuity/`、`domains/disability-income-work-capacity-benefit-continuity/` 和 `domains/family-caregiver-respite-work-continuity/`：第四十二波正式研究域，分别承载家庭医疗假岗位保护、带薪病假/家庭假工资替代、孕产育儿工作连续性、合理便利复工、残障收入与工作能力福利、家庭照护者喘息与工作连续性。
+- `domains/vital-records-life-event-continuity/`、`domains/name-change-identity-record-synchronization-continuity/`、`domains/address-residency-mail-service-continuity/`、`domains/household-composition-dependent-eligibility-continuity/`、`domains/family-law-custody-child-support-continuity/` 和 `domains/kinship-foster-adoption-care-continuity/`：第四十三波正式研究域，分别承载生命事件记录、姓名变更同步、地址居住地邮件路由、家庭组成资格关系、家庭法监护抚养、亲属照护寄养收养。
 - `reference/research-model-visualization-toolkit.md`：沉淀科研论文阅读、文献脊梁、模型工具、可视化标准和 Human Infra 定量页面实现路线。
 - `reference/source-card-system.md`：定义论文、书籍、工具、案例、标准和数据集进入项目之前的资料卡片制度。
 - `reference/domain-map.md`：定义根项目与子域的边界、迁移切片、主动不做和验证点。

@@ -59,3 +59,4 @@ Current decisions:
 - `0044-add-fortieth-wave-credential-licensure-continuity-domains.md`
 - `0045-add-forty-first-wave-income-entitlement-record-continuity-domains.md`
 - `0046-add-forty-second-wave-work-interruption-care-continuity-domains.md`
+- `0047-add-forty-third-wave-life-event-household-record-continuity-domains.md`

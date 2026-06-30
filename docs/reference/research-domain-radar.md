@@ -280,6 +280,12 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `workplace-accommodation-return-to-work-continuity/` | 合理便利和复工路径决定疾病、伤害或残障后的能力变化是否能被任务、环境和节奏重新接住 |
 | `disability-income-work-capacity-benefit-continuity/` | 残障收入与工作能力福利决定长期功能受限时现金流、医疗覆盖、复工试探和未来选择权是否不断线 |
 | `family-caregiver-respite-work-continuity/` | 家庭照护者和喘息服务决定长期照护责任是否会耗尽照护者的时间、健康、收入和工作角色 |
+| `vital-records-life-event-continuity/` | 生命事件记录决定出生、死亡、婚姻、离婚和亲属关系事实是否能成为跨系统可核验身份锚点 |
+| `name-change-identity-record-synchronization-continuity/` | 姓名变更与身份记录同步决定同一主体是否会因姓名差异在税务、医疗、金融、学校、雇佣和福利系统中被拆裂 |
+| `address-residency-mail-service-continuity/` | 地址、居住地与邮件服务决定通知、辖区、投票、学校、税务、福利、医疗和灾害救援是否能正确路由到主体 |
+| `household-composition-dependent-eligibility-continuity/` | 家庭组成和受扶养人关系决定资源资格、保险覆盖、税务抵免、福利单位和照护责任是否能被正确建模 |
+| `family-law-custody-child-support-continuity/` | 家庭法、监护权和子女抚养决定儿童与照护者资源、安全、医疗教育授权和家庭责任是否可执行 |
+| `kinship-foster-adoption-care-continuity/` | 亲属照护、寄养和收养决定原照护失稳后儿童身份、关系、教育、医疗、安全和长期发展是否连续 |
 
 ## 来源信号
 

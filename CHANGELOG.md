@@ -4,6 +4,7 @@ All notable repository structure changes are recorded here.
 
 ## 2026-06-30
 
+- Added forty-third-wave life-event, household, and family-record continuity domain skeletons for vital records, name-change identity synchronization, address/residency/mail routing, household/dependent eligibility, custody/child support, and kinship/foster/adoption care continuity.
 - Added forty-second-wave work interruption and care continuity domain skeletons for family/medical leave job protection, paid sick/family leave wage replacement, pregnancy/parental work continuity, workplace accommodation and return-to-work, disability income/work-capacity benefits, and family caregiver respite/work continuity.
 - Added forty-first-wave income, tax, social-insurance, retirement, unemployment, and workers-compensation record continuity domain skeletons for payroll/employment records, tax administration, Social Security earnings and benefits, retirement/pension savings plans, unemployment insurance wage records, and occupational injury benefit continuity.
 - Added fortieth-wave credential, licensure, and verifiable-proof continuity domain skeletons for education records/transcript verification, professional licensure/certification, skills and competency credentialing, continuing education/recertification, apprenticeship/work-based learning, and verifiable credential wallet interoperability.

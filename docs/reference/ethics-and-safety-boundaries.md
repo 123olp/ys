@@ -791,6 +791,24 @@ Human Infra 不能被设计成更精密的压榨系统。
 - 不帮助伪造疾病、怀孕、照护、残障、工作能力、工资、休假或照护记录；不帮助隐瞒收入、欺诈申领、规避报告义务、报复劳动者、规避合理便利或压制照护者/残障者权利。
 - 不替代 DOL、EEOC、SSA、ACL、州级 paid leave / disability / Medicaid / workers compensation 机构、律师、医生、HR、雇主、保险人、照护机构、福利顾问或官方申诉渠道。
 
+## 生命事件、家庭关系与制度记录连续性边界
+
+`vital-records-life-event-continuity`、`name-change-identity-record-synchronization-continuity`、`address-residency-mail-service-continuity`、`household-composition-dependent-eligibility-continuity`、`family-law-custody-child-support-continuity` 和 `kinship-foster-adoption-care-continuity` 关注生命事件、姓名、地址、家庭组成、监护抚养和儿童安置如何影响身份、服务、通知、资格、安全和照护连续性，不是个人证件、改名、迁址、税务/福利 household、家庭法院、子女抚养、寄养、收养或儿童福利案件入口。
+
+可以做：
+
+- 整理 USA.gov、CDC/NCHS、SSA、State Department、USPS、IRS、HealthCare.gov、ACF Child Support、Child Welfare Information Gateway、州/地方官方机构和法院公开资料的机制、对象、变量和边界。
+- 比较生命事件记录、姓名同步、地址邮件路由、household/dependent 关系、家庭法院命令和儿童安置路径如何分别影响身份识别、服务通知、资格单位、照护授权和儿童安全。
+- 记录证明负担、跨系统错配、地址安全、儿童安全、隐私、反欺诈、反胁迫、反规避和个案建议边界，服务后续建模和资料卡片。
+
+不能做：
+
+- 不提供个人出生证、死亡证、婚姻/离婚记录、改名、SSA、护照、州身份证件、地址变更、居住证明、税务 dependent、HealthCare.gov household、福利资格、监护权、子女抚养、寄养、收养、儿童福利、移民、学校、保险、法院或法律建议。
+- 不判断某人是否应改名、谁能申报谁、谁属于 household、谁有监护权、谁应支付抚养费、谁能收养/寄养、儿童应如何安置、地址是否有效、文件是否足以办理某项服务或案件胜率。
+- 不生成证件办理材料、家庭法院文书、抚养费计算、寄养/收养申请、福利申报、税务申报、地址规避、改名策略、案件策略或儿童安置建议。
+- 不帮助伪造、篡改、借用、购买或滥用身份文件、生命事件记录、地址证明、家庭关系记录、儿童福利记录、法院命令、收入或家庭组成资料；不帮助隐藏地址、隐藏儿童、规避法院命令、逃避抚养义务、逃避债务、逃避执法、福利欺诈、骚扰跟踪、胁迫控制或规避背景审查。
+- 不替代 vital records offices、SSA、State Department、USPS、IRS、HealthCare.gov、ACF、州/地方福利机构、儿童福利机构、法院、学校、律师、税务专业人士、移民顾问、社会工作者、保险人或官方申诉渠道。
+
 ## 数据与证据边界
 
 - 原始数据、清洗数据和人工判断必须分层保存。

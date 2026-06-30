@@ -1,0 +1,44 @@
+# 姓名变更与身份记录同步连续性
+
+本域研究姓名变更、姓名差异和身份记录同步如何影响主体在多个制度系统中的可识别性。它关注的是同一主体在 SSA、护照、州身份证件、税务、银行、学校、雇主、保险、医疗和福利系统之间能否保持一致，而不是个人改名操作建议。
+
+## 研究对象
+
+- 法定姓名变更、婚姻/离婚相关姓名变化、出生记录更正和身份文件更新。
+- SSA、护照、驾驶证/州身份证、税务、雇佣、银行、学校、保险、医疗和福利记录之间的同步链。
+- 姓名不一致、别名、拼写差异、跨语言转写、系统匹配失败和身份混淆。
+- 改名、身份恢复和记录更正中的证明负担、程序摩擦和隐私风险。
+
+## 价值链路
+
+```text
+主体必须在多个制度中被识别为同一个人
+  -> 姓名变更或姓名差异会传播到身份文件、税务、就业、金融、医疗和福利系统
+  -> 任何关键系统不同步都会制造记录错配、资格延迟、支付失败、旅行受阻或服务拒绝
+  -> 姓名记录同步把主体的连续身份从单个证件扩展为跨机构可核验链
+```
+
+## 关键问题
+
+- 哪些系统是姓名变更后的关键同步节点？
+- 姓名差异如何影响身份验证、背景调查、工资税务、医疗记录、保险理赔和福利递送？
+- 如何把姓名同步看成主体持续性的制度接口，而不是私人文书问题？
+- 姓名同步中有哪些隐私、安全、歧视、家庭暴力和身份盗用风险？
+
+## 上游与下游
+
+- 上游：`vital-records-life-event-continuity/`、`legal-identity-civil-registration/`、`digital-identity-security/`、`fraud-scams-consumer-protection/`。
+- 下游：`income-payroll-employment-record-continuity/`、`tax-administration-filing-record-continuity/`、`patient-data-interoperability/`、`credit-consumer-reporting-access-continuity/`、`verifiable-credential-wallet-interoperability/`。
+
+## 非目标
+
+- 不提供个人法院改名、SSA、护照、驾驶证、银行、税务、学校、医疗、福利或移民记录更新建议。
+- 不判断个人是否应改名、如何选择姓名、如何处理家庭法院或移民文件。
+- 不协助规避背景调查、隐藏身份、逃避债务、逃避抚养义务、身份盗用或文件欺诈。
+
+## 初始资料入口
+
+- USA.gov: Change your name
+- Social Security Administration: Social Security number and card services
+- U.S. Department of State: Passport name change and correction
+- State motor vehicle and state ID official agencies

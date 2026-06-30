@@ -62,6 +62,7 @@ docs/
 │   ├── 0044-add-fortieth-wave-credential-licensure-continuity-domains.md
 │   ├── 0045-add-forty-first-wave-income-entitlement-record-continuity-domains.md
 │   ├── 0046-add-forty-second-wave-work-interruption-care-continuity-domains.md
+│   ├── 0047-add-forty-third-wave-life-event-household-record-continuity-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -320,4 +321,10 @@ docs/
 203. Read `../domains/workplace-accommodation-return-to-work-continuity/README.md` if you are working on reasonable accommodation, interactive process, stay-at-work, return-to-work, modified duty, phased return, work capacity, or assistive technology in employment.
 204. Read `../domains/disability-income-work-capacity-benefit-continuity/README.md` if you are working on SSDI, SSI, disability income, work credits, work capacity, return-to-work incentives, benefit cliffs, or disability benefit continuity.
 205. Read `../domains/family-caregiver-respite-work-continuity/README.md` if you are working on family caregiver support, respite care, caregiver training, caregiver employment continuity, eldercare, disability caregiving, or caregiver burden.
-206. Enter a domain under `../domains/`.
+206. Read `../domains/vital-records-life-event-continuity/README.md` if you are working on vital records, birth/death/marriage/divorce records, certified copies, record corrections, civil registration, or life-event record continuity.
+207. Read `../domains/name-change-identity-record-synchronization-continuity/README.md` if you are working on legal name changes, identity record synchronization, SSA/passport/state ID updates, tax/employment/school/medical record matching, or name mismatch risks.
+208. Read `../domains/address-residency-mail-service-continuity/README.md` if you are working on address changes, residency, mailing address, USPS forwarding, service notices, jurisdiction, homelessness address alternatives, or address-based service routing.
+209. Read `../domains/household-composition-dependent-eligibility-continuity/README.md` if you are working on household composition, dependents, coverage household, benefit household, tax/insurance/welfare household rules, or family eligibility units.
+210. Read `../domains/family-law-custody-child-support-continuity/README.md` if you are working on custody, parenting time, child support, parentage, family court orders, child support services, or family-law record continuity.
+211. Read `../domains/kinship-foster-adoption-care-continuity/README.md` if you are working on kinship care, foster care, adoption, guardianship-like placements, permanency planning, child welfare records, or child placement continuity.
+212. Enter a domain under `../domains/`.

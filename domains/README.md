@@ -261,6 +261,12 @@
 - `workplace-accommodation-return-to-work-continuity/`：工作场所合理便利与复工连续性，整理合理便利、interactive process、modified duty、phased return 和工作能力匹配。
 - `disability-income-work-capacity-benefit-continuity/`：残障收入、工作能力与福利连续性，整理 SSDI、SSI、残障收入、工作能力、复工激励和福利悬崖。
 - `family-caregiver-respite-work-continuity/`：家庭照护者、喘息服务与工作连续性，整理家庭照护者支持、respite care、照护培训、工作灵活性和照护者负担。
+- `vital-records-life-event-continuity/`：生命事件与核心民事记录连续性，整理出生、死亡、婚姻、离婚、认证副本、记录更正和生命统计。
+- `name-change-identity-record-synchronization-continuity/`：姓名变更与身份记录同步连续性，整理姓名变更、SSA、护照、州证件、税务、学校、雇主、金融、医疗和福利记录同步。
+- `address-residency-mail-service-continuity/`：地址、居住地与邮件服务连续性，整理地址变更、居住地证明、邮件转递、关键通知、辖区和服务路由。
+- `household-composition-dependent-eligibility-continuity/`：家庭组成、受扶养人与资格关系连续性，整理 household、dependent、共同居住、照护关系、税务、保险和福利资格单位。
+- `family-law-custody-child-support-continuity/`：家庭法、监护权与子女抚养连续性，整理亲子关系、监护、养育时间、子女抚养、家庭法院命令和执行记录。
+- `kinship-foster-adoption-care-continuity/`：亲属照护、寄养、收养与儿童安置连续性，整理 kinship care、foster care、adoption、安置稳定性、permanency 和儿童记录连续性。
 - `supply-chain-continuity/`：供应链连续性，整理关键物资、服务、物流、替代路径和恢复时间。
 - `synthetic-biology-biosecurity/`：合成生物学与生物安全，整理双重用途、生物安全、生物安保和治理边界。
 - `space-extreme-habitation/`：空间与极端栖居，整理辐射、微重力、隔离、闭环资源和远程医疗风险。
