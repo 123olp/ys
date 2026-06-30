@@ -562,6 +562,16 @@
 - `ai-agent-tool-permission-sandbox-continuity/`：AI agent 工具权限与沙箱连续性，整理最小权限、审批、审计日志、回滚和中止条件。
 - `human-ai-oversight-handoff-accountability-continuity/`：人机监督、交接与问责连续性，整理人工接管、升级路径、责任归属、解释和申诉。
 - `ai-resource-cost-latency-budget-continuity/`：AI 资源、成本与延迟预算连续性，整理 token、算力、延迟、配额、缓存、降级和费用上限。
+- `semiconductor-manufacturing-metrology-continuity/`：半导体制造与计量连续性，整理制程、量测、良率、洁净室、设备校准和制造供应。
+- `semiconductor-advanced-packaging-continuity/`：半导体先进封装连续性，整理 chiplet、HBM、interposer、2.5D/3D 集成、测试和热可靠性。
+- `chip-design-eda-verification-ip-continuity/`：芯片设计、EDA、验证与 IP 连续性，整理设计工具、硬件验证、IP 许可、ISA 和硬件供应链。
+- `ai-hardware-accelerator-performance-continuity/`：AI 硬件加速器性能连续性，整理 GPU/TPU/NPU、benchmark、能效、内存、互连和运行栈。
+- `data-center-cooling-water-thermal-continuity/`：数据中心冷却、水与热管理连续性，整理液冷、水耗、PUE/WUE、热密度、冗余和环境约束。
+- `large-load-grid-interconnection-transmission-continuity/`：大型负载并网与输电连续性，整理数据中心/工业负载、并网队列、输电规划和容量升级。
+- `grid-scale-energy-storage-flexibility-continuity/`：电网级储能与灵活性连续性，整理储能、长时储能、需求响应、备用容量和调度缓冲。
+- `advanced-nuclear-energy-safety-generation-continuity/`：先进核能、安全与发电连续性，整理先进反应堆、许可、燃料、废物、安全监管和可靠低碳电力。
+- `undersea-cable-internet-backbone-continuity/`：海底光缆与互联网骨干连续性，整理 submarine cable、登陆站、路由冗余、维修和跨境数据传输。
+- `satellite-communications-spectrum-orbit-continuity/`：卫星通信、频谱与轨道连续性，整理卫星宽带、频谱、轨道、地面站、空间天气和灾害连接。
 - `governance-rights/`：治理与主体权利，整理同意、退出、数据权、法律身份、AI 治理和研究伦理。
 - `pain-suffering-control/`：疼痛与痛苦控制，整理慢性疼痛、症状负担、姑息医学和可承受持续性。
 - `health-literacy-navigation/`：健康素养与服务导航，整理可理解信息、风险沟通、共同决策和系统入口。

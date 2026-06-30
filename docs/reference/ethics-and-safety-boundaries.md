@@ -1458,6 +1458,24 @@ Human Infra 不能被设计成更精密的压榨系统。
 - 不收集、复制、处理或要求 API key、token、cookie、模型私有权重、私有 benchmark、内部红队报告、泄露数据、受限训练数据、云账单、组织日志、事故证据、私有构建日志、用户提示、个人敏感数据、医疗/法律/金融资料或员工监控数据。
 - 不替代组织安全团队、法律、合规、隐私官、AI governance board、监管机构、事故响应团队、云服务商、模型供应商、审计机构、采购团队或人类责任主体。
 
+## 先进计算、能源与连接物理底座边界
+
+`semiconductor-manufacturing-metrology-continuity`、`semiconductor-advanced-packaging-continuity`、`chip-design-eda-verification-ip-continuity`、`ai-hardware-accelerator-performance-continuity`、`data-center-cooling-water-thermal-continuity`、`large-load-grid-interconnection-transmission-continuity`、`grid-scale-energy-storage-flexibility-continuity`、`advanced-nuclear-energy-safety-generation-continuity`、`undersea-cable-internet-backbone-continuity` 和 `satellite-communications-spectrum-orbit-continuity` 关注 AI、医学、科研和自动化能力背后的芯片、封装、设计验证、加速器、数据中心冷却、电网接入、储能、核能、海底光缆和卫星连接底座，不是制造、建设、运维、采购、攻击、投资、规避监管或敏感基础设施操作入口。
+
+可以做：
+
+- 整理 NIST CHIPS、NIST CHIPS Metrology、CHIPS Advanced Packaging、MLCommons、IEA Electricity、DOE i2X、LBNL queue data、DOE Energy Storage、DOE Nuclear Energy、NRC、FCC submarine cable / space bureau、ITU-R space services 等公开资料中的对象、机制、变量、瓶颈、证据边界和禁止用途。
+- 比较半导体制造计量、先进封装、芯片设计/EDA/IP 验证、AI 加速器性能、数据中心冷却水热、大型负载并网输电、电网级储能、先进核能、海底光缆和卫星通信如何影响 AI 增强、科研能力、医疗系统、自动化、远程协作、灾害恢复和未来选择权。
+- 记录物理底座资料中的产能、良率、封装带宽、验证覆盖、基准性能、能耗、水耗、热约束、并网队列、输电容量、储能时长、安全许可、光缆登陆、频谱、轨道资源、延迟、冗余和中断恢复变量。
+
+不能做：
+
+- 不提供芯片制造工艺配方、设备调参、光刻/蚀刻/沉积/封装流程、EDA 绕权、IP 规避、硬件逆向、供应链规避、芯片采购套利、出口管制规避、产线复制、数据中心选址建设、并网申请策略、核设施设计、海底光缆登陆规避、卫星频谱申请规避或基础设施攻击方法。
+- 不判断某个芯片、加速器、数据中心、电力项目、储能项目、核能项目、海底光缆、卫星系统、频谱资产、供应商、股票、采购、出口、许可、投资或工程方案是否应采用。
+- 不生成敏感设施位置、脆弱点、攻击面、规避监管路径、采购绕行、制裁规避、核安全绕过、频谱干扰、卫星干扰、光缆破坏、数据中心渗透、电网攻击、供应链投毒、benchmark 作弊或成本规避方案。
+- 不收集、复制、处理或要求半导体工艺参数、受限设备清单、私有设计/IP、EDA 授权、供应链合同、数据中心详细拓扑、客户负载、电力互连申请、核设施非公开资料、海底光缆详细路由、卫星控制资料、频谱申请材料、商业机密、出口管制材料或关键基础设施敏感数据。
+- 不替代半导体工程师、EDA/验证团队、云服务商、电网运营商、能源规划机构、核监管机构、通信监管机构、网络安全团队、采购团队、法律、合规、出口管制、投资顾问、工程设计单位或关键基础设施运营方。
+
 ## 数据与证据边界
 
 - 原始数据、清洗数据和人工判断必须分层保存。

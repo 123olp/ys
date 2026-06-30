@@ -203,6 +203,16 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 技术测量可可信 | `standards-metrology-quality-infrastructure/` | 标准、计量、校准、认证、质量管理、合格评定、互操作 | 测量不可比、设备不可互通、质量不可审查和假合格风险 |
 | 数字关键服务可恢复 | `cybersecurity-resilience-critical-services/` | 网络安全、事件响应、备份恢复、关键服务韧性、数字风险治理 | 医疗、金融、身份、公共服务和 AI 工具被攻击、勒索或中断 |
 | AI 算力底座可用 | `compute-data-center-ai-infrastructure/` | 算力、数据中心、芯片、云、能源、水、网络、接入治理 | AI 和科学模拟能力集中、短缺、中断或被资源约束截断 |
+| 芯片制造必须可量测 | `semiconductor-manufacturing-metrology-continuity/` | 制程、计量、良率、检测、洁净室、设备校准、制造供应 | AI、医疗设备、传感器和通信硬件因制造失准、良率下降或设备断供而不可得 |
+| 芯片能力必须能封装成系统 | `semiconductor-advanced-packaging-continuity/` | chiplet、HBM、interposer、2.5D/3D、测试、热可靠性 | 晶圆能力无法转成高带宽、高能效、可部署系统级算力 |
+| 芯片设计必须可验证 | `chip-design-eda-verification-ip-continuity/` | EDA、硬件验证、IP、ISA、设计复用、硬件安全 | 硬件缺陷、IP 断裂、工具锁定或验证不足使算力增长在制造前中断 |
+| AI 硬件必须可测可得 | `ai-hardware-accelerator-performance-continuity/` | GPU/TPU/NPU、benchmark、能效、内存、互连、运行栈 | 模型能力因加速器短缺、驱动不稳、性能不可复现或能耗过高而失效 |
+| 数据中心热约束必须可承受 | `data-center-cooling-water-thermal-continuity/` | 冷却、液冷、水耗、PUE/WUE、热密度、冗余、环境约束 | 算力因散热、水资源、热浪或环境许可瓶颈而降频、停机或成本上升 |
+| 大型负载必须能接入电网 | `large-load-grid-interconnection-transmission-continuity/` | 并网队列、输电规划、电网升级、负载增长、容量接入 | 数据中心、制造和关键服务因电力接入滞后而无法扩展 |
+| 电力系统必须有时间缓冲 | `grid-scale-energy-storage-flexibility-continuity/` | 储能、长时储能、需求响应、虚拟电厂、备用容量、调度 | 停电、价格尖峰、负载削减和恢复失败截断医疗、通信、AI 和环境控制 |
+| 低碳可靠能源必须受约束地扩展 | `advanced-nuclear-energy-safety-generation-continuity/` | 先进核能、SMR、许可、安全监管、燃料、废物、可靠发电 | 能源短缺或核尾部风险把长期算力、制造和城市供能推入不稳定 |
+| 全球互联网骨干必须冗余 | `undersea-cable-internet-backbone-continuity/` | 海底光缆、登陆站、跨境数据、路由冗余、维修 | 云、AI、科研协作、远程医疗和数字记忆因跨境连接断裂而孤岛化 |
+| 空间通信层必须可治理 | `satellite-communications-spectrum-orbit-continuity/` | 卫星宽带、频谱、轨道、地面站、空间天气、灾害连接 | 偏远、移动和灾害场景因地面网络不足、频谱冲突或轨道拥塞而失联 |
 | 医学发现可监管转化 | `clinical-trials-regulatory-science-translation/` | 临床试验、监管科学、真实世界证据、安全监测、批准路径 | 有前沿发现但人体证据不足、安全遗漏或监管转化失败 |
 | 空间位置层可用 | `geospatial-navigation-location-infrastructure/` | 地理空间数据、地址、地图、GNSS/GPS、地理编码、应急位置、服务可达 | 人、资源、风险和服务不可定位，导致救援、配送、交通、转介和公共服务失败 |
 | 天气气候风险可提前观测 | `weather-climate-observation-forecasting/` | 观测系统、预报模型、气候服务、极端天气、预警提前量、环境风险窗口 | 热、洪水、风暴、干旱、火灾天气或空气风险无法提前进入行动 |
@@ -1193,6 +1203,24 @@ ai-agency-safety
 ```
 
 这组关系处理“AI 如何从单点能力展示变成可评测、可测试、可监控、可追溯、可授权、可交接、可负担的主体增强基础设施”。
+
+```text
+compute-data-center-ai-infrastructure
+  -> semiconductor-manufacturing-metrology-continuity
+  -> semiconductor-advanced-packaging-continuity
+  -> chip-design-eda-verification-ip-continuity
+  -> ai-hardware-accelerator-performance-continuity
+  -> data-center-cooling-water-thermal-continuity
+  -> large-load-grid-interconnection-transmission-continuity
+  -> grid-scale-energy-storage-flexibility-continuity
+  -> advanced-nuclear-energy-safety-generation-continuity
+  -> undersea-cable-internet-backbone-continuity
+  -> satellite-communications-spectrum-orbit-continuity
+  -> ai-resource-cost-latency-budget-continuity
+  -> cognitive-augmentation
+```
+
+这组关系处理“AI、医学、科研和自动化能力如何从抽象技术承诺落到芯片、封装、设计验证、加速器、冷却、电网、能源、骨干网络和空间连接这些物理底座上”。
 
 ```text
 mental-health-affective-stability

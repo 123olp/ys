@@ -82,6 +82,16 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `ai-agent-tool-permission-sandbox-continuity/` | AI agent 工具权限和沙箱决定模型行动能力是否有边界、日志和中止机制 |
 | `human-ai-oversight-handoff-accountability-continuity/` | 人机监督、交接和问责决定 AI 增强是否保持主体控制权和纠错权 |
 | `ai-resource-cost-latency-budget-continuity/` | AI 资源、成本和延迟预算决定 AI 增强是否长期可负担、可预测、可持续 |
+| `semiconductor-manufacturing-metrology-continuity/` | 半导体制造计量决定 AI、传感、医学设备和自动化能力的底层芯片供给是否可持续 |
+| `semiconductor-advanced-packaging-continuity/` | 先进封装决定算力、内存带宽、能效和异构系统能否持续扩展 |
+| `chip-design-eda-verification-ip-continuity/` | 芯片设计、EDA、验证和 IP 连续性决定计算能力能否从需求转化为可靠硬件 |
+| `ai-hardware-accelerator-performance-continuity/` | AI 加速器性能、能效和基准测量决定模型能力能否以可负担方式运行 |
+| `data-center-cooling-water-thermal-continuity/` | 数据中心冷却、水资源和热约束决定 AI 基础设施能否长期稳定运行 |
+| `large-load-grid-interconnection-transmission-continuity/` | 大型负载并网和输电能力决定算力、制造与城市基础设施能否获得足够电力 |
+| `grid-scale-energy-storage-flexibility-continuity/` | 电网级储能和灵活性决定高波动电力系统能否支撑连续任务负载 |
+| `advanced-nuclear-energy-safety-generation-continuity/` | 先进核能安全发电决定低碳、稳定、高密度能源能否成为长周期基础设施选项 |
+| `undersea-cable-internet-backbone-continuity/` | 海底光缆和互联网骨干决定全球数据、AI、金融、科研与协作能否持续连接 |
+| `satellite-communications-spectrum-orbit-continuity/` | 卫星通信、频谱和轨道资源决定偏远、灾害和移动场景下的连接连续性 |
 | `substance-exposure-control/` | 烟草、酒精、成瘾性物质和有害暴露会同时改变风险函数与主体自主性 |
 | `health-literacy-navigation/` | 医疗和社会服务只有可理解、可导航、可复核时才会转化为主体收益 |
 | `oral-health-continuity/` | 口腔健康连接营养、疼痛、感染、沟通和社会参与 |
@@ -1465,6 +1475,19 @@ Source links:
 - https://www.nist.gov/artificial-intelligence
 - https://oecd.ai/
 - https://www.semiconductors.org/
+- https://www.nist.gov/chips
+- https://www.nist.gov/chips/metrology
+- https://www.nist.gov/chips/research-and-development-programs/national-advanced-packaging-manufacturing-program
+- https://mlcommons.org/benchmarks/
+- https://www.iea.org/reports/electricity-2024
+- https://www.energy.gov/eere/i2x/interconnection-innovation-e-xchange
+- https://emp.lbl.gov/queues
+- https://www.energy.gov/oe/energy-storage
+- https://www.energy.gov/ne/office-nuclear-energy
+- https://www.nrc.gov/reactors/power.html
+- https://www.fcc.gov/submarine-cable-landing-licenses
+- https://www.fcc.gov/space
+- https://www.itu.int/en/ITU-R/space/Pages/default.aspx
 - https://clinicaltrials.gov/
 - https://www.who.int/clinical-trials-registry-platform
 - https://www.fda.gov/science-research/science-and-research-special-topics/regulatory-science

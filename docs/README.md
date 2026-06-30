@@ -637,4 +637,14 @@ docs/
 451. Read `../domains/ai-agent-tool-permission-sandbox-continuity/README.md` if you are working on AI agent tools, permission boundaries, sandboxing, human approval, audit logs, rollback, or abort gates.
 452. Read `../domains/human-ai-oversight-handoff-accountability-continuity/README.md` if you are working on human-AI oversight, handoff, escalation, override, accountability, appeal, or contestability.
 453. Read `../domains/ai-resource-cost-latency-budget-continuity/README.md` if you are working on AI token budgets, compute budgets, latency, rate limits, cost ceilings, caching, fallback, or resource governance.
-454. Enter a domain under `../domains/`.
+454. Read `../domains/semiconductor-manufacturing-metrology-continuity/README.md` if you are working on semiconductor manufacturing, metrology, process control, yield, inspection, or fabrication continuity.
+455. Read `../domains/semiconductor-advanced-packaging-continuity/README.md` if you are working on advanced packaging, chiplets, HBM, interposers, 2.5D/3D integration, packaging test, or thermal reliability.
+456. Read `../domains/chip-design-eda-verification-ip-continuity/README.md` if you are working on chip design, EDA tools, hardware verification, IP reuse, open ISA, or hardware design provenance.
+457. Read `../domains/ai-hardware-accelerator-performance-continuity/README.md` if you are working on GPU/TPU/NPU accelerators, MLPerf, hardware benchmark validity, memory bandwidth, interconnect, driver/runtime stacks, or AI hardware availability.
+458. Read `../domains/data-center-cooling-water-thermal-continuity/README.md` if you are working on data center cooling, liquid cooling, water usage, PUE/WUE, thermal density, heat reuse, or climate exposure.
+459. Read `../domains/large-load-grid-interconnection-transmission-continuity/README.md` if you are working on data center or industrial large loads, interconnection queues, transmission planning, grid upgrades, or load-growth constraints.
+460. Read `../domains/grid-scale-energy-storage-flexibility-continuity/README.md` if you are working on grid-scale storage, long-duration storage, demand response, virtual power plants, reserve margins, or grid flexibility.
+461. Read `../domains/advanced-nuclear-energy-safety-generation-continuity/README.md` if you are working on advanced nuclear energy, SMRs, licensing, nuclear fuel, waste management, safety oversight, or reliable low-carbon generation.
+462. Read `../domains/undersea-cable-internet-backbone-continuity/README.md` if you are working on submarine cables, landing stations, cross-border data flows, route diversity, repair time, or internet backbone resilience.
+463. Read `../domains/satellite-communications-spectrum-orbit-continuity/README.md` if you are working on satellite broadband, spectrum, orbital resources, ground stations, space weather exposure, or disaster/remote connectivity.
+464. Enter a domain under `../domains/`.

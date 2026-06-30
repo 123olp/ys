@@ -1214,6 +1214,16 @@ flowchart TD
 | [Standards Metrology Quality Infrastructure](domains/standards-metrology-quality-infrastructure/README.md) | 标准、计量、校准、认证、质量管理、合格评定和互操作规范 | 让测量、设备、数据、制造和服务具备可比性与可信度 | 不提供认证规避、检测伪造、设备改装、标准绕过或产品采购建议 |
 | [Cybersecurity Resilience Critical Services](domains/cybersecurity-resilience-critical-services/README.md) | 网络安全、关键服务韧性、事件响应、备份恢复和数字风险治理 | 防止医疗、金融、身份、公共服务和 AI 工具被攻击截断 | 不提供攻击、入侵、漏洞利用、钓鱼、恶意软件或规避检测步骤 |
 | [Compute Data Center AI Infrastructure](domains/compute-data-center-ai-infrastructure/README.md) | 算力、数据中心、AI 基础设施、芯片、能源、水、网络和接入治理 | 支撑 AI 工具、科学模拟、自动化和科研加速的物质底座 | 不提供盗用算力、绕过计费、芯片走私、数据中心攻击、投资采购或监管规避建议 |
+| [Semiconductor Manufacturing Metrology Continuity](domains/semiconductor-manufacturing-metrology-continuity/README.md) | 半导体制造、制程计量、良率、检测、洁净室和设备校准 | 把 AI、医疗设备、传感器和通信硬件的上游制造约束纳入主体持续性模型 | 不提供工艺配方、设备参数、出口管制规避、采购或投资建议 |
+| [Semiconductor Advanced Packaging Continuity](domains/semiconductor-advanced-packaging-continuity/README.md) | 先进封装、chiplet、HBM、interposer、2.5D/3D 集成、测试和热可靠性 | 把芯片从晶圆能力转化为系统级算力的封装瓶颈纳入模型 | 不提供封装工艺、供应商选择、采购路线、出口管制规避或投资建议 |
+| [Chip Design EDA Verification IP Continuity](domains/chip-design-eda-verification-ip-continuity/README.md) | 芯片设计、EDA、硬件验证、IP、ISA、设计复用和硬件供应链 | 把算力硬件在制造前的设计可信性、许可和验证断点纳入模型 | 不提供 EDA 破解、IP 侵权、硬件后门、供应链攻击或具体芯片设计 |
+| [AI Hardware Accelerator Performance Continuity](domains/ai-hardware-accelerator-performance-continuity/README.md) | GPU/TPU/NPU、AI 加速器、benchmark、能效、内存、互连和运行栈 | 校准 AI 能力背后的硬件执行层，防止把模型能力当作无资源成本能力 | 不提供盗用算力、配额绕过、驱动破解、采购投资或供应链攻击 |
+| [Data Center Cooling Water Thermal Continuity](domains/data-center-cooling-water-thermal-continuity/README.md) | 数据中心冷却、液冷、水耗、PUE/WUE、热密度、废热和冗余 | 把算力增长的热约束、水约束和环境承载纳入数字主体基础设施 | 不提供数据中心施工、冷却系统操作、采购、许可或现场改造建议 |
+| [Large Load Grid Interconnection Transmission Continuity](domains/large-load-grid-interconnection-transmission-continuity/README.md) | 大型负载、并网队列、输电规划、电网升级和容量接入 | 把数据中心、工业、制造和关键服务扩张前的电力接入瓶颈纳入模型 | 不提供项目开发、选址、能源采购、投融资或规避监管建议 |
+| [Grid Scale Energy Storage Flexibility Continuity](domains/grid-scale-energy-storage-flexibility-continuity/README.md) | 电网储能、长时储能、需求响应、虚拟电厂、备用容量和调度缓冲 | 把能源系统的时间缓冲和关键服务供电韧性纳入主体持续性 | 不提供安装、消防处置、交易套利、采购、投资或危险操作建议 |
+| [Advanced Nuclear Energy Safety Generation Continuity](domains/advanced-nuclear-energy-safety-generation-continuity/README.md) | 先进核能、SMR、许可、安全监管、燃料、废物和可靠低碳发电 | 把长期可靠能源候选路径放入安全、监管、燃料和尾部风险约束 | 不提供核设施设计、核材料处理、安保绕过、应急操作或投资建议 |
+| [Undersea Cable Internet Backbone Continuity](domains/undersea-cable-internet-backbone-continuity/README.md) | 海底光缆、登陆站、跨境数据、路由冗余、维修和全球骨干网络 | 把云、AI、远程医疗、科研协作和数字记忆的跨境连接底座纳入模型 | 不提供敏感位置、破坏方式、网络攻击、监控、路由采购或地缘操作建议 |
+| [Satellite Communications Spectrum Orbit Continuity](domains/satellite-communications-spectrum-orbit-continuity/README.md) | 卫星宽带、频谱、轨道、地面站、空间天气和灾害/偏远连接 | 把地面网络不足时的第二连接层和空间资源约束纳入主体持续性 | 不提供干扰、入侵、规避频谱监管、轨道操作、军事用途或敏感设施资料 |
 | [Clinical Trials Regulatory Science Translation](domains/clinical-trials-regulatory-science-translation/README.md) | 临床试验、监管科学、真实世界证据、安全监测和批准路径 | 把医学发现转化为可验证、可监管、可扩散的干预 | 不提供入组、治疗、用药、停药、试验选择、人体试验操作或监管规避建议 |
 | [Geospatial Navigation Location Infrastructure](domains/geospatial-navigation-location-infrastructure/README.md) | 地理空间数据、地址、地图、GNSS/GPS、地理编码和位置服务 | 让人、资源、风险、服务和救援目标可被定位、导航和分配 | 不提供跟踪、监控、骚扰、人肉搜索、危险路线或基础设施目标定位 |
 | [Weather Climate Observation Forecasting](domains/weather-climate-observation-forecasting/README.md) | 天气观测、气候服务、预报模型、极端天气和早期预警输入 | 把外部环境风险提前转化为家庭、公共服务和基础设施响应窗口 | 不提供实时灾害指挥、撤离路线、个人安全承诺、交易或规避官方预警建议 |
@@ -1862,5 +1872,6 @@ flowchart LR
 - 2026-07-01：新增第七十七波 9 个证据综合与指南转化连续性域，覆盖系统综述协议/检索/筛选、风险偏倚与批判性评价、Meta 分析与异质性、发表/报告偏倚、GRADE 证据确定性、证据到决策、指南评价/适配/本地化、活证据监测更新和快速综述/紧急证据分诊。
 - 2026-07-01：新增第七十八波 9 个科研纠错、出版完整性与科学传播连续性域，覆盖科研不端调查纠错、撤稿/表达关注/更正、预印本版本与公开评审、期刊编辑与同行评审完整性、掠夺性出版与 paper mill 检测、引用网络主张传播、科研指标激励、复制/复现/多实验室验证和科学传播证据转译。
 - 2026-07-01：新增第七十九波 9 个 AI 评测与运行治理连续性域，覆盖 AI 评测基准有效性、红队对抗测试、事故报告部署后监控、数据谱系污染漂移、合成数据验证、模型供应链发布、agent 工具权限沙箱、人机监督交接问责和 AI 资源成本延迟预算。
+- 2026-07-01：新增第八十波 10 个先进计算、能源与连接底座连续性域，覆盖半导体制造计量、先进封装、芯片设计/EDA/IP 验证、AI 加速器性能、数据中心冷却水热、大型负载并网输电、电网级储能灵活性、先进核能安全发电、海底光缆互联网骨干和卫星通信频谱轨道。
 
 完整记录见 [CHANGELOG.md](CHANGELOG.md)。
