@@ -50,3 +50,4 @@ Current decisions:
 - `0035-add-thirty-first-wave-knowledge-governance-technology-diffusion-domains.md`
 - `0036-add-thirty-second-wave-research-evidence-infrastructure-domains.md`
 - `0037-add-thirty-third-wave-future-technology-continuity-domains.md`
+- `0038-add-thirty-fourth-wave-acute-neuro-continuity-domains.md`

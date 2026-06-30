@@ -224,6 +224,13 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `post-quantum-cryptography-long-term-data-security/` | 后量子密码和长期数据安全决定身份、医疗、研究和外部记忆能否抵抗未来解密与密码迁移失败 |
 | `safety-critical-software-formal-methods/` | 安全关键软件和形式化方法决定生命支持、医疗、AI 代理和基础设施系统能否在高风险场景中被验证和约束 |
 | `long-term-digital-preservation-format-migration/` | 长期数字保存和格式迁移决定外部记忆、研究证据、作品、授权记录和项目上下文是否在几十年尺度保持可读 |
+| `cerebrovascular-stroke-brain-perfusion-resilience/` | 卒中和脑灌注决定意识、语言、运动、认知和未来选择权是否会在短时间窗口内被脑血流失败截断 |
+| `traumatic-brain-injury-neurotrauma-recovery/` | TBI 和脑震荡决定事故、重复冲击和恢复轨迹是否长期损害注意、记忆、情绪、睡眠和人格表现 |
+| `delirium-acute-cognitive-failure-prevention/` | 谵妄决定 ICU、住院和术后环境是否把医疗过程反向转化为急性主体失联和长期认知风险 |
+| `disorders-of-consciousness-coma-recovery/` | 意识障碍和昏迷决定主体连续性边界、误诊风险、恢复窗口、代理决策和尊严照护如何被审查 |
+| `epilepsy-seizure-network-stability/` | 癫痫和发作网络稳定决定意识与行动窗口是否反复被脑网络兴奋性中断 |
+| `autonomic-nervous-system-homeostasis/` | 自主神经稳态决定心率血压、体位耐受、消化排尿、出汗和压力恢复能否支撑日常行动 |
+| `migraine-headache-effective-time-burden/` | 偏头痛和头痛障碍决定低死亡但高失能疾病如何吞噬学习、工作、关系和创造窗口 |
 
 ## 来源信号
 
@@ -247,6 +254,13 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | NIST post-quantum cryptography standards and CISA migration guidance | 提示长周期数据安全必须提前处理 harvest-now-decrypt-later、密码敏捷性和迁移治理 |
 | NASA formal methods, NIST SSDF, and FDA software guidance | 提示安全关键系统需要形式化验证、软件供应链安全、保证案例和生命周期治理 |
 | Library of Congress, NDSA, and Digital Preservation Coalition guidance | 提示数字保存不是备份一句话，而是格式、校验、元数据、迁移、介质、权限和组织责任的长期系统 |
+| CDC / WHO / NINDS stroke resources | 提示卒中和脑灌注失败是时间关键型主体连续性断点，需要把再灌注窗口、复发风险、功能恢复和预防边界独立建模 |
+| CDC / NINDS / CDC HEADS UP traumatic brain injury resources | 提示 TBI、脑震荡和重复头部冲击具有独立的急性风险、长期认知情绪睡眠后遗症和恢复连续性边界 |
+| SCCM PADIS / ICU Liberation / NIA delirium / NICE delirium | 提示谵妄是 ICU、住院和术后环境中的可预防急性认知失败，不能只归入一般神经退行或心理健康 |
+| NINDS coma / AAN disorders of consciousness / MSKTC / Royal College of Physicians | 提示昏迷、无反应觉醒和最低意识状态需要独立处理评估、误诊、恢复窗口、代理决策和长期照护伦理 |
+| WHO / CDC / NINDS / ILAE epilepsy resources | 提示癫痫和发作是反复中断意识与行动窗口的脑网络稳定问题，需要独立处理伤害、治疗连续性、SUDEP 和污名边界 |
+| NINDS dysautonomia / MedlinePlus autonomic disorders / NHLBI POTS / HRS POTS consensus | 提示自主神经稳态影响心率血压、体位耐受、脑雾、疲劳、出汗、消化排尿和压力恢复，需要独立建模 |
+| WHO / NINDS / GBD / American Migraine Foundation headache resources | 提示偏头痛和头痛障碍虽然通常不是最高死亡风险，却是巨大有效时间和失能负担，需要独立计入主体持续性模型 |
 | CDC Chronic Pain / WHO Palliative Care | 提示疼痛、症状负担和姑息照护决定持续存在的可承受性 |
 | WHO Healthy Diet / Obesity | 提示营养质量、能量平衡、食物环境和代谢状态是慢病风险与有效时间变量 |
 | WHO Physical Activity | 提示身体活动和久坐行为影响心血管、代谢、肌骨、心理和死亡风险 |
@@ -981,6 +995,32 @@ Source links:
 - https://digitalpreservation.gov/
 - https://ndsa.org/publications/levels-of-digital-preservation/
 - https://www.dpconline.org/handbook
+- https://www.cdc.gov/stroke/
+- https://www.who.int/news-room/fact-sheets/detail/stroke
+- https://www.ninds.nih.gov/health-information/disorders/stroke
+- https://www.cdc.gov/traumatic-brain-injury/
+- https://www.ninds.nih.gov/health-information/disorders/traumatic-brain-injury-tbi
+- https://www.cdc.gov/heads-up/
+- https://www.sccm.org/Clinical-Resources/Guidelines/Guidelines/Pain-Agitation-Delirium-Immobility-and-Sleep-Disruption
+- https://www.sccm.org/Clinical-Resources/ICULiberation-Home/ABCDEF-Bundles
+- https://www.nia.nih.gov/health/what-delirium
+- https://www.nice.org.uk/guidance/cg103
+- https://www.ninds.nih.gov/health-information/disorders/coma
+- https://www.aan.com/Guidelines/home/GuidelineDetail/930
+- https://msktc.org/tbi/factsheets/disorders-consciousness
+- https://www.rcp.ac.uk/improving-care/resources/prolonged-disorders-of-consciousness-guidelines/
+- https://www.who.int/news-room/fact-sheets/detail/epilepsy
+- https://www.cdc.gov/epilepsy/
+- https://www.ninds.nih.gov/health-information/disorders/epilepsy-and-seizures
+- https://www.ilae.org/guidelines
+- https://www.ninds.nih.gov/health-information/disorders/dysautonomia
+- https://medlineplus.gov/autonomicnervoussystemdisorders.html
+- https://www.nhlbi.nih.gov/health/postural-orthostatic-tachycardia-syndrome
+- https://www.hrsonline.org/guidance/clinical-resources/2015-heart-rhythm-society-expert-consensus-statement-diagnosis-and-treatment-postural-tachycardia
+- https://www.who.int/news-room/fact-sheets/detail/headache-disorders
+- https://www.ninds.nih.gov/health-information/disorders/migraine
+- https://www.thelancet.com/gbd
+- https://americanmigrainefoundation.org/
 
 ## 使用规则
 

@@ -75,6 +75,13 @@ human_infra/
     ├── post-quantum-cryptography-long-term-data-security/ # 后量子密码与长期数据安全
     ├── safety-critical-software-formal-methods/ # 安全关键软件与形式化方法
     ├── long-term-digital-preservation-format-migration/ # 长期数字保存与格式迁移
+    ├── cerebrovascular-stroke-brain-perfusion-resilience/ # 卒中、脑灌注与脑血管韧性
+    ├── traumatic-brain-injury-neurotrauma-recovery/ # TBI、脑震荡与神经创伤恢复
+    ├── delirium-acute-cognitive-failure-prevention/ # 谵妄与急性认知失败预防
+    ├── disorders-of-consciousness-coma-recovery/ # 意识障碍、昏迷与恢复边界
+    ├── epilepsy-seizure-network-stability/ # 癫痫、发作与脑网络稳定
+    ├── autonomic-nervous-system-homeostasis/ # 自主神经系统稳态
+    ├── migraine-headache-effective-time-burden/ # 偏头痛、头痛障碍与有效时间负担
     ├── cognitive-augmentation/ # 认知增强与工具放大
     ├── digital-identity-security/ # 数字身份安全
     ├── disembodied-cns/   # 去具身外部维持型中枢生命系统
@@ -432,6 +439,13 @@ human_infra/
 - `domains/post-quantum-cryptography-long-term-data-security/` 负责后量子密码、长期数据安全、加密迁移和未来解密风险。
 - `domains/safety-critical-software-formal-methods/` 负责安全关键软件、形式化方法、验证确认、运行时监控和失效安全。
 - `domains/long-term-digital-preservation-format-migration/` 负责长期数字保存、格式迁移、校验、元数据、备份和可读性治理。
+- `domains/cerebrovascular-stroke-brain-perfusion-resilience/` 负责卒中、脑灌注、脑血管事件、再灌注窗口和长期功能恢复。
+- `domains/traumatic-brain-injury-neurotrauma-recovery/` 负责 TBI、脑震荡、重复头部冲击、神经创伤恢复和长期后遗症。
+- `domains/delirium-acute-cognitive-failure-prevention/` 负责谵妄、ICU/住院急性认知失败、术后认知风险和可预防诱因。
+- `domains/disorders-of-consciousness-coma-recovery/` 负责昏迷、无反应觉醒、最低意识状态、意识评估、康复和照护伦理。
+- `domains/epilepsy-seizure-network-stability/` 负责癫痫、发作频率、脑网络兴奋性、治疗连续性和发作相关伤害。
+- `domains/autonomic-nervous-system-homeostasis/` 负责自主神经、心率血压调节、体位耐受、出汗、消化排尿和压力恢复。
+- `domains/migraine-headache-effective-time-burden/` 负责偏头痛、头痛障碍、感官敏感、认知雾、发作不可预测性和有效时间负担。
 - `domains/insurance-risk-transfer/` 负责健康、失业、工伤、残障、灾害、存款、养老金等风险转移和风险池。
 - `domains/childcare-family-continuity/` 负责托育可及、托育费用、照护质量、早期儿童发展、父母工作连续性和家庭压力。
 - `domains/emergency-preparedness-response/` 负责灾害准备、预警、应急通信、急救医疗、安置、公共卫生应急和灾后恢复。
@@ -533,3 +547,4 @@ human_infra/
 - 2026-06-30：新增第二十二波 6 个危机、剥削与恢复连续性域骨架，覆盖自杀危机响应、物质使用障碍治疗恢复、老年正义成人保护、儿童保护家庭安全、诈骗消费者保护和在线数字伤害预防。
 - 2026-06-30：新增第二十五波 6 个文明连续性、集体安全与宏观制度底座域骨架，覆盖武装冲突平民保护、和平建设冲突预防、政府连续性、电信网络韧性、宏观经济稳定和公共廉洁问责。
 - 2026-06-30：新增第三十三波 7 个未来技术连续性域骨架，覆盖纳米医学靶向递送、AI 药物发现蛋白设计、表观遗传编辑、脑保存连接组仿真、后量子密码、安全关键软件形式化方法和长期数字保存。
+- 2026-06-30：新增第三十四波 7 个急性神经连续性与意识韧性域骨架，覆盖卒中脑灌注韧性、TBI 神经创伤恢复、谵妄急性认知失败预防、意识障碍昏迷恢复、癫痫发作网络稳定、自主神经稳态和偏头痛有效时间负担。

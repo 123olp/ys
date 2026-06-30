@@ -122,6 +122,27 @@ domains/
 ├── long-term-digital-preservation-format-migration/
 │   ├── AGENTS.md
 │   └── README.md
+├── cerebrovascular-stroke-brain-perfusion-resilience/
+│   ├── AGENTS.md
+│   └── README.md
+├── traumatic-brain-injury-neurotrauma-recovery/
+│   ├── AGENTS.md
+│   └── README.md
+├── delirium-acute-cognitive-failure-prevention/
+│   ├── AGENTS.md
+│   └── README.md
+├── disorders-of-consciousness-coma-recovery/
+│   ├── AGENTS.md
+│   └── README.md
+├── epilepsy-seizure-network-stability/
+│   ├── AGENTS.md
+│   └── README.md
+├── autonomic-nervous-system-homeostasis/
+│   ├── AGENTS.md
+│   └── README.md
+├── migraine-headache-effective-time-burden/
+│   ├── AGENTS.md
+│   └── README.md
 ├── cognitive-augmentation/
 │   ├── AGENTS.md
 │   └── README.md
@@ -680,6 +701,7 @@ domains/
 - `privacy-preserving-computation-federated-learning/`、`knowledge-graph-ontology-semantic-interoperability/`、`model-cards-ai-audit-documentation/`、`technology-foresight-horizon-scanning/`、`research-portfolio-prioritization-funding-governance/` 和 `intellectual-property-technology-transfer-access/` 负责隐私保护计算、语义知识组织、模型审计、未来技术信号、研究组合排序和技术转移可及这些知识治理与技术扩散条件。
 - `trustworthy-scientific-communication-peer-review/`、`research-participant-consent-community-engagement/`、`biobanking-biospecimen-quality-chain-of-custody/`、`longitudinal-cohort-retention-followup-infrastructure/`、`registries-real-world-data-governance/` 和 `scientific-instrumentation-sensor-calibration-maintenance/` 负责可信科研传播、研究参与者同意、样本质量保管链、纵向队列随访、真实世界登记和仪器传感器校准这些科研证据基础设施条件。
 - `nanomedicine-targeted-delivery-molecular-repair/`、`ai-drug-discovery-protein-design/`、`epigenetic-editing-gene-regulation-therapeutics/`、`brain-preservation-connectomics-emulation/`、`post-quantum-cryptography-long-term-data-security/`、`safety-critical-software-formal-methods/` 和 `long-term-digital-preservation-format-migration/` 负责未来技术窗口生成、递送、调控、信息保存、长期数字安全、软件可信和外部记忆可读性这些未来技术连续性条件。
+- `cerebrovascular-stroke-brain-perfusion-resilience/`、`traumatic-brain-injury-neurotrauma-recovery/`、`delirium-acute-cognitive-failure-prevention/`、`disorders-of-consciousness-coma-recovery/`、`epilepsy-seizure-network-stability/`、`autonomic-nervous-system-homeostasis/` 和 `migraine-headache-effective-time-burden/` 负责卒中脑灌注、神经创伤、谵妄、意识障碍、癫痫、自主神经和偏头痛这些急性神经连续性与意识韧性条件。
 - `access-to-justice-legal-aid/`、`civic-participation-election-access/`、`migration-displacement-humanitarian-continuity/` 和 `digital-inclusion-connectivity/` 负责司法可及、公民参与、迁移流离失所人道连续性和数字连接这些制度参与与公共服务接入条件。
 - `personal-safety-violence-prevention/` 和 `product-safety-recall-systems/` 负责暴力预防、受害者支持、产品缺陷报告、召回和纠正这些公共安全连续性条件。
 - `cellular-reprogramming/` 负责山中因子、部分重编程、化学重编程、AI 因子设计和表观遗传编辑等“细胞状态可重写”谱系，不提供实验协议或人体应用建议。
@@ -688,6 +710,7 @@ domains/
 - `privacy-preserving-computation-federated-learning/`、`knowledge-graph-ontology-semantic-interoperability/`、`model-cards-ai-audit-documentation/`、`technology-foresight-horizon-scanning/`、`research-portfolio-prioritization-funding-governance/` 和 `intellectual-property-technology-transfer-access/` 负责研究系统可信、可组合、可审计、可预警、可排序和可扩散的治理边界，不提供隐私攻击、临床编码服务、模型认证、投资建议、资助操控、专利法律意见或商业估值。
 - `trustworthy-scientific-communication-peer-review/`、`research-participant-consent-community-engagement/`、`biobanking-biospecimen-quality-chain-of-custody/`、`longitudinal-cohort-retention-followup-infrastructure/`、`registries-real-world-data-governance/` 和 `scientific-instrumentation-sensor-calibration-maintenance/` 负责科研证据进入模型前的基础设施边界，不提供学术操控、IRB 规避、非法采样、重新识别、真实世界数据越权访问、伪造校准、设备改装、个体诊断或寿命预测。
 - `nanomedicine-targeted-delivery-molecular-repair/`、`ai-drug-discovery-protein-design/`、`epigenetic-editing-gene-regulation-therapeutics/`、`brain-preservation-connectomics-emulation/`、`post-quantum-cryptography-long-term-data-security/`、`safety-critical-software-formal-methods/` 和 `long-term-digital-preservation-format-migration/` 负责远期技术连续性的证据边界，不提供自制纳米材料、双重用途生物设计、表观编辑操作、脑保存操作、密码攻击、安全关键系统规避、档案窃取或数字永生承诺。
+- `cerebrovascular-stroke-brain-perfusion-resilience/`、`traumatic-brain-injury-neurotrauma-recovery/`、`delirium-acute-cognitive-failure-prevention/`、`disorders-of-consciousness-coma-recovery/`、`epilepsy-seizure-network-stability/`、`autonomic-nervous-system-homeostasis/` 和 `migraine-headache-effective-time-burden/` 负责急性神经连续性与意识韧性的证据边界，不提供个体诊断、治疗方案、急救指令、用药调整、预后判断、返工返赛许可、影像/EEG/可穿戴解释或 AI 个人医疗结论。
 - `regenerative-medicine/`、`cancer-control/` 和 `immune-maintenance/` 负责身体基底维护相关的机制、风险和证据边界。
 - `rehabilitation-functioning/`、`assistive-technology-access/`、`skin-barrier-wound-healing/` 和 `sensory-continuity/` 负责功能恢复、能力补偿、外界屏障和感官反馈连续性。
 - `antimicrobial-resilience/` 负责抗微生物耐药、感染控制和现代医学抗感染底座。

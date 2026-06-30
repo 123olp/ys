@@ -205,6 +205,13 @@
 - `post-quantum-cryptography-long-term-data-security/`：后量子密码与长期数据安全，整理量子威胁、密码迁移、长期保密和数据连续性。
 - `safety-critical-software-formal-methods/`：安全关键软件与形式化方法，整理规格、验证、运行时监控、故障隔离和失效安全。
 - `long-term-digital-preservation-format-migration/`：长期数字保存与格式迁移，整理格式、元数据、校验、备份、迁移和长期可读性。
+- `cerebrovascular-stroke-brain-perfusion-resilience/`：卒中、脑灌注与脑血管韧性，整理脑血流失败、再灌注窗口、长期功能恢复和复发风险边界。
+- `traumatic-brain-injury-neurotrauma-recovery/`：TBI、脑震荡与神经创伤恢复，整理头部冲击、认知情绪睡眠后遗症和恢复连续性。
+- `delirium-acute-cognitive-failure-prevention/`：谵妄与急性认知失败预防，整理 ICU、住院、术后急性主体失联诱因、预防和长期认知风险。
+- `disorders-of-consciousness-coma-recovery/`：意识障碍、昏迷与恢复边界，整理意识评估、误诊、恢复窗口、代理决策和尊严照护。
+- `epilepsy-seizure-network-stability/`：癫痫、发作与脑网络稳定，整理发作频率、治疗连续性、伤害风险和社会参与限制。
+- `autonomic-nervous-system-homeostasis/`：自主神经系统稳态，整理心率血压调节、体位耐受、出汗、消化排尿和压力恢复。
+- `migraine-headache-effective-time-burden/`：偏头痛、头痛障碍与有效时间负担，整理发作性疼痛、感官敏感、认知雾和失能天数。
 - `supply-chain-continuity/`：供应链连续性，整理关键物资、服务、物流、替代路径和恢复时间。
 - `synthetic-biology-biosecurity/`：合成生物学与生物安全，整理双重用途、生物安全、生物安保和治理边界。
 - `space-extreme-habitation/`：空间与极端栖居，整理辐射、微重力、隔离、闭环资源和远程医疗风险。

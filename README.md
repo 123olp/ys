@@ -428,6 +428,13 @@ flowchart TD
     H --> PQC[post-quantum-cryptography-long-term-data-security<br/>后量子密码 / 长期数据安全]
     H --> SCSFM[safety-critical-software-formal-methods<br/>安全关键软件 / 形式化方法]
     H --> LTDP[long-term-digital-preservation-format-migration<br/>长期数字保存 / 格式迁移]
+    H --> CSBPR[cerebrovascular-stroke-brain-perfusion-resilience<br/>卒中 / 脑灌注韧性]
+    H --> TBINR[traumatic-brain-injury-neurotrauma-recovery<br/>TBI / 神经创伤恢复]
+    H --> DACFP[delirium-acute-cognitive-failure-prevention<br/>谵妄 / 急性认知失败]
+    H --> DOCCR[disorders-of-consciousness-coma-recovery<br/>意识障碍 / 昏迷恢复]
+    H --> ESNS[epilepsy-seizure-network-stability<br/>癫痫 / 发作网络稳定]
+    H --> ANSH[autonomic-nervous-system-homeostasis<br/>自主神经稳态]
+    H --> MHETB[migraine-headache-effective-time-burden<br/>偏头痛 / 有效时间负担]
     H --> MF[measurement-feedback<br/>测量 / 预测 / 反馈]
     H --> C[disembodied-cns<br/>去具身中枢生命系统]
     H --> M[memory-editing<br/>记忆编辑与人格连续性]
@@ -528,6 +535,13 @@ flowchart TD
 | [Post Quantum Cryptography Long Term Data Security](domains/post-quantum-cryptography-long-term-data-security/README.md) | 后量子密码、长周期数据安全、加密迁移和量子威胁 | 保护身份、医疗、研究、财务和个人档案免受未来解密风险 | 不提供攻击、破解、密钥窃取、认证绕过或永久安全承诺 |
 | [Safety Critical Software Formal Methods](domains/safety-critical-software-formal-methods/README.md) | 安全关键软件、形式化方法、验证确认、运行时监控和失效安全 | 让医疗、AI、交通、能源和生命支持软件具备可审查可信度 | 不提供攻击、绕过安全壳、关闭监控、规避认证或绝对安全承诺 |
 | [Long Term Digital Preservation Format Migration](domains/long-term-digital-preservation-format-migration/README.md) | 长期数字保存、格式迁移、校验、元数据、备份和可读性 | 保护外部记忆、研究证据、作品、授权记录和项目上下文的长期可恢复性 | 不提供绕过访问控制、破解加密、盗取档案、版权规避或数字永生承诺 |
+| [Cerebrovascular Stroke Brain Perfusion Resilience](domains/cerebrovascular-stroke-brain-perfusion-resilience/README.md) | 卒中、脑灌注、脑血管事件、再灌注窗口和长期功能恢复 | 防止脑血流失败在短时间内截断意识、语言、运动、认知和未来选择权 | 不提供卒中急救、诊断、治疗、用药、康复处方或个体风险判断 |
+| [Traumatic Brain Injury Neurotrauma Recovery](domains/traumatic-brain-injury-neurotrauma-recovery/README.md) | TBI、脑震荡、重复头部冲击、神经创伤恢复和长期后遗症 | 审查外部冲击如何进入记忆、情绪、注意力、睡眠和人格连续性 | 不提供诊断、影像解释、返赛返工许可、急救处置或康复处方 |
+| [Delirium Acute Cognitive Failure Prevention](domains/delirium-acute-cognitive-failure-prevention/README.md) | 谵妄、ICU/住院急性认知失败、术后认知风险和可预防诱因 | 防止医疗系统在治疗身体时反向制造急性主体失联和长期认知损害 | 不提供诊断、镇静调整、用药、ICU 治疗或个体照护计划 |
+| [Disorders Of Consciousness Coma Recovery](domains/disorders-of-consciousness-coma-recovery/README.md) | 昏迷、无反应觉醒、最低意识状态、意识评估、康复和照护伦理 | 审查“身体仍活着”与“主体仍可感知、沟通、恢复”的边界 | 不提供个体意识判断、预后、撤治、生命支持或伦理裁决建议 |
+| [Epilepsy Seizure Network Stability](domains/epilepsy-seizure-network-stability/README.md) | 癫痫、发作频率、脑网络兴奋性、治疗连续性和发作相关伤害 | 保护稳定意识、可预测行动窗口、工作学习参与和社会安全 | 不提供诊断、用药、急救、驾驶许可、设备选择或手术建议 |
+| [Autonomic Nervous System Homeostasis](domains/autonomic-nervous-system-homeostasis/README.md) | 自主神经、心率血压调节、体位耐受、出汗、消化排尿和压力恢复 | 解释隐性自动调节如何决定站立、学习、工作、运动和恢复耐受 | 不提供 POTS/晕厥诊断、补液用盐、药物、运动或设备建议 |
+| [Migraine Headache Effective Time Burden](domains/migraine-headache-effective-time-burden/README.md) | 偏头痛、头痛障碍、感官敏感、认知雾、发作不可预测性和失能天数 | 把低死亡、高失能、高时间损耗疾病纳入有效时间和创造密度模型 | 不提供头痛诊断、药物、急症判断、个体触发因素处方或产品推荐 |
 | [Regenerative Medicine](domains/regenerative-medicine/README.md) | 干细胞、组织工程、器官再生、类器官、移植 | 器官/组织修复框架、功能终点和整合风险 | 不提供手术、细胞制备、移植或人体实验步骤 |
 | [Rehabilitation And Functioning](domains/rehabilitation-functioning/README.md) | 康复、功能恢复、失能预防、活动能力、自理和社会参与 | 功能状态、活动能力、参与能力和失能风险模型 | 不提供个人康复处方、训练计划、诊断或治疗建议 |
 | [Cancer Control](domains/cancer-control/README.md) | 癌症预防、早筛、治疗、复发、肿瘤演化 | 癌症风险函数、证据层级和长期控制变量 | 不提供诊断、治疗方案、处方、剂量或个体用药建议 |
@@ -1006,5 +1020,6 @@ flowchart LR
 - 2026-06-30：新增第三十一波 6 个知识治理、技术预见与扩散域，覆盖隐私保护计算、知识图谱本体语义互操作、模型卡 AI 审计文档、技术预见地平线扫描、研究组合资金治理和知识产权技术转移可及。
 - 2026-06-30：新增第三十二波 6 个科研证据基础设施域，覆盖可信科研传播与同行评审、研究参与者同意与社区参与、生物样本库保管链、纵向队列随访、登记与真实世界数据治理、科研仪器与传感器校准维护。
 - 2026-06-30：新增第三十三波 7 个未来技术连续性域，覆盖纳米医学靶向递送、AI 药物发现蛋白设计、表观遗传编辑、脑保存连接组仿真、后量子密码、安全关键软件形式化方法和长期数字保存格式迁移。
+- 2026-06-30：新增第三十四波 7 个急性神经连续性与意识韧性域，覆盖卒中脑灌注韧性、TBI 神经创伤恢复、谵妄急性认知失败预防、意识障碍昏迷恢复、癫痫发作网络稳定、自主神经稳态和偏头痛有效时间负担。
 
 完整记录见 [CHANGELOG.md](CHANGELOG.md)。

@@ -247,6 +247,13 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 长期数据必须抵抗未来解密 | `post-quantum-cryptography-long-term-data-security/` | PQC、密码迁移、加密敏捷性、长期保密、harvest-now-decrypt-later | 医疗、身份和研究档案被未来量子或迁移失败破坏 |
 | 高风险系统必须可证明可信 | `safety-critical-software-formal-methods/` | 形式化方法、模型检查、证明、保证案例、安全关键软件 | 生命支持、医疗、AI 和基础设施软件因隐性缺陷级联失败 |
 | 外部记忆必须长期可读 | `long-term-digital-preservation-format-migration/` | 格式迁移、校验、元数据、备份、存储介质、可读性 | 作品、记忆、授权、证据和项目上下文随格式、介质或平台消失 |
+| 脑灌注必须维持 | `cerebrovascular-stroke-brain-perfusion-resilience/` | 脑血流、卒中、TIA、再灌注、二级预防 | 意识、语言、运动、认知和未来选择权在短时间内被脑血流失败截断 |
+| 脑外伤必须可预防和恢复 | `traumatic-brain-injury-neurotrauma-recovery/` | TBI、脑震荡、重复冲击、恢复轨迹 | 事故后注意、记忆、情绪、睡眠和人格表现长期受损 |
+| 急性认知失败必须可预防 | `delirium-acute-cognitive-failure-prevention/` | 谵妄、ICU/住院、镇静、睡眠、感染、药物 | 医疗系统反向制造主体失联、长期认知损害和死亡风险 |
+| 意识边界必须可审查 | `disorders-of-consciousness-coma-recovery/` | 昏迷、无反应觉醒、最低意识、评估、代理决策 | 误诊、误放弃、无意义维持或主体连续性误判 |
+| 脑网络发作必须稳定 | `epilepsy-seizure-network-stability/` | 癫痫、发作频率、网络兴奋性、治疗连续性 | 意识和行动窗口反复中断，伤害、SUDEP、污名和社会限制上升 |
+| 自动调节必须稳定 | `autonomic-nervous-system-homeostasis/` | 心率血压、体位耐受、HRV、出汗、消化排尿、压力恢复 | 晕厥、疲劳、脑雾、跌倒和有效时间损耗 |
+| 发作性头痛负担必须计入有效时间 | `migraine-headache-effective-time-burden/` | 偏头痛、头痛障碍、感官敏感、认知雾、失能天数 | 低死亡但高失能疾病长期吞噬学习、工作、关系和创造窗口 |
 | 状态可观测和校正 | `measurement-feedback/` | 测量、预测、反馈、风险评分 | 错误预测、偏差、指标替代真实终点 |
 
 ## 主链路
@@ -259,6 +266,7 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
   -> 知识治理与技术扩散可追踪、可审计、可排序、可获得
   -> 科研证据基础设施可发表纠错、主体授权、样本保管、长期随访、真实世界登记和仪器校准
   -> 未来技术连续性可生成、可递送、可调控、可保存、可安全执行和可长期读取
+  -> 急性神经连续性可保护意识、灌注、认知、脑网络、自动调节和有效时间
   -> 神经与身份连续
   -> 时间窗口延展
   -> 认知与工具增强
@@ -319,6 +327,13 @@ cellular-reprogramming
 
 ```text
 neuro-continuity
+  -> cerebrovascular-stroke-brain-perfusion-resilience
+  -> traumatic-brain-injury-neurotrauma-recovery
+  -> delirium-acute-cognitive-failure-prevention
+  -> disorders-of-consciousness-coma-recovery
+  -> epilepsy-seizure-network-stability
+  -> autonomic-nervous-system-homeostasis
+  -> migraine-headache-effective-time-burden
   -> sensory-continuity
   -> memory-editing
   -> cognitive-augmentation

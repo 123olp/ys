@@ -53,6 +53,7 @@ docs/
 │   ├── 0035-add-thirty-first-wave-knowledge-governance-technology-diffusion-domains.md
 │   ├── 0036-add-thirty-second-wave-research-evidence-infrastructure-domains.md
 │   ├── 0037-add-thirty-third-wave-future-technology-continuity-domains.md
+│   ├── 0038-add-thirty-fourth-wave-acute-neuro-continuity-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -255,4 +256,11 @@ docs/
 147. Read `../domains/post-quantum-cryptography-long-term-data-security/README.md` if you are working on post-quantum cryptography, long-term confidentiality, cryptographic migration, or future decryption risk.
 148. Read `../domains/safety-critical-software-formal-methods/README.md` if you are working on safety-critical software, formal methods, assurance cases, verification, or high-risk system failures.
 149. Read `../domains/long-term-digital-preservation-format-migration/README.md` if you are working on long-term digital preservation, file formats, metadata, fixity, backups, migration, or future readability.
-150. Enter a domain under `../domains/`.
+150. Read `../domains/cerebrovascular-stroke-brain-perfusion-resilience/README.md` if you are working on stroke, brain perfusion, TIA, reperfusion windows, secondary prevention, or brain vascular resilience.
+151. Read `../domains/traumatic-brain-injury-neurotrauma-recovery/README.md` if you are working on traumatic brain injury, concussion, repeated head impacts, neurotrauma recovery, or long-term cognitive/emotional/sleep sequelae.
+152. Read `../domains/delirium-acute-cognitive-failure-prevention/README.md` if you are working on delirium, ICU or hospital acute cognitive failure, sedation, sleep disruption, infection, medications, or postoperative cognitive risk.
+153. Read `../domains/disorders-of-consciousness-coma-recovery/README.md` if you are working on coma, unresponsive wakefulness, minimally conscious state, consciousness assessment, recovery windows, surrogate decisions, or dignity of care.
+154. Read `../domains/epilepsy-seizure-network-stability/README.md` if you are working on epilepsy, seizures, brain-network excitability, seizure-related injury, SUDEP, stigma, or treatment continuity.
+155. Read `../domains/autonomic-nervous-system-homeostasis/README.md` if you are working on autonomic regulation, heart-rate and blood-pressure control, orthostatic intolerance, sweating, digestion, urination, or stress recovery.
+156. Read `../domains/migraine-headache-effective-time-burden/README.md` if you are working on migraine, headache disorders, sensory sensitivity, cognitive fog, attack unpredictability, or disability days.
+157. Enter a domain under `../domains/`.
