@@ -155,6 +155,12 @@ human_infra/
     ├── telecommunications-network-resilience-continuity/ # 电信网络韧性与通信连续性
     ├── macroeconomic-monetary-fiscal-stability/ # 宏观经济、货币与财政稳定
     ├── anti-corruption-public-integrity-accountability/ # 反腐败、公共廉洁与问责
+    ├── agricultural-production-food-system-resilience/ # 农业生产与食物系统韧性
+    ├── soil-health-land-degradation-drought-resilience/ # 土壤健康、土地退化与旱灾韧性
+    ├── water-resources-hydrology-flood-drought-management/ # 水资源、水文与洪旱管理
+    ├── biodiversity-ecosystem-services-resilience/ # 生物多样性与生态系统服务韧性
+    ├── wildfire-landscape-fire-resilience/ # 野火、景观火灾与社区韧性
+    ├── freight-logistics-port-cold-chain-continuity/ # 货运、港口、仓储与冷链连续性
     ├── insurance-risk-transfer/ # 保险与风险转移
     ├── childcare-family-continuity/ # 托育与家庭连续性
     ├── learning-skill-acquisition/ # 学习与技能获得
@@ -334,6 +340,12 @@ human_infra/
 - `domains/telecommunications-network-resilience-continuity/` 负责电信网络、应急通信、冗余、备电、拥塞、覆盖和通信恢复时间。
 - `domains/macroeconomic-monetary-fiscal-stability/` 负责通胀、就业、财政空间、公共债务、金融稳定和基本成本这些宏观资源条件。
 - `domains/anti-corruption-public-integrity-accountability/` 负责反腐败、公共廉洁、透明、审计、利益冲突、申诉和问责。
+- `domains/agricultural-production-food-system-resilience/` 负责农业生产、作物畜牧、灌溉、种子、肥料、劳动力和气候适应。
+- `domains/soil-health-land-degradation-drought-resilience/` 负责土壤健康、土地退化、侵蚀、盐渍化、荒漠化和旱灾韧性。
+- `domains/water-resources-hydrology-flood-drought-management/` 负责水资源、水文观测、流域、地下水、洪水、干旱和水安全。
+- `domains/biodiversity-ecosystem-services-resilience/` 负责生物多样性、生态系统服务、授粉、过滤、蓄水、降温和生态恢复。
+- `domains/wildfire-landscape-fire-resilience/` 负责野火、火灾天气、景观燃料、WUI、烟雾、疏散和社区恢复。
+- `domains/freight-logistics-port-cold-chain-continuity/` 负责货运、港口、仓储、冷链、运输节点和最后一公里物流连续性。
 - `domains/insurance-risk-transfer/` 负责健康、失业、工伤、残障、灾害、存款、养老金等风险转移和风险池。
 - `domains/childcare-family-continuity/` 负责托育可及、托育费用、照护质量、早期儿童发展、父母工作连续性和家庭压力。
 - `domains/emergency-preparedness-response/` 负责灾害准备、预警、应急通信、急救医疗、安置、公共卫生应急和灾后恢复。
@@ -401,6 +413,7 @@ human_infra/
 - 2026-06-26：新增 `web/` Observable Framework 应用，作为科研叙事、书籍转译、预测模型和交互图表的正式 Web 入口。
 - 2026-06-27：新增 `tools/arxiv_html_paper_tool.py` 与 `tools/arxiv-html-paper/`，把 arXiv HTML papers 前端框架沉淀为可复用 Astro 工具链。
 - 2026-06-29：新增可控度规等待室假设 working paper 入口和审计账本，把黑洞等待室收敛为固有时差分、退出采用、风险扣减和递归等待的可审查模型。
+- 2026-06-30：新增农业生产、土壤土地、水资源、生态系统服务、野火韧性和物流冷链六个研究域，补齐初级生产、自然系统与物理流通底座。
 - 2026-06-30：新增复杂照护导航、交接与决策连续性域，覆盖罕见病诊断漫游、多病共存多重用药、出院交接、居家/缓和/安宁疗护、医疗解释文化中介和患者共同决策。
 - 2026-06-30：新增外部化主体连续性域，覆盖生命日志个人档案、数字遗产继承、可穿戴连续感知、个人知识管理认知卸载、脑机接口治理和机器人具身辅助。
 - 2026-06-30：新增 `domains/cellular-reprogramming/`，承载山中因子、部分重编程、化学重编程、AI 因子设计和表观遗传编辑的机制谱系与安全边界。

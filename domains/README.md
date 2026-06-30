@@ -130,6 +130,12 @@
 - `telecommunications-network-resilience-continuity/`：电信网络韧性与通信连续性，整理通信网络、应急通信、冗余、备电、拥塞和恢复时间。
 - `macroeconomic-monetary-fiscal-stability/`：宏观经济、货币与财政稳定，整理通胀、就业、财政空间、公共债务、金融稳定和基本成本。
 - `anti-corruption-public-integrity-accountability/`：反腐败、公共廉洁与问责，整理透明、审计、利益冲突、采购廉洁、申诉和公共资源俘获风险。
+- `agricultural-production-food-system-resilience/`：农业生产与食物系统韧性，整理作物、畜牧、灌溉、种子、肥料、劳动力和气候适应。
+- `soil-health-land-degradation-drought-resilience/`：土壤健康、土地退化与旱灾韧性，整理土壤功能、侵蚀、盐渍化、荒漠化和土地恢复。
+- `water-resources-hydrology-flood-drought-management/`：水资源、水文与洪旱管理，整理流域、地下水、水库、洪水、干旱和水安全。
+- `biodiversity-ecosystem-services-resilience/`：生物多样性与生态系统服务韧性，整理授粉、过滤、蓄水、降温、病害调节和生态恢复。
+- `wildfire-landscape-fire-resilience/`：野火、景观火灾与社区韧性，整理火灾天气、景观燃料、WUI、烟雾、疏散和恢复。
+- `freight-logistics-port-cold-chain-continuity/`：货运、港口、仓储与冷链连续性，整理关键物资物流、港口、冷链、运输节点和最后一公里。
 - `insurance-risk-transfer/`：保险与风险转移，整理健康、失业、工伤、残障、灾害、存款、养老金等风险池和保障缺口。
 - `childcare-family-continuity/`：托育与家庭连续性，整理托育可及、费用、质量、早期儿童发展、父母工作连续性和家庭压力。
 - `emergency-preparedness-response/`：应急准备与响应，整理灾害准备、预警、应急通信、急救医疗、安置和恢复。

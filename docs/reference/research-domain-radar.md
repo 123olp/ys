@@ -175,6 +175,12 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `telecommunications-network-resilience-continuity/` | 电信网络韧性决定警报、求助、支付、医疗、身份和家庭联系是否会因通信中断同时失效 |
 | `macroeconomic-monetary-fiscal-stability/` | 宏观经济、货币和财政稳定决定基本生活成本、公共预算、就业、健康投资和技术可及性是否可承受 |
 | `anti-corruption-public-integrity-accountability/` | 公共廉洁和问责决定公共预算、采购、监管、福利、医疗和基础设施是否被私人利益俘获 |
+| `agricultural-production-food-system-resilience/` | 农业生产韧性决定食物、饲料、原料和农村收入能否在源头持续产出 |
+| `soil-health-land-degradation-drought-resilience/` | 土壤健康和土地功能决定食物、水循环、生态缓冲和土地生产力是否长期可维持 |
+| `water-resources-hydrology-flood-drought-management/` | 水资源和水文管理决定饮水、农业、能源、住房、交通和医疗是否有可调度水底座 |
+| `biodiversity-ecosystem-services-resilience/` | 生物多样性和生态系统服务决定授粉、过滤、蓄水、降温和病害调节是否继续支撑主体 |
+| `wildfire-landscape-fire-resilience/` | 野火韧性决定住房、空气、电力、通信、医疗和社区恢复是否会被复合火灾风险击穿 |
+| `freight-logistics-port-cold-chain-continuity/` | 货运、港口、仓储和冷链决定药品、食物、设备、备件和救援物资能否真实到达人 |
 
 ## 来源信号
 
@@ -804,6 +810,21 @@ Source links:
 - https://www.imf.org/en/Publications/FM
 - https://www.oecd.org/en/topics/public-integrity.html
 - https://www.unodc.org/unodc/en/corruption/uncac.html
+- https://www.fao.org/sustainability/en/
+- https://www.fao.org/climate-change/en/
+- https://www.worldbank.org/en/topic/agriculture
+- https://www.unccd.int/land-and-life/drought
+- https://www.fao.org/global-soil-partnership/en/
+- https://wmo.int/topics/water
+- https://www.worldbank.org/en/topic/waterresourcesmanagement
+- https://www.unwater.org/
+- https://www.ipbes.net/global-assessment
+- https://www.cbd.int/
+- https://www.unep.org/explore-topics/ecosystems-and-biodiversity
+- https://www.usfa.fema.gov/wui/
+- https://www.nifc.gov/
+- https://lpi.worldbank.org/
+- https://unctad.org/topic/transport-and-trade-logistics/review-of-maritime-transport
 
 ## 使用规则
 

@@ -358,6 +358,12 @@ flowchart TD
     H --> TNRC[telecommunications-network-resilience-continuity<br/>电信网络 / 通信连续性]
     H --> MMFS[macroeconomic-monetary-fiscal-stability<br/>宏观经济 / 货币财政稳定]
     H --> ACPIA[anti-corruption-public-integrity-accountability<br/>反腐败 / 公共廉洁]
+    H --> APFSR[agricultural-production-food-system-resilience<br/>农业生产 / 食物系统韧性]
+    H --> SHLDDR[soil-health-land-degradation-drought-resilience<br/>土壤健康 / 土地退化 / 旱灾]
+    H --> WRHFDM[water-resources-hydrology-flood-drought-management<br/>水资源 / 洪旱管理]
+    H --> BESR[biodiversity-ecosystem-services-resilience<br/>生物多样性 / 生态服务]
+    H --> WLFR[wildfire-landscape-fire-resilience<br/>野火 / 景观火灾韧性]
+    H --> FLPCCC[freight-logistics-port-cold-chain-continuity<br/>货运 / 港口 / 冷链]
     H --> SCC[supply-chain-continuity<br/>供应链连续性]
     H --> SBB[synthetic-biology-biosecurity<br/>合成生物学与生物安全]
     H --> SEH[space-extreme-habitation<br/>空间与极端栖居]
@@ -567,6 +573,12 @@ flowchart TD
 | [Telecommunications Network Resilience Continuity](domains/telecommunications-network-resilience-continuity/README.md) | 电信网络、应急通信、宽带、移动网络、冗余、备电和恢复时间 | 让警报、求助、支付、医疗、身份、家庭联系和公共服务不断线 | 不提供入侵、干扰、监听、伪基站、通信规避、网络破坏或敏感设施信息 |
 | [Macroeconomic Monetary Fiscal Stability](domains/macroeconomic-monetary-fiscal-stability/README.md) | 通胀、就业、利率、财政空间、公共债务、金融稳定和基本成本 | 让技术、服务和生活资源保持可负担、可预期、可持续 | 不提供投资、税务、贷款、交易、逃税、洗钱、市场操纵或个人财务建议 |
 | [Anti Corruption Public Integrity Accountability](domains/anti-corruption-public-integrity-accountability/README.md) | 反腐败、公共廉洁、透明、审计、利益冲突、采购廉洁和问责 | 防止公共资源被俘获，让预算、法律、医疗、救济和基础设施真实可用 | 不提供行贿、洗钱、隐藏资产、规避审计、举报策略、法律建议或政治攻击材料 |
+| [Agricultural Production Food System Resilience](domains/agricultural-production-food-system-resilience/README.md) | 农业生产、作物畜牧、灌溉、种子、肥料、劳动力和气候适应 | 让食物、饲料、农村收入和食品原料在源头持续产出 | 不提供种植养殖、农药兽药、投资、土地交易、农产品投机或监管规避建议 |
+| [Soil Health Land Degradation Drought Resilience](domains/soil-health-land-degradation-drought-resilience/README.md) | 土壤健康、土地退化、侵蚀、盐渍化、荒漠化和旱灾韧性 | 维护食物、水循环、生态缓冲和土地生产力这些长期自然资本 | 不提供农田操作、土地交易、碳信用、补贴申请、修复工程或合规建议 |
+| [Water Resources Hydrology Flood Drought Management](domains/water-resources-hydrology-flood-drought-management/README.md) | 水资源、水文观测、流域、地下水、水库、洪水、干旱和水安全 | 让饮水、农业、能源、住房、交通和医疗获得可调度水底座 | 不提供实时应急、工程调度、水权、取水许可、保险或农业投资建议 |
+| [Biodiversity Ecosystem Services Resilience](domains/biodiversity-ecosystem-services-resilience/README.md) | 生物多样性、生态系统服务、授粉、过滤、蓄水、降温和生态恢复 | 保留自然系统对食物、水、空气、热风险、病害调节和恢复环境的支撑 | 不提供物种处理、保护地执法、土地开发、生态补偿、碳交易或审批建议 |
+| [Wildfire Landscape Fire Resilience](domains/wildfire-landscape-fire-resilience/README.md) | 野火、火灾天气、景观燃料、WUI、烟雾、疏散和社区恢复 | 降低住房损失、烟雾暴露、医疗中断、通信断线和长期恢复负担 | 不提供实时火场行动、灭火战术、疏散路线、纵火、规避指挥或保险索赔建议 |
+| [Freight Logistics Port Cold Chain Continuity](domains/freight-logistics-port-cold-chain-continuity/README.md) | 货运、港口、仓储、冷链、运输节点和最后一公里物流 | 让药品、食物、设备、备件、救援物资和关键材料真实到达人 | 不提供走私、海关规避、制裁规避、非法运输、物流攻击、商业操作或投资建议 |
 | [Oral Health Continuity](domains/oral-health-continuity/README.md) | 牙齿、牙周、咀嚼、疼痛、感染、营养和沟通 | 口腔功能、疼痛、感染、营养和社会参与变量 | 不提供牙科诊断、治疗、药物、手术、器械或个体护理建议 |
 | [Measurement And Feedback](domains/measurement-feedback/README.md) | 状态测量、风险评分、生物标志物、可穿戴、反馈控制 | 指标分类、预测接口和模型反馈边界 | 不输出个体死亡日期、确定寿命预测或医学诊断 |
 
@@ -712,6 +724,12 @@ human_infra/
 │   ├── telecommunications-network-resilience-continuity/
 │   ├── macroeconomic-monetary-fiscal-stability/
 │   ├── anti-corruption-public-integrity-accountability/
+│   ├── agricultural-production-food-system-resilience/
+│   ├── soil-health-land-degradation-drought-resilience/
+│   ├── water-resources-hydrology-flood-drought-management/
+│   ├── biodiversity-ecosystem-services-resilience/
+│   ├── wildfire-landscape-fire-resilience/
+│   ├── freight-logistics-port-cold-chain-continuity/
 │   ├── mitochondrial-bioenergetics/
 │   ├── musculoskeletal-integrity/
 │   ├── neuro-continuity/

@@ -184,6 +184,12 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 通信网络可持续连接 | `telecommunications-network-resilience-continuity/` | 网络覆盖、冗余、备电、应急通信、恢复时间 | 警报、求助、支付、医疗、身份、家庭联系和公共服务失联 |
 | 宏观资源系统可稳定 | `macroeconomic-monetary-fiscal-stability/` | 通胀、就业、财政空间、公共债务、金融稳定、基本成本 | 技术和服务存在但不可负担，收入、预算、工作和未来选择权被压缩 |
 | 公共权力可被约束问责 | `anti-corruption-public-integrity-accountability/` | 透明、审计、利益冲突、采购廉洁、申诉、问责 | 预算、法律、医疗、救济和基础设施被私人利益俘获，名义服务失真 |
+| 食物必须先被生产出来 | `agricultural-production-food-system-resilience/` | 作物、畜牧、灌溉、种子、肥料、劳动力、气候适应 | 食物安全在源头断裂，价格、营养、收入和社会稳定被击穿 |
+| 土地和土壤必须维持功能 | `soil-health-land-degradation-drought-resilience/` | 土壤健康、土地退化、侵蚀、盐渍化、旱灾、土地恢复 | 生产、蓄水、过滤和生态缓冲下降，贫困、迁移和饥饿压力上升 |
+| 水资源必须可观测可调度 | `water-resources-hydrology-flood-drought-management/` | 水文、流域、地下水、水库、洪水、干旱、水安全 | 饮水、农业、能源、住房、交通和医疗被洪旱或断供同时击穿 |
+| 生态系统服务必须持续 | `biodiversity-ecosystem-services-resilience/` | 授粉、过滤、蓄水、降温、病害调节、生态恢复 | 自然服务退化使食物、水、空气、热风险和疾病风险同时恶化 |
+| 火灾景观风险必须可治理 | `wildfire-landscape-fire-resilience/` | 野火、火灾天气、景观燃料、WUI、烟雾、疏散、恢复 | 住房、空气、电力、通信、医疗和保险被复合火灾风险击穿 |
+| 关键物资必须能到达人 | `freight-logistics-port-cold-chain-continuity/` | 货运、港口、仓储、冷链、运输节点、最后一公里 | 药品、食物、设备、备件和救援物资存在但无法抵达主体 |
 | 高成本风险可分摊 | `insurance-risk-transfer/` | 覆盖率、保费、自付、理赔、拒赔、风险池、保障缺口 | 疾病、失业、工伤、残障、灾害或养老金风险由个体独自承担 |
 | 托育和家庭运行可持续 | `childcare-family-continuity/` | 托育可及、费用、质量、早期发展、父母工作连续性、家庭压力 | 儿童发展受损、照护者工作中断、时间贫困和家庭压力升级 |
 | 应急响应可接住主体 | `emergency-preparedness-response/` | 灾害准备、预警、应急通信、急救医疗、安置、公共卫生应急、恢复 | 低频高冲击事件一次性清零长期积累，通信、医疗、撤离或恢复失败 |
@@ -210,6 +216,7 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
   -> 认知与工具增强
   -> 风险函数压低
   -> 资源环境支撑
+  -> 初级生产、自然资本与物理物流底座可持续
   -> 外部技术底座可控
   -> 文明连续性、集体安全与宏观制度底座可维持
   -> 制度治理保护
@@ -375,6 +382,12 @@ risk-engineering
   -> telecommunications-network-resilience-continuity
   -> macroeconomic-monetary-fiscal-stability
   -> anti-corruption-public-integrity-accountability
+  -> agricultural-production-food-system-resilience
+  -> soil-health-land-degradation-drought-resilience
+  -> water-resources-hydrology-flood-drought-management
+  -> biodiversity-ecosystem-services-resilience
+  -> wildfire-landscape-fire-resilience
+  -> freight-logistics-port-cold-chain-continuity
   -> insurance-risk-transfer
   -> childcare-family-continuity
   -> emergency-preparedness-response

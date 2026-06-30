@@ -42,3 +42,4 @@ Current decisions:
 - `0027-add-twenty-third-wave-complex-care-navigation-transition-decision-domains.md`
 - `0028-add-twenty-fourth-wave-externalized-subject-continuity-domains.md`
 - `0029-add-twenty-fifth-wave-civilizational-continuity-collective-security-domains.md`
+- `0030-add-twenty-sixth-wave-primary-production-natural-systems-logistics-domains.md`

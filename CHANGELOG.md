@@ -28,6 +28,7 @@ All notable repository structure changes are recorded here.
 - Added twenty-third-wave complex care navigation, transition, and decision-continuity domain skeletons for rare disease diagnostic odyssey/care coordination, multimorbidity/polypharmacy care coordination, care transitions/discharge continuity, home health/hospice/palliative care continuity, medical interpreter/cultural mediation, and patient advocacy/shared decision-making.
 - Added twenty-fourth-wave externalized subject-continuity domain skeletons for life logging/personal archives continuity, digital legacy/data succession, wearables/continuous sensing personal informatics, personal knowledge management/cognitive offloading, brain-computer interface/neurotechnology governance, and robotics/embodied assistance care automation.
 - Added twenty-fifth-wave civilizational continuity, collective security, and macro-institutional domain skeletons for armed conflict civilian protection/IHL, peacebuilding/conflict prevention/social cohesion, continuity of government/public administration resilience, telecommunications network resilience/continuity, macroeconomic/monetary/fiscal stability, and anti-corruption/public integrity/accountability.
+- Added twenty-sixth-wave primary production, natural systems, and physical logistics domain skeletons for agricultural production, soil/land/drought resilience, water resources/hydrology/flood/drought management, biodiversity/ecosystem services, wildfire landscape fire resilience, and freight/logistics/port/cold-chain continuity.
 
 ## 2026-06-29
 

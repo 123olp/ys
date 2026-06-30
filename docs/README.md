@@ -45,6 +45,7 @@ docs/
 │   ├── 0027-add-twenty-third-wave-complex-care-navigation-transition-decision-domains.md
 │   ├── 0028-add-twenty-fourth-wave-externalized-subject-continuity-domains.md
 │   ├── 0029-add-twenty-fifth-wave-civilizational-continuity-collective-security-domains.md
+│   ├── 0030-add-twenty-sixth-wave-primary-production-natural-systems-logistics-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -198,4 +199,10 @@ docs/
 98. Read `../domains/telecommunications-network-resilience-continuity/README.md` if you are working on telecommunications networks, emergency communications, broadband resilience, backup power, or outage recovery.
 99. Read `../domains/macroeconomic-monetary-fiscal-stability/README.md` if you are working on inflation, employment, fiscal space, public debt, financial stability, or macro resource constraints.
 100. Read `../domains/anti-corruption-public-integrity-accountability/README.md` if you are working on anti-corruption, public integrity, transparency, audit, accountability, or public resource capture.
-101. Enter a domain under `../domains/`.
+101. Read `../domains/agricultural-production-food-system-resilience/README.md` if you are working on agricultural production, crop/livestock systems, irrigation, seeds, fertilizer, farm labor, or climate adaptation.
+102. Read `../domains/soil-health-land-degradation-drought-resilience/README.md` if you are working on soil health, land degradation, erosion, salinization, desertification, drought, or land restoration.
+103. Read `../domains/water-resources-hydrology-flood-drought-management/README.md` if you are working on water resources, hydrology, river basins, groundwater, reservoirs, floods, droughts, or water security.
+104. Read `../domains/biodiversity-ecosystem-services-resilience/README.md` if you are working on biodiversity, ecosystem services, pollination, filtration, cooling, habitat, or ecosystem restoration.
+105. Read `../domains/wildfire-landscape-fire-resilience/README.md` if you are working on wildfire, landscape fire risk, WUI, smoke exposure, evacuation interfaces, or community fire resilience.
+106. Read `../domains/freight-logistics-port-cold-chain-continuity/README.md` if you are working on freight logistics, ports, warehousing, cold chain, key material delivery, or last-mile continuity.
+107. Enter a domain under `../domains/`.
