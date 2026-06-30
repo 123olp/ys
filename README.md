@@ -1104,6 +1104,14 @@ flowchart TD
 | [Official Web Domain Brand Impersonation Continuity](domains/official-web-domain-brand-impersonation-continuity/README.md) | official domain、lookalike domain、brand impersonation、typosquatting 和 search trust | 防止服务入口被假官网、假客服、假申请入口和品牌冒充截断 | 不提供域名抢注、钓鱼页、SEO 操控、takedown 策略或真假个案判断 |
 | [Digital Evidence Preservation Chain Of Custody Continuity](domains/digital-evidence-preservation-chain-of-custody-continuity/README.md) | digital evidence、metadata、chain of custody、record retention 和 audit trail | 让纠纷、申诉、受害者服务和恢复过程中的数字记录不因保存失败而失效 | 不提供数字取证教程、设备镜像、密码绕过、数据恢复或证据策略 |
 | [Platform Content Moderation Notice Appeal Continuity](domains/platform-content-moderation-notice-appeal-continuity/README.md) | content moderation、notice、statement of reasons、appeal、human review 和 transparency report | 防止平台黑箱裁决切断表达、声誉、收入、关系和服务入口 | 不提供申诉代写、规避审核、刷量、恶意举报、封禁规避或舆论战术 |
+| [Copyright Authorship Registration Licensing Continuity](domains/copyright-authorship-registration-licensing-continuity/README.md) | 版权作者身份、登记、许可、转让、版权管理信息和 AI 辅助创作边界 | 让作品、知识资产、授权链、声誉和长期创造收益可追溯 | 不提供版权登记、许可选择、侵权判断、fair use、合同、takedown 或法律意见 |
+| [DMCA Notice Counter Notice Platform Removal Continuity](domains/dmca-notice-counter-notice-platform-removal-continuity/README.md) | DMCA notice/counter-notice、平台移除、恢复窗口、重复侵权政策和账号后果 | 防止版权程序把表达、收入、作品可达和账号入口变成黑箱断点 | 不提供 notice/counter-notice 代写、侵权判断、平台规避、DRM 绕过或法律建议 |
+| [Creative Commons Open Content License Continuity](domains/creative-commons-open-content-license-continuity/README.md) | CC 许可、公共领域工具、署名、相同方式共享、非商业和禁止演绎 | 让开放内容可复用、可教学、可传播、可组合 | 不提供许可选择、兼容性法律判断、版权清洗、署名伪造或许可剥离 |
+| [Open Source Software License Compliance Continuity](domains/open-source-software-license-compliance-continuity/README.md) | SPDX、OSI、开源许可证、notice、copyleft/permissive 和依赖授权记录 | 让代码工具、研究脚本、依赖和产品分发边界可审查 | 不提供许可证选择、合规审计、copyleft 规避、notice 删除或法律意见 |
+| [Trademark Brand Identity Rights Continuity](domains/trademark-brand-identity-rights-continuity/README.md) | 商标、品牌标识、来源识别、混淆风险、注册维护记录和品牌冒充 | 保护主体和组织被找到、被信任、被交易系统识别的入口 | 不提供商标申请、侵权判断、takedown、域名抢注、品牌冒充或法律建议 |
+| [Patent Invention Disclosure Maintenance Continuity](domains/patent-invention-disclosure-maintenance-continuity/README.md) | 专利、发明披露、公开、转让、维护费、prior art 和技术许可 | 让发明从实验室记录进入可公开、可转化、可维护的技术资产链 | 不提供专利申请、权利要求、FTO、侵权分析、许可谈判或专利规避 |
+| [Creator Royalty Rights Metadata Continuity](domains/creator-royalty-rights-metadata-continuity/README.md) | 版税、rights metadata、作品标识符、collective management、分账和平台收入记录 | 让创作成果持续回流为资源、声誉、职业稳定和再创作能力 | 不提供版税追回、合同解释、税务会计、刷量、虚假署名或收益劫持 |
+| [AI Training Data Rights Opt-Out Provenance Continuity](domains/ai-training-data-rights-opt-out-provenance-continuity/README.md) | AI 训练数据权利、dataset provenance、许可、opt-out signal、robots/noai 和内容凭据 | 审查作品和数据进入模型能力后的权利、来源、替代和资源回流影响 | 不提供数据抓取、训练数据规避、版权清洗、模型训练、授权谈判或法律意见 |
 | [Transportation Access Mobility](domains/transportation-access-mobility/README.md) | 公共交通、无障碍交通、出行时间、交通成本、医疗交通和交通安全 | 外部可达性、行动半径、服务连接和等待成本 | 不提供路线、驾驶、车辆、交通法律、撤离或出行操作建议 |
 | [Supply Chain Continuity](domains/supply-chain-continuity/README.md) | 药品、能源、食物、设备、通信、芯片、物流和替代路径 | 关键输入、依赖链、断供模式、替代路径和恢复时间 | 不提供囤积恐慌、黑市采购、制裁规避、非法获取或供应链攻击建议 |
 | [Synthetic Biology Biosecurity](domains/synthetic-biology-biosecurity/README.md) | 合成生物学、生物安全、生物安保、双重用途风险和治理边界 | 高风险研究边界、审查门槛、禁止用途和生物风险变量 | 不提供病原体工程、培养、传播、规避筛查、实验协议或湿实验步骤 |
@@ -1456,6 +1464,14 @@ human_infra/
 │   ├── official-web-domain-brand-impersonation-continuity/
 │   ├── digital-evidence-preservation-chain-of-custody-continuity/
 │   ├── platform-content-moderation-notice-appeal-continuity/
+│   ├── copyright-authorship-registration-licensing-continuity/
+│   ├── dmca-notice-counter-notice-platform-removal-continuity/
+│   ├── creative-commons-open-content-license-continuity/
+│   ├── open-source-software-license-compliance-continuity/
+│   ├── trademark-brand-identity-rights-continuity/
+│   ├── patent-invention-disclosure-maintenance-continuity/
+│   ├── creator-royalty-rights-metadata-continuity/
+│   ├── ai-training-data-rights-opt-out-provenance-continuity/
 │   ├── future-waiting/
 │   ├── fluid-electrolyte-acid-base-homeostasis/
 │   ├── governance-rights/
@@ -1778,5 +1794,6 @@ flowchart LR
 - 2026-07-01：新增第七十二波 8 个法院接入与民事程序执行连续性域，覆盖自行诉讼人自助、法院电子 filing、远程/混合 hearing、法院语言服务、法院残障便利、法院罚金费用支付能力、陪审传票 hardship 和小额民事纠纷恢复。
 - 2026-07-01：新增第七十三波 8 个个人数据权利、隐私暴露与数据经纪连续性域，覆盖数据经纪登记/退出/删除、隐私权访问更正删除、退出偏好信号与同意撤回、商业监控广告画像、敏感位置数据、生物特征模板治理、儿童青少年数据隐私和数据泄露通知身份恢复。
 - 2026-07-01：新增第七十四波 8 个数字内容可信、合成媒体与冒充风险连续性域，覆盖内容来源凭据、合成媒体水印披露、AI 冒充 deepfake fraud、电话 caller ID 认证、邮件域名认证、官网品牌冒充、数字证据保存链和平台内容审核通知申诉。
+- 2026-07-01：新增第七十五波 8 个知识产权、数字作品与 AI 训练数据权利连续性域，覆盖版权作者身份登记许可、DMCA 通知反通知、Creative Commons 开放内容、开源软件许可证、商标品牌身份、专利发明披露维护、创作者版税权利元数据和 AI 训练数据权利/退出/provenance。
 
 完整记录见 [CHANGELOG.md](CHANGELOG.md)。

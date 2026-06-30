@@ -88,6 +88,14 @@
 - `official-web-domain-brand-impersonation-continuity/`：官方网站域名与品牌冒充连续性，整理 official domain、lookalike domain、brand impersonation、typosquatting 和 search trust。
 - `digital-evidence-preservation-chain-of-custody-continuity/`：数字证据保存与链路连续性，整理 digital evidence、metadata preservation、record retention、chain of custody 和 audit trail。
 - `platform-content-moderation-notice-appeal-continuity/`：平台内容审核通知与申诉连续性，整理 content moderation、notice、statement of reasons、appeal、human review 和 transparency report。
+- `copyright-authorship-registration-licensing-continuity/`：版权作者身份、登记与许可连续性，整理 authorship、registration、licensing、assignment、CMI 和 AI-assisted authorship boundaries。
+- `dmca-notice-counter-notice-platform-removal-continuity/`：DMCA 通知反通知与平台移除连续性，整理 notice、counter-notice、designated agent、platform removal、restoration window 和 repeat infringer policy。
+- `creative-commons-open-content-license-continuity/`：Creative Commons 开放内容许可连续性，整理 CC licenses、public domain tools、attribution、share-alike、noncommercial 和 no-derivatives。
+- `open-source-software-license-compliance-continuity/`：开源软件许可证合规连续性，整理 SPDX、OSI、license notices、copyleft/permissive licenses 和 dependency license records。
+- `trademark-brand-identity-rights-continuity/`：商标品牌身份权利连续性，整理 trademark、source identity、brand confusion、registration records 和 impersonation risk。
+- `patent-invention-disclosure-maintenance-continuity/`：专利发明披露与维护连续性，整理 invention disclosure、patent publication、assignment、maintenance fees、prior art 和 technology access。
+- `creator-royalty-rights-metadata-continuity/`：创作者版税权利元数据连续性，整理 rights metadata、work identifiers、royalty records、collective management 和 creator revenue continuity。
+- `ai-training-data-rights-opt-out-provenance-continuity/`：AI 训练数据权利、退出与 provenance 连续性，整理 training data rights、dataset provenance、licenses、opt-out signals、robots/noai 和 content credentials。
 - `transportation-access-mobility/`：交通接入与日常移动，整理公共交通、无障碍交通、出行时间、医疗交通、交通成本和外部可达性。
 - `legal-identity-civil-registration/`：法律身份与民事登记，整理法律身份、出生登记、民事登记、生命统计、身份文件和服务资格。
 - `access-to-justice-legal-aid/`：司法可及与法律援助，整理民事法律需求、法律援助、程序负担、代理缺口和权利救济。

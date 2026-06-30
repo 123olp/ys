@@ -244,6 +244,23 @@ Human Infra 不能被设计成更精密的压榨系统。
 - 收集、推断、公开或关联真实内容、脸部、声音、电话、邮箱、域名所有者、私信、日志、证据材料、案件材料、未成年人、受害者、账号状态、平台处罚记录或通信记录等高风险敏感信息。
 - 把冒充受害、钓鱼受害、内容误判、平台误封、证据保存失败、官方入口混淆或通信认证失败归因于个人不谨慎、技术素养不足、表达方式错误或不愿阅读条款。
 
+## 知识产权、数字作品与 AI 训练数据权利连续性边界
+
+`copyright-authorship-registration-licensing-continuity`、`dmca-notice-counter-notice-platform-removal-continuity`、`creative-commons-open-content-license-continuity`、`open-source-software-license-compliance-continuity`、`trademark-brand-identity-rights-continuity`、`patent-invention-disclosure-maintenance-continuity`、`creator-royalty-rights-metadata-continuity` 和 `ai-training-data-rights-opt-out-provenance-continuity` 关注作品、代码、品牌、发明、版税和训练数据权利如何保持可归属、可传播、可复用、可回流和可审查，以及这些过程如何影响创造收益、声誉资产、知识传播、工具链和未来选择权，不是法律服务、维权代办、平台对抗、数据抓取或版权规避工具。
+
+可以做：
+
+- 整理 Copyright Office、WIPO、USPTO、Creative Commons、SPDX、OSI、C2PA 和平台公开政策的对象、来源信号、变量、边界和禁止用途。
+- 建模版权作者身份、DMCA 平台程序、开放内容许可、开源许可证、商标身份、专利披露维护、版税元数据和 AI 训练数据来源如何影响主体持续创造、资源回流、协作和未来选择权。
+- 区分权利记录、许可边界、平台执行、开放复用、品牌身份、技术扩散、收入回流、AI 数据使用和个案法律判断之间的边界。
+
+不能做：
+
+- 提供版权登记、商标申请、专利申请、许可选择、合同审查、侵权判断、fair use、FTO、版税追回、takedown/counter-notice 代写、平台申诉、授权谈判、诉讼、税务、会计、法律或个案策略建议。
+- 提供版权规避、DRM 绕过、移除版权管理信息、license laundering、copyleft 规避、notice 删除、品牌冒充、域名抢注、刷量、虚假署名、收益劫持、数据抓取、robots/paywall 绕过、训练数据规避、模型训练或版权清洗方法。
+- 收集未公开作品、代码、数据集、训练数据、发明披露、商业秘密、合同、平台账号、收入报表、税务资料、付款信息、争议证据、身份材料或法律通信。
+- 把创作者收入损失、权利归属混乱、平台移除、AI 替代、许可误用、品牌冒充、专利阻断、版税错配或训练数据争议归因于创作者个人不谨慎、技术素养不足、缺乏商业能力或不愿维权。
+
 ## 基础生计与风险分摊域边界
 
 `food-security-nutrition-access`、`water-sanitation-hygiene-continuity`、`energy-access-resilience`、`social-protection-benefits-delivery`、`insurance-risk-transfer` 和 `childcare-family-continuity` 关注食物、水卫生、能源、公共福利、保险风险池和托育家庭支持如何作为反稀缺基础设施支撑主体持续性，不是个体饮食、申请、理赔、设备、施工或家庭处置指南。

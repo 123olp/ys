@@ -170,6 +170,14 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 官方入口必须可辨认 | `official-web-domain-brand-impersonation-continuity/` | official domain、lookalike domain、typosquatting、search trust | 假官网、假客服和假申请入口把真实任务重定向到诈骗或错误服务 |
 | 数字证据必须可保存可说明 | `digital-evidence-preservation-chain-of-custody-continuity/` | metadata、record retention、chain of custody、audit trail | 纠纷、申诉和恢复过程因记录丢失、篡改、隐私外溢或上下文缺失而失败 |
 | 平台裁决必须可通知可申诉 | `platform-content-moderation-notice-appeal-continuity/` | notice、statement of reasons、appeal、human review、transparency report | 黑箱审核、误删、降权或账号限制切断表达、收入、声誉和服务入口 |
+| 作品权利必须可归属可许可 | `copyright-authorship-registration-licensing-continuity/` | authorship、registration、license、assignment、copyright management information | 作品作者身份和授权链失真时，知识资产、声誉和创造收益被不可逆稀释 |
+| 平台版权程序必须可说明可恢复 | `dmca-notice-counter-notice-platform-removal-continuity/` | DMCA notice、counter-notice、designated agent、removal、restoration window | 版权程序黑箱化会直接切断作品可达、收入、账号和表达连续性 |
+| 开放内容必须可复用可署名 | `creative-commons-open-content-license-continuity/` | Creative Commons、public domain tools、attribution、share-alike、NC、ND | 开放知识许可边界混乱时，学习、教学、翻译和再创作成本重新升高 |
+| 开源许可证必须可追溯 | `open-source-software-license-compliance-continuity/` | SPDX、OSI、license notices、copyleft、permissive license | 代码授权不可追溯时，工具分发、复现、商业化和长期维护都会中断 |
+| 品牌身份必须可识别 | `trademark-brand-identity-rights-continuity/` | trademark、source identity、brand confusion、registration record | 品牌和来源身份被混淆时，真实服务入口、交易信任和声誉资产被转移 |
+| 发明披露必须可公开可维护 | `patent-invention-disclosure-maintenance-continuity/` | invention disclosure、patent publication、assignment、maintenance fees、prior art | 发明记录断裂时，技术无法进入可转化、可许可、可扩散的未来窗口 |
+| 创作者收益必须可回流 | `creator-royalty-rights-metadata-continuity/` | rights metadata、work identifiers、royalty reports、collective management | 版税和权利元数据错配时，创作者资源复利、职业稳定和再创作能力下降 |
+| AI 训练数据权利必须可审查 | `ai-training-data-rights-opt-out-provenance-continuity/` | training data rights、dataset provenance、license、opt-out、content credentials | 作品和数据被模型吸收但来源不可审查时，创作资源和知识生态被重分配 |
 | 日常移动和服务接入可达 | `transportation-access-mobility/` | 公共交通、无障碍交通、出行时间、医疗交通、交通成本、交通安全 | 有资源但到不了，服务延误、缺席、孤立或撤离不可达 |
 | 法律身份可被承认 | `legal-identity-civil-registration/` | 法律身份、出生登记、民事登记、生命统计、身份文件、服务资格 | 无证、登记缺失、身份错误或制度不承认导致权利与服务断线 |
 | 权利救济可达 | `access-to-justice-legal-aid/` | 民事法律需求、法律援助、司法可及、程序负担、代理缺口、申诉执行 | 名义权利无法转化为住房、收入、安全、身份和服务恢复 |
@@ -741,6 +749,14 @@ risk-engineering
   -> official-web-domain-brand-impersonation-continuity
   -> digital-evidence-preservation-chain-of-custody-continuity
   -> platform-content-moderation-notice-appeal-continuity
+  -> copyright-authorship-registration-licensing-continuity
+  -> dmca-notice-counter-notice-platform-removal-continuity
+  -> creative-commons-open-content-license-continuity
+  -> open-source-software-license-compliance-continuity
+  -> trademark-brand-identity-rights-continuity
+  -> patent-invention-disclosure-maintenance-continuity
+  -> creator-royalty-rights-metadata-continuity
+  -> ai-training-data-rights-opt-out-provenance-continuity
   -> transportation-access-mobility
   -> legal-identity-civil-registration
   -> access-to-justice-legal-aid

@@ -94,6 +94,7 @@ docs/
 │   ├── 0076-add-seventy-second-wave-court-access-procedure-continuity-domains.md
 │   ├── 0077-add-seventy-third-wave-personal-data-privacy-continuity-domains.md
 │   ├── 0078-add-seventy-fourth-wave-digital-content-trust-continuity-domains.md
+│   ├── 0079-add-seventy-fifth-wave-intellectual-property-digital-rights-continuity-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -589,4 +590,12 @@ docs/
 407. Read `../domains/official-web-domain-brand-impersonation-continuity/README.md` if you are working on official domains, brand impersonation, lookalike domains, typosquatting, search-result trust, or fake service entrances.
 408. Read `../domains/digital-evidence-preservation-chain-of-custody-continuity/README.md` if you are working on digital evidence, screenshots, metadata, chain of custody, record retention, audit trails, or evidence-handling boundaries.
 409. Read `../domains/platform-content-moderation-notice-appeal-continuity/README.md` if you are working on content moderation, notices, statements of reasons, appeals, human review, account restrictions, or transparency reports.
-410. Enter a domain under `../domains/`.
+410. Read `../domains/copyright-authorship-registration-licensing-continuity/README.md` if you are working on copyright authorship, registration, licensing, assignments, copyright management information, or AI-assisted authorship boundaries.
+411. Read `../domains/dmca-notice-counter-notice-platform-removal-continuity/README.md` if you are working on DMCA notices, counter-notices, designated agents, platform removals, restoration windows, repeat-infringer policies, or copyright strikes.
+412. Read `../domains/creative-commons-open-content-license-continuity/README.md` if you are working on Creative Commons licenses, public-domain tools, attribution, share-alike, noncommercial, no-derivatives, or open content reuse.
+413. Read `../domains/open-source-software-license-compliance-continuity/README.md` if you are working on SPDX, OSI-approved licenses, open-source license notices, copyleft/permissive licenses, dependency license records, or software distribution boundaries.
+414. Read `../domains/trademark-brand-identity-rights-continuity/README.md` if you are working on trademarks, brand identifiers, source identity, confusion risk, registration records, or brand impersonation.
+415. Read `../domains/patent-invention-disclosure-maintenance-continuity/README.md` if you are working on patents, invention disclosure, publication, assignment, maintenance fees, prior art records, or technology access.
+416. Read `../domains/creator-royalty-rights-metadata-continuity/README.md` if you are working on creator royalties, rights metadata, work identifiers, collective management, usage reports, platform revenue, or attribution-linked income.
+417. Read `../domains/ai-training-data-rights-opt-out-provenance-continuity/README.md` if you are working on AI training data rights, dataset provenance, opt-out signals, robots/noai markers, content credentials, or model data-use disclosure.
+418. Enter a domain under `../domains/`.

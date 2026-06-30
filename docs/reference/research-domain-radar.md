@@ -141,6 +141,14 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `official-web-domain-brand-impersonation-continuity/` | 官方域名与品牌冒充治理决定主体能否避开假官网、假客服、假申请入口和搜索信任劫持 |
 | `digital-evidence-preservation-chain-of-custody-continuity/` | 数字证据保存链决定截图、日志、元数据和记录能否在纠纷、申诉和恢复中保持可说明 |
 | `platform-content-moderation-notice-appeal-continuity/` | 平台内容审核通知申诉决定账号、表达、收入、声誉和服务入口是否会被黑箱裁决切断 |
+| `copyright-authorship-registration-licensing-continuity/` | 版权作者身份登记许可决定作品、知识资产、授权链、声誉和创造收益是否能持续归属 |
+| `dmca-notice-counter-notice-platform-removal-continuity/` | DMCA 通知反通知和平台移除恢复决定版权争议是否会切断表达、收入、账号和作品可达 |
+| `creative-commons-open-content-license-continuity/` | Creative Commons 开放内容许可决定公共知识、教育材料和创作资源是否能低摩擦复用 |
+| `open-source-software-license-compliance-continuity/` | 开源软件许可证合规决定代码依赖、研究脚本和产品工具是否能持续分发、复现和维护 |
+| `trademark-brand-identity-rights-continuity/` | 商标品牌身份决定主体和组织是否能被真实识别、被信任、被找到并避免入口被冒充 |
+| `patent-invention-disclosure-maintenance-continuity/` | 专利发明披露维护决定发明能否从实验记录进入公开、转化、许可和未来技术可及窗口 |
+| `creator-royalty-rights-metadata-continuity/` | 创作者版税权利元数据决定作品使用能否回流为收入、声誉、职业稳定和再创作能力 |
+| `ai-training-data-rights-opt-out-provenance-continuity/` | AI 训练数据权利和 provenance 决定作品与数据进入模型能力后是否仍可审查、退出和治理 |
 | `transportation-access-mobility/` | 外部交通可达性决定医疗、工作、食物、社区、照护和应急资源能否实际到达 |
 | `legal-identity-civil-registration/` | 法律身份、出生登记、民事登记和身份文件决定主体能否被制度承认为权利与服务对象 |
 | `emergency-preparedness-response/` | 灾害准备、预警、通信、急救医疗、安置和恢复决定尾部风险能否被响应而不是一次性清零 |
