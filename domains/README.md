@@ -305,6 +305,14 @@
 - `messaging-contact-graph-portability-continuity/`：消息与联系人图谱可携带连续性，整理消息账号、联系人、群组、聊天历史、备份导出和互操作。
 - `domain-dns-web-presence-continuity/`：域名、DNS 与 Web 存在连续性，整理域名、DNS、注册商、续费、证书、托管、邮箱域和 Web 可达性。
 - `platform-account-suspension-appeals-continuity/`：平台账号停权与申诉连续性，整理账号停权、内容移除、申诉、透明度、收入冻结和数据退出。
+- `personal-computing-device-lifecycle-repair-continuity/`：个人计算设备生命周期与维修连续性，整理手机、电脑、平板、外设、维修、替换、支持窗口、数据迁移和报废。
+- `home-network-router-iot-security-continuity/`：家庭网络、路由器与 IoT 安全连续性，整理路由器、Wi-Fi、宽带网关、智能设备、固件更新、默认凭证和设备标签。
+- `software-supply-chain-dependency-provenance-continuity/`：软件供应链、依赖与来源证明连续性，整理依赖、包管理器、构建、SBOM、签名、来源证明和制品仓库。
+- `software-update-vulnerability-patch-continuity/`：软件更新、漏洞与补丁连续性，整理漏洞披露、补丁部署、回滚、支持终止、CVE 和已知被利用漏洞。
+- `open-source-maintainer-sustainability-continuity/`：开源维护者可持续性连续性，整理维护者时间、资金、安全响应、治理、交接、项目健康和依赖关键性。
+- `pki-certificate-cryptographic-trust-continuity/`：PKI、证书与密码信任连续性，整理 TLS 证书、CA、密钥管理、吊销、根信任、证书透明度和算法迁移。
+- `cloud-service-exit-interoperability-continuity/`：云服务退出与互操作连续性，整理 SaaS、云服务、数据导出、迁移、互操作、合同退出和供应商锁定。
+- `api-platform-dependency-runtime-continuity/`：API、平台依赖与运行时连续性，整理第三方 API、SDK、限流、计费、版本废弃、SLA、降级和替代路径。
 - `supply-chain-continuity/`：供应链连续性，整理关键物资、服务、物流、替代路径和恢复时间。
 - `synthetic-biology-biosecurity/`：合成生物学与生物安全，整理双重用途、生物安全、生物安保和治理边界。
 - `space-extreme-habitation/`：空间与极端栖居，整理辐射、微重力、隔离、闭环资源和远程医疗风险。

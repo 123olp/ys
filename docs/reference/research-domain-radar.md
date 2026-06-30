@@ -324,6 +324,14 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `messaging-contact-graph-portability-continuity/` | 消息联系人图谱决定协作、照护、求助、职业网络和社会支持是否会因平台断裂而丢失 |
 | `domain-dns-web-presence-continuity/` | 域名、DNS、证书和托管决定作品、组织、社区、邮箱域和公共链接是否长期可达 |
 | `platform-account-suspension-appeals-continuity/` | 平台账号停权与申诉决定创作、商业、学习、社交和社区参与是否存在可恢复退出路径 |
+| `personal-computing-device-lifecycle-repair-continuity/` | 个人计算设备生命周期决定本地计算、认证、资料访问和任务执行入口是否可修可迁移 |
+| `home-network-router-iot-security-continuity/` | 家庭网络、路由器和 IoT 安全决定居家远程医疗、学习、工作、监测和验证是否可信可用 |
+| `software-supply-chain-dependency-provenance-continuity/` | 软件供应链来源证明决定依赖、构建和制品是否可审查，防止工具底座被污染 |
+| `software-update-vulnerability-patch-continuity/` | 软件更新与补丁连续性决定漏洞暴露窗口、错误更新回滚和长期支持终止风险 |
+| `open-source-maintainer-sustainability-continuity/` | 开源维护者可持续性决定关键依赖是否持续获得修复、审计、发布和治理 |
+| `pki-certificate-cryptographic-trust-continuity/` | PKI、证书和密钥信任链决定 Web、API、软件更新和身份验证是否持续可信 |
+| `cloud-service-exit-interoperability-continuity/` | 云服务退出与互操作决定资料、身份、工作流和审计证据是否可迁移可恢复 |
+| `api-platform-dependency-runtime-continuity/` | API 与平台运行时依赖决定第三方能力中断、限流、废弃或政策变化时任务是否可降级 |
 
 ## 来源信号
 
@@ -381,6 +389,12 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | Data Transfer Initiative / Digital Markets Act interoperability materials | 提示联系人图谱、消息历史、平台互操作和数据迁移会决定社会关系是否被平台锁定 |
 | ICANN / IANA / CISA DNS security resources | 提示域名、DNS、证书和托管是作品、项目、组织、邮箱域和公共链接的可达性底座 |
 | EU Digital Services Act / FTC platform consumer protection / OECD platform governance | 提示平台停权、内容移除、申诉、透明度、收入冻结和数据退出会影响主体行动边界 |
+| NIST SSDF / CISA Secure by Design / OpenSSF SLSA and Scorecard | 提示软件依赖、构建、SBOM、签名、来源证明和开源项目健康是数字工具可信运行的前置条件 |
+| CISA KEV / NIST NVD / vendor security lifecycle documentation | 提示漏洞披露、补丁部署、回滚、支持终止和已知被利用漏洞会决定主体数字环境暴露窗口 |
+| FTC right-to-repair materials / NIST endpoint and media guidance / EPA electronics resources | 提示个人设备可维修、可迁移、可替换和可安全报废决定本地数字行动入口是否连续 |
+| NIST consumer IoT baseline / FCC Cyber Trust Mark / CISA home device guidance | 提示家庭路由器、IoT、固件更新、默认凭证和设备标签决定居家网络是否可信可恢复 |
+| CA/Browser Forum / NIST key management / IETF TLS and PKIX standards | 提示证书、密钥、根信任、吊销和算法迁移是 Web、API、更新和身份验证可达性的信任底座 |
+| EU Data Act / Data Transfer Initiative / cloud portability and API deprecation materials | 提示云服务退出、互操作、API 依赖、限流、版本废弃和降级路径会决定长期工具选择权 |
 | WHO Antimicrobial Resistance | 提示耐药性会侵蚀现代医学和长期感染控制底座 |
 | WHO Vision and Hearing resources | 提示感官系统是主体感知、沟通和行动连续性的基础 |
 | CDC Sleep / NHLBI Sleep resources | 提示睡眠不足和节律失调会影响认知、慢病、心理和恢复能力 |

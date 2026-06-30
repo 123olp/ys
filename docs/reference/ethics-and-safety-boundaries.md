@@ -900,6 +900,24 @@ Human Infra 不能被设计成更精密的压榨系统。
 - 不收集、复制、处理或要求邮箱、手机号、验证码、密码、恢复码、passkey、私钥、保险库导出、云文件、聊天内容、联系人、账号 ID、域名控制台、API token、证书私钥、平台后台截图、收入数据或安全事件细节。
 - 不替代邮箱服务商、运营商、身份验证服务商、密码管理器、云服务商、消息平台、注册商、DNS/CA/托管商、平台支持、组织 IT、安全团队、律师、执法、监管机构或官方申诉渠道。
 
+## 软件、设备与信任连续性边界
+
+`personal-computing-device-lifecycle-repair-continuity`、`home-network-router-iot-security-continuity`、`software-supply-chain-dependency-provenance-continuity`、`software-update-vulnerability-patch-continuity`、`open-source-maintainer-sustainability-continuity`、`pki-certificate-cryptographic-trust-continuity`、`cloud-service-exit-interoperability-continuity` 和 `api-platform-dependency-runtime-continuity` 关注个人设备、家庭网络、软件供应链、补丁、开源维护、证书信任、云退出和 API 平台依赖如何影响主体数字行动连续性，不是网络入侵、漏洞利用、供应链攻击、云规避或证书滥用入口。
+
+可以做：
+
+- 整理 NIST、CISA、OpenSSF、FTC、FCC、CA/Browser Forum、IETF、EU Data Act、Data Transfer Initiative 和主要平台公开资料中的机制、对象、变量和边界。
+- 比较设备可修、家庭网络安全、依赖来源证明、漏洞补丁、开源维护者容量、证书生命周期、云退出能力和 API 降级路径如何影响任务连续性。
+- 记录设备、网络、依赖、漏洞、证书、云服务、API 和开源项目资料中的隐私、安全和禁止用途边界。
+
+不能做：
+
+- 不提供绕过设备锁、破解加密、规避 MDM、网络入侵、Wi-Fi 破解、IoT 漏洞利用、供应链攻击、恶意包投递、依赖混淆、构建系统入侵、漏洞利用、补丁绕过、恶意更新、伪造证书、TLS 绕过、流量截获、CA 滥用、云入侵、绕过 API 限制、规避计费、账号规避或安全事件处置建议。
+- 不判断某个设备、网络、依赖、漏洞、补丁、证书、云服务、API、开源项目或供应商合同应如何处理。
+- 不生成攻击步骤、漏洞利用、恶意包、取证报告、补丁规避方案、证书配置步骤、云迁移私有数据操作、API 抓取脚本、申诉材料、法律文件或个案策略。
+- 不收集、复制、处理或要求序列号、设备指纹、Wi-Fi 密码、MAC/IP、路由日志、私有 SBOM、token、构建日志、漏洞扫描结果、私钥、证书请求、云账号、API key、账单、合同、私有数据或安全事件细节。
+- 不替代设备厂商、维修商、ISP、路由器/IoT 厂商、云服务商、API 平台、CA、开源项目、组织 IT、安全团队、法律、采购、合规、监管机构或应急响应渠道。
+
 ## 数据与证据边界
 
 - 原始数据、清洗数据和人工判断必须分层保存。

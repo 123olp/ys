@@ -68,6 +68,7 @@ docs/
 │   ├── 0050-add-forty-sixth-wave-school-service-continuity-domains.md
 │   ├── 0051-add-forty-seventh-wave-postsecondary-student-continuity-domains.md
 │   ├── 0052-add-forty-eighth-wave-digital-account-continuity-domains.md
+│   ├── 0053-add-forty-ninth-wave-software-device-trust-continuity-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -370,4 +371,12 @@ docs/
 247. Read `../domains/messaging-contact-graph-portability-continuity/README.md` if you are working on messaging accounts, contacts, groups, chat history, backup/export, interoperability, or social graph continuity.
 248. Read `../domains/domain-dns-web-presence-continuity/README.md` if you are working on domain names, DNS, registrar accounts, TLS certificates, hosting, custom email domains, or web presence continuity.
 249. Read `../domains/platform-account-suspension-appeals-continuity/README.md` if you are working on platform account suspension, content removal, moderation appeals, transparency, creator/merchant accounts, or platform exit continuity.
-250. Enter a domain under `../domains/`.
+250. Read `../domains/personal-computing-device-lifecycle-repair-continuity/README.md` if you are working on personal computing devices, repairability, device replacement, support windows, data migration, device lock-in, or repair continuity.
+251. Read `../domains/home-network-router-iot-security-continuity/README.md` if you are working on home routers, Wi-Fi, broadband gateways, IoT security, firmware updates, default credentials, or home-network continuity.
+252. Read `../domains/software-supply-chain-dependency-provenance-continuity/README.md` if you are working on software dependencies, SBOM, package managers, build provenance, artifact signing, or software supply-chain continuity.
+253. Read `../domains/software-update-vulnerability-patch-continuity/README.md` if you are working on vulnerability disclosure, patch deployment, rollback, known exploited vulnerabilities, support windows, or software-update continuity.
+254. Read `../domains/open-source-maintainer-sustainability-continuity/README.md` if you are working on maintainer capacity, open-source funding, bus factor, project health, security response, or open-source sustainability continuity.
+255. Read `../domains/pki-certificate-cryptographic-trust-continuity/README.md` if you are working on PKI, TLS certificates, certificate authorities, key management, revocation, root trust, certificate transparency, or cryptographic trust continuity.
+256. Read `../domains/cloud-service-exit-interoperability-continuity/README.md` if you are working on SaaS/cloud export, data migration, interoperability, vendor lock-in, service exit, or cloud-switching continuity.
+257. Read `../domains/api-platform-dependency-runtime-continuity/README.md` if you are working on third-party APIs, SDKs, rate limits, deprecation, SLA, runtime fallback, platform dependency, or API continuity.
+258. Enter a domain under `../domains/`.

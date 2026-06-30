@@ -175,6 +175,14 @@ human_infra/
     ├── messaging-contact-graph-portability-continuity/ # 消息与联系人图谱可携带连续性
     ├── domain-dns-web-presence-continuity/ # 域名、DNS 与 Web 存在连续性
     ├── platform-account-suspension-appeals-continuity/ # 平台账号停权与申诉连续性
+    ├── personal-computing-device-lifecycle-repair-continuity/ # 个人计算设备生命周期与维修连续性
+    ├── home-network-router-iot-security-continuity/ # 家庭网络、路由器与 IoT 安全连续性
+    ├── software-supply-chain-dependency-provenance-continuity/ # 软件供应链、依赖与来源证明连续性
+    ├── software-update-vulnerability-patch-continuity/ # 软件更新、漏洞与补丁连续性
+    ├── open-source-maintainer-sustainability-continuity/ # 开源维护者可持续性连续性
+    ├── pki-certificate-cryptographic-trust-continuity/ # PKI、证书与密码信任连续性
+    ├── cloud-service-exit-interoperability-continuity/ # 云服务退出与互操作连续性
+    ├── api-platform-dependency-runtime-continuity/ # API、平台依赖与运行时连续性
     ├── cognitive-augmentation/ # 认知增强与工具放大
     ├── digital-identity-security/ # 数字身份安全
     ├── disembodied-cns/   # 去具身外部维持型中枢生命系统
@@ -567,6 +575,7 @@ human_infra/
 - `domains/school-enrollment-attendance-continuity/`、`domains/special-education-iep-504-accommodation-continuity/`、`domains/school-meals-nutrition-access-continuity/`、`domains/school-health-services-chronic-condition-continuity/`、`domains/school-transportation-safe-routes-continuity/`、`domains/school-discipline-exclusion-restraint-continuity/`、`domains/school-mental-health-counseling-support-continuity/` 和 `domains/school-climate-bullying-violence-prevention-continuity/` 负责入学出勤、特殊教育 IEP/504、校餐营养、学校健康服务、通学安全、纪律排除约束、学校心理健康、学校气候欺凌暴力预防这些学校服务连续性条件。
 - `domains/postsecondary-admissions-transfer-articulation-continuity/`、`domains/student-financial-aid-grant-scholarship-continuity/`、`domains/academic-advising-degree-progress-continuity/`、`domains/campus-basic-needs-student-support-continuity/`、`domains/campus-disability-accommodations-accessibility-continuity/`、`domains/campus-mental-health-crisis-student-support-continuity/`、`domains/campus-safety-title-ix-clery-continuity/` 和 `domains/international-student-sevis-status-continuity/` 负责高等教育入学转学衔接、学生资助奖助学金、学业指导学位进度、校园基本需求、校园残障便利、校园心理危机支持、校园安全 Title IX/Clery 和国际学生 SEVIS 身份连续性这些高等教育学生生命周期条件。
 - `domains/email-account-recovery-continuity/`、`domains/phone-number-sim-portability-account-security-continuity/`、`domains/mfa-passkey-credential-recovery-continuity/`、`domains/password-manager-secret-vault-continuity/`、`domains/cloud-backup-file-sync-data-portability-continuity/`、`domains/messaging-contact-graph-portability-continuity/`、`domains/domain-dns-web-presence-continuity/` 和 `domains/platform-account-suspension-appeals-continuity/` 负责邮箱账号恢复、手机号 SIM 携转安全、MFA/passkey 凭证恢复、密码管理器密钥库、云备份文件同步数据可携带、消息联系人图谱可携带、域名 DNS Web 存在和平台账号停权申诉这些数字账户与通信可达连续性条件。
+- `domains/personal-computing-device-lifecycle-repair-continuity/`、`domains/home-network-router-iot-security-continuity/`、`domains/software-supply-chain-dependency-provenance-continuity/`、`domains/software-update-vulnerability-patch-continuity/`、`domains/open-source-maintainer-sustainability-continuity/`、`domains/pki-certificate-cryptographic-trust-continuity/`、`domains/cloud-service-exit-interoperability-continuity/` 和 `domains/api-platform-dependency-runtime-continuity/` 负责个人计算设备生命周期维修、家庭网络路由器 IoT 安全、软件供应链来源证明、软件更新补丁、开源维护者可持续、PKI 证书密码信任、云服务退出互操作和 API 平台运行时依赖这些软件、设备与信任连续性条件。
 - `domains/disembodied-cns/` 负责去具身外部维持型中枢生命系统的高层架构建模，不提供实验操作协议。
 - `domains/memory-editing/` 负责记忆编辑的概念、证据、验证和伦理边界，不提供可执行神经操控步骤。
 - `domains/biostasis-cryopreservation/` 负责冷冻保存、生物停滞、休眠和等待未来修复路径。
@@ -619,6 +628,7 @@ human_infra/
 - 2026-06-30：新增第四十六波 8 个学校服务连续性域，覆盖入学出勤、特殊教育 IEP/504、校餐营养、学校健康服务、通学安全、纪律排除约束、学校心理健康和学校气候欺凌暴力预防。
 - 2026-06-30：新增第四十七波 8 个高等教育学生生命周期连续性域，覆盖入学转学衔接、学生资助奖助学金、学业指导学位进度、校园基本需求、校园残障便利、校园心理危机支持、校园安全 Title IX/Clery 和国际学生 SEVIS 身份。
 - 2026-06-30：新增第四十八波 8 个数字账户与通信可达连续性域，覆盖邮箱账号恢复、手机号 SIM 携转安全、MFA/passkey 凭证恢复、密码管理器密钥库、云备份文件同步数据可携带、消息联系人图谱可携带、域名 DNS Web 存在和平台账号停权申诉。
+- 2026-06-30：新增第四十九波 8 个软件、设备与信任连续性域，覆盖个人计算设备生命周期维修、家庭网络路由器 IoT 安全、软件供应链依赖来源证明、软件更新漏洞补丁、开源维护者可持续、PKI 证书密码信任、云服务退出互操作和 API 平台运行时依赖。
 - 2026-06-20：从 Biocat 单项目重组为 Human Infra 总项目；旧 Biocat 迁入 `domains/longevity-evidence/`；新增 `disembodied-cns` 与 `memory-editing` 子域；四份最新资料归档到 `docs/source-notes/`；按 Docs-as-Code 和 Diataxis 补齐根文件、协作模板、文档分层和结构检查脚本。
 - 2026-06-22：新增 `domains/future-waiting/` 和度规红移固有时差分路径（黑洞等待室），用于承载“压缩等待 / 去未来”类永生路径思想实验。
 - 2026-06-23：新增 GitHub Actions `make check` 门禁和 `.github/AGENTS.md`，准备远程仓库协作入口。

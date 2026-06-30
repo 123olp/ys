@@ -238,6 +238,14 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 联系人图谱必须可迁移 | `messaging-contact-graph-portability-continuity/` | 消息账号、联系人、群组、聊天历史、备份导出、互操作 | 账号停权、设备丢失或平台锁定会切断协作、照护、求助和社会支持网络 |
 | 公共数字地址必须长期可达 | `domain-dns-web-presence-continuity/` | 域名、DNS、注册商、续费、证书、托管、邮箱域、Web 可达性 | 域名过期、DNS 劫持、证书失效或托管中断会让作品、社区和邮件入口消失 |
 | 平台准入必须可申诉可退出 | `platform-account-suspension-appeals-continuity/` | 账号停权、内容移除、申诉、透明度、收入冻结、数据退出 | 错误停权和申诉失败会切断创作、商业、学习、社交和社区参与 |
+| 个人计算设备必须可修可迁移 | `personal-computing-device-lifecycle-repair-continuity/` | 手机、电脑、平板、外设、维修、替换、支持窗口、数据迁移、报废 | 设备故障、锁定或不可迁移会把账号、资料、工作流和恢复通道同时切断 |
+| 家庭网络必须可信可恢复 | `home-network-router-iot-security-continuity/` | 路由器、Wi-Fi、宽带网关、IoT、固件更新、默认凭证、设备标签 | 家庭网络失控或断连会中断远程医疗、学习、工作、监测和身份验证 |
+| 软件制品来源必须可审查 | `software-supply-chain-dependency-provenance-continuity/` | 依赖、包管理器、构建、SBOM、签名、来源证明、制品仓库 | 供应链污染会让主体依赖的软件工具和服务从基础设施变成风险源 |
+| 漏洞暴露窗口必须可缩短 | `software-update-vulnerability-patch-continuity/` | 更新、漏洞披露、补丁部署、回滚、支持终止、KEV | 未修补软件或错误更新会造成勒索、账号接管、数据损坏和服务中断 |
+| 开源维护必须可持续 | `open-source-maintainer-sustainability-continuity/` | 维护者时间、资金、安全响应、治理、交接、项目健康、关键依赖 | 维护者枯竭和项目废弃会让关键依赖停止修复、审计和发布 |
+| 证书与密钥信任链必须连续 | `pki-certificate-cryptographic-trust-continuity/` | PKI、TLS 证书、CA、密钥管理、吊销、根信任、证书透明度、算法迁移 | 证书过期、密钥泄露或根信任失效会让 Web、API、更新和身份验证不可达或不可信 |
+| 云服务必须可退出可互操作 | `cloud-service-exit-interoperability-continuity/` | SaaS、云服务、数据导出、迁移、互操作、合同退出、供应商锁定 | 云锁定、停服、涨价或封禁会把资料、身份和工作流变成许可条件 |
+| API 运行时依赖必须有降级路径 | `api-platform-dependency-runtime-continuity/` | 第三方 API、SDK、SLA、限流、计费、版本废弃、降级、替代路径 | API 中断、废弃或政策变化会直接让主体和组织工具链任务失败 |
 | 栖居空间可保护生命 | `building-fire-life-safety-codes/` | 建筑规范、消防规范、疏散、烟雾报警、无障碍、结构韧性 | 居住、照护、学习、工作和公共空间成为火灾、烟雾、结构和疏散风险源 |
 | 关键物质系统可制造修复 | `manufacturing-repair-capacity/` | 制造、维修、维护、备件、质量、本地生产、关键设备恢复 | 设备损坏、备件短缺、质量缺陷和生产能力不足导致服务与工具系统失效 |
 | 公共预算可转化为服务 | `public-procurement-contracting-capacity/` | 公共采购、合同、供应商管理、应急采购、透明度、交付验收 | 有预算和政策但采购失败、合同失效、腐败、延误或劣质交付 |
@@ -569,6 +577,14 @@ risk-engineering
   -> messaging-contact-graph-portability-continuity
   -> domain-dns-web-presence-continuity
   -> platform-account-suspension-appeals-continuity
+  -> personal-computing-device-lifecycle-repair-continuity
+  -> home-network-router-iot-security-continuity
+  -> software-supply-chain-dependency-provenance-continuity
+  -> software-update-vulnerability-patch-continuity
+  -> open-source-maintainer-sustainability-continuity
+  -> pki-certificate-cryptographic-trust-continuity
+  -> cloud-service-exit-interoperability-continuity
+  -> api-platform-dependency-runtime-continuity
   -> community-resource-navigation
   -> social-determinants-community-vulnerability
   -> public-service-design-accessibility
