@@ -195,6 +195,7 @@ flowchart LR
 | 媒体信息素养与公共图书馆 | UNESCO Media and Information Literacy、IMLS Public Libraries Survey、ALA Libraries Transform、Digital.gov | 人是否具备寻找、判断、验证和使用信息的能力，并能通过公共图书馆获得可信知识入口和数字支持 |
 | 公民数据与开放政府透明 | Data.gov、Resources.data.gov、FOIA.gov、Open.USA.gov、Federal Data Strategy | 公共系统是否可被观察、审查、复用和反馈，从而支撑问责、服务改进和公共参与 |
 | 日常环境与工具可靠性 | WHO Air Pollution、EPA IAQ、WHO Food Safety、NIOSH Hierarchy of Controls、FDA Medical Devices、CDC Disinfection and Sterilization、U.S. Access Board ADA | 空气、食品、工作暴露、医疗设备、感染控制和物理空间是否把日常生活与照护环境变成可持续行动条件 |
+| 临床可靠性与急性安全窗口 | CMS CLIA、FDA FAERS、FDA Pharmaceutical Quality、NHTSA EMS、WHO Surgical Safety Checklist、WHO Road Traffic Injuries | 临床检测、真实世界药品安全、药品质量、院前急救、围手术期安全和道路安全是否把可修复风险转化为持续行动机会 |
 | 气候与社区韧性底座 | IPCC AR6、WMO Early Warnings for All、NOAA/NCEI、CMRA、CDC Climate and Health | 极端天气、热、洪水、火灾、空气和基础设施中断是否被预警、适应和恢复 |
 | 家庭应急准备与个人韧性 | Red Cross preparedness、Red Cross survival kit、Red Cross make a plan、CDC Prepare Your Health、NOAA Weather-Ready Nation | 灾害前，人是否有家庭计划、物资包、健康准备、风险认知、备用通信和特殊需求安排 |
 | 公共预警与应急通信 | FEMA IPAWS、FCC WEA/EAS、NOAA Weather Radio、Ready.gov、911.gov、FirstNet | 危机信息能否及时到达、求助能否接通、响应者能否持续通信 |
@@ -315,6 +316,12 @@ flowchart TD
     H --> MDESM[medical-device-equipment-safety-maintenance<br/>医疗器械 / 设备安全维护]
     H --> SDIC[sterilization-disinfection-infection-control<br/>灭菌消毒 / 感染控制]
     H --> BEAUD[built-environment-accessibility-universal-design<br/>建成环境无障碍 / 通用设计]
+    H --> CLDQ[clinical-laboratory-diagnostic-quality<br/>临床检验 / 诊断质量]
+    H --> PDSM[pharmacovigilance-drug-safety-monitoring<br/>药物警戒 / 药品安全监测]
+    H --> PQSI[pharmaceutical-quality-supply-integrity<br/>药品质量 / 供应完整性]
+    H --> EMSPC[emergency-medical-services-prehospital-care<br/>急救医疗 / 院前照护]
+    H --> SAPS[surgical-anesthesia-perioperative-safety<br/>手术麻醉 / 围手术期安全]
+    H --> RTIPSM[road-traffic-injury-prevention-safe-mobility<br/>道路交通伤害预防 / 安全移动]
     H --> SCC[supply-chain-continuity<br/>供应链连续性]
     H --> SBB[synthetic-biology-biosecurity<br/>合成生物学与生物安全]
     H --> SEH[space-extreme-habitation<br/>空间与极端栖居]
@@ -488,6 +495,12 @@ flowchart TD
 | [Medical Device Equipment Safety Maintenance](domains/medical-device-equipment-safety-maintenance/README.md) | 医疗设备生命周期、不良事件、UDI、召回、维护、网络安全和可用性 | 让诊断、治疗、监测、生命支持和康复工具具备可靠运行与纠错能力 | 不提供设备使用、维修、改装、采购、报警处理、临床操作、漏洞利用或医疗建议 |
 | [Sterilization Disinfection Infection Control](domains/sterilization-disinfection-infection-control/README.md) | 清洁、消毒、灭菌、再处理、环境感染控制和 HAI 预防 | 防止医疗、照护和公共空间把服务过程变成感染入口 | 不提供消毒配方、灭菌参数、器械再处理、隔离决策、暴发处置或规避感染控制建议 |
 | [Built Environment Accessibility Universal Design](domains/built-environment-accessibility-universal-design/README.md) | 物理空间可达、路径连续、公共设施、通用设计和环境参与条件 | 让不同身体、感官和认知状态的主体仍能进入、移动、使用、撤离和参与 | 不提供建筑设计施工、验收、个案法律、合理便利、撤离路线或辅助设备建议 |
+| [Clinical Laboratory Diagnostic Quality](domains/clinical-laboratory-diagnostic-quality/README.md) | 临床实验室质量、检测准确性、能力验证、诊断管理和临床效用 | 让个体诊断、筛查、治疗监测和风险模型建立在可信观测上 | 不提供检验解读、诊断治疗、检测选择、样本操作、实验 SOP、认证规避或法律建议 |
+| [Pharmacovigilance Drug Safety Monitoring](domains/pharmacovigilance-drug-safety-monitoring/README.md) | 不良事件报告、真实世界安全信号、标签更新、用药错误和风险沟通 | 让治疗工具在真实使用中持续接受安全反馈和风险修正 | 不提供用药、停药、换药、剂量、个案归因、法律、索赔、药品购买或监管规避建议 |
+| [Pharmaceutical Quality Supply Integrity](domains/pharmaceutical-quality-supply-integrity/README.md) | GMP、质量缺陷、污染、假劣药、短缺、冷链、追溯和召回 | 让可及药品真正具备质量稳定、未污染、可追踪和不断供的治疗价值 | 不提供药品购买、制备、复配、检测、进口、商业采购、个体用药或非法渠道建议 |
+| [Emergency Medical Services Prehospital Care](domains/emergency-medical-services-prehospital-care/README.md) | EMS、调度、响应时间、院前照护、转运和时间关键急性响应 | 在创伤、心脏骤停、卒中等急性事件中保住可逆损伤窗口 | 不提供急救操作、医疗处置、分诊、现场指挥、医院选择、路线、法律或危险现场建议 |
+| [Surgical Anesthesia Perioperative Safety](domains/surgical-anesthesia-perioperative-safety/README.md) | 手术安全、麻醉安全、团队检查、并发症预防和围手术期质量 | 让高风险修复通道把疾病修复转化为功能恢复，而不是新伤害 | 不提供手术、麻醉、护理、康复、医院选择、个体风险判断、操作步骤或法律建议 |
+| [Road Traffic Injury Prevention Safe Mobility](domains/road-traffic-injury-prevention-safe-mobility/README.md) | 道路交通伤害、安全系统、速度管理、车辆安全、交通数据和安全移动 | 让出行从可达性进一步成为不制造死亡和失能的行动基础设施 | 不提供驾驶、路线、事故责任、保险、法律、车辆改装、危险驾驶、规避执法或急救建议 |
 | [Oral Health Continuity](domains/oral-health-continuity/README.md) | 牙齿、牙周、咀嚼、疼痛、感染、营养和沟通 | 口腔功能、疼痛、感染、营养和社会参与变量 | 不提供牙科诊断、治疗、药物、手术、器械或个体护理建议 |
 | [Measurement And Feedback](domains/measurement-feedback/README.md) | 状态测量、风险评分、生物标志物、可穿戴、反馈控制 | 指标分类、预测接口和模型反馈边界 | 不输出个体死亡日期、确定寿命预测或医学诊断 |
 
@@ -597,6 +610,12 @@ human_infra/
 │   ├── medical-device-equipment-safety-maintenance/
 │   ├── sterilization-disinfection-infection-control/
 │   ├── built-environment-accessibility-universal-design/
+│   ├── clinical-laboratory-diagnostic-quality/
+│   ├── pharmacovigilance-drug-safety-monitoring/
+│   ├── pharmaceutical-quality-supply-integrity/
+│   ├── emergency-medical-services-prehospital-care/
+│   ├── surgical-anesthesia-perioperative-safety/
+│   ├── road-traffic-injury-prevention-safe-mobility/
 │   ├── mitochondrial-bioenergetics/
 │   ├── musculoskeletal-integrity/
 │   ├── neuro-continuity/
@@ -737,5 +756,6 @@ flowchart LR
 - 2026-06-30：新增第十三波 6 个数据治理、结局评估与公共卫生安全域，覆盖健康数据隐私治理、功能与生活质量结局、健康经济与价值评估、免疫与公共卫生监测、母婴儿童早期生命、患者安全与组织学习。
 - 2026-06-30：新增第十八波 6 个外部安全、材料和公共健康支撑域，覆盖公共卫生实验室诊断能力、血液器官组织生物警戒、废弃物危险材料连续性、辐射核安全防护、化学安全中毒控制和关键矿物材料韧性。
 - 2026-06-30：新增第十九波 6 个日常环境与工具可靠性域，覆盖空气质量通风、食品安全污染控制、职业暴露工业卫生、医疗设备安全维护、灭菌消毒感染控制和建成环境无障碍通用设计。
+- 2026-06-30：新增第二十波 6 个临床可靠性与急性风险窗口域，覆盖临床检验诊断质量、药物警戒药品安全、药品质量供应完整性、急救医疗服务院前照护、手术麻醉围手术期安全和道路交通伤害预防。
 
 完整记录见 [CHANGELOG.md](CHANGELOG.md)。

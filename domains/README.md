@@ -94,6 +94,12 @@
 - `medical-device-equipment-safety-maintenance/`：医疗器械、设备安全与维护，整理设备生命周期、不良事件、UDI、召回、维护、网络安全和可用性。
 - `sterilization-disinfection-infection-control/`：灭菌、消毒与感染控制，整理清洁、消毒、灭菌、再处理、环境感染控制和 HAI 预防。
 - `built-environment-accessibility-universal-design/`：建成环境无障碍与通用设计，整理物理空间可达、路径连续、公共设施、通用设计和环境参与条件。
+- `clinical-laboratory-diagnostic-quality/`：临床检验、诊断质量与检测可靠性，整理临床实验室质量、检测准确性、能力验证、诊断管理和临床效用。
+- `pharmacovigilance-drug-safety-monitoring/`：药物警戒与上市后药品安全，整理不良事件报告、真实世界安全信号、标签更新和风险沟通。
+- `pharmaceutical-quality-supply-integrity/`：药品质量、制造与供应完整性，整理 GMP、质量缺陷、污染、假劣药、短缺、冷链和追溯。
+- `emergency-medical-services-prehospital-care/`：急救医疗服务与院前照护，整理 EMS、调度、响应时间、院前分诊、转运和时间关键响应。
+- `surgical-anesthesia-perioperative-safety/`：手术、麻醉与围手术期安全，整理手术安全、麻醉安全、团队检查、并发症预防和围手术期质量。
+- `road-traffic-injury-prevention-safe-mobility/`：道路交通伤害预防与安全移动，整理安全系统、速度管理、车辆安全、交通伤害监测和安全移动。
 - `insurance-risk-transfer/`：保险与风险转移，整理健康、失业、工伤、残障、灾害、存款、养老金等风险池和保障缺口。
 - `childcare-family-continuity/`：托育与家庭连续性，整理托育可及、费用、质量、早期儿童发展、父母工作连续性和家庭压力。
 - `emergency-preparedness-response/`：应急准备与响应，整理灾害准备、预警、应急通信、急救医疗、安置和恢复。

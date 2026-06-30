@@ -39,6 +39,7 @@ docs/
 │   ├── 0021-add-seventeenth-wave-geospatial-weather-building-manufacturing-procurement-one-health-domains.md
 │   ├── 0022-add-eighteenth-wave-lab-blood-waste-radiation-chemical-critical-materials-domains.md
 │   ├── 0023-add-nineteenth-wave-air-food-occupational-device-sterilization-accessibility-domains.md
+│   ├── 0024-add-twentieth-wave-clinical-drug-ems-surgical-road-safety-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -156,4 +157,10 @@ docs/
 62. Read `../domains/medical-device-equipment-safety-maintenance/README.md` if you are working on medical device safety, equipment lifecycle, UDI, adverse events, recalls, maintenance, or device cybersecurity.
 63. Read `../domains/sterilization-disinfection-infection-control/README.md` if you are working on sterilization, disinfection, reprocessing, environmental infection control, or healthcare-associated infection prevention.
 64. Read `../domains/built-environment-accessibility-universal-design/README.md` if you are working on built-environment accessibility, universal design, ADA/ABA standards, public-space access, or physical-path continuity.
-65. Enter a domain under `../domains/`.
+65. Read `../domains/clinical-laboratory-diagnostic-quality/README.md` if you are working on clinical laboratory quality, diagnostic testing, CLIA, test reliability, diagnostic stewardship, or lab result quality.
+66. Read `../domains/pharmacovigilance-drug-safety-monitoring/README.md` if you are working on pharmacovigilance, adverse event reports, FAERS, postmarket drug safety, labels, REMS, or medication safety signals.
+67. Read `../domains/pharmaceutical-quality-supply-integrity/README.md` if you are working on pharmaceutical quality, GMP, substandard/falsified medicines, drug shortages, cold chain, traceability, or supply integrity.
+68. Read `../domains/emergency-medical-services-prehospital-care/README.md` if you are working on EMS, prehospital care, dispatch, response time, ambulance systems, or time-critical acute response.
+69. Read `../domains/surgical-anesthesia-perioperative-safety/README.md` if you are working on surgical safety, anesthesia safety, perioperative quality, surgical checklist, or preventable surgical complications.
+70. Read `../domains/road-traffic-injury-prevention-safe-mobility/README.md` if you are working on road traffic injury prevention, safe system, speed management, vehicle safety, or safe mobility.
+71. Enter a domain under `../domains/`.

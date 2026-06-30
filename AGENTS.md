@@ -119,6 +119,12 @@ human_infra/
     ├── medical-device-equipment-safety-maintenance/ # 医疗器械、设备安全与维护
     ├── sterilization-disinfection-infection-control/ # 灭菌、消毒与感染控制
     ├── built-environment-accessibility-universal-design/ # 建成环境无障碍与通用设计
+    ├── clinical-laboratory-diagnostic-quality/ # 临床检验与诊断质量
+    ├── pharmacovigilance-drug-safety-monitoring/ # 药物警戒与药品安全监测
+    ├── pharmaceutical-quality-supply-integrity/ # 药品质量与供应完整性
+    ├── emergency-medical-services-prehospital-care/ # 急救医疗服务与院前照护
+    ├── surgical-anesthesia-perioperative-safety/ # 手术、麻醉与围手术期安全
+    ├── road-traffic-injury-prevention-safe-mobility/ # 道路交通伤害预防与安全移动
     ├── insurance-risk-transfer/ # 保险与风险转移
     ├── childcare-family-continuity/ # 托育与家庭连续性
     ├── learning-skill-acquisition/ # 学习与技能获得
@@ -262,6 +268,12 @@ human_infra/
 - `domains/medical-device-equipment-safety-maintenance/` 负责医疗设备生命周期、不良事件、UDI、召回、维护、网络安全和可用性。
 - `domains/sterilization-disinfection-infection-control/` 负责清洁、消毒、灭菌、再处理、环境感染控制和医疗照护相关感染预防。
 - `domains/built-environment-accessibility-universal-design/` 负责物理空间可达、路径连续、公共设施、通用设计和环境参与条件。
+- `domains/clinical-laboratory-diagnostic-quality/` 负责临床实验室质量、检测准确性、能力验证、诊断管理和临床效用。
+- `domains/pharmacovigilance-drug-safety-monitoring/` 负责不良事件报告、真实世界安全信号、标签更新、REMS、用药错误和风险沟通。
+- `domains/pharmaceutical-quality-supply-integrity/` 负责药品制造质量、GMP、质量缺陷、污染、假劣药、短缺、冷链和追溯。
+- `domains/emergency-medical-services-prehospital-care/` 负责 EMS、调度、响应时间、院前照护、转运和时间关键急性响应。
+- `domains/surgical-anesthesia-perioperative-safety/` 负责手术安全、麻醉安全、团队检查、围手术期并发症预防和质量改进。
+- `domains/road-traffic-injury-prevention-safe-mobility/` 负责道路交通伤害、安全系统、速度管理、车辆安全、交通数据和安全移动。
 - `domains/insurance-risk-transfer/` 负责健康、失业、工伤、残障、灾害、存款、养老金等风险转移和风险池。
 - `domains/childcare-family-continuity/` 负责托育可及、托育费用、照护质量、早期儿童发展、父母工作连续性和家庭压力。
 - `domains/emergency-preparedness-response/` 负责灾害准备、预警、应急通信、急救医疗、安置、公共卫生应急和灾后恢复。
@@ -349,3 +361,4 @@ human_infra/
 - 2026-06-30：新增第十七波 6 个空间、天气、建筑、制造、采购和 One Health 相关域骨架，覆盖空间定位导航与位置基础设施、天气气候观测与预报、建筑消防与生命安全规范、制造与维修能力、公共采购与合同能力、动物健康与人兽共患界面。
 - 2026-06-30：新增第十八波 6 个实验室、人体材料、废弃物、辐射、化学和关键材料相关域骨架，覆盖公共卫生实验室诊断能力、血液器官组织生物警戒、废弃物危险材料连续性、辐射核安全防护、化学安全中毒控制和关键矿物材料韧性。
 - 2026-06-30：新增第十九波 6 个日常环境与工具可靠性域骨架，覆盖空气质量通风、食品安全污染控制、职业暴露工业卫生、医疗设备安全维护、灭菌消毒感染控制和建成环境无障碍通用设计。
+- 2026-06-30：新增第二十波 6 个临床可靠性与急性风险窗口域骨架，覆盖临床检验诊断质量、药物警戒药品安全、药品质量供应完整性、急救医疗服务院前照护、手术麻醉围手术期安全和道路交通伤害预防。

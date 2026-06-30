@@ -139,6 +139,12 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `medical-device-equipment-safety-maintenance/` | 医疗设备安全、维护、UDI 和召回决定诊断、治疗、监测、生命支持和康复工具是否可靠 |
 | `sterilization-disinfection-infection-control/` | 灭菌、消毒、再处理和感染控制决定医疗与照护环境是否避免制造可预防感染 |
 | `built-environment-accessibility-universal-design/` | 建成环境无障碍和通用设计决定不同能力状态的主体是否能进入、移动、使用和参与 |
+| `clinical-laboratory-diagnostic-quality/` | 临床实验室质量、检测准确性和诊断管理决定个体医疗路径的观测信号是否可信 |
+| `pharmacovigilance-drug-safety-monitoring/` | 药物警戒和上市后安全监测决定药品真实世界风险能否被发现、反馈和修正 |
+| `pharmaceutical-quality-supply-integrity/` | 药品质量、制造、假劣药防控和供应完整性决定治疗物质是否真实安全有效 |
+| `emergency-medical-services-prehospital-care/` | EMS、调度、响应时间和院前照护决定急性事件能否在可逆窗口内进入医疗系统 |
+| `surgical-anesthesia-perioperative-safety/` | 手术、麻醉和围手术期安全决定高风险修复干预是否减少而不是制造失能和死亡 |
+| `road-traffic-injury-prevention-safe-mobility/` | 道路交通伤害预防和安全移动决定出行是否持续制造死亡、严重伤害和长期失能 |
 
 ## 来源信号
 
@@ -256,6 +262,12 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | FDA Medical Devices / FDA UDI / MAUDE / WHO Medical Devices | 提示医疗设备安全、维护、追踪、不良事件和召回是医学工具链可靠性条件 |
 | CDC Disinfection and Sterilization / WHO IPC / FDA Device Reprocessing | 提示灭菌、消毒、再处理和感染控制是医疗与照护连续性的环境屏障 |
 | U.S. Access Board ADA/ABA / ADA.gov / WHO Disability | 提示建成环境无障碍、通用设计和物理路径连续性是主体行动与参与条件 |
+| CMS CLIA / CDC Laboratory Quality / FDA Diagnostic Tests | 提示临床检测质量、能力验证、诊断管理和检验可靠性是个体医疗观测层 |
+| FDA FAERS / FDA Postmarket Drug Safety / WHO Pharmacovigilance | 提示药品上市后安全、不良事件、标签更新和药物警戒是治疗工具反馈层 |
+| FDA Pharmaceutical Quality / WHO Substandard and Falsified Medical Products / FDA Drug Shortages | 提示药品质量、制造监管、假劣药和短缺治理是药物可及之外的独立物质质量层 |
+| NHTSA Office of EMS / EMS.gov / WHO Emergency Care | 提示院前照护、调度、响应时间和转运系统是急性可逆窗口基础设施 |
+| WHO Surgical Safety Checklist / WHO Safe Surgery / AHRQ Surgical Safety | 提示手术、麻醉和围手术期团队安全是高风险修复通道的独立风险层 |
+| WHO Road Traffic Injuries / NHTSA / FHWA Safe System Approach | 提示道路交通伤害预防、安全系统和速度管理是交通可达之外的安全移动域 |
 
 Source links:
 
@@ -647,6 +659,23 @@ Source links:
 - https://www.ada.gov/resources/2010-standards/
 - https://www.access-board.gov/aba/
 - https://www.who.int/health-topics/disability
+- https://www.cms.gov/medicare/quality/clinical-laboratory-improvement-amendments
+- https://www.cdc.gov/lab-quality/
+- https://www.fda.gov/medical-devices/in-vitro-diagnostics
+- https://www.fda.gov/drugs/surveillance/fda-adverse-event-reporting-system-faers
+- https://www.fda.gov/drugs/surveillance
+- https://www.who.int/teams/regulation-prequalification/regulation-and-safety/pharmacovigilance
+- https://www.fda.gov/drugs/pharmaceutical-quality-resources
+- https://www.who.int/news-room/fact-sheets/detail/substandard-and-falsified-medical-products
+- https://www.fda.gov/drugs/drug-safety-and-availability/drug-shortages
+- https://www.ems.gov/
+- https://www.nhtsa.gov/emergency-medical-services
+- https://www.who.int/teams/integrated-health-services/clinical-services-and-systems/emergency-care
+- https://www.who.int/teams/integrated-health-services/patient-safety/research/safe-surgery/tool-and-resources
+- https://www.ahrq.gov/hai/tools/surgery/index.html
+- https://www.who.int/news-room/fact-sheets/detail/road-traffic-injuries
+- https://www.nhtsa.gov/traffic-safety
+- https://highways.dot.gov/safety/zero-deaths/safe-system-approach
 
 ## 使用规则
 

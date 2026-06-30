@@ -22,6 +22,7 @@ All notable repository structure changes are recorded here.
 - Added seventeenth-wave geospatial, weather, building/fire, manufacturing/repair, procurement, and One Health domain skeletons for geospatial navigation/location infrastructure, weather/climate observation forecasting, building/fire life-safety codes, manufacturing/repair capacity, public procurement/contracting capacity, and animal-health zoonotic-interface One Health.
 - Added eighteenth-wave laboratory, biovigilance, waste, radiation, chemical, and critical-materials domain skeletons for public health laboratory diagnostic capacity, blood/organ/tissue biovigilance and transplantation, waste management and hazardous-materials continuity, radiation/nuclear safety protection, chemical safety/poison control toxicology, and critical minerals/materials resilience.
 - Added nineteenth-wave air, food, occupational, device, sterilization, and accessibility domain skeletons for air quality/ventilation exposure control, food safety/contamination control, occupational exposure/industrial hygiene, medical device/equipment safety maintenance, sterilization/disinfection infection control, and built-environment accessibility/universal design.
+- Added twentieth-wave clinical, drug, EMS, surgical, and road-safety domain skeletons for clinical laboratory diagnostic quality, pharmacovigilance/drug safety monitoring, pharmaceutical quality/supply integrity, emergency medical services/prehospital care, surgical/anesthesia perioperative safety, and road traffic injury prevention/safe mobility.
 
 ## 2026-06-29
 

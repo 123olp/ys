@@ -36,3 +36,4 @@ Current decisions:
 - `0021-add-seventeenth-wave-geospatial-weather-building-manufacturing-procurement-one-health-domains.md`
 - `0022-add-eighteenth-wave-lab-blood-waste-radiation-chemical-critical-materials-domains.md`
 - `0023-add-nineteenth-wave-air-food-occupational-device-sterilization-accessibility-domains.md`
+- `0024-add-twentieth-wave-clinical-drug-ems-surgical-road-safety-domains.md`

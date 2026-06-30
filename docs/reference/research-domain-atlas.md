@@ -148,6 +148,12 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 医疗设备可可靠运行 | `medical-device-equipment-safety-maintenance/` | 医疗器械、设备安全、UDI、不良事件、召回、维护、网络安全、可用性 | 诊断、治疗、监测、生命支持和康复工具因设备失效、误用、断供或攻击中断 |
 | 照护环境感染屏障可运行 | `sterilization-disinfection-infection-control/` | 清洁、消毒、灭菌、再处理、环境感染控制、HAI 预防 | 医疗和照护场所把服务过程变成感染传播、耐药扩散和信任损失入口 |
 | 物理空间可进入可使用 | `built-environment-accessibility-universal-design/` | 建成环境无障碍、通用设计、可达路径、公共设施、标识和撤离可达 | 身体、感官、认知或照护状态变化后无法进入、移动、使用服务或参与社会 |
+| 个体诊断观测可可信 | `clinical-laboratory-diagnostic-quality/` | 临床实验室质量、检测准确性、能力验证、诊断管理、临床效用 | 检测误差、诊断延误、假阳性/假阴性或不可比结果污染治疗与预测路径 |
+| 药品真实世界安全可反馈 | `pharmacovigilance-drug-safety-monitoring/` | 不良事件报告、上市后安全、标签更新、REMS、用药错误、风险沟通 | 治疗在真实世界中产生未识别伤害、相互作用、用药错误或信任崩溃 |
+| 药品质量和供应完整性可审查 | `pharmaceutical-quality-supply-integrity/` | GMP、质量缺陷、污染、假劣药、短缺、冷链、追溯、召回 | 药物可及但质量失败、污染、假劣、断供或不可追溯，导致治疗失败和毒性风险 |
+| 急性可逆窗口可接入 | `emergency-medical-services-prehospital-care/` | EMS、调度、响应时间、院前照护、转运、质量改进 | 创伤、心脏骤停、卒中或呼吸急症未在可逆窗口内进入医疗系统 |
+| 高风险修复通道可安全执行 | `surgical-anesthesia-perioperative-safety/` | 手术安全、麻醉安全、团队检查、围手术期监测、并发症预防 | 修复性干预因可预防错误、感染、出血、麻醉风险或团队失效变成新伤害 |
+| 移动过程可避免严重伤害 | `road-traffic-injury-prevention-safe-mobility/` | 道路安全系统、速度管理、车辆安全、执法公平、交通伤害监测 | 出行过程制造死亡、严重伤害、长期失能、家庭收入中断和照护负担 |
 | 高成本风险可分摊 | `insurance-risk-transfer/` | 覆盖率、保费、自付、理赔、拒赔、风险池、保障缺口 | 疾病、失业、工伤、残障、灾害或养老金风险由个体独自承担 |
 | 托育和家庭运行可持续 | `childcare-family-continuity/` | 托育可及、费用、质量、早期发展、父母工作连续性、家庭压力 | 儿童发展受损、照护者工作中断、时间贫困和家庭压力升级 |
 | 应急响应可接住主体 | `emergency-preparedness-response/` | 灾害准备、预警、应急通信、急救医疗、安置、公共卫生应急、恢复 | 低频高冲击事件一次性清零长期积累，通信、医疗、撤离或恢复失败 |
@@ -302,6 +308,12 @@ risk-engineering
   -> medical-device-equipment-safety-maintenance
   -> sterilization-disinfection-infection-control
   -> built-environment-accessibility-universal-design
+  -> clinical-laboratory-diagnostic-quality
+  -> pharmacovigilance-drug-safety-monitoring
+  -> pharmaceutical-quality-supply-integrity
+  -> emergency-medical-services-prehospital-care
+  -> surgical-anesthesia-perioperative-safety
+  -> road-traffic-injury-prevention-safe-mobility
   -> insurance-risk-transfer
   -> childcare-family-continuity
   -> emergency-preparedness-response
