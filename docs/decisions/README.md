@@ -52,3 +52,4 @@ Current decisions:
 - `0037-add-thirty-third-wave-future-technology-continuity-domains.md`
 - `0038-add-thirty-fourth-wave-acute-neuro-continuity-domains.md`
 - `0039-add-thirty-fifth-wave-sensory-communication-continuity-domains.md`
+- `0040-add-thirty-sixth-wave-planetary-geophysical-heat-risk-domains.md`

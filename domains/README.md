@@ -219,6 +219,12 @@
 - `swallowing-dysphagia-aspiration-nutrition/`：吞咽、误吸与营养连续性，整理吞咽安全、气道保护、营养水分、进食尊严和照护负担。
 - `smell-taste-chemosensory-continuity/`：嗅味觉与化学感知连续性，整理嗅觉、味觉、危险气味识别、食欲、营养和生活质量。
 - `peripheral-neuropathy-somatosensory-continuity/`：周围神经病变与躯体感觉连续性，整理触觉、痛觉、本体感觉、足部风险和身体边界反馈。
+- `space-weather-geomagnetic-storm-resilience/`：空间天气与地磁暴韧性，整理太阳活动、电网、卫星、通信、导航和时间同步风险。
+- `planetary-defense-near-earth-object-risk/`：行星防御与近地天体风险，整理小行星/彗星发现、跟踪、预警、偏转和撞击尾部风险。
+- `volcanic-ashfall-geohazard-continuity/`：火山灰与地质灾害连续性，整理火山喷发、火山灰、空气、水、农业、航空和基础设施风险。
+- `earthquake-seismic-risk-built-environment-continuity/`：地震与建成环境连续性，整理地震危险性、抗震建筑、医院、道路、水电燃气和通信恢复。
+- `tsunami-warning-coastal-evacuation-continuity/`：海啸预警与沿海撤离连续性，整理海啸监测、警报、撤离、垂直避难和灾后恢复。
+- `extreme-heat-cooling-public-health-continuity/`：极端高温、制冷与公共卫生连续性，整理热健康、制冷可及、能源负担、住房、劳动暴露和城市热岛。
 - `supply-chain-continuity/`：供应链连续性，整理关键物资、服务、物流、替代路径和恢复时间。
 - `synthetic-biology-biosecurity/`：合成生物学与生物安全，整理双重用途、生物安全、生物安保和治理边界。
 - `space-extreme-habitation/`：空间与极端栖居，整理辐射、微重力、隔离、闭环资源和远程医疗风险。

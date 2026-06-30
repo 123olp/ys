@@ -238,6 +238,12 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `swallowing-dysphagia-aspiration-nutrition/` | 吞咽安全决定营养水分能否进入身体而不转化为误吸、窒息、肺炎和尊严损害 |
 | `smell-taste-chemosensory-continuity/` | 嗅味觉和化学感知决定危险气味识别、食欲、营养、生活质量和低可见安全反馈 |
 | `peripheral-neuropathy-somatosensory-continuity/` | 周围神经和躯体感觉决定身体边界、保护性痛觉、步态反馈、足部风险和精细操作是否可用 |
+| `space-weather-geomagnetic-storm-resilience/` | 空间天气和地磁暴决定电网、卫星、通信、导航和时间同步是否会被太阳活动级联扰动 |
+| `planetary-defense-near-earth-object-risk/` | 近地天体风险决定行星级低概率高后果冲击是否能被发现、跟踪、预警和偏转 |
+| `volcanic-ashfall-geohazard-continuity/` | 火山灰决定地质灾害如何穿透空气、水、农业、航空、建筑和设备连续性 |
+| `earthquake-seismic-risk-built-environment-continuity/` | 地震决定建成环境和生命线基础设施是否会在短时间内变成死亡、创伤和服务断点 |
+| `tsunami-warning-coastal-evacuation-continuity/` | 海啸决定沿海主体能否在短窗口内完成预警、理解、撤离、避难和灾后恢复 |
+| `extreme-heat-cooling-public-health-continuity/` | 极端高温决定热健康、制冷、能源、住房、劳动和公共卫生是否能共同接住环境压力 |
 
 ## 来源信号
 
@@ -257,6 +263,12 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | NIDCD dysphagia resources | 提示吞咽安全把营养、水分、气道保护、误吸风险和进食尊严连接起来 |
 | NIDCD smell and taste disorder resources | 提示嗅味觉支撑危险气味识别、食欲、营养和生活质量 |
 | NINDS / NIDDK peripheral neuropathy resources | 提示周围神经和躯体感觉把身体边界、步态、足部风险、疼痛和伤口发现连接起来 |
+| NOAA / NASA space weather resources | 提示太阳活动会把外部天体物理事件转化为电网、卫星、通信、导航和时间同步风险 |
+| NASA / CNEOS / IAWN planetary defense resources | 提示近地天体风险需要长期发现、跟踪、预警、偏转和国际协调基础设施 |
+| USGS volcanic hazards and ash resources | 提示火山灰把地质灾害连接到空气、水、农业、航空、建筑和设备连续性 |
+| USGS / ShakeAlert / FEMA earthquake resources | 提示地震风险必须通过建成环境、生命线基础设施、预警和恢复系统治理 |
+| NOAA Tsunami / Ready.gov tsunami resources | 提示海啸风险依赖预警触达、短窗口撤离、垂直避难和灾后服务恢复 |
+| CDC / NOAA / OSHA heat resources | 提示极端高温同时影响体温调节、制冷可及、能源负担、劳动暴露和公共卫生 |
 | WHO Antimicrobial Resistance | 提示耐药性会侵蚀现代医学和长期感染控制底座 |
 | WHO Vision and Hearing resources | 提示感官系统是主体感知、沟通和行动连续性的基础 |
 | CDC Sleep / NHLBI Sleep resources | 提示睡眠不足和节律失调会影响认知、慢病、心理和恢复能力 |
@@ -1049,6 +1061,24 @@ Source links:
 - https://www.ninds.nih.gov/health-information/disorders/peripheral-neuropathy
 - https://www.niddk.nih.gov/health-information/diabetes/overview/preventing-problems/nerve-damage-diabetic-neuropathies
 - https://www.cdc.gov/diabetes/signs-symptoms/diabetes-and-your-feet.html
+- https://www.swpc.noaa.gov/
+- https://www.swpc.noaa.gov/phenomena/geomagnetic-storms
+- https://science.nasa.gov/heliophysics/space-weather/
+- https://www.nasa.gov/planetarydefense/
+- https://cneos.jpl.nasa.gov/
+- https://iawn.net/
+- https://www.usgs.gov/programs/VHP
+- https://volcanoes.usgs.gov/volcanic_ash/
+- https://volcano.si.edu/
+- https://www.usgs.gov/programs/earthquake-hazards
+- https://www.shakealert.org/
+- https://www.ready.gov/earthquakes
+- https://www.tsunami.gov/
+- https://www.tsunami.gov/?page=warning_centers
+- https://www.ready.gov/tsunamis
+- https://www.cdc.gov/heat-health/
+- https://www.weather.gov/safety/heat
+- https://www.osha.gov/heat
 
 ## 使用规则
 

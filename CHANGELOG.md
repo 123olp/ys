@@ -4,6 +4,7 @@ All notable repository structure changes are recorded here.
 
 ## 2026-06-30
 
+- Added thirty-sixth-wave planetary, geophysical, and heat-risk continuity domain skeletons for space weather, planetary defense, volcanic ashfall, earthquake seismic risk, tsunami warning/evacuation, and extreme heat/cooling public health continuity.
 - Added thirty-fifth-wave sensory, communication, and embodied-feedback continuity domain skeletons for vision/eye health, hearing/auditory communication, vestibular balance, speech/language communication, swallowing/dysphagia, smell/taste chemosensory continuity, and peripheral neuropathy/somatosensory continuity.
 - Added thirty-fourth-wave acute neuro-continuity domain skeletons for stroke/brain perfusion, traumatic brain injury, delirium, disorders of consciousness, epilepsy/seizure stability, autonomic homeostasis, and migraine/headache effective-time burden.
 - Added third-wave research domain skeletons for nutrition and metabolic health, physical activity and mobility, cardiovascular resilience, musculoskeletal integrity, social connection, substance exposure control, health literacy navigation, and oral health continuity.

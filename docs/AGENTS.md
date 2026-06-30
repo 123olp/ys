@@ -48,6 +48,7 @@ docs/
 │   ├── 0037-add-thirty-third-wave-future-technology-continuity-domains.md
 │   ├── 0038-add-thirty-fourth-wave-acute-neuro-continuity-domains.md
 │   ├── 0039-add-thirty-fifth-wave-sensory-communication-continuity-domains.md
+│   ├── 0040-add-thirty-sixth-wave-planetary-geophysical-heat-risk-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -145,6 +146,7 @@ docs/
 - `domains/nanomedicine-targeted-delivery-molecular-repair/`、`domains/ai-drug-discovery-protein-design/`、`domains/epigenetic-editing-gene-regulation-therapeutics/`、`domains/brain-preservation-connectomics-emulation/`、`domains/post-quantum-cryptography-long-term-data-security/`、`domains/safety-critical-software-formal-methods/` 和 `domains/long-term-digital-preservation-format-migration/`：第三十三波正式研究域，分别承载纳米医学靶向递送、AI 药物发现蛋白设计、表观遗传编辑、脑保存连接组仿真、后量子密码长期数据安全、安全关键软件形式化方法和长期数字保存格式迁移。
 - `domains/cerebrovascular-stroke-brain-perfusion-resilience/`、`domains/traumatic-brain-injury-neurotrauma-recovery/`、`domains/delirium-acute-cognitive-failure-prevention/`、`domains/disorders-of-consciousness-coma-recovery/`、`domains/epilepsy-seizure-network-stability/`、`domains/autonomic-nervous-system-homeostasis/` 和 `domains/migraine-headache-effective-time-burden/`：第三十四波正式研究域，分别承载卒中脑灌注韧性、TBI 神经创伤恢复、谵妄急性认知失败预防、意识障碍昏迷恢复、癫痫发作网络稳定、自主神经稳态和偏头痛有效时间负担。
 - `domains/vision-eye-health-continuity/`、`domains/hearing-auditory-communication-continuity/`、`domains/vestibular-balance-spatial-orientation/`、`domains/speech-language-communication-continuity/`、`domains/swallowing-dysphagia-aspiration-nutrition/`、`domains/smell-taste-chemosensory-continuity/` 和 `domains/peripheral-neuropathy-somatosensory-continuity/`：第三十五波正式研究域，分别承载视觉眼健康、听力听觉沟通、前庭平衡空间定向、言语语言沟通、吞咽误吸营养、嗅味觉化学感知和周围神经躯体感觉连续性。
+- `domains/space-weather-geomagnetic-storm-resilience/`、`domains/planetary-defense-near-earth-object-risk/`、`domains/volcanic-ashfall-geohazard-continuity/`、`domains/earthquake-seismic-risk-built-environment-continuity/`、`domains/tsunami-warning-coastal-evacuation-continuity/` 和 `domains/extreme-heat-cooling-public-health-continuity/`：第三十六波正式研究域，分别承载空间天气地磁暴、行星防御近地天体、火山灰地质灾害、地震建成环境、海啸预警沿海撤离和极端高温制冷公共卫生连续性。
 - `reference/research-model-visualization-toolkit.md`：沉淀科研论文阅读、文献脊梁、模型工具、可视化标准和 Human Infra 定量页面实现路线。
 - `reference/source-card-system.md`：定义论文、书籍、工具、案例、标准和数据集进入项目之前的资料卡片制度。
 - `reference/domain-map.md`：定义根项目与子域的边界、迁移切片、主动不做和验证点。

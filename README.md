@@ -442,6 +442,12 @@ flowchart TD
     H --> SDAN[swallowing-dysphagia-aspiration-nutrition<br/>吞咽 / 误吸营养]
     H --> STCC[smell-taste-chemosensory-continuity<br/>嗅味觉 / 化学感知]
     H --> PNSC[peripheral-neuropathy-somatosensory-continuity<br/>周围神经 / 躯体感觉]
+    H --> SWGSR[space-weather-geomagnetic-storm-resilience<br/>空间天气 / 地磁暴韧性]
+    H --> PDNEO[planetary-defense-near-earth-object-risk<br/>行星防御 / 近地天体风险]
+    H --> VAGC[volcanic-ashfall-geohazard-continuity<br/>火山灰 / 地质灾害连续性]
+    H --> ESRBE[earthquake-seismic-risk-built-environment-continuity<br/>地震 / 建成环境连续性]
+    H --> TWCEC[tsunami-warning-coastal-evacuation-continuity<br/>海啸预警 / 沿海撤离]
+    H --> EHCPH[extreme-heat-cooling-public-health-continuity<br/>极端高温 / 制冷公共卫生]
     H --> MF[measurement-feedback<br/>测量 / 预测 / 反馈]
     H --> C[disembodied-cns<br/>去具身中枢生命系统]
     H --> M[memory-editing<br/>记忆编辑与人格连续性]
@@ -556,6 +562,12 @@ flowchart TD
 | [Swallowing Dysphagia Aspiration Nutrition](domains/swallowing-dysphagia-aspiration-nutrition/README.md) | 吞咽障碍、误吸、窒息、营养水分入口、进食尊严和照护负担 | 把吞咽安全作为营养进入、气道保护、恢复能力和生活尊严的交叉条件 | 不提供吞咽诊断、检查解释、饮食质地调整、管饲、护理、急救或康复建议 |
 | [Smell Taste Chemosensory Continuity](domains/smell-taste-chemosensory-continuity/README.md) | 嗅觉、味觉、化学感知、危险气味识别、食欲、营养和生活质量 | 把化学感知作为危险预警、食欲营养、情绪体验和生活质量反馈层 | 不提供嗅味觉诊断、感染/神经判断、治疗、训练、补剂、药物或个体风险结论 |
 | [Peripheral Neuropathy Somatosensory Continuity](domains/peripheral-neuropathy-somatosensory-continuity/README.md) | 周围神经病变、触觉、痛觉、本体感觉、足部风险和精细操作反馈 | 把躯体感觉作为身体边界、避伤、步态、工具操作和皮肤保护反馈层 | 不提供神经病变诊断、检查解释、足部处置、疼痛治疗、药物、补剂或康复建议 |
+| [Space Weather Geomagnetic Storm Resilience](domains/space-weather-geomagnetic-storm-resilience/README.md) | 太阳活动、地磁暴、电网、卫星、通信、导航和时间同步 | 把空间天气作为数字、电力和定位基础设施的低频高后果外部风险 | 不提供实时空间天气操作、电网/卫星/航空/金融风险处置或投资建议 |
+| [Planetary Defense Near Earth Object Risk](domains/planetary-defense-near-earth-object-risk/README.md) | 近地天体、撞击概率、轨道监测、预警、偏转和国际协调 | 把行星防御作为超长时间尺度主体持续性的尾部风险治理条件 | 不预测具体撞击，不提供恐慌传播、军事化或私人避险操作建议 |
+| [Volcanic Ashfall Geohazard Continuity](domains/volcanic-ashfall-geohazard-continuity/README.md) | 火山喷发、火山灰、空气、水、农业、航空、建筑和设备 | 把火山灰作为跨健康、交通、食物、水和基础设施的复合风险载体 | 不提供喷发预测、避难命令、清灰操作、呼吸防护或建筑安全判断 |
+| [Earthquake Seismic Risk Built Environment Continuity](domains/earthquake-seismic-risk-built-environment-continuity/README.md) | 地震危险性、抗震建筑、医院、道路、水电燃气、通信和恢复 | 把地震作为建成环境和生命线基础设施的急性压力测试 | 不提供地震预测、结构安全评估、工程设计、疏散、保险或法律建议 |
+| [Tsunami Warning Coastal Evacuation Continuity](domains/tsunami-warning-coastal-evacuation-continuity/README.md) | 海啸预警、潮位监测、警报、撤离路线、垂直避难和灾后恢复 | 把海啸作为分钟级预警-行动-恢复链条的沿海连续性测试 | 不提供实时预警、撤离路线、避难点、个人风险判断或购房投资建议 |
+| [Extreme Heat Cooling Public Health Continuity](domains/extreme-heat-cooling-public-health-continuity/README.md) | 热浪、热健康、制冷可及、能源负担、住房质量、劳动暴露和城市热岛 | 把极端高温作为身体、住房、能源、劳动和公共卫生的共同约束 | 不提供个人急救、补水、药物调整、空调选择、工作许可或避暑地点建议 |
 | [Regenerative Medicine](domains/regenerative-medicine/README.md) | 干细胞、组织工程、器官再生、类器官、移植 | 器官/组织修复框架、功能终点和整合风险 | 不提供手术、细胞制备、移植或人体实验步骤 |
 | [Rehabilitation And Functioning](domains/rehabilitation-functioning/README.md) | 康复、功能恢复、失能预防、活动能力、自理和社会参与 | 功能状态、活动能力、参与能力和失能风险模型 | 不提供个人康复处方、训练计划、诊断或治疗建议 |
 | [Cancer Control](domains/cancer-control/README.md) | 癌症预防、早筛、治疗、复发、肿瘤演化 | 癌症风险函数、证据层级和长期控制变量 | 不提供诊断、治疗方案、处方、剂量或个体用药建议 |
@@ -1036,5 +1048,6 @@ flowchart LR
 - 2026-06-30：新增第三十三波 7 个未来技术连续性域，覆盖纳米医学靶向递送、AI 药物发现蛋白设计、表观遗传编辑、脑保存连接组仿真、后量子密码、安全关键软件形式化方法和长期数字保存格式迁移。
 - 2026-06-30：新增第三十四波 7 个急性神经连续性与意识韧性域，覆盖卒中脑灌注韧性、TBI 神经创伤恢复、谵妄急性认知失败预防、意识障碍昏迷恢复、癫痫发作网络稳定、自主神经稳态和偏头痛有效时间负担。
 - 2026-06-30：新增第三十五波 7 个感官、沟通与具身反馈连续性域，覆盖视觉眼健康、听力听觉沟通、前庭平衡空间定向、言语语言沟通、吞咽误吸营养、嗅味觉化学感知和周围神经躯体感觉。
+- 2026-06-30：新增第三十六波 6 个行星、地球物理与极端热风险连续性域，覆盖空间天气、行星防御、火山灰、地震、海啸和极端高温。
 
 完整记录见 [CHANGELOG.md](CHANGELOG.md)。

@@ -164,6 +164,24 @@ domains/
 ├── peripheral-neuropathy-somatosensory-continuity/
 │   ├── AGENTS.md
 │   └── README.md
+├── space-weather-geomagnetic-storm-resilience/
+│   ├── AGENTS.md
+│   └── README.md
+├── planetary-defense-near-earth-object-risk/
+│   ├── AGENTS.md
+│   └── README.md
+├── volcanic-ashfall-geohazard-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── earthquake-seismic-risk-built-environment-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── tsunami-warning-coastal-evacuation-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── extreme-heat-cooling-public-health-continuity/
+│   ├── AGENTS.md
+│   └── README.md
 ├── cognitive-augmentation/
 │   ├── AGENTS.md
 │   └── README.md
@@ -724,6 +742,7 @@ domains/
 - `nanomedicine-targeted-delivery-molecular-repair/`、`ai-drug-discovery-protein-design/`、`epigenetic-editing-gene-regulation-therapeutics/`、`brain-preservation-connectomics-emulation/`、`post-quantum-cryptography-long-term-data-security/`、`safety-critical-software-formal-methods/` 和 `long-term-digital-preservation-format-migration/` 负责未来技术窗口生成、递送、调控、信息保存、长期数字安全、软件可信和外部记忆可读性这些未来技术连续性条件。
 - `cerebrovascular-stroke-brain-perfusion-resilience/`、`traumatic-brain-injury-neurotrauma-recovery/`、`delirium-acute-cognitive-failure-prevention/`、`disorders-of-consciousness-coma-recovery/`、`epilepsy-seizure-network-stability/`、`autonomic-nervous-system-homeostasis/` 和 `migraine-headache-effective-time-burden/` 负责卒中脑灌注、神经创伤、谵妄、意识障碍、癫痫、自主神经和偏头痛这些急性神经连续性与意识韧性条件。
 - `vision-eye-health-continuity/`、`hearing-auditory-communication-continuity/`、`vestibular-balance-spatial-orientation/`、`speech-language-communication-continuity/`、`swallowing-dysphagia-aspiration-nutrition/`、`smell-taste-chemosensory-continuity/` 和 `peripheral-neuropathy-somatosensory-continuity/` 负责视觉输入、听觉沟通、空间平衡、语言表达、吞咽摄食、化学感知和身体边界反馈这些感官、沟通与具身反馈连续性条件。
+- `space-weather-geomagnetic-storm-resilience/`、`planetary-defense-near-earth-object-risk/`、`volcanic-ashfall-geohazard-continuity/`、`earthquake-seismic-risk-built-environment-continuity/`、`tsunami-warning-coastal-evacuation-continuity/` 和 `extreme-heat-cooling-public-health-continuity/` 负责空间天气、近地天体、火山灰、地震、海啸和极端高温这些行星、地球物理与极端热风险连续性条件。
 - `access-to-justice-legal-aid/`、`civic-participation-election-access/`、`migration-displacement-humanitarian-continuity/` 和 `digital-inclusion-connectivity/` 负责司法可及、公民参与、迁移流离失所人道连续性和数字连接这些制度参与与公共服务接入条件。
 - `personal-safety-violence-prevention/` 和 `product-safety-recall-systems/` 负责暴力预防、受害者支持、产品缺陷报告、召回和纠正这些公共安全连续性条件。
 - `cellular-reprogramming/` 负责山中因子、部分重编程、化学重编程、AI 因子设计和表观遗传编辑等“细胞状态可重写”谱系，不提供实验协议或人体应用建议。
@@ -734,6 +753,7 @@ domains/
 - `nanomedicine-targeted-delivery-molecular-repair/`、`ai-drug-discovery-protein-design/`、`epigenetic-editing-gene-regulation-therapeutics/`、`brain-preservation-connectomics-emulation/`、`post-quantum-cryptography-long-term-data-security/`、`safety-critical-software-formal-methods/` 和 `long-term-digital-preservation-format-migration/` 负责远期技术连续性的证据边界，不提供自制纳米材料、双重用途生物设计、表观编辑操作、脑保存操作、密码攻击、安全关键系统规避、档案窃取或数字永生承诺。
 - `cerebrovascular-stroke-brain-perfusion-resilience/`、`traumatic-brain-injury-neurotrauma-recovery/`、`delirium-acute-cognitive-failure-prevention/`、`disorders-of-consciousness-coma-recovery/`、`epilepsy-seizure-network-stability/`、`autonomic-nervous-system-homeostasis/` 和 `migraine-headache-effective-time-burden/` 负责急性神经连续性与意识韧性的证据边界，不提供个体诊断、治疗方案、急救指令、用药调整、预后判断、返工返赛许可、影像/EEG/可穿戴解释或 AI 个人医疗结论。
 - `vision-eye-health-continuity/`、`hearing-auditory-communication-continuity/`、`vestibular-balance-spatial-orientation/`、`speech-language-communication-continuity/`、`swallowing-dysphagia-aspiration-nutrition/`、`smell-taste-chemosensory-continuity/` 和 `peripheral-neuropathy-somatosensory-continuity/` 负责感官、沟通与具身反馈连续性的证据边界，不提供个体诊断、治疗、设备处方、检查解释、康复训练、饮食质地调整、误吸处置、跌倒训练、驾驶/工作/活动许可或 AI 个人医疗结论。
+- `space-weather-geomagnetic-storm-resilience/`、`planetary-defense-near-earth-object-risk/`、`volcanic-ashfall-geohazard-continuity/`、`earthquake-seismic-risk-built-environment-continuity/`、`tsunami-warning-coastal-evacuation-continuity/` 和 `extreme-heat-cooling-public-health-continuity/` 负责行星、地球物理与极端热风险的证据边界，不提供实时预警、地震预测、撤离路线、避难命令、太阳风暴操作建议、撞击预测、个人急救、工程设计、保险或投资建议。
 - `regenerative-medicine/`、`cancer-control/` 和 `immune-maintenance/` 负责身体基底维护相关的机制、风险和证据边界。
 - `rehabilitation-functioning/`、`assistive-technology-access/`、`skin-barrier-wound-healing/` 和 `sensory-continuity/` 负责功能恢复、能力补偿、外界屏障和感官反馈连续性。
 - `antimicrobial-resilience/` 负责抗微生物耐药、感染控制和现代医学抗感染底座。

@@ -55,6 +55,7 @@ docs/
 │   ├── 0037-add-thirty-third-wave-future-technology-continuity-domains.md
 │   ├── 0038-add-thirty-fourth-wave-acute-neuro-continuity-domains.md
 │   ├── 0039-add-thirty-fifth-wave-sensory-communication-continuity-domains.md
+│   ├── 0040-add-thirty-sixth-wave-planetary-geophysical-heat-risk-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -271,4 +272,10 @@ docs/
 161. Read `../domains/swallowing-dysphagia-aspiration-nutrition/README.md` if you are working on dysphagia, aspiration, swallowing safety, nutrition/hydration entry, feeding dignity, or aspiration pneumonia risk.
 162. Read `../domains/smell-taste-chemosensory-continuity/README.md` if you are working on smell, taste, chemosensory loss, hazard detection, appetite, nutrition, or quality of life.
 163. Read `../domains/peripheral-neuropathy-somatosensory-continuity/README.md` if you are working on peripheral neuropathy, touch, pain, proprioception, foot risk, somatosensory feedback, or fine motor feedback.
-164. Enter a domain under `../domains/`.
+164. Read `../domains/space-weather-geomagnetic-storm-resilience/README.md` if you are working on space weather, geomagnetic storms, solar activity, electric grids, satellites, communications, navigation, or timing-system resilience.
+165. Read `../domains/planetary-defense-near-earth-object-risk/README.md` if you are working on near-Earth objects, asteroid/comet impact risk, planetary defense, detection, tracking, warning, or deflection governance.
+166. Read `../domains/volcanic-ashfall-geohazard-continuity/README.md` if you are working on volcano hazards, volcanic ash, air quality, aviation disruption, water, agriculture, buildings, or geohazard recovery.
+167. Read `../domains/earthquake-seismic-risk-built-environment-continuity/README.md` if you are working on earthquakes, seismic risk, built environment safety, hospitals, roads, utilities, ShakeAlert, or post-earthquake recovery.
+168. Read `../domains/tsunami-warning-coastal-evacuation-continuity/README.md` if you are working on tsunami warning, coastal evacuation, vertical refuge, alerting, coastal recovery, or short-window evacuation systems.
+169. Read `../domains/extreme-heat-cooling-public-health-continuity/README.md` if you are working on extreme heat, heat health, cooling access, energy burden, housing quality, occupational heat exposure, or urban heat islands.
+170. Enter a domain under `../domains/`.
