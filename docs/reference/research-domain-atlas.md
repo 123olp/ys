@@ -576,6 +576,15 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 指南必须可评价和本地化 | `guideline-appraisal-adaptation-localization-continuity/` | AGREE II、adaptation、local context、update status、conflict | 权威指南被跨地区、跨资源环境和跨人群无边界套用 |
 | 证据必须可持续更新 | `living-evidence-surveillance-update-continuity/` | living review、surveillance search、update trigger、versioned conclusion | 陈旧主张继续支撑模型，忽略新试验、安全信号、撤稿和指南更新 |
 | 紧急证据必须标注捷径 | `rapid-review-emergency-evidence-triage-continuity/` | rapid review、evidence map、shortcut disclosure、expiry、uncertainty | 快速综述被包装成完整系统综述，临时判断变成长期确定结论 |
+| 科研不端纠错必须可追踪 | `research-misconduct-investigation-correction-continuity/` | misconduct definition、investigation status、institutional finding、publisher action、correction path | 疑点、调查、机构结论和出版动作混淆，污染证据被长期复用 |
+| 出版状态必须可更新 | `retraction-expression-concern-correction-continuity/` | retraction、expression of concern、correction、Crossmark、version status | 已撤回或已更正研究继续支撑模型和传播材料 |
+| 预印本信号必须可版本化 | `preprint-versioning-public-review-continuity/` | preprint server、version history、public review、journal version linkage | 未审查或已大改结论被当成稳定同行评审证据 |
+| 同行评审制度必须可拆解 | `journal-editorial-policy-peer-review-integrity-continuity/` | editorial policy、review model、data policy、correction policy、registered reports | 同行评审被当成二元真理认证，审稿失灵和编辑冲突不可见 |
+| 出版生态污染必须可筛查 | `predatory-publishing-paper-mill-detection-continuity/` | predatory journal、paper mill signal、fake peer review、text/image/citation anomaly | DOI、索引和期刊外观掩盖系统性伪证据 |
+| 引用传播必须保留主张语境 | `citation-network-claim-propagation-continuity/` | citation context、claim support、reference lineage、misquotation、cites retracted work | 引用次数、二次引用和综述句式被误当作证据强度 |
+| 评价指标必须防止激励扭曲 | `research-metrics-incentives-assessment-continuity/` | impact factor、H-index、Altmetrics、DORA、Leiden、Goodhart risk | 指标压力推动刷引用、夸大、短期化选题和不可复现产出 |
+| 结果稳健性必须可复制复现 | `replication-reproducibility-many-labs-continuity/` | replication status、reproducibility status、Many Labs、registered replication、reanalysis | 单次研究、过拟合或情境依赖结论被写成稳定机制 |
+| 科学传播必须保留不确定性 | `science-communication-evidence-translation-continuity/` | risk communication、claim scope、uncertainty framing、public understanding、hype risk | 假说被写成事实，不确定性被写成承诺，公众行动被错误叙事牵引 |
 | 人体研究必须保留主体合法性 | `research-participant-consent-community-engagement/` | 知情同意、退出、再联系、社区参与、结果回馈、信任 | 长期研究退化为数据抽取，代表性、留存和伦理正当性同时下降 |
 | 生物样本必须可追踪可信 | `biobanking-biospecimen-quality-chain-of-custody/` | 样本质量、预分析变量、冷链、追踪、保管链、二次使用 | 样本退化、污染、错配或同意越界污染组学和 biomarker 证据 |
 | 生命路径必须可长期观察 | `longitudinal-cohort-retention-followup-infrastructure/` | 纵向队列、随访、留存、失访、事件确认、生命历程链接 | 失访、选择偏差和随访断裂扭曲寿命、健康寿命和风险路径 |
@@ -1011,6 +1020,15 @@ risk-engineering
   -> guideline-appraisal-adaptation-localization-continuity
   -> living-evidence-surveillance-update-continuity
   -> rapid-review-emergency-evidence-triage-continuity
+  -> research-misconduct-investigation-correction-continuity
+  -> retraction-expression-concern-correction-continuity
+  -> preprint-versioning-public-review-continuity
+  -> journal-editorial-policy-peer-review-integrity-continuity
+  -> predatory-publishing-paper-mill-detection-continuity
+  -> citation-network-claim-propagation-continuity
+  -> research-metrics-incentives-assessment-continuity
+  -> replication-reproducibility-many-labs-continuity
+  -> science-communication-evidence-translation-continuity
   -> standards-metrology-quality-infrastructure
   -> cybersecurity-resilience-critical-services
   -> compute-data-center-ai-infrastructure

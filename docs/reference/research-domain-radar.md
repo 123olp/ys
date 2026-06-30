@@ -216,6 +216,15 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `guideline-appraisal-adaptation-localization-continuity/` | 指南评价、适配和本地化决定权威建议能否跨人群、地点和资源环境转移 |
 | `living-evidence-surveillance-update-continuity/` | 活证据监测和更新触发决定研究页和模型能否随新证据、撤稿和安全信号修正 |
 | `rapid-review-emergency-evidence-triage-continuity/` | 快速综述和紧急证据分诊决定临时判断能否显式暴露捷径、不确定性和过期时间 |
+| `research-misconduct-investigation-correction-continuity/` | 科研不端调查和纠错决定污染证据能否从模型和传播链中被识别、降级或移除 |
+| `retraction-expression-concern-correction-continuity/` | 撤稿、表达关注和更正决定论文出版状态是否能持续反馈到证据账本 |
+| `preprint-versioning-public-review-continuity/` | 预印本版本和公开评审决定早期技术信号能否以未审查、已更新或已争议状态进入雷达 |
+| `journal-editorial-policy-peer-review-integrity-continuity/` | 期刊编辑政策和同行评审制度决定“已发表”背后的审查强度、透明度和纠错能力 |
+| `predatory-publishing-paper-mill-detection-continuity/` | 掠夺性出版和 paper mill 检测决定伪证据、批量造文和伪审稿能否被证据入口拦截 |
+| `citation-network-claim-propagation-continuity/` | 引用网络和主张传播决定错误解释、二次引用和撤稿后引用能否被追踪 |
+| `research-metrics-incentives-assessment-continuity/` | 科研指标和评价激励决定论文供给、报告质量和研究议程是否被 Goodhart 化 |
+| `replication-reproducibility-many-labs-continuity/` | 复制、复现和多实验室验证决定单次研究结论能否升级为稳定机制信号 |
+| `science-communication-evidence-translation-continuity/` | 科学传播和证据转译决定论文、新闻稿和公众叙事能否保留主张边界与不确定性 |
 | `standards-metrology-quality-infrastructure/` | 标准、计量、校准、认证和质量基础设施决定测量、设备、数据和制造是否可信可比 |
 | `cybersecurity-resilience-critical-services/` | 网络安全、事件响应、备份恢复和关键服务韧性决定数字化主体系统是否会被攻击截断 |
 | `compute-data-center-ai-infrastructure/` | 算力、数据中心、芯片、云、能源、水和网络决定 AI、科学模拟和自动化能力是否可用 |
@@ -857,6 +866,13 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | AGREE II / GRADE-ADOLOPMENT / GIN | 提示指南质量、适配和本地化需要独立审查 |
 | Cochrane living evidence / Retraction Watch | 提示证据需要监测、更新、版本化和陈旧主张退休机制 |
 | Cochrane Rapid Reviews / JBI / Campbell evidence synthesis | 提示快速综述需要显式披露捷径、不确定性和过期边界 |
+| ORI / National Academies / COPE / ICMJE | 提示科研不端和出版伦理需要独立调查、责任归属和纠错状态 |
+| Crossref Crossmark / Retraction Watch | 提示撤稿、表达关注、更正和版本状态需要持续同步到证据账本 |
+| ASAPbio / medRxiv / bioRxiv / PubPeer / PREreview | 提示预印本版本和公开评审是早期技术信号的独立状态 |
+| Think. Check. Submit. / DOAJ / STM Integrity Hub | 提示掠夺性出版和 paper mill 污染需要独立防火墙 |
+| DORA / Leiden Manifesto / CoARA / Metric Tide | 提示科研指标和激励会改变证据供给质量 |
+| NASEM reproducibility / Center for Open Science / OSF Registries | 提示复制复现和多实验室验证是稳定证据的必要条件 |
+| NASEM science communication / WHO risk communication / NIH clear communication / CDC Clear Communication Index | 提示科学传播和风险沟通会影响公众理解、信任和行动边界 |
 | Model Cards / Datasheets for Datasets / NIST AI RMF | 提示模型、数据、图表和 AI 系统需要可审计文档、用途限制和风险管理语言 |
 | OECD Strategic Foresight / WHO Health Technology Assessment horizon scanning | 提示未来技术窗口需要弱信号、情景分析和地平线扫描，而不是新闻热度驱动 |
 | NIH Office of Portfolio Analysis / WHO research priority setting / ARPA-H / DARPA | 提示无限研究域需要组合优先级、阶段门、学习价值和停止条件 |

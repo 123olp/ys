@@ -1193,6 +1193,15 @@ flowchart TD
 | [Guideline Appraisal Adaptation Localization Continuity](domains/guideline-appraisal-adaptation-localization-continuity/README.md) | AGREE II、guideline appraisal、adaptation、localization、update status 和 context fit | 防止把指南跨地区、跨人群、跨资源环境直接照搬 | 不提供临床实施计划、政策命令、合规判断、评分操控或监管规避 |
 | [Living Evidence Surveillance Update Continuity](domains/living-evidence-surveillance-update-continuity/README.md) | living review、surveillance search、update trigger、versioned conclusion 和 stale-claim retirement | 让研究页和模型能够随新证据、撤稿和安全信号更新或降级 | 不提供实时医疗警报、治疗变更、受限数据库抓取或更新触发操控 |
 | [Rapid Review Emergency Evidence Triage Continuity](domains/rapid-review-emergency-evidence-triage-continuity/README.md) | rapid review、evidence map、crisis evidence triage、shortcut disclosure 和 provisional claim | 在紧急问题下显式记录证据捷径、过期时间和不确定性 | 不提供急救指挥、公共卫生命令、危机分诊、个人/机构自动建议或捷径隐瞒 |
+| [Research Misconduct Investigation Correction Continuity](domains/research-misconduct-investigation-correction-continuity/README.md) | ORI、fabrication、falsification、plagiarism、机构调查、出版纠错和完整性状态 | 让证据进入模型前区分疑点、调查、机构结论和出版动作 | 不提供不端指控、举报策略、调查规避、数据伪造、论文洗稿或法律意见 |
+| [Retraction Expression Concern Correction Continuity](domains/retraction-expression-concern-correction-continuity/README.md) | retraction、expression of concern、correction、Crossmark、版本状态和撤稿原因 | 防止撤稿、更正或关注表达后的旧证据继续污染模型 | 不提供撤稿规避、声誉洗白、申诉代写、指控推断或访问控制绕过 |
+| [Preprint Versioning Public Review Continuity](domains/preprint-versioning-public-review-continuity/README.md) | preprint、version history、public review、PubPeer、PREreview 和后续期刊版本 | 让早期技术信号以版本化、分层审查状态进入研究雷达 | 不提供预印本刷评、同行评审伪造、论文代写、抢发策略或平台规避 |
+| [Journal Editorial Policy Peer Review Integrity Continuity](domains/journal-editorial-policy-peer-review-integrity-continuity/README.md) | editorial policy、peer review model、open review、registered reports 和纠错政策 | 把同行评审从二元标签拆成可审查的制度信号 | 不提供投稿策略、伪造审稿、审稿规避、编辑申诉代写或期刊排名服务 |
+| [Predatory Publishing Paper Mill Detection Continuity](domains/predatory-publishing-paper-mill-detection-continuity/README.md) | predatory journal、paper mill、fake peer review、异常文本/图片/引用和出版透明度 | 在系统综述和模型入口前拦截系统性伪证据污染 | 不提供论文买卖、检测规避、引用操控、图片伪造、期刊黑名单服务或指控代写 |
+| [Citation Network Claim Propagation Continuity](domains/citation-network-claim-propagation-continuity/README.md) | citation context、claim support、reference lineage、misquotation 和 citation cascade | 防止引用次数、二次引用和综述句式被误当作证据强度 | 不提供刷引用、引用操控、论文 SEO、引用农场、声誉攻击或受限全文抓取 |
+| [Research Metrics Incentives Assessment Continuity](domains/research-metrics-incentives-assessment-continuity/README.md) | DORA、Leiden Manifesto、impact factor、H-index、Altmetrics 和 Goodhart 风险 | 审查科研评价指标如何扭曲研究供给、报告质量和证据生态 | 不提供刷指标、基金包装、期刊排名套利、招聘晋升或机构排名建议 |
+| [Replication Reproducibility Many Labs Continuity](domains/replication-reproducibility-many-labs-continuity/README.md) | replication、reproducibility、Many Labs、registered replication 和再分析 | 判断结论是否能跨团队、数据、方法和场景保持稳健 | 不提供实验操作、显著性操控、数据伪造、论文代写或不端指控 |
+| [Science Communication Evidence Translation Continuity](domains/science-communication-evidence-translation-continuity/README.md) | science communication、risk communication、public understanding、press release 和不确定性表达 | 把证据转成公众语言时保留主张边界、风险和不确定性 | 不提供宣传操控、恐慌传播、微定向说服、伪科学包装、疗效承诺或政策游说 |
 | [Standards Metrology Quality Infrastructure](domains/standards-metrology-quality-infrastructure/README.md) | 标准、计量、校准、认证、质量管理、合格评定和互操作规范 | 让测量、设备、数据、制造和服务具备可比性与可信度 | 不提供认证规避、检测伪造、设备改装、标准绕过或产品采购建议 |
 | [Cybersecurity Resilience Critical Services](domains/cybersecurity-resilience-critical-services/README.md) | 网络安全、关键服务韧性、事件响应、备份恢复和数字风险治理 | 防止医疗、金融、身份、公共服务和 AI 工具被攻击截断 | 不提供攻击、入侵、漏洞利用、钓鱼、恶意软件或规避检测步骤 |
 | [Compute Data Center AI Infrastructure](domains/compute-data-center-ai-infrastructure/README.md) | 算力、数据中心、AI 基础设施、芯片、能源、水、网络和接入治理 | 支撑 AI 工具、科学模拟、自动化和科研加速的物质底座 | 不提供盗用算力、绕过计费、芯片走私、数据中心攻击、投资采购或监管规避建议 |
@@ -1375,6 +1384,15 @@ human_infra/
 │   ├── guideline-appraisal-adaptation-localization-continuity/
 │   ├── living-evidence-surveillance-update-continuity/
 │   ├── rapid-review-emergency-evidence-triage-continuity/
+│   ├── research-misconduct-investigation-correction-continuity/
+│   ├── retraction-expression-concern-correction-continuity/
+│   ├── preprint-versioning-public-review-continuity/
+│   ├── journal-editorial-policy-peer-review-integrity-continuity/
+│   ├── predatory-publishing-paper-mill-detection-continuity/
+│   ├── citation-network-claim-propagation-continuity/
+│   ├── research-metrics-incentives-assessment-continuity/
+│   ├── replication-reproducibility-many-labs-continuity/
+│   ├── science-communication-evidence-translation-continuity/
 │   ├── research-participant-consent-community-engagement/
 │   ├── biobanking-biospecimen-quality-chain-of-custody/
 │   ├── longitudinal-cohort-retention-followup-infrastructure/
@@ -1833,5 +1851,6 @@ flowchart LR
 - 2026-07-01：新增第七十五波 8 个知识产权、数字作品与 AI 训练数据权利连续性域，覆盖版权作者身份登记许可、DMCA 通知反通知、Creative Commons 开放内容、开源软件许可证、商标品牌身份、专利发明披露维护、创作者版税权利元数据和 AI 训练数据权利/退出/provenance。
 - 2026-07-01：新增第七十六波 9 个科研身份、持久标识与可复现研究基础设施域，覆盖 ORCID/ROR、DOI 元数据、FAIR 数据仓库、研究软件胶囊、预注册、实验协议版本、贡献者角色、利益冲突披露和研究产物保存。
 - 2026-07-01：新增第七十七波 9 个证据综合与指南转化连续性域，覆盖系统综述协议/检索/筛选、风险偏倚与批判性评价、Meta 分析与异质性、发表/报告偏倚、GRADE 证据确定性、证据到决策、指南评价/适配/本地化、活证据监测更新和快速综述/紧急证据分诊。
+- 2026-07-01：新增第七十八波 9 个科研纠错、出版完整性与科学传播连续性域，覆盖科研不端调查纠错、撤稿/表达关注/更正、预印本版本与公开评审、期刊编辑与同行评审完整性、掠夺性出版与 paper mill 检测、引用网络主张传播、科研指标激励、复制/复现/多实验室验证和科学传播证据转译。
 
 完整记录见 [CHANGELOG.md](CHANGELOG.md)。

@@ -97,6 +97,7 @@ docs/
 │   ├── 0079-add-seventy-fifth-wave-intellectual-property-digital-rights-continuity-domains.md
 │   ├── 0080-add-seventy-sixth-wave-research-identity-reproducibility-infrastructure-domains.md
 │   ├── 0081-add-seventy-seventh-wave-evidence-synthesis-guideline-translation-domains.md
+│   ├── 0082-add-seventy-eighth-wave-research-correction-scientific-integrity-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -618,4 +619,13 @@ docs/
 433. Read `../domains/guideline-appraisal-adaptation-localization-continuity/README.md` if you are working on AGREE II, guideline appraisal, adaptation, localization, update status, conflicts, or context fit.
 434. Read `../domains/living-evidence-surveillance-update-continuity/README.md` if you are working on living systematic reviews, surveillance searches, evidence update triggers, versioned conclusions, retractions, or stale-claim retirement.
 435. Read `../domains/rapid-review-emergency-evidence-triage-continuity/README.md` if you are working on rapid reviews, evidence maps, crisis evidence triage, shortcut disclosure, provisional claims, or expiry dates.
-436. Enter a domain under `../domains/`.
+436. Read `../domains/research-misconduct-investigation-correction-continuity/README.md` if you are working on research misconduct definitions, investigation status, institutional findings, integrity correction, or publication action linkage.
+437. Read `../domains/retraction-expression-concern-correction-continuity/README.md` if you are working on retractions, expressions of concern, corrections, Crossmark status, withdrawal, updated versions, or reuse decisions after correction.
+438. Read `../domains/preprint-versioning-public-review-continuity/README.md` if you are working on preprints, version history, public review, PubPeer, PREreview, medRxiv, bioRxiv, or journal-version linkage.
+439. Read `../domains/journal-editorial-policy-peer-review-integrity-continuity/README.md` if you are working on editorial policy, peer review model, open review, registered reports, data availability policy, or correction policy.
+440. Read `../domains/predatory-publishing-paper-mill-detection-continuity/README.md` if you are working on predatory journals, paper mills, fake peer review, systematic manipulation, anomalous citation networks, or publication transparency.
+441. Read `../domains/citation-network-claim-propagation-continuity/README.md` if you are working on citation context, claim support, reference lineage, citation cascades, misquotation, or citations to retracted work.
+442. Read `../domains/research-metrics-incentives-assessment-continuity/README.md` if you are working on DORA, Leiden Manifesto, impact factor, H-index, Altmetrics, Goodhart risk, or responsible research assessment.
+443. Read `../domains/replication-reproducibility-many-labs-continuity/README.md` if you are working on replication, reproducibility, Many Labs, registered replication reports, reanalysis, robustness, or failed-replication context.
+444. Read `../domains/science-communication-evidence-translation-continuity/README.md` if you are working on science communication, risk communication, public understanding, press releases, uncertainty framing, or evidence translation.
+445. Enter a domain under `../domains/`.

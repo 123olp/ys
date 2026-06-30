@@ -937,6 +937,25 @@ Human Infra 不能被设计成更精密的压榨系统。
 - 输出个体诊断、治疗排名、用药建议、试验入组建议、医疗器械建议、公共卫生命令、紧急分诊、灾害指挥或个人寿命预测。
 - 把快速综述、低确定性证据、过期指南、未更新活证据、公司叙事或单一 Meta 分析写成稳定事实、现实可行性或有效永生证明。
 
+## 科研纠错、出版完整性与科学传播边界
+
+`research-misconduct-investigation-correction-continuity`、`retraction-expression-concern-correction-continuity`、`preprint-versioning-public-review-continuity`、`journal-editorial-policy-peer-review-integrity-continuity`、`predatory-publishing-paper-mill-detection-continuity`、`citation-network-claim-propagation-continuity`、`research-metrics-incentives-assessment-continuity`、`replication-reproducibility-many-labs-continuity` 和 `science-communication-evidence-translation-continuity` 关注研究生态如何调查、纠错、版本化、筛查污染、追踪引用、约束指标激励、验证稳健性和转译公众叙事，不是不端指控、声誉攻击、投稿操控、指标套利、舆论动员或科学营销系统。
+
+可以做：
+
+- 整理 ORI、NASEM、COPE、ICMJE、Crossref、Retraction Watch、ASAPbio、PubPeer、PREreview、Think. Check. Submit.、DOAJ、DORA、Leiden Manifesto、CoARA 和 CDC Clear Communication Index 等公开资料，建立 misconduct card、retraction status card、preprint version card、peer-review integrity card、paper-mill signal card、citation-context card、metrics incentive card、replication card 和 science-communication card。
+- 区分疑点、调查中、机构结论、出版动作、撤稿、更正、表达关注、预印本版本、公开评审、同行评审模型、复制状态、指标语境和公众传播边界。
+- 记录证据进入 Human Infra 模型时的状态日期、版本、出版状态、引用语境、撤稿原因、复制结果、指标局限、传播对象和不确定性表达。
+- 将科研纠错资料作为证据入口防火墙，而不是把单个异常信号自动写成个人、机构或期刊定罪结论。
+
+不能做：
+
+- 提供不端指控代写、举报策略、调查规避、撤稿规避、声誉洗白、申诉代写、法律意见、编辑部施压、作者攻击或机构攻击。
+- 提供论文代写、数据伪造、图片操控、审稿伪造、推荐审稿人欺诈、paper mill 支持、掠夺性出版投递、刷评、刷引用、刷指标、期刊排名套利或检测规避。
+- 提供预印本抢发策略、同行评审规避、平台规避、受限全文转储、版权规避、引用操纵、撤稿后误引放大或二次传播污染策略。
+- 输出个体医疗建议、疗效承诺、技术可行性承诺、投资建议、机构排名建议、招聘晋升评价或公众恐慌传播材料。
+- 把预印本、新闻稿、公司公告、撤稿前旧版本、未复制研究、低质量期刊论文、被刷指标论文或高热度媒体报道写成稳定事实、现实可行性或有效永生证明。
+
 ## 未来技术连续性边界
 
 `nanomedicine-targeted-delivery-molecular-repair`、`ai-drug-discovery-protein-design`、`epigenetic-editing-gene-regulation-therapeutics`、`brain-preservation-connectomics-emulation`、`post-quantum-cryptography-long-term-data-security`、`safety-critical-software-formal-methods` 和 `long-term-digital-preservation-format-migration` 关注未来技术能否从候选能力进入可递送、可验证、可保存、可安全执行和可长期读取的主体持续性条件，不是纳米材料制备、生物设计、表观编辑操作、脑保存操作、密码攻击、安全关键系统绕过或档案窃取指南。

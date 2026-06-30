@@ -136,6 +136,15 @@
 - `guideline-appraisal-adaptation-localization-continuity/`：指南评价、适配与本地化连续性，整理 AGREE II、guideline appraisal、adaptation、local context 和 update status。
 - `living-evidence-surveillance-update-continuity/`：活证据监测与更新连续性，整理 living review、surveillance search、update trigger、versioned conclusion 和 stale-claim retirement。
 - `rapid-review-emergency-evidence-triage-continuity/`：快速综述与紧急证据分诊连续性，整理 rapid review、evidence map、shortcut disclosure、uncertainty 和 expiry。
+- `research-misconduct-investigation-correction-continuity/`：科研不端调查与纠错连续性，整理 misconduct definition、investigation status、institutional finding 和 correction path。
+- `retraction-expression-concern-correction-continuity/`：撤稿、表达关注与更正连续性，整理 retraction、expression of concern、correction、Crossmark 和版本状态。
+- `preprint-versioning-public-review-continuity/`：预印本版本与公开评审连续性，整理 preprint version、public review、PubPeer、PREreview 和 journal version linkage。
+- `journal-editorial-policy-peer-review-integrity-continuity/`：期刊编辑政策与同行评审完整性连续性，整理 editorial policy、review model、open review 和 correction policy。
+- `predatory-publishing-paper-mill-detection-continuity/`：掠夺性出版与 paper mill 检测连续性，整理 predatory journal、paper mill、fake peer review 和出版透明度信号。
+- `citation-network-claim-propagation-continuity/`：引用网络与主张传播连续性，整理 citation context、claim support、reference lineage 和 misquotation signal。
+- `research-metrics-incentives-assessment-continuity/`：科研指标、激励与评价连续性，整理 DORA、Leiden Manifesto、impact factor、H-index 和 Goodhart 风险。
+- `replication-reproducibility-many-labs-continuity/`：复制、复现与多实验室验证连续性，整理 replication、reproducibility、Many Labs、registered replication 和再分析。
+- `science-communication-evidence-translation-continuity/`：科学传播与证据转译连续性，整理 science communication、risk communication、public understanding 和 uncertainty framing。
 - `standards-metrology-quality-infrastructure/`：标准计量与质量基础设施，整理标准、计量、校准、认证、合格评定、质量管理和互操作规范。
 - `cybersecurity-resilience-critical-services/`：网络安全韧性与关键服务，整理网络防御、事件响应、备份恢复、关键服务连续性和数字风险治理。
 - `compute-data-center-ai-infrastructure/`：算力、数据中心与 AI 基础设施，整理算力、芯片、云服务、能源、水、网络、成本和接入治理。

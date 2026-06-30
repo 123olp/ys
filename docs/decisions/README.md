@@ -94,3 +94,4 @@ Current decisions:
 - `0079-add-seventy-fifth-wave-intellectual-property-digital-rights-continuity-domains.md`
 - `0080-add-seventy-sixth-wave-research-identity-reproducibility-infrastructure-domains.md`
 - `0081-add-seventy-seventh-wave-evidence-synthesis-guideline-translation-domains.md`
+- `0082-add-seventy-eighth-wave-research-correction-scientific-integrity-domains.md`
