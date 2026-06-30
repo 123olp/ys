@@ -532,6 +532,24 @@ Human Infra 不能被设计成更精密的压榨系统。
 - 收集、存储或推断可识别个人的生命体征、检验值、心电图、呼吸机/ECMO/透析参数、血型、创伤/烧伤照片、物质使用史、位置、法律证据或其他 PHI。
 - 替代 EMS、毒物中心、急诊、ICU、创伤中心、烧伤中心、肾脏科、输血医学、康复医学、法律服务或现场专业人员。
 
+## 急性内科与时间关键急症边界
+
+`acute-coronary-syndrome-reperfusion-continuity`、`acute-heart-failure-decompensation-continuity`、`cardiac-arrhythmia-syncope-decompensation-continuity`、`venous-thromboembolism-pulmonary-embolism-continuity`、`hypertensive-crisis-end-organ-risk-continuity`、`diabetic-hyperglycemic-hypoglycemic-crisis-continuity`、`anaphylaxis-allergic-emergency-continuity`、`asthma-copd-exacerbation-airway-continuity`、`acute-gastrointestinal-bleeding-endoscopy-continuity` 和 `obstetric-emergency-hemorrhage-hypertension-continuity` 关注急性冠脉综合征、急性心衰、心律失常/晕厥、VTE/PE、高血压危象、糖尿病高低血糖危象、过敏性休克、哮喘/COPD 急性加重、急性消化道出血和产科出血/高血压急症如何在骤停、ICU 或不可逆损伤之前保住可逆窗口，不是胸痛、心衰、晕厥、肺栓塞、血压、糖尿病、过敏、气道、消化道出血、妊娠或产后症状的诊疗、分诊、操作、转运或个案决策入口。
+
+可以做：
+
+- 整理 AHA/ACC、AHA/ACC/HFSA、AHA/ACC/HRS、ESC、ADA、WAO/NIAID/AAAAI、GINA/GOLD、ACG、ACOG、WHO 和 CDC 等公开资料。
+- 比较识别时间、诊断入口、转运链、急诊稳定、专科接入、出院衔接、康复/随访和复发预防如何改变主体持续性。
+- 记录 ACS、急性心衰、心律失常/晕厥、VTE/PE、高血压危象、糖尿病危象、过敏急症、哮喘/COPD 加重、GI 出血和产科急症的系统变量、证据等级、禁止用途和不确定性。
+
+不能做：
+
+- 提供胸痛、心衰、晕厥、肺栓塞、高血压、血糖异常、过敏、哮喘/COPD、消化道出血、妊娠或产后症状判断、急诊分诊、用药、剂量、设备、操作、转运、医院选择、预后或个体建议。
+- 生成临床路径、行动计划、风险评分、医嘱、处方、抗凝/抗血小板/降压/胰岛素/肾上腺素/支气管扩张/输血/产科处理建议，或替代专业人员判断。
+- 收集、存储或推断可识别个人的症状、心电图、血压、血糖、化验、影像、妊娠、胎儿、用药、过敏、位置、就诊记录或其他 PHI。
+- 把时间关键急症资料改写成延误就医、规避急救、家庭自行处置、医院选择套利、恐慌传播、保险/法律责任判断或无证实践内容。
+- 替代 EMS、急诊、心内科、呼吸科、内分泌科、过敏免疫科、消化科、产科、ICU、毒物中心或现场专业人员。
+
 ## 门诊访问与临床服务执行连续性边界
 
 `provider-directory-network-adequacy-continuity`、`primary-care-panel-appointment-access-continuity`、`specialist-referral-authorization-navigation-continuity`、`appointment-availability-wait-time-continuity`、`outpatient-laboratory-specimen-result-routing-continuity`、`diagnostic-imaging-order-scheduling-report-continuity`、`ambulatory-procedure-surgery-center-continuity` 和 `after-hours-urgent-care-triage-continuity` 关注 provider 名录、初级照护、专科转诊、预约等待、门诊检验、诊断影像、门诊操作和非工作时间分诊如何让医疗服务从“名义存在”变成主体可进入、可完成、可回传的服务路径，不是医生推荐、个案分诊、诊疗建议、保险申诉或预约规避工具。

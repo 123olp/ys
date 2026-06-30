@@ -289,6 +289,16 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `transfusion-blood-management-hemorrhage-continuity/` | 输血、血液管理与出血治理决定血液供应、凝血支持和血液安全是否能守住出血性死亡边界 |
 | `overdose-poisoning-reversal-toxicology-continuity/` | 过量、中毒逆转与毒理连续性决定可逆毒性暴露是否进入咨询、逆转、转运和恢复链 |
 | `burn-injury-critical-care-rehabilitation-continuity/` | 烧伤重症与康复决定皮肤屏障急性毁损后是否能维持生命、重建功能并重新参与社会 |
+| `acute-coronary-syndrome-reperfusion-continuity/` | 急性冠脉综合征再灌注决定胸痛和心肌缺血是否能在坏死、心衰或猝死前进入可逆窗口 |
+| `acute-heart-failure-decompensation-continuity/` | 急性心衰失代偿治理决定容量、氧合和低灌注危机是否能稳定并回到长期心衰管理 |
+| `cardiac-arrhythmia-syncope-decompensation-continuity/` | 心律失常与晕厥连续性决定节律失稳、传导异常和猝死风险是否被监测、追踪和长期管理 |
+| `venous-thromboembolism-pulmonary-embolism-continuity/` | VTE 和肺栓塞连续性决定血栓栓塞事件是否被快速分层、抗凝治理并预防复发 |
+| `hypertensive-crisis-end-organ-risk-continuity/` | 高血压危象靶器官风险治理决定血压急性失控是否避免卒中、心衰、肾衰和视网膜损害 |
+| `diabetic-hyperglycemic-hypoglycemic-crisis-continuity/` | 糖尿病高低血糖危象连续性决定 DKA、HHS 和严重低血糖是否能被稳定并防止复发 |
+| `anaphylaxis-allergic-emergency-continuity/` | 过敏性休克和严重过敏连续性决定再暴露、急救可及和随访是否守住可逆死亡窗口 |
+| `asthma-copd-exacerbation-airway-continuity/` | 哮喘和 COPD 急性加重连续性决定气道危机是否避免缺氧、通气失败、住院和长期功能下降 |
+| `acute-gastrointestinal-bleeding-endoscopy-continuity/` | 急性消化道出血和内镜连续性决定出血休克、抗凝冲突、再出血和贫血风险是否被系统接住 |
+| `obstetric-emergency-hemorrhage-hypertension-continuity/` | 产科出血和高血压急症连续性决定孕产妇急症是否在母婴损害前接入团队、转运和产后照护 |
 | `road-traffic-injury-prevention-safe-mobility/` | 道路交通伤害预防和安全移动决定出行是否持续制造死亡、严重伤害和长期失能 |
 | `rural-health-access-geographic-equity/` | 农村地理距离、服务密度、宽带、交通和卫生人力决定可修复风险是否因地点被延误或放弃 |
 | `homelessness-unsheltered-health-continuity/` | 无家可归和露宿状态决定睡眠、卫生、身份、安全、医疗和福利入口是否会同时断线 |
@@ -1630,6 +1640,31 @@ Source links:
 - https://www.who.int/news-room/fact-sheets/detail/burns
 - https://ameriburn.org/
 - https://www.cdc.gov/fire-safety/
+- https://www.heart.org/
+- https://professional.heart.org/
+- https://www.nhlbi.nih.gov/health/heart-attack
+- https://www.nhlbi.nih.gov/health/heart-failure
+- https://www.cdc.gov/heart-disease/about/heart-failure.html
+- https://www.nhlbi.nih.gov/health/arrhythmias
+- https://www.escardio.org/
+- https://www.cdc.gov/blood-clots/
+- https://www.nhlbi.nih.gov/health/pulmonary-embolism
+- https://www.cdc.gov/high-blood-pressure/
+- https://www.nhlbi.nih.gov/health/high-blood-pressure
+- https://diabetesjournals.org/
+- https://www.niddk.nih.gov/health-information/diabetes
+- https://www.cdc.gov/diabetes/
+- https://www.worldallergy.org/
+- https://www.niaid.nih.gov/
+- https://www.aaaai.org/
+- https://ginasthma.org/
+- https://goldcopd.org/
+- https://www.nhlbi.nih.gov/
+- https://gi.org/
+- https://www.niddk.nih.gov/health-information/digestive-diseases
+- https://www.acog.org/
+- https://www.who.int/
+- https://www.cdc.gov/maternal-mortality/
 - https://www.who.int/news-room/fact-sheets/detail/road-traffic-injuries
 - https://www.nhtsa.gov/traffic-safety
 - https://highways.dot.gov/safety/zero-deaths/safe-system-approach

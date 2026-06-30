@@ -657,4 +657,14 @@ docs/
 471. Read `../domains/transfusion-blood-management-hemorrhage-continuity/README.md` if you are working on transfusion, blood availability, patient blood management, massive hemorrhage, coagulation support, or hemovigilance.
 472. Read `../domains/overdose-poisoning-reversal-toxicology-continuity/README.md` if you are working on overdose, poisoning, poison centers, toxic exposure reversal, naloxone access, respiratory depression, or recovery linkage.
 473. Read `../domains/burn-injury-critical-care-rehabilitation-continuity/README.md` if you are working on burn injury, burn centers, fluid loss, infection risk, reconstruction, scar, rehabilitation, or social reintegration.
-474. Enter a domain under `../domains/`.
+474. Read `../domains/acute-coronary-syndrome-reperfusion-continuity/README.md` if you are working on acute coronary syndrome, chest pain systems, ECG/troponin pathways, reperfusion windows, PCI access, or post-MI recovery.
+475. Read `../domains/acute-heart-failure-decompensation-continuity/README.md` if you are working on acute decompensated heart failure, pulmonary edema, congestion, perfusion, hospitalization, discharge handoff, or readmission.
+476. Read `../domains/cardiac-arrhythmia-syncope-decompensation-continuity/README.md` if you are working on arrhythmia, syncope, atrial fibrillation, rhythm monitoring, sudden decompensation, stroke/fall risk, or pre-arrest rhythm instability.
+477. Read `../domains/venous-thromboembolism-pulmonary-embolism-continuity/README.md` if you are working on DVT, pulmonary embolism, anticoagulation continuity, hospital-acquired VTE, cancer-associated thrombosis, pregnancy-associated thrombosis, or recurrence.
+478. Read `../domains/hypertensive-crisis-end-organ-risk-continuity/README.md` if you are working on hypertensive crisis, acute end-organ risk, stroke, heart failure, AKI, aortic syndromes, or blood-pressure follow-up continuity.
+479. Read `../domains/diabetic-hyperglycemic-hypoglycemic-crisis-continuity/README.md` if you are working on DKA, HHS, severe hypoglycemia, glucose monitoring breaks, insulin access, emergency metabolic care, or recurrence prevention.
+480. Read `../domains/anaphylaxis-allergic-emergency-continuity/README.md` if you are working on anaphylaxis, severe allergy, epinephrine access, allergen exposure contexts, school/workplace plans, EMS handoff, or allergy follow-up.
+481. Read `../domains/asthma-copd-exacerbation-airway-continuity/README.md` if you are working on asthma exacerbations, COPD exacerbations, inhaler access, airway emergencies, hospitalization, respiratory support, or pulmonary recovery.
+482. Read `../domains/acute-gastrointestinal-bleeding-endoscopy-continuity/README.md` if you are working on upper/lower GI bleeding, transfusion interface, endoscopy access, anticoagulant context, rebleeding, or discharge follow-up.
+483. Read `../domains/obstetric-emergency-hemorrhage-hypertension-continuity/README.md` if you are working on obstetric hemorrhage, postpartum hemorrhage, preeclampsia/eclampsia, severe maternal morbidity, transport, blood access, or postpartum follow-up.
+484. Enter a domain under `../domains/`.

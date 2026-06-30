@@ -98,3 +98,4 @@ Current decisions:
 - `0083-add-seventy-ninth-wave-ai-evaluation-operations-governance-domains.md`
 - `0084-add-eightieth-wave-compute-energy-connectivity-substrate-domains.md`
 - `0085-add-eighty-first-wave-acute-rescue-organ-support-domains.md`
+- `0086-add-eighty-second-wave-acute-internal-medicine-emergency-domains.md`

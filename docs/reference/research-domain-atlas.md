@@ -469,6 +469,16 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 出血性死亡边界可被血液系统支撑 | `transfusion-blood-management-hemorrhage-continuity/` | 输血、血液可得、患者血液管理、大出血、凝血支持、hemovigilance | 血液供应、凝血支持、质量安全或输血治理失败，使出血和贫血变成可预防死亡 |
 | 毒性暴露可被识别逆转 | `overdose-poisoning-reversal-toxicology-continuity/` | 药物过量、中毒、毒物中心、逆转窗口、呼吸抑制、急诊转运、恢复连接 | 可逆中毒和过量因无人识别、无人咨询、无人逆转或恢复链断裂而变成死亡或长期损伤 |
 | 身体边界毁损后可重建恢复 | `burn-injury-critical-care-rehabilitation-continuity/` | 烧伤中心、液体/感染/疼痛/手术照护、皮肤屏障、瘢痕、康复 | 烧伤后的液体丢失、感染、疼痛、重建失败和社会断裂长期压缩主体行动窗口 |
+| 心肌缺血可在坏死前再灌注 | `acute-coronary-syndrome-reperfusion-continuity/` | 急性冠脉综合征、胸痛系统、心电/肌钙蛋白、再灌注窗口、导管室、心脏康复 | 胸痛识别、再灌注延误、导管室接入或康复断裂把可逆缺血推向心肌坏死、心衰和猝死 |
+| 心衰失代偿可被稳定并回到长期管理 | `acute-heart-failure-decompensation-continuity/` | 急性心衰、容量/氧合、急诊稳定、住院转归、出院衔接、再入院预防 | 呼吸困难、容量超负荷和低灌注未被稳定，导致反复住院、器官损害、失能和死亡 |
+| 节律失稳和晕厥可被识别追踪 | `cardiac-arrhythmia-syncope-decompensation-continuity/` | 心律失常、晕厥、监测、猝死风险、起搏/除颤器系统、随访 | 传导异常、快速/缓慢心律和晕厥风险未被识别，导致跌倒、猝死或长期恐惧限制行动 |
+| 血栓栓塞可被快速分层和长期预防 | `venous-thromboembolism-pulmonary-embolism-continuity/` | VTE、肺栓塞、风险分层、抗凝安全、血栓团队、复发预防 | 肺栓塞、深静脉血栓和抗凝失衡把可治疗事件变成急性死亡、慢性肺高压或复发风险 |
+| 血压急性失控可避免靶器官损害 | `hypertensive-crisis-end-organ-risk-continuity/` | 高血压危象、靶器官风险、急性评估、长期控制、随访连续性 | 血压长期失控或急性靶器官损害识别失败，造成卒中、心衰、肾衰、视网膜损伤和治疗断裂 |
+| 糖代谢危象可被稳定并防复发 | `diabetic-hyperglycemic-hypoglycemic-crisis-continuity/` | DKA/HHS、严重低血糖、胰岛素、监测、急诊稳定、教育、复发预防 | 高低血糖危象、胰岛素断供、监测失败和教育断裂把可逆代谢失衡推向昏迷、死亡或反复急诊 |
+| 严重过敏可进入可逆急救和再暴露预防 | `anaphylaxis-allergic-emergency-continuity/` | 过敏性休克、严重过敏、肾上腺素可及、触发因素识别、随访、再暴露预防 | 触发因素未知、急救可及性不足和随访断裂，使一次过敏事件转化为死亡风险和持续恐惧 |
+| 气道急性加重可避免缺氧和通气失败 | `asthma-copd-exacerbation-airway-continuity/` | 哮喘/COPD 加重、气道炎症、氧合/通气、急诊稳定、用药可及、复发预防 | 气道炎症、感染、污染、药物不可及和随访断裂把可控慢病推向缺氧、住院和长期功能下降 |
+| 消化道出血可通过内镜和血液系统接住 | `acute-gastrointestinal-bleeding-endoscopy-continuity/` | GI 出血、复苏、内镜接入、输血/抗凝管理、再出血预防、随访 | 呕血、黑便、抗凝冲突、内镜延误和再出血预防失败把可处理出血推向休克、贫血和死亡 |
+| 孕产妇急症可在母婴损害前接入团队 | `obstetric-emergency-hemorrhage-hypertension-continuity/` | 产科出血、高血压急症、预警、产科团队、转运、产后连续性 | 出血、子痫前期/子痫、转运延误和产后断裂把可预防孕产妇损害转为死亡、失能和家庭断裂 |
 | 移动过程可避免严重伤害 | `road-traffic-injury-prevention-safe-mobility/` | 道路安全系统、速度管理、车辆安全、执法公平、交通伤害监测 | 出行过程制造死亡、严重伤害、长期失能、家庭收入中断和照护负担 |
 | 地理距离不能排除主体 | `rural-health-access-geographic-equity/` | 农村服务密度、距离、交通、宽带、卫生人力、药房/医院可达 | 可修复风险因地点、距离、宽带、人力和设施稀缺被延误或放弃 |
 | 住所缺失时服务不能断线 | `homelessness-unsheltered-health-continuity/` | 庇护、外展、卫生、睡眠、安全、身份、住房服务、医疗连续性 | 露宿、卫生缺失、暴露、创伤、慢病失控和服务断点把主体推出恢复路径 |
@@ -1094,6 +1104,16 @@ risk-engineering
   -> transfusion-blood-management-hemorrhage-continuity
   -> overdose-poisoning-reversal-toxicology-continuity
   -> burn-injury-critical-care-rehabilitation-continuity
+  -> acute-coronary-syndrome-reperfusion-continuity
+  -> acute-heart-failure-decompensation-continuity
+  -> cardiac-arrhythmia-syncope-decompensation-continuity
+  -> venous-thromboembolism-pulmonary-embolism-continuity
+  -> hypertensive-crisis-end-organ-risk-continuity
+  -> diabetic-hyperglycemic-hypoglycemic-crisis-continuity
+  -> anaphylaxis-allergic-emergency-continuity
+  -> asthma-copd-exacerbation-airway-continuity
+  -> acute-gastrointestinal-bleeding-endoscopy-continuity
+  -> obstetric-emergency-hemorrhage-hypertension-continuity
   -> road-traffic-injury-prevention-safe-mobility
   -> rural-health-access-geographic-equity
   -> homelessness-unsheltered-health-continuity

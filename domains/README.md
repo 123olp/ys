@@ -582,6 +582,16 @@
 - `transfusion-blood-management-hemorrhage-continuity/`：输血、血液管理与出血连续性，整理血液可得、患者血液管理、大出血、凝血支持和 hemovigilance。
 - `overdose-poisoning-reversal-toxicology-continuity/`：过量、中毒逆转与毒理连续性，整理毒物中心、过量监测、逆转窗口、呼吸抑制、急诊转运和恢复连接。
 - `burn-injury-critical-care-rehabilitation-continuity/`：烧伤重症与康复连续性，整理烧伤中心、液体/感染/疼痛/手术照护、皮肤屏障、瘢痕和长期康复。
+- `acute-coronary-syndrome-reperfusion-continuity/`：急性冠脉综合征与再灌注连续性，整理胸痛系统、ECG/troponin、转运、PCI/再灌注和心肌损伤后恢复。
+- `acute-heart-failure-decompensation-continuity/`：急性心衰失代偿连续性，整理肺水肿、容量/灌注、住院、肾心交互、出院交接和再入院。
+- `cardiac-arrhythmia-syncope-decompensation-continuity/`：心律失常、晕厥与突发失稳连续性，整理 AF、晕厥、监测、卒中/跌倒/骤停前风险。
+- `venous-thromboembolism-pulmonary-embolism-continuity/`：VTE 与肺栓塞连续性，整理 DVT、PE、抗凝连续性、住院/术后/癌症/妊娠相关血栓和复发。
+- `hypertensive-crisis-end-organ-risk-continuity/`：高血压危象与靶器官风险连续性，整理极端血压、脑心肾主动脉急性风险和随访交接。
+- `diabetic-hyperglycemic-hypoglycemic-crisis-continuity/`：糖尿病高低血糖危象连续性，整理 DKA、HHS、严重低血糖、监测断裂、胰岛素连续性和恢复教育。
+- `anaphylaxis-allergic-emergency-continuity/`：过敏性休克与严重过敏急症连续性，整理触发物、肾上腺素可及、场所计划、EMS 转接和过敏随访。
+- `asthma-copd-exacerbation-airway-continuity/`：哮喘/COPD 急性加重与气道连续性，整理吸入药可及、急诊接入、住院、呼吸支持和康复。
+- `acute-gastrointestinal-bleeding-endoscopy-continuity/`：急性消化道出血与内镜连续性，整理上/下 GI 出血、输血接口、抗凝背景、内镜可及和再出血。
+- `obstetric-emergency-hemorrhage-hypertension-continuity/`：产科出血与高血压急症连续性，整理产后出血、子痫前期/子痫、转运、血液接口和产后随访。
 - `governance-rights/`：治理与主体权利，整理同意、退出、数据权、法律身份、AI 治理和研究伦理。
 - `pain-suffering-control/`：疼痛与痛苦控制，整理慢性疼痛、症状负担、姑息医学和可承受持续性。
 - `health-literacy-navigation/`：健康素养与服务导航，整理可理解信息、风险沟通、共同决策和系统入口。

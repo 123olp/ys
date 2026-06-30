@@ -1,0 +1,48 @@
+# Asthma COPD Exacerbation Airway Continuity
+
+`asthma-copd-exacerbation-airway-continuity/` 研究哮喘急性发作、COPD 急性加重、吸入药/氧疗可及、急诊接入、住院/呼吸支持和恢复如何影响主体持续性。
+
+> 核心问题：气道急性加重会把可行动主体快速推入缺氧、疲劳、住院、机械通气或死亡风险。它位于日常呼吸管理和机械通气之间，是必须独立建模的气道连续性窗口。
+
+## 先验位置
+
+```text
+有效永生 / 主体持续性最大化
+  -> 主体依赖气道通畅和肺通气维持氧合与行动能力
+  -> 哮喘/COPD 急性加重会快速压缩气道和呼吸储备
+  -> 结果取决于触发物控制、药物可及、急诊接入、住院支持和恢复交接
+  -> 因此气道急性加重是呼吸连续性的时间关键域
+```
+
+## 关注对象
+
+- Asthma exacerbation、COPD exacerbation、inhaler access, rescue medication continuity, oxygen / noninvasive support boundary, hospitalization, readmission, pulmonary rehabilitation。
+- 与 `respiratory-oxygenation/` 的边界：该域关注基础呼吸氧合；本域关注哮喘/COPD 急性加重链。
+- 与 `mechanical-ventilation-respiratory-failure-continuity/` 的关系：严重加重可进入机械通气；本域关注进入机械通气前后的急性气道窗口。
+
+## Human Infra 模型链路
+
+```text
+气道急性加重治理系统 T
+  -> 改变触发物、吸入药可及、急诊接入、住院支持和康复交接变量 X
+  -> 改变氧合、通气负担、住院、呼吸支持和活动耐量状态 S
+  -> 改变急性死亡、再入院、长期呼吸储备下降和有效时间损失 λ(t)
+  -> 影响主体行动能力、恢复能力和未来选择权
+```
+
+## 非目标
+
+- 不提供吸入药、氧疗、雾化、激素、抗生素、急诊分诊、呼吸机、戒烟或个体治疗建议。
+- 不生成哮喘/COPD action plan、峰流速判断、用药调整、家庭处理或设备设置工具。
+- 不收集个案症状、氧饱和度、肺功能、用药、设备、吸烟史或位置数据。
+
+## Source Signals
+
+- GINA asthma report: https://ginasthma.org/
+- GOLD COPD report: https://goldcopd.org/
+- NHLBI asthma and COPD materials: https://www.nhlbi.nih.gov/
+
+## 下一步
+
+- 建立 Airway Exacerbation Card：trigger, medication access, emergency access, oxygenation, hospitalization, rehab/readmission。
+- 与 `respiratory-oxygenation/`、`home-oxygen-respiratory-equipment-supply-continuity/` 和 `mechanical-ventilation-respiratory-failure-continuity/` 建立接口。

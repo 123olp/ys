@@ -1266,6 +1266,16 @@ flowchart TD
 | [Transfusion Blood Management Hemorrhage Continuity](domains/transfusion-blood-management-hemorrhage-continuity/README.md) | 输血、血液可得、患者血液管理、大出血方案、凝血支持和 hemovigilance | 把出血性死亡边界纳入血液供应、安全和止血支持模型 | 不提供输血阈值、血型匹配、凝血处理、献血资格、库存调度或医疗建议 |
 | [Overdose Poisoning Reversal Toxicology Continuity](domains/overdose-poisoning-reversal-toxicology-continuity/README.md) | 药物过量、中毒、毒物中心、逆转窗口、呼吸抑制和恢复连接 | 把可逆毒性暴露从无人识别的死亡转化为咨询、逆转、转运和恢复链 | 不提供中毒处理、解毒药、纳洛酮操作、物质使用、规避检测或自伤方法 |
 | [Burn Injury Critical Care Rehabilitation Continuity](domains/burn-injury-critical-care-rehabilitation-continuity/README.md) | 烧伤中心、液体/感染/疼痛/手术照护、皮肤屏障、瘢痕和康复 | 把身体边界急性毁损后的生存、重建、功能恢复和社会参与纳入模型 | 不提供烧伤急救、伤口处理、敷料、止痛、抗感染、手术、瘢痕或法律建议 |
+| [Acute Coronary Syndrome Reperfusion Continuity](domains/acute-coronary-syndrome-reperfusion-continuity/README.md) | 急性冠脉综合征、胸痛系统、心电图/肌钙蛋白路径、再灌注和康复 | 把心肌缺血的小时级可逆窗口纳入主体持续性模型 | 不提供胸痛判断、心电图/肌钙蛋白解读、药物、PCI、溶栓、转运或个体医疗建议 |
+| [Acute Heart Failure Decompensation Continuity](domains/acute-heart-failure-decompensation-continuity/README.md) | 急性心衰失代偿、肺水肿、容量/灌注、住院、出院交接和再入院 | 把心衰急性失衡从呼吸/肾脏/住院循环中拆出可恢复窗口 | 不提供利尿、氧疗、补液、饮食、出院、设备、急诊分诊或个体治疗建议 |
+| [Cardiac Arrhythmia Syncope Decompensation Continuity](domains/cardiac-arrhythmia-syncope-decompensation-continuity/README.md) | 心律失常、晕厥、心房颤动、传导异常、监测、卒中/跌倒/骤停风险 | 把节律连续性建模为突然失能、栓塞和骤停之前的风险链 | 不提供心电图判读、抗凝、起搏器/ICD、消融、驾驶、运动或个体医疗建议 |
+| [Venous Thromboembolism Pulmonary Embolism Continuity](domains/venous-thromboembolism-pulmonary-embolism-continuity/README.md) | DVT、肺栓塞、抗凝连续性、住院/术后/癌症/妊娠相关血栓和复发 | 把血栓形成和肺循环急性失效纳入血液-循环-呼吸交界模型 | 不提供 D-dimer/影像解读、抗凝、溶栓、滤器、旅行、术后、妊娠或治疗建议 |
+| [Hypertensive Crisis End Organ Risk Continuity](domains/hypertensive-crisis-end-organ-risk-continuity/README.md) | 高血压危象、急性靶器官风险、脑/心/肾/主动脉事件和随访交接 | 把极端血压从单个数字转化为器官损伤窗口和长期风险链 | 不提供血压读数判断、降压药、剂量、家庭处理、急诊分诊或检查建议 |
+| [Diabetic Hyperglycemic Hypoglycemic Crisis Continuity](domains/diabetic-hyperglycemic-hypoglycemic-crisis-continuity/README.md) | DKA、HHS、严重低血糖、监测断裂、胰岛素连续性和恢复教育 | 把葡萄糖、胰岛素、水、电解质和意识状态失控纳入急性代谢模型 | 不提供血糖判断、胰岛素剂量、补液、电解质、饮食、泵/CGM 设置或急救建议 |
+| [Anaphylaxis Allergic Emergency Continuity](domains/anaphylaxis-allergic-emergency-continuity/README.md) | 过敏性休克、严重过敏、触发物、肾上腺素可及、场所计划和急救转接 | 把免疫反应突然关闭气道和循环的分钟级风险纳入模型 | 不提供肾上腺素使用、剂量、急救步骤、暴露挑战、脱敏、处方或个案医疗建议 |
+| [Asthma COPD Exacerbation Airway Continuity](domains/asthma-copd-exacerbation-airway-continuity/README.md) | 哮喘急性发作、COPD 急性加重、吸入药可及、急诊接入、住院和康复 | 把气道急性加重放在日常呼吸管理与机械通气之间建模 | 不提供吸入药、氧疗、雾化、激素、抗生素、峰流速、设备设置或家庭处理建议 |
+| [Acute Gastrointestinal Bleeding Endoscopy Continuity](domains/acute-gastrointestinal-bleeding-endoscopy-continuity/README.md) | 急性上/下消化道出血、输血接口、凝血支持、内镜可及和复发预防 | 把隐蔽或急性失血转化为识别、稳定、内镜和恢复链 | 不提供便血/呕血判断、停药、抗凝处理、输血、内镜、药物、饮食或急诊建议 |
+| [Obstetric Emergency Hemorrhage Hypertension Continuity](domains/obstetric-emergency-hemorrhage-hypertension-continuity/README.md) | 产科出血、子痫前期/子痫、妊娠高血压、产后窗口、转运和血液接口 | 把妊娠分娩产后高负荷阶段的出血和高血压急症纳入主体持续性 | 不提供妊娠/产后症状判断、用药、分娩方式、医院选择、转运、产后恢复或个体医疗建议 |
 | [Road Traffic Injury Prevention Safe Mobility](domains/road-traffic-injury-prevention-safe-mobility/README.md) | 道路交通伤害、安全系统、速度管理、车辆安全、交通数据和安全移动 | 让出行从可达性进一步成为不制造死亡和失能的行动基础设施 | 不提供驾驶、路线、事故责任、保险、法律、车辆改装、危险驾驶、规避执法或急救建议 |
 | [Rural Health Access Geographic Equity](domains/rural-health-access-geographic-equity/README.md) | 地理距离、服务密度、宽带、交通、卫生人力和农村健康公平 | 防止可修复风险因为地点、交通、宽带和服务稀缺被延误或放弃 | 不提供个体医疗、保险、转诊、迁居、急救路线、补助申请、政策游说或商业选址建议 |
 | [Homelessness Unsheltered Health Continuity](domains/homelessness-unsheltered-health-continuity/README.md) | 无家可归、露宿、庇护、外展、住房服务、卫生、安全和照护断点 | 让没有稳定住所的主体仍能维持医疗、卫生、身份、睡眠、安全和福利入口 | 不提供个体庇护、住房申请、法律救济、福利申请、露宿规避、执法规避或生存技巧 |
@@ -1884,5 +1894,6 @@ flowchart LR
 - 2026-07-01：新增第七十九波 9 个 AI 评测与运行治理连续性域，覆盖 AI 评测基准有效性、红队对抗测试、事故报告部署后监控、数据谱系污染漂移、合成数据验证、模型供应链发布、agent 工具权限沙箱、人机监督交接问责和 AI 资源成本延迟预算。
 - 2026-07-01：新增第八十波 10 个先进计算、能源与连接底座连续性域，覆盖半导体制造计量、先进封装、芯片设计/EDA/IP 验证、AI 加速器性能、数据中心冷却水热、大型负载并网输电、电网级储能灵活性、先进核能安全发电、海底光缆互联网骨干和卫星通信频谱轨道。
 - 2026-07-01：新增第八十一波 10 个急性救援与临时器官支持连续性域，覆盖心脏骤停 CPR/除颤、脓毒症休克早识别复苏、创伤系统出血控制、ICU 器官支持谵妄、机械通气呼吸衰竭、ECMO/ECLS、急性肾损伤肾脏替代、输血血液管理出血、过量/中毒逆转毒理和烧伤重症康复。
+- 2026-07-01：新增第八十二波 10 个急性内科与时间关键急症连续性域，覆盖急性冠脉综合征再灌注、急性心衰失代偿、心律失常/晕厥失代偿、VTE/肺栓塞、高血压危象靶器官风险、糖尿病高低血糖危象、过敏性休克、哮喘/COPD 急性加重、急性消化道出血内镜和产科出血/高血压急症。
 
 完整记录见 [CHANGELOG.md](CHANGELOG.md)。
