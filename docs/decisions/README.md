@@ -29,3 +29,4 @@ Current decisions:
 - `0014-add-tenth-wave-basic-livelihood-risk-transfer-domains.md`
 - `0015-add-eleventh-wave-civic-safety-continuity-domains.md`
 - `0016-add-twelfth-wave-treatment-service-rights-domains.md`
+- `0017-add-thirteenth-wave-health-data-outcomes-public-health-domains.md`

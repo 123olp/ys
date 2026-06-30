@@ -25,6 +25,7 @@ docs/
 │   ├── 0014-add-tenth-wave-basic-livelihood-risk-transfer-domains.md
 │   ├── 0015-add-eleventh-wave-civic-safety-continuity-domains.md
 │   ├── 0016-add-twelfth-wave-treatment-service-rights-domains.md
+│   ├── 0017-add-thirteenth-wave-health-data-outcomes-public-health-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -99,6 +100,7 @@ docs/
 - `reference/project-boundary-v0.1.md`：定义当前公开版本边界、纳入范围、排除范围、材料落点和后续版本方向。
 - `reference/research-domain-atlas.md`：定义从有效永生先验条件生成研究域的规则、当前域地图和域判定契约。
 - `reference/research-domain-radar.md`：记录尚未晋升为正式子域的潜在研究域、来源信号和晋升触发条件。
+- `domains/health-data-privacy-governance/`、`domains/functioning-quality-of-life-outcomes/`、`domains/health-economics-value-assessment/`、`domains/immunization-public-health-surveillance/`、`domains/maternal-newborn-child-development/` 和 `domains/patient-safety-organizational-learning/`：第十三波正式研究域，分别承载数据治理、结局评估、价值评估、公共卫生监测、早期生命基础设施和患者安全组织学习。
 - `reference/research-model-visualization-toolkit.md`：沉淀科研论文阅读、文献脊梁、模型工具、可视化标准和 Human Infra 定量页面实现路线。
 - `reference/source-card-system.md`：定义论文、书籍、工具、案例、标准和数据集进入项目之前的资料卡片制度。
 - `reference/domain-map.md`：定义根项目与子域的边界、迁移切片、主动不做和验证点。

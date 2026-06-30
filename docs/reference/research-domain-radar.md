@@ -97,6 +97,12 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `community-resource-navigation/` | 资源目录、社会需求筛查、转介和闭环回访决定分散服务能否实际抵达主体 |
 | `language-access-plain-communication/` | 清晰语言、语言服务和认知可访问性决定权利、风险和服务流程能否被理解和执行 |
 | `labor-rights-workplace-protection/` | 工资工时、安全权利、反歧视、反报复和申诉执行决定工作是否支撑而不是侵蚀主体持续性 |
+| `health-data-privacy-governance/` | 同意、退出、隐私、安全、基因数据共享和信息阻断边界决定测量系统是否仍保护主体权利 |
+| `functioning-quality-of-life-outcomes/` | 功能状态、生活质量、症状负担和患者报告结局决定干预是否真的改善主体能力和体验 |
+| `health-economics-value-assessment/` | 疾病负担、成本效果、HTA、预算影响和公平边界决定稀缺资源如何转化为公共价值 |
+| `immunization-public-health-surveillance/` | 免疫计划、传染病监测、感染防控、AMR、One Health 和废水信号决定群体风险屏障 |
+| `maternal-newborn-child-development/` | 孕产、新生儿、儿童健康、生长、早期发展和养育照护决定主体能力形成的早期条件 |
+| `patient-safety-organizational-learning/` | 患者安全、事件报告、团队沟通、根因分析和安全文化决定医疗组织能否防止重复伤害 |
 
 ## 来源信号
 
@@ -172,6 +178,12 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | 211 / Open Referral HSDS / Gravity Project / CMS Accountable Health Communities | 提示社区资源目录、社会需求筛查、转介和闭环回访是资源转化为实际支持的接口 |
 | PlainLanguage.gov / LEP.gov / National CLAS / W3C Cognitive Accessibility | 提示清晰语言、语言服务、文化与语言适配、认知可访问性是公共服务可达条件 |
 | ILO International Labour Standards / DOL WHD / FLSA / OSHA workers / EEOC / DOL OLMS | 提示劳动标准、工资工时、安全权利、反歧视、反报复和申诉执行需要独立劳动保护域 |
+| HHS HIPAA / Common Rule / NIST Privacy / NIST CSF / NIH GDS / GA4GH / ONC Information Blocking | 提示敏感健康、基因、行为、神经和服务数据需要同意、退出、安全、共享、二次使用和信息阻断边界 |
+| PROMIS / WHO ICF / EQ-5D / ICHOM / PRO-CTCAE / WHOQOL | 提示主体持续性必须用功能、生活质量、症状负担和患者报告结局审查，而不能只看替代指标 |
+| IHME GBD / WHO Global Health Estimates / WHO-CHOICE / NICE HTA / ICER / AHRQ MEPS | 提示疾病负担、成本效果、HTA、预算影响、公平和公共价值评估需要独立域 |
+| WHO vaccines / IA2030 / CDC NNDSS / WHO GISRS / IHR / IPC / NHSN / GLASS / CDC NWSS | 提示群体免疫、传染病监测、公共卫生应急、感染防控、AMR、One Health 和废水监测是独立风险屏障 |
+| WHO maternal/newborn/child health / WHO growth standards / Nurturing Care / CDC PRAMS / World Bank ECD | 提示孕产、新生儿、儿童健康、生长、早期发展和养育照护是长期主体能力形成的源头条件 |
+| WHO Patient Safety / AHRQ TeamSTEPPS / CUSP / SOPS / IHI RCA2 | 提示患者安全、团队沟通、事件学习、根因分析和安全文化需要独立组织学习域 |
 
 Source links:
 
@@ -359,6 +371,47 @@ Source links:
 - https://www.osha.gov/workers
 - https://www.eeoc.gov/
 - https://www.dol.gov/agencies/olms
+- https://www.hhs.gov/hipaa/for-professionals/privacy/index.html
+- https://www.hhs.gov/ohrp/regulations-and-policy/regulations/common-rule/index.html
+- https://www.nist.gov/privacy-framework
+- https://www.nist.gov/cyberframework
+- https://sharing.nih.gov/genomic-data-sharing-policy
+- https://www.ga4gh.org/product/framework-for-responsible-sharing-of-genomic-and-health-related-data/
+- https://healthit.gov/information-blocking/
+- https://www.healthmeasures.net/explore-measurement-systems/promis
+- https://www.who.int/standards/classifications/international-classification-of-functioning-disability-and-health
+- https://euroqol.org/information-and-support/euroqol-instruments/
+- https://www.ichom.org/patient-centered-outcome-measures/
+- https://healthcaredelivery.cancer.gov/pro-ctcae/
+- https://www.who.int/tools/whoqol
+- https://www.healthdata.org/research-analysis/gbd
+- https://www.who.int/data/global-health-estimates
+- https://www.who.int/universal-health-coverage/compendium/cost-effectiveness-portal
+- https://www.nice.org.uk/what-nice-does/our-guidance/about-technology-appraisal-guidance
+- https://icer.org/assessment/value-assessment-framework-2020/
+- https://meps.ahrq.gov/mepsweb/
+- https://www.who.int/health-topics/vaccines-and-immunization
+- https://www.who.int/teams/immunization-vaccines-and-biologicals/strategies/ia2030
+- https://www.cdc.gov/nndss/
+- https://www.who.int/initiatives/global-influenza-surveillance-and-response-system
+- https://www.who.int/health-topics/international-health-regulations
+- https://www.who.int/teams/integrated-health-services/infection-prevention-control
+- https://www.cdc.gov/nhsn/
+- https://www.who.int/initiatives/glass
+- https://www.cdc.gov/nwss/
+- https://www.who.int/health-topics/maternal-health
+- https://www.who.int/news-room/fact-sheets/detail/newborn-mortality
+- https://www.who.int/health-topics/child-health
+- https://www.who.int/tools/child-growth-standards
+- https://www.who.int/publications/i/item/9789241514064
+- https://www.cdc.gov/prams/
+- https://www.cdc.gov/child-development/
+- https://www.worldbank.org/en/topic/earlychildhooddevelopment
+- https://www.who.int/publications/i/item/9789240032705
+- https://www.ahrq.gov/teamstepps-program/index.html
+- https://www.ahrq.gov/hai/cusp/index.html
+- https://www.ahrq.gov/sops/index.html
+- https://www.ihi.org/resources/tools/rca2-improving-root-cause-analyses-and-actions-prevent-harm
 
 ## 使用规则
 

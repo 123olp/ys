@@ -96,6 +96,24 @@ domains/
 ├── telehealth-remote-monitoring-access/
 │   ├── AGENTS.md
 │   └── README.md
+├── health-data-privacy-governance/
+│   ├── AGENTS.md
+│   └── README.md
+├── functioning-quality-of-life-outcomes/
+│   ├── AGENTS.md
+│   └── README.md
+├── health-economics-value-assessment/
+│   ├── AGENTS.md
+│   └── README.md
+├── immunization-public-health-surveillance/
+│   ├── AGENTS.md
+│   └── README.md
+├── maternal-newborn-child-development/
+│   ├── AGENTS.md
+│   └── README.md
+├── patient-safety-organizational-learning/
+│   ├── AGENTS.md
+│   └── README.md
 ├── caregiving-long-term-care/
 │   ├── AGENTS.md
 │   └── README.md
@@ -280,7 +298,7 @@ domains/
 - `attention-executive-control/`、`learning-skill-acquisition/` 和 `time-allocation-effective-time/` 负责注意力、学习能力和有效时间这些主体代理与任务资源条件。
 - `financial-resilience-access/`、`occupational-work-design/`、`labor-rights-workplace-protection/`、`language-access-plain-communication/` 和 `information-integrity-trust/` 负责财务韧性、工作环境、劳动权利、语言理解入口和信息可信度这些资源入口与认知环境条件。
 - `food-security-nutrition-access/`、`water-sanitation-hygiene-continuity/`、`energy-access-resilience/`、`social-protection-benefits-delivery/`、`community-resource-navigation/`、`insurance-risk-transfer/` 和 `childcare-family-continuity/` 负责食物、水卫生、能源、公共福利、社区资源导航、保险风险池和托育家庭连续性这些基础生计与风险分摊条件。
-- `healthcare-access-continuity/`、`medicine-access-treatment-continuity/`、`patient-data-interoperability/`、`telehealth-remote-monitoring-access/`、`caregiving-long-term-care/`、`housing-built-environment-stability/`、`transportation-access-mobility/`、`legal-identity-civil-registration/` 和 `emergency-preparedness-response/` 负责医疗接入、药品治疗连续性、患者数据互操作、远程照护、长期照护、居住空间、交通可达、法律身份和应急响应这些服务接入与生活连续性条件。
+- `healthcare-access-continuity/`、`medicine-access-treatment-continuity/`、`patient-data-interoperability/`、`telehealth-remote-monitoring-access/`、`health-data-privacy-governance/`、`functioning-quality-of-life-outcomes/`、`health-economics-value-assessment/`、`immunization-public-health-surveillance/`、`maternal-newborn-child-development/`、`patient-safety-organizational-learning/`、`caregiving-long-term-care/`、`housing-built-environment-stability/`、`transportation-access-mobility/`、`legal-identity-civil-registration/` 和 `emergency-preparedness-response/` 负责医疗接入、药品治疗连续性、患者数据互操作、远程照护、健康数据治理、结局评估、价值评估、公共卫生监测、早期生命发展、患者安全、长期照护、居住空间、交通可达、法律身份和应急响应这些服务接入与生活连续性条件。
 - `access-to-justice-legal-aid/`、`civic-participation-election-access/`、`migration-displacement-humanitarian-continuity/` 和 `digital-inclusion-connectivity/` 负责司法可及、公民参与、迁移流离失所人道连续性和数字连接这些制度参与与公共服务接入条件。
 - `personal-safety-violence-prevention/` 和 `product-safety-recall-systems/` 负责暴力预防、受害者支持、产品缺陷报告、召回和纠正这些公共安全连续性条件。
 - `cellular-reprogramming/` 负责山中因子、部分重编程、化学重编程、AI 因子设计和表观遗传编辑等“细胞状态可重写”谱系，不提供实验协议或人体应用建议。

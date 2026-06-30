@@ -96,6 +96,12 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 药品和治疗可持续执行 | `medicine-access-treatment-continuity/` | 基本药物、短缺、标签、覆盖、药房可及、用药安全 | 处方无法转化为持续治疗，或把药品资料写成个体用药建议 |
 | 患者数据可携带互通 | `patient-data-interoperability/` | 健康记录访问、数据可携带、互操作、授权应用、跨机构交换 | 资料被机构锁住、照护交接断裂、或绕过授权与隐私边界 |
 | 远程照护可达可升级 | `telehealth-remote-monitoring-access/` | 远程问诊、远程患者监测、居家设备、覆盖、升级路径 | 远程数据被误当诊断，或把 telehealth 写成急诊替代和产品背书 |
+| 敏感健康数据可被治理 | `health-data-privacy-governance/` | 同意、撤回、隐私、安全、共享、用途边界、审计、再识别风险 | 测量系统变成监控、歧视、越权使用或不可逆隐私暴露 |
+| 功能和生活质量可被主体中心地衡量 | `functioning-quality-of-life-outcomes/` | 功能状态、生活质量、症状负担、患者报告结局、主体体验 | 指标替代真实体验，或把人压缩成单一分数和资格判断 |
+| 稀缺资源价值可审查 | `health-economics-value-assessment/` | 疾病负担、成本效果、HTA、预算影响、公平、公共价值 | 把资源配置简化为价格、投资、报销或个体治疗取舍建议 |
+| 群体免疫和传染病风险可监测 | `immunization-public-health-surveillance/` | 免疫覆盖、病例监测、IPC、HAI、AMR、One Health、废水信号 | 把群体监测写成个体医疗建议、疫情保证或公共卫生规避 |
+| 早期生命条件可支撑未来主体 | `maternal-newborn-child-development/` | 孕产安全、新生儿、儿童健康、生长、早期发展、养育照护 | 把母婴儿童资料写成个体医疗、育儿、排名或家庭监控建议 |
+| 医疗组织可从错误中学习 | `patient-safety-organizational-learning/` | 事件报告、近失误、团队沟通、根因分析、安全文化、行动闭环 | 把患者安全写成追责、机构背书、法律判断或惩罚性监控 |
 | 照护可持续 | `caregiving-long-term-care/` | 家庭照护、长期照护、居家社区支持、照护协调、照护者负担 | 长寿退化为无人照护、照护者崩溃、失能支持中断或尊严丧失 |
 | 居住环境可稳定 | `housing-built-environment-stability/` | 住房稳定、住房质量、室内环境、无障碍、社区资源、建成环境 | 居住空间持续制造暴露、跌倒、孤立、服务断点或照护不可行 |
 | 日常移动和服务接入可达 | `transportation-access-mobility/` | 公共交通、无障碍交通、出行时间、医疗交通、交通成本、交通安全 | 有资源但到不了，服务延误、缺席、孤立或撤离不可达 |
@@ -208,6 +214,12 @@ risk-engineering
   -> medicine-access-treatment-continuity
   -> patient-data-interoperability
   -> telehealth-remote-monitoring-access
+  -> health-data-privacy-governance
+  -> functioning-quality-of-life-outcomes
+  -> health-economics-value-assessment
+  -> immunization-public-health-surveillance
+  -> maternal-newborn-child-development
+  -> patient-safety-organizational-learning
   -> caregiving-long-term-care
   -> housing-built-environment-stability
   -> transportation-access-mobility

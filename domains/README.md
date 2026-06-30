@@ -42,6 +42,12 @@
 - `medicine-access-treatment-continuity/`：药品可及与治疗连续性，整理基本药物、药品短缺、标签、覆盖、费用和用药安全。
 - `patient-data-interoperability/`：患者数据互操作，整理健康记录访问、数据可携带、互操作标准、授权应用和跨机构交换。
 - `telehealth-remote-monitoring-access/`：远程医疗与居家监测，整理远程问诊、远程患者监测、居家设备、覆盖规则和数字照护连续性。
+- `health-data-privacy-governance/`：健康数据隐私治理，整理同意、退出、隐私、安全、基因数据共享、信息阻断和用途边界。
+- `functioning-quality-of-life-outcomes/`：功能与生活质量结局，整理功能状态、生活质量、症状负担、患者报告结局和主体中心结果。
+- `health-economics-value-assessment/`：健康经济与价值评估，整理疾病负担、成本效果、HTA、资源分配、公共价值和公平边界。
+- `immunization-public-health-surveillance/`：免疫与公共卫生监测，整理免疫计划、传染病监测、感染防控、AMR、One Health 和废水监测。
+- `maternal-newborn-child-development/`：母婴健康与儿童发展，整理孕产、新生儿、儿童健康、生长标准、早期发展和养育照护。
+- `patient-safety-organizational-learning/`：患者安全与组织学习，整理事件报告、团队沟通、根因分析、CUSP、TeamSTEPPS 和安全文化。
 - `caregiving-long-term-care/`：照护与长期照护，整理家庭照护、长期照护、居家社区支持、照护协调和照护者负担。
 - `housing-built-environment-stability/`：住房与建成环境稳定，整理住房稳定、住房质量、室内环境、无障碍、社区资源和建成环境。
 - `transportation-access-mobility/`：交通接入与日常移动，整理公共交通、无障碍交通、出行时间、医疗交通、交通成本和外部可达性。
