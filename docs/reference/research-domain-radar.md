@@ -279,6 +279,16 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `pharmaceutical-quality-supply-integrity/` | 药品质量、制造、假劣药防控和供应完整性决定治疗物质是否真实安全有效 |
 | `emergency-medical-services-prehospital-care/` | EMS、调度、响应时间和院前照护决定急性事件能否在可逆窗口内进入医疗系统 |
 | `surgical-anesthesia-perioperative-safety/` | 手术、麻醉和围手术期安全决定高风险修复干预是否减少而不是制造失能和死亡 |
+| `cardiac-arrest-cpr-defibrillation-continuity/` | 心脏骤停 CPR 与除颤决定分钟级突然死亡边界能否进入可逆复苏链 |
+| `sepsis-shock-early-recognition-resuscitation-continuity/` | 脓毒症休克早识别与复苏决定感染是否在多器官崩溃前进入源控制和支持窗口 |
+| `trauma-system-hemorrhage-control-continuity/` | 创伤系统与出血控制决定事故、暴力、跌落和灾害后的可救治损伤是否被及时接住 |
+| `intensive-care-organ-support-delirium-continuity/` | ICU 器官支持与谵妄治理决定危重病存活是否能回到认知、肌力、家庭和有效时间 |
+| `mechanical-ventilation-respiratory-failure-continuity/` | 机械通气与呼吸衰竭治理决定氧供失败能否被临时支持并避免设备相关伤害 |
+| `ecmo-extracorporeal-life-support-continuity/` | ECMO/ECLS 决定极端心肺衰竭是否获得短期桥接、转运、退出和恢复路径 |
+| `acute-kidney-injury-renal-replacement-continuity/` | 急性肾损伤与肾脏替代决定内环境失控是否能被临时维持到恢复或长期转换 |
+| `transfusion-blood-management-hemorrhage-continuity/` | 输血、血液管理与出血治理决定血液供应、凝血支持和血液安全是否能守住出血性死亡边界 |
+| `overdose-poisoning-reversal-toxicology-continuity/` | 过量、中毒逆转与毒理连续性决定可逆毒性暴露是否进入咨询、逆转、转运和恢复链 |
+| `burn-injury-critical-care-rehabilitation-continuity/` | 烧伤重症与康复决定皮肤屏障急性毁损后是否能维持生命、重建功能并重新参与社会 |
 | `road-traffic-injury-prevention-safe-mobility/` | 道路交通伤害预防和安全移动决定出行是否持续制造死亡、严重伤害和长期失能 |
 | `rural-health-access-geographic-equity/` | 农村地理距离、服务密度、宽带、交通和卫生人力决定可修复风险是否因地点被延误或放弃 |
 | `homelessness-unsheltered-health-continuity/` | 无家可归和露宿状态决定睡眠、卫生、身份、安全、医疗和福利入口是否会同时断线 |
@@ -1592,6 +1602,34 @@ Source links:
 - https://www.who.int/teams/integrated-health-services/clinical-services-and-systems/emergency-care
 - https://www.who.int/teams/integrated-health-services/patient-safety/research/safe-surgery/tool-and-resources
 - https://www.ahrq.gov/hai/tools/surgery/index.html
+- https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines
+- https://cpr.heart.org/en/resources/cpr-facts-and-stats/out-of-hospital-chain-of-survival
+- https://www.cdc.gov/heart-disease/php/data-research/cardiac-arrest-registry-to-enhance-survival.html
+- https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-guidelines-2021
+- https://www.cdc.gov/sepsis/
+- https://www.who.int/news-room/fact-sheets/detail/sepsis
+- https://nap.nationalacademies.org/catalog/23511/a-national-trauma-care-system-integrating-military-and-civilian-trauma
+- https://www.facs.org/quality-programs/trauma/
+- https://www.sccm.org/clinical-resources/iculiberation-home
+- https://www.sccm.org/clinical-resources/guidelines/guidelines/padis-guidelines
+- https://www.nhlbi.nih.gov/health/respiratory-failure
+- https://www.thoracic.org/statements/resources/cc/mechanical-ventilation-ards.pdf
+- https://www.cdc.gov/nhsn/psc/vae/index.html
+- https://www.elso.org/
+- https://www.elso.org/ecmo-resources/elso-ecmo-guidelines.aspx
+- https://www.nhlbi.nih.gov/health/ecmo
+- https://kdigo.org/guidelines/acute-kidney-injury/
+- https://www.kidney.org/kidney-topics/acute-kidney-injury-aki
+- https://www.niddk.nih.gov/health-information/kidney-disease/kidney-failure/choosing-treatment
+- https://www.aabb.org/news-resources/resources/clinical-practice-guidelines
+- https://www.who.int/news-room/fact-sheets/detail/blood-safety-and-availability
+- https://www.cdc.gov/blood-safety/
+- https://www.poisonhelp.org/
+- https://www.cdc.gov/overdose-prevention/
+- https://nida.nih.gov/publications/drugfacts/naloxone
+- https://www.who.int/news-room/fact-sheets/detail/burns
+- https://ameriburn.org/
+- https://www.cdc.gov/fire-safety/
 - https://www.who.int/news-room/fact-sheets/detail/road-traffic-injuries
 - https://www.nhtsa.gov/traffic-safety
 - https://highways.dot.gov/safety/zero-deaths/safe-system-approach

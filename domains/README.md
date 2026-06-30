@@ -572,6 +572,16 @@
 - `advanced-nuclear-energy-safety-generation-continuity/`：先进核能、安全与发电连续性，整理先进反应堆、许可、燃料、废物、安全监管和可靠低碳电力。
 - `undersea-cable-internet-backbone-continuity/`：海底光缆与互联网骨干连续性，整理 submarine cable、登陆站、路由冗余、维修和跨境数据传输。
 - `satellite-communications-spectrum-orbit-continuity/`：卫星通信、频谱与轨道连续性，整理卫星宽带、频谱、轨道、地面站、空间天气和灾害连接。
+- `cardiac-arrest-cpr-defibrillation-continuity/`：心脏骤停、CPR 与除颤连续性，整理骤停识别、旁观者 CPR、AED 可达、EMS 复苏、ROSC 和复苏后照护。
+- `sepsis-shock-early-recognition-resuscitation-continuity/`：脓毒症休克早识别与复苏连续性，整理筛查、感染性休克、源控制、ICU 转入、多器官支持和恢复负担。
+- `trauma-system-hemorrhage-control-continuity/`：创伤系统与出血控制连续性，整理院前分诊、止血、创伤中心、大出血方案、输血和康复交接。
+- `intensive-care-organ-support-delirium-continuity/`：ICU 器官支持与谵妄连续性，整理多器官支持、镇静、谵妄、早期活动、家属参与和 ICU 后综合征。
+- `mechanical-ventilation-respiratory-failure-continuity/`：机械通气与呼吸衰竭连续性，整理急性呼吸衰竭、氧合/通气支持、呼吸机相关损伤、撤机和恢复。
+- `ecmo-extracorporeal-life-support-continuity/`：ECMO 与体外生命支持连续性，整理 ECLS 模式、心肺桥接、中心容量、转运、并发症和退出路径。
+- `acute-kidney-injury-renal-replacement-continuity/`：急性肾损伤与肾脏替代连续性，整理 AKI、CRRT/透析、容量、电解质、酸碱和肾功能恢复。
+- `transfusion-blood-management-hemorrhage-continuity/`：输血、血液管理与出血连续性，整理血液可得、患者血液管理、大出血、凝血支持和 hemovigilance。
+- `overdose-poisoning-reversal-toxicology-continuity/`：过量、中毒逆转与毒理连续性，整理毒物中心、过量监测、逆转窗口、呼吸抑制、急诊转运和恢复连接。
+- `burn-injury-critical-care-rehabilitation-continuity/`：烧伤重症与康复连续性，整理烧伤中心、液体/感染/疼痛/手术照护、皮肤屏障、瘢痕和长期康复。
 - `governance-rights/`：治理与主体权利，整理同意、退出、数据权、法律身份、AI 治理和研究伦理。
 - `pain-suffering-control/`：疼痛与痛苦控制，整理慢性疼痛、症状负担、姑息医学和可承受持续性。
 - `health-literacy-navigation/`：健康素养与服务导航，整理可理解信息、风险沟通、共同决策和系统入口。

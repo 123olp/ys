@@ -1256,6 +1256,16 @@ flowchart TD
 | [Pharmaceutical Quality Supply Integrity](domains/pharmaceutical-quality-supply-integrity/README.md) | GMP、质量缺陷、污染、假劣药、短缺、冷链、追溯和召回 | 让可及药品真正具备质量稳定、未污染、可追踪和不断供的治疗价值 | 不提供药品购买、制备、复配、检测、进口、商业采购、个体用药或非法渠道建议 |
 | [Emergency Medical Services Prehospital Care](domains/emergency-medical-services-prehospital-care/README.md) | EMS、调度、响应时间、院前照护、转运和时间关键急性响应 | 在创伤、心脏骤停、卒中等急性事件中保住可逆损伤窗口 | 不提供急救操作、医疗处置、分诊、现场指挥、医院选择、路线、法律或危险现场建议 |
 | [Surgical Anesthesia Perioperative Safety](domains/surgical-anesthesia-perioperative-safety/README.md) | 手术安全、麻醉安全、团队检查、并发症预防和围手术期质量 | 让高风险修复通道把疾病修复转化为功能恢复，而不是新伤害 | 不提供手术、麻醉、护理、康复、医院选择、个体风险判断、操作步骤或法律建议 |
+| [Cardiac Arrest CPR Defibrillation Continuity](domains/cardiac-arrest-cpr-defibrillation-continuity/README.md) | 心脏骤停识别、旁观者 CPR、AED/除颤、EMS 和复苏后照护 | 把分钟级突然死亡边界拆成可识别、可响应、可除颤、可恢复的救援链 | 不提供 CPR/AED 操作、复苏决策、急救指令、预后判断或个案医疗建议 |
+| [Sepsis Shock Early Recognition Resuscitation Continuity](domains/sepsis-shock-early-recognition-resuscitation-continuity/README.md) | 脓毒症、感染性休克、早期识别、复苏、ICU 转入和恢复 | 把感染进入多器官失效前的可逆窗口纳入主体持续性模型 | 不提供诊断、抗生素、补液、升压药、ICU 转诊、triage 或治疗建议 |
+| [Trauma System Hemorrhage Control Continuity](domains/trauma-system-hemorrhage-control-continuity/README.md) | 创伤系统、院前分诊、止血、创伤中心、大出血控制和康复转接 | 把事故、暴力、跌落和灾害后的可救治损伤纳入系统救援链 | 不提供止血、现场急救、战术医疗、手术、转运、法律或事故处置建议 |
+| [Intensive Care Organ Support Delirium Continuity](domains/intensive-care-organ-support-delirium-continuity/README.md) | ICU 多器官支持、镇静、谵妄、早期活动、家属参与和 ICU 后综合征 | 把危重病存活能否转回认知、肌力、家庭功能和有效时间纳入模型 | 不提供 ICU 治疗、镇静、撤机、营养、转院、预后或家属决策建议 |
+| [Mechanical Ventilation Respiratory Failure Continuity](domains/mechanical-ventilation-respiratory-failure-continuity/README.md) | 急性呼吸衰竭、机械通气、氧合/通气支持、撤机和恢复 | 把氧供失败从不可逆缺氧转化为设备支持和恢复窗口 | 不提供呼吸机参数、氧疗、撤机、气道管理、设备操作或个体医疗建议 |
+| [ECMO Extracorporeal Life Support Continuity](domains/ecmo-extracorporeal-life-support-continuity/README.md) | ECMO/ECLS、心肺桥接、中心容量、转运、并发症和退出路径 | 把极端心肺衰竭中的短期未来选择权纳入高风险桥接模型 | 不提供 ECMO 适应证、抗凝、转运、撤机、中心选择、预后或治疗建议 |
+| [Acute Kidney Injury Renal Replacement Continuity](domains/acute-kidney-injury-renal-replacement-continuity/README.md) | 急性肾损伤、内环境失控、透析/肾脏替代治疗和肾功能恢复 | 把毒素、容量、电解质和酸碱失控纳入临时器官支持模型 | 不提供透析参数、实验室解读、补液、饮食、用药或个体肾病建议 |
+| [Transfusion Blood Management Hemorrhage Continuity](domains/transfusion-blood-management-hemorrhage-continuity/README.md) | 输血、血液可得、患者血液管理、大出血方案、凝血支持和 hemovigilance | 把出血性死亡边界纳入血液供应、安全和止血支持模型 | 不提供输血阈值、血型匹配、凝血处理、献血资格、库存调度或医疗建议 |
+| [Overdose Poisoning Reversal Toxicology Continuity](domains/overdose-poisoning-reversal-toxicology-continuity/README.md) | 药物过量、中毒、毒物中心、逆转窗口、呼吸抑制和恢复连接 | 把可逆毒性暴露从无人识别的死亡转化为咨询、逆转、转运和恢复链 | 不提供中毒处理、解毒药、纳洛酮操作、物质使用、规避检测或自伤方法 |
+| [Burn Injury Critical Care Rehabilitation Continuity](domains/burn-injury-critical-care-rehabilitation-continuity/README.md) | 烧伤中心、液体/感染/疼痛/手术照护、皮肤屏障、瘢痕和康复 | 把身体边界急性毁损后的生存、重建、功能恢复和社会参与纳入模型 | 不提供烧伤急救、伤口处理、敷料、止痛、抗感染、手术、瘢痕或法律建议 |
 | [Road Traffic Injury Prevention Safe Mobility](domains/road-traffic-injury-prevention-safe-mobility/README.md) | 道路交通伤害、安全系统、速度管理、车辆安全、交通数据和安全移动 | 让出行从可达性进一步成为不制造死亡和失能的行动基础设施 | 不提供驾驶、路线、事故责任、保险、法律、车辆改装、危险驾驶、规避执法或急救建议 |
 | [Rural Health Access Geographic Equity](domains/rural-health-access-geographic-equity/README.md) | 地理距离、服务密度、宽带、交通、卫生人力和农村健康公平 | 防止可修复风险因为地点、交通、宽带和服务稀缺被延误或放弃 | 不提供个体医疗、保险、转诊、迁居、急救路线、补助申请、政策游说或商业选址建议 |
 | [Homelessness Unsheltered Health Continuity](domains/homelessness-unsheltered-health-continuity/README.md) | 无家可归、露宿、庇护、外展、住房服务、卫生、安全和照护断点 | 让没有稳定住所的主体仍能维持医疗、卫生、身份、睡眠、安全和福利入口 | 不提供个体庇护、住房申请、法律救济、福利申请、露宿规避、执法规避或生存技巧 |
@@ -1873,5 +1883,6 @@ flowchart LR
 - 2026-07-01：新增第七十八波 9 个科研纠错、出版完整性与科学传播连续性域，覆盖科研不端调查纠错、撤稿/表达关注/更正、预印本版本与公开评审、期刊编辑与同行评审完整性、掠夺性出版与 paper mill 检测、引用网络主张传播、科研指标激励、复制/复现/多实验室验证和科学传播证据转译。
 - 2026-07-01：新增第七十九波 9 个 AI 评测与运行治理连续性域，覆盖 AI 评测基准有效性、红队对抗测试、事故报告部署后监控、数据谱系污染漂移、合成数据验证、模型供应链发布、agent 工具权限沙箱、人机监督交接问责和 AI 资源成本延迟预算。
 - 2026-07-01：新增第八十波 10 个先进计算、能源与连接底座连续性域，覆盖半导体制造计量、先进封装、芯片设计/EDA/IP 验证、AI 加速器性能、数据中心冷却水热、大型负载并网输电、电网级储能灵活性、先进核能安全发电、海底光缆互联网骨干和卫星通信频谱轨道。
+- 2026-07-01：新增第八十一波 10 个急性救援与临时器官支持连续性域，覆盖心脏骤停 CPR/除颤、脓毒症休克早识别复苏、创伤系统出血控制、ICU 器官支持谵妄、机械通气呼吸衰竭、ECMO/ECLS、急性肾损伤肾脏替代、输血血液管理出血、过量/中毒逆转毒理和烧伤重症康复。
 
 完整记录见 [CHANGELOG.md](CHANGELOG.md)。

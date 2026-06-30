@@ -514,6 +514,24 @@ Human Infra 不能被设计成更精密的压榨系统。
 - 提供驾驶路线、事故责任、保险索赔、车辆改装、危险驾驶、街头竞速、规避执法、事故现场处理、跟踪车辆或实时交通安全承诺。
 - 把临床检验、药品安全、药品质量、院前急救、手术麻醉和道路安全的结构性风险改写成个人操作、商业套利、恐慌传播、责任逃避或无证实践。
 
+## 急性救援与临时器官支持边界
+
+`cardiac-arrest-cpr-defibrillation-continuity`、`sepsis-shock-early-recognition-resuscitation-continuity`、`trauma-system-hemorrhage-control-continuity`、`intensive-care-organ-support-delirium-continuity`、`mechanical-ventilation-respiratory-failure-continuity`、`ecmo-extracorporeal-life-support-continuity`、`acute-kidney-injury-renal-replacement-continuity`、`transfusion-blood-management-hemorrhage-continuity`、`overdose-poisoning-reversal-toxicology-continuity` 和 `burn-injury-critical-care-rehabilitation-continuity` 关注心脏骤停、脓毒症休克、创伤出血、ICU、机械通气、ECMO、急性肾损伤、输血、中毒/过量和烧伤这些急性死亡边界如何被转化为可逆、可支持、可恢复窗口，不是急救、临床治疗、设备操作、转院、预后、家属决策、法律、保险或现场处置入口。
+
+可以做：
+
+- 整理 AHA CPR/ECC、Surviving Sepsis Campaign、WHO/ACS Trauma、SCCM ICU Liberation/PADIS、ATS 机械通气、ELSO、KDIGO AKI、AABB、Poison Help/CDC/NIDA 和 WHO/ABA 烧伤等公开资料。
+- 比较识别时间、响应链、中心能力、临时器官支持、退出路径、康复交接和长期功能恢复如何改变主体持续性。
+- 记录心脏骤停、脓毒症、创伤、ICU、呼吸机、ECMO、AKI/RRT、输血、中毒逆转和烧伤康复的系统变量、证据等级、禁止用途和不确定性。
+
+不能做：
+
+- 提供 CPR、AED/除颤、抗生素、补液、升压药、止血、创伤处理、ICU、呼吸机、ECMO、透析、输血、中毒处理、纳洛酮、烧伤处理或康复治疗建议。
+- 生成临床路径、医嘱、评分、分诊、转院、中心选择、预后判断、家属决策、保险理赔、法律责任或现场处置建议。
+- 生成滥用毒物、自伤、检测规避、暴力现场、战术医疗、危险设备操作、血液调度、医疗资源绕行或监管规避内容。
+- 收集、存储或推断可识别个人的生命体征、检验值、心电图、呼吸机/ECMO/透析参数、血型、创伤/烧伤照片、物质使用史、位置、法律证据或其他 PHI。
+- 替代 EMS、毒物中心、急诊、ICU、创伤中心、烧伤中心、肾脏科、输血医学、康复医学、法律服务或现场专业人员。
+
 ## 门诊访问与临床服务执行连续性边界
 
 `provider-directory-network-adequacy-continuity`、`primary-care-panel-appointment-access-continuity`、`specialist-referral-authorization-navigation-continuity`、`appointment-availability-wait-time-continuity`、`outpatient-laboratory-specimen-result-routing-continuity`、`diagnostic-imaging-order-scheduling-report-continuity`、`ambulatory-procedure-surgery-center-continuity` 和 `after-hours-urgent-care-triage-continuity` 关注 provider 名录、初级照护、专科转诊、预约等待、门诊检验、诊断影像、门诊操作和非工作时间分诊如何让医疗服务从“名义存在”变成主体可进入、可完成、可回传的服务路径，不是医生推荐、个案分诊、诊疗建议、保险申诉或预约规避工具。

@@ -97,3 +97,4 @@ Current decisions:
 - `0082-add-seventy-eighth-wave-research-correction-scientific-integrity-domains.md`
 - `0083-add-seventy-ninth-wave-ai-evaluation-operations-governance-domains.md`
 - `0084-add-eightieth-wave-compute-energy-connectivity-substrate-domains.md`
+- `0085-add-eighty-first-wave-acute-rescue-organ-support-domains.md`

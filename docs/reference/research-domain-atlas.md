@@ -459,6 +459,16 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 药品质量和供应完整性可审查 | `pharmaceutical-quality-supply-integrity/` | GMP、质量缺陷、污染、假劣药、短缺、冷链、追溯、召回 | 药物可及但质量失败、污染、假劣、断供或不可追溯，导致治疗失败和毒性风险 |
 | 急性可逆窗口可接入 | `emergency-medical-services-prehospital-care/` | EMS、调度、响应时间、院前照护、转运、质量改进 | 创伤、心脏骤停、卒中或呼吸急症未在可逆窗口内进入医疗系统 |
 | 高风险修复通道可安全执行 | `surgical-anesthesia-perioperative-safety/` | 手术安全、麻醉安全、团队检查、围手术期监测、并发症预防 | 修复性干预因可预防错误、感染、出血、麻醉风险或团队失效变成新伤害 |
+| 分钟级骤停可逆转 | `cardiac-arrest-cpr-defibrillation-continuity/` | 心脏骤停、CPR、AED、除颤、ROSC、复苏后照护 | 旁观者 CPR、AED 可达、EMS 复苏和复苏后照护断裂，使可逆骤停变成死亡或缺氧脑损伤 |
+| 感染性休克可早识别复苏 | `sepsis-shock-early-recognition-resuscitation-continuity/` | 脓毒症、感染性休克、早期识别、复苏、源控制、ICU 转入 | 感染延迟识别后进入休克、多器官衰竭、长期虚弱和死亡 |
+| 严重创伤出血可接入系统 | `trauma-system-hemorrhage-control-continuity/` | 创伤系统、院前分诊、止血、创伤中心、大出血方案、康复交接 | 事故、跌落、暴力或灾害后的可救治损伤因出血、转运和中心能力失败而失去可逆窗口 |
+| 危重病存活可回到有效时间 | `intensive-care-organ-support-delirium-continuity/` | ICU、器官支持、镇静、谵妄、早期活动、家属参与、ICU 后综合征 | 危重病虽存活但认知、肌力、情绪、家庭和工作能力被长期损耗 |
+| 呼吸衰竭可被临时支持 | `mechanical-ventilation-respiratory-failure-continuity/` | 急性呼吸衰竭、机械通气、氧合/通气支持、呼吸机相关伤害、撤机 | 氧供失败从短期可支持状态转为不可逆缺氧、设备伤害或长期功能损失 |
+| 极端心肺衰竭可被桥接 | `ecmo-extracorporeal-life-support-continuity/` | ECMO/ECLS、心肺桥接、中心容量、转运、并发症、退出路径 | 心肺系统短期崩溃时没有桥接、中心能力或退出路径，直接清零未来选择权 |
+| 急性肾衰竭内环境可维持 | `acute-kidney-injury-renal-replacement-continuity/` | AKI、CRRT、透析、容量、电解质、酸碱、肾功能恢复 | 毒素、容量、电解质和酸碱失控把本可支持的急性肾损伤推向死亡或长期肾衰 |
+| 出血性死亡边界可被血液系统支撑 | `transfusion-blood-management-hemorrhage-continuity/` | 输血、血液可得、患者血液管理、大出血、凝血支持、hemovigilance | 血液供应、凝血支持、质量安全或输血治理失败，使出血和贫血变成可预防死亡 |
+| 毒性暴露可被识别逆转 | `overdose-poisoning-reversal-toxicology-continuity/` | 药物过量、中毒、毒物中心、逆转窗口、呼吸抑制、急诊转运、恢复连接 | 可逆中毒和过量因无人识别、无人咨询、无人逆转或恢复链断裂而变成死亡或长期损伤 |
+| 身体边界毁损后可重建恢复 | `burn-injury-critical-care-rehabilitation-continuity/` | 烧伤中心、液体/感染/疼痛/手术照护、皮肤屏障、瘢痕、康复 | 烧伤后的液体丢失、感染、疼痛、重建失败和社会断裂长期压缩主体行动窗口 |
 | 移动过程可避免严重伤害 | `road-traffic-injury-prevention-safe-mobility/` | 道路安全系统、速度管理、车辆安全、执法公平、交通伤害监测 | 出行过程制造死亡、严重伤害、长期失能、家庭收入中断和照护负担 |
 | 地理距离不能排除主体 | `rural-health-access-geographic-equity/` | 农村服务密度、距离、交通、宽带、卫生人力、药房/医院可达 | 可修复风险因地点、距离、宽带、人力和设施稀缺被延误或放弃 |
 | 住所缺失时服务不能断线 | `homelessness-unsheltered-health-continuity/` | 庇护、外展、卫生、睡眠、安全、身份、住房服务、医疗连续性 | 露宿、卫生缺失、暴露、创伤、慢病失控和服务断点把主体推出恢复路径 |
@@ -1074,6 +1084,16 @@ risk-engineering
   -> pharmaceutical-quality-supply-integrity
   -> emergency-medical-services-prehospital-care
   -> surgical-anesthesia-perioperative-safety
+  -> cardiac-arrest-cpr-defibrillation-continuity
+  -> sepsis-shock-early-recognition-resuscitation-continuity
+  -> trauma-system-hemorrhage-control-continuity
+  -> intensive-care-organ-support-delirium-continuity
+  -> mechanical-ventilation-respiratory-failure-continuity
+  -> ecmo-extracorporeal-life-support-continuity
+  -> acute-kidney-injury-renal-replacement-continuity
+  -> transfusion-blood-management-hemorrhage-continuity
+  -> overdose-poisoning-reversal-toxicology-continuity
+  -> burn-injury-critical-care-rehabilitation-continuity
   -> road-traffic-injury-prevention-safe-mobility
   -> rural-health-access-geographic-equity
   -> homelessness-unsheltered-health-continuity

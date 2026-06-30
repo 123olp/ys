@@ -647,4 +647,14 @@ docs/
 461. Read `../domains/advanced-nuclear-energy-safety-generation-continuity/README.md` if you are working on advanced nuclear energy, SMRs, licensing, nuclear fuel, waste management, safety oversight, or reliable low-carbon generation.
 462. Read `../domains/undersea-cable-internet-backbone-continuity/README.md` if you are working on submarine cables, landing stations, cross-border data flows, route diversity, repair time, or internet backbone resilience.
 463. Read `../domains/satellite-communications-spectrum-orbit-continuity/README.md` if you are working on satellite broadband, spectrum, orbital resources, ground stations, space weather exposure, or disaster/remote connectivity.
-464. Enter a domain under `../domains/`.
+464. Read `../domains/cardiac-arrest-cpr-defibrillation-continuity/README.md` if you are working on cardiac arrest systems, CPR, AED availability, defibrillation time, EMS resuscitation, ROSC, or post-arrest continuity.
+465. Read `../domains/sepsis-shock-early-recognition-resuscitation-continuity/README.md` if you are working on sepsis, septic shock, early recognition, resuscitation, source control, ICU transfer, or post-sepsis continuity.
+466. Read `../domains/trauma-system-hemorrhage-control-continuity/README.md` if you are working on trauma systems, hemorrhage control, trauma center access, prehospital triage, massive transfusion, or injury recovery handoff.
+467. Read `../domains/intensive-care-organ-support-delirium-continuity/README.md` if you are working on ICU organ support, PADIS/ABCDEF bundles, sedation, delirium, early mobility, family engagement, or post-ICU syndrome.
+468. Read `../domains/mechanical-ventilation-respiratory-failure-continuity/README.md` if you are working on acute respiratory failure, oxygenation, ventilation support, ARDS, ventilator-associated harm, weaning, or respiratory recovery.
+469. Read `../domains/ecmo-extracorporeal-life-support-continuity/README.md` if you are working on ECMO/ECLS, extracorporeal cardiopulmonary support, bridge-to-recovery, center capacity, transport, complications, or exit paths.
+470. Read `../domains/acute-kidney-injury-renal-replacement-continuity/README.md` if you are working on AKI, kidney replacement therapy, CRRT, dialysis access, fluid/electrolyte failure, kidney recovery, or CKD transition.
+471. Read `../domains/transfusion-blood-management-hemorrhage-continuity/README.md` if you are working on transfusion, blood availability, patient blood management, massive hemorrhage, coagulation support, or hemovigilance.
+472. Read `../domains/overdose-poisoning-reversal-toxicology-continuity/README.md` if you are working on overdose, poisoning, poison centers, toxic exposure reversal, naloxone access, respiratory depression, or recovery linkage.
+473. Read `../domains/burn-injury-critical-care-rehabilitation-continuity/README.md` if you are working on burn injury, burn centers, fluid loss, infection risk, reconstruction, scar, rehabilitation, or social reintegration.
+474. Enter a domain under `../domains/`.
