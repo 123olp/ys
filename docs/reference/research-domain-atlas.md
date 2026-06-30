@@ -112,6 +112,12 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 数字连接可达 | `digital-inclusion-connectivity/` | 互联网接入、设备、数字技能、可负担性、无障碍、人工帮助、数字公共服务 | 数字排除导致医疗、福利、教育、工作、身份和应急信息不可达 |
 | 社会保护可递送 | `social-protection-benefits-delivery/` | 公共福利、社会保护、资格、申请、续期、支付、申诉、行政负担 | 名义权利无法转化为食物、住房、医疗、能源或收入支持 |
 | 社区资源可导航 | `community-resource-navigation/` | 资源目录、社会需求筛查、转介、闭环回访、人工协助 | 资源存在但找不到、转介失败、回访缺失或敏感需求数据被滥用 |
+| 上游生活环境可支撑主体 | `social-determinants-community-vulnerability/` | 社会决定因素、社区脆弱性、环境正义、地方健康估计、食物可达、社会需求 | 把结构性风险写成个体失败，或用脆弱性指标支持排除、歧视和资源拒绝 |
+| 公共服务可完成 | `public-service-design-accessibility/` | 公共服务设计、表单负担、客户体验、无障碍、人工帮助、反馈路径 | 名义服务无法完成，或用数字化替代人工帮助、无障碍和申诉责任 |
+| 危机警报和求助入口可达 | `emergency-alerts-communications/` | 公共警报、WEA/EAS、天气广播、911/NG911、第一响应通信 | 警报不到达、通信失效、误报滥用、求助入口被绕过或官方系统被伪造 |
+| 灾后恢复可连续 | `disaster-recovery-relief-continuity/` | 个人援助、恢复中心、临时安置、灾害贷款、救济导航、恢复时间 | 灾害后住房、资金、文件、医疗、食物和家庭连续性长期断裂 |
+| 资源流通入口可持续 | `financial-inclusion-payment-systems/` | 账户、支付、汇款、数字金融服务、消费者保护、支付系统可靠性 | 收入、福利、救济和交易因账户、支付、费用或欺诈失败而断线 |
+| 能力可转化为工作入口 | `workforce-employment-services/` | 就业服务、WIOA、学徒制、职业信息、再就业、合理便利 | 学习和能力无法转化为收入、社会角色、工作入口和长期任务窗口 |
 | 高成本风险可分摊 | `insurance-risk-transfer/` | 覆盖率、保费、自付、理赔、拒赔、风险池、保障缺口 | 疾病、失业、工伤、残障、灾害或养老金风险由个体独自承担 |
 | 托育和家庭运行可持续 | `childcare-family-continuity/` | 托育可及、费用、质量、早期发展、父母工作连续性、家庭压力 | 儿童发展受损、照护者工作中断、时间贫困和家庭压力升级 |
 | 应急响应可接住主体 | `emergency-preparedness-response/` | 灾害准备、预警、应急通信、急救医疗、安置、公共卫生应急、恢复 | 低频高冲击事件一次性清零长期积累，通信、医疗、撤离或恢复失败 |
@@ -230,6 +236,12 @@ risk-engineering
   -> digital-inclusion-connectivity
   -> social-protection-benefits-delivery
   -> community-resource-navigation
+  -> social-determinants-community-vulnerability
+  -> public-service-design-accessibility
+  -> emergency-alerts-communications
+  -> disaster-recovery-relief-continuity
+  -> financial-inclusion-payment-systems
+  -> workforce-employment-services
   -> insurance-risk-transfer
   -> childcare-family-continuity
   -> emergency-preparedness-response

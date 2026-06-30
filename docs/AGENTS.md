@@ -26,6 +26,7 @@ docs/
 │   ├── 0015-add-eleventh-wave-civic-safety-continuity-domains.md
 │   ├── 0016-add-twelfth-wave-treatment-service-rights-domains.md
 │   ├── 0017-add-thirteenth-wave-health-data-outcomes-public-health-domains.md
+│   ├── 0018-add-fourteenth-wave-public-services-emergency-financial-workforce-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -101,6 +102,7 @@ docs/
 - `reference/research-domain-atlas.md`：定义从有效永生先验条件生成研究域的规则、当前域地图和域判定契约。
 - `reference/research-domain-radar.md`：记录尚未晋升为正式子域的潜在研究域、来源信号和晋升触发条件。
 - `domains/health-data-privacy-governance/`、`domains/functioning-quality-of-life-outcomes/`、`domains/health-economics-value-assessment/`、`domains/immunization-public-health-surveillance/`、`domains/maternal-newborn-child-development/` 和 `domains/patient-safety-organizational-learning/`：第十三波正式研究域，分别承载数据治理、结局评估、价值评估、公共卫生监测、早期生命基础设施和患者安全组织学习。
+- `domains/social-determinants-community-vulnerability/`、`domains/public-service-design-accessibility/`、`domains/emergency-alerts-communications/`、`domains/disaster-recovery-relief-continuity/`、`domains/financial-inclusion-payment-systems/` 和 `domains/workforce-employment-services/`：第十四波正式研究域，分别承载社会决定因素、公共服务设计、应急预警通信、灾后恢复、金融支付入口和就业服务。
 - `reference/research-model-visualization-toolkit.md`：沉淀科研论文阅读、文献脊梁、模型工具、可视化标准和 Human Infra 定量页面实现路线。
 - `reference/source-card-system.md`：定义论文、书籍、工具、案例、标准和数据集进入项目之前的资料卡片制度。
 - `reference/domain-map.md`：定义根项目与子域的边界、迁移切片、主动不做和验证点。

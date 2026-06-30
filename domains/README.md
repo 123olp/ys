@@ -58,6 +58,12 @@
 - `digital-inclusion-connectivity/`：数字包容与连接，整理互联网接入、设备、数字技能、可负担性、无障碍和数字公共服务入口。
 - `social-protection-benefits-delivery/`：社会保护与福利递送，整理公共福利、资格、申请、续期、支付、申诉和行政负担。
 - `community-resource-navigation/`：社区资源导航，整理 211、资源目录、社会需求筛查、转介、闭环回访和本地服务导航。
+- `social-determinants-community-vulnerability/`：社会决定因素与社区脆弱性，整理 SDOH、社区脆弱性、环境正义、地方健康估计和健康相关社会需求。
+- `public-service-design-accessibility/`：公共服务设计与可达性，整理公共数字服务、表单、客户体验、无障碍、人工帮助和任务完成路径。
+- `emergency-alerts-communications/`：应急预警与通信，整理公共警报、WEA/EAS、NOAA Weather Radio、911/NG911 和 FirstNet。
+- `disaster-recovery-relief-continuity/`：灾后恢复与救济连续性，整理个人援助、恢复中心、临时安置、灾害贷款和救济导航。
+- `financial-inclusion-payment-systems/`：金融包容与支付系统，整理账户、支付、汇款、数字金融服务、消费者保护和支付系统可靠性。
+- `workforce-employment-services/`：劳动力与就业服务，整理就业服务、WIOA、学徒制、职业信息、再就业支持和岗位合理便利。
 - `insurance-risk-transfer/`：保险与风险转移，整理健康、失业、工伤、残障、灾害、存款、养老金等风险池和保障缺口。
 - `childcare-family-continuity/`：托育与家庭连续性，整理托育可及、费用、质量、早期儿童发展、父母工作连续性和家庭压力。
 - `emergency-preparedness-response/`：应急准备与响应，整理灾害准备、预警、应急通信、急救医疗、安置和恢复。

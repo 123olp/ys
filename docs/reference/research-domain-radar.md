@@ -103,6 +103,12 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `immunization-public-health-surveillance/` | 免疫计划、传染病监测、感染防控、AMR、One Health 和废水信号决定群体风险屏障 |
 | `maternal-newborn-child-development/` | 孕产、新生儿、儿童健康、生长、早期发展和养育照护决定主体能力形成的早期条件 |
 | `patient-safety-organizational-learning/` | 患者安全、事件报告、团队沟通、根因分析和安全文化决定医疗组织能否防止重复伤害 |
+| `social-determinants-community-vulnerability/` | 社会决定因素、社区脆弱性、环境正义、地方健康估计、食物可达和社会需求决定上游风险分布 |
+| `public-service-design-accessibility/` | 公共服务设计、表单、无障碍、客户体验和人工帮助决定名义权利能否转化为可完成任务 |
+| `emergency-alerts-communications/` | 公共预警、911/NG911、天气广播和第一响应通信决定危机信息与求助入口是否可达 |
+| `disaster-recovery-relief-continuity/` | 灾后个人援助、恢复中心、临时安置、灾害贷款和救济导航决定冲击后恢复是否连续 |
+| `financial-inclusion-payment-systems/` | 账户、支付、汇款、数字金融服务和消费者保护决定资源能否稳定流动到主体 |
+| `workforce-employment-services/` | 就业服务、劳动力发展、学徒制、职业信息和合理便利决定能力能否转化为收入和工作入口 |
 
 ## 来源信号
 
@@ -184,6 +190,12 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | WHO vaccines / IA2030 / CDC NNDSS / WHO GISRS / IHR / IPC / NHSN / GLASS / CDC NWSS | 提示群体免疫、传染病监测、公共卫生应急、感染防控、AMR、One Health 和废水监测是独立风险屏障 |
 | WHO maternal/newborn/child health / WHO growth standards / Nurturing Care / CDC PRAMS / World Bank ECD | 提示孕产、新生儿、儿童健康、生长、早期发展和养育照护是长期主体能力形成的源头条件 |
 | WHO Patient Safety / AHRQ TeamSTEPPS / CUSP / SOPS / IHI RCA2 | 提示患者安全、团队沟通、事件学习、根因分析和安全文化需要独立组织学习域 |
+| WHO SDOH / Healthy People SDOH / CDC SVI / CDC EJI / CDC PLACES / USDA Food Access / CMS AHC | 提示社会决定因素、社区脆弱性、环境正义、地方健康估计、食物可达和健康相关社会需求需要独立上游风险域 |
+| Digital.gov / USWDS / Performance.gov CX / Section508.gov / PlainLanguage.gov | 提示公共服务设计、客户体验、无障碍、清晰语言和人工帮助会决定公共资源是否可完成 |
+| FEMA IPAWS / FCC WEA-EAS / NOAA Weather Radio / 911.gov / NG911 / FirstNet | 提示预警、求助入口、危机通信和第一响应互操作需要独立通信域 |
+| USA.gov Disaster Assistance / FEMA DRC / SBA Disaster Assistance / Benefits.gov Disaster Relief / Red Cross shelters | 提示灾后恢复、临时安置、个人援助、灾害贷款和救济导航需要独立恢复域 |
+| World Bank Financial Inclusion / Global Findex / Payment Systems / FDIC Household Survey / CFPB complaints / Federal Reserve Payments Study | 提示账户、支付、汇款、数字金融服务和消费者保护是资源流动的独立基础设施 |
+| CareerOneStop / DOL ETA-WIOA / Apprenticeship.gov / O*NET / My Next Move / JAN | 提示就业服务、劳动力发展、职业信息、再就业和合理便利是能力进入工作系统的独立接口 |
 
 Source links:
 
@@ -412,6 +424,41 @@ Source links:
 - https://www.ahrq.gov/hai/cusp/index.html
 - https://www.ahrq.gov/sops/index.html
 - https://www.ihi.org/resources/tools/rca2-improving-root-cause-analyses-and-actions-prevent-harm
+- https://www.atsdr.cdc.gov/place-health/php/svi/
+- https://www.atsdr.cdc.gov/place-health/php/eji/
+- https://www.cdc.gov/places/
+- https://www.ers.usda.gov/data-products/food-access-research-atlas/
+- https://digital.gov/
+- https://designsystem.digital.gov/
+- https://www.performance.gov/cx/
+- https://www.section508.gov/
+- https://www.fema.gov/emergency-managers/practitioners/integrated-public-alert-warning-system
+- https://www.fcc.gov/consumers/guides/wireless-emergency-alerts-wea
+- https://www.fcc.gov/emergency-alert-system
+- https://www.weather.gov/nwr/
+- https://www.911.gov/
+- https://www.911.gov/issues/ng911/
+- https://www.firstnet.gov/
+- https://www.usa.gov/disaster-assistance
+- https://egateway.fema.gov/ESF6/DRCLocator
+- https://www.sba.gov/funding-programs/disaster-assistance
+- https://www.benefits.gov/categories/Disaster%20Relief
+- https://www.redcross.org/get-help/disaster-relief-and-recovery-services/find-an-open-shelter.html
+- https://sheltercluster.org/
+- https://www.worldbank.org/en/topic/financialinclusion
+- https://www.worldbank.org/en/publication/globalfindex
+- https://www.worldbank.org/en/topic/financialinclusion/brief/digital-financial-services
+- https://www.worldbank.org/en/topic/paymentsystemsremittances
+- https://www.fdic.gov/analysis/household-survey
+- https://www.consumerfinance.gov/data-research/consumer-complaints/
+- https://www.federalreserve.gov/paymentsystems/fr-payments-study.htm
+- https://www.careeronestop.org/
+- https://www.dol.gov/agencies/eta
+- https://www.dol.gov/agencies/eta/wioa
+- https://www.apprenticeship.gov/
+- https://www.onetonline.org/
+- https://www.mynextmove.org/
+- https://askjan.org/
 
 ## 使用规则
 

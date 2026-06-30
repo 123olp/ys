@@ -33,6 +33,7 @@ docs/
 │   ├── 0015-add-eleventh-wave-civic-safety-continuity-domains.md
 │   ├── 0016-add-twelfth-wave-treatment-service-rights-domains.md
 │   ├── 0017-add-thirteenth-wave-health-data-outcomes-public-health-domains.md
+│   ├── 0018-add-fourteenth-wave-public-services-emergency-financial-workforce-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -114,4 +115,10 @@ docs/
 26. Read `../domains/immunization-public-health-surveillance/README.md` if you are working on immunization, infectious-disease surveillance, infection prevention, AMR, or wastewater signals.
 27. Read `../domains/maternal-newborn-child-development/README.md` if you are working on maternal, newborn, child health, growth, or early development.
 28. Read `../domains/patient-safety-organizational-learning/README.md` if you are working on patient safety, incident learning, team communication, or care-system harm reduction.
-29. Enter a domain under `../domains/`.
+29. Read `../domains/social-determinants-community-vulnerability/README.md` if you are working on social determinants, community vulnerability, environmental justice, local health estimates, or health-related social needs.
+30. Read `../domains/public-service-design-accessibility/README.md` if you are working on public digital services, forms, accessibility, customer experience, or service task completion.
+31. Read `../domains/emergency-alerts-communications/README.md` if you are working on public alerts, 911/NG911, weather radio, first-responder communications, or crisis communication channels.
+32. Read `../domains/disaster-recovery-relief-continuity/README.md` if you are working on disaster recovery, individual assistance, shelters, recovery centers, disaster loans, or relief navigation.
+33. Read `../domains/financial-inclusion-payment-systems/README.md` if you are working on accounts, payment systems, remittances, digital financial services, or consumer financial protection.
+34. Read `../domains/workforce-employment-services/README.md` if you are working on employment services, workforce development, apprenticeships, occupational information, or job accommodation.
+35. Enter a domain under `../domains/`.
