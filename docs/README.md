@@ -34,6 +34,7 @@ docs/
 │   ├── 0016-add-twelfth-wave-treatment-service-rights-domains.md
 │   ├── 0017-add-thirteenth-wave-health-data-outcomes-public-health-domains.md
 │   ├── 0018-add-fourteenth-wave-public-services-emergency-financial-workforce-domains.md
+│   ├── 0019-add-fifteenth-wave-preparedness-literacy-workforce-burden-community-data-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -121,4 +122,10 @@ docs/
 32. Read `../domains/disaster-recovery-relief-continuity/README.md` if you are working on disaster recovery, individual assistance, shelters, recovery centers, disaster loans, or relief navigation.
 33. Read `../domains/financial-inclusion-payment-systems/README.md` if you are working on accounts, payment systems, remittances, digital financial services, or consumer financial protection.
 34. Read `../domains/workforce-employment-services/README.md` if you are working on employment services, workforce development, apprenticeships, occupational information, or job accommodation.
-35. Enter a domain under `../domains/`.
+35. Read `../domains/household-emergency-preparedness-resilience/README.md` if you are working on household emergency plans, supplies, medication continuity, backup communication, documents, or special needs.
+36. Read `../domains/media-information-literacy-public-libraries/README.md` if you are working on media and information literacy, public libraries, trusted information access, or community learning spaces.
+37. Read `../domains/health-workforce-capacity/README.md` if you are working on health workforce supply, distribution, training, retention, workload, or shortage risk.
+38. Read `../domains/administrative-burden-procedural-friction/README.md` if you are working on paperwork, proof burden, waiting, renewal, appeal, or procedural friction.
+39. Read `../domains/community-health-workers-peer-support/README.md` if you are working on community health workers, peer support, navigators, trusted intermediaries, or referral follow-up.
+40. Read `../domains/civic-data-open-government-transparency/README.md` if you are working on open data, public records, FOIA, performance data, metadata, accountability, or public feedback.
+41. Enter a domain under `../domains/`.

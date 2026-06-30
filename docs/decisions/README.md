@@ -31,3 +31,4 @@ Current decisions:
 - `0016-add-twelfth-wave-treatment-service-rights-domains.md`
 - `0017-add-thirteenth-wave-health-data-outcomes-public-health-domains.md`
 - `0018-add-fourteenth-wave-public-services-emergency-financial-workforce-domains.md`
+- `0019-add-fifteenth-wave-preparedness-literacy-workforce-burden-community-data-domains.md`

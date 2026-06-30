@@ -118,6 +118,12 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 灾后恢复可连续 | `disaster-recovery-relief-continuity/` | 个人援助、恢复中心、临时安置、灾害贷款、救济导航、恢复时间 | 灾害后住房、资金、文件、医疗、食物和家庭连续性长期断裂 |
 | 资源流通入口可持续 | `financial-inclusion-payment-systems/` | 账户、支付、汇款、数字金融服务、消费者保护、支付系统可靠性 | 收入、福利、救济和交易因账户、支付、费用或欺诈失败而断线 |
 | 能力可转化为工作入口 | `workforce-employment-services/` | 就业服务、WIOA、学徒制、职业信息、再就业、合理便利 | 学习和能力无法转化为收入、社会角色、工作入口和长期任务窗口 |
+| 家庭能桥接危机窗口 | `household-emergency-preparedness-resilience/` | 家庭计划、物资包、健康准备、备用通信、文件、特殊需求 | 公共救援抵达前食物、水、药物、通信、照护和文件断裂 |
+| 公共知识入口可达 | `media-information-literacy-public-libraries/` | 信息素养、来源判断、公共图书馆、数字技能、社区学习 | 信息噪声、误导、数字排除和公共材料不可理解导致判断失败 |
+| 健康服务有人力承载 | `health-workforce-capacity/` | 卫生人力供给、分布、训练、保留、负荷、技能组合 | 医学技术存在但等待、短缺、倦怠、误诊和照护断点增加 |
+| 制度流程成本可承受 | `administrative-burden-procedural-friction/` | 学习成本、心理成本、合规成本、证明、等待、续期、申诉 | 名义权利被程序摩擦转化为申请放弃、资格断线和有效时间损耗 |
+| 社区中介可连接服务 | `community-health-workers-peer-support/` | CHW、peer support、导航员、信任、文化适配、转介闭环 | 服务存在但不被信任、理解、坚持或反馈，恢复支持无法进入日常生活 |
+| 公共系统可被观察 | `civic-data-open-government-transparency/` | 开放数据、公共记录、FOIA、绩效数据、元数据、问责反馈 | 公共资源分配、服务失败、腐败、歧视和治理缺口不可见 |
 | 高成本风险可分摊 | `insurance-risk-transfer/` | 覆盖率、保费、自付、理赔、拒赔、风险池、保障缺口 | 疾病、失业、工伤、残障、灾害或养老金风险由个体独自承担 |
 | 托育和家庭运行可持续 | `childcare-family-continuity/` | 托育可及、费用、质量、早期发展、父母工作连续性、家庭压力 | 儿童发展受损、照护者工作中断、时间贫困和家庭压力升级 |
 | 应急响应可接住主体 | `emergency-preparedness-response/` | 灾害准备、预警、应急通信、急救医疗、安置、公共卫生应急、恢复 | 低频高冲击事件一次性清零长期积累，通信、医疗、撤离或恢复失败 |
@@ -242,6 +248,12 @@ risk-engineering
   -> disaster-recovery-relief-continuity
   -> financial-inclusion-payment-systems
   -> workforce-employment-services
+  -> household-emergency-preparedness-resilience
+  -> media-information-literacy-public-libraries
+  -> health-workforce-capacity
+  -> administrative-burden-procedural-friction
+  -> community-health-workers-peer-support
+  -> civic-data-open-government-transparency
   -> insurance-risk-transfer
   -> childcare-family-continuity
   -> emergency-preparedness-response

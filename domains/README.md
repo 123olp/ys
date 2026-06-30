@@ -64,6 +64,12 @@
 - `disaster-recovery-relief-continuity/`：灾后恢复与救济连续性，整理个人援助、恢复中心、临时安置、灾害贷款和救济导航。
 - `financial-inclusion-payment-systems/`：金融包容与支付系统，整理账户、支付、汇款、数字金融服务、消费者保护和支付系统可靠性。
 - `workforce-employment-services/`：劳动力与就业服务，整理就业服务、WIOA、学徒制、职业信息、再就业支持和岗位合理便利。
+- `household-emergency-preparedness-resilience/`：家庭应急准备与韧性，整理家庭计划、物资包、健康准备、备用通信、重要文件和特殊需求安排。
+- `media-information-literacy-public-libraries/`：媒体信息素养与公共图书馆，整理信息判断、公共知识入口、图书馆服务、数字技能和社区学习空间。
+- `health-workforce-capacity/`：健康劳动力容量，整理卫生人力供给、分布、培训、保留、负荷、技能组合和短缺风险。
+- `administrative-burden-procedural-friction/`：行政负担与程序摩擦，整理学习成本、心理成本、合规成本、证明、等待、续期和申诉负担。
+- `community-health-workers-peer-support/`：社区健康工作者与同伴支持，整理 CHW、peer support、导航员、可信中介、转介闭环和恢复支持。
+- `civic-data-open-government-transparency/`：公民数据与开放政府透明，整理开放数据、公共记录、FOIA、绩效数据、元数据、问责和公共反馈。
 - `insurance-risk-transfer/`：保险与风险转移，整理健康、失业、工伤、残障、灾害、存款、养老金等风险池和保障缺口。
 - `childcare-family-continuity/`：托育与家庭连续性，整理托育可及、费用、质量、早期儿童发展、父母工作连续性和家庭压力。
 - `emergency-preparedness-response/`：应急准备与响应，整理灾害准备、预警、应急通信、急救医疗、安置和恢复。

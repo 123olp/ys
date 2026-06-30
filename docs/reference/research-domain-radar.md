@@ -109,6 +109,12 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `disaster-recovery-relief-continuity/` | 灾后个人援助、恢复中心、临时安置、灾害贷款和救济导航决定冲击后恢复是否连续 |
 | `financial-inclusion-payment-systems/` | 账户、支付、汇款、数字金融服务和消费者保护决定资源能否稳定流动到主体 |
 | `workforce-employment-services/` | 就业服务、劳动力发展、学徒制、职业信息和合理便利决定能力能否转化为收入和工作入口 |
+| `household-emergency-preparedness-resilience/` | 家庭应急计划、物资包、健康准备、备用通信、文件和特殊需求安排决定公共救援抵达前的主体连续性 |
+| `media-information-literacy-public-libraries/` | 媒体信息素养、公共图书馆和可信知识入口决定主体能否寻找、判断、理解和使用信息 |
+| `health-workforce-capacity/` | 健康劳动力供给、分布、训练、保留、负荷和技能组合决定医学技术能否转化为真实照护 |
+| `administrative-burden-procedural-friction/` | 学习成本、心理成本、合规成本、证明、等待、续期和申诉决定名义权利能否穿过制度流程 |
+| `community-health-workers-peer-support/` | 社区健康工作者、同伴支持、导航员和可信中介决定服务能否进入日常生活并形成恢复闭环 |
+| `civic-data-open-government-transparency/` | 开放数据、公共记录、FOIA、绩效数据和透明机制决定公共系统是否可观察、可审查和可反馈 |
 
 ## 来源信号
 
@@ -196,6 +202,12 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | USA.gov Disaster Assistance / FEMA DRC / SBA Disaster Assistance / Benefits.gov Disaster Relief / Red Cross shelters | 提示灾后恢复、临时安置、个人援助、灾害贷款和救济导航需要独立恢复域 |
 | World Bank Financial Inclusion / Global Findex / Payment Systems / FDIC Household Survey / CFPB complaints / Federal Reserve Payments Study | 提示账户、支付、汇款、数字金融服务和消费者保护是资源流动的独立基础设施 |
 | CareerOneStop / DOL ETA-WIOA / Apprenticeship.gov / O*NET / My Next Move / JAN | 提示就业服务、劳动力发展、职业信息、再就业和合理便利是能力进入工作系统的独立接口 |
+| Red Cross / CDC Prepare Your Health / Ready.gov / NOAA Weather-Ready Nation | 提示家庭计划、物资包、健康准备、备用通信、文件和特殊需求是公共救援抵达前的家庭韧性条件 |
+| UNESCO MIL / IMLS Public Libraries Survey / ALA Libraries Transform | 提示媒体信息素养、公共图书馆、数字技能和社区学习空间是判断、学习和公共服务使用的知识入口 |
+| WHO Health Workforce / HRSA Health Workforce / BLS Healthcare Occupations | 提示健康劳动力供给、分布、培训、保留、负荷和技能组合是医学服务可达性的容量约束 |
+| Administrative Burden / Performance.gov CX / OMB Customer Experience / Digital.gov | 提示学习成本、心理成本、合规成本、证明、等待、续期和申诉会把制度支持转化为有效时间损耗 |
+| WHO CHW guideline / CDC CHW / HRSA CHW Training / SAMHSA Peer Support | 提示社区健康工作者、同伴支持和导航员是医疗、公共卫生、社会服务和恢复支持的关系接口 |
+| Data.gov / Resources.data.gov / FOIA.gov / Open.USA.gov / Federal Data Strategy | 提示开放数据、公共记录、元数据、绩效数据和透明机制是公共系统可观察、可审查和可反馈的基础设施 |
 
 Source links:
 
@@ -459,6 +471,29 @@ Source links:
 - https://www.onetonline.org/
 - https://www.mynextmove.org/
 - https://askjan.org/
+- https://www.redcross.org/get-help/how-to-prepare-for-emergencies.html
+- https://www.cdc.gov/orr/ready/index.htm
+- https://www.ready.gov/plan
+- https://www.ready.gov/kit
+- https://www.weather.gov/wrn/
+- https://www.unesco.org/en/media-information-literacy
+- https://www.imls.gov/research-evaluation/data-collection/public-libraries-survey
+- https://www.ala.org/advocacy/libraries-transform
+- https://www.who.int/health-topics/health-workforce
+- https://www.who.int/publications/i/item/9789241511131
+- https://bhw.hrsa.gov/
+- https://data.hrsa.gov/topics/health-workforce
+- https://www.bls.gov/ooh/healthcare/
+- https://doi.org/10.1111/puar.12375
+- https://www.whitehouse.gov/omb/management/ofcio/customer-experience/
+- https://www.who.int/publications/i/item/9789241550369
+- https://www.cdc.gov/community-health-workers/
+- https://www.samhsa.gov/brss-tacs/recovery-support-tools/peers
+- https://data.gov/
+- https://resources.data.gov/
+- https://www.foia.gov/
+- https://open.usa.gov/
+- https://strategy.data.gov/
 
 ## 使用规则
 

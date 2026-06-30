@@ -17,6 +17,7 @@ All notable repository structure changes are recorded here.
 - Added twelfth-wave treatment, service-understanding, and workplace-rights domain skeletons for medicine access/treatment continuity, patient data interoperability, telehealth/remote monitoring access, community resource navigation, language access/plain communication, and labor rights/workplace protection.
 - Added thirteenth-wave health data, outcomes, value, public-health, early-life, and patient-safety domain skeletons for health data privacy governance, functioning/quality-of-life outcomes, health economics/value assessment, immunization/public-health surveillance, maternal/newborn/child development, and patient safety/organizational learning.
 - Added fourteenth-wave public-service, emergency, financial, and workforce domain skeletons for social determinants/community vulnerability, public service design/accessibility, emergency alerts/communications, disaster recovery/relief continuity, financial inclusion/payment systems, and workforce/employment services.
+- Added fifteenth-wave preparedness, literacy, workforce, burden, community, and open-data domain skeletons for household emergency preparedness/resilience, media information literacy/public libraries, health workforce capacity, administrative burden/procedural friction, community health workers/peer support, and civic data/open government transparency.
 
 ## 2026-06-29
 
