@@ -57,3 +57,4 @@ Current decisions:
 - `0042-add-thirty-eighth-wave-decision-authority-fiduciary-continuity-domains.md`
 - `0043-add-thirty-ninth-wave-algorithmic-access-screening-domains.md`
 - `0044-add-fortieth-wave-credential-licensure-continuity-domains.md`
+- `0045-add-forty-first-wave-income-entitlement-record-continuity-domains.md`

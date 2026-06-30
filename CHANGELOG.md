@@ -4,6 +4,7 @@ All notable repository structure changes are recorded here.
 
 ## 2026-06-30
 
+- Added forty-first-wave income, tax, social-insurance, retirement, unemployment, and workers-compensation record continuity domain skeletons for payroll/employment records, tax administration, Social Security earnings and benefits, retirement/pension savings plans, unemployment insurance wage records, and occupational injury benefit continuity.
 - Added fortieth-wave credential, licensure, and verifiable-proof continuity domain skeletons for education records/transcript verification, professional licensure/certification, skills and competency credentialing, continuing education/recertification, apprenticeship/work-based learning, and verifiable credential wallet interoperability.
 - Added thirty-ninth-wave algorithmic access, screening, and eligibility continuity domain skeletons for credit/consumer reporting, tenant screening/rental access, background check/record screening, employment algorithmic hiring screening, insurance underwriting algorithmic risk scoring, and public benefits automated eligibility decisions.
 - Added thirty-eighth-wave decision authority, agency, and fiduciary continuity domain skeletons for advance care planning, supported decision-making/guardianship rights, healthcare personal representative HIPAA access, financial fiduciary power of attorney, representative payee benefits management, and trust/estate affairs succession continuity.

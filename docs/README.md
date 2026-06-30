@@ -60,6 +60,7 @@ docs/
 │   ├── 0042-add-thirty-eighth-wave-decision-authority-fiduciary-continuity-domains.md
 │   ├── 0043-add-thirty-ninth-wave-algorithmic-access-screening-domains.md
 │   ├── 0044-add-fortieth-wave-credential-licensure-continuity-domains.md
+│   ├── 0045-add-forty-first-wave-income-entitlement-record-continuity-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -306,4 +307,10 @@ docs/
 191. Read `../domains/continuing-education-recertification-continuity/README.md` if you are working on continuing education, CPD, CEU, CME, maintenance of certification, recertification, renewal, or continuing competence.
 192. Read `../domains/apprenticeship-work-based-learning-continuity/README.md` if you are working on apprenticeships, work-based learning, on-the-job training, mentorship, journeyworker status, or competency progression.
 193. Read `../domains/verifiable-credential-wallet-interoperability/README.md` if you are working on verifiable credentials, digital credential wallets, issuers, holders, verifiers, DIDs, trust registries, selective disclosure, or credential revocation.
-194. Enter a domain under `../domains/`.
+194. Read `../domains/income-payroll-employment-record-continuity/README.md` if you are working on payroll records, wage records, employment verification, pay stubs, income proof, or payroll record correction.
+195. Read `../domains/tax-administration-filing-record-continuity/README.md` if you are working on tax records, IRS transcripts, filing records, taxpayer identity, refund/credit records, tax notices, or tax account correction.
+196. Read `../domains/social-security-earnings-benefit-record-continuity/README.md` if you are working on Social Security earnings records, work credits, benefit statements, retirement/disability/survivor records, or earnings corrections.
+197. Read `../domains/retirement-pension-savings-plan-continuity/README.md` if you are working on pensions, 401(k), IRA, retirement plan records, vesting, rollovers, beneficiaries, lost accounts, or pension guarantees.
+198. Read `../domains/unemployment-insurance-wage-record-continuity/README.md` if you are working on unemployment insurance wage records, UI claims, base periods, eligibility determinations, appeals, overpayments, or fraud controls.
+199. Read `../domains/workers-compensation-occupational-injury-benefit-continuity/README.md` if you are working on workers compensation, occupational injury records, occupational disease, wage replacement, return-to-work, vocational rehabilitation, or OSHA injury logs.
+200. Enter a domain under `../domains/`.

@@ -249,6 +249,12 @@
 - `continuing-education-recertification-continuity/`：继续教育、再认证与续证连续性，整理 CE/CPD、再认证、继续胜任力、学习记录和合规审计。
 - `apprenticeship-work-based-learning-continuity/`：学徒制与工作中学习连续性，整理注册学徒、在岗训练、导师制、工时记录、技能进阶和结业证明。
 - `verifiable-credential-wallet-interoperability/`：可验证凭证钱包与互操作连续性，整理 VC、数字钱包、DID、签发验证、选择性披露、撤销和恢复。
+- `income-payroll-employment-record-continuity/`：工资、薪资与雇佣记录连续性，整理工资、工时、薪资单、雇佣证明、收入核验和记录纠错。
+- `tax-administration-filing-record-continuity/`：税务行政与申报记录连续性，整理税务申报、tax transcripts、纳税人身份、扣缴、退税抵免和账户纠错。
+- `social-security-earnings-benefit-record-continuity/`：社会保险收入与福利记录连续性，整理收入记录、工作 credits、福利声明、退休、残障、遗属和记录更正。
+- `retirement-pension-savings-plan-continuity/`：退休、养老金与储蓄计划连续性，整理养老金、401(k)、IRA、rollover、vesting、受益人、丢失账户和计划终止。
+- `unemployment-insurance-wage-record-continuity/`：失业保险工资记录连续性，整理 UI wage records、基期、雇主报送、索赔状态、资格判定、申诉和欺诈防控。
+- `workers-compensation-occupational-injury-benefit-continuity/`：工伤与职业伤害权益连续性，整理工伤、职业病、伤害记录、医疗给付、工资替代、复工和 OSHA 记录。
 - `supply-chain-continuity/`：供应链连续性，整理关键物资、服务、物流、替代路径和恢复时间。
 - `synthetic-biology-biosecurity/`：合成生物学与生物安全，整理双重用途、生物安全、生物安保和治理边界。
 - `space-extreme-habitation/`：空间与极端栖居，整理辐射、微重力、隔离、闭环资源和远程医疗风险。

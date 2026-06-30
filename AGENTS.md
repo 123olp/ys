@@ -119,6 +119,12 @@ human_infra/
     ├── continuing-education-recertification-continuity/ # 继续教育、再认证与续证连续性
     ├── apprenticeship-work-based-learning-continuity/ # 学徒制与工作中学习连续性
     ├── verifiable-credential-wallet-interoperability/ # 可验证凭证钱包与互操作连续性
+    ├── income-payroll-employment-record-continuity/ # 工资、薪资与雇佣记录连续性
+    ├── tax-administration-filing-record-continuity/ # 税务行政与申报记录连续性
+    ├── social-security-earnings-benefit-record-continuity/ # 社会保险收入与福利记录连续性
+    ├── retirement-pension-savings-plan-continuity/ # 退休、养老金与储蓄计划连续性
+    ├── unemployment-insurance-wage-record-continuity/ # 失业保险工资记录连续性
+    ├── workers-compensation-occupational-injury-benefit-continuity/ # 工伤与职业伤害权益连续性
     ├── cognitive-augmentation/ # 认知增强与工具放大
     ├── digital-identity-security/ # 数字身份安全
     ├── disembodied-cns/   # 去具身外部维持型中枢生命系统
@@ -503,6 +509,7 @@ human_infra/
 - `domains/advance-care-planning-medical-decision-continuity/`、`domains/supported-decision-making-guardianship-rights/`、`domains/healthcare-personal-representative-hipaa-access-continuity/`、`domains/financial-fiduciary-power-of-attorney-continuity/`、`domains/representative-payee-benefits-management-continuity/` 和 `domains/trust-estate-affairs-succession-continuity/` 负责预先医疗照护计划、支持性决策、医疗个人代表、财务受托、代表收款人和事务继承这些决策权、代理权与受托连续性条件。
 - `domains/credit-consumer-reporting-access-continuity/`、`domains/tenant-screening-rental-access-continuity/`、`domains/background-check-record-screening-continuity/`、`domains/employment-algorithmic-hiring-screening-continuity/`、`domains/insurance-underwriting-algorithmic-risk-scoring-continuity/` 和 `domains/public-benefits-eligibility-automated-decision-continuity/` 负责信用/消费者报告、租房筛查、背景记录筛查、算法招聘、保险算法评分和公共福利自动资格系统这些算法化准入、筛查与资格连续性条件。
 - `domains/education-record-transcript-verification-continuity/`、`domains/professional-licensure-certification-continuity/`、`domains/skills-competency-credentialing-continuity/`、`domains/continuing-education-recertification-continuity/`、`domains/apprenticeship-work-based-learning-continuity/` 和 `domains/verifiable-credential-wallet-interoperability/` 负责教育记录核验、职业证照认证、技能胜任力凭证、继续教育再认证、学徒制工作中学习和可验证凭证钱包互操作这些资格证明、授权与能力可携带连续性条件。
+- `domains/income-payroll-employment-record-continuity/`、`domains/tax-administration-filing-record-continuity/`、`domains/social-security-earnings-benefit-record-continuity/`、`domains/retirement-pension-savings-plan-continuity/`、`domains/unemployment-insurance-wage-record-continuity/` 和 `domains/workers-compensation-occupational-injury-benefit-continuity/` 负责工资雇佣记录、税务申报记录、社会保险收入与福利记录、退休养老金计划、失业保险工资记录和工伤职业伤害权益这些劳动成果到未来保障的记录连续性条件。
 - `domains/disembodied-cns/` 负责去具身外部维持型中枢生命系统的高层架构建模，不提供实验操作协议。
 - `domains/memory-editing/` 负责记忆编辑的概念、证据、验证和伦理边界，不提供可执行神经操控步骤。
 - `domains/biostasis-cryopreservation/` 负责冷冻保存、生物停滞、休眠和等待未来修复路径。
@@ -556,6 +563,7 @@ human_infra/
 - 2026-06-26：新增 `web/` Observable Framework 应用，作为科研叙事、书籍转译、预测模型和交互图表的正式 Web 入口。
 - 2026-06-27：新增 `tools/arxiv_html_paper_tool.py` 与 `tools/arxiv-html-paper/`，把 arXiv HTML papers 前端框架沉淀为可复用 Astro 工具链。
 - 2026-06-29：新增可控度规等待室假设 working paper 入口和审计账本，把黑洞等待室收敛为固有时差分、退出采用、风险扣减和递归等待的可审查模型。
+- 2026-06-30：新增第四十一波 6 个收入、税务、社保、退休、失业和工伤权益记录连续性域，覆盖工资雇佣记录、税务申报记录、社会保险收入与福利记录、退休养老金计划、失业保险工资记录和工伤职业伤害权益。
 - 2026-06-30：新增第四十波 6 个资格证明、证照与能力可携带连续性域，覆盖教育记录核验、职业证照认证、技能胜任力凭证、继续教育再认证、学徒制工作中学习和可验证凭证钱包互操作。
 - 2026-06-30：新增第三十九波 6 个算法化准入、筛查与资格连续性域，覆盖信用与消费者报告、租房筛查、背景记录筛查、算法招聘、保险算法评分和公共福利自动资格系统。
 - 2026-06-30：新增第三十八波 6 个决策权、代理权与受托连续性域，覆盖预先医疗照护计划、支持性决策、医疗个人代表、财务受托、代表收款人和事务继承。

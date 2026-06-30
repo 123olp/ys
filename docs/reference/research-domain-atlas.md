@@ -181,6 +181,12 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 职业能力必须持续更新 | `continuing-education-recertification-continuity/` | 继续教育、CPD、CEU/CME、再认证、续证、能力维护、合规记录 | 长寿命职业周期中知识过时、记录断裂或续证负担过高导致授权和收入中断 |
 | 工作时间必须能转化为技能资产 | `apprenticeship-work-based-learning-continuity/` | 注册学徒、在岗训练、导师制、工时记录、技能标准、结业证明 | 工作中学习退化为不可携带廉价劳动，经验无法沉淀为资格和未来选择权 |
 | 凭证必须可机器核验且可恢复 | `verifiable-credential-wallet-interoperability/` | 可验证凭证、数字钱包、DID、签发验证、撤销、选择性披露、恢复 | 钱包、密钥、撤销状态或信任注册表失效让身份、资格和授权证明断线 |
+| 劳动收入必须可被制度承认 | `income-payroll-employment-record-continuity/` | 工资、工时、薪资单、雇佣证明、收入核验、记录纠错 | 工资雇佣记录缺失或错误让收入证明、福利资格、信用、租房和退休权益断线 |
+| 纳税记录必须可访问可纠错 | `tax-administration-filing-record-continuity/` | 税务申报、tax transcripts、纳税人身份、扣缴、退税抵免、账户纠错 | 税务账号错误、身份盗用或记录不可访问阻断退税、公共服务、资助和资格核验 |
+| 缴费历史必须转化为社会保障 | `social-security-earnings-benefit-record-continuity/` | 收入记录、工作 credits、福利声明、退休、残障、遗属、记录更正 | 漏报、身份错配或账户不可访问削弱老年、失能和家庭风险边界的基本保障 |
+| 工作期资源必须延续到退休期 | `retirement-pension-savings-plan-continuity/` | 养老金、401(k)、IRA、rollover、vesting、受益人、丢失账户、计划终止 | 账户遗失、计划终止、受益人错误或转移失败削弱劳动退出后的资源连续性 |
+| 失业冲击必须可被工资记录接住 | `unemployment-insurance-wage-record-continuity/` | UI wage records、基期、雇主报送、资格判定、申诉、overpayment、欺诈防控 | 工资记录错配、身份盗用、申诉困难或支付延迟放大失业对住房、健康和学习窗口的冲击 |
+| 工作伤害必须转化为恢复支持 | `workers-compensation-occupational-injury-benefit-continuity/` | 工伤、职业病、伤害记录、医疗给付、工资替代、复工、OSHA 记录 | 报告缺失、记录争议或复工压力把工作伤害转成长期失能和收入断裂 |
 | 栖居空间可保护生命 | `building-fire-life-safety-codes/` | 建筑规范、消防规范、疏散、烟雾报警、无障碍、结构韧性 | 居住、照护、学习、工作和公共空间成为火灾、烟雾、结构和疏散风险源 |
 | 关键物质系统可制造修复 | `manufacturing-repair-capacity/` | 制造、维修、维护、备件、质量、本地生产、关键设备恢复 | 设备损坏、备件短缺、质量缺陷和生产能力不足导致服务与工具系统失效 |
 | 公共预算可转化为服务 | `public-procurement-contracting-capacity/` | 公共采购、合同、供应商管理、应急采购、透明度、交付验收 | 有预算和政策但采购失败、合同失效、腐败、延误或劣质交付 |
@@ -456,6 +462,12 @@ risk-engineering
   -> continuing-education-recertification-continuity
   -> apprenticeship-work-based-learning-continuity
   -> verifiable-credential-wallet-interoperability
+  -> income-payroll-employment-record-continuity
+  -> tax-administration-filing-record-continuity
+  -> social-security-earnings-benefit-record-continuity
+  -> retirement-pension-savings-plan-continuity
+  -> unemployment-insurance-wage-record-continuity
+  -> workers-compensation-occupational-injury-benefit-continuity
   -> community-resource-navigation
   -> social-determinants-community-vulnerability
   -> public-service-design-accessibility

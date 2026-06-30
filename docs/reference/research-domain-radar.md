@@ -268,6 +268,12 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `continuing-education-recertification-continuity/` | 继续教育与再认证决定长寿命职业周期中能力是否能随标准、技术和责任边界持续更新 |
 | `apprenticeship-work-based-learning-continuity/` | 学徒制和工作中学习决定劳动时间是否能转化为有导师、有记录、可迁移的技能资产 |
 | `verifiable-credential-wallet-interoperability/` | 可验证凭证钱包决定身份、资格、学历、技能和授权证明是否能长期携带、核验、撤销和恢复 |
+| `income-payroll-employment-record-continuity/` | 工资、薪资和雇佣记录决定过去劳动是否能持续转化为收入证明、福利资格、税务记录、信用和长期权益 |
+| `tax-administration-filing-record-continuity/` | 税务申报和账户记录决定收入、家庭状态、扣缴和抵免是否能被公共服务、金融和资格系统识别 |
+| `social-security-earnings-benefit-record-continuity/` | 社会保险收入与福利记录决定长期工资和缴费历史是否能在老年、失能和家庭风险边界转化为保障 |
+| `retirement-pension-savings-plan-continuity/` | 退休计划、养老金和长期储蓄账户决定工作期资源是否能延续到劳动退出后的生活与照护窗口 |
+| `unemployment-insurance-wage-record-continuity/` | 失业保险工资记录决定劳动收入中断时主体是否能获得短期收入稳定、申诉和再就业衔接 |
+| `workers-compensation-occupational-injury-benefit-continuity/` | 工伤与职业伤害权益记录决定工作伤害后医疗、工资替代、职业康复和复工机会是否不断线 |
 
 ## 来源信号
 

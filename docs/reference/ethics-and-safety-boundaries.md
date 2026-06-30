@@ -756,6 +756,23 @@ Human Infra 不能被设计成更精密的压榨系统。
 - 不帮助伪造成绩单、伪造证书、代考代学、冒用执照、伪造工时、绕过核验、攻击钱包、窃取密钥、操纵技能评分、规避监管或规避身份认证。
 - 不替代教育机构、registrar、发证机构、职业监管机构、继续教育提供方、劳工部门、W3C/NIST 标准解释、律师、雇主、学校或官方申诉渠道。
 
+## 收入、税务、社保、退休、失业与工伤权益记录连续性边界
+
+`income-payroll-employment-record-continuity`、`tax-administration-filing-record-continuity`、`social-security-earnings-benefit-record-continuity`、`retirement-pension-savings-plan-continuity`、`unemployment-insurance-wage-record-continuity` 和 `workers-compensation-occupational-injury-benefit-continuity` 关注工资雇佣记录、税务申报记录、社会保险收入与福利记录、退休养老金计划、失业保险工资记录和工伤职业伤害权益如何让主体把过去劳动、缴费、纳税、失业和工作伤害事实持续转化为未来资源与保障，不是税务、福利、退休、投资、工伤、医疗、法律、财务、保险或个案操作入口。
+
+可以做：
+
+- 整理工资、工时、薪资单、税务 transcript、社会保险收入记录、工作 credits、退休计划、失业保险工资记录、工伤记录和 OSHA recordkeeping 的公开来源、记录机制、纠错入口、隐私和行政负担。
+- 比较工资雇佣记录、税务记录、社会保险记录、退休账户、UI wage records 和 workers compensation records 如何把劳动、缴费、账户和伤害事实转成未来权益。
+- 记录 DOL WHD、IRS、SSA、DOL EBSA、PBGC、DOL ETA/UI、DOL OWCP、OSHA 等资料中的证据边界、账户风险、欺诈防控、申诉边界和禁止用途。
+
+不能做：
+
+- 不提供工资索赔、税务申报、避税、退税、抵免、社会保险申领、退休规划、投资、rollover、失业保险申请、每周认证、工伤索赔、职业病认定、复工许可、医疗诊断、法律、财务、移民、保险或个人案件建议。
+- 不判断某人是否有工资索赔、税务责任、福利资格、退休金额、工作 credits、失业保险资格、工伤赔偿、职业病因果、残障状态、复工能力、申诉胜率或最优行动策略。
+- 不帮助伪造薪资单、隐瞒收入、规避税务、冒用身份、欺诈退税、操纵社会保险记录、隐藏退休资产、虚假申领失业保险、伪造工伤记录、隐瞒事故或规避 OSHA / workers compensation 报告。
+- 不替代 DOL、IRS、SSA、EBSA、PBGC、州级失业保险机构、州级 workers compensation 机构、OSHA、税务专业人士、律师、财务顾问、医生、雇主、保险人、计划管理人或官方申诉渠道。
+
 ## 数据与证据边界
 
 - 原始数据、清洗数据和人工判断必须分层保存。
