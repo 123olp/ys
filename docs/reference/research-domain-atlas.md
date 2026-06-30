@@ -207,6 +207,13 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 跨境移动资格必须连续 | `passport-travel-document-mobility-continuity/` | 护照、旅行证件、领事服务、紧急证件、旅行警示、跨境身份 | 证件过期、丢失、扣留或领事服务不可达截断跨境医疗、工作、学习、家庭和撤离选择权 |
 | 持续交易关系必须可理解可退出 | `contract-subscription-billing-consent-continuity/` | 合同、服务条款、订阅、自动续费、账单、取消、争议、持续同意 | 隐性续费、暗黑模式、账单错误和取消摩擦持续消耗金钱、时间、注意力和控制权 |
 | 关键文件必须可签署可认证 | `notary-document-authentication-signature-continuity/` | 公证、签名、电子签名、文件认证、apostille、授权文件、跨机构承认 | 文件无效、认证缺失、身份无法确认或签名记录失效让授权、事实和跨境文件不可执行 |
+| 国家成员资格必须可证明 | `citizenship-nationality-statelessness-continuity/` | 公民身份、国籍、自然化、国籍证明、无国籍风险、领事保护 | 无国籍、国籍争议或证明缺失使旅行、保护、投票、福利、家庭团聚和法律救济断裂 |
+| 居留和工作授权必须连续 | `immigration-status-residency-work-authorization-continuity/` | 移民身份、居留资格、工作授权、身份变更、续期、雇佣核验 | 身份过期、授权延误、雇主锁定或文件丢失压缩工作、医疗、住房、教育和家庭行动 |
+| 人道保护身份必须连续 | `asylum-refugee-protection-status-continuity/` | 庇护、难民、临时保护、人道保护、安置、家庭团聚 | 原制度失效后，保护身份悬置会让安全、住所、医疗、教育、工作和家庭团聚长期断裂 |
+| 强制限制状态必须可追踪可恢复 | `detention-custody-confinement-status-continuity/` | 逮捕、拘留、羁押、移民拘押、释放、通信、法律入口 | 位置不明、联系断裂、药物中断、法律入口失败或释放转接失败让主体快速失去恢复路径 |
+| 强制治疗必须保护权利连续性 | `civil-commitment-involuntary-treatment-rights-continuity/` | 非自愿评估、民事收治、强制治疗、最小限制、复查、出院转接 | 危机干预若缺少复查、同意、语言、残障权利和社区转接，会把安全措施变成失权链条 |
+| 程序通知必须让主体能回应 | `court-notice-service-process-default-judgment-continuity/` | 法律通知、送达、听证通知、回应期限、缺席判决、执行后果 | 未收到或无法理解程序会导致工资、住房、债务、家庭权利和信用被静默剥夺 |
+| 记录救济必须限制长期尾部后果 | `criminal-record-relief-collateral-consequences-continuity/` | 刑事记录、封存清除、记录更正、附带后果、重返资格 | 过去事件通过记录和附带后果长期截断工作、住房、证照、投票、家庭和服务入口 |
 | 栖居空间可保护生命 | `building-fire-life-safety-codes/` | 建筑规范、消防规范、疏散、烟雾报警、无障碍、结构韧性 | 居住、照护、学习、工作和公共空间成为火灾、烟雾、结构和疏散风险源 |
 | 关键物质系统可制造修复 | `manufacturing-repair-capacity/` | 制造、维修、维护、备件、质量、本地生产、关键设备恢复 | 设备损坏、备件短缺、质量缺陷和生产能力不足导致服务与工具系统失效 |
 | 公共预算可转化为服务 | `public-procurement-contracting-capacity/` | 公共采购、合同、供应商管理、应急采购、透明度、交付验收 | 有预算和政策但采购失败、合同失效、腐败、延误或劣质交付 |
@@ -507,6 +514,13 @@ risk-engineering
   -> passport-travel-document-mobility-continuity
   -> contract-subscription-billing-consent-continuity
   -> notary-document-authentication-signature-continuity
+  -> citizenship-nationality-statelessness-continuity
+  -> immigration-status-residency-work-authorization-continuity
+  -> asylum-refugee-protection-status-continuity
+  -> detention-custody-confinement-status-continuity
+  -> civil-commitment-involuntary-treatment-rights-continuity
+  -> court-notice-service-process-default-judgment-continuity
+  -> criminal-record-relief-collateral-consequences-continuity
   -> community-resource-navigation
   -> social-determinants-community-vulnerability
   -> public-service-design-accessibility

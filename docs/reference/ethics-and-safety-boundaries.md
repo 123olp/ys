@@ -828,6 +828,24 @@ Human Infra 不能被设计成更精密的压榨系统。
 - 不帮助伪造、篡改、借用、购买、出售、隐藏或滥用账户、债务、产权、地契、车辆、驾照、护照、旅行、签名、公证、apostille、合同、账单、订阅、电子签名、证书、印章或时间戳记录。
 - 不替代银行、信用社、FDIC、NCUA、CFPB、FTC、法院、律师、财务顾问、税务专业人士、房地产专业人士、title company、DMV、State Department、DHS、领事机构、公证员、文件签发机构、消费者保护机构或官方申诉渠道。
 
+## 法律状态、保护身份、强制程序与记录救济连续性边界
+
+`citizenship-nationality-statelessness-continuity`、`immigration-status-residency-work-authorization-continuity`、`asylum-refugee-protection-status-continuity`、`detention-custody-confinement-status-continuity`、`civil-commitment-involuntary-treatment-rights-continuity`、`court-notice-service-process-default-judgment-continuity` 和 `criminal-record-relief-collateral-consequences-continuity` 关注国籍、居留工作授权、保护身份、拘押状态、非自愿治疗、法院程序通知和犯罪记录救济如何影响主体制度承认、自由边界、服务入口和未来选择权，不是个人公民身份、移民、庇护、拘押、强制治疗、法院、刑事记录、税务、医疗或法律服务入口。
+
+可以做：
+
+- 整理 USCIS、State Department、UNHCR、ICE、BOP、BJS、SAMHSA、HHS OCR、DOJ Civil Rights、U.S. Courts、NCSC、NICCC、BJA 和官方司法/移民/健康资料的机制、对象、变量和边界。
+- 比较国籍、移民授权、保护身份、拘押监管、非自愿治疗、程序通知和记录救济如何分别影响身份承认、工作学习、家庭团聚、自由、医疗、住房、法律参与和重返社会。
+- 记录正当程序、最小限制、隐私、非歧视、语言可达、残障权利、反污名、反规避、反伪造、强制权力和个案建议边界，服务后续资料卡片与变量建模。
+
+不能做：
+
+- 不提供个人公民身份、自然化、国籍、无国籍、签证、绿卡、居留、工作许可、庇护、难民、临时保护、拘押、保释、假释、强制治疗、出院、送达、答辩、撤销缺席判决、封存清除、赦免、投票恢复、移民、刑事、税务、医疗或法律建议。
+- 不判断某人是否具备国籍、移民身份、庇护资格、工作授权、释放资格、收治标准、法院期限、记录救济资格、福利资格、投票资格或案件胜率。
+- 不生成移民、庇护、拘押、法院、刑事记录、强制治疗、医疗、税务、福利、工作授权、证据、申诉、上诉、投诉、撤销、清除、赦免或个案策略材料。
+- 不帮助伪造文件、隐藏身份、绕过边境、规避执法、躲避送达、规避拘押、干扰司法、逃脱监管、绕过 I-9/E-Verify、欺骗雇主/房东/机构、控制他人、强迫治疗、定位监控、制造证据、骚扰当事人或暴露受保护对象身份。
+- 不替代 USCIS、State Department、UNHCR、IOM、EOIR、ICE、BOP、法院、律师、法律援助、拘押机构、医疗人员、危机服务、残障权利机构、社会工作者、受害者服务、记录救济机构或官方申诉渠道。
+
 ## 数据与证据边界
 
 - 原始数据、清洗数据和人工判断必须分层保存。

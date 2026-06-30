@@ -293,6 +293,13 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `passport-travel-document-mobility-continuity/` | 护照和旅行证件决定主体跨境医疗、工作、学习、家庭团聚、撤离和人道服务选择权是否可执行 |
 | `contract-subscription-billing-consent-continuity/` | 合同、订阅和账单决定持续交易关系是否保持可理解、可控制、可取消和可争议，而不是持续吞噬时间和资金 |
 | `notary-document-authentication-signature-continuity/` | 公证、文件认证和签名决定主体意愿、授权、合同和跨境文件是否能被机构长期承认、验证和执行 |
+| `citizenship-nationality-statelessness-continuity/` | 公民身份、国籍和无国籍状态决定主体是否被国家或国际保护框架承认为成员、受保护对象和权利主体 |
+| `immigration-status-residency-work-authorization-continuity/` | 移民身份、居留资格和工作授权决定主体能否在所在地持续工作、学习、医疗、住房、金融和家庭连接 |
+| `asylum-refugee-protection-status-continuity/` | 庇护、难民和保护身份决定主体在原制度危险或失效时是否仍能进入安全、服务、安置和恢复路径 |
+| `detention-custody-confinement-status-continuity/` | 拘押、羁押和监管状态决定主体自由受限时，位置、通信、医疗、法律入口和释放转接是否不断线 |
+| `civil-commitment-involuntary-treatment-rights-continuity/` | 民事收治和非自愿治疗决定急性危机处理是否同时保留正当程序、最小限制、权利复查和社区恢复 |
+| `court-notice-service-process-default-judgment-continuity/` | 法律通知、送达和缺席判决决定主体是否有真实机会进入程序，而不是在静默程序中丧失资源与权利 |
+| `criminal-record-relief-collateral-consequences-continuity/` | 犯罪记录救济和附带后果决定过去事件是否无限期压制主体工作、住房、证照、投票、家庭和服务入口 |
 
 ## 来源信号
 
@@ -436,6 +443,13 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | USA.gov driver licenses and vehicle registration / DHS REAL ID / state DMV materials | 提示驾照、州 ID、REAL ID、车辆 title、登记和地址同步决定地方移动资格与车辆资源连续性 |
 | State Department passports, travel advisories and authentications | 提示护照、领事服务、紧急证件、文件认证和 apostille 决定跨境移动与文件承认连续性 |
 | FTC subscription and negative-option materials / CFPB consumer complaints / FCC billing materials | 提示合同、订阅、自动续费、账单、取消和持续同意是长期资源泄漏与消费者控制权的独立机制 |
+| USCIS citizenship / State Department nationality / UNHCR statelessness | 提示国家成员资格、国籍证明、领事保护和无国籍风险是法律身份之上的独立状态门 |
+| USCIS green card, employment authorization, change status and I-9 materials | 提示居留、工作授权、身份续期、雇佣核验和身份等待状态决定工作、教育、医疗、住房和家庭连续性 |
+| UNHCR protection and refugee statistics / USCIS asylum and refugee materials | 提示庇护、难民、临时保护、安置和保护身份转换是人道连续性中的独立法律状态链 |
+| ICE detention management / BOP / BJS corrections / WHO prisons and health | 提示拘押、羁押、监管、通信、法律入口和释放转接不仅是健康问题，也是主体状态和自由边界问题 |
+| SAMHSA crisis services / HHS OCR / DOJ disability rights / WHO community mental health | 提示非自愿治疗、民事收治、最小限制、残障权利和社区恢复需要独立权利连续性边界 |
+| U.S. Courts civil cases and FRCP / NCSC access to justice | 提示法律通知、送达、期限、缺席判决和执行后果是司法可及之前的程序参与底座 |
+| NICCC / BJA National Reentry Resource Center / BJS criminal justice data | 提示犯罪记录、附带后果、记录救济和重返资格是背景筛查之外的长期尾部风险域 |
 | CareerOneStop / DOL ETA-WIOA / Apprenticeship.gov / O*NET / My Next Move / JAN | 提示就业服务、劳动力发展、职业信息、再就业和合理便利是能力进入工作系统的独立接口 |
 | Red Cross / CDC Prepare Your Health / Ready.gov / NOAA Weather-Ready Nation | 提示家庭计划、物资包、健康准备、备用通信、文件和特殊需求是公共救援抵达前的家庭韧性条件 |
 | UNESCO MIL / IMLS Public Libraries Survey / ALA Libraries Transform | 提示媒体信息素养、公共图书馆、数字技能和社区学习空间是判断、学习和公共服务使用的知识入口 |
@@ -590,6 +604,26 @@ Source links:
 - https://pmc.ncbi.nlm.nih.gov/articles/PMC3583887/
 - https://www.ncbi.nlm.nih.gov/books/NBK26810/
 - https://pmc.ncbi.nlm.nih.gov/articles/PMC9026931/
+- https://www.uscis.gov/citizenship
+- https://travel.state.gov/content/travel/en/legal/travel-legal-considerations/us-citizenship.html
+- https://www.unhcr.org/statelessness
+- https://www.uscis.gov/green-card
+- https://www.uscis.gov/i-9-central
+- https://www.uscis.gov/humanitarian/refugees-and-asylum/asylum
+- https://www.uscis.gov/humanitarian/refugees-and-asylum/refugees
+- https://www.unhcr.org/what-we-do/protect-human-rights
+- https://www.unhcr.org/refugee-statistics/
+- https://www.ice.gov/detain/detention-management
+- https://www.bop.gov/
+- https://bjs.ojp.gov/topics/corrections
+- https://www.samhsa.gov/find-help
+- https://www.hhs.gov/civil-rights/index.html
+- https://www.justice.gov/crt/disability-rights-section
+- https://www.uscourts.gov/about-federal-courts/types-cases/civil-cases
+- https://www.uscourts.gov/rules-policies/current-rules-practice-procedure/federal-rules-civil-procedure
+- https://www.ncsc.org/consulting-and-research/areas-of-expertise/access-to-justice
+- https://niccc.nationalreentryresourcecenter.org/
+- https://nationalreentryresourcecenter.org/
 - https://pubmed.ncbi.nlm.nih.gov/25947369/
 - https://pmc.ncbi.nlm.nih.gov/articles/PMC6198085/
 - https://www.niddk.nih.gov/health-information/digestive-diseases

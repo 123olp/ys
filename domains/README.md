@@ -274,6 +274,13 @@
 - `passport-travel-document-mobility-continuity/`：护照、旅行证件与跨境移动连续性，整理护照、旅行证件、领事服务、紧急证件、旅行警示和跨境选择权。
 - `contract-subscription-billing-consent-continuity/`：合同、订阅、账单与持续同意连续性，整理合同、自动续费、账单、取消、争议、退款和持续同意。
 - `notary-document-authentication-signature-continuity/`：公证、文件认证与签名连续性，整理公证、电子签名、数字签名、apostille、文件认证和跨机构承认。
+- `citizenship-nationality-statelessness-continuity/`：公民身份、国籍与无国籍连续性，整理公民身份、自然化、国籍证明、领事保护、无国籍风险和身份恢复。
+- `immigration-status-residency-work-authorization-continuity/`：移民身份、居留与工作授权连续性，整理签证、居留、工作授权、身份续期、身份变更和雇佣资格核验。
+- `asylum-refugee-protection-status-continuity/`：庇护、难民与保护状态连续性，整理庇护、难民、临时保护、人道保护、安置、家庭团聚和保护身份转换。
+- `detention-custody-confinement-status-continuity/`：拘押、羁押与监管状态连续性，整理逮捕、拘留、羁押、移民拘押、释放、通信、法律入口和状态转换。
+- `civil-commitment-involuntary-treatment-rights-continuity/`：民事收治、非自愿治疗与权利连续性，整理危机评估、强制治疗、最小限制、复查、出院转接和权利保护。
+- `court-notice-service-process-default-judgment-continuity/`：法院通知、送达与缺席判决连续性，整理法律通知、送达、听证通知、回应期限、缺席判决和执行后果。
+- `criminal-record-relief-collateral-consequences-continuity/`：犯罪记录救济与附带后果连续性，整理刑事记录、封存清除、记录更正、附带后果和重返资格。
 - `supply-chain-continuity/`：供应链连续性，整理关键物资、服务、物流、替代路径和恢复时间。
 - `synthetic-biology-biosecurity/`：合成生物学与生物安全，整理双重用途、生物安全、生物安保和治理边界。
 - `space-extreme-habitation/`：空间与极端栖居，整理辐射、微重力、隔离、闭环资源和远程医疗风险。

@@ -61,3 +61,4 @@ Current decisions:
 - `0046-add-forty-second-wave-work-interruption-care-continuity-domains.md`
 - `0047-add-forty-third-wave-life-event-household-record-continuity-domains.md`
 - `0048-add-forty-fourth-wave-asset-account-transaction-continuity-domains.md`
+- `0049-add-forty-fifth-wave-legal-status-coercive-process-continuity-domains.md`

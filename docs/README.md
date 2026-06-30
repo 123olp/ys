@@ -64,6 +64,7 @@ docs/
 │   ├── 0046-add-forty-second-wave-work-interruption-care-continuity-domains.md
 │   ├── 0047-add-forty-third-wave-life-event-household-record-continuity-domains.md
 │   ├── 0048-add-forty-fourth-wave-asset-account-transaction-continuity-domains.md
+│   ├── 0049-add-forty-fifth-wave-legal-status-coercive-process-continuity-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -335,4 +336,11 @@ docs/
 216. Read `../domains/passport-travel-document-mobility-continuity/README.md` if you are working on passports, travel documents, consular services, emergency documents, travel advisories, or cross-border mobility continuity.
 217. Read `../domains/contract-subscription-billing-consent-continuity/README.md` if you are working on contracts, subscriptions, automatic renewal, billing, cancellation, negative options, ongoing consent, or transaction-friction continuity.
 218. Read `../domains/notary-document-authentication-signature-continuity/README.md` if you are working on notarization, electronic signatures, digital signatures, document authentication, apostilles, or institutional recognition of signed records.
-219. Enter a domain under `../domains/`.
+219. Read `../domains/citizenship-nationality-statelessness-continuity/README.md` if you are working on citizenship, nationality, naturalization, consular protection, statelessness, nationality proof, or national-membership continuity.
+220. Read `../domains/immigration-status-residency-work-authorization-continuity/README.md` if you are working on immigration status, residency, work authorization, status renewal, employment eligibility, or local-status continuity.
+221. Read `../domains/asylum-refugee-protection-status-continuity/README.md` if you are working on asylum, refugee status, temporary protection, humanitarian protection, resettlement, or protection-status continuity.
+222. Read `../domains/detention-custody-confinement-status-continuity/README.md` if you are working on arrest, detention, custody, confinement, immigration detention, release transition, or custody-status continuity.
+223. Read `../domains/civil-commitment-involuntary-treatment-rights-continuity/README.md` if you are working on civil commitment, involuntary treatment, crisis evaluation, least-restrictive alternatives, review, or rights continuity.
+224. Read `../domains/court-notice-service-process-default-judgment-continuity/README.md` if you are working on court notice, service of process, hearing notices, response deadlines, default judgments, or procedural-notice continuity.
+225. Read `../domains/criminal-record-relief-collateral-consequences-continuity/README.md` if you are working on criminal records, record relief, expungement, sealing, collateral consequences, reentry eligibility, or record-recovery continuity.
+226. Enter a domain under `../domains/`.

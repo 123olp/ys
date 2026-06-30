@@ -4,6 +4,7 @@ All notable repository structure changes are recorded here.
 
 ## 2026-06-30
 
+- Added forty-fifth-wave legal-status, protection, confinement, procedural-notice, and record-relief continuity domain skeletons for citizenship/nationality/statelessness, immigration status/residency/work authorization, asylum/refugee protection status, detention/custody/confinement status, civil commitment/involuntary-treatment rights, court notice/service/default judgment, and criminal-record relief/collateral consequences.
 - Added forty-fourth-wave asset, account, mobility, and transaction-continuity domain skeletons for bank/deposit account access, debt obligations and relief, real-property title/deed records, driver license and vehicle registration, passport/travel documents, contract/subscription billing consent, and notary/document authentication/signature continuity.
 - Added forty-third-wave life-event, household, and family-record continuity domain skeletons for vital records, name-change identity synchronization, address/residency/mail routing, household/dependent eligibility, custody/child support, and kinship/foster/adoption care continuity.
 - Added forty-second-wave work interruption and care continuity domain skeletons for family/medical leave job protection, paid sick/family leave wage replacement, pregnancy/parental work continuity, workplace accommodation and return-to-work, disability income/work-capacity benefits, and family caregiver respite/work continuity.
