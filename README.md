@@ -592,6 +592,14 @@ flowchart TD
     H --> DIOSR[diagnostic-imaging-order-scheduling-report-continuity<br/>影像医嘱 / 报告回传]
     H --> APSC[ambulatory-procedure-surgery-center-continuity<br/>门诊操作 / ASC 连续]
     H --> AHUCT[after-hours-urgent-care-triage-continuity<br/>非工作时间 / 急诊前分诊]
+    H --> HIER[health-insurance-enrollment-renewal-continuity<br/>保险参保 / 续保连续]
+    H --> IEBV[insurance-eligibility-benefits-verification-continuity<br/>权益核验 / Benefits verification]
+    H --> MSPA[medical-service-prior-authorization-utilization-management-continuity<br/>医疗服务授权 / 利用管理]
+    H --> CAED[claims-adjudication-eob-denial-continuity<br/>理赔 EOB / 拒付闭环]
+    H --> PBPP[patient-billing-payment-plan-continuity<br/>患者账单 / 付款计划]
+    H --> PTGFE[price-transparency-good-faith-estimate-continuity<br/>价格透明 / 预估费用]
+    H --> SBBB[surprise-billing-balance-bill-protection-continuity<br/>意外账单 / 余额账单保护]
+    H --> CCFAMD[charity-care-financial-assistance-medical-debt-continuity<br/>经济援助 / 医疗债务]
     H --> MF[measurement-feedback<br/>测量 / 预测 / 反馈]
     H --> C[disembodied-cns<br/>去具身中枢生命系统]
     H --> M[memory-editing<br/>记忆编辑与人格连续性]
@@ -856,6 +864,14 @@ flowchart TD
 | [Diagnostic Imaging Order Scheduling Report Continuity](domains/diagnostic-imaging-order-scheduling-report-continuity/README.md) | 影像医嘱、prior authorization、预约、检查完成、报告生成、影像共享和结果回传 | 让影像能力转化为诊断进展而不是等待、重复和资料丢失 | 不解释影像、推荐检查、判断风险、代写授权、提供加急策略或诊疗建议 |
 | [Ambulatory Procedure Surgery Center Continuity](domains/ambulatory-procedure-surgery-center-continuity/README.md) | ASC、门诊内镜、输注、术前准备、陪同接送、恢复观察和 follow-up | 让低住院化治疗安全发生，并保留术后回路 | 不提供手术/操作建议、术前准备、麻醉判断、并发症处理、机构推荐或加急策略 |
 | [After Hours Urgent Care Triage Continuity](domains/after-hours-urgent-care-triage-continuity/README.md) | 夜间/周末照护、护士热线、urgent care、retail clinic、tele-triage 和闭环回传 | 在非急诊但不能等待的时间断点上保护主体 | 不提供症状分诊、急救判断、urgent care 推荐、等待建议、诊断治疗或保险规避 |
+| [Health Insurance Enrollment Renewal Continuity](domains/health-insurance-enrollment-renewal-continuity/README.md) | 健康保险参保、续保、特殊参保期、资格通知、保费支付和 Medicaid/Marketplace 转换 | 让主体持续拥有医疗支付入口，不因 life event、续保失败或保费断点失保 | 不提供保险选择、补贴资格、收入计算、申诉代写、税务、移民或法律建议 |
+| [Insurance Eligibility Benefits Verification Continuity](domains/insurance-eligibility-benefits-verification-continuity/README.md) | 保险资格、coverage active、benefits verification、费用分担、网络状态和覆盖限制 | 让服务发生前能核验权益、费用分担和网络边界，减少服务后账单冲击 | 不解释个人 benefits、deductible、network、coverage、claim 或 bill |
+| [Medical Service Prior Authorization Utilization Management Continuity](domains/medical-service-prior-authorization-utilization-management-continuity/README.md) | 医疗服务 prior authorization、utilization management、medical necessity、coverage criteria 和续期 | 防止检查、影像、手术、设备和治疗在授权治理层延迟或截断 | 不代写 PA、medical necessity、peer-to-peer、appeal 或 clinical letter |
+| [Claims Adjudication EOB Denial Continuity](domains/claims-adjudication-eob-denial-continuity/README.md) | claim adjudication、EOB、denial reason、coordination of benefits、resubmission 和 appeal window | 让服务发生后的 payer payment、adjustment 和 patient responsibility 可追踪 | 不解释个人 EOB、claim、denial、billing code、legal deadline 或 payer decision |
+| [Patient Billing Payment Plan Continuity](domains/patient-billing-payment-plan-continuity/README.md) | 患者账单、statement、patient responsibility、payment plan、billing inquiry 和 collections handoff | 防止医疗服务完成后转化为不可理解账单、催收和长期财务压力 | 不提供账单谈判、付款计划、信用修复、催收应对、法律或个案财务建议 |
+| [Price Transparency Good Faith Estimate Continuity](domains/price-transparency-good-faith-estimate-continuity/README.md) | hospital price transparency、payer transparency、machine-readable files、GFE 和 dispute resolution | 让医疗成本在服务前尽量可发现、可估算、可比对和可争议处理 | 不提供价格比较、机构选择、医疗选择、谈价、账单争议或套利建议 |
+| [Surprise Billing Balance Bill Protection Continuity](domains/surprise-billing-balance-bill-protection-continuity/README.md) | No Surprises Act、balance billing、out-of-network emergency care、air ambulance 和 cost-sharing protection | 限制主体无法选择网络状态时遭遇不可预见高额账单的风险 | 不判断个人账单是否合法，不代写投诉、申诉、法律信或 payer/provider dispute |
+| [Charity Care Financial Assistance Medical Debt Continuity](domains/charity-care-financial-assistance-medical-debt-continuity/README.md) | hospital financial assistance policy、charity care、limitation on charges、collections 和 medical debt | 让高额医疗成本进入经济援助、收费限制和债务缓冲机制，而不是直接击穿主体资源 | 不提供 charity care 申请、债务谈判、信用修复、法律、税务或个案财务建议 |
 | [Regenerative Medicine](domains/regenerative-medicine/README.md) | 干细胞、组织工程、器官再生、类器官、移植 | 器官/组织修复框架、功能终点和整合风险 | 不提供手术、细胞制备、移植或人体实验步骤 |
 | [Rehabilitation And Functioning](domains/rehabilitation-functioning/README.md) | 康复、功能恢复、失能预防、活动能力、自理和社会参与 | 功能状态、活动能力、参与能力和失能风险模型 | 不提供个人康复处方、训练计划、诊断或治疗建议 |
 | [Cancer Control](domains/cancer-control/README.md) | 癌症预防、早筛、治疗、复发、肿瘤演化 | 癌症风险函数、证据层级和长期控制变量 | 不提供诊断、治疗方案、处方、剂量或个体用药建议 |
@@ -1110,6 +1126,14 @@ human_infra/
 │   ├── diagnostic-imaging-order-scheduling-report-continuity/
 │   ├── ambulatory-procedure-surgery-center-continuity/
 │   ├── after-hours-urgent-care-triage-continuity/
+│   ├── health-insurance-enrollment-renewal-continuity/
+│   ├── insurance-eligibility-benefits-verification-continuity/
+│   ├── medical-service-prior-authorization-utilization-management-continuity/
+│   ├── claims-adjudication-eob-denial-continuity/
+│   ├── patient-billing-payment-plan-continuity/
+│   ├── price-transparency-good-faith-estimate-continuity/
+│   ├── surprise-billing-balance-bill-protection-continuity/
+│   ├── charity-care-financial-assistance-medical-debt-continuity/
 │   ├── cognitive-augmentation/
 │   ├── digital-identity-security/
 │   ├── disembodied-cns/
@@ -1397,5 +1421,6 @@ flowchart LR
 - 2026-06-30：新增第五十四波 8 个食物获得执行连续性域，覆盖 grocery/食品零售、SNAP EBT 兑换、WIC 母婴营养兑换、食品银行/pantry、灾害供餐、送餐/集体营养服务、婴儿配方/婴幼儿食品供应安全和餐馆/cafeteria 熟食安全可达。
 - 2026-06-30：新增第五十五波 8 个治疗获得与医用品执行连续性域，覆盖药房处方配药、药品福利/处方集/事前授权、用药核对与依从执行、患者药品标签/咨询理解、未用药回收处置、DME 供应维修、居家氧疗/呼吸设备供应和糖尿病胰岛素/血糖监测耗材连续性。
 - 2026-06-30：新增第五十六波 8 个门诊访问与临床服务执行连续性域，覆盖 provider 名录/网络充足性、初级照护 panel/预约、专科转诊/授权导航、预约容量/等待时间、门诊检验标本/结果路由、诊断影像医嘱/报告回传、门诊操作/ASC 和非工作时间 urgent care/triage 连续性。
+- 2026-06-30：新增第五十七波 8 个医疗支付、理赔、账单与成本保护连续性域，覆盖健康保险参保续保、权益核验、医疗服务授权、理赔/EOB/拒付、患者账单/付款计划、价格透明/GFE、意外账单保护和 charity care/医疗债务连续性。
 
 完整记录见 [CHANGELOG.md](CHANGELOG.md)。

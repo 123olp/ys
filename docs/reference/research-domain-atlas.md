@@ -308,6 +308,14 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 诊断影像必须完成并可共享 | `diagnostic-imaging-order-scheduling-report-continuity/` | 影像医嘱、prior authorization、预约、报告、影像共享、critical results | 影像预约、报告或共享断裂，会制造重复检查、诊断延误和资料丢失 |
 | 门诊操作必须有准备与恢复回路 | `ambulatory-procedure-surgery-center-continuity/` | ASC、门诊内镜、输注、术前工作流、陪同接送、恢复观察、follow-up | 低住院化操作如果缺准备、接送、观察或随访，会把效率收益转成安全断点 |
 | 非工作时间入口必须可分流 | `after-hours-urgent-care-triage-continuity/` | 夜间/周末照护、urgent care、retail clinic、护士热线、tele-triage、闭环回传 | 不能等待但又非明确急救的时间断点如果无人接住，会推高失访、急诊拥堵和风险升级 |
+| 健康保险覆盖必须持续 | `health-insurance-enrollment-renewal-continuity/` | Open enrollment、special enrollment、renewal、Medicaid/Marketplace 转换、premium payment | 参保、续保或保费断点会让医疗风险转移在服务发生前失效 |
+| 保险权益必须可核验 | `insurance-eligibility-benefits-verification-continuity/` | Eligibility、benefits verification、coverage active、deductible、copay、network status | 覆盖状态、权益或网络状态错误会把服务后成本转成不可预期账单 |
+| 医疗服务授权必须可追踪 | `medical-service-prior-authorization-utilization-management-continuity/` | Prior authorization、utilization management、medical necessity、coverage criteria、peer review | 授权延迟、补件或拒绝会把检查、影像、手术、设备和治疗截断 |
+| 理赔和 EOB 必须闭环 | `claims-adjudication-eob-denial-continuity/` | Claim adjudication、EOB、denial reason、coordination of benefits、resubmission、appeal window | 服务完成后若 claim 拒付或解释不清，会转化为账单、债务和行政负担 |
+| 患者账单必须可理解可缓冲 | `patient-billing-payment-plan-continuity/` | Patient statement、patient responsibility、payment plan、billing inquiry、collections handoff | 账单错误、期限压力和催收交接会把治疗事件转化为长期财务压力 |
+| 医疗价格必须可预期 | `price-transparency-good-faith-estimate-continuity/` | Hospital price transparency、payer transparency、GFE、machine-readable files、bill-estimate mismatch | 成本不可见会让主体无法规划资源，并可能因恐惧账单推迟治疗 |
+| 意外账单必须受保护 | `surprise-billing-balance-bill-protection-continuity/` | No Surprises Act、balance billing、out-of-network emergency care、air ambulance、notice/consent | 主体无法选择网络状态时，高额余额账单会把急性医疗事件变成债务冲击 |
+| 医疗债务必须有援助和限制 | `charity-care-financial-assistance-medical-debt-continuity/` | Financial assistance policy、charity care、limitation on charges、collections、medical debt | 高额医疗账单若无经济援助、收费限制和催收边界，会吞噬住房、信用和未来医疗接入 |
 | 栖居空间可保护生命 | `building-fire-life-safety-codes/` | 建筑规范、消防规范、疏散、烟雾报警、无障碍、结构韧性 | 居住、照护、学习、工作和公共空间成为火灾、烟雾、结构和疏散风险源 |
 | 关键物质系统可制造修复 | `manufacturing-repair-capacity/` | 制造、维修、维护、备件、质量、本地生产、关键设备恢复 | 设备损坏、备件短缺、质量缺陷和生产能力不足导致服务与工具系统失效 |
 | 公共预算可转化为服务 | `public-procurement-contracting-capacity/` | 公共采购、合同、供应商管理、应急采购、透明度、交付验收 | 有预算和政策但采购失败、合同失效、腐败、延误或劣质交付 |
@@ -703,6 +711,14 @@ risk-engineering
   -> diagnostic-imaging-order-scheduling-report-continuity
   -> ambulatory-procedure-surgery-center-continuity
   -> after-hours-urgent-care-triage-continuity
+  -> health-insurance-enrollment-renewal-continuity
+  -> insurance-eligibility-benefits-verification-continuity
+  -> medical-service-prior-authorization-utilization-management-continuity
+  -> claims-adjudication-eob-denial-continuity
+  -> patient-billing-payment-plan-continuity
+  -> price-transparency-good-faith-estimate-continuity
+  -> surprise-billing-balance-bill-protection-continuity
+  -> charity-care-financial-assistance-medical-debt-continuity
   -> community-resource-navigation
   -> social-determinants-community-vulnerability
   -> public-service-design-accessibility

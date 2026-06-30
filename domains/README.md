@@ -369,6 +369,14 @@
 - `diagnostic-imaging-order-scheduling-report-continuity/`：诊断影像医嘱、预约与报告连续性，整理影像医嘱、prior authorization、检查预约、报告生成、影像共享和结果回传。
 - `ambulatory-procedure-surgery-center-continuity/`：门诊操作与 ASC 连续性，整理 ASC、门诊内镜、输注、术前准备、陪同接送、恢复观察和 follow-up。
 - `after-hours-urgent-care-triage-continuity/`：非工作时间 urgent care 与分诊连续性，整理夜间/周末照护、护士热线、urgent care、retail clinic、tele-triage 和闭环回传。
+- `health-insurance-enrollment-renewal-continuity/`：健康保险参保续保连续性，整理 open enrollment、special enrollment、renewal、Medicaid/Marketplace 转换、保费支付和 coverage gap。
+- `insurance-eligibility-benefits-verification-continuity/`：保险资格与权益核验连续性，整理 eligibility、benefits verification、coverage active、费用分担、网络状态和覆盖限制。
+- `medical-service-prior-authorization-utilization-management-continuity/`：医疗服务授权与利用管理连续性，整理 medical-service prior authorization、medical necessity、coverage criteria、peer review 和服务延迟。
+- `claims-adjudication-eob-denial-continuity/`：理赔、EOB 与拒付连续性，整理 claim adjudication、EOB、denial reason、coordination of benefits、resubmission 和 appeal window。
+- `patient-billing-payment-plan-continuity/`：患者账单与付款计划连续性，整理 statement、patient responsibility、payment plan、billing inquiry、collections handoff 和账单可理解性。
+- `price-transparency-good-faith-estimate-continuity/`：价格透明与预估费用连续性，整理 hospital price transparency、payer transparency、good faith estimate、shoppable services 和 bill-estimate mismatch。
+- `surprise-billing-balance-bill-protection-continuity/`：意外账单与余额账单保护连续性，整理 No Surprises Act、balance billing、out-of-network emergency care、air ambulance 和 cost-sharing protection。
+- `charity-care-financial-assistance-medical-debt-continuity/`：Charity care、经济援助与医疗债务连续性，整理 financial assistance policy、charity care、limitation on charges、collections 和 medical debt。
 - `supply-chain-continuity/`：供应链连续性，整理关键物资、服务、物流、替代路径和恢复时间。
 - `synthetic-biology-biosecurity/`：合成生物学与生物安全，整理双重用途、生物安全、生物安保和治理边界。
 - `space-extreme-habitation/`：空间与极端栖居，整理辐射、微重力、隔离、闭环资源和远程医疗风险。

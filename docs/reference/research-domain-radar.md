@@ -388,6 +388,14 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `diagnostic-imaging-order-scheduling-report-continuity/` | 诊断影像医嘱、预约、授权、报告、critical result 和影像共享决定影像能力是否能推进诊断路径 |
 | `ambulatory-procedure-surgery-center-continuity/` | ASC、门诊操作、内镜、输注、术前工作流、陪同接送和恢复观察决定低住院化治疗是否安全闭环 |
 | `after-hours-urgent-care-triage-continuity/` | 非工作时间照护、urgent care、retail clinic、护士热线和 tele-triage 决定不能等待的门诊断点是否被接住 |
+| `health-insurance-enrollment-renewal-continuity/` | 参保、续保、特殊参保期、保费支付和 Medicaid/Marketplace 转换决定医疗风险转移入口是否持续 |
+| `insurance-eligibility-benefits-verification-continuity/` | 资格核验、benefits verification、coverage active、费用分担和网络状态决定服务前支付边界是否可知 |
+| `medical-service-prior-authorization-utilization-management-continuity/` | 医疗服务 prior authorization、utilization management 和 medical necessity review 决定检查、操作和治疗是否被授权执行 |
+| `claims-adjudication-eob-denial-continuity/` | Claim adjudication、EOB、denial reason 和 appeal window 决定服务完成后的支付闭环是否可追踪 |
+| `patient-billing-payment-plan-continuity/` | 患者账单、statement、payment plan 和 collections handoff 决定服务后的成本是否会变成长期财务压力 |
+| `price-transparency-good-faith-estimate-continuity/` | 价格透明、good faith estimate 和 bill-estimate mismatch 决定医疗成本是否能在服务前进入资源规划 |
+| `surprise-billing-balance-bill-protection-continuity/` | No Surprises Act、balance billing 和 out-of-network emergency protection 决定不可控网络状态是否转化为高额债务 |
+| `charity-care-financial-assistance-medical-debt-continuity/` | Financial assistance policy、charity care、limitation on charges 和 medical debt 决定高额医疗成本是否有缓冲机制 |
 
 ## 来源信号
 
@@ -445,6 +453,16 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | https://www.medicare.gov/coverage | 提示 Medicare coverage 入口可用于追踪检验、诊断测试、ASC、urgent care 等门诊服务执行边界 |
 | CMS Ambulatory Surgical Center Quality Reporting | 提示 ASC 和门诊操作需要独立看术前、执行、恢复、质量报告和随访闭环 |
 | Medicare urgent care / after-hours care coverage resources | 提示非工作时间 urgent care、retail clinic、tele-triage 和 ED diversion 需要区别于急诊与普通预约 |
+| https://www.healthcare.gov/ | 提示 Marketplace enrollment、special enrollment、renewal、premium payment 和 appeal 是医疗风险转移入口的执行层 |
+| CMS Medicaid / CHIP eligibility and enrollment materials | 提示 Medicaid/CHIP redetermination、renewal、coverage loss 和 Marketplace transfer 会制造覆盖中断风险 |
+| CAQH CORE eligibility and benefits operating rules | 提示 eligibility and benefits verification 是 provider、payer 和主体之间的独立交易与数据一致性问题 |
+| CMS Interoperability and Prior Authorization Final Rule | 提示医疗服务 prior authorization、status tracking 和 burden reduction 是独立执行接口，不应只归入门诊转诊或药品福利 |
+| CMS Medicare Appeals and Grievances / claims resources | 提示 claims、EOB、denial、appeal window 和 grievance 是服务发生后的支付闭环变量 |
+| CMS Medical Bill Rights resources | 提示患者账单、good faith estimate、surprise billing protection 和 dispute resolution 是成本保护基础设施 |
+| https://www.cms.gov/priorities/key-initiatives/hospital-price-transparency | 提示 hospital price transparency 和 machine-readable files 决定医疗价格能否被发现、比较和审查 |
+| https://www.cms.gov/nosurprises | 提示 No Surprises Act 把 balance billing、out-of-network emergency services、notice/consent 和 complaint process 纳入保护层 |
+| IRS Section 501(r) charitable hospital requirements | 提示 financial assistance policy、limitation on charges、billing and collections 规定会影响 charity care 和 medical debt 边界 |
+| CFPB medical debt and consumer reporting materials | 提示医疗债务会进入 consumer reporting、collections 和信用/资源连续性风险链 |
 | https://www.dea.gov/takebackday | 提示受监管药品回收和 Take Back 体系是未用药、过期药和管制药处置的公共接口 |
 | https://www.cdc.gov/diabetes/ | 提示糖尿病日常管理依赖药物、监测、耗材、教育和持续反馈，不只是单次临床处方 |
 | https://www.cdc.gov/medication-safety/ | 提示 medication safety 覆盖家庭用药、误用、相互作用、教育和系统性安全风险 |

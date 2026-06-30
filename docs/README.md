@@ -76,6 +76,7 @@ docs/
 │   ├── 0058-add-fifty-fourth-wave-food-acquisition-execution-continuity-domains.md
 │   ├── 0059-add-fifty-fifth-wave-treatment-execution-medical-supply-continuity-domains.md
 │   ├── 0060-add-fifty-sixth-wave-outpatient-access-clinical-service-execution-domains.md
+│   ├── 0061-add-fifty-seventh-wave-medical-payment-billing-cost-protection-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -426,4 +427,12 @@ docs/
 295. Read `../domains/diagnostic-imaging-order-scheduling-report-continuity/README.md` if you are working on diagnostic imaging orders, radiology scheduling, CT/MRI/ultrasound/X-ray access, imaging reports, DICOM/PACS, critical result routing, or image sharing.
 296. Read `../domains/ambulatory-procedure-surgery-center-continuity/README.md` if you are working on ambulatory surgery centers, outpatient procedures, endoscopy, infusion centers, pre-op workflows, escorts, recovery observation, or post-procedure follow-up.
 297. Read `../domains/after-hours-urgent-care-triage-continuity/README.md` if you are working on after-hours care, urgent care, nurse advice lines, retail clinics, tele-triage, same-day advice, ED diversion, or non-emergency time-window failures.
-298. Enter a domain under `../domains/`.
+298. Read `../domains/health-insurance-enrollment-renewal-continuity/README.md` if you are working on health insurance enrollment, renewal, open enrollment, special enrollment periods, Medicaid/Marketplace transitions, premium payment, or coverage gaps.
+299. Read `../domains/insurance-eligibility-benefits-verification-continuity/README.md` if you are working on eligibility checks, benefits verification, active coverage, deductible/copay/coinsurance, out-of-pocket maximum, network status, or coverage limits.
+300. Read `../domains/medical-service-prior-authorization-utilization-management-continuity/README.md` if you are working on medical-service prior authorization, utilization management, medical necessity review, coverage criteria, peer review, or authorization delays.
+301. Read `../domains/claims-adjudication-eob-denial-continuity/README.md` if you are working on claims adjudication, EOBs, claim denials, coordination of benefits, resubmission, appeal windows, or payer payment loops.
+302. Read `../domains/patient-billing-payment-plan-continuity/README.md` if you are working on patient billing, statements, patient responsibility, payment plans, billing inquiries, collections handoff, or billing readability.
+303. Read `../domains/price-transparency-good-faith-estimate-continuity/README.md` if you are working on hospital price transparency, payer transparency, good faith estimates, shoppable services, machine-readable files, or bill-estimate mismatch.
+304. Read `../domains/surprise-billing-balance-bill-protection-continuity/README.md` if you are working on No Surprises Act, balance billing, out-of-network emergency care, air ambulance, notice/consent, or surprise-bill complaints.
+305. Read `../domains/charity-care-financial-assistance-medical-debt-continuity/README.md` if you are working on hospital financial assistance, charity care, limitation on charges, billing and collections, payment plans, medical debt, or extraordinary collection actions.
+306. Enter a domain under `../domains/`.

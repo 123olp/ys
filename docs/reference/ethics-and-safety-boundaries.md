@@ -414,6 +414,26 @@ Human Infra 不能被设计成更精密的压榨系统。
 - 收集或诱导输入 PHI、保险号码、portal 凭证、预约记录、转诊单、检验/影像报告、操作记录、triage 记录、定位轨迹或敏感医疗数据。
 - 把门诊访问、检验、影像、ASC 和 urgent care 的结构性问题改写成个人抢号、保险套利、机构规避、无证医疗、急救替代或数据收集问题。
 
+## 医疗支付、理赔、账单与成本保护连续性边界
+
+`health-insurance-enrollment-renewal-continuity`、`insurance-eligibility-benefits-verification-continuity`、`medical-service-prior-authorization-utilization-management-continuity`、`claims-adjudication-eob-denial-continuity`、`patient-billing-payment-plan-continuity`、`price-transparency-good-faith-estimate-continuity`、`surprise-billing-balance-bill-protection-continuity` 和 `charity-care-financial-assistance-medical-debt-continuity` 关注健康保险参保续保、权益核验、医疗服务授权、理赔/EOB/拒付、患者账单/付款计划、价格透明/GFE、意外账单保护和 charity care/医疗债务如何让医疗服务从“已经发生”转化为可负担、可解释、可恢复的成本路径，不是保险建议、理赔申诉、账单谈判、债务处理、法律策略、信用修复或医疗建议工具。
+
+可以做：
+
+- 整理公开资料、官方框架、HealthCare.gov、CMS Medicaid/CHIP eligibility、CAQH CORE eligibility、CMS prior authorization/interoperability、claims/EOB/appeals、Medical Bill Rights、Hospital Price Transparency、No Surprises Act、IRS 501(r)、CFPB medical debt 资料。
+- 建模失保窗口、权益核验错误、授权延迟、claim denial、EOB-bill mismatch、账单错误、price estimate 失真、balance billing、charity care 和 medical debt 如何影响主体持续性。
+- 区分保险入口、服务授权、理赔解释、患者账单、价格透明、法律保护、经济援助、催收/信用边界、个体决策和禁止用途。
+
+不能做：
+
+- 提供保险计划选择、参保、续保、补贴资格、收入计算、税务、移民、法律、Medicaid/Marketplace/Medicare/商业保险个案建议。
+- 解释个人 benefits、deductible、network、coverage、claim、EOB、denial、bill、good faith estimate、No Surprises 适用性、charity care 资格、medical debt 或 credit report。
+- 代写 prior authorization、medical necessity、peer-to-peer、appeal、grievance、claim resubmission、billing dispute、complaint、financial assistance application、payment plan、collection response、credit dispute 或法律文书。
+- 提供编码优化、upcoding、unbundling、虚假材料、诊断证明伪造、授权规避、保险套利、网络规避、账单谈判策略、催收对抗策略或欺诈方法。
+- 推荐 insurance plan、provider、facility、billing company、debt relief service、credit repair service、lawyer、financial assistance path 或具体服务选择。
+- 收集或诱导输入 SSN、member ID、保险卡、portal 凭证、收入、资产、税表、账单、EOB、claim、diagnosis、CPT/ICD、银行、信用报告、collection notice、地址、PHI 或其他敏感资料。
+- 把医疗支付、账单、保险、charity care 和 medical debt 的结构性问题改写成个人规避、抢救式申诉、信用修复、法律博弈、账单套利、无证代理或数据收集问题。
+
 ## 农村健康、无家可归、羁押重返、残障独立生活、痴呆照护与慢性传染病连续性边界
 
 `rural-health-access-geographic-equity`、`homelessness-unsheltered-health-continuity`、`correctional-health-reentry-continuity`、`disability-services-independent-living`、`dementia-cognitive-decline-care-continuity` 和 `chronic-infectious-disease-care-continuity` 关注地点排除、住所缺失、羁押释放、残障服务、认知衰退和长期感染照护如何影响主体持续性，不是个人医疗、住房、福利、法律、羁押、监管规避、传染病处置或弱势群体定位指南。
