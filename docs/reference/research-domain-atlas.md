@@ -190,6 +190,12 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 生态系统服务必须持续 | `biodiversity-ecosystem-services-resilience/` | 授粉、过滤、蓄水、降温、病害调节、生态恢复 | 自然服务退化使食物、水、空气、热风险和疾病风险同时恶化 |
 | 火灾景观风险必须可治理 | `wildfire-landscape-fire-resilience/` | 野火、火灾天气、景观燃料、WUI、烟雾、疏散、恢复 | 住房、空气、电力、通信、医疗和保险被复合火灾风险击穿 |
 | 关键物资必须能到达人 | `freight-logistics-port-cold-chain-continuity/` | 货运、港口、仓储、冷链、运输节点、最后一公里 | 药品、食物、设备、备件和救援物资存在但无法抵达主体 |
+| 海岸带必须抵御复合风险 | `coastal-marine-resilience-blue-economy-continuity/` | 海岸带、海平面、风暴潮、侵蚀、海洋生态、蓝色经济 | 海岸社区、港口、住房、渔业、旅游和公共服务被海岸风险持续击穿 |
+| 水生食物系统必须可持续 | `fisheries-aquatic-food-systems-continuity/` | 捕捞渔业、水产养殖、水产品营养、治理、渔民生计 | 蛋白质来源、生计、价格、生态压力和食品系统韧性同时失稳 |
+| 防洪工程必须可审查 | `dams-levees-flood-control-infrastructure-safety/` | 水坝、堤防、防洪墙、闸门、泵站、排涝、检查维护 | 工程资产失效使洪水、供水、能源、住房和交通风险同步放大 |
+| 公共工程资产必须持续维护 | `public-works-civil-infrastructure-asset-management/` | 道路、桥梁、隧道、排水、公用设施、资产状态、维护优先级 | 公共工程老化、维护积压和资产不可见导致服务、移动和安全失败 |
+| 城市空间必须支撑生命路径 | `urban-planning-land-use-zoning-resilience/` | 土地使用、分区、密度、服务布局、公共空间、风险避让 | 空间排布把住房、交通、服务、热风险、灾害风险和机会结构固化为不平等 |
+| 城市自然系统必须降温蓄水 | `green-blue-infrastructure-urban-nature-cooling/` | 树冠、绿地、水体、湿地、雨洪自然基设施、热岛缓解 | 城市热岛、内涝、恢复空间缺失和自然服务不足侵蚀健康与有效时间 |
 | 高成本风险可分摊 | `insurance-risk-transfer/` | 覆盖率、保费、自付、理赔、拒赔、风险池、保障缺口 | 疾病、失业、工伤、残障、灾害或养老金风险由个体独自承担 |
 | 托育和家庭运行可持续 | `childcare-family-continuity/` | 托育可及、费用、质量、早期发展、父母工作连续性、家庭压力 | 儿童发展受损、照护者工作中断、时间贫困和家庭压力升级 |
 | 应急响应可接住主体 | `emergency-preparedness-response/` | 灾害准备、预警、应急通信、急救医疗、安置、公共卫生应急、恢复 | 低频高冲击事件一次性清零长期积累，通信、医疗、撤离或恢复失败 |
@@ -216,7 +222,7 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
   -> 认知与工具增强
   -> 风险函数压低
   -> 资源环境支撑
-  -> 初级生产、自然资本与物理物流底座可持续
+  -> 初级生产、自然资本、物理物流、海岸土木与城市空间底座可持续
   -> 外部技术底座可控
   -> 文明连续性、集体安全与宏观制度底座可维持
   -> 制度治理保护
@@ -388,6 +394,12 @@ risk-engineering
   -> biodiversity-ecosystem-services-resilience
   -> wildfire-landscape-fire-resilience
   -> freight-logistics-port-cold-chain-continuity
+  -> coastal-marine-resilience-blue-economy-continuity
+  -> fisheries-aquatic-food-systems-continuity
+  -> dams-levees-flood-control-infrastructure-safety
+  -> public-works-civil-infrastructure-asset-management
+  -> urban-planning-land-use-zoning-resilience
+  -> green-blue-infrastructure-urban-nature-cooling
   -> insurance-risk-transfer
   -> childcare-family-continuity
   -> emergency-preparedness-response

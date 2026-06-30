@@ -39,6 +39,7 @@ docs/
 │   ├── 0028-add-twenty-fourth-wave-externalized-subject-continuity-domains.md
 │   ├── 0029-add-twenty-fifth-wave-civilizational-continuity-collective-security-domains.md
 │   ├── 0030-add-twenty-sixth-wave-primary-production-natural-systems-logistics-domains.md
+│   ├── 0031-add-twenty-seventh-wave-coastal-civil-urban-infrastructure-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -127,6 +128,7 @@ docs/
 - `domains/life-logging-personal-archives-continuity/`、`domains/digital-legacy-data-succession/`、`domains/wearables-continuous-sensing-personal-informatics/`、`domains/personal-knowledge-management-cognitive-offloading/`、`domains/brain-computer-interface-neurotechnology-governance/` 和 `domains/robotics-embodied-assistance-care-automation/`：第二十四波正式研究域，分别承载生命日志个人档案、数字遗产继承、可穿戴连续感知、个人知识管理认知卸载、脑机接口神经技术治理和机器人具身辅助。
 - `domains/armed-conflict-civilian-protection-ihl/`、`domains/peacebuilding-conflict-prevention-social-cohesion/`、`domains/continuity-of-government-public-administration-resilience/`、`domains/telecommunications-network-resilience-continuity/`、`domains/macroeconomic-monetary-fiscal-stability/` 和 `domains/anti-corruption-public-integrity-accountability/`：第二十五波正式研究域，分别承载武装冲突平民保护、和平建设冲突预防、政府连续性、电信网络韧性、宏观稳定和公共廉洁问责。
 - `domains/agricultural-production-food-system-resilience/`、`domains/soil-health-land-degradation-drought-resilience/`、`domains/water-resources-hydrology-flood-drought-management/`、`domains/biodiversity-ecosystem-services-resilience/`、`domains/wildfire-landscape-fire-resilience/` 和 `domains/freight-logistics-port-cold-chain-continuity/`：第二十六波正式研究域，分别承载农业生产、土壤土地旱灾韧性、水资源水文洪旱管理、生物多样性生态服务、野火景观韧性和货运港口冷链连续性。
+- `domains/coastal-marine-resilience-blue-economy-continuity/`、`domains/fisheries-aquatic-food-systems-continuity/`、`domains/dams-levees-flood-control-infrastructure-safety/`、`domains/public-works-civil-infrastructure-asset-management/`、`domains/urban-planning-land-use-zoning-resilience/` 和 `domains/green-blue-infrastructure-urban-nature-cooling/`：第二十七波正式研究域，分别承载海岸海洋蓝色经济、水生食物系统、防洪工程资产、公共工程资产管理、城市土地使用规划和城市绿蓝基础设施。
 - `reference/research-model-visualization-toolkit.md`：沉淀科研论文阅读、文献脊梁、模型工具、可视化标准和 Human Infra 定量页面实现路线。
 - `reference/source-card-system.md`：定义论文、书籍、工具、案例、标准和数据集进入项目之前的资料卡片制度。
 - `reference/domain-map.md`：定义根项目与子域的边界、迁移切片、主动不做和验证点。

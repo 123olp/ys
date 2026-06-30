@@ -46,6 +46,7 @@ docs/
 │   ├── 0028-add-twenty-fourth-wave-externalized-subject-continuity-domains.md
 │   ├── 0029-add-twenty-fifth-wave-civilizational-continuity-collective-security-domains.md
 │   ├── 0030-add-twenty-sixth-wave-primary-production-natural-systems-logistics-domains.md
+│   ├── 0031-add-twenty-seventh-wave-coastal-civil-urban-infrastructure-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -205,4 +206,10 @@ docs/
 104. Read `../domains/biodiversity-ecosystem-services-resilience/README.md` if you are working on biodiversity, ecosystem services, pollination, filtration, cooling, habitat, or ecosystem restoration.
 105. Read `../domains/wildfire-landscape-fire-resilience/README.md` if you are working on wildfire, landscape fire risk, WUI, smoke exposure, evacuation interfaces, or community fire resilience.
 106. Read `../domains/freight-logistics-port-cold-chain-continuity/README.md` if you are working on freight logistics, ports, warehousing, cold chain, key material delivery, or last-mile continuity.
-107. Enter a domain under `../domains/`.
+107. Read `../domains/coastal-marine-resilience-blue-economy-continuity/README.md` if you are working on coastal resilience, sea level rise, storm surge, coastal economies, marine ecosystem buffers, or blue economy continuity.
+108. Read `../domains/fisheries-aquatic-food-systems-continuity/README.md` if you are working on fisheries, aquaculture, aquatic foods, seafood nutrition, small-scale fisheries, or aquatic food supply continuity.
+109. Read `../domains/dams-levees-flood-control-infrastructure-safety/README.md` if you are working on dam safety, levee safety, flood-control assets, drainage infrastructure, or flood-infrastructure failure risk.
+110. Read `../domains/public-works-civil-infrastructure-asset-management/README.md` if you are working on roads, bridges, tunnels, drainage, public works maintenance, civil infrastructure asset management, or maintenance backlog.
+111. Read `../domains/urban-planning-land-use-zoning-resilience/README.md` if you are working on urban planning, land use, zoning, service layout, spatial equity, or resilience planning.
+112. Read `../domains/green-blue-infrastructure-urban-nature-cooling/README.md` if you are working on urban green spaces, tree canopy, stormwater green infrastructure, blue-green corridors, heat island mitigation, or nature-based urban cooling.
+113. Enter a domain under `../domains/`.

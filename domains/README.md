@@ -136,6 +136,12 @@
 - `biodiversity-ecosystem-services-resilience/`：生物多样性与生态系统服务韧性，整理授粉、过滤、蓄水、降温、病害调节和生态恢复。
 - `wildfire-landscape-fire-resilience/`：野火、景观火灾与社区韧性，整理火灾天气、景观燃料、WUI、烟雾、疏散和恢复。
 - `freight-logistics-port-cold-chain-continuity/`：货运、港口、仓储与冷链连续性，整理关键物资物流、港口、冷链、运输节点和最后一公里。
+- `coastal-marine-resilience-blue-economy-continuity/`：海岸海洋韧性与蓝色经济连续性，整理海平面、风暴潮、侵蚀、海洋生态、海岸社区和蓝色经济。
+- `fisheries-aquatic-food-systems-continuity/`：渔业与水生食物系统连续性，整理捕捞、水产养殖、水产品营养、渔业治理和渔民生计。
+- `dams-levees-flood-control-infrastructure-safety/`：水坝、堤防与防洪基础设施安全，整理防洪工程资产、检查维护、失效风险和公共治理。
+- `public-works-civil-infrastructure-asset-management/`：公共工程与土木基础设施资产管理，整理道路、桥梁、排水、公共设施、维护优先级和服务水平。
+- `urban-planning-land-use-zoning-resilience/`：城市规划、土地使用与分区韧性，整理空间结构、服务布局、密度、风险避让和空间公平。
+- `green-blue-infrastructure-urban-nature-cooling/`：绿蓝基础设施、城市自然与降温，整理树冠、绿地、水体、雨洪自然基设施、热岛缓解和恢复空间。
 - `insurance-risk-transfer/`：保险与风险转移，整理健康、失业、工伤、残障、灾害、存款、养老金等风险池和保障缺口。
 - `childcare-family-continuity/`：托育与家庭连续性，整理托育可及、费用、质量、早期儿童发展、父母工作连续性和家庭压力。
 - `emergency-preparedness-response/`：应急准备与响应，整理灾害准备、预警、应急通信、急救医疗、安置和恢复。

@@ -364,6 +364,12 @@ flowchart TD
     H --> BESR[biodiversity-ecosystem-services-resilience<br/>生物多样性 / 生态服务]
     H --> WLFR[wildfire-landscape-fire-resilience<br/>野火 / 景观火灾韧性]
     H --> FLPCCC[freight-logistics-port-cold-chain-continuity<br/>货运 / 港口 / 冷链]
+    H --> CMRBEC[coastal-marine-resilience-blue-economy-continuity<br/>海岸海洋 / 蓝色经济]
+    H --> FAFSC[fisheries-aquatic-food-systems-continuity<br/>渔业 / 水生食物系统]
+    H --> DLFCIS[dams-levees-flood-control-infrastructure-safety<br/>水坝堤防 / 防洪工程安全]
+    H --> PWCAM[public-works-civil-infrastructure-asset-management<br/>公共工程 / 资产管理]
+    H --> UPLUZR[urban-planning-land-use-zoning-resilience<br/>城市规划 / 土地使用]
+    H --> GBIUNC[green-blue-infrastructure-urban-nature-cooling<br/>绿蓝基础设施 / 城市降温]
     H --> SCC[supply-chain-continuity<br/>供应链连续性]
     H --> SBB[synthetic-biology-biosecurity<br/>合成生物学与生物安全]
     H --> SEH[space-extreme-habitation<br/>空间与极端栖居]
@@ -579,6 +585,12 @@ flowchart TD
 | [Biodiversity Ecosystem Services Resilience](domains/biodiversity-ecosystem-services-resilience/README.md) | 生物多样性、生态系统服务、授粉、过滤、蓄水、降温和生态恢复 | 保留自然系统对食物、水、空气、热风险、病害调节和恢复环境的支撑 | 不提供物种处理、保护地执法、土地开发、生态补偿、碳交易或审批建议 |
 | [Wildfire Landscape Fire Resilience](domains/wildfire-landscape-fire-resilience/README.md) | 野火、火灾天气、景观燃料、WUI、烟雾、疏散和社区恢复 | 降低住房损失、烟雾暴露、医疗中断、通信断线和长期恢复负担 | 不提供实时火场行动、灭火战术、疏散路线、纵火、规避指挥或保险索赔建议 |
 | [Freight Logistics Port Cold Chain Continuity](domains/freight-logistics-port-cold-chain-continuity/README.md) | 货运、港口、仓储、冷链、运输节点和最后一公里物流 | 让药品、食物、设备、备件、救援物资和关键材料真实到达人 | 不提供走私、海关规避、制裁规避、非法运输、物流攻击、商业操作或投资建议 |
+| [Coastal Marine Resilience Blue Economy Continuity](domains/coastal-marine-resilience-blue-economy-continuity/README.md) | 海岸带、海平面、风暴潮、侵蚀、海洋生态、海岸社区和蓝色经济 | 让沿海居住、港口、渔业、旅游、生态缓冲和海洋资源在气候压力下保持连续 | 不提供实时海洋灾害、船只航行、港口作业、海岸工程、地产、保险、许可或投资建议 |
+| [Fisheries Aquatic Food Systems Continuity](domains/fisheries-aquatic-food-systems-continuity/README.md) | 捕捞渔业、水产养殖、水产品营养、渔业治理、渔民生计和水生食物系统 | 在陆地农业之外提供营养、收入、贸易和生态反馈冗余 | 不提供捕捞、养殖、船只作业、加工、投资、配额规避、非法捕捞、走私或标签造假建议 |
+| [Dams Levees Flood Control Infrastructure Safety](domains/dams-levees-flood-control-infrastructure-safety/README.md) | 水坝、堤防、防洪墙、闸门、泵站、排涝系统、检查维护和失效风险 | 防止防洪工程资产把低概率水风险放大为生命、住房、交通和公共服务灾难 | 不提供工程设计、检修、操作、加固、实时调度、撤离路线、溃坝模拟、敏感设施或破坏信息 |
+| [Public Works Civil Infrastructure Asset Management](domains/public-works-civil-infrastructure-asset-management/README.md) | 道路、桥梁、隧道、排水、公共设施、资产登记、状态评估和维护优先级 | 让公共物理资产持续服务医疗、就业、教育、物流、应急和城市运行 | 不提供工程设计、施工、检查、维修、采购、敏感弱点、绕行、破坏、投标、索赔或法律建议 |
+| [Urban Planning Land Use Zoning Resilience](domains/urban-planning-land-use-zoning-resilience/README.md) | 城市规划、土地使用、分区、密度、混合功能、服务布局、公共空间和空间公平 | 通过空间结构降低通勤、服务不可达、灾害暴露、隔离和住房稀缺 | 不提供购房、选址、地产投资、审批、分区变更、规划诉讼、政治游说、许可规避或项目操作建议 |
+| [Green Blue Infrastructure Urban Nature Cooling](domains/green-blue-infrastructure-urban-nature-cooling/README.md) | 城市树冠、绿地、水体、湿地、雨洪自然基设施、热岛缓解和恢复空间 | 让城市环境提供降温、蓄水、过滤、心理恢复、活动空间和生态缓冲 | 不提供工程设计、施工、植物处方、排水改造、地产、碳信用、审批、采购或市政操作建议 |
 | [Oral Health Continuity](domains/oral-health-continuity/README.md) | 牙齿、牙周、咀嚼、疼痛、感染、营养和沟通 | 口腔功能、疼痛、感染、营养和社会参与变量 | 不提供牙科诊断、治疗、药物、手术、器械或个体护理建议 |
 | [Measurement And Feedback](domains/measurement-feedback/README.md) | 状态测量、风险评分、生物标志物、可穿戴、反馈控制 | 指标分类、预测接口和模型反馈边界 | 不输出个体死亡日期、确定寿命预测或医学诊断 |
 
@@ -730,6 +742,12 @@ human_infra/
 │   ├── biodiversity-ecosystem-services-resilience/
 │   ├── wildfire-landscape-fire-resilience/
 │   ├── freight-logistics-port-cold-chain-continuity/
+│   ├── coastal-marine-resilience-blue-economy-continuity/
+│   ├── fisheries-aquatic-food-systems-continuity/
+│   ├── dams-levees-flood-control-infrastructure-safety/
+│   ├── public-works-civil-infrastructure-asset-management/
+│   ├── urban-planning-land-use-zoning-resilience/
+│   ├── green-blue-infrastructure-urban-nature-cooling/
 │   ├── mitochondrial-bioenergetics/
 │   ├── musculoskeletal-integrity/
 │   ├── neuro-continuity/
@@ -876,5 +894,7 @@ flowchart LR
 - 2026-06-30：新增第二十三波 6 个复杂照护导航、交接与决策连续性域，覆盖罕见病诊断漫游、多病共存多重用药、照护转移出院连续性、居家/缓和/安宁疗护、医疗解释文化中介和患者倡导共同决策。
 - 2026-06-30：新增第二十四波 6 个外部化主体连续性域，覆盖生命日志个人档案、数字遗产继承、可穿戴连续感知、个人知识管理认知卸载、脑机接口神经技术治理和机器人具身辅助。
 - 2026-06-30：新增第二十五波 6 个文明连续性、集体安全与宏观制度底座域，覆盖武装冲突平民保护、和平建设冲突预防、政府连续性、电信网络韧性、宏观经济稳定和公共廉洁问责。
+- 2026-06-30：新增第二十六波 6 个初级生产、自然系统与物理物流域，覆盖农业生产、土壤土地旱灾韧性、水资源水文洪旱管理、生物多样性生态服务、野火景观韧性和货运港口冷链连续性。
+- 2026-06-30：新增第二十七波 6 个海岸、土木与城市基础设施域，覆盖海岸海洋蓝色经济、渔业水生食物、防洪工程安全、公共工程资产管理、城市土地使用规划和城市绿蓝基础设施。
 
 完整记录见 [CHANGELOG.md](CHANGELOG.md)。

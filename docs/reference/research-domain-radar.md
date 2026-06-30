@@ -181,6 +181,12 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `biodiversity-ecosystem-services-resilience/` | 生物多样性和生态系统服务决定授粉、过滤、蓄水、降温和病害调节是否继续支撑主体 |
 | `wildfire-landscape-fire-resilience/` | 野火韧性决定住房、空气、电力、通信、医疗和社区恢复是否会被复合火灾风险击穿 |
 | `freight-logistics-port-cold-chain-continuity/` | 货运、港口、仓储和冷链决定药品、食物、设备、备件和救援物资能否真实到达人 |
+| `coastal-marine-resilience-blue-economy-continuity/` | 海岸韧性和蓝色经济决定海岸社区、港口、住房、渔业、生计和公共服务是否能承受海平面、风暴潮和侵蚀压力 |
+| `fisheries-aquatic-food-systems-continuity/` | 渔业和水产养殖决定水生蛋白、营养、生计、生态压力和食品系统韧性是否可持续 |
+| `dams-levees-flood-control-infrastructure-safety/` | 水坝、堤防和防洪资产决定洪水风险、供水、电力、住房、交通和公共安全是否被工程失效放大 |
+| `public-works-civil-infrastructure-asset-management/` | 公共工程资产管理决定道路、桥梁、排水、公用设施和维护积压是否会转化为服务断点和安全风险 |
+| `urban-planning-land-use-zoning-resilience/` | 城市规划、土地使用和分区决定住房、交通、服务布局、风险避让、机会结构和空间公平 |
+| `green-blue-infrastructure-urban-nature-cooling/` | 城市绿蓝基础设施决定热岛、内涝、恢复空间、雨洪缓冲和自然服务能否进入日常生活环境 |
 
 ## 来源信号
 
@@ -334,6 +340,12 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | CISA Communications Sector / National Emergency Communications Plan | 提示通信网络、公共安全通信、冗余、备电和恢复时间是警报、求助、服务和协作的外部连接层 |
 | IMF World Economic Outlook / Fiscal Monitor / monetary policy materials | 提示通胀、就业、财政空间、公共债务和金融稳定会改变生活成本、公共服务和未来选择权 |
 | OECD Public Integrity / UNODC UNCAC | 提示公共廉洁、透明、审计、利益冲突和问责是公共资源真正进入主体持续性系统的前提 |
+| NOAA Digital Coast / World Bank Oceans | 提示海岸韧性、海平面、风暴潮、侵蚀、海洋生态和蓝色经济是海岸社区主体持续性的外部条件 |
+| FAO Fisheries / SOFIA | 提示捕捞渔业、水产养殖、水生食物、渔民生计和渔业治理需要独立水生食物系统域 |
+| FEMA Dam Safety / USACE Levee Safety | 提示水坝、堤防、防洪墙、泵站和排水工程具有独立的资产失效、维护和风险治理边界 |
+| FHWA Asset Management / World Bank Infrastructure / OECD Infrastructure | 提示公共工程资产的登记、状态评估、维护优先级和全生命周期管理决定服务连续性 |
+| UN-Habitat Urban Planning / World Bank Urban Development / OECD Cities | 提示土地使用、分区、密度、服务布局和城市空间公平会长期塑造主体机会结构 |
+| EPA Green Infrastructure / WHO Urban Green Spaces / UNEP Nature-based Solutions | 提示城市树冠、绿地、水体、湿地和自然基设施能缓冲热、雨洪和恢复空间不足 |
 
 Source links:
 
@@ -810,6 +822,21 @@ Source links:
 - https://www.imf.org/en/Publications/FM
 - https://www.oecd.org/en/topics/public-integrity.html
 - https://www.unodc.org/unodc/en/corruption/uncac.html
+- https://coast.noaa.gov/digitalcoast/topics/coastal-resilience.html
+- https://www.worldbank.org/en/topic/oceans-fisheries-and-coastal-economies
+- https://www.fao.org/fishery/en
+- https://www.fao.org/publications/fao-flagship-publications/the-state-of-world-fisheries-and-aquaculture/en
+- https://www.fema.gov/emergency-managers/risk-management/dam-safety
+- https://www.usace.army.mil/Missions/Civil-Works/Levee-Safety-Program/
+- https://www.fhwa.dot.gov/asset/
+- https://www.oecd.org/en/topics/policy-issues/infrastructure.html
+- https://www.worldbank.org/en/topic/infrastructure
+- https://unhabitat.org/topic/urban-planning
+- https://www.worldbank.org/en/topic/urbandevelopment
+- https://www.oecd.org/en/topics/urban-development.html
+- https://www.epa.gov/green-infrastructure
+- https://www.who.int/europe/publications/i/item/9789289052498
+- https://www.unep.org/unep-and-nature-based-solutions
 - https://www.fao.org/sustainability/en/
 - https://www.fao.org/climate-change/en/
 - https://www.worldbank.org/en/topic/agriculture

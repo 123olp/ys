@@ -161,6 +161,12 @@ human_infra/
     ├── biodiversity-ecosystem-services-resilience/ # 生物多样性与生态系统服务韧性
     ├── wildfire-landscape-fire-resilience/ # 野火、景观火灾与社区韧性
     ├── freight-logistics-port-cold-chain-continuity/ # 货运、港口、仓储与冷链连续性
+    ├── coastal-marine-resilience-blue-economy-continuity/ # 海岸海洋韧性与蓝色经济连续性
+    ├── fisheries-aquatic-food-systems-continuity/ # 渔业与水生食物系统连续性
+    ├── dams-levees-flood-control-infrastructure-safety/ # 水坝、堤防与防洪基础设施安全
+    ├── public-works-civil-infrastructure-asset-management/ # 公共工程与土木基础设施资产管理
+    ├── urban-planning-land-use-zoning-resilience/ # 城市规划、土地使用与分区韧性
+    ├── green-blue-infrastructure-urban-nature-cooling/ # 绿蓝基础设施、城市自然与降温
     ├── insurance-risk-transfer/ # 保险与风险转移
     ├── childcare-family-continuity/ # 托育与家庭连续性
     ├── learning-skill-acquisition/ # 学习与技能获得
@@ -346,6 +352,12 @@ human_infra/
 - `domains/biodiversity-ecosystem-services-resilience/` 负责生物多样性、生态系统服务、授粉、过滤、蓄水、降温和生态恢复。
 - `domains/wildfire-landscape-fire-resilience/` 负责野火、火灾天气、景观燃料、WUI、烟雾、疏散和社区恢复。
 - `domains/freight-logistics-port-cold-chain-continuity/` 负责货运、港口、仓储、冷链、运输节点和最后一公里物流连续性。
+- `domains/coastal-marine-resilience-blue-economy-continuity/` 负责海岸带、海平面、风暴潮、侵蚀、海洋生态、海岸社区和蓝色经济连续性。
+- `domains/fisheries-aquatic-food-systems-continuity/` 负责捕捞渔业、水产养殖、水产品营养、渔业治理、渔民生计和水生食物系统连续性。
+- `domains/dams-levees-flood-control-infrastructure-safety/` 负责水坝、堤防、防洪工程、闸门、泵站、排涝系统和工程失效风险治理。
+- `domains/public-works-civil-infrastructure-asset-management/` 负责道路、桥梁、隧道、排水、公共设施、资产状态、维护优先级和服务水平。
+- `domains/urban-planning-land-use-zoning-resilience/` 负责城市规划、土地使用、分区、密度、服务布局、公共空间、风险避让和空间公平。
+- `domains/green-blue-infrastructure-urban-nature-cooling/` 负责城市树冠、绿地、水体、湿地、雨洪自然基设施、热岛缓解和城市恢复环境。
 - `domains/insurance-risk-transfer/` 负责健康、失业、工伤、残障、灾害、存款、养老金等风险转移和风险池。
 - `domains/childcare-family-continuity/` 负责托育可及、托育费用、照护质量、早期儿童发展、父母工作连续性和家庭压力。
 - `domains/emergency-preparedness-response/` 负责灾害准备、预警、应急通信、急救医疗、安置、公共卫生应急和灾后恢复。
@@ -414,6 +426,7 @@ human_infra/
 - 2026-06-27：新增 `tools/arxiv_html_paper_tool.py` 与 `tools/arxiv-html-paper/`，把 arXiv HTML papers 前端框架沉淀为可复用 Astro 工具链。
 - 2026-06-29：新增可控度规等待室假设 working paper 入口和审计账本，把黑洞等待室收敛为固有时差分、退出采用、风险扣减和递归等待的可审查模型。
 - 2026-06-30：新增农业生产、土壤土地、水资源、生态系统服务、野火韧性和物流冷链六个研究域，补齐初级生产、自然系统与物理流通底座。
+- 2026-06-30：新增海岸海洋蓝色经济、渔业水生食物、防洪工程安全、公共工程资产管理、城市土地使用规划和城市绿蓝基础设施六个研究域，补齐自然-工程-城市交界底座。
 - 2026-06-30：新增复杂照护导航、交接与决策连续性域，覆盖罕见病诊断漫游、多病共存多重用药、出院交接、居家/缓和/安宁疗护、医疗解释文化中介和患者共同决策。
 - 2026-06-30：新增外部化主体连续性域，覆盖生命日志个人档案、数字遗产继承、可穿戴连续感知、个人知识管理认知卸载、脑机接口治理和机器人具身辅助。
 - 2026-06-30：新增 `domains/cellular-reprogramming/`，承载山中因子、部分重编程、化学重编程、AI 因子设计和表观遗传编辑的机制谱系与安全边界。
