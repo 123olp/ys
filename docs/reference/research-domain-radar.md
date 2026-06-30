@@ -348,6 +348,14 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `gift-card-prepaid-stored-value-continuity/` | 礼品卡、预付卡和储值余额决定非现金资源是否保持可见、可用、低费用和可恢复 |
 | `price-fee-disclosure-junk-fee-continuity/` | 价格、费用披露和垃圾费用决定主体能否在交易前看见真实成本并比较选择 |
 | `consumer-reviews-endorsements-marketplace-trust-continuity/` | 消费者评价、背书和市场信任决定主体能否在有限时间内用可信信号降低交易选择错误 |
+| `credit-card-revolving-credit-cost-continuity/` | 信用卡循环信用决定短期现金流桥接是否以可理解成本进入未来还款，而不是被利息、费用和逾期长期吞噬 |
+| `consumer-loan-origination-apr-disclosure-continuity/` | 消费贷款发放和 APR 披露决定当前资源获得是否以清晰还款义务进入主体预算和未来选择权 |
+| `mortgage-origination-servicing-foreclosure-continuity/` | 房贷发放、服务和止赎决定住房稳定是否能跨越多年付款、托管、服务转移和困难恢复窗口 |
+| `auto-loan-lease-servicing-repossession-continuity/` | 车贷和汽车租赁服务决定车辆移动能力是否能持续支撑通勤、照护、医疗和工作 |
+| `student-loan-servicing-repayment-forgiveness-continuity/` | 学生贷款服务、还款和减免决定教育资本是否能长期转化为能力收益，而不是被记录断裂和违约压缩 |
+| `payday-small-dollar-title-loan-continuity/` | 发薪日、小额高成本和汽车抵押贷款决定应急现金缺口是否会升级为债务循环、账户透支和车辆丧失 |
+| `buy-now-pay-later-installment-financing-continuity/` | BNPL 和分期融资决定即时消费是否保持未来付款义务可见、可纠错和可控 |
+| `remittance-money-transfer-disclosure-continuity/` | 汇款和跨境转账披露决定家庭支持、照护资金和跨境资源是否可靠抵达并可纠错 |
 | `contract-subscription-billing-consent-continuity/` | 合同、订阅和账单决定持续交易关系是否保持可理解、可控制、可取消和可争议，而不是持续吞噬时间和资金 |
 | `notary-document-authentication-signature-continuity/` | 公证、文件认证和签名决定主体意愿、授权、合同和跨境文件是否能被机构长期承认、验证和执行 |
 | `citizenship-nationality-statelessness-continuity/` | 公民身份、国籍和无国籍状态决定主体是否被国家或国际保护框架承认为成员、受保护对象和权利主体 |
@@ -770,6 +778,14 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | FTC warranties and Nixing the Fix / state right-to-repair materials | 提示保修、服务合同、维修权、零件、手册和诊断接入决定产品寿命与故障后恢复能力 |
 | CFPB card disputes and prepaid cards / FTC gift-card scam materials | 提示支付争议、未授权扣款、预付卡、礼品卡和储值余额决定非现金资源与异常交易恢复能力 |
 | FTC junk-fee, endorsement, and consumer-review materials | 提示真实价格、强制费用、评价、背书和市场信任是消费者选择质量与资源预算的独立基础设施 |
+| CFPB credit cards and credit-card agreement materials | 提示信用卡循环余额、APR、费用、最低还款和账户关闭是短期资源桥接到长期现金流约束的独立机制 |
+| CFPB consumer loan and Truth in Lending / APR disclosure materials | 提示消费贷款发放、承保、费用、APR 和还款计划必须从债务催收之前单独建模 |
+| CFPB mortgage / Loan Estimate / Closing Disclosure / servicing materials | 提示房贷不仅是住房购买，也是长期服务、托管、付款处理、损失缓解和止赎连续性系统 |
+| CFPB auto loans / FTC car buying materials | 提示车贷、租赁、附加产品、服务和收车直接连接车辆移动、工作可达和债务尾部风险 |
+| Federal Student Aid repayment / CFPB student loans | 提示学生贷款服务、还款计划、宽限、减免、记录和违约是教育资本到未来选择权的独立连续性机制 |
+| CFPB payday loans / FTC payday loans | 提示高成本小额贷款、滚续、账户访问和抵押车辆会把短期现金缺口放大为长期束缚 |
+| CFPB buy now pay later market materials | 提示 BNPL 和商家分期把一次购买拆成多笔未来义务，退款同步和平台过度承诺需要单独跟踪 |
+| CFPB sending money / remittance transfer materials | 提示汇款费用、汇率、到账金额、取消和错误解决是跨境家庭支持的资金传递基础设施 |
 | USCIS citizenship / State Department nationality / UNHCR statelessness | 提示国家成员资格、国籍证明、领事保护和无国籍风险是法律身份之上的独立状态门 |
 | USCIS green card, employment authorization, change status and I-9 materials | 提示居留、工作授权、身份续期、雇佣核验和身份等待状态决定工作、教育、医疗、住房和家庭连续性 |
 | UNHCR protection and refugee statistics / USCIS asylum and refugee materials | 提示庇护、难民、临时保护、安置和保护身份转换是人道连续性中的独立法律状态链 |

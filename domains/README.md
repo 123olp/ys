@@ -304,6 +304,14 @@
 - `gift-card-prepaid-stored-value-continuity/`：礼品卡、预付卡与储值余额连续性，整理礼品卡、预付卡、store credit、平台余额、到期、费用、余额查询和诈骗风险。
 - `price-fee-disclosure-junk-fee-continuity/`：价格、费用披露与垃圾费用连续性，整理标价、强制费用、drip pricing、junk fees、总价披露和账单透明度。
 - `consumer-reviews-endorsements-marketplace-trust-continuity/`：消费者评价、背书与市场信任连续性，整理在线评价、虚假评价、背书、网红披露、评价压制和推荐信任。
+- `credit-card-revolving-credit-cost-continuity/`：信用卡循环信用、成本与还款连续性，整理额度、APR、费用、宽限期、最低还款、循环余额、逾期和账户关闭。
+- `consumer-loan-origination-apr-disclosure-continuity/`：消费贷款发放、APR 披露与还款义务连续性，整理个人贷款、分期贷款、承保、放款、费用、还款计划和服务转移。
+- `mortgage-origination-servicing-foreclosure-continuity/`：房贷发放、服务、止赎与住房连续性，整理 Loan Estimate、Closing Disclosure、托管账户、服务转移、损失缓解和止赎。
+- `auto-loan-lease-servicing-repossession-continuity/`：车贷、租赁、服务与收车连续性，整理车贷、汽车租赁、经销商融资、附加产品、逾期、收车和留置权。
+- `student-loan-servicing-repayment-forgiveness-continuity/`：学生贷款服务、还款与减免连续性，整理服务商、还款计划、延期、宽限、PSLF、减免、违约和记录连续性。
+- `payday-small-dollar-title-loan-continuity/`：发薪日贷款、小额高成本贷款与汽车抵押贷款连续性，整理高成本短期信用、滚续、账户访问、抵押车辆和债务循环。
+- `buy-now-pay-later-installment-financing-continuity/`：先买后付、分期融资与平台授信连续性，整理 BNPL、商家分期、自动扣款、退款同步、逾期费用和信用报告。
+- `remittance-money-transfer-disclosure-continuity/`：汇款、跨境转账与费用汇率披露连续性，整理跨境汇款、费用、汇率、收款金额、取消、错误解决和合规延迟。
 - `contract-subscription-billing-consent-continuity/`：合同、订阅、账单与持续同意连续性，整理合同、自动续费、账单、取消、争议、退款和持续同意。
 - `notary-document-authentication-signature-continuity/`：公证、文件认证与签名连续性，整理公证、电子签名、数字签名、apostille、文件认证和跨机构承认。
 - `citizenship-nationality-statelessness-continuity/`：公民身份、国籍与无国籍连续性，整理公民身份、自然化、国籍证明、领事保护、无国籍风险和身份恢复。

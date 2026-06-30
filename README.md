@@ -552,6 +552,14 @@ flowchart TD
     H --> GCPSV[gift-card-prepaid-stored-value-continuity<br/>礼品卡预付卡 / 储值余额]
     H --> PFDJF[price-fee-disclosure-junk-fee-continuity<br/>价格费用 / 垃圾费用]
     H --> CREMT[consumer-reviews-endorsements-marketplace-trust-continuity<br/>评价背书 / 市场信任]
+    H --> CCRCCC[credit-card-revolving-credit-cost-continuity<br/>信用卡循环 / 成本还款]
+    H --> CLOADC[consumer-loan-origination-apr-disclosure-continuity<br/>消费贷款 / APR 披露]
+    H --> MOSFC[mortgage-origination-servicing-foreclosure-continuity<br/>房贷服务 / 止赎]
+    H --> ALLSRC[auto-loan-lease-servicing-repossession-continuity<br/>车贷租赁 / 收车]
+    H --> SLSRFC[student-loan-servicing-repayment-forgiveness-continuity<br/>学生贷款 / 还款减免]
+    H --> PSDTLC[payday-small-dollar-title-loan-continuity<br/>发薪日小额 / 汽车抵押]
+    H --> BNPLIC[buy-now-pay-later-installment-financing-continuity<br/>先买后付 / 分期融资]
+    H --> RMTDC[remittance-money-transfer-disclosure-continuity<br/>汇款转账 / 费用汇率]
     H --> CSBCC[contract-subscription-billing-consent-continuity<br/>合同订阅 / 账单同意]
     H --> NDASC[notary-document-authentication-signature-continuity<br/>公证认证 / 签名]
     H --> CNSC[citizenship-nationality-statelessness-continuity<br/>公民国籍 / 无国籍]
@@ -864,6 +872,14 @@ flowchart TD
 | [Gift Card Prepaid Stored Value Continuity](domains/gift-card-prepaid-stored-value-continuity/README.md) | 礼品卡、预付卡、store credit、平台余额、到期、费用和余额查询 | 把非现金储值余额纳入主体资源账本、流动性和诈骗风险治理 | 不提供卡密买卖、余额找回、套利、提现、洗钱、诈骗追回或平台规避建议 |
 | [Price Fee Disclosure Junk Fee Continuity](domains/price-fee-disclosure-junk-fee-continuity/README.md) | 标价、强制费用、drip pricing、junk fees、总价披露和账单透明度 | 把交易真实成本从事后冲击转化为事前可比较、可预算变量 | 不提供省钱攻略、费用谈判、拒付、费用规避、虚假投诉、套利或个案法律建议 |
 | [Consumer Reviews Endorsements Marketplace Trust Continuity](domains/consumer-reviews-endorsements-marketplace-trust-continuity/README.md) | 在线评价、虚假评价、背书、网红披露、评价压制、推荐排名和市场信任 | 把交易选择从噪声判断转化为可审查的信息与信任基础设施 | 不提供刷评、删评、评价轰炸、营销投放、声誉操控、骚扰评论者或平台规避建议 |
+| [Credit Card Revolving Credit Cost Continuity](domains/credit-card-revolving-credit-cost-continuity/README.md) | 信用卡账户、额度、APR、费用、宽限期、最低还款、循环余额、逾期和账户关闭 | 把短期现金流桥接转化为可审查的跨期成本治理 | 不提供开卡、还款排序、债务整合、套现、积分套利、逃债、金融或法律建议 |
+| [Consumer Loan Origination APR Disclosure Continuity](domains/consumer-loan-origination-apr-disclosure-continuity/README.md) | 消费贷款申请、放款、APR、费用、还款计划、服务转移、逾期和催收连接 | 把当前资源获得与未来偿付义务放入同一披露和服务链 | 不提供贷款申请、产品选择、再融资、债务整合、逃债、金融或法律建议 |
+| [Mortgage Origination Servicing Foreclosure Continuity](domains/mortgage-origination-servicing-foreclosure-continuity/README.md) | 房贷申请、Loan Estimate、Closing Disclosure、托管、服务转移、损失缓解和止赎 | 把住房稳定建模为长期金融服务和还款连续性系统 | 不提供购房、房贷、再融资、forbearance、止赎防御、贷款欺诈或法律建议 |
+| [Auto Loan Lease Servicing Repossession Continuity](domains/auto-loan-lease-servicing-repossession-continuity/README.md) | 车贷、汽车租赁、经销商融资、APR、附加产品、服务、逾期、收车和留置权 | 把车辆移动能力纳入跨期融资、服务和收车风险治理 | 不提供购车、车贷、再融资、收车应对、隐藏车辆、逃债、金融或法律建议 |
+| [Student Loan Servicing Repayment Forgiveness Continuity](domains/student-loan-servicing-repayment-forgiveness-continuity/README.md) | 联邦/私人学生贷款、服务商、还款计划、延期、宽限、PSLF、减免和违约 | 把教育资本转化为长期记录、还款和职业选择连续性问题 | 不提供借款、还款计划选择、PSLF、减免、再融资、逃债、金融或法律建议 |
+| [Payday Small Dollar Title Loan Continuity](domains/payday-small-dollar-title-loan-continuity/README.md) | 发薪日贷款、小额高成本贷款、汽车抵押贷款、滚续、费用、账户访问和抵押物 | 把应急现金桥接纳入债务循环、账户透支和移动风险治理 | 不提供借款、续借、规避扣款、隐藏车辆、逃债、金融或法律建议 |
+| [Buy Now Pay Later Installment Financing Continuity](domains/buy-now-pay-later-installment-financing-continuity/README.md) | BNPL、商家分期、平台授信、自动扣款、退款同步、逾期费用和信用报告 | 把消费即时性拆解为可见、可纠错、可治理的未来付款义务 | 不提供平台推荐、分期选择、退款争议、拒付滥用、消费套利或法律建议 |
+| [Remittance Money Transfer Disclosure Continuity](domains/remittance-money-transfer-disclosure-continuity/README.md) | 汇款、跨境转账、费用、汇率、收款金额、取消、错误解决、退款和合规延迟 | 把跨境家庭支持和资源传递纳入披露、到账和纠错基础设施 | 不提供汇款推荐、避税、制裁规避、KYC/AML 规避、洗钱、外汇或法律建议 |
 | [Contract Subscription Billing Consent Continuity](domains/contract-subscription-billing-consent-continuity/README.md) | 合同、服务条款、订阅、自动续费、账单、取消、争议和持续同意 | 防止交易关系通过隐性续费、账单错误和取消摩擦吞噬时间与资金 | 不提供合同审查、订阅取消、退款、投诉、诉讼、信用卡争议或法律建议 |
 | [Notary Document Authentication Signature Continuity](domains/notary-document-authentication-signature-continuity/README.md) | 公证、电子签名、数字签名、文件认证、apostille、授权文件和跨机构承认 | 把主体意愿、授权和事实转化为可验证、可迁移、可执行的承认链 | 不提供公证、apostille、签署、电子签名、移民、学校、继承、法院或法律建议 |
 | [Citizenship Nationality Statelessness Continuity](domains/citizenship-nationality-statelessness-continuity/README.md) | 公民身份、国籍、自然化、国籍证明、无国籍风险和领事保护 | 把主体从身份文件推进到国家成员资格和跨境制度保护 | 不提供公民身份、自然化、国籍、无国籍、护照、签证、税务或法律建议 |
@@ -1659,5 +1675,6 @@ flowchart LR
 - 2026-07-01：新增第六十五波 8 个伴侣动物、服务动物与宠物照护连续性域，覆盖人-动物纽带/伴侣照护、兽医可及费用、服务动物残障可达、宠物身份微芯片重聚、宠物食药供应安全、宠物灾害撤离避难、动物收容救助再安置和动物福利虐待报告。
 - 2026-07-01：新增第六十六波 8 个旅行、临时住宿与跨境移动执行连续性域，覆盖长距离旅行预订行程、航空中断退款、航空安检身份核验、行李个人物品、临时住宿接入、旅行警示领事协助、旅行健康准备和海关边境申报。
 - 2026-07-01：新增第六十七波 8 个消费者交易、履约与市场信任连续性域，覆盖在线零售订单履约、退货退款争议、保修服务维修、维修权零件手册、支付卡争议未授权扣款、礼品卡预付储值、价格费用披露和消费者评价背书市场信任。
+- 2026-07-01：新增第六十八波 8 个消费者信贷、贷款服务与跨期资源连续性域，覆盖信用卡循环信用成本、消费贷款发放 APR 披露、房贷服务止赎、车贷租赁收车、学生贷款还款减免、发薪日小额高成本贷款、BNPL 分期融资和汇款转账费用汇率披露。
 
 完整记录见 [CHANGELOG.md](CHANGELOG.md)。

@@ -235,6 +235,14 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 储值余额必须保持可见可用 | `gift-card-prepaid-stored-value-continuity/` | 礼品卡、预付卡、store credit、平台余额、到期、费用、余额查询 | 余额到期、费用侵蚀、诈骗或平台关闭会把名义资源变成不可用资源 |
 | 真实交易成本必须事前可见 | `price-fee-disclosure-junk-fee-continuity/` | 标价、总价披露、强制费用、drip pricing、junk fees、账单透明 | 隐藏费用和分段加价会污染预算、比较和退出选择，使低成本判断变成高成本结果 |
 | 市场信任输入必须可审查 | `consumer-reviews-endorsements-marketplace-trust-continuity/` | 在线评价、虚假评价、背书、网红披露、评价压制、推荐排名 | 刷评、隐性广告和评价压制会污染选择输入，增加错误交易、诈骗和资源浪费概率 |
+| 短期信用桥接必须可计价可还款 | `credit-card-revolving-credit-cost-continuity/` | 信用卡账户、额度、APR、费用、宽限期、最低还款、循环余额、逾期 | 利息费用和最低还款不透明会把短期购买转成长期现金流压缩 |
+| 消费贷款必须披露真实跨期义务 | `consumer-loan-origination-apr-disclosure-continuity/` | 个人贷款、分期贷款、承保、放款、APR、费用、还款计划、服务转移 | 披露、服务或还款计划失败会让当前资源获得变成不可控债务负担 |
+| 房贷服务必须维持住房稳定 | `mortgage-origination-servicing-foreclosure-continuity/` | Loan Estimate、Closing Disclosure、托管账户、服务商转移、损失缓解、止赎 | 付款错配、服务错误或止赎升级会把长期住房基础设施切断 |
+| 车辆融资必须维持移动入口 | `auto-loan-lease-servicing-repossession-continuity/` | 车贷、租赁、经销商融资、APR、附加产品、逾期、收车、留置权 | 收车、差额债务或留置权错误会切断通勤、照护、医疗和工作行动链 |
+| 教育融资必须保持记录和还款连续 | `student-loan-servicing-repayment-forgiveness-continuity/` | 学生贷款、服务商、还款计划、延期、宽限、PSLF、减免、违约 | 服务记录和付款计数断裂会压缩职业选择、现金流和长期教育资本收益 |
+| 应急现金桥接不能变成债务循环 | `payday-small-dollar-title-loan-continuity/` | 发薪日贷款、小额高成本贷款、title loan、滚续、账户访问、抵押物 | 高成本滚续、自动扣款和抵押物风险会把短期缺口变成长期束缚 |
+| 即时消费分期必须保持未来义务可见 | `buy-now-pay-later-installment-financing-continuity/` | BNPL、商家分期、平台授信、自动扣款、退款同步、逾期费用 | 多平台义务、退款不同步或逾期费用会隐藏未来现金流占用 |
+| 跨境资金支持必须可披露可纠错 | `remittance-money-transfer-disclosure-continuity/` | 汇款、跨境转账、费用、汇率、收款金额、取消、错误解决、合规延迟 | 费用汇率不透明、收款失败或合规阻断会破坏家庭支持和跨境资源传递 |
 | 持续交易关系必须可理解可退出 | `contract-subscription-billing-consent-continuity/` | 合同、服务条款、订阅、自动续费、账单、取消、争议、持续同意 | 隐性续费、暗黑模式、账单错误和取消摩擦持续消耗金钱、时间、注意力和控制权 |
 | 关键文件必须可签署可认证 | `notary-document-authentication-signature-continuity/` | 公证、签名、电子签名、文件认证、apostille、授权文件、跨机构承认 | 文件无效、认证缺失、身份无法确认或签名记录失效让授权、事实和跨境文件不可执行 |
 | 国家成员资格必须可证明 | `citizenship-nationality-statelessness-continuity/` | 公民身份、国籍、自然化、国籍证明、无国籍风险、领事保护 | 无国籍、国籍争议或证明缺失使旅行、保护、投票、福利、家庭团聚和法律救济断裂 |
@@ -711,6 +719,14 @@ risk-engineering
   -> gift-card-prepaid-stored-value-continuity
   -> price-fee-disclosure-junk-fee-continuity
   -> consumer-reviews-endorsements-marketplace-trust-continuity
+  -> credit-card-revolving-credit-cost-continuity
+  -> consumer-loan-origination-apr-disclosure-continuity
+  -> mortgage-origination-servicing-foreclosure-continuity
+  -> auto-loan-lease-servicing-repossession-continuity
+  -> student-loan-servicing-repayment-forgiveness-continuity
+  -> payday-small-dollar-title-loan-continuity
+  -> buy-now-pay-later-installment-financing-continuity
+  -> remittance-money-transfer-disclosure-continuity
   -> contract-subscription-billing-consent-continuity
   -> notary-document-authentication-signature-continuity
   -> citizenship-nationality-statelessness-continuity

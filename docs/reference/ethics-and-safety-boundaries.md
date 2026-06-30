@@ -1049,6 +1049,24 @@ Human Infra 不能被设计成更精密的压榨系统。
 - 不帮助虚假下单、刷单、套券、退货滥用、虚构未收到货、伪造证据、重复索赔、虚假 chargeback、盗刷、洗钱、礼品卡交易、卡密转卖、绕过维修锁、DRM 规避、固件破解、费用逃避、刷评、删评、评价轰炸、隐性广告、骚扰评论者或平台审核规避。
 - 不替代 FTC、CFPB、USA.gov、州消费者保护机构、银行、信用卡发行机构、支付网络、商家、平台、维修专业人士、产品制造商、保修服务商、消费者投诉渠道、律师、金融专业人士或法院。
 
+## 消费者信贷、贷款服务与跨期资源连续性边界
+
+`credit-card-revolving-credit-cost-continuity`、`consumer-loan-origination-apr-disclosure-continuity`、`mortgage-origination-servicing-foreclosure-continuity`、`auto-loan-lease-servicing-repossession-continuity`、`student-loan-servicing-repayment-forgiveness-continuity`、`payday-small-dollar-title-loan-continuity`、`buy-now-pay-later-installment-financing-continuity` 和 `remittance-money-transfer-disclosure-continuity` 关注主体如何通过信用、贷款、分期和汇款把未来收入、住房、车辆、教育资本、应急现金、消费便利和跨境家庭支持转化为当前资源或外部支持，不是个人贷款、还款、再融资、减免、止赎、收车、汇款、避税、逃债、金融规划或法律服务入口。
+
+可以做：
+
+- 整理 CFPB、Federal Student Aid、FTC、HUD、FinCEN、OFAC、州金融监管机构和官方消费者金融资料的机制、对象、变量和边界。
+- 比较信用卡循环信用、消费贷款 APR 披露、房贷服务、车贷租赁、学生贷款记录、高成本小额贷款、BNPL 和汇款如何分别影响现金流、住房稳定、移动能力、教育资本、债务循环、未来付款义务和跨境家庭支持。
+- 记录反欺诈、反规避、反过度承诺、KYC/AML、制裁合规、隐私、可访问性、证据链、服务转移、披露质量、投诉入口和个案建议边界，服务后续资料卡片与变量建模。
+
+不能做：
+
+- 不提供个人开卡、贷款申请、产品选择、额度申请、还款排序、债务整合、再融资、forbearance、loan modification、PSLF、减免、止赎防御、收车应对、汇款服务商选择、避税、外汇交易、金融规划或法律建议。
+- 不判断某个贷款、信用卡、房贷、车贷、学生贷款、BNPL、汇款、服务商、利率、费用、还款计划、减免路径、收车、止赎或转账是否适合个人。
+- 不生成贷款申请、还款、再融资、减免、止赎、收车、催收、退款、汇款、投诉、监管申诉、诉讼、仲裁或个案消费者金融争议策略。
+- 不帮助虚假申请、收入造假、资产隐瞒、身份欺诈、产权欺诈、支票欺诈、隐藏车辆、逃债、规避自动扣款、规避催收、规避信用报告、规避 KYC/AML、制裁规避、结构化交易、洗钱、非法汇兑、恐怖融资或伪造证明。
+- 不替代 CFPB、Federal Student Aid、U.S. Department of Education、HUD、FTC、FinCEN、OFAC、州金融监管机构、州 DMV、贷款人、服务商、银行、信用卡发行机构、汇款服务商、消费者投诉渠道、律师、税务专业人士或金融专业人士。
+
 ## 法律状态、保护身份、强制程序与记录救济连续性边界
 
 `citizenship-nationality-statelessness-continuity`、`immigration-status-residency-work-authorization-continuity`、`asylum-refugee-protection-status-continuity`、`detention-custody-confinement-status-continuity`、`civil-commitment-involuntary-treatment-rights-continuity`、`court-notice-service-process-default-judgment-continuity` 和 `criminal-record-relief-collateral-consequences-continuity` 关注国籍、居留工作授权、保护身份、拘押状态、非自愿治疗、法院程序通知和犯罪记录救济如何影响主体制度承认、自由边界、服务入口和未来选择权，不是个人公民身份、移民、庇护、拘押、强制治疗、法院、刑事记录、税务、医疗或法律服务入口。

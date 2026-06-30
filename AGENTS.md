@@ -158,6 +158,14 @@ human_infra/
     ├── gift-card-prepaid-stored-value-continuity/ # 礼品卡、预付卡与储值余额连续性
     ├── price-fee-disclosure-junk-fee-continuity/ # 价格、费用披露与垃圾费用连续性
     ├── consumer-reviews-endorsements-marketplace-trust-continuity/ # 消费者评价、背书与市场信任连续性
+    ├── credit-card-revolving-credit-cost-continuity/ # 信用卡循环信用、成本与还款连续性
+    ├── consumer-loan-origination-apr-disclosure-continuity/ # 消费贷款发放、APR 披露与还款义务连续性
+    ├── mortgage-origination-servicing-foreclosure-continuity/ # 房贷发放、服务、止赎与住房连续性
+    ├── auto-loan-lease-servicing-repossession-continuity/ # 车贷、租赁、服务与收车连续性
+    ├── student-loan-servicing-repayment-forgiveness-continuity/ # 学生贷款服务、还款与减免连续性
+    ├── payday-small-dollar-title-loan-continuity/ # 发薪日贷款、小额高成本贷款与汽车抵押贷款连续性
+    ├── buy-now-pay-later-installment-financing-continuity/ # 先买后付、分期融资与平台授信连续性
+    ├── remittance-money-transfer-disclosure-continuity/ # 汇款、跨境转账与费用汇率披露连续性
     ├── contract-subscription-billing-consent-continuity/ # 合同、订阅、账单与持续同意连续性
     ├── notary-document-authentication-signature-continuity/ # 公证、文件认证与签名连续性
     ├── citizenship-nationality-statelessness-continuity/ # 公民身份、国籍与无国籍连续性
@@ -720,6 +728,7 @@ human_infra/
 - `domains/banking-deposit-account-access-continuity/`、`domains/debt-obligation-collection-relief-continuity/`、`domains/real-property-title-deed-record-continuity/`、`domains/driver-license-vehicle-registration-continuity/`、`domains/passport-travel-document-mobility-continuity/`、`domains/contract-subscription-billing-consent-continuity/` 和 `domains/notary-document-authentication-signature-continuity/` 负责银行账户存款访问、债务义务催收救济、不动产权属地契、驾照车辆登记、护照旅行证件、合同订阅账单、公证文件认证签名这些资源控制、移动资格与交易执行连续性条件。
 - `domains/long-distance-travel-booking-itinerary-continuity/`、`domains/air-passenger-rights-disruption-refund-continuity/`、`domains/aviation-security-screening-identity-continuity/`、`domains/baggage-personal-property-travel-continuity/`、`domains/lodging-temporary-accommodation-access-continuity/`、`domains/travel-advisory-consular-assistance-continuity/`、`domains/travel-health-preparedness-continuity/` 和 `domains/customs-border-entry-declaration-continuity/` 负责长距离旅行预订行程、航空中断退款、安检身份核验、行李个人物品、临时住宿、旅行警示领事协助、旅行健康准备和海关边境申报这些旅行、临时住宿与跨境移动执行连续性条件。
 - `domains/online-retail-order-shipping-fulfillment-continuity/`、`domains/consumer-return-refund-dispute-resolution-continuity/`、`domains/consumer-warranty-service-contract-repair-continuity/`、`domains/right-to-repair-parts-manuals-access-continuity/`、`domains/payment-card-dispute-unauthorized-charge-continuity/`、`domains/gift-card-prepaid-stored-value-continuity/`、`domains/price-fee-disclosure-junk-fee-continuity/` 和 `domains/consumer-reviews-endorsements-marketplace-trust-continuity/` 负责在线零售订单履约、退货退款争议、消费品保修维修、维修权零件手册、支付卡争议未授权扣款、礼品卡预付储值、价格费用披露和消费者评价背书市场信任这些消费者交易、履约与市场信任连续性条件。
+- `domains/credit-card-revolving-credit-cost-continuity/`、`domains/consumer-loan-origination-apr-disclosure-continuity/`、`domains/mortgage-origination-servicing-foreclosure-continuity/`、`domains/auto-loan-lease-servicing-repossession-continuity/`、`domains/student-loan-servicing-repayment-forgiveness-continuity/`、`domains/payday-small-dollar-title-loan-continuity/`、`domains/buy-now-pay-later-installment-financing-continuity/` 和 `domains/remittance-money-transfer-disclosure-continuity/` 负责信用卡循环信用成本、消费贷款 APR 披露、房贷服务止赎、车贷租赁收车、学生贷款还款减免、发薪日/小额/汽车抵押贷款、BNPL 分期融资和汇款转账费用汇率这些消费者信贷、贷款服务与跨期资源连续性条件。
 - `domains/citizenship-nationality-statelessness-continuity/`、`domains/immigration-status-residency-work-authorization-continuity/`、`domains/asylum-refugee-protection-status-continuity/`、`domains/detention-custody-confinement-status-continuity/`、`domains/civil-commitment-involuntary-treatment-rights-continuity/`、`domains/court-notice-service-process-default-judgment-continuity/` 和 `domains/criminal-record-relief-collateral-consequences-continuity/` 负责公民国籍无国籍、移民居留工作授权、庇护难民保护、拘押羁押监管状态、非自愿治疗权利、法院通知缺席判决和犯罪记录附带后果这些法律状态与强制程序连续性条件。
 - `domains/school-enrollment-attendance-continuity/`、`domains/special-education-iep-504-accommodation-continuity/`、`domains/school-meals-nutrition-access-continuity/`、`domains/school-health-services-chronic-condition-continuity/`、`domains/school-transportation-safe-routes-continuity/`、`domains/school-discipline-exclusion-restraint-continuity/`、`domains/school-mental-health-counseling-support-continuity/` 和 `domains/school-climate-bullying-violence-prevention-continuity/` 负责入学出勤、特殊教育 IEP/504、校餐营养、学校健康服务、通学安全、纪律排除约束、学校心理健康、学校气候欺凌暴力预防这些学校服务连续性条件。
 - `domains/postsecondary-admissions-transfer-articulation-continuity/`、`domains/student-financial-aid-grant-scholarship-continuity/`、`domains/academic-advising-degree-progress-continuity/`、`domains/campus-basic-needs-student-support-continuity/`、`domains/campus-disability-accommodations-accessibility-continuity/`、`domains/campus-mental-health-crisis-student-support-continuity/`、`domains/campus-safety-title-ix-clery-continuity/` 和 `domains/international-student-sevis-status-continuity/` 负责高等教育入学转学衔接、学生资助奖助学金、学业指导学位进度、校园基本需求、校园残障便利、校园心理危机支持、校园安全 Title IX/Clery 和国际学生 SEVIS 身份连续性这些高等教育学生生命周期条件。
@@ -862,3 +871,4 @@ human_infra/
 - 2026-07-01：新增第六十五波伴侣动物、服务动物与宠物照护连续性研究域，覆盖人-动物纽带/伴侣照护、兽医可及费用、服务动物残障可达、宠物身份微芯片重聚、宠物食药供应安全、宠物灾害撤离避难、动物收容救助再安置和动物福利虐待报告。
 - 2026-07-01：新增第六十六波旅行、临时住宿与跨境移动执行连续性研究域，覆盖长距离旅行预订行程、航空中断退款、航空安检身份核验、行李个人物品、临时住宿接入、旅行警示领事协助、旅行健康准备和海关边境申报。
 - 2026-07-01：新增第六十七波消费者交易、履约与市场信任连续性研究域，覆盖在线零售订单履约、退货退款争议、消费品保修维修、维修权零件手册、支付卡争议未授权扣款、礼品卡预付储值、价格费用披露和消费者评价背书市场信任。
+- 2026-07-01：新增第六十八波消费者信贷、贷款服务与跨期资源连续性研究域，覆盖信用卡循环信用成本、消费贷款 APR 披露、房贷服务止赎、车贷租赁收车、学生贷款还款减免、发薪日小额高成本贷款、BNPL 分期融资和汇款转账费用汇率披露。

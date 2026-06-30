@@ -87,6 +87,7 @@ docs/
 │   ├── 0069-add-sixty-fifth-wave-companion-service-animal-continuity-domains.md
 │   ├── 0070-add-sixty-sixth-wave-travel-lodging-border-continuity-domains.md
 │   ├── 0071-add-sixty-seventh-wave-consumer-transaction-continuity-domains.md
+│   ├── 0072-add-sixty-eighth-wave-consumer-credit-lending-continuity-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -380,6 +381,14 @@ docs/
 237. Read `../domains/gift-card-prepaid-stored-value-continuity/README.md` if you are working on gift cards, prepaid cards, store credit, platform balances, loyalty balances, expiration, fees, or stored-value scams.
 238. Read `../domains/price-fee-disclosure-junk-fee-continuity/README.md` if you are working on price disclosure, total price, drip pricing, junk fees, mandatory fees, hidden fees, or bill transparency.
 239. Read `../domains/consumer-reviews-endorsements-marketplace-trust-continuity/README.md` if you are working on consumer reviews, fake reviews, endorsements, influencer disclosures, testimonials, review suppression, or marketplace trust.
+240. Read `../domains/credit-card-revolving-credit-cost-continuity/README.md` if you are working on credit cards, revolving balances, APR, fees, grace periods, minimum payments, delinquency, or account closure.
+241. Read `../domains/consumer-loan-origination-apr-disclosure-continuity/README.md` if you are working on consumer loans, personal loans, installment loans, origination, underwriting, APR disclosure, fees, repayment schedules, or servicing handoffs.
+242. Read `../domains/mortgage-origination-servicing-foreclosure-continuity/README.md` if you are working on mortgage origination, Loan Estimates, Closing Disclosures, escrow, servicing transfers, loss mitigation, forbearance, or foreclosure continuity.
+243. Read `../domains/auto-loan-lease-servicing-repossession-continuity/README.md` if you are working on auto loans, vehicle leases, dealer financing, add-ons, servicing, delinquency, repossession, title liens, or deficiency balances.
+244. Read `../domains/student-loan-servicing-repayment-forgiveness-continuity/README.md` if you are working on student loan servicing, repayment plans, deferment, forbearance, PSLF, forgiveness, discharge, default, or payment-count records.
+245. Read `../domains/payday-small-dollar-title-loan-continuity/README.md` if you are working on payday loans, small-dollar high-cost loans, title loans, rollovers, account access, vehicle collateral, or debt cycles.
+246. Read `../domains/buy-now-pay-later-installment-financing-continuity/README.md` if you are working on BNPL, installment financing, merchant checkout credit, autopay, refunds, late fees, credit reporting, or platform overextension.
+247. Read `../domains/remittance-money-transfer-disclosure-continuity/README.md` if you are working on remittance transfers, cross-border money transfers, exchange-rate disclosure, fees, cancellation, refunds, error resolution, or recipient availability.
 224. Read `../domains/contract-subscription-billing-consent-continuity/README.md` if you are working on contracts, subscriptions, automatic renewal, billing, cancellation, negative options, ongoing consent, or transaction-friction continuity.
 225. Read `../domains/notary-document-authentication-signature-continuity/README.md` if you are working on notarization, electronic signatures, digital signatures, document authentication, apostilles, or institutional recognition of signed records.
 226. Read `../domains/citizenship-nationality-statelessness-continuity/README.md` if you are working on citizenship, nationality, naturalization, consular protection, statelessness, nationality proof, or national-membership continuity.

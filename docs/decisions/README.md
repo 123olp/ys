@@ -84,3 +84,4 @@ Current decisions:
 - `0069-add-sixty-fifth-wave-companion-service-animal-continuity-domains.md`
 - `0070-add-sixty-sixth-wave-travel-lodging-border-continuity-domains.md`
 - `0071-add-sixty-seventh-wave-consumer-transaction-continuity-domains.md`
+- `0072-add-sixty-eighth-wave-consumer-credit-lending-continuity-domains.md`
