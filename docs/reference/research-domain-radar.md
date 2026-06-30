@@ -115,6 +115,12 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `administrative-burden-procedural-friction/` | 学习成本、心理成本、合规成本、证明、等待、续期和申诉决定名义权利能否穿过制度流程 |
 | `community-health-workers-peer-support/` | 社区健康工作者、同伴支持、导航员和可信中介决定服务能否进入日常生活并形成恢复闭环 |
 | `civic-data-open-government-transparency/` | 开放数据、公共记录、FOIA、绩效数据和透明机制决定公共系统是否可观察、可审查和可反馈 |
+| `education-access-lifelong-learning/` | 教育可及、成人学习、再培训、基础技能和数字学习决定延长时间能否转化为能力复利 |
+| `research-infrastructure-open-science-translation/` | 科研基础设施、开放科学、复现性和转化科学决定未来技术窗口能否持续生成和扩散 |
+| `standards-metrology-quality-infrastructure/` | 标准、计量、校准、认证和质量基础设施决定测量、设备、数据和制造是否可信可比 |
+| `cybersecurity-resilience-critical-services/` | 网络安全、事件响应、备份恢复和关键服务韧性决定数字化主体系统是否会被攻击截断 |
+| `compute-data-center-ai-infrastructure/` | 算力、数据中心、芯片、云、能源、水和网络决定 AI、科学模拟和自动化能力是否可用 |
+| `clinical-trials-regulatory-science-translation/` | 临床试验、监管科学、真实世界证据和安全监测决定医学发现能否成为可用干预 |
 
 ## 来源信号
 
@@ -208,6 +214,12 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | Administrative Burden / Performance.gov CX / OMB Customer Experience / Digital.gov | 提示学习成本、心理成本、合规成本、证明、等待、续期和申诉会把制度支持转化为有效时间损耗 |
 | WHO CHW guideline / CDC CHW / HRSA CHW Training / SAMHSA Peer Support | 提示社区健康工作者、同伴支持和导航员是医疗、公共卫生、社会服务和恢复支持的关系接口 |
 | Data.gov / Resources.data.gov / FOIA.gov / Open.USA.gov / Federal Data Strategy | 提示开放数据、公共记录、元数据、绩效数据和透明机制是公共系统可观察、可审查和可反馈的基础设施 |
+| UNESCO Lifelong Learning / World Bank Education / OECD Skills / ILO Skills | 提示教育可及、成人学习、再培训、基础技能和终身学习是能力复利与技术采用的外部条件 |
+| UNESCO Open Science / NIH NCATS / National Academies Reproducibility / OECD STI | 提示科研基础设施、开放科学、复现性、研究数据和转化科学是未来技术窗口生成机制 |
+| NIST Metrology / BIPM / ISO / UNIDO Quality Infrastructure | 提示标准、计量、校准、认证、质量基础设施和互操作规范是可靠技术系统底座 |
+| NIST CSF / CISA Critical Infrastructure / ENISA / OECD Digital Security | 提示网络安全、事件响应、关键基础设施韧性和数字安全治理是数字服务连续性条件 |
+| IEA Data Centres / DOE AI / NIST AI / OECD AI / Semiconductor Industry Association | 提示算力、数据中心、芯片、能源、水、云服务和 AI 基础设施决定 AI 能力可达性 |
+| ClinicalTrials.gov / WHO ICTRP / FDA Regulatory Science / NIH OCR | 提示临床试验、监管科学、真实世界证据、安全监测和批准路径是医学发现进入主体系统的转化通道 |
 
 Source links:
 
@@ -494,6 +506,35 @@ Source links:
 - https://www.foia.gov/
 - https://open.usa.gov/
 - https://strategy.data.gov/
+- https://www.unesco.org/en/lifelong-learning
+- https://www.uil.unesco.org/
+- https://www.worldbank.org/en/topic/education
+- https://www.oecd.org/skills/
+- https://www.ilo.org/skills
+- https://www.unesco.org/en/open-science
+- https://ncats.nih.gov/
+- https://nap.nationalacademies.org/catalog/25303/reproducibility-and-replicability-in-science
+- https://www.oecd.org/sti/
+- https://www.nist.gov/metrology
+- https://www.nist.gov/standardsgov
+- https://www.bipm.org/
+- https://www.iso.org/standards.html
+- https://www.unido.org/our-focus/advancing-economic-competitiveness/quality-infrastructure
+- https://www.nist.gov/cyberframework
+- https://www.cisa.gov/topics/critical-infrastructure-security-and-resilience
+- https://www.cisa.gov/topics/cybersecurity-best-practices
+- https://www.enisa.europa.eu/topics
+- https://www.oecd.org/digital/digital-security/
+- https://www.iea.org/energy-system/buildings/data-centres-and-data-transmission-networks
+- https://www.energy.gov/ai
+- https://www.nist.gov/artificial-intelligence
+- https://oecd.ai/
+- https://www.semiconductors.org/
+- https://clinicaltrials.gov/
+- https://www.who.int/clinical-trials-registry-platform
+- https://www.fda.gov/science-research/science-and-research-special-topics/regulatory-science
+- https://www.fda.gov/science-research/science-and-research-special-topics/real-world-evidence
+- https://ocr.od.nih.gov/
 
 ## 使用规则
 

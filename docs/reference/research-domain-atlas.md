@@ -124,6 +124,12 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 制度流程成本可承受 | `administrative-burden-procedural-friction/` | 学习成本、心理成本、合规成本、证明、等待、续期、申诉 | 名义权利被程序摩擦转化为申请放弃、资格断线和有效时间损耗 |
 | 社区中介可连接服务 | `community-health-workers-peer-support/` | CHW、peer support、导航员、信任、文化适配、转介闭环 | 服务存在但不被信任、理解、坚持或反馈，恢复支持无法进入日常生活 |
 | 公共系统可被观察 | `civic-data-open-government-transparency/` | 开放数据、公共记录、FOIA、绩效数据、元数据、问责反馈 | 公共资源分配、服务失败、腐败、歧视和治理缺口不可见 |
+| 学习机会可持续 | `education-access-lifelong-learning/` | 教育可及、成人学习、再培训、基础技能、数字学习、技能迁移 | 长寿无法转化为能力复利，技能过时和技术排除扩大 |
+| 未来技术窗口可生成 | `research-infrastructure-open-science-translation/` | 科研基础设施、开放科学、复现性、研究数据、资助、转化科学 | 研究不可复现、数据不可得、资助断裂和技术转化失败 |
+| 技术测量可可信 | `standards-metrology-quality-infrastructure/` | 标准、计量、校准、认证、质量管理、合格评定、互操作 | 测量不可比、设备不可互通、质量不可审查和假合格风险 |
+| 数字关键服务可恢复 | `cybersecurity-resilience-critical-services/` | 网络安全、事件响应、备份恢复、关键服务韧性、数字风险治理 | 医疗、金融、身份、公共服务和 AI 工具被攻击、勒索或中断 |
+| AI 算力底座可用 | `compute-data-center-ai-infrastructure/` | 算力、数据中心、芯片、云、能源、水、网络、接入治理 | AI 和科学模拟能力集中、短缺、中断或被资源约束截断 |
+| 医学发现可监管转化 | `clinical-trials-regulatory-science-translation/` | 临床试验、监管科学、真实世界证据、安全监测、批准路径 | 有前沿发现但人体证据不足、安全遗漏或监管转化失败 |
 | 高成本风险可分摊 | `insurance-risk-transfer/` | 覆盖率、保费、自付、理赔、拒赔、风险池、保障缺口 | 疾病、失业、工伤、残障、灾害或养老金风险由个体独自承担 |
 | 托育和家庭运行可持续 | `childcare-family-continuity/` | 托育可及、费用、质量、早期发展、父母工作连续性、家庭压力 | 儿童发展受损、照护者工作中断、时间贫困和家庭压力升级 |
 | 应急响应可接住主体 | `emergency-preparedness-response/` | 灾害准备、预警、应急通信、急救医疗、安置、公共卫生应急、恢复 | 低频高冲击事件一次性清零长期积累，通信、医疗、撤离或恢复失败 |
@@ -254,6 +260,12 @@ risk-engineering
   -> administrative-burden-procedural-friction
   -> community-health-workers-peer-support
   -> civic-data-open-government-transparency
+  -> education-access-lifelong-learning
+  -> research-infrastructure-open-science-translation
+  -> standards-metrology-quality-infrastructure
+  -> cybersecurity-resilience-critical-services
+  -> compute-data-center-ai-infrastructure
+  -> clinical-trials-regulatory-science-translation
   -> insurance-risk-transfer
   -> childcare-family-continuity
   -> emergency-preparedness-response

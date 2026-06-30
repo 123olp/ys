@@ -290,6 +290,12 @@ flowchart TD
     H --> ABPF[administrative-burden-procedural-friction<br/>行政负担 / 程序摩擦]
     H --> CHWPS[community-health-workers-peer-support<br/>社区健康工作者 / 同伴支持]
     H --> CDOGT[civic-data-open-government-transparency<br/>公民数据 / 开放政府透明]
+    H --> EALL[education-access-lifelong-learning<br/>教育可及 / 终身学习]
+    H --> RIOST[research-infrastructure-open-science-translation<br/>科研基础设施 / 开放科学 / 转化]
+    H --> SMQI[standards-metrology-quality-infrastructure<br/>标准计量 / 质量基础设施]
+    H --> CRCS[cybersecurity-resilience-critical-services<br/>网络安全韧性 / 关键服务]
+    H --> CDAI[compute-data-center-ai-infrastructure<br/>算力数据中心 / AI 基础设施]
+    H --> CTRST[clinical-trials-regulatory-science-translation<br/>临床试验 / 监管科学]
     H --> SCC[supply-chain-continuity<br/>供应链连续性]
     H --> SBB[synthetic-biology-biosecurity<br/>合成生物学与生物安全]
     H --> SEH[space-extreme-habitation<br/>空间与极端栖居]
@@ -439,6 +445,12 @@ flowchart TD
 | [Media Information Literacy Public Libraries](domains/media-information-literacy-public-libraries/README.md) | 媒体与信息素养、公共图书馆、可信知识入口、数字技能和社区学习空间 | 判断、学习、技术采用、公共服务使用和公共参与的认知基础设施 | 不提供宣传、舆论操控、微定向影响、平台规避或内容伪造策略 |
 | [Health Workforce Capacity](domains/health-workforce-capacity/README.md) | 医生、护士、公共卫生人员、社区健康工作者、长期照护和辅助专业人员 | 医学技术能否转化为真实诊断、治疗、预防、康复和照护 | 不提供择医、职业规划、执照认证、移民、薪资或劳动争议建议 |
 | [Civic Data Open Government Transparency](domains/civic-data-open-government-transparency/README.md) | 开放数据、公共记录、FOIA、绩效数据、元数据和透明机制 | 公共系统可观测、可审查、可反馈和可问责的治理基础设施 | 不提供人肉搜索、隐私攻击、监控目标定位、访问控制规避或 FOIA 个案法律建议 |
+| [Education Access Lifelong Learning](domains/education-access-lifelong-learning/README.md) | 基础教育、成人学习、再培训、基础技能、数字学习和技能迁移 | 把延长时间窗口转化为能力复利、技术采用和未来选择权 | 不提供升学、择校、留学、考试、职业证书或教育投资建议 |
+| [Research Infrastructure Open Science Translation](domains/research-infrastructure-open-science-translation/README.md) | 科研基础设施、开放科学、复现性、研究数据、资助、转化科学和知识扩散 | 让未来技术窗口持续生成、验证、共享和扩散 | 不提供论文代写、学术操控、数据造假、刷引用或同行评审规避策略 |
+| [Standards Metrology Quality Infrastructure](domains/standards-metrology-quality-infrastructure/README.md) | 标准、计量、校准、认证、质量管理、合格评定和互操作规范 | 让测量、设备、数据、制造和服务具备可比性与可信度 | 不提供认证规避、检测伪造、设备改装、标准绕过或产品采购建议 |
+| [Cybersecurity Resilience Critical Services](domains/cybersecurity-resilience-critical-services/README.md) | 网络安全、关键服务韧性、事件响应、备份恢复和数字风险治理 | 防止医疗、金融、身份、公共服务和 AI 工具被攻击截断 | 不提供攻击、入侵、漏洞利用、钓鱼、恶意软件或规避检测步骤 |
+| [Compute Data Center AI Infrastructure](domains/compute-data-center-ai-infrastructure/README.md) | 算力、数据中心、AI 基础设施、芯片、能源、水、网络和接入治理 | 支撑 AI 工具、科学模拟、自动化和科研加速的物质底座 | 不提供盗用算力、绕过计费、芯片走私、数据中心攻击、投资采购或监管规避建议 |
+| [Clinical Trials Regulatory Science Translation](domains/clinical-trials-regulatory-science-translation/README.md) | 临床试验、监管科学、真实世界证据、安全监测和批准路径 | 把医学发现转化为可验证、可监管、可扩散的干预 | 不提供入组、治疗、用药、停药、试验选择、人体试验操作或监管规避建议 |
 | [Oral Health Continuity](domains/oral-health-continuity/README.md) | 牙齿、牙周、咀嚼、疼痛、感染、营养和沟通 | 口腔功能、疼痛、感染、营养和社会参与变量 | 不提供牙科诊断、治疗、药物、手术、器械或个体护理建议 |
 | [Measurement And Feedback](domains/measurement-feedback/README.md) | 状态测量、风险评分、生物标志物、可穿戴、反馈控制 | 指标分类、预测接口和模型反馈边界 | 不输出个体死亡日期、确定寿命预测或医学诊断 |
 

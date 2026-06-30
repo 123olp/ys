@@ -35,6 +35,7 @@ docs/
 │   ├── 0017-add-thirteenth-wave-health-data-outcomes-public-health-domains.md
 │   ├── 0018-add-fourteenth-wave-public-services-emergency-financial-workforce-domains.md
 │   ├── 0019-add-fifteenth-wave-preparedness-literacy-workforce-burden-community-data-domains.md
+│   ├── 0020-add-sixteenth-wave-education-research-standards-cyber-compute-clinical-translation-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -128,4 +129,10 @@ docs/
 38. Read `../domains/administrative-burden-procedural-friction/README.md` if you are working on paperwork, proof burden, waiting, renewal, appeal, or procedural friction.
 39. Read `../domains/community-health-workers-peer-support/README.md` if you are working on community health workers, peer support, navigators, trusted intermediaries, or referral follow-up.
 40. Read `../domains/civic-data-open-government-transparency/README.md` if you are working on open data, public records, FOIA, performance data, metadata, accountability, or public feedback.
-41. Enter a domain under `../domains/`.
+41. Read `../domains/education-access-lifelong-learning/README.md` if you are working on education access, adult learning, retraining, basic skills, digital learning, or lifelong learning.
+42. Read `../domains/research-infrastructure-open-science-translation/README.md` if you are working on research infrastructure, open science, reproducibility, research data, funding, translational science, or knowledge diffusion.
+43. Read `../domains/standards-metrology-quality-infrastructure/README.md` if you are working on standards, metrology, calibration, certification, quality infrastructure, conformity assessment, or interoperability.
+44. Read `../domains/cybersecurity-resilience-critical-services/README.md` if you are working on cybersecurity, critical-service resilience, incident response, backup recovery, ransomware risk, or digital continuity.
+45. Read `../domains/compute-data-center-ai-infrastructure/README.md` if you are working on compute, data centers, AI infrastructure, chips, energy, water, cloud access, or AI infrastructure governance.
+46. Read `../domains/clinical-trials-regulatory-science-translation/README.md` if you are working on clinical trials, regulatory science, real-world evidence, safety monitoring, endpoints, or medical translation.
+47. Enter a domain under `../domains/`.

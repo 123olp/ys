@@ -70,6 +70,12 @@
 - `administrative-burden-procedural-friction/`：行政负担与程序摩擦，整理学习成本、心理成本、合规成本、证明、等待、续期和申诉负担。
 - `community-health-workers-peer-support/`：社区健康工作者与同伴支持，整理 CHW、peer support、导航员、可信中介、转介闭环和恢复支持。
 - `civic-data-open-government-transparency/`：公民数据与开放政府透明，整理开放数据、公共记录、FOIA、绩效数据、元数据、问责和公共反馈。
+- `education-access-lifelong-learning/`：教育可及与终身学习，整理基础教育、成人学习、再培训、基础技能、数字学习和技能迁移。
+- `research-infrastructure-open-science-translation/`：科研基础设施、开放科学与转化，整理开放科学、复现性、研究数据、资助、转化科学和知识扩散。
+- `standards-metrology-quality-infrastructure/`：标准计量与质量基础设施，整理标准、计量、校准、认证、合格评定、质量管理和互操作规范。
+- `cybersecurity-resilience-critical-services/`：网络安全韧性与关键服务，整理网络防御、事件响应、备份恢复、关键服务连续性和数字风险治理。
+- `compute-data-center-ai-infrastructure/`：算力、数据中心与 AI 基础设施，整理算力、芯片、云服务、能源、水、网络、成本和接入治理。
+- `clinical-trials-regulatory-science-translation/`：临床试验、监管科学与转化，整理试验设计、终点、安全监测、真实世界证据和监管证据路径。
 - `insurance-risk-transfer/`：保险与风险转移，整理健康、失业、工伤、残障、灾害、存款、养老金等风险池和保障缺口。
 - `childcare-family-continuity/`：托育与家庭连续性，整理托育可及、费用、质量、早期儿童发展、父母工作连续性和家庭压力。
 - `emergency-preparedness-response/`：应急准备与响应，整理灾害准备、预警、应急通信、急救医疗、安置和恢复。
