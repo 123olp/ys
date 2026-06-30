@@ -62,6 +62,11 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `skin-barrier-wound-healing/` | 皮肤屏障和伤口愈合是外界接口、感染入口、疼痛和照护负担的独立域 |
 | `extracellular-matrix-glycation/` | 细胞外基质、糖化、交联和纤维化决定组织力学与结构性老化 |
 | `lymphatic-glymphatic-clearance/` | 淋巴和脑淋巴清除连接组织液、免疫运输、水肿、睡眠和神经退行 |
+| `gastrointestinal-barrier-absorption/` | 消化、吸收、肠道屏障和胃肠动力决定营养、水分、药物和炎症入口 |
+| `fluid-electrolyte-acid-base-homeostasis/` | 水分、电解质、渗透压和酸碱状态是神经、肌肉、心律和内环境稳定的基础条件 |
+| `thermal-homeostasis-resilience/` | 体温调节、热暴露和寒冷暴露把环境压力直接转化为急性生理风险 |
+| `urogenital-continuity/` | 尿控、尿路感染、盆底、性功能和尊严具有独立功能、睡眠、照护和参与边界 |
+| `reproductive-fertility-continuity/` | 生育力、生殖衰老和生殖自主性影响未来选择权、资源规划和长期人生路径 |
 
 ## 来源信号
 
@@ -102,6 +107,11 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | NCBI wound healing / pressure injury resources | 提示皮肤屏障、伤口愈合、压力损伤和感染入口是外界接口维护域 |
 | Extracellular matrix / advanced glycation end-products aging reviews | 提示组织材料结构、糖化交联和纤维化是结构性衰老和器官功能下降机制 |
 | Lymphatic aging / glymphatic review literature | 提示淋巴、脑膜淋巴和类淋巴清除连接免疫、睡眠、脑废物和神经连续性 |
+| NIDDK digestive diseases / intestinal permeability reviews | 提示消化、吸收、肠道屏障、胃肠动力和吸收不良是营养输入与炎症入口 |
+| Merck Manual / NCBI acid-base and electrolyte physiology | 提示水分、电解质、渗透压和酸碱平衡是内部化学环境的独立稳态层 |
+| CDC Heat Health / NIA hot and cold weather safety | 提示体温调节、热暴露、寒冷暴露和老年脆弱性是环境-生理接口域 |
+| NIDDK urologic diseases / CDC UTI basics | 提示尿控、泌尿感染、盆底、睡眠、照护和尊严具有独立主体持续性价值 |
+| WHO infertility / WHO sexual and reproductive health / NICHD infertility | 提示生殖健康、生育力、不孕、生殖衰老和生殖自主性影响未来选择权 |
 
 Source links:
 
@@ -168,6 +178,21 @@ Source links:
 - https://pmc.ncbi.nlm.nih.gov/articles/PMC9026931/
 - https://pubmed.ncbi.nlm.nih.gov/25947369/
 - https://pmc.ncbi.nlm.nih.gov/articles/PMC6198085/
+- https://www.niddk.nih.gov/health-information/digestive-diseases
+- https://www.niddk.nih.gov/health-information/health-statistics/digestive-diseases
+- https://pmc.ncbi.nlm.nih.gov/articles/PMC6385119/
+- https://www.merckmanuals.com/home/hormonal-and-metabolic-disorders/electrolyte-balance/water-balance
+- https://www.merckmanuals.com/home/hormonal-and-metabolic-disorders/acid-base-balance/overview-of-acid-base-balance
+- https://www.ncbi.nlm.nih.gov/books/NBK507807/
+- https://www.cdc.gov/heat-health/
+- https://www.nia.nih.gov/health/safety/hot-weather-safety-older-adults
+- https://www.nia.nih.gov/health/safety/cold-weather-safety-older-adults
+- https://www.niddk.nih.gov/health-information/urologic-diseases
+- https://www.niddk.nih.gov/health-information/urologic-diseases/bladder-control-problems
+- https://www.cdc.gov/uti/about/index.html
+- https://www.who.int/news-room/fact-sheets/detail/infertility
+- https://www.who.int/health-topics/sexual-and-reproductive-health
+- https://www.nichd.nih.gov/health/topics/infertility
 
 ## 使用规则
 

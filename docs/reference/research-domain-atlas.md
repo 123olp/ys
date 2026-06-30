@@ -48,14 +48,19 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 宿主-微生物生态可稳定 | `microbiome-ecology/` | 菌群结构、代谢物、免疫互作、炎症 | 把相关性写成因果干预结论 |
 | 内源性修复储备可维护 | `stem-cell-reserve-renewal/` | 干细胞储备、生态位、组织更新、再生能力 | 把干细胞激活写成无条件有益 |
 | 身体部件可修复 | `regenerative-medicine/` | 器官功能、组织修复、替代能力 | 整合失败、免疫排斥、功能不持久 |
+| 营养入口可转化为可用输入 | `gastrointestinal-barrier-absorption/` | 消化、吸收、肠道屏障、胃肠动力 | 把胃肠症状、菌群或吸收问题写成个体处方 |
 | 呼吸氧合可持续 | `respiratory-oxygenation/` | 通气、氧合、肺储备、空气暴露 | 把血氧或肺功能写成个体诊断 |
 | 血液运输与止血可平衡 | `blood-oxygen-hemostasis/` | 血红蛋白、氧运、凝血、出血、血栓 | 把血液指标写成用药或急救建议 |
 | 跨器官激素协调可稳定 | `endocrine-hormonal-regulation/` | 激素轴、反馈环、代谢信号、压力反应 | 把激素指标写成补充、处方或寿命判断 |
 | 清除网络可运行 | `lymphatic-glymphatic-clearance/` | 淋巴运输、组织液、脑废物清除、水肿 | 把清除假说写成确定治疗路径 |
+| 内部化学环境可稳定 | `fluid-electrolyte-acid-base-homeostasis/` | 水分、电解质、渗透压、酸碱、内环境 | 把实验室指标写成补液、药物或急救建议 |
+| 温度边界可维持 | `thermal-homeostasis-resilience/` | 体温、散热、出汗、热暴露、寒冷暴露 | 把热病、低体温或补水写成个体急救指南 |
 | 行动输入可维持 | `physical-activity-mobility/` | 身体活动、心肺适能、力量、移动能力 | 把运动表现写成通用处方或忽视损伤恢复 |
 | 循环系统可韧性运行 | `cardiovascular-resilience/` | 血压、血脂、血管、心脏、卒中和心衰风险 | 把单项指标写成确定风险或治疗建议 |
 | 承载结构可持续 | `musculoskeletal-integrity/` | 肌肉、骨骼、关节、跌倒、疼痛和独立性 | 存活但失能、跌倒骨折、长期疼痛 |
 | 外界屏障可维护 | `skin-barrier-wound-healing/` | 皮肤屏障、伤口愈合、感染入口、热调节 | 把伤口或皮肤表现写成诊断和护理方案 |
+| 排泄、性功能和尊严可连续 | `urogenital-continuity/` | 尿控、尿路、盆底、感染、性功能、尊严 | 把症状、感染或性功能写成诊断和治疗建议 |
+| 生殖未来选择权可保留 | `reproductive-fertility-continuity/` | 生育力、配子质量、生殖衰老、生殖自主性 | 把生育力、激素或年龄写成个体选择结论 |
 | 功能可恢复 | `rehabilitation-functioning/` | 活动能力、自理能力、沟通能力、社会参与 | 存活但失能、长期依赖、参与中断 |
 | 癌症风险可压低 | `cancer-control/` | 肿瘤发生、进展、复发、死亡风险 | 耐药、复发、筛查误判、治疗伤害 |
 | 免疫系统可维护 | `immune-maintenance/` | 感染防御、炎症、免疫监视 | 感染、慢性炎症、自身免疫 |
@@ -115,15 +120,20 @@ cellular-reprogramming
   -> extracellular-matrix-glycation
   -> stem-cell-reserve-renewal
   -> regenerative-medicine
+  -> gastrointestinal-barrier-absorption
   -> respiratory-oxygenation
   -> blood-oxygen-hemostasis
   -> endocrine-hormonal-regulation
   -> lymphatic-glymphatic-clearance
+  -> fluid-electrolyte-acid-base-homeostasis
+  -> thermal-homeostasis-resilience
   -> nutrition-metabolic-health
   -> physical-activity-mobility
   -> cardiovascular-resilience
   -> musculoskeletal-integrity
   -> skin-barrier-wound-healing
+  -> urogenital-continuity
+  -> reproductive-fertility-continuity
   -> rehabilitation-functioning
   -> cancer-control
   -> immune-maintenance

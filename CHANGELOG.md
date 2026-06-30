@@ -9,6 +9,7 @@ All notable repository structure changes are recorded here.
 - Added fourth-wave molecular maintenance domain skeletons for genomic stability and DNA repair, telomere maintenance, proteostasis and autophagy, mitochondrial bioenergetics, cellular senescence clearance, microbiome ecology, stem-cell reserve renewal, and renal-hepatic clearance.
 - Added fifth-wave external technology risk domain skeletons for digital identity security, AI agency safety, supply-chain continuity, synthetic biology biosecurity, and space/extreme habitation.
 - Added sixth-wave physiological and structural maintenance domain skeletons for respiratory oxygenation, endocrine hormonal regulation, blood oxygen/hemostasis, skin barrier/wound healing, extracellular matrix/glycation, and lymphatic/glymphatic clearance.
+- Added seventh-wave homeostasis and future-choice domain skeletons for gastrointestinal barrier/absorption, fluid-electrolyte-acid-base homeostasis, thermal homeostasis/resilience, urogenital continuity, and reproductive/fertility continuity.
 
 ## 2026-06-29
 
