@@ -65,6 +65,7 @@ docs/
 │   ├── 0047-add-forty-third-wave-life-event-household-record-continuity-domains.md
 │   ├── 0048-add-forty-fourth-wave-asset-account-transaction-continuity-domains.md
 │   ├── 0049-add-forty-fifth-wave-legal-status-coercive-process-continuity-domains.md
+│   ├── 0050-add-forty-sixth-wave-school-service-continuity-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -343,4 +344,12 @@ docs/
 223. Read `../domains/civil-commitment-involuntary-treatment-rights-continuity/README.md` if you are working on civil commitment, involuntary treatment, crisis evaluation, least-restrictive alternatives, review, or rights continuity.
 224. Read `../domains/court-notice-service-process-default-judgment-continuity/README.md` if you are working on court notice, service of process, hearing notices, response deadlines, default judgments, or procedural-notice continuity.
 225. Read `../domains/criminal-record-relief-collateral-consequences-continuity/README.md` if you are working on criminal records, record relief, expungement, sealing, collateral consequences, reentry eligibility, or record-recovery continuity.
-226. Enter a domain under `../domains/`.
+226. Read `../domains/school-enrollment-attendance-continuity/README.md` if you are working on school enrollment, transfer, attendance, chronic absenteeism, school stability, homelessness protections, or student attendance continuity.
+227. Read `../domains/special-education-iep-504-accommodation-continuity/README.md` if you are working on IDEA, IEP, Section 504, accommodations, related services, assistive supports, transition, or disability participation continuity in schools.
+228. Read `../domains/school-meals-nutrition-access-continuity/README.md` if you are working on school meals, school breakfast/lunch, free/reduced-price access, CEP, summer meals, dietary accommodations, or student nutrition continuity.
+229. Read `../domains/school-health-services-chronic-condition-continuity/README.md` if you are working on school health services, school nursing, chronic condition support, medication, immunization records, emergency action plans, or return-to-school continuity.
+230. Read `../domains/school-transportation-safe-routes-continuity/README.md` if you are working on school buses, safe routes to school, walking/biking safety, disability transportation, distance barriers, or attendance-related transportation continuity.
+231. Read `../domains/school-discipline-exclusion-restraint-continuity/README.md` if you are working on suspensions, expulsions, classroom removals, restraint/seclusion, re-entry, discipline data, or exclusion-risk continuity.
+232. Read `../domains/school-mental-health-counseling-support-continuity/README.md` if you are working on school counseling, school-based mental health, social workers, crisis referral, community care linkage, or student recovery continuity.
+233. Read `../domains/school-climate-bullying-violence-prevention-continuity/README.md` if you are working on school climate, belonging, bullying, harassment, violence prevention, reporting channels, or school safety continuity.
+234. Enter a domain under `../domains/`.

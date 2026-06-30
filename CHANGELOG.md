@@ -4,6 +4,7 @@ All notable repository structure changes are recorded here.
 
 ## 2026-06-30
 
+- Added forty-sixth-wave school-service continuity domain skeletons for school enrollment/attendance, special education IEP/504 accommodations, school meals/nutrition access, school health/chronic conditions, school transportation/safe routes, discipline/exclusion/restraint, school mental health/counseling, and school climate/bullying/violence prevention.
 - Added forty-fifth-wave legal-status, protection, confinement, procedural-notice, and record-relief continuity domain skeletons for citizenship/nationality/statelessness, immigration status/residency/work authorization, asylum/refugee protection status, detention/custody/confinement status, civil commitment/involuntary-treatment rights, court notice/service/default judgment, and criminal-record relief/collateral consequences.
 - Added forty-fourth-wave asset, account, mobility, and transaction-continuity domain skeletons for bank/deposit account access, debt obligations and relief, real-property title/deed records, driver license and vehicle registration, passport/travel documents, contract/subscription billing consent, and notary/document authentication/signature continuity.
 - Added forty-third-wave life-event, household, and family-record continuity domain skeletons for vital records, name-change identity synchronization, address/residency/mail routing, household/dependent eligibility, custody/child support, and kinship/foster/adoption care continuity.

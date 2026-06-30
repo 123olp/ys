@@ -300,6 +300,14 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `civil-commitment-involuntary-treatment-rights-continuity/` | 民事收治和非自愿治疗决定急性危机处理是否同时保留正当程序、最小限制、权利复查和社区恢复 |
 | `court-notice-service-process-default-judgment-continuity/` | 法律通知、送达和缺席判决决定主体是否有真实机会进入程序，而不是在静默程序中丧失资源与权利 |
 | `criminal-record-relief-collateral-consequences-continuity/` | 犯罪记录救济和附带后果决定过去事件是否无限期压制主体工作、住房、证照、投票、家庭和服务入口 |
+| `school-enrollment-attendance-continuity/` | 入学、转学和出勤决定儿童是否能稳定获得学习轮次、校内服务、保护性观察和未来教育路径 |
+| `special-education-iep-504-accommodation-continuity/` | IDEA、IEP、Section 504 和便利决定残障学生功能需求是否能被转化为可执行支持和持续参与 |
+| `school-meals-nutrition-access-continuity/` | 校餐、早餐、午餐、CEP 和暑期餐食决定儿童每日能量、注意力、健康公平和家庭预算缓冲 |
+| `school-health-services-chronic-condition-continuity/` | 学校健康服务和慢性病支持决定健康条件是否会转化为缺勤、急性风险和家庭照护中断 |
+| `school-transportation-safe-routes-continuity/` | 校车和安全通学路线决定学生是否能可靠、安全、低摩擦地到校并保留学习时间 |
+| `school-discipline-exclusion-restraint-continuity/` | 停学、开除、约束隔离和复学决定行为事件是否会变成长期学习排除和制度尾部风险 |
+| `school-mental-health-counseling-support-continuity/` | 学校心理健康和咨询支持决定压力、创伤、危机和孤立是否能在学习系统中被早期接住 |
+| `school-climate-bullying-violence-prevention-continuity/` | 学校气候、欺凌和暴力预防决定学生是否处在可到场、可求助、可归属和可恢复的安全环境 |
 
 ## 来源信号
 
@@ -337,6 +345,14 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | CFPB Managing Someone Else's Money guides | 提示财务授权、受托义务、代表收款人和 trustee 角色有独立防剥削和记录责任 |
 | SSA Representative Payee / Advance Designation resources | 提示公共福利收入在主体无法管理时需要专门代管、报告、监督和变更机制 |
 | NIA getting your affairs in order resources | 提示失能或死亡边界附近的文件、账户、受益人和角色整理是长期事务连续性的前置条件 |
+| ED / NCES / McKinney-Vento attendance and enrollment resources | 提示入学、出勤、长期缺勤、转学和无家可归学生保护是儿童学习轮次与服务入口的连续性条件 |
+| IDEA / OSEP / OCR Section 504 resources | 提示残障学生支持需要把功能需求转化为 IEP、504、相关服务、便利和程序保障 |
+| USDA FNS school meals resources | 提示校餐、早餐、午餐、CEP 和暑期餐食是儿童营养、注意力与家庭资源缓冲的学校基础设施 |
+| CDC school health and chronic condition resources | 提示学校护士、慢病支持、用药、免疫记录和急救计划连接健康安全与学习日连续性 |
+| FHWA / NHTSA school transportation safety resources | 提示校车和安全通学路线把交通可靠性、伤害风险、到校时间和家庭时间成本连接起来 |
+| CRDC / OCR school discipline resources | 提示停学、开除、课堂移除、约束隔离和复学必须进入民权、残障和学习日损失审查 |
+| SAMHSA / CDC / ED school mental health resources | 提示学校心理健康支持是压力、创伤、危机、求助能力和学习参与的恢复层 |
+| StopBullying.gov / CDC youth violence / OCR harassment resources | 提示欺凌、骚扰、暴力和学校气候会直接影响出勤、心理安全、归属感和学习连续性 |
 | WHO Antimicrobial Resistance | 提示耐药性会侵蚀现代医学和长期感染控制底座 |
 | WHO Vision and Hearing resources | 提示感官系统是主体感知、沟通和行动连续性的基础 |
 | CDC Sleep / NHLBI Sleep resources | 提示睡眠不足和节律失调会影响认知、慢病、心理和恢复能力 |
@@ -1234,6 +1250,21 @@ Source links:
 - https://www.benefits.gov/
 - https://www.medicaid.gov/medicaid/eligibility/index.html
 - https://www.medicaid.gov/medicaid/enrollment-strategies/index.html
+- https://nces.ed.gov/
+- https://nche.ed.gov/legislation/mckinney-vento/
+- https://sites.ed.gov/idea/
+- https://osepideasthatwork.org/
+- https://www.ed.gov/about/ed-offices/ocr
+- https://www.fns.usda.gov/nslp
+- https://www.fns.usda.gov/sbp/school-breakfast-program
+- https://www.fns.usda.gov/cn/community-eligibility-provision
+- https://www.cdc.gov/healthy-schools/
+- https://www.cdc.gov/healthy-schools/mental-health/
+- https://highways.dot.gov/safety/pedestrian-bicyclist/safe-routes-school
+- https://www.nhtsa.gov/road-safety/school-bus-safety
+- https://civilrightsdata.ed.gov/
+- https://www.stopbullying.gov/
+- https://www.cdc.gov/youth-violence/
 
 ## 使用规则
 

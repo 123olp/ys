@@ -214,6 +214,14 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 强制治疗必须保护权利连续性 | `civil-commitment-involuntary-treatment-rights-continuity/` | 非自愿评估、民事收治、强制治疗、最小限制、复查、出院转接 | 危机干预若缺少复查、同意、语言、残障权利和社区转接，会把安全措施变成失权链条 |
 | 程序通知必须让主体能回应 | `court-notice-service-process-default-judgment-continuity/` | 法律通知、送达、听证通知、回应期限、缺席判决、执行后果 | 未收到或无法理解程序会导致工资、住房、债务、家庭权利和信用被静默剥夺 |
 | 记录救济必须限制长期尾部后果 | `criminal-record-relief-collateral-consequences-continuity/` | 刑事记录、封存清除、记录更正、附带后果、重返资格 | 过去事件通过记录和附带后果长期截断工作、住房、证照、投票、家庭和服务入口 |
+| 儿童必须能稳定进入学校并持续出勤 | `school-enrollment-attendance-continuity/` | 入学、转学、出勤、长期缺勤、无家可归学生保护、学籍交接 | 入学失败、长期缺勤或学籍交接断裂会削弱学习轮次、校内服务入口和未来教育路径 |
+| 残障学生必须获得可执行支持 | `special-education-iep-504-accommodation-continuity/` | IDEA、IEP、Section 504、合理便利、相关服务、评估、转衔 | 功能限制若没有转化为学校支持，会变成学习排除、纪律风险、家庭负担和长期能力损耗 |
+| 学校餐食必须支撑每日营养 | `school-meals-nutrition-access-continuity/` | 校餐、早餐、午餐、免费/减价资格、CEP、暑期餐食、特殊饮食 | 饥饿、营养缺口、餐食债务或假期断点会削弱注意力、健康恢复和家庭资源韧性 |
+| 学生健康条件必须进入学校运行系统 | `school-health-services-chronic-condition-continuity/` | 学校护士、慢病支持、用药、免疫记录、急救计划、返校支持 | 慢病和急性风险若不能在学校被支持，会转化为缺勤、急性事件和学习日损耗 |
+| 到校路径必须安全可靠 | `school-transportation-safe-routes-continuity/` | 校车、通学路线、步行骑行安全、交通资格、无障碍交通 | 通学不可达或不安全会压缩出勤、学习时间、家庭工作连续性和儿童安全 |
+| 纪律系统必须避免排除性长尾 | `school-discipline-exclusion-restraint-continuity/` | 停学、开除、课堂移除、约束隔离、复学、纪律民权数据 | 排除性纪律会把行为、残障、创伤或社会风险转化为学习日损失和制度尾部后果 |
+| 学校必须提供心理恢复入口 | `school-mental-health-counseling-support-continuity/` | 学校咨询、社工、心理师、危机转介、社区照护衔接、隐私同意 | 心理支持缺口会让压力、创伤、孤立和危机压缩出勤、学习参与和求助能力 |
+| 学校环境必须安全可归属 | `school-climate-bullying-violence-prevention-continuity/` | 学校气候、归属感、欺凌、骚扰、暴力预防、报告机制、民权边界 | 欺凌、骚扰、暴力和不可信报告机制会制造恐惧缺勤、慢性压力和长期关系损耗 |
 | 栖居空间可保护生命 | `building-fire-life-safety-codes/` | 建筑规范、消防规范、疏散、烟雾报警、无障碍、结构韧性 | 居住、照护、学习、工作和公共空间成为火灾、烟雾、结构和疏散风险源 |
 | 关键物质系统可制造修复 | `manufacturing-repair-capacity/` | 制造、维修、维护、备件、质量、本地生产、关键设备恢复 | 设备损坏、备件短缺、质量缺陷和生产能力不足导致服务与工具系统失效 |
 | 公共预算可转化为服务 | `public-procurement-contracting-capacity/` | 公共采购、合同、供应商管理、应急采购、透明度、交付验收 | 有预算和政策但采购失败、合同失效、腐败、延误或劣质交付 |
@@ -521,6 +529,14 @@ risk-engineering
   -> civil-commitment-involuntary-treatment-rights-continuity
   -> court-notice-service-process-default-judgment-continuity
   -> criminal-record-relief-collateral-consequences-continuity
+  -> school-enrollment-attendance-continuity
+  -> special-education-iep-504-accommodation-continuity
+  -> school-meals-nutrition-access-continuity
+  -> school-health-services-chronic-condition-continuity
+  -> school-transportation-safe-routes-continuity
+  -> school-discipline-exclusion-restraint-continuity
+  -> school-mental-health-counseling-support-continuity
+  -> school-climate-bullying-violence-prevention-continuity
   -> community-resource-navigation
   -> social-determinants-community-vulnerability
   -> public-service-design-accessibility

@@ -58,6 +58,7 @@ docs/
 │   ├── 0047-add-forty-third-wave-life-event-household-record-continuity-domains.md
 │   ├── 0048-add-forty-fourth-wave-asset-account-transaction-continuity-domains.md
 │   ├── 0049-add-forty-fifth-wave-legal-status-coercive-process-continuity-domains.md
+│   ├── 0050-add-forty-sixth-wave-school-service-continuity-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -165,6 +166,7 @@ docs/
 - `domains/vital-records-life-event-continuity/`、`domains/name-change-identity-record-synchronization-continuity/`、`domains/address-residency-mail-service-continuity/`、`domains/household-composition-dependent-eligibility-continuity/`、`domains/family-law-custody-child-support-continuity/` 和 `domains/kinship-foster-adoption-care-continuity/`：第四十三波正式研究域，分别承载生命事件记录、姓名变更同步、地址居住地邮件路由、家庭组成资格关系、家庭法监护抚养、亲属照护寄养收养。
 - `domains/banking-deposit-account-access-continuity/`、`domains/debt-obligation-collection-relief-continuity/`、`domains/real-property-title-deed-record-continuity/`、`domains/driver-license-vehicle-registration-continuity/`、`domains/passport-travel-document-mobility-continuity/`、`domains/contract-subscription-billing-consent-continuity/` 和 `domains/notary-document-authentication-signature-continuity/`：第四十四波正式研究域，分别承载银行账户存款访问、债务义务催收救济、不动产权属地契、驾照车辆登记、护照旅行证件、合同订阅账单、公证文件认证签名连续性。
 - `domains/citizenship-nationality-statelessness-continuity/`、`domains/immigration-status-residency-work-authorization-continuity/`、`domains/asylum-refugee-protection-status-continuity/`、`domains/detention-custody-confinement-status-continuity/`、`domains/civil-commitment-involuntary-treatment-rights-continuity/`、`domains/court-notice-service-process-default-judgment-continuity/` 和 `domains/criminal-record-relief-collateral-consequences-continuity/`：第四十五波正式研究域，分别承载公民国籍无国籍、移民居留工作授权、庇护难民保护、拘押羁押监管状态、非自愿治疗权利、法院通知缺席判决和犯罪记录附带后果连续性。
+- `domains/school-enrollment-attendance-continuity/`、`domains/special-education-iep-504-accommodation-continuity/`、`domains/school-meals-nutrition-access-continuity/`、`domains/school-health-services-chronic-condition-continuity/`、`domains/school-transportation-safe-routes-continuity/`、`domains/school-discipline-exclusion-restraint-continuity/`、`domains/school-mental-health-counseling-support-continuity/` 和 `domains/school-climate-bullying-violence-prevention-continuity/`：第四十六波正式研究域，分别承载入学出勤、特殊教育 IEP/504、校餐营养、学校健康服务、通学安全、纪律排除约束、学校心理健康和学校气候欺凌暴力预防连续性。
 - `reference/research-model-visualization-toolkit.md`：沉淀科研论文阅读、文献脊梁、模型工具、可视化标准和 Human Infra 定量页面实现路线。
 - `reference/source-card-system.md`：定义论文、书籍、工具、案例、标准和数据集进入项目之前的资料卡片制度。
 - `reference/domain-map.md`：定义根项目与子域的边界、迁移切片、主动不做和验证点。

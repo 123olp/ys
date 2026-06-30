@@ -846,6 +846,24 @@ Human Infra 不能被设计成更精密的压榨系统。
 - 不帮助伪造文件、隐藏身份、绕过边境、规避执法、躲避送达、规避拘押、干扰司法、逃脱监管、绕过 I-9/E-Verify、欺骗雇主/房东/机构、控制他人、强迫治疗、定位监控、制造证据、骚扰当事人或暴露受保护对象身份。
 - 不替代 USCIS、State Department、UNHCR、IOM、EOIR、ICE、BOP、法院、律师、法律援助、拘押机构、医疗人员、危机服务、残障权利机构、社会工作者、受害者服务、记录救济机构或官方申诉渠道。
 
+## 学校服务、出勤、残障支持、营养、健康、通学、安全与心理支持连续性边界
+
+`school-enrollment-attendance-continuity`、`special-education-iep-504-accommodation-continuity`、`school-meals-nutrition-access-continuity`、`school-health-services-chronic-condition-continuity`、`school-transportation-safe-routes-continuity`、`school-discipline-exclusion-restraint-continuity`、`school-mental-health-counseling-support-continuity` 和 `school-climate-bullying-violence-prevention-continuity` 关注学校服务如何影响儿童学习轮次、健康安全、残障参与、营养、通学、心理恢复、纪律排除风险和归属感，不是个人入学、IEP/504、校餐、校医、纪律、欺凌、心理危机、教育、医疗或法律服务入口。
+
+可以做：
+
+- 整理 ED、NCES、McKinney-Vento/NCHE、IDEA/OSEP、OCR、USDA FNS、CDC、SAMHSA、FHWA、NHTSA、StopBullying.gov、州和地方教育机构资料中的机制、对象、变量和边界。
+- 比较入学出勤、IEP/504、校餐、学校健康服务、通学交通、纪律排除、学校心理健康和学校气候如何分别影响学习轮次、缺勤、注意力、健康安全、家庭负担、参与能力和未来选择权。
+- 记录儿童隐私、教育记录、健康资料、残障资料、纪律资料、家庭地址、移民身份、心理健康、欺凌事件、报告义务、民权、反歧视和个案建议边界，服务后续资料卡片与变量建模。
+
+不能做：
+
+- 不提供个人入学、转学、出勤申诉、truancy、学区、IEP、504、评估申请、due process、校餐申请、福利申请、用药、急救、返校许可、校车资格、路线、纪律申诉、欺凌投诉、威胁判断、心理治疗、危机处置、安全计划、教育、医疗或法律建议。
+- 不判断学生是否有资格入学、是否长期缺勤、是否符合 IDEA/504、是否应获得某项便利、是否应停学开除、是否需要心理危机干预、是否存在欺凌或违法歧视、是否应报告给某机构或案件胜率。
+- 不生成个人学校申请、IEP/504 文件、投诉、申诉、due process、纪律答辩、欺凌投诉、心理危机材料、医疗表格、法律文件、校餐/福利申请或个案策略。
+- 不收集、复制、处理或要求学生姓名、住址、路线、定位、聊天记录、教育记录、健康记录、残障记录、心理危机资料、纪律记录、家庭收入、移民身份或事件细节。
+- 不替代学校、学区、州教育机构、家长、学生、特殊教育团队、学校护士、医生、心理健康服务、儿童保护、OCR、StopBullying.gov、交通部门、律师、危机服务、执法、急救或官方投诉渠道。
+
 ## 数据与证据边界
 
 - 原始数据、清洗数据和人工判断必须分层保存。

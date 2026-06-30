@@ -281,6 +281,14 @@
 - `civil-commitment-involuntary-treatment-rights-continuity/`：民事收治、非自愿治疗与权利连续性，整理危机评估、强制治疗、最小限制、复查、出院转接和权利保护。
 - `court-notice-service-process-default-judgment-continuity/`：法院通知、送达与缺席判决连续性，整理法律通知、送达、听证通知、回应期限、缺席判决和执行后果。
 - `criminal-record-relief-collateral-consequences-continuity/`：犯罪记录救济与附带后果连续性，整理刑事记录、封存清除、记录更正、附带后果和重返资格。
+- `school-enrollment-attendance-continuity/`：学校入学与出勤连续性，整理入学、转学、出勤、长期缺勤、无家可归学生保护和学籍交接。
+- `special-education-iep-504-accommodation-continuity/`：特殊教育、IEP 与 504 便利连续性，整理 IDEA、IEP、Section 504、合理便利、相关服务、评估和转衔。
+- `school-meals-nutrition-access-continuity/`：校餐与营养可及连续性，整理校餐、早餐、午餐、免费/减价资格、CEP、暑期餐食和特殊饮食安排。
+- `school-health-services-chronic-condition-continuity/`：学校健康服务与慢性病连续性，整理学校护士、慢病支持、用药、免疫记录、急救计划和返校支持。
+- `school-transportation-safe-routes-continuity/`：通学交通与安全路线连续性，整理校车、步行骑行安全路线、交通资格、无障碍交通和距离成本。
+- `school-discipline-exclusion-restraint-continuity/`：学校纪律、排除与约束隔离连续性，整理停学、开除、课堂移除、约束隔离、复学和纪律民权数据。
+- `school-mental-health-counseling-support-continuity/`：学校心理健康与咨询支持连续性，整理学校咨询、社工、心理师、危机转介、社区照护衔接和隐私同意。
+- `school-climate-bullying-violence-prevention-continuity/`：学校气候、欺凌与暴力预防连续性，整理学校气候、归属感、欺凌、骚扰、暴力预防、报告机制和民权边界。
 - `supply-chain-continuity/`：供应链连续性，整理关键物资、服务、物流、替代路径和恢复时间。
 - `synthetic-biology-biosecurity/`：合成生物学与生物安全，整理双重用途、生物安全、生物安保和治理边界。
 - `space-extreme-habitation/`：空间与极端栖居，整理辐射、微重力、隔离、闭环资源和远程医疗风险。
