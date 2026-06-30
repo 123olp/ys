@@ -1013,6 +1013,24 @@ Human Infra 不能被设计成更精密的压榨系统。
 - 不帮助伪造、篡改、借用、购买、出售、隐藏或滥用账户、债务、产权、地契、车辆、驾照、护照、旅行、签名、公证、apostille、合同、账单、订阅、电子签名、证书、印章或时间戳记录。
 - 不替代银行、信用社、FDIC、NCUA、CFPB、FTC、法院、律师、财务顾问、税务专业人士、房地产专业人士、title company、DMV、State Department、DHS、领事机构、公证员、文件签发机构、消费者保护机构或官方申诉渠道。
 
+## 旅行、临时住宿与跨境移动执行连续性边界
+
+`long-distance-travel-booking-itinerary-continuity`、`air-passenger-rights-disruption-refund-continuity`、`aviation-security-screening-identity-continuity`、`baggage-personal-property-travel-continuity`、`lodging-temporary-accommodation-access-continuity`、`travel-advisory-consular-assistance-continuity`、`travel-health-preparedness-continuity` 和 `customs-border-entry-declaration-continuity` 关注主体离家后如何通过行程、航空中断规则、安检、行李物品、临时住宿、海外求助、旅行健康准备和边境申报维持行动链，不是个人旅行规划、安检、住宿、医疗、签证、移民、海关、保险或法律服务入口。
+
+可以做：
+
+- 整理 U.S. DOT、TSA、DHS REAL ID、State Department、CDC Travelers' Health、CBP、FTC、ADA.gov、FEMA 和官方消费者保护资料的机制、对象、变量和边界。
+- 比较行程、航班中断、安检身份核验、行李物品、临时住宿、领事协助、旅行健康准备和海关边境申报如何分别影响时间、现金、药品、证件、睡眠、求助、健康暴露和跨境记录。
+- 记录隐私、位置安全、可访问性、消费者保护、公共住宿、旅行健康、领事协助能力边界、边境申报、反规避和个案建议边界，服务后续资料卡片与变量建模。
+
+不能做：
+
+- 不提供个人路线推荐、票务套利、抢票、航班选择、退款赔偿、投诉文案、安检通过策略、违禁品携带、住宿选择、旅行安全、撤离路线、旅行医学、疫苗、处方、医疗转运、签证、移民、海关申报、保险、税务或法律建议。
+- 不判断某人是否应旅行、是否安全、是否可入境、是否需申报、是否能通过安检、是否可携带某物、是否需要某疫苗、是否能获赔或是否应获得领事协助。
+- 不生成订票、退款、投诉、安检、住宿、领事、医疗、签证、移民、海关、保险或法律个案策略。
+- 不帮助逃票、身份规避、安检规避、机场安全漏洞利用、走私、虚假申报、违禁品隐藏、服务条款规避、酒店入住规避、占住、逃费、骚扰、跟踪、位置暴露或敏感旅行数据收集。
+- 不替代航空公司、U.S. DOT、TSA、DHS、State Department、使领馆、CDC、旅行医学专业人士、CBP、FTC、ADA.gov、FEMA、住宿服务商、保险人、律师、医疗专业人士或官方申诉渠道。
+
 ## 法律状态、保护身份、强制程序与记录救济连续性边界
 
 `citizenship-nationality-statelessness-continuity`、`immigration-status-residency-work-authorization-continuity`、`asylum-refugee-protection-status-continuity`、`detention-custody-confinement-status-continuity`、`civil-commitment-involuntary-treatment-rights-continuity`、`court-notice-service-process-default-judgment-continuity` 和 `criminal-record-relief-collateral-consequences-continuity` 关注国籍、居留工作授权、保护身份、拘押状态、非自愿治疗、法院程序通知和犯罪记录救济如何影响主体制度承认、自由边界、服务入口和未来选择权，不是个人公民身份、移民、庇护、拘押、强制治疗、法院、刑事记录、税务、医疗或法律服务入口。

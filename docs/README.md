@@ -85,6 +85,7 @@ docs/
 │   ├── 0067-add-sixty-third-wave-human-factors-operational-reliability-domains.md
 │   ├── 0068-add-sixty-fourth-wave-mental-health-neurodevelopment-functioning-domains.md
 │   ├── 0069-add-sixty-fifth-wave-companion-service-animal-continuity-domains.md
+│   ├── 0070-add-sixty-sixth-wave-travel-lodging-border-continuity-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -362,6 +363,14 @@ docs/
 221. Read `../domains/real-property-title-deed-record-continuity/README.md` if you are working on property title, deeds, land records, tax assessor records, title insurance, liens, mortgages, or real-property record continuity.
 222. Read `../domains/driver-license-vehicle-registration-continuity/README.md` if you are working on driver's licenses, state IDs, REAL ID, vehicle title, registration, plates, DMV records, or personal mobility credential continuity.
 223. Read `../domains/passport-travel-document-mobility-continuity/README.md` if you are working on passports, travel documents, consular services, emergency documents, travel advisories, or cross-border mobility continuity.
+224. Read `../domains/long-distance-travel-booking-itinerary-continuity/README.md` if you are working on long-distance travel booking, itinerary records, confirmations, cancellations, changes, notifications, or travel-service handoffs.
+225. Read `../domains/air-passenger-rights-disruption-refund-continuity/README.md` if you are working on flight delays, cancellations, refunds, denied boarding, tarmac delays, air-travel disability access, or aviation consumer protection.
+226. Read `../domains/aviation-security-screening-identity-continuity/README.md` if you are working on TSA screening, REAL ID, passenger support, identity verification, accessible screening, or airport security-screening continuity.
+227. Read `../domains/baggage-personal-property-travel-continuity/README.md` if you are working on checked baggage, carry-on property, delayed/lost/damaged baggage, critical medicines/documents, or travel personal-property continuity.
+228. Read `../domains/lodging-temporary-accommodation-access-continuity/README.md` if you are working on hotels, temporary lodging, check-in requirements, accessibility rooms, disaster lodging, vacation-rental scams, or accommodation access.
+229. Read `../domains/travel-advisory-consular-assistance-continuity/README.md` if you are working on travel advisories, STEP, embassies, consular assistance, emergency passports, overseas crisis communication, or citizen services abroad.
+230. Read `../domains/travel-health-preparedness-continuity/README.md` if you are working on travelers' health, destination health risks, travel vaccines, chronic-condition travel preparation, medicines, travel clinics, or overseas medical access.
+231. Read `../domains/customs-border-entry-declaration-continuity/README.md` if you are working on customs declarations, border entry, I-94 records, prohibited/restricted items, agriculture inspection, duties, or trusted traveler systems.
 224. Read `../domains/contract-subscription-billing-consent-continuity/README.md` if you are working on contracts, subscriptions, automatic renewal, billing, cancellation, negative options, ongoing consent, or transaction-friction continuity.
 225. Read `../domains/notary-document-authentication-signature-continuity/README.md` if you are working on notarization, electronic signatures, digital signatures, document authentication, apostilles, or institutional recognition of signed records.
 226. Read `../domains/citizenship-nationality-statelessness-continuity/README.md` if you are working on citizenship, nationality, naturalization, consular protection, statelessness, nationality proof, or national-membership continuity.

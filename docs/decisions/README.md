@@ -82,3 +82,4 @@ Current decisions:
 - `0067-add-sixty-third-wave-human-factors-operational-reliability-domains.md`
 - `0068-add-sixty-fourth-wave-mental-health-neurodevelopment-functioning-domains.md`
 - `0069-add-sixty-fifth-wave-companion-service-animal-continuity-domains.md`
+- `0070-add-sixty-sixth-wave-travel-lodging-border-continuity-domains.md`

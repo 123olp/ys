@@ -288,6 +288,14 @@
 - `real-property-title-deed-record-continuity/`：不动产权属、地契与土地记录连续性，整理地契、产权链、抵押、税费、留置和地方土地记录。
 - `driver-license-vehicle-registration-continuity/`：驾照、车辆登记与个人移动资格连续性，整理驾驶资格、州证件、REAL ID、车辆 title、登记、车牌和地址同步。
 - `passport-travel-document-mobility-continuity/`：护照、旅行证件与跨境移动连续性，整理护照、旅行证件、领事服务、紧急证件、旅行警示和跨境选择权。
+- `long-distance-travel-booking-itinerary-continuity/`：长距离旅行预订与行程连续性，整理订票、确认号、行程单、改签、取消、通知和跨服务衔接。
+- `air-passenger-rights-disruption-refund-continuity/`：航空旅客权利、中断与退款连续性，整理航班延误、取消、退款、拒载、停机坪延误、残障航空旅行和消费者投诉。
+- `aviation-security-screening-identity-continuity/`：航空安检、身份核验与筛查连续性，整理 TSA 安检、身份核验、REAL ID、旅客支持和可访问筛查。
+- `baggage-personal-property-travel-continuity/`：行李与旅行个人物品连续性，整理托运行李、随身物品、延误/丢失/损坏行李、关键药品文件和个人物品恢复。
+- `lodging-temporary-accommodation-access-continuity/`：临时住宿与住宿接入连续性，整理酒店、短租、入住资格、取消规则、无障碍客房、灾害临时安置和住宿诈骗。
+- `travel-advisory-consular-assistance-continuity/`：旅行警示与领事协助连续性，整理旅行警示、海外登记、领事协助、紧急证件和海外危机通信。
+- `travel-health-preparedness-continuity/`：旅行健康准备连续性，整理目的地健康资料、旅行健康风险、疫苗与预防资料、慢病旅行准备、药品供应和境外医疗可及。
+- `customs-border-entry-declaration-continuity/`：海关、边境入境与申报连续性，整理海关申报、边境检查、I-94、受限物品、农业检疫、关税和可信旅客系统。
 - `contract-subscription-billing-consent-continuity/`：合同、订阅、账单与持续同意连续性，整理合同、自动续费、账单、取消、争议、退款和持续同意。
 - `notary-document-authentication-signature-continuity/`：公证、文件认证与签名连续性，整理公证、电子签名、数字签名、apostille、文件认证和跨机构承认。
 - `citizenship-nationality-statelessness-continuity/`：公民身份、国籍与无国籍连续性，整理公民身份、自然化、国籍证明、领事保护、无国籍风险和身份恢复。

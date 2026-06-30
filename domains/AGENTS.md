@@ -323,6 +323,30 @@ domains/
 ├── passport-travel-document-mobility-continuity/
 │   ├── AGENTS.md
 │   └── README.md
+├── long-distance-travel-booking-itinerary-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── air-passenger-rights-disruption-refund-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── aviation-security-screening-identity-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── baggage-personal-property-travel-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── lodging-temporary-accommodation-access-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── travel-advisory-consular-assistance-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── travel-health-preparedness-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── customs-border-entry-declaration-continuity/
+│   ├── AGENTS.md
+│   └── README.md
 ├── contract-subscription-billing-consent-continuity/
 │   ├── AGENTS.md
 │   └── README.md
@@ -1332,6 +1356,7 @@ domains/
 - `family-medical-leave-job-protection-continuity/`、`paid-sick-family-leave-wage-replacement-continuity/`、`pregnancy-parental-work-continuity/`、`workplace-accommodation-return-to-work-continuity/`、`disability-income-work-capacity-benefit-continuity/` 和 `family-caregiver-respite-work-continuity/` 负责家庭医疗假岗位保护、带薪病假/家庭假工资替代、孕产育儿工作连续性、合理便利复工、残障收入与工作能力福利、家庭照护者喘息与工作连续性这些工作中断与照护事件连续性条件。
 - `vital-records-life-event-continuity/`、`name-change-identity-record-synchronization-continuity/`、`address-residency-mail-service-continuity/`、`household-composition-dependent-eligibility-continuity/`、`family-law-custody-child-support-continuity/` 和 `kinship-foster-adoption-care-continuity/` 负责生命事件记录、姓名变更同步、地址居住地邮件路由、家庭组成资格关系、家庭法监护抚养、亲属照护寄养收养这些家庭事实与制度记录连续性条件。
 - `banking-deposit-account-access-continuity/`、`debt-obligation-collection-relief-continuity/`、`real-property-title-deed-record-continuity/`、`driver-license-vehicle-registration-continuity/`、`passport-travel-document-mobility-continuity/`、`contract-subscription-billing-consent-continuity/` 和 `notary-document-authentication-signature-continuity/` 负责银行账户存款访问、债务义务催收救济、不动产权属地契、驾照车辆登记、护照旅行证件、合同订阅账单、公证文件认证签名这些资源控制、移动资格与交易执行连续性条件。
+- `long-distance-travel-booking-itinerary-continuity/`、`air-passenger-rights-disruption-refund-continuity/`、`aviation-security-screening-identity-continuity/`、`baggage-personal-property-travel-continuity/`、`lodging-temporary-accommodation-access-continuity/`、`travel-advisory-consular-assistance-continuity/`、`travel-health-preparedness-continuity/` 和 `customs-border-entry-declaration-continuity/` 负责长距离旅行预订行程、航空中断退款、安检身份核验、行李个人物品、临时住宿、旅行警示领事协助、旅行健康准备和海关边境申报这些离家移动执行连续性条件。
 - `citizenship-nationality-statelessness-continuity/`、`immigration-status-residency-work-authorization-continuity/`、`asylum-refugee-protection-status-continuity/`、`detention-custody-confinement-status-continuity/`、`civil-commitment-involuntary-treatment-rights-continuity/`、`court-notice-service-process-default-judgment-continuity/` 和 `criminal-record-relief-collateral-consequences-continuity/` 负责公民国籍无国籍、移民居留工作授权、庇护难民保护、拘押羁押监管状态、非自愿治疗权利、法院通知缺席判决和犯罪记录附带后果这些法律状态与强制程序连续性条件。
 - `school-enrollment-attendance-continuity/`、`special-education-iep-504-accommodation-continuity/`、`school-meals-nutrition-access-continuity/`、`school-health-services-chronic-condition-continuity/`、`school-transportation-safe-routes-continuity/`、`school-discipline-exclusion-restraint-continuity/`、`school-mental-health-counseling-support-continuity/` 和 `school-climate-bullying-violence-prevention-continuity/` 负责入学出勤、特殊教育 IEP/504、校餐营养、学校健康服务、通学安全、纪律排除约束、学校心理健康和学校气候欺凌暴力预防这些学校服务连续性条件。
 - `postsecondary-admissions-transfer-articulation-continuity/`、`student-financial-aid-grant-scholarship-continuity/`、`academic-advising-degree-progress-continuity/`、`campus-basic-needs-student-support-continuity/`、`campus-disability-accommodations-accessibility-continuity/`、`campus-mental-health-crisis-student-support-continuity/`、`campus-safety-title-ix-clery-continuity/` 和 `international-student-sevis-status-continuity/` 负责高等教育入学转学衔接、学生资助奖助学金、学业指导学位进度、校园基本需求、校园残障便利、校园心理危机支持、校园安全 Title IX/Clery 和国际学生 SEVIS 身份这些高等教育学生生命周期连续性条件。
@@ -1371,6 +1396,7 @@ domains/
 - `family-medical-leave-job-protection-continuity/`、`paid-sick-family-leave-wage-replacement-continuity/`、`pregnancy-parental-work-continuity/`、`workplace-accommodation-return-to-work-continuity/`、`disability-income-work-capacity-benefit-continuity/` 和 `family-caregiver-respite-work-continuity/` 负责工作中断与照护事件连续性的证据边界，不提供个人请假、带薪假、孕产育儿、合理便利、残障福利、照护服务、医疗、法律、HR、税务、保险、福利申请、申诉或雇主合规建议。
 - `vital-records-life-event-continuity/`、`name-change-identity-record-synchronization-continuity/`、`address-residency-mail-service-continuity/`、`household-composition-dependent-eligibility-continuity/`、`family-law-custody-child-support-continuity/` 和 `kinship-foster-adoption-care-continuity/` 负责家庭事实与制度记录连续性的证据边界，不提供个人证件办理、改名、地址变更、税务/福利 household 判断、监护权、子女抚养、寄养、收养、法律、移民、福利、保险、学校、法院或个案策略建议。
 - `banking-deposit-account-access-continuity/`、`debt-obligation-collection-relief-continuity/`、`real-property-title-deed-record-continuity/`、`driver-license-vehicle-registration-continuity/`、`passport-travel-document-mobility-continuity/`、`contract-subscription-billing-consent-continuity/` 和 `notary-document-authentication-signature-continuity/` 负责资源控制、移动资格与交易执行连续性的证据边界，不提供个人银行、债务、破产、房产、车辆、驾驶、护照、签证、移民、订阅取消、合同审查、公证、apostille、电子签名、法律、金融或个案策略建议。
+- `long-distance-travel-booking-itinerary-continuity/`、`air-passenger-rights-disruption-refund-continuity/`、`aviation-security-screening-identity-continuity/`、`baggage-personal-property-travel-continuity/`、`lodging-temporary-accommodation-access-continuity/`、`travel-advisory-consular-assistance-continuity/`、`travel-health-preparedness-continuity/` 和 `customs-border-entry-declaration-continuity/` 负责旅行、住宿、安检、领事、健康和边境移动连续性的证据边界，不提供路线推荐、票务套利、退款赔偿、安检规避、违禁品携带、住宿选择、旅行安全、医疗、签证、移民、海关申报、保险、法律或个案策略建议。
 - `citizenship-nationality-statelessness-continuity/`、`immigration-status-residency-work-authorization-continuity/`、`asylum-refugee-protection-status-continuity/`、`detention-custody-confinement-status-continuity/`、`civil-commitment-involuntary-treatment-rights-continuity/`、`court-notice-service-process-default-judgment-continuity/` 和 `criminal-record-relief-collateral-consequences-continuity/` 负责法律状态、保护身份、强制程序与记录救济连续性的证据边界，不提供公民身份、国籍、移民、庇护、拘押、非自愿治疗、法院程序、犯罪记录救济、刑事、税务、医疗或法律建议。
 - `school-enrollment-attendance-continuity/`、`special-education-iep-504-accommodation-continuity/`、`school-meals-nutrition-access-continuity/`、`school-health-services-chronic-condition-continuity/`、`school-transportation-safe-routes-continuity/`、`school-discipline-exclusion-restraint-continuity/`、`school-mental-health-counseling-support-continuity/` 和 `school-climate-bullying-violence-prevention-continuity/` 负责学校服务连续性的证据边界，不提供个人入学、出勤、IEP/504、校餐、校医、通学路线、纪律申诉、心理危机、欺凌投诉、教育、医疗、法律或个案建议。
 - `postsecondary-admissions-transfer-articulation-continuity/`、`student-financial-aid-grant-scholarship-continuity/`、`academic-advising-degree-progress-continuity/`、`campus-basic-needs-student-support-continuity/`、`campus-disability-accommodations-accessibility-continuity/`、`campus-mental-health-crisis-student-support-continuity/`、`campus-safety-title-ix-clery-continuity/` 和 `international-student-sevis-status-continuity/` 负责高等教育学生生命周期连续性的证据边界，不提供个人申请、转学、资助、选课、住宿、残障便利、心理危机、Title IX、校园安全、SEVIS、移民、税务、医疗、法律或个案建议。

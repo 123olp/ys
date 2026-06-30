@@ -332,6 +332,14 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `real-property-title-deed-record-continuity/` | 不动产权属、地契和土地记录决定居住空间、长期资产、继承、融资和灾后恢复是否有可证明资源底座 |
 | `driver-license-vehicle-registration-continuity/` | 驾照和车辆登记决定主体地方移动资格、车辆资产和道路系统使用权是否能跨地址、州和能力变化持续同步 |
 | `passport-travel-document-mobility-continuity/` | 护照和旅行证件决定主体跨境医疗、工作、学习、家庭团聚、撤离和人道服务选择权是否可执行 |
+| `long-distance-travel-booking-itinerary-continuity/` | 长距离旅行预订和行程记录决定主体离家后的交通、住宿、医疗、照护、工作和回程任务是否能被同一行动脚本协调 |
+| `air-passenger-rights-disruption-refund-continuity/` | 航班延误、取消、退款、拒载和残障航空旅行决定航空中断能否被恢复，而不是转化为时间、现金和医疗窗口损失 |
+| `aviation-security-screening-identity-continuity/` | 航空安检和身份核验决定主体、证件、身体、医疗设备、服务动物和辅助需求能否通过安全筛查入口 |
+| `baggage-personal-property-travel-continuity/` | 行李和旅行个人物品决定离家后的证件、药品、卫生、工作设备、衣物和照护用品是否持续可用 |
+| `lodging-temporary-accommodation-access-continuity/` | 临时住宿决定主体离家后是否拥有睡眠、卫生、药物保存、设备充电、家庭协调和再行动的恢复基地 |
+| `travel-advisory-consular-assistance-continuity/` | 旅行警示、海外登记和领事协助决定跨境风险、海外危机通信、紧急证件和家庭通知是否可接入 |
+| `travel-health-preparedness-continuity/` | 旅行健康准备决定目的地疾病、慢病、药品、医疗设备、保险和境外医疗可及性是否提前进入风险治理 |
+| `customs-border-entry-declaration-continuity/` | 海关申报和边境入境记录决定主体、物品、药品、食品、设备和后续身份记录是否能通过边境门槛 |
 | `contract-subscription-billing-consent-continuity/` | 合同、订阅和账单决定持续交易关系是否保持可理解、可控制、可取消和可争议，而不是持续吞噬时间和资金 |
 | `notary-document-authentication-signature-continuity/` | 公证、文件认证和签名决定主体意愿、授权、合同和跨境文件是否能被机构长期承认、验证和执行 |
 | `citizenship-nationality-statelessness-continuity/` | 公民身份、国籍和无国籍状态决定主体是否被国家或国际保护框架承认为成员、受保护对象和权利主体 |

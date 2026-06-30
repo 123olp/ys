@@ -536,6 +536,14 @@ flowchart TD
     H --> RPTDRC[real-property-title-deed-record-continuity<br/>产权地契 / 土地记录]
     H --> DLVRC[driver-license-vehicle-registration-continuity<br/>驾照 / 车辆登记]
     H --> PTDMC[passport-travel-document-mobility-continuity<br/>护照 / 旅行证件]
+    H --> LDTBIC[long-distance-travel-booking-itinerary-continuity<br/>长途旅行 / 行程预订]
+    H --> APRDRC[air-passenger-rights-disruption-refund-continuity<br/>航空中断 / 退款权利]
+    H --> ASSIC[aviation-security-screening-identity-continuity<br/>航空安检 / 身份核验]
+    H --> BPPTC[baggage-personal-property-travel-continuity<br/>行李 / 旅行物品]
+    H --> LTAAC[lodging-temporary-accommodation-access-continuity<br/>临时住宿 / 住宿接入]
+    H --> TACAC[travel-advisory-consular-assistance-continuity<br/>旅行警示 / 领事协助]
+    H --> THPC[travel-health-preparedness-continuity<br/>旅行健康 / 准备]
+    H --> CBEDC[customs-border-entry-declaration-continuity<br/>海关边境 / 入境申报]
     H --> CSBCC[contract-subscription-billing-consent-continuity<br/>合同订阅 / 账单同意]
     H --> NDASC[notary-document-authentication-signature-continuity<br/>公证认证 / 签名]
     H --> CNSC[citizenship-nationality-statelessness-continuity<br/>公民国籍 / 无国籍]
@@ -832,6 +840,14 @@ flowchart TD
 | [Real Property Title Deed Record Continuity](domains/real-property-title-deed-record-continuity/README.md) | 地契、产权链、土地记录、抵押、留置、房产税和 title insurance | 把居住空间和长期资产转化为可被制度保护、转让、继承和恢复的资源 | 不提供买卖房、产权、税务、抵押、继承、诉讼、估价、保险或法律建议 |
 | [Driver License Vehicle Registration Continuity](domains/driver-license-vehicle-registration-continuity/README.md) | 驾照、州 ID、REAL ID、车辆 title、车辆登记、车牌、保险证明和地址同步 | 把物理移动能力转化为可被道路、工作、医疗和应急系统承认的行动资格 | 不提供 DMV 办理、驾驶、路线、车辆购买维修、保险、事故责任、罚单或法律建议 |
 | [Passport Travel Document Mobility Continuity](domains/passport-travel-document-mobility-continuity/README.md) | 护照、旅行证件、领事服务、紧急证件、旅行警示和跨境移动资格 | 把法律身份转化为跨境医疗、工作、学习、家庭、撤离和人道保护选择权 | 不提供护照、签证、移民、庇护、旅行安全、撤离、国籍、税务或法律建议 |
+| [Long Distance Travel Booking Itinerary Continuity](domains/long-distance-travel-booking-itinerary-continuity/README.md) | 长距离旅行订票、确认号、行程单、改签、取消、通知和跨服务衔接 | 把离家后的交通计划转化为可恢复的临时行动脚本 | 不提供路线推荐、票价套利、抢票、退款争议、实时行程或旅行商业建议 |
+| [Air Passenger Rights Disruption Refund Continuity](domains/air-passenger-rights-disruption-refund-continuity/README.md) | 航班延误、取消、退款、拒载、停机坪延误、残障航空旅行和消费者投诉 | 把航空中断从单次不便转化为主体时间、现金、医疗和住宿恢复问题 | 不提供个人赔偿、退款、投诉、诉讼、航班选择、保险理赔或个案策略建议 |
+| [Aviation Security Screening Identity Continuity](domains/aviation-security-screening-identity-continuity/README.md) | TSA 安检、身份核验、REAL ID、旅客支持、医疗设备和可访问筛查 | 把航空安全筛查建模为移动主体的准入与恢复条件 | 不提供安检规避、漏洞利用、违禁品携带、身份绕过、机场安全弱点或走私方法 |
+| [Baggage Personal Property Travel Continuity](domains/baggage-personal-property-travel-continuity/README.md) | 托运行李、随身物品、行李延误/丢失/损坏、关键药品文件和个人物品恢复 | 把旅行物品管理纳入离家后的身份、治疗、卫生、工作和尊严支持层 | 不提供行李索赔、保险理赔、防盗追踪、违禁品携带、海关规避或个人财产建议 |
+| [Lodging Temporary Accommodation Access Continuity](domains/lodging-temporary-accommodation-access-continuity/README.md) | 酒店、短租、入住资格、取消规则、无障碍客房、灾害临时安置和住宿诈骗 | 把离家后的休息点建模为睡眠、卫生、药物、设备和再行动基础设施 | 不提供酒店推荐、订房策略、退款争议、入住规避、占住、逃费或个案安全建议 |
+| [Travel Advisory Consular Assistance Continuity](domains/travel-advisory-consular-assistance-continuity/README.md) | 旅行警示、STEP、领事协助、紧急证件、海外医疗/逮捕/死亡/危机通信 | 把海外风险治理和求助入口纳入跨境主体持续性基础设施 | 不提供旅行安全、撤离路线、冲突区行动、海外法律、签证、移民或个案领事建议 |
+| [Travel Health Preparedness Continuity](domains/travel-health-preparedness-continuity/README.md) | 目的地健康资料、旅行健康风险、疫苗与预防资料、慢病准备、药品供应和境外医疗可及 | 把短期旅行建模为健康寿命与有效时间的暴露管理问题 | 不提供个人诊断、疫苗、处方、用药、旅行门诊、疫情判断、保险或医疗转运建议 |
+| [Customs Border Entry Declaration Continuity](domains/customs-border-entry-declaration-continuity/README.md) | 海关申报、边境检查、I-94、受限物品、农业检疫、关税和可信旅客系统 | 把边境通过建模为主体跨境行动链的身份、物品和记录门槛 | 不提供签证、移民、入境资格、申报策略、走私、规避检查、违禁品携带或个案边境建议 |
 | [Contract Subscription Billing Consent Continuity](domains/contract-subscription-billing-consent-continuity/README.md) | 合同、服务条款、订阅、自动续费、账单、取消、争议和持续同意 | 防止交易关系通过隐性续费、账单错误和取消摩擦吞噬时间与资金 | 不提供合同审查、订阅取消、退款、投诉、诉讼、信用卡争议或法律建议 |
 | [Notary Document Authentication Signature Continuity](domains/notary-document-authentication-signature-continuity/README.md) | 公证、电子签名、数字签名、文件认证、apostille、授权文件和跨机构承认 | 把主体意愿、授权和事实转化为可验证、可迁移、可执行的承认链 | 不提供公证、apostille、签署、电子签名、移民、学校、继承、法院或法律建议 |
 | [Citizenship Nationality Statelessness Continuity](domains/citizenship-nationality-statelessness-continuity/README.md) | 公民身份、国籍、自然化、国籍证明、无国籍风险和领事保护 | 把主体从身份文件推进到国家成员资格和跨境制度保护 | 不提供公民身份、自然化、国籍、无国籍、护照、签证、税务或法律建议 |
@@ -1625,5 +1641,6 @@ flowchart LR
 - 2026-07-01：新增第六十三波 8 个人因与操作可靠性连续性域，覆盖人因工效学任务系统、认知负荷/工作负荷测量、疲劳风险/警觉性、情境感知/决策环境、交接清单/过程可靠性、事件报告/公正文化学习、自动化偏误/模式混淆监督和告警疲劳/中断信号管理连续性。
 - 2026-07-01：新增第六十四波 8 个心理健康、神经发育与功能连续性域，覆盖抑郁心境功能、焦虑压力威胁调节、创伤/PTSD 恢复、精神病性现实检验、双相情绪周期稳定、ADHD 执行功能、自闭神经多样性支持和进食障碍营养身体连续性。
 - 2026-07-01：新增第六十五波 8 个伴侣动物、服务动物与宠物照护连续性域，覆盖人-动物纽带/伴侣照护、兽医可及费用、服务动物残障可达、宠物身份微芯片重聚、宠物食药供应安全、宠物灾害撤离避难、动物收容救助再安置和动物福利虐待报告。
+- 2026-07-01：新增第六十六波 8 个旅行、临时住宿与跨境移动执行连续性域，覆盖长距离旅行预订行程、航空中断退款、航空安检身份核验、行李个人物品、临时住宿接入、旅行警示领事协助、旅行健康准备和海关边境申报。
 
 完整记录见 [CHANGELOG.md](CHANGELOG.md)。

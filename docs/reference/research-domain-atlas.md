@@ -219,6 +219,14 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 不动产资源必须可证明可追溯 | `real-property-title-deed-record-continuity/` | 地契、产权链、土地记录、抵押、留置、房产税、title insurance | 产权链错误、地契丢失、留置或税费断点让居住、资产、继承和灾后恢复失去制度保护 |
 | 地方移动资格必须连续 | `driver-license-vehicle-registration-continuity/` | 驾照、州 ID、REAL ID、车辆 title、登记、车牌、地址同步 | 移动凭证丢失、吊销、跨州错配或车辆记录断裂压缩工作、医疗、照护和撤离行动半径 |
 | 跨境移动资格必须连续 | `passport-travel-document-mobility-continuity/` | 护照、旅行证件、领事服务、紧急证件、旅行警示、跨境身份 | 证件过期、丢失、扣留或领事服务不可达截断跨境医疗、工作、学习、家庭和撤离选择权 |
+| 离家行程脚本必须可恢复 | `long-distance-travel-booking-itinerary-continuity/` | 订票、确认号、行程单、改签、取消、通知、跨服务衔接 | 行程错配、取消通知失败或不可改签会连锁影响住宿、医疗、照护、工作和回程 |
+| 航空中断必须有恢复边界 | `air-passenger-rights-disruption-refund-continuity/` | 延误、取消、退款、拒载、停机坪延误、残障航空旅行、消费者投诉 | 航空中断消耗时间、现金、药物余量和住宿窗口，并可能截断跨境安排 |
+| 航空筛查必须可通过且可访问 | `aviation-security-screening-identity-continuity/` | TSA 安检、身份核验、REAL ID、旅客支持、医疗设备、可访问筛查 | 身份错配、安检不可访问或沟通失败会使主体失去航班、医疗用品和时间窗口 |
+| 移动物品必须支撑离家生存 | `baggage-personal-property-travel-continuity/` | 托运行李、随身物品、延误/丢失/损坏行李、药品、证件、设备 | 行李物品损失会扩散为身份、治疗、卫生、工作、住宿和尊严风险 |
+| 临时住宿必须提供恢复基地 | `lodging-temporary-accommodation-access-continuity/` | 酒店、短租、入住资格、取消、无障碍客房、灾害临时安置、住宿诈骗 | 住宿失败会压垮睡眠、卫生、药物保存、设备充电、家庭协调和再行动能力 |
+| 海外求助链必须可达 | `travel-advisory-consular-assistance-continuity/` | 旅行警示、STEP、使领馆、领事协助、紧急证件、海外危机通信 | 警示失读、登记缺失或求助边界误解会放大海外医疗、自由、身份和家庭断裂 |
+| 旅行健康暴露必须提前治理 | `travel-health-preparedness-continuity/` | 目的地健康资料、旅行健康风险、疫苗与预防资料、慢病准备、药品供应 | 旅行暴露和医疗可及性变化会改变健康状态转移函数并造成治疗中断 |
+| 边境申报与入境记录必须可信 | `customs-border-entry-declaration-continuity/` | 海关申报、边境检查、I-94、受限物品、农业检疫、关税、可信旅客 | 申报、记录、证件或物品边界失败会损失时间、物资、医疗用品和后续身份记录 |
 | 持续交易关系必须可理解可退出 | `contract-subscription-billing-consent-continuity/` | 合同、服务条款、订阅、自动续费、账单、取消、争议、持续同意 | 隐性续费、暗黑模式、账单错误和取消摩擦持续消耗金钱、时间、注意力和控制权 |
 | 关键文件必须可签署可认证 | `notary-document-authentication-signature-continuity/` | 公证、签名、电子签名、文件认证、apostille、授权文件、跨机构承认 | 文件无效、认证缺失、身份无法确认或签名记录失效让授权、事实和跨境文件不可执行 |
 | 国家成员资格必须可证明 | `citizenship-nationality-statelessness-continuity/` | 公民身份、国籍、自然化、国籍证明、无国籍风险、领事保护 | 无国籍、国籍争议或证明缺失使旅行、保护、投票、福利、家庭团聚和法律救济断裂 |
@@ -679,6 +687,14 @@ risk-engineering
   -> real-property-title-deed-record-continuity
   -> driver-license-vehicle-registration-continuity
   -> passport-travel-document-mobility-continuity
+  -> long-distance-travel-booking-itinerary-continuity
+  -> air-passenger-rights-disruption-refund-continuity
+  -> aviation-security-screening-identity-continuity
+  -> baggage-personal-property-travel-continuity
+  -> lodging-temporary-accommodation-access-continuity
+  -> travel-advisory-consular-assistance-continuity
+  -> travel-health-preparedness-continuity
+  -> customs-border-entry-declaration-continuity
   -> contract-subscription-billing-consent-continuity
   -> notary-document-authentication-signature-continuity
   -> citizenship-nationality-statelessness-continuity

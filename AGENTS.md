@@ -142,6 +142,14 @@ human_infra/
     ├── real-property-title-deed-record-continuity/ # 不动产权属、地契与土地记录连续性
     ├── driver-license-vehicle-registration-continuity/ # 驾照、车辆登记与个人移动资格连续性
     ├── passport-travel-document-mobility-continuity/ # 护照、旅行证件与跨境移动连续性
+    ├── long-distance-travel-booking-itinerary-continuity/ # 长距离旅行预订与行程连续性
+    ├── air-passenger-rights-disruption-refund-continuity/ # 航空旅客权利、中断与退款连续性
+    ├── aviation-security-screening-identity-continuity/ # 航空安检、身份核验与筛查连续性
+    ├── baggage-personal-property-travel-continuity/ # 行李与旅行个人物品连续性
+    ├── lodging-temporary-accommodation-access-continuity/ # 临时住宿与住宿接入连续性
+    ├── travel-advisory-consular-assistance-continuity/ # 旅行警示与领事协助连续性
+    ├── travel-health-preparedness-continuity/ # 旅行健康准备连续性
+    ├── customs-border-entry-declaration-continuity/ # 海关、边境入境与申报连续性
     ├── contract-subscription-billing-consent-continuity/ # 合同、订阅、账单与持续同意连续性
     ├── notary-document-authentication-signature-continuity/ # 公证、文件认证与签名连续性
     ├── citizenship-nationality-statelessness-continuity/ # 公民身份、国籍与无国籍连续性
@@ -702,6 +710,7 @@ human_infra/
 - `domains/family-medical-leave-job-protection-continuity/`、`domains/paid-sick-family-leave-wage-replacement-continuity/`、`domains/pregnancy-parental-work-continuity/`、`domains/workplace-accommodation-return-to-work-continuity/`、`domains/disability-income-work-capacity-benefit-continuity/` 和 `domains/family-caregiver-respite-work-continuity/` 负责家庭医疗假岗位保护、带薪病假/家庭假工资替代、孕产育儿工作连续性、合理便利复工、残障收入与工作能力福利、家庭照护者喘息与工作连续性这些工作中断与照护事件连续性条件。
 - `domains/vital-records-life-event-continuity/`、`domains/name-change-identity-record-synchronization-continuity/`、`domains/address-residency-mail-service-continuity/`、`domains/household-composition-dependent-eligibility-continuity/`、`domains/family-law-custody-child-support-continuity/` 和 `domains/kinship-foster-adoption-care-continuity/` 负责生命事件记录、姓名变更同步、地址居住地邮件路由、家庭组成资格关系、家庭法监护抚养、亲属照护寄养收养这些家庭事实与制度记录连续性条件。
 - `domains/banking-deposit-account-access-continuity/`、`domains/debt-obligation-collection-relief-continuity/`、`domains/real-property-title-deed-record-continuity/`、`domains/driver-license-vehicle-registration-continuity/`、`domains/passport-travel-document-mobility-continuity/`、`domains/contract-subscription-billing-consent-continuity/` 和 `domains/notary-document-authentication-signature-continuity/` 负责银行账户存款访问、债务义务催收救济、不动产权属地契、驾照车辆登记、护照旅行证件、合同订阅账单、公证文件认证签名这些资源控制、移动资格与交易执行连续性条件。
+- `domains/long-distance-travel-booking-itinerary-continuity/`、`domains/air-passenger-rights-disruption-refund-continuity/`、`domains/aviation-security-screening-identity-continuity/`、`domains/baggage-personal-property-travel-continuity/`、`domains/lodging-temporary-accommodation-access-continuity/`、`domains/travel-advisory-consular-assistance-continuity/`、`domains/travel-health-preparedness-continuity/` 和 `domains/customs-border-entry-declaration-continuity/` 负责长距离旅行预订行程、航空中断退款、安检身份核验、行李个人物品、临时住宿、旅行警示领事协助、旅行健康准备和海关边境申报这些旅行、临时住宿与跨境移动执行连续性条件。
 - `domains/citizenship-nationality-statelessness-continuity/`、`domains/immigration-status-residency-work-authorization-continuity/`、`domains/asylum-refugee-protection-status-continuity/`、`domains/detention-custody-confinement-status-continuity/`、`domains/civil-commitment-involuntary-treatment-rights-continuity/`、`domains/court-notice-service-process-default-judgment-continuity/` 和 `domains/criminal-record-relief-collateral-consequences-continuity/` 负责公民国籍无国籍、移民居留工作授权、庇护难民保护、拘押羁押监管状态、非自愿治疗权利、法院通知缺席判决和犯罪记录附带后果这些法律状态与强制程序连续性条件。
 - `domains/school-enrollment-attendance-continuity/`、`domains/special-education-iep-504-accommodation-continuity/`、`domains/school-meals-nutrition-access-continuity/`、`domains/school-health-services-chronic-condition-continuity/`、`domains/school-transportation-safe-routes-continuity/`、`domains/school-discipline-exclusion-restraint-continuity/`、`domains/school-mental-health-counseling-support-continuity/` 和 `domains/school-climate-bullying-violence-prevention-continuity/` 负责入学出勤、特殊教育 IEP/504、校餐营养、学校健康服务、通学安全、纪律排除约束、学校心理健康、学校气候欺凌暴力预防这些学校服务连续性条件。
 - `domains/postsecondary-admissions-transfer-articulation-continuity/`、`domains/student-financial-aid-grant-scholarship-continuity/`、`domains/academic-advising-degree-progress-continuity/`、`domains/campus-basic-needs-student-support-continuity/`、`domains/campus-disability-accommodations-accessibility-continuity/`、`domains/campus-mental-health-crisis-student-support-continuity/`、`domains/campus-safety-title-ix-clery-continuity/` 和 `domains/international-student-sevis-status-continuity/` 负责高等教育入学转学衔接、学生资助奖助学金、学业指导学位进度、校园基本需求、校园残障便利、校园心理危机支持、校园安全 Title IX/Clery 和国际学生 SEVIS 身份连续性这些高等教育学生生命周期条件。
@@ -842,3 +851,4 @@ human_infra/
 - 2026-07-01：新增第六十三波人因与操作可靠性连续性研究域，覆盖人因工效学任务系统、认知负荷/工作负荷测量、疲劳风险/警觉性、情境感知/决策环境、交接清单/过程可靠性、事件报告/公正文化学习、自动化偏误/模式混淆监督和告警疲劳/中断信号管理。
 - 2026-07-01：新增第六十四波心理健康、神经发育与功能连续性研究域，覆盖抑郁心境功能、焦虑压力威胁调节、创伤/PTSD 恢复、精神病性现实检验、双相情绪周期稳定、ADHD 执行功能、自闭神经多样性支持和进食障碍营养身体连续性。
 - 2026-07-01：新增第六十五波伴侣动物、服务动物与宠物照护连续性研究域，覆盖人-动物纽带/伴侣照护、兽医可及费用、服务动物残障可达、宠物身份微芯片重聚、宠物食药供应安全、宠物灾害撤离避难、动物收容救助再安置和动物福利虐待报告。
+- 2026-07-01：新增第六十六波旅行、临时住宿与跨境移动执行连续性研究域，覆盖长距离旅行预订行程、航空中断退款、航空安检身份核验、行李个人物品、临时住宿接入、旅行警示领事协助、旅行健康准备和海关边境申报。
