@@ -136,6 +136,12 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 关键物质系统可制造修复 | `manufacturing-repair-capacity/` | 制造、维修、维护、备件、质量、本地生产、关键设备恢复 | 设备损坏、备件短缺、质量缺陷和生产能力不足导致服务与工具系统失效 |
 | 公共预算可转化为服务 | `public-procurement-contracting-capacity/` | 公共采购、合同、供应商管理、应急采购、透明度、交付验收 | 有预算和政策但采购失败、合同失效、腐败、延误或劣质交付 |
 | 动物-人类-环境界面可治理 | `animal-health-zoonotic-interface-one-health/` | 动物健康、兽医公共卫生、人兽共患病、食品动物、野生动物、One Health | 上游动物疾病、AMR、食品系统和生态界面风险穿透公共卫生屏障 |
+| 风险可被实验室确认 | `public-health-laboratory-diagnostic-capacity/` | 公共卫生实验室、诊断网络、检测确认、质量管理、实验室扩容 | 不可见风险无法确认、检测延误、假阴性/假阳性或实验室容量崩溃 |
+| 外部生物材料可安全供应 | `blood-organ-tissue-biovigilance-transplantation/` | 血液供应、输血安全、器官/组织捐献、移植体系、追踪、生物警戒 | 血液短缺、移植等待失败、感染/免疫风险、分配失衡或追踪失败 |
+| 残余物和危险材料可治理 | `waste-management-hazardous-materials-continuity/` | 固体废物、医疗废物、危险废物、处理处置、服务连续性 | 废物堆积、污染扩散、感染入口、危险材料暴露或服务中断 |
+| 不可见高能暴露可限制 | `radiation-nuclear-safety-protection/` | 辐射防护、核安全、辐射监测、放射性材料、应急治理 | 电离辐射暴露、污染、长期癌症风险、事故传播或恐慌治理失败 |
+| 化学毒性暴露可响应 | `chemical-safety-poison-control-toxicology/` | 化学品安全、毒性暴露、毒物中心、毒理证据、风险沟通 | 急性中毒、慢性毒性、混合暴露、误判处置或化学事故扩散 |
+| 未来技术物质输入可持续 | `critical-minerals-materials-resilience/` | 关键矿物、战略材料、加工依赖、替代、回收、供应韧性 | AI、能源、医疗设备、制造和通信因材料瓶颈不可及或不可维修 |
 | 高成本风险可分摊 | `insurance-risk-transfer/` | 覆盖率、保费、自付、理赔、拒赔、风险池、保障缺口 | 疾病、失业、工伤、残障、灾害或养老金风险由个体独自承担 |
 | 托育和家庭运行可持续 | `childcare-family-continuity/` | 托育可及、费用、质量、早期发展、父母工作连续性、家庭压力 | 儿童发展受损、照护者工作中断、时间贫困和家庭压力升级 |
 | 应急响应可接住主体 | `emergency-preparedness-response/` | 灾害准备、预警、应急通信、急救医疗、安置、公共卫生应急、恢复 | 低频高冲击事件一次性清零长期积累，通信、医疗、撤离或恢复失败 |
@@ -278,6 +284,12 @@ risk-engineering
   -> manufacturing-repair-capacity
   -> public-procurement-contracting-capacity
   -> animal-health-zoonotic-interface-one-health
+  -> public-health-laboratory-diagnostic-capacity
+  -> blood-organ-tissue-biovigilance-transplantation
+  -> waste-management-hazardous-materials-continuity
+  -> radiation-nuclear-safety-protection
+  -> chemical-safety-poison-control-toxicology
+  -> critical-minerals-materials-resilience
   -> insurance-risk-transfer
   -> childcare-family-continuity
   -> emergency-preparedness-response

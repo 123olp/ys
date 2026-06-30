@@ -82,6 +82,12 @@
 - `manufacturing-repair-capacity/`：制造与维修能力，整理先进制造、维修、维护、备件、质量、本地生产和关键设备恢复能力。
 - `public-procurement-contracting-capacity/`：公共采购与合同能力，整理公共采购、供应商管理、合同执行、应急采购、透明度和交付验收。
 - `animal-health-zoonotic-interface-one-health/`：动物健康、人兽共患界面与 One Health，整理动物健康、兽医公共卫生、人兽共患病、食品动物和跨部门监测。
+- `public-health-laboratory-diagnostic-capacity/`：公共卫生实验室与诊断能力，整理实验室网络、检测确认、质量管理、诊断可及、实验室扩容和风险确认层。
+- `blood-organ-tissue-biovigilance-transplantation/`：血液、器官、组织、生物警戒与移植系统，整理血液供应、输血安全、器官/组织捐献、移植体系、追踪和不良事件监测。
+- `waste-management-hazardous-materials-continuity/`：废弃物管理、危险材料与处置连续性，整理固体废物、医疗废物、危险废物、处理处置、服务连续性和环境暴露边界。
+- `radiation-nuclear-safety-protection/`：辐射、核安全与防护，整理电离辐射防护、核设施安全、辐射监测、放射性材料风险和辐射应急治理。
+- `chemical-safety-poison-control-toxicology/`：化学安全、中毒控制与毒理响应，整理化学品安全、毒性暴露、毒物中心、毒理证据、暴露监测和风险沟通。
+- `critical-minerals-materials-resilience/`：关键矿物、材料与韧性，整理关键矿物、战略材料、加工依赖、替代回收和 AI/能源/医疗/制造的上游物质输入。
 - `insurance-risk-transfer/`：保险与风险转移，整理健康、失业、工伤、残障、灾害、存款、养老金等风险池和保障缺口。
 - `childcare-family-continuity/`：托育与家庭连续性，整理托育可及、费用、质量、早期儿童发展、父母工作连续性和家庭压力。
 - `emergency-preparedness-response/`：应急准备与响应，整理灾害准备、预警、应急通信、急救医疗、安置和恢复。

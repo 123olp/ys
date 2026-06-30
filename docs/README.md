@@ -37,6 +37,7 @@ docs/
 │   ├── 0019-add-fifteenth-wave-preparedness-literacy-workforce-burden-community-data-domains.md
 │   ├── 0020-add-sixteenth-wave-education-research-standards-cyber-compute-clinical-translation-domains.md
 │   ├── 0021-add-seventeenth-wave-geospatial-weather-building-manufacturing-procurement-one-health-domains.md
+│   ├── 0022-add-eighteenth-wave-lab-blood-waste-radiation-chemical-critical-materials-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -142,4 +143,10 @@ docs/
 50. Read `../domains/manufacturing-repair-capacity/README.md` if you are working on manufacturing, repair, maintenance, spare parts, local production, or critical equipment restoration.
 51. Read `../domains/public-procurement-contracting-capacity/README.md` if you are working on public procurement, contracting, supplier management, emergency procurement, transparency, or contract delivery.
 52. Read `../domains/animal-health-zoonotic-interface-one-health/README.md` if you are working on animal health, zoonotic risk, veterinary public health, One Health, livestock, wildlife, or animal-health surveillance.
-53. Enter a domain under `../domains/`.
+53. Read `../domains/public-health-laboratory-diagnostic-capacity/README.md` if you are working on public health laboratories, diagnostic capacity, laboratory quality, specimen networks, or laboratory surge.
+54. Read `../domains/blood-organ-tissue-biovigilance-transplantation/README.md` if you are working on blood supply, organ/tissue donation, transplantation systems, transfusion safety, or biovigilance.
+55. Read `../domains/waste-management-hazardous-materials-continuity/README.md` if you are working on solid waste, hazardous waste, medical waste, disposal continuity, or circular material flows.
+56. Read `../domains/radiation-nuclear-safety-protection/README.md` if you are working on radiation protection, nuclear safety, radiological monitoring, or radiological emergency governance.
+57. Read `../domains/chemical-safety-poison-control-toxicology/README.md` if you are working on chemical safety, toxic exposure, poison centers, toxicology, or chemical risk communication.
+58. Read `../domains/critical-minerals-materials-resilience/README.md` if you are working on critical minerals, strategic materials, material substitution, recycling, or upstream technology input resilience.
+59. Enter a domain under `../domains/`.

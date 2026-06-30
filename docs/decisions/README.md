@@ -34,3 +34,4 @@ Current decisions:
 - `0019-add-fifteenth-wave-preparedness-literacy-workforce-burden-community-data-domains.md`
 - `0020-add-sixteenth-wave-education-research-standards-cyber-compute-clinical-translation-domains.md`
 - `0021-add-seventeenth-wave-geospatial-weather-building-manufacturing-procurement-one-health-domains.md`
+- `0022-add-eighteenth-wave-lab-blood-waste-radiation-chemical-critical-materials-domains.md`

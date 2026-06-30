@@ -127,6 +127,12 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `manufacturing-repair-capacity/` | 制造、维修、维护、备件和质量能力决定关键设备和基础设施损坏后能否恢复 |
 | `public-procurement-contracting-capacity/` | 公共采购、合同和供应商管理决定公共预算、需求和政策目标能否转化为真实服务交付 |
 | `animal-health-zoonotic-interface-one-health/` | 动物健康、人兽共患界面和 One Health 协作决定上游公共卫生、食品系统和 AMR 风险屏障 |
+| `public-health-laboratory-diagnostic-capacity/` | 公共卫生实验室、诊断网络、质量管理和实验室扩容决定不可见风险能否被确认、校准和转化为行动 |
+| `blood-organ-tissue-biovigilance-transplantation/` | 血液、器官、组织供应和生物警戒决定外部生物材料能否安全进入主体修复系统 |
+| `waste-management-hazardous-materials-continuity/` | 废弃物、医疗废物和危险材料处置连续性决定生活系统残余物是否反向制造感染、毒性和污染风险 |
+| `radiation-nuclear-safety-protection/` | 辐射防护、核安全和监测网络决定不可见高能暴露是否能被限制、预警和响应 |
+| `chemical-safety-poison-control-toxicology/` | 化学安全、毒物中心和毒理证据决定化学暴露、中毒和混合毒性风险是否能被咨询、监测和治理 |
+| `critical-minerals-materials-resilience/` | 关键矿物、战略材料、替代和回收决定 AI、能源、医疗设备、通信和制造能力是否具备物质输入韧性 |
 
 ## 来源信号
 
@@ -232,6 +238,12 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | NIST MEP / Manufacturing.gov / NIST Advanced Manufacturing / DOE AMMTO | 提示制造、维修、维护、备件、质量和本地生产能力决定关键设备恢复时间 |
 | OECD Public Procurement / World Bank Procurement / MAPS / SAM.gov / USAspending.gov | 提示公共采购、合同执行、供应商管理、透明度和应急采购决定公共能力能否落地 |
 | WHO One Health / WOAH / FAO One Health / CDC One Health / WAHIS | 提示动物健康、人兽共患风险、兽医公共卫生和 One Health 协作是公共卫生上游风险屏障 |
+| CDC Laboratory Response Network / APHL / WHO Laboratory Biosafety Manual | 提示公共卫生实验室、诊断确认、质量管理、生物安全和实验室扩容是风险确认层 |
+| FDA Blood & Blood Products / HRSA OPTN / FDA HCT/P / WHO Blood Safety | 提示血液供应、输血安全、器官/组织系统、追踪和生物警戒需要独立维护 |
+| EPA hazardous waste / WHO health-care waste / World Bank solid waste | 提示废弃物、医疗废物和危险材料治理决定污染、感染、工人安全和城市服务连续性 |
+| IAEA radiation protection / NRC / EPA RadNet / CDC radiation emergencies | 提示辐射防护、核安全、监测网络和放射性事故治理需要独立风险边界 |
+| EPA TSCA / Poison Help / CDC NIOSH Chemical Safety / WHO Chemical Safety | 提示化学品安全、毒性暴露、毒物中心和风险沟通是化学风险治理基础设施 |
+| USGS Critical Minerals / DOE Critical Materials / IEA Critical Minerals / EU Critical Raw Materials | 提示关键矿物、战略材料、加工、替代、回收和供应韧性约束 AI、能源、医疗设备和制造扩散 |
 
 Source links:
 
@@ -576,6 +588,28 @@ Source links:
 - https://www.fao.org/one-health/
 - https://www.cdc.gov/one-health/
 - https://wahis.woah.org/
+- https://www.cdc.gov/lrn/
+- https://www.aphl.org/
+- https://www.who.int/publications/i/item/9789240011311
+- https://www.fda.gov/vaccines-blood-biologics/blood-blood-products
+- https://optn.transplant.hrsa.gov/
+- https://www.fda.gov/vaccines-blood-biologics/tissue-tissue-products
+- https://www.who.int/news-room/fact-sheets/detail/blood-safety-and-availability
+- https://www.epa.gov/hw
+- https://www.who.int/news-room/fact-sheets/detail/health-care-waste
+- https://www.worldbank.org/en/topic/urbandevelopment/brief/solid-waste-management
+- https://www.iaea.org/topics/radiation-protection
+- https://www.nrc.gov/
+- https://www.epa.gov/radnet
+- https://www.cdc.gov/radiation-emergencies/
+- https://www.epa.gov/chemicals-under-tsca
+- https://www.poisonhelp.org/
+- https://www.cdc.gov/niosh/topics/chemical-safety/
+- https://www.who.int/health-topics/chemical-safety
+- https://www.usgs.gov/programs/mineral-resources-program/science/critical-mineral-resources
+- https://www.energy.gov/cmm/critical-materials
+- https://www.iea.org/topics/critical-minerals
+- https://single-market-economy.ec.europa.eu/sectors/raw-materials/areas-specific-interest/critical-raw-materials_en
 
 ## 使用规则
 
