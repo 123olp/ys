@@ -316,6 +316,14 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 医疗价格必须可预期 | `price-transparency-good-faith-estimate-continuity/` | Hospital price transparency、payer transparency、GFE、machine-readable files、bill-estimate mismatch | 成本不可见会让主体无法规划资源，并可能因恐惧账单推迟治疗 |
 | 意外账单必须受保护 | `surprise-billing-balance-bill-protection-continuity/` | No Surprises Act、balance billing、out-of-network emergency care、air ambulance、notice/consent | 主体无法选择网络状态时，高额余额账单会把急性医疗事件变成债务冲击 |
 | 医疗债务必须有援助和限制 | `charity-care-financial-assistance-medical-debt-continuity/` | Financial assistance policy、charity care、limitation on charges、collections、medical debt | 高额医疗账单若无经济援助、收费限制和催收边界，会吞噬住房、信用和未来医疗接入 |
+| 医疗状态必须对主体可见 | `patient-portal-account-message-continuity/` | Patient portal、secure messaging、notifications、proxy access、patient-facing APIs | 门户失联、通知失败和消息断点会让主体错过结果、任务、账单、预约和照护反馈 |
+| 医疗记录必须可获得可修正 | `medical-record-access-amendment-release-continuity/` | HIPAA access、amendment、release of information、information blocking、record portability | 记录不可得或错误不可修正会让转诊、第二意见、急救和长期管理建立在缺失或错误事实上 |
+| 临床结果必须形成随访闭环 | `clinical-results-notification-followup-continuity/` | Result notification、critical values、abnormal findings、incidental findings、follow-up tracking | 检测和诊断信号若未通知、未理解或未随访，会把可修复窗口推迟到不可逆阶段 |
+| 医疗行动必须代表主体选择 | `informed-consent-refusal-shared-decision-continuity/` | Informed consent/refusal、shared decision-making、decision aids、risk communication | 同意被形式化或拒绝权不可表达，会让医疗路径偏离主体目标、价值和未来选择权 |
+| 医疗沟通必须可理解 | `healthcare-language-interpreter-effective-communication-continuity/` | Interpreter services、language assistance、CLAS、LEP、effective communication | 语言和沟通失败会导致误诊、误用药、无效同意、失访和权利失效 |
+| 医疗系统必须适配残障主体 | `healthcare-disability-accommodation-accessibility-continuity/` | Reasonable modification、auxiliary aids、accessible medical equipment、disability-inclusive care | 空间、设备和流程不可达会把名义医疗服务变成实际排除 |
+| 医疗错误和权利侵害必须可反馈 | `patient-grievance-complaint-ombuds-continuity/` | Patient grievance、complaints、ombudsman、state survey agency、quality feedback | 投诉和 ombuds 入口不可达会让延误、错误、歧视和沟通失败无法进入纠错回路 |
+| 医疗服务必须不因受保护特征排除主体 | `healthcare-civil-rights-nondiscrimination-continuity/` | Section 1557、Title VI、Section 504、ADA、nondiscrimination、HHS OCR | 医疗歧视和民权保护缺口会让主体在最需要服务时被降级、拒绝、污名化或失权 |
 | 栖居空间可保护生命 | `building-fire-life-safety-codes/` | 建筑规范、消防规范、疏散、烟雾报警、无障碍、结构韧性 | 居住、照护、学习、工作和公共空间成为火灾、烟雾、结构和疏散风险源 |
 | 关键物质系统可制造修复 | `manufacturing-repair-capacity/` | 制造、维修、维护、备件、质量、本地生产、关键设备恢复 | 设备损坏、备件短缺、质量缺陷和生产能力不足导致服务与工具系统失效 |
 | 公共预算可转化为服务 | `public-procurement-contracting-capacity/` | 公共采购、合同、供应商管理、应急采购、透明度、交付验收 | 有预算和政策但采购失败、合同失效、腐败、延误或劣质交付 |
@@ -719,6 +727,14 @@ risk-engineering
   -> price-transparency-good-faith-estimate-continuity
   -> surprise-billing-balance-bill-protection-continuity
   -> charity-care-financial-assistance-medical-debt-continuity
+  -> patient-portal-account-message-continuity
+  -> medical-record-access-amendment-release-continuity
+  -> clinical-results-notification-followup-continuity
+  -> informed-consent-refusal-shared-decision-continuity
+  -> healthcare-language-interpreter-effective-communication-continuity
+  -> healthcare-disability-accommodation-accessibility-continuity
+  -> patient-grievance-complaint-ombuds-continuity
+  -> healthcare-civil-rights-nondiscrimination-continuity
   -> community-resource-navigation
   -> social-determinants-community-vulnerability
   -> public-service-design-accessibility

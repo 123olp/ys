@@ -434,6 +434,25 @@ Human Infra 不能被设计成更精密的压榨系统。
 - 收集或诱导输入 SSN、member ID、保险卡、portal 凭证、收入、资产、税表、账单、EOB、claim、diagnosis、CPT/ICD、银行、信用报告、collection notice、地址、PHI 或其他敏感资料。
 - 把医疗支付、账单、保险、charity care 和 medical debt 的结构性问题改写成个人规避、抢救式申诉、信用修复、法律博弈、账单套利、无证代理或数据收集问题。
 
+## 患者权利、记录访问、临床沟通与医疗民权连续性边界
+
+`patient-portal-account-message-continuity`、`medical-record-access-amendment-release-continuity`、`clinical-results-notification-followup-continuity`、`informed-consent-refusal-shared-decision-continuity`、`healthcare-language-interpreter-effective-communication-continuity`、`healthcare-disability-accommodation-accessibility-continuity`、`patient-grievance-complaint-ombuds-continuity` 和 `healthcare-civil-rights-nondiscrimination-continuity` 关注 patient portal、病历访问修正释放、临床结果通知随访、知情同意/拒绝/共同决策、医疗语言服务、医疗残障便利、投诉/ombuds 和医疗民权反歧视如何让主体在医疗系统内部持续看见状态、理解信息、表达选择、纠错和免受制度性排除，不是门户恢复、病历索取、医疗结果解释、同意/拒绝建议、翻译口译、便利申请、投诉代写、法律意见、歧视认定或诉讼策略工具。
+
+可以做：
+
+- 整理公开资料、官方框架、HHS HIPAA access/amendment、ONC patient records / information blocking / USCDI / FHIR、AHRQ diagnostic safety / CANDOR / SHARE、HHS CLAS、LEP.gov、ADA.gov effective communication / healthcare accessibility、CMS complaints / state survey agency / ombuds、HHS OCR Section 1557 和 civil rights 资料。
+- 建模门户失联、病历不可得/不可修正、结果未通知、异常结果未随访、同意被形式化、语言沟通失败、残障便利失败、投诉无门和医疗歧视如何影响主体持续性。
+- 区分门户/消息、病历访问、结果通知、同意/拒绝、语言服务、残障便利、投诉纠错、医疗民权、个体决策和禁止用途。
+
+不能做：
+
+- 提供门户账号恢复、proxy setup、病历索取、release authorization、amendment request、HIPAA complaint、OCR complaint、patient grievance、complaint、appeal、demand letter、lawsuit 或机构沟通代写。
+- 解释个人病历、结果、化验、影像、病理、诊断、医嘱、治疗、同意书、拒绝书、账单、保险、民权适用性、歧视事实、医疗事故、standard of care 或法律时限。
+- 提供诊断、治疗、随访、急救分诊、是否同意/拒绝、共同决策结论、DNR/POLST/MOLST、医疗翻译、口译替代、残障便利申请、投诉策略、取证策略、舆论施压、法律策略或胜诉/赔偿判断。
+- 推荐 portal、provider、医院、医生、律师、translator/interpreter、patient advocate、ombuds、complaint path、accommodation path、医疗服务、设备、检查或治疗选择。
+- 收集或诱导输入 portal 凭证、验证码、MRN、member ID、病历、结果、报告、影像、同意书、授权书、签名、受保护身份、语言身份、残障证明、移民状态、宗教、性别、投诉证据、录音录像、联系方式、定位或 PHI。
+- 把患者权利、病历访问、结果通知、同意、语言、残障、投诉和医疗民权的结构性问题改写成个人争议代理、医疗建议、法律博弈、投诉工具、监控取证、舆论施压、身份暴露或敏感数据收集问题。
+
 ## 农村健康、无家可归、羁押重返、残障独立生活、痴呆照护与慢性传染病连续性边界
 
 `rural-health-access-geographic-equity`、`homelessness-unsheltered-health-continuity`、`correctional-health-reentry-continuity`、`disability-services-independent-living`、`dementia-cognitive-decline-care-continuity` 和 `chronic-infectious-disease-care-continuity` 关注地点排除、住所缺失、羁押释放、残障服务、认知衰退和长期感染照护如何影响主体持续性，不是个人医疗、住房、福利、法律、羁押、监管规避、传染病处置或弱势群体定位指南。

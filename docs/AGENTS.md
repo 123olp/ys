@@ -70,6 +70,7 @@ docs/
 │   ├── 0059-add-fifty-fifth-wave-treatment-execution-medical-supply-continuity-domains.md
 │   ├── 0060-add-fifty-sixth-wave-outpatient-access-clinical-service-execution-domains.md
 │   ├── 0061-add-fifty-seventh-wave-medical-payment-billing-cost-protection-domains.md
+│   ├── 0062-add-fifty-eighth-wave-patient-rights-records-communication-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -189,6 +190,7 @@ docs/
 - `domains/retail-pharmacy-prescription-dispensing-continuity/`、`domains/pharmacy-benefit-formulary-prior-authorization-continuity/`、`domains/medication-reconciliation-regimen-adherence-continuity/`、`domains/patient-medication-labeling-counseling-continuity/`、`domains/unused-medicine-takeback-disposal-continuity/`、`domains/durable-medical-equipment-supplier-repair-continuity/`、`domains/home-oxygen-respiratory-equipment-supply-continuity/` 和 `domains/diabetes-insulin-glucose-monitoring-supplies-continuity/`：第五十五波正式研究域，分别承载药房处方配药、药品福利/处方集/事前授权、用药核对与依从执行、患者药品标签/咨询理解、未用药回收处置、DME 供应维修、居家氧疗/呼吸设备供应和糖尿病胰岛素/血糖监测耗材连续性。
 - `domains/provider-directory-network-adequacy-continuity/`、`domains/primary-care-panel-appointment-access-continuity/`、`domains/specialist-referral-authorization-navigation-continuity/`、`domains/appointment-availability-wait-time-continuity/`、`domains/outpatient-laboratory-specimen-result-routing-continuity/`、`domains/diagnostic-imaging-order-scheduling-report-continuity/`、`domains/ambulatory-procedure-surgery-center-continuity/` 和 `domains/after-hours-urgent-care-triage-continuity/`：第五十六波正式研究域，分别承载 provider 名录/网络充足性、初级照护 panel/预约、专科转诊/授权导航、预约容量/等待时间、门诊检验标本/结果路由、诊断影像医嘱/报告回传、门诊操作/ASC 和非工作时间 urgent care/triage 连续性。
 - `domains/health-insurance-enrollment-renewal-continuity/`、`domains/insurance-eligibility-benefits-verification-continuity/`、`domains/medical-service-prior-authorization-utilization-management-continuity/`、`domains/claims-adjudication-eob-denial-continuity/`、`domains/patient-billing-payment-plan-continuity/`、`domains/price-transparency-good-faith-estimate-continuity/`、`domains/surprise-billing-balance-bill-protection-continuity/` 和 `domains/charity-care-financial-assistance-medical-debt-continuity/`：第五十七波正式研究域，分别承载健康保险参保续保、权益核验、医疗服务授权、理赔/EOB/拒付、患者账单/付款计划、价格透明/GFE、意外账单保护和 charity care/医疗债务连续性。
+- `domains/patient-portal-account-message-continuity/`、`domains/medical-record-access-amendment-release-continuity/`、`domains/clinical-results-notification-followup-continuity/`、`domains/informed-consent-refusal-shared-decision-continuity/`、`domains/healthcare-language-interpreter-effective-communication-continuity/`、`domains/healthcare-disability-accommodation-accessibility-continuity/`、`domains/patient-grievance-complaint-ombuds-continuity/` 和 `domains/healthcare-civil-rights-nondiscrimination-continuity/`：第五十八波正式研究域，分别承载患者门户/医疗消息、病历访问修正释放、临床结果通知随访、知情同意/拒绝/共同决策、医疗语言服务、医疗残障便利、患者投诉/ombuds 和医疗民权反歧视连续性。
 - `reference/research-model-visualization-toolkit.md`：沉淀科研论文阅读、文献脊梁、模型工具、可视化标准和 Human Infra 定量页面实现路线。
 - `reference/source-card-system.md`：定义论文、书籍、工具、案例、标准和数据集进入项目之前的资料卡片制度。
 - `reference/domain-map.md`：定义根项目与子域的边界、迁移切片、主动不做和验证点。

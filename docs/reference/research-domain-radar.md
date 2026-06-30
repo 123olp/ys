@@ -396,6 +396,14 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `price-transparency-good-faith-estimate-continuity/` | 价格透明、good faith estimate 和 bill-estimate mismatch 决定医疗成本是否能在服务前进入资源规划 |
 | `surprise-billing-balance-bill-protection-continuity/` | No Surprises Act、balance billing 和 out-of-network emergency protection 决定不可控网络状态是否转化为高额债务 |
 | `charity-care-financial-assistance-medical-debt-continuity/` | Financial assistance policy、charity care、limitation on charges 和 medical debt 决定高额医疗成本是否有缓冲机制 |
+| `patient-portal-account-message-continuity/` | Patient portal、secure messaging、notification routing 和 proxy access 决定主体是否能看见医疗任务并保持通信 |
+| `medical-record-access-amendment-release-continuity/` | HIPAA access、amendment、release of information 和 information blocking 决定主体是否能获得、纠错和携带医疗记录 |
+| `clinical-results-notification-followup-continuity/` | Result notification、critical values、abnormal findings 和 follow-up tracking 决定诊断信号是否形成行动闭环 |
+| `informed-consent-refusal-shared-decision-continuity/` | Informed consent/refusal、decision aids 和 shared decision-making 决定医疗行动是否代表主体理解后的选择 |
+| `healthcare-language-interpreter-effective-communication-continuity/` | Interpreter access、language assistance、CLAS 和 effective communication 决定医疗信息是否真正可理解 |
+| `healthcare-disability-accommodation-accessibility-continuity/` | Healthcare disability accommodation、auxiliary aids 和 accessible medical equipment 决定残障主体是否真实可达医疗服务 |
+| `patient-grievance-complaint-ombuds-continuity/` | Patient grievance、complaint、ombuds 和 state survey agency 决定医疗错误、延误和权利侵害是否进入纠错回路 |
+| `healthcare-civil-rights-nondiscrimination-continuity/` | Section 1557、Title VI、Section 504、ADA 和 HHS OCR civil rights 决定医疗系统是否在受保护特征上排除主体 |
 
 ## 来源信号
 
@@ -463,6 +471,13 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | https://www.cms.gov/nosurprises | 提示 No Surprises Act 把 balance billing、out-of-network emergency services、notice/consent 和 complaint process 纳入保护层 |
 | IRS Section 501(r) charitable hospital requirements | 提示 financial assistance policy、limitation on charges、billing and collections 规定会影响 charity care 和 medical debt 边界 |
 | CFPB medical debt and consumer reporting materials | 提示医疗债务会进入 consumer reporting、collections 和信用/资源连续性风险链 |
+| HHS HIPAA right of access / amendment guidance | 提示医疗记录访问、修正、释放和主体可见性是照护连续性前置条件 |
+| ONC patient records / information blocking / USCDI / FHIR materials | 提示 patient-facing access、record portability 和 information blocking 会影响跨机构照护与主体纠错能力 |
+| AHRQ diagnostic safety / CANDOR / SHARE materials | 提示结果通知、诊断闭环、错误沟通和共同决策需要独立患者权利与沟通层 |
+| HHS National CLAS Standards / LEP.gov | 提示医疗语言服务、文化适配和有限英语能力者沟通不能只作为一般健康素养处理 |
+| ADA.gov effective communication / healthcare accessibility materials | 提示残障主体进入医疗系统需要辅助沟通、合理修改和无障碍设备条件 |
+| CMS hospital complaints / State Survey Agency / Medicare Ombudsman materials | 提示患者投诉、grievance、ombuds 和监管入口是医疗系统可纠错性的执行接口 |
+| HHS OCR Section 1557 / civil rights materials | 提示医疗民权、反歧视、语言和残障保护会决定主体是否被制度性排除 |
 | https://www.dea.gov/takebackday | 提示受监管药品回收和 Take Back 体系是未用药、过期药和管制药处置的公共接口 |
 | https://www.cdc.gov/diabetes/ | 提示糖尿病日常管理依赖药物、监测、耗材、教育和持续反馈，不只是单次临床处方 |
 | https://www.cdc.gov/medication-safety/ | 提示 medication safety 覆盖家庭用药、误用、相互作用、教育和系统性安全风险 |

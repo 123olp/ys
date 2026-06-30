@@ -614,6 +614,30 @@ domains/
 ├── charity-care-financial-assistance-medical-debt-continuity/
 │   ├── AGENTS.md
 │   └── README.md
+├── patient-portal-account-message-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── medical-record-access-amendment-release-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── clinical-results-notification-followup-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── informed-consent-refusal-shared-decision-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── healthcare-language-interpreter-effective-communication-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── healthcare-disability-accommodation-accessibility-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── patient-grievance-complaint-ombuds-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── healthcare-civil-rights-nondiscrimination-continuity/
+│   ├── AGENTS.md
+│   └── README.md
 ├── cognitive-augmentation/
 │   ├── AGENTS.md
 │   └── README.md
@@ -1196,6 +1220,7 @@ domains/
 - `retail-pharmacy-prescription-dispensing-continuity/`、`pharmacy-benefit-formulary-prior-authorization-continuity/`、`medication-reconciliation-regimen-adherence-continuity/`、`patient-medication-labeling-counseling-continuity/`、`unused-medicine-takeback-disposal-continuity/`、`durable-medical-equipment-supplier-repair-continuity/`、`home-oxygen-respiratory-equipment-supply-continuity/` 和 `diabetes-insulin-glucose-monitoring-supplies-continuity/` 负责药房处方配药、药品福利/处方集/事前授权、用药核对与依从执行、患者药品标签/咨询理解、未用药回收处置、DME 供应维修、居家氧疗/呼吸设备供应和糖尿病胰岛素/血糖监测耗材这些治疗获得与医用品执行连续性条件。
 - `provider-directory-network-adequacy-continuity/`、`primary-care-panel-appointment-access-continuity/`、`specialist-referral-authorization-navigation-continuity/`、`appointment-availability-wait-time-continuity/`、`outpatient-laboratory-specimen-result-routing-continuity/`、`diagnostic-imaging-order-scheduling-report-continuity/`、`ambulatory-procedure-surgery-center-continuity/` 和 `after-hours-urgent-care-triage-continuity/` 负责 provider 名录/网络充足性、初级照护 panel/预约、专科转诊/授权导航、预约容量/等待时间、门诊检验标本/结果路由、诊断影像医嘱/报告回传、门诊操作/ASC 和非工作时间 urgent care/triage 这些门诊访问与临床服务执行连续性条件。
 - `health-insurance-enrollment-renewal-continuity/`、`insurance-eligibility-benefits-verification-continuity/`、`medical-service-prior-authorization-utilization-management-continuity/`、`claims-adjudication-eob-denial-continuity/`、`patient-billing-payment-plan-continuity/`、`price-transparency-good-faith-estimate-continuity/`、`surprise-billing-balance-bill-protection-continuity/` 和 `charity-care-financial-assistance-medical-debt-continuity/` 负责健康保险参保续保、权益核验、医疗服务授权、理赔/EOB/拒付、患者账单/付款计划、价格透明/GFE、意外账单保护和 charity care/医疗债务这些医疗支付执行连续性条件。
+- `patient-portal-account-message-continuity/`、`medical-record-access-amendment-release-continuity/`、`clinical-results-notification-followup-continuity/`、`informed-consent-refusal-shared-decision-continuity/`、`healthcare-language-interpreter-effective-communication-continuity/`、`healthcare-disability-accommodation-accessibility-continuity/`、`patient-grievance-complaint-ombuds-continuity/` 和 `healthcare-civil-rights-nondiscrimination-continuity/` 负责患者门户/医疗消息、病历访问修正释放、临床结果通知随访、知情同意/拒绝/共同决策、医疗语言服务、医疗残障便利、患者投诉/ombuds 和医疗民权反歧视这些患者权利与临床沟通连续性条件。
 - `access-to-justice-legal-aid/`、`civic-participation-election-access/`、`migration-displacement-humanitarian-continuity/` 和 `digital-inclusion-connectivity/` 负责司法可及、公民参与、迁移流离失所人道连续性和数字连接这些制度参与与公共服务接入条件。
 - `personal-safety-violence-prevention/` 和 `product-safety-recall-systems/` 负责暴力预防、受害者支持、产品缺陷报告、召回和纠正这些公共安全连续性条件。
 - `cellular-reprogramming/` 负责山中因子、部分重编程、化学重编程、AI 因子设计和表观遗传编辑等“细胞状态可重写”谱系，不提供实验协议或人体应用建议。
@@ -1228,6 +1253,7 @@ domains/
 - `retail-pharmacy-prescription-dispensing-continuity/`、`pharmacy-benefit-formulary-prior-authorization-continuity/`、`medication-reconciliation-regimen-adherence-continuity/`、`patient-medication-labeling-counseling-continuity/`、`unused-medicine-takeback-disposal-continuity/`、`durable-medical-equipment-supplier-repair-continuity/`、`home-oxygen-respiratory-equipment-supply-continuity/` 和 `diabetes-insulin-glucose-monitoring-supplies-continuity/` 负责治疗获得与医用品执行连续性的证据边界，不提供处方、换药、剂量、停药、替代药、个案相互作用判断、医保申诉代写、PA 材料、诊断证明、保险规避、药房/PBM 规则规避、DME 维修改装、氧流量/设备设置、CPAP 参数、胰岛素剂量、CGM 个案解读、药品处置指令、管制药规避、敏感处方/保险/健康数据收集或急救替代。
 - `provider-directory-network-adequacy-continuity/`、`primary-care-panel-appointment-access-continuity/`、`specialist-referral-authorization-navigation-continuity/`、`appointment-availability-wait-time-continuity/`、`outpatient-laboratory-specimen-result-routing-continuity/`、`diagnostic-imaging-order-scheduling-report-continuity/`、`ambulatory-procedure-surgery-center-continuity/` 和 `after-hours-urgent-care-triage-continuity/` 负责门诊访问与临床服务执行连续性的证据边界，不提供 provider/plan/doctor 推荐、诊断、检测/影像/操作选择、检验或影像解释、转诊策略、prior authorization/exception 代写、预约机器人、刷号、排队规避、urgent/ED 分诊、手术/操作准备、麻醉评估、并发症处理、账单争议、法律/保险策略，或收集 PHI、保险、portal、预约、检验、影像、操作、triage 数据。
 - `health-insurance-enrollment-renewal-continuity/`、`insurance-eligibility-benefits-verification-continuity/`、`medical-service-prior-authorization-utilization-management-continuity/`、`claims-adjudication-eob-denial-continuity/`、`patient-billing-payment-plan-continuity/`、`price-transparency-good-faith-estimate-continuity/`、`surprise-billing-balance-bill-protection-continuity/` 和 `charity-care-financial-assistance-medical-debt-continuity/` 负责医疗支付、理赔、账单与成本保护连续性的证据边界，不提供保险选择、参保、补贴资格、权益解释、授权/申诉代写、理赔争议、账单谈判、付款计划、价格比较、机构选择、法律/税务/信用修复/债务建议、保险规避、虚假材料、欺诈策略，或收集 SSN、member ID、保险、账单、EOB、claim、收入、资产、信用、银行和 PHI 数据。
+- `patient-portal-account-message-continuity/`、`medical-record-access-amendment-release-continuity/`、`clinical-results-notification-followup-continuity/`、`informed-consent-refusal-shared-decision-continuity/`、`healthcare-language-interpreter-effective-communication-continuity/`、`healthcare-disability-accommodation-accessibility-continuity/`、`patient-grievance-complaint-ombuds-continuity/` 和 `healthcare-civil-rights-nondiscrimination-continuity/` 负责患者权利、记录访问、临床沟通与医疗民权连续性的证据边界，不提供门户恢复、病历索取、记录解释、结果解读、医疗建议、同意/拒绝建议、翻译口译、便利申请、投诉代写、法律意见、歧视认定、诉讼策略，或收集 portal 凭证、MRN、授权书、病历、诊断、受保护身份、投诉证据、联系方式和 PHI 数据。
 - `regenerative-medicine/`、`cancer-control/` 和 `immune-maintenance/` 负责身体基底维护相关的机制、风险和证据边界。
 - `rehabilitation-functioning/`、`assistive-technology-access/`、`skin-barrier-wound-healing/` 和 `sensory-continuity/` 负责功能恢复、能力补偿、外界屏障和感官反馈连续性。
 - `antimicrobial-resilience/` 负责抗微生物耐药、感染控制和现代医学抗感染底座。

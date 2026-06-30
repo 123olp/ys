@@ -247,6 +247,14 @@ human_infra/
     ├── price-transparency-good-faith-estimate-continuity/ # 价格透明与预估费用连续性
     ├── surprise-billing-balance-bill-protection-continuity/ # 意外账单与余额账单保护连续性
     ├── charity-care-financial-assistance-medical-debt-continuity/ # Charity care、经济援助与医疗债务连续性
+    ├── patient-portal-account-message-continuity/ # 患者门户、账号与医疗消息连续性
+    ├── medical-record-access-amendment-release-continuity/ # 医疗记录访问、修正与释放连续性
+    ├── clinical-results-notification-followup-continuity/ # 临床结果通知与随访闭环连续性
+    ├── informed-consent-refusal-shared-decision-continuity/ # 知情同意、拒绝与共同决策连续性
+    ├── healthcare-language-interpreter-effective-communication-continuity/ # 医疗语言服务与有效沟通连续性
+    ├── healthcare-disability-accommodation-accessibility-continuity/ # 医疗残障便利与无障碍连续性
+    ├── patient-grievance-complaint-ombuds-continuity/ # 患者投诉、申诉与 Ombuds 连续性
+    ├── healthcare-civil-rights-nondiscrimination-continuity/ # 医疗民权与反歧视连续性
     ├── cognitive-augmentation/ # 认知增强与工具放大
     ├── digital-identity-security/ # 数字身份安全
     ├── disembodied-cns/   # 去具身外部维持型中枢生命系统
@@ -648,6 +656,7 @@ human_infra/
 - `domains/retail-pharmacy-prescription-dispensing-continuity/`、`domains/pharmacy-benefit-formulary-prior-authorization-continuity/`、`domains/medication-reconciliation-regimen-adherence-continuity/`、`domains/patient-medication-labeling-counseling-continuity/`、`domains/unused-medicine-takeback-disposal-continuity/`、`domains/durable-medical-equipment-supplier-repair-continuity/`、`domains/home-oxygen-respiratory-equipment-supply-continuity/` 和 `domains/diabetes-insulin-glucose-monitoring-supplies-continuity/` 负责药房配药、药品福利/处方集/事前授权、用药核对与依从执行、患者药品标签/咨询理解、未用药回收处置、DME 供应维修、居家氧疗/呼吸设备供应和糖尿病胰岛素/血糖监测耗材这些治疗获得与医用品执行连续性条件。
 - `domains/provider-directory-network-adequacy-continuity/`、`domains/primary-care-panel-appointment-access-continuity/`、`domains/specialist-referral-authorization-navigation-continuity/`、`domains/appointment-availability-wait-time-continuity/`、`domains/outpatient-laboratory-specimen-result-routing-continuity/`、`domains/diagnostic-imaging-order-scheduling-report-continuity/`、`domains/ambulatory-procedure-surgery-center-continuity/` 和 `domains/after-hours-urgent-care-triage-continuity/` 负责 provider 名录/网络充足性、初级照护 panel/预约、专科转诊/授权导航、预约容量/等待时间、门诊检验标本/结果路由、诊断影像医嘱/报告回传、门诊操作/ASC 和非工作时间 urgent care/triage 这些门诊访问与临床服务执行连续性条件。
 - `domains/health-insurance-enrollment-renewal-continuity/`、`domains/insurance-eligibility-benefits-verification-continuity/`、`domains/medical-service-prior-authorization-utilization-management-continuity/`、`domains/claims-adjudication-eob-denial-continuity/`、`domains/patient-billing-payment-plan-continuity/`、`domains/price-transparency-good-faith-estimate-continuity/`、`domains/surprise-billing-balance-bill-protection-continuity/` 和 `domains/charity-care-financial-assistance-medical-debt-continuity/` 负责健康保险参保续保、权益核验、医疗服务授权、理赔/EOB/拒付、患者账单/付款计划、价格透明/GFE、意外账单保护和 charity care/医疗债务这些医疗支付执行连续性条件。
+- `domains/patient-portal-account-message-continuity/`、`domains/medical-record-access-amendment-release-continuity/`、`domains/clinical-results-notification-followup-continuity/`、`domains/informed-consent-refusal-shared-decision-continuity/`、`domains/healthcare-language-interpreter-effective-communication-continuity/`、`domains/healthcare-disability-accommodation-accessibility-continuity/`、`domains/patient-grievance-complaint-ombuds-continuity/` 和 `domains/healthcare-civil-rights-nondiscrimination-continuity/` 负责患者门户/医疗消息、病历访问修正释放、临床结果通知随访、知情同意/拒绝/共同决策、医疗语言服务、医疗残障便利、患者投诉/ombuds 和医疗民权反歧视这些患者权利与临床沟通连续性条件。
 - `domains/disembodied-cns/` 负责去具身外部维持型中枢生命系统的高层架构建模，不提供实验操作协议。
 - `domains/memory-editing/` 负责记忆编辑的概念、证据、验证和伦理边界，不提供可执行神经操控步骤。
 - `domains/biostasis-cryopreservation/` 负责冷冻保存、生物停滞、休眠和等待未来修复路径。
@@ -707,6 +716,7 @@ human_infra/
 - 2026-06-30：新增第五十五波 8 个治疗获得与医用品执行连续性域，覆盖药房处方配药、药品福利/处方集/事前授权、用药核对与依从执行、患者药品标签/咨询理解、未用药回收处置、DME 供应维修、居家氧疗/呼吸设备供应和糖尿病胰岛素/血糖监测耗材连续性。
 - 2026-06-30：新增第五十六波 8 个门诊访问与临床服务执行连续性域，覆盖 provider 名录/网络充足性、初级照护 panel/预约、专科转诊/授权导航、预约容量/等待时间、门诊检验标本/结果路由、诊断影像医嘱/报告回传、门诊操作/ASC 和非工作时间 urgent care/triage 连续性。
 - 2026-06-30：新增第五十七波 8 个医疗支付、理赔、账单与成本保护连续性域，覆盖健康保险参保续保、权益核验、医疗服务授权、理赔/EOB/拒付、患者账单/付款计划、价格透明/GFE、意外账单保护和 charity care/医疗债务连续性。
+- 2026-06-30：新增第五十八波 8 个患者权利、记录访问、临床沟通与医疗民权连续性域，覆盖患者门户/医疗消息、病历访问修正释放、临床结果通知随访、知情同意/拒绝/共同决策、医疗语言服务、医疗残障便利、患者投诉/ombuds 和医疗民权反歧视连续性。
 - 2026-06-20：从 Biocat 单项目重组为 Human Infra 总项目；旧 Biocat 迁入 `domains/longevity-evidence/`；新增 `disembodied-cns` 与 `memory-editing` 子域；四份最新资料归档到 `docs/source-notes/`；按 Docs-as-Code 和 Diataxis 补齐根文件、协作模板、文档分层和结构检查脚本。
 - 2026-06-22：新增 `domains/future-waiting/` 和度规红移固有时差分路径（黑洞等待室），用于承载“压缩等待 / 去未来”类永生路径思想实验。
 - 2026-06-23：新增 GitHub Actions `make check` 门禁和 `.github/AGENTS.md`，准备远程仓库协作入口。

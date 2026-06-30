@@ -1,0 +1,46 @@
+# Patient Portal Account Message Continuity
+
+## 定位
+
+本域研究 patient portal、账号注册、登录恢复、消息通知、secure messaging、appointment / result / billing view 和 proxy access 如何影响主体能否持续看见医疗状态并与照护系统保持通信。
+
+它不是门户设置、账号恢复代理、医生消息代写、医疗建议或隐私投诉工具。
+
+## 先验问题
+
+```text
+医疗沟通何以连续？
+  -> 主体必须拥有可用的医疗门户或替代入口
+  -> 账号、联系方式、通知、代理访问和消息路由必须保持可达
+  -> 医疗记录、结果、账单和任务必须能被主体看见并回访
+  -> 否则医疗服务会在账号、通知和消息断点处失联
+```
+
+## 研究对象
+
+- Patient portal account、secure messaging、notification routing、proxy access、patient-facing APIs。
+- 预约、结果、账单、药物、转诊、表单、消息和任务提醒。
+- 账号恢复、手机号/邮箱变更、照护者代理、无门户替代路径和数字排除。
+
+## 关键变量
+
+- Portal activation、登录成功率、消息响应时间、通知到达率和 proxy access 可用性。
+- 数字能力、语言、无障碍、身份核验、账号锁定和未读关键消息。
+- 线下替代路径、照护者参与、隐私边界和信息阻断风险。
+
+## 证据入口
+
+- ONC patient access、USCDI、FHIR、information blocking 和 patient-facing API 资料。
+- HHS HIPAA access、CMS Patient Access API、Blue Button 相关资料。
+- 患者门户、数字健康可及性、照护者代理访问和数字排除研究。
+
+## 非目标
+
+- 不提供门户账号恢复、proxy setup、消息代写、病情描述、医生沟通策略或加急请求。
+- 不解释个人病历、化验、影像、账单、保险、诊断、处方或治疗方案。
+- 不收集 portal 凭证、验证码、member ID、MRN、手机号、邮箱、PHI 或代理授权资料。
+
+## 上下游
+
+- 上游：`digital-identity-security/`、`patient-data-interoperability/`、`healthcare-access-continuity/`。
+- 下游：`medical-record-access-amendment-release-continuity/`、`clinical-results-notification-followup-continuity/`。

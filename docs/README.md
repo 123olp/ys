@@ -77,6 +77,7 @@ docs/
 │   ├── 0059-add-fifty-fifth-wave-treatment-execution-medical-supply-continuity-domains.md
 │   ├── 0060-add-fifty-sixth-wave-outpatient-access-clinical-service-execution-domains.md
 │   ├── 0061-add-fifty-seventh-wave-medical-payment-billing-cost-protection-domains.md
+│   ├── 0062-add-fifty-eighth-wave-patient-rights-records-communication-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -435,4 +436,12 @@ docs/
 303. Read `../domains/price-transparency-good-faith-estimate-continuity/README.md` if you are working on hospital price transparency, payer transparency, good faith estimates, shoppable services, machine-readable files, or bill-estimate mismatch.
 304. Read `../domains/surprise-billing-balance-bill-protection-continuity/README.md` if you are working on No Surprises Act, balance billing, out-of-network emergency care, air ambulance, notice/consent, or surprise-bill complaints.
 305. Read `../domains/charity-care-financial-assistance-medical-debt-continuity/README.md` if you are working on hospital financial assistance, charity care, limitation on charges, billing and collections, payment plans, medical debt, or extraordinary collection actions.
-306. Enter a domain under `../domains/`.
+306. Read `../domains/patient-portal-account-message-continuity/README.md` if you are working on patient portals, secure messaging, notification routing, proxy access, patient-facing APIs, or healthcare account/message continuity.
+307. Read `../domains/medical-record-access-amendment-release-continuity/README.md` if you are working on HIPAA record access, amendment, release of information, information blocking, USCDI/FHIR patient access, or record portability.
+308. Read `../domains/clinical-results-notification-followup-continuity/README.md` if you are working on clinical results notification, abnormal results, critical values, incidental findings, diagnostic safety, or follow-up tracking.
+309. Read `../domains/informed-consent-refusal-shared-decision-continuity/README.md` if you are working on informed consent, informed refusal, shared decision-making, decision aids, risk communication, or medical choice documentation.
+310. Read `../domains/healthcare-language-interpreter-effective-communication-continuity/README.md` if you are working on healthcare interpreter services, LEP, translated materials, CLAS, auxiliary communication, or effective communication.
+311. Read `../domains/healthcare-disability-accommodation-accessibility-continuity/README.md` if you are working on healthcare disability accommodation, auxiliary aids, accessible medical diagnostic equipment, ADA/Section 504 healthcare access, or reasonable modification.
+312. Read `../domains/patient-grievance-complaint-ombuds-continuity/README.md` if you are working on patient grievance, hospital complaint, state survey agency, ombudsman, quality complaint, or healthcare complaint routing.
+313. Read `../domains/healthcare-civil-rights-nondiscrimination-continuity/README.md` if you are working on Section 1557, healthcare nondiscrimination, HHS OCR civil rights, healthcare bias, or protected-characteristic access barriers.
+314. Enter a domain under `../domains/`.

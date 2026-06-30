@@ -600,6 +600,14 @@ flowchart TD
     H --> PTGFE[price-transparency-good-faith-estimate-continuity<br/>价格透明 / 预估费用]
     H --> SBBB[surprise-billing-balance-bill-protection-continuity<br/>意外账单 / 余额账单保护]
     H --> CCFAMD[charity-care-financial-assistance-medical-debt-continuity<br/>经济援助 / 医疗债务]
+    H --> PPAM[patient-portal-account-message-continuity<br/>患者门户 / 医疗消息连续]
+    H --> MRAR[medical-record-access-amendment-release-continuity<br/>病历访问 / 修正释放]
+    H --> CRNF[clinical-results-notification-followup-continuity<br/>结果通知 / 随访闭环]
+    H --> ICRSD[informed-consent-refusal-shared-decision-continuity<br/>知情同意 / 共同决策]
+    H --> HLI[healthcare-language-interpreter-effective-communication-continuity<br/>医疗语言 / 有效沟通]
+    H --> HDAA[healthcare-disability-accommodation-accessibility-continuity<br/>医疗残障便利 / 无障碍]
+    H --> PGCO[patient-grievance-complaint-ombuds-continuity<br/>患者投诉 / Ombuds]
+    H --> HCND[healthcare-civil-rights-nondiscrimination-continuity<br/>医疗民权 / 反歧视]
     H --> MF[measurement-feedback<br/>测量 / 预测 / 反馈]
     H --> C[disembodied-cns<br/>去具身中枢生命系统]
     H --> M[memory-editing<br/>记忆编辑与人格连续性]
@@ -872,6 +880,14 @@ flowchart TD
 | [Price Transparency Good Faith Estimate Continuity](domains/price-transparency-good-faith-estimate-continuity/README.md) | hospital price transparency、payer transparency、machine-readable files、GFE 和 dispute resolution | 让医疗成本在服务前尽量可发现、可估算、可比对和可争议处理 | 不提供价格比较、机构选择、医疗选择、谈价、账单争议或套利建议 |
 | [Surprise Billing Balance Bill Protection Continuity](domains/surprise-billing-balance-bill-protection-continuity/README.md) | No Surprises Act、balance billing、out-of-network emergency care、air ambulance 和 cost-sharing protection | 限制主体无法选择网络状态时遭遇不可预见高额账单的风险 | 不判断个人账单是否合法，不代写投诉、申诉、法律信或 payer/provider dispute |
 | [Charity Care Financial Assistance Medical Debt Continuity](domains/charity-care-financial-assistance-medical-debt-continuity/README.md) | hospital financial assistance policy、charity care、limitation on charges、collections 和 medical debt | 让高额医疗成本进入经济援助、收费限制和债务缓冲机制，而不是直接击穿主体资源 | 不提供 charity care 申请、债务谈判、信用修复、法律、税务或个案财务建议 |
+| [Patient Portal Account Message Continuity](domains/patient-portal-account-message-continuity/README.md) | patient portal、secure messaging、通知路由、proxy access 和患者可见任务 | 让主体能持续看见医疗状态、接收通知并与照护系统通信 | 不提供门户设置、账号恢复、医生消息代写、医疗建议或隐私投诉 |
+| [Medical Record Access Amendment Release Continuity](domains/medical-record-access-amendment-release-continuity/README.md) | HIPAA access、amendment、release of information、information blocking 和记录可携带 | 让主体和照护团队能获得、纠错、授权释放和携带医疗记录 | 不提供病历索取、记录解释、HIPAA 法律意见、纠错申请或隐私投诉 |
+| [Clinical Results Notification Followup Continuity](domains/clinical-results-notification-followup-continuity/README.md) | 临床结果通知、异常结果、关键值、incidental findings 和 follow-up tracking | 让检测和诊断信号转化为可见、可追踪、可升级的行动闭环 | 不解释结果，不提供诊断、随访、急救分诊、加急或法律建议 |
+| [Informed Consent Refusal Shared Decision Continuity](domains/informed-consent-refusal-shared-decision-continuity/README.md) | 知情同意、知情拒绝、共同决策、风险沟通和选择记录 | 让医疗行动持续代表主体理解后的选择，而不是制度替主体行动 | 不提供治疗选择、同意/拒绝建议、DNR/POLST、法律或医疗建议 |
+| [Healthcare Language Interpreter Effective Communication Continuity](domains/healthcare-language-interpreter-effective-communication-continuity/README.md) | 医疗口译、语言服务、翻译材料、CLAS、LEP 和有效沟通 | 让主体能理解、表达和执行医疗任务，不因语言或沟通格式被排除 | 不提供医学翻译、口译替代、诊断解释、投诉代写或法律意见 |
+| [Healthcare Disability Accommodation Accessibility Continuity](domains/healthcare-disability-accommodation-accessibility-continuity/README.md) | 医疗残障便利、辅助沟通、合理修改和无障碍诊断设备 | 让残障主体能真实进入、接受和完成医疗服务 | 不提供 ADA/Section 504 法律意见、便利申请、设备处方或医疗建议 |
+| [Patient Grievance Complaint Ombuds Continuity](domains/patient-grievance-complaint-ombuds-continuity/README.md) | patient grievance、complaint、ombudsman、state survey agency 和质量反馈 | 让医疗错误、延误、歧视和沟通失败有可达、可追踪的纠错入口 | 不代写投诉、申诉、法律信、监管举报、保险争议或赔偿请求 |
+| [Healthcare Civil Rights Nondiscrimination Continuity](domains/healthcare-civil-rights-nondiscrimination-continuity/README.md) | Section 1557、Title VI、Section 504、ADA、医疗反歧视和民权执行 | 防止主体因受保护特征被医疗系统排除或降低服务质量 | 不提供法律意见、歧视认定、投诉代写、身份判断或诉讼策略 |
 | [Regenerative Medicine](domains/regenerative-medicine/README.md) | 干细胞、组织工程、器官再生、类器官、移植 | 器官/组织修复框架、功能终点和整合风险 | 不提供手术、细胞制备、移植或人体实验步骤 |
 | [Rehabilitation And Functioning](domains/rehabilitation-functioning/README.md) | 康复、功能恢复、失能预防、活动能力、自理和社会参与 | 功能状态、活动能力、参与能力和失能风险模型 | 不提供个人康复处方、训练计划、诊断或治疗建议 |
 | [Cancer Control](domains/cancer-control/README.md) | 癌症预防、早筛、治疗、复发、肿瘤演化 | 癌症风险函数、证据层级和长期控制变量 | 不提供诊断、治疗方案、处方、剂量或个体用药建议 |
@@ -1134,6 +1150,14 @@ human_infra/
 │   ├── price-transparency-good-faith-estimate-continuity/
 │   ├── surprise-billing-balance-bill-protection-continuity/
 │   ├── charity-care-financial-assistance-medical-debt-continuity/
+│   ├── patient-portal-account-message-continuity/
+│   ├── medical-record-access-amendment-release-continuity/
+│   ├── clinical-results-notification-followup-continuity/
+│   ├── informed-consent-refusal-shared-decision-continuity/
+│   ├── healthcare-language-interpreter-effective-communication-continuity/
+│   ├── healthcare-disability-accommodation-accessibility-continuity/
+│   ├── patient-grievance-complaint-ombuds-continuity/
+│   ├── healthcare-civil-rights-nondiscrimination-continuity/
 │   ├── cognitive-augmentation/
 │   ├── digital-identity-security/
 │   ├── disembodied-cns/
@@ -1422,5 +1446,6 @@ flowchart LR
 - 2026-06-30：新增第五十五波 8 个治疗获得与医用品执行连续性域，覆盖药房处方配药、药品福利/处方集/事前授权、用药核对与依从执行、患者药品标签/咨询理解、未用药回收处置、DME 供应维修、居家氧疗/呼吸设备供应和糖尿病胰岛素/血糖监测耗材连续性。
 - 2026-06-30：新增第五十六波 8 个门诊访问与临床服务执行连续性域，覆盖 provider 名录/网络充足性、初级照护 panel/预约、专科转诊/授权导航、预约容量/等待时间、门诊检验标本/结果路由、诊断影像医嘱/报告回传、门诊操作/ASC 和非工作时间 urgent care/triage 连续性。
 - 2026-06-30：新增第五十七波 8 个医疗支付、理赔、账单与成本保护连续性域，覆盖健康保险参保续保、权益核验、医疗服务授权、理赔/EOB/拒付、患者账单/付款计划、价格透明/GFE、意外账单保护和 charity care/医疗债务连续性。
+- 2026-06-30：新增第五十八波 8 个患者权利、记录访问、临床沟通与医疗民权连续性域，覆盖患者门户/医疗消息、病历访问修正释放、临床结果通知随访、知情同意/拒绝/共同决策、医疗语言服务、医疗残障便利、患者投诉/ombuds 和医疗民权反歧视连续性。
 
 完整记录见 [CHANGELOG.md](CHANGELOG.md)。

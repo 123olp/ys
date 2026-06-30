@@ -377,6 +377,14 @@
 - `price-transparency-good-faith-estimate-continuity/`：价格透明与预估费用连续性，整理 hospital price transparency、payer transparency、good faith estimate、shoppable services 和 bill-estimate mismatch。
 - `surprise-billing-balance-bill-protection-continuity/`：意外账单与余额账单保护连续性，整理 No Surprises Act、balance billing、out-of-network emergency care、air ambulance 和 cost-sharing protection。
 - `charity-care-financial-assistance-medical-debt-continuity/`：Charity care、经济援助与医疗债务连续性，整理 financial assistance policy、charity care、limitation on charges、collections 和 medical debt。
+- `patient-portal-account-message-continuity/`：患者门户、账号与医疗消息连续性，整理 patient portal、secure messaging、notification routing、proxy access 和患者可见任务。
+- `medical-record-access-amendment-release-continuity/`：医疗记录访问、修正与释放连续性，整理 HIPAA access、amendment、release of information、information blocking 和记录可携带。
+- `clinical-results-notification-followup-continuity/`：临床结果通知与随访闭环连续性，整理异常结果、关键值、incidental findings、closed-loop communication 和 follow-up tracking。
+- `informed-consent-refusal-shared-decision-continuity/`：知情同意、拒绝与共同决策连续性，整理 informed consent/refusal、shared decision-making、risk communication 和 decision documentation。
+- `healthcare-language-interpreter-effective-communication-continuity/`：医疗语言服务与有效沟通连续性，整理 interpreter access、language assistance、CLAS、LEP、translated materials 和辅助沟通。
+- `healthcare-disability-accommodation-accessibility-continuity/`：医疗残障便利与无障碍连续性，整理 reasonable modification、auxiliary aids、accessible medical equipment 和 disability-inclusive care。
+- `patient-grievance-complaint-ombuds-continuity/`：患者投诉、申诉与 Ombuds 连续性，整理 patient grievance、hospital complaint、state survey agency、ombudsman 和 quality complaint。
+- `healthcare-civil-rights-nondiscrimination-continuity/`：医疗民权与反歧视连续性，整理 Section 1557、Title VI、Section 504、ADA、医疗歧视和 nondiscrimination notice。
 - `supply-chain-continuity/`：供应链连续性，整理关键物资、服务、物流、替代路径和恢复时间。
 - `synthetic-biology-biosecurity/`：合成生物学与生物安全，整理双重用途、生物安全、生物安保和治理边界。
 - `space-extreme-habitation/`：空间与极端栖居，整理辐射、微重力、隔离、闭环资源和远程医疗风险。
