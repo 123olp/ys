@@ -454,6 +454,12 @@ flowchart TD
     H --> RAIHC[radon-asbestos-indoor-hazard-continuity<br/>氡石棉 / 室内危害]
     H --> MDIBE[mold-dampness-indoor-biological-exposure<br/>霉菌潮湿 / 室内生物暴露]
     H --> VBDEC[vector-borne-disease-environmental-control<br/>病媒传播 / 环境控制]
+    H --> ACPMDC[advance-care-planning-medical-decision-continuity<br/>预先照护计划 / 医疗决策]
+    H --> SDMGR[supported-decision-making-guardianship-rights<br/>支持性决策 / 监护权利]
+    H --> HPRHAC[healthcare-personal-representative-hipaa-access-continuity<br/>医疗个人代表 / HIPAA 访问]
+    H --> FFPOA[financial-fiduciary-power-of-attorney-continuity<br/>财务受托 / 授权代理]
+    H --> RPBMC[representative-payee-benefits-management-continuity<br/>代表收款人 / 福利代管]
+    H --> TEASC[trust-estate-affairs-succession-continuity<br/>事务继承 / 资料交接]
     H --> MF[measurement-feedback<br/>测量 / 预测 / 反馈]
     H --> C[disembodied-cns<br/>去具身中枢生命系统]
     H --> M[memory-editing<br/>记忆编辑与人格连续性]
@@ -580,6 +586,12 @@ flowchart TD
 | [Radon Asbestos Indoor Hazard Continuity](domains/radon-asbestos-indoor-hazard-continuity/README.md) | 氡、石棉、旧建筑、学校、工作场所和长期肺部风险 | 把不可见建筑暴露作为住房、学校和工作场所持续安全的长期约束 | 不提供检测解释、缓解系统设计、石棉采样拆除、施工、保险、房产或医疗建议 |
 | [Mold Dampness Indoor Biological Exposure](domains/mold-dampness-indoor-biological-exposure/README.md) | 霉菌、潮湿、漏水、室内过敏原、通风不足和灾后水损 | 把潮湿住房和室内生物暴露作为呼吸、睡眠、免疫和住房稳定的慢性负荷 | 不提供医疗建议、采样清理、除湿设备、施工维修、租房纠纷、保险或法律建议 |
 | [Vector Borne Disease Environmental Control](domains/vector-borne-disease-environmental-control/README.md) | 蚊媒、蜱媒、蚤媒、气候水文、住房环境、宿主动物和病媒控制 | 把病媒传播风险作为居住、工作、旅行、农业和公共卫生连续性的生态条件 | 不提供诊疗、旅行医学、驱虫产品、农药操作、现场灭杀、检疫规避或个人风险判断 |
+| [Advance Care Planning Medical Decision Continuity](domains/advance-care-planning-medical-decision-continuity/README.md) | 预先医疗照护计划、advance directives、医疗代理人、治疗目标和偏好沟通 | 把主体失能时的医疗决策连续性作为意愿、尊严和临床沟通基础设施 | 不提供医疗、法律、急救、DNR/POLST/MOLST 填写、治疗选择或个案文件建议 |
+| [Supported Decision Making Guardianship Rights](domains/supported-decision-making-guardianship-rights/README.md) | 支持性决策、监护、保护性安排、最低限制替代方案和权利监督 | 把能力变化后的自主性保护作为主体持续参与制度和生活决策的条件 | 不提供监护申请、能力判断、法院策略、家庭纠纷、财务控制或法律建议 |
+| [Healthcare Personal Representative HIPAA Access Continuity](domains/healthcare-personal-representative-hipaa-access-continuity/README.md) | HIPAA personal representative、授权照护者、医疗记录访问和隐私边界 | 把授权医疗信息访问作为照护转移、慢病管理和风险复核的连续性条件 | 不提供 HIPAA 法律意见、授权表填写、病历索取、门户设置、隐私投诉或个案访问判断 |
+| [Financial Fiduciary Power Of Attorney Continuity](domains/financial-fiduciary-power-of-attorney-continuity/README.md) | 财务授权代理、fiduciary duty、账单、资产管理、记录和防剥削 | 把资源代办能力与受托责任作为失能窗口中住房、保险、照护和支付连续性条件 | 不提供 POA 表格、法律、税务、投资、银行、债务、保险、理财或家庭纠纷建议 |
+| [Representative Payee Benefits Management Continuity](domains/representative-payee-benefits-management-continuity/README.md) | SSA representative payee、VA fiduciary、福利代管、报告义务和监督 | 把公共收入在能力下降时继续用于主体住房、食物、医疗和照护作为连续性条件 | 不提供福利申请、资格判断、支付金额、代理申请、账户设置、支出合规或申诉建议 |
+| [Trust Estate Affairs Succession Continuity](domains/trust-estate-affairs-succession-continuity/README.md) | 事务整理、受益人、trustee、executor、账户清单、文件和项目交接 | 把失能或死亡边界附近的资源、资料、责任和长期项目接续作为主体外延连续性条件 | 不提供遗嘱、信托、税务、继承、受益人、保险、资产分配、账户转移或法律建议 |
 | [Regenerative Medicine](domains/regenerative-medicine/README.md) | 干细胞、组织工程、器官再生、类器官、移植 | 器官/组织修复框架、功能终点和整合风险 | 不提供手术、细胞制备、移植或人体实验步骤 |
 | [Rehabilitation And Functioning](domains/rehabilitation-functioning/README.md) | 康复、功能恢复、失能预防、活动能力、自理和社会参与 | 功能状态、活动能力、参与能力和失能风险模型 | 不提供个人康复处方、训练计划、诊断或治疗建议 |
 | [Cancer Control](domains/cancer-control/README.md) | 癌症预防、早筛、治疗、复发、肿瘤演化 | 癌症风险函数、证据层级和长期控制变量 | 不提供诊断、治疗方案、处方、剂量或个体用药建议 |
@@ -1062,5 +1074,6 @@ flowchart LR
 - 2026-06-30：新增第三十五波 7 个感官、沟通与具身反馈连续性域，覆盖视觉眼健康、听力听觉沟通、前庭平衡空间定向、言语语言沟通、吞咽误吸营养、嗅味觉化学感知和周围神经躯体感觉。
 - 2026-06-30：新增第三十六波 6 个行星、地球物理与极端热风险连续性域，覆盖空间天气、行星防御、火山灰、地震、海啸和极端高温。
 - 2026-06-30：新增第三十七波 6 个慢性环境暴露与日常损耗条件域，覆盖噪声、光照节律、铅与重金属、氡与石棉、霉菌潮湿和病媒传播风险。
+- 2026-06-30：新增第三十八波 6 个决策权、代理权与受托连续性域，覆盖预先医疗照护计划、支持性决策、医疗个人代表、财务受托、代表收款人和事务继承。
 
 完整记录见 [CHANGELOG.md](CHANGELOG.md)。

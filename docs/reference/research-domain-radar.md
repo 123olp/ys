@@ -250,6 +250,12 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `radon-asbestos-indoor-hazard-continuity/` | 氡与石棉决定建筑空间是否在长潜伏期内制造不可见肺部和癌症风险 |
 | `mold-dampness-indoor-biological-exposure/` | 霉菌和潮湿决定住房是否会变成呼吸、免疫、睡眠和心理压力的慢性暴露源 |
 | `vector-borne-disease-environmental-control/` | 病媒传播风险决定气候、水文、住房、动物宿主和公共卫生能否共同控制生态感染入口 |
+| `advance-care-planning-medical-decision-continuity/` | 预先医疗照护计划决定主体失能时医疗偏好、代理人和治疗目标是否还能进入临床决策 |
+| `supported-decision-making-guardianship-rights/` | 支持性决策和监护权利决定能力变化后主体是否被帮助表达选择，还是被直接剥夺自主性 |
+| `healthcare-personal-representative-hipaa-access-continuity/` | 医疗个人代表和 HIPAA 访问边界决定照护者能否合法获得必要资料，同时不侵蚀主体隐私 |
+| `financial-fiduciary-power-of-attorney-continuity/` | 财务受托和授权代理决定主体失能时账单、资产、保险和照护费用是否连续且不被滥用 |
+| `representative-payee-benefits-management-continuity/` | 代表收款人和福利代管决定公共收入在能力下降时是否继续服务主体基本生活 |
+| `trust-estate-affairs-succession-continuity/` | 事务、信托、遗产与继承连续性决定失能或死亡边界附近资源、资料和长期项目是否可交接 |
 
 ## 来源信号
 
@@ -281,6 +287,12 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | EPA radon and asbestos resources | 提示室内建筑危害具有长潜伏期、不可见暴露和独立监管边界 |
 | CDC / EPA / WHO mold and dampness resources | 提示潮湿、霉菌和室内生物暴露会把住房质量连接到呼吸、免疫、睡眠和心理压力 |
 | CDC / WHO / EPA vector-borne disease resources | 提示病媒传播风险需要把气候、水文、动物宿主、住房、农药和公共卫生治理合并审查 |
+| NIA advance care planning resources | 提示主体失能时医疗偏好、代理人和治疗目标需要提前变成可传递资料 |
+| ACL supported decision-making resources | 提示能力变化后应优先研究支持性决策和最低限制替代，而不是直接跳到替代决策 |
+| HHS HIPAA personal representative guidance | 提示照护资料访问必须同时处理授权、隐私、个人代表和机构披露边界 |
+| CFPB Managing Someone Else's Money guides | 提示财务授权、受托义务、代表收款人和 trustee 角色有独立防剥削和记录责任 |
+| SSA Representative Payee / Advance Designation resources | 提示公共福利收入在主体无法管理时需要专门代管、报告、监督和变更机制 |
+| NIA getting your affairs in order resources | 提示失能或死亡边界附近的文件、账户、受益人和角色整理是长期事务连续性的前置条件 |
 | WHO Antimicrobial Resistance | 提示耐药性会侵蚀现代医学和长期感染控制底座 |
 | WHO Vision and Hearing resources | 提示感官系统是主体感知、沟通和行动连续性的基础 |
 | CDC Sleep / NHLBI Sleep resources | 提示睡眠不足和节律失调会影响认知、慢病、心理和恢复能力 |
@@ -1109,6 +1121,14 @@ Source links:
 - https://www.cdc.gov/vector-borne-diseases/
 - https://www.who.int/news-room/fact-sheets/detail/vector-borne-diseases
 - https://www.epa.gov/mosquitocontrol
+- https://www.nia.nih.gov/health/advance-care-planning/advance-care-planning-advance-directives-health-care
+- https://www.nia.nih.gov/health/advance-care-planning/getting-your-affairs-order
+- https://acl.gov/programs/consumer-control/supported-decision-making
+- https://www.hhs.gov/hipaa/for-professionals/privacy/guidance/personal-representatives/index.html
+- https://www.consumerfinance.gov/consumer-tools/managing-someone-elses-money/
+- https://www.ssa.gov/payee/
+- https://www.ssa.gov/payee/advance_designation.htm
+- https://www.va.gov/family-member-benefits/fiduciary-program/
 
 ## 使用规则
 

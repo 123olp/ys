@@ -57,6 +57,7 @@ docs/
 │   ├── 0039-add-thirty-fifth-wave-sensory-communication-continuity-domains.md
 │   ├── 0040-add-thirty-sixth-wave-planetary-geophysical-heat-risk-domains.md
 │   ├── 0041-add-thirty-seventh-wave-chronic-environmental-exposure-domains.md
+│   ├── 0042-add-thirty-eighth-wave-decision-authority-fiduciary-continuity-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -285,4 +286,10 @@ docs/
 173. Read `../domains/radon-asbestos-indoor-hazard-continuity/README.md` if you are working on radon, asbestos, indoor long-latency hazards, old buildings, schools, workplaces, lung cancer risk, or building legacy exposures.
 174. Read `../domains/mold-dampness-indoor-biological-exposure/README.md` if you are working on mold, dampness, indoor biological exposure, leaks, water damage, indoor allergens, housing quality, or post-flood indoor environments.
 175. Read `../domains/vector-borne-disease-environmental-control/README.md` if you are working on vector-borne disease, mosquitoes, ticks, fleas, vector control, climate-water ecology, One Health, or environmental infection risk.
-176. Enter a domain under `../domains/`.
+176. Read `../domains/advance-care-planning-medical-decision-continuity/README.md` if you are working on advance care planning, advance directives, health care proxy, medical decision continuity, goals of care, or incapacity communication.
+177. Read `../domains/supported-decision-making-guardianship-rights/README.md` if you are working on supported decision-making, guardianship, conservatorship, decision capacity, disability rights, or least restrictive alternatives.
+178. Read `../domains/healthcare-personal-representative-hipaa-access-continuity/README.md` if you are working on HIPAA personal representatives, caregiver access, proxy access, medical records, privacy boundaries, or authorized care coordination.
+179. Read `../domains/financial-fiduciary-power-of-attorney-continuity/README.md` if you are working on financial power of attorney, fiduciary duty, bill payment, asset management, incapacity finance, or elder financial exploitation prevention.
+180. Read `../domains/representative-payee-benefits-management-continuity/README.md` if you are working on representative payees, VA fiduciaries, benefits management, public income continuity, payee oversight, or protected benefit use.
+181. Read `../domains/trust-estate-affairs-succession-continuity/README.md` if you are working on getting affairs in order, trustees, executors, estate affairs, beneficiary records, succession, or long-term project handoff.
+182. Enter a domain under `../domains/`.

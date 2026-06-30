@@ -101,6 +101,12 @@ human_infra/
     ├── radon-asbestos-indoor-hazard-continuity/ # 氡、石棉与室内长期危害连续性
     ├── mold-dampness-indoor-biological-exposure/ # 霉菌、潮湿与室内生物暴露
     ├── vector-borne-disease-environmental-control/ # 病媒传播疾病与环境控制
+    ├── advance-care-planning-medical-decision-continuity/ # 预先医疗照护计划与医疗决策连续性
+    ├── supported-decision-making-guardianship-rights/ # 支持性决策、监护与权利保护
+    ├── healthcare-personal-representative-hipaa-access-continuity/ # 医疗个人代表与 HIPAA 访问连续性
+    ├── financial-fiduciary-power-of-attorney-continuity/ # 财务受托与授权代理连续性
+    ├── representative-payee-benefits-management-continuity/ # 代表收款人与福利代管连续性
+    ├── trust-estate-affairs-succession-continuity/ # 事务、信托、遗产与继承连续性
     ├── cognitive-augmentation/ # 认知增强与工具放大
     ├── digital-identity-security/ # 数字身份安全
     ├── disembodied-cns/   # 去具身外部维持型中枢生命系统
@@ -482,6 +488,7 @@ human_infra/
 - `domains/vision-eye-health-continuity/`、`domains/hearing-auditory-communication-continuity/`、`domains/vestibular-balance-spatial-orientation/`、`domains/speech-language-communication-continuity/`、`domains/swallowing-dysphagia-aspiration-nutrition/`、`domains/smell-taste-chemosensory-continuity/` 和 `domains/peripheral-neuropathy-somatosensory-continuity/` 负责视觉输入、听觉沟通、空间平衡、语言表达、吞咽摄食、化学感知和身体边界反馈的机制、证据、变量和禁止用途。
 - `domains/space-weather-geomagnetic-storm-resilience/`、`domains/planetary-defense-near-earth-object-risk/`、`domains/volcanic-ashfall-geohazard-continuity/`、`domains/earthquake-seismic-risk-built-environment-continuity/`、`domains/tsunami-warning-coastal-evacuation-continuity/` 和 `domains/extreme-heat-cooling-public-health-continuity/` 负责空间天气、行星防御、火山灰、地震、海啸和极端高温这些行星、地球物理与极端热风险的机制、预警、基础设施失效和禁止用途。
 - `domains/noise-exposure-acoustic-environment-continuity/`、`domains/light-exposure-circadian-environment-continuity/`、`domains/lead-heavy-metal-exposure-control/`、`domains/radon-asbestos-indoor-hazard-continuity/`、`domains/mold-dampness-indoor-biological-exposure/` 和 `domains/vector-borne-disease-environmental-control/` 负责噪声、光照节律、铅与重金属、氡与石棉、霉菌潮湿和病媒传播这些慢性环境暴露与日常损耗条件的机制、证据、变量和禁止用途。
+- `domains/advance-care-planning-medical-decision-continuity/`、`domains/supported-decision-making-guardianship-rights/`、`domains/healthcare-personal-representative-hipaa-access-continuity/`、`domains/financial-fiduciary-power-of-attorney-continuity/`、`domains/representative-payee-benefits-management-continuity/` 和 `domains/trust-estate-affairs-succession-continuity/` 负责预先医疗照护计划、支持性决策、医疗个人代表、财务受托、代表收款人和事务继承这些决策权、代理权与受托连续性条件。
 - `domains/disembodied-cns/` 负责去具身外部维持型中枢生命系统的高层架构建模，不提供实验操作协议。
 - `domains/memory-editing/` 负责记忆编辑的概念、证据、验证和伦理边界，不提供可执行神经操控步骤。
 - `domains/biostasis-cryopreservation/` 负责冷冻保存、生物停滞、休眠和等待未来修复路径。
@@ -535,6 +542,7 @@ human_infra/
 - 2026-06-26：新增 `web/` Observable Framework 应用，作为科研叙事、书籍转译、预测模型和交互图表的正式 Web 入口。
 - 2026-06-27：新增 `tools/arxiv_html_paper_tool.py` 与 `tools/arxiv-html-paper/`，把 arXiv HTML papers 前端框架沉淀为可复用 Astro 工具链。
 - 2026-06-29：新增可控度规等待室假设 working paper 入口和审计账本，把黑洞等待室收敛为固有时差分、退出采用、风险扣减和递归等待的可审查模型。
+- 2026-06-30：新增第三十八波 6 个决策权、代理权与受托连续性域，覆盖预先医疗照护计划、支持性决策、医疗个人代表、财务受托、代表收款人和事务继承。
 - 2026-06-30：新增第三十七波 6 个慢性环境暴露与日常损耗条件域，覆盖噪声、光照节律、铅与重金属、氡与石棉、霉菌潮湿和病媒传播风险。
 - 2026-06-30：新增第三十六波 6 个行星、地球物理与极端热风险连续性域，覆盖空间天气、行星防御、火山灰、地震、海啸和极端高温。
 - 2026-06-30：新增第三十五波 7 个感官、沟通与具身反馈连续性域，覆盖视觉眼健康、听力听觉沟通、前庭平衡空间定向、言语语言沟通、吞咽误吸营养、嗅味觉化学感知和周围神经躯体感觉。

@@ -703,6 +703,24 @@ Human Infra 不能被设计成更精密的压榨系统。
 - 不替代 WHO、CDC、NIOSH、OSHA、EPA、ATSDR、NIEHS、地方公共卫生、环境监管、建筑、工业卫生、职业安全、虫媒控制、医疗或法律专业机构。
 - 不提供房屋购买/租赁/维修、学校或单位合规、保险理赔、法律索赔、劳动争议、邻里纠纷、旅行路线、户外活动许可、工作许可、公共卫生报告规避、监管规避或恐慌传播建议。
 
+## 决策权、代理权与受托连续性边界
+
+`advance-care-planning-medical-decision-continuity`、`supported-decision-making-guardianship-rights`、`healthcare-personal-representative-hipaa-access-continuity`、`financial-fiduciary-power-of-attorney-continuity`、`representative-payee-benefits-management-continuity` 和 `trust-estate-affairs-succession-continuity` 关注主体失能、不能表达或死亡边界附近，医疗偏好、决策支持、医疗资料访问、财务任务、公共收入和长期事务如何在授权、监督和防滥用边界内延续，不是医疗、法律、财务、福利、税务或遗产操作入口。
+
+可以做：
+
+- 整理 NIA、ACL、HHS、CFPB、SSA、VA、公共法律教育和监管机构的公开资料、角色定义、制度边界、风险变量和禁止用途。
+- 比较 advance directives、supported decision-making、guardianship、HIPAA personal representative、financial power of attorney、representative payee、fiduciary、trustee 和 executor 等角色如何影响主体持续性。
+- 记录授权边界、同意、撤回、监督、记录保存、滥用风险、隐私风险、当地法律差异和机构责任。
+- 将样表、清单、指南和 AI 输出作为研究信号或资料索引，不写成个案行动、资格、合规、诊断、财务或法律结论。
+
+不能做：
+
+- 不提供医疗、法律、财务、税务、投资、保险、福利、遗产、继承、授权表填写、法院策略、隐私投诉、资格判断、资产分配、账户转移、家庭纠纷或个案代理建议。
+- 不判断某人是否有能力、是否需要监护、谁应成为代理人/监护人/代表收款人/受托人、某文件是否有效、某机构是否违规或某项支出是否合规。
+- 不替代医生、律师、法院、HHS OCR、SSA、VA、CFPB、金融机构、税务专业人员、保护服务、医院伦理委员会、患者代表或当地监管机构。
+- 不帮助规避同意、隐私、监管、法院、福利、平台、银行、遗产、报告、监督或保护性服务要求。
+
 ## 数据与证据边界
 
 - 原始数据、清洗数据和人工判断必须分层保存。

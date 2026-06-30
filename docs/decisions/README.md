@@ -54,3 +54,4 @@ Current decisions:
 - `0039-add-thirty-fifth-wave-sensory-communication-continuity-domains.md`
 - `0040-add-thirty-sixth-wave-planetary-geophysical-heat-risk-domains.md`
 - `0041-add-thirty-seventh-wave-chronic-environmental-exposure-domains.md`
+- `0042-add-thirty-eighth-wave-decision-authority-fiduciary-continuity-domains.md`

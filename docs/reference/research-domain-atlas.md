@@ -15,6 +15,7 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
   -> 感官、沟通、摄食和具身反馈必须保持可用
   -> 行星、地球物理与极端热风险必须可被观测、预警、缓解和恢复
   -> 慢性环境暴露必须被识别、降低并纳入恢复成本
+  -> 失能或不能表达时，意愿、权限、资源和责任必须可连续
   -> 工具和认知系统必须放大主体而不是吞噬主体
   -> 数字身份、AI 代理、供应链、生物安全和极端栖居等外部技术底座必须可控
   -> 治理和权利必须保护同意、退出和身份
@@ -160,6 +161,12 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 建筑遗留危害必须可识别 | `radon-asbestos-indoor-hazard-continuity/` | 氡、石棉、旧建筑、学校、工作场所、长期肺部风险 | 看不见的室内暴露通过长潜伏期肺部和癌症风险侵蚀健康寿命 |
 | 潮湿生物暴露必须被治理 | `mold-dampness-indoor-biological-exposure/` | 霉菌、潮湿、漏水、室内过敏原、灾后水损、住房质量 | 住房变成呼吸、免疫、睡眠和心理压力的持续暴露源 |
 | 病媒传播风险必须被环境控制接住 | `vector-borne-disease-environmental-control/` | 蚊媒、蜱媒、气候水文、动物宿主、住房环境、病媒控制 | 感染风险重新定价居住、工作、旅行、农业和公共卫生连续性 |
+| 医疗偏好必须可在失能时传递 | `advance-care-planning-medical-decision-continuity/` | advance directives、health care proxy、治疗目标、偏好沟通 | 主体无法表达时，医疗团队和家属只能猜测偏好，导致过度、过少或错位治疗 |
+| 决策能力变化后权利必须被支持 | `supported-decision-making-guardianship-rights/` | 支持性决策、监护、最低限制替代、权利监督 | 保护安排可能变成失权、隔离、控制和剥夺主体参与 |
+| 医疗信息访问必须在授权边界内连续 | `healthcare-personal-representative-hipaa-access-continuity/` | HIPAA personal representative、照护者访问、医疗记录、隐私边界 | 没有授权访问会让药物、结果、预约和转诊断裂；越权访问会侵蚀隐私 |
+| 财务任务必须可被受托代办且防剥削 | `financial-fiduciary-power-of-attorney-continuity/` | financial power of attorney、fiduciary duty、账单、资产、记录 | 失能后住房、保险、照护和支付可能断线，或被代理人滥用资源 |
+| 公共福利收入必须在能力下降时仍服务主体 | `representative-payee-benefits-management-continuity/` | representative payee、VA fiduciary、福利代管、报告和监督 | 底线收入可能被挪用、浪费、断供或无法转化为住房、食物和医疗 |
+| 事务和长期项目必须在失能/死亡边界可交接 | `trust-estate-affairs-succession-continuity/` | 事务整理、受益人、trustee、executor、账户文件、项目交接 | 资源、资料、责任和项目被冻结、丢失、争议化或无法继续服务主体意图 |
 | 栖居空间可保护生命 | `building-fire-life-safety-codes/` | 建筑规范、消防规范、疏散、烟雾报警、无障碍、结构韧性 | 居住、照护、学习、工作和公共空间成为火灾、烟雾、结构和疏散风险源 |
 | 关键物质系统可制造修复 | `manufacturing-repair-capacity/` | 制造、维修、维护、备件、质量、本地生产、关键设备恢复 | 设备损坏、备件短缺、质量缺陷和生产能力不足导致服务与工具系统失效 |
 | 公共预算可转化为服务 | `public-procurement-contracting-capacity/` | 公共采购、合同、供应商管理、应急采购、透明度、交付验收 | 有预算和政策但采购失败、合同失效、腐败、延误或劣质交付 |
@@ -292,6 +299,7 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
   -> 感官、沟通与具身反馈连续性可维持输入、表达、定向、摄食和身体边界
   -> 行星、地球物理与极端热风险可被观测、预警、缓解和恢复
   -> 慢性环境暴露可被识别、降低并纳入恢复成本
+  -> 决策权、代理权与受托连续性可保护失能边界上的意愿、访问、资源和责任
   -> 神经与身份连续
   -> 时间窗口延展
   -> 认知与工具增强

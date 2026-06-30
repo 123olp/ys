@@ -231,6 +231,12 @@
 - `radon-asbestos-indoor-hazard-continuity/`：氡、石棉与室内长期危害连续性，整理建筑遗留危害、长期肺部风险、住房学校工作场所暴露和治理边界。
 - `mold-dampness-indoor-biological-exposure/`：霉菌、潮湿与室内生物暴露，整理建筑潮湿、霉菌、室内过敏原和灾后水损对呼吸、睡眠和住房稳定的影响。
 - `vector-borne-disease-environmental-control/`：病媒传播疾病与环境控制，整理蚊媒、蜱媒、气候水文、住房环境、动物宿主和公共卫生控制。
+- `advance-care-planning-medical-decision-continuity/`：预先医疗照护计划与医疗决策连续性，整理 advance directives、医疗代理、目标照护和失能时偏好传递。
+- `supported-decision-making-guardianship-rights/`：支持性决策、监护与权利保护，整理能力变化后的决策支持、最低限制替代、监督和防滥用边界。
+- `healthcare-personal-representative-hipaa-access-continuity/`：医疗个人代表与 HIPAA 访问连续性，整理授权照护者、医疗记录访问、隐私边界和资料断点。
+- `financial-fiduciary-power-of-attorney-continuity/`：财务受托与授权代理连续性，整理财务授权、受托责任、账单资产管理和防剥削机制。
+- `representative-payee-benefits-management-continuity/`：代表收款人与福利代管连续性，整理 SSA/VA 等福利代收代管、报告义务、监督和主体保护。
+- `trust-estate-affairs-succession-continuity/`：事务、信托、遗产与继承连续性，整理失能或死亡边界附近的文件、账户、角色和项目交接。
 - `supply-chain-continuity/`：供应链连续性，整理关键物资、服务、物流、替代路径和恢复时间。
 - `synthetic-biology-biosecurity/`：合成生物学与生物安全，整理双重用途、生物安全、生物安保和治理边界。
 - `space-extreme-habitation/`：空间与极端栖居，整理辐射、微重力、隔离、闭环资源和远程医疗风险。
