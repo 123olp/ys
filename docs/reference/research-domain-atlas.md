@@ -22,6 +22,7 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
   -> 工具和认知系统必须放大主体而不是吞噬主体
   -> 家庭物理操作系统必须让住所、食物、卫生、物品、投递和维修可连续
   -> 个人移动执行系统必须让车辆、补能、停车、主动出行、辅助交通、按需交通、支付账户和实时导向可连续
+  -> 公共空间生存接入系统必须让离家后的如厕、补水、休息降温、避难、连接、绿地恢复和无障碍服务可连续
   -> 数字身份、AI 代理、供应链、生物安全和极端栖居等外部技术底座必须可控
   -> 治理和权利必须保护同意、退出和身份
   -> 测量、预测和反馈必须让维护过程可校正
@@ -272,6 +273,14 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 按需交通必须可补位 | `taxi-rideshare-demand-response-mobility-continuity/` | 出租车、网约车、需求响应交通、供给、价格、无障碍车辆、平台治理 | 固定线路或私车不足时，按需交通失败会放大服务不可达和时间损耗 |
 | 交通支付账户必须不中断 | `transit-fare-payment-toll-account-continuity/` | 票卡、移动支付、优惠资格、余额、过路费、罚费、账户恢复 | 支付和账户失败会把公共交通、收费道路和优惠资格从可用资源变成摩擦 |
 | 实时路线与导向必须可信 | `multimodal-trip-planning-real-time-wayfinding-continuity/` | GTFS/Realtime、换乘、延误、无障碍路径、标识、离线备份 | 信息不准、换乘失败或导向缺失会让复杂交通网络在行动时失效 |
+| 公共如厕卫生必须可达 | `public-restroom-sanitation-hygiene-access-continuity/` | 公共厕所、洗手、卫生维护、经期卫生、家庭/无障碍厕所 | 如厕和卫生接入失败会压缩离家停留时间、尊严、安全和公共参与 |
+| 公共补水必须可信 | `public-drinking-water-hydration-access-continuity/` | 饮水机、补水站、水质告警、应急供水、高温补水 | 脱水、热应激、疲劳和用药风险会把公共空间任务转成身体风险 |
+| 公共休息降温必须允许停留 | `public-seating-shade-rest-cooling-access-continuity/` | 公共座椅、遮阴、树冠、候车休息、降温设施、冷却中心 | 不能休息和降温会让老人、儿童、残障者、慢病患者和户外劳动者被排除出公共空间 |
+| 社区韧性中心必须接回生命线 | `community-resilience-hub-shelter-center-continuity/` | 韧性中心、避难所、冷却/取暖/清洁空气中心、公共充电、物资分发 | 灾害中电力、温控、通信、水和信息断裂会让主体失联、暴露和恢复失败 |
+| 图书馆社区锚点必须低门槛可用 | `public-library-community-anchor-access-continuity/` | 公共电脑、Wi-Fi、打印扫描、学习空间、数字技能、服务导航 | 信息、设备和服务申请入口断裂会放大数字排除、就业失败和公共服务不可达 |
+| 公园绿地必须支撑恢复 | `parks-recreation-green-space-access-continuity/` | 公园、绿地、步道、运动场、游乐场、自然接触、公共娱乐设施 | 绿地不可达会减少身体活动、心理恢复、社交连接和热环境缓冲 |
+| 公共连接和充电必须不断线 | `public-wifi-device-charging-connectivity-continuity/` | 公共 Wi-Fi、公共电脑、设备充电、断电通信恢复、数字服务访问 | 失联、没电、导航支付失败和错过告警会截断离家任务与灾害恢复 |
+| 公共场所无障碍必须连续 | `public-accommodation-accessibility-service-continuity/` | 无障碍入口、有效沟通、合理便利、服务动物、辅助设备、临时中断 | 身体、感官、认知和沟通差异会被服务接口失败转化为制度排除 |
 | 栖居空间可保护生命 | `building-fire-life-safety-codes/` | 建筑规范、消防规范、疏散、烟雾报警、无障碍、结构韧性 | 居住、照护、学习、工作和公共空间成为火灾、烟雾、结构和疏散风险源 |
 | 关键物质系统可制造修复 | `manufacturing-repair-capacity/` | 制造、维修、维护、备件、质量、本地生产、关键设备恢复 | 设备损坏、备件短缺、质量缺陷和生产能力不足导致服务与工具系统失效 |
 | 公共预算可转化为服务 | `public-procurement-contracting-capacity/` | 公共采购、合同、供应商管理、应急采购、透明度、交付验收 | 有预算和政策但采购失败、合同失效、腐败、延误或劣质交付 |
@@ -635,6 +644,14 @@ risk-engineering
   -> taxi-rideshare-demand-response-mobility-continuity
   -> transit-fare-payment-toll-account-continuity
   -> multimodal-trip-planning-real-time-wayfinding-continuity
+  -> public-restroom-sanitation-hygiene-access-continuity
+  -> public-drinking-water-hydration-access-continuity
+  -> public-seating-shade-rest-cooling-access-continuity
+  -> community-resilience-hub-shelter-center-continuity
+  -> public-library-community-anchor-access-continuity
+  -> parks-recreation-green-space-access-continuity
+  -> public-wifi-device-charging-connectivity-continuity
+  -> public-accommodation-accessibility-service-continuity
   -> community-resource-navigation
   -> social-determinants-community-vulnerability
   -> public-service-design-accessibility

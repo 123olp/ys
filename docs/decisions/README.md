@@ -69,3 +69,4 @@ Current decisions:
 - `0054-add-fiftieth-wave-personal-operations-continuity-domains.md`
 - `0055-add-fifty-first-wave-household-operations-continuity-domains.md`
 - `0056-add-fifty-second-wave-personal-mobility-execution-continuity-domains.md`
+- `0057-add-fifty-third-wave-public-realm-survival-access-continuity-domains.md`

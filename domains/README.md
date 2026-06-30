@@ -337,6 +337,14 @@
 - `taxi-rideshare-demand-response-mobility-continuity/`：出租车、网约车与需求响应交通连续性，整理按需车辆、供给覆盖、价格激增、无障碍车辆、司机取消和平台治理。
 - `transit-fare-payment-toll-account-continuity/`：交通票卡、支付与过路费账户连续性，整理公交票卡、移动支付、优惠资格、账户余额、过路费、罚费和账户恢复。
 - `multimodal-trip-planning-real-time-wayfinding-continuity/`：多模式路线规划、实时信息与导向连续性，整理 GTFS/Realtime、换乘、延误、无障碍路径、导向标识和离线备份。
+- `public-restroom-sanitation-hygiene-access-continuity/`：公共厕所、卫生与如厕可达连续性，整理公共厕所、洗手、卫生维护、经期卫生、家庭/无障碍厕所和照护辅助空间。
+- `public-drinking-water-hydration-access-continuity/`：公共饮水与补水可达连续性，整理公共饮水点、补水站、饮水机、水质告警、应急供水和高温补水。
+- `public-seating-shade-rest-cooling-access-continuity/`：公共座椅、遮阴、休息与降温连续性，整理公共座椅、树荫、候车休息、降温设施、冷却中心和可停留空间。
+- `community-resilience-hub-shelter-center-continuity/`：社区韧性中心、避难与灾害服务连续性，整理韧性中心、避难所、冷却/取暖/清洁空气中心、公共充电和物资分发。
+- `public-library-community-anchor-access-continuity/`：公共图书馆与社区锚点接入连续性，整理公共电脑、Wi-Fi、打印扫描、学习空间、数字技能和服务导航。
+- `parks-recreation-green-space-access-continuity/`：公园、娱乐与绿地接入连续性，整理公园、绿地、步道、运动场、游乐场、自然接触和公共娱乐设施。
+- `public-wifi-device-charging-connectivity-continuity/`：公共 Wi-Fi、设备充电与连接连续性，整理公共 Wi-Fi、公共电脑、设备充电点、断电通信恢复和数字服务访问。
+- `public-accommodation-accessibility-service-continuity/`：公共场所无障碍与服务接入连续性，整理无障碍入口、有效沟通、合理便利、服务动物、辅助设备和临时中断。
 - `supply-chain-continuity/`：供应链连续性，整理关键物资、服务、物流、替代路径和恢复时间。
 - `synthetic-biology-biosecurity/`：合成生物学与生物安全，整理双重用途、生物安全、生物安保和治理边界。
 - `space-extreme-habitation/`：空间与极端栖居，整理辐射、微重力、隔离、闭环资源和远程医疗风险。

@@ -356,6 +356,14 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `taxi-rideshare-demand-response-mobility-continuity/` | 出租车、网约车和需求响应交通决定固定线路或私车不足时主体是否还有补位移动能力 |
 | `transit-fare-payment-toll-account-continuity/` | 交通票卡、移动支付和过路费账户决定公共交通与收费道路是否会被账户、余额、罚费和优惠资格摩擦截断 |
 | `multimodal-trip-planning-real-time-wayfinding-continuity/` | 多模式路线规划、实时信息和导向决定复杂交通网络是否能被主体理解、换乘、修正和恢复 |
+| `public-restroom-sanitation-hygiene-access-continuity/` | 公共厕所、洗手和卫生维护决定主体离家后的尊严、停留时间、卫生风险和公共参与能否持续 |
+| `public-drinking-water-hydration-access-continuity/` | 公共饮水和补水点决定主体在户外、交通、高温和灾害中是否能维持体液、热调节和行动能力 |
+| `public-seating-shade-rest-cooling-access-continuity/` | 公共座椅、遮阴、休息和降温决定主体是否能在公共空间分段恢复，而不是被疲劳和热暴露驱逐 |
+| `community-resilience-hub-shelter-center-continuity/` | 社区韧性中心和避难服务决定灾害中电力、通信、温控、水、信息和基础服务是否能重新接入主体 |
+| `public-library-community-anchor-access-continuity/` | 公共图书馆和社区锚点决定低门槛信息、设备、学习空间、数字技能和公共服务导航是否可用 |
+| `parks-recreation-green-space-access-continuity/` | 公园、娱乐和绿地决定低成本身体活动、心理恢复、社交连接、儿童活动和热环境缓冲是否可达 |
+| `public-wifi-device-charging-connectivity-continuity/` | 公共 Wi-Fi 和设备充电决定主体离家、旅行或断电时是否仍能通信、导航、支付、求助和访问数字服务 |
+| `public-accommodation-accessibility-service-continuity/` | 公共场所无障碍和服务连续性决定身体、感官、认知和沟通差异是否会被公共服务接口排除 |
 
 ## 来源信号
 
@@ -1232,6 +1240,22 @@ Source links:
 - https://www.cancer.gov/nano
 - https://www.fda.gov/science-research/science-and-research-special-topics/nanotechnology-programs-fda
 - https://www.fda.gov/drugs/science-and-research-drugs/artificial-intelligence-and-machine-learning-drug-development
+- https://www.cdc.gov/healthywater/global/wash.html
+- https://www.cdc.gov/handwashing/
+- https://www.epa.gov/ground-water-and-drinking-water
+- https://www.cdc.gov/drinking-water/
+- https://www.cdc.gov/heat-health/
+- https://www.epa.gov/heatislands/heat-island-cooling-strategies
+- https://www.fema.gov/emergency-managers/practitioners/lifelines
+- https://www.ready.gov/shelter
+- https://www.imls.gov/research-evaluation/data-collection/public-libraries-survey
+- https://www.fcc.gov/general/e-rate-schools-libraries-usf-program
+- https://www.cdc.gov/physical-activity/php/toolkit/parks-trails-health.html
+- https://www.epa.gov/green-infrastructure
+- https://www.fcc.gov/emergency
+- https://www.ada.gov/topics/title-ii/
+- https://www.ada.gov/topics/title-iii/
+- https://www.ada.gov/topics/service-animals/
 - https://www.nature.com/articles/s41586-024-07087-8
 - https://www.nature.com/articles/s41573-025-01323-0
 - https://braininitiative.nih.gov/

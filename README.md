@@ -560,6 +560,14 @@ flowchart TD
     H --> TRDRMC[taxi-rideshare-demand-response-mobility-continuity<br/>出租网约 / 需求响应]
     H --> TFPTAC[transit-fare-payment-toll-account-continuity<br/>票卡支付 / 过路费账户]
     H --> MTPRWC[multimodal-trip-planning-real-time-wayfinding-continuity<br/>路线规划 / 实时导向]
+    H --> PRSHAC[public-restroom-sanitation-hygiene-access-continuity<br/>公共厕所 / 卫生可达]
+    H --> PDWHAC[public-drinking-water-hydration-access-continuity<br/>公共饮水 / 补水可达]
+    H --> PSSRCC[public-seating-shade-rest-cooling-access-continuity<br/>座椅遮阴 / 休息降温]
+    H --> CRHSCC[community-resilience-hub-shelter-center-continuity<br/>韧性中心 / 避难服务]
+    H --> PLCAAC[public-library-community-anchor-access-continuity<br/>图书馆 / 社区锚点]
+    H --> PRGSAC[parks-recreation-green-space-access-continuity<br/>公园绿地 / 恢复空间]
+    H --> PWDCCC[public-wifi-device-charging-connectivity-continuity<br/>公共 Wi-Fi / 设备充电]
+    H --> PAASC[public-accommodation-accessibility-service-continuity<br/>公共场所 / 无障碍服务]
     H --> MF[measurement-feedback<br/>测量 / 预测 / 反馈]
     H --> C[disembodied-cns<br/>去具身中枢生命系统]
     H --> M[memory-editing<br/>记忆编辑与人格连续性]
@@ -792,6 +800,14 @@ flowchart TD
 | [Taxi Rideshare Demand Response Mobility Continuity](domains/taxi-rideshare-demand-response-mobility-continuity/README.md) | 出租车、网约车、需求响应交通、供给覆盖、价格激增、无障碍车辆和平台治理 | 在固定路线、私家车和步行骑行不足时提供可调度的补位移动能力 | 不提供平台规避、刷单、司机乘客骚扰、价格操纵、账号规避、绕过安全审核或个案投诉策略 |
 | [Transit Fare Payment Toll Account Continuity](domains/transit-fare-payment-toll-account-continuity/README.md) | 公交票卡、移动支付、优惠资格、账户余额、过路费、罚费和账户恢复 | 防止支付、票卡、折扣资格和收费账户失败把公共交通和道路使用变成不可达 | 不提供逃票、票卡破解、过路费规避、优惠资格冒用、账户接管或罚费申诉策略 |
 | [Multimodal Trip Planning Real Time Wayfinding Continuity](domains/multimodal-trip-planning-real-time-wayfinding-continuity/README.md) | GTFS/Realtime、换乘、延误、无障碍路径、导向标识、离线备份和服务变更 | 让主体在复杂交通网络中知道如何走、何时换乘、何处中止和如何恢复 | 不提供路线跟踪、隐私侵害、系统爬取滥用、运营调度攻击、逃票路线或个案出行建议 |
+| [Public Restroom Sanitation Hygiene Access Continuity](domains/public-restroom-sanitation-hygiene-access-continuity/README.md) | 公共厕所、洗手、卫生维护、经期卫生、家庭/无障碍厕所和照护辅助空间 | 让主体离家后仍能维持尊严、卫生、停留时间、行动半径和公共参与 | 不提供厕所定位跟踪、设施破坏、非法进入、隐私侵犯、骚扰或个案投诉策略 |
+| [Public Drinking Water Hydration Access Continuity](domains/public-drinking-water-hydration-access-continuity/README.md) | 公共饮水点、补水站、饮水机、水质告警、应急供水和高温补水 | 防止脱水、热应激、疲劳、用药风险和公共空间停留失败截断行动 | 不提供供水系统篡改、污染制造、设施盗水、敏感基础设施细节或医疗建议 |
+| [Public Seating Shade Rest Cooling Access Continuity](domains/public-seating-shade-rest-cooling-access-continuity/README.md) | 公共座椅、遮阴、树冠、候车休息、降温设施和冷却中心 | 让公共空间允许主体分段恢复体力和热负荷，而不是只能移动不能停留 | 不提供公共空间规避、设施占用破坏、露宿策略、实时人流跟踪或执法建议 |
+| [Community Resilience Hub Shelter Center Continuity](domains/community-resilience-hub-shelter-center-continuity/README.md) | 社区韧性中心、避难所、冷却/取暖/清洁空气中心、公共充电和物资分发 | 在灾害中重新接入电力、温控、通信、水、信息、照护和基础服务 | 不提供避难资格规避、安保绕过、物资骗领、实时拥挤跟踪或救援指挥 |
+| [Public Library Community Anchor Access Continuity](domains/public-library-community-anchor-access-continuity/README.md) | 公共图书馆、社区中心、公共电脑、Wi-Fi、打印扫描、信息导航和数字技能 | 把信息、网络、设备、学习空间和服务申请入口低门槛交给主体 | 不提供系统绕过、账号滥用、公共设备规避、隐私侵犯或个案福利/法律策略 |
+| [Parks Recreation Green Space Access Continuity](domains/parks-recreation-green-space-access-continuity/README.md) | 公园、绿地、步道、运动场、游乐场、自然接触和公共娱乐设施 | 让身体活动、心理恢复、社交连接和热环境缓冲具备低成本公共空间 | 不提供违规进入、设施破坏、露宿规避、儿童/弱势群体跟踪或野外风险操作 |
+| [Public Wifi Device Charging Connectivity Continuity](domains/public-wifi-device-charging-connectivity-continuity/README.md) | 公共 Wi-Fi、公共电脑、设备充电点、断电通信恢复和数字服务访问 | 防止失联、错过告警、导航支付失败、医疗门户断裂和信息失明 | 不提供网络攻击、认证绕过、蹭网滥用、设备盗充、公共电脑规避或账号盗用 |
+| [Public Accommodation Accessibility Service Continuity](domains/public-accommodation-accessibility-service-continuity/README.md) | 公共场所无障碍、合理便利、有效沟通、服务动物、辅助设备和临时中断 | 让身体、感官、认知和沟通差异不再直接截断公共任务入口 | 不提供 ADA 诉讼策略、服务动物欺诈、伪造残障文件、规避规则或法律建议 |
 | [Regenerative Medicine](domains/regenerative-medicine/README.md) | 干细胞、组织工程、器官再生、类器官、移植 | 器官/组织修复框架、功能终点和整合风险 | 不提供手术、细胞制备、移植或人体实验步骤 |
 | [Rehabilitation And Functioning](domains/rehabilitation-functioning/README.md) | 康复、功能恢复、失能预防、活动能力、自理和社会参与 | 功能状态、活动能力、参与能力和失能风险模型 | 不提供个人康复处方、训练计划、诊断或治疗建议 |
 | [Cancer Control](domains/cancer-control/README.md) | 癌症预防、早筛、治疗、复发、肿瘤演化 | 癌症风险函数、证据层级和长期控制变量 | 不提供诊断、治疗方案、处方、剂量或个体用药建议 |
@@ -1014,6 +1030,14 @@ human_infra/
 │   ├── taxi-rideshare-demand-response-mobility-continuity/
 │   ├── transit-fare-payment-toll-account-continuity/
 │   ├── multimodal-trip-planning-real-time-wayfinding-continuity/
+│   ├── public-restroom-sanitation-hygiene-access-continuity/
+│   ├── public-drinking-water-hydration-access-continuity/
+│   ├── public-seating-shade-rest-cooling-access-continuity/
+│   ├── community-resilience-hub-shelter-center-continuity/
+│   ├── public-library-community-anchor-access-continuity/
+│   ├── parks-recreation-green-space-access-continuity/
+│   ├── public-wifi-device-charging-connectivity-continuity/
+│   ├── public-accommodation-accessibility-service-continuity/
 │   ├── cognitive-augmentation/
 │   ├── digital-identity-security/
 │   ├── disembodied-cns/
@@ -1297,5 +1321,6 @@ flowchart LR
 - 2026-06-30：新增第五十波 8 个个人操作与任务协调连续性域，覆盖日历排程预约、通知警报路由、提醒闹钟例行任务、会议视频远程协作、文件捕获 OCR PDF 记录流、搜索索引发现检索、个人自动化集成工作流和协作文档权限版本。
 - 2026-06-30：新增第五十一波 8 个家庭物理运行连续性域，覆盖住所进入钥匙门禁、家用电器维护维修、家庭冷藏食品保存、烹饪备餐厨房安全、洗衣衣物鞋履卫生、家庭清洁消毒害虫控制、邮件包裹投递自提和家庭维修承包商服务。
 - 2026-06-30：新增第五十二波 8 个个人移动执行连续性域，覆盖个人车辆维护召回维修、燃料/EV 充电补能、停车路缘拖车扣押、步行骑行微移动、paratransit/NEMT、出租车网约车需求响应交通、交通票卡/过路费账户和多模式实时导向。
+- 2026-06-30：新增第五十三波 8 个公共空间生存接入连续性域，覆盖公共厕所卫生、公共饮水补水、公共座椅遮阴休息降温、社区韧性/避难中心、公共图书馆社区锚点、公园娱乐绿地、公共 Wi-Fi/设备充电和公共场所无障碍服务。
 
 完整记录见 [CHANGELOG.md](CHANGELOG.md)。

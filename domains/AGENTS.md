@@ -494,6 +494,30 @@ domains/
 ├── multimodal-trip-planning-real-time-wayfinding-continuity/
 │   ├── AGENTS.md
 │   └── README.md
+├── public-restroom-sanitation-hygiene-access-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── public-drinking-water-hydration-access-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── public-seating-shade-rest-cooling-access-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── community-resilience-hub-shelter-center-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── public-library-community-anchor-access-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── parks-recreation-green-space-access-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── public-wifi-device-charging-connectivity-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── public-accommodation-accessibility-service-continuity/
+│   ├── AGENTS.md
+│   └── README.md
 ├── cognitive-augmentation/
 │   ├── AGENTS.md
 │   └── README.md
@@ -1071,6 +1095,7 @@ domains/
 - `calendar-scheduling-appointment-continuity/`、`notification-alert-routing-attention-continuity/`、`reminder-alarm-routine-task-continuity/`、`meeting-video-conferencing-remote-collaboration-continuity/`、`document-capture-ocr-pdf-record-workflow-continuity/`、`search-index-discovery-retrieval-continuity/`、`personal-automation-integration-workflow-continuity/` 和 `collaborative-document-permission-version-continuity/` 负责日历排程预约、通知警报路由、提醒闹钟例行任务、会议视频远程协作、文件捕获 OCR PDF 记录流、搜索索引发现检索、个人自动化集成工作流和协作文档权限版本这些个人操作与任务协调连续性条件。
 - `home-access-lock-key-entry-continuity/`、`household-appliance-maintenance-repair-continuity/`、`home-refrigeration-food-storage-continuity/`、`cooking-meal-preparation-kitchen-safety-continuity/`、`laundry-clothing-footwear-hygiene-continuity/`、`household-cleaning-disinfection-pest-control-continuity/`、`postal-parcel-delivery-pickup-continuity/` 和 `household-maintenance-repair-contractor-continuity/` 负责住所进入、家电维护、家庭冷藏、烹饪备餐、衣物鞋履卫生、家庭清洁消毒害虫控制、邮件包裹接收和家庭维修承包商这些家庭物理运行连续性条件。
 - `personal-vehicle-maintenance-recall-repair-continuity/`、`fuel-ev-charging-refueling-access-continuity/`、`parking-curb-access-towing-impound-continuity/`、`walking-bicycling-micromobility-continuity/`、`paratransit-nemt-access-continuity/`、`taxi-rideshare-demand-response-mobility-continuity/`、`transit-fare-payment-toll-account-continuity/` 和 `multimodal-trip-planning-real-time-wayfinding-continuity/` 负责个人车辆维护召回维修、燃料/EV 充电补能、停车路缘拖车扣押、步行骑行微移动、paratransit/NEMT、出租车网约车需求响应交通、交通票卡/过路费账户和多模式实时导向这些个人移动执行连续性条件。
+- `public-restroom-sanitation-hygiene-access-continuity/`、`public-drinking-water-hydration-access-continuity/`、`public-seating-shade-rest-cooling-access-continuity/`、`community-resilience-hub-shelter-center-continuity/`、`public-library-community-anchor-access-continuity/`、`parks-recreation-green-space-access-continuity/`、`public-wifi-device-charging-connectivity-continuity/` 和 `public-accommodation-accessibility-service-continuity/` 负责公共厕所卫生、公共饮水补水、公共座椅遮阴休息降温、社区韧性/避难中心、公共图书馆社区锚点、公园娱乐绿地、公共 Wi-Fi/设备充电和公共场所无障碍服务这些公共空间生存接入连续性条件。
 - `access-to-justice-legal-aid/`、`civic-participation-election-access/`、`migration-displacement-humanitarian-continuity/` 和 `digital-inclusion-connectivity/` 负责司法可及、公民参与、迁移流离失所人道连续性和数字连接这些制度参与与公共服务接入条件。
 - `personal-safety-violence-prevention/` 和 `product-safety-recall-systems/` 负责暴力预防、受害者支持、产品缺陷报告、召回和纠正这些公共安全连续性条件。
 - `cellular-reprogramming/` 负责山中因子、部分重编程、化学重编程、AI 因子设计和表观遗传编辑等“细胞状态可重写”谱系，不提供实验协议或人体应用建议。
@@ -1098,6 +1123,7 @@ domains/
 - `calendar-scheduling-appointment-continuity/`、`notification-alert-routing-attention-continuity/`、`reminder-alarm-routine-task-continuity/`、`meeting-video-conferencing-remote-collaboration-continuity/`、`document-capture-ocr-pdf-record-workflow-continuity/`、`search-index-discovery-retrieval-continuity/`、`personal-automation-integration-workflow-continuity/` 和 `collaborative-document-permission-version-continuity/` 负责个人操作与任务协调连续性的证据边界，不提供抢号刷号、垃圾推送、监控控制、会议入侵、文件伪造、搜索排名操纵、凭证滥用、平台限制规避、未授权导出或隐私窃取方法。
 - `home-access-lock-key-entry-continuity/`、`household-appliance-maintenance-repair-continuity/`、`home-refrigeration-food-storage-continuity/`、`cooking-meal-preparation-kitchen-safety-continuity/`、`laundry-clothing-footwear-hygiene-continuity/`、`household-cleaning-disinfection-pest-control-continuity/`、`postal-parcel-delivery-pickup-continuity/` 和 `household-maintenance-repair-contractor-continuity/` 负责家庭物理运行连续性的证据边界，不提供开锁入侵、危险维修、燃气电气施工、食品处置、化学品混合、杀虫剂使用、邮件拦截、冒领、承包商规避、理赔策略、法律意见或个体购买建议。
 - `personal-vehicle-maintenance-recall-repair-continuity/`、`fuel-ev-charging-refueling-access-continuity/`、`parking-curb-access-towing-impound-continuity/`、`walking-bicycling-micromobility-continuity/`、`paratransit-nemt-access-continuity/`、`taxi-rideshare-demand-response-mobility-continuity/`、`transit-fare-payment-toll-account-continuity/` 和 `multimodal-trip-planning-real-time-wayfinding-continuity/` 负责个人移动执行连续性的证据边界，不提供车辆维修步骤、危险燃料处理、充电桩破解、停车执法规避、交通违法、共享设备破解、NEMT 资格规避、报销欺诈、平台规避、逃票、票卡破解、过路费规避、路线跟踪或个案申诉/法律策略。
+- `public-restroom-sanitation-hygiene-access-continuity/`、`public-drinking-water-hydration-access-continuity/`、`public-seating-shade-rest-cooling-access-continuity/`、`community-resilience-hub-shelter-center-continuity/`、`public-library-community-anchor-access-continuity/`、`parks-recreation-green-space-access-continuity/`、`public-wifi-device-charging-connectivity-continuity/` 和 `public-accommodation-accessibility-service-continuity/` 负责公共空间生存接入连续性的证据边界，不提供厕所定位跟踪、设施破坏、供水篡改、污染制造、露宿/避难资格规避、公共 Wi-Fi 攻击、设备盗充、服务动物欺诈、ADA 诉讼策略、儿童/弱势群体跟踪、实时拥挤跟踪、执法规避或个案法律/医疗/救援建议。
 - `regenerative-medicine/`、`cancer-control/` 和 `immune-maintenance/` 负责身体基底维护相关的机制、风险和证据边界。
 - `rehabilitation-functioning/`、`assistive-technology-access/`、`skin-barrier-wound-healing/` 和 `sensory-continuity/` 负责功能恢复、能力补偿、外界屏障和感官反馈连续性。
 - `antimicrobial-resilience/` 负责抗微生物耐药、感染控制和现代医学抗感染底座。

@@ -207,6 +207,14 @@ human_infra/
     ├── taxi-rideshare-demand-response-mobility-continuity/ # 出租车、网约车与需求响应交通连续性
     ├── transit-fare-payment-toll-account-continuity/ # 交通票卡、支付与过路费账户连续性
     ├── multimodal-trip-planning-real-time-wayfinding-continuity/ # 多模式路线规划、实时信息与导向连续性
+    ├── public-restroom-sanitation-hygiene-access-continuity/ # 公共厕所、卫生与如厕可达连续性
+    ├── public-drinking-water-hydration-access-continuity/ # 公共饮水与补水可达连续性
+    ├── public-seating-shade-rest-cooling-access-continuity/ # 公共座椅、遮阴、休息与降温连续性
+    ├── community-resilience-hub-shelter-center-continuity/ # 社区韧性中心、避难与灾害服务连续性
+    ├── public-library-community-anchor-access-continuity/ # 公共图书馆与社区锚点接入连续性
+    ├── parks-recreation-green-space-access-continuity/ # 公园、娱乐与绿地接入连续性
+    ├── public-wifi-device-charging-connectivity-continuity/ # 公共 Wi-Fi、设备充电与连接连续性
+    ├── public-accommodation-accessibility-service-continuity/ # 公共场所无障碍与服务接入连续性
     ├── cognitive-augmentation/ # 认知增强与工具放大
     ├── digital-identity-security/ # 数字身份安全
     ├── disembodied-cns/   # 去具身外部维持型中枢生命系统
@@ -603,6 +611,7 @@ human_infra/
 - `domains/calendar-scheduling-appointment-continuity/`、`domains/notification-alert-routing-attention-continuity/`、`domains/reminder-alarm-routine-task-continuity/`、`domains/meeting-video-conferencing-remote-collaboration-continuity/`、`domains/document-capture-ocr-pdf-record-workflow-continuity/`、`domains/search-index-discovery-retrieval-continuity/`、`domains/personal-automation-integration-workflow-continuity/` 和 `domains/collaborative-document-permission-version-continuity/` 负责日历排程预约、通知警报路由、提醒闹钟例行任务、会议视频远程协作、文件捕获 OCR PDF 记录流、搜索索引发现检索、个人自动化集成工作流和协作文档权限版本这些个人操作与任务协调连续性条件。
 - `domains/home-access-lock-key-entry-continuity/`、`domains/household-appliance-maintenance-repair-continuity/`、`domains/home-refrigeration-food-storage-continuity/`、`domains/cooking-meal-preparation-kitchen-safety-continuity/`、`domains/laundry-clothing-footwear-hygiene-continuity/`、`domains/household-cleaning-disinfection-pest-control-continuity/`、`domains/postal-parcel-delivery-pickup-continuity/` 和 `domains/household-maintenance-repair-contractor-continuity/` 负责住所进入、家电维护、家庭冷藏、烹饪备餐、衣物鞋履卫生、家庭清洁消毒害虫控制、邮件包裹接收和家庭维修承包商这些家庭物理运行连续性条件。
 - `domains/personal-vehicle-maintenance-recall-repair-continuity/`、`domains/fuel-ev-charging-refueling-access-continuity/`、`domains/parking-curb-access-towing-impound-continuity/`、`domains/walking-bicycling-micromobility-continuity/`、`domains/paratransit-nemt-access-continuity/`、`domains/taxi-rideshare-demand-response-mobility-continuity/`、`domains/transit-fare-payment-toll-account-continuity/` 和 `domains/multimodal-trip-planning-real-time-wayfinding-continuity/` 负责车辆、补能、停车、主动出行、辅助交通、按需交通、移动支付和出行信息这些个人移动执行连续性条件。
+- `domains/public-restroom-sanitation-hygiene-access-continuity/`、`domains/public-drinking-water-hydration-access-continuity/`、`domains/public-seating-shade-rest-cooling-access-continuity/`、`domains/community-resilience-hub-shelter-center-continuity/`、`domains/public-library-community-anchor-access-continuity/`、`domains/parks-recreation-green-space-access-continuity/`、`domains/public-wifi-device-charging-connectivity-continuity/` 和 `domains/public-accommodation-accessibility-service-continuity/` 负责公共厕所、公共饮水、公共休息遮阴、社区韧性/避难中心、图书馆社区锚点、公园绿地、公共 Wi-Fi/设备充电和公共场所无障碍服务这些公共空间生存接入连续性条件。
 - `domains/disembodied-cns/` 负责去具身外部维持型中枢生命系统的高层架构建模，不提供实验操作协议。
 - `domains/memory-editing/` 负责记忆编辑的概念、证据、验证和伦理边界，不提供可执行神经操控步骤。
 - `domains/biostasis-cryopreservation/` 负责冷冻保存、生物停滞、休眠和等待未来修复路径。
@@ -657,6 +666,7 @@ human_infra/
 - 2026-06-30：新增第四十八波 8 个数字账户与通信可达连续性域，覆盖邮箱账号恢复、手机号 SIM 携转安全、MFA/passkey 凭证恢复、密码管理器密钥库、云备份文件同步数据可携带、消息联系人图谱可携带、域名 DNS Web 存在和平台账号停权申诉。
 - 2026-06-30：新增第四十九波 8 个软件、设备与信任连续性域，覆盖个人计算设备生命周期维修、家庭网络路由器 IoT 安全、软件供应链依赖来源证明、软件更新漏洞补丁、开源维护者可持续、PKI 证书密码信任、云服务退出互操作和 API 平台运行时依赖。
 - 2026-06-30：新增第五十二波 8 个个人移动执行连续性域，覆盖个人车辆维护召回维修、燃料/EV 充电补能、停车路缘拖车扣押、步行骑行微移动、paratransit/NEMT、出租车网约车需求响应交通、交通票卡/过路费账户和多模式实时导向。
+- 2026-06-30：新增第五十三波 8 个公共空间生存接入连续性域，覆盖公共厕所卫生、公共饮水补水、公共座椅遮阴休息降温、社区韧性/避难中心、公共图书馆社区锚点、公园娱乐绿地、公共 Wi-Fi/设备充电和公共场所无障碍服务。
 - 2026-06-20：从 Biocat 单项目重组为 Human Infra 总项目；旧 Biocat 迁入 `domains/longevity-evidence/`；新增 `disembodied-cns` 与 `memory-editing` 子域；四份最新资料归档到 `docs/source-notes/`；按 Docs-as-Code 和 Diataxis 补齐根文件、协作模板、文档分层和结构检查脚本。
 - 2026-06-22：新增 `domains/future-waiting/` 和度规红移固有时差分路径（黑洞等待室），用于承载“压缩等待 / 去未来”类永生路径思想实验。
 - 2026-06-23：新增 GitHub Actions `make check` 门禁和 `.github/AGENTS.md`，准备远程仓库协作入口。

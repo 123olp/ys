@@ -972,6 +972,24 @@ Human Infra 不能被设计成更精密的压榨系统。
 - 不收集、复制、处理或要求车牌、VIN、驾照、保险、行程轨迹、位置历史、票卡号、过路费账户、支付账号、NEMT 资格资料、医疗预约、残障证明、网约车订单、司机乘客身份、停车罚单或拖车扣押文件。
 - 不替代车辆制造商、维修商、交通主管部门、公共交通机构、NEMT 服务方、ADA coordinator、消费者保护机构、支付机构、保险、医疗、法律、执法、监管机构或官方申诉渠道。
 
+## 公共空间生存接入连续性边界
+
+`public-restroom-sanitation-hygiene-access-continuity`、`public-drinking-water-hydration-access-continuity`、`public-seating-shade-rest-cooling-access-continuity`、`community-resilience-hub-shelter-center-continuity`、`public-library-community-anchor-access-continuity`、`parks-recreation-green-space-access-continuity`、`public-wifi-device-charging-connectivity-continuity` 和 `public-accommodation-accessibility-service-continuity` 关注公共空间中的如厕、补水、休息降温、避难、图书馆社区锚点、公园绿地、公共连接充电和无障碍服务如何让主体离家后仍能持续行动、恢复、通信、学习、申请服务和参与公共生活，不是设施规避、跟踪、攻击、欺诈、法律个案或救援指挥入口。
+
+可以做：
+
+- 整理 CDC WASH/handwashing、EPA/CDC drinking water、CDC heat health、EPA heat islands/green infrastructure、FEMA Community Lifelines、Ready.gov、CISA、IMLS、FCC、ADA.gov、地方公共卫生、图书馆、公园、交通、应急管理和无障碍公开资料中的机制、对象、变量和边界。
+- 比较公共厕所、公共饮水、公共休息降温、社区韧性中心、公共图书馆、绿地、公用 Wi-Fi/充电和公共场所无障碍如何影响离家停留时间、身体恢复、信息接入、灾害恢复、服务申请和公共参与。
+- 记录公共空间生存接入资料中的开放时段、维护状态、卫生质量、无障碍、隐私、热暴露、生命线服务、公共秩序、儿童/弱势群体安全和禁止用途边界。
+
+不能做：
+
+- 不提供厕所定位跟踪、偷拍骚扰、设施破坏、非法进入、规避公共空间管理、供水系统篡改、污染制造、设施盗水、露宿/避难资格规避、物资骗领、中心实时拥挤跟踪、公共 Wi-Fi 攻击、认证绕过、设备盗充、公共电脑规避、服务动物欺诈、ADA 诉讼策略、公园违规进入、儿童/弱势群体跟踪、野外风险操作或执法规避。
+- 不判断某个厕所、饮水点、座椅、冷却中心、避难所、图书馆、公园、Wi-Fi、充电点、公共场所、残障便利、服务动物或个案投诉应如何具体处理。
+- 不生成设施绕过步骤、攻击脚本、认证规避、投诉威胁、避难资格材料、服务动物伪装、法律文件、执法应对、救援指挥、路线跟踪、实时人流监控或骚扰材料。
+- 不收集、复制、处理或要求个人如厕记录、饮水记录、到访轨迹、残障身份、医疗证明、未成年人信息、安防细节、网络拓扑、登录凭据、避难者身份、实时容量、公共电脑记录、服务动物信息或个案法律/医疗/救援材料。
+- 不替代地方政府、公共卫生、水务、应急管理、图书馆、公园部门、FCC/ISP、CISA、ADA coordinator、无障碍专业人员、社会服务、医疗、法律、执法、监管机构或官方申诉/救援渠道。
+
 ## 数据与证据边界
 
 - 原始数据、清洗数据和人工判断必须分层保存。

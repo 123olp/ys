@@ -72,6 +72,7 @@ docs/
 │   ├── 0054-add-fiftieth-wave-personal-operations-continuity-domains.md
 │   ├── 0055-add-fifty-first-wave-household-operations-continuity-domains.md
 │   ├── 0056-add-fifty-second-wave-personal-mobility-execution-continuity-domains.md
+│   ├── 0057-add-fifty-third-wave-public-realm-survival-access-continuity-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -390,4 +391,12 @@ docs/
 263. Read `../domains/search-index-discovery-retrieval-continuity/README.md` if you are working on search, indexing, metadata, sitemap, schema, discovery, retrieval, broken links, or findability continuity.
 264. Read `../domains/personal-automation-integration-workflow-continuity/README.md` if you are working on personal automation, low-code workflows, webhooks, OAuth, scripts, triggers, idempotency, or workflow continuity.
 265. Read `../domains/collaborative-document-permission-version-continuity/README.md` if you are working on shared documents, permissions, version history, comments, ownership transfer, export, or collaborative document continuity.
-266. Enter a domain under `../domains/`.
+266. Read `../domains/public-restroom-sanitation-hygiene-access-continuity/README.md` if you are working on public restrooms, sanitation, handwashing, menstrual hygiene, family restrooms, accessible toilets, or public hygiene access continuity.
+267. Read `../domains/public-drinking-water-hydration-access-continuity/README.md` if you are working on public drinking water, hydration stations, fountains, water quality notices, emergency water distribution, or heat-related hydration access.
+268. Read `../domains/public-seating-shade-rest-cooling-access-continuity/README.md` if you are working on public seating, shade, transit shelters, cooling centers, rest opportunities, urban heat exposure, or public-space recovery.
+269. Read `../domains/community-resilience-hub-shelter-center-continuity/README.md` if you are working on resilience hubs, shelters, cooling/warming/clean-air centers, public charging, disaster service centers, or community lifelines.
+270. Read `../domains/public-library-community-anchor-access-continuity/README.md` if you are working on public libraries, community anchors, public computers, Wi-Fi, printing/scanning, digital skills, or service navigation.
+271. Read `../domains/parks-recreation-green-space-access-continuity/README.md` if you are working on parks, recreation, green space, trails, playgrounds, public exercise, nature access, or restorative public space.
+272. Read `../domains/public-wifi-device-charging-connectivity-continuity/README.md` if you are working on public Wi-Fi, public computers, device charging, outage connectivity, emergency communications, or digital task continuity outside home.
+273. Read `../domains/public-accommodation-accessibility-service-continuity/README.md` if you are working on public accommodations, ADA Title II/III, effective communication, service animals, reasonable accommodations, or accessible service continuity.
+274. Enter a domain under `../domains/`.
