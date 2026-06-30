@@ -550,6 +550,24 @@ Human Infra 不能被设计成更精密的压榨系统。
 - 把时间关键急症资料改写成延误就医、规避急救、家庭自行处置、医院选择套利、恐慌传播、保险/法律责任判断或无证实践内容。
 - 替代 EMS、急诊、心内科、呼吸科、内分泌科、过敏免疫科、消化科、产科、ICU、毒物中心或现场专业人员。
 
+## 预防筛查与风险因子控制边界
+
+`hypertension-detection-control-continuity`、`lipid-atherosclerosis-risk-management-continuity`、`prediabetes-diabetes-prevention-continuity`、`obesity-adiposity-metabolic-risk-continuity`、`tobacco-nicotine-cessation-continuity`、`alcohol-use-risk-reduction-continuity`、`chronic-kidney-disease-screening-progression-continuity`、`cancer-screening-early-detection-continuity`、`osteoporosis-fracture-prevention-bone-health-continuity` 和 `fall-risk-prevention-home-safety-continuity` 关注无症状风险如何通过筛查、确认、转介、坚持、随访和复盘改变主体持续性，不是个人筛查、诊断、治疗、用药、戒断、减重、饮食、运动、检查频率、保险或家庭处理入口。
+
+可以做：
+
+- 整理 USPSTF、CDC、NHLBI、NIAAA、KDIGO、NCI、NIDDK、NIAMS、NIA、WHO 和相关公共机构资料。
+- 比较筛查覆盖、测量质量、确认、异常结果追踪、转介、保留、坚持、收益伤害权衡、污名风险和公平可及如何改变主体持续性。
+- 记录高血压、血脂/ASCVD、糖尿病前期、肥胖代谢风险、烟草、酒精、CKD、癌筛、骨质疏松和跌倒预防的系统变量、证据等级、禁止用途和不确定性。
+
+不能做：
+
+- 提供血压、血脂、A1c/血糖、BMI/体脂、烟草/酒精、eGFR/尿检、癌筛结果、骨密度、跌倒风险等个体判断、诊断、分期、风险评分或筛查推荐。
+- 生成药物、剂量、戒断、减重、饮食、运动、检查频率、设备选择、家居改造、补剂、治疗、转诊、保险或家庭处理建议。
+- 收集、存储或推断可识别个人的检验值、生命体征、身体测量、成瘾史、筛查结果、影像、家庭环境、位置、保险、就诊记录或其他 PHI。
+- 产出污名化、体型歧视、成瘾道德化、延误就医、规避检测、规避医生、规避保险规则或商业产品背书内容。
+- 替代医生、药师、戒烟/成瘾治疗专业人员、营养师、物理治疗师、肾脏科、肿瘤筛查服务、骨健康服务或公共卫生机构。
+
 ## 门诊访问与临床服务执行连续性边界
 
 `provider-directory-network-adequacy-continuity`、`primary-care-panel-appointment-access-continuity`、`specialist-referral-authorization-navigation-continuity`、`appointment-availability-wait-time-continuity`、`outpatient-laboratory-specimen-result-routing-continuity`、`diagnostic-imaging-order-scheduling-report-continuity`、`ambulatory-procedure-surgery-center-continuity` 和 `after-hours-urgent-care-triage-continuity` 关注 provider 名录、初级照护、专科转诊、预约等待、门诊检验、诊断影像、门诊操作和非工作时间分诊如何让医疗服务从“名义存在”变成主体可进入、可完成、可回传的服务路径，不是医生推荐、个案分诊、诊疗建议、保险申诉或预约规避工具。

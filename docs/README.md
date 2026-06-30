@@ -667,4 +667,14 @@ docs/
 481. Read `../domains/asthma-copd-exacerbation-airway-continuity/README.md` if you are working on asthma exacerbations, COPD exacerbations, inhaler access, airway emergencies, hospitalization, respiratory support, or pulmonary recovery.
 482. Read `../domains/acute-gastrointestinal-bleeding-endoscopy-continuity/README.md` if you are working on upper/lower GI bleeding, transfusion interface, endoscopy access, anticoagulant context, rebleeding, or discharge follow-up.
 483. Read `../domains/obstetric-emergency-hemorrhage-hypertension-continuity/README.md` if you are working on obstetric hemorrhage, postpartum hemorrhage, preeclampsia/eclampsia, severe maternal morbidity, transport, blood access, or postpartum follow-up.
-484. Enter a domain under `../domains/`.
+484. Read `../domains/hypertension-detection-control-continuity/README.md` if you are working on hypertension screening, BP measurement quality, confirmation, long-term control, follow-up, or end-organ prevention.
+485. Read `../domains/lipid-atherosclerosis-risk-management-continuity/README.md` if you are working on lipid testing, ASCVD risk, atherosclerosis prevention, preventive medication evidence, or secondary prevention continuity.
+486. Read `../domains/prediabetes-diabetes-prevention-continuity/README.md` if you are working on prediabetes screening, Diabetes Prevention Program referral, retention, behavior support, or transition into chronic diabetes care.
+487. Read `../domains/obesity-adiposity-metabolic-risk-continuity/README.md` if you are working on obesity, adiposity, metabolic risk, structural food/activity environments, weight-stigma boundaries, or service access.
+488. Read `../domains/tobacco-nicotine-cessation-continuity/README.md` if you are working on tobacco use, nicotine dependence, cessation support, quitlines, policy environments, relapse prevention, or smoke-free infrastructure.
+489. Read `../domains/alcohol-use-risk-reduction-continuity/README.md` if you are working on unhealthy alcohol use screening, brief intervention, referral, treatment continuity, relapse prevention, or alcohol-attributable harm reduction.
+490. Read `../domains/chronic-kidney-disease-screening-progression-continuity/README.md` if you are working on CKD screening, eGFR, albuminuria, progression risk, cardiorenal-metabolic interaction, or kidney replacement preparation.
+491. Read `../domains/cancer-screening-early-detection-continuity/README.md` if you are working on cancer screening, early detection, abnormal result tracking, false positives/negatives, overdiagnosis, or equitable screening access.
+492. Read `../domains/osteoporosis-fracture-prevention-bone-health-continuity/README.md` if you are working on osteoporosis screening, fracture risk, bone health services, treatment persistence, post-fracture recovery, or independent living.
+493. Read `../domains/fall-risk-prevention-home-safety-continuity/README.md` if you are working on fall-risk screening, home safety, medication/vision/balance/strength interfaces, post-fall review, fear of falling, or independent living.
+494. Enter a domain under `../domains/`.

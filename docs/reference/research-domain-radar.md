@@ -299,6 +299,16 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `asthma-copd-exacerbation-airway-continuity/` | 哮喘和 COPD 急性加重连续性决定气道危机是否避免缺氧、通气失败、住院和长期功能下降 |
 | `acute-gastrointestinal-bleeding-endoscopy-continuity/` | 急性消化道出血和内镜连续性决定出血休克、抗凝冲突、再出血和贫血风险是否被系统接住 |
 | `obstetric-emergency-hemorrhage-hypertension-continuity/` | 产科出血和高血压急症连续性决定孕产妇急症是否在母婴损害前接入团队、转运和产后照护 |
+| `hypertension-detection-control-continuity/` | 高血压检测与控制决定无症状血压风险是否在卒中、心衰、肾衰和血管事件前被发现、确认和长期控制 |
+| `lipid-atherosclerosis-risk-management-continuity/` | 血脂与动脉粥样硬化风险管理决定 ASCVD 风险是否在心梗、卒中和外周血管事件前被识别并持续治理 |
+| `prediabetes-diabetes-prevention-continuity/` | 糖尿病前期与预防连续性决定糖代谢风险是否在糖尿病和并发症形成前进入转介、保留和行为支持 |
+| `obesity-adiposity-metabolic-risk-continuity/` | 肥胖、脂肪和代谢风险连续性决定脂肪分布、代谢负荷和结构性环境是否被作为系统风险而非道德标签治理 |
+| `tobacco-nicotine-cessation-continuity/` | 烟草尼古丁戒断连续性决定癌症、COPD、CVD 和资源损耗风险是否从依赖循环中退出 |
+| `alcohol-use-risk-reduction-continuity/` | 酒精使用风险降低连续性决定不健康饮酒是否被筛查、简短干预、转介和治疗系统接住 |
+| `chronic-kidney-disease-screening-progression-continuity/` | CKD 筛查与进展连续性决定肾脏储备下降是否在肾衰、心血管事件和透析准备失败前被管理 |
+| `cancer-screening-early-detection-continuity/` | 癌症筛查与早期发现连续性决定癌症死亡风险是否前移到筛查覆盖、异常追踪和收益伤害权衡 |
+| `osteoporosis-fracture-prevention-bone-health-continuity/` | 骨质疏松与骨折预防连续性决定行动半径、独立生活和长期照护负担是否被骨折事件提前截断 |
+| `fall-risk-prevention-home-safety-continuity/` | 跌倒风险与家居安全连续性决定跌倒是否从偶然事故变成可复盘、可改造、可预防的环境和身体系统风险 |
 | `road-traffic-injury-prevention-safe-mobility/` | 道路交通伤害预防和安全移动决定出行是否持续制造死亡、严重伤害和长期失能 |
 | `rural-health-access-geographic-equity/` | 农村地理距离、服务密度、宽带、交通和卫生人力决定可修复风险是否因地点被延误或放弃 |
 | `homelessness-unsheltered-health-continuity/` | 无家可归和露宿状态决定睡眠、卫生、身份、安全、医疗和福利入口是否会同时断线 |
@@ -1004,6 +1014,7 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | FDA Pharmaceutical Quality / WHO Substandard and Falsified Medical Products / FDA Drug Shortages | 提示药品质量、制造监管、假劣药和短缺治理是药物可及之外的独立物质质量层 |
 | NHTSA Office of EMS / EMS.gov / WHO Emergency Care | 提示院前照护、调度、响应时间和转运系统是急性可逆窗口基础设施 |
 | WHO Surgical Safety Checklist / WHO Safe Surgery / AHRQ Surgical Safety | 提示手术、麻醉和围手术期团队安全是高风险修复通道的独立风险层 |
+| USPSTF Preventive Services / CDC Chronic Disease / KDIGO CKD / NCI Screening / CDC STEADI | 提示预防筛查与风险因子控制是急症和失能之前的独立上游执行层 |
 | WHO Road Traffic Injuries / NHTSA / FHWA Safe System Approach | 提示道路交通伤害预防、安全系统和速度管理是交通可达之外的安全移动域 |
 | HRSA Rural Health / CDC Rural Health | 提示农村地理距离、服务密度、医院药房可达、宽带和卫生人力是医疗可及之外的地理公平域 |
 | USICH / HUD Homelessness / CDC Homelessness | 提示无家可归、露宿、庇护、外展、卫生、安全和住房服务连续性是住房稳定之外的独立断点 |
@@ -1665,6 +1676,26 @@ Source links:
 - https://www.acog.org/
 - https://www.who.int/
 - https://www.cdc.gov/maternal-mortality/
+- https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/hypertension-in-adults-screening
+- https://www.cdc.gov/high-blood-pressure/
+- https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/statin-use-in-adults-preventive-medication
+- https://www.cdc.gov/cholesterol/
+- https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/screening-for-prediabetes-and-type-2-diabetes
+- https://www.cdc.gov/diabetes/prevention/
+- https://www.cdc.gov/obesity/
+- https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/obesity-in-adults-interventions
+- https://www.cdc.gov/tobacco/
+- https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/tobacco-use-in-adults-and-pregnant-women-counseling-and-interventions
+- https://www.niaaa.nih.gov/
+- https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/unhealthy-alcohol-use-in-adolescents-and-adults-screening-and-behavioral-counseling-interventions
+- https://kdigo.org/guidelines/ckd-evaluation-and-management/
+- https://www.niddk.nih.gov/health-information/kidney-disease
+- https://www.cancer.gov/about-cancer/screening
+- https://www.cdc.gov/cancer/screening/
+- https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/osteoporosis-screening
+- https://www.niams.nih.gov/health-topics/osteoporosis
+- https://www.cdc.gov/steadi/
+- https://www.cdc.gov/falls/
 - https://www.who.int/news-room/fact-sheets/detail/road-traffic-injuries
 - https://www.nhtsa.gov/traffic-safety
 - https://highways.dot.gov/safety/zero-deaths/safe-system-approach

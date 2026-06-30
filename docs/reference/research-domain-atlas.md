@@ -479,6 +479,16 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 气道急性加重可避免缺氧和通气失败 | `asthma-copd-exacerbation-airway-continuity/` | 哮喘/COPD 加重、气道炎症、氧合/通气、急诊稳定、用药可及、复发预防 | 气道炎症、感染、污染、药物不可及和随访断裂把可控慢病推向缺氧、住院和长期功能下降 |
 | 消化道出血可通过内镜和血液系统接住 | `acute-gastrointestinal-bleeding-endoscopy-continuity/` | GI 出血、复苏、内镜接入、输血/抗凝管理、再出血预防、随访 | 呕血、黑便、抗凝冲突、内镜延误和再出血预防失败把可处理出血推向休克、贫血和死亡 |
 | 孕产妇急症可在母婴损害前接入团队 | `obstetric-emergency-hemorrhage-hypertension-continuity/` | 产科出血、高血压急症、预警、产科团队、转运、产后连续性 | 出血、子痫前期/子痫、转运延误和产后断裂把可预防孕产妇损害转为死亡、失能和家庭断裂 |
+| 长期血压风险可被发现和控制 | `hypertension-detection-control-continuity/` | 高血压筛查、测量质量、确认、长期控制、随访、靶器官预防 | 未发现或未控制的血压风险长期侵蚀脑、心、肾和血管，把可预防风险推向卒中、心衰和肾衰 |
+| 动脉粥样硬化风险可在事件前管理 | `lipid-atherosclerosis-risk-management-continuity/` | 血脂检测、ASCVD 风险、斑块负荷、预防性药物证据、二级预防 | 血脂和 ASCVD 风险未被检测、解释和持续管理，导致心梗、卒中和外周血管事件提前发生 |
+| 糖尿病发病可被前移预防 | `prediabetes-diabetes-prevention-continuity/` | 糖尿病前期筛查、DPP、行为支持、转介保留、慢性照护转换 | 糖尿病前期未被发现或干预保留失败，推动糖尿病、肾病、神经病变和血管事件累积 |
+| 脂肪代谢风险可作为系统状态治理 | `obesity-adiposity-metabolic-risk-continuity/` | 肥胖、脂肪分布、代谢风险、结构性环境、服务可及、污名边界 | 将肥胖仅归因于个人意志会错过结构性环境、服务摩擦和多系统慢病风险 |
+| 烟草风险可从依赖循环中退出 | `tobacco-nicotine-cessation-continuity/` | 烟草、尼古丁依赖、戒烟支持、quitline、政策环境、复吸预防 | 烟草暴露和复吸循环持续增加癌症、COPD、CVD、失能和资源消耗 |
+| 酒精风险可被筛查和降低伤害 | `alcohol-use-risk-reduction-continuity/` | 不健康饮酒筛查、简短干预、转介、治疗连续、复发/伤害减少 | 酒精风险未被识别和接住，增加肝病、事故、暴力、认知下降、家庭和工作断裂 |
+| 肾脏储备下降可在衰竭前进入进展管理 | `chronic-kidney-disease-screening-progression-continuity/` | CKD 筛查、eGFR、白蛋白尿、进展风险、心肾代谢交互、替代治疗准备 | CKD 无症状进展导致急性肾衰、心血管事件、贫血、透析准备不足和生活结构崩塌 |
+| 癌症风险可通过筛查和异常追踪前移 | `cancer-screening-early-detection-continuity/` | 癌症筛查、早期发现、异常追踪、过度诊断、公平可及 | 筛查缺失、异常结果断线或过度诊断失衡，改变癌症死亡风险和治疗负担 |
+| 骨折可在失能前预防 | `osteoporosis-fracture-prevention-bone-health-continuity/` | 骨质疏松筛查、骨折风险、骨健康服务、治疗坚持、骨折后恢复 | 骨质疏松和骨折后照护断裂会缩小行动半径、提高长期照护需求并增加死亡风险 |
+| 跌倒可作为环境和身体系统风险治理 | `fall-risk-prevention-home-safety-continuity/` | 跌倒风险筛查、家居安全、药物/视力/平衡/肌力接口、跌倒后复盘 | 跌倒被当成偶然事件会漏掉环境、药物、感官、平衡和肌力共同作用的可预防风险 |
 | 移动过程可避免严重伤害 | `road-traffic-injury-prevention-safe-mobility/` | 道路安全系统、速度管理、车辆安全、执法公平、交通伤害监测 | 出行过程制造死亡、严重伤害、长期失能、家庭收入中断和照护负担 |
 | 地理距离不能排除主体 | `rural-health-access-geographic-equity/` | 农村服务密度、距离、交通、宽带、卫生人力、药房/医院可达 | 可修复风险因地点、距离、宽带、人力和设施稀缺被延误或放弃 |
 | 住所缺失时服务不能断线 | `homelessness-unsheltered-health-continuity/` | 庇护、外展、卫生、睡眠、安全、身份、住房服务、医疗连续性 | 露宿、卫生缺失、暴露、创伤、慢病失控和服务断点把主体推出恢复路径 |
@@ -1114,6 +1124,16 @@ risk-engineering
   -> asthma-copd-exacerbation-airway-continuity
   -> acute-gastrointestinal-bleeding-endoscopy-continuity
   -> obstetric-emergency-hemorrhage-hypertension-continuity
+  -> hypertension-detection-control-continuity
+  -> lipid-atherosclerosis-risk-management-continuity
+  -> prediabetes-diabetes-prevention-continuity
+  -> obesity-adiposity-metabolic-risk-continuity
+  -> tobacco-nicotine-cessation-continuity
+  -> alcohol-use-risk-reduction-continuity
+  -> chronic-kidney-disease-screening-progression-continuity
+  -> cancer-screening-early-detection-continuity
+  -> osteoporosis-fracture-prevention-bone-health-continuity
+  -> fall-risk-prevention-home-safety-continuity
   -> road-traffic-injury-prevention-safe-mobility
   -> rural-health-access-geographic-equity
   -> homelessness-unsheltered-health-continuity

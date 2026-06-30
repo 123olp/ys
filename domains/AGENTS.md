@@ -1239,6 +1239,36 @@ domains/
 ├── obstetric-emergency-hemorrhage-hypertension-continuity/
 │   ├── AGENTS.md
 │   └── README.md
+├── hypertension-detection-control-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── lipid-atherosclerosis-risk-management-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── prediabetes-diabetes-prevention-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── obesity-adiposity-metabolic-risk-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── tobacco-nicotine-cessation-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── alcohol-use-risk-reduction-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── chronic-kidney-disease-screening-progression-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── cancer-screening-early-detection-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── osteoporosis-fracture-prevention-bone-health-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── fall-risk-prevention-home-safety-continuity/
+│   ├── AGENTS.md
+│   └── README.md
 ├── clinical-trials-regulatory-science-translation/
 │   ├── AGENTS.md
 │   └── README.md
@@ -1715,6 +1745,7 @@ domains/
 - `semiconductor-manufacturing-metrology-continuity/`、`semiconductor-advanced-packaging-continuity/`、`chip-design-eda-verification-ip-continuity/`、`ai-hardware-accelerator-performance-continuity/`、`data-center-cooling-water-thermal-continuity/`、`large-load-grid-interconnection-transmission-continuity/`、`grid-scale-energy-storage-flexibility-continuity/`、`advanced-nuclear-energy-safety-generation-continuity/`、`undersea-cable-internet-backbone-continuity/` 和 `satellite-communications-spectrum-orbit-continuity/` 负责把先进计算、能源与连接底座拆成芯片制造计量、封装、设计验证、加速器执行、电力与冷却、储能与稳定能源、全球骨干和空间通信这些可独立审查的物理约束。
 - `cardiac-arrest-cpr-defibrillation-continuity/`、`sepsis-shock-early-recognition-resuscitation-continuity/`、`trauma-system-hemorrhage-control-continuity/`、`intensive-care-organ-support-delirium-continuity/`、`mechanical-ventilation-respiratory-failure-continuity/`、`ecmo-extracorporeal-life-support-continuity/`、`acute-kidney-injury-renal-replacement-continuity/`、`transfusion-blood-management-hemorrhage-continuity/`、`overdose-poisoning-reversal-toxicology-continuity/` 和 `burn-injury-critical-care-rehabilitation-continuity/` 负责把急性死亡边界拆成心脏骤停、脓毒症休克、创伤出血、ICU、呼吸机、ECMO、AKI/RRT、输血、中毒逆转和烧伤重建这些可独立审查的救援链。
 - `acute-coronary-syndrome-reperfusion-continuity/`、`acute-heart-failure-decompensation-continuity/`、`cardiac-arrhythmia-syncope-decompensation-continuity/`、`venous-thromboembolism-pulmonary-embolism-continuity/`、`hypertensive-crisis-end-organ-risk-continuity/`、`diabetic-hyperglycemic-hypoglycemic-crisis-continuity/`、`anaphylaxis-allergic-emergency-continuity/`、`asthma-copd-exacerbation-airway-continuity/`、`acute-gastrointestinal-bleeding-endoscopy-continuity/` 和 `obstetric-emergency-hemorrhage-hypertension-continuity/` 负责把急性内科与时间关键急症拆成急性冠脉再灌注、心衰失代偿、节律/晕厥、VTE/PE、高血压靶器官风险、糖尿病危象、过敏性休克、气道急性加重、GI 出血和产科急症这些进入骤停、ICU 或不可逆损伤之前的可逆窗口。
+- `hypertension-detection-control-continuity/`、`lipid-atherosclerosis-risk-management-continuity/`、`prediabetes-diabetes-prevention-continuity/`、`obesity-adiposity-metabolic-risk-continuity/`、`tobacco-nicotine-cessation-continuity/`、`alcohol-use-risk-reduction-continuity/`、`chronic-kidney-disease-screening-progression-continuity/`、`cancer-screening-early-detection-continuity/`、`osteoporosis-fracture-prevention-bone-health-continuity/` 和 `fall-risk-prevention-home-safety-continuity/` 负责把急症和失能之前的上游预防执行层拆成高血压检测控制、血脂/ASCVD、糖尿病前期、肥胖代谢风险、烟草、酒精、CKD、癌筛、骨健康和跌倒预防这些可独立审查的风险因子连续性条件。
 - `scholarly-identity-orcid-affiliation-continuity/`、`persistent-identifier-doi-citation-metadata-continuity/`、`research-data-repository-fair-sharing-continuity/`、`research-software-capsule-reproducibility-continuity/`、`preregistration-registered-report-study-plan-continuity/`、`lab-notebook-protocol-versioning-continuity/`、`contributor-role-authorship-attribution-continuity/`、`conflict-of-interest-funding-disclosure-continuity/` 和 `research-artifact-archive-retention-preservation-continuity/` 负责科研身份、持久标识与可复现研究基础设施，覆盖 ORCID/ROR、DOI 元数据、FAIR 数据仓库、研究软件胶囊、预注册、协议版本、贡献者角色、利益冲突披露和研究产物保存。
 - `systematic-review-protocol-search-screening-continuity/`、`risk-of-bias-critical-appraisal-continuity/`、`meta-analysis-effect-size-heterogeneity-continuity/`、`publication-reporting-bias-detection-continuity/`、`evidence-certainty-grade-summary-findings-continuity/`、`evidence-to-decision-guideline-panel-continuity/`、`guideline-appraisal-adaptation-localization-continuity/`、`living-evidence-surveillance-update-continuity/` 和 `rapid-review-emergency-evidence-triage-continuity/` 负责证据综合与指南转化连续性，覆盖系统综述协议、风险偏倚、Meta 分析、报告偏倚、GRADE 确定性、证据到决策、指南适配、活证据更新和快速综述。
 - `research-misconduct-investigation-correction-continuity/`、`retraction-expression-concern-correction-continuity/`、`preprint-versioning-public-review-continuity/`、`journal-editorial-policy-peer-review-integrity-continuity/`、`predatory-publishing-paper-mill-detection-continuity/`、`citation-network-claim-propagation-continuity/`、`research-metrics-incentives-assessment-continuity/`、`replication-reproducibility-many-labs-continuity/` 和 `science-communication-evidence-translation-continuity/` 负责科研纠错、出版完整性与科学传播连续性，覆盖不端调查、撤稿更正、预印本版本、同行评审制度、paper mill 筛查、引用传播、指标激励、复制复现和公众证据转译。
@@ -1830,6 +1861,7 @@ domains/
 - `semiconductor-manufacturing-metrology-continuity/`、`semiconductor-advanced-packaging-continuity/`、`chip-design-eda-verification-ip-continuity/`、`ai-hardware-accelerator-performance-continuity/`、`data-center-cooling-water-thermal-continuity/`、`large-load-grid-interconnection-transmission-continuity/`、`grid-scale-energy-storage-flexibility-continuity/`、`advanced-nuclear-energy-safety-generation-continuity/`、`undersea-cable-internet-backbone-continuity/` 和 `satellite-communications-spectrum-orbit-continuity/` 负责先进计算、能源与连接物理底座的证据边界，不提供芯片制造、EDA 绕权、数据中心建设、电网并网、核设施、光缆、频谱、卫星、采购、投资、出口管制规避、攻击或关键基础设施操作建议。
 - `cardiac-arrest-cpr-defibrillation-continuity/`、`sepsis-shock-early-recognition-resuscitation-continuity/`、`trauma-system-hemorrhage-control-continuity/`、`intensive-care-organ-support-delirium-continuity/`、`mechanical-ventilation-respiratory-failure-continuity/`、`ecmo-extracorporeal-life-support-continuity/`、`acute-kidney-injury-renal-replacement-continuity/`、`transfusion-blood-management-hemorrhage-continuity/`、`overdose-poisoning-reversal-toxicology-continuity/` 和 `burn-injury-critical-care-rehabilitation-continuity/` 负责急性救援与临时器官支持的证据边界，不提供 CPR、除颤、抗生素、ICU、呼吸机、ECMO、透析、输血、中毒处理、烧伤处理或个案医疗建议。
 - `acute-coronary-syndrome-reperfusion-continuity/`、`acute-heart-failure-decompensation-continuity/`、`cardiac-arrhythmia-syncope-decompensation-continuity/`、`venous-thromboembolism-pulmonary-embolism-continuity/`、`hypertensive-crisis-end-organ-risk-continuity/`、`diabetic-hyperglycemic-hypoglycemic-crisis-continuity/`、`anaphylaxis-allergic-emergency-continuity/`、`asthma-copd-exacerbation-airway-continuity/`、`acute-gastrointestinal-bleeding-endoscopy-continuity/` 和 `obstetric-emergency-hemorrhage-hypertension-continuity/` 负责急性内科与时间关键急症的证据边界，不提供胸痛、心衰、晕厥、肺栓塞、高血压危象、糖尿病危象、过敏性休克、哮喘/COPD、消化道出血、产科急症的诊断、分诊、用药、设备、操作、转运、预后或个案医疗建议。
+- `hypertension-detection-control-continuity/`、`lipid-atherosclerosis-risk-management-continuity/`、`prediabetes-diabetes-prevention-continuity/`、`obesity-adiposity-metabolic-risk-continuity/`、`tobacco-nicotine-cessation-continuity/`、`alcohol-use-risk-reduction-continuity/`、`chronic-kidney-disease-screening-progression-continuity/`、`cancer-screening-early-detection-continuity/`、`osteoporosis-fracture-prevention-bone-health-continuity/` 和 `fall-risk-prevention-home-safety-continuity/` 负责预防筛查与风险因子控制的证据边界，不提供血压、血脂、血糖/A1c、BMI/体脂、烟草/酒精、肾功能、癌筛、骨密度或跌倒风险的个体判断、用药、处方、戒断、饮食、运动、检查频率、设备、家庭处理、保险或医疗建议。
 - `mental-health-affective-stability/`、`sleep-circadian-recovery/` 和 `pain-suffering-control/` 负责心理稳定、恢复调度和持续存在的可承受性。
 - `social-connection-relational-infra/` 负责社会连接、孤独、照护网络、信任和社区关系。
 - `loneliness-social-isolation-risk-continuity/`、`social-prescribing-community-referral-continuity/`、`mutual-aid-neighbor-support-network-continuity/`、`volunteering-civic-service-participation-continuity/`、`community-mediation-neighbor-conflict-resolution-continuity/`、`restorative-justice-repair-accountability-continuity/`、`reputation-defamation-public-trust-repair-continuity/`、`references-vouching-recommendation-social-capital-continuity/` 和 `third-place-belonging-social-participation-continuity/` 负责把社会连接拆成可执行、可转介、可互助、可参与、可调解、可修复、可纠错、可背书和可归属的关系基础设施层。

@@ -1276,6 +1276,16 @@ flowchart TD
 | [Asthma COPD Exacerbation Airway Continuity](domains/asthma-copd-exacerbation-airway-continuity/README.md) | 哮喘急性发作、COPD 急性加重、吸入药可及、急诊接入、住院和康复 | 把气道急性加重放在日常呼吸管理与机械通气之间建模 | 不提供吸入药、氧疗、雾化、激素、抗生素、峰流速、设备设置或家庭处理建议 |
 | [Acute Gastrointestinal Bleeding Endoscopy Continuity](domains/acute-gastrointestinal-bleeding-endoscopy-continuity/README.md) | 急性上/下消化道出血、输血接口、凝血支持、内镜可及和复发预防 | 把隐蔽或急性失血转化为识别、稳定、内镜和恢复链 | 不提供便血/呕血判断、停药、抗凝处理、输血、内镜、药物、饮食或急诊建议 |
 | [Obstetric Emergency Hemorrhage Hypertension Continuity](domains/obstetric-emergency-hemorrhage-hypertension-continuity/README.md) | 产科出血、子痫前期/子痫、妊娠高血压、产后窗口、转运和血液接口 | 把妊娠分娩产后高负荷阶段的出血和高血压急症纳入主体持续性 | 不提供妊娠/产后症状判断、用药、分娩方式、医院选择、转运、产后恢复或个体医疗建议 |
+| [Hypertension Detection Control Continuity](domains/hypertension-detection-control-continuity/README.md) | 高血压筛查、确认、测量质量、长期控制、随访和靶器官预防 | 把血压风险从无症状长期侵蚀转化为可检测、可控制、可坚持的上游变量 | 不提供血压读数判断、降压药、剂量、设备、家庭处理、急诊分诊或个体医疗建议 |
+| [Lipid Atherosclerosis Risk Management Continuity](domains/lipid-atherosclerosis-risk-management-continuity/README.md) | 血脂检测、ASCVD 风险、动脉粥样硬化、预防性药物证据和二级预防 | 把血管事件之前的斑块负荷和风险管理纳入主体持续性模型 | 不提供血脂解读、风险计算、他汀/降脂药、补剂、饮食、运动或个体治疗建议 |
+| [Prediabetes Diabetes Prevention Continuity](domains/prediabetes-diabetes-prevention-continuity/README.md) | 糖尿病前期筛查、DPP、转介、保留、行为支持和慢性照护转换 | 把糖尿病发病和并发症之前的概率分布右移纳入模型 | 不提供血糖/A1c 解读、饮食、运动、药物、补剂、减重、设备或个体预防建议 |
+| [Obesity Adiposity Metabolic Risk Continuity](domains/obesity-adiposity-metabolic-risk-continuity/README.md) | 肥胖、脂肪分布、代谢风险、结构性环境、服务可及和污名边界 | 把肥胖作为多系统慢病和行动负担的结构性风险状态建模 | 不提供 BMI/体脂解读、减重目标、饮食、运动、药物、手术、补剂或商业推荐 |
+| [Tobacco Nicotine Cessation Continuity](domains/tobacco-nicotine-cessation-continuity/README.md) | 烟草、尼古丁依赖、戒烟支持、quitline、政策环境和复吸预防 | 把烟草风险作为癌症、COPD、CVD 和资源损耗的上游控制点 | 不提供戒烟药物、剂量、电子烟策略、戒断处理、购买渠道或个体医疗建议 |
+| [Alcohol Use Risk Reduction Continuity](domains/alcohol-use-risk-reduction-continuity/README.md) | 不健康饮酒筛查、简短干预、转介、治疗连续、复发/伤害减少 | 把酒精风险作为肝脏、事故、认知、家庭和资源连续性的上游变量 | 不提供饮酒量判断、戒断处理、解酒、药物、排毒、驾驶、法律或个体医疗建议 |
+| [Chronic Kidney Disease Screening Progression Continuity](domains/chronic-kidney-disease-screening-progression-continuity/README.md) | CKD 筛查、eGFR/白蛋白尿、进展风险、心肾代谢交互和替代治疗准备 | 把肾脏储备下降作为急性肾衰和心血管风险之前的可观测状态 | 不提供实验室解读、CKD 分期、饮食、补液、药物、透析、移植或个体建议 |
+| [Cancer Screening Early Detection Continuity](domains/cancer-screening-early-detection-continuity/README.md) | 癌症筛查、早期发现、异常追踪、假阳性/假阴性、过度诊断和公平可及 | 把癌症死亡风险前移到筛查质量和异常结果闭环 | 不提供筛查年龄、频率、检查选择、结果解读、遗传风险、治疗或个体建议 |
+| [Osteoporosis Fracture Prevention Bone Health Continuity](domains/osteoporosis-fracture-prevention-bone-health-continuity/README.md) | 骨质疏松筛查、骨折风险、骨健康服务、治疗坚持和骨折后恢复 | 把骨折预防纳入独立生活、行动半径和长期照护负担模型 | 不提供骨密度解读、补剂、药物、运动、跌倒训练、影像、骨折处理或个体建议 |
+| [Fall Risk Prevention Home Safety Continuity](domains/fall-risk-prevention-home-safety-continuity/README.md) | 跌倒风险筛查、家居安全、药物/视力/平衡/肌力接口、跌倒后复盘 | 把跌倒从偶然事故转化为环境、身体和照护系统共同治理的行动风险 | 不提供跌倒风险判断、训练动作、药物调整、辅具选择、家居改造、急救或康复建议 |
 | [Road Traffic Injury Prevention Safe Mobility](domains/road-traffic-injury-prevention-safe-mobility/README.md) | 道路交通伤害、安全系统、速度管理、车辆安全、交通数据和安全移动 | 让出行从可达性进一步成为不制造死亡和失能的行动基础设施 | 不提供驾驶、路线、事故责任、保险、法律、车辆改装、危险驾驶、规避执法或急救建议 |
 | [Rural Health Access Geographic Equity](domains/rural-health-access-geographic-equity/README.md) | 地理距离、服务密度、宽带、交通、卫生人力和农村健康公平 | 防止可修复风险因为地点、交通、宽带和服务稀缺被延误或放弃 | 不提供个体医疗、保险、转诊、迁居、急救路线、补助申请、政策游说或商业选址建议 |
 | [Homelessness Unsheltered Health Continuity](domains/homelessness-unsheltered-health-continuity/README.md) | 无家可归、露宿、庇护、外展、住房服务、卫生、安全和照护断点 | 让没有稳定住所的主体仍能维持医疗、卫生、身份、睡眠、安全和福利入口 | 不提供个体庇护、住房申请、法律救济、福利申请、露宿规避、执法规避或生存技巧 |
@@ -1895,5 +1905,6 @@ flowchart LR
 - 2026-07-01：新增第八十波 10 个先进计算、能源与连接底座连续性域，覆盖半导体制造计量、先进封装、芯片设计/EDA/IP 验证、AI 加速器性能、数据中心冷却水热、大型负载并网输电、电网级储能灵活性、先进核能安全发电、海底光缆互联网骨干和卫星通信频谱轨道。
 - 2026-07-01：新增第八十一波 10 个急性救援与临时器官支持连续性域，覆盖心脏骤停 CPR/除颤、脓毒症休克早识别复苏、创伤系统出血控制、ICU 器官支持谵妄、机械通气呼吸衰竭、ECMO/ECLS、急性肾损伤肾脏替代、输血血液管理出血、过量/中毒逆转毒理和烧伤重症康复。
 - 2026-07-01：新增第八十二波 10 个急性内科与时间关键急症连续性域，覆盖急性冠脉综合征再灌注、急性心衰失代偿、心律失常/晕厥失代偿、VTE/肺栓塞、高血压危象靶器官风险、糖尿病高低血糖危象、过敏性休克、哮喘/COPD 急性加重、急性消化道出血内镜和产科出血/高血压急症。
+- 2026-07-01：新增第八十三波 10 个预防筛查与风险因子控制连续性域，覆盖高血压检测控制、血脂/动脉粥样硬化风险管理、糖尿病前期预防、肥胖/脂肪代谢风险、烟草尼古丁戒断、酒精风险降低、CKD 筛查进展、癌症筛查早诊、骨质疏松骨折预防和跌倒/家居安全预防。
 
 完整记录见 [CHANGELOG.md](CHANGELOG.md)。

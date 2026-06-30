@@ -592,6 +592,16 @@
 - `asthma-copd-exacerbation-airway-continuity/`：哮喘/COPD 急性加重与气道连续性，整理吸入药可及、急诊接入、住院、呼吸支持和康复。
 - `acute-gastrointestinal-bleeding-endoscopy-continuity/`：急性消化道出血与内镜连续性，整理上/下 GI 出血、输血接口、抗凝背景、内镜可及和再出血。
 - `obstetric-emergency-hemorrhage-hypertension-continuity/`：产科出血与高血压急症连续性，整理产后出血、子痫前期/子痫、转运、血液接口和产后随访。
+- `hypertension-detection-control-continuity/`：高血压检测与控制连续性，整理筛查、测量质量、确认、长期控制、随访和靶器官预防。
+- `lipid-atherosclerosis-risk-management-continuity/`：血脂与动脉粥样硬化风险管理连续性，整理血脂检测、ASCVD 风险、动脉粥样硬化预防、药物证据和二级预防。
+- `prediabetes-diabetes-prevention-continuity/`：糖尿病前期与糖尿病预防连续性，整理筛查、DPP 转介、保留、行为支持和慢性照护转换。
+- `obesity-adiposity-metabolic-risk-continuity/`：肥胖、脂肪与代谢风险连续性，整理 adiposity、代谢风险、结构性环境、服务可及和污名边界。
+- `tobacco-nicotine-cessation-continuity/`：烟草尼古丁戒断连续性，整理烟草风险、尼古丁依赖、戒烟支持、quitline、政策环境和复吸预防。
+- `alcohol-use-risk-reduction-continuity/`：酒精使用风险降低连续性，整理不健康饮酒筛查、简短干预、转介、治疗连续和复发/伤害减少。
+- `chronic-kidney-disease-screening-progression-continuity/`：慢性肾病筛查与进展连续性，整理 CKD 筛查、eGFR/白蛋白尿、进展风险、心肾代谢交互和替代治疗准备。
+- `cancer-screening-early-detection-continuity/`：癌症筛查与早期发现连续性，整理筛查覆盖、异常追踪、假阳性/假阴性、过度诊断和公平可及。
+- `osteoporosis-fracture-prevention-bone-health-continuity/`：骨质疏松、骨折预防与骨健康连续性，整理筛查、骨折风险、骨健康服务、治疗坚持和骨折后恢复。
+- `fall-risk-prevention-home-safety-continuity/`：跌倒风险预防与家居安全连续性，整理跌倒风险筛查、家居安全、药物/视力/平衡/肌力接口和跌倒后复盘。
 - `governance-rights/`：治理与主体权利，整理同意、退出、数据权、法律身份、AI 治理和研究伦理。
 - `pain-suffering-control/`：疼痛与痛苦控制，整理慢性疼痛、症状负担、姑息医学和可承受持续性。
 - `health-literacy-navigation/`：健康素养与服务导航，整理可理解信息、风险沟通、共同决策和系统入口。
