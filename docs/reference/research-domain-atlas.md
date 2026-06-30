@@ -88,11 +88,17 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 外部风险可治理 | `risk-engineering/` | 风险暴露、预警、恢复能力 | 事故、灾害、暴力、系统性失效 |
 | 环境底座可承载主体 | `planetary-health-environment/` | 空气、水、气候、污染、生态系统 | 环境暴露、资源崩塌、迁移、灾害 |
 | 资源和社会底座可持续 | `resource-social-infra/` | 食物、水、能源、住房、照护、医疗可及 | 断供、贫困、服务排除、社会孤立 |
+| 食物输入可持续 | `food-security-nutrition-access/` | 食物可得性、可负担性、食品安全、营养输入、价格冲击、供应稳定 | 饥饿、营养不足、食品不安全、价格冲击或供应断裂 |
+| 水卫生条件可持续 | `water-sanitation-hygiene-continuity/` | 安全饮用水、卫生设施、洗手、污水处理、WASH 覆盖、服务可靠性 | 感染、脱水、尊严损害、照护负担或公共卫生风险 |
+| 能源服务可运行 | `energy-access-resilience/` | 电力、清洁烹饪、能源负担、停电、温控、通信供能、医疗设备供电 | 照明、烹饪、温控、通信、医疗设备和数字服务中断 |
 | 医疗服务可连续 | `healthcare-access-continuity/` | 初级卫生保健、急诊、预防、转诊、随访、费用、质量 | 有医疗资源但不可及、不可负担、不可连续或质量不可审查 |
 | 照护可持续 | `caregiving-long-term-care/` | 家庭照护、长期照护、居家社区支持、照护协调、照护者负担 | 长寿退化为无人照护、照护者崩溃、失能支持中断或尊严丧失 |
 | 居住环境可稳定 | `housing-built-environment-stability/` | 住房稳定、住房质量、室内环境、无障碍、社区资源、建成环境 | 居住空间持续制造暴露、跌倒、孤立、服务断点或照护不可行 |
 | 日常移动和服务接入可达 | `transportation-access-mobility/` | 公共交通、无障碍交通、出行时间、医疗交通、交通成本、交通安全 | 有资源但到不了，服务延误、缺席、孤立或撤离不可达 |
 | 法律身份可被承认 | `legal-identity-civil-registration/` | 法律身份、出生登记、民事登记、生命统计、身份文件、服务资格 | 无证、登记缺失、身份错误或制度不承认导致权利与服务断线 |
+| 社会保护可递送 | `social-protection-benefits-delivery/` | 公共福利、社会保护、资格、申请、续期、支付、申诉、行政负担 | 名义权利无法转化为食物、住房、医疗、能源或收入支持 |
+| 高成本风险可分摊 | `insurance-risk-transfer/` | 覆盖率、保费、自付、理赔、拒赔、风险池、保障缺口 | 疾病、失业、工伤、残障、灾害或养老金风险由个体独自承担 |
+| 托育和家庭运行可持续 | `childcare-family-continuity/` | 托育可及、费用、质量、早期发展、父母工作连续性、家庭压力 | 儿童发展受损、照护者工作中断、时间贫困和家庭压力升级 |
 | 应急响应可接住主体 | `emergency-preparedness-response/` | 灾害准备、预警、应急通信、急救医疗、安置、公共卫生应急、恢复 | 低频高冲击事件一次性清零长期积累，通信、医疗、撤离或恢复失败 |
 | 关键供应链可连续 | `supply-chain-continuity/` | 药品、能源、食物、设备、通信、物流 | 断供、单点故障、替代失败 |
 | 生物技术双重用途可治理 | `synthetic-biology-biosecurity/` | 生物安全、生物安保、双重用途、治理 | 病原风险、误用、实验外泄 |
@@ -183,11 +189,17 @@ future-waiting
 risk-engineering
   -> planetary-health-environment
   -> resource-social-infra
+  -> food-security-nutrition-access
+  -> water-sanitation-hygiene-continuity
+  -> energy-access-resilience
   -> healthcare-access-continuity
   -> caregiving-long-term-care
   -> housing-built-environment-stability
   -> transportation-access-mobility
   -> legal-identity-civil-registration
+  -> social-protection-benefits-delivery
+  -> insurance-risk-transfer
+  -> childcare-family-continuity
   -> emergency-preparedness-response
   -> financial-resilience-access
   -> occupational-work-design

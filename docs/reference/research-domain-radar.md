@@ -79,6 +79,12 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `transportation-access-mobility/` | 外部交通可达性决定医疗、工作、食物、社区、照护和应急资源能否实际到达 |
 | `legal-identity-civil-registration/` | 法律身份、出生登记、民事登记和身份文件决定主体能否被制度承认为权利与服务对象 |
 | `emergency-preparedness-response/` | 灾害准备、预警、通信、急救医疗、安置和恢复决定尾部风险能否被响应而不是一次性清零 |
+| `food-security-nutrition-access/` | 食物可得、可负担、安全、营养充分和供应稳定决定身体维护与恢复是否有外部输入 |
+| `water-sanitation-hygiene-continuity/` | 安全水、卫生设施、洗手和污水处理决定感染控制、尊严、照护卫生和公共卫生底座 |
+| `energy-access-resilience/` | 电力、清洁烹饪、温控、通信供能和医疗设备供电决定多个生活和服务系统能否运行 |
+| `social-protection-benefits-delivery/` | 公共福利、资格、申请、续期、支付和申诉决定风险冲击能否被制度性缓冲 |
+| `insurance-risk-transfer/` | 覆盖、保费、自付、理赔、拒赔和风险池决定高成本风险是否由个体独自承担 |
+| `childcare-family-continuity/` | 托育可及、费用、质量、儿童发展和父母工作连续性共同影响两代主体的有效时间和未来选择权 |
 
 ## 来源信号
 
@@ -136,6 +142,12 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | CDC Transportation and Health / U.S. DOT Health / CDC Transportation Toolkit | 提示交通可达、无障碍交通、出行时间、交通成本和交通安全影响医疗、工作、食物和社区接入 |
 | World Bank ID4D / UNICEF Birth Registration / UN Legal Identity Agenda | 提示法律身份、出生登记、民事登记、身份文件和服务资格是制度承认与公共服务入口 |
 | CDC Emergency Preparedness / Ready.gov / WHO Emergency Care / WHO Public Health Emergency Preparedness | 提示预警、通信、急救医疗、公共卫生应急、安置和灾后恢复是尾部风险下的主体连续性条件 |
+| FAO SOFI / World Bank Food Security / WHO Healthy Diet | 提示食物可得、可负担、安全、营养质量、价格冲击和供应稳定是主体身体维护的外部输入 |
+| WHO/UNICEF JMP / WHO Drinking-water / UNICEF WASH | 提示安全饮水、卫生设施、洗手、污水处理和 WASH 覆盖是感染控制、尊严和公共卫生底座 |
+| Tracking SDG7 / IEA Energy Access / WHO Household Air Pollution | 提示电力、清洁烹饪、能源负担、停电、室内污染和能源韧性影响健康、通信、温控和服务连续性 |
+| ILO Social Protection / World Bank Social Protection / USA.gov Benefit Finder | 提示社会保护、公共福利、资格、申请、续期、支付、申诉和行政负担是风险冲击缓冲层 |
+| NAIC consumer resources / USA.gov health insurance / FDIC deposit insurance | 提示保险覆盖、理赔、风险池和保障缺口影响疾病、失业、灾害、存款和养老金冲击后的恢复 |
+| World Bank Childcare / ACF Office of Child Care / ChildCare.gov | 提示托育可及、费用、质量、早期儿童发展和父母工作连续性是家庭与代际主体持续性条件 |
 
 Source links:
 
@@ -252,6 +264,24 @@ Source links:
 - https://www.ready.gov/
 - https://www.who.int/health-topics/emergency-care
 - https://www.who.int/activities/strengthening-public-health-emergency-preparedness
+- https://www.fao.org/publications/sofi
+- https://www.worldbank.org/en/topic/agriculture/brief/food-security-update
+- https://www.who.int/news-room/fact-sheets/detail/healthy-diet
+- https://washdata.org/
+- https://www.who.int/news-room/fact-sheets/detail/drinking-water
+- https://www.unicef.org/wash
+- https://trackingsdg7.esmap.org/
+- https://www.iea.org/topics/energy-access
+- https://www.who.int/news-room/fact-sheets/detail/household-air-pollution-and-health
+- https://www.social-protection.org/
+- https://www.worldbank.org/en/topic/socialprotection
+- https://www.usa.gov/benefit-finder
+- https://content.naic.org/consumer
+- https://www.usa.gov/health-insurance
+- https://www.fdic.gov/resources/deposit-insurance/
+- https://www.worldbank.org/en/topic/gender/brief/childcare
+- https://www.acf.hhs.gov/occ
+- https://childcare.gov/
 
 ## 使用规则
 

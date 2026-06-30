@@ -26,3 +26,4 @@ Current decisions:
 - `0011-add-seventh-wave-homeostasis-choice-domains.md`
 - `0012-add-eighth-wave-agency-task-resource-domains.md`
 - `0013-add-ninth-wave-service-continuity-domains.md`
+- `0014-add-tenth-wave-basic-livelihood-risk-transfer-domains.md`
