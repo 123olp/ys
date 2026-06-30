@@ -1088,6 +1088,14 @@ flowchart TD
 | [Court Fees Fines Ability To Pay Continuity](domains/court-fees-fines-ability-to-pay-continuity/README.md) | court fees、fines、surcharges、fee waivers、ability-to-pay、collections 和后果 | 防止法院金钱义务把可修复事件放大成债务、吊照、就业和失屋风险 | 不提供付款、债务、破产、减免申请、逃避缴费、隐藏资产或个案建议 |
 | [Jury Service Summons Hardship Continuity](domains/jury-service-summons-hardship-continuity/README.md) | jury summons、资格、延期/豁免、hardship、工资/照护/交通/残障/语言障碍 | 把陪审义务建模为公民参与与生活中断管理的双重基础设施 | 不提供如何回应传票、逃避陪审、voir dire、借口、医学或就业建议 |
 | [Small Claims Civil Dispute Resolution Continuity](domains/small-claims-civil-dispute-resolution-continuity/README.md) | 小额诉讼、低额民事纠纷、ODR、调解、费用、service、hearing 和 judgment | 让低金额纠纷有低成本恢复路径，避免资源损失长期化 | 不提供诉状、证据、和解、送达、执行、上诉、管辖或法律建议 |
+| [Data Broker Registry Opt-Out Deletion Continuity](domains/data-broker-registry-opt-out-deletion-continuity/README.md) | data brokers、registry、opt-out、delete request、authorized agent 和 enforcement | 防止外部画像长期吞噬主体隐私、安全、资源入口和未来选择权 | 不提供法律建议、删除代办、批量 opt-out、规避核验或数据抓取 |
+| [Privacy Rights Access Correction Deletion Continuity](domains/privacy-rights-access-correction-deletion-continuity/README.md) | privacy rights、access、correction、deletion、appeal、verification 和 authorized agent | 让主体对外部数据系统保持发现、纠错、删除、申诉和退出能力 | 不提供请求信、法律判断、平台操作、投诉策略或身份材料准备 |
+| [Opt-Out Preference Signal Consent Revocation Continuity](domains/opt-out-preference-signal-consent-revocation-continuity/README.md) | opt-out preference signal、GPC、consent、revocation、dark pattern 和 notice | 让同意从一次性消费变成可撤回、可限制、可审计的持续控制 | 不提供自动点击、批量请求、广告追踪绕过、订阅代办或合规判断 |
+| [Commercial Surveillance Adtech Profile Continuity](domains/commercial-surveillance-adtech-profile-continuity/README.md) | commercial surveillance、adtech、tracking、profile、audience segment 和 RTB | 把商业监控和广告画像纳入注意力、机会、诈骗暴露和公平接入风险 | 不提供广告投放、画像构建、微定向、追踪部署或平台规避 |
+| [Sensitive Location Data Exposure Continuity](domains/sensitive-location-data-exposure-continuity/README.md) | precise location、sensitive places、geofence、mobile ad ID、broker 和 movement history | 防止移动轨迹成为跟踪、歧视、勒索、报复和身份关联攻击面 | 不提供定位、跟踪、地理围栏广告、执法规避、数据购买或去匿名化 |
+| [Biometric Identifier Template Governance Continuity](domains/biometric-identifier-template-governance-continuity/README.md) | face、voice、fingerprint、iris、template、liveness、matching 和 bias | 把身体特征从不可重置凭据风险转化为可治理、可替代、可审查接口 | 不提供生物认证绕过、deepfake、声纹伪造、模板反演或识别部署 |
+| [Children Teen Data Privacy Consent Continuity](domains/children-teen-data-privacy-consent-continuity/README.md) | COPPA、parental consent、age assurance、edtech data、teen privacy 和 retention | 防止未成年数据足迹在主体成熟前消耗安全、发展、注意力和未来选择权 | 不提供年龄规避、儿童画像、广告 targeting、家长控制绕过或监控方法 |
+| [Data Breach Notification Identity Recovery Continuity](domains/data-breach-notification-identity-recovery-continuity/README.md) | breach notification、identity theft recovery、credit freeze、fraud alert 和 remediation | 让泄露事件后的身份、账号、信用、医疗、税务和公共服务入口可恢复 | 不提供索赔建议、冻结操作、账号恢复代办、撞库、暗网搜索或泄露利用 |
 | [Transportation Access Mobility](domains/transportation-access-mobility/README.md) | 公共交通、无障碍交通、出行时间、交通成本、医疗交通和交通安全 | 外部可达性、行动半径、服务连接和等待成本 | 不提供路线、驾驶、车辆、交通法律、撤离或出行操作建议 |
 | [Supply Chain Continuity](domains/supply-chain-continuity/README.md) | 药品、能源、食物、设备、通信、芯片、物流和替代路径 | 关键输入、依赖链、断供模式、替代路径和恢复时间 | 不提供囤积恐慌、黑市采购、制裁规避、非法获取或供应链攻击建议 |
 | [Synthetic Biology Biosecurity](domains/synthetic-biology-biosecurity/README.md) | 合成生物学、生物安全、生物安保、双重用途风险和治理边界 | 高风险研究边界、审查门槛、禁止用途和生物风险变量 | 不提供病原体工程、培养、传播、规避筛查、实验协议或湿实验步骤 |
@@ -1424,6 +1432,14 @@ human_infra/
 │   ├── court-fees-fines-ability-to-pay-continuity/
 │   ├── jury-service-summons-hardship-continuity/
 │   ├── small-claims-civil-dispute-resolution-continuity/
+│   ├── data-broker-registry-opt-out-deletion-continuity/
+│   ├── privacy-rights-access-correction-deletion-continuity/
+│   ├── opt-out-preference-signal-consent-revocation-continuity/
+│   ├── commercial-surveillance-adtech-profile-continuity/
+│   ├── sensitive-location-data-exposure-continuity/
+│   ├── biometric-identifier-template-governance-continuity/
+│   ├── children-teen-data-privacy-consent-continuity/
+│   ├── data-breach-notification-identity-recovery-continuity/
 │   ├── future-waiting/
 │   ├── fluid-electrolyte-acid-base-homeostasis/
 │   ├── governance-rights/
@@ -1744,5 +1760,6 @@ flowchart LR
 - 2026-07-01：新增第七十波 8 个受害者安全、服务与恢复执行连续性域，覆盖家庭暴力/胁迫控制、性暴力医疗 forensic exam 与 advocacy、跟踪骚扰保护令、受害者/证人权利通知、犯罪受害者补偿与 restitution、安全住所 emergency transfer、人口贩运受害者识别服务和失踪人员/无名遗体身份恢复。
 - 2026-07-01：新增第七十一波 8 个住房 tenure 稳定与可居住性执行连续性域，覆盖租赁租约居住权、驱逐预防法院 diversion、应急租金援助与欠租、住房选择券/公屋、公平住房/合理便利、住房可居住性检查 code enforcement、HUD 批准住房咨询和制造房屋园区 tenure 安全。
 - 2026-07-01：新增第七十二波 8 个法院接入与民事程序执行连续性域，覆盖自行诉讼人自助、法院电子 filing、远程/混合 hearing、法院语言服务、法院残障便利、法院罚金费用支付能力、陪审传票 hardship 和小额民事纠纷恢复。
+- 2026-07-01：新增第七十三波 8 个个人数据权利、隐私暴露与数据经纪连续性域，覆盖数据经纪登记/退出/删除、隐私权访问更正删除、退出偏好信号与同意撤回、商业监控广告画像、敏感位置数据、生物特征模板治理、儿童青少年数据隐私和数据泄露通知身份恢复。
 
 完整记录见 [CHANGELOG.md](CHANGELOG.md)。

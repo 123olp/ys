@@ -212,6 +212,22 @@ Human Infra 不能被设计成更精密的压榨系统。
 - 收集、推断、公开或关联案件编号、当事人姓名、地址、联系方式、移民状态、残障/健康信息、收入、债务、家庭暴力/庇护信息、儿童信息、陪审员信息、证人信息、法院账号或 filing 材料等高风险敏感信息。
 - 把程序失败、缺席判决、费用负担、语言障碍、残障障碍、陪审冲突、小额纠纷损失或无律师状态归因于个人道德、智力不足、自律不足、消费选择或不愿学习。
 
+## 个人数据权利、隐私暴露与数据经纪连续性边界
+
+`data-broker-registry-opt-out-deletion-continuity`、`privacy-rights-access-correction-deletion-continuity`、`opt-out-preference-signal-consent-revocation-continuity`、`commercial-surveillance-adtech-profile-continuity`、`sensitive-location-data-exposure-continuity`、`biometric-identifier-template-governance-continuity`、`children-teen-data-privacy-consent-continuity` 和 `data-breach-notification-identity-recovery-continuity` 关注个人数据如何被收集、经纪、画像、转卖、撤回、暴露、泄露和恢复，以及这些过程如何影响服务可得性、价格、安全、身份、诈骗暴露和未来选择权，不是隐私法律服务、数据删除代办、广告技术操作、位置监控、生物识别部署、未成年画像或泄露利用工具。
+
+可以做：
+
+- 整理 FTC、CFPB、CPPA、NIST、Global Privacy Control、IdentityTheft.gov 等公开资料的对象、入口类型、权利边界、风险变量和禁止用途。
+- 建模数据经纪、访问/更正/删除权、opt-out signal、同意撤回、商业监控、敏感位置、生物特征、儿童青少年隐私和数据泄露如何影响主体持续性、注意力、安全、身份恢复、服务接入和未来选择权。
+- 区分公开研究、隐私权利理解、数据治理、风险地图、服务摩擦、身份恢复和个案法律/平台操作之间的边界。
+
+不能做：
+
+- 提供隐私法律建议、数据删除代办、权利请求代写、平台账号操作、自动 opt-out、cookie/adtech 规避、广告画像构建、微定向投放、位置追踪、地理围栏 targeting、去匿名化、生物认证绕过、deepfake、儿童定向广告、年龄门槛规避、泄露利用、暗网搜索、撞库、身份盗用或账号接管方法。
+- 收集、推断、公开或关联真实个人资料、数据经纪记录、地址、联系方式、位置轨迹、生物特征、未成年信息、泄露通知、账号凭据、SSN、金融账户、医疗账户、受害者身份或家庭关系等高风险敏感信息。
+- 把数据暴露、画像误用、泄露损害、诈骗受害、身份恢复失败、同意撤回失败、未成年人隐私风险或生物特征不可替换风险归因于个人不谨慎、技术素养不足、消费选择或不愿阅读条款。
+
 ## 基础生计与风险分摊域边界
 
 `food-security-nutrition-access`、`water-sanitation-hygiene-continuity`、`energy-access-resilience`、`social-protection-benefits-delivery`、`insurance-risk-transfer` 和 `childcare-family-continuity` 关注食物、水卫生、能源、公共福利、保险风险池和托育家庭支持如何作为反稀缺基础设施支撑主体持续性，不是个体饮食、申请、理赔、设备、施工或家庭处置指南。

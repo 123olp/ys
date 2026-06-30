@@ -125,6 +125,14 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `court-fees-fines-ability-to-pay-continuity/` | 法院费用罚金和支付能力审查决定法律事件是否会被放大成债务、吊照、就业和住房风险 |
 | `jury-service-summons-hardship-continuity/` | 陪审传票、hardship 和可达支持决定公民义务是否会过度击穿工作、照护、收入和健康安排 |
 | `small-claims-civil-dispute-resolution-continuity/` | 小额诉讼和简化民事纠纷渠道决定低金额资源损失是否能低成本恢复 |
+| `data-broker-registry-opt-out-deletion-continuity/` | 数据经纪登记、退出和删除决定外部画像是否会在主体不知情时长期影响金融、住房、就业、保险和安全 |
+| `privacy-rights-access-correction-deletion-continuity/` | 隐私权访问、更正、删除和申诉决定主体能否发现、纠正和限制外部数据系统中的错误资料 |
+| `opt-out-preference-signal-consent-revocation-continuity/` | 退出偏好信号和同意撤回决定数字许可是否能持续被主体控制，而不是被 dark pattern 一次性消费 |
+| `commercial-surveillance-adtech-profile-continuity/` | 商业监控和广告画像决定主体看到的信息、价格、机会、诈骗暴露和被操控风险 |
+| `sensitive-location-data-exposure-continuity/` | 敏感位置数据决定主体就医、求助、居住、工作和关系轨迹是否会成为攻击面 |
+| `biometric-identifier-template-governance-continuity/` | 生物特征模板治理决定身体凭据、误识别、偏差和不可撤销泄露风险是否可被约束 |
+| `children-teen-data-privacy-consent-continuity/` | 儿童青少年数据隐私决定未成年阶段的数据足迹是否会消耗发展、安全、注意力和成年选择权 |
+| `data-breach-notification-identity-recovery-continuity/` | 数据泄露通知和身份恢复决定泄露事件能否从不可见攻击面转成可处理恢复链 |
 | `transportation-access-mobility/` | 外部交通可达性决定医疗、工作、食物、社区、照护和应急资源能否实际到达 |
 | `legal-identity-civil-registration/` | 法律身份、出生登记、民事登记和身份文件决定主体能否被制度承认为权利与服务对象 |
 | `emergency-preparedness-response/` | 灾害准备、预警、通信、急救医疗、安置和恢复决定尾部风险能否被响应而不是一次性清零 |
@@ -1135,6 +1143,19 @@ Source links:
 - https://www.ncsc.org/consulting-and-research/areas-of-expertise/civil-justice
 - https://consumer.ftc.gov/consumer-alerts/2024/06/going-small-claims-court
 - https://www.consumerfinance.gov/consumer-tools/submit-a-complaint/
+- https://www.ftc.gov/news-events/topics/protecting-consumer-privacy-security/data-brokers
+- https://www.consumerfinance.gov/data-research/research-reports/data-brokers-and-the-consumer-reporting-infrastructure/
+- https://cppa.ca.gov/data_broker_registry/
+- https://cppa.ca.gov/consumers/
+- https://www.nist.gov/privacy-framework
+- https://consumer.ftc.gov/identity-theft-and-online-security/protecting-your-privacy-online
+- https://globalprivacycontrol.org/
+- https://www.ftc.gov/news-events/topics/protecting-consumer-privacy-security/dark-patterns
+- https://www.ftc.gov/news-events/topics/protecting-consumer-privacy-security/location-data
+- https://www.nist.gov/programs-projects/face-recognition-vendor-test-frvt
+- https://www.ftc.gov/business-guidance/privacy-security/childrens-privacy
+- https://www.identitytheft.gov/
+- https://consumer.ftc.gov/articles/data-breach-response-guide-business
 - https://www.cdc.gov/transportation/
 - https://www.transportation.gov/mission/health
 - https://www.cdc.gov/healthy-places/php/toolkit/transportation.html

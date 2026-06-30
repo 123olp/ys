@@ -154,6 +154,14 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 法院金钱义务不应扩大贫困惩罚 | `court-fees-fines-ability-to-pay-continuity/` | fees、fines、surcharges、fee waiver、ability-to-pay、payment plan、collections | 费用罚金把法律事件放大为债务、吊照、失业、拘押或住房风险 |
 | 陪审义务可被生活约束吸收 | `jury-service-summons-hardship-continuity/` | summons、资格、豁免、延期、hardship、工资、照护、交通、可达 | 公民义务在缺少支持时变成工作、照护、健康和收入中断 |
 | 小额纠纷可低成本恢复 | `small-claims-civil-dispute-resolution-continuity/` | small claims、ODR、调解、filing、service、hearing、judgment、appeal 边界 | 低金额纠纷因程序成本过高而长期损伤现金流、信任和资源恢复 |
+| 数据经纪画像必须可发现可退出 | `data-broker-registry-opt-out-deletion-continuity/` | registry、opt-out、delete request、authorized agent、verification、enforcement | 不可见外部画像长期改变金融、住房、就业、保险、安全和骚扰风险 |
+| 隐私权利必须可访问可纠错 | `privacy-rights-access-correction-deletion-continuity/` | access、correction、deletion、appeal、verification、authorized agent | 主体无法查看、更正或删除错误数据，导致下游系统持续误判 |
+| 同意必须可撤回可同步 | `opt-out-preference-signal-consent-revocation-continuity/` | opt-out signal、GPC、consent、revocation、dark pattern、notice | 同意被一次性消费或被设计诱导，长期吞噬主体控制权和注意力 |
+| 商业监控画像必须可治理 | `commercial-surveillance-adtech-profile-continuity/` | tracking、adtech、profile、audience segment、RTB、data sharing | 不可见画像改变信息、价格、机会和诈骗暴露，主体选择权被操控 |
+| 敏感位置轨迹必须不成为攻击面 | `sensitive-location-data-exposure-continuity/` | precise location、sensitive place、geofence、mobile ad ID、broker | 医疗、庇护、学校、工作和家庭轨迹暴露，制造跟踪、报复和歧视风险 |
+| 生物特征模板必须可治理可替代 | `biometric-identifier-template-governance-continuity/` | face、voice、fingerprint、iris、template、liveness、bias | 身体特征被当作不可重置凭据，泄露或误识别后难以恢复 |
+| 未成年数据必须保护未来选择权 | `children-teen-data-privacy-consent-continuity/` | COPPA、parental consent、age assurance、edtech data、teen privacy、retention | 儿童青少年数据足迹在成熟前消耗安全、发展、注意力和成年机会边界 |
+| 泄露事件必须可通知可恢复 | `data-breach-notification-identity-recovery-continuity/` | breach notice、exposed data、identity recovery、credit freeze、fraud alert | 泄露资料长期转成身份盗用、账号接管、信用、医疗、税务和公共服务风险 |
 | 日常移动和服务接入可达 | `transportation-access-mobility/` | 公共交通、无障碍交通、出行时间、医疗交通、交通成本、交通安全 | 有资源但到不了，服务延误、缺席、孤立或撤离不可达 |
 | 法律身份可被承认 | `legal-identity-civil-registration/` | 法律身份、出生登记、民事登记、生命统计、身份文件、服务资格 | 无证、登记缺失、身份错误或制度不承认导致权利与服务断线 |
 | 权利救济可达 | `access-to-justice-legal-aid/` | 民事法律需求、法律援助、司法可及、程序负担、代理缺口、申诉执行 | 名义权利无法转化为住房、收入、安全、身份和服务恢复 |
@@ -709,6 +717,14 @@ risk-engineering
   -> court-fees-fines-ability-to-pay-continuity
   -> jury-service-summons-hardship-continuity
   -> small-claims-civil-dispute-resolution-continuity
+  -> data-broker-registry-opt-out-deletion-continuity
+  -> privacy-rights-access-correction-deletion-continuity
+  -> opt-out-preference-signal-consent-revocation-continuity
+  -> commercial-surveillance-adtech-profile-continuity
+  -> sensitive-location-data-exposure-continuity
+  -> biometric-identifier-template-governance-continuity
+  -> children-teen-data-privacy-consent-continuity
+  -> data-breach-notification-identity-recovery-continuity
   -> transportation-access-mobility
   -> legal-identity-civil-registration
   -> access-to-justice-legal-aid

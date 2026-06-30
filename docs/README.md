@@ -92,6 +92,7 @@ docs/
 │   ├── 0074-add-seventieth-wave-victim-safety-recovery-continuity-domains.md
 │   ├── 0075-add-seventy-first-wave-housing-tenure-stability-continuity-domains.md
 │   ├── 0076-add-seventy-second-wave-court-access-procedure-continuity-domains.md
+│   ├── 0077-add-seventy-third-wave-personal-data-privacy-continuity-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -571,4 +572,12 @@ docs/
 391. Read `../domains/court-fees-fines-ability-to-pay-continuity/README.md` if you are working on court fees, fines, surcharges, fee waivers, ability-to-pay review, payment plans, collections, or nonpayment consequences.
 392. Read `../domains/jury-service-summons-hardship-continuity/README.md` if you are working on jury summons, juror qualification, exemption, deferral, hardship, employer constraints, childcare, transportation, or juror accessibility.
 393. Read `../domains/small-claims-civil-dispute-resolution-continuity/README.md` if you are working on small claims, low-value civil disputes, online dispute resolution, mediation, simplified civil procedure, or judgment recovery boundaries.
-394. Enter a domain under `../domains/`.
+394. Read `../domains/data-broker-registry-opt-out-deletion-continuity/README.md` if you are working on data brokers, data broker registries, opt-out, deletion requests, authorized agents, or broker enforcement boundaries.
+395. Read `../domains/privacy-rights-access-correction-deletion-continuity/README.md` if you are working on privacy rights, data access, correction, deletion, appeal, verification, or data-subject request boundaries.
+396. Read `../domains/opt-out-preference-signal-consent-revocation-continuity/README.md` if you are working on opt-out preference signals, Global Privacy Control, consent revocation, privacy preferences, notices, or dark patterns.
+397. Read `../domains/commercial-surveillance-adtech-profile-continuity/README.md` if you are working on commercial surveillance, adtech, tracking, profiling, audience segments, or real-time bidding risk.
+398. Read `../domains/sensitive-location-data-exposure-continuity/README.md` if you are working on precise location data, sensitive places, geofencing, mobile ad IDs, movement histories, or location broker risk.
+399. Read `../domains/biometric-identifier-template-governance-continuity/README.md` if you are working on biometric identifiers, biometric templates, facial recognition, voiceprints, fingerprints, iris scans, liveness, or biometric matching risk.
+400. Read `../domains/children-teen-data-privacy-consent-continuity/README.md` if you are working on COPPA, parental consent, age assurance, edtech data, teen privacy, child-directed advertising, or youth data retention.
+401. Read `../domains/data-breach-notification-identity-recovery-continuity/README.md` if you are working on breach notification, identity theft recovery, exposed personal information, credit freezes, fraud alerts, or account recovery after data exposure.
+402. Enter a domain under `../domains/`.

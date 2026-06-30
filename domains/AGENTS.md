@@ -921,6 +921,30 @@ domains/
 ├── small-claims-civil-dispute-resolution-continuity/
 │   ├── AGENTS.md
 │   └── README.md
+├── data-broker-registry-opt-out-deletion-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── privacy-rights-access-correction-deletion-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── opt-out-preference-signal-consent-revocation-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── commercial-surveillance-adtech-profile-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── sensitive-location-data-exposure-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── biometric-identifier-template-governance-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── children-teen-data-privacy-consent-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── data-breach-notification-identity-recovery-continuity/
+│   ├── AGENTS.md
+│   └── README.md
 ├── transportation-access-mobility/
 │   ├── AGENTS.md
 │   └── README.md
@@ -1472,6 +1496,7 @@ domains/
 - `healthcare-access-continuity/`、`medicine-access-treatment-continuity/`、`patient-data-interoperability/`、`telehealth-remote-monitoring-access/`、`health-data-privacy-governance/`、`functioning-quality-of-life-outcomes/`、`health-economics-value-assessment/`、`clinical-trials-regulatory-science-translation/`、`immunization-public-health-surveillance/`、`animal-health-zoonotic-interface-one-health/`、`maternal-newborn-child-development/`、`patient-safety-organizational-learning/`、`health-workforce-capacity/`、`community-health-workers-peer-support/`、`caregiving-long-term-care/`、`housing-built-environment-stability/`、`building-fire-life-safety-codes/`、`transportation-access-mobility/`、`legal-identity-civil-registration/`、`emergency-preparedness-response/`、`weather-climate-observation-forecasting/`、`emergency-alerts-communications/`、`household-emergency-preparedness-resilience/` 和 `disaster-recovery-relief-continuity/` 负责医疗接入、药品治疗连续性、患者数据互操作、远程照护、健康数据治理、结局评估、价值评估、临床监管转化、公共卫生监测、动物健康界面、早期生命发展、患者安全、健康劳动力、社区中介支持、长期照护、居住空间、建筑消防生命安全、交通可达、法律身份、应急响应、天气气候观测、预警通信、家庭准备和灾后恢复这些服务接入与生活连续性条件。
 - `rental-lease-tenancy-rights-continuity/`、`eviction-prevention-court-diversion-continuity/`、`emergency-rental-assistance-arrears-continuity/`、`housing-choice-voucher-public-housing-continuity/`、`fair-housing-discrimination-reasonable-accommodation-continuity/`、`housing-habitability-inspection-code-enforcement-continuity/`、`hud-approved-housing-counseling-navigation-continuity/` 和 `manufactured-housing-park-tenure-safety-continuity/` 负责住房 tenure 稳定与可居住性执行连续性，覆盖租赁居住权、驱逐预防、欠租援助、住房补贴、公平住房、可居住性检查、住房咨询和制造房屋园区稳定。
 - `self-represented-litigant-court-self-help-continuity/`、`court-efiling-document-submission-continuity/`、`remote-hybrid-court-hearing-access-continuity/`、`court-language-access-interpreter-continuity/`、`court-disability-accommodation-accessibility-continuity/`、`court-fees-fines-ability-to-pay-continuity/`、`jury-service-summons-hardship-continuity/` 和 `small-claims-civil-dispute-resolution-continuity/` 负责法院接入与民事程序执行连续性，覆盖自助中心、电子提交、远程 hearing、语言口译、残障便利、费用罚金、陪审义务和小额纠纷恢复。
+- `data-broker-registry-opt-out-deletion-continuity/`、`privacy-rights-access-correction-deletion-continuity/`、`opt-out-preference-signal-consent-revocation-continuity/`、`commercial-surveillance-adtech-profile-continuity/`、`sensitive-location-data-exposure-continuity/`、`biometric-identifier-template-governance-continuity/`、`children-teen-data-privacy-consent-continuity/` 和 `data-breach-notification-identity-recovery-continuity/` 负责个人数据权利、隐私暴露与数据经纪连续性，覆盖数据经纪、访问更正删除、同意撤回、商业监控、位置数据、生物特征、未成年数据和泄露恢复。
 - `human-animal-bond-companion-care-continuity/`、`veterinary-care-access-cost-continuity/`、`service-animal-disability-access-continuity/`、`pet-identification-microchip-reunification-continuity/`、`pet-food-medication-supply-safety-continuity/`、`pet-disaster-evacuation-sheltering-continuity/`、`animal-shelter-rescue-rehoming-continuity/` 和 `animal-welfare-cruelty-reporting-continuity/` 负责伴侣动物、服务动物与宠物照护连续性，把关系支持、兽医入口、辅助接口、身份重聚、食药供应、灾害撤离、收容转接和福利报告纳入主体持续性模型。
 - 上述伴侣/服务动物域不提供动物诊疗、训练、购买、领养、繁育、救助行动、微芯片/寻宠操作、实时灾害撤离、动物举报取证、法律策略、家庭纠纷处理、宠物食品/药品建议、动物虐待或规避检查方法。
 - `public-procurement-contracting-capacity/` 负责公共采购、合同、供应商管理、应急采购、透明度和交付验收这些公共能力落地条件。

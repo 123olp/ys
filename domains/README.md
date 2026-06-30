@@ -72,6 +72,14 @@
 - `court-fees-fines-ability-to-pay-continuity/`：法院费用罚金与支付能力连续性，整理 fees、fines、surcharges、fee waivers、ability-to-pay、collections 和 nonpayment consequences。
 - `jury-service-summons-hardship-continuity/`：陪审传票与 hardship 连续性，整理 summons、qualification、exemption、deferral、hardship、employer/childcare/transport barriers。
 - `small-claims-civil-dispute-resolution-continuity/`：小额民事纠纷解决连续性，整理 small claims、ODR、mediation、filing fees、service、hearing access 和 judgment recovery boundaries。
+- `data-broker-registry-opt-out-deletion-continuity/`：数据经纪登记、退出与删除连续性，整理 data broker registry、opt-out、delete request、authorized agent 和 enforcement。
+- `privacy-rights-access-correction-deletion-continuity/`：隐私权访问、更正与删除连续性，整理 access、correction、deletion、appeal、verification 和 data subject rights。
+- `opt-out-preference-signal-consent-revocation-continuity/`：退出偏好信号与同意撤回连续性，整理 GPC、consent、revocation、privacy preference 和 dark pattern。
+- `commercial-surveillance-adtech-profile-continuity/`：商业监控、广告技术与画像连续性，整理 tracking、adtech、profile enrichment、audience segment 和 RTB 风险。
+- `sensitive-location-data-exposure-continuity/`：敏感位置数据暴露连续性，整理 precise location、sensitive places、geofence、mobile ad ID 和 location brokers。
+- `biometric-identifier-template-governance-continuity/`：生物特征标识与模板治理连续性，整理 face、voice、fingerprint、iris、template、liveness 和 matching risk。
+- `children-teen-data-privacy-consent-continuity/`：儿童青少年数据隐私与同意连续性，整理 COPPA、parental consent、age assurance、edtech data 和 teen privacy。
+- `data-breach-notification-identity-recovery-continuity/`：数据泄露通知与身份恢复连续性，整理 breach notification、identity theft recovery、credit freeze、fraud alert 和 remediation。
 - `transportation-access-mobility/`：交通接入与日常移动，整理公共交通、无障碍交通、出行时间、医疗交通、交通成本和外部可达性。
 - `legal-identity-civil-registration/`：法律身份与民事登记，整理法律身份、出生登记、民事登记、生命统计、身份文件和服务资格。
 - `access-to-justice-legal-aid/`：司法可及与法律援助，整理民事法律需求、法律援助、程序负担、代理缺口和权利救济。

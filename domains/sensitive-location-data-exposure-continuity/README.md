@@ -1,0 +1,37 @@
+# Sensitive Location Data Exposure Continuity
+
+Sensitive Location Data Exposure Continuity 关注位置数据、敏感地点、地理围栏、移动广告 ID、数据经纪、执法/商业访问和位置暴露如何影响主体安全、隐私、住房、医疗、工作和关系连续性。
+
+## 对象
+
+- Precise location data、sensitive location、geofence、mobile ad ID、SDK、location broker 和 movement history。
+- 医疗机构、庇护所、宗教场所、学校、法院、工作地、家庭住址和高风险关系中的位置暴露。
+- 位置数据进入广告、画像、骚扰、跟踪、执法请求、数据泄露和身份关联的路径。
+
+## Human Infra 价值
+
+```text
+主体持续性需要移动轨迹不成为攻击面
+-> 位置数据把生活、医疗、工作、关系和安全状态转成可推断轨迹
+-> 敏感地点暴露会增加跟踪、歧视、勒索、报复、执法误伤和关系风险
+-> 最小化、限制共享、删除、执法审查和数据经纪治理降低位置暴露
+-> 主体更能安全移动、就医、求助、工作和恢复
+```
+
+## 边界
+
+- 本域不提供跟踪定位、人肉搜索、执法规避、地理围栏广告投放、设备追踪、位置数据购买或去匿名化方法。
+- 不判断某执法请求、商业数据访问、app 权限或 location broker 行为是否合法。
+- 不收集、推断或公开真实位置、住址、工作地、庇护所、医疗地点、学校或法院出入记录。
+- 只整理公开资料、暴露路径、敏感地点边界、治理变量和禁止用途。
+
+## 上下游
+
+- 上游：`digital-identity-security/`、`commercial-surveillance-adtech-profile-continuity/`、`data-broker-registry-opt-out-deletion-continuity/`。
+- 下游：`personal-safety-violence-prevention/`、`survivor-safe-housing-emergency-transfer-continuity/`、`travel-advisory-consular-assistance-continuity/`。
+
+## Source Signals
+
+- Federal Trade Commission location data enforcement and data broker materials.
+- NIST Privacy Framework.
+- CPPA sensitive personal information and opt-out materials.
