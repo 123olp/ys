@@ -62,6 +62,12 @@ human_infra/
     ├── technology-foresight-horizon-scanning/ # 技术预见与地平线扫描
     ├── research-portfolio-prioritization-funding-governance/ # 研究组合优先级与资金治理
     ├── intellectual-property-technology-transfer-access/ # 知识产权、技术转移与可及性
+    ├── trustworthy-scientific-communication-peer-review/ # 可信科研传播与同行评审
+    ├── research-participant-consent-community-engagement/ # 研究参与者同意与社区参与
+    ├── biobanking-biospecimen-quality-chain-of-custody/ # 生物样本库、样本质量与保管链
+    ├── longitudinal-cohort-retention-followup-infrastructure/ # 纵向队列留存与随访基础设施
+    ├── registries-real-world-data-governance/ # 登记系统与真实世界数据治理
+    ├── scientific-instrumentation-sensor-calibration-maintenance/ # 科研仪器与传感器校准维护
     ├── cognitive-augmentation/ # 认知增强与工具放大
     ├── digital-identity-security/ # 数字身份安全
     ├── disembodied-cns/   # 去具身外部维持型中枢生命系统
@@ -406,6 +412,12 @@ human_infra/
 - `domains/technology-foresight-horizon-scanning/` 负责技术预见、地平线扫描、弱信号、情景分析和未来技术候选队列。
 - `domains/research-portfolio-prioritization-funding-governance/` 负责研究组合优先级、资金治理、阶段门、学习价值和停止条件。
 - `domains/intellectual-property-technology-transfer-access/` 负责知识产权、许可、技术转移、公共资助成果和技术可及性。
+- `domains/trustworthy-scientific-communication-peer-review/` 负责同行评审、预印本、撤稿、勘误、引用语境和科研传播纠错链。
+- `domains/research-participant-consent-community-engagement/` 负责研究参与者知情同意、退出、再联系、社区参与、结果回馈和研究信任。
+- `domains/biobanking-biospecimen-quality-chain-of-custody/` 负责生物样本库、样本质量、预分析变量、冷链、追踪和保管链。
+- `domains/longitudinal-cohort-retention-followup-infrastructure/` 负责纵向队列、长期随访、参与者留存、失访、事件确认和生命历程数据基础设施。
+- `domains/registries-real-world-data-governance/` 负责患者/疾病/产品登记、真实世界数据、真实世界证据、数据质量和用途边界。
+- `domains/scientific-instrumentation-sensor-calibration-maintenance/` 负责科研仪器、传感器、校准、漂移、维护和测量不确定性。
 - `domains/insurance-risk-transfer/` 负责健康、失业、工伤、残障、灾害、存款、养老金等风险转移和风险池。
 - `domains/childcare-family-continuity/` 负责托育可及、托育费用、照护质量、早期儿童发展、父母工作连续性和家庭压力。
 - `domains/emergency-preparedness-response/` 负责灾害准备、预警、应急通信、急救医疗、安置、公共卫生应急和灾后恢复。
@@ -479,6 +491,7 @@ human_infra/
 - 2026-06-30：新增基因治疗与基因编辑递送安全、生物年龄钟验证、多组学个人基线、工程细胞疗法、类器官组织芯片模型和异种移植工程器官替换六个研究域，补齐生物医学平台层。
 - 2026-06-30：新增因果推断与目标试验模拟、生存分析与健康寿命风险建模、人类数字孪生生命历程仿真、实施科学与依从行为改变、不确定性量化与模型校准、数据质量缺失代表性六个研究域，补齐定量方法学层。
 - 2026-06-30：新增隐私保护计算、知识图谱本体语义互操作、模型卡 AI 审计文档、技术预见地平线扫描、研究组合资金治理和知识产权技术转移可及六个研究域，补齐知识治理与技术扩散层。
+- 2026-06-30：新增可信科研传播与同行评审、研究参与者同意与社区参与、生物样本库保管链、纵向队列随访、登记与真实世界数据治理、科研仪器与传感器校准维护六个研究域，补齐科研证据基础设施层。
 - 2026-06-30：新增复杂照护导航、交接与决策连续性域，覆盖罕见病诊断漫游、多病共存多重用药、出院交接、居家/缓和/安宁疗护、医疗解释文化中介和患者共同决策。
 - 2026-06-30：新增外部化主体连续性域，覆盖生命日志个人档案、数字遗产继承、可穿戴连续感知、个人知识管理认知卸载、脑机接口治理和机器人具身辅助。
 - 2026-06-30：新增 `domains/cellular-reprogramming/`，承载山中因子、部分重编程、化学重编程、AI 因子设计和表观遗传编辑的机制谱系与安全边界。

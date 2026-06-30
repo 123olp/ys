@@ -51,6 +51,7 @@ docs/
 │   ├── 0033-add-twenty-ninth-wave-biomedical-platform-domains.md
 │   ├── 0034-add-thirtieth-wave-quantitative-methodology-domains.md
 │   ├── 0035-add-thirty-first-wave-knowledge-governance-technology-diffusion-domains.md
+│   ├── 0036-add-thirty-second-wave-research-evidence-infrastructure-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -240,4 +241,10 @@ docs/
 134. Read `../domains/technology-foresight-horizon-scanning/README.md` if you are working on horizon scanning, technology foresight, weak signals, scenario planning, emerging technology watch, or future technology windows.
 135. Read `../domains/research-portfolio-prioritization-funding-governance/README.md` if you are working on research prioritization, portfolio governance, funding allocation, value of information, stage gates, or stop conditions.
 136. Read `../domains/intellectual-property-technology-transfer-access/README.md` if you are working on patents, licensing, technology transfer, public-funded inventions, Bayh-Dole, march-in rights, or technology access.
-137. Enter a domain under `../domains/`.
+137. Read `../domains/trustworthy-scientific-communication-peer-review/README.md` if you are working on peer review, preprints, publication ethics, retractions, corrections, citation context, or scientific communication.
+138. Read `../domains/research-participant-consent-community-engagement/README.md` if you are working on informed consent, participant withdrawal, recontact, research return of results, patient engagement, or community engagement.
+139. Read `../domains/biobanking-biospecimen-quality-chain-of-custody/README.md` if you are working on biobanks, biospecimen quality, preanalytical variables, cold chain, sample tracking, or chain of custody.
+140. Read `../domains/longitudinal-cohort-retention-followup-infrastructure/README.md` if you are working on longitudinal cohorts, follow-up, retention, attrition, event ascertainment, or life-course data linkage.
+141. Read `../domains/registries-real-world-data-governance/README.md` if you are working on patient registries, disease registries, product registries, real-world data, real-world evidence, or registry data quality.
+142. Read `../domains/scientific-instrumentation-sensor-calibration-maintenance/README.md` if you are working on scientific instrumentation, sensor calibration, drift, maintenance, reference materials, or measurement uncertainty.
+143. Enter a domain under `../domains/`.

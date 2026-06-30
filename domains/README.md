@@ -192,6 +192,12 @@
 - `technology-foresight-horizon-scanning/`：技术预见与地平线扫描，整理弱信号、情景分析、技术成熟度、证据缺口和未来窗口。
 - `research-portfolio-prioritization-funding-governance/`：研究组合优先级与资金治理，整理有限资源下的研究排序、阶段门、学习价值和停止条件。
 - `intellectual-property-technology-transfer-access/`：知识产权、技术转移与可及性，整理专利、许可、公共资助成果、生产扩散和主体可获得性。
+- `trustworthy-scientific-communication-peer-review/`：可信科研传播与同行评审，整理预印本、同行评审、撤稿、勘误、引用语境和出版伦理。
+- `research-participant-consent-community-engagement/`：研究参与者同意与社区参与，整理知情同意、退出、再联系、社区参与、结果回馈和研究信任。
+- `biobanking-biospecimen-quality-chain-of-custody/`：生物样本库、样本质量与保管链，整理预分析变量、冷链、追踪、样本质量和二次使用边界。
+- `longitudinal-cohort-retention-followup-infrastructure/`：纵向队列留存与随访基础设施，整理长期随访、参与者留存、失访、事件确认和生命历程数据。
+- `registries-real-world-data-governance/`：登记系统与真实世界数据治理，整理患者/疾病/产品登记、RWD/RWE、数据质量、用途边界和持续反馈。
+- `scientific-instrumentation-sensor-calibration-maintenance/`：科研仪器与传感器校准维护，整理校准、漂移、维护、参考材料、测量不确定性和设备生命周期。
 - `supply-chain-continuity/`：供应链连续性，整理关键物资、服务、物流、替代路径和恢复时间。
 - `synthetic-biology-biosecurity/`：合成生物学与生物安全，整理双重用途、生物安全、生物安保和治理边界。
 - `space-extreme-habitation/`：空间与极端栖居，整理辐射、微重力、隔离、闭环资源和远程医疗风险。

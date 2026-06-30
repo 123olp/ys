@@ -211,6 +211,12 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `technology-foresight-horizon-scanning/` | 技术预见和地平线扫描决定未来技术信号能否从新闻热度转化为候选研究域和复核任务 |
 | `research-portfolio-prioritization-funding-governance/` | 研究组合优先级和资金治理决定有限资源能否投入最高学习价值、最大主体持续性影响和可停止的研究路径 |
 | `intellectual-property-technology-transfer-access/` | 知识产权和技术转移可及决定技术成熟能否真正进入主体可获得、可负担和可扩散的服务路径 |
+| `trustworthy-scientific-communication-peer-review/` | 可信科研传播和同行评审决定论文、预印本、撤稿、勘误和引用语境能否被正确纳入证据系统 |
+| `research-participant-consent-community-engagement/` | 研究参与者同意和社区参与决定长期人体研究能否保留主体合法性、信任、退出和留存 |
+| `biobanking-biospecimen-quality-chain-of-custody/` | 生物样本库和保管链决定组学、biomarker、疾病机制和转化研究的物质输入是否可信 |
+| `longitudinal-cohort-retention-followup-infrastructure/` | 纵向队列留存和随访决定寿命、健康寿命、暴露变化和未来选择权能否被长期观察 |
+| `registries-real-world-data-governance/` | 登记系统和真实世界数据治理决定技术进入现实照护后的安全、效果、可及和扩散反馈是否可信 |
+| `scientific-instrumentation-sensor-calibration-maintenance/` | 科研仪器和传感器校准维护决定测量反馈系统是否把真实信号和设备误差区分开 |
 
 ## 来源信号
 
@@ -289,6 +295,12 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | HHS HIPAA / Common Rule / NIST Privacy / NIST CSF / NIH GDS / GA4GH / ONC Information Blocking | 提示敏感健康、基因、行为、神经和服务数据需要同意、退出、安全、共享、二次使用和信息阻断边界 |
 | NIST Privacy Framework / Differential Privacy / Collaborative Learning | 提示敏感主体数据需要隐私保护计算、协作学习和隐私-效用边界，而不是简单集中化 |
 | FAIR Principles / OBO Foundry / W3C RDF and OWL | 提示多域知识需要本体、知识图谱、语义互操作和可复用元数据 |
+| ICMJE / COPE / Crossmark / Retraction Watch | 提示科研传播需要同行评审、出版伦理、勘误、撤稿和引用语境审查 |
+| OHRP / PCORI / NIH All of Us | 提示长期人体研究需要知情同意、退出、社区参与、结果回馈和研究信任 |
+| ISBER / NCI Biospecimen Best Practices | 提示生物样本质量、预分析变量、冷链和保管链会直接影响组学与 biomarker 证据 |
+| UK Biobank / Framingham / NHANES / HRS / All of Us | 提示寿命、健康寿命和生命历程模型需要长期队列、随访留存、事件确认和数据链接 |
+| AHRQ registries / FDA RWE / OHDSI OMOP | 提示真实世界证据需要登记系统、共同数据模型、质量审计和用途边界 |
+| NIST calibration / SRM / ISO 17025 / BIPM | 提示仪器、传感器和实验平台需要校准、参考材料、漂移监测和测量不确定性 |
 | Model Cards / Datasheets for Datasets / NIST AI RMF | 提示模型、数据、图表和 AI 系统需要可审计文档、用途限制和风险管理语言 |
 | OECD Strategic Foresight / WHO Health Technology Assessment horizon scanning | 提示未来技术窗口需要弱信号、情景分析和地平线扫描，而不是新闻热度驱动 |
 | NIH Office of Portfolio Analysis / WHO research priority setting / ARPA-H / DARPA | 提示无限研究域需要组合优先级、阶段门、学习价值和停止条件 |

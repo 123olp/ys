@@ -234,6 +234,12 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 未来技术必须可预警 | `technology-foresight-horizon-scanning/` | 弱信号、情景分析、成熟度、证据缺口、复核周期 | 被新闻热度、融资叙事、专利数量或公司公告牵引 |
 | 研究资源必须可排序 | `research-portfolio-prioritization-funding-governance/` | 组合优先级、价值信息、阶段门、学习价值、停止条件 | 无限发散、资源错配、单一指标压倒公共价值 |
 | 技术成熟必须转化为可及 | `intellectual-property-technology-transfer-access/` | 专利、许可、技术转移、生产扩散、价格和地域可及性 | 技术存在但不可获得、不可负担、许可锁定或转化失败 |
+| 科研传播必须可纠错 | `trustworthy-scientific-communication-peer-review/` | 同行评审、预印本、撤稿、勘误、引用语境、利益冲突 | 把未审查、已撤回、被夸大或断章引用的材料写成稳定证据 |
+| 人体研究必须保留主体合法性 | `research-participant-consent-community-engagement/` | 知情同意、退出、再联系、社区参与、结果回馈、信任 | 长期研究退化为数据抽取，代表性、留存和伦理正当性同时下降 |
+| 生物样本必须可追踪可信 | `biobanking-biospecimen-quality-chain-of-custody/` | 样本质量、预分析变量、冷链、追踪、保管链、二次使用 | 样本退化、污染、错配或同意越界污染组学和 biomarker 证据 |
+| 生命路径必须可长期观察 | `longitudinal-cohort-retention-followup-infrastructure/` | 纵向队列、随访、留存、失访、事件确认、生命历程链接 | 失访、选择偏差和随访断裂扭曲寿命、健康寿命和风险路径 |
+| 真实世界反馈必须可治理 | `registries-real-world-data-governance/` | 患者登记、疾病登记、产品登记、RWD/RWE、数据质量、用途边界 | 登记缺失、用途越界、数据漂移和相关性外推污染技术反馈 |
+| 测量硬件必须可校准维护 | `scientific-instrumentation-sensor-calibration-maintenance/` | 仪器、传感器、校准、漂移、维护、参考材料、不确定性 | 设备误差被误读为生命路径、环境暴露或技术效果信号 |
 | 状态可观测和校正 | `measurement-feedback/` | 测量、预测、反馈、风险评分 | 错误预测、偏差、指标替代真实终点 |
 
 ## 主链路
@@ -244,6 +250,7 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
   -> 生物医学平台可验证、可递送、可治理
   -> 定量方法学可识别、可建模、可校准
   -> 知识治理与技术扩散可追踪、可审计、可排序、可获得
+  -> 科研证据基础设施可发表纠错、主体授权、样本保管、长期随访、真实世界登记和仪器校准
   -> 神经与身份连续
   -> 时间窗口延展
   -> 认知与工具增强

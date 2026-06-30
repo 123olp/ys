@@ -83,6 +83,24 @@ domains/
 ├── intellectual-property-technology-transfer-access/
 │   ├── AGENTS.md
 │   └── README.md
+├── trustworthy-scientific-communication-peer-review/
+│   ├── AGENTS.md
+│   └── README.md
+├── research-participant-consent-community-engagement/
+│   ├── AGENTS.md
+│   └── README.md
+├── biobanking-biospecimen-quality-chain-of-custody/
+│   ├── AGENTS.md
+│   └── README.md
+├── longitudinal-cohort-retention-followup-infrastructure/
+│   ├── AGENTS.md
+│   └── README.md
+├── registries-real-world-data-governance/
+│   ├── AGENTS.md
+│   └── README.md
+├── scientific-instrumentation-sensor-calibration-maintenance/
+│   ├── AGENTS.md
+│   └── README.md
 ├── cognitive-augmentation/
 │   ├── AGENTS.md
 │   └── README.md
@@ -639,12 +657,14 @@ domains/
 - `gene-therapy-genome-editing-delivery-safety/`、`biological-age-clocks-biomarker-validation/`、`multiomics-personal-baseline-systems-biology/`、`engineered-cell-therapy-regenerative-platforms/`、`organoids-organ-on-chip-disease-models/` 和 `xenotransplantation-bioengineered-organ-replacement/` 负责基因治疗与编辑递送安全、生物年龄钟验证、多组学个人基线、工程细胞疗法、人体相关疾病模型和器官替换平台这些生物医学平台条件。
 - `causal-inference-target-trial-emulation/`、`survival-analysis-healthspan-risk-modeling/`、`human-digital-twin-life-course-simulation/`、`implementation-science-adherence-behavior-change/`、`uncertainty-quantification-model-calibration/` 和 `data-quality-missingness-representativeness/` 负责因果识别、寿命/健康寿命风险、生命历程仿真、实施落地、模型校准和数据质量这些定量方法学条件。
 - `privacy-preserving-computation-federated-learning/`、`knowledge-graph-ontology-semantic-interoperability/`、`model-cards-ai-audit-documentation/`、`technology-foresight-horizon-scanning/`、`research-portfolio-prioritization-funding-governance/` 和 `intellectual-property-technology-transfer-access/` 负责隐私保护计算、语义知识组织、模型审计、未来技术信号、研究组合排序和技术转移可及这些知识治理与技术扩散条件。
+- `trustworthy-scientific-communication-peer-review/`、`research-participant-consent-community-engagement/`、`biobanking-biospecimen-quality-chain-of-custody/`、`longitudinal-cohort-retention-followup-infrastructure/`、`registries-real-world-data-governance/` 和 `scientific-instrumentation-sensor-calibration-maintenance/` 负责可信科研传播、研究参与者同意、样本质量保管链、纵向队列随访、真实世界登记和仪器传感器校准这些科研证据基础设施条件。
 - `access-to-justice-legal-aid/`、`civic-participation-election-access/`、`migration-displacement-humanitarian-continuity/` 和 `digital-inclusion-connectivity/` 负责司法可及、公民参与、迁移流离失所人道连续性和数字连接这些制度参与与公共服务接入条件。
 - `personal-safety-violence-prevention/` 和 `product-safety-recall-systems/` 负责暴力预防、受害者支持、产品缺陷报告、召回和纠正这些公共安全连续性条件。
 - `cellular-reprogramming/` 负责山中因子、部分重编程、化学重编程、AI 因子设计和表观遗传编辑等“细胞状态可重写”谱系，不提供实验协议或人体应用建议。
 - `gene-therapy-genome-editing-delivery-safety/`、`biological-age-clocks-biomarker-validation/`、`multiomics-personal-baseline-systems-biology/`、`engineered-cell-therapy-regenerative-platforms/`、`organoids-organ-on-chip-disease-models/` 和 `xenotransplantation-bioengineered-organ-replacement/` 负责高杠杆生物医学平台从状态观测、机制扰动、模型验证到器官替换的证据和风险边界，不提供实验协议、制造步骤、个体检测解释、治疗选择或人体应用建议。
 - `causal-inference-target-trial-emulation/`、`survival-analysis-healthspan-risk-modeling/`、`human-digital-twin-life-course-simulation/`、`implementation-science-adherence-behavior-change/`、`uncertainty-quantification-model-calibration/` 和 `data-quality-missingness-representativeness/` 负责各研究域进入定量预测前的因果、风险、仿真、实施、校准和数据入口门禁，不输出个体死亡日期、临床决策、自动化评分或未经验证的寿命承诺。
 - `privacy-preserving-computation-federated-learning/`、`knowledge-graph-ontology-semantic-interoperability/`、`model-cards-ai-audit-documentation/`、`technology-foresight-horizon-scanning/`、`research-portfolio-prioritization-funding-governance/` 和 `intellectual-property-technology-transfer-access/` 负责研究系统可信、可组合、可审计、可预警、可排序和可扩散的治理边界，不提供隐私攻击、临床编码服务、模型认证、投资建议、资助操控、专利法律意见或商业估值。
+- `trustworthy-scientific-communication-peer-review/`、`research-participant-consent-community-engagement/`、`biobanking-biospecimen-quality-chain-of-custody/`、`longitudinal-cohort-retention-followup-infrastructure/`、`registries-real-world-data-governance/` 和 `scientific-instrumentation-sensor-calibration-maintenance/` 负责科研证据进入模型前的基础设施边界，不提供学术操控、IRB 规避、非法采样、重新识别、真实世界数据越权访问、伪造校准、设备改装、个体诊断或寿命预测。
 - `regenerative-medicine/`、`cancer-control/` 和 `immune-maintenance/` 负责身体基底维护相关的机制、风险和证据边界。
 - `rehabilitation-functioning/`、`assistive-technology-access/`、`skin-barrier-wound-healing/` 和 `sensory-continuity/` 负责功能恢复、能力补偿、外界屏障和感官反馈连续性。
 - `antimicrobial-resilience/` 负责抗微生物耐药、感染控制和现代医学抗感染底座。
