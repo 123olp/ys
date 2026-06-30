@@ -61,6 +61,12 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 外界屏障可维护 | `skin-barrier-wound-healing/` | 皮肤屏障、伤口愈合、感染入口、热调节 | 把伤口或皮肤表现写成诊断和护理方案 |
 | 排泄、性功能和尊严可连续 | `urogenital-continuity/` | 尿控、尿路、盆底、感染、性功能、尊严 | 把症状、感染或性功能写成诊断和治疗建议 |
 | 生殖未来选择权可保留 | `reproductive-fertility-continuity/` | 生育力、配子质量、生殖衰老、生殖自主性 | 把生育力、激素或年龄写成个体选择结论 |
+| 注意力可被稳定分配 | `attention-executive-control/` | 持续注意、工作记忆、抑制控制、任务切换、冲动控制 | 把注意力效率写成诊断、药物或高压工作处方 |
+| 时间可转化为能力 | `learning-skill-acquisition/` | 学习速度、反馈质量、练习轮次、技能迁移、再训练 | 把课程、工具或学习技巧写成确定能力提升承诺 |
+| 日历时间可转化为有效时间 | `time-allocation-effective-time/` | 可支配时间、恢复时间、等待成本、行政负担、任务摩擦 | 把节省时间写成压榨恢复、关系和主体自主性的理由 |
+| 资源入口可承受冲击 | `financial-resilience-access/` | 收入稳定、储蓄缓冲、债务、保险、支付能力、资产安全 | 把财务韧性写成投资、保险、税务或福利个体建议 |
+| 工作系统可持续 | `occupational-work-design/` | 工时、暴露、人体工学、压力、自主性、收入、技能机会 | 把生产率最大化写成压榨劳动或规避安全权利 |
+| 信息环境可支撑判断 | `information-integrity-trust/` | 来源可信度、证据质量、误导暴露、可追溯性、信任链 | 提供操控、伪造、平台规避或虚假内容传播策略 |
 | 功能可恢复 | `rehabilitation-functioning/` | 活动能力、自理能力、沟通能力、社会参与 | 存活但失能、长期依赖、参与中断 |
 | 癌症风险可压低 | `cancer-control/` | 肿瘤发生、进展、复发、死亡风险 | 耐药、复发、筛查误判、治疗伤害 |
 | 免疫系统可维护 | `immune-maintenance/` | 感染防御、炎症、免疫监视 | 感染、慢性炎症、自身免疫 |
@@ -134,6 +140,9 @@ cellular-reprogramming
   -> skin-barrier-wound-healing
   -> urogenital-continuity
   -> reproductive-fertility-continuity
+  -> attention-executive-control
+  -> learning-skill-acquisition
+  -> time-allocation-effective-time
   -> rehabilitation-functioning
   -> cancer-control
   -> immune-maintenance
@@ -168,6 +177,9 @@ future-waiting
 risk-engineering
   -> planetary-health-environment
   -> resource-social-infra
+  -> financial-resilience-access
+  -> occupational-work-design
+  -> information-integrity-trust
   -> supply-chain-continuity
   -> synthetic-biology-biosecurity
   -> space-extreme-habitation
@@ -183,6 +195,9 @@ risk-engineering
 ```text
 mental-health-affective-stability
   -> sleep-circadian-recovery
+  -> attention-executive-control
+  -> learning-skill-acquisition
+  -> time-allocation-effective-time
   -> pain-suffering-control
   -> oral-health-continuity
   -> rehabilitation-functioning

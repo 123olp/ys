@@ -29,6 +29,12 @@
 - `skin-barrier-wound-healing/`：皮肤屏障与伤口愈合，整理皮肤屏障、伤口、压力损伤、感染入口和热调节。
 - `urogenital-continuity/`：泌尿生殖连续性，整理尿控、尿路、盆底、泌尿感染、性功能和日常尊严。
 - `reproductive-fertility-continuity/`：生殖与生育连续性，整理生育力、生殖衰老、配子质量、生殖自主性和未来选择权。
+- `attention-executive-control/`：注意力与执行控制，整理注意力、工作记忆、抑制控制、任务切换和分心环境。
+- `learning-skill-acquisition/`：学习与技能获得，整理学习科学、反馈、迁移能力、再训练和终身学习。
+- `time-allocation-effective-time/`：时间分配与有效时间，整理时间使用、时间贫困、行政负担、等待成本和任务摩擦。
+- `financial-resilience-access/`：财务韧性与资源可及，整理收入、储蓄、债务、保险、医疗支付能力和财务冲击。
+- `occupational-work-design/`：职业与工作设计，整理职业安全、工作组织、人体工学、工时、暴露和技能转型。
+- `information-integrity-trust/`：信息完整性与信任，整理信息可信度、误导信息、AI 生成内容、证据链和信任基础设施。
 - `rehabilitation-functioning/`：康复与功能恢复，整理失能预防、活动能力、自理、沟通和社会参与。
 - `cancer-control/`：癌症控制，整理肿瘤预防、早筛、治疗、复发和长期风险治理。
 - `immune-maintenance/`：免疫系统维护，整理免疫衰老、感染防御、慢性炎症、自身免疫和免疫监视。

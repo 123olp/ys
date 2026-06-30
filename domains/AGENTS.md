@@ -20,6 +20,9 @@ domains/
 ├── ai-agency-safety/
 │   ├── AGENTS.md
 │   └── README.md
+├── attention-executive-control/
+│   ├── AGENTS.md
+│   └── README.md
 ├── cancer-control/
 │   ├── AGENTS.md
 │   └── README.md
@@ -67,6 +70,9 @@ domains/
 │   ├── AGENTS.md
 │   └── README.md
 ├── extracellular-matrix-glycation/
+│   ├── AGENTS.md
+│   └── README.md
+├── financial-resilience-access/
 │   ├── AGENTS.md
 │   └── README.md
 ├── microbiome-ecology/
@@ -174,7 +180,19 @@ domains/
 ├── health-literacy-navigation/
 │   ├── AGENTS.md
 │   └── README.md
-└── oral-health-continuity/
+├── information-integrity-trust/
+│   ├── AGENTS.md
+│   └── README.md
+├── learning-skill-acquisition/
+│   ├── AGENTS.md
+│   └── README.md
+├── occupational-work-design/
+│   ├── AGENTS.md
+│   └── README.md
+├── oral-health-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+└── time-allocation-effective-time/
     ├── AGENTS.md
     └── README.md
 ```
@@ -187,6 +205,8 @@ domains/
 - `gastrointestinal-barrier-absorption/`、`fluid-electrolyte-acid-base-homeostasis/` 和 `thermal-homeostasis-resilience/` 负责营养进入、内环境化学和体温边界这些基础稳态条件。
 - `nutrition-metabolic-health/`、`physical-activity-mobility/`、`cardiovascular-resilience/` 和 `musculoskeletal-integrity/` 负责营养、行动、循环和承载结构这些身体运行条件。
 - `urogenital-continuity/` 和 `reproductive-fertility-continuity/` 负责尿控、泌尿感染、性功能、生育力、生殖衰老和未来选择权。
+- `attention-executive-control/`、`learning-skill-acquisition/` 和 `time-allocation-effective-time/` 负责注意力、学习能力和有效时间这些主体代理与任务资源条件。
+- `financial-resilience-access/`、`occupational-work-design/` 和 `information-integrity-trust/` 负责财务韧性、工作环境和信息可信度这些资源入口与认知环境条件。
 - `cellular-reprogramming/` 负责山中因子、部分重编程、化学重编程、AI 因子设计和表观遗传编辑等“细胞状态可重写”谱系，不提供实验协议或人体应用建议。
 - `regenerative-medicine/`、`cancer-control/` 和 `immune-maintenance/` 负责身体基底维护相关的机制、风险和证据边界。
 - `rehabilitation-functioning/`、`assistive-technology-access/`、`skin-barrier-wound-healing/` 和 `sensory-continuity/` 负责功能恢复、能力补偿、外界屏障和感官反馈连续性。

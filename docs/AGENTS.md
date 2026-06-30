@@ -20,6 +20,7 @@ docs/
 │   ├── 0009-add-fifth-wave-external-technology-risk-domains.md
 │   ├── 0010-add-sixth-wave-physiological-structural-maintenance-domains.md
 │   ├── 0011-add-seventh-wave-homeostasis-choice-domains.md
+│   ├── 0012-add-eighth-wave-agency-task-resource-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md

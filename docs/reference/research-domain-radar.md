@@ -67,6 +67,12 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `thermal-homeostasis-resilience/` | 体温调节、热暴露和寒冷暴露把环境压力直接转化为急性生理风险 |
 | `urogenital-continuity/` | 尿控、尿路感染、盆底、性功能和尊严具有独立功能、睡眠、照护和参与边界 |
 | `reproductive-fertility-continuity/` | 生育力、生殖衰老和生殖自主性影响未来选择权、资源规划和长期人生路径 |
+| `attention-executive-control/` | 注意力、工作记忆、抑制控制和任务切换决定时间能否稳定转化为有效行动 |
+| `learning-skill-acquisition/` | 学习、反馈、技能迁移和再训练决定主体能否把延长时间转化为能力复利 |
+| `time-allocation-effective-time/` | 时间使用、时间贫困、等待成本和行政负担决定日历寿命能否变成有效时间 |
+| `financial-resilience-access/` | 收入、储蓄、债务、保险和支付能力决定主体是否能承受资源与医疗冲击 |
+| `occupational-work-design/` | 工作组织、职业安全、人体工学、工时和职业暴露会长期塑造健康、收入和恢复边界 |
+| `information-integrity-trust/` | 信息可信度、误导暴露、AI 生成内容和信任链影响主体判断、技术采用和风险决策 |
 
 ## 来源信号
 
@@ -112,6 +118,12 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | CDC Heat Health / NIA hot and cold weather safety | 提示体温调节、热暴露、寒冷暴露和老年脆弱性是环境-生理接口域 |
 | NIDDK urologic diseases / CDC UTI basics | 提示尿控、泌尿感染、盆底、睡眠、照护和尊严具有独立主体持续性价值 |
 | WHO infertility / WHO sexual and reproductive health / NICHD infertility | 提示生殖健康、生育力、不孕、生殖衰老和生殖自主性影响未来选择权 |
+| NIMH / CDC ADHD and executive-function resources | 提示注意力、冲动控制、任务切换和执行功能是有效行动密度的独立认知资源 |
+| UNESCO / OECD / World Bank lifelong-learning and skills resources | 提示学习、技能形成、再训练和迁移能力是长期能力复利的独立资源 |
+| BLS American Time Use Survey / OECD time-use data | 提示时间使用、时间贫困、照护、等待和行政负担是有效时间建模的独立数据层 |
+| CFPB financial well-being / Federal Reserve household economic well-being | 提示财务冲击、支付能力、债务、保险和资产安全影响健康、恢复和未来选择权 |
+| CDC NIOSH Total Worker Health / WHO occupational health / ILO OSH | 提示工作组织、职业安全、人体工学、工时、暴露和工作压力是主体持续性任务环境 |
+| WHO infodemic management / HHS health misinformation / NIST GenAI profile | 提示信息可信度、误导信息、AI 内容和信任链会改变主体判断与风险函数 |
 
 Source links:
 
@@ -193,6 +205,22 @@ Source links:
 - https://www.who.int/news-room/fact-sheets/detail/infertility
 - https://www.who.int/health-topics/sexual-and-reproductive-health
 - https://www.nichd.nih.gov/health/topics/infertility
+- https://www.nimh.nih.gov/health/topics/attention-deficit-hyperactivity-disorder-adhd
+- https://www.cdc.gov/adhd/about/index.html
+- https://www.ncbi.nlm.nih.gov/books/NBK556108/
+- https://www.uil.unesco.org/en
+- https://www.oecd.org/skills/oecd-skills-outlook/
+- https://www.worldbank.org/en/topic/skillsdevelopment
+- https://www.bls.gov/tus/
+- https://www.oecd.org/gender/data/balancingpaidworkunpaidworkandleisure.htm
+- https://www.consumerfinance.gov/data-research/research-reports/financial-well-being/
+- https://www.federalreserve.gov/consumerscommunities/shed.htm
+- https://www.cdc.gov/niosh/twh/
+- https://www.who.int/health-topics/occupational-health
+- https://www.ilo.org/topics/safety-and-health-work
+- https://www.who.int/teams/risk-communication/infodemic-management
+- https://www.hhs.gov/surgeongeneral/reports-and-publications/health-misinformation/index.html
+- https://www.nist.gov/itl/ai-risk-management-framework/ai-risk-management-framework-generative-ai-profile
 
 ## 使用规则
 
