@@ -160,6 +160,12 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 功能状态变化后仍能自主生活 | `disability-services-independent-living/` | HCBS、独立生活、个人协助、合理便利、辅助技术、无障碍、社区融合 | 机构化、照护中断、孤立、公共服务排除和主体自主性下降 |
 | 认知退行时主体仍被保护 | `dementia-cognitive-decline-care-continuity/` | 认知衰退、照护计划、照护者负担、记忆/判断支持、安全、尊严 | 用药、财务、居住、安全和照护风险失控，导致主体失权和危机迁移 |
 | 长疗程感染照护可连续 | `chronic-infectious-disease-care-continuity/` | HIV、结核、病毒性肝炎、治疗连续性、耐药、隐私、去污名、随访 | 失访、耐药、器官损伤、传播、污名和公共卫生屏障失效 |
+| 急性自毁风险可被接住 | `suicide-crisis-response-continuity/` | 危机热线、移动危机响应、危机稳定、急诊衔接、随访、恢复支持 | 自伤或自杀风险在孤立、延误、错误处置和断裂随访中清零未来选择权 |
+| 成瘾恢复可连续 | `substance-use-treatment-recovery-continuity/` | 治疗入口、恢复支持、同伴支持、过量预防、减害治理、服务保留 | 过量、复发、污名、刑事化、住房断裂和服务断点持续侵蚀主体控制权 |
+| 脆弱成年人可被保护 | `elder-justice-adult-protective-services/` | 成人保护、老年虐待、财务剥削、照护忽视、长期照护监察、保护转介 | 虐待、忽视、财务控制、社会隔离和权利剥夺把长寿转化为更长受害窗口 |
+| 儿童安全可支撑未来主体 | `child-protection-family-safety/` | 儿童虐待忽视、ACEs、儿童福利、家庭支持、创伤知情服务 | 早期创伤、家庭失稳、剥削和制度误伤破坏未来主体能力形成 |
+| 欺诈不能夺走资源入口 | `fraud-scams-consumer-protection/` | 诈骗识别、身份盗用恢复、投诉举报、消费者保护、风险沟通 | 资金、身份、账号、信用、信任和公共服务入口被欺诈系统性夺走 |
+| 数字空间可安全参与 | `online-safety-digital-harm-prevention/` | 网络霸凌、在线骚扰、数字虐待、儿童在线保护、平台求助、恢复路径 | 数字入口变成胁迫、剥削、羞辱、心理伤害和身份风险源 |
 | 高成本风险可分摊 | `insurance-risk-transfer/` | 覆盖率、保费、自付、理赔、拒赔、风险池、保障缺口 | 疾病、失业、工伤、残障、灾害或养老金风险由个体独自承担 |
 | 托育和家庭运行可持续 | `childcare-family-continuity/` | 托育可及、费用、质量、早期发展、父母工作连续性、家庭压力 | 儿童发展受损、照护者工作中断、时间贫困和家庭压力升级 |
 | 应急响应可接住主体 | `emergency-preparedness-response/` | 灾害准备、预警、应急通信、急救医疗、安置、公共卫生应急、恢复 | 低频高冲击事件一次性清零长期积累，通信、医疗、撤离或恢复失败 |
@@ -326,6 +332,12 @@ risk-engineering
   -> disability-services-independent-living
   -> dementia-cognitive-decline-care-continuity
   -> chronic-infectious-disease-care-continuity
+  -> suicide-crisis-response-continuity
+  -> substance-use-treatment-recovery-continuity
+  -> elder-justice-adult-protective-services
+  -> child-protection-family-safety
+  -> fraud-scams-consumer-protection
+  -> online-safety-digital-harm-prevention
   -> insurance-risk-transfer
   -> childcare-family-continuity
   -> emergency-preparedness-response

@@ -41,6 +41,7 @@ docs/
 │   ├── 0023-add-nineteenth-wave-air-food-occupational-device-sterilization-accessibility-domains.md
 │   ├── 0024-add-twentieth-wave-clinical-drug-ems-surgical-road-safety-domains.md
 │   ├── 0025-add-twenty-first-wave-rural-homelessness-correctional-disability-dementia-infectious-continuity-domains.md
+│   ├── 0026-add-twenty-second-wave-crisis-exploitation-recovery-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -170,4 +171,10 @@ docs/
 74. Read `../domains/disability-services-independent-living/README.md` if you are working on disability services, independent living, HCBS, personal assistance, reasonable accommodation, assistive technology, or community integration.
 75. Read `../domains/dementia-cognitive-decline-care-continuity/README.md` if you are working on dementia, cognitive decline, Alzheimer’s, caregiver burden, dementia care continuity, safety, dignity, or service navigation.
 76. Read `../domains/chronic-infectious-disease-care-continuity/README.md` if you are working on HIV, TB, viral hepatitis, long-course infectious disease care, treatment continuity, stigma, drug resistance, or public-health follow-up.
-77. Enter a domain under `../domains/`.
+77. Read `../domains/suicide-crisis-response-continuity/README.md` if you are working on suicide prevention, 988, crisis response, mobile crisis teams, crisis stabilization, follow-up care, or suicide-risk service systems.
+78. Read `../domains/substance-use-treatment-recovery-continuity/README.md` if you are working on substance use disorder treatment, recovery support, overdose prevention, harm reduction governance, peer support, or treatment continuity.
+79. Read `../domains/elder-justice-adult-protective-services/README.md` if you are working on elder abuse, Adult Protective Services, elder justice, financial exploitation, neglect, or long-term-care ombudsman systems.
+80. Read `../domains/child-protection-family-safety/README.md` if you are working on child protection, child welfare, child abuse and neglect prevention, ACEs, family safety, or trauma-informed child services.
+81. Read `../domains/fraud-scams-consumer-protection/README.md` if you are working on scams, fraud, phishing, identity theft recovery, consumer complaints, consumer protection, or fraud risk communication.
+82. Read `../domains/online-safety-digital-harm-prevention/README.md` if you are working on online safety, cyberbullying, online harassment, digital abuse, child online protection, platform reporting, or digital harm recovery.
+83. Enter a domain under `../domains/`.

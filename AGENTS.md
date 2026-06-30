@@ -131,6 +131,12 @@ human_infra/
     ├── disability-services-independent-living/ # 残障服务与独立生活
     ├── dementia-cognitive-decline-care-continuity/ # 痴呆认知衰退与照护连续性
     ├── chronic-infectious-disease-care-continuity/ # 慢性传染病照护连续性
+    ├── suicide-crisis-response-continuity/ # 自杀危机响应连续性
+    ├── substance-use-treatment-recovery-continuity/ # 物质使用障碍治疗与恢复连续性
+    ├── elder-justice-adult-protective-services/ # 老年正义与成人保护服务
+    ├── child-protection-family-safety/ # 儿童保护与家庭安全
+    ├── fraud-scams-consumer-protection/ # 诈骗、欺诈与消费者保护
+    ├── online-safety-digital-harm-prevention/ # 在线安全与数字伤害预防
     ├── insurance-risk-transfer/ # 保险与风险转移
     ├── childcare-family-continuity/ # 托育与家庭连续性
     ├── learning-skill-acquisition/ # 学习与技能获得
@@ -286,6 +292,12 @@ human_infra/
 - `domains/disability-services-independent-living/` 负责独立生活、HCBS、个人协助、合理便利、辅助技术、无障碍和社区融合。
 - `domains/dementia-cognitive-decline-care-continuity/` 负责痴呆、认知衰退、照护计划、照护者负担、尊严、安全和服务导航。
 - `domains/chronic-infectious-disease-care-continuity/` 负责 HIV、结核、病毒性肝炎、长期治疗连续性、耐药、隐私和去污名。
+- `domains/suicide-crisis-response-continuity/` 负责自杀预防、危机热线、移动危机响应、急诊衔接、随访和恢复支持。
+- `domains/substance-use-treatment-recovery-continuity/` 负责物质使用障碍治疗、恢复支持、同伴支持、过量预防、减害治理和服务连续性。
+- `domains/elder-justice-adult-protective-services/` 负责老年虐待、成人保护、财务剥削、照护忽视、长期照护监察和保护转介。
+- `domains/child-protection-family-safety/` 负责儿童虐待忽视、ACEs、儿童福利、家庭支持、创伤知情服务和制度伤害风险。
+- `domains/fraud-scams-consumer-protection/` 负责诈骗识别、身份盗用恢复、投诉举报、消费者保护和反受害者归因风险沟通。
+- `domains/online-safety-digital-harm-prevention/` 负责网络霸凌、在线骚扰、数字虐待、儿童在线保护、平台求助和数字伤害恢复。
 - `domains/insurance-risk-transfer/` 负责健康、失业、工伤、残障、灾害、存款、养老金等风险转移和风险池。
 - `domains/childcare-family-continuity/` 负责托育可及、托育费用、照护质量、早期儿童发展、父母工作连续性和家庭压力。
 - `domains/emergency-preparedness-response/` 负责灾害准备、预警、应急通信、急救医疗、安置、公共卫生应急和灾后恢复。
@@ -375,3 +387,4 @@ human_infra/
 - 2026-06-30：新增第十九波 6 个日常环境与工具可靠性域骨架，覆盖空气质量通风、食品安全污染控制、职业暴露工业卫生、医疗设备安全维护、灭菌消毒感染控制和建成环境无障碍通用设计。
 - 2026-06-30：新增第二十波 6 个临床可靠性与急性风险窗口域骨架，覆盖临床检验诊断质量、药物警戒药品安全、药品质量供应完整性、急救医疗服务院前照护、手术麻醉围手术期安全和道路交通伤害预防。
 - 2026-06-30：新增第二十一波 6 个结构性脆弱与连续照护断点域骨架，覆盖农村健康可及、无家可归健康连续性、羁押重返健康连续性、残障独立生活、痴呆认知衰退照护和慢性传染病照护连续性。
+- 2026-06-30：新增第二十二波 6 个危机、剥削与恢复连续性域骨架，覆盖自杀危机响应、物质使用障碍治疗恢复、老年正义成人保护、儿童保护家庭安全、诈骗消费者保护和在线数字伤害预防。

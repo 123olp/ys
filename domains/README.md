@@ -106,6 +106,12 @@
 - `disability-services-independent-living/`：残障服务与独立生活，整理独立生活、HCBS、个人协助、合理便利、辅助技术和社区融合。
 - `dementia-cognitive-decline-care-continuity/`：痴呆、认知衰退与照护连续性，整理认知退行、照护计划、照护者负担、尊严、安全和服务导航。
 - `chronic-infectious-disease-care-continuity/`：慢性与长疗程传染病照护连续性，整理 HIV、结核、病毒性肝炎、治疗连续性、耐药、隐私和去污名。
+- `suicide-crisis-response-continuity/`：自杀危机响应连续性，整理危机热线、移动危机响应、急诊衔接、随访和恢复支持。
+- `substance-use-treatment-recovery-continuity/`：物质使用障碍治疗与恢复连续性，整理治疗入口、恢复支持、过量预防、减害治理和长期服务连续性。
+- `elder-justice-adult-protective-services/`：老年正义与成人保护服务，整理成人保护、老年虐待、财务剥削、照护忽视和保护转介。
+- `child-protection-family-safety/`：儿童保护与家庭安全，整理儿童虐待忽视、ACEs、儿童福利、家庭支持和创伤知情服务。
+- `fraud-scams-consumer-protection/`：诈骗、欺诈与消费者保护，整理诈骗识别、身份盗用恢复、投诉举报、消费者保护和风险沟通。
+- `online-safety-digital-harm-prevention/`：在线安全与数字伤害预防，整理网络霸凌、在线骚扰、数字虐待、儿童在线保护和平台求助路径。
 - `insurance-risk-transfer/`：保险与风险转移，整理健康、失业、工伤、残障、灾害、存款、养老金等风险池和保障缺口。
 - `childcare-family-continuity/`：托育与家庭连续性，整理托育可及、费用、质量、早期儿童发展、父母工作连续性和家庭压力。
 - `emergency-preparedness-response/`：应急准备与响应，整理灾害准备、预警、应急通信、急救医疗、安置和恢复。

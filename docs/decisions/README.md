@@ -38,3 +38,4 @@ Current decisions:
 - `0023-add-nineteenth-wave-air-food-occupational-device-sterilization-accessibility-domains.md`
 - `0024-add-twentieth-wave-clinical-drug-ems-surgical-road-safety-domains.md`
 - `0025-add-twenty-first-wave-rural-homelessness-correctional-disability-dementia-infectious-continuity-domains.md`
+- `0026-add-twenty-second-wave-crisis-exploitation-recovery-domains.md`

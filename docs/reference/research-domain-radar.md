@@ -151,6 +151,12 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `disability-services-independent-living/` | 残障服务、独立生活、HCBS、合理便利和辅助技术决定能力变化后主体是否仍能自主参与 |
 | `dementia-cognitive-decline-care-continuity/` | 痴呆和认知衰退照护决定记忆、判断、用药、居住、安全、尊严和照护者负担是否被系统承接 |
 | `chronic-infectious-disease-care-continuity/` | HIV、结核、病毒性肝炎等长疗程感染决定治疗连续性、耐药、污名和公共卫生屏障是否可维持 |
+| `suicide-crisis-response-continuity/` | 自杀危机响应决定急性自毁风险是否能被热线、移动危机、急诊衔接、随访和社区支持及时接住 |
+| `substance-use-treatment-recovery-continuity/` | 物质使用障碍治疗恢复决定成瘾、过量、复发、污名和服务断点是否能进入持续恢复路径 |
+| `elder-justice-adult-protective-services/` | 老年正义和成人保护决定虐待、忽视、财务剥削和照护失效是否能被发现、转介和保护 |
+| `child-protection-family-safety/` | 儿童保护和家庭安全决定虐待、忽视、ACEs 和家庭失稳是否会破坏未来主体能力形成 |
+| `fraud-scams-consumer-protection/` | 诈骗、欺诈和消费者保护决定资金、身份、账号、信用和服务入口是否会被系统性夺走 |
+| `online-safety-digital-harm-prevention/` | 在线安全和数字伤害预防决定数字空间是否仍能支撑学习、工作、社交、求助和恢复 |
 
 ## 来源信号
 
@@ -280,6 +286,12 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | ACL Centers for Independent Living / CMS HCBS / WHO Disability | 提示残障服务、独立生活、社区支持、个人协助和无障碍不仅是辅助技术或建成环境问题 |
 | WHO Dementia / CDC Dementia / NIA Alzheimer’s | 提示认知衰退、照护计划、照护者负担、尊严和安全支持需要独立照护连续性域 |
 | WHO HIV-TB-Hepatitis / CDC HIV-TB-Hepatitis | 提示 HIV、结核、病毒性肝炎等长期感染需要把治疗连续性、耐药、隐私、去污名和公共卫生屏障一起建模 |
+| SAMHSA 988 / CDC Suicide Prevention / WHO Suicide | 提示自杀危机响应需要从一般心理健康中拆出危机入口、移动响应、随访和连续支持域 |
+| SAMHSA FindTreatment.gov / CDC Overdose Prevention / NIDA Addiction | 提示物质使用障碍治疗恢复需要从暴露控制中拆出治疗入口、恢复支持、过量预防和长期服务连续性 |
+| ACL Adult Protective Services / DOJ Elder Justice / NCEA | 提示老年虐待、成人保护、财务剥削和长期照护监察是照护和人身安全之外的独立保护域 |
+| Child Welfare Information Gateway / CDC ACEs / Children’s Bureau | 提示儿童保护、家庭安全、ACEs、儿童福利和制度伤害风险是儿童发展之外的独立未来主体形成域 |
+| FTC Scams / IdentityTheft.gov / CFPB Consumer Protection / FBI IC3 | 提示诈骗、身份盗用、投诉举报和消费者保护是数字身份与金融韧性之外的独立恢复域 |
+| StopBullying.gov / NCMEC CyberTipline / FTC Online Safety | 提示网络霸凌、在线骚扰、儿童在线剥削和数字伤害预防是数字参与安全的独立域 |
 
 Source links:
 
@@ -705,6 +717,25 @@ Source links:
 - https://www.cdc.gov/hiv/
 - https://www.cdc.gov/tb/
 - https://www.cdc.gov/hepatitis/
+- https://988lifeline.org/
+- https://www.cdc.gov/suicide/
+- https://www.who.int/news-room/fact-sheets/detail/suicide
+- https://findtreatment.gov/
+- https://www.cdc.gov/overdose-prevention/
+- https://nida.nih.gov/
+- https://acl.gov/programs/elder-justice/adult-protective-services
+- https://www.justice.gov/elderjustice
+- https://ncea.acl.gov/
+- https://www.childwelfare.gov/
+- https://www.cdc.gov/aces/
+- https://www.acf.hhs.gov/cb
+- https://consumer.ftc.gov/scams
+- https://www.identitytheft.gov/
+- https://www.consumerfinance.gov/
+- https://www.ic3.gov/
+- https://www.stopbullying.gov/cyberbullying/what-is-it
+- https://report.cybertip.org/
+- https://consumer.ftc.gov/features/online-security
 
 ## 使用规则
 

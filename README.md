@@ -197,6 +197,7 @@ flowchart LR
 | 日常环境与工具可靠性 | WHO Air Pollution、EPA IAQ、WHO Food Safety、NIOSH Hierarchy of Controls、FDA Medical Devices、CDC Disinfection and Sterilization、U.S. Access Board ADA | 空气、食品、工作暴露、医疗设备、感染控制和物理空间是否把日常生活与照护环境变成可持续行动条件 |
 | 临床可靠性与急性安全窗口 | CMS CLIA、FDA FAERS、FDA Pharmaceutical Quality、NHTSA EMS、WHO Surgical Safety Checklist、WHO Road Traffic Injuries | 临床检测、真实世界药品安全、药品质量、院前急救、围手术期安全和道路安全是否把可修复风险转化为持续行动机会 |
 | 结构性脆弱与连续照护断点 | HRSA Rural Health、USICH/HUD Homelessness、WHO Prison Health、ACL CIL、WHO Dementia、WHO HIV/TB/Hepatitis | 农村、无家可归、羁押重返、残障、认知衰退和慢性传染病场景中，主体是否仍能被服务系统持续接住 |
+| 危机、剥削与恢复连续性 | SAMHSA 988、FindTreatment.gov、ACL APS、Child Welfare Information Gateway、FTC scams、NCMEC CyberTipline | 自杀危机、成瘾恢复、老年/成人保护、儿童保护、诈骗和在线伤害能否被及时接住、报告、转介和恢复 |
 | 气候与社区韧性底座 | IPCC AR6、WMO Early Warnings for All、NOAA/NCEI、CMRA、CDC Climate and Health | 极端天气、热、洪水、火灾、空气和基础设施中断是否被预警、适应和恢复 |
 | 家庭应急准备与个人韧性 | Red Cross preparedness、Red Cross survival kit、Red Cross make a plan、CDC Prepare Your Health、NOAA Weather-Ready Nation | 灾害前，人是否有家庭计划、物资包、健康准备、风险认知、备用通信和特殊需求安排 |
 | 公共预警与应急通信 | FEMA IPAWS、FCC WEA/EAS、NOAA Weather Radio、Ready.gov、911.gov、FirstNet | 危机信息能否及时到达、求助能否接通、响应者能否持续通信 |
@@ -329,6 +330,12 @@ flowchart TD
     H --> DSIL[disability-services-independent-living<br/>残障服务 / 独立生活]
     H --> DCDCC[dementia-cognitive-decline-care-continuity<br/>痴呆认知衰退 / 照护连续性]
     H --> CIDCC[chronic-infectious-disease-care-continuity<br/>慢性传染病 / 照护连续性]
+    H --> SCRC[suicide-crisis-response-continuity<br/>自杀危机响应 / 连续支持]
+    H --> SUTRC[substance-use-treatment-recovery-continuity<br/>物质使用治疗 / 恢复连续性]
+    H --> EJAPS[elder-justice-adult-protective-services<br/>老年正义 / 成人保护服务]
+    H --> CPFS[child-protection-family-safety<br/>儿童保护 / 家庭安全]
+    H --> FSCP[fraud-scams-consumer-protection<br/>诈骗欺诈 / 消费者保护]
+    H --> OSDHP[online-safety-digital-harm-prevention<br/>在线安全 / 数字伤害预防]
     H --> SCC[supply-chain-continuity<br/>供应链连续性]
     H --> SBB[synthetic-biology-biosecurity<br/>合成生物学与生物安全]
     H --> SEH[space-extreme-habitation<br/>空间与极端栖居]
@@ -514,6 +521,12 @@ flowchart TD
 | [Disability Services Independent Living](domains/disability-services-independent-living/README.md) | 独立生活、HCBS、个人协助、合理便利、辅助技术、无障碍和社区融合 | 让能力状态变化后的主体仍能自主行动、沟通、移动、使用服务和参与社会 | 不提供福利申请、资格判断、法律投诉、医疗诊断、护理计划、辅助设备处方或家庭个案建议 |
 | [Dementia Cognitive Decline Care Continuity](domains/dementia-cognitive-decline-care-continuity/README.md) | 痴呆、认知衰退、照护计划、照护者负担、尊严、安全和服务导航 | 当记忆和判断逐步失稳时，保护主体身份、尊严、参与和可承受持续性 | 不提供诊断、治疗、用药、法律财务、代理决策、监护、定位监控、约束或家庭个案建议 |
 | [Chronic Infectious Disease Care Continuity](domains/chronic-infectious-disease-care-continuity/README.md) | HIV、结核、病毒性肝炎、长期治疗连续性、耐药、隐私和去污名 | 同时维护个体健康寿命和公共卫生屏障，降低传播、耐药、器官损伤和照护中断 | 不提供检测诊断、用药治疗、PEP/PrEP、隔离、传播规避、追踪规避、实验室操作或个体风险判断 |
+| [Suicide Crisis Response Continuity](domains/suicide-crisis-response-continuity/README.md) | 自杀预防、危机热线、移动危机响应、急诊衔接、随访和恢复支持 | 在急性自毁风险中保留主体恢复、关系重建和重新进入未来的机会 | 不提供危机个案处置、自伤/自杀方法、心理治疗、药物、家庭干预、安全计划或替代专业帮助的建议 |
+| [Substance Use Treatment Recovery Continuity](domains/substance-use-treatment-recovery-continuity/README.md) | 物质使用障碍治疗、恢复支持、同伴支持、过量预防、减害治理和服务连续性 | 让成瘾风险被治疗、恢复和社会支持系统接住，而不是变成长期主体控制权流失 | 不提供戒断、排毒、药物、剂量、非法物质、现场处置、法律策略、检测规避或个体治疗建议 |
+| [Elder Justice Adult Protective Services](domains/elder-justice-adult-protective-services/README.md) | 老年虐待、成人保护、财务剥削、照护忽视、长期照护监察和保护转介 | 防止长寿退化为更长时间暴露在虐待、忽视、剥削和失权之中 | 不提供个案法律、报案取证、监护、财务安排、家庭冲突、定位监控、约束控制或照护计划建议 |
+| [Child Protection Family Safety](domains/child-protection-family-safety/README.md) | 儿童虐待忽视、ACEs、儿童福利、家庭支持、创伤知情服务和制度伤害风险 | 保护未来主体能力形成，不让虐待、忽视和家庭失稳截断长期生命路径 | 不提供个案报告、法律、监护、调查、取证、家庭冲突、儿童监控、规避报告或任何危害儿童的内容 |
+| [Fraud Scams Consumer Protection](domains/fraud-scams-consumer-protection/README.md) | 诈骗识别、身份盗用恢复、投诉举报、消费者保护和反受害者归因风险沟通 | 防止资源、身份、账号、信用和服务入口被欺诈系统性夺走 | 不提供追款、法律、投资、银行、平台申诉、诈骗脚本、钓鱼、账户接管、洗钱或反侦测建议 |
+| [Online Safety Digital Harm Prevention](domains/online-safety-digital-harm-prevention/README.md) | 网络霸凌、在线骚扰、数字虐待、儿童在线保护、平台求助和数字伤害恢复 | 让数字空间保持可学习、可工作、可社交、可求助和可恢复 | 不提供跟踪、骚扰、doxxing、勒索、非自愿影像、儿童剥削、账号入侵、规避平台或规避执法内容 |
 | [Oral Health Continuity](domains/oral-health-continuity/README.md) | 牙齿、牙周、咀嚼、疼痛、感染、营养和沟通 | 口腔功能、疼痛、感染、营养和社会参与变量 | 不提供牙科诊断、治疗、药物、手术、器械或个体护理建议 |
 | [Measurement And Feedback](domains/measurement-feedback/README.md) | 状态测量、风险评分、生物标志物、可穿戴、反馈控制 | 指标分类、预测接口和模型反馈边界 | 不输出个体死亡日期、确定寿命预测或医学诊断 |
 
@@ -635,6 +648,12 @@ human_infra/
 │   ├── disability-services-independent-living/
 │   ├── dementia-cognitive-decline-care-continuity/
 │   ├── chronic-infectious-disease-care-continuity/
+│   ├── suicide-crisis-response-continuity/
+│   ├── substance-use-treatment-recovery-continuity/
+│   ├── elder-justice-adult-protective-services/
+│   ├── child-protection-family-safety/
+│   ├── fraud-scams-consumer-protection/
+│   ├── online-safety-digital-harm-prevention/
 │   ├── mitochondrial-bioenergetics/
 │   ├── musculoskeletal-integrity/
 │   ├── neuro-continuity/
@@ -777,5 +796,6 @@ flowchart LR
 - 2026-06-30：新增第十九波 6 个日常环境与工具可靠性域，覆盖空气质量通风、食品安全污染控制、职业暴露工业卫生、医疗设备安全维护、灭菌消毒感染控制和建成环境无障碍通用设计。
 - 2026-06-30：新增第二十波 6 个临床可靠性与急性风险窗口域，覆盖临床检验诊断质量、药物警戒药品安全、药品质量供应完整性、急救医疗服务院前照护、手术麻醉围手术期安全和道路交通伤害预防。
 - 2026-06-30：新增第二十一波 6 个结构性脆弱与连续照护断点域，覆盖农村健康可及、无家可归健康连续性、羁押重返健康连续性、残障独立生活、痴呆认知衰退照护和慢性传染病照护连续性。
+- 2026-06-30：新增第二十二波 6 个危机、剥削与恢复连续性域，覆盖自杀危机响应、物质使用障碍治疗恢复、老年正义成人保护、儿童保护家庭安全、诈骗消费者保护和在线数字伤害预防。
 
 完整记录见 [CHANGELOG.md](CHANGELOG.md)。

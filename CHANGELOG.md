@@ -24,6 +24,7 @@ All notable repository structure changes are recorded here.
 - Added nineteenth-wave air, food, occupational, device, sterilization, and accessibility domain skeletons for air quality/ventilation exposure control, food safety/contamination control, occupational exposure/industrial hygiene, medical device/equipment safety maintenance, sterilization/disinfection infection control, and built-environment accessibility/universal design.
 - Added twentieth-wave clinical, drug, EMS, surgical, and road-safety domain skeletons for clinical laboratory diagnostic quality, pharmacovigilance/drug safety monitoring, pharmaceutical quality/supply integrity, emergency medical services/prehospital care, surgical/anesthesia perioperative safety, and road traffic injury prevention/safe mobility.
 - Added twenty-first-wave structural-vulnerability and care-continuity domain skeletons for rural health access/geographic equity, homelessness/unsheltered health continuity, correctional health/reentry continuity, disability services/independent living, dementia/cognitive decline care continuity, and chronic infectious disease care continuity.
+- Added twenty-second-wave crisis, exploitation, and recovery-continuity domain skeletons for suicide crisis response continuity, substance-use treatment/recovery continuity, elder justice/adult protective services, child protection/family safety, fraud/scams consumer protection, and online safety/digital harm prevention.
 
 ## 2026-06-29
 
