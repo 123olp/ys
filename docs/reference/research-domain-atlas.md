@@ -243,6 +243,14 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 应急现金桥接不能变成债务循环 | `payday-small-dollar-title-loan-continuity/` | 发薪日贷款、小额高成本贷款、title loan、滚续、账户访问、抵押物 | 高成本滚续、自动扣款和抵押物风险会把短期缺口变成长期束缚 |
 | 即时消费分期必须保持未来义务可见 | `buy-now-pay-later-installment-financing-continuity/` | BNPL、商家分期、平台授信、自动扣款、退款同步、逾期费用 | 多平台义务、退款不同步或逾期费用会隐藏未来现金流占用 |
 | 跨境资金支持必须可披露可纠错 | `remittance-money-transfer-disclosure-continuity/` | 汇款、跨境转账、费用、汇率、收款金额、取消、错误解决、合规延迟 | 费用汇率不透明、收款失败或合规阻断会破坏家庭支持和跨境资源传递 |
+| 车辆事故损失必须可理赔可恢复 | `auto-insurance-liability-collision-claims-continuity/` | liability、collision、comprehensive、UM/UIM、deductible、adjuster、repair estimate、total loss | 事故责任、维修估价、total loss 或 subrogation 失败会切断移动能力和现金流恢复 |
+| 住所财产损失必须可证明可赔付 | `homeowners-renters-property-insurance-claims-continuity/` | homeowners、renters、personal property、loss of use、ALE、inventory、proof of loss | 财产清单、proof of loss 或临时居住费用失败会放大家庭恢复成本 |
+| 洪水风险必须纳入专门保险与灾后现金流 | `flood-insurance-nfip-claims-continuity/` | NFIP、private flood insurance、flood maps、waiting period、proof of loss、appeal | 洪水通常不在普通房主险中，覆盖误解和理赔失败会压垮灾后住房恢复 |
+| 区域巨灾风险必须可保可重建 | `catastrophe-wind-wildfire-earthquake-insurance-continuity/` | wind、wildfire、earthquake、hail、catastrophe deductible、FAIR Plan、nonrenewal | 巨灾免赔额、保险退出和高风险区域不可保会让住所资产和迁移选择同时受损 |
+| 残障收入中断必须可替代 | `disability-income-insurance-claim-continuity/` | short-term disability、long-term disability、own occupation、any occupation、medical evidence、appeal | 疾病伤残后收入替代失败会把健康事件转化为长期现金流与职业连续性断裂 |
+| 长期照护成本必须可触发可支付 | `long-term-care-insurance-benefit-activation-continuity/` | ADL、cognitive trigger、elimination period、care plan、invoices、premium increase | 福利触发、等待期、发票或保费上涨失败会把失能照护成本转嫁给家庭系统 |
+| 离家移动风险必须可临时恢复 | `travel-insurance-trip-protection-claims-continuity/` | trip cancellation/interruption、travel medical、evacuation、baggage/delay、covered reasons、documentation | 旅行中断、医疗撤离或行李延误理赔失败会让离家状态变成现金、医疗和资料断点 |
+| 高额个人责任必须有防御与资产边界 | `personal-liability-umbrella-insurance-defense-continuity/` | personal liability、umbrella/excess、limits、defense costs、claim notice、coverage dispute | 责任 claim、法律防御或 coverage dispute 失败会把单次事故扩展成长期资产暴露 |
 | 持续交易关系必须可理解可退出 | `contract-subscription-billing-consent-continuity/` | 合同、服务条款、订阅、自动续费、账单、取消、争议、持续同意 | 隐性续费、暗黑模式、账单错误和取消摩擦持续消耗金钱、时间、注意力和控制权 |
 | 关键文件必须可签署可认证 | `notary-document-authentication-signature-continuity/` | 公证、签名、电子签名、文件认证、apostille、授权文件、跨机构承认 | 文件无效、认证缺失、身份无法确认或签名记录失效让授权、事实和跨境文件不可执行 |
 | 国家成员资格必须可证明 | `citizenship-nationality-statelessness-continuity/` | 公民身份、国籍、自然化、国籍证明、无国籍风险、领事保护 | 无国籍、国籍争议或证明缺失使旅行、保护、投票、福利、家庭团聚和法律救济断裂 |
@@ -727,6 +735,14 @@ risk-engineering
   -> payday-small-dollar-title-loan-continuity
   -> buy-now-pay-later-installment-financing-continuity
   -> remittance-money-transfer-disclosure-continuity
+  -> auto-insurance-liability-collision-claims-continuity
+  -> homeowners-renters-property-insurance-claims-continuity
+  -> flood-insurance-nfip-claims-continuity
+  -> catastrophe-wind-wildfire-earthquake-insurance-continuity
+  -> disability-income-insurance-claim-continuity
+  -> long-term-care-insurance-benefit-activation-continuity
+  -> travel-insurance-trip-protection-claims-continuity
+  -> personal-liability-umbrella-insurance-defense-continuity
   -> contract-subscription-billing-consent-continuity
   -> notary-document-authentication-signature-continuity
   -> citizenship-nationality-statelessness-continuity

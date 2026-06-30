@@ -88,6 +88,7 @@ docs/
 │   ├── 0070-add-sixty-sixth-wave-travel-lodging-border-continuity-domains.md
 │   ├── 0071-add-sixty-seventh-wave-consumer-transaction-continuity-domains.md
 │   ├── 0072-add-sixty-eighth-wave-consumer-credit-lending-continuity-domains.md
+│   ├── 0073-add-sixty-ninth-wave-personal-insurance-claims-continuity-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -389,6 +390,14 @@ docs/
 245. Read `../domains/payday-small-dollar-title-loan-continuity/README.md` if you are working on payday loans, small-dollar high-cost loans, title loans, rollovers, account access, vehicle collateral, or debt cycles.
 246. Read `../domains/buy-now-pay-later-installment-financing-continuity/README.md` if you are working on BNPL, installment financing, merchant checkout credit, autopay, refunds, late fees, credit reporting, or platform overextension.
 247. Read `../domains/remittance-money-transfer-disclosure-continuity/README.md` if you are working on remittance transfers, cross-border money transfers, exchange-rate disclosure, fees, cancellation, refunds, error resolution, or recipient availability.
+248. Read `../domains/auto-insurance-liability-collision-claims-continuity/README.md` if you are working on auto insurance, liability, collision, comprehensive coverage, uninsured/underinsured motorists, deductibles, accident claims, repair estimates, total loss, or subrogation.
+249. Read `../domains/homeowners-renters-property-insurance-claims-continuity/README.md` if you are working on homeowners insurance, renters insurance, personal property, loss of use, additional living expense, property inventories, proof of loss, or housing recovery claims.
+250. Read `../domains/flood-insurance-nfip-claims-continuity/README.md` if you are working on flood insurance, NFIP, private flood insurance, flood maps, waiting periods, proof of loss, flood claims, appeals, or disaster recovery cash-flow continuity.
+251. Read `../domains/catastrophe-wind-wildfire-earthquake-insurance-continuity/README.md` if you are working on windstorm, wildfire, earthquake, hail, catastrophe deductibles, FAIR Plans, insurer nonrenewal, insurance withdrawal, or catastrophe coverage gaps.
+252. Read `../domains/disability-income-insurance-claim-continuity/README.md` if you are working on short-term disability insurance, long-term disability insurance, own-occupation standards, any-occupation standards, elimination periods, medical evidence, claims, or appeals.
+253. Read `../domains/long-term-care-insurance-benefit-activation-continuity/README.md` if you are working on long-term care insurance, ADL triggers, cognitive impairment triggers, elimination periods, care plans, invoices, benefit activation, or premium increases.
+254. Read `../domains/travel-insurance-trip-protection-claims-continuity/README.md` if you are working on travel insurance, trip cancellation, trip interruption, travel medical, emergency evacuation, baggage, travel delay, covered reasons, documentation, or claims.
+255. Read `../domains/personal-liability-umbrella-insurance-defense-continuity/README.md` if you are working on personal liability insurance, umbrella insurance, excess liability, defense costs, claim notice, coverage disputes, settlements, exclusions, or asset exposure.
 224. Read `../domains/contract-subscription-billing-consent-continuity/README.md` if you are working on contracts, subscriptions, automatic renewal, billing, cancellation, negative options, ongoing consent, or transaction-friction continuity.
 225. Read `../domains/notary-document-authentication-signature-continuity/README.md` if you are working on notarization, electronic signatures, digital signatures, document authentication, apostilles, or institutional recognition of signed records.
 226. Read `../domains/citizenship-nationality-statelessness-continuity/README.md` if you are working on citizenship, nationality, naturalization, consular protection, statelessness, nationality proof, or national-membership continuity.

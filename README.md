@@ -560,6 +560,14 @@ flowchart TD
     H --> PSDTLC[payday-small-dollar-title-loan-continuity<br/>发薪日小额 / 汽车抵押]
     H --> BNPLIC[buy-now-pay-later-installment-financing-continuity<br/>先买后付 / 分期融资]
     H --> RMTDC[remittance-money-transfer-disclosure-continuity<br/>汇款转账 / 费用汇率]
+    H --> AILCCC[auto-insurance-liability-collision-claims-continuity<br/>汽车保险 / 责任理赔]
+    H --> HRPICC[homeowners-renters-property-insurance-claims-continuity<br/>房主租客 / 财产理赔]
+    H --> FINC[flood-insurance-nfip-claims-continuity<br/>洪水保险 / NFIP 理赔]
+    H --> CWWEC[catastrophe-wind-wildfire-earthquake-insurance-continuity<br/>巨灾保险 / 保障缺口]
+    H --> DIICC[disability-income-insurance-claim-continuity<br/>残障收入 / 保险理赔]
+    H --> LTCIBA[long-term-care-insurance-benefit-activation-continuity<br/>长期照护 / 福利启动]
+    H --> TITPCC[travel-insurance-trip-protection-claims-continuity<br/>旅行保险 / 行程理赔]
+    H --> PLIIDC[personal-liability-umbrella-insurance-defense-continuity<br/>伞形责任 / 法律防御]
     H --> CSBCC[contract-subscription-billing-consent-continuity<br/>合同订阅 / 账单同意]
     H --> NDASC[notary-document-authentication-signature-continuity<br/>公证认证 / 签名]
     H --> CNSC[citizenship-nationality-statelessness-continuity<br/>公民国籍 / 无国籍]
@@ -880,6 +888,14 @@ flowchart TD
 | [Payday Small Dollar Title Loan Continuity](domains/payday-small-dollar-title-loan-continuity/README.md) | 发薪日贷款、小额高成本贷款、汽车抵押贷款、滚续、费用、账户访问和抵押物 | 把应急现金桥接纳入债务循环、账户透支和移动风险治理 | 不提供借款、续借、规避扣款、隐藏车辆、逃债、金融或法律建议 |
 | [Buy Now Pay Later Installment Financing Continuity](domains/buy-now-pay-later-installment-financing-continuity/README.md) | BNPL、商家分期、平台授信、自动扣款、退款同步、逾期费用和信用报告 | 把消费即时性拆解为可见、可纠错、可治理的未来付款义务 | 不提供平台推荐、分期选择、退款争议、拒付滥用、消费套利或法律建议 |
 | [Remittance Money Transfer Disclosure Continuity](domains/remittance-money-transfer-disclosure-continuity/README.md) | 汇款、跨境转账、费用、汇率、收款金额、取消、错误解决、退款和合规延迟 | 把跨境家庭支持和资源传递纳入披露、到账和纠错基础设施 | 不提供汇款推荐、避税、制裁规避、KYC/AML 规避、洗钱、外汇或法律建议 |
+| [Auto Insurance Liability Collision Claims Continuity](domains/auto-insurance-liability-collision-claims-continuity/README.md) | 汽车责任险、碰撞险、综合险、UM/UIM、免赔额、事故 claim、维修估价、total loss 和 subrogation | 把车辆事故从单次损失转成可恢复的移动风险治理 | 不提供投保、事故责任、理赔、维修、保险欺诈或法律建议 |
+| [Homeowners Renters Property Insurance Claims Continuity](domains/homeowners-renters-property-insurance-claims-continuity/README.md) | 房主险、租客险、个人财产、loss of use、ALE、财产清单、proof of loss 和理赔 | 把住所和物品损失纳入家庭恢复风险转移 | 不提供投保、理赔、赔付估值、维修承包商、保险欺诈或法律建议 |
+| [Flood Insurance NFIP Claims Continuity](domains/flood-insurance-nfip-claims-continuity/README.md) | NFIP、private flood insurance、flood maps、waiting period、proof of loss 和 appeal | 把洪水风险纳入住房恢复和灾后现金流基础设施 | 不提供投保、地图申诉、理赔、灾害援助套利、保险欺诈或法律建议 |
+| [Catastrophe Wind Wildfire Earthquake Insurance Continuity](domains/catastrophe-wind-wildfire-earthquake-insurance-continuity/README.md) | 风暴、野火、地震、冰雹、巨灾免赔额、FAIR Plan、非续保和保险退出 | 把区域巨灾风险纳入可保性和重建资金治理 | 不提供投保、理赔、搬迁、房产投资、保险欺诈或法律建议 |
+| [Disability Income Insurance Claim Continuity](domains/disability-income-insurance-claim-continuity/README.md) | 短期/长期残障保险、own occupation、any occupation、等待期、医学证据、claim 和 appeal | 把疾病伤残后的收入冲击转成合同型现金流替代 | 不提供残障认定、claim、医学证明、复工、福利申请、保险欺诈或法律建议 |
+| [Long Term Care Insurance Benefit Activation Continuity](domains/long-term-care-insurance-benefit-activation-continuity/README.md) | 长期照护保险、ADL/认知触发、等待期、照护计划、发票和保费上涨 | 把失能照护成本纳入福利启动和家庭现金流治理 | 不提供投保、理赔、照护机构、Medicaid/遗产规划、保险欺诈或法律建议 |
+| [Travel Insurance Trip Protection Claims Continuity](domains/travel-insurance-trip-protection-claims-continuity/README.md) | 旅行取消/中断、旅行医疗、撤离、行李/延误、covered reasons、documentation 和 claim | 把离家移动风险纳入临时现金、医疗和物品恢复 | 不提供保险购买、退款、医疗转运、撤离、重复索赔、保险欺诈或法律建议 |
+| [Personal Liability Umbrella Insurance Defense Continuity](domains/personal-liability-umbrella-insurance-defense-continuity/README.md) | personal liability、umbrella/excess、limits、defense costs、claim notice、coverage dispute 和资产暴露 | 把高额责任事件纳入法律防御与资产保护风险转移 | 不提供保额选择、责任判断、诉讼、资产隐藏、判决规避、保险欺诈或法律建议 |
 | [Contract Subscription Billing Consent Continuity](domains/contract-subscription-billing-consent-continuity/README.md) | 合同、服务条款、订阅、自动续费、账单、取消、争议和持续同意 | 防止交易关系通过隐性续费、账单错误和取消摩擦吞噬时间与资金 | 不提供合同审查、订阅取消、退款、投诉、诉讼、信用卡争议或法律建议 |
 | [Notary Document Authentication Signature Continuity](domains/notary-document-authentication-signature-continuity/README.md) | 公证、电子签名、数字签名、文件认证、apostille、授权文件和跨机构承认 | 把主体意愿、授权和事实转化为可验证、可迁移、可执行的承认链 | 不提供公证、apostille、签署、电子签名、移民、学校、继承、法院或法律建议 |
 | [Citizenship Nationality Statelessness Continuity](domains/citizenship-nationality-statelessness-continuity/README.md) | 公民身份、国籍、自然化、国籍证明、无国籍风险和领事保护 | 把主体从身份文件推进到国家成员资格和跨境制度保护 | 不提供公民身份、自然化、国籍、无国籍、护照、签证、税务或法律建议 |
@@ -1676,5 +1692,6 @@ flowchart LR
 - 2026-07-01：新增第六十六波 8 个旅行、临时住宿与跨境移动执行连续性域，覆盖长距离旅行预订行程、航空中断退款、航空安检身份核验、行李个人物品、临时住宿接入、旅行警示领事协助、旅行健康准备和海关边境申报。
 - 2026-07-01：新增第六十七波 8 个消费者交易、履约与市场信任连续性域，覆盖在线零售订单履约、退货退款争议、保修服务维修、维修权零件手册、支付卡争议未授权扣款、礼品卡预付储值、价格费用披露和消费者评价背书市场信任。
 - 2026-07-01：新增第六十八波 8 个消费者信贷、贷款服务与跨期资源连续性域，覆盖信用卡循环信用成本、消费贷款发放 APR 披露、房贷服务止赎、车贷租赁收车、学生贷款还款减免、发薪日小额高成本贷款、BNPL 分期融资和汇款转账费用汇率披露。
+- 2026-07-01：新增第六十九波 8 个个人保险、财产责任、灾害与理赔执行连续性域，覆盖汽车保险责任理赔、房主租客财产理赔、洪水/NFIP 理赔、风暴野火地震巨灾保险、残障收入保险理赔、长期照护福利启动、旅行保险行程保护理赔和个人责任伞形保险防御。
 
 完整记录见 [CHANGELOG.md](CHANGELOG.md)。

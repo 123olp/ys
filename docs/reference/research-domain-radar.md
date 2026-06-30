@@ -356,6 +356,14 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `payday-small-dollar-title-loan-continuity/` | 发薪日、小额高成本和汽车抵押贷款决定应急现金缺口是否会升级为债务循环、账户透支和车辆丧失 |
 | `buy-now-pay-later-installment-financing-continuity/` | BNPL 和分期融资决定即时消费是否保持未来付款义务可见、可纠错和可控 |
 | `remittance-money-transfer-disclosure-continuity/` | 汇款和跨境转账披露决定家庭支持、照护资金和跨境资源是否可靠抵达并可纠错 |
+| `auto-insurance-liability-collision-claims-continuity/` | 汽车保险理赔决定事故后移动能力、维修现金流、责任暴露和车辆资产是否能恢复 |
+| `homeowners-renters-property-insurance-claims-continuity/` | 房主和租客财产理赔决定住所损失、个人物品、临时居住费用和家庭恢复资金是否可接续 |
+| `flood-insurance-nfip-claims-continuity/` | 洪水和 NFIP 理赔决定普通房主险之外的灾后住房恢复现金流是否可证明、可申诉和可支付 |
+| `catastrophe-wind-wildfire-earthquake-insurance-continuity/` | 风暴、野火、地震和冰雹巨灾保险决定高风险区域住房资产、重建资金和保险可得性是否断裂 |
+| `disability-income-insurance-claim-continuity/` | 残障收入保险理赔决定疾病伤残后收入替代、职业角色和家庭现金流是否可延续 |
+| `long-term-care-insurance-benefit-activation-continuity/` | 长期照护保险福利启动决定失能后 ADL、认知触发、等待期、照护发票和家庭照护成本能否被接住 |
+| `travel-insurance-trip-protection-claims-continuity/` | 旅行保险理赔决定离家期间的行程中断、旅行医疗、撤离、行李延误和临时现金流是否可恢复 |
+| `personal-liability-umbrella-insurance-defense-continuity/` | 个人责任和伞形保险防御决定高额责任事件中的法律防御、保额边界、和解成本和资产暴露是否可控 |
 | `contract-subscription-billing-consent-continuity/` | 合同、订阅和账单决定持续交易关系是否保持可理解、可控制、可取消和可争议，而不是持续吞噬时间和资金 |
 | `notary-document-authentication-signature-continuity/` | 公证、文件认证和签名决定主体意愿、授权、合同和跨境文件是否能被机构长期承认、验证和执行 |
 | `citizenship-nationality-statelessness-continuity/` | 公民身份、国籍和无国籍状态决定主体是否被国家或国际保护框架承认为成员、受保护对象和权利主体 |
@@ -786,6 +794,9 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | CFPB payday loans / FTC payday loans | 提示高成本小额贷款、滚续、账户访问和抵押车辆会把短期现金缺口放大为长期束缚 |
 | CFPB buy now pay later market materials | 提示 BNPL 和商家分期把一次购买拆成多笔未来义务，退款同步和平台过度承诺需要单独跟踪 |
 | CFPB sending money / remittance transfer materials | 提示汇款费用、汇率、到账金额、取消和错误解决是跨境家庭支持的资金传递基础设施 |
+| NAIC consumer insurance / state insurance departments | 提示汽车、房主、租客、责任、残障、长期照护和旅行保险的 policy、coverage、claim、complaint 和 regulator 接口是个人风险转移执行层 |
+| FEMA FloodSmart / NFIP / Ready.gov flood materials | 提示洪水保险、flood maps、waiting period、proof of loss 和 disaster recovery 需要独立域，不能混入普通房主险或灾后救助 |
+| State insurance market bulletins / residual market and FAIR Plan materials | 提示风暴、野火、地震、冰雹、巨灾免赔额、非续保、保险退出和 residual market 是区域可保性与重建资金风险 |
 | USCIS citizenship / State Department nationality / UNHCR statelessness | 提示国家成员资格、国籍证明、领事保护和无国籍风险是法律身份之上的独立状态门 |
 | USCIS green card, employment authorization, change status and I-9 materials | 提示居留、工作授权、身份续期、雇佣核验和身份等待状态决定工作、教育、医疗、住房和家庭连续性 |
 | UNHCR protection and refugee statistics / USCIS asylum and refugee materials | 提示庇护、难民、临时保护、安置和保护身份转换是人道连续性中的独立法律状态链 |

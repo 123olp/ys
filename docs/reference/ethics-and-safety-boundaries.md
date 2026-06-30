@@ -1067,6 +1067,24 @@ Human Infra 不能被设计成更精密的压榨系统。
 - 不帮助虚假申请、收入造假、资产隐瞒、身份欺诈、产权欺诈、支票欺诈、隐藏车辆、逃债、规避自动扣款、规避催收、规避信用报告、规避 KYC/AML、制裁规避、结构化交易、洗钱、非法汇兑、恐怖融资或伪造证明。
 - 不替代 CFPB、Federal Student Aid、U.S. Department of Education、HUD、FTC、FinCEN、OFAC、州金融监管机构、州 DMV、贷款人、服务商、银行、信用卡发行机构、汇款服务商、消费者投诉渠道、律师、税务专业人士或金融专业人士。
 
+## 个人保险、财产责任、灾害与理赔执行连续性边界
+
+`auto-insurance-liability-collision-claims-continuity`、`homeowners-renters-property-insurance-claims-continuity`、`flood-insurance-nfip-claims-continuity`、`catastrophe-wind-wildfire-earthquake-insurance-continuity`、`disability-income-insurance-claim-continuity`、`long-term-care-insurance-benefit-activation-continuity`、`travel-insurance-trip-protection-claims-continuity` 和 `personal-liability-umbrella-insurance-defense-continuity` 关注主体如何通过个人保险、财产责任、灾害保险和理赔执行把事故、住所损失、洪水、巨灾、残障、长期照护、旅行中断和高额责任事件转化为可恢复现金流、照护能力、住所恢复、移动能力和法律防御，不是个人投保、理赔、赔付、诉讼、保险欺诈或金融规划服务入口。
+
+可以做：
+
+- 整理 NAIC、FEMA FloodSmart/NFIP、Ready.gov、州保险监管机构、U.S. DOT、State Department、CDC 和官方保险/灾害/旅行资料的机制、对象、变量和边界。
+- 比较汽车保险、房主/租客保险、洪水保险、巨灾保险、残障收入保险、长期照护保险、旅行保险和个人责任伞形保险如何分别影响移动恢复、住所恢复、灾后现金流、收入替代、照护支付、离家恢复和资产暴露。
+- 记录 policy、coverage、deductible、exclusion、claim notice、adjuster、proof of loss、documentation、appeal、complaint、defense costs、tail risk、保险可得性、可访问性和个案建议边界，服务后续资料卡片与变量建模。
+
+不能做：
+
+- 不提供个人投保、保额选择、保单推荐、事故责任判断、理赔申请、理赔谈判、赔付估值、维修承包商选择、医疗转运、照护机构选择、Medicaid/遗产规划、诉讼、防御策略、和解策略、投诉策略、金融规划或法律建议。
+- 不判断某个保单、coverage、deductible、exclusion、claim、denial、appeal、complaint、repair estimate、total loss、ADL trigger、travel covered reason、umbrella limit 或 defense obligation 是否适合个人或应如何处理。
+- 不生成投保、理赔、事故陈述、proof of loss、维修估价、医学证明、照护发票、旅行索赔、coverage dispute、投诉、诉讼、仲裁、和解或个案保险争议策略。
+- 不帮助伪造事故、夸大损失、重复索赔、虚构财产清单、伪造医学证明、隐藏资产、规避判决、灾害援助套利、保险欺诈、洗钱、逃避调查、骚扰 adjuster/claimant 或规避监管。
+- 不替代 NAIC、FEMA/NFIP、州保险监管机构、保险公司、保险代理、adjuster、维修专业人士、医疗人员、照护机构、旅行援助机构、律师、法院、金融专业人士或官方投诉渠道。
+
 ## 法律状态、保护身份、强制程序与记录救济连续性边界
 
 `citizenship-nationality-statelessness-continuity`、`immigration-status-residency-work-authorization-continuity`、`asylum-refugee-protection-status-continuity`、`detention-custody-confinement-status-continuity`、`civil-commitment-involuntary-treatment-rights-continuity`、`court-notice-service-process-default-judgment-continuity` 和 `criminal-record-relief-collateral-consequences-continuity` 关注国籍、居留工作授权、保护身份、拘押状态、非自愿治疗、法院程序通知和犯罪记录救济如何影响主体制度承认、自由边界、服务入口和未来选择权，不是个人公民身份、移民、庇护、拘押、强制治疗、法院、刑事记录、税务、医疗或法律服务入口。

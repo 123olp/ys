@@ -312,6 +312,14 @@
 - `payday-small-dollar-title-loan-continuity/`：发薪日贷款、小额高成本贷款与汽车抵押贷款连续性，整理高成本短期信用、滚续、账户访问、抵押车辆和债务循环。
 - `buy-now-pay-later-installment-financing-continuity/`：先买后付、分期融资与平台授信连续性，整理 BNPL、商家分期、自动扣款、退款同步、逾期费用和信用报告。
 - `remittance-money-transfer-disclosure-continuity/`：汇款、跨境转账与费用汇率披露连续性，整理跨境汇款、费用、汇率、收款金额、取消、错误解决和合规延迟。
+- `auto-insurance-liability-collision-claims-continuity/`：汽车保险、责任碰撞与事故理赔连续性，整理 liability、collision、comprehensive、UM/UIM、deductible、adjuster、repair estimate、total loss 和 subrogation。
+- `homeowners-renters-property-insurance-claims-continuity/`：房主租客、个人财产与住所理赔连续性，整理 homeowners、renters、personal property、loss of use、ALE、inventory、proof of loss 和 claim。
+- `flood-insurance-nfip-claims-continuity/`：洪水保险、NFIP 与灾后理赔连续性，整理 NFIP、private flood insurance、flood maps、waiting period、proof of loss、appeal 和 claim。
+- `catastrophe-wind-wildfire-earthquake-insurance-continuity/`：风暴野火地震巨灾保险连续性，整理 wind、wildfire、earthquake、hail、catastrophe deductible、FAIR Plan、nonrenewal 和 insurer exit。
+- `disability-income-insurance-claim-continuity/`：残障收入保险与理赔连续性，整理 short-term disability、long-term disability、own/any occupation、elimination period、medical evidence、claim 和 appeal。
+- `long-term-care-insurance-benefit-activation-continuity/`：长期照护保险与福利启动连续性，整理 ADL/cognitive trigger、benefit activation、elimination period、care plan、invoices 和 premium increase。
+- `travel-insurance-trip-protection-claims-continuity/`：旅行保险、行程保护与理赔连续性，整理 trip cancellation/interruption、travel medical、evacuation、baggage/delay、covered reasons、documentation 和 claim。
+- `personal-liability-umbrella-insurance-defense-continuity/`：个人责任、伞形保险与法律防御连续性，整理 personal liability、umbrella/excess、limits、defense costs、claim notice、coverage dispute 和 asset exposure。
 - `contract-subscription-billing-consent-continuity/`：合同、订阅、账单与持续同意连续性，整理合同、自动续费、账单、取消、争议、退款和持续同意。
 - `notary-document-authentication-signature-continuity/`：公证、文件认证与签名连续性，整理公证、电子签名、数字签名、apostille、文件认证和跨机构承认。
 - `citizenship-nationality-statelessness-continuity/`：公民身份、国籍与无国籍连续性，整理公民身份、自然化、国籍证明、领事保护、无国籍风险和身份恢复。
