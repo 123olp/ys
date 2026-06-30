@@ -174,6 +174,14 @@
 - `ai-agency-safety/`：AI 代理安全，整理授权、工具调用、监督、审计、回滚和失效隔离。
 - `digital-identity-security/`：数字身份安全，整理账号、凭据、身份恢复、服务入口和数据可携带。
 - `mental-health-affective-stability/`：心理健康与情绪稳定，整理动机、压力恢复、成瘾、创伤和自杀风险。
+- `depression-mood-disorder-functioning-continuity/`：抑郁心境与功能连续性，整理抑郁、心境低落、快感缺失、动机衰退、疲乏和功能损害。
+- `anxiety-stress-threat-regulation-continuity/`：焦虑压力与威胁调节连续性，整理焦虑、慢性压力、威胁感知、回避、惊恐和社交焦虑。
+- `trauma-ptsd-adversity-recovery-continuity/`：创伤 PTSD 与逆境恢复连续性，整理创伤暴露、PTSD、儿童逆境、灾害/暴力经历和创伤后恢复。
+- `psychosis-reality-testing-community-continuity/`：精神病性现实检验与社区连续性，整理精神病性体验、现实检验、幻觉妄想、社区支持和权利保护。
+- `bipolar-mood-episode-stability-continuity/`：双相情绪周期稳定连续性，整理躁狂/轻躁狂、抑郁发作、睡眠节律和周期性功能波动。
+- `adhd-executive-function-neurodevelopment-continuity/`：ADHD 执行功能与神经发育连续性，整理 ADHD、执行功能、注意维持、冲动控制、时间感和任务启动。
+- `autism-neurodiversity-support-continuity/`：自闭神经多样性支持连续性，整理自闭谱系、神经多样性、感觉差异、沟通差异、例行结构和支持需求。
+- `eating-disorders-nutrition-body-continuity/`：进食障碍营养与身体连续性，整理进食障碍、身体形象、限制/暴食/补偿行为、营养风险和服务断点。
 - `sleep-circadian-recovery/`：睡眠、昼夜节律与恢复，整理疲劳、修复和长期恢复能力。
 - `assistive-technology-access/`：辅助技术可及，整理助听、低视力辅助、轮椅、义肢、沟通辅助和无障碍。
 - `substance-exposure-control/`：物质暴露控制，整理烟草、酒精、成瘾性物质、有害暴露和自主性风险。

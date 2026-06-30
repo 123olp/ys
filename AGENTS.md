@@ -407,6 +407,14 @@ human_infra/
     ├── lymphatic-glymphatic-clearance/ # 淋巴与脑淋巴清除
     ├── measurement-feedback/ # 测量、预测与反馈
     ├── mental-health-affective-stability/ # 心理健康与情绪稳定
+    ├── depression-mood-disorder-functioning-continuity/ # 抑郁心境与功能连续性
+    ├── anxiety-stress-threat-regulation-continuity/ # 焦虑压力与威胁调节连续性
+    ├── trauma-ptsd-adversity-recovery-continuity/ # 创伤 PTSD 与逆境恢复连续性
+    ├── psychosis-reality-testing-community-continuity/ # 精神病性现实检验与社区连续性
+    ├── bipolar-mood-episode-stability-continuity/ # 双相情绪周期稳定连续性
+    ├── adhd-executive-function-neurodevelopment-continuity/ # ADHD 执行功能与神经发育连续性
+    ├── autism-neurodiversity-support-continuity/ # 自闭神经多样性支持连续性
+    ├── eating-disorders-nutrition-body-continuity/ # 进食障碍营养与身体连续性
     ├── memory-editing/    # 记忆编辑与人格连续性
     ├── microbiome-ecology/ # 微生物生态
     ├── mitochondrial-bioenergetics/ # 线粒体生物能量学
@@ -710,6 +718,7 @@ human_infra/
 - `domains/ai-agency-safety/` 负责 AI 代理、工具调用、授权、监督、审计、回滚和失效隔离。
 - `domains/digital-identity-security/` 负责数字身份、账号、凭据、身份恢复、服务入口和数据可携带。
 - `domains/mental-health-affective-stability/` 负责心理健康、情绪稳定、动机、成瘾、创伤和自杀风险。
+- `domains/depression-mood-disorder-functioning-continuity/`、`domains/anxiety-stress-threat-regulation-continuity/`、`domains/trauma-ptsd-adversity-recovery-continuity/`、`domains/psychosis-reality-testing-community-continuity/`、`domains/bipolar-mood-episode-stability-continuity/`、`domains/adhd-executive-function-neurodevelopment-continuity/`、`domains/autism-neurodiversity-support-continuity/` 和 `domains/eating-disorders-nutrition-body-continuity/` 负责心理健康、神经发育与功能连续性，覆盖抑郁心境功能、焦虑压力威胁调节、创伤/PTSD 恢复、精神病性现实检验、双相情绪周期稳定、ADHD 执行功能、自闭神经多样性支持和进食障碍营养身体连续性。
 - `domains/sleep-circadian-recovery/` 负责睡眠、昼夜节律、疲劳和恢复系统。
 - `domains/assistive-technology-access/` 负责辅助技术、无障碍、义肢、助听、低视力辅助、轮椅和沟通辅助。
 - `domains/substance-exposure-control/` 负责烟草、酒精、成瘾性物质、有害暴露和主体自主性风险。
@@ -722,6 +731,7 @@ human_infra/
 - `domains/social-connection-relational-infra/` 负责社会连接、孤独、社会隔离、家庭照护网络、信任和社区关系。
 - `domains/purpose-meaning-existential-continuity/`、`domains/spiritual-care-religious-practice-continuity/`、`domains/cultural-heritage-identity-continuity/`、`domains/arts-creative-expression-participation-continuity/`、`domains/leisure-recreation-restorative-activity-continuity/`、`domains/narrative-identity-life-review-continuity/`、`domains/ritual-ceremony-life-transition-continuity/` 和 `domains/dignity-personhood-respect-continuity/` 负责目的意义、精神照护、文化身份、创造表达、休闲恢复、叙事身份、仪式承认和尊严人格。
 - `domains/human-factors-ergonomics-task-system-continuity/`、`domains/cognitive-load-workload-measurement-continuity/`、`domains/fatigue-risk-alertness-continuity/`、`domains/situational-awareness-decision-environment-continuity/`、`domains/handoff-checklist-procedure-reliability-continuity/`、`domains/incident-reporting-just-culture-learning-continuity/`、`domains/automation-bias-mode-confusion-oversight-continuity/` 和 `domains/alert-fatigue-interruption-signal-management-continuity/` 负责人因工效、认知负荷、疲劳警觉、情境感知、交接清单、事件学习、自动化监督和告警中断管理。
+- `domains/depression-mood-disorder-functioning-continuity/`、`domains/anxiety-stress-threat-regulation-continuity/`、`domains/trauma-ptsd-adversity-recovery-continuity/`、`domains/psychosis-reality-testing-community-continuity/`、`domains/bipolar-mood-episode-stability-continuity/`、`domains/adhd-executive-function-neurodevelopment-continuity/`、`domains/autism-neurodiversity-support-continuity/` 和 `domains/eating-disorders-nutrition-body-continuity/` 负责心理健康、神经发育和功能连续性的证据边界，不提供诊断、治疗、药物、危机处置、饮食控制、行为训练、家庭干预、个体风险评分、招聘/教育筛选或敏感资料收集。
 - `domains/governance-rights/` 负责主体权利、法律身份、同意、退出、数据权、AI 治理和研究伦理。
 - `domains/pain-suffering-control/` 负责疼痛、痛苦、症状负担、姑息医学和可承受持续性。
 - `domains/health-literacy-navigation/` 负责健康素养、医疗服务导航、可理解信息、风险沟通和共同决策。
@@ -820,3 +830,4 @@ human_infra/
 - 2026-07-01：新增第六十一波关系执行与社会资本连续性研究域，覆盖孤独隔离风险、社会处方社区转介、互助邻里支持、志愿服务公民参与、社区调解、修复性司法、声誉信任修复、推荐背书和第三空间归属参与。
 - 2026-07-01：新增第六十二波意义、文化、身份与尊严连续性研究域，覆盖目的意义、精神照护、文化遗产、艺术创造表达、休闲娱乐恢复、叙事身份生命回顾、仪式典礼生命过渡和尊严人格承认。
 - 2026-07-01：新增第六十三波人因与操作可靠性连续性研究域，覆盖人因工效学任务系统、认知负荷/工作负荷测量、疲劳风险/警觉性、情境感知/决策环境、交接清单/过程可靠性、事件报告/公正文化学习、自动化偏误/模式混淆监督和告警疲劳/中断信号管理。
+- 2026-07-01：新增第六十四波心理健康、神经发育与功能连续性研究域，覆盖抑郁心境功能、焦虑压力威胁调节、创伤/PTSD 恢复、精神病性现实检验、双相情绪周期稳定、ADHD 执行功能、自闭神经多样性支持和进食障碍营养身体连续性。

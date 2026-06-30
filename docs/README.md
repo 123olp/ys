@@ -83,6 +83,7 @@ docs/
 │   ├── 0065-add-sixty-first-wave-relational-social-capital-continuity-domains.md
 │   ├── 0066-add-sixty-second-wave-meaning-culture-identity-continuity-domains.md
 │   ├── 0067-add-sixty-third-wave-human-factors-operational-reliability-domains.md
+│   ├── 0068-add-sixty-fourth-wave-mental-health-neurodevelopment-functioning-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -490,4 +491,12 @@ docs/
 352. Read `../domains/incident-reporting-just-culture-learning-continuity/README.md` if you are working on incident reporting, near misses, just culture, safety culture, RCA/RCA2, corrective actions, or learning systems.
 353. Read `../domains/automation-bias-mode-confusion-oversight-continuity/README.md` if you are working on automation bias, mode confusion, overreliance, human override, supervisory control, or meaningful human oversight.
 354. Read `../domains/alert-fatigue-interruption-signal-management-continuity/README.md` if you are working on alert fatigue, alarm fatigue, notification fatigue, interruptions, signal prioritization, quiet hours, or escalation routing.
-355. Enter a domain under `../domains/`.
+355. Read `../domains/depression-mood-disorder-functioning-continuity/README.md` if you are working on depression, mood disorder, anhedonia, motivation loss, functional impairment, or depression-related service continuity.
+356. Read `../domains/anxiety-stress-threat-regulation-continuity/README.md` if you are working on anxiety, chronic stress, threat regulation, avoidance, panic, social anxiety, or stress-related functioning.
+357. Read `../domains/trauma-ptsd-adversity-recovery-continuity/README.md` if you are working on trauma, PTSD, adverse childhood experiences, disaster trauma, violence exposure, trauma-informed support, or recovery continuity.
+358. Read `../domains/psychosis-reality-testing-community-continuity/README.md` if you are working on psychosis, schizophrenia spectrum, hallucinations, delusions, reality testing, community mental health, or rights-protecting support.
+359. Read `../domains/bipolar-mood-episode-stability-continuity/README.md` if you are working on bipolar disorder, mania, hypomania, mood episodes, sleep rhythm instability, impulsive risk, or cyclical functioning.
+360. Read `../domains/adhd-executive-function-neurodevelopment-continuity/README.md` if you are working on ADHD, executive function, task initiation, time sense, impulse control, school/work supports, or neurodevelopmental task continuity.
+361. Read `../domains/autism-neurodiversity-support-continuity/README.md` if you are working on autism, neurodiversity, sensory differences, communication access, routines, support needs, or inclusive participation.
+362. Read `../domains/eating-disorders-nutrition-body-continuity/README.md` if you are working on eating disorders, body image, restrictive eating, binge/purge behavior, nutrition risk, or eating-disorder service continuity.
+363. Enter a domain under `../domains/`.

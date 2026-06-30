@@ -541,6 +541,24 @@ Human Infra 不能被设计成更精密的压榨系统。
 - 收集或诱导输入员工行为日志、值班记录、医疗报警记录、事故原始证据、驾驶/飞行数据、个人健康数据或敏感工作场所资料。
 - 把人因与操作可靠性问题改写成个人能力羞辱、绩效压榨、事故甩锅、监控扩张、自动化替责、组织免责或高风险流程外包问题。
 
+## 心理健康、神经发育与功能连续性边界
+
+`depression-mood-disorder-functioning-continuity`、`anxiety-stress-threat-regulation-continuity`、`trauma-ptsd-adversity-recovery-continuity`、`psychosis-reality-testing-community-continuity`、`bipolar-mood-episode-stability-continuity`、`adhd-executive-function-neurodevelopment-continuity`、`autism-neurodiversity-support-continuity` 和 `eating-disorders-nutrition-body-continuity` 关注抑郁心境功能、焦虑压力威胁调节、创伤/PTSD 恢复、精神病性现实检验、双相情绪周期稳定、ADHD 执行功能、自闭神经多样性支持和进食障碍营养身体连续性如何影响主体有效时间、判断、关系、身体风险和未来选择权，不是诊断、治疗、危机处置、行为训练、饮食控制、招聘/教育筛选或敏感资料收集工具。
+
+可以做：
+
+- 整理 WHO、NIMH、CDC、SAMHSA、教育/无障碍和公共卫生资料中的概念边界、功能变量、服务连续性、反污名和证据类型。
+- 将动机能量、威胁调节、创伤恢复、现实检验、情绪周期、执行功能、神经多样性支持和身体供能映射为主体持续性变量。
+- 对资料来源、适用对象、功能终点、隐私边界、弱势群体保护和禁止用途做 Source Card 化整理。
+
+不能做：
+
+- 提供心理、精神科、神经发育、进食障碍或营养相关诊断、治疗、药物、补剂、神经刺激、危机处置、个体护理、家庭干预、行为训练、社交训练、饮食计划、热量计算、体重目标、运动处方或返工返学建议。
+- 输出自伤/自杀方法、暴露训练、创伤回忆诱导、强制送医、危险性判断、住院判断、用药调整、亲友监控、隐藏进食障碍、催吐、泻药、过度运动或危险补偿行为。
+- 提供招聘筛选、学校安置、员工/学生能力评分、驾驶/临床/高风险任务许可、法律能力判断、家庭控制、财务控制或个案责任归因。
+- 收集或诱导输入病历、量表分数、创伤细节、自伤念头、幻觉/妄想内容、情绪日志、消费记录、用药记录、儿童资料、行为视频、体重、照片、饮食记录、家庭冲突、位置或身份可识别资料。
+- 把心理健康、神经发育或进食障碍问题改写成懒惰、道德失败、危险标签、绩效压榨、审美规训、社会评分、招聘排除、学校排除、家庭控制、平台内容素材或敏感资料经纪问题。
+
 ## 农村健康、无家可归、羁押重返、残障独立生活、痴呆照护与慢性传染病连续性边界
 
 `rural-health-access-geographic-equity`、`homelessness-unsheltered-health-continuity`、`correctional-health-reentry-continuity`、`disability-services-independent-living`、`dementia-cognitive-decline-care-continuity` 和 `chronic-infectious-disease-care-continuity` 关注地点排除、住所缺失、羁押释放、残障服务、认知衰退和长期感染照护如何影响主体持续性，不是个人医疗、住房、福利、法律、羁押、监管规避、传染病处置或弱势群体定位指南。

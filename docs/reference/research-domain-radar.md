@@ -29,6 +29,14 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | --- | --- |
 | `rehabilitation-functioning/` | 功能恢复、失能预防和社会参与具有独立变量、证据体系和失败模式 |
 | `mental-health-affective-stability/` | 心理稳定、动机、成瘾、创伤和自杀风险能直接截断主体行动 |
+| `depression-mood-disorder-functioning-continuity/` | 抑郁、心境低落、快感缺失和功能损害直接影响动机、有效时间、关系执行和未来选择权 |
+| `anxiety-stress-threat-regulation-continuity/` | 焦虑、慢性压力、惊恐和回避会让威胁监测长期占用注意力、睡眠、判断和恢复能力 |
+| `trauma-ptsd-adversity-recovery-continuity/` | 创伤和 PTSD 会把过去风险带入当前身体、记忆、关系、安全感和服务接入路径 |
+| `psychosis-reality-testing-community-continuity/` | 精神病性体验和现实检验失稳会影响住房、医疗、工作、关系、权利保护和社区承接 |
+| `bipolar-mood-episode-stability-continuity/` | 双相情绪周期会通过躁狂/轻躁狂、抑郁发作和冲动风险反复重置长期项目资产 |
+| `adhd-executive-function-neurodevelopment-continuity/` | ADHD 把注意、冲动控制、任务启动、时间感和执行功能作为目标转化为行动的关键变量 |
+| `autism-neurodiversity-support-continuity/` | 自闭谱系和神经多样性支持提示环境适配、感官负荷、沟通方式和尊严保护应独立建模 |
+| `eating-disorders-nutrition-body-continuity/` | 进食障碍把身体供能、身体形象、营养风险、电解质/心血管风险和身份安全连接到主体持续性 |
 | `sleep-circadian-recovery/` | 睡眠和昼夜节律是恢复系统的基础调度器 |
 | `assistive-technology-access/` | 辅助技术把损伤从终止条件转化为可补偿条件，并具有独立可及性问题 |
 | `antimicrobial-resilience/` | 抗感染能力是手术、移植、癌症治疗和长期医学体系的底座 |
@@ -607,6 +615,7 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | WHO Vision and Hearing resources | 提示感官系统是主体感知、沟通和行动连续性的基础 |
 | CDC Sleep / NHLBI Sleep resources | 提示睡眠不足和节律失调会影响认知、慢病、心理和恢复能力 |
 | WHO Mental Health / Suicide resources | 提示心理健康、自杀风险和社会连接是主体持续行动的核心条件 |
+| WHO / NIMH / CDC mental health and neurodevelopment materials | 提示抑郁、焦虑、创伤/PTSD、精神病性体验、双相、ADHD、自闭谱系和进食障碍应作为不同主体功能连续性变量，而不是混成心理健康总称 |
 | NCI / NNI / FDA nanotechnology and nanomedicine resources | 提示治疗价值不仅取决于分子是否有效，还取决于纳米材料、靶向递送、释放控制、安全性和监管边界 |
 | FDA AI/ML for Drug Development and protein-design literature | 提示 AI 可以加速候选分子、蛋白工具和药物研发流程，但模型输出必须进入实验、临床和监管验证链 |
 | Nature epigenetic editing and epigenetic rejuvenation literature | 提示基因表达状态和表观遗传程序正在成为可扰动对象，但脱靶、可逆性、长期安全和身份保持是核心边界 |
@@ -845,6 +854,15 @@ Source links:
 - https://www.who.int/news-room/fact-sheets/detail/deafness-and-hearing-loss
 - https://www.cdc.gov/sleep/
 - https://www.who.int/health-topics/mental-health
+- https://www.who.int/news-room/fact-sheets/detail/mental-disorders
+- https://www.who.int/news-room/fact-sheets/detail/depression
+- https://www.who.int/news-room/fact-sheets/detail/anxiety-disorders
+- https://www.who.int/news-room/fact-sheets/detail/schizophrenia
+- https://www.who.int/news-room/fact-sheets/detail/bipolar-disorder
+- https://www.nimh.nih.gov/health/topics/post-traumatic-stress-disorder-ptsd
+- https://www.cdc.gov/adhd/
+- https://www.cdc.gov/autism/
+- https://www.nimh.nih.gov/health/topics/eating-disorders
 - https://www.cdc.gov/chronic-pain/
 - https://www.who.int/news-room/fact-sheets/detail/palliative-care
 - https://www.who.int/news-room/fact-sheets/detail/healthy-diet

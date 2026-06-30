@@ -109,6 +109,14 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | AI 代理可受控 | `ai-agency-safety/` | AI 代理、授权、工具调用、监督、审计 | 代理越权、误导、泄露、不可逆行动 |
 | 数字身份可恢复 | `digital-identity-security/` | 账号、凭据、身份恢复、服务入口 | 身份盗用、账号丢失、服务断线 |
 | 心理和动机系统可稳定 | `mental-health-affective-stability/` | 情绪稳定、压力恢复、动机、自杀风险 | 自伤、成瘾、行动崩塌、关系断裂 |
+| 动机能量必须可持续 | `depression-mood-disorder-functioning-continuity/` | 抑郁、心境低落、快感缺失、动机衰退、功能损害 | 时间存在但无法转化为行动、关系和长期目标推进 |
+| 威胁系统必须可调节 | `anxiety-stress-threat-regulation-continuity/` | 焦虑、压力、威胁感知、回避、惊恐 | 持续威胁监测吞噬注意力、睡眠、判断和恢复 |
+| 创伤后必须能重新进入未来 | `trauma-ptsd-adversity-recovery-continuity/` | PTSD、逆境、再创伤、安全感、记忆触发 | 过去风险持续支配身体、关系和服务接入 |
+| 现实检验必须被社区承接 | `psychosis-reality-testing-community-continuity/` | 精神病性体验、现实检验、社区支持、权利保护 | 感知解释失稳导致住房、医疗、关系和权利断裂 |
+| 情绪周期必须保护长期资产 | `bipolar-mood-episode-stability-continuity/` | 躁狂/轻躁狂、抑郁发作、节律、冲动风险 | 周期性波动反复清空关系、财务、学习和工作进展 |
+| 执行功能必须能转化目标 | `adhd-executive-function-neurodevelopment-continuity/` | ADHD、注意、冲动、时间感、任务启动 | 目标无法稳定启动、维持和完成，行动密度被长期压低 |
+| 神经多样性必须被环境支持 | `autism-neurodiversity-support-continuity/` | 自闭谱系、感官差异、沟通、例行、支持需求 | 不适配环境造成过载、排除和尊严损伤 |
+| 身体供能和身体信任必须稳定 | `eating-disorders-nutrition-body-continuity/` | 进食障碍、身体形象、限制/暴食/补偿、营养风险 | 身体供能、认知、心血管、电解质和身份安全同步受损 |
 | 恢复调度可稳定 | `sleep-circadian-recovery/` | 睡眠、昼夜节律、疲劳、恢复能力 | 慢性疲劳、错误、代谢/免疫/情绪失稳 |
 | 能力可被工具补偿 | `assistive-technology-access/` | 辅助设备、无障碍、环境适配 | 有技术但不可及、维护失败、参与排除 |
 | 有害暴露可控制 | `substance-exposure-control/` | 烟草、酒精、成瘾性物质、毒性暴露、自主性 | 暴露累积、成瘾、风险迁移、主体控制权下降 |
@@ -932,6 +940,14 @@ risk-engineering
 
 ```text
 mental-health-affective-stability
+  -> depression-mood-disorder-functioning-continuity
+  -> anxiety-stress-threat-regulation-continuity
+  -> trauma-ptsd-adversity-recovery-continuity
+  -> psychosis-reality-testing-community-continuity
+  -> bipolar-mood-episode-stability-continuity
+  -> adhd-executive-function-neurodevelopment-continuity
+  -> autism-neurodiversity-support-continuity
+  -> eating-disorders-nutrition-body-continuity
   -> sleep-circadian-recovery
   -> attention-executive-control
   -> learning-skill-acquisition

@@ -1,0 +1,45 @@
+# Trauma PTSD Adversity Recovery Continuity
+
+Trauma PTSD Adversity Recovery Continuity 研究创伤暴露、PTSD、儿童逆境、灾害/暴力经历和恢复支持如何影响主体安全感、记忆、关系、身体风险和长期行动能力。
+
+> 核心问题：创伤不是过去事件本身，而是过去事件如何持续改变主体的身体、记忆、信任和未来进入能力。
+
+## 研究对象
+
+- PTSD、复杂创伤、儿童逆境、灾害创伤、暴力暴露、侵害经历和创伤后功能恢复。
+- 闯入性记忆、回避、过度警觉、情绪麻木、睡眠破坏、关系信任、身体健康和服务断点。
+- 创伤知情服务、反污名、隐私、同意、再创伤风险和跨系统转介。
+
+## 先验链路
+
+```text
+主体持续性需要安全感、记忆整合和信任关系
+  -> 创伤暴露会改变威胁系统、记忆触发、睡眠、情绪调节和关系信任
+  -> 回避、过度警觉和再创伤会压缩学习、工作、照护和求助能力
+  -> 长期健康风险、孤立风险和未来选择权损失上升
+  -> 因而创伤恢复连续性是主体重新进入未来的基础域
+```
+
+## 关键变量
+
+- 创伤暴露类型、触发、睡眠、过度警觉、回避、情绪调节、社会支持和安全环境。
+- 创伤知情照护、保密、同意、服务连续性、儿童逆境、暴力预防和灾后恢复。
+- 为了叙事、研究或平台指标而诱导创伤披露的风险。
+
+## 证据入口
+
+- NIMH PTSD materials。
+- CDC Adverse Childhood Experiences materials。
+- SAMHSA trauma-informed approach materials。
+- WHO mental health and violence prevention materials。
+
+## 非目标
+
+- 本域不提供创伤治疗、危机干预、暴力处置、取证、报案、法律策略或家庭个案建议。
+- 不要求、诱导或整理个人创伤细节，不生成创伤回忆诱导、暴露练习或叙事重写方案。
+- 不做受害者/加害者识别、风险评分、可信度判断、责任归因或舆论传播材料。
+
+## 上下游
+
+- 上游：`personal-safety-violence-prevention/`、`child-protection-family-safety/`、`disaster-recovery-relief-continuity/`。
+- 下游：`depression-mood-disorder-functioning-continuity/`、`anxiety-stress-threat-regulation-continuity/`、`narrative-identity-life-review-continuity/`。
