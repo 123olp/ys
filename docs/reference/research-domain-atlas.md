@@ -222,6 +222,14 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 纪律系统必须避免排除性长尾 | `school-discipline-exclusion-restraint-continuity/` | 停学、开除、课堂移除、约束隔离、复学、纪律民权数据 | 排除性纪律会把行为、残障、创伤或社会风险转化为学习日损失和制度尾部后果 |
 | 学校必须提供心理恢复入口 | `school-mental-health-counseling-support-continuity/` | 学校咨询、社工、心理师、危机转介、社区照护衔接、隐私同意 | 心理支持缺口会让压力、创伤、孤立和危机压缩出勤、学习参与和求助能力 |
 | 学校环境必须安全可归属 | `school-climate-bullying-violence-prevention-continuity/` | 学校气候、归属感、欺凌、骚扰、暴力预防、报告机制、民权边界 | 欺凌、骚扰、暴力和不可信报告机制会制造恐惧缺勤、慢性压力和长期关系损耗 |
+| 高等教育入口必须承认已有学习成果 | `postsecondary-admissions-transfer-articulation-continuity/` | 录取、注册、转学、学分转换、衔接协议、重新入学、时间到学位 | 入学衔接失败或学分损失会把既有学习资本转成重复成本、延迟毕业和路径放弃 |
+| 学生学习现金流必须连续 | `student-financial-aid-grant-scholarship-continuity/` | FAFSA、Title IV、Pell、贷款、work-study、奖助学金、SAP、发放、债务 | 资助断裂、SAP 失效、账单 hold 或生活费缺口会把学习机会转成债务和退学风险 |
+| 学位路径必须可导航可预警 | `academic-advising-degree-progress-continuity/` | advising、degree audit、课程排序、学业预警、学分积累、完成路径 | 课程迷航、无效学分、先修阻塞和学业预警缺失会消耗有效时间并延迟完成 |
+| 校园基本需求必须被接住 | `campus-basic-needs-student-support-continuity/` | 食物、住房、交通、托育、应急资金、福利导航、学生支持 | 生存性摩擦会吞噬学习时间、睡眠、恢复、出勤和校园参与 |
+| 高校残障便利必须可执行 | `campus-disability-accommodations-accessibility-continuity/` | ADA/504、合理便利、可访问材料、辅助技术、考试住宿、数字无障碍 | 便利延迟或不可执行会把功能限制转成课程排除、成绩损耗和职业入口关闭 |
+| 校园心理危机必须有恢复路径 | `campus-mental-health-crisis-student-support-continuity/` | 咨询、危机响应、休学返校、同伴支持、社区转介、隐私同意 | 心理危机、孤立和服务容量不足会截断学习、安全、关系和返校路径 |
+| 校园安全与民权程序必须可信 | `campus-safety-title-ix-clery-continuity/` | Title IX、Clery、校园犯罪数据、预警、支持性措施、安全报告 | 伤害、报复、报告失信或安全通知失败会制造恐惧缺勤、创伤和制度退出 |
+| 国际学生身份必须与学籍同步 | `international-student-sevis-status-continuity/` | SEVIS、I-20、DSO、课程负荷、CPT/OPT、旅行签注、身份维护 | 记录错误、授权误解或期限错过会把学习、工作、旅行和居留路径转成身份风险 |
 | 栖居空间可保护生命 | `building-fire-life-safety-codes/` | 建筑规范、消防规范、疏散、烟雾报警、无障碍、结构韧性 | 居住、照护、学习、工作和公共空间成为火灾、烟雾、结构和疏散风险源 |
 | 关键物质系统可制造修复 | `manufacturing-repair-capacity/` | 制造、维修、维护、备件、质量、本地生产、关键设备恢复 | 设备损坏、备件短缺、质量缺陷和生产能力不足导致服务与工具系统失效 |
 | 公共预算可转化为服务 | `public-procurement-contracting-capacity/` | 公共采购、合同、供应商管理、应急采购、透明度、交付验收 | 有预算和政策但采购失败、合同失效、腐败、延误或劣质交付 |
@@ -537,6 +545,14 @@ risk-engineering
   -> school-discipline-exclusion-restraint-continuity
   -> school-mental-health-counseling-support-continuity
   -> school-climate-bullying-violence-prevention-continuity
+  -> postsecondary-admissions-transfer-articulation-continuity
+  -> student-financial-aid-grant-scholarship-continuity
+  -> academic-advising-degree-progress-continuity
+  -> campus-basic-needs-student-support-continuity
+  -> campus-disability-accommodations-accessibility-continuity
+  -> campus-mental-health-crisis-student-support-continuity
+  -> campus-safety-title-ix-clery-continuity
+  -> international-student-sevis-status-continuity
   -> community-resource-navigation
   -> social-determinants-community-vulnerability
   -> public-service-design-accessibility

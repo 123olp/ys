@@ -374,6 +374,30 @@ domains/
 ├── school-climate-bullying-violence-prevention-continuity/
 │   ├── AGENTS.md
 │   └── README.md
+├── postsecondary-admissions-transfer-articulation-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── student-financial-aid-grant-scholarship-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── academic-advising-degree-progress-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── campus-basic-needs-student-support-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── campus-disability-accommodations-accessibility-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── campus-mental-health-crisis-student-support-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── campus-safety-title-ix-clery-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── international-student-sevis-status-continuity/
+│   ├── AGENTS.md
+│   └── README.md
 ├── cognitive-augmentation/
 │   ├── AGENTS.md
 │   └── README.md
@@ -945,6 +969,7 @@ domains/
 - `banking-deposit-account-access-continuity/`、`debt-obligation-collection-relief-continuity/`、`real-property-title-deed-record-continuity/`、`driver-license-vehicle-registration-continuity/`、`passport-travel-document-mobility-continuity/`、`contract-subscription-billing-consent-continuity/` 和 `notary-document-authentication-signature-continuity/` 负责银行账户存款访问、债务义务催收救济、不动产权属地契、驾照车辆登记、护照旅行证件、合同订阅账单、公证文件认证签名这些资源控制、移动资格与交易执行连续性条件。
 - `citizenship-nationality-statelessness-continuity/`、`immigration-status-residency-work-authorization-continuity/`、`asylum-refugee-protection-status-continuity/`、`detention-custody-confinement-status-continuity/`、`civil-commitment-involuntary-treatment-rights-continuity/`、`court-notice-service-process-default-judgment-continuity/` 和 `criminal-record-relief-collateral-consequences-continuity/` 负责公民国籍无国籍、移民居留工作授权、庇护难民保护、拘押羁押监管状态、非自愿治疗权利、法院通知缺席判决和犯罪记录附带后果这些法律状态与强制程序连续性条件。
 - `school-enrollment-attendance-continuity/`、`special-education-iep-504-accommodation-continuity/`、`school-meals-nutrition-access-continuity/`、`school-health-services-chronic-condition-continuity/`、`school-transportation-safe-routes-continuity/`、`school-discipline-exclusion-restraint-continuity/`、`school-mental-health-counseling-support-continuity/` 和 `school-climate-bullying-violence-prevention-continuity/` 负责入学出勤、特殊教育 IEP/504、校餐营养、学校健康服务、通学安全、纪律排除约束、学校心理健康和学校气候欺凌暴力预防这些学校服务连续性条件。
+- `postsecondary-admissions-transfer-articulation-continuity/`、`student-financial-aid-grant-scholarship-continuity/`、`academic-advising-degree-progress-continuity/`、`campus-basic-needs-student-support-continuity/`、`campus-disability-accommodations-accessibility-continuity/`、`campus-mental-health-crisis-student-support-continuity/`、`campus-safety-title-ix-clery-continuity/` 和 `international-student-sevis-status-continuity/` 负责高等教育入学转学衔接、学生资助奖助学金、学业指导学位进度、校园基本需求、校园残障便利、校园心理危机支持、校园安全 Title IX/Clery 和国际学生 SEVIS 身份这些高等教育学生生命周期连续性条件。
 - `access-to-justice-legal-aid/`、`civic-participation-election-access/`、`migration-displacement-humanitarian-continuity/` 和 `digital-inclusion-connectivity/` 负责司法可及、公民参与、迁移流离失所人道连续性和数字连接这些制度参与与公共服务接入条件。
 - `personal-safety-violence-prevention/` 和 `product-safety-recall-systems/` 负责暴力预防、受害者支持、产品缺陷报告、召回和纠正这些公共安全连续性条件。
 - `cellular-reprogramming/` 负责山中因子、部分重编程、化学重编程、AI 因子设计和表观遗传编辑等“细胞状态可重写”谱系，不提供实验协议或人体应用建议。
@@ -966,6 +991,7 @@ domains/
 - `banking-deposit-account-access-continuity/`、`debt-obligation-collection-relief-continuity/`、`real-property-title-deed-record-continuity/`、`driver-license-vehicle-registration-continuity/`、`passport-travel-document-mobility-continuity/`、`contract-subscription-billing-consent-continuity/` 和 `notary-document-authentication-signature-continuity/` 负责资源控制、移动资格与交易执行连续性的证据边界，不提供个人银行、债务、破产、房产、车辆、驾驶、护照、签证、移民、订阅取消、合同审查、公证、apostille、电子签名、法律、金融或个案策略建议。
 - `citizenship-nationality-statelessness-continuity/`、`immigration-status-residency-work-authorization-continuity/`、`asylum-refugee-protection-status-continuity/`、`detention-custody-confinement-status-continuity/`、`civil-commitment-involuntary-treatment-rights-continuity/`、`court-notice-service-process-default-judgment-continuity/` 和 `criminal-record-relief-collateral-consequences-continuity/` 负责法律状态、保护身份、强制程序与记录救济连续性的证据边界，不提供公民身份、国籍、移民、庇护、拘押、非自愿治疗、法院程序、犯罪记录救济、刑事、税务、医疗或法律建议。
 - `school-enrollment-attendance-continuity/`、`special-education-iep-504-accommodation-continuity/`、`school-meals-nutrition-access-continuity/`、`school-health-services-chronic-condition-continuity/`、`school-transportation-safe-routes-continuity/`、`school-discipline-exclusion-restraint-continuity/`、`school-mental-health-counseling-support-continuity/` 和 `school-climate-bullying-violence-prevention-continuity/` 负责学校服务连续性的证据边界，不提供个人入学、出勤、IEP/504、校餐、校医、通学路线、纪律申诉、心理危机、欺凌投诉、教育、医疗、法律或个案建议。
+- `postsecondary-admissions-transfer-articulation-continuity/`、`student-financial-aid-grant-scholarship-continuity/`、`academic-advising-degree-progress-continuity/`、`campus-basic-needs-student-support-continuity/`、`campus-disability-accommodations-accessibility-continuity/`、`campus-mental-health-crisis-student-support-continuity/`、`campus-safety-title-ix-clery-continuity/` 和 `international-student-sevis-status-continuity/` 负责高等教育学生生命周期连续性的证据边界，不提供个人申请、转学、资助、选课、住宿、残障便利、心理危机、Title IX、校园安全、SEVIS、移民、税务、医疗、法律或个案建议。
 - `regenerative-medicine/`、`cancer-control/` 和 `immune-maintenance/` 负责身体基底维护相关的机制、风险和证据边界。
 - `rehabilitation-functioning/`、`assistive-technology-access/`、`skin-barrier-wound-healing/` 和 `sensory-continuity/` 负责功能恢复、能力补偿、外界屏障和感官反馈连续性。
 - `antimicrobial-resilience/` 负责抗微生物耐药、感染控制和现代医学抗感染底座。

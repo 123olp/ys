@@ -864,6 +864,24 @@ Human Infra 不能被设计成更精密的压榨系统。
 - 不收集、复制、处理或要求学生姓名、住址、路线、定位、聊天记录、教育记录、健康记录、残障记录、心理危机资料、纪律记录、家庭收入、移民身份或事件细节。
 - 不替代学校、学区、州教育机构、家长、学生、特殊教育团队、学校护士、医生、心理健康服务、儿童保护、OCR、StopBullying.gov、交通部门、律师、危机服务、执法、急救或官方投诉渠道。
 
+## 高等教育学生生命周期连续性边界
+
+`postsecondary-admissions-transfer-articulation-continuity`、`student-financial-aid-grant-scholarship-continuity`、`academic-advising-degree-progress-continuity`、`campus-basic-needs-student-support-continuity`、`campus-disability-accommodations-accessibility-continuity`、`campus-mental-health-crisis-student-support-continuity`、`campus-safety-title-ix-clery-continuity` 和 `international-student-sevis-status-continuity` 关注高等教育学生生命周期中的学习路径、现金流、学位进度、基本需求、残障参与、心理恢复、校园安全和国际身份报告如何支撑能力资本形成，不是个人申请、转学、资助、选课、住宿、残障便利、心理危机、Title IX、校园安全、SEVIS、移民、税务、医疗或法律服务入口。
+
+可以做：
+
+- 整理 Federal Student Aid、FSA Partner Connect、NCES IPEDS、College Scorecard、ED OCR、ED Campus Safety and Clery、ADA.gov、SAMHSA、CDC、ICE SEVIS、Study in the States、USCIS、State Department 和高校公开资料中的机制、对象、变量和边界。
+- 比较入学衔接、学生资助、学业指导、基本需求支持、残障便利、心理危机服务、校园安全报告、Title IX/Clery 程序和 SEVIS 身份报告如何分别影响学习持续性、有效时间、行动能力、恢复能力、职业入口和全球移动性。
+- 记录教育记录、资助记录、残障资料、健康资料、心理危机资料、性骚扰或暴力事件、犯罪数据、住房食物不安全、移民身份、学生隐私、民权、反歧视、报告义务和个案建议边界，服务后续资料卡片与变量建模。
+
+不能做：
+
+- 不提供个人选校、申请、录取、转学、学分申诉、FAFSA、贷款、奖学金、SAP、退课、停学、复学、住宿、餐食、残障便利、心理治疗、危机处置、安全计划、Title IX 投诉、Clery 报告、SEVIS、签证、移民、税务、医疗或法律建议。
+- 不判断学生是否应被录取、是否可转学、学分是否应被承认、是否符合资助资格、是否违反 SAP、是否应获得住宿餐食或残障便利、是否存在 Title IX 违法、是否需要心理危机干预、是否应报告给某机构、SEVIS 身份是否有效或案件胜率。
+- 不生成个人申请材料、资助申请、贷款选择、申诉、投诉、Title IX 材料、证据保存、安全计划、心理危机材料、残障便利申请、SEVIS/签证/移民文件、税务材料、法律文件或个案策略。
+- 不收集、复制、处理或要求学生姓名、学号、住址、定位、课程记录、成绩单、资助记录、贷款资料、收入资料、残障记录、健康记录、心理危机资料、性暴力事件细节、犯罪报告、护照、I-20、签证、SEVIS ID 或移民身份细节。
+- 不替代高校、招生办、registrar、financial aid office、academic advisor、basic needs office、disability services、counseling center、campus safety、Title IX office、international student office、DHS/ICE/SEVP、USCIS、State Department、税务人员、律师、医疗人员、危机服务、执法或官方申诉渠道。
+
 ## 数据与证据边界
 
 - 原始数据、清洗数据和人工判断必须分层保存。

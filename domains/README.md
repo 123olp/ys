@@ -289,6 +289,14 @@
 - `school-discipline-exclusion-restraint-continuity/`：学校纪律、排除与约束隔离连续性，整理停学、开除、课堂移除、约束隔离、复学和纪律民权数据。
 - `school-mental-health-counseling-support-continuity/`：学校心理健康与咨询支持连续性，整理学校咨询、社工、心理师、危机转介、社区照护衔接和隐私同意。
 - `school-climate-bullying-violence-prevention-continuity/`：学校气候、欺凌与暴力预防连续性，整理学校气候、归属感、欺凌、骚扰、暴力预防、报告机制和民权边界。
+- `postsecondary-admissions-transfer-articulation-continuity/`：高等教育入学、转学与衔接连续性，整理录取、注册、学分转换、articulation、重新入学和时间到学位。
+- `student-financial-aid-grant-scholarship-continuity/`：学生资助、助学金与奖学金连续性，整理 FAFSA、Title IV、Pell、贷款、work-study、SAP、发放和债务风险。
+- `academic-advising-degree-progress-continuity/`：学业指导与学位进度连续性，整理 advising、degree audit、课程排序、学业预警、学分积累和完成路径。
+- `campus-basic-needs-student-support-continuity/`：校园基本需求与学生支持连续性，整理食物、住房、交通、托育、应急资金、福利导航和学生事务支持。
+- `campus-disability-accommodations-accessibility-continuity/`：校园残障便利与无障碍连续性，整理 ADA/504、合理便利、可访问材料、辅助技术、考试住宿和数字无障碍。
+- `campus-mental-health-crisis-student-support-continuity/`：校园心理健康、危机与学生支持连续性，整理咨询、危机响应、休学返校、同伴支持、转介和隐私同意。
+- `campus-safety-title-ix-clery-continuity/`：校园安全、Title IX 与 Clery 连续性，整理性骚扰暴力响应、支持性措施、校园犯罪数据、预警和安全报告。
+- `international-student-sevis-status-continuity/`：国际学生 SEVIS 身份连续性，整理 SEVIS、I-20、DSO、课程负荷、CPT/OPT、旅行签注和身份维护。
 - `supply-chain-continuity/`：供应链连续性，整理关键物资、服务、物流、替代路径和恢复时间。
 - `synthetic-biology-biosecurity/`：合成生物学与生物安全，整理双重用途、生物安全、生物安保和治理边界。
 - `space-extreme-habitation/`：空间与极端栖居，整理辐射、微重力、隔离、闭环资源和远程医疗风险。

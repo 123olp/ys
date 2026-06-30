@@ -66,6 +66,7 @@ docs/
 │   ├── 0048-add-forty-fourth-wave-asset-account-transaction-continuity-domains.md
 │   ├── 0049-add-forty-fifth-wave-legal-status-coercive-process-continuity-domains.md
 │   ├── 0050-add-forty-sixth-wave-school-service-continuity-domains.md
+│   ├── 0051-add-forty-seventh-wave-postsecondary-student-continuity-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -352,4 +353,12 @@ docs/
 231. Read `../domains/school-discipline-exclusion-restraint-continuity/README.md` if you are working on suspensions, expulsions, classroom removals, restraint/seclusion, re-entry, discipline data, or exclusion-risk continuity.
 232. Read `../domains/school-mental-health-counseling-support-continuity/README.md` if you are working on school counseling, school-based mental health, social workers, crisis referral, community care linkage, or student recovery continuity.
 233. Read `../domains/school-climate-bullying-violence-prevention-continuity/README.md` if you are working on school climate, belonging, bullying, harassment, violence prevention, reporting channels, or school safety continuity.
-234. Enter a domain under `../domains/`.
+234. Read `../domains/postsecondary-admissions-transfer-articulation-continuity/README.md` if you are working on higher education admissions, enrollment, transfer, articulation, credit conversion, readmission, or postsecondary pathway continuity.
+235. Read `../domains/student-financial-aid-grant-scholarship-continuity/README.md` if you are working on FAFSA, Title IV aid, grants, scholarships, work-study, aid disbursement, SAP, or student financial-aid continuity.
+236. Read `../domains/academic-advising-degree-progress-continuity/README.md` if you are working on academic advising, degree audit, course sequencing, credit accumulation, early alerts, retention, or degree-progress continuity.
+237. Read `../domains/campus-basic-needs-student-support-continuity/README.md` if you are working on campus food, housing, transportation, childcare, emergency aid, benefits navigation, or basic-needs student support continuity.
+238. Read `../domains/campus-disability-accommodations-accessibility-continuity/README.md` if you are working on campus disability services, Section 504, ADA, accommodations, accessible materials, auxiliary aids, or higher-ed accessibility continuity.
+239. Read `../domains/campus-mental-health-crisis-student-support-continuity/README.md` if you are working on campus counseling, student mental health, crisis response, leave/re-entry, peer support, or student recovery continuity.
+240. Read `../domains/campus-safety-title-ix-clery-continuity/README.md` if you are working on campus safety, Title IX, sexual misconduct response, Clery Act, campus crime reporting, emergency notification, or supportive-measure continuity.
+241. Read `../domains/international-student-sevis-status-continuity/README.md` if you are working on SEVIS, F/M student status, I-20, DSO reporting, CPT/OPT, travel signature, or international-student status continuity.
+242. Enter a domain under `../domains/`.

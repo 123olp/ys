@@ -308,6 +308,14 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `school-discipline-exclusion-restraint-continuity/` | 停学、开除、约束隔离和复学决定行为事件是否会变成长期学习排除和制度尾部风险 |
 | `school-mental-health-counseling-support-continuity/` | 学校心理健康和咨询支持决定压力、创伤、危机和孤立是否能在学习系统中被早期接住 |
 | `school-climate-bullying-violence-prevention-continuity/` | 学校气候、欺凌和暴力预防决定学生是否处在可到场、可求助、可归属和可恢复的安全环境 |
+| `postsecondary-admissions-transfer-articulation-continuity/` | 高等教育入学、转学和学分衔接决定已有学习成果是否能被承认并转化为后续学位路径 |
+| `student-financial-aid-grant-scholarship-continuity/` | 学生资助、奖助学金和发放流程决定学习机会是否会因现金流、账单、资格或债务风险而中断 |
+| `academic-advising-degree-progress-continuity/` | 学业指导、degree audit 和课程路径决定学习时间是否能稳定转化为学分、学位和职业入口 |
+| `campus-basic-needs-student-support-continuity/` | 校园基本需求支持决定食物、住房、交通、托育和应急资金是否会吞噬学习时间和恢复能力 |
+| `campus-disability-accommodations-accessibility-continuity/` | 校园残障便利和无障碍决定功能限制是否能被转化为可执行支持和持续学习参与 |
+| `campus-mental-health-crisis-student-support-continuity/` | 校园心理健康与危机支持决定压力、孤立、自伤风险和休学返校是否能进入恢复路径 |
+| `campus-safety-title-ix-clery-continuity/` | 校园安全、Title IX 和 Clery 决定伤害报告、支持性措施、安全通知和民权程序是否可信 |
+| `international-student-sevis-status-continuity/` | 国际学生 SEVIS 身份决定跨境学习、工作授权、旅行和居留路径是否与学籍同步 |
 
 ## 来源信号
 
@@ -353,6 +361,12 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | CRDC / OCR school discipline resources | 提示停学、开除、课堂移除、约束隔离和复学必须进入民权、残障和学习日损失审查 |
 | SAMHSA / CDC / ED school mental health resources | 提示学校心理健康支持是压力、创伤、危机、求助能力和学习参与的恢复层 |
 | StopBullying.gov / CDC youth violence / OCR harassment resources | 提示欺凌、骚扰、暴力和学校气候会直接影响出勤、心理安全、归属感和学习连续性 |
+| Federal Student Aid / FSA Partner Connect / College Scorecard | 提示 FAFSA、Title IV、Pell、贷款、SAP、净价、债务和完成率把高等教育机会连接到现金流与长期债务风险 |
+| NCES IPEDS / state higher education transfer resources | 提示录取、注册、留存、转学、completion、articulation 和时间到学位需要作为高等教育路径连续性变量 |
+| ED OCR Section 504 / ADA / campus disability services resources | 提示高校残障便利、可访问材料和数字无障碍有独立的权利、隐私、执行和进度断裂模式 |
+| SAMHSA / ED / CDC college mental health resources | 提示高校心理健康支持需要同时处理咨询容量、危机响应、休学返校、隐私同意和社区转介 |
+| ED OCR Title IX / Campus Safety and Security / Clery resources | 提示校园安全、性骚扰暴力响应、支持性措施、犯罪数据、预警和安全报告会影响到场能力与归属 |
+| ICE SEVP / SEVIS / Study in the States / USCIS resources | 提示国际学生身份是学籍、课程负荷、学校报告、工作授权、旅行和移民状态的耦合系统 |
 | WHO Antimicrobial Resistance | 提示耐药性会侵蚀现代医学和长期感染控制底座 |
 | WHO Vision and Hearing resources | 提示感官系统是主体感知、沟通和行动连续性的基础 |
 | CDC Sleep / NHLBI Sleep resources | 提示睡眠不足和节律失调会影响认知、慢病、心理和恢复能力 |

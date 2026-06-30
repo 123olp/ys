@@ -159,6 +159,14 @@ human_infra/
     ├── school-discipline-exclusion-restraint-continuity/ # 学校纪律、排除与约束隔离连续性
     ├── school-mental-health-counseling-support-continuity/ # 学校心理健康与咨询支持连续性
     ├── school-climate-bullying-violence-prevention-continuity/ # 学校气候、欺凌与暴力预防连续性
+    ├── postsecondary-admissions-transfer-articulation-continuity/ # 高等教育入学、转学与衔接连续性
+    ├── student-financial-aid-grant-scholarship-continuity/ # 学生资助、助学金与奖学金连续性
+    ├── academic-advising-degree-progress-continuity/ # 学业指导与学位进度连续性
+    ├── campus-basic-needs-student-support-continuity/ # 校园基本需求与学生支持连续性
+    ├── campus-disability-accommodations-accessibility-continuity/ # 校园残障便利与无障碍连续性
+    ├── campus-mental-health-crisis-student-support-continuity/ # 校园心理健康、危机与学生支持连续性
+    ├── campus-safety-title-ix-clery-continuity/ # 校园安全、Title IX 与 Clery 连续性
+    ├── international-student-sevis-status-continuity/ # 国际学生 SEVIS 身份连续性
     ├── cognitive-augmentation/ # 认知增强与工具放大
     ├── digital-identity-security/ # 数字身份安全
     ├── disembodied-cns/   # 去具身外部维持型中枢生命系统
@@ -549,6 +557,7 @@ human_infra/
 - `domains/banking-deposit-account-access-continuity/`、`domains/debt-obligation-collection-relief-continuity/`、`domains/real-property-title-deed-record-continuity/`、`domains/driver-license-vehicle-registration-continuity/`、`domains/passport-travel-document-mobility-continuity/`、`domains/contract-subscription-billing-consent-continuity/` 和 `domains/notary-document-authentication-signature-continuity/` 负责银行账户存款访问、债务义务催收救济、不动产权属地契、驾照车辆登记、护照旅行证件、合同订阅账单、公证文件认证签名这些资源控制、移动资格与交易执行连续性条件。
 - `domains/citizenship-nationality-statelessness-continuity/`、`domains/immigration-status-residency-work-authorization-continuity/`、`domains/asylum-refugee-protection-status-continuity/`、`domains/detention-custody-confinement-status-continuity/`、`domains/civil-commitment-involuntary-treatment-rights-continuity/`、`domains/court-notice-service-process-default-judgment-continuity/` 和 `domains/criminal-record-relief-collateral-consequences-continuity/` 负责公民国籍无国籍、移民居留工作授权、庇护难民保护、拘押羁押监管状态、非自愿治疗权利、法院通知缺席判决和犯罪记录附带后果这些法律状态与强制程序连续性条件。
 - `domains/school-enrollment-attendance-continuity/`、`domains/special-education-iep-504-accommodation-continuity/`、`domains/school-meals-nutrition-access-continuity/`、`domains/school-health-services-chronic-condition-continuity/`、`domains/school-transportation-safe-routes-continuity/`、`domains/school-discipline-exclusion-restraint-continuity/`、`domains/school-mental-health-counseling-support-continuity/` 和 `domains/school-climate-bullying-violence-prevention-continuity/` 负责入学出勤、特殊教育 IEP/504、校餐营养、学校健康服务、通学安全、纪律排除约束、学校心理健康、学校气候欺凌暴力预防这些学校服务连续性条件。
+- `domains/postsecondary-admissions-transfer-articulation-continuity/`、`domains/student-financial-aid-grant-scholarship-continuity/`、`domains/academic-advising-degree-progress-continuity/`、`domains/campus-basic-needs-student-support-continuity/`、`domains/campus-disability-accommodations-accessibility-continuity/`、`domains/campus-mental-health-crisis-student-support-continuity/`、`domains/campus-safety-title-ix-clery-continuity/` 和 `domains/international-student-sevis-status-continuity/` 负责高等教育入学转学衔接、学生资助奖助学金、学业指导学位进度、校园基本需求、校园残障便利、校园心理危机支持、校园安全 Title IX/Clery 和国际学生 SEVIS 身份连续性这些高等教育学生生命周期条件。
 - `domains/disembodied-cns/` 负责去具身外部维持型中枢生命系统的高层架构建模，不提供实验操作协议。
 - `domains/memory-editing/` 负责记忆编辑的概念、证据、验证和伦理边界，不提供可执行神经操控步骤。
 - `domains/biostasis-cryopreservation/` 负责冷冻保存、生物停滞、休眠和等待未来修复路径。
@@ -599,6 +608,7 @@ human_infra/
 - 2026-06-30：新增第四十四波 7 个资源控制、移动资格与交易执行连续性域，覆盖银行账户存款访问、债务义务催收救济、不动产权属地契、驾照车辆登记、护照旅行证件、合同订阅账单、公证文件认证签名。
 - 2026-06-30：新增第四十五波 7 个法律状态、保护身份、强制程序与记录救济连续性域，覆盖公民国籍无国籍、移民居留工作授权、庇护难民保护、拘押羁押监管状态、非自愿治疗权利、法院通知缺席判决和犯罪记录附带后果。
 - 2026-06-30：新增第四十六波 8 个学校服务连续性域，覆盖入学出勤、特殊教育 IEP/504、校餐营养、学校健康服务、通学安全、纪律排除约束、学校心理健康和学校气候欺凌暴力预防。
+- 2026-06-30：新增第四十七波 8 个高等教育学生生命周期连续性域，覆盖入学转学衔接、学生资助奖助学金、学业指导学位进度、校园基本需求、校园残障便利、校园心理危机支持、校园安全 Title IX/Clery 和国际学生 SEVIS 身份。
 - 2026-06-20：从 Biocat 单项目重组为 Human Infra 总项目；旧 Biocat 迁入 `domains/longevity-evidence/`；新增 `disembodied-cns` 与 `memory-editing` 子域；四份最新资料归档到 `docs/source-notes/`；按 Docs-as-Code 和 Diataxis 补齐根文件、协作模板、文档分层和结构检查脚本。
 - 2026-06-22：新增 `domains/future-waiting/` 和度规红移固有时差分路径（黑洞等待室），用于承载“压缩等待 / 去未来”类永生路径思想实验。
 - 2026-06-23：新增 GitHub Actions `make check` 门禁和 `.github/AGENTS.md`，准备远程仓库协作入口。
