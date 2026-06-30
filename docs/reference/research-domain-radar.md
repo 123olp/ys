@@ -332,11 +332,26 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `pki-certificate-cryptographic-trust-continuity/` | PKI、证书和密钥信任链决定 Web、API、软件更新和身份验证是否持续可信 |
 | `cloud-service-exit-interoperability-continuity/` | 云服务退出与互操作决定资料、身份、工作流和审计证据是否可迁移可恢复 |
 | `api-platform-dependency-runtime-continuity/` | API 与平台运行时依赖决定第三方能力中断、限流、废弃或政策变化时任务是否可降级 |
+| `calendar-scheduling-appointment-continuity/` | 日历、排程和预约决定未来时间承诺是否能按时区、地点、参与人、提醒和改期规则转化为真实行动 |
+| `notification-alert-routing-attention-continuity/` | 通知和警报路由决定关键事件是否能到达，同时避免低价值信号吞噬注意力预算 |
+| `reminder-alarm-routine-task-continuity/` | 提醒、闹钟和例行任务决定低显著但高累积价值的健康、资源、设备和关系维护任务是否持续完成 |
+| `meeting-video-conferencing-remote-collaboration-continuity/` | 视频会议和远程协作决定跨地点主体是否能共享语音、画面、资料、记录和行动项 |
+| `document-capture-ocr-pdf-record-workflow-continuity/` | 文件捕获、OCR 和记录工作流决定纸面事实是否能变成可读、可提交、可检索、可保存的数字证据 |
+| `search-index-discovery-retrieval-continuity/` | 搜索、索引和发现决定资料、服务、记录和知识上下文是否能在需要时被找到和验证 |
+| `personal-automation-integration-workflow-continuity/` | 个人自动化和工作流集成决定重复任务能否被可靠编排，并保留日志、权限边界和人工中止 |
+| `collaborative-document-permission-version-continuity/` | 协作文档权限和版本决定共同资料、评论、决策、证据和行动项是否可授权、可迁移、可恢复 |
 
 ## 来源信号
 
 | 来源 | 对域雷达的启发 |
 | --- | --- |
+| IETF iCalendar / CalDAV, IANA Time Zone Database, Unicode CLDR | 提示日程、预约、提醒和跨时区时间承诺是可标准化、可迁移、可失败的主体行动基础设施 |
+| W3C Notifications / Push / Permissions | 提示通知和警报既是行动触发器，也是注意力、权限、隐私和误报漏报治理对象 |
+| W3C WebRTC / IETF WebRTC / WAI accessibility | 提示远程协作现场依赖音视频协议、字幕无障碍、设备可达和记录行动项连续性 |
+| PDF/A, NARA electronic records, FADGI digitization, Library of Congress preservation | 提示文件捕获、OCR、PDF 和记录归档决定纸面事实能否长期可读、可提交和可检索 |
+| Sitemaps, Schema.org, W3C Data on the Web | 提示资料存在不等于资料可用，元数据、索引、发现、断链和来源验证需要独立研究域 |
+| OpenAPI, OAuth, Webhook and platform deprecation docs | 提示个人自动化和集成工作流把重复任务外包给平台能力，同时引入权限、限流、静默失败和退出风险 |
+| OASIS ODF, OOXML, WebDAV and records-management references | 提示协作文档的权限、版本、所有者、导出和长期可读性是团队记忆与任务协作连续性的独立条件 |
 | Hallmarks of Aging: An Expanding Universe | 提示基因组稳定性、端粒、蛋白稳态、自噬、营养感知、线粒体、细胞衰老、干细胞耗竭、细胞通讯、慢性炎症和菌群失调等候选机制 |
 | WHO Social Determinants of Health | 提示资源、权力、生活环境、工作、社会条件对健康和持续性的基础作用 |
 | Healthy People 2030 SDOH framework | 提示经济稳定、教育、医疗可及、社区环境、社会与社区情境可作为资源基础设施维度 |

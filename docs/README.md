@@ -69,6 +69,7 @@ docs/
 │   ├── 0051-add-forty-seventh-wave-postsecondary-student-continuity-domains.md
 │   ├── 0052-add-forty-eighth-wave-digital-account-continuity-domains.md
 │   ├── 0053-add-forty-ninth-wave-software-device-trust-continuity-domains.md
+│   ├── 0054-add-fiftieth-wave-personal-operations-continuity-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -379,4 +380,12 @@ docs/
 255. Read `../domains/pki-certificate-cryptographic-trust-continuity/README.md` if you are working on PKI, TLS certificates, certificate authorities, key management, revocation, root trust, certificate transparency, or cryptographic trust continuity.
 256. Read `../domains/cloud-service-exit-interoperability-continuity/README.md` if you are working on SaaS/cloud export, data migration, interoperability, vendor lock-in, service exit, or cloud-switching continuity.
 257. Read `../domains/api-platform-dependency-runtime-continuity/README.md` if you are working on third-party APIs, SDKs, rate limits, deprecation, SLA, runtime fallback, platform dependency, or API continuity.
-258. Enter a domain under `../domains/`.
+258. Read `../domains/calendar-scheduling-appointment-continuity/README.md` if you are working on calendars, scheduling, appointments, time zones, reminders, rescheduling, invitations, or calendar continuity.
+259. Read `../domains/notification-alert-routing-attention-continuity/README.md` if you are working on notifications, push alerts, delivery channels, quiet hours, escalation, acknowledgement, notification fatigue, or alert routing continuity.
+260. Read `../domains/reminder-alarm-routine-task-continuity/README.md` if you are working on reminders, alarms, recurring tasks, routines, missed-task recovery, habit systems, or routine task continuity.
+261. Read `../domains/meeting-video-conferencing-remote-collaboration-continuity/README.md` if you are working on video meetings, remote collaboration, WebRTC, captions, recordings, meeting notes, or action-item continuity.
+262. Read `../domains/document-capture-ocr-pdf-record-workflow-continuity/README.md` if you are working on document capture, OCR, scanning, PDF/PDF-A, forms, metadata, submissions, or record workflow continuity.
+263. Read `../domains/search-index-discovery-retrieval-continuity/README.md` if you are working on search, indexing, metadata, sitemap, schema, discovery, retrieval, broken links, or findability continuity.
+264. Read `../domains/personal-automation-integration-workflow-continuity/README.md` if you are working on personal automation, low-code workflows, webhooks, OAuth, scripts, triggers, idempotency, or workflow continuity.
+265. Read `../domains/collaborative-document-permission-version-continuity/README.md` if you are working on shared documents, permissions, version history, comments, ownership transfer, export, or collaborative document continuity.
+266. Enter a domain under `../domains/`.

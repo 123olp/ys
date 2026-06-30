@@ -313,6 +313,14 @@
 - `pki-certificate-cryptographic-trust-continuity/`：PKI、证书与密码信任连续性，整理 TLS 证书、CA、密钥管理、吊销、根信任、证书透明度和算法迁移。
 - `cloud-service-exit-interoperability-continuity/`：云服务退出与互操作连续性，整理 SaaS、云服务、数据导出、迁移、互操作、合同退出和供应商锁定。
 - `api-platform-dependency-runtime-continuity/`：API、平台依赖与运行时连续性，整理第三方 API、SDK、限流、计费、版本废弃、SLA、降级和替代路径。
+- `calendar-scheduling-appointment-continuity/`：日历、排程与预约连续性，整理日历、时区、预约、改期、邀请、提醒和跨平台同步。
+- `notification-alert-routing-attention-continuity/`：通知、警报路由与注意力连续性，整理通知、推送、警报、权限、静音、优先级、确认和渠道路由。
+- `reminder-alarm-routine-task-continuity/`：提醒、闹钟与例行任务连续性，整理闹钟、提醒、重复任务、到期日、确认、错过任务和补救。
+- `meeting-video-conferencing-remote-collaboration-continuity/`：会议、视频会议与远程协作连续性，整理视频会议、语音、屏幕共享、字幕、录制、纪要和行动项。
+- `document-capture-ocr-pdf-record-workflow-continuity/`：文件捕获、OCR、PDF 与记录工作流连续性，整理扫描、OCR、PDF/PDF-A、表单、元数据、提交、归档和记录工作流。
+- `search-index-discovery-retrieval-continuity/`：搜索、索引、发现与检索连续性，整理搜索、索引、元数据、sitemap、schema、目录、断链和来源验证。
+- `personal-automation-integration-workflow-continuity/`：个人自动化、集成与工作流连续性，整理触发器、动作、webhook、OAuth、脚本、日志和人工中止。
+- `collaborative-document-permission-version-continuity/`：协作文档、权限与版本连续性，整理共享文档、权限、所有者、评论、版本历史、导出和归档。
 - `supply-chain-continuity/`：供应链连续性，整理关键物资、服务、物流、替代路径和恢复时间。
 - `synthetic-biology-biosecurity/`：合成生物学与生物安全，整理双重用途、生物安全、生物安保和治理边界。
 - `space-extreme-habitation/`：空间与极端栖居，整理辐射、微重力、隔离、闭环资源和远程医疗风险。

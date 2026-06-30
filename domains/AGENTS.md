@@ -446,6 +446,30 @@ domains/
 ├── api-platform-dependency-runtime-continuity/
 │   ├── AGENTS.md
 │   └── README.md
+├── calendar-scheduling-appointment-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── notification-alert-routing-attention-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── reminder-alarm-routine-task-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── meeting-video-conferencing-remote-collaboration-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── document-capture-ocr-pdf-record-workflow-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── search-index-discovery-retrieval-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── personal-automation-integration-workflow-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── collaborative-document-permission-version-continuity/
+│   ├── AGENTS.md
+│   └── README.md
 ├── cognitive-augmentation/
 │   ├── AGENTS.md
 │   └── README.md
@@ -1020,6 +1044,7 @@ domains/
 - `postsecondary-admissions-transfer-articulation-continuity/`、`student-financial-aid-grant-scholarship-continuity/`、`academic-advising-degree-progress-continuity/`、`campus-basic-needs-student-support-continuity/`、`campus-disability-accommodations-accessibility-continuity/`、`campus-mental-health-crisis-student-support-continuity/`、`campus-safety-title-ix-clery-continuity/` 和 `international-student-sevis-status-continuity/` 负责高等教育入学转学衔接、学生资助奖助学金、学业指导学位进度、校园基本需求、校园残障便利、校园心理危机支持、校园安全 Title IX/Clery 和国际学生 SEVIS 身份这些高等教育学生生命周期连续性条件。
 - `email-account-recovery-continuity/`、`phone-number-sim-portability-account-security-continuity/`、`mfa-passkey-credential-recovery-continuity/`、`password-manager-secret-vault-continuity/`、`cloud-backup-file-sync-data-portability-continuity/`、`messaging-contact-graph-portability-continuity/`、`domain-dns-web-presence-continuity/` 和 `platform-account-suspension-appeals-continuity/` 负责邮箱账号恢复、手机号 SIM 携转安全、MFA/passkey 凭证恢复、密码管理器密钥库、云备份文件同步数据可携带、消息联系人图谱可携带、域名 DNS Web 存在和平台账号停权申诉这些数字账户与通信可达连续性条件。
 - `personal-computing-device-lifecycle-repair-continuity/`、`home-network-router-iot-security-continuity/`、`software-supply-chain-dependency-provenance-continuity/`、`software-update-vulnerability-patch-continuity/`、`open-source-maintainer-sustainability-continuity/`、`pki-certificate-cryptographic-trust-continuity/`、`cloud-service-exit-interoperability-continuity/` 和 `api-platform-dependency-runtime-continuity/` 负责个人计算设备生命周期维修、家庭网络路由器 IoT 安全、软件供应链来源证明、软件更新漏洞补丁、开源维护者可持续、PKI 证书密码信任、云服务退出互操作和 API 平台运行时依赖这些软件、设备与信任连续性条件。
+- `calendar-scheduling-appointment-continuity/`、`notification-alert-routing-attention-continuity/`、`reminder-alarm-routine-task-continuity/`、`meeting-video-conferencing-remote-collaboration-continuity/`、`document-capture-ocr-pdf-record-workflow-continuity/`、`search-index-discovery-retrieval-continuity/`、`personal-automation-integration-workflow-continuity/` 和 `collaborative-document-permission-version-continuity/` 负责日历排程预约、通知警报路由、提醒闹钟例行任务、会议视频远程协作、文件捕获 OCR PDF 记录流、搜索索引发现检索、个人自动化集成工作流和协作文档权限版本这些个人操作与任务协调连续性条件。
 - `access-to-justice-legal-aid/`、`civic-participation-election-access/`、`migration-displacement-humanitarian-continuity/` 和 `digital-inclusion-connectivity/` 负责司法可及、公民参与、迁移流离失所人道连续性和数字连接这些制度参与与公共服务接入条件。
 - `personal-safety-violence-prevention/` 和 `product-safety-recall-systems/` 负责暴力预防、受害者支持、产品缺陷报告、召回和纠正这些公共安全连续性条件。
 - `cellular-reprogramming/` 负责山中因子、部分重编程、化学重编程、AI 因子设计和表观遗传编辑等“细胞状态可重写”谱系，不提供实验协议或人体应用建议。
@@ -1044,6 +1069,7 @@ domains/
 - `postsecondary-admissions-transfer-articulation-continuity/`、`student-financial-aid-grant-scholarship-continuity/`、`academic-advising-degree-progress-continuity/`、`campus-basic-needs-student-support-continuity/`、`campus-disability-accommodations-accessibility-continuity/`、`campus-mental-health-crisis-student-support-continuity/`、`campus-safety-title-ix-clery-continuity/` 和 `international-student-sevis-status-continuity/` 负责高等教育学生生命周期连续性的证据边界，不提供个人申请、转学、资助、选课、住宿、残障便利、心理危机、Title IX、校园安全、SEVIS、移民、税务、医疗、法律或个案建议。
 - `email-account-recovery-continuity/`、`phone-number-sim-portability-account-security-continuity/`、`mfa-passkey-credential-recovery-continuity/`、`password-manager-secret-vault-continuity/`、`cloud-backup-file-sync-data-portability-continuity/`、`messaging-contact-graph-portability-continuity/`、`domain-dns-web-presence-continuity/` 和 `platform-account-suspension-appeals-continuity/` 负责数字账户与通信可达连续性的证据边界，不提供个人账号恢复、绕过验证、短信拦截、MFA 绕过、密码破解、密钥导出、云盘取证、聊天恢复、联系人抓取、DNS 操作、平台封禁规避、申诉文案、法律或安全事件处置建议。
 - `personal-computing-device-lifecycle-repair-continuity/`、`home-network-router-iot-security-continuity/`、`software-supply-chain-dependency-provenance-continuity/`、`software-update-vulnerability-patch-continuity/`、`open-source-maintainer-sustainability-continuity/`、`pki-certificate-cryptographic-trust-continuity/`、`cloud-service-exit-interoperability-continuity/` 和 `api-platform-dependency-runtime-continuity/` 负责软件、设备与信任连续性的证据边界，不提供绕过设备锁、破解加密、网络入侵、IoT 漏洞利用、供应链攻击、恶意包、漏洞利用、证书滥用、云入侵、API 限制规避、计费规避、账号规避或安全事件处置建议。
+- `calendar-scheduling-appointment-continuity/`、`notification-alert-routing-attention-continuity/`、`reminder-alarm-routine-task-continuity/`、`meeting-video-conferencing-remote-collaboration-continuity/`、`document-capture-ocr-pdf-record-workflow-continuity/`、`search-index-discovery-retrieval-continuity/`、`personal-automation-integration-workflow-continuity/` 和 `collaborative-document-permission-version-continuity/` 负责个人操作与任务协调连续性的证据边界，不提供抢号刷号、垃圾推送、监控控制、会议入侵、文件伪造、搜索排名操纵、凭证滥用、平台限制规避、未授权导出或隐私窃取方法。
 - `regenerative-medicine/`、`cancer-control/` 和 `immune-maintenance/` 负责身体基底维护相关的机制、风险和证据边界。
 - `rehabilitation-functioning/`、`assistive-technology-access/`、`skin-barrier-wound-healing/` 和 `sensory-continuity/` 负责功能恢复、能力补偿、外界屏障和感官反馈连续性。
 - `antimicrobial-resilience/` 负责抗微生物耐药、感染控制和现代医学抗感染底座。

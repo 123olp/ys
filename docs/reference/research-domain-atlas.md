@@ -246,6 +246,14 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 证书与密钥信任链必须连续 | `pki-certificate-cryptographic-trust-continuity/` | PKI、TLS 证书、CA、密钥管理、吊销、根信任、证书透明度、算法迁移 | 证书过期、密钥泄露或根信任失效会让 Web、API、更新和身份验证不可达或不可信 |
 | 云服务必须可退出可互操作 | `cloud-service-exit-interoperability-continuity/` | SaaS、云服务、数据导出、迁移、互操作、合同退出、供应商锁定 | 云锁定、停服、涨价或封禁会把资料、身份和工作流变成许可条件 |
 | API 运行时依赖必须有降级路径 | `api-platform-dependency-runtime-continuity/` | 第三方 API、SDK、SLA、限流、计费、版本废弃、降级、替代路径 | API 中断、废弃或政策变化会直接让主体和组织工具链任务失败 |
+| 未来时间承诺必须可执行 | `calendar-scheduling-appointment-continuity/` | 日历、时区、预约、改期、邀请、提醒、跨平台同步 | 日程错配、时区错误、预约丢失或改期失败会让医疗、工作、学习、照护和协作机会断线 |
+| 关键事件必须被正确路由 | `notification-alert-routing-attention-continuity/` | 通知、推送、警报、权限、静音、优先级、确认、渠道路由 | 漏报、误报、通知疲劳和注意力碎片化会同时造成风险响应失败和恢复能力下降 |
+| 重复维护任务必须可触发可补救 | `reminder-alarm-routine-task-continuity/` | 闹钟、提醒、重复任务、到期日、确认、错过任务、补救 | 小任务遗忘、延迟和例程断裂会累积为健康、资源、设备、关系和项目失败 |
+| 远程协作现场必须可达 | `meeting-video-conferencing-remote-collaboration-continuity/` | 视频会议、语音、屏幕共享、字幕、录制、纪要、行动项 | 距离、带宽、设备、语言、无障碍或记录断点会让协作、照护和决策中断 |
+| 纸面事实必须进入可保存记录流 | `document-capture-ocr-pdf-record-workflow-continuity/` | 扫描、OCR、PDF/PDF-A、表单、元数据、提交、归档 | 文件不可读、不可找、不可提交或长期格式失效会让事实证明和权利执行断线 |
+| 资料必须能被发现和检索 | `search-index-discovery-retrieval-continuity/` | 搜索、索引、元数据、sitemap、schema、目录、断链、来源验证 | 资料存在但找不到、搜不准、链接坏掉或来源不明会让外部记忆和组织知识失效 |
+| 重复流程必须可自动化且可控 | `personal-automation-integration-workflow-continuity/` | 触发器、动作、webhook、OAuth、脚本、日志、人工中止 | 自动化静默失败、权限过宽、平台锁定或重复提交会把降本工具变成隐形风险 |
+| 协作文档必须保留权限与版本 | `collaborative-document-permission-version-continuity/` | 共享文档、权限、所有者、评论、版本历史、导出、归档 | 权限断裂、所有者离开、链接失效或版本丢失会切断团队记忆、证据和行动项 |
 | 栖居空间可保护生命 | `building-fire-life-safety-codes/` | 建筑规范、消防规范、疏散、烟雾报警、无障碍、结构韧性 | 居住、照护、学习、工作和公共空间成为火灾、烟雾、结构和疏散风险源 |
 | 关键物质系统可制造修复 | `manufacturing-repair-capacity/` | 制造、维修、维护、备件、质量、本地生产、关键设备恢复 | 设备损坏、备件短缺、质量缺陷和生产能力不足导致服务与工具系统失效 |
 | 公共预算可转化为服务 | `public-procurement-contracting-capacity/` | 公共采购、合同、供应商管理、应急采购、透明度、交付验收 | 有预算和政策但采购失败、合同失效、腐败、延误或劣质交付 |
@@ -585,6 +593,14 @@ risk-engineering
   -> pki-certificate-cryptographic-trust-continuity
   -> cloud-service-exit-interoperability-continuity
   -> api-platform-dependency-runtime-continuity
+  -> calendar-scheduling-appointment-continuity
+  -> notification-alert-routing-attention-continuity
+  -> reminder-alarm-routine-task-continuity
+  -> meeting-video-conferencing-remote-collaboration-continuity
+  -> document-capture-ocr-pdf-record-workflow-continuity
+  -> search-index-discovery-retrieval-continuity
+  -> personal-automation-integration-workflow-continuity
+  -> collaborative-document-permission-version-continuity
   -> community-resource-navigation
   -> social-determinants-community-vulnerability
   -> public-service-design-accessibility

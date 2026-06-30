@@ -918,6 +918,24 @@ Human Infra 不能被设计成更精密的压榨系统。
 - 不收集、复制、处理或要求序列号、设备指纹、Wi-Fi 密码、MAC/IP、路由日志、私有 SBOM、token、构建日志、漏洞扫描结果、私钥、证书请求、云账号、API key、账单、合同、私有数据或安全事件细节。
 - 不替代设备厂商、维修商、ISP、路由器/IoT 厂商、云服务商、API 平台、CA、开源项目、组织 IT、安全团队、法律、采购、合规、监管机构或应急响应渠道。
 
+## 个人操作与任务协调连续性边界
+
+`calendar-scheduling-appointment-continuity`、`notification-alert-routing-attention-continuity`、`reminder-alarm-routine-task-continuity`、`meeting-video-conferencing-remote-collaboration-continuity`、`document-capture-ocr-pdf-record-workflow-continuity`、`search-index-discovery-retrieval-continuity`、`personal-automation-integration-workflow-continuity` 和 `collaborative-document-permission-version-continuity` 关注日历、通知、提醒、远程会议、文件捕获、检索、自动化和协作文档如何把主体的时间、资料、权限、行动项和重复任务转化为连续行动，不是抢号、推送骚扰、监控、文件伪造、搜索操纵、平台规避或隐私窃取入口。
+
+可以做：
+
+- 整理 IETF、IANA、Unicode、W3C、NARA、FADGI、OpenAPI、OAuth、ODF、WebDAV 和平台公开资料中的机制、对象、变量和边界。
+- 比较日程、通知、提醒、会议、文件流、搜索流、自动化流和协作文档如何影响主体有效时间、注意力预算、协作恢复和任务完成。
+- 记录个人操作系统资料中的隐私、权限、同意、可访问性、误报漏报、版本、记录和禁止用途边界。
+
+不能做：
+
+- 不提供抢号、刷号、批量占位、垃圾邀请、垃圾推送、骚扰通知、绕过通知权限、家庭成员监控、强迫执行、会议入侵、偷拍视频、窃听、身份冒充、文件伪造、记录篡改、审核规避、排名操纵、垃圾 SEO、爬虫规避、凭证滥用、平台限制规避、刷量、未授权导出、DRM 破解、恢复他人文件或隐藏访问痕迹方法。
+- 不判断某个预约、通知、提醒、会议、文档、搜索系统、自动化平台、共享文件或协作权限应如何具体操作。
+- 不生成抢号脚本、推送策略、监控流程、会议攻击步骤、伪造文件、搜索作弊方案、自动化滥用脚本、权限绕过流程、申诉材料、法律文件或个案策略。
+- 不收集、复制、处理或要求个人日历、医疗/法律/学校预约、通知内容、设备 token、会议链接、会议录制、聊天记录、身份证件、病历、税务文件、合同、搜索历史、浏览历史、API key、OAuth token、webhook、共享链接、组织文档或敏感自动化日志。
+- 不替代医疗、法律、学校、雇主、公共机构、会议平台、文档平台、搜索平台、自动化平台、组织 IT、安全团队、律师、监管机构或官方服务渠道。
+
 ## 数据与证据边界
 
 - 原始数据、清洗数据和人工判断必须分层保存。
