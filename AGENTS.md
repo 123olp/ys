@@ -66,6 +66,10 @@ human_infra/
     ├── immune-maintenance/# 免疫系统维护
     ├── information-integrity-trust/ # 信息完整性与信任
     ├── legal-identity-civil-registration/ # 法律身份与民事登记
+    ├── access-to-justice-legal-aid/ # 司法可及与法律援助
+    ├── civic-participation-election-access/ # 公民参与与选举接入
+    ├── migration-displacement-humanitarian-continuity/ # 迁移、流离失所与人道连续性
+    ├── digital-inclusion-connectivity/ # 数字包容与连接
     ├── social-protection-benefits-delivery/ # 社会保护与福利递送
     ├── insurance-risk-transfer/ # 保险与风险转移
     ├── childcare-family-continuity/ # 托育与家庭连续性
@@ -94,6 +98,8 @@ human_infra/
     ├── resource-social-infra/ # 资源与社会基础设施
     ├── risk-engineering/  # 风险工程
     ├── emergency-preparedness-response/ # 应急准备与响应
+    ├── personal-safety-violence-prevention/ # 人身安全与暴力预防
+    ├── product-safety-recall-systems/ # 产品安全与召回系统
     ├── sensory-continuity/ # 感官连续性
     ├── sleep-circadian-recovery/ # 睡眠、节律与恢复
     ├── skin-barrier-wound-healing/ # 皮肤屏障与伤口愈合
@@ -157,10 +163,16 @@ human_infra/
 - `domains/housing-built-environment-stability/` 负责住房稳定、住房质量、室内环境、无障碍、社区资源和建成环境健康。
 - `domains/transportation-access-mobility/` 负责公共交通、无障碍交通、出行时间、医疗交通、交通成本和外部资源可达性。
 - `domains/legal-identity-civil-registration/` 负责法律身份、出生登记、民事登记、生命统计、身份文件、身份覆盖和服务资格。
+- `domains/access-to-justice-legal-aid/` 负责民事法律需求、法律援助、司法可及、程序负担和权利救济。
+- `domains/civic-participation-election-access/` 负责选民登记、投票可及、无障碍投票、选举标准、公共参与和制度反馈。
+- `domains/migration-displacement-humanitarian-continuity/` 负责迁移、难民、流离失所、身份连续、健康/教育/庇护/保护服务和人道协调。
+- `domains/digital-inclusion-connectivity/` 负责互联网接入、设备可及、可负担性、数字技能、无障碍、人工帮助和数字公共服务接入。
 - `domains/social-protection-benefits-delivery/` 负责公共福利、社会保护、资格、申请、续期、支付、申诉和行政负担。
 - `domains/insurance-risk-transfer/` 负责健康、失业、工伤、残障、灾害、存款、养老金等风险转移和风险池。
 - `domains/childcare-family-continuity/` 负责托育可及、托育费用、照护质量、早期儿童发展、父母工作连续性和家庭压力。
 - `domains/emergency-preparedness-response/` 负责灾害准备、预警、应急通信、急救医疗、安置、公共卫生应急和灾后恢复。
+- `domains/personal-safety-violence-prevention/` 负责人身安全、暴力预防、求助入口、受害者服务、法律保护和创伤支持。
+- `domains/product-safety-recall-systems/` 负责消费品、食品、药品、医疗器械、车辆缺陷报告、召回通知、纠正措施和风险沟通。
 - `domains/cellular-reprogramming/` 负责山中因子、部分重编程、化学重编程、AI 因子设计和表观遗传编辑等细胞状态可重写谱系，不提供实验协议或人体应用建议。
 - `domains/regenerative-medicine/` 负责干细胞、组织工程、器官再生、类器官、移植和生物制造的高层研究框架。
 - `domains/rehabilitation-functioning/` 负责康复、功能恢复、失能预防、活动能力、自理、沟通和社会参与。
@@ -198,7 +210,7 @@ human_infra/
 
 - Human Infra 的上位对象是“人类任务执行系统”，不是单一长寿产品。
 - Longevity Evidence 承接原 Biocat，但不再占据根目录概念中心。
-- “永生”的不同路径必须按机制拆分：长寿证据、营养代谢、基因组稳定性、端粒维护、蛋白稳态、自噬、线粒体、细胞衰老、细胞外基质与糖化、微生物生态、干细胞储备、肝肾清除、消化屏障与吸收、呼吸氧合、血液氧运与止血、内分泌激素调节、淋巴与脑淋巴清除、体液电解质酸碱稳态、热稳态、身体活动、心血管韧性、肌骨完整性、皮肤屏障与伤口愈合、泌尿生殖连续性、生殖与生育连续性、注意力与执行控制、学习与技能获得、时间分配与有效时间、财务韧性、职业与工作设计、信息完整性与信任、食物安全、水卫生连续性、能源韧性、医疗服务连续性、照护与长期照护、住房与建成环境、交通接入、法律身份与民事登记、社会保护与福利递送、保险与风险转移、托育与家庭连续性、应急准备与响应、细胞重编程、再生医学、康复功能、癌症控制、免疫维护、抗微生物韧性、神经连续性、感官连续性、未来等待、生物停滞、去具身中枢、记忆编辑、认知增强、AI 代理安全、数字身份安全、心理稳定、睡眠恢复、辅助技术、社会连接、物质暴露控制、资源环境、供应链连续性、合成生物学与生物安全、空间极端栖居、风险工程、健康素养导航、治理权利、口腔健康、痛苦控制和测量反馈不能混成一个概念桶。
+- “永生”的不同路径必须按机制拆分：长寿证据、营养代谢、基因组稳定性、端粒维护、蛋白稳态、自噬、线粒体、细胞衰老、细胞外基质与糖化、微生物生态、干细胞储备、肝肾清除、消化屏障与吸收、呼吸氧合、血液氧运与止血、内分泌激素调节、淋巴与脑淋巴清除、体液电解质酸碱稳态、热稳态、身体活动、心血管韧性、肌骨完整性、皮肤屏障与伤口愈合、泌尿生殖连续性、生殖与生育连续性、注意力与执行控制、学习与技能获得、时间分配与有效时间、财务韧性、职业与工作设计、信息完整性与信任、食物安全、水卫生连续性、能源韧性、医疗服务连续性、照护与长期照护、住房与建成环境、交通接入、法律身份与民事登记、司法可及与法律援助、公民参与与选举接入、迁移流离失所与人道连续性、数字包容与连接、社会保护与福利递送、保险与风险转移、托育与家庭连续性、应急准备与响应、人身安全与暴力预防、产品安全与召回系统、细胞重编程、再生医学、康复功能、癌症控制、免疫维护、抗微生物韧性、神经连续性、感官连续性、未来等待、生物停滞、去具身中枢、记忆编辑、认知增强、AI 代理安全、数字身份安全、心理稳定、睡眠恢复、辅助技术、社会连接、物质暴露控制、资源环境、供应链连续性、合成生物学与生物安全、空间极端栖居、风险工程、健康素养导航、治理权利、口腔健康、痛苦控制和测量反馈不能混成一个概念桶。
 - 所有健康、神经、生命支持相关结论必须保留来源、适用对象、不确定性和伦理边界。
 - 新增研究域必须能回到 `docs/reference/research-domain-atlas.md` 的先验条件和域判定契约。
 - 自研代码只做连接、清洗、归一化、证据编排和产品表达；优先复用官方 API、公开数据库和成熟工具。
@@ -232,3 +244,4 @@ human_infra/
 - 2026-06-30：新增第八波 6 个主体代理与任务资源域骨架，覆盖注意力与执行控制、学习与技能获得、时间分配与有效时间、财务韧性、职业与工作设计、信息完整性与信任。
 - 2026-06-30：新增第九波 6 个服务接入与生活连续性域骨架，覆盖医疗服务连续性、照护与长期照护、住房与建成环境、交通接入、法律身份与民事登记、应急准备与响应。
 - 2026-06-30：新增第十波 6 个基础生计与风险分摊域骨架，覆盖食物安全与营养可及、水卫生连续性、能源可及与韧性、社会保护与福利递送、保险与风险转移、托育与家庭连续性。
+- 2026-06-30：新增第十一波 6 个制度参与、人道连续性与公共安全域骨架，覆盖司法可及与法律援助、公民参与与选举接入、迁移流离失所与人道连续性、数字包容与连接、人身安全与暴力预防、产品安全与召回系统。

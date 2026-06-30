@@ -85,6 +85,12 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `social-protection-benefits-delivery/` | 公共福利、资格、申请、续期、支付和申诉决定风险冲击能否被制度性缓冲 |
 | `insurance-risk-transfer/` | 覆盖、保费、自付、理赔、拒赔和风险池决定高成本风险是否由个体独自承担 |
 | `childcare-family-continuity/` | 托育可及、费用、质量、儿童发展和父母工作连续性共同影响两代主体的有效时间和未来选择权 |
+| `access-to-justice-legal-aid/` | 司法可及、法律援助、程序负担、代理缺口和权利救济决定名义权利能否转化为真实保护和资源恢复 |
+| `civic-participation-election-access/` | 登记、投票、无障碍参与、选举标准和制度反馈决定主体能否持续影响公共规则 |
+| `migration-displacement-humanitarian-continuity/` | 迁移、难民和流离失所状态下的身份、医疗、教育、庇护和保护连续性决定主体是否被跨制度接住 |
+| `digital-inclusion-connectivity/` | 连接、设备、可负担性、数字技能和无障碍决定数字化公共服务是否成为入口还是排除机制 |
+| `personal-safety-violence-prevention/` | 暴力预防、求助入口、受害者服务、法律保护和创伤支持决定主体能否免于伤害、胁迫和长期控制 |
+| `product-safety-recall-systems/` | 缺陷报告、不良事件、召回通知、纠正措施和替代路径决定外部产品系统能否避免反向伤害主体 |
 
 ## 来源信号
 
@@ -148,6 +154,12 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | ILO Social Protection / World Bank Social Protection / USA.gov Benefit Finder | 提示社会保护、公共福利、资格、申请、续期、支付、申诉和行政负担是风险冲击缓冲层 |
 | NAIC consumer resources / USA.gov health insurance / FDIC deposit insurance | 提示保险覆盖、理赔、风险池和保障缺口影响疾病、失业、灾害、存款和养老金冲击后的恢复 |
 | World Bank Childcare / ACF Office of Child Care / ChildCare.gov | 提示托育可及、费用、质量、早期儿童发展和父母工作连续性是家庭与代际主体持续性条件 |
+| LSC Justice Gap / USA.gov Legal Aid / World Justice Project | 提示民事法律需求、法律援助、司法可及、程序负担和权利救济是制度恢复路径 |
+| USA.gov Voter Registration / EAC voters / NIST voting / International IDEA | 提示登记、投票可及、选举系统标准、无障碍和选举信任是公共决策参与基础设施 |
+| UNHCR / IOM / IDMC / WHO Refugee and Migrant Health | 提示迁移、难民、国内流离失所、身份连续、健康、教育、庇护和保护是跨制度主体连续性条件 |
+| NTIA Digital Inclusion / ITU ICT Statistics / FCC Broadband / UNESCO MIL | 提示互联网接入、设备、可负担性、数字技能和数字公共服务可达性是现代资源入口 |
+| CDC Violence Prevention / OVC / OVW / VictimConnect | 提示暴力预防、受害者服务、求助入口、法律保护和创伤支持是人身安全与恢复底座 |
+| CPSC recalls / FDA recalls / NHTSA recalls / openFDA enforcement | 提示产品缺陷报告、召回通知、纠正措施和风险沟通是外部工具安全层 |
 
 Source links:
 
@@ -282,6 +294,29 @@ Source links:
 - https://www.worldbank.org/en/topic/gender/brief/childcare
 - https://www.acf.hhs.gov/occ
 - https://childcare.gov/
+- https://justicegap.lsc.gov/
+- https://www.usa.gov/legal-aid
+- https://worldjusticeproject.org/rule-of-law-index/
+- https://www.usa.gov/register-to-vote
+- https://www.eac.gov/voters
+- https://www.nist.gov/itl/voting
+- https://www.idea.int/
+- https://www.unhcr.org/
+- https://www.iom.int/
+- https://www.internal-displacement.org/
+- https://www.who.int/health-topics/refugee-and-migrant-health
+- https://www.ntia.gov/category/digital-inclusion
+- https://www.itu.int/en/ITU-D/Statistics/
+- https://www.fcc.gov/broadband
+- https://www.unesco.org/en/media-information-literacy
+- https://www.cdc.gov/violence-prevention/
+- https://ovc.ojp.gov/
+- https://www.justice.gov/ovw
+- https://victimconnect.org/
+- https://www.cpsc.gov/Recalls
+- https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts
+- https://www.nhtsa.gov/recalls
+- https://open.fda.gov/apis/enforcement/
 
 ## 使用规则
 

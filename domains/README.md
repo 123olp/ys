@@ -43,10 +43,16 @@
 - `housing-built-environment-stability/`：住房与建成环境稳定，整理住房稳定、住房质量、室内环境、无障碍、社区资源和建成环境。
 - `transportation-access-mobility/`：交通接入与日常移动，整理公共交通、无障碍交通、出行时间、医疗交通、交通成本和外部可达性。
 - `legal-identity-civil-registration/`：法律身份与民事登记，整理法律身份、出生登记、民事登记、生命统计、身份文件和服务资格。
+- `access-to-justice-legal-aid/`：司法可及与法律援助，整理民事法律需求、法律援助、程序负担、代理缺口和权利救济。
+- `civic-participation-election-access/`：公民参与与选举接入，整理选民登记、投票可及、无障碍投票、选举标准、公共参与和制度反馈。
+- `migration-displacement-humanitarian-continuity/`：迁移、流离失所与人道连续性，整理身份、医疗、教育、庇护、保护、安置和人道服务连续性。
+- `digital-inclusion-connectivity/`：数字包容与连接，整理互联网接入、设备、数字技能、可负担性、无障碍和数字公共服务入口。
 - `social-protection-benefits-delivery/`：社会保护与福利递送，整理公共福利、资格、申请、续期、支付、申诉和行政负担。
 - `insurance-risk-transfer/`：保险与风险转移，整理健康、失业、工伤、残障、灾害、存款、养老金等风险池和保障缺口。
 - `childcare-family-continuity/`：托育与家庭连续性，整理托育可及、费用、质量、早期儿童发展、父母工作连续性和家庭压力。
 - `emergency-preparedness-response/`：应急准备与响应，整理灾害准备、预警、应急通信、急救医疗、安置和恢复。
+- `personal-safety-violence-prevention/`：人身安全与暴力预防，整理暴力预防、求助入口、受害者服务、法律保护和创伤支持。
+- `product-safety-recall-systems/`：产品安全与召回系统，整理缺陷报告、不良事件、召回通知、纠正措施和风险沟通。
 - `rehabilitation-functioning/`：康复与功能恢复，整理失能预防、活动能力、自理、沟通和社会参与。
 - `cancer-control/`：癌症控制，整理肿瘤预防、早筛、治疗、复发和长期风险治理。
 - `immune-maintenance/`：免疫系统维护，整理免疫衰老、感染防御、慢性炎症、自身免疫和免疫监视。

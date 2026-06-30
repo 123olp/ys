@@ -96,10 +96,16 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 居住环境可稳定 | `housing-built-environment-stability/` | 住房稳定、住房质量、室内环境、无障碍、社区资源、建成环境 | 居住空间持续制造暴露、跌倒、孤立、服务断点或照护不可行 |
 | 日常移动和服务接入可达 | `transportation-access-mobility/` | 公共交通、无障碍交通、出行时间、医疗交通、交通成本、交通安全 | 有资源但到不了，服务延误、缺席、孤立或撤离不可达 |
 | 法律身份可被承认 | `legal-identity-civil-registration/` | 法律身份、出生登记、民事登记、生命统计、身份文件、服务资格 | 无证、登记缺失、身份错误或制度不承认导致权利与服务断线 |
+| 权利救济可达 | `access-to-justice-legal-aid/` | 民事法律需求、法律援助、司法可及、程序负担、代理缺口、申诉执行 | 名义权利无法转化为住房、收入、安全、身份和服务恢复 |
+| 公共决策参与可达 | `civic-participation-election-access/` | 选民登记、投票可及、无障碍投票、选举标准、公共参与、制度反馈 | 被排除在公共规则生成之外，资源、权利和风险分配缺少主体反馈 |
+| 迁移和流离失所状态可连续 | `migration-displacement-humanitarian-continuity/` | 迁移、难民、流离失所、身份连续、医疗、教育、庇护、保护、人道协调 | 跨地点和跨制度后身份、服务、庇护、教育和保护断裂 |
+| 数字连接可达 | `digital-inclusion-connectivity/` | 互联网接入、设备、数字技能、可负担性、无障碍、人工帮助、数字公共服务 | 数字排除导致医疗、福利、教育、工作、身份和应急信息不可达 |
 | 社会保护可递送 | `social-protection-benefits-delivery/` | 公共福利、社会保护、资格、申请、续期、支付、申诉、行政负担 | 名义权利无法转化为食物、住房、医疗、能源或收入支持 |
 | 高成本风险可分摊 | `insurance-risk-transfer/` | 覆盖率、保费、自付、理赔、拒赔、风险池、保障缺口 | 疾病、失业、工伤、残障、灾害或养老金风险由个体独自承担 |
 | 托育和家庭运行可持续 | `childcare-family-continuity/` | 托育可及、费用、质量、早期发展、父母工作连续性、家庭压力 | 儿童发展受损、照护者工作中断、时间贫困和家庭压力升级 |
 | 应急响应可接住主体 | `emergency-preparedness-response/` | 灾害准备、预警、应急通信、急救医疗、安置、公共卫生应急、恢复 | 低频高冲击事件一次性清零长期积累，通信、医疗、撤离或恢复失败 |
+| 人身安全可保护 | `personal-safety-violence-prevention/` | 暴力暴露、求助入口、受害者服务、法律保护、创伤支持、住房安全 | 暴力、胁迫、跟踪、犯罪伤害和创伤直接截断生命、行动能力和未来选择权 |
+| 缺陷产品可发现和召回 | `product-safety-recall-systems/` | 缺陷报告、不良事件、投诉、召回覆盖、通知到达、纠正、替代路径 | 缺陷产品持续使用，导致伤害、医疗中断、交通风险和家庭安全风险 |
 | 关键供应链可连续 | `supply-chain-continuity/` | 药品、能源、食物、设备、通信、物流 | 断供、单点故障、替代失败 |
 | 生物技术双重用途可治理 | `synthetic-biology-biosecurity/` | 生物安全、生物安保、双重用途、治理 | 病原风险、误用、实验外泄 |
 | 极端环境可栖居 | `space-extreme-habitation/` | 辐射、微重力、隔离、闭环生命支持 | 环境失效、资源闭环失败、远程医疗失败 |
@@ -197,10 +203,16 @@ risk-engineering
   -> housing-built-environment-stability
   -> transportation-access-mobility
   -> legal-identity-civil-registration
+  -> access-to-justice-legal-aid
+  -> civic-participation-election-access
+  -> migration-displacement-humanitarian-continuity
+  -> digital-inclusion-connectivity
   -> social-protection-benefits-delivery
   -> insurance-risk-transfer
   -> childcare-family-continuity
   -> emergency-preparedness-response
+  -> personal-safety-violence-prevention
+  -> product-safety-recall-systems
   -> financial-resilience-access
   -> occupational-work-design
   -> information-integrity-trust

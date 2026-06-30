@@ -99,6 +99,18 @@ domains/
 ├── legal-identity-civil-registration/
 │   ├── AGENTS.md
 │   └── README.md
+├── access-to-justice-legal-aid/
+│   ├── AGENTS.md
+│   └── README.md
+├── civic-participation-election-access/
+│   ├── AGENTS.md
+│   └── README.md
+├── migration-displacement-humanitarian-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── digital-inclusion-connectivity/
+│   ├── AGENTS.md
+│   └── README.md
 ├── social-protection-benefits-delivery/
 │   ├── AGENTS.md
 │   └── README.md
@@ -109,6 +121,12 @@ domains/
 │   ├── AGENTS.md
 │   └── README.md
 ├── emergency-preparedness-response/
+│   ├── AGENTS.md
+│   └── README.md
+├── personal-safety-violence-prevention/
+│   ├── AGENTS.md
+│   └── README.md
+├── product-safety-recall-systems/
 │   ├── AGENTS.md
 │   └── README.md
 ├── microbiome-ecology/
@@ -245,6 +263,8 @@ domains/
 - `financial-resilience-access/`、`occupational-work-design/` 和 `information-integrity-trust/` 负责财务韧性、工作环境和信息可信度这些资源入口与认知环境条件。
 - `food-security-nutrition-access/`、`water-sanitation-hygiene-continuity/`、`energy-access-resilience/`、`social-protection-benefits-delivery/`、`insurance-risk-transfer/` 和 `childcare-family-continuity/` 负责食物、水卫生、能源、公共福利、保险风险池和托育家庭连续性这些基础生计与风险分摊条件。
 - `healthcare-access-continuity/`、`caregiving-long-term-care/`、`housing-built-environment-stability/`、`transportation-access-mobility/`、`legal-identity-civil-registration/` 和 `emergency-preparedness-response/` 负责医疗接入、长期照护、居住空间、交通可达、法律身份和应急响应这些服务接入与生活连续性条件。
+- `access-to-justice-legal-aid/`、`civic-participation-election-access/`、`migration-displacement-humanitarian-continuity/` 和 `digital-inclusion-connectivity/` 负责司法可及、公民参与、迁移流离失所人道连续性和数字连接这些制度参与与公共服务接入条件。
+- `personal-safety-violence-prevention/` 和 `product-safety-recall-systems/` 负责暴力预防、受害者支持、产品缺陷报告、召回和纠正这些公共安全连续性条件。
 - `cellular-reprogramming/` 负责山中因子、部分重编程、化学重编程、AI 因子设计和表观遗传编辑等“细胞状态可重写”谱系，不提供实验协议或人体应用建议。
 - `regenerative-medicine/`、`cancer-control/` 和 `immune-maintenance/` 负责身体基底维护相关的机制、风险和证据边界。
 - `rehabilitation-functioning/`、`assistive-technology-access/`、`skin-barrier-wound-healing/` 和 `sensory-continuity/` 负责功能恢复、能力补偿、外界屏障和感官反馈连续性。

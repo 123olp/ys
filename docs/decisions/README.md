@@ -27,3 +27,4 @@ Current decisions:
 - `0012-add-eighth-wave-agency-task-resource-domains.md`
 - `0013-add-ninth-wave-service-continuity-domains.md`
 - `0014-add-tenth-wave-basic-livelihood-risk-transfer-domains.md`
+- `0015-add-eleventh-wave-civic-safety-continuity-domains.md`
