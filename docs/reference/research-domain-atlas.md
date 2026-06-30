@@ -332,6 +332,14 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 免疫记录必须可证明 | `immunization-record-proof-continuity/` | Immunization record、IIS、vaccine card、school/work/travel proof | 接种事件若不能被证明，会影响入学、工作、旅行、医疗和公共卫生准入 |
 | 捐赠意愿必须可识别 | `organ-donor-registry-anatomical-gift-continuity/` | Organ donor registry、anatomical gift、state registry、driver-license marker | 死亡边界后的捐赠意愿若不可见，会中断主体意愿执行和他人生命资源转移 |
 | 功能需求必须被应急系统看见 | `access-functional-needs-emergency-registry-continuity/` | Access and functional needs、medical needs registry、power-dependent equipment、transport/shelter access | 灾害平均人模型会排除电力、设备、语言、交通、照护和无障碍依赖者 |
+| 死亡事实必须可证明 | `death-certificate-registration-cause-of-death-record-continuity/` | Death certificate、death registration、cause of death、certified copy、vital statistics | 死亡记录缺失或错误会阻塞遗属福利、理赔、遗产、账户关闭和公共卫生学习 |
+| 遗体处置必须可授权可负担 | `funeral-cremation-burial-disposition-continuity/` | Funeral service、cremation、burial、body disposition、price disclosure | 死亡后高压决策若缺少价格透明和授权边界，会吞噬遗属时间、资金和尊严 |
+| 遗体位置和纪念记录必须可查 | `cemetery-memorial-remains-location-continuity/` | Cemetery plot、grave marker、columbarium、ashes/remains location、memorial record | 遗体或骨灰位置失联会破坏纪念、迁移、家庭历史和长期文化连续性 |
+| 幸存者悲伤恢复必须被缓冲 | `bereavement-leave-grief-support-continuity/` | Bereavement leave、grief support、EAP、peer support、school/work adjustment | 死亡事件会外溢消耗幸存者时间、注意力、收入和心理稳定 |
+| 遗属福利必须能启动 | `survivor-benefits-death-notification-continuity/` | Survivor benefits、death notification、SSA/VA/employer benefits、pension notification | 死亡通知和遗属福利断裂会让家庭在最脆弱窗口失去收入与服务资格 |
+| 寿险风险转移必须能兑现 | `life-insurance-beneficiary-claim-continuity/` | Life insurance policy、beneficiary designation、death claim、policy locator | 保单或受益人失联会让风险转移工具无法转化为幸存者资源 |
+| 遗产资产负债必须可盘点 | `estate-inventory-asset-liability-handoff-continuity/` | Estate inventory、asset list、liability list、executor、creditor notice | 资产债务和文件不可见会造成资源流失、催收误伤、家庭冲突和任务长期滞留 |
+| 死亡后账户服务必须可关闭 | `post-death-account-closure-service-cancellation-continuity/` | Account closure、service cancellation、automatic payment stop、deceased account handling | 账号、订阅和自动扣款继续运行会长期消耗遗属资源并扩大身份盗用风险 |
 | 栖居空间可保护生命 | `building-fire-life-safety-codes/` | 建筑规范、消防规范、疏散、烟雾报警、无障碍、结构韧性 | 居住、照护、学习、工作和公共空间成为火灾、烟雾、结构和疏散风险源 |
 | 关键物质系统可制造修复 | `manufacturing-repair-capacity/` | 制造、维修、维护、备件、质量、本地生产、关键设备恢复 | 设备损坏、备件短缺、质量缺陷和生产能力不足导致服务与工具系统失效 |
 | 公共预算可转化为服务 | `public-procurement-contracting-capacity/` | 公共采购、合同、供应商管理、应急采购、透明度、交付验收 | 有预算和政策但采购失败、合同失效、腐败、延误或劣质交付 |
@@ -751,6 +759,14 @@ risk-engineering
   -> immunization-record-proof-continuity
   -> organ-donor-registry-anatomical-gift-continuity
   -> access-functional-needs-emergency-registry-continuity
+  -> death-certificate-registration-cause-of-death-record-continuity
+  -> funeral-cremation-burial-disposition-continuity
+  -> cemetery-memorial-remains-location-continuity
+  -> bereavement-leave-grief-support-continuity
+  -> survivor-benefits-death-notification-continuity
+  -> life-insurance-beneficiary-claim-continuity
+  -> estate-inventory-asset-liability-handoff-continuity
+  -> post-death-account-closure-service-cancellation-continuity
   -> community-resource-navigation
   -> social-determinants-community-vulnerability
   -> public-service-design-accessibility

@@ -393,6 +393,14 @@
 - `immunization-record-proof-continuity/`：免疫记录与证明连续性，整理 immunization record、IIS、疫苗卡、学校/工作/旅行证明和记录可携带。
 - `organ-donor-registry-anatomical-gift-continuity/`：器官捐赠登记与遗体捐赠连续性，整理 organ donor registry、anatomical gift、州登记、驾驶证标记和家庭沟通。
 - `access-functional-needs-emergency-registry-continuity/`：功能需求与急救登记连续性，整理 access and functional needs、special needs registry、医疗需求登记、电力依赖和灾害无障碍。
+- `death-certificate-registration-cause-of-death-record-continuity/`：死亡证明、登记与死因记录连续性，整理 death certificate、death registration、cause of death、certified copy 和生命统计。
+- `funeral-cremation-burial-disposition-continuity/`：葬礼、火化、土葬与遗体处置连续性，整理 funeral service、cremation、burial、body disposition、价格披露和许可。
+- `cemetery-memorial-remains-location-continuity/`：墓地、纪念与遗体位置连续性，整理 cemetery plot、grave marker、columbarium、ashes/remains location 和纪念记录。
+- `bereavement-leave-grief-support-continuity/`：丧亲假与悲伤支持连续性，整理 bereavement leave、grief support、EAP、同伴支持和工作/学校调整。
+- `survivor-benefits-death-notification-continuity/`：遗属福利与死亡通知连续性，整理 survivor benefits、death notification、SSA/VA/雇主福利和养老金通知。
+- `life-insurance-beneficiary-claim-continuity/`：寿险受益人与理赔连续性，整理 life insurance policy、beneficiary designation、death claim、policy locator 和未领取权益。
+- `estate-inventory-asset-liability-handoff-continuity/`：遗产清单、资产负债与交接连续性，整理 estate inventory、asset list、liability list、executor 和债权通知。
+- `post-death-account-closure-service-cancellation-continuity/`：死亡后账户关闭与服务取消连续性，整理 account closure、service cancellation、automatic payment stop、deceased account handling 和身份盗用防护。
 - `supply-chain-continuity/`：供应链连续性，整理关键物资、服务、物流、替代路径和恢复时间。
 - `synthetic-biology-biosecurity/`：合成生物学与生物安全，整理双重用途、生物安全、生物安保和治理边界。
 - `space-extreme-habitation/`：空间与极端栖居，整理辐射、微重力、隔离、闭环资源和远程医疗风险。

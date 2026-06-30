@@ -72,6 +72,7 @@ docs/
 │   ├── 0061-add-fifty-seventh-wave-medical-payment-billing-cost-protection-domains.md
 │   ├── 0062-add-fifty-eighth-wave-patient-rights-records-communication-domains.md
 │   ├── 0063-add-fifty-ninth-wave-emergency-health-handoff-domains.md
+│   ├── 0064-add-sixtieth-wave-post-death-survivor-continuity-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -193,6 +194,7 @@ docs/
 - `domains/health-insurance-enrollment-renewal-continuity/`、`domains/insurance-eligibility-benefits-verification-continuity/`、`domains/medical-service-prior-authorization-utilization-management-continuity/`、`domains/claims-adjudication-eob-denial-continuity/`、`domains/patient-billing-payment-plan-continuity/`、`domains/price-transparency-good-faith-estimate-continuity/`、`domains/surprise-billing-balance-bill-protection-continuity/` 和 `domains/charity-care-financial-assistance-medical-debt-continuity/`：第五十七波正式研究域，分别承载健康保险参保续保、权益核验、医疗服务授权、理赔/EOB/拒付、患者账单/付款计划、价格透明/GFE、意外账单保护和 charity care/医疗债务连续性。
 - `domains/patient-portal-account-message-continuity/`、`domains/medical-record-access-amendment-release-continuity/`、`domains/clinical-results-notification-followup-continuity/`、`domains/informed-consent-refusal-shared-decision-continuity/`、`domains/healthcare-language-interpreter-effective-communication-continuity/`、`domains/healthcare-disability-accommodation-accessibility-continuity/`、`domains/patient-grievance-complaint-ombuds-continuity/` 和 `domains/healthcare-civil-rights-nondiscrimination-continuity/`：第五十八波正式研究域，分别承载患者门户/医疗消息、病历访问修正释放、临床结果通知随访、知情同意/拒绝/共同决策、医疗语言服务、医疗残障便利、患者投诉/ombuds 和医疗民权反歧视连续性。
 - `domains/emergency-contact-next-of-kin-notification-continuity/`、`domains/personal-health-record-emergency-summary-continuity/`、`domains/medical-id-allergy-critical-alert-continuity/`、`domains/medication-list-implant-device-emergency-continuity/`、`domains/chronic-condition-emergency-action-plan-continuity/`、`domains/immunization-record-proof-continuity/`、`domains/organ-donor-registry-anatomical-gift-continuity/` 和 `domains/access-functional-needs-emergency-registry-continuity/`：第五十九波正式研究域，分别承载紧急联系人/近亲通知、个人健康记录急救摘要、医疗 ID/过敏关键警报、药物清单/植入设备急救转交、慢病急救行动计划、免疫记录证明、器官捐赠登记和 access/functional needs 急救登记连续性。
+- `domains/death-certificate-registration-cause-of-death-record-continuity/`、`domains/funeral-cremation-burial-disposition-continuity/`、`domains/cemetery-memorial-remains-location-continuity/`、`domains/bereavement-leave-grief-support-continuity/`、`domains/survivor-benefits-death-notification-continuity/`、`domains/life-insurance-beneficiary-claim-continuity/`、`domains/estate-inventory-asset-liability-handoff-continuity/` 和 `domains/post-death-account-closure-service-cancellation-continuity/`：第六十波正式研究域，分别承载死亡证明/死因记录、葬礼火化土葬与遗体处置、墓地纪念与遗体位置、丧亲假与悲伤支持、遗属福利死亡通知、寿险受益人理赔、遗产清单资产负债交接和死亡后账户关闭服务取消连续性。
 - `reference/research-model-visualization-toolkit.md`：沉淀科研论文阅读、文献脊梁、模型工具、可视化标准和 Human Infra 定量页面实现路线。
 - `reference/source-card-system.md`：定义论文、书籍、工具、案例、标准和数据集进入项目之前的资料卡片制度。
 - `reference/domain-map.md`：定义根项目与子域的边界、迁移切片、主动不做和验证点。

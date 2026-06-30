@@ -79,6 +79,7 @@ docs/
 │   ├── 0061-add-fifty-seventh-wave-medical-payment-billing-cost-protection-domains.md
 │   ├── 0062-add-fifty-eighth-wave-patient-rights-records-communication-domains.md
 │   ├── 0063-add-fifty-ninth-wave-emergency-health-handoff-domains.md
+│   ├── 0064-add-sixtieth-wave-post-death-survivor-continuity-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -453,4 +454,12 @@ docs/
 319. Read `../domains/immunization-record-proof-continuity/README.md` if you are working on vaccination records, immunization registries, vaccine proof, school/work/travel immunization documentation, or record portability.
 320. Read `../domains/organ-donor-registry-anatomical-gift-continuity/README.md` if you are working on organ donor registry, anatomical gift, donor designation, state registry, transplant-system identity handoff, or post-death donation intent.
 321. Read `../domains/access-functional-needs-emergency-registry-continuity/README.md` if you are working on access and functional needs, special needs registries, medical needs registries, evacuation support, power-dependent devices, or disaster accessibility planning.
-322. Enter a domain under `../domains/`.
+322. Read `../domains/death-certificate-registration-cause-of-death-record-continuity/README.md` if you are working on death certificates, death registration, cause-of-death records, certified copies, medical certification, or vital statistics.
+323. Read `../domains/funeral-cremation-burial-disposition-continuity/README.md` if you are working on funeral services, cremation, burial, body disposition, price disclosure, funeral permits, or remains transport.
+324. Read `../domains/cemetery-memorial-remains-location-continuity/README.md` if you are working on cemetery plots, grave markers, columbarium, ashes/remains location, memorial records, or cemetery maintenance.
+325. Read `../domains/bereavement-leave-grief-support-continuity/README.md` if you are working on bereavement leave, grief support, EAP, peer support, school/work adjustment, or survivor recovery after death.
+326. Read `../domains/survivor-benefits-death-notification-continuity/README.md` if you are working on death reporting, survivor benefits, Social Security survivor benefits, VA survivor benefits, employer benefits, or pension notifications.
+327. Read `../domains/life-insurance-beneficiary-claim-continuity/README.md` if you are working on life insurance policies, beneficiary designations, death claims, policy locator systems, group life insurance, or unclaimed benefits.
+328. Read `../domains/estate-inventory-asset-liability-handoff-continuity/README.md` if you are working on estate inventory, asset lists, liability lists, executor/personal representative task queues, probate handoff, or creditor notices.
+329. Read `../domains/post-death-account-closure-service-cancellation-continuity/README.md` if you are working on post-death account closure, service cancellation, automatic payment stops, deceased-account handling, data export, or identity theft prevention.
+330. Enter a domain under `../domains/`.

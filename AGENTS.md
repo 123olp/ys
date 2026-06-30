@@ -263,6 +263,14 @@ human_infra/
     ├── immunization-record-proof-continuity/ # 免疫记录与证明连续性
     ├── organ-donor-registry-anatomical-gift-continuity/ # 器官捐赠登记与遗体捐赠连续性
     ├── access-functional-needs-emergency-registry-continuity/ # 功能需求与急救登记连续性
+    ├── death-certificate-registration-cause-of-death-record-continuity/ # 死亡证明、登记与死因记录连续性
+    ├── funeral-cremation-burial-disposition-continuity/ # 葬礼、火化、土葬与遗体处置连续性
+    ├── cemetery-memorial-remains-location-continuity/ # 墓地、纪念与遗体位置连续性
+    ├── bereavement-leave-grief-support-continuity/ # 丧亲假与悲伤支持连续性
+    ├── survivor-benefits-death-notification-continuity/ # 遗属福利与死亡通知连续性
+    ├── life-insurance-beneficiary-claim-continuity/ # 寿险受益人与理赔连续性
+    ├── estate-inventory-asset-liability-handoff-continuity/ # 遗产清单、资产负债与交接连续性
+    ├── post-death-account-closure-service-cancellation-continuity/ # 死亡后账户关闭与服务取消连续性
     ├── cognitive-augmentation/ # 认知增强与工具放大
     ├── digital-identity-security/ # 数字身份安全
     ├── disembodied-cns/   # 去具身外部维持型中枢生命系统
@@ -666,6 +674,7 @@ human_infra/
 - `domains/health-insurance-enrollment-renewal-continuity/`、`domains/insurance-eligibility-benefits-verification-continuity/`、`domains/medical-service-prior-authorization-utilization-management-continuity/`、`domains/claims-adjudication-eob-denial-continuity/`、`domains/patient-billing-payment-plan-continuity/`、`domains/price-transparency-good-faith-estimate-continuity/`、`domains/surprise-billing-balance-bill-protection-continuity/` 和 `domains/charity-care-financial-assistance-medical-debt-continuity/` 负责健康保险参保续保、权益核验、医疗服务授权、理赔/EOB/拒付、患者账单/付款计划、价格透明/GFE、意外账单保护和 charity care/医疗债务这些医疗支付执行连续性条件。
 - `domains/patient-portal-account-message-continuity/`、`domains/medical-record-access-amendment-release-continuity/`、`domains/clinical-results-notification-followup-continuity/`、`domains/informed-consent-refusal-shared-decision-continuity/`、`domains/healthcare-language-interpreter-effective-communication-continuity/`、`domains/healthcare-disability-accommodation-accessibility-continuity/`、`domains/patient-grievance-complaint-ombuds-continuity/` 和 `domains/healthcare-civil-rights-nondiscrimination-continuity/` 负责患者门户/医疗消息、病历访问修正释放、临床结果通知随访、知情同意/拒绝/共同决策、医疗语言服务、医疗残障便利、患者投诉/ombuds 和医疗民权反歧视这些患者权利与临床沟通连续性条件。
 - `domains/emergency-contact-next-of-kin-notification-continuity/`、`domains/personal-health-record-emergency-summary-continuity/`、`domains/medical-id-allergy-critical-alert-continuity/`、`domains/medication-list-implant-device-emergency-continuity/`、`domains/chronic-condition-emergency-action-plan-continuity/`、`domains/immunization-record-proof-continuity/`、`domains/organ-donor-registry-anatomical-gift-continuity/` 和 `domains/access-functional-needs-emergency-registry-continuity/` 负责主体无法表达、急救、灾害和死亡边界中的紧急联系人、急救健康摘要、医疗 ID/关键警报、药物/植入设备、慢病行动计划、免疫记录、器官捐赠登记和功能需求登记连续性条件。
+- `domains/death-certificate-registration-cause-of-death-record-continuity/`、`domains/funeral-cremation-burial-disposition-continuity/`、`domains/cemetery-memorial-remains-location-continuity/`、`domains/bereavement-leave-grief-support-continuity/`、`domains/survivor-benefits-death-notification-continuity/`、`domains/life-insurance-beneficiary-claim-continuity/`、`domains/estate-inventory-asset-liability-handoff-continuity/` 和 `domains/post-death-account-closure-service-cancellation-continuity/` 负责死亡边界后的死亡证明/死因记录、遗体处置、墓地纪念、遗属恢复、遗属福利、寿险理赔、遗产清单和账户关闭服务取消连续性条件。
 - `domains/disembodied-cns/` 负责去具身外部维持型中枢生命系统的高层架构建模，不提供实验操作协议。
 - `domains/memory-editing/` 负责记忆编辑的概念、证据、验证和伦理边界，不提供可执行神经操控步骤。
 - `domains/biostasis-cryopreservation/` 负责冷冻保存、生物停滞、休眠和等待未来修复路径。
@@ -777,3 +786,4 @@ human_infra/
 - 2026-06-30：新增第二十五波 6 个文明连续性、集体安全与宏观制度底座域骨架，覆盖武装冲突平民保护、和平建设冲突预防、政府连续性、电信网络韧性、宏观经济稳定和公共廉洁问责。
 - 2026-06-30：新增第三十三波 7 个未来技术连续性域骨架，覆盖纳米医学靶向递送、AI 药物发现蛋白设计、表观遗传编辑、脑保存连接组仿真、后量子密码、安全关键软件形式化方法和长期数字保存。
 - 2026-06-30：新增第三十四波 7 个急性神经连续性与意识韧性域骨架，覆盖卒中脑灌注韧性、TBI 神经创伤恢复、谵妄急性认知失败预防、意识障碍昏迷恢复、癫痫发作网络稳定、自主神经稳态和偏头痛有效时间负担。
+- 2026-06-30：新增第六十波死亡后与遗属连续性研究域，覆盖死亡证明/死因记录、遗体处置、墓地纪念、丧亲恢复、遗属福利、寿险理赔、遗产清单和死亡后账户关闭。

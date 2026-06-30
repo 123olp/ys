@@ -412,6 +412,14 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `immunization-record-proof-continuity/` | Immunization record、IIS、vaccine card 和 school/work/travel proof 决定免疫事件是否能转化为制度可承认证明 |
 | `organ-donor-registry-anatomical-gift-continuity/` | Organ donor registry、anatomical gift、state registry 和 driver-license marker 决定死亡边界后的捐赠意愿是否可识别 |
 | `access-functional-needs-emergency-registry-continuity/` | Access and functional needs、medical needs registry、power-dependent equipment 和 shelter/transport support 决定灾害系统是否看见非平均主体 |
+| `death-certificate-registration-cause-of-death-record-continuity/` | Death certificate、death registration、cause of death 和 certified copies 决定死亡事实能否启动遗属福利、理赔、遗产、账户关闭和公共卫生统计 |
+| `funeral-cremation-burial-disposition-continuity/` | Funeral service、cremation、burial、body disposition 和 price disclosure 决定遗体处置是否可授权、可负担、可尊重 |
+| `cemetery-memorial-remains-location-continuity/` | Cemetery plot、grave marker、columbarium、ashes/remains location 和 memorial record 决定身体去向与纪念地点是否长期可查 |
+| `bereavement-leave-grief-support-continuity/` | Bereavement leave、grief support、EAP、peer support 和 school/work adjustment 决定死亡事件是否外溢击穿幸存者行动能力 |
+| `survivor-benefits-death-notification-continuity/` | Survivor benefits、death notification、SSA/VA/employer benefits 和 pension notifications 决定死亡后家庭收入和资格能否重新接续 |
+| `life-insurance-beneficiary-claim-continuity/` | Life insurance policy、beneficiary designation、claim 和 policy locator 决定死亡风险转移是否能兑现给受益人 |
+| `estate-inventory-asset-liability-handoff-continuity/` | Estate inventory、asset/liability lists、executor 和 creditor notice 决定死亡后资源、债务、文件和任务能否被盘点和交接 |
+| `post-death-account-closure-service-cancellation-continuity/` | Account closure、service cancellation、automatic payment stop 和 deceased account handling 决定死亡后外部账户残留是否继续消耗资源或制造欺诈风险 |
 
 ## 来源信号
 
@@ -491,6 +499,12 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | CDC vaccination records / immunization information systems materials | 提示免疫记录、登记系统和证明可携带性会影响学校、工作、旅行、医疗和公共卫生准入 |
 | OrganDonor.gov / HRSA organ donation materials | 提示器官捐赠登记、anatomical gift 和家庭沟通会把死亡边界后的主体意愿连接到他人生命资源 |
 | FDA UDI / AccessGUDID materials | 提示植入设备和医疗器械标识会影响急救、影像、手术、召回和跨机构设备识别 |
+| CDC/NCHS NVSS and mortality materials | 提示死亡证明、死因记录和生命统计是遗属行政、保险、公共卫生学习和死亡边界治理的基础记录 |
+| USA.gov death of a loved one materials | 提示死亡后任务会跨越死亡证明、福利、葬礼、遗产、账户和幸存者支持多个系统 |
+| FTC Funeral Rule materials | 提示葬礼、火化、土葬和遗体处置存在价格披露、消费者保护和高压决策窗口 |
+| SSA survivor benefits materials | 提示死亡通知、遗属福利和支付转移决定家庭收入、儿童/配偶支持和 overpayment 风险 |
+| NAIC Life Insurance Policy Locator materials | 提示寿险保单定位、受益人记录和死亡理赔是风险转移兑现的执行层 |
+| FTC identity theft and subscription cancellation materials | 提示死亡后账户关闭、自动扣款、身份盗用和消费者保护构成现代账户残留风险 |
 | https://www.dea.gov/takebackday | 提示受监管药品回收和 Take Back 体系是未用药、过期药和管制药处置的公共接口 |
 | https://www.cdc.gov/diabetes/ | 提示糖尿病日常管理依赖药物、监测、耗材、教育和持续反馈，不只是单次临床处方 |
 | https://www.cdc.gov/medication-safety/ | 提示 medication safety 覆盖家庭用药、误用、相互作用、教育和系统性安全风险 |
@@ -1492,6 +1506,14 @@ Source links:
 - https://civilrightsdata.ed.gov/
 - https://www.stopbullying.gov/
 - https://www.cdc.gov/youth-violence/
+- https://www.cdc.gov/nchs/nvss/
+- https://www.cdc.gov/nchs/deaths.htm
+- https://www.usa.gov/death-loved-one
+- https://www.ftc.gov/business-guidance/resources/complying-funeral-rule
+- https://www.ssa.gov/survivor
+- https://content.naic.org/article/learn-how-use-naic-life-insurance-policy-locator
+- https://www.identitytheft.gov/
+- https://www.ftc.gov/business-guidance/resources/click-cancel-negative-option-rule
 
 ## 使用规则
 

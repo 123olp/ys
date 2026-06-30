@@ -472,6 +472,24 @@ Human Infra 不能被设计成更精密的压榨系统。
 - 收集或诱导输入联系人姓名、电话、地址、next of kin、家庭关系、PHI、病历、急救摘要、过敏、诊断、药物、设备型号/序列号、疫苗卡、捐赠登记、驾驶证、残障证明、功能需求、地址、定位、照护者、移民状态或宗教文化资料。
 - 把急救健康信息和紧急交接的结构性问题改写成个人急救替代、病历整理服务、联系人代理、隐私暴露、家庭控制、器官捐赠劝导、灾害登记代办、监控定位或敏感数据收集问题。
 
+## 死亡后与遗属连续性边界
+
+`death-certificate-registration-cause-of-death-record-continuity`、`funeral-cremation-burial-disposition-continuity`、`cemetery-memorial-remains-location-continuity`、`bereavement-leave-grief-support-continuity`、`survivor-benefits-death-notification-continuity`、`life-insurance-beneficiary-claim-continuity`、`estate-inventory-asset-liability-handoff-continuity` 和 `post-death-account-closure-service-cancellation-continuity` 关注死亡事实发生后，死亡证明、遗体处置、遗体位置、悲伤恢复、遗属福利、寿险理赔、遗产清单和账户关闭如何保护幸存者资源、时间、尊严和制度交接，不是死亡证明办理、丧葬安排、保险理赔、遗产法律、税务、债务处理、账户关闭、平台申诉或心理治疗工具。
+
+可以做：
+
+- 整理公开资料、官方框架、CDC/NCHS 生命统计、USA.gov 死亡后任务、FTC Funeral Rule、SSA survivor benefits、NAIC policy locator、FTC 身份盗用/订阅取消和州级公开资料。
+- 建模死亡证明延迟、处置价格不透明、遗体位置记录缺失、丧亲恢复支持不足、福利通知断裂、寿险保单失联、资产负债不可见和死亡后账号残留如何影响幸存者主体持续性。
+- 区分死亡事实记录、遗体处置、纪念/位置记录、幸存者恢复、福利资源、风险转移、遗产任务、账号收束和禁止用途。
+
+不能做：
+
+- 办理、代写、解释或更正死亡证明、死因记录、火化/土葬许可、福利申请、寿险理赔、probate 文件、税务材料、债权通知、账户关闭或平台申诉。
+- 判断死因、责任、保险适用、福利资格、受益人、遗产分配、债务责任、账户归属、税务后果、丧葬选择、心理诊断或法律效力。
+- 推荐殡仪馆、墓地、保险、律师、心理治疗、福利路径、账户关闭路径、订阅取消策略、债务应对、遗产规划或投资安排。
+- 收集或诱导输入死亡证明、病历、法医材料、遗体/骨灰位置、保单号、受益人资料、资产负债、账号密码、账单、银行卡、身份文件、家庭关系、宗教偏好、创伤经历或心理诊断。
+- 把死亡后与遗属连续性的结构性问题改写成个案代理、法律博弈、理赔策略、丧葬消费推荐、心理治疗替代、敏感资料收集、账号接管、家庭控制或平台规避问题。
+
 ## 农村健康、无家可归、羁押重返、残障独立生活、痴呆照护与慢性传染病连续性边界
 
 `rural-health-access-geographic-equity`、`homelessness-unsheltered-health-continuity`、`correctional-health-reentry-continuity`、`disability-services-independent-living`、`dementia-cognitive-decline-care-continuity` 和 `chronic-infectious-disease-care-continuity` 关注地点排除、住所缺失、羁押释放、残障服务、认知衰退和长期感染照护如何影响主体持续性，不是个人医疗、住房、福利、法律、羁押、监管规避、传染病处置或弱势群体定位指南。
