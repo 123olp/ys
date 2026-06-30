@@ -448,6 +448,12 @@ flowchart TD
     H --> ESRBE[earthquake-seismic-risk-built-environment-continuity<br/>地震 / 建成环境连续性]
     H --> TWCEC[tsunami-warning-coastal-evacuation-continuity<br/>海啸预警 / 沿海撤离]
     H --> EHCPH[extreme-heat-cooling-public-health-continuity<br/>极端高温 / 制冷公共卫生]
+    H --> NEAEC[noise-exposure-acoustic-environment-continuity<br/>噪声暴露 / 声环境]
+    H --> LECEC[light-exposure-circadian-environment-continuity<br/>光照暴露 / 昼夜节律]
+    H --> LHMEC[lead-heavy-metal-exposure-control<br/>铅重金属 / 暴露控制]
+    H --> RAIHC[radon-asbestos-indoor-hazard-continuity<br/>氡石棉 / 室内危害]
+    H --> MDIBE[mold-dampness-indoor-biological-exposure<br/>霉菌潮湿 / 室内生物暴露]
+    H --> VBDEC[vector-borne-disease-environmental-control<br/>病媒传播 / 环境控制]
     H --> MF[measurement-feedback<br/>测量 / 预测 / 反馈]
     H --> C[disembodied-cns<br/>去具身中枢生命系统]
     H --> M[memory-editing<br/>记忆编辑与人格连续性]
@@ -568,6 +574,12 @@ flowchart TD
 | [Earthquake Seismic Risk Built Environment Continuity](domains/earthquake-seismic-risk-built-environment-continuity/README.md) | 地震危险性、抗震建筑、医院、道路、水电燃气、通信和恢复 | 把地震作为建成环境和生命线基础设施的急性压力测试 | 不提供地震预测、结构安全评估、工程设计、疏散、保险或法律建议 |
 | [Tsunami Warning Coastal Evacuation Continuity](domains/tsunami-warning-coastal-evacuation-continuity/README.md) | 海啸预警、潮位监测、警报、撤离路线、垂直避难和灾后恢复 | 把海啸作为分钟级预警-行动-恢复链条的沿海连续性测试 | 不提供实时预警、撤离路线、避难点、个人风险判断或购房投资建议 |
 | [Extreme Heat Cooling Public Health Continuity](domains/extreme-heat-cooling-public-health-continuity/README.md) | 热浪、热健康、制冷可及、能源负担、住房质量、劳动暴露和城市热岛 | 把极端高温作为身体、住房、能源、劳动和公共卫生的共同约束 | 不提供个人急救、补水、药物调整、空调选择、工作许可或避暑地点建议 |
+| [Noise Exposure Acoustic Environment Continuity](domains/noise-exposure-acoustic-environment-continuity/README.md) | 交通、职业、社区和居住噪声，听力、睡眠、沟通和压力负荷 | 把声环境作为恢复、注意力、听觉输入和长期任务执行的慢性损耗条件 | 不提供听力诊断、设备选择、隔音施工、工作合规、投诉策略或法律建议 |
+| [Light Exposure Circadian Environment Continuity](domains/light-exposure-circadian-environment-continuity/README.md) | 自然光、夜间光、室内照明、轮班、光污染和昼夜节律 | 把光照作为睡眠、警觉、代谢、情绪和有效时间的节律同步基础设施 | 不提供光疗、药物补剂、灯具购买、照明施工、排班许可或个人作息处方 |
+| [Lead Heavy Metal Exposure Control](domains/lead-heavy-metal-exposure-control/README.md) | 铅、汞、镉、砷，住房、饮水、土壤、粉尘、职业和产品暴露 | 把重金属暴露作为认知、儿童发展、肾血液系统和未来选择权的慢性风险 | 不提供检测解读、治疗、采样、除铅施工、危险废物处理、房产或法律判断 |
+| [Radon Asbestos Indoor Hazard Continuity](domains/radon-asbestos-indoor-hazard-continuity/README.md) | 氡、石棉、旧建筑、学校、工作场所和长期肺部风险 | 把不可见建筑暴露作为住房、学校和工作场所持续安全的长期约束 | 不提供检测解释、缓解系统设计、石棉采样拆除、施工、保险、房产或医疗建议 |
+| [Mold Dampness Indoor Biological Exposure](domains/mold-dampness-indoor-biological-exposure/README.md) | 霉菌、潮湿、漏水、室内过敏原、通风不足和灾后水损 | 把潮湿住房和室内生物暴露作为呼吸、睡眠、免疫和住房稳定的慢性负荷 | 不提供医疗建议、采样清理、除湿设备、施工维修、租房纠纷、保险或法律建议 |
+| [Vector Borne Disease Environmental Control](domains/vector-borne-disease-environmental-control/README.md) | 蚊媒、蜱媒、蚤媒、气候水文、住房环境、宿主动物和病媒控制 | 把病媒传播风险作为居住、工作、旅行、农业和公共卫生连续性的生态条件 | 不提供诊疗、旅行医学、驱虫产品、农药操作、现场灭杀、检疫规避或个人风险判断 |
 | [Regenerative Medicine](domains/regenerative-medicine/README.md) | 干细胞、组织工程、器官再生、类器官、移植 | 器官/组织修复框架、功能终点和整合风险 | 不提供手术、细胞制备、移植或人体实验步骤 |
 | [Rehabilitation And Functioning](domains/rehabilitation-functioning/README.md) | 康复、功能恢复、失能预防、活动能力、自理和社会参与 | 功能状态、活动能力、参与能力和失能风险模型 | 不提供个人康复处方、训练计划、诊断或治疗建议 |
 | [Cancer Control](domains/cancer-control/README.md) | 癌症预防、早筛、治疗、复发、肿瘤演化 | 癌症风险函数、证据层级和长期控制变量 | 不提供诊断、治疗方案、处方、剂量或个体用药建议 |
@@ -1049,5 +1061,6 @@ flowchart LR
 - 2026-06-30：新增第三十四波 7 个急性神经连续性与意识韧性域，覆盖卒中脑灌注韧性、TBI 神经创伤恢复、谵妄急性认知失败预防、意识障碍昏迷恢复、癫痫发作网络稳定、自主神经稳态和偏头痛有效时间负担。
 - 2026-06-30：新增第三十五波 7 个感官、沟通与具身反馈连续性域，覆盖视觉眼健康、听力听觉沟通、前庭平衡空间定向、言语语言沟通、吞咽误吸营养、嗅味觉化学感知和周围神经躯体感觉。
 - 2026-06-30：新增第三十六波 6 个行星、地球物理与极端热风险连续性域，覆盖空间天气、行星防御、火山灰、地震、海啸和极端高温。
+- 2026-06-30：新增第三十七波 6 个慢性环境暴露与日常损耗条件域，覆盖噪声、光照节律、铅与重金属、氡与石棉、霉菌潮湿和病媒传播风险。
 
 完整记录见 [CHANGELOG.md](CHANGELOG.md)。

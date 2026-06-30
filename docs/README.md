@@ -56,6 +56,7 @@ docs/
 │   ├── 0038-add-thirty-fourth-wave-acute-neuro-continuity-domains.md
 │   ├── 0039-add-thirty-fifth-wave-sensory-communication-continuity-domains.md
 │   ├── 0040-add-thirty-sixth-wave-planetary-geophysical-heat-risk-domains.md
+│   ├── 0041-add-thirty-seventh-wave-chronic-environmental-exposure-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -278,4 +279,10 @@ docs/
 167. Read `../domains/earthquake-seismic-risk-built-environment-continuity/README.md` if you are working on earthquakes, seismic risk, built environment safety, hospitals, roads, utilities, ShakeAlert, or post-earthquake recovery.
 168. Read `../domains/tsunami-warning-coastal-evacuation-continuity/README.md` if you are working on tsunami warning, coastal evacuation, vertical refuge, alerting, coastal recovery, or short-window evacuation systems.
 169. Read `../domains/extreme-heat-cooling-public-health-continuity/README.md` if you are working on extreme heat, heat health, cooling access, energy burden, housing quality, occupational heat exposure, or urban heat islands.
-170. Enter a domain under `../domains/`.
+170. Read `../domains/noise-exposure-acoustic-environment-continuity/README.md` if you are working on noise exposure, acoustic environments, hearing preservation, sleep disruption, community noise, transportation noise, or occupational noise.
+171. Read `../domains/light-exposure-circadian-environment-continuity/README.md` if you are working on light exposure, circadian environment, daylight, night-time light, shift work, lighting, sleep timing, or light pollution.
+172. Read `../domains/lead-heavy-metal-exposure-control/README.md` if you are working on lead, mercury, cadmium, arsenic, heavy-metal exposure, old housing, drinking water, soil, dust, occupational exposure, or children's environmental health.
+173. Read `../domains/radon-asbestos-indoor-hazard-continuity/README.md` if you are working on radon, asbestos, indoor long-latency hazards, old buildings, schools, workplaces, lung cancer risk, or building legacy exposures.
+174. Read `../domains/mold-dampness-indoor-biological-exposure/README.md` if you are working on mold, dampness, indoor biological exposure, leaks, water damage, indoor allergens, housing quality, or post-flood indoor environments.
+175. Read `../domains/vector-borne-disease-environmental-control/README.md` if you are working on vector-borne disease, mosquitoes, ticks, fleas, vector control, climate-water ecology, One Health, or environmental infection risk.
+176. Enter a domain under `../domains/`.

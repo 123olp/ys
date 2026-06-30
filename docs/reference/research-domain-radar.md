@@ -244,6 +244,12 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `earthquake-seismic-risk-built-environment-continuity/` | 地震决定建成环境和生命线基础设施是否会在短时间内变成死亡、创伤和服务断点 |
 | `tsunami-warning-coastal-evacuation-continuity/` | 海啸决定沿海主体能否在短窗口内完成预警、理解、撤离、避难和灾后恢复 |
 | `extreme-heat-cooling-public-health-continuity/` | 极端高温决定热健康、制冷、能源、住房、劳动和公共卫生是否能共同接住环境压力 |
+| `noise-exposure-acoustic-environment-continuity/` | 噪声决定睡眠、听觉、沟通、压力恢复和有效时间是否被日常环境持续损耗 |
+| `light-exposure-circadian-environment-continuity/` | 光照与昼夜节律决定主体能否把外部时间同步成睡眠、警觉、代谢和恢复能力 |
+| `lead-heavy-metal-exposure-control/` | 铅与重金属暴露决定住房、水、土壤、工作和产品系统是否会持续侵蚀认知与身体储备 |
+| `radon-asbestos-indoor-hazard-continuity/` | 氡与石棉决定建筑空间是否在长潜伏期内制造不可见肺部和癌症风险 |
+| `mold-dampness-indoor-biological-exposure/` | 霉菌和潮湿决定住房是否会变成呼吸、免疫、睡眠和心理压力的慢性暴露源 |
+| `vector-borne-disease-environmental-control/` | 病媒传播风险决定气候、水文、住房、动物宿主和公共卫生能否共同控制生态感染入口 |
 
 ## 来源信号
 
@@ -269,6 +275,12 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | USGS / ShakeAlert / FEMA earthquake resources | 提示地震风险必须通过建成环境、生命线基础设施、预警和恢复系统治理 |
 | NOAA Tsunami / Ready.gov tsunami resources | 提示海啸风险依赖预警触达、短窗口撤离、垂直避难和灾后服务恢复 |
 | CDC / NOAA / OSHA heat resources | 提示极端高温同时影响体温调节、制冷可及、能源负担、劳动暴露和公共卫生 |
+| WHO / CDC NIOSH / OSHA noise resources | 提示噪声暴露不只是听力问题，还会影响睡眠、压力、沟通、工作安全和长期恢复 |
+| NIH circadian rhythms / CDC NIOSH shift-work resources | 提示光照和昼夜节律会把睡眠、警觉、情绪、代谢和工作时间制度连接起来 |
+| CDC / EPA / ATSDR / NIEHS lead and heavy-metal resources | 提示重金属暴露通过住房、水、土壤、粉尘、工作和产品系统造成慢性神经毒性与身体损耗 |
+| EPA radon and asbestos resources | 提示室内建筑危害具有长潜伏期、不可见暴露和独立监管边界 |
+| CDC / EPA / WHO mold and dampness resources | 提示潮湿、霉菌和室内生物暴露会把住房质量连接到呼吸、免疫、睡眠和心理压力 |
+| CDC / WHO / EPA vector-borne disease resources | 提示病媒传播风险需要把气候、水文、动物宿主、住房、农药和公共卫生治理合并审查 |
 | WHO Antimicrobial Resistance | 提示耐药性会侵蚀现代医学和长期感染控制底座 |
 | WHO Vision and Hearing resources | 提示感官系统是主体感知、沟通和行动连续性的基础 |
 | CDC Sleep / NHLBI Sleep resources | 提示睡眠不足和节律失调会影响认知、慢病、心理和恢复能力 |
@@ -1079,6 +1091,24 @@ Source links:
 - https://www.cdc.gov/heat-health/
 - https://www.weather.gov/safety/heat
 - https://www.osha.gov/heat
+- https://www.who.int/europe/publications/i/item/9789289053563
+- https://www.cdc.gov/niosh/noise/
+- https://www.osha.gov/noise
+- https://www.nigms.nih.gov/education/fact-sheets/Pages/circadian-rhythms.aspx
+- https://www.cdc.gov/niosh/topics/workschedules/
+- https://www.cdc.gov/sleep/
+- https://www.cdc.gov/lead-prevention/
+- https://www.epa.gov/lead
+- https://www.atsdr.cdc.gov/
+- https://www.niehs.nih.gov/health/topics/agents/metals
+- https://www.epa.gov/radon
+- https://www.epa.gov/asbestos
+- https://www.cdc.gov/mold-health/
+- https://www.epa.gov/mold
+- https://www.who.int/publications/i/item/9789289041683
+- https://www.cdc.gov/vector-borne-diseases/
+- https://www.who.int/news-room/fact-sheets/detail/vector-borne-diseases
+- https://www.epa.gov/mosquitocontrol
 
 ## 使用规则
 

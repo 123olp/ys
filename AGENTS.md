@@ -95,6 +95,12 @@ human_infra/
     ├── earthquake-seismic-risk-built-environment-continuity/ # 地震、抗震与建成环境连续性
     ├── tsunami-warning-coastal-evacuation-continuity/ # 海啸预警与沿海撤离连续性
     ├── extreme-heat-cooling-public-health-continuity/ # 极端高温、制冷与公共卫生连续性
+    ├── noise-exposure-acoustic-environment-continuity/ # 噪声暴露与声环境连续性
+    ├── light-exposure-circadian-environment-continuity/ # 光照暴露与昼夜节律环境连续性
+    ├── lead-heavy-metal-exposure-control/ # 铅与重金属暴露控制
+    ├── radon-asbestos-indoor-hazard-continuity/ # 氡、石棉与室内长期危害连续性
+    ├── mold-dampness-indoor-biological-exposure/ # 霉菌、潮湿与室内生物暴露
+    ├── vector-borne-disease-environmental-control/ # 病媒传播疾病与环境控制
     ├── cognitive-augmentation/ # 认知增强与工具放大
     ├── digital-identity-security/ # 数字身份安全
     ├── disembodied-cns/   # 去具身外部维持型中枢生命系统
@@ -475,6 +481,7 @@ human_infra/
 - `domains/future-waiting/` 负责度规红移固有时差分路径（黑洞等待室）等“压缩等待 / 去未来”思想实验、证据边界和风险约束。
 - `domains/vision-eye-health-continuity/`、`domains/hearing-auditory-communication-continuity/`、`domains/vestibular-balance-spatial-orientation/`、`domains/speech-language-communication-continuity/`、`domains/swallowing-dysphagia-aspiration-nutrition/`、`domains/smell-taste-chemosensory-continuity/` 和 `domains/peripheral-neuropathy-somatosensory-continuity/` 负责视觉输入、听觉沟通、空间平衡、语言表达、吞咽摄食、化学感知和身体边界反馈的机制、证据、变量和禁止用途。
 - `domains/space-weather-geomagnetic-storm-resilience/`、`domains/planetary-defense-near-earth-object-risk/`、`domains/volcanic-ashfall-geohazard-continuity/`、`domains/earthquake-seismic-risk-built-environment-continuity/`、`domains/tsunami-warning-coastal-evacuation-continuity/` 和 `domains/extreme-heat-cooling-public-health-continuity/` 负责空间天气、行星防御、火山灰、地震、海啸和极端高温这些行星、地球物理与极端热风险的机制、预警、基础设施失效和禁止用途。
+- `domains/noise-exposure-acoustic-environment-continuity/`、`domains/light-exposure-circadian-environment-continuity/`、`domains/lead-heavy-metal-exposure-control/`、`domains/radon-asbestos-indoor-hazard-continuity/`、`domains/mold-dampness-indoor-biological-exposure/` 和 `domains/vector-borne-disease-environmental-control/` 负责噪声、光照节律、铅与重金属、氡与石棉、霉菌潮湿和病媒传播这些慢性环境暴露与日常损耗条件的机制、证据、变量和禁止用途。
 - `domains/disembodied-cns/` 负责去具身外部维持型中枢生命系统的高层架构建模，不提供实验操作协议。
 - `domains/memory-editing/` 负责记忆编辑的概念、证据、验证和伦理边界，不提供可执行神经操控步骤。
 - `domains/biostasis-cryopreservation/` 负责冷冻保存、生物停滞、休眠和等待未来修复路径。
@@ -528,6 +535,7 @@ human_infra/
 - 2026-06-26：新增 `web/` Observable Framework 应用，作为科研叙事、书籍转译、预测模型和交互图表的正式 Web 入口。
 - 2026-06-27：新增 `tools/arxiv_html_paper_tool.py` 与 `tools/arxiv-html-paper/`，把 arXiv HTML papers 前端框架沉淀为可复用 Astro 工具链。
 - 2026-06-29：新增可控度规等待室假设 working paper 入口和审计账本，把黑洞等待室收敛为固有时差分、退出采用、风险扣减和递归等待的可审查模型。
+- 2026-06-30：新增第三十七波 6 个慢性环境暴露与日常损耗条件域，覆盖噪声、光照节律、铅与重金属、氡与石棉、霉菌潮湿和病媒传播风险。
 - 2026-06-30：新增第三十六波 6 个行星、地球物理与极端热风险连续性域，覆盖空间天气、行星防御、火山灰、地震、海啸和极端高温。
 - 2026-06-30：新增第三十五波 7 个感官、沟通与具身反馈连续性域，覆盖视觉眼健康、听力听觉沟通、前庭平衡空间定向、言语语言沟通、吞咽误吸营养、嗅味觉化学感知和周围神经躯体感觉。
 - 2026-06-30：新增农业生产、土壤土地、水资源、生态系统服务、野火韧性和物流冷链六个研究域，补齐初级生产、自然系统与物理流通底座。

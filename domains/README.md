@@ -225,6 +225,12 @@
 - `earthquake-seismic-risk-built-environment-continuity/`：地震与建成环境连续性，整理地震危险性、抗震建筑、医院、道路、水电燃气和通信恢复。
 - `tsunami-warning-coastal-evacuation-continuity/`：海啸预警与沿海撤离连续性，整理海啸监测、警报、撤离、垂直避难和灾后恢复。
 - `extreme-heat-cooling-public-health-continuity/`：极端高温、制冷与公共卫生连续性，整理热健康、制冷可及、能源负担、住房、劳动暴露和城市热岛。
+- `noise-exposure-acoustic-environment-continuity/`：噪声暴露与声环境连续性，整理交通、职业、社区和居住噪声对睡眠、听力、沟通、压力和有效时间的影响。
+- `light-exposure-circadian-environment-continuity/`：光照暴露与昼夜节律环境连续性，整理自然光、夜间光、室内照明、轮班和光污染对睡眠、警觉、代谢和恢复的影响。
+- `lead-heavy-metal-exposure-control/`：铅与重金属暴露控制，整理铅、汞、镉、砷等通过住房、饮水、土壤、工作和产品造成的慢性损耗。
+- `radon-asbestos-indoor-hazard-continuity/`：氡、石棉与室内长期危害连续性，整理建筑遗留危害、长期肺部风险、住房学校工作场所暴露和治理边界。
+- `mold-dampness-indoor-biological-exposure/`：霉菌、潮湿与室内生物暴露，整理建筑潮湿、霉菌、室内过敏原和灾后水损对呼吸、睡眠和住房稳定的影响。
+- `vector-borne-disease-environmental-control/`：病媒传播疾病与环境控制，整理蚊媒、蜱媒、气候水文、住房环境、动物宿主和公共卫生控制。
 - `supply-chain-continuity/`：供应链连续性，整理关键物资、服务、物流、替代路径和恢复时间。
 - `synthetic-biology-biosecurity/`：合成生物学与生物安全，整理双重用途、生物安全、生物安保和治理边界。
 - `space-extreme-habitation/`：空间与极端栖居，整理辐射、微重力、隔离、闭环资源和远程医疗风险。
