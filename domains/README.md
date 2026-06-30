@@ -88,6 +88,12 @@
 - `radiation-nuclear-safety-protection/`：辐射、核安全与防护，整理电离辐射防护、核设施安全、辐射监测、放射性材料风险和辐射应急治理。
 - `chemical-safety-poison-control-toxicology/`：化学安全、中毒控制与毒理响应，整理化学品安全、毒性暴露、毒物中心、毒理证据、暴露监测和风险沟通。
 - `critical-minerals-materials-resilience/`：关键矿物、材料与韧性，整理关键矿物、战略材料、加工依赖、替代回收和 AI/能源/医疗/制造的上游物质输入。
+- `air-quality-ventilation-exposure-control/`：空气质量、通风与暴露控制，整理室内外空气污染、通风、过滤、气溶胶、烟雾和空气暴露治理。
+- `food-safety-contamination-control/`：食品安全、污染控制与食源性风险，整理食源性病原体、毒素、过敏原、检查、追溯和召回。
+- `occupational-exposure-industrial-hygiene/`：职业暴露与工业卫生，整理工作场所化学、物理、生物、粉尘、噪声、热、辐射和皮肤暴露控制。
+- `medical-device-equipment-safety-maintenance/`：医疗器械、设备安全与维护，整理设备生命周期、不良事件、UDI、召回、维护、网络安全和可用性。
+- `sterilization-disinfection-infection-control/`：灭菌、消毒与感染控制，整理清洁、消毒、灭菌、再处理、环境感染控制和 HAI 预防。
+- `built-environment-accessibility-universal-design/`：建成环境无障碍与通用设计，整理物理空间可达、路径连续、公共设施、通用设计和环境参与条件。
 - `insurance-risk-transfer/`：保险与风险转移，整理健康、失业、工伤、残障、灾害、存款、养老金等风险池和保障缺口。
 - `childcare-family-continuity/`：托育与家庭连续性，整理托育可及、费用、质量、早期儿童发展、父母工作连续性和家庭压力。
 - `emergency-preparedness-response/`：应急准备与响应，整理灾害准备、预警、应急通信、急救医疗、安置和恢复。

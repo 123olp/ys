@@ -38,6 +38,7 @@ docs/
 │   ├── 0020-add-sixteenth-wave-education-research-standards-cyber-compute-clinical-translation-domains.md
 │   ├── 0021-add-seventeenth-wave-geospatial-weather-building-manufacturing-procurement-one-health-domains.md
 │   ├── 0022-add-eighteenth-wave-lab-blood-waste-radiation-chemical-critical-materials-domains.md
+│   ├── 0023-add-nineteenth-wave-air-food-occupational-device-sterilization-accessibility-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -149,4 +150,10 @@ docs/
 56. Read `../domains/radiation-nuclear-safety-protection/README.md` if you are working on radiation protection, nuclear safety, radiological monitoring, or radiological emergency governance.
 57. Read `../domains/chemical-safety-poison-control-toxicology/README.md` if you are working on chemical safety, toxic exposure, poison centers, toxicology, or chemical risk communication.
 58. Read `../domains/critical-minerals-materials-resilience/README.md` if you are working on critical minerals, strategic materials, material substitution, recycling, or upstream technology input resilience.
-59. Enter a domain under `../domains/`.
+59. Read `../domains/air-quality-ventilation-exposure-control/README.md` if you are working on air quality, ventilation, filtration, aerosols, smoke, or inhaled exposure control.
+60. Read `../domains/food-safety-contamination-control/README.md` if you are working on foodborne hazards, contamination, inspection, traceability, recalls, or outbreak governance.
+61. Read `../domains/occupational-exposure-industrial-hygiene/README.md` if you are working on industrial hygiene, workplace exposure, hierarchy of controls, dust, noise, heat, chemicals, or biological hazards.
+62. Read `../domains/medical-device-equipment-safety-maintenance/README.md` if you are working on medical device safety, equipment lifecycle, UDI, adverse events, recalls, maintenance, or device cybersecurity.
+63. Read `../domains/sterilization-disinfection-infection-control/README.md` if you are working on sterilization, disinfection, reprocessing, environmental infection control, or healthcare-associated infection prevention.
+64. Read `../domains/built-environment-accessibility-universal-design/README.md` if you are working on built-environment accessibility, universal design, ADA/ABA standards, public-space access, or physical-path continuity.
+65. Enter a domain under `../domains/`.

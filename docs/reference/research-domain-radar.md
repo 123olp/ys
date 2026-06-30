@@ -133,6 +133,12 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `radiation-nuclear-safety-protection/` | 辐射防护、核安全和监测网络决定不可见高能暴露是否能被限制、预警和响应 |
 | `chemical-safety-poison-control-toxicology/` | 化学安全、毒物中心和毒理证据决定化学暴露、中毒和混合毒性风险是否能被咨询、监测和治理 |
 | `critical-minerals-materials-resilience/` | 关键矿物、战略材料、替代和回收决定 AI、能源、医疗设备、通信和制造能力是否具备物质输入韧性 |
+| `air-quality-ventilation-exposure-control/` | 空气质量、通风、过滤和暴露治理决定呼吸、认知、感染风险和公共空间连续性是否可维持 |
+| `food-safety-contamination-control/` | 食品安全、污染控制、追溯和召回决定食物是否能作为营养资源而不是感染或毒性入口 |
+| `occupational-exposure-industrial-hygiene/` | 工业卫生和工作暴露控制决定劳动是否保存未来身体能力，而不是把健康寿命换成短期收入 |
+| `medical-device-equipment-safety-maintenance/` | 医疗设备安全、维护、UDI 和召回决定诊断、治疗、监测、生命支持和康复工具是否可靠 |
+| `sterilization-disinfection-infection-control/` | 灭菌、消毒、再处理和感染控制决定医疗与照护环境是否避免制造可预防感染 |
+| `built-environment-accessibility-universal-design/` | 建成环境无障碍和通用设计决定不同能力状态的主体是否能进入、移动、使用和参与 |
 
 ## 来源信号
 
@@ -244,6 +250,12 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | IAEA radiation protection / NRC / EPA RadNet / CDC radiation emergencies | 提示辐射防护、核安全、监测网络和放射性事故治理需要独立风险边界 |
 | EPA TSCA / Poison Help / CDC NIOSH Chemical Safety / WHO Chemical Safety | 提示化学品安全、毒性暴露、毒物中心和风险沟通是化学风险治理基础设施 |
 | USGS Critical Minerals / DOE Critical Materials / IEA Critical Minerals / EU Critical Raw Materials | 提示关键矿物、战略材料、加工、替代、回收和供应韧性约束 AI、能源、医疗设备和制造扩散 |
+| WHO Air Pollution / EPA IAQ / AirNow / CDC NIOSH Ventilation / ASHRAE 241 | 提示空气质量、通风、过滤、气溶胶和烟雾暴露需要独立环境控制域 |
+| WHO Food Safety / CDC Food Safety / FDA Food / USDA FSIS / Codex | 提示食品安全、污染控制、追溯、召回和暴发治理与食物可得/营养质量不同 |
+| NIOSH Hierarchy of Controls / OSHA Industrial Hygiene / ILO OSH / ACGIH | 提示职业暴露、工业卫生和控制层级是工作可持续性的独立失败模式 |
+| FDA Medical Devices / FDA UDI / MAUDE / WHO Medical Devices | 提示医疗设备安全、维护、追踪、不良事件和召回是医学工具链可靠性条件 |
+| CDC Disinfection and Sterilization / WHO IPC / FDA Device Reprocessing | 提示灭菌、消毒、再处理和感染控制是医疗与照护连续性的环境屏障 |
+| U.S. Access Board ADA/ABA / ADA.gov / WHO Disability | 提示建成环境无障碍、通用设计和物理路径连续性是主体行动与参与条件 |
 
 Source links:
 
@@ -610,6 +622,31 @@ Source links:
 - https://www.energy.gov/cmm/critical-materials
 - https://www.iea.org/topics/critical-minerals
 - https://single-market-economy.ec.europa.eu/sectors/raw-materials/areas-specific-interest/critical-raw-materials_en
+- https://www.who.int/health-topics/air-pollution
+- https://www.epa.gov/indoor-air-quality-iaq
+- https://www.airnow.gov/
+- https://www.cdc.gov/niosh/ventilation/
+- https://www.ashrae.org/technical-resources/bookstore/ashrae-standard-241-control-of-infectious-aerosols
+- https://www.who.int/health-topics/food-safety
+- https://www.cdc.gov/food-safety/
+- https://www.fda.gov/food
+- https://www.fsis.usda.gov/
+- https://www.fao.org/fao-who-codexalimentarius/
+- https://www.cdc.gov/niosh/hierarchy-of-controls/
+- https://www.osha.gov/industrial-hygiene
+- https://www.ilo.org/topics/safety-and-health-work
+- https://www.acgih.org/
+- https://www.fda.gov/medical-devices
+- https://www.fda.gov/medical-devices/unique-device-identification-system-udi-system
+- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfmaude/search.cfm
+- https://www.who.int/health-topics/medical-devices
+- https://www.cdc.gov/infection-control/hcp/disinfection-sterilization/
+- https://www.who.int/teams/integrated-health-services/infection-prevention-control
+- https://www.fda.gov/medical-devices/reprocessing-reusable-medical-devices
+- https://www.access-board.gov/ada/
+- https://www.ada.gov/resources/2010-standards/
+- https://www.access-board.gov/aba/
+- https://www.who.int/health-topics/disability
 
 ## 使用规则
 

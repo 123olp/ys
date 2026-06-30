@@ -35,3 +35,4 @@ Current decisions:
 - `0020-add-sixteenth-wave-education-research-standards-cyber-compute-clinical-translation-domains.md`
 - `0021-add-seventeenth-wave-geospatial-weather-building-manufacturing-procurement-one-health-domains.md`
 - `0022-add-eighteenth-wave-lab-blood-waste-radiation-chemical-critical-materials-domains.md`
+- `0023-add-nineteenth-wave-air-food-occupational-device-sterilization-accessibility-domains.md`

@@ -234,6 +234,24 @@ domains/
 ├── critical-minerals-materials-resilience/
 │   ├── AGENTS.md
 │   └── README.md
+├── air-quality-ventilation-exposure-control/
+│   ├── AGENTS.md
+│   └── README.md
+├── food-safety-contamination-control/
+│   ├── AGENTS.md
+│   └── README.md
+├── occupational-exposure-industrial-hygiene/
+│   ├── AGENTS.md
+│   └── README.md
+├── medical-device-equipment-safety-maintenance/
+│   ├── AGENTS.md
+│   └── README.md
+├── sterilization-disinfection-infection-control/
+│   ├── AGENTS.md
+│   └── README.md
+├── built-environment-accessibility-universal-design/
+│   ├── AGENTS.md
+│   └── README.md
 ├── insurance-risk-transfer/
 │   ├── AGENTS.md
 │   └── README.md
@@ -392,6 +410,7 @@ domains/
 - `healthcare-access-continuity/`、`medicine-access-treatment-continuity/`、`patient-data-interoperability/`、`telehealth-remote-monitoring-access/`、`health-data-privacy-governance/`、`functioning-quality-of-life-outcomes/`、`health-economics-value-assessment/`、`clinical-trials-regulatory-science-translation/`、`immunization-public-health-surveillance/`、`animal-health-zoonotic-interface-one-health/`、`maternal-newborn-child-development/`、`patient-safety-organizational-learning/`、`health-workforce-capacity/`、`community-health-workers-peer-support/`、`caregiving-long-term-care/`、`housing-built-environment-stability/`、`building-fire-life-safety-codes/`、`transportation-access-mobility/`、`legal-identity-civil-registration/`、`emergency-preparedness-response/`、`weather-climate-observation-forecasting/`、`emergency-alerts-communications/`、`household-emergency-preparedness-resilience/` 和 `disaster-recovery-relief-continuity/` 负责医疗接入、药品治疗连续性、患者数据互操作、远程照护、健康数据治理、结局评估、价值评估、临床监管转化、公共卫生监测、动物健康界面、早期生命发展、患者安全、健康劳动力、社区中介支持、长期照护、居住空间、建筑消防生命安全、交通可达、法律身份、应急响应、天气气候观测、预警通信、家庭准备和灾后恢复这些服务接入与生活连续性条件。
 - `public-procurement-contracting-capacity/` 负责公共采购、合同、供应商管理、应急采购、透明度和交付验收这些公共能力落地条件。
 - `public-health-laboratory-diagnostic-capacity/`、`blood-organ-tissue-biovigilance-transplantation/`、`waste-management-hazardous-materials-continuity/`、`radiation-nuclear-safety-protection/`、`chemical-safety-poison-control-toxicology/` 和 `critical-minerals-materials-resilience/` 负责风险确认、外部生物材料安全、残余物治理、不可见高能暴露、化学毒理和未来技术物质输入这些外部安全与材料支撑条件。
+- `air-quality-ventilation-exposure-control/`、`food-safety-contamination-control/`、`occupational-exposure-industrial-hygiene/`、`medical-device-equipment-safety-maintenance/`、`sterilization-disinfection-infection-control/` 和 `built-environment-accessibility-universal-design/` 负责可呼吸环境、食物污染控制、工作暴露控制、医疗设备可靠性、感染控制屏障和物理空间可达性这些日常环境与工具可靠性条件。
 - `access-to-justice-legal-aid/`、`civic-participation-election-access/`、`migration-displacement-humanitarian-continuity/` 和 `digital-inclusion-connectivity/` 负责司法可及、公民参与、迁移流离失所人道连续性和数字连接这些制度参与与公共服务接入条件。
 - `personal-safety-violence-prevention/` 和 `product-safety-recall-systems/` 负责暴力预防、受害者支持、产品缺陷报告、召回和纠正这些公共安全连续性条件。
 - `cellular-reprogramming/` 负责山中因子、部分重编程、化学重编程、AI 因子设计和表观遗传编辑等“细胞状态可重写”谱系，不提供实验协议或人体应用建议。

@@ -113,6 +113,12 @@ human_infra/
     ├── radiation-nuclear-safety-protection/ # 辐射与核安全防护
     ├── chemical-safety-poison-control-toxicology/ # 化学安全、中毒控制与毒理响应
     ├── critical-minerals-materials-resilience/ # 关键矿物与材料韧性
+    ├── air-quality-ventilation-exposure-control/ # 空气质量、通风与暴露控制
+    ├── food-safety-contamination-control/ # 食品安全与污染控制
+    ├── occupational-exposure-industrial-hygiene/ # 职业暴露与工业卫生
+    ├── medical-device-equipment-safety-maintenance/ # 医疗器械、设备安全与维护
+    ├── sterilization-disinfection-infection-control/ # 灭菌、消毒与感染控制
+    ├── built-environment-accessibility-universal-design/ # 建成环境无障碍与通用设计
     ├── insurance-risk-transfer/ # 保险与风险转移
     ├── childcare-family-continuity/ # 托育与家庭连续性
     ├── learning-skill-acquisition/ # 学习与技能获得
@@ -250,6 +256,12 @@ human_infra/
 - `domains/radiation-nuclear-safety-protection/` 负责电离辐射防护、核安全、辐射监测、放射性材料风险和辐射应急治理。
 - `domains/chemical-safety-poison-control-toxicology/` 负责化学品安全、毒性暴露、毒物中心、毒理证据、暴露监测和风险沟通。
 - `domains/critical-minerals-materials-resilience/` 负责关键矿物、关键材料、加工依赖、替代回收和未来技术物质输入韧性。
+- `domains/air-quality-ventilation-exposure-control/` 负责空气质量、通风、过滤、气溶胶、烟雾和空气暴露治理。
+- `domains/food-safety-contamination-control/` 负责食源性病原体、毒素、过敏原、检查、追溯和召回。
+- `domains/occupational-exposure-industrial-hygiene/` 负责工作场所化学、物理、生物、粉尘、噪声、热、辐射和皮肤暴露控制。
+- `domains/medical-device-equipment-safety-maintenance/` 负责医疗设备生命周期、不良事件、UDI、召回、维护、网络安全和可用性。
+- `domains/sterilization-disinfection-infection-control/` 负责清洁、消毒、灭菌、再处理、环境感染控制和医疗照护相关感染预防。
+- `domains/built-environment-accessibility-universal-design/` 负责物理空间可达、路径连续、公共设施、通用设计和环境参与条件。
 - `domains/insurance-risk-transfer/` 负责健康、失业、工伤、残障、灾害、存款、养老金等风险转移和风险池。
 - `domains/childcare-family-continuity/` 负责托育可及、托育费用、照护质量、早期儿童发展、父母工作连续性和家庭压力。
 - `domains/emergency-preparedness-response/` 负责灾害准备、预警、应急通信、急救医疗、安置、公共卫生应急和灾后恢复。
@@ -336,3 +348,4 @@ human_infra/
 - 2026-06-30：新增第十六波 6 个教育、科研、标准、网络安全、算力和临床转化域骨架，覆盖教育可及与终身学习、科研基础设施与开放科学转化、标准计量与质量基础设施、网络安全韧性与关键服务、算力数据中心与 AI 基础设施、临床试验与监管科学转化。
 - 2026-06-30：新增第十七波 6 个空间、天气、建筑、制造、采购和 One Health 相关域骨架，覆盖空间定位导航与位置基础设施、天气气候观测与预报、建筑消防与生命安全规范、制造与维修能力、公共采购与合同能力、动物健康与人兽共患界面。
 - 2026-06-30：新增第十八波 6 个实验室、人体材料、废弃物、辐射、化学和关键材料相关域骨架，覆盖公共卫生实验室诊断能力、血液器官组织生物警戒、废弃物危险材料连续性、辐射核安全防护、化学安全中毒控制和关键矿物材料韧性。
+- 2026-06-30：新增第十九波 6 个日常环境与工具可靠性域骨架，覆盖空气质量通风、食品安全污染控制、职业暴露工业卫生、医疗设备安全维护、灭菌消毒感染控制和建成环境无障碍通用设计。

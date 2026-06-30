@@ -194,6 +194,7 @@ flowchart LR
 | 迁移与人道连续性 | UNHCR、IOM、WHO Health and Migration、IDMC、OCHA HDX、INEE | 当人离开原有地点和制度后，身份、医疗、教育、庇护、保护和服务如何不断线 |
 | 媒体信息素养与公共图书馆 | UNESCO Media and Information Literacy、IMLS Public Libraries Survey、ALA Libraries Transform、Digital.gov | 人是否具备寻找、判断、验证和使用信息的能力，并能通过公共图书馆获得可信知识入口和数字支持 |
 | 公民数据与开放政府透明 | Data.gov、Resources.data.gov、FOIA.gov、Open.USA.gov、Federal Data Strategy | 公共系统是否可被观察、审查、复用和反馈，从而支撑问责、服务改进和公共参与 |
+| 日常环境与工具可靠性 | WHO Air Pollution、EPA IAQ、WHO Food Safety、NIOSH Hierarchy of Controls、FDA Medical Devices、CDC Disinfection and Sterilization、U.S. Access Board ADA | 空气、食品、工作暴露、医疗设备、感染控制和物理空间是否把日常生活与照护环境变成可持续行动条件 |
 | 气候与社区韧性底座 | IPCC AR6、WMO Early Warnings for All、NOAA/NCEI、CMRA、CDC Climate and Health | 极端天气、热、洪水、火灾、空气和基础设施中断是否被预警、适应和恢复 |
 | 家庭应急准备与个人韧性 | Red Cross preparedness、Red Cross survival kit、Red Cross make a plan、CDC Prepare Your Health、NOAA Weather-Ready Nation | 灾害前，人是否有家庭计划、物资包、健康准备、风险认知、备用通信和特殊需求安排 |
 | 公共预警与应急通信 | FEMA IPAWS、FCC WEA/EAS、NOAA Weather Radio、Ready.gov、911.gov、FirstNet | 危机信息能否及时到达、求助能否接通、响应者能否持续通信 |
@@ -308,6 +309,12 @@ flowchart TD
     H --> RNSP[radiation-nuclear-safety-protection<br/>辐射 / 核安全防护]
     H --> CSPCT[chemical-safety-poison-control-toxicology<br/>化学安全 / 中毒控制]
     H --> CMMR[critical-minerals-materials-resilience<br/>关键矿物 / 材料韧性]
+    H --> AQVEC[air-quality-ventilation-exposure-control<br/>空气质量 / 通风暴露控制]
+    H --> FSCC[food-safety-contamination-control<br/>食品安全 / 污染控制]
+    H --> OEIH[occupational-exposure-industrial-hygiene<br/>职业暴露 / 工业卫生]
+    H --> MDESM[medical-device-equipment-safety-maintenance<br/>医疗器械 / 设备安全维护]
+    H --> SDIC[sterilization-disinfection-infection-control<br/>灭菌消毒 / 感染控制]
+    H --> BEAUD[built-environment-accessibility-universal-design<br/>建成环境无障碍 / 通用设计]
     H --> SCC[supply-chain-continuity<br/>供应链连续性]
     H --> SBB[synthetic-biology-biosecurity<br/>合成生物学与生物安全]
     H --> SEH[space-extreme-habitation<br/>空间与极端栖居]
@@ -475,6 +482,12 @@ flowchart TD
 | [Radiation Nuclear Safety Protection](domains/radiation-nuclear-safety-protection/README.md) | 电离辐射防护、核安全、辐射监测、放射性材料风险和应急治理 | 把不可见高能暴露转化为可测量、可监管、可限制、可响应的风险对象 | 不提供放射源、核材料、设施、去污、防护、撤离、医疗影像或放疗个体建议 |
 | [Chemical Safety Poison Control Toxicology](domains/chemical-safety-poison-control-toxicology/README.md) | 化学品安全、毒性暴露、毒物中心、毒理证据、暴露监测和风险沟通 | 把化学暴露从孤立判断转化为可咨询、可监测、可监管和可预防的公共能力 | 不提供中毒处理、解毒、化学混配、合成、投毒、规避检测或事故处置建议 |
 | [Critical Minerals Materials Resilience](domains/critical-minerals-materials-resilience/README.md) | 关键矿物、战略材料、加工依赖、替代回收和未来技术物质输入 | 让 AI、能源、医疗设备、制造、通信和科研能力有可规模化、可维修、可替代的物质底座 | 不提供投资、交易、采购、制裁规避、非法采矿、危险回收或受管制物资获取建议 |
+| [Air Quality Ventilation Exposure Control](domains/air-quality-ventilation-exposure-control/README.md) | 室内外空气污染、通风、过滤、气溶胶、烟雾和空气暴露治理 | 让学校、工作、照护和公共空间维持可呼吸、可恢复、可行动的环境 | 不提供医疗、HVAC 设计施工、设备采购、危险环境处置或实时灾害指挥建议 |
+| [Food Safety Contamination Control](domains/food-safety-contamination-control/README.md) | 食源性病原体、毒素、过敏原、检查、追溯、召回和暴发治理 | 防止食物从营养资源转化为感染、毒性、信任和供应链风险入口 | 不提供饮食烹饪、食品加工、污染检测、企业合规、法律或投毒/规避检测建议 |
+| [Occupational Exposure Industrial Hygiene](domains/occupational-exposure-industrial-hygiene/README.md) | 工作场所化学、物理、生物、粉尘、噪声、热、辐射和皮肤暴露控制 | 防止工作以长期身体损耗作为收入和技能获得的隐性成本 | 不提供现场检测、PPE 选择、职业病诊断、工伤法律、事故处置或监管规避建议 |
+| [Medical Device Equipment Safety Maintenance](domains/medical-device-equipment-safety-maintenance/README.md) | 医疗设备生命周期、不良事件、UDI、召回、维护、网络安全和可用性 | 让诊断、治疗、监测、生命支持和康复工具具备可靠运行与纠错能力 | 不提供设备使用、维修、改装、采购、报警处理、临床操作、漏洞利用或医疗建议 |
+| [Sterilization Disinfection Infection Control](domains/sterilization-disinfection-infection-control/README.md) | 清洁、消毒、灭菌、再处理、环境感染控制和 HAI 预防 | 防止医疗、照护和公共空间把服务过程变成感染入口 | 不提供消毒配方、灭菌参数、器械再处理、隔离决策、暴发处置或规避感染控制建议 |
+| [Built Environment Accessibility Universal Design](domains/built-environment-accessibility-universal-design/README.md) | 物理空间可达、路径连续、公共设施、通用设计和环境参与条件 | 让不同身体、感官和认知状态的主体仍能进入、移动、使用、撤离和参与 | 不提供建筑设计施工、验收、个案法律、合理便利、撤离路线或辅助设备建议 |
 | [Oral Health Continuity](domains/oral-health-continuity/README.md) | 牙齿、牙周、咀嚼、疼痛、感染、营养和沟通 | 口腔功能、疼痛、感染、营养和社会参与变量 | 不提供牙科诊断、治疗、药物、手术、器械或个体护理建议 |
 | [Measurement And Feedback](domains/measurement-feedback/README.md) | 状态测量、风险评分、生物标志物、可穿戴、反馈控制 | 指标分类、预测接口和模型反馈边界 | 不输出个体死亡日期、确定寿命预测或医学诊断 |
 
@@ -578,6 +591,12 @@ human_infra/
 │   ├── radiation-nuclear-safety-protection/
 │   ├── chemical-safety-poison-control-toxicology/
 │   ├── critical-minerals-materials-resilience/
+│   ├── air-quality-ventilation-exposure-control/
+│   ├── food-safety-contamination-control/
+│   ├── occupational-exposure-industrial-hygiene/
+│   ├── medical-device-equipment-safety-maintenance/
+│   ├── sterilization-disinfection-infection-control/
+│   ├── built-environment-accessibility-universal-design/
 │   ├── mitochondrial-bioenergetics/
 │   ├── musculoskeletal-integrity/
 │   ├── neuro-continuity/
@@ -717,5 +736,6 @@ flowchart LR
 - 2026-06-30：新增第十二波 6 个治疗、服务理解与劳动保护域，覆盖药品与治疗连续性、患者数据互操作、远程医疗与居家监测、社区资源导航、语言可达与清晰沟通、劳动权利与工作场所保护。
 - 2026-06-30：新增第十三波 6 个数据治理、结局评估与公共卫生安全域，覆盖健康数据隐私治理、功能与生活质量结局、健康经济与价值评估、免疫与公共卫生监测、母婴儿童早期生命、患者安全与组织学习。
 - 2026-06-30：新增第十八波 6 个外部安全、材料和公共健康支撑域，覆盖公共卫生实验室诊断能力、血液器官组织生物警戒、废弃物危险材料连续性、辐射核安全防护、化学安全中毒控制和关键矿物材料韧性。
+- 2026-06-30：新增第十九波 6 个日常环境与工具可靠性域，覆盖空气质量通风、食品安全污染控制、职业暴露工业卫生、医疗设备安全维护、灭菌消毒感染控制和建成环境无障碍通用设计。
 
 完整记录见 [CHANGELOG.md](CHANGELOG.md)。
