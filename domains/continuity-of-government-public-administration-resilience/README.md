@@ -1,0 +1,51 @@
+# Continuity Of Government Public Administration Resilience
+
+政府连续性与公共行政韧性域研究：危机、灾害、网络攻击、疫情、战争、财政冲击或领导层中断时，公共机构如何继续履行基本职能、保存记录、维持授权、递送服务并恢复公共信任。
+
+## 对象
+
+- 政府连续性、业务连续性、基本职能、授权继承、职责代理、记录保存和紧急运行设施。
+- 公共行政韧性、跨机构协调、应急管理、公共服务恢复、采购、支付、身份、福利和信息发布。
+- 政策承诺、预算、人员、数据、通信、地点和供应商依赖如何影响公共服务持续运行。
+- 行政中断对医疗、福利、身份、支付、灾害救济、秩序和公共反馈的影响。
+- 公共机构连续性作为主体持续性的制度底座。
+
+## Human Infra 价值
+
+主体持续性不是个人独立完成的项目。现代人依赖身份证明、医疗、福利、支付、司法、应急、公共卫生和基础设施监管。政府连续性失败时，许多个人级条件会被同时切断。
+
+```text
+公共机构遭遇冲击
+  -> 授权、人员、数据、通信、设施和供应商可能中断
+  -> 连续性计划维持基本职能和公共服务
+  -> 主体仍能获得身份、救济、医疗、支付、信息和恢复路径
+```
+
+## 边界
+
+本域只整理公开的政府连续性、公共行政韧性、公共服务恢复和非操作性制度资料。
+
+不提供：
+
+- 绕过政府系统、规避审计、滥用权限、伪造文件、侵入公共系统或破坏服务的方式。
+- 针对具体机构的安全弱点、应急设施、内部流程或人员安排推断。
+- 法律、福利、税务、身份、采购或行政申诉的个案建议。
+- 把公共行政资料写成政治操作、政权更替、镇压或反镇压指南。
+
+## 上游与下游
+
+- 上游：`public-service-design-accessibility/`、`civic-data-open-government-transparency/`、`cybersecurity-resilience-critical-services/`、`anti-corruption-public-integrity-accountability/`。
+- 下游：`social-protection-benefits-delivery/`、`emergency-preparedness-response/`、`disaster-recovery-relief-continuity/`、`legal-identity-civil-registration/`、`macroeconomic-monetary-fiscal-stability/`。
+
+## 初始资料线索
+
+- FEMA Continuity Guidance Circular: https://www.fema.gov/emergency-managers/national-preparedness/continuity/circular
+- FEMA continuity resources: https://www.fema.gov/emergency-managers/national-preparedness/continuity
+- OECD public governance and resilience materials.
+- UN public administration and disaster risk governance materials.
+
+## 下一步
+
+- 建立公共行政连续性变量表：基本职能、授权代理、记录恢复、支付恢复、人员冗余、通信、服务优先级和恢复时间。
+- 整理 Source Cards：FEMA、OECD、UN、NIST、CISA 等公开资料。
+- 将政府连续性与 `telecommunications-network-resilience-continuity/`、`cybersecurity-resilience-critical-services/` 和 `social-protection-benefits-delivery/` 建立依赖关系。

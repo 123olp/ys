@@ -149,6 +149,12 @@ human_infra/
     ├── personal-knowledge-management-cognitive-offloading/ # 个人知识管理与认知卸载
     ├── brain-computer-interface-neurotechnology-governance/ # 脑机接口、神经技术与治理
     ├── robotics-embodied-assistance-care-automation/ # 机器人、具身辅助与照护自动化
+    ├── armed-conflict-civilian-protection-ihl/ # 武装冲突、平民保护与国际人道法
+    ├── peacebuilding-conflict-prevention-social-cohesion/ # 和平建设、冲突预防与社会凝聚
+    ├── continuity-of-government-public-administration-resilience/ # 政府连续性与公共行政韧性
+    ├── telecommunications-network-resilience-continuity/ # 电信网络韧性与通信连续性
+    ├── macroeconomic-monetary-fiscal-stability/ # 宏观经济、货币与财政稳定
+    ├── anti-corruption-public-integrity-accountability/ # 反腐败、公共廉洁与问责
     ├── insurance-risk-transfer/ # 保险与风险转移
     ├── childcare-family-continuity/ # 托育与家庭连续性
     ├── learning-skill-acquisition/ # 学习与技能获得
@@ -322,6 +328,12 @@ human_infra/
 - `domains/personal-knowledge-management-cognitive-offloading/` 负责个人知识管理、外部记忆、认知卸载、检索、知识库、AI 助手和项目上下文恢复。
 - `domains/brain-computer-interface-neurotechnology-governance/` 负责脑机接口、神经记录、刺激、解码、神经数据、设备安全和神经伦理治理。
 - `domains/robotics-embodied-assistance-care-automation/` 负责机器人、具身辅助、外骨骼、家庭辅助、康复机器人和照护自动化。
+- `domains/armed-conflict-civilian-protection-ihl/` 负责武装冲突中的平民保护、国际人道法、人道准入、医疗中立和冲突服务断点。
+- `domains/peacebuilding-conflict-prevention-social-cohesion/` 负责和平建设、冲突预防、社会凝聚、调解、制度信任和暴力升级风险。
+- `domains/continuity-of-government-public-administration-resilience/` 负责政府连续性、公共行政韧性、基本职能、授权代理、记录、支付和公共服务恢复。
+- `domains/telecommunications-network-resilience-continuity/` 负责电信网络、应急通信、冗余、备电、拥塞、覆盖和通信恢复时间。
+- `domains/macroeconomic-monetary-fiscal-stability/` 负责通胀、就业、财政空间、公共债务、金融稳定和基本成本这些宏观资源条件。
+- `domains/anti-corruption-public-integrity-accountability/` 负责反腐败、公共廉洁、透明、审计、利益冲突、申诉和问责。
 - `domains/insurance-risk-transfer/` 负责健康、失业、工伤、残障、灾害、存款、养老金等风险转移和风险池。
 - `domains/childcare-family-continuity/` 负责托育可及、托育费用、照护质量、早期儿童发展、父母工作连续性和家庭压力。
 - `domains/emergency-preparedness-response/` 负责灾害准备、预警、应急通信、急救医疗、安置、公共卫生应急和灾后恢复。
@@ -414,3 +426,4 @@ human_infra/
 - 2026-06-30：新增第二十波 6 个临床可靠性与急性风险窗口域骨架，覆盖临床检验诊断质量、药物警戒药品安全、药品质量供应完整性、急救医疗服务院前照护、手术麻醉围手术期安全和道路交通伤害预防。
 - 2026-06-30：新增第二十一波 6 个结构性脆弱与连续照护断点域骨架，覆盖农村健康可及、无家可归健康连续性、羁押重返健康连续性、残障独立生活、痴呆认知衰退照护和慢性传染病照护连续性。
 - 2026-06-30：新增第二十二波 6 个危机、剥削与恢复连续性域骨架，覆盖自杀危机响应、物质使用障碍治疗恢复、老年正义成人保护、儿童保护家庭安全、诈骗消费者保护和在线数字伤害预防。
+- 2026-06-30：新增第二十五波 6 个文明连续性、集体安全与宏观制度底座域骨架，覆盖武装冲突平民保护、和平建设冲突预防、政府连续性、电信网络韧性、宏观经济稳定和公共廉洁问责。

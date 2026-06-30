@@ -37,6 +37,7 @@ docs/
 │   ├── 0026-add-twenty-second-wave-crisis-exploitation-recovery-domains.md
 │   ├── 0027-add-twenty-third-wave-complex-care-navigation-transition-decision-domains.md
 │   ├── 0028-add-twenty-fourth-wave-externalized-subject-continuity-domains.md
+│   ├── 0029-add-twenty-fifth-wave-civilizational-continuity-collective-security-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -123,6 +124,7 @@ docs/
 - `domains/suicide-crisis-response-continuity/`、`domains/substance-use-treatment-recovery-continuity/`、`domains/elder-justice-adult-protective-services/`、`domains/child-protection-family-safety/`、`domains/fraud-scams-consumer-protection/` 和 `domains/online-safety-digital-harm-prevention/`：第二十二波正式研究域，分别承载自杀危机响应、物质使用障碍治疗恢复、老年正义成人保护、儿童保护家庭安全、诈骗消费者保护和在线数字伤害预防。
 - `domains/rare-disease-diagnostic-odyssey-care-coordination/`、`domains/multimorbidity-polypharmacy-care-coordination/`、`domains/care-transitions-discharge-continuity/`、`domains/home-health-hospice-palliative-care-continuity/`、`domains/medical-interpreter-cultural-mediation/` 和 `domains/patient-advocacy-shared-decision-making/`：第二十三波正式研究域，分别承载罕见病诊断漫游、多病共存多重用药、照护转移出院连续性、居家/缓和/安宁疗护连续性、医疗解释文化中介和患者倡导共同决策。
 - `domains/life-logging-personal-archives-continuity/`、`domains/digital-legacy-data-succession/`、`domains/wearables-continuous-sensing-personal-informatics/`、`domains/personal-knowledge-management-cognitive-offloading/`、`domains/brain-computer-interface-neurotechnology-governance/` 和 `domains/robotics-embodied-assistance-care-automation/`：第二十四波正式研究域，分别承载生命日志个人档案、数字遗产继承、可穿戴连续感知、个人知识管理认知卸载、脑机接口神经技术治理和机器人具身辅助。
+- `domains/armed-conflict-civilian-protection-ihl/`、`domains/peacebuilding-conflict-prevention-social-cohesion/`、`domains/continuity-of-government-public-administration-resilience/`、`domains/telecommunications-network-resilience-continuity/`、`domains/macroeconomic-monetary-fiscal-stability/` 和 `domains/anti-corruption-public-integrity-accountability/`：第二十五波正式研究域，分别承载武装冲突平民保护、和平建设冲突预防、政府连续性、电信网络韧性、宏观稳定和公共廉洁问责。
 - `reference/research-model-visualization-toolkit.md`：沉淀科研论文阅读、文献脊梁、模型工具、可视化标准和 Human Infra 定量页面实现路线。
 - `reference/source-card-system.md`：定义论文、书籍、工具、案例、标准和数据集进入项目之前的资料卡片制度。
 - `reference/domain-map.md`：定义根项目与子域的边界、迁移切片、主动不做和验证点。

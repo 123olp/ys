@@ -178,6 +178,12 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 认知上下文可外部承载 | `personal-knowledge-management-cognitive-offloading/` | 外部记忆、笔记、检索、知识库、AI 助手、项目上下文恢复 | 工作记忆负担、重复解释、知识丢失和项目重启成本侵蚀创造密度 |
 | 神经接口可被安全治理 | `brain-computer-interface-neurotechnology-governance/` | BCI、神经记录、刺激、解码、神经数据、设备安全、神经伦理 | 高带宽接口变成神经数据滥用、身份边界混乱、不可逆设备风险和强制控制 |
 | 物理行动可被具身辅助 | `robotics-embodied-assistance-care-automation/` | 机器人、外骨骼、家庭辅助、康复机器人、照护自动化 | 能力下降后移动、操作、康复和日常照护负担失控，独立生活窗口缩短 |
+| 武装冲突中平民仍被保护 | `armed-conflict-civilian-protection-ihl/` | IHL、平民保护、人道准入、医疗中立、冲突服务断点 | 战争、占领或武装暴力直接清零生命、身份、医疗、家庭和资源连续性 |
+| 冲突可被预防和降级 | `peacebuilding-conflict-prevention-social-cohesion/` | 社会凝聚、信任、调解、申诉通道、脆弱性 | 社会撕裂、复仇循环、群体暴力和制度失信把长期生活窗口击穿 |
+| 公共行政可连续运行 | `continuity-of-government-public-administration-resilience/` | 基本职能、授权代理、记录、支付、服务恢复 | 危机中身份、福利、救济、医疗、信息和公共服务入口同时中断 |
+| 通信网络可持续连接 | `telecommunications-network-resilience-continuity/` | 网络覆盖、冗余、备电、应急通信、恢复时间 | 警报、求助、支付、医疗、身份、家庭联系和公共服务失联 |
+| 宏观资源系统可稳定 | `macroeconomic-monetary-fiscal-stability/` | 通胀、就业、财政空间、公共债务、金融稳定、基本成本 | 技术和服务存在但不可负担，收入、预算、工作和未来选择权被压缩 |
+| 公共权力可被约束问责 | `anti-corruption-public-integrity-accountability/` | 透明、审计、利益冲突、采购廉洁、申诉、问责 | 预算、法律、医疗、救济和基础设施被私人利益俘获，名义服务失真 |
 | 高成本风险可分摊 | `insurance-risk-transfer/` | 覆盖率、保费、自付、理赔、拒赔、风险池、保障缺口 | 疾病、失业、工伤、残障、灾害或养老金风险由个体独自承担 |
 | 托育和家庭运行可持续 | `childcare-family-continuity/` | 托育可及、费用、质量、早期发展、父母工作连续性、家庭压力 | 儿童发展受损、照护者工作中断、时间贫困和家庭压力升级 |
 | 应急响应可接住主体 | `emergency-preparedness-response/` | 灾害准备、预警、应急通信、急救医疗、安置、公共卫生应急、恢复 | 低频高冲击事件一次性清零长期积累，通信、医疗、撤离或恢复失败 |
@@ -205,6 +211,7 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
   -> 风险函数压低
   -> 资源环境支撑
   -> 外部技术底座可控
+  -> 文明连续性、集体安全与宏观制度底座可维持
   -> 制度治理保护
   -> 测量、预测与反馈
   -> 各研究域通过证据、模型和治理进入同一个主体持续性系统
@@ -362,6 +369,12 @@ risk-engineering
   -> personal-knowledge-management-cognitive-offloading
   -> brain-computer-interface-neurotechnology-governance
   -> robotics-embodied-assistance-care-automation
+  -> armed-conflict-civilian-protection-ihl
+  -> peacebuilding-conflict-prevention-social-cohesion
+  -> continuity-of-government-public-administration-resilience
+  -> telecommunications-network-resilience-continuity
+  -> macroeconomic-monetary-fiscal-stability
+  -> anti-corruption-public-integrity-accountability
   -> insurance-risk-transfer
   -> childcare-family-continuity
   -> emergency-preparedness-response

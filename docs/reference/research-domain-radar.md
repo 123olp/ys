@@ -169,6 +169,12 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `personal-knowledge-management-cognitive-offloading/` | 个人知识管理和认知卸载决定记忆、任务、资料和项目上下文能否跨时间被恢复和复用 |
 | `brain-computer-interface-neurotechnology-governance/` | 脑机接口和神经技术治理决定高带宽神经-工具接口能否扩展能力而不破坏同意、身份和神经隐私 |
 | `robotics-embodied-assistance-care-automation/` | 机器人和具身辅助决定工具增强能否从信息层进入移动、操作、康复和照护等物理行动层 |
+| `armed-conflict-civilian-protection-ihl/` | 武装冲突平民保护决定战争和武装暴力中生命、医疗、身份、资源和家庭连续性是否仍有最低保障 |
+| `peacebuilding-conflict-prevention-social-cohesion/` | 和平建设、冲突预防和社会凝聚决定社会裂缝是否会升级为暴力、流离失所和制度崩塌 |
+| `continuity-of-government-public-administration-resilience/` | 政府连续性和公共行政韧性决定危机中身份、福利、支付、医疗、信息和公共服务是否还能运行 |
+| `telecommunications-network-resilience-continuity/` | 电信网络韧性决定警报、求助、支付、医疗、身份和家庭联系是否会因通信中断同时失效 |
+| `macroeconomic-monetary-fiscal-stability/` | 宏观经济、货币和财政稳定决定基本生活成本、公共预算、就业、健康投资和技术可及性是否可承受 |
+| `anti-corruption-public-integrity-accountability/` | 公共廉洁和问责决定公共预算、采购、监管、福利、医疗和基础设施是否被私人利益俘获 |
 
 ## 来源信号
 
@@ -316,6 +322,12 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | Clark and Chalmers Extended Mind / Engelbart Augmenting Human Intellect / PKM literature | 提示外部记忆、知识库、检索和 AI 助手是认知增强之外的独立认知卸载与上下文恢复域 |
 | FDA BCI guidance / NIH BRAIN Initiative / neuroethics literature | 提示脑机接口、神经记录、刺激、解码、神经数据和设备安全需要独立神经技术治理域 |
 | NIST Robotics / assistive robotics and human-robot interaction literature | 提示机器人、外骨骼、具身辅助和照护自动化需要独立处理物理行动增强、安全、维护和责任边界 |
+| ICRC international humanitarian law / civilian protection materials | 提示武装冲突会同时破坏生命、医疗、身份、家庭和资源连续性，平民保护需要独立域边界 |
+| UN conflict prevention / World Bank fragility conflict violence / OECD States of Fragility | 提示和平建设、社会凝聚和冲突预防是避免主体持续性被集体暴力清零的上游条件 |
+| FEMA Continuity Guidance Circular / continuity resources | 提示政府连续性、基本职能、授权代理、记录和公共服务恢复是现代主体服务入口的制度底座 |
+| CISA Communications Sector / National Emergency Communications Plan | 提示通信网络、公共安全通信、冗余、备电和恢复时间是警报、求助、服务和协作的外部连接层 |
+| IMF World Economic Outlook / Fiscal Monitor / monetary policy materials | 提示通胀、就业、财政空间、公共债务和金融稳定会改变生活成本、公共服务和未来选择权 |
+| OECD Public Integrity / UNODC UNCAC | 提示公共廉洁、透明、审计、利益冲突和问责是公共资源真正进入主体持续性系统的前提 |
 
 Source links:
 
@@ -780,6 +792,18 @@ Source links:
 - https://www.fda.gov/regulatory-information/search-fda-guidance-documents/implanted-brain-computer-interface-bci-devices-patients-paralysis-or-amputation-non-clinical-testing
 - https://braininitiative.nih.gov/
 - https://www.nist.gov/el/robotics
+- https://www.icrc.org/en/law-and-policy/protected-persons-civilians
+- https://www.icrc.org/en/law-and-policy/geneva-conventions-and-their-commentaries
+- https://www.un.org/en/peaceandsecurity/preventingconflictsustainingpeace
+- https://www.worldbank.org/en/topic/fragilityconflictviolence
+- https://www.oecd.org/en/topics/states-of-fragility.html
+- https://www.fema.gov/emergency-managers/national-preparedness/continuity/circular
+- https://www.cisa.gov/topics/critical-infrastructure-security-and-resilience/critical-infrastructure-sectors/communications-sector
+- https://www.cisa.gov/resources-tools/resources/national-emergency-communications-plan
+- https://www.imf.org/en/Publications/WEO
+- https://www.imf.org/en/Publications/FM
+- https://www.oecd.org/en/topics/public-integrity.html
+- https://www.unodc.org/unodc/en/corruption/uncac.html
 
 ## 使用规则
 

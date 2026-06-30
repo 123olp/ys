@@ -44,6 +44,7 @@ docs/
 │   ├── 0026-add-twenty-second-wave-crisis-exploitation-recovery-domains.md
 │   ├── 0027-add-twenty-third-wave-complex-care-navigation-transition-decision-domains.md
 │   ├── 0028-add-twenty-fourth-wave-externalized-subject-continuity-domains.md
+│   ├── 0029-add-twenty-fifth-wave-civilizational-continuity-collective-security-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -191,4 +192,10 @@ docs/
 92. Read `../domains/personal-knowledge-management-cognitive-offloading/README.md` if you are working on personal knowledge management, cognitive offloading, external memory, notes, retrieval, knowledge bases, or AI-assisted context recovery.
 93. Read `../domains/brain-computer-interface-neurotechnology-governance/README.md` if you are working on brain-computer interfaces, neural recording, neural stimulation, neural data, neuroethics, or BCI governance.
 94. Read `../domains/robotics-embodied-assistance-care-automation/README.md` if you are working on robotics, embodied assistance, exoskeletons, care automation, service robots, or rehabilitation robots.
-95. Enter a domain under `../domains/`.
+95. Read `../domains/armed-conflict-civilian-protection-ihl/README.md` if you are working on armed conflict, IHL, civilian protection, humanitarian access, or conflict service continuity.
+96. Read `../domains/peacebuilding-conflict-prevention-social-cohesion/README.md` if you are working on peacebuilding, conflict prevention, social cohesion, mediation, or fragility.
+97. Read `../domains/continuity-of-government-public-administration-resilience/README.md` if you are working on continuity of government, public administration resilience, essential functions, or public service recovery.
+98. Read `../domains/telecommunications-network-resilience-continuity/README.md` if you are working on telecommunications networks, emergency communications, broadband resilience, backup power, or outage recovery.
+99. Read `../domains/macroeconomic-monetary-fiscal-stability/README.md` if you are working on inflation, employment, fiscal space, public debt, financial stability, or macro resource constraints.
+100. Read `../domains/anti-corruption-public-integrity-accountability/README.md` if you are working on anti-corruption, public integrity, transparency, audit, accountability, or public resource capture.
+101. Enter a domain under `../domains/`.

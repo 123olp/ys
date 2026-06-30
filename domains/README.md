@@ -124,6 +124,12 @@
 - `personal-knowledge-management-cognitive-offloading/`：个人知识管理与认知卸载，整理外部记忆、笔记、检索、知识库、AI 助手和项目上下文恢复。
 - `brain-computer-interface-neurotechnology-governance/`：脑机接口、神经技术与治理，整理神经记录、刺激、解码、神经数据、设备安全和神经伦理。
 - `robotics-embodied-assistance-care-automation/`：机器人、具身辅助与照护自动化，整理服务机器人、外骨骼、家庭辅助、康复机器人和照护自动化。
+- `armed-conflict-civilian-protection-ihl/`：武装冲突、平民保护与国际人道法，整理冲突中生命、医疗、身份、资源和人道服务连续性。
+- `peacebuilding-conflict-prevention-social-cohesion/`：和平建设、冲突预防与社会凝聚，整理社会信任、申诉通道、调解、脆弱性和暴力升级风险。
+- `continuity-of-government-public-administration-resilience/`：政府连续性与公共行政韧性，整理基本职能、授权代理、记录、支付、公共服务和危机恢复。
+- `telecommunications-network-resilience-continuity/`：电信网络韧性与通信连续性，整理通信网络、应急通信、冗余、备电、拥塞和恢复时间。
+- `macroeconomic-monetary-fiscal-stability/`：宏观经济、货币与财政稳定，整理通胀、就业、财政空间、公共债务、金融稳定和基本成本。
+- `anti-corruption-public-integrity-accountability/`：反腐败、公共廉洁与问责，整理透明、审计、利益冲突、采购廉洁、申诉和公共资源俘获风险。
 - `insurance-risk-transfer/`：保险与风险转移，整理健康、失业、工伤、残障、灾害、存款、养老金等风险池和保障缺口。
 - `childcare-family-continuity/`：托育与家庭连续性，整理托育可及、费用、质量、早期儿童发展、父母工作连续性和家庭压力。
 - `emergency-preparedness-response/`：应急准备与响应，整理灾害准备、预警、应急通信、急救医疗、安置和恢复。

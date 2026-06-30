@@ -342,6 +342,24 @@ domains/
 ├── robotics-embodied-assistance-care-automation/
 │   ├── AGENTS.md
 │   └── README.md
+├── armed-conflict-civilian-protection-ihl/
+│   ├── AGENTS.md
+│   └── README.md
+├── peacebuilding-conflict-prevention-social-cohesion/
+│   ├── AGENTS.md
+│   └── README.md
+├── continuity-of-government-public-administration-resilience/
+│   ├── AGENTS.md
+│   └── README.md
+├── telecommunications-network-resilience-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── macroeconomic-monetary-fiscal-stability/
+│   ├── AGENTS.md
+│   └── README.md
+├── anti-corruption-public-integrity-accountability/
+│   ├── AGENTS.md
+│   └── README.md
 ├── insurance-risk-transfer/
 │   ├── AGENTS.md
 │   └── README.md
@@ -506,6 +524,7 @@ domains/
 - `suicide-crisis-response-continuity/`、`substance-use-treatment-recovery-continuity/`、`elder-justice-adult-protective-services/`、`child-protection-family-safety/`、`fraud-scams-consumer-protection/` 和 `online-safety-digital-harm-prevention/` 负责自杀危机响应、物质使用障碍治疗恢复、老年正义成人保护、儿童保护家庭安全、诈骗消费者保护和在线数字伤害预防这些危机、剥削与恢复连续性条件。
 - `rare-disease-diagnostic-odyssey-care-coordination/`、`multimorbidity-polypharmacy-care-coordination/`、`care-transitions-discharge-continuity/`、`home-health-hospice-palliative-care-continuity/`、`medical-interpreter-cultural-mediation/` 和 `patient-advocacy-shared-decision-making/` 负责罕见病诊断漫游、多病共存多重用药、照护转移、居家/缓和/安宁疗护、医疗解释文化中介和患者共同决策这些复杂照护导航、交接与决策连续性条件。
 - `life-logging-personal-archives-continuity/`、`digital-legacy-data-succession/`、`wearables-continuous-sensing-personal-informatics/`、`personal-knowledge-management-cognitive-offloading/`、`brain-computer-interface-neurotechnology-governance/` 和 `robotics-embodied-assistance-care-automation/` 负责生命日志个人档案、数字遗产继承、连续感知、个人知识管理、神经接口治理和具身辅助这些外部化主体连续性条件。
+- `armed-conflict-civilian-protection-ihl/`、`peacebuilding-conflict-prevention-social-cohesion/`、`continuity-of-government-public-administration-resilience/`、`telecommunications-network-resilience-continuity/`、`macroeconomic-monetary-fiscal-stability/` 和 `anti-corruption-public-integrity-accountability/` 负责武装冲突平民保护、和平建设、政府连续性、通信网络韧性、宏观稳定和公共廉洁这些文明连续性与集体安全条件。
 - `access-to-justice-legal-aid/`、`civic-participation-election-access/`、`migration-displacement-humanitarian-continuity/` 和 `digital-inclusion-connectivity/` 负责司法可及、公民参与、迁移流离失所人道连续性和数字连接这些制度参与与公共服务接入条件。
 - `personal-safety-violence-prevention/` 和 `product-safety-recall-systems/` 负责暴力预防、受害者支持、产品缺陷报告、召回和纠正这些公共安全连续性条件。
 - `cellular-reprogramming/` 负责山中因子、部分重编程、化学重编程、AI 因子设计和表观遗传编辑等“细胞状态可重写”谱系，不提供实验协议或人体应用建议。
