@@ -191,6 +191,14 @@ human_infra/
     ├── search-index-discovery-retrieval-continuity/ # 搜索、索引、发现与检索连续性
     ├── personal-automation-integration-workflow-continuity/ # 个人自动化、集成与工作流连续性
     ├── collaborative-document-permission-version-continuity/ # 协作文档、权限与版本连续性
+    ├── home-access-lock-key-entry-continuity/ # 住所进入、钥匙与门禁连续性
+    ├── household-appliance-maintenance-repair-continuity/ # 家用电器维护与维修连续性
+    ├── home-refrigeration-food-storage-continuity/ # 家庭冷藏与食品保存连续性
+    ├── cooking-meal-preparation-kitchen-safety-continuity/ # 烹饪备餐与厨房安全连续性
+    ├── laundry-clothing-footwear-hygiene-continuity/ # 洗衣、衣物、鞋履与卫生连续性
+    ├── household-cleaning-disinfection-pest-control-continuity/ # 家庭清洁、消毒与害虫控制连续性
+    ├── postal-parcel-delivery-pickup-continuity/ # 邮件、包裹、投递与自提连续性
+    ├── household-maintenance-repair-contractor-continuity/ # 家庭维修、承包商与修复服务连续性
     ├── cognitive-augmentation/ # 认知增强与工具放大
     ├── digital-identity-security/ # 数字身份安全
     ├── disembodied-cns/   # 去具身外部维持型中枢生命系统
@@ -585,6 +593,7 @@ human_infra/
 - `domains/email-account-recovery-continuity/`、`domains/phone-number-sim-portability-account-security-continuity/`、`domains/mfa-passkey-credential-recovery-continuity/`、`domains/password-manager-secret-vault-continuity/`、`domains/cloud-backup-file-sync-data-portability-continuity/`、`domains/messaging-contact-graph-portability-continuity/`、`domains/domain-dns-web-presence-continuity/` 和 `domains/platform-account-suspension-appeals-continuity/` 负责邮箱账号恢复、手机号 SIM 携转安全、MFA/passkey 凭证恢复、密码管理器密钥库、云备份文件同步数据可携带、消息联系人图谱可携带、域名 DNS Web 存在和平台账号停权申诉这些数字账户与通信可达连续性条件。
 - `domains/personal-computing-device-lifecycle-repair-continuity/`、`domains/home-network-router-iot-security-continuity/`、`domains/software-supply-chain-dependency-provenance-continuity/`、`domains/software-update-vulnerability-patch-continuity/`、`domains/open-source-maintainer-sustainability-continuity/`、`domains/pki-certificate-cryptographic-trust-continuity/`、`domains/cloud-service-exit-interoperability-continuity/` 和 `domains/api-platform-dependency-runtime-continuity/` 负责个人计算设备生命周期维修、家庭网络路由器 IoT 安全、软件供应链来源证明、软件更新补丁、开源维护者可持续、PKI 证书密码信任、云服务退出互操作和 API 平台运行时依赖这些软件、设备与信任连续性条件。
 - `domains/calendar-scheduling-appointment-continuity/`、`domains/notification-alert-routing-attention-continuity/`、`domains/reminder-alarm-routine-task-continuity/`、`domains/meeting-video-conferencing-remote-collaboration-continuity/`、`domains/document-capture-ocr-pdf-record-workflow-continuity/`、`domains/search-index-discovery-retrieval-continuity/`、`domains/personal-automation-integration-workflow-continuity/` 和 `domains/collaborative-document-permission-version-continuity/` 负责日历排程预约、通知警报路由、提醒闹钟例行任务、会议视频远程协作、文件捕获 OCR PDF 记录流、搜索索引发现检索、个人自动化集成工作流和协作文档权限版本这些个人操作与任务协调连续性条件。
+- `domains/home-access-lock-key-entry-continuity/`、`domains/household-appliance-maintenance-repair-continuity/`、`domains/home-refrigeration-food-storage-continuity/`、`domains/cooking-meal-preparation-kitchen-safety-continuity/`、`domains/laundry-clothing-footwear-hygiene-continuity/`、`domains/household-cleaning-disinfection-pest-control-continuity/`、`domains/postal-parcel-delivery-pickup-continuity/` 和 `domains/household-maintenance-repair-contractor-continuity/` 负责住所进入、家电维护、家庭冷藏、烹饪备餐、衣物鞋履卫生、家庭清洁消毒害虫控制、邮件包裹接收和家庭维修承包商这些家庭物理运行连续性条件。
 - `domains/disembodied-cns/` 负责去具身外部维持型中枢生命系统的高层架构建模，不提供实验操作协议。
 - `domains/memory-editing/` 负责记忆编辑的概念、证据、验证和伦理边界，不提供可执行神经操控步骤。
 - `domains/biostasis-cryopreservation/` 负责冷冻保存、生物停滞、休眠和等待未来修复路径。

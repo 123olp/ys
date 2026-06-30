@@ -321,6 +321,14 @@
 - `search-index-discovery-retrieval-continuity/`：搜索、索引、发现与检索连续性，整理搜索、索引、元数据、sitemap、schema、目录、断链和来源验证。
 - `personal-automation-integration-workflow-continuity/`：个人自动化、集成与工作流连续性，整理触发器、动作、webhook、OAuth、脚本、日志和人工中止。
 - `collaborative-document-permission-version-continuity/`：协作文档、权限与版本连续性，整理共享文档、权限、所有者、评论、版本历史、导出和归档。
+- `home-access-lock-key-entry-continuity/`：住所进入、钥匙与门禁连续性，整理钥匙、门锁、智能锁、访客授权、紧急出入和权限断点。
+- `household-appliance-maintenance-repair-continuity/`：家用电器维护与维修连续性，整理家用设备生命周期、召回、维修、替换、能效和安全故障。
+- `home-refrigeration-food-storage-continuity/`：家庭冷藏与食品保存连续性，整理冷藏、冷冻、停电、温度控制、食品保存和家庭端食品安全。
+- `cooking-meal-preparation-kitchen-safety-continuity/`：烹饪备餐与厨房安全连续性，整理烹饪设备、备餐流程、食品处理、厨房火灾、烫伤和交叉污染风险。
+- `laundry-clothing-footwear-hygiene-continuity/`：洗衣、衣物、鞋履与卫生连续性，整理换洗、衣物维护、鞋履、天气防护、卫生用品和参与尊严。
+- `household-cleaning-disinfection-pest-control-continuity/`：家庭清洁、消毒与害虫控制连续性，整理表面清洁、消毒、化学品安全、害虫控制和室内卫生。
+- `postal-parcel-delivery-pickup-continuity/`：邮件、包裹、投递与自提连续性，整理邮件包裹、签收、自提、追踪、地址错配和最后一公里接收。
+- `household-maintenance-repair-contractor-continuity/`：家庭维修、承包商与修复服务连续性，整理维修请求、承包商、报价、许可、记录、投诉和修复恢复。
 - `supply-chain-continuity/`：供应链连续性，整理关键物资、服务、物流、替代路径和恢复时间。
 - `synthetic-biology-biosecurity/`：合成生物学与生物安全，整理双重用途、生物安全、生物安保和治理边界。
 - `space-extreme-habitation/`：空间与极端栖居，整理辐射、微重力、隔离、闭环资源和远程医疗风险。

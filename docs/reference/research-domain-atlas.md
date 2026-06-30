@@ -20,6 +20,7 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
   -> 学习、技能、授权和合规状态必须可被长期证明、核验、携带和恢复
   -> 家庭事实、生命事件、姓名、地址、监护和儿童安置关系必须可被制度持续识别
   -> 工具和认知系统必须放大主体而不是吞噬主体
+  -> 家庭物理操作系统必须让住所、食物、卫生、物品、投递和维修可连续
   -> 数字身份、AI 代理、供应链、生物安全和极端栖居等外部技术底座必须可控
   -> 治理和权利必须保护同意、退出和身份
   -> 测量、预测和反馈必须让维护过程可校正
@@ -254,6 +255,14 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 资料必须能被发现和检索 | `search-index-discovery-retrieval-continuity/` | 搜索、索引、元数据、sitemap、schema、目录、断链、来源验证 | 资料存在但找不到、搜不准、链接坏掉或来源不明会让外部记忆和组织知识失效 |
 | 重复流程必须可自动化且可控 | `personal-automation-integration-workflow-continuity/` | 触发器、动作、webhook、OAuth、脚本、日志、人工中止 | 自动化静默失败、权限过宽、平台锁定或重复提交会把降本工具变成隐形风险 |
 | 协作文档必须保留权限与版本 | `collaborative-document-permission-version-continuity/` | 共享文档、权限、所有者、评论、版本历史、导出、归档 | 权限断裂、所有者离开、链接失效或版本丢失会切断团队记忆、证据和行动项 |
+| 住所必须可进入 | `home-access-lock-key-entry-continuity/` | 钥匙、锁具、门禁、访客授权、紧急出入 | 住所进不去、权限丢失、锁具失效或逃生路径被阻断会切断睡眠、药品、文件、设备和照护 |
+| 家用设备必须可维护 | `household-appliance-maintenance-repair-continuity/` | 家电生命周期、召回、维修、替换、能效、安全故障 | 设备停摆、维修延迟或召回漏接会让食物、清洁、洗衣、温控和照护任务断裂 |
+| 家庭冷藏必须保全营养输入 | `home-refrigeration-food-storage-continuity/` | 冷藏、冷冻、停电、温度控制、食品保存 | 温度失控、停电或设备故障会把食物资源转成浪费、感染风险和预算损失 |
+| 烹饪备餐必须安全可持续 | `cooking-meal-preparation-kitchen-safety-continuity/` | 烹饪设备、备餐、食品处理、厨房火灾、烫伤、交叉污染 | 烹饪链失效会把营养输入转成火灾、伤害、食源性风险和时间损耗 |
+| 衣物鞋履卫生必须支撑外出与尊严 | `laundry-clothing-footwear-hygiene-continuity/` | 洗衣、衣物、鞋履、天气防护、卫生用品 | 换洗、鞋履或防护断裂会压缩工作、学习、照护、社交和恢复 |
+| 家庭卫生必须可治理 | `household-cleaning-disinfection-pest-control-continuity/` | 清洁、消毒、化学品安全、害虫控制、室内卫生 | 清洁不足、化学误用或害虫暴露会制造感染、过敏、毒性和居住压力 |
+| 邮件包裹必须可接收 | `postal-parcel-delivery-pickup-continuity/` | 邮件、包裹、签收、自提、追踪、地址同步 | 文件、药品、设备、账单或身份材料收不到会切断远程服务和物理资源交付 |
+| 家庭故障必须可被可信维修 | `household-maintenance-repair-contractor-continuity/` | 维修请求、承包商、报价、许可、投诉、维修记录 | 维修延误、诈骗、无证服务或记录缺失会让住房、设备、水电、卫生和安全持续恶化 |
 | 栖居空间可保护生命 | `building-fire-life-safety-codes/` | 建筑规范、消防规范、疏散、烟雾报警、无障碍、结构韧性 | 居住、照护、学习、工作和公共空间成为火灾、烟雾、结构和疏散风险源 |
 | 关键物质系统可制造修复 | `manufacturing-repair-capacity/` | 制造、维修、维护、备件、质量、本地生产、关键设备恢复 | 设备损坏、备件短缺、质量缺陷和生产能力不足导致服务与工具系统失效 |
 | 公共预算可转化为服务 | `public-procurement-contracting-capacity/` | 公共采购、合同、供应商管理、应急采购、透明度、交付验收 | 有预算和政策但采购失败、合同失效、腐败、延误或劣质交付 |
@@ -601,6 +610,14 @@ risk-engineering
   -> search-index-discovery-retrieval-continuity
   -> personal-automation-integration-workflow-continuity
   -> collaborative-document-permission-version-continuity
+  -> home-access-lock-key-entry-continuity
+  -> household-appliance-maintenance-repair-continuity
+  -> home-refrigeration-food-storage-continuity
+  -> cooking-meal-preparation-kitchen-safety-continuity
+  -> laundry-clothing-footwear-hygiene-continuity
+  -> household-cleaning-disinfection-pest-control-continuity
+  -> postal-parcel-delivery-pickup-continuity
+  -> household-maintenance-repair-contractor-continuity
   -> community-resource-navigation
   -> social-determinants-community-vulnerability
   -> public-service-design-accessibility

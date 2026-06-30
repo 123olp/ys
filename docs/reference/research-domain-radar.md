@@ -340,6 +340,14 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `search-index-discovery-retrieval-continuity/` | 搜索、索引和发现决定资料、服务、记录和知识上下文是否能在需要时被找到和验证 |
 | `personal-automation-integration-workflow-continuity/` | 个人自动化和工作流集成决定重复任务能否被可靠编排，并保留日志、权限边界和人工中止 |
 | `collaborative-document-permission-version-continuity/` | 协作文档权限和版本决定共同资料、评论、决策、证据和行动项是否可授权、可迁移、可恢复 |
+| `home-access-lock-key-entry-continuity/` | 住所进入、钥匙、锁具和门禁决定主体能否稳定返回睡眠、药品、文件、设备和照护所在的本地恢复空间 |
+| `household-appliance-maintenance-repair-continuity/` | 家用电器维护、召回、维修和替换决定家庭食物、清洁、洗衣、温控和照护任务是否持续可运行 |
+| `home-refrigeration-food-storage-continuity/` | 家庭冷藏、冷冻和食品保存决定营养输入是否在停电、设备故障和温度失控中变成腐坏、浪费或感染风险 |
+| `cooking-meal-preparation-kitchen-safety-continuity/` | 烹饪备餐和厨房安全决定食物能否从原料转成可食用营养，同时避免火灾、烫伤和交叉污染 |
+| `laundry-clothing-footwear-hygiene-continuity/` | 洗衣、衣物、鞋履和卫生用品决定主体能否维持外出、工作、学习、照护、尊严和天气防护 |
+| `household-cleaning-disinfection-pest-control-continuity/` | 家庭清洁、消毒和害虫控制决定居住空间是否在感染、过敏、毒性和虫害暴露中保持可恢复 |
+| `postal-parcel-delivery-pickup-continuity/` | 邮件、包裹、签收、自提和地址同步决定证件、药品、设备、账单和关键物资能否从外部系统抵达主体 |
+| `household-maintenance-repair-contractor-continuity/` | 家庭维修、承包商、报价、许可、投诉和记录决定住房、设备、水电、卫生和安全故障能否被可信修复 |
 
 ## 来源信号
 
@@ -352,6 +360,14 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | Sitemaps, Schema.org, W3C Data on the Web | 提示资料存在不等于资料可用，元数据、索引、发现、断链和来源验证需要独立研究域 |
 | OpenAPI, OAuth, Webhook and platform deprecation docs | 提示个人自动化和集成工作流把重复任务外包给平台能力，同时引入权限、限流、静默失败和退出风险 |
 | OASIS ODF, OOXML, WebDAV and records-management references | 提示协作文档的权限、版本、所有者、导出和长期可读性是团队记忆与任务协作连续性的独立条件 |
+| NFPA escape planning, CPSC recalls, smart-home and IoT consumer guidance | 提示住所进入、锁具、门禁和紧急出入是住房可用性的独立操作层 |
+| DOE appliance standards, ENERGY STAR and CPSC recalls | 提示家用电器把能源、食品、清洁、温控和安全风险连接到家庭任务连续性 |
+| USDA FSIS, FDA and CDC food safety | 提示家庭冷藏和食品保存是食物系统进入家庭后的独立风险窗口 |
+| USDA / CDC food safety and NFPA cooking safety | 提示烹饪备餐同时连接营养、火灾、伤害和食源性风险 |
+| CDC hygiene, Ready.gov and NIOSH | 提示衣物、鞋履、洗衣和卫生用品影响尊严、外出、工作和灾害恢复 |
+| CDC cleaning, EPA pesticide labels, NPIC and Poison Help | 提示家庭清洁消毒和害虫控制具有独立的感染、化学和毒性边界 |
+| USPS, UPU and FTC consumer guidance | 提示邮件包裹把数字交易、证件、药品和物理资源交付连接到主体 |
+| FTC home improvement scams, FEMA recovery and CPSC recalls | 提示家庭维修服务连接住房故障、消费者保护、灾后恢复和承包商风险 |
 | Hallmarks of Aging: An Expanding Universe | 提示基因组稳定性、端粒、蛋白稳态、自噬、营养感知、线粒体、细胞衰老、干细胞耗竭、细胞通讯、慢性炎症和菌群失调等候选机制 |
 | WHO Social Determinants of Health | 提示资源、权力、生活环境、工作、社会条件对健康和持续性的基础作用 |
 | Healthy People 2030 SDOH framework | 提示经济稳定、教育、医疗可及、社区环境、社会与社区情境可作为资源基础设施维度 |

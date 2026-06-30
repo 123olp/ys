@@ -67,3 +67,4 @@ Current decisions:
 - `0052-add-forty-eighth-wave-digital-account-continuity-domains.md`
 - `0053-add-forty-ninth-wave-software-device-trust-continuity-domains.md`
 - `0054-add-fiftieth-wave-personal-operations-continuity-domains.md`
+- `0055-add-fifty-first-wave-household-operations-continuity-domains.md`

@@ -63,6 +63,7 @@ docs/
 │   ├── 0052-add-forty-eighth-wave-digital-account-continuity-domains.md
 │   ├── 0053-add-forty-ninth-wave-software-device-trust-continuity-domains.md
 │   ├── 0054-add-fiftieth-wave-personal-operations-continuity-domains.md
+│   ├── 0055-add-fifty-first-wave-household-operations-continuity-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -175,6 +176,7 @@ docs/
 - `domains/email-account-recovery-continuity/`、`domains/phone-number-sim-portability-account-security-continuity/`、`domains/mfa-passkey-credential-recovery-continuity/`、`domains/password-manager-secret-vault-continuity/`、`domains/cloud-backup-file-sync-data-portability-continuity/`、`domains/messaging-contact-graph-portability-continuity/`、`domains/domain-dns-web-presence-continuity/` 和 `domains/platform-account-suspension-appeals-continuity/`：第四十八波正式研究域，分别承载邮箱账号恢复、手机号/SIM/携转安全、MFA/passkey 凭证恢复、密码管理器密钥库、云备份文件同步数据可携带、消息联系人图谱可携带、域名 DNS Web 存在和平台账号停权申诉连续性。
 - `domains/personal-computing-device-lifecycle-repair-continuity/`、`domains/home-network-router-iot-security-continuity/`、`domains/software-supply-chain-dependency-provenance-continuity/`、`domains/software-update-vulnerability-patch-continuity/`、`domains/open-source-maintainer-sustainability-continuity/`、`domains/pki-certificate-cryptographic-trust-continuity/`、`domains/cloud-service-exit-interoperability-continuity/` 和 `domains/api-platform-dependency-runtime-continuity/`：第四十九波正式研究域，分别承载个人计算设备生命周期维修、家庭网络路由器 IoT 安全、软件供应链依赖来源证明、软件更新漏洞补丁、开源维护者可持续、PKI 证书密码信任、云服务退出互操作和 API 平台运行时依赖连续性。
 - `domains/calendar-scheduling-appointment-continuity/`、`domains/notification-alert-routing-attention-continuity/`、`domains/reminder-alarm-routine-task-continuity/`、`domains/meeting-video-conferencing-remote-collaboration-continuity/`、`domains/document-capture-ocr-pdf-record-workflow-continuity/`、`domains/search-index-discovery-retrieval-continuity/`、`domains/personal-automation-integration-workflow-continuity/` 和 `domains/collaborative-document-permission-version-continuity/`：第五十波正式研究域，分别承载日历排程预约、通知警报路由、提醒闹钟例行任务、会议视频远程协作、文件捕获 OCR PDF 记录流、搜索索引发现检索、个人自动化集成工作流和协作文档权限版本连续性。
+- `domains/home-access-lock-key-entry-continuity/`、`domains/household-appliance-maintenance-repair-continuity/`、`domains/home-refrigeration-food-storage-continuity/`、`domains/cooking-meal-preparation-kitchen-safety-continuity/`、`domains/laundry-clothing-footwear-hygiene-continuity/`、`domains/household-cleaning-disinfection-pest-control-continuity/`、`domains/postal-parcel-delivery-pickup-continuity/` 和 `domains/household-maintenance-repair-contractor-continuity/`：第五十一波正式研究域，分别承载住所进入、家电维护、家庭冷藏、烹饪备餐、衣物鞋履卫生、家庭清洁消毒害虫控制、邮件包裹接收和家庭维修承包商连续性。
 - `reference/research-model-visualization-toolkit.md`：沉淀科研论文阅读、文献脊梁、模型工具、可视化标准和 Human Infra 定量页面实现路线。
 - `reference/source-card-system.md`：定义论文、书籍、工具、案例、标准和数据集进入项目之前的资料卡片制度。
 - `reference/domain-map.md`：定义根项目与子域的边界、迁移切片、主动不做和验证点。

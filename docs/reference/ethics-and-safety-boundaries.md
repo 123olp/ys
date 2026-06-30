@@ -936,6 +936,24 @@ Human Infra 不能被设计成更精密的压榨系统。
 - 不收集、复制、处理或要求个人日历、医疗/法律/学校预约、通知内容、设备 token、会议链接、会议录制、聊天记录、身份证件、病历、税务文件、合同、搜索历史、浏览历史、API key、OAuth token、webhook、共享链接、组织文档或敏感自动化日志。
 - 不替代医疗、法律、学校、雇主、公共机构、会议平台、文档平台、搜索平台、自动化平台、组织 IT、安全团队、律师、监管机构或官方服务渠道。
 
+## 家庭物理运行连续性边界
+
+`home-access-lock-key-entry-continuity`、`household-appliance-maintenance-repair-continuity`、`home-refrigeration-food-storage-continuity`、`cooking-meal-preparation-kitchen-safety-continuity`、`laundry-clothing-footwear-hygiene-continuity`、`household-cleaning-disinfection-pest-control-continuity`、`postal-parcel-delivery-pickup-continuity` 和 `household-maintenance-repair-contractor-continuity` 关注住所进入、家电、冷藏、烹饪、衣物卫生、清洁消毒、邮件包裹和维修服务如何把家庭空间转化为可恢复、可进食、可卫生、可接收物资和可修复的行动基础设施，不是开锁、危险维修、化学处置、邮件截取或承包商规避入口。
+
+可以做：
+
+- 整理 NFPA、CPSC、DOE、ENERGY STAR、USDA FSIS、FDA、CDC、EPA、NPIC、Poison Help、USPS、UPU、FTC、FEMA、Ready.gov、NIOSH、NIST 和官方消费者资料中的机制、对象、变量和边界。
+- 比较住所进入、家电维护、家庭冷链、厨房安全、衣物鞋履卫生、清洁消毒、邮件包裹和家庭维修如何影响恢复空间、营养输入、卫生环境、资料交付、设备可用性和任务连续性。
+- 记录家庭物理操作资料中的火灾、食源性、化学、毒性、召回、消费者保护、隐私、物业权限、紧急出入和禁止用途边界。
+
+不能做：
+
+- 不提供开锁、绕过门禁、智能锁破解、非法进入、逃避物业规则、燃气电气水路施工、危险家电维修、食品处置决策、化学品混合、杀虫剂施用、邮件截取、冒领包裹、承包商规避、保险理赔策略、投诉威胁或个案法律建议。
+- 不判断某个住所、门锁、家电、食品、厨房事故、清洁消毒、害虫控制、包裹、维修项目、承包商、报价、许可证、投诉或保险事项应如何具体处理。
+- 不生成开锁流程、门禁绕过步骤、危险维修步骤、燃气/电气施工指南、食品安全个案判断、消毒剂配比、杀虫剂使用方案、邮件转寄规避、包裹追踪滥用、承包商谈判脚本、申诉材料、法律文件或理赔材料。
+- 不收集、复制、处理或要求家庭地址、门禁码、钥匙照片、锁具型号、智能锁日志、物业账号、家电序列号、食品照片、冰箱温度日志、邮件追踪号、承包商合同、发票、许可证、保险单、投诉记录或家庭安全细节。
+- 不替代消防、急救、食品安全、毒物中心、设备厂商、维修商、物业、邮政/快递、消费者保护机构、保险、法律、执法、监管机构或官方应急渠道。
+
 ## 数据与证据边界
 
 - 原始数据、清洗数据和人工判断必须分层保存。
