@@ -428,6 +428,14 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 声誉和公共信任必须可纠错 | `reputation-defamation-public-trust-repair-continuity/` | 声誉损伤、诽谤、更正申诉、信任资产、公共记录 | 错误信息或声誉损伤阻断工作、协作、服务和社区机会 |
 | 推荐背书必须可转化机会 | `references-vouching-recommendation-social-capital-continuity/` | 推荐人、背书、介绍信、弱连接、社会资本 | 能力无法被可信转译为机会，主体被排除在教育、工作、照护和合作入口之外 |
 | 第三空间必须承载归属参与 | `third-place-belonging-social-participation-continuity/` | 公共图书馆、公园、社区锚点、弱连接、归属空间 | 非家庭非工作空间消失，弱连接、恢复、学习、求助和公共参与断裂 |
+| 目的意义必须支撑长期行动 | `purpose-meaning-existential-continuity/` | 目的感、意义感、希望、存在痛苦、价值排序、长期目标 | 意义断裂会削弱继续行动、恢复、等待未来和承担长期项目的理由 |
+| 精神照护必须尊重实践边界 | `spiritual-care-religious-practice-continuity/` | spiritual care、chaplaincy、宗教实践、信仰共同体、spiritual distress | 精神或宗教实践被切断或强迫时，尊严、身份、恢复和共同体支持受损 |
+| 文化身份必须可连续 | `cultural-heritage-identity-continuity/` | 语言、文化实践、非物质文化遗产、共同体记忆、代际传递 | 文化断裂会削弱归属、照护沟通、代际传递和身份稳定 |
+| 创造表达必须可参与 | `arts-creative-expression-participation-continuity/` | 艺术参与、创作表达、社区艺术、表达自由、文化参与 | 主体失去表达和创造入口，生活质量、身份表达、情绪恢复和社会可见性下降 |
+| 休闲恢复必须可获得 | `leisure-recreation-restorative-activity-continuity/` | 休闲、娱乐、游戏、户外活动、恢复性活动、非生产性时间 | 非任务恢复空间被压缩，压力、倦怠、孤独和行动质量恶化 |
+| 叙事身份必须可整合 | `narrative-identity-life-review-continuity/` | life review、reminiscence、自传记忆、生命故事、身份重组 | 记忆资料无法组织成自我叙事，身份稳定、意义感和跨代转交下降 |
+| 仪式转换必须被承认 | `ritual-ceremony-life-transition-continuity/` | 仪式、典礼、过渡礼、纪念、公共承认、生命转换 | 重大转换缺少共同体承认，身份、关系和悲伤恢复更容易断裂 |
+| 尊严人格必须被保护 | `dignity-personhood-respect-continuity/` | dignity、personhood、尊重、非羞辱、person-centered care | 人被降格为病例、号码、风险标签或负担，主体性和未来选择权被侵蚀 |
 | 权利和治理可保护主体 | `governance-rights/` | 同意、退出、数据权、法律身份 | 被控制、被剥夺、被系统吞噬 |
 | 服务入口可理解可导航 | `health-literacy-navigation/` | 健康素养、服务导航、风险沟通、共同决策 | 有资源但不会用、误解、延误、行政排除 |
 | 语言和表达可理解 | `language-access-plain-communication/` | plain language、语言服务、LEP、CLAS、认知可访问性、表单理解 | 材料读不懂、听不懂、不能执行，或简化时删掉权利和风险 |
@@ -889,6 +897,14 @@ risk-engineering
   -> reputation-defamation-public-trust-repair-continuity
   -> references-vouching-recommendation-social-capital-continuity
   -> third-place-belonging-social-participation-continuity
+  -> purpose-meaning-existential-continuity
+  -> spiritual-care-religious-practice-continuity
+  -> cultural-heritage-identity-continuity
+  -> arts-creative-expression-participation-continuity
+  -> leisure-recreation-restorative-activity-continuity
+  -> narrative-identity-life-review-continuity
+  -> ritual-ceremony-life-transition-continuity
+  -> dignity-personhood-respect-continuity
   -> health-literacy-navigation
   -> language-access-plain-communication
   -> substance-exposure-control

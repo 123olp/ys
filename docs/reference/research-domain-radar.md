@@ -49,6 +49,14 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `reputation-defamation-public-trust-repair-continuity/` | 声誉、诽谤和公共信任修复决定错误信息或信任损伤是否会阻断机会、服务和协作入口 |
 | `references-vouching-recommendation-social-capital-continuity/` | 推荐、背书和介绍信决定能力与信誉能否被可信转译为教育、工作、照护和合作机会 |
 | `third-place-belonging-social-participation-continuity/` | 第三空间、归属和社会参与决定非家庭非工作场所是否能承载弱连接、恢复、学习和求助 |
+| `purpose-meaning-existential-continuity/` | 目的感、意义感、希望和存在痛苦决定主体是否仍有理由承担等待、恢复和长期项目 |
+| `spiritual-care-religious-practice-continuity/` | 精神照护、宗教实践和信仰共同体决定疾病、失能、临终和长期恢复中是否存在尊严性支持 |
+| `cultural-heritage-identity-continuity/` | 文化遗产、语言、共同体记忆和代际传递决定主体身份是否能跨时间、地点和制度保持连续 |
+| `arts-creative-expression-participation-continuity/` | 艺术参与和创造表达决定主体能否把经验、身份、情绪和公共存在转化为可见作品与关系 |
+| `leisure-recreation-restorative-activity-continuity/` | 休闲、娱乐和恢复性活动决定非生产性时间是否能补回压力、孤独、倦怠和行动质量损耗 |
+| `narrative-identity-life-review-continuity/` | 生命回顾和叙事身份决定记忆资料是否能组织成自我连续、意义整合和跨代转交 |
+| `ritual-ceremony-life-transition-continuity/` | 仪式、典礼和生命过渡决定重大变化是否被共同体承认、纪念、安置和修复 |
+| `dignity-personhood-respect-continuity/` | 尊严、人格承认和非羞辱决定主体是否会被照护、制度或风险标签降格成对象 |
 | `substance-exposure-control/` | 烟草、酒精、成瘾性物质和有害暴露会同时改变风险函数与主体自主性 |
 | `health-literacy-navigation/` | 医疗和社会服务只有可理解、可导航、可复核时才会转化为主体收益 |
 | `oral-health-continuity/` | 口腔健康连接营养、疼痛、感染、沟通和社会参与 |
@@ -619,6 +627,14 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | OJJDP restorative justice literature | 提示伤害后的修复、责任承担、受害者需要和再融入需要区别于普通司法或心理治疗 |
 | FTC / CFPB consumer correction and reputation-risk resources | 提示错误记录、诽谤和信任损伤会影响机会入口，纠错和申诉边界需要独立建模 |
 | IMLS public libraries / CDC parks and community design | 提示第三空间、公共图书馆、公园和社区锚点是弱连接、学习、恢复和归属基础设施 |
+| WHOQOL / WHOQOL-SRPB and purpose-in-life literature | 提示生活质量包含意义、价值、精神/信念维度，目的感和意义感可影响健康、恢复和死亡风险 |
+| NCI spiritual care and palliative care resources | 提示 spiritual distress、chaplaincy 和信仰共同体在疾病、临终和恢复中有独立照护边界 |
+| UNESCO Intangible Cultural Heritage Convention | 提示语言、传统实践、共同体记忆和文化传承是身份与归属连续性的基础 |
+| National Endowment for the Arts participation resources | 提示艺术参与和创造性表达可作为认知刺激、身份表达、关系连接和生活质量变量 |
+| WHO physical activity / parks and recreation literature | 提示 leisure-time activity、recreation 和 restorative activity 不应只归入生产性任务优化 |
+| Life review / reminiscence / narrative identity literature | 提示生命叙事和回顾能影响身份整合、意义感、尊严和记忆转交 |
+| Ritual / ceremony / meaning-making literature | 提示生命转换需要社会承认、纪念和共同体承接，不能只归入行政记录 |
+| Dignity therapy / person-centered care literature | 提示尊严、人格承认和非羞辱是照护、临终、失能和制度接触中的主体性约束 |
 | WHO Tobacco / Alcohol | 提示有害物质暴露和成瘾会改变死亡风险、资源消耗和主体自主性 |
 | CDC / HHS Health Literacy | 提示信息可理解性和服务导航决定医疗资源能否实际转化为主体收益 |
 | WHO / CDC Oral Health | 提示口腔健康连接营养、疼痛、感染、沟通和生活质量 |
@@ -827,6 +843,13 @@ Source links:
 - https://www.fema.gov/emergency-managers/national-preparedness/frameworks/response
 - https://www.americorps.gov/about/our-impact/volunteering-civic-life
 - https://www.imls.gov/research-evaluation/data-collection/public-libraries-survey
+- https://www.who.int/tools/whoqol
+- https://www.cancer.gov/about-cancer/coping/day-to-day/faith-and-spirituality/spirituality-pdq
+- https://ich.unesco.org/en/convention
+- https://www.arts.gov/impact/research/arts-data-profile-series/adp-34
+- https://pubmed.ncbi.nlm.nih.gov/31486839/
+- https://pubmed.ncbi.nlm.nih.gov/16233908/
+- https://pubmed.ncbi.nlm.nih.gov/21761863/
 - https://www.who.int/news-room/fact-sheets/detail/hypertension
 - https://www.who.int/news-room/fact-sheets/detail/musculoskeletal-conditions
 - https://www.who.int/news-room/fact-sheets/detail/falls

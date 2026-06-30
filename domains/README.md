@@ -414,6 +414,14 @@
 - `reputation-defamation-public-trust-repair-continuity/`：声誉诽谤与公共信任修复连续性，整理声誉损伤、错误信息、更正申诉、公共信任和机会入口。
 - `references-vouching-recommendation-social-capital-continuity/`：推荐背书与社会资本连续性，整理推荐人、背书、介绍信、弱连接和机会转化。
 - `third-place-belonging-social-participation-continuity/`：第三空间、归属与社会参与连续性，整理非家庭非工作空间、社区锚点、弱连接、恢复和公共参与。
+- `purpose-meaning-existential-continuity/`：目的、意义与存在连续性，整理目的感、意义感、希望、存在痛苦和长期目标。
+- `spiritual-care-religious-practice-continuity/`：精神照护与宗教实践连续性，整理 spiritual care、chaplaincy、宗教实践、共同体和 spiritual distress。
+- `cultural-heritage-identity-continuity/`：文化遗产与身份连续性，整理语言、文化实践、非物质文化遗产、共同体记忆和代际传递。
+- `arts-creative-expression-participation-continuity/`：艺术创造表达与参与连续性，整理艺术参与、创作表达、社区艺术、创造性老龄化和表达自由。
+- `leisure-recreation-restorative-activity-continuity/`：休闲娱乐与恢复性活动连续性，整理休闲、娱乐、游戏、户外活动、恢复性活动和非生产性时间。
+- `narrative-identity-life-review-continuity/`：叙事身份与生命回顾连续性，整理 life review、reminiscence、自传记忆、生命故事和身份重组。
+- `ritual-ceremony-life-transition-continuity/`：仪式典礼与生命过渡连续性，整理仪式、典礼、过渡礼、纪念、公共承认和共同体时间结构。
+- `dignity-personhood-respect-continuity/`：尊严、人格与被尊重连续性，整理 dignity、personhood、尊重、非羞辱和 person-centered care。
 - `governance-rights/`：治理与主体权利，整理同意、退出、数据权、法律身份、AI 治理和研究伦理。
 - `pain-suffering-control/`：疼痛与痛苦控制，整理慢性疼痛、症状负担、姑息医学和可承受持续性。
 - `health-literacy-navigation/`：健康素养与服务导航，整理可理解信息、风险沟通、共同决策和系统入口。

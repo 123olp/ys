@@ -78,3 +78,4 @@ Current decisions:
 - `0063-add-fifty-ninth-wave-emergency-health-handoff-domains.md`
 - `0064-add-sixtieth-wave-post-death-survivor-continuity-domains.md`
 - `0065-add-sixty-first-wave-relational-social-capital-continuity-domains.md`
+- `0066-add-sixty-second-wave-meaning-culture-identity-continuity-domains.md`

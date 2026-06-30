@@ -442,6 +442,14 @@ human_infra/
     ├── reputation-defamation-public-trust-repair-continuity/ # 声誉诽谤与公共信任修复连续性
     ├── references-vouching-recommendation-social-capital-continuity/ # 推荐背书与社会资本连续性
     ├── third-place-belonging-social-participation-continuity/ # 第三空间、归属与社会参与连续性
+    ├── purpose-meaning-existential-continuity/ # 目的意义与存在连续性
+    ├── spiritual-care-religious-practice-continuity/ # 精神照护与宗教实践连续性
+    ├── cultural-heritage-identity-continuity/ # 文化遗产与身份连续性
+    ├── arts-creative-expression-participation-continuity/ # 艺术创造表达与参与连续性
+    ├── leisure-recreation-restorative-activity-continuity/ # 休闲娱乐与恢复性活动连续性
+    ├── narrative-identity-life-review-continuity/ # 叙事身份与生命回顾连续性
+    ├── ritual-ceremony-life-transition-continuity/ # 仪式典礼与生命过渡连续性
+    ├── dignity-personhood-respect-continuity/ # 尊严人格与尊重连续性
     ├── space-extreme-habitation/ # 空间与极端栖居
     ├── stem-cell-reserve-renewal/ # 干细胞储备与组织更新
     ├── substance-exposure-control/ # 物质暴露控制
@@ -685,6 +693,7 @@ human_infra/
 - `domains/emergency-contact-next-of-kin-notification-continuity/`、`domains/personal-health-record-emergency-summary-continuity/`、`domains/medical-id-allergy-critical-alert-continuity/`、`domains/medication-list-implant-device-emergency-continuity/`、`domains/chronic-condition-emergency-action-plan-continuity/`、`domains/immunization-record-proof-continuity/`、`domains/organ-donor-registry-anatomical-gift-continuity/` 和 `domains/access-functional-needs-emergency-registry-continuity/` 负责主体无法表达、急救、灾害和死亡边界中的紧急联系人、急救健康摘要、医疗 ID/关键警报、药物/植入设备、慢病行动计划、免疫记录、器官捐赠登记和功能需求登记连续性条件。
 - `domains/death-certificate-registration-cause-of-death-record-continuity/`、`domains/funeral-cremation-burial-disposition-continuity/`、`domains/cemetery-memorial-remains-location-continuity/`、`domains/bereavement-leave-grief-support-continuity/`、`domains/survivor-benefits-death-notification-continuity/`、`domains/life-insurance-beneficiary-claim-continuity/`、`domains/estate-inventory-asset-liability-handoff-continuity/` 和 `domains/post-death-account-closure-service-cancellation-continuity/` 负责死亡边界后的死亡证明/死因记录、遗体处置、墓地纪念、遗属恢复、遗属福利、寿险理赔、遗产清单和账户关闭服务取消连续性条件。
 - `domains/loneliness-social-isolation-risk-continuity/`、`domains/social-prescribing-community-referral-continuity/`、`domains/mutual-aid-neighbor-support-network-continuity/`、`domains/volunteering-civic-service-participation-continuity/`、`domains/community-mediation-neighbor-conflict-resolution-continuity/`、`domains/restorative-justice-repair-accountability-continuity/`、`domains/reputation-defamation-public-trust-repair-continuity/`、`domains/references-vouching-recommendation-social-capital-continuity/` 和 `domains/third-place-belonging-social-participation-continuity/` 负责关系执行与社会资本连续性，覆盖孤独隔离风险、社会处方转介、互助邻里、志愿服务、社区调解、修复性司法、声誉信任修复、推荐背书和第三空间归属参与。
+- `domains/purpose-meaning-existential-continuity/`、`domains/spiritual-care-religious-practice-continuity/`、`domains/cultural-heritage-identity-continuity/`、`domains/arts-creative-expression-participation-continuity/`、`domains/leisure-recreation-restorative-activity-continuity/`、`domains/narrative-identity-life-review-continuity/`、`domains/ritual-ceremony-life-transition-continuity/` 和 `domains/dignity-personhood-respect-continuity/` 负责意义、文化、身份与尊严连续性，覆盖主体为什么继续、如何表达、如何归属、如何被承认和如何避免被去人格化。
 - `domains/disembodied-cns/` 负责去具身外部维持型中枢生命系统的高层架构建模，不提供实验操作协议。
 - `domains/memory-editing/` 负责记忆编辑的概念、证据、验证和伦理边界，不提供可执行神经操控步骤。
 - `domains/biostasis-cryopreservation/` 负责冷冻保存、生物停滞、休眠和等待未来修复路径。
@@ -702,6 +711,7 @@ human_infra/
 - `domains/synthetic-biology-biosecurity/` 负责合成生物学、生物安全、生物安保、双重用途风险和治理边界。
 - `domains/space-extreme-habitation/` 负责空间飞行、极端环境、闭环生命支持、隔离、辐射和远程医疗。
 - `domains/social-connection-relational-infra/` 负责社会连接、孤独、社会隔离、家庭照护网络、信任和社区关系。
+- `domains/purpose-meaning-existential-continuity/`、`domains/spiritual-care-religious-practice-continuity/`、`domains/cultural-heritage-identity-continuity/`、`domains/arts-creative-expression-participation-continuity/`、`domains/leisure-recreation-restorative-activity-continuity/`、`domains/narrative-identity-life-review-continuity/`、`domains/ritual-ceremony-life-transition-continuity/` 和 `domains/dignity-personhood-respect-continuity/` 负责目的意义、精神照护、文化身份、创造表达、休闲恢复、叙事身份、仪式承认和尊严人格。
 - `domains/governance-rights/` 负责主体权利、法律身份、同意、退出、数据权、AI 治理和研究伦理。
 - `domains/pain-suffering-control/` 负责疼痛、痛苦、症状负担、姑息医学和可承受持续性。
 - `domains/health-literacy-navigation/` 负责健康素养、医疗服务导航、可理解信息、风险沟通和共同决策。
@@ -715,7 +725,7 @@ human_infra/
 
 - Human Infra 的上位对象是“人类任务执行系统”，不是单一长寿产品。
 - Longevity Evidence 承接原 Biocat，但不再占据根目录概念中心。
-- “永生”的不同路径必须按机制拆分：长寿证据、营养代谢、基因组稳定性、端粒维护、蛋白稳态、自噬、线粒体、细胞衰老、细胞外基质与糖化、微生物生态、干细胞储备、肝肾清除、消化屏障与吸收、呼吸氧合、血液氧运与止血、内分泌激素调节、淋巴与脑淋巴清除、体液电解质酸碱稳态、热稳态、身体活动、心血管韧性、肌骨完整性、皮肤屏障与伤口愈合、泌尿生殖连续性、生殖与生育连续性、注意力与执行控制、学习与技能获得、教育可及与终身学习、时间分配与有效时间、财务韧性、金融包容与支付系统、就业服务、健康劳动力容量、职业与工作设计、信息完整性与信任、媒体信息素养与公共图书馆、科研基础设施与开放科学转化、标准计量与质量基础设施、网络安全韧性与关键服务、算力数据中心与 AI 基础设施、临床试验与监管科学转化、空间定位导航与位置基础设施、天气气候观测与预报、空间天气与地磁暴、行星防御与近地天体、火山灰、地震、海啸、极端高温与制冷公共卫生、建筑消防与生命安全规范、制造与维修能力、公共采购与合同能力、动物健康与 One Health 界面、公共卫生实验室与诊断能力、血液器官组织生物警戒、废弃物与危险材料连续性、辐射核安全防护、化学安全与中毒控制、关键矿物材料韧性、食物安全、水卫生连续性、能源韧性、医疗服务连续性、社区健康工作者与同伴支持、药品与治疗连续性、患者数据互操作、远程照护、健康数据隐私治理、功能与生活质量结局、健康经济与价值评估、免疫与公共卫生监测、母婴儿童早期生命、患者安全与组织学习、社会决定因素与社区脆弱性、公共服务设计与可达性、行政负担与程序摩擦、公民数据与开放政府透明、社区资源导航、照护与长期照护、住房与建成环境、交通接入、法律身份与民事登记、司法可及与法律援助、公民参与与选举接入、迁移流离失所与人道连续性、数字包容与连接、社会保护与福利递送、保险与风险转移、托育与家庭连续性、劳动权利与工作场所保护、语言可达与清晰沟通、应急准备与响应、应急预警与通信、家庭应急准备与韧性、灾后恢复与救济连续性、人身安全与暴力预防、产品安全与召回系统、细胞重编程、基因治疗与基因编辑递送安全、生物年龄钟验证、多组学个人基线、工程细胞疗法、类器官组织芯片模型、异种移植与工程器官替换、再生医学、康复功能、癌症控制、免疫维护、抗微生物韧性、神经连续性、感官连续性、未来等待、生物停滞、去具身中枢、记忆编辑、认知增强、AI 代理安全、数字身份安全、心理稳定、睡眠恢复、辅助技术、社会连接、物质暴露控制、资源环境、供应链连续性、合成生物学与生物安全、空间极端栖居、风险工程、健康素养导航、治理权利、口腔健康、痛苦控制和测量反馈不能混成一个概念桶。
+- “永生”的不同路径必须按机制拆分：长寿证据、营养代谢、基因组稳定性、端粒维护、蛋白稳态、自噬、线粒体、细胞衰老、细胞外基质与糖化、微生物生态、干细胞储备、肝肾清除、消化屏障与吸收、呼吸氧合、血液氧运与止血、内分泌激素调节、淋巴与脑淋巴清除、体液电解质酸碱稳态、热稳态、身体活动、心血管韧性、肌骨完整性、皮肤屏障与伤口愈合、泌尿生殖连续性、生殖与生育连续性、注意力与执行控制、学习与技能获得、教育可及与终身学习、时间分配与有效时间、财务韧性、金融包容与支付系统、就业服务、健康劳动力容量、职业与工作设计、信息完整性与信任、媒体信息素养与公共图书馆、科研基础设施与开放科学转化、标准计量与质量基础设施、网络安全韧性与关键服务、算力数据中心与 AI 基础设施、临床试验与监管科学转化、空间定位导航与位置基础设施、天气气候观测与预报、空间天气与地磁暴、行星防御与近地天体、火山灰、地震、海啸、极端高温与制冷公共卫生、建筑消防与生命安全规范、制造与维修能力、公共采购与合同能力、动物健康与 One Health 界面、公共卫生实验室与诊断能力、血液器官组织生物警戒、废弃物与危险材料连续性、辐射核安全防护、化学安全与中毒控制、关键矿物材料韧性、食物安全、水卫生连续性、能源韧性、医疗服务连续性、社区健康工作者与同伴支持、药品与治疗连续性、患者数据互操作、远程照护、健康数据隐私治理、功能与生活质量结局、健康经济与价值评估、免疫与公共卫生监测、母婴儿童早期生命、患者安全与组织学习、社会决定因素与社区脆弱性、公共服务设计与可达性、行政负担与程序摩擦、公民数据与开放政府透明、社区资源导航、照护与长期照护、住房与建成环境、交通接入、法律身份与民事登记、司法可及与法律援助、公民参与与选举接入、迁移流离失所与人道连续性、数字包容与连接、社会保护与福利递送、保险与风险转移、托育与家庭连续性、劳动权利与工作场所保护、语言可达与清晰沟通、应急准备与响应、应急预警与通信、家庭应急准备与韧性、灾后恢复与救济连续性、人身安全与暴力预防、产品安全与召回系统、细胞重编程、基因治疗与基因编辑递送安全、生物年龄钟验证、多组学个人基线、工程细胞疗法、类器官组织芯片模型、异种移植与工程器官替换、再生医学、康复功能、癌症控制、免疫维护、抗微生物韧性、神经连续性、感官连续性、未来等待、生物停滞、去具身中枢、记忆编辑、认知增强、AI 代理安全、数字身份安全、心理稳定、睡眠恢复、辅助技术、社会连接、目的意义、精神照护、文化身份、艺术创造、休闲恢复、叙事身份、仪式过渡、尊严人格、物质暴露控制、资源环境、供应链连续性、合成生物学与生物安全、空间极端栖居、风险工程、健康素养导航、治理权利、口腔健康、痛苦控制和测量反馈不能混成一个概念桶。
 - 所有健康、神经、生命支持相关结论必须保留来源、适用对象、不确定性和伦理边界。
 - 新增研究域必须能回到 `docs/reference/research-domain-atlas.md` 的先验条件和域判定契约。
 - 自研代码只做连接、清洗、归一化、证据编排和产品表达；优先复用官方 API、公开数据库和成熟工具。
@@ -798,3 +808,4 @@ human_infra/
 - 2026-06-30：新增第三十四波 7 个急性神经连续性与意识韧性域骨架，覆盖卒中脑灌注韧性、TBI 神经创伤恢复、谵妄急性认知失败预防、意识障碍昏迷恢复、癫痫发作网络稳定、自主神经稳态和偏头痛有效时间负担。
 - 2026-06-30：新增第六十波死亡后与遗属连续性研究域，覆盖死亡证明/死因记录、遗体处置、墓地纪念、丧亲恢复、遗属福利、寿险理赔、遗产清单和死亡后账户关闭。
 - 2026-07-01：新增第六十一波关系执行与社会资本连续性研究域，覆盖孤独隔离风险、社会处方社区转介、互助邻里支持、志愿服务公民参与、社区调解、修复性司法、声誉信任修复、推荐背书和第三空间归属参与。
+- 2026-07-01：新增第六十二波意义、文化、身份与尊严连续性研究域，覆盖目的意义、精神照护、文化遗产、艺术创造表达、休闲娱乐恢复、叙事身份生命回顾、仪式典礼生命过渡和尊严人格承认。

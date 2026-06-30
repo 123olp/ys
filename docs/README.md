@@ -81,6 +81,7 @@ docs/
 │   ├── 0063-add-fifty-ninth-wave-emergency-health-handoff-domains.md
 │   ├── 0064-add-sixtieth-wave-post-death-survivor-continuity-domains.md
 │   ├── 0065-add-sixty-first-wave-relational-social-capital-continuity-domains.md
+│   ├── 0066-add-sixty-second-wave-meaning-culture-identity-continuity-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -472,4 +473,12 @@ docs/
 336. Read `../domains/reputation-defamation-public-trust-repair-continuity/README.md` if you are working on reputation harm, defamation, public trust, correction, complaint pathways, or trust repair.
 337. Read `../domains/references-vouching-recommendation-social-capital-continuity/README.md` if you are working on references, vouching, recommendation letters, introductions, social proof, opportunity access, or social-capital conversion.
 338. Read `../domains/third-place-belonging-social-participation-continuity/README.md` if you are working on third places, belonging, public libraries, parks, community anchors, social participation, or weak-tie spaces.
-339. Enter a domain under `../domains/`.
+339. Read `../domains/purpose-meaning-existential-continuity/README.md` if you are working on purpose, meaning in life, existential well-being, hope, despair, long-term goals, or value orientation as a continuity variable.
+340. Read `../domains/spiritual-care-religious-practice-continuity/README.md` if you are working on spiritual care, chaplaincy, religious practice, faith communities, spiritual distress, or conscience/religion continuity.
+341. Read `../domains/cultural-heritage-identity-continuity/README.md` if you are working on cultural heritage, language, community memory, minority identity, migration culture, or intergenerational cultural transmission.
+342. Read `../domains/arts-creative-expression-participation-continuity/README.md` if you are working on arts participation, creative expression, community arts, creative aging, cultural production, or expressive continuity.
+343. Read `../domains/leisure-recreation-restorative-activity-continuity/README.md` if you are working on leisure, recreation, play, hobbies, parks use, restorative activity, non-work time, or recreation access.
+344. Read `../domains/narrative-identity-life-review-continuity/README.md` if you are working on narrative identity, life review, reminiscence, autobiography, memory work, life story, or identity reconstruction.
+345. Read `../domains/ritual-ceremony-life-transition-continuity/README.md` if you are working on rituals, ceremonies, rites of passage, memorials, life transitions, public recognition, or community recognition.
+346. Read `../domains/dignity-personhood-respect-continuity/README.md` if you are working on dignity, personhood, respect, autonomy, non-humiliation, person-centered care, or dehumanization risk.
+347. Enter a domain under `../domains/`.
