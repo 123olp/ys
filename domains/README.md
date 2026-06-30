@@ -243,6 +243,12 @@
 - `employment-algorithmic-hiring-screening-continuity/`：算法招聘与就业筛查连续性，整理 AI 招聘、自动简历筛选、测评、视频面试、合理便利和反歧视边界。
 - `insurance-underwriting-algorithmic-risk-scoring-continuity/`：保险承保算法评分连续性，整理风险评分、外部数据、承保、费率、索赔自动化和模型治理。
 - `public-benefits-eligibility-automated-decision-continuity/`：公共福利资格自动化判定连续性，整理福利 eligibility、数据匹配、续期、终止、申诉和人工复核。
+- `education-record-transcript-verification-continuity/`：教育记录、成绩单与学历核验连续性，整理学籍、成绩单、学历、FERPA、访问更正、授权披露和核验断点。
+- `professional-licensure-certification-continuity/`：职业执照、专业认证与授权连续性，整理职业证照、注册资格、发证机构、续证、惩戒、恢复和可携带性。
+- `skills-competency-credentialing-continuity/`：技能、胜任力与微证书连续性，整理技能本体、胜任力框架、微证书、数字徽章、作品证据和测评可靠性。
+- `continuing-education-recertification-continuity/`：继续教育、再认证与续证连续性，整理 CE/CPD、再认证、继续胜任力、学习记录和合规审计。
+- `apprenticeship-work-based-learning-continuity/`：学徒制与工作中学习连续性，整理注册学徒、在岗训练、导师制、工时记录、技能进阶和结业证明。
+- `verifiable-credential-wallet-interoperability/`：可验证凭证钱包与互操作连续性，整理 VC、数字钱包、DID、签发验证、选择性披露、撤销和恢复。
 - `supply-chain-continuity/`：供应链连续性，整理关键物资、服务、物流、替代路径和恢复时间。
 - `synthetic-biology-biosecurity/`：合成生物学与生物安全，整理双重用途、生物安全、生物安保和治理边界。
 - `space-extreme-habitation/`：空间与极端栖居，整理辐射、微重力、隔离、闭环资源和远程医疗风险。

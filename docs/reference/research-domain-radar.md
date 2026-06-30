@@ -262,6 +262,12 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `employment-algorithmic-hiring-screening-continuity/` | 算法招聘筛查决定自动简历筛选、测评、视频面试和 job matching 是否把就业入口转成不可解释排除 |
 | `insurance-underwriting-algorithmic-risk-scoring-continuity/` | 保险承保算法评分决定风险池入口是否被外部数据、风险模型、费率和索赔自动化错误截断 |
 | `public-benefits-eligibility-automated-decision-continuity/` | 公共福利资格自动化判定决定食物、医疗、住房、能源和现金缓冲是否因数据匹配、续期或自动终止而断线 |
+| `education-record-transcript-verification-continuity/` | 教育记录与成绩单核验决定学习历史是否能持续转化为升学、就业、执照和服务入口 |
+| `professional-licensure-certification-continuity/` | 职业执照和专业认证决定主体是否能长期合法执行高信任任务并保持收入与公共服务能力 |
+| `skills-competency-credentialing-continuity/` | 技能和胜任力凭证决定真实能力是否能跨平台、跨雇主和跨任务被准确表达 |
+| `continuing-education-recertification-continuity/` | 继续教育与再认证决定长寿命职业周期中能力是否能随标准、技术和责任边界持续更新 |
+| `apprenticeship-work-based-learning-continuity/` | 学徒制和工作中学习决定劳动时间是否能转化为有导师、有记录、可迁移的技能资产 |
+| `verifiable-credential-wallet-interoperability/` | 可验证凭证钱包决定身份、资格、学历、技能和授权证明是否能长期携带、核验、撤销和恢复 |
 
 ## 来源信号
 

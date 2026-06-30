@@ -59,6 +59,7 @@ docs/
 │   ├── 0041-add-thirty-seventh-wave-chronic-environmental-exposure-domains.md
 │   ├── 0042-add-thirty-eighth-wave-decision-authority-fiduciary-continuity-domains.md
 │   ├── 0043-add-thirty-ninth-wave-algorithmic-access-screening-domains.md
+│   ├── 0044-add-fortieth-wave-credential-licensure-continuity-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -299,4 +300,10 @@ docs/
 185. Read `../domains/employment-algorithmic-hiring-screening-continuity/README.md` if you are working on AI hiring, algorithmic resume screening, employment tests, video interview scoring, job matching, or employment decision systems.
 186. Read `../domains/insurance-underwriting-algorithmic-risk-scoring-continuity/README.md` if you are working on insurance underwriting, algorithmic risk scoring, premium rating, claims automation, external data, or insurance AI governance.
 187. Read `../domains/public-benefits-eligibility-automated-decision-continuity/README.md` if you are working on public benefits eligibility, automated eligibility screening, data matching, renewals, terminations, appeals, or human review.
-188. Enter a domain under `../domains/`.
+188. Read `../domains/education-record-transcript-verification-continuity/README.md` if you are working on education records, transcripts, diplomas, enrollment verification, student records, FERPA, or degree verification.
+189. Read `../domains/professional-licensure-certification-continuity/README.md` if you are working on occupational licensing, professional certification, registration, boards, scope of practice, license renewal, discipline, or portability.
+190. Read `../domains/skills-competency-credentialing-continuity/README.md` if you are working on skills taxonomies, competency frameworks, micro-credentials, digital badges, portfolios, or skills-based hiring.
+191. Read `../domains/continuing-education-recertification-continuity/README.md` if you are working on continuing education, CPD, CEU, CME, maintenance of certification, recertification, renewal, or continuing competence.
+192. Read `../domains/apprenticeship-work-based-learning-continuity/README.md` if you are working on apprenticeships, work-based learning, on-the-job training, mentorship, journeyworker status, or competency progression.
+193. Read `../domains/verifiable-credential-wallet-interoperability/README.md` if you are working on verifiable credentials, digital credential wallets, issuers, holders, verifiers, DIDs, trust registries, selective disclosure, or credential revocation.
+194. Enter a domain under `../domains/`.

@@ -56,3 +56,4 @@ Current decisions:
 - `0041-add-thirty-seventh-wave-chronic-environmental-exposure-domains.md`
 - `0042-add-thirty-eighth-wave-decision-authority-fiduciary-continuity-domains.md`
 - `0043-add-thirty-ninth-wave-algorithmic-access-screening-domains.md`
+- `0044-add-fortieth-wave-credential-licensure-continuity-domains.md`

@@ -1,0 +1,38 @@
+# Verifiable Credential Wallet Interoperability
+
+Verifiable Credential Wallet Interoperability 关注可验证凭证、数字钱包、去中心化或可验证标识、签发-持有-验证流程、撤销状态、选择性披露和互操作标准如何让主体长期携带身份、资格、教育、技能和授权证明。
+
+## 对象
+
+- Verifiable Credentials、digital credentials、credential wallets、issuers、holders、verifiers、DIDs、trust registries 和 status/revocation mechanisms。
+- 选择性披露、最小披露、隐私保护、跨平台互操作、凭证生命周期、撤销、恢复、备份、密钥管理和可访问性。
+- 学历、执照、技能、健康、福利、组织身份、工作资格和公共服务入口中的数字凭证。
+
+## Human Infra 价值
+
+```text
+主体需要长期携带可被机器核验的证明
+-> 纸质和平台锁定凭证容易丢失、伪造、过期或无法跨系统使用
+-> 可验证凭证把签发、持有、验证、撤销和选择性披露组织成标准流程
+-> 若钱包、密钥、撤销状态或信任注册表失效，资格连续性会被数字基础设施截断
+-> 互操作凭证让主体更容易跨教育、工作、医疗、福利和身份系统保留未来选择权
+```
+
+## 边界
+
+- 本域不提供身份伪造、凭证伪造、钱包绕过、密钥窃取、认证攻击、KYC 规避、法律、金融、移民或个人申请建议。
+- 不判断某钱包、DID 方法、凭证方案、区块链、平台或身份系统是否适合某个人或机构部署。
+- 不承诺去中心化身份、数字钱包或可验证凭证天然更安全、更公平或更隐私。
+- 只整理公开标准、架构角色、互操作机制、隐私风险、可访问性、恢复和治理边界。
+
+## 上游与下游
+
+- 上游：`digital-identity-security/`、`education-record-transcript-verification-continuity/`、`professional-licensure-certification-continuity/`、`skills-competency-credentialing-continuity/`、`post-quantum-cryptography-long-term-data-security/`。
+- 下游：`public-service-design-accessibility/`、`patient-data-interoperability/`、`employment-algorithmic-hiring-screening-continuity/`、`public-benefits-eligibility-automated-decision-continuity/`。
+
+## 初始资料线索
+
+- W3C Verifiable Credentials Data Model 2.0 and VC Use Cases.
+- W3C Decentralized Identifiers and Open Badges related standards.
+- NIST Digital Identity Guidelines and identity-proofing resources.
+- Digital wallet, trust registry, credential revocation and selective-disclosure literature.
