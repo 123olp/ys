@@ -25,6 +25,7 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
   -> 公共空间生存接入系统必须让离家后的如厕、补水、休息降温、避难、连接、绿地恢复和无障碍服务可连续
   -> 食物获得执行系统必须让日常采购、福利兑换、社区发放、灾害供餐、送餐服务、婴儿配方和外部熟食可连续
   -> 治疗获得执行系统必须让处方、药品福利、用药核对、药品信息、未用药处置、DME、氧疗和糖尿病耗材可连续
+  -> 门诊访问执行系统必须让 provider 名录、初级照护、专科转诊、预约、检验、影像、门诊操作和非工作时间入口可连续
   -> 数字身份、AI 代理、供应链、生物安全和极端栖居等外部技术底座必须可控
   -> 治理和权利必须保护同意、退出和身份
   -> 测量、预测和反馈必须让维护过程可校正
@@ -299,6 +300,14 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | DME 供应维修必须不中断 | `durable-medical-equipment-supplier-repair-continuity/` | DMEPOS、供应商、coverage、配送、维修、替换、耗材 | 居家治疗和残障支持设备若供应、维修或耗材中断，主体独立生活和治疗执行会断裂 |
 | 居家氧疗和呼吸设备必须可补给 | `home-oxygen-respiratory-equipment-supply-continuity/` | 氧气浓缩机、便携氧、CPAP/BiPAP、耗材、电力依赖、供应商补给 | 呼吸支持被设备、耗材、电力或配送故障截断时，日常生存和睡眠恢复都会失稳 |
 | 糖尿病药物与监测耗材必须连续 | `diabetes-insulin-glucose-monitoring-supplies-continuity/` | 胰岛素、泵耗材、CGM、血糖仪、试纸、传感器、冷藏、支付 | 胰岛素、监测和耗材任一断点都会让日常风险控制从连续反馈退化为盲飞 |
+| Provider 名录必须真实可用 | `provider-directory-network-adequacy-continuity/` | Provider directory、network adequacy、可接诊状态、距离、语言、无障碍、保险网络 | 保险或服务名义存在，但 provider 不可联系、不可接诊、距离过远或信息错误，会把医疗覆盖变成幽灵网络 |
+| 初级照护入口必须可持续 | `primary-care-panel-appointment-access-continuity/` | Primary care、PCP panel、new patient intake、随访、同日预约、FQHC | 没有常规照护关系会让预防、慢病、转诊和复诊退化成碎片化急性访问 |
+| 专科转诊必须闭环 | `specialist-referral-authorization-navigation-continuity/` | Referral order、prior authorization、e-consult、资料转交、预约、反馈回传 | 转诊发出但授权、资料、预约或回传失败，会让复杂问题卡在系统缝隙中 |
+| 预约必须落在风险窗口内 | `appointment-availability-wait-time-continuity/` | Appointment availability、wait time、排班容量、取消名单、no-show、改期 | 服务存在但等待越过疾病、恢复或风险窗口，会把可处理问题推迟成失能或急性化 |
+| 门诊检验必须完成并回传 | `outpatient-laboratory-specimen-result-routing-continuity/` | 检验医嘱、标本采集、采样点、结果路由、portal、异常结果闭环 | 标本、结果或异常回访断裂，会让检测能力无法转化为行动信号 |
+| 诊断影像必须完成并可共享 | `diagnostic-imaging-order-scheduling-report-continuity/` | 影像医嘱、prior authorization、预约、报告、影像共享、critical results | 影像预约、报告或共享断裂，会制造重复检查、诊断延误和资料丢失 |
+| 门诊操作必须有准备与恢复回路 | `ambulatory-procedure-surgery-center-continuity/` | ASC、门诊内镜、输注、术前工作流、陪同接送、恢复观察、follow-up | 低住院化操作如果缺准备、接送、观察或随访，会把效率收益转成安全断点 |
+| 非工作时间入口必须可分流 | `after-hours-urgent-care-triage-continuity/` | 夜间/周末照护、urgent care、retail clinic、护士热线、tele-triage、闭环回传 | 不能等待但又非明确急救的时间断点如果无人接住，会推高失访、急诊拥堵和风险升级 |
 | 栖居空间可保护生命 | `building-fire-life-safety-codes/` | 建筑规范、消防规范、疏散、烟雾报警、无障碍、结构韧性 | 居住、照护、学习、工作和公共空间成为火灾、烟雾、结构和疏散风险源 |
 | 关键物质系统可制造修复 | `manufacturing-repair-capacity/` | 制造、维修、维护、备件、质量、本地生产、关键设备恢复 | 设备损坏、备件短缺、质量缺陷和生产能力不足导致服务与工具系统失效 |
 | 公共预算可转化为服务 | `public-procurement-contracting-capacity/` | 公共采购、合同、供应商管理、应急采购、透明度、交付验收 | 有预算和政策但采购失败、合同失效、腐败、延误或劣质交付 |
@@ -686,6 +695,14 @@ risk-engineering
   -> durable-medical-equipment-supplier-repair-continuity
   -> home-oxygen-respiratory-equipment-supply-continuity
   -> diabetes-insulin-glucose-monitoring-supplies-continuity
+  -> provider-directory-network-adequacy-continuity
+  -> primary-care-panel-appointment-access-continuity
+  -> specialist-referral-authorization-navigation-continuity
+  -> appointment-availability-wait-time-continuity
+  -> outpatient-laboratory-specimen-result-routing-continuity
+  -> diagnostic-imaging-order-scheduling-report-continuity
+  -> ambulatory-procedure-surgery-center-continuity
+  -> after-hours-urgent-care-triage-continuity
   -> community-resource-navigation
   -> social-determinants-community-vulnerability
   -> public-service-design-accessibility

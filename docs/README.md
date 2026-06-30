@@ -75,6 +75,7 @@ docs/
 │   ├── 0057-add-fifty-third-wave-public-realm-survival-access-continuity-domains.md
 │   ├── 0058-add-fifty-fourth-wave-food-acquisition-execution-continuity-domains.md
 │   ├── 0059-add-fifty-fifth-wave-treatment-execution-medical-supply-continuity-domains.md
+│   ├── 0060-add-fifty-sixth-wave-outpatient-access-clinical-service-execution-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -417,4 +418,12 @@ docs/
 287. Read `../domains/durable-medical-equipment-supplier-repair-continuity/README.md` if you are working on DME, DMEPOS suppliers, wheelchair/walker/hospital-bed access, equipment repair, replacement, consumables, coverage, or home medical equipment continuity.
 288. Read `../domains/home-oxygen-respiratory-equipment-supply-continuity/README.md` if you are working on home oxygen, oxygen concentrators, portable oxygen, CPAP/BiPAP, respiratory equipment, oxygen accessories, electricity dependency, or respiratory supply continuity.
 289. Read `../domains/diabetes-insulin-glucose-monitoring-supplies-continuity/README.md` if you are working on insulin, diabetes supplies, CGM, glucose meters, test strips, pump supplies, diabetes device access, refrigeration, or diabetes treatment supply continuity.
-290. Enter a domain under `../domains/`.
+290. Read `../domains/provider-directory-network-adequacy-continuity/README.md` if you are working on provider directories, network adequacy, provider networks, in-network access, accepting-new-patient status, Care Compare, provider directory accuracy, or ghost networks.
+291. Read `../domains/primary-care-panel-appointment-access-continuity/README.md` if you are working on primary care, PCP panel, new patient intake, same-day access, annual wellness, chronic follow-up, FQHC, or routine care continuity.
+292. Read `../domains/specialist-referral-authorization-navigation-continuity/README.md` if you are working on specialist referrals, referral orders, prior authorization, e-consults, network routing, referral management, referral leakage, or specialist feedback loops.
+293. Read `../domains/appointment-availability-wait-time-continuity/README.md` if you are working on appointment availability, wait times, scheduling capacity, cancellation lists, no-show, rescheduling, same-day access, or healthcare wait-time measurement.
+294. Read `../domains/outpatient-laboratory-specimen-result-routing-continuity/README.md` if you are working on outpatient lab orders, specimen collection, draw stations, result routing, patient portals, abnormal result follow-up, or diagnostic signal continuity.
+295. Read `../domains/diagnostic-imaging-order-scheduling-report-continuity/README.md` if you are working on diagnostic imaging orders, radiology scheduling, CT/MRI/ultrasound/X-ray access, imaging reports, DICOM/PACS, critical result routing, or image sharing.
+296. Read `../domains/ambulatory-procedure-surgery-center-continuity/README.md` if you are working on ambulatory surgery centers, outpatient procedures, endoscopy, infusion centers, pre-op workflows, escorts, recovery observation, or post-procedure follow-up.
+297. Read `../domains/after-hours-urgent-care-triage-continuity/README.md` if you are working on after-hours care, urgent care, nurse advice lines, retail clinics, tele-triage, same-day advice, ED diversion, or non-emergency time-window failures.
+298. Enter a domain under `../domains/`.

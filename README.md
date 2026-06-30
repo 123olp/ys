@@ -584,6 +584,14 @@ flowchart TD
     H --> DMESR[durable-medical-equipment-supplier-repair-continuity<br/>DME / 供应维修]
     H --> HORSC[home-oxygen-respiratory-equipment-supply-continuity<br/>居家氧疗 / 呼吸设备]
     H --> DIGM[diabetes-insulin-glucose-monitoring-supplies-continuity<br/>糖尿病耗材 / 监测供应]
+    H --> PDNAC[provider-directory-network-adequacy-continuity<br/>Provider 名录 / 网络充足性]
+    H --> PCPAAC[primary-care-panel-appointment-access-continuity<br/>初级照护 / Panel 预约]
+    H --> SRANC[specialist-referral-authorization-navigation-continuity<br/>专科转诊 / 授权导航]
+    H --> AAWTC[appointment-availability-wait-time-continuity<br/>预约容量 / 等待时间]
+    H --> OLSRR[outpatient-laboratory-specimen-result-routing-continuity<br/>门诊检验 / 结果路由]
+    H --> DIOSR[diagnostic-imaging-order-scheduling-report-continuity<br/>影像医嘱 / 报告回传]
+    H --> APSC[ambulatory-procedure-surgery-center-continuity<br/>门诊操作 / ASC 连续]
+    H --> AHUCT[after-hours-urgent-care-triage-continuity<br/>非工作时间 / 急诊前分诊]
     H --> MF[measurement-feedback<br/>测量 / 预测 / 反馈]
     H --> C[disembodied-cns<br/>去具身中枢生命系统]
     H --> M[memory-editing<br/>记忆编辑与人格连续性]
@@ -840,6 +848,14 @@ flowchart TD
 | [Durable Medical Equipment Supplier Repair Continuity](domains/durable-medical-equipment-supplier-repair-continuity/README.md) | DMEPOS、供应商、coverage、配送、维修、替换、耗材和居家设备可用性 | 让居家治疗、残障支持和独立生活设备不中断 | 不提供设备维修、改装、采购、索赔、供应商谈判或医保个案建议 |
 | [Home Oxygen Respiratory Equipment Supply Continuity](domains/home-oxygen-respiratory-equipment-supply-continuity/README.md) | 居家氧疗、氧气浓缩机、便携氧、CPAP/BiPAP、耗材、电力依赖和供应商补给 | 防止呼吸支持被电力、配送、耗材或设备故障截断 | 不提供氧流量、设备设置、CPAP 参数、急救、维修或电力施工建议 |
 | [Diabetes Insulin Glucose Monitoring Supplies Continuity](domains/diabetes-insulin-glucose-monitoring-supplies-continuity/README.md) | 胰岛素、注射用品、泵耗材、CGM、血糖仪、试纸、传感器、冷藏和支付 | 防止糖尿病日常风险控制被药物、耗材、监测设备或冷链断点击穿 | 不提供血糖目标、胰岛素剂量、饮食、运动、泵/CGM 设置或急救建议 |
+| [Provider Directory Network Adequacy Continuity](domains/provider-directory-network-adequacy-continuity/README.md) | Provider directory、network adequacy、可接诊状态、地理距离、语言和无障碍信息 | 让医疗覆盖转化为真实可发现、可联系、可预约的服务入口 | 不推荐医生、保险计划、network tier、转诊路径、申诉、账单或法律策略 |
+| [Primary Care Panel Appointment Access Continuity](domains/primary-care-panel-appointment-access-continuity/README.md) | 初级照护、panel、new patient intake、随访、同日预约、FQHC 和常规照护关系 | 让主体拥有可持续、可回访、可转诊的常规医疗入口 | 不提供医生推荐、诊断、检查、治疗、慢病方案、预约抢号或个案转诊 |
+| [Specialist Referral Authorization Navigation Continuity](domains/specialist-referral-authorization-navigation-continuity/README.md) | 专科转诊、referral order、授权、资料转交、预约闭环和反馈回传 | 让复杂问题从初级照护进入正确专科窗口并回到主体行动 | 不提供专科推荐、病情判断、加急策略、授权申诉、病历摘要代写或规避路径 |
+| [Appointment Availability Wait Time Continuity](domains/appointment-availability-wait-time-continuity/README.md) | 预约容量、等待时间、改期、候补、no-show、同日预约和服务时段 | 让名义医疗服务在疾病和风险窗口内真实发生 | 不提供抢号、刷号、候补操纵、预约规避、急诊替代判断或个案加急策略 |
+| [Outpatient Laboratory Specimen Result Routing Continuity](domains/outpatient-laboratory-specimen-result-routing-continuity/README.md) | 门诊检验医嘱、标本采集、采样点、结果回传、患者查看和异常结果闭环 | 让检测能力转化为主体和照护团队可用的行动信号 | 不解释检验结果、推荐检测、提供采样 SOP、诊断治疗、账单策略或认证规避 |
+| [Diagnostic Imaging Order Scheduling Report Continuity](domains/diagnostic-imaging-order-scheduling-report-continuity/README.md) | 影像医嘱、prior authorization、预约、检查完成、报告生成、影像共享和结果回传 | 让影像能力转化为诊断进展而不是等待、重复和资料丢失 | 不解释影像、推荐检查、判断风险、代写授权、提供加急策略或诊疗建议 |
+| [Ambulatory Procedure Surgery Center Continuity](domains/ambulatory-procedure-surgery-center-continuity/README.md) | ASC、门诊内镜、输注、术前准备、陪同接送、恢复观察和 follow-up | 让低住院化治疗安全发生，并保留术后回路 | 不提供手术/操作建议、术前准备、麻醉判断、并发症处理、机构推荐或加急策略 |
+| [After Hours Urgent Care Triage Continuity](domains/after-hours-urgent-care-triage-continuity/README.md) | 夜间/周末照护、护士热线、urgent care、retail clinic、tele-triage 和闭环回传 | 在非急诊但不能等待的时间断点上保护主体 | 不提供症状分诊、急救判断、urgent care 推荐、等待建议、诊断治疗或保险规避 |
 | [Regenerative Medicine](domains/regenerative-medicine/README.md) | 干细胞、组织工程、器官再生、类器官、移植 | 器官/组织修复框架、功能终点和整合风险 | 不提供手术、细胞制备、移植或人体实验步骤 |
 | [Rehabilitation And Functioning](domains/rehabilitation-functioning/README.md) | 康复、功能恢复、失能预防、活动能力、自理和社会参与 | 功能状态、活动能力、参与能力和失能风险模型 | 不提供个人康复处方、训练计划、诊断或治疗建议 |
 | [Cancer Control](domains/cancer-control/README.md) | 癌症预防、早筛、治疗、复发、肿瘤演化 | 癌症风险函数、证据层级和长期控制变量 | 不提供诊断、治疗方案、处方、剂量或个体用药建议 |
@@ -1086,6 +1102,14 @@ human_infra/
 │   ├── durable-medical-equipment-supplier-repair-continuity/
 │   ├── home-oxygen-respiratory-equipment-supply-continuity/
 │   ├── diabetes-insulin-glucose-monitoring-supplies-continuity/
+│   ├── provider-directory-network-adequacy-continuity/
+│   ├── primary-care-panel-appointment-access-continuity/
+│   ├── specialist-referral-authorization-navigation-continuity/
+│   ├── appointment-availability-wait-time-continuity/
+│   ├── outpatient-laboratory-specimen-result-routing-continuity/
+│   ├── diagnostic-imaging-order-scheduling-report-continuity/
+│   ├── ambulatory-procedure-surgery-center-continuity/
+│   ├── after-hours-urgent-care-triage-continuity/
 │   ├── cognitive-augmentation/
 │   ├── digital-identity-security/
 │   ├── disembodied-cns/
@@ -1372,5 +1396,6 @@ flowchart LR
 - 2026-06-30：新增第五十三波 8 个公共空间生存接入连续性域，覆盖公共厕所卫生、公共饮水补水、公共座椅遮阴休息降温、社区韧性/避难中心、公共图书馆社区锚点、公园娱乐绿地、公共 Wi-Fi/设备充电和公共场所无障碍服务。
 - 2026-06-30：新增第五十四波 8 个食物获得执行连续性域，覆盖 grocery/食品零售、SNAP EBT 兑换、WIC 母婴营养兑换、食品银行/pantry、灾害供餐、送餐/集体营养服务、婴儿配方/婴幼儿食品供应安全和餐馆/cafeteria 熟食安全可达。
 - 2026-06-30：新增第五十五波 8 个治疗获得与医用品执行连续性域，覆盖药房处方配药、药品福利/处方集/事前授权、用药核对与依从执行、患者药品标签/咨询理解、未用药回收处置、DME 供应维修、居家氧疗/呼吸设备供应和糖尿病胰岛素/血糖监测耗材连续性。
+- 2026-06-30：新增第五十六波 8 个门诊访问与临床服务执行连续性域，覆盖 provider 名录/网络充足性、初级照护 panel/预约、专科转诊/授权导航、预约容量/等待时间、门诊检验标本/结果路由、诊断影像医嘱/报告回传、门诊操作/ASC 和非工作时间 urgent care/triage 连续性。
 
 完整记录见 [CHANGELOG.md](CHANGELOG.md)。

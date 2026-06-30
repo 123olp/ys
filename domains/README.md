@@ -361,6 +361,14 @@
 - `durable-medical-equipment-supplier-repair-continuity/`：DME 供应商与维修连续性，整理 DMEPOS、供应商、coverage、配送、维修、替换、耗材和居家设备可用性。
 - `home-oxygen-respiratory-equipment-supply-continuity/`：居家氧疗与呼吸设备供应连续性，整理居家氧疗、氧气浓缩机、便携氧、CPAP/BiPAP、耗材、电力依赖和供应商补给。
 - `diabetes-insulin-glucose-monitoring-supplies-continuity/`：糖尿病胰岛素与血糖监测耗材连续性，整理胰岛素、注射用品、泵耗材、CGM、血糖仪、试纸、传感器、冷藏和支付。
+- `provider-directory-network-adequacy-continuity/`：Provider 名录与网络充足性连续性，整理 provider directory、network adequacy、可接诊状态、地理距离、语言/无障碍信息和保险网络。
+- `primary-care-panel-appointment-access-continuity/`：初级照护 panel 与预约可达连续性，整理 primary care、panel、new patient intake、同日预约、FQHC、年度体检和慢病随访。
+- `specialist-referral-authorization-navigation-continuity/`：专科转诊、授权与导航连续性，整理 specialist referral、referral order、authorization、network routing、资料转交和反馈回传。
+- `appointment-availability-wait-time-continuity/`：预约容量与等待时间连续性，整理 appointment availability、wait time、取消名单、改期、no-show、同日预约和服务时段。
+- `outpatient-laboratory-specimen-result-routing-continuity/`：门诊检验标本与结果路由连续性，整理门诊检验医嘱、标本采集、采样点、结果回传、患者查看和异常结果闭环。
+- `diagnostic-imaging-order-scheduling-report-continuity/`：诊断影像医嘱、预约与报告连续性，整理影像医嘱、prior authorization、检查预约、报告生成、影像共享和结果回传。
+- `ambulatory-procedure-surgery-center-continuity/`：门诊操作与 ASC 连续性，整理 ASC、门诊内镜、输注、术前准备、陪同接送、恢复观察和 follow-up。
+- `after-hours-urgent-care-triage-continuity/`：非工作时间 urgent care 与分诊连续性，整理夜间/周末照护、护士热线、urgent care、retail clinic、tele-triage 和闭环回传。
 - `supply-chain-continuity/`：供应链连续性，整理关键物资、服务、物流、替代路径和恢复时间。
 - `synthetic-biology-biosecurity/`：合成生物学与生物安全，整理双重用途、生物安全、生物安保和治理边界。
 - `space-extreme-habitation/`：空间与极端栖居，整理辐射、微重力、隔离、闭环资源和远程医疗风险。

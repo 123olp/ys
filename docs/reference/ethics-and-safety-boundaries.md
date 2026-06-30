@@ -394,6 +394,26 @@ Human Infra 不能被设计成更精密的压榨系统。
 - 提供驾驶路线、事故责任、保险索赔、车辆改装、危险驾驶、街头竞速、规避执法、事故现场处理、跟踪车辆或实时交通安全承诺。
 - 把临床检验、药品安全、药品质量、院前急救、手术麻醉和道路安全的结构性风险改写成个人操作、商业套利、恐慌传播、责任逃避或无证实践。
 
+## 门诊访问与临床服务执行连续性边界
+
+`provider-directory-network-adequacy-continuity`、`primary-care-panel-appointment-access-continuity`、`specialist-referral-authorization-navigation-continuity`、`appointment-availability-wait-time-continuity`、`outpatient-laboratory-specimen-result-routing-continuity`、`diagnostic-imaging-order-scheduling-report-continuity`、`ambulatory-procedure-surgery-center-continuity` 和 `after-hours-urgent-care-triage-continuity` 关注 provider 名录、初级照护、专科转诊、预约等待、门诊检验、诊断影像、门诊操作和非工作时间分诊如何让医疗服务从“名义存在”变成主体可进入、可完成、可回传的服务路径，不是医生推荐、个案分诊、诊疗建议、保险申诉或预约规避工具。
+
+可以做：
+
+- 整理公开资料、官方框架、provider directory、network adequacy、Care Compare、FQHC、referral、wait time、lab result routing、imaging report sharing、ASC quality 和 urgent care/after-hours access 资料。
+- 建模 provider 信息错误、panel 缺口、referral 掉链、等待时间、检验/影像结果回传、procedure follow-up 和 after-hours triage 如何影响主体持续性。
+- 区分系统能力、服务目录、临床责任、保险边界、患者数据、结果回传、急救边界和禁止用途。
+
+不能做：
+
+- 提供 provider、医院、保险计划、network tier、专科、urgent care、ASC 或具体机构推荐、排名、选择建议或背书。
+- 提供诊断、检测/影像/操作选择、检验结果解释、影像解释、治疗建议、urgent/ED 分诊、等待建议、加急策略或急救替代。
+- 代写 referral、prior authorization、exception、medical necessity、病历摘要、投诉、申诉、账单争议、保险争议、法律文书或机构沟通话术。
+- 提供预约机器人、刷号、候补操纵、排队规避、平台抓取、通话自动化、虚假病情、虚假优先级或医疗必要性伪造方法。
+- 提供标本采集 SOP、影像准备、手术/操作准备、麻醉风险判断、并发症处理、术后护理或临床操作指令。
+- 收集或诱导输入 PHI、保险号码、portal 凭证、预约记录、转诊单、检验/影像报告、操作记录、triage 记录、定位轨迹或敏感医疗数据。
+- 把门诊访问、检验、影像、ASC 和 urgent care 的结构性问题改写成个人抢号、保险套利、机构规避、无证医疗、急救替代或数据收集问题。
+
 ## 农村健康、无家可归、羁押重返、残障独立生活、痴呆照护与慢性传染病连续性边界
 
 `rural-health-access-geographic-equity`、`homelessness-unsheltered-health-continuity`、`correctional-health-reentry-continuity`、`disability-services-independent-living`、`dementia-cognitive-decline-care-continuity` 和 `chronic-infectious-disease-care-continuity` 关注地点排除、住所缺失、羁押释放、残障服务、认知衰退和长期感染照护如何影响主体持续性，不是个人医疗、住房、福利、法律、羁押、监管规避、传染病处置或弱势群体定位指南。

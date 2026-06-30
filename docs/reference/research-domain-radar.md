@@ -380,6 +380,14 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `durable-medical-equipment-supplier-repair-continuity/` | DME 供应商、配送、维修、替换和耗材决定居家治疗、残障支持和独立生活设备是否不中断 |
 | `home-oxygen-respiratory-equipment-supply-continuity/` | 居家氧疗、呼吸设备、耗材和电力依赖决定呼吸支持能否在家庭、睡眠和灾害中保持可用 |
 | `diabetes-insulin-glucose-monitoring-supplies-continuity/` | 胰岛素、注射/泵耗材、CGM、血糖仪和试纸决定糖尿病日常风险控制是否能保持反馈闭环 |
+| `provider-directory-network-adequacy-continuity/` | Provider 名录、网络充足性、可接诊状态、距离、语言和无障碍信息决定医疗覆盖是否能转化为真实服务入口 |
+| `primary-care-panel-appointment-access-continuity/` | 初级照护 panel、new patient intake、同日预约、FQHC 和随访决定主体是否有常规医疗入口 |
+| `specialist-referral-authorization-navigation-continuity/` | 专科转诊、授权、资料转交、预约闭环和反馈回传决定复杂问题是否能穿过多机构医疗路径 |
+| `appointment-availability-wait-time-continuity/` | 预约容量、等待时间、改期、候补和 no-show 决定服务是否能在风险窗口内真实发生 |
+| `outpatient-laboratory-specimen-result-routing-continuity/` | 门诊检验医嘱、标本采集、采样点、结果路由和异常结果闭环决定检测信号是否能变成行动 |
+| `diagnostic-imaging-order-scheduling-report-continuity/` | 诊断影像医嘱、预约、授权、报告、critical result 和影像共享决定影像能力是否能推进诊断路径 |
+| `ambulatory-procedure-surgery-center-continuity/` | ASC、门诊操作、内镜、输注、术前工作流、陪同接送和恢复观察决定低住院化治疗是否安全闭环 |
+| `after-hours-urgent-care-triage-continuity/` | 非工作时间照护、urgent care、retail clinic、护士热线和 tele-triage 决定不能等待的门诊断点是否被接住 |
 
 ## 来源信号
 
@@ -429,6 +437,14 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | https://www.medicare.gov/coverage/insulin | 提示 insulin 和注射用品覆盖把药物、支付、泵类型和补给连续性连接到日常风险控制 |
 | https://www.medicare.gov/coverage/continuous-glucose-monitors | 提示 CGM 和传感器覆盖把持续监测、训练和补给要求连接到糖尿病反馈闭环 |
 | https://www.medicare.gov/coverage/blood-sugar-test-strips | 提示 test strips 是传统血糖监测耗材连续性的独立覆盖对象 |
+| https://www.medicare.gov/care-compare/ | 提示 provider、facility 和质量资料需要被发现、比较、核对和转化为真实入口，但不能变成个体推荐 |
+| CMS Network Adequacy / Provider Directory guidance | 提示网络充足性、provider directory 准确性、距离、服务类型和可接诊状态是保险覆盖转化为服务入口的执行层 |
+| https://bphc.hrsa.gov/ | 提示 HRSA health centers 和 FQHC 等基层入口支撑 primary care、弱势群体照护和常规服务连续性 |
+| AHRQ Care Coordination / Referral and Diagnostic Safety resources | 提示专科转诊、资料转交、结果回传和诊断安全需要独立闭环，而不是只看一次门诊访问 |
+| Healthcare wait-time and access monitoring sources | 提示 appointment availability、wait time、取消名单和同日预约是把名义服务转化为风险窗口内服务的核心变量 |
+| https://www.medicare.gov/coverage | 提示 Medicare coverage 入口可用于追踪检验、诊断测试、ASC、urgent care 等门诊服务执行边界 |
+| CMS Ambulatory Surgical Center Quality Reporting | 提示 ASC 和门诊操作需要独立看术前、执行、恢复、质量报告和随访闭环 |
+| Medicare urgent care / after-hours care coverage resources | 提示非工作时间 urgent care、retail clinic、tele-triage 和 ED diversion 需要区别于急诊与普通预约 |
 | https://www.dea.gov/takebackday | 提示受监管药品回收和 Take Back 体系是未用药、过期药和管制药处置的公共接口 |
 | https://www.cdc.gov/diabetes/ | 提示糖尿病日常管理依赖药物、监测、耗材、教育和持续反馈，不只是单次临床处方 |
 | https://www.cdc.gov/medication-safety/ | 提示 medication safety 覆盖家庭用药、误用、相互作用、教育和系统性安全风险 |
