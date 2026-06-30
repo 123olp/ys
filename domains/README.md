@@ -80,6 +80,14 @@
 - `biometric-identifier-template-governance-continuity/`：生物特征标识与模板治理连续性，整理 face、voice、fingerprint、iris、template、liveness 和 matching risk。
 - `children-teen-data-privacy-consent-continuity/`：儿童青少年数据隐私与同意连续性，整理 COPPA、parental consent、age assurance、edtech data 和 teen privacy。
 - `data-breach-notification-identity-recovery-continuity/`：数据泄露通知与身份恢复连续性，整理 breach notification、identity theft recovery、credit freeze、fraud alert 和 remediation。
+- `content-provenance-authenticity-credential-continuity/`：内容来源、真实性凭据与验证连续性，整理 content provenance、content credentials、publisher identity、metadata 和 verification UX。
+- `synthetic-media-watermarking-disclosure-continuity/`：合成媒体水印与披露连续性，整理 synthetic media、AI-generated content、watermarking、disclosure 和 labeling。
+- `ai-impersonation-deepfake-fraud-continuity/`：AI 冒充、deepfake 与诈骗连续性，整理 AI impersonation、voice cloning、video impersonation、government/business impersonation 和 verification workflow。
+- `voice-call-caller-id-authentication-continuity/`：电话 caller ID 认证与号码冒充连续性，整理 STIR/SHAKEN、caller ID spoofing、robocall、vishing 和 call blocking。
+- `email-domain-authentication-spoofing-continuity/`：邮件域名认证与 spoofing 连续性，整理 SPF、DKIM、DMARC、BIMI、phishing 和 domain spoofing。
+- `official-web-domain-brand-impersonation-continuity/`：官方网站域名与品牌冒充连续性，整理 official domain、lookalike domain、brand impersonation、typosquatting 和 search trust。
+- `digital-evidence-preservation-chain-of-custody-continuity/`：数字证据保存与链路连续性，整理 digital evidence、metadata preservation、record retention、chain of custody 和 audit trail。
+- `platform-content-moderation-notice-appeal-continuity/`：平台内容审核通知与申诉连续性，整理 content moderation、notice、statement of reasons、appeal、human review 和 transparency report。
 - `transportation-access-mobility/`：交通接入与日常移动，整理公共交通、无障碍交通、出行时间、医疗交通、交通成本和外部可达性。
 - `legal-identity-civil-registration/`：法律身份与民事登记，整理法律身份、出生登记、民事登记、生命统计、身份文件和服务资格。
 - `access-to-justice-legal-aid/`：司法可及与法律援助，整理民事法律需求、法律援助、程序负担、代理缺口和权利救济。

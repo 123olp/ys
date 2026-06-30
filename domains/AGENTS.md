@@ -945,6 +945,30 @@ domains/
 ├── data-breach-notification-identity-recovery-continuity/
 │   ├── AGENTS.md
 │   └── README.md
+├── content-provenance-authenticity-credential-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── synthetic-media-watermarking-disclosure-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── ai-impersonation-deepfake-fraud-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── voice-call-caller-id-authentication-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── email-domain-authentication-spoofing-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── official-web-domain-brand-impersonation-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── digital-evidence-preservation-chain-of-custody-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── platform-content-moderation-notice-appeal-continuity/
+│   ├── AGENTS.md
+│   └── README.md
 ├── transportation-access-mobility/
 │   ├── AGENTS.md
 │   └── README.md
@@ -1497,6 +1521,7 @@ domains/
 - `rental-lease-tenancy-rights-continuity/`、`eviction-prevention-court-diversion-continuity/`、`emergency-rental-assistance-arrears-continuity/`、`housing-choice-voucher-public-housing-continuity/`、`fair-housing-discrimination-reasonable-accommodation-continuity/`、`housing-habitability-inspection-code-enforcement-continuity/`、`hud-approved-housing-counseling-navigation-continuity/` 和 `manufactured-housing-park-tenure-safety-continuity/` 负责住房 tenure 稳定与可居住性执行连续性，覆盖租赁居住权、驱逐预防、欠租援助、住房补贴、公平住房、可居住性检查、住房咨询和制造房屋园区稳定。
 - `self-represented-litigant-court-self-help-continuity/`、`court-efiling-document-submission-continuity/`、`remote-hybrid-court-hearing-access-continuity/`、`court-language-access-interpreter-continuity/`、`court-disability-accommodation-accessibility-continuity/`、`court-fees-fines-ability-to-pay-continuity/`、`jury-service-summons-hardship-continuity/` 和 `small-claims-civil-dispute-resolution-continuity/` 负责法院接入与民事程序执行连续性，覆盖自助中心、电子提交、远程 hearing、语言口译、残障便利、费用罚金、陪审义务和小额纠纷恢复。
 - `data-broker-registry-opt-out-deletion-continuity/`、`privacy-rights-access-correction-deletion-continuity/`、`opt-out-preference-signal-consent-revocation-continuity/`、`commercial-surveillance-adtech-profile-continuity/`、`sensitive-location-data-exposure-continuity/`、`biometric-identifier-template-governance-continuity/`、`children-teen-data-privacy-consent-continuity/` 和 `data-breach-notification-identity-recovery-continuity/` 负责个人数据权利、隐私暴露与数据经纪连续性，覆盖数据经纪、访问更正删除、同意撤回、商业监控、位置数据、生物特征、未成年数据和泄露恢复。
+- `content-provenance-authenticity-credential-continuity/`、`synthetic-media-watermarking-disclosure-continuity/`、`ai-impersonation-deepfake-fraud-continuity/`、`voice-call-caller-id-authentication-continuity/`、`email-domain-authentication-spoofing-continuity/`、`official-web-domain-brand-impersonation-continuity/`、`digital-evidence-preservation-chain-of-custody-continuity/` 和 `platform-content-moderation-notice-appeal-continuity/` 负责数字内容可信、合成媒体与冒充风险连续性，覆盖内容来源凭据、合成媒体披露、AI 冒充、电话认证、邮件认证、官网品牌冒充、数字证据保存和平台审核通知申诉。
 - `human-animal-bond-companion-care-continuity/`、`veterinary-care-access-cost-continuity/`、`service-animal-disability-access-continuity/`、`pet-identification-microchip-reunification-continuity/`、`pet-food-medication-supply-safety-continuity/`、`pet-disaster-evacuation-sheltering-continuity/`、`animal-shelter-rescue-rehoming-continuity/` 和 `animal-welfare-cruelty-reporting-continuity/` 负责伴侣动物、服务动物与宠物照护连续性，把关系支持、兽医入口、辅助接口、身份重聚、食药供应、灾害撤离、收容转接和福利报告纳入主体持续性模型。
 - 上述伴侣/服务动物域不提供动物诊疗、训练、购买、领养、繁育、救助行动、微芯片/寻宠操作、实时灾害撤离、动物举报取证、法律策略、家庭纠纷处理、宠物食品/药品建议、动物虐待或规避检查方法。
 - `public-procurement-contracting-capacity/` 负责公共采购、合同、供应商管理、应急采购、透明度和交付验收这些公共能力落地条件。

@@ -228,6 +228,22 @@ Human Infra 不能被设计成更精密的压榨系统。
 - 收集、推断、公开或关联真实个人资料、数据经纪记录、地址、联系方式、位置轨迹、生物特征、未成年信息、泄露通知、账号凭据、SSN、金融账户、医疗账户、受害者身份或家庭关系等高风险敏感信息。
 - 把数据暴露、画像误用、泄露损害、诈骗受害、身份恢复失败、同意撤回失败、未成年人隐私风险或生物特征不可替换风险归因于个人不谨慎、技术素养不足、消费选择或不愿阅读条款。
 
+## 数字内容可信、合成媒体与冒充风险连续性边界
+
+`content-provenance-authenticity-credential-continuity`、`synthetic-media-watermarking-disclosure-continuity`、`ai-impersonation-deepfake-fraud-continuity`、`voice-call-caller-id-authentication-continuity`、`email-domain-authentication-spoofing-continuity`、`official-web-domain-brand-impersonation-continuity`、`digital-evidence-preservation-chain-of-custody-continuity` 和 `platform-content-moderation-notice-appeal-continuity` 关注内容、通信和平台裁决如何保持可信、可说明、可申诉和可恢复，以及这些过程如何影响判断、支付、求助、维权、声誉、收入、表达和未来选择权，不是 deepfake、钓鱼、诈骗、取证操作、平台对抗或舆论操控工具。
+
+可以做：
+
+- 整理 NIST、C2PA、Content Credentials、FTC、FCC、CISA、EU DSA 等公开资料的对象、入口类型、验证变量、披露要求、风险边界和禁止用途。
+- 建模内容来源、合成媒体披露、AI 冒充、电话 caller ID、邮件域名认证、官方入口、数字证据保存和平台审核通知申诉如何影响主体持续性、注意力、安全、身份恢复、服务接入和未来选择权。
+- 区分可信线索、事实核验、法律证据、平台裁决、机构认证、通信认证、隐私风险和个案操作之间的边界。
+
+不能做：
+
+- 提供 deepfake 生成、声音克隆、检测规避、水印移除、内容凭据伪造、元数据删除、caller ID spoofing、robocall、vishing、钓鱼邮件、邮件认证绕过、相似域名诈骗、假官网制作、SEO 操控、数字取证教程、设备镜像、密码绕过、平台申诉代写、审核规避、刷量、恶意举报、封禁规避或舆论操控方法。
+- 收集、推断、公开或关联真实内容、脸部、声音、电话、邮箱、域名所有者、私信、日志、证据材料、案件材料、未成年人、受害者、账号状态、平台处罚记录或通信记录等高风险敏感信息。
+- 把冒充受害、钓鱼受害、内容误判、平台误封、证据保存失败、官方入口混淆或通信认证失败归因于个人不谨慎、技术素养不足、表达方式错误或不愿阅读条款。
+
 ## 基础生计与风险分摊域边界
 
 `food-security-nutrition-access`、`water-sanitation-hygiene-continuity`、`energy-access-resilience`、`social-protection-benefits-delivery`、`insurance-risk-transfer` 和 `childcare-family-continuity` 关注食物、水卫生、能源、公共福利、保险风险池和托育家庭支持如何作为反稀缺基础设施支撑主体持续性，不是个体饮食、申请、理赔、设备、施工或家庭处置指南。

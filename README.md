@@ -1096,6 +1096,14 @@ flowchart TD
 | [Biometric Identifier Template Governance Continuity](domains/biometric-identifier-template-governance-continuity/README.md) | face、voice、fingerprint、iris、template、liveness、matching 和 bias | 把身体特征从不可重置凭据风险转化为可治理、可替代、可审查接口 | 不提供生物认证绕过、deepfake、声纹伪造、模板反演或识别部署 |
 | [Children Teen Data Privacy Consent Continuity](domains/children-teen-data-privacy-consent-continuity/README.md) | COPPA、parental consent、age assurance、edtech data、teen privacy 和 retention | 防止未成年数据足迹在主体成熟前消耗安全、发展、注意力和未来选择权 | 不提供年龄规避、儿童画像、广告 targeting、家长控制绕过或监控方法 |
 | [Data Breach Notification Identity Recovery Continuity](domains/data-breach-notification-identity-recovery-continuity/README.md) | breach notification、identity theft recovery、credit freeze、fraud alert 和 remediation | 让泄露事件后的身份、账号、信用、医疗、税务和公共服务入口可恢复 | 不提供索赔建议、冻结操作、账号恢复代办、撞库、暗网搜索或泄露利用 |
+| [Content Provenance Authenticity Credential Continuity](domains/content-provenance-authenticity-credential-continuity/README.md) | content provenance、content credentials、publisher identity、signature、metadata 和 verification UX | 让数字内容来源、编辑历史和发布主体成为可审查线索 | 不提供伪造凭据、删元数据、绕过水印、取证结论或平台处置建议 |
+| [Synthetic Media Watermarking Disclosure Continuity](domains/synthetic-media-watermarking-disclosure-continuity/README.md) | synthetic media、AI-generated content、watermarking、disclosure、labeling 和 detector limitation | 降低 AI 合成内容对信任、证据、情绪和公共判断的劫持风险 | 不提供 deepfake 制作、检测规避、水印移除、个案判断或舆论操控 |
+| [AI Impersonation Deepfake Fraud Continuity](domains/ai-impersonation-deepfake-fraud-continuity/README.md) | AI impersonation、deepfake scam、voice cloning、video impersonation 和 verification workflow | 防止声音、面孔、权威和亲密关系被低成本冒充转成攻击面 | 不提供 deepfake、声音克隆、社工脚本、诈骗流程或检测规避 |
+| [Voice Call Caller ID Authentication Continuity](domains/voice-call-caller-id-authentication-continuity/README.md) | caller ID authentication、STIR/SHAKEN、spoofing、robocall、vishing 和 call blocking | 保持电话通知、求助、回拨验证和关键服务沟通的可信入口 | 不提供号码伪造、robocall、vishing、SIM 操控或骚扰策略 |
+| [Email Domain Authentication Spoofing Continuity](domains/email-domain-authentication-spoofing-continuity/README.md) | SPF、DKIM、DMARC、BIMI、phishing、domain spoofing 和 deliverability | 防止邮件通知和机构沟通被伪造发件人、钓鱼和投递失败打断 | 不提供钓鱼邮件、绕过认证、仿冒域名、邮箱入侵或投递优化 |
+| [Official Web Domain Brand Impersonation Continuity](domains/official-web-domain-brand-impersonation-continuity/README.md) | official domain、lookalike domain、brand impersonation、typosquatting 和 search trust | 防止服务入口被假官网、假客服、假申请入口和品牌冒充截断 | 不提供域名抢注、钓鱼页、SEO 操控、takedown 策略或真假个案判断 |
+| [Digital Evidence Preservation Chain Of Custody Continuity](domains/digital-evidence-preservation-chain-of-custody-continuity/README.md) | digital evidence、metadata、chain of custody、record retention 和 audit trail | 让纠纷、申诉、受害者服务和恢复过程中的数字记录不因保存失败而失效 | 不提供数字取证教程、设备镜像、密码绕过、数据恢复或证据策略 |
+| [Platform Content Moderation Notice Appeal Continuity](domains/platform-content-moderation-notice-appeal-continuity/README.md) | content moderation、notice、statement of reasons、appeal、human review 和 transparency report | 防止平台黑箱裁决切断表达、声誉、收入、关系和服务入口 | 不提供申诉代写、规避审核、刷量、恶意举报、封禁规避或舆论战术 |
 | [Transportation Access Mobility](domains/transportation-access-mobility/README.md) | 公共交通、无障碍交通、出行时间、交通成本、医疗交通和交通安全 | 外部可达性、行动半径、服务连接和等待成本 | 不提供路线、驾驶、车辆、交通法律、撤离或出行操作建议 |
 | [Supply Chain Continuity](domains/supply-chain-continuity/README.md) | 药品、能源、食物、设备、通信、芯片、物流和替代路径 | 关键输入、依赖链、断供模式、替代路径和恢复时间 | 不提供囤积恐慌、黑市采购、制裁规避、非法获取或供应链攻击建议 |
 | [Synthetic Biology Biosecurity](domains/synthetic-biology-biosecurity/README.md) | 合成生物学、生物安全、生物安保、双重用途风险和治理边界 | 高风险研究边界、审查门槛、禁止用途和生物风险变量 | 不提供病原体工程、培养、传播、规避筛查、实验协议或湿实验步骤 |
@@ -1440,6 +1448,14 @@ human_infra/
 │   ├── biometric-identifier-template-governance-continuity/
 │   ├── children-teen-data-privacy-consent-continuity/
 │   ├── data-breach-notification-identity-recovery-continuity/
+│   ├── content-provenance-authenticity-credential-continuity/
+│   ├── synthetic-media-watermarking-disclosure-continuity/
+│   ├── ai-impersonation-deepfake-fraud-continuity/
+│   ├── voice-call-caller-id-authentication-continuity/
+│   ├── email-domain-authentication-spoofing-continuity/
+│   ├── official-web-domain-brand-impersonation-continuity/
+│   ├── digital-evidence-preservation-chain-of-custody-continuity/
+│   ├── platform-content-moderation-notice-appeal-continuity/
 │   ├── future-waiting/
 │   ├── fluid-electrolyte-acid-base-homeostasis/
 │   ├── governance-rights/
@@ -1761,5 +1777,6 @@ flowchart LR
 - 2026-07-01：新增第七十一波 8 个住房 tenure 稳定与可居住性执行连续性域，覆盖租赁租约居住权、驱逐预防法院 diversion、应急租金援助与欠租、住房选择券/公屋、公平住房/合理便利、住房可居住性检查 code enforcement、HUD 批准住房咨询和制造房屋园区 tenure 安全。
 - 2026-07-01：新增第七十二波 8 个法院接入与民事程序执行连续性域，覆盖自行诉讼人自助、法院电子 filing、远程/混合 hearing、法院语言服务、法院残障便利、法院罚金费用支付能力、陪审传票 hardship 和小额民事纠纷恢复。
 - 2026-07-01：新增第七十三波 8 个个人数据权利、隐私暴露与数据经纪连续性域，覆盖数据经纪登记/退出/删除、隐私权访问更正删除、退出偏好信号与同意撤回、商业监控广告画像、敏感位置数据、生物特征模板治理、儿童青少年数据隐私和数据泄露通知身份恢复。
+- 2026-07-01：新增第七十四波 8 个数字内容可信、合成媒体与冒充风险连续性域，覆盖内容来源凭据、合成媒体水印披露、AI 冒充 deepfake fraud、电话 caller ID 认证、邮件域名认证、官网品牌冒充、数字证据保存链和平台内容审核通知申诉。
 
 完整记录见 [CHANGELOG.md](CHANGELOG.md)。

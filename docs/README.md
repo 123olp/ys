@@ -93,6 +93,7 @@ docs/
 │   ├── 0075-add-seventy-first-wave-housing-tenure-stability-continuity-domains.md
 │   ├── 0076-add-seventy-second-wave-court-access-procedure-continuity-domains.md
 │   ├── 0077-add-seventy-third-wave-personal-data-privacy-continuity-domains.md
+│   ├── 0078-add-seventy-fourth-wave-digital-content-trust-continuity-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -580,4 +581,12 @@ docs/
 399. Read `../domains/biometric-identifier-template-governance-continuity/README.md` if you are working on biometric identifiers, biometric templates, facial recognition, voiceprints, fingerprints, iris scans, liveness, or biometric matching risk.
 400. Read `../domains/children-teen-data-privacy-consent-continuity/README.md` if you are working on COPPA, parental consent, age assurance, edtech data, teen privacy, child-directed advertising, or youth data retention.
 401. Read `../domains/data-breach-notification-identity-recovery-continuity/README.md` if you are working on breach notification, identity theft recovery, exposed personal information, credit freezes, fraud alerts, or account recovery after data exposure.
-402. Enter a domain under `../domains/`.
+402. Read `../domains/content-provenance-authenticity-credential-continuity/README.md` if you are working on content provenance, content credentials, publisher identity, metadata, cryptographic signature, or authenticity verification UX.
+403. Read `../domains/synthetic-media-watermarking-disclosure-continuity/README.md` if you are working on synthetic media, AI-generated content, watermarking, disclosure, labeling, detector limitations, or provenance preservation.
+404. Read `../domains/ai-impersonation-deepfake-fraud-continuity/README.md` if you are working on AI impersonation, deepfake scams, voice cloning, video impersonation, government/business impersonation, or verification workflows.
+405. Read `../domains/voice-call-caller-id-authentication-continuity/README.md` if you are working on caller ID authentication, STIR/SHAKEN, spoofed calls, robocalls, vishing, call blocking, or verified calling.
+406. Read `../domains/email-domain-authentication-spoofing-continuity/README.md` if you are working on SPF, DKIM, DMARC, BIMI, phishing, domain spoofing, email authentication, or notification deliverability.
+407. Read `../domains/official-web-domain-brand-impersonation-continuity/README.md` if you are working on official domains, brand impersonation, lookalike domains, typosquatting, search-result trust, or fake service entrances.
+408. Read `../domains/digital-evidence-preservation-chain-of-custody-continuity/README.md` if you are working on digital evidence, screenshots, metadata, chain of custody, record retention, audit trails, or evidence-handling boundaries.
+409. Read `../domains/platform-content-moderation-notice-appeal-continuity/README.md` if you are working on content moderation, notices, statements of reasons, appeals, human review, account restrictions, or transparency reports.
+410. Enter a domain under `../domains/`.

@@ -162,6 +162,14 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 生物特征模板必须可治理可替代 | `biometric-identifier-template-governance-continuity/` | face、voice、fingerprint、iris、template、liveness、bias | 身体特征被当作不可重置凭据，泄露或误识别后难以恢复 |
 | 未成年数据必须保护未来选择权 | `children-teen-data-privacy-consent-continuity/` | COPPA、parental consent、age assurance、edtech data、teen privacy、retention | 儿童青少年数据足迹在成熟前消耗安全、发展、注意力和成年机会边界 |
 | 泄露事件必须可通知可恢复 | `data-breach-notification-identity-recovery-continuity/` | breach notice、exposed data、identity recovery、credit freeze、fraud alert | 泄露资料长期转成身份盗用、账号接管、信用、医疗、税务和公共服务风险 |
+| 内容来源必须可验证 | `content-provenance-authenticity-credential-continuity/` | provenance、content credentials、publisher identity、metadata、signature | 内容来源不可验证时，主体难以区分记录、伪造、转述、合成和未知来源 |
+| 合成媒体必须可披露可解释 | `synthetic-media-watermarking-disclosure-continuity/` | watermark、disclosure、label、detector limit、provenance | AI 合成内容伪装成真实记录，劫持证据、情绪、声誉和公共判断 |
+| AI 冒充必须可识别可缓冲 | `ai-impersonation-deepfake-fraud-continuity/` | voice cloning、video impersonation、authority signal、verification workflow | 声音、面孔和权威身份被低成本伪造，信任关系和支付流程变成攻击面 |
+| 电话身份必须可认证 | `voice-call-caller-id-authentication-continuity/` | STIR/SHAKEN、caller ID、spoofing、robocall、vishing | 关键通知和求助入口因号码冒充、误拦截或漏拦截而断裂 |
+| 邮件来源必须可认证 | `email-domain-authentication-spoofing-continuity/` | SPF、DKIM、DMARC、BIMI、phishing、deliverability | 医疗、金融、法院、学校和平台通知被伪造发件人或投递失败打断 |
+| 官方入口必须可辨认 | `official-web-domain-brand-impersonation-continuity/` | official domain、lookalike domain、typosquatting、search trust | 假官网、假客服和假申请入口把真实任务重定向到诈骗或错误服务 |
+| 数字证据必须可保存可说明 | `digital-evidence-preservation-chain-of-custody-continuity/` | metadata、record retention、chain of custody、audit trail | 纠纷、申诉和恢复过程因记录丢失、篡改、隐私外溢或上下文缺失而失败 |
+| 平台裁决必须可通知可申诉 | `platform-content-moderation-notice-appeal-continuity/` | notice、statement of reasons、appeal、human review、transparency report | 黑箱审核、误删、降权或账号限制切断表达、收入、声誉和服务入口 |
 | 日常移动和服务接入可达 | `transportation-access-mobility/` | 公共交通、无障碍交通、出行时间、医疗交通、交通成本、交通安全 | 有资源但到不了，服务延误、缺席、孤立或撤离不可达 |
 | 法律身份可被承认 | `legal-identity-civil-registration/` | 法律身份、出生登记、民事登记、生命统计、身份文件、服务资格 | 无证、登记缺失、身份错误或制度不承认导致权利与服务断线 |
 | 权利救济可达 | `access-to-justice-legal-aid/` | 民事法律需求、法律援助、司法可及、程序负担、代理缺口、申诉执行 | 名义权利无法转化为住房、收入、安全、身份和服务恢复 |
@@ -725,6 +733,14 @@ risk-engineering
   -> biometric-identifier-template-governance-continuity
   -> children-teen-data-privacy-consent-continuity
   -> data-breach-notification-identity-recovery-continuity
+  -> content-provenance-authenticity-credential-continuity
+  -> synthetic-media-watermarking-disclosure-continuity
+  -> ai-impersonation-deepfake-fraud-continuity
+  -> voice-call-caller-id-authentication-continuity
+  -> email-domain-authentication-spoofing-continuity
+  -> official-web-domain-brand-impersonation-continuity
+  -> digital-evidence-preservation-chain-of-custody-continuity
+  -> platform-content-moderation-notice-appeal-continuity
   -> transportation-access-mobility
   -> legal-identity-civil-registration
   -> access-to-justice-legal-aid

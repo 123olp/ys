@@ -90,3 +90,4 @@ Current decisions:
 - `0075-add-seventy-first-wave-housing-tenure-stability-continuity-domains.md`
 - `0076-add-seventy-second-wave-court-access-procedure-continuity-domains.md`
 - `0077-add-seventy-third-wave-personal-data-privacy-continuity-domains.md`
+- `0078-add-seventy-fourth-wave-digital-content-trust-continuity-domains.md`

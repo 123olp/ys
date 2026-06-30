@@ -133,6 +133,14 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `biometric-identifier-template-governance-continuity/` | 生物特征模板治理决定身体凭据、误识别、偏差和不可撤销泄露风险是否可被约束 |
 | `children-teen-data-privacy-consent-continuity/` | 儿童青少年数据隐私决定未成年阶段的数据足迹是否会消耗发展、安全、注意力和成年选择权 |
 | `data-breach-notification-identity-recovery-continuity/` | 数据泄露通知和身份恢复决定泄露事件能否从不可见攻击面转成可处理恢复链 |
+| `content-provenance-authenticity-credential-continuity/` | 内容来源凭据决定主体能否识别材料发布者、编辑历史和可信验证入口 |
+| `synthetic-media-watermarking-disclosure-continuity/` | 合成媒体水印与披露决定 AI 生成内容是否会伪装成真实记录、证据或权威材料 |
+| `ai-impersonation-deepfake-fraud-continuity/` | AI 冒充和 deepfake fraud 决定声音、面孔、关系和权威信号是否会被低成本武器化 |
+| `voice-call-caller-id-authentication-continuity/` | 电话 caller ID 认证决定关键来电、回拨验证和求助沟通是否会被号码冒充破坏 |
+| `email-domain-authentication-spoofing-continuity/` | 邮件域名认证决定机构通知、账户恢复、法院材料和支付提醒是否能抵抗发件人伪造 |
+| `official-web-domain-brand-impersonation-continuity/` | 官方域名与品牌冒充治理决定主体能否避开假官网、假客服、假申请入口和搜索信任劫持 |
+| `digital-evidence-preservation-chain-of-custody-continuity/` | 数字证据保存链决定截图、日志、元数据和记录能否在纠纷、申诉和恢复中保持可说明 |
+| `platform-content-moderation-notice-appeal-continuity/` | 平台内容审核通知申诉决定账号、表达、收入、声誉和服务入口是否会被黑箱裁决切断 |
 | `transportation-access-mobility/` | 外部交通可达性决定医疗、工作、食物、社区、照护和应急资源能否实际到达 |
 | `legal-identity-civil-registration/` | 法律身份、出生登记、民事登记和身份文件决定主体能否被制度承认为权利与服务对象 |
 | `emergency-preparedness-response/` | 灾害准备、预警、通信、急救医疗、安置和恢复决定尾部风险能否被响应而不是一次性清零 |
@@ -1156,6 +1164,16 @@ Source links:
 - https://www.ftc.gov/business-guidance/privacy-security/childrens-privacy
 - https://www.identitytheft.gov/
 - https://consumer.ftc.gov/articles/data-breach-response-guide-business
+- https://c2pa.org/specifications/specifications/2.1/specs/C2PA_Specification.html
+- https://contentcredentials.org/
+- https://www.nist.gov/itl/ai-risk-management-framework
+- https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-4.pdf
+- https://www.ftc.gov/news-events/topics/truth-advertising/impersonation-scams
+- https://consumer.ftc.gov/articles/how-recognize-and-avoid-phishing-scams
+- https://www.fcc.gov/call-authentication
+- https://www.cisa.gov/topics/cyber-threats-and-advisories/types-cyber-threats/phishing
+- https://transparency.dsa.ec.europa.eu/
+- https://digital-strategy.ec.europa.eu/en/policies/digital-services-act-package
 - https://www.cdc.gov/transportation/
 - https://www.transportation.gov/mission/health
 - https://www.cdc.gov/healthy-places/php/toolkit/transportation.html
