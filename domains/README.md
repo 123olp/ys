@@ -88,6 +88,14 @@
 - `manufacturing-repair-capacity/`：制造与维修能力，整理先进制造、维修、维护、备件、质量、本地生产和关键设备恢复能力。
 - `public-procurement-contracting-capacity/`：公共采购与合同能力，整理公共采购、供应商管理、合同执行、应急采购、透明度和交付验收。
 - `animal-health-zoonotic-interface-one-health/`：动物健康、人兽共患界面与 One Health，整理动物健康、兽医公共卫生、人兽共患病、食品动物和跨部门监测。
+- `human-animal-bond-companion-care-continuity/`：人-动物纽带与伴侣照护连续性，整理伴侣动物、陪伴、日常照护、家庭节律和关系支持边界。
+- `veterinary-care-access-cost-continuity/`：兽医可及与费用连续性，整理兽医服务、急诊、费用、预约、地理可达和低成本照护入口。
+- `service-animal-disability-access-continuity/`：服务动物与残障可达连续性，整理服务动物任务辅助、公共进入、处理者权利和残障参与边界。
+- `pet-identification-microchip-reunification-continuity/`：宠物身份、微芯片与重聚连续性，整理标签、微芯片、登记、联系方式更新和走失重聚。
+- `pet-food-medication-supply-safety-continuity/`：宠物食品、药品供应与安全连续性，整理宠物食品、动物药、处方配药、召回、标签和供应中断。
+- `pet-disaster-evacuation-sheltering-continuity/`：宠物灾害撤离与避难连续性，整理宠物灾害准备、撤离运输、避难接纳、物资和重聚。
+- `animal-shelter-rescue-rehoming-continuity/`：动物收容、救助与再安置连续性，整理动物收容、救助、寄养、领养、再安置和失主重聚。
+- `animal-welfare-cruelty-reporting-continuity/`：动物福利与虐待报告连续性，整理动物福利、虐待忽视、囤积、遗弃、报告入口和转介。
 - `public-health-laboratory-diagnostic-capacity/`：公共卫生实验室与诊断能力，整理实验室网络、检测确认、质量管理、诊断可及、实验室扩容和风险确认层。
 - `blood-organ-tissue-biovigilance-transplantation/`：血液、器官、组织、生物警戒与移植系统，整理血液供应、输血安全、器官/组织捐献、移植体系、追踪和不良事件监测。
 - `waste-management-hazardous-materials-continuity/`：废弃物管理、危险材料与处置连续性，整理固体废物、医疗废物、危险废物、处理处置、服务连续性和环境暴露边界。

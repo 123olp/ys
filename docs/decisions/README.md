@@ -81,3 +81,4 @@ Current decisions:
 - `0066-add-sixty-second-wave-meaning-culture-identity-continuity-domains.md`
 - `0067-add-sixty-third-wave-human-factors-operational-reliability-domains.md`
 - `0068-add-sixty-fourth-wave-mental-health-neurodevelopment-functioning-domains.md`
+- `0069-add-sixty-fifth-wave-companion-service-animal-continuity-domains.md`

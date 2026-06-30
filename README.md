@@ -324,6 +324,14 @@ flowchart TD
     H --> MRC[manufacturing-repair-capacity<br/>制造 / 维修能力]
     H --> PPCC[public-procurement-contracting-capacity<br/>公共采购 / 合同能力]
     H --> AHZIOH[animal-health-zoonotic-interface-one-health<br/>动物健康 / One Health]
+    H --> HABCCC[human-animal-bond-companion-care-continuity<br/>人-动物纽带 / 伴侣照护]
+    H --> VCACC[veterinary-care-access-cost-continuity<br/>兽医可及 / 费用连续]
+    H --> SAADC[service-animal-disability-access-continuity<br/>服务动物 / 残障可达]
+    H --> PIMRC[pet-identification-microchip-reunification-continuity<br/>宠物身份 / 微芯片重聚]
+    H --> PFMSSC[pet-food-medication-supply-safety-continuity<br/>宠物食药 / 供应安全]
+    H --> PDESC[pet-disaster-evacuation-sheltering-continuity<br/>宠物灾害 / 撤离避难]
+    H --> ASRRC[animal-shelter-rescue-rehoming-continuity<br/>收容救助 / 再安置]
+    H --> AWCRC[animal-welfare-cruelty-reporting-continuity<br/>动物福利 / 虐待报告]
     H --> PHLDC[public-health-laboratory-diagnostic-capacity<br/>公共卫生实验室 / 诊断能力]
     H --> BOTBT[blood-organ-tissue-biovigilance-transplantation<br/>血液 / 器官 / 组织 / 生物警戒]
     H --> WMHMC[waste-management-hazardous-materials-continuity<br/>废弃物 / 危险材料]
@@ -1057,6 +1065,14 @@ flowchart TD
 | [Manufacturing Repair Capacity](domains/manufacturing-repair-capacity/README.md) | 制造、维修、维护、备件、质量、本地生产和关键设备恢复 | 让关键设备、工具、医疗与生活基础设施在损坏或断供后可恢复 | 不提供武器、受管制设备、假冒零件、破解、危险维修、采购或监管规避建议 |
 | [Public Procurement Contracting Capacity](domains/public-procurement-contracting-capacity/README.md) | 公共采购、合同、供应商管理、应急采购、透明度和交付验收 | 把公共预算、需求和政策目标转化为可靠服务与基础设施交付 | 不提供投标策略、围标串标、利益输送、合同操控、资格规避或个案法律商业建议 |
 | [Animal Health Zoonotic Interface One Health](domains/animal-health-zoonotic-interface-one-health/README.md) | 动物健康、兽医公共卫生、人兽共患病、食品动物、野生动物和 One Health | 在动物-人类-环境界面建立上游公共卫生和食品系统风险屏障 | 不提供动物诊疗、养殖防疫操作、病原体处理、野生动物捕捉、规避监测或动物交易建议 |
+| [Human Animal Bond Companion Care Continuity](domains/human-animal-bond-companion-care-continuity/README.md) | 伴侣动物、人-动物纽带、日常照护、陪伴和家庭节律 | 把宠物作为关系支持、恢复动机和照护责任变量 | 不提供宠物购买、繁育、训练、动物医疗或心理治疗替代建议 |
+| [Veterinary Care Access Cost Continuity](domains/veterinary-care-access-cost-continuity/README.md) | 兽医服务、费用、预约、急诊、地理可达和低成本支持 | 把兽医照护作为宠物福利和家庭压力的服务连续性条件 | 不提供动物诊断、治疗、疫苗、药物、急救、手术或安乐死建议 |
+| [Service Animal Disability Access Continuity](domains/service-animal-disability-access-continuity/README.md) | 服务动物、残障可达、公共场所进入、任务辅助和处理者权利 | 把服务动物作为部分主体的辅助接口和公共参与条件 | 不提供认证、训练、注册、法律意见、投诉代写或场所进入策略 |
+| [Pet Identification Microchip Reunification Continuity](domains/pet-identification-microchip-reunification-continuity/README.md) | 微芯片、标签、登记、联系方式更新、走失宠物和失主重聚 | 把宠物关系对象转化为可识别、可找回、可保护的记录系统 | 不提供寻宠指挥、私人地址搜索、所有权判断、定位跟踪或冒领方法 |
+| [Pet Food Medication Supply Safety Continuity](domains/pet-food-medication-supply-safety-continuity/README.md) | 宠物食品、动物药、处方配药、召回、标签和供应中断 | 把宠物食药供应作为动物健康和家庭照护的物质输入层 | 不提供饮食方案、用药剂量、处方替代、补剂、采购或召回处置建议 |
+| [Pet Disaster Evacuation Sheltering Continuity](domains/pet-disaster-evacuation-sheltering-continuity/README.md) | 宠物灾害准备、撤离运输、避难接纳、物资和重聚 | 把宠物和服务动物纳入真实家庭应急准备与恢复模型 | 不提供实时撤离路线、避难点推荐、救援指挥、运输操作或个案灾害计划 |
+| [Animal Shelter Rescue Rehoming Continuity](domains/animal-shelter-rescue-rehoming-continuity/README.md) | 动物收容、救助、寄养、领养、再安置和失主重聚 | 把家庭照护断点转化为动物福利和关系转接基础设施 | 不提供领养推荐、弃养策略、动物交易、救助行动、安乐死判断或机构攻击 |
+| [Animal Welfare Cruelty Reporting Continuity](domains/animal-welfare-cruelty-reporting-continuity/README.md) | 动物福利、虐待忽视、囤积、遗弃、报告入口和转介 | 把动物福利与家庭压力、暴力、照护失败和社区风险一起建模 | 不提供报案策略、取证、执法判断、曝光、法律建议、虐待或规避检查方法 |
 | [Public Health Laboratory Diagnostic Capacity](domains/public-health-laboratory-diagnostic-capacity/README.md) | 公共卫生实验室、诊断网络、检测确认、质量管理和实验室扩容 | 把不可见风险转化为可审查、可行动、可治理的检测信号 | 不提供样本采集、检测操作、病原处理、实验室协议、个体诊断或医疗建议 |
 | [Blood Organ Tissue Biovigilance Transplantation](domains/blood-organ-tissue-biovigilance-transplantation/README.md) | 血液供应、输血安全、器官/组织捐献、移植体系、追踪和生物警戒 | 让外部生物材料在质量、安全、分配和不良事件反馈边界内支撑主体修复 | 不提供输血、移植、器官匹配、治疗、手术、非法获取或监管规避建议 |
 | [Waste Management Hazardous Materials Continuity](domains/waste-management-hazardous-materials-continuity/README.md) | 固体废物、医疗废物、危险废物、处理处置和服务连续性 | 防止废弃物和危险材料反向制造感染、毒性、污染、火灾和尊严风险 | 不提供危险废物处理、处置、储存、运输、清理、规避监管或非法倾倒方法 |
@@ -1167,6 +1183,14 @@ human_infra/
 ├── domains/                 # 可独立演化的研究子域
 │   ├── antimicrobial-resilience/
 │   ├── animal-health-zoonotic-interface-one-health/
+│   ├── human-animal-bond-companion-care-continuity/
+│   ├── veterinary-care-access-cost-continuity/
+│   ├── service-animal-disability-access-continuity/
+│   ├── pet-identification-microchip-reunification-continuity/
+│   ├── pet-food-medication-supply-safety-continuity/
+│   ├── pet-disaster-evacuation-sheltering-continuity/
+│   ├── animal-shelter-rescue-rehoming-continuity/
+│   ├── animal-welfare-cruelty-reporting-continuity/
 │   ├── assistive-technology-access/
 │   ├── ai-agency-safety/
 │   ├── attention-executive-control/
@@ -1600,5 +1624,6 @@ flowchart LR
 - 2026-07-01：新增第六十二波 8 个意义、文化、身份与尊严连续性域，覆盖目的意义、精神照护、文化遗产、艺术创造表达、休闲娱乐恢复、叙事身份生命回顾、仪式典礼生命过渡和尊严人格承认连续性。
 - 2026-07-01：新增第六十三波 8 个人因与操作可靠性连续性域，覆盖人因工效学任务系统、认知负荷/工作负荷测量、疲劳风险/警觉性、情境感知/决策环境、交接清单/过程可靠性、事件报告/公正文化学习、自动化偏误/模式混淆监督和告警疲劳/中断信号管理连续性。
 - 2026-07-01：新增第六十四波 8 个心理健康、神经发育与功能连续性域，覆盖抑郁心境功能、焦虑压力威胁调节、创伤/PTSD 恢复、精神病性现实检验、双相情绪周期稳定、ADHD 执行功能、自闭神经多样性支持和进食障碍营养身体连续性。
+- 2026-07-01：新增第六十五波 8 个伴侣动物、服务动物与宠物照护连续性域，覆盖人-动物纽带/伴侣照护、兽医可及费用、服务动物残障可达、宠物身份微芯片重聚、宠物食药供应安全、宠物灾害撤离避难、动物收容救助再安置和动物福利虐待报告。
 
 完整记录见 [CHANGELOG.md](CHANGELOG.md)。

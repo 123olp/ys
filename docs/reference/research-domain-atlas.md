@@ -352,6 +352,14 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 关键物质系统可制造修复 | `manufacturing-repair-capacity/` | 制造、维修、维护、备件、质量、本地生产、关键设备恢复 | 设备损坏、备件短缺、质量缺陷和生产能力不足导致服务与工具系统失效 |
 | 公共预算可转化为服务 | `public-procurement-contracting-capacity/` | 公共采购、合同、供应商管理、应急采购、透明度、交付验收 | 有预算和政策但采购失败、合同失效、腐败、延误或劣质交付 |
 | 动物-人类-环境界面可治理 | `animal-health-zoonotic-interface-one-health/` | 动物健康、兽医公共卫生、人兽共患病、食品动物、野生动物、One Health | 上游动物疾病、AMR、食品系统和生态界面风险穿透公共卫生屏障 |
+| 伴侣动物关系必须可照护 | `human-animal-bond-companion-care-continuity/` | 伴侣动物、人-动物纽带、日常照护、陪伴、家庭节律 | 关系支持和照护责任因费用、住房、疾病或灾害断裂 |
+| 宠物医疗入口必须可及 | `veterinary-care-access-cost-continuity/` | 兽医服务、急诊、费用、预约、低成本支持、地理可达 | 宠物病痛、照护费用和服务不可达转化为家庭压力、动物痛苦和关系断裂 |
+| 服务动物辅助必须可进入公共生活 | `service-animal-disability-access-continuity/` | 服务动物、任务辅助、公共进入、处理者权利、残障可达 | 服务动物被拒绝或规则混乱会截断残障主体的行动、工作和公共参与 |
+| 宠物身份必须可找回 | `pet-identification-microchip-reunification-continuity/` | 微芯片、标签、登记、联系方式更新、走失宠物、重聚 | 宠物走失后身份不可识别会扩大情感损失、动物风险和收容压力 |
+| 宠物食药供应必须安全连续 | `pet-food-medication-supply-safety-continuity/` | 宠物食品、动物药、处方配药、召回、标签、供应中断 | 食药质量、召回或断供会把日常照护转化为动物健康和家庭执行风险 |
+| 宠物灾害撤离必须纳入家庭计划 | `pet-disaster-evacuation-sheltering-continuity/` | 宠物灾害准备、撤离、避难、物资、服务动物、重聚 | 灾害中宠物不可带走或不可安置会阻止人撤离并扩大灾后关系损失 |
+| 收容转接必须保护动物和家庭 | `animal-shelter-rescue-rehoming-continuity/` | 动物收容、救助、寄养、领养、再安置、失主重聚 | 家庭照护断点缺少转接会造成动物伤害、公共压力和家庭长期负担 |
+| 动物福利伤害必须可报告转介 | `animal-welfare-cruelty-reporting-continuity/` | 动物福利、虐待忽视、囤积、遗弃、报告入口、转介 | 动物虐待和忽视既伤害动物，也暴露家庭暴力、照护失败和社区风险 |
 | 风险可被实验室确认 | `public-health-laboratory-diagnostic-capacity/` | 公共卫生实验室、诊断网络、检测确认、质量管理、实验室扩容 | 不可见风险无法确认、检测延误、假阴性/假阳性或实验室容量崩溃 |
 | 外部生物材料可安全供应 | `blood-organ-tissue-biovigilance-transplantation/` | 血液供应、输血安全、器官/组织捐献、移植体系、追踪、生物警戒 | 血液短缺、移植等待失败、感染/免疫风险、分配失衡或追踪失败 |
 | 残余物和危险材料可治理 | `waste-management-hazardous-materials-continuity/` | 固体废物、医疗废物、危险废物、处理处置、服务连续性 | 废物堆积、污染扩散、感染入口、危险材料暴露或服务中断 |
@@ -825,6 +833,14 @@ risk-engineering
   -> manufacturing-repair-capacity
   -> public-procurement-contracting-capacity
   -> animal-health-zoonotic-interface-one-health
+  -> human-animal-bond-companion-care-continuity
+  -> veterinary-care-access-cost-continuity
+  -> service-animal-disability-access-continuity
+  -> pet-identification-microchip-reunification-continuity
+  -> pet-food-medication-supply-safety-continuity
+  -> pet-disaster-evacuation-sheltering-continuity
+  -> animal-shelter-rescue-rehoming-continuity
+  -> animal-welfare-cruelty-reporting-continuity
   -> public-health-laboratory-diagnostic-capacity
   -> blood-organ-tissue-biovigilance-transplantation
   -> waste-management-hazardous-materials-continuity

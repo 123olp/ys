@@ -160,6 +160,14 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `manufacturing-repair-capacity/` | 制造、维修、维护、备件和质量能力决定关键设备和基础设施损坏后能否恢复 |
 | `public-procurement-contracting-capacity/` | 公共采购、合同和供应商管理决定公共预算、需求和政策目标能否转化为真实服务交付 |
 | `animal-health-zoonotic-interface-one-health/` | 动物健康、人兽共患界面和 One Health 协作决定上游公共卫生、食品系统和 AMR 风险屏障 |
+| `human-animal-bond-companion-care-continuity/` | 伴侣动物和人-动物纽带会影响关系支持、恢复动机、家庭节律、照护责任和灾害撤离决策 |
+| `veterinary-care-access-cost-continuity/` | 兽医服务可及、费用和急诊容量决定宠物福利能否在家庭压力和资源约束下持续 |
+| `service-animal-disability-access-continuity/` | 服务动物任务辅助和公共进入规则决定部分残障主体能否持续行动、工作和参与公共生活 |
+| `pet-identification-microchip-reunification-continuity/` | 宠物身份、微芯片登记和联系方式更新决定走失后能否重聚、减少收容压力和关系损失 |
+| `pet-food-medication-supply-safety-continuity/` | 宠物食品、动物药、处方配药、召回和供应中断会把日常照护转化为动物健康与家庭执行风险 |
+| `pet-disaster-evacuation-sheltering-continuity/` | 宠物和服务动物灾害准备、撤离、避难和重聚决定家庭应急行动是否真实可执行 |
+| `animal-shelter-rescue-rehoming-continuity/` | 动物收容、救助、寄养、再安置和失主重聚决定家庭照护断点能否被安全转接 |
+| `animal-welfare-cruelty-reporting-continuity/` | 动物福利、虐待忽视和报告转介会暴露家庭压力、暴力、照护失败和社区安全风险 |
 | `public-health-laboratory-diagnostic-capacity/` | 公共卫生实验室、诊断网络、质量管理和实验室扩容决定不可见风险能否被确认、校准和转化为行动 |
 | `blood-organ-tissue-biovigilance-transplantation/` | 血液、器官、组织供应和生物警戒决定外部生物材料能否安全进入主体修复系统 |
 | `waste-management-hazardous-materials-continuity/` | 废弃物、医疗废物和危险材料处置连续性决定生活系统残余物是否反向制造感染、毒性和污染风险 |
@@ -768,6 +776,12 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | NIST MEP / Manufacturing.gov / NIST Advanced Manufacturing / DOE AMMTO | 提示制造、维修、维护、备件、质量和本地生产能力决定关键设备恢复时间 |
 | OECD Public Procurement / World Bank Procurement / MAPS / SAM.gov / USAspending.gov | 提示公共采购、合同执行、供应商管理、透明度和应急采购决定公共能力能否落地 |
 | WHO One Health / WOAH / FAO One Health / CDC One Health / WAHIS | 提示动物健康、人兽共患风险、兽医公共卫生和 One Health 协作是公共卫生上游风险屏障 |
+| NIH pets and health / AVMA human-animal bond / CDC Healthy Pets | 提示伴侣动物不是装饰物，而是关系支持、健康行为、日常照护和跨物种风险的交界面 |
+| AVMA veterinary care / FDA animal drugs / FDA pet food | 提示宠物照护依赖兽医服务、动物药、食品标签、召回和供应安全，而不是只依靠家庭爱心 |
+| ADA.gov service animals | 提示服务动物是残障主体进入公共生活、交通、工作和服务空间的辅助接口，不应与普通宠物或情感支持动物混同 |
+| AVMA microchip guidance / local lost-pet reunification systems | 提示宠物身份、登记和联系方式更新是走失重聚、收容减压和家庭关系恢复的基础设施 |
+| Ready.gov pets / FEMA household preparedness | 提示灾害准备必须把宠物和服务动物纳入计划，否则公共预警和撤离指令难以转化为行动 |
+| USDA APHIS Animal Welfare / AVMA animal welfare / shelter public materials | 提示动物福利、收容、救助、再安置和虐待报告与家庭风险、社区安全和制度转介相关 |
 | CDC Laboratory Response Network / APHL / WHO Laboratory Biosafety Manual | 提示公共卫生实验室、诊断确认、质量管理、生物安全和实验室扩容是风险确认层 |
 | FDA Blood & Blood Products / HRSA OPTN / FDA HCT/P / WHO Blood Safety | 提示血液供应、输血安全、器官/组织系统、追踪和生物警戒需要独立维护 |
 | EPA hazardous waste / WHO health-care waste / World Bank solid waste | 提示废弃物、医疗废物和危险材料治理决定污染、感染、工人安全和城市服务连续性 |
@@ -1247,6 +1261,15 @@ Source links:
 - https://www.fao.org/one-health/
 - https://www.cdc.gov/one-health/
 - https://wahis.woah.org/
+- https://newsinhealth.nih.gov/2018/02/power-pets
+- https://www.avma.org/resources-tools/one-health/human-animal-bond
+- https://www.cdc.gov/healthy-pets/
+- https://www.ada.gov/resources/service-animals-2010-requirements/
+- https://www.ready.gov/pets
+- https://www.fda.gov/animal-veterinary/animal-food-feeds/pet-food
+- https://www.fda.gov/animal-veterinary
+- https://www.avma.org/resources-tools/pet-owners/petcare/microchips-reuniting-pets-families
+- https://www.aphis.usda.gov/animal-welfare
 - https://www.cdc.gov/lrn/
 - https://www.aphl.org/
 - https://www.who.int/publications/i/item/9789240011311

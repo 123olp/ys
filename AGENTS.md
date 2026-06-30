@@ -334,6 +334,14 @@ human_infra/
     ├── manufacturing-repair-capacity/ # 制造与维修能力
     ├── public-procurement-contracting-capacity/ # 公共采购与合同能力
     ├── animal-health-zoonotic-interface-one-health/ # 动物健康、人兽共患界面与 One Health
+    ├── human-animal-bond-companion-care-continuity/ # 人-动物纽带与伴侣照护连续性
+    ├── veterinary-care-access-cost-continuity/ # 兽医可及与费用连续性
+    ├── service-animal-disability-access-continuity/ # 服务动物与残障可达连续性
+    ├── pet-identification-microchip-reunification-continuity/ # 宠物身份、微芯片与重聚连续性
+    ├── pet-food-medication-supply-safety-continuity/ # 宠物食品、药品供应与安全连续性
+    ├── pet-disaster-evacuation-sheltering-continuity/ # 宠物灾害撤离与避难连续性
+    ├── animal-shelter-rescue-rehoming-continuity/ # 动物收容、救助与再安置连续性
+    ├── animal-welfare-cruelty-reporting-continuity/ # 动物福利与虐待报告连续性
     ├── public-health-laboratory-diagnostic-capacity/ # 公共卫生实验室与诊断能力
     ├── blood-organ-tissue-biovigilance-transplantation/ # 血液、器官、组织与生物警戒
     ├── waste-management-hazardous-materials-continuity/ # 废弃物、危险材料与处置连续性
@@ -564,6 +572,8 @@ human_infra/
 - `domains/manufacturing-repair-capacity/` 负责制造、维修、维护、备件、质量、本地生产和关键设备恢复能力。
 - `domains/public-procurement-contracting-capacity/` 负责公共采购、合同、供应商管理、应急采购、透明度和交付验收。
 - `domains/animal-health-zoonotic-interface-one-health/` 负责动物健康、兽医公共卫生、人兽共患病、食品动物、野生动物和 One Health 界面。
+- `domains/human-animal-bond-companion-care-continuity/`、`domains/veterinary-care-access-cost-continuity/`、`domains/service-animal-disability-access-continuity/`、`domains/pet-identification-microchip-reunification-continuity/`、`domains/pet-food-medication-supply-safety-continuity/`、`domains/pet-disaster-evacuation-sheltering-continuity/`、`domains/animal-shelter-rescue-rehoming-continuity/` 和 `domains/animal-welfare-cruelty-reporting-continuity/` 负责伴侣动物、服务动物与宠物照护连续性，覆盖人-动物纽带、兽医可及费用、服务动物残障可达、宠物身份重聚、宠物食药供应安全、灾害撤离避难、收容救助再安置和动物福利虐待报告。
+- 伴侣动物和服务动物相关域必须与 One Health 区分：前者关注家庭、关系、残障辅助和照护连续性，后者关注动物-人类-环境公共卫生界面。
 - `domains/public-health-laboratory-diagnostic-capacity/` 负责公共卫生实验室、检测确认、诊断网络、质量管理、实验室扩容和风险确认能力。
 - `domains/blood-organ-tissue-biovigilance-transplantation/` 负责血液供应、输血安全、器官/组织捐献、移植体系、追踪和生物警戒。
 - `domains/waste-management-hazardous-materials-continuity/` 负责固体废物、医疗废物、危险废物、处置连续性和环境暴露边界。
@@ -831,3 +841,4 @@ human_infra/
 - 2026-07-01：新增第六十二波意义、文化、身份与尊严连续性研究域，覆盖目的意义、精神照护、文化遗产、艺术创造表达、休闲娱乐恢复、叙事身份生命回顾、仪式典礼生命过渡和尊严人格承认。
 - 2026-07-01：新增第六十三波人因与操作可靠性连续性研究域，覆盖人因工效学任务系统、认知负荷/工作负荷测量、疲劳风险/警觉性、情境感知/决策环境、交接清单/过程可靠性、事件报告/公正文化学习、自动化偏误/模式混淆监督和告警疲劳/中断信号管理。
 - 2026-07-01：新增第六十四波心理健康、神经发育与功能连续性研究域，覆盖抑郁心境功能、焦虑压力威胁调节、创伤/PTSD 恢复、精神病性现实检验、双相情绪周期稳定、ADHD 执行功能、自闭神经多样性支持和进食障碍营养身体连续性。
+- 2026-07-01：新增第六十五波伴侣动物、服务动物与宠物照护连续性研究域，覆盖人-动物纽带/伴侣照护、兽医可及费用、服务动物残障可达、宠物身份微芯片重聚、宠物食药供应安全、宠物灾害撤离避难、动物收容救助再安置和动物福利虐待报告。

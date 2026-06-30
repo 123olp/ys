@@ -333,6 +333,26 @@ Human Infra 不能被设计成更精密的压榨系统。
 - 提供动物诊断、治疗、用药、疫苗、养殖防疫操作、野生动物捕捉、病原体采样培养传播、规避监测、动物走私或非法交易建议。
 - 把位置、天气、建筑、制造、采购和 One Health 的结构性风险改写成个人消费选择、平台效率、商业宣传、技术乐观主义或责任转嫁问题。
 
+## 伴侣动物、服务动物与宠物照护连续性边界
+
+`human-animal-bond-companion-care-continuity`、`veterinary-care-access-cost-continuity`、`service-animal-disability-access-continuity`、`pet-identification-microchip-reunification-continuity`、`pet-food-medication-supply-safety-continuity`、`pet-disaster-evacuation-sheltering-continuity`、`animal-shelter-rescue-rehoming-continuity` 和 `animal-welfare-cruelty-reporting-continuity` 关注伴侣动物、服务动物和宠物照护如何影响关系支持、残障行动、家庭应急、动物福利和社区风险，不是动物诊疗、训练认证、宠物交易、寻宠指挥、灾害救援、举报取证或法律策略指南。
+
+可以做：
+
+- 整理 NIH、AVMA、CDC、ADA.gov、Ready.gov、FDA、USDA APHIS 和公开动物福利/收容资料。
+- 建模人-动物纽带、兽医可及、服务动物可达、宠物身份重聚、宠物食药供应、宠物灾害撤离、收容转接和动物福利报告如何影响主体持续性。
+- 区分伴侣动物关系支持、公共卫生 One Health、残障辅助、家庭灾害准备、动物福利、个体选择和制度责任之间的变量关系。
+
+不能做：
+
+- 提供动物诊断、治疗、疫苗、药物、剂量、饮食、补剂、急救、手术、行为矫正、安乐死或兽医替代建议。
+- 提供服务动物认证、训练、注册、投诉代写、场所进入策略、个案法律判断或冒充服务动物方法。
+- 提供宠物购买、繁育、领养推荐、弃养策略、转卖、动物交易、非法繁殖、救助行动、运输操作或机构攻击建议。
+- 提供微芯片植入、寻宠指挥、定位跟踪、私人地址搜索、所有权判断、冒领盗领、身份伪造或骚扰失主/收容机构的方法。
+- 提供实时宠物撤离路线、避难点推荐、救援指挥、危险环境进入、灾害运输操作或个案灾害计划。
+- 提供动物虐待、遗弃、囤积、规避检查、报复、举报取证、报案策略、执法判断、公开曝光、家庭纠纷处理或法律建议。
+- 收集或发布家庭住址、儿童信息、家庭暴力细节、动物伤情照片/视频、举报线索、失主私人信息或可用于骚扰/私刑的信息。
+
 ## 实验室诊断、人体材料、废弃物、辐射、化学与关键材料域边界
 
 `public-health-laboratory-diagnostic-capacity`、`blood-organ-tissue-biovigilance-transplantation`、`waste-management-hazardous-materials-continuity`、`radiation-nuclear-safety-protection`、`chemical-safety-poison-control-toxicology` 和 `critical-minerals-materials-resilience` 关注风险确认、人体材料安全、残余物治理、不可见高能暴露、化学毒理和未来技术物质输入如何支撑主体持续性，不是实验室操作、移植建议、危险废物处置、放射源操作、中毒处理或材料采购指南。
