@@ -75,3 +75,4 @@ Current decisions:
 - `0060-add-fifty-sixth-wave-outpatient-access-clinical-service-execution-domains.md`
 - `0061-add-fifty-seventh-wave-medical-payment-billing-cost-protection-domains.md`
 - `0062-add-fifty-eighth-wave-patient-rights-records-communication-domains.md`
+- `0063-add-fifty-ninth-wave-emergency-health-handoff-domains.md`

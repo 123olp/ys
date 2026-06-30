@@ -385,6 +385,14 @@
 - `healthcare-disability-accommodation-accessibility-continuity/`：医疗残障便利与无障碍连续性，整理 reasonable modification、auxiliary aids、accessible medical equipment 和 disability-inclusive care。
 - `patient-grievance-complaint-ombuds-continuity/`：患者投诉、申诉与 Ombuds 连续性，整理 patient grievance、hospital complaint、state survey agency、ombudsman 和 quality complaint。
 - `healthcare-civil-rights-nondiscrimination-continuity/`：医疗民权与反歧视连续性，整理 Section 1557、Title VI、Section 504、ADA、医疗歧视和 nondiscrimination notice。
+- `emergency-contact-next-of-kin-notification-continuity/`：紧急联系人与近亲通知连续性，整理 emergency contact、next of kin、authorized contact、照护者通知和联系链。
+- `personal-health-record-emergency-summary-continuity/`：个人健康记录与急救摘要连续性，整理 personal health record、emergency health summary、wallet card、医疗摘要和最小急救资料。
+- `medical-id-allergy-critical-alert-continuity/`：医疗 ID、过敏与关键警报连续性，整理 medical ID、过敏/不良反应、关键诊断、可穿戴/手机急救信息和隐私边界。
+- `medication-list-implant-device-emergency-continuity/`：药物清单与植入设备急救连续性，整理当前药物清单、高风险药物、植入设备、UDI/设备卡和急救转交。
+- `chronic-condition-emergency-action-plan-continuity/`：慢病急救行动计划连续性，整理 chronic condition emergency action plan、症状阈值、升级路径和学校/工作/家庭执行。
+- `immunization-record-proof-continuity/`：免疫记录与证明连续性，整理 immunization record、IIS、疫苗卡、学校/工作/旅行证明和记录可携带。
+- `organ-donor-registry-anatomical-gift-continuity/`：器官捐赠登记与遗体捐赠连续性，整理 organ donor registry、anatomical gift、州登记、驾驶证标记和家庭沟通。
+- `access-functional-needs-emergency-registry-continuity/`：功能需求与急救登记连续性，整理 access and functional needs、special needs registry、医疗需求登记、电力依赖和灾害无障碍。
 - `supply-chain-continuity/`：供应链连续性，整理关键物资、服务、物流、替代路径和恢复时间。
 - `synthetic-biology-biosecurity/`：合成生物学与生物安全，整理双重用途、生物安全、生物安保和治理边界。
 - `space-extreme-habitation/`：空间与极端栖居，整理辐射、微重力、隔离、闭环资源和远程医疗风险。

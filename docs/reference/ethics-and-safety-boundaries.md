@@ -453,6 +453,25 @@ Human Infra 不能被设计成更精密的压榨系统。
 - 收集或诱导输入 portal 凭证、验证码、MRN、member ID、病历、结果、报告、影像、同意书、授权书、签名、受保护身份、语言身份、残障证明、移民状态、宗教、性别、投诉证据、录音录像、联系方式、定位或 PHI。
 - 把患者权利、病历访问、结果通知、同意、语言、残障、投诉和医疗民权的结构性问题改写成个人争议代理、医疗建议、法律博弈、投诉工具、监控取证、舆论施压、身份暴露或敏感数据收集问题。
 
+## 急救健康信息与紧急交接连续性边界
+
+`emergency-contact-next-of-kin-notification-continuity`、`personal-health-record-emergency-summary-continuity`、`medical-id-allergy-critical-alert-continuity`、`medication-list-implant-device-emergency-continuity`、`chronic-condition-emergency-action-plan-continuity`、`immunization-record-proof-continuity`、`organ-donor-registry-anatomical-gift-continuity` 和 `access-functional-needs-emergency-registry-continuity` 关注主体无法表达、急救、灾害、失能和死亡边界中，紧急联系人、急救健康摘要、医疗 ID/过敏关键警报、药物/植入设备、慢病行动计划、免疫记录证明、器官捐赠登记和 access/functional needs 登记如何让系统继续识别、保护和转交主体，不是个人急救、医疗解释、亲属查找、用药/设备判断、疫苗建议、器官捐赠登记、灾害报名、撤离计划或法律建议工具。
+
+可以做：
+
+- 整理公开资料、官方框架、MedlinePlus Personal Health Records、Ready.gov Make a Plan / Disability、CDC vaccination records / IIS、OrganDonor.gov、HRSA organ donation、FDA UDI / AccessGUDID 和 emergency preparedness 资料。
+- 建模联系人过期、急救摘要缺失、过敏/关键病情不可见、药物/设备信息断裂、慢病行动计划缺位、免疫记录不可证明、捐赠意愿不可识别和功能需求未登记如何影响主体持续性。
+- 区分急救联系人、健康摘要、关键警报、药物/设备转交、慢病行动计划、免疫证明、捐赠登记、功能需求、个人决策和禁止用途。
+
+不能做：
+
+- 提供急救处置、分诊、诊断、治疗、用药、停药、剂量、设备使用、设备限制、过敏判断、疫苗接种/补种/豁免、器官捐赠、灾害撤离、避难、交通或法律建议。
+- 代写或生成个人急救摘要、medical ID 内容、药物清单、设备卡、慢病 action plan、免疫证明、捐赠登记、特殊需求登记、联系人通知、家庭沟通、机构沟通或法律文件。
+- 寻找亲属、通知近亲、判断谁有权限、判断谁应决策、处理家庭纠纷、判断死亡边界意愿、判断捐赠登记有效性或执行个案代理。
+- 推荐 medical ID、手机/可穿戴设置、PHR app、registry、疫苗证明工具、器官捐赠路径、特殊需求登记路径、避难所、交通服务、医院、医生、设备或医疗服务。
+- 收集或诱导输入联系人姓名、电话、地址、next of kin、家庭关系、PHI、病历、急救摘要、过敏、诊断、药物、设备型号/序列号、疫苗卡、捐赠登记、驾驶证、残障证明、功能需求、地址、定位、照护者、移民状态或宗教文化资料。
+- 把急救健康信息和紧急交接的结构性问题改写成个人急救替代、病历整理服务、联系人代理、隐私暴露、家庭控制、器官捐赠劝导、灾害登记代办、监控定位或敏感数据收集问题。
+
 ## 农村健康、无家可归、羁押重返、残障独立生活、痴呆照护与慢性传染病连续性边界
 
 `rural-health-access-geographic-equity`、`homelessness-unsheltered-health-continuity`、`correctional-health-reentry-continuity`、`disability-services-independent-living`、`dementia-cognitive-decline-care-continuity` 和 `chronic-infectious-disease-care-continuity` 关注地点排除、住所缺失、羁押释放、残障服务、认知衰退和长期感染照护如何影响主体持续性，不是个人医疗、住房、福利、法律、羁押、监管规避、传染病处置或弱势群体定位指南。

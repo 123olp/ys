@@ -404,6 +404,14 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `healthcare-disability-accommodation-accessibility-continuity/` | Healthcare disability accommodation、auxiliary aids 和 accessible medical equipment 决定残障主体是否真实可达医疗服务 |
 | `patient-grievance-complaint-ombuds-continuity/` | Patient grievance、complaint、ombuds 和 state survey agency 决定医疗错误、延误和权利侵害是否进入纠错回路 |
 | `healthcare-civil-rights-nondiscrimination-continuity/` | Section 1557、Title VI、Section 504、ADA 和 HHS OCR civil rights 决定医疗系统是否在受保护特征上排除主体 |
+| `emergency-contact-next-of-kin-notification-continuity/` | Emergency contact、next of kin、authorized contact 和 caregiver notification 决定主体无法表达时支持网络是否能及时接入 |
+| `personal-health-record-emergency-summary-continuity/` | Personal health record、emergency summary、wallet card 和 minimum health data 决定急救窗口能否快速理解主体基本状态 |
+| `medical-id-allergy-critical-alert-continuity/` | Medical ID、allergy/adverse reaction alert 和 critical condition alert 决定过敏、关键病情和设备限制是否能被急救链发现 |
+| `medication-list-implant-device-emergency-continuity/` | Medication list、high-risk medications、implant/device card 和 UDI/model information 决定药物与设备依赖是否能跨急救和转诊窗口转交 |
+| `chronic-condition-emergency-action-plan-continuity/` | Chronic-condition emergency action plan、symptom zones 和 escalation path 决定慢病急性恶化时是否有预置行动路径 |
+| `immunization-record-proof-continuity/` | Immunization record、IIS、vaccine card 和 school/work/travel proof 决定免疫事件是否能转化为制度可承认证明 |
+| `organ-donor-registry-anatomical-gift-continuity/` | Organ donor registry、anatomical gift、state registry 和 driver-license marker 决定死亡边界后的捐赠意愿是否可识别 |
+| `access-functional-needs-emergency-registry-continuity/` | Access and functional needs、medical needs registry、power-dependent equipment 和 shelter/transport support 决定灾害系统是否看见非平均主体 |
 
 ## 来源信号
 
@@ -478,6 +486,11 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | ADA.gov effective communication / healthcare accessibility materials | 提示残障主体进入医疗系统需要辅助沟通、合理修改和无障碍设备条件 |
 | CMS hospital complaints / State Survey Agency / Medicare Ombudsman materials | 提示患者投诉、grievance、ombuds 和监管入口是医疗系统可纠错性的执行接口 |
 | HHS OCR Section 1557 / civil rights materials | 提示医疗民权、反歧视、语言和残障保护会决定主体是否被制度性排除 |
+| MedlinePlus Personal Health Records | 提示个人健康记录、急救摘要、联系人、用药和过敏信息是急救与跨机构转交的最小资料层 |
+| Ready.gov Make a Plan / Disability materials | 提示家庭沟通计划、医疗需求、功能需求、电力依赖、设备和照护者必须进入灾害准备 |
+| CDC vaccination records / immunization information systems materials | 提示免疫记录、登记系统和证明可携带性会影响学校、工作、旅行、医疗和公共卫生准入 |
+| OrganDonor.gov / HRSA organ donation materials | 提示器官捐赠登记、anatomical gift 和家庭沟通会把死亡边界后的主体意愿连接到他人生命资源 |
+| FDA UDI / AccessGUDID materials | 提示植入设备和医疗器械标识会影响急救、影像、手术、召回和跨机构设备识别 |
 | https://www.dea.gov/takebackday | 提示受监管药品回收和 Take Back 体系是未用药、过期药和管制药处置的公共接口 |
 | https://www.cdc.gov/diabetes/ | 提示糖尿病日常管理依赖药物、监测、耗材、教育和持续反馈，不只是单次临床处方 |
 | https://www.cdc.gov/medication-safety/ | 提示 medication safety 覆盖家庭用药、误用、相互作用、教育和系统性安全风险 |

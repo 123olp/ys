@@ -324,6 +324,14 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 医疗系统必须适配残障主体 | `healthcare-disability-accommodation-accessibility-continuity/` | Reasonable modification、auxiliary aids、accessible medical equipment、disability-inclusive care | 空间、设备和流程不可达会把名义医疗服务变成实际排除 |
 | 医疗错误和权利侵害必须可反馈 | `patient-grievance-complaint-ombuds-continuity/` | Patient grievance、complaints、ombudsman、state survey agency、quality feedback | 投诉和 ombuds 入口不可达会让延误、错误、歧视和沟通失败无法进入纠错回路 |
 | 医疗服务必须不因受保护特征排除主体 | `healthcare-civil-rights-nondiscrimination-continuity/` | Section 1557、Title VI、Section 504、ADA、nondiscrimination、HHS OCR | 医疗歧视和民权保护缺口会让主体在最需要服务时被降级、拒绝、污名化或失权 |
+| 紧急联系人必须可达 | `emergency-contact-next-of-kin-notification-continuity/` | Emergency contact、next of kin、authorized contact、caregiver notification | 主体无法表达时，联系人缺失或过期会让医疗、照护、身份确认和恢复支持断链 |
+| 急救摘要必须可读 | `personal-health-record-emergency-summary-continuity/` | Personal health record、emergency summary、wallet card、minimum health data | 分散病历若不能转成急救窗口可读摘要，会延误诊疗、转诊和风险识别 |
+| 关键健康警报必须可见 | `medical-id-allergy-critical-alert-continuity/` | Medical ID、allergy/adverse reaction、critical condition alert、wearable/phone profile | 过敏、关键病情或设备限制不可见时，急救链可能发生误治、禁忌和延误 |
+| 药物和植入设备必须可转交 | `medication-list-implant-device-emergency-continuity/` | Medication list、high-risk medications、implant/device card、UDI/model information | 药物和设备状态丢失会导致相互作用、禁忌、停药、重复治疗和设备安全风险 |
+| 慢病危机必须有行动计划 | `chronic-condition-emergency-action-plan-continuity/` | Chronic-condition action plan、symptom zones、escalation path、school/work/home execution | 慢病在发作、断供或灾害中若无预置计划，会从可管理状态变成急性失控 |
+| 免疫记录必须可证明 | `immunization-record-proof-continuity/` | Immunization record、IIS、vaccine card、school/work/travel proof | 接种事件若不能被证明，会影响入学、工作、旅行、医疗和公共卫生准入 |
+| 捐赠意愿必须可识别 | `organ-donor-registry-anatomical-gift-continuity/` | Organ donor registry、anatomical gift、state registry、driver-license marker | 死亡边界后的捐赠意愿若不可见，会中断主体意愿执行和他人生命资源转移 |
+| 功能需求必须被应急系统看见 | `access-functional-needs-emergency-registry-continuity/` | Access and functional needs、medical needs registry、power-dependent equipment、transport/shelter access | 灾害平均人模型会排除电力、设备、语言、交通、照护和无障碍依赖者 |
 | 栖居空间可保护生命 | `building-fire-life-safety-codes/` | 建筑规范、消防规范、疏散、烟雾报警、无障碍、结构韧性 | 居住、照护、学习、工作和公共空间成为火灾、烟雾、结构和疏散风险源 |
 | 关键物质系统可制造修复 | `manufacturing-repair-capacity/` | 制造、维修、维护、备件、质量、本地生产、关键设备恢复 | 设备损坏、备件短缺、质量缺陷和生产能力不足导致服务与工具系统失效 |
 | 公共预算可转化为服务 | `public-procurement-contracting-capacity/` | 公共采购、合同、供应商管理、应急采购、透明度、交付验收 | 有预算和政策但采购失败、合同失效、腐败、延误或劣质交付 |
@@ -735,6 +743,14 @@ risk-engineering
   -> healthcare-disability-accommodation-accessibility-continuity
   -> patient-grievance-complaint-ombuds-continuity
   -> healthcare-civil-rights-nondiscrimination-continuity
+  -> emergency-contact-next-of-kin-notification-continuity
+  -> personal-health-record-emergency-summary-continuity
+  -> medical-id-allergy-critical-alert-continuity
+  -> medication-list-implant-device-emergency-continuity
+  -> chronic-condition-emergency-action-plan-continuity
+  -> immunization-record-proof-continuity
+  -> organ-donor-registry-anatomical-gift-continuity
+  -> access-functional-needs-emergency-registry-continuity
   -> community-resource-navigation
   -> social-determinants-community-vulnerability
   -> public-service-design-accessibility

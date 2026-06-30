@@ -608,6 +608,14 @@ flowchart TD
     H --> HDAA[healthcare-disability-accommodation-accessibility-continuity<br/>医疗残障便利 / 无障碍]
     H --> PGCO[patient-grievance-complaint-ombuds-continuity<br/>患者投诉 / Ombuds]
     H --> HCND[healthcare-civil-rights-nondiscrimination-continuity<br/>医疗民权 / 反歧视]
+    H --> ECNKN[emergency-contact-next-of-kin-notification-continuity<br/>紧急联系人 / 近亲通知]
+    H --> PHRES[personal-health-record-emergency-summary-continuity<br/>个人健康记录 / 急救摘要]
+    H --> MIACA[medical-id-allergy-critical-alert-continuity<br/>医疗 ID / 过敏关键警报]
+    H --> MLID[medication-list-implant-device-emergency-continuity<br/>药物清单 / 植入设备急救]
+    H --> CCEAP[chronic-condition-emergency-action-plan-continuity<br/>慢病急救行动计划]
+    H --> IRP[immunization-record-proof-continuity<br/>免疫记录 / 证明]
+    H --> ODRAG[organ-donor-registry-anatomical-gift-continuity<br/>器官捐赠登记 / 遗体捐赠]
+    H --> AFNER[access-functional-needs-emergency-registry-continuity<br/>功能需求 / 急救登记]
     H --> MF[measurement-feedback<br/>测量 / 预测 / 反馈]
     H --> C[disembodied-cns<br/>去具身中枢生命系统]
     H --> M[memory-editing<br/>记忆编辑与人格连续性]
@@ -888,6 +896,14 @@ flowchart TD
 | [Healthcare Disability Accommodation Accessibility Continuity](domains/healthcare-disability-accommodation-accessibility-continuity/README.md) | 医疗残障便利、辅助沟通、合理修改和无障碍诊断设备 | 让残障主体能真实进入、接受和完成医疗服务 | 不提供 ADA/Section 504 法律意见、便利申请、设备处方或医疗建议 |
 | [Patient Grievance Complaint Ombuds Continuity](domains/patient-grievance-complaint-ombuds-continuity/README.md) | patient grievance、complaint、ombudsman、state survey agency 和质量反馈 | 让医疗错误、延误、歧视和沟通失败有可达、可追踪的纠错入口 | 不代写投诉、申诉、法律信、监管举报、保险争议或赔偿请求 |
 | [Healthcare Civil Rights Nondiscrimination Continuity](domains/healthcare-civil-rights-nondiscrimination-continuity/README.md) | Section 1557、Title VI、Section 504、ADA、医疗反歧视和民权执行 | 防止主体因受保护特征被医疗系统排除或降低服务质量 | 不提供法律意见、歧视认定、投诉代写、身份判断或诉讼策略 |
+| [Emergency Contact Next Of Kin Notification Continuity](domains/emergency-contact-next-of-kin-notification-continuity/README.md) | emergency contact、next of kin、authorized contact、照护者通知和联系链 | 让主体无法表达时仍能把正确支持网络接入医疗、灾害和恢复流程 | 不代写通知、寻找亲属、判断谁应被通知、处理家庭纠纷或法律建议 |
+| [Personal Health Record Emergency Summary Continuity](domains/personal-health-record-emergency-summary-continuity/README.md) | 个人健康记录、急救摘要、问题清单、用药摘要、过敏、设备和联系人 | 把分散病历转化为急救窗口可读、可携带、可更新的最小健康摘要 | 不解释、生成、翻译、验证个人病历或急救摘要 |
+| [Medical ID Allergy Critical Alert Continuity](domains/medical-id-allergy-critical-alert-continuity/README.md) | medical ID、过敏/不良反应、关键诊断、急救提示和可穿戴/手机急救信息 | 在主体无法表达时暴露少量高价值健康警报，降低误治和延误 | 不判断是否需要 medical ID，不提供急救、药物、设备或产品建议 |
+| [Medication List Implant Device Emergency Continuity](domains/medication-list-implant-device-emergency-continuity/README.md) | 当前药物清单、高风险药物、植入物、设备卡、UDI/型号和维护依赖 | 让药物和植入设备这些身体内外技术依赖在急救转交中不丢失 | 不解释药物、判断相互作用、判断设备风险或代写清单 |
+| [Chronic Condition Emergency Action Plan Continuity](domains/chronic-condition-emergency-action-plan-continuity/README.md) | 慢病急救行动计划、症状阈值、升级路径、学校/工作/家庭执行 | 把长期病情的急性恶化窗口转化为可预置、可理解、可升级的恢复路径 | 不制定、解释或修改个人 action plan，不提供分诊或用药建议 |
+| [Immunization Record Proof Continuity](domains/immunization-record-proof-continuity/README.md) | 疫苗记录、IIS、疫苗卡、学校/工作/旅行证明和补种历史 | 把免疫保护转化为教育、工作、旅行、医疗和公共卫生系统可承认的记录 | 不建议接种、补种、豁免、旅行疫苗或代写证明 |
+| [Organ Donor Registry Anatomical Gift Continuity](domains/organ-donor-registry-anatomical-gift-continuity/README.md) | 器官捐赠登记、anatomical gift、驾驶证/州登记和家庭沟通 | 让死亡边界后的主体意愿、身体资源和他人生命连续性可被识别和执行 | 不建议是否登记、如何撤销、捐赠范围或法律/伦理个案判断 |
+| [Access Functional Needs Emergency Registry Continuity](domains/access-functional-needs-emergency-registry-continuity/README.md) | access and functional needs、特殊医疗需求登记、电力依赖、交通和避难所可及 | 让灾害系统提前看见非平均主体的设备、语言、交通、照护和无障碍需求 | 不替个人报名 registry，不制定撤离计划或提供灾害现场建议 |
 | [Regenerative Medicine](domains/regenerative-medicine/README.md) | 干细胞、组织工程、器官再生、类器官、移植 | 器官/组织修复框架、功能终点和整合风险 | 不提供手术、细胞制备、移植或人体实验步骤 |
 | [Rehabilitation And Functioning](domains/rehabilitation-functioning/README.md) | 康复、功能恢复、失能预防、活动能力、自理和社会参与 | 功能状态、活动能力、参与能力和失能风险模型 | 不提供个人康复处方、训练计划、诊断或治疗建议 |
 | [Cancer Control](domains/cancer-control/README.md) | 癌症预防、早筛、治疗、复发、肿瘤演化 | 癌症风险函数、证据层级和长期控制变量 | 不提供诊断、治疗方案、处方、剂量或个体用药建议 |
@@ -1158,6 +1174,14 @@ human_infra/
 │   ├── healthcare-disability-accommodation-accessibility-continuity/
 │   ├── patient-grievance-complaint-ombuds-continuity/
 │   ├── healthcare-civil-rights-nondiscrimination-continuity/
+│   ├── emergency-contact-next-of-kin-notification-continuity/
+│   ├── personal-health-record-emergency-summary-continuity/
+│   ├── medical-id-allergy-critical-alert-continuity/
+│   ├── medication-list-implant-device-emergency-continuity/
+│   ├── chronic-condition-emergency-action-plan-continuity/
+│   ├── immunization-record-proof-continuity/
+│   ├── organ-donor-registry-anatomical-gift-continuity/
+│   ├── access-functional-needs-emergency-registry-continuity/
 │   ├── cognitive-augmentation/
 │   ├── digital-identity-security/
 │   ├── disembodied-cns/
@@ -1447,5 +1471,6 @@ flowchart LR
 - 2026-06-30：新增第五十六波 8 个门诊访问与临床服务执行连续性域，覆盖 provider 名录/网络充足性、初级照护 panel/预约、专科转诊/授权导航、预约容量/等待时间、门诊检验标本/结果路由、诊断影像医嘱/报告回传、门诊操作/ASC 和非工作时间 urgent care/triage 连续性。
 - 2026-06-30：新增第五十七波 8 个医疗支付、理赔、账单与成本保护连续性域，覆盖健康保险参保续保、权益核验、医疗服务授权、理赔/EOB/拒付、患者账单/付款计划、价格透明/GFE、意外账单保护和 charity care/医疗债务连续性。
 - 2026-06-30：新增第五十八波 8 个患者权利、记录访问、临床沟通与医疗民权连续性域，覆盖患者门户/医疗消息、病历访问修正释放、临床结果通知随访、知情同意/拒绝/共同决策、医疗语言服务、医疗残障便利、患者投诉/ombuds 和医疗民权反歧视连续性。
+- 2026-06-30：新增第五十九波 8 个急救健康信息与紧急交接连续性域，覆盖紧急联系人/近亲通知、个人健康记录急救摘要、医疗 ID/过敏关键警报、药物清单/植入设备急救转交、慢病急救行动计划、免疫记录证明、器官捐赠登记和 access/functional needs 急救登记连续性。
 
 完整记录见 [CHANGELOG.md](CHANGELOG.md)。

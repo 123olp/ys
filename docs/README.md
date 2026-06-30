@@ -78,6 +78,7 @@ docs/
 │   ├── 0060-add-fifty-sixth-wave-outpatient-access-clinical-service-execution-domains.md
 │   ├── 0061-add-fifty-seventh-wave-medical-payment-billing-cost-protection-domains.md
 │   ├── 0062-add-fifty-eighth-wave-patient-rights-records-communication-domains.md
+│   ├── 0063-add-fifty-ninth-wave-emergency-health-handoff-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -444,4 +445,12 @@ docs/
 311. Read `../domains/healthcare-disability-accommodation-accessibility-continuity/README.md` if you are working on healthcare disability accommodation, auxiliary aids, accessible medical diagnostic equipment, ADA/Section 504 healthcare access, or reasonable modification.
 312. Read `../domains/patient-grievance-complaint-ombuds-continuity/README.md` if you are working on patient grievance, hospital complaint, state survey agency, ombudsman, quality complaint, or healthcare complaint routing.
 313. Read `../domains/healthcare-civil-rights-nondiscrimination-continuity/README.md` if you are working on Section 1557, healthcare nondiscrimination, HHS OCR civil rights, healthcare bias, or protected-characteristic access barriers.
-314. Enter a domain under `../domains/`.
+314. Read `../domains/emergency-contact-next-of-kin-notification-continuity/README.md` if you are working on emergency contacts, next of kin, authorized contacts, caregiver notification, or urgent support-network handoff.
+315. Read `../domains/personal-health-record-emergency-summary-continuity/README.md` if you are working on personal health records, emergency summaries, wallet cards, patient-maintained records, Blue Button exports, or minimum emergency health data.
+316. Read `../domains/medical-id-allergy-critical-alert-continuity/README.md` if you are working on medical ID, allergy alerts, critical condition alerts, emergency phone/wearable health profiles, or visible urgent health warnings.
+317. Read `../domains/medication-list-implant-device-emergency-continuity/README.md` if you are working on medication lists, high-risk medications, implant/device cards, UDI, device constraints, or emergency medication/device transfer.
+318. Read `../domains/chronic-condition-emergency-action-plan-continuity/README.md` if you are working on chronic-condition emergency action plans, symptom zones, escalation paths, school/work action plans, or disaster interruption of chronic care.
+319. Read `../domains/immunization-record-proof-continuity/README.md` if you are working on vaccination records, immunization registries, vaccine proof, school/work/travel immunization documentation, or record portability.
+320. Read `../domains/organ-donor-registry-anatomical-gift-continuity/README.md` if you are working on organ donor registry, anatomical gift, donor designation, state registry, transplant-system identity handoff, or post-death donation intent.
+321. Read `../domains/access-functional-needs-emergency-registry-continuity/README.md` if you are working on access and functional needs, special needs registries, medical needs registries, evacuation support, power-dependent devices, or disaster accessibility planning.
+322. Enter a domain under `../domains/`.
