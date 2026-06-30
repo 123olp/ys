@@ -24,6 +24,7 @@ docs/
 │   ├── 0013-add-ninth-wave-service-continuity-domains.md
 │   ├── 0014-add-tenth-wave-basic-livelihood-risk-transfer-domains.md
 │   ├── 0015-add-eleventh-wave-civic-safety-continuity-domains.md
+│   ├── 0016-add-twelfth-wave-treatment-service-rights-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md

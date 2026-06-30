@@ -250,9 +250,13 @@ flowchart TD
     H --> WASH[water-sanitation-hygiene-continuity<br/>水 / 环境卫生 / 个人卫生]
     H --> EAR[energy-access-resilience<br/>能源可及 / 韧性]
     H --> HAC[healthcare-access-continuity<br/>医疗服务 / 连续照护]
+    H --> MATC[medicine-access-treatment-continuity<br/>药品可及 / 治疗连续性]
+    H --> PDI[patient-data-interoperability<br/>患者数据 / 互操作]
+    H --> TRMA[telehealth-remote-monitoring-access<br/>远程医疗 / 居家监测]
     H --> CLTC[caregiving-long-term-care<br/>照护 / 长期照护]
     H --> HBES[housing-built-environment-stability<br/>住房 / 建成环境]
     H --> TAM[transportation-access-mobility<br/>交通接入 / 日常移动]
+    H --> CRN[community-resource-navigation<br/>社区资源 / 转介导航]
     H --> SCC[supply-chain-continuity<br/>供应链连续性]
     H --> SBB[synthetic-biology-biosecurity<br/>合成生物学与生物安全]
     H --> SEH[space-extreme-habitation<br/>空间与极端栖居]
@@ -271,6 +275,8 @@ flowchart TD
     H --> PSRS[product-safety-recall-systems<br/>产品安全 / 召回系统]
     H --> PS[pain-suffering-control<br/>疼痛与痛苦控制]
     H --> HN[health-literacy-navigation<br/>健康素养 / 服务导航]
+    H --> LAPC[language-access-plain-communication<br/>语言可达 / 清晰沟通]
+    H --> LRWP[labor-rights-workplace-protection<br/>劳动权利 / 工作场所保护]
     H --> OH[oral-health-continuity<br/>口腔健康连续性]
     H --> MF[measurement-feedback<br/>测量 / 预测 / 反馈]
     H --> C[disembodied-cns<br/>去具身中枢生命系统]
@@ -367,6 +373,9 @@ flowchart TD
 | [Water Sanitation Hygiene Continuity](domains/water-sanitation-hygiene-continuity/README.md) | 安全饮用水、卫生设施、洗手、污水处理、WASH 覆盖和服务可靠性 | 感染控制、尊严、照护卫生、公共卫生和灾害连续性 | 不提供补水、疾病处理、水质检测、净水购买、施工或灾害取水操作建议 |
 | [Energy Access Resilience](domains/energy-access-resilience/README.md) | 电力、清洁烹饪、能源负担、停电、温控、通信供能和医疗设备供电 | 照明、烹饪、温控、通信、医疗设备和数字服务运行底座 | 不提供电气施工、发电设备、燃料储存、账单申请、投资或危险接线建议 |
 | [Healthcare Access Continuity](domains/healthcare-access-continuity/README.md) | 初级卫生保健、急诊、预防、转诊、随访、费用和服务质量 | 医疗可及、连续照护、服务断点和可修复风险转化 | 不提供诊断、治疗、医生/医院/保险选择或个体就医建议 |
+| [Medicine Access Treatment Continuity](domains/medicine-access-treatment-continuity/README.md) | 基本药物、药品短缺、标签、患者药品信息、覆盖和用药安全 | 治疗执行、药品可得、供应稳定、费用和用药错误防护 | 不提供用药、剂量、替代药物、停药、购药或处方解释建议 |
+| [Patient Data Interoperability](domains/patient-data-interoperability/README.md) | 健康记录访问、数据可携带、互操作标准、授权应用和跨机构交换 | 数据连续、照护交接、患者复核和医疗决策资料底座 | 不解释个人病历、检查、理赔、保险权益或绕过授权 |
+| [Telehealth Remote Monitoring Access](domains/telehealth-remote-monitoring-access/README.md) | 远程医疗、远程患者监测、居家设备、数字照护和升级路径 | 距离成本、随访频率、监测可见性和居家连续照护 | 不提供远程诊断、分诊、设备选择、治疗、报销或平台背书 |
 | [Caregiving Long Term Care](domains/caregiving-long-term-care/README.md) | 家庭照护、长期照护、居家社区支持、照护协调和照护者负担 | 失能支持、照护连续性、尊严和长期生活支持 | 不提供个体护理计划、机构选择、保险福利、法律监护或医学处理 |
 | [Housing Built Environment Stability](domains/housing-built-environment-stability/README.md) | 住房稳定、住房质量、室内环境、无障碍、社区资源和建成环境 | 生活空间、恢复空间、照护可行性和环境暴露边界 | 不提供房地产、租买房、维修、法律、福利或个体环境医学建议 |
 | [Transportation Access Mobility](domains/transportation-access-mobility/README.md) | 公共交通、无障碍交通、出行时间、交通成本、医疗交通和交通安全 | 外部可达性、行动半径、服务连接和等待成本 | 不提供路线、驾驶、车辆、交通法律、撤离或出行操作建议 |
@@ -381,6 +390,7 @@ flowchart TD
 | [Migration Displacement Humanitarian Continuity](domains/migration-displacement-humanitarian-continuity/README.md) | 迁移、难民、流离失所、身份连续、健康/教育/庇护/保护服务 | 跨地点、跨制度和人道危机场景下的服务连续性 | 不提供移民/庇护个案建议、边境路线、规避执法、伪造文件或危险旅行方法 |
 | [Digital Inclusion Connectivity](domains/digital-inclusion-connectivity/README.md) | 互联网接入、设备、数字技能、可负担性、无障碍和数字公共服务 | 数字社会接入层、服务可达、信息可达和机会可达 | 不提供黑客攻击、账号绕过、盗版破解、电信账户操控或个体补贴/设备建议 |
 | [Social Protection Benefits Delivery](domains/social-protection-benefits-delivery/README.md) | 公共福利、社会保护、资格、申请、续期、支付、申诉和行政负担 | 风险冲击缓冲、服务递送、公共支持和制度性恢复路径 | 不提供福利申请、资格判断、材料准备、法律、税务、移民或规避制度建议 |
+| [Community Resource Navigation](domains/community-resource-navigation/README.md) | 211、资源目录、社会需求筛查、转介、闭环回访和本地服务导航 | 资源发现、服务匹配、人工协助和社区支持转化接口 | 不判断资格、申请策略、机构质量、资源实时可用性或危机替代 |
 | [Insurance Risk Transfer](domains/insurance-risk-transfer/README.md) | 健康、失业、工伤、残障、灾害、存款和养老金风险转移 | 风险池、覆盖、理赔、保障缺口和高成本事件分摊 | 不提供保险选择、投保、理赔、税务、法律、投资、欺诈或规避建议 |
 | [Childcare Family Continuity](domains/childcare-family-continuity/README.md) | 托育可及、费用、质量、早期儿童发展、父母工作连续性和家庭压力 | 儿童发展、照护者有效时间、家庭稳定和代际未来选择权 | 不提供育儿、教育、医疗、机构选择、补贴申请、法律或家庭纠纷建议 |
 | [Emergency Preparedness Response](domains/emergency-preparedness-response/README.md) | 灾害准备、预警、应急通信、急救医疗、撤离支持、安置和恢复 | 尾部风险响应、危机连续性、灾后恢复和抗冲击能力 | 不提供急救、医疗处理、撤离路线、危险环境、武器、暴力或生存操作指南 |
@@ -388,6 +398,8 @@ flowchart TD
 | [Product Safety Recall Systems](domains/product-safety-recall-systems/README.md) | 消费品、食品、药品、医疗器械、车辆缺陷报告、召回和纠正 | 外部产品安全、风险预警、召回通知、替代路径和伤害降低 | 不提供购买、维修、改装、药品停用、医疗器械操作、车辆处理或索赔建议 |
 | [Pain And Suffering Control](domains/pain-suffering-control/README.md) | 慢性疼痛、症状负担、姑息医学、生活质量和可承受持续性 | 疼痛、痛苦、症状负担、尊严和有效时间边界 | 不提供药物、剂量、处方、个体治疗或危机替代服务 |
 | [Health Literacy Navigation](domains/health-literacy-navigation/README.md) | 健康素养、服务导航、可理解信息、风险沟通、共同决策 | 理解能力、服务入口、行政负担和误用风险 | 不提供医学、法律、保险、福利申请或规避制度建议 |
+| [Language Access Plain Communication](domains/language-access-plain-communication/README.md) | 清晰语言、语言服务、有限英语能力访问、CLAS 和认知可访问性 | 关键材料理解、任务完成、风险沟通和服务可达 | 不替代认证口译、专业翻译、医疗/法律解释或危机沟通 |
+| [Labor Rights Workplace Protection](domains/labor-rights-workplace-protection/README.md) | 劳动标准、工资工时、安全权利、反歧视、申诉和组织治理 | 工作的权利保护、资源稳定、有效时间和反耗损边界 | 不提供法律意见、工资计算、投诉策略、组织策略或胜诉承诺 |
 | [Oral Health Continuity](domains/oral-health-continuity/README.md) | 牙齿、牙周、咀嚼、疼痛、感染、营养和沟通 | 口腔功能、疼痛、感染、营养和社会参与变量 | 不提供牙科诊断、治疗、药物、手术、器械或个体护理建议 |
 | [Measurement And Feedback](domains/measurement-feedback/README.md) | 状态测量、风险评分、生物标志物、可穿戴、反馈控制 | 指标分类、预测接口和模型反馈边界 | 不输出个体死亡日期、确定寿命预测或医学诊断 |
 
@@ -449,6 +461,9 @@ human_infra/
 │   ├── water-sanitation-hygiene-continuity/
 │   ├── energy-access-resilience/
 │   ├── healthcare-access-continuity/
+│   ├── medicine-access-treatment-continuity/
+│   ├── patient-data-interoperability/
+│   ├── telehealth-remote-monitoring-access/
 │   ├── caregiving-long-term-care/
 │   ├── housing-built-environment-stability/
 │   ├── future-waiting/
@@ -458,6 +473,8 @@ human_infra/
 │   ├── gastrointestinal-barrier-absorption/
 │   ├── blood-oxygen-hemostasis/
 │   ├── health-literacy-navigation/
+│   ├── language-access-plain-communication/
+│   ├── labor-rights-workplace-protection/
 │   ├── immune-maintenance/
 │   ├── information-integrity-trust/
 │   ├── legal-identity-civil-registration/
@@ -466,6 +483,7 @@ human_infra/
 │   ├── migration-displacement-humanitarian-continuity/
 │   ├── digital-inclusion-connectivity/
 │   ├── social-protection-benefits-delivery/
+│   ├── community-resource-navigation/
 │   ├── insurance-risk-transfer/
 │   ├── childcare-family-continuity/
 │   ├── learning-skill-acquisition/
@@ -609,5 +627,6 @@ flowchart LR
 - 2026-06-30：新增第九波 6 个服务接入与生活连续性域，覆盖医疗服务连续性、照护与长期照护、住房与建成环境、交通接入、法律身份与民事登记、应急准备与响应。
 - 2026-06-30：新增第十波 6 个基础生计与风险分摊域，覆盖食物安全与营养可及、水卫生连续性、能源可及与韧性、社会保护与福利递送、保险与风险转移、托育与家庭连续性。
 - 2026-06-30：新增第十一波 6 个制度参与、人道连续性与公共安全域，覆盖司法可及与法律援助、公民参与与选举接入、迁移流离失所与人道连续性、数字包容与连接、人身安全与暴力预防、产品安全与召回系统。
+- 2026-06-30：新增第十二波 6 个治疗、服务理解与劳动保护域，覆盖药品与治疗连续性、患者数据互操作、远程医疗与居家监测、社区资源导航、语言可达与清晰沟通、劳动权利与工作场所保护。
 
 完整记录见 [CHANGELOG.md](CHANGELOG.md)。

@@ -14,6 +14,7 @@ All notable repository structure changes are recorded here.
 - Added ninth-wave service access and life-continuity domain skeletons for healthcare access/continuity, caregiving/long-term care, housing/built environment stability, transportation access/mobility, legal identity/civil registration, and emergency preparedness/response.
 - Added tenth-wave basic livelihood and risk-transfer domain skeletons for food security/nutrition access, water/sanitation/hygiene continuity, energy access/resilience, social protection/benefits delivery, insurance/risk transfer, and childcare/family continuity.
 - Added eleventh-wave civic, humanitarian, and public-safety continuity domain skeletons for access to justice/legal aid, civic participation/election access, migration/displacement humanitarian continuity, digital inclusion/connectivity, personal safety/violence prevention, and product safety/recall systems.
+- Added twelfth-wave treatment, service-understanding, and workplace-rights domain skeletons for medicine access/treatment continuity, patient data interoperability, telehealth/remote monitoring access, community resource navigation, language access/plain communication, and labor rights/workplace protection.
 
 ## 2026-06-29
 

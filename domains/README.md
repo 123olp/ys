@@ -39,6 +39,9 @@
 - `water-sanitation-hygiene-continuity/`：水、环境卫生与个人卫生连续性，整理安全饮用水、卫生设施、洗手、污水处理和 WASH 覆盖。
 - `energy-access-resilience/`：能源可及与韧性，整理电力、清洁烹饪、能源负担、停电、温控、通信供能和医疗设备供电。
 - `healthcare-access-continuity/`：医疗服务连续性，整理初级卫生保健、急诊、预防、转诊、随访、费用和服务质量。
+- `medicine-access-treatment-continuity/`：药品可及与治疗连续性，整理基本药物、药品短缺、标签、覆盖、费用和用药安全。
+- `patient-data-interoperability/`：患者数据互操作，整理健康记录访问、数据可携带、互操作标准、授权应用和跨机构交换。
+- `telehealth-remote-monitoring-access/`：远程医疗与居家监测，整理远程问诊、远程患者监测、居家设备、覆盖规则和数字照护连续性。
 - `caregiving-long-term-care/`：照护与长期照护，整理家庭照护、长期照护、居家社区支持、照护协调和照护者负担。
 - `housing-built-environment-stability/`：住房与建成环境稳定，整理住房稳定、住房质量、室内环境、无障碍、社区资源和建成环境。
 - `transportation-access-mobility/`：交通接入与日常移动，整理公共交通、无障碍交通、出行时间、医疗交通、交通成本和外部可达性。
@@ -48,6 +51,7 @@
 - `migration-displacement-humanitarian-continuity/`：迁移、流离失所与人道连续性，整理身份、医疗、教育、庇护、保护、安置和人道服务连续性。
 - `digital-inclusion-connectivity/`：数字包容与连接，整理互联网接入、设备、数字技能、可负担性、无障碍和数字公共服务入口。
 - `social-protection-benefits-delivery/`：社会保护与福利递送，整理公共福利、资格、申请、续期、支付、申诉和行政负担。
+- `community-resource-navigation/`：社区资源导航，整理 211、资源目录、社会需求筛查、转介、闭环回访和本地服务导航。
 - `insurance-risk-transfer/`：保险与风险转移，整理健康、失业、工伤、残障、灾害、存款、养老金等风险池和保障缺口。
 - `childcare-family-continuity/`：托育与家庭连续性，整理托育可及、费用、质量、早期儿童发展、父母工作连续性和家庭压力。
 - `emergency-preparedness-response/`：应急准备与响应，整理灾害准备、预警、应急通信、急救医疗、安置和恢复。
@@ -81,6 +85,8 @@
 - `governance-rights/`：治理与主体权利，整理同意、退出、数据权、法律身份、AI 治理和研究伦理。
 - `pain-suffering-control/`：疼痛与痛苦控制，整理慢性疼痛、症状负担、姑息医学和可承受持续性。
 - `health-literacy-navigation/`：健康素养与服务导航，整理可理解信息、风险沟通、共同决策和系统入口。
+- `language-access-plain-communication/`：语言可达与清晰沟通，整理 plain language、语言服务、CLAS、有限英语能力访问和认知可访问性。
+- `labor-rights-workplace-protection/`：劳动权利与工作场所保护，整理劳动标准、工资工时、安全权利、反歧视、申诉和组织治理。
 - `oral-health-continuity/`：口腔健康连续性，整理牙齿、牙周、咀嚼、疼痛、感染、营养和沟通。
 - `measurement-feedback/`：测量、预测与反馈，整理主体状态测量、风险评分、生物标志物和反馈闭环。
 

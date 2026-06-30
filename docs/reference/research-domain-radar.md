@@ -91,6 +91,12 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `digital-inclusion-connectivity/` | 连接、设备、可负担性、数字技能和无障碍决定数字化公共服务是否成为入口还是排除机制 |
 | `personal-safety-violence-prevention/` | 暴力预防、求助入口、受害者服务、法律保护和创伤支持决定主体能否免于伤害、胁迫和长期控制 |
 | `product-safety-recall-systems/` | 缺陷报告、不良事件、召回通知、纠正措施和替代路径决定外部产品系统能否避免反向伤害主体 |
+| `medicine-access-treatment-continuity/` | 药品可及、短缺、标签、费用覆盖和用药安全决定处方能否转化为持续治疗 |
+| `patient-data-interoperability/` | 患者记录访问、数据可携带和互操作决定照护、保险、转诊和监测数据能否跟随主体 |
+| `telehealth-remote-monitoring-access/` | 远程问诊、远程患者监测和居家设备决定医疗能否跨越距离、行动限制和慢病随访断点 |
+| `community-resource-navigation/` | 资源目录、社会需求筛查、转介和闭环回访决定分散服务能否实际抵达主体 |
+| `language-access-plain-communication/` | 清晰语言、语言服务和认知可访问性决定权利、风险和服务流程能否被理解和执行 |
+| `labor-rights-workplace-protection/` | 工资工时、安全权利、反歧视、反报复和申诉执行决定工作是否支撑而不是侵蚀主体持续性 |
 
 ## 来源信号
 
@@ -160,6 +166,12 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | NTIA Digital Inclusion / ITU ICT Statistics / FCC Broadband / UNESCO MIL | 提示互联网接入、设备、可负担性、数字技能和数字公共服务可达性是现代资源入口 |
 | CDC Violence Prevention / OVC / OVW / VictimConnect | 提示暴力预防、受害者服务、求助入口、法律保护和创伤支持是人身安全与恢复底座 |
 | CPSC recalls / FDA recalls / NHTSA recalls / openFDA enforcement | 提示产品缺陷报告、召回通知、纠正措施和风险沟通是外部工具安全层 |
+| WHO Essential Medicines / WHO Medication Without Harm / FDA Drug Shortages / DailyMed / CDC Medication Safety | 提示关键药物选择、供应、标签、患者理解、覆盖和用药错误防护需要独立治疗连续性域 |
+| ONC health record access / USCDI / TEFCA / CMS Blue Button / HL7 FHIR / SMART App Launch | 提示患者访问、数据可携带、互操作和授权应用是连续照护的数据接口 |
+| Telehealth.HHS.gov / HRSA Telehealth / CMS Telehealth / FDA Digital Health | 提示远程问诊、远程患者监测、居家设备、覆盖规则和数字健康监管构成独立照护通道 |
+| 211 / Open Referral HSDS / Gravity Project / CMS Accountable Health Communities | 提示社区资源目录、社会需求筛查、转介和闭环回访是资源转化为实际支持的接口 |
+| PlainLanguage.gov / LEP.gov / National CLAS / W3C Cognitive Accessibility | 提示清晰语言、语言服务、文化与语言适配、认知可访问性是公共服务可达条件 |
+| ILO International Labour Standards / DOL WHD / FLSA / OSHA workers / EEOC / DOL OLMS | 提示劳动标准、工资工时、安全权利、反歧视、反报复和申诉执行需要独立劳动保护域 |
 
 Source links:
 
@@ -317,6 +329,36 @@ Source links:
 - https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts
 - https://www.nhtsa.gov/recalls
 - https://open.fda.gov/apis/enforcement/
+- https://www.who.int/groups/expert-committee-on-selection-and-use-of-essential-medicines/essential-medicines-lists
+- https://www.who.int/initiatives/medication-without-harm
+- https://www.fda.gov/drugs/drug-safety-and-availability/drug-shortages
+- https://dailymed.nlm.nih.gov/dailymed/
+- https://www.cdc.gov/medication-safety/
+- https://www.healthit.gov/how-to-get-your-health-record/
+- https://www.healthit.gov/isp/united-states-core-data-interoperability-uscdi
+- https://www.healthit.gov/topic/interoperability/policy/trusted-exchange-framework-and-common-agreement-tefca
+- https://bluebutton.cms.gov/
+- https://hl7.org/fhir/
+- https://hl7.org/fhir/smart-app-launch/
+- https://telehealth.hhs.gov/
+- https://www.hrsa.gov/telehealth
+- https://www.cms.gov/medicare/coverage/telehealth
+- https://www.fda.gov/medical-devices/digital-health-center-excellence
+- https://www.211.org/
+- https://openreferral.org/
+- https://docs.openreferral.org/en/latest/hsds/
+- https://thegravityproject.net/
+- https://www.cms.gov/priorities/innovation/innovation-models/ahcm
+- https://www.plainlanguage.gov/
+- https://www.lep.gov/
+- https://thinkculturalhealth.hhs.gov/clas
+- https://www.w3.org/WAI/cognitive/
+- https://www.ilo.org/international-labour-standards
+- https://www.dol.gov/agencies/whd
+- https://www.dol.gov/agencies/whd/flsa
+- https://www.osha.gov/workers
+- https://www.eeoc.gov/
+- https://www.dol.gov/agencies/olms
 
 ## 使用规则
 

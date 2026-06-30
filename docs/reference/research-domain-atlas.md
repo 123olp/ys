@@ -66,6 +66,7 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 日历时间可转化为有效时间 | `time-allocation-effective-time/` | 可支配时间、恢复时间、等待成本、行政负担、任务摩擦 | 把节省时间写成压榨恢复、关系和主体自主性的理由 |
 | 资源入口可承受冲击 | `financial-resilience-access/` | 收入稳定、储蓄缓冲、债务、保险、支付能力、资产安全 | 把财务韧性写成投资、保险、税务或福利个体建议 |
 | 工作系统可持续 | `occupational-work-design/` | 工时、暴露、人体工学、压力、自主性、收入、技能机会 | 把生产率最大化写成压榨劳动或规避安全权利 |
+| 劳动权利可执行 | `labor-rights-workplace-protection/` | 工资工时、安全权利、反歧视、反报复、申诉入口、组织治理 | 把公共劳动资料写成个案法律意见、工资判断或争议策略 |
 | 信息环境可支撑判断 | `information-integrity-trust/` | 来源可信度、证据质量、误导暴露、可追溯性、信任链 | 提供操控、伪造、平台规避或虚假内容传播策略 |
 | 功能可恢复 | `rehabilitation-functioning/` | 活动能力、自理能力、沟通能力、社会参与 | 存活但失能、长期依赖、参与中断 |
 | 癌症风险可压低 | `cancer-control/` | 肿瘤发生、进展、复发、死亡风险 | 耐药、复发、筛查误判、治疗伤害 |
@@ -92,6 +93,9 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 水卫生条件可持续 | `water-sanitation-hygiene-continuity/` | 安全饮用水、卫生设施、洗手、污水处理、WASH 覆盖、服务可靠性 | 感染、脱水、尊严损害、照护负担或公共卫生风险 |
 | 能源服务可运行 | `energy-access-resilience/` | 电力、清洁烹饪、能源负担、停电、温控、通信供能、医疗设备供电 | 照明、烹饪、温控、通信、医疗设备和数字服务中断 |
 | 医疗服务可连续 | `healthcare-access-continuity/` | 初级卫生保健、急诊、预防、转诊、随访、费用、质量 | 有医疗资源但不可及、不可负担、不可连续或质量不可审查 |
+| 药品和治疗可持续执行 | `medicine-access-treatment-continuity/` | 基本药物、短缺、标签、覆盖、药房可及、用药安全 | 处方无法转化为持续治疗，或把药品资料写成个体用药建议 |
+| 患者数据可携带互通 | `patient-data-interoperability/` | 健康记录访问、数据可携带、互操作、授权应用、跨机构交换 | 资料被机构锁住、照护交接断裂、或绕过授权与隐私边界 |
+| 远程照护可达可升级 | `telehealth-remote-monitoring-access/` | 远程问诊、远程患者监测、居家设备、覆盖、升级路径 | 远程数据被误当诊断，或把 telehealth 写成急诊替代和产品背书 |
 | 照护可持续 | `caregiving-long-term-care/` | 家庭照护、长期照护、居家社区支持、照护协调、照护者负担 | 长寿退化为无人照护、照护者崩溃、失能支持中断或尊严丧失 |
 | 居住环境可稳定 | `housing-built-environment-stability/` | 住房稳定、住房质量、室内环境、无障碍、社区资源、建成环境 | 居住空间持续制造暴露、跌倒、孤立、服务断点或照护不可行 |
 | 日常移动和服务接入可达 | `transportation-access-mobility/` | 公共交通、无障碍交通、出行时间、医疗交通、交通成本、交通安全 | 有资源但到不了，服务延误、缺席、孤立或撤离不可达 |
@@ -101,6 +105,7 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 迁移和流离失所状态可连续 | `migration-displacement-humanitarian-continuity/` | 迁移、难民、流离失所、身份连续、医疗、教育、庇护、保护、人道协调 | 跨地点和跨制度后身份、服务、庇护、教育和保护断裂 |
 | 数字连接可达 | `digital-inclusion-connectivity/` | 互联网接入、设备、数字技能、可负担性、无障碍、人工帮助、数字公共服务 | 数字排除导致医疗、福利、教育、工作、身份和应急信息不可达 |
 | 社会保护可递送 | `social-protection-benefits-delivery/` | 公共福利、社会保护、资格、申请、续期、支付、申诉、行政负担 | 名义权利无法转化为食物、住房、医疗、能源或收入支持 |
+| 社区资源可导航 | `community-resource-navigation/` | 资源目录、社会需求筛查、转介、闭环回访、人工协助 | 资源存在但找不到、转介失败、回访缺失或敏感需求数据被滥用 |
 | 高成本风险可分摊 | `insurance-risk-transfer/` | 覆盖率、保费、自付、理赔、拒赔、风险池、保障缺口 | 疾病、失业、工伤、残障、灾害或养老金风险由个体独自承担 |
 | 托育和家庭运行可持续 | `childcare-family-continuity/` | 托育可及、费用、质量、早期发展、父母工作连续性、家庭压力 | 儿童发展受损、照护者工作中断、时间贫困和家庭压力升级 |
 | 应急响应可接住主体 | `emergency-preparedness-response/` | 灾害准备、预警、应急通信、急救医疗、安置、公共卫生应急、恢复 | 低频高冲击事件一次性清零长期积累，通信、医疗、撤离或恢复失败 |
@@ -112,6 +117,7 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 关系网络可支撑主体 | `social-connection-relational-infra/` | 社会连接、孤独、照护网络、信任、协作 | 孤立、照护断裂、危机无人接住 |
 | 权利和治理可保护主体 | `governance-rights/` | 同意、退出、数据权、法律身份 | 被控制、被剥夺、被系统吞噬 |
 | 服务入口可理解可导航 | `health-literacy-navigation/` | 健康素养、服务导航、风险沟通、共同决策 | 有资源但不会用、误解、延误、行政排除 |
+| 语言和表达可理解 | `language-access-plain-communication/` | plain language、语言服务、LEP、CLAS、认知可访问性、表单理解 | 材料读不懂、听不懂、不能执行，或简化时删掉权利和风险 |
 | 口腔系统可持续 | `oral-health-continuity/` | 咀嚼、牙周、口腔疼痛、感染、沟通 | 营养障碍、疼痛、感染、社交退缩 |
 | 持续存在可承受 | `pain-suffering-control/` | 疼痛、症状负担、生活质量、尊严 | 延长痛苦、有效时间崩塌、退出权受损 |
 | 状态可观测和校正 | `measurement-feedback/` | 测量、预测、反馈、风险评分 | 错误预测、偏差、指标替代真实终点 |
@@ -199,6 +205,9 @@ risk-engineering
   -> water-sanitation-hygiene-continuity
   -> energy-access-resilience
   -> healthcare-access-continuity
+  -> medicine-access-treatment-continuity
+  -> patient-data-interoperability
+  -> telehealth-remote-monitoring-access
   -> caregiving-long-term-care
   -> housing-built-environment-stability
   -> transportation-access-mobility
@@ -208,6 +217,7 @@ risk-engineering
   -> migration-displacement-humanitarian-continuity
   -> digital-inclusion-connectivity
   -> social-protection-benefits-delivery
+  -> community-resource-navigation
   -> insurance-risk-transfer
   -> childcare-family-continuity
   -> emergency-preparedness-response
@@ -215,12 +225,14 @@ risk-engineering
   -> product-safety-recall-systems
   -> financial-resilience-access
   -> occupational-work-design
+  -> labor-rights-workplace-protection
   -> information-integrity-trust
   -> supply-chain-continuity
   -> synthetic-biology-biosecurity
   -> space-extreme-habitation
   -> social-connection-relational-infra
   -> health-literacy-navigation
+  -> language-access-plain-communication
   -> substance-exposure-control
   -> assistive-technology-access
   -> governance-rights
