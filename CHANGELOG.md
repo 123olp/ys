@@ -11,6 +11,7 @@ All notable repository structure changes are recorded here.
 - Added sixth-wave physiological and structural maintenance domain skeletons for respiratory oxygenation, endocrine hormonal regulation, blood oxygen/hemostasis, skin barrier/wound healing, extracellular matrix/glycation, and lymphatic/glymphatic clearance.
 - Added seventh-wave homeostasis and future-choice domain skeletons for gastrointestinal barrier/absorption, fluid-electrolyte-acid-base homeostasis, thermal homeostasis/resilience, urogenital continuity, and reproductive/fertility continuity.
 - Added eighth-wave agency and task-resource domain skeletons for attention/executive control, learning/skill acquisition, time allocation/effective time, financial resilience/access, occupational work design, and information integrity/trust.
+- Added ninth-wave service access and life-continuity domain skeletons for healthcare access/continuity, caregiving/long-term care, housing/built environment stability, transportation access/mobility, legal identity/civil registration, and emergency preparedness/response.
 
 ## 2026-06-29
 

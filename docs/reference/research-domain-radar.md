@@ -73,6 +73,12 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `financial-resilience-access/` | 收入、储蓄、债务、保险和支付能力决定主体是否能承受资源与医疗冲击 |
 | `occupational-work-design/` | 工作组织、职业安全、人体工学、工时和职业暴露会长期塑造健康、收入和恢复边界 |
 | `information-integrity-trust/` | 信息可信度、误导暴露、AI 生成内容和信任链影响主体判断、技术采用和风险决策 |
+| `healthcare-access-continuity/` | 医疗可及、连续照护、转诊、随访、费用和质量决定可修复问题能否转化为恢复机会 |
+| `caregiving-long-term-care/` | 长期照护、家庭照护、居家社区支持和照护者负担决定失能、慢病和脆弱状态能否被持续接住 |
+| `housing-built-environment-stability/` | 住房稳定、住房质量、无障碍和建成环境决定睡眠、恢复、照护、服务接入和环境暴露 |
+| `transportation-access-mobility/` | 外部交通可达性决定医疗、工作、食物、社区、照护和应急资源能否实际到达 |
+| `legal-identity-civil-registration/` | 法律身份、出生登记、民事登记和身份文件决定主体能否被制度承认为权利与服务对象 |
+| `emergency-preparedness-response/` | 灾害准备、预警、通信、急救医疗、安置和恢复决定尾部风险能否被响应而不是一次性清零 |
 
 ## 来源信号
 
@@ -124,6 +130,12 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | CFPB financial well-being / Federal Reserve household economic well-being | 提示财务冲击、支付能力、债务、保险和资产安全影响健康、恢复和未来选择权 |
 | CDC NIOSH Total Worker Health / WHO occupational health / ILO OSH | 提示工作组织、职业安全、人体工学、工时、暴露和工作压力是主体持续性任务环境 |
 | WHO infodemic management / HHS health misinformation / NIST GenAI profile | 提示信息可信度、误导信息、AI 内容和信任链会改变主体判断与风险函数 |
+| WHO UHC / WHO Primary Health Care / Healthy People Access to Health Services | 提示医疗服务连续性、初级卫生保健、费用、质量、转诊和随访是可修复风险进入恢复路径的条件 |
+| NIA Caregiving / NIA Long-Term Care / WHO Ageing and Health | 提示长期照护、家庭照护、照护者负担和居家社区支持是长寿社会的核心连续性条件 |
+| WHO Housing and Health / CDC Healthy Places / Healthy People Quality of Housing | 提示住房质量、室内环境、无障碍、建成环境和住房稳定会影响健康、恢复和服务接入 |
+| CDC Transportation and Health / U.S. DOT Health / CDC Transportation Toolkit | 提示交通可达、无障碍交通、出行时间、交通成本和交通安全影响医疗、工作、食物和社区接入 |
+| World Bank ID4D / UNICEF Birth Registration / UN Legal Identity Agenda | 提示法律身份、出生登记、民事登记、身份文件和服务资格是制度承认与公共服务入口 |
+| CDC Emergency Preparedness / Ready.gov / WHO Emergency Care / WHO Public Health Emergency Preparedness | 提示预警、通信、急救医疗、公共卫生应急、安置和灾后恢复是尾部风险下的主体连续性条件 |
 
 Source links:
 
@@ -221,6 +233,25 @@ Source links:
 - https://www.who.int/teams/risk-communication/infodemic-management
 - https://www.hhs.gov/surgeongeneral/reports-and-publications/health-misinformation/index.html
 - https://www.nist.gov/itl/ai-risk-management-framework/ai-risk-management-framework-generative-ai-profile
+- https://www.who.int/health-topics/universal-health-coverage
+- https://www.who.int/health-topics/primary-health-care
+- https://odphp.health.gov/healthypeople/priority-areas/social-determinants-health/literature-summaries/access-health-services
+- https://www.nia.nih.gov/health/caregiving
+- https://www.nia.nih.gov/health/caregiving/long-term-care
+- https://www.who.int/news-room/fact-sheets/detail/ageing-and-health
+- https://www.who.int/publications/i/item/9789241550376
+- https://www.cdc.gov/healthy-places/
+- https://www.healthypeople.gov/2020/topics-objectives/topic/social-determinants-health/interventions-resources/quality-of-housing
+- https://www.cdc.gov/transportation/
+- https://www.transportation.gov/mission/health
+- https://www.cdc.gov/healthy-places/php/toolkit/transportation.html
+- https://id4d.worldbank.org/
+- https://www.unicef.org/protection/birth-registration
+- https://unstats.un.org/legal-identity-agenda/
+- https://www.cdc.gov/emergency/
+- https://www.ready.gov/
+- https://www.who.int/health-topics/emergency-care
+- https://www.who.int/activities/strengthening-public-health-emergency-preparedness
 
 ## 使用规则
 

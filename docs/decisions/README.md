@@ -25,3 +25,4 @@ Current decisions:
 - `0010-add-sixth-wave-physiological-structural-maintenance-domains.md`
 - `0011-add-seventh-wave-homeostasis-choice-domains.md`
 - `0012-add-eighth-wave-agency-task-resource-domains.md`
+- `0013-add-ninth-wave-service-continuity-domains.md`
