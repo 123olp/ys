@@ -217,6 +217,13 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `longitudinal-cohort-retention-followup-infrastructure/` | 纵向队列留存和随访决定寿命、健康寿命、暴露变化和未来选择权能否被长期观察 |
 | `registries-real-world-data-governance/` | 登记系统和真实世界数据治理决定技术进入现实照护后的安全、效果、可及和扩散反馈是否可信 |
 | `scientific-instrumentation-sensor-calibration-maintenance/` | 科研仪器和传感器校准维护决定测量反馈系统是否把真实信号和设备误差区分开 |
+| `nanomedicine-targeted-delivery-molecular-repair/` | 纳米医学和靶向递送决定远期治疗、诊断和分子修复能否从“有效载荷存在”进入“可到达、可控制、可监测”的路径 |
+| `ai-drug-discovery-protein-design/` | AI 药物发现和蛋白设计决定未来治疗窗口能否更快产生候选分子、靶点假说和可实验验证的蛋白工具 |
+| `epigenetic-editing-gene-regulation-therapeutics/` | 表观遗传编辑和基因调控疗法决定细胞状态、基因表达和衰老相关程序能否在不改写 DNA 序列的条件下被可控扰动 |
+| `brain-preservation-connectomics-emulation/` | 脑保存、连接组学和仿真决定人格连续性讨论是否有神经结构记录、信息保存和可解释模型边界 |
+| `post-quantum-cryptography-long-term-data-security/` | 后量子密码和长期数据安全决定身份、医疗、研究和外部记忆能否抵抗未来解密与密码迁移失败 |
+| `safety-critical-software-formal-methods/` | 安全关键软件和形式化方法决定生命支持、医疗、AI 代理和基础设施系统能否在高风险场景中被验证和约束 |
+| `long-term-digital-preservation-format-migration/` | 长期数字保存和格式迁移决定外部记忆、研究证据、作品、授权记录和项目上下文是否在几十年尺度保持可读 |
 
 ## 来源信号
 
@@ -233,6 +240,13 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | WHO Vision and Hearing resources | 提示感官系统是主体感知、沟通和行动连续性的基础 |
 | CDC Sleep / NHLBI Sleep resources | 提示睡眠不足和节律失调会影响认知、慢病、心理和恢复能力 |
 | WHO Mental Health / Suicide resources | 提示心理健康、自杀风险和社会连接是主体持续行动的核心条件 |
+| NCI / NNI / FDA nanotechnology and nanomedicine resources | 提示治疗价值不仅取决于分子是否有效，还取决于纳米材料、靶向递送、释放控制、安全性和监管边界 |
+| FDA AI/ML for Drug Development and protein-design literature | 提示 AI 可以加速候选分子、蛋白工具和药物研发流程，但模型输出必须进入实验、临床和监管验证链 |
+| Nature epigenetic editing and epigenetic rejuvenation literature | 提示基因表达状态和表观遗传程序正在成为可扰动对象，但脱靶、可逆性、长期安全和身份保持是核心边界 |
+| NIH BRAIN Initiative and Human Connectome Project | 提示脑信息连续性必须从神经结构、连接组、记录尺度和解释模型出发，不能把保存等同于主体延续 |
+| NIST post-quantum cryptography standards and CISA migration guidance | 提示长周期数据安全必须提前处理 harvest-now-decrypt-later、密码敏捷性和迁移治理 |
+| NASA formal methods, NIST SSDF, and FDA software guidance | 提示安全关键系统需要形式化验证、软件供应链安全、保证案例和生命周期治理 |
+| Library of Congress, NDSA, and Digital Preservation Coalition guidance | 提示数字保存不是备份一句话，而是格式、校验、元数据、迁移、介质、权限和组织责任的长期系统 |
 | CDC Chronic Pain / WHO Palliative Care | 提示疼痛、症状负担和姑息照护决定持续存在的可承受性 |
 | WHO Healthy Diet / Obesity | 提示营养质量、能量平衡、食物环境和代谢状态是慢病风险与有效时间变量 |
 | WHO Physical Activity | 提示身体活动和久坐行为影响心血管、代谢、肌骨、心理和死亡风险 |
@@ -953,6 +967,20 @@ Source links:
 - https://www.nifc.gov/
 - https://lpi.worldbank.org/
 - https://unctad.org/topic/transport-and-trade-logistics/review-of-maritime-transport
+- https://www.cancer.gov/nano
+- https://www.fda.gov/science-research/science-and-research-special-topics/nanotechnology-programs-fda
+- https://www.fda.gov/drugs/science-and-research-drugs/artificial-intelligence-and-machine-learning-drug-development
+- https://www.nature.com/articles/s41586-024-07087-8
+- https://www.nature.com/articles/s41573-025-01323-0
+- https://braininitiative.nih.gov/
+- https://www.humanconnectome.org/
+- https://csrc.nist.gov/projects/post-quantum-cryptography
+- https://www.nist.gov/itl/smallbusinesscyber/guidance-topic/post-quantum-cryptography
+- https://ntrs.nasa.gov/citations/20200003418
+- https://csrc.nist.gov/projects/ssdf
+- https://digitalpreservation.gov/
+- https://ndsa.org/publications/levels-of-digital-preservation/
+- https://www.dpconline.org/handbook
 
 ## 使用规则
 

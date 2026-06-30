@@ -198,6 +198,13 @@
 - `longitudinal-cohort-retention-followup-infrastructure/`：纵向队列留存与随访基础设施，整理长期随访、参与者留存、失访、事件确认和生命历程数据。
 - `registries-real-world-data-governance/`：登记系统与真实世界数据治理，整理患者/疾病/产品登记、RWD/RWE、数据质量、用途边界和持续反馈。
 - `scientific-instrumentation-sensor-calibration-maintenance/`：科研仪器与传感器校准维护，整理校准、漂移、维护、参考材料、测量不确定性和设备生命周期。
+- `nanomedicine-targeted-delivery-molecular-repair/`：纳米医学与靶向递送，整理纳米材料、载体、释放控制、分子诊断和远期分子修复边界。
+- `ai-drug-discovery-protein-design/`：AI 药物发现与蛋白设计，整理结构预测、生成式分子设计、自动化实验和验证转化断点。
+- `epigenetic-editing-gene-regulation-therapeutics/`：表观遗传编辑与基因调控疗法，整理表达状态改写、持久调控、脱靶和身份稳定性边界。
+- `brain-preservation-connectomics-emulation/`：脑保存、连接组与仿真假设，整理脑信息保存、读取、全脑仿真和人格连续性争议。
+- `post-quantum-cryptography-long-term-data-security/`：后量子密码与长期数据安全，整理量子威胁、密码迁移、长期保密和数据连续性。
+- `safety-critical-software-formal-methods/`：安全关键软件与形式化方法，整理规格、验证、运行时监控、故障隔离和失效安全。
+- `long-term-digital-preservation-format-migration/`：长期数字保存与格式迁移，整理格式、元数据、校验、备份、迁移和长期可读性。
 - `supply-chain-continuity/`：供应链连续性，整理关键物资、服务、物流、替代路径和恢复时间。
 - `synthetic-biology-biosecurity/`：合成生物学与生物安全，整理双重用途、生物安全、生物安保和治理边界。
 - `space-extreme-habitation/`：空间与极端栖居，整理辐射、微重力、隔离、闭环资源和远程医疗风险。

@@ -35,6 +35,7 @@ All notable repository structure changes are recorded here.
 - Added thirtieth-wave quantitative methodology domain skeletons for causal inference and target trial emulation, survival analysis and healthspan risk modeling, human digital twin life-course simulation, implementation science and adherence behavior change, uncertainty quantification and model calibration, and data quality/missingness/representativeness.
 - Added thirty-first-wave knowledge governance, technology foresight, and diffusion domain skeletons for privacy-preserving computation/federated learning, knowledge graph/ontology/semantic interoperability, model cards/AI audit documentation, technology foresight/horizon scanning, research portfolio/funding governance, and intellectual property/technology transfer/access.
 - Added thirty-second-wave research evidence infrastructure domain skeletons for trustworthy scientific communication/peer review, research participant consent/community engagement, biobanking/biospecimen chain of custody, longitudinal cohort retention/follow-up, registries/real-world data governance, and scientific instrumentation/sensor calibration maintenance.
+- Added thirty-third-wave future technology continuity domain skeletons for nanomedicine/targeted delivery, AI drug discovery/protein design, epigenetic editing/gene regulation, brain preservation/connectomics emulation, post-quantum cryptography, safety-critical software/formal methods, and long-term digital preservation/format migration.
 
 ## 2026-06-29
 

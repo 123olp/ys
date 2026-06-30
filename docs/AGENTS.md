@@ -45,6 +45,7 @@ docs/
 │   ├── 0034-add-thirtieth-wave-quantitative-methodology-domains.md
 │   ├── 0035-add-thirty-first-wave-knowledge-governance-technology-diffusion-domains.md
 │   ├── 0036-add-thirty-second-wave-research-evidence-infrastructure-domains.md
+│   ├── 0037-add-thirty-third-wave-future-technology-continuity-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -139,6 +140,7 @@ docs/
 - `domains/causal-inference-target-trial-emulation/`、`domains/survival-analysis-healthspan-risk-modeling/`、`domains/human-digital-twin-life-course-simulation/`、`domains/implementation-science-adherence-behavior-change/`、`domains/uncertainty-quantification-model-calibration/` 和 `domains/data-quality-missingness-representativeness/`：第三十波正式研究域，分别承载因果推断与目标试验模拟、生存分析与健康寿命风险建模、人类数字孪生生命历程仿真、实施科学与依从行为改变、不确定性量化与模型校准、数据质量缺失代表性审查。
 - `domains/privacy-preserving-computation-federated-learning/`、`domains/knowledge-graph-ontology-semantic-interoperability/`、`domains/model-cards-ai-audit-documentation/`、`domains/technology-foresight-horizon-scanning/`、`domains/research-portfolio-prioritization-funding-governance/` 和 `domains/intellectual-property-technology-transfer-access/`：第三十一波正式研究域，分别承载隐私保护计算、知识图谱本体语义互操作、模型卡 AI 审计文档、技术预见地平线扫描、研究组合资金治理和知识产权技术转移可及。
 - `domains/trustworthy-scientific-communication-peer-review/`、`domains/research-participant-consent-community-engagement/`、`domains/biobanking-biospecimen-quality-chain-of-custody/`、`domains/longitudinal-cohort-retention-followup-infrastructure/`、`domains/registries-real-world-data-governance/` 和 `domains/scientific-instrumentation-sensor-calibration-maintenance/`：第三十二波正式研究域，分别承载可信科研传播与同行评审、研究参与者同意与社区参与、生物样本库保管链、纵向队列随访、登记与真实世界数据治理和科研仪器传感器校准维护。
+- `domains/nanomedicine-targeted-delivery-molecular-repair/`、`domains/ai-drug-discovery-protein-design/`、`domains/epigenetic-editing-gene-regulation-therapeutics/`、`domains/brain-preservation-connectomics-emulation/`、`domains/post-quantum-cryptography-long-term-data-security/`、`domains/safety-critical-software-formal-methods/` 和 `domains/long-term-digital-preservation-format-migration/`：第三十三波正式研究域，分别承载纳米医学靶向递送、AI 药物发现蛋白设计、表观遗传编辑、脑保存连接组仿真、后量子密码长期数据安全、安全关键软件形式化方法和长期数字保存格式迁移。
 - `reference/research-model-visualization-toolkit.md`：沉淀科研论文阅读、文献脊梁、模型工具、可视化标准和 Human Infra 定量页面实现路线。
 - `reference/source-card-system.md`：定义论文、书籍、工具、案例、标准和数据集进入项目之前的资料卡片制度。
 - `reference/domain-map.md`：定义根项目与子域的边界、迁移切片、主动不做和验证点。

@@ -240,6 +240,13 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 生命路径必须可长期观察 | `longitudinal-cohort-retention-followup-infrastructure/` | 纵向队列、随访、留存、失访、事件确认、生命历程链接 | 失访、选择偏差和随访断裂扭曲寿命、健康寿命和风险路径 |
 | 真实世界反馈必须可治理 | `registries-real-world-data-governance/` | 患者登记、疾病登记、产品登记、RWD/RWE、数据质量、用途边界 | 登记缺失、用途越界、数据漂移和相关性外推污染技术反馈 |
 | 测量硬件必须可校准维护 | `scientific-instrumentation-sensor-calibration-maintenance/` | 仪器、传感器、校准、漂移、维护、参考材料、不确定性 | 设备误差被误读为生命路径、环境暴露或技术效果信号 |
+| 远期治疗必须能到达靶点 | `nanomedicine-targeted-delivery-molecular-repair/` | 纳米材料、靶向递送、释放控制、分子诊断、分子修复边界 | 有效载荷存在但到不了、控不住、监测不了或毒性失控 |
+| 未来药物和蛋白必须可设计验证 | `ai-drug-discovery-protein-design/` | 分子生成、蛋白设计、ADMET 预测、湿实验验证、模型边界 | 把模型生成误读成疗效，把筛选加速误读成临床成功 |
+| 基因表达状态必须可调控但不失控 | `epigenetic-editing-gene-regulation-therapeutics/` | 表观编辑、染色质状态、可逆沉默、表达重编程、脱靶风险 | 误把表达调控写成安全逆龄或永久治疗，忽略脱靶和长期效应 |
+| 脑信息连续性必须可保存可解释 | `brain-preservation-connectomics-emulation/` | 脑保存、连接组、神经结构记录、仿真、人格连续性 | 把结构保存误写成意识延续，把仿真假设误写成复活证明 |
+| 长期数据必须抵抗未来解密 | `post-quantum-cryptography-long-term-data-security/` | PQC、密码迁移、加密敏捷性、长期保密、harvest-now-decrypt-later | 医疗、身份和研究档案被未来量子或迁移失败破坏 |
+| 高风险系统必须可证明可信 | `safety-critical-software-formal-methods/` | 形式化方法、模型检查、证明、保证案例、安全关键软件 | 生命支持、医疗、AI 和基础设施软件因隐性缺陷级联失败 |
+| 外部记忆必须长期可读 | `long-term-digital-preservation-format-migration/` | 格式迁移、校验、元数据、备份、存储介质、可读性 | 作品、记忆、授权、证据和项目上下文随格式、介质或平台消失 |
 | 状态可观测和校正 | `measurement-feedback/` | 测量、预测、反馈、风险评分 | 错误预测、偏差、指标替代真实终点 |
 
 ## 主链路
@@ -251,6 +258,7 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
   -> 定量方法学可识别、可建模、可校准
   -> 知识治理与技术扩散可追踪、可审计、可排序、可获得
   -> 科研证据基础设施可发表纠错、主体授权、样本保管、长期随访、真实世界登记和仪器校准
+  -> 未来技术连续性可生成、可递送、可调控、可保存、可安全执行和可长期读取
   -> 神经与身份连续
   -> 时间窗口延展
   -> 认知与工具增强
@@ -334,6 +342,19 @@ future-waiting
 ```
 
 这组关系处理“等待未来时如何降低自身时间成本和损耗成本”。
+
+```text
+future-technology-continuity
+  -> nanomedicine-targeted-delivery-molecular-repair
+  -> ai-drug-discovery-protein-design
+  -> epigenetic-editing-gene-regulation-therapeutics
+  -> brain-preservation-connectomics-emulation
+  -> post-quantum-cryptography-long-term-data-security
+  -> safety-critical-software-formal-methods
+  -> long-term-digital-preservation-format-migration
+```
+
+这组关系处理“未来技术能否被发现、递送、调控、保存、安全执行并在长周期中保持可读可用”。
 
 ```text
 risk-engineering

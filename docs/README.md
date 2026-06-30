@@ -52,6 +52,7 @@ docs/
 │   ├── 0034-add-thirtieth-wave-quantitative-methodology-domains.md
 │   ├── 0035-add-thirty-first-wave-knowledge-governance-technology-diffusion-domains.md
 │   ├── 0036-add-thirty-second-wave-research-evidence-infrastructure-domains.md
+│   ├── 0037-add-thirty-third-wave-future-technology-continuity-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -247,4 +248,11 @@ docs/
 140. Read `../domains/longitudinal-cohort-retention-followup-infrastructure/README.md` if you are working on longitudinal cohorts, follow-up, retention, attrition, event ascertainment, or life-course data linkage.
 141. Read `../domains/registries-real-world-data-governance/README.md` if you are working on patient registries, disease registries, product registries, real-world data, real-world evidence, or registry data quality.
 142. Read `../domains/scientific-instrumentation-sensor-calibration-maintenance/README.md` if you are working on scientific instrumentation, sensor calibration, drift, maintenance, reference materials, or measurement uncertainty.
-143. Enter a domain under `../domains/`.
+143. Read `../domains/nanomedicine-targeted-delivery-molecular-repair/README.md` if you are working on nanomedicine, targeted delivery, nanoparticles, release control, molecular diagnostics, or future molecular repair claims.
+144. Read `../domains/ai-drug-discovery-protein-design/README.md` if you are working on AI drug discovery, protein design, molecular generation, lead optimization, or predictive medicinal chemistry.
+145. Read `../domains/epigenetic-editing-gene-regulation-therapeutics/README.md` if you are working on epigenetic editing, gene regulation therapeutics, chromatin state, gene silencing, or expression reprogramming.
+146. Read `../domains/brain-preservation-connectomics-emulation/README.md` if you are working on brain preservation, connectomics, whole-brain emulation, neural identity records, or mind-uploading claims.
+147. Read `../domains/post-quantum-cryptography-long-term-data-security/README.md` if you are working on post-quantum cryptography, long-term confidentiality, cryptographic migration, or future decryption risk.
+148. Read `../domains/safety-critical-software-formal-methods/README.md` if you are working on safety-critical software, formal methods, assurance cases, verification, or high-risk system failures.
+149. Read `../domains/long-term-digital-preservation-format-migration/README.md` if you are working on long-term digital preservation, file formats, metadata, fixity, backups, migration, or future readability.
+150. Enter a domain under `../domains/`.

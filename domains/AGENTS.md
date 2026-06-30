@@ -101,6 +101,27 @@ domains/
 ├── scientific-instrumentation-sensor-calibration-maintenance/
 │   ├── AGENTS.md
 │   └── README.md
+├── nanomedicine-targeted-delivery-molecular-repair/
+│   ├── AGENTS.md
+│   └── README.md
+├── ai-drug-discovery-protein-design/
+│   ├── AGENTS.md
+│   └── README.md
+├── epigenetic-editing-gene-regulation-therapeutics/
+│   ├── AGENTS.md
+│   └── README.md
+├── brain-preservation-connectomics-emulation/
+│   ├── AGENTS.md
+│   └── README.md
+├── post-quantum-cryptography-long-term-data-security/
+│   ├── AGENTS.md
+│   └── README.md
+├── safety-critical-software-formal-methods/
+│   ├── AGENTS.md
+│   └── README.md
+├── long-term-digital-preservation-format-migration/
+│   ├── AGENTS.md
+│   └── README.md
 ├── cognitive-augmentation/
 │   ├── AGENTS.md
 │   └── README.md
@@ -658,6 +679,7 @@ domains/
 - `causal-inference-target-trial-emulation/`、`survival-analysis-healthspan-risk-modeling/`、`human-digital-twin-life-course-simulation/`、`implementation-science-adherence-behavior-change/`、`uncertainty-quantification-model-calibration/` 和 `data-quality-missingness-representativeness/` 负责因果识别、寿命/健康寿命风险、生命历程仿真、实施落地、模型校准和数据质量这些定量方法学条件。
 - `privacy-preserving-computation-federated-learning/`、`knowledge-graph-ontology-semantic-interoperability/`、`model-cards-ai-audit-documentation/`、`technology-foresight-horizon-scanning/`、`research-portfolio-prioritization-funding-governance/` 和 `intellectual-property-technology-transfer-access/` 负责隐私保护计算、语义知识组织、模型审计、未来技术信号、研究组合排序和技术转移可及这些知识治理与技术扩散条件。
 - `trustworthy-scientific-communication-peer-review/`、`research-participant-consent-community-engagement/`、`biobanking-biospecimen-quality-chain-of-custody/`、`longitudinal-cohort-retention-followup-infrastructure/`、`registries-real-world-data-governance/` 和 `scientific-instrumentation-sensor-calibration-maintenance/` 负责可信科研传播、研究参与者同意、样本质量保管链、纵向队列随访、真实世界登记和仪器传感器校准这些科研证据基础设施条件。
+- `nanomedicine-targeted-delivery-molecular-repair/`、`ai-drug-discovery-protein-design/`、`epigenetic-editing-gene-regulation-therapeutics/`、`brain-preservation-connectomics-emulation/`、`post-quantum-cryptography-long-term-data-security/`、`safety-critical-software-formal-methods/` 和 `long-term-digital-preservation-format-migration/` 负责未来技术窗口生成、递送、调控、信息保存、长期数字安全、软件可信和外部记忆可读性这些未来技术连续性条件。
 - `access-to-justice-legal-aid/`、`civic-participation-election-access/`、`migration-displacement-humanitarian-continuity/` 和 `digital-inclusion-connectivity/` 负责司法可及、公民参与、迁移流离失所人道连续性和数字连接这些制度参与与公共服务接入条件。
 - `personal-safety-violence-prevention/` 和 `product-safety-recall-systems/` 负责暴力预防、受害者支持、产品缺陷报告、召回和纠正这些公共安全连续性条件。
 - `cellular-reprogramming/` 负责山中因子、部分重编程、化学重编程、AI 因子设计和表观遗传编辑等“细胞状态可重写”谱系，不提供实验协议或人体应用建议。
@@ -665,6 +687,7 @@ domains/
 - `causal-inference-target-trial-emulation/`、`survival-analysis-healthspan-risk-modeling/`、`human-digital-twin-life-course-simulation/`、`implementation-science-adherence-behavior-change/`、`uncertainty-quantification-model-calibration/` 和 `data-quality-missingness-representativeness/` 负责各研究域进入定量预测前的因果、风险、仿真、实施、校准和数据入口门禁，不输出个体死亡日期、临床决策、自动化评分或未经验证的寿命承诺。
 - `privacy-preserving-computation-federated-learning/`、`knowledge-graph-ontology-semantic-interoperability/`、`model-cards-ai-audit-documentation/`、`technology-foresight-horizon-scanning/`、`research-portfolio-prioritization-funding-governance/` 和 `intellectual-property-technology-transfer-access/` 负责研究系统可信、可组合、可审计、可预警、可排序和可扩散的治理边界，不提供隐私攻击、临床编码服务、模型认证、投资建议、资助操控、专利法律意见或商业估值。
 - `trustworthy-scientific-communication-peer-review/`、`research-participant-consent-community-engagement/`、`biobanking-biospecimen-quality-chain-of-custody/`、`longitudinal-cohort-retention-followup-infrastructure/`、`registries-real-world-data-governance/` 和 `scientific-instrumentation-sensor-calibration-maintenance/` 负责科研证据进入模型前的基础设施边界，不提供学术操控、IRB 规避、非法采样、重新识别、真实世界数据越权访问、伪造校准、设备改装、个体诊断或寿命预测。
+- `nanomedicine-targeted-delivery-molecular-repair/`、`ai-drug-discovery-protein-design/`、`epigenetic-editing-gene-regulation-therapeutics/`、`brain-preservation-connectomics-emulation/`、`post-quantum-cryptography-long-term-data-security/`、`safety-critical-software-formal-methods/` 和 `long-term-digital-preservation-format-migration/` 负责远期技术连续性的证据边界，不提供自制纳米材料、双重用途生物设计、表观编辑操作、脑保存操作、密码攻击、安全关键系统规避、档案窃取或数字永生承诺。
 - `regenerative-medicine/`、`cancer-control/` 和 `immune-maintenance/` 负责身体基底维护相关的机制、风险和证据边界。
 - `rehabilitation-functioning/`、`assistive-technology-access/`、`skin-barrier-wound-healing/` 和 `sensory-continuity/` 负责功能恢复、能力补偿、外界屏障和感官反馈连续性。
 - `antimicrobial-resilience/` 负责抗微生物耐药、感染控制和现代医学抗感染底座。

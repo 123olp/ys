@@ -68,6 +68,13 @@ human_infra/
     ├── longitudinal-cohort-retention-followup-infrastructure/ # 纵向队列留存与随访基础设施
     ├── registries-real-world-data-governance/ # 登记系统与真实世界数据治理
     ├── scientific-instrumentation-sensor-calibration-maintenance/ # 科研仪器与传感器校准维护
+    ├── nanomedicine-targeted-delivery-molecular-repair/ # 纳米医学、靶向递送与分子修复
+    ├── ai-drug-discovery-protein-design/ # AI 药物发现与蛋白设计
+    ├── epigenetic-editing-gene-regulation-therapeutics/ # 表观遗传编辑与基因调控疗法
+    ├── brain-preservation-connectomics-emulation/ # 脑保存、连接组与仿真假设
+    ├── post-quantum-cryptography-long-term-data-security/ # 后量子密码与长期数据安全
+    ├── safety-critical-software-formal-methods/ # 安全关键软件与形式化方法
+    ├── long-term-digital-preservation-format-migration/ # 长期数字保存与格式迁移
     ├── cognitive-augmentation/ # 认知增强与工具放大
     ├── digital-identity-security/ # 数字身份安全
     ├── disembodied-cns/   # 去具身外部维持型中枢生命系统
@@ -418,6 +425,13 @@ human_infra/
 - `domains/longitudinal-cohort-retention-followup-infrastructure/` 负责纵向队列、长期随访、参与者留存、失访、事件确认和生命历程数据基础设施。
 - `domains/registries-real-world-data-governance/` 负责患者/疾病/产品登记、真实世界数据、真实世界证据、数据质量和用途边界。
 - `domains/scientific-instrumentation-sensor-calibration-maintenance/` 负责科研仪器、传感器、校准、漂移、维护和测量不确定性。
+- `domains/nanomedicine-targeted-delivery-molecular-repair/` 负责纳米医学、靶向递送、纳米材料、分子诊断和远期分子修复证据边界。
+- `domains/ai-drug-discovery-protein-design/` 负责 AI 药物发现、蛋白设计、结构预测、生成式分子设计和自动化实验闭环。
+- `domains/epigenetic-editing-gene-regulation-therapeutics/` 负责表观遗传编辑、基因表达调控、转录沉默/激活和状态改写疗法边界。
+- `domains/brain-preservation-connectomics-emulation/` 负责脑保存、连接组学、神经结构可读性、全脑仿真和上传假设审查。
+- `domains/post-quantum-cryptography-long-term-data-security/` 负责后量子密码、长期数据安全、加密迁移和未来解密风险。
+- `domains/safety-critical-software-formal-methods/` 负责安全关键软件、形式化方法、验证确认、运行时监控和失效安全。
+- `domains/long-term-digital-preservation-format-migration/` 负责长期数字保存、格式迁移、校验、元数据、备份和可读性治理。
 - `domains/insurance-risk-transfer/` 负责健康、失业、工伤、残障、灾害、存款、养老金等风险转移和风险池。
 - `domains/childcare-family-continuity/` 负责托育可及、托育费用、照护质量、早期儿童发展、父母工作连续性和家庭压力。
 - `domains/emergency-preparedness-response/` 负责灾害准备、预警、应急通信、急救医疗、安置、公共卫生应急和灾后恢复。
@@ -518,3 +532,4 @@ human_infra/
 - 2026-06-30：新增第二十一波 6 个结构性脆弱与连续照护断点域骨架，覆盖农村健康可及、无家可归健康连续性、羁押重返健康连续性、残障独立生活、痴呆认知衰退照护和慢性传染病照护连续性。
 - 2026-06-30：新增第二十二波 6 个危机、剥削与恢复连续性域骨架，覆盖自杀危机响应、物质使用障碍治疗恢复、老年正义成人保护、儿童保护家庭安全、诈骗消费者保护和在线数字伤害预防。
 - 2026-06-30：新增第二十五波 6 个文明连续性、集体安全与宏观制度底座域骨架，覆盖武装冲突平民保护、和平建设冲突预防、政府连续性、电信网络韧性、宏观经济稳定和公共廉洁问责。
+- 2026-06-30：新增第三十三波 7 个未来技术连续性域骨架，覆盖纳米医学靶向递送、AI 药物发现蛋白设计、表观遗传编辑、脑保存连接组仿真、后量子密码、安全关键软件形式化方法和长期数字保存。
