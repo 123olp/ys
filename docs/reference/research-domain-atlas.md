@@ -130,6 +130,12 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 数字关键服务可恢复 | `cybersecurity-resilience-critical-services/` | 网络安全、事件响应、备份恢复、关键服务韧性、数字风险治理 | 医疗、金融、身份、公共服务和 AI 工具被攻击、勒索或中断 |
 | AI 算力底座可用 | `compute-data-center-ai-infrastructure/` | 算力、数据中心、芯片、云、能源、水、网络、接入治理 | AI 和科学模拟能力集中、短缺、中断或被资源约束截断 |
 | 医学发现可监管转化 | `clinical-trials-regulatory-science-translation/` | 临床试验、监管科学、真实世界证据、安全监测、批准路径 | 有前沿发现但人体证据不足、安全遗漏或监管转化失败 |
+| 空间位置层可用 | `geospatial-navigation-location-infrastructure/` | 地理空间数据、地址、地图、GNSS/GPS、地理编码、应急位置、服务可达 | 人、资源、风险和服务不可定位，导致救援、配送、交通、转介和公共服务失败 |
+| 天气气候风险可提前观测 | `weather-climate-observation-forecasting/` | 观测系统、预报模型、气候服务、极端天气、预警提前量、环境风险窗口 | 热、洪水、风暴、干旱、火灾天气或空气风险无法提前进入行动 |
+| 栖居空间可保护生命 | `building-fire-life-safety-codes/` | 建筑规范、消防规范、疏散、烟雾报警、无障碍、结构韧性 | 居住、照护、学习、工作和公共空间成为火灾、烟雾、结构和疏散风险源 |
+| 关键物质系统可制造修复 | `manufacturing-repair-capacity/` | 制造、维修、维护、备件、质量、本地生产、关键设备恢复 | 设备损坏、备件短缺、质量缺陷和生产能力不足导致服务与工具系统失效 |
+| 公共预算可转化为服务 | `public-procurement-contracting-capacity/` | 公共采购、合同、供应商管理、应急采购、透明度、交付验收 | 有预算和政策但采购失败、合同失效、腐败、延误或劣质交付 |
+| 动物-人类-环境界面可治理 | `animal-health-zoonotic-interface-one-health/` | 动物健康、兽医公共卫生、人兽共患病、食品动物、野生动物、One Health | 上游动物疾病、AMR、食品系统和生态界面风险穿透公共卫生屏障 |
 | 高成本风险可分摊 | `insurance-risk-transfer/` | 覆盖率、保费、自付、理赔、拒赔、风险池、保障缺口 | 疾病、失业、工伤、残障、灾害或养老金风险由个体独自承担 |
 | 托育和家庭运行可持续 | `childcare-family-continuity/` | 托育可及、费用、质量、早期发展、父母工作连续性、家庭压力 | 儿童发展受损、照护者工作中断、时间贫困和家庭压力升级 |
 | 应急响应可接住主体 | `emergency-preparedness-response/` | 灾害准备、预警、应急通信、急救医疗、安置、公共卫生应急、恢复 | 低频高冲击事件一次性清零长期积累，通信、医疗、撤离或恢复失败 |
@@ -266,6 +272,12 @@ risk-engineering
   -> cybersecurity-resilience-critical-services
   -> compute-data-center-ai-infrastructure
   -> clinical-trials-regulatory-science-translation
+  -> geospatial-navigation-location-infrastructure
+  -> weather-climate-observation-forecasting
+  -> building-fire-life-safety-codes
+  -> manufacturing-repair-capacity
+  -> public-procurement-contracting-capacity
+  -> animal-health-zoonotic-interface-one-health
   -> insurance-risk-transfer
   -> childcare-family-continuity
   -> emergency-preparedness-response

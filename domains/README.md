@@ -76,6 +76,12 @@
 - `cybersecurity-resilience-critical-services/`：网络安全韧性与关键服务，整理网络防御、事件响应、备份恢复、关键服务连续性和数字风险治理。
 - `compute-data-center-ai-infrastructure/`：算力、数据中心与 AI 基础设施，整理算力、芯片、云服务、能源、水、网络、成本和接入治理。
 - `clinical-trials-regulatory-science-translation/`：临床试验、监管科学与转化，整理试验设计、终点、安全监测、真实世界证据和监管证据路径。
+- `geospatial-navigation-location-infrastructure/`：空间定位、导航与位置基础设施，整理地理空间数据、地址、地图、GNSS/GPS、地理编码和应急位置层。
+- `weather-climate-observation-forecasting/`：天气气候观测与预报，整理观测系统、预报模型、气候服务、极端天气和早期预警风险输入。
+- `building-fire-life-safety-codes/`：建筑消防与生命安全规范，整理建筑规范、消防规范、疏散、烟雾报警、无障碍和韧性改造。
+- `manufacturing-repair-capacity/`：制造与维修能力，整理先进制造、维修、维护、备件、质量、本地生产和关键设备恢复能力。
+- `public-procurement-contracting-capacity/`：公共采购与合同能力，整理公共采购、供应商管理、合同执行、应急采购、透明度和交付验收。
+- `animal-health-zoonotic-interface-one-health/`：动物健康、人兽共患界面与 One Health，整理动物健康、兽医公共卫生、人兽共患病、食品动物和跨部门监测。
 - `insurance-risk-transfer/`：保险与风险转移，整理健康、失业、工伤、残障、灾害、存款、养老金等风险池和保障缺口。
 - `childcare-family-continuity/`：托育与家庭连续性，整理托育可及、费用、质量、早期儿童发展、父母工作连续性和家庭压力。
 - `emergency-preparedness-response/`：应急准备与响应，整理灾害准备、预警、应急通信、急救医疗、安置和恢复。

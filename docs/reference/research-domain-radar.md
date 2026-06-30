@@ -121,6 +121,12 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `cybersecurity-resilience-critical-services/` | 网络安全、事件响应、备份恢复和关键服务韧性决定数字化主体系统是否会被攻击截断 |
 | `compute-data-center-ai-infrastructure/` | 算力、数据中心、芯片、云、能源、水和网络决定 AI、科学模拟和自动化能力是否可用 |
 | `clinical-trials-regulatory-science-translation/` | 临床试验、监管科学、真实世界证据和安全监测决定医学发现能否成为可用干预 |
+| `geospatial-navigation-location-infrastructure/` | 地理空间数据、地址、地图、GNSS/GPS 和地理编码决定人、资源、风险和服务是否可定位可导航 |
+| `weather-climate-observation-forecasting/` | 天气气候观测、预报模型和气候服务决定外部环境风险是否能提前进入行动窗口 |
+| `building-fire-life-safety-codes/` | 建筑与消防生命安全规范决定居住、照护、学习、工作和公共空间是否会成为死亡与失能风险源 |
+| `manufacturing-repair-capacity/` | 制造、维修、维护、备件和质量能力决定关键设备和基础设施损坏后能否恢复 |
+| `public-procurement-contracting-capacity/` | 公共采购、合同和供应商管理决定公共预算、需求和政策目标能否转化为真实服务交付 |
+| `animal-health-zoonotic-interface-one-health/` | 动物健康、人兽共患界面和 One Health 协作决定上游公共卫生、食品系统和 AMR 风险屏障 |
 
 ## 来源信号
 
@@ -220,6 +226,12 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | NIST CSF / CISA Critical Infrastructure / ENISA / OECD Digital Security | 提示网络安全、事件响应、关键基础设施韧性和数字安全治理是数字服务连续性条件 |
 | IEA Data Centres / DOE AI / NIST AI / OECD AI / Semiconductor Industry Association | 提示算力、数据中心、芯片、能源、水、云服务和 AI 基础设施决定 AI 能力可达性 |
 | ClinicalTrials.gov / WHO ICTRP / FDA Regulatory Science / NIH OCR | 提示临床试验、监管科学、真实世界证据、安全监测和批准路径是医学发现进入主体系统的转化通道 |
+| UN-GGIM / USGS National Geospatial Program / GPS.gov / NOAA NGS / OGC | 提示地理空间数据、地址、地图、GNSS/GPS、测地基准和互操作标准是资源可达、应急定位和服务路由底座 |
+| WMO Early Warnings for All / NOAA NWS / NOAA Climate / WMO Global Observing System | 提示天气气候观测、预报模型、气候服务和早期预警输入决定外部风险提前量 |
+| FEMA Building Science / USFA / NIST Fire Research / ICC / NFPA | 提示建筑规范、消防规范、生命安全、疏散、烟雾报警和韧性改造是栖居安全独立域 |
+| NIST MEP / Manufacturing.gov / NIST Advanced Manufacturing / DOE AMMTO | 提示制造、维修、维护、备件、质量和本地生产能力决定关键设备恢复时间 |
+| OECD Public Procurement / World Bank Procurement / MAPS / SAM.gov / USAspending.gov | 提示公共采购、合同执行、供应商管理、透明度和应急采购决定公共能力能否落地 |
+| WHO One Health / WOAH / FAO One Health / CDC One Health / WAHIS | 提示动物健康、人兽共患风险、兽医公共卫生和 One Health 协作是公共卫生上游风险屏障 |
 
 Source links:
 
@@ -535,6 +547,35 @@ Source links:
 - https://www.fda.gov/science-research/science-and-research-special-topics/regulatory-science
 - https://www.fda.gov/science-research/science-and-research-special-topics/real-world-evidence
 - https://ocr.od.nih.gov/
+- https://ggim.un.org/
+- https://www.usgs.gov/programs/national-geospatial-program
+- https://www.gps.gov/
+- https://geodesy.noaa.gov/
+- https://www.ogc.org/
+- https://wmo.int/activities/early-warnings-all
+- https://www.weather.gov/
+- https://www.climate.gov/
+- https://wmo.int/activities/global-observing-system
+- https://www.fema.gov/emergency-managers/risk-management/building-science
+- https://www.usfa.fema.gov/
+- https://www.nist.gov/el/fire-research-division-73300
+- https://www.iccsafe.org/
+- https://www.nfpa.org/
+- https://www.nist.gov/mep
+- https://www.manufacturing.gov/
+- https://www.nist.gov/advanced-manufacturing
+- https://www.energy.gov/eere/ammto/advanced-materials-manufacturing-technologies-office
+- https://www.oecd.org/governance/public-procurement/
+- https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0411
+- https://www.worldbank.org/en/projects-operations/products-and-services/procurement-projects-programs
+- https://www.mapsinitiative.org/
+- https://sam.gov/
+- https://www.usaspending.gov/
+- https://www.who.int/health-topics/one-health
+- https://www.woah.org/
+- https://www.fao.org/one-health/
+- https://www.cdc.gov/one-health/
+- https://wahis.woah.org/
 
 ## 使用规则
 

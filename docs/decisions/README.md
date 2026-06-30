@@ -33,3 +33,4 @@ Current decisions:
 - `0018-add-fourteenth-wave-public-services-emergency-financial-workforce-domains.md`
 - `0019-add-fifteenth-wave-preparedness-literacy-workforce-burden-community-data-domains.md`
 - `0020-add-sixteenth-wave-education-research-standards-cyber-compute-clinical-translation-domains.md`
+- `0021-add-seventeenth-wave-geospatial-weather-building-manufacturing-procurement-one-health-domains.md`

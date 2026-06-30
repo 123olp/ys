@@ -29,6 +29,7 @@ docs/
 │   ├── 0018-add-fourteenth-wave-public-services-emergency-financial-workforce-domains.md
 │   ├── 0019-add-fifteenth-wave-preparedness-literacy-workforce-burden-community-data-domains.md
 │   ├── 0020-add-sixteenth-wave-education-research-standards-cyber-compute-clinical-translation-domains.md
+│   ├── 0021-add-seventeenth-wave-geospatial-weather-building-manufacturing-procurement-one-health-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -107,6 +108,7 @@ docs/
 - `domains/social-determinants-community-vulnerability/`、`domains/public-service-design-accessibility/`、`domains/emergency-alerts-communications/`、`domains/disaster-recovery-relief-continuity/`、`domains/financial-inclusion-payment-systems/` 和 `domains/workforce-employment-services/`：第十四波正式研究域，分别承载社会决定因素、公共服务设计、应急预警通信、灾后恢复、金融支付入口和就业服务。
 - `domains/household-emergency-preparedness-resilience/`、`domains/media-information-literacy-public-libraries/`、`domains/health-workforce-capacity/`、`domains/administrative-burden-procedural-friction/`、`domains/community-health-workers-peer-support/` 和 `domains/civic-data-open-government-transparency/`：第十五波正式研究域，分别承载家庭准备、信息素养与公共图书馆、健康劳动力容量、行政负担、社区中介支持和开放政府透明。
 - `domains/education-access-lifelong-learning/`、`domains/research-infrastructure-open-science-translation/`、`domains/standards-metrology-quality-infrastructure/`、`domains/cybersecurity-resilience-critical-services/`、`domains/compute-data-center-ai-infrastructure/` 和 `domains/clinical-trials-regulatory-science-translation/`：第十六波正式研究域，分别承载教育终身学习、科研开放转化、标准计量质量、网络安全韧性、算力 AI 基础设施和临床监管转化。
+- `domains/geospatial-navigation-location-infrastructure/`、`domains/weather-climate-observation-forecasting/`、`domains/building-fire-life-safety-codes/`、`domains/manufacturing-repair-capacity/`、`domains/public-procurement-contracting-capacity/` 和 `domains/animal-health-zoonotic-interface-one-health/`：第十七波正式研究域，分别承载空间定位导航、天气气候观测预报、建筑消防生命安全、制造维修能力、公共采购合同能力和动物健康 One Health 界面。
 - `reference/research-model-visualization-toolkit.md`：沉淀科研论文阅读、文献脊梁、模型工具、可视化标准和 Human Infra 定量页面实现路线。
 - `reference/source-card-system.md`：定义论文、书籍、工具、案例、标准和数据集进入项目之前的资料卡片制度。
 - `reference/domain-map.md`：定义根项目与子域的边界、迁移切片、主动不做和验证点。

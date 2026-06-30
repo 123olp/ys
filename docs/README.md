@@ -36,6 +36,7 @@ docs/
 │   ├── 0018-add-fourteenth-wave-public-services-emergency-financial-workforce-domains.md
 │   ├── 0019-add-fifteenth-wave-preparedness-literacy-workforce-burden-community-data-domains.md
 │   ├── 0020-add-sixteenth-wave-education-research-standards-cyber-compute-clinical-translation-domains.md
+│   ├── 0021-add-seventeenth-wave-geospatial-weather-building-manufacturing-procurement-one-health-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -135,4 +136,10 @@ docs/
 44. Read `../domains/cybersecurity-resilience-critical-services/README.md` if you are working on cybersecurity, critical-service resilience, incident response, backup recovery, ransomware risk, or digital continuity.
 45. Read `../domains/compute-data-center-ai-infrastructure/README.md` if you are working on compute, data centers, AI infrastructure, chips, energy, water, cloud access, or AI infrastructure governance.
 46. Read `../domains/clinical-trials-regulatory-science-translation/README.md` if you are working on clinical trials, regulatory science, real-world evidence, safety monitoring, endpoints, or medical translation.
-47. Enter a domain under `../domains/`.
+47. Read `../domains/geospatial-navigation-location-infrastructure/README.md` if you are working on geospatial data, maps, addressing, GPS/GNSS, geocoding, emergency location, or location infrastructure.
+48. Read `../domains/weather-climate-observation-forecasting/README.md` if you are working on weather observation, forecasting, climate services, severe weather, or early warning inputs.
+49. Read `../domains/building-fire-life-safety-codes/README.md` if you are working on building codes, fire safety, egress, smoke alarms, life safety, or resilient buildings.
+50. Read `../domains/manufacturing-repair-capacity/README.md` if you are working on manufacturing, repair, maintenance, spare parts, local production, or critical equipment restoration.
+51. Read `../domains/public-procurement-contracting-capacity/README.md` if you are working on public procurement, contracting, supplier management, emergency procurement, transparency, or contract delivery.
+52. Read `../domains/animal-health-zoonotic-interface-one-health/README.md` if you are working on animal health, zoonotic risk, veterinary public health, One Health, livestock, wildlife, or animal-health surveillance.
+53. Enter a domain under `../domains/`.

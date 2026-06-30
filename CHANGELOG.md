@@ -19,6 +19,7 @@ All notable repository structure changes are recorded here.
 - Added fourteenth-wave public-service, emergency, financial, and workforce domain skeletons for social determinants/community vulnerability, public service design/accessibility, emergency alerts/communications, disaster recovery/relief continuity, financial inclusion/payment systems, and workforce/employment services.
 - Added fifteenth-wave preparedness, literacy, workforce, burden, community, and open-data domain skeletons for household emergency preparedness/resilience, media information literacy/public libraries, health workforce capacity, administrative burden/procedural friction, community health workers/peer support, and civic data/open government transparency.
 - Added sixteenth-wave education, research, standards, cybersecurity, compute, and clinical-translation domain skeletons for education access/lifelong learning, research infrastructure/open science translation, standards/metrology quality infrastructure, cybersecurity resilience/critical services, compute/data-center AI infrastructure, and clinical trials/regulatory science translation.
+- Added seventeenth-wave geospatial, weather, building/fire, manufacturing/repair, procurement, and One Health domain skeletons for geospatial navigation/location infrastructure, weather/climate observation forecasting, building/fire life-safety codes, manufacturing/repair capacity, public procurement/contracting capacity, and animal-health zoonotic-interface One Health.
 
 ## 2026-06-29
 
