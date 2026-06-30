@@ -256,6 +256,12 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `financial-fiduciary-power-of-attorney-continuity/` | 财务受托和授权代理决定主体失能时账单、资产、保险和照护费用是否连续且不被滥用 |
 | `representative-payee-benefits-management-continuity/` | 代表收款人和福利代管决定公共收入在能力下降时是否继续服务主体基本生活 |
 | `trust-estate-affairs-succession-continuity/` | 事务、信托、遗产与继承连续性决定失能或死亡边界附近资源、资料和长期项目是否可交接 |
+| `credit-consumer-reporting-access-continuity/` | 信用与消费者报告决定金融、住房、就业和保险入口是否会被错误记录、身份混淆或不可纠错报告截断 |
+| `tenant-screening-rental-access-continuity/` | 租房筛查决定主体能否进入稳定住房，避免筛查报告、驱逐记录、租金历史和平台评分把住房入口黑箱化 |
+| `background-check-record-screening-continuity/` | 背景记录筛查决定工作、住房、照护、教育和服务入口是否受身份匹配、记录准确性和不利行动边界约束 |
+| `employment-algorithmic-hiring-screening-continuity/` | 算法招聘筛查决定自动简历筛选、测评、视频面试和 job matching 是否把就业入口转成不可解释排除 |
+| `insurance-underwriting-algorithmic-risk-scoring-continuity/` | 保险承保算法评分决定风险池入口是否被外部数据、风险模型、费率和索赔自动化错误截断 |
+| `public-benefits-eligibility-automated-decision-continuity/` | 公共福利资格自动化判定决定食物、医疗、住房、能源和现金缓冲是否因数据匹配、续期或自动终止而断线 |
 
 ## 来源信号
 
@@ -478,6 +484,11 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | NCI CAR-T / FDA CAR-T safety communication / ISSCR Guidelines | 提示工程细胞疗法已经是活体治疗平台，同时存在细胞扩增、脱靶、长期恶性风险和制造质量边界 |
 | NIH NCATS Tissue Chip / FDA Alternative Methods / FDA ISTAND | 提示类器官、组织芯片和新方法学可降低人体试错成本，但需要模型相关性、验证和监管可接受性审查 |
 | FDA Xenotransplantation / HRSA Organ Donation / OPTN data / NIH NIAID transplantation | 提示器官失败、供给缺口、异种移植、工程器官、排斥、感染和长期监测需要独立器官替换平台域 |
+| CFPB consumer reporting / credit report resources | 提示信用报告、消费者报告、specialty reporting agencies、错误更正和准入影响是金融、住房、就业和保险入口的前置判定层 |
+| FTC tenant screening and background check resources | 提示租房筛查、背景调查、consumer reports、不利行动和记录准确性需要独立准入筛查域 |
+| EEOC AI and algorithmic fairness resources | 提示 AI 招聘、算法筛选、就业测评和 adverse impact 需要独立就业筛查连续性域 |
+| NAIC insurance AI governance resources | 提示保险承保、风险评分、外部数据、AI 模型治理和消费者保护需要独立保险算法评分域 |
+| Benefits.gov / CMS eligibility resources | 提示公共福利资格、自动化 eligibility、数据匹配、续期、终止和人工复核会影响基本生活缓冲连续性 |
 
 Source links:
 
@@ -1129,6 +1140,18 @@ Source links:
 - https://www.ssa.gov/payee/
 - https://www.ssa.gov/payee/advance_designation.htm
 - https://www.va.gov/family-member-benefits/fiduciary-program/
+- https://www.consumerfinance.gov/consumer-tools/credit-reports-and-scores/
+- https://www.consumerfinance.gov/consumer-tools/consumer-reporting-companies/
+- https://www.ftc.gov/business-guidance/resources/using-consumer-reports-what-landlords-need-know
+- https://consumer.ftc.gov/articles/tenant-background-checks-and-your-rights
+- https://www.ftc.gov/business-guidance/resources/background-checks-what-employers-need-know
+- https://www.eeoc.gov/ai
+- https://www.eeoc.gov/laws/guidance/select-issues-assessing-adverse-impact-software-algorithms-and-artificial
+- https://content.naic.org/insurance-topics/artificial-intelligence
+- https://content.naic.org/sites/default/files/cmte-h-big-data-ai-exposure-adopted-model-bulletin.pdf
+- https://www.benefits.gov/
+- https://www.medicaid.gov/medicaid/eligibility/index.html
+- https://www.medicaid.gov/medicaid/enrollment-strategies/index.html
 
 ## 使用规则
 

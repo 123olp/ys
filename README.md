@@ -460,6 +460,12 @@ flowchart TD
     H --> FFPOA[financial-fiduciary-power-of-attorney-continuity<br/>财务受托 / 授权代理]
     H --> RPBMC[representative-payee-benefits-management-continuity<br/>代表收款人 / 福利代管]
     H --> TEASC[trust-estate-affairs-succession-continuity<br/>事务继承 / 资料交接]
+    H --> CCRA[credit-consumer-reporting-access-continuity<br/>信用报告 / 消费者报告]
+    H --> TSRAC[tenant-screening-rental-access-continuity<br/>租房筛查 / 租赁准入]
+    H --> BCRSC[background-check-record-screening-continuity<br/>背景调查 / 记录筛查]
+    H --> EAHSC[employment-algorithmic-hiring-screening-continuity<br/>算法招聘 / 就业筛查]
+    H --> IUARSC[insurance-underwriting-algorithmic-risk-scoring-continuity<br/>保险承保 / 算法评分]
+    H --> PBADC[public-benefits-eligibility-automated-decision-continuity<br/>福利资格 / 自动化判定]
     H --> MF[measurement-feedback<br/>测量 / 预测 / 反馈]
     H --> C[disembodied-cns<br/>去具身中枢生命系统]
     H --> M[memory-editing<br/>记忆编辑与人格连续性]
@@ -592,6 +598,12 @@ flowchart TD
 | [Financial Fiduciary Power Of Attorney Continuity](domains/financial-fiduciary-power-of-attorney-continuity/README.md) | 财务授权代理、fiduciary duty、账单、资产管理、记录和防剥削 | 把资源代办能力与受托责任作为失能窗口中住房、保险、照护和支付连续性条件 | 不提供 POA 表格、法律、税务、投资、银行、债务、保险、理财或家庭纠纷建议 |
 | [Representative Payee Benefits Management Continuity](domains/representative-payee-benefits-management-continuity/README.md) | SSA representative payee、VA fiduciary、福利代管、报告义务和监督 | 把公共收入在能力下降时继续用于主体住房、食物、医疗和照护作为连续性条件 | 不提供福利申请、资格判断、支付金额、代理申请、账户设置、支出合规或申诉建议 |
 | [Trust Estate Affairs Succession Continuity](domains/trust-estate-affairs-succession-continuity/README.md) | 事务整理、受益人、trustee、executor、账户清单、文件和项目交接 | 把失能或死亡边界附近的资源、资料、责任和长期项目接续作为主体外延连续性条件 | 不提供遗嘱、信托、税务、继承、受益人、保险、资产分配、账户转移或法律建议 |
+| [Credit Consumer Reporting Access Continuity](domains/credit-consumer-reporting-access-continuity/README.md) | 信用报告、消费者报告、specialty reports、争议更正、身份错误和准入影响 | 把报告准确性和纠错机制作为金融、住房、就业、保险入口的前置基础设施 | 不提供信用修复、贷款、债务、租房、就业、保险、法律或个案争议建议 |
+| [Tenant Screening Rental Access Continuity](domains/tenant-screening-rental-access-continuity/README.md) | 租客筛查报告、驱逐记录、租金历史、犯罪记录、收入验证和租赁平台评分 | 把住房准入筛查作为睡眠、恢复、照护、工作和服务入口的判定层 | 不提供租房申请、驱逐记录处理、法律、房东谈判、补贴、背景报告争议或歧视投诉建议 |
+| [Background Check Record Screening Continuity](domains/background-check-record-screening-continuity/README.md) | 背景调查、犯罪记录、身份核验、教育/执照记录、制裁名单和记录准确性 | 把记录筛查作为工作、住房、照护、教育和公共服务入口的可纠错准入层 | 不提供背景调查规避、记录清除、法律、就业、租房、执照、教育或个案申诉建议 |
+| [Employment Algorithmic Hiring Screening Continuity](domains/employment-algorithmic-hiring-screening-continuity/README.md) | AI 招聘、自动简历筛选、测评、视频面试评分、job matching 和自动就业决策 | 把算法招聘作为收入、保险、学习机会和社会参与的入口治理问题 | 不提供求职优化、简历规避、面试作弊、背景调查规避、劳动争议或法律建议 |
+| [Insurance Underwriting Algorithmic Risk Scoring Continuity](domains/insurance-underwriting-algorithmic-risk-scoring-continuity/README.md) | 保险承保、风险评分、费率、索赔自动化、外部数据和 AI 模型治理 | 把风险转移入口作为疾病、事故、灾害和失能冲击能否被风险池接住的条件 | 不提供保险购买、理赔、承保、保费、投资、法律、投诉、核保规避或个案申诉建议 |
+| [Public Benefits Eligibility Automated Decision Continuity](domains/public-benefits-eligibility-automated-decision-continuity/README.md) | 公共福利资格系统、自动化 eligibility、数据匹配、续期、终止、申诉和人工复核 | 把福利资格判定作为食物、医疗、住房、能源和现金缓冲是否持续的基础设施 | 不提供福利申请、资格判断、收入计算、申诉策略、文件准备、法律、移民或税务建议 |
 | [Regenerative Medicine](domains/regenerative-medicine/README.md) | 干细胞、组织工程、器官再生、类器官、移植 | 器官/组织修复框架、功能终点和整合风险 | 不提供手术、细胞制备、移植或人体实验步骤 |
 | [Rehabilitation And Functioning](domains/rehabilitation-functioning/README.md) | 康复、功能恢复、失能预防、活动能力、自理和社会参与 | 功能状态、活动能力、参与能力和失能风险模型 | 不提供个人康复处方、训练计划、诊断或治疗建议 |
 | [Cancer Control](domains/cancer-control/README.md) | 癌症预防、早筛、治疗、复发、肿瘤演化 | 癌症风险函数、证据层级和长期控制变量 | 不提供诊断、治疗方案、处方、剂量或个体用药建议 |
@@ -1075,5 +1087,6 @@ flowchart LR
 - 2026-06-30：新增第三十六波 6 个行星、地球物理与极端热风险连续性域，覆盖空间天气、行星防御、火山灰、地震、海啸和极端高温。
 - 2026-06-30：新增第三十七波 6 个慢性环境暴露与日常损耗条件域，覆盖噪声、光照节律、铅与重金属、氡与石棉、霉菌潮湿和病媒传播风险。
 - 2026-06-30：新增第三十八波 6 个决策权、代理权与受托连续性域，覆盖预先医疗照护计划、支持性决策、医疗个人代表、财务受托、代表收款人和事务继承。
+- 2026-06-30：新增第三十九波 6 个算法化准入、筛查与资格连续性域，覆盖信用与消费者报告、租房筛查、背景记录筛查、算法招聘、保险算法评分和公共福利自动资格系统。
 
 完整记录见 [CHANGELOG.md](CHANGELOG.md)。

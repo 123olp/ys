@@ -721,6 +721,24 @@ Human Infra 不能被设计成更精密的压榨系统。
 - 不替代医生、律师、法院、HHS OCR、SSA、VA、CFPB、金融机构、税务专业人员、保护服务、医院伦理委员会、患者代表或当地监管机构。
 - 不帮助规避同意、隐私、监管、法院、福利、平台、银行、遗产、报告、监督或保护性服务要求。
 
+## 算法化准入、筛查与资格连续性边界
+
+`credit-consumer-reporting-access-continuity`、`tenant-screening-rental-access-continuity`、`background-check-record-screening-continuity`、`employment-algorithmic-hiring-screening-continuity`、`insurance-underwriting-algorithmic-risk-scoring-continuity` 和 `public-benefits-eligibility-automated-decision-continuity` 关注主体进入金融、住房、工作、保险和福利系统之前，报告、筛查、评分、记录匹配和自动化资格判定如何改变准入概率、纠错机会和未来选择权，不是个人信用、租房、求职、保险、福利、法律或申诉操作入口。
+
+可以做：
+
+- 整理 CFPB、FTC、EEOC、NAIC、Benefits.gov、CMS、NIST 等公开来源、制度定义、数据来源、错误模式、通知/不利行动、争议/更正、人工复核和模型治理边界。
+- 比较信用报告、租房筛查、背景调查、算法招聘、保险评分和福利 eligibility 系统如何通过准入、排除、延误、自动终止、错误更正和申诉摩擦影响主体持续性。
+- 记录数据血缘、身份匹配、偏差、可解释性、反歧视、记录准确性、申诉/复核路径、监管责任、证据等级和禁止用途。
+- 将官方手册、公开报告、模型卡、监管公告、投诉统计和 AI 输出作为研究信号或资料索引，不写成个案行动、资格判断或策略建议。
+
+不能做：
+
+- 不提供信用修复、贷款、债务、租房申请、房东谈判、背景调查规避、记录清除、求职优化、简历规避、面试作弊、保险购买、理赔、福利申请、申诉策略、资格判断、法律、税务、投资或个案行动建议。
+- 不判断某人是否会被批准、拒绝、承保、录用、租给、终止福利、获得补贴、赢得申诉或适合使用某个机构、平台、保险产品、雇主、房东或福利项目。
+- 不替代 CFPB、FTC、EEOC、NAIC、Benefits.gov、CMS、HUD、劳动/保险/福利监管机构、律师、信用报告机构、雇主、房东、保险公司、公共福利机构或当地申诉渠道。
+- 不帮助规避筛查、伪造记录、绕过身份验证、操纵模型、隐瞒必要信息、攻击平台、骚扰机构人员、制造歧视性画像或规避监管。
+
 ## 数据与证据边界
 
 - 原始数据、清洗数据和人工判断必须分层保存。

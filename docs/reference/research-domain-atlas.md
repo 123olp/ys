@@ -16,6 +16,7 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
   -> 行星、地球物理与极端热风险必须可被观测、预警、缓解和恢复
   -> 慢性环境暴露必须被识别、降低并纳入恢复成本
   -> 失能或不能表达时，意愿、权限、资源和责任必须可连续
+  -> 进入金融、住房、工作、保险和福利系统前，准入判定必须可观察、可纠错、可申诉
   -> 工具和认知系统必须放大主体而不是吞噬主体
   -> 数字身份、AI 代理、供应链、生物安全和极端栖居等外部技术底座必须可控
   -> 治理和权利必须保护同意、退出和身份
@@ -167,6 +168,12 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 财务任务必须可被受托代办且防剥削 | `financial-fiduciary-power-of-attorney-continuity/` | financial power of attorney、fiduciary duty、账单、资产、记录 | 失能后住房、保险、照护和支付可能断线，或被代理人滥用资源 |
 | 公共福利收入必须在能力下降时仍服务主体 | `representative-payee-benefits-management-continuity/` | representative payee、VA fiduciary、福利代管、报告和监督 | 底线收入可能被挪用、浪费、断供或无法转化为住房、食物和医疗 |
 | 事务和长期项目必须在失能/死亡边界可交接 | `trust-estate-affairs-succession-continuity/` | 事务整理、受益人、trustee、executor、账户文件、项目交接 | 资源、资料、责任和项目被冻结、丢失、争议化或无法继续服务主体意图 |
+| 信用与消费者报告必须可纠错 | `credit-consumer-reporting-access-continuity/` | 信用报告、消费者报告、specialty reports、身份错误、争议更正 | 错误报告把过去或他人记录转成金融、住房、就业和保险入口的错误排除 |
+| 租房筛查必须不把住房入口黑箱化 | `tenant-screening-rental-access-continuity/` | 租客报告、驱逐记录、租金历史、收入验证、租赁平台筛查 | 主体因记录错误、模型误判或不可解释筛查失去住房、睡眠、恢复和工作底座 |
+| 背景记录筛查必须可解释且可更正 | `background-check-record-screening-continuity/` | 犯罪记录、身份匹配、教育/执照核验、不利行动、记录准确性 | 错误匹配、陈旧记录或不可纠错记录把主体排除在工作、住房、照护和教育之外 |
+| 算法招聘必须不切断就业入口 | `employment-algorithmic-hiring-screening-continuity/` | 自动简历筛选、就业测评、视频面试评分、job matching、合理便利 | 自动筛选把能力、收入、保险、学习机会和社会参与入口错误关闭 |
+| 保险算法评分必须可治理 | `insurance-underwriting-algorithmic-risk-scoring-continuity/` | 承保、风险评分、外部数据、费率、索赔自动化、模型治理 | 风险池入口因不可解释评分、外部数据错误或自动化拒赔而失效 |
+| 福利资格自动判定必须保留人工复核 | `public-benefits-eligibility-automated-decision-continuity/` | eligibility、数据匹配、续期、终止、申诉、人工复核 | 自动终止、错配、证明负担或无法复核让食物、医疗、住房、能源和现金缓冲断线 |
 | 栖居空间可保护生命 | `building-fire-life-safety-codes/` | 建筑规范、消防规范、疏散、烟雾报警、无障碍、结构韧性 | 居住、照护、学习、工作和公共空间成为火灾、烟雾、结构和疏散风险源 |
 | 关键物质系统可制造修复 | `manufacturing-repair-capacity/` | 制造、维修、维护、备件、质量、本地生产、关键设备恢复 | 设备损坏、备件短缺、质量缺陷和生产能力不足导致服务与工具系统失效 |
 | 公共预算可转化为服务 | `public-procurement-contracting-capacity/` | 公共采购、合同、供应商管理、应急采购、透明度、交付验收 | 有预算和政策但采购失败、合同失效、腐败、延误或劣质交付 |
@@ -430,6 +437,12 @@ risk-engineering
   -> migration-displacement-humanitarian-continuity
   -> digital-inclusion-connectivity
   -> social-protection-benefits-delivery
+  -> credit-consumer-reporting-access-continuity
+  -> tenant-screening-rental-access-continuity
+  -> background-check-record-screening-continuity
+  -> employment-algorithmic-hiring-screening-continuity
+  -> insurance-underwriting-algorithmic-risk-scoring-continuity
+  -> public-benefits-eligibility-automated-decision-continuity
   -> community-resource-navigation
   -> social-determinants-community-vulnerability
   -> public-service-design-accessibility

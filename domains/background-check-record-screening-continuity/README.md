@@ -1,0 +1,37 @@
+# Background Check Record Screening Continuity
+
+Background Check Record Screening Continuity 关注背景调查、犯罪记录、身份核验、教育/执照记录、制裁名单和记录准确性如何影响主体进入工作、志愿、住房、照护、教育和公共服务。
+
+## 对象
+
+- Background checks、criminal records、identity matching、education/license verification、registry checks 和 adverse action。
+- 错误匹配、旧记录、缺失上下文、跨州记录、身份盗用、封存/清除记录和更正。
+- 就业、租房、照护岗位、志愿服务、教育项目、金融服务和敏感岗位准入。
+
+## Human Infra 价值
+
+```text
+主体持续性需要记录筛查不把过去或错误身份变成永久排除
+-> 背景检查把分散记录合并成当前准入判断
+-> 错误匹配、过期记录或缺失上下文会切断工作、住房、照护和服务入口
+-> 准确性、通知、解释、争议和更正机制降低错误排除和永久惩罚
+-> 主体更可能在风险治理和未来机会之间保留可修复路径
+```
+
+## 边界
+
+- 本域不提供背景调查规避、记录清除、法律、就业、租房、执照、教育、移民或个案申诉建议。
+- 不判断某记录是否应报告、某机构是否合规或某人是否适合某岗位。
+- 不替代 FTC、EEOC、法院、执法机构、雇主、学校、许可机构、律师或监管机构。
+- 只整理公开资料、记录类型、准确性风险、授权边界、争议流程和禁止用途。
+
+## 上游与下游
+
+- 上游：`legal-identity-civil-registration/`、`access-to-justice-legal-aid/`、`correctional-health-reentry-continuity/`、`credit-consumer-reporting-access-continuity/`。
+- 下游：`employment-algorithmic-hiring-screening-continuity/`、`tenant-screening-rental-access-continuity/`、`disability-services-independent-living/`。
+
+## 初始资料线索
+
+- FTC background check and consumer report guidance.
+- EEOC arrest and conviction records / employment guidance.
+- State court public education on records, sealing and expungement boundaries.

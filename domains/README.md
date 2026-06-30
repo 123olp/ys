@@ -237,6 +237,12 @@
 - `financial-fiduciary-power-of-attorney-continuity/`：财务受托与授权代理连续性，整理财务授权、受托责任、账单资产管理和防剥削机制。
 - `representative-payee-benefits-management-continuity/`：代表收款人与福利代管连续性，整理 SSA/VA 等福利代收代管、报告义务、监督和主体保护。
 - `trust-estate-affairs-succession-continuity/`：事务、信托、遗产与继承连续性，整理失能或死亡边界附近的文件、账户、角色和项目交接。
+- `credit-consumer-reporting-access-continuity/`：信用与消费者报告准入连续性，整理信用报告、消费者报告、specialty reports、错误更正和准入影响。
+- `tenant-screening-rental-access-continuity/`：租房筛查与租赁准入连续性，整理租客报告、驱逐记录、租金历史、收入验证和住房筛查错误风险。
+- `background-check-record-screening-continuity/`：背景调查与记录筛查连续性，整理犯罪记录、身份匹配、教育/执照核验、记录准确性和不利行动边界。
+- `employment-algorithmic-hiring-screening-continuity/`：算法招聘与就业筛查连续性，整理 AI 招聘、自动简历筛选、测评、视频面试、合理便利和反歧视边界。
+- `insurance-underwriting-algorithmic-risk-scoring-continuity/`：保险承保算法评分连续性，整理风险评分、外部数据、承保、费率、索赔自动化和模型治理。
+- `public-benefits-eligibility-automated-decision-continuity/`：公共福利资格自动化判定连续性，整理福利 eligibility、数据匹配、续期、终止、申诉和人工复核。
 - `supply-chain-continuity/`：供应链连续性，整理关键物资、服务、物流、替代路径和恢复时间。
 - `synthetic-biology-biosecurity/`：合成生物学与生物安全，整理双重用途、生物安全、生物安保和治理边界。
 - `space-extreme-habitation/`：空间与极端栖居，整理辐射、微重力、隔离、闭环资源和远程医疗风险。

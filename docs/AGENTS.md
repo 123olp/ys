@@ -51,6 +51,7 @@ docs/
 │   ├── 0040-add-thirty-sixth-wave-planetary-geophysical-heat-risk-domains.md
 │   ├── 0041-add-thirty-seventh-wave-chronic-environmental-exposure-domains.md
 │   ├── 0042-add-thirty-eighth-wave-decision-authority-fiduciary-continuity-domains.md
+│   ├── 0043-add-thirty-ninth-wave-algorithmic-access-screening-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -151,6 +152,7 @@ docs/
 - `domains/space-weather-geomagnetic-storm-resilience/`、`domains/planetary-defense-near-earth-object-risk/`、`domains/volcanic-ashfall-geohazard-continuity/`、`domains/earthquake-seismic-risk-built-environment-continuity/`、`domains/tsunami-warning-coastal-evacuation-continuity/` 和 `domains/extreme-heat-cooling-public-health-continuity/`：第三十六波正式研究域，分别承载空间天气地磁暴、行星防御近地天体、火山灰地质灾害、地震建成环境、海啸预警沿海撤离和极端高温制冷公共卫生连续性。
 - `domains/noise-exposure-acoustic-environment-continuity/`、`domains/light-exposure-circadian-environment-continuity/`、`domains/lead-heavy-metal-exposure-control/`、`domains/radon-asbestos-indoor-hazard-continuity/`、`domains/mold-dampness-indoor-biological-exposure/` 和 `domains/vector-borne-disease-environmental-control/`：第三十七波正式研究域，分别承载噪声声环境、光照昼夜节律、铅与重金属暴露、氡与石棉室内危害、霉菌潮湿室内生物暴露和病媒传播环境控制。
 - `domains/advance-care-planning-medical-decision-continuity/`、`domains/supported-decision-making-guardianship-rights/`、`domains/healthcare-personal-representative-hipaa-access-continuity/`、`domains/financial-fiduciary-power-of-attorney-continuity/`、`domains/representative-payee-benefits-management-continuity/` 和 `domains/trust-estate-affairs-succession-continuity/`：第三十八波正式研究域，分别承载预先医疗照护计划、支持性决策监护权利、医疗个人代表 HIPAA 访问、财务受托授权代理、代表收款人福利代管和事务信托遗产继承连续性。
+- `domains/credit-consumer-reporting-access-continuity/`、`domains/tenant-screening-rental-access-continuity/`、`domains/background-check-record-screening-continuity/`、`domains/employment-algorithmic-hiring-screening-continuity/`、`domains/insurance-underwriting-algorithmic-risk-scoring-continuity/` 和 `domains/public-benefits-eligibility-automated-decision-continuity/`：第三十九波正式研究域，分别承载信用与消费者报告、租房筛查、背景记录筛查、算法招聘、保险算法评分和公共福利自动资格系统。
 - `reference/research-model-visualization-toolkit.md`：沉淀科研论文阅读、文献脊梁、模型工具、可视化标准和 Human Infra 定量页面实现路线。
 - `reference/source-card-system.md`：定义论文、书籍、工具、案例、标准和数据集进入项目之前的资料卡片制度。
 - `reference/domain-map.md`：定义根项目与子域的边界、迁移切片、主动不做和验证点。

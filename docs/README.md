@@ -58,6 +58,7 @@ docs/
 │   ├── 0040-add-thirty-sixth-wave-planetary-geophysical-heat-risk-domains.md
 │   ├── 0041-add-thirty-seventh-wave-chronic-environmental-exposure-domains.md
 │   ├── 0042-add-thirty-eighth-wave-decision-authority-fiduciary-continuity-domains.md
+│   ├── 0043-add-thirty-ninth-wave-algorithmic-access-screening-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -292,4 +293,10 @@ docs/
 179. Read `../domains/financial-fiduciary-power-of-attorney-continuity/README.md` if you are working on financial power of attorney, fiduciary duty, bill payment, asset management, incapacity finance, or elder financial exploitation prevention.
 180. Read `../domains/representative-payee-benefits-management-continuity/README.md` if you are working on representative payees, VA fiduciaries, benefits management, public income continuity, payee oversight, or protected benefit use.
 181. Read `../domains/trust-estate-affairs-succession-continuity/README.md` if you are working on getting affairs in order, trustees, executors, estate affairs, beneficiary records, succession, or long-term project handoff.
-182. Enter a domain under `../domains/`.
+182. Read `../domains/credit-consumer-reporting-access-continuity/README.md` if you are working on credit reports, consumer reports, specialty reporting agencies, report disputes, identity errors, or access impacts.
+183. Read `../domains/tenant-screening-rental-access-continuity/README.md` if you are working on tenant screening, rental applications, eviction records, rental history, housing access, or rental-platform screening.
+184. Read `../domains/background-check-record-screening-continuity/README.md` if you are working on background checks, criminal records, identity matching, license/education verification, adverse action, or record correction.
+185. Read `../domains/employment-algorithmic-hiring-screening-continuity/README.md` if you are working on AI hiring, algorithmic resume screening, employment tests, video interview scoring, job matching, or employment decision systems.
+186. Read `../domains/insurance-underwriting-algorithmic-risk-scoring-continuity/README.md` if you are working on insurance underwriting, algorithmic risk scoring, premium rating, claims automation, external data, or insurance AI governance.
+187. Read `../domains/public-benefits-eligibility-automated-decision-continuity/README.md` if you are working on public benefits eligibility, automated eligibility screening, data matching, renewals, terminations, appeals, or human review.
+188. Enter a domain under `../domains/`.
