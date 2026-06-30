@@ -433,6 +433,15 @@ human_infra/
     ├── sleep-circadian-recovery/ # 睡眠、节律与恢复
     ├── skin-barrier-wound-healing/ # 皮肤屏障与伤口愈合
     ├── social-connection-relational-infra/ # 社会连接与关系基础设施
+    ├── loneliness-social-isolation-risk-continuity/ # 孤独与社会隔离风险连续性
+    ├── social-prescribing-community-referral-continuity/ # 社会处方与社区转介连续性
+    ├── mutual-aid-neighbor-support-network-continuity/ # 互助与邻里支持网络连续性
+    ├── volunteering-civic-service-participation-continuity/ # 志愿服务与公民参与连续性
+    ├── community-mediation-neighbor-conflict-resolution-continuity/ # 社区调解与邻里冲突解决连续性
+    ├── restorative-justice-repair-accountability-continuity/ # 修复性司法与责任修复连续性
+    ├── reputation-defamation-public-trust-repair-continuity/ # 声誉诽谤与公共信任修复连续性
+    ├── references-vouching-recommendation-social-capital-continuity/ # 推荐背书与社会资本连续性
+    ├── third-place-belonging-social-participation-continuity/ # 第三空间、归属与社会参与连续性
     ├── space-extreme-habitation/ # 空间与极端栖居
     ├── stem-cell-reserve-renewal/ # 干细胞储备与组织更新
     ├── substance-exposure-control/ # 物质暴露控制
@@ -675,6 +684,7 @@ human_infra/
 - `domains/patient-portal-account-message-continuity/`、`domains/medical-record-access-amendment-release-continuity/`、`domains/clinical-results-notification-followup-continuity/`、`domains/informed-consent-refusal-shared-decision-continuity/`、`domains/healthcare-language-interpreter-effective-communication-continuity/`、`domains/healthcare-disability-accommodation-accessibility-continuity/`、`domains/patient-grievance-complaint-ombuds-continuity/` 和 `domains/healthcare-civil-rights-nondiscrimination-continuity/` 负责患者门户/医疗消息、病历访问修正释放、临床结果通知随访、知情同意/拒绝/共同决策、医疗语言服务、医疗残障便利、患者投诉/ombuds 和医疗民权反歧视这些患者权利与临床沟通连续性条件。
 - `domains/emergency-contact-next-of-kin-notification-continuity/`、`domains/personal-health-record-emergency-summary-continuity/`、`domains/medical-id-allergy-critical-alert-continuity/`、`domains/medication-list-implant-device-emergency-continuity/`、`domains/chronic-condition-emergency-action-plan-continuity/`、`domains/immunization-record-proof-continuity/`、`domains/organ-donor-registry-anatomical-gift-continuity/` 和 `domains/access-functional-needs-emergency-registry-continuity/` 负责主体无法表达、急救、灾害和死亡边界中的紧急联系人、急救健康摘要、医疗 ID/关键警报、药物/植入设备、慢病行动计划、免疫记录、器官捐赠登记和功能需求登记连续性条件。
 - `domains/death-certificate-registration-cause-of-death-record-continuity/`、`domains/funeral-cremation-burial-disposition-continuity/`、`domains/cemetery-memorial-remains-location-continuity/`、`domains/bereavement-leave-grief-support-continuity/`、`domains/survivor-benefits-death-notification-continuity/`、`domains/life-insurance-beneficiary-claim-continuity/`、`domains/estate-inventory-asset-liability-handoff-continuity/` 和 `domains/post-death-account-closure-service-cancellation-continuity/` 负责死亡边界后的死亡证明/死因记录、遗体处置、墓地纪念、遗属恢复、遗属福利、寿险理赔、遗产清单和账户关闭服务取消连续性条件。
+- `domains/loneliness-social-isolation-risk-continuity/`、`domains/social-prescribing-community-referral-continuity/`、`domains/mutual-aid-neighbor-support-network-continuity/`、`domains/volunteering-civic-service-participation-continuity/`、`domains/community-mediation-neighbor-conflict-resolution-continuity/`、`domains/restorative-justice-repair-accountability-continuity/`、`domains/reputation-defamation-public-trust-repair-continuity/`、`domains/references-vouching-recommendation-social-capital-continuity/` 和 `domains/third-place-belonging-social-participation-continuity/` 负责关系执行与社会资本连续性，覆盖孤独隔离风险、社会处方转介、互助邻里、志愿服务、社区调解、修复性司法、声誉信任修复、推荐背书和第三空间归属参与。
 - `domains/disembodied-cns/` 负责去具身外部维持型中枢生命系统的高层架构建模，不提供实验操作协议。
 - `domains/memory-editing/` 负责记忆编辑的概念、证据、验证和伦理边界，不提供可执行神经操控步骤。
 - `domains/biostasis-cryopreservation/` 负责冷冻保存、生物停滞、休眠和等待未来修复路径。
@@ -787,3 +797,4 @@ human_infra/
 - 2026-06-30：新增第三十三波 7 个未来技术连续性域骨架，覆盖纳米医学靶向递送、AI 药物发现蛋白设计、表观遗传编辑、脑保存连接组仿真、后量子密码、安全关键软件形式化方法和长期数字保存。
 - 2026-06-30：新增第三十四波 7 个急性神经连续性与意识韧性域骨架，覆盖卒中脑灌注韧性、TBI 神经创伤恢复、谵妄急性认知失败预防、意识障碍昏迷恢复、癫痫发作网络稳定、自主神经稳态和偏头痛有效时间负担。
 - 2026-06-30：新增第六十波死亡后与遗属连续性研究域，覆盖死亡证明/死因记录、遗体处置、墓地纪念、丧亲恢复、遗属福利、寿险理赔、遗产清单和死亡后账户关闭。
+- 2026-07-01：新增第六十一波关系执行与社会资本连续性研究域，覆盖孤独隔离风险、社会处方社区转介、互助邻里支持、志愿服务公民参与、社区调解、修复性司法、声誉信任修复、推荐背书和第三空间归属参与。

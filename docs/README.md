@@ -80,6 +80,7 @@ docs/
 │   ├── 0062-add-fifty-eighth-wave-patient-rights-records-communication-domains.md
 │   ├── 0063-add-fifty-ninth-wave-emergency-health-handoff-domains.md
 │   ├── 0064-add-sixtieth-wave-post-death-survivor-continuity-domains.md
+│   ├── 0065-add-sixty-first-wave-relational-social-capital-continuity-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -462,4 +463,13 @@ docs/
 327. Read `../domains/life-insurance-beneficiary-claim-continuity/README.md` if you are working on life insurance policies, beneficiary designations, death claims, policy locator systems, group life insurance, or unclaimed benefits.
 328. Read `../domains/estate-inventory-asset-liability-handoff-continuity/README.md` if you are working on estate inventory, asset lists, liability lists, executor/personal representative task queues, probate handoff, or creditor notices.
 329. Read `../domains/post-death-account-closure-service-cancellation-continuity/README.md` if you are working on post-death account closure, service cancellation, automatic payment stops, deceased-account handling, data export, or identity theft prevention.
-330. Enter a domain under `../domains/`.
+330. Read `../domains/loneliness-social-isolation-risk-continuity/README.md` if you are working on loneliness, social isolation, connection quality, relationship risk, help-seeking capacity, or social disconnection as a health and continuity variable.
+331. Read `../domains/social-prescribing-community-referral-continuity/README.md` if you are working on social prescribing, link workers, community referrals, closed-loop social support, activity referral, or non-clinical support pathways.
+332. Read `../domains/mutual-aid-neighbor-support-network-continuity/README.md` if you are working on mutual aid, neighbor support, informal care, disaster neighbor checks, low-friction help, or community support networks.
+333. Read `../domains/volunteering-civic-service-participation-continuity/README.md` if you are working on volunteering, civic service, service participation, social capital, skill-building, or community contribution pathways.
+334. Read `../domains/community-mediation-neighbor-conflict-resolution-continuity/README.md` if you are working on community mediation, neighbor conflict, low-level disputes, dialogue, agreement follow-up, or conflict de-escalation infrastructure.
+335. Read `../domains/restorative-justice-repair-accountability-continuity/README.md` if you are working on restorative justice, repair, accountability, victim needs, reintegration, or post-harm community continuity.
+336. Read `../domains/reputation-defamation-public-trust-repair-continuity/README.md` if you are working on reputation harm, defamation, public trust, correction, complaint pathways, or trust repair.
+337. Read `../domains/references-vouching-recommendation-social-capital-continuity/README.md` if you are working on references, vouching, recommendation letters, introductions, social proof, opportunity access, or social-capital conversion.
+338. Read `../domains/third-place-belonging-social-participation-continuity/README.md` if you are working on third places, belonging, public libraries, parks, community anchors, social participation, or weak-tie spaces.
+339. Enter a domain under `../domains/`.

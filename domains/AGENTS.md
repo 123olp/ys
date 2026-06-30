@@ -1176,6 +1176,33 @@ domains/
 ├── social-connection-relational-infra/
 │   ├── AGENTS.md
 │   └── README.md
+├── loneliness-social-isolation-risk-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── social-prescribing-community-referral-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── mutual-aid-neighbor-support-network-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── volunteering-civic-service-participation-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── community-mediation-neighbor-conflict-resolution-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── restorative-justice-repair-accountability-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── reputation-defamation-public-trust-repair-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── references-vouching-recommendation-social-capital-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── third-place-belonging-social-participation-continuity/
+│   ├── AGENTS.md
+│   └── README.md
 ├── space-extreme-habitation/
 │   ├── AGENTS.md
 │   └── README.md
@@ -1271,6 +1298,7 @@ domains/
 - `patient-portal-account-message-continuity/`、`medical-record-access-amendment-release-continuity/`、`clinical-results-notification-followup-continuity/`、`informed-consent-refusal-shared-decision-continuity/`、`healthcare-language-interpreter-effective-communication-continuity/`、`healthcare-disability-accommodation-accessibility-continuity/`、`patient-grievance-complaint-ombuds-continuity/` 和 `healthcare-civil-rights-nondiscrimination-continuity/` 负责患者门户/医疗消息、病历访问修正释放、临床结果通知随访、知情同意/拒绝/共同决策、医疗语言服务、医疗残障便利、患者投诉/ombuds 和医疗民权反歧视这些患者权利与临床沟通连续性条件。
 - `emergency-contact-next-of-kin-notification-continuity/`、`personal-health-record-emergency-summary-continuity/`、`medical-id-allergy-critical-alert-continuity/`、`medication-list-implant-device-emergency-continuity/`、`chronic-condition-emergency-action-plan-continuity/`、`immunization-record-proof-continuity/`、`organ-donor-registry-anatomical-gift-continuity/` 和 `access-functional-needs-emergency-registry-continuity/` 负责主体无法表达、急救、灾害和死亡边界中的紧急联系人、急救健康摘要、医疗 ID/关键警报、药物/植入设备、慢病行动计划、免疫记录、器官捐赠登记和功能需求登记连续性条件。
 - `death-certificate-registration-cause-of-death-record-continuity/`、`funeral-cremation-burial-disposition-continuity/`、`cemetery-memorial-remains-location-continuity/`、`bereavement-leave-grief-support-continuity/`、`survivor-benefits-death-notification-continuity/`、`life-insurance-beneficiary-claim-continuity/`、`estate-inventory-asset-liability-handoff-continuity/` 和 `post-death-account-closure-service-cancellation-continuity/` 负责死亡边界后的死亡证明/死因记录、遗体处置、墓地纪念、遗属恢复、遗属福利、寿险理赔、遗产清单和账户关闭服务取消连续性条件。
+- `loneliness-social-isolation-risk-continuity/`、`social-prescribing-community-referral-continuity/`、`mutual-aid-neighbor-support-network-continuity/`、`volunteering-civic-service-participation-continuity/`、`community-mediation-neighbor-conflict-resolution-continuity/`、`restorative-justice-repair-accountability-continuity/`、`reputation-defamation-public-trust-repair-continuity/`、`references-vouching-recommendation-social-capital-continuity/` 和 `third-place-belonging-social-participation-continuity/` 负责关系执行与社会资本连续性，覆盖孤独隔离风险、社会处方转介、互助邻里、志愿服务、社区调解、修复性司法、声誉信任修复、推荐背书和第三空间归属参与。
 - `access-to-justice-legal-aid/`、`civic-participation-election-access/`、`migration-displacement-humanitarian-continuity/` 和 `digital-inclusion-connectivity/` 负责司法可及、公民参与、迁移流离失所人道连续性和数字连接这些制度参与与公共服务接入条件。
 - `personal-safety-violence-prevention/` 和 `product-safety-recall-systems/` 负责暴力预防、受害者支持、产品缺陷报告、召回和纠正这些公共安全连续性条件。
 - `cellular-reprogramming/` 负责山中因子、部分重编程、化学重编程、AI 因子设计和表观遗传编辑等“细胞状态可重写”谱系，不提供实验协议或人体应用建议。
@@ -1306,12 +1334,14 @@ domains/
 - `patient-portal-account-message-continuity/`、`medical-record-access-amendment-release-continuity/`、`clinical-results-notification-followup-continuity/`、`informed-consent-refusal-shared-decision-continuity/`、`healthcare-language-interpreter-effective-communication-continuity/`、`healthcare-disability-accommodation-accessibility-continuity/`、`patient-grievance-complaint-ombuds-continuity/` 和 `healthcare-civil-rights-nondiscrimination-continuity/` 负责患者权利、记录访问、临床沟通与医疗民权连续性的证据边界，不提供门户恢复、病历索取、记录解释、结果解读、医疗建议、同意/拒绝建议、翻译口译、便利申请、投诉代写、法律意见、歧视认定、诉讼策略，或收集 portal 凭证、MRN、授权书、病历、诊断、受保护身份、投诉证据、联系方式和 PHI 数据。
 - `emergency-contact-next-of-kin-notification-continuity/`、`personal-health-record-emergency-summary-continuity/`、`medical-id-allergy-critical-alert-continuity/`、`medication-list-implant-device-emergency-continuity/`、`chronic-condition-emergency-action-plan-continuity/`、`immunization-record-proof-continuity/`、`organ-donor-registry-anatomical-gift-continuity/` 和 `access-functional-needs-emergency-registry-continuity/` 负责急救健康信息与紧急交接连续性的证据边界，不提供个人急救、医疗解释、病历摘要生成、联系人通知、亲属查找、用药/设备判断、疫苗建议、器官捐赠登记、灾害报名、撤离计划、法律建议，或收集联系人、PHI、设备序列号、疫苗卡、捐赠登记、地址、定位、残障证明和功能需求资料。
 - `death-certificate-registration-cause-of-death-record-continuity/`、`funeral-cremation-burial-disposition-continuity/`、`cemetery-memorial-remains-location-continuity/`、`bereavement-leave-grief-support-continuity/`、`survivor-benefits-death-notification-continuity/`、`life-insurance-beneficiary-claim-continuity/`、`estate-inventory-asset-liability-handoff-continuity/` 和 `post-death-account-closure-service-cancellation-continuity/` 负责死亡后与遗属连续性的证据边界，不提供死亡证明办理、遗体处置安排、墓地查找、心理治疗、福利申请、保险理赔、probate、税务、债务、账户关闭、平台申诉或法律建议，或收集死亡证明、遗体位置、保单、资产负债、账号、密码、亲属关系和身份文件。
+- `loneliness-social-isolation-risk-continuity/`、`social-prescribing-community-referral-continuity/`、`mutual-aid-neighbor-support-network-continuity/`、`volunteering-civic-service-participation-continuity/`、`community-mediation-neighbor-conflict-resolution-continuity/`、`restorative-justice-repair-accountability-continuity/`、`reputation-defamation-public-trust-repair-continuity/`、`references-vouching-recommendation-social-capital-continuity/` 和 `third-place-belonging-social-participation-continuity/` 负责关系执行与社会资本连续性的证据边界，不提供心理治疗、危机干预、医疗/福利转介、志愿者调度、调解代理、法律建议、声誉清洗、推荐信代写、社交操控、舆论操作、场所推荐、活动组织或敏感社交数据收集。
 - `regenerative-medicine/`、`cancer-control/` 和 `immune-maintenance/` 负责身体基底维护相关的机制、风险和证据边界。
 - `rehabilitation-functioning/`、`assistive-technology-access/`、`skin-barrier-wound-healing/` 和 `sensory-continuity/` 负责功能恢复、能力补偿、外界屏障和感官反馈连续性。
 - `antimicrobial-resilience/` 负责抗微生物耐药、感染控制和现代医学抗感染底座。
 - `neuro-continuity/`、`memory-editing/`、`cognitive-augmentation/`、`ai-agency-safety/`、`digital-identity-security/` 和 `disembodied-cns/` 负责神经、身份、认知、AI 代理、数字入口和去具身连续性相关边界。
 - `mental-health-affective-stability/`、`sleep-circadian-recovery/` 和 `pain-suffering-control/` 负责心理稳定、恢复调度和持续存在的可承受性。
 - `social-connection-relational-infra/` 负责社会连接、孤独、照护网络、信任和社区关系。
+- `loneliness-social-isolation-risk-continuity/`、`social-prescribing-community-referral-continuity/`、`mutual-aid-neighbor-support-network-continuity/`、`volunteering-civic-service-participation-continuity/`、`community-mediation-neighbor-conflict-resolution-continuity/`、`restorative-justice-repair-accountability-continuity/`、`reputation-defamation-public-trust-repair-continuity/`、`references-vouching-recommendation-social-capital-continuity/` 和 `third-place-belonging-social-participation-continuity/` 负责把社会连接拆成可执行、可转介、可互助、可参与、可调解、可修复、可纠错、可背书和可归属的关系基础设施层。
 - `substance-exposure-control/` 负责烟草、酒精、成瘾性物质、有害暴露和主体自主性风险。
 - `health-literacy-navigation/` 和 `language-access-plain-communication/` 负责健康素养、服务导航、清晰语言、语言服务、可理解信息、风险沟通和共同决策。
 - `oral-health-continuity/` 负责口腔健康、咀嚼、疼痛、感染、营养和沟通连续性。

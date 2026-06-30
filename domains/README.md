@@ -405,6 +405,15 @@
 - `synthetic-biology-biosecurity/`：合成生物学与生物安全，整理双重用途、生物安全、生物安保和治理边界。
 - `space-extreme-habitation/`：空间与极端栖居，整理辐射、微重力、隔离、闭环资源和远程医疗风险。
 - `social-connection-relational-infra/`：社会连接与关系基础设施，整理孤独、社会隔离、照护网络、信任和社区关系。
+- `loneliness-social-isolation-risk-continuity/`：孤独与社会隔离风险连续性，整理关系断裂、连接质量、求助能力和健康/照护风险。
+- `social-prescribing-community-referral-continuity/`：社会处方与社区转介连续性，整理 link worker、社区活动、非临床支持、闭环回访和服务质量边界。
+- `mutual-aid-neighbor-support-network-continuity/`：互助与邻里支持网络连续性，整理邻里照看、互助节点、低摩擦求助、灾害互助和非正式支持边界。
+- `volunteering-civic-service-participation-continuity/`：志愿服务与公民参与连续性，整理服务参与、技能形成、社会资本、归属感和公共贡献路径。
+- `community-mediation-neighbor-conflict-resolution-continuity/`：社区调解与邻里冲突解决连续性，整理低强度纠纷、对话机制、协议执行和冲突升级风险。
+- `restorative-justice-repair-accountability-continuity/`：修复性司法与责任修复连续性，整理伤害修复、责任承担、受害者需要、再融入和治理边界。
+- `reputation-defamation-public-trust-repair-continuity/`：声誉诽谤与公共信任修复连续性，整理声誉损伤、错误信息、更正申诉、公共信任和机会入口。
+- `references-vouching-recommendation-social-capital-continuity/`：推荐背书与社会资本连续性，整理推荐人、背书、介绍信、弱连接和机会转化。
+- `third-place-belonging-social-participation-continuity/`：第三空间、归属与社会参与连续性，整理非家庭非工作空间、社区锚点、弱连接、恢复和公共参与。
 - `governance-rights/`：治理与主体权利，整理同意、退出、数据权、法律身份、AI 治理和研究伦理。
 - `pain-suffering-control/`：疼痛与痛苦控制，整理慢性疼痛、症状负担、姑息医学和可承受持续性。
 - `health-literacy-navigation/`：健康素养与服务导航，整理可理解信息、风险沟通、共同决策和系统入口。

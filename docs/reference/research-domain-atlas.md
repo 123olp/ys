@@ -419,6 +419,15 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 生物技术双重用途可治理 | `synthetic-biology-biosecurity/` | 生物安全、生物安保、双重用途、治理 | 病原风险、误用、实验外泄 |
 | 极端环境可栖居 | `space-extreme-habitation/` | 辐射、微重力、隔离、闭环生命支持 | 环境失效、资源闭环失败、远程医疗失败 |
 | 关系网络可支撑主体 | `social-connection-relational-infra/` | 社会连接、孤独、照护网络、信任、协作 | 孤立、照护断裂、危机无人接住 |
+| 孤独隔离风险必须可识别 | `loneliness-social-isolation-risk-continuity/` | 孤独、社会隔离、连接质量、关系断裂、求助能力 | 关系风险不可见会延迟照护、危机发现、恢复支持和健康风险干预 |
+| 社区支持必须可转介 | `social-prescribing-community-referral-continuity/` | 社会处方、link worker、社区转介、活动参与、闭环回访 | 医疗或公共服务知道需求但无法把主体接入实际社区支持 |
+| 邻里互助必须可激活 | `mutual-aid-neighbor-support-network-continuity/` | 互助网络、邻里照看、低摩擦求助、灾害互助 | 正式服务未抵达时无人临时支撑，导致小缺口升级成失稳 |
+| 服务参与可沉淀社会资本 | `volunteering-civic-service-participation-continuity/` | 志愿服务、公民服务、参与记录、技能、关系和信誉 | 主体缺少贡献场景，技能、归属、弱连接和机会入口无法复利 |
+| 日常冲突必须可低成本修复 | `community-mediation-neighbor-conflict-resolution-continuity/` | 社区调解、邻里纠纷、对话、协议执行、升级风险 | 低强度冲突升级为搬迁、诉讼、孤立、暴力或长期资源损耗 |
+| 伤害后责任链必须可修复 | `restorative-justice-repair-accountability-continuity/` | 修复性司法、责任承担、受害者需要、再融入、关系修复 | 伤害事件只剩排除、惩罚或沉默，受害者恢复和责任修复同时失败 |
+| 声誉和公共信任必须可纠错 | `reputation-defamation-public-trust-repair-continuity/` | 声誉损伤、诽谤、更正申诉、信任资产、公共记录 | 错误信息或声誉损伤阻断工作、协作、服务和社区机会 |
+| 推荐背书必须可转化机会 | `references-vouching-recommendation-social-capital-continuity/` | 推荐人、背书、介绍信、弱连接、社会资本 | 能力无法被可信转译为机会，主体被排除在教育、工作、照护和合作入口之外 |
+| 第三空间必须承载归属参与 | `third-place-belonging-social-participation-continuity/` | 公共图书馆、公园、社区锚点、弱连接、归属空间 | 非家庭非工作空间消失，弱连接、恢复、学习、求助和公共参与断裂 |
 | 权利和治理可保护主体 | `governance-rights/` | 同意、退出、数据权、法律身份 | 被控制、被剥夺、被系统吞噬 |
 | 服务入口可理解可导航 | `health-literacy-navigation/` | 健康素养、服务导航、风险沟通、共同决策 | 有资源但不会用、误解、延误、行政排除 |
 | 语言和表达可理解 | `language-access-plain-communication/` | plain language、语言服务、LEP、CLAS、认知可访问性、表单理解 | 材料读不懂、听不懂、不能执行，或简化时删掉权利和风险 |
@@ -871,6 +880,15 @@ risk-engineering
   -> synthetic-biology-biosecurity
   -> space-extreme-habitation
   -> social-connection-relational-infra
+  -> loneliness-social-isolation-risk-continuity
+  -> social-prescribing-community-referral-continuity
+  -> mutual-aid-neighbor-support-network-continuity
+  -> volunteering-civic-service-participation-continuity
+  -> community-mediation-neighbor-conflict-resolution-continuity
+  -> restorative-justice-repair-accountability-continuity
+  -> reputation-defamation-public-trust-repair-continuity
+  -> references-vouching-recommendation-social-capital-continuity
+  -> third-place-belonging-social-participation-continuity
   -> health-literacy-navigation
   -> language-access-plain-communication
   -> substance-exposure-control

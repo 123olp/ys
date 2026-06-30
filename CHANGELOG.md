@@ -2,6 +2,10 @@
 
 All notable repository structure changes are recorded here.
 
+## 2026-07-01
+
+- Added sixty-first-wave relational social-capital continuity domain skeletons for loneliness/social-isolation risk, social prescribing/community referrals, mutual aid/neighbor support, volunteering/civic service participation, community mediation/neighbor conflict resolution, restorative justice/accountability repair, reputation/public trust repair, references/vouching/recommendations, and third-place/belonging/social participation.
+
 ## 2026-06-30
 
 - Added sixtieth-wave post-death and survivor continuity domain skeletons for death certificates/cause-of-death records, funeral/cremation/burial disposition, cemetery/memorial/remains location, bereavement leave/grief support, survivor benefits/death notification, life insurance beneficiary claims, estate inventory/asset-liability handoff, and post-death account closure/service cancellation.

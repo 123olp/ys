@@ -40,6 +40,15 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `cardiovascular-resilience/` | 循环系统是死亡风险、认知连续性和行动能力的核心通道 |
 | `musculoskeletal-integrity/` | 肌肉、骨骼、关节和跌倒风险决定主体能否把寿命转化为行动 |
 | `social-connection-relational-infra/` | 社会连接、照护网络和关系支持是主体恢复、求助和协作的外部条件 |
+| `loneliness-social-isolation-risk-continuity/` | 孤独、社会隔离、连接质量和求助能力决定关系风险是否能被公共健康、照护和恢复系统看见 |
+| `social-prescribing-community-referral-continuity/` | 社会处方和社区转介决定医疗/公共服务是否能把需求连接到真实社区支持 |
+| `mutual-aid-neighbor-support-network-continuity/` | 互助和邻里支持决定正式服务抵达前是否存在低摩擦求助、照看和恢复网络 |
+| `volunteering-civic-service-participation-continuity/` | 志愿服务和公民参与决定主体能否通过贡献沉淀技能、弱连接、归属和社会资本 |
+| `community-mediation-neighbor-conflict-resolution-continuity/` | 社区调解和邻里冲突解决决定低强度冲突是否会升级成搬迁、诉讼、孤立或暴力风险 |
+| `restorative-justice-repair-accountability-continuity/` | 修复性司法和责任修复决定伤害事件后能否同时保护受害者恢复、责任承担和社会再接入 |
+| `reputation-defamation-public-trust-repair-continuity/` | 声誉、诽谤和公共信任修复决定错误信息或信任损伤是否会阻断机会、服务和协作入口 |
+| `references-vouching-recommendation-social-capital-continuity/` | 推荐、背书和介绍信决定能力与信誉能否被可信转译为教育、工作、照护和合作机会 |
+| `third-place-belonging-social-participation-continuity/` | 第三空间、归属和社会参与决定非家庭非工作场所是否能承载弱连接、恢复、学习和求助 |
 | `substance-exposure-control/` | 烟草、酒精、成瘾性物质和有害暴露会同时改变风险函数与主体自主性 |
 | `health-literacy-navigation/` | 医疗和社会服务只有可理解、可导航、可复核时才会转化为主体收益 |
 | `oral-health-continuity/` | 口腔健康连接营养、疼痛、感染、沟通和社会参与 |
@@ -602,6 +611,14 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | WHO Cardiovascular Diseases / Hypertension | 提示循环系统风险是主体持续性的核心风险函数 |
 | WHO Musculoskeletal Conditions / Falls | 提示肌骨条件、跌倒和疼痛会把寿命转化为失能时间 |
 | WHO Commission on Social Connection | 提示社会连接、孤独和社会隔离影响健康、行动和恢复支持 |
+| U.S. Surgeon General social connection advisory / CDC social connectedness | 提示孤独和社会隔离需要作为公共健康、恢复支持和关系风险变量进入独立域 |
+| NHS England social prescribing / community referral literature | 提示 link worker、社区活动、非临床支持和闭环转介是把服务需求转为真实支持的执行接口 |
+| Ready.gov neighbors / FEMA community lifelines | 提示邻里互助、灾害互查和本地支持网络是正式救援前后的关系基础设施 |
+| AmeriCorps volunteering and civic life | 提示志愿服务和公民参与可以沉淀技能、关系、归属和公共贡献能力 |
+| State court ADR / community mediation resources | 提示低强度社区冲突需要有独立的调解、对话和升级预防路径 |
+| OJJDP restorative justice literature | 提示伤害后的修复、责任承担、受害者需要和再融入需要区别于普通司法或心理治疗 |
+| FTC / CFPB consumer correction and reputation-risk resources | 提示错误记录、诽谤和信任损伤会影响机会入口，纠错和申诉边界需要独立建模 |
+| IMLS public libraries / CDC parks and community design | 提示第三空间、公共图书馆、公园和社区锚点是弱连接、学习、恢复和归属基础设施 |
 | WHO Tobacco / Alcohol | 提示有害物质暴露和成瘾会改变死亡风险、资源消耗和主体自主性 |
 | CDC / HHS Health Literacy | 提示信息可理解性和服务导航决定医疗资源能否实际转化为主体收益 |
 | WHO / CDC Oral Health | 提示口腔健康连接营养、疼痛、感染、沟通和生活质量 |
@@ -803,6 +820,13 @@ Source links:
 - https://www.who.int/news-room/fact-sheets/detail/physical-activity
 - https://www.who.int/publications/i/item/9789240015128
 - https://www.who.int/news-room/fact-sheets/detail/cardiovascular-diseases-(cvds)
+- https://www.hhs.gov/surgeongeneral/priorities/connection/index.html
+- https://www.cdc.gov/social-connectedness/
+- https://www.england.nhs.uk/personalisedcare/social-prescribing/
+- https://www.ready.gov/neighbors
+- https://www.fema.gov/emergency-managers/national-preparedness/frameworks/response
+- https://www.americorps.gov/about/our-impact/volunteering-civic-life
+- https://www.imls.gov/research-evaluation/data-collection/public-libraries-survey
 - https://www.who.int/news-room/fact-sheets/detail/hypertension
 - https://www.who.int/news-room/fact-sheets/detail/musculoskeletal-conditions
 - https://www.who.int/news-room/fact-sheets/detail/falls

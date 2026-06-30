@@ -386,6 +386,15 @@ flowchart TD
     H --> SBB[synthetic-biology-biosecurity<br/>合成生物学与生物安全]
     H --> SEH[space-extreme-habitation<br/>空间与极端栖居]
     H --> SOC[social-connection-relational-infra<br/>社会连接 / 关系基础设施]
+    H --> LSIRC[loneliness-social-isolation-risk-continuity<br/>孤独隔离 / 关系风险]
+    H --> SPCR[social-prescribing-community-referral-continuity<br/>社会处方 / 社区转介]
+    H --> MANS[mutual-aid-neighbor-support-network-continuity<br/>互助邻里 / 支持网络]
+    H --> VCSP[volunteering-civic-service-participation-continuity<br/>志愿服务 / 公民参与]
+    H --> CMNC[community-mediation-neighbor-conflict-resolution-continuity<br/>社区调解 / 邻里冲突]
+    H --> RJRA[restorative-justice-repair-accountability-continuity<br/>修复性司法 / 责任修复]
+    H --> RDPT[reputation-defamation-public-trust-repair-continuity<br/>声誉诽谤 / 信任修复]
+    H --> RVRSC[references-vouching-recommendation-social-capital-continuity<br/>推荐背书 / 社会资本]
+    H --> TPBSP[third-place-belonging-social-participation-continuity<br/>第三空间 / 归属参与]
     H --> GR[governance-rights<br/>治理与主体权利]
     H --> LICR[legal-identity-civil-registration<br/>法律身份 / 民事登记]
     H --> AJLA[access-to-justice-legal-aid<br/>司法可及 / 法律援助]
@@ -956,6 +965,15 @@ flowchart TD
 | [Synthetic Biology Biosecurity](domains/synthetic-biology-biosecurity/README.md) | 合成生物学、生物安全、生物安保、双重用途风险和治理边界 | 高风险研究边界、审查门槛、禁止用途和生物风险变量 | 不提供病原体工程、培养、传播、规避筛查、实验协议或湿实验步骤 |
 | [Space Extreme Habitation](domains/space-extreme-habitation/README.md) | 空间飞行、极端环境、闭环生命支持、隔离、辐射和远程医疗 | 环境压力、资源闭环、远程医疗、团队行为和未来可达性 | 不提供太空任务、危险环境进入、生命支持建造或生存操作指南 |
 | [Social Connection Relational Infra](domains/social-connection-relational-infra/README.md) | 孤独、社会隔离、家庭照护、社区信任和协作网络 | 关系支持、求助能力、照护连续性和孤立风险 | 不提供心理治疗、危机服务替代、社交操控或组织控制方案 |
+| [Loneliness Social Isolation Risk Continuity](domains/loneliness-social-isolation-risk-continuity/README.md) | 孤独、社会隔离、关系断裂、连接质量和求助能力 | 把关系断裂建模为健康风险、照护断点、危机恢复和主体行动变量 | 不提供心理治疗、危机干预、社交训练、个体风险评分或关系监控 |
+| [Social Prescribing Community Referral Continuity](domains/social-prescribing-community-referral-continuity/README.md) | 社会处方、link worker、社区转介、活动支持和闭环回访 | 把医疗/公共服务入口转化为社区支持、归属、活动和生活资源连接 | 不提供医疗转诊、福利申请、机构推荐、个案导航或资格判断 |
+| [Mutual Aid Neighbor Support Network Continuity](domains/mutual-aid-neighbor-support-network-continuity/README.md) | 互助网络、邻里支持、灾害互助、照看和低摩擦求助 | 建模弱正式支持如何补足家庭、市场和政府服务之间的空档 | 不组织募捐、调度志愿者、发布求助、分配资源或处理个案风险 |
+| [Volunteering Civic Service Participation Continuity](domains/volunteering-civic-service-participation-continuity/README.md) | 志愿服务、公民服务、参与记录、技能和社会资本 | 把服务参与视为学习、关系、信誉、归属和资源复利的生成路径 | 不提供岗位推荐、组织动员、政治说服、背景审查或志愿者管理 |
+| [Community Mediation Neighbor Conflict Resolution Continuity](domains/community-mediation-neighbor-conflict-resolution-continuity/README.md) | 社区调解、邻里冲突、低强度纠纷、对话和协议执行 | 防止小冲突升级为搬迁、诉讼、暴力、孤立和长期资源损耗 | 不提供法律建议、调解代理、谈判策略、取证、报复或个案裁决 |
+| [Restorative Justice Repair Accountability Continuity](domains/restorative-justice-repair-accountability-continuity/README.md) | 修复性司法、伤害修复、责任承担、受害者需要和再融入 | 把伤害事件后的恢复、责任、关系修复和社会再接入纳入主体持续性 | 不替代刑事司法、受害者服务、法律建议、治疗、调解或安全计划 |
+| [Reputation Defamation Public Trust Repair Continuity](domains/reputation-defamation-public-trust-repair-continuity/README.md) | 声誉损伤、诽谤、错误信息、更正、申诉和公共信任 | 把信任资产和声誉纠错视为进入工作、协作、服务和社区的条件 | 不提供删帖、SEO 清洗、公关战术、诽谤法律意见、报复或舆论操控 |
+| [References Vouching Recommendation Social Capital Continuity](domains/references-vouching-recommendation-social-capital-continuity/README.md) | 推荐人、背书、介绍信、证明、弱连接和机会入口 | 建模社会资本如何把能力和信誉转化为教育、工作、照护和合作机会 | 不代写推荐信、伪造背书、操控招聘、索取私人联系人或资格判断 |
+| [Third Place Belonging Social Participation Continuity](domains/third-place-belonging-social-participation-continuity/README.md) | 第三空间、公共图书馆、公园、宗教/社区场所和归属参与 | 把非家庭非工作空间视为弱连接、恢复、学习、求助和身份参与底座 | 不推荐场所、组织活动、处理安全事件、做宗教/政治动员或收集位置 |
 | [Governance And Rights](domains/governance-rights/README.md) | 主体权利、法律身份、同意、退出、数据权、AI 治理 | 高风险域治理清单、权利保护和中止条件 | 不提供法律意见或规避监管建议 |
 | [Legal Identity Civil Registration](domains/legal-identity-civil-registration/README.md) | 法律身份、出生登记、民事登记、生命统计、身份文件和服务资格 | 制度承认、权利入口、服务资格和身份连续性 | 不提供法律、移民、证件办理、资格判断、欺诈或规避建议 |
 | [Access To Justice Legal Aid](domains/access-to-justice-legal-aid/README.md) | 民事法律需求、法律援助、司法可及、程序负担和权利救济 | 法律信息、代理支持、申诉执行和制度救济路径 | 不提供法律意见、案件策略、文书起草、诉讼、移民或规避建议 |
@@ -1341,6 +1359,15 @@ human_infra/
 │   ├── sleep-circadian-recovery/
 │   ├── skin-barrier-wound-healing/
 │   ├── social-connection-relational-infra/
+│   ├── loneliness-social-isolation-risk-continuity/
+│   ├── social-prescribing-community-referral-continuity/
+│   ├── mutual-aid-neighbor-support-network-continuity/
+│   ├── volunteering-civic-service-participation-continuity/
+│   ├── community-mediation-neighbor-conflict-resolution-continuity/
+│   ├── restorative-justice-repair-accountability-continuity/
+│   ├── reputation-defamation-public-trust-repair-continuity/
+│   ├── references-vouching-recommendation-social-capital-continuity/
+│   ├── third-place-belonging-social-participation-continuity/
 │   ├── space-extreme-habitation/
 │   ├── stem-cell-reserve-renewal/
 │   ├── substance-exposure-control/
@@ -1497,5 +1524,6 @@ flowchart LR
 - 2026-06-30：新增第五十八波 8 个患者权利、记录访问、临床沟通与医疗民权连续性域，覆盖患者门户/医疗消息、病历访问修正释放、临床结果通知随访、知情同意/拒绝/共同决策、医疗语言服务、医疗残障便利、患者投诉/ombuds 和医疗民权反歧视连续性。
 - 2026-06-30：新增第五十九波 8 个急救健康信息与紧急交接连续性域，覆盖紧急联系人/近亲通知、个人健康记录急救摘要、医疗 ID/过敏关键警报、药物清单/植入设备急救转交、慢病急救行动计划、免疫记录证明、器官捐赠登记和 access/functional needs 急救登记连续性。
 - 2026-06-30：新增第六十波 8 个死亡后与遗属连续性域，覆盖死亡证明/死因记录、葬礼火化土葬与遗体处置、墓地纪念与遗体位置、丧亲假与悲伤支持、遗属福利死亡通知、寿险受益人理赔、遗产清单资产负债交接和死亡后账户关闭服务取消连续性。
+- 2026-07-01：新增第六十一波 9 个关系执行与社会资本连续性域，覆盖孤独/社会隔离风险、社会处方/社区转介、互助邻里支持、志愿服务/公民参与、社区调解/邻里冲突、修复性司法/责任修复、声誉诽谤/公共信任修复、推荐背书/社会资本和第三空间/归属参与连续性。
 
 完整记录见 [CHANGELOG.md](CHANGELOG.md)。

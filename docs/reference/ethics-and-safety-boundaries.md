@@ -490,6 +490,22 @@ Human Infra 不能被设计成更精密的压榨系统。
 - 收集或诱导输入死亡证明、病历、法医材料、遗体/骨灰位置、保单号、受益人资料、资产负债、账号密码、账单、银行卡、身份文件、家庭关系、宗教偏好、创伤经历或心理诊断。
 - 把死亡后与遗属连续性的结构性问题改写成个案代理、法律博弈、理赔策略、丧葬消费推荐、心理治疗替代、敏感资料收集、账号接管、家庭控制或平台规避问题。
 
+## 关系执行与社会资本连续性边界
+
+`loneliness-social-isolation-risk-continuity`、`social-prescribing-community-referral-continuity`、`mutual-aid-neighbor-support-network-continuity`、`volunteering-civic-service-participation-continuity`、`community-mediation-neighbor-conflict-resolution-continuity`、`restorative-justice-repair-accountability-continuity`、`reputation-defamation-public-trust-repair-continuity`、`references-vouching-recommendation-social-capital-continuity` 和 `third-place-belonging-social-participation-continuity` 关注关系风险、社区转介、互助网络、志愿服务、冲突调解、伤害修复、声誉纠错、推荐背书和第三空间如何支撑主体持续性，不是心理治疗、危机干预、医疗/福利转介、志愿者调度、调解代理、法律建议、声誉清洗、推荐信代写、社交操控、舆论操作、场所推荐、活动组织或敏感社交数据收集工具。
+
+可以做：
+
+- 整理公开资料、官方框架、Surgeon General / CDC social connectedness、NHS social prescribing、Ready.gov neighbors、AmeriCorps civic life、社区调解/ADR、restorative justice、公共图书馆和第三空间资料。
+- 建模孤独风险不可见、转介断裂、互助缺位、服务参与失败、冲突升级、修复失败、声誉损伤、背书缺口和第三空间消失如何影响主体持续性。
+- 区分关系风险、转介执行、互助网络、志愿服务、调解、修复性司法、声誉修复、推荐背书、第三空间和禁止用途。
+
+不能做：
+
+- 提供心理治疗、危机干预、医疗/福利转介、法律建议、调解代理、诉讼策略、报复、删帖、SEO 清洗、公关战术、推荐信代写、背书伪造、社交操控、搭讪、关系控制、舆论操控、政治/宗教动员、场所推荐或活动组织。
+- 收集或诱导输入联系人、社交图谱、聊天记录、位置、冲突事实、受害者/加害者身份、推荐信、雇主/学校/机构联系人、声誉材料、家庭关系、宗教政治身份、心理诊断或危机信息。
+- 把关系执行结构性问题改写成个人社交优化、监控、操控、审判、名誉攻击、冲突升级、资源分配、志愿者调度或敏感数据经纪问题。
+
 ## 农村健康、无家可归、羁押重返、残障独立生活、痴呆照护与慢性传染病连续性边界
 
 `rural-health-access-geographic-equity`、`homelessness-unsheltered-health-continuity`、`correctional-health-reentry-continuity`、`disability-services-independent-living`、`dementia-cognitive-decline-care-continuity` 和 `chronic-infectious-disease-care-continuity` 关注地点排除、住所缺失、羁押释放、残障服务、认知衰退和长期感染照护如何影响主体持续性，不是个人医疗、住房、福利、法律、羁押、监管规避、传染病处置或弱势群体定位指南。
