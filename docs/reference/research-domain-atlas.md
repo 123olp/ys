@@ -436,6 +436,14 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 叙事身份必须可整合 | `narrative-identity-life-review-continuity/` | life review、reminiscence、自传记忆、生命故事、身份重组 | 记忆资料无法组织成自我叙事，身份稳定、意义感和跨代转交下降 |
 | 仪式转换必须被承认 | `ritual-ceremony-life-transition-continuity/` | 仪式、典礼、过渡礼、纪念、公共承认、生命转换 | 重大转换缺少共同体承认，身份、关系和悲伤恢复更容易断裂 |
 | 尊严人格必须被保护 | `dignity-personhood-respect-continuity/` | dignity、personhood、尊重、非羞辱、person-centered care | 人被降格为病例、号码、风险标签或负担，主体性和未来选择权被侵蚀 |
+| 任务系统必须适配人 | `human-factors-ergonomics-task-system-continuity/` | human factors、ergonomics、human systems integration、usability、任务系统 | 人、工具、环境和流程失配时，错误、伤害、绕行和长期损耗会系统性增加 |
+| 工作负荷必须可测量 | `cognitive-load-workload-measurement-continuity/` | NASA-TLX、mental workload、工作记忆、任务复杂度、时间压力 | 认知过载会削弱注意、判断、学习和恢复，使任务失败被误归咎于个人能力 |
+| 疲劳风险必须被治理 | `fatigue-risk-alertness-continuity/` | 长工时、夜班、sleep debt、alertness、恢复窗口 | 疲劳降低警觉和判断，增加事故、医疗错误、驾驶风险和长期恢复债务 |
+| 情境感知必须可维持 | `situational-awareness-decision-environment-continuity/` | situation awareness、sensemaking、共享心智模型、态势显示、决策支持 | 主体不知道发生了什么、将会怎样和谁负责时，行动会变成盲目反应 |
+| 交接和流程必须可靠 | `handoff-checklist-procedure-reliability-continuity/` | handoff、checklist、SOP、read-back、briefing/debriefing、standard work | 状态在跨人、跨班次、跨机构、跨工具转移时丢失，造成重复、遗漏和失控 |
+| 事件必须转化为学习 | `incident-reporting-just-culture-learning-continuity/` | incident reporting、near miss、just culture、RCA/RCA2、纠正措施 | 事故和险情被压制或只用于追责时，系统无法学习，同类失败持续复发 |
+| 自动化必须可监督 | `automation-bias-mode-confusion-oversight-continuity/` | automation bias、mode confusion、overreliance、override、supervisory control | 主体过度信任或误解自动化模式时，工具会放大错误并削弱人工接管能力 |
+| 信号环境必须可管理 | `alert-fatigue-interruption-signal-management-continuity/` | alarm/alert fatigue、notification fatigue、中断、优先级、升级路由 | 噪声、误报和中断淹没重要信号，注意力预算被耗尽，真正风险无人响应 |
 | 权利和治理可保护主体 | `governance-rights/` | 同意、退出、数据权、法律身份 | 被控制、被剥夺、被系统吞噬 |
 | 服务入口可理解可导航 | `health-literacy-navigation/` | 健康素养、服务导航、风险沟通、共同决策 | 有资源但不会用、误解、延误、行政排除 |
 | 语言和表达可理解 | `language-access-plain-communication/` | plain language、语言服务、LEP、CLAS、认知可访问性、表单理解 | 材料读不懂、听不懂、不能执行，或简化时删掉权利和风险 |
@@ -905,6 +913,14 @@ risk-engineering
   -> narrative-identity-life-review-continuity
   -> ritual-ceremony-life-transition-continuity
   -> dignity-personhood-respect-continuity
+  -> human-factors-ergonomics-task-system-continuity
+  -> cognitive-load-workload-measurement-continuity
+  -> fatigue-risk-alertness-continuity
+  -> situational-awareness-decision-environment-continuity
+  -> handoff-checklist-procedure-reliability-continuity
+  -> incident-reporting-just-culture-learning-continuity
+  -> automation-bias-mode-confusion-oversight-continuity
+  -> alert-fatigue-interruption-signal-management-continuity
   -> health-literacy-navigation
   -> language-access-plain-communication
   -> substance-exposure-control

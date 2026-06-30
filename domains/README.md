@@ -422,6 +422,14 @@
 - `narrative-identity-life-review-continuity/`：叙事身份与生命回顾连续性，整理 life review、reminiscence、自传记忆、生命故事和身份重组。
 - `ritual-ceremony-life-transition-continuity/`：仪式典礼与生命过渡连续性，整理仪式、典礼、过渡礼、纪念、公共承认和共同体时间结构。
 - `dignity-personhood-respect-continuity/`：尊严、人格与被尊重连续性，整理 dignity、personhood、尊重、非羞辱和 person-centered care。
+- `human-factors-ergonomics-task-system-continuity/`：人因、工效学与任务系统连续性，整理 human factors、ergonomics、human systems integration、usability engineering 和 task-system fit。
+- `cognitive-load-workload-measurement-continuity/`：认知负荷与工作负荷测量连续性，整理 NASA-TLX、mental workload、工作记忆限制、任务复杂度和时间压力。
+- `fatigue-risk-alertness-continuity/`：疲劳风险与警觉性连续性，整理 fatigue risk、长工时、夜班、sleep debt、恢复窗口和安全边界。
+- `situational-awareness-decision-environment-continuity/`：情境感知与决策环境连续性，整理 situation awareness、sensemaking、共享心智模型、风险态势和决策支持。
+- `handoff-checklist-procedure-reliability-continuity/`：交接清单与过程可靠性连续性，整理 handoff、checklist、SOP、briefing/debriefing、read-back 和标准工作。
+- `incident-reporting-just-culture-learning-continuity/`：事件报告与公正文化学习连续性，整理 incident reporting、near miss、just culture、RCA2、纠正措施和学习系统。
+- `automation-bias-mode-confusion-oversight-continuity/`：自动化偏误、模式混淆与监督连续性，整理 automation bias、mode confusion、overreliance、human override 和 meaningful human oversight。
+- `alert-fatigue-interruption-signal-management-continuity/`：告警疲劳、中断与信号管理连续性，整理 alert/alarm fatigue、notification fatigue、interruptions、signal prioritization 和 escalation routing。
 - `governance-rights/`：治理与主体权利，整理同意、退出、数据权、法律身份、AI 治理和研究伦理。
 - `pain-suffering-control/`：疼痛与痛苦控制，整理慢性疼痛、症状负担、姑息医学和可承受持续性。
 - `health-literacy-navigation/`：健康素养与服务导航，整理可理解信息、风险沟通、共同决策和系统入口。

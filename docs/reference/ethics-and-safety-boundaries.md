@@ -522,6 +522,25 @@ Human Infra 不能被设计成更精密的压榨系统。
 - 收集或诱导输入宗教信仰、政治身份、族群身份、创伤经历、临终偏好、家庭秘密、生命故事、文化材料、艺术作品、仪式偏好、心理诊断、医疗病情、位置、联系人或其他敏感身份资料。
 - 把意义、文化、身份和尊严连续性的结构性问题改写成个体价值改造、宗教/政治动员、文化挪用、身份审查、疗愈营销、临终操控、情绪操控、社会评分或敏感资料经纪问题。
 
+## 人因与操作可靠性连续性边界
+
+`human-factors-ergonomics-task-system-continuity`、`cognitive-load-workload-measurement-continuity`、`fatigue-risk-alertness-continuity`、`situational-awareness-decision-environment-continuity`、`handoff-checklist-procedure-reliability-continuity`、`incident-reporting-just-culture-learning-continuity`、`automation-bias-mode-confusion-oversight-continuity` 和 `alert-fatigue-interruption-signal-management-continuity` 关注人因适配、认知负荷、疲劳风险、情境感知、交接清单、事件学习、自动化监督和告警中断管理如何支撑主体持续性，不是医疗、法律、职业安全、航空、工业、驾驶、临床、应急现场、排班、绩效、员工监控或高风险操作指导工具。
+
+可以做：
+
+- 整理 NASA、NIST、FDA、NIOSH、OSHA、AHRQ、WHO、NIST AI 等公开资料中关于 human factors、ergonomics、workload、fatigue、situation awareness、handoff、checklist、incident reporting、just culture、automation oversight 和 alert fatigue 的上位概念、证据边界和研究问题。
+- 将人因适配、认知负荷、疲劳风险、情境感知、交接清单、事件学习、自动化监督和告警中断管理映射为主体持续性、任务可靠性、错误风险、恢复能力和组织学习变量。
+- 对资料来源、适用行业、测量口径、风险类型、隐私边界和反监控边界做 Source Card 化整理。
+
+不能做：
+
+- 提供医疗、法律、职业安全、航空、工业、驾驶、临床或应急现场的个案建议。
+- 发布可直接执行的手术、飞行、工业、医疗、安保或高风险操作清单。
+- 提供排班规避、疲劳许可、事故责任归因、员工监控、绩效排名、心理诊断、招聘筛选或个体能力评分。
+- 提供告警阈值配置、监控系统部署、自动化接管、绕过安全联锁、高风险系统认证或现场指挥。
+- 收集或诱导输入员工行为日志、值班记录、医疗报警记录、事故原始证据、驾驶/飞行数据、个人健康数据或敏感工作场所资料。
+- 把人因与操作可靠性问题改写成个人能力羞辱、绩效压榨、事故甩锅、监控扩张、自动化替责、组织免责或高风险流程外包问题。
+
 ## 农村健康、无家可归、羁押重返、残障独立生活、痴呆照护与慢性传染病连续性边界
 
 `rural-health-access-geographic-equity`、`homelessness-unsheltered-health-continuity`、`correctional-health-reentry-continuity`、`disability-services-independent-living`、`dementia-cognitive-decline-care-continuity` 和 `chronic-infectious-disease-care-continuity` 关注地点排除、住所缺失、羁押释放、残障服务、认知衰退和长期感染照护如何影响主体持续性，不是个人医疗、住房、福利、法律、羁押、监管规避、传染病处置或弱势群体定位指南。

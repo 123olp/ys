@@ -450,6 +450,14 @@ human_infra/
     ├── narrative-identity-life-review-continuity/ # 叙事身份与生命回顾连续性
     ├── ritual-ceremony-life-transition-continuity/ # 仪式典礼与生命过渡连续性
     ├── dignity-personhood-respect-continuity/ # 尊严人格与尊重连续性
+    ├── human-factors-ergonomics-task-system-continuity/ # 人因工效与任务系统连续性
+    ├── cognitive-load-workload-measurement-continuity/ # 认知负荷与工作负荷测量连续性
+    ├── fatigue-risk-alertness-continuity/ # 疲劳风险与警觉性连续性
+    ├── situational-awareness-decision-environment-continuity/ # 情境感知与决策环境连续性
+    ├── handoff-checklist-procedure-reliability-continuity/ # 交接清单与过程可靠性连续性
+    ├── incident-reporting-just-culture-learning-continuity/ # 事件报告与公正文化学习连续性
+    ├── automation-bias-mode-confusion-oversight-continuity/ # 自动化偏误、模式混淆与监督连续性
+    ├── alert-fatigue-interruption-signal-management-continuity/ # 告警疲劳、中断与信号管理连续性
     ├── space-extreme-habitation/ # 空间与极端栖居
     ├── stem-cell-reserve-renewal/ # 干细胞储备与组织更新
     ├── substance-exposure-control/ # 物质暴露控制
@@ -694,6 +702,7 @@ human_infra/
 - `domains/death-certificate-registration-cause-of-death-record-continuity/`、`domains/funeral-cremation-burial-disposition-continuity/`、`domains/cemetery-memorial-remains-location-continuity/`、`domains/bereavement-leave-grief-support-continuity/`、`domains/survivor-benefits-death-notification-continuity/`、`domains/life-insurance-beneficiary-claim-continuity/`、`domains/estate-inventory-asset-liability-handoff-continuity/` 和 `domains/post-death-account-closure-service-cancellation-continuity/` 负责死亡边界后的死亡证明/死因记录、遗体处置、墓地纪念、遗属恢复、遗属福利、寿险理赔、遗产清单和账户关闭服务取消连续性条件。
 - `domains/loneliness-social-isolation-risk-continuity/`、`domains/social-prescribing-community-referral-continuity/`、`domains/mutual-aid-neighbor-support-network-continuity/`、`domains/volunteering-civic-service-participation-continuity/`、`domains/community-mediation-neighbor-conflict-resolution-continuity/`、`domains/restorative-justice-repair-accountability-continuity/`、`domains/reputation-defamation-public-trust-repair-continuity/`、`domains/references-vouching-recommendation-social-capital-continuity/` 和 `domains/third-place-belonging-social-participation-continuity/` 负责关系执行与社会资本连续性，覆盖孤独隔离风险、社会处方转介、互助邻里、志愿服务、社区调解、修复性司法、声誉信任修复、推荐背书和第三空间归属参与。
 - `domains/purpose-meaning-existential-continuity/`、`domains/spiritual-care-religious-practice-continuity/`、`domains/cultural-heritage-identity-continuity/`、`domains/arts-creative-expression-participation-continuity/`、`domains/leisure-recreation-restorative-activity-continuity/`、`domains/narrative-identity-life-review-continuity/`、`domains/ritual-ceremony-life-transition-continuity/` 和 `domains/dignity-personhood-respect-continuity/` 负责意义、文化、身份与尊严连续性，覆盖主体为什么继续、如何表达、如何归属、如何被承认和如何避免被去人格化。
+- `domains/human-factors-ergonomics-task-system-continuity/`、`domains/cognitive-load-workload-measurement-continuity/`、`domains/fatigue-risk-alertness-continuity/`、`domains/situational-awareness-decision-environment-continuity/`、`domains/handoff-checklist-procedure-reliability-continuity/`、`domains/incident-reporting-just-culture-learning-continuity/`、`domains/automation-bias-mode-confusion-oversight-continuity/` 和 `domains/alert-fatigue-interruption-signal-management-continuity/` 负责人因与操作可靠性连续性，覆盖人-工具-流程适配、认知负荷、疲劳警觉、情境感知、交接清单、事件学习、自动化监督和告警中断管理。
 - `domains/disembodied-cns/` 负责去具身外部维持型中枢生命系统的高层架构建模，不提供实验操作协议。
 - `domains/memory-editing/` 负责记忆编辑的概念、证据、验证和伦理边界，不提供可执行神经操控步骤。
 - `domains/biostasis-cryopreservation/` 负责冷冻保存、生物停滞、休眠和等待未来修复路径。
@@ -712,6 +721,7 @@ human_infra/
 - `domains/space-extreme-habitation/` 负责空间飞行、极端环境、闭环生命支持、隔离、辐射和远程医疗。
 - `domains/social-connection-relational-infra/` 负责社会连接、孤独、社会隔离、家庭照护网络、信任和社区关系。
 - `domains/purpose-meaning-existential-continuity/`、`domains/spiritual-care-religious-practice-continuity/`、`domains/cultural-heritage-identity-continuity/`、`domains/arts-creative-expression-participation-continuity/`、`domains/leisure-recreation-restorative-activity-continuity/`、`domains/narrative-identity-life-review-continuity/`、`domains/ritual-ceremony-life-transition-continuity/` 和 `domains/dignity-personhood-respect-continuity/` 负责目的意义、精神照护、文化身份、创造表达、休闲恢复、叙事身份、仪式承认和尊严人格。
+- `domains/human-factors-ergonomics-task-system-continuity/`、`domains/cognitive-load-workload-measurement-continuity/`、`domains/fatigue-risk-alertness-continuity/`、`domains/situational-awareness-decision-environment-continuity/`、`domains/handoff-checklist-procedure-reliability-continuity/`、`domains/incident-reporting-just-culture-learning-continuity/`、`domains/automation-bias-mode-confusion-oversight-continuity/` 和 `domains/alert-fatigue-interruption-signal-management-continuity/` 负责人因工效、认知负荷、疲劳警觉、情境感知、交接清单、事件学习、自动化监督和告警中断管理。
 - `domains/governance-rights/` 负责主体权利、法律身份、同意、退出、数据权、AI 治理和研究伦理。
 - `domains/pain-suffering-control/` 负责疼痛、痛苦、症状负担、姑息医学和可承受持续性。
 - `domains/health-literacy-navigation/` 负责健康素养、医疗服务导航、可理解信息、风险沟通和共同决策。
@@ -809,3 +819,4 @@ human_infra/
 - 2026-06-30：新增第六十波死亡后与遗属连续性研究域，覆盖死亡证明/死因记录、遗体处置、墓地纪念、丧亲恢复、遗属福利、寿险理赔、遗产清单和死亡后账户关闭。
 - 2026-07-01：新增第六十一波关系执行与社会资本连续性研究域，覆盖孤独隔离风险、社会处方社区转介、互助邻里支持、志愿服务公民参与、社区调解、修复性司法、声誉信任修复、推荐背书和第三空间归属参与。
 - 2026-07-01：新增第六十二波意义、文化、身份与尊严连续性研究域，覆盖目的意义、精神照护、文化遗产、艺术创造表达、休闲娱乐恢复、叙事身份生命回顾、仪式典礼生命过渡和尊严人格承认。
+- 2026-07-01：新增第六十三波人因与操作可靠性连续性研究域，覆盖人因工效学任务系统、认知负荷/工作负荷测量、疲劳风险/警觉性、情境感知/决策环境、交接清单/过程可靠性、事件报告/公正文化学习、自动化偏误/模式混淆监督和告警疲劳/中断信号管理。

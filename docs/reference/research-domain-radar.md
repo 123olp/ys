@@ -57,6 +57,14 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `narrative-identity-life-review-continuity/` | 生命回顾和叙事身份决定记忆资料是否能组织成自我连续、意义整合和跨代转交 |
 | `ritual-ceremony-life-transition-continuity/` | 仪式、典礼和生命过渡决定重大变化是否被共同体承认、纪念、安置和修复 |
 | `dignity-personhood-respect-continuity/` | 尊严、人格承认和非羞辱决定主体是否会被照护、制度或风险标签降格成对象 |
+| `human-factors-ergonomics-task-system-continuity/` | 人因、工效学和任务系统适配决定人、工具、环境和流程是否支持长期可靠行动 |
+| `cognitive-load-workload-measurement-continuity/` | 认知负荷和工作负荷测量决定任务是否已经越过注意、工作记忆和恢复边界 |
+| `fatigue-risk-alertness-continuity/` | 疲劳、夜班、长工时和睡眠债会降低警觉、判断和事故防护能力 |
+| `situational-awareness-decision-environment-continuity/` | 情境感知和决策环境决定主体是否知道发生了什么、风险在哪里、下一步如何行动 |
+| `handoff-checklist-procedure-reliability-continuity/` | 交接、清单和标准工作决定状态在跨人、跨班次、跨机构转移时是否丢失 |
+| `incident-reporting-just-culture-learning-continuity/` | 事件报告和公正文化决定错误、险情和事故能否转化为组织学习 |
+| `automation-bias-mode-confusion-oversight-continuity/` | 自动化偏误、模式混淆和过度依赖会把工具增强转化为隐形失控 |
+| `alert-fatigue-interruption-signal-management-continuity/` | 告警疲劳和中断管理决定重要信号是否能穿透噪声并获得可靠响应 |
 | `substance-exposure-control/` | 烟草、酒精、成瘾性物质和有害暴露会同时改变风险函数与主体自主性 |
 | `health-literacy-navigation/` | 医疗和社会服务只有可理解、可导航、可复核时才会转化为主体收益 |
 | `oral-health-continuity/` | 口腔健康连接营养、疼痛、感染、沟通和社会参与 |
@@ -635,6 +643,14 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | Life review / reminiscence / narrative identity literature | 提示生命叙事和回顾能影响身份整合、意义感、尊严和记忆转交 |
 | Ritual / ceremony / meaning-making literature | 提示生命转换需要社会承认、纪念和共同体承接，不能只归入行政记录 |
 | Dignity therapy / person-centered care literature | 提示尊严、人格承认和非羞辱是照护、临终、失能和制度接触中的主体性约束 |
+| NASA Human Systems Integration / NIST Human-Centered Design / FDA human factors guidance | 提示人因、工效学、可用性工程和人-系统适配是任务可靠性基础设施，不是界面美化 |
+| NASA-TLX / cognitive load theory / workload measurement literature | 提示认知负荷、mental workload 和任务复杂度需要独立测量，不能只用主观努力叙事 |
+| NIOSH fatigue / OSHA worker fatigue / FAA fatigue resources | 提示疲劳、长工时、夜班、睡眠债和警觉下降是安全风险和组织设计变量 |
+| AHRQ TeamSTEPPS / aviation situation-awareness literature | 提示情境感知、共享心智模型和团队沟通是高风险决策环境的核心条件 |
+| WHO Surgical Safety Checklist / AHRQ TeamSTEPPS handoff resources | 提示交接、read-back、briefing/debriefing 和清单能降低跨人跨班次状态丢失 |
+| AHRQ PSNet just culture / WHO patient safety / IHI RCA2 | 提示事件报告、near miss、公正文化和强纠正行动是组织学习而非追责工具 |
+| NIST AI RMF / Human-AI interaction guidelines / FAA automation literature | 提示自动化偏误、模式混淆、过度依赖和人工监督需要独立治理 |
+| Joint Commission / AHRQ alarm fatigue / notification fatigue literature | 提示告警、警报、通知和中断必须按信号价值管理，否则会吞噬注意力预算 |
 | WHO Tobacco / Alcohol | 提示有害物质暴露和成瘾会改变死亡风险、资源消耗和主体自主性 |
 | CDC / HHS Health Literacy | 提示信息可理解性和服务导航决定医疗资源能否实际转化为主体收益 |
 | WHO / CDC Oral Health | 提示口腔健康连接营养、疼痛、感染、沟通和生活质量 |
@@ -850,6 +866,16 @@ Source links:
 - https://pubmed.ncbi.nlm.nih.gov/31486839/
 - https://pubmed.ncbi.nlm.nih.gov/16233908/
 - https://pubmed.ncbi.nlm.nih.gov/21761863/
+- https://www.nasa.gov/human-systems-integration-division/nasa-task-load-index-tlx/
+- https://www.nist.gov/itl/iad/human-centered-technologies/human-factors-human-centered-design
+- https://www.fda.gov/regulatory-information/search-fda-guidance-documents/applying-human-factors-and-usability-engineering-medical-devices
+- https://www.cdc.gov/niosh/bulletin/2023/fatigue.html
+- https://www.osha.gov/worker-fatigue
+- https://www.ahrq.gov/teamstepps-program/index.html
+- https://www.who.int/teams/integrated-health-services/patient-safety/research/safe-surgery/tool-and-resources
+- https://psnet.ahrq.gov/primer/culture-safety
+- https://www.nist.gov/itl/ai-risk-management-framework
+- https://doi.org/10.1145/3290605.3300233
 - https://www.who.int/news-room/fact-sheets/detail/hypertension
 - https://www.who.int/news-room/fact-sheets/detail/musculoskeletal-conditions
 - https://www.who.int/news-room/fact-sheets/detail/falls

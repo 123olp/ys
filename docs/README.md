@@ -82,6 +82,7 @@ docs/
 │   ├── 0064-add-sixtieth-wave-post-death-survivor-continuity-domains.md
 │   ├── 0065-add-sixty-first-wave-relational-social-capital-continuity-domains.md
 │   ├── 0066-add-sixty-second-wave-meaning-culture-identity-continuity-domains.md
+│   ├── 0067-add-sixty-third-wave-human-factors-operational-reliability-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -481,4 +482,12 @@ docs/
 344. Read `../domains/narrative-identity-life-review-continuity/README.md` if you are working on narrative identity, life review, reminiscence, autobiography, memory work, life story, or identity reconstruction.
 345. Read `../domains/ritual-ceremony-life-transition-continuity/README.md` if you are working on rituals, ceremonies, rites of passage, memorials, life transitions, public recognition, or community recognition.
 346. Read `../domains/dignity-personhood-respect-continuity/README.md` if you are working on dignity, personhood, respect, autonomy, non-humiliation, person-centered care, or dehumanization risk.
-347. Enter a domain under `../domains/`.
+347. Read `../domains/human-factors-ergonomics-task-system-continuity/README.md` if you are working on human factors, ergonomics, human systems integration, usability engineering, task-system fit, or human-centered design.
+348. Read `../domains/cognitive-load-workload-measurement-continuity/README.md` if you are working on cognitive load, NASA-TLX, mental workload, working memory, task complexity, or workload measurement.
+349. Read `../domains/fatigue-risk-alertness-continuity/README.md` if you are working on fatigue risk, shift work, long hours, alertness, sleep debt, recovery windows, or fatigue safety.
+350. Read `../domains/situational-awareness-decision-environment-continuity/README.md` if you are working on situation awareness, sensemaking, shared mental models, decision support, risk picture, or state dashboards.
+351. Read `../domains/handoff-checklist-procedure-reliability-continuity/README.md` if you are working on handoffs, checklists, SOPs, standard work, read-back, briefing, debriefing, or process reliability.
+352. Read `../domains/incident-reporting-just-culture-learning-continuity/README.md` if you are working on incident reporting, near misses, just culture, safety culture, RCA/RCA2, corrective actions, or learning systems.
+353. Read `../domains/automation-bias-mode-confusion-oversight-continuity/README.md` if you are working on automation bias, mode confusion, overreliance, human override, supervisory control, or meaningful human oversight.
+354. Read `../domains/alert-fatigue-interruption-signal-management-continuity/README.md` if you are working on alert fatigue, alarm fatigue, notification fatigue, interruptions, signal prioritization, quiet hours, or escalation routing.
+355. Enter a domain under `../domains/`.

@@ -75,6 +75,7 @@ docs/
 │   ├── 0064-add-sixtieth-wave-post-death-survivor-continuity-domains.md
 │   ├── 0065-add-sixty-first-wave-relational-social-capital-continuity-domains.md
 │   ├── 0066-add-sixty-second-wave-meaning-culture-identity-continuity-domains.md
+│   ├── 0067-add-sixty-third-wave-human-factors-operational-reliability-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -199,6 +200,7 @@ docs/
 - `domains/death-certificate-registration-cause-of-death-record-continuity/`、`domains/funeral-cremation-burial-disposition-continuity/`、`domains/cemetery-memorial-remains-location-continuity/`、`domains/bereavement-leave-grief-support-continuity/`、`domains/survivor-benefits-death-notification-continuity/`、`domains/life-insurance-beneficiary-claim-continuity/`、`domains/estate-inventory-asset-liability-handoff-continuity/` 和 `domains/post-death-account-closure-service-cancellation-continuity/`：第六十波正式研究域，分别承载死亡证明/死因记录、葬礼火化土葬与遗体处置、墓地纪念与遗体位置、丧亲假与悲伤支持、遗属福利死亡通知、寿险受益人理赔、遗产清单资产负债交接和死亡后账户关闭服务取消连续性。
 - `domains/loneliness-social-isolation-risk-continuity/`、`domains/social-prescribing-community-referral-continuity/`、`domains/mutual-aid-neighbor-support-network-continuity/`、`domains/volunteering-civic-service-participation-continuity/`、`domains/community-mediation-neighbor-conflict-resolution-continuity/`、`domains/restorative-justice-repair-accountability-continuity/`、`domains/reputation-defamation-public-trust-repair-continuity/`、`domains/references-vouching-recommendation-social-capital-continuity/` 和 `domains/third-place-belonging-social-participation-continuity/`：第六十一波正式研究域，分别承载孤独/社会隔离风险、社会处方/社区转介、互助邻里支持、志愿服务/公民参与、社区调解/邻里冲突、修复性司法/责任修复、声誉诽谤/公共信任修复、推荐背书/社会资本和第三空间/归属参与连续性。
 - `domains/purpose-meaning-existential-continuity/`、`domains/spiritual-care-religious-practice-continuity/`、`domains/cultural-heritage-identity-continuity/`、`domains/arts-creative-expression-participation-continuity/`、`domains/leisure-recreation-restorative-activity-continuity/`、`domains/narrative-identity-life-review-continuity/`、`domains/ritual-ceremony-life-transition-continuity/` 和 `domains/dignity-personhood-respect-continuity/`：第六十二波正式研究域，分别承载目的意义/存在连续性、精神照护/宗教实践、文化遗产/身份、艺术创造表达、休闲娱乐恢复、叙事身份/生命回顾、仪式典礼/生命过渡和尊严人格承认连续性。
+- `domains/human-factors-ergonomics-task-system-continuity/`、`domains/cognitive-load-workload-measurement-continuity/`、`domains/fatigue-risk-alertness-continuity/`、`domains/situational-awareness-decision-environment-continuity/`、`domains/handoff-checklist-procedure-reliability-continuity/`、`domains/incident-reporting-just-culture-learning-continuity/`、`domains/automation-bias-mode-confusion-oversight-continuity/` 和 `domains/alert-fatigue-interruption-signal-management-continuity/`：第六十三波正式研究域，分别承载人因/工效学任务系统、认知负荷/工作负荷测量、疲劳风险/警觉性、情境感知/决策环境、交接清单/过程可靠性、事件报告/公正文化学习、自动化偏误/模式混淆监督和告警疲劳/中断信号管理连续性。
 - `reference/research-model-visualization-toolkit.md`：沉淀科研论文阅读、文献脊梁、模型工具、可视化标准和 Human Infra 定量页面实现路线。
 - `reference/source-card-system.md`：定义论文、书籍、工具、案例、标准和数据集进入项目之前的资料卡片制度。
 - `reference/domain-map.md`：定义根项目与子域的边界、迁移切片、主动不做和验证点。
