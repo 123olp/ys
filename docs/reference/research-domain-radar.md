@@ -22,11 +22,6 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | --- | --- | --- | --- | --- |
 | `metabolic-nutrient-sensing` | 营养感知决定代谢状态、修复和衰老速度 | 胰岛素、mTOR、AMPK、NAD、代谢健康 | 先归入 `longevity-evidence/` | 与长寿干预证据账本分离价值足够高时晋升 |
 | `reproductive-embryonic-rejuvenation` | 自然繁殖包含年龄重置线索 | 胚胎年龄归零、配子质量、代际连续性 | 先归入 `cellular-reprogramming/` | 若成为细胞年轻化理论主轴则晋升 |
-| `digital-identity-security` | 主体在数字社会中必须保有身份、账户和数据入口 | 账号安全、身份盗用、恢复能力、服务入口 | 先归入 `governance-rights/` 与 `resource-social-infra/` | 数字身份成为主体持续性的独立基础设施时晋升 |
-| `ai-agency-safety` | AI 工具放大主体能力，也可能替代或支配主体 | AI 代理、控制权、可解释性、偏差、失控 | 先归入 `cognitive-augmentation/` 与 `governance-rights/` | AI 代理成为独立行动层时晋升 |
-| `space-extreme-habitation` | 主体可能需要跨越极端环境和地外生存风险 | 辐射、微重力、隔离、闭环生命支持、任务风险 | 先归入 `risk-engineering/` 与 `resource-social-infra/` | 空间栖居、极端环境或闭环生态成为独立路线时晋升 |
-| `supply-chain-continuity` | 药物、能源、食物和设备断供会截断主体持续性 | 供应链、库存、替代、断供风险 | 先归入 `resource-social-infra/` | 需要独立建模关键物资连续性时晋升 |
-| `synthetic-biology-biosecurity` | 生物技术既能修复主体，也能制造新型风险 | 合成生物学、病原体风险、双重用途、治理 | 先归入 `risk-engineering/` 与 `governance-rights/` | 双重用途治理成为独立研究主线时晋升 |
 
 ## 已从 Radar 晋升的方向
 
@@ -56,6 +51,11 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `microbiome-ecology/` | 宿主-微生物生态连接代谢、免疫、炎症、感染抵抗和药物反应 |
 | `stem-cell-reserve-renewal/` | 干细胞储备和生态位决定内源性组织更新、再生能力和肿瘤风险 |
 | `renal-hepatic-clearance/` | 肾脏和肝脏清除能力约束毒性、药物安全、治疗选择和系统稳态 |
+| `digital-identity-security/` | 数字身份、账号恢复和服务入口是主体长期接入制度、资源和数据的独立基础设施 |
+| `ai-agency-safety/` | AI 代理获得外部行动接口后，需要独立处理授权、监督、审计、回滚和失效隔离 |
+| `supply-chain-continuity/` | 药品、能源、食物、设备、通信和物流断供具有独立依赖链与恢复模型 |
+| `synthetic-biology-biosecurity/` | 生物技术双重用途风险需要独立的生物安全、生物安保和禁止用途边界 |
+| `space-extreme-habitation/` | 空间和极端环境把辐射、微重力、隔离、闭环资源和远程医疗变成综合风险域 |
 
 ## 来源信号
 
@@ -85,6 +85,11 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | NCI DNA Damage / Telomeres fact sheets | 提示遗传信息稳定、修复系统、端粒和癌症风险之间的边界 |
 | NIH Human Microbiome Project | 提示人体微生物生态是代谢、免疫、感染抵抗和药物反应的宿主接口 |
 | NIDDK Kidney / Liver disease resources | 提示肾脏、肝脏、代谢、解毒和药物清除是长期医学可用性的系统约束 |
+| NIST Digital Identity Guidelines | 提示数字身份、认证、账号恢复和服务入口是数字社会中的主体连续性基础设施 |
+| NIST AI RMF / Generative AI Profile | 提示 AI 代理和生成式 AI 需要独立的 govern、map、measure、manage 风险治理 |
+| CISA ICT Supply Chain Risk Management | 提示关键供应链、供应商依赖和 ICT 连续性是资源与工具系统的外部失败模式 |
+| NIH recombinant or synthetic nucleic-acid guidelines / WHO Laboratory Biosafety Manual | 提示合成生物学、生物安全、生物安保和双重用途风险需要单独治理边界 |
+| NASA Human Research Program risks and evidence | 提示空间飞行、辐射、微重力、隔离、闭环生命支持和远程医疗是未来可达性场景 |
 
 Source links:
 
@@ -124,6 +129,15 @@ Source links:
 - https://commonfund.nih.gov/hmp
 - https://www.niddk.nih.gov/health-information/kidney-disease/chronic-kidney-disease-ckd
 - https://www.niddk.nih.gov/health-information/liver-disease
+- https://www.nist.gov/itl/applied-cybersecurity/special-publication-800-63
+- https://www.nist.gov/itl/ai-risk-management-framework
+- https://www.nist.gov/itl/ai-risk-management-framework/ai-risk-management-framework-generative-ai-profile
+- https://www.cisa.gov/topics/critical-infrastructure-security-and-resilience/ict-supply-chain-risk-management
+- https://osp.od.nih.gov/policies/biosafety-and-biosecurity-policy/#tab2/
+- https://www.who.int/publications/i/item/9789240011311
+- https://www.nasa.gov/hrp/
+- https://humanresearchroadmap.nasa.gov/evidence/
+- https://humanresearchroadmap.nasa.gov/risks/
 
 ## 使用规则
 

@@ -30,6 +30,8 @@
 - `memory-editing/`：记忆编辑与人格连续性。
 - `biostasis-cryopreservation/`：生物停滞与冷冻保存，整理暂停损耗和等待未来修复路径。
 - `cognitive-augmentation/`：认知增强，整理 AI、外部记忆、学习系统、脑机接口和行动放大工具。
+- `ai-agency-safety/`：AI 代理安全，整理授权、工具调用、监督、审计、回滚和失效隔离。
+- `digital-identity-security/`：数字身份安全，整理账号、凭据、身份恢复、服务入口和数据可携带。
 - `mental-health-affective-stability/`：心理健康与情绪稳定，整理动机、压力恢复、成瘾、创伤和自杀风险。
 - `sleep-circadian-recovery/`：睡眠、昼夜节律与恢复，整理疲劳、修复和长期恢复能力。
 - `assistive-technology-access/`：辅助技术可及，整理助听、低视力辅助、轮椅、义肢、沟通辅助和无障碍。
@@ -37,6 +39,9 @@
 - `risk-engineering/`：风险工程，整理事故、灾害、暴力、系统故障和尾部风险治理。
 - `planetary-health-environment/`：星球健康与环境，整理空气、水、气候、污染、生态系统和食物系统。
 - `resource-social-infra/`：资源与社会基础设施，整理食物、水、能源、住房、医疗、照护和社会支持。
+- `supply-chain-continuity/`：供应链连续性，整理关键物资、服务、物流、替代路径和恢复时间。
+- `synthetic-biology-biosecurity/`：合成生物学与生物安全，整理双重用途、生物安全、生物安保和治理边界。
+- `space-extreme-habitation/`：空间与极端栖居，整理辐射、微重力、隔离、闭环资源和远程医疗风险。
 - `social-connection-relational-infra/`：社会连接与关系基础设施，整理孤独、社会隔离、照护网络、信任和社区关系。
 - `governance-rights/`：治理与主体权利，整理同意、退出、数据权、法律身份、AI 治理和研究伦理。
 - `pain-suffering-control/`：疼痛与痛苦控制，整理慢性疼痛、症状负担、姑息医学和可承受持续性。

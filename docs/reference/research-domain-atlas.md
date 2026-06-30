@@ -13,6 +13,7 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
   -> 风险函数必须被压低
   -> 资源、环境和社会支持必须稳定
   -> 工具和认知系统必须放大主体而不是吞噬主体
+  -> 数字身份、AI 代理、供应链、生物安全和极端栖居等外部技术底座必须可控
   -> 治理和权利必须保护同意、退出和身份
   -> 测量、预测和反馈必须让维护过程可校正
 ```
@@ -61,6 +62,8 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 等待成本可压缩 | `future-waiting/` | 主观时间、相对时间、未来窗口 | 退出失败、连续性失败、工程风险 |
 | 损耗可暂停 | `biostasis-cryopreservation/` | 结构保存、代谢降低、未来修复机会 | 不可逆损坏、复温失败、复活外推 |
 | 认知与行动可放大 | `cognitive-augmentation/` | 学习、判断、记忆外化、工具能力 | 依赖、失控、主体自主性下降 |
+| AI 代理可受控 | `ai-agency-safety/` | AI 代理、授权、工具调用、监督、审计 | 代理越权、误导、泄露、不可逆行动 |
+| 数字身份可恢复 | `digital-identity-security/` | 账号、凭据、身份恢复、服务入口 | 身份盗用、账号丢失、服务断线 |
 | 心理和动机系统可稳定 | `mental-health-affective-stability/` | 情绪稳定、压力恢复、动机、自杀风险 | 自伤、成瘾、行动崩塌、关系断裂 |
 | 恢复调度可稳定 | `sleep-circadian-recovery/` | 睡眠、昼夜节律、疲劳、恢复能力 | 慢性疲劳、错误、代谢/免疫/情绪失稳 |
 | 能力可被工具补偿 | `assistive-technology-access/` | 辅助设备、无障碍、环境适配 | 有技术但不可及、维护失败、参与排除 |
@@ -68,6 +71,9 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 外部风险可治理 | `risk-engineering/` | 风险暴露、预警、恢复能力 | 事故、灾害、暴力、系统性失效 |
 | 环境底座可承载主体 | `planetary-health-environment/` | 空气、水、气候、污染、生态系统 | 环境暴露、资源崩塌、迁移、灾害 |
 | 资源和社会底座可持续 | `resource-social-infra/` | 食物、水、能源、住房、照护、医疗可及 | 断供、贫困、服务排除、社会孤立 |
+| 关键供应链可连续 | `supply-chain-continuity/` | 药品、能源、食物、设备、通信、物流 | 断供、单点故障、替代失败 |
+| 生物技术双重用途可治理 | `synthetic-biology-biosecurity/` | 生物安全、生物安保、双重用途、治理 | 病原风险、误用、实验外泄 |
+| 极端环境可栖居 | `space-extreme-habitation/` | 辐射、微重力、隔离、闭环生命支持 | 环境失效、资源闭环失败、远程医疗失败 |
 | 关系网络可支撑主体 | `social-connection-relational-infra/` | 社会连接、孤独、照护网络、信任、协作 | 孤立、照护断裂、危机无人接住 |
 | 权利和治理可保护主体 | `governance-rights/` | 同意、退出、数据权、法律身份 | 被控制、被剥夺、被系统吞噬 |
 | 服务入口可理解可导航 | `health-literacy-navigation/` | 健康素养、服务导航、风险沟通、共同决策 | 有资源但不会用、误解、延误、行政排除 |
@@ -85,6 +91,7 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
   -> 认知与工具增强
   -> 风险函数压低
   -> 资源环境支撑
+  -> 外部技术底座可控
   -> 制度治理保护
   -> 测量、预测与反馈
   -> 各研究域通过证据、模型和治理进入同一个主体持续性系统
@@ -120,6 +127,8 @@ neuro-continuity
   -> sensory-continuity
   -> memory-editing
   -> cognitive-augmentation
+  -> ai-agency-safety
+  -> digital-identity-security
   -> disembodied-cns
 ```
 
@@ -137,6 +146,9 @@ future-waiting
 risk-engineering
   -> planetary-health-environment
   -> resource-social-infra
+  -> supply-chain-continuity
+  -> synthetic-biology-biosecurity
+  -> space-extreme-habitation
   -> social-connection-relational-infra
   -> health-literacy-navigation
   -> substance-exposure-control

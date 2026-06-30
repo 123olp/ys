@@ -17,6 +17,9 @@ domains/
 ├── biostasis-cryopreservation/
 │   ├── AGENTS.md
 │   └── README.md
+├── ai-agency-safety/
+│   ├── AGENTS.md
+│   └── README.md
 ├── cancer-control/
 │   ├── AGENTS.md
 │   └── README.md
@@ -24,6 +27,9 @@ domains/
 │   ├── AGENTS.md
 │   └── README.md
 ├── cognitive-augmentation/
+│   ├── AGENTS.md
+│   └── README.md
+├── digital-identity-security/
 │   ├── AGENTS.md
 │   └── README.md
 ├── disembodied-cns/
@@ -120,7 +126,16 @@ domains/
 ├── social-connection-relational-infra/
 │   ├── AGENTS.md
 │   └── README.md
+├── space-extreme-habitation/
+│   ├── AGENTS.md
+│   └── README.md
 ├── substance-exposure-control/
+│   ├── AGENTS.md
+│   └── README.md
+├── supply-chain-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── synthetic-biology-biosecurity/
 │   ├── AGENTS.md
 │   └── README.md
 ├── health-literacy-navigation/
@@ -140,14 +155,14 @@ domains/
 - `regenerative-medicine/`、`cancer-control/` 和 `immune-maintenance/` 负责身体基底维护相关的机制、风险和证据边界。
 - `rehabilitation-functioning/`、`assistive-technology-access/` 和 `sensory-continuity/` 负责功能恢复、能力补偿和感官反馈连续性。
 - `antimicrobial-resilience/` 负责抗微生物耐药、感染控制和现代医学抗感染底座。
-- `neuro-continuity/`、`memory-editing/`、`cognitive-augmentation/` 和 `disembodied-cns/` 负责神经、身份、认知和去具身连续性相关边界。
+- `neuro-continuity/`、`memory-editing/`、`cognitive-augmentation/`、`ai-agency-safety/`、`digital-identity-security/` 和 `disembodied-cns/` 负责神经、身份、认知、AI 代理、数字入口和去具身连续性相关边界。
 - `mental-health-affective-stability/`、`sleep-circadian-recovery/` 和 `pain-suffering-control/` 负责心理稳定、恢复调度和持续存在的可承受性。
 - `social-connection-relational-infra/` 负责社会连接、孤独、照护网络、信任和社区关系。
 - `substance-exposure-control/` 负责烟草、酒精、成瘾性物质、有害暴露和主体自主性风险。
 - `health-literacy-navigation/` 负责健康素养、服务导航、可理解信息、风险沟通和共同决策。
 - `oral-health-continuity/` 负责口腔健康、咀嚼、疼痛、感染、营养和沟通连续性。
 - `future-waiting/` 和 `biostasis-cryopreservation/` 负责等待未来的时间成本和损耗成本路径。
-- `risk-engineering/`、`planetary-health-environment/`、`resource-social-infra/` 和 `governance-rights/` 负责外部风险、环境底座、资源底座和主体权利保护。
+- `risk-engineering/`、`planetary-health-environment/`、`resource-social-infra/`、`supply-chain-continuity/`、`synthetic-biology-biosecurity/`、`space-extreme-habitation/` 和 `governance-rights/` 负责外部风险、环境底座、资源底座、关键供应链、生物安全、极端栖居和主体权利保护。
 - `measurement-feedback/` 负责所有研究域进入定量模型前的测量、预测和反馈接口。
 - 子域之间共享 Human Infra 的伦理和证据原则，但不能共享模糊数据目录或脚本目录。
 

@@ -37,12 +37,14 @@ human_infra/
     ├── AGENTS.md          # 子域目录维护规则
     ├── antimicrobial-resilience/ # 抗微生物韧性
     ├── assistive-technology-access/ # 辅助技术与无障碍
+    ├── ai-agency-safety/  # AI 代理安全
     ├── biostasis-cryopreservation/ # 生物停滞与冷冻保存
     ├── cancer-control/    # 癌症控制
     ├── cardiovascular-resilience/ # 心血管韧性
     ├── cellular-senescence-clearance/ # 细胞衰老与清除
     ├── cellular-reprogramming/ # 细胞重编程与表观遗传年轻化谱系
     ├── cognitive-augmentation/ # 认知增强与工具放大
+    ├── digital-identity-security/ # 数字身份安全
     ├── disembodied-cns/   # 去具身外部维持型中枢生命系统
     ├── future-waiting/    # 去未来 / 压缩等待路径
     ├── governance-rights/ # 治理与主体权利
@@ -71,8 +73,11 @@ human_infra/
     ├── sensory-continuity/ # 感官连续性
     ├── sleep-circadian-recovery/ # 睡眠、节律与恢复
     ├── social-connection-relational-infra/ # 社会连接与关系基础设施
+    ├── space-extreme-habitation/ # 空间与极端栖居
     ├── stem-cell-reserve-renewal/ # 干细胞储备与组织更新
     ├── substance-exposure-control/ # 物质暴露控制
+    ├── supply-chain-continuity/ # 供应链连续性
+    ├── synthetic-biology-biosecurity/ # 合成生物学与生物安全
     └── telomere-maintenance/ # 端粒维护
 ```
 
@@ -111,6 +116,8 @@ human_infra/
 - `domains/memory-editing/` 负责记忆编辑的概念、证据、验证和伦理边界，不提供可执行神经操控步骤。
 - `domains/biostasis-cryopreservation/` 负责冷冻保存、生物停滞、休眠和等待未来修复路径。
 - `domains/cognitive-augmentation/` 负责 AI 辅助、外部记忆、学习系统、脑机接口和行动放大工具。
+- `domains/ai-agency-safety/` 负责 AI 代理、工具调用、授权、监督、审计、回滚和失效隔离。
+- `domains/digital-identity-security/` 负责数字身份、账号、凭据、身份恢复、服务入口和数据可携带。
 - `domains/mental-health-affective-stability/` 负责心理健康、情绪稳定、动机、成瘾、创伤和自杀风险。
 - `domains/sleep-circadian-recovery/` 负责睡眠、昼夜节律、疲劳和恢复系统。
 - `domains/assistive-technology-access/` 负责辅助技术、无障碍、义肢、助听、低视力辅助、轮椅和沟通辅助。
@@ -118,6 +125,9 @@ human_infra/
 - `domains/risk-engineering/` 负责事故、灾害、暴力、环境风险、系统故障和尾部风险工程。
 - `domains/planetary-health-environment/` 负责空气、水、气候、污染、生态系统和食物系统。
 - `domains/resource-social-infra/` 负责食物、水、能源、住房、医疗、照护、金融、教育、就业和社会支持。
+- `domains/supply-chain-continuity/` 负责药品、能源、食物、设备、通信、芯片、物流和替代路径。
+- `domains/synthetic-biology-biosecurity/` 负责合成生物学、生物安全、生物安保、双重用途风险和治理边界。
+- `domains/space-extreme-habitation/` 负责空间飞行、极端环境、闭环生命支持、隔离、辐射和远程医疗。
 - `domains/social-connection-relational-infra/` 负责社会连接、孤独、社会隔离、家庭照护网络、信任和社区关系。
 - `domains/governance-rights/` 负责主体权利、法律身份、同意、退出、数据权、AI 治理和研究伦理。
 - `domains/pain-suffering-control/` 负责疼痛、痛苦、症状负担、姑息医学和可承受持续性。
@@ -130,7 +140,7 @@ human_infra/
 
 - Human Infra 的上位对象是“人类任务执行系统”，不是单一长寿产品。
 - Longevity Evidence 承接原 Biocat，但不再占据根目录概念中心。
-- “永生”的不同路径必须按机制拆分：长寿证据、营养代谢、基因组稳定性、端粒维护、蛋白稳态、自噬、线粒体、细胞衰老、微生物生态、干细胞储备、肝肾清除、身体活动、心血管韧性、肌骨完整性、细胞重编程、再生医学、康复功能、癌症控制、免疫维护、抗微生物韧性、神经连续性、感官连续性、未来等待、生物停滞、去具身中枢、记忆编辑、认知增强、心理稳定、睡眠恢复、辅助技术、社会连接、物质暴露控制、资源环境、风险工程、健康素养导航、治理权利、口腔健康、痛苦控制和测量反馈不能混成一个概念桶。
+- “永生”的不同路径必须按机制拆分：长寿证据、营养代谢、基因组稳定性、端粒维护、蛋白稳态、自噬、线粒体、细胞衰老、微生物生态、干细胞储备、肝肾清除、身体活动、心血管韧性、肌骨完整性、细胞重编程、再生医学、康复功能、癌症控制、免疫维护、抗微生物韧性、神经连续性、感官连续性、未来等待、生物停滞、去具身中枢、记忆编辑、认知增强、AI 代理安全、数字身份安全、心理稳定、睡眠恢复、辅助技术、社会连接、物质暴露控制、资源环境、供应链连续性、合成生物学与生物安全、空间极端栖居、风险工程、健康素养导航、治理权利、口腔健康、痛苦控制和测量反馈不能混成一个概念桶。
 - 所有健康、神经、生命支持相关结论必须保留来源、适用对象、不确定性和伦理边界。
 - 新增研究域必须能回到 `docs/reference/research-domain-atlas.md` 的先验条件和域判定契约。
 - 自研代码只做连接、清洗、归一化、证据编排和产品表达；优先复用官方 API、公开数据库和成熟工具。
@@ -158,3 +168,4 @@ human_infra/
 - 2026-06-30：新增第二波 8 个研究域骨架，覆盖康复功能、心理稳定、睡眠恢复、辅助技术、抗微生物韧性、环境底座、感官连续性和痛苦控制。
 - 2026-06-30：新增第三波 8 个研究域骨架，覆盖营养代谢、身体活动、心血管韧性、肌骨完整性、社会连接、物质暴露控制、健康素养导航和口腔健康连续性。
 - 2026-06-30：新增第四波 8 个分子维护研究域骨架，覆盖基因组稳定性、端粒维护、蛋白稳态、自噬、线粒体生物能量学、细胞衰老清除、微生物生态、干细胞储备和肝肾清除。
+- 2026-06-30：新增第五波 5 个外部技术风险域骨架，覆盖数字身份安全、AI 代理安全、供应链连续性、合成生物学与生物安全、空间与极端栖居。
