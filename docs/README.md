@@ -42,6 +42,7 @@ docs/
 │   ├── 0024-add-twentieth-wave-clinical-drug-ems-surgical-road-safety-domains.md
 │   ├── 0025-add-twenty-first-wave-rural-homelessness-correctional-disability-dementia-infectious-continuity-domains.md
 │   ├── 0026-add-twenty-second-wave-crisis-exploitation-recovery-domains.md
+│   ├── 0027-add-twenty-third-wave-complex-care-navigation-transition-decision-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -177,4 +178,10 @@ docs/
 80. Read `../domains/child-protection-family-safety/README.md` if you are working on child protection, child welfare, child abuse and neglect prevention, ACEs, family safety, or trauma-informed child services.
 81. Read `../domains/fraud-scams-consumer-protection/README.md` if you are working on scams, fraud, phishing, identity theft recovery, consumer complaints, consumer protection, or fraud risk communication.
 82. Read `../domains/online-safety-digital-harm-prevention/README.md` if you are working on online safety, cyberbullying, online harassment, digital abuse, child online protection, platform reporting, or digital harm recovery.
-83. Enter a domain under `../domains/`.
+83. Read `../domains/rare-disease-diagnostic-odyssey-care-coordination/README.md` if you are working on rare diseases, undiagnosed disease, diagnostic odyssey, genetic testing pathways, expert referral, patient registries, or orphan products.
+84. Read `../domains/multimorbidity-polypharmacy-care-coordination/README.md` if you are working on multimorbidity, multiple chronic conditions, polypharmacy, medication reconciliation, treatment burden, or complex care plans.
+85. Read `../domains/care-transitions-discharge-continuity/README.md` if you are working on discharge planning, care transitions, handoffs, medication reconciliation, follow-up, readmissions, or cross-setting care continuity.
+86. Read `../domains/home-health-hospice-palliative-care-continuity/README.md` if you are working on home health, serious illness care, palliative care, hospice, symptom burden, caregiver support, or goals-of-care systems.
+87. Read `../domains/medical-interpreter-cultural-mediation/README.md` if you are working on medical interpreting, language assistance, CLAS, LEP, culturally appropriate care, informed-consent understanding, or clinical communication access.
+88. Read `../domains/patient-advocacy-shared-decision-making/README.md` if you are working on patient advocacy, shared decision-making, decision aids, informed consent, patient participation, treatment burden, or preference-sensitive care.
+89. Enter a domain under `../domains/`.

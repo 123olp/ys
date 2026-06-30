@@ -112,6 +112,12 @@
 - `child-protection-family-safety/`：儿童保护与家庭安全，整理儿童虐待忽视、ACEs、儿童福利、家庭支持和创伤知情服务。
 - `fraud-scams-consumer-protection/`：诈骗、欺诈与消费者保护，整理诈骗识别、身份盗用恢复、投诉举报、消费者保护和风险沟通。
 - `online-safety-digital-harm-prevention/`：在线安全与数字伤害预防，整理网络霸凌、在线骚扰、数字虐待、儿童在线保护和平台求助路径。
+- `rare-disease-diagnostic-odyssey-care-coordination/`：罕见病诊断漫游与照护协调，整理罕见病、未确诊疾病、诊断延误、专家网络、患者登记和孤儿药路径。
+- `multimorbidity-polypharmacy-care-coordination/`：多病共存、多重用药与照护协调，整理复杂病例、多专科冲突、药物重整、治疗负担和照护计划。
+- `care-transitions-discharge-continuity/`：照护转移与出院连续性，整理出院计划、交接、用药重整、随访、再入院和跨机构责任断点。
+- `home-health-hospice-palliative-care-continuity/`：居家医疗、缓和医疗、安宁疗护与临终连续性，整理严重疾病、症状负担、家庭照护、目标照护和可承受持续性。
+- `medical-interpreter-cultural-mediation/`：医疗解释、语言可达与文化中介，整理医疗解释服务、CLAS、LEP、知情同意理解和临床沟通安全。
+- `patient-advocacy-shared-decision-making/`：患者倡导与共同决策，整理患者参与、决策辅助、主体偏好、治疗负担、知情同意和未来选择权。
 - `insurance-risk-transfer/`：保险与风险转移，整理健康、失业、工伤、残障、灾害、存款、养老金等风险池和保障缺口。
 - `childcare-family-continuity/`：托育与家庭连续性，整理托育可及、费用、质量、早期儿童发展、父母工作连续性和家庭压力。
 - `emergency-preparedness-response/`：应急准备与响应，整理灾害准备、预警、应急通信、急救医疗、安置和恢复。

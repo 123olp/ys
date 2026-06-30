@@ -166,6 +166,12 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 儿童安全可支撑未来主体 | `child-protection-family-safety/` | 儿童虐待忽视、ACEs、儿童福利、家庭支持、创伤知情服务 | 早期创伤、家庭失稳、剥削和制度误伤破坏未来主体能力形成 |
 | 欺诈不能夺走资源入口 | `fraud-scams-consumer-protection/` | 诈骗识别、身份盗用恢复、投诉举报、消费者保护、风险沟通 | 资金、身份、账号、信用、信任和公共服务入口被欺诈系统性夺走 |
 | 数字空间可安全参与 | `online-safety-digital-harm-prevention/` | 网络霸凌、在线骚扰、数字虐待、儿童在线保护、平台求助、恢复路径 | 数字入口变成胁迫、剥削、羞辱、心理伤害和身份风险源 |
+| 低概率复杂疾病路径可被识别 | `rare-disease-diagnostic-odyssey-care-coordination/` | 罕见病、未确诊疾病、诊断漫游、专家网络、患者登记、孤儿药路径 | 误诊、延误、重复检查、研究窗口错失和家庭负担把可修复机会推迟到不可逆阶段 |
+| 多疾病多药物可被统一协调 | `multimorbidity-polypharmacy-care-coordination/` | 多病共存、多重用药、药物重整、治疗负担、跨专科照护计划 | 指南叠加、冲突处方、相互作用、处方级联和治疗负担侵蚀功能状态 |
+| 出院和照护转移不能断线 | `care-transitions-discharge-continuity/` | 出院计划、交接、用药重整、复诊、转诊、再入院、闭环随访 | 离开医院后信息、责任、药物和随访断裂，恢复窗口被浪费 |
+| 严重疾病可被居家和缓和系统接住 | `home-health-hospice-palliative-care-continuity/` | 居家医疗、缓和医疗、安宁疗护、症状负担、目标照护、照护者支持 | 长寿退化为不可承受痛苦、照护者崩溃、目标失配和尊严丧失 |
+| 临床语言和文化接口可理解 | `medical-interpreter-cultural-mediation/` | 医疗解释、语言协助、CLAS、LEP、文化中介、同意理解 | 风险、同意、治疗和随访信息失真，导致误诊、误用药、失访和权利失效 |
+| 主体偏好能进入医疗决策 | `patient-advocacy-shared-decision-making/` | 患者倡导、共同决策、决策辅助、主体偏好、治疗负担、知情同意 | 信息不对称、被动同意、目标不匹配和治疗负担让医疗路径偏离主体未来选择权 |
 | 高成本风险可分摊 | `insurance-risk-transfer/` | 覆盖率、保费、自付、理赔、拒赔、风险池、保障缺口 | 疾病、失业、工伤、残障、灾害或养老金风险由个体独自承担 |
 | 托育和家庭运行可持续 | `childcare-family-continuity/` | 托育可及、费用、质量、早期发展、父母工作连续性、家庭压力 | 儿童发展受损、照护者工作中断、时间贫困和家庭压力升级 |
 | 应急响应可接住主体 | `emergency-preparedness-response/` | 灾害准备、预警、应急通信、急救医疗、安置、公共卫生应急、恢复 | 低频高冲击事件一次性清零长期积累，通信、医疗、撤离或恢复失败 |
@@ -338,6 +344,12 @@ risk-engineering
   -> child-protection-family-safety
   -> fraud-scams-consumer-protection
   -> online-safety-digital-harm-prevention
+  -> rare-disease-diagnostic-odyssey-care-coordination
+  -> multimorbidity-polypharmacy-care-coordination
+  -> care-transitions-discharge-continuity
+  -> home-health-hospice-palliative-care-continuity
+  -> medical-interpreter-cultural-mediation
+  -> patient-advocacy-shared-decision-making
   -> insurance-risk-transfer
   -> childcare-family-continuity
   -> emergency-preparedness-response

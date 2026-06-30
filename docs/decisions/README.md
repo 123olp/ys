@@ -39,3 +39,4 @@ Current decisions:
 - `0024-add-twentieth-wave-clinical-drug-ems-surgical-road-safety-domains.md`
 - `0025-add-twenty-first-wave-rural-homelessness-correctional-disability-dementia-infectious-continuity-domains.md`
 - `0026-add-twenty-second-wave-crisis-exploitation-recovery-domains.md`
+- `0027-add-twenty-third-wave-complex-care-navigation-transition-decision-domains.md`

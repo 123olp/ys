@@ -157,6 +157,12 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `child-protection-family-safety/` | 儿童保护和家庭安全决定虐待、忽视、ACEs 和家庭失稳是否会破坏未来主体能力形成 |
 | `fraud-scams-consumer-protection/` | 诈骗、欺诈和消费者保护决定资金、身份、账号、信用和服务入口是否会被系统性夺走 |
 | `online-safety-digital-harm-prevention/` | 在线安全和数字伤害预防决定数字空间是否仍能支撑学习、工作、社交、求助和恢复 |
+| `rare-disease-diagnostic-odyssey-care-coordination/` | 罕见病诊断漫游决定低概率复杂疾病是否能被识别、转诊、登记、研究和照护系统接住 |
+| `multimorbidity-polypharmacy-care-coordination/` | 多病共存和多重用药决定复杂主体状态是否会被冲突处方、治疗负担和多专科碎片化拖垮 |
+| `care-transitions-discharge-continuity/` | 照护转移和出院连续性决定可修复状态离开医院后是否仍能获得药物、随访、责任和恢复路径 |
+| `home-health-hospice-palliative-care-continuity/` | 居家医疗、缓和医疗和安宁疗护决定严重疾病阶段是否仍保持可承受、可照护、可表达目标的持续性 |
+| `medical-interpreter-cultural-mediation/` | 医疗解释和文化中介决定临床风险、同意、治疗和随访信息是否真正进入主体理解 |
+| `patient-advocacy-shared-decision-making/` | 患者倡导和共同决策决定主体偏好、证据、风险承受和治疗负担是否能进入医疗决策 |
 
 ## 来源信号
 
@@ -292,6 +298,12 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | Child Welfare Information Gateway / CDC ACEs / Children’s Bureau | 提示儿童保护、家庭安全、ACEs、儿童福利和制度伤害风险是儿童发展之外的独立未来主体形成域 |
 | FTC Scams / IdentityTheft.gov / CFPB Consumer Protection / FBI IC3 | 提示诈骗、身份盗用、投诉举报和消费者保护是数字身份与金融韧性之外的独立恢复域 |
 | StopBullying.gov / NCMEC CyberTipline / FTC Online Safety | 提示网络霸凌、在线骚扰、儿童在线剥削和数字伤害预防是数字参与安全的独立域 |
+| NIH GARD / FDA Rare Diseases / NIH Undiagnosed Diseases Network | 提示罕见病和未确诊疾病需要独立处理诊断漫游、专家网络、患者登记、孤儿药和研究窗口 |
+| HHS Multiple Chronic Conditions / WHO Medication Without Harm / AHRQ Care Coordination | 提示多病共存、多重用药、治疗负担和跨专科照护协调是药品可及之外的独立复杂照护域 |
+| AHRQ Care Coordination / AHRQ care transitions resources / CMS quality and discharge materials | 提示出院、交接、用药重整、随访和再入院风险是医疗服务连续性中的独立断点 |
+| CMS Home Health / CMS Hospice / NIA Palliative Care / WHO Palliative Care | 提示居家医疗、缓和医疗、安宁疗护和严重疾病照护需要独立审查可承受持续性、目标照护和照护者支持 |
+| HHS National CLAS / LEP.gov / HHS language access resources | 提示医疗解释、语言协助、文化适宜服务和知情同意理解是临床安全与权利保护的独立接口 |
+| AHRQ SHARE Approach / AHRQ Patient and Family Engagement / CMS person and family engagement | 提示患者倡导、共同决策、决策辅助和主体偏好是医疗路径能否贴合未来选择权的独立域 |
 
 Source links:
 
@@ -736,6 +748,17 @@ Source links:
 - https://www.stopbullying.gov/cyberbullying/what-is-it
 - https://report.cybertip.org/
 - https://consumer.ftc.gov/features/online-security
+- https://rarediseases.info.nih.gov/
+- https://www.fda.gov/industry/medical-products-rare-diseases-and-conditions
+- https://undiagnosed.hms.harvard.edu/
+- https://www.who.int/initiatives/medication-without-harm
+- https://www.ahrq.gov/ncepcr/care/coordination.html
+- https://www.cms.gov/medicare/coverage/home-health-services
+- https://www.cms.gov/medicare/coverage/hospice
+- https://www.nia.nih.gov/health/advance-care-planning/what-are-palliative-care-and-hospice-care
+- https://thinkculturalhealth.hhs.gov/clas
+- https://www.lep.gov/
+- https://www.ahrq.gov/health-literacy/professional-training/shared-decision/index.html
 
 ## 使用规则
 

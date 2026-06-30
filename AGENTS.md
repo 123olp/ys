@@ -137,6 +137,12 @@ human_infra/
     ├── child-protection-family-safety/ # 儿童保护与家庭安全
     ├── fraud-scams-consumer-protection/ # 诈骗、欺诈与消费者保护
     ├── online-safety-digital-harm-prevention/ # 在线安全与数字伤害预防
+    ├── rare-disease-diagnostic-odyssey-care-coordination/ # 罕见病诊断漫游与照护协调
+    ├── multimorbidity-polypharmacy-care-coordination/ # 多病共存、多重用药与照护协调
+    ├── care-transitions-discharge-continuity/ # 照护转移与出院连续性
+    ├── home-health-hospice-palliative-care-continuity/ # 居家医疗、缓和医疗、安宁疗护与临终连续性
+    ├── medical-interpreter-cultural-mediation/ # 医疗解释、语言可达与文化中介
+    ├── patient-advocacy-shared-decision-making/ # 患者倡导与共同决策
     ├── insurance-risk-transfer/ # 保险与风险转移
     ├── childcare-family-continuity/ # 托育与家庭连续性
     ├── learning-skill-acquisition/ # 学习与技能获得
@@ -298,6 +304,12 @@ human_infra/
 - `domains/child-protection-family-safety/` 负责儿童虐待忽视、ACEs、儿童福利、家庭支持、创伤知情服务和制度伤害风险。
 - `domains/fraud-scams-consumer-protection/` 负责诈骗识别、身份盗用恢复、投诉举报、消费者保护和反受害者归因风险沟通。
 - `domains/online-safety-digital-harm-prevention/` 负责网络霸凌、在线骚扰、数字虐待、儿童在线保护、平台求助和数字伤害恢复。
+- `domains/rare-disease-diagnostic-odyssey-care-coordination/` 负责罕见病、未确诊疾病、诊断延误、专家网络、患者登记和孤儿药路径。
+- `domains/multimorbidity-polypharmacy-care-coordination/` 负责多病共存、多重用药、多专科冲突、药物重整、治疗负担和照护计划。
+- `domains/care-transitions-discharge-continuity/` 负责出院计划、照护转移、交接、用药重整、随访、再入院和跨机构责任断点。
+- `domains/home-health-hospice-palliative-care-continuity/` 负责居家医疗、缓和医疗、安宁疗护、严重疾病、症状负担、家庭照护和目标照护。
+- `domains/medical-interpreter-cultural-mediation/` 负责医疗解释服务、语言协助、CLAS、LEP、文化中介、知情同意理解和临床沟通安全。
+- `domains/patient-advocacy-shared-decision-making/` 负责患者倡导、共同决策、决策辅助、主体偏好、治疗负担、知情同意和未来选择权。
 - `domains/insurance-risk-transfer/` 负责健康、失业、工伤、残障、灾害、存款、养老金等风险转移和风险池。
 - `domains/childcare-family-continuity/` 负责托育可及、托育费用、照护质量、早期儿童发展、父母工作连续性和家庭压力。
 - `domains/emergency-preparedness-response/` 负责灾害准备、预警、应急通信、急救医疗、安置、公共卫生应急和灾后恢复。
@@ -365,6 +377,7 @@ human_infra/
 - 2026-06-26：新增 `web/` Observable Framework 应用，作为科研叙事、书籍转译、预测模型和交互图表的正式 Web 入口。
 - 2026-06-27：新增 `tools/arxiv_html_paper_tool.py` 与 `tools/arxiv-html-paper/`，把 arXiv HTML papers 前端框架沉淀为可复用 Astro 工具链。
 - 2026-06-29：新增可控度规等待室假设 working paper 入口和审计账本，把黑洞等待室收敛为固有时差分、退出采用、风险扣减和递归等待的可审查模型。
+- 2026-06-30：新增复杂照护导航、交接与决策连续性域，覆盖罕见病诊断漫游、多病共存多重用药、出院交接、居家/缓和/安宁疗护、医疗解释文化中介和患者共同决策。
 - 2026-06-30：新增 `domains/cellular-reprogramming/`，承载山中因子、部分重编程、化学重编程、AI 因子设计和表观遗传编辑的机制谱系与安全边界。
 - 2026-06-30：新增第十四波公共服务、应急、金融和就业相关域：社会决定因素与社区脆弱性、公共服务设计与可达性、应急预警与通信、灾后恢复与救济连续性、金融包容与支付系统、劳动力与就业服务。
 - 2026-06-30：新增 `docs/reference/research-domain-atlas.md` 和 10 个研究域骨架，把有效永生的先验条件映射为可独立维护的研究域。

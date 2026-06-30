@@ -25,6 +25,7 @@ All notable repository structure changes are recorded here.
 - Added twentieth-wave clinical, drug, EMS, surgical, and road-safety domain skeletons for clinical laboratory diagnostic quality, pharmacovigilance/drug safety monitoring, pharmaceutical quality/supply integrity, emergency medical services/prehospital care, surgical/anesthesia perioperative safety, and road traffic injury prevention/safe mobility.
 - Added twenty-first-wave structural-vulnerability and care-continuity domain skeletons for rural health access/geographic equity, homelessness/unsheltered health continuity, correctional health/reentry continuity, disability services/independent living, dementia/cognitive decline care continuity, and chronic infectious disease care continuity.
 - Added twenty-second-wave crisis, exploitation, and recovery-continuity domain skeletons for suicide crisis response continuity, substance-use treatment/recovery continuity, elder justice/adult protective services, child protection/family safety, fraud/scams consumer protection, and online safety/digital harm prevention.
+- Added twenty-third-wave complex care navigation, transition, and decision-continuity domain skeletons for rare disease diagnostic odyssey/care coordination, multimorbidity/polypharmacy care coordination, care transitions/discharge continuity, home health/hospice/palliative care continuity, medical interpreter/cultural mediation, and patient advocacy/shared decision-making.
 
 ## 2026-06-29
 
