@@ -307,6 +307,16 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `alcohol-use-risk-reduction-continuity/` | 酒精使用风险降低连续性决定不健康饮酒是否被筛查、简短干预、转介和治疗系统接住 |
 | `chronic-kidney-disease-screening-progression-continuity/` | CKD 筛查与进展连续性决定肾脏储备下降是否在肾衰、心血管事件和透析准备失败前被管理 |
 | `cancer-screening-early-detection-continuity/` | 癌症筛查与早期发现连续性决定癌症死亡风险是否前移到筛查覆盖、异常追踪和收益伤害权衡 |
+| `breast-cancer-screening-treatment-survivorship-continuity/` | 乳腺癌筛查、治疗与幸存者连续性决定高发癌种是否从异常影像追踪走到复发监测、功能恢复和长期生活质量保护 |
+| `colorectal-cancer-screening-treatment-continuity/` | 结直肠癌筛查与治疗连续性决定肠镜容量、异常追踪、治疗负担和肠功能恢复是否形成闭环 |
+| `lung-cancer-screening-treatment-continuity/` | 肺癌筛查与治疗连续性决定高死亡风险癌种是否通过 LDCT、影像追踪、诊断速度和呼吸功能保护进入可治理路径 |
+| `prostate-cancer-screening-treatment-continuity/` | 前列腺癌筛查与治疗连续性决定 PSA 筛查收益伤害、主动监测和治疗后泌尿/性功能是否被纳入生活质量模型 |
+| `cervical-cancer-hpv-prevention-screening-continuity/` | 宫颈癌 HPV 预防与筛查连续性决定可预防癌种是否通过疫苗、筛查、异常追踪和隐私保护进入闭环 |
+| `ovarian-cancer-symptom-detection-treatment-continuity/` | 卵巢癌症状识别与治疗连续性决定筛查困难癌种是否通过症状重视、风险入口和复发照护降低诊断延迟 |
+| `pancreatic-cancer-high-risk-detection-treatment-continuity/` | 胰腺癌高风险识别与治疗连续性决定高致死癌种是否在营养、疼痛、治疗可及和照护负担崩塌前进入支持路径 |
+| `liver-cancer-cirrhosis-surveillance-treatment-continuity/` | 肝癌肝硬化监测与治疗连续性决定肿瘤风险、肝功能储备和上游病毒/代谢肝病是否被共同治理 |
+| `childhood-cancer-treatment-survivorship-continuity/` | 儿童癌症治疗与幸存者连续性决定治疗强度、教育中断、发育影响和晚期效应是否进入整个人生路径模型 |
+| `cancer-survivorship-late-effects-continuity/` | 癌症幸存者晚期效应连续性决定治疗结束后的复发恐惧、二次肿瘤、器官毒性、工作保险和照护转接是否被长期治理 |
 | `osteoporosis-fracture-prevention-bone-health-continuity/` | 骨质疏松与骨折预防连续性决定行动半径、独立生活和长期照护负担是否被骨折事件提前截断 |
 | `fall-risk-prevention-home-safety-continuity/` | 跌倒风险与家居安全连续性决定跌倒是否从偶然事故变成可复盘、可改造、可预防的环境和身体系统风险 |
 | `sleep-disordered-breathing-screening-treatment-continuity/` | 睡眠呼吸障碍筛查与治疗连续性决定夜间低氧、觉醒碎片、日间嗜睡和心血管负荷是否进入可恢复路径 |

@@ -4,6 +4,8 @@ All notable repository structure changes are recorded here.
 
 ## 2026-07-01
 
+- Added the eighty-seventh wave of organ-specific cancer continuity domains, covering breast, colorectal, lung, prostate, cervical, ovarian, pancreatic, liver, childhood cancer, and cancer survivorship late effects.
+
 - Added the eighty-sixth wave of chronic neurodegenerative, neuromuscular, and post-infectious function-continuity domains, covering Parkinson's disease, multiple sclerosis, ALS, Huntington disease, spinal muscular atrophy, muscular dystrophy, myasthenia gravis, spinal cord injury, ME/CFS, and Long COVID.
 
 - Added the eighty-fifth wave of chronic specialty burden and functional-restoration continuity domains, covering chronic pain, low back pain, osteoarthritis, autoimmune rheumatic disease, inflammatory bowel disease, MASLD/MASH chronic liver disease, thyroid disease, iron-deficiency anemia, asthma/COPD maintenance control, and allergic/atopic disease.

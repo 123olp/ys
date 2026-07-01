@@ -600,6 +600,16 @@
 - `alcohol-use-risk-reduction-continuity/`：酒精使用风险降低连续性，整理不健康饮酒筛查、简短干预、转介、治疗连续和复发/伤害减少。
 - `chronic-kidney-disease-screening-progression-continuity/`：慢性肾病筛查与进展连续性，整理 CKD 筛查、eGFR/白蛋白尿、进展风险、心肾代谢交互和替代治疗准备。
 - `cancer-screening-early-detection-continuity/`：癌症筛查与早期发现连续性，整理筛查覆盖、异常追踪、假阳性/假阴性、过度诊断和公平可及。
+- `breast-cancer-screening-treatment-survivorship-continuity/`：乳腺癌筛查、治疗与幸存者连续性，整理异常追踪、治疗负担、复发监测、身体形象和工作/家庭支持。
+- `colorectal-cancer-screening-treatment-continuity/`：结直肠癌筛查与治疗连续性，整理肠镜可及、异常追踪、治疗负担、造口/肠功能和幸存者支持。
+- `lung-cancer-screening-treatment-continuity/`：肺癌筛查与治疗连续性，整理低剂量 CT、烟草风险、影像异常追踪、诊断延迟和呼吸功能。
+- `prostate-cancer-screening-treatment-continuity/`：前列腺癌筛查与治疗连续性，整理 PSA 筛查争议、风险分层、主动监测、泌尿/性功能和生活质量。
+- `cervical-cancer-hpv-prevention-screening-continuity/`：宫颈癌、HPV 预防与筛查连续性，整理疫苗、筛查、异常结果追踪、阴道镜入口和生殖/性健康。
+- `ovarian-cancer-symptom-detection-treatment-continuity/`：卵巢癌症状识别与治疗连续性，整理症状识别、诊断延迟、遗传风险入口、治疗负担和复发照护。
+- `pancreatic-cancer-high-risk-detection-treatment-continuity/`：胰腺癌高风险识别与治疗连续性，整理高风险人群、诊断延迟、治疗可及、营养/疼痛和照护负担。
+- `liver-cancer-cirrhosis-surveillance-treatment-continuity/`：肝癌、肝硬化监测与治疗连续性，整理上游肝病、超声/AFP 监测、肝功能储备、治疗和失代偿风险。
+- `childhood-cancer-treatment-survivorship-continuity/`：儿童癌症治疗与幸存者连续性，整理治疗强度、家庭照护、教育中断、发育影响和晚期效应。
+- `cancer-survivorship-late-effects-continuity/`：癌症幸存者与晚期效应连续性，整理复发恐惧、二次肿瘤、器官毒性、疲劳、工作/保险和照护转接。
 - `osteoporosis-fracture-prevention-bone-health-continuity/`：骨质疏松、骨折预防与骨健康连续性，整理筛查、骨折风险、骨健康服务、治疗坚持和骨折后恢复。
 - `fall-risk-prevention-home-safety-continuity/`：跌倒风险预防与家居安全连续性，整理跌倒风险筛查、家居安全、药物/视力/平衡/肌力接口和跌倒后复盘。
 - `sleep-disordered-breathing-screening-treatment-continuity/`：睡眠呼吸障碍筛查与治疗连续性，整理夜间低氧、诊断转介、治疗坚持、设备可及和日间功能风险。

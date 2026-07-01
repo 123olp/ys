@@ -568,6 +568,24 @@ Human Infra 不能被设计成更精密的压榨系统。
 - 产出污名化、体型歧视、成瘾道德化、延误就医、规避检测、规避医生、规避保险规则或商业产品背书内容。
 - 替代医生、药师、戒烟/成瘾治疗专业人员、营养师、物理治疗师、肾脏科、肿瘤筛查服务、骨健康服务或公共卫生机构。
 
+## 器官/阶段特异癌症连续性边界
+
+`breast-cancer-screening-treatment-survivorship-continuity`、`colorectal-cancer-screening-treatment-continuity`、`lung-cancer-screening-treatment-continuity`、`prostate-cancer-screening-treatment-continuity`、`cervical-cancer-hpv-prevention-screening-continuity`、`ovarian-cancer-symptom-detection-treatment-continuity`、`pancreatic-cancer-high-risk-detection-treatment-continuity`、`liver-cancer-cirrhosis-surveillance-treatment-continuity`、`childhood-cancer-treatment-survivorship-continuity` 和 `cancer-survivorship-late-effects-continuity` 关注器官/阶段特异癌症如何通过筛查路径、异常闭环、治疗负担、复发/晚期效应、家庭照护、工作保险和生活质量改变主体持续性，不是个人癌症诊断、治疗、筛查、遗传咨询、随访或预后建议入口。
+
+可以做：
+
+- 整理 NCI、CDC、USPSTF、专业机构和公开癌症资料。
+- 比较乳腺、结直肠、肺、前列腺、宫颈、卵巢、胰腺、肝、儿童癌症和幸存者晚期效应如何影响筛查覆盖、异常追踪、治疗负担、复发监测、功能恢复、家庭/工作/保险和公平可及。
+- 记录器官特异癌症连续性的系统变量、证据等级、禁止用途、不确定性和跨域接口。
+
+不能做：
+
+- 提供个人症状诊断、影像/病理/肿瘤标志物判读、筛查年龄/频率、遗传风险解释、分期、治疗方案、用药、剂量、手术、放疗、化疗、免疫治疗、随访计划、复发判断、预后判断或个体建议。
+- 生成癌症风险计算器、筛查推荐器、影像第二意见、病理解释器、治疗排序、临床试验选择、保险/工作证明、学校服务申请、家庭个案处理或商业检测推广。
+- 收集、存储或推断可识别个人的症状、影像、病理、肿瘤标志物、基因检测、家族史、性/生殖史、儿童资料、治疗记录、工作/保险、财务、心理或其他 PHI。
+- 产出延误就医、规避筛查、规避专业照护、污名化、恐慌传播、商业检测背书、未经同意的家庭风险推断或用幸存者身份排除工作/保险机会的内容。
+- 替代肿瘤科、放疗科、手术团队、遗传咨询、影像科、病理科、儿科肿瘤、心理/康复、社工、保险/法律服务或本地专业人员。
+
 ## 生活史预防与功能连续性边界
 
 `sleep-disordered-breathing-screening-treatment-continuity`、`chronic-insomnia-cbti-access-continuity`、`sexual-health-sti-prevention-continuity`、`hiv-testing-prep-prevention-continuity`、`chronic-viral-hepatitis-screening-liver-protection-continuity`、`contraception-family-planning-access-continuity`、`menstrual-health-cycle-literacy-continuity`、`perimenopause-menopause-midlife-health-continuity`、`pelvic-floor-continence-function-continuity` 和 `skin-cancer-uv-protection-early-detection-continuity` 关注恢复失败、性/生殖健康、慢性感染、中年风险转轨、盆底功能和 UV 暴露如何改变有效时间、身体自主、关系安全、尊严、公共卫生屏障和未来选择权，不是个人诊断、治疗、性健康、避孕、睡眠、肝炎、HIV、盆底康复、皮肤或保险法律建议入口。

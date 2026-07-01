@@ -487,6 +487,16 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 酒精风险可被筛查和降低伤害 | `alcohol-use-risk-reduction-continuity/` | 不健康饮酒筛查、简短干预、转介、治疗连续、复发/伤害减少 | 酒精风险未被识别和接住，增加肝病、事故、暴力、认知下降、家庭和工作断裂 |
 | 肾脏储备下降可在衰竭前进入进展管理 | `chronic-kidney-disease-screening-progression-continuity/` | CKD 筛查、eGFR、白蛋白尿、进展风险、心肾代谢交互、替代治疗准备 | CKD 无症状进展导致急性肾衰、心血管事件、贫血、透析准备不足和生活结构崩塌 |
 | 癌症风险可通过筛查和异常追踪前移 | `cancer-screening-early-detection-continuity/` | 癌症筛查、早期发现、异常追踪、过度诊断、公平可及 | 筛查缺失、异常结果断线或过度诊断失衡，改变癌症死亡风险和治疗负担 |
+| 乳腺癌需要从筛查走到幸存者连续性 | `breast-cancer-screening-treatment-survivorship-continuity/` | 乳腺癌筛查、影像异常、治疗负担、复发监测、身体形象、工作/家庭支持 | 乳腺癌断点会通过治疗毒性、复发恐惧、身体形象和家庭/工作负担压缩长期有效时间 |
+| 结直肠癌依赖筛查和肠功能恢复闭环 | `colorectal-cancer-screening-treatment-continuity/` | 结直肠癌筛查、肠镜可及、异常追踪、治疗、造口/肠功能、幸存者支持 | 筛查断线、肠镜不可及或治疗后肠功能损失会放大死亡风险和生活参与损耗 |
+| 肺癌连接影像筛查、烟草风险和呼吸储备 | `lung-cancer-screening-treatment-continuity/` | 肺癌、LDCT、烟草暴露、影像异常、诊断延迟、治疗、呼吸功能 | 肺癌的延迟诊断和呼吸功能下降会快速缩小行动半径并提高死亡风险 |
+| 前列腺癌突出收益伤害权衡 | `prostate-cancer-screening-treatment-continuity/` | PSA 筛查争议、风险分层、主动监测、治疗副作用、尿控/性功能 | 过度诊断、治疗伤害和监测焦虑会把癌症控制转化为长期生活质量损耗 |
+| 宫颈癌是 HPV 预防和筛查闭环问题 | `cervical-cancer-hpv-prevention-screening-continuity/` | HPV 预防、疫苗、宫颈筛查、异常追踪、阴道镜、生殖/性健康 | HPV 预防失败、筛查失访和污名会让可预防癌种进入高负担治疗路径 |
+| 卵巢癌需要症状与风险入口治理 | `ovarian-cancer-symptom-detection-treatment-continuity/` | 卵巢癌症状、诊断延迟、遗传风险入口、治疗、复发照护 | 筛查困难和症状非特异会造成延迟诊断、复发负担和家庭照护压力 |
+| 胰腺癌压缩的是高致死诊断窗口 | `pancreatic-cancer-high-risk-detection-treatment-continuity/` | 胰腺癌、高风险识别、诊断延迟、治疗可及、营养/疼痛、照护负担 | 胰腺癌常通过营养崩塌、疼痛和治疗窗口狭窄快速吞噬有效时间 |
+| 肝癌需要同时治理肿瘤和肝功能储备 | `liver-cancer-cirrhosis-surveillance-treatment-continuity/` | 肝癌、肝硬化监测、病毒/代谢肝病、肝功能储备、治疗、失代偿 | 肝癌与肝硬化、失代偿和上游肝病交织，会同时损害生命风险和生理冗余 |
+| 儿童癌症改变整个生命路径 | `childhood-cancer-treatment-survivorship-continuity/` | 儿童癌症、治疗强度、家庭照护、教育中断、发育、晚期效应 | 儿童期治疗和晚期效应会穿过发育、学习、家庭资源和成年后健康路径 |
+| 癌症幸存者阶段需要长期恢复治理 | `cancer-survivorship-late-effects-continuity/` | 晚期效应、复发恐惧、二次肿瘤、器官毒性、疲劳、工作/保险 | 治疗结束后的长期毒性和资源压力决定主体是否真正回到未来选择路径 |
 | 骨折可在失能前预防 | `osteoporosis-fracture-prevention-bone-health-continuity/` | 骨质疏松筛查、骨折风险、骨健康服务、治疗坚持、骨折后恢复 | 骨质疏松和骨折后照护断裂会缩小行动半径、提高长期照护需求并增加死亡风险 |
 | 跌倒可作为环境和身体系统风险治理 | `fall-risk-prevention-home-safety-continuity/` | 跌倒风险筛查、家居安全、药物/视力/平衡/肌力接口、跌倒后复盘 | 跌倒被当成偶然事件会漏掉环境、药物、感官、平衡和肌力共同作用的可预防风险 |
 | 睡眠呼吸障碍可避免夜间恢复失败 | `sleep-disordered-breathing-screening-treatment-continuity/` | 睡眠呼吸障碍、夜间低氧、诊断转介、治疗坚持、设备可及 | 夜间低氧、觉醒碎片、日间嗜睡和心血管负荷持续消耗有效时间、判断和恢复能力 |
@@ -1162,6 +1172,16 @@ risk-engineering
   -> alcohol-use-risk-reduction-continuity
   -> chronic-kidney-disease-screening-progression-continuity
   -> cancer-screening-early-detection-continuity
+  -> breast-cancer-screening-treatment-survivorship-continuity
+  -> colorectal-cancer-screening-treatment-continuity
+  -> lung-cancer-screening-treatment-continuity
+  -> prostate-cancer-screening-treatment-continuity
+  -> cervical-cancer-hpv-prevention-screening-continuity
+  -> ovarian-cancer-symptom-detection-treatment-continuity
+  -> pancreatic-cancer-high-risk-detection-treatment-continuity
+  -> liver-cancer-cirrhosis-surveillance-treatment-continuity
+  -> childhood-cancer-treatment-survivorship-continuity
+  -> cancer-survivorship-late-effects-continuity
   -> osteoporosis-fracture-prevention-bone-health-continuity
   -> fall-risk-prevention-home-safety-continuity
   -> sleep-disordered-breathing-screening-treatment-continuity

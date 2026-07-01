@@ -1284,6 +1284,16 @@ flowchart TD
 | [Alcohol Use Risk Reduction Continuity](domains/alcohol-use-risk-reduction-continuity/README.md) | 不健康饮酒筛查、简短干预、转介、治疗连续、复发/伤害减少 | 把酒精风险作为肝脏、事故、认知、家庭和资源连续性的上游变量 | 不提供饮酒量判断、戒断处理、解酒、药物、排毒、驾驶、法律或个体医疗建议 |
 | [Chronic Kidney Disease Screening Progression Continuity](domains/chronic-kidney-disease-screening-progression-continuity/README.md) | CKD 筛查、eGFR/白蛋白尿、进展风险、心肾代谢交互和替代治疗准备 | 把肾脏储备下降作为急性肾衰和心血管风险之前的可观测状态 | 不提供实验室解读、CKD 分期、饮食、补液、药物、透析、移植或个体建议 |
 | [Cancer Screening Early Detection Continuity](domains/cancer-screening-early-detection-continuity/README.md) | 癌症筛查、早期发现、异常追踪、假阳性/假阴性、过度诊断和公平可及 | 把癌症死亡风险前移到筛查质量和异常结果闭环 | 不提供筛查年龄、频率、检查选择、结果解读、遗传风险、治疗或个体建议 |
+| [Breast Cancer Screening Treatment Survivorship Continuity](domains/breast-cancer-screening-treatment-survivorship-continuity/README.md) | 乳腺癌、筛查、异常追踪、治疗负担、复发监测和幸存者连续性 | 把高发癌种转化为筛查、治疗、恢复、复发和长期功能模型 | 不提供乳腺影像判读、筛查频率、遗传风险、治疗方案、用药、手术或个体建议 |
+| [Colorectal Cancer Screening Treatment Continuity](domains/colorectal-cancer-screening-treatment-continuity/README.md) | 结直肠癌、筛查、息肉/异常追踪、治疗、造口/肠功能和幸存者支持 | 把可筛查癌种的异常闭环、治疗负担和消化功能恢复纳入模型 | 不提供筛查频率、肠镜结果、病理判读、治疗、饮食、造口护理或个体建议 |
+| [Lung Cancer Screening Treatment Continuity](domains/lung-cancer-screening-treatment-continuity/README.md) | 肺癌、低剂量 CT 筛查、烟草风险、诊断延迟、治疗和呼吸功能 | 把高死亡风险癌种连接到影像闭环、烟草风险和呼吸储备 | 不提供影像判读、筛查资格、戒烟医疗、治疗、氧疗、手术或个体建议 |
+| [Prostate Cancer Screening Treatment Continuity](domains/prostate-cancer-screening-treatment-continuity/README.md) | 前列腺癌、PSA 筛查争议、风险分层、治疗副作用和生活质量 | 把癌筛收益伤害权衡和治疗后泌尿/性功能纳入主体持续性 | 不提供 PSA 判读、筛查决策、分期、主动监测、治疗、用药或个体建议 |
+| [Cervical Cancer HPV Prevention Screening Continuity](domains/cervical-cancer-hpv-prevention-screening-continuity/README.md) | 宫颈癌、HPV 预防、筛查、异常结果追踪、治疗和生殖/性健康连续性 | 把感染预防、筛查闭环、隐私污名和生殖健康连接起来 | 不提供 HPV/宫颈筛查解释、疫苗/检查频率、阴道镜、治疗或个体建议 |
+| [Ovarian Cancer Symptom Detection Treatment Continuity](domains/ovarian-cancer-symptom-detection-treatment-continuity/README.md) | 卵巢癌、症状识别、遗传风险、诊断延迟、治疗和照护负担 | 把筛查困难癌种转化为症状重视、风险入口和复发照护模型 | 不提供症状诊断、CA-125/影像判读、遗传风险、筛查、治疗或个体建议 |
+| [Pancreatic Cancer High Risk Detection Treatment Continuity](domains/pancreatic-cancer-high-risk-detection-treatment-continuity/README.md) | 胰腺癌、高风险人群、早期识别、营养/疼痛、治疗和照护负担 | 把高致死癌种的诊断延迟、支持照护和有效时间坍塌纳入模型 | 不提供高风险判定、影像/标志物判读、筛查、治疗、疼痛/营养处理或个体建议 |
+| [Liver Cancer Cirrhosis Surveillance Treatment Continuity](domains/liver-cancer-cirrhosis-surveillance-treatment-continuity/README.md) | 肝癌、肝硬化监测、病毒性肝炎/MASLD 上游、治疗和失代偿风险 | 把癌症进展、肝功能储备和上游肝病控制连接起来 | 不提供超声/AFP 判读、监测频率、分期、肝病治疗、介入/移植或个体建议 |
+| [Childhood Cancer Treatment Survivorship Continuity](domains/childhood-cancer-treatment-survivorship-continuity/README.md) | 儿童癌症、治疗强度、家庭照护、教育中断、发育和长期幸存者 | 把儿童期重大疾病和治疗晚期效应纳入整个人生路径模型 | 不提供儿童诊断、分期、治疗、临床试验、学校服务、家庭个案或预后建议 |
+| [Cancer Survivorship Late Effects Continuity](domains/cancer-survivorship-late-effects-continuity/README.md) | 癌症幸存者、复发恐惧、晚期效应、二次肿瘤、工作/保险和生活质量 | 把治疗后的恢复、长期毒性、资源压力和未来选择权重建纳入模型 | 不提供随访计划、复发判断、症状诊断、用药、保险/工作证明或个体建议 |
 | [Osteoporosis Fracture Prevention Bone Health Continuity](domains/osteoporosis-fracture-prevention-bone-health-continuity/README.md) | 骨质疏松筛查、骨折风险、骨健康服务、治疗坚持和骨折后恢复 | 把骨折预防纳入独立生活、行动半径和长期照护负担模型 | 不提供骨密度解读、补剂、药物、运动、跌倒训练、影像、骨折处理或个体建议 |
 | [Fall Risk Prevention Home Safety Continuity](domains/fall-risk-prevention-home-safety-continuity/README.md) | 跌倒风险筛查、家居安全、药物/视力/平衡/肌力接口、跌倒后复盘 | 把跌倒从偶然事故转化为环境、身体和照护系统共同治理的行动风险 | 不提供跌倒风险判断、训练动作、药物调整、辅具选择、家居改造、急救或康复建议 |
 | [Sleep Disordered Breathing Screening Treatment Continuity](domains/sleep-disordered-breathing-screening-treatment-continuity/README.md) | 睡眠呼吸障碍、夜间低氧、诊断转介、治疗坚持和设备可及 | 把夜间低氧、觉醒碎片、日间疲劳和心血管负荷纳入恢复系统模型 | 不提供睡眠报告判读、CPAP 设置、设备选择、驾驶限制或个体医疗建议 |
@@ -1939,5 +1949,6 @@ flowchart LR
 - 2026-07-01：新增第八十四波 10 个生活史预防与功能连续性域，覆盖睡眠呼吸障碍、慢性失眠/CBT-I 可及、STI 预防、HIV 检测/PrEP、慢性病毒性肝炎、避孕与家庭计划、月经健康、围绝经期/更年期、盆底控尿控便和皮肤癌/UV 防护。
 - 2026-07-01：新增第八十五波 10 个慢性专科负担与功能恢复连续性域，覆盖慢性疼痛、腰背痛、骨关节炎、自身免疫风湿病、炎症性肠病、MASLD/MASH 慢性肝病、甲状腺疾病、铁缺乏贫血、哮喘/COPD 长期控制和过敏/特应性疾病。
 - 2026-07-01：新增第八十六波 10 个慢性神经退行、神经肌肉与感染后功能连续性域，覆盖帕金森病、多发性硬化、ALS、亨廷顿病、脊髓性肌萎缩症、肌营养不良、重症肌无力、脊髓损伤、ME/CFS 和 Long COVID。
+- 2026-07-01：新增第八十七波 10 个器官/阶段特异癌症连续性域，覆盖乳腺癌、结直肠癌、肺癌、前列腺癌、宫颈癌、卵巢癌、胰腺癌、肝癌、儿童癌症和癌症幸存者晚期效应。
 
 完整记录见 [CHANGELOG.md](CHANGELOG.md)。
