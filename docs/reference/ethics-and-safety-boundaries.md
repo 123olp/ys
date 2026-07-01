@@ -2059,6 +2059,24 @@ Human Infra 不能被设计成更精密的压榨系统。
 - 不收集、复制、处理或要求 PHI、诊断、实验室指标、药物清单、保险 ID、Medicaid/Medicare 信息、收入、住址、食品不安全问卷答案、EBT 交易、购买记录、配送地址、家庭厨房条件、饮食记录、过敏史、病历、转介单或个案福利/医疗/保险材料。
 - 不替代医生、注册营养师、药师、护士、保险计划、Medicaid/CMS、HHS、USDA、NIH、社区食品组织、食品银行、food pharmacy、福利机构、急救服务、法律、监管机构或官方服务渠道。
 
+## 生殖技术、生育保存与第三方生殖治理连续性边界
+
+`assisted-reproductive-technology-ivf-cycle-continuity`、`art-clinic-success-rate-quality-reporting-continuity`、`fertility-preservation-gamete-embryo-cryostorage-continuity`、`reproductive-tissue-donor-screening-traceability-continuity`、`preimplantation-genetic-testing-embryo-selection-governance-continuity` 和 `third-party-reproduction-surrogacy-donor-legal-ethics-continuity` 关注 ART/IVF 周期、ART 成功率质量报告、生育保存冷冻储存、生殖组织供体筛查追溯、PGT 胚胎选择治理和第三方生殖法律伦理如何影响未来选择权，不是个人不孕、生殖医疗、IVF、PGT、供体、代孕、胚胎处置、法律、保险、诊所选择或跨境服务建议入口。
+
+可以做：
+
+- 整理 CDC ART/NASS/success rates、FDA HCT/P reproductive tissue donor eligibility、ASRM fertility preservation/PGT/donation/gestational carrier/cross-border reproductive care、ACOG PGT 等公开资料中的对象、变量、证据边界和禁止用途。
+- 比较 ART 周期执行、诊所结果报告、生育保存、样本身份和储存同意、供体筛查追溯、PGT 不确定性、第三方生殖多主体关系如何影响主体持续性、未来选择权、风险治理和子代权益。
+- 记录生殖技术资料中的同意、退出、隐私、样本链、报告口径、临床效用、法律伦理、跨境服务、商业夸大、歧视风险和反优生边界。
+
+不能做：
+
+- 不提供不孕诊断、IVF 方案、促排、取卵、胚胎培养、移植、冷冻决策、PGT 结果解释、胚胎选择、供体选择、代孕安排、跨境服务、诊所/律师/保险推荐或个体医疗/法律建议。
+- 不判断某个人、胚胎、供体、代孕者、预期父母、诊所、保险计划、检测结果、冷冻样本、法律关系或跨境服务应如何具体处理。
+- 不生成治疗方案、用药方案、胚胎选择建议、医学必要性文件、合同模板、亲子关系文件、供体识别方法、规避筛查/法律/监管路径、商业撮合、营销内容或个案申诉材料。
+- 不收集、复制、处理或要求 PHI、ART records、embryology reports、PGT reports、donor identity、genetic results、clinic accounts、legal documents、insurance information、payment records、妊娠资料、儿童身份资料、地址或跨境服务材料。
+- 不替代 reproductive endocrinologist、embryology lab、genetic counselor、fertility clinic、FDA、CDC、ASRM、ACOG、律师、法院、保险计划、监管机构或官方服务渠道。
+
 ## 治疗获得与医用品执行连续性边界
 
 `retail-pharmacy-prescription-dispensing-continuity`、`pharmacy-benefit-formulary-prior-authorization-continuity`、`medication-reconciliation-regimen-adherence-continuity`、`patient-medication-labeling-counseling-continuity`、`unused-medicine-takeback-disposal-continuity`、`durable-medical-equipment-supplier-repair-continuity`、`home-oxygen-respiratory-equipment-supply-continuity` 和 `diabetes-insulin-glucose-monitoring-supplies-continuity` 关注主体如何把处方、药品福利、药历、标签咨询、未用药处置、DME、居家氧疗/呼吸设备和糖尿病耗材转化为连续、可理解、可补给、可维修、可治理的治疗执行能力，不是医疗、药事、保险、设备维修、急救或个案申诉入口。

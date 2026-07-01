@@ -287,6 +287,12 @@ flowchart TD
     RHC --> HDSM[home-dialysis<br/>家庭透析 / 供应]
     RHC --> KTIG[kidney-transplant<br/>肾移植 / 免疫抑制]
     H --> RFC[reproductive-fertility-continuity<br/>生殖 / 生育连续性]
+    RFC --> ARTIVF[assisted-reproductive-technology-ivf-cycle-continuity<br/>ART / IVF 周期]
+    RFC --> ARTQ[art-clinic-success-rate-quality-reporting-continuity<br/>ART 成功率 / 质量报告]
+    RFC --> FPGEC[fertility-preservation-gamete-embryo-cryostorage-continuity<br/>生育保存 / 配子胚胎冷冻]
+    RFC --> RTDST[reproductive-tissue-donor-screening-traceability-continuity<br/>生殖组织供体 / 追溯]
+    RFC --> PGTES[preimplantation-genetic-testing-embryo-selection-governance-continuity<br/>PGT / 胚胎选择治理]
+    RFC --> TPRSD[third-party-reproduction-surrogacy-donor-legal-ethics-continuity<br/>第三方生殖 / 法律伦理]
     H --> AEC[attention-executive-control<br/>注意力 / 执行控制]
     H --> LSA[learning-skill-acquisition<br/>学习 / 技能获得]
     H --> TAE[time-allocation-effective-time<br/>时间分配 / 有效时间]
@@ -1061,6 +1067,12 @@ flowchart TD
 | [Home Dialysis Supply Self Management Continuity](domains/home-dialysis-supply-self-management-continuity/README.md) | 家庭血透、腹膜透析、耗材、电水依赖、训练和照护者负担 | 把家庭化生命支持与住房、能源、水、物流和照护系统连接 | 不提供家庭透析资格、参数、操作、用品购买、消毒、设备故障处理或个体建议 |
 | [Kidney Transplant Immunosuppression Graft Continuity](domains/kidney-transplant-immunosuppression-graft-continuity/README.md) | 肾移植、移植物功能、排斥、免疫抑制、感染和药物供应 | 把器官替代后的长期免疫治理、随访和重返透析风险纳入模型 | 不提供移植资格、配型、用药、剂量、实验室解释、感染处理或保险策略 |
 | [Reproductive Fertility Continuity](domains/reproductive-fertility-continuity/README.md) | 生育力、配子质量、生殖衰老、妊娠风险、生殖自主性和未来选择权 | 生育窗口、长期计划、资源配置和未来选择权 | 不提供不孕诊断、生育治疗、激素、辅助生殖、妊娠管理、避孕或个体医疗建议 |
+| [Assisted Reproductive Technology IVF Cycle Continuity](domains/assisted-reproductive-technology-ivf-cycle-continuity/README.md) | ART、IVF 周期、取卵、受精、胚胎培养、移植、周期取消和费用时间窗口 | 把辅助生殖从“治疗选择”拆成可审查的高成本执行周期 | 不提供不孕诊断、IVF 方案、促排、移植、成功率解释、诊所、保险或法律建议 |
+| [ART Clinic Success Rate Quality Reporting Continuity](domains/art-clinic-success-rate-quality-reporting-continuity/README.md) | ART 诊所成功率、CDC NASS、报告口径、数据校验、分母定义和解释边界 | 把 ART 选择所依赖的观测数据和质量报告纳入治理 | 不提供诊所排名、个体成功率、商业推荐、保险策略或个人预后判断 |
+| [Fertility Preservation Gamete Embryo Cryostorage Continuity](domains/fertility-preservation-gamete-embryo-cryostorage-continuity/README.md) | 生育保存、卵母细胞/精子/胚胎冷冻、样本身份、储存同意、费用续缴和未来使用权 | 把生殖未来选择权从当前身体时间窗口中部分解耦 | 不提供冷冻决策、成功率、实验室操作、运输、胚胎处置、保险或法律建议 |
+| [Reproductive Tissue Donor Screening Traceability Continuity](domains/reproductive-tissue-donor-screening-traceability-continuity/README.md) | 生殖组织供体、HCT/P、筛查检测、标签、记录、样本身份和后代信息权 | 把供体材料安全、感染风险、身份记录和可追溯链纳入 ART 治理 | 不提供供体选择、感染/遗传解释、匿名识别、法律规避或实验室操作 |
+| [Preimplantation Genetic Testing Embryo Selection Governance Continuity](domains/preimplantation-genetic-testing-embryo-selection-governance-continuity/README.md) | PGT-A、PGT-M、PGT-P、胚胎检测、结果不确定性、选择压力和伦理边界 | 把胚胎检测与选择从技术宣传拉回证据、效用和治理审查 | 不提供 PGT 结果解释、胚胎选择、疾病风险判断、遗传咨询、基因编辑或优生推断 |
+| [Third Party Reproduction Surrogacy Donor Legal Ethics Continuity](domains/third-party-reproduction-surrogacy-donor-legal-ethics-continuity/README.md) | 代孕、供体、预期父母、同意、亲子关系、跨境生殖、后代权益和剥削防护 | 把多主体生殖安排纳入关系、法律伦理和连续性治理 | 不提供代孕、供体、合同、亲子关系、跨境服务、诊所、律师、保险或医疗建议 |
 | [Prenatal Care Access Risk Screening Continuity](domains/prenatal-care-access-risk-screening-continuity/README.md) | 产前照护接入、风险筛查、检查随访、转诊、交通、语言、保险和隐私边界 | 把怀孕期间能否持续被看见、筛查和转接建模为主体与下一代持续性的前置条件 | 不提供怀孕确认、产检频率、筛查结果解释、药物、影像、分娩方式、医院选择或个体医疗建议 |
 | [Postpartum Care Recovery Follow Up Continuity](domains/postpartum-care-recovery-follow-up-continuity/README.md) | 产后随访、身体恢复、警示信号、并发症延续管理、医保覆盖和 primary care 转接 | 防止分娩后身体恢复、心理状态、家庭照护和长期健康轨迹在高负荷窗口断裂 | 不提供产后症状判断、用药、伤口、避孕、运动、复工、急诊或心理危机建议 |
 | [Lactation Breastfeeding Support Continuity](domains/lactation-breastfeeding-support-continuity/README.md) | 哺乳、泵奶、lactation support、WIC 支持、工作学校空间、设备接口和家庭支持 | 把母婴营养输入、恢复、工作学习和照护负担连接成可支持的执行系统 | 不提供喂养方案、奶量判断、疼痛处理、配方替代、泵奶参数、设备推荐或法律资格判断 |
@@ -2366,6 +2378,12 @@ human_infra/
 │   ├── regenerative-medicine/
 │   ├── rehabilitation-functioning/
 │   ├── reproductive-fertility-continuity/
+│   ├── assisted-reproductive-technology-ivf-cycle-continuity/
+│   ├── art-clinic-success-rate-quality-reporting-continuity/
+│   ├── fertility-preservation-gamete-embryo-cryostorage-continuity/
+│   ├── reproductive-tissue-donor-screening-traceability-continuity/
+│   ├── preimplantation-genetic-testing-embryo-selection-governance-continuity/
+│   ├── third-party-reproduction-surrogacy-donor-legal-ethics-continuity/
 │   ├── prenatal-care-access-risk-screening-continuity/
 │   ├── postpartum-care-recovery-follow-up-continuity/
 │   ├── lactation-breastfeeding-support-continuity/
@@ -2723,5 +2741,6 @@ flowchart LR
 - 2026-07-01：新增第一百二十一波 6 个公共福利资格续期、覆盖转换与申诉执行连续性域，覆盖 SNAP 资格/续期/ABAWD、Medicaid/CHIP 续期重判、Medicare 参保覆盖转换、SSI/SSDI 复审申诉、TANF 现金援助工作支持和失业保险申领/身份核验/申诉支付连续性。
 - 2026-07-01：新增第一百二十二波 6 个儿童营养项目执行连续性域，覆盖 Summer EBT / SUN Bucks、SFSP 暑期供餐站点、CACFP、课后点心晚餐、特殊饮食/过敏校餐便利和校餐欠费污名。
 - 2026-07-01：新增第一百二十三波 6 个 Food is Medicine / 医疗营养支持执行连续性域，覆盖营养不安全筛查转介、医学定制餐、医学定制食材、蔬果处方、临床 food pharmacy/pantry 和医学营养治疗营养师可达。
+- 2026-07-01：新增第一百二十四波 6 个生殖技术与生育保存治理连续性域，覆盖 ART/IVF 周期、ART 诊所成功率质量报告、生育保存冷冻储存、生殖组织供体筛查追溯、PGT 胚胎选择治理和第三方生殖法律伦理。
 
 完整记录见 [CHANGELOG.md](CHANGELOG.md)。

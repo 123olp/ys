@@ -771,6 +771,12 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 更年期是中年健康风险转轨窗口 | `perimenopause-menopause-midlife-health-continuity/` | 围绝经期、症状、睡眠、情绪、骨骼、心血管、工作参与 | 中年症状负担和风险沟通失败会影响睡眠、情绪、骨折、心血管和工作退出风险 |
 | 盆底功能保护行动半径和尊严 | `pelvic-floor-continence-function-continuity/` | 尿失禁、便失禁、脱垂、康复可及、用品、社会参与 | 控尿控便失败会通过睡眠破坏、跌倒、社交回避、感染和照护负担侵蚀独立生活 |
 | UV 暴露和皮肤癌风险可被早期治理 | `skin-cancer-uv-protection-early-detection-continuity/` | UV 暴露、防晒环境、皮肤癌预防、早期识别、转诊、公平可及 | 皮肤癌风险、职业户外暴露和早识别断点会增加治疗负担、死亡风险和行动约束 |
+| ART 周期把生殖窗口转化为高成本执行链 | `assisted-reproductive-technology-ivf-cycle-continuity/` | ART、IVF、取卵、受精、胚胎培养、移植、周期取消 | ART 执行失败会把时间窗口、费用、药品、实验室和情绪负担叠加为未来选择权损耗 |
+| ART 成功率报告决定技术选择是否可解释 | `art-clinic-success-rate-quality-reporting-continuity/` | CDC NASS、clinic reports、分母定义、数据校验、患者构成 | 报告口径误读会把公共统计误写成个人预后，导致误选、资源耗尽和信任损耗 |
+| 生育保存把当前材料转成未来选择权 | `fertility-preservation-gamete-embryo-cryostorage-continuity/` | 配子冷冻、胚胎冷冻、样本身份、储存同意、费用续缴、处置授权 | 样本、同意、费用或灾害链断裂会让保存资源在未来真正需要时不可用 |
+| 生殖组织供体追溯决定材料安全与身份连续 | `reproductive-tissue-donor-screening-traceability-continuity/` | HCT/P、供体筛查检测、标签、记录、样本链、后代信息权 | 供体追溯失败会把感染、身份、医学信息和法律伦理风险转移给主体和后代 |
+| PGT 把遗传不确定性压缩进胚胎选择点 | `preimplantation-genetic-testing-embryo-selection-governance-continuity/` | PGT-A/M/P、胚胎检测、不确定性、临床效用、选择压力 | PGT 误用会把风险管理变成优生压力、残障歧视、胚胎处置冲突和商业夸大 |
+| 第三方生殖把亲缘、妊娠和法律身份拆给多个主体 | `third-party-reproduction-surrogacy-donor-legal-ethics-continuity/` | 代孕、供体、预期父母、同意、亲子关系、跨境服务、后代权益 | 多主体治理失败会产生剥削、合同冲突、亲子身份争议和跨境救济失败 |
 | 慢性疼痛可被转化为功能恢复问题 | `chronic-pain-functional-restoration-continuity/` | 慢性疼痛、功能恢复、用药风险、睡眠、工作参与 | 将疼痛只当症状会漏掉注意力占用、行动质量下降、失能和社会参与损耗 |
 | 腰背痛是高频脊柱执行断点 | `low-back-pain-spine-function-continuity/` | 腰背痛、脊柱功能、康复可及、工作负荷、复发预防 | 复发腰背痛会持续破坏移动、坐立、搬运、工作和慢性疼痛转化路径 |
 | 骨关节炎决定移动寿命 | `osteoarthritis-joint-function-continuity/` | 关节疼痛、僵硬、移动能力、辅助器具、康复、置换路径 | 退行性关节病会缩小行动半径、增加跌倒和照护需求并削弱独立生活 |
@@ -1666,6 +1672,12 @@ risk-engineering
   -> perimenopause-menopause-midlife-health-continuity
   -> pelvic-floor-continence-function-continuity
   -> skin-cancer-uv-protection-early-detection-continuity
+  -> assisted-reproductive-technology-ivf-cycle-continuity
+  -> art-clinic-success-rate-quality-reporting-continuity
+  -> fertility-preservation-gamete-embryo-cryostorage-continuity
+  -> reproductive-tissue-donor-screening-traceability-continuity
+  -> preimplantation-genetic-testing-embryo-selection-governance-continuity
+  -> third-party-reproduction-surrogacy-donor-legal-ethics-continuity
   -> chronic-pain-functional-restoration-continuity
   -> low-back-pain-spine-function-continuity
   -> osteoarthritis-joint-function-continuity

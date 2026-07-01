@@ -737,6 +737,12 @@ human_infra/
     ├── regenerative-medicine/ # 再生医学与组织修复
     ├── rehabilitation-functioning/ # 康复与功能恢复
     ├── reproductive-fertility-continuity/ # 生殖与生育连续性
+    ├── assisted-reproductive-technology-ivf-cycle-continuity/ # ART 与 IVF 周期连续性
+    ├── art-clinic-success-rate-quality-reporting-continuity/ # ART 诊所成功率与质量报告连续性
+    ├── fertility-preservation-gamete-embryo-cryostorage-continuity/ # 生育保存、配子和胚胎冷冻连续性
+    ├── reproductive-tissue-donor-screening-traceability-continuity/ # 生殖组织供体筛查与追溯连续性
+    ├── preimplantation-genetic-testing-embryo-selection-governance-continuity/ # PGT 与胚胎选择治理连续性
+    ├── third-party-reproduction-surrogacy-donor-legal-ethics-continuity/ # 第三方生殖、代孕、供体法律伦理连续性
     ├── renal-hepatic-clearance/ # 肾脏与肝脏清除能力
     ├── respiratory-oxygenation/ # 呼吸氧合
     ├── resource-social-infra/ # 资源与社会基础设施
@@ -897,7 +903,7 @@ human_infra/
 - `domains/musculoskeletal-integrity/` 负责肌肉、骨骼、关节、肌少症、骨质疏松、跌倒和行动承载结构。
 - `domains/skin-barrier-wound-healing/` 负责皮肤屏障、伤口愈合、压力损伤、感染入口、热调节和感觉边界；`domains/pressure-injury-prevention-repositioning-support-surface-continuity/`、`domains/chronic-wound-venous-diabetic-pressure-ulcer-continuity/`、`domains/wound-infection-cellulitis-sepsis-continuity/`、`domains/diabetic-foot-ulcer-amputation-prevention-continuity/`、`domains/burn-wound-aftercare-scar-function-continuity/`、`domains/surgical-wound-dehiscence-ssi-continuity/`、`domains/incontinence-associated-dermatitis-moisture-skin-continuity/`、`domains/eczema-atopic-dermatitis-itch-sleep-continuity/`、`domains/psoriasis-inflammatory-skin-systemic-burden-continuity/` 和 `domains/skin-care-supplies-dressings-barrier-products-continuity/` 负责压力损伤预防、慢性伤口、伤口感染/蜂窝织炎、糖尿病足、烧伤后创面、手术切口/SSI、潮湿相关皮炎、湿疹、银屑病和皮肤护理用品这些皮肤边界执行层失效模式。
 - `domains/urogenital-continuity/` 负责膀胱、尿路、尿控、盆底、泌尿感染、性功能和日常尊严；`domains/urinary-tract-infection-pyelonephritis-urosepsis-continuity/`、`domains/catheter-associated-uti-device-infection-continuity/`、`domains/urinary-retention-bladder-emptying-continuity/`、`domains/overactive-bladder-nocturia-sleep-continuity/`、`domains/kidney-stone-obstruction-renal-colic-continuity/`、`domains/benign-prostatic-hyperplasia-luts-continuity/`、`domains/urinary-diversion-urostomy-supplies-continuity/`、`domains/dialysis-access-vascular-peritoneal-continuity/`、`domains/home-dialysis-supply-self-management-continuity/` 和 `domains/kidney-transplant-immunosuppression-graft-continuity/` 负责尿路感染、导尿设备、尿潴留、夜尿、结石梗阻、BPH/LUTS、尿流改道、透析通路、家庭透析和肾移植这些排泄出口与肾脏替代执行层失效模式。
-- `domains/reproductive-fertility-continuity/` 负责生育力、生殖衰老、配子质量、妊娠风险、生殖自主性和未来选择权。
+- `domains/reproductive-fertility-continuity/` 负责生育力、生殖衰老、配子质量、妊娠风险、生殖自主性和未来选择权；`domains/assisted-reproductive-technology-ivf-cycle-continuity/`、`domains/art-clinic-success-rate-quality-reporting-continuity/`、`domains/fertility-preservation-gamete-embryo-cryostorage-continuity/`、`domains/reproductive-tissue-donor-screening-traceability-continuity/`、`domains/preimplantation-genetic-testing-embryo-selection-governance-continuity/` 和 `domains/third-party-reproduction-surrogacy-donor-legal-ethics-continuity/` 负责 ART/IVF 周期、ART 诊所成功率报告、生育保存冷冻储存、生殖组织供体筛查追溯、PGT 胚胎选择治理和第三方生殖法律伦理这些执行层。
 - `domains/attention-executive-control/` 负责注意力、执行功能、工作记忆、抑制控制、任务切换、冲动控制和分心环境。
 - `domains/learning-skill-acquisition/` 负责学习科学、技能形成、反馈、迁移、再训练和终身学习。
 - `domains/time-allocation-effective-time/` 负责时间使用、时间贫困、行政负担、等待成本、任务摩擦、有效时间和主观时间质量。
@@ -1333,3 +1339,4 @@ human_infra/
 - 2026-07-01：新增第一百一十二波 6 个家庭运行元数据与交接连续性域，把关键服务位置、断路器标签、水路阀门标签、设备型号召回记录、服务联系人目录和家庭运行地图纳入家庭系统可读性与代理交接层。
 - 2026-07-01：新增第一百一十三波 6 个邻里公共空间维护与地方服务请求执行连续性域，把 311 服务请求、路灯夜间可见性、人行道/路缘坡道、雪冰通行、街道树木和雨水口局部内涝纳入最后一公里公共工程维护层。
 - 2026-07-01：新增第一百二十三波 6 个 Food is Medicine / 医疗营养支持执行连续性域，覆盖营养不安全筛查转介、医学定制餐、医学定制食材、蔬果处方、临床 food pharmacy/pantry 和医学营养治疗营养师可达。
+- 2026-07-01：新增第一百二十四波 6 个生殖技术与生育保存治理连续性域，覆盖 ART/IVF 周期、ART 诊所成功率质量报告、生育保存冷冻、生殖组织供体筛查追溯、PGT 胚胎选择治理和第三方生殖法律伦理。

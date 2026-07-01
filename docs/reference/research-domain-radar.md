@@ -444,6 +444,12 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `perimenopause-menopause-midlife-health-continuity/` | 围绝经期、更年期与中年健康连续性决定中年症状、睡眠、情绪、骨骼、心血管和工作参与风险是否被系统承接 |
 | `pelvic-floor-continence-function-continuity/` | 盆底与控尿控便功能连续性决定失禁、脱垂、羞耻、用品和康复断点是否压缩行动半径、睡眠和尊严 |
 | `skin-cancer-uv-protection-early-detection-continuity/` | 皮肤癌、UV 防护与早期识别连续性决定环境暴露、户外职业风险和皮肤癌早识别是否被纳入长期风险控制 |
+| `assisted-reproductive-technology-ivf-cycle-continuity/` | ART/IVF 周期连续性决定高成本生殖技术能否从药品、实验室、移植、费用和时间窗口中保持执行闭环 |
+| `art-clinic-success-rate-quality-reporting-continuity/` | ART 诊所成功率与质量报告连续性决定主体是否能把 CDC/NASS 公共统计正确用于服务选择，而不误读成个人预后 |
+| `fertility-preservation-gamete-embryo-cryostorage-continuity/` | 生育保存冷冻连续性决定配子/胚胎样本、同意、费用、处置和未来使用权能否跨多年保持可用 |
+| `reproductive-tissue-donor-screening-traceability-continuity/` | 生殖组织供体筛查与追溯连续性决定供体材料是否能在感染、身份、医学信息和后代权益上保持可治理 |
+| `preimplantation-genetic-testing-embryo-selection-governance-continuity/` | PGT 与胚胎选择治理连续性决定遗传检测是否被放进证据、不确定性、伦理和反优生边界中审查 |
+| `third-party-reproduction-surrogacy-donor-legal-ethics-continuity/` | 第三方生殖法律伦理连续性决定代孕、供体、预期父母、亲子关系、跨境服务和后代权益能否被关系治理承接 |
 | `chronic-pain-functional-restoration-continuity/` | 慢性疼痛与功能恢复连续性决定疼痛是否从症状变成有效时间、睡眠、工作参与和社会功能的长期损耗 |
 | `low-back-pain-spine-function-continuity/` | 腰背痛与脊柱功能连续性决定高频脊柱痛点是否会压缩移动半径、工作负荷承受和复发恢复窗口 |
 | `osteoarthritis-joint-function-continuity/` | 骨关节炎与关节功能连续性决定退行性关节病是否通过疼痛、僵硬和移动限制提前制造照护负担 |
@@ -1218,6 +1224,7 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | CDC Heat Health / NIA hot and cold weather safety | 提示体温调节、热暴露、寒冷暴露和老年脆弱性是环境-生理接口域 |
 | NIDDK urologic diseases / CDC UTI basics | 提示尿控、泌尿感染、盆底、睡眠、照护和尊严具有独立主体持续性价值 |
 | WHO infertility / WHO sexual and reproductive health / NICHD infertility | 提示生殖健康、生育力、不孕、生殖衰老和生殖自主性影响未来选择权 |
+| CDC ART / NASS / FDA HCT/P reproductive tissue / ASRM fertility preservation, PGT, donation, gestational carrier and cross-border reproductive care / ACOG PGT | 提示辅助生殖不是一个普通医疗主题，而是 ART 周期、质量报告、冷冻保存、供体追溯、PGT 和第三方生殖法律伦理共同组成的未来选择权治理层 |
 | NIMH / CDC ADHD and executive-function resources | 提示注意力、冲动控制、任务切换和执行功能是有效行动密度的独立认知资源 |
 | UNESCO / OECD / World Bank lifelong-learning and skills resources | 提示学习、技能形成、再训练和迁移能力是长期能力复利的独立资源 |
 | BLS American Time Use Survey / OECD time-use data | 提示时间使用、时间贫困、照护、等待和行政负担是有效时间建模的独立数据层 |
@@ -2549,6 +2556,14 @@ Source links:
 - https://www.epa.gov/indoor-air-quality-iaq/volatile-organic-compounds-impact-indoor-air-quality
 - https://www.phmsa.dot.gov/safety-awareness/pipeline/pipeline-leak-recognition-and-what-do
 - https://www.cdc.gov/heat-health/about/index.html
+- https://www.cdc.gov/art/about/index.html
+- https://www.cdc.gov/art/success-rates/index.html
+- https://www.cdc.gov/art/php/nass/index.html
+- https://www.fda.gov/vaccines-blood-biologics/safety-availability-biologics/what-you-should-know-reproductive-tissue-donation
+- https://www.asrm.org/practice-guidance/practice-committee-documents/fertility-preservation-in-patients-with-medical-indications-a-committee-opinion-2026/
+- https://www.asrm.org/practice-guidance/practice-committee-documents/the-use-of-preimplantation-genetic-testing-for-aneuploidy-a-committee-opinion-2024/
+- https://www.asrm.org/practice-guidance/practice-committee-documents/recommendations-for-practices-using-gestational-carriers-a-committee-opinion-2022/
+- https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2020/03/preimplantation-genetic-testing
 - https://www.ready.gov/plan
 - https://www.ready.gov/sites/default/files/2020-03/ready_document-and-insure-your-property.pdf
 - https://www.ready.gov/power-outages

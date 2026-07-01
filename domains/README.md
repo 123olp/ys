@@ -55,6 +55,12 @@
 - `home-dialysis-supply-self-management-continuity/`：家庭血透、腹膜透析、耗材配送、电水依赖、训练和照护者负担。
 - `kidney-transplant-immunosuppression-graft-continuity/`：肾移植、移植物功能、免疫抑制、排斥、感染和药物供应。
 - `reproductive-fertility-continuity/`：生殖与生育连续性，整理生育力、生殖衰老、配子质量、生殖自主性和未来选择权。
+- `assisted-reproductive-technology-ivf-cycle-continuity/`：ART 与 IVF 周期连续性，整理取卵、受精、胚胎培养、移植、取消、费用和时间窗口。
+- `art-clinic-success-rate-quality-reporting-continuity/`：ART 诊所成功率与质量报告连续性，整理 CDC NASS、报告口径、分母定义、数据校验和解释边界。
+- `fertility-preservation-gamete-embryo-cryostorage-continuity/`：生育保存、配子和胚胎冷冻连续性，整理样本身份、储存同意、费用续缴、处置授权和未来使用权。
+- `reproductive-tissue-donor-screening-traceability-continuity/`：生殖组织供体筛查与追溯连续性，整理 HCT/P 供体筛查、检测、标签、记录和后代信息边界。
+- `preimplantation-genetic-testing-embryo-selection-governance-continuity/`：PGT 与胚胎选择治理连续性，整理 PGT-A/M/P、检测不确定性、选择压力和伦理边界。
+- `third-party-reproduction-surrogacy-donor-legal-ethics-continuity/`：第三方生殖、代孕、供体法律伦理连续性，整理多主体同意、亲子关系、跨境服务、后代权益和剥削防护。
 - `attention-executive-control/`：注意力与执行控制，整理注意力、工作记忆、抑制控制、任务切换和分心环境。
 - `learning-skill-acquisition/`：学习与技能获得，整理学习科学、反馈、迁移能力、再训练和终身学习。
 - `time-allocation-effective-time/`：时间分配与有效时间，整理时间使用、时间贫困、行政负担、等待成本和任务摩擦。
