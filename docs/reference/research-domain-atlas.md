@@ -489,6 +489,16 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 癌症风险可通过筛查和异常追踪前移 | `cancer-screening-early-detection-continuity/` | 癌症筛查、早期发现、异常追踪、过度诊断、公平可及 | 筛查缺失、异常结果断线或过度诊断失衡，改变癌症死亡风险和治疗负担 |
 | 骨折可在失能前预防 | `osteoporosis-fracture-prevention-bone-health-continuity/` | 骨质疏松筛查、骨折风险、骨健康服务、治疗坚持、骨折后恢复 | 骨质疏松和骨折后照护断裂会缩小行动半径、提高长期照护需求并增加死亡风险 |
 | 跌倒可作为环境和身体系统风险治理 | `fall-risk-prevention-home-safety-continuity/` | 跌倒风险筛查、家居安全、药物/视力/平衡/肌力接口、跌倒后复盘 | 跌倒被当成偶然事件会漏掉环境、药物、感官、平衡和肌力共同作用的可预防风险 |
+| 睡眠呼吸障碍可避免夜间恢复失败 | `sleep-disordered-breathing-screening-treatment-continuity/` | 睡眠呼吸障碍、夜间低氧、诊断转介、治疗坚持、设备可及 | 夜间低氧、觉醒碎片、日间嗜睡和心血管负荷持续消耗有效时间、判断和恢复能力 |
+| 慢性失眠可通过可及治疗保护恢复 | `chronic-insomnia-cbti-access-continuity/` | 慢性失眠、CBT-I 可及、行为治疗、药物风险、复发预防 | 恢复失败、用药风险、情绪波动和日间功能损害降低单位时间行动质量 |
+| 性健康服务可保护关系和公共卫生屏障 | `sexual-health-sti-prevention-continuity/` | STI 预防、检测、治疗转介、伴侣服务、隐私、污名 | 无症状感染、污名、医疗回避和伴侣服务断裂改变生殖健康、关系安全和传播风险 |
+| HIV 可通过预防和持续照护长期控制 | `hiv-testing-prep-prevention-continuity/` | HIV 检测、PrEP/PEP 转介、ART 连接、病毒抑制、隐私 | 预防、检测、治疗连接和保留照护失败会放大免疫、传播、污名和长期慢病负担 |
+| 慢性病毒性肝炎可在肝硬化和肝癌前治理 | `chronic-viral-hepatitis-screening-liver-protection-continuity/` | 乙肝/丙肝筛查、确认、治疗连接、纤维化、肝癌风险监测 | 长期无症状感染可推进肝硬化、肝癌、急性失代偿和传播风险 |
+| 生育时间和避孕选择影响长期路径 | `contraception-family-planning-access-continuity/` | 避孕可及、家庭计划、医学适用性、咨询质量、费用覆盖、隐私 | 缺少选择自主和供应连续会改变身体风险、照护责任、教育/工作连续性和资源计划 |
+| 月经健康是有效时间和身体信号系统 | `menstrual-health-cycle-literacy-continuity/` | 周期素养、用品可及、疼痛/出血负担、参与支持、异常转介 | 月经贫困、疼痛、重度出血和污名会造成学习工作缺席、贫血风险和诊断延迟 |
+| 更年期是中年健康风险转轨窗口 | `perimenopause-menopause-midlife-health-continuity/` | 围绝经期、症状、睡眠、情绪、骨骼、心血管、工作参与 | 中年症状负担和风险沟通失败会影响睡眠、情绪、骨折、心血管和工作退出风险 |
+| 盆底功能保护行动半径和尊严 | `pelvic-floor-continence-function-continuity/` | 尿失禁、便失禁、脱垂、康复可及、用品、社会参与 | 控尿控便失败会通过睡眠破坏、跌倒、社交回避、感染和照护负担侵蚀独立生活 |
+| UV 暴露和皮肤癌风险可被早期治理 | `skin-cancer-uv-protection-early-detection-continuity/` | UV 暴露、防晒环境、皮肤癌预防、早期识别、转诊、公平可及 | 皮肤癌风险、职业户外暴露和早识别断点会增加治疗负担、死亡风险和行动约束 |
 | 移动过程可避免严重伤害 | `road-traffic-injury-prevention-safe-mobility/` | 道路安全系统、速度管理、车辆安全、执法公平、交通伤害监测 | 出行过程制造死亡、严重伤害、长期失能、家庭收入中断和照护负担 |
 | 地理距离不能排除主体 | `rural-health-access-geographic-equity/` | 农村服务密度、距离、交通、宽带、卫生人力、药房/医院可达 | 可修复风险因地点、距离、宽带、人力和设施稀缺被延误或放弃 |
 | 住所缺失时服务不能断线 | `homelessness-unsheltered-health-continuity/` | 庇护、外展、卫生、睡眠、安全、身份、住房服务、医疗连续性 | 露宿、卫生缺失、暴露、创伤、慢病失控和服务断点把主体推出恢复路径 |
@@ -1134,6 +1144,16 @@ risk-engineering
   -> cancer-screening-early-detection-continuity
   -> osteoporosis-fracture-prevention-bone-health-continuity
   -> fall-risk-prevention-home-safety-continuity
+  -> sleep-disordered-breathing-screening-treatment-continuity
+  -> chronic-insomnia-cbti-access-continuity
+  -> sexual-health-sti-prevention-continuity
+  -> hiv-testing-prep-prevention-continuity
+  -> chronic-viral-hepatitis-screening-liver-protection-continuity
+  -> contraception-family-planning-access-continuity
+  -> menstrual-health-cycle-literacy-continuity
+  -> perimenopause-menopause-midlife-health-continuity
+  -> pelvic-floor-continence-function-continuity
+  -> skin-cancer-uv-protection-early-detection-continuity
   -> road-traffic-injury-prevention-safe-mobility
   -> rural-health-access-geographic-equity
   -> homelessness-unsheltered-health-continuity

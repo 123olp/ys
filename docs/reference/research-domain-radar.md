@@ -309,6 +309,16 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `cancer-screening-early-detection-continuity/` | 癌症筛查与早期发现连续性决定癌症死亡风险是否前移到筛查覆盖、异常追踪和收益伤害权衡 |
 | `osteoporosis-fracture-prevention-bone-health-continuity/` | 骨质疏松与骨折预防连续性决定行动半径、独立生活和长期照护负担是否被骨折事件提前截断 |
 | `fall-risk-prevention-home-safety-continuity/` | 跌倒风险与家居安全连续性决定跌倒是否从偶然事故变成可复盘、可改造、可预防的环境和身体系统风险 |
+| `sleep-disordered-breathing-screening-treatment-continuity/` | 睡眠呼吸障碍筛查与治疗连续性决定夜间低氧、觉醒碎片、日间嗜睡和心血管负荷是否进入可恢复路径 |
+| `chronic-insomnia-cbti-access-continuity/` | 慢性失眠与 CBT-I 可及连续性决定睡眠恢复失败是否持续消耗注意力、情绪、学习、工作和有效时间 |
+| `sexual-health-sti-prevention-continuity/` | 性健康与 STI 预防连续性决定检测、治疗转介、伴侣服务、隐私和污名治理是否保护身体完整性和关系安全 |
+| `hiv-testing-prep-prevention-continuity/` | HIV 检测与 PrEP 预防连续性决定 HIV 风险是否通过早检、预防、治疗连接和病毒抑制进入长期可控路径 |
+| `chronic-viral-hepatitis-screening-liver-protection-continuity/` | 慢性病毒性肝炎筛查与肝脏保护连续性决定乙肝/丙肝是否在肝硬化、肝癌和失代偿前被发现和连接治疗 |
+| `contraception-family-planning-access-continuity/` | 避孕与家庭计划可及连续性决定生育时间、身体风险、照护责任、教育工作连续性和未来选择权是否可被主体安排 |
+| `menstrual-health-cycle-literacy-continuity/` | 月经健康与周期素养连续性决定疼痛、重度出血、用品缺口、污名和异常信号是否消耗学习、工作和身体自主 |
+| `perimenopause-menopause-midlife-health-continuity/` | 围绝经期、更年期与中年健康连续性决定中年症状、睡眠、情绪、骨骼、心血管和工作参与风险是否被系统承接 |
+| `pelvic-floor-continence-function-continuity/` | 盆底与控尿控便功能连续性决定失禁、脱垂、羞耻、用品和康复断点是否压缩行动半径、睡眠和尊严 |
+| `skin-cancer-uv-protection-early-detection-continuity/` | 皮肤癌、UV 防护与早期识别连续性决定环境暴露、户外职业风险和皮肤癌早识别是否被纳入长期风险控制 |
 | `road-traffic-injury-prevention-safe-mobility/` | 道路交通伤害预防和安全移动决定出行是否持续制造死亡、严重伤害和长期失能 |
 | `rural-health-access-geographic-equity/` | 农村地理距离、服务密度、宽带、交通和卫生人力决定可修复风险是否因地点被延误或放弃 |
 | `homelessness-unsheltered-health-continuity/` | 无家可归和露宿状态决定睡眠、卫生、身份、安全、医疗和福利入口是否会同时断线 |
@@ -694,6 +704,16 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | MedlinePlus Personal Health Records | 提示个人健康记录、急救摘要、联系人、用药和过敏信息是急救与跨机构转交的最小资料层 |
 | Ready.gov Make a Plan / Disability materials | 提示家庭沟通计划、医疗需求、功能需求、电力依赖、设备和照护者必须进入灾害准备 |
 | CDC vaccination records / immunization information systems materials | 提示免疫记录、登记系统和证明可携带性会影响学校、工作、旅行、医疗和公共卫生准入 |
+| NHLBI sleep apnea / USPSTF OSA screening materials | 提示睡眠呼吸障碍、夜间低氧和筛查不确定性需要在恢复、心血管和安全风险之间单独建模 |
+| ACP insomnia guideline / AASM behavioral sleep treatment materials | 提示慢性失眠、CBT-I 可及和睡眠行为治疗不能只作为一般睡眠卫生处理 |
+| CDC STI guidelines / USPSTF STI recommendation materials | 提示性健康、STI 检测、治疗转介、伴侣服务、隐私和污名治理构成独立连续性链 |
+| CDC HIV testing and PrEP / USPSTF HIV and PrEP materials | 提示 HIV 已从单一感染死亡风险转向预防、早检、持续照护、病毒抑制和污名治理链 |
+| CDC viral hepatitis / USPSTF hepatitis C materials | 提示乙肝、丙肝筛查、确认、治疗连接和肝癌风险监测是肝脏保护与感染控制接口 |
+| CDC U.S. MEC / U.S. SPR contraception materials | 提示避孕与家庭计划需要区分选择自主、医学适用性、咨询质量、费用覆盖和供应连续 |
+| NICHD / HHS menstrual health materials | 提示月经健康、周期素养、用品可及、疼痛/出血负担和异常转介是有效时间与身体自主条件 |
+| NIA / HHS menopause materials | 提示围绝经期、更年期和中年健康风险转轨需要连接症状、骨骼、睡眠、情绪、心血管和工作参与 |
+| NIDDK incontinence / pelvic floor materials | 提示控尿控便、盆底功能、康复可及和用品支持会影响行动半径、尊严、睡眠和社会参与 |
+| CDC / USPSTF / NCI skin cancer prevention materials | 提示 UV 暴露、日晒防护、皮肤癌预防、早识别和户外环境是环境暴露控制与癌症早诊接口 |
 | OrganDonor.gov / HRSA organ donation materials | 提示器官捐赠登记、anatomical gift 和家庭沟通会把死亡边界后的主体意愿连接到他人生命资源 |
 | FDA UDI / AccessGUDID materials | 提示植入设备和医疗器械标识会影响急救、影像、手术、召回和跨机构设备识别 |
 | CDC/NCHS NVSS and mortality materials | 提示死亡证明、死因记录和生命统计是遗属行政、保险、公共卫生学习和死亡边界治理的基础记录 |

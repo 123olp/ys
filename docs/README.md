@@ -677,4 +677,14 @@ docs/
 491. Read `../domains/cancer-screening-early-detection-continuity/README.md` if you are working on cancer screening, early detection, abnormal result tracking, false positives/negatives, overdiagnosis, or equitable screening access.
 492. Read `../domains/osteoporosis-fracture-prevention-bone-health-continuity/README.md` if you are working on osteoporosis screening, fracture risk, bone health services, treatment persistence, post-fracture recovery, or independent living.
 493. Read `../domains/fall-risk-prevention-home-safety-continuity/README.md` if you are working on fall-risk screening, home safety, medication/vision/balance/strength interfaces, post-fall review, fear of falling, or independent living.
-494. Enter a domain under `../domains/`.
+494. Read `../domains/sleep-disordered-breathing-screening-treatment-continuity/README.md` if you are working on sleep-disordered breathing, obstructive sleep apnea, nocturnal hypoxemia, sleep study access, treatment adherence, or daytime sleepiness.
+495. Read `../domains/chronic-insomnia-cbti-access-continuity/README.md` if you are working on chronic insomnia, CBT-I access, behavioral sleep treatment, hypnotic medication risk, daytime impairment, or relapse prevention.
+496. Read `../domains/sexual-health-sti-prevention-continuity/README.md` if you are working on sexual health, STI prevention, testing access, treatment referral, partner services, confidentiality, or stigma.
+497. Read `../domains/hiv-testing-prep-prevention-continuity/README.md` if you are working on HIV testing, PrEP/PEP referral, ART linkage, retention in care, viral suppression, confidentiality, or HIV stigma.
+498. Read `../domains/chronic-viral-hepatitis-screening-liver-protection-continuity/README.md` if you are working on hepatitis B/C screening, confirmatory testing, linkage to care, liver fibrosis, cirrhosis, or liver cancer surveillance.
+499. Read `../domains/contraception-family-planning-access-continuity/README.md` if you are working on contraception access, family planning, informed choice, medical eligibility, cost coverage, pharmacy access, or reproductive coercion safeguards.
+500. Read `../domains/menstrual-health-cycle-literacy-continuity/README.md` if you are working on menstrual health literacy, period poverty, dysmenorrhea, heavy menstrual bleeding, school/work participation, or referral pathways.
+501. Read `../domains/perimenopause-menopause-midlife-health-continuity/README.md` if you are working on perimenopause, menopause symptoms, vasomotor symptoms, sleep disruption, mood, bone health, cardiovascular risk, or workplace participation.
+502. Read `../domains/pelvic-floor-continence-function-continuity/README.md` if you are working on pelvic floor function, urinary incontinence, fecal incontinence, pelvic organ prolapse, rehabilitation access, continence supplies, or participation.
+503. Read `../domains/skin-cancer-uv-protection-early-detection-continuity/README.md` if you are working on UV exposure, sun protection, skin cancer prevention, early recognition, referral access, occupational outdoor exposure, or skin tone equity.
+504. Enter a domain under `../domains/`.

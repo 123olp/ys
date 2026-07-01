@@ -42,6 +42,7 @@ Current documents:
 - `repository-standards.md`: researched repository structure standard for this knowledge base.
 - `research-domain-atlas.md`: first-principles domain atlas for mapping effective-immortality conditions to research domains.
 - `research-domain-radar.md`: candidate-domain radar for potential future research domains and promotion triggers.
+- `domain-map.md`: now also indexes the life-course preventive and function-continuity wave for sleep breathing, insomnia, sexual health, HIV, viral hepatitis, contraception, menstrual health, menopause, pelvic floor function, and UV/skin cancer prevention.
 - `research-model-visualization-toolkit.md`: research workflow, literature spine, modeling tools, visualization standards, and implementation guidance for Human Infra quantitative pages.
 - `review-checklists.md`: review checklists for documentation, evidence, safety, domains, and data scripts.
 - `source-card-system.md`: rules for turning papers, books, tools, cases, standards, and datasets into reusable Human Infra research cards.

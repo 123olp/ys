@@ -602,6 +602,16 @@
 - `cancer-screening-early-detection-continuity/`：癌症筛查与早期发现连续性，整理筛查覆盖、异常追踪、假阳性/假阴性、过度诊断和公平可及。
 - `osteoporosis-fracture-prevention-bone-health-continuity/`：骨质疏松、骨折预防与骨健康连续性，整理筛查、骨折风险、骨健康服务、治疗坚持和骨折后恢复。
 - `fall-risk-prevention-home-safety-continuity/`：跌倒风险预防与家居安全连续性，整理跌倒风险筛查、家居安全、药物/视力/平衡/肌力接口和跌倒后复盘。
+- `sleep-disordered-breathing-screening-treatment-continuity/`：睡眠呼吸障碍筛查与治疗连续性，整理夜间低氧、诊断转介、治疗坚持、设备可及和日间功能风险。
+- `chronic-insomnia-cbti-access-continuity/`：慢性失眠与 CBT-I 可及连续性，整理恢复失败、行为治疗可及、药物风险、日间功能和复发预防。
+- `sexual-health-sti-prevention-continuity/`：性健康与 STI 预防连续性，整理检测、治疗转介、伴侣服务、隐私、污名和公共卫生屏障。
+- `hiv-testing-prep-prevention-continuity/`：HIV 检测与 PrEP 预防连续性，整理检测、PrEP/PEP 转介、治疗连接、病毒抑制、隐私和污名。
+- `chronic-viral-hepatitis-screening-liver-protection-continuity/`：慢性病毒性肝炎筛查与肝脏保护连续性，整理乙肝/丙肝筛查、确认、治疗连接、纤维化和肝癌风险监测。
+- `contraception-family-planning-access-continuity/`：避孕与家庭计划可及连续性，整理选择自主、医学适用性、咨询质量、费用覆盖、供应连续和隐私。
+- `menstrual-health-cycle-literacy-continuity/`：月经健康与周期素养连续性，整理周期教育、用品可及、疼痛/出血负担、学校/工作支持和异常转介。
+- `perimenopause-menopause-midlife-health-continuity/`：围绝经期、更年期与中年健康连续性，整理症状、睡眠、情绪、骨骼、心血管、泌尿生殖和工作参与。
+- `pelvic-floor-continence-function-continuity/`：盆底、控尿控便与功能连续性，整理尿失禁、便失禁、脱垂、康复可及、用品和社会参与。
+- `skin-cancer-uv-protection-early-detection-continuity/`：皮肤癌、UV 防护与早期识别连续性，整理 UV 暴露、日晒防护、早识别、转诊和户外职业环境。
 - `governance-rights/`：治理与主体权利，整理同意、退出、数据权、法律身份、AI 治理和研究伦理。
 - `pain-suffering-control/`：疼痛与痛苦控制，整理慢性疼痛、症状负担、姑息医学和可承受持续性。
 - `health-literacy-navigation/`：健康素养与服务导航，整理可理解信息、风险沟通、共同决策和系统入口。

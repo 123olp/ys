@@ -1286,6 +1286,16 @@ flowchart TD
 | [Cancer Screening Early Detection Continuity](domains/cancer-screening-early-detection-continuity/README.md) | 癌症筛查、早期发现、异常追踪、假阳性/假阴性、过度诊断和公平可及 | 把癌症死亡风险前移到筛查质量和异常结果闭环 | 不提供筛查年龄、频率、检查选择、结果解读、遗传风险、治疗或个体建议 |
 | [Osteoporosis Fracture Prevention Bone Health Continuity](domains/osteoporosis-fracture-prevention-bone-health-continuity/README.md) | 骨质疏松筛查、骨折风险、骨健康服务、治疗坚持和骨折后恢复 | 把骨折预防纳入独立生活、行动半径和长期照护负担模型 | 不提供骨密度解读、补剂、药物、运动、跌倒训练、影像、骨折处理或个体建议 |
 | [Fall Risk Prevention Home Safety Continuity](domains/fall-risk-prevention-home-safety-continuity/README.md) | 跌倒风险筛查、家居安全、药物/视力/平衡/肌力接口、跌倒后复盘 | 把跌倒从偶然事故转化为环境、身体和照护系统共同治理的行动风险 | 不提供跌倒风险判断、训练动作、药物调整、辅具选择、家居改造、急救或康复建议 |
+| [Sleep Disordered Breathing Screening Treatment Continuity](domains/sleep-disordered-breathing-screening-treatment-continuity/README.md) | 睡眠呼吸障碍、夜间低氧、诊断转介、治疗坚持和设备可及 | 把夜间低氧、觉醒碎片、日间疲劳和心血管负荷纳入恢复系统模型 | 不提供睡眠报告判读、CPAP 设置、设备选择、驾驶限制或个体医疗建议 |
+| [Chronic Insomnia CBTI Access Continuity](domains/chronic-insomnia-cbti-access-continuity/README.md) | 慢性失眠、CBT-I 可及、睡眠行为治疗、药物风险和复发预防 | 把恢复失败转化为注意力、情绪、学习、工作和有效时间损失变量 | 不提供 CBT-I 操作、睡眠限制计划、药物、停药、设备或个体治疗建议 |
+| [Sexual Health STI Prevention Continuity](domains/sexual-health-sti-prevention-continuity/README.md) | 性健康、STI 预防、检测、治疗转介、伴侣服务、隐私和污名 | 把身体完整性、关系安全、生殖健康和公共卫生屏障纳入模型 | 不提供 STI 判读、用药、伴侣通知脚本、暴露处理、性行为或法律建议 |
+| [HIV Testing PrEP Prevention Continuity](domains/hiv-testing-prep-prevention-continuity/README.md) | HIV 检测、PrEP/PEP 转介、ART 连接、病毒抑制、污名和隐私 | 把 HIV 从死亡风险扩展为预防、早检、持续照护和权利保护链 | 不提供 HIV 风险评分、检测解释、PrEP/PEP/ART、暴露处理或伴侣建议 |
+| [Chronic Viral Hepatitis Screening Liver Protection Continuity](domains/chronic-viral-hepatitis-screening-liver-protection-continuity/README.md) | 乙肝/丙肝筛查、确认、治疗连接、肝纤维化和肝癌风险监测 | 把慢性病毒性肝炎纳入肝脏储备、肝癌预防和感染治理模型 | 不提供化验判读、疫苗、抗病毒药、监测周期、家庭传播或治疗建议 |
+| [Contraception Family Planning Access Continuity](domains/contraception-family-planning-access-continuity/README.md) | 避孕可及、家庭计划、选择自主、医学适用性、费用覆盖和供应连续 | 把生育时间、身体风险、照护责任、资源计划和未来选择权连接起来 | 不提供避孕选择、禁忌判断、用药/器械、紧急处理、妊娠或法律建议 |
+| [Menstrual Health Cycle Literacy Continuity](domains/menstrual-health-cycle-literacy-continuity/README.md) | 月经健康、周期素养、用品可及、疼痛/出血负担、学校/工作支持 | 把周期性身体信号、有效时间、贫血风险和身体自主纳入主体模型 | 不提供周期判读、妊娠判断、用药、激素治疗、用品选择或医疗建议 |
+| [Perimenopause Menopause Midlife Health Continuity](domains/perimenopause-menopause-midlife-health-continuity/README.md) | 围绝经期/更年期、症状、睡眠、情绪、骨骼、心血管和工作参与 | 把中年阶段风险转轨和有效时间保护纳入健康寿命模型 | 不提供激素治疗、补充剂、症状诊断、检查排序、风险判断或治疗建议 |
+| [Pelvic Floor Continence Function Continuity](domains/pelvic-floor-continence-function-continuity/README.md) | 盆底功能、尿失禁、便失禁、脱垂、康复可及、用品和社会参与 | 把排泄控制、行动半径、睡眠、尊严和独立生活纳入模型 | 不提供盆底训练、诊断、用药、器械、手术、产后恢复或用品建议 |
+| [Skin Cancer UV Protection Early Detection Continuity](domains/skin-cancer-uv-protection-early-detection-continuity/README.md) | UV 暴露、日晒防护、皮肤癌预防、早期识别、转诊和户外环境 | 把环境暴露、皮肤癌风险、职业户外行动和公平可及连接起来 | 不提供皮损照片判断、防晒产品、筛查周期、活检、治疗、用药或转诊建议 |
 | [Road Traffic Injury Prevention Safe Mobility](domains/road-traffic-injury-prevention-safe-mobility/README.md) | 道路交通伤害、安全系统、速度管理、车辆安全、交通数据和安全移动 | 让出行从可达性进一步成为不制造死亡和失能的行动基础设施 | 不提供驾驶、路线、事故责任、保险、法律、车辆改装、危险驾驶、规避执法或急救建议 |
 | [Rural Health Access Geographic Equity](domains/rural-health-access-geographic-equity/README.md) | 地理距离、服务密度、宽带、交通、卫生人力和农村健康公平 | 防止可修复风险因为地点、交通、宽带和服务稀缺被延误或放弃 | 不提供个体医疗、保险、转诊、迁居、急救路线、补助申请、政策游说或商业选址建议 |
 | [Homelessness Unsheltered Health Continuity](domains/homelessness-unsheltered-health-continuity/README.md) | 无家可归、露宿、庇护、外展、住房服务、卫生、安全和照护断点 | 让没有稳定住所的主体仍能维持医疗、卫生、身份、睡眠、安全和福利入口 | 不提供个体庇护、住房申请、法律救济、福利申请、露宿规避、执法规避或生存技巧 |
@@ -1906,5 +1916,6 @@ flowchart LR
 - 2026-07-01：新增第八十一波 10 个急性救援与临时器官支持连续性域，覆盖心脏骤停 CPR/除颤、脓毒症休克早识别复苏、创伤系统出血控制、ICU 器官支持谵妄、机械通气呼吸衰竭、ECMO/ECLS、急性肾损伤肾脏替代、输血血液管理出血、过量/中毒逆转毒理和烧伤重症康复。
 - 2026-07-01：新增第八十二波 10 个急性内科与时间关键急症连续性域，覆盖急性冠脉综合征再灌注、急性心衰失代偿、心律失常/晕厥失代偿、VTE/肺栓塞、高血压危象靶器官风险、糖尿病高低血糖危象、过敏性休克、哮喘/COPD 急性加重、急性消化道出血内镜和产科出血/高血压急症。
 - 2026-07-01：新增第八十三波 10 个预防筛查与风险因子控制连续性域，覆盖高血压检测控制、血脂/动脉粥样硬化风险管理、糖尿病前期预防、肥胖/脂肪代谢风险、烟草尼古丁戒断、酒精风险降低、CKD 筛查进展、癌症筛查早诊、骨质疏松骨折预防和跌倒/家居安全预防。
+- 2026-07-01：新增第八十四波 10 个生活史预防与功能连续性域，覆盖睡眠呼吸障碍、慢性失眠/CBT-I 可及、STI 预防、HIV 检测/PrEP、慢性病毒性肝炎、避孕与家庭计划、月经健康、围绝经期/更年期、盆底控尿控便和皮肤癌/UV 防护。
 
 完整记录见 [CHANGELOG.md](CHANGELOG.md)。

@@ -568,6 +568,24 @@ Human Infra 不能被设计成更精密的压榨系统。
 - 产出污名化、体型歧视、成瘾道德化、延误就医、规避检测、规避医生、规避保险规则或商业产品背书内容。
 - 替代医生、药师、戒烟/成瘾治疗专业人员、营养师、物理治疗师、肾脏科、肿瘤筛查服务、骨健康服务或公共卫生机构。
 
+## 生活史预防与功能连续性边界
+
+`sleep-disordered-breathing-screening-treatment-continuity`、`chronic-insomnia-cbti-access-continuity`、`sexual-health-sti-prevention-continuity`、`hiv-testing-prep-prevention-continuity`、`chronic-viral-hepatitis-screening-liver-protection-continuity`、`contraception-family-planning-access-continuity`、`menstrual-health-cycle-literacy-continuity`、`perimenopause-menopause-midlife-health-continuity`、`pelvic-floor-continence-function-continuity` 和 `skin-cancer-uv-protection-early-detection-continuity` 关注恢复失败、性/生殖健康、慢性感染、中年风险转轨、盆底功能和 UV 暴露如何改变有效时间、身体自主、关系安全、尊严、公共卫生屏障和未来选择权，不是个人诊断、治疗、性健康、避孕、睡眠、肝炎、HIV、盆底康复、皮肤或保险法律建议入口。
+
+可以做：
+
+- 整理 NHLBI、ACP、AASM、CDC、USPSTF、NICHD、HHS OWH、NIA、NIDDK、NCI 和相关公共机构资料。
+- 比较睡眠恢复、性健康服务、HIV/肝炎检测与治疗连接、避孕选择自主、月经用品可及、更年期症状负担、盆底功能和 UV 防护如何影响主体持续性。
+- 记录服务可及、隐私、污名、费用、转介、治疗连接、功能参与、证据等级、禁止用途和不确定性。
+
+不能做：
+
+- 提供睡眠报告判读、CBT-I 操作、STI/HIV/肝炎检测解释、PrEP/PEP/ART、避孕选择、周期判读、激素治疗、盆底训练、皮损照片判断、防晒产品、处方、检查频率、保险或法律建议。
+- 生成个人风险评分、筛查周期、性行为建议、伴侣通知脚本、妊娠判断、用药、设备选择、康复方案、工作证明、学校证明、诊断、治疗或转诊建议。
+- 收集、存储或推断可识别个人的睡眠日志、血氧、性行为、伴侣、HIV/STI/肝炎状态、妊娠、月经、未成年人、性健康、排泄、皮肤照片、职业、定位、保险、就诊记录或其他 PHI。
+- 产出污名化、性身份推断、未成年人监控、生殖胁迫、医疗回避、检测规避、治疗规避、家庭自行处理、商业产品背书或高敏感个人资料收集内容。
+- 替代睡眠医学、心理治疗、妇产科、感染科、肝病科、泌尿/盆底康复、皮肤科、药学、公共卫生、法律援助、危机服务或本地专业人员。
+
 ## 门诊访问与临床服务执行连续性边界
 
 `provider-directory-network-adequacy-continuity`、`primary-care-panel-appointment-access-continuity`、`specialist-referral-authorization-navigation-continuity`、`appointment-availability-wait-time-continuity`、`outpatient-laboratory-specimen-result-routing-continuity`、`diagnostic-imaging-order-scheduling-report-continuity`、`ambulatory-procedure-surgery-center-continuity` 和 `after-hours-urgent-care-triage-continuity` 关注 provider 名录、初级照护、专科转诊、预约等待、门诊检验、诊断影像、门诊操作和非工作时间分诊如何让医疗服务从“名义存在”变成主体可进入、可完成、可回传的服务路径，不是医生推荐、个案分诊、诊疗建议、保险申诉或预约规避工具。
