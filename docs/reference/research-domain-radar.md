@@ -241,6 +241,16 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `healthcare-surge-triage-capacity-continuity/` | 医疗挤兑、床位、人力、分诊和危机标准决定可修复风险是否仍能被医疗系统接住 |
 | `medical-countermeasure-stockpile-distribution-continuity/` | 医疗对策、战略储备、POD、PPE、冷链和分配公平决定库存是否能进入真实风险控制 |
 | `wastewater-pathogen-surveillance-early-warning-continuity/` | 污水病原体趋势、社区聚合和早期预警决定公共卫生系统能否提前看见传播变化 |
+| `chemical-release-shelter-evacuation-continuity/` | 化学释放、就地避险、撤离和恢复入口决定事故信号能否转化为保护行动 |
+| `community-right-to-know-chemical-risk-disclosure-continuity/` | 社区知情权、化学设施披露和环境正义决定隐蔽风险能否在事故前进入准备和监督 |
+| `hazmat-incident-command-emergency-response-continuity/` | HazMat 指挥、统一指挥和跨机构协作决定危险材料事故是否会在组织边界间失控 |
+| `industrial-process-safety-management-continuity/` | PSM、RMP、机械完整性和变更管理决定高危工业过程是否能持续预防重大事故 |
+| `toxic-plume-air-monitoring-risk-communication-continuity/` | 有毒羽流监测、模型、气象接口和不确定性沟通决定公众行动是否建立在可信信息上 |
+| `hazwoper-responder-ppe-safety-continuity/` | HAZWOPER、PPE、呼吸防护、热压力和轮班决定响应者能否安全持续行动 |
+| `decontamination-exposure-triage-continuity/` | 暴露后去污入口、医疗分流、医院准备和尊严保护决定事故暴露能否进入恢复系统 |
+| `hazardous-materials-transportation-erg-continuity/` | 危险材料运输、ERG、标识接口和交通中断决定移动危险品事故能否被识别和恢复 |
+| `oil-spill-hazardous-release-response-recovery-continuity/` | 油污和危险释放响应恢复决定水域污染是否会长期切断健康、收入、食物和社区信任 |
+| `battery-thermal-runaway-fire-hazard-continuity/` | 电池热失控、储能、微出行、召回和火灾烟气决定电池化工具是否反向制造居住风险 |
 | `maternal-newborn-child-development/` | 孕产、新生儿、儿童健康、生长、早期发展和养育照护决定主体能力形成的早期条件 |
 | `patient-safety-organizational-learning/` | 患者安全、事件报告、团队沟通、根因分析和安全文化决定医疗组织能否防止重复伤害 |
 | `social-determinants-community-vulnerability/` | 社会决定因素、社区脆弱性、环境正义、地方健康估计、食物可达和社会需求决定上游风险分布 |

@@ -847,4 +847,14 @@ docs/
 661. Read `../domains/healthcare-surge-triage-capacity-continuity/README.md` if you are working on healthcare surge, bed capacity, staffing, triage frameworks, crisis standards, transfer networks, or delayed-care risk during outbreaks.
 662. Read `../domains/medical-countermeasure-stockpile-distribution-continuity/README.md` if you are working on medical countermeasures, Strategic National Stockpile, points of dispensing, antivirals, PPE, cold chain, or outbreak distribution equity.
 663. Read `../domains/wastewater-pathogen-surveillance-early-warning-continuity/README.md` if you are working on wastewater pathogen surveillance, NWSS, community trend signals, early warning, aggregation, or public-health trigger interfaces.
-664. Enter a domain under `../domains/`.
+664. Read `../domains/chemical-release-shelter-evacuation-continuity/README.md` if you are working on chemical-release protective actions, shelter-in-place, evacuation, warning comprehension, transport disruption, or recovery referral.
+665. Read `../domains/community-right-to-know-chemical-risk-disclosure-continuity/README.md` if you are working on EPCRA, TRI, Tier II, RMP, chemical-facility disclosure, community right-to-know, or environmental justice.
+666. Read `../domains/hazmat-incident-command-emergency-response-continuity/README.md` if you are working on HazMat incident command, NIMS/ICS, unified command, multi-agency coordination, public information, or recovery handoff.
+667. Read `../domains/industrial-process-safety-management-continuity/README.md` if you are working on OSHA PSM, EPA RMP, mechanical integrity, management of change, process accident prevention, or incident learning.
+668. Read `../domains/toxic-plume-air-monitoring-risk-communication-continuity/README.md` if you are working on toxic plumes, air monitoring, CAMEO/ALOHA, weather interfaces, uncertainty, or public risk communication.
+669. Read `../domains/hazwoper-responder-ppe-safety-continuity/README.md` if you are working on HAZWOPER, responder PPE, respiratory protection, heat stress, contamination transfer, or responder staffing continuity.
+670. Read `../domains/decontamination-exposure-triage-continuity/README.md` if you are working on exposure decontamination interfaces, medical triage, hospital preparedness, dignity/privacy, or family reunification after hazardous exposure.
+671. Read `../domains/hazardous-materials-transportation-erg-continuity/README.md` if you are working on hazardous materials transportation, ERG, identification interfaces, road/rail/pipeline/port incidents, traffic disruption, or community communication.
+672. Read `../domains/oil-spill-hazardous-release-response-recovery-continuity/README.md` if you are working on oil spills, hazardous releases, coastal/waterway response, worker safety, fisheries/tourism income disruption, or long-term monitoring.
+673. Read `../domains/battery-thermal-runaway-fire-hazard-continuity/README.md` if you are working on lithium-ion batteries, thermal runaway, micro-mobility fires, energy storage incidents, recalls, smoke exposure, or housing/fire interfaces.
+674. Enter a domain under `../domains/`.

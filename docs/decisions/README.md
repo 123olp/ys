@@ -117,3 +117,4 @@ Current decisions:
 - `0102-add-ninety-eighth-wave-household-personal-emergency-preparedness-domains.md`
 - `0103-add-ninety-ninth-wave-disaster-recovery-execution-continuity-domains.md`
 - `0104-add-one-hundredth-wave-infectious-disease-outbreak-response-execution-domains.md`
+- `0105-add-one-hundred-first-wave-hazardous-materials-industrial-incident-execution-domains.md`

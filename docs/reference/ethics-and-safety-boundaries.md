@@ -371,6 +371,24 @@ Human Infra 不能被设计成更精密的压榨系统。
 - 提供库存位置、配送路径、医疗资源抢占、设施安全弱点、采样教程、污水设施定位、实验室操作、地方政策指挥或实时恐慌传播。
 - 把暴发响应写成政治动员、组织监控、惩罚机制、个人责任归咎、确定性疫情预测或单一技术万能方案。
 
+## 危险材料与工业事故执行连续性边界
+
+`chemical-release-shelter-evacuation-continuity`、`community-right-to-know-chemical-risk-disclosure-continuity`、`hazmat-incident-command-emergency-response-continuity`、`industrial-process-safety-management-continuity`、`toxic-plume-air-monitoring-risk-communication-continuity`、`hazwoper-responder-ppe-safety-continuity`、`decontamination-exposure-triage-continuity`、`hazardous-materials-transportation-erg-continuity`、`oil-spill-hazardous-release-response-recovery-continuity` 和 `battery-thermal-runaway-fire-hazard-continuity` 关注危险材料、工业过程、运输、油污和电池热失控事故中从风险披露、预防、指挥、避险、监测、响应者安全、暴露后入口到恢复的执行链，不是化学操作、事故处置、设施侦察、医疗指挥或监管规避工具。
+
+可以做：
+
+- 整理 Ready.gov、EPA、OSHA、PHMSA、FEMA、HHS、NOAA、NIOSH、CPSC、NFPA 等公开资料中的机制、变量、制度接口和证据边界。
+- 建模风险披露、过程安全、事故指挥、避险撤离、羽流监测、响应者 PPE、暴露后分诊、危险品运输、油污恢复和电池热失控如何影响主体持续性。
+- 区分公众教育、组织准备、监管信息、响应者安全、医疗入口和现场操作之间的边界。
+
+不能做：
+
+- 提供化学品处置、混配、储存、采样、去污、清理、围控、分散、运输、包装、装卸、现场进入、消防救援、撤离路线、隔离距离、PPE 穿脱、呼吸器适配、阈值解释或实时行动建议。
+- 提供设施侦察、敏感位置滥用、事故制造、扩散优化、检测规避、报告规避、监管规避、联锁绕过、危险工艺优化、污染隐藏、恐慌传播或攻击模拟。
+- 提供个体中毒处理、医疗分诊、解毒、用药、采样结果解释、法律索赔、责任认定、保险、企业合规、投资、采购、产品推荐或房产建议。
+- 提供电池拆解、维修、改装、充电方案、灭火操作、储能设计、危险运输或绕过召回的信息。
+- 把危险材料事故资料写成现场指挥、企业背书、个人责任归咎、社区污名化、恐慌营销或单一技术万能方案。
+
 ## 社区脆弱性、公共服务、应急恢复、金融支付与就业服务域边界
 
 `social-determinants-community-vulnerability`、`public-service-design-accessibility`、`emergency-alerts-communications`、`disaster-recovery-relief-continuity`、`financial-inclusion-payment-systems` 和 `workforce-employment-services` 关注上游生活环境、公共服务入口、危机通信、灾后恢复、资源流通和就业服务如何支撑主体持续性，不是个体风险评分、服务申请、应急指挥、金融建议或职业承诺工具。

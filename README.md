@@ -170,6 +170,7 @@ flowchart LR
 | 价值、成本与疾病负担 | IHME GBD、WHO Global Health Estimates、WHO-CHOICE、NICE HTA、ICER、AHRQ MEPS | 稀缺医疗和公共资源如何在疾病负担、成本效果、公平、权利和主体体验之间被审查 |
 | 免疫屏障与公共卫生监测 | WHO immunization、IA2030、CDC NNDSS、WHO GISRS、IHR、IPC、NHSN、GLASS、CDC NWSS | 群体免疫、早期发现、感染防控、耐药治理和废水信号能否防止风险扩散到个体 |
 | 传染病暴发响应执行 | CDC case investigation/contact tracing、CDC testing、FDA COVID-19 tests、CDC masks/ventilation、OSHA respiratory protection、ASPR TRACIE、ASPR SNS、CDC NWSS | 病例、接触者、学校、工作场所、医疗系统、物资和社区预警能否在暴发中转化为连续行动 |
+| 危险材料与工业事故执行 | Ready.gov chemical、EPA EPCRA/RMP/CAMEO、OSHA PSM/HAZWOPER、PHMSA ERG、FEMA NIMS、HHS CHEMM、NOAA OR&R | 化学释放、工业过程、运输、去污分诊、响应者安全、油污和电池热失控能否被转化为连续行动 |
 | 母婴儿童早期生命 | WHO maternal/newborn/child health、WHO growth standards、Nurturing Care、CDC PRAMS、World Bank ECD | 孕产、新生儿、儿童健康、生长、照护和早期发展如何塑造长期主体能力 |
 | 患者安全与组织学习 | WHO Patient Safety、AHRQ TeamSTEPPS、CUSP、SOPS、IHI RCA2 | 医疗照护组织能否把错误、交接失败和近失误转化为系统学习，而不是重复伤害 |
 | 社会决定因素与社区脆弱性 | WHO SDOH、Healthy People SDOH、CDC/ATSDR SVI、CDC/ATSDR EJI、CDC PLACES、USDA Food Access、CMS AHC | 居住地、资源、污染、食物、服务密度和社会需求如何改变生命路径风险分布 |
@@ -409,6 +410,16 @@ flowchart TD
     H --> WMHMC[waste-management-hazardous-materials-continuity<br/>废弃物 / 危险材料]
     H --> RNSP[radiation-nuclear-safety-protection<br/>辐射 / 核安全防护]
     H --> CSPCT[chemical-safety-poison-control-toxicology<br/>化学安全 / 中毒控制]
+    CSPCT --> CRSEC[chemical-release-shelter-evacuation-continuity<br/>化学释放 / 避险撤离]
+    CSPCT --> CRTKCRD[community-right-to-know-chemical-risk-disclosure-continuity<br/>社区知情 / 化学风险披露]
+    CSPCT --> HICERC[hazmat-incident-command-emergency-response-continuity<br/>HazMat 指挥 / 应急响应]
+    CSPCT --> IPSMC[industrial-process-safety-management-continuity<br/>过程安全 / 事故预防]
+    CSPCT --> TPAIRCC[toxic-plume-air-monitoring-risk-communication-continuity<br/>有毒羽流 / 风险沟通]
+    CSPCT --> HRPPSC[hazwoper-responder-ppe-safety-continuity<br/>HAZWOPER / 响应者 PPE]
+    CSPCT --> DETC[decontamination-exposure-triage-continuity<br/>去污 / 暴露分诊]
+    CSPCT --> HMTERG[hazardous-materials-transportation-erg-continuity<br/>危险品运输 / ERG]
+    CSPCT --> OSHRRC[oil-spill-hazardous-release-response-recovery-continuity<br/>油污释放 / 响应恢复]
+    CSPCT --> BTRFHC[battery-thermal-runaway-fire-hazard-continuity<br/>电池热失控 / 火灾风险]
     H --> CMMR[critical-minerals-materials-resilience<br/>关键矿物 / 材料韧性]
     H --> AQVEC[air-quality-ventilation-exposure-control<br/>空气质量 / 通风暴露控制]
     H --> FSCC[food-safety-contamination-control<br/>食品安全 / 污染控制]
@@ -1466,6 +1477,16 @@ flowchart TD
 | [Waste Management Hazardous Materials Continuity](domains/waste-management-hazardous-materials-continuity/README.md) | 固体废物、医疗废物、危险废物、处理处置和服务连续性 | 防止废弃物和危险材料反向制造感染、毒性、污染、火灾和尊严风险 | 不提供危险废物处理、处置、储存、运输、清理、规避监管或非法倾倒方法 |
 | [Radiation Nuclear Safety Protection](domains/radiation-nuclear-safety-protection/README.md) | 电离辐射防护、核安全、辐射监测、放射性材料风险和应急治理 | 把不可见高能暴露转化为可测量、可监管、可限制、可响应的风险对象 | 不提供放射源、核材料、设施、去污、防护、撤离、医疗影像或放疗个体建议 |
 | [Chemical Safety Poison Control Toxicology](domains/chemical-safety-poison-control-toxicology/README.md) | 化学品安全、毒性暴露、毒物中心、毒理证据、暴露监测和风险沟通 | 把化学暴露从孤立判断转化为可咨询、可监测、可监管和可预防的公共能力 | 不提供中毒处理、解毒、化学混配、合成、投毒、规避检测或事故处置建议 |
+| [Chemical Release Shelter Evacuation Continuity](domains/chemical-release-shelter-evacuation-continuity/README.md) | 化学释放、就地避险、撤离、警报理解、交通转移和恢复入口 | 把化学释放危险信号转化为可避险、可转移、可接续的行动链 | 不提供化学品处置、防护搭建、撤离路线、去污、现场判断或实时指挥 |
+| [Community Right To Know Chemical Risk Disclosure Continuity](domains/community-right-to-know-chemical-risk-disclosure-continuity/README.md) | EPCRA、TRI、Tier II、设施风险披露、应急规划和环境正义 | 把隐蔽化学风险转化为社区准备、监督、沟通和信任基础设施 | 不提供设施侦察、攻击、规避报告、法律策略、恐慌传播或骚扰 |
+| [Hazmat Incident Command Emergency Response Continuity](domains/hazmat-incident-command-emergency-response-continuity/README.md) | HazMat 事件指挥、NIMS/ICS、跨机构协作、公众信息和恢复交接 | 防止危险材料事故在消防、医疗、环境、交通和公共卫生边界之间失控 | 不提供现场战术、隔离距离、消防操作、去污步骤、事故指挥或设施攻防 |
+| [Industrial Process Safety Management Continuity](domains/industrial-process-safety-management-continuity/README.md) | PSM、RMP、机械完整性、变更管理、事故学习和社区接口 | 把高危工业过程从事故外溢源转化为可维护、可学习、可监管的系统 | 不提供工艺参数、设备操作、联锁绕过、企业合规、事故责任或监管规避 |
+| [Toxic Plume Air Monitoring Risk Communication Continuity](domains/toxic-plume-air-monitoring-risk-communication-continuity/README.md) | 有毒羽流、空气监测、模型工具、气象接口、阈值沟通和不确定性 | 把不可见动态空气暴露转化为可更新、可解释、可信任的公共风险边界 | 不提供实时预测、传感器部署、阈值解释、撤离命令、扩散优化或规避检测 |
+| [HAZWOPER Responder PPE Safety Continuity](domains/hazwoper-responder-ppe-safety-continuity/README.md) | HAZWOPER、PPE、呼吸防护、热压力、污染转移和响应者容量 | 让响应者持续安全行动，从而支撑公众保护、转运、监测和恢复 | 不提供 PPE 选择、穿脱、fit testing、现场等级判断、救援操作或职业合规 |
+| [Decontamination Exposure Triage Continuity](domains/decontamination-exposure-triage-continuity/README.md) | 暴露后去污入口、医疗分流、医院准备、隐私尊严和家庭重聚 | 把危险暴露后的混乱入口转化为医疗、恢复和主体尊严连续性 | 不提供去污步骤、暴露处理、医疗分诊、采样、解毒、证据保存或现场处置 |
+| [Hazardous Materials Transportation ERG Continuity](domains/hazardous-materials-transportation-erg-continuity/README.md) | 危险材料运输、ERG、标识接口、交通中断、物流断点和社区沟通 | 把移动危险品风险转化为可识别、可沟通、可恢复的交通供应链接口 | 不提供运输路线、包装、装卸、隔离距离、标识规避、企业合规或违法运输 |
+| [Oil Spill Hazardous Release Response Recovery Continuity](domains/oil-spill-hazardous-release-response-recovery-continuity/README.md) | 油污、危险释放、水域海岸恢复、工人安全、收入食物水源和长期监测 | 把污染释放事件纳入健康、收入、食物水源和社区恢复链 | 不提供清理技术、围控、采样、现场进入、索赔策略、法律判断或污染制造 |
+| [Battery Thermal Runaway Fire Hazard Continuity](domains/battery-thermal-runaway-fire-hazard-continuity/README.md) | 锂离子电池、热失控、微出行、储能、召回、火灾烟气和住房接口 | 让电池化工具和备用能源成为主体增强而不是反向火灾暴露风险 | 不提供电池维修、拆解、改装、充电方案、灭火操作、储能设计或产品推荐 |
 | [Critical Minerals Materials Resilience](domains/critical-minerals-materials-resilience/README.md) | 关键矿物、战略材料、加工依赖、替代回收和未来技术物质输入 | 让 AI、能源、医疗设备、制造、通信和科研能力有可规模化、可维修、可替代的物质底座 | 不提供投资、交易、采购、制裁规避、非法采矿、危险回收或受管制物资获取建议 |
 | [Air Quality Ventilation Exposure Control](domains/air-quality-ventilation-exposure-control/README.md) | 室内外空气污染、通风、过滤、气溶胶、烟雾和空气暴露治理 | 让学校、工作、照护和公共空间维持可呼吸、可恢复、可行动的环境 | 不提供医疗、HVAC 设计施工、设备采购、危险环境处置或实时灾害指挥建议 |
 | [Food Safety Contamination Control](domains/food-safety-contamination-control/README.md) | 食源性病原体、毒素、过敏原、检查、追溯、召回和暴发治理 | 防止食物从营养资源转化为感染、毒性、信任和供应链风险入口 | 不提供饮食烹饪、食品加工、污染检测、企业合规、法律或投毒/规避检测建议 |
@@ -1918,6 +1939,16 @@ human_infra/
 │   ├── waste-management-hazardous-materials-continuity/
 │   ├── radiation-nuclear-safety-protection/
 │   ├── chemical-safety-poison-control-toxicology/
+│   ├── chemical-release-shelter-evacuation-continuity/
+│   ├── community-right-to-know-chemical-risk-disclosure-continuity/
+│   ├── hazmat-incident-command-emergency-response-continuity/
+│   ├── industrial-process-safety-management-continuity/
+│   ├── toxic-plume-air-monitoring-risk-communication-continuity/
+│   ├── hazwoper-responder-ppe-safety-continuity/
+│   ├── decontamination-exposure-triage-continuity/
+│   ├── hazardous-materials-transportation-erg-continuity/
+│   ├── oil-spill-hazardous-release-response-recovery-continuity/
+│   ├── battery-thermal-runaway-fire-hazard-continuity/
 │   ├── critical-minerals-materials-resilience/
 │   ├── air-quality-ventilation-exposure-control/
 │   ├── food-safety-contamination-control/
@@ -2249,5 +2280,6 @@ flowchart LR
 - 2026-07-01：新增第九十八波 10 个家庭与个人应急准备执行连续性域，覆盖应急物资包、家庭应急通信团聚、撤离交通避难、就地避险清洁空气房、备用电与发电机安全、应急食水、温控药品/医疗设备停电、应急金融文件现金、残障功能需求个人准备和老年照护者灾害准备。
 - 2026-07-01：新增第九十九波 10 个灾后恢复执行连续性域，覆盖个人援助导航、临时住房、恢复中心、长期个案管理、灾害失业收入中断、灾害法律援助、废弃物卫生清理、洪水后霉菌湿气、灾害行为健康和志愿捐赠管理。
 - 2026-07-01：新增第一百波 10 个传染病暴发响应执行连续性域，覆盖病例调查接触追踪、隔离检疫工作学校、社区检测筛查、疫苗行动加强针递送、口罩呼吸防护、室内通风过滤、学校工作场所运营、医疗挤兑分诊容量、医疗对策储备分发和污水病原体早期预警。
+- 2026-07-01：新增第一百零一波 10 个危险材料与工业事故执行连续性域，覆盖化学释放避险撤离、社区化学风险知情披露、HazMat 事故指挥、工业过程安全、有毒羽流空气监测、HAZWOPER 响应者 PPE、暴露后去污分诊、危险材料运输 ERG、油污危险释放响应恢复和电池热失控火灾风险。
 
 完整记录见 [CHANGELOG.md](CHANGELOG.md)。

@@ -82,6 +82,16 @@
 - `healthcare-surge-triage-capacity-continuity/`：医疗挤兑、分诊与容量连续性，整理床位、人力、分诊、危机标准、转运和延迟照护。
 - `medical-countermeasure-stockpile-distribution-continuity/`：医疗对策储备与分发连续性，整理战略储备、POD、药物、PPE、冷链、物流和分配公平。
 - `wastewater-pathogen-surveillance-early-warning-continuity/`：污水病原体监测与早期预警连续性，整理污水监测、趋势信号、社区聚合、隐私边界和公共卫生触发器。
+- `chemical-release-shelter-evacuation-continuity/`：化学释放避险与撤离连续性，整理警报理解、就地避险、撤离、交通转移和恢复入口。
+- `community-right-to-know-chemical-risk-disclosure-continuity/`：社区化学风险知情权与披露连续性，整理 EPCRA、TRI、Tier II、RMP、公众沟通和环境正义。
+- `hazmat-incident-command-emergency-response-continuity/`：危险材料事故指挥与应急响应连续性，整理 NIMS/ICS、跨机构协作、公众信息和恢复交接。
+- `industrial-process-safety-management-continuity/`：工业过程安全管理连续性，整理 PSM、RMP、机械完整性、变更管理和事故学习。
+- `toxic-plume-air-monitoring-risk-communication-continuity/`：有毒羽流空气监测与风险沟通连续性，整理空气监测、模型工具、气象接口和不确定性表达。
+- `hazwoper-responder-ppe-safety-continuity/`：HAZWOPER 响应者 PPE 与安全连续性，整理培训、PPE、呼吸防护、热压力、污染转移和轮班疲劳。
+- `decontamination-exposure-triage-continuity/`：暴露后去污与分诊连续性，整理去污入口、医疗分流、医院准备、隐私尊严和家庭重聚。
+- `hazardous-materials-transportation-erg-continuity/`：危险材料运输与 ERG 连续性，整理危险品运输、标识接口、交通中断、物流断点和社区沟通。
+- `oil-spill-hazardous-release-response-recovery-continuity/`：油污与危险释放响应恢复连续性，整理水域海岸污染、工人安全、收入食物水源和长期监测。
+- `battery-thermal-runaway-fire-hazard-continuity/`：电池热失控与火灾风险连续性，整理锂离子电池、微出行、储能、召回、烟气和住房接口。
 - `maternal-newborn-child-development/`：母婴健康与儿童发展，整理孕产、新生儿、儿童健康、生长标准、早期发展和养育照护。
 - `patient-safety-organizational-learning/`：患者安全与组织学习，整理事件报告、团队沟通、根因分析、CUSP、TeamSTEPPS 和安全文化。
 - `caregiving-long-term-care/`：照护与长期照护，整理家庭照护、长期照护、居家社区支持、照护协调和照护者负担。

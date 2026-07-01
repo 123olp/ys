@@ -214,6 +214,16 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 医疗挤兑必须不吞掉可修复窗口 | `healthcare-surge-triage-capacity-continuity/` | 床位、人力、分诊、危机标准、转运、延迟照护 | 医疗容量被压垮时，可治疗风险会变成死亡、失能和长期功能损失 |
 | 医疗对策必须从库存走向可达 | `medical-countermeasure-stockpile-distribution-continuity/` | 战略储备、POD、药物、PPE、冷链、物流、分配公平 | 药物、PPE 和治疗物资若无法及时分发，技术能力不会进入主体生命路径 |
 | 社区病原体趋势必须提前可见 | `wastewater-pathogen-surveillance-early-warning-continuity/` | 污水监测、趋势信号、聚合隐私、预警触发器、沟通 | 早期信号若缺失或被误读，响应会过慢、过度或以社区污名化方式失真 |
+| 化学释放必须转化为保护行动 | `chemical-release-shelter-evacuation-continuity/` | 就地避险、撤离、警报理解、交通转移、恢复入口 | 化学释放若没有可执行行动链，会把暴露风险转化为生活系统断裂 |
+| 化学风险必须可被社区提前看见 | `community-right-to-know-chemical-risk-disclosure-continuity/` | EPCRA、TRI、Tier II、RMP、设施披露、环境正义 | 风险不可见会让社区只能在事故后被动承受暴露、迁移和信任损失 |
+| 危险材料事故必须可跨机构协作 | `hazmat-incident-command-emergency-response-continuity/` | NIMS/ICS、统一指挥、公共信息、医疗转运、恢复交接 | 机构边界断裂会使事故在消防、医疗、环境和交通系统之间放大 |
+| 高危工业过程必须可预防可学习 | `industrial-process-safety-management-continuity/` | PSM、RMP、机械完整性、变更管理、事故学习 | 过程安全失败会把生产系统变成工人和社区的重大事故风险 |
+| 有毒羽流必须可观测可沟通 | `toxic-plume-air-monitoring-risk-communication-continuity/` | 空气监测、模型、气象接口、不确定性、风险沟通 | 羽流不可见且沟通失真，会制造错误避险、恐慌、迟疑和医疗挤兑 |
+| 响应者必须能安全持续工作 | `hazwoper-responder-ppe-safety-continuity/` | HAZWOPER、PPE、呼吸防护、热压力、污染转移、轮班 | 响应者失效会让公众保护、医疗转运和恢复执行失去主体 |
+| 暴露后入口必须保留医疗和尊严 | `decontamination-exposure-triage-continuity/` | 去污入口、医疗分流、医院准备、隐私尊严、家庭重聚 | 暴露后系统若只看技术动作，会放大二次污染、羞辱、延迟和家庭断裂 |
+| 移动危险品必须可识别可恢复 | `hazardous-materials-transportation-erg-continuity/` | 危险品运输、ERG、标识接口、交通中断、物流断点 | 移动事故会把暴露、通勤、医疗可达和供应链断点叠加 |
+| 水域污染必须进入长期恢复链 | `oil-spill-hazardous-release-response-recovery-continuity/` | 油污、危险释放、工人安全、收入食物水源、长期监测 | 污染恢复失败会切断食物、收入、居住、文化生活和社区信任 |
+| 电池化工具必须不反向制造火灾暴露 | `battery-thermal-runaway-fire-hazard-continuity/` | 锂离子电池、热失控、储能、召回、烟气、住房接口 | 电池便利若缺少安全边界，会把能源冗余转成火灾、烟气和住房断裂风险 |
 | 早期生命条件可支撑未来主体 | `maternal-newborn-child-development/` | 孕产安全、新生儿、儿童健康、生长、早期发展、养育照护 | 把母婴儿童资料写成个体医疗、育儿、排名或家庭监控建议 |
 | 医疗组织可从错误中学习 | `patient-safety-organizational-learning/` | 事件报告、近失误、团队沟通、根因分析、安全文化、行动闭环 | 把患者安全写成追责、机构背书、法律判断或惩罚性监控 |
 | 照护可持续 | `caregiving-long-term-care/` | 家庭照护、长期照护、居家社区支持、照护协调、照护者负担 | 长寿退化为无人照护、照护者崩溃、失能支持中断或尊严丧失 |
@@ -980,6 +990,16 @@ risk-engineering
   -> healthcare-surge-triage-capacity-continuity
   -> medical-countermeasure-stockpile-distribution-continuity
   -> wastewater-pathogen-surveillance-early-warning-continuity
+  -> chemical-release-shelter-evacuation-continuity
+  -> community-right-to-know-chemical-risk-disclosure-continuity
+  -> hazmat-incident-command-emergency-response-continuity
+  -> industrial-process-safety-management-continuity
+  -> toxic-plume-air-monitoring-risk-communication-continuity
+  -> hazwoper-responder-ppe-safety-continuity
+  -> decontamination-exposure-triage-continuity
+  -> hazardous-materials-transportation-erg-continuity
+  -> oil-spill-hazardous-release-response-recovery-continuity
+  -> battery-thermal-runaway-fire-hazard-continuity
   -> maternal-newborn-child-development
   -> patient-safety-organizational-learning
   -> caregiving-long-term-care
