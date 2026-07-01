@@ -761,6 +761,12 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `afterschool-snack-supper-meal-continuity/` | 课后点心和晚餐决定放学后监督、学习支持和家庭晚间资源压力是否被营养输入接住 |
 | `special-diet-allergy-school-meal-accommodation-continuity/` | 特殊饮食和过敏校餐便利决定安全进食、合理便利和供餐沟通是否能避免排除或急性风险 |
 | `school-meal-debt-unpaid-balance-stigma-continuity/` | 校餐欠费和 unpaid meal charges 决定儿童营养、尊严、家庭账单压力和学校参与是否被债务污名切断 |
+| `nutrition-insecurity-screening-referral-continuity/` | 营养不安全筛查和 closed-loop referral 决定 food insecurity 信号是否能从医疗系统进入真实资源转接 |
+| `medically-tailored-meals-chronic-care-continuity/` | 医学定制餐决定慢病和出院恢复期主体是否能获得符合照护计划的可交付营养支持 |
+| `medically-tailored-groceries-food-benefit-continuity/` | 医学定制食材和健康食品福利决定主体是否能把食材、厨房、时间和慢病需求连接成可执行餐食 |
+| `produce-prescription-fruit-vegetable-benefit-continuity/` | 蔬果处方和营养激励决定健康食物建议是否能转化为可兑换的新鲜农产品购买力 |
+| `food-pharmacy-clinic-pantry-integration-continuity/` | Food pharmacy 和 clinic pantry 决定医疗入口能否直接连接社区食物支持、库存发放和后续跟踪 |
+| `medical-nutrition-therapy-dietitian-access-continuity/` | 医学营养治疗和营养师可达决定复杂疾病饮食、代谢风险和营养不良是否能进入专业服务 |
 | `school-health-services-chronic-condition-continuity/` | 学校健康服务和慢性病支持决定健康条件是否会转化为缺勤、急性风险和家庭照护中断 |
 | `school-transportation-safe-routes-continuity/` | 校车和安全通学路线决定学生是否能可靠、安全、低摩擦地到校并保留学习时间 |
 | `school-discipline-exclusion-restraint-continuity/` | 停学、开除、约束隔离和复学决定行为事件是否会变成长期学习排除和制度尾部风险 |

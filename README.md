@@ -798,6 +798,13 @@ flowchart TD
     SMNAC --> ASSMC[afterschool-snack-supper-meal-continuity<br/>课后点心晚餐]
     SMNAC --> SDASMAC[special-diet-allergy-school-meal-accommodation-continuity<br/>特殊饮食 / 过敏便利]
     SMNAC --> SMDUBSC[school-meal-debt-unpaid-balance-stigma-continuity<br/>校餐欠费 / 污名]
+    H --> FIMEC[Food is Medicine / 医疗营养支持执行连续性]
+    FIMEC --> NISRCC[nutrition-insecurity-screening-referral-continuity<br/>营养不安全筛查 / 转介]
+    FIMEC --> MTMCCC[medically-tailored-meals-chronic-care-continuity<br/>医学定制餐 / 慢病照护]
+    FIMEC --> MTGFBC[medically-tailored-groceries-food-benefit-continuity<br/>医学定制食材 / 食物福利]
+    FIMEC --> PPFVBC[produce-prescription-fruit-vegetable-benefit-continuity<br/>蔬果处方 / 福利兑换]
+    FIMEC --> FPCPIC[food-pharmacy-clinic-pantry-integration-continuity<br/>食物药房 / 临床 pantry]
+    FIMEC --> MNTDAC[medical-nutrition-therapy-dietitian-access-continuity<br/>医学营养治疗 / 营养师可达]
     H --> SHSCC[school-health-services-chronic-condition-continuity<br/>学校健康服务 / 慢病]
     H --> STSRC[school-transportation-safe-routes-continuity<br/>通学交通 / 安全路线]
     H --> SDERC[school-discipline-exclusion-restraint-continuity<br/>纪律排除 / 约束隔离]
@@ -1314,6 +1321,12 @@ flowchart TD
 | [Afterschool Snack Supper Meal Continuity](domains/afterschool-snack-supper-meal-continuity/README.md) | 课后点心、supper、at-risk afterschool meals、NSLP snacks、接送时段和活动参与 | 接住放学后到睡前之间的营养、监督照护和家庭工作时间断点 | 不推荐课后项目、设计菜单、判断资格、规划接送或提供项目运营建议 |
 | [Special Diet Allergy School Meal Accommodation Continuity](domains/special-diet-allergy-school-meal-accommodation-continuity/README.md) | 特殊饮食、食物过敏、残障饮食便利、菜单替代、交叉接触和学校沟通 | 让儿童不用在进食安全和到校参与之间二选一 | 不提供诊断、饮食处方、菜单替代、便利申请、急救计划、责任或法律建议 |
 | [School Meal Debt Unpaid Balance Stigma Continuity](domains/school-meal-debt-unpaid-balance-stigma-continuity/README.md) | 校餐欠费、未付余额、余额通知、替代餐、追收政策和污名 | 防止小额餐费摩擦切断营养输入、学校归属和家庭现金流 | 不提供债务谈判、付款策略、资格申请、投诉文案、法律建议或追收规避 |
+| [Nutrition Insecurity Screening Referral Continuity](domains/nutrition-insecurity-screening-referral-continuity/README.md) | 营养不安全、HRSN 筛查、food insecurity screening、closed-loop referral 和社区食物资源转接 | 把“缺食物”从临床背景变量转成可观察、可转介、可跟踪的支持链 | 不提供个人筛查、资格判断、转介选择、福利申请、饮食处方、医疗诊断或保险建议 |
+| [Medically Tailored Meals Chronic Care Continuity](domains/medically-tailored-meals-chronic-care-continuity/README.md) | Medically tailored meals、慢病照护、出院转接、餐食配送和健康结局评估 | 让医学营养支持从建议变成可交付、可追踪、可持续的餐食服务 | 不提供个人疾病餐单、营养治疗、配送商推荐、保险覆盖判断或医疗建议 |
+| [Medically Tailored Groceries Food Benefit Continuity](domains/medically-tailored-groceries-food-benefit-continuity/README.md) | Medically tailored groceries、健康食品福利、食材包、grocery box、voucher 和家庭烹饪执行 | 判断食材福利能否真实转化为可吃、可做、可接受、可持续的餐食 | 不提供个人购物清单、膳食计划、疾病饮食、福利选择、资格判断或零售商推荐 |
+| [Produce Prescription Fruit Vegetable Benefit Continuity](domains/produce-prescription-fruit-vegetable-benefit-continuity/README.md) | Produce prescription、fruit and vegetable prescription、营养激励、voucher 和兑换平台 | 把健康食物从建议转成可支付、可兑换、可追踪的新鲜农产品购买力 | 不提供个人处方、疾病饮食、农产品选择、店铺推荐、福利申请或平台使用建议 |
+| [Food Pharmacy Clinic Pantry Integration Continuity](domains/food-pharmacy-clinic-pantry-integration-continuity/README.md) | Food pharmacy、clinic pantry、hospital pantry、EHR referral、库存发放和社区伙伴 | 把食物支持嵌入临床入口，降低医疗、社区食物和主体行动之间的切换摩擦 | 不推荐 pantry、食品包、领取路径、疾病饮食、志愿者流程或个案资源 |
+| [Medical Nutrition Therapy Dietitian Access Continuity](domains/medical-nutrition-therapy-dietitian-access-continuity/README.md) | Medical nutrition therapy、注册营养师、转诊、覆盖、telehealth 和慢病营养服务 | 让复杂疾病饮食和代谢风险进入可评估、可跟踪、可调整的专业营养服务 | 不提供个人饮食计划、营养处方、补剂、减重、保险覆盖判断或转诊建议 |
 | [School Health Services Chronic Condition Continuity](domains/school-health-services-chronic-condition-continuity/README.md) | 学校护士、慢病支持、用药、免疫记录、急救计划和返校支持 | 让健康条件进入学校运行系统，降低缺勤、急性风险和家庭中断 | 不提供诊断、用药、急救、返校许可、疫苗判断或医疗建议 |
 | [School Transportation Safe Routes Continuity](domains/school-transportation-safe-routes-continuity/README.md) | 校车、通学路线、步行骑行安全、交通资格、无障碍交通和距离成本 | 让到校路径可靠、安全、低摩擦，保护学习时间和家庭时间 | 不提供个人路线、驾驶、校车资格、事故责任、道路工程或法律建议 |
 | [School Discipline Exclusion Restraint Continuity](domains/school-discipline-exclusion-restraint-continuity/README.md) | 停学、开除、课堂移除、约束隔离、复学和纪律民权数据 | 防止排除性纪律把行为、残障、创伤和社会风险转成长尾断裂 | 不提供个人纪律申诉、民权投诉、行为危机、法律、教育或医疗建议 |
@@ -2061,6 +2074,12 @@ human_infra/
 │   ├── afterschool-snack-supper-meal-continuity/
 │   ├── special-diet-allergy-school-meal-accommodation-continuity/
 │   ├── school-meal-debt-unpaid-balance-stigma-continuity/
+│   ├── nutrition-insecurity-screening-referral-continuity/
+│   ├── medically-tailored-meals-chronic-care-continuity/
+│   ├── medically-tailored-groceries-food-benefit-continuity/
+│   ├── produce-prescription-fruit-vegetable-benefit-continuity/
+│   ├── food-pharmacy-clinic-pantry-integration-continuity/
+│   ├── medical-nutrition-therapy-dietitian-access-continuity/
 │   ├── snap-ebt-redemption-retailer-payment-continuity/
 │   ├── snap-eligibility-recertification-abawd-continuity/
 │   ├── wic-benefit-redemption-infant-maternal-nutrition-continuity/
@@ -2703,5 +2722,6 @@ flowchart LR
 - 2026-07-01：新增第一百二十波 6 个儿童青少年线上健康与平台风险连续性域，覆盖青少年社交媒体心理健康、线上安全设计与平台治理、网络霸凌骚扰举报、儿童线上性剥削与 sextortion 举报、游戏内购/loot box/暗黑模式和儿童隐性广告/网红营销。
 - 2026-07-01：新增第一百二十一波 6 个公共福利资格续期、覆盖转换与申诉执行连续性域，覆盖 SNAP 资格/续期/ABAWD、Medicaid/CHIP 续期重判、Medicare 参保覆盖转换、SSI/SSDI 复审申诉、TANF 现金援助工作支持和失业保险申领/身份核验/申诉支付连续性。
 - 2026-07-01：新增第一百二十二波 6 个儿童营养项目执行连续性域，覆盖 Summer EBT / SUN Bucks、SFSP 暑期供餐站点、CACFP、课后点心晚餐、特殊饮食/过敏校餐便利和校餐欠费污名。
+- 2026-07-01：新增第一百二十三波 6 个 Food is Medicine / 医疗营养支持执行连续性域，覆盖营养不安全筛查转介、医学定制餐、医学定制食材、蔬果处方、临床 food pharmacy/pantry 和医学营养治疗营养师可达。
 
 完整记录见 [CHANGELOG.md](CHANGELOG.md)。

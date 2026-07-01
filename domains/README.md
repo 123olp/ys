@@ -578,6 +578,12 @@
 - `afterschool-snack-supper-meal-continuity/`：课后点心、supper 与 afterschool meal 连续性，整理放学后餐食、活动时段、接送窗口和项目运行。
 - `special-diet-allergy-school-meal-accommodation-continuity/`：特殊饮食、过敏与校餐便利连续性，整理残障饮食便利、过敏沟通、菜单替代和交叉接触风险。
 - `school-meal-debt-unpaid-balance-stigma-continuity/`：校餐欠费、未付余额与污名连续性，整理 meal debt、余额通知、替代餐、追收政策和儿童尊严。
+- `nutrition-insecurity-screening-referral-continuity/`：营养不安全筛查与转介连续性，整理 HRSN screening、food insecurity screening、closed-loop referral 和社区食物资源转接。
+- `medically-tailored-meals-chronic-care-continuity/`：医学定制餐与慢病照护连续性，整理 medically tailored meals、出院转接、慢病营养支持、配送和结局评估。
+- `medically-tailored-groceries-food-benefit-continuity/`：医学定制食材与食物福利连续性，整理 medically tailored groceries、食材福利、grocery box、voucher 和家庭执行。
+- `produce-prescription-fruit-vegetable-benefit-continuity/`：蔬果处方与农产品福利连续性，整理 produce prescription、fruit and vegetable prescription、营养激励和兑换接口。
+- `food-pharmacy-clinic-pantry-integration-continuity/`：食物药房、临床 pantry 与医疗整合连续性，整理 food pharmacy、clinic pantry、EHR referral、库存发放和社区伙伴。
+- `medical-nutrition-therapy-dietitian-access-continuity/`：医学营养治疗与营养师可达连续性，整理 MNT、RDN 转诊、覆盖规则、telehealth 和慢病营养服务。
 - `school-health-services-chronic-condition-continuity/`：学校健康服务与慢性病连续性，整理学校护士、慢病支持、用药、免疫记录、急救计划和返校支持。
 - `school-transportation-safe-routes-continuity/`：通学交通与安全路线连续性，整理校车、步行骑行安全路线、交通资格、无障碍交通和距离成本。
 - `school-discipline-exclusion-restraint-continuity/`：学校纪律、排除与约束隔离连续性，整理停学、开除、课堂移除、约束隔离、复学和纪律民权数据。

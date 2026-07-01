@@ -2041,6 +2041,24 @@ Human Infra 不能被设计成更精密的压榨系统。
 - 不收集、复制、处理或要求 EBT/eWIC 卡号、PIN、benefit balance、交易记录、儿童身份、孕产妇健康资料、婴儿喂养记录、家庭收入、地址、配送路线、食品银行领取记录、灾害受助者身份、餐馆员工身份、过敏史、医疗资料、处方、订单号或个案法律/医疗/福利材料。
 - 不替代 USDA FNS、州 SNAP/WIC 机构、授权 retailer/vendor、食品银行、灾害管理机构、ACL/老龄服务机构、FDA、CDC、地方卫生部门、医疗专业人员、注册营养师、毒物中心、消费者保护机构、法律、执法、监管机构或官方申诉/求助渠道。
 
+## Food is Medicine 与医疗营养支持执行连续性边界
+
+`nutrition-insecurity-screening-referral-continuity`、`medically-tailored-meals-chronic-care-continuity`、`medically-tailored-groceries-food-benefit-continuity`、`produce-prescription-fruit-vegetable-benefit-continuity`、`food-pharmacy-clinic-pantry-integration-continuity` 和 `medical-nutrition-therapy-dietitian-access-continuity` 关注 Food is Medicine / 医疗营养支持如何把营养不安全筛查、医学定制餐、医学定制食材、蔬果处方、临床 food pharmacy/pantry 和医学营养治疗转成可执行支持链，不是个人医疗、营养、福利、保险、转介、菜单、购物或供应商建议入口。
+
+可以做：
+
+- 整理 HHS/ODPHP Food Is Medicine、HHS ASPE Food is Medicine current activities、NIH Food is Medicine、CMS Medicaid HRSN、CMS Medicare Medical Nutrition Therapy、USDA ERS food security / food access、USDA SNAP-Ed 等公开资料中的机制、对象、变量、证据边界和禁止用途。
+- 比较营养不安全筛查、closed-loop referral、MTM、MTG、produce prescription、clinic pantry、food pharmacy 和 MNT 如何影响营养输入、慢病执行、恢复能力、医疗利用、家庭时间和未来选择权。
+- 记录 Food is Medicine 资料中的转介闭环、支付覆盖、配送、兑换、库存、文化适配、隐私、污名、RDN 可达、证据等级、项目评估和安全边界。
+
+不能做：
+
+- 不提供个人筛查解释、资格判断、转介选择、福利申请、保险覆盖判断、食物处方、疾病餐单、购物清单、食材替代、营养治疗、补剂、减重、糖尿病/肾病/心血管饮食、供应商推荐、pantry 推荐或个案医疗建议。
+- 不判断某个人、家庭、慢病患者、儿童、孕产妇、老人、保险计划、诊断、营养风险、食品福利、蔬果处方、food pharmacy、医学定制餐、医学定制食材或 MNT 服务应如何具体处理。
+- 不生成 diet plan、meal plan、medical necessity letter、保险申诉、福利申请文案、转介材料、供应商筛选、处方替代、疾病饮食操作、采购策略、pantry 领取脚本、兑换套利、数据抓取、投诉威胁或监管法律文件。
+- 不收集、复制、处理或要求 PHI、诊断、实验室指标、药物清单、保险 ID、Medicaid/Medicare 信息、收入、住址、食品不安全问卷答案、EBT 交易、购买记录、配送地址、家庭厨房条件、饮食记录、过敏史、病历、转介单或个案福利/医疗/保险材料。
+- 不替代医生、注册营养师、药师、护士、保险计划、Medicaid/CMS、HHS、USDA、NIH、社区食品组织、食品银行、food pharmacy、福利机构、急救服务、法律、监管机构或官方服务渠道。
+
 ## 治疗获得与医用品执行连续性边界
 
 `retail-pharmacy-prescription-dispensing-continuity`、`pharmacy-benefit-formulary-prior-authorization-continuity`、`medication-reconciliation-regimen-adherence-continuity`、`patient-medication-labeling-counseling-continuity`、`unused-medicine-takeback-disposal-continuity`、`durable-medical-equipment-supplier-repair-continuity`、`home-oxygen-respiratory-equipment-supply-continuity` 和 `diabetes-insulin-glucose-monitoring-supplies-continuity` 关注主体如何把处方、药品福利、药历、标签咨询、未用药处置、DME、居家氧疗/呼吸设备和糖尿病耗材转化为连续、可理解、可补给、可维修、可治理的治疗执行能力，不是医疗、药事、保险、设备维修、急救或个案申诉入口。

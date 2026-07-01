@@ -472,6 +472,12 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 放学后餐食必须接住课后窗口 | `afterschool-snack-supper-meal-continuity/` | At-Risk Afterschool Meals、课后点心、课后晚餐、监督活动、21st CCLC | 放学后时段若缺少餐食，会把监督、学习支持和家庭晚间现金流压力连成断点 |
 | 特殊饮食便利必须保护安全进食 | `special-diet-allergy-school-meal-accommodation-continuity/` | 特殊饮食、食物过敏、医学声明、合理便利、交叉接触、学校供餐沟通 | 过敏和特殊饮食若不能被供餐系统吸收，会把校餐支持反转为排除或急性风险 |
 | 校餐欠费不能变成营养和尊严惩罚 | `school-meal-debt-unpaid-balance-stigma-continuity/` | unpaid meal charges、债务通知、替代餐、污名、家庭账单、收款边界 | 欠费处理若转化为羞辱、替代餐或家庭账单压力，会削弱儿童营养、尊严和到校参与 |
+| 营养不安全必须被识别并闭环转接 | `nutrition-insecurity-screening-referral-continuity/` | HRSN screening、food insecurity screening、nutrition insecurity、closed-loop referral、care navigation | 筛查信号若不能转成资源转接和 follow-up，主体会在“被看见”后继续缺食物 |
+| 医学定制餐必须成为慢病照护执行物 | `medically-tailored-meals-chronic-care-continuity/` | medically tailored meals、chronic care、discharge meals、delivery、care plan、outcomes | 餐食若无法按医学需求和时间窗口到达，会让慢病和恢复期营养支持停留在建议层 |
+| 医学定制食材必须可兑换可烹饪 | `medically-tailored-groceries-food-benefit-continuity/` | medically tailored groceries、healthy food benefit、grocery box、voucher、recipe support | 食材福利若不能被兑换、储存和烹饪，会把营养支持负担转回家庭系统 |
+| 蔬果处方必须从处方变成购买力 | `produce-prescription-fruit-vegetable-benefit-continuity/` | produce prescription、fruit and vegetable voucher、nutrition incentive、redemption | 处方若不能兑换为新鲜农产品，会在支付、地点、季节和交通摩擦中失效 |
+| 临床食物药房必须连接医疗与社区食物 | `food-pharmacy-clinic-pantry-integration-continuity/` | food pharmacy、clinic pantry、EHR referral、onsite distribution、community partner | 医疗入口若不能连接库存、领取和社区伙伴，food pharmacy 会退化为一次性发放 |
+| 医学营养治疗必须可达可支付 | `medical-nutrition-therapy-dietitian-access-continuity/` | medical nutrition therapy、registered dietitian、coverage、referral、telehealth | 专业营养服务不可达时，复杂疾病饮食和代谢风险会被降级为泛泛自我管理 |
 | 学生健康条件必须进入学校运行系统 | `school-health-services-chronic-condition-continuity/` | 学校护士、慢病支持、用药、免疫记录、急救计划、返校支持 | 慢病和急性风险若不能在学校被支持，会转化为缺勤、急性事件和学习日损耗 |
 | 到校路径必须安全可靠 | `school-transportation-safe-routes-continuity/` | 校车、通学路线、步行骑行安全、交通资格、无障碍交通 | 通学不可达或不安全会压缩出勤、学习时间、家庭工作连续性和儿童安全 |
 | 纪律系统必须避免排除性长尾 | `school-discipline-exclusion-restraint-continuity/` | 停学、开除、课堂移除、约束隔离、复学、纪律民权数据 | 排除性纪律会把行为、残障、创伤或社会风险转化为学习日损失和制度尾部后果 |
@@ -1307,6 +1313,12 @@ risk-engineering
   -> afterschool-snack-supper-meal-continuity
   -> special-diet-allergy-school-meal-accommodation-continuity
   -> school-meal-debt-unpaid-balance-stigma-continuity
+  -> nutrition-insecurity-screening-referral-continuity
+  -> medically-tailored-meals-chronic-care-continuity
+  -> medically-tailored-groceries-food-benefit-continuity
+  -> produce-prescription-fruit-vegetable-benefit-continuity
+  -> food-pharmacy-clinic-pantry-integration-continuity
+  -> medical-nutrition-therapy-dietitian-access-continuity
   -> school-health-services-chronic-condition-continuity
   -> school-transportation-safe-routes-continuity
   -> school-discipline-exclusion-restraint-continuity
@@ -1430,6 +1442,12 @@ risk-engineering
   -> emergency-food-disaster-feeding-continuity
   -> home-delivered-meals-congregate-nutrition-services-continuity
   -> infant-formula-baby-food-supply-safety-continuity
+  -> nutrition-insecurity-screening-referral-continuity
+  -> medically-tailored-meals-chronic-care-continuity
+  -> medically-tailored-groceries-food-benefit-continuity
+  -> produce-prescription-fruit-vegetable-benefit-continuity
+  -> food-pharmacy-clinic-pantry-integration-continuity
+  -> medical-nutrition-therapy-dietitian-access-continuity
   -> prepared-food-restaurant-cafeteria-safety-access-continuity
   -> retail-pharmacy-prescription-dispensing-continuity
   -> pharmacy-benefit-formulary-prior-authorization-continuity

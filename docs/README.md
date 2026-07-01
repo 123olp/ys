@@ -135,6 +135,15 @@ docs/
 │   ├── 0117-add-one-hundred-twelfth-wave-household-operating-metadata-handoff-domains.md
 │   ├── 0118-add-one-hundred-thirteenth-wave-neighborhood-public-space-maintenance-service-request-domains.md
 │   ├── 0119-add-one-hundred-fourteenth-wave-early-child-care-execution-domains.md
+│   ├── 0120-add-one-hundred-fifteenth-wave-long-term-care-execution-domains.md
+│   ├── 0121-add-one-hundred-sixteenth-wave-population-geographic-access-domains.md
+│   ├── 0122-add-one-hundred-seventeenth-wave-transition-age-youth-domains.md
+│   ├── 0123-add-one-hundred-eighteenth-wave-perinatal-continuity-domains.md
+│   ├── 0124-add-one-hundred-nineteenth-wave-pediatric-prevention-screening-domains.md
+│   ├── 0125-add-one-hundred-twentieth-wave-youth-online-health-platform-risk-domains.md
+│   ├── 0126-add-one-hundred-twenty-first-wave-public-benefits-redetermination-domains.md
+│   ├── 0127-add-one-hundred-twenty-second-wave-child-nutrition-program-execution-domains.md
+│   ├── 0128-add-one-hundred-twenty-third-wave-food-is-medicine-execution-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -1040,4 +1049,10 @@ docs/
 768. Read `../domains/afterschool-snack-supper-meal-continuity/README.md` if you are working on afterschool snacks, suppers, at-risk afterschool meals, NSLP snacks, afterschool program meals, or school-day evening nutrition continuity.
 769. Read `../domains/special-diet-allergy-school-meal-accommodation-continuity/README.md` if you are working on school-meal dietary accommodations, food allergies, disability-related meal modifications, special diets, menu substitution boundaries, or school nutrition safety.
 770. Read `../domains/school-meal-debt-unpaid-balance-stigma-continuity/README.md` if you are working on school meal debt, unpaid meal charges, meal account balances, alternative meals, collection practices, stigma, or school meal payment friction.
+771. Read `../domains/nutrition-insecurity-screening-referral-continuity/README.md` if you are working on nutrition insecurity screening, food insecurity screening, HRSN screening, closed-loop referrals, care navigation, or Food is Medicine referral continuity.
+772. Read `../domains/medically-tailored-meals-chronic-care-continuity/README.md` if you are working on medically tailored meals, chronic-care nutrition support, discharge meals, home delivery, meal vendors, or MTM evidence.
+773. Read `../domains/medically-tailored-groceries-food-benefit-continuity/README.md` if you are working on medically tailored groceries, healthy food benefits, grocery boxes, food benefit cards, pantry prescriptions, or household food-benefit execution.
+774. Read `../domains/produce-prescription-fruit-vegetable-benefit-continuity/README.md` if you are working on produce prescriptions, fruit and vegetable vouchers, nutrition incentives, redemption platforms, farmers markets, or grocery produce benefits.
+775. Read `../domains/food-pharmacy-clinic-pantry-integration-continuity/README.md` if you are working on food pharmacies, clinic pantries, hospital pantries, EHR referrals, onsite food distribution, or clinical-community food integration.
+776. Read `../domains/medical-nutrition-therapy-dietitian-access-continuity/README.md` if you are working on medical nutrition therapy, registered dietitians, nutrition counseling coverage, dietitian referrals, telehealth MNT, or chronic-disease nutrition services.
 684. Enter a domain under `../domains/`.
