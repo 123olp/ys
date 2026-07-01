@@ -120,6 +120,12 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `rna-splicing-epitranscriptomic-maintenance-continuity/` | RNA 剪接、修饰和 mRNA 质控决定表达程序能否稳定执行 |
 | `nuclear-gateway-nucleocytoplasmic-transport-continuity/` | 核孔、karyopherins 和核膜结构决定核内外信息交换与细胞身份边界 |
 | `ferroptosis-lipid-peroxidation-membrane-resilience-continuity/` | 铁死亡与脂质过氧化是膜韧性、细胞死亡和器官损伤放大的独立风险通道 |
+| `endoplasmic-reticulum-stress-upr-proteostasis-continuity/` | ER stress 与 UPR 决定折叠压力、钙信号和细胞命运是否能在慢性应激下恢复 |
+| `golgi-secretory-trafficking-organelle-homeostasis-continuity/` | Golgi 分泌运输决定糖基化、ECM 输出、细胞外通信和分泌供应链是否稳定 |
+| `peroxisome-redox-lipid-metabolism-homeostasis-continuity/` | 过氧化物酶体连接 ROS、脂质代谢和神经/代谢风险，是膜脂与氧化还原稳态的独立节点 |
+| `organelle-contact-sites-intercompartmental-communication-continuity/` | 细胞器接触位点决定钙、脂质和代谢信号能否跨区室协调，而不是各细胞器孤立运行 |
+| `biomolecular-condensates-phase-separation-stress-adaptation-continuity/` | 生物分子凝聚体和相分离决定无膜空间组织、应激颗粒、RNA/蛋白局部化和聚集风险 |
+| `cytoskeleton-mechanotransduction-cellular-mechanics-continuity/` | 细胞骨架和机械转导决定力学环境如何进入细胞状态、组织修复、血管和纤维化路径 |
 | `mitochondrial-bioenergetics/` | 线粒体功能决定细胞能源、疲劳、行动能力、神经和代谢风险 |
 | `cellular-senescence-clearance/` | 衰老细胞负担和 SASP 具有独立组织环境、炎症和治疗风险边界 |
 | `microbiome-ecology/` | 宿主-微生物生态连接代谢、免疫、炎症、感染抵抗和药物反应 |

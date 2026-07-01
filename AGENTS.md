@@ -770,6 +770,12 @@ human_infra/
     ├── rna-splicing-epitranscriptomic-maintenance-continuity/ # RNA 剪接与转录后维护
     ├── nuclear-gateway-nucleocytoplasmic-transport-continuity/ # 核网关与核质运输
     ├── ferroptosis-lipid-peroxidation-membrane-resilience-continuity/ # 铁死亡与脂质过氧化膜韧性
+    ├── endoplasmic-reticulum-stress-upr-proteostasis-continuity/ # ER 压力、UPR 与 ER 蛋白稳态
+    ├── golgi-secretory-trafficking-organelle-homeostasis-continuity/ # Golgi、分泌运输与细胞器稳态
+    ├── peroxisome-redox-lipid-metabolism-homeostasis-continuity/ # 过氧化物酶体、氧化还原与脂质代谢
+    ├── organelle-contact-sites-intercompartmental-communication-continuity/ # 细胞器接触位点与跨区室通信
+    ├── biomolecular-condensates-phase-separation-stress-adaptation-continuity/ # 生物分子凝聚体、相分离与应激适应
+    ├── cytoskeleton-mechanotransduction-cellular-mechanics-continuity/ # 细胞骨架、机械转导与细胞力学
     ├── regenerative-medicine/ # 再生医学与组织修复
     ├── rehabilitation-functioning/ # 康复与功能恢复
     ├── reproductive-fertility-continuity/ # 生殖与生育连续性
@@ -933,6 +939,7 @@ human_infra/
 - `domains/telomere-maintenance/` 负责端粒长度、端粒酶、复制衰老、组织更新和癌症风险。
 - `domains/proteostasis-autophagy/` 负责蛋白稳态、自噬、溶酶体、蛋白聚集和细胞质量控制。
 - `domains/lysosomal-flux-lipofuscin-clearance-continuity/`、`domains/ubiquitin-proteasome-protein-turnover-continuity/`、`domains/ribosome-translation-fidelity-proteome-integrity-continuity/`、`domains/rna-splicing-epitranscriptomic-maintenance-continuity/`、`domains/nuclear-gateway-nucleocytoplasmic-transport-continuity/` 和 `domains/ferroptosis-lipid-peroxidation-membrane-resilience-continuity/` 负责细胞内质量控制与分子信息维护的下层机制：终端清除、蛋白周转、翻译保真、RNA 维护、核入口和膜脂死亡风险。
+- `domains/endoplasmic-reticulum-stress-upr-proteostasis-continuity/`、`domains/golgi-secretory-trafficking-organelle-homeostasis-continuity/`、`domains/peroxisome-redox-lipid-metabolism-homeostasis-continuity/`、`domains/organelle-contact-sites-intercompartmental-communication-continuity/`、`domains/biomolecular-condensates-phase-separation-stress-adaptation-continuity/` 和 `domains/cytoskeleton-mechanotransduction-cellular-mechanics-continuity/` 负责细胞器稳态、空间组织与应激响应连续性，不提供 UPR、Golgi/糖基化、过氧化物酶体、细胞器接触位点、相分离或机械转导干预、检测解释、实验操作或临床建议。
 - `domains/mitochondrial-bioenergetics/` 负责线粒体功能、细胞能量、氧化应激、疲劳和行动能力。
 - `domains/cellular-senescence-clearance/` 负责细胞衰老、SASP、senolytics、组织炎症和衰老细胞负担。
 - `domains/extracellular-matrix-glycation/` 负责细胞外基质、胶原、弹性、AGEs、交联、纤维化和组织力学。
@@ -1402,3 +1409,4 @@ human_infra/
 - 2026-07-01：新增第一百三十波 6 个施工与工业现场特定致命机制执行连续性域，覆盖沟槽开挖坍塌、起重吊装悬吊载荷、职业电击电弧闪爆、焊接切割烟尘火灾、可吸入结晶硅尘和拆除坍塌碎片。
 - 2026-07-01：新增第一百三十一波 6 个免疫衰老与系统性年轻化信号连续性域，覆盖胸腺退化/初始 T 细胞输出、免疫库/疫苗响应老化、克隆性造血/CHIP 炎症风险、炎症衰老、血浆蛋白组系统性衰老信号和细胞外囊泡/SASP 通讯。
 - 2026-07-01：新增第一百三十二波 6 个细胞内质量控制与分子信息维护连续性域，覆盖溶酶体通量/脂褐素清除、泛素-蛋白酶体蛋白周转、核糖体翻译保真、RNA 剪接/转录后维护、核网关/核质运输和铁死亡/脂质过氧化膜韧性。
+- 2026-07-02：新增第一百三十三波 6 个细胞器稳态、空间组织与应激响应连续性域，覆盖 ER stress/UPR、Golgi 分泌运输、过氧化物酶体脂质氧化还原、细胞器接触位点、生物分子凝聚体/相分离和细胞骨架/机械转导。

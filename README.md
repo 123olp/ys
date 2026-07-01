@@ -233,6 +233,12 @@ flowchart TD
     H --> RNA[rna-splicing-epitranscriptomic-maintenance-continuity<br/>RNA 剪接 / 转录后维护]
     H --> NUC[nuclear-gateway-nucleocytoplasmic-transport-continuity<br/>核网关 / 核质运输]
     H --> FER[ferroptosis-lipid-peroxidation-membrane-resilience-continuity<br/>铁死亡 / 脂质过氧化]
+    H --> ERUPR[endoplasmic-reticulum-stress-upr-proteostasis-continuity<br/>ER压力 / UPR]
+    H --> GOLGI[golgi-secretory-trafficking-organelle-homeostasis-continuity<br/>Golgi / 分泌通路]
+    H --> PEROX[peroxisome-redox-lipid-metabolism-homeostasis-continuity<br/>过氧化物酶体]
+    H --> OCS[organelle-contact-sites-intercompartmental-communication-continuity<br/>细胞器接触位点]
+    H --> COND[biomolecular-condensates-phase-separation-stress-adaptation-continuity<br/>相分离 / 凝聚体]
+    H --> CYTO[cytoskeleton-mechanotransduction-cellular-mechanics-continuity<br/>细胞骨架 / 机械转导]
     H --> MB[mitochondrial-bioenergetics<br/>线粒体 / 生物能量]
     H --> SEN[cellular-senescence-clearance<br/>细胞衰老 / 清除]
     H --> ECM[extracellular-matrix-glycation<br/>细胞外基质 / 糖化]
@@ -1083,6 +1089,12 @@ flowchart TD
 | [RNA Splicing Epitranscriptomic Maintenance Continuity](domains/rna-splicing-epitranscriptomic-maintenance-continuity/README.md) | RNA 剪接、RNA 修饰、mRNA 质控和转录后平衡 | RNA 信息执行、isoform 分布和 RNA imbalance 风险 | 不提供 RNA 检测解释、基因/RNA 治疗、药物或实验操作建议 |
 | [Nuclear Gateway Nucleocytoplasmic Transport Continuity](domains/nuclear-gateway-nucleocytoplasmic-transport-continuity/README.md) | 核孔、核质运输、karyopherins、核膜和核纤层 | 核入口、核结构、信息交换和细胞身份稳定边界 | 不提供核结构检测解释、基因治疗、力学干预或实验操作建议 |
 | [Ferroptosis Lipid Peroxidation Membrane Resilience Continuity](domains/ferroptosis-lipid-peroxidation-membrane-resilience-continuity/README.md) | 铁死亡、脂质过氧化、膜脂稳态、铁代谢和抗氧化防御 | 膜韧性、铁依赖细胞死亡和器官损伤风险 | 不提供铁剂、抗氧化剂、补剂、药物、检测解释或治疗建议 |
+| [Endoplasmic Reticulum Stress UPR Proteostasis Continuity](domains/endoplasmic-reticulum-stress-upr-proteostasis-continuity/README.md) | ER stress、UPR、ER 蛋白稳态、钙信号和细胞命运压力决策 | 折叠压力、失代偿、炎症、凋亡和器官功能风险 | 不提供 UPR 调节、补剂、药物、检测解释、实验操作或治疗建议 |
+| [Golgi Secretory Trafficking Organelle Homeostasis Continuity](domains/golgi-secretory-trafficking-organelle-homeostasis-continuity/README.md) | Golgi 结构、分泌运输、糖基化、离子稳态和 Golgi stress response | 细胞内供应链、分泌质量、ECM 输出和组织修复边界 | 不提供 Golgi 调节、糖基化调节、补剂、药物、检测解释或治疗建议 |
+| [Peroxisome Redox Lipid Metabolism Homeostasis Continuity](domains/peroxisome-redox-lipid-metabolism-homeostasis-continuity/README.md) | 过氧化物酶体、脂质代谢、氧化还原、ether lipids 和细胞器通信 | 膜脂、ROS、神经、代谢和炎症风险 | 不提供过氧化物酶体激活、抗氧化剂、补剂、饮食、药物或检测解释建议 |
+| [Organelle Contact Sites Intercompartmental Communication Continuity](domains/organelle-contact-sites-intercompartmental-communication-continuity/README.md) | ER-mitochondria contacts、MAMs、钙/脂质转运和跨区室通信 | 细胞器协调、应激同步、衰老和细胞命运边界 | 不提供细胞器接触位点干预、成像协议、基因调控、药物或治疗建议 |
+| [Biomolecular Condensates Phase Separation Stress Adaptation Continuity](domains/biomolecular-condensates-phase-separation-stress-adaptation-continuity/README.md) | 生物分子凝聚体、相分离、stress granules、RNA/蛋白局部组织 | 可逆压力适应、异常聚集、蛋白毒性和信息处理边界 | 不提供相分离干预、蛋白聚集治疗、补剂、药物、检测解释或实验建议 |
+| [Cytoskeleton Mechanotransduction Cellular Mechanics Continuity](domains/cytoskeleton-mechanotransduction-cellular-mechanics-continuity/README.md) | 细胞骨架、力感知、机械转导、细胞形态和核-骨架耦合 | 细胞力学、组织刚度、血管/肌骨/再生风险 | 不提供机械刺激、训练、康复、设备、检测解释、实验或治疗建议 |
 | [Mitochondrial Bioenergetics](domains/mitochondrial-bioenergetics/README.md) | 线粒体功能、ATP、氧化还原、疲劳、肌肉和神经能量系统 | 细胞能源、疲劳、恢复和行动能力变量 | 不提供补剂、药物、运动、禁食、检测解释或治疗建议 |
 | [Cellular Senescence Clearance](domains/cellular-senescence-clearance/README.md) | 衰老细胞负担、SASP、senolytics、组织炎症和微环境 | 衰老细胞、炎症、再生和癌症风险边界 | 不提供药物、剂量、补剂、人体实验或治疗建议 |
 | [Extracellular Matrix Glycation](domains/extracellular-matrix-glycation/README.md) | 细胞外基质、胶原、弹性、AGEs、交联、纤维化和组织力学 | 结构性老化、组织硬度、修复环境和器官功能边界 | 不提供抗糖化补剂、药物、饮食、检测解释、皮肤治疗或纤维化治疗建议 |
@@ -2500,6 +2512,12 @@ human_infra/
 │   ├── rna-splicing-epitranscriptomic-maintenance-continuity/
 │   ├── nuclear-gateway-nucleocytoplasmic-transport-continuity/
 │   ├── ferroptosis-lipid-peroxidation-membrane-resilience-continuity/
+│   ├── endoplasmic-reticulum-stress-upr-proteostasis-continuity/
+│   ├── golgi-secretory-trafficking-organelle-homeostasis-continuity/
+│   ├── peroxisome-redox-lipid-metabolism-homeostasis-continuity/
+│   ├── organelle-contact-sites-intercompartmental-communication-continuity/
+│   ├── biomolecular-condensates-phase-separation-stress-adaptation-continuity/
+│   ├── cytoskeleton-mechanotransduction-cellular-mechanics-continuity/
 │   ├── renal-hepatic-clearance/
 │   ├── regenerative-medicine/
 │   ├── rehabilitation-functioning/
@@ -2882,5 +2900,6 @@ flowchart LR
 - 2026-07-01：新增第一百二十四波 6 个生殖技术与生育保存治理连续性域，覆盖 ART/IVF 周期、ART 诊所成功率质量报告、生育保存冷冻储存、生殖组织供体筛查追溯、PGT 胚胎选择治理和第三方生殖法律伦理。
 - 2026-07-01：新增第一百二十五波 6 个长寿干预执行与证据治理连续性域，覆盖 geroprotective 药物再利用试验治理、补剂证据安全、抗阻训练肌力肌少症、心肺适能 VO2max、热量限制禁食能量平衡和冷热应激 hormesis 治理。
 - 2026-07-01：新增第一百三十二波 6 个细胞内质量控制与分子信息维护连续性域，覆盖溶酶体通量/脂褐素清除、泛素-蛋白酶体蛋白周转、核糖体翻译保真、RNA 剪接/转录后维护、核网关/核质运输和铁死亡/脂质过氧化膜韧性。
+- 2026-07-02：新增第一百三十三波 6 个细胞器稳态、空间组织与应激响应连续性域，覆盖 ER stress/UPR、Golgi 分泌运输、过氧化物酶体脂质氧化还原、细胞器接触位点、生物分子凝聚体/相分离和细胞骨架/机械转导。
 
 完整记录见 [CHANGELOG.md](CHANGELOG.md)。

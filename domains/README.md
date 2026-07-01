@@ -28,6 +28,12 @@
 - `rna-splicing-epitranscriptomic-maintenance-continuity/`：RNA 剪接与转录后维护连续性，整理 RNA 修饰、mRNA 质控、isoform 分布和 RNA imbalance。
 - `nuclear-gateway-nucleocytoplasmic-transport-continuity/`：核网关与核质运输连续性，整理核孔、karyopherins、核膜/核纤层和核内外交换边界。
 - `ferroptosis-lipid-peroxidation-membrane-resilience-continuity/`：铁死亡、脂质过氧化与膜韧性连续性，整理膜脂稳态、铁代谢、抗氧化防御和铁依赖细胞死亡风险。
+- `endoplasmic-reticulum-stress-upr-proteostasis-continuity/`：ER 压力、UPR 与 ER 蛋白稳态连续性，整理折叠负荷、钙信号、慢性 UPR 和细胞命运边界。
+- `golgi-secretory-trafficking-organelle-homeostasis-continuity/`：Golgi、分泌运输与细胞器稳态连续性，整理加工分拣、糖基化、ECM 输出和分泌供应链风险。
+- `peroxisome-redox-lipid-metabolism-homeostasis-continuity/`：过氧化物酶体、氧化还原与脂质代谢稳态连续性，整理 ROS、脂质代谢、ether lipids 和神经代谢风险。
+- `organelle-contact-sites-intercompartmental-communication-continuity/`：细胞器接触位点与跨区室通信连续性，整理 MAMs、钙、脂质转运和代谢耦合边界。
+- `biomolecular-condensates-phase-separation-stress-adaptation-continuity/`：生物分子凝聚体、相分离与应激适应连续性，整理 stress granules、RNA/蛋白局部组织和异常硬化风险。
+- `cytoskeleton-mechanotransduction-cellular-mechanics-continuity/`：细胞骨架、机械转导与细胞力学连续性，整理力感知、核-骨架耦合、组织力学和机械信号风险。
 - `mitochondrial-bioenergetics/`：线粒体生物能量学，整理线粒体功能、ATP、氧化还原、疲劳和行动能力。
 - `cellular-senescence-clearance/`：细胞衰老与清除，整理衰老细胞负担、SASP、组织炎症和 senolytic 风险。
 - `extracellular-matrix-glycation/`：细胞外基质与糖化，整理胶原、弹性、组织力学、AGEs、交联和纤维化。

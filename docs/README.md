@@ -153,6 +153,7 @@ docs/
 │   ├── 0135-add-one-hundred-thirtieth-wave-construction-industrial-fatal-hazard-domains.md
 │   ├── 0136-add-one-hundred-thirty-first-wave-immune-aging-systemic-signal-domains.md
 │   ├── 0137-add-one-hundred-thirty-second-wave-intracellular-quality-control-molecular-maintenance-domains.md
+│   ├── 0138-add-one-hundred-thirty-third-wave-organelle-homeostasis-spatial-stress-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -231,6 +232,7 @@ docs/
 21. Read `reference/research-domain-radar.md` before proposing a new domain.
 22. Read `../domains/cellular-reprogramming/README.md` if you are working on cellular rejuvenation or epigenetic reprogramming.
 22a. Read `../domains/proteostasis-autophagy/README.md` and the intracellular quality-control subdomain READMEs if you are working on lysosomal flux, protein turnover, translation fidelity, RNA maintenance, nucleocytoplasmic transport, or ferroptosis.
+22b. Read the organelle homeostasis and spatial stress subdomain READMEs if you are working on ER/UPR, Golgi trafficking, peroxisome redox lipid metabolism, organelle contact sites, biomolecular condensates, or mechanotransduction.
 23. Read `../domains/immune-maintenance/README.md` and the new immune-aging subdomain READMEs if you are working on thymic output, immune repertoire aging, CHIP, inflammaging, plasma proteome signals, or EV/SASP aging communication.
 24. Read `../domains/health-data-privacy-governance/README.md` if you are working on sensitive health, genomic, behavioral, neural, or service-use data.
 24a. Read `../domains/functioning-quality-of-life-outcomes/README.md` if you are defining whether a Human Infra intervention actually improves function or lived experience.

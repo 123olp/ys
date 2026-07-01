@@ -2,6 +2,10 @@
 
 All notable repository structure changes are recorded here.
 
+## 2026-07-02
+
+- Added the one-hundred-thirty-third wave of organelle homeostasis, spatial organization, and stress-response domains, covering ER stress / UPR proteostasis, Golgi secretory trafficking, peroxisome redox and lipid metabolism, organelle contact sites, biomolecular condensates / phase separation, and cytoskeleton mechanotransduction / cellular mechanics.
+
 ## 2026-07-01
 
 - Added the one-hundred-thirty-second wave of intracellular quality-control and molecular information-maintenance domains, covering lysosomal flux / lipofuscin clearance, ubiquitin-proteasome protein turnover, ribosome translation fidelity, RNA splicing / epitranscriptomic maintenance, nuclear gateway / nucleocytoplasmic transport, and ferroptosis / lipid peroxidation membrane resilience.

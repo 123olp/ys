@@ -73,6 +73,12 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | RNA 信息层必须可维护 | `rna-splicing-epitranscriptomic-maintenance-continuity/` | RNA 剪接、RNA 修饰、mRNA 质控、RNA imbalance | 错误 isoform、表达漂移、细胞身份失稳和功能程序失真 |
 | 核入口必须保持边界稳定 | `nuclear-gateway-nucleocytoplasmic-transport-continuity/` | 核孔、核质运输、karyopherins、核膜/核纤层 | 核内外交换失衡、压力响应异常、身份漂移和结构脆弱 |
 | 膜脂死亡通道必须可控 | `ferroptosis-lipid-peroxidation-membrane-resilience-continuity/` | 铁死亡、脂质过氧化、铁代谢、膜脂稳态 | 膜损伤扩增、细胞死亡、器官损伤和炎症级联 |
+| ER 折叠压力必须可恢复 | `endoplasmic-reticulum-stress-upr-proteostasis-continuity/` | ER stress、UPR、ER 蛋白稳态、钙信号 | 慢性 UPR、炎症、凋亡、器官功能下降 |
+| 分泌供应链必须稳定 | `golgi-secretory-trafficking-organelle-homeostasis-continuity/` | Golgi 结构、分泌运输、糖基化、离子稳态 | 加工分拣失败、ECM 输出异常、细胞通信下降 |
+| 过氧化物酶体必须维持脂质氧化还原 | `peroxisome-redox-lipid-metabolism-homeostasis-continuity/` | peroxisome、ROS、脂质代谢、ether lipids | 膜脂异常、神经/代谢/炎症风险 |
+| 细胞器必须跨区室协调 | `organelle-contact-sites-intercompartmental-communication-continuity/` | MAMs、钙、脂质转运、代谢耦合 | 通信失衡、应激失配、衰老和命运决策异常 |
+| 无膜空间组织必须可逆 | `biomolecular-condensates-phase-separation-stress-adaptation-continuity/` | phase separation、stress granules、RNA/蛋白局部组织 | 异常硬化、聚集毒性、神经连续性损失 |
+| 细胞力学必须可感知和转换 | `cytoskeleton-mechanotransduction-cellular-mechanics-continuity/` | 细胞骨架、力感知、机械转导、核-骨架耦合 | 机械信号失真、纤维化、血管/肌骨/再生风险 |
 | 细胞能源可持续 | `mitochondrial-bioenergetics/` | 线粒体功能、ATP、氧化还原、疲劳 | 把能量指标写成寿命预测 |
 | 衰老细胞负担可治理 | `cellular-senescence-clearance/` | senescence burden、SASP、炎症、组织环境 | 忽略衰老细胞的肿瘤抑制和修复角色 |
 | 组织材料结构可维护 | `extracellular-matrix-glycation/` | ECM、胶原、弹性、糖化、交联、纤维化 | 把抗糖化或组织硬度写成个体处方 |
@@ -1077,6 +1083,12 @@ cellular-reprogramming
   -> rna-splicing-epitranscriptomic-maintenance-continuity
   -> nuclear-gateway-nucleocytoplasmic-transport-continuity
   -> ferroptosis-lipid-peroxidation-membrane-resilience-continuity
+  -> endoplasmic-reticulum-stress-upr-proteostasis-continuity
+  -> golgi-secretory-trafficking-organelle-homeostasis-continuity
+  -> peroxisome-redox-lipid-metabolism-homeostasis-continuity
+  -> organelle-contact-sites-intercompartmental-communication-continuity
+  -> biomolecular-condensates-phase-separation-stress-adaptation-continuity
+  -> cytoskeleton-mechanotransduction-cellular-mechanics-continuity
   -> mitochondrial-bioenergetics
   -> cellular-senescence-clearance
   -> extracellular-matrix-glycation
