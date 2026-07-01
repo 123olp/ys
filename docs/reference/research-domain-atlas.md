@@ -796,6 +796,12 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | IBD 把消化炎症转化为参与损耗 | `inflammatory-bowel-disease-digestive-continuity/` | Crohn 病、溃疡性结肠炎、flare、营养、贫血、用药监测 | 腹痛腹泻、营养缺口和 flare 会压缩学校/工作、社交活动和体力恢复 |
 | 慢性肝病可在失代偿前分层 | `chronic-liver-disease-masld-mash-continuity/` | MASLD/MASH、纤维化、肝硬化、肝癌、代谢共病 | 隐匿肝病会在症状出现前推进肝硬化、肝癌、药物安全和急性失代偿风险 |
 | 甲状腺轴影响能量和认知速度 | `thyroid-disease-endocrine-function-continuity/` | 甲减、甲亢、结节/癌症通路、监测、阶段风险 | 甲状腺失衡会改变疲劳、情绪、心率、体重、骨骼、生育和工作效率 |
+| 皮质醇不足会削弱压力响应冗余 | `adrenal-insufficiency-cortisol-stress-response-continuity/` | 肾上腺不足、Addison's disease、皮质醇缺乏、危象风险 | 应激响应失败会把感染、手术、脱水和创伤等扰动放大成生命风险 |
+| 高皮质醇会造成多系统负荷 | `cushing-syndrome-hypercortisolism-metabolic-bone-continuity/` | 库欣综合征、高皮质醇、代谢、骨骼、肌力、情绪认知 | 激素长期过量会同时增加代谢、骨折、感染、肌无力和有效时间损耗 |
+| 垂体是内分泌调度节点 | `pituitary-disorders-hormone-axis-continuity/` | 垂体腺瘤、多激素轴、催乳素、头痛/视野接口、长期监测 | 垂体疾病会让甲状腺、肾上腺、性腺、GH 和催乳素等多条轴同时失稳 |
+| GH/IGF-1 过量会缓慢改变身体结构 | `acromegaly-growth-hormone-cardiometabolic-continuity/` | 肢端肥大症、GH/IGF-1、心血管代谢、睡眠呼吸、关节软组织 | 诊断延迟会把缓慢结构变化转化为心血管、睡眠、关节和身份负担 |
+| 性腺轴影响肌骨、情绪、性功能和生育 | `hypogonadism-testosterone-sex-hormone-continuity/` | 性腺功能低下、睾酮/性激素、骨骼肌肉、性功能、生育接口 | 性激素不足或商业化过度会同时影响身体能力、关系参与和未来选择权 |
+| POI 改变生殖年龄阶段的长期风险 | `primary-ovarian-insufficiency-hormone-fertility-continuity/` | 原发性卵巢功能不全、卵巢激素、生育窗口、骨骼心血管 | POI 会把激素不足、生育不确定性、身份关系压力和长期健康风险绑定 |
 | 铁缺乏贫血降低氧输送和有效时间 | `iron-deficiency-anemia-oxygen-carrying-continuity/` | 铁储备、血红蛋白、疲劳、出血/吸收来源、恢复可及 | 氧输送不足会降低体力、注意力、运动耐受和阶段性风险承载能力 |
 | 慢性气道控制决定呼吸储备 | `asthma-copd-maintenance-control-continuity/` | 哮喘/COPD、长期控制、吸入药、触发因素、肺康复 | 长期控制失败会造成气短、活动受限、睡眠破坏、急诊利用和急性加重 |
 | 过敏/特应性疾病会消耗恢复质量 | `allergic-atopic-disease-immunologic-burden-continuity/` | 过敏性鼻炎、特应性皮炎、食物过敏、瘙痒、睡眠、环境限制 | 长期过敏负担会通过瘙痒、气道症状、食物限制和急性反应风险降低生活参与 |
@@ -1709,6 +1715,12 @@ risk-engineering
   -> inflammatory-bowel-disease-digestive-continuity
   -> chronic-liver-disease-masld-mash-continuity
   -> thyroid-disease-endocrine-function-continuity
+  -> adrenal-insufficiency-cortisol-stress-response-continuity
+  -> cushing-syndrome-hypercortisolism-metabolic-bone-continuity
+  -> pituitary-disorders-hormone-axis-continuity
+  -> acromegaly-growth-hormone-cardiometabolic-continuity
+  -> hypogonadism-testosterone-sex-hormone-continuity
+  -> primary-ovarian-insufficiency-hormone-fertility-continuity
   -> iron-deficiency-anemia-oxygen-carrying-continuity
   -> asthma-copd-maintenance-control-continuity
   -> allergic-atopic-disease-immunologic-burden-continuity

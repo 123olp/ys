@@ -237,6 +237,12 @@ flowchart TD
     H --> RO[respiratory-oxygenation<br/>呼吸氧合]
     H --> BOH[blood-oxygen-hemostasis<br/>血液氧运 / 止血]
     H --> EHR[endocrine-hormonal-regulation<br/>内分泌 / 激素调节]
+    EHR --> AIAD[adrenal-insufficiency-cortisol-stress-response-continuity<br/>肾上腺不足 / 应激响应]
+    EHR --> CSHC[cushing-syndrome-hypercortisolism-metabolic-bone-continuity<br/>库欣 / 高皮质醇]
+    EHR --> PIT[pituitary-disorders-hormone-axis-continuity<br/>垂体 / 多激素轴]
+    EHR --> ACRO[acromegaly-growth-hormone-cardiometabolic-continuity<br/>肢端肥大 / GH-IGF-1]
+    EHR --> HYPOT[hypogonadism-testosterone-sex-hormone-continuity<br/>性腺功能低下]
+    EHR --> POI[primary-ovarian-insufficiency-hormone-fertility-continuity<br/>POI / 卵巢激素生育]
     H --> LGC[lymphatic-glymphatic-clearance<br/>淋巴 / 脑淋巴清除]
     H --> FEAB[fluid-electrolyte-acid-base-homeostasis<br/>体液 / 电解质 / 酸碱]
     H --> THR[thermal-homeostasis-resilience<br/>热稳态 / 温度韧性]
@@ -1891,6 +1897,12 @@ flowchart TD
 | [Inflammatory Bowel Disease Digestive Continuity](domains/inflammatory-bowel-disease-digestive-continuity/README.md) | Crohn 病、溃疡性结肠炎、flare、营养吸收、用药监测和参与支持 | 把消化道慢性炎症纳入营养、贫血、疲劳、疼痛和生活参与模型 | 不提供 IBD 诊断、内镜/化验判读、饮食、药物、生物制剂、手术或 flare 建议 |
 | [Chronic Liver Disease MASLD MASH Continuity](domains/chronic-liver-disease-masld-mash-continuity/README.md) | MASLD/MASH、纤维化、肝硬化、肝癌风险、代谢共病和药物安全 | 把隐匿慢性肝病纳入代谢连续性、肝脏储备和生命风险边界模型 | 不提供肝功能/影像判读、饮酒、药物、减重、补剂、筛查周期或治疗建议 |
 | [Thyroid Disease Endocrine Function Continuity](domains/thyroid-disease-endocrine-function-continuity/README.md) | 甲减、甲亢、甲状腺结节/癌症通路、监测和内分泌稳定 | 把甲状腺轴纳入能量、情绪、心率、骨骼、生殖阶段和认知速度模型 | 不提供化验判读、结节分级、用药剂量、补碘、妊娠、癌筛或治疗建议 |
+| [Adrenal Insufficiency Cortisol Stress Response Continuity](domains/adrenal-insufficiency-cortisol-stress-response-continuity/README.md) | 肾上腺不足、Addison's disease、皮质醇缺乏、压力反应失败和危象风险 | 把皮质醇轴纳入压力响应、药品连续性、急性风险和生命维持冗余模型 | 不提供皮质醇/ACTH 判读、应激剂量、用药、急救、感染、手术或个体医疗建议 |
+| [Cushing Syndrome Hypercortisolism Metabolic Bone Continuity](domains/cushing-syndrome-hypercortisolism-metabolic-bone-continuity/README.md) | 库欣综合征、高皮质醇、代谢、骨骼、肌力、情绪认知和恢复监测 | 把激素过量导致的系统负荷纳入代谢、骨折、感染、失能和有效时间模型 | 不提供皮质醇试验解释、影像判读、病因定位、用药、手术、放疗或减重建议 |
+| [Pituitary Disorders Hormone Axis Continuity](domains/pituitary-disorders-hormone-axis-continuity/README.md) | 垂体疾病、腺瘤、多激素轴、催乳素、头痛/视野接口和长期监测 | 把垂体作为内分泌调度节点纳入能量、生殖、压力、视觉和复发风险模型 | 不提供 MRI/CT/视野/激素判读、腺瘤判断、用药、手术、放疗或妊娠建议 |
+| [Acromegaly Growth Hormone Cardiometabolic Continuity](domains/acromegaly-growth-hormone-cardiometabolic-continuity/README.md) | 肢端肥大症、GH/IGF-1 过量、心血管代谢、睡眠呼吸、关节和外貌身份 | 把缓慢激素过量对结构、睡眠、心血管和行动质量的侵蚀纳入模型 | 不提供 IGF-1/GH 判读、MRI、睡眠报告、手术、药物、放疗、照片或筛查建议 |
+| [Hypogonadism Testosterone Sex Hormone Continuity](domains/hypogonadism-testosterone-sex-hormone-continuity/README.md) | 性腺功能低下、睾酮/性激素、骨骼肌肉、情绪、性功能和生育接口 | 把性激素轴纳入身体能力、关系参与、骨骼肌肉和未来选择权模型 | 不提供睾酮/LH/FSH/精液判读、激素、剂量、补剂、健身、性功能或生育建议 |
+| [Primary Ovarian Insufficiency Hormone Fertility Continuity](domains/primary-ovarian-insufficiency-hormone-fertility-continuity/README.md) | POI、卵巢激素不足、月经改变、生育窗口、骨骼心血管和心理社会负担 | 把卵巢功能失效纳入身体自主、长期风险、生育未来和身份关系连续性模型 | 不提供 FSH/AMH/遗传判读、激素治疗、生育保存、IVF、供卵、避孕或骨密度建议 |
 | [Iron Deficiency Anemia Oxygen Carrying Continuity](domains/iron-deficiency-anemia-oxygen-carrying-continuity/README.md) | 铁缺乏、贫血、氧输送、疲劳、出血/吸收来源和恢复可及 | 把氧输送不足纳入体力、注意力、运动耐受、妊娠风险和有效时间模型 | 不提供贫血诊断、化验判读、补铁剂量、输血、胃肠检查、月经或饮食建议 |
 | [Asthma COPD Maintenance Control Continuity](domains/asthma-copd-maintenance-control-continuity/README.md) | 哮喘、COPD、长期控制、吸入药可及、触发因素、肺康复和急性加重预防 | 把慢性气道病纳入呼吸储备、活动半径、睡眠和急性加重预防模型 | 不提供肺功能判读、吸入药、剂量、氧疗、行动计划、康复或设备建议 |
 | [Allergic Atopic Disease Immunologic Burden Continuity](domains/allergic-atopic-disease-immunologic-burden-continuity/README.md) | 过敏性鼻炎、特应性皮炎、食物过敏、过敏原暴露、睡眠损害和参与限制 | 把过敏/特应性疾病纳入免疫负担、恢复质量、环境限制和急性反应边界模型 | 不提供过敏诊断、皮损判断、食物挑战、脱敏、药物、急救、饮食或环境改造建议 |

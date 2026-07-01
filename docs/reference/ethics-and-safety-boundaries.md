@@ -2095,6 +2095,24 @@ Human Infra 不能被设计成更精密的压榨系统。
 - 不收集、复制、处理或要求 PHI、月经/排卵记录、性生活记录、伴侣身份、精液报告、影像报告、实验室指标、遗传结果、感染检测、病历、处方、保险 ID、支付记录、诊所账户、私密照片、身体图像、地址、怀孕资料、供体/胚胎资料或任何可识别的性健康/生殖健康个案材料。
 - 不替代 OB-GYN、reproductive endocrinologist、urologist、sexual medicine clinician、pelvic pain specialist、infectious disease clinician、primary care clinician、genetic counselor、fertility clinic、laboratory、pharmacist、therapist、律师、保险计划、FDA、CDC、NIH、WHO、ACOG、ASRM、NIDDK、NICHD、急救服务、监管机构或官方服务渠道。
 
+## 激素反馈轴与内分泌连续性边界
+
+`adrenal-insufficiency-cortisol-stress-response-continuity`、`cushing-syndrome-hypercortisolism-metabolic-bone-continuity`、`pituitary-disorders-hormone-axis-continuity`、`acromegaly-growth-hormone-cardiometabolic-continuity`、`hypogonadism-testosterone-sex-hormone-continuity` 和 `primary-ovarian-insufficiency-hormone-fertility-continuity` 关注肾上腺不足、皮质醇过量、垂体多轴调度、GH/IGF-1、性激素和卵巢激素不足如何影响压力响应、能量、代谢、骨骼、肌肉、视觉接口、生育未来、情绪睡眠和主体持续性，不作为个人诊断、检查解释、激素治疗、急救、手术、放疗、生育、性功能、健身、保险或法律建议入口。
+
+可以做：
+
+- 整理 NIDDK、MedlinePlus、NICHD、NIH、Endocrine Society 等公开资料中的定义、症状负担、检测语境、治疗获得摩擦、急性风险、长期监测、证据边界和禁止用途。
+- 比较皮质醇不足、皮质醇过量、垂体疾病、肢端肥大症、性腺功能低下和 POI 如何通过压力响应失败、代谢骨骼损耗、视觉压迫、肌肉功能、生育窗口、性功能、污名和长期随访影响有效时间。
+- 记录资料中的病程变量、替代治疗依赖、监测频率、药物可及性、症状归因延迟、内分泌专科可及性、隐私敏感性、商业夸大、急性恶化边界和证据等级。
+
+不能做：
+
+- 不提供 Addison 病/肾上腺不足、库欣综合征、垂体瘤/垂体功能异常、肢端肥大症、性腺功能低下、睾酮/雌激素/FSH/LH/泌乳素/IGF-1/皮质醇异常、POI、骨质疏松、生育风险、视力风险或个体内分泌问题的诊断、鉴别诊断、检查解释、影像判读、视野判读、治疗、用药、激素、剂量、应激剂量、停药、手术、放疗、急救、生育、性功能、健身、补剂、饮食或产品建议。
+- 不判断某个人、实验室报告、影像报告、视野检查、月经记录、性功能记录、疲劳记录、体重变化、血压血糖、骨密度、妊娠计划、药物、激素、补剂、保险计划、诊所或医生应如何具体处理。
+- 不生成激素方案、替代治疗方案、急救卡/应激剂量说明、停药计划、手术/放疗选择、垂体影像解释、视野解释、促生育方案、健身增肌方案、睾酮优化方案、骨密度方案、保险申诉、医学必要性文件、诊所/医生/药品/器械推荐或个案医疗/法律/保险材料。
+- 不收集、复制、处理或要求 PHI、实验室指标、影像、视野报告、月经/性功能/生育记录、病历、处方、急救计划、保险 ID、支付记录、诊所账户、身体照片、遗传结果、妊娠资料、地址或任何可识别的内分泌、生殖或性健康个案材料。
+- 不替代 endocrinologist、pituitary specialist、neuro-ophthalmologist、neurosurgeon、OB-GYN、reproductive endocrinologist、urologist、primary care clinician、genetic counselor、laboratory、pharmacist、therapist、律师、保险计划、FDA、NIH、NIDDK、NICHD、MedlinePlus、急救服务、监管机构或官方服务渠道。
+
 ## 生殖技术、生育保存与第三方生殖治理连续性边界
 
 `assisted-reproductive-technology-ivf-cycle-continuity`、`art-clinic-success-rate-quality-reporting-continuity`、`fertility-preservation-gamete-embryo-cryostorage-continuity`、`reproductive-tissue-donor-screening-traceability-continuity`、`preimplantation-genetic-testing-embryo-selection-governance-continuity` 和 `third-party-reproduction-surrogacy-donor-legal-ethics-continuity` 关注 ART/IVF 周期、ART 成功率质量报告、生育保存冷冻储存、生殖组织供体筛查追溯、PGT 胚胎选择治理和第三方生殖法律伦理如何影响未来选择权，不是个人不孕、生殖医疗、IVF、PGT、供体、代孕、胚胎处置、法律、保险、诊所选择或跨境服务建议入口。

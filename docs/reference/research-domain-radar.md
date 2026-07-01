@@ -469,6 +469,12 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `inflammatory-bowel-disease-digestive-continuity/` | 炎症性肠病消化连续性决定 flare、腹痛、腹泻、营养缺口和贫血是否持续吞噬学习、工作和生活参与 |
 | `chronic-liver-disease-masld-mash-continuity/` | MASLD/MASH 慢性肝病连续性决定隐匿肝脏损伤是否在失代偿、肝癌和药物安全风险前被纳入长期治理 |
 | `thyroid-disease-endocrine-function-continuity/` | 甲状腺疾病与内分泌功能连续性决定甲状腺轴失衡是否通过能量、情绪、心率、骨骼和认知速度影响主体行动 |
+| `adrenal-insufficiency-cortisol-stress-response-continuity/` | 肾上腺不足与皮质醇应激响应连续性决定感染、手术、脱水和创伤等压力是否会突破主体生理冗余 |
+| `cushing-syndrome-hypercortisolism-metabolic-bone-continuity/` | 库欣综合征与高皮质醇连续性决定激素过量是否通过代谢、骨骼、肌力、情绪认知和感染风险吞噬有效时间 |
+| `pituitary-disorders-hormone-axis-continuity/` | 垂体疾病与多激素轴连续性决定内分泌调度节点是否让多条激素轴、视觉接口和长期监测同时失稳 |
+| `acromegaly-growth-hormone-cardiometabolic-continuity/` | 肢端肥大症与 GH/IGF-1 连续性决定缓慢结构变化是否转化为心血管代谢、睡眠呼吸、关节和身份负担 |
+| `hypogonadism-testosterone-sex-hormone-continuity/` | 性腺功能低下与性激素连续性决定骨骼肌肉、情绪、性功能和生育接口是否被误读或商业化过度 |
+| `primary-ovarian-insufficiency-hormone-fertility-continuity/` | POI、卵巢激素与生育连续性决定卵巢激素不足是否压缩生育未来、骨骼心血管安全和身份关系稳定 |
 | `iron-deficiency-anemia-oxygen-carrying-continuity/` | 铁缺乏贫血与氧输送连续性决定氧运输不足是否持续压低体力、注意力、运动耐受和阶段性风险承载能力 |
 | `asthma-copd-maintenance-control-continuity/` | 哮喘/COPD 长期控制连续性决定慢性气道病是否通过活动受限、睡眠破坏和急性加重缩小行动空间 |
 | `allergic-atopic-disease-immunologic-burden-continuity/` | 过敏/特应性疾病免疫负担连续性决定过敏原、瘙痒、睡眠、食物/环境限制和急性反应风险是否长期消耗恢复质量 |
@@ -1226,6 +1232,7 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | NASA Human Research Program risks and evidence | 提示空间飞行、辐射、微重力、隔离、闭环生命支持和远程医疗是未来可达性场景 |
 | WHO chronic respiratory diseases / NHLBI lung diseases | 提示呼吸系统、肺储备、气体交换和缺氧风险需要独立模型接口 |
 | NIDDK endocrine diseases / Endocrine Society hormone resources | 提示激素轴、反馈环和跨器官信号是代谢、压力、骨骼和情绪稳态的独立条件 |
+| NIDDK / MedlinePlus / NICHD endocrine feedback-axis resources | 提示肾上腺、垂体、GH/IGF-1、性腺和 POI 是压力响应、代谢骨骼、视觉接口、生育未来和长期监测的独立失效模式 |
 | NHLBI blood diseases / CDC blood disorders | 提示血液氧运、贫血、凝血、出血和血栓风险构成独立运输与止血系统 |
 | NCBI wound healing / pressure injury resources | 提示皮肤屏障、伤口愈合、压力损伤和感染入口是外界接口维护域 |
 | AHRQ/NPIAP/CDC/NIDDK/NIAMS/MedlinePlus/FDA skin and wound sources | 提示压力损伤、慢性伤口、伤口感染、糖尿病足、烧伤后创面、SSI、潮湿相关皮炎、湿疹、银屑病和敷料用品是皮肤边界执行层独立失效模式 |

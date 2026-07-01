@@ -147,6 +147,7 @@ docs/
 │   ├── 0129-add-one-hundred-twenty-fourth-wave-reproductive-technology-governance-domains.md
 │   ├── 0130-add-one-hundred-twenty-fifth-wave-longevity-intervention-governance-domains.md
 │   ├── 0131-add-one-hundred-twenty-sixth-wave-reproductive-endocrine-pelvic-function-domains.md
+│   ├── 0132-add-one-hundred-twenty-seventh-wave-endocrine-feedback-axis-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -1076,4 +1077,10 @@ docs/
 786. Read `../domains/male-factor-infertility-sperm-health-continuity/README.md` if you are working on male factor infertility, sperm count, sperm motility, endocrine context, reproductive exposure, privacy, or partner burden.
 787. Read `../domains/erectile-dysfunction-vascular-sexual-function-continuity/README.md` if you are working on erectile dysfunction, sexual function, vascular/metabolic risk signals, medication context, stigma, privacy, or relationship burden.
 788. Read `../domains/vulvovaginal-pain-infection-sexual-function-continuity/README.md` if you are working on vulvodynia, vulvovaginal pain, recurrent symptoms, dyspareunia, infection/inflammation context, stigma, or intimate-function continuity.
+789. Read `../domains/adrenal-insufficiency-cortisol-stress-response-continuity/README.md` if you are working on adrenal insufficiency, Addison's disease, cortisol deficiency, stress response failure, adrenal crisis context, fatigue, or medication continuity.
+790. Read `../domains/cushing-syndrome-hypercortisolism-metabolic-bone-continuity/README.md` if you are working on Cushing's syndrome, hypercortisolism, metabolic burden, bone/muscle effects, mood/cognition, infection risk, or recovery monitoring.
+791. Read `../domains/pituitary-disorders-hormone-axis-continuity/README.md` if you are working on pituitary disorders, pituitary adenomas, prolactin, multi-axis hormone monitoring, headache/vision context, or long-term follow-up.
+792. Read `../domains/acromegaly-growth-hormone-cardiometabolic-continuity/README.md` if you are working on acromegaly, GH/IGF-1 excess, cardiometabolic burden, sleep apnea context, joint/soft tissue effects, or delayed diagnosis.
+793. Read `../domains/hypogonadism-testosterone-sex-hormone-continuity/README.md` if you are working on hypogonadism, low testosterone context, sex hormones, puberty/adult stage differences, bone/muscle effects, sexual function, or fertility interface.
+794. Read `../domains/primary-ovarian-insufficiency-hormone-fertility-continuity/README.md` if you are working on primary ovarian insufficiency, ovarian hormone deficiency, fertility uncertainty, menstrual change, bone/cardiovascular risk, or psychosocial burden.
 684. Enter a domain under `../domains/`.

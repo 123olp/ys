@@ -4,6 +4,7 @@ All notable repository structure changes are recorded here.
 
 ## 2026-07-01
 
+- Added the one-hundred-twenty-seventh wave of endocrine feedback-axis continuity domains, covering adrenal insufficiency, Cushing's syndrome, pituitary disorders, acromegaly, hypogonadism, and primary ovarian insufficiency.
 - Added the one-hundred-twenty-sixth wave of reproductive endocrine, pelvic pain, infertility, and sexual-function continuity domains, covering PCOS, endometriosis, uterine fibroids, male-factor infertility, erectile dysfunction, and vulvovaginal pain/infection/function continuity.
 - Added the one-hundred-twenty-fourth wave of reproductive technology governance continuity domains, covering ART/IVF cycles, ART clinic success-rate reporting, fertility preservation cryostorage, reproductive tissue donor screening and traceability, PGT embryo-selection governance, and third-party reproduction legal/ethics boundaries.
 - Added the one-hundred-twenty-third wave of Food is Medicine / medical nutrition support execution-continuity domains, covering nutrition insecurity screening/referral, medically tailored meals, medically tailored groceries, produce prescriptions, food pharmacy / clinic pantry integration, and medical nutrition therapy access.

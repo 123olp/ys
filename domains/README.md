@@ -32,6 +32,12 @@
 - `respiratory-oxygenation/`：呼吸氧合，整理肺、气道、气体交换、通气、氧合和呼吸失败风险。
 - `blood-oxygen-hemostasis/`：血液氧运与止血，整理红细胞、血红蛋白、凝血、出血、血栓和血液安全。
 - `endocrine-hormonal-regulation/`：内分泌与激素调节，整理激素轴、反馈环、代谢信号、压力反应和跨器官稳态。
+- `adrenal-insufficiency-cortisol-stress-response-continuity/`：肾上腺不足与皮质醇应激响应连续性，整理皮质醇缺乏、压力反应失败、危象风险、疲劳和治疗连续性。
+- `cushing-syndrome-hypercortisolism-metabolic-bone-continuity/`：库欣综合征与高皮质醇连续性，整理代谢、骨骼、肌力、情绪认知、感染风险和恢复监测。
+- `pituitary-disorders-hormone-axis-continuity/`：垂体疾病与多激素轴连续性，整理腺瘤、催乳素、头痛/视野、多轴调度和长期监测。
+- `acromegaly-growth-hormone-cardiometabolic-continuity/`：肢端肥大症与 GH/IGF-1 连续性，整理心血管代谢、睡眠呼吸、关节软组织、外貌身份和诊断延迟。
+- `hypogonadism-testosterone-sex-hormone-continuity/`：性腺功能低下与性激素连续性，整理睾酮/性激素、骨骼肌肉、情绪、性功能和生育接口。
+- `primary-ovarian-insufficiency-hormone-fertility-continuity/`：POI、卵巢激素与生育连续性，整理卵巢激素不足、生育窗口、骨骼心血管和心理社会负担。
 - `lymphatic-glymphatic-clearance/`：淋巴与脑淋巴清除，整理组织液、免疫运输、水肿、脑废物清除和恢复网络。
 - `fluid-electrolyte-acid-base-homeostasis/`：体液电解质酸碱稳态，整理水分、电解质、渗透压、酸碱和内环境稳定。
 - `thermal-homeostasis-resilience/`：热稳态与温度韧性，整理体温调节、热暴露、寒冷暴露、散热和急性温度风险。
@@ -921,6 +927,12 @@
 - `inflammatory-bowel-disease-digestive-continuity/`：炎症性肠病消化连续性，整理 Crohn 病、溃疡性结肠炎、flare、营养、贫血和用药监测。
 - `chronic-liver-disease-masld-mash-continuity/`：MASLD/MASH 慢性肝病连续性，整理脂肪肝、纤维化、肝硬化、肝癌风险和代谢共病。
 - `thyroid-disease-endocrine-function-continuity/`：甲状腺疾病与内分泌功能连续性，整理甲减、甲亢、结节/癌症通路、监测和阶段性风险。
+- `adrenal-insufficiency-cortisol-stress-response-continuity/`：肾上腺不足与皮质醇应激响应连续性，整理皮质醇缺乏、压力反应失败、危象风险、疲劳和治疗连续性。
+- `cushing-syndrome-hypercortisolism-metabolic-bone-continuity/`：库欣综合征与高皮质醇连续性，整理代谢、骨骼、肌力、情绪认知、感染风险和恢复监测。
+- `pituitary-disorders-hormone-axis-continuity/`：垂体疾病与多激素轴连续性，整理腺瘤、催乳素、头痛/视野、多轴调度和长期监测。
+- `acromegaly-growth-hormone-cardiometabolic-continuity/`：肢端肥大症与 GH/IGF-1 连续性，整理心血管代谢、睡眠呼吸、关节软组织、外貌身份和诊断延迟。
+- `hypogonadism-testosterone-sex-hormone-continuity/`：性腺功能低下与性激素连续性，整理睾酮/性激素、骨骼肌肉、情绪、性功能和生育接口。
+- `primary-ovarian-insufficiency-hormone-fertility-continuity/`：POI、卵巢激素与生育连续性，整理卵巢激素不足、生育窗口、骨骼心血管和心理社会负担。
 - `iron-deficiency-anemia-oxygen-carrying-continuity/`：铁缺乏贫血与氧输送连续性，整理铁储备、血红蛋白、疲劳、来源追踪和恢复可及。
 - `asthma-copd-maintenance-control-continuity/`：哮喘/COPD 长期控制连续性，整理症状控制、吸入药可及、触发因素、肺康复和急性加重预防。
 - `allergic-atopic-disease-immunologic-burden-continuity/`：过敏/特应性疾病免疫负担连续性，整理过敏原暴露、瘙痒、睡眠、食物/环境限制和急性反应边界。
