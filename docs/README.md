@@ -127,6 +127,7 @@ docs/
 │   ├── 0109-add-one-hundred-fourth-wave-plant-algae-fungi-outdoor-biological-exposure-domains.md
 │   ├── 0110-add-one-hundred-fifth-wave-personal-device-consumable-continuity-domains.md
 │   ├── 0111-add-one-hundred-sixth-wave-assistive-device-operational-continuity-domains.md
+│   ├── 0112-add-one-hundred-seventh-wave-household-water-wastewater-execution-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -397,6 +398,12 @@ docs/
     - Then read `../domains/prosthetic-limb-orthotic-fit-repair-continuity/README.md` for prosthetic limbs, orthotics, sockets, braces, liners, skin interface, repair, replacement, or mobility participation.
     - Then read `../domains/cpap-pap-device-mask-supply-power-continuity/README.md` for CPAP/BiPAP/PAP devices, masks, tubing, filters, power, recalls, supplier friction, or sleep-recovery continuity.
     - Then read `../domains/fall-detection-emergency-response-device-continuity/README.md` for fall-detection devices, personal emergency response buttons, sensors, charging, connectivity, notification routing, or response chains.
+    - Then read `../domains/private-well-water-testing-treatment-continuity/README.md` for private wells, groundwater testing, water treatment, wellhead protection, alternate water, or household water-task continuity.
+    - Then read `../domains/household-water-treatment-filter-maintenance-continuity/README.md` for home water filters, point-of-use treatment, filter replacement, certification claims, maintenance, or contaminant-target mismatch.
+    - Then read `../domains/lead-service-line-lead-copper-drinking-water-continuity/README.md` for lead service lines, lead/copper sampling, corrosion control, public notices, replacement plans, or household mitigation boundaries.
+    - Then read `../domains/premise-plumbing-backflow-cross-connection-continuity/README.md` for premise plumbing, cross-connections, backflow, pressure events, testing/maintenance records, or use-point water safety.
+    - Then read `../domains/septic-system-maintenance-sewage-backup-continuity/README.md` for septic tanks, drainfields, pumping/inspection, overload, sewage backup, or decentralized wastewater continuity.
+    - Then read `../domains/basement-flooding-sump-pump-moisture-recovery-continuity/README.md` for basement flooding, sump pumps, drainage, outages, moisture recovery, mold risk, or housing recovery tasks.
 183. Read `../domains/advance-care-planning-medical-decision-continuity/README.md` if you are working on advance care planning, advance directives, health care proxy, medical decision continuity, goals of care, or incapacity communication.
 184. Read `../domains/supported-decision-making-guardianship-rights/README.md` if you are working on supported decision-making, guardianship, conservatorship, decision capacity, disability rights, or least restrictive alternatives.
 185. Read `../domains/healthcare-personal-representative-hipaa-access-continuity/README.md` if you are working on HIPAA personal representatives, caregiver access, proxy access, medical records, privacy boundaries, or authorized care coordination.

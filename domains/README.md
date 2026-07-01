@@ -581,6 +581,12 @@
 - `prosthetic-limb-orthotic-fit-repair-continuity/`：假肢矫形适配与维修连续性，整理 socket、支具、皮肤接口、替换等待、疼痛和参与身份。
 - `cpap-pap-device-mask-supply-power-continuity/`：CPAP/PAP 设备、面罩、耗材与供电连续性，整理夜间呼吸支持设备、耗材、召回、供电和供应商断点。
 - `fall-detection-emergency-response-device-continuity/`：跌倒检测与紧急响应设备连续性，整理传感器、按钮、佩戴供电、网络通知和救助响应链。
+- `private-well-water-testing-treatment-continuity/`：私人井水检测与处理连续性，整理井水检测、污染识别、处理维护、替代水源和检测记录。
+- `household-water-treatment-filter-maintenance-continuity/`：家庭水处理与滤水器维护连续性，整理点用/点入处理、滤芯更换、认证声明和维护失败。
+- `lead-service-line-lead-copper-drinking-water-continuity/`：铅服务线与铅铜饮水连续性，整理铅铜规则、采样通知、腐蚀控制、替换计划和家庭保护。
+- `premise-plumbing-backflow-cross-connection-continuity/`：建筑 plumbing 回流与交叉连接连续性，整理使用点污染逆流、回流防护、压力事件和维护记录。
+- `septic-system-maintenance-sewage-backup-continuity/`：化粪池维护与污水回流连续性，整理 septic tank、排水场、泵抽维护、系统超载和住房卫生。
+- `basement-flooding-sump-pump-moisture-recovery-continuity/`：地下室进水、sump pump 与潮湿恢复连续性，整理进水、排水、断电、霉菌风险和住房恢复。
 - `household-cleaning-disinfection-pest-control-continuity/`：家庭清洁、消毒与害虫控制连续性，整理表面清洁、消毒、化学品安全、害虫控制和室内卫生。
 - `postal-parcel-delivery-pickup-continuity/`：邮件、包裹、投递与自提连续性，整理邮件包裹、签收、自提、追踪、地址错配和最后一公里接收。
 - `household-maintenance-repair-contractor-continuity/`：家庭维修、承包商与修复服务连续性，整理维修请求、承包商、报价、许可、记录、投诉和修复恢复。

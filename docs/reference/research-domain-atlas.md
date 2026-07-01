@@ -487,6 +487,12 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 假肢矫形必须保持身体工具耦合 | `prosthetic-limb-orthotic-fit-repair-continuity/` | 假肢、矫形器、socket、支具、皮肤接口、维修替换 | 不适配、皮肤损伤、疼痛或维修等待会同时侵蚀移动、工作、身份和尊严 |
 | PAP 设备必须支撑夜间恢复 | `cpap-pap-device-mask-supply-power-continuity/` | CPAP/BiPAP/PAP、面罩、管路、滤芯、供电、召回、供应商 | 面罩、耗材、供电或召回断点会把可治疗睡眠风险重新转成日间疲劳和安全风险 |
 | 跌倒后求助链必须可运行 | `fall-detection-emergency-response-device-continuity/` | 跌倒检测、紧急按钮、传感器、充电、网络、通知、响应 | 佩戴、供电、连接、误报漏报或通知失败会让可救助事件变成长时间无人发现 |
+| 私人井水必须可检测可处理 | `private-well-water-testing-treatment-continuity/` | 私人井、地下水、水质检测、处理设备、替代水源 | 井水检测或处理失败会让饮水、烹饪、婴幼儿照护和灾后恢复暴露在不可见污染中 |
+| 家庭滤水必须维护且声明匹配 | `household-water-treatment-filter-maintenance-continuity/` | 滤水器、点用处理、滤芯、认证声明、目标污染物 | 滤芯失效、声明错配或维护断裂会让安全感超过真实保护能力 |
+| 铅铜饮水风险必须可见可替换 | `lead-service-line-lead-copper-drinking-water-continuity/` | 铅服务线、采样、通知、腐蚀控制、替换计划 | 铅暴露治理失败会长期侵蚀儿童发育、认知能力、孕产妇健康和饮水信任 |
+| 使用点供水必须防止污染逆流 | `premise-plumbing-backflow-cross-connection-continuity/` | Premise plumbing、交叉连接、回流、防护装置、压力事件 | 回流和交叉连接失败会把建筑内部污染逆流带入饮水、食品、医疗和清洁任务 |
+| 化粪池必须维护并防止污水回流 | `septic-system-maintenance-sewage-backup-continuity/` | 化粪池、排水场、泵抽、系统超载、污水回流 | 分散式污水系统失效会把居住卫生、饮水风险、维修费用和住房稳定同时击穿 |
+| 地下室进水必须可排可恢复 | `basement-flooding-sump-pump-moisture-recovery-continuity/` | 地下室进水、sump pump、排水、断电、潮湿恢复 | 水害恢复失败会把设备、文件、空气质量、储物和家庭恢复空间转成长期损耗 |
 | 家庭卫生必须可治理 | `household-cleaning-disinfection-pest-control-continuity/` | 清洁、消毒、化学品安全、害虫控制、室内卫生 | 清洁不足、化学误用或害虫暴露会制造感染、过敏、毒性和居住压力 |
 | 邮件包裹必须可接收 | `postal-parcel-delivery-pickup-continuity/` | 邮件、包裹、签收、自提、追踪、地址同步 | 文件、药品、设备、账单或身份材料收不到会切断远程服务和物理资源交付 |
 | 家庭故障必须可被可信维修 | `household-maintenance-repair-contractor-continuity/` | 维修请求、承包商、报价、许可、投诉、维修记录 | 维修延误、诈骗、无证服务或记录缺失会让住房、设备、水电、卫生和安全持续恶化 |
@@ -1226,6 +1232,12 @@ risk-engineering
   -> prosthetic-limb-orthotic-fit-repair-continuity
   -> cpap-pap-device-mask-supply-power-continuity
   -> fall-detection-emergency-response-device-continuity
+  -> private-well-water-testing-treatment-continuity
+  -> household-water-treatment-filter-maintenance-continuity
+  -> lead-service-line-lead-copper-drinking-water-continuity
+  -> premise-plumbing-backflow-cross-connection-continuity
+  -> septic-system-maintenance-sewage-backup-continuity
+  -> basement-flooding-sump-pump-moisture-recovery-continuity
   -> household-cleaning-disinfection-pest-control-continuity
   -> postal-parcel-delivery-pickup-continuity
   -> household-maintenance-repair-contractor-continuity

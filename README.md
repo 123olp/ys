@@ -806,6 +806,12 @@ flowchart TD
     H --> PLOFRC[prosthetic-limb-orthotic-fit-repair-continuity<br/>假肢矫形 / 适配维修]
     H --> CPDMSPC[cpap-pap-device-mask-supply-power-continuity<br/>PAP 设备 / 面罩供电]
     H --> FDERDC[fall-detection-emergency-response-device-continuity<br/>跌倒检测 / 响应设备]
+    H --> PWWTTC[private-well-water-testing-treatment-continuity<br/>私人井水 / 检测处理]
+    H --> HWTFC[household-water-treatment-filter-maintenance-continuity<br/>家庭滤水 / 维护认证]
+    H --> LSLCDW[lead-service-line-lead-copper-drinking-water-continuity<br/>铅铜饮水 / 管线替换]
+    H --> PPBCC[premise-plumbing-backflow-cross-connection-continuity<br/>回流交叉连接 / 使用点安全]
+    H --> SSMSB[septic-system-maintenance-sewage-backup-continuity<br/>化粪池 / 污水回流]
+    H --> BFSPMR[basement-flooding-sump-pump-moisture-recovery-continuity<br/>地下室进水 / 潮湿恢复]
     H --> HCDPCC[household-cleaning-disinfection-pest-control-continuity<br/>家庭清洁 / 消毒害虫控制]
     H --> PPDPC[postal-parcel-delivery-pickup-continuity<br/>邮件包裹 / 投递自提]
     H --> HMRCC[household-maintenance-repair-contractor-continuity<br/>家庭维修 / 承包商服务]
@@ -1245,6 +1251,12 @@ flowchart TD
 | [Prosthetic Limb Orthotic Fit Repair Continuity](domains/prosthetic-limb-orthotic-fit-repair-continuity/README.md) | 假肢、矫形器、socket、支具、衬垫、皮肤接口、维修替换和支付等待 | 维护身体-工具耦合界面，让移动、工作、疼痛控制、皮肤完整性和身份参与持续 | 不提供处方、socket 调整、康复训练、皮肤处理、品牌推荐、维修或保险申诉 |
 | [CPAP PAP Device Mask Supply Power Continuity](domains/cpap-pap-device-mask-supply-power-continuity/README.md) | CPAP/BiPAP/PAP 设备、面罩、管路、滤芯、供电、召回、耗材和供应商 | 让夜间呼吸支持稳定转化为睡眠恢复、日间警觉、驾驶工作安全和长期风险控制 | 不提供诊断、处方、压力参数、清洁步骤、设备购买、维修、召回个案或保险申诉 |
 | [Fall Detection Emergency Response Device Continuity](domains/fall-detection-emergency-response-device-continuity/README.md) | 跌倒检测、个人紧急响应按钮、传感器、充电、连接、通知路由和 EMS/911 接口 | 把跌倒后无人发现风险转化为可检测、可通知、可响应的求助链 | 不提供设备选购、安装配置、急救指令、医学分诊、911 使用策略或监控方案 |
+| [Private Well Water Testing Treatment Continuity](domains/private-well-water-testing-treatment-continuity/README.md) | 私人井、地下水、水质检测、处理设备、井口保护、替代水源和检测记录 | 把家庭自有水源从不可见风险转成可检测、可处理、可记录的饮水执行链 | 不提供水质结果判断、饮水许可、井施工、消毒步骤、药剂配比或设备选购建议 |
+| [Household Water Treatment Filter Maintenance Continuity](domains/household-water-treatment-filter-maintenance-continuity/README.md) | 家庭滤水器、点用/点入处理、认证声明、滤芯更换、维护提醒和旁路风险 | 让家庭水处理从一次性购买转成目标污染物匹配、滤芯维护和真实保护能力 | 不提供滤水器购买推荐、安装教程、滤芯选择、水质结果判断或个体饮水建议 |
+| [Lead Service Line Lead Copper Drinking Water Continuity](domains/lead-service-line-lead-copper-drinking-water-continuity/README.md) | 铅服务线、铅铜规则、采样、公共通知、腐蚀控制、替换计划和家庭保护 | 防止饮水铅暴露长期侵蚀儿童发育、认知能力、孕产妇健康和饮水信任 | 不提供水样解释、管线识别教程、施工、滤水器选择、法律索赔或房屋交易建议 |
+| [Premise Plumbing Backflow Cross Connection Continuity](domains/premise-plumbing-backflow-cross-connection-continuity/README.md) | 建筑内部 plumbing、交叉连接、回流、防护装置、压力事件、测试维护和记录 | 把建筑使用点污染逆流从隐蔽工程问题转成可审查的饮水和服务安全链 | 不提供管道施工、回流装置安装、检测步骤、维修教程、合规判断或事故处置 |
+| [Septic System Maintenance Sewage Backup Continuity](domains/septic-system-maintenance-sewage-backup-continuity/README.md) | 化粪池、排水场、泵抽维护、系统超载、故障征兆、污水回流和维修等待 | 让分散式污水系统持续保护居住卫生、饮水安全、住房稳定和家庭预算 | 不提供化粪池施工、泵抽频率个案、故障诊断、污水清理、维修商推荐或许可判断 |
+| [Basement Flooding Sump Pump Moisture Recovery Continuity](domains/basement-flooding-sump-pump-moisture-recovery-continuity/README.md) | 地下室进水、sump pump、排水、断电、潮湿材料、霉菌风险和恢复延迟 | 防止一次性水害转成长期空气、设备、文件、居住和恢复空间损耗 | 不提供抽水操作、电气进入、霉菌清理、防水施工、保险索赔或灾害现场判断 |
 | [Household Cleaning Disinfection Pest Control Continuity](domains/household-cleaning-disinfection-pest-control-continuity/README.md) | 表面清洁、消毒、化学品安全、害虫控制、垃圾和室内卫生 | 在感染控制、害虫风险和化学暴露之间建立可治理的家庭卫生边界 | 不提供消毒配方、化学混合、杀虫剂使用、毒物处理、霉菌清除或医疗处置步骤 |
 | [Postal Parcel Delivery Pickup Continuity](domains/postal-parcel-delivery-pickup-continuity/README.md) | 邮件、包裹、投递、自提、签收、追踪、地址同步和最后一公里接收 | 让文件、药品、设备、账单、身份材料和远程交易实物能到达主体 | 不提供邮件拦截、包裹盗取、冒领、地址欺诈、追踪滥用或物流攻击方法 |
 | [Household Maintenance Repair Contractor Continuity](domains/household-maintenance-repair-contractor-continuity/README.md) | 家庭维修、承包商、服务预约、报价、许可、投诉和维修记录 | 让住房和设备故障能被发现、排程、修复和记录 | 不提供 DIY 危险维修、电气燃气施工、合同争议策略、理赔策略或法律意见 |
@@ -2216,6 +2228,12 @@ human_infra/
 │   ├── prosthetic-limb-orthotic-fit-repair-continuity/
 │   ├── cpap-pap-device-mask-supply-power-continuity/
 │   ├── fall-detection-emergency-response-device-continuity/
+│   ├── private-well-water-testing-treatment-continuity/
+│   ├── household-water-treatment-filter-maintenance-continuity/
+│   ├── lead-service-line-lead-copper-drinking-water-continuity/
+│   ├── premise-plumbing-backflow-cross-connection-continuity/
+│   ├── septic-system-maintenance-sewage-backup-continuity/
+│   ├── basement-flooding-sump-pump-moisture-recovery-continuity/
 │   ├── urogenital-continuity/
 │   ├── urinary-tract-infection-pyelonephritis-urosepsis-continuity/
 │   ├── catheter-associated-uti-device-infection-continuity/
@@ -2414,5 +2432,6 @@ flowchart LR
 - 2026-07-01：新增第一百零四波 10 个植物、藻类、真菌与户外生物暴露执行连续性域，覆盖花粉过敏/哮喘、漆酚植物、有害藻华/蓝藻毒素、野生蘑菇、有毒植物、入侵物种、霉菌毒素、休闲水病原、贝类毒素和园林园艺户外工伤。
 - 2026-07-01：新增第一百零五波 6 个贴身设备与耗材执行连续性域，覆盖隐形眼镜卫生、助听设备维护、月经用品、失禁吸收用品、糖尿病治疗鞋/卸载和压迫用品。
 - 2026-07-01：新增第一百零六波 6 个个人辅助设备运行连续性域，覆盖眼镜修理替换、轮椅/代步车电池维修、手杖/拐杖/助行器维护、假肢矫形适配维修、PAP 设备耗材供电和跌倒检测紧急响应设备。
+- 2026-07-01：新增第一百零七波 6 个家庭水与污水执行连续性域，覆盖私人井水检测处理、家庭滤水维护、铅铜饮水管线、建筑回流交叉连接、化粪池污水回流和地下室进水潮湿恢复。
 
 完整记录见 [CHANGELOG.md](CHANGELOG.md)。

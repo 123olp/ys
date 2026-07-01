@@ -764,6 +764,12 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `prosthetic-limb-orthotic-fit-repair-continuity/` | 假肢和矫形器的适配、皮肤接口、疼痛、维修和替换等待决定身体-工具耦合是否能持续支持移动、工作和尊严 |
 | `cpap-pap-device-mask-supply-power-continuity/` | PAP 设备、面罩、管路、滤芯、供电、召回和供应商响应决定夜间呼吸治疗是否能稳定转化为日间恢复能力 |
 | `fall-detection-emergency-response-device-continuity/` | 跌倒检测、紧急按钮、传感器、充电、连接、通知和响应链决定跌倒后事件是否会被发现、转交和接住 |
+| `private-well-water-testing-treatment-continuity/` | 私人井水检测、处理、维护和替代水源决定家庭饮水、烹饪、婴幼儿照护和灾后恢复是否暴露在不可见污染中 |
+| `household-water-treatment-filter-maintenance-continuity/` | 家庭滤水器认证声明、滤芯更换和维护状态决定水处理能力是否匹配目标污染物，而不是制造错误安全感 |
+| `lead-service-line-lead-copper-drinking-water-continuity/` | 铅服务线、采样通知、腐蚀控制和替换计划决定饮水铅暴露是否长期侵蚀儿童发育、认知和饮水信任 |
+| `premise-plumbing-backflow-cross-connection-continuity/` | 建筑内部交叉连接、回流防护和压力事件决定使用点饮水、食品、医疗和清洁任务是否可能被污染逆流击穿 |
+| `septic-system-maintenance-sewage-backup-continuity/` | 化粪池维护、排水场、系统超载和污水回流决定家庭污水处理是否会转成饮水、卫生、住房和费用风险 |
+| `basement-flooding-sump-pump-moisture-recovery-continuity/` | 地下室进水、sump pump、断电、排水和潮湿恢复决定家庭设备、文件、空气质量和恢复空间是否会长期损耗 |
 | `household-cleaning-disinfection-pest-control-continuity/` | 家庭清洁、消毒和害虫控制决定居住空间是否在感染、过敏、毒性和虫害暴露中保持可恢复 |
 | `postal-parcel-delivery-pickup-continuity/` | 邮件、包裹、签收、自提和地址同步决定证件、药品、设备、账单和关键物资能否从外部系统抵达主体 |
 | `household-maintenance-repair-contractor-continuity/` | 家庭维修、承包商、报价、许可、投诉和记录决定住房、设备、水电、卫生和安全故障能否被可信修复 |
@@ -2341,6 +2347,17 @@ Source links:
 - https://www.cms.gov/training-education/medicare-learning-networkr-mln/compliance/medicare-provider-compliance-tips/cpap-devices-accessories
 - https://www.cdc.gov/falls/about/index.html
 - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpcd/classification.cfm?id=PJO
+- https://www.epa.gov/privatewells
+- https://www.cdc.gov/drinking-water/safety/guidelines-for-testing-well-water.html
+- https://www.epa.gov/privatewells/protect-your-homes-water
+- https://www.cdc.gov/drinking-water/about/about-home-water-treatment-systems.html
+- https://www.cdc.gov/drinking-water/prevention/about-choosing-home-water-filters.html
+- https://www.epa.gov/water-research/consumer-tool-identifying-point-use-and-pitcher-filters-certified-reduce-lead
+- https://www.epa.gov/dwreginfo/lead-and-copper-rule
+- https://www.epa.gov/septic/how-care-your-septic-system
+- https://www.epa.gov/septic/why-maintain-your-septic-system
+- https://www.epa.gov/sites/default/files/2015-09/documents/2007_05_18_disinfection_tcr_issuepaper_tcr_crossconnection-backflow.pdf
+- https://www.epa.gov/emergencies-iaq/flood-cleanup-protect-indoor-air-and-your-health
 
 ## 使用规则
 

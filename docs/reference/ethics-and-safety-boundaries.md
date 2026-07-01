@@ -1701,6 +1701,23 @@ Human Infra 不能被设计成更精密的压榨系统。
 - 不收集、复制、处理或要求验光处方、助行设备序列号、假肢/矫形器尺寸、PAP 压力设置、睡眠报告、跌倒日志、家庭地址、紧急联系人、供应商订单、医保/保险 ID、支付信息或其他 PHI。
 - 不替代验光、眼科、康复医学、物理治疗、矫形假肢、睡眠医学、DME 供应商、设备厂商、911/急救、照护者、Medicare/保险、监管机构或官方申诉渠道。
 
+## 家庭水与污水执行连续性边界
+
+`private-well-water-testing-treatment-continuity`、`household-water-treatment-filter-maintenance-continuity`、`lead-service-line-lead-copper-drinking-water-continuity`、`premise-plumbing-backflow-cross-connection-continuity`、`septic-system-maintenance-sewage-backup-continuity` 和 `basement-flooding-sump-pump-moisture-recovery-continuity` 关注家庭端水源、滤水、管线、回流、污水和水害恢复如何影响饮水、烹饪、卫生、住房、空气质量和家庭恢复空间，不是水质诊断、维修施工、灾后清理、保险索赔或个案住房入口。
+
+可以做：
+
+- 比较私人井检测、家庭滤水维护、铅铜管线、建筑回流防护、化粪池维护和地下室潮湿恢复如何影响饮水、烹饪、清洁、婴幼儿照护、住房可居住性和恢复时间。
+- 记录 EPA、CDC、地方卫生/环境部门、水务公司和灾害恢复资料中的对象、机制、变量、证据边界和禁止用途。
+- 设计 `water/wastewater state -> household dependency -> task -> continuity outcome` 变量链。
+
+不能做：
+
+- 不提供水质结果判断、饮水许可、滤水器购买、滤芯选择、井施工、消毒步骤、药剂配比、管道施工、回流装置安装、化粪池维修、泵抽频率个案、抽水操作、霉菌清理、防水施工、保险索赔、法律责任、房屋交易或个案住房建议。
+- 不判断某个水样、井、滤水器、铅服务线、管道、回流装置、化粪池、地下室、污水回流、霉菌、洪水、租房或保险事项应如何具体处理。
+- 不收集、复制、处理或要求家庭地址、井位、井深、检测报告、管线照片、设备序列号、滤芯订单、水费账单、物业记录、保险单、地下室照片、霉菌照片、租约、付款信息或其他敏感住房/健康资料。
+- 不替代 EPA、CDC、地方卫生/环境部门、水务公司、认证实验室、持证 plumber、septic professional、FEMA、保险、房东/物业、公共卫生、应急管理或法律渠道。
+
 ## 个人移动执行连续性边界
 
 `personal-vehicle-maintenance-recall-repair-continuity`、`fuel-ev-charging-refueling-access-continuity`、`parking-curb-access-towing-impound-continuity`、`walking-bicycling-micromobility-continuity`、`paratransit-nemt-access-continuity`、`taxi-rideshare-demand-response-mobility-continuity`、`transit-fare-payment-toll-account-continuity` 和 `multimodal-trip-planning-real-time-wayfinding-continuity` 关注车辆、补能、停车、主动出行、辅助医疗交通、按需交通、支付账户和实时导向如何把交通服务转化为主体真实到达能力，不是车辆维修、补能操作、交通规避、平台攻击、逃票或个案申诉入口。

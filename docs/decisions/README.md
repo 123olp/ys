@@ -124,3 +124,4 @@ Current decisions:
 - `0109-add-one-hundred-fourth-wave-plant-algae-fungi-outdoor-biological-exposure-domains.md`
 - `0110-add-one-hundred-fifth-wave-personal-device-consumable-continuity-domains.md`
 - `0111-add-one-hundred-sixth-wave-assistive-device-operational-continuity-domains.md`
+- `0112-add-one-hundred-seventh-wave-household-water-wastewater-execution-domains.md`

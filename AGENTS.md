@@ -541,6 +541,12 @@ human_infra/
     ├── prosthetic-limb-orthotic-fit-repair-continuity/ # 假肢矫形适配与维修连续性
     ├── cpap-pap-device-mask-supply-power-continuity/ # CPAP/PAP 设备面罩、耗材与供电连续性
     ├── fall-detection-emergency-response-device-continuity/ # 跌倒检测与紧急响应设备连续性
+    ├── private-well-water-testing-treatment-continuity/ # 私人井水检测与处理连续性
+    ├── household-water-treatment-filter-maintenance-continuity/ # 家庭水处理与滤水器维护连续性
+    ├── lead-service-line-lead-copper-drinking-water-continuity/ # 铅服务线与铅铜饮水连续性
+    ├── premise-plumbing-backflow-cross-connection-continuity/ # 建筑 plumbing 回流与交叉连接连续性
+    ├── septic-system-maintenance-sewage-backup-continuity/ # 化粪池维护与污水回流连续性
+    ├── basement-flooding-sump-pump-moisture-recovery-continuity/ # 地下室进水与潮湿恢复连续性
     ├── building-fire-life-safety-codes/ # 建筑消防与生命安全规范
     ├── manufacturing-repair-capacity/ # 制造与维修能力
     ├── public-procurement-contracting-capacity/ # 公共采购与合同能力
@@ -872,6 +878,7 @@ human_infra/
 - `domains/pollen-allergen-asthma-outdoor-activity-continuity/`、`domains/poison-ivy-oak-sumac-urushiol-exposure-continuity/`、`domains/harmful-algal-bloom-cyanotoxin-water-recreation-continuity/`、`domains/toxic-mushroom-foraging-poisoning-continuity/`、`domains/poisonous-plant-childcare-household-exposure-continuity/`、`domains/invasive-species-human-health-access-continuity/`、`domains/mycotoxin-food-crop-storage-safety-continuity/`、`domains/recreational-water-illness-beach-lake-access-continuity/`、`domains/shellfish-biotoxin-harmful-algal-bloom-food-continuity/` 和 `domains/landscaping-horticulture-worker-equipment-injury-continuity/` 负责植物、藻类、真菌与户外生物暴露执行连续性，覆盖花粉、漆酚植物、藻华毒素、野生蘑菇、有毒植物、入侵物种、霉菌毒素、休闲水病原、贝类毒素和园林园艺复合伤害，不提供诊疗、食用许可、现场鉴定、作业许可、水质判断、农药/除草剂操作或个体风险判断。
 - `domains/contact-lens-hygiene-eye-infection-continuity/`、`domains/hearing-aid-maintenance-battery-access-continuity/`、`domains/menstrual-product-access-safety-continuity/`、`domains/incontinence-absorbent-product-supply-dignity-continuity/`、`domains/diabetic-therapeutic-footwear-offloading-continuity/` 和 `domains/compression-garment-lymphedema-venous-continuity/` 负责贴身设备与耗材执行连续性，覆盖隐形眼镜卫生、助听设备维护、月经用品、失禁吸收用品、糖尿病治疗鞋/卸载和压迫用品，不提供验光配镜、助听验配维修、产品推荐、诊疗、护理操作、医保个案或保险申诉建议。
 - `domains/eyeglasses-prescription-repair-replacement-continuity/`、`domains/wheelchair-scooter-battery-repair-access-continuity/`、`domains/walker-cane-crutch-fit-maintenance-continuity/`、`domains/prosthetic-limb-orthotic-fit-repair-continuity/`、`domains/cpap-pap-device-mask-supply-power-continuity/` 和 `domains/fall-detection-emergency-response-device-continuity/` 负责个人辅助设备运行连续性，覆盖眼镜修理替换、轮椅/代步车电池维修、助行器具维护、假肢矫形适配维修、PAP 设备耗材供电和跌倒检测响应设备，不提供验光处方、设备处方、参数调整、康复训练、维修教程、品牌推荐、购买建议、医保/保险个案、急救分诊、911 策略或监控方案。
+- `domains/private-well-water-testing-treatment-continuity/`、`domains/household-water-treatment-filter-maintenance-continuity/`、`domains/lead-service-line-lead-copper-drinking-water-continuity/`、`domains/premise-plumbing-backflow-cross-connection-continuity/`、`domains/septic-system-maintenance-sewage-backup-continuity/` 和 `domains/basement-flooding-sump-pump-moisture-recovery-continuity/` 负责家庭水与污水执行连续性，覆盖私人井水检测处理、家庭滤水维护、铅铜饮水管线、建筑回流交叉连接、化粪池污水回流和地下室进水潮湿恢复，不提供水质结果判断、饮水许可、滤水器购买、井施工、管道施工、回流装置安装、化粪池维修、抽水操作、霉菌清理、保险索赔、法律责任或个案住房建议。
 - `domains/building-fire-life-safety-codes/` 负责建筑规范、消防规范、生命安全、疏散、烟雾报警、无障碍和韧性改造。
 - `domains/manufacturing-repair-capacity/` 负责制造、维修、维护、备件、质量、本地生产和关键设备恢复能力。
 - `domains/public-procurement-contracting-capacity/` 负责公共采购、合同、供应商管理、应急采购、透明度和交付验收。
@@ -1213,3 +1220,4 @@ human_infra/
 - 2026-07-01：新增第一百零四波 10 个植物、藻类、真菌与户外生物暴露执行连续性域，把自然生物暴露、食品/水域毒素和户外维护伤害纳入主体执行层。
 - 2026-07-01：新增第一百零五波 6 个贴身设备与耗材执行连续性域，把隐形眼镜、助听设备、月经用品、失禁用品、糖尿病治疗鞋/卸载和压迫用品纳入主体日常执行接口。
 - 2026-07-01：新增第一百零六波 6 个个人辅助设备运行连续性域，把眼镜、轮椅/代步车、助行器具、假肢矫形、PAP 设备和跌倒检测响应设备纳入身体-工具运行接口。
+- 2026-07-01：新增第一百零七波 6 个家庭水与污水执行连续性域，把私人井水、家庭滤水、铅铜管线、建筑回流、化粪池和地下室进水潮湿恢复纳入家庭端饮水卫生住房接口。
