@@ -517,3 +517,4 @@ human_infra/
 - 2026-07-02：新增 `domains/_possibility-space-control/`，按可能性空间控制力对 990 个正式研究域进行 C1-C6 根本性分级。
 - 2026-07-02：新增 C1-C6 物理分级目录，并把 990 个正式研究域移动到对应 tier；`classification.tsv` 新增 `physical_path` 作为真实路径索引。
 - 2026-07-02：新增 `tools/update_domain_doc_contracts.py`，为 990 个正式研究域的 README/AGENTS 生成标准域信息、Human Infra 追问和维护契约块。
+- 2026-07-02：扩展 `tools/update_domain_doc_contracts.py`，为 990 个正式研究域补齐研究推进骨架、变量接口、证据入口、最小产出和代理执行流程。

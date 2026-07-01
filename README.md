@@ -2178,6 +2178,7 @@ flowchart LR
 - 2026-07-02：新增 `domains/_possibility-space-control/`，按可能性空间控制力对 990 个正式研究域进行 C1-C6 根本性分级。
 - 2026-07-02：新增 C1-C6 物理分级目录，并把 990 个正式研究域移动到对应 tier；`classification.tsv` 新增 `physical_path` 作为真实路径索引。
 - 2026-07-02：新增 `tools/update_domain_doc_contracts.py`，并为 990 个正式研究域的 README/AGENTS 补齐标准域信息与维护契约块。
+- 2026-07-02：扩展研究域文档生成器，为 990 个正式研究域补齐分层研究推进骨架与代理执行流程块。
 - 2026-06-20：从 Biocat 单项目重组为 Human Infra 总项目；Biocat 迁入 `domains/c1-boundary-rewriting/longevity-evidence/`；新增去具身中枢生命系统与记忆编辑两个研究域；补齐 Docs-as-Code 知识仓库根文件、文档分层、协作模板和结构检查脚本。
 - 2026-06-22：新增 `future-waiting` 子域和“度规红移固有时差分路径（黑洞等待室）”未来等待路径。
 - 2026-06-23：新增 GitHub Actions 远程质量门禁，统一运行本地 `make check`。

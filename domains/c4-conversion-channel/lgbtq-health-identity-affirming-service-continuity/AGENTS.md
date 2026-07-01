@@ -29,6 +29,30 @@
 - 不绕过父级 C1-C6 物理目录直接在 `domains/` 根目录新增正式研究域。
 <!-- domain-agent-contract:end -->
 
+<!-- domain-agent-workflow:start -->
+## 代理执行流程
+
+1. 先读本目录 `README.md`，确认研究对象、分级理由、Human Infra 追问和使用边界。
+2. 再读父级层目录的 `README.md` 与 `AGENTS.md`，确认 `C4` 层的根本性标尺和同层相邻域。
+3. 需要移动、拆分、合并或重命名本域时，先更新 `domains/_possibility-space-control/classification.tsv`，再运行 `python3 tools/update_domain_doc_contracts.py`。
+4. 新增资料时先落到 Source Signals 或 Source Cards；只有完成证据边界复核后，才沉淀为稳定叙述。
+5. 输出结论时必须同时写清：它影响什么变量、通过什么机制、证据等级是什么、不能推出什么。
+
+## 补齐优先级
+
+- P1 Source trail：补来源、日期、版本、作者、原始链接和本地路径。
+- P2 Variable map：补输入变量、中间机制、状态变量、风险变量和输出指标。
+- P3 Claim-Evidence Matrix：补主张、证据、适用范围、不确定性、反例和禁用外推。
+- P4 Relation links：补上游依赖、下游输出、同层相邻域和可能的迁移路径。
+- P5 Reader path：补新手入口、术语、最小阅读顺序和下一步研究任务。
+
+## 验证要求
+
+- 批量更新域文档后，必须运行 `python3 tools/update_domain_doc_contracts.py` 并确认第二次运行更新数为 0。
+- 结构或链接变化后，必须运行 `make check`。
+- 提交前必须运行 `git diff --check`，避免 Markdown 空白和格式错误。
+- 不得把 `web/`、临时下载、个人资料或未核验论文缓存混入域文档提交。
+<!-- domain-agent-workflow:end -->
 
 本目录维护 LGBTQ 健康、身份承认与肯定性服务连续性域。它是 Human Infra 的“身份承认和反歧视服务入口”层，负责健康、心理、家庭、学校、工作、住房、公共服务和隐私边界如何影响主体持续性。
 
