@@ -139,3 +139,4 @@ Current decisions:
 - `0124-add-one-hundred-nineteenth-wave-pediatric-prevention-screening-domains.md`
 - `0125-add-one-hundred-twentieth-wave-youth-online-health-platform-risk-domains.md`
 - `0126-add-one-hundred-twenty-first-wave-public-benefits-redetermination-domains.md`
+- `0127-add-one-hundred-twenty-second-wave-child-nutrition-program-execution-domains.md`

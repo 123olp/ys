@@ -572,6 +572,12 @@
 - `school-enrollment-attendance-continuity/`：学校入学与出勤连续性，整理入学、转学、出勤、长期缺勤、无家可归学生保护和学籍交接。
 - `special-education-iep-504-accommodation-continuity/`：特殊教育、IEP 与 504 便利连续性，整理 IDEA、IEP、Section 504、合理便利、相关服务、评估和转衔。
 - `school-meals-nutrition-access-continuity/`：校餐与营养可及连续性，整理校餐、早餐、午餐、免费/减价资格、CEP、暑期餐食和特殊饮食安排。
+- `summer-ebt-sun-bucks-school-break-food-continuity/`：Summer EBT / SUN Bucks 与学校假期食物福利连续性，整理 benefit issuance、家庭通知、EBT 兑换和学校日历断点。
+- `summer-food-service-program-site-access-continuity/`：SFSP 暑期供餐站点可达连续性，整理开放站点、移动供餐、非聚集供餐、地点、时段和交通摩擦。
+- `cacfp-child-adult-care-food-program-continuity/`：CACFP 儿童与成人照护餐食项目连续性，整理托育、Head Start、课后照护、成人日间服务、报销、sponsor 和 meal pattern。
+- `afterschool-snack-supper-meal-continuity/`：课后点心、supper 与 afterschool meal 连续性，整理放学后餐食、活动时段、接送窗口和项目运行。
+- `special-diet-allergy-school-meal-accommodation-continuity/`：特殊饮食、过敏与校餐便利连续性，整理残障饮食便利、过敏沟通、菜单替代和交叉接触风险。
+- `school-meal-debt-unpaid-balance-stigma-continuity/`：校餐欠费、未付余额与污名连续性，整理 meal debt、余额通知、替代餐、追收政策和儿童尊严。
 - `school-health-services-chronic-condition-continuity/`：学校健康服务与慢性病连续性，整理学校护士、慢病支持、用药、免疫记录、急救计划和返校支持。
 - `school-transportation-safe-routes-continuity/`：通学交通与安全路线连续性，整理校车、步行骑行安全路线、交通资格、无障碍交通和距离成本。
 - `school-discipline-exclusion-restraint-continuity/`：学校纪律、排除与约束隔离连续性，整理停学、开除、课堂移除、约束隔离、复学和纪律民权数据。

@@ -1723,6 +1723,25 @@ Human Infra 不能被设计成更精密的压榨系统。
 - 不收集、复制、处理或要求学生姓名、住址、路线、定位、聊天记录、教育记录、健康记录、残障记录、心理危机资料、纪律记录、家庭收入、移民身份或事件细节。
 - 不替代学校、学区、州教育机构、家长、学生、特殊教育团队、学校护士、医生、心理健康服务、儿童保护、OCR、StopBullying.gov、交通部门、律师、危机服务、执法、急救或官方投诉渠道。
 
+## 儿童营养项目执行连续性边界
+
+`summer-ebt-sun-bucks-school-break-food-continuity`、`summer-food-service-program-site-access-continuity`、`cacfp-child-adult-care-food-program-continuity`、`afterschool-snack-supper-meal-continuity`、`special-diet-allergy-school-meal-accommodation-continuity` 和 `school-meal-debt-unpaid-balance-stigma-continuity` 关注儿童营养项目如何在学校假期、暑期站点、照护场所、放学后时段、特殊饮食安全和欠费处理上维持儿童能量、注意力、尊严和家庭预算缓冲，不是个人申请、站点推荐、饮食处方、过敏诊断、校餐投诉、债务谈判、法律、医疗或教育个案入口。
+
+可以做：
+
+- 整理 USDA FNS Child Nutrition、Summer EBT / SUN Bucks、SFSP、CACFP、Afterschool Meals、Special Dietary Needs、Unpaid Meal Charges 和学校公开政策资料中的机制、对象、变量和边界。
+- 比较福利发放、站点可达、照护场所餐食、课后餐食、meal pattern、家庭通知、特殊饮食便利、交叉接触、欠费通知和污名风险如何影响儿童营养、学习参与、家庭现金流和未来选择权。
+- 记录儿童隐私、教育记录、健康/过敏资料、家庭收入、EBT/PIN、餐食账户、照护场所记录、学校责任、反歧视、反污名和个案建议边界，服务后续资料卡片与变量建模。
+
+不能做：
+
+- 不提供个人 Summer EBT、SFSP、CACFP、课后餐、特殊饮食、过敏校餐便利、校餐欠费、校餐申请、福利申请、站点选择、接送路线、投诉、申诉、债务处理、法律、医疗、教育或家庭个案建议。
+- 不判断某个儿童、家庭、学校、站点、照护机构、sponsor、餐食账户、过敏声明、饮食安排、欠费处理或替代餐是否合规、适合、违法、歧视或应被投诉。
+- 不生成个人申请、医学声明、过敏行动计划、菜单替代方案、投诉、申诉、债务谈判、学校沟通、监管举报、法律文件、医疗表格或个案策略。
+- 不收集、复制、处理或要求学生姓名、学校、住址、路线、收入、移民身份、EBT/PIN、meal account、健康记录、过敏记录、医学声明、照护出勤记录、欠费余额、家庭账单或任何可识别儿童资料。
+- 不替代 USDA FNS、州儿童营养机构、学校/学区、CACFP sponsor、SFSP sponsor、照护机构、家长、学生、医疗专业人员、注册营养师、过敏专科、儿童保护、律师、监管机构或官方申诉/求助渠道。
+- 不把儿童营养缺口、欠费余额、特殊饮食需求、站点不可达或家庭无法完成申请归因于儿童、家长、学校工作人员或个体道德失败。
+
 ## 高等教育学生生命周期连续性边界
 
 `postsecondary-admissions-transfer-articulation-continuity`、`student-financial-aid-grant-scholarship-continuity`、`academic-advising-degree-progress-continuity`、`campus-basic-needs-student-support-continuity`、`campus-disability-accommodations-accessibility-continuity`、`campus-mental-health-crisis-student-support-continuity`、`campus-safety-title-ix-clery-continuity` 和 `international-student-sevis-status-continuity` 关注高等教育学生生命周期中的学习路径、现金流、学位进度、基本需求、残障参与、心理恢复、校园安全和国际身份报告如何支撑能力资本形成，不是个人申请、转学、资助、选课、住宿、残障便利、心理危机、Title IX、校园安全、SEVIS、移民、税务、医疗或法律服务入口。

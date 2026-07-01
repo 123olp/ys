@@ -755,6 +755,12 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `school-enrollment-attendance-continuity/` | 入学、转学和出勤决定儿童是否能稳定获得学习轮次、校内服务、保护性观察和未来教育路径 |
 | `special-education-iep-504-accommodation-continuity/` | IDEA、IEP、Section 504 和便利决定残障学生功能需求是否能被转化为可执行支持和持续参与 |
 | `school-meals-nutrition-access-continuity/` | 校餐、早餐、午餐、CEP 和暑期餐食决定儿童每日能量、注意力、健康公平和家庭预算缓冲 |
+| `summer-ebt-sun-bucks-school-break-food-continuity/` | Summer EBT / SUN Bucks 决定学校假期中儿童食物福利、家庭通知和 EBT 兑换是否接续学校日营养 |
+| `summer-food-service-program-site-access-continuity/` | SFSP 暑期供餐站点决定学校关闭后，开放站点、时段、交通和现场摩擦是否让食物真实可达 |
+| `cacfp-child-adult-care-food-program-continuity/` | CACFP 决定托育和照护场所能否把餐食、报销、meal pattern 和 attendance 转成稳定照护日营养 |
+| `afterschool-snack-supper-meal-continuity/` | 课后点心和晚餐决定放学后监督、学习支持和家庭晚间资源压力是否被营养输入接住 |
+| `special-diet-allergy-school-meal-accommodation-continuity/` | 特殊饮食和过敏校餐便利决定安全进食、合理便利和供餐沟通是否能避免排除或急性风险 |
+| `school-meal-debt-unpaid-balance-stigma-continuity/` | 校餐欠费和 unpaid meal charges 决定儿童营养、尊严、家庭账单压力和学校参与是否被债务污名切断 |
 | `school-health-services-chronic-condition-continuity/` | 学校健康服务和慢性病支持决定健康条件是否会转化为缺勤、急性风险和家庭照护中断 |
 | `school-transportation-safe-routes-continuity/` | 校车和安全通学路线决定学生是否能可靠、安全、低摩擦地到校并保留学习时间 |
 | `school-discipline-exclusion-restraint-continuity/` | 停学、开除、约束隔离和复学决定行为事件是否会变成长期学习排除和制度尾部风险 |
@@ -1108,6 +1114,7 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | ED / NCES / McKinney-Vento attendance and enrollment resources | 提示入学、出勤、长期缺勤、转学和无家可归学生保护是儿童学习轮次与服务入口的连续性条件 |
 | IDEA / OSEP / OCR Section 504 resources | 提示残障学生支持需要把功能需求转化为 IEP、504、相关服务、便利和程序保障 |
 | USDA FNS school meals resources | 提示校餐、早餐、午餐、CEP 和暑期餐食是儿童营养、注意力与家庭资源缓冲的学校基础设施 |
+| USDA FNS Summer EBT / SFSP / CACFP / Afterschool Meals / Unpaid Meal Charges resources | 提示儿童营养项目需要把假期福利、暑期站点、照护场所餐食、课后餐食、特殊饮食便利和欠费处理拆成独立执行链 |
 | CDC school health and chronic condition resources | 提示学校护士、慢病支持、用药、免疫记录和急救计划连接健康安全与学习日连续性 |
 | FHWA / NHTSA school transportation safety resources | 提示校车和安全通学路线把交通可靠性、伤害风险、到校时间和家庭时间成本连接起来 |
 | CRDC / OCR school discipline resources | 提示停学、开除、课堂移除、约束隔离和复学必须进入民权、残障和学习日损失审查 |

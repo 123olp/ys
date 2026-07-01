@@ -792,6 +792,12 @@ flowchart TD
     H --> SEAC[school-enrollment-attendance-continuity<br/>学校入学 / 出勤]
     H --> SEI504[special-education-iep-504-accommodation-continuity<br/>特殊教育 / IEP 504]
     H --> SMNAC[school-meals-nutrition-access-continuity<br/>校餐 / 营养可及]
+    SMNAC --> SEBSC[summer-ebt-sun-bucks-school-break-food-continuity<br/>Summer EBT / 假期食物福利]
+    SMNAC --> SFSP[summer-food-service-program-site-access-continuity<br/>SFSP / 暑期供餐站点]
+    SMNAC --> CACFP[cacfp-child-adult-care-food-program-continuity<br/>CACFP / 照护场所餐食]
+    SMNAC --> ASSMC[afterschool-snack-supper-meal-continuity<br/>课后点心晚餐]
+    SMNAC --> SDASMAC[special-diet-allergy-school-meal-accommodation-continuity<br/>特殊饮食 / 过敏便利]
+    SMNAC --> SMDUBSC[school-meal-debt-unpaid-balance-stigma-continuity<br/>校餐欠费 / 污名]
     H --> SHSCC[school-health-services-chronic-condition-continuity<br/>学校健康服务 / 慢病]
     H --> STSRC[school-transportation-safe-routes-continuity<br/>通学交通 / 安全路线]
     H --> SDERC[school-discipline-exclusion-restraint-continuity<br/>纪律排除 / 约束隔离]
@@ -1302,6 +1308,12 @@ flowchart TD
 | [School Enrollment Attendance Continuity](domains/school-enrollment-attendance-continuity/README.md) | 入学、转学、出勤、长期缺勤、无家可归学生保护和学籍交接 | 让儿童稳定进入学校、保持学习轮次并连接校内服务 | 不提供个人入学、转学、出勤申诉、truancy、学区、儿童福利或法律建议 |
 | [Special Education IEP 504 Accommodation Continuity](domains/special-education-iep-504-accommodation-continuity/README.md) | IDEA、IEP、Section 504、合理便利、相关服务、评估和转衔 | 把功能限制转化为可执行支持、环境适配和持续学习参与 | 不提供个人 IEP、504、评估申请、申诉、安置、诊断、医疗或教育法律建议 |
 | [School Meals Nutrition Access Continuity](domains/school-meals-nutrition-access-continuity/README.md) | 校餐、早餐、午餐、免费/减价资格、CEP、暑期餐食和特殊饮食安排 | 维持儿童能量、注意力、营养可靠性和家庭预算缓冲 | 不提供个人校餐申请、福利申请、营养处方、过敏管理或医疗建议 |
+| [Summer EBT SUN Bucks School Break Food Continuity](domains/summer-ebt-sun-bucks-school-break-food-continuity/README.md) | Summer EBT、SUN Bucks、学校假期食物福利、EBT 发放、家庭通知和暑期食物缺口 | 把学校日历断点转化为可携带购买力，缓冲儿童营养、家庭现金流和照护者时间 | 不提供个人申请、资格判断、EBT 操作、申诉、重复领取或福利策略 |
+| [Summer Food Service Program Site Access Continuity](domains/summer-food-service-program-site-access-continuity/README.md) | SFSP、暑期供餐站点、开放站点、移动供餐、非聚集供餐、站点查找和交通距离 | 让学校停课期间的营养服务在社区空间中真实可达 | 不推荐站点、规划路线、判断资格、替代监护或处理实时儿童位置 |
+| [CACFP Child Adult Care Food Program Continuity](domains/cacfp-child-adult-care-food-program-continuity/README.md) | CACFP、托育餐食、成人日间服务餐食、sponsor、报销、菜单记录和 meal pattern | 把照护场所餐食建模为儿童发展、成人参与和机构现金流基础设施 | 不提供 claim、菜单、合规规避、审计、采购、营养处方或机构咨询 |
+| [Afterschool Snack Supper Meal Continuity](domains/afterschool-snack-supper-meal-continuity/README.md) | 课后点心、supper、at-risk afterschool meals、NSLP snacks、接送时段和活动参与 | 接住放学后到睡前之间的营养、监督照护和家庭工作时间断点 | 不推荐课后项目、设计菜单、判断资格、规划接送或提供项目运营建议 |
+| [Special Diet Allergy School Meal Accommodation Continuity](domains/special-diet-allergy-school-meal-accommodation-continuity/README.md) | 特殊饮食、食物过敏、残障饮食便利、菜单替代、交叉接触和学校沟通 | 让儿童不用在进食安全和到校参与之间二选一 | 不提供诊断、饮食处方、菜单替代、便利申请、急救计划、责任或法律建议 |
+| [School Meal Debt Unpaid Balance Stigma Continuity](domains/school-meal-debt-unpaid-balance-stigma-continuity/README.md) | 校餐欠费、未付余额、余额通知、替代餐、追收政策和污名 | 防止小额餐费摩擦切断营养输入、学校归属和家庭现金流 | 不提供债务谈判、付款策略、资格申请、投诉文案、法律建议或追收规避 |
 | [School Health Services Chronic Condition Continuity](domains/school-health-services-chronic-condition-continuity/README.md) | 学校护士、慢病支持、用药、免疫记录、急救计划和返校支持 | 让健康条件进入学校运行系统，降低缺勤、急性风险和家庭中断 | 不提供诊断、用药、急救、返校许可、疫苗判断或医疗建议 |
 | [School Transportation Safe Routes Continuity](domains/school-transportation-safe-routes-continuity/README.md) | 校车、通学路线、步行骑行安全、交通资格、无障碍交通和距离成本 | 让到校路径可靠、安全、低摩擦，保护学习时间和家庭时间 | 不提供个人路线、驾驶、校车资格、事故责任、道路工程或法律建议 |
 | [School Discipline Exclusion Restraint Continuity](domains/school-discipline-exclusion-restraint-continuity/README.md) | 停学、开除、课堂移除、约束隔离、复学和纪律民权数据 | 防止排除性纪律把行为、残障、创伤和社会风险转成长尾断裂 | 不提供个人纪律申诉、民权投诉、行为危机、法律、教育或医疗建议 |
@@ -2043,6 +2055,12 @@ human_infra/
 │   ├── street-tree-branch-hazard-shade-maintenance-continuity/
 │   ├── storm-drain-catch-basin-local-flooding-continuity/
 │   ├── grocery-retail-food-store-access-continuity/
+│   ├── summer-ebt-sun-bucks-school-break-food-continuity/
+│   ├── summer-food-service-program-site-access-continuity/
+│   ├── cacfp-child-adult-care-food-program-continuity/
+│   ├── afterschool-snack-supper-meal-continuity/
+│   ├── special-diet-allergy-school-meal-accommodation-continuity/
+│   ├── school-meal-debt-unpaid-balance-stigma-continuity/
 │   ├── snap-ebt-redemption-retailer-payment-continuity/
 │   ├── snap-eligibility-recertification-abawd-continuity/
 │   ├── wic-benefit-redemption-infant-maternal-nutrition-continuity/
@@ -2684,5 +2702,6 @@ flowchart LR
 - 2026-07-01：新增第一百一十九波 6 个儿科预防与早期筛查连续性域，覆盖新生儿筛查结果随访、儿童健康体检预防照护、儿童免疫排程记录、发育行为筛查转介、儿童铅筛查环境随访和特殊健康需求儿童照护协调。
 - 2026-07-01：新增第一百二十波 6 个儿童青少年线上健康与平台风险连续性域，覆盖青少年社交媒体心理健康、线上安全设计与平台治理、网络霸凌骚扰举报、儿童线上性剥削与 sextortion 举报、游戏内购/loot box/暗黑模式和儿童隐性广告/网红营销。
 - 2026-07-01：新增第一百二十一波 6 个公共福利资格续期、覆盖转换与申诉执行连续性域，覆盖 SNAP 资格/续期/ABAWD、Medicaid/CHIP 续期重判、Medicare 参保覆盖转换、SSI/SSDI 复审申诉、TANF 现金援助工作支持和失业保险申领/身份核验/申诉支付连续性。
+- 2026-07-01：新增第一百二十二波 6 个儿童营养项目执行连续性域，覆盖 Summer EBT / SUN Bucks、SFSP 暑期供餐站点、CACFP、课后点心晚餐、特殊饮食/过敏校餐便利和校餐欠费污名。
 
 完整记录见 [CHANGELOG.md](CHANGELOG.md)。

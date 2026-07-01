@@ -250,6 +250,12 @@ human_infra/
     ├── school-enrollment-attendance-continuity/ # 学校入学与出勤连续性
     ├── special-education-iep-504-accommodation-continuity/ # 特殊教育、IEP 与 504 便利连续性
     ├── school-meals-nutrition-access-continuity/ # 校餐与营养可及连续性
+    ├── summer-ebt-sun-bucks-school-break-food-continuity/ # Summer EBT / SUN Bucks 假期食物福利连续性
+    ├── summer-food-service-program-site-access-continuity/ # SFSP 暑期供餐站点可达连续性
+    ├── cacfp-child-adult-care-food-program-continuity/ # CACFP 照护场所餐食连续性
+    ├── afterschool-snack-supper-meal-continuity/ # 课后点心晚餐连续性
+    ├── special-diet-allergy-school-meal-accommodation-continuity/ # 特殊饮食与过敏校餐便利连续性
+    ├── school-meal-debt-unpaid-balance-stigma-continuity/ # 校餐欠费未付余额与污名连续性
     ├── school-health-services-chronic-condition-continuity/ # 学校健康服务与慢病连续性
     ├── school-transportation-safe-routes-continuity/ # 通学交通与安全路线连续性
     ├── school-discipline-exclusion-restraint-continuity/ # 学校纪律、排除与约束隔离连续性
@@ -1107,6 +1113,7 @@ human_infra/
 - `domains/auto-insurance-liability-collision-claims-continuity/`、`domains/homeowners-renters-property-insurance-claims-continuity/`、`domains/flood-insurance-nfip-claims-continuity/`、`domains/catastrophe-wind-wildfire-earthquake-insurance-continuity/`、`domains/disability-income-insurance-claim-continuity/`、`domains/long-term-care-insurance-benefit-activation-continuity/`、`domains/travel-insurance-trip-protection-claims-continuity/` 和 `domains/personal-liability-umbrella-insurance-defense-continuity/` 负责汽车保险理赔、房主租客财产理赔、洪水/NFIP 理赔、风暴野火地震巨灾保险、残障收入保险理赔、长期照护福利启动、旅行保险理赔和个人责任伞形保险防御这些个人保险、财产责任、灾害与理赔执行连续性条件。
 - `domains/citizenship-nationality-statelessness-continuity/`、`domains/immigration-status-residency-work-authorization-continuity/`、`domains/asylum-refugee-protection-status-continuity/`、`domains/detention-custody-confinement-status-continuity/`、`domains/civil-commitment-involuntary-treatment-rights-continuity/`、`domains/court-notice-service-process-default-judgment-continuity/` 和 `domains/criminal-record-relief-collateral-consequences-continuity/` 负责公民国籍无国籍、移民居留工作授权、庇护难民保护、拘押羁押监管状态、非自愿治疗权利、法院通知缺席判决和犯罪记录附带后果这些法律状态与强制程序连续性条件。
 - `domains/school-enrollment-attendance-continuity/`、`domains/special-education-iep-504-accommodation-continuity/`、`domains/school-meals-nutrition-access-continuity/`、`domains/school-health-services-chronic-condition-continuity/`、`domains/school-transportation-safe-routes-continuity/`、`domains/school-discipline-exclusion-restraint-continuity/`、`domains/school-mental-health-counseling-support-continuity/` 和 `domains/school-climate-bullying-violence-prevention-continuity/` 负责入学出勤、特殊教育 IEP/504、校餐营养、学校健康服务、通学安全、纪律排除约束、学校心理健康、学校气候欺凌暴力预防这些学校服务连续性条件。
+- `domains/summer-ebt-sun-bucks-school-break-food-continuity/`、`domains/summer-food-service-program-site-access-continuity/`、`domains/cacfp-child-adult-care-food-program-continuity/`、`domains/afterschool-snack-supper-meal-continuity/`、`domains/special-diet-allergy-school-meal-accommodation-continuity/` 和 `domains/school-meal-debt-unpaid-balance-stigma-continuity/` 负责 Summer EBT/SUN Bucks、SFSP 暑期供餐站点、CACFP、课后点心晚餐、特殊饮食/过敏校餐便利和校餐欠费污名这些儿童营养项目执行连续性条件。
 - `domains/postsecondary-admissions-transfer-articulation-continuity/`、`domains/student-financial-aid-grant-scholarship-continuity/`、`domains/academic-advising-degree-progress-continuity/`、`domains/campus-basic-needs-student-support-continuity/`、`domains/campus-disability-accommodations-accessibility-continuity/`、`domains/campus-mental-health-crisis-student-support-continuity/`、`domains/campus-safety-title-ix-clery-continuity/` 和 `domains/international-student-sevis-status-continuity/` 负责高等教育入学转学衔接、学生资助奖助学金、学业指导学位进度、校园基本需求、校园残障便利、校园心理危机支持、校园安全 Title IX/Clery 和国际学生 SEVIS 身份连续性这些高等教育学生生命周期条件。
 - `domains/email-account-recovery-continuity/`、`domains/phone-number-sim-portability-account-security-continuity/`、`domains/mfa-passkey-credential-recovery-continuity/`、`domains/password-manager-secret-vault-continuity/`、`domains/cloud-backup-file-sync-data-portability-continuity/`、`domains/messaging-contact-graph-portability-continuity/`、`domains/domain-dns-web-presence-continuity/` 和 `domains/platform-account-suspension-appeals-continuity/` 负责邮箱账号恢复、手机号 SIM 携转安全、MFA/passkey 凭证恢复、密码管理器密钥库、云备份文件同步数据可携带、消息联系人图谱可携带、域名 DNS Web 存在和平台账号停权申诉这些数字账户与通信可达连续性条件。
 - `domains/personal-computing-device-lifecycle-repair-continuity/`、`domains/home-network-router-iot-security-continuity/`、`domains/software-supply-chain-dependency-provenance-continuity/`、`domains/software-update-vulnerability-patch-continuity/`、`domains/open-source-maintainer-sustainability-continuity/`、`domains/pki-certificate-cryptographic-trust-continuity/`、`domains/cloud-service-exit-interoperability-continuity/` 和 `domains/api-platform-dependency-runtime-continuity/` 负责个人计算设备生命周期维修、家庭网络路由器 IoT 安全、软件供应链来源证明、软件更新补丁、开源维护者可持续、PKI 证书密码信任、云服务退出互操作和 API 平台运行时依赖这些软件、设备与信任连续性条件。
@@ -1219,6 +1226,7 @@ human_infra/
 - 2026-07-01：新增第 118 波围产期连续性域，覆盖产前照护接入风险筛查、产后恢复随访、哺乳泵奶支持、早产 NICU 出院转接、妊娠丧失悲伤支持和围产期心理健康筛查转介。
 - 2026-07-01：新增第 119 波儿科预防与早期筛查连续性域，覆盖新生儿筛查结果随访、儿童健康体检预防照护、儿童免疫排程记录、发育行为筛查转介、儿童铅筛查环境随访和特殊健康需求儿童照护协调。
 - 2026-07-01：新增第 120 波儿童青少年线上健康与平台风险连续性域，覆盖青少年社交媒体心理健康、线上安全设计与平台治理、网络霸凌骚扰举报、儿童线上性剥削与 sextortion 举报、游戏内购/loot box/暗黑模式和儿童隐性广告/网红营销。
+- 2026-07-01：新增第 122 波儿童营养项目执行连续性域，覆盖 Summer EBT/SUN Bucks、SFSP 暑期供餐站点、CACFP、课后点心晚餐、特殊饮食/过敏校餐便利和校餐欠费污名。
 - 2026-06-30：新增第四十一波 6 个收入、税务、社保、退休、失业和工伤权益记录连续性域，覆盖工资雇佣记录、税务申报记录、社会保险收入与福利记录、退休养老金计划、失业保险工资记录和工伤职业伤害权益。
 - 2026-06-30：新增第四十波 6 个资格证明、证照与能力可携带连续性域，覆盖教育记录核验、职业证照认证、技能胜任力凭证、继续教育再认证、学徒制工作中学习和可验证凭证钱包互操作。
 - 2026-06-30：新增第三十九波 6 个算法化准入、筛查与资格连续性域，覆盖信用与消费者报告、租房筛查、背景记录筛查、算法招聘、保险算法评分和公共福利自动资格系统。

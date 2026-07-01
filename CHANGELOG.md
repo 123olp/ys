@@ -4,6 +4,7 @@ All notable repository structure changes are recorded here.
 
 ## 2026-07-01
 
+- Added the one-hundred-twenty-second wave of child nutrition program execution-continuity domains, covering Summer EBT / SUN Bucks school-break food continuity, Summer Food Service Program site access, CACFP child/adult care food program continuity, afterschool snack/supper meals, special diet/allergy school meal accommodations, and school meal debt/unpaid-balance stigma.
 - Added the one-hundred-twentieth wave of youth online health and platform-risk continuity domains, covering youth social media mental health, youth online safety-by-design platform governance, cyberbullying/online harassment reporting, online child sexual exploitation/sextortion reporting, gaming loot boxes/in-app purchase dark patterns, and child stealth advertising/influencer marketing.
 - Added the one-hundred-nineteenth wave of pediatric prevention and early-screening continuity domains, covering newborn screening result follow-up, well-child preventive care, childhood immunization schedule/record continuity, developmental/behavioral screening referral, pediatric lead screening environmental follow-up, and children/youth special health care needs care coordination.
 - Added the one-hundred-eighteenth wave of perinatal-continuity domains, covering prenatal care access and risk screening, postpartum recovery and follow-up, lactation/breastfeeding support, preterm birth/NICU discharge transition, pregnancy loss/stillbirth bereavement continuity, and perinatal mental-health screening/referral continuity.

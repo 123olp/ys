@@ -466,6 +466,12 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 儿童必须能稳定进入学校并持续出勤 | `school-enrollment-attendance-continuity/` | 入学、转学、出勤、长期缺勤、无家可归学生保护、学籍交接 | 入学失败、长期缺勤或学籍交接断裂会削弱学习轮次、校内服务入口和未来教育路径 |
 | 残障学生必须获得可执行支持 | `special-education-iep-504-accommodation-continuity/` | IDEA、IEP、Section 504、合理便利、相关服务、评估、转衔 | 功能限制若没有转化为学校支持，会变成学习排除、纪律风险、家庭负担和长期能力损耗 |
 | 学校餐食必须支撑每日营养 | `school-meals-nutrition-access-continuity/` | 校餐、早餐、午餐、免费/减价资格、CEP、暑期餐食、特殊饮食 | 饥饿、营养缺口、餐食债务或假期断点会削弱注意力、健康恢复和家庭资源韧性 |
+| 学校假期食物福利必须接续学校餐食 | `summer-ebt-sun-bucks-school-break-food-continuity/` | Summer EBT / SUN Bucks、学校假期、benefit issuance、家庭通知、EBT 兑换 | 学校关闭后，福利发放、通知或兑换失败会把假期变成儿童营养和家庭预算断点 |
+| 暑期供餐站点必须真实可达 | `summer-food-service-program-site-access-continuity/` | SFSP、开放站点、站点定位、供餐时段、交通、现场规则 | 站点存在但不可达、时段不清或现场摩擦过高，会让暑期供餐停留在账面服务 |
+| 照护场所餐食必须可报销可执行 | `cacfp-child-adult-care-food-program-continuity/` | CACFP、照护场所餐食、sponsor、meal pattern、claim、attendance | 托育和照护日中的餐食执行失败会把儿童营养、照护质量和家庭工作连续性同时切断 |
+| 放学后餐食必须接住课后窗口 | `afterschool-snack-supper-meal-continuity/` | At-Risk Afterschool Meals、课后点心、课后晚餐、监督活动、21st CCLC | 放学后时段若缺少餐食，会把监督、学习支持和家庭晚间现金流压力连成断点 |
+| 特殊饮食便利必须保护安全进食 | `special-diet-allergy-school-meal-accommodation-continuity/` | 特殊饮食、食物过敏、医学声明、合理便利、交叉接触、学校供餐沟通 | 过敏和特殊饮食若不能被供餐系统吸收，会把校餐支持反转为排除或急性风险 |
+| 校餐欠费不能变成营养和尊严惩罚 | `school-meal-debt-unpaid-balance-stigma-continuity/` | unpaid meal charges、债务通知、替代餐、污名、家庭账单、收款边界 | 欠费处理若转化为羞辱、替代餐或家庭账单压力，会削弱儿童营养、尊严和到校参与 |
 | 学生健康条件必须进入学校运行系统 | `school-health-services-chronic-condition-continuity/` | 学校护士、慢病支持、用药、免疫记录、急救计划、返校支持 | 慢病和急性风险若不能在学校被支持，会转化为缺勤、急性事件和学习日损耗 |
 | 到校路径必须安全可靠 | `school-transportation-safe-routes-continuity/` | 校车、通学路线、步行骑行安全、交通资格、无障碍交通 | 通学不可达或不安全会压缩出勤、学习时间、家庭工作连续性和儿童安全 |
 | 纪律系统必须避免排除性长尾 | `school-discipline-exclusion-restraint-continuity/` | 停学、开除、课堂移除、约束隔离、复学、纪律民权数据 | 排除性纪律会把行为、残障、创伤或社会风险转化为学习日损失和制度尾部后果 |
@@ -1295,6 +1301,12 @@ risk-engineering
   -> school-enrollment-attendance-continuity
   -> special-education-iep-504-accommodation-continuity
   -> school-meals-nutrition-access-continuity
+  -> summer-ebt-sun-bucks-school-break-food-continuity
+  -> summer-food-service-program-site-access-continuity
+  -> cacfp-child-adult-care-food-program-continuity
+  -> afterschool-snack-supper-meal-continuity
+  -> special-diet-allergy-school-meal-accommodation-continuity
+  -> school-meal-debt-unpaid-balance-stigma-continuity
   -> school-health-services-chronic-condition-continuity
   -> school-transportation-safe-routes-continuity
   -> school-discipline-exclusion-restraint-continuity
