@@ -830,6 +830,12 @@ flowchart TD
     H --> HHDMCC[home-humidity-dehumidifier-moisture-control-continuity<br/>家庭湿度 / 除湿水分]
     H --> HDASCC[household-dust-allergen-source-control-continuity<br/>灰尘过敏原 / 源控制]
     H --> HVFPEC[household-voc-fragrance-product-emission-continuity<br/>VOC 香氛 / 产品释放]
+    H --> HCPTFC[home-clutter-pathway-trip-fall-continuity<br/>通道杂物 / 绊倒跌倒]
+    H --> HCCTEC[household-cord-cable-trip-entanglement-continuity<br/>线缆 / 绊倒缠绕]
+    H --> HSCSSC[home-shelving-cabinet-storage-stability-continuity<br/>货架柜体 / 储物稳定]
+    H --> HLSSRTC[household-ladder-step-stool-reach-task-continuity<br/>梯凳 / 高处任务]
+    H --> HOWEC[home-office-workstation-ergonomics-continuity<br/>居家工位 / 工效]
+    H --> TSPCIC[toy-small-parts-choking-ingestion-continuity<br/>玩具小零件 / 窒息误吞]
     H --> HCDPCC[household-cleaning-disinfection-pest-control-continuity<br/>家庭清洁 / 消毒害虫控制]
     H --> PPDPC[postal-parcel-delivery-pickup-continuity<br/>邮件包裹 / 投递自提]
     H --> HMRCC[household-maintenance-repair-contractor-continuity<br/>家庭维修 / 承包商服务]
@@ -1293,6 +1299,12 @@ flowchart TD
 | [Home Humidity Dehumidifier Moisture Control Continuity](domains/home-humidity-dehumidifier-moisture-control-continuity/README.md) | 相对湿度、除湿机、加湿器、冷凝、地下室潮湿、设备维护和水分控制 | 把湿度作为连接空气、材料、霉菌条件、睡眠、呼吸和居住恢复的家庭控制变量 | 不提供霉菌清理、除湿设备选型、建筑防水、维修、湿度处方、检测解释或租房保险建议 |
 | [Household Dust Allergen Source Control Continuity](domains/household-dust-allergen-source-control-continuity/README.md) | 室内灰尘、尘螨、宠物皮屑、织物床品、地毯、HEPA 吸尘和源控制 | 降低反复消耗睡眠、注意力、呼吸舒适和清洁时间的室内过敏原负荷 | 不提供过敏诊断、哮喘治疗、药物、宠物处置、杀虫操作、清洁产品推荐或法律建议 |
 | [Household VOC Fragrance Product Emission Continuity](domains/household-voc-fragrance-product-emission-continuity/README.md) | VOC、香氛、清洁产品、喷雾、空气清新剂、油漆、家具装修释放和气味敏感 | 让日常产品和材料释放成为可观测、可替换、可通风或可移出的室内空气源，而不是家庭协作摩擦 | 不提供化学品混合、装修施工、材料检测判读、产品推荐、气味纠纷、医学诊断或法律建议 |
+| [Home Clutter Pathway Trip Fall Continuity](domains/home-clutter-pathway-trip-fall-continuity/README.md) | 地面杂物、临时堆放、走道占用、玩具衣物包裹、地毯边缘和夜间路径 | 把家庭物品流和通道状态纳入行动半径、跌倒暴露、照护响应和任务延迟模型 | 不提供收纳服务、家庭改造、跌倒急救、照护监控、保险、租房纠纷或个案安全判断 |
+| [Household Cord Cable Trip Entanglement Continuity](domains/household-cord-cable-trip-entanglement-continuity/README.md) | 充电线、延长线、插排、网线、设备线缆、临时供电和路径穿越线缆 | 让数字连接、照护设备供电和家庭办公不反向制造绊倒、缠绕、断电和火灾边界 | 不提供电气维修、布线施工、产品推荐、负载计算、火灾/触电处置或现场认证 |
+| [Home Shelving Cabinet Storage Stability Continuity](domains/home-shelving-cabinet-storage-stability-continuity/README.md) | 货架、橱柜、衣柜、车库储物、重物高处存放、落物和取物路径 | 把储物稳定与物品可达性纳入清洁、照护、维修、备灾、取物和家庭协作连续性 | 不提供家具安装、锚固教程、承重计算、木工施工、产品推荐、儿童监控或法律建议 |
+| [Household Ladder Step Stool Reach Task Continuity](domains/household-ladder-step-stool-reach-task-continuity/README.md) | 梯子、梯凳、高处取物、灯泡/报警器电池、滤网、窗帘、清洁和季节性收纳 | 让“够不到”的家庭维护任务成为可审查的跌倒、延迟、外包和设备失修边界 | 不提供梯子使用教程、高处作业指导、产品推荐、现场评估、急救、职业合规或法律建议 |
+| [Home Office Workstation Ergonomics Continuity](domains/home-office-workstation-ergonomics-continuity/README.md) | 居家办公/学习工位、桌椅、屏幕、键鼠、照明、噪声、线缆和长时姿势 | 把家庭工位适配纳入疼痛、疲劳、注意力、输入效率、远程协作和长期执行能力 | 不提供工位处方、医疗诊断、工伤法律、雇主合规、产品推荐、监控或绩效评分 |
+| [Toy Small Parts Choking Ingestion Continuity](domains/toy-small-parts-choking-ingestion-continuity/README.md) | 玩具小零件、破损零件、磁铁、纽扣电池、年龄分区、收纳、共享空间和召回 | 把儿童游戏空间中的小尺度高后果暴露纳入照护连续性、召回和家庭任务模型 | 不提供急救、医疗处置、儿童监控、产品鉴定、购买推荐、召回法律或托育合规建议 |
 | [Household Cleaning Disinfection Pest Control Continuity](domains/household-cleaning-disinfection-pest-control-continuity/README.md) | 表面清洁、消毒、化学品安全、害虫控制、垃圾和室内卫生 | 在感染控制、害虫风险和化学暴露之间建立可治理的家庭卫生边界 | 不提供消毒配方、化学混合、杀虫剂使用、毒物处理、霉菌清除或医疗处置步骤 |
 | [Postal Parcel Delivery Pickup Continuity](domains/postal-parcel-delivery-pickup-continuity/README.md) | 邮件、包裹、投递、自提、签收、追踪、地址同步和最后一公里接收 | 让文件、药品、设备、账单、身份材料和远程交易实物能到达主体 | 不提供邮件拦截、包裹盗取、冒领、地址欺诈、追踪滥用或物流攻击方法 |
 | [Household Maintenance Repair Contractor Continuity](domains/household-maintenance-repair-contractor-continuity/README.md) | 家庭维修、承包商、服务预约、报价、许可、投诉和维修记录 | 让住房和设备故障能被发现、排程、修复和记录 | 不提供 DIY 危险维修、电气燃气施工、合同争议策略、理赔策略或法律意见 |
@@ -2288,6 +2300,12 @@ human_infra/
 │   ├── home-humidity-dehumidifier-moisture-control-continuity/
 │   ├── household-dust-allergen-source-control-continuity/
 │   ├── household-voc-fragrance-product-emission-continuity/
+│   ├── home-clutter-pathway-trip-fall-continuity/
+│   ├── household-cord-cable-trip-entanglement-continuity/
+│   ├── home-shelving-cabinet-storage-stability-continuity/
+│   ├── household-ladder-step-stool-reach-task-continuity/
+│   ├── home-office-workstation-ergonomics-continuity/
+│   ├── toy-small-parts-choking-ingestion-continuity/
 │   ├── urogenital-continuity/
 │   ├── urinary-tract-infection-pyelonephritis-urosepsis-continuity/
 │   ├── catheter-associated-uti-device-infection-continuity/
@@ -2490,5 +2508,6 @@ flowchart LR
 - 2026-07-01：新增第一百零八波 6 个家庭能源与热安全执行连续性域，覆盖住宅电气线路插座、家庭供暖烟囱排气、家庭制冷热泵维护、天然气/丙烷泄漏关断、温控器室温控制和天气化保温围护结构。
 - 2026-07-01：新增第一百零九波 6 个家庭废弃物与处置执行连续性域，覆盖住宅固废收运垃圾桶卫生、家庭危险废物化学处置、家庭锐器医疗废物处置、电子废弃物电池回收、厨余堆肥害虫气味和非法倾倒邻里卫生。
 - 2026-07-01：新增第一百一十波 6 个家庭室内空气与通风执行连续性域，覆盖 HVAC 滤网维护、便携房间过滤、烹饪排风、家庭湿度水分控制、灰尘过敏原源控制和 VOC/香氛/产品释放。
+- 2026-07-01：新增第一百一十一波 6 个家庭物理秩序、物品访问与执行摩擦连续性域，覆盖通道杂物绊倒、家庭线缆绊倒缠绕、货架柜体储物稳定、梯凳高处任务、居家办公工位工效和玩具小零件窒息误吞。
 
 完整记录见 [CHANGELOG.md](CHANGELOG.md)。

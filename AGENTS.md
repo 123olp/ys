@@ -765,6 +765,12 @@ human_infra/
     ├── incident-reporting-just-culture-learning-continuity/ # 事件报告与公正文化学习连续性
     ├── automation-bias-mode-confusion-oversight-continuity/ # 自动化偏误、模式混淆与监督连续性
     ├── alert-fatigue-interruption-signal-management-continuity/ # 告警疲劳、中断与信号管理连续性
+    ├── home-clutter-pathway-trip-fall-continuity/ # 家庭通道杂物、绊倒与跌倒连续性
+    ├── household-cord-cable-trip-entanglement-continuity/ # 家庭线缆、绊倒与缠绕连续性
+    ├── home-shelving-cabinet-storage-stability-continuity/ # 家庭货架柜体与储物稳定连续性
+    ├── household-ladder-step-stool-reach-task-continuity/ # 家庭梯凳与高处任务连续性
+    ├── home-office-workstation-ergonomics-continuity/ # 居家办公工位工效与任务连续性
+    ├── toy-small-parts-choking-ingestion-continuity/ # 玩具小零件窒息误吞连续性
     ├── space-extreme-habitation/ # 空间与极端栖居
     ├── stem-cell-reserve-renewal/ # 干细胞储备与组织更新
     ├── substance-exposure-control/ # 物质暴露控制
@@ -1229,3 +1235,6 @@ human_infra/
 - 2026-07-01：新增第一百零六波 6 个个人辅助设备运行连续性域，把眼镜、轮椅/代步车、助行器具、假肢矫形、PAP 设备和跌倒检测响应设备纳入身体-工具运行接口。
 - 2026-07-01：新增第一百零七波 6 个家庭水与污水执行连续性域，把私人井水、家庭滤水、铅铜管线、建筑回流、化粪池和地下室进水潮湿恢复纳入家庭端饮水卫生住房接口。
 - 2026-07-01：新增第一百零八波 6 个家庭能源与热安全执行连续性域，把住宅电气线路插座、家庭供暖烟囱排气、家庭制冷热泵、天然气/丙烷泄漏关断、温控器和天气化保温围护结构纳入家庭端热、电、燃气和室内环境控制接口。
+- 2026-07-01：新增第一百零九波 6 个家庭废弃物与处置执行连续性域，把住宅固废、家庭危废、居家锐器、电子废弃物电池、厨余堆肥和非法倾倒邻里卫生纳入家庭残余物治理层。
+- 2026-07-01：新增第一百一十波 6 个家庭室内空气与通风执行连续性域，把 HVAC 滤网维护、便携房间过滤、烹饪排风、家庭湿度水分控制、灰尘过敏原源控制和 VOC/香氛/产品释放纳入家庭空气执行层。
+- 2026-07-01：新增第一百一十一波 6 个家庭物理秩序、物品访问与执行摩擦连续性域，把通道杂物、家庭线缆、储物稳定、高处够取、居家工位和玩具小零件纳入家庭日常任务摩擦层。

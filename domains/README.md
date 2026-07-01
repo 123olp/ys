@@ -605,6 +605,12 @@
 - `home-humidity-dehumidifier-moisture-control-continuity/`：家庭湿度、除湿/加湿与水分控制连续性，整理相对湿度、冷凝、地下室潮湿、设备维护和恢复空间。
 - `household-dust-allergen-source-control-continuity/`：家庭灰尘与室内过敏原源控制连续性，整理尘螨、宠物皮屑、织物床品、地毯和清洁任务负担。
 - `household-voc-fragrance-product-emission-continuity/`：家庭 VOC、香氛与产品释放连续性，整理清洁产品、喷雾、空气清新剂、家具装修释放和气味敏感。
+- `home-clutter-pathway-trip-fall-continuity/`：家庭通道杂物、绊倒与跌倒连续性，整理地面杂物、临时堆放、包裹玩具衣物、地毯边缘和夜间路径。
+- `household-cord-cable-trip-entanglement-continuity/`：家庭线缆、绊倒与缠绕连续性，整理充电线、延长线、插排、网线、设备线缆和临时供电路径。
+- `home-shelving-cabinet-storage-stability-continuity/`：家庭货架柜体与储物稳定连续性，整理柜体、衣柜、车库储物、重物高处存放、落物和取物成本。
+- `household-ladder-step-stool-reach-task-continuity/`：家庭梯凳与高处任务连续性，整理梯子、梯凳、取高处物品、灯泡/报警器电池、滤网和季节性收纳。
+- `home-office-workstation-ergonomics-continuity/`：居家办公工位工效与任务连续性，整理桌椅、屏幕、键鼠、照明、噪声、线缆和长时姿势。
+- `toy-small-parts-choking-ingestion-continuity/`：玩具小零件窒息误吞连续性，整理玩具小零件、磁铁、纽扣电池、年龄分区、收纳和召回。
 - `household-cleaning-disinfection-pest-control-continuity/`：家庭清洁、消毒与害虫控制连续性，整理表面清洁、消毒、化学品安全、害虫控制和室内卫生。
 - `postal-parcel-delivery-pickup-continuity/`：邮件、包裹、投递与自提连续性，整理邮件包裹、签收、自提、追踪、地址错配和最后一公里接收。
 - `household-maintenance-repair-contractor-continuity/`：家庭维修、承包商与修复服务连续性，整理维修请求、承包商、报价、许可、记录、投诉和修复恢复。

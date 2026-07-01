@@ -788,6 +788,12 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `home-humidity-dehumidifier-moisture-control-continuity/` | 湿度、除湿/加湿、冷凝和地下室潮湿决定睡眠、霉菌条件、尘螨负荷和恢复空间是否稳定 |
 | `household-dust-allergen-source-control-continuity/` | 灰尘、尘螨、宠物皮屑、织物床品和源控制决定室内过敏原是否反复消耗睡眠、注意力和清洁时间 |
 | `household-voc-fragrance-product-emission-continuity/` | VOC、香氛、清洁产品、空气清新剂、家具装修释放和气味敏感决定居住空间是否被产品释放长期占据 |
+| `home-clutter-pathway-trip-fall-continuity/` | 地面杂物、临时堆放、玩具衣物包裹和地毯边缘决定家庭路径是否会把行动转成绊倒、延迟和照护摩擦 |
+| `household-cord-cable-trip-entanglement-continuity/` | 充电线、延长线、插排、网线和设备线缆决定数字连接与供电是否会反向制造绊倒、缠绕和断电风险 |
+| `home-shelving-cabinet-storage-stability-continuity/` | 货架、橱柜、衣柜、车库储物和重物高处存放决定取物、清洁、照护和维修是否会被落物和找物失败打断 |
+| `household-ladder-step-stool-reach-task-continuity/` | 梯子、梯凳、高处取物、灯具和报警器维护决定“够不到”的家庭任务是否会转成跌倒或维护延迟 |
+| `home-office-workstation-ergonomics-continuity/` | 居家办公工位、桌椅屏幕键鼠、照明噪声和长时姿势决定远程学习工作是否会被疼痛、疲劳和注意力破碎消耗 |
+| `toy-small-parts-choking-ingestion-continuity/` | 玩具小零件、磁铁、纽扣电池、年龄分区、收纳和召回决定儿童游戏空间是否存在小尺度高后果暴露 |
 | `household-cleaning-disinfection-pest-control-continuity/` | 家庭清洁、消毒和害虫控制决定居住空间是否在感染、过敏、毒性和虫害暴露中保持可恢复 |
 | `postal-parcel-delivery-pickup-continuity/` | 邮件、包裹、签收、自提和地址同步决定证件、药品、设备、账单和关键物资能否从外部系统抵达主体 |
 | `household-maintenance-repair-contractor-continuity/` | 家庭维修、承包商、报价、许可、投诉和记录决定住房、设备、水电、卫生和安全故障能否被可信修复 |
@@ -1113,6 +1119,7 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | WHO Surgical Safety Checklist / AHRQ TeamSTEPPS handoff resources | 提示交接、read-back、briefing/debriefing 和清单能降低跨人跨班次状态丢失 |
 | AHRQ PSNet just culture / WHO patient safety / IHI RCA2 | 提示事件报告、near miss、公正文化和强纠正行动是组织学习而非追责工具 |
 | NIST AI RMF / Human-AI interaction guidelines / FAA automation literature | 提示自动化偏误、模式混淆、过度依赖和人工监督需要独立治理 |
+| CDC STEADI / NIA falls prevention / CPSC Anchor It / OSHA Computer Workstations / NIOSH Ergonomics / CPSC Toys and Magnets | 提示家庭通道、线缆、储物、高处任务、居家工位和儿童小零件是日常任务摩擦和伤害预防的独立基础设施 |
 | Joint Commission / AHRQ alarm fatigue / notification fatigue literature | 提示告警、警报、通知和中断必须按信号价值管理，否则会吞噬注意力预算 |
 | WHO Tobacco / Alcohol | 提示有害物质暴露和成瘾会改变死亡风险、资源消耗和主体自主性 |
 | CDC / HHS Health Literacy | 提示信息可理解性和服务导航决定医疗资源能否实际转化为主体收益 |

@@ -1769,6 +1769,23 @@ Human Infra 不能被设计成更精密的压榨系统。
 - 不收集、复制、处理或要求家庭地址、房间照片、滤网照片、设备序列号、空气检测报告、湿度记录、医疗症状、处方、宠物信息、租约、物业记录、气味投诉、装修合同、支付信息或其他敏感住房/健康/身份资料。
 - 不替代 EPA、CDC、DOE、ASHRAE、地方公共卫生、住房部门、物业、HVAC 专业人员、医疗人员、毒物控制、消防、环境检测机构、保险或法律渠道。
 
+## 家庭物理秩序、物品访问与执行摩擦连续性边界
+
+`home-clutter-pathway-trip-fall-continuity`、`household-cord-cable-trip-entanglement-continuity`、`home-shelving-cabinet-storage-stability-continuity`、`household-ladder-step-stool-reach-task-continuity`、`home-office-workstation-ergonomics-continuity` 和 `toy-small-parts-choking-ingestion-continuity` 关注家庭物品流、线缆、储物、高处够取、工位适配和儿童小零件如何影响行动半径、有效时间、注意力、照护和儿童游戏空间，不是家庭改造、产品购买、医疗诊断、急救、监控或法律建议入口。
+
+可以做：
+
+- 比较通道杂物、家庭线缆、储物稳定、高处任务、居家工位和玩具小零件如何改变家庭端任务执行摩擦。
+- 记录 CDC、NIA、CPSC、OSHA、NIOSH、USFA、Poison Help、职业治疗和公共卫生资料中的对象、机制、变量、证据边界和禁止用途。
+- 设计 `household physical interface -> exposure/access/friction state -> task burden/safety outcome -> continuity outcome` 变量链。
+
+不能做：
+
+- 不提供家庭改造、收纳服务、产品购买、梯子操作、电气维修、家具安装、货架承重、儿童监控、急救、医疗诊断、工伤法律、托育合规、保险或现场安全认证。
+- 不判断某个家庭通道、线缆、货架、梯凳、工位、玩具、磁铁、纽扣电池或儿童游戏空间是否安全、违法、必须更换、必须施工或应如何个案处理。
+- 不收集、复制、处理或要求家庭地址、房间照片、儿童照片、玩具照片、设备序列号、工位照片、事故照片、医疗症状、租约、物业记录、保险资料、托育记录或其他敏感住房/健康/身份资料。
+- 不替代 CDC、NIA、CPSC、OSHA、NIOSH、USFA、Poison Help、地方公共卫生、医疗人员、职业治疗师、托育监管、消防、电工、物业、产品厂商、保险或法律渠道。
+
 ## 个人移动执行连续性边界
 
 `personal-vehicle-maintenance-recall-repair-continuity`、`fuel-ev-charging-refueling-access-continuity`、`parking-curb-access-towing-impound-continuity`、`walking-bicycling-micromobility-continuity`、`paratransit-nemt-access-continuity`、`taxi-rideshare-demand-response-mobility-continuity`、`transit-fare-payment-toll-account-continuity` 和 `multimodal-trip-planning-real-time-wayfinding-continuity` 关注车辆、补能、停车、主动出行、辅助医疗交通、按需交通、支付账户和实时导向如何把交通服务转化为主体真实到达能力，不是车辆维修、补能操作、交通规避、平台攻击、逃票或个案申诉入口。

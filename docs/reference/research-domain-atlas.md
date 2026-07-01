@@ -511,6 +511,12 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 家庭湿度必须可控制 | `home-humidity-dehumidifier-moisture-control-continuity/` | 相对湿度、除湿机、加湿器、冷凝、地下室潮湿、水分控制 | 湿度失控会放大霉菌条件、尘螨负荷、材料损耗、睡眠破坏和呼吸刺激 |
 | 室内过敏原必须可源控制 | `household-dust-allergen-source-control-continuity/` | 灰尘、尘螨、宠物皮屑、织物床品、地毯、HEPA 吸尘 | 过敏原源控制失败会让注意力、睡眠、清洁时间和慢病维护被环境反复消耗 |
 | 产品释放源必须可减少 | `household-voc-fragrance-product-emission-continuity/` | VOC、香氛、清洁产品、喷雾、家具装修释放、气味敏感 | 产品释放不可控会把室内空气变成刺激、头痛、家庭冲突和居住恢复摩擦 |
+| 家庭通道必须可通行 | `home-clutter-pathway-trip-fall-continuity/` | 地面杂物、临时堆放、玩具衣物、包裹、地毯边缘、夜间路径 | 通道被物品占用会把移动、照护响应、夜间如厕和撤离转成绊倒与延迟 |
+| 家庭线缆必须可路由 | `household-cord-cable-trip-entanglement-continuity/` | 充电线、延长线、插排、网线、设备线缆、临时供电 | 线缆失控会让数字连接和设备供电反向制造绊倒、缠绕、断电和火灾边界 |
+| 储物系统必须稳定可访问 | `home-shelving-cabinet-storage-stability-continuity/` | 货架、橱柜、衣柜、车库储物、重物高处存放、落物 | 储物失稳会把取物、清洁、照护、维修和备灾转成落物、找物失败和重新开始成本 |
+| 高处任务必须可安全到达 | `household-ladder-step-stool-reach-task-continuity/` | 梯子、梯凳、高处取物、灯具、报警器电池、滤网、季节性收纳 | 够取边界失败会导致跌倒、设备维护延误、等待他人和独立生活能力下降 |
+| 家庭工位必须适配人体任务 | `home-office-workstation-ergonomics-continuity/` | 桌椅、屏幕、键鼠、照明、噪声、线缆、长时姿势 | 工位失配会把远程工作学习转成疼痛、疲劳、视觉负荷和注意力破碎 |
+| 玩具小零件必须被分区治理 | `toy-small-parts-choking-ingestion-continuity/` | 玩具小零件、磁铁、纽扣电池、年龄分区、收纳、召回 | 小尺度暴露会在儿童游戏空间形成窒息、误吞、照护焦虑和家庭任务中断 |
 | 家庭卫生必须可治理 | `household-cleaning-disinfection-pest-control-continuity/` | 清洁、消毒、化学品安全、害虫控制、室内卫生 | 清洁不足、化学误用或害虫暴露会制造感染、过敏、毒性和居住压力 |
 | 邮件包裹必须可接收 | `postal-parcel-delivery-pickup-continuity/` | 邮件、包裹、签收、自提、追踪、地址同步 | 文件、药品、设备、账单或身份材料收不到会切断远程服务和物理资源交付 |
 | 家庭故障必须可被可信维修 | `household-maintenance-repair-contractor-continuity/` | 维修请求、承包商、报价、许可、投诉、维修记录 | 维修延误、诈骗、无证服务或记录缺失会让住房、设备、水电、卫生和安全持续恶化 |
@@ -1274,6 +1280,12 @@ risk-engineering
   -> home-humidity-dehumidifier-moisture-control-continuity
   -> household-dust-allergen-source-control-continuity
   -> household-voc-fragrance-product-emission-continuity
+  -> home-clutter-pathway-trip-fall-continuity
+  -> household-cord-cable-trip-entanglement-continuity
+  -> home-shelving-cabinet-storage-stability-continuity
+  -> household-ladder-step-stool-reach-task-continuity
+  -> home-office-workstation-ergonomics-continuity
+  -> toy-small-parts-choking-ingestion-continuity
   -> household-cleaning-disinfection-pest-control-continuity
   -> postal-parcel-delivery-pickup-continuity
   -> household-maintenance-repair-contractor-continuity

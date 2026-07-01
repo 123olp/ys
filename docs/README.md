@@ -131,6 +131,7 @@ docs/
 │   ├── 0113-add-one-hundred-eighth-wave-household-energy-thermal-safety-domains.md
 │   ├── 0114-add-one-hundred-ninth-wave-household-waste-disposal-execution-domains.md
 │   ├── 0115-add-one-hundred-tenth-wave-household-indoor-air-ventilation-execution-domains.md
+│   ├── 0116-add-one-hundred-eleventh-wave-household-physical-order-object-access-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -425,6 +426,12 @@ docs/
     - Then read `../domains/home-humidity-dehumidifier-moisture-control-continuity/README.md` for household humidity, dehumidifiers, humidifiers, condensation, basement moisture, or moisture-control continuity.
     - Then read `../domains/household-dust-allergen-source-control-continuity/README.md` for household dust, dust mites, pet dander, bedding/fabrics, allergen source control, or allergy-burden task continuity.
     - Then read `../domains/household-voc-fragrance-product-emission-continuity/README.md` for VOCs, fragrances, air fresheners, cleaning-product emissions, furniture/off-gassing, odor sensitivity, or product-emission continuity.
+    - Then read `../domains/home-clutter-pathway-trip-fall-continuity/README.md` for home clutter, pathway obstruction, temporary piles, throw rugs, toys, laundry, packages, trip/fall exposure, or household pathway continuity.
+    - Then read `../domains/household-cord-cable-trip-entanglement-continuity/README.md` for charging cables, extension cords, power strips, device cords, cable routing, trip/entanglement exposure, or household connection continuity.
+    - Then read `../domains/home-shelving-cabinet-storage-stability-continuity/README.md` for shelves, cabinets, closets, garage storage, falling objects, overloaded storage, or household object-access continuity.
+    - Then read `../domains/household-ladder-step-stool-reach-task-continuity/README.md` for ladders, step stools, high-reach tasks, bulb/smoke-alarm battery changes, seasonal storage, or reach-task continuity.
+    - Then read `../domains/home-office-workstation-ergonomics-continuity/README.md` for home-office workstations, desk/chair/screen/keyboard/mouse fit, remote work, posture load, visual load, or workstation continuity.
+    - Then read `../domains/toy-small-parts-choking-ingestion-continuity/README.md` for toy small parts, magnets, button batteries, age separation, toy storage, recalls, choking, ingestion, or child play-space continuity.
 183. Read `../domains/advance-care-planning-medical-decision-continuity/README.md` if you are working on advance care planning, advance directives, health care proxy, medical decision continuity, goals of care, or incapacity communication.
 184. Read `../domains/supported-decision-making-guardianship-rights/README.md` if you are working on supported decision-making, guardianship, conservatorship, decision capacity, disability rights, or least restrictive alternatives.
 185. Read `../domains/healthcare-personal-representative-hipaa-access-continuity/README.md` if you are working on HIPAA personal representatives, caregiver access, proxy access, medical records, privacy boundaries, or authorized care coordination.

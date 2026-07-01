@@ -4,6 +4,7 @@ All notable repository structure changes are recorded here.
 
 ## 2026-07-01
 
+- Added the one-hundred-eleventh wave of household physical-order, object-access, and execution-friction domains, covering home clutter/pathway trip hazards, household cords/cables trip and entanglement, shelving/cabinet storage stability, household ladders/step stools/reach tasks, home-office workstation ergonomics, and toy small-parts choking/ingestion safety.
 - Added the one-hundred-tenth wave of household indoor-air and ventilation execution-continuity domains, covering home HVAC filter maintenance, portable room air cleaners, cooking ventilation and range hoods, humidity/dehumidifier moisture control, household dust/allergen source control, and household VOC/fragrance/product emissions.
 - Added the one-hundred-ninth wave of household waste and disposal execution-continuity domains, covering residential solid waste collection and bin sanitation, household hazardous waste and chemical disposal, home sharps and medical waste disposal, e-waste and battery recycling/disposal, food-scrap composting pest/odor control, and illegal dumping/litter neighborhood sanitation.
 - Added the one-hundred-eighth wave of household energy and thermal-safety execution-continuity domains, covering residential electrical wiring/outlet safety, home heating equipment/chimney/vent maintenance, home cooling/heat pump/air-conditioning maintenance, natural gas/propane leak and shutoff boundaries, thermostat temperature control, and weatherization/insulation/air-sealing thermal-envelope continuity.

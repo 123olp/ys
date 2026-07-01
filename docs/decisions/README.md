@@ -128,3 +128,4 @@ Current decisions:
 - `0113-add-one-hundred-eighth-wave-household-energy-thermal-safety-domains.md`
 - `0114-add-one-hundred-ninth-wave-household-waste-disposal-execution-domains.md`
 - `0115-add-one-hundred-tenth-wave-household-indoor-air-ventilation-execution-domains.md`
+- `0116-add-one-hundred-eleventh-wave-household-physical-order-object-access-domains.md`
