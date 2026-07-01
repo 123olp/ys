@@ -75,6 +75,7 @@ longevity-evidence/
 │   ├── data-inventory.md
 │   ├── data-sources.md
 │   ├── evidence-model.md
+│   ├── lev-mainstream-routes.md
 │   ├── mvp-roadmap.md
 │   └── product-brief.md
 └── scripts/
@@ -91,6 +92,7 @@ longevity-evidence/
 - `docs/evidence-model.md`：干预、主张、证据、临床试验和证据等级模型。
 - `docs/data-sources.md`：首批公开数据源和接入优先级。
 - `docs/data-inventory.md`：数据域、字段、持续维护源和更新节奏。
+- `docs/lev-mainstream-routes.md`：长寿逃逸速度主流路线、官方/论文来源信号、现有研究域映射和证据边界。
 - `docs/collection-run-*.md`：历史采集记录和质量风险。
 - `data/manual/interventions.json`：首批 20 个干预对象、类别、别名和检索词。
 - `data/raw/`：采集脚本保存的原始 API 响应和下载快照。

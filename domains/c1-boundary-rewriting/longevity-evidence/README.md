@@ -103,6 +103,7 @@ longevity-evidence/
 │   ├── data-inventory.md
 │   ├── data-sources.md
 │   ├── evidence-model.md
+│   ├── lev-mainstream-routes.md
 │   ├── mvp-roadmap.md
 │   └── product-brief.md
 └── scripts/
@@ -119,6 +120,12 @@ longevity-evidence/
 2. 为每个干预建立证据页。
 3. 标注人体证据、动物证据、临床试验、安全风险和证据缺口。
 4. 输出可复用的数据结构，后续接入展示页、订阅产品或研究报告。
+
+## 主流路线索引
+
+`docs/lev-mainstream-routes.md` 记录当前全球围绕长寿逃逸速度的主流路线：组合疗法、健康寿命竞赛、Geroscience 临床转化、细胞重编程、AI 生物设计、衰老标志靶向、生物年龄与功能指标、动物临床捷径、资金与基础设施。
+
+该文档的职责是把路线映射回现有研究域，而不是新增重复域或证明任何路线已经实现长寿逃逸速度。
 
 ## 运行示例
 

@@ -8,6 +8,7 @@ This directory stores the Longevity Evidence domain model, data source plans, co
 - `evidence-model.md`: interventions, claims, evidence, trials, and scoring model.
 - `data-sources.md`: source priority and public data access rules.
 - `data-inventory.md`: maintained data domains, fields, refresh cadence, and quality gates.
+- `lev-mainstream-routes.md`: mainstream longevity escape velocity route map, source signals, and cross-domain routing.
 - `mvp-roadmap.md`: first 0-6 week product path.
 - `collection-run-2026-05-29.md`: first MVP collection run.
 - `collection-run-2026-05-29-expanded.md`: expanded core data collection run.

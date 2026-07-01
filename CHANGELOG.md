@@ -4,6 +4,7 @@ All notable repository structure changes are recorded here.
 
 ## 2026-07-02
 
+- Added `domains/c1-boundary-rewriting/longevity-evidence/docs/lev-mainstream-routes.md` as the mainstream longevity escape velocity route map, linking combination therapies, Healthspan competition, geroscience trials, cellular reprogramming, AI biological design, aging hallmarks, biomarkers, animal translation, and funding infrastructure back to existing research domains.
 - Extended `tools/update_domain_doc_contracts.py` and regenerated all 990 formal research-domain README/AGENTS files with tier-specific research skeletons and agent execution workflows.
 - Added `tools/update_domain_doc_contracts.py` and regenerated standard README/AGENTS metadata and maintenance-contract blocks for all 990 formal research domains.
 - Moved all 990 formal research domains into physical C1-C6 tier directories under `domains/`, and added `physical_path` to `domains/_possibility-space-control/classification.tsv` as the path source of truth.
