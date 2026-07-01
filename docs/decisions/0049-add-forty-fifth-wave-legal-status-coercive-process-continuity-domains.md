@@ -11,13 +11,13 @@ The previous wave added asset, account, mobility, and transaction-execution cont
 
 Add seven formal research domains:
 
-- `domains/citizenship-nationality-statelessness-continuity/`
-- `domains/immigration-status-residency-work-authorization-continuity/`
-- `domains/asylum-refugee-protection-status-continuity/`
-- `domains/detention-custody-confinement-status-continuity/`
-- `domains/civil-commitment-involuntary-treatment-rights-continuity/`
-- `domains/court-notice-service-process-default-judgment-continuity/`
-- `domains/criminal-record-relief-collateral-consequences-continuity/`
+- `domains/c6-local-unlocking/citizenship-nationality-statelessness-continuity/`
+- `domains/c6-local-unlocking/immigration-status-residency-work-authorization-continuity/`
+- `domains/c5-ecological-substrate/asylum-refugee-protection-status-continuity/`
+- `domains/c6-local-unlocking/detention-custody-confinement-status-continuity/`
+- `domains/c6-local-unlocking/civil-commitment-involuntary-treatment-rights-continuity/`
+- `domains/c5-ecological-substrate/court-notice-service-process-default-judgment-continuity/`
+- `domains/c6-local-unlocking/criminal-record-relief-collateral-consequences-continuity/`
 
 Each domain starts with only `README.md` and `AGENTS.md`. No empty data, scripts, or model directories are created.
 

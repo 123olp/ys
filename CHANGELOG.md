@@ -4,8 +4,9 @@ All notable repository structure changes are recorded here.
 
 ## 2026-07-02
 
+- Moved all 990 formal research domains into physical C1-C6 tier directories under `domains/`, and added `physical_path` to `domains/_possibility-space-control/classification.tsv` as the path source of truth.
 - Added `domains/_possibility-space-control/` as a control-plane index that classifies 990 formal research domains by possibility-space control power rather than feasibility or evidence maturity.
-- Added `domains/synthetic-biological-intelligence-organoid-computing-continuity/` for SBI/OI/BI, DishBrain, CL API, in vitro neural networks, organoid computing, closed-loop learning, agency/sentience terminology, and governance boundaries.
+- Added `domains/c2-source-maintenance/synthetic-biological-intelligence-organoid-computing-continuity/` for SBI/OI/BI, DishBrain, CL API, in vitro neural networks, organoid computing, closed-loop learning, agency/sentience terminology, and governance boundaries.
 - Added the one-hundred-thirty-third wave of organelle homeostasis, spatial organization, and stress-response domains, covering ER stress / UPR proteostasis, Golgi secretory trafficking, peroxisome redox and lipid metabolism, organelle contact sites, biomolecular condensates / phase separation, and cytoskeleton mechanotransduction / cellular mechanics.
 
 ## 2026-07-01
@@ -197,8 +198,8 @@ All notable repository structure changes are recorded here.
 ## 2026-06-20
 
 - Reframed the repository from a Biocat-only project into the Human Infra knowledge repository.
-- Moved the former Biocat materials into `domains/longevity-evidence/`.
-- Added `domains/disembodied-cns/` and `domains/memory-editing/`.
+- Moved the former Biocat materials into `domains/c1-boundary-rewriting/longevity-evidence/`.
+- Added `domains/c1-boundary-rewriting/disembodied-cns/` and `domains/c1-boundary-rewriting/memory-editing/`.
 - Added Human Infra theory, domain map, ethics and safety boundaries, and source-note archive.
 - Standardized active longevity materials under the `Longevity Evidence` name.
 - Added knowledge-repository root files, GitHub collaboration templates, documentation information architecture, and a structure check script.
@@ -206,7 +207,7 @@ All notable repository structure changes are recorded here.
 
 ## 2026-06-22
 
-- Added `domains/future-waiting/` for future-waiting and low-subjective-time paths.
+- Added `domains/c1-boundary-rewriting/future-waiting/` for future-waiting and low-subjective-time paths.
 - Added the `black-hole-waiting-room` path as a general relativity time-dilation thought experiment.
 - Updated domain map, ethics boundaries, glossary, review checklist, and repository validation for the new domain.
 

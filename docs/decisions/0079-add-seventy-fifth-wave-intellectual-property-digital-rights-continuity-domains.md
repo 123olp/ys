@@ -16,14 +16,14 @@ Human Infra 已经有 `intellectual-property-technology-transfer-access/`，用�
 
 Add eight research domains:
 
-- `domains/copyright-authorship-registration-licensing-continuity/`
-- `domains/dmca-notice-counter-notice-platform-removal-continuity/`
-- `domains/creative-commons-open-content-license-continuity/`
-- `domains/open-source-software-license-compliance-continuity/`
-- `domains/trademark-brand-identity-rights-continuity/`
-- `domains/patent-invention-disclosure-maintenance-continuity/`
-- `domains/creator-royalty-rights-metadata-continuity/`
-- `domains/ai-training-data-rights-opt-out-provenance-continuity/`
+- `domains/c6-local-unlocking/copyright-authorship-registration-licensing-continuity/`
+- `domains/c6-local-unlocking/dmca-notice-counter-notice-platform-removal-continuity/`
+- `domains/c6-local-unlocking/creative-commons-open-content-license-continuity/`
+- `domains/c4-conversion-channel/open-source-software-license-compliance-continuity/`
+- `domains/c4-conversion-channel/trademark-brand-identity-rights-continuity/`
+- `domains/c6-local-unlocking/patent-invention-disclosure-maintenance-continuity/`
+- `domains/c4-conversion-channel/creator-royalty-rights-metadata-continuity/`
+- `domains/c3-generation-engine/ai-training-data-rights-opt-out-provenance-continuity/`
 
 ## Rationale
 

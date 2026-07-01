@@ -23,12 +23,12 @@ These are not simply subtopics of `patient-data-interoperability/`, `measurement
 
 Add six new domain skeletons:
 
-- `domains/health-data-privacy-governance/`
-- `domains/functioning-quality-of-life-outcomes/`
-- `domains/health-economics-value-assessment/`
-- `domains/immunization-public-health-surveillance/`
-- `domains/maternal-newborn-child-development/`
-- `domains/patient-safety-organizational-learning/`
+- `domains/c4-conversion-channel/health-data-privacy-governance/`
+- `domains/c4-conversion-channel/functioning-quality-of-life-outcomes/`
+- `domains/c6-local-unlocking/health-economics-value-assessment/`
+- `domains/c2-source-maintenance/immunization-public-health-surveillance/`
+- `domains/c2-source-maintenance/maternal-newborn-child-development/`
+- `domains/c2-source-maintenance/patient-safety-organizational-learning/`
 
 Each domain starts with only `README.md` and `AGENTS.md`.
 

@@ -14,12 +14,12 @@ The verified source signals for this wave come from NHLBI narcolepsy and circadi
 
 Add six independent research domains:
 
-- `domains/narcolepsy-daytime-sleepiness-continuity/`
-- `domains/idiopathic-hypersomnia-excessive-sleepiness-continuity/`
-- `domains/restless-legs-periodic-limb-movement-sleep-continuity/`
-- `domains/circadian-rhythm-sleep-wake-disorder-continuity/`
-- `domains/shift-work-long-hours-fatigue-continuity/`
-- `domains/parasomnia-sleepwalking-behavior-safety-continuity/`
+- `domains/c6-local-unlocking/narcolepsy-daytime-sleepiness-continuity/`
+- `domains/c6-local-unlocking/idiopathic-hypersomnia-excessive-sleepiness-continuity/`
+- `domains/c6-local-unlocking/restless-legs-periodic-limb-movement-sleep-continuity/`
+- `domains/c6-local-unlocking/circadian-rhythm-sleep-wake-disorder-continuity/`
+- `domains/c6-local-unlocking/shift-work-long-hours-fatigue-continuity/`
+- `domains/c6-local-unlocking/parasomnia-sleepwalking-behavior-safety-continuity/`
 
 Each domain receives a `README.md` and `AGENTS.md`, and all root, docs, reference, and repository validation indexes are updated.
 

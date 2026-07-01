@@ -16,12 +16,12 @@ Human Infra 已经覆盖海岸、渔业、防洪、公共工程、城市规划�
 
 Add six formal domains:
 
-- `domains/electric-grid-reliability-resilience-continuity/`
-- `domains/water-wastewater-utility-service-continuity/`
-- `domains/fuel-thermal-energy-service-continuity/`
-- `domains/public-transit-service-operations-continuity/`
-- `domains/critical-infrastructure-lifeline-interdependency-resilience/`
-- `domains/utility-affordability-shutoff-protection-continuity/`
+- `domains/c5-ecological-substrate/electric-grid-reliability-resilience-continuity/`
+- `domains/c5-ecological-substrate/water-wastewater-utility-service-continuity/`
+- `domains/c5-ecological-substrate/fuel-thermal-energy-service-continuity/`
+- `domains/c5-ecological-substrate/public-transit-service-operations-continuity/`
+- `domains/c5-ecological-substrate/critical-infrastructure-lifeline-interdependency-resilience/`
+- `domains/c5-ecological-substrate/utility-affordability-shutoff-protection-continuity/`
 
 Update root navigation, docs navigation, reference maps, radar, ethics boundaries, changelog and repository checks so the new domains are discoverable and validated.
 

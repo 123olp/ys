@@ -23,12 +23,12 @@ Research Domain Atlas 已经把 Human Infra 从单一长寿项目扩展为主体
 
 新增第十七波 6 个正式研究域：
 
-- `domains/geospatial-navigation-location-infrastructure/`
-- `domains/weather-climate-observation-forecasting/`
-- `domains/building-fire-life-safety-codes/`
-- `domains/manufacturing-repair-capacity/`
-- `domains/public-procurement-contracting-capacity/`
-- `domains/animal-health-zoonotic-interface-one-health/`
+- `domains/c4-conversion-channel/geospatial-navigation-location-infrastructure/`
+- `domains/c5-ecological-substrate/weather-climate-observation-forecasting/`
+- `domains/c6-local-unlocking/building-fire-life-safety-codes/`
+- `domains/c6-local-unlocking/manufacturing-repair-capacity/`
+- `domains/c4-conversion-channel/public-procurement-contracting-capacity/`
+- `domains/c6-local-unlocking/animal-health-zoonotic-interface-one-health/`
 
 每个域只创建 `README.md` 和 `AGENTS.md`，用于定义对象、先验位置、链路、非目标、Source Signals 和维护边界；不创建空数据目录、脚本目录或产品服务目录。
 

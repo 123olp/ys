@@ -16,12 +16,12 @@ Human Infra needs these domains because construction and industrial work can con
 
 Add six construction and industrial site fatal-hazard execution domains:
 
-- `domains/trenching-excavation-cave-in-worker-continuity/`
-- `domains/crane-derrick-hoist-rigging-suspended-load-continuity/`
-- `domains/occupational-electrical-shock-arc-flash-continuity/`
-- `domains/welding-cutting-brazing-fume-fire-continuity/`
-- `domains/respirable-crystalline-silica-dust-worker-continuity/`
-- `domains/demolition-structural-collapse-debris-continuity/`
+- `domains/c6-local-unlocking/trenching-excavation-cave-in-worker-continuity/`
+- `domains/c6-local-unlocking/crane-derrick-hoist-rigging-suspended-load-continuity/`
+- `domains/c5-ecological-substrate/occupational-electrical-shock-arc-flash-continuity/`
+- `domains/c6-local-unlocking/welding-cutting-brazing-fume-fire-continuity/`
+- `domains/c6-local-unlocking/respirable-crystalline-silica-dust-worker-continuity/`
+- `domains/c6-local-unlocking/demolition-structural-collapse-debris-continuity/`
 
 Each domain must keep `README.md` and `AGENTS.md` as its local truth source, and each must stay framed as research, source-card, model, visualization, and boundary analysis rather than site-specific safety instruction.
 

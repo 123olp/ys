@@ -18,7 +18,7 @@ Human Infra 已有 `longevity-evidence/` 用于健康寿命、干预证据、临
 
 ## Decision
 
-Create `domains/cellular-reprogramming/` for cellular reprogramming and epigenetic rejuvenation.
+Create `domains/c2-source-maintenance/cellular-reprogramming/` for cellular reprogramming and epigenetic rejuvenation.
 
 The domain covers:
 

@@ -14,12 +14,12 @@ Human Infra 已有食物安全、食品零售、SNAP/WIC、食品银行、送餐
 
 新增第一百二十三波 6 个 Food is Medicine / 医疗营养支持执行连续性域：
 
-- `domains/nutrition-insecurity-screening-referral-continuity/`
-- `domains/medically-tailored-meals-chronic-care-continuity/`
-- `domains/medically-tailored-groceries-food-benefit-continuity/`
-- `domains/produce-prescription-fruit-vegetable-benefit-continuity/`
-- `domains/food-pharmacy-clinic-pantry-integration-continuity/`
-- `domains/medical-nutrition-therapy-dietitian-access-continuity/`
+- `domains/c4-conversion-channel/nutrition-insecurity-screening-referral-continuity/`
+- `domains/c6-local-unlocking/medically-tailored-meals-chronic-care-continuity/`
+- `domains/c4-conversion-channel/medically-tailored-groceries-food-benefit-continuity/`
+- `domains/c4-conversion-channel/produce-prescription-fruit-vegetable-benefit-continuity/`
+- `domains/c5-ecological-substrate/food-pharmacy-clinic-pantry-integration-continuity/`
+- `domains/c6-local-unlocking/medical-nutrition-therapy-dietitian-access-continuity/`
 
 这些域只整理公开政策、研究、项目模型、变量、证据等级、执行断点和安全边界，不提供个体医学、营养、保险、福利、转介、菜单、购物、供应商或 eligibility 建议。
 

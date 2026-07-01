@@ -12,7 +12,7 @@ Its core object is an embodied in vitro neural system: living neural tissue coup
 
 ## Decision
 
-Create `domains/synthetic-biological-intelligence-organoid-computing-continuity/` with:
+Create `domains/c2-source-maintenance/synthetic-biological-intelligence-organoid-computing-continuity/` with:
 
 - `README.md`
 - `AGENTS.md`

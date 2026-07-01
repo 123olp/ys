@@ -16,12 +16,12 @@ Human Infra 已有上位 `endocrine-hormonal-regulation/` 和 `thyroid-disease-e
 
 新增第一百二十七波 6 个激素反馈轴连续性域：
 
-- `domains/adrenal-insufficiency-cortisol-stress-response-continuity/`
-- `domains/cushing-syndrome-hypercortisolism-metabolic-bone-continuity/`
-- `domains/pituitary-disorders-hormone-axis-continuity/`
-- `domains/acromegaly-growth-hormone-cardiometabolic-continuity/`
-- `domains/hypogonadism-testosterone-sex-hormone-continuity/`
-- `domains/primary-ovarian-insufficiency-hormone-fertility-continuity/`
+- `domains/c2-source-maintenance/adrenal-insufficiency-cortisol-stress-response-continuity/`
+- `domains/c2-source-maintenance/cushing-syndrome-hypercortisolism-metabolic-bone-continuity/`
+- `domains/c2-source-maintenance/pituitary-disorders-hormone-axis-continuity/`
+- `domains/c2-source-maintenance/acromegaly-growth-hormone-cardiometabolic-continuity/`
+- `domains/c2-source-maintenance/hypogonadism-testosterone-sex-hormone-continuity/`
+- `domains/c2-source-maintenance/primary-ovarian-insufficiency-hormone-fertility-continuity/`
 
 这些域只整理公开资料、变量接口、机制链、监测边界、功能结果、隐私/污名风险、过度诊疗风险和禁止用途，不提供诊断、化验/影像/视野/报告解释、激素、用药、剂量、急救、手术、放疗、生育、性功能、健身、保险、法律或个体医疗建议。
 

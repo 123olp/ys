@@ -14,14 +14,14 @@ Human Infra 已经有 `food-security-nutrition-access`、`food-safety-contaminat
 
 新增第 54 波 8 个食物获得执行连续性研究域：
 
-- `domains/grocery-retail-food-store-access-continuity/`
-- `domains/snap-ebt-redemption-retailer-payment-continuity/`
-- `domains/wic-benefit-redemption-infant-maternal-nutrition-continuity/`
-- `domains/food-bank-pantry-community-food-distribution-continuity/`
-- `domains/emergency-food-disaster-feeding-continuity/`
-- `domains/home-delivered-meals-congregate-nutrition-services-continuity/`
-- `domains/infant-formula-baby-food-supply-safety-continuity/`
-- `domains/prepared-food-restaurant-cafeteria-safety-access-continuity/`
+- `domains/c5-ecological-substrate/grocery-retail-food-store-access-continuity/`
+- `domains/c5-ecological-substrate/snap-ebt-redemption-retailer-payment-continuity/`
+- `domains/c2-source-maintenance/wic-benefit-redemption-infant-maternal-nutrition-continuity/`
+- `domains/c5-ecological-substrate/food-bank-pantry-community-food-distribution-continuity/`
+- `domains/c5-ecological-substrate/emergency-food-disaster-feeding-continuity/`
+- `domains/c5-ecological-substrate/home-delivered-meals-congregate-nutrition-services-continuity/`
+- `domains/c5-ecological-substrate/infant-formula-baby-food-supply-safety-continuity/`
+- `domains/c5-ecological-substrate/prepared-food-restaurant-cafeteria-safety-access-continuity/`
 
 这些域分别承载 grocery/食品零售、SNAP EBT 兑换、WIC 母婴营养兑换、食品银行/pantry、灾害供餐、送餐/集体营养服务、婴儿配方/婴幼儿食品供应安全和餐馆/cafeteria 熟食安全可达连续性。
 

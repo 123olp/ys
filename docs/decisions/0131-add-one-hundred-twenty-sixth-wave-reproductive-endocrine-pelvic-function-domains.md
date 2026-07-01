@@ -16,12 +16,12 @@ Human Infra 已有 `reproductive-fertility-continuity/`、第 124 波 ART/生育
 
 新增第一百二十六波 6 个生殖内分泌、盆腔疼痛和性功能连续性域：
 
-- `domains/polycystic-ovary-syndrome-metabolic-reproductive-continuity/`
-- `domains/endometriosis-pelvic-pain-fertility-continuity/`
-- `domains/uterine-fibroids-bleeding-anemia-fertility-continuity/`
-- `domains/male-factor-infertility-sperm-health-continuity/`
-- `domains/erectile-dysfunction-vascular-sexual-function-continuity/`
-- `domains/vulvovaginal-pain-infection-sexual-function-continuity/`
+- `domains/c2-source-maintenance/polycystic-ovary-syndrome-metabolic-reproductive-continuity/`
+- `domains/c2-source-maintenance/endometriosis-pelvic-pain-fertility-continuity/`
+- `domains/c2-source-maintenance/uterine-fibroids-bleeding-anemia-fertility-continuity/`
+- `domains/c6-local-unlocking/male-factor-infertility-sperm-health-continuity/`
+- `domains/c2-source-maintenance/erectile-dysfunction-vascular-sexual-function-continuity/`
+- `domains/c2-source-maintenance/vulvovaginal-pain-infection-sexual-function-continuity/`
 
 这些域只整理公开资料、变量接口、机制链、风险信号、隐私边界、功能结果和禁止用途，不提供诊断、化验/影像解释、药物、激素、手术、补剂、生活方式、性行为、生育治疗、伴侣建议、产品推荐、保险、法律或个体医疗建议。
 

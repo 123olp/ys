@@ -18,16 +18,16 @@ Human Infra 已经有 `cancer-control/` 和 `cancer-screening-early-detection-co
 
 新增第八十七波 10 个正式研究域：
 
-- `domains/breast-cancer-screening-treatment-survivorship-continuity/`
-- `domains/colorectal-cancer-screening-treatment-continuity/`
-- `domains/lung-cancer-screening-treatment-continuity/`
-- `domains/prostate-cancer-screening-treatment-continuity/`
-- `domains/cervical-cancer-hpv-prevention-screening-continuity/`
-- `domains/ovarian-cancer-symptom-detection-treatment-continuity/`
-- `domains/pancreatic-cancer-high-risk-detection-treatment-continuity/`
-- `domains/liver-cancer-cirrhosis-surveillance-treatment-continuity/`
-- `domains/childhood-cancer-treatment-survivorship-continuity/`
-- `domains/cancer-survivorship-late-effects-continuity/`
+- `domains/c2-source-maintenance/breast-cancer-screening-treatment-survivorship-continuity/`
+- `domains/c2-source-maintenance/colorectal-cancer-screening-treatment-continuity/`
+- `domains/c2-source-maintenance/lung-cancer-screening-treatment-continuity/`
+- `domains/c2-source-maintenance/prostate-cancer-screening-treatment-continuity/`
+- `domains/c2-source-maintenance/cervical-cancer-hpv-prevention-screening-continuity/`
+- `domains/c2-source-maintenance/ovarian-cancer-symptom-detection-treatment-continuity/`
+- `domains/c2-source-maintenance/pancreatic-cancer-high-risk-detection-treatment-continuity/`
+- `domains/c2-source-maintenance/liver-cancer-cirrhosis-surveillance-treatment-continuity/`
+- `domains/c2-source-maintenance/childhood-cancer-treatment-survivorship-continuity/`
+- `domains/c2-source-maintenance/cancer-survivorship-late-effects-continuity/`
 
 每个域只创建 `README.md` 和 `AGENTS.md`。本轮不创建数据采集脚本、筛查推荐器、诊断工具、治疗方案、个体风险评分或医疗决策系统。
 

@@ -16,11 +16,11 @@ Its real object is “using physics or biological state changes to reduce the su
 
 ## Decision
 
-Create `domains/future-waiting/` for future-waiting paths.
+Create `domains/c1-boundary-rewriting/future-waiting/` for future-waiting paths.
 
 The first path is:
 
-- `domains/future-waiting/paths/black-hole-waiting-room.md`
+- `domains/c1-boundary-rewriting/future-waiting/paths/black-hole-waiting-room.md`
 
 ## Alternatives Considered
 

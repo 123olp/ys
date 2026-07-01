@@ -14,16 +14,16 @@ Human Infra 已有 `urogenital-continuity/`、`renal-hepatic-clearance/`、`acut
 
 新增第九十四波 10 个研究域：
 
-- `domains/urinary-tract-infection-pyelonephritis-urosepsis-continuity/`
-- `domains/catheter-associated-uti-device-infection-continuity/`
-- `domains/urinary-retention-bladder-emptying-continuity/`
-- `domains/overactive-bladder-nocturia-sleep-continuity/`
-- `domains/kidney-stone-obstruction-renal-colic-continuity/`
-- `domains/benign-prostatic-hyperplasia-luts-continuity/`
-- `domains/urinary-diversion-urostomy-supplies-continuity/`
-- `domains/dialysis-access-vascular-peritoneal-continuity/`
-- `domains/home-dialysis-supply-self-management-continuity/`
-- `domains/kidney-transplant-immunosuppression-graft-continuity/`
+- `domains/c2-source-maintenance/urinary-tract-infection-pyelonephritis-urosepsis-continuity/`
+- `domains/c2-source-maintenance/catheter-associated-uti-device-infection-continuity/`
+- `domains/c6-local-unlocking/urinary-retention-bladder-emptying-continuity/`
+- `domains/c6-local-unlocking/overactive-bladder-nocturia-sleep-continuity/`
+- `domains/c2-source-maintenance/kidney-stone-obstruction-renal-colic-continuity/`
+- `domains/c6-local-unlocking/benign-prostatic-hyperplasia-luts-continuity/`
+- `domains/c6-local-unlocking/urinary-diversion-urostomy-supplies-continuity/`
+- `domains/c2-source-maintenance/dialysis-access-vascular-peritoneal-continuity/`
+- `domains/c2-source-maintenance/home-dialysis-supply-self-management-continuity/`
+- `domains/c2-source-maintenance/kidney-transplant-immunosuppression-graft-continuity/`
 
 ## Consequences
 

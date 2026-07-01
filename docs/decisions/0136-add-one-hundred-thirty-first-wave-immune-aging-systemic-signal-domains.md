@@ -16,12 +16,12 @@ These domains matter because long-lived subjects must keep adapting to new antig
 
 Add six immune-aging and systemic rejuvenation-signal continuity domains:
 
-- `domains/thymic-involution-naive-t-cell-output-continuity/`
-- `domains/immune-repertoire-vaccine-response-aging-continuity/`
-- `domains/clonal-hematopoiesis-chip-inflammatory-risk-continuity/`
-- `domains/inflammaging-chronic-low-grade-inflammation-continuity/`
-- `domains/plasma-proteome-systemic-aging-signal-continuity/`
-- `domains/extracellular-vesicle-sasp-intercellular-aging-continuity/`
+- `domains/c6-local-unlocking/thymic-involution-naive-t-cell-output-continuity/`
+- `domains/c2-source-maintenance/immune-repertoire-vaccine-response-aging-continuity/`
+- `domains/c6-local-unlocking/clonal-hematopoiesis-chip-inflammatory-risk-continuity/`
+- `domains/c6-local-unlocking/inflammaging-chronic-low-grade-inflammation-continuity/`
+- `domains/c6-local-unlocking/plasma-proteome-systemic-aging-signal-continuity/`
+- `domains/c6-local-unlocking/extracellular-vesicle-sasp-intercellular-aging-continuity/`
 
 Each domain must keep `README.md` and `AGENTS.md` as its local truth source. Each domain is a research, source-card, model-variable, visualization, and evidence-boundary object rather than an individual medical, testing, product, or therapy recommendation surface.
 

@@ -18,16 +18,16 @@ Human Infra 已经有 `oral-health-continuity/` 作为总口腔健康域，但�
 
 新增第八十八波 10 个正式研究域：
 
-- `domains/dental-caries-prevention-restoration-continuity/`
-- `domains/periodontal-disease-systemic-inflammation-continuity/`
-- `domains/tooth-loss-prosthodontic-chewing-continuity/`
-- `domains/dental-pain-emergency-infection-continuity/`
-- `domains/oral-cancer-mucosal-lesion-early-detection-continuity/`
-- `domains/pediatric-oral-health-development-continuity/`
-- `domains/geriatric-long-term-care-oral-health-continuity/`
-- `domains/dental-care-access-insurance-workforce-continuity/`
-- `domains/xerostomia-salivary-function-oral-medication-continuity/`
-- `domains/temporomandibular-orofacial-pain-jaw-function-continuity/`
+- `domains/c2-source-maintenance/dental-caries-prevention-restoration-continuity/`
+- `domains/c6-local-unlocking/periodontal-disease-systemic-inflammation-continuity/`
+- `domains/c6-local-unlocking/tooth-loss-prosthodontic-chewing-continuity/`
+- `domains/c2-source-maintenance/dental-pain-emergency-infection-continuity/`
+- `domains/c2-source-maintenance/oral-cancer-mucosal-lesion-early-detection-continuity/`
+- `domains/c2-source-maintenance/pediatric-oral-health-development-continuity/`
+- `domains/c2-source-maintenance/geriatric-long-term-care-oral-health-continuity/`
+- `domains/c2-source-maintenance/dental-care-access-insurance-workforce-continuity/`
+- `domains/c2-source-maintenance/xerostomia-salivary-function-oral-medication-continuity/`
+- `domains/c2-source-maintenance/temporomandibular-orofacial-pain-jaw-function-continuity/`
 
 每个域只创建 `README.md` 和 `AGENTS.md`。本轮不创建牙科诊断工具、影像判读、治疗推荐器、保险资格判断、产品推荐、用药建议、急救流程或个体护理系统。
 

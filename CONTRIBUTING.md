@@ -47,5 +47,5 @@ make check
 For the current data scripts:
 
 ```bash
-python3 -m py_compile domains/longevity-evidence/scripts/collect_mvp_data.py domains/longevity-evidence/scripts/collect_core_data.py
+python3 -m py_compile domains/c1-boundary-rewriting/longevity-evidence/scripts/collect_mvp_data.py domains/c1-boundary-rewriting/longevity-evidence/scripts/collect_core_data.py
 ```

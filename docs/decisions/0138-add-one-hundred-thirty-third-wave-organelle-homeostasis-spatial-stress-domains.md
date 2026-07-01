@@ -14,12 +14,12 @@ For Human Infra, this matters because effective immortality and subject-continui
 
 Create six independent research domains:
 
-- `domains/endoplasmic-reticulum-stress-upr-proteostasis-continuity/`
-- `domains/golgi-secretory-trafficking-organelle-homeostasis-continuity/`
-- `domains/peroxisome-redox-lipid-metabolism-homeostasis-continuity/`
-- `domains/organelle-contact-sites-intercompartmental-communication-continuity/`
-- `domains/biomolecular-condensates-phase-separation-stress-adaptation-continuity/`
-- `domains/cytoskeleton-mechanotransduction-cellular-mechanics-continuity/`
+- `domains/c2-source-maintenance/endoplasmic-reticulum-stress-upr-proteostasis-continuity/`
+- `domains/c2-source-maintenance/golgi-secretory-trafficking-organelle-homeostasis-continuity/`
+- `domains/c2-source-maintenance/peroxisome-redox-lipid-metabolism-homeostasis-continuity/`
+- `domains/c2-source-maintenance/organelle-contact-sites-intercompartmental-communication-continuity/`
+- `domains/c6-local-unlocking/biomolecular-condensates-phase-separation-stress-adaptation-continuity/`
+- `domains/c2-source-maintenance/cytoskeleton-mechanotransduction-cellular-mechanics-continuity/`
 
 Each domain gets a `README.md` and `AGENTS.md`, and the wave is indexed through root docs, domain maps, research atlas, radar, applications/literature, ethics boundaries, and repository checks.
 

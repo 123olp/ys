@@ -21,12 +21,12 @@ These conditions are not clinical recommendations. They are lower-level variable
 
 Create six new formal research domains:
 
-- `domains/lysosomal-flux-lipofuscin-clearance-continuity/`
-- `domains/ubiquitin-proteasome-protein-turnover-continuity/`
-- `domains/ribosome-translation-fidelity-proteome-integrity-continuity/`
-- `domains/rna-splicing-epitranscriptomic-maintenance-continuity/`
-- `domains/nuclear-gateway-nucleocytoplasmic-transport-continuity/`
-- `domains/ferroptosis-lipid-peroxidation-membrane-resilience-continuity/`
+- `domains/c2-source-maintenance/lysosomal-flux-lipofuscin-clearance-continuity/`
+- `domains/c6-local-unlocking/ubiquitin-proteasome-protein-turnover-continuity/`
+- `domains/c2-source-maintenance/ribosome-translation-fidelity-proteome-integrity-continuity/`
+- `domains/c6-local-unlocking/rna-splicing-epitranscriptomic-maintenance-continuity/`
+- `domains/c2-source-maintenance/nuclear-gateway-nucleocytoplasmic-transport-continuity/`
+- `domains/c2-source-maintenance/ferroptosis-lipid-peroxidation-membrane-resilience-continuity/`
 
 Each domain receives a `README.md` and `AGENTS.md`, and the wave is indexed in root docs, `domains/`, `docs/`, reference maps, safety boundaries, `CHANGELOG.md`, and `tools/check_repository.py`.
 

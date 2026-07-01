@@ -14,13 +14,13 @@ Human Infra 已经有 `neuro-continuity/`、`dementia-cognitive-decline-care-con
 
 新增第三十四波 7 个正式研究域：
 
-- `domains/cerebrovascular-stroke-brain-perfusion-resilience/`
-- `domains/traumatic-brain-injury-neurotrauma-recovery/`
-- `domains/delirium-acute-cognitive-failure-prevention/`
-- `domains/disorders-of-consciousness-coma-recovery/`
-- `domains/epilepsy-seizure-network-stability/`
-- `domains/autonomic-nervous-system-homeostasis/`
-- `domains/migraine-headache-effective-time-burden/`
+- `domains/c2-source-maintenance/cerebrovascular-stroke-brain-perfusion-resilience/`
+- `domains/c2-source-maintenance/traumatic-brain-injury-neurotrauma-recovery/`
+- `domains/c2-source-maintenance/delirium-acute-cognitive-failure-prevention/`
+- `domains/c2-source-maintenance/disorders-of-consciousness-coma-recovery/`
+- `domains/c2-source-maintenance/epilepsy-seizure-network-stability/`
+- `domains/c2-source-maintenance/autonomic-nervous-system-homeostasis/`
+- `domains/c6-local-unlocking/migraine-headache-effective-time-burden/`
 
 同步更新根 README、AGENTS、`domains/` 索引、`docs/` 索引、域地图、研究域图谱、潜在域雷达、伦理边界、真实应用与文献索引，以及仓库结构检查脚本。
 

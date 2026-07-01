@@ -23,12 +23,12 @@ These are not simply subtopics of `healthcare-access-continuity/`, `resource-soc
 
 Add six new domain skeletons:
 
-- `domains/medicine-access-treatment-continuity/`
-- `domains/patient-data-interoperability/`
-- `domains/telehealth-remote-monitoring-access/`
-- `domains/community-resource-navigation/`
-- `domains/language-access-plain-communication/`
-- `domains/labor-rights-workplace-protection/`
+- `domains/c4-conversion-channel/medicine-access-treatment-continuity/`
+- `domains/c4-conversion-channel/patient-data-interoperability/`
+- `domains/c4-conversion-channel/telehealth-remote-monitoring-access/`
+- `domains/c5-ecological-substrate/community-resource-navigation/`
+- `domains/c3-generation-engine/language-access-plain-communication/`
+- `domains/c5-ecological-substrate/labor-rights-workplace-protection/`
 
 Each domain starts with only `README.md` and `AGENTS.md`.
 

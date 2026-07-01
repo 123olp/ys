@@ -49,8 +49,8 @@ This removes Python cache and pytest cache directories.
 Run:
 
 ```bash
-python3 domains/longevity-evidence/scripts/collect_mvp_data.py --help
-python3 domains/longevity-evidence/scripts/collect_core_data.py --help
+python3 domains/c1-boundary-rewriting/longevity-evidence/scripts/collect_mvp_data.py --help
+python3 domains/c1-boundary-rewriting/longevity-evidence/scripts/collect_core_data.py --help
 ```
 
 Do not run network data collection unless you intentionally want to refresh generated data.

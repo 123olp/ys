@@ -16,14 +16,14 @@ These are subject-continuity conditions because court-process failure can turn r
 
 Add eight court access and civil-procedure execution continuity domains:
 
-- `domains/self-represented-litigant-court-self-help-continuity/`
-- `domains/court-efiling-document-submission-continuity/`
-- `domains/remote-hybrid-court-hearing-access-continuity/`
-- `domains/court-language-access-interpreter-continuity/`
-- `domains/court-disability-accommodation-accessibility-continuity/`
-- `domains/court-fees-fines-ability-to-pay-continuity/`
-- `domains/jury-service-summons-hardship-continuity/`
-- `domains/small-claims-civil-dispute-resolution-continuity/`
+- `domains/c5-ecological-substrate/self-represented-litigant-court-self-help-continuity/`
+- `domains/c5-ecological-substrate/court-efiling-document-submission-continuity/`
+- `domains/c2-source-maintenance/remote-hybrid-court-hearing-access-continuity/`
+- `domains/c3-generation-engine/court-language-access-interpreter-continuity/`
+- `domains/c5-ecological-substrate/court-disability-accommodation-accessibility-continuity/`
+- `domains/c5-ecological-substrate/court-fees-fines-ability-to-pay-continuity/`
+- `domains/c6-local-unlocking/jury-service-summons-hardship-continuity/`
+- `domains/c6-local-unlocking/small-claims-civil-dispute-resolution-continuity/`
 
 ## Consequences
 

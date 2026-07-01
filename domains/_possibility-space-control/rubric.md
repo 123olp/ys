@@ -131,8 +131,11 @@ domain
 tier
 tier_name
 control_axis
+physical_path
 rationale
 review_status
 ```
 
 `review_status` 默认是 `heuristic-v0.1`，表示初筛结果，需要后续人工复核。
+
+`physical_path` 必须指向真实存在的 C1-C6 物理目录，例如 `domains/c1-boundary-rewriting/future-waiting`。

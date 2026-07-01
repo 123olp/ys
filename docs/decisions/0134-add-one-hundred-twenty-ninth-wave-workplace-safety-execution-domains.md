@@ -14,12 +14,12 @@ Human Infra needs these domains because workplace tasks can abruptly convert inc
 
 Add six workplace acute-safety execution domains:
 
-- `domains/workplace-fall-protection-height-safety-continuity/`
-- `domains/hazardous-energy-lockout-tagout-continuity/`
-- `domains/machine-guarding-amputation-prevention-continuity/`
-- `domains/powered-industrial-truck-forklift-safety-continuity/`
-- `domains/confined-space-entry-atmospheric-hazard-continuity/`
-- `domains/bloodborne-pathogens-sharps-injury-worker-continuity/`
+- `domains/c5-ecological-substrate/workplace-fall-protection-height-safety-continuity/`
+- `domains/c5-ecological-substrate/hazardous-energy-lockout-tagout-continuity/`
+- `domains/c6-local-unlocking/machine-guarding-amputation-prevention-continuity/`
+- `domains/c6-local-unlocking/powered-industrial-truck-forklift-safety-continuity/`
+- `domains/c6-local-unlocking/confined-space-entry-atmospheric-hazard-continuity/`
+- `domains/c2-source-maintenance/bloodborne-pathogens-sharps-injury-worker-continuity/`
 
 Each domain must keep `README.md` and `AGENTS.md` as its local truth source, and each must stay framed as research, literature, source-card, visualization, and boundary analysis rather than site-specific safety instruction.
 

@@ -23,12 +23,12 @@ Each condition has distinct evidence sources, variables, failure modes, and safe
 
 Add six new domain skeletons:
 
-- `domains/household-emergency-preparedness-resilience/`
-- `domains/media-information-literacy-public-libraries/`
-- `domains/health-workforce-capacity/`
-- `domains/administrative-burden-procedural-friction/`
-- `domains/community-health-workers-peer-support/`
-- `domains/civic-data-open-government-transparency/`
+- `domains/c5-ecological-substrate/household-emergency-preparedness-resilience/`
+- `domains/c3-generation-engine/media-information-literacy-public-libraries/`
+- `domains/c3-generation-engine/health-workforce-capacity/`
+- `domains/c4-conversion-channel/administrative-burden-procedural-friction/`
+- `domains/c4-conversion-channel/community-health-workers-peer-support/`
+- `domains/c5-ecological-substrate/civic-data-open-government-transparency/`
 
 Each domain starts with only `README.md` and `AGENTS.md`.
 

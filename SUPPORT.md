@@ -8,7 +8,7 @@ Human Infra is currently a research and documentation repository, not a hosted p
 - Documentation entry: `docs/README.md`
 - Domain map: `docs/reference/domain-map.md`
 - Ethics and safety boundaries: `docs/reference/ethics-and-safety-boundaries.md`
-- Longevity Evidence domain: `domains/longevity-evidence/README.md`
+- Longevity Evidence domain: `domains/c1-boundary-rewriting/longevity-evidence/README.md`
 
 ## Asking for Help
 

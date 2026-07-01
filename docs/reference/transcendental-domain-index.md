@@ -30,17 +30,17 @@
 
 | 编号 | 用户语义 | 稳定目录 | 文档状态 | 索引入口 |
 | --- | --- | --- | --- | --- |
-| A | 细胞重编程 | `domains/cellular-reprogramming/` | `README.md` / `AGENTS.md` 已建 | 本文件、`research-domain-atlas.md`、`domain-map.md`、根 `README.md` |
-| B | 再生医学 | `domains/regenerative-medicine/` | `README.md` / `AGENTS.md` 已建 | 本文件、`research-domain-atlas.md`、`domain-map.md`、根 `README.md` |
-| C | 癌症控制 | `domains/cancer-control/` | `README.md` / `AGENTS.md` 已建 | 本文件、`research-domain-atlas.md`、`domain-map.md`、根 `README.md` |
-| D | 免疫系统维护 | `domains/immune-maintenance/` | `README.md` / `AGENTS.md` 已建 | 本文件、`research-domain-atlas.md`、`domain-map.md`、根 `README.md` |
-| E | 脑保存与人格连续性 | `domains/brain-preservation-connectomics-emulation/` | `README.md` / `AGENTS.md` 已建 | 本文件、`research-domain-atlas.md`、`domain-map.md`、根 `README.md` |
-| F | 记忆编辑 | `domains/memory-editing/` | `README.md` / `AGENTS.md` 已建 | 本文件、`research-domain-atlas.md`、`domain-map.md`、根 `README.md` |
-| G | AI 认知增强 | `domains/cognitive-augmentation/` | `README.md` / `AGENTS.md` 已建 | 本文件、`research-domain-atlas.md`、`domain-map.md`、根 `README.md` |
-| H | 未来等待 / 时间差分路径 | `domains/future-waiting/` | `README.md` / `AGENTS.md` 已建 | 本文件、`research-domain-atlas.md`、`domain-map.md`、根 `README.md` |
-| I | 去具身中枢生命系统 | `domains/disembodied-cns/` | `README.md` / `AGENTS.md` 已建 | 本文件、`research-domain-atlas.md`、`domain-map.md`、根 `README.md` |
-| J | 冷冻保存 / 生物停滞 | `domains/biostasis-cryopreservation/` | `README.md` / `AGENTS.md` 已建 | 本文件、`research-domain-atlas.md`、`domain-map.md`、根 `README.md` |
-| K | 资源、环境、社会支持基础设施 | `domains/resource-social-infra/` | `README.md` / `AGENTS.md` 已建 | 本文件、`research-domain-atlas.md`、`domain-map.md`、根 `README.md` |
+| A | 细胞重编程 | `domains/c2-source-maintenance/cellular-reprogramming/` | `README.md` / `AGENTS.md` 已建 | 本文件、`research-domain-atlas.md`、`domain-map.md`、根 `README.md` |
+| B | 再生医学 | `domains/c2-source-maintenance/regenerative-medicine/` | `README.md` / `AGENTS.md` 已建 | 本文件、`research-domain-atlas.md`、`domain-map.md`、根 `README.md` |
+| C | 癌症控制 | `domains/c2-source-maintenance/cancer-control/` | `README.md` / `AGENTS.md` 已建 | 本文件、`research-domain-atlas.md`、`domain-map.md`、根 `README.md` |
+| D | 免疫系统维护 | `domains/c2-source-maintenance/immune-maintenance/` | `README.md` / `AGENTS.md` 已建 | 本文件、`research-domain-atlas.md`、`domain-map.md`、根 `README.md` |
+| E | 脑保存与人格连续性 | `domains/c1-boundary-rewriting/brain-preservation-connectomics-emulation/` | `README.md` / `AGENTS.md` 已建 | 本文件、`research-domain-atlas.md`、`domain-map.md`、根 `README.md` |
+| F | 记忆编辑 | `domains/c1-boundary-rewriting/memory-editing/` | `README.md` / `AGENTS.md` 已建 | 本文件、`research-domain-atlas.md`、`domain-map.md`、根 `README.md` |
+| G | AI 认知增强 | `domains/c3-generation-engine/cognitive-augmentation/` | `README.md` / `AGENTS.md` 已建 | 本文件、`research-domain-atlas.md`、`domain-map.md`、根 `README.md` |
+| H | 未来等待 / 时间差分路径 | `domains/c1-boundary-rewriting/future-waiting/` | `README.md` / `AGENTS.md` 已建 | 本文件、`research-domain-atlas.md`、`domain-map.md`、根 `README.md` |
+| I | 去具身中枢生命系统 | `domains/c1-boundary-rewriting/disembodied-cns/` | `README.md` / `AGENTS.md` 已建 | 本文件、`research-domain-atlas.md`、`domain-map.md`、根 `README.md` |
+| J | 冷冻保存 / 生物停滞 | `domains/c1-boundary-rewriting/biostasis-cryopreservation/` | `README.md` / `AGENTS.md` 已建 | 本文件、`research-domain-atlas.md`、`domain-map.md`、根 `README.md` |
+| K | 资源、环境、社会支持基础设施 | `domains/c6-local-unlocking/resource-social-infra/` | `README.md` / `AGENTS.md` 已建 | 本文件、`research-domain-atlas.md`、`domain-map.md`、根 `README.md` |
 
 消费规则：
 
@@ -53,17 +53,17 @@
 
 | 先验追问节点 | 已有研究域目录 | 研究对象 | 关键判断 |
 | --- | --- | --- | --- |
-| 细胞年龄与身份是否可被拆开调控 | `domains/cellular-reprogramming/` | 山中因子、部分重编程、化学重编程、AI 因子设计、表观遗传编辑 | 只承认“细胞状态可扰动”这一研究对象，不把它写成全身逆龄或永生证明 |
-| 身体部件是否可修复、替换和再生 | `domains/regenerative-medicine/` | 组织修复、器官再生、再生材料、功能恢复 | 关注修复是否能转化为长期行动能力，而不是单次组织指标改善 |
-| 癌症风险是否可长期控制 | `domains/cancer-control/` | 肿瘤发生、筛查、治疗、复发、演化、幸存者风险 | 癌症是长寿路径中的关键竞争风险，任何增强干预都必须审查肿瘤化边界 |
-| 免疫系统是否能防御、修复并不过度攻击 | `domains/immune-maintenance/` | 免疫衰老、感染防御、慢性炎症、自身免疫、免疫监视 | 免疫既是维护系统，也是风险系统；过强、过弱和错配都可能破坏持续性 |
-| 大脑结构和信息是否能被保存、读取和再实现 | `domains/brain-preservation-connectomics-emulation/` | 脑保存、连接组、神经结构可读性、全脑仿真、上传假设 | 只审查信息连续性条件，不承诺数字永生或上传可行性 |
-| 记忆能否被干预且不摧毁人格连续性 | `domains/memory-editing/` | 记忆痕迹、创伤记忆、人格连续性、同意边界 | 记忆干预必须以主体连续性、同意和不可逆损害边界为先 |
-| AI 与工具是否放大主体而不是吞噬主体 | `domains/cognitive-augmentation/` | AI 认知增强、学习、判断、记忆外化、工具能力 | 关注能力放大、依赖风险、授权边界和主体控制权 |
-| 等待未来的主观成本是否可压缩 | `domains/future-waiting/` | 未来等待、固有时差分、休眠、长寿逃逸窗口、递归等待 | 时间差只是一种输入变量，必须同时审查退出、连续性、风险和采用概率 |
-| 中枢主体是否能脱离原身体被外部维持 | `domains/disembodied-cns/` | 去具身中枢生命系统、外部维生、接口闭环、控制权 | 只做高层架构和伦理边界，不提供实验或人体改造路径 |
-| 生物损耗是否可暂停或显著减速 | `domains/biostasis-cryopreservation/` | 冷冻保存、生物停滞、休眠、未来修复依赖 | 关注保存质量、结构完整性、可逆性和未来修复条件，不承诺复活 |
-| 资源、环境和社会支持是否稳定 | `domains/resource-social-infra/` | 食物、水、能源、住房、照护、医疗可及、社会支持 | 没有外部底座，主体持续性会被稀缺、断供、排除和孤立重新压回有限窗口 |
+| 细胞年龄与身份是否可被拆开调控 | `domains/c2-source-maintenance/cellular-reprogramming/` | 山中因子、部分重编程、化学重编程、AI 因子设计、表观遗传编辑 | 只承认“细胞状态可扰动”这一研究对象，不把它写成全身逆龄或永生证明 |
+| 身体部件是否可修复、替换和再生 | `domains/c2-source-maintenance/regenerative-medicine/` | 组织修复、器官再生、再生材料、功能恢复 | 关注修复是否能转化为长期行动能力，而不是单次组织指标改善 |
+| 癌症风险是否可长期控制 | `domains/c2-source-maintenance/cancer-control/` | 肿瘤发生、筛查、治疗、复发、演化、幸存者风险 | 癌症是长寿路径中的关键竞争风险，任何增强干预都必须审查肿瘤化边界 |
+| 免疫系统是否能防御、修复并不过度攻击 | `domains/c2-source-maintenance/immune-maintenance/` | 免疫衰老、感染防御、慢性炎症、自身免疫、免疫监视 | 免疫既是维护系统，也是风险系统；过强、过弱和错配都可能破坏持续性 |
+| 大脑结构和信息是否能被保存、读取和再实现 | `domains/c1-boundary-rewriting/brain-preservation-connectomics-emulation/` | 脑保存、连接组、神经结构可读性、全脑仿真、上传假设 | 只审查信息连续性条件，不承诺数字永生或上传可行性 |
+| 记忆能否被干预且不摧毁人格连续性 | `domains/c1-boundary-rewriting/memory-editing/` | 记忆痕迹、创伤记忆、人格连续性、同意边界 | 记忆干预必须以主体连续性、同意和不可逆损害边界为先 |
+| AI 与工具是否放大主体而不是吞噬主体 | `domains/c3-generation-engine/cognitive-augmentation/` | AI 认知增强、学习、判断、记忆外化、工具能力 | 关注能力放大、依赖风险、授权边界和主体控制权 |
+| 等待未来的主观成本是否可压缩 | `domains/c1-boundary-rewriting/future-waiting/` | 未来等待、固有时差分、休眠、长寿逃逸窗口、递归等待 | 时间差只是一种输入变量，必须同时审查退出、连续性、风险和采用概率 |
+| 中枢主体是否能脱离原身体被外部维持 | `domains/c1-boundary-rewriting/disembodied-cns/` | 去具身中枢生命系统、外部维生、接口闭环、控制权 | 只做高层架构和伦理边界，不提供实验或人体改造路径 |
+| 生物损耗是否可暂停或显著减速 | `domains/c1-boundary-rewriting/biostasis-cryopreservation/` | 冷冻保存、生物停滞、休眠、未来修复依赖 | 关注保存质量、结构完整性、可逆性和未来修复条件，不承诺复活 |
+| 资源、环境和社会支持是否稳定 | `domains/c6-local-unlocking/resource-social-infra/` | 食物、水、能源、住房、照护、医疗可及、社会支持 | 没有外部底座，主体持续性会被稀缺、断供、排除和孤立重新压回有限窗口 |
 
 ## 与研究域 Atlas 的关系
 

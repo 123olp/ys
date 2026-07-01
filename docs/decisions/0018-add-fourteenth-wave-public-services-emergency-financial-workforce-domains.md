@@ -25,12 +25,12 @@ These are adjacent to existing domains, but not identical to them. Collapsing th
 
 Add six new domain skeletons:
 
-- `domains/social-determinants-community-vulnerability/`
-- `domains/public-service-design-accessibility/`
-- `domains/emergency-alerts-communications/`
-- `domains/disaster-recovery-relief-continuity/`
-- `domains/financial-inclusion-payment-systems/`
-- `domains/workforce-employment-services/`
+- `domains/c5-ecological-substrate/social-determinants-community-vulnerability/`
+- `domains/c5-ecological-substrate/public-service-design-accessibility/`
+- `domains/c5-ecological-substrate/emergency-alerts-communications/`
+- `domains/c5-ecological-substrate/disaster-recovery-relief-continuity/`
+- `domains/c5-ecological-substrate/financial-inclusion-payment-systems/`
+- `domains/c5-ecological-substrate/workforce-employment-services/`
 
 Each domain starts with only `README.md` and `AGENTS.md`.
 

@@ -16,12 +16,12 @@ Human Infra 已有 `longevity-evidence/`、`nutrition-metabolic-health/`、`phys
 
 新增第一百二十五波 6 个长寿干预执行与证据治理连续性域：
 
-- `domains/geroprotective-drug-repurposing-trial-governance-continuity/`
-- `domains/dietary-supplement-nutraceutical-evidence-safety-continuity/`
-- `domains/resistance-training-muscle-strength-sarcopenia-continuity/`
-- `domains/cardiorespiratory-fitness-vo2max-aerobic-capacity-continuity/`
-- `domains/caloric-restriction-fasting-energy-balance-governance-continuity/`
-- `domains/thermal-stress-sauna-cold-exposure-hormesis-governance-continuity/`
+- `domains/c4-conversion-channel/geroprotective-drug-repurposing-trial-governance-continuity/`
+- `domains/c4-conversion-channel/dietary-supplement-nutraceutical-evidence-safety-continuity/`
+- `domains/c2-source-maintenance/resistance-training-muscle-strength-sarcopenia-continuity/`
+- `domains/c2-source-maintenance/cardiorespiratory-fitness-vo2max-aerobic-capacity-continuity/`
+- `domains/c5-ecological-substrate/caloric-restriction-fasting-energy-balance-governance-continuity/`
+- `domains/c6-local-unlocking/thermal-stress-sauna-cold-exposure-hormesis-governance-continuity/`
 
 这些域只整理公开资料、证据等级、变量接口、终点、风险门槛、实施条件和禁止用途，不提供药物、补剂、训练、禁食、冷热暴露、测试、处方、购买、剂量、频率、个体医疗或运动建议。
 

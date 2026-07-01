@@ -18,12 +18,12 @@ Human Infra 已经有 `cellular-reprogramming/`、`regenerative-medicine/`、`ca
 
 Add six formal biomedical platform domains:
 
-- `domains/gene-therapy-genome-editing-delivery-safety/`
-- `domains/biological-age-clocks-biomarker-validation/`
-- `domains/multiomics-personal-baseline-systems-biology/`
-- `domains/engineered-cell-therapy-regenerative-platforms/`
-- `domains/organoids-organ-on-chip-disease-models/`
-- `domains/xenotransplantation-bioengineered-organ-replacement/`
+- `domains/c6-local-unlocking/gene-therapy-genome-editing-delivery-safety/`
+- `domains/c2-source-maintenance/biological-age-clocks-biomarker-validation/`
+- `domains/c3-generation-engine/multiomics-personal-baseline-systems-biology/`
+- `domains/c2-source-maintenance/engineered-cell-therapy-regenerative-platforms/`
+- `domains/c2-source-maintenance/organoids-organ-on-chip-disease-models/`
+- `domains/c2-source-maintenance/xenotransplantation-bioengineered-organ-replacement/`
 
 Update root navigation, docs navigation, reference maps, radar, ethics boundaries, changelog and repository checks so the new domains are discoverable and validated.
 
