@@ -359,6 +359,16 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `household-poison-storage-child-resistant-packaging-continuity/` | 家庭毒物储存与儿童防护包装连续性决定药品、清洁剂和化学品是否通过包装、标签、储存和中毒控制入口降低误食风险 |
 | `window-covering-cord-strangulation-child-safety-continuity/` | 窗饰拉绳勒颈与儿童安全连续性决定隐蔽绳索暴露是否被产品标准、房间布置和照护边界治理 |
 | `hot-water-scald-burn-prevention-continuity/` | 热水烫伤与烧伤预防连续性决定洗浴、厨房和热水系统是否把温度、反应速度和照护执行转化为可治理变量 |
+| `drowning-water-safety-supervision-continuity/` | 溺水、水域安全与监督连续性决定水域暴露是否被监督、屏障、风险沟通和救援系统转化为可治理风险 |
+| `pool-spa-barrier-drain-entrapment-safety-continuity/` | 泳池/水疗池屏障与排水夹陷安全连续性决定水域设施是否通过物理边界、门禁、排水安全和维护责任降低儿童溺水/夹陷风险 |
+| `boating-life-jacket-watercraft-safety-continuity/` | 船艇、救生衣与水上载具安全连续性决定水上移动是否通过浮力保护、天气水况、事故报告和救援可达降低急性伤害 |
+| `child-passenger-safety-car-seat-restraint-continuity/` | 儿童乘员、安全座椅与约束连续性决定儿童身体尺度是否在车辆碰撞中获得匹配保护 |
+| `bicycle-helmet-wheeled-sports-head-injury-prevention-continuity/` | 自行车/轮式运动头部伤害预防连续性决定微移动和轮式娱乐是否把行动自由转化为可承受的头部冲击风险 |
+| `playground-surface-equipment-fall-injury-prevention-continuity/` | 游乐场表面、设备与跌落伤害预防连续性决定儿童游戏空间是否同时支撑发展机会和伤害风险治理 |
+| `sports-concussion-return-to-play-protocol-continuity/` | 运动脑震荡返学返赛协议连续性决定头部冲击后的恢复窗口是否被学校、教练、家庭和医疗转介共同保护 |
+| `infant-safe-sleep-suid-risk-reduction-continuity/` | 婴儿安全睡眠与 SUID 风险降低连续性决定早期生命是否通过睡眠环境、照护信息和产后支持安全进入未来 |
+| `firearm-safe-storage-injury-prevention-continuity/` | 枪支安全储存与伤害预防连续性决定高致死工具可及性是否被公共卫生证据和家庭风险边界治理 |
+| `atv-off-highway-vehicle-injury-prevention-continuity/` | ATV/OHV 越野车辆伤害预防连续性决定边缘移动中的速度、地形、翻覆和救援断点是否进入伤害预防模型 |
 | `sleep-disordered-breathing-screening-treatment-continuity/` | 睡眠呼吸障碍筛查与治疗连续性决定夜间低氧、觉醒碎片、日间嗜睡和心血管负荷是否进入可恢复路径 |
 | `chronic-insomnia-cbti-access-continuity/` | 慢性失眠与 CBT-I 可及连续性决定睡眠恢复失败是否持续消耗注意力、情绪、学习、工作和有效时间 |
 | `sexual-health-sti-prevention-continuity/` | 性健康与 STI 预防连续性决定检测、治疗转介、伴侣服务、隐私和污名治理是否保护身体完整性和关系安全 |

@@ -807,4 +807,14 @@ docs/
 621. Read `../domains/household-poison-storage-child-resistant-packaging-continuity/README.md` if you are working on household poison storage, child-resistant packaging, medicine/chemical access, or poison-control evidence boundaries.
 622. Read `../domains/window-covering-cord-strangulation-child-safety-continuity/README.md` if you are working on window-covering cords, strangulation risk, nursery safety, product standards, or child home injury prevention.
 623. Read `../domains/hot-water-scald-burn-prevention-continuity/README.md` if you are working on hot-water scalds, burn prevention, water temperature governance, bathing/kitchen burn risk, or household thermal injury.
-624. Enter a domain under `../domains/`.
+624. Read `../domains/drowning-water-safety-supervision-continuity/README.md` if you are working on drowning prevention, water safety, supervision systems, open water, pool exposure, or non-fatal drowning risk.
+625. Read `../domains/pool-spa-barrier-drain-entrapment-safety-continuity/README.md` if you are working on pool or spa barriers, gates, drain entrapment, suction hazards, or aquatic facility safety.
+626. Read `../domains/boating-life-jacket-watercraft-safety-continuity/README.md` if you are working on boating safety, life jackets, personal watercraft, watercraft incidents, weather exposure, or recreational water mobility.
+627. Read `../domains/child-passenger-safety-car-seat-restraint-continuity/README.md` if you are working on child passenger safety, car seats, booster seats, seat belts, restraint systems, or child traffic injury prevention.
+628. Read `../domains/bicycle-helmet-wheeled-sports-head-injury-prevention-continuity/README.md` if you are working on bicycle helmets, wheeled sports, skating, scooters, micromobility head injury, or recreational TBI prevention.
+629. Read `../domains/playground-surface-equipment-fall-injury-prevention-continuity/README.md` if you are working on playground equipment, surfacing, fall heights, child play safety, public playgrounds, or equipment maintenance evidence boundaries.
+630. Read `../domains/sports-concussion-return-to-play-protocol-continuity/README.md` if you are working on sports concussion, return-to-play, return-to-learn, school sports, coach protocols, or youth head injury governance.
+631. Read `../domains/infant-safe-sleep-suid-risk-reduction-continuity/README.md` if you are working on infant safe sleep, SUID/SIDS risk reduction, sleep environment, caregiver education, or early-life sleep safety.
+632. Read `../domains/firearm-safe-storage-injury-prevention-continuity/README.md` if you are working on firearm injury prevention, safe storage as public-health evidence, child access prevention, suicide-risk interfaces, or violence-risk boundaries.
+633. Read `../domains/atv-off-highway-vehicle-injury-prevention-continuity/README.md` if you are working on ATV/OHV injury prevention, off-highway vehicles, rollover risk, youth riding, recreational vehicle injuries, or product-safety boundaries.
+634. Enter a domain under `../domains/`.

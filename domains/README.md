@@ -692,6 +692,16 @@
 - `household-poison-storage-child-resistant-packaging-continuity/`：家庭毒物储存与儿童防护包装连续性，整理药品/化学品储存、儿童防护包装、误食暴露和中毒控制入口。
 - `window-covering-cord-strangulation-child-safety-continuity/`：窗饰拉绳勒颈与儿童安全连续性，整理窗帘/百叶拉绳、睡眠/游戏空间、产品标准和儿童勒颈风险。
 - `hot-water-scald-burn-prevention-continuity/`：热水烫伤与烧伤预防连续性，整理洗浴/厨房热水、温度控制、儿童/老人暴露、烫伤窗口和热伤害边界。
+- `drowning-water-safety-supervision-continuity/`：溺水、水域安全与监督连续性，整理水域暴露、监督系统、开放水域、泳池暴露和非致死性缺氧风险。
+- `pool-spa-barrier-drain-entrapment-safety-continuity/`：泳池/水疗池屏障与排水夹陷安全连续性，整理围栏门禁、排水吸附、维护责任和水域设施安全。
+- `boating-life-jacket-watercraft-safety-continuity/`：船艇、救生衣与水上载具安全连续性，整理休闲船艇、个人水上载具、救生衣、天气水况和事故报告。
+- `child-passenger-safety-car-seat-restraint-continuity/`：儿童乘员、安全座椅与约束连续性，整理汽车座椅、增高垫、安全带、召回和车辆碰撞保护。
+- `bicycle-helmet-wheeled-sports-head-injury-prevention-continuity/`：自行车/轮式运动头部伤害预防连续性，整理自行车、滑板、滑板车、轮滑、头盔标准和头部冲击。
+- `playground-surface-equipment-fall-injury-prevention-continuity/`：游乐场表面、设备与跌落伤害预防连续性，整理缓冲地面、跌落高度、维护、可达性和儿童游戏伤害。
+- `sports-concussion-return-to-play-protocol-continuity/`：运动脑震荡返学返赛协议连续性，整理运动脑震荡、返学返赛、学校/教练执行和头部伤害负担。
+- `infant-safe-sleep-suid-risk-reduction-continuity/`：婴儿安全睡眠与 SUID 风险降低连续性，整理睡眠环境、照护信息、产后支持和早期生命安全。
+- `firearm-safe-storage-injury-prevention-continuity/`：枪支安全储存与伤害预防连续性，整理高致死工具可及性、儿童接触、自伤窗口、家庭暴力风险和公共卫生证据边界。
+- `atv-off-highway-vehicle-injury-prevention-continuity/`：ATV/OHV 越野车辆伤害预防连续性，整理翻覆、头部伤害、儿童/青少年使用、地形和救援断点。
 - `sleep-disordered-breathing-screening-treatment-continuity/`：睡眠呼吸障碍筛查与治疗连续性，整理夜间低氧、诊断转介、治疗坚持、设备可及和日间功能风险。
 - `chronic-insomnia-cbti-access-continuity/`：慢性失眠与 CBT-I 可及连续性，整理恢复失败、行为治疗可及、药物风险、日间功能和复发预防。
 - `sexual-health-sti-prevention-continuity/`：性健康与 STI 预防连续性，整理检测、治疗转介、伴侣服务、隐私、污名和公共卫生屏障。

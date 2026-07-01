@@ -579,6 +579,16 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 家庭毒物安全依赖储存和包装执行 | `household-poison-storage-child-resistant-packaging-continuity/` | 药品/化学品储存、儿童防护包装、误食暴露 | 毒物暴露常发生在照护间隙，包装、标签、储存和中毒控制入口共同决定风险 |
 | 窗饰拉绳是隐蔽勒颈风险 | `window-covering-cord-strangulation-child-safety-continuity/` | 窗饰拉绳、儿童睡眠/游戏空间、产品标准 | 小尺度绳索暴露会在监护外形成高后果伤害窗口 |
 | 热水烫伤是温度治理失败 | `hot-water-scald-burn-prevention-continuity/` | 洗浴/厨房热水、温度控制、儿童/老人暴露 | 热水系统把能源、照护、感知和反应速度连接成烧伤预防边界 |
+| 溺水是分钟级缺氧中止门 | `drowning-water-safety-supervision-continuity/` | 水域暴露、监督系统、开放水域、非致死性溺水 | 水域暴露可绕过主体自主行动能力，使呼吸、意识和脑功能在短窗口内坍塌 |
+| 泳池设施需要屏障和排水治理 | `pool-spa-barrier-drain-entrapment-safety-continuity/` | 泳池/水疗池、围栏门禁、排水吸附、夹陷 | 家庭和公共水域设施通过无监督入水和排水夹陷形成独立风险链 |
+| 船艇安全连接浮力和水上救援 | `boating-life-jacket-watercraft-safety-continuity/` | 船艇、救生衣、天气水况、酒精、事故报告 | 水上载具把娱乐移动、天气、判断和救援可达连接成高后果行动链 |
+| 儿童乘员安全是身体尺度匹配问题 | `child-passenger-safety-car-seat-restraint-continuity/` | 汽车座椅、增高垫、安全带、召回、碰撞保护 | 成人车辆约束默认不匹配儿童身体尺度，碰撞能量会转化为高后果伤害 |
+| 轮式运动头部保护影响微移动持续性 | `bicycle-helmet-wheeled-sports-head-injury-prevention-continuity/` | 自行车、滑板、滑板车、头盔标准、头部冲击 | 微移动和轮式娱乐会把行动自由与 TBI 风险绑定在一起 |
+| 游乐场是发展机会和伤害窗口 | `playground-surface-equipment-fall-injury-prevention-continuity/` | 游乐场设备、缓冲地面、跌落高度、维护、可达性 | 游戏空间支持发育、运动和社交，同时通过设备和表面失效产生跌落伤害 |
+| 运动脑震荡需要返学返赛治理 | `sports-concussion-return-to-play-protocol-continuity/` | 运动脑震荡、返学返赛、教练/学校执行、团队压力 | 头部冲击后的恢复窗口决定学习、情绪、运动身份和长期脑功能连续性 |
+| 婴儿安全睡眠是早期生命代理条件 | `infant-safe-sleep-suid-risk-reduction-continuity/` | 婴儿睡眠环境、SUID/SIDS、照护者信息、产后支持 | 婴儿不能主动管理环境，睡眠环境和照护执行决定其是否安全进入未来 |
+| 枪支安全储存是高致死工具可及性治理 | `firearm-safe-storage-injury-prevention-continuity/` | 安全储存、儿童接触、自伤窗口、家庭暴力风险 | 高致死工具的即时可及性会把冲动、误触和冲突转化为不可逆死亡 |
+| ATV/OHV 是边缘移动高能伤害窗口 | `atv-off-highway-vehicle-injury-prevention-continuity/` | ATV/OHV、翻覆、头部伤害、地形、救援断点 | 越野车辆把速度、地形、儿童判断和救援距离叠加为高能机械风险 |
 | 睡眠呼吸障碍可避免夜间恢复失败 | `sleep-disordered-breathing-screening-treatment-continuity/` | 睡眠呼吸障碍、夜间低氧、诊断转介、治疗坚持、设备可及 | 夜间低氧、觉醒碎片、日间嗜睡和心血管负荷持续消耗有效时间、判断和恢复能力 |
 | 慢性失眠可通过可及治疗保护恢复 | `chronic-insomnia-cbti-access-continuity/` | 慢性失眠、CBT-I 可及、行为治疗、药物风险、复发预防 | 恢复失败、用药风险、情绪波动和日间功能损害降低单位时间行动质量 |
 | 性健康服务可保护关系和公共卫生屏障 | `sexual-health-sti-prevention-continuity/` | STI 预防、检测、治疗转介、伴侣服务、隐私、污名 | 无症状感染、污名、医疗回避和伴侣服务断裂改变生殖健康、关系安全和传播风险 |
@@ -1304,6 +1314,16 @@ risk-engineering
   -> household-poison-storage-child-resistant-packaging-continuity
   -> window-covering-cord-strangulation-child-safety-continuity
   -> hot-water-scald-burn-prevention-continuity
+  -> drowning-water-safety-supervision-continuity
+  -> pool-spa-barrier-drain-entrapment-safety-continuity
+  -> boating-life-jacket-watercraft-safety-continuity
+  -> child-passenger-safety-car-seat-restraint-continuity
+  -> bicycle-helmet-wheeled-sports-head-injury-prevention-continuity
+  -> playground-surface-equipment-fall-injury-prevention-continuity
+  -> sports-concussion-return-to-play-protocol-continuity
+  -> infant-safe-sleep-suid-risk-reduction-continuity
+  -> firearm-safe-storage-injury-prevention-continuity
+  -> atv-off-highway-vehicle-injury-prevention-continuity
   -> sleep-disordered-breathing-screening-treatment-continuity
   -> chronic-insomnia-cbti-access-continuity
   -> sexual-health-sti-prevention-continuity

@@ -586,6 +586,24 @@ Human Infra 不能被设计成更精密的压榨系统。
 - 产出规避标准、绕过报警器、安全设备失效化、危险实验、DIY 高风险改造、产品背书、恐慌营销或替代专业人员现场判断的内容。
 - 替代建筑/消防/电气/燃气/水暖/儿童安全/毒物控制/医疗急救/保险/法律专业人员。
 
+## 儿童、运动与娱乐伤害预防执行连续性边界
+
+`drowning-water-safety-supervision-continuity`、`pool-spa-barrier-drain-entrapment-safety-continuity`、`boating-life-jacket-watercraft-safety-continuity`、`child-passenger-safety-car-seat-restraint-continuity`、`bicycle-helmet-wheeled-sports-head-injury-prevention-continuity`、`playground-surface-equipment-fall-injury-prevention-continuity`、`sports-concussion-return-to-play-protocol-continuity`、`infant-safe-sleep-suid-risk-reduction-continuity`、`firearm-safe-storage-injury-prevention-continuity` 和 `atv-off-highway-vehicle-injury-prevention-continuity` 关注儿童、运动、娱乐和高后果工具场景如何通过屏障、约束、监督、协议、信息传播、产品标准和公共卫生证据改变主体持续性，不是救援、驾驶、武器、育儿、运动许可、产品采购、法律或个体安全建议入口。
+
+可以做：
+
+- 整理 CDC、CPSC、Pool Safely、USCG、NHTSA、NIH、Safe to Sleep 和相关公共机构资料。
+- 比较溺水、泳池/水疗池夹陷、船艇事故、儿童乘员伤害、轮式运动头部伤害、游乐场跌落、运动脑震荡、SUID、枪支伤害和 ATV/OHV 事故如何影响死亡风险、失能风险、学习路径、家庭系统和未来选择权。
+- 记录儿童、运动与娱乐伤害预防的系统变量、证据等级、执行断点、隐私边界、禁止用途和不确定性。
+
+不能做：
+
+- 提供游泳、救援、复苏、泳池施工、船艇驾驶、座椅安装、骑行路线、头盔调整、游乐场检查、返赛许可、婴儿睡眠安排、枪支购买/持有/操作/储存步骤、ATV 驾驶、设备购买、法律、保险、医疗或个体安全建议。
+- 根据儿童信息、家庭照片、车辆照片、泳池照片、运动录像、婴儿睡眠环境、武器信息、车辆型号、位置轨迹或事故经历做个体风险评估。
+- 收集、存储或推断可识别儿童、家庭、学校、车辆、武器、活动地点、健康状态、事故记录、监控画面或其他敏感数据。
+- 产出绕过安全装置、危险驾驶、非法使用、战术/自卫、武器操作、救援操作、返赛背书、产品背书、恐慌营销或替代专业人员现场判断的内容。
+- 替代儿科、急救、公共卫生、执法、交通安全、消防/水域安全、学校体育、法律、保险或儿童保护专业人员。
+
 ## 器官/阶段特异癌症连续性边界
 
 `breast-cancer-screening-treatment-survivorship-continuity`、`colorectal-cancer-screening-treatment-continuity`、`lung-cancer-screening-treatment-continuity`、`prostate-cancer-screening-treatment-continuity`、`cervical-cancer-hpv-prevention-screening-continuity`、`ovarian-cancer-symptom-detection-treatment-continuity`、`pancreatic-cancer-high-risk-detection-treatment-continuity`、`liver-cancer-cirrhosis-surveillance-treatment-continuity`、`childhood-cancer-treatment-survivorship-continuity` 和 `cancer-survivorship-late-effects-continuity` 关注器官/阶段特异癌症如何通过筛查路径、异常闭环、治疗负担、复发/晚期效应、家庭照护、工作保险和生活质量改变主体持续性，不是个人癌症诊断、治疗、筛查、遗传咨询、随访或预后建议入口。

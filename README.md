@@ -251,6 +251,16 @@ flowchart TD
     FRS --> HPSC[poison-storage<br/>毒物储存 / 儿童包装]
     FRS --> WCCS[window-cord<br/>窗饰拉绳]
     FRS --> HWSB[hot-water-scald<br/>热水烫伤]
+    FRS --> DWS[drowning-water-safety<br/>溺水 / 水域监督]
+    FRS --> PSBE[pool-spa-barrier<br/>泳池屏障 / 排水夹陷]
+    FRS --> BLJW[boating-life-jacket<br/>船艇 / 救生衣]
+    RTIPSM --> CPSCR[child-passenger-restraint<br/>儿童乘员约束]
+    WBMIC --> BHWS[bicycle-helmet<br/>轮式运动头部伤害]
+    FRS --> PSEF[playground-surface<br/>游乐场表面 / 设备]
+    TBINR --> SCRTP[sports-concussion<br/>运动脑震荡返学返赛]
+    MNCD --> ISSS[infant-safe-sleep<br/>婴儿安全睡眠 / SUID]
+    PSVP --> FSSIP[firearm-safe-storage<br/>枪支安全储存]
+    RTIPSM --> ATVOHV[atv-ohv-injury<br/>ATV/OHV 越野伤害]
     H --> SBW[skin-barrier-wound-healing<br/>皮肤屏障 / 伤口愈合]
     SBW --> PIPRSS[pressure-injury-prevention<br/>压力损伤 / 支撑面]
     SBW --> CWVDPU[chronic-wound<br/>慢性伤口 / 溃疡]
@@ -1457,6 +1467,16 @@ flowchart TD
 | [Household Poison Storage Child Resistant Packaging Continuity](domains/household-poison-storage-child-resistant-packaging-continuity/README.md) | 家庭毒物、药品/化学品储存、儿童防护包装、误食暴露 | 把毒物接触从意外事件转化为包装、储存、标签和中毒控制入口的执行链 | 不提供中毒处置、药物/化学品建议、储存个案、包装评判、法律或产品建议 |
 | [Window Covering Cord Strangulation Child Safety Continuity](domains/window-covering-cord-strangulation-child-safety-continuity/README.md) | 窗饰拉绳、勒颈风险、儿童睡眠/游戏空间、产品标准 | 把隐蔽勒颈风险纳入儿童家庭环境、产品标准和照护执行模型 | 不提供安装、改造、产品选择、儿童监控、急救、法律或个案安全建议 |
 | [Hot Water Scald Burn Prevention Continuity](domains/hot-water-scald-burn-prevention-continuity/README.md) | 热水烫伤、洗浴/厨房热水、温度控制、儿童/老人暴露 | 把热水暴露纳入烧伤预防、照护交接、热环境治理和家庭安全模型 | 不提供水温设置、设备调整、急救、烧伤处理、施工、产品或个体建议 |
+| [Drowning Water Safety Supervision Continuity](domains/drowning-water-safety-supervision-continuity/README.md) | 溺水、水域安全、监督系统、开放水域和非致死性缺氧 | 把水域暴露从娱乐细节转化为分钟级缺氧和急性中止门 | 不提供游泳、救援、复苏、活动许可、儿童监控或个体水域安全建议 |
+| [Pool Spa Barrier Drain Entrapment Safety Continuity](domains/pool-spa-barrier-drain-entrapment-safety-continuity/README.md) | 泳池/水疗池、屏障、门禁、排水吸附和夹陷 | 把家庭/公共水域设施拆成屏障、排水、维护和标准执行变量 | 不提供泳池设计、施工、安装、维修、救援、法规判定或产品建议 |
+| [Boating Life Jacket Watercraft Safety Continuity](domains/boating-life-jacket-watercraft-safety-continuity/README.md) | 船艇、救生衣、个人水上载具、天气水况和事故报告 | 把水上娱乐移动纳入浮力保护、判断、天气和救援可达模型 | 不提供驾驶、航线、天气决策、装备选择、救援、法律或保险建议 |
+| [Child Passenger Safety Car Seat Restraint Continuity](domains/child-passenger-safety-car-seat-restraint-continuity/README.md) | 儿童乘员、安全座椅、增高垫、安全带约束和召回 | 把儿童身体尺度与高速移动风险的错配纳入道路安全执行层 | 不提供座椅选择、安装、适配判断、座位安排、法律或产品建议 |
+| [Bicycle Helmet Wheeled Sports Head Injury Prevention Continuity](domains/bicycle-helmet-wheeled-sports-head-injury-prevention-continuity/README.md) | 自行车、滑板、滑板车、轮滑、头盔标准和头部冲击 | 把微移动自由与头部创伤风险连接到环境、标准和保护变量 | 不提供头盔购买、佩戴调整、骑行教学、路线、法规或伤后处理建议 |
+| [Playground Surface Equipment Fall Injury Prevention Continuity](domains/playground-surface-equipment-fall-injury-prevention-continuity/README.md) | 游乐场设备、缓冲地面、跌落高度、维护和可达性 | 把儿童游戏空间同时作为发展机会和伤害预防基础设施治理 | 不提供设计、施工、检查、维修、采购、年龄许可或儿童监控建议 |
+| [Sports Concussion Return To Play Protocol Continuity](domains/sports-concussion-return-to-play-protocol-continuity/README.md) | 运动脑震荡、返学返赛、教练/学校执行和团队压力 | 把头部冲击后的脑恢复窗口纳入认知、教育和运动参与连续性 | 不提供诊断、症状判读、返赛许可、训练、医疗、学校资格或法律建议 |
+| [Infant Safe Sleep SUID Risk Reduction Continuity](domains/infant-safe-sleep-suid-risk-reduction-continuity/README.md) | 婴儿安全睡眠、睡眠环境、SUID/SIDS 风险降低和照护信息 | 把早期生命睡眠环境纳入儿童主体进入未来的代理执行条件 | 不提供睡眠安排、产品选择、共睡判断、急救、个案安全或育儿处方建议 |
+| [Firearm Safe Storage Injury Prevention Continuity](domains/firearm-safe-storage-injury-prevention-continuity/README.md) | 枪支安全储存、儿童接触、自伤窗口、家庭暴力风险和公共卫生证据 | 把高致死工具可及性纳入高后果伤害预防和风险治理模型 | 不提供购买、持有、携带、操作、储存步骤、锁具、战术、自卫、法律或个体风险建议 |
+| [ATV Off Highway Vehicle Injury Prevention Continuity](domains/atv-off-highway-vehicle-injury-prevention-continuity/README.md) | ATV/OHV、翻覆、头部伤害、儿童/青少年使用、地形和救援断点 | 把越野娱乐移动纳入速度、地形、产品安全和创伤风险模型 | 不提供驾驶、路线、车辆选择、维修改装、装备购买、事故处理或法律建议 |
 | [Sleep Disordered Breathing Screening Treatment Continuity](domains/sleep-disordered-breathing-screening-treatment-continuity/README.md) | 睡眠呼吸障碍、夜间低氧、诊断转介、治疗坚持和设备可及 | 把夜间低氧、觉醒碎片、日间疲劳和心血管负荷纳入恢复系统模型 | 不提供睡眠报告判读、CPAP 设置、设备选择、驾驶限制或个体医疗建议 |
 | [Chronic Insomnia CBTI Access Continuity](domains/chronic-insomnia-cbti-access-continuity/README.md) | 慢性失眠、CBT-I 可及、睡眠行为治疗、药物风险和复发预防 | 把恢复失败转化为注意力、情绪、学习、工作和有效时间损失变量 | 不提供 CBT-I 操作、睡眠限制计划、药物、停药、设备或个体治疗建议 |
 | [Sexual Health STI Prevention Continuity](domains/sexual-health-sti-prevention-continuity/README.md) | 性健康、STI 预防、检测、治疗转介、伴侣服务、隐私和污名 | 把身体完整性、关系安全、生殖健康和公共卫生屏障纳入模型 | 不提供 STI 判读、用药、伴侣通知脚本、暴露处理、性行为或法律建议 |
@@ -2154,5 +2174,6 @@ flowchart LR
 - 2026-07-01：新增第八十八波 10 个口腔、牙科与颌面功能连续性域，覆盖龋病、牙周病、缺牙修复咀嚼、牙痛急性感染、口腔癌早期识别、儿童口腔、老年长期照护口腔、牙科服务可及性、口干唾液功能和颞下颌/口颌面痛。
 - 2026-07-01：新增第九十五波 10 个皮肤屏障、伤口、压力损伤与皮肤病执行连续性域，覆盖压力损伤预防、慢性伤口、伤口感染/蜂窝织炎、糖尿病足、烧伤后创面、手术切口/SSI、潮湿相关皮炎、湿疹瘙痒睡眠、银屑病系统负担和皮肤护理用品连续性。
 - 2026-07-01：新增第九十六波 10 个居家伤害预防与家庭安全执行连续性域，覆盖浴室洗澡如厕转移、楼梯台阶扶手门槛、夜间路径照明、卧室床转移夹陷、烟雾报警家庭逃生、一氧化碳报警燃烧设备、家具/电视倾倒锚固、家庭毒物储存儿童防护包装、窗饰拉绳勒颈和热水烫伤预防。
+- 2026-07-01：新增第九十七波 10 个儿童、运动与娱乐伤害预防执行连续性域，覆盖溺水水域安全、泳池/水疗池屏障与排水夹陷、船艇救生衣、儿童乘员约束、轮式运动头部伤害、游乐场表面设备、运动脑震荡返学返赛、婴儿安全睡眠、枪支安全储存和 ATV/OHV 伤害预防。
 
 完整记录见 [CHANGELOG.md](CHANGELOG.md)。
