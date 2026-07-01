@@ -155,6 +155,7 @@ flowchart LR
 | 加入社区 | [Telegram](https://t.me/human_infra) | 讨论 Human Infra、长寿证据、未来等待路径和研究资料 |
 | 运行质量检查 | [docs/how-to/run-quality-checks.md](docs/how-to/run-quality-checks.md) | 本地和 CI 的检查命令 |
 | 查看所有子域 | [domains/README.md](domains/README.md) | 可独立演化的研究域入口 |
+| 查看可能性空间分级 | [Possibility Space Control](domains/_possibility-space-control/README.md) | 按根本性、长远性和边界改写能力给全部正式研究域分级 |
 | 查看细胞重编程谱系 | [Cellular Reprogramming](domains/cellular-reprogramming/README.md) | 从山中因子、部分重编程到化学重编程、AI 因子设计和表观遗传编辑的机制边界 |
 | 查看结构决策 | [docs/decisions/README.md](docs/decisions/README.md) | ADR 与仓库重组决策 |
 
@@ -2097,6 +2098,7 @@ human_infra/
 │   ├── templates/           # 文档模板
 │   └── tutorials/           # 学习路径
 ├── domains/                 # 可独立演化的研究子域
+│   ├── _possibility-space-control/ # 可能性空间控制分级元索引
 │   ├── antimicrobial-resilience/
 │   ├── animal-health-zoonotic-interface-one-health/
 │   ├── human-animal-bond-companion-care-continuity/
@@ -2779,6 +2781,7 @@ flowchart LR
 
 ## 变更记录
 
+- 2026-07-02：新增 `domains/_possibility-space-control/`，按可能性空间控制力对 990 个正式研究域进行 C1-C6 根本性分级。
 - 2026-06-20：从 Biocat 单项目重组为 Human Infra 总项目；Biocat 迁入 `domains/longevity-evidence/`；新增去具身中枢生命系统与记忆编辑两个研究域；补齐 Docs-as-Code 知识仓库根文件、文档分层、协作模板和结构检查脚本。
 - 2026-06-22：新增 `future-waiting` 子域和“度规红移固有时差分路径（黑洞等待室）”未来等待路径。
 - 2026-06-23：新增 GitHub Actions 远程质量门禁，统一运行本地 `make check`。

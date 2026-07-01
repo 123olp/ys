@@ -6,6 +6,7 @@ Current documents:
 
 - `applications-and-literature.md`: real-world application cases and literature spine for Human Infra.
 - `arxiv-html-papers-toolchain.md`: arXiv HTML papers toolchain analysis, local mirroring commands, reader controls, reusable CLI tooling, and Human Infra reuse boundary.
+- `../../domains/_possibility-space-control/README.md`: control-plane index for classifying research domains by possibility-space control power rather than feasibility.
 - `domain-map.md`: the Human Infra domain structure and migration slice.
 - `domain-map.md`, `research-domain-atlas.md`, `research-domain-radar.md`, `applications-and-literature.md`, and `ethics-and-safety-boundaries.md`: also index immune-aging and systemic rejuvenation-signal domains for thymic output, immune repertoire aging, CHIP, inflammaging, plasma proteome signals, and EV/SASP communication.
 - `domain-map.md`, `research-domain-atlas.md`, `research-domain-radar.md`, `applications-and-literature.md`, and `ethics-and-safety-boundaries.md`: also index intracellular quality-control and molecular information-maintenance domains for lysosomal flux, ubiquitin-proteasome turnover, translation fidelity, RNA maintenance, nucleocytoplasmic transport, and ferroptosis / lipid-peroxidation membrane resilience.

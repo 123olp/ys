@@ -2,6 +2,10 @@
 
 `domains/` 存放 Human Infra 的可独立演化子域。每个子域必须有自己的 README、边界、证据要求和非目标。
 
+## 元索引
+
+- `_possibility-space-control/`：可能性空间控制分级索引。它不是普通研究域，而是按“研究域一旦成立或失效，能多深、多大、多长期地改写主体未来可能性空间”对全部正式研究域进行 C1-C6 分级。
+
 当前子域：
 
 - `longevity-evidence/`：长寿证据账本，承接原 Biocat。

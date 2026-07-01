@@ -33,6 +33,8 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 
 研究域不是按“技术热度”生成，而是按“主体持续性成立条件”生成。
 
+新增研究域后，还必须进入 [`domains/_possibility-space-control/`](../../domains/_possibility-space-control/README.md) 的可能性空间控制分级。该分级不衡量近期可行性，而衡量一个研究域一旦成立或失效，能多深、多大、多长期地改写主体未来可能性空间。
+
 ## 域判定契约
 
 一个候选域只有同时满足这些条件，才应进入 `domains/`：

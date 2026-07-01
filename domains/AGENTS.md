@@ -8,6 +8,12 @@
 domains/
 ├── AGENTS.md
 ├── README.md
+├── _possibility-space-control/
+│   ├── AGENTS.md
+│   ├── README.md
+│   ├── classification.tsv
+│   ├── rubric.md
+│   └── summary.md
 ├── antimicrobial-resilience/
 │   ├── AGENTS.md
 │   └── README.md
@@ -2702,6 +2708,7 @@ domains/
 
 ## 职责边界
 
+- `_possibility-space-control/` 是研究域分级控制面，只维护可能性空间控制力的分层标尺、全域分类表和统计摘要；它不是普通研究域，不承载具体论文、数据、证据卡或产品脚本。
 - `longevity-evidence/` 是当前唯一含数据和采集脚本的产品化子域。
 - `genomic-stability-dna-repair/`、`telomere-maintenance/`、`proteostasis-autophagy/`、`mitochondrial-bioenergetics/`、`cellular-senescence-clearance/`、`extracellular-matrix-glycation/`、`microbiome-ecology/`、`stem-cell-reserve-renewal/` 和 `renal-hepatic-clearance/` 负责分子维护、结构材料、宿主生态、内源性修复和肝肾清除底座。
 - `lysosomal-flux-lipofuscin-clearance-continuity/`、`ubiquitin-proteasome-protein-turnover-continuity/`、`ribosome-translation-fidelity-proteome-integrity-continuity/`、`rna-splicing-epitranscriptomic-maintenance-continuity/`、`nuclear-gateway-nucleocytoplasmic-transport-continuity/` 和 `ferroptosis-lipid-peroxidation-membrane-resilience-continuity/` 负责细胞内质量控制与分子信息维护下层机制，不提供自噬激活、蛋白酶体调节、mTOR/ISR/RNA/核结构/铁死亡干预、检测解释、实验操作或临床建议。
@@ -2920,6 +2927,7 @@ domains/
 ## 维护规则
 
 - 新子域必须先在 `docs/reference/domain-map.md` 中说明存在理由、边界和非目标。
+- 新子域必须同步进入 `_possibility-space-control/classification.tsv`，并按可能性空间控制力说明根本性层级。
 - 子域内新增文件或目录时，同步更新该子域 `AGENTS.md`。
 - 跨子域概念进入 `docs/`；子域专属材料留在对应子域。
 - 不为了“未来可能需要”创建空数据、空脚本或空框架目录。
