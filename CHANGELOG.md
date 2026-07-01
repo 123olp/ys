@@ -4,6 +4,8 @@ All notable repository structure changes are recorded here.
 
 ## 2026-07-02
 
+- Added `domains/c1-boundary-rewriting/longevity-evidence/docs/lev-higher-order-effects-discovery.md` to capture second-order and multi-order LEV discovery findings, including flexible resources, adoption diffusion, intervention-generated inequalities, rebound effects, calibration risks, and new probability gates.
+- Added `domains/c1-boundary-rewriting/longevity-evidence/docs/lev-enabling-resources.md` to map indirect LEV resources, existing research domains, probability gates, second-order effects, multi-order effects, and negative flywheel risks.
 - Added `domains/c1-boundary-rewriting/longevity-evidence/docs/lev-mainstream-routes.md` as the mainstream longevity escape velocity route map, linking combination therapies, Healthspan competition, geroscience trials, cellular reprogramming, AI biological design, aging hallmarks, biomarkers, animal translation, and funding infrastructure back to existing research domains.
 - Extended `tools/update_domain_doc_contracts.py` and regenerated all 990 formal research-domain README/AGENTS files with tier-specific research skeletons and agent execution workflows.
 - Added `tools/update_domain_doc_contracts.py` and regenerated standard README/AGENTS metadata and maintenance-contract blocks for all 990 formal research domains.

@@ -103,6 +103,8 @@ longevity-evidence/
 │   ├── data-inventory.md
 │   ├── data-sources.md
 │   ├── evidence-model.md
+│   ├── lev-enabling-resources.md
+│   ├── lev-higher-order-effects-discovery.md
 │   ├── lev-mainstream-routes.md
 │   ├── mvp-roadmap.md
 │   └── product-brief.md
@@ -126,6 +128,10 @@ longevity-evidence/
 `docs/lev-mainstream-routes.md` 记录当前全球围绕长寿逃逸速度的主流路线：组合疗法、健康寿命竞赛、Geroscience 临床转化、细胞重编程、AI 生物设计、衰老标志靶向、生物年龄与功能指标、动物临床捷径、资金与基础设施。
 
 该文档的职责是把路线映射回现有研究域，而不是新增重复域或证明任何路线已经实现长寿逃逸速度。
+
+`docs/lev-enabling-resources.md` 记录间接提升长寿逃逸速度概率的资源层：时间、注意力、认知、能力、记忆、AI、资金、社会支持和环境，并区分一阶、二阶和多阶效应。
+
+`docs/lev-higher-order-effects-discovery.md` 记录二阶和多阶效应调研发现，把系统思维、fundamental cause theory、intervention-generated inequalities、diffusion of innovations、社会关系死亡风险、认知储备、睡眠恢复和数字鸿沟等理论迁移到 LEV 概率门。
 
 ## 运行示例
 

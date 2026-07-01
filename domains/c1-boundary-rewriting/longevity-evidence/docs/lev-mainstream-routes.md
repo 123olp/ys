@@ -35,11 +35,50 @@ Last reviewed: 2026-07-02
 | 动物临床捷径 | 部分已有 | `veterinary-care-access-cost-continuity/`, `animal-health-zoonotic-interface-one-health/`, `clinical-trials-regulatory-science-translation/` | 仓库已有动物/兽医域，但缺少“伴侣动物长寿转化”专门视角，可作为后续复核候选。 |
 | 资金与基础设施 | 是 | `research-portfolio-prioritization-funding-governance/`, `clinical-trials-regulatory-science-translation/`, `research-infrastructure-open-science-translation/` | 决定哪些路线能从论文进入试验、监管和产业化。 |
 
+## 标签体系
+
+标签只用于分类、检索和可视化，不代表疗效已成立。
+
+| 标签族 | 标签 | 含义 |
+| --- | --- | --- |
+| 机制 | `mechanism:damage-repair` | 直接处理损伤、修复、细胞状态或组织功能。 |
+| 机制 | `mechanism:systems-combination` | 通过多干预组合或系统协同寻找收益。 |
+| 机制 | `mechanism:measurement-feedback` | 通过 biomarker、功能终点或居家数据缩短反馈周期。 |
+| 机制 | `mechanism:ai-design` | 用 AI 生成、筛选或优化生物工具。 |
+| 机制 | `mechanism:translation-infra` | 主要改变试验、监管、资金、数据和转化基础设施。 |
+| 证据阶段 | `evidence:animal` | 主要证据或主战场仍在动物系统。 |
+| 证据阶段 | `evidence:human-function` | 关注人体功能终点、健康寿命终点或临床转化。 |
+| 证据阶段 | `evidence:early-human-safety` | 已进入人体早期安全性研究，但疗效未成立。 |
+| 证据阶段 | `evidence:biomarker` | 主要处理替代指标、年龄钟或观测代理指标。 |
+| 证据阶段 | `evidence:institutional` | 主要来源是竞赛、资助、项目方或监管基础设施材料。 |
+| 转化路径 | `translation:clinical-trial` | 通过人体临床试验或试验范式推进。 |
+| 转化路径 | `translation:animal-bridge` | 通过伴侣动物或动物临床作为转化桥。 |
+| 转化路径 | `translation:regulatory-pathway` | 重点是监管可接受终点、适应症或审批路径。 |
+| 治理边界 | `boundary:no-personal-advice` | 不得转成个体用药、检测、治疗或购买建议。 |
+| 治理边界 | `boundary:no-lev-proof` | 不得写成长寿逃逸速度已经实现。 |
+| 治理边界 | `risk:overclaim` | 高风险在于把早期信号、动物数据或指标改善过度外推。 |
+
+## 路线标签总览
+
+| 路线 | 标签 |
+| --- | --- |
+| R1 组合疗法 | `mechanism:systems-combination`, `mechanism:damage-repair`, `evidence:animal`, `translation:clinical-trial`, `risk:overclaim`, `boundary:no-personal-advice`, `boundary:no-lev-proof` |
+| R2 健康寿命竞赛 | `mechanism:measurement-feedback`, `evidence:human-function`, `evidence:institutional`, `translation:clinical-trial`, `risk:overclaim`, `boundary:no-personal-advice`, `boundary:no-lev-proof` |
+| R3 Geroscience 临床转化 | `mechanism:translation-infra`, `evidence:human-function`, `translation:clinical-trial`, `translation:regulatory-pathway`, `risk:overclaim`, `boundary:no-personal-advice`, `boundary:no-lev-proof` |
+| R4 细胞重编程 | `mechanism:damage-repair`, `evidence:early-human-safety`, `translation:clinical-trial`, `translation:regulatory-pathway`, `risk:overclaim`, `boundary:no-personal-advice`, `boundary:no-lev-proof` |
+| R5 AI 加速生物设计 | `mechanism:ai-design`, `mechanism:translation-infra`, `evidence:institutional`, `risk:overclaim`, `boundary:no-personal-advice`, `boundary:no-lev-proof` |
+| R6 衰老标志靶向 | `mechanism:damage-repair`, `mechanism:systems-combination`, `evidence:biomarker`, `risk:overclaim`, `boundary:no-personal-advice`, `boundary:no-lev-proof` |
+| R7 生物年龄与功能指标 | `mechanism:measurement-feedback`, `evidence:biomarker`, `evidence:human-function`, `translation:clinical-trial`, `risk:overclaim`, `boundary:no-personal-advice`, `boundary:no-lev-proof` |
+| R8 动物临床捷径 | `translation:animal-bridge`, `evidence:animal`, `translation:regulatory-pathway`, `risk:overclaim`, `boundary:no-personal-advice`, `boundary:no-lev-proof` |
+| R9 资金与基础设施 | `mechanism:translation-infra`, `evidence:institutional`, `translation:regulatory-pathway`, `risk:overclaim`, `boundary:no-personal-advice`, `boundary:no-lev-proof` |
+
 ## 路线卡
 
 ### R1. 组合疗法路线
 
 代表项目：LEV Foundation Robust Mouse Rejuvenation。
+
+Tags: `mechanism:systems-combination`, `mechanism:damage-repair`, `evidence:animal`, `translation:clinical-trial`, `risk:overclaim`, `boundary:no-personal-advice`, `boundary:no-lev-proof`.
 
 核心问题不是“哪个单药能延寿”，而是：
 
@@ -63,6 +102,8 @@ Human Infra 映射：
 
 代表项目：XPRIZE Healthspan。
 
+Tags: `mechanism:measurement-feedback`, `evidence:human-function`, `evidence:institutional`, `translation:clinical-trial`, `risk:overclaim`, `boundary:no-personal-advice`, `boundary:no-lev-proof`.
+
 它的真正价值是把“抗衰”从宣传词压进可审查终点：
 
 ```text
@@ -84,6 +125,8 @@ Human Infra 映射：
 ### R3. Geroscience 临床转化路线
 
 代表项目：TAME。
+
+Tags: `mechanism:translation-infra`, `evidence:human-function`, `translation:clinical-trial`, `translation:regulatory-pathway`, `risk:overclaim`, `boundary:no-personal-advice`, `boundary:no-lev-proof`.
 
 核心不是“二甲双胍是否神奇”，而是监管范式：
 
@@ -107,6 +150,8 @@ Human Infra 映射：
 
 代表项目：Life Biosciences ER-100。
 
+Tags: `mechanism:damage-repair`, `evidence:early-human-safety`, `translation:clinical-trial`, `translation:regulatory-pathway`, `risk:overclaim`, `boundary:no-personal-advice`, `boundary:no-lev-proof`.
+
 该路线最接近“年龄状态重写”，但当前现实路径是局部疾病治疗：
 
 ```text
@@ -128,6 +173,8 @@ Human Infra 映射：
 ### R5. AI 加速生物设计路线
 
 代表项目：OpenAI / Retro Biosciences 的 Yamanaka 因子工程；OpenAI GPT-Rosalind 生命科学研究模型。
+
+Tags: `mechanism:ai-design`, `mechanism:translation-infra`, `evidence:institutional`, `risk:overclaim`, `boundary:no-personal-advice`, `boundary:no-lev-proof`.
 
 核心转折是 AI 不只是整理文献，而是进入生物工具设计：
 
@@ -151,6 +198,8 @@ Human Infra 映射：
 
 代表框架：Hallmarks of Aging。
 
+Tags: `mechanism:damage-repair`, `mechanism:systems-combination`, `evidence:biomarker`, `risk:overclaim`, `boundary:no-personal-advice`, `boundary:no-lev-proof`.
+
 这条路线是全域机制地图：
 
 ```text
@@ -173,6 +222,8 @@ Human Infra 映射：
 
 代表指标：DunedinPACE、GrimAge、PROSPR 指标体系。
 
+Tags: `mechanism:measurement-feedback`, `evidence:biomarker`, `evidence:human-function`, `translation:clinical-trial`, `risk:overclaim`, `boundary:no-personal-advice`, `boundary:no-lev-proof`.
+
 核心功能是缩短反馈周期：
 
 ```text
@@ -194,6 +245,8 @@ Human Infra 映射：
 ### R8. 动物临床捷径路线
 
 代表项目：Loyal 犬类长寿药物。
+
+Tags: `translation:animal-bridge`, `evidence:animal`, `translation:regulatory-pathway`, `risk:overclaim`, `boundary:no-personal-advice`, `boundary:no-lev-proof`.
 
 犬类路线的价值是转化桥梁：
 
@@ -218,6 +271,8 @@ Human Infra 映射：
 ### R9. 资金与基础设施路线
 
 代表：Hevolution、ARPA-H PROSPR、Academy for Health & Lifespan Research。
+
+Tags: `mechanism:translation-infra`, `evidence:institutional`, `translation:regulatory-pathway`, `risk:overclaim`, `boundary:no-personal-advice`, `boundary:no-lev-proof`.
 
 这条路线常被低估，但它决定前八条能否持续运转：
 
@@ -282,7 +337,7 @@ Human Infra 映射：
 ## 下一步研究任务
 
 1. 给 R1-R9 各建一张 Source Card，字段包括 `claim`, `variable`, `mechanism`, `evidence_type`, `domain_path`, `boundary`, `next_check`。
-2. 为每条路线建立 `route -> variable -> endpoint -> domain` 结构化 TSV，后续供 Web 图表使用。
+2. 为每条路线建立 `route -> tag -> variable -> endpoint -> domain` 结构化 TSV，后续供 Web 图表和筛选器使用。
 3. 对 R8 做分级复核：判断是否需要新增 `companion-animal-longevity-translation/`，或纳入现有兽医 / 临床转化域。
 4. 把 R7 的指标路线与 `survival-analysis-healthspan-risk-modeling/`、`causal-inference-target-trial-emulation/` 和 `longitudinal-cohort-retention-followup-infrastructure/` 建立显式接口。
 5. 所有传播材料必须保留非主张边界：当前没有任何路线证明长寿逃逸速度已经实现。
