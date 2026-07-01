@@ -231,6 +231,12 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | NICU 出院必须接上家庭系统 | `preterm-birth-nicu-discharge-transition-continuity/` | preterm birth、NICU discharge、家庭训练、设备、喂养、随访、早期干预 | 出院转接失败会把脆弱新生儿护理从 ICU 专业环境突然抛给未准备家庭 |
 | 妊娠丧失后的恢复必须被承认 | `pregnancy-loss-stillbirth-bereavement-continuity/` | miscarriage、stillbirth、医疗交接、工作学校调整、记录接口、悲伤支持 | 丧失事件若被制度沉默，会把身体恢复、关系、工作学习和未来计划同时打断 |
 | 围产期心理风险必须能筛查转介 | `perinatal-mental-health-screening-referral-continuity/` | 抑郁焦虑筛查、转介、危机入口、IPV/物质使用接口、同伴支持、随访闭环 | 围产心理风险未被接住，会放大自伤、照护失效、家庭暴力、物质使用和新生儿风险 |
+| 新生儿筛查信号必须能转成随访 | `newborn-screening-result-followup-continuity/` | newborn screening、样本采集、结果路由、异常通知、确认检测、州级项目 | 出生后可逆风险若只停在报告上，会错过治疗、转介和家庭准备窗口 |
+| 儿童预防入口必须持续可达 | `well-child-visit-preventive-care-continuity/` | well-child visit、medical home、预防服务、成长发育监测、转介随访 | 儿童早期服务断裂会让预防、筛查、家庭问题和长期能力形成失去制度入口 |
+| 儿童免疫记录必须可持续证明 | `childhood-immunization-schedule-record-continuity/` | 官方排程接口、IIS、学校托育证明、提醒召回、可及性、同意隐私 | 免疫信息若不可达或不可证明，会削弱个体保护、群体屏障和学校托育连续性 |
+| 发育行为信号必须能进入支持 | `developmental-behavioral-screening-referral-continuity/` | developmental monitoring、behavioral screening、家庭观察、早期干预、语言文化可及 | 发育行为信号若不能转介，会压缩语言、学习、关系和自我维护能力形成窗口 |
+| 儿童铅暴露必须连接环境行动 | `pediatric-lead-screening-environmental-followup-continuity/` | 血铅筛查、公共卫生随访、住房水源暴露、环境调查、修复交接 | 铅暴露信号若不能转成环境修复和支持，会把可预防损伤转成长期发育负担 |
+| 复杂儿童照护必须跨系统协调 | `children-youth-special-health-care-needs-care-coordination-continuity/` | CYSHCN、medical home、专科协作、学校接口、保险授权、DME/药品、青年转衔 | 复杂儿童照护若靠家庭临时记忆，会在专科、学校、保险、设备和成人系统之间断裂 |
 | 医疗组织可从错误中学习 | `patient-safety-organizational-learning/` | 事件报告、近失误、团队沟通、根因分析、安全文化、行动闭环 | 把患者安全写成追责、机构背书、法律判断或惩罚性监控 |
 | 照护可持续 | `caregiving-long-term-care/` | 家庭照护、长期照护、居家社区支持、照护协调、照护者负担 | 长寿退化为无人照护、照护者崩溃、失能支持中断或尊严丧失 |
 | 居住环境可稳定 | `housing-built-environment-stability/` | 住房稳定、住房质量、室内环境、无障碍、社区资源、建成环境 | 居住空间持续制造暴露、跌倒、孤立、服务断点或照护不可行 |
@@ -1121,6 +1127,12 @@ risk-engineering
   -> preterm-birth-nicu-discharge-transition-continuity
   -> pregnancy-loss-stillbirth-bereavement-continuity
   -> perinatal-mental-health-screening-referral-continuity
+  -> newborn-screening-result-followup-continuity
+  -> well-child-visit-preventive-care-continuity
+  -> childhood-immunization-schedule-record-continuity
+  -> developmental-behavioral-screening-referral-continuity
+  -> pediatric-lead-screening-environmental-followup-continuity
+  -> children-youth-special-health-care-needs-care-coordination-continuity
   -> patient-safety-organizational-learning
   -> caregiving-long-term-care
   -> housing-built-environment-stability

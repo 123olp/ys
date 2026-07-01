@@ -99,6 +99,12 @@
 - `preterm-birth-nicu-discharge-transition-continuity/`：早产、NICU 出院与家庭转接连续性，整理 NICU discharge、家庭训练、随访、设备、喂养、感染预防和早期干预。
 - `pregnancy-loss-stillbirth-bereavement-continuity/`：妊娠丧失、死产与悲伤支持连续性，整理 miscarriage、stillbirth、医疗交接、工作学校调整、记录接口和悲伤支持。
 - `perinatal-mental-health-screening-referral-continuity/`：围产期心理健康筛查与转介连续性，整理抑郁焦虑筛查、转介、危机入口、IPV/物质使用接口、同伴支持和随访闭环。
+- `newborn-screening-result-followup-continuity/`：新生儿筛查结果与随访连续性，整理筛查项目接口、样本采集、结果路由、异常通知、诊断确认转介和家庭沟通。
+- `well-child-visit-preventive-care-continuity/`：儿童健康体检与预防照护连续性，整理 well-child visits、medical home、预防服务、成长发育监测、筛查转介和随访闭环。
+- `childhood-immunization-schedule-record-continuity/`：儿童免疫排程与记录连续性，整理官方免疫排程接口、接种记录、学校托育证明、提醒召回、预约供应和隐私边界。
+- `developmental-behavioral-screening-referral-continuity/`：发育行为筛查与转介连续性，整理发育监测、行为筛查、家庭观察、转介、早期干预和随访闭环。
+- `pediatric-lead-screening-environmental-followup-continuity/`：儿童铅筛查与环境随访连续性，整理血铅筛查、结果通知、公共卫生随访、住房水源暴露和环境修复交接。
+- `children-youth-special-health-care-needs-care-coordination-continuity/`：儿童与青少年特殊健康照护需求协调连续性，整理 CYSHCN、medical home、专科协作、学校接口、保险授权、DME/药品供应和青年转衔。
 - `patient-safety-organizational-learning/`：患者安全与组织学习，整理事件报告、团队沟通、根因分析、CUSP、TeamSTEPPS 和安全文化。
 - `caregiving-long-term-care/`：照护与长期照护，整理家庭照护、长期照护、居家社区支持、照护协调和照护者负担。
 - `housing-built-environment-stability/`：住房与建成环境稳定，整理住房稳定、住房质量、室内环境、无障碍、社区资源和建成环境。

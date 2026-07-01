@@ -1505,6 +1505,24 @@ Human Infra 不能被设计成更精密的压榨系统。
 - 不收集、推断或暴露怀孕状态、产检结果、流产/死产经历、婴儿健康、心理健康、物质使用、家庭暴力、未成年人身份、实时位置、医疗机构、保险状态或家庭风险画像。
 - 不替代 OB/GYN、助产士、MFM、儿科/新生儿科、lactation consultant、心理健康专业人员、危机热线、IPV advocate、社工、公共卫生机构、保险/福利官方入口或法律服务。
 
+## 儿科预防与早期筛查连续性边界
+
+`newborn-screening-result-followup-continuity`、`well-child-visit-preventive-care-continuity`、`childhood-immunization-schedule-record-continuity`、`developmental-behavioral-screening-referral-continuity`、`pediatric-lead-screening-environmental-followup-continuity` 和 `children-youth-special-health-care-needs-care-coordination-continuity` 关注出生后早期预防入口、筛查信号、公共卫生记录、环境风险和复杂照护协调如何影响儿童主体能力形成，不是个体儿科、疫苗、筛查、发育、铅暴露、教育、保险、福利或法律建议入口。
+
+可以做：
+
+- 整理 CDC、HRSA、AAP、CMS、EPA、州级公共卫生、学校/托育公开资料中的服务对象、时间窗口、记录接口、转介链和禁止用途。
+- 比较 newborn screening、well-child、immunization records、developmental screening、lead screening 和 CYSHCN care coordination 在儿科、公共卫生、家庭、学校、托育、保险、DME 和成人转衔上的断点。
+- 记录儿童数据最小化、遗传/筛查结果隐私、疫苗信息边界、反污名、残障反歧视、学校记录和家庭风险画像限制。
+
+不能做：
+
+- 不提供筛查结果解释、遗传风险解释、儿科诊断、发育诊断、量表解释、疫苗建议、排程解释、补种方案、禁忌判断、不良反应判断、铅检测解释、治疗、药物、chelation、环境采样施工、设备、IEP/504、福利资格、保险授权、急诊或个体医疗/教育/法律建议。
+- 不判断某个儿童是否异常、是否迟缓、是否中毒、是否需要治疗/转诊/评估、是否属于 CYSHCN、是否残障、是否适合某项服务、是否有资格获得 Medicaid/SSI/IDEA 或学校支持。
+- 不生成个人接种计划、筛查复查计划、发育训练方案、铅暴露处置方案、环境修复方案、护理计划、学校安置方案、福利/保险申诉、法律文件或危机处置方案。
+- 不收集、推断或暴露儿童遗传/筛查结果、疫苗记录、发育状态、残障状态、铅暴露、家庭地址、学校记录、保险状态、DME 需求、福利状态或风险画像。
+- 不替代儿科、新生儿科、遗传咨询、公共卫生机构、州 newborn screening program、学校、早期干预、DME 供应商、保险、法律服务或紧急服务。
+
 ## 青少年到成年转变连续性边界
 
 `runaway-homeless-youth-outreach-shelter-continuity`、`foster-care-aging-out-independent-living-continuity`、`juvenile-justice-reentry-aftercare-continuity`、`transition-age-youth-mental-health-service-continuity`、`opportunity-youth-education-employment-pathway-continuity` 和 `pregnant-parenting-youth-family-support-continuity` 关注青少年到成年转变期间，住所、安全、儿童福利出离、少年司法重返、心理健康系统转换、教育就业再进入和年轻父母支持如何影响主体持续性，不是个体逃离、庇护定位、法院案件、心理危机、福利申请、就业安置、怀孕育儿、学校或家庭冲突建议入口。

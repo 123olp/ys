@@ -355,6 +355,12 @@ flowchart TD
     MNCD --> PBNDT[preterm-birth-nicu-discharge-transition-continuity<br/>早产 NICU / 出院转接]
     MNCD --> PLSB[pregnancy-loss-stillbirth-bereavement-continuity<br/>妊娠丧失 / 悲伤支持]
     MNCD --> PMHSR[perinatal-mental-health-screening-referral-continuity<br/>围产心理 / 筛查转介]
+    MNCD --> NBSRF[newborn-screening-result-followup-continuity<br/>新生儿筛查 / 结果随访]
+    MNCD --> WCVPC[well-child-visit-preventive-care-continuity<br/>儿童健康体检 / 预防照护]
+    MNCD --> CISC[childhood-immunization-schedule-record-continuity<br/>儿童免疫 / 排程记录]
+    MNCD --> DBSR[developmental-behavioral-screening-referral-continuity<br/>发育行为 / 筛查转介]
+    MNCD --> PLSEF[pediatric-lead-screening-environmental-followup-continuity<br/>儿童铅筛查 / 环境随访]
+    MNCD --> CYSHC[children-youth-special-health-care-needs-care-coordination-continuity<br/>特殊健康需求儿童 / 照护协调]
     H --> PSOL[patient-safety-organizational-learning<br/>患者安全 / 组织学习]
     H --> CLTC[caregiving-long-term-care<br/>照护 / 长期照护]
     H --> HBES[housing-built-environment-stability<br/>住房 / 建成环境]
@@ -1041,6 +1047,12 @@ flowchart TD
 | [Preterm Birth NICU Discharge Transition Continuity](domains/preterm-birth-nicu-discharge-transition-continuity/README.md) | 早产、NICU 出院、家庭训练、随访、喂养设备、感染预防、发育监测和早期干预 | 把脆弱新生儿从医院生命支持转入家庭日常的过程建模为交接连续性问题 | 不提供出院判断、喂养、药物、设备、氧气、感染、发育、急诊或个体护理建议 |
 | [Pregnancy Loss Stillbirth Bereavement Continuity](domains/pregnancy-loss-stillbirth-bereavement-continuity/README.md) | 妊娠丧失、死产、医疗交接、悲伤支持、工作学校调整、记录接口和后续妊娠边界 | 把妊娠丧失后的身体、家庭、工作学校、意义和未来计划恢复纳入连续性模型 | 不提供症状分诊、原因解释、治疗、再次怀孕、法律、请假、仪式或心理危机建议 |
 | [Perinatal Mental Health Screening Referral Continuity](domains/perinatal-mental-health-screening-referral-continuity/README.md) | 围产期抑郁焦虑筛查、转介、危机入口、IPV/物质使用接口、同伴支持和随访闭环 | 让心理风险能够被发现、转接和跟进，保护主体恢复、亲子关系和下一代持续性 | 不提供诊断、量表解释、治疗、药物、自伤判断、危机干预、家庭暴力处置或心理建议 |
+| [Newborn Screening Result Followup Continuity](domains/newborn-screening-result-followup-continuity/README.md) | 新生儿筛查、样本采集、结果路由、异常通知、诊断确认转介、家庭沟通和州级项目接口 | 把出生后短暂可逆风险窗口接入可通知、可确认、可转诊和可随访的公共卫生系统 | 不提供筛查结果解释、遗传风险解释、诊断、治疗、喂养、药物、急诊或个体儿科建议 |
+| [Well Child Visit Preventive Care Continuity](domains/well-child-visit-preventive-care-continuity/README.md) | well-child visits、medical home、预防服务、成长发育监测、筛查转介、保险语言交通和随访闭环 | 把儿童早期健康服务视为能力形成基础设施，而不是临时看病或家庭个人努力 | 不提供体检频率、筛查解释、疫苗、药物、营养、发育判断、疾病诊断或转诊建议 |
+| [Childhood Immunization Schedule Record Continuity](domains/childhood-immunization-schedule-record-continuity/README.md) | 儿童免疫排程接口、接种记录、学校托育证明、提醒召回、供应预约、同意和隐私边界 | 让官方免疫信息通过记录、预约、提醒和证明链路转化为真实保护 | 不提供疫苗医学建议、排程解释、补种方案、禁忌判断、不良反应判断或豁免策略 |
+| [Developmental Behavioral Screening Referral Continuity](domains/developmental-behavioral-screening-referral-continuity/README.md) | 发育监测、行为筛查、家庭观察、转介、早期干预、语言文化可及和随访闭环 | 让语言、运动、认知、社交、行为和家庭压力信号尽早进入支持系统 | 不提供发育诊断、量表解释、自闭/ADHD/语言迟缓判断、治疗训练、学校安置或福利资格建议 |
+| [Pediatric Lead Screening Environmental Followup Continuity](domains/pediatric-lead-screening-environmental-followup-continuity/README.md) | 儿童血铅筛查、结果通知、公共卫生随访、住房/水源调查、环境修复交接和长期支持 | 把儿童铅暴露从毒物问题建模为住房、饮水、公共卫生、儿科、学校和家庭资源连续性问题 | 不提供检测解释、治疗、chelation、环境采样施工、租赁法律策略、学校安置或个体医疗建议 |
+| [Children Youth Special Health Care Needs Care Coordination Continuity](domains/children-youth-special-health-care-needs-care-coordination-continuity/README.md) | CYSHCN、medical home、专科协作、护理计划、家庭负担、学校接口、保险授权、DME/药品供应和青年转衔 | 把复杂儿童照护建模为跨机构任务系统，而不是默认交给家庭记忆和临时协调 | 不提供诊断、治疗、设备、保险授权、IEP/504、福利资格、护理计划或个体医疗/教育/法律建议 |
 | [Attention Executive Control](domains/attention-executive-control/README.md) | 注意力、执行功能、工作记忆、抑制控制、任务切换和分心环境 | 有效行动密度、任务完成、冲动控制和长期目标推进 | 不提供 ADHD、心理、神经诊断治疗、药物、补剂或神经刺激建议 |
 | [Learning Skill Acquisition](domains/learning-skill-acquisition/README.md) | 学习科学、技能形成、练习反馈、迁移能力、再训练和终身学习 | 学习轮次、能力复利、技术采用和长期目标推进 | 不提供个体教育、考试、就业、移民、认证或职业建议 |
 | [Time Allocation Effective Time](domains/time-allocation-effective-time/README.md) | 时间使用、时间贫困、行政负担、等待成本、任务摩擦和有效时间 | 可支配时间、恢复时间、行动密度和主观时间质量 | 不提供个体日程、职业、家庭、法律、福利、保险或财务安排建议 |
@@ -2294,6 +2306,12 @@ human_infra/
 │   ├── preterm-birth-nicu-discharge-transition-continuity/
 │   ├── pregnancy-loss-stillbirth-bereavement-continuity/
 │   ├── perinatal-mental-health-screening-referral-continuity/
+│   ├── newborn-screening-result-followup-continuity/
+│   ├── well-child-visit-preventive-care-continuity/
+│   ├── childhood-immunization-schedule-record-continuity/
+│   ├── developmental-behavioral-screening-referral-continuity/
+│   ├── pediatric-lead-screening-environmental-followup-continuity/
+│   ├── children-youth-special-health-care-needs-care-coordination-continuity/
 │   ├── respiratory-oxygenation/
 │   ├── resource-social-infra/
 │   ├── risk-engineering/
@@ -2634,5 +2652,6 @@ flowchart LR
 - 2026-07-01：新增第一百一十四波 6 个早期儿童照护执行连续性域，覆盖托育供给费用、许可健康安全、CCDF 补贴支付、Head Start、IDEA Part C 早期干预和课外/暑期学习照护。
 - 2026-07-01：新增第一百一十七波 6 个青少年到成年转变连续性域，覆盖离家无家可归青年外展庇护、寄养出离独立生活、少年司法重返 aftercare、过渡年龄青年心理健康、机会青年教育就业和怀孕育儿青年家庭支持。
 - 2026-07-01：新增第一百一十八波 6 个围产期连续性域，覆盖产前照护接入风险筛查、产后恢复随访、哺乳泵奶支持、早产 NICU 出院转接、妊娠丧失悲伤支持和围产期心理健康筛查转介。
+- 2026-07-01：新增第一百一十九波 6 个儿科预防与早期筛查连续性域，覆盖新生儿筛查结果随访、儿童健康体检预防照护、儿童免疫排程记录、发育行为筛查转介、儿童铅筛查环境随访和特殊健康需求儿童照护协调。
 
 完整记录见 [CHANGELOG.md](CHANGELOG.md)。

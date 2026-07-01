@@ -264,6 +264,12 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `preterm-birth-nicu-discharge-transition-continuity/` | 早产、NICU 出院、家庭训练、随访、设备和早期干预决定脆弱新生儿能否安全转入家庭系统 |
 | `pregnancy-loss-stillbirth-bereavement-continuity/` | 妊娠丧失、死产、医疗交接、工作学校调整和悲伤支持决定丧失事件后主体能否恢复行动 |
 | `perinatal-mental-health-screening-referral-continuity/` | 围产期心理健康筛查、转介、危机入口、IPV/物质使用接口和随访闭环决定心理风险是否被接住 |
+| `newborn-screening-result-followup-continuity/` | 新生儿筛查、结果路由、异常通知和确认转介决定出生后可逆风险能否进入行动窗口 |
+| `well-child-visit-preventive-care-continuity/` | 儿童健康体检、medical home、预防服务和成长发育监测决定儿童早期预防入口是否连续 |
+| `childhood-immunization-schedule-record-continuity/` | 儿童免疫排程接口、接种记录、学校托育证明和提醒召回决定保护信息是否可执行可证明 |
+| `developmental-behavioral-screening-referral-continuity/` | 发育行为筛查、家庭观察、转介和早期干预决定发展信号是否能进入支持系统 |
+| `pediatric-lead-screening-environmental-followup-continuity/` | 儿童铅筛查、公共卫生随访和环境修复交接决定暴露信号是否能连接住房水源行动 |
+| `children-youth-special-health-care-needs-care-coordination-continuity/` | CYSHCN、medical home、专科、学校、保险、DME/药品和青年转衔决定复杂儿童照护是否跨系统连续 |
 | `patient-safety-organizational-learning/` | 患者安全、事件报告、团队沟通、根因分析和安全文化决定医疗组织能否防止重复伤害 |
 | `social-determinants-community-vulnerability/` | 社会决定因素、社区脆弱性、环境正义、地方健康估计、食物可达和社会需求决定上游风险分布 |
 | `public-service-design-accessibility/` | 公共服务设计、表单、无障碍、客户体验和人工帮助决定名义权利能否转化为可完成任务 |
@@ -1273,6 +1279,7 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | WHO vaccines / IA2030 / CDC NNDSS / WHO GISRS / IHR / IPC / NHSN / GLASS / CDC NWSS | 提示群体免疫、传染病监测、公共卫生应急、感染防控、AMR、One Health 和废水监测是独立风险屏障 |
 | WHO maternal/newborn/child health / WHO growth standards / Nurturing Care / CDC PRAMS / World Bank ECD | 提示孕产、新生儿、儿童健康、生长、早期发展和养育照护是长期主体能力形成的源头条件 |
 | CDC / HRSA / ACOG / WIC / DOL / March of Dimes / SAMHSA perinatal materials | 提示围产期需要拆出产前接入、产后随访、哺乳支持、NICU 出院、妊娠丧失和围产期心理健康这些高敏感断点 |
+| CDC / HRSA / AAP / CMS / EPA pediatric prevention and screening materials | 提示出生后早期风险不是单一儿童发展变量，而是新生儿筛查、well-child、免疫记录、发育筛查、铅暴露和复杂儿童照护协调这些入口链 |
 | WHO Patient Safety / AHRQ TeamSTEPPS / CUSP / SOPS / IHI RCA2 | 提示患者安全、团队沟通、事件学习、根因分析和安全文化需要独立组织学习域 |
 | WHO SDOH / Healthy People SDOH / CDC SVI / CDC EJI / CDC PLACES / USDA Food Access / CMS AHC | 提示社会决定因素、社区脆弱性、环境正义、地方健康估计、食物可达和健康相关社会需求需要独立上游风险域 |
 | Digital.gov / USWDS / Performance.gov CX / Section508.gov / PlainLanguage.gov | 提示公共服务设计、客户体验、无障碍、清晰语言和人工帮助会决定公共资源是否可完成 |
@@ -1770,6 +1777,17 @@ Source links:
 - https://www.cdc.gov/ncbddd/stillbirth/facts.html
 - https://www.samhsa.gov/find-help/national-maternal-mental-health-hotline
 - https://mchb.hrsa.gov/national-maternal-mental-health-hotline
+- https://www.cdc.gov/newborn-screening/
+- https://newbornscreening.hrsa.gov/
+- https://www.aap.org/en/practice-management/bright-futures/
+- https://mchb.hrsa.gov/programs-impact/programs/bright-futures
+- https://www.medicaid.gov/medicaid/benefits/early-and-periodic-screening-diagnostic-and-treatment/index.html
+- https://www.cdc.gov/vaccines/hcp/imz-schedules/
+- https://www.cdc.gov/vaccines/programs/iis/
+- https://www.cdc.gov/ncbddd/actearly/
+- https://www.cdc.gov/lead-prevention/
+- https://www.epa.gov/lead
+- https://mchb.hrsa.gov/programs-impact/focus-areas/children-youth-special-health-care-needs
 - https://www.ahrq.gov/teamstepps-program/index.html
 - https://www.ahrq.gov/hai/cusp/index.html
 - https://www.ahrq.gov/sops/index.html
