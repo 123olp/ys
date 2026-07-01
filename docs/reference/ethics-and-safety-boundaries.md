@@ -281,7 +281,7 @@ Human Infra 不能被设计成更精密的压榨系统。
 
 ## 基础生计与风险分摊域边界
 
-`food-security-nutrition-access`、`water-sanitation-hygiene-continuity`、`energy-access-resilience`、`social-protection-benefits-delivery`、`insurance-risk-transfer` 和 `childcare-family-continuity` 关注食物、水卫生、能源、公共福利、保险风险池和托育家庭支持如何作为反稀缺基础设施支撑主体持续性，不是个体饮食、申请、理赔、设备、施工或家庭处置指南。
+`food-security-nutrition-access`、`water-sanitation-hygiene-continuity`、`energy-access-resilience`、`social-protection-benefits-delivery`、`tanf-cash-assistance-work-support-continuity`、`insurance-risk-transfer` 和 `childcare-family-continuity` 关注食物、水卫生、能源、公共福利、TANF 现金援助与工作支持、保险风险池和托育家庭支持如何作为反稀缺基础设施支撑主体持续性，不是个体饮食、申请、理赔、设备、施工或家庭处置指南。
 
 可以做：
 
@@ -295,6 +295,24 @@ Human Infra 不能被设计成更精密的压榨系统。
 - 提供个体福利申请、资格判断、材料准备、申诉、保险选择、投保、理赔、税务、法律、移民、投资、托育机构选择、补贴申请、育儿处方、教育处方或家庭纠纷建议。
 - 提供囤积恐慌、黑市采购、非法获取、虚假材料、身份冒用、福利欺诈、保险欺诈、制度规避或套利方法。
 - 把食物、水、能源、福利、保险和托育的结构性缺口改写成个人努力、道德判断或单一消费选择问题。
+
+## 公共福利资格续期、覆盖转换与申诉执行边界
+
+`snap-eligibility-recertification-abawd-continuity`、`medicaid-chip-renewal-redetermination-continuity`、`medicare-enrollment-coverage-transition-continuity`、`ssi-ssdi-disability-review-appeal-continuity`、`tanf-cash-assistance-work-support-continuity` 和 `unemployment-insurance-claim-appeal-identity-continuity` 关注 SNAP、Medicaid/CHIP、Medicare、SSI/SSDI、TANF 和失业保险如何通过资格、续期、重新判定、身份核验、工作要求、申诉、覆盖转接和支付执行维持主体反稀缺底线，不是福利申请、个案申诉、保险选择、法律、税务、医疗或身份核验操作工具。
+
+可以做：
+
+- 整理 USDA FNS、CMS/Medicaid.gov、Medicare.gov、SSA、ACF/OFA、DOL/ETA 等公开来源中的资格结构、续期机制、通知、申诉、支付执行和行政负担。
+- 比较 SNAP recertification、ABAWD/work requirements、Medicaid/CHIP redetermination、Medicare enrollment windows、SSI/SSDI CDR/appeals、TANF sanctions/time limits 和 UI claim/identity/payment 如何改变主体食物、医疗和现金流连续性。
+- 记录程序性终止、身份核验失败、通知失败、覆盖转移失败、支付延迟、申诉窗口、人工帮助、隐私、数据匹配和反排除边界。
+
+不能做：
+
+- 不提供个人 SNAP、Medicaid/CHIP、Medicare、SSI/SSDI、TANF、UI 资格判断、申请、续期、材料准备、申诉策略、计划选择、收入计算、税务、移民、法律、医疗或身份核验建议。
+- 不代写申请、续期、appeal、fair hearing、medical evidence、work requirement exemption、weekly certification、identity proofing、TANF compliance 或机构沟通材料。
+- 不帮助伪造收入、居住、家庭组成、残障、工作活动、失业事实、身份、医疗材料、照护事实或任何福利资格材料。
+- 不收集、复制、处理或要求 SSN、benefit case number、EBT/PIN、Medicare number、Medicaid ID、SSA 账户、UI claim ID、工资资料、医疗记录、家庭地址、儿童资料或身份核验凭证。
+- 不替代 USDA FNS、州 SNAP/Medicaid/CHIP/TANF/UI 机构、CMS、Medicare.gov、SSA、ACF/OFA、DOL/ETA、律师、税务专业人士、医生、福利顾问、社会工作者或官方申诉渠道。
 
 ## 早期儿童照护与发展服务执行连续性边界
 
@@ -865,13 +883,13 @@ Human Infra 不能被设计成更精密的压榨系统。
 
 ## 医疗支付、理赔、账单与成本保护连续性边界
 
-`health-insurance-enrollment-renewal-continuity`、`insurance-eligibility-benefits-verification-continuity`、`medical-service-prior-authorization-utilization-management-continuity`、`claims-adjudication-eob-denial-continuity`、`patient-billing-payment-plan-continuity`、`price-transparency-good-faith-estimate-continuity`、`surprise-billing-balance-bill-protection-continuity` 和 `charity-care-financial-assistance-medical-debt-continuity` 关注健康保险参保续保、权益核验、医疗服务授权、理赔/EOB/拒付、患者账单/付款计划、价格透明/GFE、意外账单保护和 charity care/医疗债务如何让医疗服务从“已经发生”转化为可负担、可解释、可恢复的成本路径，不是保险建议、理赔申诉、账单谈判、债务处理、法律策略、信用修复或医疗建议工具。
+`health-insurance-enrollment-renewal-continuity`、`medicaid-chip-renewal-redetermination-continuity`、`medicare-enrollment-coverage-transition-continuity`、`insurance-eligibility-benefits-verification-continuity`、`medical-service-prior-authorization-utilization-management-continuity`、`claims-adjudication-eob-denial-continuity`、`patient-billing-payment-plan-continuity`、`price-transparency-good-faith-estimate-continuity`、`surprise-billing-balance-bill-protection-continuity` 和 `charity-care-financial-assistance-medical-debt-continuity` 关注健康保险参保续保、Medicaid/CHIP 续期重新判定、Medicare 参保覆盖转接、权益核验、医疗服务授权、理赔/EOB/拒付、患者账单/付款计划、价格透明/GFE、意外账单保护和 charity care/医疗债务如何让医疗服务从“已经发生”转化为可负担、可解释、可恢复的成本路径，不是保险建议、理赔申诉、账单谈判、债务处理、法律策略、信用修复或医疗建议工具。
 
 可以做：
 
-- 整理公开资料、官方框架、HealthCare.gov、CMS Medicaid/CHIP eligibility、CAQH CORE eligibility、CMS prior authorization/interoperability、claims/EOB/appeals、Medical Bill Rights、Hospital Price Transparency、No Surprises Act、IRS 501(r)、CFPB medical debt 资料。
-- 建模失保窗口、权益核验错误、授权延迟、claim denial、EOB-bill mismatch、账单错误、price estimate 失真、balance billing、charity care 和 medical debt 如何影响主体持续性。
-- 区分保险入口、服务授权、理赔解释、患者账单、价格透明、法律保护、经济援助、催收/信用边界、个体决策和禁止用途。
+- 整理公开资料、官方框架、HealthCare.gov、CMS Medicaid/CHIP eligibility and renewals、Medicare.gov enrollment and coverage options、CAQH CORE eligibility、CMS prior authorization/interoperability、claims/EOB/appeals、Medical Bill Rights、Hospital Price Transparency、No Surprises Act、IRS 501(r)、CFPB medical debt 资料。
+- 建模失保窗口、Medicaid/CHIP procedural termination、Medicare enrollment/coverage transition failure、权益核验错误、授权延迟、claim denial、EOB-bill mismatch、账单错误、price estimate 失真、balance billing、charity care 和 medical debt 如何影响主体持续性。
+- 区分保险入口、Medicaid/CHIP 续期、Medicare 覆盖转接、服务授权、理赔解释、患者账单、价格透明、法律保护、经济援助、催收/信用边界、个体决策和禁止用途。
 
 不能做：
 
@@ -1435,12 +1453,12 @@ Human Infra 不能被设计成更精密的压榨系统。
 
 ## 收入、税务、社保、退休、失业与工伤权益记录连续性边界
 
-`income-payroll-employment-record-continuity`、`tax-administration-filing-record-continuity`、`social-security-earnings-benefit-record-continuity`、`retirement-pension-savings-plan-continuity`、`unemployment-insurance-wage-record-continuity` 和 `workers-compensation-occupational-injury-benefit-continuity` 关注工资雇佣记录、税务申报记录、社会保险收入与福利记录、退休养老金计划、失业保险工资记录和工伤职业伤害权益如何让主体把过去劳动、缴费、纳税、失业和工作伤害事实持续转化为未来资源与保障，不是税务、福利、退休、投资、工伤、医疗、法律、财务、保险或个案操作入口。
+`income-payroll-employment-record-continuity`、`tax-administration-filing-record-continuity`、`social-security-earnings-benefit-record-continuity`、`retirement-pension-savings-plan-continuity`、`unemployment-insurance-wage-record-continuity`、`unemployment-insurance-claim-appeal-identity-continuity` 和 `workers-compensation-occupational-injury-benefit-continuity` 关注工资雇佣记录、税务申报记录、社会保险收入与福利记录、退休养老金计划、失业保险工资记录、失业 claim/identity/payment 执行和工伤职业伤害权益如何让主体把过去劳动、缴费、纳税、失业和工作伤害事实持续转化为未来资源与保障，不是税务、福利、退休、投资、工伤、医疗、法律、财务、保险或个案操作入口。
 
 可以做：
 
-- 整理工资、工时、薪资单、税务 transcript、社会保险收入记录、工作 credits、退休计划、失业保险工资记录、工伤记录和 OSHA recordkeeping 的公开来源、记录机制、纠错入口、隐私和行政负担。
-- 比较工资雇佣记录、税务记录、社会保险记录、退休账户、UI wage records 和 workers compensation records 如何把劳动、缴费、账户和伤害事实转成未来权益。
+- 整理工资、工时、薪资单、税务 transcript、社会保险收入记录、工作 credits、退休计划、失业保险工资记录、UI claim / weekly certification / identity proofing、工伤记录和 OSHA recordkeeping 的公开来源、记录机制、纠错入口、隐私和行政负担。
+- 比较工资雇佣记录、税务记录、社会保险记录、退休账户、UI wage records、UI claim/payment execution 和 workers compensation records 如何把劳动、缴费、账户、失业事实和伤害事实转成未来权益。
 - 记录 DOL WHD、IRS、SSA、DOL EBSA、PBGC、DOL ETA/UI、DOL OWCP、OSHA 等资料中的证据边界、账户风险、欺诈防控、申诉边界和禁止用途。
 
 不能做：
@@ -1452,12 +1470,12 @@ Human Infra 不能被设计成更精密的压榨系统。
 
 ## 工作中断、照护事件与工作收入连续性边界
 
-`family-medical-leave-job-protection-continuity`、`paid-sick-family-leave-wage-replacement-continuity`、`pregnancy-parental-work-continuity`、`workplace-accommodation-return-to-work-continuity`、`disability-income-work-capacity-benefit-continuity` 和 `family-caregiver-respite-work-continuity` 关注疾病、家庭照护、孕产育儿、残障、复工和家庭照护者负担如何影响岗位、收入、保险、照护和长期工作角色连续性，不是个人请假、福利申领、残障案件、医疗限制、法律争议、HR 操作、税务、保险、照护计划或雇主合规入口。
+`family-medical-leave-job-protection-continuity`、`paid-sick-family-leave-wage-replacement-continuity`、`pregnancy-parental-work-continuity`、`workplace-accommodation-return-to-work-continuity`、`disability-income-work-capacity-benefit-continuity`、`ssi-ssdi-disability-review-appeal-continuity` 和 `family-caregiver-respite-work-continuity` 关注疾病、家庭照护、孕产育儿、残障、SSI/SSDI 复审申诉、复工和家庭照护者负担如何影响岗位、收入、保险、照护和长期工作角色连续性，不是个人请假、福利申领、残障案件、医疗限制、法律争议、HR 操作、税务、保险、照护计划或雇主合规入口。
 
 可以做：
 
-- 整理 FMLA、带薪病假/家庭医疗假、PWFA、PUMP Act、ADA reasonable accommodation、DOL ODEP、SSA disability、ACL caregiver support 和 respite care 等公开来源、机制、对象、边界和资料入口。
-- 比较岗位保护、工资替代、孕产育儿便利、合理便利复工、残障收入和家庭照护者喘息如何分别降低工作中断、收入断裂、照护崩溃和长期退出风险。
+- 整理 FMLA、带薪病假/家庭医疗假、PWFA、PUMP Act、ADA reasonable accommodation、DOL ODEP、SSA disability / SSI / appeals / continuing disability reviews、ACL caregiver support 和 respite care 等公开来源、机制、对象、边界和资料入口。
+- 比较岗位保护、工资替代、孕产育儿便利、合理便利复工、残障收入、SSI/SSDI review/appeal 和家庭照护者喘息如何分别降低工作中断、收入断裂、照护崩溃和长期退出风险。
 - 记录资格口径、证明负担、隐私、反报复、复工路径、覆盖缺口、行政负担和禁止用途，帮助后续建模而不是输出个案行动方案。
 
 不能做：
@@ -1988,12 +2006,12 @@ Human Infra 不能被设计成更精密的压榨系统。
 
 ## 食物获得执行连续性边界
 
-`grocery-retail-food-store-access-continuity`、`snap-ebt-redemption-retailer-payment-continuity`、`wic-benefit-redemption-infant-maternal-nutrition-continuity`、`food-bank-pantry-community-food-distribution-continuity`、`emergency-food-disaster-feeding-continuity`、`home-delivered-meals-congregate-nutrition-services-continuity`、`infant-formula-baby-food-supply-safety-continuity` 和 `prepared-food-restaurant-cafeteria-safety-access-continuity` 关注主体如何通过食品零售、福利兑换、社区发放、灾害供餐、送餐/集体餐、婴儿配方/婴幼儿食品和外部熟食服务获得连续、安全、可负担的营养输入，不是福利规避、支付攻击、个体喂养处方、餐馆推荐、平台规避、投诉威胁或食品安全个案判断入口。
+`grocery-retail-food-store-access-continuity`、`snap-ebt-redemption-retailer-payment-continuity`、`snap-eligibility-recertification-abawd-continuity`、`wic-benefit-redemption-infant-maternal-nutrition-continuity`、`food-bank-pantry-community-food-distribution-continuity`、`emergency-food-disaster-feeding-continuity`、`home-delivered-meals-congregate-nutrition-services-continuity`、`infant-formula-baby-food-supply-safety-continuity` 和 `prepared-food-restaurant-cafeteria-safety-access-continuity` 关注主体如何通过食品零售、SNAP 资格/续期、福利兑换、社区发放、灾害供餐、送餐/集体餐、婴儿配方/婴幼儿食品和外部熟食服务获得连续、安全、可负担的营养输入，不是福利规避、支付攻击、个体喂养处方、餐馆推荐、平台规避、投诉威胁或食品安全个案判断入口。
 
 可以做：
 
-- 整理 USDA ERS Food Access / Food Environment Atlas、USDA FNS SNAP / SNAP Retailer / Online Purchasing / WIC / WIC EBT / TEFAP / FDD / Disaster Assistance / D-SNAP、ACL Nutrition Services / Older Americans Act、FDA Infant Formula / Recalls / Food Code / Food Allergies、CDC Infant Nutrition / Food Safety 等公开资料中的机制、对象、变量和边界。
-- 比较食品零售、SNAP EBT、WIC/eWIC、食品银行/pantry、灾害供餐、送餐/集体餐、婴儿配方/婴幼儿食品和餐馆/cafeteria 熟食如何影响营养输入、健康风险、行动能力、照护发现和灾害恢复。
+- 整理 USDA ERS Food Access / Food Environment Atlas、USDA FNS SNAP eligibility / work requirements / E&T / SNAP Retailer / Online Purchasing / WIC / WIC EBT / TEFAP / FDD / Disaster Assistance / D-SNAP、ACL Nutrition Services / Older Americans Act、FDA Infant Formula / Recalls / Food Code / Food Allergies、CDC Infant Nutrition / Food Safety 等公开资料中的机制、对象、变量和边界。
+- 比较食品零售、SNAP eligibility/recertification、SNAP EBT、WIC/eWIC、食品银行/pantry、灾害供餐、送餐/集体餐、婴儿配方/婴幼儿食品和餐馆/cafeteria 熟食如何影响营养输入、健康风险、行动能力、照护发现和灾害恢复。
 - 记录食物获得执行资料中的零售可达、授权 vendor、福利兑换、库存短缺、食品召回、过敏原、卫生规范、隐私、资格边界、脆弱群体和禁止用途。
 
 不能做：

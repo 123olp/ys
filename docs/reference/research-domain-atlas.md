@@ -293,6 +293,7 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 迁移和流离失所状态可连续 | `migration-displacement-humanitarian-continuity/` | 迁移、难民、流离失所、身份连续、医疗、教育、庇护、保护、人道协调 | 跨地点和跨制度后身份、服务、庇护、教育和保护断裂 |
 | 数字连接可达 | `digital-inclusion-connectivity/` | 互联网接入、设备、数字技能、可负担性、无障碍、人工帮助、数字公共服务 | 数字排除导致医疗、福利、教育、工作、身份和应急信息不可达 |
 | 社会保护可递送 | `social-protection-benefits-delivery/` | 公共福利、社会保护、资格、申请、续期、支付、申诉、行政负担 | 名义权利无法转化为食物、住房、医疗、能源或收入支持 |
+| 现金援助和工作支持必须可执行 | `tanf-cash-assistance-work-support-continuity/` | TANF、现金援助、工作参与、制裁、时限、child care linkage、州级政策 | 家庭现金流、托育、工作活动和服务支持可能因制裁、时限、续期或州级差异断裂 |
 | 社区资源可导航 | `community-resource-navigation/` | 资源目录、社会需求筛查、转介、闭环回访、人工协助 | 资源存在但找不到、转介失败、回访缺失或敏感需求数据被滥用 |
 | 上游生活环境可支撑主体 | `social-determinants-community-vulnerability/` | 社会决定因素、社区脆弱性、环境正义、地方健康估计、食物可达、社会需求 | 把结构性风险写成个体失败，或用脆弱性指标支持排除、歧视和资源拒绝 |
 | 公共服务可完成 | `public-service-design-accessibility/` | 公共服务设计、表单负担、客户体验、无障碍、人工帮助、反馈路径 | 名义服务无法完成，或用数字化替代人工帮助、无障碍和申诉责任 |
@@ -389,12 +390,14 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 缴费历史必须转化为社会保障 | `social-security-earnings-benefit-record-continuity/` | 收入记录、工作 credits、福利声明、退休、残障、遗属、记录更正 | 漏报、身份错配或账户不可访问削弱老年、失能和家庭风险边界的基本保障 |
 | 工作期资源必须延续到退休期 | `retirement-pension-savings-plan-continuity/` | 养老金、401(k)、IRA、rollover、vesting、受益人、丢失账户、计划终止 | 账户遗失、计划终止、受益人错误或转移失败削弱劳动退出后的资源连续性 |
 | 失业冲击必须可被工资记录接住 | `unemployment-insurance-wage-record-continuity/` | UI wage records、基期、雇主报送、资格判定、申诉、overpayment、欺诈防控 | 工资记录错配、身份盗用、申诉困难或支付延迟放大失业对住房、健康和学习窗口的冲击 |
+| 失业索赔必须从身份到支付闭环 | `unemployment-insurance-claim-appeal-identity-continuity/` | Initial claim、weekly certification、identity proofing、payment、overpayment、appeal、UI modernization | 失业事实即使成立，也可能因身份、认证、支付、申诉或系统现代化故障变成现金流断点 |
 | 工作伤害必须转化为恢复支持 | `workers-compensation-occupational-injury-benefit-continuity/` | 工伤、职业病、伤害记录、医疗给付、工资替代、复工、OSHA 记录 | 报告缺失、记录争议或复工压力把工作伤害转成长期失能和收入断裂 |
 | 家庭医疗事件不能自动切断工作角色 | `family-medical-leave-job-protection-continuity/` | 家庭医疗假、严重健康状况、照护假、军属照护、岗位保护、反报复、复工入口 | 疾病或照护责任直接导致岗位、保险、收入和职业身份断裂 |
 | 疾病与照护窗口必须有工资替代 | `paid-sick-family-leave-wage-replacement-continuity/` | 带薪病假、带薪家庭假、带薪医疗假、替代率、等待期、公共/雇主计划 | 名义休假存在但无法负担，主体被迫带病工作、治疗中断或退出工作 |
 | 孕产育儿不能被排除出工作系统 | `pregnancy-parental-work-continuity/` | 怀孕便利、分娩恢复、父母假、哺乳/泵奶支持、育儿责任、反歧视 | 生育和育儿责任被转化为职业惩罚、收入下降和长期工作轨迹中断 |
 | 能力变化必须能被合理便利和复工路径接住 | `workplace-accommodation-return-to-work-continuity/` | 合理便利、interactive process、modified duty、phased return、工作能力、辅助技术 | 工作系统只有完全可用/完全退出两种状态，能力变化被永久化为失业或失能 |
 | 残障收入与工作能力必须可连续治理 | `disability-income-work-capacity-benefit-continuity/` | SSDI、SSI、残障收入、工作 credits、工作能力、复工激励、福利悬崖 | 长期功能受限后现金流、医疗覆盖、复工试探和未来选择权同时断裂 |
+| SSI/SSDI 复审和申诉不能切断保障 | `ssi-ssdi-disability-review-appeal-continuity/` | Disability determination、CDR、redetermination、appeals、representative payee、payment continuity | 残障保障可能在复审、资格重判、申诉窗口或支付执行中中断，压缩医疗、住房和工作试探能力 |
 | 家庭照护者不能被照护责任耗尽退出系统 | `family-caregiver-respite-work-continuity/` | 家庭照护者支持、respite care、照护培训、工作灵活性、照护者健康、负担 | 家庭照护被当作无限免费资源，照护者失去健康、收入、睡眠、社交和职业角色 |
 | 成人日间服务必须提供白天外部支持窗口 | `adult-day-services-supervision-transport-continuity/` | 成人日间服务、日间监督、活动餐食、交通接送、照护者工作窗口 | 白天照护无人接住会把失能主体安全、社交、营养和照护者工作角色同时压垮 |
 | 居家照护人员必须成为可调度劳动力 | `home-care-aide-personal-care-workforce-continuity/` | home care aides、personal care、ADL/IADL 支持、排班、监督、工资、劳动力稳定 | 家庭无法长期承担全部个人照护任务，人员短缺和排班失败会直接破坏居家生活 |
@@ -580,6 +583,7 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 雨水口必须维持街区排水 | `storm-drain-catch-basin-local-flooding-continuity/` | 雨水口、catch basin、街道积水、雨洪维护 | 排水入口堵塞会把雨后通行、公交接入、无障碍路径和低洼居住恢复切断 |
 | 日常食品零售必须可达 | `grocery-retail-food-store-access-continuity/` | Grocery、食品零售、低收入低可达地区、营业时间、支付、替代采购 | 食品店不可达、价格/支付/距离摩擦会把食物供给变成不可执行的营养输入 |
 | SNAP EBT 必须能真实兑换 | `snap-ebt-redemption-retailer-payment-continuity/` | SNAP EBT、授权零售商、在线购买、PIN、交易失败、账户安全 | 福利存在但不能在合规零售端兑换，会把社会保护变成账面权益 |
+| SNAP 资格和续期必须不中断 | `snap-eligibility-recertification-abawd-continuity/` | Eligibility、household、income/resource、recertification、ABAWD、work requirements、E&T、notice、fair hearing | 食品援助可能在资格、续期、工作要求、通知或听证环节断裂，导致食物购买能力先于兑换层消失 |
 | WIC 母婴营养兑换必须连续 | `wic-benefit-redemption-infant-maternal-nutrition-continuity/` | WIC、eWIC、vendor、食品包、婴儿配方、母婴营养 | 母婴营养福利、配方奶和指定食品不可兑换会直接压缩孕产妇、婴儿和儿童发育窗口 |
 | 社区食品发放必须可靠 | `food-bank-pantry-community-food-distribution-continuity/` | 食品银行、pantry、TEFAP、库存、发放点、资格、隐私 | 市场和福利不足时，社区发放失败会让短期饥饿、羞辱成本和健康风险放大 |
 | 灾害供餐必须接住断供窗口 | `emergency-food-disaster-feeding-continuity/` | 灾害供餐、D-SNAP、应急食品、临时餐点、物流、生命线恢复 | 灾害切断零售、交通、冷链和厨房后，供餐失败会把危机变成营养和安全崩溃 |
@@ -603,6 +607,8 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 门诊操作必须有准备与恢复回路 | `ambulatory-procedure-surgery-center-continuity/` | ASC、门诊内镜、输注、术前工作流、陪同接送、恢复观察、follow-up | 低住院化操作如果缺准备、接送、观察或随访，会把效率收益转成安全断点 |
 | 非工作时间入口必须可分流 | `after-hours-urgent-care-triage-continuity/` | 夜间/周末照护、urgent care、retail clinic、护士热线、tele-triage、闭环回传 | 不能等待但又非明确急救的时间断点如果无人接住，会推高失访、急诊拥堵和风险升级 |
 | 健康保险覆盖必须持续 | `health-insurance-enrollment-renewal-continuity/` | Open enrollment、special enrollment、renewal、Medicaid/Marketplace 转换、premium payment | 参保、续保或保费断点会让医疗风险转移在服务发生前失效 |
+| Medicaid/CHIP 续期必须避免程序性失保 | `medicaid-chip-renewal-redetermination-continuity/` | Eligibility、renewal、ex parte、redetermination、procedural termination、CHIP、notice、coverage transfer | 覆盖资格仍可能因续期材料、通知、州系统或程序性终止断裂，造成低收入儿童和家庭失保 |
+| Medicare 参保和覆盖转接必须可理解 | `medicare-enrollment-coverage-transition-continuity/` | Initial/Special/General Enrollment、Part A/B/D、MA、Medigap、late penalty、coordination | 老年和残障主体可能因参保窗口、覆盖选择、罚金或协调失败承受长期医疗支付风险 |
 | 保险权益必须可核验 | `insurance-eligibility-benefits-verification-continuity/` | Eligibility、benefits verification、coverage active、deductible、copay、network status | 覆盖状态、权益或网络状态错误会把服务后成本转成不可预期账单 |
 | 医疗服务授权必须可追踪 | `medical-service-prior-authorization-utilization-management-continuity/` | Prior authorization、utilization management、medical necessity、coverage criteria、peer review | 授权延迟、补件或拒绝会把检查、影像、手术、设备和治疗截断 |
 | 理赔和 EOB 必须闭环 | `claims-adjudication-eob-denial-continuity/` | Claim adjudication、EOB、denial reason、coordination of benefits、resubmission、appeal window | 服务完成后若 claim 拒付或解释不清，会转化为账单、债务和行政负担 |
@@ -1195,6 +1201,7 @@ risk-engineering
   -> migration-displacement-humanitarian-continuity
   -> digital-inclusion-connectivity
   -> social-protection-benefits-delivery
+  -> tanf-cash-assistance-work-support-continuity
   -> credit-consumer-reporting-access-continuity
   -> tenant-screening-rental-access-continuity
   -> background-check-record-screening-continuity
@@ -1212,12 +1219,14 @@ risk-engineering
   -> social-security-earnings-benefit-record-continuity
   -> retirement-pension-savings-plan-continuity
   -> unemployment-insurance-wage-record-continuity
+  -> unemployment-insurance-claim-appeal-identity-continuity
   -> workers-compensation-occupational-injury-benefit-continuity
   -> family-medical-leave-job-protection-continuity
   -> paid-sick-family-leave-wage-replacement-continuity
   -> pregnancy-parental-work-continuity
   -> workplace-accommodation-return-to-work-continuity
   -> disability-income-work-capacity-benefit-continuity
+  -> ssi-ssdi-disability-review-appeal-continuity
   -> family-caregiver-respite-work-continuity
   -> adult-day-services-supervision-transport-continuity
   -> home-care-aide-personal-care-workforce-continuity
@@ -1403,6 +1412,7 @@ risk-engineering
   -> storm-drain-catch-basin-local-flooding-continuity
   -> grocery-retail-food-store-access-continuity
   -> snap-ebt-redemption-retailer-payment-continuity
+  -> snap-eligibility-recertification-abawd-continuity
   -> wic-benefit-redemption-infant-maternal-nutrition-continuity
   -> food-bank-pantry-community-food-distribution-continuity
   -> emergency-food-disaster-feeding-continuity
@@ -1426,6 +1436,8 @@ risk-engineering
   -> ambulatory-procedure-surgery-center-continuity
   -> after-hours-urgent-care-triage-continuity
   -> health-insurance-enrollment-renewal-continuity
+  -> medicaid-chip-renewal-redetermination-continuity
+  -> medicare-enrollment-coverage-transition-continuity
   -> insurance-eligibility-benefits-verification-continuity
   -> medical-service-prior-authorization-utilization-management-continuity
   -> claims-adjudication-eob-denial-continuity

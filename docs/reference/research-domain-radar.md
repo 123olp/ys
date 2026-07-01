@@ -211,6 +211,7 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `water-sanitation-hygiene-continuity/` | 安全水、卫生设施、洗手和污水处理决定感染控制、尊严、照护卫生和公共卫生底座 |
 | `energy-access-resilience/` | 电力、清洁烹饪、温控、通信供能和医疗设备供电决定多个生活和服务系统能否运行 |
 | `social-protection-benefits-delivery/` | 公共福利、资格、申请、续期、支付和申诉决定风险冲击能否被制度性缓冲 |
+| `tanf-cash-assistance-work-support-continuity/` | TANF 现金援助、工作参与、制裁、时限和托育连接决定家庭现金流与工作支持是否能跨州级政策差异保持连续 |
 | `insurance-risk-transfer/` | 覆盖、保费、自付、理赔、拒赔和风险池决定高成本风险是否由个体独自承担 |
 | `childcare-family-continuity/` | 托育可及、费用、质量、儿童发展和父母工作连续性共同影响两代主体的有效时间和未来选择权 |
 | `child-care-availability-affordability-continuity/` | 托育名额、费用、时段、距离、年龄覆盖和等待时间决定服务是否真实可用、可承受 |
@@ -684,12 +685,14 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `social-security-earnings-benefit-record-continuity/` | 社会保险收入与福利记录决定长期工资和缴费历史是否能在老年、失能和家庭风险边界转化为保障 |
 | `retirement-pension-savings-plan-continuity/` | 退休计划、养老金和长期储蓄账户决定工作期资源是否能延续到劳动退出后的生活与照护窗口 |
 | `unemployment-insurance-wage-record-continuity/` | 失业保险工资记录决定劳动收入中断时主体是否能获得短期收入稳定、申诉和再就业衔接 |
+| `unemployment-insurance-claim-appeal-identity-continuity/` | 失业保险 claim、每周认证、身份核验、支付和申诉决定失业事实是否能转化为及时现金流 |
 | `workers-compensation-occupational-injury-benefit-continuity/` | 工伤与职业伤害权益记录决定工作伤害后医疗、工资替代、职业康复和复工机会是否不断线 |
 | `family-medical-leave-job-protection-continuity/` | 家庭医疗假和岗位保护决定疾病、照护和家庭事件是否会自动切断岗位、保险、收入和职业身份 |
 | `paid-sick-family-leave-wage-replacement-continuity/` | 带薪病假和家庭/医疗假工资替代决定短期无法工作时主体是否仍有现金流、治疗窗口和照护空间 |
 | `pregnancy-parental-work-continuity/` | 孕产育儿工作连续性决定怀孕、分娩、哺乳、育儿和托育责任是否会被转化为职业惩罚 |
 | `workplace-accommodation-return-to-work-continuity/` | 合理便利和复工路径决定疾病、伤害或残障后的能力变化是否能被任务、环境和节奏重新接住 |
 | `disability-income-work-capacity-benefit-continuity/` | 残障收入与工作能力福利决定长期功能受限时现金流、医疗覆盖、复工试探和未来选择权是否不断线 |
+| `ssi-ssdi-disability-review-appeal-continuity/` | SSI/SSDI 复审、重新判定、申诉和支付执行决定残障保障是否会在行政审查中中断 |
 | `family-caregiver-respite-work-continuity/` | 家庭照护者和喘息服务决定长期照护责任是否会耗尽照护者的时间、健康、收入和工作角色 |
 | `adult-day-services-supervision-transport-continuity/` | 成人日间服务决定白天监督、活动餐食、交通交接和照护者工作窗口是否有外部服务承载 |
 | `home-care-aide-personal-care-workforce-continuity/` | 居家照护人员和个人照护劳动力决定 ADL/IADL 支持能否持续排班、监督和交接 |
@@ -869,6 +872,7 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `storm-drain-catch-basin-local-flooding-continuity/` | 雨水口和 catch basin 维护决定暴雨后街区积水是否会切断公交、步行、无障碍路径和低洼空间恢复 |
 | `grocery-retail-food-store-access-continuity/` | Grocery、食品零售和低收入低可达地区决定主体是否能把钱、距离、营业时间和支付方式转化为真实食物 |
 | `snap-ebt-redemption-retailer-payment-continuity/` | SNAP EBT、授权零售商和在线购买决定福利是否能在合规零售场景中被安全、连续、低摩擦兑换 |
+| `snap-eligibility-recertification-abawd-continuity/` | SNAP 资格、续期、ABAWD、工作要求和 fair hearing 决定食物援助是否能在兑换前保持可用 |
 | `wic-benefit-redemption-infant-maternal-nutrition-continuity/` | WIC、eWIC、vendor、食品包和婴儿配方决定孕产妇、婴儿和儿童的指定营养支持是否能真实到手 |
 | `food-bank-pantry-community-food-distribution-continuity/` | 食品银行、pantry、TEFAP 和社区发放决定市场、收入或福利不足时是否还有低门槛食物缓冲 |
 | `emergency-food-disaster-feeding-continuity/` | 灾害供餐、D-SNAP 和应急食品分发决定零售、交通、冷链和厨房中断时主体是否仍能获得食物 |
@@ -892,6 +896,8 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `ambulatory-procedure-surgery-center-continuity/` | ASC、门诊操作、内镜、输注、术前工作流、陪同接送和恢复观察决定低住院化治疗是否安全闭环 |
 | `after-hours-urgent-care-triage-continuity/` | 非工作时间照护、urgent care、retail clinic、护士热线和 tele-triage 决定不能等待的门诊断点是否被接住 |
 | `health-insurance-enrollment-renewal-continuity/` | 参保、续保、特殊参保期、保费支付和 Medicaid/Marketplace 转换决定医疗风险转移入口是否持续 |
+| `medicaid-chip-renewal-redetermination-continuity/` | Medicaid/CHIP 续期、重新判定和程序性终止决定低收入家庭与儿童医疗覆盖是否在行政窗口中断裂 |
+| `medicare-enrollment-coverage-transition-continuity/` | Medicare 参保、Part A/B/D、MA、Medigap 和覆盖转接决定老年与残障主体是否能持续进入医疗支付系统 |
 | `insurance-eligibility-benefits-verification-continuity/` | 资格核验、benefits verification、coverage active、费用分担和网络状态决定服务前支付边界是否可知 |
 | `medical-service-prior-authorization-utilization-management-continuity/` | 医疗服务 prior authorization、utilization management 和 medical necessity review 决定检查、操作和治疗是否被授权执行 |
 | `claims-adjudication-eob-denial-continuity/` | Claim adjudication、EOB、denial reason 和 appeal window 决定服务完成后的支付闭环是否可追踪 |

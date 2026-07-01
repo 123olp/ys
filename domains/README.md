@@ -161,6 +161,7 @@
 - `migration-displacement-humanitarian-continuity/`：迁移、流离失所与人道连续性，整理身份、医疗、教育、庇护、保护、安置和人道服务连续性。
 - `digital-inclusion-connectivity/`：数字包容与连接，整理互联网接入、设备、数字技能、可负担性、无障碍和数字公共服务入口。
 - `social-protection-benefits-delivery/`：社会保护与福利递送，整理公共福利、资格、申请、续期、支付、申诉和行政负担。
+- `tanf-cash-assistance-work-support-continuity/`：TANF 现金援助与工作支持连续性，整理现金福利、work participation、child care linkage、sanction、time limit 和州级政策差异。
 - `community-resource-navigation/`：社区资源导航，整理 211、资源目录、社会需求筛查、转介、闭环回访和本地服务导航。
 - `social-determinants-community-vulnerability/`：社会决定因素与社区脆弱性，整理 SDOH、社区脆弱性、环境正义、地方健康估计和健康相关社会需求。
 - `public-service-design-accessibility/`：公共服务设计与可达性，整理公共数字服务、表单、客户体验、无障碍、人工帮助和任务完成路径。
@@ -495,12 +496,14 @@
 - `social-security-earnings-benefit-record-continuity/`：社会保险收入与福利记录连续性，整理收入记录、工作 credits、福利声明、退休、残障、遗属和记录更正。
 - `retirement-pension-savings-plan-continuity/`：退休、养老金与储蓄计划连续性，整理养老金、401(k)、IRA、rollover、vesting、受益人、丢失账户和计划终止。
 - `unemployment-insurance-wage-record-continuity/`：失业保险工资记录连续性，整理 UI wage records、基期、雇主报送、索赔状态、资格判定、申诉和欺诈防控。
+- `unemployment-insurance-claim-appeal-identity-continuity/`：失业保险索赔、申诉与身份连续性，整理初始 claim、每周认证、身份核验、支付、overpayment、申诉和现代化风险。
 - `workers-compensation-occupational-injury-benefit-continuity/`：工伤与职业伤害权益连续性，整理工伤、职业病、伤害记录、医疗给付、工资替代、复工和 OSHA 记录。
 - `family-medical-leave-job-protection-continuity/`：家庭医疗假与岗位保护连续性，整理疾病、家庭照护、军属照护、岗位保护、反报复和复工入口。
 - `paid-sick-family-leave-wage-replacement-continuity/`：带薪病假、家庭假与工资替代连续性，整理短期疾病、照护和家庭事件期间的现金流、替代率、等待期和覆盖缺口。
 - `pregnancy-parental-work-continuity/`：孕产育儿工作连续性，整理怀孕便利、分娩恢复、父母假、哺乳/泵奶支持、育儿责任和工作连续性。
 - `workplace-accommodation-return-to-work-continuity/`：工作场所合理便利与复工连续性，整理合理便利、interactive process、modified duty、phased return 和工作能力匹配。
 - `disability-income-work-capacity-benefit-continuity/`：残障收入、工作能力与福利连续性，整理 SSDI、SSI、残障收入、工作能力、复工激励和福利悬崖。
+- `ssi-ssdi-disability-review-appeal-continuity/`：SSI/SSDI 残障复审、申诉与支付连续性，整理 disability determination、CDR、redetermination、appeals、representative payee 和 payment continuity。
 - `family-caregiver-respite-work-continuity/`：家庭照护者、喘息服务与工作连续性，整理家庭照护者支持、respite care、照护培训、工作灵活性和照护者负担。
 - `adult-day-services-supervision-transport-continuity/`：成人日间服务、监督与交通连续性，整理 adult day services、白天监督、活动餐食、交通接送和照护者工作窗口。
 - `home-care-aide-personal-care-workforce-continuity/`：居家照护人员与个人照护劳动力连续性，整理 home care aides、personal care、ADL/IADL 支持、排班、监督和劳动力稳定。
@@ -686,6 +689,7 @@
 - `storm-drain-catch-basin-local-flooding-continuity/`：雨水口、catch basin 与局部内涝连续性，整理雨水口、堵塞、街道积水、绿色基础设施和服务请求。
 - `grocery-retail-food-store-access-continuity/`：Grocery、食品零售与日常食物采购连续性，整理超市、小型食品店、农贸市场、线上取货配送、价格、支付和可达性。
 - `snap-ebt-redemption-retailer-payment-continuity/`：SNAP EBT 兑换、零售商与支付连续性，整理 EBT 卡、PIN、余额、授权零售商、在线购买、交易失败和账户恢复。
+- `snap-eligibility-recertification-abawd-continuity/`：SNAP 资格、续期与 ABAWD 连续性，整理收入/资源口径、household、recertification、work requirements、E&T、notice 和 fair hearing。
 - `wic-benefit-redemption-infant-maternal-nutrition-continuity/`：WIC 兑换、母婴营养与早期食物连续性，整理 WIC 食物包、eWIC、授权商店、婴儿配方、母乳支持和转介服务。
 - `food-bank-pantry-community-food-distribution-continuity/`：食品银行、pantry 与社区食品发放连续性，整理食品银行、TEFAP、社区发放、捐赠物流、开放时段和尊严保护。
 - `emergency-food-disaster-feeding-continuity/`：灾害供餐与应急食品发放连续性，整理灾害供餐、应急食品包、D-SNAP、避难所餐食和恢复过渡。
@@ -709,6 +713,8 @@
 - `ambulatory-procedure-surgery-center-continuity/`：门诊操作与 ASC 连续性，整理 ASC、门诊内镜、输注、术前准备、陪同接送、恢复观察和 follow-up。
 - `after-hours-urgent-care-triage-continuity/`：非工作时间 urgent care 与分诊连续性，整理夜间/周末照护、护士热线、urgent care、retail clinic、tele-triage 和闭环回传。
 - `health-insurance-enrollment-renewal-continuity/`：健康保险参保续保连续性，整理 open enrollment、special enrollment、renewal、Medicaid/Marketplace 转换、保费支付和 coverage gap。
+- `medicaid-chip-renewal-redetermination-continuity/`：Medicaid/CHIP 续期、重新判定与覆盖连续性，整理 eligibility、renewal、ex parte、procedural termination、CHIP、notice 和 coverage transfer。
+- `medicare-enrollment-coverage-transition-continuity/`：Medicare 参保、覆盖选择与转接连续性，整理 Initial/Special/General Enrollment、Part A/B/D、MA、Medigap、coordination 和 late penalty。
 - `insurance-eligibility-benefits-verification-continuity/`：保险资格与权益核验连续性，整理 eligibility、benefits verification、coverage active、费用分担、网络状态和覆盖限制。
 - `medical-service-prior-authorization-utilization-management-continuity/`：医疗服务授权与利用管理连续性，整理 medical-service prior authorization、medical necessity、coverage criteria、peer review 和服务延迟。
 - `claims-adjudication-eob-denial-continuity/`：理赔、EOB 与拒付连续性，整理 claim adjudication、EOB、denial reason、coordination of benefits、resubmission 和 appeal window。

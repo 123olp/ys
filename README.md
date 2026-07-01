@@ -546,6 +546,8 @@ flowchart TD
     H --> MDHC[migration-displacement-humanitarian-continuity<br/>迁移 / 流离失所 / 人道连续性]
     H --> DIC[digital-inclusion-connectivity<br/>数字包容 / 连接]
     H --> SPBD[social-protection-benefits-delivery<br/>社会保护 / 福利递送]
+    SPBD --> SEAR[snap-eligibility-recertification-abawd-continuity<br/>SNAP 资格 / 续期工作要求]
+    SPBD --> TANFC[tanf-cash-assistance-work-support-continuity<br/>TANF 现金援助 / 工作支持]
     H --> IRT[insurance-risk-transfer<br/>保险 / 风险转移]
     H --> CFC[childcare-family-continuity<br/>托育 / 家庭连续性]
     CFC --> CCAAC[child-care-availability-affordability-continuity<br/>托育供给 / 费用可承受]
@@ -714,12 +716,14 @@ flowchart TD
     H --> SSEBRC[social-security-earnings-benefit-record-continuity<br/>社会保险 / 收入福利记录]
     H --> RPSPC[retirement-pension-savings-plan-continuity<br/>退休养老金 / 储蓄计划]
     H --> UIWRC[unemployment-insurance-wage-record-continuity<br/>失业保险 / 工资记录]
+    H --> UICAI[unemployment-insurance-claim-appeal-identity-continuity<br/>失业保险 / 申领申诉身份]
     H --> WCOIBC[workers-compensation-occupational-injury-benefit-continuity<br/>工伤补偿 / 职业伤害权益]
     H --> FMLJPC[family-medical-leave-job-protection-continuity<br/>家庭医疗假 / 岗位保护]
     H --> PSFLWRC[paid-sick-family-leave-wage-replacement-continuity<br/>带薪病假家庭假 / 工资替代]
     H --> PPWC[pregnancy-parental-work-continuity<br/>孕产育儿 / 工作连续性]
     H --> WARTWC[workplace-accommodation-return-to-work-continuity<br/>合理便利 / 复工]
     H --> DIWCB[disability-income-work-capacity-benefit-continuity<br/>残障收入 / 工作能力福利]
+    H --> SSDRC[ssi-ssdi-disability-review-appeal-continuity<br/>SSI/SSDI / 复审申诉]
     H --> FCRWC[family-caregiver-respite-work-continuity<br/>家庭照护者 / 喘息与工作]
     H --> ADSS[adult-day-services-supervision-transport-continuity<br/>成人日间服务 / 监督交通]
     H --> HCAPCW[home-care-aide-personal-care-workforce-continuity<br/>居家照护人员 / 个人照护]
@@ -905,6 +909,7 @@ flowchart TD
     H --> SDCBLFC[storm-drain-catch-basin-local-flooding-continuity<br/>雨水口 / 局部内涝]
     H --> GRFSAC[grocery-retail-food-store-access-continuity<br/>食品零售 / Grocery 可达]
     H --> SERPC[snap-ebt-redemption-retailer-payment-continuity<br/>SNAP EBT / 兑换支付]
+    H --> SEAR2[snap-eligibility-recertification-abawd-continuity<br/>SNAP 资格 / Recertification]
     H --> WBRIMN[wic-benefit-redemption-infant-maternal-nutrition-continuity<br/>WIC / 母婴营养兑换]
     H --> FBPCFD[food-bank-pantry-community-food-distribution-continuity<br/>食品银行 / 社区发放]
     H --> EFDFC[emergency-food-disaster-feeding-continuity<br/>灾害供餐 / 应急食品]
@@ -928,6 +933,8 @@ flowchart TD
     H --> APSC[ambulatory-procedure-surgery-center-continuity<br/>门诊操作 / ASC 连续]
     H --> AHUCT[after-hours-urgent-care-triage-continuity<br/>非工作时间 / 急诊前分诊]
     H --> HIER[health-insurance-enrollment-renewal-continuity<br/>保险参保 / 续保连续]
+    H --> MCRR[medicaid-chip-renewal-redetermination-continuity<br/>Medicaid/CHIP / 续期重判]
+    H --> MECC[medicare-enrollment-coverage-transition-continuity<br/>Medicare / 覆盖转换]
     H --> IEBV[insurance-eligibility-benefits-verification-continuity<br/>权益核验 / Benefits verification]
     H --> MSPA[medical-service-prior-authorization-utilization-management-continuity<br/>医疗服务授权 / 利用管理]
     H --> CAED[claims-adjudication-eob-denial-continuity<br/>理赔 EOB / 拒付闭环]
@@ -1219,12 +1226,14 @@ flowchart TD
 | [Social Security Earnings Benefit Record Continuity](domains/social-security-earnings-benefit-record-continuity/README.md) | 社会保险收入记录、工作 credits、福利声明、退休、残障和遗属权益 | 把几十年的工资和缴费历史转化为老年、失能和家庭风险边界的保障 | 不提供福利申请、申诉、退休策略、残障、Medicare、法律、财务或移民建议 |
 | [Retirement Pension Savings Plan Continuity](domains/retirement-pension-savings-plan-continuity/README.md) | 养老金、401(k)、IRA、rollover、vesting、受益人、丢失账户和计划终止 | 把工作期资源沉淀为劳动退出后的长期资金、照护和选择窗口 | 不提供投资、rollover、税务、退休时间、受益人、理财、ERISA 或法律建议 |
 | [Unemployment Insurance Wage Record Continuity](domains/unemployment-insurance-wage-record-continuity/README.md) | 失业保险工资记录、基期、雇主报送、索赔状态、资格判定、申诉和欺诈防控 | 把过去工资和雇佣记录转化为劳动收入中断时的短期稳定和再就业窗口 | 不提供 UI 申请、资格判断、每周认证、申诉、税务、法律、移民或个人福利建议 |
+| [Unemployment Insurance Claim Appeal Identity Continuity](domains/unemployment-insurance-claim-appeal-identity-continuity/README.md) | UI claim、身份核验、资格决定、weekly certification、overpayment、appeal 和支付延迟 | 把失业收入冲击转化为可申领、可核验、可申诉、可支付的短期恢复窗口 | 不提供 UI 资格、申领、每周认证、申诉、身份核验、overpayment、法律或个案建议 |
 | [Workers Compensation Occupational Injury Benefit Continuity](domains/workers-compensation-occupational-injury-benefit-continuity/README.md) | 工伤、职业病、伤害记录、医疗给付、工资替代、复工、职业康复和 OSHA 记录 | 把工作造成的伤害转化为医疗、收入替代、恢复支持和重返任务机会 | 不提供工伤索赔、医疗诊断、赔偿金额、复工许可、法律、保险或个人案件建议 |
 | [Family Medical Leave Job Protection Continuity](domains/family-medical-leave-job-protection-continuity/README.md) | 家庭医疗假、严重健康状况、照护假、军属照护、岗位保护、反报复和复工入口 | 把疾病和照护事件转化为可返回工作的制度窗口 | 不提供 FMLA、雇佣法、请假策略、证明、资格判断、法律、HR 或个案建议 |
 | [Paid Sick Family Leave Wage Replacement Continuity](domains/paid-sick-family-leave-wage-replacement-continuity/README.md) | 带薪病假、带薪家庭假、带薪医疗假、替代率、等待期、公共/雇主计划和覆盖缺口 | 把短期无法工作转化为可承受恢复和照护窗口 | 不提供带薪假申请、工资计算、保险理赔、税务、法律、福利或欺诈规避建议 |
 | [Pregnancy Parental Work Continuity](domains/pregnancy-parental-work-continuity/README.md) | 怀孕便利、分娩恢复、父母假、哺乳/泵奶支持、育儿责任和反歧视 | 防止生育与育儿责任把主体排除出工作、收入和学习系统 | 不提供医疗、法律、HR、福利、托育选择、便利申请或雇主合规建议 |
 | [Workplace Accommodation Return To Work Continuity](domains/workplace-accommodation-return-to-work-continuity/README.md) | 合理便利、interactive process、modified duty、phased return、工作能力和辅助技术 | 把能力变化转化为可调任务、环境、节奏和复工路径 | 不提供 ADA、工伤、医疗限制、复工许可、便利请求、法律或雇主合规建议 |
 | [Disability Income Work Capacity Benefit Continuity](domains/disability-income-work-capacity-benefit-continuity/README.md) | SSDI、SSI、残障收入、工作 credits、工作能力、复工激励和福利悬崖 | 在长期功能受限时保留现金流、医疗覆盖、工作参与和未来选择权 | 不提供福利申请、申诉、资格判断、给付金额、税务、法律、保险或医学建议 |
+| [SSI SSDI Disability Review Appeal Continuity](domains/ssi-ssdi-disability-review-appeal-continuity/README.md) | SSI/SSDI determination、appeal、continuing disability review、work reporting、overpayment 和支付维护 | 把失能事实、收入支持、医疗入口和复审纠错接成可持续的制度承认链 | 不提供 SSI/SSDI 资格、申请、医学证明、appeal、CDR、overpayment、法律或个案建议 |
 | [Family Caregiver Respite Work Continuity](domains/family-caregiver-respite-work-continuity/README.md) | 家庭照护者支持、respite care、照护培训、工作灵活性、照护者健康和负担 | 防止长期照护责任吞噬照护者时间、收入、健康和职业角色 | 不提供个人照护计划、福利申请、长期照护选择、医疗、法律、保险或雇佣建议 |
 | [Adult Day Services Supervision Transport Continuity](domains/adult-day-services-supervision-transport-continuity/README.md) | 成人日间服务、日间监督、活动、餐食、交通接送、照护者工作窗口和服务连续性 | 把白天照护缺口转化为可组织、可运输、可监督的外部支持时间块 | 不提供服务推荐、资格判断、交通安排、医疗监督、照护计划、福利申请或个案安全建议 |
 | [Home Care Aide Personal Care Workforce Continuity](domains/home-care-aide-personal-care-workforce-continuity/README.md) | 居家照护人员、personal care、ADL/IADL 支持、排班、监督、工资和劳动力稳定 | 把家庭内部无法持续承担的日常照护任务转化为可调度的劳动力系统 | 不提供雇佣建议、护理操作、人员推荐、工资合规、背景调查、医疗或个案照护建议 |
@@ -1410,6 +1419,7 @@ flowchart TD
 | [Storm Drain Catch Basin Local Flooding Continuity](domains/storm-drain-catch-basin-local-flooding-continuity/README.md) | 雨水口、catch basin、街道积水、堵塞、绿色基础设施和局部内涝 | 防止降雨后街道、人行道、公交、急救和住房入口被排水失败切断 | 不提供排水施工、清掏操作、涉水驾驶、洪水救援、污染判断、抽水或保险索赔 |
 | [Grocery Retail Food Store Access Continuity](domains/grocery-retail-food-store-access-continuity/README.md) | 超市、杂货店、小型食品零售、农贸市场、线上取货配送、价格和支付入口 | 让收入、福利、交通和时间能够转化为真实日常食物输入 | 不提供购物推荐、价格套利、偷盗、优惠券滥用、支付规避或配送平台规避 |
 | [SNAP EBT Redemption Retailer Payment Continuity](domains/snap-ebt-redemption-retailer-payment-continuity/README.md) | SNAP EBT 卡、PIN、余额、授权零售商、在线购买、交易失败和账户恢复 | 让营养援助从资格记录转成可购买食物，降低支付与账户摩擦 | 不提供资格规避、福利欺诈、EBT 破解、PIN 获取、盗刷、福利转售或零售商欺诈 |
+| [SNAP Eligibility Recertification ABAWD Continuity](domains/snap-eligibility-recertification-abawd-continuity/README.md) | SNAP eligibility、recertification、change reporting、ABAWD、work requirements 和 E&T | 让食物援助资格能持续维护、通知、纠错和接入支付兑换链路 | 不提供 SNAP 资格、申请、续期、ABAWD 豁免、听证、E&T 选择、欺诈或规避建议 |
 | [WIC Benefit Redemption Infant Maternal Nutrition Continuity](domains/wic-benefit-redemption-infant-maternal-nutrition-continuity/README.md) | WIC 食物包、eWIC、授权商店、婴儿配方、母婴营养和转介服务 | 让孕产妇、婴幼儿和儿童获得稳定营养输入与早期发展支持 | 不提供资格规避、eWIC 破解、配方囤积转售、婴儿喂养医疗建议或个案申诉策略 |
 | [Food Bank Pantry Community Food Distribution Continuity](domains/food-bank-pantry-community-food-distribution-continuity/README.md) | 食品银行、pantry、TEFAP、社区发放、捐赠物流、开放时段和尊严保护 | 在收入、福利、零售或灾害冲击下提供最后食物缓冲层 | 不提供资格规避、重复领取、捐赠食品转售、库存操纵、食品处置决策或福利策略 |
 | [Emergency Food Disaster Feeding Continuity](domains/emergency-food-disaster-feeding-continuity/README.md) | 灾害供餐、应急食品包、D-SNAP、避难所餐食、学校/社区紧急供餐 | 在厨房、商店、交通、电力、支付和常规福利断裂时维持能量输入 | 不提供 D-SNAP 规避、骗领、物资抢占、发放点实时跟踪、囤积套利或救援指挥 |
@@ -1433,6 +1443,8 @@ flowchart TD
 | [Ambulatory Procedure Surgery Center Continuity](domains/ambulatory-procedure-surgery-center-continuity/README.md) | ASC、门诊内镜、输注、术前准备、陪同接送、恢复观察和 follow-up | 让低住院化治疗安全发生，并保留术后回路 | 不提供手术/操作建议、术前准备、麻醉判断、并发症处理、机构推荐或加急策略 |
 | [After Hours Urgent Care Triage Continuity](domains/after-hours-urgent-care-triage-continuity/README.md) | 夜间/周末照护、护士热线、urgent care、retail clinic、tele-triage 和闭环回传 | 在非急诊但不能等待的时间断点上保护主体 | 不提供症状分诊、急救判断、urgent care 推荐、等待建议、诊断治疗或保险规避 |
 | [Health Insurance Enrollment Renewal Continuity](domains/health-insurance-enrollment-renewal-continuity/README.md) | 健康保险参保、续保、特殊参保期、资格通知、保费支付和 Medicaid/Marketplace 转换 | 让主体持续拥有医疗支付入口，不因 life event、续保失败或保费断点失保 | 不提供保险选择、补贴资格、收入计算、申诉代写、税务、移民或法律建议 |
+| [Medicaid CHIP Renewal Redetermination Continuity](domains/medicaid-chip-renewal-redetermination-continuity/README.md) | Medicaid/CHIP annual renewal、redetermination、ex parte、通知、资料请求和覆盖转换 | 防止公共医保资格维护失败切断处方、预防照护、慢病管理和家庭现金流 | 不提供 Medicaid/CHIP 资格、申请、续期、申诉、收入计算、移民、税务或法律建议 |
+| [Medicare Enrollment Coverage Transition Continuity](domains/medicare-enrollment-coverage-transition-continuity/README.md) | Medicare 参保窗口、Original Medicare、MA、Part D、Medigap、Extra Help 和覆盖转换 | 让老年、残障和 ESRD 主体在制度转换时持续拥有医疗支付入口 | 不提供 Medicare 计划选择、参保、换计划、药物比较、罚金、SEP、税务、法律或销售建议 |
 | [Insurance Eligibility Benefits Verification Continuity](domains/insurance-eligibility-benefits-verification-continuity/README.md) | 保险资格、coverage active、benefits verification、费用分担、网络状态和覆盖限制 | 让服务发生前能核验权益、费用分担和网络边界，减少服务后账单冲击 | 不解释个人 benefits、deductible、network、coverage、claim 或 bill |
 | [Medical Service Prior Authorization Utilization Management Continuity](domains/medical-service-prior-authorization-utilization-management-continuity/README.md) | 医疗服务 prior authorization、utilization management、medical necessity、coverage criteria 和续期 | 防止检查、影像、手术、设备和治疗在授权治理层延迟或截断 | 不代写 PA、medical necessity、peer-to-peer、appeal 或 clinical letter |
 | [Claims Adjudication EOB Denial Continuity](domains/claims-adjudication-eob-denial-continuity/README.md) | claim adjudication、EOB、denial reason、coordination of benefits、resubmission 和 appeal window | 让服务发生后的 payer payment、adjustment 和 patient responsibility 可追踪 | 不解释个人 EOB、claim、denial、billing code、legal deadline 或 payer decision |
@@ -1586,6 +1598,7 @@ flowchart TD
 | [Migration Displacement Humanitarian Continuity](domains/migration-displacement-humanitarian-continuity/README.md) | 迁移、难民、流离失所、身份连续、健康/教育/庇护/保护服务 | 跨地点、跨制度和人道危机场景下的服务连续性 | 不提供移民/庇护个案建议、边境路线、规避执法、伪造文件或危险旅行方法 |
 | [Digital Inclusion Connectivity](domains/digital-inclusion-connectivity/README.md) | 互联网接入、设备、数字技能、可负担性、无障碍和数字公共服务 | 数字社会接入层、服务可达、信息可达和机会可达 | 不提供黑客攻击、账号绕过、盗版破解、电信账户操控或个体补贴/设备建议 |
 | [Social Protection Benefits Delivery](domains/social-protection-benefits-delivery/README.md) | 公共福利、社会保护、资格、申请、续期、支付、申诉和行政负担 | 风险冲击缓冲、服务递送、公共支持和制度性恢复路径 | 不提供福利申请、资格判断、材料准备、法律、税务、移民或规避制度建议 |
+| [TANF Cash Assistance Work Support Continuity](domains/tanf-cash-assistance-work-support-continuity/README.md) | TANF 现金援助、工作参与、时间限制、制裁、case management 和 work supports | 把家庭现金援助、就业支持、托育接口和儿童稳定连接成低收入家庭恢复窗口 | 不提供 TANF 资格、申请、续期、工作要求、制裁、child support、法律或个案建议 |
 | [Community Resource Navigation](domains/community-resource-navigation/README.md) | 211、资源目录、社会需求筛查、转介、闭环回访和本地服务导航 | 资源发现、服务匹配、人工协助和社区支持转化接口 | 不判断资格、申请策略、机构质量、资源实时可用性或危机替代 |
 | [Administrative Burden Procedural Friction](domains/administrative-burden-procedural-friction/README.md) | 学习成本、心理成本、合规成本、证明、等待、续期、申诉和错误恢复 | 制度资源能否抵达主体，以及行政摩擦如何消耗有效时间 | 不提供个案申请、规避审核、福利、税务、法律或争议处理建议 |
 | [Community Health Workers Peer Support](domains/community-health-workers-peer-support/README.md) | 社区健康工作者、同伴支持、导航员、可信中介和转介闭环 | 把医疗、公共卫生、社会服务和恢复支持嵌入日常生活 | 不提供诊断、治疗、用药、心理咨询、危机处理或个案转介建议 |
@@ -2031,6 +2044,7 @@ human_infra/
 │   ├── storm-drain-catch-basin-local-flooding-continuity/
 │   ├── grocery-retail-food-store-access-continuity/
 │   ├── snap-ebt-redemption-retailer-payment-continuity/
+│   ├── snap-eligibility-recertification-abawd-continuity/
 │   ├── wic-benefit-redemption-infant-maternal-nutrition-continuity/
 │   ├── food-bank-pantry-community-food-distribution-continuity/
 │   ├── emergency-food-disaster-feeding-continuity/
@@ -2054,6 +2068,8 @@ human_infra/
 │   ├── ambulatory-procedure-surgery-center-continuity/
 │   ├── after-hours-urgent-care-triage-continuity/
 │   ├── health-insurance-enrollment-renewal-continuity/
+│   ├── medicaid-chip-renewal-redetermination-continuity/
+│   ├── medicare-enrollment-coverage-transition-continuity/
 │   ├── insurance-eligibility-benefits-verification-continuity/
 │   ├── medical-service-prior-authorization-utilization-management-continuity/
 │   ├── claims-adjudication-eob-denial-continuity/
@@ -2170,6 +2186,7 @@ human_infra/
 │   ├── migration-displacement-humanitarian-continuity/
 │   ├── digital-inclusion-connectivity/
 │   ├── social-protection-benefits-delivery/
+│   ├── tanf-cash-assistance-work-support-continuity/
 │   ├── community-resource-navigation/
 │   ├── insurance-risk-transfer/
 │   ├── childcare-family-continuity/
@@ -2666,5 +2683,6 @@ flowchart LR
 - 2026-07-01：新增第一百一十八波 6 个围产期连续性域，覆盖产前照护接入风险筛查、产后恢复随访、哺乳泵奶支持、早产 NICU 出院转接、妊娠丧失悲伤支持和围产期心理健康筛查转介。
 - 2026-07-01：新增第一百一十九波 6 个儿科预防与早期筛查连续性域，覆盖新生儿筛查结果随访、儿童健康体检预防照护、儿童免疫排程记录、发育行为筛查转介、儿童铅筛查环境随访和特殊健康需求儿童照护协调。
 - 2026-07-01：新增第一百二十波 6 个儿童青少年线上健康与平台风险连续性域，覆盖青少年社交媒体心理健康、线上安全设计与平台治理、网络霸凌骚扰举报、儿童线上性剥削与 sextortion 举报、游戏内购/loot box/暗黑模式和儿童隐性广告/网红营销。
+- 2026-07-01：新增第一百二十一波 6 个公共福利资格续期、覆盖转换与申诉执行连续性域，覆盖 SNAP 资格/续期/ABAWD、Medicaid/CHIP 续期重判、Medicare 参保覆盖转换、SSI/SSDI 复审申诉、TANF 现金援助工作支持和失业保险申领/身份核验/申诉支付连续性。
 
 完整记录见 [CHANGELOG.md](CHANGELOG.md)。
