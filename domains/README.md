@@ -593,6 +593,12 @@
 - `natural-gas-propane-leak-shutoff-continuity/`：天然气、丙烷泄漏识别与关断恢复连续性，整理燃气接口、泄漏信号、撤离、专业恢复和家庭任务连续性。
 - `thermostat-temperature-control-thermal-comfort-continuity/`：温控器与室内温度控制连续性，整理设定点、传感器、远程控制、热舒适和能耗冲突。
 - `weatherization-insulation-air-sealing-thermal-envelope-continuity/`：天气化、保温、气密与住宅围护结构连续性，整理热边界、湿气边界、空气交换和能源负担。
+- `residential-solid-waste-collection-bin-sanitation-continuity/`：住宅固废收运与垃圾桶卫生连续性，整理生活垃圾、回收物、庭院废弃物、垃圾桶、错过收运和多户住宅垃圾间。
+- `household-hazardous-waste-chemical-disposal-continuity/`：家庭危险废物与化学处置连续性，整理清洁剂、油漆、溶剂、农药、汽车化学品、易燃品和 HHW 入口。
+- `home-sharps-medical-waste-disposal-continuity/`：家庭锐器与医疗废物处置连续性，整理针头、注射器、采血针、锐器容器、drop box、mail-back 和暴露风险。
+- `e-waste-battery-recycling-disposal-continuity/`：电子废弃物与电池回收处置连续性，整理退役设备、锂电池、纽扣电池、回收点、数据残留和火灾风险。
+- `food-scrap-composting-pest-odor-continuity/`：厨余堆肥、害虫与气味连续性，整理食物残渣、台面桶、户外桶、社区堆肥、气味、害虫和渗漏。
+- `illegal-dumping-litter-neighborhood-sanitation-continuity/`：非法倾倒、乱扔垃圾与邻里卫生连续性，整理大件堆积、轮胎床垫、巷道空地、举报入口、清理延迟和环境正义。
 - `household-cleaning-disinfection-pest-control-continuity/`：家庭清洁、消毒与害虫控制连续性，整理表面清洁、消毒、化学品安全、害虫控制和室内卫生。
 - `postal-parcel-delivery-pickup-continuity/`：邮件、包裹、投递与自提连续性，整理邮件包裹、签收、自提、追踪、地址错配和最后一公里接收。
 - `household-maintenance-repair-contractor-continuity/`：家庭维修、承包商与修复服务连续性，整理维修请求、承包商、报价、许可、记录、投诉和修复恢复。

@@ -129,6 +129,7 @@ docs/
 │   ├── 0111-add-one-hundred-sixth-wave-assistive-device-operational-continuity-domains.md
 │   ├── 0112-add-one-hundred-seventh-wave-household-water-wastewater-execution-domains.md
 │   ├── 0113-add-one-hundred-eighth-wave-household-energy-thermal-safety-domains.md
+│   ├── 0114-add-one-hundred-ninth-wave-household-waste-disposal-execution-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -411,6 +412,12 @@ docs/
     - Then read `../domains/natural-gas-propane-leak-shutoff-continuity/README.md` for natural gas, propane, fuel-gas leaks, shutoff boundaries, evacuation, or professional restoration after fuel risk.
     - Then read `../domains/thermostat-temperature-control-thermal-comfort-continuity/README.md` for thermostats, setpoints, sensors, remote control, thermal comfort, or temperature-control task continuity.
     - Then read `../domains/weatherization-insulation-air-sealing-thermal-envelope-continuity/README.md` for weatherization, insulation, air sealing, thermal envelope, moisture/ventilation balance, or energy-burden continuity.
+    - Then read `../domains/residential-solid-waste-collection-bin-sanitation-continuity/README.md` for residential trash, recycling, yard waste, bins, missed collection, bulky pickup, or household waste sanitation continuity.
+    - Then read `../domains/household-hazardous-waste-chemical-disposal-continuity/README.md` for household hazardous waste, paints, solvents, pesticides, cleaners, auto chemicals, HHW drop-off, or chemical-disposal continuity.
+    - Then read `../domains/home-sharps-medical-waste-disposal-continuity/README.md` for home needles, syringes, lancets, auto-injectors, sharps containers, drop boxes, mail-back, or medical-waste disposal continuity.
+    - Then read `../domains/e-waste-battery-recycling-disposal-continuity/README.md` for e-waste, lithium-ion batteries, button batteries, household batteries, device retirement, take-back, recycling, or battery-disposal continuity.
+    - Then read `../domains/food-scrap-composting-pest-odor-continuity/README.md` for food scraps, composting, countertop bins, curbside organics, pests, odor, leakage, or food-waste diversion continuity.
+    - Then read `../domains/illegal-dumping-litter-neighborhood-sanitation-continuity/README.md` for illegal dumping, litter, abandoned furniture, tires, mattresses, alley/lot dumping, reporting, cleanup delays, or neighborhood sanitation continuity.
 183. Read `../domains/advance-care-planning-medical-decision-continuity/README.md` if you are working on advance care planning, advance directives, health care proxy, medical decision continuity, goals of care, or incapacity communication.
 184. Read `../domains/supported-decision-making-guardianship-rights/README.md` if you are working on supported decision-making, guardianship, conservatorship, decision capacity, disability rights, or least restrictive alternatives.
 185. Read `../domains/healthcare-personal-representative-hipaa-access-continuity/README.md` if you are working on HIPAA personal representatives, caregiver access, proxy access, medical records, privacy boundaries, or authorized care coordination.

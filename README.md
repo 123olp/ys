@@ -818,6 +818,12 @@ flowchart TD
     H --> NGPLSC[natural-gas-propane-leak-shutoff-continuity<br/>燃气丙烷 / 泄漏关断]
     H --> TTCTCC[thermostat-temperature-control-thermal-comfort-continuity<br/>温控器 / 室温控制]
     H --> WIASTEC[weatherization-insulation-air-sealing-thermal-envelope-continuity<br/>天气化保温 / 围护结构]
+    H --> RSWCBSC[residential-solid-waste-collection-bin-sanitation-continuity<br/>住宅固废 / 垃圾桶卫生]
+    H --> HHWCDC[household-hazardous-waste-chemical-disposal-continuity<br/>家庭危废 / 化学处置]
+    H --> HSMWDC[home-sharps-medical-waste-disposal-continuity<br/>家庭锐器 / 医疗废物]
+    H --> EWBRDC[e-waste-battery-recycling-disposal-continuity<br/>电子废弃物 / 电池回收]
+    H --> FSCPOC[food-scrap-composting-pest-odor-continuity<br/>厨余堆肥 / 害虫气味]
+    H --> IDLNSC[illegal-dumping-litter-neighborhood-sanitation-continuity<br/>非法倾倒 / 邻里卫生]
     H --> HCDPCC[household-cleaning-disinfection-pest-control-continuity<br/>家庭清洁 / 消毒害虫控制]
     H --> PPDPC[postal-parcel-delivery-pickup-continuity<br/>邮件包裹 / 投递自提]
     H --> HMRCC[household-maintenance-repair-contractor-continuity<br/>家庭维修 / 承包商服务]
@@ -1269,6 +1275,12 @@ flowchart TD
 | [Natural Gas Propane Leak Shutoff Continuity](domains/natural-gas-propane-leak-shutoff-continuity/README.md) | 天然气、丙烷、燃气表、阀门、炉具、泄漏信号、撤离和专业恢复 | 让高能量燃料使用保持可识别、可撤离、可专业恢复，避免泄漏、爆炸、火灾和中毒风险 | 不提供关阀操作、泄漏判断、设备维修、燃气恢复、管线施工或现场许可 |
 | [Thermostat Temperature Control Thermal Comfort Continuity](domains/thermostat-temperature-control-thermal-comfort-continuity/README.md) | 温控器、设定点、传感器、日程、远程控制、占用模式和误配置 | 把供暖制冷能力稳定转译为可居住室内状态，降低过热、过冷、睡眠破坏和能耗冲突 | 不提供温控器安装接线、设备购买、具体设定点处方、智能家居配置或账单优化 |
 | [Weatherization Insulation Air Sealing Thermal Envelope Continuity](domains/weatherization-insulation-air-sealing-thermal-envelope-continuity/README.md) | 保温、气密、门窗、围护结构、通风平衡、能源负担、潮湿和空气交换 | 让房屋热边界、湿气边界和空气交换更可控，支撑睡眠、照护、工作和恢复空间 | 不提供施工教程、材料选择、能效审计、保温改造、通风设计、补贴申请或房屋交易建议 |
+| [Residential Solid Waste Collection Bin Sanitation Continuity](domains/residential-solid-waste-collection-bin-sanitation-continuity/README.md) | 生活垃圾、回收物、庭院废弃物、垃圾桶、收运频率、错过收运和多户住宅垃圾间 | 让家庭任务残余物按类别、容量和时间窗口离开居住空间，降低气味、害虫、堆积和邻里摩擦 | 不提供非法倾倒、焚烧、规避收费、隐私资料丢弃、物业纠纷或个案投诉策略 |
+| [Household Hazardous Waste Chemical Disposal Continuity](domains/household-hazardous-waste-chemical-disposal-continuity/README.md) | 家庭危险废物、清洁剂、油漆、溶剂、农药、汽车化学品、易燃品和 HHW 回收入口 | 让有毒、腐蚀、易燃或反应性家庭材料进入合规处置路径，降低中毒、火灾和污染风险 | 不提供化学混合、稀释、倾倒、危险废物运输、现场清理或容器打开教程 |
+| [Home Sharps Medical Waste Disposal Continuity](domains/home-sharps-medical-waste-disposal-continuity/README.md) | 家庭针头、注射器、采血针、自动注射器、锐器容器、drop box 和 mail-back | 让居家治疗产生的针头和锐器进入安全容器与合规路径，降低针刺、感染和收运风险 | 不提供注射、针具复用、锐器压缩、容器改造、医疗废物运输或感染暴露处理 |
+| [E Waste Battery Recycling Disposal Continuity](domains/e-waste-battery-recycling-disposal-continuity/README.md) | 电子废弃物、锂电池、纽扣电池、设备报废、数据残留、回收点和电池火灾 | 让退役设备和电池进入安全、合规、可追踪路径，降低火灾、毒性、隐私和资源浪费风险 | 不提供电池拆解、刺穿、放电、维修、数据擦除保证、危险运输或损坏电池处理 |
+| [Food Scrap Composting Pest Odor Continuity](domains/food-scrap-composting-pest-odor-continuity/README.md) | 厨余、食物残渣、堆肥、收集桶、气味、害虫、渗漏、社区堆肥和路缘厨余收集 | 让食物残渣可控分流到收集、暂存、堆肥或市政路径，降低气味、害虫和邻里摩擦 | 不提供堆肥配方、温度管理、虫害处理、病原判断、土壤施用或商业堆肥运营 |
+| [Illegal Dumping Litter Neighborhood Sanitation Continuity](domains/illegal-dumping-litter-neighborhood-sanitation-continuity/README.md) | 非法倾倒、乱扔垃圾、废旧家具、轮胎、床垫、巷道空地、举报入口和清理延迟 | 让邻里异常废弃物被发现、报告、归责和清理，保护通行、儿童活动、住房稳定和社区信任 | 不提供非法倾倒、规避执法、私自清理危险废物、现场取证对抗、邻里冲突或法律策略 |
 | [Household Cleaning Disinfection Pest Control Continuity](domains/household-cleaning-disinfection-pest-control-continuity/README.md) | 表面清洁、消毒、化学品安全、害虫控制、垃圾和室内卫生 | 在感染控制、害虫风险和化学暴露之间建立可治理的家庭卫生边界 | 不提供消毒配方、化学混合、杀虫剂使用、毒物处理、霉菌清除或医疗处置步骤 |
 | [Postal Parcel Delivery Pickup Continuity](domains/postal-parcel-delivery-pickup-continuity/README.md) | 邮件、包裹、投递、自提、签收、追踪、地址同步和最后一公里接收 | 让文件、药品、设备、账单、身份材料和远程交易实物能到达主体 | 不提供邮件拦截、包裹盗取、冒领、地址欺诈、追踪滥用或物流攻击方法 |
 | [Household Maintenance Repair Contractor Continuity](domains/household-maintenance-repair-contractor-continuity/README.md) | 家庭维修、承包商、服务预约、报价、许可、投诉和维修记录 | 让住房和设备故障能被发现、排程、修复和记录 | 不提供 DIY 危险维修、电气燃气施工、合同争议策略、理赔策略或法律意见 |
@@ -2252,6 +2264,12 @@ human_infra/
 │   ├── natural-gas-propane-leak-shutoff-continuity/
 │   ├── thermostat-temperature-control-thermal-comfort-continuity/
 │   ├── weatherization-insulation-air-sealing-thermal-envelope-continuity/
+│   ├── residential-solid-waste-collection-bin-sanitation-continuity/
+│   ├── household-hazardous-waste-chemical-disposal-continuity/
+│   ├── home-sharps-medical-waste-disposal-continuity/
+│   ├── e-waste-battery-recycling-disposal-continuity/
+│   ├── food-scrap-composting-pest-odor-continuity/
+│   ├── illegal-dumping-litter-neighborhood-sanitation-continuity/
 │   ├── urogenital-continuity/
 │   ├── urinary-tract-infection-pyelonephritis-urosepsis-continuity/
 │   ├── catheter-associated-uti-device-infection-continuity/
@@ -2452,5 +2470,6 @@ flowchart LR
 - 2026-07-01：新增第一百零六波 6 个个人辅助设备运行连续性域，覆盖眼镜修理替换、轮椅/代步车电池维修、手杖/拐杖/助行器维护、假肢矫形适配维修、PAP 设备耗材供电和跌倒检测紧急响应设备。
 - 2026-07-01：新增第一百零七波 6 个家庭水与污水执行连续性域，覆盖私人井水检测处理、家庭滤水维护、铅铜饮水管线、建筑回流交叉连接、化粪池污水回流和地下室进水潮湿恢复。
 - 2026-07-01：新增第一百零八波 6 个家庭能源与热安全执行连续性域，覆盖住宅电气线路插座、家庭供暖烟囱排气、家庭制冷热泵维护、天然气/丙烷泄漏关断、温控器室温控制和天气化保温围护结构。
+- 2026-07-01：新增第一百零九波 6 个家庭废弃物与处置执行连续性域，覆盖住宅固废收运垃圾桶卫生、家庭危险废物化学处置、家庭锐器医疗废物处置、电子废弃物电池回收、厨余堆肥害虫气味和非法倾倒邻里卫生。
 
 完整记录见 [CHANGELOG.md](CHANGELOG.md)。

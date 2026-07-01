@@ -499,6 +499,12 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 燃气泄漏必须可识别可专业恢复 | `natural-gas-propane-leak-shutoff-continuity/` | 天然气、丙烷、燃气表、阀门、泄漏信号、撤离、专业恢复 | 泄漏识别或恢复失败会把供暖烹饪燃料转成爆炸、火灾、中毒和返家风险 |
 | 室内温度必须可控制 | `thermostat-temperature-control-thermal-comfort-continuity/` | 温控器、设定点、传感器、日程、远程控制、热舒适 | 温控错误会让供暖制冷能力无法转成稳定室内状态，放大冷热、睡眠和能源冲突 |
 | 住宅热边界必须可维护 | `weatherization-insulation-air-sealing-thermal-envelope-continuity/` | 保温、气密、围护结构、通风平衡、湿气、能源负担 | 围护结构失败会长期放大冷热暴露、能源成本、潮湿、空气质量和住房稳定风险 |
+| 家庭残余物必须可离开居住空间 | `residential-solid-waste-collection-bin-sanitation-continuity/` | 生活垃圾、回收物、庭院废弃物、垃圾桶、错过收运、大件收运 | 固废收运失败会让气味、害虫、堆积和邻里摩擦反向占据厨房、照护和恢复空间 |
+| 家庭危废必须进入合规处置入口 | `household-hazardous-waste-chemical-disposal-continuity/` | 清洁剂、油漆、溶剂、农药、汽车化学品、易燃品、HHW | 危废积压或混入普通垃圾会放大中毒、火灾、污染、儿童接触和非法倾倒风险 |
+| 居家锐器必须隔离并可处置 | `home-sharps-medical-waste-disposal-continuity/` | 针头、注射器、采血针、自动注射器、锐器容器、drop box | 锐器处置失败会让治疗连续性转成针刺伤、感染暴露和收运人员风险 |
+| 退役设备和电池必须安全退出 | `e-waste-battery-recycling-disposal-continuity/` | 电子废弃物、锂电池、纽扣电池、设备报废、数据残留、回收点 | 电子废弃物失败会把火灾、毒性、隐私、儿童误吞和材料浪费累积在家庭空间 |
+| 厨余必须可控分流或转化 | `food-scrap-composting-pest-odor-continuity/` | 厨余、堆肥、收集桶、气味、害虫、渗漏、路缘厨余 | 厨余失控会把食物管理和资源循环转成气味、害虫、渗漏和邻里冲突 |
+| 邻里异常废弃物必须可治理 | `illegal-dumping-litter-neighborhood-sanitation-continuity/` | 非法倾倒、乱扔垃圾、大件、轮胎床垫、举报入口、清理延迟 | 公共空间废弃物堆积会压缩步行、儿童活动、住房稳定、社区信任和环境正义 |
 | 家庭卫生必须可治理 | `household-cleaning-disinfection-pest-control-continuity/` | 清洁、消毒、化学品安全、害虫控制、室内卫生 | 清洁不足、化学误用或害虫暴露会制造感染、过敏、毒性和居住压力 |
 | 邮件包裹必须可接收 | `postal-parcel-delivery-pickup-continuity/` | 邮件、包裹、签收、自提、追踪、地址同步 | 文件、药品、设备、账单或身份材料收不到会切断远程服务和物理资源交付 |
 | 家庭故障必须可被可信维修 | `household-maintenance-repair-contractor-continuity/` | 维修请求、承包商、报价、许可、投诉、维修记录 | 维修延误、诈骗、无证服务或记录缺失会让住房、设备、水电、卫生和安全持续恶化 |
@@ -1250,6 +1256,12 @@ risk-engineering
   -> natural-gas-propane-leak-shutoff-continuity
   -> thermostat-temperature-control-thermal-comfort-continuity
   -> weatherization-insulation-air-sealing-thermal-envelope-continuity
+  -> residential-solid-waste-collection-bin-sanitation-continuity
+  -> household-hazardous-waste-chemical-disposal-continuity
+  -> home-sharps-medical-waste-disposal-continuity
+  -> e-waste-battery-recycling-disposal-continuity
+  -> food-scrap-composting-pest-odor-continuity
+  -> illegal-dumping-litter-neighborhood-sanitation-continuity
   -> household-cleaning-disinfection-pest-control-continuity
   -> postal-parcel-delivery-pickup-continuity
   -> household-maintenance-repair-contractor-continuity

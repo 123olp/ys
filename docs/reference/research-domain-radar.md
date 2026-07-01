@@ -776,6 +776,12 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `natural-gas-propane-leak-shutoff-continuity/` | 天然气和丙烷的泄漏识别、撤离和专业恢复决定高能量燃料是否支撑供暖烹饪，而不是转成爆炸、火灾或中毒风险 |
 | `thermostat-temperature-control-thermal-comfort-continuity/` | 温控器、传感器、设定点、远程控制和占用模式决定供暖制冷能力是否真实转化为可居住室内状态 |
 | `weatherization-insulation-air-sealing-thermal-envelope-continuity/` | 保温、气密、围护结构、通风和湿气边界决定房屋能否降低冷热暴露、能源负担和室内空气风险 |
+| `residential-solid-waste-collection-bin-sanitation-continuity/` | 生活垃圾、回收物、垃圾桶、错过收运和大件收运决定家庭残余物是否能离开居住空间，而不是制造气味、害虫和堆积 |
+| `household-hazardous-waste-chemical-disposal-continuity/` | 家庭危险废物、油漆、溶剂、农药和易燃品决定低频高后果材料是否能进入合规处置入口 |
+| `home-sharps-medical-waste-disposal-continuity/` | 居家针头、注射器、采血针和锐器容器决定治疗残余物是否会转成针刺伤、感染暴露和收运人员风险 |
+| `e-waste-battery-recycling-disposal-continuity/` | 退役电子设备、锂电池、纽扣电池和回收点决定家庭数字工具生命周期是否能安全退出 |
+| `food-scrap-composting-pest-odor-continuity/` | 厨余、堆肥桶、气味、害虫和路缘厨余收集决定食物残渣能否可控分流，而不是压缩厨房和邻里空间 |
+| `illegal-dumping-litter-neighborhood-sanitation-continuity/` | 非法倾倒、乱扔垃圾、大件堆积和清理延迟决定邻里公共空间是否会被废弃物占据并侵蚀行动半径 |
 | `household-cleaning-disinfection-pest-control-continuity/` | 家庭清洁、消毒和害虫控制决定居住空间是否在感染、过敏、毒性和虫害暴露中保持可恢复 |
 | `postal-parcel-delivery-pickup-continuity/` | 邮件、包裹、签收、自提和地址同步决定证件、药品、设备、账单和关键物资能否从外部系统抵达主体 |
 | `household-maintenance-repair-contractor-continuity/` | 家庭维修、承包商、报价、许可、投诉和记录决定住房、设备、水电、卫生和安全故障能否被可信修复 |
@@ -2369,6 +2375,13 @@ Source links:
 - https://www.energy.gov/energysaver/maintaining-your-air-conditioner
 - https://www.energy.gov/energysaver/thermostats
 - https://www.energy.gov/energysaver/weatherize
+- https://www.epa.gov/recycle/recycling-basics-and-benefits
+- https://www.epa.gov/hw/household-hazardous-waste-hhw
+- https://www.fda.gov/medical-devices/safely-using-sharps-needles-and-syringes-home-work-and-travel/sharps-disposal-containers
+- https://www.epa.gov/recycle/used-household-batteries
+- https://www.epa.gov/recycle/used-lithium-ion-batteries
+- https://www.epa.gov/recycle/composting-home
+- https://www.epa.gov/large-scale-residential-demolition/illegal-dumping
 - https://www.phmsa.dot.gov/safety-awareness/pipeline/pipeline-leak-recognition-and-what-do
 - https://www.cdc.gov/heat-health/about/index.html
 

@@ -1735,6 +1735,23 @@ Human Infra 不能被设计成更精密的压榨系统。
 - 不收集、复制、处理或要求家庭地址、电气面板照片、燃气表照片、设备序列号、温控器账号、能源账单、维修记录、保险单、房屋照片、租约、支付信息或其他敏感住房/健康资料。
 - 不替代持证电工、HVAC 专业人员、燃气公司、丙烷供应商、消防部门、911、能源援助、地方建筑/电气/燃气规范、房东/物业、公共卫生、保险或法律渠道。
 
+## 家庭废弃物与处置执行连续性边界
+
+`residential-solid-waste-collection-bin-sanitation-continuity`、`household-hazardous-waste-chemical-disposal-continuity`、`home-sharps-medical-waste-disposal-continuity`、`e-waste-battery-recycling-disposal-continuity`、`food-scrap-composting-pest-odor-continuity` 和 `illegal-dumping-litter-neighborhood-sanitation-continuity` 关注家庭与邻里废弃物流如何影响卫生、安全、隐私、火灾、害虫、环境正义、公共通行和恢复空间，不是垃圾分类执法规避、危险处置、锐器处理、电池处理、堆肥操作、非法倾倒、现场清理或邻里冲突入口。
+
+可以做：
+
+- 比较住宅固废收运、家庭危险废物、居家锐器、电子废弃物电池、厨余堆肥和非法倾倒如何影响家庭卫生、治疗连续性、火灾风险、隐私退役、邻里空间和恢复时间。
+- 记录 EPA、FDA、CDC、地方固废/HHW/公共卫生/环境执法资料中的对象、机制、变量、证据边界和禁止用途。
+- 设计 `waste stream -> container/pathway state -> exposure/service risk -> household/neighborhood task -> continuity outcome` 变量链。
+
+不能做：
+
+- 不提供非法倾倒、焚烧、规避收费、规避执法、危险废物处理、化学混合、锐器压缩、注射操作、电池拆解、刺穿、放电、损坏电池处置、堆肥配方、虫害处理、现场清理、举报对抗、邻里冲突、法律策略或个案住房建议。
+- 不判断某个垃圾桶、未知化学品、针刺伤、锐器容器、膨胀电池、旧硬盘、厨余堆肥、非法倾倒现场、租房/物业纠纷或清理责任应如何具体处理。
+- 不收集、复制、处理或要求家庭地址、垃圾照片、化学品标签照片、针具照片、电池/设备序列号、硬盘内容、物业记录、举报记录、邻里照片、租约、医疗信息、支付信息或其他敏感住房/健康/身份资料。
+- 不替代 EPA、FDA、CDC、地方固废部门、地方 HHW 项目、药房/医疗机构回收、物业、公共卫生、消防、环境执法、毒物控制、害虫控制、数据安全、应急服务或法律渠道。
+
 ## 个人移动执行连续性边界
 
 `personal-vehicle-maintenance-recall-repair-continuity`、`fuel-ev-charging-refueling-access-continuity`、`parking-curb-access-towing-impound-continuity`、`walking-bicycling-micromobility-continuity`、`paratransit-nemt-access-continuity`、`taxi-rideshare-demand-response-mobility-continuity`、`transit-fare-payment-toll-account-continuity` 和 `multimodal-trip-planning-real-time-wayfinding-continuity` 关注车辆、补能、停车、主动出行、辅助医疗交通、按需交通、支付账户和实时导向如何把交通服务转化为主体真实到达能力，不是车辆维修、补能操作、交通规避、平台攻击、逃票或个案申诉入口。
