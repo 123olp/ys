@@ -771,6 +771,12 @@ human_infra/
     ├── household-ladder-step-stool-reach-task-continuity/ # 家庭梯凳与高处任务连续性
     ├── home-office-workstation-ergonomics-continuity/ # 居家办公工位工效与任务连续性
     ├── toy-small-parts-choking-ingestion-continuity/ # 玩具小零件窒息误吞连续性
+    ├── home-utility-shutoff-location-labeling-continuity/ # 家庭公用设施关断位置标识连续性
+    ├── household-circuit-breaker-panel-labeling-continuity/ # 家庭断路器面板标签连续性
+    ├── home-water-valve-plumbing-labeling-continuity/ # 家庭水路阀门标签连续性
+    ├── household-equipment-serial-model-recall-record-continuity/ # 家庭设备型号召回记录连续性
+    ├── home-service-provider-emergency-contact-directory-continuity/ # 家庭服务联系人目录连续性
+    ├── household-operating-map-handoff-continuity/ # 家庭运行地图交接连续性
     ├── space-extreme-habitation/ # 空间与极端栖居
     ├── stem-cell-reserve-renewal/ # 干细胞储备与组织更新
     ├── substance-exposure-control/ # 物质暴露控制
@@ -892,6 +898,7 @@ human_infra/
 - `domains/eyeglasses-prescription-repair-replacement-continuity/`、`domains/wheelchair-scooter-battery-repair-access-continuity/`、`domains/walker-cane-crutch-fit-maintenance-continuity/`、`domains/prosthetic-limb-orthotic-fit-repair-continuity/`、`domains/cpap-pap-device-mask-supply-power-continuity/` 和 `domains/fall-detection-emergency-response-device-continuity/` 负责个人辅助设备运行连续性，覆盖眼镜修理替换、轮椅/代步车电池维修、助行器具维护、假肢矫形适配维修、PAP 设备耗材供电和跌倒检测响应设备，不提供验光处方、设备处方、参数调整、康复训练、维修教程、品牌推荐、购买建议、医保/保险个案、急救分诊、911 策略或监控方案。
 - `domains/private-well-water-testing-treatment-continuity/`、`domains/household-water-treatment-filter-maintenance-continuity/`、`domains/lead-service-line-lead-copper-drinking-water-continuity/`、`domains/premise-plumbing-backflow-cross-connection-continuity/`、`domains/septic-system-maintenance-sewage-backup-continuity/` 和 `domains/basement-flooding-sump-pump-moisture-recovery-continuity/` 负责家庭水与污水执行连续性，覆盖私人井水检测处理、家庭滤水维护、铅铜饮水管线、建筑回流交叉连接、化粪池污水回流和地下室进水潮湿恢复，不提供水质结果判断、饮水许可、滤水器购买、井施工、管道施工、回流装置安装、化粪池维修、抽水操作、霉菌清理、保险索赔、法律责任或个案住房建议。
 - `domains/residential-electrical-wiring-outlet-safety-continuity/`、`domains/home-heating-equipment-chimney-vent-maintenance-continuity/`、`domains/home-cooling-heat-pump-air-conditioning-maintenance-continuity/`、`domains/natural-gas-propane-leak-shutoff-continuity/`、`domains/thermostat-temperature-control-thermal-comfort-continuity/` 和 `domains/weatherization-insulation-air-sealing-thermal-envelope-continuity/` 负责家庭能源与热安全执行连续性，覆盖住宅电气线路插座、家庭供暖烟囱排气、家庭制冷热泵维护、天然气/丙烷泄漏关断、温控器室温控制和天气化保温围护结构，不提供电工维修、接线、配电箱操作、供暖/空调维修、燃气关阀、泄漏判断、冷媒操作、温控器安装、保温施工、通风设计、设备购买、能效审计、补贴申请、保险索赔、法律责任或个案住房建议。
+- `domains/home-utility-shutoff-location-labeling-continuity/`、`domains/household-circuit-breaker-panel-labeling-continuity/`、`domains/home-water-valve-plumbing-labeling-continuity/`、`domains/household-equipment-serial-model-recall-record-continuity/`、`domains/home-service-provider-emergency-contact-directory-continuity/` 和 `domains/household-operating-map-handoff-continuity/` 负责家庭运行元数据与交接连续性，覆盖关键服务位置标识、断路器标签、水路阀门标签、设备型号序列召回、服务联系人目录和家庭运行地图，不提供水电燃气关断操作、电气面板操作、阀门操作、管线维修、服务商推荐、家庭监控、门禁共享、个人资料模板、保险理赔、法律、医疗或个案安全建议。
 - `domains/building-fire-life-safety-codes/` 负责建筑规范、消防规范、生命安全、疏散、烟雾报警、无障碍和韧性改造。
 - `domains/manufacturing-repair-capacity/` 负责制造、维修、维护、备件、质量、本地生产和关键设备恢复能力。
 - `domains/public-procurement-contracting-capacity/` 负责公共采购、合同、供应商管理、应急采购、透明度和交付验收。
@@ -1238,3 +1245,4 @@ human_infra/
 - 2026-07-01：新增第一百零九波 6 个家庭废弃物与处置执行连续性域，把住宅固废、家庭危废、居家锐器、电子废弃物电池、厨余堆肥和非法倾倒邻里卫生纳入家庭残余物治理层。
 - 2026-07-01：新增第一百一十波 6 个家庭室内空气与通风执行连续性域，把 HVAC 滤网维护、便携房间过滤、烹饪排风、家庭湿度水分控制、灰尘过敏原源控制和 VOC/香氛/产品释放纳入家庭空气执行层。
 - 2026-07-01：新增第一百一十一波 6 个家庭物理秩序、物品访问与执行摩擦连续性域，把通道杂物、家庭线缆、储物稳定、高处够取、居家工位和玩具小零件纳入家庭日常任务摩擦层。
+- 2026-07-01：新增第一百一十二波 6 个家庭运行元数据与交接连续性域，把关键服务位置、断路器标签、水路阀门标签、设备型号召回记录、服务联系人目录和家庭运行地图纳入家庭系统可读性与代理交接层。

@@ -129,3 +129,4 @@ Current decisions:
 - `0114-add-one-hundred-ninth-wave-household-waste-disposal-execution-domains.md`
 - `0115-add-one-hundred-tenth-wave-household-indoor-air-ventilation-execution-domains.md`
 - `0116-add-one-hundred-eleventh-wave-household-physical-order-object-access-domains.md`
+- `0117-add-one-hundred-twelfth-wave-household-operating-metadata-handoff-domains.md`

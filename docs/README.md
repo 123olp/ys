@@ -132,6 +132,7 @@ docs/
 │   ├── 0114-add-one-hundred-ninth-wave-household-waste-disposal-execution-domains.md
 │   ├── 0115-add-one-hundred-tenth-wave-household-indoor-air-ventilation-execution-domains.md
 │   ├── 0116-add-one-hundred-eleventh-wave-household-physical-order-object-access-domains.md
+│   ├── 0117-add-one-hundred-twelfth-wave-household-operating-metadata-handoff-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -432,6 +433,12 @@ docs/
     - Then read `../domains/household-ladder-step-stool-reach-task-continuity/README.md` for ladders, step stools, high-reach tasks, bulb/smoke-alarm battery changes, seasonal storage, or reach-task continuity.
     - Then read `../domains/home-office-workstation-ergonomics-continuity/README.md` for home-office workstations, desk/chair/screen/keyboard/mouse fit, remote work, posture load, visual load, or workstation continuity.
     - Then read `../domains/toy-small-parts-choking-ingestion-continuity/README.md` for toy small parts, magnets, button batteries, age separation, toy storage, recalls, choking, ingestion, or child play-space continuity.
+    - Then read `../domains/home-utility-shutoff-location-labeling-continuity/README.md` for household utility shutoff locations, labels, maps, responsibility boundaries, or emergency/repair handoff metadata.
+    - Then read `../domains/household-circuit-breaker-panel-labeling-continuity/README.md` for circuit breaker panel directories, circuit labels, critical loads, electrical handoff metadata, or professional-service readability.
+    - Then read `../domains/home-water-valve-plumbing-labeling-continuity/README.md` for water valves, plumbing labels, leak history, water-system maps, or plumbing repair handoff metadata.
+    - Then read `../domains/household-equipment-serial-model-recall-record-continuity/README.md` for household equipment model/serial records, recall matching, product identity, repair history, or safety-notice continuity.
+    - Then read `../domains/home-service-provider-emergency-contact-directory-continuity/README.md` for household service contacts, utilities, property managers, repair providers, poison help, or emergency/non-emergency contact directories.
+    - Then read `../domains/household-operating-map-handoff-continuity/README.md` for household operating maps, implicit household knowledge, caregiver/house-sitter handoff, supply locations, routines, or household proxy execution.
 183. Read `../domains/advance-care-planning-medical-decision-continuity/README.md` if you are working on advance care planning, advance directives, health care proxy, medical decision continuity, goals of care, or incapacity communication.
 184. Read `../domains/supported-decision-making-guardianship-rights/README.md` if you are working on supported decision-making, guardianship, conservatorship, decision capacity, disability rights, or least restrictive alternatives.
 185. Read `../domains/healthcare-personal-representative-hipaa-access-continuity/README.md` if you are working on HIPAA personal representatives, caregiver access, proxy access, medical records, privacy boundaries, or authorized care coordination.

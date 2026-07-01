@@ -836,6 +836,12 @@ flowchart TD
     H --> HLSSRTC[household-ladder-step-stool-reach-task-continuity<br/>梯凳 / 高处任务]
     H --> HOWEC[home-office-workstation-ergonomics-continuity<br/>居家工位 / 工效]
     H --> TSPCIC[toy-small-parts-choking-ingestion-continuity<br/>玩具小零件 / 窒息误吞]
+    H --> HUSLLC[home-utility-shutoff-location-labeling-continuity<br/>关键服务位置 / 标识交接]
+    H --> HCBPLC[household-circuit-breaker-panel-labeling-continuity<br/>断路器面板 / 回路标签]
+    H --> HWVPLC[home-water-valve-plumbing-labeling-continuity<br/>水路阀门 / 管线标签]
+    H --> HESMRR[household-equipment-serial-model-recall-record-continuity<br/>设备型号序列 / 召回记录]
+    H --> HSPEDC[home-service-provider-emergency-contact-directory-continuity<br/>服务联系人 / 应急目录]
+    H --> HOMHC[household-operating-map-handoff-continuity<br/>家庭运行地图 / 代理交接]
     H --> HCDPCC[household-cleaning-disinfection-pest-control-continuity<br/>家庭清洁 / 消毒害虫控制]
     H --> PPDPC[postal-parcel-delivery-pickup-continuity<br/>邮件包裹 / 投递自提]
     H --> HMRCC[household-maintenance-repair-contractor-continuity<br/>家庭维修 / 承包商服务]
@@ -1305,6 +1311,12 @@ flowchart TD
 | [Household Ladder Step Stool Reach Task Continuity](domains/household-ladder-step-stool-reach-task-continuity/README.md) | 梯子、梯凳、高处取物、灯泡/报警器电池、滤网、窗帘、清洁和季节性收纳 | 让“够不到”的家庭维护任务成为可审查的跌倒、延迟、外包和设备失修边界 | 不提供梯子使用教程、高处作业指导、产品推荐、现场评估、急救、职业合规或法律建议 |
 | [Home Office Workstation Ergonomics Continuity](domains/home-office-workstation-ergonomics-continuity/README.md) | 居家办公/学习工位、桌椅、屏幕、键鼠、照明、噪声、线缆和长时姿势 | 把家庭工位适配纳入疼痛、疲劳、注意力、输入效率、远程协作和长期执行能力 | 不提供工位处方、医疗诊断、工伤法律、雇主合规、产品推荐、监控或绩效评分 |
 | [Toy Small Parts Choking Ingestion Continuity](domains/toy-small-parts-choking-ingestion-continuity/README.md) | 玩具小零件、破损零件、磁铁、纽扣电池、年龄分区、收纳、共享空间和召回 | 把儿童游戏空间中的小尺度高后果暴露纳入照护连续性、召回和家庭任务模型 | 不提供急救、医疗处置、儿童监控、产品鉴定、购买推荐、召回法律或托育合规建议 |
+| [Home Utility Shutoff Location Labeling Continuity](domains/home-utility-shutoff-location-labeling-continuity/README.md) | 水、电、燃气等关键服务入口、位置记录、标签、地图、权限边界和交接元数据 | 把家庭关键服务位置从单人隐性记忆转成应急、维修和代理照护可理解的运行资料 | 不提供关断操作、燃气泄漏判断、电工/管道维修、现场安全判断、门禁共享或个案建议 |
+| [Household Circuit Breaker Panel Labeling Continuity](domains/household-circuit-breaker-panel-labeling-continuity/README.md) | 断路器面板、回路标签、关键负载、面板可读性和维修交接 | 降低停电、维修、照护设备供电和家庭故障排查中的信息不对称与误操作风险 | 不提供配电箱操作、接线、负载计算、维修教程、产品推荐或电气安全认证 |
+| [Home Water Valve Plumbing Labeling Continuity](domains/home-water-valve-plumbing-labeling-continuity/README.md) | 主阀、分区阀、设备阀、管线标签、漏水情境和维修/照护交接 | 让水路位置和责任边界可被家庭成员、照护者和维修接口理解，降低漏水响应摩擦 | 不提供阀门操作、管线维修、施工建议、水质判断、保险理赔或个案住房建议 |
+| [Household Equipment Serial Model Recall Record Continuity](domains/household-equipment-serial-model-recall-record-continuity/README.md) | 家电/设备型号、序列号、购买记录、保修、维修历史、召回查询和替换交接 | 把设备身份转成可追踪、可召回、可维修、可交接的家庭运行资产 | 不提供产品推荐、召回法律策略、维修教程、保修索赔代办或敏感资产清单收集 |
+| [Home Service Provider Emergency Contact Directory Continuity](domains/home-service-provider-emergency-contact-directory-continuity/README.md) | 公用事业、物业、维修、保险、毒物控制、紧急联系人和服务入口目录 | 让家庭在失能、灾害、维修或代理照护时能快速找到正确责任入口 | 不提供服务商推荐、价格判断、投诉代写、保险理赔、法律策略、紧急分诊或联系人追踪 |
+| [Household Operating Map Handoff Continuity](domains/household-operating-map-handoff-continuity/README.md) | 家庭运行地图、关键物品位置、例行任务、权限边界、供给位置和代理执行交接 | 把家庭隐性运行知识转成可交接的照护、看家、维修、灾害和恢复基础设施 | 不提供家庭监控、门禁共享、个人资料模板、定位追踪、医疗照护方案或安全绕过 |
 | [Household Cleaning Disinfection Pest Control Continuity](domains/household-cleaning-disinfection-pest-control-continuity/README.md) | 表面清洁、消毒、化学品安全、害虫控制、垃圾和室内卫生 | 在感染控制、害虫风险和化学暴露之间建立可治理的家庭卫生边界 | 不提供消毒配方、化学混合、杀虫剂使用、毒物处理、霉菌清除或医疗处置步骤 |
 | [Postal Parcel Delivery Pickup Continuity](domains/postal-parcel-delivery-pickup-continuity/README.md) | 邮件、包裹、投递、自提、签收、追踪、地址同步和最后一公里接收 | 让文件、药品、设备、账单、身份材料和远程交易实物能到达主体 | 不提供邮件拦截、包裹盗取、冒领、地址欺诈、追踪滥用或物流攻击方法 |
 | [Household Maintenance Repair Contractor Continuity](domains/household-maintenance-repair-contractor-continuity/README.md) | 家庭维修、承包商、服务预约、报价、许可、投诉和维修记录 | 让住房和设备故障能被发现、排程、修复和记录 | 不提供 DIY 危险维修、电气燃气施工、合同争议策略、理赔策略或法律意见 |
@@ -2306,6 +2318,12 @@ human_infra/
 │   ├── household-ladder-step-stool-reach-task-continuity/
 │   ├── home-office-workstation-ergonomics-continuity/
 │   ├── toy-small-parts-choking-ingestion-continuity/
+│   ├── home-utility-shutoff-location-labeling-continuity/
+│   ├── household-circuit-breaker-panel-labeling-continuity/
+│   ├── home-water-valve-plumbing-labeling-continuity/
+│   ├── household-equipment-serial-model-recall-record-continuity/
+│   ├── home-service-provider-emergency-contact-directory-continuity/
+│   ├── household-operating-map-handoff-continuity/
 │   ├── urogenital-continuity/
 │   ├── urinary-tract-infection-pyelonephritis-urosepsis-continuity/
 │   ├── catheter-associated-uti-device-infection-continuity/
@@ -2509,5 +2527,6 @@ flowchart LR
 - 2026-07-01：新增第一百零九波 6 个家庭废弃物与处置执行连续性域，覆盖住宅固废收运垃圾桶卫生、家庭危险废物化学处置、家庭锐器医疗废物处置、电子废弃物电池回收、厨余堆肥害虫气味和非法倾倒邻里卫生。
 - 2026-07-01：新增第一百一十波 6 个家庭室内空气与通风执行连续性域，覆盖 HVAC 滤网维护、便携房间过滤、烹饪排风、家庭湿度水分控制、灰尘过敏原源控制和 VOC/香氛/产品释放。
 - 2026-07-01：新增第一百一十一波 6 个家庭物理秩序、物品访问与执行摩擦连续性域，覆盖通道杂物绊倒、家庭线缆绊倒缠绕、货架柜体储物稳定、梯凳高处任务、居家办公工位工效和玩具小零件窒息误吞。
+- 2026-07-01：新增第一百一十二波 6 个家庭运行元数据与交接连续性域，覆盖公用设施关断位置标识、断路器面板标签、水路阀门标签、家庭设备型号召回记录、家庭服务联系人目录和家庭运行地图交接。
 
 完整记录见 [CHANGELOG.md](CHANGELOG.md)。

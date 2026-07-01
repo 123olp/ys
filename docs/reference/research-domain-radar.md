@@ -794,6 +794,12 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `household-ladder-step-stool-reach-task-continuity/` | 梯子、梯凳、高处取物、灯具和报警器维护决定“够不到”的家庭任务是否会转成跌倒或维护延迟 |
 | `home-office-workstation-ergonomics-continuity/` | 居家办公工位、桌椅屏幕键鼠、照明噪声和长时姿势决定远程学习工作是否会被疼痛、疲劳和注意力破碎消耗 |
 | `toy-small-parts-choking-ingestion-continuity/` | 玩具小零件、磁铁、纽扣电池、年龄分区、收纳和召回决定儿童游戏空间是否存在小尺度高后果暴露 |
+| `home-utility-shutoff-location-labeling-continuity/` | 水、电、燃气等关键服务位置、标签和地图决定应急、维修、照护和代理执行是否能读懂家庭基础服务入口 |
+| `household-circuit-breaker-panel-labeling-continuity/` | 断路器回路标签、关键负载和面板可读性决定停电、维修和照护设备供电是否会被信息缺失放大风险 |
+| `home-water-valve-plumbing-labeling-continuity/` | 主阀、分区阀、设备阀和管线标签决定漏水、维修和代理照护是否能识别水路边界 |
+| `household-equipment-serial-model-recall-record-continuity/` | 设备型号、序列号、购买/维修记录和召回查询决定家庭设备是否可保修、可召回、可替换和可交接 |
+| `home-service-provider-emergency-contact-directory-continuity/` | 公用事业、物业、维修、毒物控制、保险和紧急联系人目录决定家庭失能、灾害和维修时能否找到责任入口 |
+| `household-operating-map-handoff-continuity/` | 家庭运行地图、关键物品位置、例行任务和权限边界决定隐性家庭知识是否可交给照护者、看家者或代理执行者 |
 | `household-cleaning-disinfection-pest-control-continuity/` | 家庭清洁、消毒和害虫控制决定居住空间是否在感染、过敏、毒性和虫害暴露中保持可恢复 |
 | `postal-parcel-delivery-pickup-continuity/` | 邮件、包裹、签收、自提和地址同步决定证件、药品、设备、账单和关键物资能否从外部系统抵达主体 |
 | `household-maintenance-repair-contractor-continuity/` | 家庭维修、承包商、报价、许可、投诉和记录决定住房、设备、水电、卫生和安全故障能否被可信修复 |
@@ -2403,6 +2409,15 @@ Source links:
 - https://www.epa.gov/indoor-air-quality-iaq/volatile-organic-compounds-impact-indoor-air-quality
 - https://www.phmsa.dot.gov/safety-awareness/pipeline/pipeline-leak-recognition-and-what-do
 - https://www.cdc.gov/heat-health/about/index.html
+- https://www.ready.gov/plan
+- https://www.ready.gov/sites/default/files/2020-03/ready_document-and-insure-your-property.pdf
+- https://www.ready.gov/power-outages
+- https://www.cpsc.gov/Recalls
+- https://www.saferproducts.gov/
+- https://consumer.ftc.gov/articles/warranties
+- https://consumer.ftc.gov/articles/how-avoid-home-improvement-scam
+- https://www.poisonhelp.org/
+- https://www.fema.gov/emergency-financial-first-aid-kit
 
 ## 使用规则
 

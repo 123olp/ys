@@ -1786,6 +1786,24 @@ Human Infra 不能被设计成更精密的压榨系统。
 - 不收集、复制、处理或要求家庭地址、房间照片、儿童照片、玩具照片、设备序列号、工位照片、事故照片、医疗症状、租约、物业记录、保险资料、托育记录或其他敏感住房/健康/身份资料。
 - 不替代 CDC、NIA、CPSC、OSHA、NIOSH、USFA、Poison Help、地方公共卫生、医疗人员、职业治疗师、托育监管、消防、电工、物业、产品厂商、保险或法律渠道。
 
+## 家庭运行元数据与交接连续性边界
+
+`home-utility-shutoff-location-labeling-continuity`、`household-circuit-breaker-panel-labeling-continuity`、`home-water-valve-plumbing-labeling-continuity`、`household-equipment-serial-model-recall-record-continuity`、`home-service-provider-emergency-contact-directory-continuity` 和 `household-operating-map-handoff-continuity` 关注关键服务入口、回路、水路、设备身份、服务联系人和家庭运行知识如何从单人隐性记忆转成可交接的运行资料，不是水电燃气操作、维修、服务商推荐、家庭监控、个人资料模板或个案安全建议入口。
+
+可以做：
+
+- 比较关键服务位置标识、断路器标签、水路阀门标签、设备型号召回记录、服务联系人目录和家庭运行地图如何影响应急、维修、照护、看家、灾害恢复和代理执行。
+- 记录 Ready.gov、FEMA、USFA、CPSC、SaferProducts.gov、FTC、EPA、Poison Help、公用事业和消费者保护资料中的对象、机制、变量、证据边界和禁止用途。
+- 设计 `household operating metadata -> readability/handoff state -> response/repair/proxy execution burden -> continuity outcome` 变量链。
+
+不能做：
+
+- 不提供水电燃气关断操作、电气面板操作、阀门操作、接线、管线维修、设备维修、服务商推荐、价格判断、保险理赔、法律意见、医疗处方、紧急分诊、家庭监控、定位追踪、门禁共享、安防绕过或个案安全判断。
+- 不判断某个家庭的断路器、阀门、管线、燃气入口、设备型号、服务商、保险条款、联系人、门锁、运行地图或应急处置是否正确、安全、合规、必须更换或应如何个案处理。
+- 不生成可直接操作危险设施的步骤、维修教程、投诉代写、理赔材料、法律文书、监控方案、门禁共享方案、家庭成员追踪方案或包含个人敏感资料的可填写模板。
+- 不收集、复制、处理或要求家庭地址、门禁信息、照片、设备序列号、服务账号、保险保单、维修合同、联系人电话、钥匙位置、安防配置、医疗照护信息、儿童/老人信息或其他敏感住房/身份/健康资料。
+- 不替代 Ready.gov、FEMA、USFA、CPSC、SaferProducts.gov、FTC、EPA、Poison Help、公用事业、消防、电工、管道工、物业、设备厂商、保险、医疗、法律、应急管理或官方投诉渠道。
+
 ## 个人移动执行连续性边界
 
 `personal-vehicle-maintenance-recall-repair-continuity`、`fuel-ev-charging-refueling-access-continuity`、`parking-curb-access-towing-impound-continuity`、`walking-bicycling-micromobility-continuity`、`paratransit-nemt-access-continuity`、`taxi-rideshare-demand-response-mobility-continuity`、`transit-fare-payment-toll-account-continuity` 和 `multimodal-trip-planning-real-time-wayfinding-continuity` 关注车辆、补能、停车、主动出行、辅助医疗交通、按需交通、支付账户和实时导向如何把交通服务转化为主体真实到达能力，不是车辆维修、补能操作、交通规避、平台攻击、逃票或个案申诉入口。

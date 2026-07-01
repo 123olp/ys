@@ -269,3 +269,4 @@ All notable repository structure changes are recorded here.
 ## 2026-07-01
 
 - Added `docs/reference/transcendental-domain-index.md` and ADR 0106 to bind the effective-immortality A-K trunk to existing domain directories, avoiding duplicate synonym domains while preserving a first-principles navigation layer.
+- Added one-hundred-twelfth wave household operating metadata and handoff continuity domains for utility shutoff location labeling, breaker panel labeling, water valve labeling, equipment serial/model/recall records, service contact directories, and household operating maps.

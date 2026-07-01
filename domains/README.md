@@ -611,6 +611,12 @@
 - `household-ladder-step-stool-reach-task-continuity/`：家庭梯凳与高处任务连续性，整理梯子、梯凳、取高处物品、灯泡/报警器电池、滤网和季节性收纳。
 - `home-office-workstation-ergonomics-continuity/`：居家办公工位工效与任务连续性，整理桌椅、屏幕、键鼠、照明、噪声、线缆和长时姿势。
 - `toy-small-parts-choking-ingestion-continuity/`：玩具小零件窒息误吞连续性，整理玩具小零件、磁铁、纽扣电池、年龄分区、收纳和召回。
+- `home-utility-shutoff-location-labeling-continuity/`：家庭公用设施关断位置标识连续性，整理水、电、燃气等关键服务入口的位置记录、标识、责任边界和交接元数据。
+- `household-circuit-breaker-panel-labeling-continuity/`：家庭断路器面板标签连续性，整理回路标签、面板可读性、关键负载映射和故障/维修交接。
+- `home-water-valve-plumbing-labeling-continuity/`：家庭水路阀门与管线标签连续性，整理主阀、分区阀、设备阀、管线标识和维修/照护交接。
+- `household-equipment-serial-model-recall-record-continuity/`：家庭设备型号、序列号与召回记录连续性，整理设备身份、保修/维修记录、召回查询和替换交接。
+- `home-service-provider-emergency-contact-directory-continuity/`：家庭服务联系人与应急联系目录连续性，整理公用事业、物业、维修、毒物控制、保险和应急联系人入口。
+- `household-operating-map-handoff-continuity/`：家庭运行地图与交接连续性，整理家庭隐性知识、关键物品位置、例行任务、代理执行和照护交接。
 - `household-cleaning-disinfection-pest-control-continuity/`：家庭清洁、消毒与害虫控制连续性，整理表面清洁、消毒、化学品安全、害虫控制和室内卫生。
 - `postal-parcel-delivery-pickup-continuity/`：邮件、包裹、投递与自提连续性，整理邮件包裹、签收、自提、追踪、地址错配和最后一公里接收。
 - `household-maintenance-repair-contractor-continuity/`：家庭维修、承包商与修复服务连续性，整理维修请求、承包商、报价、许可、记录、投诉和修复恢复。

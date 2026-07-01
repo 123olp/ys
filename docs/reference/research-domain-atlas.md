@@ -517,6 +517,12 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 高处任务必须可安全到达 | `household-ladder-step-stool-reach-task-continuity/` | 梯子、梯凳、高处取物、灯具、报警器电池、滤网、季节性收纳 | 够取边界失败会导致跌倒、设备维护延误、等待他人和独立生活能力下降 |
 | 家庭工位必须适配人体任务 | `home-office-workstation-ergonomics-continuity/` | 桌椅、屏幕、键鼠、照明、噪声、线缆、长时姿势 | 工位失配会把远程工作学习转成疼痛、疲劳、视觉负荷和注意力破碎 |
 | 玩具小零件必须被分区治理 | `toy-small-parts-choking-ingestion-continuity/` | 玩具小零件、磁铁、纽扣电池、年龄分区、收纳、召回 | 小尺度暴露会在儿童游戏空间形成窒息、误吞、照护焦虑和家庭任务中断 |
+| 关键服务位置必须可读 | `home-utility-shutoff-location-labeling-continuity/` | 水、电、燃气等关键服务入口、位置记录、标签、地图、权限边界 | 关键服务位置只存在于单人记忆中，会让应急、维修、照护和代理执行在最需要时失效 |
+| 断路器面板必须可解释 | `household-circuit-breaker-panel-labeling-continuity/` | 断路器面板、回路标签、关键负载、面板可读性、维修交接 | 回路标签缺失会放大停电、维修、照护设备供电和误操作风险 |
+| 水路阀门必须可识别 | `home-water-valve-plumbing-labeling-continuity/` | 主阀、分区阀、设备阀、管线标签、漏水场景、照护交接 | 水路位置不可读会让漏水、维修、设备维护和代理照护产生高摩擦响应 |
+| 家庭设备身份必须可追踪 | `household-equipment-serial-model-recall-record-continuity/` | 型号、序列号、购买记录、保修、维修历史、召回查询 | 设备身份缺失会切断召回、保修、维修、替换和灾后资产恢复路径 |
+| 家庭服务入口必须可找到 | `home-service-provider-emergency-contact-directory-continuity/` | 公用事业、物业、维修、保险、毒物控制、紧急联系人 | 服务入口散落会让失能、灾害、维修和看家代理无法快速找到正确责任方 |
+| 家庭运行知识必须可交接 | `household-operating-map-handoff-continuity/` | 家庭运行地图、关键物品位置、例行任务、权限边界、供给位置 | 隐性家庭知识不可交接会让照护、看家、维修、灾害恢复和代理执行依赖单点记忆 |
 | 家庭卫生必须可治理 | `household-cleaning-disinfection-pest-control-continuity/` | 清洁、消毒、化学品安全、害虫控制、室内卫生 | 清洁不足、化学误用或害虫暴露会制造感染、过敏、毒性和居住压力 |
 | 邮件包裹必须可接收 | `postal-parcel-delivery-pickup-continuity/` | 邮件、包裹、签收、自提、追踪、地址同步 | 文件、药品、设备、账单或身份材料收不到会切断远程服务和物理资源交付 |
 | 家庭故障必须可被可信维修 | `household-maintenance-repair-contractor-continuity/` | 维修请求、承包商、报价、许可、投诉、维修记录 | 维修延误、诈骗、无证服务或记录缺失会让住房、设备、水电、卫生和安全持续恶化 |
@@ -1286,6 +1292,12 @@ risk-engineering
   -> household-ladder-step-stool-reach-task-continuity
   -> home-office-workstation-ergonomics-continuity
   -> toy-small-parts-choking-ingestion-continuity
+  -> home-utility-shutoff-location-labeling-continuity
+  -> household-circuit-breaker-panel-labeling-continuity
+  -> home-water-valve-plumbing-labeling-continuity
+  -> household-equipment-serial-model-recall-record-continuity
+  -> home-service-provider-emergency-contact-directory-continuity
+  -> household-operating-map-handoff-continuity
   -> household-cleaning-disinfection-pest-control-continuity
   -> postal-parcel-delivery-pickup-continuity
   -> household-maintenance-repair-contractor-continuity
