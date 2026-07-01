@@ -114,6 +114,12 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `genomic-stability-dna-repair/` | DNA 损伤、修复能力和突变负荷是癌症、衰老和组织功能的上游变量 |
 | `telomere-maintenance/` | 端粒系统独立连接复制能力、组织更新、细胞衰老和癌症风险 |
 | `proteostasis-autophagy/` | 蛋白稳态和自噬是细胞质量控制、神经连续性和组织功能的基础机制 |
+| `lysosomal-flux-lipofuscin-clearance-continuity/` | 溶酶体终端清除和脂褐素残余积累决定细胞质量控制是否被长期堵塞 |
+| `ubiquitin-proteasome-protein-turnover-continuity/` | 泛素-蛋白酶体系统决定错误蛋白是否能被选择性标记、降解和周转 |
+| `ribosome-translation-fidelity-proteome-integrity-continuity/` | 翻译保真度决定新蛋白生成质量，是蛋白质组完整性的上游误差源 |
+| `rna-splicing-epitranscriptomic-maintenance-continuity/` | RNA 剪接、修饰和 mRNA 质控决定表达程序能否稳定执行 |
+| `nuclear-gateway-nucleocytoplasmic-transport-continuity/` | 核孔、karyopherins 和核膜结构决定核内外信息交换与细胞身份边界 |
+| `ferroptosis-lipid-peroxidation-membrane-resilience-continuity/` | 铁死亡与脂质过氧化是膜韧性、细胞死亡和器官损伤放大的独立风险通道 |
 | `mitochondrial-bioenergetics/` | 线粒体功能决定细胞能源、疲劳、行动能力、神经和代谢风险 |
 | `cellular-senescence-clearance/` | 衰老细胞负担和 SASP 具有独立组织环境、炎症和治疗风险边界 |
 | `microbiome-ecology/` | 宿主-微生物生态连接代谢、免疫、炎症、感染抵抗和药物反应 |

@@ -4,6 +4,7 @@ All notable repository structure changes are recorded here.
 
 ## 2026-07-01
 
+- Added the one-hundred-thirty-second wave of intracellular quality-control and molecular information-maintenance domains, covering lysosomal flux / lipofuscin clearance, ubiquitin-proteasome protein turnover, ribosome translation fidelity, RNA splicing / epitranscriptomic maintenance, nuclear gateway / nucleocytoplasmic transport, and ferroptosis / lipid peroxidation membrane resilience.
 - Added the one-hundred-thirty-first wave of immune-aging and systemic rejuvenation-signal domains, covering thymic involution / naive T cell output, immune repertoire / vaccine response aging, clonal hematopoiesis / CHIP inflammatory risk, inflammaging / chronic low-grade inflammation, plasma proteome systemic aging signals, and extracellular vesicle / SASP intercellular aging communication.
 - Added the one-hundred-thirtieth wave of construction and industrial site fatal-hazard execution domains, covering trenching/excavation cave-ins, crane/derrick/hoist rigging and suspended loads, occupational electrical shock and arc flash, welding/cutting/brazing fume and fire, respirable crystalline silica, and demolition structural collapse / debris continuity.
 - Added the one-hundred-twenty-ninth wave of workplace acute-safety execution domains, covering fall protection, hazardous energy lockout/tagout, machine guarding and amputation prevention, powered industrial trucks / forklifts, confined spaces, and bloodborne pathogens / sharps injury worker continuity.

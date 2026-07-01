@@ -149,3 +149,4 @@ Current decisions:
 - `0134-add-one-hundred-twenty-ninth-wave-workplace-safety-execution-domains.md`
 - `0135-add-one-hundred-thirtieth-wave-construction-industrial-fatal-hazard-domains.md`
 - `0136-add-one-hundred-thirty-first-wave-immune-aging-systemic-signal-domains.md`
+- `0137-add-one-hundred-thirty-second-wave-intracellular-quality-control-molecular-maintenance-domains.md`

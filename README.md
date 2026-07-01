@@ -227,6 +227,12 @@ flowchart TD
     H --> GS[genomic-stability-dna-repair<br/>基因组稳定 / DNA 修复]
     H --> TM[telomere-maintenance<br/>端粒维护]
     H --> PAU[proteostasis-autophagy<br/>蛋白稳态 / 自噬]
+    H --> LYS[lysosomal-flux-lipofuscin-clearance-continuity<br/>溶酶体通量 / 脂褐素]
+    H --> UPS[ubiquitin-proteasome-protein-turnover-continuity<br/>泛素-蛋白酶体 / 蛋白周转]
+    H --> RIB[ribosome-translation-fidelity-proteome-integrity-continuity<br/>核糖体 / 翻译保真度]
+    H --> RNA[rna-splicing-epitranscriptomic-maintenance-continuity<br/>RNA 剪接 / 转录后维护]
+    H --> NUC[nuclear-gateway-nucleocytoplasmic-transport-continuity<br/>核网关 / 核质运输]
+    H --> FER[ferroptosis-lipid-peroxidation-membrane-resilience-continuity<br/>铁死亡 / 脂质过氧化]
     H --> MB[mitochondrial-bioenergetics<br/>线粒体 / 生物能量]
     H --> SEN[cellular-senescence-clearance<br/>细胞衰老 / 清除]
     H --> ECM[extracellular-matrix-glycation<br/>细胞外基质 / 糖化]
@@ -1071,6 +1077,12 @@ flowchart TD
 | [Genomic Stability DNA Repair](domains/genomic-stability-dna-repair/README.md) | DNA 损伤、修复系统、突变负荷、复制压力和癌前风险 | 基因组稳定变量、癌症/衰老风险和证据边界 | 不提供基因编辑、实验操作、检测解释、诊断或治疗建议 |
 | [Telomere Maintenance](domains/telomere-maintenance/README.md) | 端粒长度、端粒酶、复制衰老、组织更新和癌症风险 | 复制边界、修复能力和肿瘤风险张力 | 不提供端粒检测解释、端粒酶干预、补剂、药物或治疗建议 |
 | [Proteostasis Autophagy](domains/proteostasis-autophagy/README.md) | 蛋白折叠、聚集、清除、自噬、溶酶体和细胞质量控制 | 蛋白稳态、自噬通量、神经/组织功能风险 | 不提供药物、禁食、补剂、自噬激活或治疗建议 |
+| [Lysosomal Flux Lipofuscin Clearance Continuity](domains/lysosomal-flux-lipofuscin-clearance-continuity/README.md) | 溶酶体通量、脂褐素、酸化、底物清除和细胞回收 | 终端清除能力、残余积累和细胞质量控制边界 | 不提供自噬激活、补剂、药物、检测解释或实验操作建议 |
+| [Ubiquitin Proteasome Protein Turnover Continuity](domains/ubiquitin-proteasome-protein-turnover-continuity/README.md) | 泛素化、蛋白酶体、错误蛋白清除和蛋白周转 | 选择性蛋白降解、蛋白稳态压力和清除失败风险 | 不提供蛋白酶体调节、药物、补剂、检测解释或实验操作建议 |
+| [Ribosome Translation Fidelity Proteome Integrity Continuity](domains/ribosome-translation-fidelity-proteome-integrity-continuity/README.md) | 核糖体、翻译控制、翻译保真度和新蛋白生成质量 | 蛋白质组完整性、错误翻译和蛋白毒性压力 | 不提供 mTOR/ISR 调节、补剂、药物、检测解释或实验操作建议 |
+| [RNA Splicing Epitranscriptomic Maintenance Continuity](domains/rna-splicing-epitranscriptomic-maintenance-continuity/README.md) | RNA 剪接、RNA 修饰、mRNA 质控和转录后平衡 | RNA 信息执行、isoform 分布和 RNA imbalance 风险 | 不提供 RNA 检测解释、基因/RNA 治疗、药物或实验操作建议 |
+| [Nuclear Gateway Nucleocytoplasmic Transport Continuity](domains/nuclear-gateway-nucleocytoplasmic-transport-continuity/README.md) | 核孔、核质运输、karyopherins、核膜和核纤层 | 核入口、核结构、信息交换和细胞身份稳定边界 | 不提供核结构检测解释、基因治疗、力学干预或实验操作建议 |
+| [Ferroptosis Lipid Peroxidation Membrane Resilience Continuity](domains/ferroptosis-lipid-peroxidation-membrane-resilience-continuity/README.md) | 铁死亡、脂质过氧化、膜脂稳态、铁代谢和抗氧化防御 | 膜韧性、铁依赖细胞死亡和器官损伤风险 | 不提供铁剂、抗氧化剂、补剂、药物、检测解释或治疗建议 |
 | [Mitochondrial Bioenergetics](domains/mitochondrial-bioenergetics/README.md) | 线粒体功能、ATP、氧化还原、疲劳、肌肉和神经能量系统 | 细胞能源、疲劳、恢复和行动能力变量 | 不提供补剂、药物、运动、禁食、检测解释或治疗建议 |
 | [Cellular Senescence Clearance](domains/cellular-senescence-clearance/README.md) | 衰老细胞负担、SASP、senolytics、组织炎症和微环境 | 衰老细胞、炎症、再生和癌症风险边界 | 不提供药物、剂量、补剂、人体实验或治疗建议 |
 | [Extracellular Matrix Glycation](domains/extracellular-matrix-glycation/README.md) | 细胞外基质、胶原、弹性、AGEs、交联、纤维化和组织力学 | 结构性老化、组织硬度、修复环境和器官功能边界 | 不提供抗糖化补剂、药物、饮食、检测解释、皮肤治疗或纤维化治疗建议 |
@@ -2482,6 +2494,12 @@ human_infra/
 │   ├── planetary-health-environment/
 │   ├── public-procurement-contracting-capacity/
 │   ├── proteostasis-autophagy/
+│   ├── lysosomal-flux-lipofuscin-clearance-continuity/
+│   ├── ubiquitin-proteasome-protein-turnover-continuity/
+│   ├── ribosome-translation-fidelity-proteome-integrity-continuity/
+│   ├── rna-splicing-epitranscriptomic-maintenance-continuity/
+│   ├── nuclear-gateway-nucleocytoplasmic-transport-continuity/
+│   ├── ferroptosis-lipid-peroxidation-membrane-resilience-continuity/
 │   ├── renal-hepatic-clearance/
 │   ├── regenerative-medicine/
 │   ├── rehabilitation-functioning/
@@ -2863,5 +2881,6 @@ flowchart LR
 - 2026-07-01：新增第一百二十三波 6 个 Food is Medicine / 医疗营养支持执行连续性域，覆盖营养不安全筛查转介、医学定制餐、医学定制食材、蔬果处方、临床 food pharmacy/pantry 和医学营养治疗营养师可达。
 - 2026-07-01：新增第一百二十四波 6 个生殖技术与生育保存治理连续性域，覆盖 ART/IVF 周期、ART 诊所成功率质量报告、生育保存冷冻储存、生殖组织供体筛查追溯、PGT 胚胎选择治理和第三方生殖法律伦理。
 - 2026-07-01：新增第一百二十五波 6 个长寿干预执行与证据治理连续性域，覆盖 geroprotective 药物再利用试验治理、补剂证据安全、抗阻训练肌力肌少症、心肺适能 VO2max、热量限制禁食能量平衡和冷热应激 hormesis 治理。
+- 2026-07-01：新增第一百三十二波 6 个细胞内质量控制与分子信息维护连续性域，覆盖溶酶体通量/脂褐素清除、泛素-蛋白酶体蛋白周转、核糖体翻译保真、RNA 剪接/转录后维护、核网关/核质运输和铁死亡/脂质过氧化膜韧性。
 
 完整记录见 [CHANGELOG.md](CHANGELOG.md)。

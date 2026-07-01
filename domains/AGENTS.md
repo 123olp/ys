@@ -1128,6 +1128,24 @@ domains/
 ├── proteostasis-autophagy/
 │   ├── AGENTS.md
 │   └── README.md
+├── lysosomal-flux-lipofuscin-clearance-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── ubiquitin-proteasome-protein-turnover-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── ribosome-translation-fidelity-proteome-integrity-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── rna-splicing-epitranscriptomic-maintenance-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── nuclear-gateway-nucleocytoplasmic-transport-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── ferroptosis-lipid-peroxidation-membrane-resilience-continuity/
+│   ├── AGENTS.md
+│   └── README.md
 ├── mitochondrial-bioenergetics/
 │   ├── AGENTS.md
 │   └── README.md
@@ -2664,6 +2682,7 @@ domains/
 
 - `longevity-evidence/` 是当前唯一含数据和采集脚本的产品化子域。
 - `genomic-stability-dna-repair/`、`telomere-maintenance/`、`proteostasis-autophagy/`、`mitochondrial-bioenergetics/`、`cellular-senescence-clearance/`、`extracellular-matrix-glycation/`、`microbiome-ecology/`、`stem-cell-reserve-renewal/` 和 `renal-hepatic-clearance/` 负责分子维护、结构材料、宿主生态、内源性修复和肝肾清除底座。
+- `lysosomal-flux-lipofuscin-clearance-continuity/`、`ubiquitin-proteasome-protein-turnover-continuity/`、`ribosome-translation-fidelity-proteome-integrity-continuity/`、`rna-splicing-epitranscriptomic-maintenance-continuity/`、`nuclear-gateway-nucleocytoplasmic-transport-continuity/` 和 `ferroptosis-lipid-peroxidation-membrane-resilience-continuity/` 负责细胞内质量控制与分子信息维护下层机制，不提供自噬激活、蛋白酶体调节、mTOR/ISR/RNA/核结构/铁死亡干预、检测解释、实验操作或临床建议。
 - `thymic-involution-naive-t-cell-output-continuity/`、`immune-repertoire-vaccine-response-aging-continuity/`、`clonal-hematopoiesis-chip-inflammatory-risk-continuity/`、`inflammaging-chronic-low-grade-inflammation-continuity/`、`plasma-proteome-systemic-aging-signal-continuity/` 和 `extracellular-vesicle-sasp-intercellular-aging-continuity/` 负责免疫衰老与系统性年轻化信号的下层机制，不提供免疫治疗、血浆、exosome、检测解释、抗衰产品或个体临床建议。
 - `respiratory-oxygenation/`、`blood-oxygen-hemostasis/`、`endocrine-hormonal-regulation/` 和 `lymphatic-glymphatic-clearance/` 负责氧合、血液运输、激素协调和清除网络这些跨器官稳态条件。
 - `gastrointestinal-barrier-absorption/`、`fluid-electrolyte-acid-base-homeostasis/` 和 `thermal-homeostasis-resilience/` 负责营养进入、内环境化学和体温边界这些基础稳态条件。

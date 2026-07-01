@@ -764,6 +764,12 @@ human_infra/
     ├── physical-activity-mobility/ # 身体活动与移动能力
     ├── planetary-health-environment/ # 星球健康与环境
     ├── proteostasis-autophagy/ # 蛋白稳态与自噬
+    ├── lysosomal-flux-lipofuscin-clearance-continuity/ # 溶酶体通量与脂褐素清除
+    ├── ubiquitin-proteasome-protein-turnover-continuity/ # 泛素-蛋白酶体与蛋白周转
+    ├── ribosome-translation-fidelity-proteome-integrity-continuity/ # 核糖体翻译保真度与蛋白质组完整性
+    ├── rna-splicing-epitranscriptomic-maintenance-continuity/ # RNA 剪接与转录后维护
+    ├── nuclear-gateway-nucleocytoplasmic-transport-continuity/ # 核网关与核质运输
+    ├── ferroptosis-lipid-peroxidation-membrane-resilience-continuity/ # 铁死亡与脂质过氧化膜韧性
     ├── regenerative-medicine/ # 再生医学与组织修复
     ├── rehabilitation-functioning/ # 康复与功能恢复
     ├── reproductive-fertility-continuity/ # 生殖与生育连续性
@@ -926,6 +932,7 @@ human_infra/
 - `domains/genomic-stability-dna-repair/` 负责基因组稳定性、DNA 损伤、修复系统、突变负荷和癌前风险。
 - `domains/telomere-maintenance/` 负责端粒长度、端粒酶、复制衰老、组织更新和癌症风险。
 - `domains/proteostasis-autophagy/` 负责蛋白稳态、自噬、溶酶体、蛋白聚集和细胞质量控制。
+- `domains/lysosomal-flux-lipofuscin-clearance-continuity/`、`domains/ubiquitin-proteasome-protein-turnover-continuity/`、`domains/ribosome-translation-fidelity-proteome-integrity-continuity/`、`domains/rna-splicing-epitranscriptomic-maintenance-continuity/`、`domains/nuclear-gateway-nucleocytoplasmic-transport-continuity/` 和 `domains/ferroptosis-lipid-peroxidation-membrane-resilience-continuity/` 负责细胞内质量控制与分子信息维护的下层机制：终端清除、蛋白周转、翻译保真、RNA 维护、核入口和膜脂死亡风险。
 - `domains/mitochondrial-bioenergetics/` 负责线粒体功能、细胞能量、氧化应激、疲劳和行动能力。
 - `domains/cellular-senescence-clearance/` 负责细胞衰老、SASP、senolytics、组织炎症和衰老细胞负担。
 - `domains/extracellular-matrix-glycation/` 负责细胞外基质、胶原、弹性、AGEs、交联、纤维化和组织力学。
@@ -1394,3 +1401,4 @@ human_infra/
 - 2026-07-01：新增第一百二十五波 6 个长寿干预执行与证据治理连续性域，覆盖 geroprotective 药物再利用试验治理、补剂证据安全、抗阻训练肌力肌少症、心肺适能 VO2max、热量限制禁食能量平衡和冷热应激 hormesis 治理。
 - 2026-07-01：新增第一百三十波 6 个施工与工业现场特定致命机制执行连续性域，覆盖沟槽开挖坍塌、起重吊装悬吊载荷、职业电击电弧闪爆、焊接切割烟尘火灾、可吸入结晶硅尘和拆除坍塌碎片。
 - 2026-07-01：新增第一百三十一波 6 个免疫衰老与系统性年轻化信号连续性域，覆盖胸腺退化/初始 T 细胞输出、免疫库/疫苗响应老化、克隆性造血/CHIP 炎症风险、炎症衰老、血浆蛋白组系统性衰老信号和细胞外囊泡/SASP 通讯。
+- 2026-07-01：新增第一百三十二波 6 个细胞内质量控制与分子信息维护连续性域，覆盖溶酶体通量/脂褐素清除、泛素-蛋白酶体蛋白周转、核糖体翻译保真、RNA 剪接/转录后维护、核网关/核质运输和铁死亡/脂质过氧化膜韧性。

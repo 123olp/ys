@@ -145,6 +145,7 @@ docs/
 │   ├── 0134-add-one-hundred-twenty-ninth-wave-workplace-safety-execution-domains.md
 │   ├── 0135-add-one-hundred-thirtieth-wave-construction-industrial-fatal-hazard-domains.md
 │   ├── 0136-add-one-hundred-thirty-first-wave-immune-aging-systemic-signal-domains.md
+│   ├── 0137-add-one-hundred-thirty-second-wave-intracellular-quality-control-molecular-maintenance-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -221,6 +222,7 @@ docs/
 - `reference/transcendental-domain-index.md`：把“有效永生何以可能”的先验追问压缩成 A-K 主干研究域入口。
 - `reference/research-domain-atlas.md`：定义从有效永生先验条件生成研究域的规则、当前域地图和域判定契约。
 - `reference/research-domain-radar.md`：记录尚未晋升为正式子域的潜在研究域、来源信号和晋升触发条件。
+- `reference/domain-map.md`、`reference/research-domain-atlas.md`、`reference/research-domain-radar.md`、`reference/applications-and-literature.md` 和 `reference/ethics-and-safety-boundaries.md`：同时索引细胞内质量控制与分子信息维护域，覆盖溶酶体通量、蛋白周转、翻译保真、RNA 维护、核质运输和铁死亡膜韧性。
 - `domains/health-data-privacy-governance/`、`domains/functioning-quality-of-life-outcomes/`、`domains/health-economics-value-assessment/`、`domains/immunization-public-health-surveillance/`、`domains/maternal-newborn-child-development/` 和 `domains/patient-safety-organizational-learning/`：第十三波正式研究域，分别承载数据治理、结局评估、价值评估、公共卫生监测、早期生命基础设施和患者安全组织学习。
 - `domains/social-determinants-community-vulnerability/`、`domains/public-service-design-accessibility/`、`domains/emergency-alerts-communications/`、`domains/disaster-recovery-relief-continuity/`、`domains/financial-inclusion-payment-systems/` 和 `domains/workforce-employment-services/`：第十四波正式研究域，分别承载社会决定因素、公共服务设计、应急预警通信、灾后恢复、金融支付入口和就业服务。
 - `domains/household-emergency-preparedness-resilience/`、`domains/media-information-literacy-public-libraries/`、`domains/health-workforce-capacity/`、`domains/administrative-burden-procedural-friction/`、`domains/community-health-workers-peer-support/` 和 `domains/civic-data-open-government-transparency/`：第十五波正式研究域，分别承载家庭准备、信息素养与公共图书馆、健康劳动力容量、行政负担、社区中介支持和开放政府透明。

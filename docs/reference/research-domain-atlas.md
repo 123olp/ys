@@ -67,6 +67,12 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 人体相关模型必须降低试错成本 | `organoids-organ-on-chip-disease-models/` | 类器官、organ-on-chip、组织芯片、患者来源模型和替代方法 | 模型失真导致候选干预错误进入或退出临床，或把体外信号外推成人体疗效 |
 | 器官失败必须有替换路径 | `xenotransplantation-bioengineered-organ-replacement/` | 异种移植、工程器官、器官保存灌注、器官供给和移植平台风险 | 器官衰竭、供给不足、免疫排斥、感染和长期功能失败直接截断生命路径 |
 | 蛋白质量控制可稳定 | `proteostasis-autophagy/` | 蛋白稳态、自噬、溶酶体、聚集负担 | 把自噬激活写成无条件有益 |
+| 终端清除必须不被残余堵塞 | `lysosomal-flux-lipofuscin-clearance-continuity/` | 溶酶体通量、脂褐素、酸化、底物清除 | 清除失败、残余积累、神经/视网膜风险和细胞质量控制塌缩 |
+| 错误蛋白必须可选择性降解 | `ubiquitin-proteasome-protein-turnover-continuity/` | 泛素化、蛋白酶体、蛋白周转、蛋白毒性压力 | 错误蛋白积累、蛋白稳态崩塌、神经/肌肉风险 |
+| 新蛋白生成必须保持保真度 | `ribosome-translation-fidelity-proteome-integrity-continuity/` | 核糖体、翻译控制、错误翻译、RQC | 错误蛋白生成、蛋白质组完整性下降和蛋白毒性放大 |
+| RNA 信息层必须可维护 | `rna-splicing-epitranscriptomic-maintenance-continuity/` | RNA 剪接、RNA 修饰、mRNA 质控、RNA imbalance | 错误 isoform、表达漂移、细胞身份失稳和功能程序失真 |
+| 核入口必须保持边界稳定 | `nuclear-gateway-nucleocytoplasmic-transport-continuity/` | 核孔、核质运输、karyopherins、核膜/核纤层 | 核内外交换失衡、压力响应异常、身份漂移和结构脆弱 |
+| 膜脂死亡通道必须可控 | `ferroptosis-lipid-peroxidation-membrane-resilience-continuity/` | 铁死亡、脂质过氧化、铁代谢、膜脂稳态 | 膜损伤扩增、细胞死亡、器官损伤和炎症级联 |
 | 细胞能源可持续 | `mitochondrial-bioenergetics/` | 线粒体功能、ATP、氧化还原、疲劳 | 把能量指标写成寿命预测 |
 | 衰老细胞负担可治理 | `cellular-senescence-clearance/` | senescence burden、SASP、炎症、组织环境 | 忽略衰老细胞的肿瘤抑制和修复角色 |
 | 组织材料结构可维护 | `extracellular-matrix-glycation/` | ECM、胶原、弹性、糖化、交联、纤维化 | 把抗糖化或组织硬度写成个体处方 |
@@ -1065,6 +1071,12 @@ cellular-reprogramming
   -> genomic-stability-dna-repair
   -> telomere-maintenance
   -> proteostasis-autophagy
+  -> lysosomal-flux-lipofuscin-clearance-continuity
+  -> ubiquitin-proteasome-protein-turnover-continuity
+  -> ribosome-translation-fidelity-proteome-integrity-continuity
+  -> rna-splicing-epitranscriptomic-maintenance-continuity
+  -> nuclear-gateway-nucleocytoplasmic-transport-continuity
+  -> ferroptosis-lipid-peroxidation-membrane-resilience-continuity
   -> mitochondrial-bioenergetics
   -> cellular-senescence-clearance
   -> extracellular-matrix-glycation

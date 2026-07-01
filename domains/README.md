@@ -22,6 +22,12 @@
 - `organoids-organ-on-chip-disease-models/`：类器官、组织芯片与疾病模型，整理人体相关模型、患者来源模型、替代方法和模型验证边界。
 - `xenotransplantation-bioengineered-organ-replacement/`：异种移植与工程器官替换，整理基因编辑动物器官、工程器官、器官保存灌注和供给风险边界。
 - `proteostasis-autophagy/`：蛋白稳态与自噬，整理蛋白折叠、聚集、清除、溶酶体和细胞质量控制。
+- `lysosomal-flux-lipofuscin-clearance-continuity/`：溶酶体通量与脂褐素清除连续性，整理终端清除、残余积累、酸化和细胞回收边界。
+- `ubiquitin-proteasome-protein-turnover-continuity/`：泛素-蛋白酶体与蛋白周转连续性，整理选择性蛋白降解、错误蛋白清除和蛋白稳态压力。
+- `ribosome-translation-fidelity-proteome-integrity-continuity/`：核糖体翻译保真度与蛋白质组完整性连续性，整理翻译控制、错误翻译和新蛋白生成质量。
+- `rna-splicing-epitranscriptomic-maintenance-continuity/`：RNA 剪接与转录后维护连续性，整理 RNA 修饰、mRNA 质控、isoform 分布和 RNA imbalance。
+- `nuclear-gateway-nucleocytoplasmic-transport-continuity/`：核网关与核质运输连续性，整理核孔、karyopherins、核膜/核纤层和核内外交换边界。
+- `ferroptosis-lipid-peroxidation-membrane-resilience-continuity/`：铁死亡、脂质过氧化与膜韧性连续性，整理膜脂稳态、铁代谢、抗氧化防御和铁依赖细胞死亡风险。
 - `mitochondrial-bioenergetics/`：线粒体生物能量学，整理线粒体功能、ATP、氧化还原、疲劳和行动能力。
 - `cellular-senescence-clearance/`：细胞衰老与清除，整理衰老细胞负担、SASP、组织炎症和 senolytic 风险。
 - `extracellular-matrix-glycation/`：细胞外基质与糖化，整理胶原、弹性、组织力学、AGEs、交联和纤维化。
