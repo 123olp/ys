@@ -124,6 +124,7 @@ docs/
 │   ├── 0106-establish-transcendental-domain-index.md
 │   ├── 0107-add-one-hundred-second-wave-severe-weather-hazard-execution-domains.md
 │   ├── 0108-add-one-hundred-third-wave-vector-animal-pest-exposure-execution-domains.md
+│   ├── 0109-add-one-hundred-fourth-wave-plant-algae-fungi-outdoor-biological-exposure-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -372,6 +373,16 @@ docs/
     - Then read `../domains/reptile-amphibian-backyard-poultry-salmonella-continuity/README.md` for reptiles, amphibians, backyard poultry, salmonella, children, schools, or kitchen hygiene boundaries.
     - Then read `../domains/lice-scabies-school-shelter-infestation-continuity/README.md` for lice, scabies, schools, shelters, long-term care, stigma, sleep disruption, or participation policy.
     - Then read `../domains/pesticide-label-exposure-poison-control-continuity/README.md` for pesticide labels, exposure events, children/pets, poison control, NPIC, or safe pest-control boundaries.
+    - Then read `../domains/pollen-allergen-asthma-outdoor-activity-continuity/README.md` for pollen, seasonal allergy, asthma triggers, outdoor activity, school/work attendance, or sleep disruption.
+    - Then read `../domains/poison-ivy-oak-sumac-urushiol-exposure-continuity/README.md` for poison ivy/oak/sumac, urushiol contact, dermatitis, outdoor labor, gardening, or disaster cleanup boundaries.
+    - Then read `../domains/harmful-algal-bloom-cyanotoxin-water-recreation-continuity/README.md` for harmful algal blooms, cyanotoxins, lake/coastal advisories, pets, water recreation, or drinking-water trust.
+    - Then read `../domains/toxic-mushroom-foraging-poisoning-continuity/README.md` for wild mushroom foraging, misidentification, ingestion, poison-center connection, or food-safety risk communication.
+    - Then read `../domains/poisonous-plant-childcare-household-exposure-continuity/README.md` for poisonous plants, children, pets, childcare, schools, household plants, or poison-center connection.
+    - Then read `../domains/invasive-species-human-health-access-continuity/README.md` for invasive species, ecosystem-service loss, allergenic/toxic species, vector ecology, public-space access, or maintenance burden.
+    - Then read `../domains/mycotoxin-food-crop-storage-safety-continuity/README.md` for mycotoxins, crop storage, grains/nuts, feed safety, chronic exposure, or food-supply inspection boundaries.
+    - Then read `../domains/recreational-water-illness-beach-lake-access-continuity/README.md` for pools, lakes, beaches, recreational water illness, water-quality advisories, closures, or cooling/recovery access.
+    - Then read `../domains/shellfish-biotoxin-harmful-algal-bloom-food-continuity/README.md` for shellfish biotoxins, HAB-related closures, seafood safety, harvest advisories, recalls, or coastal food continuity.
+    - Then read `../domains/landscaping-horticulture-worker-equipment-injury-continuity/README.md` for landscaping, horticulture, lawn/tree maintenance, outdoor worker injury, heat, equipment, pesticide, or plant exposure.
 183. Read `../domains/advance-care-planning-medical-decision-continuity/README.md` if you are working on advance care planning, advance directives, health care proxy, medical decision continuity, goals of care, or incapacity communication.
 184. Read `../domains/supported-decision-making-guardianship-rights/README.md` if you are working on supported decision-making, guardianship, conservatorship, decision capacity, disability rights, or least restrictive alternatives.
 185. Read `../domains/healthcare-personal-representative-hipaa-access-continuity/README.md` if you are working on HIPAA personal representatives, caregiver access, proxy access, medical records, privacy boundaries, or authorized care coordination.

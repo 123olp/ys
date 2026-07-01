@@ -410,6 +410,36 @@ domains/
 ├── pesticide-label-exposure-poison-control-continuity/
 │   ├── AGENTS.md
 │   └── README.md
+├── pollen-allergen-asthma-outdoor-activity-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── poison-ivy-oak-sumac-urushiol-exposure-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── harmful-algal-bloom-cyanotoxin-water-recreation-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── toxic-mushroom-foraging-poisoning-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── poisonous-plant-childcare-household-exposure-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── invasive-species-human-health-access-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── mycotoxin-food-crop-storage-safety-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── recreational-water-illness-beach-lake-access-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── shellfish-biotoxin-harmful-algal-bloom-food-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── landscaping-horticulture-worker-equipment-injury-continuity/
+│   ├── AGENTS.md
+│   └── README.md
 ├── advance-care-planning-medical-decision-continuity/
 │   ├── AGENTS.md
 │   └── README.md
@@ -2423,6 +2453,7 @@ domains/
 - `severe-weather-watch-warning-risk-communication-continuity/`、`river-flash-flood-warning-evacuation-continuity/`、`hurricane-storm-surge-evacuation-shelter-continuity/`、`tornado-warning-safe-room-shelter-continuity/`、`winter-storm-cold-exposure-power-continuity/`、`drought-water-restriction-household-health-continuity/`、`landslide-mudslide-debris-flow-warning-continuity/`、`wildfire-smoke-clean-air-respiratory-continuity/`、`thunderstorm-lightning-outdoor-safety-continuity/` 和 `coastal-flooding-erosion-inundation-continuity/` 负责强天气和自然 hazard 执行连续性条件，覆盖官方预警、风险理解、撤离避难、寒冷/水限制、烟雾暴露、户外安全和沿海淹没。
 - `noise-exposure-acoustic-environment-continuity/`、`light-exposure-circadian-environment-continuity/`、`lead-heavy-metal-exposure-control/`、`radon-asbestos-indoor-hazard-continuity/`、`mold-dampness-indoor-biological-exposure/` 和 `vector-borne-disease-environmental-control/` 负责噪声、光照节律、铅与重金属、氡与石棉、霉菌潮湿和病媒传播这些慢性环境暴露与日常损耗条件。
 - `mosquito-bite-arbovirus-prevention-continuity/`、`tick-bite-lyme-rickettsial-prevention-continuity/`、`rabies-exposure-bite-pep-continuity/`、`dog-bite-community-injury-prevention-continuity/`、`rodent-infestation-hantavirus-plague-continuity/`、`bed-bug-infestation-sleep-housing-continuity/`、`venomous-bites-stings-envenomation-continuity/`、`reptile-amphibian-backyard-poultry-salmonella-continuity/`、`lice-scabies-school-shelter-infestation-continuity/` 和 `pesticide-label-exposure-poison-control-continuity/` 负责病媒、动物接触、虫害与农药暴露执行连续性条件，覆盖蚊虫、蜱虫、狂犬病暴露、犬咬伤、鼠害、床虱、毒咬蜇伤、爬宠家禽、虱疥和农药标签中毒连接。
+- `pollen-allergen-asthma-outdoor-activity-continuity/`、`poison-ivy-oak-sumac-urushiol-exposure-continuity/`、`harmful-algal-bloom-cyanotoxin-water-recreation-continuity/`、`toxic-mushroom-foraging-poisoning-continuity/`、`poisonous-plant-childcare-household-exposure-continuity/`、`invasive-species-human-health-access-continuity/`、`mycotoxin-food-crop-storage-safety-continuity/`、`recreational-water-illness-beach-lake-access-continuity/`、`shellfish-biotoxin-harmful-algal-bloom-food-continuity/` 和 `landscaping-horticulture-worker-equipment-injury-continuity/` 负责植物、藻类、真菌与户外生物暴露执行连续性条件，覆盖花粉、漆酚植物、藻华毒素、野生蘑菇、有毒植物、入侵物种、霉菌毒素、休闲水病原、贝类毒素和园林园艺户外复合伤害。
 - `advance-care-planning-medical-decision-continuity/`、`supported-decision-making-guardianship-rights/`、`healthcare-personal-representative-hipaa-access-continuity/`、`financial-fiduciary-power-of-attorney-continuity/`、`representative-payee-benefits-management-continuity/` 和 `trust-estate-affairs-succession-continuity/` 负责预先医疗照护计划、支持性决策、医疗个人代表、财务受托、代表收款人和事务继承这些决策权、代理权与受托连续性条件。
 - `credit-consumer-reporting-access-continuity/`、`tenant-screening-rental-access-continuity/`、`background-check-record-screening-continuity/`、`employment-algorithmic-hiring-screening-continuity/`、`insurance-underwriting-algorithmic-risk-scoring-continuity/` 和 `public-benefits-eligibility-automated-decision-continuity/` 负责信用与消费者报告、租房筛查、背景记录筛查、算法招聘、保险算法评分和公共福利自动资格系统这些算法化准入、筛查与资格连续性条件。
 - `education-record-transcript-verification-continuity/`、`professional-licensure-certification-continuity/`、`skills-competency-credentialing-continuity/`、`continuing-education-recertification-continuity/`、`apprenticeship-work-based-learning-continuity/` 和 `verifiable-credential-wallet-interoperability/` 负责教育记录核验、职业证照认证、技能胜任力凭证、继续教育再认证、学徒制工作中学习和可验证凭证钱包互操作这些资格证明、授权与能力可携带连续性条件。
@@ -2514,6 +2545,7 @@ domains/
 - `disaster-individual-assistance-benefits-navigation-continuity/`、`disaster-temporary-housing-displacement-recovery-continuity/`、`disaster-recovery-center-service-access-continuity/`、`disaster-case-management-long-term-recovery-continuity/`、`disaster-unemployment-income-disruption-continuity/`、`disaster-legal-aid-rights-claims-continuity/`、`disaster-debris-waste-sanitation-cleanup-continuity/`、`post-flood-mold-moisture-indoor-recovery-continuity/`、`disaster-behavioral-health-distress-recovery-continuity/` 和 `disaster-volunteer-donations-management-continuity/` 负责灾后恢复执行层的证据边界，不提供个案救助、资格判断、房源推荐、恢复中心实时位置、社工替代、失业申请代办、法律意见、保险理赔、清理操作、霉菌检测、心理诊断、志愿派遣、捐赠收款或现场调度建议。
 - `severe-weather-watch-warning-risk-communication-continuity/`、`river-flash-flood-warning-evacuation-continuity/`、`hurricane-storm-surge-evacuation-shelter-continuity/`、`tornado-warning-safe-room-shelter-continuity/`、`winter-storm-cold-exposure-power-continuity/`、`drought-water-restriction-household-health-continuity/`、`landslide-mudslide-debris-flow-warning-continuity/`、`wildfire-smoke-clean-air-respiratory-continuity/`、`thunderstorm-lightning-outdoor-safety-continuity/` 和 `coastal-flooding-erosion-inundation-continuity/` 负责强天气和自然 hazard 执行层的证据边界，不提供实时预警、个案警报解释、撤离路线、避难点、道路判断、现场操作、工程设计、医疗急救、保险理赔、法律/金融建议或应急指挥。
 - `mosquito-bite-arbovirus-prevention-continuity/`、`tick-bite-lyme-rickettsial-prevention-continuity/`、`rabies-exposure-bite-pep-continuity/`、`dog-bite-community-injury-prevention-continuity/`、`rodent-infestation-hantavirus-plague-continuity/`、`bed-bug-infestation-sleep-housing-continuity/`、`venomous-bites-stings-envenomation-continuity/`、`reptile-amphibian-backyard-poultry-salmonella-continuity/`、`lice-scabies-school-shelter-infestation-continuity/` 和 `pesticide-label-exposure-poison-control-continuity/` 负责病媒、动物接触、虫害与农药暴露执行层的证据边界，不提供诊断、治疗、用药、PEP 决策、急救步骤、灭虫操作、农药施用、动物捕捉处置、旅行许可、法律责任、产品选择或个体风险判断。
+- `pollen-allergen-asthma-outdoor-activity-continuity/`、`poison-ivy-oak-sumac-urushiol-exposure-continuity/`、`harmful-algal-bloom-cyanotoxin-water-recreation-continuity/`、`toxic-mushroom-foraging-poisoning-continuity/`、`poisonous-plant-childcare-household-exposure-continuity/`、`invasive-species-human-health-access-continuity/`、`mycotoxin-food-crop-storage-safety-continuity/`、`recreational-water-illness-beach-lake-access-continuity/`、`shellfish-biotoxin-harmful-algal-bloom-food-continuity/` 和 `landscaping-horticulture-worker-equipment-injury-continuity/` 负责植物、藻类、真菌与户外生物暴露执行层的证据边界，不提供诊断、治疗、急救、解毒、食用许可、采食建议、植物/蘑菇鉴定、水质判断、采捕许可、农药/除草剂操作、PPE 选型、设备作业、施工流程、旅游许可或个体风险判断。
 - `urinary-tract-infection-pyelonephritis-urosepsis-continuity/`、`catheter-associated-uti-device-infection-continuity/`、`urinary-retention-bladder-emptying-continuity/`、`overactive-bladder-nocturia-sleep-continuity/`、`kidney-stone-obstruction-renal-colic-continuity/`、`benign-prostatic-hyperplasia-luts-continuity/`、`urinary-diversion-urostomy-supplies-continuity/`、`dialysis-access-vascular-peritoneal-continuity/`、`home-dialysis-supply-self-management-continuity/` 和 `kidney-transplant-immunosuppression-graft-continuity/` 负责泌尿与肾脏替代执行层的证据边界，不提供尿检/实验室解释、抗生素、导尿/拔管/护理、排尿训练、止痛/排石、BPH 用药/手术、造口护理/产品、透析通路/参数/操作、家庭透析故障处理、移植资格/免疫抑制用药、急诊分诊、保险申诉或个体医疗建议。
 - `breast-cancer-screening-treatment-survivorship-continuity/`、`colorectal-cancer-screening-treatment-continuity/`、`lung-cancer-screening-treatment-continuity/`、`prostate-cancer-screening-treatment-continuity/`、`cervical-cancer-hpv-prevention-screening-continuity/`、`ovarian-cancer-symptom-detection-treatment-continuity/`、`pancreatic-cancer-high-risk-detection-treatment-continuity/`、`liver-cancer-cirrhosis-surveillance-treatment-continuity/`、`childhood-cancer-treatment-survivorship-continuity/` 和 `cancer-survivorship-late-effects-continuity/` 负责器官/阶段特异癌症连续性的证据边界，不提供乳腺、结直肠、肺、前列腺、宫颈、卵巢、胰腺、肝、儿童癌症或幸存者的个体诊断、影像/病理/标志物判读、筛查频率、遗传风险、治疗方案、用药、手术、随访、保险、工作证明或预后建议。
 - `sleep-disordered-breathing-screening-treatment-continuity/`、`chronic-insomnia-cbti-access-continuity/`、`sexual-health-sti-prevention-continuity/`、`hiv-testing-prep-prevention-continuity/`、`chronic-viral-hepatitis-screening-liver-protection-continuity/`、`contraception-family-planning-access-continuity/`、`menstrual-health-cycle-literacy-continuity/`、`perimenopause-menopause-midlife-health-continuity/`、`pelvic-floor-continence-function-continuity/` 和 `skin-cancer-uv-protection-early-detection-continuity/` 负责生活史预防与功能连续性的证据边界，不提供睡眠报告判读、CBT-I 操作、STI/HIV/肝炎检测解释、PrEP/PEP/ART、避孕选择、周期判读、激素治疗、盆底训练、皮损照片判断、防晒产品、用药、检查频率、保险、法律或个体医疗建议。

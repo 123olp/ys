@@ -432,6 +432,16 @@
 - `reptile-amphibian-backyard-poultry-salmonella-continuity/`：爬宠家禽与沙门氏菌连续性，整理爬行/两栖动物、后院家禽、儿童和家庭学校卫生边界。
 - `lice-scabies-school-shelter-infestation-continuity/`：虱疥、学校与避难所虫害连续性，整理头虱、体虱、疥疮、集体住宿、污名和停课停工摩擦。
 - `pesticide-label-exposure-poison-control-continuity/`：农药标签、暴露与毒物控制连续性，整理农药误用、儿童/宠物暴露、标签理解和毒物中心连接。
+- `pollen-allergen-asthma-outdoor-activity-continuity/`：花粉过敏、哮喘与户外活动连续性，整理季节性过敏原、哮喘触发、睡眠、户外行动和出勤。
+- `poison-ivy-oak-sumac-urushiol-exposure-continuity/`：毒葛毒橡毒漆与漆酚暴露连续性，整理植物接触、皮肤炎症、户外工作、园艺和灾后清理。
+- `harmful-algal-bloom-cyanotoxin-water-recreation-continuity/`：有害藻华、蓝藻毒素与水域活动连续性，整理水体公告、宠物、饮水信任、旅行和降温恢复空间。
+- `toxic-mushroom-foraging-poisoning-continuity/`：野生蘑菇采食与中毒连续性，整理采食、误食、毒物中心、食品安全教育和高后果中毒连接。
+- `poisonous-plant-childcare-household-exposure-continuity/`：有毒植物、儿童照护与家庭暴露连续性，整理儿童/宠物误食、托育学校、家庭植物和毒物中心连接。
+- `invasive-species-human-health-access-continuity/`：入侵物种、健康暴露与空间可达连续性，整理生态服务、过敏毒性、病媒生态、公共空间和维护成本。
+- `mycotoxin-food-crop-storage-safety-continuity/`：霉菌毒素、作物储存与食品安全连续性，整理谷物坚果、饲料、储存湿度、检测标准和慢性暴露。
+- `recreational-water-illness-beach-lake-access-continuity/`：休闲水病、海滩湖泊与水域可达连续性，整理泳池、湖泊、海滩、水质公告、关闭和感染风险。
+- `shellfish-biotoxin-harmful-algal-bloom-food-continuity/`：贝类毒素、有害藻华与食物连续性，整理采捕关闭、召回、海产品供应、餐饮和急性中毒。
+- `landscaping-horticulture-worker-equipment-injury-continuity/`：园林园艺户外工人设备伤害连续性，整理草坪树木维护、设备伤害、热、化学、植物和病媒暴露。
 - `advance-care-planning-medical-decision-continuity/`：预先医疗照护计划与医疗决策连续性，整理 advance directives、医疗代理、目标照护和失能时偏好传递。
 - `supported-decision-making-guardianship-rights/`：支持性决策、监护与权利保护，整理能力变化后的决策支持、最低限制替代、监督和防滥用边界。
 - `healthcare-personal-representative-hipaa-access-continuity/`：医疗个人代表与 HIPAA 访问连续性，整理授权照护者、医疗记录访问、隐私边界和资料断点。

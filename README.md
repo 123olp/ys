@@ -657,6 +657,16 @@ flowchart TD
     VBDEC --> RABP[reptile-amphibian-backyard-poultry-salmonella<br/>爬宠家禽 / 沙门氏菌]
     VBDEC --> LSSS[lice-scabies-school-shelter<br/>虱疥 / 学校避难所]
     VBDEC --> PLEP[pesticide-label-exposure-poison-control<br/>农药标签 / 中毒控制]
+    H --> PAAO[pollen-allergen-asthma-outdoor-activity<br/>花粉过敏 / 户外活动]
+    H --> PIOS[poison-ivy-oak-sumac-urushiol<br/>漆酚植物 / 接触皮炎]
+    H --> HABC[harmful-algal-bloom-cyanotoxin<br/>有害藻华 / 蓝藻毒素]
+    H --> TMFP[toxic-mushroom-foraging-poisoning<br/>野生蘑菇 / 中毒连接]
+    H --> PPCH[poisonous-plant-childcare-household<br/>有毒植物 / 儿童家庭暴露]
+    H --> ISHH[invasive-species-human-health-access<br/>入侵物种 / 健康可达]
+    H --> MFCS[mycotoxin-food-crop-storage-safety<br/>霉菌毒素 / 作物储存]
+    H --> RWIB[recreational-water-illness-beach-lake<br/>休闲水病 / 海滩湖泊]
+    H --> SBHA[shellfish-biotoxin-harmful-algal-bloom<br/>贝类毒素 / 食物连续性]
+    H --> LHWE[landscaping-horticulture-worker-equipment<br/>园林园艺 / 户外工伤]
     H --> ACPMDC[advance-care-planning-medical-decision-continuity<br/>预先照护计划 / 医疗决策]
     H --> SDMGR[supported-decision-making-guardianship-rights<br/>支持性决策 / 监护权利]
     H --> HPRHAC[healthcare-personal-representative-hipaa-access-continuity<br/>医疗个人代表 / HIPAA 访问]
@@ -1074,6 +1084,16 @@ flowchart TD
 | [Reptile Amphibian Backyard Poultry Salmonella Continuity](domains/reptile-amphibian-backyard-poultry-salmonella-continuity/README.md) | 爬行动物、两栖动物、后院家禽、儿童和沙门氏菌 | 把特定动物接触纳入家庭、学校、厨房和免疫脆弱人群卫生边界 | 不提供饲养、清洁、食品处理、宠物选择、个体医疗或人体诊断 |
 | [Lice Scabies School Shelter Infestation Continuity](domains/lice-scabies-school-shelter-infestation-continuity/README.md) | 头虱、体虱、疥疮、学校、避难所、照护机构和污名 | 把低致死高摩擦虫害纳入学习、睡眠、集体住宿和照护连续性 | 不提供诊断、用药、清洗步骤、隔离政策、学校排除规则或个案处理 |
 | [Pesticide Label Exposure Poison Control Continuity](domains/pesticide-label-exposure-poison-control-continuity/README.md) | 农药标签、误用暴露、儿童/宠物风险和毒物中心连接 | 把害虫控制工具自身的化学风险纳入主体持续性的安全边界 | 不提供农药选择、配方、施用、混合、剂量、解毒、清理或合规建议 |
+| [Pollen Allergen Asthma Outdoor Activity Continuity](domains/pollen-allergen-asthma-outdoor-activity-continuity/README.md) | 花粉、季节性过敏、哮喘触发、睡眠和户外活动 | 把季节性空气过敏原纳入呼吸、注意力、出勤和户外行动模型 | 不提供诊断、药物、免疫治疗、设备购买、急救或个人活动许可 |
+| [Poison Ivy Oak Sumac Urushiol Exposure Continuity](domains/poison-ivy-oak-sumac-urushiol-exposure-continuity/README.md) | 毒葛、毒橡、毒漆、漆酚、接触性皮炎和户外维护 | 把植物接触暴露纳入皮肤屏障、睡眠、户外劳动和灾后清理连续性 | 不提供皮疹诊断、用药、植物清除、除草剂使用、照片鉴定或现场操作 |
+| [Harmful Algal Bloom Cyanotoxin Water Recreation Continuity](domains/harmful-algal-bloom-cyanotoxin-water-recreation-continuity/README.md) | 有害藻华、蓝藻毒素、水体关闭、宠物和休闲水域 | 把水环境从恢复空间转化风险纳入饮水信任、旅行和公共空间模型 | 不提供饮水判定、暴露诊断、水体采样、藻华识别、宠物急救或游泳许可 |
+| [Toxic Mushroom Foraging Poisoning Continuity](domains/toxic-mushroom-foraging-poisoning-continuity/README.md) | 野生蘑菇、采食、误食、毒物中心和急性中毒风险 | 把食物探索和错误鉴定纳入高后果毒物连接链 | 不提供蘑菇鉴定、可食判断、采食建议、治疗、解毒或照片识别 |
+| [Poisonous Plant Childcare Household Exposure Continuity](domains/poisonous-plant-childcare-household-exposure-continuity/README.md) | 有毒植物、儿童误食、宠物暴露、托育学校和毒物中心 | 把植物作为开放环境毒物纳入家庭、托育和公共空间安全模型 | 不提供植物鉴定、可食判断、急救、宠物医疗、儿童分诊或园林配置 |
+| [Invasive Species Human Health Access Continuity](domains/invasive-species-human-health-access-continuity/README.md) | 入侵物种、过敏/毒性、病媒生态、通行和生态服务损耗 | 把生态系统改变纳入公共空间、农业、水体和健康暴露连续性 | 不提供物种鉴定、现场清除、农药除草剂使用、捕捉、法规或执法判断 |
+| [Mycotoxin Food Crop Storage Safety Continuity](domains/mycotoxin-food-crop-storage-safety-continuity/README.md) | 霉菌毒素、作物储存、谷物坚果、饲料和慢性食品暴露 | 把自然毒素纳入食品供应链、儿童营养、饲料和贸易连续性 | 不提供检测解释、食用许可、储存处置、农业操作、产品或诊疗建议 |
+| [Recreational Water Illness Beach Lake Access Continuity](domains/recreational-water-illness-beach-lake-access-continuity/README.md) | 泳池、湖泊、海滩、休闲水病原、水质公告和关闭 | 把水域运动、降温、亲子和恢复空间的病原风险纳入行动模型 | 不提供游泳许可、水质个案判断、采样解释、感染诊断、消毒或旅游建议 |
+| [Shellfish Biotoxin Harmful Algal Bloom Food Continuity](domains/shellfish-biotoxin-harmful-algal-bloom-food-continuity/README.md) | 贝类毒素、有害藻华、采捕关闭、召回和海产品供应 | 把海洋生态变化纳入水生食物、餐饮、旅游和急性中毒风险模型 | 不提供采捕建议、食用许可、检测解释、中毒治疗、餐馆选择或贸易建议 |
+| [Landscaping Horticulture Worker Equipment Injury Continuity](domains/landscaping-horticulture-worker-equipment-injury-continuity/README.md) | 园林园艺、草坪树木维护、设备伤害、热/化学/生物暴露 | 把户外维护劳动纳入工伤、公共空间、住房环境和绿地恢复连续性 | 不提供设备操作、PPE 选型、农药使用、施工流程、事故处理或法律建议 |
 | [Advance Care Planning Medical Decision Continuity](domains/advance-care-planning-medical-decision-continuity/README.md) | 预先医疗照护计划、advance directives、医疗代理人、治疗目标和偏好沟通 | 把主体失能时的医疗决策连续性作为意愿、尊严和临床沟通基础设施 | 不提供医疗、法律、急救、DNR/POLST/MOLST 填写、治疗选择或个案文件建议 |
 | [Supported Decision Making Guardianship Rights](domains/supported-decision-making-guardianship-rights/README.md) | 支持性决策、监护、保护性安排、最低限制替代方案和权利监督 | 把能力变化后的自主性保护作为主体持续参与制度和生活决策的条件 | 不提供监护申请、能力判断、法院策略、家庭纠纷、财务控制或法律建议 |
 | [Healthcare Personal Representative HIPAA Access Continuity](domains/healthcare-personal-representative-hipaa-access-continuity/README.md) | HIPAA personal representative、授权照护者、医疗记录访问和隐私边界 | 把授权医疗信息访问作为照护转移、慢病管理和风险复核的连续性条件 | 不提供 HIPAA 法律意见、授权表填写、病历索取、门户设置、隐私投诉或个案访问判断 |
@@ -2150,6 +2170,16 @@ human_infra/
 │   ├── reptile-amphibian-backyard-poultry-salmonella-continuity/
 │   ├── lice-scabies-school-shelter-infestation-continuity/
 │   ├── pesticide-label-exposure-poison-control-continuity/
+│   ├── pollen-allergen-asthma-outdoor-activity-continuity/
+│   ├── poison-ivy-oak-sumac-urushiol-exposure-continuity/
+│   ├── harmful-algal-bloom-cyanotoxin-water-recreation-continuity/
+│   ├── toxic-mushroom-foraging-poisoning-continuity/
+│   ├── poisonous-plant-childcare-household-exposure-continuity/
+│   ├── invasive-species-human-health-access-continuity/
+│   ├── mycotoxin-food-crop-storage-safety-continuity/
+│   ├── recreational-water-illness-beach-lake-access-continuity/
+│   ├── shellfish-biotoxin-harmful-algal-bloom-food-continuity/
+│   ├── landscaping-horticulture-worker-equipment-injury-continuity/
 │   ├── urogenital-continuity/
 │   ├── urinary-tract-infection-pyelonephritis-urosepsis-continuity/
 │   ├── catheter-associated-uti-device-infection-continuity/
@@ -2345,5 +2375,6 @@ flowchart LR
 - 2026-07-01：新增先验追问研究域索引，把有效永生 A-K 主干域收束为“终极目标 -> 可能性条件 -> 已有域目录 -> 维护触发”的可导航入口。
 - 2026-07-01：新增第一百零二波 10 个强天气与自然 hazard 执行连续性域，覆盖强天气预警风险沟通、洪水撤离、飓风风暴潮、龙卷风避难、冬季风暴寒冷、干旱水限制、滑坡泥石流、野火烟雾、雷暴闪电和沿海洪水。
 - 2026-07-01：新增第一百零三波 10 个病媒、动物接触、虫害与农药暴露执行连续性域，覆盖蚊虫叮咬、蜱虫叮咬、狂犬病暴露、犬咬伤、鼠害、床虱、毒咬蜇伤、爬宠/后院家禽沙门氏菌、虱疥和农药标签中毒连接。
+- 2026-07-01：新增第一百零四波 10 个植物、藻类、真菌与户外生物暴露执行连续性域，覆盖花粉过敏/哮喘、漆酚植物、有害藻华/蓝藻毒素、野生蘑菇、有毒植物、入侵物种、霉菌毒素、休闲水病原、贝类毒素和园林园艺户外工伤。
 
 完整记录见 [CHANGELOG.md](CHANGELOG.md)。

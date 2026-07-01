@@ -519,6 +519,16 @@ human_infra/
     ├── reptile-amphibian-backyard-poultry-salmonella-continuity/ # 爬宠家禽与沙门氏菌连续性
     ├── lice-scabies-school-shelter-infestation-continuity/ # 虱疥、学校与避难所虫害连续性
     ├── pesticide-label-exposure-poison-control-continuity/ # 农药标签、暴露与毒物控制连续性
+    ├── pollen-allergen-asthma-outdoor-activity-continuity/ # 花粉过敏、哮喘与户外活动连续性
+    ├── poison-ivy-oak-sumac-urushiol-exposure-continuity/ # 毒葛毒橡毒漆漆酚暴露连续性
+    ├── harmful-algal-bloom-cyanotoxin-water-recreation-continuity/ # 有害藻华、蓝藻毒素与水域活动连续性
+    ├── toxic-mushroom-foraging-poisoning-continuity/ # 野生蘑菇采食与中毒连续性
+    ├── poisonous-plant-childcare-household-exposure-continuity/ # 有毒植物、儿童照护与家庭暴露连续性
+    ├── invasive-species-human-health-access-continuity/ # 入侵物种、健康暴露与空间可达连续性
+    ├── mycotoxin-food-crop-storage-safety-continuity/ # 霉菌毒素、作物储存与食品安全连续性
+    ├── recreational-water-illness-beach-lake-access-continuity/ # 休闲水病、海滩湖泊与水域可达连续性
+    ├── shellfish-biotoxin-harmful-algal-bloom-food-continuity/ # 贝类毒素、有害藻华与食物连续性
+    ├── landscaping-horticulture-worker-equipment-injury-continuity/ # 园林园艺户外工人设备伤害连续性
     ├── building-fire-life-safety-codes/ # 建筑消防与生命安全规范
     ├── manufacturing-repair-capacity/ # 制造与维修能力
     ├── public-procurement-contracting-capacity/ # 公共采购与合同能力
@@ -847,6 +857,7 @@ human_infra/
 - `domains/weather-climate-observation-forecasting/` 负责天气气候观测、预报模型、气候服务、极端天气和早期预警风险输入。
 - `domains/severe-weather-watch-warning-risk-communication-continuity/`、`domains/river-flash-flood-warning-evacuation-continuity/`、`domains/hurricane-storm-surge-evacuation-shelter-continuity/`、`domains/tornado-warning-safe-room-shelter-continuity/`、`domains/winter-storm-cold-exposure-power-continuity/`、`domains/drought-water-restriction-household-health-continuity/`、`domains/landslide-mudslide-debris-flow-warning-continuity/`、`domains/wildfire-smoke-clean-air-respiratory-continuity/`、`domains/thunderstorm-lightning-outdoor-safety-continuity/` 和 `domains/coastal-flooding-erosion-inundation-continuity/` 负责强天气和自然 hazard 执行连续性，覆盖预警理解、撤离避难、就地保护、空气暴露控制、寒冷/水限制和沿海淹没，不提供实时预警、路线、现场操作、工程、医疗、保险或法律建议。
 - `domains/mosquito-bite-arbovirus-prevention-continuity/`、`domains/tick-bite-lyme-rickettsial-prevention-continuity/`、`domains/rabies-exposure-bite-pep-continuity/`、`domains/dog-bite-community-injury-prevention-continuity/`、`domains/rodent-infestation-hantavirus-plague-continuity/`、`domains/bed-bug-infestation-sleep-housing-continuity/`、`domains/venomous-bites-stings-envenomation-continuity/`、`domains/reptile-amphibian-backyard-poultry-salmonella-continuity/`、`domains/lice-scabies-school-shelter-infestation-continuity/` 和 `domains/pesticide-label-exposure-poison-control-continuity/` 负责病媒、动物接触、虫害与农药暴露执行连续性，覆盖居住、睡眠、学校、旅行、户外劳动、宠物共处和毒物控制连接，不提供诊疗、用药、急救、灭虫、农药操作、动物处置、旅行许可、法律责任或个体风险判断。
+- `domains/pollen-allergen-asthma-outdoor-activity-continuity/`、`domains/poison-ivy-oak-sumac-urushiol-exposure-continuity/`、`domains/harmful-algal-bloom-cyanotoxin-water-recreation-continuity/`、`domains/toxic-mushroom-foraging-poisoning-continuity/`、`domains/poisonous-plant-childcare-household-exposure-continuity/`、`domains/invasive-species-human-health-access-continuity/`、`domains/mycotoxin-food-crop-storage-safety-continuity/`、`domains/recreational-water-illness-beach-lake-access-continuity/`、`domains/shellfish-biotoxin-harmful-algal-bloom-food-continuity/` 和 `domains/landscaping-horticulture-worker-equipment-injury-continuity/` 负责植物、藻类、真菌与户外生物暴露执行连续性，覆盖花粉、漆酚植物、藻华毒素、野生蘑菇、有毒植物、入侵物种、霉菌毒素、休闲水病原、贝类毒素和园林园艺复合伤害，不提供诊疗、食用许可、现场鉴定、作业许可、水质判断、农药/除草剂操作或个体风险判断。
 - `domains/building-fire-life-safety-codes/` 负责建筑规范、消防规范、生命安全、疏散、烟雾报警、无障碍和韧性改造。
 - `domains/manufacturing-repair-capacity/` 负责制造、维修、维护、备件、质量、本地生产和关键设备恢复能力。
 - `domains/public-procurement-contracting-capacity/` 负责公共采购、合同、供应商管理、应急采购、透明度和交付验收。
@@ -1185,3 +1196,4 @@ human_infra/
 - 2026-07-01：新增 `docs/reference/transcendental-domain-index.md`，把有效永生 A-K 主干域整理为先验追问入口，避免重复建立同义研究域。
 - 2026-07-01：新增第一百零二波 10 个强天气与自然 hazard 执行连续性域，把官方预警到主体保护行动的转换层纳入 Human Infra。
 - 2026-07-01：新增第一百零三波 10 个病媒、动物接触、虫害与农药暴露执行连续性域，把小型生物风险和控制工具副作用纳入主体执行层。
+- 2026-07-01：新增第一百零四波 10 个植物、藻类、真菌与户外生物暴露执行连续性域，把自然生物暴露、食品/水域毒素和户外维护伤害纳入主体执行层。

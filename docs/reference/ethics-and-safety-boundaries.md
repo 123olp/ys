@@ -1328,10 +1328,12 @@ Human Infra 不能被设计成更精密的压榨系统。
 
 `mosquito-bite-arbovirus-prevention-continuity`、`tick-bite-lyme-rickettsial-prevention-continuity`、`rabies-exposure-bite-pep-continuity`、`dog-bite-community-injury-prevention-continuity`、`rodent-infestation-hantavirus-plague-continuity`、`bed-bug-infestation-sleep-housing-continuity`、`venomous-bites-stings-envenomation-continuity`、`reptile-amphibian-backyard-poultry-salmonella-continuity`、`lice-scabies-school-shelter-infestation-continuity` 和 `pesticide-label-exposure-poison-control-continuity` 关注病媒、动物接触、虫害和农药暴露如何通过居住、睡眠、学校、避难所、旅行、户外劳动、宠物共处、厨房卫生、毒物控制和公共卫生连接影响主体持续性，不是个体诊断、治疗、用药、PEP 决策、急救步骤、驱虫产品推荐、灭虫操作、农药使用、动物捕捉处置、法律责任、旅行许可或个体风险判断入口。
 
+`pollen-allergen-asthma-outdoor-activity-continuity`、`poison-ivy-oak-sumac-urushiol-exposure-continuity`、`harmful-algal-bloom-cyanotoxin-water-recreation-continuity`、`toxic-mushroom-foraging-poisoning-continuity`、`poisonous-plant-childcare-household-exposure-continuity`、`invasive-species-human-health-access-continuity`、`mycotoxin-food-crop-storage-safety-continuity`、`recreational-water-illness-beach-lake-access-continuity`、`shellfish-biotoxin-harmful-algal-bloom-food-continuity` 和 `landscaping-horticulture-worker-equipment-injury-continuity` 关注植物、藻类、真菌和户外生态暴露如何通过呼吸、皮肤、食品、水域、儿童照护、户外劳动、公共空间和恢复环境影响主体持续性，不是个体诊断、治疗、用药、急救、解毒、免疫治疗、食用许可、采食建议、植物/蘑菇鉴定、水质判断、采捕许可、设备作业、农药/除草剂操作、PPE 选型、施工流程、旅游许可或个体风险判断入口。
+
 可以做：
 
 - 整理 WHO、CDC/NIOSH、OSHA、EPA、ATSDR、NIEHS 等公开来源、暴露机制、风险变量、公共标准、监管责任和证据边界。
-- 比较噪声、光照节律、重金属、氡石棉、霉菌潮湿和病媒传播如何影响睡眠、听觉、神经发育、呼吸、免疫、住房稳定、劳动环境和公共卫生连续性。
+- 比较噪声、光照节律、重金属、氡石棉、霉菌潮湿、病媒传播、植物/藻类/真菌暴露和户外生物暴露如何影响睡眠、听觉、神经发育、呼吸、皮肤、免疫、食品安全、水域恢复、住房稳定、劳动环境和公共卫生连续性。
 - 记录来源类型、适用范围、暴露评估边界、空间不平等、误读风险、治理责任和禁止用途。
 - 将监测数据、地图、传感器、检测工具、病例数据和 AI 输出作为研究信号或资料索引，不写成个人行动、健康或法律结论。
 

@@ -615,6 +615,16 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `reptile-amphibian-backyard-poultry-salmonella-continuity/` | 爬宠和后院家禽决定家庭、学校和厨房卫生边界是否会被沙门氏菌接触穿透 |
 | `lice-scabies-school-shelter-infestation-continuity/` | 虱疥决定学校、避难所和照护机构能否低污名地维持睡眠、学习和集体参与 |
 | `pesticide-label-exposure-poison-control-continuity/` | 农药标签和毒物控制决定害虫治理工具是否会反向制造中毒和室内污染 |
+| `pollen-allergen-asthma-outdoor-activity-continuity/` | 花粉过敏原决定季节性空气是否会持续折扣呼吸、睡眠、注意力和户外行动 |
+| `poison-ivy-oak-sumac-urushiol-exposure-continuity/` | 漆酚植物决定户外空间、园艺和灾后清理是否会被皮肤炎症与停工打断 |
+| `harmful-algal-bloom-cyanotoxin-water-recreation-continuity/` | 有害藻华决定湖泊海岸是否还能作为降温、休闲、宠物和旅行恢复空间 |
+| `toxic-mushroom-foraging-poisoning-continuity/` | 野生蘑菇采食决定食物探索是否会被错误鉴定转化为高后果中毒风险 |
+| `poisonous-plant-childcare-household-exposure-continuity/` | 有毒植物决定家庭、托育、学校和宠物共处空间是否存在开放误食风险 |
+| `invasive-species-human-health-access-continuity/` | 入侵物种决定生态服务、病媒、过敏毒性、通行和维护成本是否长期重构主体环境 |
+| `mycotoxin-food-crop-storage-safety-continuity/` | 霉菌毒素决定作物储存、食品供应、饲料安全和儿童营养是否被慢性自然毒素折扣 |
+| `recreational-water-illness-beach-lake-access-continuity/` | 休闲水病原决定泳池、湖泊、海滩和戏水设施是否能稳定承担运动和降温恢复功能 |
+| `shellfish-biotoxin-harmful-algal-bloom-food-continuity/` | 贝类毒素决定海洋食物、餐饮、旅游和渔业收入是否会被 HAB 采捕关闭重定价 |
+| `landscaping-horticulture-worker-equipment-injury-continuity/` | 园林园艺复合暴露决定户外维护劳动能否支撑住房、公共空间和绿地恢复连续性 |
 | `advance-care-planning-medical-decision-continuity/` | 预先医疗照护计划决定主体失能时医疗偏好、代理人和治疗目标是否还能进入临床决策 |
 | `supported-decision-making-guardianship-rights/` | 支持性决策和监护权利决定能力变化后主体是否被帮助表达选择，还是被直接剥夺自主性 |
 | `healthcare-personal-representative-hipaa-access-continuity/` | 医疗个人代表和 HIPAA 访问边界决定照护者能否合法获得必要资料，同时不侵蚀主体隐私 |

@@ -338,6 +338,16 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 特定动物接触必须隔离沙门氏菌风险 | `reptile-amphibian-backyard-poultry-salmonella-continuity/` | 爬行动物、两栖动物、后院家禽、儿童、厨房、免疫脆弱者 | 低门槛动物互动可能穿透家庭、学校和食物卫生边界 |
 | 虱疥必须低污名地维持参与 | `lice-scabies-school-shelter-infestation-continuity/` | 头虱、体虱、疥疮、学校、避难所、长期照护、污名 | 学习、睡眠、照护和集体住宿会被瘙痒、停课和排斥打断 |
 | 农药工具必须不反向伤害主体 | `pesticide-label-exposure-poison-control-continuity/` | 农药标签、误用、儿童/宠物暴露、毒物中心、NPIC | 风险控制工具本身可能转化为中毒、室内污染和恢复环境破坏 |
+| 花粉过敏原必须被纳入季节性行动预算 | `pollen-allergen-asthma-outdoor-activity-continuity/` | 花粉、过敏性鼻炎、哮喘触发、睡眠、户外行动、出勤 | 季节性空气暴露会持续折扣呼吸、注意力、学习工作和户外恢复 |
+| 漆酚植物必须被识别为皮肤屏障风险 | `poison-ivy-oak-sumac-urushiol-exposure-continuity/` | 毒葛、毒橡、毒漆、漆酚、接触性皮炎、户外维护 | 普通植被接触可能转化为瘙痒、睡眠破坏、停工和灾后清理延误 |
+| 有害藻华必须保护水域恢复空间 | `harmful-algal-bloom-cyanotoxin-water-recreation-continuity/` | 蓝藻毒素、湖泊海岸、宠物、饮水信任、水体公告 | 水环境可能从降温和恢复空间变成毒素暴露与行动不确定性 |
+| 野生蘑菇采食必须连接毒物系统 | `toxic-mushroom-foraging-poisoning-continuity/` | 野生蘑菇、采食、误食、毒物中心、食品安全教育 | 错误鉴定会把食物探索和文化实践转化为高后果中毒风险 |
+| 有毒植物必须保护儿童和照护环境 | `poisonous-plant-childcare-household-exposure-continuity/` | 有毒植物、儿童误食、宠物暴露、托育学校、家庭植物 | 开放环境中的植物会把照护空间转化为误食和应急连接问题 |
+| 入侵物种必须作为生态暴露重构因素 | `invasive-species-human-health-access-continuity/` | 入侵物种、过敏毒性、病媒生态、通行、生态服务 | 生态改变会重定价公共空间、农业、水体、火灾燃料和健康暴露 |
+| 霉菌毒素必须进入食品供应链模型 | `mycotoxin-food-crop-storage-safety-continuity/` | 霉菌毒素、作物储存、饲料、谷物坚果、慢性暴露 | 食物和饲料储存失败会转化为慢性毒素、营养和贸易连续性问题 |
+| 休闲水域必须同时是恢复空间和病原空间 | `recreational-water-illness-beach-lake-access-continuity/` | 泳池、湖泊、海滩、休闲水病原、水质公告、关闭 | 水域活动会在降温恢复与感染/关闭摩擦之间摆动 |
+| 贝类毒素必须连接海洋生态和食物连续性 | `shellfish-biotoxin-harmful-algal-bloom-food-continuity/` | 贝类毒素、有害藻华、采捕关闭、召回、海产品供应 | 海洋生态变化会穿透渔业、餐饮、旅游和急性食品中毒边界 |
+| 园林园艺劳动必须被视为户外复合暴露系统 | `landscaping-horticulture-worker-equipment-injury-continuity/` | 草坪树木维护、设备伤害、热、噪声、农药、植物、病媒 | 公共绿地和住房环境维护依赖可持续、安全且可恢复的户外劳动 |
 | 医疗偏好必须可在失能时传递 | `advance-care-planning-medical-decision-continuity/` | advance directives、health care proxy、治疗目标、偏好沟通 | 主体无法表达时，医疗团队和家属只能猜测偏好，导致过度、过少或错位治疗 |
 | 决策能力变化后权利必须被支持 | `supported-decision-making-guardianship-rights/` | 支持性决策、监护、最低限制替代、权利监督 | 保护安排可能变成失权、隔离、控制和剥夺主体参与 |
 | 医疗信息访问必须在授权边界内连续 | `healthcare-personal-representative-hipaa-access-continuity/` | HIPAA personal representative、照护者访问、医疗记录、隐私边界 | 没有授权访问会让药物、结果、预约和转诊断裂；越权访问会侵蚀隐私 |
