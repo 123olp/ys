@@ -127,6 +127,16 @@ human_infra/
     ├── social-communication-pragmatic-language-continuity/ # 社会沟通与语用语言连续性
     ├── cognitive-communication-disorder-executive-language-continuity/ # 认知沟通与执行语言连续性
     ├── swallowing-dysphagia-aspiration-nutrition/ # 吞咽、误吸与营养连续性
+    ├── oropharyngeal-dysphagia-swallow-safety-continuity/ # 口咽吞咽安全连续性
+    ├── esophageal-dysphagia-motility-obstruction-continuity/ # 食管吞咽通道连续性
+    ├── aspiration-pneumonia-airway-protection-continuity/ # 误吸肺炎与气道保护连续性
+    ├── choking-foreign-body-airway-risk-continuity/ # 窒息异物气道风险连续性
+    ├── texture-modified-diet-thickened-liquid-continuity/ # 质地调整饮食与稠液连续性
+    ├── enteral-feeding-tube-nutrition-continuity/ # 管饲营养通道连续性
+    ├── pediatric-feeding-swallowing-development-continuity/ # 儿童摄食吞咽发育连续性
+    ├── post-stroke-dysphagia-screening-recovery-continuity/ # 卒中后吞咽筛查恢复连续性
+    ├── neurodegenerative-dysphagia-nutrition-continuity/ # 神经退行性吞咽营养连续性
+    ├── feeding-assistance-mealtime-dignity-continuity/ # 进食协助与用餐尊严连续性
     ├── smell-taste-chemosensory-continuity/ # 嗅味觉与化学感知连续性
     ├── peripheral-neuropathy-somatosensory-continuity/ # 周围神经病变与躯体感觉连续性
     ├── space-weather-geomagnetic-storm-resilience/ # 空间天气与地磁暴韧性
@@ -862,7 +872,8 @@ human_infra/
 - `domains/hearing-auditory-communication-continuity/` 负责听觉沟通总框架；`domains/age-related-hearing-loss-hearing-aid-continuity/`、`domains/noise-induced-hearing-loss-prevention-continuity/`、`domains/tinnitus-sound-tolerance-sleep-continuity/`、`domains/otitis-media-child-hearing-development-continuity/`、`domains/sudden-hearing-loss-urgent-referral-continuity/`、`domains/cochlear-implant-communication-continuity/`、`domains/newborn-hearing-screening-language-development-continuity/`、`domains/auditory-processing-listening-effort-continuity/`、`domains/hearing-assistive-devices-alerting-access-continuity/` 和 `domains/captions-relay-service-communication-access-continuity/` 负责老年听损、噪声听损、耳鸣、儿童中耳炎、突发听损、人工耳蜗、新生儿听筛、听觉处理、听觉辅助设备和字幕中继服务这些听觉沟通下层失效模式。
 - `domains/vestibular-balance-spatial-orientation/` 负责前庭平衡总框架；`domains/bppv-positional-vertigo-continuity/`、`domains/menieres-disease-episodic-vertigo-continuity/`、`domains/vestibular-neuritis-labyrinthitis-acute-vertigo-continuity/`、`domains/persistent-postural-perceptual-dizziness-continuity/`、`domains/vestibular-migraine-dizziness-sensory-load-continuity/`、`domains/bilateral-vestibular-hypofunction-gaze-gait-stability-continuity/`、`domains/vestibular-rehabilitation-balance-compensation-continuity/`、`domains/gait-balance-assessment-fall-screening-continuity/`、`domains/motion-sickness-transport-virtual-environment-tolerance-continuity/` 和 `domains/vestibular-ototoxicity-medication-chemical-risk-continuity/` 负责 BPPV、梅尼埃病、前庭神经炎/迷路炎、PPPD、前庭性偏头痛、双侧前庭低下、前庭康复、步态平衡筛查、运动病/虚拟环境耐受和耳毒性前庭风险这些空间行动下层失效模式。
 - `domains/speech-language-communication-continuity/` 负责言语语言沟通总框架；`domains/aphasia-language-access-recovery-continuity/`、`domains/dysarthria-speech-intelligibility-continuity/`、`domains/apraxia-of-speech-motor-planning-continuity/`、`domains/voice-disorders-phonation-communication-continuity/`、`domains/stuttering-fluency-participation-continuity/`、`domains/developmental-language-disorder-child-communication-continuity/`、`domains/speech-sound-disorder-articulation-phonology-continuity/`、`domains/augmentative-alternative-communication-aac-continuity/`、`domains/social-communication-pragmatic-language-continuity/` 和 `domains/cognitive-communication-disorder-executive-language-continuity/` 负责失语、构音障碍、言语失用、嗓音障碍、口吃、发展性语言障碍、语音障碍、AAC、社会语用沟通和认知沟通这些表达理解执行层失效模式。
-- `domains/swallowing-dysphagia-aspiration-nutrition/`、`domains/smell-taste-chemosensory-continuity/` 和 `domains/peripheral-neuropathy-somatosensory-continuity/` 负责吞咽摄食、化学感知和身体边界反馈的机制、证据、变量和禁止用途。
+- `domains/swallowing-dysphagia-aspiration-nutrition/` 负责吞咽、误吸与营养总框架；`domains/oropharyngeal-dysphagia-swallow-safety-continuity/`、`domains/esophageal-dysphagia-motility-obstruction-continuity/`、`domains/aspiration-pneumonia-airway-protection-continuity/`、`domains/choking-foreign-body-airway-risk-continuity/`、`domains/texture-modified-diet-thickened-liquid-continuity/`、`domains/enteral-feeding-tube-nutrition-continuity/`、`domains/pediatric-feeding-swallowing-development-continuity/`、`domains/post-stroke-dysphagia-screening-recovery-continuity/`、`domains/neurodegenerative-dysphagia-nutrition-continuity/` 和 `domains/feeding-assistance-mealtime-dignity-continuity/` 负责口咽吞咽、食管吞咽、误吸肺炎、窒息、质地饮食、管饲、儿童摄食、卒中吞咽、神经退行性吞咽和进食协助这些吞咽摄食执行层失效模式。
+- `domains/smell-taste-chemosensory-continuity/` 和 `domains/peripheral-neuropathy-somatosensory-continuity/` 负责化学感知和身体边界反馈的机制、证据、变量和禁止用途。
 - `domains/space-weather-geomagnetic-storm-resilience/`、`domains/planetary-defense-near-earth-object-risk/`、`domains/volcanic-ashfall-geohazard-continuity/`、`domains/earthquake-seismic-risk-built-environment-continuity/`、`domains/tsunami-warning-coastal-evacuation-continuity/` 和 `domains/extreme-heat-cooling-public-health-continuity/` 负责空间天气、行星防御、火山灰、地震、海啸和极端高温这些行星、地球物理与极端热风险的机制、预警、基础设施失效和禁止用途。
 - `domains/noise-exposure-acoustic-environment-continuity/`、`domains/light-exposure-circadian-environment-continuity/`、`domains/lead-heavy-metal-exposure-control/`、`domains/radon-asbestos-indoor-hazard-continuity/`、`domains/mold-dampness-indoor-biological-exposure/` 和 `domains/vector-borne-disease-environmental-control/` 负责噪声、光照节律、铅与重金属、氡与石棉、霉菌潮湿和病媒传播这些慢性环境暴露与日常损耗条件的机制、证据、变量和禁止用途。
 - `domains/advance-care-planning-medical-decision-continuity/`、`domains/supported-decision-making-guardianship-rights/`、`domains/healthcare-personal-representative-hipaa-access-continuity/`、`domains/financial-fiduciary-power-of-attorney-continuity/`、`domains/representative-payee-benefits-management-continuity/` 和 `domains/trust-estate-affairs-succession-continuity/` 负责预先医疗照护计划、支持性决策、医疗个人代表、财务受托、代表收款人和事务继承这些决策权、代理权与受托连续性条件。
@@ -989,6 +1000,7 @@ human_infra/
 - 2026-07-01：新增第九十波 10 个听觉沟通执行连续性域，覆盖年龄相关听损、噪声性听损、耳鸣、儿童中耳炎、突发听损、人工耳蜗、新生儿听筛、听觉处理、听觉辅助设备和字幕/中继沟通访问。
 - 2026-07-01：新增第九十一波 10 个前庭、平衡与空间定向执行连续性域，覆盖 BPPV、梅尼埃病、前庭神经炎/迷路炎、PPPD、前庭性偏头痛、双侧前庭低下、前庭康复、步态平衡筛查、运动病/虚拟环境耐受和耳毒性前庭风险。
 - 2026-07-01：新增第九十二波 10 个言语语言沟通执行连续性域，覆盖失语、构音障碍、言语失用、嗓音障碍、口吃、发展性语言障碍、语音障碍、AAC、社会语用沟通和认知沟通障碍。
+- 2026-07-01：新增第九十三波 10 个吞咽、摄食与营养入口执行连续性域，覆盖口咽吞咽、食管吞咽、误吸肺炎、窒息、质地调整饮食/稠液、管饲、儿童摄食吞咽、卒中后吞咽、神经退行性吞咽和进食协助/用餐尊严。
 - 2026-06-30：新增农业生产、土壤土地、水资源、生态系统服务、野火韧性和物流冷链六个研究域，补齐初级生产、自然系统与物理流通底座。
 - 2026-06-30：新增海岸海洋蓝色经济、渔业水生食物、防洪工程安全、公共工程资产管理、城市土地使用规划和城市绿蓝基础设施六个研究域，补齐自然-工程-城市交界底座。
 - 2026-06-30：新增电网可靠性、水务污水公用事业、燃料热能服务、公共交通运营、关键基础设施生命线互依赖和公用事业可负担性断供保护六个研究域，补齐公用事业生命线连续性底座。

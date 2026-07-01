@@ -1,0 +1,45 @@
+# Texture Modified Diet Thickened Liquid Continuity
+
+Texture modified diet thickened liquid continuity studies standardized food texture and liquid thickness as a communication interface among swallowing safety, nutrition, hydration, kitchen operations, care teams, and lived acceptability.
+
+核心问题：
+
+> 质地不是食谱细节，而是吞咽风险、营养水分、厨房执行和进食尊严之间的共享语言。
+
+## 先验位置
+
+```text
+主体持续性最大化
+  -> 食物和液体必须以主体可安全处理且可接受的形式进入身体
+  -> 质地与稠度改变吞咽负荷、摄入量、享受度和照护执行
+  -> 标准缺失会造成厨房、护理、家庭和临床之间的误配
+  -> 因而质地标准是吞咽安全和营养可及之间的接口基础设施
+```
+
+## 关注对象
+
+- 食物质地、液体稠度、IDDSI 等级、标签、厨房执行、照护沟通、摄入量、脱水风险和进食满意度。
+- 与 `oropharyngeal-dysphagia-swallow-safety-continuity/` 的关系：口咽域关注机制；本域关注质地/稠度作为执行接口。
+- 与 `food-safety-continuity`、`prepared-food-restaurant-cafeteria-safety-access-continuity/` 的关系：食品安全域关注安全供应；本域关注吞咽适配表达。
+
+## Human Infra 模型链路
+
+```text
+标准化质地 / 厨房执行 / 标签 / 伙伴沟通 T
+  -> 改变吞咽负荷、摄入量、补水、执行一致性和接受度变量 X
+  -> 改变误吸暴露、营养状态、尊严和照护负担状态 S
+  -> 改变脱水、营养不足、误配、住院和回避进食风险 λ(t)
+  -> 影响恢复能力、有效时间和未来选择权
+```
+
+## 非目标
+
+- 不提供饮食质地调整、稠化剂使用、个人菜单、过敏处理、吞咽训练或厨房操作建议。
+- 不根据个人吞咽表现、年龄、病种或检查结果推荐 IDDSI 等级。
+- 不替代言语语言治疗、营养、护理、食品安全、餐饮或临床服务。
+
+## Source Signals
+
+- IDDSI framework and testing resources。
+- ASHA adult dysphagia and pediatric feeding/swallowing materials。
+- Long-term-care and nutrition safety literature as implementation context。

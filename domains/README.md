@@ -348,6 +348,16 @@
 - `social-communication-pragmatic-language-continuity/`：社会沟通与语用语言连续性，整理会话轮替、语境理解、非字面语言和关系参与。
 - `cognitive-communication-disorder-executive-language-continuity/`：认知沟通与执行语言连续性，整理注意记忆、组织表达、话题维持和复杂沟通任务。
 - `swallowing-dysphagia-aspiration-nutrition/`：吞咽、误吸与营养连续性，整理吞咽安全、气道保护、营养水分、进食尊严和照护负担。
+- `oropharyngeal-dysphagia-swallow-safety-continuity/`：口咽吞咽安全连续性，整理气道保护、残留、咳嗽反应、进食效率和疲劳。
+- `esophageal-dysphagia-motility-obstruction-continuity/`：食管吞咽通道连续性，整理食管运动、狭窄梗阻、反流负担、进食回避和体重风险。
+- `aspiration-pneumonia-airway-protection-continuity/`：误吸肺炎与气道保护连续性，整理误吸暴露、口腔负荷、肺部感染和住院风险。
+- `choking-foreign-body-airway-risk-continuity/`：窒息异物气道风险连续性，整理食物/异物阻塞、公共餐食、照护监督和时间敏感后果。
+- `texture-modified-diet-thickened-liquid-continuity/`：质地调整饮食与稠液连续性，整理 IDDSI、食物质地、液体稠度、厨房执行和接受度。
+- `enteral-feeding-tube-nutrition-continuity/`：管饲营养通道连续性，整理非口服营养、管路设备、配方供应、护理负担和意愿边界。
+- `pediatric-feeding-swallowing-development-continuity/`：儿童摄食吞咽发育连续性，整理早期摄食、口腔运动、感官负担、增长和家庭压力。
+- `post-stroke-dysphagia-screening-recovery-continuity/`：卒中后吞咽筛查恢复连续性，整理卒中后筛查、误吸、营养水分、转介和恢复轨迹。
+- `neurodegenerative-dysphagia-nutrition-continuity/`：神经退行性吞咽营养连续性，整理慢性吞咽下降、体重、误吸、管饲决策和照护负担。
+- `feeding-assistance-mealtime-dignity-continuity/`：进食协助与用餐尊严连续性，整理喂食协助、用餐环境、辅助工具、长期照护和尊严。
 - `smell-taste-chemosensory-continuity/`：嗅味觉与化学感知连续性，整理嗅觉、味觉、危险气味识别、食欲、营养和生活质量。
 - `peripheral-neuropathy-somatosensory-continuity/`：周围神经病变与躯体感觉连续性，整理触觉、痛觉、本体感觉、足部风险和身体边界反馈。
 - `space-weather-geomagnetic-storm-resilience/`：空间天气与地磁暴韧性，整理太阳活动、电网、卫星、通信、导航和时间同步风险。

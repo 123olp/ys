@@ -491,6 +491,16 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `social-communication-pragmatic-language-continuity/` | 社会语用沟通决定主体能否在语境、轮替、非字面语言和会话修复中维持关系与协作 |
 | `cognitive-communication-disorder-executive-language-continuity/` | 认知沟通障碍决定注意、记忆、组织和执行语言是否能支撑复杂会话、照护参与和任务复盘 |
 | `swallowing-dysphagia-aspiration-nutrition/` | 吞咽安全决定营养水分能否进入身体而不转化为误吸、窒息、肺炎和尊严损害 |
+| `oropharyngeal-dysphagia-swallow-safety-continuity/` | 口咽吞咽决定食物、液体、药物和分泌物能否安全通过口咽阶段而不进入气道 |
+| `esophageal-dysphagia-motility-obstruction-continuity/` | 食管吞咽决定入口后的通道、运动、梗阻和反流是否会持续压缩进食与体重 |
+| `aspiration-pneumonia-airway-protection-continuity/` | 误吸肺炎风险决定吞咽、口腔负荷、咳嗽防御和肺部感染是否会把营养入口转成住院风险 |
+| `choking-foreign-body-airway-risk-continuity/` | 窒息与异物气道阻塞决定餐食场景中的低频高后果风险是否被环境和照护前移治理 |
+| `texture-modified-diet-thickened-liquid-continuity/` | 质地调整饮食和稠液决定厨房、照护、标签和摄入量是否能形成一致执行接口 |
+| `enteral-feeding-tube-nutrition-continuity/` | 管饲营养决定口服不足或不可用时，非口服营养入口、设备供应和意愿边界是否稳定 |
+| `pediatric-feeding-swallowing-development-continuity/` | 儿童摄食吞咽决定口腔运动、感官负担、增长、家庭执行和学校餐食是否支撑发育窗口 |
+| `post-stroke-dysphagia-screening-recovery-continuity/` | 卒中后吞咽决定急性筛查、转介、误吸肺炎、营养水分和恢复轨迹是否不断裂 |
+| `neurodegenerative-dysphagia-nutrition-continuity/` | 神经退行性吞咽决定慢性下降中的营养、误吸、体重、管饲决策和照护负担是否被长期规划 |
+| `feeding-assistance-mealtime-dignity-continuity/` | 进食协助决定长期照护和家庭餐食能否在维持摄入的同时保留节奏、选择、社交和尊严 |
 | `smell-taste-chemosensory-continuity/` | 嗅味觉和化学感知决定危险气味识别、食欲、营养、生活质量和低可见安全反馈 |
 | `peripheral-neuropathy-somatosensory-continuity/` | 周围神经和躯体感觉决定身体边界、保护性痛觉、步态反馈、足部风险和精细操作是否可用 |
 | `space-weather-geomagnetic-storm-resilience/` | 空间天气和地磁暴决定电网、卫星、通信、导航和时间同步是否会被太阳活动级联扰动 |
@@ -861,6 +871,7 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | NIDCD aphasia resources | 提示语言表达和理解能力决定主体偏好、同意、照护参与和社会角色能否被表达 |
 | NIDCD / ASHA speech-language resources | 提示言语语言总域需要拆成失语、构音障碍、言语失用、嗓音障碍、口吃、发展性语言障碍、语音障碍、AAC、社会语用沟通和认知沟通这些执行层 |
 | NIDCD dysphagia resources | 提示吞咽安全把营养、水分、气道保护、误吸风险和进食尊严连接起来 |
+| NIDCD / ASHA / IDDSI / AHA-ASA / ASPEN-ESPEN / CMS swallowing feeding resources | 提示吞咽总域需要拆成口咽、食管、误吸肺炎、窒息、质地饮食、管饲、儿童摄食、卒中后吞咽、神经退行性吞咽和进食协助这些执行层 |
 | NIDCD smell and taste disorder resources | 提示嗅味觉支撑危险气味识别、食欲、营养和生活质量 |
 | NINDS / NIDDK peripheral neuropathy resources | 提示周围神经和躯体感觉把身体边界、步态、足部风险、疼痛和伤口发现连接起来 |
 | NOAA / NASA space weather resources | 提示太阳活动会把外部天体物理事件转化为电网、卫星、通信、导航和时间同步风险 |
@@ -2051,6 +2062,15 @@ Source links:
 - https://www.asha.org/practice-portal/clinical-topics/social-communication-disorder/
 - https://www.asha.org/practice-portal/clinical-topics/cognitive-communication/
 - https://www.nidcd.nih.gov/health/dysphagia
+- https://www.asha.org/practice-portal/clinical-topics/adult-dysphagia/
+- https://www.asha.org/practice-portal/clinical-topics/pediatric-feeding-and-swallowing/
+- https://iddsi.org/
+- https://www.heart.org/-/media/data-import/downloadables/5/5/7/dysphagia-ucm_497694.pdf
+- https://nutritioncare.org/clinical-resources/guidelines-standards/
+- https://nutritioncare.org/clinical-resources/enteral-nutrition/
+- https://www.cms.gov/regulations-and-guidance/guidance/eog/downloads/eo-guidance-10.pdf
+- https://medlineplus.gov/swallowingdisorders.html
+- https://medlineplus.gov/choking.html
 - https://www.nidcd.nih.gov/health/smell-disorders
 - https://www.nidcd.nih.gov/health/taste-disorders
 - https://www.ninds.nih.gov/health-information/disorders/peripheral-neuropathy

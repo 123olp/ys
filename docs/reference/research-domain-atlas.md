@@ -139,6 +139,16 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 社会语用必须支撑关系语境 | `social-communication-pragmatic-language-continuity/` | 语境、轮替、非字面语言、会话修复 | 听得见也会说但读不懂关系规则时，协作、教育和社会参与会持续受损 |
 | 认知沟通必须支撑复杂会话 | `cognitive-communication-disorder-executive-language-continuity/` | 注意、记忆、组织、执行语言 | 脑损伤或神经疾病后的组织表达断点会削弱计划、解释、复盘和自主参与 |
 | 吞咽必须保护气道和营养 | `swallowing-dysphagia-aspiration-nutrition/` | 吞咽安全、误吸、营养水分、饮食尊严 | 进食从恢复输入变成窒息、肺炎、营养不足和尊严损害 |
+| 口咽吞咽必须保护气道 | `oropharyngeal-dysphagia-swallow-safety-continuity/` | 口咽控制、残留、咳嗽反应、进食效率 | 入口阶段失效会让水分、食物和药物变成误吸、窒息和疲劳负担 |
+| 食管通道必须保持可通过 | `esophageal-dysphagia-motility-obstruction-continuity/` | 食管运动、狭窄梗阻、反流、体重风险 | 通道失效会把进食变成疼痛、回避、营养不足和诊疗断点 |
+| 误吸肺炎风险必须前移治理 | `aspiration-pneumonia-airway-protection-continuity/` | 误吸、气道保护、口腔负荷、肺部感染 | 食物、液体或分泌物进入气道会把营养入口变成住院和死亡风险 |
+| 窒息风险必须作为高后果边界 | `choking-foreign-body-airway-risk-continuity/` | 异物气道阻塞、餐食场景、监督、时间敏感 | 短窗口气道阻塞会让一次进食变成不可逆风险事件 |
+| 质地稠度必须成为共享接口 | `texture-modified-diet-thickened-liquid-continuity/` | IDDSI、质地、稠液、标签、接受度 | 厨房、照护和临床语言不一致会造成误供、摄入不足和尊严损害 |
+| 管饲营养必须维护外部入口 | `enteral-feeding-tube-nutrition-continuity/` | 非口服营养、管路、泵、配方、感染风险 | 口服失败后，外部营养入口也会受到供应、设备、感染和意愿边界约束 |
+| 儿童摄食吞咽必须保护发育窗口 | `pediatric-feeding-swallowing-development-continuity/` | 口腔运动、感官负担、增长、家庭压力 | 儿童摄食断点会影响增长、学习、家庭执行和长期饮食能力 |
+| 卒中后吞咽必须接上筛查恢复 | `post-stroke-dysphagia-screening-recovery-continuity/` | 卒中筛查、误吸、肺炎、转介、恢复轨迹 | 急性脑灌注事件后的吞咽断点会放大肺炎、营养和康复失败 |
+| 神经退行性吞咽必须长期规划 | `neurodegenerative-dysphagia-nutrition-continuity/` | 退行病程、体重、误吸、管饲决策、照护负担 | 慢性下降会把饮食、药物、沟通和照护选择推向连续重决策 |
+| 进食协助必须保留用餐尊严 | `feeding-assistance-mealtime-dignity-continuity/` | 协助喂食、长期照护、辅助工具、社交餐食 | 进食不是单纯摄入，协助失败会同时损害营养、社交、节奏和主体尊严 |
 | 化学感知必须支撑安全与食欲 | `smell-taste-chemosensory-continuity/` | 嗅觉、味觉、气味危险信号、食欲、营养 | 烟气、燃气、腐败食品识别下降，食欲、生活质量和营养受损 |
 | 躯体感觉必须反馈身体边界 | `peripheral-neuropathy-somatosensory-continuity/` | 周围神经、触觉、痛觉、本体感觉、足部风险 | 损伤不可感、步态不稳、跌倒、溃疡和精细操作反馈丧失 |
 | 记忆可审查地处理 | `memory-editing/` | 记忆痕迹、人格连续性、同意 | 操控、伪记忆、不可逆损伤 |

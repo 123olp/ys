@@ -529,6 +529,16 @@ flowchart TD
     H --> SCPL[social-communication-pragmatic-language-continuity<br/>社会沟通 / 语用语言]
     H --> CCDEL[cognitive-communication-disorder-executive-language-continuity<br/>认知沟通 / 执行语言]
     H --> SDAN[swallowing-dysphagia-aspiration-nutrition<br/>吞咽 / 误吸营养]
+    H --> ODSSC[oropharyngeal-dysphagia-swallow-safety-continuity<br/>口咽吞咽 / 安全]
+    H --> EDMOC[esophageal-dysphagia-motility-obstruction-continuity<br/>食管吞咽 / 通道]
+    H --> APAPC[aspiration-pneumonia-airway-protection-continuity<br/>误吸肺炎 / 气道保护]
+    H --> CFARC[choking-foreign-body-airway-risk-continuity<br/>窒息 / 异物气道]
+    H --> TMDTL[texture-modified-diet-thickened-liquid-continuity<br/>质地饮食 / 稠液]
+    H --> EFTNC[enteral-feeding-tube-nutrition-continuity<br/>管饲 / 营养通道]
+    H --> PFSWDC[pediatric-feeding-swallowing-development-continuity<br/>儿童摄食 / 吞咽发育]
+    H --> PSDSR[post-stroke-dysphagia-screening-recovery-continuity<br/>卒中吞咽 / 筛查恢复]
+    H --> NDNC[neurodegenerative-dysphagia-nutrition-continuity<br/>神经退行 / 吞咽营养]
+    H --> FAMD[feeding-assistance-mealtime-dignity-continuity<br/>进食协助 / 尊严]
     H --> STCC[smell-taste-chemosensory-continuity<br/>嗅味觉 / 化学感知]
     H --> PNSC[peripheral-neuropathy-somatosensory-continuity<br/>周围神经 / 躯体感觉]
     H --> SWGSR[space-weather-geomagnetic-storm-resilience<br/>空间天气 / 地磁暴韧性]
@@ -906,6 +916,16 @@ flowchart TD
 | [Social Communication Pragmatic Language Continuity](domains/social-communication-pragmatic-language-continuity/README.md) | 社会沟通、语用语言、会话修复、语境理解和关系参与 | 把语言形式到关系参与之间的语境接口纳入服务与社会参与模型 | 不提供诊断、自闭症判断、训练、心理干预、学校资格或便利判断 |
 | [Cognitive Communication Disorder Executive Language Continuity](domains/cognitive-communication-disorder-executive-language-continuity/README.md) | 认知沟通、注意记忆、组织表达、话题维持和执行语言 | 把注意、记忆、执行控制和语言互动交叉失效纳入复杂任务沟通模型 | 不提供诊断、病因、认知训练、康复计划、工作许可或法律能力判断 |
 | [Swallowing Dysphagia Aspiration Nutrition](domains/swallowing-dysphagia-aspiration-nutrition/README.md) | 吞咽障碍、误吸、窒息、营养水分入口、进食尊严和照护负担 | 把吞咽安全作为营养进入、气道保护、恢复能力和生活尊严的交叉条件 | 不提供吞咽诊断、检查解释、饮食质地调整、管饲、护理、急救或康复建议 |
+| [Oropharyngeal Dysphagia Swallow Safety Continuity](domains/oropharyngeal-dysphagia-swallow-safety-continuity/README.md) | 口咽吞咽、气道保护、残留、咳嗽反应、进食效率和疲劳 | 把入口阶段吞咽安全作为营养水分、药物进入和呼吸保护的执行层 | 不提供诊断、检查解释、代偿动作、饮食调整、训练、急救或风险判断 |
+| [Esophageal Dysphagia Motility Obstruction Continuity](domains/esophageal-dysphagia-motility-obstruction-continuity/README.md) | 食管吞咽、运动障碍、狭窄梗阻、反流负担、进食回避和体重风险 | 把吞下后的食管通道纳入营养进入、疼痛负担和诊疗连续性模型 | 不提供食管诊断、内镜解释、药物、手术、饮食调整或急诊判断 |
+| [Aspiration Pneumonia Airway Protection Continuity](domains/aspiration-pneumonia-airway-protection-continuity/README.md) | 误吸、口腔负荷、气道保护、咳嗽防御、肺部感染和住院风险 | 把吞咽入口失效连接到呼吸安全、肺部感染和恢复能力模型 | 不提供肺炎诊断、抗生素、氧疗、急救、口腔护理处方或风险评级 |
+| [Choking Foreign Body Airway Risk Continuity](domains/choking-foreign-body-airway-risk-continuity/README.md) | 食物/异物气道阻塞、儿童/老年风险、公共餐食环境和照护监督 | 把窒息作为进食入口与急性救援之间的高后果边界 | 不提供急救动作、食物切割、吞咽训练、现场处置、责任或风险判断 |
+| [Texture Modified Diet Thickened Liquid Continuity](domains/texture-modified-diet-thickened-liquid-continuity/README.md) | 食物质地、液体稠度、IDDSI、标签、厨房执行、摄入量和接受度 | 把质地标准作为吞咽安全、营养水分、厨房执行和尊严之间的共享语言 | 不提供个人饮食质地、稠化剂、菜单、训练、过敏处理或 IDDSI 等级建议 |
+| [Enteral Feeding Tube Nutrition Continuity](domains/enteral-feeding-tube-nutrition-continuity/README.md) | 管饲、配方供应、泵、管路维护、感染、堵管、照护负担和意愿决策 | 把非口服营养通道作为吞咽失败后的外部入口基础设施 | 不提供置管、配方、速率、护理、并发症处理、伦理决策或管饲建议 |
+| [Pediatric Feeding Swallowing Development Continuity](domains/pediatric-feeding-swallowing-development-continuity/README.md) | 儿童摄食、吞咽、口腔运动、感官负担、增长、家庭压力和学校餐食 | 把生命早期摄食吞咽纳入发育、学习、家庭恢复和长期能力积累模型 | 不提供儿童诊断、喂养计划、食物引入、质地调整、学校资格或责任判断 |
+| [Post Stroke Dysphagia Screening Recovery Continuity](domains/post-stroke-dysphagia-screening-recovery-continuity/README.md) | 卒中后吞咽筛查、误吸、肺炎、营养水分、康复转介和恢复轨迹 | 把卒中急性恢复期中的吞咽入口纳入肺部风险和康复参与模型 | 不提供卒中急救、筛查操作、训练、饮食调整、转诊判断、影像/量表解释或预后 |
+| [Neurodegenerative Dysphagia Nutrition Continuity](domains/neurodegenerative-dysphagia-nutrition-continuity/README.md) | 神经退行性吞咽下降、营养水分、误吸、体重、管饲决策和照护负担 | 把慢性神经疾病中的吞咽曲线纳入长期营养、呼吸、沟通和意愿决策模型 | 不提供疾病诊断、训练、饮食调整、管饲决策、药物、预后或法律能力判断 |
+| [Feeding Assistance Mealtime Dignity Continuity](domains/feeding-assistance-mealtime-dignity-continuity/README.md) | 进食协助、用餐时间、姿势支持、辅助餐具、长期照护和进食尊严 | 把营养摄入转化为可承受、可持续、可尊严的日常主体活动 | 不提供喂食技巧、姿势、速度、培训方案、护理处置、机构合规或虐待判定 |
 | [Smell Taste Chemosensory Continuity](domains/smell-taste-chemosensory-continuity/README.md) | 嗅觉、味觉、化学感知、危险气味识别、食欲、营养和生活质量 | 把化学感知作为危险预警、食欲营养、情绪体验和生活质量反馈层 | 不提供嗅味觉诊断、感染/神经判断、治疗、训练、补剂、药物或个体风险结论 |
 | [Peripheral Neuropathy Somatosensory Continuity](domains/peripheral-neuropathy-somatosensory-continuity/README.md) | 周围神经病变、触觉、痛觉、本体感觉、足部风险和精细操作反馈 | 把躯体感觉作为身体边界、避伤、步态、工具操作和皮肤保护反馈层 | 不提供神经病变诊断、检查解释、足部处置、疼痛治疗、药物、补剂或康复建议 |
 | [Space Weather Geomagnetic Storm Resilience](domains/space-weather-geomagnetic-storm-resilience/README.md) | 太阳活动、地磁暴、电网、卫星、通信、导航和时间同步 | 把空间天气作为数字、电力和定位基础设施的低频高后果外部风险 | 不提供实时空间天气操作、电网/卫星/航空/金融风险处置或投资建议 |
