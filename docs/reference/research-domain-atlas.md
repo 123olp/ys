@@ -923,6 +923,12 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 工业车辆必须隔离人车风险 | `powered-industrial-truck-forklift-safety-continuity/` | powered industrial trucks、forklifts、pedestrian separation、load stability、tip-over、blind spots | 仓储和物料搬运中的车辆风险会造成压伤、碰撞、倾翻和供应链执行中断 |
 | 受限空间必须控制进入与退出 | `confined-space-entry-atmospheric-hazard-continuity/` | confined spaces、oxygen deficiency、toxic atmosphere、flammable atmosphere、attendant、rescue | 不可见大气危害和退出失败会在短时间内跨过可逆窗口并放大救援风险 |
 | 锐器和血源性暴露必须可报告可随访 | `bloodborne-pathogens-sharps-injury-worker-continuity/` | bloodborne pathogens、needlesticks、sharps injuries、exposure reporting、follow-up | 护理、清洁、实验和公共服务任务中的锐器暴露会转化为感染风险、焦虑、停工和职业连续性损伤 |
+| 地面开挖必须防止坍塌 | `trenching-excavation-cave-in-worker-continuity/` | trenching、excavation、cave-in、soil collapse、underground utilities、rescue latency | 沟槽坍塌会把地下基础设施任务快速转化为窒息、挤压伤、死亡和家庭恢复成本 |
+| 悬吊载荷必须可控可隔离 | `crane-derrick-hoist-rigging-suspended-load-continuity/` | cranes、derricks、hoists、rigging、suspended loads、signal communication | 起重吊装失败会把施工制造任务转化为击打、压伤、坠落物和长期劳动能力损失 |
+| 职业电能必须防止电击与闪爆 | `occupational-electrical-shock-arc-flash-continuity/` | electrical shock、electrocution、arc flash、arc blast、temporary power、overhead lines | 电气任务失败会在秒级窗口造成心脏骤停、烧伤、爆炸创伤和死亡 |
+| 热作业必须控制烟尘火灾 | `welding-cutting-brazing-fume-fire-continuity/` | welding、cutting、brazing、metal fumes、hot work、fire、explosion | 焊接切割失败会把技能生产转换成吸入损伤、烧伤、火灾爆炸和慢性肺部负担 |
+| 硅尘暴露必须降低长期肺部负担 | `respirable-crystalline-silica-dust-worker-continuity/` | respirable crystalline silica、construction dust、silicosis、COPD、lung cancer、kidney disease | 含硅材料作业可把短期收入路径转化为长期职业病、失能和健康寿命损失 |
+| 拆除作业必须防止结构失稳 | `demolition-structural-collapse-debris-continuity/` | demolition、deconstruction、structural collapse、falling debris、hidden utilities、adjacent structures | 拆除失控会把建成环境更新过程转化为坍塌、碎片击打、暴露、火灾和社区风险 |
 | 工作负荷必须可测量 | `cognitive-load-workload-measurement-continuity/` | NASA-TLX、mental workload、工作记忆、任务复杂度、时间压力 | 认知过载会削弱注意、判断、学习和恢复，使任务失败被误归咎于个人能力 |
 | 疲劳风险必须被治理 | `fatigue-risk-alertness-continuity/` | 长工时、夜班、sleep debt、alertness、恢复窗口 | 疲劳降低警觉和判断，增加事故、医疗错误、驾驶风险和长期恢复债务 |
 | 情境感知必须可维持 | `situational-awareness-decision-environment-continuity/` | situation awareness、sensemaking、共享心智模型、态势显示、决策支持 | 主体不知道发生了什么、将会怎样和谁负责时，行动会变成盲目反应 |
@@ -1858,6 +1864,12 @@ risk-engineering
   -> powered-industrial-truck-forklift-safety-continuity
   -> confined-space-entry-atmospheric-hazard-continuity
   -> bloodborne-pathogens-sharps-injury-worker-continuity
+  -> trenching-excavation-cave-in-worker-continuity
+  -> crane-derrick-hoist-rigging-suspended-load-continuity
+  -> occupational-electrical-shock-arc-flash-continuity
+  -> welding-cutting-brazing-fume-fire-continuity
+  -> respirable-crystalline-silica-dust-worker-continuity
+  -> demolition-structural-collapse-debris-continuity
   -> cognitive-load-workload-measurement-continuity
   -> fatigue-risk-alertness-continuity
   -> situational-awareness-decision-environment-continuity

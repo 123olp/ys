@@ -646,6 +646,12 @@ human_infra/
     ├── powered-industrial-truck-forklift-safety-continuity/ # 叉车与工业车辆安全连续性
     ├── confined-space-entry-atmospheric-hazard-continuity/ # 受限空间进入与大气危害连续性
     ├── bloodborne-pathogens-sharps-injury-worker-continuity/ # 血源性病原体与锐器伤工作者连续性
+    ├── trenching-excavation-cave-in-worker-continuity/ # 沟槽开挖坍塌连续性
+    ├── crane-derrick-hoist-rigging-suspended-load-continuity/ # 起重吊装与悬吊载荷连续性
+    ├── occupational-electrical-shock-arc-flash-continuity/ # 职业电击与电弧闪爆连续性
+    ├── welding-cutting-brazing-fume-fire-continuity/ # 焊接切割烟尘火灾连续性
+    ├── respirable-crystalline-silica-dust-worker-continuity/ # 可吸入结晶硅尘连续性
+    ├── demolition-structural-collapse-debris-continuity/ # 拆除坍塌碎片连续性
     ├── medical-device-equipment-safety-maintenance/ # 医疗器械、设备安全与维护
     ├── sterilization-disinfection-infection-control/ # 灭菌、消毒与感染控制
     ├── built-environment-accessibility-universal-design/ # 建成环境无障碍与通用设计
@@ -1022,6 +1028,7 @@ human_infra/
 - `domains/food-safety-contamination-control/` 负责食源性病原体、毒素、过敏原、检查、追溯和召回。
 - `domains/occupational-exposure-industrial-hygiene/` 负责工作场所化学、物理、生物、粉尘、噪声、热、辐射和皮肤暴露控制。
 - `domains/workplace-fall-protection-height-safety-continuity/`、`domains/hazardous-energy-lockout-tagout-continuity/`、`domains/machine-guarding-amputation-prevention-continuity/`、`domains/powered-industrial-truck-forklift-safety-continuity/`、`domains/confined-space-entry-atmospheric-hazard-continuity/` 和 `domains/bloodborne-pathogens-sharps-injury-worker-continuity/` 负责高处坠落、危险能量、机器危险点、工业车辆、受限空间和血源性病原体锐器伤这些工作场所急性伤害/感染执行连续性条件。
+- `domains/trenching-excavation-cave-in-worker-continuity/`、`domains/crane-derrick-hoist-rigging-suspended-load-continuity/`、`domains/occupational-electrical-shock-arc-flash-continuity/`、`domains/welding-cutting-brazing-fume-fire-continuity/`、`domains/respirable-crystalline-silica-dust-worker-continuity/` 和 `domains/demolition-structural-collapse-debris-continuity/` 负责沟槽开挖坍塌、起重吊装悬吊载荷、职业电击电弧闪爆、焊接切割烟尘火灾、可吸入结晶硅尘和拆除坍塌碎片这些施工/工业现场特定致命机制执行连续性条件。
 - `domains/medical-device-equipment-safety-maintenance/` 负责医疗设备生命周期、不良事件、UDI、召回、维护、网络安全和可用性。
 - `domains/sterilization-disinfection-infection-control/` 负责清洁、消毒、灭菌、再处理、环境感染控制和医疗照护相关感染预防。
 - `domains/built-environment-accessibility-universal-design/` 负责物理空间可达、路径连续、公共设施、通用设计和环境参与条件。
@@ -1378,3 +1385,4 @@ human_infra/
 - 2026-07-01：新增第一百二十三波 6 个 Food is Medicine / 医疗营养支持执行连续性域，覆盖营养不安全筛查转介、医学定制餐、医学定制食材、蔬果处方、临床 food pharmacy/pantry 和医学营养治疗营养师可达。
 - 2026-07-01：新增第一百二十四波 6 个生殖技术与生育保存治理连续性域，覆盖 ART/IVF 周期、ART 诊所成功率质量报告、生育保存冷冻、生殖组织供体筛查追溯、PGT 胚胎选择治理和第三方生殖法律伦理。
 - 2026-07-01：新增第一百二十五波 6 个长寿干预执行与证据治理连续性域，覆盖 geroprotective 药物再利用试验治理、补剂证据安全、抗阻训练肌力肌少症、心肺适能 VO2max、热量限制禁食能量平衡和冷热应激 hormesis 治理。
+- 2026-07-01：新增第一百三十波 6 个施工与工业现场特定致命机制执行连续性域，覆盖沟槽开挖坍塌、起重吊装悬吊载荷、职业电击电弧闪爆、焊接切割烟尘火灾、可吸入结晶硅尘和拆除坍塌碎片。

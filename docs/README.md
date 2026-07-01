@@ -150,6 +150,7 @@ docs/
 │   ├── 0132-add-one-hundred-twenty-seventh-wave-endocrine-feedback-axis-domains.md
 │   ├── 0133-add-one-hundred-twenty-eighth-wave-sleep-wake-scheduling-domains.md
 │   ├── 0134-add-one-hundred-twenty-ninth-wave-workplace-safety-execution-domains.md
+│   ├── 0135-add-one-hundred-thirtieth-wave-construction-industrial-fatal-hazard-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -280,6 +281,12 @@ docs/
 69d. Read `../domains/powered-industrial-truck-forklift-safety-continuity/README.md` if you are working on forklifts, powered industrial trucks, warehouse traffic, pedestrian separation, load stability, tip-over, or blind spots.
 69e. Read `../domains/confined-space-entry-atmospheric-hazard-continuity/README.md` if you are working on confined spaces, permit-required confined spaces, oxygen deficiency, toxic/flammable atmospheres, attendants, or rescue latency.
 69f. Read `../domains/bloodborne-pathogens-sharps-injury-worker-continuity/README.md` if you are working on bloodborne pathogens, needlesticks, sharps injuries, healthcare worker exposure, reporting, or follow-up boundaries.
+69g. Read `../domains/trenching-excavation-cave-in-worker-continuity/README.md` if you are working on trenching, excavation, cave-ins, trench collapse, underground utility work, protective-system evidence boundaries, or rescue latency.
+69h. Read `../domains/crane-derrick-hoist-rigging-suspended-load-continuity/README.md` if you are working on cranes, derricks, hoists, rigging, suspended loads, struck-by/crushed-by hazards, signal communication, or lift-planning evidence boundaries.
+69i. Read `../domains/occupational-electrical-shock-arc-flash-continuity/README.md` if you are working on occupational electrical exposure, electric shock, electrocution, arc flash/blast, temporary power, overhead lines, or energized-system task boundaries.
+69j. Read `../domains/welding-cutting-brazing-fume-fire-continuity/README.md` if you are working on welding, cutting, brazing, metal fumes, hot work, fire/explosion, gas cylinders, or confined-space hot-work interfaces.
+69k. Read `../domains/respirable-crystalline-silica-dust-worker-continuity/README.md` if you are working on respirable crystalline silica, construction dust, cutting/grinding/drilling, silicosis, COPD, lung cancer, kidney disease, or exposure-monitoring evidence boundaries.
+69l. Read `../domains/demolition-structural-collapse-debris-continuity/README.md` if you are working on demolition, deconstruction, structural collapse, falling debris, hidden utilities, adjacent structures, dust/debris, or demolition sequencing evidence boundaries.
 70. Read `../domains/medical-device-equipment-safety-maintenance/README.md` if you are working on medical device safety, equipment lifecycle, UDI, adverse events, recalls, maintenance, or device cybersecurity.
 71. Read `../domains/sterilization-disinfection-infection-control/README.md` if you are working on sterilization, disinfection, reprocessing, environmental infection control, or healthcare-associated infection prevention.
 72. Read `../domains/built-environment-accessibility-universal-design/README.md` if you are working on built-environment accessibility, universal design, ADA/ABA standards, public-space access, or physical-path continuity.

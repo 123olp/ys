@@ -483,6 +483,12 @@ flowchart TD
     OEIH --> PITFSC[powered-industrial-truck-forklift-safety-continuity<br/>叉车 / 工业车辆安全]
     OEIH --> CSEAHC[confined-space-entry-atmospheric-hazard-continuity<br/>受限空间 / 大气危害]
     OEIH --> BPSIWC[bloodborne-pathogens-sharps-injury-worker-continuity<br/>血源性病原体 / 锐器伤]
+    OEIH --> TECIWC[trenching-excavation-cave-in-worker-continuity<br/>沟槽开挖 / 坍塌]
+    OEIH --> CDHRSL[crane-derrick-hoist-rigging-suspended-load-continuity<br/>起重吊装 / 悬吊载荷]
+    OEIH --> OESAF[occupational-electrical-shock-arc-flash-continuity<br/>职业电击 / 电弧闪爆]
+    OEIH --> WCBFFC[welding-cutting-brazing-fume-fire-continuity<br/>焊接切割 / 烟尘火灾]
+    OEIH --> RCSDWC[respirable-crystalline-silica-dust-worker-continuity<br/>结晶硅尘 / 工人暴露]
+    OEIH --> DSCDC[demolition-structural-collapse-debris-continuity<br/>拆除作业 / 坍塌碎片]
     H --> MDESM[medical-device-equipment-safety-maintenance<br/>医疗器械 / 设备安全维护]
     H --> SDIC[sterilization-disinfection-infection-control<br/>灭菌消毒 / 感染控制]
     H --> BEAUD[built-environment-accessibility-universal-design<br/>建成环境无障碍 / 通用设计]
@@ -1836,6 +1842,12 @@ flowchart TD
 | [Powered Industrial Truck Forklift Safety Continuity](domains/powered-industrial-truck-forklift-safety-continuity/README.md) | 叉车和工业车辆、人车分离、载荷稳定、倾翻、盲区和仓储交通 | 防止物料搬运把工作场所转化为碰撞、压伤、倾翻和物流中断风险 | 不提供驾驶、培训、路线、载荷、检查、认证、现场交通或合规建议 |
 | [Confined Space Entry Atmospheric Hazard Continuity](domains/confined-space-entry-atmospheric-hazard-continuity/README.md) | 受限空间、缺氧、有毒/易燃大气、监护、通信和救援延迟 | 防止进入性任务因不可见大气和退出失败迅速跨过可逆窗口 | 不提供进入、检测、通风、救援、许可、PPE、培训、现场合规或急救建议 |
 | [Bloodborne Pathogens Sharps Injury Worker Continuity](domains/bloodborne-pathogens-sharps-injury-worker-continuity/README.md) | 血源性病原体、针刺锐器伤、暴露报告、随访和工作者感染风险 | 防止护理、清洁、实验和公共服务任务因锐器暴露变成感染、焦虑和职业连续性损伤 | 不提供 PEP、检测、疫苗、伤口处理、暴露处置、医疗、合规、工伤或法律建议 |
+| [Trenching Excavation Cave-In Worker Continuity](domains/trenching-excavation-cave-in-worker-continuity/README.md) | 沟槽开挖、土体坍塌、埋压、地下设施、积水和救援延迟 | 防止地下基础设施任务快速转化为窒息、挤压伤、死亡和家庭恢复成本 | 不提供开挖设计、支护、放坡、土壤分类、地下设施定位、救援、许可、合规或法律建议 |
+| [Crane Derrick Hoist Rigging Suspended Load Continuity](domains/crane-derrick-hoist-rigging-suspended-load-continuity/README.md) | 起重机、桅杆起重机、葫芦、索具、悬吊载荷和指挥通信 | 防止重物提升把施工制造任务转化为击打、压伤、坠落物和长期劳动能力损失 | 不提供吊装方案、索具计算、载荷图、设备操作、检查认证、合规或法律建议 |
+| [Occupational Electrical Shock Arc Flash Continuity](domains/occupational-electrical-shock-arc-flash-continuity/README.md) | 职业电气暴露、电击、触电死亡、电弧闪爆、临时用电和架空线路 | 防止技术工作接触电能时跨入心脏骤停、烧伤、爆炸创伤和死亡窗口 | 不提供电气施工、带电作业、电弧计算、PPE、LOTO、故障排查、合规或法律建议 |
+| [Welding Cutting Brazing Fume Fire Continuity](domains/welding-cutting-brazing-fume-fire-continuity/README.md) | 焊接、切割、钎焊、金属烟尘、热作业、火灾爆炸和气瓶 | 防止制造维修技能任务转换成吸入损伤、烧伤、爆炸、火灾或长期肺部负担 | 不提供焊接操作、热作业许可、通风设计、呼吸器/PPE、消防监护、合规或法律建议 |
+| [Respirable Crystalline Silica Dust Worker Continuity](domains/respirable-crystalline-silica-dust-worker-continuity/README.md) | 可吸入结晶硅尘、施工粉尘、切割打磨钻孔、硅肺和长期肺部负担 | 防止材料加工和施工工作把收入路径转化为职业病、失能和健康寿命损失 | 不提供暴露监测、工程控制、呼吸器选择、医学监测解释、职业病诊断、合规或法律建议 |
+| [Demolition Structural Collapse Debris Continuity](domains/demolition-structural-collapse-debris-continuity/README.md) | 拆除作业、结构失稳、坍塌、坠落碎片、隐藏设施、相邻结构和粉尘 | 防止建成环境更新过程转化为结构坍塌、碎片击打、暴露、火灾和社区风险 | 不提供拆除计划、工程顺序、结构评估、危险材料处理、许可、合规或法律建议 |
 | [Medical Device Equipment Safety Maintenance](domains/medical-device-equipment-safety-maintenance/README.md) | 医疗设备生命周期、不良事件、UDI、召回、维护、网络安全和可用性 | 让诊断、治疗、监测、生命支持和康复工具具备可靠运行与纠错能力 | 不提供设备使用、维修、改装、采购、报警处理、临床操作、漏洞利用或医疗建议 |
 | [Sterilization Disinfection Infection Control](domains/sterilization-disinfection-infection-control/README.md) | 清洁、消毒、灭菌、再处理、环境感染控制和 HAI 预防 | 防止医疗、照护和公共空间把服务过程变成感染入口 | 不提供消毒配方、灭菌参数、器械再处理、隔离决策、暴发处置或规避感染控制建议 |
 | [Built Environment Accessibility Universal Design](domains/built-environment-accessibility-universal-design/README.md) | 物理空间可达、路径连续、公共设施、通用设计和环境参与条件 | 让不同身体、感官和认知状态的主体仍能进入、移动、使用、撤离和参与 | 不提供建筑设计施工、验收、个案法律、合理便利、撤离路线或辅助设备建议 |
@@ -2362,6 +2374,12 @@ human_infra/
 │   ├── powered-industrial-truck-forklift-safety-continuity/
 │   ├── confined-space-entry-atmospheric-hazard-continuity/
 │   ├── bloodborne-pathogens-sharps-injury-worker-continuity/
+│   ├── trenching-excavation-cave-in-worker-continuity/
+│   ├── crane-derrick-hoist-rigging-suspended-load-continuity/
+│   ├── occupational-electrical-shock-arc-flash-continuity/
+│   ├── welding-cutting-brazing-fume-fire-continuity/
+│   ├── respirable-crystalline-silica-dust-worker-continuity/
+│   ├── demolition-structural-collapse-debris-continuity/
 │   ├── medical-device-equipment-safety-maintenance/
 │   ├── sterilization-disinfection-infection-control/
 │   ├── built-environment-accessibility-universal-design/

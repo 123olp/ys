@@ -358,6 +358,12 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `powered-industrial-truck-forklift-safety-continuity/` | 叉车和工业车辆安全决定物料搬运是否能避免碰撞、压伤、倾翻和仓储交通中断 |
 | `confined-space-entry-atmospheric-hazard-continuity/` | 受限空间与大气危害控制决定不可见缺氧、有毒或易燃环境是否会越过可逆救援窗口 |
 | `bloodborne-pathogens-sharps-injury-worker-continuity/` | 血源性病原体和锐器伤连续性决定护理、清洁、实验和公共服务任务中的暴露能否被报告、随访和治理 |
+| `trenching-excavation-cave-in-worker-continuity/` | 沟槽开挖坍塌连续性决定地下基础设施任务是否会快速转化为窒息、挤压伤、死亡和家庭恢复成本 |
+| `crane-derrick-hoist-rigging-suspended-load-continuity/` | 起重吊装与悬吊载荷连续性决定重物提升是否能避免击打、压伤、坠落物和长期劳动能力损失 |
+| `occupational-electrical-shock-arc-flash-continuity/` | 职业电击与电弧闪爆连续性决定技术工作接触电能时是否会跨入心脏骤停、烧伤、爆炸创伤和死亡窗口 |
+| `welding-cutting-brazing-fume-fire-continuity/` | 焊接切割钎焊烟尘火灾连续性决定制造维修技能任务是否会转化为吸入损伤、烧伤、爆炸、火灾或长期肺部负担 |
+| `respirable-crystalline-silica-dust-worker-continuity/` | 可吸入结晶硅尘连续性决定含硅材料工作是否会把短期收入路径转化为职业病、失能和健康寿命损失 |
+| `demolition-structural-collapse-debris-continuity/` | 拆除结构坍塌碎片连续性决定建成环境更新是否会转化为结构坍塌、碎片击打、暴露、火灾和社区风险 |
 | `medical-device-equipment-safety-maintenance/` | 医疗设备安全、维护、UDI 和召回决定诊断、治疗、监测、生命支持和康复工具是否可靠 |
 | `sterilization-disinfection-infection-control/` | 灭菌、消毒、再处理和感染控制决定医疗与照护环境是否避免制造可预防感染 |
 | `built-environment-accessibility-universal-design/` | 建成环境无障碍和通用设计决定不同能力状态的主体是否能进入、移动、使用和参与 |
@@ -1414,6 +1420,7 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | WHO Food Safety / CDC Food Safety / FDA Food / USDA FSIS / Codex | 提示食品安全、污染控制、追溯、召回和暴发治理与食物可得/营养质量不同 |
 | NIOSH Hierarchy of Controls / OSHA Industrial Hygiene / ILO OSH / ACGIH | 提示职业暴露、工业卫生和控制层级是工作可持续性的独立失败模式 |
 | OSHA Fall Protection / OSHA Control of Hazardous Energy / OSHA Machine Guarding / OSHA Powered Industrial Trucks / OSHA Confined Spaces / OSHA Bloodborne Pathogens / CDC NIOSH Bloodborne Infectious Diseases | 提示职业安全需要从总暴露域拆到高处坠落、危险能量、机器防护、叉车/工业车辆、受限空间和血源性病原体锐器伤这些可审查执行层 |
+| OSHA Trenching and Excavation / OSHA Crane Derrick and Hoist Safety / OSHA Electrical / OSHA Welding Cutting Brazing / OSHA Silica Crystalline / OSHA Demolition | 提示施工与工业现场致命机制需要从总职业暴露域拆到沟槽坍塌、悬吊载荷、电击闪爆、热作业烟尘火灾、硅尘和拆除坍塌这些可审查执行层 |
 | FDA Medical Devices / FDA UDI / MAUDE / WHO Medical Devices | 提示医疗设备安全、维护、追踪、不良事件和召回是医学工具链可靠性条件 |
 | CDC Disinfection and Sterilization / WHO IPC / FDA Device Reprocessing | 提示灭菌、消毒、再处理和感染控制是医疗与照护连续性的环境屏障 |
 | U.S. Access Board ADA/ABA / ADA.gov / WHO Disability | 提示建成环境无障碍、通用设计和物理路径连续性是主体行动与参与条件 |
@@ -1545,6 +1552,12 @@ Source links:
 - https://www.osha.gov/confined-spaces
 - https://www.osha.gov/bloodborne-pathogens
 - https://www.cdc.gov/niosh/topics/bbp/
+- https://www.osha.gov/trenching-excavation
+- https://www.osha.gov/cranes-derricks
+- https://www.osha.gov/electrical
+- https://www.osha.gov/welding-cutting-brazing
+- https://www.osha.gov/silica-crystalline
+- https://www.osha.gov/demolition
 - https://www.ahrq.gov/teamstepps-program/index.html
 - https://www.who.int/teams/integrated-health-services/patient-safety/research/safe-surgery/tool-and-resources
 - https://psnet.ahrq.gov/primer/culture-safety

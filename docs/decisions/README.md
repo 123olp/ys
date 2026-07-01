@@ -147,3 +147,4 @@ Current decisions:
 - `0132-add-one-hundred-twenty-seventh-wave-endocrine-feedback-axis-domains.md`
 - `0133-add-one-hundred-twenty-eighth-wave-sleep-wake-scheduling-domains.md`
 - `0134-add-one-hundred-twenty-ninth-wave-workplace-safety-execution-domains.md`
+- `0135-add-one-hundred-thirtieth-wave-construction-industrial-fatal-hazard-domains.md`

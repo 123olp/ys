@@ -621,6 +621,27 @@ Human Infra 不能被设计成更精密的压榨系统。
 - 收集或诱导输入现场照片、机器布局、能量隔离点、受限空间图纸、锐器暴露记录、员工姓名、医疗记录、工伤记录、雇主身份、培训记录、事故证据、定位或其他可识别个人/单位的敏感资料。
 - 把工作场所急性安全执行问题改写成个人作业指导、企业合规自动化、事故取证、监管规避、医疗替代、法律代理、工伤索赔工具或恐慌传播材料。
 
+## 施工与工业现场特定致命机制边界
+
+`trenching-excavation-cave-in-worker-continuity`、`crane-derrick-hoist-rigging-suspended-load-continuity`、`occupational-electrical-shock-arc-flash-continuity`、`welding-cutting-brazing-fume-fire-continuity`、`respirable-crystalline-silica-dust-worker-continuity` 和 `demolition-structural-collapse-debris-continuity` 关注沟槽坍塌、起重吊装悬吊载荷、职业电击电弧闪爆、焊接切割烟尘火灾、可吸入结晶硅尘和拆除结构坍塌如何在施工/工业任务中破坏主体持续性，不是现场施工方案、工程计算、作业许可、医疗处理、合规证明、事故调查、工伤索赔或法律建议工具。
+
+可以做：
+
+- 整理 OSHA、NIOSH、BLS 和公开学术资料，建立 Source Card、风险机制图、域边界、证据等级和公共资料索引。
+- 建模沟槽坍塌、悬吊载荷、电击闪爆、热作业烟尘火灾、硅尘暴露和拆除坍塌如何影响寿命、健康寿命、有效时间、收入连续性、家庭支持、社区安全和未来选择权。
+- 区分职业暴露、施工现场操作、工程设计、职业病监测、应急响应、监管合规、组织责任和禁止用途之间的边界。
+
+不能做：
+
+- 提供沟槽开挖设计、支护、放坡、台阶、盾构箱、土壤分类、地下设施定位、救援、许可、施工或现场安全方案。
+- 提供吊装方案、索具计算、载荷图使用、手势信号、起重机/葫芦操作、检查、认证、维修或设备选择建议。
+- 提供电气施工、布线、带电作业、故障排查、电弧闪爆计算、PPE 类别、lockout/tagout 步骤、设备维修或电气安全操作建议。
+- 提供焊接、切割、钎焊操作教程、热作业许可、通风设计、呼吸器选择、PPE、气瓶处理、消防监护、受限空间进入或火灾处置建议。
+- 提供硅尘暴露监测方案、湿法/通风/除尘控制设计、呼吸防护选择、医学监测解释、职业病诊断、个人暴露判断或职业病索赔建议。
+- 提供拆除计划、工程顺序、结构评估、支撑、爆破、废弃物清理、危险材料处理、许可、保险、责任归属、事故调查、OSHA 合规判断、医疗、工伤或法律意见。
+- 收集或诱导输入现场照片、开挖图纸、吊装图、载荷参数、索具参数、电气图纸、PPE 参数、焊接许可、通风参数、采样数据、拆除图纸、结构参数、雇主记录、事故证据、员工姓名、医疗记录、定位或其他可识别个人/单位的敏感资料。
+- 把施工与工业现场致命机制问题改写成个人作业指导、企业合规自动化、工程计算、事故取证、监管规避、医疗替代、法律代理、工伤索赔工具或恐慌传播材料。
+
 ## 临床检验、药品安全、药品质量、院前急救、手术麻醉与道路安全边界
 
 `clinical-laboratory-diagnostic-quality`、`pharmacovigilance-drug-safety-monitoring`、`pharmaceutical-quality-supply-integrity`、`emergency-medical-services-prehospital-care`、`surgical-anesthesia-perioperative-safety` 和 `road-traffic-injury-prevention-safe-mobility` 关注临床观测质量、真实世界药品安全、治疗物质质量、急性院前响应、高风险修复通道和安全移动如何支撑主体持续性，不是检验解读、用药建议、药品制造、急救手册、手术麻醉教程或驾驶/事故处理指南。

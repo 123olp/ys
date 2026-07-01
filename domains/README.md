@@ -261,6 +261,12 @@
 - `powered-industrial-truck-forklift-safety-continuity/`：叉车与工业车辆安全连续性，整理人车分离、载荷稳定、倾翻、盲区、仓储交通和物料搬运风险。
 - `confined-space-entry-atmospheric-hazard-continuity/`：受限空间进入与大气危害连续性，整理缺氧、有毒/易燃大气、监护、通信、退出和救援延迟。
 - `bloodborne-pathogens-sharps-injury-worker-continuity/`：血源性病原体与锐器伤工作者连续性，整理针刺锐器伤、暴露报告、随访、感染风险和职业连续性。
+- `trenching-excavation-cave-in-worker-continuity/`：沟槽开挖坍塌工作者连续性，整理坍塌埋压、地下设施接口、积水、土体失稳和救援延迟。
+- `crane-derrick-hoist-rigging-suspended-load-continuity/`：起重吊装与悬吊载荷连续性，整理起重机、桅杆起重机、葫芦、索具、悬吊载荷、击打压伤和指挥通信。
+- `occupational-electrical-shock-arc-flash-continuity/`：职业电击与电弧闪爆连续性，整理电击、触电死亡、电弧闪爆、临时用电、架空线路和带电系统任务边界。
+- `welding-cutting-brazing-fume-fire-continuity/`：焊接切割钎焊烟尘火灾连续性，整理金属烟尘、热作业、火灾爆炸、气瓶和受限空间接口。
+- `respirable-crystalline-silica-dust-worker-continuity/`：可吸入结晶硅尘工作者连续性，整理施工粉尘、切割打磨钻孔、硅肺、COPD、肺癌和长期肺部负担。
+- `demolition-structural-collapse-debris-continuity/`：拆除结构坍塌碎片连续性，整理拆除作业、结构失稳、坍塌、坠落碎片、隐藏设施、相邻结构和粉尘废弃物。
 - `medical-device-equipment-safety-maintenance/`：医疗器械、设备安全与维护，整理设备生命周期、不良事件、UDI、召回、维护、网络安全和可用性。
 - `sterilization-disinfection-infection-control/`：灭菌、消毒与感染控制，整理清洁、消毒、灭菌、再处理、环境感染控制和 HAI 预防。
 - `built-environment-accessibility-universal-design/`：建成环境无障碍与通用设计，整理物理空间可达、路径连续、公共设施、通用设计和环境参与条件。
