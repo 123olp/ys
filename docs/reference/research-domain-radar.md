@@ -329,6 +329,16 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `iron-deficiency-anemia-oxygen-carrying-continuity/` | 铁缺乏贫血与氧输送连续性决定氧运输不足是否持续压低体力、注意力、运动耐受和阶段性风险承载能力 |
 | `asthma-copd-maintenance-control-continuity/` | 哮喘/COPD 长期控制连续性决定慢性气道病是否通过活动受限、睡眠破坏和急性加重缩小行动空间 |
 | `allergic-atopic-disease-immunologic-burden-continuity/` | 过敏/特应性疾病免疫负担连续性决定过敏原、瘙痒、睡眠、食物/环境限制和急性反应风险是否长期消耗恢复质量 |
+| `parkinsons-disease-movement-control-continuity/` | 帕金森病与运动控制连续性决定慢性神经退行是否通过震颤、僵硬、步态和非运动症状压缩移动、表达和照护协作 |
+| `multiple-sclerosis-demyelination-function-continuity/` | 多发性硬化脱髓鞘功能连续性决定复发、进展、疲劳、感觉运动和认知变化是否造成有效时间波动 |
+| `amyotrophic-lateral-sclerosis-motor-neuron-continuity/` | ALS 运动神经元连续性决定行动输出、吞咽呼吸、沟通通道和照护系统是否能在病程中保持尊严和选择权 |
+| `huntington-disease-genetic-neurodegeneration-continuity/` | 亨廷顿病遗传神经退行连续性决定运动、认知、精神变化和家庭风险是否被纳入长期主体连续性治理 |
+| `spinal-muscular-atrophy-motor-neuron-continuity/` | 脊髓性肌萎缩症运动神经元连续性决定遗传运动神经元病程是否通过呼吸吞咽、移动支持和儿童发展影响长期参与 |
+| `muscular-dystrophy-progressive-weakness-continuity/` | 肌营养不良进行性无力连续性决定肌肉结构退行是否通过心肺风险、移动支持和学校/工作参与压缩行动接口 |
+| `myasthenia-gravis-neuromuscular-junction-continuity/` | 重症肌无力神经肌肉接头连续性决定波动性肌无力、吞咽呼吸风险和急性危象是否破坏任务可靠性 |
+| `spinal-cord-injury-paralysis-secondary-complications-continuity/` | 脊髓损伤瘫痪与二级并发症连续性决定通路损伤后设备、环境、并发症和独立生活是否可持续 |
+| `me-cfs-post-exertional-energy-limitation-continuity/` | ME/CFS 劳累后能量限制连续性决定劳累后不适、能量包络和恢复失败是否把学习、工作和参与变成预算问题 |
+| `long-covid-post-acute-infection-continuity/` | Long COVID 感染后长期连续性决定感染后疲劳脑雾、多系统症状和服务碎片是否持续压缩未来选择权 |
 | `road-traffic-injury-prevention-safe-mobility/` | 道路交通伤害预防和安全移动决定出行是否持续制造死亡、严重伤害和长期失能 |
 | `rural-health-access-geographic-equity/` | 农村地理距离、服务密度、宽带、交通和卫生人力决定可修复风险是否因地点被延误或放弃 |
 | `homelessness-unsheltered-health-continuity/` | 无家可归和露宿状态决定睡眠、卫生、身份、安全、医疗和福利入口是否会同时断线 |
@@ -734,6 +744,16 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | NHLBI anemia / iron deficiency anemia resources | 提示铁储备和血红蛋白决定氧输送、疲劳、注意力和运动耐受，应与一般血液止血域建立专门接口 |
 | NHLBI asthma / COPD and CDC asthma resources | 提示慢性气道病依赖长期控制、吸入药可及、触发因素、肺康复和急性加重预防，不应只停留在急性气道危机 |
 | NIAID allergic diseases / NIAMS atopic dermatitis / FDA food allergy resources | 提示过敏和特应性疾病通过瘙痒、睡眠、食物限制、环境暴露和急性反应风险持续消耗恢复质量和参与能力 |
+| NINDS Parkinson's disease resources | 提示帕金森病需要把运动控制、非运动症状、长期照护和生活参与作为独立主体连续性断点 |
+| NINDS multiple sclerosis resources | 提示多发性硬化需要把脱髓鞘、复发/进展、疲劳、感觉运动和认知波动纳入功能连续性模型 |
+| NINDS ALS resources | 提示 ALS 需要把运动神经元退行、呼吸吞咽、沟通通道、照护和尊严边界作为独立域 |
+| NINDS Huntington's disease resources | 提示亨廷顿病需要把遗传病程、运动、认知、精神变化和家庭风险纳入主体连续性治理 |
+| NINDS spinal muscular atrophy resources | 提示 SMA 需要把遗传运动神经元、呼吸吞咽、儿童发展和长期照护作为独立连续性对象 |
+| NINDS muscular dystrophy resources | 提示肌营养不良需要把进行性无力、心肺风险、移动支持和学校/工作参与纳入长期行动接口 |
+| NINDS myasthenia gravis resources | 提示重症肌无力需要把神经肌肉接头传递、波动性肌无力、吞咽呼吸和急性危象作为独立风险域 |
+| NINDS spinal cord injury resources | 提示脊髓损伤需要把感觉运动通路、瘫痪、二级并发症、无障碍和独立生活作为长期连续性条件 |
+| CDC ME/CFS resources | 提示 ME/CFS 需要把劳累后不适、能量包络、认知困难、睡眠恢复失败和参与限制独立建模 |
+| CDC Long COVID resources | 提示 Long COVID 需要把感染后疲劳、脑雾、呼吸、自主调节、多系统负担和服务碎片纳入长期连续性 |
 | OrganDonor.gov / HRSA organ donation materials | 提示器官捐赠登记、anatomical gift 和家庭沟通会把死亡边界后的主体意愿连接到他人生命资源 |
 | FDA UDI / AccessGUDID materials | 提示植入设备和医疗器械标识会影响急救、影像、手术、召回和跨机构设备识别 |
 | CDC/NCHS NVSS and mortality materials | 提示死亡证明、死因记录和生命统计是遗属行政、保险、公共卫生学习和死亡边界治理的基础记录 |

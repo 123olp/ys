@@ -605,6 +605,25 @@ Human Infra 不能被设计成更精密的压榨系统。
 - 产出疾病污名、肥胖/疼痛/免疫/呼吸道德化、医疗回避、延误就医、自我实验、产品背书、替代专业照护、保险规避、工作能力判定或高敏感个人资料收集内容。
 - 替代疼痛医学、骨科、风湿免疫科、消化科、肝病科、内分泌科、血液科、呼吸科、过敏免疫科、皮肤科、药学、康复、营养、公共卫生、职业健康、法律援助或本地专业人员。
 
+## 慢性神经退行、神经肌肉与感染后功能连续性边界
+
+`parkinsons-disease-movement-control-continuity`、`multiple-sclerosis-demyelination-function-continuity`、`amyotrophic-lateral-sclerosis-motor-neuron-continuity`、`huntington-disease-genetic-neurodegeneration-continuity`、`spinal-muscular-atrophy-motor-neuron-continuity`、`muscular-dystrophy-progressive-weakness-continuity`、`myasthenia-gravis-neuromuscular-junction-continuity`、`spinal-cord-injury-paralysis-secondary-complications-continuity`、`me-cfs-post-exertional-energy-limitation-continuity` 和 `long-covid-post-acute-infection-continuity` 关注慢性神经退行、神经肌肉传递/结构、脊髓通路和感染后长期状态如何改变行动输出、呼吸吞咽、沟通、认知疲劳、恢复成本、照护依赖、服务连续性和未来选择权，不是个人诊断、治疗、康复、设备、证明、福利或预后判断入口。
+
+可以做：
+
+- 整理 NINDS、CDC 和其他公共机构关于帕金森病、多发性硬化、ALS、亨廷顿病、SMA、肌营养不良、重症肌无力、脊髓损伤、ME/CFS 和 Long COVID 的公开资料。
+- 比较运动控制、脱髓鞘、运动神经元、遗传神经退行、神经肌肉接头、脊髓损伤、能量包络、感染后多系统负担如何改变主体持续性。
+- 记录功能结果、照护负担、无障碍、沟通通道、呼吸吞咽、日内波动、服务入口、证据等级、禁止用途和不确定性。
+- 将这些域与 `neuro-continuity`、`physical-activity-mobility`、`assistive-technology-access`、`respiratory-oxygenation`、`sleep-circadian-recovery`、`fatigue-risk-alertness-continuity`、`chronic-infectious-disease-care-continuity` 和 `functioning-quality-of-life-outcomes` 建立只读接口。
+
+不能做：
+
+- 提供帕金森病、多发性硬化、ALS、亨廷顿病、SMA、肌营养不良、重症肌无力、脊髓损伤、ME/CFS 或 Long COVID 的个体诊断、分期、检查判读、遗传风险解释、治疗选择、风险评分、转诊、急救、复查周期或预后判断。
+- 生成药物、剂量、停药、免疫治疗、DBS、基因疗法、通气、营养管、沟通设备、辅助设备、康复动作、运动、活动处方、氧疗、危象处理、皮肤/泌尿/肠道处理、学校/工作证明、保险、残障或福利建议。
+- 收集、存储或推断可识别个人的神经检查、影像、肌电、抗体、基因、肺功能、吞咽、能量日志、症状日记、设备使用、学校/工作、保险、就诊记录、儿童信息、家庭成员风险或其他 PHI。
+- 产出疾病污名、残障污名、遗传歧视、就业/保险歧视、家庭控制、医疗回避、自我实验、临床试验招募误导、产品背书、替代专业照护、功能许可判断或高敏感个人资料收集内容。
+- 替代神经科、康复医学、遗传咨询、呼吸治疗、言语吞咽治疗、物理/作业治疗、心理健康、公共卫生、职业健康、残障服务、法律援助、保险专业人员或本地专业人员。
+
 ## 门诊访问与临床服务执行连续性边界
 
 `provider-directory-network-adequacy-continuity`、`primary-care-panel-appointment-access-continuity`、`specialist-referral-authorization-navigation-continuity`、`appointment-availability-wait-time-continuity`、`outpatient-laboratory-specimen-result-routing-continuity`、`diagnostic-imaging-order-scheduling-report-continuity`、`ambulatory-procedure-surgery-center-continuity` 和 `after-hours-urgent-care-triage-continuity` 关注 provider 名录、初级照护、专科转诊、预约等待、门诊检验、诊断影像、门诊操作和非工作时间分诊如何让医疗服务从“名义存在”变成主体可进入、可完成、可回传的服务路径，不是医生推荐、个案分诊、诊疗建议、保险申诉或预约规避工具。

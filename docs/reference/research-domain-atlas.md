@@ -509,6 +509,16 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 铁缺乏贫血降低氧输送和有效时间 | `iron-deficiency-anemia-oxygen-carrying-continuity/` | 铁储备、血红蛋白、疲劳、出血/吸收来源、恢复可及 | 氧输送不足会降低体力、注意力、运动耐受和阶段性风险承载能力 |
 | 慢性气道控制决定呼吸储备 | `asthma-copd-maintenance-control-continuity/` | 哮喘/COPD、长期控制、吸入药、触发因素、肺康复 | 长期控制失败会造成气短、活动受限、睡眠破坏、急诊利用和急性加重 |
 | 过敏/特应性疾病会消耗恢复质量 | `allergic-atopic-disease-immunologic-burden-continuity/` | 过敏性鼻炎、特应性皮炎、食物过敏、瘙痒、睡眠、环境限制 | 长期过敏负担会通过瘙痒、气道症状、食物限制和急性反应风险降低生活参与 |
+| 帕金森病会改变运动控制接口 | `parkinsons-disease-movement-control-continuity/` | 帕金森病、运动控制、震颤、僵硬、步态、非运动症状、照护 | 慢性神经退行会压缩移动、表达、睡眠、工作和照护协作能力 |
+| 多发性硬化会制造神经功能波动 | `multiple-sclerosis-demyelination-function-continuity/` | 多发性硬化、脱髓鞘、复发/进展、疲劳、感觉运动、认知变化 | 神经炎症和脱髓鞘会让有效时间、移动、感觉、认知和服务接入出现不可预测断点 |
+| ALS 会切断行动输出通道 | `amyotrophic-lateral-sclerosis-motor-neuron-continuity/` | ALS、运动神经元、肌无力、吞咽、呼吸、沟通、照护 | 运动神经元退行会持续压缩行动、表达、呼吸吞咽、独立生活和尊严边界 |
+| 亨廷顿病会把遗传病程带入主体连续性 | `huntington-disease-genetic-neurodegeneration-continuity/` | 亨廷顿病、遗传神经退行、运动障碍、认知/精神变化、家庭风险 | 遗传性神经退行会同时冲击行动、判断、关系安全、家庭规划和未来选择权 |
+| 脊髓性肌萎缩症会改变早期运动神经元基础 | `spinal-muscular-atrophy-motor-neuron-continuity/` | SMA、遗传运动神经元、呼吸吞咽、移动支持、儿童发展、长期照护 | 早期运动神经元失效会压缩发育、呼吸、吞咽、移动和照护系统的可持续性 |
+| 肌营养不良会持续削弱肌肉执行层 | `muscular-dystrophy-progressive-weakness-continuity/` | 肌营养不良、进行性肌无力、心肺风险、移动支持、学校/工作参与 | 肌肉结构退行会逐步增加心肺风险、设备依赖、照护负担和参与限制 |
+| 重症肌无力会制造日内行动不稳定 | `myasthenia-gravis-neuromuscular-junction-continuity/` | 重症肌无力、神经肌肉接头、波动性肌无力、吞咽呼吸、急性危象 | 神经肌肉传递不稳定会让力量、吞咽、呼吸和日常任务可靠性随时间波动 |
+| 脊髓损伤会重写感觉运动通路 | `spinal-cord-injury-paralysis-secondary-complications-continuity/` | 脊髓损伤、瘫痪、感觉运动通道、二级并发症、无障碍、参与 | 通路损伤后的二级并发症、设备、环境和服务断点会决定长期独立生活 |
+| ME/CFS 会压缩能量包络 | `me-cfs-post-exertional-energy-limitation-continuity/` | ME/CFS、劳累后不适、能量限制、认知困难、睡眠恢复失败、参与 | 恢复系统失效和劳累后恶化会把任务安排、学习、工作和社会参与变成能量预算问题 |
+| Long COVID 会把感染后状态变成长期多系统负担 | `long-covid-post-acute-infection-continuity/` | Long COVID、感染后症状、疲劳脑雾、呼吸、自主调节、服务连续性 | 感染后长期状态会通过能量、认知、呼吸、自主调节和服务碎片压缩未来选择权 |
 | 移动过程可避免严重伤害 | `road-traffic-injury-prevention-safe-mobility/` | 道路安全系统、速度管理、车辆安全、执法公平、交通伤害监测 | 出行过程制造死亡、严重伤害、长期失能、家庭收入中断和照护负担 |
 | 地理距离不能排除主体 | `rural-health-access-geographic-equity/` | 农村服务密度、距离、交通、宽带、卫生人力、药房/医院可达 | 可修复风险因地点、距离、宽带、人力和设施稀缺被延误或放弃 |
 | 住所缺失时服务不能断线 | `homelessness-unsheltered-health-continuity/` | 庇护、外展、卫生、睡眠、安全、身份、住房服务、医疗连续性 | 露宿、卫生缺失、暴露、创伤、慢病失控和服务断点把主体推出恢复路径 |
@@ -1174,6 +1184,16 @@ risk-engineering
   -> iron-deficiency-anemia-oxygen-carrying-continuity
   -> asthma-copd-maintenance-control-continuity
   -> allergic-atopic-disease-immunologic-burden-continuity
+  -> parkinsons-disease-movement-control-continuity
+  -> multiple-sclerosis-demyelination-function-continuity
+  -> amyotrophic-lateral-sclerosis-motor-neuron-continuity
+  -> huntington-disease-genetic-neurodegeneration-continuity
+  -> spinal-muscular-atrophy-motor-neuron-continuity
+  -> muscular-dystrophy-progressive-weakness-continuity
+  -> myasthenia-gravis-neuromuscular-junction-continuity
+  -> spinal-cord-injury-paralysis-secondary-complications-continuity
+  -> me-cfs-post-exertional-energy-limitation-continuity
+  -> long-covid-post-acute-infection-continuity
   -> road-traffic-injury-prevention-safe-mobility
   -> rural-health-access-geographic-equity
   -> homelessness-unsheltered-health-continuity

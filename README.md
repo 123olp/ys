@@ -1306,6 +1306,16 @@ flowchart TD
 | [Iron Deficiency Anemia Oxygen Carrying Continuity](domains/iron-deficiency-anemia-oxygen-carrying-continuity/README.md) | 铁缺乏、贫血、氧输送、疲劳、出血/吸收来源和恢复可及 | 把氧输送不足纳入体力、注意力、运动耐受、妊娠风险和有效时间模型 | 不提供贫血诊断、化验判读、补铁剂量、输血、胃肠检查、月经或饮食建议 |
 | [Asthma COPD Maintenance Control Continuity](domains/asthma-copd-maintenance-control-continuity/README.md) | 哮喘、COPD、长期控制、吸入药可及、触发因素、肺康复和急性加重预防 | 把慢性气道病纳入呼吸储备、活动半径、睡眠和急性加重预防模型 | 不提供肺功能判读、吸入药、剂量、氧疗、行动计划、康复或设备建议 |
 | [Allergic Atopic Disease Immunologic Burden Continuity](domains/allergic-atopic-disease-immunologic-burden-continuity/README.md) | 过敏性鼻炎、特应性皮炎、食物过敏、过敏原暴露、睡眠损害和参与限制 | 把过敏/特应性疾病纳入免疫负担、恢复质量、环境限制和急性反应边界模型 | 不提供过敏诊断、皮损判断、食物挑战、脱敏、药物、急救、饮食或环境改造建议 |
+| [Parkinson's Disease Movement Control Continuity](domains/parkinsons-disease-movement-control-continuity/README.md) | 帕金森病、运动控制、震颤、僵硬、步态、非运动症状和照护负担 | 把慢性神经退行转化为移动、表达、工作、照护和长期参与模型 | 不提供诊断、用药、剂量、DBS、康复、设备、照护或功能许可建议 |
+| [Multiple Sclerosis Demyelination Function Continuity](domains/multiple-sclerosis-demyelination-function-continuity/README.md) | 多发性硬化、脱髓鞘、复发/进展、疲劳、感觉运动和认知变化 | 把神经炎症和脱髓鞘纳入功能波动、有效时间和服务连续性模型 | 不提供 MRI/腰穿/化验判读、免疫治疗、复发处理、妊娠、疫苗或康复建议 |
+| [Amyotrophic Lateral Sclerosis Motor Neuron Continuity](domains/amyotrophic-lateral-sclerosis-motor-neuron-continuity/README.md) | ALS、运动神经元退行、肌无力、吞咽、呼吸、沟通和照护 | 把行动输出、呼吸吞咽和表达通道损失纳入尊严与选择权模型 | 不提供诊断、检查判读、通气、营养管、沟通设备、临床试验或预后建议 |
+| [Huntington Disease Genetic Neurodegeneration Continuity](domains/huntington-disease-genetic-neurodegeneration-continuity/README.md) | 亨廷顿病、遗传神经退行、运动障碍、认知/精神变化和家庭风险 | 把遗传病程、决策能力、关系安全和家庭未来规划纳入主体连续性模型 | 不提供遗传检测解释、家族风险、生育、药物、危机、保险或就业建议 |
+| [Spinal Muscular Atrophy Motor Neuron Continuity](domains/spinal-muscular-atrophy-motor-neuron-continuity/README.md) | 脊髓性肌萎缩症、遗传运动神经元、呼吸吞咽、移动支持和儿童发展 | 把早期筛查、神经肌肉治疗可及、发育和长期照护纳入模型 | 不提供基因解释、治疗、设备、学校服务、预后、保险或临床试验建议 |
+| [Muscular Dystrophy Progressive Weakness Continuity](domains/muscular-dystrophy-progressive-weakness-continuity/README.md) | 肌营养不良、进行性肌无力、心肺风险、移动支持、学校/工作参与 | 把肌肉结构退行纳入行动接口、心肺安全和辅助技术可及模型 | 不提供基因解释、药物、激素、基因疗法、康复、设备或功能许可建议 |
+| [Myasthenia Gravis Neuromuscular Junction Continuity](domains/myasthenia-gravis-neuromuscular-junction-continuity/README.md) | 重症肌无力、神经肌肉接头、波动性肌无力、吞咽呼吸和急性危象 | 把神经肌肉传递不稳定纳入日内功能波动和急性风险治理模型 | 不提供抗体/肌电判读、用药、免疫治疗、手术、危象处理或活动建议 |
+| [Spinal Cord Injury Paralysis Secondary Complications Continuity](domains/spinal-cord-injury-paralysis-secondary-complications-continuity/README.md) | 脊髓损伤、瘫痪、感觉运动通道、二级并发症、无障碍和参与 | 把通路损伤后的设备、环境、并发症和独立生活纳入长期连续性模型 | 不提供急救、损伤分级、康复动作、设备、皮肤/泌尿/肠道处理或福利建议 |
+| [ME/CFS Post-Exertional Energy Limitation Continuity](domains/me-cfs-post-exertional-energy-limitation-continuity/README.md) | ME/CFS、劳累后不适、能量限制、认知困难、睡眠恢复失败和参与 | 把能量包络、恢复成本和任务节奏纳入有效时间模型 | 不提供诊断、活动处方、运动、药物、补剂、学校/工作证明、残障或保险建议 |
+| [Long COVID Post-Acute Infection Continuity](domains/long-covid-post-acute-infection-continuity/README.md) | Long COVID、感染后长期症状、多系统负担、疲劳脑雾和服务连续性 | 把感染后长期状态纳入能量、认知、呼吸、自主调节和服务导航模型 | 不提供诊断、检测解释、药物、康复、运动、氧疗、工作证明或预后建议 |
 | [Road Traffic Injury Prevention Safe Mobility](domains/road-traffic-injury-prevention-safe-mobility/README.md) | 道路交通伤害、安全系统、速度管理、车辆安全、交通数据和安全移动 | 让出行从可达性进一步成为不制造死亡和失能的行动基础设施 | 不提供驾驶、路线、事故责任、保险、法律、车辆改装、危险驾驶、规避执法或急救建议 |
 | [Rural Health Access Geographic Equity](domains/rural-health-access-geographic-equity/README.md) | 地理距离、服务密度、宽带、交通、卫生人力和农村健康公平 | 防止可修复风险因为地点、交通、宽带和服务稀缺被延误或放弃 | 不提供个体医疗、保险、转诊、迁居、急救路线、补助申请、政策游说或商业选址建议 |
 | [Homelessness Unsheltered Health Continuity](domains/homelessness-unsheltered-health-continuity/README.md) | 无家可归、露宿、庇护、外展、住房服务、卫生、安全和照护断点 | 让没有稳定住所的主体仍能维持医疗、卫生、身份、睡眠、安全和福利入口 | 不提供个体庇护、住房申请、法律救济、福利申请、露宿规避、执法规避或生存技巧 |
@@ -1928,5 +1938,6 @@ flowchart LR
 - 2026-07-01：新增第八十三波 10 个预防筛查与风险因子控制连续性域，覆盖高血压检测控制、血脂/动脉粥样硬化风险管理、糖尿病前期预防、肥胖/脂肪代谢风险、烟草尼古丁戒断、酒精风险降低、CKD 筛查进展、癌症筛查早诊、骨质疏松骨折预防和跌倒/家居安全预防。
 - 2026-07-01：新增第八十四波 10 个生活史预防与功能连续性域，覆盖睡眠呼吸障碍、慢性失眠/CBT-I 可及、STI 预防、HIV 检测/PrEP、慢性病毒性肝炎、避孕与家庭计划、月经健康、围绝经期/更年期、盆底控尿控便和皮肤癌/UV 防护。
 - 2026-07-01：新增第八十五波 10 个慢性专科负担与功能恢复连续性域，覆盖慢性疼痛、腰背痛、骨关节炎、自身免疫风湿病、炎症性肠病、MASLD/MASH 慢性肝病、甲状腺疾病、铁缺乏贫血、哮喘/COPD 长期控制和过敏/特应性疾病。
+- 2026-07-01：新增第八十六波 10 个慢性神经退行、神经肌肉与感染后功能连续性域，覆盖帕金森病、多发性硬化、ALS、亨廷顿病、脊髓性肌萎缩症、肌营养不良、重症肌无力、脊髓损伤、ME/CFS 和 Long COVID。
 
 完整记录见 [CHANGELOG.md](CHANGELOG.md)。

@@ -622,6 +622,16 @@
 - `iron-deficiency-anemia-oxygen-carrying-continuity/`：铁缺乏贫血与氧输送连续性，整理铁储备、血红蛋白、疲劳、来源追踪和恢复可及。
 - `asthma-copd-maintenance-control-continuity/`：哮喘/COPD 长期控制连续性，整理症状控制、吸入药可及、触发因素、肺康复和急性加重预防。
 - `allergic-atopic-disease-immunologic-burden-continuity/`：过敏/特应性疾病免疫负担连续性，整理过敏原暴露、瘙痒、睡眠、食物/环境限制和急性反应边界。
+- `parkinsons-disease-movement-control-continuity/`：帕金森病与运动控制连续性，整理慢性神经退行、震颤、僵硬、步态、非运动症状、照护和长期参与。
+- `multiple-sclerosis-demyelination-function-continuity/`：多发性硬化与脱髓鞘功能连续性，整理复发/进展、疲劳、感觉运动、认知变化、服务接入和功能波动。
+- `amyotrophic-lateral-sclerosis-motor-neuron-continuity/`：ALS 与运动神经元连续性，整理肌无力、吞咽呼吸、沟通通道、照护负担、尊严和未来选择权。
+- `huntington-disease-genetic-neurodegeneration-continuity/`：亨廷顿病遗传神经退行连续性，整理运动障碍、认知/精神变化、家庭风险、决策能力和关系安全。
+- `spinal-muscular-atrophy-motor-neuron-continuity/`：脊髓性肌萎缩症运动神经元连续性，整理遗传病程、呼吸吞咽、移动支持、儿童发展和长期照护。
+- `muscular-dystrophy-progressive-weakness-continuity/`：肌营养不良进行性无力连续性，整理肌肉结构退行、心肺风险、移动支持、学校/工作参与和辅助技术。
+- `myasthenia-gravis-neuromuscular-junction-continuity/`：重症肌无力神经肌肉接头连续性，整理波动性肌无力、吞咽呼吸、日内功能波动和急性危象边界。
+- `spinal-cord-injury-paralysis-secondary-complications-continuity/`：脊髓损伤瘫痪与二级并发症连续性，整理感觉运动通道、无障碍、设备、皮肤/泌尿/肠道风险和参与。
+- `me-cfs-post-exertional-energy-limitation-continuity/`：ME/CFS 劳累后能量限制连续性，整理劳累后不适、能量包络、认知困难、睡眠恢复失败和任务节奏。
+- `long-covid-post-acute-infection-continuity/`：Long COVID 感染后长期连续性，整理感染后症状、疲劳脑雾、呼吸、自主调节、多系统负担和服务导航。
 - `governance-rights/`：治理与主体权利，整理同意、退出、数据权、法律身份、AI 治理和研究伦理。
 - `pain-suffering-control/`：疼痛与痛苦控制，整理慢性疼痛、症状负担、姑息医学和可承受持续性。
 - `health-literacy-navigation/`：健康素养与服务导航，整理可理解信息、风险沟通、共同决策和系统入口。

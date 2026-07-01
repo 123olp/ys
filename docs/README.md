@@ -697,4 +697,14 @@ docs/
 511. Read `../domains/iron-deficiency-anemia-oxygen-carrying-continuity/README.md` if you are working on iron deficiency, anemia, hemoglobin, oxygen carrying capacity, fatigue, menstruation/GI/nutrition overlap, or recovery access.
 512. Read `../domains/asthma-copd-maintenance-control-continuity/README.md` if you are working on asthma/COPD long-term control, inhaler access, trigger exposure, pulmonary rehabilitation, activity limitation, or exacerbation prevention.
 513. Read `../domains/allergic-atopic-disease-immunologic-burden-continuity/README.md` if you are working on allergic rhinitis, atopic dermatitis, food allergy, allergen exposure, itch/sleep disruption, anaphylaxis boundary, or participation support.
-514. Enter a domain under `../domains/`.
+514. Read `../domains/parkinsons-disease-movement-control-continuity/README.md` if you are working on Parkinson's disease, movement control, tremor, rigidity, gait, non-motor symptoms, care burden, or long-term participation.
+515. Read `../domains/multiple-sclerosis-demyelination-function-continuity/README.md` if you are working on multiple sclerosis, demyelination, relapse/progression, fatigue, sensory-motor change, cognition, or service continuity.
+516. Read `../domains/amyotrophic-lateral-sclerosis-motor-neuron-continuity/README.md` if you are working on ALS, motor neuron degeneration, weakness, swallowing, breathing, communication, dignity, or care continuity.
+517. Read `../domains/huntington-disease-genetic-neurodegeneration-continuity/README.md` if you are working on Huntington disease, genetic neurodegeneration, movement disorder, cognitive/psychiatric change, family risk, or decision capacity.
+518. Read `../domains/spinal-muscular-atrophy-motor-neuron-continuity/README.md` if you are working on spinal muscular atrophy, inherited motor neuron disease, respiration, swallowing, mobility support, child development, or long-term care.
+519. Read `../domains/muscular-dystrophy-progressive-weakness-continuity/README.md` if you are working on muscular dystrophy, progressive weakness, cardiopulmonary risk, mobility support, school/work participation, or assistive technology.
+520. Read `../domains/myasthenia-gravis-neuromuscular-junction-continuity/README.md` if you are working on myasthenia gravis, neuromuscular junction transmission, fluctuating weakness, swallowing/breathing risk, or crisis boundaries.
+521. Read `../domains/spinal-cord-injury-paralysis-secondary-complications-continuity/README.md` if you are working on spinal cord injury, paralysis, sensory-motor pathways, secondary complications, accessibility, or independent living.
+522. Read `../domains/me-cfs-post-exertional-energy-limitation-continuity/README.md` if you are working on ME/CFS, post-exertional malaise, energy limitation, cognitive difficulty, sleep recovery failure, pacing, or participation.
+523. Read `../domains/long-covid-post-acute-infection-continuity/README.md` if you are working on Long COVID, post-acute infection, fatigue, brain fog, respiratory/autonomic symptoms, multi-system burden, or service navigation.
+524. Enter a domain under `../domains/`.
