@@ -499,6 +499,16 @@ human_infra/
     ├── clinical-trials-regulatory-science-translation/ # 临床试验、监管科学与转化
     ├── geospatial-navigation-location-infrastructure/ # 空间定位、导航与位置基础设施
     ├── weather-climate-observation-forecasting/ # 天气气候观测与预报
+    ├── severe-weather-watch-warning-risk-communication-continuity/ # 强天气预警与风险沟通连续性
+    ├── river-flash-flood-warning-evacuation-continuity/ # 河流洪水、山洪与撤离连续性
+    ├── hurricane-storm-surge-evacuation-shelter-continuity/ # 飓风风暴潮撤离避难连续性
+    ├── tornado-warning-safe-room-shelter-continuity/ # 龙卷风预警与安全室避难连续性
+    ├── winter-storm-cold-exposure-power-continuity/ # 冬季风暴、寒冷暴露与供能连续性
+    ├── drought-water-restriction-household-health-continuity/ # 干旱、水限制与家庭健康连续性
+    ├── landslide-mudslide-debris-flow-warning-continuity/ # 滑坡泥石流预警与撤离连续性
+    ├── wildfire-smoke-clean-air-respiratory-continuity/ # 野火烟雾、清洁空气与呼吸连续性
+    ├── thunderstorm-lightning-outdoor-safety-continuity/ # 雷暴闪电与户外安全连续性
+    ├── coastal-flooding-erosion-inundation-continuity/ # 沿海洪水、侵蚀与淹没连续性
     ├── building-fire-life-safety-codes/ # 建筑消防与生命安全规范
     ├── manufacturing-repair-capacity/ # 制造与维修能力
     ├── public-procurement-contracting-capacity/ # 公共采购与合同能力
@@ -825,6 +835,7 @@ human_infra/
 - `domains/clinical-trials-regulatory-science-translation/` 负责临床试验、监管科学、真实世界证据、安全监测和医学转化证据路径。
 - `domains/geospatial-navigation-location-infrastructure/` 负责地理空间数据、地址、地图、GNSS/GPS、地理编码、应急位置和位置互操作。
 - `domains/weather-climate-observation-forecasting/` 负责天气气候观测、预报模型、气候服务、极端天气和早期预警风险输入。
+- `domains/severe-weather-watch-warning-risk-communication-continuity/`、`domains/river-flash-flood-warning-evacuation-continuity/`、`domains/hurricane-storm-surge-evacuation-shelter-continuity/`、`domains/tornado-warning-safe-room-shelter-continuity/`、`domains/winter-storm-cold-exposure-power-continuity/`、`domains/drought-water-restriction-household-health-continuity/`、`domains/landslide-mudslide-debris-flow-warning-continuity/`、`domains/wildfire-smoke-clean-air-respiratory-continuity/`、`domains/thunderstorm-lightning-outdoor-safety-continuity/` 和 `domains/coastal-flooding-erosion-inundation-continuity/` 负责强天气和自然 hazard 执行连续性，覆盖预警理解、撤离避难、就地保护、空气暴露控制、寒冷/水限制和沿海淹没，不提供实时预警、路线、现场操作、工程、医疗、保险或法律建议。
 - `domains/building-fire-life-safety-codes/` 负责建筑规范、消防规范、生命安全、疏散、烟雾报警、无障碍和韧性改造。
 - `domains/manufacturing-repair-capacity/` 负责制造、维修、维护、备件、质量、本地生产和关键设备恢复能力。
 - `domains/public-procurement-contracting-capacity/` 负责公共采购、合同、供应商管理、应急采购、透明度和交付验收。
@@ -1161,3 +1172,4 @@ human_infra/
 - 2026-07-01：新增第一百波 10 个传染病暴发响应执行连续性域，覆盖病例调查接触追踪、隔离检疫工作学校、社区检测筛查、疫苗行动加强针递送、口罩呼吸防护、室内通风过滤、学校工作场所运营、医疗挤兑分诊容量、医疗对策储备分发和污水病原体早期预警。
 - 2026-07-01：新增第一百零一波 10 个危险材料与工业事故执行连续性域，覆盖化学释放避险撤离、社区化学风险知情披露、HazMat 事故指挥、工业过程安全、有毒羽流空气监测、HAZWOPER 响应者 PPE、暴露后去污分诊、危险材料运输 ERG、油污危险释放响应恢复和电池热失控火灾风险。
 - 2026-07-01：新增 `docs/reference/transcendental-domain-index.md`，把有效永生 A-K 主干域整理为先验追问入口，避免重复建立同义研究域。
+- 2026-07-01：新增第一百零二波 10 个强天气与自然 hazard 执行连续性域，把官方预警到主体保护行动的转换层纳入 Human Infra。

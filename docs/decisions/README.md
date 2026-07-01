@@ -119,3 +119,4 @@ Current decisions:
 - `0104-add-one-hundredth-wave-infectious-disease-outbreak-response-execution-domains.md`
 - `0105-add-one-hundred-first-wave-hazardous-materials-industrial-incident-execution-domains.md`
 - `0106-establish-transcendental-domain-index.md`
+- `0107-add-one-hundred-second-wave-severe-weather-hazard-execution-domains.md`

@@ -589,6 +589,16 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `earthquake-seismic-risk-built-environment-continuity/` | 地震决定建成环境和生命线基础设施是否会在短时间内变成死亡、创伤和服务断点 |
 | `tsunami-warning-coastal-evacuation-continuity/` | 海啸决定沿海主体能否在短窗口内完成预警、理解、撤离、避难和灾后恢复 |
 | `extreme-heat-cooling-public-health-continuity/` | 极端高温决定热健康、制冷、能源、住房、劳动和公共卫生是否能共同接住环境压力 |
+| `severe-weather-watch-warning-risk-communication-continuity/` | 强天气 watch/warning/advisory 能否被接收、理解、信任并转化为避险行动 |
+| `river-flash-flood-warning-evacuation-continuity/` | 洪水和山洪决定主体能否在道路淹没前完成撤离、避难和灾后返回 |
+| `hurricane-storm-surge-evacuation-shelter-continuity/` | 飓风风暴潮决定沿海主体能否在风暴窗口内完成撤离、避难和生命线维护 |
+| `tornado-warning-safe-room-shelter-continuity/` | 龙卷风决定主体能否在分钟级警报窗口内进入安全空间 |
+| `winter-storm-cold-exposure-power-continuity/` | 冬季风暴决定主体能否维持供暖、供电、道路可达和寒冷暴露控制 |
+| `drought-water-restriction-household-health-continuity/` | 干旱和水限制决定饮水、卫生、食品、热风险、野火协同和经济压力是否可管理 |
+| `landslide-mudslide-debris-flow-warning-continuity/` | 滑坡泥石流决定坡面住房、道路、撤离和灾后安全评估是否闭环 |
+| `wildfire-smoke-clean-air-respiratory-continuity/` | 野火烟雾决定空气质量信号、室内保护和呼吸/心血管风险是否被有效转化 |
+| `thunderstorm-lightning-outdoor-safety-continuity/` | 雷暴闪电决定户外工作、学校活动、交通和短时停电树倒风险是否可控 |
+| `coastal-flooding-erosion-inundation-continuity/` | 沿海洪水和侵蚀决定反复淹没地区的住房、道路、医疗、学校和工作入口是否持续 |
 | `noise-exposure-acoustic-environment-continuity/` | 噪声决定睡眠、听觉、沟通、压力恢复和有效时间是否被日常环境持续损耗 |
 | `light-exposure-circadian-environment-continuity/` | 光照与昼夜节律决定主体能否把外部时间同步成睡眠、警觉、代谢和恢复能力 |
 | `lead-heavy-metal-exposure-control/` | 铅与重金属暴露决定住房、水、土壤、工作和产品系统是否会持续侵蚀认知与身体储备 |

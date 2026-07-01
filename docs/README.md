@@ -98,6 +98,31 @@ docs/
 │   ├── 0080-add-seventy-sixth-wave-research-identity-reproducibility-infrastructure-domains.md
 │   ├── 0081-add-seventy-seventh-wave-evidence-synthesis-guideline-translation-domains.md
 │   ├── 0082-add-seventy-eighth-wave-research-correction-scientific-integrity-domains.md
+│   ├── 0083-add-seventy-ninth-wave-ai-evaluation-operations-governance-domains.md
+│   ├── 0084-add-eightieth-wave-compute-energy-connectivity-substrate-domains.md
+│   ├── 0085-add-eighty-first-wave-acute-rescue-organ-support-domains.md
+│   ├── 0086-add-eighty-second-wave-acute-internal-medicine-emergency-domains.md
+│   ├── 0087-add-eighty-third-wave-preventive-risk-factor-control-domains.md
+│   ├── 0088-add-eighty-fourth-wave-life-course-preventive-continuity-domains.md
+│   ├── 0089-add-eighty-fifth-wave-chronic-specialty-burden-continuity-domains.md
+│   ├── 0090-add-eighty-sixth-wave-chronic-neuro-neuromuscular-post-infectious-continuity-domains.md
+│   ├── 0091-add-eighty-seventh-wave-organ-specific-cancer-continuity-domains.md
+│   ├── 0092-add-eighty-eighth-wave-oral-dental-jaw-function-continuity-domains.md
+│   ├── 0093-add-eighty-ninth-wave-eye-disease-visual-function-continuity-domains.md
+│   ├── 0094-add-ninetieth-wave-auditory-communication-execution-continuity-domains.md
+│   ├── 0095-add-ninety-first-wave-vestibular-balance-execution-continuity-domains.md
+│   ├── 0096-add-ninety-second-wave-speech-language-communication-execution-domains.md
+│   ├── 0097-add-ninety-third-wave-swallowing-feeding-execution-domains.md
+│   ├── 0098-add-ninety-fourth-wave-urinary-renal-replacement-continuity-domains.md
+│   ├── 0099-add-ninety-fifth-wave-skin-wound-barrier-continuity-domains.md
+│   ├── 0100-add-ninety-sixth-wave-home-injury-domestic-safety-continuity-domains.md
+│   ├── 0101-add-ninety-seventh-wave-child-recreation-injury-prevention-domains.md
+│   ├── 0102-add-ninety-eighth-wave-household-personal-emergency-preparedness-domains.md
+│   ├── 0103-add-ninety-ninth-wave-disaster-recovery-execution-continuity-domains.md
+│   ├── 0104-add-one-hundredth-wave-infectious-disease-outbreak-response-execution-domains.md
+│   ├── 0105-add-one-hundred-first-wave-hazardous-materials-industrial-incident-execution-domains.md
+│   ├── 0106-establish-transcendental-domain-index.md
+│   ├── 0107-add-one-hundred-second-wave-severe-weather-hazard-execution-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -859,4 +884,14 @@ docs/
 671. Read `../domains/hazardous-materials-transportation-erg-continuity/README.md` if you are working on hazardous materials transportation, ERG, identification interfaces, road/rail/pipeline/port incidents, traffic disruption, or community communication.
 672. Read `../domains/oil-spill-hazardous-release-response-recovery-continuity/README.md` if you are working on oil spills, hazardous releases, coastal/waterway response, worker safety, fisheries/tourism income disruption, or long-term monitoring.
 673. Read `../domains/battery-thermal-runaway-fire-hazard-continuity/README.md` if you are working on lithium-ion batteries, thermal runaway, micro-mobility fires, energy storage incidents, recalls, smoke exposure, or housing/fire interfaces.
-674. Enter a domain under `../domains/`.
+674. Read `../domains/severe-weather-watch-warning-risk-communication-continuity/README.md` if you are working on weather watches/warnings/advisories, alert comprehension, warning channels, protective-action translation, or false-alarm trust.
+675. Read `../domains/river-flash-flood-warning-evacuation-continuity/README.md` if you are working on river flooding, flash flooding, flood warnings, evacuation triggers, road closure, shelter routing, or flood-return boundaries.
+676. Read `../domains/hurricane-storm-surge-evacuation-shelter-continuity/README.md` if you are working on hurricanes, storm surge, evacuation zones, shelter continuity, coastal transport, or post-landfall service disruption.
+677. Read `../domains/tornado-warning-safe-room-shelter-continuity/README.md` if you are working on tornado warnings, safe rooms, interior refuge, mobile-home vulnerability, school/workplace sheltering, or short-fuse protective action.
+678. Read `../domains/winter-storm-cold-exposure-power-continuity/README.md` if you are working on winter storms, extreme cold, heating failure, power outages, hypothermia risk, generator safety, or road isolation.
+679. Read `../domains/drought-water-restriction-household-health-continuity/README.md` if you are working on drought, water restrictions, household water continuity, heat and agricultural stress, or public-health drought impacts.
+680. Read `../domains/landslide-mudslide-debris-flow-warning-continuity/README.md` if you are working on landslides, mudslides, debris flows, burn-scar rainfall, slope instability, evacuation warning, or road/lifeline blockage.
+681. Read `../domains/wildfire-smoke-clean-air-respiratory-continuity/README.md` if you are working on wildfire smoke, clean-air rooms, AQI/PM2.5, respiratory protection, indoor filtration, or smoke-sensitive populations.
+682. Read `../domains/thunderstorm-lightning-outdoor-safety-continuity/README.md` if you are working on thunderstorms, lightning safety, outdoor activity interruption, shelter timing, sports/event operations, or electrical storm exposure.
+683. Read `../domains/coastal-flooding-erosion-inundation-continuity/README.md` if you are working on coastal flooding, high-tide flooding, erosion, inundation, road access, property exposure, or coastal service continuity.
+684. Enter a domain under `../domains/`.

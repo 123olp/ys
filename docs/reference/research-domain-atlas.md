@@ -312,6 +312,16 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 地震建成环境风险必须可承受 | `earthquake-seismic-risk-built-environment-continuity/` | 地震危险性、抗震建筑、医院、道路、水电燃气、通信、恢复 | 建筑和生命线基础设施在短时间内转化为死亡、创伤和服务断点 |
 | 海啸短窗口撤离必须闭环 | `tsunami-warning-coastal-evacuation-continuity/` | 海啸监测、警报、沿海撤离、垂直避难、无障碍、灾后恢复 | 警报、理解、撤离、避难或恢复任一断裂都会放大沿海死亡和失能风险 |
 | 极端高温必须被制冷和公共卫生接住 | `extreme-heat-cooling-public-health-continuity/` | 热健康、制冷可及、能源负担、住房质量、劳动暴露、城市热岛 | 高温通过体温调节失败、睡眠破坏、劳动暴露、停电和住房质量压缩有效时间 |
+| 强天气预警必须转化为行动 | `severe-weather-watch-warning-risk-communication-continuity/` | watch、warning、advisory、WEA、NOAA Weather Radio、语言可达、信任、行动阈值 | 预警被误解、忽视、淹没或无法触达时，观测能力不会转化为生存能力 |
+| 洪水和山洪必须可及时避险撤离 | `river-flash-flood-warning-evacuation-continuity/` | 洪水警报、道路淹没、撤离、避难、饮水卫生、灾后返回 | 涉水、迟滞撤离、道路封闭和住房损坏会放大溺水、创伤、感染和流离风险 |
+| 飓风风暴潮必须可撤离可避难 | `hurricane-storm-surge-evacuation-shelter-continuity/` | 风暴潮、撤离区、避难所、停电、供水、通信、医疗供能 | 沿海风暴会同时切断住房、交通、能源、水、通信和医疗服务 |
+| 龙卷风必须进入安全空间 | `tornado-warning-safe-room-shelter-continuity/` | 龙卷风警报、安全室、地下室、室内避难、移动房屋、夜间警报 | 分钟级窗口内无法切换到安全空间会造成急性创伤、失联和住房损失 |
+| 冬季风暴必须维持体温和供能 | `winter-storm-cold-exposure-power-continuity/` | 极寒、冰雪、停电、供暖、道路封闭、CO 风险、医疗设备 | 寒冷、停电、封路和取暖风险会转化为低体温、冻伤、CO 中毒和治疗中断 |
+| 干旱必须保持家庭水与健康底座 | `drought-water-restriction-household-health-continuity/` | 干旱监测、水限制、饮水卫生、食品、热风险、野火协同 | 慢性水压力会转化为脱水、卫生失败、营养不稳、热病、经济冲击和迁移风险 |
+| 滑坡泥石流必须被识别和撤离 | `landslide-mudslide-debris-flow-warning-continuity/` | 滑坡、泥石流、碎屑流、火后坡面、道路阻断、撤离 | 坡面灾害会在短时间内造成掩埋、隔离、道路断裂和住房丧失 |
+| 野火烟雾必须转化为清洁空气保护 | `wildfire-smoke-clean-air-respiratory-continuity/` | AQI、PM2.5、清洁空气房间、过滤、活动调整、慢病稳定 | 烟雾会远距离增加呼吸和心血管风险、睡眠中断、缺勤和医疗挤兑 |
+| 雷暴闪电必须暂停户外暴露 | `thunderstorm-lightning-outdoor-safety-continuity/` | 闪电、强风、冰雹、户外工作、学校体育、活动暂停、倒树停电 | 日常户外任务若未及时暂停，会转化为雷击、创伤、停电、交通和任务中断风险 |
+| 沿海洪水必须维持通勤和服务可达 | `coastal-flooding-erosion-inundation-continuity/` | 高高潮、沿海洪水、侵蚀、道路淹没、公共工程、长期迁移 | 反复淹没会压缩医疗、学校、工作、住房、保险和公共服务可达性 |
 | 声环境必须不持续损耗恢复 | `noise-exposure-acoustic-environment-continuity/` | 交通噪声、职业噪声、社区噪声、听力、睡眠、沟通、压力负荷 | 噪声长期破坏睡眠、听觉、注意力、沟通和心血管压力恢复 |
 | 光照节律必须可同步 | `light-exposure-circadian-environment-continuity/` | 自然光、夜间光、室内照明、轮班、光污染、睡眠时相 | 节律错配让睡眠、警觉、代谢、情绪和有效时间持续失稳 |
 | 重金属暴露必须被切断 | `lead-heavy-metal-exposure-control/` | 铅、汞、镉、砷、住房、饮水、土壤、粉尘、职业和产品暴露 | 神经毒性、儿童发育损伤、肾血液系统负担和认知资本损耗 |

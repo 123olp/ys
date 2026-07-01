@@ -1307,6 +1307,8 @@ Human Infra 不能被设计成更精密的压榨系统。
 
 `space-weather-geomagnetic-storm-resilience`、`planetary-defense-near-earth-object-risk`、`volcanic-ashfall-geohazard-continuity`、`earthquake-seismic-risk-built-environment-continuity`、`tsunami-warning-coastal-evacuation-continuity` 和 `extreme-heat-cooling-public-health-continuity` 关注空间天气、近地天体、火山灰、地震、海啸和极端高温如何通过电力、通信、定位、住房、交通、公共卫生、基础设施和恢复系统影响主体持续性，不是实时预警、工程、应急指挥或个人安全决策入口。
 
+`severe-weather-watch-warning-risk-communication-continuity`、`river-flash-flood-warning-evacuation-continuity`、`hurricane-storm-surge-evacuation-shelter-continuity`、`tornado-warning-safe-room-shelter-continuity`、`winter-storm-cold-exposure-power-continuity`、`drought-water-restriction-household-health-continuity`、`landslide-mudslide-debris-flow-warning-continuity`、`wildfire-smoke-clean-air-respiratory-continuity`、`thunderstorm-lightning-outdoor-safety-continuity` 和 `coastal-flooding-erosion-inundation-continuity` 关注强天气和自然 hazard 中官方预警、风险理解、撤离避难、就地保护、空气暴露、寒冷、水限制、道路可达和服务连续性如何影响主体持续性，不是实时预警发布、个案警报解释、撤离路线、避难点选择、道路判断、现场操作、工程设计、医疗急救、保险理赔、法律金融建议或应急指挥入口。
+
 可以做：
 
 - 整理 NOAA、NASA、USGS、FEMA、CDC、OSHA 等公开来源、机制链、预警模型、风险变量、基础设施依赖和恢复断点。

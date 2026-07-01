@@ -111,6 +111,11 @@ docs/
 │   ├── 0100-add-ninety-sixth-wave-home-injury-domestic-safety-continuity-domains.md
 │   ├── 0101-add-ninety-seventh-wave-child-recreation-injury-prevention-domains.md
 │   ├── 0102-add-ninety-eighth-wave-household-personal-emergency-preparedness-domains.md
+│   ├── 0103-add-ninety-ninth-wave-disaster-recovery-execution-continuity-domains.md
+│   ├── 0104-add-one-hundredth-wave-infectious-disease-outbreak-response-execution-domains.md
+│   ├── 0105-add-one-hundred-first-wave-hazardous-materials-industrial-incident-execution-domains.md
+│   ├── 0106-establish-transcendental-domain-index.md
+│   ├── 0107-add-one-hundred-second-wave-severe-weather-hazard-execution-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -276,6 +281,7 @@ docs/
 - `domains/dental-caries-prevention-restoration-continuity/`、`domains/periodontal-disease-systemic-inflammation-continuity/`、`domains/tooth-loss-prosthodontic-chewing-continuity/`、`domains/dental-pain-emergency-infection-continuity/`、`domains/oral-cancer-mucosal-lesion-early-detection-continuity/`、`domains/pediatric-oral-health-development-continuity/`、`domains/geriatric-long-term-care-oral-health-continuity/`、`domains/dental-care-access-insurance-workforce-continuity/`、`domains/xerostomia-salivary-function-oral-medication-continuity/` 和 `domains/temporomandibular-orofacial-pain-jaw-function-continuity/`：第八十八波正式研究域，分别承载龋病、牙周病、缺牙修复咀嚼、牙痛急性感染、口腔癌早期识别、儿童口腔、老年长期照护口腔、牙科服务可及性、口干唾液功能和颞下颌/口颌面痛。
 - `domains/outbreak-case-investigation-contact-tracing-continuity/`、`domains/isolation-quarantine-work-school-continuity/`、`domains/community-testing-screening-access-continuity/`、`domains/vaccination-campaign-booster-delivery-continuity/`、`domains/mask-respirator-source-control-fit-access-continuity/`、`domains/indoor-ventilation-filtration-outbreak-control-continuity/`、`domains/school-workplace-outbreak-operations-continuity/`、`domains/healthcare-surge-triage-capacity-continuity/`、`domains/medical-countermeasure-stockpile-distribution-continuity/` 和 `domains/wastewater-pathogen-surveillance-early-warning-continuity/`：第一百波正式研究域，分别承载传染病暴发中的病例调查接触追踪、隔离检疫工作学校、社区检测筛查、疫苗行动加强针递送、口罩呼吸防护、室内通风过滤、学校工作场所运营、医疗挤兑分诊容量、医疗对策储备分发和污水病原体早期预警。
 - `domains/chemical-release-shelter-evacuation-continuity/`、`domains/community-right-to-know-chemical-risk-disclosure-continuity/`、`domains/hazmat-incident-command-emergency-response-continuity/`、`domains/industrial-process-safety-management-continuity/`、`domains/toxic-plume-air-monitoring-risk-communication-continuity/`、`domains/hazwoper-responder-ppe-safety-continuity/`、`domains/decontamination-exposure-triage-continuity/`、`domains/hazardous-materials-transportation-erg-continuity/`、`domains/oil-spill-hazardous-release-response-recovery-continuity/` 和 `domains/battery-thermal-runaway-fire-hazard-continuity/`：第一百零一波正式研究域，分别承载危险材料事故中的化学释放避险撤离、社区风险知情披露、HazMat 指挥、工业过程安全、有毒羽流空气监测、响应者 PPE、暴露后去污分诊、危险品运输 ERG、油污危险释放恢复和电池热失控火灾风险。
+- `domains/severe-weather-watch-warning-risk-communication-continuity/`、`domains/river-flash-flood-warning-evacuation-continuity/`、`domains/hurricane-storm-surge-evacuation-shelter-continuity/`、`domains/tornado-warning-safe-room-shelter-continuity/`、`domains/winter-storm-cold-exposure-power-continuity/`、`domains/drought-water-restriction-household-health-continuity/`、`domains/landslide-mudslide-debris-flow-warning-continuity/`、`domains/wildfire-smoke-clean-air-respiratory-continuity/`、`domains/thunderstorm-lightning-outdoor-safety-continuity/` 和 `domains/coastal-flooding-erosion-inundation-continuity/`：第一百零二波正式研究域，分别承载强天气预警沟通、河流/山洪预警撤离、飓风风暴潮撤离避难、龙卷风短时避险、冬季风暴寒冷停电、干旱用水与健康、滑坡泥石流预警、野火烟雾清洁空气、雷暴闪电户外安全和海岸洪水侵蚀淹没连续性。
 - `reference/research-model-visualization-toolkit.md`：沉淀科研论文阅读、文献脊梁、模型工具、可视化标准和 Human Infra 定量页面实现路线。
 - `reference/source-card-system.md`：定义论文、书籍、工具、案例、标准和数据集进入项目之前的资料卡片制度。
 - `reference/domain-map.md`：定义根项目与子域的边界、迁移切片、主动不做和验证点。

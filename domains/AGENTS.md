@@ -332,6 +332,36 @@ domains/
 ├── extreme-heat-cooling-public-health-continuity/
 │   ├── AGENTS.md
 │   └── README.md
+├── severe-weather-watch-warning-risk-communication-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── river-flash-flood-warning-evacuation-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── hurricane-storm-surge-evacuation-shelter-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── tornado-warning-safe-room-shelter-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── winter-storm-cold-exposure-power-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── drought-water-restriction-household-health-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── landslide-mudslide-debris-flow-warning-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── wildfire-smoke-clean-air-respiratory-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── thunderstorm-lightning-outdoor-safety-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── coastal-flooding-erosion-inundation-continuity/
+│   ├── AGENTS.md
+│   └── README.md
 ├── noise-exposure-acoustic-environment-continuity/
 │   ├── AGENTS.md
 │   └── README.md
@@ -1629,6 +1659,36 @@ domains/
 ├── disaster-volunteer-donations-management-continuity/
 │   ├── AGENTS.md
 │   └── README.md
+├── severe-weather-watch-warning-risk-communication-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── river-flash-flood-warning-evacuation-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── hurricane-storm-surge-evacuation-shelter-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── tornado-warning-safe-room-shelter-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── winter-storm-cold-exposure-power-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── drought-water-restriction-household-health-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── landslide-mudslide-debris-flow-warning-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── wildfire-smoke-clean-air-respiratory-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── thunderstorm-lightning-outdoor-safety-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── coastal-flooding-erosion-inundation-continuity/
+│   ├── AGENTS.md
+│   └── README.md
 ├── sleep-disordered-breathing-screening-treatment-continuity/
 │   ├── AGENTS.md
 │   └── README.md
@@ -2330,6 +2390,7 @@ domains/
 - `swallowing-dysphagia-aspiration-nutrition/` 负责吞咽、误吸与营养总框架；`oropharyngeal-dysphagia-swallow-safety-continuity/`、`esophageal-dysphagia-motility-obstruction-continuity/`、`aspiration-pneumonia-airway-protection-continuity/`、`choking-foreign-body-airway-risk-continuity/`、`texture-modified-diet-thickened-liquid-continuity/`、`enteral-feeding-tube-nutrition-continuity/`、`pediatric-feeding-swallowing-development-continuity/`、`post-stroke-dysphagia-screening-recovery-continuity/`、`neurodegenerative-dysphagia-nutrition-continuity/` 和 `feeding-assistance-mealtime-dignity-continuity/` 负责口咽吞咽、食管吞咽、误吸肺炎、窒息、质地饮食、管饲、儿童摄食、卒中吞咽、神经退行性吞咽和进食协助这些吞咽摄食执行层失效模式。
 - `smell-taste-chemosensory-continuity/` 和 `peripheral-neuropathy-somatosensory-continuity/` 负责化学感知和身体边界反馈这些感官、沟通与具身反馈连续性条件。
 - `space-weather-geomagnetic-storm-resilience/`、`planetary-defense-near-earth-object-risk/`、`volcanic-ashfall-geohazard-continuity/`、`earthquake-seismic-risk-built-environment-continuity/`、`tsunami-warning-coastal-evacuation-continuity/` 和 `extreme-heat-cooling-public-health-continuity/` 负责空间天气、近地天体、火山灰、地震、海啸和极端高温这些行星、地球物理与极端热风险连续性条件。
+- `severe-weather-watch-warning-risk-communication-continuity/`、`river-flash-flood-warning-evacuation-continuity/`、`hurricane-storm-surge-evacuation-shelter-continuity/`、`tornado-warning-safe-room-shelter-continuity/`、`winter-storm-cold-exposure-power-continuity/`、`drought-water-restriction-household-health-continuity/`、`landslide-mudslide-debris-flow-warning-continuity/`、`wildfire-smoke-clean-air-respiratory-continuity/`、`thunderstorm-lightning-outdoor-safety-continuity/` 和 `coastal-flooding-erosion-inundation-continuity/` 负责强天气和自然 hazard 执行连续性条件，覆盖官方预警、风险理解、撤离避难、寒冷/水限制、烟雾暴露、户外安全和沿海淹没。
 - `noise-exposure-acoustic-environment-continuity/`、`light-exposure-circadian-environment-continuity/`、`lead-heavy-metal-exposure-control/`、`radon-asbestos-indoor-hazard-continuity/`、`mold-dampness-indoor-biological-exposure/` 和 `vector-borne-disease-environmental-control/` 负责噪声、光照节律、铅与重金属、氡与石棉、霉菌潮湿和病媒传播这些慢性环境暴露与日常损耗条件。
 - `advance-care-planning-medical-decision-continuity/`、`supported-decision-making-guardianship-rights/`、`healthcare-personal-representative-hipaa-access-continuity/`、`financial-fiduciary-power-of-attorney-continuity/`、`representative-payee-benefits-management-continuity/` 和 `trust-estate-affairs-succession-continuity/` 负责预先医疗照护计划、支持性决策、医疗个人代表、财务受托、代表收款人和事务继承这些决策权、代理权与受托连续性条件。
 - `credit-consumer-reporting-access-continuity/`、`tenant-screening-rental-access-continuity/`、`background-check-record-screening-continuity/`、`employment-algorithmic-hiring-screening-continuity/`、`insurance-underwriting-algorithmic-risk-scoring-continuity/` 和 `public-benefits-eligibility-automated-decision-continuity/` 负责信用与消费者报告、租房筛查、背景记录筛查、算法招聘、保险算法评分和公共福利自动资格系统这些算法化准入、筛查与资格连续性条件。
@@ -2420,6 +2481,7 @@ domains/
 - `drowning-water-safety-supervision-continuity/`、`pool-spa-barrier-drain-entrapment-safety-continuity/`、`boating-life-jacket-watercraft-safety-continuity/`、`child-passenger-safety-car-seat-restraint-continuity/`、`bicycle-helmet-wheeled-sports-head-injury-prevention-continuity/`、`playground-surface-equipment-fall-injury-prevention-continuity/`、`sports-concussion-return-to-play-protocol-continuity/`、`infant-safe-sleep-suid-risk-reduction-continuity/`、`firearm-safe-storage-injury-prevention-continuity/` 和 `atv-off-highway-vehicle-injury-prevention-continuity/` 负责儿童、运动与娱乐伤害预防执行层的证据边界，不提供游泳/救援/复苏、泳池施工、船艇驾驶、座椅安装、骑行路线、游乐场检查、返赛许可、婴儿睡眠安排、枪支操作/储存步骤、ATV 驾驶、产品、法律、保险、医疗或个体安全建议。
 - `emergency-supply-kit-go-bag-rotation-continuity/`、`family-emergency-communication-reunification-continuity/`、`evacuation-route-transportation-shelter-plan-continuity/`、`shelter-in-place-clean-air-room-indoor-protection-continuity/`、`backup-power-battery-generator-safety-continuity/`、`emergency-food-water-storage-treatment-continuity/`、`refrigerated-medication-medical-device-power-outage-continuity/`、`emergency-financial-document-cash-readiness-continuity/`、`disability-access-functional-needs-personal-preparedness-continuity/` 和 `older-adult-caregiver-disaster-preparedness-continuity/` 负责家庭与个人应急准备执行层的证据边界，不提供个人物资清单、撤离路线、实时灾害指挥、房屋密封、电气/发电机操作、食品水处理、药物判断、医疗设备备用、财务法律、残障登记、老年照护计划或个体现场行动建议。
 - `disaster-individual-assistance-benefits-navigation-continuity/`、`disaster-temporary-housing-displacement-recovery-continuity/`、`disaster-recovery-center-service-access-continuity/`、`disaster-case-management-long-term-recovery-continuity/`、`disaster-unemployment-income-disruption-continuity/`、`disaster-legal-aid-rights-claims-continuity/`、`disaster-debris-waste-sanitation-cleanup-continuity/`、`post-flood-mold-moisture-indoor-recovery-continuity/`、`disaster-behavioral-health-distress-recovery-continuity/` 和 `disaster-volunteer-donations-management-continuity/` 负责灾后恢复执行层的证据边界，不提供个案救助、资格判断、房源推荐、恢复中心实时位置、社工替代、失业申请代办、法律意见、保险理赔、清理操作、霉菌检测、心理诊断、志愿派遣、捐赠收款或现场调度建议。
+- `severe-weather-watch-warning-risk-communication-continuity/`、`river-flash-flood-warning-evacuation-continuity/`、`hurricane-storm-surge-evacuation-shelter-continuity/`、`tornado-warning-safe-room-shelter-continuity/`、`winter-storm-cold-exposure-power-continuity/`、`drought-water-restriction-household-health-continuity/`、`landslide-mudslide-debris-flow-warning-continuity/`、`wildfire-smoke-clean-air-respiratory-continuity/`、`thunderstorm-lightning-outdoor-safety-continuity/` 和 `coastal-flooding-erosion-inundation-continuity/` 负责强天气和自然 hazard 执行层的证据边界，不提供实时预警、个案警报解释、撤离路线、避难点、道路判断、现场操作、工程设计、医疗急救、保险理赔、法律/金融建议或应急指挥。
 - `urinary-tract-infection-pyelonephritis-urosepsis-continuity/`、`catheter-associated-uti-device-infection-continuity/`、`urinary-retention-bladder-emptying-continuity/`、`overactive-bladder-nocturia-sleep-continuity/`、`kidney-stone-obstruction-renal-colic-continuity/`、`benign-prostatic-hyperplasia-luts-continuity/`、`urinary-diversion-urostomy-supplies-continuity/`、`dialysis-access-vascular-peritoneal-continuity/`、`home-dialysis-supply-self-management-continuity/` 和 `kidney-transplant-immunosuppression-graft-continuity/` 负责泌尿与肾脏替代执行层的证据边界，不提供尿检/实验室解释、抗生素、导尿/拔管/护理、排尿训练、止痛/排石、BPH 用药/手术、造口护理/产品、透析通路/参数/操作、家庭透析故障处理、移植资格/免疫抑制用药、急诊分诊、保险申诉或个体医疗建议。
 - `breast-cancer-screening-treatment-survivorship-continuity/`、`colorectal-cancer-screening-treatment-continuity/`、`lung-cancer-screening-treatment-continuity/`、`prostate-cancer-screening-treatment-continuity/`、`cervical-cancer-hpv-prevention-screening-continuity/`、`ovarian-cancer-symptom-detection-treatment-continuity/`、`pancreatic-cancer-high-risk-detection-treatment-continuity/`、`liver-cancer-cirrhosis-surveillance-treatment-continuity/`、`childhood-cancer-treatment-survivorship-continuity/` 和 `cancer-survivorship-late-effects-continuity/` 负责器官/阶段特异癌症连续性的证据边界，不提供乳腺、结直肠、肺、前列腺、宫颈、卵巢、胰腺、肝、儿童癌症或幸存者的个体诊断、影像/病理/标志物判读、筛查频率、遗传风险、治疗方案、用药、手术、随访、保险、工作证明或预后建议。
 - `sleep-disordered-breathing-screening-treatment-continuity/`、`chronic-insomnia-cbti-access-continuity/`、`sexual-health-sti-prevention-continuity/`、`hiv-testing-prep-prevention-continuity/`、`chronic-viral-hepatitis-screening-liver-protection-continuity/`、`contraception-family-planning-access-continuity/`、`menstrual-health-cycle-literacy-continuity/`、`perimenopause-menopause-midlife-health-continuity/`、`pelvic-floor-continence-function-continuity/` 和 `skin-cancer-uv-protection-early-detection-continuity/` 负责生活史预防与功能连续性的证据边界，不提供睡眠报告判读、CBT-I 操作、STI/HIV/肝炎检测解释、PrEP/PEP/ART、避孕选择、周期判读、激素治疗、盆底训练、皮损照片判断、防晒产品、用药、检查频率、保险、法律或个体医疗建议。

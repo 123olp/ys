@@ -406,6 +406,16 @@
 - `earthquake-seismic-risk-built-environment-continuity/`：地震与建成环境连续性，整理地震危险性、抗震建筑、医院、道路、水电燃气和通信恢复。
 - `tsunami-warning-coastal-evacuation-continuity/`：海啸预警与沿海撤离连续性，整理海啸监测、警报、撤离、垂直避难和灾后恢复。
 - `extreme-heat-cooling-public-health-continuity/`：极端高温、制冷与公共卫生连续性，整理热健康、制冷可及、能源负担、住房、劳动暴露和城市热岛。
+- `severe-weather-watch-warning-risk-communication-continuity/`：强天气预警与风险沟通连续性，整理 watch/warning/advisory、警报渠道、风险理解、信任和行动翻译。
+- `river-flash-flood-warning-evacuation-continuity/`：河流洪水与山洪撤离连续性，整理洪水预警、道路淹没、撤离、避难和灾后返回。
+- `hurricane-storm-surge-evacuation-shelter-continuity/`：飓风风暴潮撤离避难连续性，整理风暴潮、撤离区、避难所、停电、供水和医疗供能。
+- `tornado-warning-safe-room-shelter-continuity/`：龙卷风预警与安全室避难连续性，整理短窗口警报、安全室、移动房屋、夜间警报和灾后搜救入口。
+- `winter-storm-cold-exposure-power-continuity/`：冬季风暴、寒冷暴露与供能连续性，整理冰雪、极寒、停电、供暖、道路封闭和低体温风险。
+- `drought-water-restriction-household-health-continuity/`：干旱水限制与家庭健康连续性，整理供水限制、饮水卫生、食品、热风险和野火协同。
+- `landslide-mudslide-debris-flow-warning-continuity/`：滑坡泥石流预警连续性，整理降雨触发、火后坡面、道路阻断、撤离和灾后评估。
+- `wildfire-smoke-clean-air-respiratory-continuity/`：野火烟雾清洁空气与呼吸连续性，整理 AQI、PM2.5、室内过滤、清洁空气房间和慢病加重风险。
+- `thunderstorm-lightning-outdoor-safety-continuity/`：雷暴闪电户外安全连续性，整理雷击、强风、冰雹、户外工作、活动暂停和停电树倒风险。
+- `coastal-flooding-erosion-inundation-continuity/`：沿海洪水、侵蚀与淹没连续性，整理高高潮、道路反复淹没、住房、公共工程和服务可达。
 - `noise-exposure-acoustic-environment-continuity/`：噪声暴露与声环境连续性，整理交通、职业、社区和居住噪声对睡眠、听力、沟通、压力和有效时间的影响。
 - `light-exposure-circadian-environment-continuity/`：光照暴露与昼夜节律环境连续性，整理自然光、夜间光、室内照明、轮班和光污染对睡眠、警觉、代谢和恢复的影响。
 - `lead-heavy-metal-exposure-control/`：铅与重金属暴露控制，整理铅、汞、镉、砷等通过住房、饮水、土壤、工作和产品造成的慢性损耗。

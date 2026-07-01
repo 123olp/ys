@@ -394,6 +394,16 @@ flowchart TD
     H --> CTRST[clinical-trials-regulatory-science-translation<br/>临床试验 / 监管科学]
     H --> GNL[geospatial-navigation-location-infrastructure<br/>空间定位 / 导航 / 位置]
     H --> WCOF[weather-climate-observation-forecasting<br/>天气气候 / 观测预报]
+    WCOF --> SWWWRCC[severe-weather-watch-warning<br/>强天气预警 / 风险沟通]
+    WCOF --> RFFWEC[river-flash-flood<br/>河流山洪 / 撤离]
+    WCOF --> HSSESC[hurricane-storm-surge<br/>飓风风暴潮 / 避难]
+    WCOF --> TWRSSC[tornado-warning<br/>龙卷风 / 安全室]
+    WCOF --> WSCEPC[winter-storm-cold<br/>冬季风暴 / 寒冷供能]
+    WCOF --> DWRHHC[drought-water-restriction<br/>干旱水限制 / 健康]
+    WCOF --> LMDFWC[landslide-debris-flow<br/>滑坡泥石流 / 预警]
+    WCOF --> WSCAIRC[wildfire-smoke-clean-air<br/>野火烟雾 / 清洁空气]
+    WCOF --> TLOSC[thunderstorm-lightning<br/>雷暴闪电 / 户外安全]
+    WCOF --> CFEIC[coastal-flooding-erosion<br/>沿海洪水 / 侵蚀]
     H --> BFLSC[building-fire-life-safety-codes<br/>建筑消防 / 生命安全]
     H --> MRC[manufacturing-repair-capacity<br/>制造 / 维修能力]
     H --> PPCC[public-procurement-contracting-capacity<br/>公共采购 / 合同能力]
@@ -1451,6 +1461,16 @@ flowchart TD
 | [Clinical Trials Regulatory Science Translation](domains/clinical-trials-regulatory-science-translation/README.md) | 临床试验、监管科学、真实世界证据、安全监测和批准路径 | 把医学发现转化为可验证、可监管、可扩散的干预 | 不提供入组、治疗、用药、停药、试验选择、人体试验操作或监管规避建议 |
 | [Geospatial Navigation Location Infrastructure](domains/geospatial-navigation-location-infrastructure/README.md) | 地理空间数据、地址、地图、GNSS/GPS、地理编码和位置服务 | 让人、资源、风险、服务和救援目标可被定位、导航和分配 | 不提供跟踪、监控、骚扰、人肉搜索、危险路线或基础设施目标定位 |
 | [Weather Climate Observation Forecasting](domains/weather-climate-observation-forecasting/README.md) | 天气观测、气候服务、预报模型、极端天气和早期预警输入 | 把外部环境风险提前转化为家庭、公共服务和基础设施响应窗口 | 不提供实时灾害指挥、撤离路线、个人安全承诺、交易或规避官方预警建议 |
+| [Severe Weather Watch Warning Risk Communication Continuity](domains/severe-weather-watch-warning-risk-communication-continuity/README.md) | watch/warning/advisory、警报渠道、风险理解和行动翻译 | 把官方天气预警转化为避险、撤离、庇护或暴露控制行动 | 不发布实时预警、个案警报解释、应急指挥或舆论操控 |
+| [River and Flash Flood Warning Evacuation Continuity](domains/river-flash-flood-warning-evacuation-continuity/README.md) | 河流洪水、山洪、道路淹没、洪水预警和撤离避难 | 把洪水预警、道路可达和避难入口纳入主体短窗口生存模型 | 不提供实时洪水预警、行车路线、涉水判断、撤离点或理赔建议 |
+| [Hurricane Storm Surge Evacuation Shelter Continuity](domains/hurricane-storm-surge-evacuation-shelter-continuity/README.md) | 飓风、风暴潮、撤离区、避难所、停电和生命线中断 | 把沿海风暴中的撤离、避难、电水通信和医疗供能纳入模型 | 不提供实时路径、撤离路线、避难所选择、发电机操作或保险建议 |
+| [Tornado Warning Safe Room Shelter Continuity](domains/tornado-warning-safe-room-shelter-continuity/README.md) | 龙卷风预警、安全室、室内避难、移动房屋和夜间警报 | 把分钟级警报理解与安全空间切换纳入急性风险窗口 | 不提供实时龙卷风判断、避难点、建筑鉴定、风暴追逐或救援建议 |
+| [Winter Storm Cold Exposure Power Continuity](domains/winter-storm-cold-exposure-power-continuity/README.md) | 冬季风暴、极寒、冰雪、停电、取暖和道路中断 | 把寒冷暴露、能源、交通、医疗设备和照护连续性纳入模型 | 不提供道路、设备、发电机、低体温急救、药物处理或医疗建议 |
+| [Drought Water Restriction Household Health Continuity](domains/drought-water-restriction-household-health-continuity/README.md) | 干旱、供水限制、卫生、食品、热风险和野火协同 | 把慢性水资源压力转化为家庭健康、资源和迁移风险模型 | 不提供水权、灌溉、井水处理、法律合规、地产投资或医疗建议 |
+| [Landslide Mudslide Debris Flow Warning Continuity](domains/landslide-mudslide-debris-flow-warning-continuity/README.md) | 滑坡、泥石流、碎屑流、火后坡面、道路阻断和撤离 | 把坡面灾害中的危险识别、撤离和道路可达纳入模型 | 不提供坡体稳定判断、房屋鉴定、实时路线、工程加固或购房建议 |
+| [Wildfire Smoke Clean Air Respiratory Continuity](domains/wildfire-smoke-clean-air-respiratory-continuity/README.md) | 野火烟雾、AQI、PM2.5、清洁空气房间、过滤和呼吸风险 | 把远距离烟雾暴露、室内空气和慢病稳定纳入有效时间模型 | 不提供产品推荐、个人医疗处置、职业合规、停课或实时 AQI 指令 |
+| [Thunderstorm Lightning Outdoor Safety Continuity](domains/thunderstorm-lightning-outdoor-safety-continuity/README.md) | 雷暴、闪电、强风、冰雹、户外工作和活动暂停 | 把短时强对流警报转化为户外任务暂停、避险和恢复判断 | 不提供实时雷暴判断、活动许可、电线树木处理、航行或急救建议 |
+| [Coastal Flooding Erosion Inundation Continuity](domains/coastal-flooding-erosion-inundation-continuity/README.md) | 高高潮、沿海洪水、侵蚀、道路淹没和公共服务可达 | 把反复淹没、道路可达、住房和长期迁移压力纳入模型 | 不提供实时潮汐行动、购房选址、保险、工程、诉讼或投资建议 |
 | [Building Fire Life Safety Codes](domains/building-fire-life-safety-codes/README.md) | 建筑规范、消防规范、疏散、烟雾报警、无障碍和韧性改造 | 防止居住、照护、学习、工作和公共空间成为死亡与失能风险源 | 不提供施工、电气、消防系统、灭火、救援、规范规避或验收绕过建议 |
 | [Manufacturing Repair Capacity](domains/manufacturing-repair-capacity/README.md) | 制造、维修、维护、备件、质量、本地生产和关键设备恢复 | 让关键设备、工具、医疗与生活基础设施在损坏或断供后可恢复 | 不提供武器、受管制设备、假冒零件、破解、危险维修、采购或监管规避建议 |
 | [Public Procurement Contracting Capacity](domains/public-procurement-contracting-capacity/README.md) | 公共采购、合同、供应商管理、应急采购、透明度和交付验收 | 把公共预算、需求和政策目标转化为可靠服务与基础设施交付 | 不提供投标策略、围标串标、利益输送、合同操控、资格规避或个案法律商业建议 |
@@ -2090,6 +2110,16 @@ human_infra/
 │   ├── time-allocation-effective-time/
 │   ├── transportation-access-mobility/
 │   ├── weather-climate-observation-forecasting/
+│   ├── severe-weather-watch-warning-risk-communication-continuity/
+│   ├── river-flash-flood-warning-evacuation-continuity/
+│   ├── hurricane-storm-surge-evacuation-shelter-continuity/
+│   ├── tornado-warning-safe-room-shelter-continuity/
+│   ├── winter-storm-cold-exposure-power-continuity/
+│   ├── drought-water-restriction-household-health-continuity/
+│   ├── landslide-mudslide-debris-flow-warning-continuity/
+│   ├── wildfire-smoke-clean-air-respiratory-continuity/
+│   ├── thunderstorm-lightning-outdoor-safety-continuity/
+│   ├── coastal-flooding-erosion-inundation-continuity/
 │   ├── urogenital-continuity/
 │   ├── urinary-tract-infection-pyelonephritis-urosepsis-continuity/
 │   ├── catheter-associated-uti-device-infection-continuity/
@@ -2283,5 +2313,6 @@ flowchart LR
 - 2026-07-01：新增第一百波 10 个传染病暴发响应执行连续性域，覆盖病例调查接触追踪、隔离检疫工作学校、社区检测筛查、疫苗行动加强针递送、口罩呼吸防护、室内通风过滤、学校工作场所运营、医疗挤兑分诊容量、医疗对策储备分发和污水病原体早期预警。
 - 2026-07-01：新增第一百零一波 10 个危险材料与工业事故执行连续性域，覆盖化学释放避险撤离、社区化学风险知情披露、HazMat 事故指挥、工业过程安全、有毒羽流空气监测、HAZWOPER 响应者 PPE、暴露后去污分诊、危险材料运输 ERG、油污危险释放响应恢复和电池热失控火灾风险。
 - 2026-07-01：新增先验追问研究域索引，把有效永生 A-K 主干域收束为“终极目标 -> 可能性条件 -> 已有域目录 -> 维护触发”的可导航入口。
+- 2026-07-01：新增第一百零二波 10 个强天气与自然 hazard 执行连续性域，覆盖强天气预警风险沟通、洪水撤离、飓风风暴潮、龙卷风避难、冬季风暴寒冷、干旱水限制、滑坡泥石流、野火烟雾、雷暴闪电和沿海洪水。
 
 完整记录见 [CHANGELOG.md](CHANGELOG.md)。
