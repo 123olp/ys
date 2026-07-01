@@ -590,6 +590,7 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `multiomics-personal-baseline-systems-biology/` | 多组学个人基线决定主体状态能否被多层、纵向、可治理地观测，而不是被单一指标或横截面均值误导 |
 | `engineered-cell-therapy-regenerative-platforms/` | 工程细胞疗法决定细胞能否成为可编程治疗和再生平台，同时控制扩增、脱靶、毒性和制造风险 |
 | `organoids-organ-on-chip-disease-models/` | 类器官和组织芯片决定候选干预、毒性和疾病模型能否降低人体试错成本，同时避免体外模型过度外推 |
+| `synthetic-biological-intelligence-organoid-computing-continuity/` | 合成生物智能与类器官计算决定活体神经基质是否可能进入计算、建模、认知增强或主体连续性研究，同时避免把闭环适应误写成意识、人格连续性或通用智能 |
 | `xenotransplantation-bioengineered-organ-replacement/` | 异种移植和工程器官替换决定器官失败是否有替代供给路径，同时处理排斥、感染、伦理和长期功能风险 |
 | `causal-inference-target-trial-emulation/` | 因果推断和目标试验模拟决定技术/干预能否从相关性叙事进入可审查的反事实干预问题 |
 | `survival-analysis-healthspan-risk-modeling/` | 生存分析和健康寿命风险建模决定死亡、疾病、失能和有效时间能否被表达为随时间展开的风险路径 |

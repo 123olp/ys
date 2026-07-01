@@ -154,6 +154,7 @@ docs/
 │   ├── 0136-add-one-hundred-thirty-first-wave-immune-aging-systemic-signal-domains.md
 │   ├── 0137-add-one-hundred-thirty-second-wave-intracellular-quality-control-molecular-maintenance-domains.md
 │   ├── 0138-add-one-hundred-thirty-third-wave-organelle-homeostasis-spatial-stress-domains.md
+│   ├── 0139-add-synthetic-biological-intelligence-organoid-computing-domain.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -361,11 +362,12 @@ docs/
 135. Read `../domains/thermal-stress-sauna-cold-exposure-hormesis-governance-continuity/README.md` if you are working on sauna, passive heat therapy, cold exposure, cold water immersion, thermal stress, or hormesis claims.
 130. Read `../domains/engineered-cell-therapy-regenerative-platforms/README.md` if you are working on CAR-T, TCR-T, TIL, NK, iPSC-derived cells, programmable cells, or engineered cell therapy safety.
 131. Read `../domains/organoids-organ-on-chip-disease-models/README.md` if you are working on organoids, organ-on-chip, tissue chips, patient-derived models, alternative methods, or disease-model validation.
-132. Read `../domains/xenotransplantation-bioengineered-organ-replacement/README.md` if you are working on xenotransplantation, genetically engineered animal organs, bioengineered organ replacement, organ perfusion, or transplant platform risks.
-133. Read `../domains/causal-inference-target-trial-emulation/README.md` if you are working on causality, target trial emulation, intervention effects, confounding, selection bias, or counterfactual evaluation.
-134. Read `../domains/survival-analysis-healthspan-risk-modeling/README.md` if you are working on survival curves, hazard functions, healthspan, competing risks, disability time, or effective-time endpoints.
-135. Read `../domains/human-digital-twin-life-course-simulation/README.md` if you are working on human digital twins, life-course simulation, state vectors, scenario modeling, or dynamic subject models.
-136. Read `../domains/implementation-science-adherence-behavior-change/README.md` if you are working on implementation science, adherence, adoption, behavior change, RE-AIM, COM-B, or real-world effectiveness.
+132. Read `../domains/synthetic-biological-intelligence-organoid-computing-continuity/README.md` if you are working on SBI, OI, BI, DishBrain, CL API, in vitro neural systems, closed-loop biological neural networks, organoid computing, agency, sentience, or consciousness terminology boundaries.
+133. Read `../domains/xenotransplantation-bioengineered-organ-replacement/README.md` if you are working on xenotransplantation, genetically engineered animal organs, bioengineered organ replacement, organ perfusion, or transplant platform risks.
+134. Read `../domains/causal-inference-target-trial-emulation/README.md` if you are working on causality, target trial emulation, intervention effects, confounding, selection bias, or counterfactual evaluation.
+135. Read `../domains/survival-analysis-healthspan-risk-modeling/README.md` if you are working on survival curves, hazard functions, healthspan, competing risks, disability time, or effective-time endpoints.
+136. Read `../domains/human-digital-twin-life-course-simulation/README.md` if you are working on human digital twins, life-course simulation, state vectors, scenario modeling, or dynamic subject models.
+137. Read `../domains/implementation-science-adherence-behavior-change/README.md` if you are working on implementation science, adherence, adoption, behavior change, RE-AIM, COM-B, or real-world effectiveness.
 137. Read `../domains/uncertainty-quantification-model-calibration/README.md` if you are working on model calibration, validation, uncertainty intervals, prediction reporting, drift, or overconfidence controls.
 138. Read `../domains/data-quality-missingness-representativeness/README.md` if you are working on data quality, missingness, representativeness, measurement error, cohort bias, or data source suitability.
 139. Read `../domains/privacy-preserving-computation-federated-learning/README.md` if you are working on differential privacy, federated learning, privacy-enhancing technologies, collaborative analytics, synthetic data, or privacy-utility tradeoffs.

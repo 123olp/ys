@@ -65,6 +65,7 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 冷热应激必须通过高扰动风险门 | `thermal-stress-sauna-cold-exposure-hormesis-governance-continuity/` | sauna、热疗、冷暴露、冷水浸泡、hormesis 和急性风险 | 把观察性关联、主观体验或 hormesis 叙事写成低成本长寿捷径 |
 | 细胞可作为治疗平台 | `engineered-cell-therapy-regenerative-platforms/` | CAR-T、TCR-T、TIL、NK、iPSC 衍生细胞、可编程细胞和安全开关 | 活体药物扩增失控、脱靶、毒性、制造失败或长期恶性风险 |
 | 人体相关模型必须降低试错成本 | `organoids-organ-on-chip-disease-models/` | 类器官、organ-on-chip、组织芯片、患者来源模型和替代方法 | 模型失真导致候选干预错误进入或退出临床，或把体外信号外推成人体疗效 |
+| 活体神经基质必须被闭环治理 | `synthetic-biological-intelligence-organoid-computing-continuity/` | SBI、OI、BI、体外神经网络、脑类器官、闭环反馈、learning/agency/sentience 术语 | 把闭环适应误写成意识、人格连续性、mind upload 或通用智能 |
 | 器官失败必须有替换路径 | `xenotransplantation-bioengineered-organ-replacement/` | 异种移植、工程器官、器官保存灌注、器官供给和移植平台风险 | 器官衰竭、供给不足、免疫排斥、感染和长期功能失败直接截断生命路径 |
 | 蛋白质量控制可稳定 | `proteostasis-autophagy/` | 蛋白稳态、自噬、溶酶体、聚集负担 | 把自噬激活写成无条件有益 |
 | 终端清除必须不被残余堵塞 | `lysosomal-flux-lipofuscin-clearance-continuity/` | 溶酶体通量、脂褐素、酸化、底物清除 | 清除失败、残余积累、神经/视网膜风险和细胞质量控制塌缩 |
@@ -1073,6 +1074,7 @@ cellular-reprogramming
   -> thermal-stress-sauna-cold-exposure-hormesis-governance-continuity
   -> engineered-cell-therapy-regenerative-platforms
   -> organoids-organ-on-chip-disease-models
+  -> synthetic-biological-intelligence-organoid-computing-continuity
   -> xenotransplantation-bioengineered-organ-replacement
   -> genomic-stability-dna-repair
   -> telomere-maintenance

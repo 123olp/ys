@@ -335,6 +335,7 @@ flowchart TD
     H --> TSSCH[thermal-stress-sauna-cold-exposure-hormesis-governance-continuity<br/>冷热应激 / hormesis 治理]
     H --> ECTRP[engineered-cell-therapy-regenerative-platforms<br/>工程细胞疗法 / 再生平台]
     H --> OOCDM[organoids-organ-on-chip-disease-models<br/>类器官 / 组织芯片]
+    H --> SBOCC[synthetic-biological-intelligence-organoid-computing-continuity<br/>合成生物智能 / 类器官计算]
     H --> XBOR[xenotransplantation-bioengineered-organ-replacement<br/>异种移植 / 工程器官替换]
     H --> RG[regenerative-medicine<br/>再生医学 / 组织修复]
     H --> RF[rehabilitation-functioning<br/>康复 / 功能恢复]
@@ -1175,6 +1176,7 @@ flowchart TD
 | [Thermal Stress Sauna Cold Exposure Hormesis Governance Continuity](domains/thermal-stress-sauna-cold-exposure-hormesis-governance-continuity/README.md) | sauna、被动热疗、冷暴露、冷水浸泡、热冷应激和 hormesis 证据边界 | 把冷热扰动作为高不确定生活方式干预审查，而不是低成本长寿捷径 | 不提供温度、时长、频率、场地、安全操作、训练安排或个体建议 |
 | [Engineered Cell Therapy Regenerative Platforms](domains/engineered-cell-therapy-regenerative-platforms/README.md) | CAR-T、TCR-T、TIL、NK、iPSC 衍生细胞和可编程细胞平台 | 活体药物、免疫修复、组织再生、持久性和安全开关 | 不提供细胞制备、靶点设计、给药、临床选择、制造协议或治疗建议 |
 | [Organoids Organ On Chip Disease Models](domains/organoids-organ-on-chip-disease-models/README.md) | 类器官、organ-on-chip、组织芯片、患者来源模型和新方法学 | 降低药物筛选、毒性预测、疾病建模和转化失败成本 | 不提供培养、芯片制造、样本处理、药物筛选操作或人体疗效外推 |
+| [Synthetic Biological Intelligence Organoid Computing Continuity](domains/synthetic-biological-intelligence-organoid-computing-continuity/README.md) | 体外神经网络、脑类器官、SBI/OI/BI、闭环反馈、学习/agency/sentience 术语和治理 | 评估活体神经基质是否可能成为计算、建模、认知增强或主体连续性研究的基础设施 | 不提供培养、刺激、药物测试、平台操作、意识判定、人格连续性或 mind upload 结论 |
 | [Xenotransplantation Bioengineered Organ Replacement](domains/xenotransplantation-bioengineered-organ-replacement/README.md) | 异种移植、基因编辑动物器官、工程器官、器官保存灌注和器官供给 | 器官衰竭、移植等待、免疫风险、感染风险和长期功能变量 | 不提供移植选择、手术、免疫抑制、动物处理、病原检测或器官保存操作建议 |
 | [Causal Inference Target Trial Emulation](domains/causal-inference-target-trial-emulation/README.md) | 因果推断、反事实、目标试验模拟、混杂和选择偏差 | 判断技术/干预是否真正改变主体状态、风险函数和生命路径分布 | 不提供治疗、试验入组、个体因果结论、医疗建议或把相关性包装成因果 |
 | [Survival Analysis Healthspan Risk Modeling](domains/survival-analysis-healthspan-risk-modeling/README.md) | 生存分析、风险函数、健康寿命、竞争风险和有效时间终点 | 把死亡、疾病、失能、健康质量积分和未来选择权转成时间路径模型 | 不输出个体死亡日期、寿命承诺、保险评分、诊断或治疗建议 |
@@ -2125,6 +2127,7 @@ human_infra/
 │   ├── thermal-stress-sauna-cold-exposure-hormesis-governance-continuity/
 │   ├── engineered-cell-therapy-regenerative-platforms/
 │   ├── organoids-organ-on-chip-disease-models/
+│   ├── synthetic-biological-intelligence-organoid-computing-continuity/
 │   ├── xenotransplantation-bioengineered-organ-replacement/
 │   ├── causal-inference-target-trial-emulation/
 │   ├── survival-analysis-healthspan-risk-modeling/
@@ -2901,5 +2904,6 @@ flowchart LR
 - 2026-07-01：新增第一百二十五波 6 个长寿干预执行与证据治理连续性域，覆盖 geroprotective 药物再利用试验治理、补剂证据安全、抗阻训练肌力肌少症、心肺适能 VO2max、热量限制禁食能量平衡和冷热应激 hormesis 治理。
 - 2026-07-01：新增第一百三十二波 6 个细胞内质量控制与分子信息维护连续性域，覆盖溶酶体通量/脂褐素清除、泛素-蛋白酶体蛋白周转、核糖体翻译保真、RNA 剪接/转录后维护、核网关/核质运输和铁死亡/脂质过氧化膜韧性。
 - 2026-07-02：新增第一百三十三波 6 个细胞器稳态、空间组织与应激响应连续性域，覆盖 ER stress/UPR、Golgi 分泌运输、过氧化物酶体脂质氧化还原、细胞器接触位点、生物分子凝聚体/相分离和细胞骨架/机械转导。
+- 2026-07-02：新增合成生物智能与类器官计算连续性域，把 Cortical Labs / DishBrain / CL API / Organoid Intelligence 资料收敛为活体神经基质、闭环反馈、术语边界和治理约束研究域。
 
 完整记录见 [CHANGELOG.md](CHANGELOG.md)。

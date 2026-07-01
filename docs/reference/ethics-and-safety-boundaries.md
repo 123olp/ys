@@ -1265,20 +1265,22 @@ Human Infra 不能被设计成更精密的压榨系统。
 
 ## 生物医学平台与高风险转化边界
 
-`gene-therapy-genome-editing-delivery-safety`、`biological-age-clocks-biomarker-validation`、`multiomics-personal-baseline-systems-biology`、`engineered-cell-therapy-regenerative-platforms`、`organoids-organ-on-chip-disease-models` 和 `xenotransplantation-bioengineered-organ-replacement` 关注高杠杆生物医学平台如何改变主体状态、风险函数、模型验证和器官替换可能性，不是实验、制造、检测解释、治疗选择或临床操作指南。
+`gene-therapy-genome-editing-delivery-safety`、`biological-age-clocks-biomarker-validation`、`multiomics-personal-baseline-systems-biology`、`engineered-cell-therapy-regenerative-platforms`、`organoids-organ-on-chip-disease-models`、`synthetic-biological-intelligence-organoid-computing-continuity` 和 `xenotransplantation-bioengineered-organ-replacement` 关注高杠杆生物医学平台如何改变主体状态、风险函数、模型验证、活体神经基质闭环计算和器官替换可能性，不是实验、制造、检测解释、治疗选择或临床操作指南。
 
 可以做：
 
 - 整理公开监管资料、综述、论文、数据平台、临床前边界、临床试验登记和安全警示。
-- 建模基因递送、编辑安全、年龄 biomarker、多组学基线、工程细胞、人体相关模型、器官替换和长期随访如何影响主体持续性。
+- 建模基因递送、编辑安全、年龄 biomarker、多组学基线、工程细胞、人体相关模型、活体神经基质闭环反馈、器官替换和长期随访如何影响主体持续性。
 - 区分平台技术、动物证据、体外模型、早期人体安全性、获批适应证、真实世界监测和远期推测。
 - 明确变量来源、证据等级、适用对象、替代终点风险、代表性限制、隐私风险和可迁移性边界。
+- 将 learning、agency、sentience、intelligence 作为操作性术语和证据标签处理，要求逐条回到任务、反馈、测量和解释边界。
 
 不能做：
 
-- 提供基因编辑设计、gRNA/载体构建、递送方案、细胞制备、类器官培养、组织芯片制造、异种移植操作、器官保存灌注、动物处理、样本处理或湿实验步骤。
+- 提供基因编辑设计、gRNA/载体构建、递送方案、细胞制备、类器官培养、组织芯片制造、神经刺激参数、神经培养、药物测试、平台操作、异种移植操作、器官保存灌注、动物处理、样本处理或湿实验步骤。
 - 提供个体生物年龄检测解释、基因解释、疾病诊断、治疗选择、临床试验入组、移植决策、用药、剂量、免疫抑制或手术建议。
 - 将体外模型、动物实验、公司公告、早期安全性试验或 biomarker 改善写成寿命延长、人体逆龄、器官替换可用或有效永生证明。
+- 把 DishBrain、CL API、脑类器官或闭环适应结果写成现象意识、人格连续性、mind upload、主体复制、通用智能或道德地位证明。
 - 鼓励 DIY 生物、增强性编辑、自我实验、绕过伦理审查、绕过监管、获取人体材料、处理动物器官或规避感染/生物安全要求。
 
 ## 定量方法学与模型治理边界

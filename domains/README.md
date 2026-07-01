@@ -20,6 +20,7 @@
 - `thermal-stress-sauna-cold-exposure-hormesis-governance-continuity/`：冷热应激、sauna、冷暴露与 hormesis 治理连续性，整理证据等级、急性风险和误用边界。
 - `engineered-cell-therapy-regenerative-platforms/`：工程细胞疗法与再生平台，整理 CAR-T、TCR-T、TIL、NK、iPSC 衍生细胞和可编程细胞安全边界。
 - `organoids-organ-on-chip-disease-models/`：类器官、组织芯片与疾病模型，整理人体相关模型、患者来源模型、替代方法和模型验证边界。
+- `synthetic-biological-intelligence-organoid-computing-continuity/`：合成生物智能与类器官计算连续性，整理体外神经网络、脑类器官、闭环反馈、学习/agency/sentience 术语和治理边界。
 - `xenotransplantation-bioengineered-organ-replacement/`：异种移植与工程器官替换，整理基因编辑动物器官、工程器官、器官保存灌注和供给风险边界。
 - `proteostasis-autophagy/`：蛋白稳态与自噬，整理蛋白折叠、聚集、清除、溶酶体和细胞质量控制。
 - `lysosomal-flux-lipofuscin-clearance-continuity/`：溶酶体通量与脂褐素清除连续性，整理终端清除、残余积累、酸化和细胞回收边界。

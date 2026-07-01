@@ -151,3 +151,4 @@ Current decisions:
 - `0136-add-one-hundred-thirty-first-wave-immune-aging-systemic-signal-domains.md`
 - `0137-add-one-hundred-thirty-second-wave-intracellular-quality-control-molecular-maintenance-domains.md`
 - `0138-add-one-hundred-thirty-third-wave-organelle-homeostasis-spatial-stress-domains.md`
+- `0139-add-synthetic-biological-intelligence-organoid-computing-domain.md`

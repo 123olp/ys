@@ -55,6 +55,7 @@ human_infra/
     ├── thermal-stress-sauna-cold-exposure-hormesis-governance-continuity/ # 冷热应激与 hormesis 治理
     ├── engineered-cell-therapy-regenerative-platforms/ # 工程细胞疗法与再生平台
     ├── organoids-organ-on-chip-disease-models/ # 类器官、组织芯片与疾病模型
+    ├── synthetic-biological-intelligence-organoid-computing-continuity/ # 合成生物智能与类器官计算连续性
     ├── xenotransplantation-bioengineered-organ-replacement/ # 异种移植与工程器官替换
     ├── causal-inference-target-trial-emulation/ # 因果推断与目标试验模拟
     ├── survival-analysis-healthspan-risk-modeling/ # 生存分析与健康寿命风险建模
@@ -1118,6 +1119,7 @@ human_infra/
 - `domains/thermal-stress-sauna-cold-exposure-hormesis-governance-continuity/` 负责 sauna、被动热疗、冷暴露、冷水浸泡和冷热 hormesis 的证据与风险边界。
 - `domains/engineered-cell-therapy-regenerative-platforms/` 负责 CAR-T、TCR-T、TIL、NK、iPSC 衍生细胞和可编程细胞平台。
 - `domains/organoids-organ-on-chip-disease-models/` 负责类器官、organ-on-chip、组织芯片、患者来源模型和人体相关新方法学。
+- `domains/synthetic-biological-intelligence-organoid-computing-continuity/` 负责合成生物智能、类器官智能、体外神经网络、脑类器官、闭环反馈学习、CL API 和 agency / sentience 术语治理。
 - `domains/xenotransplantation-bioengineered-organ-replacement/` 负责异种移植、基因编辑动物器官、工程器官、器官保存灌注和替代性器官供给。
 - `domains/causal-inference-target-trial-emulation/` 负责因果推断、反事实、目标试验模拟、混杂和选择偏差审查。
 - `domains/survival-analysis-healthspan-risk-modeling/` 负责生存分析、风险函数、健康寿命、竞争风险和有效时间终点建模。
@@ -1410,3 +1412,4 @@ human_infra/
 - 2026-07-01：新增第一百三十一波 6 个免疫衰老与系统性年轻化信号连续性域，覆盖胸腺退化/初始 T 细胞输出、免疫库/疫苗响应老化、克隆性造血/CHIP 炎症风险、炎症衰老、血浆蛋白组系统性衰老信号和细胞外囊泡/SASP 通讯。
 - 2026-07-01：新增第一百三十二波 6 个细胞内质量控制与分子信息维护连续性域，覆盖溶酶体通量/脂褐素清除、泛素-蛋白酶体蛋白周转、核糖体翻译保真、RNA 剪接/转录后维护、核网关/核质运输和铁死亡/脂质过氧化膜韧性。
 - 2026-07-02：新增第一百三十三波 6 个细胞器稳态、空间组织与应激响应连续性域，覆盖 ER stress/UPR、Golgi 分泌运输、过氧化物酶体脂质氧化还原、细胞器接触位点、生物分子凝聚体/相分离和细胞骨架/机械转导。
+- 2026-07-02：新增 `domains/synthetic-biological-intelligence-organoid-computing-continuity/`，把 SBI/OI/BI、DishBrain、CL API 和脑类器官智能资料沉淀为独立研究域。

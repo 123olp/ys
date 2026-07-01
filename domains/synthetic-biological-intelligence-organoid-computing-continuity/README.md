@@ -1,0 +1,64 @@
+# Synthetic Biological Intelligence Organoid Computing Continuity
+
+This domain studies synthetic biological intelligence, organoid intelligence, bioengineered intelligence, and embodied in vitro neural systems as closed-loop biological information-processing infrastructure.
+
+> Core question: when living neural tissue is coupled to sensors, stimulation, software, and feedback, what can be measured as learning, adaptation, agency-like behavior, or moral-risk signal without over-claiming consciousness, personhood, or subject transfer?
+
+## 先验位置
+
+Human Infra 关注主体持续性、学习能力、未来选择权和外部认知基础设施。SBI/OI 把体外神经网络、脑类器官和脑微生理系统放进可输入、可输出、可反馈的数字环境中，使“生物学习”和“活体神经计算”成为可实验拆解的对象。
+
+这个域不是为了证明培养皿里已经出现意识，也不是为了证明人格可迁移；它的价值在于把生物神经基质、工程接口、闭环反馈、信息处理指标和伦理治理放进同一个可审查模型。
+
+## 关注对象
+
+- Synthetic Biological Intelligence, SBI。
+- Organoid Intelligence, OI。
+- Bioengineered Intelligence, BI。
+- DishBrain、CL1、CL API 和高密度多电极阵列闭环平台。
+- 体外神经网络、脑类器官、脑微生理系统和人源 iPSC 神经 wetware。
+- 实时刺激记录、结构化反馈、样本效率、网络可塑性、近临界动力学和药物功能读数。
+- learning、sentience、agency、consciousness 等术语边界。
+- 嵌入式伦理、道德相关状态、捐赠者权益、平台治理和公众叙事风险。
+
+## Human Infra 模型链路
+
+```text
+活体神经基质
+-> 体外培养、类器官或脑微生理系统
+-> 电生理输入输出接口
+-> 实时闭环环境与结构化反馈
+-> 网络可塑性、学习、适应和信息处理表现
+-> agency-like / sentience-like 判定问题
+-> 伦理、同意、权利、实验边界和治理协议
+-> 外部认知基础设施与主体持续性模型
+```
+
+## 与相邻域的区别
+
+| 相邻域 | 区别 |
+| --- | --- |
+| `organoids-organ-on-chip-disease-models/` | 该域主要研究人体相关模型和疾病/药物替代方法；本域关注闭环学习、计算、agency 和伦理治理。 |
+| `brain-computer-interface-neurotechnology-governance/` | BCI 以活体人脑和设备接口为核心；本域以体外神经组织和数字环境闭环为核心。 |
+| `disembodied-cns/` | 去具身中枢生命系统讨论主体中枢维持；本域不声称体外网络承载原主体。 |
+| `ai-agency-safety/` | AI 代理治理处理硅基软件代理；本域处理活体神经基质的信息处理与道德风险。 |
+
+## 非目标
+
+- 不证明体外神经网络、脑类器官或 SBI/OI 系统具有现象意识。
+- 不证明人格连续性、mind upload、数字复活或主体迁移。
+- 不提供细胞培养、刺激、训练、药物测试、实验平台搭建或人体/动物实验操作协议。
+- 不把 DishBrain/Pong 任务表现写成通用智能。
+- 不把 learning、sentience、agency 和 consciousness 混用。
+- 不把商业平台、预印本、单团队结果或术语宣传写成成熟工程可行性。
+
+## Source Signals
+
+- Local review: `literature-review.md`.
+- DOI: [CL API: Real-Time Closed-Loop Interactions with Biological Neural Networks](https://doi.org/10.48550/arXiv.2602.11632).
+- DOI: [In vitro neurons learn and exhibit sentience when embodied in a simulated game-world](https://doi.org/10.1016/j.neuron.2022.09.001).
+- DOI: [Critical dynamics arise during structured information presentation within embodied in vitro neuronal networks](https://doi.org/10.1038/s41467-023-41020-3).
+- DOI: [Drug treatment alters performance in a neural microphysiological system of information processing](https://doi.org/10.1038/s42003-025-08194-6).
+- DOI: [Organoid intelligence: the new frontier in biocomputing and intelligence-in-a-dish](https://doi.org/10.3389/fsci.2023.1017235).
+- DOI: [The technology, opportunities, and challenges of Synthetic Biological Intelligence](https://doi.org/10.1016/j.biotechadv.2023.108233).
+- DOI: [Active Inference and Intentional Behavior](https://doi.org/10.1162/neco_a_01738).

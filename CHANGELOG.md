@@ -4,6 +4,7 @@ All notable repository structure changes are recorded here.
 
 ## 2026-07-02
 
+- Added `domains/synthetic-biological-intelligence-organoid-computing-continuity/` for SBI/OI/BI, DishBrain, CL API, in vitro neural networks, organoid computing, closed-loop learning, agency/sentience terminology, and governance boundaries.
 - Added the one-hundred-thirty-third wave of organelle homeostasis, spatial organization, and stress-response domains, covering ER stress / UPR proteostasis, Golgi secretory trafficking, peroxisome redox and lipid metabolism, organelle contact sites, biomolecular condensates / phase separation, and cytoskeleton mechanotransduction / cellular mechanics.
 
 ## 2026-07-01
