@@ -529,6 +529,16 @@ human_infra/
     ├── neuro-continuity/  # 神经与身份连续性
     ├── nutrition-metabolic-health/ # 营养与代谢健康
     ├── oral-health-continuity/ # 口腔健康连续性
+    ├── dental-caries-prevention-restoration-continuity/ # 龋病预防与修复连续性
+    ├── periodontal-disease-systemic-inflammation-continuity/ # 牙周病与炎症连续性
+    ├── tooth-loss-prosthodontic-chewing-continuity/ # 缺牙修复与咀嚼连续性
+    ├── dental-pain-emergency-infection-continuity/ # 牙痛急性感染连续性
+    ├── oral-cancer-mucosal-lesion-early-detection-continuity/ # 口腔癌早期识别连续性
+    ├── pediatric-oral-health-development-continuity/ # 儿童口腔与发育连续性
+    ├── geriatric-long-term-care-oral-health-continuity/ # 老年长期照护口腔连续性
+    ├── dental-care-access-insurance-workforce-continuity/ # 牙科可及性与劳动力连续性
+    ├── xerostomia-salivary-function-oral-medication-continuity/ # 口干唾液功能连续性
+    ├── temporomandibular-orofacial-pain-jaw-function-continuity/ # 颞下颌与口颌面痛连续性
     ├── occupational-work-design/ # 职业与工作设计
     ├── pain-suffering-control/ # 疼痛与痛苦控制
     ├── physical-activity-mobility/ # 身体活动与移动能力
@@ -877,6 +887,7 @@ human_infra/
 - `domains/language-access-plain-communication/` 负责清晰语言、语言服务、有限英语能力访问、CLAS、认知可访问性和关键服务材料理解。
 - `domains/labor-rights-workplace-protection/` 负责劳动标准、工资工时、安全权利、反歧视、反报复、申诉入口和劳动组织治理。
 - `domains/oral-health-continuity/` 负责口腔健康、牙齿、牙周、咀嚼、疼痛、感染、营养和沟通连续性。
+- `domains/dental-caries-prevention-restoration-continuity/`、`domains/periodontal-disease-systemic-inflammation-continuity/`、`domains/tooth-loss-prosthodontic-chewing-continuity/`、`domains/dental-pain-emergency-infection-continuity/`、`domains/oral-cancer-mucosal-lesion-early-detection-continuity/`、`domains/pediatric-oral-health-development-continuity/`、`domains/geriatric-long-term-care-oral-health-continuity/`、`domains/dental-care-access-insurance-workforce-continuity/`、`domains/xerostomia-salivary-function-oral-medication-continuity/` 和 `domains/temporomandibular-orofacial-pain-jaw-function-continuity/` 负责把口腔健康拆成牙体、牙周、缺牙修复、急性牙痛感染、口腔癌、儿童/老年口腔、服务可及、唾液功能和颌面痛这些可独立审查的持续性条件。
 - `domains/measurement-feedback/` 负责主体状态测量、风险评分、生物标志物、可穿戴、预测模型和反馈闭环。
 - 原始资料归档在 `docs/source-notes/`；稳定结论必须沉淀到 `docs/` 或对应子域 README，不能长期依赖零散临时文件名。
 
@@ -993,3 +1004,4 @@ human_infra/
 - 2026-07-01：新增第八十五波慢性专科负担与功能恢复连续性研究域，覆盖慢性疼痛、腰背痛、骨关节炎、自身免疫风湿病、炎症性肠病、MASLD/MASH 慢性肝病、甲状腺疾病、铁缺乏贫血、哮喘/COPD 长期控制和过敏/特应性疾病。
 - 2026-07-01：新增第八十六波慢性神经退行、神经肌肉与感染后功能连续性研究域，覆盖帕金森病、多发性硬化、ALS、亨廷顿病、脊髓性肌萎缩症、肌营养不良、重症肌无力、脊髓损伤、ME/CFS 和 Long COVID。
 - 2026-07-01：新增第八十七波器官/阶段特异癌症连续性研究域，覆盖乳腺癌、结直肠癌、肺癌、前列腺癌、宫颈癌、卵巢癌、胰腺癌、肝癌、儿童癌症和癌症幸存者晚期效应。
+- 2026-07-01：新增第八十八波口腔、牙科与颌面功能连续性研究域，覆盖龋病、牙周病、缺牙修复咀嚼、牙痛急性感染、口腔癌早期识别、儿童口腔、老年长期照护口腔、牙科服务可及性、口干唾液功能和颞下颌/口颌面痛。

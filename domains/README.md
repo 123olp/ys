@@ -648,6 +648,16 @@
 - `language-access-plain-communication/`：语言可达与清晰沟通，整理 plain language、语言服务、CLAS、有限英语能力访问和认知可访问性。
 - `labor-rights-workplace-protection/`：劳动权利与工作场所保护，整理劳动标准、工资工时、安全权利、反歧视、申诉和组织治理。
 - `oral-health-continuity/`：口腔健康连续性，整理牙齿、牙周、咀嚼、疼痛、感染、营养和沟通。
+- `dental-caries-prevention-restoration-continuity/`：龋病预防与修复连续性，整理龋病、牙体结构、预防项目、修复可及性和牙痛感染。
+- `periodontal-disease-systemic-inflammation-continuity/`：牙周病与炎症连续性，整理牙周支持结构、慢性炎症、缺牙风险和全身交叉证据。
+- `tooth-loss-prosthodontic-chewing-continuity/`：缺牙修复与咀嚼连续性，整理缺牙、义齿/修复、咀嚼效率、营养、言语和尊严。
+- `dental-pain-emergency-infection-continuity/`：牙痛急性感染连续性，整理牙痛、牙源性感染、急诊摩擦、睡眠缺勤和风险升级。
+- `oral-cancer-mucosal-lesion-early-detection-continuity/`：口腔癌早期识别连续性，整理口腔癌、黏膜病变、转诊延迟和功能后果。
+- `pediatric-oral-health-development-continuity/`：儿童口腔与发育连续性，整理儿童龋病、牙痛、学校缺勤、家庭照护和预防项目。
+- `geriatric-long-term-care-oral-health-continuity/`：老年长期照护口腔连续性，整理义齿、口干、疼痛、吞咽、营养和照护工作流。
+- `dental-care-access-insurance-workforce-continuity/`：牙科可及性与劳动力连续性，整理保险支付、费用、地理分布、预约等待和语言可及性。
+- `xerostomia-salivary-function-oral-medication-continuity/`：口干唾液功能连续性，整理唾液功能、药物负担、放疗后风险、吞咽言语和感染。
+- `temporomandibular-orofacial-pain-jaw-function-continuity/`：颞下颌与口颌面痛连续性，整理 TMD、口颌面痛、颌功能、睡眠、压力和服务路径。
 - `measurement-feedback/`：测量、预测与反馈，整理主体状态测量、风险评分、生物标志物和反馈闭环。
 
 子域之间可以共享上位原则，但不能共享模糊所有权。数据、脚本和结论必须归属到明确子域。

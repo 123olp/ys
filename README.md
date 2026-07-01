@@ -1376,6 +1376,16 @@ flowchart TD
 | [Critical Infrastructure Lifeline Interdependency Resilience](domains/critical-infrastructure-lifeline-interdependency-resilience/README.md) | 能源、水务、通信、交通、医疗、食品、金融和政府生命线互依赖 | 识别级联故障、单点瓶颈和恢复优先级，防止单部门故障连锁清零主体条件 | 不提供敏感设施清单、漏洞、攻击路径、绕行策略、安保规避、实时指挥或内部恢复计划 |
 | [Utility Affordability Shutoff Protection Continuity](domains/utility-affordability-shutoff-protection-continuity/README.md) | 公用事业账单负担、欠费、援助入口、分期安排、断供保护和消费者申诉 | 防止电、水、热、燃气、通信和医疗设备供能因支付摩擦在家庭层面断线 | 不提供个体账单、资格、申请、断供争议、法律、债务、信用、逃费、绕表或项目承诺建议 |
 | [Oral Health Continuity](domains/oral-health-continuity/README.md) | 牙齿、牙周、咀嚼、疼痛、感染、营养和沟通 | 口腔功能、疼痛、感染、营养和社会参与变量 | 不提供牙科诊断、治疗、药物、手术、器械或个体护理建议 |
+| [Dental Caries Prevention Restoration Continuity](domains/dental-caries-prevention-restoration-continuity/README.md) | 龋病、牙体结构、预防项目、修复可及性和牙痛感染 | 防止龋病把可预防损伤转化为疼痛、缺课缺勤、感染和费用摩擦 | 不提供龋齿诊断、影像判读、治疗选择、氟化物剂量、产品、药物或个体建议 |
+| [Periodontal Disease Systemic Inflammation Continuity](domains/periodontal-disease-systemic-inflammation-continuity/README.md) | 牙周炎症、牙齿支持结构、缺牙风险、慢性炎症和全身交叉证据 | 保护咀嚼稳定、感染负担和牙齿长期维护能力 | 不提供牙周分期、探诊/影像解释、洁治刮治、手术、抗生素或个体护理建议 |
+| [Tooth Loss Prosthodontic Chewing Continuity](domains/tooth-loss-prosthodontic-chewing-continuity/README.md) | 缺牙、义齿、种植/修复可及性、咀嚼效率、言语和营养 | 把牙列完整性、进食、说话、尊严和照护依赖纳入口腔持续性模型 | 不提供种植、义齿、冠桥、材料、手术、咬合或个体修复建议 |
+| [Dental Pain Emergency Infection Continuity](domains/dental-pain-emergency-infection-continuity/README.md) | 牙痛、牙源性感染、急诊摩擦、睡眠缺勤和风险升级 | 阻断口腔急性事件对注意力、睡眠、工作和照护的劫持 | 不提供急诊分诊、抗生素、止痛药、剂量、排脓、拔牙或居家处理建议 |
+| [Oral Cancer Mucosal Lesion Early Detection Continuity](domains/oral-cancer-mucosal-lesion-early-detection-continuity/README.md) | 口腔癌、黏膜病变、风险入口、早期识别、转诊和治疗后功能 | 把口腔癌风险、诊断延迟、吞咽言语、疼痛和幸存者质量纳入模型 | 不提供病变照片诊断、筛查频率、活检、分期、治疗、风险处置或预后建议 |
+| [Pediatric Oral Health Development Continuity](domains/pediatric-oral-health-development-continuity/README.md) | 儿童龋病、牙痛、学校缺勤、家庭照护、营养和预防项目 | 保护儿童学习、睡眠、营养、家庭时间和早期能力形成 | 不提供儿童牙科诊断、发育判断、氟化物剂量、产品、镇静、治疗或急救建议 |
+| [Geriatric Long Term Care Oral Health Continuity](domains/geriatric-long-term-care-oral-health-continuity/README.md) | 老年口腔、义齿、口干、疼痛、吞咽、营养和长期照护工作流 | 让老年主体在衰弱和照护依赖中维持进食、沟通、舒适和尊严 | 不提供护理医嘱、义齿调整、药物更改、产品、吞咽训练或个体照护建议 |
+| [Dental Care Access Insurance Workforce Continuity](domains/dental-care-access-insurance-workforce-continuity/README.md) | 牙科保险、费用、劳动力、地理分布、预约等待和语言可及性 | 让预防、修复和急性牙科服务从制度存在转化为真实入口 | 不提供个体保险资格、理赔、费用、牙医推荐、预约选择、项目申请或法律建议 |
+| [Xerostomia Salivary Function Oral Medication Continuity](domains/xerostomia-salivary-function-oral-medication-continuity/README.md) | 口干、唾液功能、药物负担、放疗后口腔风险、吞咽言语和感染 | 把唾液防御、药物副作用、进食沟通和长期照护负担纳入口腔模型 | 不提供药物更改、剂量、产品、治疗、Sjögren 诊断或个体护理建议 |
+| [Temporomandibular Orofacial Pain Jaw Function Continuity](domains/temporomandibular-orofacial-pain-jaw-function-continuity/README.md) | TMD、口颌面痛、开口咀嚼、言语、睡眠、压力和服务路径 | 保护颌面运动、表达、进食、睡眠和注意力预算 | 不提供诊断、咬合判断、护牙套、练习、用药、影像、手术或个体治疗建议 |
 | [Measurement And Feedback](domains/measurement-feedback/README.md) | 状态测量、风险评分、生物标志物、可穿戴、反馈控制 | 指标分类、预测接口和模型反馈边界 | 不输出个体死亡日期、确定寿命预测或医学诊断 |
 
 ## 阅读路径
@@ -1723,6 +1733,16 @@ human_infra/
 │   ├── nutrition-metabolic-health/
 │   ├── occupational-work-design/
 │   ├── oral-health-continuity/
+│   ├── dental-caries-prevention-restoration-continuity/
+│   ├── periodontal-disease-systemic-inflammation-continuity/
+│   ├── tooth-loss-prosthodontic-chewing-continuity/
+│   ├── dental-pain-emergency-infection-continuity/
+│   ├── oral-cancer-mucosal-lesion-early-detection-continuity/
+│   ├── pediatric-oral-health-development-continuity/
+│   ├── geriatric-long-term-care-oral-health-continuity/
+│   ├── dental-care-access-insurance-workforce-continuity/
+│   ├── xerostomia-salivary-function-oral-medication-continuity/
+│   ├── temporomandibular-orofacial-pain-jaw-function-continuity/
 │   ├── pain-suffering-control/
 │   ├── physical-activity-mobility/
 │   ├── planetary-health-environment/
@@ -1950,5 +1970,6 @@ flowchart LR
 - 2026-07-01：新增第八十五波 10 个慢性专科负担与功能恢复连续性域，覆盖慢性疼痛、腰背痛、骨关节炎、自身免疫风湿病、炎症性肠病、MASLD/MASH 慢性肝病、甲状腺疾病、铁缺乏贫血、哮喘/COPD 长期控制和过敏/特应性疾病。
 - 2026-07-01：新增第八十六波 10 个慢性神经退行、神经肌肉与感染后功能连续性域，覆盖帕金森病、多发性硬化、ALS、亨廷顿病、脊髓性肌萎缩症、肌营养不良、重症肌无力、脊髓损伤、ME/CFS 和 Long COVID。
 - 2026-07-01：新增第八十七波 10 个器官/阶段特异癌症连续性域，覆盖乳腺癌、结直肠癌、肺癌、前列腺癌、宫颈癌、卵巢癌、胰腺癌、肝癌、儿童癌症和癌症幸存者晚期效应。
+- 2026-07-01：新增第八十八波 10 个口腔、牙科与颌面功能连续性域，覆盖龋病、牙周病、缺牙修复咀嚼、牙痛急性感染、口腔癌早期识别、儿童口腔、老年长期照护口腔、牙科服务可及性、口干唾液功能和颞下颌/口颌面痛。
 
 完整记录见 [CHANGELOG.md](CHANGELOG.md)。

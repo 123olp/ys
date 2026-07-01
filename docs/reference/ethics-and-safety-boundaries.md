@@ -586,6 +586,26 @@ Human Infra 不能被设计成更精密的压榨系统。
 - 产出延误就医、规避筛查、规避专业照护、污名化、恐慌传播、商业检测背书、未经同意的家庭风险推断或用幸存者身份排除工作/保险机会的内容。
 - 替代肿瘤科、放疗科、手术团队、遗传咨询、影像科、病理科、儿科肿瘤、心理/康复、社工、保险/法律服务或本地专业人员。
 
+## 口腔、牙科与颌面功能连续性边界
+
+`dental-caries-prevention-restoration-continuity`、`periodontal-disease-systemic-inflammation-continuity`、`tooth-loss-prosthodontic-chewing-continuity`、`dental-pain-emergency-infection-continuity`、`oral-cancer-mucosal-lesion-early-detection-continuity`、`pediatric-oral-health-development-continuity`、`geriatric-long-term-care-oral-health-continuity`、`dental-care-access-insurance-workforce-continuity`、`xerostomia-salivary-function-oral-medication-continuity` 和 `temporomandibular-orofacial-pain-jaw-function-continuity` 关注口腔、牙科与颌面功能如何通过疼痛、感染、咀嚼、营养、沟通、癌症早识别、生命历程、长期照护、服务可及和药物副作用影响主体持续性，不是牙科诊疗、急救、影像判读、保险个案或产品推荐入口。
+
+可以做：
+
+- 整理 WHO、CDC、NIDCR、HRSA、NCI 等公开资料中的对象、机制、变量、证据边界和禁止用途。
+- 比较龋病、牙周病、缺牙修复、牙痛急性感染、口腔癌、儿童口腔、老年口腔、牙科服务可及、口干唾液功能和口颌面痛如何影响有效时间、营养、沟通、睡眠、工作、照护和未来选择权。
+- 记录口腔健康资料中的疼痛、感染、咀嚼效率、营养风险、转诊延迟、费用摩擦、服务入口、照护工作流、药物相关口腔风险和功能结果变量。
+
+不能做：
+
+- 不提供龋齿、牙周、缺牙、口腔癌、口干、TMD、感染、儿童牙齿发育、义齿适配、咬合或口腔病变的个体诊断。
+- 不解释牙片、CBCT、照片、口腔病变图片、牙周探诊、病理、肿瘤标志物、儿童牙齿萌出或修复材料是否正常。
+- 不提供充填、根管、拔牙、洁治、刮治、牙周手术、种植、义齿、冠桥、护牙套、咬合调整、口腔癌筛查频率、活检、放化疗、吞咽训练、颌面练习或任何治疗排序建议。
+- 不提供抗生素、止痛药、氟化物、漱口水、唾液替代品、补充剂、镇静、儿童牙科药物、急救处置、排脓、居家感染处理、药物停换或剂量建议。
+- 不提供牙医推荐、保险资格判断、理赔、费用估算、项目申请、预约选择、产品购买、器械选择、法律争议或工作/学校证明建议。
+- 不收集、存储或推断可识别个人的牙科影像、口腔照片、病历、处方、保险、身份、儿童敏感资料、诊断报告、治疗计划、账单、理赔材料或其他 PHI。
+- 不替代牙医、儿牙、牙周、修复、口腔颌面外科、耳鼻喉、肿瘤、急诊、药师、护理、言语吞咽、营养、保险、法律或公共卫生专业判断。
+
 ## 生活史预防与功能连续性边界
 
 `sleep-disordered-breathing-screening-treatment-continuity`、`chronic-insomnia-cbti-access-continuity`、`sexual-health-sti-prevention-continuity`、`hiv-testing-prep-prevention-continuity`、`chronic-viral-hepatitis-screening-liver-protection-continuity`、`contraception-family-planning-access-continuity`、`menstrual-health-cycle-literacy-continuity`、`perimenopause-menopause-midlife-health-continuity`、`pelvic-floor-continence-function-continuity` 和 `skin-cancer-uv-protection-early-detection-continuity` 关注恢复失败、性/生殖健康、慢性感染、中年风险转轨、盆底功能和 UV 暴露如何改变有效时间、身体自主、关系安全、尊严、公共卫生屏障和未来选择权，不是个人诊断、治疗、性健康、避孕、睡眠、肝炎、HIV、盆底康复、皮肤或保险法律建议入口。

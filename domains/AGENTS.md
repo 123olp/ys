@@ -1845,6 +1845,36 @@ domains/
 ├── oral-health-continuity/
 │   ├── AGENTS.md
 │   └── README.md
+├── dental-caries-prevention-restoration-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── periodontal-disease-systemic-inflammation-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── tooth-loss-prosthodontic-chewing-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── dental-pain-emergency-infection-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── oral-cancer-mucosal-lesion-early-detection-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── pediatric-oral-health-development-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── geriatric-long-term-care-oral-health-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── dental-care-access-insurance-workforce-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── xerostomia-salivary-function-oral-medication-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── temporomandibular-orofacial-pain-jaw-function-continuity/
+│   ├── AGENTS.md
+│   └── README.md
 └── time-allocation-effective-time/
     ├── AGENTS.md
     └── README.md
@@ -1999,6 +2029,7 @@ domains/
 - `substance-exposure-control/` 负责烟草、酒精、成瘾性物质、有害暴露和主体自主性风险。
 - `health-literacy-navigation/` 和 `language-access-plain-communication/` 负责健康素养、服务导航、清晰语言、语言服务、可理解信息、风险沟通和共同决策。
 - `oral-health-continuity/` 负责口腔健康、咀嚼、疼痛、感染、营养和沟通连续性。
+- `dental-caries-prevention-restoration-continuity/`、`periodontal-disease-systemic-inflammation-continuity/`、`tooth-loss-prosthodontic-chewing-continuity/`、`dental-pain-emergency-infection-continuity/`、`oral-cancer-mucosal-lesion-early-detection-continuity/`、`pediatric-oral-health-development-continuity/`、`geriatric-long-term-care-oral-health-continuity/`、`dental-care-access-insurance-workforce-continuity/`、`xerostomia-salivary-function-oral-medication-continuity/` 和 `temporomandibular-orofacial-pain-jaw-function-continuity/` 负责龋病、牙周、缺牙修复、牙科急性事件、口腔癌、儿童/老年口腔、牙科可及性、唾液功能和颌面痛连续性的证据边界，不提供牙科诊断、影像判读、治疗方案、药物剂量、急救流程、产品推荐、保险资格或个体护理建议。
 - `future-waiting/` 和 `biostasis-cryopreservation/` 负责等待未来的时间成本和损耗成本路径。
 - `risk-engineering/`、`planetary-health-environment/`、`resource-social-infra/`、`supply-chain-continuity/`、`synthetic-biology-biosecurity/`、`space-extreme-habitation/` 和 `governance-rights/` 负责外部风险、环境底座、资源底座、关键供应链、生物安全、极端栖居和主体权利保护。
 - `measurement-feedback/` 负责所有研究域进入定量模型前的测量、预测和反馈接口。

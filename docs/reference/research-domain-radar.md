@@ -95,6 +95,16 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `substance-exposure-control/` | 烟草、酒精、成瘾性物质和有害暴露会同时改变风险函数与主体自主性 |
 | `health-literacy-navigation/` | 医疗和社会服务只有可理解、可导航、可复核时才会转化为主体收益 |
 | `oral-health-continuity/` | 口腔健康连接营养、疼痛、感染、沟通和社会参与 |
+| `dental-caries-prevention-restoration-continuity/` | 龋病预防和修复可及性决定牙体损伤是否升级为疼痛、感染、缺课缺勤和费用摩擦 |
+| `periodontal-disease-systemic-inflammation-continuity/` | 牙周支持结构决定咀嚼稳定、缺牙风险、慢性炎症负担和长期维护能力 |
+| `tooth-loss-prosthodontic-chewing-continuity/` | 缺牙与修复状态决定咀嚼效率、饮食选择、言语、尊严和照护依赖 |
+| `dental-pain-emergency-infection-continuity/` | 牙痛和牙源性感染决定注意力、睡眠、工作、急诊使用和风险升级 |
+| `oral-cancer-mucosal-lesion-early-detection-continuity/` | 口腔癌和黏膜病变早识别决定诊断延迟、吞咽言语功能和治疗后选择权 |
+| `pediatric-oral-health-development-continuity/` | 儿童口腔健康决定学习出勤、家庭照护、营养和早期能力形成 |
+| `geriatric-long-term-care-oral-health-continuity/` | 老年口腔照护决定长期照护中的进食、吞咽、疼痛、尊严和机构生活质量 |
+| `dental-care-access-insurance-workforce-continuity/` | 牙科保险、劳动力和服务入口决定预防与治疗能否变成真实可及服务 |
+| `xerostomia-salivary-function-oral-medication-continuity/` | 唾液功能和口干风险决定龋病、感染、吞咽、言语和药物副作用负担 |
+| `temporomandibular-orofacial-pain-jaw-function-continuity/` | TMD 与口颌面痛决定颌面运动、进食表达、睡眠和持续注意力损耗 |
 | `genomic-stability-dna-repair/` | DNA 损伤、修复能力和突变负荷是癌症、衰老和组织功能的上游变量 |
 | `telomere-maintenance/` | 端粒系统独立连接复制能力、组织更新、细胞衰老和癌症风险 |
 | `proteostasis-autophagy/` | 蛋白稳态和自噬是细胞质量控制、神经连续性和组织功能的基础机制 |

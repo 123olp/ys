@@ -4,6 +4,7 @@ All notable repository structure changes are recorded here.
 
 ## 2026-07-01
 
+- Added the eighty-eighth wave of oral, dental, and jaw-function continuity domains, covering dental caries, periodontal disease, tooth loss/prosthodontic chewing, dental pain/emergency infection, oral cancer early detection, pediatric oral health, geriatric/long-term-care oral health, dental care access/workforce, xerostomia/salivary function, and temporomandibular/orofacial pain.
 - Added the eighty-seventh wave of organ-specific cancer continuity domains, covering breast, colorectal, lung, prostate, cervical, ovarian, pancreatic, liver, childhood cancer, and cancer survivorship late effects.
 
 - Added the eighty-sixth wave of chronic neurodegenerative, neuromuscular, and post-infectious function-continuity domains, covering Parkinson's disease, multiple sclerosis, ALS, Huntington disease, spinal muscular atrophy, muscular dystrophy, myasthenia gravis, spinal cord injury, ME/CFS, and Long COVID.

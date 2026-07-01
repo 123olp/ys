@@ -624,6 +624,16 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 服务入口可理解可导航 | `health-literacy-navigation/` | 健康素养、服务导航、风险沟通、共同决策 | 有资源但不会用、误解、延误、行政排除 |
 | 语言和表达可理解 | `language-access-plain-communication/` | plain language、语言服务、LEP、CLAS、认知可访问性、表单理解 | 材料读不懂、听不懂、不能执行，或简化时删掉权利和风险 |
 | 口腔系统可持续 | `oral-health-continuity/` | 咀嚼、牙周、口腔疼痛、感染、沟通 | 营养障碍、疼痛、感染、社交退缩 |
+| 牙体结构必须可维护 | `dental-caries-prevention-restoration-continuity/` | 龋病、牙体结构、氟化物、窝沟封闭、修复可及 | 疼痛、感染、缺课缺勤、费用摩擦、急性牙科事件 |
+| 牙周支持必须稳定 | `periodontal-disease-systemic-inflammation-continuity/` | 牙周炎症、牙齿支持结构、缺牙风险、慢性炎症 | 牙齿松动、缺牙、咀嚼下降、感染和长期维护失败 |
+| 缺牙后功能必须可恢复 | `tooth-loss-prosthodontic-chewing-continuity/` | 缺牙、义齿、修复、咀嚼效率、营养、言语 | 饮食受限、营养不足、社交退缩、照护依赖 |
+| 急性牙科事件必须可阻断 | `dental-pain-emergency-infection-continuity/` | 牙痛、牙源性感染、急诊摩擦、睡眠缺勤 | 注意力被疼痛劫持、感染升级、工作照护中断 |
+| 口腔癌路径必须不断裂 | `oral-cancer-mucosal-lesion-early-detection-continuity/` | 口腔癌、黏膜病变、早期识别、转诊、吞咽言语 | 延迟诊断、治疗功能损伤、复发恐惧和生存风险 |
+| 儿童口腔影响能力形成 | `pediatric-oral-health-development-continuity/` | 早期龋病、学校牙科、缺课、家庭照护、营养 | 疼痛和服务缺口转化为学习、睡眠和发育机会损失 |
+| 老年口腔影响照护质量 | `geriatric-long-term-care-oral-health-continuity/` | 老年口腔、义齿、口干、吞咽、长期照护 | 营养不良、误吸、疼痛、尊严下降和机构照护失败 |
+| 牙科入口必须可获得 | `dental-care-access-insurance-workforce-continuity/` | 牙科保险、费用、劳动力、地理、预约、语言 | 可预防问题被拖成疼痛、感染、缺牙和家庭资源损耗 |
+| 唾液功能必须被维护 | `xerostomia-salivary-function-oral-medication-continuity/` | 口干、唾液、药物副作用、放疗、Sjögren、吞咽言语 | 龋病、感染、进食沟通困难、睡眠和社交退缩 |
+| 颌面功能必须可承受 | `temporomandibular-orofacial-pain-jaw-function-continuity/` | TMD、口颌面痛、开口、咀嚼、睡眠、压力 | 慢性痛税、饮食受限、言语退缩和工作能力下降 |
 | 持续存在可承受 | `pain-suffering-control/` | 疼痛、症状负担、生活质量、尊严 | 延长痛苦、有效时间崩塌、退出权受损 |
 | 干预效应必须可识别 | `causal-inference-target-trial-emulation/` | 因果图、反事实、目标试验模拟、混杂、选择偏差 | 把相关性误写成因果，导致错误干预排序 |
 | 寿命和健康寿命风险必须可建模 | `survival-analysis-healthspan-risk-modeling/` | 风险函数、生存曲线、健康寿命、竞争风险、有效时间 | 用静态指标替代时间路径，误读寿命和失能风险 |
@@ -1378,6 +1388,16 @@ mental-health-affective-stability
   -> time-allocation-effective-time
   -> pain-suffering-control
   -> oral-health-continuity
+  -> dental-caries-prevention-restoration-continuity
+  -> periodontal-disease-systemic-inflammation-continuity
+  -> tooth-loss-prosthodontic-chewing-continuity
+  -> dental-pain-emergency-infection-continuity
+  -> oral-cancer-mucosal-lesion-early-detection-continuity
+  -> pediatric-oral-health-development-continuity
+  -> geriatric-long-term-care-oral-health-continuity
+  -> dental-care-access-insurance-workforce-continuity
+  -> xerostomia-salivary-function-oral-medication-continuity
+  -> temporomandibular-orofacial-pain-jaw-function-continuity
   -> rehabilitation-functioning
 ```
 
