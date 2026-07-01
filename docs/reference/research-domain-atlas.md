@@ -493,6 +493,12 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 使用点供水必须防止污染逆流 | `premise-plumbing-backflow-cross-connection-continuity/` | Premise plumbing、交叉连接、回流、防护装置、压力事件 | 回流和交叉连接失败会把建筑内部污染逆流带入饮水、食品、医疗和清洁任务 |
 | 化粪池必须维护并防止污水回流 | `septic-system-maintenance-sewage-backup-continuity/` | 化粪池、排水场、泵抽、系统超载、污水回流 | 分散式污水系统失效会把居住卫生、饮水风险、维修费用和住房稳定同时击穿 |
 | 地下室进水必须可排可恢复 | `basement-flooding-sump-pump-moisture-recovery-continuity/` | 地下室进水、sump pump、排水、断电、潮湿恢复 | 水害恢复失败会把设备、文件、空气质量、储物和家庭恢复空间转成长期损耗 |
+| 家庭电气接口必须受保护 | `residential-electrical-wiring-outlet-safety-continuity/` | 线路、插座、延长线、断路器、GFCI/AFCI、过载 | 电气接口失败会把照明、通信、医疗设备和学习工具转成触电、火灾和断电风险 |
+| 家庭供暖必须安全排气 | `home-heating-equipment-chimney-vent-maintenance-continuity/` | 供暖设备、烟囱、排气、燃烧、维护、空间加热器 | 供暖维护或排气失败会把寒冷保护转成火灾、CO、睡眠破坏和照护中断 |
+| 家庭制冷必须可维护 | `home-cooling-heat-pump-air-conditioning-maintenance-continuity/` | 空调、热泵、滤网、维护、高温负荷、能源成本 | 制冷维护失败会让热浪压缩睡眠、慢病管理、药品保存、学习工作和恢复窗口 |
+| 燃气泄漏必须可识别可专业恢复 | `natural-gas-propane-leak-shutoff-continuity/` | 天然气、丙烷、燃气表、阀门、泄漏信号、撤离、专业恢复 | 泄漏识别或恢复失败会把供暖烹饪燃料转成爆炸、火灾、中毒和返家风险 |
+| 室内温度必须可控制 | `thermostat-temperature-control-thermal-comfort-continuity/` | 温控器、设定点、传感器、日程、远程控制、热舒适 | 温控错误会让供暖制冷能力无法转成稳定室内状态，放大冷热、睡眠和能源冲突 |
+| 住宅热边界必须可维护 | `weatherization-insulation-air-sealing-thermal-envelope-continuity/` | 保温、气密、围护结构、通风平衡、湿气、能源负担 | 围护结构失败会长期放大冷热暴露、能源成本、潮湿、空气质量和住房稳定风险 |
 | 家庭卫生必须可治理 | `household-cleaning-disinfection-pest-control-continuity/` | 清洁、消毒、化学品安全、害虫控制、室内卫生 | 清洁不足、化学误用或害虫暴露会制造感染、过敏、毒性和居住压力 |
 | 邮件包裹必须可接收 | `postal-parcel-delivery-pickup-continuity/` | 邮件、包裹、签收、自提、追踪、地址同步 | 文件、药品、设备、账单或身份材料收不到会切断远程服务和物理资源交付 |
 | 家庭故障必须可被可信维修 | `household-maintenance-repair-contractor-continuity/` | 维修请求、承包商、报价、许可、投诉、维修记录 | 维修延误、诈骗、无证服务或记录缺失会让住房、设备、水电、卫生和安全持续恶化 |
@@ -1238,6 +1244,12 @@ risk-engineering
   -> premise-plumbing-backflow-cross-connection-continuity
   -> septic-system-maintenance-sewage-backup-continuity
   -> basement-flooding-sump-pump-moisture-recovery-continuity
+  -> residential-electrical-wiring-outlet-safety-continuity
+  -> home-heating-equipment-chimney-vent-maintenance-continuity
+  -> home-cooling-heat-pump-air-conditioning-maintenance-continuity
+  -> natural-gas-propane-leak-shutoff-continuity
+  -> thermostat-temperature-control-thermal-comfort-continuity
+  -> weatherization-insulation-air-sealing-thermal-envelope-continuity
   -> household-cleaning-disinfection-pest-control-continuity
   -> postal-parcel-delivery-pickup-continuity
   -> household-maintenance-repair-contractor-continuity

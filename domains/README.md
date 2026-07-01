@@ -587,6 +587,12 @@
 - `premise-plumbing-backflow-cross-connection-continuity/`：建筑 plumbing 回流与交叉连接连续性，整理使用点污染逆流、回流防护、压力事件和维护记录。
 - `septic-system-maintenance-sewage-backup-continuity/`：化粪池维护与污水回流连续性，整理 septic tank、排水场、泵抽维护、系统超载和住房卫生。
 - `basement-flooding-sump-pump-moisture-recovery-continuity/`：地下室进水、sump pump 与潮湿恢复连续性，整理进水、排水、断电、霉菌风险和住房恢复。
+- `residential-electrical-wiring-outlet-safety-continuity/`：住宅电气线路与插座安全连续性，整理线路、插座、保护装置、过载、触电和火灾风险。
+- `home-heating-equipment-chimney-vent-maintenance-continuity/`：家庭供暖设备、烟囱与排气维护连续性，整理燃烧、排气、维护、冬季热支持和火灾/CO 边界。
+- `home-cooling-heat-pump-air-conditioning-maintenance-continuity/`：家庭制冷、热泵与空调维护连续性，整理滤网、设备维护、室内热暴露、睡眠和慢病任务断点。
+- `natural-gas-propane-leak-shutoff-continuity/`：天然气、丙烷泄漏识别与关断恢复连续性，整理燃气接口、泄漏信号、撤离、专业恢复和家庭任务连续性。
+- `thermostat-temperature-control-thermal-comfort-continuity/`：温控器与室内温度控制连续性，整理设定点、传感器、远程控制、热舒适和能耗冲突。
+- `weatherization-insulation-air-sealing-thermal-envelope-continuity/`：天气化、保温、气密与住宅围护结构连续性，整理热边界、湿气边界、空气交换和能源负担。
 - `household-cleaning-disinfection-pest-control-continuity/`：家庭清洁、消毒与害虫控制连续性，整理表面清洁、消毒、化学品安全、害虫控制和室内卫生。
 - `postal-parcel-delivery-pickup-continuity/`：邮件、包裹、投递与自提连续性，整理邮件包裹、签收、自提、追踪、地址错配和最后一公里接收。
 - `household-maintenance-repair-contractor-continuity/`：家庭维修、承包商与修复服务连续性，整理维修请求、承包商、报价、许可、记录、投诉和修复恢复。

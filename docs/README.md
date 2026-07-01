@@ -128,6 +128,7 @@ docs/
 │   ├── 0110-add-one-hundred-fifth-wave-personal-device-consumable-continuity-domains.md
 │   ├── 0111-add-one-hundred-sixth-wave-assistive-device-operational-continuity-domains.md
 │   ├── 0112-add-one-hundred-seventh-wave-household-water-wastewater-execution-domains.md
+│   ├── 0113-add-one-hundred-eighth-wave-household-energy-thermal-safety-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -404,6 +405,12 @@ docs/
     - Then read `../domains/premise-plumbing-backflow-cross-connection-continuity/README.md` for premise plumbing, cross-connections, backflow, pressure events, testing/maintenance records, or use-point water safety.
     - Then read `../domains/septic-system-maintenance-sewage-backup-continuity/README.md` for septic tanks, drainfields, pumping/inspection, overload, sewage backup, or decentralized wastewater continuity.
     - Then read `../domains/basement-flooding-sump-pump-moisture-recovery-continuity/README.md` for basement flooding, sump pumps, drainage, outages, moisture recovery, mold risk, or housing recovery tasks.
+    - Then read `../domains/residential-electrical-wiring-outlet-safety-continuity/README.md` for residential wiring, outlets, extension cords, GFCI/AFCI, overload, electrical fire, or household device power safety.
+    - Then read `../domains/home-heating-equipment-chimney-vent-maintenance-continuity/README.md` for heating equipment, chimney, venting, furnace/boiler/fireplace maintenance, winter indoor heat, or combustion safety boundaries.
+    - Then read `../domains/home-cooling-heat-pump-air-conditioning-maintenance-continuity/README.md` for AC, heat pumps, cooling maintenance, filters, indoor heat exposure, heat waves, or cooling-task continuity.
+    - Then read `../domains/natural-gas-propane-leak-shutoff-continuity/README.md` for natural gas, propane, fuel-gas leaks, shutoff boundaries, evacuation, or professional restoration after fuel risk.
+    - Then read `../domains/thermostat-temperature-control-thermal-comfort-continuity/README.md` for thermostats, setpoints, sensors, remote control, thermal comfort, or temperature-control task continuity.
+    - Then read `../domains/weatherization-insulation-air-sealing-thermal-envelope-continuity/README.md` for weatherization, insulation, air sealing, thermal envelope, moisture/ventilation balance, or energy-burden continuity.
 183. Read `../domains/advance-care-planning-medical-decision-continuity/README.md` if you are working on advance care planning, advance directives, health care proxy, medical decision continuity, goals of care, or incapacity communication.
 184. Read `../domains/supported-decision-making-guardianship-rights/README.md` if you are working on supported decision-making, guardianship, conservatorship, decision capacity, disability rights, or least restrictive alternatives.
 185. Read `../domains/healthcare-personal-representative-hipaa-access-continuity/README.md` if you are working on HIPAA personal representatives, caregiver access, proxy access, medical records, privacy boundaries, or authorized care coordination.

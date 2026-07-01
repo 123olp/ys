@@ -547,6 +547,12 @@ human_infra/
     ├── premise-plumbing-backflow-cross-connection-continuity/ # 建筑 plumbing 回流与交叉连接连续性
     ├── septic-system-maintenance-sewage-backup-continuity/ # 化粪池维护与污水回流连续性
     ├── basement-flooding-sump-pump-moisture-recovery-continuity/ # 地下室进水与潮湿恢复连续性
+    ├── residential-electrical-wiring-outlet-safety-continuity/ # 住宅电气线路与插座安全连续性
+    ├── home-heating-equipment-chimney-vent-maintenance-continuity/ # 家庭供暖设备、烟囱与排气维护连续性
+    ├── home-cooling-heat-pump-air-conditioning-maintenance-continuity/ # 家庭制冷、热泵与空调维护连续性
+    ├── natural-gas-propane-leak-shutoff-continuity/ # 天然气、丙烷泄漏识别与关断恢复连续性
+    ├── thermostat-temperature-control-thermal-comfort-continuity/ # 温控器与室内温度控制连续性
+    ├── weatherization-insulation-air-sealing-thermal-envelope-continuity/ # 天气化、保温、气密与围护结构连续性
     ├── building-fire-life-safety-codes/ # 建筑消防与生命安全规范
     ├── manufacturing-repair-capacity/ # 制造与维修能力
     ├── public-procurement-contracting-capacity/ # 公共采购与合同能力
@@ -879,6 +885,7 @@ human_infra/
 - `domains/contact-lens-hygiene-eye-infection-continuity/`、`domains/hearing-aid-maintenance-battery-access-continuity/`、`domains/menstrual-product-access-safety-continuity/`、`domains/incontinence-absorbent-product-supply-dignity-continuity/`、`domains/diabetic-therapeutic-footwear-offloading-continuity/` 和 `domains/compression-garment-lymphedema-venous-continuity/` 负责贴身设备与耗材执行连续性，覆盖隐形眼镜卫生、助听设备维护、月经用品、失禁吸收用品、糖尿病治疗鞋/卸载和压迫用品，不提供验光配镜、助听验配维修、产品推荐、诊疗、护理操作、医保个案或保险申诉建议。
 - `domains/eyeglasses-prescription-repair-replacement-continuity/`、`domains/wheelchair-scooter-battery-repair-access-continuity/`、`domains/walker-cane-crutch-fit-maintenance-continuity/`、`domains/prosthetic-limb-orthotic-fit-repair-continuity/`、`domains/cpap-pap-device-mask-supply-power-continuity/` 和 `domains/fall-detection-emergency-response-device-continuity/` 负责个人辅助设备运行连续性，覆盖眼镜修理替换、轮椅/代步车电池维修、助行器具维护、假肢矫形适配维修、PAP 设备耗材供电和跌倒检测响应设备，不提供验光处方、设备处方、参数调整、康复训练、维修教程、品牌推荐、购买建议、医保/保险个案、急救分诊、911 策略或监控方案。
 - `domains/private-well-water-testing-treatment-continuity/`、`domains/household-water-treatment-filter-maintenance-continuity/`、`domains/lead-service-line-lead-copper-drinking-water-continuity/`、`domains/premise-plumbing-backflow-cross-connection-continuity/`、`domains/septic-system-maintenance-sewage-backup-continuity/` 和 `domains/basement-flooding-sump-pump-moisture-recovery-continuity/` 负责家庭水与污水执行连续性，覆盖私人井水检测处理、家庭滤水维护、铅铜饮水管线、建筑回流交叉连接、化粪池污水回流和地下室进水潮湿恢复，不提供水质结果判断、饮水许可、滤水器购买、井施工、管道施工、回流装置安装、化粪池维修、抽水操作、霉菌清理、保险索赔、法律责任或个案住房建议。
+- `domains/residential-electrical-wiring-outlet-safety-continuity/`、`domains/home-heating-equipment-chimney-vent-maintenance-continuity/`、`domains/home-cooling-heat-pump-air-conditioning-maintenance-continuity/`、`domains/natural-gas-propane-leak-shutoff-continuity/`、`domains/thermostat-temperature-control-thermal-comfort-continuity/` 和 `domains/weatherization-insulation-air-sealing-thermal-envelope-continuity/` 负责家庭能源与热安全执行连续性，覆盖住宅电气线路插座、家庭供暖烟囱排气、家庭制冷热泵维护、天然气/丙烷泄漏关断、温控器室温控制和天气化保温围护结构，不提供电工维修、接线、配电箱操作、供暖/空调维修、燃气关阀、泄漏判断、冷媒操作、温控器安装、保温施工、通风设计、设备购买、能效审计、补贴申请、保险索赔、法律责任或个案住房建议。
 - `domains/building-fire-life-safety-codes/` 负责建筑规范、消防规范、生命安全、疏散、烟雾报警、无障碍和韧性改造。
 - `domains/manufacturing-repair-capacity/` 负责制造、维修、维护、备件、质量、本地生产和关键设备恢复能力。
 - `domains/public-procurement-contracting-capacity/` 负责公共采购、合同、供应商管理、应急采购、透明度和交付验收。
@@ -1221,3 +1228,4 @@ human_infra/
 - 2026-07-01：新增第一百零五波 6 个贴身设备与耗材执行连续性域，把隐形眼镜、助听设备、月经用品、失禁用品、糖尿病治疗鞋/卸载和压迫用品纳入主体日常执行接口。
 - 2026-07-01：新增第一百零六波 6 个个人辅助设备运行连续性域，把眼镜、轮椅/代步车、助行器具、假肢矫形、PAP 设备和跌倒检测响应设备纳入身体-工具运行接口。
 - 2026-07-01：新增第一百零七波 6 个家庭水与污水执行连续性域，把私人井水、家庭滤水、铅铜管线、建筑回流、化粪池和地下室进水潮湿恢复纳入家庭端饮水卫生住房接口。
+- 2026-07-01：新增第一百零八波 6 个家庭能源与热安全执行连续性域，把住宅电气线路插座、家庭供暖烟囱排气、家庭制冷热泵、天然气/丙烷泄漏关断、温控器和天气化保温围护结构纳入家庭端热、电、燃气和室内环境控制接口。

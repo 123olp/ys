@@ -770,6 +770,12 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `premise-plumbing-backflow-cross-connection-continuity/` | 建筑内部交叉连接、回流防护和压力事件决定使用点饮水、食品、医疗和清洁任务是否可能被污染逆流击穿 |
 | `septic-system-maintenance-sewage-backup-continuity/` | 化粪池维护、排水场、系统超载和污水回流决定家庭污水处理是否会转成饮水、卫生、住房和费用风险 |
 | `basement-flooding-sump-pump-moisture-recovery-continuity/` | 地下室进水、sump pump、断电、排水和潮湿恢复决定家庭设备、文件、空气质量和恢复空间是否会长期损耗 |
+| `residential-electrical-wiring-outlet-safety-continuity/` | 住宅线路、插座、保护装置、过载和老化电气系统决定家庭设备能否获得安全用电接口，而不是制造触电和火灾风险 |
+| `home-heating-equipment-chimney-vent-maintenance-continuity/` | 供暖设备、烟囱、排气和维护状态决定寒冷条件下室内热支持是否安全，而不是转成火灾、CO 或燃烧风险 |
+| `home-cooling-heat-pump-air-conditioning-maintenance-continuity/` | 空调、热泵、滤网和维护状态决定热浪中睡眠、慢病管理、药品保存、学习工作和恢复是否保持可执行 |
+| `natural-gas-propane-leak-shutoff-continuity/` | 天然气和丙烷的泄漏识别、撤离和专业恢复决定高能量燃料是否支撑供暖烹饪，而不是转成爆炸、火灾或中毒风险 |
+| `thermostat-temperature-control-thermal-comfort-continuity/` | 温控器、传感器、设定点、远程控制和占用模式决定供暖制冷能力是否真实转化为可居住室内状态 |
+| `weatherization-insulation-air-sealing-thermal-envelope-continuity/` | 保温、气密、围护结构、通风和湿气边界决定房屋能否降低冷热暴露、能源负担和室内空气风险 |
 | `household-cleaning-disinfection-pest-control-continuity/` | 家庭清洁、消毒和害虫控制决定居住空间是否在感染、过敏、毒性和虫害暴露中保持可恢复 |
 | `postal-parcel-delivery-pickup-continuity/` | 邮件、包裹、签收、自提和地址同步决定证件、药品、设备、账单和关键物资能否从外部系统抵达主体 |
 | `household-maintenance-repair-contractor-continuity/` | 家庭维修、承包商、报价、许可、投诉和记录决定住房、设备、水电、卫生和安全故障能否被可信修复 |
@@ -2358,6 +2364,13 @@ Source links:
 - https://www.epa.gov/septic/why-maintain-your-septic-system
 - https://www.epa.gov/sites/default/files/2015-09/documents/2007_05_18_disinfection_tcr_issuepaper_tcr_crossconnection-backflow.pdf
 - https://www.epa.gov/emergencies-iaq/flood-cleanup-protect-indoor-air-and-your-health
+- https://www.usfa.fema.gov/prevention/home-fires/prevent-fires/appliance-and-electrical/
+- https://www.usfa.fema.gov/prevention/home-fires/prevent-fires/heating/
+- https://www.energy.gov/energysaver/maintaining-your-air-conditioner
+- https://www.energy.gov/energysaver/thermostats
+- https://www.energy.gov/energysaver/weatherize
+- https://www.phmsa.dot.gov/safety-awareness/pipeline/pipeline-leak-recognition-and-what-do
+- https://www.cdc.gov/heat-health/about/index.html
 
 ## 使用规则
 

@@ -125,3 +125,4 @@ Current decisions:
 - `0110-add-one-hundred-fifth-wave-personal-device-consumable-continuity-domains.md`
 - `0111-add-one-hundred-sixth-wave-assistive-device-operational-continuity-domains.md`
 - `0112-add-one-hundred-seventh-wave-household-water-wastewater-execution-domains.md`
+- `0113-add-one-hundred-eighth-wave-household-energy-thermal-safety-domains.md`

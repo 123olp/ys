@@ -1718,6 +1718,23 @@ Human Infra 不能被设计成更精密的压榨系统。
 - 不收集、复制、处理或要求家庭地址、井位、井深、检测报告、管线照片、设备序列号、滤芯订单、水费账单、物业记录、保险单、地下室照片、霉菌照片、租约、付款信息或其他敏感住房/健康资料。
 - 不替代 EPA、CDC、地方卫生/环境部门、水务公司、认证实验室、持证 plumber、septic professional、FEMA、保险、房东/物业、公共卫生、应急管理或法律渠道。
 
+## 家庭能源与热安全执行连续性边界
+
+`residential-electrical-wiring-outlet-safety-continuity`、`home-heating-equipment-chimney-vent-maintenance-continuity`、`home-cooling-heat-pump-air-conditioning-maintenance-continuity`、`natural-gas-propane-leak-shutoff-continuity`、`thermostat-temperature-control-thermal-comfort-continuity` 和 `weatherization-insulation-air-sealing-thermal-envelope-continuity` 关注家庭端电气、供暖、制冷、燃气、温控和热边界如何影响照明、通信、睡眠、照护、烹饪、医疗设备、工作学习和恢复空间，不是电工、HVAC、燃气、施工、能效、保险或个案住房建议入口。
+
+可以做：
+
+- 比较住宅电气、供暖排气、制冷维护、燃气泄漏识别、温控和围护结构如何影响家庭任务、冷热暴露、能源负担、火灾/CO/泄漏风险和恢复时间。
+- 记录 USFA/FEMA、DOE/Energy Saver、CDC、PHMSA、地方建筑/消防/燃气规范和专业资料中的对象、机制、变量、证据边界和禁止用途。
+- 设计 `household energy/thermal interface -> control/maintenance state -> task dependency -> continuity outcome` 变量链。
+
+不能做：
+
+- 不提供电工维修、接线、配电箱操作、GFCI/AFCI 安装、供暖/空调维修、烟囱清理、燃气关阀、泄漏判断、燃气恢复、冷媒操作、温控器接线、设备购买、温度处方、保温施工、通风设计、能效审计、补贴申请、保险索赔、法律责任或个案住房建议。
+- 不判断某个插座、断路器、炉具、锅炉、烟囱、空调、热泵、燃气表、阀门、温控器、门窗、保温层、通风系统、租房维修或能源账单应如何具体处理。
+- 不收集、复制、处理或要求家庭地址、电气面板照片、燃气表照片、设备序列号、温控器账号、能源账单、维修记录、保险单、房屋照片、租约、支付信息或其他敏感住房/健康资料。
+- 不替代持证电工、HVAC 专业人员、燃气公司、丙烷供应商、消防部门、911、能源援助、地方建筑/电气/燃气规范、房东/物业、公共卫生、保险或法律渠道。
+
 ## 个人移动执行连续性边界
 
 `personal-vehicle-maintenance-recall-repair-continuity`、`fuel-ev-charging-refueling-access-continuity`、`parking-curb-access-towing-impound-continuity`、`walking-bicycling-micromobility-continuity`、`paratransit-nemt-access-continuity`、`taxi-rideshare-demand-response-mobility-continuity`、`transit-fare-payment-toll-account-continuity` 和 `multimodal-trip-planning-real-time-wayfinding-continuity` 关注车辆、补能、停车、主动出行、辅助医疗交通、按需交通、支付账户和实时导向如何把交通服务转化为主体真实到达能力，不是车辆维修、补能操作、交通规避、平台攻击、逃票或个案申诉入口。

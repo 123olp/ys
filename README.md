@@ -812,6 +812,12 @@ flowchart TD
     H --> PPBCC[premise-plumbing-backflow-cross-connection-continuity<br/>回流交叉连接 / 使用点安全]
     H --> SSMSB[septic-system-maintenance-sewage-backup-continuity<br/>化粪池 / 污水回流]
     H --> BFSPMR[basement-flooding-sump-pump-moisture-recovery-continuity<br/>地下室进水 / 潮湿恢复]
+    H --> REWOSC[residential-electrical-wiring-outlet-safety-continuity<br/>住宅电气 / 插座安全]
+    H --> HHECVMC[home-heating-equipment-chimney-vent-maintenance-continuity<br/>家庭供暖 / 烟囱排气]
+    H --> HCHPAC[home-cooling-heat-pump-air-conditioning-maintenance-continuity<br/>家庭制冷 / 热泵维护]
+    H --> NGPLSC[natural-gas-propane-leak-shutoff-continuity<br/>燃气丙烷 / 泄漏关断]
+    H --> TTCTCC[thermostat-temperature-control-thermal-comfort-continuity<br/>温控器 / 室温控制]
+    H --> WIASTEC[weatherization-insulation-air-sealing-thermal-envelope-continuity<br/>天气化保温 / 围护结构]
     H --> HCDPCC[household-cleaning-disinfection-pest-control-continuity<br/>家庭清洁 / 消毒害虫控制]
     H --> PPDPC[postal-parcel-delivery-pickup-continuity<br/>邮件包裹 / 投递自提]
     H --> HMRCC[household-maintenance-repair-contractor-continuity<br/>家庭维修 / 承包商服务]
@@ -1257,6 +1263,12 @@ flowchart TD
 | [Premise Plumbing Backflow Cross Connection Continuity](domains/premise-plumbing-backflow-cross-connection-continuity/README.md) | 建筑内部 plumbing、交叉连接、回流、防护装置、压力事件、测试维护和记录 | 把建筑使用点污染逆流从隐蔽工程问题转成可审查的饮水和服务安全链 | 不提供管道施工、回流装置安装、检测步骤、维修教程、合规判断或事故处置 |
 | [Septic System Maintenance Sewage Backup Continuity](domains/septic-system-maintenance-sewage-backup-continuity/README.md) | 化粪池、排水场、泵抽维护、系统超载、故障征兆、污水回流和维修等待 | 让分散式污水系统持续保护居住卫生、饮水安全、住房稳定和家庭预算 | 不提供化粪池施工、泵抽频率个案、故障诊断、污水清理、维修商推荐或许可判断 |
 | [Basement Flooding Sump Pump Moisture Recovery Continuity](domains/basement-flooding-sump-pump-moisture-recovery-continuity/README.md) | 地下室进水、sump pump、排水、断电、潮湿材料、霉菌风险和恢复延迟 | 防止一次性水害转成长期空气、设备、文件、居住和恢复空间损耗 | 不提供抽水操作、电气进入、霉菌清理、防水施工、保险索赔或灾害现场判断 |
+| [Residential Electrical Wiring Outlet Safety Continuity](domains/residential-electrical-wiring-outlet-safety-continuity/README.md) | 住宅线路、插座、延长线、断路器、GFCI/AFCI、过载和老化电气系统 | 让家庭照明、通信、医疗设备、学习和恢复活动不被电气故障、触电或火灾切断 | 不提供接线、配电箱操作、电工维修、安装教程、消防验收或住房安全个案建议 |
+| [Home Heating Equipment Chimney Vent Maintenance Continuity](domains/home-heating-equipment-chimney-vent-maintenance-continuity/README.md) | 供暖设备、烟囱、排气、燃料燃烧、维护记录、空间加热器和冬季启停 | 让寒冷环境下室内温度、燃烧排气和居住恢复保持安全连续 | 不提供设备维修、烟囱清理、燃气/油炉调试、排气判断或现场安全许可 |
+| [Home Cooling Heat Pump Air Conditioning Maintenance Continuity](domains/home-cooling-heat-pump-air-conditioning-maintenance-continuity/README.md) | 空调、热泵、滤网、制冷能力、维护延迟、高温负荷和能源成本 | 防止高温和高湿把睡眠、慢病管理、药品保存、学习工作和家庭恢复切断 | 不提供空调维修、冷媒操作、设备选型、安装教程、温度处方或个案医疗建议 |
+| [Natural Gas Propane Leak Shutoff Continuity](domains/natural-gas-propane-leak-shutoff-continuity/README.md) | 天然气、丙烷、燃气表、阀门、炉具、泄漏信号、撤离和专业恢复 | 让高能量燃料使用保持可识别、可撤离、可专业恢复，避免泄漏、爆炸、火灾和中毒风险 | 不提供关阀操作、泄漏判断、设备维修、燃气恢复、管线施工或现场许可 |
+| [Thermostat Temperature Control Thermal Comfort Continuity](domains/thermostat-temperature-control-thermal-comfort-continuity/README.md) | 温控器、设定点、传感器、日程、远程控制、占用模式和误配置 | 把供暖制冷能力稳定转译为可居住室内状态，降低过热、过冷、睡眠破坏和能耗冲突 | 不提供温控器安装接线、设备购买、具体设定点处方、智能家居配置或账单优化 |
+| [Weatherization Insulation Air Sealing Thermal Envelope Continuity](domains/weatherization-insulation-air-sealing-thermal-envelope-continuity/README.md) | 保温、气密、门窗、围护结构、通风平衡、能源负担、潮湿和空气交换 | 让房屋热边界、湿气边界和空气交换更可控，支撑睡眠、照护、工作和恢复空间 | 不提供施工教程、材料选择、能效审计、保温改造、通风设计、补贴申请或房屋交易建议 |
 | [Household Cleaning Disinfection Pest Control Continuity](domains/household-cleaning-disinfection-pest-control-continuity/README.md) | 表面清洁、消毒、化学品安全、害虫控制、垃圾和室内卫生 | 在感染控制、害虫风险和化学暴露之间建立可治理的家庭卫生边界 | 不提供消毒配方、化学混合、杀虫剂使用、毒物处理、霉菌清除或医疗处置步骤 |
 | [Postal Parcel Delivery Pickup Continuity](domains/postal-parcel-delivery-pickup-continuity/README.md) | 邮件、包裹、投递、自提、签收、追踪、地址同步和最后一公里接收 | 让文件、药品、设备、账单、身份材料和远程交易实物能到达主体 | 不提供邮件拦截、包裹盗取、冒领、地址欺诈、追踪滥用或物流攻击方法 |
 | [Household Maintenance Repair Contractor Continuity](domains/household-maintenance-repair-contractor-continuity/README.md) | 家庭维修、承包商、服务预约、报价、许可、投诉和维修记录 | 让住房和设备故障能被发现、排程、修复和记录 | 不提供 DIY 危险维修、电气燃气施工、合同争议策略、理赔策略或法律意见 |
@@ -2234,6 +2246,12 @@ human_infra/
 │   ├── premise-plumbing-backflow-cross-connection-continuity/
 │   ├── septic-system-maintenance-sewage-backup-continuity/
 │   ├── basement-flooding-sump-pump-moisture-recovery-continuity/
+│   ├── residential-electrical-wiring-outlet-safety-continuity/
+│   ├── home-heating-equipment-chimney-vent-maintenance-continuity/
+│   ├── home-cooling-heat-pump-air-conditioning-maintenance-continuity/
+│   ├── natural-gas-propane-leak-shutoff-continuity/
+│   ├── thermostat-temperature-control-thermal-comfort-continuity/
+│   ├── weatherization-insulation-air-sealing-thermal-envelope-continuity/
 │   ├── urogenital-continuity/
 │   ├── urinary-tract-infection-pyelonephritis-urosepsis-continuity/
 │   ├── catheter-associated-uti-device-infection-continuity/
@@ -2433,5 +2451,6 @@ flowchart LR
 - 2026-07-01：新增第一百零五波 6 个贴身设备与耗材执行连续性域，覆盖隐形眼镜卫生、助听设备维护、月经用品、失禁吸收用品、糖尿病治疗鞋/卸载和压迫用品。
 - 2026-07-01：新增第一百零六波 6 个个人辅助设备运行连续性域，覆盖眼镜修理替换、轮椅/代步车电池维修、手杖/拐杖/助行器维护、假肢矫形适配维修、PAP 设备耗材供电和跌倒检测紧急响应设备。
 - 2026-07-01：新增第一百零七波 6 个家庭水与污水执行连续性域，覆盖私人井水检测处理、家庭滤水维护、铅铜饮水管线、建筑回流交叉连接、化粪池污水回流和地下室进水潮湿恢复。
+- 2026-07-01：新增第一百零八波 6 个家庭能源与热安全执行连续性域，覆盖住宅电气线路插座、家庭供暖烟囱排气、家庭制冷热泵维护、天然气/丙烷泄漏关断、温控器室温控制和天气化保温围护结构。
 
 完整记录见 [CHANGELOG.md](CHANGELOG.md)。
