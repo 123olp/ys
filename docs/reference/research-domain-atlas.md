@@ -390,6 +390,12 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 家庭组成必须能被资格系统正确建模 | `household-composition-dependent-eligibility-continuity/` | household、dependent、共同居住、照护关系、税务、保险、福利资格单位 | 家庭事实变化或制度定义错配导致错误拒绝、错误支付、覆盖断裂或追缴风险 |
 | 家庭责任必须可执行可审查 | `family-law-custody-child-support-continuity/` | 亲子关系、监护权、养育时间、子女抚养、法院命令、执行记录 | 命令缺失、执行失败或冲突升级让儿童资源、安全、医疗教育授权和照护连续性断裂 |
 | 原照护失稳后儿童安置必须连续 | `kinship-foster-adoption-care-continuity/` | 亲属照护、寄养、收养、安置稳定性、permanency、儿童记录 | 保护过程因频繁转移、记录丢失、服务失败或关系断裂转化为新的创伤和能力形成损失 |
+| 离家青年必须被可信外展和庇护接住 | `runaway-homeless-youth-outreach-shelter-continuity/` | runaway/homeless youth、street outreach、basic center、transitional living、家庭调解、服务转接 | 家庭断裂和住所缺失若没有可信外展与保密转接，会同时切断安全、学校、医疗和成年机会 |
+| 寄养出离必须有成年转接桥 | `foster-care-aging-out-independent-living-continuity/` | Chafee、extended foster care、教育培训券、住房、医保、身份文件、永久支持关系 | 保护系统结束时若住房、医保、身份和关系未接续，青年会在成年入口一次性失去多个支撑 |
+| 少年司法重返必须回到发展轨道 | `juvenile-justice-reentry-aftercare-continuity/` | juvenile reentry、aftercare、社区监督、学校复学、行为健康、家庭支持、记录保密 | 司法接触若不能接回学校、健康和社区支持，会把短期事件固化为长期能力损失 |
+| 心理健康服务必须跨年龄边界连续 | `transition-age-youth-mental-health-service-continuity/` | transition-age youth、儿童到成人行为健康转接、危机入口、同伴支持、隐私授权、保险网络 | 年龄转段切断治疗关系、保险和支持入口时，学习、工作、关系和自我维护能力会同步受损 |
+| 机会青年必须能重新进入教育就业路径 | `opportunity-youth-education-employment-pathway-continuity/` | disconnected youth、GED/替代教育、Job Corps、YouthBuild、职业训练、交通托育住房支持 | 教育就业双断线若无多接口回路，会把成年早期学习轮次和收入入口永久压缩 |
+| 怀孕育儿青年必须同时保留成长和照护 | `pregnant-parenting-youth-family-support-continuity/` | pregnant/parenting youth、学校连续、产前产后转接、托育、住房、营养、亲职支持 | 育儿责任若没有学校、医疗、托育和家庭支持，会把青年与下一代的选择窗口同时压缩 |
 | 可用资金必须能被持续访问 | `banking-deposit-account-access-continuity/` | 银行账户、信用社账户、存款保险、账户恢复、错误交易、支付入口 | 账户失效、冻结、凭据丢失、机构倒闭或错误交易让收入、福利、储蓄和支付能力断线 |
 | 债务义务必须可被治理和重组 | `debt-obligation-collection-relief-continuity/` | 债务类型、催收、信用后果、破产、债务救济、消费者保护 | 债务压力、催收、诉讼、扣押或错误记录吞噬现金流、注意力、住房和重新开始能力 |
 | 不动产资源必须可证明可追溯 | `real-property-title-deed-record-continuity/` | 地契、产权链、土地记录、抵押、留置、房产税、title insurance | 产权链错误、地契丢失、留置或税费断点让居住、资产、继承和灾后恢复失去制度保护 |
@@ -1189,6 +1195,12 @@ risk-engineering
   -> household-composition-dependent-eligibility-continuity
   -> family-law-custody-child-support-continuity
   -> kinship-foster-adoption-care-continuity
+  -> runaway-homeless-youth-outreach-shelter-continuity
+  -> foster-care-aging-out-independent-living-continuity
+  -> juvenile-justice-reentry-aftercare-continuity
+  -> transition-age-youth-mental-health-service-continuity
+  -> opportunity-youth-education-employment-pathway-continuity
+  -> pregnant-parenting-youth-family-support-continuity
   -> banking-deposit-account-access-continuity
   -> debt-obligation-collection-relief-continuity
   -> real-property-title-deed-record-continuity

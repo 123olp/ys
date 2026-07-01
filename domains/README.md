@@ -496,6 +496,12 @@
 - `household-composition-dependent-eligibility-continuity/`：家庭组成、受扶养人与资格关系连续性，整理 household、dependent、共同居住、照护关系、税务、保险和福利资格单位。
 - `family-law-custody-child-support-continuity/`：家庭法、监护权与子女抚养连续性，整理亲子关系、监护、养育时间、子女抚养、家庭法院命令和执行记录。
 - `kinship-foster-adoption-care-continuity/`：亲属照护、寄养、收养与儿童安置连续性，整理 kinship care、foster care、adoption、安置稳定性、permanency 和儿童记录连续性。
+- `runaway-homeless-youth-outreach-shelter-continuity/`：离家与无家可归青年外展庇护连续性，整理 runaway/homeless youth、street outreach、basic center、transitional living、家庭调解和服务转接。
+- `foster-care-aging-out-independent-living-continuity/`：寄养出离与独立生活连续性，整理 Chafee、extended foster care、教育培训券、住房、医保、身份文件和永久支持关系。
+- `juvenile-justice-reentry-aftercare-continuity/`：少年司法重返与 aftercare 连续性，整理 juvenile reentry、社区监督、学校复学、行为健康、家庭社区支持和记录保密。
+- `transition-age-youth-mental-health-service-continuity/`：过渡年龄青年心理健康服务连续性，整理儿童到成人行为健康转接、危机入口、同伴支持、隐私授权和保险网络。
+- `opportunity-youth-education-employment-pathway-continuity/`：机会青年教育就业路径连续性，整理 disconnected youth、GED/替代教育、Job Corps、YouthBuild、职业训练和支持服务。
+- `pregnant-parenting-youth-family-support-continuity/`：怀孕与育儿青年家庭支持连续性，整理 pregnant/parenting youth、学校连续、健康转接、托育、住房、营养和亲职支持。
 - `banking-deposit-account-access-continuity/`：银行账户、存款保险与账户访问连续性，整理账户访问、存款保险、账户恢复、错误交易、争议和支付入口。
 - `debt-obligation-collection-relief-continuity/`：债务义务、催收与债务救济连续性，整理债务压力、催收、信用后果、破产、债务救济和重新开始路径。
 - `real-property-title-deed-record-continuity/`：不动产权属、地契与土地记录连续性，整理地契、产权链、抵押、税费、留置和地方土地记录。

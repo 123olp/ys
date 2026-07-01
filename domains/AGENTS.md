@@ -566,6 +566,24 @@ domains/
 ├── kinship-foster-adoption-care-continuity/
 │   ├── AGENTS.md
 │   └── README.md
+├── runaway-homeless-youth-outreach-shelter-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── foster-care-aging-out-independent-living-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── juvenile-justice-reentry-aftercare-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── transition-age-youth-mental-health-service-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── opportunity-youth-education-employment-pathway-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── pregnant-parenting-youth-family-support-continuity/
+│   ├── AGENTS.md
+│   └── README.md
 ├── banking-deposit-account-access-continuity/
 │   ├── AGENTS.md
 │   └── README.md
@@ -2517,6 +2535,7 @@ domains/
 - `family-medical-leave-job-protection-continuity/`、`paid-sick-family-leave-wage-replacement-continuity/`、`pregnancy-parental-work-continuity/`、`workplace-accommodation-return-to-work-continuity/`、`disability-income-work-capacity-benefit-continuity/` 和 `family-caregiver-respite-work-continuity/` 负责家庭医疗假岗位保护、带薪病假/家庭假工资替代、孕产育儿工作连续性、合理便利复工、残障收入与工作能力福利、家庭照护者喘息与工作连续性这些工作中断与照护事件连续性条件。
 - `adult-day-services-supervision-transport-continuity/`、`home-care-aide-personal-care-workforce-continuity/`、`respite-care-provider-capacity-scheduling-continuity/`、`caregiver-training-skills-safety-continuity/`、`caregiver-health-burnout-screening-support-continuity/` 和 `home-care-task-coordination-care-plan-continuity/` 负责成人日间服务、居家照护人员、喘息容量、照护者训练、照护者健康和家庭照护任务协调这些长期照护执行连续性条件。
 - `vital-records-life-event-continuity/`、`name-change-identity-record-synchronization-continuity/`、`address-residency-mail-service-continuity/`、`household-composition-dependent-eligibility-continuity/`、`family-law-custody-child-support-continuity/` 和 `kinship-foster-adoption-care-continuity/` 负责生命事件记录、姓名变更同步、地址居住地邮件路由、家庭组成资格关系、家庭法监护抚养、亲属照护寄养收养这些家庭事实与制度记录连续性条件。
+- `runaway-homeless-youth-outreach-shelter-continuity/`、`foster-care-aging-out-independent-living-continuity/`、`juvenile-justice-reentry-aftercare-continuity/`、`transition-age-youth-mental-health-service-continuity/`、`opportunity-youth-education-employment-pathway-continuity/` 和 `pregnant-parenting-youth-family-support-continuity/` 负责青少年到成年转变连续性，整理离家无家可归青年、寄养出离、少年司法重返、过渡年龄心理健康、机会青年教育就业和怀孕育儿青年支持这些发展窗口。
 - `banking-deposit-account-access-continuity/`、`debt-obligation-collection-relief-continuity/`、`real-property-title-deed-record-continuity/`、`driver-license-vehicle-registration-continuity/`、`passport-travel-document-mobility-continuity/`、`contract-subscription-billing-consent-continuity/` 和 `notary-document-authentication-signature-continuity/` 负责银行账户存款访问、债务义务催收救济、不动产权属地契、驾照车辆登记、护照旅行证件、合同订阅账单、公证文件认证签名这些资源控制、移动资格与交易执行连续性条件。
 - `long-distance-travel-booking-itinerary-continuity/`、`air-passenger-rights-disruption-refund-continuity/`、`aviation-security-screening-identity-continuity/`、`baggage-personal-property-travel-continuity/`、`lodging-temporary-accommodation-access-continuity/`、`travel-advisory-consular-assistance-continuity/`、`travel-health-preparedness-continuity/` 和 `customs-border-entry-declaration-continuity/` 负责长距离旅行预订行程、航空中断退款、安检身份核验、行李个人物品、临时住宿、旅行警示领事协助、旅行健康准备和海关边境申报这些离家移动执行连续性条件。
 - `online-retail-order-shipping-fulfillment-continuity/`、`consumer-return-refund-dispute-resolution-continuity/`、`consumer-warranty-service-contract-repair-continuity/`、`right-to-repair-parts-manuals-access-continuity/`、`payment-card-dispute-unauthorized-charge-continuity/`、`gift-card-prepaid-stored-value-continuity/`、`price-fee-disclosure-junk-fee-continuity/` 和 `consumer-reviews-endorsements-marketplace-trust-continuity/` 负责在线零售订单履约、退货退款争议、消费品保修维修、维修权零件手册、支付卡争议未授权扣款、礼品卡预付储值、价格费用披露和消费者评价背书市场信任这些消费者交易、履约与市场信任连续性条件。
@@ -2572,6 +2591,7 @@ domains/
 - `adult-day-services-supervision-transport-continuity/`、`home-care-aide-personal-care-workforce-continuity/`、`respite-care-provider-capacity-scheduling-continuity/`、`caregiver-training-skills-safety-continuity/`、`caregiver-health-burnout-screening-support-continuity/` 和 `home-care-task-coordination-care-plan-continuity/` 负责长期照护执行连续性的证据边界，不提供成人日间服务推荐、居家照护雇佣、排班安排、照护培训替代、医疗护理操作、心理诊断、危机干预、福利资格、照护计划制定、家庭纠纷调解、法律、保险或个案建议。
 - `tribal-health-sovereignty-service-access-continuity/`、`veterans-health-benefits-navigation-continuity/`、`migrant-seasonal-farmworker-health-housing-continuity/`、`territorial-island-health-infrastructure-access-continuity/`、`border-community-cross-border-care-continuity/` 和 `lgbtq-health-identity-affirming-service-continuity/` 负责人口与地域可达性连续性的证据边界，不提供个体医疗、福利申请、身份判断、移民/边境、跨境就医、劳动纠纷、危机干预、法律、政治或个案建议，也不做群体定位、身份推断、监控画像或歧视性筛选。
 - `vital-records-life-event-continuity/`、`name-change-identity-record-synchronization-continuity/`、`address-residency-mail-service-continuity/`、`household-composition-dependent-eligibility-continuity/`、`family-law-custody-child-support-continuity/` 和 `kinship-foster-adoption-care-continuity/` 负责家庭事实与制度记录连续性的证据边界，不提供个人证件办理、改名、地址变更、税务/福利 household 判断、监护权、子女抚养、寄养、收养、法律、移民、福利、保险、学校、法院或个案策略建议。
+- `runaway-homeless-youth-outreach-shelter-continuity/`、`foster-care-aging-out-independent-living-continuity/`、`juvenile-justice-reentry-aftercare-continuity/`、`transition-age-youth-mental-health-service-continuity/`、`opportunity-youth-education-employment-pathway-continuity/` 和 `pregnant-parenting-youth-family-support-continuity/` 负责青少年转变窗口的证据边界，不提供逃离路线、庇护所定位、个案法律、法院、缓刑/监管规避、心理危机、诊断治疗、项目申请、就业、福利、育儿、怀孕、托育、住房或家庭冲突建议，也不收集或推断未成年人位置、身份、风险状态或家庭信息。
 - `child-care-availability-affordability-continuity/`、`child-care-licensing-health-safety-continuity/`、`child-care-subsidy-ccdf-payment-continuity/`、`head-start-early-head-start-family-support-continuity/`、`early-intervention-idea-part-c-developmental-services-continuity/` 和 `out-of-school-time-afterschool-summer-learning-continuity/` 负责早期儿童照护执行连续性的证据边界，不提供托育机构推荐、补贴申请、儿童诊断、治疗计划、IFSP/IEP 策略、学校安置、接送路线、项目报名、法律、医疗、教育或家庭个案建议。
 - `banking-deposit-account-access-continuity/`、`debt-obligation-collection-relief-continuity/`、`real-property-title-deed-record-continuity/`、`driver-license-vehicle-registration-continuity/`、`passport-travel-document-mobility-continuity/`、`contract-subscription-billing-consent-continuity/` 和 `notary-document-authentication-signature-continuity/` 负责资源控制、移动资格与交易执行连续性的证据边界，不提供个人银行、债务、破产、房产、车辆、驾驶、护照、签证、移民、订阅取消、合同审查、公证、apostille、电子签名、法律、金融或个案策略建议。
 - `long-distance-travel-booking-itinerary-continuity/`、`air-passenger-rights-disruption-refund-continuity/`、`aviation-security-screening-identity-continuity/`、`baggage-personal-property-travel-continuity/`、`lodging-temporary-accommodation-access-continuity/`、`travel-advisory-consular-assistance-continuity/`、`travel-health-preparedness-continuity/` 和 `customs-border-entry-declaration-continuity/` 负责旅行、住宿、安检、领事、健康和边境移动连续性的证据边界，不提供路线推荐、票务套利、退款赔偿、安检规避、违禁品携带、住宿选择、旅行安全、医疗、签证、移民、海关申报、保险、法律或个案策略建议。

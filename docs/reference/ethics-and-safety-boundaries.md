@@ -1487,6 +1487,25 @@ Human Infra 不能被设计成更精密的压榨系统。
 - 不支持群体定位、监控画像、风险评分、歧视性筛选、商业定向获客、污名化叙事、outing、监管规避、边境路线建议或弱势群体剥削。
 - 不替代 IHS、VA、HRSA health centers、DOL、HHS OCR、CDC、SAMHSA、Medicaid/CHIP、部落政府、公共卫生机构、律师、医生、社工、危机服务或官方服务入口。
 
+## 青少年到成年转变连续性边界
+
+`runaway-homeless-youth-outreach-shelter-continuity`、`foster-care-aging-out-independent-living-continuity`、`juvenile-justice-reentry-aftercare-continuity`、`transition-age-youth-mental-health-service-continuity`、`opportunity-youth-education-employment-pathway-continuity` 和 `pregnant-parenting-youth-family-support-continuity` 关注青少年到成年转变期间，住所、安全、儿童福利出离、少年司法重返、心理健康系统转换、教育就业再进入和年轻父母支持如何影响主体持续性，不是个体逃离、庇护定位、法院案件、心理危机、福利申请、就业安置、怀孕育儿、学校或家庭冲突建议入口。
+
+可以做：
+
+- 整理 ACF Runaway and Homeless Youth、ACF Chafee、OJJDP reentry aftercare、Youth.gov、SAMHSA Healthy Transitions、DOL YouthBuild、Job Corps 和 Child Welfare Information Gateway 等公开来源、机制、对象、服务断点和边界。
+- 比较离家与无家可归青年、寄养出离青年、少年司法重返青年、过渡年龄心理健康服务对象、机会青年和怀孕/育儿青年在住所、证件、学校、医疗、现金流、家庭支持、同伴支持和成人系统接口上的连续性风险。
+- 记录服务入口类别、跨系统交接、年龄阈值、监护/同意、隐私、强制报告、数据最小化、反污名、反画像和禁止用途，服务后续建模而不是输出个案方案。
+
+不能做：
+
+- 不提供个体离家、逃离、庇护地址、避开家庭/学校/执法/儿童福利/监督人员、跨州移动、身份隐藏、危机处置、心理治疗、医疗、怀孕、育儿、教育、就业、福利、法院、缓刑、移民或法律建议。
+- 不判断某未成年人或青年是否应离家、是否无家可归、是否适合某个项目、是否有资格获得 Chafee、YouthBuild、Job Corps、庇护、医保、心理健康、托育、住房、现金援助或 reentry 服务。
+- 不生成申请材料、个案计划、逃离路线、庇护定位、监督规避、学校复学策略、法院/缓刑策略、心理危机干预、药物建议、育儿方案、托育安排、就业安置、住房申请或福利申诉材料。
+- 不收集、推断或暴露未成年人和青年的实时位置、身份、家庭冲突、怀孕状态、心理健康状态、司法状态、寄养状态、性取向/性别认同、住房状态、学校状态或风险画像。
+- 不支持监控、商业定向获客、歧视性筛选、污名化叙事、outing、胁迫控制、执法规避、监督规避、福利欺诈、虚假陈述、儿童剥削或把未成年人风险转化为产品增长指标。
+- 不替代 ACF、Children's Bureau、OJJDP、SAMHSA、DOL、Job Corps、Youth.gov、学校、儿童福利机构、少年司法机构、医生、心理健康专业人员、社工、律师、危机热线、紧急服务或官方服务入口。
+
 ## 生命事件、家庭关系与制度记录连续性边界
 
 `vital-records-life-event-continuity`、`name-change-identity-record-synchronization-continuity`、`address-residency-mail-service-continuity`、`household-composition-dependent-eligibility-continuity`、`family-law-custody-child-support-continuity` 和 `kinship-foster-adoption-care-continuity` 关注生命事件、姓名、地址、家庭组成、监护抚养和儿童安置如何影响身份、服务、通知、资格、安全和照护连续性，不是个人证件、改名、迁址、税务/福利 household、家庭法院、子女抚养、寄养、收养或儿童福利案件入口。

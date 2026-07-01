@@ -193,6 +193,12 @@ human_infra/
     ├── household-composition-dependent-eligibility-continuity/ # 家庭组成、受扶养人与资格关系连续性
     ├── family-law-custody-child-support-continuity/ # 家庭法、监护权与子女抚养连续性
     ├── kinship-foster-adoption-care-continuity/ # 亲属照护、寄养、收养与儿童安置连续性
+    ├── runaway-homeless-youth-outreach-shelter-continuity/ # 离家与无家可归青年外展庇护连续性
+    ├── foster-care-aging-out-independent-living-continuity/ # 寄养出离与独立生活连续性
+    ├── juvenile-justice-reentry-aftercare-continuity/ # 少年司法重返与 aftercare 连续性
+    ├── transition-age-youth-mental-health-service-continuity/ # 过渡年龄青年心理健康服务连续性
+    ├── opportunity-youth-education-employment-pathway-continuity/ # 机会青年教育就业路径连续性
+    ├── pregnant-parenting-youth-family-support-continuity/ # 怀孕与育儿青年家庭支持连续性
     ├── banking-deposit-account-access-continuity/ # 银行账户、存款保险与账户访问连续性
     ├── debt-obligation-collection-relief-continuity/ # 债务义务、催收与债务救济连续性
     ├── real-property-title-deed-record-continuity/ # 不动产权属、地契与土地记录连续性
@@ -1065,6 +1071,7 @@ human_infra/
 - `domains/income-payroll-employment-record-continuity/`、`domains/tax-administration-filing-record-continuity/`、`domains/social-security-earnings-benefit-record-continuity/`、`domains/retirement-pension-savings-plan-continuity/`、`domains/unemployment-insurance-wage-record-continuity/` 和 `domains/workers-compensation-occupational-injury-benefit-continuity/` 负责工资雇佣记录、税务申报记录、社会保险收入与福利记录、退休养老金计划、失业保险工资记录和工伤职业伤害权益这些劳动成果到未来保障的记录连续性条件。
 - `domains/family-medical-leave-job-protection-continuity/`、`domains/paid-sick-family-leave-wage-replacement-continuity/`、`domains/pregnancy-parental-work-continuity/`、`domains/workplace-accommodation-return-to-work-continuity/`、`domains/disability-income-work-capacity-benefit-continuity/` 和 `domains/family-caregiver-respite-work-continuity/` 负责家庭医疗假岗位保护、带薪病假/家庭假工资替代、孕产育儿工作连续性、合理便利复工、残障收入与工作能力福利、家庭照护者喘息与工作连续性这些工作中断与照护事件连续性条件。
 - `domains/vital-records-life-event-continuity/`、`domains/name-change-identity-record-synchronization-continuity/`、`domains/address-residency-mail-service-continuity/`、`domains/household-composition-dependent-eligibility-continuity/`、`domains/family-law-custody-child-support-continuity/` 和 `domains/kinship-foster-adoption-care-continuity/` 负责生命事件记录、姓名变更同步、地址居住地邮件路由、家庭组成资格关系、家庭法监护抚养、亲属照护寄养收养这些家庭事实与制度记录连续性条件。
+- `domains/runaway-homeless-youth-outreach-shelter-continuity/`、`domains/foster-care-aging-out-independent-living-continuity/`、`domains/juvenile-justice-reentry-aftercare-continuity/`、`domains/transition-age-youth-mental-health-service-continuity/`、`domains/opportunity-youth-education-employment-pathway-continuity/` 和 `domains/pregnant-parenting-youth-family-support-continuity/` 负责青少年到成年转变连续性，覆盖离家/无家可归青年外展庇护、寄养出离独立生活、少年司法重返、过渡年龄心理健康、机会青年教育就业和怀孕育儿青年家庭支持。
 - `domains/banking-deposit-account-access-continuity/`、`domains/debt-obligation-collection-relief-continuity/`、`domains/real-property-title-deed-record-continuity/`、`domains/driver-license-vehicle-registration-continuity/`、`domains/passport-travel-document-mobility-continuity/`、`domains/contract-subscription-billing-consent-continuity/` 和 `domains/notary-document-authentication-signature-continuity/` 负责银行账户存款访问、债务义务催收救济、不动产权属地契、驾照车辆登记、护照旅行证件、合同订阅账单、公证文件认证签名这些资源控制、移动资格与交易执行连续性条件。
 - `domains/long-distance-travel-booking-itinerary-continuity/`、`domains/air-passenger-rights-disruption-refund-continuity/`、`domains/aviation-security-screening-identity-continuity/`、`domains/baggage-personal-property-travel-continuity/`、`domains/lodging-temporary-accommodation-access-continuity/`、`domains/travel-advisory-consular-assistance-continuity/`、`domains/travel-health-preparedness-continuity/` 和 `domains/customs-border-entry-declaration-continuity/` 负责长距离旅行预订行程、航空中断退款、安检身份核验、行李个人物品、临时住宿、旅行警示领事协助、旅行健康准备和海关边境申报这些旅行、临时住宿与跨境移动执行连续性条件。
 - `domains/online-retail-order-shipping-fulfillment-continuity/`、`domains/consumer-return-refund-dispute-resolution-continuity/`、`domains/consumer-warranty-service-contract-repair-continuity/`、`domains/right-to-repair-parts-manuals-access-continuity/`、`domains/payment-card-dispute-unauthorized-charge-continuity/`、`domains/gift-card-prepaid-stored-value-continuity/`、`domains/price-fee-disclosure-junk-fee-continuity/` 和 `domains/consumer-reviews-endorsements-marketplace-trust-continuity/` 负责在线零售订单履约、退货退款争议、消费品保修维修、维修权零件手册、支付卡争议未授权扣款、礼品卡预付储值、价格费用披露和消费者评价背书市场信任这些消费者交易、履约与市场信任连续性条件。
@@ -1180,6 +1187,7 @@ human_infra/
 - 2026-06-29：新增可控度规等待室假设 working paper 入口和审计账本，把黑洞等待室收敛为固有时差分、退出采用、风险扣减和递归等待的可审查模型。
 - 2026-07-01：新增第 115 波长期照护执行连续性域，覆盖成人日间服务、居家照护人员、喘息容量、照护者训练、照护者健康和居家照护任务协调。
 - 2026-07-01：新增第 116 波人口与地域可达性连续性域，覆盖部落健康主权服务、退伍军人福利导航、迁徙季节性农业工人健康住房、属地岛屿健康基础设施、边境跨境照护和 LGBTQ 身份承认服务。
+- 2026-07-01：新增第 117 波青少年到成年转变连续性域，覆盖离家无家可归青年外展庇护、寄养出离独立生活、少年司法重返 aftercare、过渡年龄青年心理健康、机会青年教育就业和怀孕育儿青年家庭支持。
 - 2026-06-30：新增第四十一波 6 个收入、税务、社保、退休、失业和工伤权益记录连续性域，覆盖工资雇佣记录、税务申报记录、社会保险收入与福利记录、退休养老金计划、失业保险工资记录和工伤职业伤害权益。
 - 2026-06-30：新增第四十波 6 个资格证明、证照与能力可携带连续性域，覆盖教育记录核验、职业证照认证、技能胜任力凭证、继续教育再认证、学徒制工作中学习和可验证凭证钱包互操作。
 - 2026-06-30：新增第三十九波 6 个算法化准入、筛查与资格连续性域，覆盖信用与消费者报告、租房筛查、背景记录筛查、算法招聘、保险算法评分和公共福利自动资格系统。

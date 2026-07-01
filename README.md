@@ -721,6 +721,12 @@ flowchart TD
     H --> HCDEC[household-composition-dependent-eligibility-continuity<br/>家庭组成 / 资格关系]
     H --> FLCCSC[family-law-custody-child-support-continuity<br/>家庭法 / 监护抚养]
     H --> KFAC[kinship-foster-adoption-care-continuity<br/>亲属照护 / 寄养收养]
+    H --> RHYOSC[runaway-homeless-youth-outreach-shelter-continuity<br/>离家青年 / 外展庇护]
+    H --> FCAOIL[foster-care-aging-out-independent-living-continuity<br/>寄养出离 / 独立生活]
+    H --> JJRA[juvenile-justice-reentry-aftercare-continuity<br/>少年司法 / 重返接续]
+    H --> TAYMH[transition-age-youth-mental-health-service-continuity<br/>过渡青年 / 心理健康]
+    H --> OYEEP[opportunity-youth-education-employment-pathway-continuity<br/>机会青年 / 教育就业]
+    H --> PPYFS[pregnant-parenting-youth-family-support-continuity<br/>怀孕育儿青年 / 家庭支持]
     H --> BDAAC[banking-deposit-account-access-continuity<br/>银行账户 / 存款访问]
     H --> DOCRC[debt-obligation-collection-relief-continuity<br/>债务义务 / 催收救济]
     H --> RPTDRC[real-property-title-deed-record-continuity<br/>产权地契 / 土地记录]
@@ -1208,6 +1214,12 @@ flowchart TD
 | [Household Composition Dependent Eligibility Continuity](domains/household-composition-dependent-eligibility-continuity/README.md) | household、dependent、共同居住、照护关系、税务、保险和福利资格单位 | 把家庭关系事实转化为资源资格、覆盖、责任和行政连续性 | 不提供税务申报、福利资格、保险 household、监护、学校、住房、托育或虚假申报建议 |
 | [Family Law Custody Child Support Continuity](domains/family-law-custody-child-support-continuity/README.md) | 亲子关系、监护权、养育时间、子女抚养、家庭法院命令和执行记录 | 把家庭关系冲突转化为可执行、可审查、可恢复的儿童照护结构 | 不提供离婚、监护、探视、抚养费、保护令、法院策略、逃避责任或骚扰胁迫建议 |
 | [Kinship Foster Adoption Care Continuity](domains/kinship-foster-adoption-care-continuity/README.md) | kinship care、foster care、adoption、安置稳定性、permanency 和儿童记录连续性 | 在原照护失稳时维持儿童安全、身份、教育、医疗、关系和长期发展连续性 | 不提供寄养、收养、监护、儿童福利个案、法院、资格审核、非法安置或规避审查建议 |
+| [Runaway Homeless Youth Outreach Shelter Continuity](domains/runaway-homeless-youth-outreach-shelter-continuity/README.md) | 离家/无家可归青年、外展、basic center、transitional living、家庭调解、教育健康转介和隐私安全 | 把家庭断裂、住房不稳和服务不可信转化为可外展、可庇护、可转接的发展连续性问题 | 不提供逃离路线、庇护所定位、家庭冲突、报警、法律、移民、医疗、心理危机或安全计划建议 |
+| [Foster Care Aging Out Independent Living Continuity](domains/foster-care-aging-out-independent-living-continuity/README.md) | 寄养出离、Chafee、extended foster care、教育培训券、住房、医保、身份文件和永久支持关系 | 防止保护系统结束后青年在住房、医疗、教育、收入、身份和关系网络上同时掉线 | 不提供寄养、监护、福利、住房、医保、教育资助、法院、个案管理或法律建议 |
+| [Juvenile Justice Reentry Aftercare Continuity](domains/juvenile-justice-reentry-aftercare-continuity/README.md) | 少年司法重返、aftercare、社区监督、学校复学、行为健康、家庭支持和记录保密 | 把司法接触后的释放转化为学校、家庭、医疗、工作和社区发展路径的接续问题 | 不提供少年法院、缓刑、假释、监管规避、记录封存、学校纪律或执法应对建议 |
+| [Transition Age Youth Mental Health Service Continuity](domains/transition-age-youth-mental-health-service-continuity/README.md) | 过渡年龄青年、儿童到成人行为健康转接、危机入口、同伴支持、隐私授权和保险网络 | 防止年龄转段切断治疗关系、校园/社区入口、危机支持和自我维护能力 | 不提供诊断、治疗、用药、危机干预、自伤判断、转诊、保险选择或个体心理建议 |
+| [Opportunity Youth Education Employment Pathway Continuity](domains/opportunity-youth-education-employment-pathway-continuity/README.md) | 机会青年、断线青年、GED/替代教育、Job Corps、YouthBuild、职业训练、交通托育住房支持 | 把重新进入学习和工作建模为多接口路径连续性，保留能力资本和收入入口 | 不提供学校选择、项目申请、就业、简历、移民、福利、贷款、资格或职业规划建议 |
+| [Pregnant Parenting Youth Family Support Continuity](domains/pregnant-parenting-youth-family-support-continuity/README.md) | 怀孕/育儿青年、学校连续、产前产后转接、托育、住房、营养、亲职支持和隐私授权 | 让青年主体能在育儿责任中继续维持健康、学习、照护和未来选择权 | 不提供怀孕、分娩、育儿、学校权利、福利、托育、住房、医疗、心理或法律建议 |
 | [Banking Deposit Account Access Continuity](domains/banking-deposit-account-access-continuity/README.md) | 银行账户、信用社账户、存款保险、账户访问、错误交易和账户恢复 | 把收入、福利、储蓄和支付转化为主体可调用的资源控制能力 | 不提供开户、理财、投资、贷款、税务、债务、反洗钱规避或个体金融建议 |
 | [Debt Obligation Collection Relief Continuity](domains/debt-obligation-collection-relief-continuity/README.md) | 消费债务、医疗债务、学生贷款、催收、破产、债务救济和信用后果 | 把债务压力建模为现金流、注意力、住房、就业和重新开始能力的约束函数 | 不提供还款、债务谈判、破产申请、学生贷款、税务债务、催收应对或法律建议 |
 | [Real Property Title Deed Record Continuity](domains/real-property-title-deed-record-continuity/README.md) | 地契、产权链、土地记录、抵押、留置、房产税和 title insurance | 把居住空间和长期资产转化为可被制度保护、转让、继承和恢复的资源 | 不提供买卖房、产权、税务、抵押、继承、诉讼、估价、保险或法律建议 |
@@ -2082,6 +2094,12 @@ human_infra/
 │   ├── sensitive-location-data-exposure-continuity/
 │   ├── biometric-identifier-template-governance-continuity/
 │   ├── children-teen-data-privacy-consent-continuity/
+│   ├── runaway-homeless-youth-outreach-shelter-continuity/
+│   ├── foster-care-aging-out-independent-living-continuity/
+│   ├── juvenile-justice-reentry-aftercare-continuity/
+│   ├── transition-age-youth-mental-health-service-continuity/
+│   ├── opportunity-youth-education-employment-pathway-continuity/
+│   ├── pregnant-parenting-youth-family-support-continuity/
 │   ├── data-breach-notification-identity-recovery-continuity/
 │   ├── content-provenance-authenticity-credential-continuity/
 │   ├── synthetic-media-watermarking-disclosure-continuity/
@@ -2596,5 +2614,6 @@ flowchart LR
 - 2026-07-01：新增第一百一十二波 6 个家庭运行元数据与交接连续性域，覆盖公用设施关断位置标识、断路器面板标签、水路阀门标签、家庭设备型号召回记录、家庭服务联系人目录和家庭运行地图交接。
 - 2026-07-01：新增第一百一十三波 6 个邻里公共空间维护与地方服务请求执行连续性域，覆盖 311 服务请求、路灯夜间可见性、人行道/路缘坡道、雪冰冬季通行、街道树木维护和雨水口局部内涝。
 - 2026-07-01：新增第一百一十四波 6 个早期儿童照护执行连续性域，覆盖托育供给费用、许可健康安全、CCDF 补贴支付、Head Start、IDEA Part C 早期干预和课外/暑期学习照护。
+- 2026-07-01：新增第一百一十七波 6 个青少年到成年转变连续性域，覆盖离家无家可归青年外展庇护、寄养出离独立生活、少年司法重返 aftercare、过渡年龄青年心理健康、机会青年教育就业和怀孕育儿青年家庭支持。
 
 完整记录见 [CHANGELOG.md](CHANGELOG.md)。

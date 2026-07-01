@@ -453,6 +453,12 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `territorial-island-health-infrastructure-access-continuity/` | 属地岛屿健康基础设施决定离岸医疗、药品供应、转诊、能源水宽带和灾害恢复是否可持续 |
 | `border-community-cross-border-care-continuity/` | 边境社区和跨境照护决定家庭、工作、医疗、公共卫生、记录和身份边界能否被连续衔接 |
 | `lgbtq-health-identity-affirming-service-continuity/` | LGBTQ 健康和身份承认服务决定身份不承认、歧视、隐私风险和服务回避是否持续压缩主体未来选择权 |
+| `runaway-homeless-youth-outreach-shelter-continuity/` | 离家与无家可归青年外展庇护连续性决定未成年人和过渡青年是否能在住所、安全、学校、医疗和家庭断裂中被及时接住 |
+| `foster-care-aging-out-independent-living-continuity/` | 寄养出离与独立生活连续性决定儿童福利退出后住房、教育、医疗、证件、现金流和成人支持是否断线 |
+| `juvenile-justice-reentry-aftercare-continuity/` | 少年司法重返与 aftercare 连续性决定拘押、社区监督、学校、家庭、心理健康和就业培训是否能在出所后重新衔接 |
+| `transition-age-youth-mental-health-service-continuity/` | 过渡年龄青年心理健康服务连续性决定儿童系统到成人系统转换时治疗关系、保险、学校、危机和同伴支持是否中断 |
+| `opportunity-youth-education-employment-pathway-continuity/` | 机会青年教育就业路径连续性决定脱离学校和工作的青年是否能重新进入学习、技能、收入和职业身份形成通道 |
+| `pregnant-parenting-youth-family-support-continuity/` | 怀孕与育儿青年家庭支持连续性决定年轻父母是否能同时维持学业、医疗、住房、托育、收入和亲子安全 |
 | `homelessness-unsheltered-health-continuity/` | 无家可归和露宿状态决定睡眠、卫生、身份、安全、医疗和福利入口是否会同时断线 |
 | `correctional-health-reentry-continuity/` | 羁押和释放制度转换决定药物、慢病、心理、感染、身份、住房和社会连接是否连续 |
 | `disability-services-independent-living/` | 残障服务、独立生活、HCBS、合理便利和辅助技术决定能力变化后主体是否仍能自主参与 |
@@ -1345,6 +1351,7 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | Medicaid.gov territories / HRSA / ASPR / CDC island and disaster resources | 提示属地岛屿健康基础设施、供应链、转诊、财政规则和灾害恢复需要独立域 |
 | CDC U.S.-Mexico health / HHS border health materials | 提示边境社区和跨境公共卫生把家庭、工作、医疗、记录和交通放在跨制度边界中 |
 | CDC LGBT Health / HHS Section 1557 / SAMHSA LGBTQI+ | 提示 LGBTQ 健康、身份承认、反歧视、隐私和肯定性服务可达需要独立边界 |
+| ACF Runaway and Homeless Youth / ACF Chafee / OJJDP reentry aftercare / SAMHSA Healthy Transitions / DOL YouthBuild / Job Corps / Youth.gov parenting youth | 提示青少年到成年转变不是单一“成长”事件，而是住所、安全、儿童福利出离、少年司法、心理健康、教育就业和育儿支持的跨制度断点 |
 | USICH / HUD Homelessness / CDC Homelessness | 提示无家可归、露宿、庇护、外展、卫生、安全和住房服务连续性是住房稳定之外的独立断点 |
 | WHO Prison Health / CDC Correctional Health | 提示羁押健康、释放转介、药物连续性、感染、心理健康和重返社会服务需要独立制度转换域 |
 | ACL Centers for Independent Living / CMS HCBS / WHO Disability | 提示残障服务、独立生活、社区支持、个人协助和无障碍不仅是辅助技术或建成环境问题 |
@@ -2059,6 +2066,15 @@ Source links:
 - https://www.hhs.gov/civil-rights/for-individuals/section-1557/index.html
 - https://www.cdc.gov/lgbthealth/
 - https://www.samhsa.gov/behavioral-health-equity/lgbtqi
+- https://www.acf.hhs.gov/fysb/programs/runaway-homeless-youth
+- https://acf.gov/cb/grant-funding/john-h-chafee-foster-care-independence-program
+- https://ojjdp.ojp.gov/statistical-briefing-book/reentry-aftercare
+- https://youth.gov/youth-topics/juvenile-justice/reentry
+- https://www.samhsa.gov/grants/grant-announcements/sm-18-010
+- https://www.dol.gov/agencies/eta/youth/youthbuild
+- https://www.jobcorps.gov/
+- https://youth.gov/youth-topics/expectant-parenting-young-families
+- https://www.childwelfare.gov/topics/youth/expectant-and-parenting-youth-child-welfare/
 - https://www.usich.gov/
 - https://www.hud.gov/program_offices/comm_planning/homeless
 - https://www.who.int/europe/health-topics/prisons-and-health

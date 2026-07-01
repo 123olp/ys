@@ -1,0 +1,35 @@
+# Runaway Homeless Youth Outreach Shelter Continuity
+
+离家与无家可归青年外展、庇护和转接连续性，关注未成年或过渡年龄青年在家庭断裂、逃离暴力、住房不稳、学校断线和服务入口不可信时，如何仍能被外展、短期庇护、危机服务、家庭调解、教育、医疗、身份和长期住房系统接住。
+
+## 对象
+
+- Runaway and homeless youth
+- Street outreach
+- Basic center / emergency shelter
+- Transitional living
+- Family reunification / mediation
+- Education and health service linkage
+- Identity and records recovery
+- Safety and confidentiality boundaries
+
+## Human Infra 价值
+
+青年离家和无家可归不是单纯住房问题，而是家庭、学校、身份、医疗、安全和发展机会同时断裂的窗口。该域把“青少年能否继续学习、恢复、建立关系和进入成年”建模为外展、可信服务、短期庇护、长期转接和隐私保护的基础设施问题。
+
+## 边界
+
+- 不提供个案逃离、庇护所定位、家庭冲突处理、报警、法律、移民、医疗、心理危机或安全计划建议。
+- 不收集、推断或公开未成年人位置、身份、家庭信息、风险状态或服务使用记录。
+- 不替代官方热线、当地儿童保护、青少年服务机构、学校、医疗、法律援助或紧急服务。
+
+## 上游与下游
+
+- 上游：`child-protection-family-safety/`、`homelessness-unsheltered-health-continuity/`、`school-enrollment-attendance-continuity/`。
+- 下游：`transition-age-youth-mental-health-service-continuity/`、`opportunity-youth-education-employment-pathway-continuity/`、`pregnant-parenting-youth-family-support-continuity/`。
+
+## 初始资料线索
+
+- ACF Family and Youth Services Bureau Runaway and Homeless Youth Programs.
+- Youth.gov runaway and homeless youth resources.
+- HUD youth homelessness and continuum-of-care materials.
