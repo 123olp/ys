@@ -837,4 +837,14 @@ docs/
 651. Read `../domains/post-flood-mold-moisture-indoor-recovery-continuity/README.md` if you are working on post-flood mold, moisture, indoor air, housing returnability, dampness, respiratory burden, or cleanup evidence boundaries.
 652. Read `../domains/disaster-behavioral-health-distress-recovery-continuity/README.md` if you are working on disaster behavioral health, distress, trauma stress, crisis counseling, disaster hotlines, or recovery-period sleep and coping.
 653. Read `../domains/disaster-volunteer-donations-management-continuity/README.md` if you are working on disaster volunteers, donation management, unsolicited donations, VOAD, resource matching, or disaster social-support logistics.
-654. Enter a domain under `../domains/`.
+654. Read `../domains/outbreak-case-investigation-contact-tracing-continuity/README.md` if you are working on outbreak case investigation, contact tracing, exposure notification, privacy, or public-health service referral.
+655. Read `../domains/isolation-quarantine-work-school-continuity/README.md` if you are working on isolation, quarantine, sick leave, return-to-work, return-to-school, remote alternatives, or caregiving continuity during outbreaks.
+656. Read `../domains/community-testing-screening-access-continuity/README.md` if you are working on community testing, screening access, at-home tests, result reporting, testing sites, or outbreak observation interfaces.
+657. Read `../domains/vaccination-campaign-booster-delivery-continuity/README.md` if you are working on vaccination campaigns, booster delivery, appointment systems, cold chain, outreach, high-risk coverage, or immunization access equity.
+658. Read `../domains/mask-respirator-source-control-fit-access-continuity/README.md` if you are working on masks, respirators, source control, fit/access, respiratory protection, or public-place airborne risk control.
+659. Read `../domains/indoor-ventilation-filtration-outbreak-control-continuity/README.md` if you are working on ventilation, filtration, air cleaning, CO2 proxy metrics, indoor airborne exposure, or outbreak building operations.
+660. Read `../domains/school-workplace-outbreak-operations-continuity/README.md` if you are working on school operations, workplace operations, sick leave, absence, remote substitution, layered controls, or outbreak organizational continuity.
+661. Read `../domains/healthcare-surge-triage-capacity-continuity/README.md` if you are working on healthcare surge, bed capacity, staffing, triage frameworks, crisis standards, transfer networks, or delayed-care risk during outbreaks.
+662. Read `../domains/medical-countermeasure-stockpile-distribution-continuity/README.md` if you are working on medical countermeasures, Strategic National Stockpile, points of dispensing, antivirals, PPE, cold chain, or outbreak distribution equity.
+663. Read `../domains/wastewater-pathogen-surveillance-early-warning-continuity/README.md` if you are working on wastewater pathogen surveillance, NWSS, community trend signals, early warning, aggregation, or public-health trigger interfaces.
+664. Enter a domain under `../domains/`.

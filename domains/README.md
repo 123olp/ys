@@ -72,6 +72,16 @@
 - `functioning-quality-of-life-outcomes/`：功能与生活质量结局，整理功能状态、生活质量、症状负担、患者报告结局和主体中心结果。
 - `health-economics-value-assessment/`：健康经济与价值评估，整理疾病负担、成本效果、HTA、资源分配、公共价值和公平边界。
 - `immunization-public-health-surveillance/`：免疫与公共卫生监测，整理免疫计划、传染病监测、感染防控、AMR、One Health 和废水监测。
+- `outbreak-case-investigation-contact-tracing-continuity/`：暴发病例调查与接触追踪连续性，整理病例调查、接触者追踪、暴露通知、隐私保护和服务转介。
+- `isolation-quarantine-work-school-continuity/`：隔离检疫与工作学校连续性，整理隔离、检疫、病假、返校返工、远程替代和照护支持。
+- `community-testing-screening-access-continuity/`：社区检测与筛查可达连续性，整理社区检测、筛查、居家检测、报告和转介接口。
+- `vaccination-campaign-booster-delivery-continuity/`：疫苗行动与加强针递送连续性，整理疫苗行动、冷链、预约、提醒、高风险覆盖和公平可达。
+- `mask-respirator-source-control-fit-access-continuity/`：口罩、呼吸防护与源头控制连续性，整理口罩、呼吸器、源头控制、适配、可得性和工作学校接口。
+- `indoor-ventilation-filtration-outbreak-control-continuity/`：室内通风过滤与暴发控制连续性，整理室内通风、过滤、空气净化、CO2 代理指标和建筑运营。
+- `school-workplace-outbreak-operations-continuity/`：学校与工作场所暴发运营连续性，整理病假、远程替代、分层措施、风险沟通和组织连续性。
+- `healthcare-surge-triage-capacity-continuity/`：医疗挤兑、分诊与容量连续性，整理床位、人力、分诊、危机标准、转运和延迟照护。
+- `medical-countermeasure-stockpile-distribution-continuity/`：医疗对策储备与分发连续性，整理战略储备、POD、药物、PPE、冷链、物流和分配公平。
+- `wastewater-pathogen-surveillance-early-warning-continuity/`：污水病原体监测与早期预警连续性，整理污水监测、趋势信号、社区聚合、隐私边界和公共卫生触发器。
 - `maternal-newborn-child-development/`：母婴健康与儿童发展，整理孕产、新生儿、儿童健康、生长标准、早期发展和养育照护。
 - `patient-safety-organizational-learning/`：患者安全与组织学习，整理事件报告、团队沟通、根因分析、CUSP、TeamSTEPPS 和安全文化。
 - `caregiving-long-term-care/`：照护与长期照护，整理家庭照护、长期照护、居家社区支持、照护协调和照护者负担。

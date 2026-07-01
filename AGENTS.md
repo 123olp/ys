@@ -372,6 +372,16 @@ human_infra/
     ├── functioning-quality-of-life-outcomes/ # 功能与生活质量结局
     ├── health-economics-value-assessment/ # 健康经济与价值评估
     ├── immunization-public-health-surveillance/ # 免疫与公共卫生监测
+    ├── outbreak-case-investigation-contact-tracing-continuity/ # 暴发病例调查与接触追踪
+    ├── isolation-quarantine-work-school-continuity/ # 隔离检疫与工作学校连续性
+    ├── community-testing-screening-access-continuity/ # 社区检测与筛查可达
+    ├── vaccination-campaign-booster-delivery-continuity/ # 疫苗行动与加强针递送
+    ├── mask-respirator-source-control-fit-access-continuity/ # 口罩呼吸防护与源头控制
+    ├── indoor-ventilation-filtration-outbreak-control-continuity/ # 室内通风过滤与暴发控制
+    ├── school-workplace-outbreak-operations-continuity/ # 学校工作场所暴发运营
+    ├── healthcare-surge-triage-capacity-continuity/ # 医疗挤兑分诊与容量
+    ├── medical-countermeasure-stockpile-distribution-continuity/ # 医疗对策储备与分发
+    ├── wastewater-pathogen-surveillance-early-warning-continuity/ # 污水病原体监测与早期预警
     ├── maternal-newborn-child-development/ # 母婴健康与儿童发展
     ├── patient-safety-organizational-learning/ # 患者安全与组织学习
     ├── caregiving-long-term-care/ # 照护与长期照护
@@ -763,6 +773,7 @@ human_infra/
 - `domains/functioning-quality-of-life-outcomes/` 负责功能状态、生活质量、症状负担、患者报告结局和主体中心结果。
 - `domains/health-economics-value-assessment/` 负责疾病负担、成本效果、HTA、价值框架、预算影响、资源分配和公平边界。
 - `domains/immunization-public-health-surveillance/` 负责免疫计划、传染病监测、公共卫生应急、感染防控、AMR、One Health 和废水监测。
+- `domains/outbreak-case-investigation-contact-tracing-continuity/`、`domains/isolation-quarantine-work-school-continuity/`、`domains/community-testing-screening-access-continuity/`、`domains/vaccination-campaign-booster-delivery-continuity/`、`domains/mask-respirator-source-control-fit-access-continuity/`、`domains/indoor-ventilation-filtration-outbreak-control-continuity/`、`domains/school-workplace-outbreak-operations-continuity/`、`domains/healthcare-surge-triage-capacity-continuity/`、`domains/medical-countermeasure-stockpile-distribution-continuity/` 和 `domains/wastewater-pathogen-surveillance-early-warning-continuity/` 负责传染病暴发响应执行连续性，覆盖病例调查、接触追踪、隔离检疫、社区检测、疫苗行动、呼吸防护、室内空气控制、学校工作场所运营、医疗挤兑、医疗对策和污水早期预警。
 - `domains/maternal-newborn-child-development/` 负责孕产健康、新生儿健康、儿童健康、生长标准、早期发展和养育照护。
 - `domains/patient-safety-organizational-learning/` 负责患者安全、事件报告、团队沟通、根因分析、CUSP、TeamSTEPPS 和安全文化。
 - `domains/caregiving-long-term-care/` 负责家庭照护、长期照护、居家社区支持、照护协调、照护者负担和尊严边界。
@@ -1135,3 +1146,4 @@ human_infra/
 - 2026-07-01：新增第九十七波 10 个儿童、运动与娱乐伤害预防执行连续性域，覆盖溺水水域安全、泳池/水疗池屏障与排水夹陷、船艇救生衣、儿童乘员约束、轮式运动头部伤害、游乐场表面设备、运动脑震荡返学返赛、婴儿安全睡眠、枪支安全储存和 ATV/OHV 伤害预防。
 - 2026-07-01：新增第九十八波 10 个家庭与个人应急准备执行连续性域，覆盖应急物资包、家庭应急通信团聚、撤离交通避难、就地避险清洁空气房、备用电与发电机安全、应急食水、温控药品/医疗设备停电、应急金融文件现金、残障功能需求个人准备和老年照护者灾害准备。
 - 2026-07-01：新增第九十九波 10 个灾后恢复执行连续性域，覆盖个人援助导航、临时住房、恢复中心、长期个案管理、灾害失业收入中断、灾害法律援助、废弃物卫生清理、洪水后霉菌湿气、灾害行为健康和志愿捐赠管理。
+- 2026-07-01：新增第一百波 10 个传染病暴发响应执行连续性域，覆盖病例调查接触追踪、隔离检疫工作学校、社区检测筛查、疫苗行动加强针递送、口罩呼吸防护、室内通风过滤、学校工作场所运营、医疗挤兑分诊容量、医疗对策储备分发和污水病原体早期预警。

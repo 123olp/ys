@@ -116,3 +116,4 @@ Current decisions:
 - `0101-add-ninety-seventh-wave-child-recreation-injury-prevention-domains.md`
 - `0102-add-ninety-eighth-wave-household-personal-emergency-preparedness-domains.md`
 - `0103-add-ninety-ninth-wave-disaster-recovery-execution-continuity-domains.md`
+- `0104-add-one-hundredth-wave-infectious-disease-outbreak-response-execution-domains.md`

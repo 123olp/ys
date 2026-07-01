@@ -169,6 +169,7 @@ flowchart LR
 | 功能、生活质量与患者结局 | PROMIS、WHO ICF、EQ-5D、ICHOM、PRO-CTCAE、WHOQOL | 人是否真的更能行动、参与、沟通、恢复并承受生活，而不只是替代指标变好 |
 | 价值、成本与疾病负担 | IHME GBD、WHO Global Health Estimates、WHO-CHOICE、NICE HTA、ICER、AHRQ MEPS | 稀缺医疗和公共资源如何在疾病负担、成本效果、公平、权利和主体体验之间被审查 |
 | 免疫屏障与公共卫生监测 | WHO immunization、IA2030、CDC NNDSS、WHO GISRS、IHR、IPC、NHSN、GLASS、CDC NWSS | 群体免疫、早期发现、感染防控、耐药治理和废水信号能否防止风险扩散到个体 |
+| 传染病暴发响应执行 | CDC case investigation/contact tracing、CDC testing、FDA COVID-19 tests、CDC masks/ventilation、OSHA respiratory protection、ASPR TRACIE、ASPR SNS、CDC NWSS | 病例、接触者、学校、工作场所、医疗系统、物资和社区预警能否在暴发中转化为连续行动 |
 | 母婴儿童早期生命 | WHO maternal/newborn/child health、WHO growth standards、Nurturing Care、CDC PRAMS、World Bank ECD | 孕产、新生儿、儿童健康、生长、照护和早期发展如何塑造长期主体能力 |
 | 患者安全与组织学习 | WHO Patient Safety、AHRQ TeamSTEPPS、CUSP、SOPS、IHI RCA2 | 医疗照护组织能否把错误、交接失败和近失误转化为系统学习，而不是重复伤害 |
 | 社会决定因素与社区脆弱性 | WHO SDOH、Healthy People SDOH、CDC/ATSDR SVI、CDC/ATSDR EJI、CDC PLACES、USDA Food Access、CMS AHC | 居住地、资源、污染、食物、服务密度和社会需求如何改变生命路径风险分布 |
@@ -335,6 +336,16 @@ flowchart TD
     H --> FQO[functioning-quality-of-life-outcomes<br/>功能 / 生活质量结局]
     H --> HEVA[health-economics-value-assessment<br/>健康经济 / 价值评估]
     H --> IPHS[immunization-public-health-surveillance<br/>免疫 / 公共卫生监测]
+    IPHS --> OCICT[outbreak-case-investigation-contact-tracing-continuity<br/>病例调查 / 接触追踪]
+    IPHS --> IQWSC[isolation-quarantine-work-school-continuity<br/>隔离检疫 / 工作学校]
+    IPHS --> CTSA[community-testing-screening-access-continuity<br/>社区检测 / 筛查可达]
+    IPHS --> VCBDC[vaccination-campaign-booster-delivery-continuity<br/>疫苗行动 / 加强针递送]
+    IPHS --> MRSCFA[mask-respirator-source-control-fit-access-continuity<br/>口罩呼吸防护 / 源头控制]
+    IPHS --> IVFIOC[indoor-ventilation-filtration-outbreak-control-continuity<br/>室内通风过滤 / 暴发控制]
+    IPHS --> SWOOC[school-workplace-outbreak-operations-continuity<br/>学校工作场所 / 暴发运营]
+    IPHS --> HSTCC[healthcare-surge-triage-capacity-continuity<br/>医疗挤兑 / 分诊容量]
+    IPHS --> MCSDC[medical-countermeasure-stockpile-distribution-continuity<br/>医疗对策 / 储备分发]
+    IPHS --> WPSEW[wastewater-pathogen-surveillance-early-warning-continuity<br/>污水病原体 / 早期预警]
     H --> MNCD[maternal-newborn-child-development<br/>母婴 / 儿童发展]
     H --> PSOL[patient-safety-organizational-learning<br/>患者安全 / 组织学习]
     H --> CLTC[caregiving-long-term-care<br/>照护 / 长期照护]
@@ -1441,6 +1452,16 @@ flowchart TD
 | [Animal Shelter Rescue Rehoming Continuity](domains/animal-shelter-rescue-rehoming-continuity/README.md) | 动物收容、救助、寄养、领养、再安置和失主重聚 | 把家庭照护断点转化为动物福利和关系转接基础设施 | 不提供领养推荐、弃养策略、动物交易、救助行动、安乐死判断或机构攻击 |
 | [Animal Welfare Cruelty Reporting Continuity](domains/animal-welfare-cruelty-reporting-continuity/README.md) | 动物福利、虐待忽视、囤积、遗弃、报告入口和转介 | 把动物福利与家庭压力、暴力、照护失败和社区风险一起建模 | 不提供报案策略、取证、执法判断、曝光、法律建议、虐待或规避检查方法 |
 | [Public Health Laboratory Diagnostic Capacity](domains/public-health-laboratory-diagnostic-capacity/README.md) | 公共卫生实验室、诊断网络、检测确认、质量管理和实验室扩容 | 把不可见风险转化为可审查、可行动、可治理的检测信号 | 不提供样本采集、检测操作、病原处理、实验室协议、个体诊断或医疗建议 |
+| [Outbreak Case Investigation Contact Tracing Continuity](domains/outbreak-case-investigation-contact-tracing-continuity/README.md) | 病例调查、接触者追踪、暴露通知、隐私保护和服务转介 | 把不可见传播链转化为可通知、可转介、可阻断的执行信号 | 不提供个体诊断、接触者识别、定位、人肉搜索、追踪规避或污名化 |
+| [Isolation Quarantine Work School Continuity](domains/isolation-quarantine-work-school-continuity/README.md) | 隔离、检疫、病假、返校返工、远程替代和照护支持 | 在传播阻断和工作学习照护连续性之间建立可执行接口 | 不提供隔离天数、返工返校许可、法律建议、医疗建议、证明伪造或规避措施 |
+| [Community Testing Screening Access Continuity](domains/community-testing-screening-access-continuity/README.md) | 社区检测、筛查、居家检测、检测点可达、报告和转介 | 让暴发期间的行动、组织决策和公共卫生响应有观测底座 | 不提供检测选择、采样步骤、结果解释、诊断治疗、隔离建议或检测规避 |
+| [Vaccination Campaign Booster Delivery Continuity](domains/vaccination-campaign-booster-delivery-continuity/README.md) | 疫苗行动、加强针递送、冷链、预约、提醒和高风险覆盖 | 把免疫技术转化为及时、公平、可达的群体保护 | 不提供接种建议、禁忌判断、预约代办、证明伪造、冷链操作或医学风险解释 |
+| [Mask Respirator Source Control Fit Access Continuity](domains/mask-respirator-source-control-fit-access-continuity/README.md) | 口罩、呼吸器、源头控制、适配、可得性和工作学校接口 | 把公共空间空气传播风险转化为低摩擦控制层 | 不提供产品推荐、佩戴教程、fit testing、职业合规、假冒认证或防护规避 |
+| [Indoor Ventilation Filtration Outbreak Control Continuity](domains/indoor-ventilation-filtration-outbreak-control-continuity/README.md) | 室内通风、过滤、空气净化、CO2 代理指标和建筑运营 | 让学校、工作、照护和公共服务空间在暴发中降低传播风险 | 不提供 HVAC 设计施工、设备采购、滤材安装、场所认证或实时开放判断 |
+| [School Workplace Outbreak Operations Continuity](domains/school-workplace-outbreak-operations-continuity/README.md) | 学校、工作场所、病假、远程替代、分层措施和风险沟通 | 把检测、隔离、通风、口罩和疫苗编排成组织可执行规则 | 不提供 HR 法律、返校返工 clearance、场所开放建议、证明伪造或组织监控 |
+| [Healthcare Surge Triage Capacity Continuity](domains/healthcare-surge-triage-capacity-continuity/README.md) | 医疗挤兑、床位、人力、分诊、危机标准、转运和延迟照护 | 防止暴发把可修复风险转化为不可逆死亡、失能和长期损伤 | 不提供临床分诊、治疗优先级、床位选择、转院建议、资源抢占或现场指挥 |
+| [Medical Countermeasure Stockpile Distribution Continuity](domains/medical-countermeasure-stockpile-distribution-continuity/README.md) | 医疗对策、战略储备、POD、抗病毒药、PPE、冷链和分配公平 | 把库存和技术能力转化为时间窗口内可达的风险控制输入 | 不提供药品选择、剂量、个人囤货、库存位置、配送路径、资源抢占或监管规避 |
+| [Wastewater Pathogen Surveillance Early Warning Continuity](domains/wastewater-pathogen-surveillance-early-warning-continuity/README.md) | 污水病原体监测、趋势信号、社区聚合、早期预警和隐私边界 | 把检测滞后前的社区感染变化转化为公共卫生提前量 | 不提供采样教程、设施定位、个体诊断、社区点名、污名化、恐慌传播或水务操作 |
 | [Blood Organ Tissue Biovigilance Transplantation](domains/blood-organ-tissue-biovigilance-transplantation/README.md) | 血液供应、输血安全、器官/组织捐献、移植体系、追踪和生物警戒 | 让外部生物材料在质量、安全、分配和不良事件反馈边界内支撑主体修复 | 不提供输血、移植、器官匹配、治疗、手术、非法获取或监管规避建议 |
 | [Waste Management Hazardous Materials Continuity](domains/waste-management-hazardous-materials-continuity/README.md) | 固体废物、医疗废物、危险废物、处理处置和服务连续性 | 防止废弃物和危险材料反向制造感染、毒性、污染、火灾和尊严风险 | 不提供危险废物处理、处置、储存、运输、清理、规避监管或非法倾倒方法 |
 | [Radiation Nuclear Safety Protection](domains/radiation-nuclear-safety-protection/README.md) | 电离辐射防护、核安全、辐射监测、放射性材料风险和应急治理 | 把不可见高能暴露转化为可测量、可监管、可限制、可响应的风险对象 | 不提供放射源、核材料、设施、去污、防护、撤离、医疗影像或放疗个体建议 |
@@ -1883,6 +1904,16 @@ human_infra/
 │   ├── microbiome-ecology/
 │   ├── manufacturing-repair-capacity/
 │   ├── public-health-laboratory-diagnostic-capacity/
+│   ├── outbreak-case-investigation-contact-tracing-continuity/
+│   ├── isolation-quarantine-work-school-continuity/
+│   ├── community-testing-screening-access-continuity/
+│   ├── vaccination-campaign-booster-delivery-continuity/
+│   ├── mask-respirator-source-control-fit-access-continuity/
+│   ├── indoor-ventilation-filtration-outbreak-control-continuity/
+│   ├── school-workplace-outbreak-operations-continuity/
+│   ├── healthcare-surge-triage-capacity-continuity/
+│   ├── medical-countermeasure-stockpile-distribution-continuity/
+│   ├── wastewater-pathogen-surveillance-early-warning-continuity/
 │   ├── blood-organ-tissue-biovigilance-transplantation/
 │   ├── waste-management-hazardous-materials-continuity/
 │   ├── radiation-nuclear-safety-protection/
@@ -2217,5 +2248,6 @@ flowchart LR
 - 2026-07-01：新增第九十七波 10 个儿童、运动与娱乐伤害预防执行连续性域，覆盖溺水水域安全、泳池/水疗池屏障与排水夹陷、船艇救生衣、儿童乘员约束、轮式运动头部伤害、游乐场表面设备、运动脑震荡返学返赛、婴儿安全睡眠、枪支安全储存和 ATV/OHV 伤害预防。
 - 2026-07-01：新增第九十八波 10 个家庭与个人应急准备执行连续性域，覆盖应急物资包、家庭应急通信团聚、撤离交通避难、就地避险清洁空气房、备用电与发电机安全、应急食水、温控药品/医疗设备停电、应急金融文件现金、残障功能需求个人准备和老年照护者灾害准备。
 - 2026-07-01：新增第九十九波 10 个灾后恢复执行连续性域，覆盖个人援助导航、临时住房、恢复中心、长期个案管理、灾害失业收入中断、灾害法律援助、废弃物卫生清理、洪水后霉菌湿气、灾害行为健康和志愿捐赠管理。
+- 2026-07-01：新增第一百波 10 个传染病暴发响应执行连续性域，覆盖病例调查接触追踪、隔离检疫工作学校、社区检测筛查、疫苗行动加强针递送、口罩呼吸防护、室内通风过滤、学校工作场所运营、医疗挤兑分诊容量、医疗对策储备分发和污水病原体早期预警。
 
 完整记录见 [CHANGELOG.md](CHANGELOG.md)。

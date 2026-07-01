@@ -231,6 +231,16 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `functioning-quality-of-life-outcomes/` | 功能状态、生活质量、症状负担和患者报告结局决定干预是否真的改善主体能力和体验 |
 | `health-economics-value-assessment/` | 疾病负担、成本效果、HTA、预算影响和公平边界决定稀缺资源如何转化为公共价值 |
 | `immunization-public-health-surveillance/` | 免疫计划、传染病监测、感染防控、AMR、One Health 和废水信号决定群体风险屏障 |
+| `outbreak-case-investigation-contact-tracing-continuity/` | 病例调查、接触追踪、暴露通知和服务转介决定暴发传播链能否被及时发现并转化为行动 |
+| `isolation-quarantine-work-school-continuity/` | 隔离、检疫、病假和远程替代决定传播阻断是否不会同时切断工作、学习和照护 |
+| `community-testing-screening-access-continuity/` | 社区检测、筛查、居家检测和报告接口决定暴发期间行动与组织决策是否有观测底座 |
+| `vaccination-campaign-booster-delivery-continuity/` | 疫苗行动、加强针递送、冷链和预约提醒决定免疫技术能否及时转化为群体保护 |
+| `mask-respirator-source-control-fit-access-continuity/` | 口罩、呼吸器、源头控制、适配和可得性决定空气传播场景中公共空间是否可继续使用 |
+| `indoor-ventilation-filtration-outbreak-control-continuity/` | 室内通风、过滤、空气净化和建筑运营决定学校、工作与照护空间是否降低暴发传播风险 |
+| `school-workplace-outbreak-operations-continuity/` | 学校和工作场所运营、病假、远程替代与分层措施决定组织能否在暴发中连续运行 |
+| `healthcare-surge-triage-capacity-continuity/` | 医疗挤兑、床位、人力、分诊和危机标准决定可修复风险是否仍能被医疗系统接住 |
+| `medical-countermeasure-stockpile-distribution-continuity/` | 医疗对策、战略储备、POD、PPE、冷链和分配公平决定库存是否能进入真实风险控制 |
+| `wastewater-pathogen-surveillance-early-warning-continuity/` | 污水病原体趋势、社区聚合和早期预警决定公共卫生系统能否提前看见传播变化 |
 | `maternal-newborn-child-development/` | 孕产、新生儿、儿童健康、生长、早期发展和养育照护决定主体能力形成的早期条件 |
 | `patient-safety-organizational-learning/` | 患者安全、事件报告、团队沟通、根因分析和安全文化决定医疗组织能否防止重复伤害 |
 | `social-determinants-community-vulnerability/` | 社会决定因素、社区脆弱性、环境正义、地方健康估计、食物可达和社会需求决定上游风险分布 |

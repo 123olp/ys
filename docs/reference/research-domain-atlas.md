@@ -204,6 +204,16 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 功能和生活质量可被主体中心地衡量 | `functioning-quality-of-life-outcomes/` | 功能状态、生活质量、症状负担、患者报告结局、主体体验 | 指标替代真实体验，或把人压缩成单一分数和资格判断 |
 | 稀缺资源价值可审查 | `health-economics-value-assessment/` | 疾病负担、成本效果、HTA、预算影响、公平、公共价值 | 把资源配置简化为价格、投资、报销或个体治疗取舍建议 |
 | 群体免疫和传染病风险可监测 | `immunization-public-health-surveillance/` | 免疫覆盖、病例监测、IPC、HAI、AMR、One Health、废水信号 | 把群体监测写成个体医疗建议、疫情保证或公共卫生规避 |
+| 传播链必须可发现并转介 | `outbreak-case-investigation-contact-tracing-continuity/` | 病例调查、接触追踪、暴露通知、隐私保护、服务转介 | 传播链不可见、通知延迟、污名化或隐私侵害会把公共卫生响应转成不信任和规避 |
+| 隔离控制必须不摧毁任务系统 | `isolation-quarantine-work-school-continuity/` | 隔离、检疫、病假、返校返工、远程替代、照护支持 | 传播阻断若缺少收入、学习和照护接口，会把控制措施转成主体系统断裂 |
+| 社区检测必须可进入可报告 | `community-testing-screening-access-continuity/` | 社区检测、筛查、居家检测、检测点、报告、转介 | 没有可达检测时，组织和个体只能在猜测中行动，暴发发现和分流都会滞后 |
+| 疫苗收益必须被递送到人群 | `vaccination-campaign-booster-delivery-continuity/` | 疫苗行动、加强针、冷链、预约、提醒、高风险覆盖 | 技术存在但递送失败，会让免疫收益停留在库存、政策或叙事层 |
+| 呼吸防护必须可获得可适配 | `mask-respirator-source-control-fit-access-continuity/` | 口罩、呼吸器、源头控制、适配、可得、工作学校接口 | 防护不可达、不可适配或被错误沟通，会让公共空间持续制造传播风险 |
+| 室内空气必须成为暴发控制层 | `indoor-ventilation-filtration-outbreak-control-continuity/` | 通风、过滤、空气净化、CO2 代理指标、建筑运营 | 室内空气失控会把学校、工作、照护和公共服务空间变成风险放大器 |
+| 学校工作场所必须能分层运行 | `school-workplace-outbreak-operations-continuity/` | 学校运营、工作场所运营、病假、远程替代、风险沟通 | 组织无法编排措施时，容易在盲目开放和过度停摆之间振荡 |
+| 医疗挤兑必须不吞掉可修复窗口 | `healthcare-surge-triage-capacity-continuity/` | 床位、人力、分诊、危机标准、转运、延迟照护 | 医疗容量被压垮时，可治疗风险会变成死亡、失能和长期功能损失 |
+| 医疗对策必须从库存走向可达 | `medical-countermeasure-stockpile-distribution-continuity/` | 战略储备、POD、药物、PPE、冷链、物流、分配公平 | 药物、PPE 和治疗物资若无法及时分发，技术能力不会进入主体生命路径 |
+| 社区病原体趋势必须提前可见 | `wastewater-pathogen-surveillance-early-warning-continuity/` | 污水监测、趋势信号、聚合隐私、预警触发器、沟通 | 早期信号若缺失或被误读，响应会过慢、过度或以社区污名化方式失真 |
 | 早期生命条件可支撑未来主体 | `maternal-newborn-child-development/` | 孕产安全、新生儿、儿童健康、生长、早期发展、养育照护 | 把母婴儿童资料写成个体医疗、育儿、排名或家庭监控建议 |
 | 医疗组织可从错误中学习 | `patient-safety-organizational-learning/` | 事件报告、近失误、团队沟通、根因分析、安全文化、行动闭环 | 把患者安全写成追责、机构背书、法律判断或惩罚性监控 |
 | 照护可持续 | `caregiving-long-term-care/` | 家庭照护、长期照护、居家社区支持、照护协调、照护者负担 | 长寿退化为无人照护、照护者崩溃、失能支持中断或尊严丧失 |
@@ -960,6 +970,16 @@ risk-engineering
   -> functioning-quality-of-life-outcomes
   -> health-economics-value-assessment
   -> immunization-public-health-surveillance
+  -> outbreak-case-investigation-contact-tracing-continuity
+  -> isolation-quarantine-work-school-continuity
+  -> community-testing-screening-access-continuity
+  -> vaccination-campaign-booster-delivery-continuity
+  -> mask-respirator-source-control-fit-access-continuity
+  -> indoor-ventilation-filtration-outbreak-control-continuity
+  -> school-workplace-outbreak-operations-continuity
+  -> healthcare-surge-triage-capacity-continuity
+  -> medical-countermeasure-stockpile-distribution-continuity
+  -> wastewater-pathogen-surveillance-early-warning-continuity
   -> maternal-newborn-child-development
   -> patient-safety-organizational-learning
   -> caregiving-long-term-care

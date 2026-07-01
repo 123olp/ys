@@ -353,6 +353,24 @@ Human Infra 不能被设计成更精密的压榨系统。
 - 提供医疗事故法律意见、索赔策略、个案责任判断、机构背书、惩罚员工、压制报告、甩锅患者或临床操作替代方案。
 - 把数据、结局、成本、公共卫生、早期生命或患者安全的结构性问题改写成个人努力、家庭道德、机构宣传或单一指标排名问题。
 
+## 传染病暴发响应执行连续性边界
+
+`outbreak-case-investigation-contact-tracing-continuity`、`isolation-quarantine-work-school-continuity`、`community-testing-screening-access-continuity`、`vaccination-campaign-booster-delivery-continuity`、`mask-respirator-source-control-fit-access-continuity`、`indoor-ventilation-filtration-outbreak-control-continuity`、`school-workplace-outbreak-operations-continuity`、`healthcare-surge-triage-capacity-continuity`、`medical-countermeasure-stockpile-distribution-continuity` 和 `wastewater-pathogen-surveillance-early-warning-continuity` 关注传染病暴发中从发现、通知、隔离、检测、免疫、空气控制、组织运营、医疗容量、医疗对策到早期预警的执行链，不是个体医疗、监控、执法、资源抢占或现场指挥工具。
+
+可以做：
+
+- 整理 CDC、WHO、FDA、OSHA、ASPR、EPA 等公开资料中的机制、变量、制度接口和证据边界。
+- 建模病例调查、接触追踪、隔离检疫、社区检测、疫苗行动、口罩呼吸防护、室内通风、学校工作场所运营、医疗挤兑、医疗对策和污水预警如何影响主体持续性。
+- 区分群体级监测信号、组织级运营规则、医疗系统容量和个体医疗判断之间的边界。
+
+不能做：
+
+- 提供个体诊断、检测结果解释、隔离天数、返工返校 clearance、疫苗医学建议、用药治疗、床位选择、转院建议或急救/分诊决策。
+- 提供接触者识别、定位追踪、人肉搜索、污名化、社区点名、隐私侵害、追踪规避、瞒报、检测规避、证明伪造或公共卫生措施对抗策略。
+- 提供口罩/呼吸器产品推荐、佩戴教程、fit testing 指令、PPE 抢占、假冒认证、HVAC 设计施工、滤材安装、设备采购或场所安全认证。
+- 提供库存位置、配送路径、医疗资源抢占、设施安全弱点、采样教程、污水设施定位、实验室操作、地方政策指挥或实时恐慌传播。
+- 把暴发响应写成政治动员、组织监控、惩罚机制、个人责任归咎、确定性疫情预测或单一技术万能方案。
+
 ## 社区脆弱性、公共服务、应急恢复、金融支付与就业服务域边界
 
 `social-determinants-community-vulnerability`、`public-service-design-accessibility`、`emergency-alerts-communications`、`disaster-recovery-relief-continuity`、`financial-inclusion-payment-systems` 和 `workforce-employment-services` 关注上游生活环境、公共服务入口、危机通信、灾后恢复、资源流通和就业服务如何支撑主体持续性，不是个体风险评分、服务申请、应急指挥、金融建议或职业承诺工具。
