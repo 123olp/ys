@@ -349,6 +349,12 @@ flowchart TD
     IPHS --> MCSDC[medical-countermeasure-stockpile-distribution-continuity<br/>医疗对策 / 储备分发]
     IPHS --> WPSEW[wastewater-pathogen-surveillance-early-warning-continuity<br/>污水病原体 / 早期预警]
     H --> MNCD[maternal-newborn-child-development<br/>母婴 / 儿童发展]
+    MNCD --> PCARS[prenatal-care-access-risk-screening-continuity<br/>产前照护 / 风险筛查]
+    MNCD --> PCRFU[postpartum-care-recovery-follow-up-continuity<br/>产后照护 / 恢复随访]
+    MNCD --> LBS[lactation-breastfeeding-support-continuity<br/>哺乳泵奶 / 支持连续]
+    MNCD --> PBNDT[preterm-birth-nicu-discharge-transition-continuity<br/>早产 NICU / 出院转接]
+    MNCD --> PLSB[pregnancy-loss-stillbirth-bereavement-continuity<br/>妊娠丧失 / 悲伤支持]
+    MNCD --> PMHSR[perinatal-mental-health-screening-referral-continuity<br/>围产心理 / 筛查转介]
     H --> PSOL[patient-safety-organizational-learning<br/>患者安全 / 组织学习]
     H --> CLTC[caregiving-long-term-care<br/>照护 / 长期照护]
     H --> HBES[housing-built-environment-stability<br/>住房 / 建成环境]
@@ -1029,6 +1035,12 @@ flowchart TD
 | [Home Dialysis Supply Self Management Continuity](domains/home-dialysis-supply-self-management-continuity/README.md) | 家庭血透、腹膜透析、耗材、电水依赖、训练和照护者负担 | 把家庭化生命支持与住房、能源、水、物流和照护系统连接 | 不提供家庭透析资格、参数、操作、用品购买、消毒、设备故障处理或个体建议 |
 | [Kidney Transplant Immunosuppression Graft Continuity](domains/kidney-transplant-immunosuppression-graft-continuity/README.md) | 肾移植、移植物功能、排斥、免疫抑制、感染和药物供应 | 把器官替代后的长期免疫治理、随访和重返透析风险纳入模型 | 不提供移植资格、配型、用药、剂量、实验室解释、感染处理或保险策略 |
 | [Reproductive Fertility Continuity](domains/reproductive-fertility-continuity/README.md) | 生育力、配子质量、生殖衰老、妊娠风险、生殖自主性和未来选择权 | 生育窗口、长期计划、资源配置和未来选择权 | 不提供不孕诊断、生育治疗、激素、辅助生殖、妊娠管理、避孕或个体医疗建议 |
+| [Prenatal Care Access Risk Screening Continuity](domains/prenatal-care-access-risk-screening-continuity/README.md) | 产前照护接入、风险筛查、检查随访、转诊、交通、语言、保险和隐私边界 | 把怀孕期间能否持续被看见、筛查和转接建模为主体与下一代持续性的前置条件 | 不提供怀孕确认、产检频率、筛查结果解释、药物、影像、分娩方式、医院选择或个体医疗建议 |
+| [Postpartum Care Recovery Follow Up Continuity](domains/postpartum-care-recovery-follow-up-continuity/README.md) | 产后随访、身体恢复、警示信号、并发症延续管理、医保覆盖和 primary care 转接 | 防止分娩后身体恢复、心理状态、家庭照护和长期健康轨迹在高负荷窗口断裂 | 不提供产后症状判断、用药、伤口、避孕、运动、复工、急诊或心理危机建议 |
+| [Lactation Breastfeeding Support Continuity](domains/lactation-breastfeeding-support-continuity/README.md) | 哺乳、泵奶、lactation support、WIC 支持、工作学校空间、设备接口和家庭支持 | 把母婴营养输入、恢复、工作学习和照护负担连接成可支持的执行系统 | 不提供喂养方案、奶量判断、疼痛处理、配方替代、泵奶参数、设备推荐或法律资格判断 |
+| [Preterm Birth NICU Discharge Transition Continuity](domains/preterm-birth-nicu-discharge-transition-continuity/README.md) | 早产、NICU 出院、家庭训练、随访、喂养设备、感染预防、发育监测和早期干预 | 把脆弱新生儿从医院生命支持转入家庭日常的过程建模为交接连续性问题 | 不提供出院判断、喂养、药物、设备、氧气、感染、发育、急诊或个体护理建议 |
+| [Pregnancy Loss Stillbirth Bereavement Continuity](domains/pregnancy-loss-stillbirth-bereavement-continuity/README.md) | 妊娠丧失、死产、医疗交接、悲伤支持、工作学校调整、记录接口和后续妊娠边界 | 把妊娠丧失后的身体、家庭、工作学校、意义和未来计划恢复纳入连续性模型 | 不提供症状分诊、原因解释、治疗、再次怀孕、法律、请假、仪式或心理危机建议 |
+| [Perinatal Mental Health Screening Referral Continuity](domains/perinatal-mental-health-screening-referral-continuity/README.md) | 围产期抑郁焦虑筛查、转介、危机入口、IPV/物质使用接口、同伴支持和随访闭环 | 让心理风险能够被发现、转接和跟进，保护主体恢复、亲子关系和下一代持续性 | 不提供诊断、量表解释、治疗、药物、自伤判断、危机干预、家庭暴力处置或心理建议 |
 | [Attention Executive Control](domains/attention-executive-control/README.md) | 注意力、执行功能、工作记忆、抑制控制、任务切换和分心环境 | 有效行动密度、任务完成、冲动控制和长期目标推进 | 不提供 ADHD、心理、神经诊断治疗、药物、补剂或神经刺激建议 |
 | [Learning Skill Acquisition](domains/learning-skill-acquisition/README.md) | 学习科学、技能形成、练习反馈、迁移能力、再训练和终身学习 | 学习轮次、能力复利、技术采用和长期目标推进 | 不提供个体教育、考试、就业、移民、认证或职业建议 |
 | [Time Allocation Effective Time](domains/time-allocation-effective-time/README.md) | 时间使用、时间贫困、行政负担、等待成本、任务摩擦和有效时间 | 可支配时间、恢复时间、行动密度和主观时间质量 | 不提供个体日程、职业、家庭、法律、福利、保险或财务安排建议 |
@@ -2276,6 +2288,12 @@ human_infra/
 │   ├── regenerative-medicine/
 │   ├── rehabilitation-functioning/
 │   ├── reproductive-fertility-continuity/
+│   ├── prenatal-care-access-risk-screening-continuity/
+│   ├── postpartum-care-recovery-follow-up-continuity/
+│   ├── lactation-breastfeeding-support-continuity/
+│   ├── preterm-birth-nicu-discharge-transition-continuity/
+│   ├── pregnancy-loss-stillbirth-bereavement-continuity/
+│   ├── perinatal-mental-health-screening-referral-continuity/
 │   ├── respiratory-oxygenation/
 │   ├── resource-social-infra/
 │   ├── risk-engineering/
@@ -2615,5 +2633,6 @@ flowchart LR
 - 2026-07-01：新增第一百一十三波 6 个邻里公共空间维护与地方服务请求执行连续性域，覆盖 311 服务请求、路灯夜间可见性、人行道/路缘坡道、雪冰冬季通行、街道树木维护和雨水口局部内涝。
 - 2026-07-01：新增第一百一十四波 6 个早期儿童照护执行连续性域，覆盖托育供给费用、许可健康安全、CCDF 补贴支付、Head Start、IDEA Part C 早期干预和课外/暑期学习照护。
 - 2026-07-01：新增第一百一十七波 6 个青少年到成年转变连续性域，覆盖离家无家可归青年外展庇护、寄养出离独立生活、少年司法重返 aftercare、过渡年龄青年心理健康、机会青年教育就业和怀孕育儿青年家庭支持。
+- 2026-07-01：新增第一百一十八波 6 个围产期连续性域，覆盖产前照护接入风险筛查、产后恢复随访、哺乳泵奶支持、早产 NICU 出院转接、妊娠丧失悲伤支持和围产期心理健康筛查转介。
 
 完整记录见 [CHANGELOG.md](CHANGELOG.md)。

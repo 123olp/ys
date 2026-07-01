@@ -1487,6 +1487,24 @@ Human Infra 不能被设计成更精密的压榨系统。
 - 不支持群体定位、监控画像、风险评分、歧视性筛选、商业定向获客、污名化叙事、outing、监管规避、边境路线建议或弱势群体剥削。
 - 不替代 IHS、VA、HRSA health centers、DOL、HHS OCR、CDC、SAMHSA、Medicaid/CHIP、部落政府、公共卫生机构、律师、医生、社工、危机服务或官方服务入口。
 
+## 围产期连续性边界
+
+`prenatal-care-access-risk-screening-continuity`、`postpartum-care-recovery-follow-up-continuity`、`lactation-breastfeeding-support-continuity`、`preterm-birth-nicu-discharge-transition-continuity`、`pregnancy-loss-stillbirth-bereavement-continuity` 和 `perinatal-mental-health-screening-referral-continuity` 关注怀孕到新生儿家庭转接期间，产前接入、产后恢复、哺乳支持、NICU 出院、妊娠丧失和围产心理健康如何影响主体持续性，不是个人怀孕、产检、分娩、喂养、丧失恢复、心理危机、家庭暴力、福利、保险、法律或医疗建议入口。
+
+可以做：
+
+- 整理 CDC、HRSA、ACOG、WIC、DOL、March of Dimes、SAMHSA 等公开资料中的服务对象、时间窗口、转介接口、证据边界和禁止用途。
+- 比较产前照护、产后随访、哺乳支持、NICU 出院、妊娠丧失和围产心理健康在交通、语言、保险、工作学校、家庭支持、隐私和危机入口上的断点。
+- 记录高敏感数据最小化、非诊断表述、反污名、强制报告、IPV 危险边界、未成年人/新生儿保护和专业服务转介边界。
+
+不能做：
+
+- 不提供怀孕确认、检查结果解释、风险分层、胎儿/新生儿状态判断、产后症状判断、用药、急诊、分娩方式、医疗机构选择、喂养方案、NICU 护理、设备操作、再次怀孕、心理诊断、心理治疗、危机干预、家庭暴力处置、福利申请、保险、工作学校或法律建议。
+- 不判断某个人是否高危、是否应急诊、是否应转诊、是否适合母乳/配方/泵奶、是否可出院、是否需要治疗、是否有资格获得项目、福利、假期或保险覆盖。
+- 不生成个案计划、产检计划、产后恢复计划、喂养计划、NICU 出院计划、丧失后再次怀孕方案、心理治疗方案、危机安全计划、家庭冲突处置方案、福利申诉、保险申诉或法律文件。
+- 不收集、推断或暴露怀孕状态、产检结果、流产/死产经历、婴儿健康、心理健康、物质使用、家庭暴力、未成年人身份、实时位置、医疗机构、保险状态或家庭风险画像。
+- 不替代 OB/GYN、助产士、MFM、儿科/新生儿科、lactation consultant、心理健康专业人员、危机热线、IPV advocate、社工、公共卫生机构、保险/福利官方入口或法律服务。
+
 ## 青少年到成年转变连续性边界
 
 `runaway-homeless-youth-outreach-shelter-continuity`、`foster-care-aging-out-independent-living-continuity`、`juvenile-justice-reentry-aftercare-continuity`、`transition-age-youth-mental-health-service-continuity`、`opportunity-youth-education-employment-pathway-continuity` 和 `pregnant-parenting-youth-family-support-continuity` 关注青少年到成年转变期间，住所、安全、儿童福利出离、少年司法重返、心理健康系统转换、教育就业再进入和年轻父母支持如何影响主体持续性，不是个体逃离、庇护定位、法院案件、心理危机、福利申请、就业安置、怀孕育儿、学校或家庭冲突建议入口。

@@ -258,6 +258,12 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `oil-spill-hazardous-release-response-recovery-continuity/` | 油污和危险释放响应恢复决定水域污染是否会长期切断健康、收入、食物和社区信任 |
 | `battery-thermal-runaway-fire-hazard-continuity/` | 电池热失控、储能、微出行、召回和火灾烟气决定电池化工具是否反向制造居住风险 |
 | `maternal-newborn-child-development/` | 孕产、新生儿、儿童健康、生长、早期发展和养育照护决定主体能力形成的早期条件 |
+| `prenatal-care-access-risk-screening-continuity/` | 产前照护接入、风险筛查、检查随访和转诊决定怀孕风险能否在分娩前被看见和接住 |
+| `postpartum-care-recovery-follow-up-continuity/` | 产后照护、恢复随访、并发症延续管理和 primary care 转接决定分娩后恢复是否连续 |
+| `lactation-breastfeeding-support-continuity/` | 哺乳、泵奶、工作学校空间、设备耗材和家庭支持决定喂养目标能否转化为可执行安排 |
+| `preterm-birth-nicu-discharge-transition-continuity/` | 早产、NICU 出院、家庭训练、随访、设备和早期干预决定脆弱新生儿能否安全转入家庭系统 |
+| `pregnancy-loss-stillbirth-bereavement-continuity/` | 妊娠丧失、死产、医疗交接、工作学校调整和悲伤支持决定丧失事件后主体能否恢复行动 |
+| `perinatal-mental-health-screening-referral-continuity/` | 围产期心理健康筛查、转介、危机入口、IPV/物质使用接口和随访闭环决定心理风险是否被接住 |
 | `patient-safety-organizational-learning/` | 患者安全、事件报告、团队沟通、根因分析和安全文化决定医疗组织能否防止重复伤害 |
 | `social-determinants-community-vulnerability/` | 社会决定因素、社区脆弱性、环境正义、地方健康估计、食物可达和社会需求决定上游风险分布 |
 | `public-service-design-accessibility/` | 公共服务设计、表单、无障碍、客户体验和人工帮助决定名义权利能否转化为可完成任务 |
@@ -1266,6 +1272,7 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | IHME GBD / WHO Global Health Estimates / WHO-CHOICE / NICE HTA / ICER / AHRQ MEPS | 提示疾病负担、成本效果、HTA、预算影响、公平和公共价值评估需要独立域 |
 | WHO vaccines / IA2030 / CDC NNDSS / WHO GISRS / IHR / IPC / NHSN / GLASS / CDC NWSS | 提示群体免疫、传染病监测、公共卫生应急、感染防控、AMR、One Health 和废水监测是独立风险屏障 |
 | WHO maternal/newborn/child health / WHO growth standards / Nurturing Care / CDC PRAMS / World Bank ECD | 提示孕产、新生儿、儿童健康、生长、早期发展和养育照护是长期主体能力形成的源头条件 |
+| CDC / HRSA / ACOG / WIC / DOL / March of Dimes / SAMHSA perinatal materials | 提示围产期需要拆出产前接入、产后随访、哺乳支持、NICU 出院、妊娠丧失和围产期心理健康这些高敏感断点 |
 | WHO Patient Safety / AHRQ TeamSTEPPS / CUSP / SOPS / IHI RCA2 | 提示患者安全、团队沟通、事件学习、根因分析和安全文化需要独立组织学习域 |
 | WHO SDOH / Healthy People SDOH / CDC SVI / CDC EJI / CDC PLACES / USDA Food Access / CMS AHC | 提示社会决定因素、社区脆弱性、环境正义、地方健康估计、食物可达和健康相关社会需求需要独立上游风险域 |
 | Digital.gov / USWDS / Performance.gov CX / Section508.gov / PlainLanguage.gov | 提示公共服务设计、客户体验、无障碍、清晰语言和人工帮助会决定公共资源是否可完成 |
@@ -1752,6 +1759,17 @@ Source links:
 - https://www.cdc.gov/child-development/
 - https://www.worldbank.org/en/topic/earlychildhooddevelopment
 - https://www.who.int/publications/i/item/9789240032705
+- https://www.cdc.gov/maternal-infant-health/
+- https://mchb.hrsa.gov/programs-impact/focus-areas/maternal-health
+- https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2018/05/optimizing-postpartum-care
+- https://www.cdc.gov/breastfeeding/
+- https://www.womenshealth.gov/breastfeeding/breastfeeding-home-work-and-public
+- https://www.dol.gov/agencies/whd/pump-at-work
+- https://www.cdc.gov/reproductive-health/preterm-birth/
+- https://www.marchofdimes.org/find-support/topics/neonatal-intensive-care-unit-nicu
+- https://www.cdc.gov/ncbddd/stillbirth/facts.html
+- https://www.samhsa.gov/find-help/national-maternal-mental-health-hotline
+- https://mchb.hrsa.gov/national-maternal-mental-health-hotline
 - https://www.ahrq.gov/teamstepps-program/index.html
 - https://www.ahrq.gov/hai/cusp/index.html
 - https://www.ahrq.gov/sops/index.html

@@ -411,6 +411,12 @@ human_infra/
     ├── oil-spill-hazardous-release-response-recovery-continuity/ # 油污危险释放响应恢复
     ├── battery-thermal-runaway-fire-hazard-continuity/ # 电池热失控火灾风险
     ├── maternal-newborn-child-development/ # 母婴健康与儿童发展
+    ├── prenatal-care-access-risk-screening-continuity/ # 产前照护接入与风险筛查连续性
+    ├── postpartum-care-recovery-follow-up-continuity/ # 产后照护恢复与随访连续性
+    ├── lactation-breastfeeding-support-continuity/ # 哺乳泵奶与喂养支持连续性
+    ├── preterm-birth-nicu-discharge-transition-continuity/ # 早产 NICU 出院与家庭转接连续性
+    ├── pregnancy-loss-stillbirth-bereavement-continuity/ # 妊娠丧失死产与悲伤支持连续性
+    ├── perinatal-mental-health-screening-referral-continuity/ # 围产期心理健康筛查转介连续性
     ├── patient-safety-organizational-learning/ # 患者安全与组织学习
     ├── caregiving-long-term-care/ # 照护与长期照护
     ├── housing-built-environment-stability/ # 住房与建成环境稳定
@@ -882,6 +888,7 @@ human_infra/
 - `domains/outbreak-case-investigation-contact-tracing-continuity/`、`domains/isolation-quarantine-work-school-continuity/`、`domains/community-testing-screening-access-continuity/`、`domains/vaccination-campaign-booster-delivery-continuity/`、`domains/mask-respirator-source-control-fit-access-continuity/`、`domains/indoor-ventilation-filtration-outbreak-control-continuity/`、`domains/school-workplace-outbreak-operations-continuity/`、`domains/healthcare-surge-triage-capacity-continuity/`、`domains/medical-countermeasure-stockpile-distribution-continuity/` 和 `domains/wastewater-pathogen-surveillance-early-warning-continuity/` 负责传染病暴发响应执行连续性，覆盖病例调查、接触追踪、隔离检疫、社区检测、疫苗行动、呼吸防护、室内空气控制、学校工作场所运营、医疗挤兑、医疗对策和污水早期预警。
 - `domains/chemical-release-shelter-evacuation-continuity/`、`domains/community-right-to-know-chemical-risk-disclosure-continuity/`、`domains/hazmat-incident-command-emergency-response-continuity/`、`domains/industrial-process-safety-management-continuity/`、`domains/toxic-plume-air-monitoring-risk-communication-continuity/`、`domains/hazwoper-responder-ppe-safety-continuity/`、`domains/decontamination-exposure-triage-continuity/`、`domains/hazardous-materials-transportation-erg-continuity/`、`domains/oil-spill-hazardous-release-response-recovery-continuity/` 和 `domains/battery-thermal-runaway-fire-hazard-continuity/` 负责危险材料与工业事故执行连续性，覆盖化学释放避险撤离、社区知情披露、HazMat 指挥、过程安全、有毒羽流沟通、响应者 PPE、暴露后分诊、危险品运输、油污恢复和电池热失控。
 - `domains/maternal-newborn-child-development/` 负责孕产健康、新生儿健康、儿童健康、生长标准、早期发展和养育照护。
+- `domains/prenatal-care-access-risk-screening-continuity/`、`domains/postpartum-care-recovery-follow-up-continuity/`、`domains/lactation-breastfeeding-support-continuity/`、`domains/preterm-birth-nicu-discharge-transition-continuity/`、`domains/pregnancy-loss-stillbirth-bereavement-continuity/` 和 `domains/perinatal-mental-health-screening-referral-continuity/` 负责围产期连续性，覆盖产前照护接入、产后恢复随访、哺乳泵奶支持、早产 NICU 出院转接、妊娠丧失悲伤支持和围产期心理健康筛查转介。
 - `domains/patient-safety-organizational-learning/` 负责患者安全、事件报告、团队沟通、根因分析、CUSP、TeamSTEPPS 和安全文化。
 - `domains/caregiving-long-term-care/` 负责家庭照护、长期照护、居家社区支持、照护协调、照护者负担和尊严边界。
 - `domains/adult-day-services-supervision-transport-continuity/`、`domains/home-care-aide-personal-care-workforce-continuity/`、`domains/respite-care-provider-capacity-scheduling-continuity/`、`domains/caregiver-training-skills-safety-continuity/`、`domains/caregiver-health-burnout-screening-support-continuity/` 和 `domains/home-care-task-coordination-care-plan-continuity/` 负责成人日间服务、居家个人照护劳动力、喘息服务容量、照护者训练、照护者健康和家庭照护任务协调这些长期照护执行连续性条件。
@@ -1188,6 +1195,7 @@ human_infra/
 - 2026-07-01：新增第 115 波长期照护执行连续性域，覆盖成人日间服务、居家照护人员、喘息容量、照护者训练、照护者健康和居家照护任务协调。
 - 2026-07-01：新增第 116 波人口与地域可达性连续性域，覆盖部落健康主权服务、退伍军人福利导航、迁徙季节性农业工人健康住房、属地岛屿健康基础设施、边境跨境照护和 LGBTQ 身份承认服务。
 - 2026-07-01：新增第 117 波青少年到成年转变连续性域，覆盖离家无家可归青年外展庇护、寄养出离独立生活、少年司法重返 aftercare、过渡年龄青年心理健康、机会青年教育就业和怀孕育儿青年家庭支持。
+- 2026-07-01：新增第 118 波围产期连续性域，覆盖产前照护接入风险筛查、产后恢复随访、哺乳泵奶支持、早产 NICU 出院转接、妊娠丧失悲伤支持和围产期心理健康筛查转介。
 - 2026-06-30：新增第四十一波 6 个收入、税务、社保、退休、失业和工伤权益记录连续性域，覆盖工资雇佣记录、税务申报记录、社会保险收入与福利记录、退休养老金计划、失业保险工资记录和工伤职业伤害权益。
 - 2026-06-30：新增第四十波 6 个资格证明、证照与能力可携带连续性域，覆盖教育记录核验、职业证照认证、技能胜任力凭证、继续教育再认证、学徒制工作中学习和可验证凭证钱包互操作。
 - 2026-06-30：新增第三十九波 6 个算法化准入、筛查与资格连续性域，覆盖信用与消费者报告、租房筛查、背景记录筛查、算法招聘、保险算法评分和公共福利自动资格系统。

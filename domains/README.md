@@ -93,6 +93,12 @@
 - `oil-spill-hazardous-release-response-recovery-continuity/`：油污与危险释放响应恢复连续性，整理水域海岸污染、工人安全、收入食物水源和长期监测。
 - `battery-thermal-runaway-fire-hazard-continuity/`：电池热失控与火灾风险连续性，整理锂离子电池、微出行、储能、召回、烟气和住房接口。
 - `maternal-newborn-child-development/`：母婴健康与儿童发展，整理孕产、新生儿、儿童健康、生长标准、早期发展和养育照护。
+- `prenatal-care-access-risk-screening-continuity/`：产前照护接入与风险筛查连续性，整理产前入口、风险筛查、检查随访、转诊、交通、语言、保险和隐私边界。
+- `postpartum-care-recovery-follow-up-continuity/`：产后照护、恢复与随访连续性，整理产后 visit、恢复、警示信号、并发症延续管理、医保和 primary care 转接。
+- `lactation-breastfeeding-support-continuity/`：哺乳、泵奶与喂养支持连续性，整理 lactation support、WIC 支持、工作学校空间、设备接口和家庭支持。
+- `preterm-birth-nicu-discharge-transition-continuity/`：早产、NICU 出院与家庭转接连续性，整理 NICU discharge、家庭训练、随访、设备、喂养、感染预防和早期干预。
+- `pregnancy-loss-stillbirth-bereavement-continuity/`：妊娠丧失、死产与悲伤支持连续性，整理 miscarriage、stillbirth、医疗交接、工作学校调整、记录接口和悲伤支持。
+- `perinatal-mental-health-screening-referral-continuity/`：围产期心理健康筛查与转介连续性，整理抑郁焦虑筛查、转介、危机入口、IPV/物质使用接口、同伴支持和随访闭环。
 - `patient-safety-organizational-learning/`：患者安全与组织学习，整理事件报告、团队沟通、根因分析、CUSP、TeamSTEPPS 和安全文化。
 - `caregiving-long-term-care/`：照护与长期照护，整理家庭照护、长期照护、居家社区支持、照护协调和照护者负担。
 - `housing-built-environment-stability/`：住房与建成环境稳定，整理住房稳定、住房质量、室内环境、无障碍、社区资源和建成环境。

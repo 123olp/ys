@@ -225,6 +225,12 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 水域污染必须进入长期恢复链 | `oil-spill-hazardous-release-response-recovery-continuity/` | 油污、危险释放、工人安全、收入食物水源、长期监测 | 污染恢复失败会切断食物、收入、居住、文化生活和社区信任 |
 | 电池化工具必须不反向制造火灾暴露 | `battery-thermal-runaway-fire-hazard-continuity/` | 锂离子电池、热失控、储能、召回、烟气、住房接口 | 电池便利若缺少安全边界，会把能源冗余转成火灾、烟气和住房断裂风险 |
 | 早期生命条件可支撑未来主体 | `maternal-newborn-child-development/` | 孕产安全、新生儿、儿童健康、生长、早期发展、养育照护 | 把母婴儿童资料写成个体医疗、育儿、排名或家庭监控建议 |
+| 产前风险必须持续被看见 | `prenatal-care-access-risk-screening-continuity/` | prenatal care、risk screening、检查随访、转诊、交通、语言、保险 | 产前失访会让可发现风险、转诊、准备和产后计划在分娩前断裂 |
+| 产后恢复必须有连续随访 | `postpartum-care-recovery-follow-up-continuity/` | postpartum visit、恢复、警示信号、慢病延续、primary care 转接、医保窗口 | 产后系统断裂会让可恢复问题、心理风险、喂养压力和家庭照护负担积累 |
+| 哺乳与泵奶支持必须可执行 | `lactation-breastfeeding-support-continuity/` | lactation support、WIC、泵奶空间、设备耗材、工作学校安排、家庭支持 | 喂养支持若只停留在口号，会把营养、睡眠、工作、学校和家庭协作推入摩擦 |
+| NICU 出院必须接上家庭系统 | `preterm-birth-nicu-discharge-transition-continuity/` | preterm birth、NICU discharge、家庭训练、设备、喂养、随访、早期干预 | 出院转接失败会把脆弱新生儿护理从 ICU 专业环境突然抛给未准备家庭 |
+| 妊娠丧失后的恢复必须被承认 | `pregnancy-loss-stillbirth-bereavement-continuity/` | miscarriage、stillbirth、医疗交接、工作学校调整、记录接口、悲伤支持 | 丧失事件若被制度沉默，会把身体恢复、关系、工作学习和未来计划同时打断 |
+| 围产期心理风险必须能筛查转介 | `perinatal-mental-health-screening-referral-continuity/` | 抑郁焦虑筛查、转介、危机入口、IPV/物质使用接口、同伴支持、随访闭环 | 围产心理风险未被接住，会放大自伤、照护失效、家庭暴力、物质使用和新生儿风险 |
 | 医疗组织可从错误中学习 | `patient-safety-organizational-learning/` | 事件报告、近失误、团队沟通、根因分析、安全文化、行动闭环 | 把患者安全写成追责、机构背书、法律判断或惩罚性监控 |
 | 照护可持续 | `caregiving-long-term-care/` | 家庭照护、长期照护、居家社区支持、照护协调、照护者负担 | 长寿退化为无人照护、照护者崩溃、失能支持中断或尊严丧失 |
 | 居住环境可稳定 | `housing-built-environment-stability/` | 住房稳定、住房质量、室内环境、无障碍、社区资源、建成环境 | 居住空间持续制造暴露、跌倒、孤立、服务断点或照护不可行 |
@@ -1109,6 +1115,12 @@ risk-engineering
   -> oil-spill-hazardous-release-response-recovery-continuity
   -> battery-thermal-runaway-fire-hazard-continuity
   -> maternal-newborn-child-development
+  -> prenatal-care-access-risk-screening-continuity
+  -> postpartum-care-recovery-follow-up-continuity
+  -> lactation-breastfeeding-support-continuity
+  -> preterm-birth-nicu-discharge-transition-continuity
+  -> pregnancy-loss-stillbirth-bereavement-continuity
+  -> perinatal-mental-health-screening-referral-continuity
   -> patient-safety-organizational-learning
   -> caregiving-long-term-care
   -> housing-built-environment-stability
