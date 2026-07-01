@@ -131,3 +131,4 @@ Current decisions:
 - `0116-add-one-hundred-eleventh-wave-household-physical-order-object-access-domains.md`
 - `0117-add-one-hundred-twelfth-wave-household-operating-metadata-handoff-domains.md`
 - `0118-add-one-hundred-thirteenth-wave-neighborhood-public-space-maintenance-service-request-domains.md`
+- `0119-add-one-hundred-fourteenth-wave-early-child-care-execution-domains.md`

@@ -207,6 +207,12 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `social-protection-benefits-delivery/` | 公共福利、资格、申请、续期、支付和申诉决定风险冲击能否被制度性缓冲 |
 | `insurance-risk-transfer/` | 覆盖、保费、自付、理赔、拒赔和风险池决定高成本风险是否由个体独自承担 |
 | `childcare-family-continuity/` | 托育可及、费用、质量、儿童发展和父母工作连续性共同影响两代主体的有效时间和未来选择权 |
+| `child-care-availability-affordability-continuity/` | 托育名额、费用、时段、距离、年龄覆盖和等待时间决定服务是否真实可用、可承受 |
+| `child-care-licensing-health-safety-continuity/` | 托育许可、检查、健康安全标准、人员比例和背景审查决定儿童照护安全是否可审查 |
+| `child-care-subsidy-ccdf-payment-continuity/` | CCDF、补贴资格、授权、续期、共付和 provider payment 决定费用支持是否持续抵达家庭和服务方 |
+| `head-start-early-head-start-family-support-continuity/` | Head Start / Early Head Start 决定低收入儿童和家庭是否获得早期学习、健康、营养和家庭支持 |
+| `early-intervention-idea-part-c-developmental-services-continuity/` | IDEA Part C 早期干预决定发育担忧是否能转化为评估、IFSP、服务协调和转衔 |
+| `out-of-school-time-afterschool-summer-learning-continuity/` | 放学后、暑期学习和监督照护决定学校日历外时间是否切断儿童安全、学习和照护者工作 |
 | `access-to-justice-legal-aid/` | 司法可及、法律援助、程序负担、代理缺口和权利救济决定名义权利能否转化为真实保护和资源恢复 |
 | `civic-participation-election-access/` | 登记、投票、无障碍参与、选举标准和制度反馈决定主体能否持续影响公共规则 |
 | `migration-displacement-humanitarian-continuity/` | 迁移、难民和流离失所状态下的身份、医疗、教育、庇护和保护连续性决定主体是否被跨制度接住 |
@@ -1190,6 +1196,7 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | ILO Social Protection / World Bank Social Protection / USA.gov Benefit Finder | 提示社会保护、公共福利、资格、申请、续期、支付、申诉和行政负担是风险冲击缓冲层 |
 | NAIC consumer resources / USA.gov health insurance / FDIC deposit insurance | 提示保险覆盖、理赔、风险池和保障缺口影响疾病、失业、灾害、存款和养老金冲击后的恢复 |
 | World Bank Childcare / ACF Office of Child Care / ChildCare.gov | 提示托育可及、费用、质量、早期儿童发展和父母工作连续性是家庭与代际主体持续性条件 |
+| ACF OCC / CCDF / ChildCare.gov / Head Start / HSPPS / IDEA Part C / 21st CCLC / CDC Child Development / Census child care / NSECE | 提示早期儿童照护执行链需要拆成供给费用、许可安全、补贴支付、综合早期服务、早期干预和课外暑期照护 |
 | LSC Justice Gap / USA.gov Legal Aid / World Justice Project | 提示民事法律需求、法律援助、司法可及、程序负担和权利救济是制度恢复路径 |
 | USA.gov Voter Registration / EAC voters / NIST voting / International IDEA | 提示登记、投票可及、选举系统标准、无障碍和选举信任是公共决策参与基础设施 |
 | UNHCR / IOM / IDMC / WHO Refugee and Migrant Health | 提示迁移、难民、国内流离失所、身份连续、健康、教育、庇护和保护是跨制度主体连续性条件 |
@@ -1613,6 +1620,14 @@ Source links:
 - https://www.worldbank.org/en/topic/gender/brief/childcare
 - https://www.acf.hhs.gov/occ
 - https://childcare.gov/
+- https://www.acf.hhs.gov/occ/programs/ccdf
+- https://headstart.gov/
+- https://eclkc.ohs.acf.hhs.gov/policy/45-cfr-chap-xiii
+- https://sites.ed.gov/idea/topic-areas/#Early-Childhood
+- https://oese.ed.gov/offices/office-of-formula-grants/school-support-and-accountability/21st-century-community-learning-centers/
+- https://www.cdc.gov/child-development/
+- https://www.census.gov/topics/families/child-care.html
+- https://www.acf.hhs.gov/opre/project/national-survey-early-care-and-education-2019-2017-2022
 - https://justicegap.lsc.gov/
 - https://www.usa.gov/legal-aid
 - https://worldjusticeproject.org/rule-of-law-index/

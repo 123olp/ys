@@ -530,6 +530,12 @@ flowchart TD
     H --> SPBD[social-protection-benefits-delivery<br/>社会保护 / 福利递送]
     H --> IRT[insurance-risk-transfer<br/>保险 / 风险转移]
     H --> CFC[childcare-family-continuity<br/>托育 / 家庭连续性]
+    CFC --> CCAAC[child-care-availability-affordability-continuity<br/>托育供给 / 费用可承受]
+    CFC --> CCLHSC[child-care-licensing-health-safety-continuity<br/>托育许可 / 健康安全]
+    CFC --> CCSCPC[child-care-subsidy-ccdf-payment-continuity<br/>托育补贴 / CCDF 支付]
+    CFC --> HSEHSFSC[head-start-early-head-start-family-support-continuity<br/>Head Start / 家庭支持]
+    CFC --> EIIPCDSC[early-intervention-idea-part-c-developmental-services-continuity<br/>IDEA Part C / 早期干预]
+    CFC --> OSTAASLC[out-of-school-time-afterschool-summer-learning-continuity<br/>课外暑期 / 学习照护]
     H --> EPR[emergency-preparedness-response<br/>应急准备 / 响应]
     H --> PSVP[personal-safety-violence-prevention<br/>人身安全 / 暴力预防]
     H --> DVCC[domestic-violence-coercive-control-safety-continuity<br/>家庭暴力 / 胁迫控制]
@@ -1525,6 +1531,12 @@ flowchart TD
 | [Community Health Workers Peer Support](domains/community-health-workers-peer-support/README.md) | 社区健康工作者、同伴支持、导航员、可信中介和转介闭环 | 把医疗、公共卫生、社会服务和恢复支持嵌入日常生活 | 不提供诊断、治疗、用药、心理咨询、危机处理或个案转介建议 |
 | [Insurance Risk Transfer](domains/insurance-risk-transfer/README.md) | 健康、失业、工伤、残障、灾害、存款和养老金风险转移 | 风险池、覆盖、理赔、保障缺口和高成本事件分摊 | 不提供保险选择、投保、理赔、税务、法律、投资、欺诈或规避建议 |
 | [Childcare Family Continuity](domains/childcare-family-continuity/README.md) | 托育可及、费用、质量、早期儿童发展、父母工作连续性和家庭压力 | 儿童发展、照护者有效时间、家庭稳定和代际未来选择权 | 不提供育儿、教育、医疗、机构选择、补贴申请、法律或家庭纠纷建议 |
+| [Child Care Availability Affordability Continuity](domains/child-care-availability-affordability-continuity/README.md) | 托育名额、费用、时段、距离、年龄覆盖和等待时间 | 判断服务是否真实可用、可承受，并保护照护者工作学习恢复时间 | 不提供机构推荐、价格判断、排队策略、资格判断或家庭安排建议 |
+| [Child Care Licensing Health Safety Continuity](domains/child-care-licensing-health-safety-continuity/README.md) | 托育许可、检查、健康安全标准、人员比例、背景审查和事件透明 | 把儿童照护安全从“有人看护”转化为可审查监管与风险护栏 | 不认证、评级、推荐机构，不解释事故责任、儿童症状或合规结论 |
+| [Child Care Subsidy CCDF Payment Continuity](domains/child-care-subsidy-ccdf-payment-continuity/README.md) | CCDF、托育补贴、资格、授权、续期、共付和 provider payment | 把托育费用压力转化为支付连续性、现金流稳定和服务稳定性问题 | 不提供补贴资格、申请、申诉、税务、法律、移民或规避建议 |
+| [Head Start Early Head Start Family Support Continuity](domains/head-start-early-head-start-family-support-continuity/README.md) | Head Start、Early Head Start、早期学习、健康、营养和家庭支持 | 把低收入家庭早期发展服务建模为儿童能力形成和家庭稳定基础设施 | 不判断项目资格、录取、服务适配、儿童诊断、医疗或教育处方 |
+| [Early Intervention IDEA Part C Developmental Services Continuity](domains/early-intervention-idea-part-c-developmental-services-continuity/README.md) | IDEA Part C、早期干预、评估、IFSP、服务协调和转衔 | 把发育担忧转化为早期识别、家庭中心服务和长期能力形成支持 | 不提供儿童诊断、治疗计划、IFSP 策略、学校安置、保险或法律建议 |
+| [Out Of School Time Afterschool Summer Learning Continuity](domains/out-of-school-time-afterschool-summer-learning-continuity/README.md) | 放学后、暑期学习、监督照护、餐食、交通和社区项目 | 填补学校日历外时间断点，保护儿童安全、学习轮次和照护者工作连续性 | 不推荐课外班、夏令营、补习、接送路线、学习计划或项目质量背书 |
 | [Emergency Preparedness Response](domains/emergency-preparedness-response/README.md) | 灾害准备、预警、应急通信、急救医疗、撤离支持、安置和恢复 | 尾部风险响应、危机连续性、灾后恢复和抗冲击能力 | 不提供急救、医疗处理、撤离路线、危险环境、武器、暴力或生存操作指南 |
 | [Household Emergency Preparedness Resilience](domains/household-emergency-preparedness-resilience/README.md) | 家庭计划、物资包、备用通信、健康准备、重要文件和特殊需求安排 | 公共救援抵达前的家庭级主体连续性和恢复前置能力 | 不提供实时灾害指挥、撤离路线、急救医疗、危险物储存或极端生存主义指南 |
 | [Emergency Supply Kit Go Bag Rotation Continuity](domains/emergency-supply-kit-go-bag-rotation-continuity/README.md) | 应急物资包、撤离包、耗材轮换、可取用性和过期失效 | 把公共服务中断初期的水食、照明、卫生、药品和通信输入纳入行动窗口模型 | 不提供个人物资清单、采购、储存数量、品牌、撤离包配置或现场行动建议 |
@@ -2083,6 +2095,12 @@ human_infra/
 │   ├── community-resource-navigation/
 │   ├── insurance-risk-transfer/
 │   ├── childcare-family-continuity/
+│   ├── child-care-availability-affordability-continuity/
+│   ├── child-care-licensing-health-safety-continuity/
+│   ├── child-care-subsidy-ccdf-payment-continuity/
+│   ├── head-start-early-head-start-family-support-continuity/
+│   ├── early-intervention-idea-part-c-developmental-services-continuity/
+│   ├── out-of-school-time-afterschool-summer-learning-continuity/
 │   ├── learning-skill-acquisition/
 │   ├── longevity-evidence/
 │   ├── lymphatic-glymphatic-clearance/
@@ -2547,5 +2565,6 @@ flowchart LR
 - 2026-07-01：新增第一百一十一波 6 个家庭物理秩序、物品访问与执行摩擦连续性域，覆盖通道杂物绊倒、家庭线缆绊倒缠绕、货架柜体储物稳定、梯凳高处任务、居家办公工位工效和玩具小零件窒息误吞。
 - 2026-07-01：新增第一百一十二波 6 个家庭运行元数据与交接连续性域，覆盖公用设施关断位置标识、断路器面板标签、水路阀门标签、家庭设备型号召回记录、家庭服务联系人目录和家庭运行地图交接。
 - 2026-07-01：新增第一百一十三波 6 个邻里公共空间维护与地方服务请求执行连续性域，覆盖 311 服务请求、路灯夜间可见性、人行道/路缘坡道、雪冰冬季通行、街道树木维护和雨水口局部内涝。
+- 2026-07-01：新增第一百一十四波 6 个早期儿童照护执行连续性域，覆盖托育供给费用、许可健康安全、CCDF 补贴支付、Head Start、IDEA Part C 早期干预和课外/暑期学习照护。
 
 完整记录见 [CHANGELOG.md](CHANGELOG.md)。

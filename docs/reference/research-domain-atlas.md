@@ -794,6 +794,12 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 公用事业必须可负担不断供 | `utility-affordability-shutoff-protection-continuity/` | 账单负担、欠费、援助、分期、断供保护、消费者申诉 | 服务存在但被费用和程序摩擦切断，家庭层面基础设施失效 |
 | 高成本风险可分摊 | `insurance-risk-transfer/` | 覆盖率、保费、自付、理赔、拒赔、风险池、保障缺口 | 疾病、失业、工伤、残障、灾害或养老金风险由个体独自承担 |
 | 托育和家庭运行可持续 | `childcare-family-continuity/` | 托育可及、费用、质量、早期发展、父母工作连续性、家庭压力 | 儿童发展受损、照护者工作中断、时间贫困和家庭压力升级 |
+| 托育供给必须真实可用 | `child-care-availability-affordability-continuity/` | 名额、费用、时段、距离、年龄覆盖、等待时间、可负担性 | 服务名义存在但家庭排不上、负担不起或时段不匹配，工作学习恢复时间被切断 |
+| 托育安全必须可审查 | `child-care-licensing-health-safety-continuity/` | 许可、检查、健康安全标准、人员比例、背景审查、事件透明 | 照护安全不可见，儿童伤害感染风险、家庭信任和照护连续性同时受损 |
+| 托育补贴必须持续支付 | `child-care-subsidy-ccdf-payment-continuity/` | CCDF、资格、授权、续期、共付、provider payment、行政负担 | 费用支持中断使家庭现金流、服务稳定和父母工作连续性断裂 |
+| Head Start 必须支撑家庭系统 | `head-start-early-head-start-family-support-continuity/` | 早期学习、健康、营养、家庭参与、转介、入学过渡 | 低收入儿童和家庭缺少综合早期服务，能力形成和家庭稳定被早期稀缺锁死 |
+| 早期干预必须及时接上 | `early-intervention-idea-part-c-developmental-services-continuity/` | IDEA Part C、识别、评估、IFSP、服务协调、转衔 | 发育担忧未被及时识别、协调和转衔，儿童能力形成窗口和家庭恢复窗口被延迟耗尽 |
+| 学校日历外照护必须覆盖 | `out-of-school-time-afterschool-summer-learning-continuity/` | 放学后、暑期学习、监督照护、餐食、交通、社区项目 | 放学后和暑期断点放大学习损失、无监督风险和照护者排班压力 |
 | 应急响应可接住主体 | `emergency-preparedness-response/` | 灾害准备、预警、应急通信、急救医疗、安置、公共卫生应急、恢复 | 低频高冲击事件一次性清零长期积累，通信、医疗、撤离或恢复失败 |
 | 人身安全可保护 | `personal-safety-violence-prevention/` | 暴力暴露、求助入口、受害者服务、法律保护、创伤支持、住房安全 | 暴力、胁迫、跟踪、犯罪伤害和创伤直接截断生命、行动能力和未来选择权 |
 | 家庭暴力安全退出必须可执行 | `domestic-violence-coercive-control-safety-continuity/` | 亲密伴侣暴力、胁迫控制、安全联系、求助入口、保护资源、恢复支持 | 家庭和亲密关系变成控制系统，住房、医疗、工作、照护、通信和未来选择权被持续压缩 |
@@ -1623,6 +1629,12 @@ risk-engineering
   -> utility-affordability-shutoff-protection-continuity
   -> insurance-risk-transfer
   -> childcare-family-continuity
+  -> child-care-availability-affordability-continuity
+  -> child-care-licensing-health-safety-continuity
+  -> child-care-subsidy-ccdf-payment-continuity
+  -> head-start-early-head-start-family-support-continuity
+  -> early-intervention-idea-part-c-developmental-services-continuity
+  -> out-of-school-time-afterschool-summer-learning-continuity
   -> emergency-preparedness-response
   -> personal-safety-violence-prevention
   -> domestic-violence-coercive-control-safety-continuity

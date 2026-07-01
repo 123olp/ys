@@ -639,6 +639,12 @@ human_infra/
     ├── utility-affordability-shutoff-protection-continuity/ # 公用事业可负担性与断供保护
     ├── insurance-risk-transfer/ # 保险与风险转移
     ├── childcare-family-continuity/ # 托育与家庭连续性
+    ├── child-care-availability-affordability-continuity/ # 托育供给与费用可承受性连续性
+    ├── child-care-licensing-health-safety-continuity/ # 托育许可健康安全连续性
+    ├── child-care-subsidy-ccdf-payment-continuity/ # 托育补贴与 CCDF 支付连续性
+    ├── head-start-early-head-start-family-support-continuity/ # Head Start / Early Head Start 家庭支持连续性
+    ├── early-intervention-idea-part-c-developmental-services-continuity/ # IDEA Part C 早期干预连续性
+    ├── out-of-school-time-afterschool-summer-learning-continuity/ # 课外与暑期学习照护连续性
     ├── learning-skill-acquisition/ # 学习与技能获得
     ├── longevity-evidence/# 原 Biocat 长寿证据账本
     ├── lymphatic-glymphatic-clearance/ # 淋巴与脑淋巴清除
@@ -1017,6 +1023,7 @@ human_infra/
 - `domains/migraine-headache-effective-time-burden/` 负责偏头痛、头痛障碍、感官敏感、认知雾、发作不可预测性和有效时间负担。
 - `domains/insurance-risk-transfer/` 负责健康、失业、工伤、残障、灾害、存款、养老金等风险转移和风险池。
 - `domains/childcare-family-continuity/` 负责托育可及、托育费用、照护质量、早期儿童发展、父母工作连续性和家庭压力。
+- `domains/child-care-availability-affordability-continuity/`、`domains/child-care-licensing-health-safety-continuity/`、`domains/child-care-subsidy-ccdf-payment-continuity/`、`domains/head-start-early-head-start-family-support-continuity/`、`domains/early-intervention-idea-part-c-developmental-services-continuity/` 和 `domains/out-of-school-time-afterschool-summer-learning-continuity/` 负责把托育家庭连续性拆成供给费用、许可安全、补贴支付、综合早期服务、早期干预和课外暑期照护执行链。
 - `domains/emergency-preparedness-response/` 负责灾害准备、预警、应急通信、急救医疗、安置、公共卫生应急和灾后恢复。
 - `domains/personal-safety-violence-prevention/` 负责人身安全、暴力预防、求助入口、受害者服务、法律保护和创伤支持。
 - `domains/domestic-violence-coercive-control-safety-continuity/`、`domains/sexual-assault-forensic-exam-advocacy-continuity/`、`domains/stalking-harassment-protection-order-continuity/`、`domains/victim-witness-rights-notification-continuity/`、`domains/crime-victim-compensation-restitution-continuity/`、`domains/survivor-safe-housing-emergency-transfer-continuity/`、`domains/human-trafficking-victim-identification-services-continuity/` 和 `domains/missing-persons-unidentified-remains-resolution-continuity/` 负责家庭暴力/胁迫控制、性暴力 forensic exam 与 advocacy、跟踪骚扰保护令、受害者/证人权利通知、犯罪受害者补偿、受害者安全住所、人口贩运受害者服务和失踪/无名身份恢复这些受害者安全、服务与恢复执行连续性条件。
@@ -1190,6 +1197,7 @@ human_infra/
 - 2026-06-30：新增第八波 6 个主体代理与任务资源域骨架，覆盖注意力与执行控制、学习与技能获得、时间分配与有效时间、财务韧性、职业与工作设计、信息完整性与信任。
 - 2026-06-30：新增第九波 6 个服务接入与生活连续性域骨架，覆盖医疗服务连续性、照护与长期照护、住房与建成环境、交通接入、法律身份与民事登记、应急准备与响应。
 - 2026-06-30：新增第十波 6 个基础生计与风险分摊域骨架，覆盖食物安全与营养可及、水卫生连续性、能源可及与韧性、社会保护与福利递送、保险与风险转移、托育与家庭连续性。
+- 2026-07-01：新增第 114 波 6 个早期儿童照护执行域骨架，覆盖托育供给费用、许可健康安全、CCDF 补贴支付、Head Start、IDEA Part C 早期干预和课外/暑期学习照护连续性。
 - 2026-06-30：新增第十一波 6 个制度参与、人道连续性与公共安全域骨架，覆盖司法可及与法律援助、公民参与与选举接入、迁移流离失所与人道连续性、数字包容与连接、人身安全与暴力预防、产品安全与召回系统。
 - 2026-06-30：新增第十二波 6 个治疗、服务理解与劳动保护域骨架，覆盖药品与治疗连续性、患者数据互操作、远程医疗与居家监测、社区资源导航、语言可达与清晰沟通、劳动权利与工作场所保护。
 - 2026-06-30：新增第十三波 6 个数据治理、结局评估与公共卫生安全域骨架，覆盖健康数据隐私治理、功能与生活质量结局、健康经济与价值评估、免疫与公共卫生监测、母婴儿童早期生命、患者安全与组织学习。

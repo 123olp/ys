@@ -2088,6 +2088,24 @@ domains/
 ├── childcare-family-continuity/
 │   ├── AGENTS.md
 │   └── README.md
+├── child-care-availability-affordability-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── child-care-licensing-health-safety-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── child-care-subsidy-ccdf-payment-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── head-start-early-head-start-family-support-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── early-intervention-idea-part-c-developmental-services-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── out-of-school-time-afterschool-summer-learning-continuity/
+│   ├── AGENTS.md
+│   └── README.md
 ├── emergency-preparedness-response/
 │   ├── AGENTS.md
 │   └── README.md
@@ -2401,6 +2419,7 @@ domains/
 - `attention-executive-control/`、`learning-skill-acquisition/` 和 `time-allocation-effective-time/` 负责注意力、学习能力和有效时间这些主体代理与任务资源条件。
 - `financial-resilience-access/`、`financial-inclusion-payment-systems/`、`workforce-employment-services/`、`education-access-lifelong-learning/`、`occupational-work-design/`、`labor-rights-workplace-protection/`、`language-access-plain-communication/`、`media-information-literacy-public-libraries/` 和 `information-integrity-trust/` 负责财务韧性、金融支付入口、就业服务、教育与终身学习、工作环境、劳动权利、语言理解入口、公共知识入口和信息可信度这些资源入口与认知环境条件。
 - `food-security-nutrition-access/`、`water-sanitation-hygiene-continuity/`、`energy-access-resilience/`、`social-protection-benefits-delivery/`、`community-resource-navigation/`、`social-determinants-community-vulnerability/`、`public-service-design-accessibility/`、`administrative-burden-procedural-friction/`、`civic-data-open-government-transparency/`、`insurance-risk-transfer/` 和 `childcare-family-continuity/` 负责食物、水卫生、能源、公共福利、社区资源导航、社区脆弱性、公共服务可达、行政负担、开放数据透明、保险风险池和托育家庭连续性这些基础生计、公共服务与风险分摊条件。
+- `child-care-availability-affordability-continuity/`、`child-care-licensing-health-safety-continuity/`、`child-care-subsidy-ccdf-payment-continuity/`、`head-start-early-head-start-family-support-continuity/`、`early-intervention-idea-part-c-developmental-services-continuity/` 和 `out-of-school-time-afterschool-summer-learning-continuity/` 负责托育和早期儿童服务执行层：供给费用、许可健康安全、补贴支付、综合早期服务、早期干预和课外暑期学习照护。
 - `research-infrastructure-open-science-translation/`、`standards-metrology-quality-infrastructure/`、`compute-data-center-ai-infrastructure/`、`cybersecurity-resilience-critical-services/`、`geospatial-navigation-location-infrastructure/`、`manufacturing-repair-capacity/`、`supply-chain-continuity/` 和 `ai-agency-safety/` 负责科研转化、标准计量质量、算力 AI 基础设施、网络安全韧性、空间定位导航、制造维修能力、供应链连续和 AI 代理安全这些技术窗口生成、可信化和可用性的外部底座。
 - `semiconductor-manufacturing-metrology-continuity/`、`semiconductor-advanced-packaging-continuity/`、`chip-design-eda-verification-ip-continuity/`、`ai-hardware-accelerator-performance-continuity/`、`data-center-cooling-water-thermal-continuity/`、`large-load-grid-interconnection-transmission-continuity/`、`grid-scale-energy-storage-flexibility-continuity/`、`advanced-nuclear-energy-safety-generation-continuity/`、`undersea-cable-internet-backbone-continuity/` 和 `satellite-communications-spectrum-orbit-continuity/` 负责把先进计算、能源与连接底座拆成芯片制造计量、封装、设计验证、加速器执行、电力与冷却、储能与稳定能源、全球骨干和空间通信这些可独立审查的物理约束。
 - `cardiac-arrest-cpr-defibrillation-continuity/`、`sepsis-shock-early-recognition-resuscitation-continuity/`、`trauma-system-hemorrhage-control-continuity/`、`intensive-care-organ-support-delirium-continuity/`、`mechanical-ventilation-respiratory-failure-continuity/`、`ecmo-extracorporeal-life-support-continuity/`、`acute-kidney-injury-renal-replacement-continuity/`、`transfusion-blood-management-hemorrhage-continuity/`、`overdose-poisoning-reversal-toxicology-continuity/` 和 `burn-injury-critical-care-rehabilitation-continuity/` 负责把急性死亡边界拆成心脏骤停、脓毒症休克、创伤出血、ICU、呼吸机、ECMO、AKI/RRT、输血、中毒逆转和烧伤重建这些可独立审查的救援链。
@@ -2513,6 +2532,7 @@ domains/
 - `income-payroll-employment-record-continuity/`、`tax-administration-filing-record-continuity/`、`social-security-earnings-benefit-record-continuity/`、`retirement-pension-savings-plan-continuity/`、`unemployment-insurance-wage-record-continuity/` 和 `workers-compensation-occupational-injury-benefit-continuity/` 负责权益记录连续性的证据边界，不提供工资索赔、税务申报、福利申请、退休规划、投资、失业保险申领、工伤索赔、医疗诊断、法律、财务、移民、保险、记录伪造或个人案件建议。
 - `family-medical-leave-job-protection-continuity/`、`paid-sick-family-leave-wage-replacement-continuity/`、`pregnancy-parental-work-continuity/`、`workplace-accommodation-return-to-work-continuity/`、`disability-income-work-capacity-benefit-continuity/` 和 `family-caregiver-respite-work-continuity/` 负责工作中断与照护事件连续性的证据边界，不提供个人请假、带薪假、孕产育儿、合理便利、残障福利、照护服务、医疗、法律、HR、税务、保险、福利申请、申诉或雇主合规建议。
 - `vital-records-life-event-continuity/`、`name-change-identity-record-synchronization-continuity/`、`address-residency-mail-service-continuity/`、`household-composition-dependent-eligibility-continuity/`、`family-law-custody-child-support-continuity/` 和 `kinship-foster-adoption-care-continuity/` 负责家庭事实与制度记录连续性的证据边界，不提供个人证件办理、改名、地址变更、税务/福利 household 判断、监护权、子女抚养、寄养、收养、法律、移民、福利、保险、学校、法院或个案策略建议。
+- `child-care-availability-affordability-continuity/`、`child-care-licensing-health-safety-continuity/`、`child-care-subsidy-ccdf-payment-continuity/`、`head-start-early-head-start-family-support-continuity/`、`early-intervention-idea-part-c-developmental-services-continuity/` 和 `out-of-school-time-afterschool-summer-learning-continuity/` 负责早期儿童照护执行连续性的证据边界，不提供托育机构推荐、补贴申请、儿童诊断、治疗计划、IFSP/IEP 策略、学校安置、接送路线、项目报名、法律、医疗、教育或家庭个案建议。
 - `banking-deposit-account-access-continuity/`、`debt-obligation-collection-relief-continuity/`、`real-property-title-deed-record-continuity/`、`driver-license-vehicle-registration-continuity/`、`passport-travel-document-mobility-continuity/`、`contract-subscription-billing-consent-continuity/` 和 `notary-document-authentication-signature-continuity/` 负责资源控制、移动资格与交易执行连续性的证据边界，不提供个人银行、债务、破产、房产、车辆、驾驶、护照、签证、移民、订阅取消、合同审查、公证、apostille、电子签名、法律、金融或个案策略建议。
 - `long-distance-travel-booking-itinerary-continuity/`、`air-passenger-rights-disruption-refund-continuity/`、`aviation-security-screening-identity-continuity/`、`baggage-personal-property-travel-continuity/`、`lodging-temporary-accommodation-access-continuity/`、`travel-advisory-consular-assistance-continuity/`、`travel-health-preparedness-continuity/` 和 `customs-border-entry-declaration-continuity/` 负责旅行、住宿、安检、领事、健康和边境移动连续性的证据边界，不提供路线推荐、票务套利、退款赔偿、安检规避、违禁品携带、住宿选择、旅行安全、医疗、签证、移民、海关申报、保险、法律或个案策略建议。
 - `online-retail-order-shipping-fulfillment-continuity/`、`consumer-return-refund-dispute-resolution-continuity/`、`consumer-warranty-service-contract-repair-continuity/`、`right-to-repair-parts-manuals-access-continuity/`、`payment-card-dispute-unauthorized-charge-continuity/`、`gift-card-prepaid-stored-value-continuity/`、`price-fee-disclosure-junk-fee-continuity/` 和 `consumer-reviews-endorsements-marketplace-trust-continuity/` 负责消费者交易、履约、维修、支付、储值、价格披露和市场信任的证据边界，不提供购物推荐、退款脚本、chargeback 策略、维修破解、礼品卡交易、费用规避、刷评营销、金融、法律或个案消费者争议建议。

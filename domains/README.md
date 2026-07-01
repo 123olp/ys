@@ -271,6 +271,12 @@
 - `utility-affordability-shutoff-protection-continuity/`：公用事业可负担性与断供保护，整理账单负担、欠费、援助入口、断供保护、消费者申诉和程序摩擦。
 - `insurance-risk-transfer/`：保险与风险转移，整理健康、失业、工伤、残障、灾害、存款、养老金等风险池和保障缺口。
 - `childcare-family-continuity/`：托育与家庭连续性，整理托育可及、费用、质量、早期儿童发展、父母工作连续性和家庭压力。
+- `child-care-availability-affordability-continuity/`：托育供给与费用可承受性连续性，整理名额、费用、时段、距离、年龄覆盖和等待时间。
+- `child-care-licensing-health-safety-continuity/`：托育许可健康安全连续性，整理许可、检查、健康安全标准、人员比例、背景审查和事件透明。
+- `child-care-subsidy-ccdf-payment-continuity/`：托育补贴与 CCDF 支付连续性，整理资格、授权、续期、共付、provider payment 和行政负担。
+- `head-start-early-head-start-family-support-continuity/`：Head Start / Early Head Start 家庭支持连续性，整理早期学习、健康、营养、家庭参与和转介。
+- `early-intervention-idea-part-c-developmental-services-continuity/`：IDEA Part C 早期干预连续性，整理发育识别、评估、IFSP、服务协调和转衔。
+- `out-of-school-time-afterschool-summer-learning-continuity/`：课外与暑期学习照护连续性，整理放学后、暑期学习、监督照护、餐食、交通和社区项目。
 - `emergency-preparedness-response/`：应急准备与响应，整理灾害准备、预警、应急通信、急救医疗、安置和恢复。
 - `personal-safety-violence-prevention/`：人身安全与暴力预防，整理暴力预防、求助入口、受害者服务、法律保护和创伤支持。
 - `domestic-violence-coercive-control-safety-continuity/`：家庭暴力、亲密伴侣暴力与胁迫控制安全连续性，整理安全退出、保密联系、求助入口、保护资源和长期恢复。

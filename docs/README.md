@@ -134,6 +134,7 @@ docs/
 │   ├── 0116-add-one-hundred-eleventh-wave-household-physical-order-object-access-domains.md
 │   ├── 0117-add-one-hundred-twelfth-wave-household-operating-metadata-handoff-domains.md
 │   ├── 0118-add-one-hundred-thirteenth-wave-neighborhood-public-space-maintenance-service-request-domains.md
+│   ├── 0119-add-one-hundred-fourteenth-wave-early-child-care-execution-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -985,4 +986,10 @@ docs/
 720. Read `../domains/wildfire-smoke-clean-air-respiratory-continuity/README.md` if you are working on wildfire smoke, clean-air rooms, AQI/PM2.5, respiratory protection, indoor filtration, or smoke-sensitive populations.
 721. Read `../domains/thunderstorm-lightning-outdoor-safety-continuity/README.md` if you are working on thunderstorms, lightning safety, outdoor activity interruption, shelter timing, sports/event operations, or electrical storm exposure.
 722. Read `../domains/coastal-flooding-erosion-inundation-continuity/README.md` if you are working on coastal flooding, high-tide flooding, erosion, inundation, road access, property exposure, or coastal service continuity.
+723. Read `../domains/child-care-availability-affordability-continuity/README.md` if you are working on child care slots, cost, hours, distance, waitlists, age coverage, or affordability.
+724. Read `../domains/child-care-licensing-health-safety-continuity/README.md` if you are working on child care licensing, inspections, health and safety standards, ratios, background checks, or incident transparency.
+725. Read `../domains/child-care-subsidy-ccdf-payment-continuity/README.md` if you are working on CCDF, child care subsidies, eligibility, authorization, redetermination, copayments, provider payments, or administrative burden.
+726. Read `../domains/head-start-early-head-start-family-support-continuity/README.md` if you are working on Head Start, Early Head Start, early learning, health, nutrition, family engagement, or family support services.
+727. Read `../domains/early-intervention-idea-part-c-developmental-services-continuity/README.md` if you are working on IDEA Part C, early intervention, developmental referrals, IFSP, service coordination, or transition.
+728. Read `../domains/out-of-school-time-afterschool-summer-learning-continuity/README.md` if you are working on afterschool programs, out-of-school time, summer learning, supervision, meals, transportation, or caregiver schedule continuity.
 684. Enter a domain under `../domains/`.

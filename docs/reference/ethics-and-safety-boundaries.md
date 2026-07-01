@@ -278,6 +278,24 @@ Human Infra 不能被设计成更精密的压榨系统。
 - 提供囤积恐慌、黑市采购、非法获取、虚假材料、身份冒用、福利欺诈、保险欺诈、制度规避或套利方法。
 - 把食物、水、能源、福利、保险和托育的结构性缺口改写成个人努力、道德判断或单一消费选择问题。
 
+## 早期儿童照护与发展服务执行连续性边界
+
+`child-care-availability-affordability-continuity`、`child-care-licensing-health-safety-continuity`、`child-care-subsidy-ccdf-payment-continuity`、`head-start-early-head-start-family-support-continuity`、`early-intervention-idea-part-c-developmental-services-continuity` 和 `out-of-school-time-afterschool-summer-learning-continuity` 关注托育供给费用、许可健康安全、补贴支付、综合早期服务、早期干预和课外/暑期学习照护如何支撑儿童发展、照护者有效时间和家庭连续性，不是个体托育、医疗、教育、法律或家庭服务建议。
+
+可以做：
+
+- 整理 ACF OCC、CCDF、ChildCare.gov、Head Start、HSPPS、IDEA Part C、21st CCLC、CDC Child Development、Census child care 和 NSECE 等公开来源。
+- 建模名额、费用、时段、距离、许可、检查、补贴、支付、早期学习、家庭支持、发育转介、IFSP、课外监督和暑期学习如何影响儿童发展、父母工作、家庭现金流、有效时间和未来选择权。
+- 区分供给可得性、监管安全、支付连续性、综合服务、早期干预、学校日历外照护、儿童隐私和家庭资源之间的变量关系。
+
+不能做：
+
+- 提供托育机构推荐、价格判断、排队策略、补贴资格判断、申请材料准备、申诉、项目报名、Head Start 录取策略、IFSP/IEP 策略、学校安置、课外班/夏令营推荐、接送路线、法律、医疗、教育或家庭个案建议。
+- 提供儿童诊断、发育评估解释、治疗计划、训练动作、心理/行为建议、儿童安全处置、事故责任判断、机构合规认证或项目质量背书。
+- 收集、复制、处理或要求儿童身份、儿童照片、儿童位置、成绩、出勤、发育记录、IFSP、IEP、医疗记录、教育记录、家庭收入、补贴材料、税务记录、雇佣证明、托育申请、候补名单、家庭排班、交通资料、机构投诉或监控影像。
+- 替代 ACF/OCC、ChildCare.gov、Head Start 项目、IDEA Part C lead agency、学校、医疗、儿童保护、紧急服务、法律、福利或家庭法院渠道。
+- 把托育供给、费用、安全、补贴、早期发展和课外照护缺口归因于家庭不努力、父母不负责、儿童差异、消费选择或个人时间管理失败。
+
 ## 制度参与、人道连续性与公共安全域边界
 
 `access-to-justice-legal-aid`、`civic-participation-election-access`、`migration-displacement-humanitarian-continuity`、`digital-inclusion-connectivity`、`personal-safety-violence-prevention` 和 `product-safety-recall-systems` 关注法律救济、公共决策参与、迁移与人道服务、数字连接、人身安全和产品召回如何支撑主体持续性，不是法律、选举、移民、安全处置、数字绕过或产品处置操作指南。
