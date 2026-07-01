@@ -751,6 +751,12 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | Long COVID 会把感染后状态变成长期多系统负担 | `long-covid-post-acute-infection-continuity/` | Long COVID、感染后症状、疲劳脑雾、呼吸、自主调节、服务连续性 | 感染后长期状态会通过能量、认知、呼吸、自主调节和服务碎片压缩未来选择权 |
 | 移动过程可避免严重伤害 | `road-traffic-injury-prevention-safe-mobility/` | 道路安全系统、速度管理、车辆安全、执法公平、交通伤害监测 | 出行过程制造死亡、严重伤害、长期失能、家庭收入中断和照护负担 |
 | 地理距离不能排除主体 | `rural-health-access-geographic-equity/` | 农村服务密度、距离、交通、宽带、卫生人力、药房/医院可达 | 可修复风险因地点、距离、宽带、人力和设施稀缺被延误或放弃 |
+| 部落服务必须尊重主权和文化安全 | `tribal-health-sovereignty-service-access-continuity/` | 部落卫生系统、IHS、转诊、数据主权、文化安全、公共卫生责任 | 服务责任边界和文化安全失效会把健康可及、信任、数据和公共卫生协作同时切断 |
+| 军转民不能切断健康和福利导航 | `veterans-health-benefits-navigation-continuity/` | VA health care、benefits、service records、住房、就业、家庭支持、社区照护 | 退役身份转换失败会让服役风险转化为医疗、收入、住房、记录和家庭支持断裂 |
+| 季节性农业劳动必须保留健康住房服务入口 | `migrant-seasonal-farmworker-health-housing-continuity/` | 农业工人、职业暴露、临时住房、交通、语言、劳动权利、migrant health | 工作、住房、交通和身份风险绑定时，随访、药品、工资、家庭和恢复路径会反复断线 |
+| 岛屿和属地必须有离岸健康基础设施韧性 | `territorial-island-health-infrastructure-access-continuity/` | U.S. territories、岛屿医疗、转诊、供应链、能源水宽带、灾害、Medicaid/CHIP | 地理隔离、供应链和财政规则会把普通医疗缺口放大成系统性恢复失败 |
+| 边境生活必须跨制度保持照护连续 | `border-community-cross-border-care-continuity/` | 边境社区、跨境家庭、公共卫生、医疗随访、记录、语言、交通、身份边界 | 家庭、工作和医疗横跨制度边界时，记录不互认、交通延迟和公共卫生断点会压缩行动空间 |
+| 身份承认必须让服务入口安全可用 | `lgbtq-health-identity-affirming-service-continuity/` | LGBTQ 健康、身份承认、反歧视、隐私、家庭社区支持、肯定性服务 | 身份不承认、歧视、隐私暴露和服务回避会持续消耗恢复能力、关系支持和未来选择权 |
 | 住所缺失时服务不能断线 | `homelessness-unsheltered-health-continuity/` | 庇护、外展、卫生、睡眠、安全、身份、住房服务、医疗连续性 | 露宿、卫生缺失、暴露、创伤、慢病失控和服务断点把主体推出恢复路径 |
 | 制度转换不能切断健康连续性 | `correctional-health-reentry-continuity/` | 羁押健康、释放转介、药物、慢病、心理、感染、身份、住房、福利 | 释放后药物中断、过量死亡、复发、无家可归、感染失访和社会连接断裂 |
 | 功能状态变化后仍能自主生活 | `disability-services-independent-living/` | HCBS、独立生活、个人协助、合理便利、辅助技术、无障碍、社区融合 | 机构化、照护中断、孤立、公共服务排除和主体自主性下降 |
@@ -1592,6 +1598,12 @@ risk-engineering
   -> long-covid-post-acute-infection-continuity
   -> road-traffic-injury-prevention-safe-mobility
   -> rural-health-access-geographic-equity
+  -> tribal-health-sovereignty-service-access-continuity
+  -> veterans-health-benefits-navigation-continuity
+  -> migrant-seasonal-farmworker-health-housing-continuity
+  -> territorial-island-health-infrastructure-access-continuity
+  -> border-community-cross-border-care-continuity
+  -> lgbtq-health-identity-affirming-service-continuity
   -> homelessness-unsheltered-health-continuity
   -> correctional-health-reentry-continuity
   -> disability-services-independent-living

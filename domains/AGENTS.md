@@ -1959,6 +1959,24 @@ domains/
 ├── rural-health-access-geographic-equity/
 │   ├── AGENTS.md
 │   └── README.md
+├── tribal-health-sovereignty-service-access-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── veterans-health-benefits-navigation-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── migrant-seasonal-farmworker-health-housing-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── territorial-island-health-infrastructure-access-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── border-community-cross-border-care-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── lgbtq-health-identity-affirming-service-continuity/
+│   ├── AGENTS.md
+│   └── README.md
 ├── homelessness-unsheltered-health-continuity/
 │   ├── AGENTS.md
 │   └── README.md
@@ -2467,6 +2485,7 @@ domains/
 - `air-quality-ventilation-exposure-control/`、`food-safety-contamination-control/`、`occupational-exposure-industrial-hygiene/`、`medical-device-equipment-safety-maintenance/`、`sterilization-disinfection-infection-control/` 和 `built-environment-accessibility-universal-design/` 负责可呼吸环境、食物污染控制、工作暴露控制、医疗设备可靠性、感染控制屏障和物理空间可达性这些日常环境与工具可靠性条件。
 - `clinical-laboratory-diagnostic-quality/`、`pharmacovigilance-drug-safety-monitoring/`、`pharmaceutical-quality-supply-integrity/`、`emergency-medical-services-prehospital-care/`、`surgical-anesthesia-perioperative-safety/` 和 `road-traffic-injury-prevention-safe-mobility/` 负责临床检验质量、真实世界药品安全、药品质量完整性、院前急救窗口、围手术期安全和道路交通伤害预防这些临床可靠性与急性风险窗口条件。
 - `rural-health-access-geographic-equity/`、`homelessness-unsheltered-health-continuity/`、`correctional-health-reentry-continuity/`、`disability-services-independent-living/`、`dementia-cognitive-decline-care-continuity/` 和 `chronic-infectious-disease-care-continuity/` 负责农村地理可及、无家可归健康连续性、羁押重返服务连续性、残障独立生活、认知衰退照护和慢性传染病长期照护这些结构性脆弱与连续照护断点。
+- `tribal-health-sovereignty-service-access-continuity/`、`veterans-health-benefits-navigation-continuity/`、`migrant-seasonal-farmworker-health-housing-continuity/`、`territorial-island-health-infrastructure-access-continuity/`、`border-community-cross-border-care-continuity/` 和 `lgbtq-health-identity-affirming-service-continuity/` 负责部落主权健康、退伍军人导航、农业工人迁移劳动住房、属地岛屿基础设施、边境跨境照护和 LGBTQ 身份承认这些人口与地域可达性连续性条件。
 - `suicide-crisis-response-continuity/`、`substance-use-treatment-recovery-continuity/`、`elder-justice-adult-protective-services/`、`child-protection-family-safety/`、`fraud-scams-consumer-protection/` 和 `online-safety-digital-harm-prevention/` 负责自杀危机响应、物质使用障碍治疗恢复、老年正义成人保护、儿童保护家庭安全、诈骗消费者保护和在线数字伤害预防这些危机、剥削与恢复连续性条件。
 - `rare-disease-diagnostic-odyssey-care-coordination/`、`multimorbidity-polypharmacy-care-coordination/`、`care-transitions-discharge-continuity/`、`home-health-hospice-palliative-care-continuity/`、`medical-interpreter-cultural-mediation/` 和 `patient-advocacy-shared-decision-making/` 负责罕见病诊断漫游、多病共存多重用药、照护转移、居家/缓和/安宁疗护、医疗解释文化中介和患者共同决策这些复杂照护导航、交接与决策连续性条件。
 - `life-logging-personal-archives-continuity/`、`digital-legacy-data-succession/`、`wearables-continuous-sensing-personal-informatics/`、`personal-knowledge-management-cognitive-offloading/`、`brain-computer-interface-neurotechnology-governance/` 和 `robotics-embodied-assistance-care-automation/` 负责生命日志个人档案、数字遗产继承、连续感知、个人知识管理、神经接口治理和具身辅助这些外部化主体连续性条件。
@@ -2551,6 +2570,7 @@ domains/
 - `income-payroll-employment-record-continuity/`、`tax-administration-filing-record-continuity/`、`social-security-earnings-benefit-record-continuity/`、`retirement-pension-savings-plan-continuity/`、`unemployment-insurance-wage-record-continuity/` 和 `workers-compensation-occupational-injury-benefit-continuity/` 负责权益记录连续性的证据边界，不提供工资索赔、税务申报、福利申请、退休规划、投资、失业保险申领、工伤索赔、医疗诊断、法律、财务、移民、保险、记录伪造或个人案件建议。
 - `family-medical-leave-job-protection-continuity/`、`paid-sick-family-leave-wage-replacement-continuity/`、`pregnancy-parental-work-continuity/`、`workplace-accommodation-return-to-work-continuity/`、`disability-income-work-capacity-benefit-continuity/` 和 `family-caregiver-respite-work-continuity/` 负责工作中断与照护事件连续性的证据边界，不提供个人请假、带薪假、孕产育儿、合理便利、残障福利、照护服务、医疗、法律、HR、税务、保险、福利申请、申诉或雇主合规建议。
 - `adult-day-services-supervision-transport-continuity/`、`home-care-aide-personal-care-workforce-continuity/`、`respite-care-provider-capacity-scheduling-continuity/`、`caregiver-training-skills-safety-continuity/`、`caregiver-health-burnout-screening-support-continuity/` 和 `home-care-task-coordination-care-plan-continuity/` 负责长期照护执行连续性的证据边界，不提供成人日间服务推荐、居家照护雇佣、排班安排、照护培训替代、医疗护理操作、心理诊断、危机干预、福利资格、照护计划制定、家庭纠纷调解、法律、保险或个案建议。
+- `tribal-health-sovereignty-service-access-continuity/`、`veterans-health-benefits-navigation-continuity/`、`migrant-seasonal-farmworker-health-housing-continuity/`、`territorial-island-health-infrastructure-access-continuity/`、`border-community-cross-border-care-continuity/` 和 `lgbtq-health-identity-affirming-service-continuity/` 负责人口与地域可达性连续性的证据边界，不提供个体医疗、福利申请、身份判断、移民/边境、跨境就医、劳动纠纷、危机干预、法律、政治或个案建议，也不做群体定位、身份推断、监控画像或歧视性筛选。
 - `vital-records-life-event-continuity/`、`name-change-identity-record-synchronization-continuity/`、`address-residency-mail-service-continuity/`、`household-composition-dependent-eligibility-continuity/`、`family-law-custody-child-support-continuity/` 和 `kinship-foster-adoption-care-continuity/` 负责家庭事实与制度记录连续性的证据边界，不提供个人证件办理、改名、地址变更、税务/福利 household 判断、监护权、子女抚养、寄养、收养、法律、移民、福利、保险、学校、法院或个案策略建议。
 - `child-care-availability-affordability-continuity/`、`child-care-licensing-health-safety-continuity/`、`child-care-subsidy-ccdf-payment-continuity/`、`head-start-early-head-start-family-support-continuity/`、`early-intervention-idea-part-c-developmental-services-continuity/` 和 `out-of-school-time-afterschool-summer-learning-continuity/` 负责早期儿童照护执行连续性的证据边界，不提供托育机构推荐、补贴申请、儿童诊断、治疗计划、IFSP/IEP 策略、学校安置、接送路线、项目报名、法律、医疗、教育或家庭个案建议。
 - `banking-deposit-account-access-continuity/`、`debt-obligation-collection-relief-continuity/`、`real-property-title-deed-record-continuity/`、`driver-license-vehicle-registration-continuity/`、`passport-travel-document-mobility-continuity/`、`contract-subscription-billing-consent-continuity/` 和 `notary-document-authentication-signature-continuity/` 负责资源控制、移动资格与交易执行连续性的证据边界，不提供个人银行、债务、破产、房产、车辆、驾驶、护照、签证、移民、订阅取消、合同审查、公证、apostille、电子签名、法律、金融或个案策略建议。

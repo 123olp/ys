@@ -222,6 +222,12 @@
 - `surgical-anesthesia-perioperative-safety/`：手术、麻醉与围手术期安全，整理手术安全、麻醉安全、团队检查、并发症预防和围手术期质量。
 - `road-traffic-injury-prevention-safe-mobility/`：道路交通伤害预防与安全移动，整理安全系统、速度管理、车辆安全、交通伤害监测和安全移动。
 - `rural-health-access-geographic-equity/`：农村健康可及与地理公平，整理地理距离、服务密度、宽带、交通、卫生人力和农村服务连续性。
+- `tribal-health-sovereignty-service-access-continuity/`：部落健康、主权与服务可达连续性，整理部落卫生系统、IHS、转诊、数据主权、文化安全和公共卫生责任边界。
+- `veterans-health-benefits-navigation-continuity/`：退伍军人健康、福利与导航连续性，整理 VA health care、benefits、service records、军转民、住房、就业和家庭支持。
+- `migrant-seasonal-farmworker-health-housing-continuity/`：迁徙与季节性农业工人健康住房连续性，整理农业职业暴露、季节性迁移、临时住房、交通、语言和服务可达。
+- `territorial-island-health-infrastructure-access-continuity/`：属地岛屿健康基础设施可达连续性，整理 U.S. territories、岛屿医疗、药品供应、转诊、能源水宽带和灾害恢复。
+- `border-community-cross-border-care-continuity/`：边境社区与跨境照护连续性，整理边境公共卫生、跨境家庭、医疗随访、记录、语言、交通和身份边界。
+- `lgbtq-health-identity-affirming-service-continuity/`：LGBTQ 健康、身份承认与肯定性服务连续性，整理健康、民权、身份承认、隐私、家庭社区支持和服务可达。
 - `homelessness-unsheltered-health-continuity/`：无家可归、露宿状态与健康连续性，整理庇护、住房服务、卫生、安全、身份、外展和照护断点。
 - `correctional-health-reentry-continuity/`：羁押健康与重返社会连续性，整理羁押内健康、释放转介、药物、身份、住房、福利和社区重返。
 - `disability-services-independent-living/`：残障服务与独立生活，整理独立生活、HCBS、个人协助、合理便利、辅助技术和社区融合。

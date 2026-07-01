@@ -447,6 +447,12 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `long-covid-post-acute-infection-continuity/` | Long COVID 感染后长期连续性决定感染后疲劳脑雾、多系统症状和服务碎片是否持续压缩未来选择权 |
 | `road-traffic-injury-prevention-safe-mobility/` | 道路交通伤害预防和安全移动决定出行是否持续制造死亡、严重伤害和长期失能 |
 | `rural-health-access-geographic-equity/` | 农村地理距离、服务密度、宽带、交通和卫生人力决定可修复风险是否因地点被延误或放弃 |
+| `tribal-health-sovereignty-service-access-continuity/` | 部落健康、主权治理、文化安全、转诊和数据主权决定服务系统是否能被社区信任、承认和持续使用 |
+| `veterans-health-benefits-navigation-continuity/` | 退伍军人健康与福利导航决定军转民后医疗、记录、住房、就业、家庭和社区照护是否连续 |
+| `migrant-seasonal-farmworker-health-housing-continuity/` | 迁徙季节性农业工人健康住房连续性决定劳动、临时住房、交通、语言和服务可达是否会切断随访与恢复 |
+| `territorial-island-health-infrastructure-access-continuity/` | 属地岛屿健康基础设施决定离岸医疗、药品供应、转诊、能源水宽带和灾害恢复是否可持续 |
+| `border-community-cross-border-care-continuity/` | 边境社区和跨境照护决定家庭、工作、医疗、公共卫生、记录和身份边界能否被连续衔接 |
+| `lgbtq-health-identity-affirming-service-continuity/` | LGBTQ 健康和身份承认服务决定身份不承认、歧视、隐私风险和服务回避是否持续压缩主体未来选择权 |
 | `homelessness-unsheltered-health-continuity/` | 无家可归和露宿状态决定睡眠、卫生、身份、安全、医疗和福利入口是否会同时断线 |
 | `correctional-health-reentry-continuity/` | 羁押和释放制度转换决定药物、慢病、心理、感染、身份、住房和社会连接是否连续 |
 | `disability-services-independent-living/` | 残障服务、独立生活、HCBS、合理便利和辅助技术决定能力变化后主体是否仍能自主参与 |
@@ -1333,6 +1339,12 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | USPSTF Preventive Services / CDC Chronic Disease / KDIGO CKD / NCI Screening / CDC STEADI | 提示预防筛查与风险因子控制是急症和失能之前的独立上游执行层 |
 | WHO Road Traffic Injuries / NHTSA / FHWA Safe System Approach | 提示道路交通伤害预防、安全系统和速度管理是交通可达之外的安全移动域 |
 | HRSA Rural Health / CDC Rural Health | 提示农村地理距离、服务密度、医院药房可达、宽带和卫生人力是医疗可及之外的地理公平域 |
+| IHS / CDC Tribal Health / HRSA health centers | 提示部落健康、IHS、转诊、文化安全、数据主权和服务责任边界需要独立建模 |
+| VA health care and benefits / DOL veterans employment | 提示退伍军人健康、福利、记录、住房、就业和家庭支持是军转民制度转换域 |
+| HRSA migrant health / DOL MSPA / CDC NIOSH agriculture | 提示迁徙与季节性农业工人的劳动、住房、交通、语言和职业暴露是服务可达之外的执行域 |
+| Medicaid.gov territories / HRSA / ASPR / CDC island and disaster resources | 提示属地岛屿健康基础设施、供应链、转诊、财政规则和灾害恢复需要独立域 |
+| CDC U.S.-Mexico health / HHS border health materials | 提示边境社区和跨境公共卫生把家庭、工作、医疗、记录和交通放在跨制度边界中 |
+| CDC LGBT Health / HHS Section 1557 / SAMHSA LGBTQI+ | 提示 LGBTQ 健康、身份承认、反歧视、隐私和肯定性服务可达需要独立边界 |
 | USICH / HUD Homelessness / CDC Homelessness | 提示无家可归、露宿、庇护、外展、卫生、安全和住房服务连续性是住房稳定之外的独立断点 |
 | WHO Prison Health / CDC Correctional Health | 提示羁押健康、释放转介、药物连续性、感染、心理健康和重返社会服务需要独立制度转换域 |
 | ACL Centers for Independent Living / CMS HCBS / WHO Disability | 提示残障服务、独立生活、社区支持、个人协助和无障碍不仅是辅助技术或建成环境问题 |
@@ -2037,6 +2049,16 @@ Source links:
 - https://highways.dot.gov/safety/zero-deaths/safe-system-approach
 - https://www.hrsa.gov/rural-health
 - https://www.cdc.gov/rural-health/
+- https://www.ihs.gov/
+- https://www.va.gov/health-care/
+- https://www.va.gov/
+- https://bphc.hrsa.gov/
+- https://www.dol.gov/agencies/whd/agriculture/mspa
+- https://www.cdc.gov/us-mexico-health/
+- https://www.medicaid.gov/medicaid/financial-management/medicaid-and-chip-programs-us-territories/index.html
+- https://www.hhs.gov/civil-rights/for-individuals/section-1557/index.html
+- https://www.cdc.gov/lgbthealth/
+- https://www.samhsa.gov/behavioral-health-equity/lgbtqi
 - https://www.usich.gov/
 - https://www.hud.gov/program_offices/comm_planning/homeless
 - https://www.who.int/europe/health-topics/prisons-and-health

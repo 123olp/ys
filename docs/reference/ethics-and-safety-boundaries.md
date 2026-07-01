@@ -1468,6 +1468,25 @@ Human Infra 不能被设计成更精密的压榨系统。
 - 不帮助规避照护监管、隐瞒风险、替代专业评估、压低照护劳动价值、操控受照护者意愿、越权访问健康资料或把高风险照护任务转嫁给未训练照护者。
 - 不替代医生、护士、社工、照护机构、家庭照护顾问、心理健康专业人员、Medicaid / ACL / AAA / CMS / 州级 LTSS 机构、保险人、律师、雇主或紧急服务。
 
+## 人口与地域可达性连续性边界
+
+`tribal-health-sovereignty-service-access-continuity`、`veterans-health-benefits-navigation-continuity`、`migrant-seasonal-farmworker-health-housing-continuity`、`territorial-island-health-infrastructure-access-continuity`、`border-community-cross-border-care-continuity` 和 `lgbtq-health-identity-affirming-service-continuity` 关注部落主权、军转民、季节性农业劳动、岛屿属地、边境跨制度生活和身份承认如何影响服务可达、健康连续性、家庭支持、记录和未来选择权，不是个体医疗、福利申请、身份判断、边境/移民、跨境就医、劳动纠纷、政治动员或法律建议入口。
+
+可以做：
+
+- 整理 IHS、VA、HRSA、DOL、CDC、HHS OCR / Section 1557、Medicaid.gov、ASPR、SAMHSA 和公开公共卫生资料中的机制、对象、变量、服务断点和边界。
+- 比较主权治理、军转民制度转换、季节性迁移、岛屿供应链、边境跨制度生活和身份承认/反歧视接口如何分别影响主体持续性。
+- 记录服务责任、文化安全、数据主权、记录导航、临时住房、交通依赖、公共卫生协作、隐私风险、歧视风险和禁止用途，服务后续建模而不是输出个案方案。
+
+不能做：
+
+- 不提供个体医疗、福利、VA claims、appeals、移民、签证、入境、跨境就医、药品携带、劳动纠纷、工资追索、住房、身份文件、学校、职场、家庭冲突、政治或法律建议。
+- 不判断某人是否属于某部落、是否有 VA 福利资格、是否有移民/劳动/住房/身份文件权益、是否需要某类医疗或心理服务、是否适合跨境或离岛转诊。
+- 不生成申请材料、申诉策略、医疗转诊、跨境路线、执法规避、劳动举报、身份证明、危机处置、家庭冲突处理、政治动员或群体宣传材料。
+- 不做性取向、性别认同、部落身份、退伍军人状态、移民状态、劳动状态、健康状态、住房状态、地理位置或家庭关系推断。
+- 不支持群体定位、监控画像、风险评分、歧视性筛选、商业定向获客、污名化叙事、outing、监管规避、边境路线建议或弱势群体剥削。
+- 不替代 IHS、VA、HRSA health centers、DOL、HHS OCR、CDC、SAMHSA、Medicaid/CHIP、部落政府、公共卫生机构、律师、医生、社工、危机服务或官方服务入口。
+
 ## 生命事件、家庭关系与制度记录连续性边界
 
 `vital-records-life-event-continuity`、`name-change-identity-record-synchronization-continuity`、`address-residency-mail-service-continuity`、`household-composition-dependent-eligibility-continuity`、`family-law-custody-child-support-continuity` 和 `kinship-foster-adoption-care-continuity` 关注生命事件、姓名、地址、家庭组成、监护抚养和儿童安置如何影响身份、服务、通知、资格、安全和照护连续性，不是个人证件、改名、迁址、税务/福利 household、家庭法院、子女抚养、寄养、收养或儿童福利案件入口。

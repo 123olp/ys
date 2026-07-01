@@ -596,6 +596,12 @@ human_infra/
     ├── surgical-anesthesia-perioperative-safety/ # 手术、麻醉与围手术期安全
     ├── road-traffic-injury-prevention-safe-mobility/ # 道路交通伤害预防与安全移动
     ├── rural-health-access-geographic-equity/ # 农村健康可及与地理公平
+    ├── tribal-health-sovereignty-service-access-continuity/ # 部落健康、主权与服务可达连续性
+    ├── veterans-health-benefits-navigation-continuity/ # 退伍军人健康、福利与导航连续性
+    ├── migrant-seasonal-farmworker-health-housing-continuity/ # 迁徙与季节性农业工人健康住房连续性
+    ├── territorial-island-health-infrastructure-access-continuity/ # 属地岛屿健康基础设施可达连续性
+    ├── border-community-cross-border-care-continuity/ # 边境社区与跨境照护连续性
+    ├── lgbtq-health-identity-affirming-service-continuity/ # LGBTQ 健康、身份承认与肯定性服务连续性
     ├── homelessness-unsheltered-health-continuity/ # 无家可归与露宿健康连续性
     ├── correctional-health-reentry-continuity/ # 羁押健康与重返社会连续性
     ├── disability-services-independent-living/ # 残障服务与独立生活
@@ -943,6 +949,7 @@ human_infra/
 - `domains/surgical-anesthesia-perioperative-safety/` 负责手术安全、麻醉安全、团队检查、围手术期并发症预防和质量改进。
 - `domains/road-traffic-injury-prevention-safe-mobility/` 负责道路交通伤害、安全系统、速度管理、车辆安全、交通数据和安全移动。
 - `domains/rural-health-access-geographic-equity/` 负责农村地理距离、服务密度、宽带、交通、卫生人力和农村健康公平。
+- `domains/tribal-health-sovereignty-service-access-continuity/`、`domains/veterans-health-benefits-navigation-continuity/`、`domains/migrant-seasonal-farmworker-health-housing-continuity/`、`domains/territorial-island-health-infrastructure-access-continuity/`、`domains/border-community-cross-border-care-continuity/` 和 `domains/lgbtq-health-identity-affirming-service-continuity/` 负责部落主权健康、退伍军人军转民导航、农业工人迁移劳动住房、属地岛屿健康基础设施、边境跨境照护和 LGBTQ 身份承认服务这些人口与地域可达性连续性条件。
 - `domains/homelessness-unsheltered-health-continuity/` 负责无家可归、露宿、庇护、外展、住房服务、卫生、安全和照护断点。
 - `domains/correctional-health-reentry-continuity/` 负责羁押内健康、释放转介、药物连续性、身份、住房、福利和重返社会服务。
 - `domains/disability-services-independent-living/` 负责独立生活、HCBS、个人协助、合理便利、辅助技术、无障碍和社区融合。
@@ -1172,6 +1179,7 @@ human_infra/
 - 2026-06-27：新增 `tools/arxiv_html_paper_tool.py` 与 `tools/arxiv-html-paper/`，把 arXiv HTML papers 前端框架沉淀为可复用 Astro 工具链。
 - 2026-06-29：新增可控度规等待室假设 working paper 入口和审计账本，把黑洞等待室收敛为固有时差分、退出采用、风险扣减和递归等待的可审查模型。
 - 2026-07-01：新增第 115 波长期照护执行连续性域，覆盖成人日间服务、居家照护人员、喘息容量、照护者训练、照护者健康和居家照护任务协调。
+- 2026-07-01：新增第 116 波人口与地域可达性连续性域，覆盖部落健康主权服务、退伍军人福利导航、迁徙季节性农业工人健康住房、属地岛屿健康基础设施、边境跨境照护和 LGBTQ 身份承认服务。
 - 2026-06-30：新增第四十一波 6 个收入、税务、社保、退休、失业和工伤权益记录连续性域，覆盖工资雇佣记录、税务申报记录、社会保险收入与福利记录、退休养老金计划、失业保险工资记录和工伤职业伤害权益。
 - 2026-06-30：新增第四十波 6 个资格证明、证照与能力可携带连续性域，覆盖教育记录核验、职业证照认证、技能胜任力凭证、继续教育再认证、学徒制工作中学习和可验证凭证钱包互操作。
 - 2026-06-30：新增第三十九波 6 个算法化准入、筛查与资格连续性域，覆盖信用与消费者报告、租房筛查、背景记录筛查、算法招聘、保险算法评分和公共福利自动资格系统。

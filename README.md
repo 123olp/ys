@@ -445,6 +445,12 @@ flowchart TD
     H --> SAPS[surgical-anesthesia-perioperative-safety<br/>手术麻醉 / 围手术期安全]
     H --> RTIPSM[road-traffic-injury-prevention-safe-mobility<br/>道路交通伤害预防 / 安全移动]
     H --> RHAGE[rural-health-access-geographic-equity<br/>农村健康可及 / 地理公平]
+    H --> THSSAC[tribal-health-sovereignty-service-access-continuity<br/>部落健康 / 主权服务]
+    H --> VHBNC[veterans-health-benefits-navigation-continuity<br/>退伍军人 / 福利导航]
+    H --> MSFHH[migrant-seasonal-farmworker-health-housing-continuity<br/>农业工人 / 健康住房]
+    H --> TIHIAC[territorial-island-health-infrastructure-access-continuity<br/>属地岛屿 / 健康基础设施]
+    H --> BCCBCC[border-community-cross-border-care-continuity<br/>边境社区 / 跨境照护]
+    H --> LGBTQHIA[lgbtq-health-identity-affirming-service-continuity<br/>LGBTQ 健康 / 身份承认]
     H --> HUHC[homelessness-unsheltered-health-continuity<br/>无家可归 / 健康连续性]
     H --> CHRC[correctional-health-reentry-continuity<br/>羁押健康 / 重返连续性]
     H --> DSIL[disability-services-independent-living<br/>残障服务 / 独立生活]
@@ -1784,6 +1790,12 @@ flowchart TD
 | [Long COVID Post-Acute Infection Continuity](domains/long-covid-post-acute-infection-continuity/README.md) | Long COVID、感染后长期症状、多系统负担、疲劳脑雾和服务连续性 | 把感染后长期状态纳入能量、认知、呼吸、自主调节和服务导航模型 | 不提供诊断、检测解释、药物、康复、运动、氧疗、工作证明或预后建议 |
 | [Road Traffic Injury Prevention Safe Mobility](domains/road-traffic-injury-prevention-safe-mobility/README.md) | 道路交通伤害、安全系统、速度管理、车辆安全、交通数据和安全移动 | 让出行从可达性进一步成为不制造死亡和失能的行动基础设施 | 不提供驾驶、路线、事故责任、保险、法律、车辆改装、危险驾驶、规避执法或急救建议 |
 | [Rural Health Access Geographic Equity](domains/rural-health-access-geographic-equity/README.md) | 地理距离、服务密度、宽带、交通、卫生人力和农村健康公平 | 防止可修复风险因为地点、交通、宽带和服务稀缺被延误或放弃 | 不提供个体医疗、保险、转诊、迁居、急救路线、补助申请、政策游说或商业选址建议 |
+| [Tribal Health Sovereignty Service Access Continuity](domains/tribal-health-sovereignty-service-access-continuity/README.md) | 部落卫生系统、主权治理、转诊、数据主权、文化安全、地理可达和公共卫生 | 把服务责任边界、文化安全和主权治理纳入主体持续性服务接口 | 不提供个体医疗、福利、法律、部落身份、服务资格、土地、司法辖区或政治策略建议 |
+| [Veterans Health Benefits Navigation Continuity](domains/veterans-health-benefits-navigation-continuity/README.md) | VA health care、福利导航、军转民、记录、住房、就业、家庭支持和创伤服务 | 防止军转民过程切断医疗、福利、记录、住房、就业和家庭支持 | 不提供福利申请、claims、appeals、医疗、心理危机、住房、就业、法律或军事记录建议 |
+| [Migrant Seasonal Farmworker Health Housing Continuity](domains/migrant-seasonal-farmworker-health-housing-continuity/README.md) | 农业工人、迁移、季节性劳动、住房、交通、语言、职业暴露和服务可达 | 把季节性劳动、临时住房和服务入口绑定关系纳入健康与行动连续性模型 | 不提供医疗、移民、劳动纠纷、举报、工资、住房、交通、法律或现场处置建议 |
+| [Territorial Island Health Infrastructure Access Continuity](domains/territorial-island-health-infrastructure-access-continuity/README.md) | U.S. territories、岛屿医疗、药品供应、转诊、能源水宽带、灾害和 Medicaid/CHIP | 把离岸地理、供应链、财政规则和灾害恢复纳入健康基础设施连续性 | 不提供医疗、保险、转诊、旅行、移居、撤离、救灾、物流、政治地位或法律建议 |
+| [Border Community Cross Border Care Continuity](domains/border-community-cross-border-care-continuity/README.md) | 边境社区、跨境家庭、公共卫生、医疗随访、记录、语言、交通和身份边界 | 防止制度边界把家庭、工作、医疗和公共卫生生活拆成无法互认的片段 | 不提供移民、签证、入境、海关、旅行、跨境就医、药品、路线、执法规避或法律建议 |
+| [LGBTQ Health Identity Affirming Service Continuity](domains/lgbtq-health-identity-affirming-service-continuity/README.md) | LGBTQ 健康、身份承认、民权、隐私、家庭社区支持和肯定性服务可达 | 把身份不承认、歧视、服务回避和隐私风险作为基础设施失效建模 | 不提供医疗、心理、性健康、转诊、身份文件、法律、学校、职场、家庭冲突或危机建议 |
 | [Homelessness Unsheltered Health Continuity](domains/homelessness-unsheltered-health-continuity/README.md) | 无家可归、露宿、庇护、外展、住房服务、卫生、安全和照护断点 | 让没有稳定住所的主体仍能维持医疗、卫生、身份、睡眠、安全和福利入口 | 不提供个体庇护、住房申请、法律救济、福利申请、露宿规避、执法规避或生存技巧 |
 | [Correctional Health Reentry Continuity](domains/correctional-health-reentry-continuity/README.md) | 羁押内健康、释放转介、药物连续性、身份、住房、福利和重返社会 | 防止羁押和释放制度转换把健康、身份、服务和社会连接一次性切断 | 不提供法律策略、监管规避、设施安全弱点、违禁品、个体医疗、假释/缓刑或释放计划建议 |
 | [Disability Services Independent Living](domains/disability-services-independent-living/README.md) | 独立生活、HCBS、个人协助、合理便利、辅助技术、无障碍和社区融合 | 让能力状态变化后的主体仍能自主行动、沟通、移动、使用服务和参与社会 | 不提供福利申请、资格判断、法律投诉、医疗诊断、护理计划、辅助设备处方或家庭个案建议 |
@@ -2168,6 +2180,12 @@ human_infra/
 │   ├── surgical-anesthesia-perioperative-safety/
 │   ├── road-traffic-injury-prevention-safe-mobility/
 │   ├── rural-health-access-geographic-equity/
+│   ├── tribal-health-sovereignty-service-access-continuity/
+│   ├── veterans-health-benefits-navigation-continuity/
+│   ├── migrant-seasonal-farmworker-health-housing-continuity/
+│   ├── territorial-island-health-infrastructure-access-continuity/
+│   ├── border-community-cross-border-care-continuity/
+│   ├── lgbtq-health-identity-affirming-service-continuity/
 │   ├── homelessness-unsheltered-health-continuity/
 │   ├── correctional-health-reentry-continuity/
 │   ├── disability-services-independent-living/
