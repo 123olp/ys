@@ -612,6 +612,16 @@
 - `perimenopause-menopause-midlife-health-continuity/`：围绝经期、更年期与中年健康连续性，整理症状、睡眠、情绪、骨骼、心血管、泌尿生殖和工作参与。
 - `pelvic-floor-continence-function-continuity/`：盆底、控尿控便与功能连续性，整理尿失禁、便失禁、脱垂、康复可及、用品和社会参与。
 - `skin-cancer-uv-protection-early-detection-continuity/`：皮肤癌、UV 防护与早期识别连续性，整理 UV 暴露、日晒防护、早识别、转诊和户外职业环境。
+- `chronic-pain-functional-restoration-continuity/`：慢性疼痛与功能恢复连续性，整理疼痛干扰、睡眠、用药风险、工作参与和恢复可及。
+- `low-back-pain-spine-function-continuity/`：腰背痛与脊柱功能连续性，整理脊柱痛点、活动限制、康复可及、工作负荷和复发预防。
+- `osteoarthritis-joint-function-continuity/`：骨关节炎与关节功能连续性，整理关节疼痛、移动能力、辅助技术、康复和关节置换路径。
+- `autoimmune-rheumatic-disease-inflammatory-burden-continuity/`：自身免疫风湿病炎症负担连续性，整理疾病活动、疲劳、免疫抑制、器官损害和感染风险。
+- `inflammatory-bowel-disease-digestive-continuity/`：炎症性肠病消化连续性，整理 Crohn 病、溃疡性结肠炎、flare、营养、贫血和用药监测。
+- `chronic-liver-disease-masld-mash-continuity/`：MASLD/MASH 慢性肝病连续性，整理脂肪肝、纤维化、肝硬化、肝癌风险和代谢共病。
+- `thyroid-disease-endocrine-function-continuity/`：甲状腺疾病与内分泌功能连续性，整理甲减、甲亢、结节/癌症通路、监测和阶段性风险。
+- `iron-deficiency-anemia-oxygen-carrying-continuity/`：铁缺乏贫血与氧输送连续性，整理铁储备、血红蛋白、疲劳、来源追踪和恢复可及。
+- `asthma-copd-maintenance-control-continuity/`：哮喘/COPD 长期控制连续性，整理症状控制、吸入药可及、触发因素、肺康复和急性加重预防。
+- `allergic-atopic-disease-immunologic-burden-continuity/`：过敏/特应性疾病免疫负担连续性，整理过敏原暴露、瘙痒、睡眠、食物/环境限制和急性反应边界。
 - `governance-rights/`：治理与主体权利，整理同意、退出、数据权、法律身份、AI 治理和研究伦理。
 - `pain-suffering-control/`：疼痛与痛苦控制，整理慢性疼痛、症状负担、姑息医学和可承受持续性。
 - `health-literacy-navigation/`：健康素养与服务导航，整理可理解信息、风险沟通、共同决策和系统入口。

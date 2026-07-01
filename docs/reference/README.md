@@ -43,6 +43,7 @@ Current documents:
 - `research-domain-atlas.md`: first-principles domain atlas for mapping effective-immortality conditions to research domains.
 - `research-domain-radar.md`: candidate-domain radar for potential future research domains and promotion triggers.
 - `domain-map.md`: now also indexes the life-course preventive and function-continuity wave for sleep breathing, insomnia, sexual health, HIV, viral hepatitis, contraception, menstrual health, menopause, pelvic floor function, and UV/skin cancer prevention.
+- `domain-map.md`: now also indexes the chronic specialty burden and functional-restoration wave for chronic pain, low back pain, osteoarthritis, autoimmune rheumatic disease, inflammatory bowel disease, MASLD/MASH, thyroid disease, iron-deficiency anemia, asthma/COPD maintenance control, and allergic/atopic disease.
 - `research-model-visualization-toolkit.md`: research workflow, literature spine, modeling tools, visualization standards, and implementation guidance for Human Infra quantitative pages.
 - `review-checklists.md`: review checklists for documentation, evidence, safety, domains, and data scripts.
 - `source-card-system.md`: rules for turning papers, books, tools, cases, standards, and datasets into reusable Human Infra research cards.

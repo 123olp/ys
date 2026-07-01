@@ -1296,6 +1296,16 @@ flowchart TD
 | [Perimenopause Menopause Midlife Health Continuity](domains/perimenopause-menopause-midlife-health-continuity/README.md) | 围绝经期/更年期、症状、睡眠、情绪、骨骼、心血管和工作参与 | 把中年阶段风险转轨和有效时间保护纳入健康寿命模型 | 不提供激素治疗、补充剂、症状诊断、检查排序、风险判断或治疗建议 |
 | [Pelvic Floor Continence Function Continuity](domains/pelvic-floor-continence-function-continuity/README.md) | 盆底功能、尿失禁、便失禁、脱垂、康复可及、用品和社会参与 | 把排泄控制、行动半径、睡眠、尊严和独立生活纳入模型 | 不提供盆底训练、诊断、用药、器械、手术、产后恢复或用品建议 |
 | [Skin Cancer UV Protection Early Detection Continuity](domains/skin-cancer-uv-protection-early-detection-continuity/README.md) | UV 暴露、日晒防护、皮肤癌预防、早期识别、转诊和户外环境 | 把环境暴露、皮肤癌风险、职业户外行动和公平可及连接起来 | 不提供皮损照片判断、防晒产品、筛查周期、活检、治疗、用药或转诊建议 |
+| [Chronic Pain Functional Restoration Continuity](domains/chronic-pain-functional-restoration-continuity/README.md) | 慢性疼痛、功能恢复、疼痛干预可及、用药风险和工作参与 | 把长期疼痛从症状变量转化为有效时间、行动质量和社会参与损耗模型 | 不提供疼痛诊断、用药、康复动作、神经阻滞、手术、设备或残障保险建议 |
+| [Low Back Pain Spine Function Continuity](domains/low-back-pain-spine-function-continuity/README.md) | 腰背痛、脊柱功能、康复可及、工作负荷、影像路径和复发预防 | 把高频脊柱痛点纳入移动半径、工作连续和慢性疼痛转化模型 | 不提供腰背痛诊断、影像判读、康复动作、药物、注射、手术或复工建议 |
+| [Osteoarthritis Joint Function Continuity](domains/osteoarthritis-joint-function-continuity/README.md) | 骨关节炎、关节疼痛、移动能力、辅助器具、康复和关节置换路径 | 把退行性关节病纳入移动寿命、独立生活和长期照护负担模型 | 不提供关节炎诊断、运动、止痛药、注射、补剂、手术、康复或设备建议 |
+| [Autoimmune Rheumatic Disease Inflammatory Burden Continuity](domains/autoimmune-rheumatic-disease-inflammatory-burden-continuity/README.md) | 类风湿、狼疮、自身免疫炎症、疲劳、免疫抑制和器官风险 | 把慢性免疫失衡纳入炎症负担、感染风险、器官保护和功能连续性模型 | 不提供化验判读、免疫抑制、疫苗、妊娠、感染处理、检查周期或治疗建议 |
+| [Inflammatory Bowel Disease Digestive Continuity](domains/inflammatory-bowel-disease-digestive-continuity/README.md) | Crohn 病、溃疡性结肠炎、flare、营养吸收、用药监测和参与支持 | 把消化道慢性炎症纳入营养、贫血、疲劳、疼痛和生活参与模型 | 不提供 IBD 诊断、内镜/化验判读、饮食、药物、生物制剂、手术或 flare 建议 |
+| [Chronic Liver Disease MASLD MASH Continuity](domains/chronic-liver-disease-masld-mash-continuity/README.md) | MASLD/MASH、纤维化、肝硬化、肝癌风险、代谢共病和药物安全 | 把隐匿慢性肝病纳入代谢连续性、肝脏储备和生命风险边界模型 | 不提供肝功能/影像判读、饮酒、药物、减重、补剂、筛查周期或治疗建议 |
+| [Thyroid Disease Endocrine Function Continuity](domains/thyroid-disease-endocrine-function-continuity/README.md) | 甲减、甲亢、甲状腺结节/癌症通路、监测和内分泌稳定 | 把甲状腺轴纳入能量、情绪、心率、骨骼、生殖阶段和认知速度模型 | 不提供化验判读、结节分级、用药剂量、补碘、妊娠、癌筛或治疗建议 |
+| [Iron Deficiency Anemia Oxygen Carrying Continuity](domains/iron-deficiency-anemia-oxygen-carrying-continuity/README.md) | 铁缺乏、贫血、氧输送、疲劳、出血/吸收来源和恢复可及 | 把氧输送不足纳入体力、注意力、运动耐受、妊娠风险和有效时间模型 | 不提供贫血诊断、化验判读、补铁剂量、输血、胃肠检查、月经或饮食建议 |
+| [Asthma COPD Maintenance Control Continuity](domains/asthma-copd-maintenance-control-continuity/README.md) | 哮喘、COPD、长期控制、吸入药可及、触发因素、肺康复和急性加重预防 | 把慢性气道病纳入呼吸储备、活动半径、睡眠和急性加重预防模型 | 不提供肺功能判读、吸入药、剂量、氧疗、行动计划、康复或设备建议 |
+| [Allergic Atopic Disease Immunologic Burden Continuity](domains/allergic-atopic-disease-immunologic-burden-continuity/README.md) | 过敏性鼻炎、特应性皮炎、食物过敏、过敏原暴露、睡眠损害和参与限制 | 把过敏/特应性疾病纳入免疫负担、恢复质量、环境限制和急性反应边界模型 | 不提供过敏诊断、皮损判断、食物挑战、脱敏、药物、急救、饮食或环境改造建议 |
 | [Road Traffic Injury Prevention Safe Mobility](domains/road-traffic-injury-prevention-safe-mobility/README.md) | 道路交通伤害、安全系统、速度管理、车辆安全、交通数据和安全移动 | 让出行从可达性进一步成为不制造死亡和失能的行动基础设施 | 不提供驾驶、路线、事故责任、保险、法律、车辆改装、危险驾驶、规避执法或急救建议 |
 | [Rural Health Access Geographic Equity](domains/rural-health-access-geographic-equity/README.md) | 地理距离、服务密度、宽带、交通、卫生人力和农村健康公平 | 防止可修复风险因为地点、交通、宽带和服务稀缺被延误或放弃 | 不提供个体医疗、保险、转诊、迁居、急救路线、补助申请、政策游说或商业选址建议 |
 | [Homelessness Unsheltered Health Continuity](domains/homelessness-unsheltered-health-continuity/README.md) | 无家可归、露宿、庇护、外展、住房服务、卫生、安全和照护断点 | 让没有稳定住所的主体仍能维持医疗、卫生、身份、睡眠、安全和福利入口 | 不提供个体庇护、住房申请、法律救济、福利申请、露宿规避、执法规避或生存技巧 |
@@ -1917,5 +1927,6 @@ flowchart LR
 - 2026-07-01：新增第八十二波 10 个急性内科与时间关键急症连续性域，覆盖急性冠脉综合征再灌注、急性心衰失代偿、心律失常/晕厥失代偿、VTE/肺栓塞、高血压危象靶器官风险、糖尿病高低血糖危象、过敏性休克、哮喘/COPD 急性加重、急性消化道出血内镜和产科出血/高血压急症。
 - 2026-07-01：新增第八十三波 10 个预防筛查与风险因子控制连续性域，覆盖高血压检测控制、血脂/动脉粥样硬化风险管理、糖尿病前期预防、肥胖/脂肪代谢风险、烟草尼古丁戒断、酒精风险降低、CKD 筛查进展、癌症筛查早诊、骨质疏松骨折预防和跌倒/家居安全预防。
 - 2026-07-01：新增第八十四波 10 个生活史预防与功能连续性域，覆盖睡眠呼吸障碍、慢性失眠/CBT-I 可及、STI 预防、HIV 检测/PrEP、慢性病毒性肝炎、避孕与家庭计划、月经健康、围绝经期/更年期、盆底控尿控便和皮肤癌/UV 防护。
+- 2026-07-01：新增第八十五波 10 个慢性专科负担与功能恢复连续性域，覆盖慢性疼痛、腰背痛、骨关节炎、自身免疫风湿病、炎症性肠病、MASLD/MASH 慢性肝病、甲状腺疾病、铁缺乏贫血、哮喘/COPD 长期控制和过敏/特应性疾病。
 
 完整记录见 [CHANGELOG.md](CHANGELOG.md)。

@@ -499,6 +499,16 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 更年期是中年健康风险转轨窗口 | `perimenopause-menopause-midlife-health-continuity/` | 围绝经期、症状、睡眠、情绪、骨骼、心血管、工作参与 | 中年症状负担和风险沟通失败会影响睡眠、情绪、骨折、心血管和工作退出风险 |
 | 盆底功能保护行动半径和尊严 | `pelvic-floor-continence-function-continuity/` | 尿失禁、便失禁、脱垂、康复可及、用品、社会参与 | 控尿控便失败会通过睡眠破坏、跌倒、社交回避、感染和照护负担侵蚀独立生活 |
 | UV 暴露和皮肤癌风险可被早期治理 | `skin-cancer-uv-protection-early-detection-continuity/` | UV 暴露、防晒环境、皮肤癌预防、早期识别、转诊、公平可及 | 皮肤癌风险、职业户外暴露和早识别断点会增加治疗负担、死亡风险和行动约束 |
+| 慢性疼痛可被转化为功能恢复问题 | `chronic-pain-functional-restoration-continuity/` | 慢性疼痛、功能恢复、用药风险、睡眠、工作参与 | 将疼痛只当症状会漏掉注意力占用、行动质量下降、失能和社会参与损耗 |
+| 腰背痛是高频脊柱执行断点 | `low-back-pain-spine-function-continuity/` | 腰背痛、脊柱功能、康复可及、工作负荷、复发预防 | 复发腰背痛会持续破坏移动、坐立、搬运、工作和慢性疼痛转化路径 |
+| 骨关节炎决定移动寿命 | `osteoarthritis-joint-function-continuity/` | 关节疼痛、僵硬、移动能力、辅助器具、康复、置换路径 | 退行性关节病会缩小行动半径、增加跌倒和照护需求并削弱独立生活 |
+| 自身免疫炎症会长期侵蚀能力 | `autoimmune-rheumatic-disease-inflammatory-burden-continuity/` | 自身免疫风湿病、疾病活动、疲劳、免疫抑制、器官风险 | 免疫系统持续攻击自身组织会制造疼痛、疲劳、感染风险、器官损害和治疗负担 |
+| IBD 把消化炎症转化为参与损耗 | `inflammatory-bowel-disease-digestive-continuity/` | Crohn 病、溃疡性结肠炎、flare、营养、贫血、用药监测 | 腹痛腹泻、营养缺口和 flare 会压缩学校/工作、社交活动和体力恢复 |
+| 慢性肝病可在失代偿前分层 | `chronic-liver-disease-masld-mash-continuity/` | MASLD/MASH、纤维化、肝硬化、肝癌、代谢共病 | 隐匿肝病会在症状出现前推进肝硬化、肝癌、药物安全和急性失代偿风险 |
+| 甲状腺轴影响能量和认知速度 | `thyroid-disease-endocrine-function-continuity/` | 甲减、甲亢、结节/癌症通路、监测、阶段风险 | 甲状腺失衡会改变疲劳、情绪、心率、体重、骨骼、生育和工作效率 |
+| 铁缺乏贫血降低氧输送和有效时间 | `iron-deficiency-anemia-oxygen-carrying-continuity/` | 铁储备、血红蛋白、疲劳、出血/吸收来源、恢复可及 | 氧输送不足会降低体力、注意力、运动耐受和阶段性风险承载能力 |
+| 慢性气道控制决定呼吸储备 | `asthma-copd-maintenance-control-continuity/` | 哮喘/COPD、长期控制、吸入药、触发因素、肺康复 | 长期控制失败会造成气短、活动受限、睡眠破坏、急诊利用和急性加重 |
+| 过敏/特应性疾病会消耗恢复质量 | `allergic-atopic-disease-immunologic-burden-continuity/` | 过敏性鼻炎、特应性皮炎、食物过敏、瘙痒、睡眠、环境限制 | 长期过敏负担会通过瘙痒、气道症状、食物限制和急性反应风险降低生活参与 |
 | 移动过程可避免严重伤害 | `road-traffic-injury-prevention-safe-mobility/` | 道路安全系统、速度管理、车辆安全、执法公平、交通伤害监测 | 出行过程制造死亡、严重伤害、长期失能、家庭收入中断和照护负担 |
 | 地理距离不能排除主体 | `rural-health-access-geographic-equity/` | 农村服务密度、距离、交通、宽带、卫生人力、药房/医院可达 | 可修复风险因地点、距离、宽带、人力和设施稀缺被延误或放弃 |
 | 住所缺失时服务不能断线 | `homelessness-unsheltered-health-continuity/` | 庇护、外展、卫生、睡眠、安全、身份、住房服务、医疗连续性 | 露宿、卫生缺失、暴露、创伤、慢病失控和服务断点把主体推出恢复路径 |
@@ -1154,6 +1164,16 @@ risk-engineering
   -> perimenopause-menopause-midlife-health-continuity
   -> pelvic-floor-continence-function-continuity
   -> skin-cancer-uv-protection-early-detection-continuity
+  -> chronic-pain-functional-restoration-continuity
+  -> low-back-pain-spine-function-continuity
+  -> osteoarthritis-joint-function-continuity
+  -> autoimmune-rheumatic-disease-inflammatory-burden-continuity
+  -> inflammatory-bowel-disease-digestive-continuity
+  -> chronic-liver-disease-masld-mash-continuity
+  -> thyroid-disease-endocrine-function-continuity
+  -> iron-deficiency-anemia-oxygen-carrying-continuity
+  -> asthma-copd-maintenance-control-continuity
+  -> allergic-atopic-disease-immunologic-burden-continuity
   -> road-traffic-injury-prevention-safe-mobility
   -> rural-health-access-geographic-equity
   -> homelessness-unsheltered-health-continuity

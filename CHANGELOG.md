@@ -4,6 +4,8 @@ All notable repository structure changes are recorded here.
 
 ## 2026-07-01
 
+- Added the eighty-fifth wave of chronic specialty burden and functional-restoration continuity domains, covering chronic pain, low back pain, osteoarthritis, autoimmune rheumatic disease, inflammatory bowel disease, MASLD/MASH chronic liver disease, thyroid disease, iron-deficiency anemia, asthma/COPD maintenance control, and allergic/atopic disease.
+
 - Added the eighty-fourth wave of life-course preventive and function-continuity domains, covering sleep-disordered breathing, chronic insomnia and CBT-I access, STI prevention, HIV testing/PrEP, chronic viral hepatitis, contraception and family planning, menstrual health, menopause, pelvic floor continence, and skin cancer/UV protection.
 
 - Added eighty-third-wave preventive screening and risk-factor control continuity domains for hypertension detection/control, lipid/atherosclerosis risk management, prediabetes/diabetes prevention, obesity/adiposity metabolic risk, tobacco/nicotine cessation, alcohol-use risk reduction, chronic kidney disease screening/progression, cancer screening/early detection, osteoporosis/fracture prevention, and fall-risk/home-safety prevention.

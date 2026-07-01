@@ -586,6 +586,25 @@ Human Infra 不能被设计成更精密的压榨系统。
 - 产出污名化、性身份推断、未成年人监控、生殖胁迫、医疗回避、检测规避、治疗规避、家庭自行处理、商业产品背书或高敏感个人资料收集内容。
 - 替代睡眠医学、心理治疗、妇产科、感染科、肝病科、泌尿/盆底康复、皮肤科、药学、公共卫生、法律援助、危机服务或本地专业人员。
 
+## 慢性专科负担与功能恢复边界
+
+`chronic-pain-functional-restoration-continuity`、`low-back-pain-spine-function-continuity`、`osteoarthritis-joint-function-continuity`、`autoimmune-rheumatic-disease-inflammatory-burden-continuity`、`inflammatory-bowel-disease-digestive-continuity`、`chronic-liver-disease-masld-mash-continuity`、`thyroid-disease-endocrine-function-continuity`、`iron-deficiency-anemia-oxygen-carrying-continuity`、`asthma-copd-maintenance-control-continuity` 和 `allergic-atopic-disease-immunologic-burden-continuity` 关注慢性疼痛、脊柱、关节、免疫炎症、消化道炎症、慢性肝病、甲状腺、贫血、慢性气道和过敏/特应性疾病如何长期消耗有效时间、恢复质量、移动能力、体力、注意力、社会参与和未来选择权，不是个人诊断、治疗、康复、药物、手术、补剂、饮食、保险或工作能力判断入口。
+
+可以做：
+
+- 整理 CDC、NIH、NIAMS、NIDDK、NHLBI、NIAID、FDA 和相关公共机构资料。
+- 比较慢性症状、疼痛干扰、炎症活动、flare、疲劳、氧输送、呼吸储备、环境暴露、服务可及和功能恢复如何影响主体持续性。
+- 记录疾病负担、服务入口、监测边界、药物风险、急性加重、功能参与、证据等级、禁止用途和不确定性。
+- 将这些域与 `pain-suffering-control`、`musculoskeletal-integrity`、`immune-maintenance`、`gastrointestinal-barrier-absorption`、`renal-hepatic-clearance`、`endocrine-hormonal-regulation`、`blood-oxygen-hemostasis`、`respiratory-oxygenation`、`skin-barrier-wound-healing` 和 `functioning-quality-of-life-outcomes` 建立只读接口。
+
+不能做：
+
+- 提供慢性疼痛、腰背痛、骨关节炎、自身免疫风湿病、IBD、MASLD/MASH、甲状腺疾病、贫血、哮喘/COPD、过敏或特应性疾病的个体诊断、分期、检查判读、风险评分、治疗选择、转诊、急救、复查周期或预后判断。
+- 生成药物、剂量、停药、免疫抑制、吸入药、氧疗、补铁、激素、止痛药、抗凝冲突、脱敏、食物挑战、饮食、补剂、康复动作、运动处方、手术、注射、设备、皮损处理、过敏急救、保险、残障、复工或工作限制建议。
+- 收集、存储或推断可识别个人的疼痛评分、影像、实验室指标、肺功能、用药清单、皮肤照片、月经/妊娠、肠道症状、出血、饮酒、职业、保险、就诊记录、位置、儿童信息或其他 PHI。
+- 产出疾病污名、肥胖/疼痛/免疫/呼吸道德化、医疗回避、延误就医、自我实验、产品背书、替代专业照护、保险规避、工作能力判定或高敏感个人资料收集内容。
+- 替代疼痛医学、骨科、风湿免疫科、消化科、肝病科、内分泌科、血液科、呼吸科、过敏免疫科、皮肤科、药学、康复、营养、公共卫生、职业健康、法律援助或本地专业人员。
+
 ## 门诊访问与临床服务执行连续性边界
 
 `provider-directory-network-adequacy-continuity`、`primary-care-panel-appointment-access-continuity`、`specialist-referral-authorization-navigation-continuity`、`appointment-availability-wait-time-continuity`、`outpatient-laboratory-specimen-result-routing-continuity`、`diagnostic-imaging-order-scheduling-report-continuity`、`ambulatory-procedure-surgery-center-continuity` 和 `after-hours-urgent-care-triage-continuity` 关注 provider 名录、初级照护、专科转诊、预约等待、门诊检验、诊断影像、门诊操作和非工作时间分诊如何让医疗服务从“名义存在”变成主体可进入、可完成、可回传的服务路径，不是医生推荐、个案分诊、诊疗建议、保险申诉或预约规避工具。

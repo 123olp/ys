@@ -101,3 +101,4 @@ Current decisions:
 - `0086-add-eighty-second-wave-acute-internal-medicine-emergency-domains.md`
 - `0087-add-eighty-third-wave-preventive-risk-factor-control-domains.md`
 - `0088-add-eighty-fourth-wave-life-course-preventive-continuity-domains.md`
+- `0089-add-eighty-fifth-wave-chronic-specialty-burden-continuity-domains.md`

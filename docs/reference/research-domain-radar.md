@@ -319,6 +319,16 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `perimenopause-menopause-midlife-health-continuity/` | 围绝经期、更年期与中年健康连续性决定中年症状、睡眠、情绪、骨骼、心血管和工作参与风险是否被系统承接 |
 | `pelvic-floor-continence-function-continuity/` | 盆底与控尿控便功能连续性决定失禁、脱垂、羞耻、用品和康复断点是否压缩行动半径、睡眠和尊严 |
 | `skin-cancer-uv-protection-early-detection-continuity/` | 皮肤癌、UV 防护与早期识别连续性决定环境暴露、户外职业风险和皮肤癌早识别是否被纳入长期风险控制 |
+| `chronic-pain-functional-restoration-continuity/` | 慢性疼痛与功能恢复连续性决定疼痛是否从症状变成有效时间、睡眠、工作参与和社会功能的长期损耗 |
+| `low-back-pain-spine-function-continuity/` | 腰背痛与脊柱功能连续性决定高频脊柱痛点是否会压缩移动半径、工作负荷承受和复发恢复窗口 |
+| `osteoarthritis-joint-function-continuity/` | 骨关节炎与关节功能连续性决定退行性关节病是否通过疼痛、僵硬和移动限制提前制造照护负担 |
+| `autoimmune-rheumatic-disease-inflammatory-burden-continuity/` | 自身免疫风湿病炎症负担连续性决定慢性免疫攻击是否长期侵蚀体力、器官储备、感染安全和行动能力 |
+| `inflammatory-bowel-disease-digestive-continuity/` | 炎症性肠病消化连续性决定 flare、腹痛、腹泻、营养缺口和贫血是否持续吞噬学习、工作和生活参与 |
+| `chronic-liver-disease-masld-mash-continuity/` | MASLD/MASH 慢性肝病连续性决定隐匿肝脏损伤是否在失代偿、肝癌和药物安全风险前被纳入长期治理 |
+| `thyroid-disease-endocrine-function-continuity/` | 甲状腺疾病与内分泌功能连续性决定甲状腺轴失衡是否通过能量、情绪、心率、骨骼和认知速度影响主体行动 |
+| `iron-deficiency-anemia-oxygen-carrying-continuity/` | 铁缺乏贫血与氧输送连续性决定氧运输不足是否持续压低体力、注意力、运动耐受和阶段性风险承载能力 |
+| `asthma-copd-maintenance-control-continuity/` | 哮喘/COPD 长期控制连续性决定慢性气道病是否通过活动受限、睡眠破坏和急性加重缩小行动空间 |
+| `allergic-atopic-disease-immunologic-burden-continuity/` | 过敏/特应性疾病免疫负担连续性决定过敏原、瘙痒、睡眠、食物/环境限制和急性反应风险是否长期消耗恢复质量 |
 | `road-traffic-injury-prevention-safe-mobility/` | 道路交通伤害预防和安全移动决定出行是否持续制造死亡、严重伤害和长期失能 |
 | `rural-health-access-geographic-equity/` | 农村地理距离、服务密度、宽带、交通和卫生人力决定可修复风险是否因地点被延误或放弃 |
 | `homelessness-unsheltered-health-continuity/` | 无家可归和露宿状态决定睡眠、卫生、身份、安全、医疗和福利入口是否会同时断线 |
@@ -714,6 +724,16 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | NIA / HHS menopause materials | 提示围绝经期、更年期和中年健康风险转轨需要连接症状、骨骼、睡眠、情绪、心血管和工作参与 |
 | NIDDK incontinence / pelvic floor materials | 提示控尿控便、盆底功能、康复可及和用品支持会影响行动半径、尊严、睡眠和社会参与 |
 | CDC / USPSTF / NCI skin cancer prevention materials | 提示 UV 暴露、日晒防护、皮肤癌预防、早识别和户外环境是环境暴露控制与癌症早诊接口 |
+| CDC chronic pain / CDC opioid prescribing / NIH pain resources | 提示慢性疼痛需要从单一症状转成疼痛干扰、功能恢复、睡眠、用药风险和工作参与的长期有效时间模型 |
+| NIAMS low back pain / CDC musculoskeletal burden resources | 提示腰背痛高频、易复发且与工作负荷、影像路径、康复可及和慢性疼痛转化有关，需要独立脊柱功能域 |
+| NIAMS osteoarthritis / CDC arthritis resources | 提示骨关节炎通过关节疼痛、僵硬、移动限制、辅助技术和关节置换路径影响移动寿命与独立生活 |
+| NIAMS rheumatoid arthritis and lupus resources | 提示自身免疫风湿病需要把疾病活动、疲劳、免疫抑制、感染风险和器官损害放进慢性炎症负担模型 |
+| CDC IBD / NIDDK Crohn's disease and ulcerative colitis resources | 提示 IBD 的 flare、营养吸收、贫血、用药监测和生活参与不能只并入一般胃肠屏障或免疫维护 |
+| NIDDK MASLD/MASH / cirrhosis / liver disease resources | 提示慢性肝病和 MASLD/MASH 在症状前就可能改变肝脏储备、代谢风险、药物安全和肝癌风险 |
+| NIDDK thyroid disease resources | 提示甲状腺疾病把内分泌反馈、能量、心血管、情绪、骨骼、生殖阶段和长期监测连接成独立域 |
+| NHLBI anemia / iron deficiency anemia resources | 提示铁储备和血红蛋白决定氧输送、疲劳、注意力和运动耐受，应与一般血液止血域建立专门接口 |
+| NHLBI asthma / COPD and CDC asthma resources | 提示慢性气道病依赖长期控制、吸入药可及、触发因素、肺康复和急性加重预防，不应只停留在急性气道危机 |
+| NIAID allergic diseases / NIAMS atopic dermatitis / FDA food allergy resources | 提示过敏和特应性疾病通过瘙痒、睡眠、食物限制、环境暴露和急性反应风险持续消耗恢复质量和参与能力 |
 | OrganDonor.gov / HRSA organ donation materials | 提示器官捐赠登记、anatomical gift 和家庭沟通会把死亡边界后的主体意愿连接到他人生命资源 |
 | FDA UDI / AccessGUDID materials | 提示植入设备和医疗器械标识会影响急救、影像、手术、召回和跨机构设备识别 |
 | CDC/NCHS NVSS and mortality materials | 提示死亡证明、死因记录和生命统计是遗属行政、保险、公共卫生学习和死亡边界治理的基础记录 |
