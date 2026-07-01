@@ -1,0 +1,40 @@
+# Urinary Retention and Bladder Emptying Continuity
+
+`urinary-retention-bladder-emptying-continuity/` 研究急性/慢性尿潴留、膀胱排空失败、梗阻、神经源性因素、导尿依赖和肾脏上游压力如何影响主体持续性。
+
+> 核心问题：尿液不能排出时，排泄系统会从后台稳态变成疼痛、感染、肾积水、急性服务依赖和行动中断。
+
+## 先验位置
+
+```text
+有效永生
+  -> 主体必须持续排出液体废物
+  -> 膀胱排空失败会造成疼痛、感染和肾脏压力
+  -> 因此尿潴留是排泄出口连续性的基础断点
+```
+
+## 关注对象
+
+- Acute urinary retention, chronic retention, bladder emptying, obstruction, neurogenic bladder context, catheter dependency, hydronephrosis risk, pain and urgent access。
+- 与 `benign-prostatic-hyperplasia-luts-continuity/` 的关系：BPH 域关注常见下尿路症状来源，本域覆盖所有排空失败机制。
+
+## Human Infra 模型链路
+
+```text
+排空失败识别与通道恢复 T
+  -> 改变膀胱压力、疼痛、感染、肾脏上游压力和设备依赖 X
+  -> 改变排泄安全、睡眠、行动、工作和急性服务状态 S
+  -> 改变 AKI、感染、住院、跌倒和长期照护依赖 lambda(t)
+  -> 改变有效时间和未来选择权
+```
+
+## 非目标
+
+- 不提供导尿操作、药物、设备、急诊判断、检查解释、神经源性膀胱管理或个体治疗建议。
+- 不输出个人潴留风险、排尿量判断、影像/尿流检查解读或返工/旅行许可。
+
+## Source Signals
+
+- NIDDK urinary retention materials.
+- MedlinePlus urinary retention public materials.
+- AUA / professional lower urinary tract references for terminology boundary.

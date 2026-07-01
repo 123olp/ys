@@ -1869,6 +1869,36 @@ domains/
 ├── urogenital-continuity/
 │   ├── AGENTS.md
 │   └── README.md
+├── urinary-tract-infection-pyelonephritis-urosepsis-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── catheter-associated-uti-device-infection-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── urinary-retention-bladder-emptying-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── overactive-bladder-nocturia-sleep-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── kidney-stone-obstruction-renal-colic-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── benign-prostatic-hyperplasia-luts-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── urinary-diversion-urostomy-supplies-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── dialysis-access-vascular-peritoneal-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── home-dialysis-supply-self-management-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── kidney-transplant-immunosuppression-graft-continuity/
+│   ├── AGENTS.md
+│   └── README.md
 ├── reproductive-fertility-continuity/
 │   ├── AGENTS.md
 │   └── README.md
@@ -2037,7 +2067,7 @@ domains/
 - `respiratory-oxygenation/`、`blood-oxygen-hemostasis/`、`endocrine-hormonal-regulation/` 和 `lymphatic-glymphatic-clearance/` 负责氧合、血液运输、激素协调和清除网络这些跨器官稳态条件。
 - `gastrointestinal-barrier-absorption/`、`fluid-electrolyte-acid-base-homeostasis/` 和 `thermal-homeostasis-resilience/` 负责营养进入、内环境化学和体温边界这些基础稳态条件。
 - `nutrition-metabolic-health/`、`physical-activity-mobility/`、`cardiovascular-resilience/` 和 `musculoskeletal-integrity/` 负责营养、行动、循环和承载结构这些身体运行条件。
-- `urogenital-continuity/` 和 `reproductive-fertility-continuity/` 负责尿控、泌尿感染、性功能、生育力、生殖衰老和未来选择权。
+- `urogenital-continuity/` 负责尿控、泌尿生殖尊严和上位排泄/性功能边界；`urinary-tract-infection-pyelonephritis-urosepsis-continuity/`、`catheter-associated-uti-device-infection-continuity/`、`urinary-retention-bladder-emptying-continuity/`、`overactive-bladder-nocturia-sleep-continuity/`、`kidney-stone-obstruction-renal-colic-continuity/`、`benign-prostatic-hyperplasia-luts-continuity/`、`urinary-diversion-urostomy-supplies-continuity/`、`dialysis-access-vascular-peritoneal-continuity/`、`home-dialysis-supply-self-management-continuity/` 和 `kidney-transplant-immunosuppression-graft-continuity/` 负责尿路感染、导尿设备、尿潴留、夜尿、结石梗阻、BPH/LUTS、尿流改道、透析通路、家庭透析和肾移植这些排泄出口与肾脏替代执行层失效模式；`reproductive-fertility-continuity/` 负责生育力、生殖衰老和未来选择权。
 - `attention-executive-control/`、`learning-skill-acquisition/` 和 `time-allocation-effective-time/` 负责注意力、学习能力和有效时间这些主体代理与任务资源条件。
 - `financial-resilience-access/`、`financial-inclusion-payment-systems/`、`workforce-employment-services/`、`education-access-lifelong-learning/`、`occupational-work-design/`、`labor-rights-workplace-protection/`、`language-access-plain-communication/`、`media-information-literacy-public-libraries/` 和 `information-integrity-trust/` 负责财务韧性、金融支付入口、就业服务、教育与终身学习、工作环境、劳动权利、语言理解入口、公共知识入口和信息可信度这些资源入口与认知环境条件。
 - `food-security-nutrition-access/`、`water-sanitation-hygiene-continuity/`、`energy-access-resilience/`、`social-protection-benefits-delivery/`、`community-resource-navigation/`、`social-determinants-community-vulnerability/`、`public-service-design-accessibility/`、`administrative-burden-procedural-friction/`、`civic-data-open-government-transparency/`、`insurance-risk-transfer/` 和 `childcare-family-continuity/` 负责食物、水卫生、能源、公共福利、社区资源导航、社区脆弱性、公共服务可达、行政负担、开放数据透明、保险风险池和托育家庭连续性这些基础生计、公共服务与风险分摊条件。
@@ -2171,6 +2201,7 @@ domains/
 - `cardiac-arrest-cpr-defibrillation-continuity/`、`sepsis-shock-early-recognition-resuscitation-continuity/`、`trauma-system-hemorrhage-control-continuity/`、`intensive-care-organ-support-delirium-continuity/`、`mechanical-ventilation-respiratory-failure-continuity/`、`ecmo-extracorporeal-life-support-continuity/`、`acute-kidney-injury-renal-replacement-continuity/`、`transfusion-blood-management-hemorrhage-continuity/`、`overdose-poisoning-reversal-toxicology-continuity/` 和 `burn-injury-critical-care-rehabilitation-continuity/` 负责急性救援与临时器官支持的证据边界，不提供 CPR、除颤、抗生素、ICU、呼吸机、ECMO、透析、输血、中毒处理、烧伤处理或个案医疗建议。
 - `acute-coronary-syndrome-reperfusion-continuity/`、`acute-heart-failure-decompensation-continuity/`、`cardiac-arrhythmia-syncope-decompensation-continuity/`、`venous-thromboembolism-pulmonary-embolism-continuity/`、`hypertensive-crisis-end-organ-risk-continuity/`、`diabetic-hyperglycemic-hypoglycemic-crisis-continuity/`、`anaphylaxis-allergic-emergency-continuity/`、`asthma-copd-exacerbation-airway-continuity/`、`acute-gastrointestinal-bleeding-endoscopy-continuity/` 和 `obstetric-emergency-hemorrhage-hypertension-continuity/` 负责急性内科与时间关键急症的证据边界，不提供胸痛、心衰、晕厥、肺栓塞、高血压危象、糖尿病危象、过敏性休克、哮喘/COPD、消化道出血、产科急症的诊断、分诊、用药、设备、操作、转运、预后或个案医疗建议。
 - `hypertension-detection-control-continuity/`、`lipid-atherosclerosis-risk-management-continuity/`、`prediabetes-diabetes-prevention-continuity/`、`obesity-adiposity-metabolic-risk-continuity/`、`tobacco-nicotine-cessation-continuity/`、`alcohol-use-risk-reduction-continuity/`、`chronic-kidney-disease-screening-progression-continuity/`、`cancer-screening-early-detection-continuity/`、`osteoporosis-fracture-prevention-bone-health-continuity/` 和 `fall-risk-prevention-home-safety-continuity/` 负责预防筛查与风险因子控制的证据边界，不提供血压、血脂、血糖/A1c、BMI/体脂、烟草/酒精、肾功能、癌筛、骨密度或跌倒风险的个体判断、用药、处方、戒断、饮食、运动、检查频率、设备、家庭处理、保险或医疗建议。
+- `urinary-tract-infection-pyelonephritis-urosepsis-continuity/`、`catheter-associated-uti-device-infection-continuity/`、`urinary-retention-bladder-emptying-continuity/`、`overactive-bladder-nocturia-sleep-continuity/`、`kidney-stone-obstruction-renal-colic-continuity/`、`benign-prostatic-hyperplasia-luts-continuity/`、`urinary-diversion-urostomy-supplies-continuity/`、`dialysis-access-vascular-peritoneal-continuity/`、`home-dialysis-supply-self-management-continuity/` 和 `kidney-transplant-immunosuppression-graft-continuity/` 负责泌尿与肾脏替代执行层的证据边界，不提供尿检/实验室解释、抗生素、导尿/拔管/护理、排尿训练、止痛/排石、BPH 用药/手术、造口护理/产品、透析通路/参数/操作、家庭透析故障处理、移植资格/免疫抑制用药、急诊分诊、保险申诉或个体医疗建议。
 - `breast-cancer-screening-treatment-survivorship-continuity/`、`colorectal-cancer-screening-treatment-continuity/`、`lung-cancer-screening-treatment-continuity/`、`prostate-cancer-screening-treatment-continuity/`、`cervical-cancer-hpv-prevention-screening-continuity/`、`ovarian-cancer-symptom-detection-treatment-continuity/`、`pancreatic-cancer-high-risk-detection-treatment-continuity/`、`liver-cancer-cirrhosis-surveillance-treatment-continuity/`、`childhood-cancer-treatment-survivorship-continuity/` 和 `cancer-survivorship-late-effects-continuity/` 负责器官/阶段特异癌症连续性的证据边界，不提供乳腺、结直肠、肺、前列腺、宫颈、卵巢、胰腺、肝、儿童癌症或幸存者的个体诊断、影像/病理/标志物判读、筛查频率、遗传风险、治疗方案、用药、手术、随访、保险、工作证明或预后建议。
 - `sleep-disordered-breathing-screening-treatment-continuity/`、`chronic-insomnia-cbti-access-continuity/`、`sexual-health-sti-prevention-continuity/`、`hiv-testing-prep-prevention-continuity/`、`chronic-viral-hepatitis-screening-liver-protection-continuity/`、`contraception-family-planning-access-continuity/`、`menstrual-health-cycle-literacy-continuity/`、`perimenopause-menopause-midlife-health-continuity/`、`pelvic-floor-continence-function-continuity/` 和 `skin-cancer-uv-protection-early-detection-continuity/` 负责生活史预防与功能连续性的证据边界，不提供睡眠报告判读、CBT-I 操作、STI/HIV/肝炎检测解释、PrEP/PEP/ART、避孕选择、周期判读、激素治疗、盆底训练、皮损照片判断、防晒产品、用药、检查频率、保险、法律或个体医疗建议。
 - `chronic-pain-functional-restoration-continuity/`、`low-back-pain-spine-function-continuity/`、`osteoarthritis-joint-function-continuity/`、`autoimmune-rheumatic-disease-inflammatory-burden-continuity/`、`inflammatory-bowel-disease-digestive-continuity/`、`chronic-liver-disease-masld-mash-continuity/`、`thyroid-disease-endocrine-function-continuity/`、`iron-deficiency-anemia-oxygen-carrying-continuity/`、`asthma-copd-maintenance-control-continuity/` 和 `allergic-atopic-disease-immunologic-burden-continuity/` 负责慢性专科负担与功能恢复的证据边界，不提供疼痛、腰背、关节、自身免疫、IBD、肝病、甲状腺、贫血、哮喘/COPD、过敏/特应性疾病的个体诊断、检查判读、药物、剂量、康复动作、手术、补剂、饮食、急救、设备、保险、残障或工作建议。

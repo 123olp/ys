@@ -242,6 +242,16 @@ flowchart TD
     H --> MS[musculoskeletal-integrity<br/>肌骨完整性]
     H --> SBW[skin-barrier-wound-healing<br/>皮肤屏障 / 伤口愈合]
     H --> UG[urogenital-continuity<br/>泌尿生殖连续性]
+    UG --> UTI[urinary-tract-infection<br/>尿路感染 / 尿源性风险]
+    UG --> CAUTI[catheter-associated-uti<br/>导尿设备 / CAUTI]
+    UG --> URBE[urinary-retention<br/>尿潴留 / 膀胱排空]
+    UG --> OABN[overactive-bladder-nocturia<br/>尿急夜尿 / 睡眠]
+    UG --> KSOR[kidney-stone-obstruction<br/>结石 / 梗阻]
+    UG --> BPH[benign-prostatic-hyperplasia<br/>BPH / LUTS]
+    UG --> UDIV[urinary-diversion-urostomy<br/>尿流改道 / 造口耗材]
+    RHC --> DAVP[dialysis-access<br/>透析通路]
+    RHC --> HDSM[home-dialysis<br/>家庭透析 / 供应]
+    RHC --> KTIG[kidney-transplant<br/>肾移植 / 免疫抑制]
     H --> RFC[reproductive-fertility-continuity<br/>生殖 / 生育连续性]
     H --> AEC[attention-executive-control<br/>注意力 / 执行控制]
     H --> LSA[learning-skill-acquisition<br/>学习 / 技能获得]
@@ -816,6 +826,16 @@ flowchart TD
 | [Musculoskeletal Integrity](domains/musculoskeletal-integrity/README.md) | 肌肉、骨骼、关节、跌倒、疼痛、行动承载结构 | 肌骨结构、功能终点、跌倒和失能风险 | 不提供训练、康复、影像诊断、药物、手术或设备建议 |
 | [Skin Barrier Wound Healing](domains/skin-barrier-wound-healing/README.md) | 皮肤屏障、伤口愈合、压力损伤、感染入口、热调节和感觉边界 | 外界屏障、愈合能力、感染入口和照护负担 | 不提供伤口处理、敷料、药物、手术、压力损伤处理、急救或诊断建议 |
 | [Urogenital Continuity](domains/urogenital-continuity/README.md) | 膀胱、尿路、尿控、盆底、泌尿感染、性功能和日常尊严 | 排泄控制、睡眠、感染、尊严、关系和照护负担 | 不提供泌尿诊断、盆底训练、药物、器械、手术、感染处理或性功能治疗建议 |
+| [Urinary Tract Infection Pyelonephritis Urosepsis Continuity](domains/urinary-tract-infection-pyelonephritis-urosepsis-continuity/README.md) | 尿路感染、复发、肾盂肾炎、尿源性脓毒症和服务延迟 | 把局部感染到全身风险、谵妄、肾脏负担和恢复成本纳入模型 | 不提供尿检解释、抗生素、补液、复发预防、急诊判断或个体医疗建议 |
+| [Catheter Associated UTI Device Infection Continuity](domains/catheter-associated-uti-device-infection-continuity/README.md) | 导尿管、CAUTI、设备暴露、感染控制、行动限制和照护负担 | 把设备化排尿出口的感染、隐私、抗菌药压力和长期照护断点纳入模型 | 不提供导尿、拔管、消毒、冲洗、护理操作、设备购买或感染处理建议 |
+| [Urinary Retention Bladder Emptying Continuity](domains/urinary-retention-bladder-emptying-continuity/README.md) | 急性/慢性尿潴留、膀胱排空、梗阻、神经源性因素和肾脏压力 | 把排泄出口失败、疼痛、感染、肾积水和急性服务依赖纳入模型 | 不提供导尿、药物、设备、检查解释、急诊判断或个体治疗建议 |
+| [Overactive Bladder Nocturia Sleep Continuity](domains/overactive-bladder-nocturia-sleep-continuity/README.md) | 尿急、尿频、夜尿、睡眠中断、跌倒风险和社交回避 | 把膀胱节律对恢复、注意力、行动半径和有效时间的影响纳入模型 | 不提供 OAB 诊断、药物、盆底训练、饮水安排、设备或个体治疗建议 |
+| [Kidney Stone Obstruction Renal Colic Continuity](domains/kidney-stone-obstruction-renal-colic-continuity/README.md) | 肾结石、尿路梗阻、肾绞痛、感染叠加、急诊可及和复发 | 把尿路机械失效、疼痛、AKI、感染和有效时间损失纳入模型 | 不提供止痛、排石、补液、饮食、影像解释、手术选择或急诊判断 |
+| [Benign Prostatic Hyperplasia LUTS Continuity](domains/benign-prostatic-hyperplasia-luts-continuity/README.md) | BPH、下尿路症状、夜尿、尿潴留、感染和生活质量 | 把男性排泄出口慢性摩擦、睡眠破坏和急性尿潴留风险纳入模型 | 不提供 PSA 判断、BPH 诊断、药物、手术、补剂、导尿或性功能治疗建议 |
+| [Urinary Diversion Urostomy Supplies Continuity](domains/urinary-diversion-urostomy-supplies-continuity/README.md) | 尿流改道、尿路造口、造口袋、皮肤屏障、泄漏和耗材供应 | 把外部化排泄出口、供应链、身体形象、旅行和尊严纳入模型 | 不提供造口护理、产品推荐、皮肤处理、手术选择、保险申诉或旅行方案 |
+| [Dialysis Access Vascular Peritoneal Continuity](domains/dialysis-access-vascular-peritoneal-continuity/README.md) | 血管通路、腹膜通路、成熟失败、感染、血栓和治疗中断 | 把透析通路作为外部清除能力的核心接口纳入模型 | 不提供通路选择、穿刺、护理、抗凝、感染处理、手术或透析参数 |
+| [Home Dialysis Supply Self Management Continuity](domains/home-dialysis-supply-self-management-continuity/README.md) | 家庭血透、腹膜透析、耗材、电水依赖、训练和照护者负担 | 把家庭化生命支持与住房、能源、水、物流和照护系统连接 | 不提供家庭透析资格、参数、操作、用品购买、消毒、设备故障处理或个体建议 |
+| [Kidney Transplant Immunosuppression Graft Continuity](domains/kidney-transplant-immunosuppression-graft-continuity/README.md) | 肾移植、移植物功能、排斥、免疫抑制、感染和药物供应 | 把器官替代后的长期免疫治理、随访和重返透析风险纳入模型 | 不提供移植资格、配型、用药、剂量、实验室解释、感染处理或保险策略 |
 | [Reproductive Fertility Continuity](domains/reproductive-fertility-continuity/README.md) | 生育力、配子质量、生殖衰老、妊娠风险、生殖自主性和未来选择权 | 生育窗口、长期计划、资源配置和未来选择权 | 不提供不孕诊断、生育治疗、激素、辅助生殖、妊娠管理、避孕或个体医疗建议 |
 | [Attention Executive Control](domains/attention-executive-control/README.md) | 注意力、执行功能、工作记忆、抑制控制、任务切换和分心环境 | 有效行动密度、任务完成、冲动控制和长期目标推进 | 不提供 ADHD、心理、神经诊断治疗、药物、补剂或神经刺激建议 |
 | [Learning Skill Acquisition](domains/learning-skill-acquisition/README.md) | 学习科学、技能形成、练习反馈、迁移能力、再训练和终身学习 | 学习轮次、能力复利、技术采用和长期目标推进 | 不提供个体教育、考试、就业、移民、认证或职业建议 |
@@ -1897,6 +1917,16 @@ human_infra/
 │   ├── transportation-access-mobility/
 │   ├── weather-climate-observation-forecasting/
 │   ├── urogenital-continuity/
+│   ├── urinary-tract-infection-pyelonephritis-urosepsis-continuity/
+│   ├── catheter-associated-uti-device-infection-continuity/
+│   ├── urinary-retention-bladder-emptying-continuity/
+│   ├── overactive-bladder-nocturia-sleep-continuity/
+│   ├── kidney-stone-obstruction-renal-colic-continuity/
+│   ├── benign-prostatic-hyperplasia-luts-continuity/
+│   ├── urinary-diversion-urostomy-supplies-continuity/
+│   ├── dialysis-access-vascular-peritoneal-continuity/
+│   ├── home-dialysis-supply-self-management-continuity/
+│   ├── kidney-transplant-immunosuppression-graft-continuity/
 │   └── telomere-maintenance/
 ├── tools/                   # 仓库维护脚本
 ├── AGENTS.md                # 代理与维护者架构说明

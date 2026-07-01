@@ -34,6 +34,16 @@
 - `musculoskeletal-integrity/`：肌骨完整性，整理肌肉、骨骼、关节、跌倒、疼痛和行动承载结构。
 - `skin-barrier-wound-healing/`：皮肤屏障与伤口愈合，整理皮肤屏障、伤口、压力损伤、感染入口和热调节。
 - `urogenital-continuity/`：泌尿生殖连续性，整理尿控、尿路、盆底、泌尿感染、性功能和日常尊严。
+- `urinary-tract-infection-pyelonephritis-urosepsis-continuity/`：尿路感染、复发、肾盂肾炎、尿源性脓毒症、抗菌药暴露和服务延迟。
+- `catheter-associated-uti-device-infection-continuity/`：导尿设备、CAUTI、留置时间、感染控制、行动限制和照护负担。
+- `urinary-retention-bladder-emptying-continuity/`：急性/慢性尿潴留、膀胱排空、梗阻、神经源性因素和导尿依赖。
+- `overactive-bladder-nocturia-sleep-continuity/`：尿急、尿频、夜尿、睡眠中断、跌倒风险和社交回避。
+- `kidney-stone-obstruction-renal-colic-continuity/`：肾结石、尿路梗阻、肾绞痛、感染叠加、复发和急诊可及。
+- `benign-prostatic-hyperplasia-luts-continuity/`：BPH、下尿路症状、夜尿、尿潴留、感染和生活质量。
+- `urinary-diversion-urostomy-supplies-continuity/`：尿流改道、尿路造口、造口袋、皮肤屏障、泄漏和耗材供应。
+- `dialysis-access-vascular-peritoneal-continuity/`：血管通路、腹膜通路、成熟失败、感染、血栓和治疗中断。
+- `home-dialysis-supply-self-management-continuity/`：家庭血透、腹膜透析、耗材配送、电水依赖、训练和照护者负担。
+- `kidney-transplant-immunosuppression-graft-continuity/`：肾移植、移植物功能、免疫抑制、排斥、感染和药物供应。
 - `reproductive-fertility-continuity/`：生殖与生育连续性，整理生育力、生殖衰老、配子质量、生殖自主性和未来选择权。
 - `attention-executive-control/`：注意力与执行控制，整理注意力、工作记忆、抑制控制、任务切换和分心环境。
 - `learning-skill-acquisition/`：学习与技能获得，整理学习科学、反馈、迁移能力、再训练和终身学习。

@@ -650,6 +650,16 @@ human_infra/
     ├── time-allocation-effective-time/ # 时间分配与有效时间
     ├── transportation-access-mobility/ # 交通接入与日常移动
     ├── urogenital-continuity/ # 泌尿生殖连续性
+    ├── urinary-tract-infection-pyelonephritis-urosepsis-continuity/ # 尿路感染、肾盂肾炎与尿源性脓毒症连续性
+    ├── catheter-associated-uti-device-infection-continuity/ # 导尿相关 UTI 与设备感染连续性
+    ├── urinary-retention-bladder-emptying-continuity/ # 尿潴留与膀胱排空连续性
+    ├── overactive-bladder-nocturia-sleep-continuity/ # 膀胱过度活动、夜尿与睡眠连续性
+    ├── kidney-stone-obstruction-renal-colic-continuity/ # 肾结石、尿路梗阻与肾绞痛连续性
+    ├── benign-prostatic-hyperplasia-luts-continuity/ # BPH 与下尿路症状连续性
+    ├── urinary-diversion-urostomy-supplies-continuity/ # 尿流改道、尿路造口与耗材连续性
+    ├── dialysis-access-vascular-peritoneal-continuity/ # 透析血管/腹膜通路连续性
+    ├── home-dialysis-supply-self-management-continuity/ # 家庭透析供应与自我管理连续性
+    ├── kidney-transplant-immunosuppression-graft-continuity/ # 肾移植、免疫抑制与移植物连续性
     └── telomere-maintenance/ # 端粒维护
 ```
 
@@ -684,7 +694,7 @@ human_infra/
 - `domains/cardiovascular-resilience/` 负责心脏、血管、血压、动脉粥样硬化、血栓、卒中、心衰和循环系统韧性。
 - `domains/musculoskeletal-integrity/` 负责肌肉、骨骼、关节、肌少症、骨质疏松、跌倒和行动承载结构。
 - `domains/skin-barrier-wound-healing/` 负责皮肤屏障、伤口愈合、压力损伤、感染入口、热调节和感觉边界。
-- `domains/urogenital-continuity/` 负责膀胱、尿路、尿控、盆底、泌尿感染、性功能和日常尊严。
+- `domains/urogenital-continuity/` 负责膀胱、尿路、尿控、盆底、泌尿感染、性功能和日常尊严；`domains/urinary-tract-infection-pyelonephritis-urosepsis-continuity/`、`domains/catheter-associated-uti-device-infection-continuity/`、`domains/urinary-retention-bladder-emptying-continuity/`、`domains/overactive-bladder-nocturia-sleep-continuity/`、`domains/kidney-stone-obstruction-renal-colic-continuity/`、`domains/benign-prostatic-hyperplasia-luts-continuity/`、`domains/urinary-diversion-urostomy-supplies-continuity/`、`domains/dialysis-access-vascular-peritoneal-continuity/`、`domains/home-dialysis-supply-self-management-continuity/` 和 `domains/kidney-transplant-immunosuppression-graft-continuity/` 负责尿路感染、导尿设备、尿潴留、夜尿、结石梗阻、BPH/LUTS、尿流改道、透析通路、家庭透析和肾移植这些排泄出口与肾脏替代执行层失效模式。
 - `domains/reproductive-fertility-continuity/` 负责生育力、生殖衰老、配子质量、妊娠风险、生殖自主性和未来选择权。
 - `domains/attention-executive-control/` 负责注意力、执行功能、工作记忆、抑制控制、任务切换、冲动控制和分心环境。
 - `domains/learning-skill-acquisition/` 负责学习科学、技能形成、反馈、迁移、再训练和终身学习。
@@ -1065,3 +1075,4 @@ human_infra/
 - 2026-07-01：新增第八十六波慢性神经退行、神经肌肉与感染后功能连续性研究域，覆盖帕金森病、多发性硬化、ALS、亨廷顿病、脊髓性肌萎缩症、肌营养不良、重症肌无力、脊髓损伤、ME/CFS 和 Long COVID。
 - 2026-07-01：新增第八十七波器官/阶段特异癌症连续性研究域，覆盖乳腺癌、结直肠癌、肺癌、前列腺癌、宫颈癌、卵巢癌、胰腺癌、肝癌、儿童癌症和癌症幸存者晚期效应。
 - 2026-07-01：新增第八十八波口腔、牙科与颌面功能连续性研究域，覆盖龋病、牙周病、缺牙修复咀嚼、牙痛急性感染、口腔癌早期识别、儿童口腔、老年长期照护口腔、牙科服务可及性、口干唾液功能和颞下颌/口颌面痛。
+- 2026-07-01：新增第九十四波 10 个泌尿与肾脏替代执行连续性域，覆盖尿路感染/肾盂肾炎/尿源性脓毒症、导尿相关 UTI、尿潴留、膀胱过度活动/夜尿、肾结石梗阻、BPH/LUTS、尿流改道/尿路造口、透析通路、家庭透析供应和肾移植免疫抑制。

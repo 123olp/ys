@@ -128,6 +128,16 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `fluid-electrolyte-acid-base-homeostasis/` | 水分、电解质、渗透压和酸碱状态是神经、肌肉、心律和内环境稳定的基础条件 |
 | `thermal-homeostasis-resilience/` | 体温调节、热暴露和寒冷暴露把环境压力直接转化为急性生理风险 |
 | `urogenital-continuity/` | 尿控、尿路感染、盆底、性功能和尊严具有独立功能、睡眠、照护和参与边界 |
+| `urinary-tract-infection-pyelonephritis-urosepsis-continuity/` | UTI、肾盂肾炎和尿源性脓毒症把局部感染、抗菌药暴露、服务延迟和全身风险连接起来 |
+| `catheter-associated-uti-device-infection-continuity/` | 导尿设备会把照护接口转化为 CAUTI、行动限制、感染控制和照护负担 |
+| `urinary-retention-bladder-emptying-continuity/` | 膀胱排空失败会把梗阻、神经源性因素、感染、肾脏回压和导尿依赖连接起来 |
+| `overactive-bladder-nocturia-sleep-continuity/` | 尿急、尿频和夜尿通过睡眠中断、跌倒风险、厕所规划和社交回避压缩有效时间 |
+| `kidney-stone-obstruction-renal-colic-continuity/` | 肾结石和尿路梗阻会把疼痛、感染叠加、复发、急诊可及和肾功能风险连接起来 |
+| `benign-prostatic-hyperplasia-luts-continuity/` | BPH/LUTS 通过夜尿、尿潴留、感染、工作出行和生活质量形成长期摩擦 |
+| `urinary-diversion-urostomy-supplies-continuity/` | 尿流改道和尿路造口依赖造口袋、皮肤屏障、泄漏治理、耗材供应和尊严接口 |
+| `dialysis-access-vascular-peritoneal-continuity/` | 透析通路是肾脏替代治疗能否按时运行的硬入口，成熟失败、感染和血栓会直接中断治疗 |
+| `home-dialysis-supply-self-management-continuity/` | 家庭透析把肾脏替代治疗转入住所，依赖耗材配送、电水、训练、照护者和备用方案 |
+| `kidney-transplant-immunosuppression-graft-continuity/` | 肾移植后的主体持续性取决于移植物功能、免疫抑制、排斥/感染监测和药物供应 |
 | `reproductive-fertility-continuity/` | 生育力、生殖衰老和生殖自主性影响未来选择权、资源规划和长期人生路径 |
 | `attention-executive-control/` | 注意力、工作记忆、抑制控制和任务切换决定时间能否稳定转化为有效行动 |
 | `learning-skill-acquisition/` | 学习、反馈、技能迁移和再训练决定主体能否把延长时间转化为能力复利 |
@@ -872,6 +882,7 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | NIDCD / ASHA speech-language resources | 提示言语语言总域需要拆成失语、构音障碍、言语失用、嗓音障碍、口吃、发展性语言障碍、语音障碍、AAC、社会语用沟通和认知沟通这些执行层 |
 | NIDCD dysphagia resources | 提示吞咽安全把营养、水分、气道保护、误吸风险和进食尊严连接起来 |
 | NIDCD / ASHA / IDDSI / AHA-ASA / ASPEN-ESPEN / CMS swallowing feeding resources | 提示吞咽总域需要拆成口咽、食管、误吸肺炎、窒息、质地饮食、管饲、儿童摄食、卒中后吞咽、神经退行性吞咽和进食协助这些执行层 |
+| NIDDK / CDC / NKF / MedlinePlus urinary and renal replacement resources | 提示泌尿与肾脏替代总域需要拆成 UTI、CAUTI、尿潴留、夜尿、结石、BPH、尿流改道、透析通路、家庭透析和肾移植这些执行层 |
 | NIDCD smell and taste disorder resources | 提示嗅味觉支撑危险气味识别、食欲、营养和生活质量 |
 | NINDS / NIDDK peripheral neuropathy resources | 提示周围神经和躯体感觉把身体边界、步态、足部风险、疼痛和伤口发现连接起来 |
 | NOAA / NASA space weather resources | 提示太阳活动会把外部天体物理事件转化为电网、卫星、通信、导航和时间同步风险 |
@@ -2155,6 +2166,20 @@ Source links:
 - https://content.naic.org/article/learn-how-use-naic-life-insurance-policy-locator
 - https://www.identitytheft.gov/
 - https://www.ftc.gov/business-guidance/resources/click-cancel-negative-option-rule
+- https://www.niddk.nih.gov/health-information/urologic-diseases/bladder-infection-uti-in-adults
+- https://www.cdc.gov/uti/about/index.html
+- https://www.cdc.gov/healthcare-associated-infections/php/toolkit/cauti.html
+- https://www.niddk.nih.gov/health-information/urologic-diseases/urinary-retention
+- https://www.niddk.nih.gov/health-information/urologic-diseases/bladder-control-problems
+- https://www.niddk.nih.gov/health-information/urologic-diseases/kidney-stones
+- https://www.niddk.nih.gov/health-information/urologic-diseases/prostate-problems/prostate-enlargement-benign-prostatic-hyperplasia
+- https://www.niddk.nih.gov/health-information/urologic-diseases/urinary-diversion
+- https://www.niddk.nih.gov/health-information/kidney-disease/kidney-failure/hemodialysis
+- https://www.niddk.nih.gov/health-information/kidney-disease/kidney-failure/peritoneal-dialysis
+- https://www.niddk.nih.gov/health-information/kidney-disease/kidney-failure/kidney-transplant
+- https://www.kidney.org/kidney-topics/vascular-access
+- https://www.kidney.org/kidney-topics/home-hemodialysis
+- https://www.kidney.org/kidney-topics/kidney-transplant
 
 ## 使用规则
 

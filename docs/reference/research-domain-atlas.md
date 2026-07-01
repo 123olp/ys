@@ -79,6 +79,16 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 承载结构可持续 | `musculoskeletal-integrity/` | 肌肉、骨骼、关节、跌倒、疼痛和独立性 | 存活但失能、跌倒骨折、长期疼痛 |
 | 外界屏障可维护 | `skin-barrier-wound-healing/` | 皮肤屏障、伤口愈合、感染入口、热调节 | 把伤口或皮肤表现写成诊断和护理方案 |
 | 排泄、性功能和尊严可连续 | `urogenital-continuity/` | 尿控、尿路、盆底、感染、性功能、尊严 | 把症状、感染或性功能写成诊断和治疗建议 |
+| 尿路感染必须不进入全身风险 | `urinary-tract-infection-pyelonephritis-urosepsis-continuity/` | UTI、复发、肾盂肾炎、尿源性脓毒症、抗菌药暴露 | 局部感染上行造成发热、谵妄、肾脏受累、脓毒症和恢复成本 |
+| 导尿设备必须控制感染边界 | `catheter-associated-uti-device-infection-continuity/` | 导尿、CAUTI、留置时间、感染控制、行动限制 | 设备从照护接口变成感染入口、行动束缚和照护负担 |
+| 膀胱排空必须可恢复 | `urinary-retention-bladder-emptying-continuity/` | 急性/慢性尿潴留、梗阻、神经源性因素、导尿依赖 | 排空失败导致疼痛、感染、肾脏回压、急诊依赖和日常自主性下降 |
+| 夜尿必须保护睡眠有效时间 | `overactive-bladder-nocturia-sleep-continuity/` | 尿急、尿频、夜尿、睡眠中断、跌倒风险 | 膀胱症状把恢复睡眠、注意力、外出计划和社交参与切碎 |
+| 尿路通道必须不被结石阻断 | `kidney-stone-obstruction-renal-colic-continuity/` | 肾结石、尿路梗阻、肾绞痛、感染叠加、复发 | 梗阻和疼痛把日常行动转成急诊窗口、感染风险和肾功能风险 |
+| BPH/LUTS 必须纳入慢性摩擦 | `benign-prostatic-hyperplasia-luts-continuity/` | BPH、下尿路症状、夜尿、尿潴留、感染 | 慢性尿路摩擦压缩睡眠、工作、出行、尊严和服务使用 |
+| 尿流改道必须有耗材和尊严接口 | `urinary-diversion-urostomy-supplies-continuity/` | 尿流改道、尿路造口、造口袋、皮肤屏障、泄漏 | 没有耗材、皮肤保护和泄漏治理时，替代通路变成感染、羞耻和外出限制 |
+| 透析通路必须持续可用 | `dialysis-access-vascular-peritoneal-continuity/` | 血管通路、腹膜通路、成熟失败、感染、血栓 | 肾脏替代治疗因通路失败变成中断、住院、感染和生命支持风险 |
+| 家庭透析必须有居家供应系统 | `home-dialysis-supply-self-management-continuity/` | 家庭血透、腹膜透析、耗材、电水、训练、照护者 | 居家治疗因供应、设备、训练或照护者断裂而转回危机依赖 |
+| 肾移植必须长期维持移植物治理 | `kidney-transplant-immunosuppression-graft-continuity/` | 移植物功能、免疫抑制、排斥、感染、药物供应 | 移植成功若缺少长期药物和监测治理，会退化为排斥、感染或再次肾衰 |
 | 生殖未来选择权可保留 | `reproductive-fertility-continuity/` | 生育力、配子质量、生殖衰老、生殖自主性 | 把生育力、激素或年龄写成个体选择结论 |
 | 注意力可被稳定分配 | `attention-executive-control/` | 持续注意、工作记忆、抑制控制、任务切换、冲动控制 | 把注意力效率写成诊断、药物或高压工作处方 |
 | 时间可转化为能力 | `learning-skill-acquisition/` | 学习速度、反馈质量、练习轮次、技能迁移、再训练 | 把课程、工具或学习技巧写成确定能力提升承诺 |
@@ -805,6 +815,16 @@ cellular-reprogramming
   -> musculoskeletal-integrity
   -> skin-barrier-wound-healing
   -> urogenital-continuity
+  -> urinary-tract-infection-pyelonephritis-urosepsis-continuity
+  -> catheter-associated-uti-device-infection-continuity
+  -> urinary-retention-bladder-emptying-continuity
+  -> overactive-bladder-nocturia-sleep-continuity
+  -> kidney-stone-obstruction-renal-colic-continuity
+  -> benign-prostatic-hyperplasia-luts-continuity
+  -> urinary-diversion-urostomy-supplies-continuity
+  -> dialysis-access-vascular-peritoneal-continuity
+  -> home-dialysis-supply-self-management-continuity
+  -> kidney-transplant-immunosuppression-graft-continuity
   -> reproductive-fertility-continuity
   -> attention-executive-control
   -> learning-skill-acquisition

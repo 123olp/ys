@@ -624,6 +624,24 @@ Human Infra 不能被设计成更精密的压榨系统。
 - 产出污名化、性身份推断、未成年人监控、生殖胁迫、医疗回避、检测规避、治疗规避、家庭自行处理、商业产品背书或高敏感个人资料收集内容。
 - 替代睡眠医学、心理治疗、妇产科、感染科、肝病科、泌尿/盆底康复、皮肤科、药学、公共卫生、法律援助、危机服务或本地专业人员。
 
+## 泌尿与肾脏替代执行连续性边界
+
+`urinary-tract-infection-pyelonephritis-urosepsis-continuity`、`catheter-associated-uti-device-infection-continuity`、`urinary-retention-bladder-emptying-continuity`、`overactive-bladder-nocturia-sleep-continuity`、`kidney-stone-obstruction-renal-colic-continuity`、`benign-prostatic-hyperplasia-luts-continuity`、`urinary-diversion-urostomy-supplies-continuity`、`dialysis-access-vascular-peritoneal-continuity`、`home-dialysis-supply-self-management-continuity` 和 `kidney-transplant-immunosuppression-graft-continuity` 关注尿路感染、导尿设备、膀胱排空、夜尿睡眠、结石梗阻、BPH/LUTS、尿流改道、透析通路、家庭透析和肾移植免疫治理如何影响主体的排泄出口、内环境稳定、有效时间、行动半径和尊严，不是个人泌尿、肾脏、透析、造口或移植医疗建议入口。
+
+可以做：
+
+- 整理 NIDDK、CDC、NKF、MedlinePlus 和相关公共机构资料。
+- 比较感染入口、设备依赖、膀胱排空、睡眠中断、梗阻、耗材供应、通路维护、家庭治疗、免疫抑制和移植物功能如何影响主体持续性。
+- 记录服务入口、设备/耗材依赖、急性恶化窗口、感染风险、生活参与、证据等级、禁止用途和不确定性。
+
+不能做：
+
+- 提供尿检/实验室解释、UTI/肾盂肾炎/尿源性脓毒症判断、抗生素、导尿/拔管/护理、排尿训练、止痛/排石、BPH 用药/手术、造口护理/产品、透析通路/参数/操作、家庭透析故障处理、移植资格、免疫抑制用药、急诊分诊、保险申诉或个体医疗建议。
+- 生成个人风险评分、症状分诊、检查周期、影像或尿液结果判读、药物剂量、设备选择、家庭护理步骤、饮食/饮水处方、复工/驾驶/旅行许可、透析排程或移植随访建议。
+- 收集、存储或推断可识别个人的尿检、肾功能、影像、导尿记录、造口照片、透析记录、移植药物、保险、就诊记录、定位、儿童信息或其他 PHI。
+- 产出医疗回避、延误就医、自我导尿/透析/停药实验、抗菌药滥用、设备规避、耗材囤积套利、产品背书、保险规避或高敏感个人资料收集内容。
+- 替代泌尿科、肾脏科、感染科、急诊、护理、造口治疗师、透析中心、移植团队、药师、公共卫生、保险、法律援助或本地专业人员。
+
 ## 慢性专科负担与功能恢复边界
 
 `chronic-pain-functional-restoration-continuity`、`low-back-pain-spine-function-continuity`、`osteoarthritis-joint-function-continuity`、`autoimmune-rheumatic-disease-inflammatory-burden-continuity`、`inflammatory-bowel-disease-digestive-continuity`、`chronic-liver-disease-masld-mash-continuity`、`thyroid-disease-endocrine-function-continuity`、`iron-deficiency-anemia-oxygen-carrying-continuity`、`asthma-copd-maintenance-control-continuity` 和 `allergic-atopic-disease-immunologic-burden-continuity` 关注慢性疼痛、脊柱、关节、免疫炎症、消化道炎症、慢性肝病、甲状腺、贫血、慢性气道和过敏/特应性疾病如何长期消耗有效时间、恢复质量、移动能力、体力、注意力、社会参与和未来选择权，不是个人诊断、治疗、康复、药物、手术、补剂、饮食、保险或工作能力判断入口。
