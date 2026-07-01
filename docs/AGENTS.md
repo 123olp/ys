@@ -126,6 +126,7 @@ docs/
 │   ├── 0115-add-one-hundred-tenth-wave-household-indoor-air-ventilation-execution-domains.md
 │   ├── 0116-add-one-hundred-eleventh-wave-household-physical-order-object-access-domains.md
 │   ├── 0117-add-one-hundred-twelfth-wave-household-operating-metadata-handoff-domains.md
+│   ├── 0118-add-one-hundred-thirteenth-wave-neighborhood-public-space-maintenance-service-request-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -302,6 +303,7 @@ docs/
 - `domains/home-hvac-filter-maintenance-indoor-air-continuity/`、`domains/portable-air-cleaner-room-filtration-continuity/`、`domains/cooking-ventilation-range-hood-indoor-air-continuity/`、`domains/home-humidity-dehumidifier-moisture-control-continuity/`、`domains/household-dust-allergen-source-control-continuity/` 和 `domains/household-voc-fragrance-product-emission-continuity/`：第一百一十波正式研究域，分别承载 HVAC 滤网维护、便携房间过滤、烹饪排风、家庭湿度水分控制、灰尘过敏原源控制和 VOC/香氛/产品释放这些家庭室内空气执行连续性。
 - `domains/home-clutter-pathway-trip-fall-continuity/`、`domains/household-cord-cable-trip-entanglement-continuity/`、`domains/home-shelving-cabinet-storage-stability-continuity/`、`domains/household-ladder-step-stool-reach-task-continuity/`、`domains/home-office-workstation-ergonomics-continuity/` 和 `domains/toy-small-parts-choking-ingestion-continuity/`：第一百一十一波正式研究域，分别承载通道杂物绊倒、家庭线缆绊倒缠绕、货架柜体储物稳定、梯凳高处任务、居家办公工位工效和玩具小零件窒息误吞这些家庭物理秩序与物品访问执行连续性。
 - `domains/home-utility-shutoff-location-labeling-continuity/`、`domains/household-circuit-breaker-panel-labeling-continuity/`、`domains/home-water-valve-plumbing-labeling-continuity/`、`domains/household-equipment-serial-model-recall-record-continuity/`、`domains/home-service-provider-emergency-contact-directory-continuity/` 和 `domains/household-operating-map-handoff-continuity/`：第一百一十二波正式研究域，分别承载家庭公用设施关断位置标识、断路器面板标签、水路阀门标签、家庭设备型号召回记录、家庭服务联系人目录和家庭运行地图交接这些家庭运行元数据与交接连续性。
+- `domains/municipal-311-service-request-continuity/`、`domains/streetlight-outage-nighttime-visibility-continuity/`、`domains/sidewalk-curb-ramp-maintenance-access-continuity/`、`domains/snow-ice-sidewalk-winter-access-continuity/`、`domains/street-tree-branch-hazard-shade-maintenance-continuity/` 和 `domains/storm-drain-catch-basin-local-flooding-continuity/`：第一百一十三波正式研究域，分别承载市政 311 服务请求、路灯夜间可见性、人行道/路缘坡道维护、雪冰冬季通行、街道树木维护和雨水口局部内涝这些邻里公共空间维护与地方服务请求执行连续性。
 - `reference/research-model-visualization-toolkit.md`：沉淀科研论文阅读、文献脊梁、模型工具、可视化标准和 Human Infra 定量页面实现路线。
 - `reference/source-card-system.md`：定义论文、书籍、工具、案例、标准和数据集进入项目之前的资料卡片制度。
 - `reference/domain-map.md`：定义根项目与子域的边界、迁移切片、主动不做和验证点。

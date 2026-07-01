@@ -861,6 +861,12 @@ flowchart TD
     H --> PRGSAC[parks-recreation-green-space-access-continuity<br/>公园绿地 / 恢复空间]
     H --> PWDCCC[public-wifi-device-charging-connectivity-continuity<br/>公共 Wi-Fi / 设备充电]
     H --> PAASC[public-accommodation-accessibility-service-continuity<br/>公共场所 / 无障碍服务]
+    H --> M311SRC[municipal-311-service-request-continuity<br/>311 请求 / 市政派单]
+    H --> SONVC[streetlight-outage-nighttime-visibility-continuity<br/>路灯故障 / 夜间可见]
+    H --> SCRMAC[sidewalk-curb-ramp-maintenance-access-continuity<br/>人行道坡道 / 维护可达]
+    H --> SISWAC[snow-ice-sidewalk-winter-access-continuity<br/>雪冰人行道 / 冬季通行]
+    H --> STBHSMC[street-tree-branch-hazard-shade-maintenance-continuity<br/>街道树木 / 树荫断枝]
+    H --> SDCBLFC[storm-drain-catch-basin-local-flooding-continuity<br/>雨水口 / 局部内涝]
     H --> GRFSAC[grocery-retail-food-store-access-continuity<br/>食品零售 / Grocery 可达]
     H --> SERPC[snap-ebt-redemption-retailer-payment-continuity<br/>SNAP EBT / 兑换支付]
     H --> WBRIMN[wic-benefit-redemption-infant-maternal-nutrition-continuity<br/>WIC / 母婴营养兑换]
@@ -1336,6 +1342,12 @@ flowchart TD
 | [Parks Recreation Green Space Access Continuity](domains/parks-recreation-green-space-access-continuity/README.md) | 公园、绿地、步道、运动场、游乐场、自然接触和公共娱乐设施 | 让身体活动、心理恢复、社交连接和热环境缓冲具备低成本公共空间 | 不提供违规进入、设施破坏、露宿规避、儿童/弱势群体跟踪或野外风险操作 |
 | [Public Wifi Device Charging Connectivity Continuity](domains/public-wifi-device-charging-connectivity-continuity/README.md) | 公共 Wi-Fi、公共电脑、设备充电点、断电通信恢复和数字服务访问 | 防止失联、错过告警、导航支付失败、医疗门户断裂和信息失明 | 不提供网络攻击、认证绕过、蹭网滥用、设备盗充、公共电脑规避或账号盗用 |
 | [Public Accommodation Accessibility Service Continuity](domains/public-accommodation-accessibility-service-continuity/README.md) | 公共场所无障碍、合理便利、有效沟通、服务动物、辅助设备和临时中断 | 让身体、感官、认知和沟通差异不再直接截断公共任务入口 | 不提供 ADA 诉讼策略、服务动物欺诈、伪造残障文件、规避规则或法律建议 |
+| [Municipal 311 Service Request Continuity](domains/municipal-311-service-request-continuity/README.md) | 311、非紧急服务请求、Open311、派单、状态回传、公开服务请求数据 | 把邻里问题从个人观察转成可报告、可派单、可跟踪的公共服务对象 | 不提供紧急报警替代、投诉代写、执法规避、骚扰举报、个人跟踪或法律策略 |
+| [Streetlight Outage Nighttime Visibility Continuity](domains/streetlight-outage-nighttime-visibility-continuity/README.md) | 路灯故障、夜间可见性、行人照明、维修报告和暗区路径 | 防止黑暗时段把出行、照护、公交接入和求助变成绕行、恐惧和伤害风险 | 不提供电气维修、照明设计、安防部署、犯罪预测、路线建议或个案安全判断 |
+| [Sidewalk Curb Ramp Maintenance Access Continuity](domains/sidewalk-curb-ramp-maintenance-access-continuity/README.md) | 人行道、路缘坡道、裂缝隆起、临时阻挡、PROWAG/ADA 和维护请求 | 把最后一公里步行、轮椅、助行器、推车和公交接入纳入公共维护连续性 | 不提供施工、测量认证、ADA 法律意见、索赔、投诉代写或路线建议 |
+| [Snow Ice Sidewalk Winter Access Continuity](domains/snow-ice-sidewalk-winter-access-continuity/README.md) | 雪、冰、除雪责任、冻融、路缘坡道阻挡、公交站和冬季通行 | 防止冬季把医疗、食物、工作、学校、照护和公共服务通行不成比例切断 | 不提供除雪操作、融雪剂配方、法律责任判断、服务雇佣、医疗建议或个案路线 |
+| [Street Tree Branch Hazard Shade Maintenance Continuity](domains/street-tree-branch-hazard-shade-maintenance-continuity/README.md) | 街道树、断枝、倒树、根系冲突、树荫、树冠和维护请求 | 同时治理街道树作为热缓冲资产和公共通行/伤害风险接口 | 不提供修剪砍伐、病虫害诊断、承包商推荐、责任判断、保险或现场风险评估 |
+| [Storm Drain Catch Basin Local Flooding Continuity](domains/storm-drain-catch-basin-local-flooding-continuity/README.md) | 雨水口、catch basin、街道积水、堵塞、绿色基础设施和局部内涝 | 防止降雨后街道、人行道、公交、急救和住房入口被排水失败切断 | 不提供排水施工、清掏操作、涉水驾驶、洪水救援、污染判断、抽水或保险索赔 |
 | [Grocery Retail Food Store Access Continuity](domains/grocery-retail-food-store-access-continuity/README.md) | 超市、杂货店、小型食品零售、农贸市场、线上取货配送、价格和支付入口 | 让收入、福利、交通和时间能够转化为真实日常食物输入 | 不提供购物推荐、价格套利、偷盗、优惠券滥用、支付规避或配送平台规避 |
 | [SNAP EBT Redemption Retailer Payment Continuity](domains/snap-ebt-redemption-retailer-payment-continuity/README.md) | SNAP EBT 卡、PIN、余额、授权零售商、在线购买、交易失败和账户恢复 | 让营养援助从资格记录转成可购买食物，降低支付与账户摩擦 | 不提供资格规避、福利欺诈、EBT 破解、PIN 获取、盗刷、福利转售或零售商欺诈 |
 | [WIC Benefit Redemption Infant Maternal Nutrition Continuity](domains/wic-benefit-redemption-infant-maternal-nutrition-continuity/README.md) | WIC 食物包、eWIC、授权商店、婴儿配方、母婴营养和转介服务 | 让孕产妇、婴幼儿和儿童获得稳定营养输入与早期发展支持 | 不提供资格规避、eWIC 破解、配方囤积转售、婴儿喂养医疗建议或个案申诉策略 |
@@ -1933,6 +1945,12 @@ human_infra/
 │   ├── parks-recreation-green-space-access-continuity/
 │   ├── public-wifi-device-charging-connectivity-continuity/
 │   ├── public-accommodation-accessibility-service-continuity/
+│   ├── municipal-311-service-request-continuity/
+│   ├── streetlight-outage-nighttime-visibility-continuity/
+│   ├── sidewalk-curb-ramp-maintenance-access-continuity/
+│   ├── snow-ice-sidewalk-winter-access-continuity/
+│   ├── street-tree-branch-hazard-shade-maintenance-continuity/
+│   ├── storm-drain-catch-basin-local-flooding-continuity/
 │   ├── grocery-retail-food-store-access-continuity/
 │   ├── snap-ebt-redemption-retailer-payment-continuity/
 │   ├── wic-benefit-redemption-infant-maternal-nutrition-continuity/
@@ -2528,5 +2546,6 @@ flowchart LR
 - 2026-07-01：新增第一百一十波 6 个家庭室内空气与通风执行连续性域，覆盖 HVAC 滤网维护、便携房间过滤、烹饪排风、家庭湿度水分控制、灰尘过敏原源控制和 VOC/香氛/产品释放。
 - 2026-07-01：新增第一百一十一波 6 个家庭物理秩序、物品访问与执行摩擦连续性域，覆盖通道杂物绊倒、家庭线缆绊倒缠绕、货架柜体储物稳定、梯凳高处任务、居家办公工位工效和玩具小零件窒息误吞。
 - 2026-07-01：新增第一百一十二波 6 个家庭运行元数据与交接连续性域，覆盖公用设施关断位置标识、断路器面板标签、水路阀门标签、家庭设备型号召回记录、家庭服务联系人目录和家庭运行地图交接。
+- 2026-07-01：新增第一百一十三波 6 个邻里公共空间维护与地方服务请求执行连续性域，覆盖 311 服务请求、路灯夜间可见性、人行道/路缘坡道、雪冰冬季通行、街道树木维护和雨水口局部内涝。
 
 完整记录见 [CHANGELOG.md](CHANGELOG.md)。

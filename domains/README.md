@@ -636,6 +636,12 @@
 - `parks-recreation-green-space-access-continuity/`：公园、娱乐与绿地接入连续性，整理公园、绿地、步道、运动场、游乐场、自然接触和公共娱乐设施。
 - `public-wifi-device-charging-connectivity-continuity/`：公共 Wi-Fi、设备充电与连接连续性，整理公共 Wi-Fi、公共电脑、设备充电点、断电通信恢复和数字服务访问。
 - `public-accommodation-accessibility-service-continuity/`：公共场所无障碍与服务接入连续性，整理无障碍入口、有效沟通、合理便利、服务动物、辅助设备和临时中断。
+- `municipal-311-service-request-continuity/`：市政 311 与非紧急服务请求连续性，整理 Open311、服务请求、派单、状态回传和地方公共工程响应。
+- `streetlight-outage-nighttime-visibility-continuity/`：路灯故障与夜间可见性连续性，整理路灯、照明故障、夜间路径可读性和维修报告。
+- `sidewalk-curb-ramp-maintenance-access-continuity/`：人行道、路缘坡道维护与可达连续性，整理表面断点、坡道、临时阻挡、PROWAG/ADA 和维护请求。
+- `snow-ice-sidewalk-winter-access-continuity/`：雪冰、人行道与冬季通行连续性，整理雪冰堆积、冻融、公交站阻挡、路缘坡道阻挡和清理责任。
+- `street-tree-branch-hazard-shade-maintenance-continuity/`：街道树、断枝风险与树荫维护连续性，整理树冠、断枝、根系冲突、维护请求和热缓冲。
+- `storm-drain-catch-basin-local-flooding-continuity/`：雨水口、catch basin 与局部内涝连续性，整理雨水口、堵塞、街道积水、绿色基础设施和服务请求。
 - `grocery-retail-food-store-access-continuity/`：Grocery、食品零售与日常食物采购连续性，整理超市、小型食品店、农贸市场、线上取货配送、价格、支付和可达性。
 - `snap-ebt-redemption-retailer-payment-continuity/`：SNAP EBT 兑换、零售商与支付连续性，整理 EBT 卡、PIN、余额、授权零售商、在线购买、交易失败和账户恢复。
 - `wic-benefit-redemption-infant-maternal-nutrition-continuity/`：WIC 兑换、母婴营养与早期食物连续性，整理 WIC 食物包、eWIC、授权商店、婴儿配方、母乳支持和转介服务。

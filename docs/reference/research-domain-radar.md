@@ -819,6 +819,12 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `parks-recreation-green-space-access-continuity/` | 公园、娱乐和绿地决定低成本身体活动、心理恢复、社交连接、儿童活动和热环境缓冲是否可达 |
 | `public-wifi-device-charging-connectivity-continuity/` | 公共 Wi-Fi 和设备充电决定主体离家、旅行或断电时是否仍能通信、导航、支付、求助和访问数字服务 |
 | `public-accommodation-accessibility-service-continuity/` | 公共场所无障碍和服务连续性决定身体、感官、认知和沟通差异是否会被公共服务接口排除 |
+| `municipal-311-service-request-continuity/` | 311、Open311 和地方服务请求决定街区问题是否能从个人观察转成可派单、可追踪、可回传的维护对象 |
+| `streetlight-outage-nighttime-visibility-continuity/` | 路灯故障和夜间可见性决定主体夜间步行、等车、返家和紧急出行是否会被黑暗环境压缩 |
+| `sidewalk-curb-ramp-maintenance-access-continuity/` | 人行道和路缘坡道维护决定步行、轮椅、婴儿车、助行器和短距离生活任务是否保持连续 |
+| `snow-ice-sidewalk-winter-access-continuity/` | 雪冰人行道和冬季路径恢复决定寒冷季节医疗、工作、上学、食品和公共服务接入是否会中断 |
+| `street-tree-branch-hazard-shade-maintenance-continuity/` | 街道树维护决定公共空间能否同时获得树荫降温、生态服务和断枝/树根风险控制 |
+| `storm-drain-catch-basin-local-flooding-continuity/` | 雨水口和 catch basin 维护决定暴雨后街区积水是否会切断公交、步行、无障碍路径和低洼空间恢复 |
 | `grocery-retail-food-store-access-continuity/` | Grocery、食品零售和低收入低可达地区决定主体是否能把钱、距离、营业时间和支付方式转化为真实食物 |
 | `snap-ebt-redemption-retailer-payment-continuity/` | SNAP EBT、授权零售商和在线购买决定福利是否能在合规零售场景中被安全、连续、低摩擦兑换 |
 | `wic-benefit-redemption-infant-maternal-nutrition-continuity/` | WIC、eWIC、vendor、食品包和婴儿配方决定孕产妇、婴儿和儿童的指定营养支持是否能真实到手 |
@@ -2418,6 +2424,19 @@ Source links:
 - https://consumer.ftc.gov/articles/how-avoid-home-improvement-scam
 - https://www.poisonhelp.org/
 - https://www.fema.gov/emergency-financial-first-aid-kit
+- https://wiki.open311.org/GeoReport_v2/
+- https://opendata.cityofnewyork.us/
+- https://www.usa.gov/local-governments
+- https://highways.dot.gov/safety/other/nighttime-visibility
+- https://highways.dot.gov/safety/pedestrian-bicyclist
+- https://www.access-board.gov/prowag/
+- https://www.ada.gov/resources/title-ii-primer/
+- https://www.cdc.gov/winter-weather/
+- https://www.fs.usda.gov/managing-land/urban-forests
+- https://www.epa.gov/heatislands/using-trees-and-vegetation-reduce-heat-islands
+- https://www.epa.gov/npdes/npdes-stormwater-program
+- https://www.epa.gov/green-infrastructure
+- https://www.ready.gov/floods
 
 ## 使用规则
 

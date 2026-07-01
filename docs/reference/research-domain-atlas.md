@@ -542,6 +542,12 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 公园绿地必须支撑恢复 | `parks-recreation-green-space-access-continuity/` | 公园、绿地、步道、运动场、游乐场、自然接触、公共娱乐设施 | 绿地不可达会减少身体活动、心理恢复、社交连接和热环境缓冲 |
 | 公共连接和充电必须不断线 | `public-wifi-device-charging-connectivity-continuity/` | 公共 Wi-Fi、公共电脑、设备充电、断电通信恢复、数字服务访问 | 失联、没电、导航支付失败和错过告警会截断离家任务与灾害恢复 |
 | 公共场所无障碍必须连续 | `public-accommodation-accessibility-service-continuity/` | 无障碍入口、有效沟通、合理便利、服务动物、辅助设备、临时中断 | 身体、感官、认知和沟通差异会被服务接口失败转化为制度排除 |
+| 邻里问题必须可转成服务请求 | `municipal-311-service-request-continuity/` | 311、Open311、service request、派单、状态回传 | 没有可报告、可派单、可回传的渠道，街区问题会长期滞留在个人暴露层 |
+| 夜间路径必须可见 | `streetlight-outage-nighttime-visibility-continuity/` | 路灯故障、夜间可见性、行人照明、暗区路径 | 黑暗会收缩夜间行动半径并放大跌倒、交通冲突和恐惧成本 |
+| 人行道坡道必须连续可通行 | `sidewalk-curb-ramp-maintenance-access-continuity/` | 人行道缺陷、路缘坡道、PROWAG/ADA、绊倒风险 | 步行设施断裂会把短距离任务、无障碍出行、照护推行和公共服务接入切断 |
+| 冬季路径必须可恢复 | `snow-ice-sidewalk-winter-access-continuity/` | 雪冰、人行道、坡道、公交站、季节性清理 | 雪冰清理失败会把冬季出行、上学上班、医疗和食品任务压缩到室内 |
+| 街道树必须兼顾树荫与风险 | `street-tree-branch-hazard-shade-maintenance-continuity/` | 街道树、断枝、树根、树荫、城市林业 | 树木维护失败会同时制造断枝/通行风险和树荫缺失/热暴露成本 |
+| 雨水口必须维持街区排水 | `storm-drain-catch-basin-local-flooding-continuity/` | 雨水口、catch basin、街道积水、雨洪维护 | 排水入口堵塞会把雨后通行、公交接入、无障碍路径和低洼居住恢复切断 |
 | 日常食品零售必须可达 | `grocery-retail-food-store-access-continuity/` | Grocery、食品零售、低收入低可达地区、营业时间、支付、替代采购 | 食品店不可达、价格/支付/距离摩擦会把食物供给变成不可执行的营养输入 |
 | SNAP EBT 必须能真实兑换 | `snap-ebt-redemption-retailer-payment-continuity/` | SNAP EBT、授权零售商、在线购买、PIN、交易失败、账户安全 | 福利存在但不能在合规零售端兑换，会把社会保护变成账面权益 |
 | WIC 母婴营养兑换必须连续 | `wic-benefit-redemption-infant-maternal-nutrition-continuity/` | WIC、eWIC、vendor、食品包、婴儿配方、母婴营养 | 母婴营养福利、配方奶和指定食品不可兑换会直接压缩孕产妇、婴儿和儿童发育窗口 |
@@ -1317,6 +1323,12 @@ risk-engineering
   -> parks-recreation-green-space-access-continuity
   -> public-wifi-device-charging-connectivity-continuity
   -> public-accommodation-accessibility-service-continuity
+  -> municipal-311-service-request-continuity
+  -> streetlight-outage-nighttime-visibility-continuity
+  -> sidewalk-curb-ramp-maintenance-access-continuity
+  -> snow-ice-sidewalk-winter-access-continuity
+  -> street-tree-branch-hazard-shade-maintenance-continuity
+  -> storm-drain-catch-basin-local-flooding-continuity
   -> grocery-retail-food-store-access-continuity
   -> snap-ebt-redemption-retailer-payment-continuity
   -> wic-benefit-redemption-infant-maternal-nutrition-continuity

@@ -1840,6 +1840,24 @@ Human Infra 不能被设计成更精密的压榨系统。
 - 不收集、复制、处理或要求个人如厕记录、饮水记录、到访轨迹、残障身份、医疗证明、未成年人信息、安防细节、网络拓扑、登录凭据、避难者身份、实时容量、公共电脑记录、服务动物信息或个案法律/医疗/救援材料。
 - 不替代地方政府、公共卫生、水务、应急管理、图书馆、公园部门、FCC/ISP、CISA、ADA coordinator、无障碍专业人员、社会服务、医疗、法律、执法、监管机构或官方申诉/救援渠道。
 
+## 邻里公共空间维护与地方服务请求连续性边界
+
+`municipal-311-service-request-continuity`、`streetlight-outage-nighttime-visibility-continuity`、`sidewalk-curb-ramp-maintenance-access-continuity`、`snow-ice-sidewalk-winter-access-continuity`、`street-tree-branch-hazard-shade-maintenance-continuity` 和 `storm-drain-catch-basin-local-flooding-continuity` 关注街区问题如何从个人观察转成可报告、可派单、可维护、可回传的公共空间维护对象，覆盖 311 服务请求、路灯夜间可见性、人行道/路缘坡道、雪冰通行、街道树木和雨水口局部内涝，不是紧急报警、投诉代写、现场操作、执法规避或个案法律入口。
+
+可以做：
+
+- 整理 Open311 GeoReport、NYC 311 Open Data、USA.gov local governments、FHWA nighttime visibility / pedestrian and bicyclist safety、U.S. Access Board PROWAG、ADA.gov Title II、CDC winter weather / heat health、USFS urban forestry、EPA stormwater / green infrastructure 和 Ready.gov flood 公开资料中的机制、对象、变量和边界。
+- 比较 311 服务请求、路灯故障、人行道/路缘坡道维护、雪冰清除、街道树维护和雨水口清理如何影响夜间行动、无障碍通行、冬季出行、热缓冲、排水恢复、地方服务响应和主体离家任务执行。
+- 设计 `public-space condition -> service request/maintenance state -> access/safety/restoration burden -> continuity outcome` 链路，用于研究公共空间维护失败如何转化为主体持续性成本。
+
+不能做：
+
+- 不提供紧急报警替代、维修施工、除雪操作、涉水驾驶、树木修剪、照明工程、ADA 法律意见、投诉代写、执法规避、服务商推荐、保险理赔、医疗、法律或个案安全建议。
+- 不判断某条街、某盏灯、某段人行道、某个坡道、某棵树、某个雨水口、某次积雪、某次积水、某个 311 请求、某个执法事件或个案投诉应如何具体处理。
+- 不生成投诉威胁、执法应对、路权争议策略、服务请求批量轰炸、现场维修步骤、树木修剪方案、排水清理操作、除雪路线、涉水通行建议或法律文件。
+- 不收集、复制、处理或要求个人地址、实时位置、通勤轨迹、照片 EXIF、车牌、邻居身份、残障证明、事故记录、执法记录、311 账号、投诉证据、保险材料或法律材料。
+- 不替代 911、地方 311、公共工程部门、交通主管部门、ADA coordinator、树木/城市林业部门、雨洪管理部门、物业、执法、医疗、保险、法律、监管机构或官方服务请求渠道。
+
 ## 食物获得执行连续性边界
 
 `grocery-retail-food-store-access-continuity`、`snap-ebt-redemption-retailer-payment-continuity`、`wic-benefit-redemption-infant-maternal-nutrition-continuity`、`food-bank-pantry-community-food-distribution-continuity`、`emergency-food-disaster-feeding-continuity`、`home-delivered-meals-congregate-nutrition-services-continuity`、`infant-formula-baby-food-supply-safety-continuity` 和 `prepared-food-restaurant-cafeteria-safety-access-continuity` 关注主体如何通过食品零售、福利兑换、社区发放、灾害供餐、送餐/集体餐、婴儿配方/婴幼儿食品和外部熟食服务获得连续、安全、可负担的营养输入，不是福利规避、支付攻击、个体喂养处方、餐馆推荐、平台规避、投诉威胁或食品安全个案判断入口。

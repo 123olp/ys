@@ -4,6 +4,7 @@ All notable repository structure changes are recorded here.
 
 ## 2026-07-01
 
+- Added one-hundred-thirteenth wave neighborhood public-space maintenance and local-service-request continuity domains for 311 service requests, streetlight outages, sidewalk/curb ramp maintenance, snow/ice sidewalk access, street-tree hazards/shade, and storm-drain/catch-basin local flooding.
 - Added the one-hundred-eleventh wave of household physical-order, object-access, and execution-friction domains, covering home clutter/pathway trip hazards, household cords/cables trip and entanglement, shelving/cabinet storage stability, household ladders/step stools/reach tasks, home-office workstation ergonomics, and toy small-parts choking/ingestion safety.
 - Added the one-hundred-tenth wave of household indoor-air and ventilation execution-continuity domains, covering home HVAC filter maintenance, portable room air cleaners, cooking ventilation and range hoods, humidity/dehumidifier moisture control, household dust/allergen source control, and household VOC/fragrance/product emissions.
 - Added the one-hundred-ninth wave of household waste and disposal execution-continuity domains, covering residential solid waste collection and bin sanitation, household hazardous waste and chemical disposal, home sharps and medical waste disposal, e-waste and battery recycling/disposal, food-scrap composting pest/odor control, and illegal dumping/litter neighborhood sanitation.
