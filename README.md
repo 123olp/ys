@@ -485,6 +485,16 @@ flowchart TD
     H --> ANSH[autonomic-nervous-system-homeostasis<br/>自主神经稳态]
     H --> MHETB[migraine-headache-effective-time-burden<br/>偏头痛 / 有效时间负担]
     H --> VEHC[vision-eye-health-continuity<br/>视觉 / 眼健康连续性]
+    H --> CVRC[cataract-vision-restoration-continuity<br/>白内障 / 视觉恢复]
+    H --> GVFP[glaucoma-visual-field-protection-continuity<br/>青光眼 / 视野保护]
+    H --> DRTSTC[diabetic-retinopathy-screening-treatment-continuity<br/>糖尿病视网膜病变 / 筛治衔接]
+    H --> ARMDC[age-related-macular-degeneration-central-vision-continuity<br/>AMD / 中央视觉]
+    H --> REGCL[refractive-error-glasses-contact-lens-continuity<br/>屈光不正 / 眼镜隐形]
+    H --> LVRAT[low-vision-rehabilitation-assistive-technology-continuity<br/>低视力 / 康复辅助技术]
+    H --> DEOSC[dry-eye-ocular-surface-comfort-continuity<br/>干眼 / 眼表舒适]
+    H --> EIUVP[eye-injury-urgent-vision-protection-continuity<br/>眼外伤 / 急性保护]
+    H --> PVSA[pediatric-vision-screening-amblyopia-continuity<br/>儿童视筛 / 弱视]
+    H --> RDUR[retinal-detachment-urgent-referral-continuity<br/>视网膜脱离 / 急转]
     H --> HACC[hearing-auditory-communication-continuity<br/>听力 / 听觉沟通]
     H --> VBSO[vestibular-balance-spatial-orientation<br/>前庭 / 平衡定向]
     H --> SLCC[speech-language-communication-continuity<br/>言语语言 / 沟通连续性]
@@ -822,6 +832,16 @@ flowchart TD
 | [Autonomic Nervous System Homeostasis](domains/autonomic-nervous-system-homeostasis/README.md) | 自主神经、心率血压调节、体位耐受、出汗、消化排尿和压力恢复 | 解释隐性自动调节如何决定站立、学习、工作、运动和恢复耐受 | 不提供 POTS/晕厥诊断、补液用盐、药物、运动或设备建议 |
 | [Migraine Headache Effective Time Burden](domains/migraine-headache-effective-time-burden/README.md) | 偏头痛、头痛障碍、感官敏感、认知雾、发作不可预测性和失能天数 | 把低死亡、高失能、高时间损耗疾病纳入有效时间和创造密度模型 | 不提供头痛诊断、药物、急症判断、个体触发因素处方或产品推荐 |
 | [Vision Eye Health Continuity](domains/vision-eye-health-continuity/README.md) | 视力、眼健康、视觉损害、低视力支持、阅读、移动和视觉任务参与 | 把高带宽视觉输入作为学习、移动、安全判断和独立生活的基础输入层 | 不提供眼科诊断、验光处方、检查解释、治疗、手术、设备或个体资格判断 |
+| [Cataract Vision Restoration Continuity](domains/cataract-vision-restoration-continuity/README.md) | 白内障、晶状体混浊、眩光、手术服务可及性和术后视觉恢复 | 把可恢复视觉损害转化为服务可及、术后衔接和功能恢复问题 | 不提供诊断、手术适应证、人工晶体选择、术后医嘱或个体风险判断 |
+| [Glaucoma Visual Field Protection Continuity](domains/glaucoma-visual-field-protection-continuity/README.md) | 青光眼、视神经损伤、眼压、视野缺损、随访和不可逆视损防护 | 把隐匿性视野压缩作为移动、驾驶、跌倒和独立生活的长期风险 | 不提供眼压/视野解释、药物、激光、手术、驾驶或工作资格判断 |
+| [Diabetic Retinopathy Screening Treatment Continuity](domains/diabetic-retinopathy-screening-treatment-continuity/README.md) | 糖尿病视网膜病变、眼底筛查、黄斑水肿、转诊和治疗衔接 | 连接代谢管理、筛查系统、眼科治疗和视觉并发症防控 | 不提供眼底图判读、AI 筛查结论、治疗建议、复查间隔或糖尿病用药调整 |
+| [Age Related Macular Degeneration Central Vision Continuity](domains/age-related-macular-degeneration-central-vision-continuity/README.md) | AMD、中央视力、阅读、面孔识别、视网膜随访和低视力衔接 | 保护信息获取、精细任务、自理和老年独立生活的中央视觉输入 | 不提供诊断、影像解释、注射治疗、补剂、复查间隔或个体预后 |
+| [Refractive Error Glasses Contact Lens Continuity](domains/refractive-error-glasses-contact-lens-continuity/README.md) | 近视、远视、散光、老花、验光、眼镜、隐形眼镜和处方更新 | 把低成本视觉矫正作为学习、工作、移动和屏幕任务的基础带宽恢复层 | 不提供验光处方、度数、隐形眼镜适配、儿童近视控制或产品推荐 |
+| [Low Vision Rehabilitation Assistive Technology Continuity](domains/low-vision-rehabilitation-assistive-technology-continuity/README.md) | 低视力康复、视觉辅助技术、环境适配、训练维护和任务补偿 | 在不可逆视损后重构阅读、移动、自理、工作和社交参与接口 | 不提供设备处方、训练方案、购买建议、驾驶/工作许可或个人安全判断 |
+| [Dry Eye Ocular Surface Comfort Continuity](domains/dry-eye-ocular-surface-comfort-continuity/README.md) | 干眼、眼表不适、视疲劳、屏幕耐受、环境暴露和慢性有效时间负担 | 把低致死高摩擦眼表问题纳入注意力、屏幕工作和恢复质量模型 | 不提供诊断、眼药水/药物/补剂建议、隐形眼镜适配、急症判断或产品推荐 |
+| [Eye Injury Urgent Vision Protection Continuity](domains/eye-injury-urgent-vision-protection-continuity/README.md) | 眼外伤、化学暴露、异物、工作/运动防护、急诊转诊和恢复随访 | 把分钟到小时级眼部伤害作为急性视觉输入崩溃风险防线 | 不提供急救步骤、冲洗/取异物/用药建议、急诊判断、返工返赛许可或法律责任 |
+| [Pediatric Vision Screening Amblyopia Continuity](domains/pediatric-vision-screening-amblyopia-continuity/README.md) | 儿童视力筛查、弱视、斜视/屈光风险、家庭随访和学校参与 | 把视觉发育窗口作为学习、运动、自信和长期能力形成的早期条件 | 不提供诊断、遮盖训练、眼镜度数、斜视治疗、学校安排或家庭个体决策 |
+| [Retinal Detachment Urgent Referral Continuity](domains/retinal-detachment-urgent-referral-continuity/README.md) | 视网膜脱离、症状信号、急诊转诊、手术窗口和长期功能后果 | 把眼科时间敏感事件纳入急性视觉救援和未来选择权保护路径 | 不提供分诊、急救、是否急诊判断、影像解释、手术建议、术后姿势或个体预后 |
 | [Hearing Auditory Communication Continuity](domains/hearing-auditory-communication-continuity/README.md) | 听力损失、听觉沟通、耳鸣、助听支持、声音警报和沟通疲劳 | 把听觉通道作为语言、关系、警报、服务理解和安全参与的输入层 | 不提供听力诊断、听力图解释、助听设备处方、耳鸣治疗或个体医疗建议 |
 | [Vestibular Balance Spatial Orientation](domains/vestibular-balance-spatial-orientation/README.md) | 前庭、眩晕、平衡、空间定向、跌倒和移动信心 | 把空间定向和平衡反馈作为行动半径、外出参与和跌倒风险的底层条件 | 不提供眩晕诊断、前庭测试解释、康复动作、药物、急救或设备建议 |
 | [Speech Language Communication Continuity](domains/speech-language-communication-continuity/README.md) | 失语、构音障碍、言语运动障碍、沟通参与、同意表达和替代沟通 | 把语言表达与理解作为主体偏好、共同决策、求助和社会参与的接口 | 不提供言语语言诊断、训练方案、设备处方、吞咽判断或个体康复建议 |

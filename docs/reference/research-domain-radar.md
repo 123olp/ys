@@ -447,6 +447,16 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `autonomic-nervous-system-homeostasis/` | 自主神经稳态决定心率血压、体位耐受、消化排尿、出汗和压力恢复能否支撑日常行动 |
 | `migraine-headache-effective-time-burden/` | 偏头痛和头痛障碍决定低死亡但高失能疾病如何吞噬学习、工作、关系和创造窗口 |
 | `vision-eye-health-continuity/` | 视觉和眼健康决定阅读、移动、安全判断、工作参与和独立生活是否仍有高带宽外部输入 |
+| `cataract-vision-restoration-continuity/` | 白内障决定可恢复视觉损害是否能通过服务可及、术后衔接和功能恢复重新进入主体行动系统 |
+| `glaucoma-visual-field-protection-continuity/` | 青光眼决定慢性、隐匿、不可逆的视野压缩是否会长期削弱移动、驾驶、跌倒防护和独立行动 |
+| `diabetic-retinopathy-screening-treatment-continuity/` | 糖尿病视网膜病变决定代谢管理、眼底筛查、转诊和治疗衔接是否能阻断可预防视损 |
+| `age-related-macular-degeneration-central-vision-continuity/` | AMD 决定中央视觉、阅读识别、精细任务和老年独立生活是否被黄斑损害压缩 |
+| `refractive-error-glasses-contact-lens-continuity/` | 屈光矫正决定基础视觉带宽能否用低成本工具持续支持学习、工作、移动和屏幕任务 |
+| `low-vision-rehabilitation-assistive-technology-continuity/` | 低视力康复决定不可逆视损后剩余视觉、工具、训练和环境能否重构任务接口 |
+| `dry-eye-ocular-surface-comfort-continuity/` | 干眼决定眼表不适、视疲劳和屏幕耐受下降如何吞噬注意力、恢复和有效时间 |
+| `eye-injury-urgent-vision-protection-continuity/` | 眼外伤决定机械、化学、异物和职业/运动伤害是否被防护与急诊通道及时阻断 |
+| `pediatric-vision-screening-amblyopia-continuity/` | 儿童视筛和弱视决定视觉发育窗口内的输入问题是否会影响学习、运动和长期能力形成 |
+| `retinal-detachment-urgent-referral-continuity/` | 视网膜脱离决定闪光、飞蚊、视野遮挡等时间敏感信号是否能进入急转和手术窗口 |
 | `hearing-auditory-communication-continuity/` | 听力和听觉沟通决定语言、关系、服务理解、安全警报和社会参与是否不断线 |
 | `vestibular-balance-spatial-orientation/` | 前庭、平衡和空间定向决定主体能否稳定站立、行走、转身、外出和避免跌倒 |
 | `speech-language-communication-continuity/` | 言语语言沟通决定主体能否表达偏好、理解信息、求助、同意和参与社会关系 |
@@ -813,6 +823,7 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | WHO Rehabilitation 2030 | 提示康复和功能恢复是健康系统核心组成，不只是医疗后处理 |
 | WHO Assistive Technology | 提示辅助技术可及性是功能持续和社会参与的关键基础设施 |
 | WHO / CDC / NEI vision health resources | 提示视觉损害和眼健康是阅读、移动、独立生活和安全判断的高带宽输入条件 |
+| NEI cataract / glaucoma / diabetic retinopathy / AMD / refractive error / low vision / dry eye / eye injury / amblyopia / retinal detachment resources | 提示视觉总域需要拆成可恢复视损、不可逆视野保护、代谢视网膜筛治、中央视觉、基础屈光矫正、低视力补偿、眼表舒适、急性眼伤、儿童视觉发育和急性视网膜转诊这些下层失效模式 |
 | WHO / NIDCD hearing resources | 提示听力损失和听觉沟通会影响语言参与、社交连接、认知负担和安全警报接收 |
 | NIDCD balance disorders / CDC STEADI | 提示前庭、平衡和跌倒风险把空间行动、外出能力和独立生活连接起来 |
 | NIDCD aphasia resources | 提示语言表达和理解能力决定主体偏好、同意、照护参与和社会角色能否被表达 |

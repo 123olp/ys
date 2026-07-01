@@ -1142,21 +1142,21 @@ Human Infra 不能被设计成更精密的压榨系统。
 
 ## 感官、沟通与具身反馈连续性边界
 
-`vision-eye-health-continuity`、`hearing-auditory-communication-continuity`、`vestibular-balance-spatial-orientation`、`speech-language-communication-continuity`、`swallowing-dysphagia-aspiration-nutrition`、`smell-taste-chemosensory-continuity` 和 `peripheral-neuropathy-somatosensory-continuity` 关注视觉、听觉、平衡、语言、吞咽、嗅味觉和躯体感觉如何支撑主体输入、表达、空间行动、营养进入、危险识别和身体边界反馈，不是诊断、治疗、康复训练、设备处方或个人医疗解释入口。
+`vision-eye-health-continuity`、`cataract-vision-restoration-continuity`、`glaucoma-visual-field-protection-continuity`、`diabetic-retinopathy-screening-treatment-continuity`、`age-related-macular-degeneration-central-vision-continuity`、`refractive-error-glasses-contact-lens-continuity`、`low-vision-rehabilitation-assistive-technology-continuity`、`dry-eye-ocular-surface-comfort-continuity`、`eye-injury-urgent-vision-protection-continuity`、`pediatric-vision-screening-amblyopia-continuity`、`retinal-detachment-urgent-referral-continuity`、`hearing-auditory-communication-continuity`、`vestibular-balance-spatial-orientation`、`speech-language-communication-continuity`、`swallowing-dysphagia-aspiration-nutrition`、`smell-taste-chemosensory-continuity` 和 `peripheral-neuropathy-somatosensory-continuity` 关注视觉、眼病失效模式、听觉、平衡、语言、吞咽、嗅味觉和躯体感觉如何支撑主体输入、表达、空间行动、营养进入、危险识别和身体边界反馈，不是诊断、治疗、康复训练、设备处方、急诊分诊或个人医疗解释入口。
 
 可以做：
 
-- 整理公开资料、论文、指南、疾病负担和机构资源，建立视觉输入卡、听觉沟通卡、前庭定向卡、语言表达卡、吞咽安全卡、嗅味觉危险识别卡和周围神经反馈卡。
-- 比较视觉、听力、前庭、言语语言、吞咽、嗅味觉和周围神经如何影响主体持续性变量、有效时间、未来选择权和服务可及性。
+- 整理公开资料、论文、指南、疾病负担和机构资源，建立视觉输入卡、白内障恢复卡、青光眼视野卡、糖尿病视网膜病变筛治卡、AMD 中央视觉卡、屈光矫正卡、低视力补偿卡、干眼有效时间卡、眼外伤急性保护卡、儿童弱视筛查卡、视网膜脱离急转卡、听觉沟通卡、前庭定向卡、语言表达卡、吞咽安全卡、嗅味觉危险识别卡和周围神经反馈卡。
+- 比较视觉、眼病下层失效模式、听力、前庭、言语语言、吞咽、嗅味觉和周围神经如何影响主体持续性变量、有效时间、未来选择权和服务可及性。
 - 记录变量、机制链、证据等级、适用对象、服务可及性、误读风险、辅助技术边界、照护断点和模型边界。
 - 将检查工具、可穿戴、传感器、AI 输出和症状记录作为研究信号或资料索引，不写成个人诊断、治疗计划或功能许可。
 
 不能做：
 
-- 提供个体诊断、治疗、设备处方、检查解释、康复训练、饮食质地调整、误吸处置、跌倒训练、驾驶/工作/活动许可或 AI 个人医疗结论。
-- 替代眼科、听力学、耳鼻喉、言语语言治疗、吞咽治疗、营养、神经、足病、疼痛、康复或临床专业服务。
-- 根据视力、听力、眩晕、失语、吞咽、嗅味觉、麻木、疼痛、伤口、步态或传感器数据判断个人风险等级、治疗优先级或是否需要急诊。
-- 输出可被误用为个人医学承诺的恢复概率、器官功能判断、设备适配、训练强度、膳食调整、药物建议、检查结论或法律/保险资格判断。
+- 提供个体诊断、治疗、设备处方、检查解释、康复训练、眼科手术建议、隐形眼镜适配、急诊分诊、饮食质地调整、误吸处置、跌倒训练、驾驶/工作/活动许可或 AI 个人医疗结论。
+- 替代眼科、验光、低视力康复、急诊、听力学、耳鼻喉、言语语言治疗、吞咽治疗、营养、神经、足病、疼痛、康复或临床专业服务。
+- 根据视力、眼压、视野、眼底影像、闪光飞蚊、眼痛、眼伤、儿童筛查、听力、眩晕、失语、吞咽、嗅味觉、麻木、疼痛、伤口、步态或传感器数据判断个人风险等级、治疗优先级或是否需要急诊。
+- 输出可被误用为个人医学承诺的恢复概率、器官功能判断、设备适配、训练强度、手术收益、复查间隔、膳食调整、药物建议、检查结论或法律/保险资格判断。
 
 ## 行星、地球物理与极端热风险连续性边界
 

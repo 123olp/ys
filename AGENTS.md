@@ -83,6 +83,16 @@ human_infra/
     ├── autonomic-nervous-system-homeostasis/ # 自主神经系统稳态
     ├── migraine-headache-effective-time-burden/ # 偏头痛、头痛障碍与有效时间负担
     ├── vision-eye-health-continuity/ # 视觉与眼健康连续性
+    ├── cataract-vision-restoration-continuity/ # 白内障与视觉恢复连续性
+    ├── glaucoma-visual-field-protection-continuity/ # 青光眼与视野保护连续性
+    ├── diabetic-retinopathy-screening-treatment-continuity/ # 糖尿病视网膜病变筛治连续性
+    ├── age-related-macular-degeneration-central-vision-continuity/ # AMD 与中央视觉连续性
+    ├── refractive-error-glasses-contact-lens-continuity/ # 屈光不正与矫正工具连续性
+    ├── low-vision-rehabilitation-assistive-technology-continuity/ # 低视力康复与辅助技术连续性
+    ├── dry-eye-ocular-surface-comfort-continuity/ # 干眼与眼表舒适连续性
+    ├── eye-injury-urgent-vision-protection-continuity/ # 眼外伤急性视觉保护连续性
+    ├── pediatric-vision-screening-amblyopia-continuity/ # 儿童视力筛查与弱视连续性
+    ├── retinal-detachment-urgent-referral-continuity/ # 视网膜脱离急转连续性
     ├── hearing-auditory-communication-continuity/ # 听力与听觉沟通连续性
     ├── vestibular-balance-spatial-orientation/ # 前庭、平衡与空间定向
     ├── speech-language-communication-continuity/ # 言语、语言与沟通连续性
@@ -818,7 +828,8 @@ human_infra/
 - `domains/neuro-continuity/` 负责大脑、记忆、意识、人格和主体身份连续性。
 - `domains/sensory-continuity/` 负责视觉、听觉、平衡、触觉和感官反馈连续性。
 - `domains/future-waiting/` 负责度规红移固有时差分路径（黑洞等待室）等“压缩等待 / 去未来”思想实验、证据边界和风险约束。
-- `domains/vision-eye-health-continuity/`、`domains/hearing-auditory-communication-continuity/`、`domains/vestibular-balance-spatial-orientation/`、`domains/speech-language-communication-continuity/`、`domains/swallowing-dysphagia-aspiration-nutrition/`、`domains/smell-taste-chemosensory-continuity/` 和 `domains/peripheral-neuropathy-somatosensory-continuity/` 负责视觉输入、听觉沟通、空间平衡、语言表达、吞咽摄食、化学感知和身体边界反馈的机制、证据、变量和禁止用途。
+- `domains/vision-eye-health-continuity/` 负责视觉输入总框架；`domains/cataract-vision-restoration-continuity/`、`domains/glaucoma-visual-field-protection-continuity/`、`domains/diabetic-retinopathy-screening-treatment-continuity/`、`domains/age-related-macular-degeneration-central-vision-continuity/`、`domains/refractive-error-glasses-contact-lens-continuity/`、`domains/low-vision-rehabilitation-assistive-technology-continuity/`、`domains/dry-eye-ocular-surface-comfort-continuity/`、`domains/eye-injury-urgent-vision-protection-continuity/`、`domains/pediatric-vision-screening-amblyopia-continuity/` 和 `domains/retinal-detachment-urgent-referral-continuity/` 负责白内障、青光眼、糖尿病视网膜病变、AMD、屈光矫正、低视力康复、干眼、眼外伤、儿童视筛弱视和视网膜脱离这些视觉下层失效模式。
+- `domains/hearing-auditory-communication-continuity/`、`domains/vestibular-balance-spatial-orientation/`、`domains/speech-language-communication-continuity/`、`domains/swallowing-dysphagia-aspiration-nutrition/`、`domains/smell-taste-chemosensory-continuity/` 和 `domains/peripheral-neuropathy-somatosensory-continuity/` 负责听觉沟通、空间平衡、语言表达、吞咽摄食、化学感知和身体边界反馈的机制、证据、变量和禁止用途。
 - `domains/space-weather-geomagnetic-storm-resilience/`、`domains/planetary-defense-near-earth-object-risk/`、`domains/volcanic-ashfall-geohazard-continuity/`、`domains/earthquake-seismic-risk-built-environment-continuity/`、`domains/tsunami-warning-coastal-evacuation-continuity/` 和 `domains/extreme-heat-cooling-public-health-continuity/` 负责空间天气、行星防御、火山灰、地震、海啸和极端高温这些行星、地球物理与极端热风险的机制、预警、基础设施失效和禁止用途。
 - `domains/noise-exposure-acoustic-environment-continuity/`、`domains/light-exposure-circadian-environment-continuity/`、`domains/lead-heavy-metal-exposure-control/`、`domains/radon-asbestos-indoor-hazard-continuity/`、`domains/mold-dampness-indoor-biological-exposure/` 和 `domains/vector-borne-disease-environmental-control/` 负责噪声、光照节律、铅与重金属、氡与石棉、霉菌潮湿和病媒传播这些慢性环境暴露与日常损耗条件的机制、证据、变量和禁止用途。
 - `domains/advance-care-planning-medical-decision-continuity/`、`domains/supported-decision-making-guardianship-rights/`、`domains/healthcare-personal-representative-hipaa-access-continuity/`、`domains/financial-fiduciary-power-of-attorney-continuity/`、`domains/representative-payee-benefits-management-continuity/` 和 `domains/trust-estate-affairs-succession-continuity/` 负责预先医疗照护计划、支持性决策、医疗个人代表、财务受托、代表收款人和事务继承这些决策权、代理权与受托连续性条件。
@@ -941,6 +952,7 @@ human_infra/
 - 2026-06-30：新增第三十七波 6 个慢性环境暴露与日常损耗条件域，覆盖噪声、光照节律、铅与重金属、氡与石棉、霉菌潮湿和病媒传播风险。
 - 2026-06-30：新增第三十六波 6 个行星、地球物理与极端热风险连续性域，覆盖空间天气、行星防御、火山灰、地震、海啸和极端高温。
 - 2026-06-30：新增第三十五波 7 个感官、沟通与具身反馈连续性域，覆盖视觉眼健康、听力听觉沟通、前庭平衡空间定向、言语语言沟通、吞咽误吸营养、嗅味觉化学感知和周围神经躯体感觉。
+- 2026-07-01：新增第八十九波 10 个视觉失效与眼病功能连续性域，覆盖白内障、青光眼、糖尿病视网膜病变、年龄相关性黄斑变性、屈光不正、低视力康复、干眼、眼外伤、儿童视筛弱视和视网膜脱离。
 - 2026-06-30：新增农业生产、土壤土地、水资源、生态系统服务、野火韧性和物流冷链六个研究域，补齐初级生产、自然系统与物理流通底座。
 - 2026-06-30：新增海岸海洋蓝色经济、渔业水生食物、防洪工程安全、公共工程资产管理、城市土地使用规划和城市绿蓝基础设施六个研究域，补齐自然-工程-城市交界底座。
 - 2026-06-30：新增电网可靠性、水务污水公用事业、燃料热能服务、公共交通运营、关键基础设施生命线互依赖和公用事业可负担性断供保护六个研究域，补齐公用事业生命线连续性底座。

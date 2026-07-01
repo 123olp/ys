@@ -304,6 +304,16 @@
 - `autonomic-nervous-system-homeostasis/`：自主神经系统稳态，整理心率血压调节、体位耐受、出汗、消化排尿和压力恢复。
 - `migraine-headache-effective-time-burden/`：偏头痛、头痛障碍与有效时间负担，整理发作性疼痛、感官敏感、认知雾和失能天数。
 - `vision-eye-health-continuity/`：视觉与眼健康连续性，整理视力、眼病、视觉功能、低视力支持、阅读、移动和视觉任务参与。
+- `cataract-vision-restoration-continuity/`：白内障与视觉恢复连续性，整理晶状体混浊、眩光、服务可及、术后衔接和功能恢复。
+- `glaucoma-visual-field-protection-continuity/`：青光眼与视野保护连续性，整理视神经损伤、眼压、视野缺损、随访和不可逆视损防护。
+- `diabetic-retinopathy-screening-treatment-continuity/`：糖尿病视网膜病变筛治连续性，整理眼底筛查、黄斑水肿、转诊、治疗衔接和视觉并发症。
+- `age-related-macular-degeneration-central-vision-continuity/`：年龄相关性黄斑变性与中央视觉连续性，整理中央视力、阅读、识别、视网膜随访和低视力衔接。
+- `refractive-error-glasses-contact-lens-continuity/`：屈光不正与矫正工具连续性，整理近视、远视、散光、老花、验光、眼镜和隐形眼镜可及性。
+- `low-vision-rehabilitation-assistive-technology-continuity/`：低视力康复与辅助技术连续性，整理不可逆视损后的阅读、移动、自理、训练和环境适配。
+- `dry-eye-ocular-surface-comfort-continuity/`：干眼与眼表舒适连续性，整理眼表不适、视疲劳、屏幕耐受、环境暴露和有效时间负担。
+- `eye-injury-urgent-vision-protection-continuity/`：眼外伤急性视觉保护连续性，整理机械/化学/异物损伤、防护装备、急诊转诊和恢复随访。
+- `pediatric-vision-screening-amblyopia-continuity/`：儿童视力筛查与弱视连续性，整理儿童筛查、弱视、斜视/屈光风险、家庭随访和学校参与。
+- `retinal-detachment-urgent-referral-continuity/`：视网膜脱离急转连续性，整理症状信号、急诊转诊、手术窗口和长期功能后果。
 - `hearing-auditory-communication-continuity/`：听力与听觉沟通连续性，整理听力损失、言语识别、耳鸣、助听支持、声音警报和沟通疲劳。
 - `vestibular-balance-spatial-orientation/`：前庭、平衡与空间定向，整理眩晕、平衡、空间定位、跌倒风险和移动信心。
 - `speech-language-communication-continuity/`：言语、语言与沟通连续性，整理失语、构音障碍、言语运动障碍、沟通参与和主体表达权。

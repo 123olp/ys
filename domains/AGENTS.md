@@ -146,6 +146,36 @@ domains/
 ├── vision-eye-health-continuity/
 │   ├── AGENTS.md
 │   └── README.md
+├── cataract-vision-restoration-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── glaucoma-visual-field-protection-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── diabetic-retinopathy-screening-treatment-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── age-related-macular-degeneration-central-vision-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── refractive-error-glasses-contact-lens-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── low-vision-rehabilitation-assistive-technology-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── dry-eye-ocular-surface-comfort-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── eye-injury-urgent-vision-protection-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── pediatric-vision-screening-amblyopia-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── retinal-detachment-urgent-referral-continuity/
+│   ├── AGENTS.md
+│   └── README.md
 ├── hearing-auditory-communication-continuity/
 │   ├── AGENTS.md
 │   └── README.md
@@ -1929,7 +1959,8 @@ domains/
 - `trustworthy-scientific-communication-peer-review/`、`research-participant-consent-community-engagement/`、`biobanking-biospecimen-quality-chain-of-custody/`、`longitudinal-cohort-retention-followup-infrastructure/`、`registries-real-world-data-governance/` 和 `scientific-instrumentation-sensor-calibration-maintenance/` 负责可信科研传播、研究参与者同意、样本质量保管链、纵向队列随访、真实世界登记和仪器传感器校准这些科研证据基础设施条件。
 - `nanomedicine-targeted-delivery-molecular-repair/`、`ai-drug-discovery-protein-design/`、`epigenetic-editing-gene-regulation-therapeutics/`、`brain-preservation-connectomics-emulation/`、`post-quantum-cryptography-long-term-data-security/`、`safety-critical-software-formal-methods/` 和 `long-term-digital-preservation-format-migration/` 负责未来技术窗口生成、递送、调控、信息保存、长期数字安全、软件可信和外部记忆可读性这些未来技术连续性条件。
 - `cerebrovascular-stroke-brain-perfusion-resilience/`、`traumatic-brain-injury-neurotrauma-recovery/`、`delirium-acute-cognitive-failure-prevention/`、`disorders-of-consciousness-coma-recovery/`、`epilepsy-seizure-network-stability/`、`autonomic-nervous-system-homeostasis/` 和 `migraine-headache-effective-time-burden/` 负责卒中脑灌注、神经创伤、谵妄、意识障碍、癫痫、自主神经和偏头痛这些急性神经连续性与意识韧性条件。
-- `vision-eye-health-continuity/`、`hearing-auditory-communication-continuity/`、`vestibular-balance-spatial-orientation/`、`speech-language-communication-continuity/`、`swallowing-dysphagia-aspiration-nutrition/`、`smell-taste-chemosensory-continuity/` 和 `peripheral-neuropathy-somatosensory-continuity/` 负责视觉输入、听觉沟通、空间平衡、语言表达、吞咽摄食、化学感知和身体边界反馈这些感官、沟通与具身反馈连续性条件。
+- `vision-eye-health-continuity/` 负责视觉输入总框架；`cataract-vision-restoration-continuity/`、`glaucoma-visual-field-protection-continuity/`、`diabetic-retinopathy-screening-treatment-continuity/`、`age-related-macular-degeneration-central-vision-continuity/`、`refractive-error-glasses-contact-lens-continuity/`、`low-vision-rehabilitation-assistive-technology-continuity/`、`dry-eye-ocular-surface-comfort-continuity/`、`eye-injury-urgent-vision-protection-continuity/`、`pediatric-vision-screening-amblyopia-continuity/` 和 `retinal-detachment-urgent-referral-continuity/` 负责白内障、青光眼、糖尿病视网膜病变、AMD、屈光矫正、低视力康复、干眼、眼外伤、儿童视筛弱视和视网膜脱离这些视觉下层失效模式。
+- `hearing-auditory-communication-continuity/`、`vestibular-balance-spatial-orientation/`、`speech-language-communication-continuity/`、`swallowing-dysphagia-aspiration-nutrition/`、`smell-taste-chemosensory-continuity/` 和 `peripheral-neuropathy-somatosensory-continuity/` 负责听觉沟通、空间平衡、语言表达、吞咽摄食、化学感知和身体边界反馈这些感官、沟通与具身反馈连续性条件。
 - `space-weather-geomagnetic-storm-resilience/`、`planetary-defense-near-earth-object-risk/`、`volcanic-ashfall-geohazard-continuity/`、`earthquake-seismic-risk-built-environment-continuity/`、`tsunami-warning-coastal-evacuation-continuity/` 和 `extreme-heat-cooling-public-health-continuity/` 负责空间天气、近地天体、火山灰、地震、海啸和极端高温这些行星、地球物理与极端热风险连续性条件。
 - `noise-exposure-acoustic-environment-continuity/`、`light-exposure-circadian-environment-continuity/`、`lead-heavy-metal-exposure-control/`、`radon-asbestos-indoor-hazard-continuity/`、`mold-dampness-indoor-biological-exposure/` 和 `vector-borne-disease-environmental-control/` 负责噪声、光照节律、铅与重金属、氡与石棉、霉菌潮湿和病媒传播这些慢性环境暴露与日常损耗条件。
 - `advance-care-planning-medical-decision-continuity/`、`supported-decision-making-guardianship-rights/`、`healthcare-personal-representative-hipaa-access-continuity/`、`financial-fiduciary-power-of-attorney-continuity/`、`representative-payee-benefits-management-continuity/` 和 `trust-estate-affairs-succession-continuity/` 负责预先医疗照护计划、支持性决策、医疗个人代表、财务受托、代表收款人和事务继承这些决策权、代理权与受托连续性条件。
@@ -1973,7 +2004,7 @@ domains/
 - `trustworthy-scientific-communication-peer-review/`、`research-participant-consent-community-engagement/`、`biobanking-biospecimen-quality-chain-of-custody/`、`longitudinal-cohort-retention-followup-infrastructure/`、`registries-real-world-data-governance/` 和 `scientific-instrumentation-sensor-calibration-maintenance/` 负责科研证据进入模型前的基础设施边界，不提供学术操控、IRB 规避、非法采样、重新识别、真实世界数据越权访问、伪造校准、设备改装、个体诊断或寿命预测。
 - `nanomedicine-targeted-delivery-molecular-repair/`、`ai-drug-discovery-protein-design/`、`epigenetic-editing-gene-regulation-therapeutics/`、`brain-preservation-connectomics-emulation/`、`post-quantum-cryptography-long-term-data-security/`、`safety-critical-software-formal-methods/` 和 `long-term-digital-preservation-format-migration/` 负责远期技术连续性的证据边界，不提供自制纳米材料、双重用途生物设计、表观编辑操作、脑保存操作、密码攻击、安全关键系统规避、档案窃取或数字永生承诺。
 - `cerebrovascular-stroke-brain-perfusion-resilience/`、`traumatic-brain-injury-neurotrauma-recovery/`、`delirium-acute-cognitive-failure-prevention/`、`disorders-of-consciousness-coma-recovery/`、`epilepsy-seizure-network-stability/`、`autonomic-nervous-system-homeostasis/` 和 `migraine-headache-effective-time-burden/` 负责急性神经连续性与意识韧性的证据边界，不提供个体诊断、治疗方案、急救指令、用药调整、预后判断、返工返赛许可、影像/EEG/可穿戴解释或 AI 个人医疗结论。
-- `vision-eye-health-continuity/`、`hearing-auditory-communication-continuity/`、`vestibular-balance-spatial-orientation/`、`speech-language-communication-continuity/`、`swallowing-dysphagia-aspiration-nutrition/`、`smell-taste-chemosensory-continuity/` 和 `peripheral-neuropathy-somatosensory-continuity/` 负责感官、沟通与具身反馈连续性的证据边界，不提供个体诊断、治疗、设备处方、检查解释、康复训练、饮食质地调整、误吸处置、跌倒训练、驾驶/工作/活动许可或 AI 个人医疗结论。
+- `vision-eye-health-continuity/`、`cataract-vision-restoration-continuity/`、`glaucoma-visual-field-protection-continuity/`、`diabetic-retinopathy-screening-treatment-continuity/`、`age-related-macular-degeneration-central-vision-continuity/`、`refractive-error-glasses-contact-lens-continuity/`、`low-vision-rehabilitation-assistive-technology-continuity/`、`dry-eye-ocular-surface-comfort-continuity/`、`eye-injury-urgent-vision-protection-continuity/`、`pediatric-vision-screening-amblyopia-continuity/`、`retinal-detachment-urgent-referral-continuity/`、`hearing-auditory-communication-continuity/`、`vestibular-balance-spatial-orientation/`、`speech-language-communication-continuity/`、`swallowing-dysphagia-aspiration-nutrition/`、`smell-taste-chemosensory-continuity/` 和 `peripheral-neuropathy-somatosensory-continuity/` 负责感官、沟通与具身反馈连续性的证据边界，不提供个体诊断、治疗、设备处方、检查解释、康复训练、饮食质地调整、误吸处置、跌倒训练、驾驶/工作/活动许可、急诊分诊、眼科手术建议或 AI 个人医疗结论。
 - `space-weather-geomagnetic-storm-resilience/`、`planetary-defense-near-earth-object-risk/`、`volcanic-ashfall-geohazard-continuity/`、`earthquake-seismic-risk-built-environment-continuity/`、`tsunami-warning-coastal-evacuation-continuity/` 和 `extreme-heat-cooling-public-health-continuity/` 负责行星、地球物理与极端热风险的证据边界，不提供实时预警、地震预测、撤离路线、避难命令、太阳风暴操作建议、撞击预测、个人急救、工程设计、保险或投资建议。
 - `noise-exposure-acoustic-environment-continuity/`、`light-exposure-circadian-environment-continuity/`、`lead-heavy-metal-exposure-control/`、`radon-asbestos-indoor-hazard-continuity/`、`mold-dampness-indoor-biological-exposure/` 和 `vector-borne-disease-environmental-control/` 负责慢性环境暴露与日常损耗条件的证据边界，不提供个体诊断、检测解释、设备购买、施工改造、农药操作、房产判断、旅行安全、工作许可、法律索赔或现场处置建议。
 - `advance-care-planning-medical-decision-continuity/`、`supported-decision-making-guardianship-rights/`、`healthcare-personal-representative-hipaa-access-continuity/`、`financial-fiduciary-power-of-attorney-continuity/`、`representative-payee-benefits-management-continuity/` 和 `trust-estate-affairs-succession-continuity/` 负责决策权、代理权与受托连续性的证据边界，不提供医疗、法律、财务、税务、投资、福利、遗产、授权表填写、法院策略、隐私投诉、资格判断、资产分配或家庭纠纷建议。

@@ -95,6 +95,16 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 神经和身份连续 | `neuro-continuity/` | 记忆、意识、人格、行动能力 | 神经退行、身份断裂、主体不连续 |
 | 感官反馈可持续 | `sensory-continuity/` | 视觉、听觉、平衡、感官反馈 | 跌倒、隔离、沟通失败、认知负担 |
 | 视觉输入必须可持续 | `vision-eye-health-continuity/` | 视力、眼病、视觉功能、低视力支持、视觉任务参与 | 阅读、移动、工作、照护和环境反馈被视觉损失压缩 |
+| 可恢复视觉损害必须及时恢复 | `cataract-vision-restoration-continuity/` | 白内障、晶状体混浊、眩光、手术可及、术后衔接 | 可恢复视力因等待、费用和随访断点变成长期功能损失 |
+| 不可逆视野必须提前保护 | `glaucoma-visual-field-protection-continuity/` | 青光眼、眼压、视神经、视野、长期随访 | 空间扫描、驾驶、跌倒防护和独立行动被慢性视野压缩 |
+| 代谢性视网膜风险必须闭环筛治 | `diabetic-retinopathy-screening-treatment-continuity/` | 糖尿病视网膜病变、眼底筛查、黄斑水肿、转诊治疗 | 代谢风险、筛查断点和眼科延迟转化为可预防视损 |
+| 中央视觉必须支撑读写识别 | `age-related-macular-degeneration-central-vision-continuity/` | AMD、中央视力、阅读、面孔识别、低视力衔接 | 信息获取、自理、屏幕工作和社交识别被中央视力损害压缩 |
+| 基础屈光矫正必须可获得 | `refractive-error-glasses-contact-lens-continuity/` | 近视、远视、散光、老花、眼镜、隐形眼镜 | 低成本视觉带宽缺口造成学习、工作、移动和屏幕任务摩擦 |
+| 不可逆视损必须有任务补偿 | `low-vision-rehabilitation-assistive-technology-continuity/` | 低视力康复、视觉辅助技术、环境适配、训练维护 | 剩余视觉不能转化为阅读、移动、自理和社会参与能力 |
+| 眼表舒适必须支撑长时视觉任务 | `dry-eye-ocular-surface-comfort-continuity/` | 干眼、眼表不适、视疲劳、屏幕耐受、环境暴露 | 疼痛、模糊和疲劳吞噬注意力、屏幕工作和有效时间 |
+| 急性眼伤必须阻断不可逆视损 | `eye-injury-urgent-vision-protection-continuity/` | 眼外伤、化学/异物损伤、防护、急诊转诊 | 分钟级伤害通过延迟、防护缺失和恢复断点造成长期失能 |
+| 儿童视觉发育窗口必须守住 | `pediatric-vision-screening-amblyopia-continuity/` | 儿童筛查、弱视、斜视、屈光风险、家庭随访 | 学习、运动、自信和长期视觉能力在发育窗口内被错过 |
+| 时间敏感型视网膜事件必须急转 | `retinal-detachment-urgent-referral-continuity/` | 视网膜脱离、症状信号、急转、手术窗口 | 急性视网膜事件错过窗口后转化为不可逆视觉和行动损失 |
 | 听觉沟通必须可持续 | `hearing-auditory-communication-continuity/` | 听力、言语识别、助听支持、耳鸣、沟通疲劳 | 沟通失败、孤立、认知负担和安全警报漏接 |
 | 空间定向和平衡必须稳定 | `vestibular-balance-spatial-orientation/` | 前庭、眩晕、平衡、空间定向、跌倒、移动信心 | 跌倒、移动恐惧、外出减少和行动半径收缩 |
 | 语言表达与理解必须可达 | `speech-language-communication-continuity/` | 失语、构音、言语运动、沟通参与、替代沟通 | 主体偏好、同意、关系和社会角色无法表达 |
