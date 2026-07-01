@@ -122,3 +122,4 @@ Current decisions:
 - `0107-add-one-hundred-second-wave-severe-weather-hazard-execution-domains.md`
 - `0108-add-one-hundred-third-wave-vector-animal-pest-exposure-execution-domains.md`
 - `0109-add-one-hundred-fourth-wave-plant-algae-fungi-outdoor-biological-exposure-domains.md`
+- `0110-add-one-hundred-fifth-wave-personal-device-consumable-continuity-domains.md`

@@ -752,6 +752,12 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `home-refrigeration-food-storage-continuity/` | 家庭冷藏、冷冻和食品保存决定营养输入是否在停电、设备故障和温度失控中变成腐坏、浪费或感染风险 |
 | `cooking-meal-preparation-kitchen-safety-continuity/` | 烹饪备餐和厨房安全决定食物能否从原料转成可食用营养，同时避免火灾、烫伤和交叉污染 |
 | `laundry-clothing-footwear-hygiene-continuity/` | 洗衣、衣物、鞋履和卫生用品决定主体能否维持外出、工作、学习、照护、尊严和天气防护 |
+| `contact-lens-hygiene-eye-infection-continuity/` | 隐形眼镜卫生、护理液、镜盒和替换周期决定视觉矫正是否会反向变成眼部感染与任务中断入口 |
+| `hearing-aid-maintenance-battery-access-continuity/` | 助听设备维护、电池/充电和耗材可得决定听觉辅助是否能持续支撑沟通、告警识别和社会参与 |
+| `menstrual-product-access-safety-continuity/` | 月经用品可得、卫生和更换入口决定周期性身体需求是否会压缩学习、工作、外出和尊严 |
+| `incontinence-absorbent-product-supply-dignity-continuity/` | 失禁吸收用品供应、隐私和皮肤风险决定控尿控便困难是否会转成隔离、羞辱和照护负担 |
+| `diabetic-therapeutic-footwear-offloading-continuity/` | 糖尿病治疗鞋、鞋垫和卸载供应决定足部压力管理是否能保护步行能力并降低溃疡感染风险 |
+| `compression-garment-lymphedema-venous-continuity/` | 压迫用品供应、穿戴负担和替换连续性决定淋巴水肿/静脉相关肿胀是否会持续侵蚀功能参与 |
 | `household-cleaning-disinfection-pest-control-continuity/` | 家庭清洁、消毒和害虫控制决定居住空间是否在感染、过敏、毒性和虫害暴露中保持可恢复 |
 | `postal-parcel-delivery-pickup-continuity/` | 邮件、包裹、签收、自提和地址同步决定证件、药品、设备、账单和关键物资能否从外部系统抵达主体 |
 | `household-maintenance-repair-contractor-continuity/` | 家庭维修、承包商、报价、许可、投诉和记录决定住房、设备、水电、卫生和安全故障能否被可信修复 |
@@ -2305,6 +2311,21 @@ Source links:
 - https://www.cpsc.gov/Safety-Education/Safety-Education-Centers/Window-Covering
 - https://www.usfa.fema.gov/prevention/home-fires/prevent-fires/scalds/
 - https://www.who.int/news-room/fact-sheets/detail/burns
+- https://www.cdc.gov/contact-lenses/
+- https://www.nei.nih.gov/eye-health-information/healthy-vision/contact-lenses
+- https://www.nidcd.nih.gov/health/hearing-aids
+- https://www.fda.gov/medical-devices/consumer-products/hearing-aids
+- https://www.womenshealth.gov/menstrual-cycle
+- https://www.womenshealth.gov/menstrual-cycle/your-menstrual-cycle
+- https://www.cdc.gov/hygiene/
+- https://www.niddk.nih.gov/health-information/urologic-diseases/bladder-control-problems
+- https://medlineplus.gov/urinaryincontinence.html
+- https://www.niddk.nih.gov/health-information/diabetes/overview/preventing-problems/foot-problems
+- https://www.medicare.gov/coverage/therapeutic-shoes-inserts
+- https://www.cdc.gov/diabetes/diabetes-complications/diabetes-and-your-feet.html
+- https://www.cancer.gov/about-cancer/treatment/side-effects/lymphedema
+- https://www.medicare.gov/coverage/lymphedema-compression-treatment-items
+- https://medlineplus.gov/lymphedema.html
 
 ## 使用规则
 

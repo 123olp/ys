@@ -794,6 +794,12 @@ flowchart TD
     H --> HRFSC[home-refrigeration-food-storage-continuity<br/>家庭冷藏 / 食品保存]
     H --> CMPKSC[cooking-meal-preparation-kitchen-safety-continuity<br/>烹饪备餐 / 厨房安全]
     H --> LCFHC[laundry-clothing-footwear-hygiene-continuity<br/>洗衣衣物 / 鞋履卫生]
+    H --> CLHEI[contact-lens-hygiene-eye-infection-continuity<br/>隐形眼镜 / 眼部感染]
+    H --> HAMBAC[hearing-aid-maintenance-battery-access-continuity<br/>助听设备 / 电池维护]
+    H --> MPASC[menstrual-product-access-safety-continuity<br/>月经用品 / 安全可得]
+    H --> IAPSDC[incontinence-absorbent-product-supply-dignity-continuity<br/>失禁用品 / 尊严供应]
+    H --> DTFOC[diabetic-therapeutic-footwear-offloading-continuity<br/>糖尿病治疗鞋 / 卸载]
+    H --> CGLVC[compression-garment-lymphedema-venous-continuity<br/>压迫用品 / 淋巴静脉]
     H --> HCDPCC[household-cleaning-disinfection-pest-control-continuity<br/>家庭清洁 / 消毒害虫控制]
     H --> PPDPC[postal-parcel-delivery-pickup-continuity<br/>邮件包裹 / 投递自提]
     H --> HMRCC[household-maintenance-repair-contractor-continuity<br/>家庭维修 / 承包商服务]
@@ -1221,6 +1227,12 @@ flowchart TD
 | [Home Refrigeration Food Storage Continuity](domains/home-refrigeration-food-storage-continuity/README.md) | 家庭冷藏、冷冻、食品保存、停电、温度控制和食品安全 | 把易腐食品转化为可调度的营养资源，并降低浪费与食源性风险 | 不提供具体食品处置、疾病判断、设备购买、冷链操作或囤积建议 |
 | [Cooking Meal Preparation Kitchen Safety Continuity](domains/cooking-meal-preparation-kitchen-safety-continuity/README.md) | 烹饪设备、备餐流程、食品处理、厨房火灾、烫伤和交叉污染风险 | 让食物稳定转化为营养、恢复、家庭协作和生活节律 | 不提供食谱、饮食处方、燃气电气维修、厨房改造或个体安全操作指南 |
 | [Laundry Clothing Footwear Hygiene Continuity](domains/laundry-clothing-footwear-hygiene-continuity/README.md) | 洗衣、干燥、换洗、衣物、鞋履、天气防护、卫生用品和参与尊严 | 让主体保持清洁、适温、防护、尊严和外出可达 | 不提供购买推荐、穿搭建议、PPE 配置、感染处理或个人卫生评价 |
+| [Contact Lens Hygiene Eye Infection Continuity](domains/contact-lens-hygiene-eye-infection-continuity/README.md) | 隐形眼镜、护理液、镜盒、替换周期、角膜感染和视觉任务连续性 | 防止视觉矫正工具因卫生、耗材和感染风险反向削弱感知与行动 | 不提供验光、配镜、护理步骤、感染诊断、治疗或产品推荐 |
+| [Hearing Aid Maintenance Battery Access Continuity](domains/hearing-aid-maintenance-battery-access-continuity/README.md) | 助听器、电池/充电、清洁维护、耗材、OTC 边界和沟通参与 | 让听觉辅助设备从一次性购买转化为持续可用的沟通入口 | 不提供听力诊断、设备验配、维修操作、购买推荐或医保/保险个案建议 |
+| [Menstrual Product Access Safety Continuity](domains/menstrual-product-access-safety-continuity/README.md) | 月经用品、卫生、更换入口、供应、学校/工作参与和安全边界 | 防止周期性生理需求把学习、工作、外出、睡眠和尊严转成任务断点 | 不提供妇科诊断、产品使用说明、感染处理、止痛用药或个体护理建议 |
+| [Incontinence Absorbent Product Supply Dignity Continuity](domains/incontinence-absorbent-product-supply-dignity-continuity/README.md) | 失禁吸收用品、供应、皮肤风险、隐私、外出半径和照护负担 | 把控尿控便困难从羞辱和隔离风险转成可供应、可更换、可参与的执行条件 | 不提供诊断、盆底训练、导尿护理、产品选择、皮肤处理或医保个案建议 |
+| [Diabetic Therapeutic Footwear Offloading Continuity](domains/diabetic-therapeutic-footwear-offloading-continuity/README.md) | 糖尿病治疗鞋、鞋垫、卸载、足部保护、供应更换和步行连续性 | 防止足部压力和鞋履失配把移动能力转成溃疡、感染和截肢风险 | 不提供伤口处理、鞋垫处方、足病诊断、购买推荐或 coverage 个案建议 |
+| [Compression Garment Lymphedema Venous Continuity](domains/compression-garment-lymphedema-venous-continuity/README.md) | 压迫用品、淋巴水肿、静脉回流、穿戴负担、供应更换和功能参与 | 把肿胀管理从一次性治疗转成可维护、可负担、可持续执行的身体接口 | 不提供压迫等级、尺寸测量、治疗方案、穿戴训练、禁忌判断或医保个案建议 |
 | [Household Cleaning Disinfection Pest Control Continuity](domains/household-cleaning-disinfection-pest-control-continuity/README.md) | 表面清洁、消毒、化学品安全、害虫控制、垃圾和室内卫生 | 在感染控制、害虫风险和化学暴露之间建立可治理的家庭卫生边界 | 不提供消毒配方、化学混合、杀虫剂使用、毒物处理、霉菌清除或医疗处置步骤 |
 | [Postal Parcel Delivery Pickup Continuity](domains/postal-parcel-delivery-pickup-continuity/README.md) | 邮件、包裹、投递、自提、签收、追踪、地址同步和最后一公里接收 | 让文件、药品、设备、账单、身份材料和远程交易实物能到达主体 | 不提供邮件拦截、包裹盗取、冒领、地址欺诈、追踪滥用或物流攻击方法 |
 | [Household Maintenance Repair Contractor Continuity](domains/household-maintenance-repair-contractor-continuity/README.md) | 家庭维修、承包商、服务预约、报价、许可、投诉和维修记录 | 让住房和设备故障能被发现、排程、修复和记录 | 不提供 DIY 危险维修、电气燃气施工、合同争议策略、理赔策略或法律意见 |
@@ -2180,6 +2192,12 @@ human_infra/
 │   ├── recreational-water-illness-beach-lake-access-continuity/
 │   ├── shellfish-biotoxin-harmful-algal-bloom-food-continuity/
 │   ├── landscaping-horticulture-worker-equipment-injury-continuity/
+│   ├── contact-lens-hygiene-eye-infection-continuity/
+│   ├── hearing-aid-maintenance-battery-access-continuity/
+│   ├── menstrual-product-access-safety-continuity/
+│   ├── incontinence-absorbent-product-supply-dignity-continuity/
+│   ├── diabetic-therapeutic-footwear-offloading-continuity/
+│   ├── compression-garment-lymphedema-venous-continuity/
 │   ├── urogenital-continuity/
 │   ├── urinary-tract-infection-pyelonephritis-urosepsis-continuity/
 │   ├── catheter-associated-uti-device-infection-continuity/
@@ -2376,5 +2394,6 @@ flowchart LR
 - 2026-07-01：新增第一百零二波 10 个强天气与自然 hazard 执行连续性域，覆盖强天气预警风险沟通、洪水撤离、飓风风暴潮、龙卷风避难、冬季风暴寒冷、干旱水限制、滑坡泥石流、野火烟雾、雷暴闪电和沿海洪水。
 - 2026-07-01：新增第一百零三波 10 个病媒、动物接触、虫害与农药暴露执行连续性域，覆盖蚊虫叮咬、蜱虫叮咬、狂犬病暴露、犬咬伤、鼠害、床虱、毒咬蜇伤、爬宠/后院家禽沙门氏菌、虱疥和农药标签中毒连接。
 - 2026-07-01：新增第一百零四波 10 个植物、藻类、真菌与户外生物暴露执行连续性域，覆盖花粉过敏/哮喘、漆酚植物、有害藻华/蓝藻毒素、野生蘑菇、有毒植物、入侵物种、霉菌毒素、休闲水病原、贝类毒素和园林园艺户外工伤。
+- 2026-07-01：新增第一百零五波 6 个贴身设备与耗材执行连续性域，覆盖隐形眼镜卫生、助听设备维护、月经用品、失禁吸收用品、糖尿病治疗鞋/卸载和压迫用品。
 
 完整记录见 [CHANGELOG.md](CHANGELOG.md)。

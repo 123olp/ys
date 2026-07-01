@@ -529,6 +529,12 @@ human_infra/
     ├── recreational-water-illness-beach-lake-access-continuity/ # 休闲水病、海滩湖泊与水域可达连续性
     ├── shellfish-biotoxin-harmful-algal-bloom-food-continuity/ # 贝类毒素、有害藻华与食物连续性
     ├── landscaping-horticulture-worker-equipment-injury-continuity/ # 园林园艺户外工人设备伤害连续性
+    ├── contact-lens-hygiene-eye-infection-continuity/ # 隐形眼镜卫生与眼部感染连续性
+    ├── hearing-aid-maintenance-battery-access-continuity/ # 助听设备维护与电池可得连续性
+    ├── menstrual-product-access-safety-continuity/ # 月经用品可得与安全连续性
+    ├── incontinence-absorbent-product-supply-dignity-continuity/ # 失禁吸收用品供应与尊严连续性
+    ├── diabetic-therapeutic-footwear-offloading-continuity/ # 糖尿病治疗鞋与卸载连续性
+    ├── compression-garment-lymphedema-venous-continuity/ # 压迫用品、淋巴水肿与静脉连续性
     ├── building-fire-life-safety-codes/ # 建筑消防与生命安全规范
     ├── manufacturing-repair-capacity/ # 制造与维修能力
     ├── public-procurement-contracting-capacity/ # 公共采购与合同能力
@@ -858,6 +864,7 @@ human_infra/
 - `domains/severe-weather-watch-warning-risk-communication-continuity/`、`domains/river-flash-flood-warning-evacuation-continuity/`、`domains/hurricane-storm-surge-evacuation-shelter-continuity/`、`domains/tornado-warning-safe-room-shelter-continuity/`、`domains/winter-storm-cold-exposure-power-continuity/`、`domains/drought-water-restriction-household-health-continuity/`、`domains/landslide-mudslide-debris-flow-warning-continuity/`、`domains/wildfire-smoke-clean-air-respiratory-continuity/`、`domains/thunderstorm-lightning-outdoor-safety-continuity/` 和 `domains/coastal-flooding-erosion-inundation-continuity/` 负责强天气和自然 hazard 执行连续性，覆盖预警理解、撤离避难、就地保护、空气暴露控制、寒冷/水限制和沿海淹没，不提供实时预警、路线、现场操作、工程、医疗、保险或法律建议。
 - `domains/mosquito-bite-arbovirus-prevention-continuity/`、`domains/tick-bite-lyme-rickettsial-prevention-continuity/`、`domains/rabies-exposure-bite-pep-continuity/`、`domains/dog-bite-community-injury-prevention-continuity/`、`domains/rodent-infestation-hantavirus-plague-continuity/`、`domains/bed-bug-infestation-sleep-housing-continuity/`、`domains/venomous-bites-stings-envenomation-continuity/`、`domains/reptile-amphibian-backyard-poultry-salmonella-continuity/`、`domains/lice-scabies-school-shelter-infestation-continuity/` 和 `domains/pesticide-label-exposure-poison-control-continuity/` 负责病媒、动物接触、虫害与农药暴露执行连续性，覆盖居住、睡眠、学校、旅行、户外劳动、宠物共处和毒物控制连接，不提供诊疗、用药、急救、灭虫、农药操作、动物处置、旅行许可、法律责任或个体风险判断。
 - `domains/pollen-allergen-asthma-outdoor-activity-continuity/`、`domains/poison-ivy-oak-sumac-urushiol-exposure-continuity/`、`domains/harmful-algal-bloom-cyanotoxin-water-recreation-continuity/`、`domains/toxic-mushroom-foraging-poisoning-continuity/`、`domains/poisonous-plant-childcare-household-exposure-continuity/`、`domains/invasive-species-human-health-access-continuity/`、`domains/mycotoxin-food-crop-storage-safety-continuity/`、`domains/recreational-water-illness-beach-lake-access-continuity/`、`domains/shellfish-biotoxin-harmful-algal-bloom-food-continuity/` 和 `domains/landscaping-horticulture-worker-equipment-injury-continuity/` 负责植物、藻类、真菌与户外生物暴露执行连续性，覆盖花粉、漆酚植物、藻华毒素、野生蘑菇、有毒植物、入侵物种、霉菌毒素、休闲水病原、贝类毒素和园林园艺复合伤害，不提供诊疗、食用许可、现场鉴定、作业许可、水质判断、农药/除草剂操作或个体风险判断。
+- `domains/contact-lens-hygiene-eye-infection-continuity/`、`domains/hearing-aid-maintenance-battery-access-continuity/`、`domains/menstrual-product-access-safety-continuity/`、`domains/incontinence-absorbent-product-supply-dignity-continuity/`、`domains/diabetic-therapeutic-footwear-offloading-continuity/` 和 `domains/compression-garment-lymphedema-venous-continuity/` 负责贴身设备与耗材执行连续性，覆盖隐形眼镜卫生、助听设备维护、月经用品、失禁吸收用品、糖尿病治疗鞋/卸载和压迫用品，不提供验光配镜、助听验配维修、产品推荐、诊疗、护理操作、医保个案或保险申诉建议。
 - `domains/building-fire-life-safety-codes/` 负责建筑规范、消防规范、生命安全、疏散、烟雾报警、无障碍和韧性改造。
 - `domains/manufacturing-repair-capacity/` 负责制造、维修、维护、备件、质量、本地生产和关键设备恢复能力。
 - `domains/public-procurement-contracting-capacity/` 负责公共采购、合同、供应商管理、应急采购、透明度和交付验收。
@@ -1197,3 +1204,4 @@ human_infra/
 - 2026-07-01：新增第一百零二波 10 个强天气与自然 hazard 执行连续性域，把官方预警到主体保护行动的转换层纳入 Human Infra。
 - 2026-07-01：新增第一百零三波 10 个病媒、动物接触、虫害与农药暴露执行连续性域，把小型生物风险和控制工具副作用纳入主体执行层。
 - 2026-07-01：新增第一百零四波 10 个植物、藻类、真菌与户外生物暴露执行连续性域，把自然生物暴露、食品/水域毒素和户外维护伤害纳入主体执行层。
+- 2026-07-01：新增第一百零五波 6 个贴身设备与耗材执行连续性域，把隐形眼镜、助听设备、月经用品、失禁用品、糖尿病治疗鞋/卸载和压迫用品纳入主体日常执行接口。

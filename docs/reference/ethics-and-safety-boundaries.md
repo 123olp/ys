@@ -1667,6 +1667,23 @@ Human Infra 不能被设计成更精密的压榨系统。
 - 不收集、复制、处理或要求家庭地址、门禁码、钥匙照片、锁具型号、智能锁日志、物业账号、家电序列号、食品照片、冰箱温度日志、邮件追踪号、承包商合同、发票、许可证、保险单、投诉记录或家庭安全细节。
 - 不替代消防、急救、食品安全、毒物中心、设备厂商、维修商、物业、邮政/快递、消费者保护机构、保险、法律、执法、监管机构或官方应急渠道。
 
+## 贴身设备与耗材执行连续性边界
+
+`contact-lens-hygiene-eye-infection-continuity`、`hearing-aid-maintenance-battery-access-continuity`、`menstrual-product-access-safety-continuity`、`incontinence-absorbent-product-supply-dignity-continuity`、`diabetic-therapeutic-footwear-offloading-continuity` 和 `compression-garment-lymphedema-venous-continuity` 关注隐形眼镜、助听设备、月经用品、失禁吸收用品、糖尿病治疗鞋/卸载和压迫用品如何影响主体感知、沟通、卫生、移动、尊严和公共参与，不是验光配镜、助听验配、妇科/泌尿/足病/淋巴水肿诊疗、产品推荐、医保申诉或个体护理入口。
+
+可以做：
+
+- 整理 CDC、NEI、NIDCD、FDA、Office on Women's Health、NIDDK、MedlinePlus、NCI、Medicare 和官方卫生/保险资料中的对象、机制、变量、证据边界和禁止用途。
+- 比较贴身设备与耗材的供应、维护、卫生、更换、适配、隐私、皮肤/感染风险和使用负担如何影响感知、沟通、移动、尊严、照护压力和任务连续性。
+- 记录这些资料中的产品安全、卫生失败、耗材断供、coverage 边界、PHI/隐私、羞辱成本和禁止用途。
+
+不能做：
+
+- 不提供隐形眼镜护理步骤、验光配镜、助听设备验配或维修、月经用品使用指导、失禁护理操作、糖尿病足伤口处理、压迫等级/尺寸判断、产品推荐、医保个案、保险申诉或个体购买建议。
+- 不判断某个眼部感染、听力损失、月经症状、失禁、足部伤口、淋巴水肿、静脉问题、设备、耗材、处方、供应商、coverage 或产品选择应如何具体处理。
+- 不收集、复制、处理或要求验光处方、听力图、设备序列号、月经日志、失禁记录、足部照片、伤口照片、压迫尺寸、医保/保险 ID、供应商订单、家庭地址、支付信息或其他 PHI。
+- 不替代眼科、验光、听力学、妇科、泌尿、足病、淋巴水肿治疗、护理、DME 供应商、Medicare/保险、药房、设备厂商、监管机构或官方申诉渠道。
+
 ## 个人移动执行连续性边界
 
 `personal-vehicle-maintenance-recall-repair-continuity`、`fuel-ev-charging-refueling-access-continuity`、`parking-curb-access-towing-impound-continuity`、`walking-bicycling-micromobility-continuity`、`paratransit-nemt-access-continuity`、`taxi-rideshare-demand-response-mobility-continuity`、`transit-fare-payment-toll-account-continuity` 和 `multimodal-trip-planning-real-time-wayfinding-continuity` 关注车辆、补能、停车、主动出行、辅助医疗交通、按需交通、支付账户和实时导向如何把交通服务转化为主体真实到达能力，不是车辆维修、补能操作、交通规避、平台攻击、逃票或个案申诉入口。

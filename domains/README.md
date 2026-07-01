@@ -569,6 +569,12 @@
 - `home-refrigeration-food-storage-continuity/`：家庭冷藏与食品保存连续性，整理冷藏、冷冻、停电、温度控制、食品保存和家庭端食品安全。
 - `cooking-meal-preparation-kitchen-safety-continuity/`：烹饪备餐与厨房安全连续性，整理烹饪设备、备餐流程、食品处理、厨房火灾、烫伤和交叉污染风险。
 - `laundry-clothing-footwear-hygiene-continuity/`：洗衣、衣物、鞋履与卫生连续性，整理换洗、衣物维护、鞋履、天气防护、卫生用品和参与尊严。
+- `contact-lens-hygiene-eye-infection-continuity/`：隐形眼镜卫生与眼部感染连续性，整理隐形眼镜、护理液、镜盒、替换周期、角膜感染和视觉任务执行。
+- `hearing-aid-maintenance-battery-access-continuity/`：助听设备维护与电池可得连续性，整理助听器、充电/电池、清洁维护、耗材、OTC 边界和沟通参与。
+- `menstrual-product-access-safety-continuity/`：月经用品可得与安全连续性，整理月经用品、卫生、更换入口、供应、学校/工作参与和安全边界。
+- `incontinence-absorbent-product-supply-dignity-continuity/`：失禁吸收用品供应与尊严连续性，整理吸收用品、供应、皮肤风险、隐私、外出半径和照护负担。
+- `diabetic-therapeutic-footwear-offloading-continuity/`：糖尿病治疗鞋与卸载连续性，整理治疗鞋、鞋垫、卸载、足部保护、供应更换和步行连续性。
+- `compression-garment-lymphedema-venous-continuity/`：压迫用品、淋巴水肿与静脉连续性，整理压迫用品、肿胀管理、穿戴负担、供应更换和功能参与。
 - `household-cleaning-disinfection-pest-control-continuity/`：家庭清洁、消毒与害虫控制连续性，整理表面清洁、消毒、化学品安全、害虫控制和室内卫生。
 - `postal-parcel-delivery-pickup-continuity/`：邮件、包裹、投递与自提连续性，整理邮件包裹、签收、自提、追踪、地址错配和最后一公里接收。
 - `household-maintenance-repair-contractor-continuity/`：家庭维修、承包商与修复服务连续性，整理维修请求、承包商、报价、许可、记录、投诉和修复恢复。

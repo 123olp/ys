@@ -125,6 +125,7 @@ docs/
 │   ├── 0107-add-one-hundred-second-wave-severe-weather-hazard-execution-domains.md
 │   ├── 0108-add-one-hundred-third-wave-vector-animal-pest-exposure-execution-domains.md
 │   ├── 0109-add-one-hundred-fourth-wave-plant-algae-fungi-outdoor-biological-exposure-domains.md
+│   ├── 0110-add-one-hundred-fifth-wave-personal-device-consumable-continuity-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -383,6 +384,12 @@ docs/
     - Then read `../domains/recreational-water-illness-beach-lake-access-continuity/README.md` for pools, lakes, beaches, recreational water illness, water-quality advisories, closures, or cooling/recovery access.
     - Then read `../domains/shellfish-biotoxin-harmful-algal-bloom-food-continuity/README.md` for shellfish biotoxins, HAB-related closures, seafood safety, harvest advisories, recalls, or coastal food continuity.
     - Then read `../domains/landscaping-horticulture-worker-equipment-injury-continuity/README.md` for landscaping, horticulture, lawn/tree maintenance, outdoor worker injury, heat, equipment, pesticide, or plant exposure.
+    - Then read `../domains/contact-lens-hygiene-eye-infection-continuity/README.md` for contact lenses, lens solution/cases, hygiene failure, eye infection risk, or vision task continuity.
+    - Then read `../domains/hearing-aid-maintenance-battery-access-continuity/README.md` for hearing aids, batteries/charging, maintenance, consumables, OTC boundaries, or communication participation.
+    - Then read `../domains/menstrual-product-access-safety-continuity/README.md` for menstrual products, hygiene access, school/work participation, replacement access, or product-safety boundaries.
+    - Then read `../domains/incontinence-absorbent-product-supply-dignity-continuity/README.md` for absorbent products, incontinence supply, dignity, privacy, skin risk, or caregiver burden.
+    - Then read `../domains/diabetic-therapeutic-footwear-offloading-continuity/README.md` for diabetic therapeutic footwear, inserts, offloading, foot protection, replacement supply, or walking continuity.
+    - Then read `../domains/compression-garment-lymphedema-venous-continuity/README.md` for compression garments, lymphedema, venous swelling, wearing burden, replacement supply, or functional participation.
 183. Read `../domains/advance-care-planning-medical-decision-continuity/README.md` if you are working on advance care planning, advance directives, health care proxy, medical decision continuity, goals of care, or incapacity communication.
 184. Read `../domains/supported-decision-making-guardianship-rights/README.md` if you are working on supported decision-making, guardianship, conservatorship, decision capacity, disability rights, or least restrictive alternatives.
 185. Read `../domains/healthcare-personal-representative-hipaa-access-continuity/README.md` if you are working on HIPAA personal representatives, caregiver access, proxy access, medical records, privacy boundaries, or authorized care coordination.

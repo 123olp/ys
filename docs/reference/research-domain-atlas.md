@@ -475,6 +475,12 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 家庭冷藏必须保全营养输入 | `home-refrigeration-food-storage-continuity/` | 冷藏、冷冻、停电、温度控制、食品保存 | 温度失控、停电或设备故障会把食物资源转成浪费、感染风险和预算损失 |
 | 烹饪备餐必须安全可持续 | `cooking-meal-preparation-kitchen-safety-continuity/` | 烹饪设备、备餐、食品处理、厨房火灾、烫伤、交叉污染 | 烹饪链失效会把营养输入转成火灾、伤害、食源性风险和时间损耗 |
 | 衣物鞋履卫生必须支撑外出与尊严 | `laundry-clothing-footwear-hygiene-continuity/` | 洗衣、衣物、鞋履、天气防护、卫生用品 | 换洗、鞋履或防护断裂会压缩工作、学习、照护、社交和恢复 |
+| 视觉矫正必须不变成感染入口 | `contact-lens-hygiene-eye-infection-continuity/` | 隐形眼镜、护理液、镜盒、替换周期、眼部感染风险 | 隐形眼镜卫生、耗材或感染断点会把视觉增强工具反转成疼痛、失明风险和任务中断 |
+| 听觉辅助必须持续可用 | `hearing-aid-maintenance-battery-access-continuity/` | 助听器、电池/充电、清洁维护、耗材、沟通参与 | 助听设备断电、失修或耗材不可得会压缩沟通、告警识别、社交参与和安全感知 |
+| 月经用品必须可得可安全更换 | `menstrual-product-access-safety-continuity/` | 月经用品、卫生、更换入口、学校/工作参与 | 周期性耗材不可得会把身体节律转成缺勤、羞辱、睡眠中断和公共参与限制 |
+| 失禁耗材必须保护尊严和皮肤边界 | `incontinence-absorbent-product-supply-dignity-continuity/` | 吸收用品、供应、皮肤风险、隐私、外出半径 | 失禁用品断供会把控尿控便困难放大为皮肤损伤、隔离、照护负担和尊严损失 |
+| 足部卸载必须保护移动能力 | `diabetic-therapeutic-footwear-offloading-continuity/` | 糖尿病治疗鞋、鞋垫、卸载、足部保护、替换供应 | 治疗鞋或卸载失败会把步行需求转成溃疡、感染、截肢风险和长期移动损失 |
+| 压迫用品必须可持续执行 | `compression-garment-lymphedema-venous-continuity/` | 压迫用品、淋巴水肿、静脉回流、穿戴负担、替换供应 | 压迫用品不可得、不可穿或不可替换会让肿胀、疼痛、皮肤风险和功能参与恶化 |
 | 家庭卫生必须可治理 | `household-cleaning-disinfection-pest-control-continuity/` | 清洁、消毒、化学品安全、害虫控制、室内卫生 | 清洁不足、化学误用或害虫暴露会制造感染、过敏、毒性和居住压力 |
 | 邮件包裹必须可接收 | `postal-parcel-delivery-pickup-continuity/` | 邮件、包裹、签收、自提、追踪、地址同步 | 文件、药品、设备、账单或身份材料收不到会切断远程服务和物理资源交付 |
 | 家庭故障必须可被可信维修 | `household-maintenance-repair-contractor-continuity/` | 维修请求、承包商、报价、许可、投诉、维修记录 | 维修延误、诈骗、无证服务或记录缺失会让住房、设备、水电、卫生和安全持续恶化 |
@@ -1202,6 +1208,12 @@ risk-engineering
   -> home-refrigeration-food-storage-continuity
   -> cooking-meal-preparation-kitchen-safety-continuity
   -> laundry-clothing-footwear-hygiene-continuity
+  -> contact-lens-hygiene-eye-infection-continuity
+  -> hearing-aid-maintenance-battery-access-continuity
+  -> menstrual-product-access-safety-continuity
+  -> incontinence-absorbent-product-supply-dignity-continuity
+  -> diabetic-therapeutic-footwear-offloading-continuity
+  -> compression-garment-lymphedema-venous-continuity
   -> household-cleaning-disinfection-pest-control-continuity
   -> postal-parcel-delivery-pickup-continuity
   -> household-maintenance-repair-contractor-continuity
