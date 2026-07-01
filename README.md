@@ -134,6 +134,7 @@ flowchart LR
 | 理解有效永生的复利效应 | [有效永生的加速回报飞轮](#有效永生的加速回报飞轮) / [论文草案](docs/explanations/effective-immortality-acceleration-flywheel.md) / [证据矩阵](docs/source-notes/2026-06-28-effective-immortality-flywheel-evidence-matrix.md) | 主体持续时间、能力升级、技术采用和可能性空间如何互相强化 |
 | 先理解项目全貌 | [docs/README.md](docs/README.md) | 文档系统入口与推荐阅读顺序 |
 | 查看领域边界 | [docs/reference/domain-map.md](docs/reference/domain-map.md) | Human Infra 的子域地图和拆分原因 |
+| 查看先验追问域索引 | [docs/reference/transcendental-domain-index.md](docs/reference/transcendental-domain-index.md) | 从“有效永生何以可能”进入 A-K 主干研究域 |
 | 查看研究域图谱 | [docs/reference/research-domain-atlas.md](docs/reference/research-domain-atlas.md) | 从有效永生先验条件生成研究域的规则、当前域地图和域判定契约 |
 | 查看潜在研究域雷达 | [docs/reference/research-domain-radar.md](docs/reference/research-domain-radar.md) | 持续调研中的候选研究域、来源信号和晋升触发条件 |
 | 查看 v0.1 项目边界 | [docs/reference/project-boundary-v0.1.md](docs/reference/project-boundary-v0.1.md) | 当前公开版本里 Human Infra 是什么、不是什么、材料应该落到哪里 |
@@ -2281,5 +2282,6 @@ flowchart LR
 - 2026-07-01：新增第九十九波 10 个灾后恢复执行连续性域，覆盖个人援助导航、临时住房、恢复中心、长期个案管理、灾害失业收入中断、灾害法律援助、废弃物卫生清理、洪水后霉菌湿气、灾害行为健康和志愿捐赠管理。
 - 2026-07-01：新增第一百波 10 个传染病暴发响应执行连续性域，覆盖病例调查接触追踪、隔离检疫工作学校、社区检测筛查、疫苗行动加强针递送、口罩呼吸防护、室内通风过滤、学校工作场所运营、医疗挤兑分诊容量、医疗对策储备分发和污水病原体早期预警。
 - 2026-07-01：新增第一百零一波 10 个危险材料与工业事故执行连续性域，覆盖化学释放避险撤离、社区化学风险知情披露、HazMat 事故指挥、工业过程安全、有毒羽流空气监测、HAZWOPER 响应者 PPE、暴露后去污分诊、危险材料运输 ERG、油污危险释放响应恢复和电池热失控火灾风险。
+- 2026-07-01：新增先验追问研究域索引，把有效永生 A-K 主干域收束为“终极目标 -> 可能性条件 -> 已有域目录 -> 维护触发”的可导航入口。
 
 完整记录见 [CHANGELOG.md](CHANGELOG.md)。

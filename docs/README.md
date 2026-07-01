@@ -125,6 +125,7 @@ docs/
 │   ├── life-path-prediction-model-governance.md
 │   ├── project-boundary-v0.1.md
 │   ├── repository-standards.md
+│   ├── transcendental-domain-index.md
 │   ├── research-domain-atlas.md
 │   ├── research-domain-radar.md
 │   ├── research-model-visualization-toolkit.md
@@ -170,9 +171,10 @@ docs/
 16. Read `reference/review-checklists.md`.
 17. Read `explanations/human-runtime-infrastructure.md`.
 18. Read `source-notes/2026-06-29-controllable-metric-waiting-room-hypothesis-revision-notes.md` if you are working on Future Waiting.
-19. Read `reference/research-domain-atlas.md`.
-20. Read `reference/research-domain-radar.md` before proposing a new domain.
-21. Read `../domains/cellular-reprogramming/README.md` if you are working on cellular rejuvenation or epigenetic reprogramming.
+19. Read `reference/transcendental-domain-index.md` before turning effective-immortality ideas into domain work.
+20. Read `reference/research-domain-atlas.md`.
+21. Read `reference/research-domain-radar.md` before proposing a new domain.
+22. Read `../domains/cellular-reprogramming/README.md` if you are working on cellular rejuvenation or epigenetic reprogramming.
 22. Read `../domains/health-data-privacy-governance/README.md` if you are working on sensitive health, genomic, behavioral, neural, or service-use data.
 23. Read `../domains/functioning-quality-of-life-outcomes/README.md` if you are defining whether a Human Infra intervention actually improves function or lived experience.
 24. Read `../domains/health-economics-value-assessment/README.md` if you are working on disease burden, cost-effectiveness, HTA, or public-value framing.

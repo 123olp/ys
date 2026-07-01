@@ -255,3 +255,7 @@ All notable repository structure changes are recorded here.
 - Added `docs/reference/source-card-system.md` and `docs/templates/research-card.md` so papers, books, tools, cases, standards, and datasets pass through a reusable card before entering stable docs, models, or Web pages.
 - Updated README, docs navigation, Web route guidance, repository validation, and the Noah's Ark genealogy with a theory-index entry for incoming material.
 - Migrated `web/` from Observable Framework to Astro + D3, rebuilding the four-page research narrative, book translation, life-path model, and research standards site with a more academic layout.
+
+## 2026-07-01
+
+- Added `docs/reference/transcendental-domain-index.md` and ADR 0106 to bind the effective-immortality A-K trunk to existing domain directories, avoiding duplicate synonym domains while preserving a first-principles navigation layer.

@@ -138,6 +138,7 @@ docs/
 │   ├── life-path-prediction-model-governance.md
 │   ├── project-boundary-v0.1.md
 │   ├── repository-standards.md
+│   ├── transcendental-domain-index.md
 │   ├── research-domain-atlas.md
 │   ├── research-domain-radar.md
 │   ├── research-model-visualization-toolkit.md
@@ -183,6 +184,7 @@ docs/
 - `reference/life-path-prediction-model-contract.md`：定义干预、状态转移、风险函数、生存曲线、有效时间、主观时间、相对时间和未来选择权的预测模型契约。
 - `reference/life-path-prediction-model-governance.md`：定义定量预测模型的证据准入、偏差审查、验证、报告和禁止用途门禁。
 - `reference/project-boundary-v0.1.md`：定义当前公开版本边界、纳入范围、排除范围、材料落点和后续版本方向。
+- `reference/transcendental-domain-index.md`：把“有效永生何以可能”的先验追问压缩成 A-K 主干研究域入口。
 - `reference/research-domain-atlas.md`：定义从有效永生先验条件生成研究域的规则、当前域地图和域判定契约。
 - `reference/research-domain-radar.md`：记录尚未晋升为正式子域的潜在研究域、来源信号和晋升触发条件。
 - `domains/health-data-privacy-governance/`、`domains/functioning-quality-of-life-outcomes/`、`domains/health-economics-value-assessment/`、`domains/immunization-public-health-surveillance/`、`domains/maternal-newborn-child-development/` 和 `domains/patient-safety-organizational-learning/`：第十三波正式研究域，分别承载数据治理、结局评估、价值评估、公共卫生监测、早期生命基础设施和患者安全组织学习。
