@@ -642,6 +642,25 @@ Human Infra 不能被设计成更精密的压榨系统。
 - 产出医疗回避、延误就医、自我导尿/透析/停药实验、抗菌药滥用、设备规避、耗材囤积套利、产品背书、保险规避或高敏感个人资料收集内容。
 - 替代泌尿科、肾脏科、感染科、急诊、护理、造口治疗师、透析中心、移植团队、药师、公共卫生、保险、法律援助或本地专业人员。
 
+## 皮肤屏障、伤口与皮肤病执行连续性边界
+
+`pressure-injury-prevention-repositioning-support-surface-continuity`、`chronic-wound-venous-diabetic-pressure-ulcer-continuity`、`wound-infection-cellulitis-sepsis-continuity`、`diabetic-foot-ulcer-amputation-prevention-continuity`、`burn-wound-aftercare-scar-function-continuity`、`surgical-wound-dehiscence-ssi-continuity`、`incontinence-associated-dermatitis-moisture-skin-continuity`、`eczema-atopic-dermatitis-itch-sleep-continuity`、`psoriasis-inflammatory-skin-systemic-burden-continuity` 和 `skin-care-supplies-dressings-barrier-products-continuity` 关注皮肤边界、创面、潮湿、感染、瘙痒、炎症、瘢痕、耗材和照护执行如何影响主体持续性，不是伤口评估、皮肤科诊断、护理方案、产品选择、抗感染治疗、手术处理或保险申诉入口。
+
+可以做：
+
+- 整理 AHRQ、NPIAP、CDC/NHSN、NIDDK、CDC、MedlinePlus、NIAMS、FDA 和相关公共机构资料。
+- 比较压力、剪切、潮湿、血供、感觉减退、慢性炎症、感染入口、术后恢复、烧伤后瘢痕、耗材供应和支付摩擦如何影响有效时间、行动能力、睡眠、尊严、照护负担和未来选择权。
+- 记录公共资料的适用对象、证据类型、功能结果、感染升级边界、材料/耗材接口、服务入口、禁止用途和不确定性。
+- 将这些域与 `skin-barrier-wound-healing`、`immune-maintenance`、`antimicrobial-resilience`、`diabetic-hyperglycemic-hypoglycemic-crisis-continuity`、`burn-injury-critical-care-rehabilitation-continuity`、`surgical-anesthesia-perioperative-safety`、`caregiving-long-term-care` 和 `functioning-quality-of-life-outcomes` 建立只读接口。
+
+不能做：
+
+- 提供伤口照片判断、皮损诊断、感染分诊、烧伤分级、糖尿病足风险判断、截肢风险判断、SSI 判断、皮肤病分期、个人预后或急诊替代建议。
+- 生成敷料、屏障产品、抗生素、皮肤科用药、清创、换药、减压翻身、支撑面、卸载鞋具、烧伤处理、切口处理、瘢痕处理、护理步骤、产品购买、保险申诉或个体治疗建议。
+- 收集、存储或推断可识别个人的伤口照片、皮肤照片、糖尿病状态、足部检查、手术记录、烧伤记录、造口/失禁资料、用药、耗材订单、保险、就诊记录、定位、儿童信息或其他 PHI。
+- 产出医疗回避、延误就医、自我清创/换药/抗生素实验、伤口产品背书、皮肤病污名、身体羞辱、护理责任转嫁、耗材囤积套利、保险规避或高敏感个人资料收集内容。
+- 替代皮肤科、伤口护理、感染科、内分泌/糖尿病足团队、烧伤中心、外科、护理、康复、药师、公共卫生、保险、法律援助或本地专业人员。
+
 ## 慢性专科负担与功能恢复边界
 
 `chronic-pain-functional-restoration-continuity`、`low-back-pain-spine-function-continuity`、`osteoarthritis-joint-function-continuity`、`autoimmune-rheumatic-disease-inflammatory-burden-continuity`、`inflammatory-bowel-disease-digestive-continuity`、`chronic-liver-disease-masld-mash-continuity`、`thyroid-disease-endocrine-function-continuity`、`iron-deficiency-anemia-oxygen-carrying-continuity`、`asthma-copd-maintenance-control-continuity` 和 `allergic-atopic-disease-immunologic-burden-continuity` 关注慢性疼痛、脊柱、关节、免疫炎症、消化道炎症、慢性肝病、甲状腺、贫血、慢性气道和过敏/特应性疾病如何长期消耗有效时间、恢复质量、移动能力、体力、注意力、社会参与和未来选择权，不是个人诊断、治疗、康复、药物、手术、补剂、饮食、保险或工作能力判断入口。

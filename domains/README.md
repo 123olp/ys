@@ -33,6 +33,16 @@
 - `cardiovascular-resilience/`：心血管韧性，整理心脏、血管、血压、血栓、卒中、心衰和循环风险。
 - `musculoskeletal-integrity/`：肌骨完整性，整理肌肉、骨骼、关节、跌倒、疼痛和行动承载结构。
 - `skin-barrier-wound-healing/`：皮肤屏障与伤口愈合，整理皮肤屏障、伤口、压力损伤、感染入口和热调节。
+- `pressure-injury-prevention-repositioning-support-surface-continuity/`：压力损伤预防、翻身减压、支撑面、剪切、潮湿和感觉减退。
+- `chronic-wound-venous-diabetic-pressure-ulcer-continuity/`：慢性伤口、静脉性溃疡、糖尿病溃疡、压力性溃疡、渗出和愈合停滞。
+- `wound-infection-cellulitis-sepsis-continuity/`：伤口感染、蜂窝织炎、感染扩散、脓毒症风险和服务延迟。
+- `diabetic-foot-ulcer-amputation-prevention-continuity/`：糖尿病足溃疡、周围神经病变、足部检查、卸载、血供和截肢预防。
+- `burn-wound-aftercare-scar-function-continuity/`：烧伤后创面、换药随访、瘢痕、挛缩、功能恢复和心理社会回归。
+- `surgical-wound-dehiscence-ssi-continuity/`：手术切口、裂开、手术部位感染、异常闭环和术后恢复。
+- `incontinence-associated-dermatitis-moisture-skin-continuity/`：失禁相关皮炎、潮湿暴露、皮肤屏障产品、清洁流程和照护负担。
+- `eczema-atopic-dermatitis-itch-sleep-continuity/`：湿疹/特应性皮炎、瘙痒、睡眠破坏、flare、污名和日常恢复。
+- `psoriasis-inflammatory-skin-systemic-burden-continuity/`：银屑病、炎症皮肤、系统负担、关节风险、污名和长期治疗摩擦。
+- `skin-care-supplies-dressings-barrier-products-continuity/`：皮肤护理用品、敷料、屏障产品、耗材供应、适配和材料安全。
 - `urogenital-continuity/`：泌尿生殖连续性，整理尿控、尿路、盆底、泌尿感染、性功能和日常尊严。
 - `urinary-tract-infection-pyelonephritis-urosepsis-continuity/`：尿路感染、复发、肾盂肾炎、尿源性脓毒症、抗菌药暴露和服务延迟。
 - `catheter-associated-uti-device-infection-continuity/`：导尿设备、CAUTI、留置时间、感染控制、行动限制和照护负担。

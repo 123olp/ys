@@ -122,6 +122,16 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `endocrine-hormonal-regulation/` | 激素轴和反馈环跨越代谢、压力、骨骼、情绪和修复，是独立稳态系统 |
 | `blood-oxygen-hemostasis/` | 血液同时承担氧气运输、止血、凝血和血栓风险，不能只归入心血管 |
 | `skin-barrier-wound-healing/` | 皮肤屏障和伤口愈合是外界接口、感染入口、疼痛和照护负担的独立域 |
+| `pressure-injury-prevention-repositioning-support-surface-continuity/` | 压力损伤预防需要独立处理支撑面、翻身减压、剪切、潮湿、感觉减退和长期照护执行 |
+| `chronic-wound-venous-diabetic-pressure-ulcer-continuity/` | 慢性伤口把静脉、代谢、压力、感染和愈合停滞汇聚成长期有效时间损耗 |
+| `wound-infection-cellulitis-sepsis-continuity/` | 伤口感染和蜂窝织炎把皮肤入口连接到全身感染、急诊、住院和恢复失败风险 |
+| `diabetic-foot-ulcer-amputation-prevention-continuity/` | 糖尿病足需要独立处理感觉丧失、血供、足部检查、卸载、感染和截肢预防 |
+| `burn-wound-aftercare-scar-function-continuity/` | 烧伤后创面把急性烧伤存活后的瘢痕、挛缩、疼痛、功能恢复和社会回归纳入长期模型 |
+| `surgical-wound-dehiscence-ssi-continuity/` | 手术切口、裂开和 SSI 是治疗通道自身的皮肤边界执行风险 |
+| `incontinence-associated-dermatitis-moisture-skin-continuity/` | 潮湿相关皮炎把失禁、清洁、屏障用品、长期照护和尊严连接成执行域 |
+| `eczema-atopic-dermatitis-itch-sleep-continuity/` | 湿疹和特应性皮炎通过瘙痒、睡眠破坏、flare 和污名持续吞噬恢复能力 |
+| `psoriasis-inflammatory-skin-systemic-burden-continuity/` | 银屑病把皮肤炎症、系统负担、关节风险、污名和治疗摩擦连接起来 |
+| `skin-care-supplies-dressings-barrier-products-continuity/` | 敷料、屏障产品和皮肤护理耗材是皮肤边界维护能否落地的材料供应接口 |
 | `extracellular-matrix-glycation/` | 细胞外基质、糖化、交联和纤维化决定组织力学与结构性老化 |
 | `lymphatic-glymphatic-clearance/` | 淋巴和脑淋巴清除连接组织液、免疫运输、水肿、睡眠和神经退行 |
 | `gastrointestinal-barrier-absorption/` | 消化、吸收、肠道屏障和胃肠动力决定营养、水分、药物和炎症入口 |
@@ -994,6 +1004,7 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | NIDDK endocrine diseases / Endocrine Society hormone resources | 提示激素轴、反馈环和跨器官信号是代谢、压力、骨骼和情绪稳态的独立条件 |
 | NHLBI blood diseases / CDC blood disorders | 提示血液氧运、贫血、凝血、出血和血栓风险构成独立运输与止血系统 |
 | NCBI wound healing / pressure injury resources | 提示皮肤屏障、伤口愈合、压力损伤和感染入口是外界接口维护域 |
+| AHRQ/NPIAP/CDC/NIDDK/NIAMS/MedlinePlus/FDA skin and wound sources | 提示压力损伤、慢性伤口、伤口感染、糖尿病足、烧伤后创面、SSI、潮湿相关皮炎、湿疹、银屑病和敷料用品是皮肤边界执行层独立失效模式 |
 | Extracellular matrix / advanced glycation end-products aging reviews | 提示组织材料结构、糖化交联和纤维化是结构性衰老和器官功能下降机制 |
 | Lymphatic aging / glymphatic review literature | 提示淋巴、脑膜淋巴和类淋巴清除连接免疫、睡眠、脑废物和神经连续性 |
 | NIDDK digestive diseases / intestinal permeability reviews | 提示消化、吸收、肠道屏障、胃肠动力和吸收不良是营养输入与炎症入口 |
@@ -1797,6 +1808,18 @@ Source links:
 - https://www.who.int/news-room/fact-sheets/detail/burns
 - https://ameriburn.org/
 - https://www.cdc.gov/fire-safety/
+- https://www.ahrq.gov/patient-safety/settings/hospital/resource/pressureinjury/index.html
+- https://npiap.com/page/PressureInjuryStages
+- https://www.cdc.gov/nhsn/psc/ssi/index.html
+- https://www.niddk.nih.gov/health-information/diabetes/overview/preventing-problems/foot-problems
+- https://www.cdc.gov/diabetes/diabetes-complications/diabetes-and-your-feet.html
+- https://medlineplus.gov/pressureinjuries.html
+- https://medlineplus.gov/woundsandinjuries.html
+- https://medlineplus.gov/cellulitis.html
+- https://medlineplus.gov/burns.html
+- https://www.niams.nih.gov/health-topics/atopic-dermatitis
+- https://www.niams.nih.gov/health-topics/psoriasis
+- https://www.fda.gov/medical-devices/general-hospital-devices-and-supplies/wound-dressings
 - https://www.heart.org/
 - https://professional.heart.org/
 - https://www.nhlbi.nih.gov/health/heart-attack

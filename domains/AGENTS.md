@@ -1866,6 +1866,36 @@ domains/
 ├── skin-barrier-wound-healing/
 │   ├── AGENTS.md
 │   └── README.md
+├── pressure-injury-prevention-repositioning-support-surface-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── chronic-wound-venous-diabetic-pressure-ulcer-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── wound-infection-cellulitis-sepsis-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── diabetic-foot-ulcer-amputation-prevention-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── burn-wound-aftercare-scar-function-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── surgical-wound-dehiscence-ssi-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── incontinence-associated-dermatitis-moisture-skin-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── eczema-atopic-dermatitis-itch-sleep-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── psoriasis-inflammatory-skin-systemic-burden-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── skin-care-supplies-dressings-barrier-products-continuity/
+│   ├── AGENTS.md
+│   └── README.md
 ├── urogenital-continuity/
 │   ├── AGENTS.md
 │   └── README.md
@@ -2194,6 +2224,7 @@ domains/
 - `depression-mood-disorder-functioning-continuity/`、`anxiety-stress-threat-regulation-continuity/`、`trauma-ptsd-adversity-recovery-continuity/`、`psychosis-reality-testing-community-continuity/`、`bipolar-mood-episode-stability-continuity/`、`adhd-executive-function-neurodevelopment-continuity/`、`autism-neurodiversity-support-continuity/` 和 `eating-disorders-nutrition-body-continuity/` 负责心理健康、神经发育与功能连续性的证据边界，不提供诊断、治疗、药物、危机处置、家庭干预、饮食控制、行为训练、招聘/教育筛选、个体风险评分、危险性判断、社交训练或敏感资料收集。
 - `regenerative-medicine/`、`cancer-control/` 和 `immune-maintenance/` 负责身体基底维护相关的机制、风险和证据边界。
 - `rehabilitation-functioning/`、`assistive-technology-access/`、`skin-barrier-wound-healing/` 和 `sensory-continuity/` 负责功能恢复、能力补偿、外界屏障和感官反馈连续性。
+- `pressure-injury-prevention-repositioning-support-surface-continuity/`、`chronic-wound-venous-diabetic-pressure-ulcer-continuity/`、`wound-infection-cellulitis-sepsis-continuity/`、`diabetic-foot-ulcer-amputation-prevention-continuity/`、`burn-wound-aftercare-scar-function-continuity/`、`surgical-wound-dehiscence-ssi-continuity/`、`incontinence-associated-dermatitis-moisture-skin-continuity/`、`eczema-atopic-dermatitis-itch-sleep-continuity/`、`psoriasis-inflammatory-skin-systemic-burden-continuity/` 和 `skin-care-supplies-dressings-barrier-products-continuity/` 负责皮肤屏障执行层的证据边界，不提供伤口照片判断、皮损诊断、敷料/屏障产品推荐、抗生素、清创、换药、减压翻身方案、烧伤处理、手术切口处理、截肢风险判断、皮肤科用药、保险申诉或个体医疗建议。
 - `antimicrobial-resilience/` 负责抗微生物耐药、感染控制和现代医学抗感染底座。
 - `neuro-continuity/`、`memory-editing/`、`cognitive-augmentation/`、`ai-agency-safety/`、`digital-identity-security/` 和 `disembodied-cns/` 负责神经、身份、认知、AI 代理、数字入口和去具身连续性相关边界。
 - `ai-evaluation-benchmark-validity-continuity/`、`ai-red-teaming-adversarial-testing-continuity/`、`ai-incident-reporting-post-deployment-monitoring-continuity/`、`ai-data-provenance-contamination-drift-continuity/`、`synthetic-data-generation-validation-continuity/`、`ai-model-supply-chain-provenance-release-continuity/`、`ai-agent-tool-permission-sandbox-continuity/`、`human-ai-oversight-handoff-accountability-continuity/` 和 `ai-resource-cost-latency-budget-continuity/` 负责 AI 作为主体增强系统时的评测、红队、事故监控、数据谱系、合成数据、模型供应链、工具权限、人机交接和资源预算边界。

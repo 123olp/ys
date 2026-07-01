@@ -615,6 +615,16 @@ human_infra/
     ├── sensory-continuity/ # 感官连续性
     ├── sleep-circadian-recovery/ # 睡眠、节律与恢复
     ├── skin-barrier-wound-healing/ # 皮肤屏障与伤口愈合
+    ├── pressure-injury-prevention-repositioning-support-surface-continuity/ # 压力损伤、减压与支撑面连续性
+    ├── chronic-wound-venous-diabetic-pressure-ulcer-continuity/ # 慢性伤口、静脉/糖尿病/压力性溃疡连续性
+    ├── wound-infection-cellulitis-sepsis-continuity/ # 伤口感染、蜂窝织炎与脓毒症风险连续性
+    ├── diabetic-foot-ulcer-amputation-prevention-continuity/ # 糖尿病足溃疡与截肢预防连续性
+    ├── burn-wound-aftercare-scar-function-continuity/ # 烧伤创面后续照护、瘢痕与功能连续性
+    ├── surgical-wound-dehiscence-ssi-continuity/ # 手术切口、裂开与 SSI 连续性
+    ├── incontinence-associated-dermatitis-moisture-skin-continuity/ # 失禁相关皮炎、潮湿与皮肤保护连续性
+    ├── eczema-atopic-dermatitis-itch-sleep-continuity/ # 湿疹/特应性皮炎、瘙痒与睡眠连续性
+    ├── psoriasis-inflammatory-skin-systemic-burden-continuity/ # 银屑病、炎症皮肤与系统负担连续性
+    ├── skin-care-supplies-dressings-barrier-products-continuity/ # 皮肤护理用品、敷料与屏障产品连续性
     ├── social-connection-relational-infra/ # 社会连接与关系基础设施
     ├── loneliness-social-isolation-risk-continuity/ # 孤独与社会隔离风险连续性
     ├── social-prescribing-community-referral-continuity/ # 社会处方与社区转介连续性
@@ -693,7 +703,7 @@ human_infra/
 - `domains/physical-activity-mobility/` 负责身体活动、久坐、心肺适能、力量、平衡和移动能力。
 - `domains/cardiovascular-resilience/` 负责心脏、血管、血压、动脉粥样硬化、血栓、卒中、心衰和循环系统韧性。
 - `domains/musculoskeletal-integrity/` 负责肌肉、骨骼、关节、肌少症、骨质疏松、跌倒和行动承载结构。
-- `domains/skin-barrier-wound-healing/` 负责皮肤屏障、伤口愈合、压力损伤、感染入口、热调节和感觉边界。
+- `domains/skin-barrier-wound-healing/` 负责皮肤屏障、伤口愈合、压力损伤、感染入口、热调节和感觉边界；`domains/pressure-injury-prevention-repositioning-support-surface-continuity/`、`domains/chronic-wound-venous-diabetic-pressure-ulcer-continuity/`、`domains/wound-infection-cellulitis-sepsis-continuity/`、`domains/diabetic-foot-ulcer-amputation-prevention-continuity/`、`domains/burn-wound-aftercare-scar-function-continuity/`、`domains/surgical-wound-dehiscence-ssi-continuity/`、`domains/incontinence-associated-dermatitis-moisture-skin-continuity/`、`domains/eczema-atopic-dermatitis-itch-sleep-continuity/`、`domains/psoriasis-inflammatory-skin-systemic-burden-continuity/` 和 `domains/skin-care-supplies-dressings-barrier-products-continuity/` 负责压力损伤预防、慢性伤口、伤口感染/蜂窝织炎、糖尿病足、烧伤后创面、手术切口/SSI、潮湿相关皮炎、湿疹、银屑病和皮肤护理用品这些皮肤边界执行层失效模式。
 - `domains/urogenital-continuity/` 负责膀胱、尿路、尿控、盆底、泌尿感染、性功能和日常尊严；`domains/urinary-tract-infection-pyelonephritis-urosepsis-continuity/`、`domains/catheter-associated-uti-device-infection-continuity/`、`domains/urinary-retention-bladder-emptying-continuity/`、`domains/overactive-bladder-nocturia-sleep-continuity/`、`domains/kidney-stone-obstruction-renal-colic-continuity/`、`domains/benign-prostatic-hyperplasia-luts-continuity/`、`domains/urinary-diversion-urostomy-supplies-continuity/`、`domains/dialysis-access-vascular-peritoneal-continuity/`、`domains/home-dialysis-supply-self-management-continuity/` 和 `domains/kidney-transplant-immunosuppression-graft-continuity/` 负责尿路感染、导尿设备、尿潴留、夜尿、结石梗阻、BPH/LUTS、尿流改道、透析通路、家庭透析和肾移植这些排泄出口与肾脏替代执行层失效模式。
 - `domains/reproductive-fertility-continuity/` 负责生育力、生殖衰老、配子质量、妊娠风险、生殖自主性和未来选择权。
 - `domains/attention-executive-control/` 负责注意力、执行功能、工作记忆、抑制控制、任务切换、冲动控制和分心环境。
@@ -1076,3 +1086,4 @@ human_infra/
 - 2026-07-01：新增第八十七波器官/阶段特异癌症连续性研究域，覆盖乳腺癌、结直肠癌、肺癌、前列腺癌、宫颈癌、卵巢癌、胰腺癌、肝癌、儿童癌症和癌症幸存者晚期效应。
 - 2026-07-01：新增第八十八波口腔、牙科与颌面功能连续性研究域，覆盖龋病、牙周病、缺牙修复咀嚼、牙痛急性感染、口腔癌早期识别、儿童口腔、老年长期照护口腔、牙科服务可及性、口干唾液功能和颞下颌/口颌面痛。
 - 2026-07-01：新增第九十四波 10 个泌尿与肾脏替代执行连续性域，覆盖尿路感染/肾盂肾炎/尿源性脓毒症、导尿相关 UTI、尿潴留、膀胱过度活动/夜尿、肾结石梗阻、BPH/LUTS、尿流改道/尿路造口、透析通路、家庭透析供应和肾移植免疫抑制。
+- 2026-07-01：新增第九十五波 10 个皮肤屏障、伤口、压力损伤与皮肤病执行连续性域，覆盖压力损伤预防、慢性伤口、伤口感染/蜂窝织炎、糖尿病足、烧伤后创面、手术切口/SSI、潮湿相关皮炎、湿疹、银屑病和皮肤护理用品。

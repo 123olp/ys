@@ -241,6 +241,16 @@ flowchart TD
     H --> CV[cardiovascular-resilience<br/>心血管韧性]
     H --> MS[musculoskeletal-integrity<br/>肌骨完整性]
     H --> SBW[skin-barrier-wound-healing<br/>皮肤屏障 / 伤口愈合]
+    SBW --> PIPRSS[pressure-injury-prevention<br/>压力损伤 / 支撑面]
+    SBW --> CWVDPU[chronic-wound<br/>慢性伤口 / 溃疡]
+    SBW --> WICS[wound-infection<br/>伤口感染 / 蜂窝织炎]
+    SBW --> DFUAP[diabetic-foot-ulcer<br/>糖尿病足 / 截肢预防]
+    SBW --> BWASF[burn-wound-aftercare<br/>烧伤创面 / 瘢痕功能]
+    SBW --> SWDSSI[surgical-wound-ssi<br/>手术切口 / SSI]
+    SBW --> IADMSC[incontinence-dermatitis<br/>潮湿相关皮炎]
+    SBW --> EADIS[eczema-atopic-dermatitis<br/>湿疹 / 瘙痒睡眠]
+    SBW --> PISSB[psoriasis<br/>银屑病 / 系统负担]
+    SBW --> SCSDP[skin-care-supplies<br/>敷料 / 屏障用品]
     H --> UG[urogenital-continuity<br/>泌尿生殖连续性]
     UG --> UTI[urinary-tract-infection<br/>尿路感染 / 尿源性风险]
     UG --> CAUTI[catheter-associated-uti<br/>导尿设备 / CAUTI]
@@ -825,6 +835,16 @@ flowchart TD
 | [Cardiovascular Resilience](domains/cardiovascular-resilience/README.md) | 血压、血脂、血管、心脏、血栓、卒中、心衰 | 循环系统风险函数、筛查证据和模型变量 | 不提供诊断、用药、剂量、手术或个体风险日期 |
 | [Musculoskeletal Integrity](domains/musculoskeletal-integrity/README.md) | 肌肉、骨骼、关节、跌倒、疼痛、行动承载结构 | 肌骨结构、功能终点、跌倒和失能风险 | 不提供训练、康复、影像诊断、药物、手术或设备建议 |
 | [Skin Barrier Wound Healing](domains/skin-barrier-wound-healing/README.md) | 皮肤屏障、伤口愈合、压力损伤、感染入口、热调节和感觉边界 | 外界屏障、愈合能力、感染入口和照护负担 | 不提供伤口处理、敷料、药物、手术、压力损伤处理、急救或诊断建议 |
+| [Pressure Injury Prevention Repositioning Support Surface Continuity](domains/pressure-injury-prevention-repositioning-support-surface-continuity/README.md) | 压力损伤、行动受限、减压、支撑面、潮湿、剪切和感觉减退 | 把卧床、支撑面、护理执行、感染入口和长期照护负担纳入模型 | 不提供压力损伤分期、翻身计划、支撑面选择、敷料、清创、药物或个体护理建议 |
+| [Chronic Wound Venous Diabetic Pressure Ulcer Continuity](domains/chronic-wound-venous-diabetic-pressure-ulcer-continuity/README.md) | 慢性伤口、静脉性溃疡、糖尿病溃疡、压力性溃疡、复发和疼痛 | 把边界无法闭合、感染入口、行动限制和照护资源消耗纳入模型 | 不提供清创、敷料、压迫治疗、抗生素、照片判断或个体治疗建议 |
+| [Wound Infection Cellulitis Sepsis Continuity](domains/wound-infection-cellulitis-sepsis-continuity/README.md) | 伤口感染、蜂窝织炎、软组织感染、传播风险和脓毒症入口 | 把皮肤局部感染升级为全身风险的过渡链路纳入模型 | 不提供感染诊断、抗生素、急诊判断、培养解释、照片判断或个体治疗建议 |
+| [Diabetic Foot Ulcer Amputation Prevention Continuity](domains/diabetic-foot-ulcer-amputation-prevention-continuity/README.md) | 糖尿病足、神经病变、血流不足、足部溃疡、感染和截肢预防 | 把代谢、感觉、循环、皮肤和行动底盘的交叉失效纳入模型 | 不提供足部诊断、鞋垫/鞋类推荐、抗生素、清创、手术或截肢风险估计 |
+| [Burn Wound Aftercare Scar Function Continuity](domains/burn-wound-aftercare-scar-function-continuity/README.md) | 烧伤后创面、感染、瘢痕、挛缩、疼痛、热调节和康复 | 把急性烧伤后的皮肤重建、功能恢复和社会参与纳入模型 | 不提供烧伤急救、创面处理、敷料、瘢痕治疗、康复动作或严重度判断 |
+| [Surgical Wound Dehiscence SSI Continuity](domains/surgical-wound-dehiscence-ssi-continuity/README.md) | 手术切口、裂开、手术部位感染、出院交接、随访和再入院 | 把外科修复能否真正闭合并转化为净恢复纳入模型 | 不提供切口诊断、换药、拆线、抗生素、复诊策略、急诊判断或个体术后建议 |
+| [Incontinence Associated Dermatitis Moisture Skin Continuity](domains/incontinence-associated-dermatitis-moisture-skin-continuity/README.md) | 失禁相关皮炎、潮湿暴露、尿/粪刺激、清洁、屏障产品和尊严 | 把排泄连续性和皮肤边界之间的潮湿接口风险纳入模型 | 不提供用品选择、皮炎诊断、护理步骤、产品推荐、感染判断或个体照护建议 |
+| [Eczema Atopic Dermatitis Itch Sleep Continuity](domains/eczema-atopic-dermatitis-itch-sleep-continuity/README.md) | 湿疹、特应性皮炎、瘙痒、皮肤屏障、睡眠中断和过敏负担 | 把慢性皮肤炎症对睡眠、注意力、情绪和有效时间的税收纳入模型 | 不提供诊断、处方、护肤产品、过敏检测解释、照片判断或个体治疗建议 |
+| [Psoriasis Inflammatory Skin Systemic Burden Continuity](domains/psoriasis-inflammatory-skin-systemic-burden-continuity/README.md) | 银屑病、慢性皮肤炎症、瘙痒疼痛、共病、污名和治疗连续性 | 把皮肤炎症连接系统性炎症、参与受限和长期治疗治理纳入模型 | 不提供诊断、严重度评分、药物/生物制剂、共病风险、照片判断或保险策略 |
+| [Skin Care Supplies Dressings Barrier Products Continuity](domains/skin-care-supplies-dressings-barrier-products-continuity/README.md) | 敷料、屏障产品、清洁用品、失禁用品、DME 供应、支付覆盖和库存 | 把皮肤护理材料、物流、支付和照护执行作为伤口恢复底座纳入模型 | 不推荐品牌、型号、敷料替代、保险策略、护理步骤、产品比较或个体采购建议 |
 | [Urogenital Continuity](domains/urogenital-continuity/README.md) | 膀胱、尿路、尿控、盆底、泌尿感染、性功能和日常尊严 | 排泄控制、睡眠、感染、尊严、关系和照护负担 | 不提供泌尿诊断、盆底训练、药物、器械、手术、感染处理或性功能治疗建议 |
 | [Urinary Tract Infection Pyelonephritis Urosepsis Continuity](domains/urinary-tract-infection-pyelonephritis-urosepsis-continuity/README.md) | 尿路感染、复发、肾盂肾炎、尿源性脓毒症和服务延迟 | 把局部感染到全身风险、谵妄、肾脏负担和恢复成本纳入模型 | 不提供尿检解释、抗生素、补液、复发预防、急诊判断或个体医疗建议 |
 | [Catheter Associated UTI Device Infection Continuity](domains/catheter-associated-uti-device-infection-continuity/README.md) | 导尿管、CAUTI、设备暴露、感染控制、行动限制和照护负担 | 把设备化排尿出口的感染、隐私、抗菌药压力和长期照护断点纳入模型 | 不提供导尿、拔管、消毒、冲洗、护理操作、设备购买或感染处理建议 |
@@ -1881,6 +1901,16 @@ human_infra/
 │   ├── sensory-continuity/
 │   ├── sleep-circadian-recovery/
 │   ├── skin-barrier-wound-healing/
+│   ├── pressure-injury-prevention-repositioning-support-surface-continuity/
+│   ├── chronic-wound-venous-diabetic-pressure-ulcer-continuity/
+│   ├── wound-infection-cellulitis-sepsis-continuity/
+│   ├── diabetic-foot-ulcer-amputation-prevention-continuity/
+│   ├── burn-wound-aftercare-scar-function-continuity/
+│   ├── surgical-wound-dehiscence-ssi-continuity/
+│   ├── incontinence-associated-dermatitis-moisture-skin-continuity/
+│   ├── eczema-atopic-dermatitis-itch-sleep-continuity/
+│   ├── psoriasis-inflammatory-skin-systemic-burden-continuity/
+│   ├── skin-care-supplies-dressings-barrier-products-continuity/
 │   ├── social-connection-relational-infra/
 │   ├── loneliness-social-isolation-risk-continuity/
 │   ├── social-prescribing-community-referral-continuity/
@@ -2101,5 +2131,6 @@ flowchart LR
 - 2026-07-01：新增第八十六波 10 个慢性神经退行、神经肌肉与感染后功能连续性域，覆盖帕金森病、多发性硬化、ALS、亨廷顿病、脊髓性肌萎缩症、肌营养不良、重症肌无力、脊髓损伤、ME/CFS 和 Long COVID。
 - 2026-07-01：新增第八十七波 10 个器官/阶段特异癌症连续性域，覆盖乳腺癌、结直肠癌、肺癌、前列腺癌、宫颈癌、卵巢癌、胰腺癌、肝癌、儿童癌症和癌症幸存者晚期效应。
 - 2026-07-01：新增第八十八波 10 个口腔、牙科与颌面功能连续性域，覆盖龋病、牙周病、缺牙修复咀嚼、牙痛急性感染、口腔癌早期识别、儿童口腔、老年长期照护口腔、牙科服务可及性、口干唾液功能和颞下颌/口颌面痛。
+- 2026-07-01：新增第九十五波 10 个皮肤屏障、伤口、压力损伤与皮肤病执行连续性域，覆盖压力损伤预防、慢性伤口、伤口感染/蜂窝织炎、糖尿病足、烧伤后创面、手术切口/SSI、潮湿相关皮炎、湿疹瘙痒睡眠、银屑病系统负担和皮肤护理用品连续性。
 
 完整记录见 [CHANGELOG.md](CHANGELOG.md)。

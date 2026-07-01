@@ -78,6 +78,16 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 循环系统可韧性运行 | `cardiovascular-resilience/` | 血压、血脂、血管、心脏、卒中和心衰风险 | 把单项指标写成确定风险或治疗建议 |
 | 承载结构可持续 | `musculoskeletal-integrity/` | 肌肉、骨骼、关节、跌倒、疼痛和独立性 | 存活但失能、跌倒骨折、长期疼痛 |
 | 外界屏障可维护 | `skin-barrier-wound-healing/` | 皮肤屏障、伤口愈合、感染入口、热调节 | 把伤口或皮肤表现写成诊断和护理方案 |
+| 压力必须不压垮皮肤边界 | `pressure-injury-prevention-repositioning-support-surface-continuity/` | 压力损伤、翻身减压、支撑面、剪切、潮湿、感觉减退 | 行动受限主体因局部压力、潮湿和照护断裂进入慢性伤口、疼痛和感染路径 |
+| 慢性伤口必须脱离停滞循环 | `chronic-wound-venous-diabetic-pressure-ulcer-continuity/` | 慢性伤口、静脉性溃疡、糖尿病溃疡、压力性溃疡、渗出 | 创面长期不愈合会持续消耗时间、睡眠、移动能力、耗材和医疗入口 |
+| 伤口感染必须不进入全身风险 | `wound-infection-cellulitis-sepsis-continuity/` | 伤口感染、蜂窝织炎、感染扩散、脓毒症风险、服务延迟 | 局部皮肤入口若失控，会转化为全身炎症、急诊、住院和恢复能力下降 |
+| 糖尿病足必须避免截肢链条 | `diabetic-foot-ulcer-amputation-prevention-continuity/` | 糖尿病足、神经病变、血供、足部检查、卸载、感染 | 感觉丧失和血供不足使小创口进入溃疡、感染、截肢和行动半径崩塌 |
+| 烧伤后创面必须接上长期功能 | `burn-wound-aftercare-scar-function-continuity/` | 烧伤后创面、瘢痕、挛缩、疼痛、功能恢复 | 急性烧伤存活后若缺少后续照护，会通过瘢痕和挛缩持续压缩行动能力 |
+| 手术切口必须闭环恢复 | `surgical-wound-dehiscence-ssi-continuity/` | 手术切口、裂开、SSI、异常闭环、术后恢复 | 修复通道本身若变成感染或裂开入口，会把治疗收益转成再入院和失能成本 |
+| 潮湿必须不破坏照护边界 | `incontinence-associated-dermatitis-moisture-skin-continuity/` | 失禁相关皮炎、潮湿暴露、皮肤保护、清洁流程 | 潮湿和失禁会把长期照护、尊严、感染风险和皮肤破损连成慢性摩擦 |
+| 瘙痒必须保护睡眠与恢复 | `eczema-atopic-dermatitis-itch-sleep-continuity/` | 湿疹/特应性皮炎、瘙痒、睡眠、flare、污名 | 持续瘙痒和 flare 会切碎睡眠、注意力、学校/工作参与和心理恢复 |
+| 炎症皮肤病必须纳入系统负担 | `psoriasis-inflammatory-skin-systemic-burden-continuity/` | 银屑病、炎症、系统负担、关节风险、污名 | 皮肤炎症不只是外观问题，也会通过疼痛、疲劳、污名和共病压缩有效时间 |
+| 皮肤耗材必须可获得可适配 | `skin-care-supplies-dressings-barrier-products-continuity/` | 敷料、屏障产品、耗材供应、材料安全、支付摩擦 | 没有合适耗材时，创面和皮肤保护从医学问题退化为供应链与支付问题 |
 | 排泄、性功能和尊严可连续 | `urogenital-continuity/` | 尿控、尿路、盆底、感染、性功能、尊严 | 把症状、感染或性功能写成诊断和治疗建议 |
 | 尿路感染必须不进入全身风险 | `urinary-tract-infection-pyelonephritis-urosepsis-continuity/` | UTI、复发、肾盂肾炎、尿源性脓毒症、抗菌药暴露 | 局部感染上行造成发热、谵妄、肾脏受累、脓毒症和恢复成本 |
 | 导尿设备必须控制感染边界 | `catheter-associated-uti-device-infection-continuity/` | 导尿、CAUTI、留置时间、感染控制、行动限制 | 设备从照护接口变成感染入口、行动束缚和照护负担 |
@@ -814,6 +824,16 @@ cellular-reprogramming
   -> cardiovascular-resilience
   -> musculoskeletal-integrity
   -> skin-barrier-wound-healing
+  -> pressure-injury-prevention-repositioning-support-surface-continuity
+  -> chronic-wound-venous-diabetic-pressure-ulcer-continuity
+  -> wound-infection-cellulitis-sepsis-continuity
+  -> diabetic-foot-ulcer-amputation-prevention-continuity
+  -> burn-wound-aftercare-scar-function-continuity
+  -> surgical-wound-dehiscence-ssi-continuity
+  -> incontinence-associated-dermatitis-moisture-skin-continuity
+  -> eczema-atopic-dermatitis-itch-sleep-continuity
+  -> psoriasis-inflammatory-skin-systemic-burden-continuity
+  -> skin-care-supplies-dressings-barrier-products-continuity
   -> urogenital-continuity
   -> urinary-tract-infection-pyelonephritis-urosepsis-continuity
   -> catheter-associated-uti-device-infection-continuity
