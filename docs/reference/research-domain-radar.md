@@ -117,6 +117,12 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `mitochondrial-bioenergetics/` | 线粒体功能决定细胞能源、疲劳、行动能力、神经和代谢风险 |
 | `cellular-senescence-clearance/` | 衰老细胞负担和 SASP 具有独立组织环境、炎症和治疗风险边界 |
 | `microbiome-ecology/` | 宿主-微生物生态连接代谢、免疫、炎症、感染抵抗和药物反应 |
+| `thymic-involution-naive-t-cell-output-continuity/` | 胸腺退化和 naive T 细胞输出决定新抗原响应、免疫谱系更新和老年感染防御能力 |
+| `immune-repertoire-vaccine-response-aging-continuity/` | 免疫谱系多样性和疫苗反应把免疫衰老转化为可观测的群体保护和个体响应变量 |
+| `clonal-hematopoiesis-chip-inflammatory-risk-continuity/` | CHIP 把造血克隆漂移、炎症、血液肿瘤和心血管风险连接成独立长程风险域 |
+| `inflammaging-chronic-low-grade-inflammation-continuity/` | 慢性低度炎症是多系统衰老、恢复失败、慢病风险和有效时间损耗的共享中介 |
+| `plasma-proteome-systemic-aging-signal-continuity/` | 血浆蛋白组和循环因子提示系统性年龄状态可被观测，但不能直接转写为年轻血液疗法 |
+| `extracellular-vesicle-sasp-intercellular-aging-continuity/` | EV、exosome 和 SASP 是细胞间衰老信号、炎症传播和组织微环境重塑的通信层 |
 | `stem-cell-reserve-renewal/` | 干细胞储备和生态位决定内源性组织更新、再生能力和肿瘤风险 |
 | `renal-hepatic-clearance/` | 肾脏和肝脏清除能力约束毒性、药物安全、治疗选择和系统稳态 |
 | `digital-identity-security/` | 数字身份、账号恢复和服务入口是主体长期接入制度、资源和数据的独立基础设施 |
@@ -1195,6 +1201,7 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | NCI / NNI / FDA nanotechnology and nanomedicine resources | 提示治疗价值不仅取决于分子是否有效，还取决于纳米材料、靶向递送、释放控制、安全性和监管边界 |
 | FDA AI/ML for Drug Development and protein-design literature | 提示 AI 可以加速候选分子、蛋白工具和药物研发流程，但模型输出必须进入实验、临床和监管验证链 |
 | Nature epigenetic editing and epigenetic rejuvenation literature | 提示基因表达状态和表观遗传程序正在成为可扰动对象，但脱靶、可逆性、长期安全和身份保持是核心边界 |
+| NIA biology of aging / NCI-NIA immune aging workshop / FDA young donor plasma warning / immune-aging literature | 提示免疫衰老、胸腺退化、CHIP、inflammaging、血浆蛋白组和 EV/SASP 信号可进入系统性衰老模型，但不能越界为免疫治疗、血浆疗法或 exosome 产品建议 |
 | NIH BRAIN Initiative and Human Connectome Project | 提示脑信息连续性必须从神经结构、连接组、记录尺度和解释模型出发，不能把保存等同于主体延续 |
 | NIST post-quantum cryptography standards and CISA migration guidance | 提示长周期数据安全必须提前处理 harvest-now-decrypt-later、密码敏捷性和迁移治理 |
 | NASA formal methods, NIST SSDF, and FDA software guidance | 提示安全关键系统需要形式化验证、软件供应链安全、保证案例和生命周期治理 |

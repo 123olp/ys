@@ -1095,6 +1095,24 @@ domains/
 ├── immune-maintenance/
 │   ├── AGENTS.md
 │   └── README.md
+├── thymic-involution-naive-t-cell-output-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── immune-repertoire-vaccine-response-aging-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── clonal-hematopoiesis-chip-inflammatory-risk-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── inflammaging-chronic-low-grade-inflammation-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── plasma-proteome-systemic-aging-signal-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── extracellular-vesicle-sasp-intercellular-aging-continuity/
+│   ├── AGENTS.md
+│   └── README.md
 ├── longevity-evidence/
 │   ├── AGENTS.md
 │   ├── README.md
@@ -2646,6 +2664,7 @@ domains/
 
 - `longevity-evidence/` 是当前唯一含数据和采集脚本的产品化子域。
 - `genomic-stability-dna-repair/`、`telomere-maintenance/`、`proteostasis-autophagy/`、`mitochondrial-bioenergetics/`、`cellular-senescence-clearance/`、`extracellular-matrix-glycation/`、`microbiome-ecology/`、`stem-cell-reserve-renewal/` 和 `renal-hepatic-clearance/` 负责分子维护、结构材料、宿主生态、内源性修复和肝肾清除底座。
+- `thymic-involution-naive-t-cell-output-continuity/`、`immune-repertoire-vaccine-response-aging-continuity/`、`clonal-hematopoiesis-chip-inflammatory-risk-continuity/`、`inflammaging-chronic-low-grade-inflammation-continuity/`、`plasma-proteome-systemic-aging-signal-continuity/` 和 `extracellular-vesicle-sasp-intercellular-aging-continuity/` 负责免疫衰老与系统性年轻化信号的下层机制，不提供免疫治疗、血浆、exosome、检测解释、抗衰产品或个体临床建议。
 - `respiratory-oxygenation/`、`blood-oxygen-hemostasis/`、`endocrine-hormonal-regulation/` 和 `lymphatic-glymphatic-clearance/` 负责氧合、血液运输、激素协调和清除网络这些跨器官稳态条件。
 - `gastrointestinal-barrier-absorption/`、`fluid-electrolyte-acid-base-homeostasis/` 和 `thermal-homeostasis-resilience/` 负责营养进入、内环境化学和体温边界这些基础稳态条件。
 - `nutrition-metabolic-health/`、`physical-activity-mobility/`、`cardiovascular-resilience/` 和 `musculoskeletal-integrity/` 负责营养、行动、循环和承载结构这些身体运行条件。

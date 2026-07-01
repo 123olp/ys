@@ -352,6 +352,12 @@
 - `rehabilitation-functioning/`：康复与功能恢复，整理失能预防、活动能力、自理、沟通和社会参与。
 - `cancer-control/`：癌症控制，整理肿瘤预防、早筛、治疗、复发和长期风险治理。
 - `immune-maintenance/`：免疫系统维护，整理免疫衰老、感染防御、慢性炎症、自身免疫和免疫监视。
+- `thymic-involution-naive-t-cell-output-continuity/`：胸腺退化与初始 T 细胞输出，整理长期免疫可塑性、新抗原适应和胸腺再生证据边界。
+- `immune-repertoire-vaccine-response-aging-continuity/`：免疫库与疫苗响应老化，整理免疫库多样性、免疫记忆、疫苗保护和年龄相关保护能力。
+- `clonal-hematopoiesis-chip-inflammatory-risk-continuity/`：克隆性造血与 CHIP 炎症风险，整理造血克隆、体细胞突变、血液癌症、炎症和心血管风险边界。
+- `inflammaging-chronic-low-grade-inflammation-continuity/`：炎症衰老与慢性低度炎症，整理系统性炎症底噪、免疫代谢、多病共存和恢复能力。
+- `plasma-proteome-systemic-aging-signal-continuity/`：血浆蛋白组与系统性衰老信号，整理循环因子、蛋白组年龄信号、异时共生和血浆抗衰误用边界。
+- `extracellular-vesicle-sasp-intercellular-aging-continuity/`：细胞外囊泡与 SASP 细胞间衰老通讯，整理 EV、SASP、组织微环境和信号传播边界。
 - `antimicrobial-resilience/`：抗微生物韧性，整理耐药性、感染控制和现代医学抗感染底座。
 - `renal-hepatic-clearance/`：肾脏与肝脏清除能力，整理过滤、代谢、解毒、药物清除和系统稳态。
 - `neuro-continuity/`：神经连续性，整理大脑、记忆、意识、人格和主体身份持续条件。

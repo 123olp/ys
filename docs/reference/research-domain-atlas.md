@@ -116,6 +116,12 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 功能可恢复 | `rehabilitation-functioning/` | 活动能力、自理能力、沟通能力、社会参与 | 存活但失能、长期依赖、参与中断 |
 | 癌症风险可压低 | `cancer-control/` | 肿瘤发生、进展、复发、死亡风险 | 耐药、复发、筛查误判、治疗伤害 |
 | 免疫系统可维护 | `immune-maintenance/` | 感染防御、炎症、免疫监视 | 感染、慢性炎症、自身免疫 |
+| 胸腺输出必须延缓塌缩 | `thymic-involution-naive-t-cell-output-continuity/` | 胸腺退化、naive T 细胞输出、TCR 多样性、感染/疫苗反应 | 免疫新样本生成不足、感染风险上升、免疫更新能力下降 |
+| 免疫谱系必须保留可塑性 | `immune-repertoire-vaccine-response-aging-continuity/` | T/B 细胞谱系多样性、疫苗反应、免疫记忆、免疫衰老 | 新抗原响应下降、疫苗保护不足、感染后恢复能力下降 |
+| 造血克隆漂移必须被风险化 | `clonal-hematopoiesis-chip-inflammatory-risk-continuity/` | CHIP、造血干细胞克隆、炎症、血液肿瘤、心血管风险 | 克隆扩张、炎症放大、癌症和心血管风险耦合 |
+| 慢性低度炎症必须纳入系统预算 | `inflammaging-chronic-low-grade-inflammation-continuity/` | inflammaging、细胞因子、免疫代谢、慢病共病、功能下降 | 炎症长期消耗恢复能力、加速多系统风险 |
+| 血浆蛋白组信号必须可解释 | `plasma-proteome-systemic-aging-signal-continuity/` | 血浆蛋白组、循环因子、年轻血液/异时共生信号、系统性年龄指标 | 把循环信号误读成治疗承诺、商业化血浆误用 |
+| 细胞间衰老通信必须可追踪 | `extracellular-vesicle-sasp-intercellular-aging-continuity/` | EV、exosome、SASP、细胞间通信、组织微环境 | 衰老信号扩散、炎症传播、exosome 产品误用 |
 | 抗感染医学底座可持续 | `antimicrobial-resilience/` | 感染可治性、耐药传播、医疗安全 | 耐药扩散、普通感染高死亡化、医疗系统失效 |
 | 清除与代谢器官可运行 | `renal-hepatic-clearance/` | 肾功能、肝功能、解毒、药物清除、内环境 | 毒性积累、药物风险、治疗选择受限 |
 | 神经和身份连续 | `neuro-continuity/` | 记忆、意识、人格、行动能力 | 神经退行、身份断裂、主体不连续 |
@@ -1104,6 +1110,12 @@ cellular-reprogramming
   -> rehabilitation-functioning
   -> cancer-control
   -> immune-maintenance
+  -> thymic-involution-naive-t-cell-output-continuity
+  -> immune-repertoire-vaccine-response-aging-continuity
+  -> clonal-hematopoiesis-chip-inflammatory-risk-continuity
+  -> inflammaging-chronic-low-grade-inflammation-continuity
+  -> plasma-proteome-systemic-aging-signal-continuity
+  -> extracellular-vesicle-sasp-intercellular-aging-continuity
   -> microbiome-ecology
   -> renal-hepatic-clearance
   -> antimicrobial-resilience

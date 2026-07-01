@@ -328,6 +328,12 @@ flowchart TD
     H --> RF[rehabilitation-functioning<br/>康复 / 功能恢复]
     H --> CC[cancer-control<br/>癌症控制]
     H --> IM[immune-maintenance<br/>免疫系统维护]
+    IM --> TINTCO[thymic-involution-naive-t-cell-output-continuity<br/>胸腺退化 / 初始T细胞输出]
+    IM --> IRVRA[immune-repertoire-vaccine-response-aging-continuity<br/>免疫库 / 疫苗响应]
+    IM --> CHIPIR[clonal-hematopoiesis-chip-inflammatory-risk-continuity<br/>克隆性造血 / CHIP风险]
+    IM --> ICLGI[inflammaging-chronic-low-grade-inflammation-continuity<br/>炎症衰老 / 慢性低度炎症]
+    IM --> PPSAS[plasma-proteome-systemic-aging-signal-continuity<br/>血浆蛋白组 / 系统性衰老信号]
+    IM --> EVSIA[extracellular-vesicle-sasp-intercellular-aging-continuity<br/>细胞外囊泡 / SASP通讯]
     H --> AR[antimicrobial-resilience<br/>抗微生物韧性]
     H --> NC[neuro-continuity<br/>神经与身份连续]
     H --> SC[sensory-continuity<br/>感官连续性]
@@ -1565,6 +1571,12 @@ flowchart TD
 | [Rehabilitation And Functioning](domains/rehabilitation-functioning/README.md) | 康复、功能恢复、失能预防、活动能力、自理和社会参与 | 功能状态、活动能力、参与能力和失能风险模型 | 不提供个人康复处方、训练计划、诊断或治疗建议 |
 | [Cancer Control](domains/cancer-control/README.md) | 癌症预防、早筛、治疗、复发、肿瘤演化 | 癌症风险函数、证据层级和长期控制变量 | 不提供诊断、治疗方案、处方、剂量或个体用药建议 |
 | [Immune Maintenance](domains/immune-maintenance/README.md) | 免疫衰老、感染防御、慢性炎症、自身免疫、免疫监视 | 免疫变量表、感染/炎症/癌症交叉风险 | 不提供个体免疫治疗、疫苗、药物或实验建议 |
+| [Thymic Involution Naive T Cell Output Continuity](domains/thymic-involution-naive-t-cell-output-continuity/README.md) | 胸腺退化、初始 T 细胞输出、TCR 多样性和新抗原适应能力 | 把长期免疫可塑性纳入寿命与治疗窗口模型 | 不提供胸腺再生、免疫增强、药物、补剂或实验操作建议 |
+| [Immune Repertoire Vaccine Response Aging Continuity](domains/immune-repertoire-vaccine-response-aging-continuity/README.md) | 免疫库多样性、免疫记忆、疫苗响应、感染后保护和年龄相关适应能力 | 评估主体面对新病原体、新变体和新疫苗的保护能力 | 不提供疫苗排程、加强针、抗体检测解释或个体感染防护建议 |
+| [Clonal Hematopoiesis CHIP Inflammatory Risk Continuity](domains/clonal-hematopoiesis-chip-inflammatory-risk-continuity/README.md) | 克隆性造血、CHIP、造血干细胞老化、炎症和血液/心血管风险 | 把癌前克隆、体细胞突变和炎症风险纳入长期主体风险函数 | 不解释个体测序、突变、癌症风险、随访或治疗建议 |
+| [Inflammaging Chronic Low Grade Inflammation Continuity](domains/inflammaging-chronic-low-grade-inflammation-continuity/README.md) | 炎症衰老、慢性低度炎症、免疫代谢和多病共存风险 | 建模系统性风险底噪如何影响恢复能力、健康寿命和有效时间 | 不提供抗炎药、补剂、饮食、运动、检验解读或个体治疗建议 |
+| [Plasma Proteome Systemic Aging Signal Continuity](domains/plasma-proteome-systemic-aging-signal-continuity/README.md) | 血浆蛋白组、循环因子、系统性衰老信号、异时共生和血浆置换假设 | 把跨器官循环信号纳入 biomarker、风险和干预证据边界 | 不提供年轻血浆、血浆置换、输血、检测解读或抗衰治疗建议 |
+| [Extracellular Vesicle SASP Intercellular Aging Continuity](domains/extracellular-vesicle-sasp-intercellular-aging-continuity/README.md) | 细胞外囊泡、SASP、衰老信号传播、组织微环境和递送平台边界 | 连接单细胞衰老状态与组织级通讯、炎症和再生失败 | 不提供 exosome 产品、提取、注射、检测解读或临床建议 |
 | [Antimicrobial Resilience](domains/antimicrobial-resilience/README.md) | 抗微生物耐药、感染控制、抗菌药物治理和病原体威胁 | 感染可治性、耐药传播、医疗安全和公共卫生风险 | 不提供个体用药、病原体操作、培养或规避感染控制建议 |
 | [Renal Hepatic Clearance](domains/renal-hepatic-clearance/README.md) | 肾脏、肝脏、解毒、代谢、药物清除和系统稳态 | 肝肾功能、毒性、药物安全和治疗可用性变量 | 不提供检测解释、用药、剂量、饮食、透析、移植或治疗建议 |
 | [Neuro Continuity](domains/neuro-continuity/README.md) | 大脑、记忆、意识、人格、主体身份连续性 | 神经连续性变量、身份边界和高风险交叉图 | 不提供脑保存、神经刺激、药物或记忆操控步骤 |
@@ -2306,6 +2318,12 @@ human_infra/
 │   ├── language-access-plain-communication/
 │   ├── labor-rights-workplace-protection/
 │   ├── immune-maintenance/
+│   ├── thymic-involution-naive-t-cell-output-continuity/
+│   ├── immune-repertoire-vaccine-response-aging-continuity/
+│   ├── clonal-hematopoiesis-chip-inflammatory-risk-continuity/
+│   ├── inflammaging-chronic-low-grade-inflammation-continuity/
+│   ├── plasma-proteome-systemic-aging-signal-continuity/
+│   ├── extracellular-vesicle-sasp-intercellular-aging-continuity/
 │   ├── information-integrity-trust/
 │   ├── legal-identity-civil-registration/
 │   ├── access-to-justice-legal-aid/

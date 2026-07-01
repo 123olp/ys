@@ -509,6 +509,12 @@ human_infra/
     ├── language-access-plain-communication/ # 语言可达与清晰沟通
     ├── labor-rights-workplace-protection/ # 劳动权利与工作场所保护
     ├── immune-maintenance/# 免疫系统维护
+    ├── thymic-involution-naive-t-cell-output-continuity/ # 胸腺退化与初始 T 细胞输出
+    ├── immune-repertoire-vaccine-response-aging-continuity/ # 免疫库与疫苗响应老化
+    ├── clonal-hematopoiesis-chip-inflammatory-risk-continuity/ # 克隆性造血与 CHIP 炎症风险
+    ├── inflammaging-chronic-low-grade-inflammation-continuity/ # 炎症衰老与慢性低度炎症
+    ├── plasma-proteome-systemic-aging-signal-continuity/ # 血浆蛋白组与系统性衰老信号
+    ├── extracellular-vesicle-sasp-intercellular-aging-continuity/ # 细胞外囊泡与 SASP 通讯
     ├── information-integrity-trust/ # 信息完整性与信任
     ├── legal-identity-civil-registration/ # 法律身份与民事登记
     ├── access-to-justice-legal-aid/ # 司法可及与法律援助
@@ -1143,6 +1149,7 @@ human_infra/
 - `domains/rehabilitation-functioning/` 负责康复、功能恢复、失能预防、活动能力、自理、沟通和社会参与。
 - `domains/cancer-control/` 负责癌症预防、早筛、治疗、复发、肿瘤演化和长期风险治理。
 - `domains/immune-maintenance/` 负责免疫衰老、感染防御、慢性炎症、自身免疫和免疫监视。
+- `domains/thymic-involution-naive-t-cell-output-continuity/`、`domains/immune-repertoire-vaccine-response-aging-continuity/`、`domains/clonal-hematopoiesis-chip-inflammatory-risk-continuity/`、`domains/inflammaging-chronic-low-grade-inflammation-continuity/`、`domains/plasma-proteome-systemic-aging-signal-continuity/` 和 `domains/extracellular-vesicle-sasp-intercellular-aging-continuity/` 负责免疫衰老与系统性年轻化信号的下层机制：胸腺输出、免疫库适应、造血克隆、慢性炎症、血浆蛋白组和细胞间囊泡/SASP 通讯。
 - `domains/antimicrobial-resilience/` 负责抗微生物耐药、感染控制和现代医学抗感染底座。
 - `domains/neuro-continuity/` 负责大脑、记忆、意识、人格和主体身份连续性。
 - `domains/sensory-continuity/` 负责视觉、听觉、平衡、触觉和感官反馈连续性。
@@ -1386,3 +1393,4 @@ human_infra/
 - 2026-07-01：新增第一百二十四波 6 个生殖技术与生育保存治理连续性域，覆盖 ART/IVF 周期、ART 诊所成功率质量报告、生育保存冷冻、生殖组织供体筛查追溯、PGT 胚胎选择治理和第三方生殖法律伦理。
 - 2026-07-01：新增第一百二十五波 6 个长寿干预执行与证据治理连续性域，覆盖 geroprotective 药物再利用试验治理、补剂证据安全、抗阻训练肌力肌少症、心肺适能 VO2max、热量限制禁食能量平衡和冷热应激 hormesis 治理。
 - 2026-07-01：新增第一百三十波 6 个施工与工业现场特定致命机制执行连续性域，覆盖沟槽开挖坍塌、起重吊装悬吊载荷、职业电击电弧闪爆、焊接切割烟尘火灾、可吸入结晶硅尘和拆除坍塌碎片。
+- 2026-07-01：新增第一百三十一波 6 个免疫衰老与系统性年轻化信号连续性域，覆盖胸腺退化/初始 T 细胞输出、免疫库/疫苗响应老化、克隆性造血/CHIP 炎症风险、炎症衰老、血浆蛋白组系统性衰老信号和细胞外囊泡/SASP 通讯。

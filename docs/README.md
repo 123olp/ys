@@ -151,6 +151,7 @@ docs/
 │   ├── 0133-add-one-hundred-twenty-eighth-wave-sleep-wake-scheduling-domains.md
 │   ├── 0134-add-one-hundred-twenty-ninth-wave-workplace-safety-execution-domains.md
 │   ├── 0135-add-one-hundred-thirtieth-wave-construction-industrial-fatal-hazard-domains.md
+│   ├── 0136-add-one-hundred-thirty-first-wave-immune-aging-systemic-signal-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -228,8 +229,9 @@ docs/
 20. Read `reference/research-domain-atlas.md`.
 21. Read `reference/research-domain-radar.md` before proposing a new domain.
 22. Read `../domains/cellular-reprogramming/README.md` if you are working on cellular rejuvenation or epigenetic reprogramming.
-23. Read `../domains/health-data-privacy-governance/README.md` if you are working on sensitive health, genomic, behavioral, neural, or service-use data.
-24. Read `../domains/functioning-quality-of-life-outcomes/README.md` if you are defining whether a Human Infra intervention actually improves function or lived experience.
+23. Read `../domains/immune-maintenance/README.md` and the new immune-aging subdomain READMEs if you are working on thymic output, immune repertoire aging, CHIP, inflammaging, plasma proteome signals, or EV/SASP aging communication.
+24. Read `../domains/health-data-privacy-governance/README.md` if you are working on sensitive health, genomic, behavioral, neural, or service-use data.
+24a. Read `../domains/functioning-quality-of-life-outcomes/README.md` if you are defining whether a Human Infra intervention actually improves function or lived experience.
 25. Read `../domains/health-economics-value-assessment/README.md` if you are working on disease burden, cost-effectiveness, HTA, or public-value framing.
 26. Read `../domains/immunization-public-health-surveillance/README.md` if you are working on immunization, infectious-disease surveillance, infection prevention, AMR, or wastewater signals.
 27. Read `../domains/maternal-newborn-child-development/README.md` if you are working on maternal, newborn, child health, growth, or early development.

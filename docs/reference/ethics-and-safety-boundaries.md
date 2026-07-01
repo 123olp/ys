@@ -2225,6 +2225,24 @@ Human Infra 不能被设计成更精密的压榨系统。
 - 不收集、复制、处理或要求半导体工艺参数、受限设备清单、私有设计/IP、EDA 授权、供应链合同、数据中心详细拓扑、客户负载、电力互连申请、核设施非公开资料、海底光缆详细路由、卫星控制资料、频谱申请材料、商业机密、出口管制材料或关键基础设施敏感数据。
 - 不替代半导体工程师、EDA/验证团队、云服务商、电网运营商、能源规划机构、核监管机构、通信监管机构、网络安全团队、采购团队、法律、合规、出口管制、投资顾问、工程设计单位或关键基础设施运营方。
 
+## 免疫衰老与系统性年轻化信号边界
+
+`thymic-involution-naive-t-cell-output-continuity`、`immune-repertoire-vaccine-response-aging-continuity`、`clonal-hematopoiesis-chip-inflammatory-risk-continuity`、`inflammaging-chronic-low-grade-inflammation-continuity`、`plasma-proteome-systemic-aging-signal-continuity` 和 `extracellular-vesicle-sasp-intercellular-aging-continuity` 关注胸腺输出、免疫谱系、CHIP、慢性低度炎症、血浆蛋白组和 EV/SASP 如何进入主体持续性模型，不是免疫治疗、血浆疗法、exosome 产品、检测解释、抗衰处方或临床决策入口。
+
+可以做：
+
+- 整理 NIA、NCI/NIA、FDA、Hallmarks of Aging、thymic involution、immunosenescence、CHIP、inflammaging、young blood、extracellular vesicle 和 SASP 文献中的对象、变量、机制、证据边界和禁止用途。
+- 比较胸腺退化、免疫谱系收缩、造血克隆扩张、慢性炎症、循环蛋白信号和细胞间衰老通信如何影响感染防御、疫苗反应、慢病风险、恢复能力、有效时间和未来选择权。
+- 记录资料中的人群、模型生物、细胞类型、检测平台、终点、替代指标、转化限制、商业夸大、监管状态、长期安全和伦理边界。
+
+不能做：
+
+- 不提供免疫治疗、胸腺再生、疫苗安排、CHIP 风险解释、炎症检测解释、血浆输注、血浆置换、exosome/EV 注射、抗炎药物、补剂、饮食、训练、剂量、频率、产品购买、临床试验报名、诊断、治疗或个体健康建议。
+- 不判断某个人的免疫谱系、TCR/BCR 测序、CHIP 变异、炎症指标、血浆蛋白组、exosome 检测、疫苗反应、感染风险、癌症风险、心血管风险、慢病状态或抗衰方案应如何处理。
+- 不生成免疫干预方案、血浆疗法营销、exosome 产品说明、实验操作协议、细胞/血液制品获取路径、诊所推荐、检测套餐推荐、监管规避、IRB 规避、人体实验招募、商业背书或个案医学文件。
+- 不收集、复制、处理或要求 PHI、genomic data、TCR/BCR repertoire、CHIP variant calls、CBC/CRP/cytokine panels、proteomics files、exosome assay data、vaccine records、infection history、cancer history、cardiovascular records、lab accounts、clinical-trial records、payment data、地址或个体医疗资料。
+- 不替代 physician、immunologist、hematologist、oncologist、cardiologist、genetic counselor、clinical laboratory、FDA、NIH/NIA、NCI、IRB、blood bank、clinical trial team、regulator、legal counsel、insurance plan 或官方医疗渠道。
+
 ## 数据与证据边界
 
 - 原始数据、清洗数据和人工判断必须分层保存。
