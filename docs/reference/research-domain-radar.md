@@ -349,6 +349,16 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `cancer-survivorship-late-effects-continuity/` | 癌症幸存者晚期效应连续性决定治疗结束后的复发恐惧、二次肿瘤、器官毒性、工作保险和照护转接是否被长期治理 |
 | `osteoporosis-fracture-prevention-bone-health-continuity/` | 骨质疏松与骨折预防连续性决定行动半径、独立生活和长期照护负担是否被骨折事件提前截断 |
 | `fall-risk-prevention-home-safety-continuity/` | 跌倒风险与家居安全连续性决定跌倒是否从偶然事故变成可复盘、可改造、可预防的环境和身体系统风险 |
+| `bathroom-bathing-toileting-transfer-fall-safety-continuity/` | 浴室洗澡、如厕转移与跌倒安全连续性决定湿区清洁、排泄、隐私和行动风险是否被作为家庭伤害执行链治理 |
+| `stairs-steps-handrail-threshold-fall-safety-continuity/` | 楼梯、台阶、扶手与门槛跌倒安全连续性决定垂直移动、入口过渡和紧急撤离是否被门槛/绊倒风险截断 |
+| `home-lighting-nighttime-pathway-visibility-continuity/` | 居家照明、夜间路径与可见性连续性决定夜间起身、夜尿、低视力和平衡风险是否被照明和路径设计放大 |
+| `bedroom-bed-transfer-entrapment-safety-continuity/` | 卧室、床转移与夹陷安全连续性决定睡眠恢复空间是否在床边起身、夹陷和照护交接中转化为伤害窗口 |
+| `smoke-alarm-home-fire-escape-readiness-continuity/` | 烟雾报警与家庭火灾逃生准备连续性决定火灾早期警告是否能到达主体并转化为可执行退出路径 |
+| `carbon-monoxide-alarm-combustion-appliance-safety-continuity/` | 一氧化碳报警与燃烧设备安全连续性决定无形毒性暴露是否被观测、报警、退出和维护链接住 |
+| `furniture-tv-tip-over-anchoring-child-safety-continuity/` | 家具/电视倾倒、锚固与儿童安全连续性决定儿童探索空间中的高能机械伤害是否被产品稳定性和执行链降低 |
+| `household-poison-storage-child-resistant-packaging-continuity/` | 家庭毒物储存与儿童防护包装连续性决定药品、清洁剂和化学品是否通过包装、标签、储存和中毒控制入口降低误食风险 |
+| `window-covering-cord-strangulation-child-safety-continuity/` | 窗饰拉绳勒颈与儿童安全连续性决定隐蔽绳索暴露是否被产品标准、房间布置和照护边界治理 |
+| `hot-water-scald-burn-prevention-continuity/` | 热水烫伤与烧伤预防连续性决定洗浴、厨房和热水系统是否把温度、反应速度和照护执行转化为可治理变量 |
 | `sleep-disordered-breathing-screening-treatment-continuity/` | 睡眠呼吸障碍筛查与治疗连续性决定夜间低氧、觉醒碎片、日间嗜睡和心血管负荷是否进入可恢复路径 |
 | `chronic-insomnia-cbti-access-continuity/` | 慢性失眠与 CBT-I 可及连续性决定睡眠恢复失败是否持续消耗注意力、情绪、学习、工作和有效时间 |
 | `sexual-health-sti-prevention-continuity/` | 性健康与 STI 预防连续性决定检测、治疗转介、伴侣服务、隐私和污名治理是否保护身体完整性和关系安全 |
@@ -2203,6 +2213,18 @@ Source links:
 - https://www.kidney.org/kidney-topics/vascular-access
 - https://www.kidney.org/kidney-topics/home-hemodialysis
 - https://www.kidney.org/kidney-topics/kidney-transplant
+- https://www.cdc.gov/falls/
+- https://www.nia.nih.gov/health/falls-and-falls-prevention
+- https://www.cpsc.gov/Safety-Education/Safety-Education-Centers/Tipover-Information-Center
+- https://www.cpsc.gov/Safety-Education/Safety-Education-Centers/Carbon-Monoxide-Information-Center
+- https://www.cdc.gov/carbon-monoxide/
+- https://www.usfa.fema.gov/prevention/home-fires/prepare-for-fire/smoke-alarms/
+- https://www.usfa.fema.gov/prevention/home-fires/prepare-for-fire/escape-plans/
+- https://www.cpsc.gov/Safety-Education/Safety-Education-Centers/Poison-Prevention-Information-Center
+- https://www.poisonhelp.org/
+- https://www.cpsc.gov/Safety-Education/Safety-Education-Centers/Window-Covering
+- https://www.usfa.fema.gov/prevention/home-fires/prevent-fires/scalds/
+- https://www.who.int/news-room/fact-sheets/detail/burns
 
 ## 使用规则
 

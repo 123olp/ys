@@ -568,6 +568,24 @@ Human Infra 不能被设计成更精密的压榨系统。
 - 产出污名化、体型歧视、成瘾道德化、延误就医、规避检测、规避医生、规避保险规则或商业产品背书内容。
 - 替代医生、药师、戒烟/成瘾治疗专业人员、营养师、物理治疗师、肾脏科、肿瘤筛查服务、骨健康服务或公共卫生机构。
 
+## 居家伤害预防与家庭安全执行连续性边界
+
+`bathroom-bathing-toileting-transfer-fall-safety-continuity`、`stairs-steps-handrail-threshold-fall-safety-continuity`、`home-lighting-nighttime-pathway-visibility-continuity`、`bedroom-bed-transfer-entrapment-safety-continuity`、`smoke-alarm-home-fire-escape-readiness-continuity`、`carbon-monoxide-alarm-combustion-appliance-safety-continuity`、`furniture-tv-tip-over-anchoring-child-safety-continuity`、`household-poison-storage-child-resistant-packaging-continuity`、`window-covering-cord-strangulation-child-safety-continuity` 和 `hot-water-scald-burn-prevention-continuity` 关注家庭环境中的高频伤害窗口如何通过观测、提醒、物理边界、产品标准、维护执行和退出路径改变主体持续性，不是家装、消防、急救、儿童监控、产品采购、法律责任或保险建议入口。
+
+可以做：
+
+- 整理 CDC、NIA、CPSC、USFA、Poison Help、WHO 和相关公共机构资料。
+- 比较浴室、楼梯、夜间路径、卧室床边、烟雾/CO 报警、家具倾倒、毒物储存、窗饰拉绳和热水烫伤如何影响死亡风险、失能风险、照护负担、独立生活和未来选择权。
+- 记录家庭伤害预防的系统变量、证据等级、执行断点、儿童/老人边界、禁止用途和不确定性。
+
+不能做：
+
+- 提供施工、安装、家居改造、产品选择、设备维修、电气/燃气/水温调整、消防设计、儿童监控、急救、烧伤处理、中毒处置、法律、保险或个体安全建议。
+- 根据家庭照片、地址、平面图、儿童信息、老人信息、残障信息、设备型号或事故经历做个体风险评估。
+- 收集、存储或推断可识别家庭位置、家庭成员、儿童作息、监控画面、健康状态、财产状况、保险信息或其他敏感数据。
+- 产出规避标准、绕过报警器、安全设备失效化、危险实验、DIY 高风险改造、产品背书、恐慌营销或替代专业人员现场判断的内容。
+- 替代建筑/消防/电气/燃气/水暖/儿童安全/毒物控制/医疗急救/保险/法律专业人员。
+
 ## 器官/阶段特异癌症连续性边界
 
 `breast-cancer-screening-treatment-survivorship-continuity`、`colorectal-cancer-screening-treatment-continuity`、`lung-cancer-screening-treatment-continuity`、`prostate-cancer-screening-treatment-continuity`、`cervical-cancer-hpv-prevention-screening-continuity`、`ovarian-cancer-symptom-detection-treatment-continuity`、`pancreatic-cancer-high-risk-detection-treatment-continuity`、`liver-cancer-cirrhosis-surveillance-treatment-continuity`、`childhood-cancer-treatment-survivorship-continuity` 和 `cancer-survivorship-late-effects-continuity` 关注器官/阶段特异癌症如何通过筛查路径、异常闭环、治疗负担、复发/晚期效应、家庭照护、工作保险和生活质量改变主体持续性，不是个人癌症诊断、治疗、筛查、遗传咨询、随访或预后建议入口。

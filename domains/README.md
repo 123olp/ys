@@ -682,6 +682,16 @@
 - `cancer-survivorship-late-effects-continuity/`：癌症幸存者与晚期效应连续性，整理复发恐惧、二次肿瘤、器官毒性、疲劳、工作/保险和照护转接。
 - `osteoporosis-fracture-prevention-bone-health-continuity/`：骨质疏松、骨折预防与骨健康连续性，整理筛查、骨折风险、骨健康服务、治疗坚持和骨折后恢复。
 - `fall-risk-prevention-home-safety-continuity/`：跌倒风险预防与家居安全连续性，整理跌倒风险筛查、家居安全、药物/视力/平衡/肌力接口和跌倒后复盘。
+- `bathroom-bathing-toileting-transfer-fall-safety-continuity/`：浴室洗澡、如厕转移与跌倒安全连续性，整理湿滑环境、转移动作、辅助设施、照护尊严和浴室跌倒风险。
+- `stairs-steps-handrail-threshold-fall-safety-continuity/`：楼梯、台阶、扶手与门槛跌倒安全连续性，整理垂直移动、入口过渡、扶手连续性、绊倒边界和行动半径。
+- `home-lighting-nighttime-pathway-visibility-continuity/`：居家照明、夜间路径与可见性连续性，整理低照度导航、路径可见性、对比度、停电照明和夜间跌倒风险。
+- `bedroom-bed-transfer-entrapment-safety-continuity/`：卧室、床转移与夹陷安全连续性，整理床高度、夜间起身、床边转移、夹陷风险和照护交接。
+- `smoke-alarm-home-fire-escape-readiness-continuity/`：烟雾报警与家庭火灾逃生准备连续性，整理早期报警、逃生路径、听觉可达、演练准备和家庭火灾中断风险。
+- `carbon-monoxide-alarm-combustion-appliance-safety-continuity/`：一氧化碳报警与燃烧设备安全连续性，整理无色无味暴露、报警可达、燃烧设备、发电机误用和通风断点。
+- `furniture-tv-tip-over-anchoring-child-safety-continuity/`：家具/电视倾倒、锚固与儿童安全连续性，整理家具稳定性、电视倾倒、锚固执行、儿童探索行为和产品安全。
+- `household-poison-storage-child-resistant-packaging-continuity/`：家庭毒物储存与儿童防护包装连续性，整理药品/化学品储存、儿童防护包装、误食暴露和中毒控制入口。
+- `window-covering-cord-strangulation-child-safety-continuity/`：窗饰拉绳勒颈与儿童安全连续性，整理窗帘/百叶拉绳、睡眠/游戏空间、产品标准和儿童勒颈风险。
+- `hot-water-scald-burn-prevention-continuity/`：热水烫伤与烧伤预防连续性，整理洗浴/厨房热水、温度控制、儿童/老人暴露、烫伤窗口和热伤害边界。
 - `sleep-disordered-breathing-screening-treatment-continuity/`：睡眠呼吸障碍筛查与治疗连续性，整理夜间低氧、诊断转介、治疗坚持、设备可及和日间功能风险。
 - `chronic-insomnia-cbti-access-continuity/`：慢性失眠与 CBT-I 可及连续性，整理恢复失败、行为治疗可及、药物风险、日间功能和复发预防。
 - `sexual-health-sti-prevention-continuity/`：性健康与 STI 预防连续性，整理检测、治疗转介、伴侣服务、隐私、污名和公共卫生屏障。

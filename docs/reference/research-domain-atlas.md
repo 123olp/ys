@@ -569,6 +569,16 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 癌症幸存者阶段需要长期恢复治理 | `cancer-survivorship-late-effects-continuity/` | 晚期效应、复发恐惧、二次肿瘤、器官毒性、疲劳、工作/保险 | 治疗结束后的长期毒性和资源压力决定主体是否真正回到未来选择路径 |
 | 骨折可在失能前预防 | `osteoporosis-fracture-prevention-bone-health-continuity/` | 骨质疏松筛查、骨折风险、骨健康服务、治疗坚持、骨折后恢复 | 骨质疏松和骨折后照护断裂会缩小行动半径、提高长期照护需求并增加死亡风险 |
 | 跌倒可作为环境和身体系统风险治理 | `fall-risk-prevention-home-safety-continuity/` | 跌倒风险筛查、家居安全、药物/视力/平衡/肌力接口、跌倒后复盘 | 跌倒被当成偶然事件会漏掉环境、药物、感官、平衡和肌力共同作用的可预防风险 |
+| 浴室转移是高风险湿区执行问题 | `bathroom-bathing-toileting-transfer-fall-safety-continuity/` | 洗澡、如厕、湿滑地面、辅助设施、照护尊严 | 浴室中的转移失败会把清洁、排泄、隐私和跌倒风险叠加成独立生活断点 |
+| 楼梯和门槛决定垂直行动半径 | `stairs-steps-handrail-threshold-fall-safety-continuity/` | 楼梯、台阶、扶手、门槛、入口过渡 | 垂直移动和入口过渡失败会直接缩小居住空间、出入能力和紧急撤离能力 |
+| 夜间路径可见性影响恢复后的行动 | `home-lighting-nighttime-pathway-visibility-continuity/` | 夜间照明、低照度路径、对比度、停电照明 | 夜间低可见性会放大睡眠中断、夜尿、用药、视力和平衡风险 |
+| 床边转移是睡眠到行动的接口 | `bedroom-bed-transfer-entrapment-safety-continuity/` | 床高度、夜间起身、床边转移、夹陷、照护交接 | 床边失败会把夜间恢复空间变成跌倒、夹陷和照护负担入口 |
+| 火灾逃生需要早期报警和退出能力 | `smoke-alarm-home-fire-escape-readiness-continuity/` | 烟雾报警、逃生路径、听觉可达、演练准备 | 家庭火灾的关键不是火本身，而是警告是否到达主体、主体是否能及时退出 |
+| 一氧化碳需要把不可见暴露变成可报警事件 | `carbon-monoxide-alarm-combustion-appliance-safety-continuity/` | CO 报警、燃烧设备、通风断点、发电机误用 | 无色无味暴露会绕过感知系统，必须依赖外部观测和退出链保护主体 |
+| 家具和电视倾倒是儿童空间中的物理失效 | `furniture-tv-tip-over-anchoring-child-safety-continuity/` | 家具稳定性、电视倾倒、锚固执行、儿童探索 | 家庭物品失稳会把日常空间变成高能机械伤害源 |
+| 家庭毒物安全依赖储存和包装执行 | `household-poison-storage-child-resistant-packaging-continuity/` | 药品/化学品储存、儿童防护包装、误食暴露 | 毒物暴露常发生在照护间隙，包装、标签、储存和中毒控制入口共同决定风险 |
+| 窗饰拉绳是隐蔽勒颈风险 | `window-covering-cord-strangulation-child-safety-continuity/` | 窗饰拉绳、儿童睡眠/游戏空间、产品标准 | 小尺度绳索暴露会在监护外形成高后果伤害窗口 |
+| 热水烫伤是温度治理失败 | `hot-water-scald-burn-prevention-continuity/` | 洗浴/厨房热水、温度控制、儿童/老人暴露 | 热水系统把能源、照护、感知和反应速度连接成烧伤预防边界 |
 | 睡眠呼吸障碍可避免夜间恢复失败 | `sleep-disordered-breathing-screening-treatment-continuity/` | 睡眠呼吸障碍、夜间低氧、诊断转介、治疗坚持、设备可及 | 夜间低氧、觉醒碎片、日间嗜睡和心血管负荷持续消耗有效时间、判断和恢复能力 |
 | 慢性失眠可通过可及治疗保护恢复 | `chronic-insomnia-cbti-access-continuity/` | 慢性失眠、CBT-I 可及、行为治疗、药物风险、复发预防 | 恢复失败、用药风险、情绪波动和日间功能损害降低单位时间行动质量 |
 | 性健康服务可保护关系和公共卫生屏障 | `sexual-health-sti-prevention-continuity/` | STI 预防、检测、治疗转介、伴侣服务、隐私、污名 | 无症状感染、污名、医疗回避和伴侣服务断裂改变生殖健康、关系安全和传播风险 |
@@ -1284,6 +1294,16 @@ risk-engineering
   -> cancer-survivorship-late-effects-continuity
   -> osteoporosis-fracture-prevention-bone-health-continuity
   -> fall-risk-prevention-home-safety-continuity
+  -> bathroom-bathing-toileting-transfer-fall-safety-continuity
+  -> stairs-steps-handrail-threshold-fall-safety-continuity
+  -> home-lighting-nighttime-pathway-visibility-continuity
+  -> bedroom-bed-transfer-entrapment-safety-continuity
+  -> smoke-alarm-home-fire-escape-readiness-continuity
+  -> carbon-monoxide-alarm-combustion-appliance-safety-continuity
+  -> furniture-tv-tip-over-anchoring-child-safety-continuity
+  -> household-poison-storage-child-resistant-packaging-continuity
+  -> window-covering-cord-strangulation-child-safety-continuity
+  -> hot-water-scald-burn-prevention-continuity
   -> sleep-disordered-breathing-screening-treatment-continuity
   -> chronic-insomnia-cbti-access-continuity
   -> sexual-health-sti-prevention-continuity

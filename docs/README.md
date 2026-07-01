@@ -797,4 +797,14 @@ docs/
 611. Read `../domains/eczema-atopic-dermatitis-itch-sleep-continuity/README.md` if you are working on eczema, atopic dermatitis, itch, barrier dysfunction, sleep disruption, allergy burden, or effective-time loss from skin inflammation.
 612. Read `../domains/psoriasis-inflammatory-skin-systemic-burden-continuity/README.md` if you are working on psoriasis, systemic inflammatory skin burden, itch/pain, comorbidities, stigma, treatment continuity, or participation loss.
 613. Read `../domains/skin-care-supplies-dressings-barrier-products-continuity/README.md` if you are working on wound dressings, skin barriers, cleansers, incontinence supplies, DME supply, coverage, inventory, or skin-care material continuity.
-614. Enter a domain under `../domains/`.
+614. Read `../domains/bathroom-bathing-toileting-transfer-fall-safety-continuity/README.md` if you are working on bathroom bathing, toileting transfers, wet-floor fall risk, grab-bar/shower-seat evidence, or home-care dignity boundaries.
+615. Read `../domains/stairs-steps-handrail-threshold-fall-safety-continuity/README.md` if you are working on stairs, steps, handrails, thresholds, uneven surfaces, entry transitions, or trip/fall execution risks.
+616. Read `../domains/home-lighting-nighttime-pathway-visibility-continuity/README.md` if you are working on home lighting, nighttime pathways, visibility, contrast, power outage lighting, or low-light navigation risk.
+617. Read `../domains/bedroom-bed-transfer-entrapment-safety-continuity/README.md` if you are working on bed transfer, bed height, entrapment, nighttime toileting, caregiver handoff, or bedroom fall risk.
+618. Read `../domains/smoke-alarm-home-fire-escape-readiness-continuity/README.md` if you are working on smoke alarms, home fire escape readiness, warning audibility, evacuation planning, or household fire drills.
+619. Read `../domains/carbon-monoxide-alarm-combustion-appliance-safety-continuity/README.md` if you are working on carbon monoxide alarms, combustion appliances, generator misuse, ventilation failure, or invisible toxic exposure.
+620. Read `../domains/furniture-tv-tip-over-anchoring-child-safety-continuity/README.md` if you are working on furniture and TV tip-over risk, anchoring, child injury prevention, product stability, or household layout hazards.
+621. Read `../domains/household-poison-storage-child-resistant-packaging-continuity/README.md` if you are working on household poison storage, child-resistant packaging, medicine/chemical access, or poison-control evidence boundaries.
+622. Read `../domains/window-covering-cord-strangulation-child-safety-continuity/README.md` if you are working on window-covering cords, strangulation risk, nursery safety, product standards, or child home injury prevention.
+623. Read `../domains/hot-water-scald-burn-prevention-continuity/README.md` if you are working on hot-water scalds, burn prevention, water temperature governance, bathing/kitchen burn risk, or household thermal injury.
+624. Enter a domain under `../domains/`.

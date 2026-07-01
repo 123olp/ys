@@ -240,6 +240,17 @@ flowchart TD
     H --> PA[physical-activity-mobility<br/>身体活动 / 移动能力]
     H --> CV[cardiovascular-resilience<br/>心血管韧性]
     H --> MS[musculoskeletal-integrity<br/>肌骨完整性]
+    MS --> FRS[fall-risk-prevention<br/>跌倒 / 家居安全]
+    FRS --> BBTT[bathroom-transfer<br/>浴室 / 如厕转移]
+    FRS --> SSTH[stairs-threshold<br/>楼梯 / 门槛]
+    FRS --> HLNP[home-lighting<br/>夜间路径 / 可见性]
+    FRS --> BBTE[bed-transfer<br/>卧室 / 床转移夹陷]
+    FRS --> SAFE[smoke-fire-escape<br/>烟雾报警 / 火灾逃生]
+    FRS --> COACS[carbon-monoxide<br/>CO / 燃烧设备]
+    FRS --> FTA[furniture-tip-over<br/>家具电视倾倒]
+    FRS --> HPSC[poison-storage<br/>毒物储存 / 儿童包装]
+    FRS --> WCCS[window-cord<br/>窗饰拉绳]
+    FRS --> HWSB[hot-water-scald<br/>热水烫伤]
     H --> SBW[skin-barrier-wound-healing<br/>皮肤屏障 / 伤口愈合]
     SBW --> PIPRSS[pressure-injury-prevention<br/>压力损伤 / 支撑面]
     SBW --> CWVDPU[chronic-wound<br/>慢性伤口 / 溃疡]
@@ -1436,6 +1447,16 @@ flowchart TD
 | [Cancer Survivorship Late Effects Continuity](domains/cancer-survivorship-late-effects-continuity/README.md) | 癌症幸存者、复发恐惧、晚期效应、二次肿瘤、工作/保险和生活质量 | 把治疗后的恢复、长期毒性、资源压力和未来选择权重建纳入模型 | 不提供随访计划、复发判断、症状诊断、用药、保险/工作证明或个体建议 |
 | [Osteoporosis Fracture Prevention Bone Health Continuity](domains/osteoporosis-fracture-prevention-bone-health-continuity/README.md) | 骨质疏松筛查、骨折风险、骨健康服务、治疗坚持和骨折后恢复 | 把骨折预防纳入独立生活、行动半径和长期照护负担模型 | 不提供骨密度解读、补剂、药物、运动、跌倒训练、影像、骨折处理或个体建议 |
 | [Fall Risk Prevention Home Safety Continuity](domains/fall-risk-prevention-home-safety-continuity/README.md) | 跌倒风险筛查、家居安全、药物/视力/平衡/肌力接口、跌倒后复盘 | 把跌倒从偶然事故转化为环境、身体和照护系统共同治理的行动风险 | 不提供跌倒风险判断、训练动作、药物调整、辅具选择、家居改造、急救或康复建议 |
+| [Bathroom Bathing Toileting Transfer Fall Safety Continuity](domains/bathroom-bathing-toileting-transfer-fall-safety-continuity/README.md) | 浴室洗澡、如厕转移、湿滑地面、辅助设施、照护尊严 | 把湿区转移从个人小心转化为环境、身体、照护和材料系统共同治理的跌倒风险 | 不提供家装、辅具选择、转移动作、护理操作、急救、产品推荐或个体安全建议 |
+| [Stairs Steps Handrail Threshold Fall Safety Continuity](domains/stairs-steps-handrail-threshold-fall-safety-continuity/README.md) | 楼梯、台阶、扶手、门槛、入口过渡、绊倒边界 | 把垂直移动和入口过渡纳入行动半径、独立生活和家庭伤害预防模型 | 不提供施工、改造、扶手安装、建筑合规、个体评估、急救或产品建议 |
+| [Home Lighting Nighttime Pathway Visibility Continuity](domains/home-lighting-nighttime-pathway-visibility-continuity/README.md) | 居家照明、夜间路径、低照度可见性、对比度、停电照明 | 把夜间可见性纳入跌倒、用药后行动、睡眠中断和应急移动的基础条件 | 不提供布线、灯具选择、施工、电气安全、个体视力判断或产品建议 |
+| [Bedroom Bed Transfer Entrapment Safety Continuity](domains/bedroom-bed-transfer-entrapment-safety-continuity/README.md) | 卧室、床转移、床高度、夹陷、夜间起身、照护交接 | 把床边起身和卧室路径纳入夜间跌倒、夹陷、照护负担和尊严连续性 | 不提供床栏、护理床、转移训练、安装、急救、个案评估或产品建议 |
+| [Smoke Alarm Home Fire Escape Readiness Continuity](domains/smoke-alarm-home-fire-escape-readiness-continuity/README.md) | 烟雾报警、火灾逃生路径、听觉可达、演练、家庭火灾准备 | 把火灾早期警告和退出能力纳入家庭环境中的主体连续性中止门 | 不提供消防设计、设备安装、逃生指令、急救、法规判定、产品或保险建议 |
+| [Carbon Monoxide Alarm Combustion Appliance Safety Continuity](domains/carbon-monoxide-alarm-combustion-appliance-safety-continuity/README.md) | 一氧化碳报警、燃烧设备、发电机误用、通风失败、无形暴露 | 把无色无味中毒风险纳入可观测、可报警、可退出的环境安全模型 | 不提供设备维修、通风设计、检测判读、急救、燃气/电气操作、产品或施工建议 |
+| [Furniture TV Tip Over Anchoring Child Safety Continuity](domains/furniture-tv-tip-over-anchoring-child-safety-continuity/README.md) | 家具/电视倾倒、锚固执行、儿童探索、产品稳定性 | 把儿童家庭空间中的倾倒风险纳入产品安全、照护执行和环境治理 | 不提供安装方案、锚固教程、产品推荐、儿童监控、急救、法律或个案建议 |
+| [Household Poison Storage Child Resistant Packaging Continuity](domains/household-poison-storage-child-resistant-packaging-continuity/README.md) | 家庭毒物、药品/化学品储存、儿童防护包装、误食暴露 | 把毒物接触从意外事件转化为包装、储存、标签和中毒控制入口的执行链 | 不提供中毒处置、药物/化学品建议、储存个案、包装评判、法律或产品建议 |
+| [Window Covering Cord Strangulation Child Safety Continuity](domains/window-covering-cord-strangulation-child-safety-continuity/README.md) | 窗饰拉绳、勒颈风险、儿童睡眠/游戏空间、产品标准 | 把隐蔽勒颈风险纳入儿童家庭环境、产品标准和照护执行模型 | 不提供安装、改造、产品选择、儿童监控、急救、法律或个案安全建议 |
+| [Hot Water Scald Burn Prevention Continuity](domains/hot-water-scald-burn-prevention-continuity/README.md) | 热水烫伤、洗浴/厨房热水、温度控制、儿童/老人暴露 | 把热水暴露纳入烧伤预防、照护交接、热环境治理和家庭安全模型 | 不提供水温设置、设备调整、急救、烧伤处理、施工、产品或个体建议 |
 | [Sleep Disordered Breathing Screening Treatment Continuity](domains/sleep-disordered-breathing-screening-treatment-continuity/README.md) | 睡眠呼吸障碍、夜间低氧、诊断转介、治疗坚持和设备可及 | 把夜间低氧、觉醒碎片、日间疲劳和心血管负荷纳入恢复系统模型 | 不提供睡眠报告判读、CPAP 设置、设备选择、驾驶限制或个体医疗建议 |
 | [Chronic Insomnia CBTI Access Continuity](domains/chronic-insomnia-cbti-access-continuity/README.md) | 慢性失眠、CBT-I 可及、睡眠行为治疗、药物风险和复发预防 | 把恢复失败转化为注意力、情绪、学习、工作和有效时间损失变量 | 不提供 CBT-I 操作、睡眠限制计划、药物、停药、设备或个体治疗建议 |
 | [Sexual Health STI Prevention Continuity](domains/sexual-health-sti-prevention-continuity/README.md) | 性健康、STI 预防、检测、治疗转介、伴侣服务、隐私和污名 | 把身体完整性、关系安全、生殖健康和公共卫生屏障纳入模型 | 不提供 STI 判读、用药、伴侣通知脚本、暴露处理、性行为或法律建议 |
@@ -2132,5 +2153,6 @@ flowchart LR
 - 2026-07-01：新增第八十七波 10 个器官/阶段特异癌症连续性域，覆盖乳腺癌、结直肠癌、肺癌、前列腺癌、宫颈癌、卵巢癌、胰腺癌、肝癌、儿童癌症和癌症幸存者晚期效应。
 - 2026-07-01：新增第八十八波 10 个口腔、牙科与颌面功能连续性域，覆盖龋病、牙周病、缺牙修复咀嚼、牙痛急性感染、口腔癌早期识别、儿童口腔、老年长期照护口腔、牙科服务可及性、口干唾液功能和颞下颌/口颌面痛。
 - 2026-07-01：新增第九十五波 10 个皮肤屏障、伤口、压力损伤与皮肤病执行连续性域，覆盖压力损伤预防、慢性伤口、伤口感染/蜂窝织炎、糖尿病足、烧伤后创面、手术切口/SSI、潮湿相关皮炎、湿疹瘙痒睡眠、银屑病系统负担和皮肤护理用品连续性。
+- 2026-07-01：新增第九十六波 10 个居家伤害预防与家庭安全执行连续性域，覆盖浴室洗澡如厕转移、楼梯台阶扶手门槛、夜间路径照明、卧室床转移夹陷、烟雾报警家庭逃生、一氧化碳报警燃烧设备、家具/电视倾倒锚固、家庭毒物储存儿童防护包装、窗饰拉绳勒颈和热水烫伤预防。
 
 完整记录见 [CHANGELOG.md](CHANGELOG.md)。
