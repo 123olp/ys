@@ -328,6 +328,16 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 建筑遗留危害必须可识别 | `radon-asbestos-indoor-hazard-continuity/` | 氡、石棉、旧建筑、学校、工作场所、长期肺部风险 | 看不见的室内暴露通过长潜伏期肺部和癌症风险侵蚀健康寿命 |
 | 潮湿生物暴露必须被治理 | `mold-dampness-indoor-biological-exposure/` | 霉菌、潮湿、漏水、室内过敏原、灾后水损、住房质量 | 住房变成呼吸、免疫、睡眠和心理压力的持续暴露源 |
 | 病媒传播风险必须被环境控制接住 | `vector-borne-disease-environmental-control/` | 蚊媒、蜱媒、气候水文、动物宿主、住房环境、病媒控制 | 感染风险重新定价居住、工作、旅行、农业和公共卫生连续性 |
+| 蚊媒暴露必须被行动化控制 | `mosquito-bite-arbovirus-prevention-continuity/` | 蚊虫叮咬、蚊媒病毒、积水、旅行、户外活动、孕产风险 | 居住、睡眠、户外劳动和旅行空间被蚊媒感染风险重新定价 |
+| 蜱媒暴露必须被早识别 | `tick-bite-lyme-rickettsial-prevention-continuity/` | 蜱虫叮咬、莱姆病、立克次体病、林地庭院、宠物接口 | 户外行动、园艺、自然接触和职业暴露被延误识别和长期症状拖累 |
+| 狂犬病暴露必须快速连接 PEP | `rabies-exposure-bite-pep-continuity/` | 动物咬伤、蝙蝠/野生动物、公共卫生咨询、PEP 可及 | 低频高致死暴露若断链，会把一次接触变成不可逆死亡边界 |
+| 犬咬伤必须被社区预防 | `dog-bite-community-injury-prevention-continuity/` | 犬咬伤、儿童安全、邻里动物、感染、恐惧、责任接口 | 动物共处失败会破坏身体安全、公共空间使用和家庭关系 |
+| 鼠害污染必须保护住房可用性 | `rodent-infestation-hantavirus-plague-continuity/` | 啮齿动物、粪尿污染、汉坦病毒、鼠疫、储物、灾后返家 | 睡眠、储物、食物和灾后恢复空间被污染、恐惧和感染风险占据 |
+| 床虱必须作为睡眠住房风险治理 | `bed-bug-infestation-sleep-housing-continuity/` | 床虱、睡眠、住房、污名、费用、化学暴露 | 低致死高摩擦侵扰会持续消耗恢复能力、有效时间和住房信任 |
+| 毒咬蜇伤必须连接毒物与急诊系统 | `venomous-bites-stings-envenomation-continuity/` | 毒蛇、蜘蛛、蝎、蜂、户外劳动、毒物中心、急诊 | 短窗口高后果暴露会把户外任务、旅行和灾后清理变成急性风险 |
+| 特定动物接触必须隔离沙门氏菌风险 | `reptile-amphibian-backyard-poultry-salmonella-continuity/` | 爬行动物、两栖动物、后院家禽、儿童、厨房、免疫脆弱者 | 低门槛动物互动可能穿透家庭、学校和食物卫生边界 |
+| 虱疥必须低污名地维持参与 | `lice-scabies-school-shelter-infestation-continuity/` | 头虱、体虱、疥疮、学校、避难所、长期照护、污名 | 学习、睡眠、照护和集体住宿会被瘙痒、停课和排斥打断 |
+| 农药工具必须不反向伤害主体 | `pesticide-label-exposure-poison-control-continuity/` | 农药标签、误用、儿童/宠物暴露、毒物中心、NPIC | 风险控制工具本身可能转化为中毒、室内污染和恢复环境破坏 |
 | 医疗偏好必须可在失能时传递 | `advance-care-planning-medical-decision-continuity/` | advance directives、health care proxy、治疗目标、偏好沟通 | 主体无法表达时，医疗团队和家属只能猜测偏好，导致过度、过少或错位治疗 |
 | 决策能力变化后权利必须被支持 | `supported-decision-making-guardianship-rights/` | 支持性决策、监护、最低限制替代、权利监督 | 保护安排可能变成失权、隔离、控制和剥夺主体参与 |
 | 医疗信息访问必须在授权边界内连续 | `healthcare-personal-representative-hipaa-access-continuity/` | HIPAA personal representative、照护者访问、医疗记录、隐私边界 | 没有授权访问会让药物、结果、预约和转诊断裂；越权访问会侵蚀隐私 |

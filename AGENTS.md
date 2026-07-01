@@ -509,6 +509,16 @@ human_infra/
     ├── wildfire-smoke-clean-air-respiratory-continuity/ # 野火烟雾、清洁空气与呼吸连续性
     ├── thunderstorm-lightning-outdoor-safety-continuity/ # 雷暴闪电与户外安全连续性
     ├── coastal-flooding-erosion-inundation-continuity/ # 沿海洪水、侵蚀与淹没连续性
+    ├── mosquito-bite-arbovirus-prevention-continuity/ # 蚊虫叮咬与蚊媒病毒预防连续性
+    ├── tick-bite-lyme-rickettsial-prevention-continuity/ # 蜱虫叮咬与蜱媒疾病预防连续性
+    ├── rabies-exposure-bite-pep-continuity/ # 狂犬病暴露、咬伤与 PEP 连续性
+    ├── dog-bite-community-injury-prevention-continuity/ # 犬咬伤与社区伤害预防连续性
+    ├── rodent-infestation-hantavirus-plague-continuity/ # 鼠害、汉坦病毒与鼠疫风险连续性
+    ├── bed-bug-infestation-sleep-housing-continuity/ # 床虱、睡眠与住房连续性
+    ├── venomous-bites-stings-envenomation-continuity/ # 毒咬蜇伤与中毒连接连续性
+    ├── reptile-amphibian-backyard-poultry-salmonella-continuity/ # 爬宠家禽与沙门氏菌连续性
+    ├── lice-scabies-school-shelter-infestation-continuity/ # 虱疥、学校与避难所虫害连续性
+    ├── pesticide-label-exposure-poison-control-continuity/ # 农药标签、暴露与毒物控制连续性
     ├── building-fire-life-safety-codes/ # 建筑消防与生命安全规范
     ├── manufacturing-repair-capacity/ # 制造与维修能力
     ├── public-procurement-contracting-capacity/ # 公共采购与合同能力
@@ -836,6 +846,7 @@ human_infra/
 - `domains/geospatial-navigation-location-infrastructure/` 负责地理空间数据、地址、地图、GNSS/GPS、地理编码、应急位置和位置互操作。
 - `domains/weather-climate-observation-forecasting/` 负责天气气候观测、预报模型、气候服务、极端天气和早期预警风险输入。
 - `domains/severe-weather-watch-warning-risk-communication-continuity/`、`domains/river-flash-flood-warning-evacuation-continuity/`、`domains/hurricane-storm-surge-evacuation-shelter-continuity/`、`domains/tornado-warning-safe-room-shelter-continuity/`、`domains/winter-storm-cold-exposure-power-continuity/`、`domains/drought-water-restriction-household-health-continuity/`、`domains/landslide-mudslide-debris-flow-warning-continuity/`、`domains/wildfire-smoke-clean-air-respiratory-continuity/`、`domains/thunderstorm-lightning-outdoor-safety-continuity/` 和 `domains/coastal-flooding-erosion-inundation-continuity/` 负责强天气和自然 hazard 执行连续性，覆盖预警理解、撤离避难、就地保护、空气暴露控制、寒冷/水限制和沿海淹没，不提供实时预警、路线、现场操作、工程、医疗、保险或法律建议。
+- `domains/mosquito-bite-arbovirus-prevention-continuity/`、`domains/tick-bite-lyme-rickettsial-prevention-continuity/`、`domains/rabies-exposure-bite-pep-continuity/`、`domains/dog-bite-community-injury-prevention-continuity/`、`domains/rodent-infestation-hantavirus-plague-continuity/`、`domains/bed-bug-infestation-sleep-housing-continuity/`、`domains/venomous-bites-stings-envenomation-continuity/`、`domains/reptile-amphibian-backyard-poultry-salmonella-continuity/`、`domains/lice-scabies-school-shelter-infestation-continuity/` 和 `domains/pesticide-label-exposure-poison-control-continuity/` 负责病媒、动物接触、虫害与农药暴露执行连续性，覆盖居住、睡眠、学校、旅行、户外劳动、宠物共处和毒物控制连接，不提供诊疗、用药、急救、灭虫、农药操作、动物处置、旅行许可、法律责任或个体风险判断。
 - `domains/building-fire-life-safety-codes/` 负责建筑规范、消防规范、生命安全、疏散、烟雾报警、无障碍和韧性改造。
 - `domains/manufacturing-repair-capacity/` 负责制造、维修、维护、备件、质量、本地生产和关键设备恢复能力。
 - `domains/public-procurement-contracting-capacity/` 负责公共采购、合同、供应商管理、应急采购、透明度和交付验收。
@@ -1173,3 +1184,4 @@ human_infra/
 - 2026-07-01：新增第一百零一波 10 个危险材料与工业事故执行连续性域，覆盖化学释放避险撤离、社区化学风险知情披露、HazMat 事故指挥、工业过程安全、有毒羽流空气监测、HAZWOPER 响应者 PPE、暴露后去污分诊、危险材料运输 ERG、油污危险释放响应恢复和电池热失控火灾风险。
 - 2026-07-01：新增 `docs/reference/transcendental-domain-index.md`，把有效永生 A-K 主干域整理为先验追问入口，避免重复建立同义研究域。
 - 2026-07-01：新增第一百零二波 10 个强天气与自然 hazard 执行连续性域，把官方预警到主体保护行动的转换层纳入 Human Infra。
+- 2026-07-01：新增第一百零三波 10 个病媒、动物接触、虫害与农药暴露执行连续性域，把小型生物风险和控制工具副作用纳入主体执行层。

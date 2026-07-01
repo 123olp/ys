@@ -422,6 +422,16 @@
 - `radon-asbestos-indoor-hazard-continuity/`：氡、石棉与室内长期危害连续性，整理建筑遗留危害、长期肺部风险、住房学校工作场所暴露和治理边界。
 - `mold-dampness-indoor-biological-exposure/`：霉菌、潮湿与室内生物暴露，整理建筑潮湿、霉菌、室内过敏原和灾后水损对呼吸、睡眠和住房稳定的影响。
 - `vector-borne-disease-environmental-control/`：病媒传播疾病与环境控制，整理蚊媒、蜱媒、气候水文、住房环境、动物宿主和公共卫生控制。
+- `mosquito-bite-arbovirus-prevention-continuity/`：蚊虫叮咬与蚊媒病毒预防连续性，整理蚊媒暴露、户外行动、积水治理、旅行和孕产风险。
+- `tick-bite-lyme-rickettsial-prevention-continuity/`：蜱虫叮咬与蜱媒疾病预防连续性，整理莱姆病、立克次体病、庭院林地、宠物接口和户外行动。
+- `rabies-exposure-bite-pep-continuity/`：狂犬病暴露、咬伤与 PEP 连续性，整理疑似暴露、公共卫生咨询、医疗连接和暴露后预防路径。
+- `dog-bite-community-injury-prevention-continuity/`：犬咬伤与社区伤害预防连续性，整理儿童安全、邻里动物、感染、恐惧和社区共处。
+- `rodent-infestation-hantavirus-plague-continuity/`：鼠害、汉坦病毒与鼠疫风险连续性，整理啮齿动物污染、住房、储物、灾后返家和感染风险。
+- `bed-bug-infestation-sleep-housing-continuity/`：床虱、睡眠与住房连续性，整理床虱侵扰、睡眠破坏、住房稳定、污名、费用和化学暴露。
+- `venomous-bites-stings-envenomation-continuity/`：毒咬蜇伤与中毒连接连续性，整理毒蛇、蜘蛛、蝎、蜂等咬蜇伤和毒物中心/急诊连接。
+- `reptile-amphibian-backyard-poultry-salmonella-continuity/`：爬宠家禽与沙门氏菌连续性，整理爬行/两栖动物、后院家禽、儿童和家庭学校卫生边界。
+- `lice-scabies-school-shelter-infestation-continuity/`：虱疥、学校与避难所虫害连续性，整理头虱、体虱、疥疮、集体住宿、污名和停课停工摩擦。
+- `pesticide-label-exposure-poison-control-continuity/`：农药标签、暴露与毒物控制连续性，整理农药误用、儿童/宠物暴露、标签理解和毒物中心连接。
 - `advance-care-planning-medical-decision-continuity/`：预先医疗照护计划与医疗决策连续性，整理 advance directives、医疗代理、目标照护和失能时偏好传递。
 - `supported-decision-making-guardianship-rights/`：支持性决策、监护与权利保护，整理能力变化后的决策支持、最低限制替代、监督和防滥用边界。
 - `healthcare-personal-representative-hipaa-access-continuity/`：医疗个人代表与 HIPAA 访问连续性，整理授权照护者、医疗记录访问、隐私边界和资料断点。

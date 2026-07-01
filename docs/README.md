@@ -123,6 +123,7 @@ docs/
 │   ├── 0105-add-one-hundred-first-wave-hazardous-materials-industrial-incident-execution-domains.md
 │   ├── 0106-establish-transcendental-domain-index.md
 │   ├── 0107-add-one-hundred-second-wave-severe-weather-hazard-execution-domains.md
+│   ├── 0108-add-one-hundred-third-wave-vector-animal-pest-exposure-execution-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -361,6 +362,16 @@ docs/
 180. Read `../domains/radon-asbestos-indoor-hazard-continuity/README.md` if you are working on radon, asbestos, indoor long-latency hazards, old buildings, schools, workplaces, lung cancer risk, or building legacy exposures.
 181. Read `../domains/mold-dampness-indoor-biological-exposure/README.md` if you are working on mold, dampness, indoor biological exposure, leaks, water damage, indoor allergens, housing quality, or post-flood indoor environments.
 182. Read `../domains/vector-borne-disease-environmental-control/README.md` if you are working on vector-borne disease, mosquitoes, ticks, fleas, vector control, climate-water ecology, One Health, or environmental infection risk.
+    - Then read `../domains/mosquito-bite-arbovirus-prevention-continuity/README.md` for mosquito bites, arboviruses, standing water, travel, outdoor activity, or pregnancy-related exposure boundaries.
+    - Then read `../domains/tick-bite-lyme-rickettsial-prevention-continuity/README.md` for tick bites, Lyme disease, rickettsial disease, wooded yards, pets, outdoor labor, or delayed recognition.
+    - Then read `../domains/rabies-exposure-bite-pep-continuity/README.md` for suspected rabies exposure, animal bites, public-health consultation, PEP access, or bat/wildlife contact boundaries.
+    - Then read `../domains/dog-bite-community-injury-prevention-continuity/README.md` for dog bites, child safety, community animal interaction, infection risk, or neighborhood co-existence.
+    - Then read `../domains/rodent-infestation-hantavirus-plague-continuity/README.md` for rodent infestation, droppings/urine contamination, hantavirus, plague, storage spaces, or post-disaster return.
+    - Then read `../domains/bed-bug-infestation-sleep-housing-continuity/README.md` for bed bugs, sleep disruption, housing stability, stigma, treatment cost, or pesticide misuse.
+    - Then read `../domains/venomous-bites-stings-envenomation-continuity/README.md` for venomous bites/stings, snakes, spiders, scorpions, bees, poison-center connection, or outdoor task interruption.
+    - Then read `../domains/reptile-amphibian-backyard-poultry-salmonella-continuity/README.md` for reptiles, amphibians, backyard poultry, salmonella, children, schools, or kitchen hygiene boundaries.
+    - Then read `../domains/lice-scabies-school-shelter-infestation-continuity/README.md` for lice, scabies, schools, shelters, long-term care, stigma, sleep disruption, or participation policy.
+    - Then read `../domains/pesticide-label-exposure-poison-control-continuity/README.md` for pesticide labels, exposure events, children/pets, poison control, NPIC, or safe pest-control boundaries.
 183. Read `../domains/advance-care-planning-medical-decision-continuity/README.md` if you are working on advance care planning, advance directives, health care proxy, medical decision continuity, goals of care, or incapacity communication.
 184. Read `../domains/supported-decision-making-guardianship-rights/README.md` if you are working on supported decision-making, guardianship, conservatorship, decision capacity, disability rights, or least restrictive alternatives.
 185. Read `../domains/healthcare-personal-representative-hipaa-access-continuity/README.md` if you are working on HIPAA personal representatives, caregiver access, proxy access, medical records, privacy boundaries, or authorized care coordination.

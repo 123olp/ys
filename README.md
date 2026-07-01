@@ -647,6 +647,16 @@ flowchart TD
     H --> RAIHC[radon-asbestos-indoor-hazard-continuity<br/>氡石棉 / 室内危害]
     H --> MDIBE[mold-dampness-indoor-biological-exposure<br/>霉菌潮湿 / 室内生物暴露]
     H --> VBDEC[vector-borne-disease-environmental-control<br/>病媒传播 / 环境控制]
+    VBDEC --> MBA[mosquito-bite-arbovirus<br/>蚊虫叮咬 / 蚊媒病毒]
+    VBDEC --> TBLR[tick-bite-lyme-rickettsial<br/>蜱虫叮咬 / 蜱媒病]
+    VBDEC --> REBP[rabies-exposure-bite-pep<br/>狂犬病暴露 / PEP]
+    VBDEC --> DBCI[dog-bite-community-injury<br/>犬咬伤 / 社区伤害]
+    VBDEC --> RIHP[rodent-infestation-hantavirus-plague<br/>鼠害 / 汉坦 / 鼠疫]
+    VBDEC --> BBISH[bed-bug-infestation-sleep-housing<br/>床虱 / 睡眠住房]
+    VBDEC --> VBSE[venomous-bites-stings-envenomation<br/>毒咬蜇伤 / 中毒连接]
+    VBDEC --> RABP[reptile-amphibian-backyard-poultry-salmonella<br/>爬宠家禽 / 沙门氏菌]
+    VBDEC --> LSSS[lice-scabies-school-shelter<br/>虱疥 / 学校避难所]
+    VBDEC --> PLEP[pesticide-label-exposure-poison-control<br/>农药标签 / 中毒控制]
     H --> ACPMDC[advance-care-planning-medical-decision-continuity<br/>预先照护计划 / 医疗决策]
     H --> SDMGR[supported-decision-making-guardianship-rights<br/>支持性决策 / 监护权利]
     H --> HPRHAC[healthcare-personal-representative-hipaa-access-continuity<br/>医疗个人代表 / HIPAA 访问]
@@ -1054,6 +1064,16 @@ flowchart TD
 | [Radon Asbestos Indoor Hazard Continuity](domains/radon-asbestos-indoor-hazard-continuity/README.md) | 氡、石棉、旧建筑、学校、工作场所和长期肺部风险 | 把不可见建筑暴露作为住房、学校和工作场所持续安全的长期约束 | 不提供检测解释、缓解系统设计、石棉采样拆除、施工、保险、房产或医疗建议 |
 | [Mold Dampness Indoor Biological Exposure](domains/mold-dampness-indoor-biological-exposure/README.md) | 霉菌、潮湿、漏水、室内过敏原、通风不足和灾后水损 | 把潮湿住房和室内生物暴露作为呼吸、睡眠、免疫和住房稳定的慢性负荷 | 不提供医疗建议、采样清理、除湿设备、施工维修、租房纠纷、保险或法律建议 |
 | [Vector Borne Disease Environmental Control](domains/vector-borne-disease-environmental-control/README.md) | 蚊媒、蜱媒、蚤媒、气候水文、住房环境、宿主动物和病媒控制 | 把病媒传播风险作为居住、工作、旅行、农业和公共卫生连续性的生态条件 | 不提供诊疗、旅行医学、驱虫产品、农药操作、现场灭杀、检疫规避或个人风险判断 |
+| [Mosquito Bite Arbovirus Prevention Continuity](domains/mosquito-bite-arbovirus-prevention-continuity/README.md) | 蚊虫叮咬、蚊媒病毒、积水、户外活动和旅行暴露 | 把蚊媒暴露从生态风险转化为可治理的居住、睡眠、旅行和户外行动变量 | 不提供诊疗、旅行许可、驱虫产品、农药配方、灭蚊操作或个体风险判断 |
+| [Tick Bite Lyme Rickettsial Prevention Continuity](domains/tick-bite-lyme-rickettsial-prevention-continuity/README.md) | 蜱虫叮咬、莱姆病、立克次体病、庭院林地和宠物接口 | 把蜱媒风险纳入户外行动、自然接触、园艺和职业暴露连续性 | 不提供诊断、抗生素、蜱虫移除、产品选择、路线安全或个体感染判断 |
+| [Rabies Exposure Bite PEP Continuity](domains/rabies-exposure-bite-pep-continuity/README.md) | 狂犬病疑似暴露、动物咬伤、公共卫生咨询和 PEP 可及 | 把低频高致死暴露转化为时间敏感的医疗和公共卫生连接链 | 不提供暴露判断、PEP 决策、动物处置、伤口处理、疫苗安排或野生动物操作 |
+| [Dog Bite Community Injury Prevention Continuity](domains/dog-bite-community-injury-prevention-continuity/README.md) | 犬咬伤、儿童安全、邻里动物、感染和社区共处 | 把犬咬伤作为身体安全、家庭关系和公共空间使用的伤害预防问题 | 不提供犬只训练、动物处置、法律责任、个体医疗、抗生素或狂犬病暴露判断 |
+| [Rodent Infestation Hantavirus Plague Continuity](domains/rodent-infestation-hantavirus-plague-continuity/README.md) | 啮齿动物、粪尿污染、汉坦病毒、鼠疫、住房和灾后返家 | 把鼠害从卫生问题转化为睡眠、储物、清理和住房可用性风险 | 不提供捕杀、毒饵、清理步骤、病原采样、动物处理、诊疗或施工方案 |
+| [Bed Bug Infestation Sleep Housing Continuity](domains/bed-bug-infestation-sleep-housing-continuity/README.md) | 床虱、睡眠破坏、住房稳定、污名、费用和化学暴露 | 把床虱侵扰建模为有效时间、恢复能力和住房信任的慢性摩擦 | 不提供灭虫步骤、农药使用、法律策略、产品选择、医疗诊断或住宿建议 |
+| [Venomous Bites Stings Envenomation Continuity](domains/venomous-bites-stings-envenomation-continuity/README.md) | 毒蛇、蜘蛛、蝎、蜂等咬蜇伤和毒物中心/急诊连接 | 把短窗口高后果咬蜇伤纳入户外劳动、旅行和灾后清理行动边界 | 不提供急救步骤、抗毒素建议、动物识别、捕捉处理、个体风险或旅行许可 |
+| [Reptile Amphibian Backyard Poultry Salmonella Continuity](domains/reptile-amphibian-backyard-poultry-salmonella-continuity/README.md) | 爬行动物、两栖动物、后院家禽、儿童和沙门氏菌 | 把特定动物接触纳入家庭、学校、厨房和免疫脆弱人群卫生边界 | 不提供饲养、清洁、食品处理、宠物选择、个体医疗或人体诊断 |
+| [Lice Scabies School Shelter Infestation Continuity](domains/lice-scabies-school-shelter-infestation-continuity/README.md) | 头虱、体虱、疥疮、学校、避难所、照护机构和污名 | 把低致死高摩擦虫害纳入学习、睡眠、集体住宿和照护连续性 | 不提供诊断、用药、清洗步骤、隔离政策、学校排除规则或个案处理 |
+| [Pesticide Label Exposure Poison Control Continuity](domains/pesticide-label-exposure-poison-control-continuity/README.md) | 农药标签、误用暴露、儿童/宠物风险和毒物中心连接 | 把害虫控制工具自身的化学风险纳入主体持续性的安全边界 | 不提供农药选择、配方、施用、混合、剂量、解毒、清理或合规建议 |
 | [Advance Care Planning Medical Decision Continuity](domains/advance-care-planning-medical-decision-continuity/README.md) | 预先医疗照护计划、advance directives、医疗代理人、治疗目标和偏好沟通 | 把主体失能时的医疗决策连续性作为意愿、尊严和临床沟通基础设施 | 不提供医疗、法律、急救、DNR/POLST/MOLST 填写、治疗选择或个案文件建议 |
 | [Supported Decision Making Guardianship Rights](domains/supported-decision-making-guardianship-rights/README.md) | 支持性决策、监护、保护性安排、最低限制替代方案和权利监督 | 把能力变化后的自主性保护作为主体持续参与制度和生活决策的条件 | 不提供监护申请、能力判断、法院策略、家庭纠纷、财务控制或法律建议 |
 | [Healthcare Personal Representative HIPAA Access Continuity](domains/healthcare-personal-representative-hipaa-access-continuity/README.md) | HIPAA personal representative、授权照护者、医疗记录访问和隐私边界 | 把授权医疗信息访问作为照护转移、慢病管理和风险复核的连续性条件 | 不提供 HIPAA 法律意见、授权表填写、病历索取、门户设置、隐私投诉或个案访问判断 |
@@ -2120,6 +2140,16 @@ human_infra/
 │   ├── wildfire-smoke-clean-air-respiratory-continuity/
 │   ├── thunderstorm-lightning-outdoor-safety-continuity/
 │   ├── coastal-flooding-erosion-inundation-continuity/
+│   ├── mosquito-bite-arbovirus-prevention-continuity/
+│   ├── tick-bite-lyme-rickettsial-prevention-continuity/
+│   ├── rabies-exposure-bite-pep-continuity/
+│   ├── dog-bite-community-injury-prevention-continuity/
+│   ├── rodent-infestation-hantavirus-plague-continuity/
+│   ├── bed-bug-infestation-sleep-housing-continuity/
+│   ├── venomous-bites-stings-envenomation-continuity/
+│   ├── reptile-amphibian-backyard-poultry-salmonella-continuity/
+│   ├── lice-scabies-school-shelter-infestation-continuity/
+│   ├── pesticide-label-exposure-poison-control-continuity/
 │   ├── urogenital-continuity/
 │   ├── urinary-tract-infection-pyelonephritis-urosepsis-continuity/
 │   ├── catheter-associated-uti-device-infection-continuity/
@@ -2314,5 +2344,6 @@ flowchart LR
 - 2026-07-01：新增第一百零一波 10 个危险材料与工业事故执行连续性域，覆盖化学释放避险撤离、社区化学风险知情披露、HazMat 事故指挥、工业过程安全、有毒羽流空气监测、HAZWOPER 响应者 PPE、暴露后去污分诊、危险材料运输 ERG、油污危险释放响应恢复和电池热失控火灾风险。
 - 2026-07-01：新增先验追问研究域索引，把有效永生 A-K 主干域收束为“终极目标 -> 可能性条件 -> 已有域目录 -> 维护触发”的可导航入口。
 - 2026-07-01：新增第一百零二波 10 个强天气与自然 hazard 执行连续性域，覆盖强天气预警风险沟通、洪水撤离、飓风风暴潮、龙卷风避难、冬季风暴寒冷、干旱水限制、滑坡泥石流、野火烟雾、雷暴闪电和沿海洪水。
+- 2026-07-01：新增第一百零三波 10 个病媒、动物接触、虫害与农药暴露执行连续性域，覆盖蚊虫叮咬、蜱虫叮咬、狂犬病暴露、犬咬伤、鼠害、床虱、毒咬蜇伤、爬宠/后院家禽沙门氏菌、虱疥和农药标签中毒连接。
 
 完整记录见 [CHANGELOG.md](CHANGELOG.md)。

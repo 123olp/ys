@@ -605,6 +605,16 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `radon-asbestos-indoor-hazard-continuity/` | 氡与石棉决定建筑空间是否在长潜伏期内制造不可见肺部和癌症风险 |
 | `mold-dampness-indoor-biological-exposure/` | 霉菌和潮湿决定住房是否会变成呼吸、免疫、睡眠和心理压力的慢性暴露源 |
 | `vector-borne-disease-environmental-control/` | 病媒传播风险决定气候、水文、住房、动物宿主和公共卫生能否共同控制生态感染入口 |
+| `mosquito-bite-arbovirus-prevention-continuity/` | 蚊虫叮咬决定居住、旅行、户外劳动和孕产计划是否会被蚊媒病毒暴露重新约束 |
+| `tick-bite-lyme-rickettsial-prevention-continuity/` | 蜱虫叮咬决定自然空间、庭院、宠物和户外工作是否能避免延误识别和长期功能损耗 |
+| `rabies-exposure-bite-pep-continuity/` | 狂犬病暴露链路决定低频动物接触是否能及时进入公共卫生和 PEP 路径 |
+| `dog-bite-community-injury-prevention-continuity/` | 犬咬伤决定儿童、邻里、宠物和公共空间共处是否会被伤害、感染和恐惧打断 |
+| `rodent-infestation-hantavirus-plague-continuity/` | 鼠害决定住房、储物、清理和灾后返家是否会被污染、病原和恐惧占据 |
+| `bed-bug-infestation-sleep-housing-continuity/` | 床虱决定睡眠、住房信任、旅行和集体住宿是否会被低致死高摩擦风险持续消耗 |
+| `venomous-bites-stings-envenomation-continuity/` | 毒咬蜇伤决定户外劳动、旅行、儿童活动和灾后清理是否能及时连接毒物中心和急诊系统 |
+| `reptile-amphibian-backyard-poultry-salmonella-continuity/` | 爬宠和后院家禽决定家庭、学校和厨房卫生边界是否会被沙门氏菌接触穿透 |
+| `lice-scabies-school-shelter-infestation-continuity/` | 虱疥决定学校、避难所和照护机构能否低污名地维持睡眠、学习和集体参与 |
+| `pesticide-label-exposure-poison-control-continuity/` | 农药标签和毒物控制决定害虫治理工具是否会反向制造中毒和室内污染 |
 | `advance-care-planning-medical-decision-continuity/` | 预先医疗照护计划决定主体失能时医疗偏好、代理人和治疗目标是否还能进入临床决策 |
 | `supported-decision-making-guardianship-rights/` | 支持性决策和监护权利决定能力变化后主体是否被帮助表达选择，还是被直接剥夺自主性 |
 | `healthcare-personal-representative-hipaa-access-continuity/` | 医疗个人代表和 HIPAA 访问边界决定照护者能否合法获得必要资料，同时不侵蚀主体隐私 |

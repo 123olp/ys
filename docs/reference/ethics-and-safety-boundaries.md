@@ -1326,6 +1326,8 @@ Human Infra 不能被设计成更精密的压榨系统。
 
 `noise-exposure-acoustic-environment-continuity`、`light-exposure-circadian-environment-continuity`、`lead-heavy-metal-exposure-control`、`radon-asbestos-indoor-hazard-continuity`、`mold-dampness-indoor-biological-exposure` 和 `vector-borne-disease-environmental-control` 关注噪声、光照节律、铅与重金属、氡与石棉、霉菌潮湿和病媒传播如何通过住房、工作、学校、公共空间、饮水、土壤、建筑材料、生态环境和公共卫生系统持续消耗主体恢复、认知、呼吸、睡眠、行动和未来选择权，不是个人诊断、检测解释、施工修复、农药操作、旅行安全或法律处置入口。
 
+`mosquito-bite-arbovirus-prevention-continuity`、`tick-bite-lyme-rickettsial-prevention-continuity`、`rabies-exposure-bite-pep-continuity`、`dog-bite-community-injury-prevention-continuity`、`rodent-infestation-hantavirus-plague-continuity`、`bed-bug-infestation-sleep-housing-continuity`、`venomous-bites-stings-envenomation-continuity`、`reptile-amphibian-backyard-poultry-salmonella-continuity`、`lice-scabies-school-shelter-infestation-continuity` 和 `pesticide-label-exposure-poison-control-continuity` 关注病媒、动物接触、虫害和农药暴露如何通过居住、睡眠、学校、避难所、旅行、户外劳动、宠物共处、厨房卫生、毒物控制和公共卫生连接影响主体持续性，不是个体诊断、治疗、用药、PEP 决策、急救步骤、驱虫产品推荐、灭虫操作、农药使用、动物捕捉处置、法律责任、旅行许可或个体风险判断入口。
+
 可以做：
 
 - 整理 WHO、CDC/NIOSH、OSHA、EPA、ATSDR、NIEHS 等公开来源、暴露机制、风险变量、公共标准、监管责任和证据边界。
