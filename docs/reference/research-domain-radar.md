@@ -369,6 +369,16 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `infant-safe-sleep-suid-risk-reduction-continuity/` | 婴儿安全睡眠与 SUID 风险降低连续性决定早期生命是否通过睡眠环境、照护信息和产后支持安全进入未来 |
 | `firearm-safe-storage-injury-prevention-continuity/` | 枪支安全储存与伤害预防连续性决定高致死工具可及性是否被公共卫生证据和家庭风险边界治理 |
 | `atv-off-highway-vehicle-injury-prevention-continuity/` | ATV/OHV 越野车辆伤害预防连续性决定边缘移动中的速度、地形、翻覆和救援断点是否进入伤害预防模型 |
+| `emergency-supply-kit-go-bag-rotation-continuity/` | 应急物资包、撤离包与轮换连续性决定服务中断初期的最低生存和行动输入是否可取用 |
+| `family-emergency-communication-reunification-continuity/` | 家庭应急通信与团聚连续性决定灾害失联是否被联系人、团聚点、照护交接和信息备份降级 |
+| `evacuation-route-transportation-shelter-plan-continuity/` | 撤离路线、交通与避难计划连续性决定主体是否能在危险超过阈值前退出暴露空间 |
+| `shelter-in-place-clean-air-room-indoor-protection-continuity/` | 就地避险、清洁空气房与室内保护连续性决定撤离不可行时室内空间是否能成为临时保护环境 |
+| `backup-power-battery-generator-safety-continuity/` | 备用电、电池与发电机安全连续性决定停电中的通信、医疗设备和冷藏是否被供能收益与 CO/火灾风险共同治理 |
+| `emergency-food-water-storage-treatment-continuity/` | 应急食物、水储存与处理连续性决定灾害中的水分、能量、卫生和安全摄入是否可持续 |
+| `refrigerated-medication-medical-device-power-outage-continuity/` | 温控药品、医疗设备与停电连续性决定慢病和设备依赖主体是否能跨过电力中断窗口 |
+| `emergency-financial-document-cash-readiness-continuity/` | 应急金融文件、现金与恢复资料连续性决定灾后损失、身份、资产和保险是否能转化为制度可处理流程 |
+| `disability-access-functional-needs-personal-preparedness-continuity/` | 残障、无障碍与功能需求个人准备连续性决定通用应急准备是否适配真实身体、感官、认知、通信和照护条件 |
+| `older-adult-caregiver-disaster-preparedness-continuity/` | 老年人与照护者灾害准备连续性决定慢病、药物、行动、认知、照护依赖和社会连接是否被纳入灾害准备 |
 | `sleep-disordered-breathing-screening-treatment-continuity/` | 睡眠呼吸障碍筛查与治疗连续性决定夜间低氧、觉醒碎片、日间嗜睡和心血管负荷是否进入可恢复路径 |
 | `chronic-insomnia-cbti-access-continuity/` | 慢性失眠与 CBT-I 可及连续性决定睡眠恢复失败是否持续消耗注意力、情绪、学习、工作和有效时间 |
 | `sexual-health-sti-prevention-continuity/` | 性健康与 STI 预防连续性决定检测、治疗转介、伴侣服务、隐私和污名治理是否保护身体完整性和关系安全 |

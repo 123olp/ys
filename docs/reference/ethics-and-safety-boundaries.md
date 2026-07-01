@@ -604,6 +604,24 @@ Human Infra 不能被设计成更精密的压榨系统。
 - 产出绕过安全装置、危险驾驶、非法使用、战术/自卫、武器操作、救援操作、返赛背书、产品背书、恐慌营销或替代专业人员现场判断的内容。
 - 替代儿科、急救、公共卫生、执法、交通安全、消防/水域安全、学校体育、法律、保险或儿童保护专业人员。
 
+## 家庭与个人应急准备执行连续性边界
+
+`emergency-supply-kit-go-bag-rotation-continuity`、`family-emergency-communication-reunification-continuity`、`evacuation-route-transportation-shelter-plan-continuity`、`shelter-in-place-clean-air-room-indoor-protection-continuity`、`backup-power-battery-generator-safety-continuity`、`emergency-food-water-storage-treatment-continuity`、`refrigerated-medication-medical-device-power-outage-continuity`、`emergency-financial-document-cash-readiness-continuity`、`disability-access-functional-needs-personal-preparedness-continuity` 和 `older-adult-caregiver-disaster-preparedness-continuity` 关注家庭与个人应急准备如何通过物资、通信、撤离、室内保护、备用电、食水、药物设备、金融文件、功能需求和老年照护者准备改变主体持续性，不是个体撤离、现场指挥、发电机操作、医疗判断、财务法律或照护计划建议入口。
+
+可以做：
+
+- 整理 Ready.gov、FEMA、CDC、EPA、FDA、HHS emPOWER 和 American Red Cross 等公开资料。
+- 比较应急包、家庭通信、撤离、就地避险、备用电、食水、温控药品/医疗设备、金融文件、残障功能需求和老年照护者准备如何影响失联、滞留、用药中断、停电暴露、食水风险、服务申请和恢复速度。
+- 记录家庭与个人应急准备的系统变量、证据等级、执行断点、隐私边界、禁止用途和不确定性。
+
+不能做：
+
+- 提供个人物资清单、采购、撤离路线、实时灾害指挥、避难点选择、房屋密封、空气过滤安装、发电机操作、接线、燃料、食品水处理、药物可用性判断、剂量、医疗设备备用、电力负载、财务、法律、保险、福利、残障登记、老年照护计划或现场行动建议。
+- 根据住址、路线、家庭成员、儿童/老人信息、残障状态、诊断、药品、设备型号、库存照片、现金、证件、保单、账户、车辆、燃料、避难点、服务动物或实时位置做个体准备评估。
+- 收集、存储或推断可识别家庭、住址、撤离路径、财务资料、健康资料、残障资料、照护关系、设备依赖、药物清单、儿童/老人信息或其他敏感数据。
+- 产出规避官方命令、危险撤离、危险供电、危险化学/空气处置、灾害恐慌营销、资质/身份/理赔材料伪造、福利规避、设备篡改或替代专业人员现场判断的内容。
+- 替代应急管理、消防、电气、医疗、药师、公共卫生、社工、残障服务、老年照护、法律、保险、财务或救援专业人员。
+
 ## 器官/阶段特异癌症连续性边界
 
 `breast-cancer-screening-treatment-survivorship-continuity`、`colorectal-cancer-screening-treatment-continuity`、`lung-cancer-screening-treatment-continuity`、`prostate-cancer-screening-treatment-continuity`、`cervical-cancer-hpv-prevention-screening-continuity`、`ovarian-cancer-symptom-detection-treatment-continuity`、`pancreatic-cancer-high-risk-detection-treatment-continuity`、`liver-cancer-cirrhosis-surveillance-treatment-continuity`、`childhood-cancer-treatment-survivorship-continuity` 和 `cancer-survivorship-late-effects-continuity` 关注器官/阶段特异癌症如何通过筛查路径、异常闭环、治疗负担、复发/晚期效应、家庭照护、工作保险和生活质量改变主体持续性，不是个人癌症诊断、治疗、筛查、遗传咨询、随访或预后建议入口。

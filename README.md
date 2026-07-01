@@ -348,6 +348,16 @@ flowchart TD
     H --> FIPS[financial-inclusion-payment-systems<br/>金融包容 / 支付系统]
     H --> WES[workforce-employment-services<br/>就业服务 / 劳动力发展]
     H --> HEPR[household-emergency-preparedness-resilience<br/>家庭应急准备 / 韧性]
+    HEPR --> ESKGB[emergency-supply-kit<br/>应急包 / 轮换]
+    HEPR --> FECR[family-emergency-communication<br/>家庭通信 / 团聚]
+    HEPR --> ERTS[evacuation-route-shelter<br/>撤离 / 交通 / 避难]
+    HEPR --> SIPCA[shelter-in-place-clean-air<br/>就地避险 / 清洁空气房]
+    HEPR --> BPBGS[backup-power<br/>备用电 / 发电机安全]
+    HEPR --> EFWST[emergency-food-water<br/>应急食水 / 处理]
+    HEPR --> RMMPO[medication-device-power-outage<br/>温控药品 / 医疗设备停电]
+    HEPR --> EFDCR[financial-document-cash<br/>金融文件 / 现金准备]
+    HEPR --> DAFNPP[functional-needs-preparedness<br/>残障功能需求准备]
+    HEPR --> OACDP[older-adult-caregiver-preparedness<br/>老年照护者灾害准备]
     H --> MILPL[media-information-literacy-public-libraries<br/>媒体信息素养 / 公共图书馆]
     H --> HWC[health-workforce-capacity<br/>健康劳动力容量]
     H --> ABPF[administrative-burden-procedural-friction<br/>行政负担 / 程序摩擦]
@@ -1326,6 +1336,16 @@ flowchart TD
 | [Childcare Family Continuity](domains/childcare-family-continuity/README.md) | 托育可及、费用、质量、早期儿童发展、父母工作连续性和家庭压力 | 儿童发展、照护者有效时间、家庭稳定和代际未来选择权 | 不提供育儿、教育、医疗、机构选择、补贴申请、法律或家庭纠纷建议 |
 | [Emergency Preparedness Response](domains/emergency-preparedness-response/README.md) | 灾害准备、预警、应急通信、急救医疗、撤离支持、安置和恢复 | 尾部风险响应、危机连续性、灾后恢复和抗冲击能力 | 不提供急救、医疗处理、撤离路线、危险环境、武器、暴力或生存操作指南 |
 | [Household Emergency Preparedness Resilience](domains/household-emergency-preparedness-resilience/README.md) | 家庭计划、物资包、备用通信、健康准备、重要文件和特殊需求安排 | 公共救援抵达前的家庭级主体连续性和恢复前置能力 | 不提供实时灾害指挥、撤离路线、急救医疗、危险物储存或极端生存主义指南 |
+| [Emergency Supply Kit Go Bag Rotation Continuity](domains/emergency-supply-kit-go-bag-rotation-continuity/README.md) | 应急物资包、撤离包、耗材轮换、可取用性和过期失效 | 把公共服务中断初期的水食、照明、卫生、药品和通信输入纳入行动窗口模型 | 不提供个人物资清单、采购、储存数量、品牌、撤离包配置或现场行动建议 |
+| [Family Emergency Communication Reunification Continuity](domains/family-emergency-communication-reunification-continuity/README.md) | 家庭应急通信、联系人、团聚点、学校/照护交接和信息备份 | 把灾害失联转化为关系系统、照护责任和信息冗余的执行问题 | 不提供个人通信计划、团聚点、学校接送、儿童定位、追踪软件或法律建议 |
+| [Evacuation Route Transportation Shelter Plan Continuity](domains/evacuation-route-transportation-shelter-plan-continuity/README.md) | 撤离路线、交通、燃料、避难点、无障碍和返回条件 | 把危险空间退出能力建模为路线、交通、照护、避难承接和特殊需求链路 | 不提供个人撤离路线、实时路况、避难点、驾驶、燃料、交通或住宿建议 |
+| [Shelter In Place Clean Air Room Indoor Protection Continuity](domains/shelter-in-place-clean-air-room-indoor-protection-continuity/README.md) | 就地避险、室内空气保护、清洁空气房间、过滤和污染暴露 | 把住宅临时保护能力纳入撤离不可行时的等待和呼吸安全模型 | 不提供房屋密封、空气净化器选择、滤材安装、化学事故或野火烟雾个人行动建议 |
+| [Backup Power Battery Generator Safety Continuity](domains/backup-power-battery-generator-safety-continuity/README.md) | 备用电源、电池、发电机安全、充电、CO/火灾风险和关键设备负载 | 把停电中的供能收益与 CO、火灾、触电和设备中断风险放入同一模型 | 不提供发电机操作、接线、燃料、设备购买、负载计算或电气维修建议 |
+| [Emergency Food Water Storage Treatment Continuity](domains/emergency-food-water-storage-treatment-continuity/README.md) | 应急食品、水、储存、处理、冷藏失效、特殊饮食和卫生 | 把灾害中的生理维护输入建模为水分、能量、卫生和感染控制底盘 | 不提供个人储水数量、净水方法、食品选择、冷藏判断、婴儿喂养或采购建议 |
+| [Refrigerated Medication Medical Device Power Outage Continuity](domains/refrigerated-medication-medical-device-power-outage-continuity/README.md) | 温控药品、居家医疗设备、备用电、处方信息和停电联络 | 把停电对慢病治疗、医疗设备和药物温控的影响纳入生命支持接口 | 不提供药物可用性判断、冷藏时间、剂量、设备接线、备用电或处方替代建议 |
+| [Emergency Financial Document Cash Readiness Continuity](domains/emergency-financial-document-cash-readiness-continuity/README.md) | 应急文件、现金、账户、保单、身份凭据和灾后申请材料 | 把灾后资源恢复建模为身份、资产、保险、现金和申请资料的制度接口 | 不提供个人财务、现金、保险、税务、法律、理赔、文件保存或身份恢复建议 |
+| [Disability Access Functional Needs Personal Preparedness Continuity](domains/disability-access-functional-needs-personal-preparedness-continuity/README.md) | 残障、辅助技术、功能需求、照护、交通、服务动物和支持网络 | 把通用准备方案中的隐含身体能力假设显式转化为公平应急条件 | 不提供残障评估、照护计划、设备选择、交通安排、福利申请、法律或登记建议 |
+| [Older Adult Caregiver Disaster Preparedness Continuity](domains/older-adult-caregiver-disaster-preparedness-continuity/README.md) | 老年人、照护者、慢病、药物、助行、交通、独居和温控风险 | 把晚年灾害风险建模为慢病、行动、认知、照护依赖和社会连接的叠加 | 不提供老年照护计划、撤离、用药、医疗、福利、机构选择、法律代理或家庭安全建议 |
 | [Personal Safety Violence Prevention](domains/personal-safety-violence-prevention/README.md) | 亲密伴侣暴力、性暴力、跟踪、犯罪伤害、求助入口和受害者支持 | 人身安全、创伤支持、法律保护、住房安全和恢复连续性 | 不提供自卫战术、武器、报复、跟踪、监控、定位或危险对抗建议 |
 | [Domestic Violence Coercive Control Safety Continuity](domains/domestic-violence-coercive-control-safety-continuity/README.md) | 亲密伴侣暴力、家庭暴力、胁迫控制、经济虐待、技术辅助控制和服务转介 | 把关系内部暴力从隐性控制转化为可求助、可保密、可恢复的安全基础设施 | 不提供个案安全计划、逃离路线、庇护所定位、法律策略、监控、报复或危险对抗建议 |
 | [Sexual Assault Forensic Exam Advocacy Continuity](domains/sexual-assault-forensic-exam-advocacy-continuity/README.md) | 性暴力、医疗 forensic exam、SANE/SAFE、advocacy、报告选项、保密和创伤支持 | 把性暴力后的身体照护、证据时效、权利告知和心理恢复纳入连续性接口 | 不提供医疗建议、证据策略、报警策略、诉讼策略、校园投诉策略或个案安全计划 |
@@ -2175,5 +2195,6 @@ flowchart LR
 - 2026-07-01：新增第九十五波 10 个皮肤屏障、伤口、压力损伤与皮肤病执行连续性域，覆盖压力损伤预防、慢性伤口、伤口感染/蜂窝织炎、糖尿病足、烧伤后创面、手术切口/SSI、潮湿相关皮炎、湿疹瘙痒睡眠、银屑病系统负担和皮肤护理用品连续性。
 - 2026-07-01：新增第九十六波 10 个居家伤害预防与家庭安全执行连续性域，覆盖浴室洗澡如厕转移、楼梯台阶扶手门槛、夜间路径照明、卧室床转移夹陷、烟雾报警家庭逃生、一氧化碳报警燃烧设备、家具/电视倾倒锚固、家庭毒物储存儿童防护包装、窗饰拉绳勒颈和热水烫伤预防。
 - 2026-07-01：新增第九十七波 10 个儿童、运动与娱乐伤害预防执行连续性域，覆盖溺水水域安全、泳池/水疗池屏障与排水夹陷、船艇救生衣、儿童乘员约束、轮式运动头部伤害、游乐场表面设备、运动脑震荡返学返赛、婴儿安全睡眠、枪支安全储存和 ATV/OHV 伤害预防。
+- 2026-07-01：新增第九十八波 10 个家庭与个人应急准备执行连续性域，覆盖应急物资包、家庭应急通信团聚、撤离交通避难、就地避险清洁空气房、备用电与发电机安全、应急食水、温控药品/医疗设备停电、应急金融文件现金、残障功能需求个人准备和老年照护者灾害准备。
 
 完整记录见 [CHANGELOG.md](CHANGELOG.md)。

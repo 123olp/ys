@@ -1509,6 +1509,36 @@ domains/
 ├── atv-off-highway-vehicle-injury-prevention-continuity/
 │   ├── AGENTS.md
 │   └── README.md
+├── emergency-supply-kit-go-bag-rotation-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── family-emergency-communication-reunification-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── evacuation-route-transportation-shelter-plan-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── shelter-in-place-clean-air-room-indoor-protection-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── backup-power-battery-generator-safety-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── emergency-food-water-storage-treatment-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── refrigerated-medication-medical-device-power-outage-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── emergency-financial-document-cash-readiness-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── disability-access-functional-needs-personal-preparedness-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── older-adult-caregiver-disaster-preparedness-continuity/
+│   ├── AGENTS.md
+│   └── README.md
 ├── sleep-disordered-breathing-screening-treatment-continuity/
 │   ├── AGENTS.md
 │   └── README.md
@@ -2168,6 +2198,7 @@ domains/
 - `hypertension-detection-control-continuity/`、`lipid-atherosclerosis-risk-management-continuity/`、`prediabetes-diabetes-prevention-continuity/`、`obesity-adiposity-metabolic-risk-continuity/`、`tobacco-nicotine-cessation-continuity/`、`alcohol-use-risk-reduction-continuity/`、`chronic-kidney-disease-screening-progression-continuity/`、`cancer-screening-early-detection-continuity/`、`osteoporosis-fracture-prevention-bone-health-continuity/` 和 `fall-risk-prevention-home-safety-continuity/` 负责把急症和失能之前的上游预防执行层拆成高血压检测控制、血脂/ASCVD、糖尿病前期、肥胖代谢风险、烟草、酒精、CKD、癌筛、骨健康和跌倒预防这些可独立审查的风险因子连续性条件。
 - `bathroom-bathing-toileting-transfer-fall-safety-continuity/`、`stairs-steps-handrail-threshold-fall-safety-continuity/`、`home-lighting-nighttime-pathway-visibility-continuity/`、`bedroom-bed-transfer-entrapment-safety-continuity/`、`smoke-alarm-home-fire-escape-readiness-continuity/`、`carbon-monoxide-alarm-combustion-appliance-safety-continuity/`、`furniture-tv-tip-over-anchoring-child-safety-continuity/`、`household-poison-storage-child-resistant-packaging-continuity/`、`window-covering-cord-strangulation-child-safety-continuity/` 和 `hot-water-scald-burn-prevention-continuity/` 负责把跌倒/家居安全总域拆成浴室、楼梯、夜间路径、卧室转移、火灾、CO、家具倾倒、毒物储存、窗饰拉绳和热水烫伤这些家庭伤害执行层。
 - `drowning-water-safety-supervision-continuity/`、`pool-spa-barrier-drain-entrapment-safety-continuity/`、`boating-life-jacket-watercraft-safety-continuity/`、`child-passenger-safety-car-seat-restraint-continuity/`、`bicycle-helmet-wheeled-sports-head-injury-prevention-continuity/`、`playground-surface-equipment-fall-injury-prevention-continuity/`、`sports-concussion-return-to-play-protocol-continuity/`、`infant-safe-sleep-suid-risk-reduction-continuity/`、`firearm-safe-storage-injury-prevention-continuity/` 和 `atv-off-highway-vehicle-injury-prevention-continuity/` 负责把儿童、运动与娱乐伤害预防拆成溺水、泳池/水疗池屏障、船艇、儿童乘员、轮式运动、游乐场、运动脑震荡、婴儿安全睡眠、枪支安全储存和 ATV/OHV 这些可独立审查的急性伤害窗口。
+- `emergency-supply-kit-go-bag-rotation-continuity/`、`family-emergency-communication-reunification-continuity/`、`evacuation-route-transportation-shelter-plan-continuity/`、`shelter-in-place-clean-air-room-indoor-protection-continuity/`、`backup-power-battery-generator-safety-continuity/`、`emergency-food-water-storage-treatment-continuity/`、`refrigerated-medication-medical-device-power-outage-continuity/`、`emergency-financial-document-cash-readiness-continuity/`、`disability-access-functional-needs-personal-preparedness-continuity/` 和 `older-adult-caregiver-disaster-preparedness-continuity/` 负责把家庭与个人应急准备拆成物资包、通信团聚、撤离交通避难、就地避险、备用电、应急食水、药物设备停电、金融文件、功能需求和老年照护者准备这些可独立审查的灾害前置执行条件。
 - `breast-cancer-screening-treatment-survivorship-continuity/`、`colorectal-cancer-screening-treatment-continuity/`、`lung-cancer-screening-treatment-continuity/`、`prostate-cancer-screening-treatment-continuity/`、`cervical-cancer-hpv-prevention-screening-continuity/`、`ovarian-cancer-symptom-detection-treatment-continuity/`、`pancreatic-cancer-high-risk-detection-treatment-continuity/`、`liver-cancer-cirrhosis-surveillance-treatment-continuity/`、`childhood-cancer-treatment-survivorship-continuity/` 和 `cancer-survivorship-late-effects-continuity/` 负责把器官/阶段特异癌症连续性拆成筛查路径、异常闭环、治疗负担、复发监测、晚期效应、家庭/工作/照护和幸存者生活质量这些可独立审查的癌症持续性条件。
 - `sleep-disordered-breathing-screening-treatment-continuity/`、`chronic-insomnia-cbti-access-continuity/`、`sexual-health-sti-prevention-continuity/`、`hiv-testing-prep-prevention-continuity/`、`chronic-viral-hepatitis-screening-liver-protection-continuity/`、`contraception-family-planning-access-continuity/`、`menstrual-health-cycle-literacy-continuity/`、`perimenopause-menopause-midlife-health-continuity/`、`pelvic-floor-continence-function-continuity/` 和 `skin-cancer-uv-protection-early-detection-continuity/` 负责把生活史预防与功能连续性拆成睡眠呼吸障碍、慢性失眠、性健康/STI、HIV、病毒性肝炎、避孕家庭计划、月经健康、更年期、盆底控尿控便和 UV/皮肤癌预防这些可独立审查的恢复、身体自主、感染风险和功能参与条件。
 - `chronic-pain-functional-restoration-continuity/`、`low-back-pain-spine-function-continuity/`、`osteoarthritis-joint-function-continuity/`、`autoimmune-rheumatic-disease-inflammatory-burden-continuity/`、`inflammatory-bowel-disease-digestive-continuity/`、`chronic-liver-disease-masld-mash-continuity/`、`thyroid-disease-endocrine-function-continuity/`、`iron-deficiency-anemia-oxygen-carrying-continuity/`、`asthma-copd-maintenance-control-continuity/` 和 `allergic-atopic-disease-immunologic-burden-continuity/` 负责把慢性专科负担与功能恢复拆成疼痛、脊柱、关节、免疫炎症、消化、肝脏、甲状腺、贫血、慢性气道和过敏/特应性疾病这些可独立审查的有效时间损耗和病程连续性条件。
@@ -2296,6 +2327,7 @@ domains/
 - `hypertension-detection-control-continuity/`、`lipid-atherosclerosis-risk-management-continuity/`、`prediabetes-diabetes-prevention-continuity/`、`obesity-adiposity-metabolic-risk-continuity/`、`tobacco-nicotine-cessation-continuity/`、`alcohol-use-risk-reduction-continuity/`、`chronic-kidney-disease-screening-progression-continuity/`、`cancer-screening-early-detection-continuity/`、`osteoporosis-fracture-prevention-bone-health-continuity/` 和 `fall-risk-prevention-home-safety-continuity/` 负责预防筛查与风险因子控制的证据边界，不提供血压、血脂、血糖/A1c、BMI/体脂、烟草/酒精、肾功能、癌筛、骨密度或跌倒风险的个体判断、用药、处方、戒断、饮食、运动、检查频率、设备、家庭处理、保险或医疗建议。
 - `bathroom-bathing-toileting-transfer-fall-safety-continuity/`、`stairs-steps-handrail-threshold-fall-safety-continuity/`、`home-lighting-nighttime-pathway-visibility-continuity/`、`bedroom-bed-transfer-entrapment-safety-continuity/`、`smoke-alarm-home-fire-escape-readiness-continuity/`、`carbon-monoxide-alarm-combustion-appliance-safety-continuity/`、`furniture-tv-tip-over-anchoring-child-safety-continuity/`、`household-poison-storage-child-resistant-packaging-continuity/`、`window-covering-cord-strangulation-child-safety-continuity/` 和 `hot-water-scald-burn-prevention-continuity/` 负责居家伤害预防与家庭安全执行层的证据边界，不提供施工、安装、产品推荐、家庭改造、急救、儿童监控、保险、法律、现场处置或个体安全建议。
 - `drowning-water-safety-supervision-continuity/`、`pool-spa-barrier-drain-entrapment-safety-continuity/`、`boating-life-jacket-watercraft-safety-continuity/`、`child-passenger-safety-car-seat-restraint-continuity/`、`bicycle-helmet-wheeled-sports-head-injury-prevention-continuity/`、`playground-surface-equipment-fall-injury-prevention-continuity/`、`sports-concussion-return-to-play-protocol-continuity/`、`infant-safe-sleep-suid-risk-reduction-continuity/`、`firearm-safe-storage-injury-prevention-continuity/` 和 `atv-off-highway-vehicle-injury-prevention-continuity/` 负责儿童、运动与娱乐伤害预防执行层的证据边界，不提供游泳/救援/复苏、泳池施工、船艇驾驶、座椅安装、骑行路线、游乐场检查、返赛许可、婴儿睡眠安排、枪支操作/储存步骤、ATV 驾驶、产品、法律、保险、医疗或个体安全建议。
+- `emergency-supply-kit-go-bag-rotation-continuity/`、`family-emergency-communication-reunification-continuity/`、`evacuation-route-transportation-shelter-plan-continuity/`、`shelter-in-place-clean-air-room-indoor-protection-continuity/`、`backup-power-battery-generator-safety-continuity/`、`emergency-food-water-storage-treatment-continuity/`、`refrigerated-medication-medical-device-power-outage-continuity/`、`emergency-financial-document-cash-readiness-continuity/`、`disability-access-functional-needs-personal-preparedness-continuity/` 和 `older-adult-caregiver-disaster-preparedness-continuity/` 负责家庭与个人应急准备执行层的证据边界，不提供个人物资清单、撤离路线、实时灾害指挥、房屋密封、电气/发电机操作、食品水处理、药物判断、医疗设备备用、财务法律、残障登记、老年照护计划或个体现场行动建议。
 - `urinary-tract-infection-pyelonephritis-urosepsis-continuity/`、`catheter-associated-uti-device-infection-continuity/`、`urinary-retention-bladder-emptying-continuity/`、`overactive-bladder-nocturia-sleep-continuity/`、`kidney-stone-obstruction-renal-colic-continuity/`、`benign-prostatic-hyperplasia-luts-continuity/`、`urinary-diversion-urostomy-supplies-continuity/`、`dialysis-access-vascular-peritoneal-continuity/`、`home-dialysis-supply-self-management-continuity/` 和 `kidney-transplant-immunosuppression-graft-continuity/` 负责泌尿与肾脏替代执行层的证据边界，不提供尿检/实验室解释、抗生素、导尿/拔管/护理、排尿训练、止痛/排石、BPH 用药/手术、造口护理/产品、透析通路/参数/操作、家庭透析故障处理、移植资格/免疫抑制用药、急诊分诊、保险申诉或个体医疗建议。
 - `breast-cancer-screening-treatment-survivorship-continuity/`、`colorectal-cancer-screening-treatment-continuity/`、`lung-cancer-screening-treatment-continuity/`、`prostate-cancer-screening-treatment-continuity/`、`cervical-cancer-hpv-prevention-screening-continuity/`、`ovarian-cancer-symptom-detection-treatment-continuity/`、`pancreatic-cancer-high-risk-detection-treatment-continuity/`、`liver-cancer-cirrhosis-surveillance-treatment-continuity/`、`childhood-cancer-treatment-survivorship-continuity/` 和 `cancer-survivorship-late-effects-continuity/` 负责器官/阶段特异癌症连续性的证据边界，不提供乳腺、结直肠、肺、前列腺、宫颈、卵巢、胰腺、肝、儿童癌症或幸存者的个体诊断、影像/病理/标志物判读、筛查频率、遗传风险、治疗方案、用药、手术、随访、保险、工作证明或预后建议。
 - `sleep-disordered-breathing-screening-treatment-continuity/`、`chronic-insomnia-cbti-access-continuity/`、`sexual-health-sti-prevention-continuity/`、`hiv-testing-prep-prevention-continuity/`、`chronic-viral-hepatitis-screening-liver-protection-continuity/`、`contraception-family-planning-access-continuity/`、`menstrual-health-cycle-literacy-continuity/`、`perimenopause-menopause-midlife-health-continuity/`、`pelvic-floor-continence-function-continuity/` 和 `skin-cancer-uv-protection-early-detection-continuity/` 负责生活史预防与功能连续性的证据边界，不提供睡眠报告判读、CBT-I 操作、STI/HIV/肝炎检测解释、PrEP/PEP/ART、避孕选择、周期判读、激素治疗、盆底训练、皮损照片判断、防晒产品、用药、检查频率、保险、法律或个体医疗建议。

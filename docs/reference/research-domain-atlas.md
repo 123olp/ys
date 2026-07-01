@@ -589,6 +589,16 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 婴儿安全睡眠是早期生命代理条件 | `infant-safe-sleep-suid-risk-reduction-continuity/` | 婴儿睡眠环境、SUID/SIDS、照护者信息、产后支持 | 婴儿不能主动管理环境，睡眠环境和照护执行决定其是否安全进入未来 |
 | 枪支安全储存是高致死工具可及性治理 | `firearm-safe-storage-injury-prevention-continuity/` | 安全储存、儿童接触、自伤窗口、家庭暴力风险 | 高致死工具的即时可及性会把冲动、误触和冲突转化为不可逆死亡 |
 | ATV/OHV 是边缘移动高能伤害窗口 | `atv-off-highway-vehicle-injury-prevention-continuity/` | ATV/OHV、翻覆、头部伤害、地形、救援断点 | 越野车辆把速度、地形、儿童判断和救援距离叠加为高能机械风险 |
+| 应急物资包决定灾害早期自持窗口 | `emergency-supply-kit-go-bag-rotation-continuity/` | 应急包、撤离包、轮换、可取用性、过期失效 | 公共服务中断初期，水食、照明、卫生、药品和通信输入决定主体是否仍能行动 |
+| 家庭通信团聚保护关系执行链 | `family-emergency-communication-reunification-continuity/` | 联系人、团聚点、学校接送、照护交接、信息备份 | 灾害失联会把照护责任、关系系统和决策同步同时打断 |
+| 撤离是从危险空间到恢复空间的转移 | `evacuation-route-transportation-shelter-plan-continuity/` | 撤离路线、交通、燃料、避难点、无障碍 | 知道危险不等于能退出，路线、交通和避难承接决定退出是否可执行 |
+| 就地避险把室内空间转成临时保护环境 | `shelter-in-place-clean-air-room-indoor-protection-continuity/` | 清洁空气房、过滤、密闭、污染暴露、等待窗口 | 撤离不可行时，室内空气和空间边界决定主体能否安全等待 |
+| 备用电是供能收益和安全风险的组合 | `backup-power-battery-generator-safety-continuity/` | 电池、发电机、充电、关键设备、CO、火灾 | 供电冗余能维持通信和医疗设备，也可能引入 CO、火灾和触电风险 |
+| 应急食水是灾害中的生理维护底盘 | `emergency-food-water-storage-treatment-continuity/` | 饮用水、食品储备、水处理、冷藏失效、卫生 | 水分、能量、卫生和安全摄入决定身体维护是否能跨过服务中断期 |
+| 停电会放大温控药品和医疗设备依赖 | `refrigerated-medication-medical-device-power-outage-continuity/` | 温控药物、医疗设备、供电、处方资料、供应联络 | 冷链、设备、处方和临床联络任一断裂都会把慢病转化为急性风险 |
+| 金融文件把灾害损失转译为恢复流程 | `emergency-financial-document-cash-readiness-continuity/` | 身份文件、保单、现金、账户、资产记录 | 缺少凭据、现金和材料会让理赔、购药、入住和救济申请延迟或失败 |
+| 功能需求准备暴露通用方案的隐含能力假设 | `disability-access-functional-needs-personal-preparedness-continuity/` | 无障碍通信、辅助技术、照护、交通、服务动物 | 通用应急准备若默认主体能听见、看见、行走和自管，就会制造排除 |
+| 老年灾害风险是慢病、行动和照护依赖叠加 | `older-adult-caregiver-disaster-preparedness-continuity/` | 老年人、照护者、药物、助行、独居、温控 | 晚年主体更容易被停电、热冷暴露、失联、跌倒和服务中断放大风险 |
 | 睡眠呼吸障碍可避免夜间恢复失败 | `sleep-disordered-breathing-screening-treatment-continuity/` | 睡眠呼吸障碍、夜间低氧、诊断转介、治疗坚持、设备可及 | 夜间低氧、觉醒碎片、日间嗜睡和心血管负荷持续消耗有效时间、判断和恢复能力 |
 | 慢性失眠可通过可及治疗保护恢复 | `chronic-insomnia-cbti-access-continuity/` | 慢性失眠、CBT-I 可及、行为治疗、药物风险、复发预防 | 恢复失败、用药风险、情绪波动和日间功能损害降低单位时间行动质量 |
 | 性健康服务可保护关系和公共卫生屏障 | `sexual-health-sti-prevention-continuity/` | STI 预防、检测、治疗转介、伴侣服务、隐私、污名 | 无症状感染、污名、医疗回避和伴侣服务断裂改变生殖健康、关系安全和传播风险 |
@@ -1324,6 +1334,16 @@ risk-engineering
   -> infant-safe-sleep-suid-risk-reduction-continuity
   -> firearm-safe-storage-injury-prevention-continuity
   -> atv-off-highway-vehicle-injury-prevention-continuity
+  -> emergency-supply-kit-go-bag-rotation-continuity
+  -> family-emergency-communication-reunification-continuity
+  -> evacuation-route-transportation-shelter-plan-continuity
+  -> shelter-in-place-clean-air-room-indoor-protection-continuity
+  -> backup-power-battery-generator-safety-continuity
+  -> emergency-food-water-storage-treatment-continuity
+  -> refrigerated-medication-medical-device-power-outage-continuity
+  -> emergency-financial-document-cash-readiness-continuity
+  -> disability-access-functional-needs-personal-preparedness-continuity
+  -> older-adult-caregiver-disaster-preparedness-continuity
   -> sleep-disordered-breathing-screening-treatment-continuity
   -> chronic-insomnia-cbti-access-continuity
   -> sexual-health-sti-prevention-continuity

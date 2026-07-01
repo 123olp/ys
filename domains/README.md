@@ -702,6 +702,16 @@
 - `infant-safe-sleep-suid-risk-reduction-continuity/`：婴儿安全睡眠与 SUID 风险降低连续性，整理睡眠环境、照护信息、产后支持和早期生命安全。
 - `firearm-safe-storage-injury-prevention-continuity/`：枪支安全储存与伤害预防连续性，整理高致死工具可及性、儿童接触、自伤窗口、家庭暴力风险和公共卫生证据边界。
 - `atv-off-highway-vehicle-injury-prevention-continuity/`：ATV/OHV 越野车辆伤害预防连续性，整理翻覆、头部伤害、儿童/青少年使用、地形和救援断点。
+- `emergency-supply-kit-go-bag-rotation-continuity/`：应急物资包、撤离包与轮换连续性，整理灾害早期水食、照明、卫生、药品、通信和过期失效变量。
+- `family-emergency-communication-reunification-continuity/`：家庭应急通信与团聚连续性，整理联系人、异地联系人、团聚点、学校/照护交接和信息备份。
+- `evacuation-route-transportation-shelter-plan-continuity/`：撤离路线、交通与避难计划连续性，整理路线、交通、燃料、避难点、无障碍和返回条件。
+- `shelter-in-place-clean-air-room-indoor-protection-continuity/`：就地避险、清洁空气房与室内保护连续性，整理室内空气、过滤、密闭、烟雾/污染和等待窗口。
+- `backup-power-battery-generator-safety-continuity/`：备用电、电池与发电机安全连续性，整理停电、充电、关键设备、CO、火灾、触电和燃料风险。
+- `emergency-food-water-storage-treatment-continuity/`：应急食物、水储存与处理连续性，整理灾害中的饮用水、食品安全、冷藏失效、特殊饮食和卫生。
+- `refrigerated-medication-medical-device-power-outage-continuity/`：温控药品、医疗设备与停电连续性，整理冷链中断、居家医疗设备、处方资料和供电依赖。
+- `emergency-financial-document-cash-readiness-continuity/`：应急金融文件、现金与恢复资料连续性，整理身份凭据、保单、账户、现金、资产记录和灾后申请。
+- `disability-access-functional-needs-personal-preparedness-continuity/`：残障、无障碍与功能需求个人准备连续性，整理通信、辅助技术、照护、交通、服务动物和支持网络。
+- `older-adult-caregiver-disaster-preparedness-continuity/`：老年人与照护者灾害准备连续性，整理慢病、药物、助行、照护者、独居、交通和温控风险。
 - `sleep-disordered-breathing-screening-treatment-continuity/`：睡眠呼吸障碍筛查与治疗连续性，整理夜间低氧、诊断转介、治疗坚持、设备可及和日间功能风险。
 - `chronic-insomnia-cbti-access-continuity/`：慢性失眠与 CBT-I 可及连续性，整理恢复失败、行为治疗可及、药物风险、日间功能和复发预防。
 - `sexual-health-sti-prevention-continuity/`：性健康与 STI 预防连续性，整理检测、治疗转介、伴侣服务、隐私、污名和公共卫生屏障。
