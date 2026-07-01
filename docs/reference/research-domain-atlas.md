@@ -481,6 +481,12 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 失禁耗材必须保护尊严和皮肤边界 | `incontinence-absorbent-product-supply-dignity-continuity/` | 吸收用品、供应、皮肤风险、隐私、外出半径 | 失禁用品断供会把控尿控便困难放大为皮肤损伤、隔离、照护负担和尊严损失 |
 | 足部卸载必须保护移动能力 | `diabetic-therapeutic-footwear-offloading-continuity/` | 糖尿病治疗鞋、鞋垫、卸载、足部保护、替换供应 | 治疗鞋或卸载失败会把步行需求转成溃疡、感染、截肢风险和长期移动损失 |
 | 压迫用品必须可持续执行 | `compression-garment-lymphedema-venous-continuity/` | 压迫用品、淋巴水肿、静脉回流、穿戴负担、替换供应 | 压迫用品不可得、不可穿或不可替换会让肿胀、疼痛、皮肤风险和功能参与恶化 |
+| 眼镜必须可修可替换 | `eyeglasses-prescription-repair-replacement-continuity/` | 眼镜、处方更新、备用、修理、替换等待 | 眼镜损坏、丢失或无法替换会立刻压缩阅读、导航、屏幕、交通和公共服务任务 |
+| 轮椅代步设备必须持续运行 | `wheelchair-scooter-battery-repair-access-continuity/` | 轮椅、代步车、电池、充电器、维修、备件、运输适配 | 断电、损坏或维修等待会把行动限制放大为医疗、工作、教育和撤离不可达 |
+| 低技术助行器必须适配可维护 | `walker-cane-crutch-fit-maintenance-continuity/` | 手杖、拐杖、助行器、脚垫、刹车、磨损替换 | 尺寸失配、磨损或刹车失效会把辅助工具反转成跌倒、康复延迟和参与减少 |
+| 假肢矫形必须保持身体工具耦合 | `prosthetic-limb-orthotic-fit-repair-continuity/` | 假肢、矫形器、socket、支具、皮肤接口、维修替换 | 不适配、皮肤损伤、疼痛或维修等待会同时侵蚀移动、工作、身份和尊严 |
+| PAP 设备必须支撑夜间恢复 | `cpap-pap-device-mask-supply-power-continuity/` | CPAP/BiPAP/PAP、面罩、管路、滤芯、供电、召回、供应商 | 面罩、耗材、供电或召回断点会把可治疗睡眠风险重新转成日间疲劳和安全风险 |
+| 跌倒后求助链必须可运行 | `fall-detection-emergency-response-device-continuity/` | 跌倒检测、紧急按钮、传感器、充电、网络、通知、响应 | 佩戴、供电、连接、误报漏报或通知失败会让可救助事件变成长时间无人发现 |
 | 家庭卫生必须可治理 | `household-cleaning-disinfection-pest-control-continuity/` | 清洁、消毒、化学品安全、害虫控制、室内卫生 | 清洁不足、化学误用或害虫暴露会制造感染、过敏、毒性和居住压力 |
 | 邮件包裹必须可接收 | `postal-parcel-delivery-pickup-continuity/` | 邮件、包裹、签收、自提、追踪、地址同步 | 文件、药品、设备、账单或身份材料收不到会切断远程服务和物理资源交付 |
 | 家庭故障必须可被可信维修 | `household-maintenance-repair-contractor-continuity/` | 维修请求、承包商、报价、许可、投诉、维修记录 | 维修延误、诈骗、无证服务或记录缺失会让住房、设备、水电、卫生和安全持续恶化 |
@@ -1214,6 +1220,12 @@ risk-engineering
   -> incontinence-absorbent-product-supply-dignity-continuity
   -> diabetic-therapeutic-footwear-offloading-continuity
   -> compression-garment-lymphedema-venous-continuity
+  -> eyeglasses-prescription-repair-replacement-continuity
+  -> wheelchair-scooter-battery-repair-access-continuity
+  -> walker-cane-crutch-fit-maintenance-continuity
+  -> prosthetic-limb-orthotic-fit-repair-continuity
+  -> cpap-pap-device-mask-supply-power-continuity
+  -> fall-detection-emergency-response-device-continuity
   -> household-cleaning-disinfection-pest-control-continuity
   -> postal-parcel-delivery-pickup-continuity
   -> household-maintenance-repair-contractor-continuity

@@ -119,6 +119,7 @@ docs/
 │   ├── 0108-add-one-hundred-third-wave-vector-animal-pest-exposure-execution-domains.md
 │   ├── 0109-add-one-hundred-fourth-wave-plant-algae-fungi-outdoor-biological-exposure-domains.md
 │   ├── 0110-add-one-hundred-fifth-wave-personal-device-consumable-continuity-domains.md
+│   ├── 0111-add-one-hundred-sixth-wave-assistive-device-operational-continuity-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -288,6 +289,7 @@ docs/
 - `domains/mosquito-bite-arbovirus-prevention-continuity/`、`domains/tick-bite-lyme-rickettsial-prevention-continuity/`、`domains/rabies-exposure-bite-pep-continuity/`、`domains/dog-bite-community-injury-prevention-continuity/`、`domains/rodent-infestation-hantavirus-plague-continuity/`、`domains/bed-bug-infestation-sleep-housing-continuity/`、`domains/venomous-bites-stings-envenomation-continuity/`、`domains/reptile-amphibian-backyard-poultry-salmonella-continuity/`、`domains/lice-scabies-school-shelter-infestation-continuity/` 和 `domains/pesticide-label-exposure-poison-control-continuity/`：第一百零三波正式研究域，分别承载蚊虫叮咬、蜱虫叮咬、狂犬病暴露、犬咬伤、鼠害、床虱、毒咬蜇伤、爬宠家禽沙门氏菌、虱疥和农药标签中毒连接连续性。
 - `domains/pollen-allergen-asthma-outdoor-activity-continuity/`、`domains/poison-ivy-oak-sumac-urushiol-exposure-continuity/`、`domains/harmful-algal-bloom-cyanotoxin-water-recreation-continuity/`、`domains/toxic-mushroom-foraging-poisoning-continuity/`、`domains/poisonous-plant-childcare-household-exposure-continuity/`、`domains/invasive-species-human-health-access-continuity/`、`domains/mycotoxin-food-crop-storage-safety-continuity/`、`domains/recreational-water-illness-beach-lake-access-continuity/`、`domains/shellfish-biotoxin-harmful-algal-bloom-food-continuity/` 和 `domains/landscaping-horticulture-worker-equipment-injury-continuity/`：第一百零四波正式研究域，分别承载花粉过敏哮喘、漆酚植物、有害藻华蓝藻毒素、野生蘑菇、有毒植物、入侵物种、霉菌毒素、休闲水病原、贝类毒素和园林园艺户外工伤连续性。
 - `domains/contact-lens-hygiene-eye-infection-continuity/`、`domains/hearing-aid-maintenance-battery-access-continuity/`、`domains/menstrual-product-access-safety-continuity/`、`domains/incontinence-absorbent-product-supply-dignity-continuity/`、`domains/diabetic-therapeutic-footwear-offloading-continuity/` 和 `domains/compression-garment-lymphedema-venous-continuity/`：第一百零五波正式研究域，分别承载隐形眼镜卫生、助听设备维护、月经用品、失禁吸收用品、糖尿病治疗鞋/卸载和压迫用品这些贴身设备与耗材执行连续性。
+- `domains/eyeglasses-prescription-repair-replacement-continuity/`、`domains/wheelchair-scooter-battery-repair-access-continuity/`、`domains/walker-cane-crutch-fit-maintenance-continuity/`、`domains/prosthetic-limb-orthotic-fit-repair-continuity/`、`domains/cpap-pap-device-mask-supply-power-continuity/` 和 `domains/fall-detection-emergency-response-device-continuity/`：第一百零六波正式研究域，分别承载眼镜修理替换、轮椅/代步车电池维修、助行器具维护、假肢矫形适配维修、PAP 设备耗材供电和跌倒检测响应设备这些个人辅助设备运行连续性。
 - `reference/research-model-visualization-toolkit.md`：沉淀科研论文阅读、文献脊梁、模型工具、可视化标准和 Human Infra 定量页面实现路线。
 - `reference/source-card-system.md`：定义论文、书籍、工具、案例、标准和数据集进入项目之前的资料卡片制度。
 - `reference/domain-map.md`：定义根项目与子域的边界、迁移切片、主动不做和验证点。

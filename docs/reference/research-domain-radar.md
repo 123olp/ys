@@ -758,6 +758,12 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `incontinence-absorbent-product-supply-dignity-continuity/` | 失禁吸收用品供应、隐私和皮肤风险决定控尿控便困难是否会转成隔离、羞辱和照护负担 |
 | `diabetic-therapeutic-footwear-offloading-continuity/` | 糖尿病治疗鞋、鞋垫和卸载供应决定足部压力管理是否能保护步行能力并降低溃疡感染风险 |
 | `compression-garment-lymphedema-venous-continuity/` | 压迫用品供应、穿戴负担和替换连续性决定淋巴水肿/静脉相关肿胀是否会持续侵蚀功能参与 |
+| `eyeglasses-prescription-repair-replacement-continuity/` | 眼镜损坏、丢失、处方更新和替换等待决定低成本视觉带宽是否会在阅读、导航、屏幕和公共服务任务中断裂 |
+| `wheelchair-scooter-battery-repair-access-continuity/` | 轮椅和代步车的电池、充电器、维修、备件和运输适配决定行动限制是否会放大为医疗、教育、工作和撤离不可达 |
+| `walker-cane-crutch-fit-maintenance-continuity/` | 手杖、拐杖和助行器的尺寸、脚垫、刹车和磨损维护决定低技术辅助是否保护移动，还是反向制造跌倒和康复延迟 |
+| `prosthetic-limb-orthotic-fit-repair-continuity/` | 假肢和矫形器的适配、皮肤接口、疼痛、维修和替换等待决定身体-工具耦合是否能持续支持移动、工作和尊严 |
+| `cpap-pap-device-mask-supply-power-continuity/` | PAP 设备、面罩、管路、滤芯、供电、召回和供应商响应决定夜间呼吸治疗是否能稳定转化为日间恢复能力 |
+| `fall-detection-emergency-response-device-continuity/` | 跌倒检测、紧急按钮、传感器、充电、连接、通知和响应链决定跌倒后事件是否会被发现、转交和接住 |
 | `household-cleaning-disinfection-pest-control-continuity/` | 家庭清洁、消毒和害虫控制决定居住空间是否在感染、过敏、毒性和虫害暴露中保持可恢复 |
 | `postal-parcel-delivery-pickup-continuity/` | 邮件、包裹、签收、自提和地址同步决定证件、药品、设备、账单和关键物资能否从外部系统抵达主体 |
 | `household-maintenance-repair-contractor-continuity/` | 家庭维修、承包商、报价、许可、投诉和记录决定住房、设备、水电、卫生和安全故障能否被可信修复 |
@@ -2326,6 +2332,15 @@ Source links:
 - https://www.cancer.gov/about-cancer/treatment/side-effects/lymphedema
 - https://www.medicare.gov/coverage/lymphedema-compression-treatment-items
 - https://medlineplus.gov/lymphedema.html
+- https://medlineplus.gov/refractiveerrors.html
+- https://www.medicare.gov/coverage/wheelchairs-scooters
+- https://medlineplus.gov/mobilityaids.html
+- https://www.medicare.gov/coverage/prosthetic-devices
+- https://medlineplus.gov/artificiallimbs.html
+- https://www.medicare.gov/coverage/continuous-positive-airway-pressure-devices
+- https://www.cms.gov/training-education/medicare-learning-networkr-mln/compliance/medicare-provider-compliance-tips/cpap-devices-accessories
+- https://www.cdc.gov/falls/about/index.html
+- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpcd/classification.cfm?id=PJO
 
 ## 使用规则
 

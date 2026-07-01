@@ -1684,6 +1684,23 @@ Human Infra 不能被设计成更精密的压榨系统。
 - 不收集、复制、处理或要求验光处方、听力图、设备序列号、月经日志、失禁记录、足部照片、伤口照片、压迫尺寸、医保/保险 ID、供应商订单、家庭地址、支付信息或其他 PHI。
 - 不替代眼科、验光、听力学、妇科、泌尿、足病、淋巴水肿治疗、护理、DME 供应商、Medicare/保险、药房、设备厂商、监管机构或官方申诉渠道。
 
+## 个人辅助设备运行连续性边界
+
+`eyeglasses-prescription-repair-replacement-continuity`、`wheelchair-scooter-battery-repair-access-continuity`、`walker-cane-crutch-fit-maintenance-continuity`、`prosthetic-limb-orthotic-fit-repair-continuity`、`cpap-pap-device-mask-supply-power-continuity` 和 `fall-detection-emergency-response-device-continuity` 关注眼镜、轮椅/代步车、助行器具、假肢矫形、PAP 设备和跌倒检测响应设备如何影响主体视觉、移动、夜间恢复、独立生活、求助链和公共参与，不是验光处方、设备处方、参数调整、康复训练、维修教程、急救分诊或个体购买入口。
+
+可以做：
+
+- 比较个人辅助设备的供电、适配、维修、备件、耗材、供应商响应、通知路由和响应链如何影响视觉、移动、睡眠恢复、独立生活和照护负担。
+- 记录官方来源对设备类别、覆盖边界、公共健康风险、使用失败后果和服务接口的描述。
+- 设计 `device state -> dependency -> task -> continuity outcome` 变量链。
+
+不能做：
+
+- 不提供眼镜处方、镜片选择、轮椅/代步车处方、助行器调节、假肢矫形 socket 调整、PAP 压力参数、清洁步骤、设备维修、安装配置、急救分诊、911 使用策略、产品推荐、医保/保险个案或个体购买建议。
+- 不把跌倒检测替代跌倒预防、照护网络、应急通信或医疗响应。
+- 不收集、复制、处理或要求验光处方、助行设备序列号、假肢/矫形器尺寸、PAP 压力设置、睡眠报告、跌倒日志、家庭地址、紧急联系人、供应商订单、医保/保险 ID、支付信息或其他 PHI。
+- 不替代验光、眼科、康复医学、物理治疗、矫形假肢、睡眠医学、DME 供应商、设备厂商、911/急救、照护者、Medicare/保险、监管机构或官方申诉渠道。
+
 ## 个人移动执行连续性边界
 
 `personal-vehicle-maintenance-recall-repair-continuity`、`fuel-ev-charging-refueling-access-continuity`、`parking-curb-access-towing-impound-continuity`、`walking-bicycling-micromobility-continuity`、`paratransit-nemt-access-continuity`、`taxi-rideshare-demand-response-mobility-continuity`、`transit-fare-payment-toll-account-continuity` 和 `multimodal-trip-planning-real-time-wayfinding-continuity` 关注车辆、补能、停车、主动出行、辅助医疗交通、按需交通、支付账户和实时导向如何把交通服务转化为主体真实到达能力，不是车辆维修、补能操作、交通规避、平台攻击、逃票或个案申诉入口。

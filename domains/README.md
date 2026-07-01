@@ -575,6 +575,12 @@
 - `incontinence-absorbent-product-supply-dignity-continuity/`：失禁吸收用品供应与尊严连续性，整理吸收用品、供应、皮肤风险、隐私、外出半径和照护负担。
 - `diabetic-therapeutic-footwear-offloading-continuity/`：糖尿病治疗鞋与卸载连续性，整理治疗鞋、鞋垫、卸载、足部保护、供应更换和步行连续性。
 - `compression-garment-lymphedema-venous-continuity/`：压迫用品、淋巴水肿与静脉连续性，整理压迫用品、肿胀管理、穿戴负担、供应更换和功能参与。
+- `eyeglasses-prescription-repair-replacement-continuity/`：眼镜处方、修理与替换连续性，整理眼镜、备用、损坏、取件等待、费用和视觉任务断点。
+- `wheelchair-scooter-battery-repair-access-continuity/`：轮椅、代步车、电池与维修可得连续性，整理移动设备、电池充电、备件、供应商和运输适配。
+- `walker-cane-crutch-fit-maintenance-continuity/`：手杖、拐杖与助行器适配维护连续性，整理低技术移动辅助器、磨损替换、刹车脚垫和跌倒参与后果。
+- `prosthetic-limb-orthotic-fit-repair-continuity/`：假肢矫形适配与维修连续性，整理 socket、支具、皮肤接口、替换等待、疼痛和参与身份。
+- `cpap-pap-device-mask-supply-power-continuity/`：CPAP/PAP 设备、面罩、耗材与供电连续性，整理夜间呼吸支持设备、耗材、召回、供电和供应商断点。
+- `fall-detection-emergency-response-device-continuity/`：跌倒检测与紧急响应设备连续性，整理传感器、按钮、佩戴供电、网络通知和救助响应链。
 - `household-cleaning-disinfection-pest-control-continuity/`：家庭清洁、消毒与害虫控制连续性，整理表面清洁、消毒、化学品安全、害虫控制和室内卫生。
 - `postal-parcel-delivery-pickup-continuity/`：邮件、包裹、投递与自提连续性，整理邮件包裹、签收、自提、追踪、地址错配和最后一公里接收。
 - `household-maintenance-repair-contractor-continuity/`：家庭维修、承包商与修复服务连续性，整理维修请求、承包商、报价、许可、记录、投诉和修复恢复。

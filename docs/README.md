@@ -126,6 +126,7 @@ docs/
 │   ├── 0108-add-one-hundred-third-wave-vector-animal-pest-exposure-execution-domains.md
 │   ├── 0109-add-one-hundred-fourth-wave-plant-algae-fungi-outdoor-biological-exposure-domains.md
 │   ├── 0110-add-one-hundred-fifth-wave-personal-device-consumable-continuity-domains.md
+│   ├── 0111-add-one-hundred-sixth-wave-assistive-device-operational-continuity-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -390,6 +391,12 @@ docs/
     - Then read `../domains/incontinence-absorbent-product-supply-dignity-continuity/README.md` for absorbent products, incontinence supply, dignity, privacy, skin risk, or caregiver burden.
     - Then read `../domains/diabetic-therapeutic-footwear-offloading-continuity/README.md` for diabetic therapeutic footwear, inserts, offloading, foot protection, replacement supply, or walking continuity.
     - Then read `../domains/compression-garment-lymphedema-venous-continuity/README.md` for compression garments, lymphedema, venous swelling, wearing burden, replacement supply, or functional participation.
+    - Then read `../domains/eyeglasses-prescription-repair-replacement-continuity/README.md` for eyeglasses, prescription renewal, repair/replacement, backup glasses, pickup delay, or visual task continuity.
+    - Then read `../domains/wheelchair-scooter-battery-repair-access-continuity/README.md` for wheelchairs, scooters, batteries, chargers, repair access, spare parts, supplier response, or transport compatibility.
+    - Then read `../domains/walker-cane-crutch-fit-maintenance-continuity/README.md` for canes, crutches, walkers, rubber tips, brakes, fit, maintenance, replacement, or fall/participation consequences.
+    - Then read `../domains/prosthetic-limb-orthotic-fit-repair-continuity/README.md` for prosthetic limbs, orthotics, sockets, braces, liners, skin interface, repair, replacement, or mobility participation.
+    - Then read `../domains/cpap-pap-device-mask-supply-power-continuity/README.md` for CPAP/BiPAP/PAP devices, masks, tubing, filters, power, recalls, supplier friction, or sleep-recovery continuity.
+    - Then read `../domains/fall-detection-emergency-response-device-continuity/README.md` for fall-detection devices, personal emergency response buttons, sensors, charging, connectivity, notification routing, or response chains.
 183. Read `../domains/advance-care-planning-medical-decision-continuity/README.md` if you are working on advance care planning, advance directives, health care proxy, medical decision continuity, goals of care, or incapacity communication.
 184. Read `../domains/supported-decision-making-guardianship-rights/README.md` if you are working on supported decision-making, guardianship, conservatorship, decision capacity, disability rights, or least restrictive alternatives.
 185. Read `../domains/healthcare-personal-representative-hipaa-access-continuity/README.md` if you are working on HIPAA personal representatives, caregiver access, proxy access, medical records, privacy boundaries, or authorized care coordination.

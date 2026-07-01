@@ -800,6 +800,12 @@ flowchart TD
     H --> IAPSDC[incontinence-absorbent-product-supply-dignity-continuity<br/>失禁用品 / 尊严供应]
     H --> DTFOC[diabetic-therapeutic-footwear-offloading-continuity<br/>糖尿病治疗鞋 / 卸载]
     H --> CGLVC[compression-garment-lymphedema-venous-continuity<br/>压迫用品 / 淋巴静脉]
+    H --> EPRRC[eyeglasses-prescription-repair-replacement-continuity<br/>眼镜 / 修理替换]
+    H --> WSBRAC[wheelchair-scooter-battery-repair-access-continuity<br/>轮椅代步 / 电池维修]
+    H --> WCCFMC[walker-cane-crutch-fit-maintenance-continuity<br/>助行器具 / 适配维护]
+    H --> PLOFRC[prosthetic-limb-orthotic-fit-repair-continuity<br/>假肢矫形 / 适配维修]
+    H --> CPDMSPC[cpap-pap-device-mask-supply-power-continuity<br/>PAP 设备 / 面罩供电]
+    H --> FDERDC[fall-detection-emergency-response-device-continuity<br/>跌倒检测 / 响应设备]
     H --> HCDPCC[household-cleaning-disinfection-pest-control-continuity<br/>家庭清洁 / 消毒害虫控制]
     H --> PPDPC[postal-parcel-delivery-pickup-continuity<br/>邮件包裹 / 投递自提]
     H --> HMRCC[household-maintenance-repair-contractor-continuity<br/>家庭维修 / 承包商服务]
@@ -1233,6 +1239,12 @@ flowchart TD
 | [Incontinence Absorbent Product Supply Dignity Continuity](domains/incontinence-absorbent-product-supply-dignity-continuity/README.md) | 失禁吸收用品、供应、皮肤风险、隐私、外出半径和照护负担 | 把控尿控便困难从羞辱和隔离风险转成可供应、可更换、可参与的执行条件 | 不提供诊断、盆底训练、导尿护理、产品选择、皮肤处理或医保个案建议 |
 | [Diabetic Therapeutic Footwear Offloading Continuity](domains/diabetic-therapeutic-footwear-offloading-continuity/README.md) | 糖尿病治疗鞋、鞋垫、卸载、足部保护、供应更换和步行连续性 | 防止足部压力和鞋履失配把移动能力转成溃疡、感染和截肢风险 | 不提供伤口处理、鞋垫处方、足病诊断、购买推荐或 coverage 个案建议 |
 | [Compression Garment Lymphedema Venous Continuity](domains/compression-garment-lymphedema-venous-continuity/README.md) | 压迫用品、淋巴水肿、静脉回流、穿戴负担、供应更换和功能参与 | 把肿胀管理从一次性治疗转成可维护、可负担、可持续执行的身体接口 | 不提供压迫等级、尺寸测量、治疗方案、穿戴训练、禁忌判断或医保个案建议 |
+| [Eyeglasses Prescription Repair Replacement Continuity](domains/eyeglasses-prescription-repair-replacement-continuity/README.md) | 眼镜、处方更新、镜片/镜架损坏、备用眼镜、修理替换和取件等待 | 让基础视觉带宽持续支撑阅读、导航、屏幕、交通、标签和公共服务任务 | 不提供验光、处方参数、镜片选择、购买推荐、驾驶资格或保险个案建议 |
+| [Wheelchair Scooter Battery Repair Access Continuity](domains/wheelchair-scooter-battery-repair-access-continuity/README.md) | 手动轮椅、电动轮椅、代步车、电池、充电器、维修、备件和运输适配 | 把移动设备作为行动底盘维护，防止断电、损坏和维修等待把主体困住 | 不提供设备处方、坐姿评估、维修改装、购买推荐、保险申诉或 DME 个案判断 |
+| [Walker Cane Crutch Fit Maintenance Continuity](domains/walker-cane-crutch-fit-maintenance-continuity/README.md) | 手杖、拐杖、助行器、脚垫、刹车、调高、磨损替换和使用训练 | 让低技术移动辅助器稳定连接平衡、力量和环境，降低跌倒与参与断点 | 不提供步态诊断、辅助器处方、调节训练、维修教程、购买推荐或个体风险判断 |
+| [Prosthetic Limb Orthotic Fit Repair Continuity](domains/prosthetic-limb-orthotic-fit-repair-continuity/README.md) | 假肢、矫形器、socket、支具、衬垫、皮肤接口、维修替换和支付等待 | 维护身体-工具耦合界面，让移动、工作、疼痛控制、皮肤完整性和身份参与持续 | 不提供处方、socket 调整、康复训练、皮肤处理、品牌推荐、维修或保险申诉 |
+| [CPAP PAP Device Mask Supply Power Continuity](domains/cpap-pap-device-mask-supply-power-continuity/README.md) | CPAP/BiPAP/PAP 设备、面罩、管路、滤芯、供电、召回、耗材和供应商 | 让夜间呼吸支持稳定转化为睡眠恢复、日间警觉、驾驶工作安全和长期风险控制 | 不提供诊断、处方、压力参数、清洁步骤、设备购买、维修、召回个案或保险申诉 |
+| [Fall Detection Emergency Response Device Continuity](domains/fall-detection-emergency-response-device-continuity/README.md) | 跌倒检测、个人紧急响应按钮、传感器、充电、连接、通知路由和 EMS/911 接口 | 把跌倒后无人发现风险转化为可检测、可通知、可响应的求助链 | 不提供设备选购、安装配置、急救指令、医学分诊、911 使用策略或监控方案 |
 | [Household Cleaning Disinfection Pest Control Continuity](domains/household-cleaning-disinfection-pest-control-continuity/README.md) | 表面清洁、消毒、化学品安全、害虫控制、垃圾和室内卫生 | 在感染控制、害虫风险和化学暴露之间建立可治理的家庭卫生边界 | 不提供消毒配方、化学混合、杀虫剂使用、毒物处理、霉菌清除或医疗处置步骤 |
 | [Postal Parcel Delivery Pickup Continuity](domains/postal-parcel-delivery-pickup-continuity/README.md) | 邮件、包裹、投递、自提、签收、追踪、地址同步和最后一公里接收 | 让文件、药品、设备、账单、身份材料和远程交易实物能到达主体 | 不提供邮件拦截、包裹盗取、冒领、地址欺诈、追踪滥用或物流攻击方法 |
 | [Household Maintenance Repair Contractor Continuity](domains/household-maintenance-repair-contractor-continuity/README.md) | 家庭维修、承包商、服务预约、报价、许可、投诉和维修记录 | 让住房和设备故障能被发现、排程、修复和记录 | 不提供 DIY 危险维修、电气燃气施工、合同争议策略、理赔策略或法律意见 |
@@ -2198,6 +2210,12 @@ human_infra/
 │   ├── incontinence-absorbent-product-supply-dignity-continuity/
 │   ├── diabetic-therapeutic-footwear-offloading-continuity/
 │   ├── compression-garment-lymphedema-venous-continuity/
+│   ├── eyeglasses-prescription-repair-replacement-continuity/
+│   ├── wheelchair-scooter-battery-repair-access-continuity/
+│   ├── walker-cane-crutch-fit-maintenance-continuity/
+│   ├── prosthetic-limb-orthotic-fit-repair-continuity/
+│   ├── cpap-pap-device-mask-supply-power-continuity/
+│   ├── fall-detection-emergency-response-device-continuity/
 │   ├── urogenital-continuity/
 │   ├── urinary-tract-infection-pyelonephritis-urosepsis-continuity/
 │   ├── catheter-associated-uti-device-infection-continuity/
@@ -2395,5 +2413,6 @@ flowchart LR
 - 2026-07-01：新增第一百零三波 10 个病媒、动物接触、虫害与农药暴露执行连续性域，覆盖蚊虫叮咬、蜱虫叮咬、狂犬病暴露、犬咬伤、鼠害、床虱、毒咬蜇伤、爬宠/后院家禽沙门氏菌、虱疥和农药标签中毒连接。
 - 2026-07-01：新增第一百零四波 10 个植物、藻类、真菌与户外生物暴露执行连续性域，覆盖花粉过敏/哮喘、漆酚植物、有害藻华/蓝藻毒素、野生蘑菇、有毒植物、入侵物种、霉菌毒素、休闲水病原、贝类毒素和园林园艺户外工伤。
 - 2026-07-01：新增第一百零五波 6 个贴身设备与耗材执行连续性域，覆盖隐形眼镜卫生、助听设备维护、月经用品、失禁吸收用品、糖尿病治疗鞋/卸载和压迫用品。
+- 2026-07-01：新增第一百零六波 6 个个人辅助设备运行连续性域，覆盖眼镜修理替换、轮椅/代步车电池维修、手杖/拐杖/助行器维护、假肢矫形适配维修、PAP 设备耗材供电和跌倒检测紧急响应设备。
 
 完整记录见 [CHANGELOG.md](CHANGELOG.md)。
