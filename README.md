@@ -518,6 +518,16 @@ flowchart TD
     H --> MSTVE[motion-sickness-transport-virtual-environment-tolerance-continuity<br/>运动病 / 虚拟环境耐受]
     H --> VOMCR[vestibular-ototoxicity-medication-chemical-risk-continuity<br/>耳毒性 / 前庭风险]
     H --> SLCC[speech-language-communication-continuity<br/>言语语言 / 沟通连续性]
+    H --> ALARC[aphasia-language-access-recovery-continuity<br/>失语 / 语言恢复]
+    H --> DSIC[dysarthria-speech-intelligibility-continuity<br/>构音障碍 / 可懂度]
+    H --> AOSMP[apraxia-of-speech-motor-planning-continuity<br/>言语失用 / 运动计划]
+    H --> VDPC[voice-disorders-phonation-communication-continuity<br/>嗓音障碍 / 发声沟通]
+    H --> SFPC[stuttering-fluency-participation-continuity<br/>口吃 / 流畅参与]
+    H --> DLDCC[developmental-language-disorder-child-communication-continuity<br/>发展性语言障碍 / 儿童沟通]
+    H --> SSDAP[speech-sound-disorder-articulation-phonology-continuity<br/>语音障碍 / 构音音系]
+    H --> AACA[augmentative-alternative-communication-aac-continuity<br/>AAC / 替代沟通]
+    H --> SCPL[social-communication-pragmatic-language-continuity<br/>社会沟通 / 语用语言]
+    H --> CCDEL[cognitive-communication-disorder-executive-language-continuity<br/>认知沟通 / 执行语言]
     H --> SDAN[swallowing-dysphagia-aspiration-nutrition<br/>吞咽 / 误吸营养]
     H --> STCC[smell-taste-chemosensory-continuity<br/>嗅味觉 / 化学感知]
     H --> PNSC[peripheral-neuropathy-somatosensory-continuity<br/>周围神经 / 躯体感觉]
@@ -885,6 +895,16 @@ flowchart TD
 | [Motion Sickness Transport Virtual Environment Tolerance Continuity](domains/motion-sickness-transport-virtual-environment-tolerance-continuity/README.md) | 运动病、交通耐受、模拟器病、VR/AR 不适、感官冲突和恢复时间 | 把交通、模拟训练、空间计算和沉浸式工具的身体耐受纳入未来接口可用性模型 | 不提供药物、补剂、暴露训练、旅行建议、VR 设备推荐或个体耐受判断 |
 | [Vestibular Ototoxicity Medication Chemical Risk Continuity](domains/vestibular-ototoxicity-medication-chemical-risk-continuity/README.md) | 耳毒性、药物/化学暴露、噪声协同、听觉前庭副作用和监测 | 把治疗和职业暴露的感官副作用纳入技术/干预净收益和主体持续性模型 | 不提供用药、停药、剂量、暴露限值、监测计划、诊断或职业法律判断 |
 | [Speech Language Communication Continuity](domains/speech-language-communication-continuity/README.md) | 失语、构音障碍、言语运动障碍、沟通参与、同意表达和替代沟通 | 把语言表达与理解作为主体偏好、共同决策、求助和社会参与的接口 | 不提供言语语言诊断、训练方案、设备处方、吞咽判断或个体康复建议 |
+| [Aphasia Language Access Recovery Continuity](domains/aphasia-language-access-recovery-continuity/README.md) | 失语、语言理解表达、阅读书写、会话参与和恢复支持 | 把获得性语言接口失效纳入偏好表达、同意、照护参与和关系恢复模型 | 不提供失语诊断、分型、治疗、训练、预后、病因或急诊判断 |
+| [Dysarthria Speech Intelligibility Continuity](domains/dysarthria-speech-intelligibility-continuity/README.md) | 构音障碍、言语清晰度、说话疲劳、听者负担和沟通修复 | 把语言意图到可懂声音输出之间的运动执行链纳入任务模型 | 不提供诊断、训练动作、治疗、神经病因、设备处方或急诊建议 |
+| [Apraxia Of Speech Motor Planning Continuity](domains/apraxia-of-speech-motor-planning-continuity/README.md) | 言语失用、运动计划、错误重试、可懂度和表达可靠性 | 把意图到言语动作程序之间的规划失效纳入沟通连续性模型 | 不提供诊断、训练、儿童发育判断、家庭练习、病因或预后承诺 |
+| [Voice Disorders Phonation Communication Continuity](domains/voice-disorders-phonation-communication-continuity/README.md) | 嗓音障碍、发声负荷、职业用声、声疲劳和声音身份 | 把语言表达到可持续声学输出之间的载体失效纳入工作与关系模型 | 不提供嗓音诊断、喉镜解释、发声训练、药物、手术或返岗建议 |
+| [Stuttering Fluency Participation Continuity](domains/stuttering-fluency-participation-continuity/README.md) | 口吃、流畅性、预期焦虑、回避、污名和参与机会 | 把说话节奏、他人反应和社会参与之间的互动失效纳入机会模型 | 不提供诊断、治疗技术、心理干预、药物、严重度、学校或就业判断 |
+| [Developmental Language Disorder Child Communication Continuity](domains/developmental-language-disorder-child-communication-continuity/README.md) | 发展性语言障碍、语言迟缓、词汇语法、叙事、读写基础和学校参与 | 把儿童语言能力形成窗口纳入学习、关系和长期能力积累模型 | 不提供儿童诊断、筛查解释、家庭训练、特教资格、预后或责任判断 |
+| [Speech Sound Disorder Articulation Phonology Continuity](domains/speech-sound-disorder-articulation-phonology-continuity/README.md) | 语音障碍、构音、音系、可懂度、读写关联和儿童参与 | 把语言内容到可懂语音形式之间的儿童输出执行层纳入学习模型 | 不提供发音诊断、音系治疗、家庭练习、学校资格、病因或预后判断 |
+| [Augmentative Alternative Communication AAC Continuity](domains/augmentative-alternative-communication-aac-continuity/README.md) | AAC、沟通板、符号、语音生成设备、眼控/开关访问和伙伴训练 | 把主体表达权从单一口语通道扩展为多通道冗余基础设施 | 不提供设备处方、访问方法选择、训练计划、保险资格或学校服务判断 |
+| [Social Communication Pragmatic Language Continuity](domains/social-communication-pragmatic-language-continuity/README.md) | 社会沟通、语用语言、会话修复、语境理解和关系参与 | 把语言形式到关系参与之间的语境接口纳入服务与社会参与模型 | 不提供诊断、自闭症判断、训练、心理干预、学校资格或便利判断 |
+| [Cognitive Communication Disorder Executive Language Continuity](domains/cognitive-communication-disorder-executive-language-continuity/README.md) | 认知沟通、注意记忆、组织表达、话题维持和执行语言 | 把注意、记忆、执行控制和语言互动交叉失效纳入复杂任务沟通模型 | 不提供诊断、病因、认知训练、康复计划、工作许可或法律能力判断 |
 | [Swallowing Dysphagia Aspiration Nutrition](domains/swallowing-dysphagia-aspiration-nutrition/README.md) | 吞咽障碍、误吸、窒息、营养水分入口、进食尊严和照护负担 | 把吞咽安全作为营养进入、气道保护、恢复能力和生活尊严的交叉条件 | 不提供吞咽诊断、检查解释、饮食质地调整、管饲、护理、急救或康复建议 |
 | [Smell Taste Chemosensory Continuity](domains/smell-taste-chemosensory-continuity/README.md) | 嗅觉、味觉、化学感知、危险气味识别、食欲、营养和生活质量 | 把化学感知作为危险预警、食欲营养、情绪体验和生活质量反馈层 | 不提供嗅味觉诊断、感染/神经判断、治疗、训练、补剂、药物或个体风险结论 |
 | [Peripheral Neuropathy Somatosensory Continuity](domains/peripheral-neuropathy-somatosensory-continuity/README.md) | 周围神经病变、触觉、痛觉、本体感觉、足部风险和精细操作反馈 | 把躯体感觉作为身体边界、避伤、步态、工具操作和皮肤保护反馈层 | 不提供神经病变诊断、检查解释、足部处置、疼痛治疗、药物、补剂或康复建议 |

@@ -108,3 +108,4 @@ Current decisions:
 - `0093-add-eighty-ninth-wave-eye-disease-visual-function-continuity-domains.md`
 - `0094-add-ninetieth-wave-auditory-communication-execution-continuity-domains.md`
 - `0095-add-ninety-first-wave-vestibular-balance-execution-continuity-domains.md`
+- `0096-add-ninety-second-wave-speech-language-communication-execution-domains.md`

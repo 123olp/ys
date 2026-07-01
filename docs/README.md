@@ -757,4 +757,14 @@ docs/
 571. Read `../domains/gait-balance-assessment-fall-screening-continuity/README.md` if you are working on gait and balance assessment, fall screening, mobility confidence, assistive referral boundaries, or balance-related task risk.
 572. Read `../domains/motion-sickness-transport-virtual-environment-tolerance-continuity/README.md` if you are working on motion sickness, travel tolerance, simulator sickness, VR/AR vestibular conflict, transport productivity, or virtual-environment access.
 573. Read `../domains/vestibular-ototoxicity-medication-chemical-risk-continuity/README.md` if you are working on vestibular ototoxicity, medication or chemical exposure, aminoglycoside-like risk, occupational exposure, or balance loss from toxic injury.
-574. Enter a domain under `../domains/`.
+574. Read `../domains/aphasia-language-access-recovery-continuity/README.md` if you are working on aphasia, acquired language loss, language access, reading/writing communication, supported conversation, or recovery participation.
+575. Read `../domains/dysarthria-speech-intelligibility-continuity/README.md` if you are working on dysarthria, motor speech intelligibility, speaking fatigue, listener burden, or verbal output reliability.
+576. Read `../domains/apraxia-of-speech-motor-planning-continuity/README.md` if you are working on apraxia of speech, speech motor planning, inconsistent errors, childhood apraxia, or verbal output planning reliability.
+577. Read `../domains/voice-disorders-phonation-communication-continuity/README.md` if you are working on voice disorders, dysphonia, vocal fatigue, occupational voice, pitch/loudness limits, or phonation continuity.
+578. Read `../domains/stuttering-fluency-participation-continuity/README.md` if you are working on stuttering, fluency disorders, anticipation, avoidance, stigma, classroom/work participation, or speaking opportunity loss.
+579. Read `../domains/developmental-language-disorder-child-communication-continuity/README.md` if you are working on developmental language disorder, child language delay, vocabulary/grammar, narrative, literacy readiness, or school participation.
+580. Read `../domains/speech-sound-disorder-articulation-phonology-continuity/README.md` if you are working on speech sound disorders, articulation, phonology, intelligibility, literacy links, or child speech participation.
+581. Read `../domains/augmentative-alternative-communication-aac-continuity/README.md` if you are working on AAC, communication boards, symbols, speech-generating devices, eye-gaze/switch access, or expression-channel redundancy.
+582. Read `../domains/social-communication-pragmatic-language-continuity/README.md` if you are working on social communication, pragmatic language, conversational repair, inference, context, or relationship participation.
+583. Read `../domains/cognitive-communication-disorder-executive-language-continuity/README.md` if you are working on cognitive-communication disorder, executive language, attention/memory in conversation, organization, topic maintenance, or complex communication support.
+584. Enter a domain under `../domains/`.

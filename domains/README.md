@@ -337,6 +337,16 @@
 - `motion-sickness-transport-virtual-environment-tolerance-continuity/`：运动病与虚拟环境耐受连续性，整理交通耐受、模拟器病、VR/AR 不适和感官冲突。
 - `vestibular-ototoxicity-medication-chemical-risk-continuity/`：耳毒性药物/化学前庭风险连续性，整理药物、化学暴露、噪声协同和听觉前庭副作用。
 - `speech-language-communication-continuity/`：言语、语言与沟通连续性，整理失语、构音障碍、言语运动障碍、沟通参与和主体表达权。
+- `aphasia-language-access-recovery-continuity/`：失语语言访问与恢复连续性，整理语言理解表达、读写、会话参与和恢复支持。
+- `dysarthria-speech-intelligibility-continuity/`：构音障碍与言语可懂度连续性，整理运动言语输出、清晰度、说话疲劳和听者负担。
+- `apraxia-of-speech-motor-planning-continuity/`：言语失用与运动计划连续性，整理言语动作计划、错误重试、可懂度和表达可靠性。
+- `voice-disorders-phonation-communication-continuity/`：嗓音障碍与发声沟通连续性，整理发声负荷、职业用声、声疲劳和声音身份。
+- `stuttering-fluency-participation-continuity/`：口吃流畅性与参与连续性，整理流畅性、预期焦虑、回避、污名和参与机会。
+- `developmental-language-disorder-child-communication-continuity/`：发展性语言障碍与儿童沟通连续性，整理语言迟缓、词汇语法、叙事、读写基础和学校参与。
+- `speech-sound-disorder-articulation-phonology-continuity/`：语音障碍、构音与音系连续性，整理语音可懂度、音系规则、读写关联和儿童参与。
+- `augmentative-alternative-communication-aac-continuity/`：AAC 替代增强沟通连续性，整理沟通板、符号、语音生成设备、访问方式和伙伴训练。
+- `social-communication-pragmatic-language-continuity/`：社会沟通与语用语言连续性，整理会话轮替、语境理解、非字面语言和关系参与。
+- `cognitive-communication-disorder-executive-language-continuity/`：认知沟通与执行语言连续性，整理注意记忆、组织表达、话题维持和复杂沟通任务。
 - `swallowing-dysphagia-aspiration-nutrition/`：吞咽、误吸与营养连续性，整理吞咽安全、气道保护、营养水分、进食尊严和照护负担。
 - `smell-taste-chemosensory-continuity/`：嗅味觉与化学感知连续性，整理嗅觉、味觉、危险气味识别、食欲、营养和生活质量。
 - `peripheral-neuropathy-somatosensory-continuity/`：周围神经病变与躯体感觉连续性，整理触觉、痛觉、本体感觉、足部风险和身体边界反馈。

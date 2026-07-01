@@ -128,6 +128,16 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 运动病必须支持交通与虚拟访问 | `motion-sickness-transport-virtual-environment-tolerance-continuity/` | 交通、模拟器、VR/AR、前庭冲突 | 运动病会把旅行、训练、远程协作和虚拟环境学习变成不可用资源 |
 | 耳毒性前庭风险必须可追踪 | `vestibular-ototoxicity-medication-chemical-risk-continuity/` | 药物/化学暴露、职业风险、平衡损伤 | 不可见暴露可能把可避免的前庭损伤转化为长期凝视、步态和跌倒负担 |
 | 语言表达与理解必须可达 | `speech-language-communication-continuity/` | 失语、构音、言语运动、沟通参与、替代沟通 | 主体偏好、同意、关系和社会角色无法表达 |
+| 失语必须恢复语言访问 | `aphasia-language-access-recovery-continuity/` | 获得性语言丧失、理解表达、读写、会话支持 | 主体偏好、同意、照护参与和关系维护会被语言接口断裂阻断 |
+| 构音清晰度必须支撑可懂输出 | `dysarthria-speech-intelligibility-continuity/` | 言语清晰度、呼吸发声构音、听者负担 | 身体还能行动但话语不可懂时，求助、工作、照护和关系会失去输出通道 |
+| 言语运动计划必须稳定 | `apraxia-of-speech-motor-planning-continuity/` | 言语失用、发音启动、序列计划、错误修正 | 语言意图无法稳定转成语音动作，会把主体表达变成高摩擦任务 |
+| 嗓音必须可持续承载表达 | `voice-disorders-phonation-communication-continuity/` | 发声质量、音量、疲劳、职业嗓音 | 声音负荷会压缩教学、照护、会议、公共服务和社会存在感 |
+| 口吃流畅性必须保护参与机会 | `stuttering-fluency-participation-continuity/` | 流畅性、回避、污名、会话机会 | 回避和污名会让可表达能力不能转化为真实课堂、工作和关系参与 |
+| 儿童语言发展窗口必须守住 | `developmental-language-disorder-child-communication-continuity/` | 词汇语法、叙事理解、读写风险 | 早期语言窗口断裂会影响学习、关系、自我表达和后续能力积累 |
+| 语音可懂度必须支撑学习关系 | `speech-sound-disorder-articulation-phonology-continuity/` | 构音、音系模式、可懂度、读写连接 | 语音输出失真会影响同伴关系、课堂参与、读写基础和自信 |
+| AAC 必须提供表达冗余 | `augmentative-alternative-communication-aac-continuity/` | 符号、语音生成设备、访问方式、伙伴训练 | 口语不可用时，没有替代通道会让主体意愿、选择和社交关系被沉默 |
+| 社会语用必须支撑关系语境 | `social-communication-pragmatic-language-continuity/` | 语境、轮替、非字面语言、会话修复 | 听得见也会说但读不懂关系规则时，协作、教育和社会参与会持续受损 |
+| 认知沟通必须支撑复杂会话 | `cognitive-communication-disorder-executive-language-continuity/` | 注意、记忆、组织、执行语言 | 脑损伤或神经疾病后的组织表达断点会削弱计划、解释、复盘和自主参与 |
 | 吞咽必须保护气道和营养 | `swallowing-dysphagia-aspiration-nutrition/` | 吞咽安全、误吸、营养水分、饮食尊严 | 进食从恢复输入变成窒息、肺炎、营养不足和尊严损害 |
 | 化学感知必须支撑安全与食欲 | `smell-taste-chemosensory-continuity/` | 嗅觉、味觉、气味危险信号、食欲、营养 | 烟气、燃气、腐败食品识别下降，食欲、生活质量和营养受损 |
 | 躯体感觉必须反馈身体边界 | `peripheral-neuropathy-somatosensory-continuity/` | 周围神经、触觉、痛觉、本体感觉、足部风险 | 损伤不可感、步态不稳、跌倒、溃疡和精细操作反馈丧失 |

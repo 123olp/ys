@@ -480,6 +480,16 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `motion-sickness-transport-virtual-environment-tolerance-continuity/` | 运动病决定交通、模拟训练、VR/AR 和虚拟环境是否会因前庭-视觉冲突而成为不可用任务空间 |
 | `vestibular-ototoxicity-medication-chemical-risk-continuity/` | 前庭耳毒性决定药物或化学暴露是否会被追踪为凝视、步态、平衡和跌倒风险的长期来源 |
 | `speech-language-communication-continuity/` | 言语语言沟通决定主体能否表达偏好、理解信息、求助、同意和参与社会关系 |
+| `aphasia-language-access-recovery-continuity/` | 失语决定获得性语言丧失后主体能否恢复表达、理解、读写、会话参与和照护决策访问 |
+| `dysarthria-speech-intelligibility-continuity/` | 构音障碍决定呼吸、发声、共鸣和构音输出是否能保持足够可懂度而不让沟通成本失控 |
+| `apraxia-of-speech-motor-planning-continuity/` | 言语失用决定语言意图能否稳定转化为发音序列、启动动作和可修正的语音输出 |
+| `voice-disorders-phonation-communication-continuity/` | 嗓音障碍决定发声质量、音量、疲劳和职业嗓音负荷是否会压缩主体可见表达窗口 |
+| `stuttering-fluency-participation-continuity/` | 口吃和流畅性负担决定主体是否会因回避、污名和会话成本失去课堂、工作和关系参与 |
+| `developmental-language-disorder-child-communication-continuity/` | 发展性语言障碍决定儿童词汇、语法、叙事、理解和读写风险是否会错过发育支持窗口 |
+| `speech-sound-disorder-articulation-phonology-continuity/` | 语音障碍决定儿童构音、音系模式、可懂度和读写连接是否能支撑学习与同伴关系 |
+| `augmentative-alternative-communication-aac-continuity/` | AAC 决定口语不可用或不足时，主体是否仍有符号、设备、访问方式和伙伴支持形成表达冗余 |
+| `social-communication-pragmatic-language-continuity/` | 社会语用沟通决定主体能否在语境、轮替、非字面语言和会话修复中维持关系与协作 |
+| `cognitive-communication-disorder-executive-language-continuity/` | 认知沟通障碍决定注意、记忆、组织和执行语言是否能支撑复杂会话、照护参与和任务复盘 |
 | `swallowing-dysphagia-aspiration-nutrition/` | 吞咽安全决定营养水分能否进入身体而不转化为误吸、窒息、肺炎和尊严损害 |
 | `smell-taste-chemosensory-continuity/` | 嗅味觉和化学感知决定危险气味识别、食欲、营养、生活质量和低可见安全反馈 |
 | `peripheral-neuropathy-somatosensory-continuity/` | 周围神经和躯体感觉决定身体边界、保护性痛觉、步态反馈、足部风险和精细操作是否可用 |
@@ -849,6 +859,7 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | NIDCD balance disorders / CDC STEADI | 提示前庭、平衡和跌倒风险把空间行动、外出能力和独立生活连接起来 |
 | NIDCD / CDC STEADI / APTA / CDC Yellow Book / NIOSH vestibular resources | 提示前庭总域需要拆成位置性眩晕、发作眩晕、急性眩晕、慢性头晕、前庭性偏头痛、双侧前庭低下、康复补偿、步态筛查、运动病和耳毒性前庭风险这些执行层 |
 | NIDCD aphasia resources | 提示语言表达和理解能力决定主体偏好、同意、照护参与和社会角色能否被表达 |
+| NIDCD / ASHA speech-language resources | 提示言语语言总域需要拆成失语、构音障碍、言语失用、嗓音障碍、口吃、发展性语言障碍、语音障碍、AAC、社会语用沟通和认知沟通这些执行层 |
 | NIDCD dysphagia resources | 提示吞咽安全把营养、水分、气道保护、误吸风险和进食尊严连接起来 |
 | NIDCD smell and taste disorder resources | 提示嗅味觉支撑危险气味识别、食欲、营养和生活质量 |
 | NINDS / NIDDK peripheral neuropathy resources | 提示周围神经和躯体感觉把身体边界、步态、足部风险、疼痛和伤口发现连接起来 |
@@ -2026,6 +2037,19 @@ Source links:
 - https://www.cdc.gov/yellow-book/hcp/travel-air-sea/motion-sickness.html
 - https://www.cdc.gov/niosh/publications/numbered/2018-124.html
 - https://www.nidcd.nih.gov/health/aphasia
+- https://www.nidcd.nih.gov/health/voice-speech-and-language
+- https://www.nidcd.nih.gov/health/voice-disorders
+- https://www.nidcd.nih.gov/health/stuttering
+- https://www.nidcd.nih.gov/health/developmental-language-disorder
+- https://www.nidcd.nih.gov/health/assistive-devices-people-hearing-voice-speech-or-language-disorders
+- https://www.asha.org/practice-portal/clinical-topics/aphasia/
+- https://www.asha.org/practice-portal/clinical-topics/dysarthria-in-adults/
+- https://www.asha.org/practice-portal/clinical-topics/acquired-apraxia-of-speech/
+- https://www.asha.org/practice-portal/clinical-topics/voice-disorders/
+- https://www.asha.org/practice-portal/clinical-topics/fluency-disorders/
+- https://www.asha.org/practice-portal/clinical-topics/augmentative-and-alternative-communication/
+- https://www.asha.org/practice-portal/clinical-topics/social-communication-disorder/
+- https://www.asha.org/practice-portal/clinical-topics/cognitive-communication/
 - https://www.nidcd.nih.gov/health/dysphagia
 - https://www.nidcd.nih.gov/health/smell-disorders
 - https://www.nidcd.nih.gov/health/taste-disorders
