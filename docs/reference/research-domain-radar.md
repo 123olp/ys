@@ -442,6 +442,12 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `disaster-volunteer-donations-management-continuity/` | 灾害志愿、捐赠与协调管理连续性决定社会善意是否能转化为可分发、可追踪、可持续的恢复资源 |
 | `sleep-disordered-breathing-screening-treatment-continuity/` | 睡眠呼吸障碍筛查与治疗连续性决定夜间低氧、觉醒碎片、日间嗜睡和心血管负荷是否进入可恢复路径 |
 | `chronic-insomnia-cbti-access-continuity/` | 慢性失眠与 CBT-I 可及连续性决定睡眠恢复失败是否持续消耗注意力、情绪、学习、工作和有效时间 |
+| `narcolepsy-daytime-sleepiness-continuity/` | 发作性睡病与白天嗜睡连续性决定主体清醒窗口、警觉、驾驶工作安全和长期任务执行是否稳定 |
+| `idiopathic-hypersomnia-excessive-sleepiness-continuity/` | 特发性嗜睡与过度睡意连续性决定睡眠惰性、醒来困难、日间行动启动和有效时间是否被持续压缩 |
+| `restless-legs-periodic-limb-movement-sleep-continuity/` | 不宁腿与周期性肢动连续性决定感觉-运动睡眠破坏是否持续转化为恢复失败、疲劳和家庭影响 |
+| `circadian-rhythm-sleep-wake-disorder-continuity/` | 昼夜节律睡眠-觉醒障碍连续性决定内部身体时间是否能与学习、工作、照护和社会制度窗口对齐 |
+| `shift-work-long-hours-fatigue-continuity/` | 轮班长工时疲劳连续性决定外部工作制度是否把主体推入睡眠债、反应时下降和安全暴露 |
+| `parasomnia-sleepwalking-behavior-safety-continuity/` | 异态睡眠与梦游行为安全连续性决定睡中行为是否被纳入家庭安全、隐私、污名和照护边界治理 |
 | `sexual-health-sti-prevention-continuity/` | 性健康与 STI 预防连续性决定检测、治疗转介、伴侣服务、隐私和污名治理是否保护身体完整性和关系安全 |
 | `hiv-testing-prep-prevention-continuity/` | HIV 检测与 PrEP 预防连续性决定 HIV 风险是否通过早检、预防、治疗连接和病毒抑制进入长期可控路径 |
 | `chronic-viral-hepatitis-screening-liver-protection-continuity/` | 慢性病毒性肝炎筛查与肝脏保护连续性决定乙肝/丙肝是否在肝硬化、肝癌和失代偿前被发现和连接治疗 |
@@ -1131,6 +1137,7 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | CDC / NOAA / OSHA heat resources | 提示极端高温同时影响体温调节、制冷可及、能源负担、劳动暴露和公共卫生 |
 | WHO / CDC NIOSH / OSHA noise resources | 提示噪声暴露不只是听力问题，还会影响睡眠、压力、沟通、工作安全和长期恢复 |
 | NIH circadian rhythms / CDC NIOSH shift-work resources | 提示光照和昼夜节律会把睡眠、警觉、情绪、代谢和工作时间制度连接起来 |
+| NHLBI / MedlinePlus / CDC NIOSH sleep-wake scheduling resources | 提示恢复系统需要拆成发作性睡病、特发性嗜睡、RLS、昼夜节律障碍、轮班长工时和异态睡眠这些清醒窗口、节律错位与睡中安全机制 |
 | CDC / EPA / ATSDR / NIEHS lead and heavy-metal resources | 提示重金属暴露通过住房、水、土壤、粉尘、工作和产品系统造成慢性神经毒性与身体损耗 |
 | EPA radon and asbestos resources | 提示室内建筑危害具有长潜伏期、不可见暴露和独立监管边界 |
 | CDC / EPA / WHO mold and dampness resources | 提示潮湿、霉菌和室内生物暴露会把住房质量连接到呼吸、免疫、睡眠和心理压力 |

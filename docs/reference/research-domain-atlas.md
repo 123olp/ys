@@ -769,6 +769,12 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 志愿捐赠管理把社会善意转成资源 | `disaster-volunteer-donations-management-continuity/` | 志愿者、捐赠、分发、物流、欺诈治理 | 未协调的善意会变成仓储、交通、安全和分发负担，协调决定支持效率 |
 | 睡眠呼吸障碍可避免夜间恢复失败 | `sleep-disordered-breathing-screening-treatment-continuity/` | 睡眠呼吸障碍、夜间低氧、诊断转介、治疗坚持、设备可及 | 夜间低氧、觉醒碎片、日间嗜睡和心血管负荷持续消耗有效时间、判断和恢复能力 |
 | 慢性失眠可通过可及治疗保护恢复 | `chronic-insomnia-cbti-access-continuity/` | 慢性失眠、CBT-I 可及、行为治疗、药物风险、复发预防 | 恢复失败、用药风险、情绪波动和日间功能损害降低单位时间行动质量 |
+| 发作性睡病决定清醒窗口是否稳定 | `narcolepsy-daytime-sleepiness-continuity/` | 发作性睡病、白天过度嗜睡、猝倒语境、睡眠发作、警觉窗口 | 清醒窗口不稳定会直接破坏学习、驾驶、工作、社会参与和长期任务执行 |
+| 特发性嗜睡会吞噬可启动行动时间 | `idiopathic-hypersomnia-excessive-sleepiness-continuity/` | 特发性嗜睡、睡眠惰性、长睡眠、醒来困难、日间功能 | 过度嗜睡和醒来困难会降低行动启动、时间可用性、工作学习密度和自我维护能力 |
+| 不宁腿和肢动会碎片化恢复系统 | `restless-legs-periodic-limb-movement-sleep-continuity/` | RLS、周期性肢动、感觉-运动冲动、睡眠碎片、疲劳 | 夜间运动和感觉负担会把恢复失败转化为疲劳、注意下降、情绪负担和伴侣/家庭影响 |
+| 昼夜节律障碍会错配身体时间和社会时间 | `circadian-rhythm-sleep-wake-disorder-continuity/` | 睡眠相位、非 24 小时、不规则节律、时差、内部时钟 | 内部时间与外部制度错位会压缩学习工作窗口、代谢恢复、情绪稳定和服务可及 |
+| 轮班长工时把制度安排变成疲劳风险 | `shift-work-long-hours-fatigue-continuity/` | 轮班、夜班、长工时、睡眠债、恢复窗口、疲劳安全 | 外部工时制度会通过睡眠债、反应时下降和恢复不足扩大事故、错误、慢病和家庭照护风险 |
+| 异态睡眠把睡眠状态转成行为安全问题 | `parasomnia-sleepwalking-behavior-safety-continuity/` | 梦游、异态睡眠、睡中行为、家庭安全、照护观察 | 睡中行为会把恢复时间转化为伤害、家庭监护、隐私、污名和环境安全治理问题 |
 | 性健康服务可保护关系和公共卫生屏障 | `sexual-health-sti-prevention-continuity/` | STI 预防、检测、治疗转介、伴侣服务、隐私、污名 | 无症状感染、污名、医疗回避和伴侣服务断裂改变生殖健康、关系安全和传播风险 |
 | HIV 可通过预防和持续照护长期控制 | `hiv-testing-prep-prevention-continuity/` | HIV 检测、PrEP/PEP 转介、ART 连接、病毒抑制、隐私 | 预防、检测、治疗连接和保留照护失败会放大免疫、传播、污名和长期慢病负担 |
 | 慢性病毒性肝炎可在肝硬化和肝癌前治理 | `chronic-viral-hepatitis-screening-liver-protection-continuity/` | 乙肝/丙肝筛查、确认、治疗连接、纤维化、肝癌风险监测 | 长期无症状感染可推进肝硬化、肝癌、急性失代偿和传播风险 |
@@ -1688,6 +1694,12 @@ risk-engineering
   -> disaster-volunteer-donations-management-continuity
   -> sleep-disordered-breathing-screening-treatment-continuity
   -> chronic-insomnia-cbti-access-continuity
+  -> narcolepsy-daytime-sleepiness-continuity
+  -> idiopathic-hypersomnia-excessive-sleepiness-continuity
+  -> restless-legs-periodic-limb-movement-sleep-continuity
+  -> circadian-rhythm-sleep-wake-disorder-continuity
+  -> shift-work-long-hours-fatigue-continuity
+  -> parasomnia-sleepwalking-behavior-safety-continuity
   -> sexual-health-sti-prevention-continuity
   -> hiv-testing-prep-prevention-continuity
   -> chronic-viral-hepatitis-screening-liver-protection-continuity

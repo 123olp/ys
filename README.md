@@ -346,6 +346,12 @@ flowchart TD
     H --> ANSC[autism-neurodiversity-support-continuity<br/>自闭神经多样性 / 支持]
     H --> EDNB[eating-disorders-nutrition-body-continuity<br/>进食障碍 / 营养身体]
     H --> SL[sleep-circadian-recovery<br/>睡眠 / 节律 / 恢复]
+    SL --> NARC[narcolepsy-daytime-sleepiness-continuity<br/>发作性睡病 / 日间嗜睡]
+    SL --> IHES[idiopathic-hypersomnia-excessive-sleepiness-continuity<br/>特发性嗜睡 / 清醒启动]
+    SL --> RLSPLM[restless-legs-periodic-limb-movement-sleep-continuity<br/>RLS / 周期性肢动]
+    SL --> CRSWS[circadian-rhythm-sleep-wake-disorder-continuity<br/>昼夜节律 / 睡眠觉醒错位]
+    SL --> SWLHF[shift-work-long-hours-fatigue-continuity<br/>轮班长工时 / 疲劳]
+    SL --> PSBS[parasomnia-sleepwalking-behavior-safety-continuity<br/>异态睡眠 / 梦游安全]
     H --> AT[assistive-technology-access<br/>辅助技术 / 无障碍]
     H --> SEC[substance-exposure-control<br/>物质暴露控制]
     H --> RE[risk-engineering<br/>风险工程]
@@ -1568,6 +1574,12 @@ flowchart TD
 | [Autism Neurodiversity Support Continuity](domains/autism-neurodiversity-support-continuity/README.md) | 自闭谱系、神经多样性、感觉差异、沟通差异、例行结构和支持需求 | 把环境适配、沟通可达和参与权视为主体持续参与条件 | 不提供诊断、行为干预、教育安置、社交训练、家庭控制或个体支持计划 |
 | [Eating Disorders Nutrition Body Continuity](domains/eating-disorders-nutrition-body-continuity/README.md) | 进食障碍、身体形象、限制/暴食/补偿行为、营养风险和服务断点 | 把身体供能、心理安全、身份和医疗心理协作纳入主体连续性 | 不提供饮食计划、热量计算、减重、催吐、补偿行为、体重目标或治疗建议 |
 | [Sleep Circadian And Recovery](domains/sleep-circadian-recovery/README.md) | 睡眠、昼夜节律、疲劳和恢复系统 | 恢复质量、节律稳定、疲劳和长期行动密度变量 | 不提供个体睡眠诊断、处方、药物或医疗建议 |
+| [Narcolepsy Daytime Sleepiness Continuity](domains/narcolepsy-daytime-sleepiness-continuity/README.md) | 发作性睡病、日间嗜睡、猝倒、睡眠发作、学校/工作支持和安全暴露 | 把觉醒维持失败纳入清醒窗口可靠性、学习参与、交通安全和有效时间模型 | 不提供睡眠检查解释、诊断、药物、剂量、驾驶、便利申请或治疗建议 |
+| [Idiopathic Hypersomnia Excessive Sleepiness Continuity](domains/idiopathic-hypersomnia-excessive-sleepiness-continuity/README.md) | 特发性嗜睡、醒后困难、睡眠惯性、长睡眠和诊断不确定性 | 把“睡了仍无法清醒”纳入任务启动、有效清醒时间、污名和支持可及模型 | 不提供嗜睡诊断、药物、兴奋剂、作息、驾驶、学校/工作或残障建议 |
+| [Restless Legs Periodic Limb Movement Sleep Continuity](domains/restless-legs-periodic-limb-movement-sleep-continuity/README.md) | 不宁腿综合征、周期性肢体运动、感觉冲动、睡眠碎片和伴侣睡眠负担 | 把感觉-运动睡眠破坏纳入恢复质量、日间警觉、家庭睡眠和有效时间模型 | 不提供 RLS 诊断、铁指标解释、药物、补铁、剂量、停药或睡眠检查判读 |
+| [Circadian Rhythm Sleep Wake Disorder Continuity](domains/circadian-rhythm-sleep-wake-disorder-continuity/README.md) | 昼夜节律睡眠-觉醒障碍、睡眠时相、光暗暴露和社会时间冲突 | 把内部生物钟与外部制度时间错位纳入恢复调度和任务时间匹配模型 | 不提供节律诊断、光照方案、褪黑素/药物、作息处方、便利申请或职业安排 |
+| [Shift Work Long Hours Fatigue Continuity](domains/shift-work-long-hours-fatigue-continuity/README.md) | 轮班、夜班、长工时、连续值班、休息间隔和通勤安全 | 把外部工作制度对睡眠、警觉性、错误率和事故暴露的占用纳入模型 | 不提供排班法律、班表优化、驾驶/值班许可、药物、兴奋剂、投诉或索赔建议 |
+| [Parasomnia Sleepwalking Behavior Safety Continuity](domains/parasomnia-sleepwalking-behavior-safety-continuity/README.md) | 异态睡眠、梦游、睡中行为、夜惊/异常觉醒、家庭安全和隐私污名 | 把睡眠中异常行为纳入夜间安全、家庭负担、恢复质量和伤害风险模型 | 不提供异态睡眠诊断、睡眠检查解释、药物、安全处置、家庭改造或监控建议 |
 | [Assistive Technology Access](domains/assistive-technology-access/README.md) | 辅助技术、无障碍、义肢、助听、低视力辅助、轮椅和沟通辅助 | 能力补偿、环境适配、设备可及性和参与能力 | 不提供个体设备处方、购买建议或医疗建议 |
 | [Substance Exposure Control](domains/substance-exposure-control/README.md) | 烟草、酒精、成瘾性物质、有害暴露和行为风险 | 暴露剂量、成瘾、自主性和风险函数变量 | 不提供戒断、排毒、用药、违法物质或危险使用指南 |
 | [Risk Engineering](domains/risk-engineering/README.md) | 事故、灾害、暴力、环境风险、系统故障、尾部风险 | 风险暴露、预警、响应、恢复和韧性模型 | 不提供攻击、违法、武器、暴力或危险操作指南 |
@@ -2452,6 +2464,12 @@ human_infra/
 │   ├── product-safety-recall-systems/
 │   ├── sensory-continuity/
 │   ├── sleep-circadian-recovery/
+│   ├── narcolepsy-daytime-sleepiness-continuity/
+│   ├── idiopathic-hypersomnia-excessive-sleepiness-continuity/
+│   ├── restless-legs-periodic-limb-movement-sleep-continuity/
+│   ├── circadian-rhythm-sleep-wake-disorder-continuity/
+│   ├── shift-work-long-hours-fatigue-continuity/
+│   ├── parasomnia-sleepwalking-behavior-safety-continuity/
 │   ├── skin-barrier-wound-healing/
 │   ├── pressure-injury-prevention-repositioning-support-surface-continuity/
 │   ├── chronic-wound-venous-diabetic-pressure-ulcer-continuity/

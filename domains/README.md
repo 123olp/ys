@@ -361,6 +361,12 @@
 - `autism-neurodiversity-support-continuity/`：自闭神经多样性支持连续性，整理自闭谱系、神经多样性、感觉差异、沟通差异、例行结构和支持需求。
 - `eating-disorders-nutrition-body-continuity/`：进食障碍营养与身体连续性，整理进食障碍、身体形象、限制/暴食/补偿行为、营养风险和服务断点。
 - `sleep-circadian-recovery/`：睡眠、昼夜节律与恢复，整理疲劳、修复和长期恢复能力。
+- `narcolepsy-daytime-sleepiness-continuity/`：发作性睡病与日间嗜睡连续性，整理嗜睡、猝倒、睡眠发作、支持可及和安全暴露。
+- `idiopathic-hypersomnia-excessive-sleepiness-continuity/`：特发性嗜睡与过度嗜睡连续性，整理醒后困难、睡眠惯性、长睡眠、任务启动和污名。
+- `restless-legs-periodic-limb-movement-sleep-continuity/`：RLS、周期性肢动与睡眠连续性，整理感觉冲动、睡眠碎片、伴侣睡眠和日间功能。
+- `circadian-rhythm-sleep-wake-disorder-continuity/`：昼夜节律睡眠-觉醒障碍连续性，整理睡眠时相、光暗暴露、社会时间冲突和恢复调度。
+- `shift-work-long-hours-fatigue-continuity/`：轮班长工时与疲劳连续性，整理夜班、长工时、休息间隔、通勤安全和疲劳风险。
+- `parasomnia-sleepwalking-behavior-safety-continuity/`：异态睡眠、梦游与行为安全连续性，整理睡中行为、伤害风险、家庭安全和隐私污名。
 - `assistive-technology-access/`：辅助技术可及，整理助听、低视力辅助、轮椅、义肢、沟通辅助和无障碍。
 - `substance-exposure-control/`：物质暴露控制，整理烟草、酒精、成瘾性物质、有害暴露和自主性风险。
 - `risk-engineering/`：风险工程，整理事故、灾害、暴力、系统故障和尾部风险治理。
@@ -912,6 +918,12 @@
 - `disaster-volunteer-donations-management-continuity/`：灾害志愿、捐赠与协调管理连续性，整理志愿者、物资捐赠、资金捐赠、分发、欺诈和协调变量。
 - `sleep-disordered-breathing-screening-treatment-continuity/`：睡眠呼吸障碍筛查与治疗连续性，整理夜间低氧、诊断转介、治疗坚持、设备可及和日间功能风险。
 - `chronic-insomnia-cbti-access-continuity/`：慢性失眠与 CBT-I 可及连续性，整理恢复失败、行为治疗可及、药物风险、日间功能和复发预防。
+- `narcolepsy-daytime-sleepiness-continuity/`：发作性睡病与日间嗜睡连续性，整理嗜睡、猝倒、睡眠发作、支持可及和安全暴露。
+- `idiopathic-hypersomnia-excessive-sleepiness-continuity/`：特发性嗜睡与过度嗜睡连续性，整理醒后困难、睡眠惯性、长睡眠、任务启动和污名。
+- `restless-legs-periodic-limb-movement-sleep-continuity/`：RLS、周期性肢动与睡眠连续性，整理感觉冲动、睡眠碎片、伴侣睡眠和日间功能。
+- `circadian-rhythm-sleep-wake-disorder-continuity/`：昼夜节律睡眠-觉醒障碍连续性，整理睡眠时相、光暗暴露、社会时间冲突和恢复调度。
+- `shift-work-long-hours-fatigue-continuity/`：轮班长工时与疲劳连续性，整理夜班、长工时、休息间隔、通勤安全和疲劳风险。
+- `parasomnia-sleepwalking-behavior-safety-continuity/`：异态睡眠、梦游与行为安全连续性，整理睡中行为、伤害风险、家庭安全和隐私污名。
 - `sexual-health-sti-prevention-continuity/`：性健康与 STI 预防连续性，整理检测、治疗转介、伴侣服务、隐私、污名和公共卫生屏障。
 - `hiv-testing-prep-prevention-continuity/`：HIV 检测与 PrEP 预防连续性，整理检测、PrEP/PEP 转介、治疗连接、病毒抑制、隐私和污名。
 - `chronic-viral-hepatitis-screening-liver-protection-continuity/`：慢性病毒性肝炎筛查与肝脏保护连续性，整理乙肝/丙肝筛查、确认、治疗连接、纤维化和肝癌风险监测。

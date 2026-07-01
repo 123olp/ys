@@ -148,6 +148,7 @@ docs/
 │   ├── 0130-add-one-hundred-twenty-fifth-wave-longevity-intervention-governance-domains.md
 │   ├── 0131-add-one-hundred-twenty-sixth-wave-reproductive-endocrine-pelvic-function-domains.md
 │   ├── 0132-add-one-hundred-twenty-seventh-wave-endocrine-feedback-axis-domains.md
+│   ├── 0133-add-one-hundred-twenty-eighth-wave-sleep-wake-scheduling-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -1083,4 +1084,10 @@ docs/
 792. Read `../domains/acromegaly-growth-hormone-cardiometabolic-continuity/README.md` if you are working on acromegaly, GH/IGF-1 excess, cardiometabolic burden, sleep apnea context, joint/soft tissue effects, or delayed diagnosis.
 793. Read `../domains/hypogonadism-testosterone-sex-hormone-continuity/README.md` if you are working on hypogonadism, low testosterone context, sex hormones, puberty/adult stage differences, bone/muscle effects, sexual function, or fertility interface.
 794. Read `../domains/primary-ovarian-insufficiency-hormone-fertility-continuity/README.md` if you are working on primary ovarian insufficiency, ovarian hormone deficiency, fertility uncertainty, menstrual change, bone/cardiovascular risk, or psychosocial burden.
+795. Read `../domains/narcolepsy-daytime-sleepiness-continuity/README.md` if you are working on narcolepsy, excessive daytime sleepiness, cataplexy context, sleep attacks, alertness windows, or wakefulness maintenance.
+796. Read `../domains/idiopathic-hypersomnia-excessive-sleepiness-continuity/README.md` if you are working on idiopathic hypersomnia, excessive sleepiness, sleep inertia, long sleep duration, waking difficulty, or daily function loss.
+797. Read `../domains/restless-legs-periodic-limb-movement-sleep-continuity/README.md` if you are working on restless legs syndrome, periodic limb movement, sensory-motor sleep disruption, sleep fragmentation, or daytime fatigue.
+798. Read `../domains/circadian-rhythm-sleep-wake-disorder-continuity/README.md` if you are working on circadian rhythm sleep-wake disorders, delayed or advanced sleep phase, irregular rhythm, non-24-hour rhythm, jet lag, or internal clock alignment.
+799. Read `../domains/shift-work-long-hours-fatigue-continuity/README.md` if you are working on shift work, night work, long work hours, fatigue risk, recovery windows, sleep debt, or work-schedule driven alertness loss.
+800. Read `../domains/parasomnia-sleepwalking-behavior-safety-continuity/README.md` if you are working on parasomnia, sleepwalking, sleep-state behavior, household safety exposure, injury risk, or caregiver observation boundaries.
 684. Enter a domain under `../domains/`.

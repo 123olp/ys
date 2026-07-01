@@ -818,6 +818,12 @@ human_infra/
     ├── disaster-volunteer-donations-management-continuity/ # 灾害志愿、捐赠与协调管理连续性
     ├── sensory-continuity/ # 感官连续性
     ├── sleep-circadian-recovery/ # 睡眠、节律与恢复
+    ├── narcolepsy-daytime-sleepiness-continuity/ # 发作性睡病与日间嗜睡连续性
+    ├── idiopathic-hypersomnia-excessive-sleepiness-continuity/ # 特发性嗜睡与清醒启动连续性
+    ├── restless-legs-periodic-limb-movement-sleep-continuity/ # RLS、周期性肢动与睡眠连续性
+    ├── circadian-rhythm-sleep-wake-disorder-continuity/ # 昼夜节律睡眠-觉醒障碍连续性
+    ├── shift-work-long-hours-fatigue-continuity/ # 轮班长工时与疲劳连续性
+    ├── parasomnia-sleepwalking-behavior-safety-continuity/ # 异态睡眠、梦游与安全连续性
     ├── skin-barrier-wound-healing/ # 皮肤屏障与伤口愈合
     ├── pressure-injury-prevention-repositioning-support-surface-continuity/ # 压力损伤、减压与支撑面连续性
     ├── chronic-wound-venous-diabetic-pressure-ulcer-continuity/ # 慢性伤口、静脉/糖尿病/压力性溃疡连续性
@@ -1190,7 +1196,7 @@ human_infra/
 - `domains/digital-identity-security/` 负责数字身份、账号、凭据、身份恢复、服务入口和数据可携带。
 - `domains/mental-health-affective-stability/` 负责心理健康、情绪稳定、动机、成瘾、创伤和自杀风险。
 - `domains/depression-mood-disorder-functioning-continuity/`、`domains/anxiety-stress-threat-regulation-continuity/`、`domains/trauma-ptsd-adversity-recovery-continuity/`、`domains/psychosis-reality-testing-community-continuity/`、`domains/bipolar-mood-episode-stability-continuity/`、`domains/adhd-executive-function-neurodevelopment-continuity/`、`domains/autism-neurodiversity-support-continuity/` 和 `domains/eating-disorders-nutrition-body-continuity/` 负责心理健康、神经发育与功能连续性，覆盖抑郁心境功能、焦虑压力威胁调节、创伤/PTSD 恢复、精神病性现实检验、双相情绪周期稳定、ADHD 执行功能、自闭神经多样性支持和进食障碍营养身体连续性。
-- `domains/sleep-circadian-recovery/` 负责睡眠、昼夜节律、疲劳和恢复系统。
+- `domains/sleep-circadian-recovery/` 负责睡眠、昼夜节律、疲劳和恢复系统；`domains/narcolepsy-daytime-sleepiness-continuity/`、`domains/idiopathic-hypersomnia-excessive-sleepiness-continuity/`、`domains/restless-legs-periodic-limb-movement-sleep-continuity/`、`domains/circadian-rhythm-sleep-wake-disorder-continuity/`、`domains/shift-work-long-hours-fatigue-continuity/` 和 `domains/parasomnia-sleepwalking-behavior-safety-continuity/` 负责把发作性睡病、特发性嗜睡、RLS/周期性肢动、昼夜节律睡眠-觉醒障碍、轮班长工时和异态睡眠拆成可独立审查的清醒窗口、恢复调度、安全暴露和家庭支持条件。
 - `domains/assistive-technology-access/` 负责辅助技术、无障碍、义肢、助听、低视力辅助、轮椅和沟通辅助。
 - `domains/substance-exposure-control/` 负责烟草、酒精、成瘾性物质、有害暴露和主体自主性风险。
 - `domains/risk-engineering/` 负责事故、灾害、暴力、环境风险、系统故障和尾部风险工程。
