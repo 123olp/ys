@@ -24,6 +24,31 @@
   -> 若是，则进入 domains/；若否，则归入已有域或 source note
 ```
 
+## A-K 主干目录账本
+
+这张表把用户提出的 A-K 主干研究域固定到现有目录、文档和索引入口。结论是：主干目录已经存在；后续工作应优先补充域内 Source Cards、变量表、证据矩阵和模型接口，而不是重复创建同义目录。
+
+| 编号 | 用户语义 | 稳定目录 | 文档状态 | 索引入口 |
+| --- | --- | --- | --- | --- |
+| A | 细胞重编程 | `domains/cellular-reprogramming/` | `README.md` / `AGENTS.md` 已建 | 本文件、`research-domain-atlas.md`、`domain-map.md`、根 `README.md` |
+| B | 再生医学 | `domains/regenerative-medicine/` | `README.md` / `AGENTS.md` 已建 | 本文件、`research-domain-atlas.md`、`domain-map.md`、根 `README.md` |
+| C | 癌症控制 | `domains/cancer-control/` | `README.md` / `AGENTS.md` 已建 | 本文件、`research-domain-atlas.md`、`domain-map.md`、根 `README.md` |
+| D | 免疫系统维护 | `domains/immune-maintenance/` | `README.md` / `AGENTS.md` 已建 | 本文件、`research-domain-atlas.md`、`domain-map.md`、根 `README.md` |
+| E | 脑保存与人格连续性 | `domains/brain-preservation-connectomics-emulation/` | `README.md` / `AGENTS.md` 已建 | 本文件、`research-domain-atlas.md`、`domain-map.md`、根 `README.md` |
+| F | 记忆编辑 | `domains/memory-editing/` | `README.md` / `AGENTS.md` 已建 | 本文件、`research-domain-atlas.md`、`domain-map.md`、根 `README.md` |
+| G | AI 认知增强 | `domains/cognitive-augmentation/` | `README.md` / `AGENTS.md` 已建 | 本文件、`research-domain-atlas.md`、`domain-map.md`、根 `README.md` |
+| H | 未来等待 / 时间差分路径 | `domains/future-waiting/` | `README.md` / `AGENTS.md` 已建 | 本文件、`research-domain-atlas.md`、`domain-map.md`、根 `README.md` |
+| I | 去具身中枢生命系统 | `domains/disembodied-cns/` | `README.md` / `AGENTS.md` 已建 | 本文件、`research-domain-atlas.md`、`domain-map.md`、根 `README.md` |
+| J | 冷冻保存 / 生物停滞 | `domains/biostasis-cryopreservation/` | `README.md` / `AGENTS.md` 已建 | 本文件、`research-domain-atlas.md`、`domain-map.md`、根 `README.md` |
+| K | 资源、环境、社会支持基础设施 | `domains/resource-social-infra/` | `README.md` / `AGENTS.md` 已建 | 本文件、`research-domain-atlas.md`、`domain-map.md`、根 `README.md` |
+
+消费规则：
+
+1. 要写“山中因子、OSKM、部分重编程、化学重编程、AI 因子设计”，进入 A，不新增 `yamanaka-factors/` 同义目录。
+2. 要写“AI 让主体更聪明、学习更快、记忆外化、工具共生”，进入 G，不新增 `ai-cognitive-enhancement/` 同义目录。
+3. 要写“社会支持、资源、反稀缺工程、照护、食物、水、能源、住房”，进入 K，再按需要下钻到已有细分域。
+4. 只有当候选对象拥有独立机制、独立证据体系、独立失败模式和独立伦理边界时，才允许从 A-K 主干中再拆正式域。
+
 ## 核心域目录
 
 | 先验追问节点 | 已有研究域目录 | 研究对象 | 关键判断 |

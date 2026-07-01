@@ -4,6 +4,7 @@ All notable repository structure changes are recorded here.
 
 ## 2026-07-01
 
+- Clarified the transcendental A-K trunk ledger in `docs/reference/transcendental-domain-index.md`, proving the stable directories, documents, and index entry points for cellular reprogramming, regenerative medicine, cancer control, immune maintenance, brain preservation, memory editing, cognitive augmentation, future waiting, disembodied CNS, biostasis, and resource/social infrastructure.
 - Added one-hundred-thirteenth wave neighborhood public-space maintenance and local-service-request continuity domains for 311 service requests, streetlight outages, sidewalk/curb ramp maintenance, snow/ice sidewalk access, street-tree hazards/shade, and storm-drain/catch-basin local flooding.
 - Added the one-hundred-eleventh wave of household physical-order, object-access, and execution-friction domains, covering home clutter/pathway trip hazards, household cords/cables trip and entanglement, shelving/cabinet storage stability, household ladders/step stools/reach tasks, home-office workstation ergonomics, and toy small-parts choking/ingestion safety.
 - Added the one-hundred-tenth wave of household indoor-air and ventilation execution-continuity domains, covering home HVAC filter maintenance, portable room air cleaners, cooking ventilation and range hoods, humidity/dehumidifier moisture control, household dust/allergen source control, and household VOC/fragrance/product emissions.
