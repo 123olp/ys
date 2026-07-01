@@ -1,5 +1,36 @@
 # Diabetic Foot Ulcer and Amputation Prevention Continuity
 
+<!-- domain-standard:start -->
+## 标准域信息
+
+| 字段 | 内容 |
+| --- | --- |
+| 物理路径 | `domains/c2-source-maintenance/diabetic-foot-ulcer-amputation-prevention-continuity` |
+| 分级 | `C2` - 可能性源体维护层 |
+| 控制轴 | 生命载体维护 |
+| 分级理由 | 关键词显示该域主要维护身体、脑、器官、细胞、急性生命风险或衰老损伤控制。 |
+| 复核状态 | `heuristic-v0.1` |
+
+### Human Infra 追问
+
+这个域如何维护产生可能性的生命载体，例如身体、脑、器官、细胞、急性生命风险或衰老损伤控制？
+
+```text
+研究域对象
+  -> 影响变量 / 中间机制
+  -> 改变主体状态或外部条件
+  -> 改变风险、能力、时间成本或可达性
+  -> 改变有效寿命、有效时间或未来选择权
+```
+
+### 使用边界
+
+- 本域是研究与建模单元，不是个体医疗、法律、金融、工程、教育或安全操作建议。
+- 新增内容必须标明来源、适用对象、证据等级和不确定性；AI 总结不能作为事实源。
+- 若内容会改变分级、目录位置或上下游关系，先更新 `domains/_possibility-space-control/classification.tsv`。
+<!-- domain-standard:end -->
+
+
 `diabetic-foot-ulcer-amputation-prevention-continuity/` 研究糖尿病相关神经病变、血流不足、足部伤口、感染、鞋袜/足部保护、筛查和照护延迟如何影响行动能力、截肢风险和主体持续性。
 
 > 核心问题：糖尿病足把代谢、神经、血管、皮肤、感染和行动系统压缩在同一个末端失效点上。

@@ -1,5 +1,36 @@
 # Home Humidity Dehumidifier Moisture Control Continuity
 
+<!-- domain-standard:start -->
+## 标准域信息
+
+| 字段 | 内容 |
+| --- | --- |
+| 物理路径 | `domains/c5-ecological-substrate/home-humidity-dehumidifier-moisture-control-continuity` |
+| 分级 | `C5` - 可能性生态承载层 |
+| 控制轴 | 外部生态承载 |
+| 分级理由 | 关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。 |
+| 复核状态 | `heuristic-v0.1` |
+
+### Human Infra 追问
+
+这个域如何承载主体展开未来的外部世界条件，例如能源、水、食物、住房、通信、治理、经济和基础设施？
+
+```text
+研究域对象
+  -> 影响变量 / 中间机制
+  -> 改变主体状态或外部条件
+  -> 改变风险、能力、时间成本或可达性
+  -> 改变有效寿命、有效时间或未来选择权
+```
+
+### 使用边界
+
+- 本域是研究与建模单元，不是个体医疗、法律、金融、工程、教育或安全操作建议。
+- 新增内容必须标明来源、适用对象、证据等级和不确定性；AI 总结不能作为事实源。
+- 若内容会改变分级、目录位置或上下游关系，先更新 `domains/_possibility-space-control/classification.tsv`。
+<!-- domain-standard:end -->
+
+
 `home-humidity-dehumidifier-moisture-control-continuity` 研究家庭湿度、除湿机、加湿器、冷凝、地下室潮湿、舒适区间、设备维护和水分控制如何影响睡眠、呼吸、霉菌风险、材料损耗和恢复空间。
 
 > 核心问题：湿度不是舒适度小问题，而是把空气、建筑材料、霉菌、睡眠、呼吸和设备维护连接起来的家庭控制变量；湿度失控会让居住空间变成长期恢复负担。

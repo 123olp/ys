@@ -1,5 +1,36 @@
 # Children Teen Data Privacy Consent Continuity
 
+<!-- domain-standard:start -->
+## 标准域信息
+
+| 字段 | 内容 |
+| --- | --- |
+| 物理路径 | `domains/c4-conversion-channel/children-teen-data-privacy-consent-continuity` |
+| 分级 | `C4` - 可能性转换通道层 |
+| 控制轴 | 路径转换接口 |
+| 分级理由 | 关键词显示该域主要处理研究、数据、模型、服务入口、身份记录、转化或治理接口。 |
+| 复核状态 | `heuristic-v0.1` |
+
+### Human Infra 追问
+
+这个域如何把潜在可能性转成真实可用路径，例如研究、医疗、数据、制度、身份、资金或转化接口？
+
+```text
+研究域对象
+  -> 影响变量 / 中间机制
+  -> 改变主体状态或外部条件
+  -> 改变风险、能力、时间成本或可达性
+  -> 改变有效寿命、有效时间或未来选择权
+```
+
+### 使用边界
+
+- 本域是研究与建模单元，不是个体医疗、法律、金融、工程、教育或安全操作建议。
+- 新增内容必须标明来源、适用对象、证据等级和不确定性；AI 总结不能作为事实源。
+- 若内容会改变分级、目录位置或上下游关系，先更新 `domains/_possibility-space-control/classification.tsv`。
+<!-- domain-standard:end -->
+
+
 Children Teen Data Privacy Consent Continuity 关注儿童与青少年数据、家长同意、年龄门槛、教育技术、广告画像、社交平台、敏感数据和长期数字足迹如何影响未成年主体的发展、保护和未来选择权。
 
 ## 对象

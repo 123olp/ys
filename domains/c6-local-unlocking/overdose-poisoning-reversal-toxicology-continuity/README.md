@@ -1,5 +1,36 @@
 # Overdose Poisoning Reversal Toxicology Continuity
 
+<!-- domain-standard:start -->
+## 标准域信息
+
+| 字段 | 内容 |
+| --- | --- |
+| 物理路径 | `domains/c6-local-unlocking/overdose-poisoning-reversal-toxicology-continuity` |
+| 分级 | `C6` - 局部可能性解锁层 |
+| 控制轴 | 局部阻塞解除 |
+| 分级理由 | 未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。 |
+| 复核状态 | `heuristic-v0.1` |
+
+### Human Infra 追问
+
+这个域解除的是哪一个具体疾病、流程、服务、职业、家庭、社区或专项风险中的局部阻塞？
+
+```text
+研究域对象
+  -> 影响变量 / 中间机制
+  -> 改变主体状态或外部条件
+  -> 改变风险、能力、时间成本或可达性
+  -> 改变有效寿命、有效时间或未来选择权
+```
+
+### 使用边界
+
+- 本域是研究与建模单元，不是个体医疗、法律、金融、工程、教育或安全操作建议。
+- 新增内容必须标明来源、适用对象、证据等级和不确定性；AI 总结不能作为事实源。
+- 若内容会改变分级、目录位置或上下游关系，先更新 `domains/_possibility-space-control/classification.tsv`。
+<!-- domain-standard:end -->
+
+
 `overdose-poisoning-reversal-toxicology-continuity/` 研究药物过量、中毒、毒物中心、解毒/逆转窗口、呼吸抑制、监测转运和恢复服务如何降低可逆毒性暴露导致的死亡。
 
 > 核心问题：许多中毒和过量事件具有可逆窗口。主体持续性需要把毒性暴露从“无人识别的死亡”转化为可咨询、可逆转、可转运、可恢复的系统事件。

@@ -1,5 +1,36 @@
 # Portable Air Cleaner Room Filtration Continuity
 
+<!-- domain-standard:start -->
+## 标准域信息
+
+| 字段 | 内容 |
+| --- | --- |
+| 物理路径 | `domains/c3-generation-engine/portable-air-cleaner-room-filtration-continuity` |
+| 分级 | `C3` - 可能性生成引擎层 |
+| 控制轴 | 主体能力生成 |
+| 分级理由 | 关键词显示该域主要增强认知、学习、工具、AI、技能或沟通能力。 |
+| 复核状态 | `heuristic-v0.1` |
+
+### Human Infra 追问
+
+这个域如何放大主体生成新路径的能力，例如认知、学习、注意力、记忆、AI、工具和反馈复利？
+
+```text
+研究域对象
+  -> 影响变量 / 中间机制
+  -> 改变主体状态或外部条件
+  -> 改变风险、能力、时间成本或可达性
+  -> 改变有效寿命、有效时间或未来选择权
+```
+
+### 使用边界
+
+- 本域是研究与建模单元，不是个体医疗、法律、金融、工程、教育或安全操作建议。
+- 新增内容必须标明来源、适用对象、证据等级和不确定性；AI 总结不能作为事实源。
+- 若内容会改变分级、目录位置或上下游关系，先更新 `domains/_possibility-space-control/classification.tsv`。
+<!-- domain-standard:end -->
+
+
 `portable-air-cleaner-room-filtration-continuity` 研究便携式空气清洁器、房间级过滤、清洁空气递送、滤芯维护、噪声、电源和房间匹配如何影响睡眠、呼吸恢复、学习工作和照护空间。
 
 > 核心问题：当建筑通风不足、烟雾进入、过敏原负荷升高或临时暴露发生时，房间级过滤是家庭端最低摩擦的空气恢复接口；但它只有在匹配、维护、供电和可承受时才转化为有效保护。

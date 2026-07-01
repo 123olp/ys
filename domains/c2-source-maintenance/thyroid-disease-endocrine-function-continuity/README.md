@@ -1,5 +1,36 @@
 # Thyroid Disease Endocrine Function Continuity
 
+<!-- domain-standard:start -->
+## 标准域信息
+
+| 字段 | 内容 |
+| --- | --- |
+| 物理路径 | `domains/c2-source-maintenance/thyroid-disease-endocrine-function-continuity` |
+| 分级 | `C2` - 可能性源体维护层 |
+| 控制轴 | 生命载体维护 |
+| 分级理由 | 关键词显示该域主要维护身体、脑、器官、细胞、急性生命风险或衰老损伤控制。 |
+| 复核状态 | `heuristic-v0.1` |
+
+### Human Infra 追问
+
+这个域如何维护产生可能性的生命载体，例如身体、脑、器官、细胞、急性生命风险或衰老损伤控制？
+
+```text
+研究域对象
+  -> 影响变量 / 中间机制
+  -> 改变主体状态或外部条件
+  -> 改变风险、能力、时间成本或可达性
+  -> 改变有效寿命、有效时间或未来选择权
+```
+
+### 使用边界
+
+- 本域是研究与建模单元，不是个体医疗、法律、金融、工程、教育或安全操作建议。
+- 新增内容必须标明来源、适用对象、证据等级和不确定性；AI 总结不能作为事实源。
+- 若内容会改变分级、目录位置或上下游关系，先更新 `domains/_possibility-space-control/classification.tsv`。
+<!-- domain-standard:end -->
+
+
 `thyroid-disease-endocrine-function-continuity/` 研究甲状腺功能减退、甲状腺功能亢进、甲状腺结节/癌症通路、妊娠/中年阶段和长期内分泌稳定如何影响主体持续性。
 
 > 核心问题：甲状腺轴把能量、体温、情绪、心率、体重、认知速度和生殖阶段连接起来；失衡会把看似分散的症状转化为长期行动质量损耗。

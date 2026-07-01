@@ -35,6 +35,7 @@ REQUIRED_FILES = [
     ".github/ISSUE_TEMPLATE/data-pipeline.yml",
     "tools/README.md",
     "tools/arxiv_html_paper_tool.py",
+    "tools/update_domain_doc_contracts.py",
     "tools/arxiv-html-paper/AGENTS.md",
     "tools/arxiv-html-paper/README.md",
     "tools/arxiv-html-paper/assets/static/browse/0.3.4/images/icons/apple-touch-icon.png",

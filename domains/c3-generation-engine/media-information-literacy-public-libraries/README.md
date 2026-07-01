@@ -1,5 +1,36 @@
 # Media Information Literacy Public Libraries
 
+<!-- domain-standard:start -->
+## 标准域信息
+
+| 字段 | 内容 |
+| --- | --- |
+| 物理路径 | `domains/c3-generation-engine/media-information-literacy-public-libraries` |
+| 分级 | `C3` - 可能性生成引擎层 |
+| 控制轴 | 主体能力生成 |
+| 分级理由 | 主要放大主体学习、认知、工具使用和生成新路径的能力。 |
+| 复核状态 | `heuristic-v0.1` |
+
+### Human Infra 追问
+
+这个域如何放大主体生成新路径的能力，例如认知、学习、注意力、记忆、AI、工具和反馈复利？
+
+```text
+研究域对象
+  -> 影响变量 / 中间机制
+  -> 改变主体状态或外部条件
+  -> 改变风险、能力、时间成本或可达性
+  -> 改变有效寿命、有效时间或未来选择权
+```
+
+### 使用边界
+
+- 本域是研究与建模单元，不是个体医疗、法律、金融、工程、教育或安全操作建议。
+- 新增内容必须标明来源、适用对象、证据等级和不确定性；AI 总结不能作为事实源。
+- 若内容会改变分级、目录位置或上下游关系，先更新 `domains/_possibility-space-control/classification.tsv`。
+<!-- domain-standard:end -->
+
+
 `media-information-literacy-public-libraries/` 研究媒体与信息素养、公共图书馆、可信知识入口和社区学习空间如何支撑主体判断、学习、公共服务使用和社会参与。
 
 > 核心问题：信息存在不等于主体能够判断、理解和使用；如果缺少信息素养、可信入口、馆员支持和公共知识空间，主体会在 AI 内容、谣言、复杂服务和证据噪声中失去行动能力。

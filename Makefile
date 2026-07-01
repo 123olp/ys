@@ -14,6 +14,7 @@ py-compile:
 	python3 -m py_compile \
 		tools/arxiv_html_paper_tool.py \
 		tools/check_repository.py \
+		tools/update_domain_doc_contracts.py \
 		domains/c1-boundary-rewriting/longevity-evidence/scripts/collect_mvp_data.py \
 		domains/c1-boundary-rewriting/longevity-evidence/scripts/collect_core_data.py
 

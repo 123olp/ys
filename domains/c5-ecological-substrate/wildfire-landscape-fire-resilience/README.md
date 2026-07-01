@@ -1,5 +1,36 @@
 # Wildfire Landscape Fire Resilience
 
+<!-- domain-standard:start -->
+## 标准域信息
+
+| 字段 | 内容 |
+| --- | --- |
+| 物理路径 | `domains/c5-ecological-substrate/wildfire-landscape-fire-resilience` |
+| 分级 | `C5` - 可能性生态承载层 |
+| 控制轴 | 外部生态承载 |
+| 分级理由 | 主要提供主体展开未来所需的基础环境、资源、治理或基础设施。 |
+| 复核状态 | `heuristic-v0.1` |
+
+### Human Infra 追问
+
+这个域如何承载主体展开未来的外部世界条件，例如能源、水、食物、住房、通信、治理、经济和基础设施？
+
+```text
+研究域对象
+  -> 影响变量 / 中间机制
+  -> 改变主体状态或外部条件
+  -> 改变风险、能力、时间成本或可达性
+  -> 改变有效寿命、有效时间或未来选择权
+```
+
+### 使用边界
+
+- 本域是研究与建模单元，不是个体医疗、法律、金融、工程、教育或安全操作建议。
+- 新增内容必须标明来源、适用对象、证据等级和不确定性；AI 总结不能作为事实源。
+- 若内容会改变分级、目录位置或上下游关系，先更新 `domains/_possibility-space-control/classification.tsv`。
+<!-- domain-standard:end -->
+
+
 `wildfire-landscape-fire-resilience/` 研究野火、景观燃料、荒野-城市交界、烟雾、疏散、火灾天气和社区防火如何影响主体持续性。
 
 > 核心问题：野火不是单一灾害事件，而是气候、土地管理、建筑、空气、交通、通信、保险、公共卫生和社区恢复共同作用的复合风险。

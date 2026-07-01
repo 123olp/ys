@@ -1,5 +1,36 @@
 # Apprenticeship Work Based Learning Continuity
 
+<!-- domain-standard:start -->
+## 标准域信息
+
+| 字段 | 内容 |
+| --- | --- |
+| 物理路径 | `domains/c3-generation-engine/apprenticeship-work-based-learning-continuity` |
+| 分级 | `C3` - 可能性生成引擎层 |
+| 控制轴 | 主体能力生成 |
+| 分级理由 | 关键词显示该域主要增强认知、学习、工具、AI、技能或沟通能力。 |
+| 复核状态 | `heuristic-v0.1` |
+
+### Human Infra 追问
+
+这个域如何放大主体生成新路径的能力，例如认知、学习、注意力、记忆、AI、工具和反馈复利？
+
+```text
+研究域对象
+  -> 影响变量 / 中间机制
+  -> 改变主体状态或外部条件
+  -> 改变风险、能力、时间成本或可达性
+  -> 改变有效寿命、有效时间或未来选择权
+```
+
+### 使用边界
+
+- 本域是研究与建模单元，不是个体医疗、法律、金融、工程、教育或安全操作建议。
+- 新增内容必须标明来源、适用对象、证据等级和不确定性；AI 总结不能作为事实源。
+- 若内容会改变分级、目录位置或上下游关系，先更新 `domains/_possibility-space-control/classification.tsv`。
+<!-- domain-standard:end -->
+
+
 Apprenticeship Work Based Learning Continuity 关注注册学徒制、工作场景学习、导师制、在岗训练、工时记录、技能标准和行业认可证书如何把学习直接嵌入生产现场，并让主体通过工作获得可迁移能力。
 
 ## 对象

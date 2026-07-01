@@ -1,5 +1,36 @@
 # Chronic Liver Disease MASLD MASH Continuity
 
+<!-- domain-standard:start -->
+## 标准域信息
+
+| 字段 | 内容 |
+| --- | --- |
+| 物理路径 | `domains/c2-source-maintenance/chronic-liver-disease-masld-mash-continuity` |
+| 分级 | `C2` - 可能性源体维护层 |
+| 控制轴 | 生命载体维护 |
+| 分级理由 | 关键词显示该域主要维护身体、脑、器官、细胞、急性生命风险或衰老损伤控制。 |
+| 复核状态 | `heuristic-v0.1` |
+
+### Human Infra 追问
+
+这个域如何维护产生可能性的生命载体，例如身体、脑、器官、细胞、急性生命风险或衰老损伤控制？
+
+```text
+研究域对象
+  -> 影响变量 / 中间机制
+  -> 改变主体状态或外部条件
+  -> 改变风险、能力、时间成本或可达性
+  -> 改变有效寿命、有效时间或未来选择权
+```
+
+### 使用边界
+
+- 本域是研究与建模单元，不是个体医疗、法律、金融、工程、教育或安全操作建议。
+- 新增内容必须标明来源、适用对象、证据等级和不确定性；AI 总结不能作为事实源。
+- 若内容会改变分级、目录位置或上下游关系，先更新 `domains/_possibility-space-control/classification.tsv`。
+<!-- domain-standard:end -->
+
+
 `chronic-liver-disease-masld-mash-continuity/` 研究代谢功能障碍相关脂肪性肝病、MASH、纤维化、肝硬化、肝癌风险和代谢共病如何影响主体持续性。
 
 > 核心问题：慢性肝病常长期隐匿，但一旦进入纤维化、肝硬化或肝癌路径，会把代谢风险、药物安全、体力、认知和生命风险连接成系统性边界。

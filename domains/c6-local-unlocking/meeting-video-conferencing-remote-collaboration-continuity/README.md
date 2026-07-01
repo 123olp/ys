@@ -1,5 +1,36 @@
 # Meeting Video Conferencing Remote Collaboration Continuity
 
+<!-- domain-standard:start -->
+## 标准域信息
+
+| 字段 | 内容 |
+| --- | --- |
+| 物理路径 | `domains/c6-local-unlocking/meeting-video-conferencing-remote-collaboration-continuity` |
+| 分级 | `C6` - 局部可能性解锁层 |
+| 控制轴 | 局部阻塞解除 |
+| 分级理由 | 未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。 |
+| 复核状态 | `heuristic-v0.1` |
+
+### Human Infra 追问
+
+这个域解除的是哪一个具体疾病、流程、服务、职业、家庭、社区或专项风险中的局部阻塞？
+
+```text
+研究域对象
+  -> 影响变量 / 中间机制
+  -> 改变主体状态或外部条件
+  -> 改变风险、能力、时间成本或可达性
+  -> 改变有效寿命、有效时间或未来选择权
+```
+
+### 使用边界
+
+- 本域是研究与建模单元，不是个体医疗、法律、金融、工程、教育或安全操作建议。
+- 新增内容必须标明来源、适用对象、证据等级和不确定性；AI 总结不能作为事实源。
+- 若内容会改变分级、目录位置或上下游关系，先更新 `domains/_possibility-space-control/classification.tsv`。
+<!-- domain-standard:end -->
+
+
 `meeting-video-conferencing-remote-collaboration-continuity` 研究会议、视频会议、语音、屏幕共享、字幕、录制、协作白板、远程参与和会议资料如何影响主体跨距离完成协作任务。
 
 > 核心问题：远程会议不是简单通话，而是把身份、声音、画面、资料、同意、记录和行动项临时组合成协作现场。

@@ -4,6 +4,7 @@ All notable repository structure changes are recorded here.
 
 ## 2026-07-02
 
+- Added `tools/update_domain_doc_contracts.py` and regenerated standard README/AGENTS metadata and maintenance-contract blocks for all 990 formal research domains.
 - Moved all 990 formal research domains into physical C1-C6 tier directories under `domains/`, and added `physical_path` to `domains/_possibility-space-control/classification.tsv` as the path source of truth.
 - Added `domains/_possibility-space-control/` as a control-plane index that classifies 990 formal research domains by possibility-space control power rather than feasibility or evidence maturity.
 - Added `domains/c2-source-maintenance/synthetic-biological-intelligence-organoid-computing-continuity/` for SBI/OI/BI, DishBrain, CL API, in vitro neural networks, organoid computing, closed-loop learning, agency/sentience terminology, and governance boundaries.

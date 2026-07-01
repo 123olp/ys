@@ -516,3 +516,4 @@ human_infra/
 - 2026-07-02：新增 `domains/c2-source-maintenance/synthetic-biological-intelligence-organoid-computing-continuity/`，把 SBI/OI/BI、DishBrain、CL API 和脑类器官智能资料沉淀为独立研究域。
 - 2026-07-02：新增 `domains/_possibility-space-control/`，按可能性空间控制力对 990 个正式研究域进行 C1-C6 根本性分级。
 - 2026-07-02：新增 C1-C6 物理分级目录，并把 990 个正式研究域移动到对应 tier；`classification.tsv` 新增 `physical_path` 作为真实路径索引。
+- 2026-07-02：新增 `tools/update_domain_doc_contracts.py`，为 990 个正式研究域的 README/AGENTS 生成标准域信息、Human Infra 追问和维护契约块。

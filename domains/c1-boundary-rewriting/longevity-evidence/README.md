@@ -1,5 +1,36 @@
 # Longevity Evidence
 
+<!-- domain-standard:start -->
+## 标准域信息
+
+| 字段 | 内容 |
+| --- | --- |
+| 物理路径 | `domains/c1-boundary-rewriting/longevity-evidence` |
+| 分级 | `C1` - 可能性边界改写层 |
+| 控制轴 | 寿命边界 |
+| 分级理由 | 直接承载延长寿命和长寿逃逸相关证据账本。 |
+| 复核状态 | `heuristic-v0.1` |
+
+### Human Infra 追问
+
+这个域如何直接改写主体持续性边界，例如寿命、死亡、时间差分、身份连续性或未来抵达能力？
+
+```text
+研究域对象
+  -> 影响变量 / 中间机制
+  -> 改变主体状态或外部条件
+  -> 改变风险、能力、时间成本或可达性
+  -> 改变有效寿命、有效时间或未来选择权
+```
+
+### 使用边界
+
+- 本域是研究与建模单元，不是个体医疗、法律、金融、工程、教育或安全操作建议。
+- 新增内容必须标明来源、适用对象、证据等级和不确定性；AI 总结不能作为事实源。
+- 若内容会改变分级、目录位置或上下游关系，先更新 `domains/_possibility-space-control/classification.tsv`。
+<!-- domain-standard:end -->
+
+
 Longevity Evidence 承接原 Biocat，是 Human Infra 中负责健康寿命、长寿干预、公开证据、临床试验和安全风险的子域。
 
 一句话定位：

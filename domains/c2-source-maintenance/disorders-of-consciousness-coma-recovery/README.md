@@ -1,5 +1,36 @@
 # Disorders Of Consciousness Coma Recovery
 
+<!-- domain-standard:start -->
+## 标准域信息
+
+| 字段 | 内容 |
+| --- | --- |
+| 物理路径 | `domains/c2-source-maintenance/disorders-of-consciousness-coma-recovery` |
+| 分级 | `C2` - 可能性源体维护层 |
+| 控制轴 | 生命载体维护 |
+| 分级理由 | 直接维护身体、脑、器官、衰老、损伤或生命系统这些可能性源体。 |
+| 复核状态 | `heuristic-v0.1` |
+
+### Human Infra 追问
+
+这个域如何维护产生可能性的生命载体，例如身体、脑、器官、细胞、急性生命风险或衰老损伤控制？
+
+```text
+研究域对象
+  -> 影响变量 / 中间机制
+  -> 改变主体状态或外部条件
+  -> 改变风险、能力、时间成本或可达性
+  -> 改变有效寿命、有效时间或未来选择权
+```
+
+### 使用边界
+
+- 本域是研究与建模单元，不是个体医疗、法律、金融、工程、教育或安全操作建议。
+- 新增内容必须标明来源、适用对象、证据等级和不确定性；AI 总结不能作为事实源。
+- 若内容会改变分级、目录位置或上下游关系，先更新 `domains/_possibility-space-control/classification.tsv`。
+<!-- domain-standard:end -->
+
+
 `disorders-of-consciousness-coma-recovery/` 研究昏迷、植物状态/无反应觉醒综合征、最低意识状态、意识评估、预后、康复和照护伦理，如何影响 Human Infra 的主体连续性判定。
 
 > 核心问题：有效永生不能只问“身体是否还活着”。当意识、反应、沟通和主观体验无法确认时，主体持续性进入最困难的边界：存在状态、恢复机会、代理决策和尊严保护必须同时审查。

@@ -1,5 +1,36 @@
 # Household Cord Cable Trip Entanglement Continuity
 
+<!-- domain-standard:start -->
+## 标准域信息
+
+| 字段 | 内容 |
+| --- | --- |
+| 物理路径 | `domains/c5-ecological-substrate/household-cord-cable-trip-entanglement-continuity` |
+| 分级 | `C5` - 可能性生态承载层 |
+| 控制轴 | 外部生态承载 |
+| 分级理由 | 关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。 |
+| 复核状态 | `heuristic-v0.1` |
+
+### Human Infra 追问
+
+这个域如何承载主体展开未来的外部世界条件，例如能源、水、食物、住房、通信、治理、经济和基础设施？
+
+```text
+研究域对象
+  -> 影响变量 / 中间机制
+  -> 改变主体状态或外部条件
+  -> 改变风险、能力、时间成本或可达性
+  -> 改变有效寿命、有效时间或未来选择权
+```
+
+### 使用边界
+
+- 本域是研究与建模单元，不是个体医疗、法律、金融、工程、教育或安全操作建议。
+- 新增内容必须标明来源、适用对象、证据等级和不确定性；AI 总结不能作为事实源。
+- 若内容会改变分级、目录位置或上下游关系，先更新 `domains/_possibility-space-control/classification.tsv`。
+<!-- domain-standard:end -->
+
+
 `household-cord-cable-trip-entanglement-continuity` 研究充电线、延长线、插排、网线、设备线缆、临时供电和穿越通道的线缆如何影响绊倒、缠绕、供电可靠性和家庭任务连续性。
 
 > 核心问题：线缆是数字生活、照护设备和家庭办公的底层连接，但当它穿越路径、堆积床边或承担长期临时供电时，也会变成绊倒、缠绕、火灾和设备失效的隐形接口。

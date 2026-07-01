@@ -1,5 +1,36 @@
 # Clinical Trials Regulatory Science Translation
 
+<!-- domain-standard:start -->
+## 标准域信息
+
+| 字段 | 内容 |
+| --- | --- |
+| 物理路径 | `domains/c4-conversion-channel/clinical-trials-regulatory-science-translation` |
+| 分级 | `C4` - 可能性转换通道层 |
+| 控制轴 | 路径转换接口 |
+| 分级理由 | 主要把科学、医疗、数据、制度或技术从潜在能力转成真实可用路径。 |
+| 复核状态 | `heuristic-v0.1` |
+
+### Human Infra 追问
+
+这个域如何把潜在可能性转成真实可用路径，例如研究、医疗、数据、制度、身份、资金或转化接口？
+
+```text
+研究域对象
+  -> 影响变量 / 中间机制
+  -> 改变主体状态或外部条件
+  -> 改变风险、能力、时间成本或可达性
+  -> 改变有效寿命、有效时间或未来选择权
+```
+
+### 使用边界
+
+- 本域是研究与建模单元，不是个体医疗、法律、金融、工程、教育或安全操作建议。
+- 新增内容必须标明来源、适用对象、证据等级和不确定性；AI 总结不能作为事实源。
+- 若内容会改变分级、目录位置或上下游关系，先更新 `domains/_possibility-space-control/classification.tsv`。
+<!-- domain-standard:end -->
+
+
 `clinical-trials-regulatory-science-translation/` 研究临床试验、监管科学、真实世界证据、伦理审查、终点选择、安全监测和批准路径如何把生物医学发现转化为可验证、可治理、可获得的干预。
 
 > 核心问题：一个技术“可能有用”不等于能进入人体、通过试验、被监管接受并安全扩散。有效永生需要的不只是发现，还需要把发现穿过临床证据和监管科学的转化通道。

@@ -10,6 +10,7 @@ tools/
 ├── README.md                         # 工具入口和常用命令
 ├── arxiv_html_paper_tool.py          # arXiv HTML papers 复用 CLI
 ├── check_repository.py               # 仓库结构和 Markdown 链接检查
+├── update_domain_doc_contracts.py     # 研究域 README/AGENTS 标准块生成器
 └── arxiv-html-paper/
     ├── AGENTS.md                     # arXiv 复用工具包说明
     ├── CHANGELOG.md                  # 工具包版本变更记录
@@ -29,6 +30,7 @@ tools/
 ## 职责边界
 
 - `check_repository.py` 只检查仓库结构、临时文件名、Python 缓存和本地 Markdown 链接。
+- `update_domain_doc_contracts.py` 只根据 `domains/_possibility-space-control/classification.tsv` 为正式研究域 README/AGENTS 生成标准元信息和维护契约块。
 - `arxiv_html_paper_tool.py` 只负责 arXiv HTML papers 资源安装、资产校验、Astro 布局和页面骨架生成。
 - `arxiv-html-paper/templates/` 保留可复制模板，不承载 Human Infra 正文理论。
 - `arxiv-html-paper/CONTRACT.md` 和 `arxiv-html-paper/arxiv-html-paper.contract.v1.json` 是其他项目消费工具包的稳定契约。

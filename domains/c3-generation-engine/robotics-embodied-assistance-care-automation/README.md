@@ -1,5 +1,36 @@
 # Robotics Embodied Assistance Care Automation
 
+<!-- domain-standard:start -->
+## 标准域信息
+
+| 字段 | 内容 |
+| --- | --- |
+| 物理路径 | `domains/c3-generation-engine/robotics-embodied-assistance-care-automation` |
+| 分级 | `C3` - 可能性生成引擎层 |
+| 控制轴 | 主体能力生成 |
+| 分级理由 | 主要放大主体学习、认知、工具使用和生成新路径的能力。 |
+| 复核状态 | `heuristic-v0.1` |
+
+### Human Infra 追问
+
+这个域如何放大主体生成新路径的能力，例如认知、学习、注意力、记忆、AI、工具和反馈复利？
+
+```text
+研究域对象
+  -> 影响变量 / 中间机制
+  -> 改变主体状态或外部条件
+  -> 改变风险、能力、时间成本或可达性
+  -> 改变有效寿命、有效时间或未来选择权
+```
+
+### 使用边界
+
+- 本域是研究与建模单元，不是个体医疗、法律、金融、工程、教育或安全操作建议。
+- 新增内容必须标明来源、适用对象、证据等级和不确定性；AI 总结不能作为事实源。
+- 若内容会改变分级、目录位置或上下游关系，先更新 `domains/_possibility-space-control/classification.tsv`。
+<!-- domain-standard:end -->
+
+
 机器人、具身辅助与照护自动化域研究：主体如何通过机器人、自动化设备、外骨骼、家庭辅助系统和照护机器人获得移动、操作、陪护、监测、康复和日常任务支持。
 
 ## 对象

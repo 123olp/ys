@@ -1,5 +1,36 @@
 # ATV Off Highway Vehicle Injury Prevention Continuity
 
+<!-- domain-standard:start -->
+## 标准域信息
+
+| 字段 | 内容 |
+| --- | --- |
+| 物理路径 | `domains/c6-local-unlocking/atv-off-highway-vehicle-injury-prevention-continuity` |
+| 分级 | `C6` - 局部可能性解锁层 |
+| 控制轴 | 局部阻塞解除 |
+| 分级理由 | 未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。 |
+| 复核状态 | `heuristic-v0.1` |
+
+### Human Infra 追问
+
+这个域解除的是哪一个具体疾病、流程、服务、职业、家庭、社区或专项风险中的局部阻塞？
+
+```text
+研究域对象
+  -> 影响变量 / 中间机制
+  -> 改变主体状态或外部条件
+  -> 改变风险、能力、时间成本或可达性
+  -> 改变有效寿命、有效时间或未来选择权
+```
+
+### 使用边界
+
+- 本域是研究与建模单元，不是个体医疗、法律、金融、工程、教育或安全操作建议。
+- 新增内容必须标明来源、适用对象、证据等级和不确定性；AI 总结不能作为事实源。
+- 若内容会改变分级、目录位置或上下游关系，先更新 `domains/_possibility-space-control/classification.tsv`。
+<!-- domain-standard:end -->
+
+
 `atv-off-highway-vehicle-injury-prevention-continuity/` 研究 ATV、越野车、青少年驾驶、翻覆、头部伤害、道路/地形暴露和产品安全如何影响主体持续性。
 
 > 核心问题：越野车辆把娱乐、交通替代、速度、地形和儿童/青少年判断力连接成高能机械伤害窗口。

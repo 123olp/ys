@@ -1,5 +1,36 @@
 # Scientific Instrumentation Sensor Calibration Maintenance
 
+<!-- domain-standard:start -->
+## 标准域信息
+
+| 字段 | 内容 |
+| --- | --- |
+| 物理路径 | `domains/c4-conversion-channel/scientific-instrumentation-sensor-calibration-maintenance` |
+| 分级 | `C4` - 可能性转换通道层 |
+| 控制轴 | 路径转换接口 |
+| 分级理由 | 主要把科学、医疗、数据、制度或技术从潜在能力转成真实可用路径。 |
+| 复核状态 | `heuristic-v0.1` |
+
+### Human Infra 追问
+
+这个域如何把潜在可能性转成真实可用路径，例如研究、医疗、数据、制度、身份、资金或转化接口？
+
+```text
+研究域对象
+  -> 影响变量 / 中间机制
+  -> 改变主体状态或外部条件
+  -> 改变风险、能力、时间成本或可达性
+  -> 改变有效寿命、有效时间或未来选择权
+```
+
+### 使用边界
+
+- 本域是研究与建模单元，不是个体医疗、法律、金融、工程、教育或安全操作建议。
+- 新增内容必须标明来源、适用对象、证据等级和不确定性；AI 总结不能作为事实源。
+- 若内容会改变分级、目录位置或上下游关系，先更新 `domains/_possibility-space-control/classification.tsv`。
+<!-- domain-standard:end -->
+
+
 `scientific-instrumentation-sensor-calibration-maintenance/` 研究科研仪器、传感器、校准、维护、漂移、测量不确定性、参考材料和设备生命周期，如何影响 Human Infra 的测量、实验和模型输入。
 
 > 核心问题：主体持续性研究依赖可穿戴、实验仪器、影像设备、传感器、测序平台和环境监测。若仪器漂移、校准失效或维护缺失，模型会把设备误差当成生命路径信号。

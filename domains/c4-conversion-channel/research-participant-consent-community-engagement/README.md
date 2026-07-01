@@ -1,5 +1,36 @@
 # Research Participant Consent Community Engagement
 
+<!-- domain-standard:start -->
+## 标准域信息
+
+| 字段 | 内容 |
+| --- | --- |
+| 物理路径 | `domains/c4-conversion-channel/research-participant-consent-community-engagement` |
+| 分级 | `C4` - 可能性转换通道层 |
+| 控制轴 | 路径转换接口 |
+| 分级理由 | 主要把科学、医疗、数据、制度或技术从潜在能力转成真实可用路径。 |
+| 复核状态 | `heuristic-v0.1` |
+
+### Human Infra 追问
+
+这个域如何把潜在可能性转成真实可用路径，例如研究、医疗、数据、制度、身份、资金或转化接口？
+
+```text
+研究域对象
+  -> 影响变量 / 中间机制
+  -> 改变主体状态或外部条件
+  -> 改变风险、能力、时间成本或可达性
+  -> 改变有效寿命、有效时间或未来选择权
+```
+
+### 使用边界
+
+- 本域是研究与建模单元，不是个体医疗、法律、金融、工程、教育或安全操作建议。
+- 新增内容必须标明来源、适用对象、证据等级和不确定性；AI 总结不能作为事实源。
+- 若内容会改变分级、目录位置或上下游关系，先更新 `domains/_possibility-space-control/classification.tsv`。
+<!-- domain-standard:end -->
+
+
 `research-participant-consent-community-engagement/` 研究研究参与者同意、退出、再联系、社区参与、患者伙伴关系、信任和研究回馈，如何决定长期人体研究能否持续、合规且被主体认可。
 
 > 核心问题：Human Infra 依赖长期人体数据、队列、样本、真实世界证据和个体反馈。若参与者不能理解、同意、退出、获知风险并参与研究目标塑造，研究基础设施会从主体持续性工具滑向数据抽取系统。

@@ -1,5 +1,36 @@
 # Advanced Nuclear Energy Safety Generation Continuity
 
+<!-- domain-standard:start -->
+## 标准域信息
+
+| 字段 | 内容 |
+| --- | --- |
+| 物理路径 | `domains/c2-source-maintenance/advanced-nuclear-energy-safety-generation-continuity` |
+| 分级 | `C2` - 可能性源体维护层 |
+| 控制轴 | 生命载体维护 |
+| 分级理由 | 关键词显示该域主要维护身体、脑、器官、细胞、急性生命风险或衰老损伤控制。 |
+| 复核状态 | `heuristic-v0.1` |
+
+### Human Infra 追问
+
+这个域如何维护产生可能性的生命载体，例如身体、脑、器官、细胞、急性生命风险或衰老损伤控制？
+
+```text
+研究域对象
+  -> 影响变量 / 中间机制
+  -> 改变主体状态或外部条件
+  -> 改变风险、能力、时间成本或可达性
+  -> 改变有效寿命、有效时间或未来选择权
+```
+
+### 使用边界
+
+- 本域是研究与建模单元，不是个体医疗、法律、金融、工程、教育或安全操作建议。
+- 新增内容必须标明来源、适用对象、证据等级和不确定性；AI 总结不能作为事实源。
+- 若内容会改变分级、目录位置或上下游关系，先更新 `domains/_possibility-space-control/classification.tsv`。
+<!-- domain-standard:end -->
+
+
 `advanced-nuclear-energy-safety-generation-continuity/` 研究核能、先进反应堆、小型模块化反应堆、核燃料供应、许可、安全监管、废物管理和低碳可靠发电如何影响长期能源、算力和工业连续性。
 
 > 核心问题：长时间尺度的技术文明需要可靠、低碳、可调度能源；核能可能是其中一条路径，但其价值必须经过安全、监管、废物、燃料和社会许可约束。

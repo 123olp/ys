@@ -1,5 +1,36 @@
 # Cybersecurity Resilience Critical Services
 
+<!-- domain-standard:start -->
+## 标准域信息
+
+| 字段 | 内容 |
+| --- | --- |
+| 物理路径 | `domains/c5-ecological-substrate/cybersecurity-resilience-critical-services` |
+| 分级 | `C5` - 可能性生态承载层 |
+| 控制轴 | 外部生态承载 |
+| 分级理由 | 关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。 |
+| 复核状态 | `heuristic-v0.1` |
+
+### Human Infra 追问
+
+这个域如何承载主体展开未来的外部世界条件，例如能源、水、食物、住房、通信、治理、经济和基础设施？
+
+```text
+研究域对象
+  -> 影响变量 / 中间机制
+  -> 改变主体状态或外部条件
+  -> 改变风险、能力、时间成本或可达性
+  -> 改变有效寿命、有效时间或未来选择权
+```
+
+### 使用边界
+
+- 本域是研究与建模单元，不是个体医疗、法律、金融、工程、教育或安全操作建议。
+- 新增内容必须标明来源、适用对象、证据等级和不确定性；AI 总结不能作为事实源。
+- 若内容会改变分级、目录位置或上下游关系，先更新 `domains/_possibility-space-control/classification.tsv`。
+<!-- domain-standard:end -->
+
+
 `cybersecurity-resilience-critical-services/` 研究网络安全、关键服务韧性、事件响应、身份保护、供应链安全和数字系统恢复如何防止医疗、金融、能源、公共服务和个人数据被攻击截断。
 
 > 核心问题：当医疗、福利、金融、身份、通信和 AI 工具都数字化后，网络攻击不再只是信息技术问题，而是主体持续性、资源可达、照护连续和未来选择权问题。

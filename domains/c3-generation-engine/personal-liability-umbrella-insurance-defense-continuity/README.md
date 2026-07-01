@@ -1,5 +1,36 @@
 # 个人责任伞形保险与法律防御连续性
 
+<!-- domain-standard:start -->
+## 标准域信息
+
+| 字段 | 内容 |
+| --- | --- |
+| 物理路径 | `domains/c3-generation-engine/personal-liability-umbrella-insurance-defense-continuity` |
+| 分级 | `C3` - 可能性生成引擎层 |
+| 控制轴 | 主体能力生成 |
+| 分级理由 | 关键词显示该域主要增强认知、学习、工具、AI、技能或沟通能力。 |
+| 复核状态 | `heuristic-v0.1` |
+
+### Human Infra 追问
+
+这个域如何放大主体生成新路径的能力，例如认知、学习、注意力、记忆、AI、工具和反馈复利？
+
+```text
+研究域对象
+  -> 影响变量 / 中间机制
+  -> 改变主体状态或外部条件
+  -> 改变风险、能力、时间成本或可达性
+  -> 改变有效寿命、有效时间或未来选择权
+```
+
+### 使用边界
+
+- 本域是研究与建模单元，不是个体医疗、法律、金融、工程、教育或安全操作建议。
+- 新增内容必须标明来源、适用对象、证据等级和不确定性；AI 总结不能作为事实源。
+- 若内容会改变分级、目录位置或上下游关系，先更新 `domains/_possibility-space-control/classification.tsv`。
+<!-- domain-standard:end -->
+
+
 本域研究 personal liability、umbrella insurance、excess liability、home/auto liability limits、defense costs、settlement、exclusions、claim notice 和资产保护如何影响主体在重大责任事件后的住房、储蓄和未来选择权。它关注责任风险转移和防御成本连续性，而不是保险购买、诉讼策略或法律建议。
 
 ## 研究对象

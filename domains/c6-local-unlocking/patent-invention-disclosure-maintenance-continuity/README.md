@@ -1,5 +1,36 @@
 # Patent Invention Disclosure Maintenance Continuity
 
+<!-- domain-standard:start -->
+## 标准域信息
+
+| 字段 | 内容 |
+| --- | --- |
+| 物理路径 | `domains/c6-local-unlocking/patent-invention-disclosure-maintenance-continuity` |
+| 分级 | `C6` - 局部可能性解锁层 |
+| 控制轴 | 局部阻塞解除 |
+| 分级理由 | 未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。 |
+| 复核状态 | `heuristic-v0.1` |
+
+### Human Infra 追问
+
+这个域解除的是哪一个具体疾病、流程、服务、职业、家庭、社区或专项风险中的局部阻塞？
+
+```text
+研究域对象
+  -> 影响变量 / 中间机制
+  -> 改变主体状态或外部条件
+  -> 改变风险、能力、时间成本或可达性
+  -> 改变有效寿命、有效时间或未来选择权
+```
+
+### 使用边界
+
+- 本域是研究与建模单元，不是个体医疗、法律、金融、工程、教育或安全操作建议。
+- 新增内容必须标明来源、适用对象、证据等级和不确定性；AI 总结不能作为事实源。
+- 若内容会改变分级、目录位置或上下游关系，先更新 `domains/_possibility-space-control/classification.tsv`。
+<!-- domain-standard:end -->
+
+
 `patent-invention-disclosure-maintenance-continuity` 研究专利、发明披露、优先权、公开、转让、维护费、技术许可和 prior art 记录如何影响科研成果、工程发明、创业资产、技术转移和未来技术可及性。
 
 > 核心问题：发明如果不能被记录、公开、归属、维护和转化，就会在论文、实验室、公司和供应链之间断裂，无法进入主体可用技术窗口。

@@ -1,5 +1,36 @@
 # Utility Affordability Shutoff Protection Continuity
 
+<!-- domain-standard:start -->
+## 标准域信息
+
+| 字段 | 内容 |
+| --- | --- |
+| 物理路径 | `domains/c5-ecological-substrate/utility-affordability-shutoff-protection-continuity` |
+| 分级 | `C5` - 可能性生态承载层 |
+| 控制轴 | 外部生态承载 |
+| 分级理由 | 主要提供主体展开未来所需的基础环境、资源、治理或基础设施。 |
+| 复核状态 | `heuristic-v0.1` |
+
+### Human Infra 追问
+
+这个域如何承载主体展开未来的外部世界条件，例如能源、水、食物、住房、通信、治理、经济和基础设施？
+
+```text
+研究域对象
+  -> 影响变量 / 中间机制
+  -> 改变主体状态或外部条件
+  -> 改变风险、能力、时间成本或可达性
+  -> 改变有效寿命、有效时间或未来选择权
+```
+
+### 使用边界
+
+- 本域是研究与建模单元，不是个体医疗、法律、金融、工程、教育或安全操作建议。
+- 新增内容必须标明来源、适用对象、证据等级和不确定性；AI 总结不能作为事实源。
+- 若内容会改变分级、目录位置或上下游关系，先更新 `domains/_possibility-space-control/classification.tsv`。
+<!-- domain-standard:end -->
+
+
 `utility-affordability-shutoff-protection-continuity/` 研究电、水、燃气、热能和通信等公共事业服务在账单压力、欠费、断供、援助、分期、消费者保护和危机豁免下如何保持主体持续性。
 
 > 核心问题：服务系统存在不等于主体能持续使用。公用事业可负担性失败会让电、水、热、通信和医疗设备供能在家庭层面被切断，形成“基础设施存在但不可用”的断点。

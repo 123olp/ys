@@ -1,5 +1,36 @@
 # Allergic Atopic Disease Immunologic Burden Continuity
 
+<!-- domain-standard:start -->
+## 标准域信息
+
+| 字段 | 内容 |
+| --- | --- |
+| 物理路径 | `domains/c2-source-maintenance/allergic-atopic-disease-immunologic-burden-continuity` |
+| 分级 | `C2` - 可能性源体维护层 |
+| 控制轴 | 生命载体维护 |
+| 分级理由 | 关键词显示该域主要维护身体、脑、器官、细胞、急性生命风险或衰老损伤控制。 |
+| 复核状态 | `heuristic-v0.1` |
+
+### Human Infra 追问
+
+这个域如何维护产生可能性的生命载体，例如身体、脑、器官、细胞、急性生命风险或衰老损伤控制？
+
+```text
+研究域对象
+  -> 影响变量 / 中间机制
+  -> 改变主体状态或外部条件
+  -> 改变风险、能力、时间成本或可达性
+  -> 改变有效寿命、有效时间或未来选择权
+```
+
+### 使用边界
+
+- 本域是研究与建模单元，不是个体医疗、法律、金融、工程、教育或安全操作建议。
+- 新增内容必须标明来源、适用对象、证据等级和不确定性；AI 总结不能作为事实源。
+- 若内容会改变分级、目录位置或上下游关系，先更新 `domains/_possibility-space-control/classification.tsv`。
+<!-- domain-standard:end -->
+
+
 `allergic-atopic-disease-immunologic-burden-continuity/` 研究过敏性鼻炎、特应性皮炎、食物过敏、过敏原暴露、瘙痒睡眠损害、过敏反应风险和长期免疫负担如何影响主体持续性。
 
 > 核心问题：过敏和特应性疾病常被低估，但它们会通过睡眠破坏、瘙痒、呼吸症状、食物/环境限制、急性反应风险和污名持续消耗有效时间。

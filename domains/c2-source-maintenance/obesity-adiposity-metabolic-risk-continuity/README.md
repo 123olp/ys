@@ -1,5 +1,36 @@
 # Obesity Adiposity Metabolic Risk Continuity
 
+<!-- domain-standard:start -->
+## 标准域信息
+
+| 字段 | 内容 |
+| --- | --- |
+| 物理路径 | `domains/c2-source-maintenance/obesity-adiposity-metabolic-risk-continuity` |
+| 分级 | `C2` - 可能性源体维护层 |
+| 控制轴 | 生命载体维护 |
+| 分级理由 | 关键词显示该域主要维护身体、脑、器官、细胞、急性生命风险或衰老损伤控制。 |
+| 复核状态 | `heuristic-v0.1` |
+
+### Human Infra 追问
+
+这个域如何维护产生可能性的生命载体，例如身体、脑、器官、细胞、急性生命风险或衰老损伤控制？
+
+```text
+研究域对象
+  -> 影响变量 / 中间机制
+  -> 改变主体状态或外部条件
+  -> 改变风险、能力、时间成本或可达性
+  -> 改变有效寿命、有效时间或未来选择权
+```
+
+### 使用边界
+
+- 本域是研究与建模单元，不是个体医疗、法律、金融、工程、教育或安全操作建议。
+- 新增内容必须标明来源、适用对象、证据等级和不确定性；AI 总结不能作为事实源。
+- 若内容会改变分级、目录位置或上下游关系，先更新 `domains/_possibility-space-control/classification.tsv`。
+<!-- domain-standard:end -->
+
+
 `obesity-adiposity-metabolic-risk-continuity/` 研究肥胖、脂肪分布、代谢风险、结构性环境、体重管理服务、污名风险和长期功能结局如何影响主体持续性。
 
 > 核心问题：肥胖和脂肪分布不是单一意志问题，而是生物、药物、食物环境、睡眠、压力、城市设计、收入和照护系统共同作用的长期风险状态。有效永生需要把它建模为代谢、心血管、肌骨、癌症和有效时间的多路径变量。

@@ -1,5 +1,36 @@
 # Brain Preservation Connectomics Emulation
 
+<!-- domain-standard:start -->
+## 标准域信息
+
+| 字段 | 内容 |
+| --- | --- |
+| 物理路径 | `domains/c1-boundary-rewriting/brain-preservation-connectomics-emulation` |
+| 分级 | `C1` - 可能性边界改写层 |
+| 控制轴 | 脑保存/身份边界 |
+| 分级理由 | 直接处理脑结构保存、connectomics 和 emulation 对主体连续性的边界问题。 |
+| 复核状态 | `heuristic-v0.1` |
+
+### Human Infra 追问
+
+这个域如何直接改写主体持续性边界，例如寿命、死亡、时间差分、身份连续性或未来抵达能力？
+
+```text
+研究域对象
+  -> 影响变量 / 中间机制
+  -> 改变主体状态或外部条件
+  -> 改变风险、能力、时间成本或可达性
+  -> 改变有效寿命、有效时间或未来选择权
+```
+
+### 使用边界
+
+- 本域是研究与建模单元，不是个体医疗、法律、金融、工程、教育或安全操作建议。
+- 新增内容必须标明来源、适用对象、证据等级和不确定性；AI 总结不能作为事实源。
+- 若内容会改变分级、目录位置或上下游关系，先更新 `domains/_possibility-space-control/classification.tsv`。
+<!-- domain-standard:end -->
+
+
 `brain-preservation-connectomics-emulation/` 研究脑保存、连接组学、神经结构可读性、全脑仿真和 mind uploading 相关假设，如何影响 Human Infra 的人格连续性、信息保存和远期去具身路径。
 
 > 核心问题：如果主体连续性部分依赖大脑结构、连接、动态和记忆痕迹，那么远期“保存或重建主体”的任何说法，都必须先回答脑信息能否被足够完整地保存、读取、解释和重新实现。

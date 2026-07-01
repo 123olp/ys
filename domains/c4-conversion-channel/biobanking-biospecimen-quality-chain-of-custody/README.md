@@ -1,5 +1,36 @@
 # Biobanking Biospecimen Quality Chain Of Custody
 
+<!-- domain-standard:start -->
+## 标准域信息
+
+| 字段 | 内容 |
+| --- | --- |
+| 物理路径 | `domains/c4-conversion-channel/biobanking-biospecimen-quality-chain-of-custody` |
+| 分级 | `C4` - 可能性转换通道层 |
+| 控制轴 | 路径转换接口 |
+| 分级理由 | 主要把科学、医疗、数据、制度或技术从潜在能力转成真实可用路径。 |
+| 复核状态 | `heuristic-v0.1` |
+
+### Human Infra 追问
+
+这个域如何把潜在可能性转成真实可用路径，例如研究、医疗、数据、制度、身份、资金或转化接口？
+
+```text
+研究域对象
+  -> 影响变量 / 中间机制
+  -> 改变主体状态或外部条件
+  -> 改变风险、能力、时间成本或可达性
+  -> 改变有效寿命、有效时间或未来选择权
+```
+
+### 使用边界
+
+- 本域是研究与建模单元，不是个体医疗、法律、金融、工程、教育或安全操作建议。
+- 新增内容必须标明来源、适用对象、证据等级和不确定性；AI 总结不能作为事实源。
+- 若内容会改变分级、目录位置或上下游关系，先更新 `domains/_possibility-space-control/classification.tsv`。
+<!-- domain-standard:end -->
+
+
 `biobanking-biospecimen-quality-chain-of-custody/` 研究生物样本库、样本采集、预分析变量、质量控制、冷链、样本追踪、保管链和二次使用，如何影响人体证据、组学研究和未来技术窗口。
 
 > 核心问题：很多长寿、癌症、组学、重编程和生物标志物研究都依赖样本。样本若采集、处理、储存、运输或身份链出错，后续模型再先进也只是在放大错误输入。
