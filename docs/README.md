@@ -130,6 +130,7 @@ docs/
 │   ├── 0112-add-one-hundred-seventh-wave-household-water-wastewater-execution-domains.md
 │   ├── 0113-add-one-hundred-eighth-wave-household-energy-thermal-safety-domains.md
 │   ├── 0114-add-one-hundred-ninth-wave-household-waste-disposal-execution-domains.md
+│   ├── 0115-add-one-hundred-tenth-wave-household-indoor-air-ventilation-execution-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -418,6 +419,12 @@ docs/
     - Then read `../domains/e-waste-battery-recycling-disposal-continuity/README.md` for e-waste, lithium-ion batteries, button batteries, household batteries, device retirement, take-back, recycling, or battery-disposal continuity.
     - Then read `../domains/food-scrap-composting-pest-odor-continuity/README.md` for food scraps, composting, countertop bins, curbside organics, pests, odor, leakage, or food-waste diversion continuity.
     - Then read `../domains/illegal-dumping-litter-neighborhood-sanitation-continuity/README.md` for illegal dumping, litter, abandoned furniture, tires, mattresses, alley/lot dumping, reporting, cleanup delays, or neighborhood sanitation continuity.
+    - Then read `../domains/home-hvac-filter-maintenance-indoor-air-continuity/README.md` for HVAC filters, filter fit, MERV semantics, replacement reminders, return-air filter access, or indoor-air maintenance continuity.
+    - Then read `../domains/portable-air-cleaner-room-filtration-continuity/README.md` for portable air cleaners, room filtration, filter replacement, clean-air rooms, noise/power constraints, or room-level filtration continuity.
+    - Then read `../domains/cooking-ventilation-range-hood-indoor-air-continuity/README.md` for range hoods, kitchen ventilation, cooking particles, NO2, cooking odors, or meal-preparation indoor-air continuity.
+    - Then read `../domains/home-humidity-dehumidifier-moisture-control-continuity/README.md` for household humidity, dehumidifiers, humidifiers, condensation, basement moisture, or moisture-control continuity.
+    - Then read `../domains/household-dust-allergen-source-control-continuity/README.md` for household dust, dust mites, pet dander, bedding/fabrics, allergen source control, or allergy-burden task continuity.
+    - Then read `../domains/household-voc-fragrance-product-emission-continuity/README.md` for VOCs, fragrances, air fresheners, cleaning-product emissions, furniture/off-gassing, odor sensitivity, or product-emission continuity.
 183. Read `../domains/advance-care-planning-medical-decision-continuity/README.md` if you are working on advance care planning, advance directives, health care proxy, medical decision continuity, goals of care, or incapacity communication.
 184. Read `../domains/supported-decision-making-guardianship-rights/README.md` if you are working on supported decision-making, guardianship, conservatorship, decision capacity, disability rights, or least restrictive alternatives.
 185. Read `../domains/healthcare-personal-representative-hipaa-access-continuity/README.md` if you are working on HIPAA personal representatives, caregiver access, proxy access, medical records, privacy boundaries, or authorized care coordination.

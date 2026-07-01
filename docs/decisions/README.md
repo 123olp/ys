@@ -127,3 +127,4 @@ Current decisions:
 - `0112-add-one-hundred-seventh-wave-household-water-wastewater-execution-domains.md`
 - `0113-add-one-hundred-eighth-wave-household-energy-thermal-safety-domains.md`
 - `0114-add-one-hundred-ninth-wave-household-waste-disposal-execution-domains.md`
+- `0115-add-one-hundred-tenth-wave-household-indoor-air-ventilation-execution-domains.md`

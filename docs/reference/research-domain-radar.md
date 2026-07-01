@@ -782,6 +782,12 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `e-waste-battery-recycling-disposal-continuity/` | 退役电子设备、锂电池、纽扣电池和回收点决定家庭数字工具生命周期是否能安全退出 |
 | `food-scrap-composting-pest-odor-continuity/` | 厨余、堆肥桶、气味、害虫和路缘厨余收集决定食物残渣能否可控分流，而不是压缩厨房和邻里空间 |
 | `illegal-dumping-litter-neighborhood-sanitation-continuity/` | 非法倾倒、乱扔垃圾、大件堆积和清理延迟决定邻里公共空间是否会被废弃物占据并侵蚀行动半径 |
+| `home-hvac-filter-maintenance-indoor-air-continuity/` | HVAC 滤网、回风口、尺寸匹配、更换提醒和气流阻力决定家庭循环空气能否持续过滤颗粒物和过敏原 |
+| `portable-air-cleaner-room-filtration-continuity/` | 便携空气清洁器、房间匹配、滤芯维护、噪声和电源决定卧室、照护房和家庭办公能否获得局部清洁空气 |
+| `cooking-ventilation-range-hood-indoor-air-continuity/` | 抽油烟机、厨房排风、烹饪颗粒物、NO2、气味和湿热决定餐食任务是否会转成室内空气负担 |
+| `home-humidity-dehumidifier-moisture-control-continuity/` | 湿度、除湿/加湿、冷凝和地下室潮湿决定睡眠、霉菌条件、尘螨负荷和恢复空间是否稳定 |
+| `household-dust-allergen-source-control-continuity/` | 灰尘、尘螨、宠物皮屑、织物床品和源控制决定室内过敏原是否反复消耗睡眠、注意力和清洁时间 |
+| `household-voc-fragrance-product-emission-continuity/` | VOC、香氛、清洁产品、空气清新剂、家具装修释放和气味敏感决定居住空间是否被产品释放长期占据 |
 | `household-cleaning-disinfection-pest-control-continuity/` | 家庭清洁、消毒和害虫控制决定居住空间是否在感染、过敏、毒性和虫害暴露中保持可恢复 |
 | `postal-parcel-delivery-pickup-continuity/` | 邮件、包裹、签收、自提和地址同步决定证件、药品、设备、账单和关键物资能否从外部系统抵达主体 |
 | `household-maintenance-repair-contractor-continuity/` | 家庭维修、承包商、报价、许可、投诉和记录决定住房、设备、水电、卫生和安全故障能否被可信修复 |
@@ -2382,6 +2388,12 @@ Source links:
 - https://www.epa.gov/recycle/used-lithium-ion-batteries
 - https://www.epa.gov/recycle/composting-home
 - https://www.epa.gov/large-scale-residential-demolition/illegal-dumping
+- https://www.epa.gov/indoor-air-quality-iaq/air-cleaners-and-air-filters-home
+- https://www.epa.gov/indoor-air-quality-iaq/indoor-particulate-matter
+- https://www.epa.gov/indoor-air-quality-iaq/combustion-pollutants-your-home
+- https://www.epa.gov/mold
+- https://www.epa.gov/asthma/asthma-triggers-gain-control
+- https://www.epa.gov/indoor-air-quality-iaq/volatile-organic-compounds-impact-indoor-air-quality
 - https://www.phmsa.dot.gov/safety-awareness/pipeline/pipeline-leak-recognition-and-what-do
 - https://www.cdc.gov/heat-health/about/index.html
 

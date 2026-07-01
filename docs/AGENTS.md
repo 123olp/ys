@@ -123,6 +123,7 @@ docs/
 │   ├── 0112-add-one-hundred-seventh-wave-household-water-wastewater-execution-domains.md
 │   ├── 0113-add-one-hundred-eighth-wave-household-energy-thermal-safety-domains.md
 │   ├── 0114-add-one-hundred-ninth-wave-household-waste-disposal-execution-domains.md
+│   ├── 0115-add-one-hundred-tenth-wave-household-indoor-air-ventilation-execution-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -296,6 +297,7 @@ docs/
 - `domains/private-well-water-testing-treatment-continuity/`、`domains/household-water-treatment-filter-maintenance-continuity/`、`domains/lead-service-line-lead-copper-drinking-water-continuity/`、`domains/premise-plumbing-backflow-cross-connection-continuity/`、`domains/septic-system-maintenance-sewage-backup-continuity/` 和 `domains/basement-flooding-sump-pump-moisture-recovery-continuity/`：第一百零七波正式研究域，分别承载私人井水检测处理、家庭滤水维护、铅铜饮水管线、建筑回流交叉连接、化粪池污水回流和地下室进水潮湿恢复这些家庭水与污水执行连续性。
 - `domains/residential-electrical-wiring-outlet-safety-continuity/`、`domains/home-heating-equipment-chimney-vent-maintenance-continuity/`、`domains/home-cooling-heat-pump-air-conditioning-maintenance-continuity/`、`domains/natural-gas-propane-leak-shutoff-continuity/`、`domains/thermostat-temperature-control-thermal-comfort-continuity/` 和 `domains/weatherization-insulation-air-sealing-thermal-envelope-continuity/`：第一百零八波正式研究域，分别承载住宅电气线路插座、家庭供暖烟囱排气、家庭制冷热泵维护、天然气/丙烷泄漏关断、温控器室温控制和天气化保温围护结构这些家庭能源与热安全执行连续性。
 - `domains/residential-solid-waste-collection-bin-sanitation-continuity/`、`domains/household-hazardous-waste-chemical-disposal-continuity/`、`domains/home-sharps-medical-waste-disposal-continuity/`、`domains/e-waste-battery-recycling-disposal-continuity/`、`domains/food-scrap-composting-pest-odor-continuity/` 和 `domains/illegal-dumping-litter-neighborhood-sanitation-continuity/`：第一百零九波正式研究域，分别承载住宅固废收运垃圾桶卫生、家庭危险废物化学处置、家庭锐器医疗废物处置、电子废弃物电池回收、厨余堆肥害虫气味和非法倾倒邻里卫生这些家庭废弃物与处置执行连续性。
+- `domains/home-hvac-filter-maintenance-indoor-air-continuity/`、`domains/portable-air-cleaner-room-filtration-continuity/`、`domains/cooking-ventilation-range-hood-indoor-air-continuity/`、`domains/home-humidity-dehumidifier-moisture-control-continuity/`、`domains/household-dust-allergen-source-control-continuity/` 和 `domains/household-voc-fragrance-product-emission-continuity/`：第一百一十波正式研究域，分别承载 HVAC 滤网维护、便携房间过滤、烹饪排风、家庭湿度水分控制、灰尘过敏原源控制和 VOC/香氛/产品释放这些家庭室内空气执行连续性。
 - `reference/research-model-visualization-toolkit.md`：沉淀科研论文阅读、文献脊梁、模型工具、可视化标准和 Human Infra 定量页面实现路线。
 - `reference/source-card-system.md`：定义论文、书籍、工具、案例、标准和数据集进入项目之前的资料卡片制度。
 - `reference/domain-map.md`：定义根项目与子域的边界、迁移切片、主动不做和验证点。

@@ -599,6 +599,12 @@
 - `e-waste-battery-recycling-disposal-continuity/`：电子废弃物与电池回收处置连续性，整理退役设备、锂电池、纽扣电池、回收点、数据残留和火灾风险。
 - `food-scrap-composting-pest-odor-continuity/`：厨余堆肥、害虫与气味连续性，整理食物残渣、台面桶、户外桶、社区堆肥、气味、害虫和渗漏。
 - `illegal-dumping-litter-neighborhood-sanitation-continuity/`：非法倾倒、乱扔垃圾与邻里卫生连续性，整理大件堆积、轮胎床垫、巷道空地、举报入口、清理延迟和环境正义。
+- `home-hvac-filter-maintenance-indoor-air-continuity/`：家庭 HVAC 滤网维护与室内空气连续性，整理滤网匹配、更换提醒、气流阻力、颗粒物和过敏原负荷。
+- `portable-air-cleaner-room-filtration-continuity/`：便携空气清洁器与房间过滤连续性，整理房间级过滤、滤芯维护、噪声、电源和清洁空气空间。
+- `cooking-ventilation-range-hood-indoor-air-continuity/`：烹饪通风、抽油烟机与厨房室内空气连续性，整理烹饪颗粒物、燃烧副产物、气味和餐食任务。
+- `home-humidity-dehumidifier-moisture-control-continuity/`：家庭湿度、除湿/加湿与水分控制连续性，整理相对湿度、冷凝、地下室潮湿、设备维护和恢复空间。
+- `household-dust-allergen-source-control-continuity/`：家庭灰尘与室内过敏原源控制连续性，整理尘螨、宠物皮屑、织物床品、地毯和清洁任务负担。
+- `household-voc-fragrance-product-emission-continuity/`：家庭 VOC、香氛与产品释放连续性，整理清洁产品、喷雾、空气清新剂、家具装修释放和气味敏感。
 - `household-cleaning-disinfection-pest-control-continuity/`：家庭清洁、消毒与害虫控制连续性，整理表面清洁、消毒、化学品安全、害虫控制和室内卫生。
 - `postal-parcel-delivery-pickup-continuity/`：邮件、包裹、投递与自提连续性，整理邮件包裹、签收、自提、追踪、地址错配和最后一公里接收。
 - `household-maintenance-repair-contractor-continuity/`：家庭维修、承包商与修复服务连续性，整理维修请求、承包商、报价、许可、记录、投诉和修复恢复。

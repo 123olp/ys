@@ -1752,6 +1752,23 @@ Human Infra 不能被设计成更精密的压榨系统。
 - 不收集、复制、处理或要求家庭地址、垃圾照片、化学品标签照片、针具照片、电池/设备序列号、硬盘内容、物业记录、举报记录、邻里照片、租约、医疗信息、支付信息或其他敏感住房/健康/身份资料。
 - 不替代 EPA、FDA、CDC、地方固废部门、地方 HHW 项目、药房/医疗机构回收、物业、公共卫生、消防、环境执法、毒物控制、害虫控制、数据安全、应急服务或法律渠道。
 
+## 家庭室内空气与通风执行连续性边界
+
+`home-hvac-filter-maintenance-indoor-air-continuity`、`portable-air-cleaner-room-filtration-continuity`、`cooking-ventilation-range-hood-indoor-air-continuity`、`home-humidity-dehumidifier-moisture-control-continuity`、`household-dust-allergen-source-control-continuity` 和 `household-voc-fragrance-product-emission-continuity` 关注家庭室内空气如何影响睡眠、呼吸、注意力、照护、学习工作和恢复空间，不是 HVAC 维修、设备购买、医疗诊断、装修施工、检测判读或气味纠纷入口。
+
+可以做：
+
+- 比较 HVAC 滤网、便携房间过滤、烹饪排风、湿度控制、灰尘过敏原源控制和 VOC/香氛/产品释放如何影响家庭端空气执行连续性。
+- 记录 EPA、CDC、DOE、ASHRAE、住房和公共卫生资料中的对象、机制、变量、证据边界和禁止用途。
+- 设计 `household indoor-air interface -> source/control/maintenance state -> occupant task burden -> continuity outcome` 变量链。
+
+不能做：
+
+- 不提供 HVAC 维修、滤网/净化器购买、CADR/MERV 处方、抽油烟机安装、燃气维修、霉菌清理、除湿/加湿设备选型、过敏诊断、药物建议、宠物处置、杀虫操作、化学检测判读、装修施工、气味纠纷、保险、法律或个案住房建议。
+- 不判断某个滤网、空气清洁器、厨房排风、湿度数值、灰尘过敏原、气味、VOC 检测、装修材料或居住空间是否安全、违法、必须搬离或需要施工。
+- 不收集、复制、处理或要求家庭地址、房间照片、滤网照片、设备序列号、空气检测报告、湿度记录、医疗症状、处方、宠物信息、租约、物业记录、气味投诉、装修合同、支付信息或其他敏感住房/健康/身份资料。
+- 不替代 EPA、CDC、DOE、ASHRAE、地方公共卫生、住房部门、物业、HVAC 专业人员、医疗人员、毒物控制、消防、环境检测机构、保险或法律渠道。
+
 ## 个人移动执行连续性边界
 
 `personal-vehicle-maintenance-recall-repair-continuity`、`fuel-ev-charging-refueling-access-continuity`、`parking-curb-access-towing-impound-continuity`、`walking-bicycling-micromobility-continuity`、`paratransit-nemt-access-continuity`、`taxi-rideshare-demand-response-mobility-continuity`、`transit-fare-payment-toll-account-continuity` 和 `multimodal-trip-planning-real-time-wayfinding-continuity` 关注车辆、补能、停车、主动出行、辅助医疗交通、按需交通、支付账户和实时导向如何把交通服务转化为主体真实到达能力，不是车辆维修、补能操作、交通规避、平台攻击、逃票或个案申诉入口。

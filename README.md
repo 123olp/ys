@@ -824,6 +824,12 @@ flowchart TD
     H --> EWBRDC[e-waste-battery-recycling-disposal-continuity<br/>电子废弃物 / 电池回收]
     H --> FSCPOC[food-scrap-composting-pest-odor-continuity<br/>厨余堆肥 / 害虫气味]
     H --> IDLNSC[illegal-dumping-litter-neighborhood-sanitation-continuity<br/>非法倾倒 / 邻里卫生]
+    H --> HHFMIAC[home-hvac-filter-maintenance-indoor-air-continuity<br/>HVAC 滤网 / 室内空气]
+    H --> PACRFC[portable-air-cleaner-room-filtration-continuity<br/>便携净化器 / 房间过滤]
+    H --> CVRHIA[cooking-ventilation-range-hood-indoor-air-continuity<br/>烹饪排风 / 抽油烟机]
+    H --> HHDMCC[home-humidity-dehumidifier-moisture-control-continuity<br/>家庭湿度 / 除湿水分]
+    H --> HDASCC[household-dust-allergen-source-control-continuity<br/>灰尘过敏原 / 源控制]
+    H --> HVFPEC[household-voc-fragrance-product-emission-continuity<br/>VOC 香氛 / 产品释放]
     H --> HCDPCC[household-cleaning-disinfection-pest-control-continuity<br/>家庭清洁 / 消毒害虫控制]
     H --> PPDPC[postal-parcel-delivery-pickup-continuity<br/>邮件包裹 / 投递自提]
     H --> HMRCC[household-maintenance-repair-contractor-continuity<br/>家庭维修 / 承包商服务]
@@ -1281,6 +1287,12 @@ flowchart TD
 | [E Waste Battery Recycling Disposal Continuity](domains/e-waste-battery-recycling-disposal-continuity/README.md) | 电子废弃物、锂电池、纽扣电池、设备报废、数据残留、回收点和电池火灾 | 让退役设备和电池进入安全、合规、可追踪路径，降低火灾、毒性、隐私和资源浪费风险 | 不提供电池拆解、刺穿、放电、维修、数据擦除保证、危险运输或损坏电池处理 |
 | [Food Scrap Composting Pest Odor Continuity](domains/food-scrap-composting-pest-odor-continuity/README.md) | 厨余、食物残渣、堆肥、收集桶、气味、害虫、渗漏、社区堆肥和路缘厨余收集 | 让食物残渣可控分流到收集、暂存、堆肥或市政路径，降低气味、害虫和邻里摩擦 | 不提供堆肥配方、温度管理、虫害处理、病原判断、土壤施用或商业堆肥运营 |
 | [Illegal Dumping Litter Neighborhood Sanitation Continuity](domains/illegal-dumping-litter-neighborhood-sanitation-continuity/README.md) | 非法倾倒、乱扔垃圾、废旧家具、轮胎、床垫、巷道空地、举报入口和清理延迟 | 让邻里异常废弃物被发现、报告、归责和清理，保护通行、儿童活动、住房稳定和社区信任 | 不提供非法倾倒、规避执法、私自清理危险废物、现场取证对抗、邻里冲突或法律策略 |
+| [Home HVAC Filter Maintenance Indoor Air Continuity](domains/home-hvac-filter-maintenance-indoor-air-continuity/README.md) | HVAC 滤网、回风口、MERV 语义、滤网尺寸、更换周期、气流阻力和维护提醒 | 让家庭循环空气中的颗粒物、过敏原和污染负荷更可控，保护睡眠、呼吸、认知和恢复空间 | 不提供 HVAC 维修、滤网购买、MERV 处方、风管改造、设备验收或个案室内空气安全判断 |
+| [Portable Air Cleaner Room Filtration Continuity](domains/portable-air-cleaner-room-filtration-continuity/README.md) | 便携式空气清洁器、房间过滤、滤芯维护、房间匹配、噪声、电源和夜间使用 | 在建筑通风不足、烟雾或过敏原负荷升高时，为卧室、照护房和家庭办公提供局部空气恢复接口 | 不提供产品推荐、CADR 处方、房间安全认证、设备安装、电气改造或实时灾害判断 |
+| [Cooking Ventilation Range Hood Indoor Air Continuity](domains/cooking-ventilation-range-hood-indoor-air-continuity/README.md) | 抽油烟机、厨房排风、燃气/电烹饪排放、颗粒物、NO2、气味和湿热 | 让餐食准备不把厨房与居住空间转成慢性空气负担，维持营养、照护、睡眠和学习工作 | 不提供燃气维修、排风安装、管道设计、火灾/CO 处置、烹饪教程或产品购买建议 |
+| [Home Humidity Dehumidifier Moisture Control Continuity](domains/home-humidity-dehumidifier-moisture-control-continuity/README.md) | 相对湿度、除湿机、加湿器、冷凝、地下室潮湿、设备维护和水分控制 | 把湿度作为连接空气、材料、霉菌条件、睡眠、呼吸和居住恢复的家庭控制变量 | 不提供霉菌清理、除湿设备选型、建筑防水、维修、湿度处方、检测解释或租房保险建议 |
+| [Household Dust Allergen Source Control Continuity](domains/household-dust-allergen-source-control-continuity/README.md) | 室内灰尘、尘螨、宠物皮屑、织物床品、地毯、HEPA 吸尘和源控制 | 降低反复消耗睡眠、注意力、呼吸舒适和清洁时间的室内过敏原负荷 | 不提供过敏诊断、哮喘治疗、药物、宠物处置、杀虫操作、清洁产品推荐或法律建议 |
+| [Household VOC Fragrance Product Emission Continuity](domains/household-voc-fragrance-product-emission-continuity/README.md) | VOC、香氛、清洁产品、喷雾、空气清新剂、油漆、家具装修释放和气味敏感 | 让日常产品和材料释放成为可观测、可替换、可通风或可移出的室内空气源，而不是家庭协作摩擦 | 不提供化学品混合、装修施工、材料检测判读、产品推荐、气味纠纷、医学诊断或法律建议 |
 | [Household Cleaning Disinfection Pest Control Continuity](domains/household-cleaning-disinfection-pest-control-continuity/README.md) | 表面清洁、消毒、化学品安全、害虫控制、垃圾和室内卫生 | 在感染控制、害虫风险和化学暴露之间建立可治理的家庭卫生边界 | 不提供消毒配方、化学混合、杀虫剂使用、毒物处理、霉菌清除或医疗处置步骤 |
 | [Postal Parcel Delivery Pickup Continuity](domains/postal-parcel-delivery-pickup-continuity/README.md) | 邮件、包裹、投递、自提、签收、追踪、地址同步和最后一公里接收 | 让文件、药品、设备、账单、身份材料和远程交易实物能到达主体 | 不提供邮件拦截、包裹盗取、冒领、地址欺诈、追踪滥用或物流攻击方法 |
 | [Household Maintenance Repair Contractor Continuity](domains/household-maintenance-repair-contractor-continuity/README.md) | 家庭维修、承包商、服务预约、报价、许可、投诉和维修记录 | 让住房和设备故障能被发现、排程、修复和记录 | 不提供 DIY 危险维修、电气燃气施工、合同争议策略、理赔策略或法律意见 |
@@ -2270,6 +2282,12 @@ human_infra/
 │   ├── e-waste-battery-recycling-disposal-continuity/
 │   ├── food-scrap-composting-pest-odor-continuity/
 │   ├── illegal-dumping-litter-neighborhood-sanitation-continuity/
+│   ├── home-hvac-filter-maintenance-indoor-air-continuity/
+│   ├── portable-air-cleaner-room-filtration-continuity/
+│   ├── cooking-ventilation-range-hood-indoor-air-continuity/
+│   ├── home-humidity-dehumidifier-moisture-control-continuity/
+│   ├── household-dust-allergen-source-control-continuity/
+│   ├── household-voc-fragrance-product-emission-continuity/
 │   ├── urogenital-continuity/
 │   ├── urinary-tract-infection-pyelonephritis-urosepsis-continuity/
 │   ├── catheter-associated-uti-device-infection-continuity/
@@ -2471,5 +2489,6 @@ flowchart LR
 - 2026-07-01：新增第一百零七波 6 个家庭水与污水执行连续性域，覆盖私人井水检测处理、家庭滤水维护、铅铜饮水管线、建筑回流交叉连接、化粪池污水回流和地下室进水潮湿恢复。
 - 2026-07-01：新增第一百零八波 6 个家庭能源与热安全执行连续性域，覆盖住宅电气线路插座、家庭供暖烟囱排气、家庭制冷热泵维护、天然气/丙烷泄漏关断、温控器室温控制和天气化保温围护结构。
 - 2026-07-01：新增第一百零九波 6 个家庭废弃物与处置执行连续性域，覆盖住宅固废收运垃圾桶卫生、家庭危险废物化学处置、家庭锐器医疗废物处置、电子废弃物电池回收、厨余堆肥害虫气味和非法倾倒邻里卫生。
+- 2026-07-01：新增第一百一十波 6 个家庭室内空气与通风执行连续性域，覆盖 HVAC 滤网维护、便携房间过滤、烹饪排风、家庭湿度水分控制、灰尘过敏原源控制和 VOC/香氛/产品释放。
 
 完整记录见 [CHANGELOG.md](CHANGELOG.md)。

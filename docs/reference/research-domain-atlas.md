@@ -505,6 +505,12 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 退役设备和电池必须安全退出 | `e-waste-battery-recycling-disposal-continuity/` | 电子废弃物、锂电池、纽扣电池、设备报废、数据残留、回收点 | 电子废弃物失败会把火灾、毒性、隐私、儿童误吞和材料浪费累积在家庭空间 |
 | 厨余必须可控分流或转化 | `food-scrap-composting-pest-odor-continuity/` | 厨余、堆肥、收集桶、气味、害虫、渗漏、路缘厨余 | 厨余失控会把食物管理和资源循环转成气味、害虫、渗漏和邻里冲突 |
 | 邻里异常废弃物必须可治理 | `illegal-dumping-litter-neighborhood-sanitation-continuity/` | 非法倾倒、乱扔垃圾、大件、轮胎床垫、举报入口、清理延迟 | 公共空间废弃物堆积会压缩步行、儿童活动、住房稳定、社区信任和环境正义 |
+| 家庭循环空气必须可过滤 | `home-hvac-filter-maintenance-indoor-air-continuity/` | HVAC 滤网、回风口、MERV、尺寸匹配、更换周期、气流阻力 | 滤网维护失败会把可呼吸环境转成颗粒物、过敏原、睡眠和恢复的慢性负荷 |
+| 房间级清洁空气必须可获得 | `portable-air-cleaner-room-filtration-continuity/` | 便携空气清洁器、房间过滤、滤芯、噪声、电源、夜间使用 | 局部过滤失败会让卧室、照护房和家庭办公在烟雾、过敏原或通风不足时失去恢复能力 |
+| 烹饪空气负担必须可排出 | `cooking-ventilation-range-hood-indoor-air-continuity/` | 抽油烟机、厨房排风、烹饪颗粒物、NO2、气味、湿热 | 排风失败会让餐食准备反向制造呼吸、气味、清洁和睡眠摩擦 |
+| 家庭湿度必须可控制 | `home-humidity-dehumidifier-moisture-control-continuity/` | 相对湿度、除湿机、加湿器、冷凝、地下室潮湿、水分控制 | 湿度失控会放大霉菌条件、尘螨负荷、材料损耗、睡眠破坏和呼吸刺激 |
+| 室内过敏原必须可源控制 | `household-dust-allergen-source-control-continuity/` | 灰尘、尘螨、宠物皮屑、织物床品、地毯、HEPA 吸尘 | 过敏原源控制失败会让注意力、睡眠、清洁时间和慢病维护被环境反复消耗 |
+| 产品释放源必须可减少 | `household-voc-fragrance-product-emission-continuity/` | VOC、香氛、清洁产品、喷雾、家具装修释放、气味敏感 | 产品释放不可控会把室内空气变成刺激、头痛、家庭冲突和居住恢复摩擦 |
 | 家庭卫生必须可治理 | `household-cleaning-disinfection-pest-control-continuity/` | 清洁、消毒、化学品安全、害虫控制、室内卫生 | 清洁不足、化学误用或害虫暴露会制造感染、过敏、毒性和居住压力 |
 | 邮件包裹必须可接收 | `postal-parcel-delivery-pickup-continuity/` | 邮件、包裹、签收、自提、追踪、地址同步 | 文件、药品、设备、账单或身份材料收不到会切断远程服务和物理资源交付 |
 | 家庭故障必须可被可信维修 | `household-maintenance-repair-contractor-continuity/` | 维修请求、承包商、报价、许可、投诉、维修记录 | 维修延误、诈骗、无证服务或记录缺失会让住房、设备、水电、卫生和安全持续恶化 |
@@ -1262,6 +1268,12 @@ risk-engineering
   -> e-waste-battery-recycling-disposal-continuity
   -> food-scrap-composting-pest-odor-continuity
   -> illegal-dumping-litter-neighborhood-sanitation-continuity
+  -> home-hvac-filter-maintenance-indoor-air-continuity
+  -> portable-air-cleaner-room-filtration-continuity
+  -> cooking-ventilation-range-hood-indoor-air-continuity
+  -> home-humidity-dehumidifier-moisture-control-continuity
+  -> household-dust-allergen-source-control-continuity
+  -> household-voc-fragrance-product-emission-continuity
   -> household-cleaning-disinfection-pest-control-continuity
   -> postal-parcel-delivery-pickup-continuity
   -> household-maintenance-repair-contractor-continuity
