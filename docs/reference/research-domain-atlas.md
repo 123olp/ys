@@ -917,6 +917,12 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 仪式转换必须被承认 | `ritual-ceremony-life-transition-continuity/` | 仪式、典礼、过渡礼、纪念、公共承认、生命转换 | 重大转换缺少共同体承认，身份、关系和悲伤恢复更容易断裂 |
 | 尊严人格必须被保护 | `dignity-personhood-respect-continuity/` | dignity、personhood、尊重、非羞辱、person-centered care | 人被降格为病例、号码、风险标签或负担，主体性和未来选择权被侵蚀 |
 | 任务系统必须适配人 | `human-factors-ergonomics-task-system-continuity/` | human factors、ergonomics、human systems integration、usability、任务系统 | 人、工具、环境和流程失配时，错误、伤害、绕行和长期损耗会系统性增加 |
+| 工作高度必须防止坠落 | `workplace-fall-protection-height-safety-continuity/` | work at height、fall protection、walking-working surfaces、scaffolds、ladders、rescue latency | 高处作业失败会把劳动任务快速转化为创伤、失能、收入中断和家庭支持冲击 |
+| 危险能量必须被隔离 | `hazardous-energy-lockout-tagout-continuity/` | lockout/tagout、hazardous energy、maintenance、stored energy、unexpected energization | 维修保养中的能量释放会把可控设备任务转化为夹挤、触电、烧伤、截肢或死亡 |
+| 机器危险点必须被防护 | `machine-guarding-amputation-prevention-continuity/` | machine guarding、point of operation、nip points、rotating parts、interlocks、amputation | 机器防护失败会不可逆损伤手眼协调、劳动能力、收入路径和长期行动能力 |
+| 工业车辆必须隔离人车风险 | `powered-industrial-truck-forklift-safety-continuity/` | powered industrial trucks、forklifts、pedestrian separation、load stability、tip-over、blind spots | 仓储和物料搬运中的车辆风险会造成压伤、碰撞、倾翻和供应链执行中断 |
+| 受限空间必须控制进入与退出 | `confined-space-entry-atmospheric-hazard-continuity/` | confined spaces、oxygen deficiency、toxic atmosphere、flammable atmosphere、attendant、rescue | 不可见大气危害和退出失败会在短时间内跨过可逆窗口并放大救援风险 |
+| 锐器和血源性暴露必须可报告可随访 | `bloodborne-pathogens-sharps-injury-worker-continuity/` | bloodborne pathogens、needlesticks、sharps injuries、exposure reporting、follow-up | 护理、清洁、实验和公共服务任务中的锐器暴露会转化为感染风险、焦虑、停工和职业连续性损伤 |
 | 工作负荷必须可测量 | `cognitive-load-workload-measurement-continuity/` | NASA-TLX、mental workload、工作记忆、任务复杂度、时间压力 | 认知过载会削弱注意、判断、学习和恢复，使任务失败被误归咎于个人能力 |
 | 疲劳风险必须被治理 | `fatigue-risk-alertness-continuity/` | 长工时、夜班、sleep debt、alertness、恢复窗口 | 疲劳降低警觉和判断，增加事故、医疗错误、驾驶风险和长期恢复债务 |
 | 情境感知必须可维持 | `situational-awareness-decision-environment-continuity/` | situation awareness、sensemaking、共享心智模型、态势显示、决策支持 | 主体不知道发生了什么、将会怎样和谁负责时，行动会变成盲目反应 |
@@ -1846,6 +1852,12 @@ risk-engineering
   -> ritual-ceremony-life-transition-continuity
   -> dignity-personhood-respect-continuity
   -> human-factors-ergonomics-task-system-continuity
+  -> workplace-fall-protection-height-safety-continuity
+  -> hazardous-energy-lockout-tagout-continuity
+  -> machine-guarding-amputation-prevention-continuity
+  -> powered-industrial-truck-forklift-safety-continuity
+  -> confined-space-entry-atmospheric-hazard-continuity
+  -> bloodborne-pathogens-sharps-injury-worker-continuity
   -> cognitive-load-workload-measurement-continuity
   -> fatigue-risk-alertness-continuity
   -> situational-awareness-decision-environment-continuity

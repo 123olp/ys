@@ -602,6 +602,25 @@ Human Infra 不能被设计成更精密的压榨系统。
 - 提供建筑设计、施工、验收、许可、消防疏散、工程图纸、个案 ADA/ABA 法律意见、合理便利、投诉、诉讼或危险改造建议。
 - 把空气、食品、职业暴露、医疗设备、感染控制和建成环境可达的结构性问题改写成个人购买、现场操作、合规套利、恐慌传播或责任转嫁问题。
 
+## 工作场所急性安全执行边界
+
+`workplace-fall-protection-height-safety-continuity`、`hazardous-energy-lockout-tagout-continuity`、`machine-guarding-amputation-prevention-continuity`、`powered-industrial-truck-forklift-safety-continuity`、`confined-space-entry-atmospheric-hazard-continuity` 和 `bloodborne-pathogens-sharps-injury-worker-continuity` 关注高处坠落、危险能量、机器危险点、叉车/工业车辆、受限空间和血源性病原体锐器伤如何在工作任务中突然破坏主体持续性，不是现场安全方案、个体作业许可、医疗处理、合规证明、事故调查、工伤索赔或法律建议工具。
+
+可以做：
+
+- 整理 OSHA、CDC/NIOSH、BLS 和公开学术资料，建立 Source Card、风险机制图、域边界、证据等级和公共资料索引。
+- 建模高处坠落、能量隔离失败、机器接触、工业车辆碰撞、受限空间大气危害、锐器/血液暴露如何影响寿命、健康寿命、有效时间、收入连续性、家庭支持和未来选择权。
+- 区分职业暴露、劳动权利、工伤权益、现场安全操作、医学处理、监管合规、组织责任和禁止用途之间的边界。
+
+不能做：
+
+- 提供 PPE、锚点、脚手架、梯具、护栏、坠落防护、坠落救援、现场检查、培训、认证、施工、维修或个人工作许可建议。
+- 生成 lockout/tagout 程序、能量隔离步骤、设备停机/启动、维修保养、机器防护设计、联锁绕过、guard removal、叉车驾驶、载荷、路线、交通控制、受限空间进入、检测、通风、监护、救援或 permit 操作。
+- 提供针刺锐器伤、血源性病原体暴露、伤口处理、PEP、疫苗、检测、随访、诊断、治疗、工作限制、职业病、工伤、保险或个案医疗建议。
+- 提供 OSHA 合规判断、引用条款适用性、事故调查、责任归属、雇主/雇员维权策略、报复风险处理、诉讼、赔偿、监管投诉或法律意见。
+- 收集或诱导输入现场照片、机器布局、能量隔离点、受限空间图纸、锐器暴露记录、员工姓名、医疗记录、工伤记录、雇主身份、培训记录、事故证据、定位或其他可识别个人/单位的敏感资料。
+- 把工作场所急性安全执行问题改写成个人作业指导、企业合规自动化、事故取证、监管规避、医疗替代、法律代理、工伤索赔工具或恐慌传播材料。
+
 ## 临床检验、药品安全、药品质量、院前急救、手术麻醉与道路安全边界
 
 `clinical-laboratory-diagnostic-quality`、`pharmacovigilance-drug-safety-monitoring`、`pharmaceutical-quality-supply-integrity`、`emergency-medical-services-prehospital-care`、`surgical-anesthesia-perioperative-safety` 和 `road-traffic-injury-prevention-safe-mobility` 关注临床观测质量、真实世界药品安全、治疗物质质量、急性院前响应、高风险修复通道和安全移动如何支撑主体持续性，不是检验解读、用药建议、药品制造、急救手册、手术麻醉教程或驾驶/事故处理指南。

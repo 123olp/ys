@@ -4,6 +4,7 @@ All notable repository structure changes are recorded here.
 
 ## 2026-07-01
 
+- Added the one-hundred-twenty-ninth wave of workplace acute-safety execution domains, covering fall protection, hazardous energy lockout/tagout, machine guarding and amputation prevention, powered industrial trucks / forklifts, confined spaces, and bloodborne pathogens / sharps injury worker continuity.
 - Added the one-hundred-twenty-eighth wave of sleep-wake scheduling and recovery-continuity domains, covering narcolepsy, idiopathic hypersomnia, restless legs / periodic limb movement, circadian rhythm sleep-wake disorders, shift work / long-hours fatigue, and parasomnia / sleepwalking behavior safety.
 - Added the one-hundred-twenty-seventh wave of endocrine feedback-axis continuity domains, covering adrenal insufficiency, Cushing's syndrome, pituitary disorders, acromegaly, hypogonadism, and primary ovarian insufficiency.
 - Added the one-hundred-twenty-sixth wave of reproductive endocrine, pelvic pain, infertility, and sexual-function continuity domains, covering PCOS, endometriosis, uterine fibroids, male-factor infertility, erectile dysfunction, and vulvovaginal pain/infection/function continuity.

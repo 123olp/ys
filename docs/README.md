@@ -149,6 +149,7 @@ docs/
 │   ├── 0131-add-one-hundred-twenty-sixth-wave-reproductive-endocrine-pelvic-function-domains.md
 │   ├── 0132-add-one-hundred-twenty-seventh-wave-endocrine-feedback-axis-domains.md
 │   ├── 0133-add-one-hundred-twenty-eighth-wave-sleep-wake-scheduling-domains.md
+│   ├── 0134-add-one-hundred-twenty-ninth-wave-workplace-safety-execution-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -273,6 +274,12 @@ docs/
 67. Read `../domains/air-quality-ventilation-exposure-control/README.md` if you are working on air quality, ventilation, filtration, aerosols, smoke, or inhaled exposure control.
 68. Read `../domains/food-safety-contamination-control/README.md` if you are working on foodborne hazards, contamination, inspection, traceability, recalls, or outbreak governance.
 69. Read `../domains/occupational-exposure-industrial-hygiene/README.md` if you are working on industrial hygiene, workplace exposure, hierarchy of controls, dust, noise, heat, chemicals, or biological hazards.
+69a. Read `../domains/workplace-fall-protection-height-safety-continuity/README.md` if you are working on fall protection, work at height, construction falls, walking-working surfaces, scaffold/ladder/platform safety, or fall rescue latency.
+69b. Read `../domains/hazardous-energy-lockout-tagout-continuity/README.md` if you are working on hazardous energy, lockout/tagout, maintenance, unexpected energization, stored energy release, or energy-isolation handoffs.
+69c. Read `../domains/machine-guarding-amputation-prevention-continuity/README.md` if you are working on machine guarding, point of operation hazards, nip points, rotating parts, amputation hazards, or guard/interlock boundaries.
+69d. Read `../domains/powered-industrial-truck-forklift-safety-continuity/README.md` if you are working on forklifts, powered industrial trucks, warehouse traffic, pedestrian separation, load stability, tip-over, or blind spots.
+69e. Read `../domains/confined-space-entry-atmospheric-hazard-continuity/README.md` if you are working on confined spaces, permit-required confined spaces, oxygen deficiency, toxic/flammable atmospheres, attendants, or rescue latency.
+69f. Read `../domains/bloodborne-pathogens-sharps-injury-worker-continuity/README.md` if you are working on bloodborne pathogens, needlesticks, sharps injuries, healthcare worker exposure, reporting, or follow-up boundaries.
 70. Read `../domains/medical-device-equipment-safety-maintenance/README.md` if you are working on medical device safety, equipment lifecycle, UDI, adverse events, recalls, maintenance, or device cybersecurity.
 71. Read `../domains/sterilization-disinfection-infection-control/README.md` if you are working on sterilization, disinfection, reprocessing, environmental infection control, or healthcare-associated infection prevention.
 72. Read `../domains/built-environment-accessibility-universal-design/README.md` if you are working on built-environment accessibility, universal design, ADA/ABA standards, public-space access, or physical-path continuity.

@@ -255,6 +255,12 @@
 - `air-quality-ventilation-exposure-control/`：空气质量、通风与暴露控制，整理室内外空气污染、通风、过滤、气溶胶、烟雾和空气暴露治理。
 - `food-safety-contamination-control/`：食品安全、污染控制与食源性风险，整理食源性病原体、毒素、过敏原、检查、追溯和召回。
 - `occupational-exposure-industrial-hygiene/`：职业暴露与工业卫生，整理工作场所化学、物理、生物、粉尘、噪声、热、辐射和皮肤暴露控制。
+- `workplace-fall-protection-height-safety-continuity/`：高处作业与坠落防护连续性，整理工作高度、边缘开口、平台梯架、坠落后救援延迟和失能冲击。
+- `hazardous-energy-lockout-tagout-continuity/`：危险能量与锁定挂牌连续性，整理维修保养、意外启动、储能释放、能量隔离失败和 LOTO 执行边界。
+- `machine-guarding-amputation-prevention-continuity/`：机器防护与截肢预防连续性，整理操作点、夹点、旋转部件、联锁、防护失效和截肢风险。
+- `powered-industrial-truck-forklift-safety-continuity/`：叉车与工业车辆安全连续性，整理人车分离、载荷稳定、倾翻、盲区、仓储交通和物料搬运风险。
+- `confined-space-entry-atmospheric-hazard-continuity/`：受限空间进入与大气危害连续性，整理缺氧、有毒/易燃大气、监护、通信、退出和救援延迟。
+- `bloodborne-pathogens-sharps-injury-worker-continuity/`：血源性病原体与锐器伤工作者连续性，整理针刺锐器伤、暴露报告、随访、感染风险和职业连续性。
 - `medical-device-equipment-safety-maintenance/`：医疗器械、设备安全与维护，整理设备生命周期、不良事件、UDI、召回、维护、网络安全和可用性。
 - `sterilization-disinfection-infection-control/`：灭菌、消毒与感染控制，整理清洁、消毒、灭菌、再处理、环境感染控制和 HAI 预防。
 - `built-environment-accessibility-universal-design/`：建成环境无障碍与通用设计，整理物理空间可达、路径连续、公共设施、通用设计和环境参与条件。

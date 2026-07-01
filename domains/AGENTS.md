@@ -2055,6 +2055,24 @@ domains/
 ├── occupational-exposure-industrial-hygiene/
 │   ├── AGENTS.md
 │   └── README.md
+├── workplace-fall-protection-height-safety-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── hazardous-energy-lockout-tagout-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── machine-guarding-amputation-prevention-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── powered-industrial-truck-forklift-safety-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── confined-space-entry-atmospheric-hazard-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── bloodborne-pathogens-sharps-injury-worker-continuity/
+│   ├── AGENTS.md
+│   └── README.md
 ├── medical-device-equipment-safety-maintenance/
 │   ├── AGENTS.md
 │   └── README.md
@@ -2648,6 +2666,7 @@ domains/
 - `public-procurement-contracting-capacity/` 负责公共采购、合同、供应商管理、应急采购、透明度和交付验收这些公共能力落地条件。
 - `public-health-laboratory-diagnostic-capacity/`、`blood-organ-tissue-biovigilance-transplantation/`、`waste-management-hazardous-materials-continuity/`、`radiation-nuclear-safety-protection/`、`chemical-safety-poison-control-toxicology/` 和 `critical-minerals-materials-resilience/` 负责风险确认、外部生物材料安全、残余物治理、不可见高能暴露、化学毒理和未来技术物质输入这些外部安全与材料支撑条件。
 - `air-quality-ventilation-exposure-control/`、`food-safety-contamination-control/`、`occupational-exposure-industrial-hygiene/`、`medical-device-equipment-safety-maintenance/`、`sterilization-disinfection-infection-control/` 和 `built-environment-accessibility-universal-design/` 负责可呼吸环境、食物污染控制、工作暴露控制、医疗设备可靠性、感染控制屏障和物理空间可达性这些日常环境与工具可靠性条件。
+- `workplace-fall-protection-height-safety-continuity/`、`hazardous-energy-lockout-tagout-continuity/`、`machine-guarding-amputation-prevention-continuity/`、`powered-industrial-truck-forklift-safety-continuity/`、`confined-space-entry-atmospheric-hazard-continuity/` 和 `bloodborne-pathogens-sharps-injury-worker-continuity/` 负责工作场所急性安全执行连续性，覆盖高处坠落、危险能量、机器危险点、叉车/工业车辆、受限空间和血源性病原体锐器伤。
 - `clinical-laboratory-diagnostic-quality/`、`pharmacovigilance-drug-safety-monitoring/`、`pharmaceutical-quality-supply-integrity/`、`emergency-medical-services-prehospital-care/`、`surgical-anesthesia-perioperative-safety/` 和 `road-traffic-injury-prevention-safe-mobility/` 负责临床检验质量、真实世界药品安全、药品质量完整性、院前急救窗口、围手术期安全和道路交通伤害预防这些临床可靠性与急性风险窗口条件。
 - `rural-health-access-geographic-equity/`、`homelessness-unsheltered-health-continuity/`、`correctional-health-reentry-continuity/`、`disability-services-independent-living/`、`dementia-cognitive-decline-care-continuity/` 和 `chronic-infectious-disease-care-continuity/` 负责农村地理可及、无家可归健康连续性、羁押重返服务连续性、残障独立生活、认知衰退照护和慢性传染病长期照护这些结构性脆弱与连续照护断点。
 - `tribal-health-sovereignty-service-access-continuity/`、`veterans-health-benefits-navigation-continuity/`、`migrant-seasonal-farmworker-health-housing-continuity/`、`territorial-island-health-infrastructure-access-continuity/`、`border-community-cross-border-care-continuity/` 和 `lgbtq-health-identity-affirming-service-continuity/` 负责部落主权健康、退伍军人导航、农业工人迁移劳动住房、属地岛屿基础设施、边境跨境照护和 LGBTQ 身份承认这些人口与地域可达性连续性条件。
@@ -2796,6 +2815,7 @@ domains/
 - `severe-weather-watch-warning-risk-communication-continuity/`、`river-flash-flood-warning-evacuation-continuity/`、`hurricane-storm-surge-evacuation-shelter-continuity/`、`tornado-warning-safe-room-shelter-continuity/`、`winter-storm-cold-exposure-power-continuity/`、`drought-water-restriction-household-health-continuity/`、`landslide-mudslide-debris-flow-warning-continuity/`、`wildfire-smoke-clean-air-respiratory-continuity/`、`thunderstorm-lightning-outdoor-safety-continuity/` 和 `coastal-flooding-erosion-inundation-continuity/` 负责强天气和自然 hazard 执行层的证据边界，不提供实时预警、个案警报解释、撤离路线、避难点、道路判断、现场操作、工程设计、医疗急救、保险理赔、法律/金融建议或应急指挥。
 - `mosquito-bite-arbovirus-prevention-continuity/`、`tick-bite-lyme-rickettsial-prevention-continuity/`、`rabies-exposure-bite-pep-continuity/`、`dog-bite-community-injury-prevention-continuity/`、`rodent-infestation-hantavirus-plague-continuity/`、`bed-bug-infestation-sleep-housing-continuity/`、`venomous-bites-stings-envenomation-continuity/`、`reptile-amphibian-backyard-poultry-salmonella-continuity/`、`lice-scabies-school-shelter-infestation-continuity/` 和 `pesticide-label-exposure-poison-control-continuity/` 负责病媒、动物接触、虫害与农药暴露执行层的证据边界，不提供诊断、治疗、用药、PEP 决策、急救步骤、灭虫操作、农药施用、动物捕捉处置、旅行许可、法律责任、产品选择或个体风险判断。
 - `pollen-allergen-asthma-outdoor-activity-continuity/`、`poison-ivy-oak-sumac-urushiol-exposure-continuity/`、`harmful-algal-bloom-cyanotoxin-water-recreation-continuity/`、`toxic-mushroom-foraging-poisoning-continuity/`、`poisonous-plant-childcare-household-exposure-continuity/`、`invasive-species-human-health-access-continuity/`、`mycotoxin-food-crop-storage-safety-continuity/`、`recreational-water-illness-beach-lake-access-continuity/`、`shellfish-biotoxin-harmful-algal-bloom-food-continuity/` 和 `landscaping-horticulture-worker-equipment-injury-continuity/` 负责植物、藻类、真菌与户外生物暴露执行层的证据边界，不提供诊断、治疗、急救、解毒、食用许可、采食建议、植物/蘑菇鉴定、水质判断、采捕许可、农药/除草剂操作、PPE 选型、设备作业、施工流程、旅游许可或个体风险判断。
+- `workplace-fall-protection-height-safety-continuity/`、`hazardous-energy-lockout-tagout-continuity/`、`machine-guarding-amputation-prevention-continuity/`、`powered-industrial-truck-forklift-safety-continuity/`、`confined-space-entry-atmospheric-hazard-continuity/` 和 `bloodborne-pathogens-sharps-injury-worker-continuity/` 负责工作场所急性伤害/感染执行层的证据边界，不提供 PPE、锚点、脚手架、LOTO、能量隔离、机器防护设计、叉车驾驶、受限空间进入/检测/通风/救援、锐器暴露处理、PEP、疫苗、检测、培训、认证、OSHA 合规、事故调查、工伤、医疗、保险或法律建议。
 - `urinary-tract-infection-pyelonephritis-urosepsis-continuity/`、`catheter-associated-uti-device-infection-continuity/`、`urinary-retention-bladder-emptying-continuity/`、`overactive-bladder-nocturia-sleep-continuity/`、`kidney-stone-obstruction-renal-colic-continuity/`、`benign-prostatic-hyperplasia-luts-continuity/`、`urinary-diversion-urostomy-supplies-continuity/`、`dialysis-access-vascular-peritoneal-continuity/`、`home-dialysis-supply-self-management-continuity/` 和 `kidney-transplant-immunosuppression-graft-continuity/` 负责泌尿与肾脏替代执行层的证据边界，不提供尿检/实验室解释、抗生素、导尿/拔管/护理、排尿训练、止痛/排石、BPH 用药/手术、造口护理/产品、透析通路/参数/操作、家庭透析故障处理、移植资格/免疫抑制用药、急诊分诊、保险申诉或个体医疗建议。
 - `breast-cancer-screening-treatment-survivorship-continuity/`、`colorectal-cancer-screening-treatment-continuity/`、`lung-cancer-screening-treatment-continuity/`、`prostate-cancer-screening-treatment-continuity/`、`cervical-cancer-hpv-prevention-screening-continuity/`、`ovarian-cancer-symptom-detection-treatment-continuity/`、`pancreatic-cancer-high-risk-detection-treatment-continuity/`、`liver-cancer-cirrhosis-surveillance-treatment-continuity/`、`childhood-cancer-treatment-survivorship-continuity/` 和 `cancer-survivorship-late-effects-continuity/` 负责器官/阶段特异癌症连续性的证据边界，不提供乳腺、结直肠、肺、前列腺、宫颈、卵巢、胰腺、肝、儿童癌症或幸存者的个体诊断、影像/病理/标志物判读、筛查频率、遗传风险、治疗方案、用药、手术、随访、保险、工作证明或预后建议。
 - `sleep-disordered-breathing-screening-treatment-continuity/`、`chronic-insomnia-cbti-access-continuity/`、`narcolepsy-daytime-sleepiness-continuity/`、`idiopathic-hypersomnia-excessive-sleepiness-continuity/`、`restless-legs-periodic-limb-movement-sleep-continuity/`、`circadian-rhythm-sleep-wake-disorder-continuity/`、`shift-work-long-hours-fatigue-continuity/`、`parasomnia-sleepwalking-behavior-safety-continuity/`、`sexual-health-sti-prevention-continuity/`、`hiv-testing-prep-prevention-continuity/`、`chronic-viral-hepatitis-screening-liver-protection-continuity/`、`contraception-family-planning-access-continuity/`、`menstrual-health-cycle-literacy-continuity/`、`perimenopause-menopause-midlife-health-continuity/`、`pelvic-floor-continence-function-continuity/` 和 `skin-cancer-uv-protection-early-detection-continuity/` 负责生活史预防与功能连续性的证据边界，不提供睡眠报告判读、CBT-I 操作、发作性睡病/嗜睡/RLS/节律/轮班/异态睡眠诊断、光照/作息/药物/兴奋剂/褪黑素/补铁/安全处置/排班法律建议、STI/HIV/肝炎检测解释、PrEP/PEP/ART、避孕选择、周期判读、激素治疗、盆底训练、皮损照片判断、防晒产品、用药、检查频率、保险、法律或个体医疗建议。

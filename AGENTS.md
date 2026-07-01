@@ -640,6 +640,12 @@ human_infra/
     ├── air-quality-ventilation-exposure-control/ # 空气质量、通风与暴露控制
     ├── food-safety-contamination-control/ # 食品安全与污染控制
     ├── occupational-exposure-industrial-hygiene/ # 职业暴露与工业卫生
+    ├── workplace-fall-protection-height-safety-continuity/ # 高处作业与坠落防护连续性
+    ├── hazardous-energy-lockout-tagout-continuity/ # 危险能量与 LOTO 连续性
+    ├── machine-guarding-amputation-prevention-continuity/ # 机器防护与截肢预防连续性
+    ├── powered-industrial-truck-forklift-safety-continuity/ # 叉车与工业车辆安全连续性
+    ├── confined-space-entry-atmospheric-hazard-continuity/ # 受限空间进入与大气危害连续性
+    ├── bloodborne-pathogens-sharps-injury-worker-continuity/ # 血源性病原体与锐器伤工作者连续性
     ├── medical-device-equipment-safety-maintenance/ # 医疗器械、设备安全与维护
     ├── sterilization-disinfection-infection-control/ # 灭菌、消毒与感染控制
     ├── built-environment-accessibility-universal-design/ # 建成环境无障碍与通用设计
@@ -1015,6 +1021,7 @@ human_infra/
 - `domains/air-quality-ventilation-exposure-control/` 负责空气质量、通风、过滤、气溶胶、烟雾和空气暴露治理。
 - `domains/food-safety-contamination-control/` 负责食源性病原体、毒素、过敏原、检查、追溯和召回。
 - `domains/occupational-exposure-industrial-hygiene/` 负责工作场所化学、物理、生物、粉尘、噪声、热、辐射和皮肤暴露控制。
+- `domains/workplace-fall-protection-height-safety-continuity/`、`domains/hazardous-energy-lockout-tagout-continuity/`、`domains/machine-guarding-amputation-prevention-continuity/`、`domains/powered-industrial-truck-forklift-safety-continuity/`、`domains/confined-space-entry-atmospheric-hazard-continuity/` 和 `domains/bloodborne-pathogens-sharps-injury-worker-continuity/` 负责高处坠落、危险能量、机器危险点、工业车辆、受限空间和血源性病原体锐器伤这些工作场所急性伤害/感染执行连续性条件。
 - `domains/medical-device-equipment-safety-maintenance/` 负责医疗设备生命周期、不良事件、UDI、召回、维护、网络安全和可用性。
 - `domains/sterilization-disinfection-infection-control/` 负责清洁、消毒、灭菌、再处理、环境感染控制和医疗照护相关感染预防。
 - `domains/built-environment-accessibility-universal-design/` 负责物理空间可达、路径连续、公共设施、通用设计和环境参与条件。

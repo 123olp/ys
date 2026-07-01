@@ -477,6 +477,12 @@ flowchart TD
     H --> AQVEC[air-quality-ventilation-exposure-control<br/>空气质量 / 通风暴露控制]
     H --> FSCC[food-safety-contamination-control<br/>食品安全 / 污染控制]
     H --> OEIH[occupational-exposure-industrial-hygiene<br/>职业暴露 / 工业卫生]
+    OEIH --> WFPHSC[workplace-fall-protection-height-safety-continuity<br/>高处作业 / 坠落防护]
+    OEIH --> HELTC[hazardous-energy-lockout-tagout-continuity<br/>危险能量 / LOTO]
+    OEIH --> MGAPC[machine-guarding-amputation-prevention-continuity<br/>机器防护 / 截肢预防]
+    OEIH --> PITFSC[powered-industrial-truck-forklift-safety-continuity<br/>叉车 / 工业车辆安全]
+    OEIH --> CSEAHC[confined-space-entry-atmospheric-hazard-continuity<br/>受限空间 / 大气危害]
+    OEIH --> BPSIWC[bloodborne-pathogens-sharps-injury-worker-continuity<br/>血源性病原体 / 锐器伤]
     H --> MDESM[medical-device-equipment-safety-maintenance<br/>医疗器械 / 设备安全维护]
     H --> SDIC[sterilization-disinfection-infection-control<br/>灭菌消毒 / 感染控制]
     H --> BEAUD[built-environment-accessibility-universal-design<br/>建成环境无障碍 / 通用设计]
@@ -1824,6 +1830,12 @@ flowchart TD
 | [Air Quality Ventilation Exposure Control](domains/air-quality-ventilation-exposure-control/README.md) | 室内外空气污染、通风、过滤、气溶胶、烟雾和空气暴露治理 | 让学校、工作、照护和公共空间维持可呼吸、可恢复、可行动的环境 | 不提供医疗、HVAC 设计施工、设备采购、危险环境处置或实时灾害指挥建议 |
 | [Food Safety Contamination Control](domains/food-safety-contamination-control/README.md) | 食源性病原体、毒素、过敏原、检查、追溯、召回和暴发治理 | 防止食物从营养资源转化为感染、毒性、信任和供应链风险入口 | 不提供饮食烹饪、食品加工、污染检测、企业合规、法律或投毒/规避检测建议 |
 | [Occupational Exposure Industrial Hygiene](domains/occupational-exposure-industrial-hygiene/README.md) | 工作场所化学、物理、生物、粉尘、噪声、热、辐射和皮肤暴露控制 | 防止工作以长期身体损耗作为收入和技能获得的隐性成本 | 不提供现场检测、PPE 选择、职业病诊断、工伤法律、事故处置或监管规避建议 |
+| [Workplace Fall Protection Height Safety Continuity](domains/workplace-fall-protection-height-safety-continuity/README.md) | 高处作业、坠落防护、边缘开口、平台梯架和救援延迟 | 防止工作高度把劳动任务转化为创伤、失能、收入中断和家庭冲击 | 不提供 PPE、锚点、脚手架、梯具、救援、培训、现场合规或法律建议 |
+| [Hazardous Energy Lockout Tagout Continuity](domains/hazardous-energy-lockout-tagout-continuity/README.md) | 危险能量、锁定挂牌、维修保养、意外启动和储能释放 | 防止维修任务因能量隔离失败变成夹挤、触电、烧伤、截肢或死亡事件 | 不提供 LOTO 程序、能量隔离步骤、设备操作、事故调查、合规或法律建议 |
+| [Machine Guarding Amputation Prevention Continuity](domains/machine-guarding-amputation-prevention-continuity/README.md) | 机器防护、操作点、夹点、旋转部件、联锁和截肢风险 | 防止生产工具把主体手眼协调、劳动能力和收入路径不可逆切断 | 不提供护罩设计、维修、旁路、设备操作、培训、认证、合规或法律建议 |
+| [Powered Industrial Truck Forklift Safety Continuity](domains/powered-industrial-truck-forklift-safety-continuity/README.md) | 叉车和工业车辆、人车分离、载荷稳定、倾翻、盲区和仓储交通 | 防止物料搬运把工作场所转化为碰撞、压伤、倾翻和物流中断风险 | 不提供驾驶、培训、路线、载荷、检查、认证、现场交通或合规建议 |
+| [Confined Space Entry Atmospheric Hazard Continuity](domains/confined-space-entry-atmospheric-hazard-continuity/README.md) | 受限空间、缺氧、有毒/易燃大气、监护、通信和救援延迟 | 防止进入性任务因不可见大气和退出失败迅速跨过可逆窗口 | 不提供进入、检测、通风、救援、许可、PPE、培训、现场合规或急救建议 |
+| [Bloodborne Pathogens Sharps Injury Worker Continuity](domains/bloodborne-pathogens-sharps-injury-worker-continuity/README.md) | 血源性病原体、针刺锐器伤、暴露报告、随访和工作者感染风险 | 防止护理、清洁、实验和公共服务任务因锐器暴露变成感染、焦虑和职业连续性损伤 | 不提供 PEP、检测、疫苗、伤口处理、暴露处置、医疗、合规、工伤或法律建议 |
 | [Medical Device Equipment Safety Maintenance](domains/medical-device-equipment-safety-maintenance/README.md) | 医疗设备生命周期、不良事件、UDI、召回、维护、网络安全和可用性 | 让诊断、治疗、监测、生命支持和康复工具具备可靠运行与纠错能力 | 不提供设备使用、维修、改装、采购、报警处理、临床操作、漏洞利用或医疗建议 |
 | [Sterilization Disinfection Infection Control](domains/sterilization-disinfection-infection-control/README.md) | 清洁、消毒、灭菌、再处理、环境感染控制和 HAI 预防 | 防止医疗、照护和公共空间把服务过程变成感染入口 | 不提供消毒配方、灭菌参数、器械再处理、隔离决策、暴发处置或规避感染控制建议 |
 | [Built Environment Accessibility Universal Design](domains/built-environment-accessibility-universal-design/README.md) | 物理空间可达、路径连续、公共设施、通用设计和环境参与条件 | 让不同身体、感官和认知状态的主体仍能进入、移动、使用、撤离和参与 | 不提供建筑设计施工、验收、个案法律、合理便利、撤离路线或辅助设备建议 |
@@ -2344,6 +2356,12 @@ human_infra/
 │   ├── air-quality-ventilation-exposure-control/
 │   ├── food-safety-contamination-control/
 │   ├── occupational-exposure-industrial-hygiene/
+│   ├── workplace-fall-protection-height-safety-continuity/
+│   ├── hazardous-energy-lockout-tagout-continuity/
+│   ├── machine-guarding-amputation-prevention-continuity/
+│   ├── powered-industrial-truck-forklift-safety-continuity/
+│   ├── confined-space-entry-atmospheric-hazard-continuity/
+│   ├── bloodborne-pathogens-sharps-injury-worker-continuity/
 │   ├── medical-device-equipment-safety-maintenance/
 │   ├── sterilization-disinfection-infection-control/
 │   ├── built-environment-accessibility-universal-design/
