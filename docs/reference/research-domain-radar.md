@@ -45,6 +45,12 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `pain-suffering-control/` | 持续存在必须同时审查痛苦、可承受性、尊严和有效时间质量 |
 | `nutrition-metabolic-health/` | 营养、代谢状态、食物环境和慢病风险具有独立变量与证据体系 |
 | `physical-activity-mobility/` | 身体活动和移动能力是行动密度、慢病风险和功能持续的基础输入 |
+| `geroprotective-drug-repurposing-trial-governance-continuity/` | 抗衰药物再利用需要独立试验终点、安全监测、动物到人体外推边界和离标签误用治理 |
+| `dietary-supplement-nutraceutical-evidence-safety-continuity/` | 补剂和 nutraceuticals 具有独立标签、成分、污染、相互作用、不良事件和 claims 证据体系 |
+| `resistance-training-muscle-strength-sarcopenia-continuity/` | 肌力、抗阻训练、肌少症和虚弱直接决定主体能否把寿命转化为行动能力和独立性 |
+| `cardiorespiratory-fitness-vo2max-aerobic-capacity-continuity/` | 心肺适能和 VO2max 是功能储备、运动耐受和死亡风险预测的独立状态变量 |
+| `caloric-restriction-fasting-energy-balance-governance-continuity/` | 热量限制和禁食有独立能量、营养、心理、依从性和安全风险门槛，不能混入普通营养建议 |
+| `thermal-stress-sauna-cold-exposure-hormesis-governance-continuity/` | 冷热应激和 hormesis 具有独立急性风险、观察性证据偏倚和高扰动生活方式干预边界 |
 | `cardiovascular-resilience/` | 循环系统是死亡风险、认知连续性和行动能力的核心通道 |
 | `musculoskeletal-integrity/` | 肌肉、骨骼、关节和跌倒风险决定主体能否把寿命转化为行动 |
 | `social-connection-relational-infra/` | 社会连接、照护网络和关系支持是主体恢复、求助和协作的外部条件 |

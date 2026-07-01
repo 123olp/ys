@@ -1,0 +1,52 @@
+# Resistance Training Muscle Strength Sarcopenia Continuity
+
+`resistance-training-muscle-strength-sarcopenia-continuity/` 研究抗阻训练、肌力、肌肉量、肌少症、虚弱、跌倒风险和功能独立如何进入主体持续性模型。
+
+> 核心问题：肌肉不是审美变量，而是行动、代谢、跌倒防护、康复储备和晚年独立性的基础执行器。
+
+## 先验位置
+
+```text
+有效永生 / 主体持续性最大化
+  -> 主体必须能移动、搬运、起立、避险、照护自己并完成现实任务
+  -> 年龄相关肌力下降和肌少症会压缩行动范围、恢复能力和独立性
+  -> 抗阻训练可能提高肌力、功能表现、骨骼负荷和代谢储备
+  -> 因此肌力和抗阻训练是有效时间和行动密度的执行层研究域
+```
+
+## 关注对象
+
+- resistance training、progressive overload、grip strength、sit-to-stand、gait speed、SPPB、lean mass、dynapenia、sarcopenia 和 frailty。
+- 老年人、慢病人群、康复期、跌倒高风险和久坐人群中的安全、依从性、可及性与效果测量。
+- 与 `physical-activity-mobility/` 的边界：身体活动域关注行动整体；本域关注力量、肌肉功能和抗阻训练。
+- 与 `musculoskeletal-integrity/` 的边界：肌骨完整性域关注结构承载；本域关注训练干预和肌力功能储备。
+
+## Human Infra 模型链路
+
+```text
+抗阻训练 T
+  -> 影响肌力、肌肉量、神经肌肉控制、骨负荷、胰岛素敏感性和功能表现 X
+  -> 改变行动状态 S、跌倒风险、失能风险和恢复储备
+  -> 改变健康寿命、有效时间、照护依赖和未来选择权
+```
+
+## 非目标
+
+- 不提供训练计划、重量、动作处方、康复方案、伤病处理或个体运动建议。
+- 不把单一动作、网红训练、肌肉量数字或穿戴设备数据写成长期健康结论。
+- 不替代医生、物理治疗师、运动专业人员或老年照护评估。
+- 不鼓励高风险人群自行开始高强度训练或忽视疼痛、心血管、骨骼和跌倒风险。
+
+## Source Signals
+
+- HHS Physical Activity Guidelines for Americans: https://odphp.health.gov/our-work/nutrition-physical-activity/physical-activity-guidelines
+- WHO physical activity and sedentary behaviour guidelines: https://www.who.int/publications/i/item/9789240015128
+- CDC adult physical activity basics: https://www.cdc.gov/physical-activity-basics/guidelines/adults.html
+- NIA exercise types for older adults: https://www.nia.nih.gov/health/exercise-and-physical-activity/three-types-exercise-can-improve-your-health-and-physical
+- Resistance exercise and sarcopenia review: https://pmc.ncbi.nlm.nih.gov/articles/PMC4849483/
+
+## 下一步
+
+1. 建立肌力功能变量表：grip strength、chair stand、gait speed、SPPB、fall history、lean mass。
+2. 将抗阻训练证据拆成预防、康复、老年虚弱、慢病和高风险禁忌五类。
+3. 与 `fall-prevention-home-safety-continuity/`、`musculoskeletal-integrity/` 和 `rehabilitation-functioning/` 建立边界。

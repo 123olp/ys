@@ -38,6 +38,24 @@ domains/
 ├── multiomics-personal-baseline-systems-biology/
 │   ├── AGENTS.md
 │   └── README.md
+├── geroprotective-drug-repurposing-trial-governance-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── dietary-supplement-nutraceutical-evidence-safety-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── resistance-training-muscle-strength-sarcopenia-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── cardiorespiratory-fitness-vo2max-aerobic-capacity-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── caloric-restriction-fasting-energy-balance-governance-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── thermal-stress-sauna-cold-exposure-hormesis-governance-continuity/
+│   ├── AGENTS.md
+│   └── README.md
 ├── engineered-cell-therapy-regenerative-platforms/
 │   ├── AGENTS.md
 │   └── README.md
@@ -2587,6 +2605,7 @@ domains/
 - `coastal-marine-resilience-blue-economy-continuity/`、`fisheries-aquatic-food-systems-continuity/`、`dams-levees-flood-control-infrastructure-safety/`、`public-works-civil-infrastructure-asset-management/`、`urban-planning-land-use-zoning-resilience/` 和 `green-blue-infrastructure-urban-nature-cooling/` 负责海岸海洋、水生食物、防洪工程、公共工程资产、城市空间治理和绿蓝基础设施这些自然-工程-城市交界条件。
 - `electric-grid-reliability-resilience-continuity/`、`water-wastewater-utility-service-continuity/`、`fuel-thermal-energy-service-continuity/`、`public-transit-service-operations-continuity/`、`critical-infrastructure-lifeline-interdependency-resilience/` 和 `utility-affordability-shutoff-protection-continuity/` 负责电网、水务污水、燃料热能、公共交通、关键基础设施生命线互依赖和公用事业可负担性这些日常运行生命线条件。
 - `gene-therapy-genome-editing-delivery-safety/`、`biological-age-clocks-biomarker-validation/`、`multiomics-personal-baseline-systems-biology/`、`engineered-cell-therapy-regenerative-platforms/`、`organoids-organ-on-chip-disease-models/` 和 `xenotransplantation-bioengineered-organ-replacement/` 负责基因治疗与编辑递送安全、生物年龄钟验证、多组学个人基线、工程细胞疗法、人体相关疾病模型和器官替换平台这些生物医学平台条件。
+- `geroprotective-drug-repurposing-trial-governance-continuity/`、`dietary-supplement-nutraceutical-evidence-safety-continuity/`、`resistance-training-muscle-strength-sarcopenia-continuity/`、`cardiorespiratory-fitness-vo2max-aerobic-capacity-continuity/`、`caloric-restriction-fasting-energy-balance-governance-continuity/` 和 `thermal-stress-sauna-cold-exposure-hormesis-governance-continuity/` 负责长寿干预从药物、补剂、力量、心肺、能量限制到冷热应激的证据治理、风险门槛和非目标边界。
 - `causal-inference-target-trial-emulation/`、`survival-analysis-healthspan-risk-modeling/`、`human-digital-twin-life-course-simulation/`、`implementation-science-adherence-behavior-change/`、`uncertainty-quantification-model-calibration/` 和 `data-quality-missingness-representativeness/` 负责因果识别、寿命/健康寿命风险、生命历程仿真、实施落地、模型校准和数据质量这些定量方法学条件。
 - `privacy-preserving-computation-federated-learning/`、`knowledge-graph-ontology-semantic-interoperability/`、`model-cards-ai-audit-documentation/`、`technology-foresight-horizon-scanning/`、`research-portfolio-prioritization-funding-governance/` 和 `intellectual-property-technology-transfer-access/` 负责隐私保护计算、语义知识组织、模型审计、未来技术信号、研究组合排序和技术转移可及这些知识治理与技术扩散条件。
 - `trustworthy-scientific-communication-peer-review/`、`research-participant-consent-community-engagement/`、`biobanking-biospecimen-quality-chain-of-custody/`、`longitudinal-cohort-retention-followup-infrastructure/`、`registries-real-world-data-governance/` 和 `scientific-instrumentation-sensor-calibration-maintenance/` 负责可信科研传播、研究参与者同意、样本质量保管链、纵向队列随访、真实世界登记和仪器传感器校准这些科研证据基础设施条件。
@@ -2650,6 +2669,7 @@ domains/
 - `domestic-violence-coercive-control-safety-continuity/`、`sexual-assault-forensic-exam-advocacy-continuity/`、`stalking-harassment-protection-order-continuity/`、`victim-witness-rights-notification-continuity/`、`crime-victim-compensation-restitution-continuity/`、`survivor-safe-housing-emergency-transfer-continuity/`、`human-trafficking-victim-identification-services-continuity/` 和 `missing-persons-unidentified-remains-resolution-continuity/` 负责把综合人身安全域拆成受害者安全、服务、权利通知、住房转移、补偿恢复、人口贩运识别和失踪身份恢复这些可独立审查的执行连续性条件。
 - `cellular-reprogramming/` 负责山中因子、部分重编程、化学重编程、AI 因子设计和表观遗传编辑等“细胞状态可重写”谱系，不提供实验协议或人体应用建议。
 - `gene-therapy-genome-editing-delivery-safety/`、`biological-age-clocks-biomarker-validation/`、`multiomics-personal-baseline-systems-biology/`、`engineered-cell-therapy-regenerative-platforms/`、`organoids-organ-on-chip-disease-models/` 和 `xenotransplantation-bioengineered-organ-replacement/` 负责高杠杆生物医学平台从状态观测、机制扰动、模型验证到器官替换的证据和风险边界，不提供实验协议、制造步骤、个体检测解释、治疗选择或人体应用建议。
+- `geroprotective-drug-repurposing-trial-governance-continuity/`、`dietary-supplement-nutraceutical-evidence-safety-continuity/`、`resistance-training-muscle-strength-sarcopenia-continuity/`、`cardiorespiratory-fitness-vo2max-aerobic-capacity-continuity/`、`caloric-restriction-fasting-energy-balance-governance-continuity/` 和 `thermal-stress-sauna-cold-exposure-hormesis-governance-continuity/` 负责可执行长寿干预的证据、安全和模型接口边界，不提供药物、补剂、训练、禁食、冷热暴露、测试、处方、购买、剂量、频率、个体医疗或运动建议。
 - `causal-inference-target-trial-emulation/`、`survival-analysis-healthspan-risk-modeling/`、`human-digital-twin-life-course-simulation/`、`implementation-science-adherence-behavior-change/`、`uncertainty-quantification-model-calibration/` 和 `data-quality-missingness-representativeness/` 负责各研究域进入定量预测前的因果、风险、仿真、实施、校准和数据入口门禁，不输出个体死亡日期、临床决策、自动化评分或未经验证的寿命承诺。
 - `privacy-preserving-computation-federated-learning/`、`knowledge-graph-ontology-semantic-interoperability/`、`model-cards-ai-audit-documentation/`、`technology-foresight-horizon-scanning/`、`research-portfolio-prioritization-funding-governance/` 和 `intellectual-property-technology-transfer-access/` 负责研究系统可信、可组合、可审计、可预警、可排序和可扩散的治理边界，不提供隐私攻击、临床编码服务、模型认证、投资建议、资助操控、专利法律意见或商业估值。
 - `trustworthy-scientific-communication-peer-review/`、`research-participant-consent-community-engagement/`、`biobanking-biospecimen-quality-chain-of-custody/`、`longitudinal-cohort-retention-followup-infrastructure/`、`registries-real-world-data-governance/` 和 `scientific-instrumentation-sensor-calibration-maintenance/` 负责科研证据进入模型前的基础设施边界，不提供学术操控、IRB 规避、非法采样、重新识别、真实世界数据越权访问、伪造校准、设备改装、个体诊断或寿命预测。

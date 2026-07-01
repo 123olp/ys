@@ -303,6 +303,12 @@ flowchart TD
     H --> GTGED[gene-therapy-genome-editing-delivery-safety<br/>基因治疗 / 编辑递送安全]
     H --> BACBV[biological-age-clocks-biomarker-validation<br/>生物年龄钟 / 标志物验证]
     H --> MPBSB[multiomics-personal-baseline-systems-biology<br/>多组学 / 个人基线]
+    H --> GDPTG[geroprotective-drug-repurposing-trial-governance-continuity<br/>抗衰药物再利用 / 试验治理]
+    H --> DSNES[dietary-supplement-nutraceutical-evidence-safety-continuity<br/>补剂 / 证据安全]
+    H --> RTMSS[resistance-training-muscle-strength-sarcopenia-continuity<br/>抗阻训练 / 肌力肌少症]
+    H --> CRFVO2[cardiorespiratory-fitness-vo2max-aerobic-capacity-continuity<br/>心肺适能 / VO2max]
+    H --> CRFEB[caloric-restriction-fasting-energy-balance-governance-continuity<br/>热量限制禁食 / 能量平衡]
+    H --> TSSCH[thermal-stress-sauna-cold-exposure-hormesis-governance-continuity<br/>冷热应激 / hormesis 治理]
     H --> ECTRP[engineered-cell-therapy-regenerative-platforms<br/>工程细胞疗法 / 再生平台]
     H --> OOCDM[organoids-organ-on-chip-disease-models<br/>类器官 / 组织芯片]
     H --> XBOR[xenotransplantation-bioengineered-organ-replacement<br/>异种移植 / 工程器官替换]
@@ -1095,6 +1101,12 @@ flowchart TD
 | [Gene Therapy Genome Editing Delivery Safety](domains/gene-therapy-genome-editing-delivery-safety/README.md) | 基因治疗、基因编辑、递送载体、表达控制和长期随访 | 遗传状态、修复能力、递送安全、脱靶和长期风险变量 | 不提供编辑设计、载体构建、实验流程、剂量、人体应用、DIY 生物或增强性编辑建议 |
 | [Biological Age Clocks Biomarker Validation](domains/biological-age-clocks-biomarker-validation/README.md) | 表观遗传年龄钟、蛋白组/代谢组年龄、功能年龄和 biomarker 验证 | 观测衰老状态、风险预测、干预反馈和替代终点边界 | 不输出个体死亡日期、寿命承诺、医学诊断、治疗建议或检测购买建议 |
 | [Multiomics Personal Baseline Systems Biology](domains/multiomics-personal-baseline-systems-biology/README.md) | 基因组、表观组、转录组、蛋白组、代谢组、微生物组和个人基线 | 多层主体状态、个体差异、系统网络和风险预测数据底座 | 不保存个人敏感数据，不提供基因解释、疾病诊断、治疗或保险就业建议 |
+| [Geroprotective Drug Repurposing Trial Governance Continuity](domains/geroprotective-drug-repurposing-trial-governance-continuity/README.md) | metformin、rapamycin、acarbose、canagliflozin、geroprotective candidates 和试验治理 | 把抗衰药物从机制叙事和动物寿命转成终点、安全、剂量、试验和证据等级问题 | 不提供药物、剂量、处方、离标签使用、购买、联合用药、检测或个体医学建议 |
+| [Dietary Supplement Nutraceutical Evidence Safety Continuity](domains/dietary-supplement-nutraceutical-evidence-safety-continuity/README.md) | 膳食补充剂、nutraceuticals、标签、成分、污染、相互作用和不良事件 | 把补剂从“天然健康”叙事转成证据、安全、标签和风险治理对象 | 不提供补剂购买、剂量、品牌、搭配、检测解释、药物替代或个体建议 |
+| [Resistance Training Muscle Strength Sarcopenia Continuity](domains/resistance-training-muscle-strength-sarcopenia-continuity/README.md) | 抗阻训练、肌力、肌少症、虚弱、跌倒和功能独立 | 把肌肉作为行动密度、康复储备、代谢储备和晚年独立性的执行器 | 不提供训练计划、重量、动作处方、康复方案、伤病处理或个体运动建议 |
+| [Cardiorespiratory Fitness VO2max Aerobic Capacity Continuity](domains/cardiorespiratory-fitness-vo2max-aerobic-capacity-continuity/README.md) | 心肺适能、VO2max、有氧容量、METs、运动测试和死亡风险预测 | 把氧输送、循环、代谢和耐力组织成可观测的功能储备变量 | 不提供跑步、骑行、HIIT、Zone 2、测试协议、训练计划或个体运动建议 |
+| [Caloric Restriction Fasting Energy Balance Governance Continuity](domains/caloric-restriction-fasting-energy-balance-governance-continuity/README.md) | 热量限制、禁食、限时进食、能量平衡、营养充足和安全风险 | 把 CR / fasting 从延寿叙事转成能量、营养、心理、依从性和风险门槛问题 | 不提供热量目标、禁食窗口、减重计划、饮食处方、补剂搭配或个体建议 |
+| [Thermal Stress Sauna Cold Exposure Hormesis Governance Continuity](domains/thermal-stress-sauna-cold-exposure-hormesis-governance-continuity/README.md) | sauna、被动热疗、冷暴露、冷水浸泡、热冷应激和 hormesis 证据边界 | 把冷热扰动作为高不确定生活方式干预审查，而不是低成本长寿捷径 | 不提供温度、时长、频率、场地、安全操作、训练安排或个体建议 |
 | [Engineered Cell Therapy Regenerative Platforms](domains/engineered-cell-therapy-regenerative-platforms/README.md) | CAR-T、TCR-T、TIL、NK、iPSC 衍生细胞和可编程细胞平台 | 活体药物、免疫修复、组织再生、持久性和安全开关 | 不提供细胞制备、靶点设计、给药、临床选择、制造协议或治疗建议 |
 | [Organoids Organ On Chip Disease Models](domains/organoids-organ-on-chip-disease-models/README.md) | 类器官、organ-on-chip、组织芯片、患者来源模型和新方法学 | 降低药物筛选、毒性预测、疾病建模和转化失败成本 | 不提供培养、芯片制造、样本处理、药物筛选操作或人体疗效外推 |
 | [Xenotransplantation Bioengineered Organ Replacement](domains/xenotransplantation-bioengineered-organ-replacement/README.md) | 异种移植、基因编辑动物器官、工程器官、器官保存灌注和器官供给 | 器官衰竭、移植等待、免疫风险、感染风险和长期功能变量 | 不提供移植选择、手术、免疫抑制、动物处理、病原检测或器官保存操作建议 |
@@ -2009,6 +2021,12 @@ human_infra/
 │   ├── gene-therapy-genome-editing-delivery-safety/
 │   ├── biological-age-clocks-biomarker-validation/
 │   ├── multiomics-personal-baseline-systems-biology/
+│   ├── geroprotective-drug-repurposing-trial-governance-continuity/
+│   ├── dietary-supplement-nutraceutical-evidence-safety-continuity/
+│   ├── resistance-training-muscle-strength-sarcopenia-continuity/
+│   ├── cardiorespiratory-fitness-vo2max-aerobic-capacity-continuity/
+│   ├── caloric-restriction-fasting-energy-balance-governance-continuity/
+│   ├── thermal-stress-sauna-cold-exposure-hormesis-governance-continuity/
 │   ├── engineered-cell-therapy-regenerative-platforms/
 │   ├── organoids-organ-on-chip-disease-models/
 │   ├── xenotransplantation-bioengineered-organ-replacement/
@@ -2742,5 +2760,6 @@ flowchart LR
 - 2026-07-01：新增第一百二十二波 6 个儿童营养项目执行连续性域，覆盖 Summer EBT / SUN Bucks、SFSP 暑期供餐站点、CACFP、课后点心晚餐、特殊饮食/过敏校餐便利和校餐欠费污名。
 - 2026-07-01：新增第一百二十三波 6 个 Food is Medicine / 医疗营养支持执行连续性域，覆盖营养不安全筛查转介、医学定制餐、医学定制食材、蔬果处方、临床 food pharmacy/pantry 和医学营养治疗营养师可达。
 - 2026-07-01：新增第一百二十四波 6 个生殖技术与生育保存治理连续性域，覆盖 ART/IVF 周期、ART 诊所成功率质量报告、生育保存冷冻储存、生殖组织供体筛查追溯、PGT 胚胎选择治理和第三方生殖法律伦理。
+- 2026-07-01：新增第一百二十五波 6 个长寿干预执行与证据治理连续性域，覆盖 geroprotective 药物再利用试验治理、补剂证据安全、抗阻训练肌力肌少症、心肺适能 VO2max、热量限制禁食能量平衡和冷热应激 hormesis 治理。
 
 完整记录见 [CHANGELOG.md](CHANGELOG.md)。

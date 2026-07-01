@@ -47,6 +47,12 @@ human_infra/
     ├── gene-therapy-genome-editing-delivery-safety/ # 基因治疗、基因编辑与递送安全
     ├── biological-age-clocks-biomarker-validation/ # 生物年龄钟与标志物验证
     ├── multiomics-personal-baseline-systems-biology/ # 多组学个人基线与系统生物学
+    ├── geroprotective-drug-repurposing-trial-governance-continuity/ # 抗衰药物再利用与试验治理
+    ├── dietary-supplement-nutraceutical-evidence-safety-continuity/ # 补剂与 nutraceutical 证据安全
+    ├── resistance-training-muscle-strength-sarcopenia-continuity/ # 抗阻训练、肌力与肌少症
+    ├── cardiorespiratory-fitness-vo2max-aerobic-capacity-continuity/ # 心肺适能与 VO2max
+    ├── caloric-restriction-fasting-energy-balance-governance-continuity/ # 热量限制、禁食与能量平衡
+    ├── thermal-stress-sauna-cold-exposure-hormesis-governance-continuity/ # 冷热应激与 hormesis 治理
     ├── engineered-cell-therapy-regenerative-platforms/ # 工程细胞疗法与再生平台
     ├── organoids-organ-on-chip-disease-models/ # 类器官、组织芯片与疾病模型
     ├── xenotransplantation-bioengineered-organ-replacement/ # 异种移植与工程器官替换
@@ -1052,6 +1058,12 @@ human_infra/
 - `domains/gene-therapy-genome-editing-delivery-safety/` 负责基因治疗、基因编辑、递送载体、表达控制、长期随访和遗传安全。
 - `domains/biological-age-clocks-biomarker-validation/` 负责表观遗传年龄钟、组学年龄、功能年龄、衰老 biomarker 和验证边界。
 - `domains/multiomics-personal-baseline-systems-biology/` 负责基因组、表观组、转录组、蛋白组、代谢组、微生物组和个人基线系统生物学。
+- `domains/geroprotective-drug-repurposing-trial-governance-continuity/` 负责 metformin、rapamycin 等 geroprotective drug candidates 的再利用证据、试验治理、终点和安全边界。
+- `domains/dietary-supplement-nutraceutical-evidence-safety-continuity/` 负责膳食补充剂、nutraceuticals、成分标签、污染、相互作用、不良事件和 claims 证据边界。
+- `domains/resistance-training-muscle-strength-sarcopenia-continuity/` 负责抗阻训练、肌力、肌少症、虚弱、跌倒风险和功能独立变量。
+- `domains/cardiorespiratory-fitness-vo2max-aerobic-capacity-continuity/` 负责心肺适能、VO2max、有氧容量、METs、运动测试和功能储备证据。
+- `domains/caloric-restriction-fasting-energy-balance-governance-continuity/` 负责热量限制、禁食、限时进食、能量平衡、营养充足和安全风险治理。
+- `domains/thermal-stress-sauna-cold-exposure-hormesis-governance-continuity/` 负责 sauna、被动热疗、冷暴露、冷水浸泡和冷热 hormesis 的证据与风险边界。
 - `domains/engineered-cell-therapy-regenerative-platforms/` 负责 CAR-T、TCR-T、TIL、NK、iPSC 衍生细胞和可编程细胞平台。
 - `domains/organoids-organ-on-chip-disease-models/` 负责类器官、organ-on-chip、组织芯片、患者来源模型和人体相关新方法学。
 - `domains/xenotransplantation-bioengineered-organ-replacement/` 负责异种移植、基因编辑动物器官、工程器官、器官保存灌注和替代性器官供给。
@@ -1340,3 +1352,4 @@ human_infra/
 - 2026-07-01：新增第一百一十三波 6 个邻里公共空间维护与地方服务请求执行连续性域，把 311 服务请求、路灯夜间可见性、人行道/路缘坡道、雪冰通行、街道树木和雨水口局部内涝纳入最后一公里公共工程维护层。
 - 2026-07-01：新增第一百二十三波 6 个 Food is Medicine / 医疗营养支持执行连续性域，覆盖营养不安全筛查转介、医学定制餐、医学定制食材、蔬果处方、临床 food pharmacy/pantry 和医学营养治疗营养师可达。
 - 2026-07-01：新增第一百二十四波 6 个生殖技术与生育保存治理连续性域，覆盖 ART/IVF 周期、ART 诊所成功率质量报告、生育保存冷冻、生殖组织供体筛查追溯、PGT 胚胎选择治理和第三方生殖法律伦理。
+- 2026-07-01：新增第一百二十五波 6 个长寿干预执行与证据治理连续性域，覆盖 geroprotective 药物再利用试验治理、补剂证据安全、抗阻训练肌力肌少症、心肺适能 VO2max、热量限制禁食能量平衡和冷热应激 hormesis 治理。

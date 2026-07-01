@@ -57,6 +57,12 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 遗传状态可被安全改写 | `gene-therapy-genome-editing-delivery-safety/` | 基因治疗、基因编辑、递送载体、表达控制、脱靶和长期随访 | 编辑错误、递送失败、免疫反应、脱靶和长期风险把高杠杆干预转成新风险 |
 | 衰老指标必须被验证 | `biological-age-clocks-biomarker-validation/` | 表观遗传年龄钟、组学年龄、功能年龄、衰老 biomarker 和替代终点 | 指标与真实终点错配，导致伪优化、错误干预和寿命叙事外推 |
 | 主体状态必须可多层观测 | `multiomics-personal-baseline-systems-biology/` | 基因组、表观组、转录组、蛋白组、代谢组、微生物组和个人基线 | 单一指标看不到系统状态，模型误判个体差异、风险轨迹和干预反应 |
+| 抗衰药物必须通过试验治理 | `geroprotective-drug-repurposing-trial-governance-continuity/` | geroprotective candidates、药物再利用、试验终点、安全监测和离标签边界 | 把动物寿命、机制合理或商业试验叙事写成人体延寿处方 |
+| 补剂必须通过证据和安全审查 | `dietary-supplement-nutraceutical-evidence-safety-continuity/` | 补剂成分、标签、污染、相互作用、不良事件和 claims | 把天然、热门、机制合理或短期指标写成低风险长寿收益 |
+| 肌力必须维持行动执行器 | `resistance-training-muscle-strength-sarcopenia-continuity/` | 抗阻训练、肌力、肌少症、虚弱、跌倒和功能独立 | 寿命延长但肌力下降，导致有效时间被失能、跌倒和照护依赖吞噬 |
+| 心肺适能必须维持功能储备 | `cardiorespiratory-fitness-vo2max-aerobic-capacity-continuity/` | VO2max、METs、有氧容量、运动耐受和 CRF 风险预测 | 把运动行为、可穿戴估算或竞技表现误写成医学结论和寿命收益 |
+| 能量限制必须守住营养和心理边界 | `caloric-restriction-fasting-energy-balance-governance-continuity/` | CR、fasting、限时进食、能量平衡、营养充足和安全风险 | 把少吃、禁食或体重下降写成通用延寿策略，触发营养不良、肌少症或进食障碍风险 |
+| 冷热应激必须通过高扰动风险门 | `thermal-stress-sauna-cold-exposure-hormesis-governance-continuity/` | sauna、热疗、冷暴露、冷水浸泡、hormesis 和急性风险 | 把观察性关联、主观体验或 hormesis 叙事写成低成本长寿捷径 |
 | 细胞可作为治疗平台 | `engineered-cell-therapy-regenerative-platforms/` | CAR-T、TCR-T、TIL、NK、iPSC 衍生细胞、可编程细胞和安全开关 | 活体药物扩增失控、脱靶、毒性、制造失败或长期恶性风险 |
 | 人体相关模型必须降低试错成本 | `organoids-organ-on-chip-disease-models/` | 类器官、organ-on-chip、组织芯片、患者来源模型和替代方法 | 模型失真导致候选干预错误进入或退出临床，或把体外信号外推成人体疗效 |
 | 器官失败必须有替换路径 | `xenotransplantation-bioengineered-organ-replacement/` | 异种移植、工程器官、器官保存灌注、器官供给和移植平台风险 | 器官衰竭、供给不足、免疫排斥、感染和长期功能失败直接截断生命路径 |
@@ -1011,6 +1017,12 @@ cellular-reprogramming
   -> gene-therapy-genome-editing-delivery-safety
   -> biological-age-clocks-biomarker-validation
   -> multiomics-personal-baseline-systems-biology
+  -> geroprotective-drug-repurposing-trial-governance-continuity
+  -> dietary-supplement-nutraceutical-evidence-safety-continuity
+  -> resistance-training-muscle-strength-sarcopenia-continuity
+  -> cardiorespiratory-fitness-vo2max-aerobic-capacity-continuity
+  -> caloric-restriction-fasting-energy-balance-governance-continuity
+  -> thermal-stress-sauna-cold-exposure-hormesis-governance-continuity
   -> engineered-cell-therapy-regenerative-platforms
   -> organoids-organ-on-chip-disease-models
   -> xenotransplantation-bioengineered-organ-replacement

@@ -12,6 +12,12 @@
 - `gene-therapy-genome-editing-delivery-safety/`：基因治疗与基因编辑递送安全，整理递送载体、表达控制、脱靶、长期随访和遗传安全边界。
 - `biological-age-clocks-biomarker-validation/`：生物年龄钟与标志物验证，整理表观遗传年龄钟、组学年龄、功能年龄、替代终点和验证边界。
 - `multiomics-personal-baseline-systems-biology/`：多组学个人基线与系统生物学，整理多层组学、纵向个人基线、系统网络和数据治理边界。
+- `geroprotective-drug-repurposing-trial-governance-continuity/`：抗衰药物再利用与试验治理连续性，整理 geroprotective candidates、终点、安全和离标签误用边界。
+- `dietary-supplement-nutraceutical-evidence-safety-continuity/`：补剂与 nutraceutical 证据安全连续性，整理成分、标签、污染、相互作用、不良事件和 claims 边界。
+- `resistance-training-muscle-strength-sarcopenia-continuity/`：抗阻训练、肌力与肌少症连续性，整理力量、肌肉功能、虚弱、跌倒和行动独立。
+- `cardiorespiratory-fitness-vo2max-aerobic-capacity-continuity/`：心肺适能、VO2max 与有氧容量连续性，整理功能储备、运动测试、CRF 与风险预测边界。
+- `caloric-restriction-fasting-energy-balance-governance-continuity/`：热量限制、禁食与能量平衡治理连续性，整理 CALERIE、CR、fasting、营养充足和风险门槛。
+- `thermal-stress-sauna-cold-exposure-hormesis-governance-continuity/`：冷热应激、sauna、冷暴露与 hormesis 治理连续性，整理证据等级、急性风险和误用边界。
 - `engineered-cell-therapy-regenerative-platforms/`：工程细胞疗法与再生平台，整理 CAR-T、TCR-T、TIL、NK、iPSC 衍生细胞和可编程细胞安全边界。
 - `organoids-organ-on-chip-disease-models/`：类器官、组织芯片与疾病模型，整理人体相关模型、患者来源模型、替代方法和模型验证边界。
 - `xenotransplantation-bioengineered-organ-replacement/`：异种移植与工程器官替换，整理基因编辑动物器官、工程器官、器官保存灌注和供给风险边界。

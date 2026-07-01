@@ -144,6 +144,8 @@ docs/
 │   ├── 0126-add-one-hundred-twenty-first-wave-public-benefits-redetermination-domains.md
 │   ├── 0127-add-one-hundred-twenty-second-wave-child-nutrition-program-execution-domains.md
 │   ├── 0128-add-one-hundred-twenty-third-wave-food-is-medicine-execution-domains.md
+│   ├── 0129-add-one-hundred-twenty-fourth-wave-reproductive-technology-governance-domains.md
+│   ├── 0130-add-one-hundred-twenty-fifth-wave-longevity-intervention-governance-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -328,6 +330,12 @@ docs/
 127. Read `../domains/gene-therapy-genome-editing-delivery-safety/README.md` if you are working on gene therapy, genome editing, delivery vectors, off-target risk, expression control, or long-term follow-up.
 128. Read `../domains/biological-age-clocks-biomarker-validation/README.md` if you are working on epigenetic clocks, biological age, biomarker validation, surrogate endpoints, or aging feedback metrics.
 129. Read `../domains/multiomics-personal-baseline-systems-biology/README.md` if you are working on genomics, epigenomics, transcriptomics, proteomics, metabolomics, microbiomics, longitudinal personal baselines, or systems biology.
+130. Read `../domains/geroprotective-drug-repurposing-trial-governance-continuity/README.md` if you are working on metformin, rapamycin, geroprotective candidates, anti-aging drug repurposing, ITP-style evidence, or trial governance.
+131. Read `../domains/dietary-supplement-nutraceutical-evidence-safety-continuity/README.md` if you are working on dietary supplements, nutraceuticals, labels, ingredients, adverse events, contamination, interactions, or longevity supplement claims.
+132. Read `../domains/resistance-training-muscle-strength-sarcopenia-continuity/README.md` if you are working on resistance training, muscle strength, sarcopenia, frailty, grip strength, functional reserve, or falls-related function.
+133. Read `../domains/cardiorespiratory-fitness-vo2max-aerobic-capacity-continuity/README.md` if you are working on cardiorespiratory fitness, VO2max, aerobic capacity, METs, endurance, exercise testing, or CRF risk prediction.
+134. Read `../domains/caloric-restriction-fasting-energy-balance-governance-continuity/README.md` if you are working on caloric restriction, fasting, time-restricted eating, energy balance, CALERIE, adequate nutrition, or fasting safety.
+135. Read `../domains/thermal-stress-sauna-cold-exposure-hormesis-governance-continuity/README.md` if you are working on sauna, passive heat therapy, cold exposure, cold water immersion, thermal stress, or hormesis claims.
 130. Read `../domains/engineered-cell-therapy-regenerative-platforms/README.md` if you are working on CAR-T, TCR-T, TIL, NK, iPSC-derived cells, programmable cells, or engineered cell therapy safety.
 131. Read `../domains/organoids-organ-on-chip-disease-models/README.md` if you are working on organoids, organ-on-chip, tissue chips, patient-derived models, alternative methods, or disease-model validation.
 132. Read `../domains/xenotransplantation-bioengineered-organ-replacement/README.md` if you are working on xenotransplantation, genetically engineered animal organs, bioengineered organ replacement, organ perfusion, or transplant platform risks.
