@@ -91,6 +91,19 @@ docs/
 │   ├── 0080-add-seventy-sixth-wave-research-identity-reproducibility-infrastructure-domains.md
 │   ├── 0081-add-seventy-seventh-wave-evidence-synthesis-guideline-translation-domains.md
 │   ├── 0082-add-seventy-eighth-wave-research-correction-scientific-integrity-domains.md
+│   ├── 0083-add-seventy-ninth-wave-ai-evaluation-operations-governance-domains.md
+│   ├── 0084-add-eightieth-wave-compute-energy-connectivity-substrate-domains.md
+│   ├── 0085-add-eighty-first-wave-acute-rescue-organ-support-domains.md
+│   ├── 0086-add-eighty-second-wave-acute-internal-medicine-emergency-domains.md
+│   ├── 0087-add-eighty-third-wave-preventive-risk-factor-control-domains.md
+│   ├── 0088-add-eighty-fourth-wave-life-course-preventive-continuity-domains.md
+│   ├── 0089-add-eighty-fifth-wave-chronic-specialty-burden-continuity-domains.md
+│   ├── 0090-add-eighty-sixth-wave-chronic-neuro-neuromuscular-post-infectious-continuity-domains.md
+│   ├── 0091-add-eighty-seventh-wave-organ-specific-cancer-continuity-domains.md
+│   ├── 0092-add-eighty-eighth-wave-oral-dental-jaw-function-continuity-domains.md
+│   ├── 0093-add-eighty-ninth-wave-eye-disease-visual-function-continuity-domains.md
+│   ├── 0094-add-ninetieth-wave-auditory-communication-execution-continuity-domains.md
+│   ├── 0095-add-ninety-first-wave-vestibular-balance-execution-continuity-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -204,6 +217,7 @@ docs/
 - `domains/vision-eye-health-continuity/`、`domains/hearing-auditory-communication-continuity/`、`domains/vestibular-balance-spatial-orientation/`、`domains/speech-language-communication-continuity/`、`domains/swallowing-dysphagia-aspiration-nutrition/`、`domains/smell-taste-chemosensory-continuity/` 和 `domains/peripheral-neuropathy-somatosensory-continuity/`：第三十五波正式研究域，分别承载视觉眼健康、听力听觉沟通、前庭平衡空间定向、言语语言沟通、吞咽误吸营养、嗅味觉化学感知和周围神经躯体感觉连续性。
 - `domains/cataract-vision-restoration-continuity/`、`domains/glaucoma-visual-field-protection-continuity/`、`domains/diabetic-retinopathy-screening-treatment-continuity/`、`domains/age-related-macular-degeneration-central-vision-continuity/`、`domains/refractive-error-glasses-contact-lens-continuity/`、`domains/low-vision-rehabilitation-assistive-technology-continuity/`、`domains/dry-eye-ocular-surface-comfort-continuity/`、`domains/eye-injury-urgent-vision-protection-continuity/`、`domains/pediatric-vision-screening-amblyopia-continuity/` 和 `domains/retinal-detachment-urgent-referral-continuity/`：第八十九波正式研究域，分别承载白内障视觉恢复、青光眼视野保护、糖尿病视网膜病变筛治、AMD 中央视觉、屈光矫正、低视力康复、干眼眼表舒适、眼外伤急性保护、儿童视筛弱视和视网膜脱离急转连续性。
 - `domains/age-related-hearing-loss-hearing-aid-continuity/`、`domains/noise-induced-hearing-loss-prevention-continuity/`、`domains/tinnitus-sound-tolerance-sleep-continuity/`、`domains/otitis-media-child-hearing-development-continuity/`、`domains/sudden-hearing-loss-urgent-referral-continuity/`、`domains/cochlear-implant-communication-continuity/`、`domains/newborn-hearing-screening-language-development-continuity/`、`domains/auditory-processing-listening-effort-continuity/`、`domains/hearing-assistive-devices-alerting-access-continuity/` 和 `domains/captions-relay-service-communication-access-continuity/`：第九十波正式研究域，分别承载老年听损助听、噪声听损预防、耳鸣与声音耐受、儿童中耳炎听觉发育、突发听损急转、人工耳蜗沟通、新生儿听筛、听觉处理与听力负荷、听觉辅助设备和字幕/中继沟通访问连续性。
+- `domains/bppv-positional-vertigo-continuity/`、`domains/menieres-disease-episodic-vertigo-continuity/`、`domains/vestibular-neuritis-labyrinthitis-acute-vertigo-continuity/`、`domains/persistent-postural-perceptual-dizziness-continuity/`、`domains/vestibular-migraine-dizziness-sensory-load-continuity/`、`domains/bilateral-vestibular-hypofunction-gaze-gait-stability-continuity/`、`domains/vestibular-rehabilitation-balance-compensation-continuity/`、`domains/gait-balance-assessment-fall-screening-continuity/`、`domains/motion-sickness-transport-virtual-environment-tolerance-continuity/` 和 `domains/vestibular-ototoxicity-medication-chemical-risk-continuity/`：第九十一波正式研究域，分别承载位置性眩晕、梅尼埃病发作、急性前庭炎/迷路炎、PPPD 慢性头晕、前庭性偏头痛、双侧前庭低下、前庭康复补偿、步态平衡筛查、运动病/虚拟环境耐受和耳毒性前庭风险连续性。
 - `domains/space-weather-geomagnetic-storm-resilience/`、`domains/planetary-defense-near-earth-object-risk/`、`domains/volcanic-ashfall-geohazard-continuity/`、`domains/earthquake-seismic-risk-built-environment-continuity/`、`domains/tsunami-warning-coastal-evacuation-continuity/` 和 `domains/extreme-heat-cooling-public-health-continuity/`：第三十六波正式研究域，分别承载空间天气地磁暴、行星防御近地天体、火山灰地质灾害、地震建成环境、海啸预警沿海撤离和极端高温制冷公共卫生连续性。
 - `domains/noise-exposure-acoustic-environment-continuity/`、`domains/light-exposure-circadian-environment-continuity/`、`domains/lead-heavy-metal-exposure-control/`、`domains/radon-asbestos-indoor-hazard-continuity/`、`domains/mold-dampness-indoor-biological-exposure/` 和 `domains/vector-borne-disease-environmental-control/`：第三十七波正式研究域，分别承载噪声声环境、光照昼夜节律、铅与重金属暴露、氡与石棉室内危害、霉菌潮湿室内生物暴露和病媒传播环境控制。
 - `domains/advance-care-planning-medical-decision-continuity/`、`domains/supported-decision-making-guardianship-rights/`、`domains/healthcare-personal-representative-hipaa-access-continuity/`、`domains/financial-fiduciary-power-of-attorney-continuity/`、`domains/representative-payee-benefits-management-continuity/` 和 `domains/trust-estate-affairs-succession-continuity/`：第三十八波正式研究域，分别承载预先医疗照护计划、支持性决策监护权利、医疗个人代表 HIPAA 访问、财务受托授权代理、代表收款人福利代管和事务信托遗产继承连续性。

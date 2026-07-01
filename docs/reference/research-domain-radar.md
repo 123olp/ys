@@ -469,6 +469,16 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `hearing-assistive-devices-alerting-access-continuity/` | 听觉辅助设备和报警访问决定警报、电话、柜台、教室、会议和公共空间是否能被听损主体使用 |
 | `captions-relay-service-communication-access-continuity/` | 字幕与中继服务决定非听觉沟通通道能否支撑医疗、法律、教育、工作和公共服务访问 |
 | `vestibular-balance-spatial-orientation/` | 前庭、平衡和空间定向决定主体能否稳定站立、行走、转身、外出和避免跌倒 |
+| `bppv-positional-vertigo-continuity/` | BPPV 和位置性眩晕决定头位变化、转身、起床、弯腰和短暂眩晕发作是否会中断日常行动 |
+| `menieres-disease-episodic-vertigo-continuity/` | 梅尼埃病和发作性眩晕决定主体能否在不可预测发作、波动听力和耳鸣耳闷下维持计划与移动信心 |
+| `vestibular-neuritis-labyrinthitis-acute-vertigo-continuity/` | 急性前庭神经炎和迷路炎决定突然持续眩晕、恶心和步态不稳是否能进入恢复链而不长期压缩行动能力 |
+| `persistent-postural-perceptual-dizziness-continuity/` | PPPD 决定慢性头晕、视觉运动敏感、姿势威胁和回避循环是否会持续吞噬公共空间参与 |
+| `vestibular-migraine-dizziness-sensory-load-continuity/` | 前庭性偏头痛决定眩晕、头痛关联、感觉负荷和视觉运动不耐受如何损耗有效时间与任务密度 |
+| `bilateral-vestibular-hypofunction-gaze-gait-stability-continuity/` | 双侧前庭低下决定凝视稳定、振动幻视、暗处行走和复杂地面步态是否能保持最低可行动冗余 |
+| `vestibular-rehabilitation-balance-compensation-continuity/` | 前庭康复补偿决定凝视适应、习服、替代和平衡恢复能否从训练场景迁移到真实任务 |
+| `gait-balance-assessment-fall-screening-continuity/` | 步态平衡评估和跌倒筛查决定早期不稳是否能被识别、解释和转接到适当支持 |
+| `motion-sickness-transport-virtual-environment-tolerance-continuity/` | 运动病决定交通、模拟训练、VR/AR 和虚拟环境是否会因前庭-视觉冲突而成为不可用任务空间 |
+| `vestibular-ototoxicity-medication-chemical-risk-continuity/` | 前庭耳毒性决定药物或化学暴露是否会被追踪为凝视、步态、平衡和跌倒风险的长期来源 |
 | `speech-language-communication-continuity/` | 言语语言沟通决定主体能否表达偏好、理解信息、求助、同意和参与社会关系 |
 | `swallowing-dysphagia-aspiration-nutrition/` | 吞咽安全决定营养水分能否进入身体而不转化为误吸、窒息、肺炎和尊严损害 |
 | `smell-taste-chemosensory-continuity/` | 嗅味觉和化学感知决定危险气味识别、食欲、营养、生活质量和低可见安全反馈 |
@@ -837,6 +847,7 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | WHO / NIDCD hearing resources | 提示听力损失和听觉沟通会影响语言参与、社交连接、认知负担和安全警报接收 |
 | NIDCD / CDC / ADA / FCC hearing access resources | 提示听觉总域需要拆成年龄相关听损、噪声预防、耳鸣负担、儿童中耳炎、突发听损、人工耳蜗、新生儿听筛、听觉处理、辅助设备和字幕/中继这些执行层 |
 | NIDCD balance disorders / CDC STEADI | 提示前庭、平衡和跌倒风险把空间行动、外出能力和独立生活连接起来 |
+| NIDCD / CDC STEADI / APTA / CDC Yellow Book / NIOSH vestibular resources | 提示前庭总域需要拆成位置性眩晕、发作眩晕、急性眩晕、慢性头晕、前庭性偏头痛、双侧前庭低下、康复补偿、步态筛查、运动病和耳毒性前庭风险这些执行层 |
 | NIDCD aphasia resources | 提示语言表达和理解能力决定主体偏好、同意、照护参与和社会角色能否被表达 |
 | NIDCD dysphagia resources | 提示吞咽安全把营养、水分、气道保护、误吸风险和进食尊严连接起来 |
 | NIDCD smell and taste disorder resources | 提示嗅味觉支撑危险气味识别、食欲、营养和生活质量 |
@@ -2008,7 +2019,12 @@ Source links:
 - https://www.who.int/news-room/fact-sheets/detail/deafness-and-hearing-loss
 - https://www.nidcd.nih.gov/health/age-related-hearing-loss
 - https://www.nidcd.nih.gov/health/balance-disorders
+- https://www.nidcd.nih.gov/health/menieres-disease
 - https://www.cdc.gov/steadi/
+- https://www.apta.org/patient-care/evidence-based-practice-resources/cpgs/vestibular-rehabilitation-for-peripheral-vestibular-hypofunction-an-evidence-based-clinical-practice-guideline-cpg
+- https://www.neuropt.org/practice-resources/anpt-clinical-practice-guidelines/peripheral-vestibular-hypofunction-clinical-practice-guideline
+- https://www.cdc.gov/yellow-book/hcp/travel-air-sea/motion-sickness.html
+- https://www.cdc.gov/niosh/publications/numbered/2018-124.html
 - https://www.nidcd.nih.gov/health/aphasia
 - https://www.nidcd.nih.gov/health/dysphagia
 - https://www.nidcd.nih.gov/health/smell-disorders

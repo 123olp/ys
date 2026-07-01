@@ -107,3 +107,4 @@ Current decisions:
 - `0092-add-eighty-eighth-wave-oral-dental-jaw-function-continuity-domains.md`
 - `0093-add-eighty-ninth-wave-eye-disease-visual-function-continuity-domains.md`
 - `0094-add-ninetieth-wave-auditory-communication-execution-continuity-domains.md`
+- `0095-add-ninety-first-wave-vestibular-balance-execution-continuity-domains.md`

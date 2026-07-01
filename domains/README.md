@@ -326,6 +326,16 @@
 - `hearing-assistive-devices-alerting-access-continuity/`：听觉辅助设备与警报接入连续性，整理警报提示、电话会议接入、设备维护和安全信号。
 - `captions-relay-service-communication-access-continuity/`：字幕、中继服务与沟通访问连续性，整理字幕、实时转写、电话/视频中继和非听觉沟通通道。
 - `vestibular-balance-spatial-orientation/`：前庭、平衡与空间定向，整理眩晕、平衡、空间定位、跌倒风险和移动信心。
+- `bppv-positional-vertigo-continuity/`：BPPV 与位置性眩晕连续性，整理头位触发、姿势切换、活动回避和跌倒暴露。
+- `menieres-disease-episodic-vertigo-continuity/`：梅尼埃病发作性眩晕连续性，整理发作眩晕、听觉波动、耳鸣、时间计划和出行不确定性。
+- `vestibular-neuritis-labyrinthitis-acute-vertigo-continuity/`：前庭神经炎/迷路炎急性眩晕连续性，整理急性空间稳定失败、求助、转诊和恢复窗口。
+- `persistent-postural-perceptual-dizziness-continuity/`：PPPD 慢性头晕连续性，整理视觉运动敏感、站立不适、复杂环境回避和有效时间损耗。
+- `vestibular-migraine-dizziness-sensory-load-continuity/`：前庭性偏头痛与感官负荷连续性，整理眩晕、光声运动敏感、脑雾和发作性失能。
+- `bilateral-vestibular-hypofunction-gaze-gait-stability-continuity/`：双侧前庭低下与凝视步态稳定连续性，整理凝视稳定、振动幻视、夜间移动和复杂地面风险。
+- `vestibular-rehabilitation-balance-compensation-continuity/`：前庭康复与平衡补偿连续性，整理前庭康复、平衡训练、补偿机制、服务可及和依从。
+- `gait-balance-assessment-fall-screening-continuity/`：步态平衡评估与跌倒筛查连续性，整理步态、平衡、移动信心、筛查工具、转介和随访。
+- `motion-sickness-transport-virtual-environment-tolerance-continuity/`：运动病与虚拟环境耐受连续性，整理交通耐受、模拟器病、VR/AR 不适和感官冲突。
+- `vestibular-ototoxicity-medication-chemical-risk-continuity/`：耳毒性药物/化学前庭风险连续性，整理药物、化学暴露、噪声协同和听觉前庭副作用。
 - `speech-language-communication-continuity/`：言语、语言与沟通连续性，整理失语、构音障碍、言语运动障碍、沟通参与和主体表达权。
 - `swallowing-dysphagia-aspiration-nutrition/`：吞咽、误吸与营养连续性，整理吞咽安全、气道保护、营养水分、进食尊严和照护负担。
 - `smell-taste-chemosensory-continuity/`：嗅味觉与化学感知连续性，整理嗅觉、味觉、危险气味识别、食欲、营养和生活质量。

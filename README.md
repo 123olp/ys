@@ -507,6 +507,16 @@ flowchart TD
     H --> HADAA[hearing-assistive-devices-alerting-access-continuity<br/>听觉辅助 / 警报接入]
     H --> CRSCA[captions-relay-service-communication-access-continuity<br/>字幕中继 / 沟通访问]
     H --> VBSO[vestibular-balance-spatial-orientation<br/>前庭 / 平衡定向]
+    H --> BPPV[bppv-positional-vertigo-continuity<br/>BPPV / 位置性眩晕]
+    H --> MDEVC[menieres-disease-episodic-vertigo-continuity<br/>梅尼埃病 / 发作眩晕]
+    H --> VNLA[vestibular-neuritis-labyrinthitis-acute-vertigo-continuity<br/>前庭神经炎 / 急性眩晕]
+    H --> PPPD[persistent-postural-perceptual-dizziness-continuity<br/>PPPD / 慢性头晕]
+    H --> VMDS[vestibular-migraine-dizziness-sensory-load-continuity<br/>前庭性偏头痛 / 感官负荷]
+    H --> BVH[bilateral-vestibular-hypofunction-gaze-gait-stability-continuity<br/>双侧前庭低下 / 凝视步态]
+    H --> VRBC[vestibular-rehabilitation-balance-compensation-continuity<br/>前庭康复 / 平衡补偿]
+    H --> GBAFS[gait-balance-assessment-fall-screening-continuity<br/>步态平衡 / 跌倒筛查]
+    H --> MSTVE[motion-sickness-transport-virtual-environment-tolerance-continuity<br/>运动病 / 虚拟环境耐受]
+    H --> VOMCR[vestibular-ototoxicity-medication-chemical-risk-continuity<br/>耳毒性 / 前庭风险]
     H --> SLCC[speech-language-communication-continuity<br/>言语语言 / 沟通连续性]
     H --> SDAN[swallowing-dysphagia-aspiration-nutrition<br/>吞咽 / 误吸营养]
     H --> STCC[smell-taste-chemosensory-continuity<br/>嗅味觉 / 化学感知]
@@ -864,6 +874,16 @@ flowchart TD
 | [Hearing Assistive Devices Alerting Access Continuity](domains/hearing-assistive-devices-alerting-access-continuity/README.md) | 听觉辅助设备、警报提示、电话/会议接入、维护互操作和安全信号 | 把声音警报和语音信息转译为主体可接收信号的基础设施 | 不提供设备处方、安装方案、产品推荐、合规判断、保险/ADA/学校/工作资格建议 |
 | [Captions Relay Service Communication Access Continuity](domains/captions-relay-service-communication-access-continuity/README.md) | 字幕、实时转写、电话/视频中继、会议可访问性和非听觉沟通通道 | 把听觉限制后的医疗、教育、工作、法律和公共服务沟通访问制度化 | 不提供法律合规判断、平台采购、字幕质量认证、翻译解释、手语服务安排或便利资格 |
 | [Vestibular Balance Spatial Orientation](domains/vestibular-balance-spatial-orientation/README.md) | 前庭、眩晕、平衡、空间定向、跌倒和移动信心 | 把空间定向和平衡反馈作为行动半径、外出参与和跌倒风险的底层条件 | 不提供眩晕诊断、前庭测试解释、康复动作、药物、急救或设备建议 |
+| [BPPV Positional Vertigo Continuity](domains/bppv-positional-vertigo-continuity/README.md) | BPPV、位置性眩晕、头位触发、姿势切换和跌倒暴露 | 把翻身、低头、仰头、起卧和转身这些日常姿势动作纳入空间稳定模型 | 不提供诊断、体位试验解释、复位手法、康复动作、药物、驾驶许可或急诊建议 |
+| [Meniere's Disease Episodic Vertigo Continuity](domains/menieres-disease-episodic-vertigo-continuity/README.md) | 梅尼埃病、发作性眩晕、听觉波动、耳鸣、耳闷和计划不确定性 | 把不可预测发作纳入工作排班、出行、会议、独处风险和社会参与模型 | 不提供诊断、饮食/药物/手术建议、听力图解释、发作分型、驾驶或工作判断 |
+| [Vestibular Neuritis Labyrinthitis Acute Vertigo Continuity](domains/vestibular-neuritis-labyrinthitis-acute-vertigo-continuity/README.md) | 前庭神经炎、迷路炎、急性眩晕、恶心、步态不稳和恢复窗口 | 把急性前庭输入失衡纳入独立生活、求助、转诊和恢复重建路径 | 不提供急性眩晕诊断、卒中排除、眼震解释、药物、康复动作或急诊判断 |
+| [Persistent Postural Perceptual Dizziness Continuity](domains/persistent-postural-perceptual-dizziness-continuity/README.md) | PPPD、慢性头晕、视觉运动敏感、站立不适和复杂环境回避 | 把商场、屏幕、移动人群和公共空间中的长期空间不适纳入有效时间模型 | 不提供诊断、心理治疗、药物、暴露训练、康复动作、工作能力或驾驶判断 |
+| [Vestibular Migraine Dizziness Sensory Load Continuity](domains/vestibular-migraine-dizziness-sensory-load-continuity/README.md) | 前庭性偏头痛、眩晕、光声运动敏感、脑雾和发作性失能 | 把偏头痛相关眩晕作为感官负荷、屏幕任务、通勤和恢复窗口的交叉问题 | 不提供诊断、药物、补剂、饮食、触发因素处方、驾驶许可或工作限制 |
+| [Bilateral Vestibular Hypofunction Gaze Gait Stability Continuity](domains/bilateral-vestibular-hypofunction-gaze-gait-stability-continuity/README.md) | 双侧前庭功能下降、凝视稳定、振动幻视、步态不稳和夜间移动 | 把头动时视觉稳定和步态信心纳入独立移动、复杂地面和外出安全模型 | 不提供前庭测试解释、诊断、康复训练、助行器建议、用药或跌倒风险判断 |
+| [Vestibular Rehabilitation Balance Compensation Continuity](domains/vestibular-rehabilitation-balance-compensation-continuity/README.md) | 前庭康复、平衡补偿、凝视稳定、习惯化、替代策略和依从 | 把损伤后的补偿、训练、服务可及和长期执行纳入空间行动恢复基础设施 | 不提供训练动作、剂量、康复计划、设备建议、适应证判断或治疗承诺 |
+| [Gait Balance Assessment Fall Screening Continuity](domains/gait-balance-assessment-fall-screening-continuity/README.md) | 步态、平衡筛查、移动信心、跌倒史、转介和随访 | 把跌倒前的平衡/步态信号转化为可识别、可转介、可跟踪的预警接口 | 不提供个人跌倒评分、步态诊断、助行器选择、家庭改造、训练计划或活动许可 |
+| [Motion Sickness Transport Virtual Environment Tolerance Continuity](domains/motion-sickness-transport-virtual-environment-tolerance-continuity/README.md) | 运动病、交通耐受、模拟器病、VR/AR 不适、感官冲突和恢复时间 | 把交通、模拟训练、空间计算和沉浸式工具的身体耐受纳入未来接口可用性模型 | 不提供药物、补剂、暴露训练、旅行建议、VR 设备推荐或个体耐受判断 |
+| [Vestibular Ototoxicity Medication Chemical Risk Continuity](domains/vestibular-ototoxicity-medication-chemical-risk-continuity/README.md) | 耳毒性、药物/化学暴露、噪声协同、听觉前庭副作用和监测 | 把治疗和职业暴露的感官副作用纳入技术/干预净收益和主体持续性模型 | 不提供用药、停药、剂量、暴露限值、监测计划、诊断或职业法律判断 |
 | [Speech Language Communication Continuity](domains/speech-language-communication-continuity/README.md) | 失语、构音障碍、言语运动障碍、沟通参与、同意表达和替代沟通 | 把语言表达与理解作为主体偏好、共同决策、求助和社会参与的接口 | 不提供言语语言诊断、训练方案、设备处方、吞咽判断或个体康复建议 |
 | [Swallowing Dysphagia Aspiration Nutrition](domains/swallowing-dysphagia-aspiration-nutrition/README.md) | 吞咽障碍、误吸、窒息、营养水分入口、进食尊严和照护负担 | 把吞咽安全作为营养进入、气道保护、恢复能力和生活尊严的交叉条件 | 不提供吞咽诊断、检查解释、饮食质地调整、管饲、护理、急救或康复建议 |
 | [Smell Taste Chemosensory Continuity](domains/smell-taste-chemosensory-continuity/README.md) | 嗅觉、味觉、化学感知、危险气味识别、食欲、营养和生活质量 | 把化学感知作为危险预警、食欲营养、情绪体验和生活质量反馈层 | 不提供嗅味觉诊断、感染/神经判断、治疗、训练、补剂、药物或个体风险结论 |

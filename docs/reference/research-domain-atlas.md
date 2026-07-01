@@ -117,6 +117,16 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 听觉辅助设备必须接入警报与空间 | `hearing-assistive-devices-alerting-access-continuity/` | 辅听设备、报警设备、听觉环路、扩音电话 | 设备缺失会让警报、电话、柜台服务和公共空间沟通失效 |
 | 字幕与中继必须提供非听觉通道 | `captions-relay-service-communication-access-continuity/` | 字幕、实时转写、电话/视频中继、会议访问 | 无字幕/中继会把医疗、教育、法律、工作和公共服务从听损主体处切断 |
 | 空间定向和平衡必须稳定 | `vestibular-balance-spatial-orientation/` | 前庭、眩晕、平衡、空间定向、跌倒、移动信心 | 跌倒、移动恐惧、外出减少和行动半径收缩 |
+| 位置性眩晕必须低误读管理 | `bppv-positional-vertigo-continuity/` | 头位触发、短暂眩晕、复发、行动中断 | 短暂但强烈的眩晕会让起床、转身、弯腰和外出变成高风险动作 |
+| 发作性眩晕必须纳入计划成本 | `menieres-disease-episodic-vertigo-continuity/` | 梅尼埃病、发作、波动听力、耳鸣耳闷 | 不可预测发作把工作、驾驶、旅行、照护和社交计划变成不稳定承诺 |
+| 急性前庭塌陷必须接上恢复窗口 | `vestibular-neuritis-labyrinthitis-acute-vertigo-continuity/` | 急性持续眩晕、恶心、步态不稳、恢复期 | 急性前庭事件会在短期内切断站立、行走、进食和外部服务访问 |
+| 慢性头晕必须打断回避循环 | `persistent-postural-perceptual-dizziness-continuity/` | PPPD、视觉运动敏感、姿势威胁、回避 | 长期不稳感会把公共空间、屏幕、超市、人群和交通变成持续负担 |
+| 前庭性偏头痛必须计入感觉负荷 | `vestibular-migraine-dizziness-sensory-load-continuity/` | 前庭性偏头痛、眩晕、光声动刺激、发作 | 感觉负荷与眩晕会吞噬有效时间并限制会议、屏幕、通勤和学习 |
+| 双侧前庭低下必须保护凝视步态 | `bilateral-vestibular-hypofunction-gaze-gait-stability-continuity/` | 振动幻视、凝视稳定、暗处/不平地面行走 | 双侧输入下降让视觉稳定、夜间移动和复杂地面行走长期失去冗余 |
+| 前庭补偿必须可持续训练与迁移 | `vestibular-rehabilitation-balance-compensation-continuity/` | 凝视适应、习服、替代、平衡补偿 | 康复断点会让可恢复的行动信心无法转化为真实任务能力 |
+| 步态平衡必须早筛可解释 | `gait-balance-assessment-fall-screening-continuity/` | 步态、平衡、跌倒风险、移动信心 | 筛查缺口会让小失衡积累成跌倒、骨折、恐惧和行动半径收缩 |
+| 运动病必须支持交通与虚拟访问 | `motion-sickness-transport-virtual-environment-tolerance-continuity/` | 交通、模拟器、VR/AR、前庭冲突 | 运动病会把旅行、训练、远程协作和虚拟环境学习变成不可用资源 |
+| 耳毒性前庭风险必须可追踪 | `vestibular-ototoxicity-medication-chemical-risk-continuity/` | 药物/化学暴露、职业风险、平衡损伤 | 不可见暴露可能把可避免的前庭损伤转化为长期凝视、步态和跌倒负担 |
 | 语言表达与理解必须可达 | `speech-language-communication-continuity/` | 失语、构音、言语运动、沟通参与、替代沟通 | 主体偏好、同意、关系和社会角色无法表达 |
 | 吞咽必须保护气道和营养 | `swallowing-dysphagia-aspiration-nutrition/` | 吞咽安全、误吸、营养水分、饮食尊严 | 进食从恢复输入变成窒息、肺炎、营养不足和尊严损害 |
 | 化学感知必须支撑安全与食欲 | `smell-taste-chemosensory-continuity/` | 嗅觉、味觉、气味危险信号、食欲、营养 | 烟气、燃气、腐败食品识别下降，食欲、生活质量和营养受损 |
