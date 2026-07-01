@@ -458,6 +458,16 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `pediatric-vision-screening-amblyopia-continuity/` | 儿童视筛和弱视决定视觉发育窗口内的输入问题是否会影响学习、运动和长期能力形成 |
 | `retinal-detachment-urgent-referral-continuity/` | 视网膜脱离决定闪光、飞蚊、视野遮挡等时间敏感信号是否能进入急转和手术窗口 |
 | `hearing-auditory-communication-continuity/` | 听力和听觉沟通决定语言、关系、服务理解、安全警报和社会参与是否不断线 |
+| `age-related-hearing-loss-hearing-aid-continuity/` | 年龄相关听损和助听支持决定老年主体能否继续听懂语言、参与关系、接收服务和降低沟通疲劳 |
+| `noise-induced-hearing-loss-prevention-continuity/` | 噪声暴露和听力保护决定可预防听损是否在工作、娱乐和城市声环境中持续累积 |
+| `tinnitus-sound-tolerance-sleep-continuity/` | 耳鸣和声音耐受决定内源声音负担是否会侵蚀睡眠、注意力、情绪稳定和有效时间 |
+| `otitis-media-child-hearing-development-continuity/` | 儿童中耳炎和暂时性听觉输入断裂决定语言发育、课堂参与、家庭随访和长期学习基础 |
+| `sudden-hearing-loss-urgent-referral-continuity/` | 突发听损决定急性听觉塌陷是否能被识别、转诊并进入时间敏感治疗窗口 |
+| `cochlear-implant-communication-continuity/` | 人工耳蜗决定重度听损主体能否通过设备、调机、康复和维护重新获得稳定沟通通道 |
+| `newborn-hearing-screening-language-development-continuity/` | 新生儿听筛决定早期诊断和干预能否接上语言、关系和社会发展窗口 |
+| `auditory-processing-listening-effort-continuity/` | 听觉处理和听力负荷决定听得见但听不懂、噪声中理解困难和长期沟通疲劳是否被识别 |
+| `hearing-assistive-devices-alerting-access-continuity/` | 听觉辅助设备和报警访问决定警报、电话、柜台、教室、会议和公共空间是否能被听损主体使用 |
+| `captions-relay-service-communication-access-continuity/` | 字幕与中继服务决定非听觉沟通通道能否支撑医疗、法律、教育、工作和公共服务访问 |
 | `vestibular-balance-spatial-orientation/` | 前庭、平衡和空间定向决定主体能否稳定站立、行走、转身、外出和避免跌倒 |
 | `speech-language-communication-continuity/` | 言语语言沟通决定主体能否表达偏好、理解信息、求助、同意和参与社会关系 |
 | `swallowing-dysphagia-aspiration-nutrition/` | 吞咽安全决定营养水分能否进入身体而不转化为误吸、窒息、肺炎和尊严损害 |
@@ -825,6 +835,7 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | WHO / CDC / NEI vision health resources | 提示视觉损害和眼健康是阅读、移动、独立生活和安全判断的高带宽输入条件 |
 | NEI cataract / glaucoma / diabetic retinopathy / AMD / refractive error / low vision / dry eye / eye injury / amblyopia / retinal detachment resources | 提示视觉总域需要拆成可恢复视损、不可逆视野保护、代谢视网膜筛治、中央视觉、基础屈光矫正、低视力补偿、眼表舒适、急性眼伤、儿童视觉发育和急性视网膜转诊这些下层失效模式 |
 | WHO / NIDCD hearing resources | 提示听力损失和听觉沟通会影响语言参与、社交连接、认知负担和安全警报接收 |
+| NIDCD / CDC / ADA / FCC hearing access resources | 提示听觉总域需要拆成年龄相关听损、噪声预防、耳鸣负担、儿童中耳炎、突发听损、人工耳蜗、新生儿听筛、听觉处理、辅助设备和字幕/中继这些执行层 |
 | NIDCD balance disorders / CDC STEADI | 提示前庭、平衡和跌倒风险把空间行动、外出能力和独立生活连接起来 |
 | NIDCD aphasia resources | 提示语言表达和理解能力决定主体偏好、同意、照护参与和社会角色能否被表达 |
 | NIDCD dysphagia resources | 提示吞咽安全把营养、水分、气道保护、误吸风险和进食尊严连接起来 |

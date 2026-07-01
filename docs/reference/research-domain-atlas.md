@@ -106,6 +106,16 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 儿童视觉发育窗口必须守住 | `pediatric-vision-screening-amblyopia-continuity/` | 儿童筛查、弱视、斜视、屈光风险、家庭随访 | 学习、运动、自信和长期视觉能力在发育窗口内被错过 |
 | 时间敏感型视网膜事件必须急转 | `retinal-detachment-urgent-referral-continuity/` | 视网膜脱离、症状信号、急转、手术窗口 | 急性视网膜事件错过窗口后转化为不可逆视觉和行动损失 |
 | 听觉沟通必须可持续 | `hearing-auditory-communication-continuity/` | 听力、言语识别、助听支持、耳鸣、沟通疲劳 | 沟通失败、孤立、认知负担和安全警报漏接 |
+| 老年听损必须低摩擦补偿 | `age-related-hearing-loss-hearing-aid-continuity/` | 年龄相关听损、言语可听度、助听器、听觉康复 | 听不清把关系、服务理解、安全警报和认知负担持续推向失联 |
+| 噪声听损必须预防在发生前 | `noise-induced-hearing-loss-prevention-continuity/` | 噪声暴露、听力保护、职业保存、娱乐噪声 | 可预防损伤一旦累积，会变成长期沟通能力和有效时间损失 |
+| 耳鸣与声音耐受必须纳入有效时间 | `tinnitus-sound-tolerance-sleep-continuity/` | 耳鸣、声音敏感、睡眠、注意力、压力 | 持续内源声音把休息、注意力、情绪和任务密度转化为慢性损耗 |
+| 儿童中耳炎必须保护发育窗口 | `otitis-media-child-hearing-development-continuity/` | 中耳炎、传导性听损、语言发育、学校参与 | 暂时性听觉输入断裂可能在关键窗口影响语言、学习和家庭负担 |
+| 突发听损必须进入急转通道 | `sudden-hearing-loss-urgent-referral-continuity/` | 突发听力下降、急性转诊、治疗窗口、单侧听觉 | 急性听觉塌陷若被延迟，会把可争取窗口转成长期沟通断点 |
+| 人工耳蜗必须保持设备与康复闭环 | `cochlear-implant-communication-continuity/` | 人工耳蜗、重度听损、调机、康复、维护 | 植入设备没有随访、训练和维护时，听觉输入无法稳定转成沟通能力 |
+| 新生儿听筛必须接上语言发育 | `newborn-hearing-screening-language-development-continuity/` | 新生儿筛查、诊断、早期干预、家庭导航 | 筛查阳性若失访，会错过语言和社交发展关键窗口 |
+| 听觉处理和听力负荷必须可解释 | `auditory-processing-listening-effort-continuity/` | 听觉处理、噪声中言语、课堂/工作听力负荷 | 听得见但处理困难会把学习、会议和社交变成高成本任务 |
+| 听觉辅助设备必须接入警报与空间 | `hearing-assistive-devices-alerting-access-continuity/` | 辅听设备、报警设备、听觉环路、扩音电话 | 设备缺失会让警报、电话、柜台服务和公共空间沟通失效 |
+| 字幕与中继必须提供非听觉通道 | `captions-relay-service-communication-access-continuity/` | 字幕、实时转写、电话/视频中继、会议访问 | 无字幕/中继会把医疗、教育、法律、工作和公共服务从听损主体处切断 |
 | 空间定向和平衡必须稳定 | `vestibular-balance-spatial-orientation/` | 前庭、眩晕、平衡、空间定向、跌倒、移动信心 | 跌倒、移动恐惧、外出减少和行动半径收缩 |
 | 语言表达与理解必须可达 | `speech-language-communication-continuity/` | 失语、构音、言语运动、沟通参与、替代沟通 | 主体偏好、同意、关系和社会角色无法表达 |
 | 吞咽必须保护气道和营养 | `swallowing-dysphagia-aspiration-nutrition/` | 吞咽安全、误吸、营养水分、饮食尊严 | 进食从恢复输入变成窒息、肺炎、营养不足和尊严损害 |

@@ -315,6 +315,16 @@
 - `pediatric-vision-screening-amblyopia-continuity/`：儿童视力筛查与弱视连续性，整理儿童筛查、弱视、斜视/屈光风险、家庭随访和学校参与。
 - `retinal-detachment-urgent-referral-continuity/`：视网膜脱离急转连续性，整理症状信号、急诊转诊、手术窗口和长期功能后果。
 - `hearing-auditory-communication-continuity/`：听力与听觉沟通连续性，整理听力损失、言语识别、耳鸣、助听支持、声音警报和沟通疲劳。
+- `age-related-hearing-loss-hearing-aid-continuity/`：年龄相关听损与助听连续性，整理言语识别、助听器可及、验配维护和沟通参与。
+- `noise-induced-hearing-loss-prevention-continuity/`：噪声性听损预防连续性，整理职业/娱乐噪声暴露、听力保护、监测和可预防听觉损害。
+- `tinnitus-sound-tolerance-sleep-continuity/`：耳鸣、声音耐受与睡眠连续性，整理耳鸣烦扰、睡眠中断、注意力负担和恢复质量。
+- `otitis-media-child-hearing-development-continuity/`：儿童中耳炎与听觉发育连续性，整理耳痛、反复感染、暂时性听损、语言发展和家庭照护。
+- `sudden-hearing-loss-urgent-referral-continuity/`：突发听损急转连续性，整理突发听力下降、急性耳科转诊、恢复窗口和沟通保护。
+- `cochlear-implant-communication-continuity/`：人工耳蜗沟通连续性，整理植入式听觉支持、映射编程、康复训练、维护和参与。
+- `newborn-hearing-screening-language-development-continuity/`：新生儿听筛与语言发展连续性，整理听力筛查、诊断确认、早期干预和家庭服务。
+- `auditory-processing-listening-effort-continuity/`：听觉处理与听觉努力连续性，整理噪声中理解、听觉努力、课堂会议参与和认知带宽。
+- `hearing-assistive-devices-alerting-access-continuity/`：听觉辅助设备与警报接入连续性，整理警报提示、电话会议接入、设备维护和安全信号。
+- `captions-relay-service-communication-access-continuity/`：字幕、中继服务与沟通访问连续性，整理字幕、实时转写、电话/视频中继和非听觉沟通通道。
 - `vestibular-balance-spatial-orientation/`：前庭、平衡与空间定向，整理眩晕、平衡、空间定位、跌倒风险和移动信心。
 - `speech-language-communication-continuity/`：言语、语言与沟通连续性，整理失语、构音障碍、言语运动障碍、沟通参与和主体表达权。
 - `swallowing-dysphagia-aspiration-nutrition/`：吞咽、误吸与营养连续性，整理吞咽安全、气道保护、营养水分、进食尊严和照护负担。

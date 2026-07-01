@@ -496,6 +496,16 @@ flowchart TD
     H --> PVSA[pediatric-vision-screening-amblyopia-continuity<br/>儿童视筛 / 弱视]
     H --> RDUR[retinal-detachment-urgent-referral-continuity<br/>视网膜脱离 / 急转]
     H --> HACC[hearing-auditory-communication-continuity<br/>听力 / 听觉沟通]
+    H --> ARHLHAC[age-related-hearing-loss-hearing-aid-continuity<br/>年龄相关听损 / 助听]
+    H --> NIHLPC[noise-induced-hearing-loss-prevention-continuity<br/>噪声听损 / 预防]
+    H --> TSTSC[tinnitus-sound-tolerance-sleep-continuity<br/>耳鸣 / 睡眠耐受]
+    H --> OMCHD[otitis-media-child-hearing-development-continuity<br/>儿童中耳炎 / 听觉发育]
+    H --> SHLUR[sudden-hearing-loss-urgent-referral-continuity<br/>突发听损 / 急转]
+    H --> CICC[cochlear-implant-communication-continuity<br/>人工耳蜗 / 沟通]
+    H --> NHSLD[newborn-hearing-screening-language-development-continuity<br/>新生儿听筛 / 语言发展]
+    H --> APLE[auditory-processing-listening-effort-continuity<br/>听觉处理 / 听觉努力]
+    H --> HADAA[hearing-assistive-devices-alerting-access-continuity<br/>听觉辅助 / 警报接入]
+    H --> CRSCA[captions-relay-service-communication-access-continuity<br/>字幕中继 / 沟通访问]
     H --> VBSO[vestibular-balance-spatial-orientation<br/>前庭 / 平衡定向]
     H --> SLCC[speech-language-communication-continuity<br/>言语语言 / 沟通连续性]
     H --> SDAN[swallowing-dysphagia-aspiration-nutrition<br/>吞咽 / 误吸营养]
@@ -843,6 +853,16 @@ flowchart TD
 | [Pediatric Vision Screening Amblyopia Continuity](domains/pediatric-vision-screening-amblyopia-continuity/README.md) | 儿童视力筛查、弱视、斜视/屈光风险、家庭随访和学校参与 | 把视觉发育窗口作为学习、运动、自信和长期能力形成的早期条件 | 不提供诊断、遮盖训练、眼镜度数、斜视治疗、学校安排或家庭个体决策 |
 | [Retinal Detachment Urgent Referral Continuity](domains/retinal-detachment-urgent-referral-continuity/README.md) | 视网膜脱离、症状信号、急诊转诊、手术窗口和长期功能后果 | 把眼科时间敏感事件纳入急性视觉救援和未来选择权保护路径 | 不提供分诊、急救、是否急诊判断、影像解释、手术建议、术后姿势或个体预后 |
 | [Hearing Auditory Communication Continuity](domains/hearing-auditory-communication-continuity/README.md) | 听力损失、听觉沟通、耳鸣、助听支持、声音警报和沟通疲劳 | 把听觉通道作为语言、关系、警报、服务理解和安全参与的输入层 | 不提供听力诊断、听力图解释、助听设备处方、耳鸣治疗或个体医疗建议 |
+| [Age Related Hearing Loss Hearing Aid Continuity](domains/age-related-hearing-loss-hearing-aid-continuity/README.md) | 年龄相关性听力下降、言语识别、助听器可及、验配维护和沟通参与 | 把晚年听觉输入下降转化为关系、医疗沟通、警报和服务理解连续性问题 | 不提供听力图解释、助听器处方、设备调试、品牌推荐或个体资格判断 |
+| [Noise Induced Hearing Loss Prevention Continuity](domains/noise-induced-hearing-loss-prevention-continuity/README.md) | 噪声性听损、职业/娱乐噪声暴露、听力保护、监测和听觉损害预防 | 把可预防但不可逆的听觉损伤纳入职业、娱乐、交通和声环境风险控制 | 不提供听损诊断、防护设备处方、职业合规判断、赔偿资格或法律索赔建议 |
+| [Tinnitus Sound Tolerance Sleep Continuity](domains/tinnitus-sound-tolerance-sleep-continuity/README.md) | 耳鸣、声音耐受、睡眠中断、注意力负担和长期有效时间损耗 | 把持续感知烦扰作为恢复系统、情绪、注意力和任务执行窗口的负担 | 不提供耳鸣诊断、治疗方案、补剂、设备、药物、声音疗法参数或产品推荐 |
+| [Otitis Media Child Hearing Development Continuity](domains/otitis-media-child-hearing-development-continuity/README.md) | 儿童中耳炎、反复感染、暂时性听损、语言发展和家庭照护 | 把儿童反复听觉输入不稳定纳入语言、课堂、睡眠和早期能力形成模型 | 不提供感染诊断、抗生素/滴耳液建议、检查解释、手术建议或返校判断 |
+| [Sudden Hearing Loss Urgent Referral Continuity](domains/sudden-hearing-loss-urgent-referral-continuity/README.md) | 突发听力下降、急性耳科转诊、时间敏感窗口和沟通急性保护 | 把短时间听觉输入崩溃纳入急转、评估衔接和长期沟通保护路径 | 不提供分诊、是否急诊判断、药物建议、听力图/影像解释、治疗窗口或预后 |
+| [Cochlear Implant Communication Continuity](domains/cochlear-implant-communication-continuity/README.md) | 人工耳蜗、植入式听觉支持、编程、康复、维护和沟通参与 | 把高强度听觉辅助技术视为评估、手术、映射、训练和维护系统链 | 不提供候选资格、手术建议、编程参数、训练方案、品牌设备或保险覆盖判断 |
+| [Newborn Hearing Screening Language Development Continuity](domains/newborn-hearing-screening-language-development-continuity/README.md) | 新生儿听力筛查、诊断确认、早期干预、家庭服务和语言发展 | 把早发现-确认-干预-语言环境作为生命早期沟通能力形成链 | 不提供婴儿听力诊断、筛查结果解释、设备选择、干预方案或语言路线建议 |
+| [Auditory Processing Listening Effort Continuity](domains/auditory-processing-listening-effort-continuity/README.md) | 听觉处理、噪声中理解、听觉努力、课堂/会议参与和认知带宽 | 把声音信号转化为可用信息的成本纳入注意力、工作记忆和有效时间模型 | 不提供听觉处理诊断、测试解释、训练方案、学校便利、设备处方或资格判断 |
+| [Hearing Assistive Devices Alerting Access Continuity](domains/hearing-assistive-devices-alerting-access-continuity/README.md) | 听觉辅助设备、警报提示、电话/会议接入、维护互操作和安全信号 | 把声音警报和语音信息转译为主体可接收信号的基础设施 | 不提供设备处方、安装方案、产品推荐、合规判断、保险/ADA/学校/工作资格建议 |
+| [Captions Relay Service Communication Access Continuity](domains/captions-relay-service-communication-access-continuity/README.md) | 字幕、实时转写、电话/视频中继、会议可访问性和非听觉沟通通道 | 把听觉限制后的医疗、教育、工作、法律和公共服务沟通访问制度化 | 不提供法律合规判断、平台采购、字幕质量认证、翻译解释、手语服务安排或便利资格 |
 | [Vestibular Balance Spatial Orientation](domains/vestibular-balance-spatial-orientation/README.md) | 前庭、眩晕、平衡、空间定向、跌倒和移动信心 | 把空间定向和平衡反馈作为行动半径、外出参与和跌倒风险的底层条件 | 不提供眩晕诊断、前庭测试解释、康复动作、药物、急救或设备建议 |
 | [Speech Language Communication Continuity](domains/speech-language-communication-continuity/README.md) | 失语、构音障碍、言语运动障碍、沟通参与、同意表达和替代沟通 | 把语言表达与理解作为主体偏好、共同决策、求助和社会参与的接口 | 不提供言语语言诊断、训练方案、设备处方、吞咽判断或个体康复建议 |
 | [Swallowing Dysphagia Aspiration Nutrition](domains/swallowing-dysphagia-aspiration-nutrition/README.md) | 吞咽障碍、误吸、窒息、营养水分入口、进食尊严和照护负担 | 把吞咽安全作为营养进入、气道保护、恢复能力和生活尊严的交叉条件 | 不提供吞咽诊断、检查解释、饮食质地调整、管饲、护理、急救或康复建议 |
