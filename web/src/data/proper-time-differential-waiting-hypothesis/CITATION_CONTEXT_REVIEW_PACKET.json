@@ -3,9 +3,9 @@
   "verdict": "READY_FOR_EXTERNAL_REVIEW",
   "reasonCode": "packet_generated_no_external_judgment",
   "summary": "Proper-time differential citation contexts have been packaged for independent fresh reviewer verification. Local safe-use and forbidden-use boundaries are included, but no external reviewer verdict is claimed.",
-  "generatedAt": "2026-06-29T14:06:41.124Z",
+  "generatedAt": "2026-06-29T17:50:28.250Z",
   "auditedInputHashes": {
-    "src/data/proper-time-differential-waiting-hypothesis.json": "sha256:9405df1e1f5a8eaf78adc6c26e41cceb931da28e0a6319848e0cbeeb17520352"
+    "src/data/proper-time-differential-waiting-hypothesis.json": "sha256:1df3dce98c1eef5487e9afc9ca7cbcbe2d8c9d6dcd7ecd0cba7a9a5527be5bab"
   },
   "details": {
     "contextCount": 5,

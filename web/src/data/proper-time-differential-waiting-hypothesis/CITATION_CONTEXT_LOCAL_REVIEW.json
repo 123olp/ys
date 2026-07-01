@@ -3,10 +3,10 @@
   "verdict": "LOCAL_REVIEW_COMPLETE_REQUIRES_FRESH_REVIEW",
   "reasonCode": "all_contexts_have_local_boundaries",
   "summary": "All registered proper-time differential citation contexts have a local safe-use, forbidden-use, risk-tier, and fresh-reviewer focus record. Independent external citation review remains required.",
-  "generatedAt": "2026-06-29T14:06:41.227Z",
+  "generatedAt": "2026-06-29T17:50:28.368Z",
   "auditedInputHashes": {
-    "src/data/proper-time-differential-waiting-hypothesis.json": "sha256:9405df1e1f5a8eaf78adc6c26e41cceb931da28e0a6319848e0cbeeb17520352",
-    "src/data/proper-time-differential-waiting-hypothesis/CITATION_CONTEXT_REVIEW_PACKET.json": "sha256:8efc9614225012729ec432a729a2840cb26c715b77f5f1d74cb2597f8aeacb03"
+    "src/data/proper-time-differential-waiting-hypothesis.json": "sha256:1df3dce98c1eef5487e9afc9ca7cbcbe2d8c9d6dcd7ecd0cba7a9a5527be5bab",
+    "src/data/proper-time-differential-waiting-hypothesis/CITATION_CONTEXT_REVIEW_PACKET.json": "sha256:2d3a557c08dcf8228c520801f2999ef20b4c7eb3dd05242600ef910384d956b1"
   },
   "details": {
     "contextCount": 5,

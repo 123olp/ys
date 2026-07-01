@@ -1,7 +1,7 @@
 # Proper-Time Differential Waiting Hypothesis Coverage Audit
 
 - Verdict: PASS
-- Generated: 2026-06-29T14:06:41.363Z
+- Generated: 2026-06-29T17:50:28.520Z
 - Sections: 15
 - TOC entries: 15
 - Source cards: 5

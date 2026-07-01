@@ -1,16 +1,16 @@
 {
   "audit": "metric-redshift-scenario-evaluation",
-  "generatedAt": "2026-06-29T12:48:38.170Z",
+  "generatedAt": "2026-06-29T17:50:38.824Z",
   "verdict": "PASS",
-  "protocolVersion": "0.1",
+  "protocolVersion": "0.3",
   "summary": {
-    "scenarios": 4,
-    "toyEvaluations": 4,
+    "scenarios": 6,
+    "toyEvaluations": 6,
     "quantitativeReady": 0,
     "evaluationClasses": {
       "calibration-only": 1,
-      "blocked": 2,
-      "cannot-evaluate": 1
+      "blocked": 3,
+      "cannot-evaluate": 2
     }
   },
   "evaluations": [
@@ -179,6 +179,104 @@
       "decision": "仅作为未来假设对象保留。",
       "requiredNextWork": "提交完整 Scenario Cards 后再进入 toy NCG。",
       "nonClaim": "不声明人工黑洞、类黑洞或度规工程当前可制造。"
+    },
+    {
+      "id": "MRW-TOY4",
+      "scenarioId": "MRW-SC4",
+      "scenarioName": "Synthetic High-K Negative-NCG Stress Test",
+      "scenarioStatus": "synthetic-blocked",
+      "evaluationStatus": "blocked-by-abort-gates",
+      "evaluationClass": "blocked",
+      "expectedNcgDirection": "blocked",
+      "canEnterQuantitativeNcg": false,
+      "cardCompleteness": {
+        "total": 6,
+        "complete": 2,
+        "partial": 0,
+        "blocked": 4,
+        "missing": 0,
+        "notApplicable": 0
+      },
+      "normalizedInputs": [
+        {
+          "symbol": "K",
+          "status": "synthetic-high",
+          "notes": "合成高倍率，只用于压力测试。"
+        },
+        {
+          "symbol": "AbortGate",
+          "status": "triggered",
+          "notes": "RTail above threshold。"
+        },
+        {
+          "symbol": "PExit",
+          "status": "blocked",
+          "notes": "退出卡片显示不可接受的退出失败。"
+        },
+        {
+          "symbol": "PContinuity",
+          "status": "blocked",
+          "notes": "主体连续性不能保持。"
+        },
+        {
+          "symbol": "NCG-Screen",
+          "status": "blocked",
+          "notes": "高 K 不能覆盖中止门槛。"
+        }
+      ],
+      "dominantBlocker": "Abort gates trigger before any quantitative NCG.",
+      "decision": "输出 blocked；禁止 positive 或寿命收益输出。",
+      "requiredNextWork": "作为 evaluator 回归样例保留；不进入现实场景外推。",
+      "nonClaim": "不声明任何真实强红移等待区存在或可用。"
+    },
+    {
+      "id": "MRW-TOY5",
+      "scenarioId": "MRW-SC5",
+      "scenarioName": "Synthetic Complete-but-Low-Confidence Toy Case",
+      "scenarioStatus": "synthetic-ordinal-only",
+      "evaluationStatus": "cannot-evaluate",
+      "evaluationClass": "cannot-evaluate",
+      "expectedNcgDirection": "cannot-evaluate",
+      "canEnterQuantitativeNcg": false,
+      "cardCompleteness": {
+        "total": 6,
+        "complete": 6,
+        "partial": 0,
+        "blocked": 0,
+        "missing": 0,
+        "notApplicable": 0
+      },
+      "normalizedInputs": [
+        {
+          "symbol": "K",
+          "status": "ordinal-only",
+          "notes": "只有 low/medium/high 等级，没有量纲。"
+        },
+        {
+          "symbol": "P_success",
+          "status": "ordinal-only",
+          "notes": "条件概率链完整但未校准。"
+        },
+        {
+          "symbol": "ResidualRisk",
+          "status": "ordinal-only",
+          "notes": "残余风险只有等级描述。"
+        },
+        {
+          "symbol": "COpportunity",
+          "status": "ordinal-only",
+          "notes": "机会成本缺统一主体持续性尺度。"
+        },
+        {
+          "symbol": "NCG-Quant",
+          "status": "reserved",
+          "notes": "保留给未来校准模型。"
+        }
+      ],
+      "dominantBlocker": "六卡片完整不等于可定量；ordinal-only 输入不能进入 NCG-Quant。",
+      "decision": "输出 cannot-evaluate；允许记录为 toy screening，不允许输出数值收益。",
+      "requiredNextWork": "定义量纲、归一化尺度和参数估计方法。",
+      "nonClaim": "不输出寿命收益、工程收益或现实任务方案。"
     }
   ],
   "findings": []

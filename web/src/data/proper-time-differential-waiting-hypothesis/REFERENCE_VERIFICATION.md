@@ -1,6 +1,6 @@
 # Proper-Time Differential Reference Verification
 
-**Generated**: 2026-06-29T14:06:41.007Z
+**Generated**: 2026-06-29T17:50:28.139Z
 **Verdict**: PASS
 
 All proper-time differential reference URLs were accessible or locally present at verification time.

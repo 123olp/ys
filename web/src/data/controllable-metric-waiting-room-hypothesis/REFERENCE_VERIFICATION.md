@@ -1,6 +1,6 @@
 # Controllable Metric Waiting Room Reference Verification
 
-**Generated**: 2026-06-29T14:50:08.677Z
+**Generated**: 2026-06-29T17:53:31.259Z
 **Verdict**: PASS
 
 All controllable metric waiting room reference URLs were accessible or locally present at verification time.

@@ -177,6 +177,8 @@ A_t = adoption_capacity(C_t, literacy_t, resources_t, access_t)
 Q_t = base_action_quality_t + technology_gain_t * A_t - friction_t
 O_{t+1} = O_t + option_gain(Q_t, C_t, network_t) - option_loss_t
 T_{t+1} = T_t + continuity_gain(O_t, health_t, recovery_t, risk_control_t) - hazard_pressure_t`;
+
+const toyModelMathRows = toyModelBlock.split("\n");
 ---
 <PaperReaderLayout
   title="Effective Immortality and the Subject-Continuity Acceleration Flywheel"
@@ -589,13 +591,20 @@ T_{t+1} = T_t + continuity_gain(O_t, health_t, recovery_t, risk_control_t) - haz
         </table>
       </div>
       <p class="ltx_p">形式化地说，主体 i 在时间 t 的状态可以写成 X_i,t = (health, cognition, memory, resources, tools, environment, network, risk)。行动与干预 U_i,t 包括医学、AI、可穿戴、知识系统、自动化和资源环境改变。技术或干预应被写成改变 P(X_t+1 | X_t, U_t) 或 lambda(t | X_t, U_t) 的算子，不能被写成“直接加寿命”的神奇变量。</p>
-      <pre class="ltx_verbatim">maximize_pi E[sum_t delta^t * (E_t + alpha Q_t + beta O_t - gamma Risk_t)]
-
-subject to:
-  identity_continuity >= threshold
-  evidence_gate(U_t) == pass
-  consent_and_rights == protected
-  no_personal_death_date_output == true</pre>
+      <div class="ltx_eqn_div">
+        <math display="block">
+          <mtable columnalign="left">
+            <mtr>
+              <mtd><mrow><msub><mtext>maximize</mtext><mi>π</mi></msub><mspace width="0.5em" /><mi>E</mi><mo>[</mo><munder><mo>∑</mo><mi>t</mi></munder><msup><mi>δ</mi><mi>t</mi></msup><mo>(</mo><msub><mi>E</mi><mi>t</mi></msub><mo>+</mo><mi>α</mi><msub><mi>Q</mi><mi>t</mi></msub><mo>+</mo><mi>β</mi><msub><mi>O</mi><mi>t</mi></msub><mo>-</mo><mi>γ</mi><msub><mi>Risk</mi><mi>t</mi></msub><mo>)</mo><mo>]</mo></mrow></mtd>
+            </mtr>
+            <mtr><mtd><mtext>subject to:</mtext></mtd></mtr>
+            <mtr><mtd><mrow><mtext>identity_continuity</mtext><mo>≥</mo><mtext>threshold</mtext></mrow></mtd></mtr>
+            <mtr><mtd><mrow><mtext>evidence_gate</mtext><mo>(</mo><msub><mi>U</mi><mi>t</mi></msub><mo>)</mo><mo>=</mo><mtext>pass</mtext></mrow></mtd></mtr>
+            <mtr><mtd><mrow><mtext>consent_and_rights</mtext><mo>=</mo><mtext>protected</mtext></mrow></mtd></mtr>
+            <mtr><mtd><mrow><mtext>no_personal_death_date_output</mtext><mo>=</mo><mtext>true</mtext></mrow></mtd></mtr>
+          </mtable>
+        </math>
+      </div>
       <p class="ltx_p">对主体 P 来说，第一步应追问某项技术改变了哪个模型位置。可穿戴设备主要进入 observation，AI 工具主要进入 policy 和 action quality，医学干预主要进入 state transition 和 hazard，资源环境干预主要进入 option value 和 recovery。</p>
     </section>
 
@@ -902,7 +911,15 @@ subject to:
     <section id="S13" class="ltx_section">
       <h2 class="ltx_title ltx_title_section"><span class="ltx_tag ltx_tag_section">13. </span>最小数学草案</h2>
       <p class="ltx_p">第一版模型只表达方向和结构，不预测个人寿命。</p>
-      <pre class="ltx_verbatim">{toyModelBlock}</pre>
+      <div class="ltx_eqn_div">
+        <math display="block">
+          <mtable columnalign="left">
+            {toyModelMathRows.map((row) => (
+              <mtr><mtd><mtext>{row}</mtext></mtd></mtr>
+            ))}
+          </mtable>
+        </math>
+      </div>
       <p class="ltx_p">后续真正定量化时，模型必须接入生命路径预测契约：状态变量、状态转移、风险函数、生存曲线、有效时间、主观时间、相对时间和未来选择权。</p>
     </section>
 

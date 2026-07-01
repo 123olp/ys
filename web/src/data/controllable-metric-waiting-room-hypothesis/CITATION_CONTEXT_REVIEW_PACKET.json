@@ -3,9 +3,9 @@
   "verdict": "READY_FOR_EXTERNAL_REVIEW",
   "reasonCode": "packet_generated_no_external_judgment",
   "summary": "Controllable metric waiting room citation contexts have been packaged for independent fresh reviewer verification. Local safe-use and forbidden-use boundaries are included, but no external reviewer verdict is claimed.",
-  "generatedAt": "2026-06-29T14:50:08.786Z",
+  "generatedAt": "2026-06-29T17:53:31.364Z",
   "auditedInputHashes": {
-    "src/data/controllable-metric-waiting-room-hypothesis.json": "sha256:c6ab38f4b61ec7e33e9e9704f69302fe1649453d00a44e6b9e8be2aa08c82ce0"
+    "src/data/controllable-metric-waiting-room-hypothesis.json": "sha256:67e3b4dd1eec8ff3ffb2b705a5d3a1087b0dc0d21252b0a6c461d6f673474dac"
   },
   "details": {
     "contextCount": 5,

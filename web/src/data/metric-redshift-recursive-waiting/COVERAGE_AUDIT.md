@@ -1,6 +1,6 @@
 # Metric Redshift Recursive Waiting Coverage Audit
 
-**Generated**: 2026-06-29T12:48:38.197Z
+**Generated**: 2026-06-29T17:50:38.861Z
 **Verdict**: PASS
 
 ## Counts
@@ -9,7 +9,7 @@
 | --- | ---: |
 | claims | 7 |
 | sources | 12 |
-| variables | 13 |
+| variables | 18 |
 | claimEvidenceMap | 7 |
 | stateMachineStates | 7 |
 | researchProtocolCards | 6 |
@@ -21,14 +21,14 @@
 | falsifierRegister | 7 |
 | sourceCardLedger | 12 |
 | scenarioCardTemplateRequiredCards | 6 |
-| scenarioEvaluationRegistry | 4 |
-| toyNcgEvaluationSpecSteps | 6 |
-| toyNcgEvaluationRegistry | 4 |
+| scenarioEvaluationRegistry | 6 |
+| toyNcgEvaluationSpecSteps | 7 |
+| toyNcgEvaluationRegistry | 6 |
 | ncgFormulaDecompositionBlocks | 5 |
-| preSubmissionReviewRegister | 6 |
+| preSubmissionReviewRegister | 7 |
 | citationContextReviewPacketRows | 7 |
 | citationContextLocalReviewRows | 7 |
-| scenarioEvaluationAuditRows | 4 |
+| scenarioEvaluationAuditRows | 6 |
 
 ## Findings
 

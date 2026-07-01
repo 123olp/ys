@@ -47,6 +47,104 @@ const gateText = {
   missing: "#ffffff",
   "not-applicable": "#111827",
 };
+
+const escapeHtml = (value) => String(value)
+  .replace(/&/g, "&amp;")
+  .replace(/</g, "&lt;")
+  .replace(/>/g, "&gt;");
+
+const equationMathByText = {
+  "Δτ_subject = ∫_γ sqrt(-g_μν dx^μ dx^ν) / c": `
+    <div class="ltx_eqn_div"><math display="block">
+      <mrow>
+        <mi>Δ</mi><msub><mi>τ</mi><mtext>subject</mtext></msub><mo>=</mo>
+        <mfrac>
+          <mrow>
+            <msub><mo>∫</mo><mi>γ</mi></msub>
+            <msqrt>
+              <mrow>
+                <mo>-</mo><msub><mi>g</mi><mrow><mi>μ</mi><mi>ν</mi></mrow></msub>
+                <mi>d</mi><msup><mi>x</mi><mi>μ</mi></msup>
+                <mi>d</mi><msup><mi>x</mi><mi>ν</mi></msup>
+              </mrow>
+            </msqrt>
+          </mrow>
+          <mi>c</mi>
+        </mfrac>
+      </mrow>
+    </math></div>`,
+  "K = Δt_external / Δτ_subject": `
+    <div class="ltx_eqn_div"><math display="block">
+      <mrow>
+        <mi>K</mi><mo>=</mo>
+        <mfrac>
+          <mrow><mi>Δ</mi><msub><mi>t</mi><mtext>external</mtext></msub></mrow>
+          <mrow><mi>Δ</mi><msub><mi>τ</mi><mtext>subject</mtext></msub></mrow>
+        </mfrac>
+      </mrow>
+    </math></div>`,
+  "P_access = P_enter * P_stay * P_exit * P_adopt * P_cont": `
+    <div class="ltx_eqn_div"><math display="block">
+      <mrow>
+        <msub><mi>P</mi><mtext>access</mtext></msub><mo>=</mo>
+        <msub><mi>P</mi><mtext>enter</mtext></msub>
+        <msub><mi>P</mi><mtext>stay</mtext></msub>
+        <msub><mi>P</mi><mtext>exit</mtext></msub>
+        <msub><mi>P</mi><mtext>adopt</mtext></msub>
+        <msub><mi>P</mi><mtext>cont</mtext></msub>
+      </mrow>
+    </math></div>`,
+  "B_wait = K * U_upgrade(Δt_external)": `
+    <div class="ltx_eqn_div"><math display="block">
+      <mrow>
+        <msub><mi>B</mi><mtext>wait</mtext></msub><mo>=</mo>
+        <mi>K</mi><msub><mi>U</mi><mtext>upgrade</mtext></msub>
+        <mo>(</mo><mi>Δ</mi><msub><mi>t</mi><mtext>external</mtext></msub><mo>)</mo>
+      </mrow>
+    </math></div>`,
+  "R_total = R_life + R_engineering + R_tail + C_wait": `
+    <div class="ltx_eqn_div"><math display="block">
+      <mrow>
+        <msub><mi>R</mi><mtext>total</mtext></msub><mo>=</mo>
+        <msub><mi>R</mi><mtext>life</mtext></msub><mo>+</mo>
+        <msub><mi>R</mi><mtext>engineering</mtext></msub><mo>+</mo>
+        <msub><mi>R</mi><mtext>tail</mtext></msub><mo>+</mo>
+        <msub><mi>C</mi><mtext>wait</mtext></msub>
+      </mrow>
+    </math></div>`,
+  "NCG = B_wait * P_access - R_total": `
+    <div class="ltx_eqn_div"><math display="block">
+      <mrow>
+        <mtext>NCG</mtext><mo>=</mo>
+        <msub><mi>B</mi><mtext>wait</mtext></msub>
+        <msub><mi>P</mi><mtext>access</mtext></msub>
+        <mo>-</mo><msub><mi>R</mi><mtext>total</mtext></msub>
+      </mrow>
+    </math></div>`,
+  "X_next = Adopt(Exit(Wait(X_current, W)), G_external)": `
+    <div class="ltx_eqn_div"><math display="block">
+      <mrow>
+        <msub><mi>X</mi><mtext>next</mtext></msub><mo>=</mo>
+        <mtext>Adopt</mtext><mo>(</mo>
+        <mtext>Exit</mtext><mo>(</mo>
+        <mtext>Wait</mtext><mo>(</mo><msub><mi>X</mi><mtext>current</mtext></msub><mo>,</mo><mi>W</mi><mo>)</mo>
+        <mo>)</mo><mo>,</mo><msub><mi>G</mi><mtext>external</mtext></msub><mo>)</mo>
+      </mrow>
+    </math></div>`,
+  "Recursive gain requires NCG_n > 0 and X_next improves feasible future waiting.": `
+    <div class="ltx_eqn_div"><math display="block">
+      <mrow>
+        <msub><mtext>NCG</mtext><mi>n</mi></msub><mo>&gt;</mo><mn>0</mn>
+        <mo>∧</mo>
+        <msub><mi>X</mi><mtext>next</mtext></msub>
+        <mtext> improves feasible future waiting</mtext>
+      </mrow>
+    </math></div>`,
+};
+
+const displayMathText = (value) => equationMathByText[value] || (
+  `<div class="ltx_eqn_div"><math display="block"><mtext>${escapeHtml(value)}</mtext></math></div>`
+);
 ---
 <PaperReaderLayout
   title={meta.title}
@@ -157,10 +255,14 @@ const gateText = {
     <section id="S4" class="ltx_section">
       <h2 class="ltx_title ltx_title_section"><span class="ltx_tag ltx_tag_section">4. </span>物理接口</h2>
       <p class="ltx_p">最小物理接口来自广义相对论：主体沿世界线积累固有时，固有时由时空度规和路径决定。等待室的候选价值不来自“冻结身体”，而来自外部参考时间和主体固有时之间的可用差分。</p>
-      <div class="ltx_listing">
-        <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">d_tau = sqrt(-g_mu_nu dx_mu dx_nu) / c</span></span>
-        <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">K = Delta_t_external / Delta_tau_subject</span></span>
-        <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">NCG_toy = K * P_exit * P_adopt * P_cont - R_life - R_engineering - R_tail - C_wait</span></span>
+      <div class="ltx_eqn_div">
+        <math display="block">
+          <mtable columnalign="center">
+            <mtr><mtd><mrow><mi>d</mi><mi>τ</mi><mo>=</mo><mfrac><msqrt><mrow><mo>-</mo><msub><mi>g</mi><mrow><mi>μ</mi><mi>ν</mi></mrow></msub><mi>d</mi><msup><mi>x</mi><mi>μ</mi></msup><mi>d</mi><msup><mi>x</mi><mi>ν</mi></msup></mrow></msqrt><mi>c</mi></mfrac></mrow></mtd></mtr>
+            <mtr><mtd><mrow><mi>K</mi><mo>=</mo><mfrac><mrow><mi>Δ</mi><msub><mi>t</mi><mtext>external</mtext></msub></mrow><mrow><mi>Δ</mi><msub><mi>τ</mi><mtext>subject</mtext></msub></mrow></mfrac></mrow></mtd></mtr>
+            <mtr><mtd><mrow><msub><mtext>NCG</mtext><mtext>toy</mtext></msub><mo>=</mo><mi>K</mi><msub><mi>P</mi><mtext>exit</mtext></msub><msub><mi>P</mi><mtext>adopt</mtext></msub><msub><mi>P</mi><mtext>cont</mtext></msub><mo>-</mo><msub><mi>R</mi><mtext>life</mtext></msub><mo>-</mo><msub><mi>R</mi><mtext>engineering</mtext></msub><mo>-</mo><msub><mi>R</mi><mtext>tail</mtext></msub><mo>-</mo><msub><mi>C</mi><mtext>wait</mtext></msub></mrow></mtd></mtr>
+          </mtable>
+        </math>
       </div>
       <p class="ltx_p">这个 toy NCG 不是预测器，只是防止概念偷换的检查式：高 K 只能说明时间差分可能很大，不能自动推出主体收益。退出概率、采用概率、连续性概率、生命风险、工程风险、尾部风险和机会成本必须同时进入模型。</p>
     </section>
@@ -183,7 +285,7 @@ const gateText = {
           <thead><tr><th>公式</th><th>表达</th><th>解释</th><th>类型</th></tr></thead>
           <tbody>
             {equationRows.map((row) => (
-              <tr><td>{row[0]}</td><td><span class="ltx_text ltx_font_typewriter">{row[1]}</span></td><td>{row[2]}</td><td>{row[3]}</td></tr>
+              <tr><td>{row[0]}</td><td><div set:html={displayMathText(row[1])} /></td><td>{row[2]}</td><td>{row[3]}</td></tr>
             ))}
           </tbody>
         </table>

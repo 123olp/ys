@@ -160,15 +160,23 @@ const figureHeight = matrixTop + scenarioVariableRows.length * matrixCellHeight 
 
     <section id="S4" class="ltx_section">
       <h2 class="ltx_title ltx_title_section"><span class="ltx_tag ltx_tag_section">4. </span>物理接口</h2>
-      <p class="ltx_p">广义相对论中，主体经历的时间是沿自身世界线积累的固有时。本文不需要在 v0.1 中解决完整工程问题，只需要保留最小接口：同一等待轮次内，外部参考时间 Delta t_ext 和主体固有时 Delta tau 可以不同。</p>
-      <div class="ltx_listing">
-        <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">d_tau = sqrt(-g_mu_nu dx_mu dx_nu) / c</span></span>
-        <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">K = Delta_t_ext / Delta_tau_subject</span></span>
+      <p class="ltx_p">广义相对论中，主体经历的时间是沿自身世界线积累的固有时。本文不需要在 v0.1 中解决完整工程问题，只需要保留最小接口：同一等待轮次内，外部参考时间 Δt_ext 和主体固有时 Δτ 可以不同。</p>
+      <div class="ltx_eqn_div">
+        <math display="block">
+          <mtable columnalign="center">
+            <mtr><mtd><mrow><mi>d</mi><mi>τ</mi><mo>=</mo><mfrac><msqrt><mrow><mo>-</mo><msub><mi>g</mi><mrow><mi>μ</mi><mi>ν</mi></mrow></msub><mi>d</mi><msup><mi>x</mi><mi>μ</mi></msup><mi>d</mi><msup><mi>x</mi><mi>ν</mi></msup></mrow></msqrt><mi>c</mi></mfrac></mrow></mtd></mtr>
+            <mtr><mtd><mrow><mi>K</mi><mo>=</mo><mfrac><mrow><mi>Δ</mi><msub><mi>t</mi><mtext>ext</mtext></msub></mrow><mrow><mi>Δ</mi><msub><mi>τ</mi><mtext>subject</mtext></msub></mrow></mfrac></mrow></mtd></mtr>
+          </mtable>
+        </math>
       </div>
       <p class="ltx_p">在静态 Schwarzschild 外部区域的说明性场景中，可以用下面的形式表达远方坐标时间与静止壳层固有时之间的方向性关系：</p>
-      <div class="ltx_listing">
-        <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">d_tau / d_t = sqrt(1 - r_s / r),  r &gt; r_s</span></span>
-        <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">K_static = 1 / sqrt(1 - r_s / r)</span></span>
+      <div class="ltx_eqn_div">
+        <math display="block">
+          <mtable columnalign="center">
+            <mtr><mtd><mrow><mfrac><mrow><mi>d</mi><mi>τ</mi></mrow><mrow><mi>d</mi><mi>t</mi></mrow></mfrac><mo>=</mo><msqrt><mrow><mn>1</mn><mo>-</mo><mfrac><msub><mi>r</mi><mi>s</mi></msub><mi>r</mi></mfrac></mrow></msqrt><mo>,</mo><mspace width="1em" /><mi>r</mi><mo>&gt;</mo><msub><mi>r</mi><mi>s</mi></msub></mrow></mtd></mtr>
+            <mtr><mtd><mrow><msub><mi>K</mi><mtext>static</mtext></msub><mo>=</mo><mfrac><mn>1</mn><msqrt><mrow><mn>1</mn><mo>-</mo><mfrac><msub><mi>r</mi><mi>s</mi></msub><mi>r</mi></mfrac></mrow></msqrt></mfrac></mrow></mtd></mtr>
+          </mtable>
+        </math>
       </div>
       <p class="ltx_p">这个公式只能说明红移方向，不能直接变成工程方案。越接近强红移区域，越需要处理加速度、潮汐力、吸积盘辐射、轨道稳定性、能源、通信、回收和不可逆边界。本文因此把 K 与可采用性分开建模。</p>
     </section>
@@ -191,9 +199,18 @@ const figureHeight = matrixTop + scenarioVariableRows.length * matrixCellHeight 
     <section id="S6" class="ltx_section">
       <h2 class="ltx_title ltx_title_section"><span class="ltx_tag ltx_tag_section">6. </span>净收益模型</h2>
       <p class="ltx_p">度规红移路径不能用单一倍率评价。Human Infra 关心的是净主体持续性收益：等待倍率、外部技术收益、退出概率、采用概率和主体连续性概率共同形成收益项；生命支持风险、工程风险、尾部风险和机会成本形成扣减项。</p>
-      <div class="ltx_listing">
-        <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">NCG_i = K_i * U_i * P_exit_i * P_adopt_i * P_cont_i</span></span>
-        <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">        - R_life_i - R_engineering_i - R_tail_i - C_opportunity_i</span></span>
+      <div class="ltx_eqn_div">
+        <math display="block">
+          <mrow>
+            <msub><mtext>NCG</mtext><mi>i</mi></msub><mo>=</mo>
+            <msub><mi>K</mi><mi>i</mi></msub><msub><mi>U</mi><mi>i</mi></msub>
+            <msub><mi>P</mi><mtext>exit,i</mtext></msub><msub><mi>P</mi><mtext>adopt,i</mtext></msub><msub><mi>P</mi><mtext>cont,i</mtext></msub>
+            <mo>-</mo><msub><mi>R</mi><mtext>life,i</mtext></msub>
+            <mo>-</mo><msub><mi>R</mi><mtext>engineering,i</mtext></msub>
+            <mo>-</mo><msub><mi>R</mi><mtext>tail,i</mtext></msub>
+            <mo>-</mo><msub><mi>C</mi><mtext>opportunity,i</mtext></msub>
+          </mrow>
+        </math>
       </div>
       <div class="ltx_table">
         <table>

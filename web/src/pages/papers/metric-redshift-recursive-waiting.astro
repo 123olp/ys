@@ -34,21 +34,31 @@ const scenarioById = new Map(metricData.scenarioEvaluationRegistry.map((scenario
 const toyNcgSpec = metricData.toyNcgEvaluationSpec;
 const toyNcgInputRows = toyNcgSpec.inputContract;
 const toyNcgStepRows = toyNcgSpec.evaluationSteps;
+const gateTaxonomyRows = toyNcgSpec.gateTaxonomy;
 const toyNcgEvaluationRows = metricData.toyNcgEvaluationRegistry.map((entry) => ({
   ...entry,
   scenario: scenarioById.get(entry.scenarioId),
   inputSummary: entry.normalizedInputs.map((input) => `${input.symbol}: ${input.status} - ${input.notes}`).join("；"),
 }));
+const minimalEvaluatorOutputRows = metricData.minimalEvaluatorOutputExamples;
 const scenarioEvaluationAuditRows = scenarioEvaluationAudit.evaluations;
 const ncgFormulaFigure = metricData.ncgFormulaDecompositionFigure;
 const ncgFormulaBlockRows = ncgFormulaFigure.blocks;
 const preSubmissionReviewRows = metricData.preSubmissionReviewRegister;
+const reviewDecisionRows = metricData.reviewDecisionRegister;
+const missingEvidenceRows = metricData.missingEvidenceRegister;
 const sourceLedgerRows = metricData.sourceCardLedger.map((entry) => ({
   ...entry,
   source: sourceByKey.get(entry.sourceKey),
   claimLabels: entry.mappedClaims.map((claimId) => `${claimId}: ${claimById.get(claimId)?.claimType || "unknown"}`).join("；"),
   variableLabels: entry.mappedVariables.join(", "),
 }));
+const propositionFormulaHtml = {
+  "MRW-P1": `<div class="ltx_eqn_div"><math display="block"><mrow><msub><mi>K</mi><mi>i</mi></msub><mo>=</mo><mfrac><mrow><mi>Δ</mi><msub><mi>T</mi><mrow><mi>External</mi></mrow></msub><mo>_</mo><mi>i</mi></mrow><mrow><mi>Δ</mi><msub><mi>τ</mi><mrow><mi>Subject</mi></mrow></msub><mo>_</mo><mi>i</mi></mrow></mfrac></mrow></math></div>`,
+  "MRW-P2": `<div class="ltx_eqn_div"><math display="block"><mrow><msub><mtext>NCG-Screen</mtext><mi>i</mi></msub><mo>=</mo><mtext>GateCheck</mtext><mo>(</mo><mo>…</mo><mo>)</mo></mrow></math></div>`,
+  "MRW-P3": `<div class="ltx_eqn_div"><math display="block"><mtable columnalign="left"><mtr><mtd><msub><mi>Θ</mi><mrow><mi>i</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>=</mo><mi>F</mi><mo>(</mo><msub><mi>Θ</mi><mi>i</mi></msub><mo>,</mo><msub><mtext>Upgrade</mtext><mi>i</mi></msub><mo>)</mo></mtd></mtr><mtr><mtd><msub><mtext>NCG</mtext><mrow><mi>i</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>(</mo><msub><mi>Θ</mi><mrow><mi>i</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>)</mo><mo>&gt;</mo><msub><mtext>NCG</mtext><mi>i</mi></msub><mo>(</mo><msub><mi>Θ</mi><mi>i</mi></msub><mo>)</mo></mtd></mtr></mtable></math></div>`,
+  "MRW-P4": `<div class="ltx_eqn_div"><math display="block"><mrow><mtext>Abort if </mtext><msub><mi>PExit</mi><mi>i</mi></msub><mo>=</mo><mn>0</mn><mo> or </mo><msub><mi>PContinuity</mi><mi>i</mi></msub><mo>=</mo><mn>0</mn><mo> or </mo><msub><mi>RTail</mi><mi>i</mi></msub><mo>&gt;</mo><mtext>threshold</mtext></mrow></math></div>`,
+};
 ---
 <PaperReaderLayout
   title="Metric-Redshift Recursive Waiting Hypothesis"
@@ -66,7 +76,7 @@ const sourceLedgerRows = metricData.sourceCardLedger.map((entry) => ({
         <li class="ltx_tocentry ltx_tocentry_section"><a href="#S4" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">4 </span>物理接口</span></a></li>
         <li class="ltx_tocentry ltx_tocentry_section"><a href="#S5" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">5 </span>核心假设</span></a></li>
         <li class="ltx_tocentry ltx_tocentry_section"><a href="#S6" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">6 </span>生命周期状态机</span></a></li>
-        <li class="ltx_tocentry ltx_tocentry_section"><a href="#S7" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">7 </span>最小模型</span></a></li>
+        <li class="ltx_tocentry ltx_tocentry_section"><a href="#S7" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">7 </span>最小审查模型</span></a></li>
         <li class="ltx_tocentry ltx_tocentry_section"><a href="#S8" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">8 </span>递归等待飞轮</span></a></li>
         <li class="ltx_tocentry ltx_tocentry_section"><a href="#S9" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">9 </span>文献地图</span></a></li>
         <li class="ltx_tocentry ltx_tocentry_section"><a href="#S10" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">10 </span>可达性阶梯</span></a></li>
@@ -91,12 +101,13 @@ const sourceLedgerRows = metricData.sourceCardLedger.map((entry) => ({
         <span class="ltx_personname">tradecatlabs</span>
       </span>
     </div>
-    <div class="ltx_dates">Working paper v0.2 / 2026-06-29</div>
+    <div class="ltx_dates">Working paper v0.4 / 2026-06-30</div>
 
     <div id="abstract1" class="ltx_abstract">
       <h6 class="ltx_title ltx_title_abstract">Abstract.</h6>
-      <p class="ltx_p">本文提出“度规红移递归等待假设”：如果未来文明能够制造、捕获或安全利用一种可控强红移时空区域，使主体在其中经历的固有时显著少于外部参考时间，并且同时满足进入、停留、生命支持、通信、退出、主体连续性和治理约束，那么主体可以用较低生命时间成本等待外部技术系统升级，再退出等待区采用新技术，随后进入下一轮等待。</p>
-      <p class="ltx_p">本文的对象不是黑洞本身，而是由时空度规导致的固有时差分如何进入 Human Infra 的主体持续性模型。文章把“黑洞等待室”重写为一个可审查的研究假设：它不声称人工黑洞、类黑洞结构或强引力工程已经可行，也不把时间膨胀等同于永生工程；它只定义术语、物理接口、状态机、收益函数、递归飞轮、文献地图、失败条件和研究协议，使后续资料卡片、模型和网页可视化能够围绕同一对象积累。</p>
+      <p class="ltx_p">本文提出“度规红移递归等待假设”，将“黑洞等待室”从传播性想象改写为主体固有时与外部参考时间之间的条件性差分路径。若存在可控强红移等待区，并且主体能够进入、停留、维生、通信、退出且保持主体连续性，则主体可用较少固有时等待外部文明经历较长参考时间，使外部技术窗口有机会成熟。</p>
+      <p class="ltx_p">本文定义等待倍率 K、NCG-Screen、未来 NCG-Quant、生命周期状态机、失败门槛和场景卡片，用于评估该路径是否具备进入下一轮研究的最低条件。NCG-Screen 是启发式审查函数；NCG-Quant 保留给完成量纲、归一化尺度和参数估计后的校准模型。</p>
+      <p class="ltx_p">当前 Scenario Evaluation Audit 显示 quantitative-ready evaluations = 0。本文新增 synthetic high-K negative stress test 和 ordinal-only toy case，只用于证明协议如何安全地分类、阻塞和拒绝计算；因此本文主张一种条件性研究协议，不证明人工黑洞、人体等待室或现实工程可行性。</p>
     </div>
     <div class="ltx_keywords">
       <h6 class="ltx_title ltx_title_keywords">关键词： </h6>度规红移；固有时；未来等待；黑洞等待室；主体持续性；递归升级；Human Infra
@@ -119,11 +130,29 @@ const sourceLedgerRows = metricData.sourceCardLedger.map((entry) => ({
           <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">  -&gt; 下一轮等待的安全性、倍率或修复能力提高</span></span>
         </div>
       </figure>
+      <h3 class="ltx_title ltx_title_subsection">Decision and Scope Register</h3>
+      <p class="ltx_p">评审后版本先给判定，再展开模型。当前论文只允许读者得出四个结论：研究对象是条件性协议；定量可用场景数量为零；NCG-Screen 是启发式审查函数；退出、连续性和尾部风险优先于任何时间倍率。</p>
+      <div class="ltx_table">
+        <table>
+          <thead><tr><th>编号</th><th>判定</th><th>当前表述</th><th>论文影响</th><th>违反时的处理</th></tr></thead>
+          <tbody>
+            {reviewDecisionRows.map((row) => (
+              <tr>
+                <td>{row.id}</td>
+                <td>{row.decision}</td>
+                <td>{row.currentStatement}</td>
+                <td>{row.paperEffect}</td>
+                <td>{row.blockingIfViolated}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
     </section>
 
     <section id="S2" class="ltx_section">
       <h2 class="ltx_title ltx_title_section"><span class="ltx_tag ltx_tag_section">2. </span>贡献</h2>
-      <p class="ltx_p">本文是一篇假设建模工作论文，而不是工程可行性报告。它的贡献是把传播性想象压缩成可研究对象，并把物理、生命支持、技术采用和主体连续性放进同一个接口。</p>
+      <p class="ltx_p">本文是一篇假设建模与研究协议工作论文。它的贡献是把传播性想象压缩成可审查对象，并把物理时间差分、生命支持、技术采用、主体连续性和风险治理放进同一个接口。评审后版本的重点放在主张风险收缩上：所有贡献都必须服务于变量定义、边界约束、失败门槛和后续可复现资料建设。</p>
       <div class="ltx_table">
         <table>
           <thead><tr><th>编号</th><th>贡献</th><th>后续用途</th></tr></thead>
@@ -157,16 +186,69 @@ const sourceLedgerRows = metricData.sourceCardLedger.map((entry) => ({
     <section id="S4" class="ltx_section">
       <h2 class="ltx_title ltx_title_section"><span class="ltx_tag ltx_tag_section">4. </span>物理接口</h2>
       <p class="ltx_p">本文只需要一个最小广义相对论接口：主体沿世界线积累的固有时由时空度规决定；等待价值来自主体固有时增量和外部参考时间增量之间的差分，而不是来自“暂停生命”。</p>
-      <div class="ltx_listing">
-        <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">d_tau = sqrt(-g_mu_nu dx_mu dx_nu) / c</span></span>
-        <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">K = Delta_t_external / Delta_tau_subject</span></span>
+      <div class="ltx_eqn_div">
+        <math display="block">
+          <mtable columnalign="center">
+            <mtr>
+              <mtd>
+                <mrow>
+                  <mi>d</mi><mi>τ</mi><mo>=</mo>
+                  <mfrac>
+                    <msqrt>
+                      <mrow>
+                        <mo>-</mo><msub><mi>g</mi><mrow><mi>μ</mi><mi>ν</mi></mrow></msub>
+                        <mi>d</mi><msup><mi>x</mi><mi>μ</mi></msup>
+                        <mi>d</mi><msup><mi>x</mi><mi>ν</mi></msup>
+                      </mrow>
+                    </msqrt>
+                    <mi>c</mi>
+                  </mfrac>
+                </mrow>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <mrow>
+                  <mi>K</mi><mo>=</mo>
+                  <mfrac>
+                    <mrow><mi>Δ</mi><msub><mi>t</mi><mtext>external</mtext></msub></mrow>
+                    <mrow><mi>Δ</mi><msub><mi>τ</mi><mtext>subject</mtext></msub></mrow>
+                  </mfrac>
+                </mrow>
+              </mtd>
+            </mtr>
+          </mtable>
+        </math>
       </div>
       <p class="ltx_p">在静态、可比较的参考设置中，可把红移因子粗略写成外部观察者坐标时间和等待者固有时之间的比例。对 Schwarzschild 外部区域的静止壳层，说明性表达为：</p>
-      <div class="ltx_listing">
-        <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">d_tau / d_t = sqrt(1 - r_s / r),  r &gt; r_s</span></span>
-        <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">K_static = 1 / sqrt(1 - r_s / r)</span></span>
+      <div class="ltx_eqn_div">
+        <math display="block">
+          <mtable columnalign="center">
+            <mtr>
+              <mtd>
+                <mrow>
+                  <mfrac><mrow><mi>d</mi><mi>τ</mi></mrow><mrow><mi>d</mi><mi>t</mi></mrow></mfrac>
+                  <mo>=</mo>
+                  <msqrt><mrow><mn>1</mn><mo>-</mo><mfrac><msub><mi>r</mi><mi>s</mi></msub><mi>r</mi></mfrac></mrow></msqrt>
+                  <mo>,</mo><mspace width="1em" /><mi>r</mi><mo>&gt;</mo><msub><mi>r</mi><mi>s</mi></msub>
+                </mrow>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <mrow>
+                  <msub><mi>K</mi><mtext>static</mtext></msub><mo>=</mo>
+                  <mfrac>
+                    <mn>1</mn>
+                    <msqrt><mrow><mn>1</mn><mo>-</mo><mfrac><msub><mi>r</mi><mi>s</mi></msub><mi>r</mi></mfrac></mrow></msqrt>
+                  </mfrac>
+                </mrow>
+              </mtd>
+            </mtr>
+          </mtable>
+        </math>
       </div>
-      <p class="ltx_p">这个表达只用于说明“越接近强红移区域，静止观察者固有时相对远方时间越慢”的方向性。它不等于可行轨道方案，因为接近事件视界需要处理巨大加速度、潮汐力、辐射、稳定性、能量、通信和退出问题。本文后续模型因此把 K 和工程可用性分开，不允许用大倍率直接替代可行性。</p>
+      <p class="ltx_p">这个表达只用于说明“越接近强红移区域，静止观察者固有时相对远方时间越慢”的方向性。它不等于可行轨道方案，因为接近事件视界需要处理巨大加速度、潮汐力、辐射、稳定性、能量、通信和退出问题。在 Schwarzschild 外部区域，<math><msub><mi>K</mi><mtext>static</mtext></msub></math> 的增大伴随静止维持条件急剧恶化；当 <math><mi>r</mi></math> 接近 <math><msub><mi>r</mi><mi>s</mi></msub></math> 时，静止观察者所需 proper acceleration 发散。因此该表达只能作为红移方向性说明，不能作为等待区设计变量。</p>
       <div class="ltx_table">
         <table>
           <thead><tr><th>概念</th><th>本文含义</th><th>不可偷换为</th></tr></thead>
@@ -184,7 +266,7 @@ const sourceLedgerRows = metricData.sourceCardLedger.map((entry) => ({
       <h2 class="ltx_title ltx_title_section"><span class="ltx_tag ltx_tag_section">5. </span>核心假设</h2>
       <div class="ltx_theorem ltx_theorem_Hypothesis">
         <h6 class="ltx_title ltx_runin ltx_title_theorem"><span class="ltx_tag ltx_tag_theorem"><span class="ltx_text ltx_font_bold">假设 1</span></span><span class="ltx_text ltx_font_bold">.</span></h6>
-        <div class="ltx_para"><p class="ltx_p">若存在一个可控红移等待区，使主体在等待区内经历的固有时增量 Delta_tau 小于外部参考时间增量 Delta_t，且等待区满足可进入、可停留、可通信、可退出、可维生和可治理条件，则主体可以用较低生命时间成本等待外部技术窗口成熟。</p></div>
+        <div class="ltx_para"><p class="ltx_p">若存在一个可控红移等待区，使主体在等待区内经历的固有时增量 Δτ 小于外部参考时间增量 Δt，且等待区满足可进入、可停留、可通信、可退出、可维生和可治理条件，则主体可以用较低生命时间成本等待外部技术窗口成熟。</p></div>
       </div>
       <div class="ltx_theorem ltx_theorem_Hypothesis">
         <h6 class="ltx_title ltx_runin ltx_title_theorem"><span class="ltx_tag ltx_tag_theorem"><span class="ltx_text ltx_font_bold">假设 2</span></span><span class="ltx_text ltx_font_bold">.</span></h6>
@@ -217,39 +299,124 @@ const sourceLedgerRows = metricData.sourceCardLedger.map((entry) => ({
     </section>
 
     <section id="S7" class="ltx_section">
-      <h2 class="ltx_title ltx_title_section"><span class="ltx_tag ltx_tag_section">7. </span>最小模型</h2>
-      <p class="ltx_p">核心指标是未来等待倍率：</p>
-      <div class="ltx_listing">
-        <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">K_i = Delta_t_external_i / Delta_tau_subject_i</span></span>
+      <h2 class="ltx_title ltx_title_section"><span class="ltx_tag ltx_tag_section">7. </span>最小审查模型</h2>
+      <p class="ltx_p">核心指标仍然是未来等待倍率：</p>
+      <div class="ltx_eqn_div">
+        <math display="block">
+          <mrow>
+            <msub><mi>K</mi><mi>i</mi></msub><mo>=</mo>
+            <mfrac>
+              <mrow><mi>Δ</mi><msub><mi>t</mi><mrow><mtext>external</mtext><mo>,</mo><mi>i</mi></mrow></msub></mrow>
+              <mrow><mi>Δ</mi><msub><mi>τ</mi><mrow><mtext>subject</mtext><mo>,</mo><mi>i</mi></mrow></msub></mrow>
+            </mfrac>
+          </mrow>
+        </math>
       </div>
-      <p class="ltx_p">K 大于 1 表示主体用更少自身时间等待更长外部时间；K 越大，理论上越适合等待远期技术窗口。但 K 本身不能代表可用性，因为工程风险、主体连续性损失和机会成本可能吞掉所有收益。</p>
-      <p class="ltx_p">因此，本文使用净持续性收益而不是单纯倍率：</p>
-      <div class="ltx_listing">
-        <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">NCG_i = K_i * U_i * P_window_i * P_exit_i * P_adopt_i * P_continuity_i</span></span>
-        <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">        - R_life_i - R_engineering_i - R_tail_i - C_opportunity_i</span></span>
+      <p class="ltx_p">K 大于 1 表示主体用更少自身时间等待更长外部时间。K 越大，理论上越能压缩等待远期技术窗口的主体固有时成本。但 K 本身不能代表可用性，因为退出失败、主体连续性损失、尾部风险和机会成本可能吞掉所有收益。</p>
+      <p class="ltx_p">因此，本文把 NCG 拆成两层。当前层是 <span class="ltx_text ltx_font_typewriter">NCG-Screen</span>：它是启发式审查函数，只负责把候选场景分成 calibration-only、blocked、negative、cannot-evaluate 或 eligible-for-toy-model。未来层是 <span class="ltx_text ltx_font_typewriter">NCG-Quant</span>：它保留给完成量纲、归一化尺度、条件概率估计和残余风险成本建模之后的校准模型。</p>
+      <div class="ltx_eqn_div">
+        <math display="block">
+          <mtable columnalign="left">
+            <mtr>
+              <mtd>
+                <mrow><msub><mtext>NCG-Screen</mtext><mi>i</mi></msub><mo>=</mo><mtext>GateCheck</mtext><mo>(</mo></mrow>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <mrow><mi>K</mi><mo>,</mo><mi>U</mi><mo>,</mo><mi>PWindow</mi><mo>,</mo><mi>PExit</mi><mo>,</mo><mi>PAdopt</mi><mo>,</mo><mi>PContinuity</mi><mo>,</mo></mrow>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <mrow><mi>RLife</mi><mo>,</mo><mi>REngineering</mi><mo>,</mo><mi>RTail</mi><mo>,</mo><mi>COpportunity</mi><mo>)</mo></mrow>
+              </mtd>
+            </mtr>
+          </mtable>
+        </math>
       </div>
+      <p class="ltx_p"><span class="ltx_text ltx_font_italic">Quantitative NCG</span> 保留给未来校准模型。</p>
+      <p class="ltx_p">概率门不写成默认独立乘积。当前协议使用条件概率链表达成功路径：</p>
+      <div class="ltx_eqn_div">
+        <math display="block">
+          <mtable columnalign="left">
+            <mtr>
+              <mtd>
+                <mrow><msub><mi>P</mi><mtext>success,i</mtext></msub><mo>=</mo><mi>P</mi><mo>(</mo><msub><mi>Window</mi><mi>i</mi></msub><mo>)</mo></mrow>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <mrow><mo>×</mo><mi>P</mi><mo>(</mo><msub><mi>Exit</mi><mi>i</mi></msub><mo>|</mo><msub><mi>Window</mi><mi>i</mi></msub><mo>)</mo></mrow>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <mrow><mo>×</mo><mi>P</mi><mo>(</mo><msub><mi>Adopt</mi><mi>i</mi></msub><mo>|</mo><msub><mi>Window</mi><mi>i</mi></msub><mo>,</mo><msub><mi>Exit</mi><mi>i</mi></msub><mo>)</mo></mrow>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <mrow><mo>×</mo><mi>P</mi><mo>(</mo><msub><mi>Continuity</mi><mi>i</mi></msub><mo>|</mo><msub><mi>Wait</mi><mi>i</mi></msub><mo>,</mo><msub><mi>Exit</mi><mi>i</mi></msub><mo>,</mo><msub><mi>Adopt</mi><mi>i</mi></msub><mo>)</mo></mrow>
+              </mtd>
+            </mtr>
+          </mtable>
+        </math>
+      </div>
+      <p class="ltx_p">若未来进入校准模型，量化形式只能在 abort gates 已经通过、残余风险和机会成本具备同一尺度时使用：</p>
+      <div class="ltx_eqn_div">
+        <math display="block">
+          <mrow>
+            <msub><mtext>NCG-Quant</mtext><mi>i</mi></msub><mo>=</mo>
+            <msub><mi>K</mi><mi>i</mi></msub><msub><mi>U</mi><mi>i</mi></msub><msub><mi>P</mi><mtext>success,i</mtext></msub>
+            <mo>-</mo><msub><mtext>ResidualRisk</mtext><mi>i</mi></msub>
+            <mo>-</mo><msub><mtext>COpportunity</mtext><mi>i</mi></msub>
+          </mrow>
+        </math>
+      </div>
+      <p class="ltx_p">该拆分解决两个问题：第一，退出失败、主体连续性失败和不可治理尾部风险先触发 blocked，不再混入普通扣减项；第二，同一个失败事件不能既作为概率门失败，又作为风险扣减重复计算。Abort gate 是 NCG-Screen 的前置门槛，不进入 NCG-Quant。</p>
       <div class="ltx_table">
         <table>
           <thead><tr><th>符号</th><th>含义</th><th>说明</th></tr></thead>
           <tbody>
             <tr><td>K_i</td><td>第 i 轮等待倍率</td><td>外部参考时间除以主体固有时。</td></tr>
             <tr><td>U_i</td><td>外部技术升级收益</td><td>医学、AI、材料、能源、生命支持和治理的综合收益。</td></tr>
-            <tr><td>P_window_i</td><td>技术窗口出现概率</td><td>外部时间是否真的转化为可用升级。</td></tr>
-            <tr><td>P_exit_i</td><td>退出概率</td><td>主体能否离开等待区或被回收。</td></tr>
-            <tr><td>P_adopt_i</td><td>采用概率</td><td>主体退出后是否能理解、获得、承受并整合新技术。</td></tr>
-            <tr><td>P_continuity_i</td><td>主体连续性保持概率</td><td>身体、认知、记忆、身份和行动能力是否保持。</td></tr>
-            <tr><td>R_life_i</td><td>生命支持风险</td><td>辐射、潮汐、能源、维生、衰退和事故。</td></tr>
-            <tr><td>R_engineering_i</td><td>工程风险</td><td>轨道、导航、结构、通信、制造和维护失败。</td></tr>
-            <tr><td>R_tail_i</td><td>尾部风险</td><td>不可逆坠入、灾难性失控、外部文明崩溃或治理失败。</td></tr>
-            <tr><td>C_opportunity_i</td><td>机会成本</td><td>进入等待区导致错过当前可行动、可治理、可修复的路径。</td></tr>
+            <tr><td>P_success_i</td><td>条件成功概率链</td><td>窗口、退出、采用和主体连续性的条件链。</td></tr>
+            <tr><td>AbortGate_i</td><td>中止门槛</td><td>PExit = 0、PContinuity = 0 或 RTail above threshold 等直接 blocked 条件。</td></tr>
+            <tr><td>ResidualRisk_i</td><td>残余风险成本</td><td>未触发中止门槛但仍需扣减的可治理风险。</td></tr>
+            <tr><td>COpportunity_i</td><td>机会成本</td><td>进入等待区导致错过当前可行动、可治理、可修复的路径。</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="ltx_table">
+        <table>
+          <thead><tr><th>类别</th><th>作用</th><th>例子</th><th>是否进入 NCG-Quant</th></tr></thead>
+          <tbody>
+            {gateTaxonomyRows.map((row) => (
+              <tr>
+                <td>{row.category}</td>
+                <td>{row.role}</td>
+                <td>{row.examples.join("；")}</td>
+                <td>{row.entersQuantitativeNcg}</td>
+              </tr>
+            ))}
           </tbody>
         </table>
       </div>
       <figure id="F4" class="ltx_figure">
-        <figcaption><span class="ltx_tag ltx_tag_figure">Figure 4. </span>NCG Formula Decomposition. {ncgFormulaFigure.caption}</figcaption>
+        <figcaption><span class="ltx_tag ltx_tag_figure">Figure 4. </span>NCG-Screen Decomposition. {ncgFormulaFigure.caption}</figcaption>
         <p class="ltx_p">{ncgFormulaFigure.purpose}</p>
-        <div class="ltx_listing">
-          <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">{ncgFormulaFigure.formula}</span></span>
+        <div class="ltx_eqn_div">
+          <math display="block">
+            <mtable columnalign="left">
+              <mtr>
+                <mtd><mrow><msub><mtext>NCG-Screen</mtext><mi>i</mi></msub><mo>=</mo><mtext>GateCheck</mtext><mo>(</mo><mo>…</mo><mo>)</mo></mrow></mtd>
+              </mtr>
+              <mtr>
+                <mtd><mrow><msub><mi>P</mi><mtext>success,i</mtext></msub><mo>=</mo><mi>P</mi><mo>(</mo><msub><mi>Window</mi><mi>i</mi></msub><mo>)</mo><mo>×</mo><mi>P</mi><mo>(</mo><msub><mi>Exit</mi><mi>i</mi></msub><mo>|</mo><msub><mi>Window</mi><mi>i</mi></msub><mo>)</mo><mo>×</mo><mo>…</mo></mrow></mtd>
+              </mtr>
+            </mtable>
+          </math>
         </div>
         <div class="ltx_table">
           <table>
@@ -269,16 +436,16 @@ const sourceLedgerRows = metricData.sourceCardLedger.map((entry) => ({
         </div>
         <p class="ltx_p">设计审计：{ncgFormulaFigure.designAudit.paradigm}；{ncgFormulaFigure.designAudit.qualityGate}。</p>
       </figure>
-      <p class="ltx_p">最小判定规则是：只有当 NCG_i 在保守估计下仍为正，且任何单点失败不会直接造成不可逆主体终止时，等待轮次才有进入下一阶段研究的资格。</p>
+      <p class="ltx_p">最小判定规则是：只有当六类场景卡片完整、abort gates 未触发、条件概率链不被默认设为 1、残余风险有统一尺度、且任何单点失败不会直接造成不可逆主体终止时，等待轮次才有进入下一阶段研究的资格。否则 NCG-Screen 的正确输出是 cannot-evaluate 或 blocked。</p>
     </section>
 
     <section id="S8" class="ltx_section">
       <h2 class="ltx_title ltx_title_section"><span class="ltx_tag ltx_tag_section">8. </span>递归等待飞轮</h2>
-      <p class="ltx_p">递归等待的关键不是一次性等待，而是每一轮外部技术升级都能改变下一轮等待条件。换言之，等待区不是终点，而是把主体送到下一组更高能力工具前的时间桥。</p>
+      <p class="ltx_p">递归等待的关键在于每一轮外部技术升级都能改变下一轮等待条件。换言之，等待区的模型角色是时间桥：把主体送到下一组更高能力工具前。</p>
       <div class="ltx_listing">
         <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">Wait_i: 进入可控红移等待区</span></span>
-        <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">  -&gt; 外部技术系统经历 Delta_t_i</span></span>
-        <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">  -&gt; 主体只经历 Delta_tau_i</span></span>
+        <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">  -&gt; 外部技术系统经历 Δt_i</span></span>
+        <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">  -&gt; 主体只经历 Δτ_i</span></span>
         <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">Exit_i: 退出并接入外部技术窗口</span></span>
         <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">  -&gt; Upgrade_i: 医学、AI、材料、能源、风险治理升级</span></span>
         <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">  -&gt; Wait_(i+1): 更高安全性或更高倍率的下一轮等待</span></span>
@@ -374,7 +541,8 @@ const sourceLedgerRows = metricData.sourceCardLedger.map((entry) => ({
 
     <section id="S12" class="ltx_section">
       <h2 class="ltx_title ltx_title_section"><span class="ltx_tag ltx_tag_section">12. </span>研究协议</h2>
-      <p class="ltx_p">下一步不应直接写“制造黑洞”，而应把假设拆成可查证的 Source Cards、变量表和模型接口。每个候选场景至少需要回答以下问题。</p>
+      <p class="ltx_p">下一步先把假设拆成可查证的 Source Cards、变量表和模型接口，再讨论任何强红移工程命题。每个候选场景至少需要回答以下问题。</p>
+      <h3 class="ltx_title ltx_title_subsection">12.1 Scenario Card Requirements</h3>
       <div class="ltx_table">
         <table>
           <thead><tr><th>协议项</th><th>必须记录</th><th>用途</th></tr></thead>
@@ -421,11 +589,23 @@ const sourceLedgerRows = metricData.sourceCardLedger.map((entry) => ({
           </tbody>
         </table>
       </div>
-      <h3 class="ltx_title ltx_title_subsection">Toy NCG Evaluation Protocol</h3>
-      <p class="ltx_p">Toy NCG Evaluation Protocol 把“能不能算”放在“算出什么”之前。它的目的不是输出寿命预测，而是把每个等待场景按同一套输入、归一化、概率门、风险扣减和中止条件审查；只有通过该协议的场景，后续才有资格进入可视化或更严格的定量模型。</p>
+      <h3 class="ltx_title ltx_title_subsection">12.2 Toy NCG Evaluation Protocol</h3>
+      <p class="ltx_p">Toy NCG Evaluation Protocol 把“能不能算”放在“算出什么”之前。它的目的在于把每个等待场景按同一套输入、归一化、条件概率链、残余风险成本和中止条件审查；只有通过该协议的场景，后续才有资格进入可视化或更严格的定量模型。</p>
       <p class="ltx_p">协议版本：{toyNcgSpec.protocolVersion}。{toyNcgSpec.purpose} 归一化规则：{toyNcgSpec.normalizationRule}</p>
-      <div class="ltx_listing">
-        <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">{toyNcgSpec.formula}</span></span>
+      <div class="ltx_eqn_div">
+        <math display="block">
+          <mtable columnalign="left">
+            <mtr>
+              <mtd><mrow><msub><mtext>NCG-Screen</mtext><mi>i</mi></msub><mo>=</mo><mtext>GateCheck</mtext><mo>(</mo><mi>K</mi><mo>,</mo><mi>U</mi><mo>,</mo><mi>PWindow</mi><mo>,</mo><mi>PExit</mi><mo>,</mo><mi>PAdopt</mi><mo>,</mo><mi>PContinuity</mi><mo>,</mo><mi>RLife</mi><mo>,</mo><mi>REngineering</mi><mo>,</mo><mi>RTail</mi><mo>,</mo><mi>COpportunity</mi><mo>)</mo></mrow></mtd>
+            </mtr>
+            <mtr>
+              <mtd><mrow><msub><mi>P</mi><mtext>success,i</mtext></msub><mo>=</mo><mi>P</mi><mo>(</mo><msub><mi>Window</mi><mi>i</mi></msub><mo>)</mo><mo>×</mo><mi>P</mi><mo>(</mo><msub><mi>Exit</mi><mi>i</mi></msub><mo>|</mo><msub><mi>Window</mi><mi>i</mi></msub><mo>)</mo><mo>×</mo><mi>P</mi><mo>(</mo><msub><mi>Adopt</mi><mi>i</mi></msub><mo>|</mo><msub><mi>Window</mi><mi>i</mi></msub><mo>,</mo><msub><mi>Exit</mi><mi>i</mi></msub><mo>)</mo><mo>×</mo><mi>P</mi><mo>(</mo><msub><mi>Continuity</mi><mi>i</mi></msub><mo>|</mo><msub><mi>Wait</mi><mi>i</mi></msub><mo>,</mo><msub><mi>Exit</mi><mi>i</mi></msub><mo>,</mo><msub><mi>Adopt</mi><mi>i</mi></msub><mo>)</mo></mrow></mtd>
+            </mtr>
+            <mtr>
+              <mtd><mrow><msub><mtext>NCG-Quant</mtext><mi>i</mi></msub><mo>=</mo><msub><mi>K</mi><mi>i</mi></msub><msub><mi>U</mi><mi>i</mi></msub><msub><mi>P</mi><mtext>success,i</mtext></msub><mo>-</mo><msub><mtext>ResidualRisk</mtext><mi>i</mi></msub><mo>-</mo><msub><mtext>COpportunity</mtext><mi>i</mi></msub></mrow></mtd>
+            </mtr>
+          </mtable>
+        </math>
       </div>
       <div class="ltx_table">
         <table>
@@ -459,8 +639,8 @@ const sourceLedgerRows = metricData.sourceCardLedger.map((entry) => ({
         </table>
       </div>
       <p class="ltx_p">解释规则：{toyNcgSpec.interpretationRule} 禁止用法：{toyNcgSpec.forbiddenUse} 晋升门槛：{toyNcgSpec.promotionGate}</p>
-      <h3 class="ltx_title ltx_title_subsection">Toy NCG Evaluation Registry</h3>
-      <p class="ltx_p">Toy NCG Evaluation Registry 记录当前四个候选场景的研究分类。这里的输出只有 calibration-only、blocked、negative-under-current-evidence 或 cannot-evaluate 等方向性状态；它们用于组织下一步资料补全，不构成现实可行性结论。</p>
+      <h3 class="ltx_title ltx_title_subsection">12.3 Current Registry</h3>
+      <p class="ltx_p">Toy NCG Evaluation Registry 记录当前候选场景的研究分类。这里的输出只有 calibration-only、blocked、negative-under-current-evidence、cannot-evaluate 或 synthetic stress-test 等方向性状态；它们用于组织下一步资料补全，不构成现实可行性结论。</p>
       <div class="ltx_table">
         <table>
           <thead><tr><th>评估</th><th>场景</th><th>输入状态</th><th>NCG 方向</th><th>主导阻塞项</th><th>决定 / 下一步</th></tr></thead>
@@ -478,7 +658,25 @@ const sourceLedgerRows = metricData.sourceCardLedger.map((entry) => ({
           </tbody>
         </table>
       </div>
-      <h3 class="ltx_title ltx_title_subsection">Scenario Evaluation Audit</h3>
+      <h3 class="ltx_title ltx_title_subsection">Minimal Evaluator Output Examples</h3>
+      <p class="ltx_p">最小 evaluator 输出只给分类，不输出寿命收益、个体建议或工程可行性。合成场景的价值在于证明协议如何安全地拒绝计算；其中 Synthetic High-K Negative-NCG Stress Test 专门用于验证高 K 不能越过中止门槛。</p>
+      <div class="ltx_table">
+        <table>
+          <thead><tr><th>场景</th><th>输入信号</th><th>输出分类</th><th>允许结论</th><th>禁止结论</th></tr></thead>
+          <tbody>
+            {minimalEvaluatorOutputRows.map((row) => (
+              <tr>
+                <td>{row.scenarioId}</td>
+                <td>{row.inputSignal}</td>
+                <td>{row.outputClass}</td>
+                <td>{row.allowedConclusion}</td>
+                <td>{row.forbiddenConclusion}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <h3 class="ltx_title ltx_title_subsection">12.4 Audit Result</h3>
       <p class="ltx_p">Scenario Evaluation Audit 由 <span class="ltx_text ltx_font_typewriter">npm run evaluate:metric-redshift</span> 生成，作用是把 toy NCG 注册表转成可复现账本。当前 verdict 为 <span class="ltx_text ltx_font_typewriter">{scenarioEvaluationAudit.verdict}</span>，quantitative-ready evaluations 为 <span class="ltx_text ltx_font_typewriter">{scenarioEvaluationAudit.summary.quantitativeReady}</span>。这意味着页面已经能复现分类逻辑，但仍没有任何场景可以进入真实定量 NCG。</p>
       <div class="ltx_table">
         <table>
@@ -522,7 +720,7 @@ const sourceLedgerRows = metricData.sourceCardLedger.map((entry) => ({
 
     <section id="S14" class="ltx_section">
       <h2 class="ltx_title ltx_title_section"><span class="ltx_tag ltx_tag_section">14. </span>主张成熟度与反证队列</h2>
-      <p class="ltx_p">本节把每条主张从“已经写入论文”继续拆成成熟度、当前支持、缺失证据、晋升门槛和反证触发条件。这样做的目的不是降低主张价值，而是让后续研究知道哪些内容只是定义、哪些是模型边界、哪些已经有文献约束，哪些只能作为待验证机制。</p>
+      <p class="ltx_p">本节把每条主张从“已经写入论文”继续拆成成熟度、当前支持、缺失证据、晋升门槛和反证触发条件。这样做的目的在于让后续研究知道哪些内容只是定义、哪些是模型边界、哪些已经有文献约束，哪些只能作为待验证机制。</p>
       <div class="ltx_table">
         <table>
           <thead><tr><th>主张</th><th>成熟度</th><th>当前支持</th><th>缺失证据</th><th>晋升门槛</th></tr></thead>
@@ -579,7 +777,7 @@ const sourceLedgerRows = metricData.sourceCardLedger.map((entry) => ({
 
     <section id="S16" class="ltx_section">
       <h2 class="ltx_title ltx_title_section"><span class="ltx_tag ltx_tag_section">16. </span>模型假设与命题注册表</h2>
-      <p class="ltx_p">本节把最小模型从解释性公式推进到可审查的理论注册表。根据公式推导规范，本文把不变量、假设、命题、解释和非声明分开：K 是局部时间差分指标，NCG 才是决策对象；递归等待只有在本轮升级改变下一轮参数时成立；不可逆失败优先于任何倍率收益。</p>
+      <p class="ltx_p">本节把最小审查模型从解释性公式推进到可审查的理论注册表。根据公式推导规范，本文把不变量、假设、命题、解释和非声明分开：K 是局部时间差分指标，NCG-Screen 是当前审查对象；递归等待只有在本轮升级改变下一轮参数时成立；不可逆失败优先于任何倍率收益。</p>
       <div class="ltx_table">
         <table>
           <thead><tr><th>假设</th><th>内容</th><th>模型角色</th><th>用于</th><th>失败模式</th></tr></thead>
@@ -604,7 +802,7 @@ const sourceLedgerRows = metricData.sourceCardLedger.map((entry) => ({
               <tr>
                 <td>{row.id}<br />{row.type}</td>
                 <td>{row.statement}<br />关联主张：{row.claimIds.join(", ")}</td>
-                <td><span class="ltx_text ltx_font_typewriter">{row.formula}</span></td>
+                <td><div set:html={propositionFormulaHtml[row.id] || row.formula} /></td>
                 <td>{row.dependsOn.join(", ")}</td>
                 <td>{row.interpretation}<br />非声明：{row.nonClaim}</td>
               </tr>
@@ -617,7 +815,7 @@ const sourceLedgerRows = metricData.sourceCardLedger.map((entry) => ({
 
     <section id="S17" class="ltx_section">
       <h2 class="ltx_title ltx_title_section"><span class="ltx_tag ltx_tag_section">17. </span>图表计划与引用预审</h2>
-      <p class="ltx_p">本节把 paper-plan、figure-designer 和 citation-audit 的本地预审结果写入论文页。它不是正式外部审稿结论，而是给后续科研迭代保留可执行队列：哪些图必须存在、每张图服务哪个论证、每个引用语境允许支持什么、禁止偷换成什么。</p>
+      <p class="ltx_p">本节把 paper-plan、figure-designer 和 citation-audit 的本地预审结果写入论文页。它属于本地预审账本，用于给后续科研迭代保留可执行队列：哪些图必须存在、每张图服务哪个论证、每个引用语境允许支持什么、禁止偷换成什么。</p>
       <p class="ltx_p">页面创建溯源：本论文页的工具生成种子为 <span class="ltx_text ltx_font_typewriter">TOOL_GENERATED_PAGE_SEED.astro</span>，由 <span class="ltx_text ltx_font_typewriter">tools/arxiv_html_paper_tool.py write-page</span> 生成；正式路由只在该 arXiv HTML Paper 契约内扩展正文和结构化研究内容。</p>
       <div class="ltx_table">
         <table>
@@ -675,7 +873,25 @@ const sourceLedgerRows = metricData.sourceCardLedger.map((entry) => ({
 
     <section id="S18" class="ltx_section">
       <h2 class="ltx_title ltx_title_section"><span class="ltx_tag ltx_tag_section">18. </span>提交前审稿风险</h2>
-      <p class="ltx_p">本节是 Pre-Submission Review Register，用来防止工作论文被误读成可直接投稿版本。它按审稿维度列出当前阻塞项、证据片段、提交前 gate 和具体修复动作。CRITICAL 表示在解决前不应进入正式投稿；MAJOR 表示需要主要修订；MINOR 表示提交前润色项。</p>
+      <p class="ltx_p">本节是 Pre-Submission Review Register，用来防止工作论文被误读成可直接投稿版本。评审后版本增加 Missing Evidence Register，先说明当前材料缺口如何限制结论，再按审稿维度列出阻塞项、证据片段、提交前 gate 和具体修复动作。CRITICAL 表示在解决前不应进入正式投稿；MAJOR 表示需要主要修订；MINOR 表示提交前润色项。</p>
+      <h3 class="ltx_title ltx_title_subsection">Missing Evidence Register</h3>
+      <p class="ltx_p">缺失材料本身也是论文结论的一部分：它说明哪些判断只能停留在协议层，哪些内容必须先补齐来源、量纲、工程模型或主体连续性定义。</p>
+      <div class="ltx_table">
+        <table>
+          <thead><tr><th>编号</th><th>缺失内容</th><th>影响</th><th>要求动作</th></tr></thead>
+          <tbody>
+            {missingEvidenceRows.map((row) => (
+              <tr>
+                <td>{row.id}</td>
+                <td>{row.missingItem}</td>
+                <td>{row.impact}</td>
+                <td>{row.requiredAction}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <h3 class="ltx_title ltx_title_subsection">Pre-Submission Review Register</h3>
       <div class="ltx_table">
         <table>
           <thead><tr><th>编号</th><th>维度 / 严重性</th><th>发现</th><th>证据片段</th><th>提交前 gate</th><th>修复动作</th></tr></thead>
@@ -705,6 +921,7 @@ const sourceLedgerRows = metricData.sourceCardLedger.map((entry) => ({
         <li>本文不输出个体建议，不建议任何人以现实生命安全为代价追求等待路径。</li>
         <li>本文只提出 Human Infra 的条件性研究假设、模型接口和资料组织协议。</li>
       </ul>
+      <p class="ltx_p">本文最终主张可以压缩为一条审查规则：度规红移等待只有在 K、技术窗口、退出、采用、主体连续性、生命风险、工程风险、尾部风险、机会成本和治理中止条件同时进入同一协议时，才具备研究资格。当前所有注册场景仍停留在校准、阻塞、负向或不可评估状态；因此，本页的价值在于给后续科研提供边界清楚的假设容器。</p>
     </section>
 
     <section id="references" class="ltx_section ltx_bibliography">

@@ -1,6 +1,6 @@
 # Controllable Metric Waiting Room Paper Coverage Audit
 
-**Generated**: 2026-06-29T14:50:09.034Z
+**Generated**: 2026-06-29T17:53:31.610Z
 **Verdict**: PASS
 
 ## Summary

@@ -2,7 +2,7 @@
   "audit": "controllable-metric-waiting-room-pre-submission-review",
   "verdict": "NEEDS_EXTERNAL_REVIEW_BEFORE_FORMAL_SUBMISSION",
   "reasonCode": "local_gate_clean_external_review_required",
-  "generatedAt": "2026-06-29T14:50:09.007Z",
+  "generatedAt": "2026-06-29T17:53:31.582Z",
   "summary": {
     "text": "Local pre-submission review found no blocking mechanical issues. The paper remains a working paper and still requires independent external citation-context review before formal submission.",
     "counts": {
@@ -12,11 +12,11 @@
     }
   },
   "auditedInputHashes": {
-    "web/src/data/controllable-metric-waiting-room-hypothesis.json": "sha256:c6ab38f4b61ec7e33e9e9704f69302fe1649453d00a44e6b9e8be2aa08c82ce0",
-    "web/src/pages/papers/controllable-metric-waiting-room-hypothesis.astro": "sha256:838cd4830a61ff0003446f4e94769ead7e6ecf824675d30eef0ba8c42d6e0f5e",
-    "web/src/data/controllable-metric-waiting-room-hypothesis/REFERENCE_VERIFICATION.json": "sha256:85d6fc243f6ea1e648ca031808fb3b7b57daea2aa68393dbd751191f6b74eba8",
-    "web/src/data/controllable-metric-waiting-room-hypothesis/CITATION_CONTEXT_REVIEW_PACKET.json": "sha256:6a74a45d8d471d18d3847701316ee5b1189348877f128e9e5d6c611bee4e4b71",
-    "web/src/data/controllable-metric-waiting-room-hypothesis/CITATION_CONTEXT_LOCAL_REVIEW.json": "sha256:c64ead7c8833881624957f85c9a27daf034a323b1289754c1b94b052ed722f13"
+    "web/src/data/controllable-metric-waiting-room-hypothesis.json": "sha256:67e3b4dd1eec8ff3ffb2b705a5d3a1087b0dc0d21252b0a6c461d6f673474dac",
+    "web/src/pages/papers/controllable-metric-waiting-room-hypothesis.astro": "sha256:c13a501d63e3abe3983bdb2861981ae51372badc2d51286a7ab800282145aac4",
+    "web/src/data/controllable-metric-waiting-room-hypothesis/REFERENCE_VERIFICATION.json": "sha256:d00ca1a0c1e8c45524f714057dd7bb0757753a06e81a29a6c7d7bc54c5df227b",
+    "web/src/data/controllable-metric-waiting-room-hypothesis/CITATION_CONTEXT_REVIEW_PACKET.json": "sha256:0cbc5d64580fc66248278516d48b4c3fa2e3dda2b297539a13e71c6dcce65d5b",
+    "web/src/data/controllable-metric-waiting-room-hypothesis/CITATION_CONTEXT_LOCAL_REVIEW.json": "sha256:d47fd84dd64b00481731e173bec88d3e9f8451212a1bb41f325d0c563834109f"
   },
   "details": {
     "artifacts": [

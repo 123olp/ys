@@ -1,6 +1,6 @@
 # Metric Redshift Citation Context Review Packet
 
-**Generated**: 2026-06-29T12:48:37.967Z
+**Generated**: 2026-06-29T17:50:38.609Z
 **Verdict**: READY_FOR_EXTERNAL_REVIEW
 
 MRW citation contexts have been packaged for independent fresh reviewer verification. Local safe-use and forbidden-use boundaries are included, but no external reviewer verdict is claimed.

@@ -3,126 +3,126 @@
   "verdict": "WARN",
   "reasonCode": "source_url_warnings",
   "summary": "Metric-redshift source URLs were checked; at least one source returned a warning that requires human review.",
-  "generatedAt": "2026-06-29T12:53:41.005Z",
+  "generatedAt": "2026-06-29T17:50:38.491Z",
   "auditedInputHashes": {
-    "src/data/metric-redshift-recursive-waiting.json": "sha256:4bce6bfc7acfdaebdfa4f738b665b1da5b39f0aabe8a0a761f6e30a730ddc979"
+    "src/data/metric-redshift-recursive-waiting.json": "sha256:cd3d4b2dea7386f2236d0efbad96ae36f8f405f971668dfb7e5f498fac169da0"
   },
   "details": {
     "sourceCount": 12,
     "counts": {
-      "WARN": 10,
-      "PASS": 2
+      "WARN": 3,
+      "PASS": 9
     },
     "perEntry": [
       {
         "key": "pound1959redshift",
         "title": "Gravitational Red-Shift in Nuclear Resonance",
         "url": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.3.439",
-        "method": "HEAD",
+        "method": "CURL_HEAD",
         "liveStatus": "WARN",
-        "statusCode": null,
+        "statusCode": 403,
         "finalUrl": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.3.439",
-        "note": "Network verification did not complete: fetch failed"
+        "note": "curl HEAD returned 403; human review may be needed for access-controlled or transient responses."
       },
       {
         "key": "vessot1980gravityProbeA",
         "title": "Test of Relativistic Gravitation with a Space-Borne Hydrogen Maser",
         "url": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.45.2081",
-        "method": "HEAD",
+        "method": "CURL_HEAD",
         "liveStatus": "WARN",
-        "statusCode": null,
+        "statusCode": 403,
         "finalUrl": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.45.2081",
-        "note": "Network verification did not complete: fetch failed"
+        "note": "curl HEAD returned 403; human review may be needed for access-controlled or transient responses."
       },
       {
         "key": "ashby2003gps",
         "title": "Relativity in the Global Positioning System",
         "url": "https://link.springer.com/article/10.12942/lrr-2003-1",
-        "method": "HEAD",
-        "liveStatus": "WARN",
-        "statusCode": null,
+        "method": "CURL_HEAD",
+        "liveStatus": "PASS",
+        "statusCode": 302,
         "finalUrl": "https://link.springer.com/article/10.12942/lrr-2003-1",
-        "note": "Network verification did not complete: fetch failed"
+        "note": "Source URL responded successfully to curl HEAD."
       },
       {
         "key": "nasaBlackHoleTooClose",
         "title": "What Happens When Something Gets Too Close to a Black Hole?",
         "url": "https://science.nasa.gov/universe/what-happens-when-something-gets-too-close-to-a-black-hole/",
-        "method": "HEAD",
-        "liveStatus": "WARN",
-        "statusCode": null,
+        "method": "CURL_HEAD",
+        "liveStatus": "PASS",
+        "statusCode": 200,
         "finalUrl": "https://science.nasa.gov/universe/what-happens-when-something-gets-too-close-to-a-black-hole/",
-        "note": "Network verification did not complete: fetch failed"
+        "note": "Source URL responded successfully to curl HEAD."
       },
       {
         "key": "nasaBlackHoleVisualization",
         "title": "New NASA Black Hole Visualization Takes Viewers Beyond the Brink",
         "url": "https://science.nasa.gov/universe/black-holes/supermassive-black-holes/new-nasa-black-hole-visualization-takes-viewers-beyond-the-brink/",
-        "method": "HEAD",
-        "liveStatus": "WARN",
-        "statusCode": null,
+        "method": "CURL_HEAD",
+        "liveStatus": "PASS",
+        "statusCode": 200,
         "finalUrl": "https://science.nasa.gov/universe/black-holes/supermassive-black-holes/new-nasa-black-hole-visualization-takes-viewers-beyond-the-brink/",
-        "note": "Network verification did not complete: fetch failed"
+        "note": "Source URL responded successfully to curl HEAD."
       },
       {
         "key": "grib2009infiniteFuture",
         "title": "Can an observer falling into a black hole see the infinite future of the Universe?",
         "url": "https://arxiv.org/abs/0906.1442",
-        "method": "HEAD",
-        "liveStatus": "WARN",
-        "statusCode": null,
+        "method": "CURL_HEAD",
+        "liveStatus": "PASS",
+        "statusCode": 200,
         "finalUrl": "https://arxiv.org/abs/0906.1442",
-        "note": "Network verification did not complete: fetch failed"
+        "note": "Source URL responded successfully to curl HEAD."
       },
       {
         "key": "pavlov2012futureObservation",
         "title": "On the possibility of observation of the future for movement in the field of black holes of different types",
         "url": "https://arxiv.org/abs/1203.4000",
-        "method": "HEAD",
-        "liveStatus": "WARN",
-        "statusCode": null,
+        "method": "CURL_HEAD",
+        "liveStatus": "PASS",
+        "statusCode": 200,
         "finalUrl": "https://arxiv.org/abs/1203.4000",
-        "note": "Network verification did not complete: fetch failed"
+        "note": "Source URL responded successfully to curl HEAD."
       },
       {
         "key": "etesi2002malamentHogarth",
         "title": "Non-Turing computations via Malament-Hogarth space-times",
         "url": "https://arxiv.org/abs/gr-qc/0104023",
-        "method": "HEAD",
-        "liveStatus": "WARN",
-        "statusCode": null,
+        "method": "CURL_HEAD",
+        "liveStatus": "PASS",
+        "statusCode": 200,
         "finalUrl": "https://arxiv.org/abs/gr-qc/0104023",
-        "note": "Network verification did not complete: fetch failed"
+        "note": "Source URL responded successfully to curl HEAD."
       },
       {
         "key": "welch2006malamentHogarth",
         "title": "The extent of computation in Malament-Hogarth spacetimes",
         "url": "https://arxiv.org/abs/gr-qc/0609035",
-        "method": "HEAD",
+        "method": "CURL_HEAD",
         "liveStatus": "PASS",
         "statusCode": 200,
         "finalUrl": "https://arxiv.org/abs/gr-qc/0609035",
-        "note": "Source URL responded successfully to HEAD."
+        "note": "Source URL responded successfully to curl HEAD."
       },
       {
         "key": "earmanNortonForeverDay",
         "title": "Forever is a Day: Supertasks in Pitowsky and Malament-Hogarth Spacetimes",
         "url": "https://philsci-archive.pitt.edu/1307/",
-        "method": "HEAD",
-        "liveStatus": "WARN",
-        "statusCode": null,
+        "method": "CURL_HEAD",
+        "liveStatus": "PASS",
+        "statusCode": 200,
         "finalUrl": "https://philsci-archive.pitt.edu/1307/",
-        "note": "Network verification did not complete: fetch failed"
+        "note": "Source URL responded successfully to curl HEAD."
       },
       {
         "key": "lewis1976timeTravel",
         "title": "The Paradoxes of Time Travel",
         "url": "https://www.jstor.org/stable/2025310",
-        "method": "HEAD",
+        "method": "CURL_HEAD",
         "liveStatus": "WARN",
-        "statusCode": null,
+        "statusCode": 403,
         "finalUrl": "https://www.jstor.org/stable/2025310",
-        "note": "Network verification did not complete: fetch failed"
+        "note": "curl HEAD returned 403; human review may be needed for access-controlled or transient responses."
       },
       {
         "key": "humanInfraEffectiveImmortality",

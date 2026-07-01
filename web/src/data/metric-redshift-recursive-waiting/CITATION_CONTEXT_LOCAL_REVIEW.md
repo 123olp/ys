@@ -1,6 +1,6 @@
 # Metric Redshift Citation Context Local Review
 
-**Generated**: 2026-06-29T12:48:38.066Z
+**Generated**: 2026-06-29T17:50:38.719Z
 **Verdict**: LOCAL_REVIEW_COMPLETE_REQUIRES_FRESH_REVIEW
 
 All registered MRW citation contexts have a local safe-use, forbidden-use, risk-tier, and fresh-reviewer focus record. Independent external citation review remains required.

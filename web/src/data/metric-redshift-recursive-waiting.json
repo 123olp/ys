@@ -1,27 +1,27 @@
 {
-  "schemaVersion": "0.1",
+  "schemaVersion": "0.3",
   "paper": {
     "slug": "metric-redshift-recursive-waiting",
     "title": "度规红移递归等待假设",
-    "version": "Working paper v0.2",
-    "updated": "2026-06-29",
+    "version": "Working paper v0.4",
+    "updated": "2026-06-30",
     "author": "tradecatlabs",
     "route": "/papers/metric-redshift-recursive-waiting/"
   },
   "problemAnchor": {
-    "bottomLineProblem": "强红移时空导致的主体固有时差分，能否在满足进入、停留、通信、退出、维生、治理和主体连续性约束时，成为 Human Infra 的未来等待路径。",
-    "mustSolveBottleneck": "等待倍率 K 不能替代工程可行性；模型必须同时报告退出、技术采用、主体连续性、尾部风险和机会成本。",
+    "bottomLineProblem": "强红移时空导致的主体固有时差分，能否在满足进入、停留、通信、退出、维生、治理和主体连续性约束时，成为 Human Infra 的条件性未来等待路径。",
+    "mustSolveBottleneck": "等待倍率 K 不能替代收益、安全性或工程可行性；NCG 当前只能作为启发式审查函数，模型必须同时报告退出、技术采用、主体连续性、尾部风险和机会成本。",
     "nonGoals": [
       "证明人工黑洞或类黑洞结构当前可制造",
       "提供黑洞接近、轨道控制、太空任务、生命支持工程或人体实验步骤",
       "声称有限固有时必然可以观察外部宇宙无限未来",
       "把时间膨胀等同于复活、冷冻或永生"
     ],
-    "successCondition": "每个候选等待场景都能被拆成 metric、orbit/region、continuity、window、risk 和 exit 六类卡片，并能计算或审查 NCG 是否为正。"
+    "successCondition": "每个候选等待场景都能被拆成 metric、orbit/region、continuity、window、risk 和 exit 六类卡片；在当前阶段，成功条件是正确给出 blocked、negative 或 cannot-evaluate 分类，而不是输出现实可行性结论。"
   },
   "paperPlan": {
     "workingTitle": "度规红移递归等待假设",
-    "oneSentenceContribution": "本文把“黑洞等待室”从传播性想象重构为一个以固有时差分、等待倍率、退出概率、技术采用、主体连续性和尾部风险为核心变量的 Human Infra 工作假设。",
+    "oneSentenceContribution": "本文把“黑洞等待室”从传播性想象重构为一个以固有时差分、等待倍率、退出概率、技术采用、主体连续性和尾部风险为核心变量的条件性研究协议。",
     "paperType": "theoretical-conceptual working paper",
     "targetForm": "arXiv-style HTML working paper, later convertible to PDF manuscript",
     "readerPromise": "读者应能区分时间倍率、工程可行性、主体连续性和递归技术采用，并知道下一步如何用 Source Cards 和模型协议继续研究。",
@@ -66,8 +66,8 @@
     },
     {
       "id": "C3",
-      "claim": "给出固有时、外部参考时间、红移因子、等待倍率 K 和净持续性收益 NCG 的最小接口。",
-      "artifact": "定量模型和图表可视化"
+      "claim": "给出固有时、外部参考时间、红移因子、等待倍率 K、NCG-Screen 与未来 NCG-Quant 的最小接口，并将当前 NCG 定位为启发式审查函数。",
+      "artifact": "模型审查和图表可视化"
     },
     {
       "id": "C4",
@@ -614,9 +614,44 @@
     {
       "symbol": "NCG",
       "name": "净持续性收益",
-      "definition": "等待倍率、技术收益、概率门和风险扣减后的主体持续性净收益。",
-      "modelRole": "decision objective",
+      "definition": "当前作为 NCG-Screen 分类审查函数；未来才可能发展为校准后的 NCG-Quant。",
+      "modelRole": "screening objective / future quantitative estimand",
       "notEquivalentTo": "K"
+    },
+    {
+      "symbol": "NCG-Screen",
+      "name": "净持续性审查分类",
+      "definition": "当前论文使用的启发式审查函数，输出 calibration-only、blocked、negative、cannot-evaluate 或 eligible-for-toy-model。",
+      "modelRole": "gate-based screening output",
+      "notEquivalentTo": "校准效用函数"
+    },
+    {
+      "symbol": "NCG-Quant",
+      "name": "未来净持续性定量估计量",
+      "definition": "保留给未来完成量纲、归一化尺度、条件概率估计和残余风险成本后的校准模型。",
+      "modelRole": "reserved quantitative estimand",
+      "notEquivalentTo": "当前工作论文输出"
+    },
+    {
+      "symbol": "P_success",
+      "name": "条件成功概率链",
+      "definition": "P(Window_i) * P(Exit_i | Window_i) * P(Adopt_i | Window_i, Exit_i) * P(Continuity_i | Wait_i, Exit_i, Adopt_i)。",
+      "modelRole": "conditional probability chain",
+      "notEquivalentTo": "相互独立概率乘积"
+    },
+    {
+      "symbol": "AbortGate",
+      "name": "中止门槛",
+      "definition": "退出为零、主体连续性为零或尾部风险超过治理阈值等直接 blocked 条件。",
+      "modelRole": "pre-quantitative blocker",
+      "notEquivalentTo": "普通风险扣减"
+    },
+    {
+      "symbol": "ResidualRisk",
+      "name": "残余风险成本",
+      "definition": "未触发中止门槛但仍需扣减的可治理风险与维护成本。",
+      "modelRole": "future quantitative cost",
+      "notEquivalentTo": "不可逆失败"
     }
   ],
   "modelAssumptions": [
@@ -690,12 +725,12 @@
     },
     {
       "id": "MRW-P2",
-      "statement": "在 A1-A6 成立时，单轮等待的最小判定对象应是 NCG，而不是 K。",
+      "statement": "在 A1-A6 成立时，单轮等待的最小判定对象应是 NCG-Screen，而不是 K。",
       "type": "decision-object proposition",
-      "formula": "NCG_i = K_i * U_i * PWindow_i * PExit_i * PAdopt_i * PContinuity_i - RLife_i - REngineering_i - RTail_i - COpportunity_i",
+      "formula": "NCG-Screen_i = GateCheck(...); P_success_i = P(Window_i) * P(Exit_i | Window_i) * P(Adopt_i | Window_i, Exit_i) * P(Continuity_i | Wait_i, Exit_i, Adopt_i)",
       "dependsOn": ["MRW-A1", "MRW-A2", "MRW-A3", "MRW-A4", "MRW-A5", "MRW-A6"],
       "claimIds": ["MRW-CL2", "MRW-CL5"],
-      "interpretation": "倍率收益必须通过概率门和风险扣减后，才可能进入主体持续性收益。",
+      "interpretation": "倍率收益必须先通过中止门槛和条件概率链；数值版 NCG-Quant 保留给未来校准模型。",
       "nonClaim": "不声明当前存在任何场景使 NCG 为正。"
     },
     {
@@ -858,34 +893,106 @@
       "stopGate": "任一必需卡片缺失时，禁止从远期假设跳到可行性判断。",
       "nextEvidenceNeeded": "完整六卡片、风险阈值、状态转移函数和至少一个 toy NCG 反例。",
       "nonClaim": "不声明人工黑洞、类黑洞或度规工程当前可制造。"
+    },
+    {
+      "id": "MRW-SC4",
+      "name": "Synthetic High-K Negative-NCG Stress Test",
+      "scenarioType": "synthetic-stress-test",
+      "status": "synthetic-blocked",
+      "linkedClaims": ["MRW-CL2", "MRW-CL5", "MRW-CL6"],
+      "purpose": "用明确标注的合成场景测试高 K 不能压过中止门槛。",
+      "cardStatus": {
+        "Metric Card": "complete",
+        "Orbit / Region Card": "blocked",
+        "Continuity Card": "blocked",
+        "Window Card": "complete",
+        "Risk Card": "blocked",
+        "Exit Card": "blocked"
+      },
+      "keyVariables": ["K", "AbortGate", "PExit", "PContinuity", "RTail", "NCG-Screen"],
+      "ncgStatus": "blocked-by-abort-gates",
+      "stopGate": "RTail above threshold 或 PExit/PContinuity blocked 时直接 blocked，不允许 positive 输出。",
+      "nextEvidenceNeeded": "无需现实外推；仅作为 evaluator 回归测试和高 K 误读防护。",
+      "nonClaim": "合成压力测试不声明任何真实物理、工程或生命支持可行性。"
+    },
+    {
+      "id": "MRW-SC5",
+      "name": "Synthetic Complete-but-Low-Confidence Toy Case",
+      "scenarioType": "synthetic-ordinal-case",
+      "status": "synthetic-ordinal-only",
+      "linkedClaims": ["MRW-CL2", "MRW-CL3", "MRW-CL5"],
+      "purpose": "用六卡片完整但只有 ordinal 信息的合成场景，测试资料完整与可定量之间的边界。",
+      "cardStatus": {
+        "Metric Card": "complete",
+        "Orbit / Region Card": "complete",
+        "Continuity Card": "complete",
+        "Window Card": "complete",
+        "Risk Card": "complete",
+        "Exit Card": "complete"
+      },
+      "keyVariables": ["K", "U", "P_success", "ResidualRisk", "NCG-Screen", "NCG-Quant"],
+      "ncgStatus": "cannot-enter-quantitative-ncg",
+      "stopGate": "六卡片完整但只提供 low/medium/high 等序数等级时，只能输出分类，不能输出数值收益。",
+      "nextEvidenceNeeded": "定义量纲、归一化尺度、条件概率估计方法和残余风险成本。",
+      "nonClaim": "合成 ordinal case 不声明主体寿命收益、工程收益或现实任务可行性。"
     }
   ],
   "toyNcgEvaluationSpec": {
-    "protocolVersion": "0.1",
-    "purpose": "把 NCG 从解释性公式推进为可审查的玩具评估协议；它只判断场景是否具备进入定量建模的最低资料条件，不输出现实可行性结论。",
+    "protocolVersion": "0.3",
+    "purpose": "把 NCG 从解释性公式推进为 gate-based screening 协议；NCG-Screen 是启发式审查函数，当前只判断场景是否具备进入定量建模的最低资料条件，不输出现实可行性结论。",
     "inputContract": [
       {"field": "timeCompression", "sourceCard": "Metric Card", "variable": "K", "requiredStatus": "defined-or-calibration-only", "rejectIfMissing": true},
       {"field": "technologyUtility", "sourceCard": "Window Card", "variable": "U", "requiredStatus": "defined-with-target-technology", "rejectIfMissing": true},
       {"field": "windowProbability", "sourceCard": "Window Card", "variable": "PWindow", "requiredStatus": "bounded-or-explicitly-unknown", "rejectIfMissing": true},
-      {"field": "exitProbability", "sourceCard": "Exit Card", "variable": "PExit", "requiredStatus": "bounded-positive", "rejectIfMissing": true},
-      {"field": "adoptionProbability", "sourceCard": "Window Card", "variable": "PAdopt", "requiredStatus": "bounded-positive", "rejectIfMissing": true},
-      {"field": "continuityProbability", "sourceCard": "Continuity Card", "variable": "PContinuity", "requiredStatus": "bounded-positive", "rejectIfMissing": true},
-      {"field": "riskCosts", "sourceCard": "Risk Card", "variable": "RLife", "requiredStatus": "normalized-cost-scale", "rejectIfMissing": true},
+      {"field": "conditionalExitProbability", "sourceCard": "Exit Card", "variable": "PExit", "requiredStatus": "bounded-positive-given-window", "rejectIfMissing": true},
+      {"field": "conditionalAdoptionProbability", "sourceCard": "Window Card", "variable": "PAdopt", "requiredStatus": "bounded-positive-given-window-and-exit", "rejectIfMissing": true},
+      {"field": "conditionalContinuityProbability", "sourceCard": "Continuity Card", "variable": "PContinuity", "requiredStatus": "bounded-positive-given-wait-exit-and-adopt", "rejectIfMissing": true},
+      {"field": "abortGates", "sourceCard": "Risk Card", "variable": "AbortGate", "requiredStatus": "none-triggered", "rejectIfMissing": true},
+      {"field": "residualRiskCosts", "sourceCard": "Risk Card", "variable": "ResidualRisk", "requiredStatus": "normalized-cost-scale-or-ordinal-only", "rejectIfMissing": true},
       {"field": "opportunityCost", "sourceCard": "Risk Card", "variable": "COpportunity", "requiredStatus": "normalized-cost-scale", "rejectIfMissing": true}
     ],
-    "normalizationRule": "所有收益、概率门、风险扣减和机会成本必须先归一到同一主体持续性尺度；不能用 K 的数量级替代 NCG。",
-    "formula": "NCG_i = K_i * U_i * PWindow_i * PExit_i * PAdopt_i * PContinuity_i - RLife_i - REngineering_i - RTail_i - COpportunity_i",
+    "normalizationRule": "所有收益、条件概率门、残余风险成本和机会成本必须先归一到同一主体持续性尺度；在该尺度完成前，NCG-Screen 只能输出分类状态，不能输出校准后的数值收益。",
+    "formula": "NCG-Screen_i = GateCheck(K, U, PWindow, PExit, PAdopt, PContinuity, RLife, REngineering, RTail, COpportunity); Quantitative NCG_i is reserved for future calibrated models.",
+    "probabilityChain": "P_success_i = P(Window_i) * P(Exit_i | Window_i) * P(Adopt_i | Window_i, Exit_i) * P(Continuity_i | Wait_i, Exit_i, Adopt_i)",
+    "futureQuantitativeEstimand": "NCG-Quant_i = K_i * U_i * P_success_i - ResidualRisk_i - COpportunity_i",
+    "gateTaxonomy": [
+      {
+        "category": "Abort gate",
+        "role": "直接中止",
+        "examples": ["PExit = 0", "PContinuity = 0", "RTail above threshold"],
+        "entersQuantitativeNcg": "不进入数值 NCG；先直接 blocked。"
+      },
+      {
+        "category": "Probability gate",
+        "role": "成功概率折扣",
+        "examples": ["技术窗口", "退出", "采用", "主体连续性"],
+        "entersQuantitativeNcg": "未来校准模型可进入 P_success。"
+      },
+      {
+        "category": "Residual risk cost",
+        "role": "非中止型风险扣减",
+        "examples": ["小规模衰退", "维护成本", "可治理的通信噪声"],
+        "entersQuantitativeNcg": "未来校准模型可作为 ResidualRisk 扣减。"
+      },
+      {
+        "category": "Unknown",
+        "role": "资料不足",
+        "examples": ["未定义生命支持风险", "未定义退出机制", "未定义主体连续性量表"],
+        "entersQuantitativeNcg": "不能进入数值 NCG；输出 cannot-evaluate。"
+      }
+    ],
     "evaluationSteps": [
       {"step": "E1", "operation": "检查六类 Scenario Cards 是否完整", "reason": "资料不完整时不能进入玩具评估", "failureIf": "任一 rejectIfMissing 字段缺失"},
       {"step": "E2", "operation": "标注 K 的参考观察者、世界线和适用边界", "reason": "防止把坐标时、固有时和传播直觉混用", "failureIf": "无法说明 timeComparisonBoundary"},
-      {"step": "E3", "operation": "为概率门设置 bounded / unknown / blocked 状态", "reason": "退出、采用和连续性是等待收益的乘法门", "failureIf": "任一必需概率门被默认为 1"},
-      {"step": "E4", "operation": "把生命、工程、尾部风险和机会成本归一为扣减项", "reason": "高 K 场景可能被风险项完全抵消", "failureIf": "风险只用自然语言形容而没有归一尺度"},
-      {"step": "E5", "operation": "给出 NCG 方向性判定：positive / negative / blocked / cannot-evaluate", "reason": "当前阶段只允许方向性 toy result", "failureIf": "输出具体寿命、个人建议或现实任务方案"},
-      {"step": "E6", "operation": "记录主导阻塞项和下一步资料需求", "reason": "把失败场景转化为后续研究队列", "failureIf": "只给结论，不给 blocker 和 next work"}
+      {"step": "E3", "operation": "先检查 abort gates", "reason": "退出失败、连续性失败和不可治理尾部风险优先于 K", "failureIf": "PExit = 0、PContinuity = 0 或 RTail above threshold"},
+      {"step": "E4", "operation": "把概率门写成条件概率链", "reason": "避免把 PWindow、PExit、PAdopt、PContinuity 误读为相互独立", "failureIf": "仍使用无条件独立乘积作为模型主张"},
+      {"step": "E5", "operation": "区分 residual risk costs 与 abort gates", "reason": "避免同一个失败事件在概率门和风险扣减中双重计算", "failureIf": "不可逆失败既触发中止又被当成普通扣减项"},
+      {"step": "E6", "operation": "给出 NCG-Screen 分类：calibration-only / blocked / negative / cannot-evaluate / eligible-for-toy-model", "reason": "当前阶段只允许方向性 toy result", "failureIf": "输出具体寿命、个人建议或现实任务方案"},
+      {"step": "E7", "operation": "记录主导阻塞项、下一步资料需求和禁止外推", "reason": "把失败场景转化为后续研究队列", "failureIf": "只给结论，不给 blocker、next work 和 non-claim"}
     ],
-    "interpretationRule": "toy NCG 的输出是研究分类结果，不是物理实验结果、工程承诺或个人决策建议。",
+    "interpretationRule": "toy NCG 的输出是研究分类结果，用于判断 calibration-only、blocked、negative、cannot-evaluate 或 eligible-for-toy-model；它不构成物理实验结果、工程承诺或个人决策建议。",
     "forbiddenUse": "不得用 toy NCG 输出替代航天、生命支持、黑洞工程、医学或伦理审查。",
-    "promotionGate": "至少出现一个完整六卡片场景、一个 K 高但 NCG 为负的反例、一个校准基线和一个 cannot-evaluate 远期假设后，才允许进入交互式定量图表。"
+    "promotionGate": "至少出现一个完整六卡片场景、一个高 K 触发 blocked 的 synthetic 反例、一个校准基线和一个 cannot-evaluate 远期假设后，才允许进入 ordinal 可视化；真实 NCG-Quant 仍需量纲、归一化和估计方法。当前 quantitative-ready evaluations = 0。"
   },
   "toyNcgEvaluationRegistry": [
     {
@@ -953,57 +1060,109 @@
       "linkedClaims": ["MRW-CL1", "MRW-CL3", "MRW-CL5", "MRW-CL6"],
       "requiredNextWork": "提交完整 Scenario Cards 后再进入 toy NCG。",
       "nonClaim": "不声明人工黑洞、类黑洞或度规工程当前可制造。"
+    },
+    {
+      "id": "MRW-TOY4",
+      "scenarioId": "MRW-SC4",
+      "evaluationStatus": "blocked-by-abort-gates",
+      "normalizedInputs": [
+        {"symbol": "K", "status": "synthetic-high", "notes": "合成高倍率，只用于压力测试。"},
+        {"symbol": "AbortGate", "status": "triggered", "notes": "RTail above threshold。"},
+        {"symbol": "PExit", "status": "blocked", "notes": "退出卡片显示不可接受的退出失败。"},
+        {"symbol": "PContinuity", "status": "blocked", "notes": "主体连续性不能保持。"},
+        {"symbol": "NCG-Screen", "status": "blocked", "notes": "高 K 不能覆盖中止门槛。"}
+      ],
+      "expectedNcgDirection": "blocked",
+      "dominantBlocker": "Abort gates trigger before any quantitative NCG.",
+      "decision": "输出 blocked；禁止 positive 或寿命收益输出。",
+      "linkedClaims": ["MRW-CL2", "MRW-CL5", "MRW-CL6"],
+      "requiredNextWork": "作为 evaluator 回归样例保留；不进入现实场景外推。",
+      "nonClaim": "不声明任何真实强红移等待区存在或可用。"
+    },
+    {
+      "id": "MRW-TOY5",
+      "scenarioId": "MRW-SC5",
+      "evaluationStatus": "cannot-evaluate",
+      "normalizedInputs": [
+        {"symbol": "K", "status": "ordinal-only", "notes": "只有 low/medium/high 等级，没有量纲。"},
+        {"symbol": "P_success", "status": "ordinal-only", "notes": "条件概率链完整但未校准。"},
+        {"symbol": "ResidualRisk", "status": "ordinal-only", "notes": "残余风险只有等级描述。"},
+        {"symbol": "COpportunity", "status": "ordinal-only", "notes": "机会成本缺统一主体持续性尺度。"},
+        {"symbol": "NCG-Quant", "status": "reserved", "notes": "保留给未来校准模型。"}
+      ],
+      "expectedNcgDirection": "cannot-evaluate",
+      "dominantBlocker": "六卡片完整不等于可定量；ordinal-only 输入不能进入 NCG-Quant。",
+      "decision": "输出 cannot-evaluate；允许记录为 toy screening，不允许输出数值收益。",
+      "linkedClaims": ["MRW-CL2", "MRW-CL3", "MRW-CL5"],
+      "requiredNextWork": "定义量纲、归一化尺度和参数估计方法。",
+      "nonClaim": "不输出寿命收益、工程收益或现实任务方案。"
+    }
+  ],
+  "minimalEvaluatorOutputExamples": [
+    {
+      "scenarioId": "MRW-SC4",
+      "inputSignal": "K=synthetic-high; RTail above threshold; PExit=blocked; PContinuity=blocked",
+      "outputClass": "blocked",
+      "allowedConclusion": "高 K 不能覆盖 abort gate；该场景只能作为压力测试反例。",
+      "forbiddenConclusion": "不得输出 positive NCG、寿命收益、工程可行性或人体等待建议。"
+    },
+    {
+      "scenarioId": "MRW-SC5",
+      "inputSignal": "six cards complete; all values ordinal-only; no calibrated units",
+      "outputClass": "cannot-evaluate",
+      "allowedConclusion": "资料完整度提高，但仍不能进入 NCG-Quant。",
+      "forbiddenConclusion": "不得把 low/medium/high 等级转写成精确收益或概率。"
     }
   ],
   "ncgFormulaDecompositionFigure": {
     "figureId": "F4",
-    "title": "NCG Formula Decomposition",
-    "purpose": "把 NCG 拆成收益放大、概率门、风险扣减和机会成本四组，说明 K 只是固有时压缩代理变量，不是等待路径收益本身。",
-    "layout": "left-to-right formula decomposition without numerical axis",
-    "formula": "NCG_i = K_i * U_i * PWindow_i * PExit_i * PAdopt_i * PContinuity_i - RLife_i - REngineering_i - RTail_i - COpportunity_i",
+    "title": "NCG-Screen Decomposition",
+    "purpose": "把 NCG-Screen 拆成时间差分、条件概率链、中止门槛、残余风险和输出分类五组，说明 K 只是固有时压缩代理变量。",
+    "layout": "left-to-right screening decomposition without numerical axis",
+    "formula": "NCG-Screen_i = GateCheck(...); P_success_i = P(Window_i) * P(Exit_i | Window_i) * P(Adopt_i | Window_i, Exit_i) * P(Continuity_i | Wait_i, Exit_i, Adopt_i)",
     "blocks": [
       {
         "id": "NCG-B1",
         "group": "time-and-upgrade-gain",
-        "operation": "multiply",
+        "operation": "screen input",
         "variables": ["K", "U"],
-        "role": "把主体固有时压缩和外部技术升级收益合成理论毛收益。",
-        "interpretation": "K 提供等待时间差，U 决定外部世界是否真的产生可采用升级；任一项薄弱都会削弱毛收益。"
+        "role": "记录主体固有时压缩和外部技术升级目标。",
+        "interpretation": "K 提供等待时间差，U 决定外部世界是否产生可采用升级；二者只构成审查输入。"
       },
       {
         "id": "NCG-B2",
-        "group": "probability-gates",
-        "operation": "multiply",
+        "group": "conditional-probability-chain",
+        "operation": "condition",
         "variables": ["PWindow", "PExit", "PAdopt", "PContinuity"],
-        "role": "把技术窗口、退出、采用和主体连续性变成乘法门。",
-        "interpretation": "概率门不是装饰项；任一门接近零时，高 K 也不能推出正收益。"
+        "role": "把技术窗口、退出、采用和主体连续性写成条件链。",
+        "interpretation": "概率门不默认相互独立；任一门接近零时，高 K 不能推出正收益。"
       },
       {
         "id": "NCG-B3",
-        "group": "risk-deductions",
-        "operation": "subtract",
-        "variables": ["RLife", "REngineering", "RTail"],
-        "role": "扣除生命支持、工程和尾部失控风险。",
-        "interpretation": "风险项优先约束可行性；不可逆失败不能被平均收益掩盖。"
+        "group": "abort-gates",
+        "operation": "block",
+        "variables": ["AbortGate", "PExit", "PContinuity", "RTail"],
+        "role": "先判定不可逆失败是否直接中止。",
+        "interpretation": "Abort gate 触发时不进入数值 NCG，直接输出 blocked。"
       },
       {
         "id": "NCG-B4",
-        "group": "opportunity-cost",
+        "group": "residual-risk-and-opportunity-cost",
         "operation": "subtract",
-        "variables": ["COpportunity"],
-        "role": "扣除进入等待路径导致错过当前行动、治理和修复路径的成本。",
-        "interpretation": "等待不是免费期权；等待期间放弃的可行动路径必须进入同一持续性尺度。"
+        "variables": ["ResidualRisk", "COpportunity"],
+        "role": "只扣除没有触发中止门的残余风险和机会成本。",
+        "interpretation": "同一个失败事件不能同时作为 abort gate 和普通扣减项。"
       },
       {
         "id": "NCG-B5",
         "group": "decision-output",
         "operation": "classify",
-        "variables": ["NCG"],
-        "role": "输出 positive / negative / blocked / cannot-evaluate 的研究分类。",
-        "interpretation": "当前论文只允许方向性研究分类，不输出个人寿命预测或现实任务方案。"
+        "variables": ["NCG-Screen", "NCG-Quant"],
+        "role": "输出 calibration-only / blocked / negative / cannot-evaluate / eligible-for-toy-model 的研究分类。",
+        "interpretation": "NCG-Quant 保留给未来校准模型；当前论文不输出个人寿命预测或现实任务方案。"
       }
     ],
-    "caption": "Figure 4. NCG Formula Decomposition. 净持续性收益把时间倍率 K 降级为一个输入项；等待路径必须同时通过技术收益、概率门、风险扣减和机会成本审查。",
+    "caption": "Figure 4. NCG-Screen Decomposition. 当前模型先做 gate-based screening；等待路径必须同时通过条件概率链、中止门槛、残余风险和机会成本审查。",
     "designAudit": {
       "figureType": "solution-overview model figure",
       "paradigm": "formula decomposition diagram",
@@ -1038,7 +1197,7 @@
       "description": "S0-S6 生命周期状态机，展示每个阶段的失败模式。",
       "dataSource": "stateMachine",
       "priority": "HIGH",
-      "caption": "等待路径不是“进入等待区”一个动作，而是外部准备、转移、进入、维生、窗口判断、退出回收和技术采用的完整生命周期。",
+      "caption": "等待路径包含外部准备、转移、进入、维生、窗口判断、退出回收和技术采用的完整生命周期。",
       "designAudit": "Current table is accurate; future SVG should encode each state with one critical failure signal and one required card.",
       "status": "data-backed table"
     },
@@ -1055,12 +1214,12 @@
     {
       "id": "F4",
       "type": "model figure",
-      "description": "NCG 公式分解图，把 K、U、P_window、P_exit、P_adopt、P_continuity、R_life、R_engineering、R_tail 和 C_opportunity 分成收益门、概率门、风险扣减和机会成本。",
+      "description": "NCG-Screen 分解图，把 K、U、条件概率链、中止门槛、残余风险和机会成本分成审查块。",
       "dataSource": "ncgFormulaDecompositionFigure + variableDictionary",
       "priority": "MEDIUM",
-      "caption": "净持续性收益 NCG 把时间倍率从单一亮点降级为一个必须接受概率门和风险扣减审查的变量。",
-      "designAudit": "Implemented as an arXiv-compatible formula decomposition table. It intentionally avoids axes and numeric encodings until scenario data exists.",
-      "status": "implemented as data-backed formula decomposition figure"
+      "caption": "NCG-Screen 把时间倍率从单一亮点降级为必须接受中止门槛、条件概率链和残余风险审查的变量。",
+      "designAudit": "Implemented as an arXiv-compatible screening decomposition table. It intentionally avoids axes and numeric encodings until calibrated scenario data exists.",
+      "status": "implemented as data-backed screening decomposition figure"
     }
   ],
   "citationContextRegister": [
@@ -1128,6 +1287,74 @@
       "reviewStatus": "LOCAL_PRECHECK_ONLY"
     }
   ],
+  "reviewDecisionRegister": [
+    {
+      "id": "MRW-RD1",
+      "decision": "研究定位",
+      "currentStatement": "本文定位为条件性研究协议，用于把度规红移等待路径拆成可审查变量、状态机、场景卡片和失败门槛。",
+      "paperEffect": "摘要、研究问题和非目标必须前置该定位，避免被误读为人工黑洞、人体等待室或现实任务方案。",
+      "blockingIfViolated": "若正文声称当前可制造强红移等待区，论文必须降级为 unsupported claim。"
+    },
+    {
+      "id": "MRW-RD2",
+      "decision": "定量状态",
+      "currentStatement": "quantitative-ready evaluations = 0。",
+      "paperEffect": "所有场景输出只能是 calibration-only、blocked、negative-under-current-evidence 或 cannot-evaluate。",
+      "blockingIfViolated": "若页面输出 positive 或具体寿命收益，必须提供完整六卡片、量纲尺度、风险归一化和可复现日志。"
+    },
+    {
+      "id": "MRW-RD3",
+      "decision": "NCG 数学地位",
+      "currentStatement": "NCG-Screen 是启发式审查函数，NCG-Quant 保留给未来校准模型。",
+      "paperEffect": "NCG-Screen 用于同时审查 K、技术收益、条件概率链、中止门槛、残余风险和机会成本。",
+      "blockingIfViolated": "若 NCG 被用于输出个人建议、工程承诺或精确寿命预测，必须触发 cannot-evaluate。"
+    },
+    {
+      "id": "MRW-RD4",
+      "decision": "中止优先级",
+      "currentStatement": "退出、主体连续性、治理中止条件或尾部风险失败时，即使 K 很高也应判定为 blocked、negative 或 cannot-evaluate。",
+      "paperEffect": "高倍率场景必须先通过 abort gates，再讨论递归等待收益。",
+      "blockingIfViolated": "若 K 被单独用作收益、安全性或可行性证明，论文主张必须回退到传播性想象。"
+    }
+  ],
+  "missingEvidenceRegister": [
+    {
+      "id": "MRW-ME1",
+      "missingItem": "参考文献全文与 fresh reviewer verdict",
+      "impact": "无法独立核验 Pound-Rebka、Gravity Probe A、GPS、黑洞未来观察限制和 Malament-Hogarth 文献是否被准确使用。",
+      "requiredAction": "为 12 条参考文献建立 Source Card，并由独立 reviewer 对每个 citation context 给出 PASS / WARN / FAIL。"
+    },
+    {
+      "id": "MRW-ME2",
+      "missingItem": "NCG 量纲、归一化尺度与估计方法",
+      "impact": "NCG 暂时只能作为分类审查函数，不能作为可计算收益函数。",
+      "requiredAction": "把 NCG 拆成 qualitative gate、ordinal score 和 future quantitative estimand 三层。"
+    },
+    {
+      "id": "MRW-ME3",
+      "missingItem": "完整 Metric / Orbit / Continuity / Window / Risk / Exit Cards",
+      "impact": "当前没有候选场景满足进入真实定量 NCG 的最低资料条件。",
+      "requiredAction": "优先建立一个 synthetic 场景和一个高 K 负 NCG 反例，用于验证分类器。"
+    },
+    {
+      "id": "MRW-ME4",
+      "missingItem": "工程模型与数值模拟",
+      "impact": "无法评价近视界轨道、加速度、潮汐、辐射、通信、退出、维生和回收机制。",
+      "requiredAction": "补充非人体、非任务承诺的物理边界算例，并明确只用于压力测试。"
+    },
+    {
+      "id": "MRW-ME5",
+      "missingItem": "Human Infra 主体持续性操作定义",
+      "impact": "PContinuity、U 和 COpportunity 的评估仍依赖上位框架，缺少可审查量表。",
+      "requiredAction": "把身体、认知、记忆、行动能力、恢复能力和未来选择权拆成独立变量卡。"
+    },
+    {
+      "id": "MRW-ME6",
+      "missingItem": "目标 venue 与格式约束",
+      "impact": "当前页面适合研究展示和内部审查，尚不能直接作为期刊或会议投稿稿。",
+      "requiredAction": "冻结中文页面为 source of truth 后，按目标 venue 生成英文 LaTeX 版本。"
+    }
+  ],
   "preSubmissionReviewRegister": [
     {
       "id": "MRW-PSR1",
@@ -1144,10 +1371,10 @@
       "id": "MRW-PSR2",
       "dimension": "evidence-and-experiment",
       "severity": "MAJOR",
-      "finding": "已经新增 symbolic scenario evaluator，但当前 4 个场景仍没有任何 quantitative-ready 评估，缺真实工程数据、轨道模型和生命支持模型。",
+      "finding": "已经新增 symbolic scenario evaluator 和 synthetic 回归场景，但当前仍没有任何 quantitative-ready 评估，缺真实工程数据、轨道模型和生命支持模型。",
       "quotedEvidence": "SCENARIO_EVALUATION_AUDIT: quantitative-ready evaluations = 0",
-      "blockingGate": "至少需要一个完整六卡片场景或可复现 symbolic scenario，能明确给出 K、概率门、风险扣减和 NCG 方向性结果。",
-      "suggestedFix": "继续把 MRW-SC3 拆成完整输入卡片，或新增一个非人体、非工程承诺的 synthetic scenario，用于测试 evaluator 的正负方向性。",
+      "blockingGate": "至少需要一个真实完整六卡片场景或可审查物理边界算例，能明确给出 K、条件概率链、残余风险和 NCG-Screen 方向性结果。",
+      "suggestedFix": "继续把 MRW-SC3 拆成完整输入卡片，并把 synthetic 场景保留为 evaluator 回归样例。",
       "linkedSections": ["S7", "S12"],
       "status": "major-revision-needed"
     },
@@ -1155,10 +1382,10 @@
       "id": "MRW-PSR3",
       "dimension": "model-validity",
       "severity": "MAJOR",
-      "finding": "NCG 的收益、风险和机会成本仍是规范化接口，尚未定义可比较的量纲和尺度。",
-      "quotedEvidence": "所有收益、概率门、风险扣减和机会成本必须先归一到同一主体持续性尺度。",
+      "finding": "NCG-Screen 已经与未来 NCG-Quant 拆分，但 NCG-Quant 的收益、风险和机会成本仍缺可比较量纲和尺度。",
+      "quotedEvidence": "Quantitative NCG_i is reserved for future calibrated models.",
       "blockingGate": "必须给出至少一个尺度定义方案，并说明哪些变量只能保持 qualitative 状态。",
-      "suggestedFix": "把 NCG 拆成 qualitative gate、ordinal score 和 future quantitative estimand 三层，避免直接伪装成实证量。",
+      "suggestedFix": "把 NCG-Screen 的分类输出、ordinal score 和 future quantitative estimand 分开写入模型说明。",
       "linkedSections": ["S7", "S15", "S16"],
       "status": "major-revision-needed"
     },
@@ -1178,7 +1405,7 @@
       "dimension": "figure-quality",
       "severity": "MINOR",
       "finding": "F1 和 F4 当前是 arXiv 兼容文本/表格图，适合作为工作论文，但正式投稿需要统一图号、标题和向量图导出策略。",
-      "quotedEvidence": "implemented as data-backed formula decomposition figure",
+      "quotedEvidence": "implemented as data-backed screening decomposition figure",
       "blockingGate": "所有核心图必须能从结构化数据再生成，并保留 caption、变量来源和禁止解读。",
       "suggestedFix": "后续用同一 JSON 生成 SVG/PDF 版本，同时保留 HTML table fallback。",
       "linkedSections": ["S1", "S7", "S17"],
@@ -1189,16 +1416,27 @@
       "dimension": "format-and-language",
       "severity": "MAJOR",
       "finding": "当前是中文 arXiv-style working paper 页面，不是目标期刊或会议的英文 LaTeX 投稿稿。",
-      "quotedEvidence": "Working paper v0.2 / 2026-06-29",
+      "quotedEvidence": "Working paper v0.4 / 2026-06-30",
       "blockingGate": "如果进入正式投稿，必须确定目标 venue、页限、引用格式、英文术语表和 LaTeX 源稿。",
       "suggestedFix": "先冻结中文研究页为 source of truth，再生成英文 LaTeX draft 和 references.bib。",
       "linkedSections": ["abstract1", "S17"],
       "status": "major-revision-needed"
+    },
+    {
+      "id": "MRW-PSR7",
+      "dimension": "claim-scope",
+      "severity": "CRITICAL",
+      "finding": "评审后版本必须把“条件性研究协议”和“quantitative-ready evaluations = 0”前置，否则读者可能把 K 或 NCG 误读为现实收益。",
+      "quotedEvidence": "NCG-Screen 是启发式审查函数；quantitative-ready evaluations = 0",
+      "blockingGate": "摘要、S1、S7、S12 和 S19 必须同时声明 NCG-Screen 的分类性质、当前无定量可用场景、K 不代表可行性。",
+      "suggestedFix": "在摘要和研究问题后加入 Decision and Scope Register，并在 S7/S12/S19 重复中止门槛。",
+      "linkedSections": ["abstract1", "S1", "S7", "S12", "S19"],
+      "status": "blocks-submission"
     }
   ],
   "auditContract": {
     "requiredPageStrings": [
-      "Working paper v0.2",
+      "Working paper v0.4",
       "Claim-Evidence Matrix",
       "变量契约",
       "图表计划与引用预审",
@@ -1208,8 +1446,16 @@
       "Scenario Card Template",
       "Toy NCG Evaluation Protocol",
       "Toy NCG Evaluation Registry",
-      "NCG Formula Decomposition",
+      "NCG-Screen Decomposition",
       "Pre-Submission Review Register",
+      "Decision and Scope Register",
+      "Missing Evidence Register",
+      "NCG-Screen 是启发式审查函数",
+      "NCG-Quant",
+      "P_success_i",
+      "Abort gate",
+      "Synthetic High-K Negative-NCG Stress Test",
+      "quantitative-ready evaluations = 0",
       "Scenario Evaluation Audit",
       "Citation Context Review Packet",
       "Citation Context Local Review",
@@ -1230,12 +1476,12 @@
       "falsifierRegister": 7,
       "sourceCardLedger": 12,
       "scenarioCardTemplateRequiredCards": 6,
-      "scenarioEvaluationRegistry": 4,
-      "toyNcgEvaluationSpecSteps": 6,
-      "toyNcgEvaluationRegistry": 4,
+      "scenarioEvaluationRegistry": 6,
+      "toyNcgEvaluationSpecSteps": 7,
+      "toyNcgEvaluationRegistry": 6,
       "ncgFormulaDecompositionBlocks": 5,
       "preSubmissionReviewRegister": 6,
-      "scenarioEvaluationAuditRows": 4,
+      "scenarioEvaluationAuditRows": 6,
       "citationContextReviewPacketRows": 7,
       "citationContextLocalReviewRows": 7
     }

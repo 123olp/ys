@@ -45,6 +45,17 @@ const humanInfraMapping = [
   ["技术治理", "强技术收益与尾部风险同时增加。", "决定路径位移是否被灾难性风险抵消。", "Risk_t, Governance_t"]
 ];
 
+const scarcityRows = [
+  ["寿命稀缺", "长期目标被固定终局截断，学习和修正轮次有限。", "延展主体持续窗口，增加学习、试错、等待未来和长期项目推进轮次。", "T, S(t), LEV(t)"],
+  ["健康寿命稀缺", "主体仍存在但行动、恢复、判断和创造能力被疾病或失能压缩。", "延后失能，扩大健康状态积分和高质量行动年限。", "H_t, Q_t"],
+  ["有效时间稀缺", "清醒时间被疾病、等待、事务、低效系统和返工吞噬。", "降低摩擦、等待、返工和恢复成本，让更多日历时间转化为可行动时间。", "E_t"],
+  ["注意力稀缺", "目标被打断、焦虑、噪音、切换成本和信息过载稀释。", "通过工具、环境、恢复和 AI 分流提高终身高质量注意力窗口。", "A_t"],
+  ["认知稀缺", "学习、判断、规划、记忆和复杂问题处理受限。", "用 AI、知识系统、医学、协作和外部记忆增强认知可用性。", "C_t"],
+  ["恢复稀缺", "损耗积累后无法回到可行动状态，风险和疲劳持续滚动。", "建立睡眠、康复、复盘、冗余、照护和风险反馈系统。", "R_t"],
+  ["技术可及性稀缺", "技术存在但主体无法获得、理解、负担或整合。", "提高医学、AI、工具、信息系统和协作网络的可获得性与可采用性。", "P_adopt, Access_t"],
+  ["未来选择权稀缺", "当下风险、资源锁定和死亡边界压缩未来路径。", "扩大主体进入未来、重新选择、重新组合资源和等待新窗口的能力。", "O_t"]
+];
+
 const checkItems = [
   "这是作者已经列举的事实、趋势推断，还是远期设想？",
   "该趋势依赖的底层变量是算力、数据、能源、材料、测序成本还是网络效应？",
@@ -139,8 +150,9 @@ const milestoneRows = [
         <li class="ltx_tocentry ltx_tocentry_section"><a href="#S3" title="In Human Infra" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3 </span>理论转译</span></a></li>
         <li class="ltx_tocentry ltx_tocentry_subsection"><a href="#S3.SS1" title="In Human Infra" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.1 </span>主体持续性</span></a></li>
         <li class="ltx_tocentry ltx_tocentry_subsection"><a href="#S3.SS2" title="In Human Infra" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.2 </span>通用资源预算</span></a></li>
-        <li class="ltx_tocentry ltx_tocentry_subsection"><a href="#S3.SS3" title="In Human Infra" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.3 </span>知识到作品</span></a></li>
-        <li class="ltx_tocentry ltx_tocentry_subsection"><a href="#S3.SS4" title="In Human Infra" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.4 </span>隐含变量</span></a></li>
+        <li class="ltx_tocentry ltx_tocentry_subsection"><a href="#S3.SS3" title="In Human Infra" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.3 </span>反稀缺工程</span></a></li>
+        <li class="ltx_tocentry ltx_tocentry_subsection"><a href="#S3.SS4" title="In Human Infra" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.4 </span>知识到作品</span></a></li>
+        <li class="ltx_tocentry ltx_tocentry_subsection"><a href="#S3.SS5" title="In Human Infra" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.5 </span>隐含变量</span></a></li>
         <li class="ltx_tocentry ltx_tocentry_section"><a href="#S4" title="In Human Infra" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">4 </span>生命路径模型</span></a></li>
         <li class="ltx_tocentry ltx_tocentry_subsection"><a href="#S4.SS1" title="In Human Infra" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">4.1 </span>资料到变量</span></a></li>
         <li class="ltx_tocentry ltx_tocentry_subsection"><a href="#S4.SS2" title="In Human Infra" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">4.2 </span>技术价值公式</span></a></li>
@@ -172,11 +184,11 @@ const milestoneRows = [
 
     <div id="abstract1" class="ltx_abstract">
       <h6 class="ltx_title ltx_title_abstract">Abstract.</h6>
-      <p class="ltx_p">本文提出 Human Infra 的网页研究对象：把《奇点更近》一类关于 AI、生物技术、脑机接口、纳米技术与长寿逃逸速度的未来叙事，转译为“主体持续性基础设施”的研究材料、模型变量、可视化对象和治理约束。本文的核心判断是：价值、目标、事业和创造并不直接悬浮存在，它们都预设一个能够继续感知、判断、行动、学习、恢复、修正并进入未来的主体。因而，Human Infra 不是普通健康管理、长寿知识库或技术乐观主义展示页，而是一套围绕主体持续窗口、有效行动时间、未来选择权和通用资源预算增量建立的研究框架。</p>
+      <p class="ltx_p">本文提出 Human Infra 的网页研究对象：把《奇点更近》一类关于 AI、生物技术、脑机接口、纳米技术与长寿逃逸速度的未来叙事，转译为“主体持续性基础设施”的研究材料、模型变量、可视化对象和治理约束。本文的核心判断是：价值、目标、事业和创造并不直接悬浮存在，它们都预设一个能够继续感知、判断、行动、学习、恢复、修正并进入未来的主体。Human Infra 围绕主体持续窗口、有效行动时间、未来选择权、通用资源预算增量和底层稀缺约束建立研究框架。</p>
       <p class="ltx_p">文章给出三层贡献：第一，把书籍资料中的“指数技术信号”拆成变量、机制、证据边界和反证条件；第二，把寿命、健康寿命、有效时间、主观时间、相对时间和未来选择权放入生命路径概率分布模型；第三，把模型表达为可发布的学术网页形态，包括论文式阅读页、机制图、变量表、临界阈值图和后续 D3 交互模型页。本文不声称任何远期预测已经实现，也不输出个体死亡日期；它提供的是一种将宏大技术叙事转化为可讨论、可审查、可建模、可传播研究作品的方法。</p>
     </div>
     <div class="ltx_keywords">
-      <h6 class="ltx_title ltx_title_keywords">关键词： </h6>主体持续性；生命路径；有效时间；长寿逃逸速度；通用资源预算；科研叙事网页；Human Infra
+      <h6 class="ltx_title ltx_title_keywords">关键词： </h6>主体持续性；生命路径；有效时间；长寿逃逸速度；通用资源预算；反稀缺工程；科研叙事网页；Human Infra
     </div>
     <div class="ltx_classification">
       <h6 class="ltx_title ltx_title_classification">研究分类： </h6>cs.HC; q-bio.PE; stat.ME; cs.AI
@@ -185,7 +197,7 @@ const milestoneRows = [
     <section id="S1" class="ltx_section">
       <h2 class="ltx_title ltx_title_section"><span class="ltx_tag ltx_tag_section">1. </span>问题定义：从未来叙事到主体持续性工程</h2>
       <div class="ltx_para">
-        <p class="ltx_p">Human Infra 的核心对象不是单项技术，也不是单个长寿方案，而是一个更上位的问题：一个主体如何在时间中继续存在、继续行动、继续学习、继续修正，并保持进入未来的资格。传统讨论常把“做什么”“如何更高效”“如何获得成果”视为第一问题；Human Infra 反过来追问这些问题的边界条件：如果主体终止，感知、判断、行动、学习、创造和未来选择权同步终止，那么所有边界内优化都只是有限倒计时中的局部最优。</p>
+        <p class="ltx_p">Human Infra 的核心对象是一个更上位的问题：一个主体如何在时间中继续存在、继续行动、继续学习、继续修正，并保持进入未来的资格。传统讨论常把“做什么”“如何更高效”“如何获得成果”视为第一问题；Human Infra 反过来追问这些问题的边界条件：如果主体终止，感知、判断、行动、学习、创造和未来选择权同步终止，那么所有边界内优化都只是有限倒计时中的局部最优。</p>
         <p class="ltx_p">因此，本文把“主体持续性”定义为价值实现的基础设施问题。健康、寿命、认知、AI、医学、工具、环境、协作、资源、反馈、恢复系统和未来等待路径，都只有在它们增强主体持续存在和持续行动的能力时，才进入同一个研究对象。</p>
       </div>
       <div id="S1.ThmTheorem1" class="ltx_theorem ltx_theorem_Proposition">
@@ -249,7 +261,7 @@ const milestoneRows = [
     <section id="S2" class="ltx_section">
       <h2 class="ltx_title ltx_title_section"><span class="ltx_tag ltx_tag_section">2. </span>资料信号：从《奇点更近》提取可建模对象</h2>
       <div class="ltx_para">
-        <p class="ltx_p">《奇点更近》一类资料的价值，不在于把所有时间表当作确定事实，而在于提供一组高密度信号：计算成本下降、AI 能力提升、生物医学信息化、人机接口、纳米技术、长寿逃逸速度和技术风险治理。Human Infra 的处理方式不是直接复述预测，而是把这些信号拆成可进入模型的变量与机制。</p>
+        <p class="ltx_p">《奇点更近》一类资料提供一组高密度信号：计算成本下降、AI 能力提升、生物医学信息化、人机接口、纳米技术、长寿逃逸速度和技术风险治理。Human Infra 不把时间表当作确定事实处理，而是把这些信号拆成可进入模型的变量与机制。</p>
       </div>
       <figure class="ltx_figure">
         <svg viewBox="0 0 900 260" role="img" aria-labelledby="fig-signal-title fig-signal-desc">
@@ -282,7 +294,7 @@ const milestoneRows = [
           <rect x="70" y="155" width="760" height="48" rx="4" fill="#fff7ed" stroke="#9a3412"></rect>
           <text x="450" y="184" text-anchor="middle" font-size="16" fill="#7c2d12">关键转换：把“未来会怎样”的叙事，改写成“哪些变量通过何种机制改变主体持续性”的研究问题。</text>
         </svg>
-        <figcaption>Figure 1. 资料信号不是直接成为结论，而是先进入变量、机制、证据边界和可视化对象。</figcaption>
+        <figcaption>Figure 1. 资料信号先进入变量、机制、证据边界和可视化对象，再形成可审查结论。</figcaption>
       </figure>
       <div class="ltx_table">
         <table>
@@ -540,14 +552,14 @@ const milestoneRows = [
     </section>
 
     <section id="S3" class="ltx_section">
-      <h2 class="ltx_title ltx_title_section"><span class="ltx_tag ltx_tag_section">3. </span>理论转译：Human Infra 的三条解释线</h2>
+      <h2 class="ltx_title ltx_title_section"><span class="ltx_tag ltx_tag_section">3. </span>理论转译：Human Infra 的四条解释线</h2>
       <div class="ltx_para">
-        <p class="ltx_p">Human Infra 的表达不能停在“长寿”“AI”“未来技术”三个孤立词上。更稳的结构是三条解释线：主体持续性解释为什么这个问题上位；通用资源预算解释寿命扩展的二阶效应；知识到作品解释为什么需要网页、图表、资料卡和工具链。</p>
+        <p class="ltx_p">Human Infra 的表达不能停在“长寿”“AI”“未来技术”三个孤立词上。更稳的结构是四条解释线：主体持续性解释为什么这个问题上位；通用资源预算解释寿命扩展的二阶效应；稀缺问题解释为什么它具备基础设施合法性；知识到作品解释为什么需要网页、图表、资料卡和工具链。</p>
       </div>
 
       <section id="S3.SS1" class="ltx_subsection">
         <h3 class="ltx_title ltx_title_subsection"><span class="ltx_tag ltx_tag_subsection">3.1 </span>主体持续性</h3>
-        <p class="ltx_p">主体持续性表示一个主体在时间中继续存在、继续判断、继续行动、继续学习、继续恢复、继续修正并继续进入未来窗口的能力。它不是单纯的生物寿命，也不是单纯的意识哲学问题，而是身体、认知、人格、资源、工具、环境、协作和制度共同维持的复杂系统状态。</p>
+        <p class="ltx_p">主体持续性表示一个主体在时间中继续存在、继续判断、继续行动、继续学习、继续恢复、继续修正并继续进入未来窗口的能力。它由身体、认知、人格、资源、工具、环境、协作和制度共同维持，属于复杂系统状态。</p>
         <div class="ltx_listing">
           <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">主体持续性 = 生存窗口 + 健康窗口 + 认知窗口 + 行动窗口 + 恢复窗口 + 未来选择窗口</span></span>
         </div>
@@ -561,18 +573,62 @@ const milestoneRows = [
             <span class="ltx_tag ltx_tag_theorem"><span class="ltx_text ltx_font_bold">视角</span></span><span class="ltx_text ltx_font_bold">.</span>
           </h6>
           <div class="ltx_para">
-            <p class="ltx_p">Human Infra 不是只保护既有注意力和时间，而是研究主体持续窗口被延展后，通用资源总预算如何发生增量变化。</p>
+            <p class="ltx_p">Human Infra 研究主体持续窗口被延展后，通用资源总预算如何发生增量变化。</p>
           </div>
         </div>
       </section>
 
       <section id="S3.SS3" class="ltx_subsection">
-        <h3 class="ltx_title ltx_title_subsection"><span class="ltx_tag ltx_tag_subsection">3.3 </span>知识到作品</h3>
-        <p class="ltx_p">当前阶段的关键工作是整理资料、作品、谱系、论文和工具，并把它们组织成有价值的定性与定量材料：定性部分负责命名对象、建立谱系、定义边界；定量部分负责把因素、技术和行动放入预测模型；可视化部分负责让公众理解变量、机制、临界和风险。</p>
+        <h3 class="ltx_title ltx_title_subsection"><span class="ltx_tag ltx_tag_subsection">3.3 </span>稀缺问题与反稀缺工程</h3>
+        <p class="ltx_p">Human Infra 的第三个价值视角是稀缺问题。它处理的对象超出单一目标偏好，指向人类完成几乎所有任务时共同面对的底层稀缺：寿命、健康寿命、有效时间、注意力、认知能力、恢复能力、行动能力、技术可及性和未来选择权。只要这些基础预算被压缩，下游目标就会发生竞争、延迟、失败或提前终止。</p>
+        <p class="ltx_p">因此，Human Infra 可以被理解为面向主体持续性的反稀缺工程。它通过延长寿命、扩大有效时间、增强能力、降低损耗、提高技术可及性和扩展未来选择权，把人类从固定消耗型资源约束推向可恢复、可增长、可复利的行动系统。</p>
+        <div class="ltx_listing">
+          <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">主体完成任务依赖通用资源</span></span>
+          <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">  -&gt; 通用资源天然稀缺并持续损耗</span></span>
+          <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">  -&gt; 稀缺造成目标竞争、失败成本上升和可能性空间收缩</span></span>
+          <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">  -&gt; Human Infra 延长、恢复、放大和再生产这些资源</span></span>
+          <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">  -&gt; 长期稀缺约束下降</span></span>
+          <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">  -&gt; 有效时间、行动密度和未来选择权上升</span></span>
+        </div>
+        <div class="ltx_table">
+          <table>
+            <thead>
+              <tr>
+                <th>稀缺类型</th>
+                <th>对主体的限制</th>
+                <th>Human Infra 的反稀缺作用</th>
+                <th>模型位置</th>
+              </tr>
+            </thead>
+            <tbody>
+              {scarcityRows.map(([kind, limit, role, variable]) => (
+                <tr>
+                  <td>{kind}</td>
+                  <td>{limit}</td>
+                  <td>{role}</td>
+                  <td>{variable}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <div id="S3.ThmTheorem2" class="ltx_theorem ltx_theorem_Proposition">
+          <h6 class="ltx_title ltx_runin ltx_title_theorem">
+            <span class="ltx_tag ltx_tag_theorem"><span class="ltx_text ltx_font_bold">命题 2</span></span><span class="ltx_text ltx_font_bold">.</span>
+          </h6>
+          <div class="ltx_para">
+            <p class="ltx_p">Human Infra 的基础设施合法性来自跨任务稀缺约束：它增加目标选择和目标实现之前的基础条件，不替某个具体目标直接背书。</p>
+          </div>
+        </div>
       </section>
 
       <section id="S3.SS4" class="ltx_subsection">
-        <h3 class="ltx_title ltx_title_subsection"><span class="ltx_tag ltx_tag_subsection">3.4 </span>隐含变量：把书中未说透的东西显性化</h3>
+        <h3 class="ltx_title ltx_title_subsection"><span class="ltx_tag ltx_tag_subsection">3.4 </span>知识到作品</h3>
+        <p class="ltx_p">当前阶段的关键工作是整理资料、作品、谱系、论文和工具，并把它们组织成有价值的定性与定量材料：定性部分负责命名对象、建立谱系、定义边界；定量部分负责把因素、技术和行动放入预测模型；可视化部分负责让公众理解变量、机制、临界和风险。</p>
+      </section>
+
+      <section id="S3.SS5" class="ltx_subsection">
+        <h3 class="ltx_title ltx_title_subsection"><span class="ltx_tag ltx_tag_subsection">3.5 </span>隐含变量：把书中未说透的东西显性化</h3>
         <p class="ltx_p">这本书没有直接说出口但真正重要的部分，是“现实世界的信息化迁移”。未来竞争不只围绕资源、资本或劳动力展开，而围绕谁能更快把现实世界转化为可计算、可模拟、可优化的信息系统。Human Infra 要把这个隐含变量接到主体持续性：谁拥有更好的信息化、模拟、反馈、工具和治理基础设施，谁就更有可能把未来生命路径推向更长、更稳、更可修正的方向。</p>
         <div class="ltx_table">
           <table>
@@ -689,7 +745,7 @@ const milestoneRows = [
       <div class="ltx_listing">
         <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">J(π) = E[T] + α E[HealthyTime] + β E[EffectiveActionTime] + γ E[OptionValue] - Risk - Uncertainty - OpportunityCost</span></span>
       </div>
-      <p class="ltx_p">这里的策略 π 不是单一行为，而是在长期时间轴上选择、组合、停止、替换和复核干预的规则。它更接近动态因果决策系统，而不是静态知识库。</p>
+      <p class="ltx_p">这里的策略 π 是长期时间轴上选择、组合、停止、替换和复核干预的规则。它更接近动态因果决策系统，而不是静态知识库。</p>
 
       <section id="S4.SS1" class="ltx_subsection">
         <h3 class="ltx_title ltx_title_subsection"><span class="ltx_tag ltx_tag_subsection">4.1 </span>资料到变量：书籍信号如何进入模型契约</h3>
@@ -722,7 +778,7 @@ const milestoneRows = [
 
       <section id="S4.SS2" class="ltx_subsection">
         <h3 class="ltx_title ltx_title_subsection"><span class="ltx_tag ltx_tag_subsection">4.2 </span>技术价值公式：从“是否延寿”改成“如何移动分布”</h3>
-        <p class="ltx_p">判断技术价值时，核心问题不是“这个技术能不能延寿”，而是“这个技术通过什么机制影响哪些变量，这些变量如何改变死亡风险、健康寿命、主体能力和未来选择权”。这使项目从定性资料库进入定量预测模型。</p>
+        <p class="ltx_p">判断技术价值时，核心问题是“这个技术通过什么机制影响哪些变量，这些变量如何改变死亡风险、健康寿命、主体能力和未来选择权”。这使项目从定性资料库进入定量预测模型。</p>
         <div class="ltx_listing">
           <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">技术价值 =</span></span>
           <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">  影响变量的重要性</span></span>
@@ -848,7 +904,7 @@ const milestoneRows = [
 
     <section id="S5" class="ltx_section">
       <h2 class="ltx_title ltx_title_section"><span class="ltx_tag ltx_tag_section">5. </span>长寿逃逸速度：有限边界、临界区与开放边界</h2>
-      <p class="ltx_p">长寿逃逸速度的可视化重点不是“承诺无限寿命”，而是表达一个临界问题：技术与医学带来的预期剩余寿命增益速度，是否接近或超过日历时间消耗速度。当该比值低于 1，模型展示有限边界下的右移；当它接近 1，展示临界敏感区；当它越过 1，展示开放边界状态，但仍不输出个体死亡日期。</p>
+      <p class="ltx_p">长寿逃逸速度的可视化重点是表达一个临界问题：技术与医学带来的预期剩余寿命增益速度，是否接近或超过日历时间消耗速度。当该比值低于 1，模型展示有限边界下的右移；当它接近 1，展示临界敏感区；当它越过 1，展示开放边界状态，但仍不输出个体死亡日期。</p>
       <figure class="ltx_figure">
         <svg viewBox="0 0 900 340" role="img" aria-labelledby="fig-lev-title fig-lev-desc">
           <title id="fig-lev-title">长寿逃逸速度临界图</title>
@@ -1001,7 +1057,7 @@ const milestoneRows = [
       </div>
       <section id="S6.SS1" class="ltx_subsection">
         <h3 class="ltx_title ltx_title_subsection"><span class="ltx_tag ltx_tag_subsection">6.1 </span>图表语法：D3 页面应该如何读模型</h3>
-        <p class="ltx_p">后续交互页不应该从视觉效果开始设计，而应该从模型语法开始设计。D3 只负责把研究对象编码成可读形态：节点代表对象，边代表机制，曲线代表路径，注释代表边界，交互代表场景切换。</p>
+        <p class="ltx_p">后续交互页应该从模型语法开始设计。D3 负责把研究对象编码成可读形态：节点代表对象，边代表机制，曲线代表路径，注释代表边界，交互代表场景切换。</p>
         <div class="ltx_table">
           <table>
             <thead>
@@ -1120,7 +1176,7 @@ const milestoneRows = [
 
     <section id="S9" class="ltx_section">
       <h2 class="ltx_title ltx_title_section"><span class="ltx_tag ltx_tag_section">9. </span>研究路线：从资料整理到定量 Web 作品</h2>
-      <p class="ltx_p">下一阶段的目标不是继续堆叙事，而是建立可迭代的研究生产线：资料进入资料卡，资料卡抽取变量，变量进入模型契约，模型契约进入图表，图表进入网页，网页再把用户反馈回流到资料和模型。</p>
+      <p class="ltx_p">下一阶段的目标是建立可迭代的研究生产线：资料进入资料卡，资料卡抽取变量，变量进入模型契约，模型契约进入图表，图表进入网页，网页再把用户反馈回流到资料和模型。</p>
       <div class="ltx_listing">
         <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">资料 / 论文 / 书籍 / 工具</span></span>
         <span class="ltx_listingline"><span class="ltx_lstlisting ltx_text ltx_font_typewriter">  -&gt; Source Card</span></span>
@@ -1132,7 +1188,7 @@ const milestoneRows = [
       <p class="ltx_p">这样，Human Infra 的网页就不只是“介绍一个概念”，而是把资料、理论、模型、图表和工具组织成可持续扩展的研究作品。</p>
       <section id="S9.SS1" class="ltx_subsection">
         <h3 class="ltx_title ltx_title_subsection"><span class="ltx_tag ltx_tag_subsection">9.1 </span>决策检查：从学习资料进入研究资产前必须问什么</h3>
-        <p class="ltx_p">任何书籍观点、论文观点、工具项目或未来技术进入 Human Infra 前，都要先通过最小检查清单。检查清单不是为了削弱表达，而是保证每个内容块都能成为长期可维护的研究资产。</p>
+        <p class="ltx_p">任何书籍观点、论文观点、工具项目或未来技术进入 Human Infra 前，都要先通过最小检查清单。检查清单用于保证每个内容块都能成为长期可维护的研究资产。</p>
         <ol class="ltx_enumerate">
           {checkItems.map((item) => (
             <li class="ltx_item">

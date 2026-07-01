@@ -1,6 +1,6 @@
 # Controllable Metric Waiting Room Citation Context Local Review
 
-**Generated**: 2026-06-29T14:50:08.897Z
+**Generated**: 2026-06-29T17:53:31.465Z
 **Verdict**: LOCAL_REVIEW_COMPLETE_REQUIRES_FRESH_REVIEW
 
 All registered controllable metric waiting room citation contexts have a local safe-use, forbidden-use, risk-tier, and fresh-reviewer focus record. Independent external citation review remains required.

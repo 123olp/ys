@@ -3,10 +3,10 @@
   "verdict": "LOCAL_REVIEW_COMPLETE_REQUIRES_FRESH_REVIEW",
   "reasonCode": "all_contexts_have_local_boundaries",
   "summary": "All registered MRW citation contexts have a local safe-use, forbidden-use, risk-tier, and fresh-reviewer focus record. Independent external citation review remains required.",
-  "generatedAt": "2026-06-29T12:48:38.066Z",
+  "generatedAt": "2026-06-29T17:50:38.719Z",
   "auditedInputHashes": {
-    "src/data/metric-redshift-recursive-waiting.json": "sha256:4bce6bfc7acfdaebdfa4f738b665b1da5b39f0aabe8a0a761f6e30a730ddc979",
-    "src/data/metric-redshift-recursive-waiting/CITATION_CONTEXT_REVIEW_PACKET.json": "sha256:970ea042a24475924855b247cb2498cb94d0719fba2440463bb165777c2c2570"
+    "src/data/metric-redshift-recursive-waiting.json": "sha256:cd3d4b2dea7386f2236d0efbad96ae36f8f405f971668dfb7e5f498fac169da0",
+    "src/data/metric-redshift-recursive-waiting/CITATION_CONTEXT_REVIEW_PACKET.json": "sha256:bc77b1c91f1b16665e21eba4409d83ea41797f19e592e76862bcb937b8d82ba4"
   },
   "details": {
     "contextCount": 7,

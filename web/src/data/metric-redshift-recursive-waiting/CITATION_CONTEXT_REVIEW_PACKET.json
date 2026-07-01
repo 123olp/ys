@@ -3,9 +3,9 @@
   "verdict": "READY_FOR_EXTERNAL_REVIEW",
   "reasonCode": "packet_generated_no_external_judgment",
   "summary": "MRW citation contexts have been packaged for independent fresh reviewer verification. Local safe-use and forbidden-use boundaries are included, but no external reviewer verdict is claimed.",
-  "generatedAt": "2026-06-29T12:48:37.967Z",
+  "generatedAt": "2026-06-29T17:50:38.609Z",
   "auditedInputHashes": {
-    "src/data/metric-redshift-recursive-waiting.json": "sha256:4bce6bfc7acfdaebdfa4f738b665b1da5b39f0aabe8a0a761f6e30a730ddc979"
+    "src/data/metric-redshift-recursive-waiting.json": "sha256:cd3d4b2dea7386f2236d0efbad96ae36f8f405f971668dfb7e5f498fac169da0"
   },
   "details": {
     "contextCount": 7,

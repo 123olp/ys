@@ -9,5 +9,6 @@
 *.cff text eol=lf
 
 *.zip binary
+*.pdf binary
 *.sqlite binary
 *.db binary
