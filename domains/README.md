@@ -478,6 +478,12 @@
 - `workplace-accommodation-return-to-work-continuity/`：工作场所合理便利与复工连续性，整理合理便利、interactive process、modified duty、phased return 和工作能力匹配。
 - `disability-income-work-capacity-benefit-continuity/`：残障收入、工作能力与福利连续性，整理 SSDI、SSI、残障收入、工作能力、复工激励和福利悬崖。
 - `family-caregiver-respite-work-continuity/`：家庭照护者、喘息服务与工作连续性，整理家庭照护者支持、respite care、照护培训、工作灵活性和照护者负担。
+- `adult-day-services-supervision-transport-continuity/`：成人日间服务、监督与交通连续性，整理 adult day services、白天监督、活动餐食、交通接送和照护者工作窗口。
+- `home-care-aide-personal-care-workforce-continuity/`：居家照护人员与个人照护劳动力连续性，整理 home care aides、personal care、ADL/IADL 支持、排班、监督和劳动力稳定。
+- `respite-care-provider-capacity-scheduling-continuity/`：喘息服务供给、容量与排班连续性，整理 respite provider capacity、短期替代照护、预约、等待名单和服务中断。
+- `caregiver-training-skills-safety-continuity/`：照护者训练、技能与安全连续性，整理照护训练、移动转移、用药沟通、跌倒预防、感染控制和应急识别。
+- `caregiver-health-burnout-screening-support-continuity/`：照护者健康、倦怠筛查与支持连续性，整理照护者压力、睡眠、抑郁焦虑、burnout、筛查和同伴支持。
+- `home-care-task-coordination-care-plan-continuity/`：居家照护任务协调与 care plan 连续性，整理任务清单、角色分工、交接、提醒、供应、家庭沟通和升级路径。
 - `vital-records-life-event-continuity/`：生命事件与核心民事记录连续性，整理出生、死亡、婚姻、离婚、认证副本、记录更正和生命统计。
 - `name-change-identity-record-synchronization-continuity/`：姓名变更与身份记录同步连续性，整理姓名变更、SSA、护照、州证件、税务、学校、雇主、金融、医疗和福利记录同步。
 - `address-residency-mail-service-continuity/`：地址、居住地与邮件服务连续性，整理地址变更、居住地证明、邮件转递、关键通知、辖区和服务路由。

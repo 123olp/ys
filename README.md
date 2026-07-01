@@ -703,6 +703,12 @@ flowchart TD
     H --> WARTWC[workplace-accommodation-return-to-work-continuity<br/>合理便利 / 复工]
     H --> DIWCB[disability-income-work-capacity-benefit-continuity<br/>残障收入 / 工作能力福利]
     H --> FCRWC[family-caregiver-respite-work-continuity<br/>家庭照护者 / 喘息与工作]
+    H --> ADSS[adult-day-services-supervision-transport-continuity<br/>成人日间服务 / 监督交通]
+    H --> HCAPCW[home-care-aide-personal-care-workforce-continuity<br/>居家照护人员 / 个人照护]
+    H --> RCPCSC[respite-care-provider-capacity-scheduling-continuity<br/>喘息服务 / 容量排班]
+    H --> CTSSC[caregiver-training-skills-safety-continuity<br/>照护者训练 / 安全技能]
+    H --> CHBSSC[caregiver-health-burnout-screening-support-continuity<br/>照护者健康 / 倦怠支持]
+    H --> HCTCCP[home-care-task-coordination-care-plan-continuity<br/>照护任务 / care plan 协调]
     H --> VRLEC[vital-records-life-event-continuity<br/>生命事件记录]
     H --> NCIRSC[name-change-identity-record-synchronization-continuity<br/>姓名变更 / 身份同步]
     H --> ARMSC[address-residency-mail-service-continuity<br/>地址居住地 / 邮件路由]
@@ -1184,6 +1190,12 @@ flowchart TD
 | [Workplace Accommodation Return To Work Continuity](domains/workplace-accommodation-return-to-work-continuity/README.md) | 合理便利、interactive process、modified duty、phased return、工作能力和辅助技术 | 把能力变化转化为可调任务、环境、节奏和复工路径 | 不提供 ADA、工伤、医疗限制、复工许可、便利请求、法律或雇主合规建议 |
 | [Disability Income Work Capacity Benefit Continuity](domains/disability-income-work-capacity-benefit-continuity/README.md) | SSDI、SSI、残障收入、工作 credits、工作能力、复工激励和福利悬崖 | 在长期功能受限时保留现金流、医疗覆盖、工作参与和未来选择权 | 不提供福利申请、申诉、资格判断、给付金额、税务、法律、保险或医学建议 |
 | [Family Caregiver Respite Work Continuity](domains/family-caregiver-respite-work-continuity/README.md) | 家庭照护者支持、respite care、照护培训、工作灵活性、照护者健康和负担 | 防止长期照护责任吞噬照护者时间、收入、健康和职业角色 | 不提供个人照护计划、福利申请、长期照护选择、医疗、法律、保险或雇佣建议 |
+| [Adult Day Services Supervision Transport Continuity](domains/adult-day-services-supervision-transport-continuity/README.md) | 成人日间服务、日间监督、活动、餐食、交通接送、照护者工作窗口和服务连续性 | 把白天照护缺口转化为可组织、可运输、可监督的外部支持时间块 | 不提供服务推荐、资格判断、交通安排、医疗监督、照护计划、福利申请或个案安全建议 |
+| [Home Care Aide Personal Care Workforce Continuity](domains/home-care-aide-personal-care-workforce-continuity/README.md) | 居家照护人员、personal care、ADL/IADL 支持、排班、监督、工资和劳动力稳定 | 把家庭内部无法持续承担的日常照护任务转化为可调度的劳动力系统 | 不提供雇佣建议、护理操作、人员推荐、工资合规、背景调查、医疗或个案照护建议 |
+| [Respite Care Provider Capacity Scheduling Continuity](domains/respite-care-provider-capacity-scheduling-continuity/README.md) | 喘息服务供给、短期替代照护、容量、预约、等待名单、服务中断和照护者恢复 | 把照护者恢复从愿望转成有容量、有排班、有替代责任的服务接口 | 不提供 respite 申请、机构选择、排班安排、福利资格、医疗、保险、法律或个案照护建议 |
+| [Caregiver Training Skills Safety Continuity](domains/caregiver-training-skills-safety-continuity/README.md) | 照护者培训、转移移动、用药沟通、跌倒预防、感染控制、行为沟通和应急识别 | 把非正式照护从临时劳动转化为可学习、可复盘、可降低伤害的任务能力系统 | 不提供护理培训替代、医疗操作、转移搬运指令、用药建议、急救步骤或个案照护方案 |
+| [Caregiver Health Burnout Screening Support Continuity](domains/caregiver-health-burnout-screening-support-continuity/README.md) | 照护者压力、睡眠、抑郁焦虑、burnout、筛查、同伴支持、心理支持和危机连接 | 把照护者自身健康视为长期照护系统的关键承载条件 | 不提供心理诊断、治疗方案、危机干预、服务推荐、雇佣、法律、保险或个案建议 |
+| [Home Care Task Coordination Care Plan Continuity](domains/home-care-task-coordination-care-plan-continuity/README.md) | 居家照护任务清单、care plan、角色分工、交接、提醒、供应、家庭沟通和升级路径 | 把碎片化照护劳动转化为可分配、可交接、可追踪、可恢复的家庭运行脚本 | 不制定个人照护计划，不提供医疗护理、用药、法律代理、家庭纠纷、软件采购或个案协调建议 |
 | [Vital Records Life Event Continuity](domains/vital-records-life-event-continuity/README.md) | 出生、死亡、婚姻、离婚、认证副本、记录更正和生命统计 | 把生命事件和家庭事实转化为可被制度承认的身份、服务和权利底座 | 不提供证件办理、更正、亲属关系、继承、移民、福利、税务、法律或文件欺诈建议 |
 | [Name Change Identity Record Synchronization Continuity](domains/name-change-identity-record-synchronization-continuity/README.md) | 姓名变更、SSA、护照、州证件、税务、雇主、学校、金融、医疗和福利记录同步 | 防止姓名差异造成身份错配、资格延迟、支付失败、旅行受阻和服务拒绝 | 不提供改名、证件更新、移民、家庭法院、背景调查规避、身份隐藏或文件欺诈建议 |
 | [Address Residency Mail Service Continuity](domains/address-residency-mail-service-continuity/README.md) | 地址变更、居住地证明、邮件转递、关键通知、辖区、服务路由和无固定住址替代联系 | 把空间位置和制度通信转化为可恢复的服务路由层 | 不提供迁址、居住证明、税务居民、投票、学区、福利、保险、法律通知规避或欺骗地址系统建议 |

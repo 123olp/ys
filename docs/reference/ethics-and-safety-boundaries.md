@@ -1450,6 +1450,24 @@ Human Infra 不能被设计成更精密的压榨系统。
 - 不帮助伪造疾病、怀孕、照护、残障、工作能力、工资、休假或照护记录；不帮助隐瞒收入、欺诈申领、规避报告义务、报复劳动者、规避合理便利或压制照护者/残障者权利。
 - 不替代 DOL、EEOC、SSA、ACL、州级 paid leave / disability / Medicaid / workers compensation 机构、律师、医生、HR、雇主、保险人、照护机构、福利顾问或官方申诉渠道。
 
+## 长期照护执行连续性边界
+
+`adult-day-services-supervision-transport-continuity`、`home-care-aide-personal-care-workforce-continuity`、`respite-care-provider-capacity-scheduling-continuity`、`caregiver-training-skills-safety-continuity`、`caregiver-health-burnout-screening-support-continuity` 和 `home-care-task-coordination-care-plan-continuity` 关注长期照护如何通过日间服务、居家照护人员、喘息容量、照护者训练、照护者健康和居家任务协调转化为每日可执行支持，不是成人日间服务推荐、居家照护雇佣、护理操作、排班安排、心理诊断、家庭照护计划或福利申请入口。
+
+可以做：
+
+- 整理 ACL、Eldercare Locator、Medicaid HCBS / LTSS、NIA、CMS home health、AHRQ care coordination 等公开来源、机制、对象、边界和资料入口。
+- 比较成人日间服务、居家个人照护人员、喘息容量、照护者训练、照护者健康支持和家庭任务协调如何分别降低照护中断、照护者耗竭、居家失效和主体功能下降风险。
+- 记录服务接口、劳动力条件、排班瓶颈、交通交接、技能风险、照护者健康负担、任务交接机制、数据边界和禁止用途，帮助后续建模而不是输出个案方案。
+
+不能做：
+
+- 不提供成人日间服务、居家照护人员、respite、home health、HCBS、LTSS、机构、交通、设备、软件、心理服务、保险、法律或福利申请建议。
+- 不判断某人是否适合某类服务、是否有资格获得某项福利、需要多少照护小时、是否能安全居家、某照护任务是否可由家庭执行或某照护者是否已经 burnout。
+- 不生成护理计划、移动转移步骤、用药安排、危机处置方案、行为管理方案、服务排班、雇佣合同、背景调查策略、家庭纠纷处理方案或福利申诉材料。
+- 不帮助规避照护监管、隐瞒风险、替代专业评估、压低照护劳动价值、操控受照护者意愿、越权访问健康资料或把高风险照护任务转嫁给未训练照护者。
+- 不替代医生、护士、社工、照护机构、家庭照护顾问、心理健康专业人员、Medicaid / ACL / AAA / CMS / 州级 LTSS 机构、保险人、律师、雇主或紧急服务。
+
 ## 生命事件、家庭关系与制度记录连续性边界
 
 `vital-records-life-event-continuity`、`name-change-identity-record-synchronization-continuity`、`address-residency-mail-service-continuity`、`household-composition-dependent-eligibility-continuity`、`family-law-custody-child-support-continuity` 和 `kinship-foster-adoption-care-continuity` 关注生命事件、姓名、地址、家庭组成、监护抚养和儿童安置如何影响身份、服务、通知、资格、安全和照护连续性，不是个人证件、改名、迁址、税务/福利 household、家庭法院、子女抚养、寄养、收养或儿童福利案件入口。

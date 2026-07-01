@@ -181,6 +181,12 @@ human_infra/
     ├── workplace-accommodation-return-to-work-continuity/ # 工作场所合理便利与复工连续性
     ├── disability-income-work-capacity-benefit-continuity/ # 残障收入、工作能力与福利连续性
     ├── family-caregiver-respite-work-continuity/ # 家庭照护者、喘息服务与工作连续性
+    ├── adult-day-services-supervision-transport-continuity/ # 成人日间服务、监督与交通连续性
+    ├── home-care-aide-personal-care-workforce-continuity/ # 居家照护人员与个人照护劳动力连续性
+    ├── respite-care-provider-capacity-scheduling-continuity/ # 喘息服务供给、容量与排班连续性
+    ├── caregiver-training-skills-safety-continuity/ # 照护者训练、技能与安全连续性
+    ├── caregiver-health-burnout-screening-support-continuity/ # 照护者健康、倦怠筛查与支持连续性
+    ├── home-care-task-coordination-care-plan-continuity/ # 居家照护任务协调与 care plan 连续性
     ├── vital-records-life-event-continuity/ # 生命事件与核心民事记录连续性
     ├── name-change-identity-record-synchronization-continuity/ # 姓名变更与身份记录同步连续性
     ├── address-residency-mail-service-continuity/ # 地址、居住地与邮件服务连续性
@@ -866,6 +872,7 @@ human_infra/
 - `domains/maternal-newborn-child-development/` 负责孕产健康、新生儿健康、儿童健康、生长标准、早期发展和养育照护。
 - `domains/patient-safety-organizational-learning/` 负责患者安全、事件报告、团队沟通、根因分析、CUSP、TeamSTEPPS 和安全文化。
 - `domains/caregiving-long-term-care/` 负责家庭照护、长期照护、居家社区支持、照护协调、照护者负担和尊严边界。
+- `domains/adult-day-services-supervision-transport-continuity/`、`domains/home-care-aide-personal-care-workforce-continuity/`、`domains/respite-care-provider-capacity-scheduling-continuity/`、`domains/caregiver-training-skills-safety-continuity/`、`domains/caregiver-health-burnout-screening-support-continuity/` 和 `domains/home-care-task-coordination-care-plan-continuity/` 负责成人日间服务、居家个人照护劳动力、喘息服务容量、照护者训练、照护者健康和家庭照护任务协调这些长期照护执行连续性条件。
 - `domains/housing-built-environment-stability/` 负责住房稳定、住房质量、室内环境、无障碍、社区资源和建成环境健康。
 - `domains/rental-lease-tenancy-rights-continuity/`、`domains/eviction-prevention-court-diversion-continuity/`、`domains/emergency-rental-assistance-arrears-continuity/`、`domains/housing-choice-voucher-public-housing-continuity/`、`domains/fair-housing-discrimination-reasonable-accommodation-continuity/`、`domains/housing-habitability-inspection-code-enforcement-continuity/`、`domains/hud-approved-housing-counseling-navigation-continuity/` 和 `domains/manufactured-housing-park-tenure-safety-continuity/` 负责住房 tenure 稳定与可居住性执行连续性，覆盖租赁居住权、驱逐预防、欠租援助、住房补贴、公平住房、可居住性检查、住房咨询和制造房屋园区稳定。
 - `domains/self-represented-litigant-court-self-help-continuity/`、`domains/court-efiling-document-submission-continuity/`、`domains/remote-hybrid-court-hearing-access-continuity/`、`domains/court-language-access-interpreter-continuity/`、`domains/court-disability-accommodation-accessibility-continuity/`、`domains/court-fees-fines-ability-to-pay-continuity/`、`domains/jury-service-summons-hardship-continuity/` 和 `domains/small-claims-civil-dispute-resolution-continuity/` 负责法院接入与民事程序执行连续性，覆盖自助中心、电子提交、远程听证、语言口译、残障便利、费用罚金、陪审义务和小额纠纷恢复。
@@ -1164,6 +1171,7 @@ human_infra/
 - 2026-06-26：新增 `web/` Observable Framework 应用，作为科研叙事、书籍转译、预测模型和交互图表的正式 Web 入口。
 - 2026-06-27：新增 `tools/arxiv_html_paper_tool.py` 与 `tools/arxiv-html-paper/`，把 arXiv HTML papers 前端框架沉淀为可复用 Astro 工具链。
 - 2026-06-29：新增可控度规等待室假设 working paper 入口和审计账本，把黑洞等待室收敛为固有时差分、退出采用、风险扣减和递归等待的可审查模型。
+- 2026-07-01：新增第 115 波长期照护执行连续性域，覆盖成人日间服务、居家照护人员、喘息容量、照护者训练、照护者健康和居家照护任务协调。
 - 2026-06-30：新增第四十一波 6 个收入、税务、社保、退休、失业和工伤权益记录连续性域，覆盖工资雇佣记录、税务申报记录、社会保险收入与福利记录、退休养老金计划、失业保险工资记录和工伤职业伤害权益。
 - 2026-06-30：新增第四十波 6 个资格证明、证照与能力可携带连续性域，覆盖教育记录核验、职业证照认证、技能胜任力凭证、继续教育再认证、学徒制工作中学习和可验证凭证钱包互操作。
 - 2026-06-30：新增第三十九波 6 个算法化准入、筛查与资格连续性域，覆盖信用与消费者报告、租房筛查、背景记录筛查、算法招聘、保险算法评分和公共福利自动资格系统。

@@ -661,6 +661,12 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `workplace-accommodation-return-to-work-continuity/` | 合理便利和复工路径决定疾病、伤害或残障后的能力变化是否能被任务、环境和节奏重新接住 |
 | `disability-income-work-capacity-benefit-continuity/` | 残障收入与工作能力福利决定长期功能受限时现金流、医疗覆盖、复工试探和未来选择权是否不断线 |
 | `family-caregiver-respite-work-continuity/` | 家庭照护者和喘息服务决定长期照护责任是否会耗尽照护者的时间、健康、收入和工作角色 |
+| `adult-day-services-supervision-transport-continuity/` | 成人日间服务决定白天监督、活动餐食、交通交接和照护者工作窗口是否有外部服务承载 |
+| `home-care-aide-personal-care-workforce-continuity/` | 居家照护人员和个人照护劳动力决定 ADL/IADL 支持能否持续排班、监督和交接 |
+| `respite-care-provider-capacity-scheduling-continuity/` | 喘息服务容量和排班决定照护者恢复时间是否真正可用，而不只是制度名词 |
+| `caregiver-training-skills-safety-continuity/` | 照护者训练和安全技能决定非正式照护能否降低转移、跌倒、感染、沟通和应急识别风险 |
+| `caregiver-health-burnout-screening-support-continuity/` | 照护者健康和倦怠支持决定长期照护系统的承载者是否会被睡眠、压力和心理负担耗尽 |
+| `home-care-task-coordination-care-plan-continuity/` | 居家照护任务协调决定家庭 care plan 是否能被分工、交接、提醒、补给和升级路径稳定执行 |
 | `vital-records-life-event-continuity/` | 生命事件记录决定出生、死亡、婚姻、离婚和亲属关系事实是否能成为跨系统可核验身份锚点 |
 | `name-change-identity-record-synchronization-continuity/` | 姓名变更与身份记录同步决定同一主体是否会因姓名差异在税务、医疗、金融、学校、雇佣和福利系统中被拆裂 |
 | `address-residency-mail-service-continuity/` | 地址、居住地与邮件服务决定通知、辖区、投票、学校、税务、福利、医疗和灾害救援是否能正确路由到主体 |
@@ -1171,6 +1177,7 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | WHO infodemic management / HHS health misinformation / NIST GenAI profile | 提示信息可信度、误导信息、AI 内容和信任链会改变主体判断与风险函数 |
 | WHO UHC / WHO Primary Health Care / Healthy People Access to Health Services | 提示医疗服务连续性、初级卫生保健、费用、质量、转诊和随访是可修复风险进入恢复路径的条件 |
 | NIA Caregiving / NIA Long-Term Care / WHO Ageing and Health | 提示长期照护、家庭照护、照护者负担和居家社区支持是长寿社会的核心连续性条件 |
+| ACL NFCSP / ACL Lifespan Respite / Eldercare Locator / Medicaid HCBS / NIA long-term care / CMS home health / AHRQ care coordination | 提示长期照护必须拆到日间服务、居家照护劳动力、喘息容量、照护者训练、照护者健康和任务协调这些执行层 |
 | WHO Housing and Health / CDC Healthy Places / Healthy People Quality of Housing | 提示住房质量、室内环境、无障碍、建成环境和住房稳定会影响健康、恢复和服务接入 |
 | HUD tenant rights / USA.gov rent help / LSC legal aid | 提示租赁关系、通知、押金、维修责任、居住权理解和法律援助入口是住房稳定从“有房”转成“可持续居住”的执行层 |
 | Treasury Emergency Rental Assistance / USA.gov rental assistance | 提示欠租、公共资金、申请摩擦、支付闭环和房东参与会决定短期资源冲击是否变成驱逐和长期排除 |

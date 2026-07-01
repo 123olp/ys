@@ -378,6 +378,12 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 能力变化必须能被合理便利和复工路径接住 | `workplace-accommodation-return-to-work-continuity/` | 合理便利、interactive process、modified duty、phased return、工作能力、辅助技术 | 工作系统只有完全可用/完全退出两种状态，能力变化被永久化为失业或失能 |
 | 残障收入与工作能力必须可连续治理 | `disability-income-work-capacity-benefit-continuity/` | SSDI、SSI、残障收入、工作 credits、工作能力、复工激励、福利悬崖 | 长期功能受限后现金流、医疗覆盖、复工试探和未来选择权同时断裂 |
 | 家庭照护者不能被照护责任耗尽退出系统 | `family-caregiver-respite-work-continuity/` | 家庭照护者支持、respite care、照护培训、工作灵活性、照护者健康、负担 | 家庭照护被当作无限免费资源，照护者失去健康、收入、睡眠、社交和职业角色 |
+| 成人日间服务必须提供白天外部支持窗口 | `adult-day-services-supervision-transport-continuity/` | 成人日间服务、日间监督、活动餐食、交通接送、照护者工作窗口 | 白天照护无人接住会把失能主体安全、社交、营养和照护者工作角色同时压垮 |
+| 居家照护人员必须成为可调度劳动力 | `home-care-aide-personal-care-workforce-continuity/` | home care aides、personal care、ADL/IADL 支持、排班、监督、工资、劳动力稳定 | 家庭无法长期承担全部个人照护任务，人员短缺和排班失败会直接破坏居家生活 |
+| 喘息服务必须从名义支持变成可用容量 | `respite-care-provider-capacity-scheduling-continuity/` | respite provider capacity、短期替代照护、预约、等待名单、服务中断、照护者恢复 | 没有可用时段和替代责任时，喘息只是一项名义服务，照护者无法恢复 |
+| 照护者技能必须降低家庭照护伤害 | `caregiver-training-skills-safety-continuity/` | 照护训练、转移移动、用药沟通、跌倒预防、感染控制、行为沟通、应急识别 | 非正式照护缺少任务技能会把好意转成跌倒、感染、用药沟通失败和行为冲突 |
+| 照护者健康必须成为系统承载变量 | `caregiver-health-burnout-screening-support-continuity/` | 照护者压力、睡眠、抑郁焦虑、burnout、筛查、同伴支持、危机连接 | 照护者被当作无限资源会先失眠、抑郁、倦怠和退出，长期照护随之崩溃 |
+| 居家照护任务必须可分配可交接 | `home-care-task-coordination-care-plan-continuity/` | 居家任务清单、care plan、角色分工、交接、提醒、供应、家庭沟通、升级路径 | 照护任务靠记忆和临时沟通维持时，遗漏、重复、冲突和无升级路径会持续制造风险 |
 | 生命事件必须成为可核验身份锚点 | `vital-records-life-event-continuity/` | 出生、死亡、婚姻、离婚、认证副本、记录更正、生命统计 | 生命事件记录缺失、错误或不可访问让身份、亲属关系、服务资格和权益交接断线 |
 | 姓名变化必须跨系统同步 | `name-change-identity-record-synchronization-continuity/` | 姓名变更、SSA、护照、州证件、税务、雇主、金融、医疗、福利记录 | 同一主体在不同系统中被拆成多个身份，导致资格延迟、支付失败、旅行受阻或服务拒绝 |
 | 地址和邮件必须能路由服务 | `address-residency-mail-service-continuity/` | 地址变更、居住地、邮件转递、关键通知、辖区、服务路由 | 迁居、无固定住址、邮件丢失或地址不同步使通知、资格、投票、税务、福利和救援断线 |
@@ -1165,6 +1171,12 @@ risk-engineering
   -> workplace-accommodation-return-to-work-continuity
   -> disability-income-work-capacity-benefit-continuity
   -> family-caregiver-respite-work-continuity
+  -> adult-day-services-supervision-transport-continuity
+  -> home-care-aide-personal-care-workforce-continuity
+  -> respite-care-provider-capacity-scheduling-continuity
+  -> caregiver-training-skills-safety-continuity
+  -> caregiver-health-burnout-screening-support-continuity
+  -> home-care-task-coordination-care-plan-continuity
   -> vital-records-life-event-continuity
   -> name-change-identity-record-synchronization-continuity
   -> address-residency-mail-service-continuity

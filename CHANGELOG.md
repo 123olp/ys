@@ -4,6 +4,7 @@ All notable repository structure changes are recorded here.
 
 ## 2026-07-01
 
+- Added the one-hundred-fifteenth wave of long-term-care execution-continuity domains, covering adult day services and supervision transport, home-care aide and personal-care workforce, respite provider capacity and scheduling, caregiver training and safety skills, caregiver health and burnout support, and home-care task coordination / care-plan continuity.
 - Clarified the transcendental A-K trunk ledger in `docs/reference/transcendental-domain-index.md`, proving the stable directories, documents, and index entry points for cellular reprogramming, regenerative medicine, cancer control, immune maintenance, brain preservation, memory editing, cognitive augmentation, future waiting, disembodied CNS, biostasis, and resource/social infrastructure.
 - Added one-hundred-thirteenth wave neighborhood public-space maintenance and local-service-request continuity domains for 311 service requests, streetlight outages, sidewalk/curb ramp maintenance, snow/ice sidewalk access, street-tree hazards/shade, and storm-drain/catch-basin local flooding.
 - Added the one-hundred-eleventh wave of household physical-order, object-access, and execution-friction domains, covering home clutter/pathway trip hazards, household cords/cables trip and entanglement, shelving/cabinet storage stability, household ladders/step stools/reach tasks, home-office workstation ergonomics, and toy small-parts choking/ingestion safety.
