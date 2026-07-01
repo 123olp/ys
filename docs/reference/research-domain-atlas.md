@@ -599,6 +599,16 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 金融文件把灾害损失转译为恢复流程 | `emergency-financial-document-cash-readiness-continuity/` | 身份文件、保单、现金、账户、资产记录 | 缺少凭据、现金和材料会让理赔、购药、入住和救济申请延迟或失败 |
 | 功能需求准备暴露通用方案的隐含能力假设 | `disability-access-functional-needs-personal-preparedness-continuity/` | 无障碍通信、辅助技术、照护、交通、服务动物 | 通用应急准备若默认主体能听见、看见、行走和自管，就会制造排除 |
 | 老年灾害风险是慢病、行动和照护依赖叠加 | `older-adult-caregiver-disaster-preparedness-continuity/` | 老年人、照护者、药物、助行、独居、温控 | 晚年主体更容易被停电、热冷暴露、失联、跌倒和服务中断放大风险 |
+| 灾后个人援助把损失转为恢复资源 | `disaster-individual-assistance-benefits-navigation-continuity/` | 个人援助、申请、材料补正、申诉、转介 | 灾害后的资源恢复取决于损失能否进入可申请、可审核、可兑现的制度链 |
+| 临时住房决定流离状态能否收敛 | `disaster-temporary-housing-displacement-recovery-continuity/` | 临时住房、租金援助、过渡安置、修复、迁移 | 住房不稳会吞噬睡眠、卫生、用药、通勤、照护和工作学习连续性 |
+| 恢复中心是多机构灾后服务界面 | `disaster-recovery-center-service-access-continuity/` | DRC、移动服务点、多机构窗口、补正、转介 | 灾后服务碎片化会提高认知和交通成本，恢复中心把制度入口重新合并 |
+| 灾后个案管理把救助变成长期恢复 | `disaster-case-management-long-term-recovery-continuity/` | 个案管理、未满足需求、恢复计划、转介、跟踪 | 灾害恢复时间长于一次性救助，持续计划和转介决定长期恢复轨迹 |
+| 灾害收入中断改变恢复期资源约束 | `disaster-unemployment-income-disruption-continuity/` | DUA、工作中断、自雇收入、现金流、申请窗口 | 收入断裂会快速传导到住房、食物、医疗、交通、债务和照护风险 |
+| 灾害法律援助保护恢复权利接口 | `disaster-legal-aid-rights-claims-continuity/` | 灾害法律服务、租赁、保险、文件替换、欺诈 | 权利、合同和文件问题会卡住住房、理赔、福利和身份恢复 |
+| 灾后废弃物决定空间能否重新行动 | `disaster-debris-waste-sanitation-cleanup-continuity/` | 碎片废弃物、污水、危险暴露、清理协调 | 道路、住房、饮水、空气和公共卫生恢复依赖废弃物与卫生清理 |
+| 洪水后湿气会延长不可居住状态 | `post-flood-mold-moisture-indoor-recovery-continuity/` | 霉菌、湿气、室内空气、材料干燥、住房可返回 | 水退之后，霉菌和湿气继续影响呼吸健康、睡眠、迁移和修复 |
+| 灾害行为健康保护判断和恢复能力 | `disaster-behavioral-health-distress-recovery-continuity/` | 灾害痛苦、创伤压力、危机咨询、睡眠、社会支持 | 恐惧、失去、失眠和压力会吞噬注意力、决策、照护和长期行动 |
+| 志愿捐赠管理把社会善意转成资源 | `disaster-volunteer-donations-management-continuity/` | 志愿者、捐赠、分发、物流、欺诈治理 | 未协调的善意会变成仓储、交通、安全和分发负担，协调决定支持效率 |
 | 睡眠呼吸障碍可避免夜间恢复失败 | `sleep-disordered-breathing-screening-treatment-continuity/` | 睡眠呼吸障碍、夜间低氧、诊断转介、治疗坚持、设备可及 | 夜间低氧、觉醒碎片、日间嗜睡和心血管负荷持续消耗有效时间、判断和恢复能力 |
 | 慢性失眠可通过可及治疗保护恢复 | `chronic-insomnia-cbti-access-continuity/` | 慢性失眠、CBT-I 可及、行为治疗、药物风险、复发预防 | 恢复失败、用药风险、情绪波动和日间功能损害降低单位时间行动质量 |
 | 性健康服务可保护关系和公共卫生屏障 | `sexual-health-sti-prevention-continuity/` | STI 预防、检测、治疗转介、伴侣服务、隐私、污名 | 无症状感染、污名、医疗回避和伴侣服务断裂改变生殖健康、关系安全和传播风险 |
@@ -1344,6 +1354,16 @@ risk-engineering
   -> emergency-financial-document-cash-readiness-continuity
   -> disability-access-functional-needs-personal-preparedness-continuity
   -> older-adult-caregiver-disaster-preparedness-continuity
+  -> disaster-individual-assistance-benefits-navigation-continuity
+  -> disaster-temporary-housing-displacement-recovery-continuity
+  -> disaster-recovery-center-service-access-continuity
+  -> disaster-case-management-long-term-recovery-continuity
+  -> disaster-unemployment-income-disruption-continuity
+  -> disaster-legal-aid-rights-claims-continuity
+  -> disaster-debris-waste-sanitation-cleanup-continuity
+  -> post-flood-mold-moisture-indoor-recovery-continuity
+  -> disaster-behavioral-health-distress-recovery-continuity
+  -> disaster-volunteer-donations-management-continuity
   -> sleep-disordered-breathing-screening-treatment-continuity
   -> chronic-insomnia-cbti-access-continuity
   -> sexual-health-sti-prevention-continuity

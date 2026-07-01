@@ -712,6 +712,16 @@
 - `emergency-financial-document-cash-readiness-continuity/`：应急金融文件、现金与恢复资料连续性，整理身份凭据、保单、账户、现金、资产记录和灾后申请。
 - `disability-access-functional-needs-personal-preparedness-continuity/`：残障、无障碍与功能需求个人准备连续性，整理通信、辅助技术、照护、交通、服务动物和支持网络。
 - `older-adult-caregiver-disaster-preparedness-continuity/`：老年人与照护者灾害准备连续性，整理慢病、药物、助行、照护者、独居、交通和温控风险。
+- `disaster-individual-assistance-benefits-navigation-continuity/`：灾后个人援助与福利导航连续性，整理援助申请、材料补正、申诉、重复给付和转介变量。
+- `disaster-temporary-housing-displacement-recovery-continuity/`：灾后临时住房、流离与恢复连续性，整理临时住房、租金援助、修复、通勤和长期迁移变量。
+- `disaster-recovery-center-service-access-continuity/`：灾后恢复中心与服务可达连续性，整理 DRC、移动服务点、多机构窗口、无障碍和转介变量。
+- `disaster-case-management-long-term-recovery-continuity/`：灾后个案管理与长期恢复连续性，整理未满足需求、恢复计划、转介、跟踪和退出条件。
+- `disaster-unemployment-income-disruption-continuity/`：灾害失业、收入中断与现金流连续性，整理 DUA、工作中断、自雇收入、申请窗口和资源约束。
+- `disaster-legal-aid-rights-claims-continuity/`：灾害法律援助、权利与主张连续性，整理租赁、保险、文件替换、消费者欺诈和福利权利。
+- `disaster-debris-waste-sanitation-cleanup-continuity/`：灾后废弃物、卫生与清理连续性，整理碎片、危险废物、污水、公共卫生和清理协调。
+- `post-flood-mold-moisture-indoor-recovery-continuity/`：洪水后霉菌、湿气与室内恢复连续性，整理室内湿气、霉菌、空气质量、材料干燥和住房可返回性。
+- `disaster-behavioral-health-distress-recovery-continuity/`：灾害行为健康、痛苦与恢复连续性，整理灾害痛苦、创伤压力、危机咨询、睡眠和社会支持。
+- `disaster-volunteer-donations-management-continuity/`：灾害志愿、捐赠与协调管理连续性，整理志愿者、物资捐赠、资金捐赠、分发、欺诈和协调变量。
 - `sleep-disordered-breathing-screening-treatment-continuity/`：睡眠呼吸障碍筛查与治疗连续性，整理夜间低氧、诊断转介、治疗坚持、设备可及和日间功能风险。
 - `chronic-insomnia-cbti-access-continuity/`：慢性失眠与 CBT-I 可及连续性，整理恢复失败、行为治疗可及、药物风险、日间功能和复发预防。
 - `sexual-health-sti-prevention-continuity/`：性健康与 STI 预防连续性，整理检测、治疗转介、伴侣服务、隐私、污名和公共卫生屏障。

@@ -1,0 +1,44 @@
+# Disaster Behavioral Health Distress Recovery Continuity
+
+`disaster-behavioral-health-distress-recovery-continuity/` 研究灾害后的心理痛苦、创伤压力、哀伤、睡眠破坏、照护者负担、热线和危机咨询如何影响主体恢复。
+
+> 核心问题：灾害恢复不是只有房屋和金钱；恐惧、失去、失眠、孤立和持续压力会吞噬判断、行动、学习和照护能力。
+
+## 先验位置
+
+```text
+有效永生 / 主体持续性最大化
+  -> 主体持续行动依赖注意力、睡眠、情绪调节、社会连接和恢复能力
+  -> 灾害造成创伤、失去、持续压力、家庭负担和社区断裂
+  -> 心理健康支持决定主体能否重新组织行动和长期恢复
+  -> 因此灾害行为健康是主体恢复连续性的认知情绪域
+```
+
+## 关注对象
+
+- SAMHSA Disaster Distress Helpline、FEMA/SAMHSA Crisis Counseling Assistance and Training Program、Psychological First Aid 和地方灾害行为健康服务。
+- 心理痛苦、创伤压力、哀伤、睡眠、物质使用风险、儿童家庭、照护者、热线可达、语言服务和危机转介。
+- 与 `mental-health-crisis-continuity/` 的边界：该域关注一般危机；本域关注灾害恢复语境。
+
+## Human Infra 模型链路
+
+```text
+灾害行为健康支持 T
+  -> 改变痛苦识别、热线可达、危机咨询、睡眠恢复和社会支持变量 X
+  -> 改变主体灾后认知情绪恢复状态 S
+  -> 改变自伤、物质使用、照护崩溃、工作学习中断和长期 PTSD 风险 λ(t)
+  -> 影响有效时间、判断质量、恢复能力和未来选择权
+```
+
+## 非目标
+
+- 不提供心理诊断、治疗方案、自杀风险评估、危机干预替代、药物建议或个案咨询。
+- 不收集创伤经历、精神健康史、热线记录、未成年人信息、家庭暴力或自伤细节。
+- 若存在即时危险，应使用当地紧急服务或官方危机热线；本域只做研究边界和资源谱系。
+
+## Source Signals
+
+- SAMHSA Disaster Distress Helpline: https://www.samhsa.gov/find-help/disaster-distress-helpline
+- SAMHSA DTAC: https://www.samhsa.gov/dtac
+- FEMA Crisis Counseling Assistance and Training Program: https://www.fema.gov/assistance/individual/crisis-counseling
+- Psychological First Aid: https://www.ptsd.va.gov/professional/treat/type/psych_firstaid_manual.asp

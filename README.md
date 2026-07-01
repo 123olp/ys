@@ -345,6 +345,16 @@ flowchart TD
     H --> PSDA[public-service-design-accessibility<br/>公共服务设计 / 可达性]
     H --> EAC[emergency-alerts-communications<br/>应急预警 / 通信]
     H --> DRRC[disaster-recovery-relief-continuity<br/>灾后恢复 / 救济连续性]
+    DRRC --> DIABN[disaster-individual-assistance<br/>个人援助 / 申请导航]
+    DRRC --> DTHDR[disaster-temporary-housing<br/>临时住房 / 流离恢复]
+    DRRC --> DRCSA[disaster-recovery-center<br/>恢复中心 / 服务入口]
+    DRRC --> DCMR[disaster-case-management<br/>个案管理 / 长期恢复]
+    DRRC --> DUID[disaster-unemployment-income<br/>灾害失业 / 收入中断]
+    DRRC --> DLARC[disaster-legal-aid<br/>法律援助 / 权利主张]
+    DRRC --> DDWSC[disaster-debris-waste<br/>废弃物 / 卫生清理]
+    DRRC --> PFMIR[post-flood-mold-moisture<br/>洪水霉菌 / 室内恢复]
+    DRRC --> DBHDR[disaster-behavioral-health<br/>灾害心理健康 / 压力恢复]
+    DRRC --> DVDM[disaster-volunteer-donations<br/>志愿捐赠 / 协调管理]
     H --> FIPS[financial-inclusion-payment-systems<br/>金融包容 / 支付系统]
     H --> WES[workforce-employment-services<br/>就业服务 / 劳动力发展]
     H --> HEPR[household-emergency-preparedness-resilience<br/>家庭应急准备 / 韧性]
@@ -1346,6 +1356,16 @@ flowchart TD
 | [Emergency Financial Document Cash Readiness Continuity](domains/emergency-financial-document-cash-readiness-continuity/README.md) | 应急文件、现金、账户、保单、身份凭据和灾后申请材料 | 把灾后资源恢复建模为身份、资产、保险、现金和申请资料的制度接口 | 不提供个人财务、现金、保险、税务、法律、理赔、文件保存或身份恢复建议 |
 | [Disability Access Functional Needs Personal Preparedness Continuity](domains/disability-access-functional-needs-personal-preparedness-continuity/README.md) | 残障、辅助技术、功能需求、照护、交通、服务动物和支持网络 | 把通用准备方案中的隐含身体能力假设显式转化为公平应急条件 | 不提供残障评估、照护计划、设备选择、交通安排、福利申请、法律或登记建议 |
 | [Older Adult Caregiver Disaster Preparedness Continuity](domains/older-adult-caregiver-disaster-preparedness-continuity/README.md) | 老年人、照护者、慢病、药物、助行、交通、独居和温控风险 | 把晚年灾害风险建模为慢病、行动、认知、照护依赖和社会连接的叠加 | 不提供老年照护计划、撤离、用药、医疗、福利、机构选择、法律代理或家庭安全建议 |
+| [Disaster Individual Assistance Benefits Navigation Continuity](domains/disaster-individual-assistance-benefits-navigation-continuity/README.md) | FEMA Individual Assistance、DisasterAssistance.gov、材料补正、申诉和转介 | 把灾后损失转化为可申请、可审核、可补正、可兑现的恢复资源链 | 不提供个案救助承诺、资格判断、申请代办、欺诈规避、文件伪造或法律/财务建议 |
+| [Disaster Temporary Housing Displacement Recovery Continuity](domains/disaster-temporary-housing-displacement-recovery-continuity/README.md) | 临时住房、租金援助、过渡安置、住房修复和长期迁移 | 把睡眠、卫生、药物保存、通勤、家庭照护和居住稳定纳入灾后恢复模型 | 不提供房源推荐、资格判断、租约法律建议、保险理赔建议或个案安置指导 |
+| [Disaster Recovery Center Service Access Continuity](domains/disaster-recovery-center-service-access-continuity/README.md) | 灾后恢复中心、移动 DRC、多机构服务点、补正和转介 | 把碎片化灾后服务压缩成可进入、可理解、可转介的恢复界面 | 不提供实时 DRC 位置、排队状态、个案资格、文件审核或现场指挥 |
+| [Disaster Case Management Long Term Recovery Continuity](domains/disaster-case-management-long-term-recovery-continuity/README.md) | 灾后个案管理、长期恢复组织、未满足需求和服务转介 | 把一次性救助转化为住房、健康、收入、文件、交通和照护的长期恢复路线 | 不提供个案管理服务、资源承诺、资格判断、社工替代或福利建议 |
+| [Disaster Unemployment Income Disruption Continuity](domains/disaster-unemployment-income-disruption-continuity/README.md) | 灾害失业援助、工作中断、自雇收入中断、申请窗口和现金流 | 把灾害导致的收入断裂建模为住房、食物、医疗、交通和照护风险的上游变量 | 不提供失业资格判断、申请代办、税务建议、劳动法律建议或欺诈规避 |
+| [Disaster Legal Aid Rights Claims Continuity](domains/disaster-legal-aid-rights-claims-continuity/README.md) | 灾害法律服务、住房租赁、保险、文件替换、消费者欺诈和福利权利 | 把灾后权利冲突转化为可解释、可转介、可处理的恢复接口 | 不提供法律意见、诉讼策略、保险理赔策略、租约解释或律师替代服务 |
+| [Disaster Debris Waste Sanitation Cleanup Continuity](domains/disaster-debris-waste-sanitation-cleanup-continuity/README.md) | 灾后碎片、废弃物、危险暴露、污水、公共卫生和清理协调 | 把道路、住房、饮水、空气、感染和修复瓶颈纳入灾后恢复环境模型 | 不提供个人清理操作、危险废物处理、结构安全判断、承包商建议或现场防护指导 |
+| [Post Flood Mold Moisture Indoor Recovery Continuity](domains/post-flood-mold-moisture-indoor-recovery-continuity/README.md) | 洪水后湿气、霉菌、室内空气、材料干燥和住房可返回性 | 把洪水后的居住环境恢复建模为呼吸安全、睡眠、迁移和健康负担变量 | 不提供清理步骤、霉菌检测解释、承包商推荐、结构安全判断、保险或医疗建议 |
+| [Disaster Behavioral Health Distress Recovery Continuity](domains/disaster-behavioral-health-distress-recovery-continuity/README.md) | 灾害心理痛苦、创伤压力、危机咨询、睡眠和社会支持 | 把灾后认知情绪恢复纳入判断、行动、照护、工作学习和长期恢复能力 | 不提供心理诊断、治疗方案、自杀风险评估、危机干预替代或个案咨询 |
+| [Disaster Volunteer Donations Management Continuity](domains/disaster-volunteer-donations-management-continuity/README.md) | 志愿者、实物捐赠、资金捐赠、物资分发、非营利协调和欺诈治理 | 把社会善意转化为可分发、可追踪、可持续的恢复资源 | 不发布实时物资需求、志愿派遣、捐赠收款、组织背书或现场调度 |
 | [Personal Safety Violence Prevention](domains/personal-safety-violence-prevention/README.md) | 亲密伴侣暴力、性暴力、跟踪、犯罪伤害、求助入口和受害者支持 | 人身安全、创伤支持、法律保护、住房安全和恢复连续性 | 不提供自卫战术、武器、报复、跟踪、监控、定位或危险对抗建议 |
 | [Domestic Violence Coercive Control Safety Continuity](domains/domestic-violence-coercive-control-safety-continuity/README.md) | 亲密伴侣暴力、家庭暴力、胁迫控制、经济虐待、技术辅助控制和服务转介 | 把关系内部暴力从隐性控制转化为可求助、可保密、可恢复的安全基础设施 | 不提供个案安全计划、逃离路线、庇护所定位、法律策略、监控、报复或危险对抗建议 |
 | [Sexual Assault Forensic Exam Advocacy Continuity](domains/sexual-assault-forensic-exam-advocacy-continuity/README.md) | 性暴力、医疗 forensic exam、SANE/SAFE、advocacy、报告选项、保密和创伤支持 | 把性暴力后的身体照护、证据时效、权利告知和心理恢复纳入连续性接口 | 不提供医疗建议、证据策略、报警策略、诉讼策略、校园投诉策略或个案安全计划 |
@@ -2196,5 +2216,6 @@ flowchart LR
 - 2026-07-01：新增第九十六波 10 个居家伤害预防与家庭安全执行连续性域，覆盖浴室洗澡如厕转移、楼梯台阶扶手门槛、夜间路径照明、卧室床转移夹陷、烟雾报警家庭逃生、一氧化碳报警燃烧设备、家具/电视倾倒锚固、家庭毒物储存儿童防护包装、窗饰拉绳勒颈和热水烫伤预防。
 - 2026-07-01：新增第九十七波 10 个儿童、运动与娱乐伤害预防执行连续性域，覆盖溺水水域安全、泳池/水疗池屏障与排水夹陷、船艇救生衣、儿童乘员约束、轮式运动头部伤害、游乐场表面设备、运动脑震荡返学返赛、婴儿安全睡眠、枪支安全储存和 ATV/OHV 伤害预防。
 - 2026-07-01：新增第九十八波 10 个家庭与个人应急准备执行连续性域，覆盖应急物资包、家庭应急通信团聚、撤离交通避难、就地避险清洁空气房、备用电与发电机安全、应急食水、温控药品/医疗设备停电、应急金融文件现金、残障功能需求个人准备和老年照护者灾害准备。
+- 2026-07-01：新增第九十九波 10 个灾后恢复执行连续性域，覆盖个人援助导航、临时住房、恢复中心、长期个案管理、灾害失业收入中断、灾害法律援助、废弃物卫生清理、洪水后霉菌湿气、灾害行为健康和志愿捐赠管理。
 
 完整记录见 [CHANGELOG.md](CHANGELOG.md)。

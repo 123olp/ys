@@ -622,6 +622,24 @@ Human Infra 不能被设计成更精密的压榨系统。
 - 产出规避官方命令、危险撤离、危险供电、危险化学/空气处置、灾害恐慌营销、资质/身份/理赔材料伪造、福利规避、设备篡改或替代专业人员现场判断的内容。
 - 替代应急管理、消防、电气、医疗、药师、公共卫生、社工、残障服务、老年照护、法律、保险、财务或救援专业人员。
 
+## 灾后恢复执行连续性边界
+
+`disaster-individual-assistance-benefits-navigation-continuity`、`disaster-temporary-housing-displacement-recovery-continuity`、`disaster-recovery-center-service-access-continuity`、`disaster-case-management-long-term-recovery-continuity`、`disaster-unemployment-income-disruption-continuity`、`disaster-legal-aid-rights-claims-continuity`、`disaster-debris-waste-sanitation-cleanup-continuity`、`post-flood-mold-moisture-indoor-recovery-continuity`、`disaster-behavioral-health-distress-recovery-continuity` 和 `disaster-volunteer-donations-management-continuity` 关注灾后恢复如何通过援助、住房、服务中心、长期个案管理、收入、法律、废弃物清理、室内环境、心理恢复和社会支持改变主体持续性，不是个案救助、法律意见、医疗诊断、现场清理、志愿派遣、捐赠收款或灾害指挥入口。
+
+可以做：
+
+- 整理 FEMA、DisasterAssistance.gov、SBA、DOL、LSC、EPA、CDC、SAMHSA、VOAD 和 Ready.gov 等公开资料。
+- 比较灾后个人援助、临时住房、恢复中心、个案管理、灾害失业、法律援助、废弃物卫生清理、洪水后霉菌湿气、灾害行为健康和志愿捐赠管理如何影响恢复速度、资源接入、环境安全、心理恢复和长期选择权。
+- 记录灾后恢复执行层的制度入口、变量、证据边界、隐私边界、失败模式、禁止用途和不确定性。
+
+不能做：
+
+- 提供个案救助承诺、资格判断、申请代办、申诉策略、房源推荐、租约法律建议、保险理赔、失业申请、税务、法律意见、文件伪造、补助最大化、清理操作、霉菌检测、心理诊断、危机干预替代、志愿派遣、捐赠收款、实时物资需求或现场调度建议。
+- 根据身份、住址、灾损、家庭结构、收入、雇主、保险、租约、法律案件、健康状态、创伤经历、志愿者身份、捐赠记录、库存、路线、恢复中心位置或现场照片做个体恢复评估。
+- 收集、存储或推断可识别灾民、志愿者、捐赠者、住址、灾损、收入、法律案件、保险、健康、创伤、未成年人、家庭安全、库存、路线、安保或其他敏感数据。
+- 产出伪造材料、欺诈救助、骗领服务、保险/福利规避、危险清理、危险废物处置、危机误导、募捐欺诈、安保绕过、现场指挥替代或利用灾害脆弱人群的内容。
+- 替代 FEMA、州/地方应急管理、SBA、DOL、HUD、法律援助、法院、保险机构、EPA、CDC、公共卫生、承包商、心理健康专业人员、VOAD、红十字、非营利组织或社区救援服务。
+
 ## 器官/阶段特异癌症连续性边界
 
 `breast-cancer-screening-treatment-survivorship-continuity`、`colorectal-cancer-screening-treatment-continuity`、`lung-cancer-screening-treatment-continuity`、`prostate-cancer-screening-treatment-continuity`、`cervical-cancer-hpv-prevention-screening-continuity`、`ovarian-cancer-symptom-detection-treatment-continuity`、`pancreatic-cancer-high-risk-detection-treatment-continuity`、`liver-cancer-cirrhosis-surveillance-treatment-continuity`、`childhood-cancer-treatment-survivorship-continuity` 和 `cancer-survivorship-late-effects-continuity` 关注器官/阶段特异癌症如何通过筛查路径、异常闭环、治疗负担、复发/晚期效应、家庭照护、工作保险和生活质量改变主体持续性，不是个人癌症诊断、治疗、筛查、遗传咨询、随访或预后建议入口。

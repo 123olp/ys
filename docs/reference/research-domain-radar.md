@@ -379,6 +379,16 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `emergency-financial-document-cash-readiness-continuity/` | 应急金融文件、现金与恢复资料连续性决定灾后损失、身份、资产和保险是否能转化为制度可处理流程 |
 | `disability-access-functional-needs-personal-preparedness-continuity/` | 残障、无障碍与功能需求个人准备连续性决定通用应急准备是否适配真实身体、感官、认知、通信和照护条件 |
 | `older-adult-caregiver-disaster-preparedness-continuity/` | 老年人与照护者灾害准备连续性决定慢病、药物、行动、认知、照护依赖和社会连接是否被纳入灾害准备 |
+| `disaster-individual-assistance-benefits-navigation-continuity/` | 灾后个人援助与福利导航连续性决定灾害损失是否能进入可申请、可审核、可补正、可兑现的恢复资源链 |
+| `disaster-temporary-housing-displacement-recovery-continuity/` | 灾后临时住房、流离与恢复连续性决定睡眠、卫生、用药、通勤、照护和工作学习是否能从避险状态回到行动状态 |
+| `disaster-recovery-center-service-access-continuity/` | 灾后恢复中心与服务可达连续性决定多机构恢复服务是否能被主体实际进入、理解、补正和转介 |
+| `disaster-case-management-long-term-recovery-continuity/` | 灾后个案管理与长期恢复连续性决定一次性救助能否转化为未满足需求跟踪、恢复计划和长期服务接续 |
+| `disaster-unemployment-income-disruption-continuity/` | 灾害失业、收入中断与现金流连续性决定灾害后的工作和收入断裂是否继续放大住房、食物、医疗和债务风险 |
+| `disaster-legal-aid-rights-claims-continuity/` | 灾害法律援助、权利与主张连续性决定租约、保险、文件、消费者欺诈和福利权利是否阻塞恢复路径 |
+| `disaster-debris-waste-sanitation-cleanup-continuity/` | 灾后废弃物、卫生与清理连续性决定道路、住房、饮水、空气、感染和公共空间是否重新可行动 |
+| `post-flood-mold-moisture-indoor-recovery-continuity/` | 洪水后霉菌、湿气与室内恢复连续性决定水退之后的住房可返回性、呼吸健康和长期迁移风险 |
+| `disaster-behavioral-health-distress-recovery-continuity/` | 灾害行为健康、痛苦与恢复连续性决定创伤压力、失眠、哀伤和社会支持是否继续吞噬判断与行动能力 |
+| `disaster-volunteer-donations-management-continuity/` | 灾害志愿、捐赠与协调管理连续性决定社会善意是否能转化为可分发、可追踪、可持续的恢复资源 |
 | `sleep-disordered-breathing-screening-treatment-continuity/` | 睡眠呼吸障碍筛查与治疗连续性决定夜间低氧、觉醒碎片、日间嗜睡和心血管负荷是否进入可恢复路径 |
 | `chronic-insomnia-cbti-access-continuity/` | 慢性失眠与 CBT-I 可及连续性决定睡眠恢复失败是否持续消耗注意力、情绪、学习、工作和有效时间 |
 | `sexual-health-sti-prevention-continuity/` | 性健康与 STI 预防连续性决定检测、治疗转介、伴侣服务、隐私和污名治理是否保护身体完整性和关系安全 |
