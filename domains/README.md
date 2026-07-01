@@ -61,6 +61,12 @@
 - `home-dialysis-supply-self-management-continuity/`：家庭血透、腹膜透析、耗材配送、电水依赖、训练和照护者负担。
 - `kidney-transplant-immunosuppression-graft-continuity/`：肾移植、移植物功能、免疫抑制、排斥、感染和药物供应。
 - `reproductive-fertility-continuity/`：生殖与生育连续性，整理生育力、生殖衰老、配子质量、生殖自主性和未来选择权。
+- `polycystic-ovary-syndrome-metabolic-reproductive-continuity/`：PCOS、代谢与生殖连续性，整理排卵不规律、高雄激素表现、代谢风险、生殖规划和污名。
+- `endometriosis-pelvic-pain-fertility-continuity/`：子宫内膜异位症、盆腔痛与生育连续性，整理慢性盆腔痛、疲劳、诊断延迟、生育力和参与受限。
+- `uterine-fibroids-bleeding-anemia-fertility-continuity/`：子宫肌瘤、出血贫血与生育连续性，整理重度出血、贫血、疼痛、压迫和治疗负担。
+- `male-factor-infertility-sperm-health-continuity/`：男性因素不育与精子健康连续性，整理精子健康、内分泌、感染/炎症、暴露、隐私和伴侣压力。
+- `erectile-dysfunction-vascular-sexual-function-continuity/`：ED、血管信号与性功能连续性，整理性功能、血管代谢信号、药物背景、隐私和关系负担。
+- `vulvovaginal-pain-infection-sexual-function-continuity/`：外阴阴道疼痛、感染与性功能连续性，整理外阴痛、复发症状、性交痛、污名、隐私和关系功能。
 - `assisted-reproductive-technology-ivf-cycle-continuity/`：ART 与 IVF 周期连续性，整理取卵、受精、胚胎培养、移植、取消、费用和时间窗口。
 - `art-clinic-success-rate-quality-reporting-continuity/`：ART 诊所成功率与质量报告连续性，整理 CDC NASS、报告口径、分母定义、数据校验和解释边界。
 - `fertility-preservation-gamete-embryo-cryostorage-continuity/`：生育保存、配子和胚胎冷冻连续性，整理样本身份、储存同意、费用续缴、处置授权和未来使用权。

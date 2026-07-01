@@ -4,6 +4,7 @@ All notable repository structure changes are recorded here.
 
 ## 2026-07-01
 
+- Added the one-hundred-twenty-sixth wave of reproductive endocrine, pelvic pain, infertility, and sexual-function continuity domains, covering PCOS, endometriosis, uterine fibroids, male-factor infertility, erectile dysfunction, and vulvovaginal pain/infection/function continuity.
 - Added the one-hundred-twenty-fourth wave of reproductive technology governance continuity domains, covering ART/IVF cycles, ART clinic success-rate reporting, fertility preservation cryostorage, reproductive tissue donor screening and traceability, PGT embryo-selection governance, and third-party reproduction legal/ethics boundaries.
 - Added the one-hundred-twenty-third wave of Food is Medicine / medical nutrition support execution-continuity domains, covering nutrition insecurity screening/referral, medically tailored meals, medically tailored groceries, produce prescriptions, food pharmacy / clinic pantry integration, and medical nutrition therapy access.
 - Added the one-hundred-twenty-second wave of child nutrition program execution-continuity domains, covering Summer EBT / SUN Bucks school-break food continuity, Summer Food Service Program site access, CACFP child/adult care food program continuity, afterschool snack/supper meals, special diet/allergy school meal accommodations, and school meal debt/unpaid-balance stigma.

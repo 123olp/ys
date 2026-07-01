@@ -2376,6 +2376,24 @@ domains/
 ├── reproductive-fertility-continuity/
 │   ├── AGENTS.md
 │   └── README.md
+├── polycystic-ovary-syndrome-metabolic-reproductive-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── endometriosis-pelvic-pain-fertility-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── uterine-fibroids-bleeding-anemia-fertility-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── male-factor-infertility-sperm-health-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── erectile-dysfunction-vascular-sexual-function-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── vulvovaginal-pain-infection-sexual-function-continuity/
+│   ├── AGENTS.md
+│   └── README.md
 ├── assisted-reproductive-technology-ivf-cycle-continuity/
 │   ├── AGENTS.md
 │   └── README.md
@@ -2559,7 +2577,7 @@ domains/
 - `respiratory-oxygenation/`、`blood-oxygen-hemostasis/`、`endocrine-hormonal-regulation/` 和 `lymphatic-glymphatic-clearance/` 负责氧合、血液运输、激素协调和清除网络这些跨器官稳态条件。
 - `gastrointestinal-barrier-absorption/`、`fluid-electrolyte-acid-base-homeostasis/` 和 `thermal-homeostasis-resilience/` 负责营养进入、内环境化学和体温边界这些基础稳态条件。
 - `nutrition-metabolic-health/`、`physical-activity-mobility/`、`cardiovascular-resilience/` 和 `musculoskeletal-integrity/` 负责营养、行动、循环和承载结构这些身体运行条件。
-- `urogenital-continuity/` 负责尿控、泌尿生殖尊严和上位排泄/性功能边界；`urinary-tract-infection-pyelonephritis-urosepsis-continuity/`、`catheter-associated-uti-device-infection-continuity/`、`urinary-retention-bladder-emptying-continuity/`、`overactive-bladder-nocturia-sleep-continuity/`、`kidney-stone-obstruction-renal-colic-continuity/`、`benign-prostatic-hyperplasia-luts-continuity/`、`urinary-diversion-urostomy-supplies-continuity/`、`dialysis-access-vascular-peritoneal-continuity/`、`home-dialysis-supply-self-management-continuity/` 和 `kidney-transplant-immunosuppression-graft-continuity/` 负责尿路感染、导尿设备、尿潴留、夜尿、结石梗阻、BPH/LUTS、尿流改道、透析通路、家庭透析和肾移植这些排泄出口与肾脏替代执行层失效模式；`reproductive-fertility-continuity/` 负责生育力、生殖衰老和未来选择权；`assisted-reproductive-technology-ivf-cycle-continuity/`、`art-clinic-success-rate-quality-reporting-continuity/`、`fertility-preservation-gamete-embryo-cryostorage-continuity/`、`reproductive-tissue-donor-screening-traceability-continuity/`、`preimplantation-genetic-testing-embryo-selection-governance-continuity/` 和 `third-party-reproduction-surrogacy-donor-legal-ethics-continuity/` 负责 ART/IVF 周期、ART 质量报告、生育保存冷冻、供体筛查追溯、PGT 胚胎选择治理和第三方生殖法律伦理这些生殖技术执行层。
+- `urogenital-continuity/` 负责尿控、泌尿生殖尊严和上位排泄/性功能边界；`urinary-tract-infection-pyelonephritis-urosepsis-continuity/`、`catheter-associated-uti-device-infection-continuity/`、`urinary-retention-bladder-emptying-continuity/`、`overactive-bladder-nocturia-sleep-continuity/`、`kidney-stone-obstruction-renal-colic-continuity/`、`benign-prostatic-hyperplasia-luts-continuity/`、`urinary-diversion-urostomy-supplies-continuity/`、`dialysis-access-vascular-peritoneal-continuity/`、`home-dialysis-supply-self-management-continuity/` 和 `kidney-transplant-immunosuppression-graft-continuity/` 负责尿路感染、导尿设备、尿潴留、夜尿、结石梗阻、BPH/LUTS、尿流改道、透析通路、家庭透析和肾移植这些排泄出口与肾脏替代执行层失效模式；`reproductive-fertility-continuity/` 负责生育力、生殖衰老和未来选择权；`polycystic-ovary-syndrome-metabolic-reproductive-continuity/`、`endometriosis-pelvic-pain-fertility-continuity/`、`uterine-fibroids-bleeding-anemia-fertility-continuity/`、`male-factor-infertility-sperm-health-continuity/`、`erectile-dysfunction-vascular-sexual-function-continuity/` 和 `vulvovaginal-pain-infection-sexual-function-continuity/` 负责 PCOS、内异症、肌瘤、男性因素不育、ED 和外阴阴道疼痛/性功能这些生殖内分泌、疼痛、血管、感染和关系功能接口；`assisted-reproductive-technology-ivf-cycle-continuity/`、`art-clinic-success-rate-quality-reporting-continuity/`、`fertility-preservation-gamete-embryo-cryostorage-continuity/`、`reproductive-tissue-donor-screening-traceability-continuity/`、`preimplantation-genetic-testing-embryo-selection-governance-continuity/` 和 `third-party-reproduction-surrogacy-donor-legal-ethics-continuity/` 负责 ART/IVF 周期、ART 质量报告、生育保存冷冻、供体筛查追溯、PGT 胚胎选择治理和第三方生殖法律伦理这些生殖技术执行层。
 - `attention-executive-control/`、`learning-skill-acquisition/` 和 `time-allocation-effective-time/` 负责注意力、学习能力和有效时间这些主体代理与任务资源条件。
 - `financial-resilience-access/`、`financial-inclusion-payment-systems/`、`workforce-employment-services/`、`education-access-lifelong-learning/`、`occupational-work-design/`、`labor-rights-workplace-protection/`、`language-access-plain-communication/`、`media-information-literacy-public-libraries/` 和 `information-integrity-trust/` 负责财务韧性、金融支付入口、就业服务、教育与终身学习、工作环境、劳动权利、语言理解入口、公共知识入口和信息可信度这些资源入口与认知环境条件。
 - `food-security-nutrition-access/`、`water-sanitation-hygiene-continuity/`、`energy-access-resilience/`、`social-protection-benefits-delivery/`、`community-resource-navigation/`、`social-determinants-community-vulnerability/`、`public-service-design-accessibility/`、`administrative-burden-procedural-friction/`、`civic-data-open-government-transparency/`、`insurance-risk-transfer/` 和 `childcare-family-continuity/` 负责食物、水卫生、能源、公共福利、社区资源导航、社区脆弱性、公共服务可达、行政负担、开放数据透明、保险风险池和托育家庭连续性这些基础生计、公共服务与风险分摊条件。

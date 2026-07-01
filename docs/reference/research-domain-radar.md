@@ -449,6 +449,12 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `menstrual-health-cycle-literacy-continuity/` | 月经健康与周期素养连续性决定疼痛、重度出血、用品缺口、污名和异常信号是否消耗学习、工作和身体自主 |
 | `perimenopause-menopause-midlife-health-continuity/` | 围绝经期、更年期与中年健康连续性决定中年症状、睡眠、情绪、骨骼、心血管和工作参与风险是否被系统承接 |
 | `pelvic-floor-continence-function-continuity/` | 盆底与控尿控便功能连续性决定失禁、脱垂、羞耻、用品和康复断点是否压缩行动半径、睡眠和尊严 |
+| `polycystic-ovary-syndrome-metabolic-reproductive-continuity/` | PCOS、代谢与生殖连续性决定内分泌节律、代谢风险、污名和生殖规划是否进入可见治理 |
+| `endometriosis-pelvic-pain-fertility-continuity/` | 内异症、盆腔痛与生育连续性决定慢性疼痛、诊断延迟、疲劳和未来选择权是否被系统承接 |
+| `uterine-fibroids-bleeding-anemia-fertility-continuity/` | 肌瘤、出血贫血与生育连续性决定结构性出血和贫血是否持续消耗能量、参与和生殖规划 |
+| `male-factor-infertility-sperm-health-continuity/` | 男性因素不育与精子健康连续性决定生殖未来选择权是否只被错误归因到女性身体或 ART 技术端 |
+| `erectile-dysfunction-vascular-sexual-function-continuity/` | ED、血管信号与性功能连续性决定性功能、尊严、关系负担和血管代谢风险信号是否被合理连接 |
+| `vulvovaginal-pain-infection-sexual-function-continuity/` | 外阴阴道疼痛、感染与性功能连续性决定疼痛、复发症状、污名和亲密关系损耗是否进入可见支持链 |
 | `skin-cancer-uv-protection-early-detection-continuity/` | 皮肤癌、UV 防护与早期识别连续性决定环境暴露、户外职业风险和皮肤癌早识别是否被纳入长期风险控制 |
 | `assisted-reproductive-technology-ivf-cycle-continuity/` | ART/IVF 周期连续性决定高成本生殖技术能否从药品、实验室、移植、费用和时间窗口中保持执行闭环 |
 | `art-clinic-success-rate-quality-reporting-continuity/` | ART 诊所成功率与质量报告连续性决定主体是否能把 CDC/NASS 公共统计正确用于服务选择，而不误读成个人预后 |
@@ -1230,6 +1236,7 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | CDC Heat Health / NIA hot and cold weather safety | 提示体温调节、热暴露、寒冷暴露和老年脆弱性是环境-生理接口域 |
 | NIDDK urologic diseases / CDC UTI basics | 提示尿控、泌尿感染、盆底、睡眠、照护和尊严具有独立主体持续性价值 |
 | WHO infertility / WHO sexual and reproductive health / NICHD infertility | 提示生殖健康、生育力、不孕、生殖衰老和生殖自主性影响未来选择权 |
+| NICHD / MedlinePlus / NIDDK reproductive endocrine, pelvic pain and sexual-function resources | 提示 PCOS、内异症、肌瘤、男性因素不育、ED 和外阴阴道疼痛不是边缘症状，而是代谢、疼痛、贫血、关系、尊严和未来选择权接口 |
 | CDC ART / NASS / FDA HCT/P reproductive tissue / ASRM fertility preservation, PGT, donation, gestational carrier and cross-border reproductive care / ACOG PGT | 提示辅助生殖不是一个普通医疗主题，而是 ART 周期、质量报告、冷冻保存、供体追溯、PGT 和第三方生殖法律伦理共同组成的未来选择权治理层 |
 | NIMH / CDC ADHD and executive-function resources | 提示注意力、冲动控制、任务切换和执行功能是有效行动密度的独立认知资源 |
 | UNESCO / OECD / World Bank lifelong-learning and skills resources | 提示学习、技能形成、再训练和迁移能力是长期能力复利的独立资源 |

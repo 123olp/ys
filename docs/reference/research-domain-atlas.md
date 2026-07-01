@@ -776,6 +776,12 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 月经健康是有效时间和身体信号系统 | `menstrual-health-cycle-literacy-continuity/` | 周期素养、用品可及、疼痛/出血负担、参与支持、异常转介 | 月经贫困、疼痛、重度出血和污名会造成学习工作缺席、贫血风险和诊断延迟 |
 | 更年期是中年健康风险转轨窗口 | `perimenopause-menopause-midlife-health-continuity/` | 围绝经期、症状、睡眠、情绪、骨骼、心血管、工作参与 | 中年症状负担和风险沟通失败会影响睡眠、情绪、骨折、心血管和工作退出风险 |
 | 盆底功能保护行动半径和尊严 | `pelvic-floor-continence-function-continuity/` | 尿失禁、便失禁、脱垂、康复可及、用品、社会参与 | 控尿控便失败会通过睡眠破坏、跌倒、社交回避、感染和照护负担侵蚀独立生活 |
+| PCOS 把代谢风险和生殖选择权耦合 | `polycystic-ovary-syndrome-metabolic-reproductive-continuity/` | 排卵不规律、高雄激素表现、胰岛素抵抗、代谢风险、生殖规划、污名 | PCOS 会通过诊断延迟、体重压力、代谢风险和生殖规划不确定性压缩长期选择权 |
+| 内异症把疼痛、诊断延迟和生育风险连接 | `endometriosis-pelvic-pain-fertility-continuity/` | 慢性盆腔痛、痛经、性交痛、疲劳、诊断延迟、生育力 | 疼痛被正常化会造成缺席、关系压力、反复就医和未来生育选择权损耗 |
+| 肌瘤把结构性出血转成能量和选择权损耗 | `uterine-fibroids-bleeding-anemia-fertility-continuity/` | 重度出血、贫血、疲劳、疼痛、压迫、生育/妊娠影响 | 出血和贫血会持续消耗能量、学习工作参与、治疗负担和未来计划能力 |
+| 男性因素不育是未来选择权的独立机制 | `male-factor-infertility-sperm-health-continuity/` | 精子健康、内分泌、感染/炎症、暴露、隐私、伴侣压力 | 男性因素被忽略会把生殖规划压力、关系负担和资源消耗转嫁给伴侣与家庭路径 |
+| ED 是性功能和血管代谢风险信号接口 | `erectile-dysfunction-vascular-sexual-function-continuity/` | ED、血管代谢信号、药物背景、心理压力、隐私、关系负担 | 污名或商业误导会阻断风险识别、尊严维护和关系参与 |
+| 外阴阴道疼痛影响身体自主和亲密关系 | `vulvovaginal-pain-infection-sexual-function-continuity/` | 外阴痛、复发症状、感染/炎症、性交痛、隐私、污名 | 疼痛和羞耻会制造医疗回避、关系冲突、睡眠/行动损耗和长期功能受限 |
 | UV 暴露和皮肤癌风险可被早期治理 | `skin-cancer-uv-protection-early-detection-continuity/` | UV 暴露、防晒环境、皮肤癌预防、早期识别、转诊、公平可及 | 皮肤癌风险、职业户外暴露和早识别断点会增加治疗负担、死亡风险和行动约束 |
 | ART 周期把生殖窗口转化为高成本执行链 | `assisted-reproductive-technology-ivf-cycle-continuity/` | ART、IVF、取卵、受精、胚胎培养、移植、周期取消 | ART 执行失败会把时间窗口、费用、药品、实验室和情绪负担叠加为未来选择权损耗 |
 | ART 成功率报告决定技术选择是否可解释 | `art-clinic-success-rate-quality-reporting-continuity/` | CDC NASS、clinic reports、分母定义、数据校验、患者构成 | 报告口径误读会把公共统计误写成个人预后，导致误选、资源耗尽和信任损耗 |
@@ -1683,6 +1689,12 @@ risk-engineering
   -> menstrual-health-cycle-literacy-continuity
   -> perimenopause-menopause-midlife-health-continuity
   -> pelvic-floor-continence-function-continuity
+  -> polycystic-ovary-syndrome-metabolic-reproductive-continuity
+  -> endometriosis-pelvic-pain-fertility-continuity
+  -> uterine-fibroids-bleeding-anemia-fertility-continuity
+  -> male-factor-infertility-sperm-health-continuity
+  -> erectile-dysfunction-vascular-sexual-function-continuity
+  -> vulvovaginal-pain-infection-sexual-function-continuity
   -> skin-cancer-uv-protection-early-detection-continuity
   -> assisted-reproductive-technology-ivf-cycle-continuity
   -> art-clinic-success-rate-quality-reporting-continuity

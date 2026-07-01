@@ -287,6 +287,12 @@ flowchart TD
     RHC --> HDSM[home-dialysis<br/>家庭透析 / 供应]
     RHC --> KTIG[kidney-transplant<br/>肾移植 / 免疫抑制]
     H --> RFC[reproductive-fertility-continuity<br/>生殖 / 生育连续性]
+    RFC --> PCOS[polycystic-ovary-syndrome-metabolic-reproductive-continuity<br/>PCOS / 代谢生殖]
+    RFC --> ENDO[endometriosis-pelvic-pain-fertility-continuity<br/>内异症 / 盆腔痛生育]
+    RFC --> FIB[uterine-fibroids-bleeding-anemia-fertility-continuity<br/>肌瘤 / 出血贫血生育]
+    RFC --> MFI[male-factor-infertility-sperm-health-continuity<br/>男性不育 / 精子健康]
+    UG --> EDVSF[erectile-dysfunction-vascular-sexual-function-continuity<br/>ED / 血管性功能]
+    UG --> VVPSF[vulvovaginal-pain-infection-sexual-function-continuity<br/>外阴阴道疼痛 / 性功能]
     RFC --> ARTIVF[assisted-reproductive-technology-ivf-cycle-continuity<br/>ART / IVF 周期]
     RFC --> ARTQ[art-clinic-success-rate-quality-reporting-continuity<br/>ART 成功率 / 质量报告]
     RFC --> FPGEC[fertility-preservation-gamete-embryo-cryostorage-continuity<br/>生育保存 / 配子胚胎冷冻]
@@ -1073,6 +1079,12 @@ flowchart TD
 | [Home Dialysis Supply Self Management Continuity](domains/home-dialysis-supply-self-management-continuity/README.md) | 家庭血透、腹膜透析、耗材、电水依赖、训练和照护者负担 | 把家庭化生命支持与住房、能源、水、物流和照护系统连接 | 不提供家庭透析资格、参数、操作、用品购买、消毒、设备故障处理或个体建议 |
 | [Kidney Transplant Immunosuppression Graft Continuity](domains/kidney-transplant-immunosuppression-graft-continuity/README.md) | 肾移植、移植物功能、排斥、免疫抑制、感染和药物供应 | 把器官替代后的长期免疫治理、随访和重返透析风险纳入模型 | 不提供移植资格、配型、用药、剂量、实验室解释、感染处理或保险策略 |
 | [Reproductive Fertility Continuity](domains/reproductive-fertility-continuity/README.md) | 生育力、配子质量、生殖衰老、妊娠风险、生殖自主性和未来选择权 | 生育窗口、长期计划、资源配置和未来选择权 | 不提供不孕诊断、生育治疗、激素、辅助生殖、妊娠管理、避孕或个体医疗建议 |
+| [Polycystic Ovary Syndrome Metabolic Reproductive Continuity](domains/polycystic-ovary-syndrome-metabolic-reproductive-continuity/README.md) | PCOS、排卵不规律、高雄激素表现、代谢风险、生殖规划和污名 | 把内分泌、代谢、生殖和长期风险识别纳入主体持续性模型 | 不提供 PCOS 诊断、化验/超声判读、激素、促排、减重、饮食、补剂或生育建议 |
+| [Endometriosis Pelvic Pain Fertility Continuity](domains/endometriosis-pelvic-pain-fertility-continuity/README.md) | 子宫内膜异位症、慢性盆腔痛、疲劳、诊断延迟、生育力和参与受限 | 把疼痛、炎症、诊断延迟和未来选择权纳入同一功能损耗链 | 不提供内异症诊断、影像/手术解释、止痛、激素、饮食、性交痛、生育或急诊建议 |
+| [Uterine Fibroids Bleeding Anemia Fertility Continuity](domains/uterine-fibroids-bleeding-anemia-fertility-continuity/README.md) | 子宫肌瘤、重度出血、贫血、疼痛、压迫、生育/妊娠影响和治疗负担 | 把结构性出血和贫血对能量、有效时间和未来选择权的影响纳入模型 | 不提供影像判读、贫血处理、药物、激素、手术、介入、生育、妊娠或急诊建议 |
+| [Male Factor Infertility Sperm Health Continuity](domains/male-factor-infertility-sperm-health-continuity/README.md) | 男性因素不育、精子健康、内分泌、感染、暴露、隐私和伴侣压力 | 把男性生育因素从泛化不孕拆成未来选择权与关系连续性机制 | 不提供精液报告解读、用药、补剂、激素、手术、ART、生活方式或个体归因建议 |
+| [Erectile Dysfunction Vascular Sexual Function Continuity](domains/erectile-dysfunction-vascular-sexual-function-continuity/README.md) | ED、血管代谢信号、药物/神经/内分泌背景、心理负担、关系和隐私 | 把性功能、尊严和长期风险识别纳入主体连续性模型 | 不提供 ED 诊断、处方、补剂、器械、激素、性行为、心血管风险或伴侣建议 |
+| [Vulvovaginal Pain Infection Sexual Function Continuity](domains/vulvovaginal-pain-infection-sexual-function-continuity/README.md) | 外阴阴道疼痛、复发症状、感染/炎症、性交痛、污名、隐私和关系功能 | 把疼痛、感染、身体自主和亲密关系质量纳入有效时间模型 | 不提供感染、分泌物、外阴痛、微生态、激素、护理产品、性行为或个体医疗建议 |
 | [Assisted Reproductive Technology IVF Cycle Continuity](domains/assisted-reproductive-technology-ivf-cycle-continuity/README.md) | ART、IVF 周期、取卵、受精、胚胎培养、移植、周期取消和费用时间窗口 | 把辅助生殖从“治疗选择”拆成可审查的高成本执行周期 | 不提供不孕诊断、IVF 方案、促排、移植、成功率解释、诊所、保险或法律建议 |
 | [ART Clinic Success Rate Quality Reporting Continuity](domains/art-clinic-success-rate-quality-reporting-continuity/README.md) | ART 诊所成功率、CDC NASS、报告口径、数据校验、分母定义和解释边界 | 把 ART 选择所依赖的观测数据和质量报告纳入治理 | 不提供诊所排名、个体成功率、商业推荐、保险策略或个人预后判断 |
 | [Fertility Preservation Gamete Embryo Cryostorage Continuity](domains/fertility-preservation-gamete-embryo-cryostorage-continuity/README.md) | 生育保存、卵母细胞/精子/胚胎冷冻、样本身份、储存同意、费用续缴和未来使用权 | 把生殖未来选择权从当前身体时间窗口中部分解耦 | 不提供冷冻决策、成功率、实验室操作、运输、胚胎处置、保险或法律建议 |
@@ -2396,6 +2408,12 @@ human_infra/
 │   ├── regenerative-medicine/
 │   ├── rehabilitation-functioning/
 │   ├── reproductive-fertility-continuity/
+│   ├── polycystic-ovary-syndrome-metabolic-reproductive-continuity/
+│   ├── endometriosis-pelvic-pain-fertility-continuity/
+│   ├── uterine-fibroids-bleeding-anemia-fertility-continuity/
+│   ├── male-factor-infertility-sperm-health-continuity/
+│   ├── erectile-dysfunction-vascular-sexual-function-continuity/
+│   ├── vulvovaginal-pain-infection-sexual-function-continuity/
 │   ├── assisted-reproductive-technology-ivf-cycle-continuity/
 │   ├── art-clinic-success-rate-quality-reporting-continuity/
 │   ├── fertility-preservation-gamete-embryo-cryostorage-continuity/

@@ -146,6 +146,7 @@ docs/
 │   ├── 0128-add-one-hundred-twenty-third-wave-food-is-medicine-execution-domains.md
 │   ├── 0129-add-one-hundred-twenty-fourth-wave-reproductive-technology-governance-domains.md
 │   ├── 0130-add-one-hundred-twenty-fifth-wave-longevity-intervention-governance-domains.md
+│   ├── 0131-add-one-hundred-twenty-sixth-wave-reproductive-endocrine-pelvic-function-domains.md
 │   └── README.md
 ├── explanations/
 │   ├── README.md
@@ -1069,4 +1070,10 @@ docs/
 780. Read `../domains/reproductive-tissue-donor-screening-traceability-continuity/README.md` if you are working on reproductive tissue donation, HCT/P donor eligibility, donor screening/testing, gamete or embryo donor records, labels, or traceability.
 781. Read `../domains/preimplantation-genetic-testing-embryo-selection-governance-continuity/README.md` if you are working on PGT-A, PGT-M, PGT-P, embryo testing, embryo selection, genetic uncertainty, counseling boundaries, disability justice, or eugenics-risk governance.
 782. Read `../domains/third-party-reproduction-surrogacy-donor-legal-ethics-continuity/README.md` if you are working on gestational carriers, intended parents, gamete/embryo donors, third-party reproduction, surrogacy ethics, legal parentage, cross-border reproductive care, or offspring rights.
+783. Read `../domains/polycystic-ovary-syndrome-metabolic-reproductive-continuity/README.md` if you are working on PCOS, irregular ovulation, hyperandrogenism, insulin resistance, metabolic risk, stigma, fertility planning, or reproductive endocrine continuity.
+784. Read `../domains/endometriosis-pelvic-pain-fertility-continuity/README.md` if you are working on endometriosis, chronic pelvic pain, dysmenorrhea, dyspareunia, diagnostic delay, fatigue, fertility concerns, or function loss.
+785. Read `../domains/uterine-fibroids-bleeding-anemia-fertility-continuity/README.md` if you are working on uterine fibroids, heavy menstrual bleeding, anemia, pelvic pressure, pain, fertility concerns, or treatment-burden boundaries.
+786. Read `../domains/male-factor-infertility-sperm-health-continuity/README.md` if you are working on male factor infertility, sperm count, sperm motility, endocrine context, reproductive exposure, privacy, or partner burden.
+787. Read `../domains/erectile-dysfunction-vascular-sexual-function-continuity/README.md` if you are working on erectile dysfunction, sexual function, vascular/metabolic risk signals, medication context, stigma, privacy, or relationship burden.
+788. Read `../domains/vulvovaginal-pain-infection-sexual-function-continuity/README.md` if you are working on vulvodynia, vulvovaginal pain, recurrent symptoms, dyspareunia, infection/inflammation context, stigma, or intimate-function continuity.
 684. Enter a domain under `../domains/`.

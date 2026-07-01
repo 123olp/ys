@@ -743,6 +743,12 @@ human_infra/
     ├── regenerative-medicine/ # 再生医学与组织修复
     ├── rehabilitation-functioning/ # 康复与功能恢复
     ├── reproductive-fertility-continuity/ # 生殖与生育连续性
+    ├── polycystic-ovary-syndrome-metabolic-reproductive-continuity/ # PCOS、代谢与生殖连续性
+    ├── endometriosis-pelvic-pain-fertility-continuity/ # 内异症、盆腔痛与生育连续性
+    ├── uterine-fibroids-bleeding-anemia-fertility-continuity/ # 子宫肌瘤、出血贫血与生育连续性
+    ├── male-factor-infertility-sperm-health-continuity/ # 男性因素不育与精子健康连续性
+    ├── erectile-dysfunction-vascular-sexual-function-continuity/ # ED、血管信号与性功能连续性
+    ├── vulvovaginal-pain-infection-sexual-function-continuity/ # 外阴阴道疼痛、感染与性功能连续性
     ├── assisted-reproductive-technology-ivf-cycle-continuity/ # ART 与 IVF 周期连续性
     ├── art-clinic-success-rate-quality-reporting-continuity/ # ART 诊所成功率与质量报告连续性
     ├── fertility-preservation-gamete-embryo-cryostorage-continuity/ # 生育保存、配子和胚胎冷冻连续性
@@ -909,7 +915,7 @@ human_infra/
 - `domains/musculoskeletal-integrity/` 负责肌肉、骨骼、关节、肌少症、骨质疏松、跌倒和行动承载结构。
 - `domains/skin-barrier-wound-healing/` 负责皮肤屏障、伤口愈合、压力损伤、感染入口、热调节和感觉边界；`domains/pressure-injury-prevention-repositioning-support-surface-continuity/`、`domains/chronic-wound-venous-diabetic-pressure-ulcer-continuity/`、`domains/wound-infection-cellulitis-sepsis-continuity/`、`domains/diabetic-foot-ulcer-amputation-prevention-continuity/`、`domains/burn-wound-aftercare-scar-function-continuity/`、`domains/surgical-wound-dehiscence-ssi-continuity/`、`domains/incontinence-associated-dermatitis-moisture-skin-continuity/`、`domains/eczema-atopic-dermatitis-itch-sleep-continuity/`、`domains/psoriasis-inflammatory-skin-systemic-burden-continuity/` 和 `domains/skin-care-supplies-dressings-barrier-products-continuity/` 负责压力损伤预防、慢性伤口、伤口感染/蜂窝织炎、糖尿病足、烧伤后创面、手术切口/SSI、潮湿相关皮炎、湿疹、银屑病和皮肤护理用品这些皮肤边界执行层失效模式。
 - `domains/urogenital-continuity/` 负责膀胱、尿路、尿控、盆底、泌尿感染、性功能和日常尊严；`domains/urinary-tract-infection-pyelonephritis-urosepsis-continuity/`、`domains/catheter-associated-uti-device-infection-continuity/`、`domains/urinary-retention-bladder-emptying-continuity/`、`domains/overactive-bladder-nocturia-sleep-continuity/`、`domains/kidney-stone-obstruction-renal-colic-continuity/`、`domains/benign-prostatic-hyperplasia-luts-continuity/`、`domains/urinary-diversion-urostomy-supplies-continuity/`、`domains/dialysis-access-vascular-peritoneal-continuity/`、`domains/home-dialysis-supply-self-management-continuity/` 和 `domains/kidney-transplant-immunosuppression-graft-continuity/` 负责尿路感染、导尿设备、尿潴留、夜尿、结石梗阻、BPH/LUTS、尿流改道、透析通路、家庭透析和肾移植这些排泄出口与肾脏替代执行层失效模式。
-- `domains/reproductive-fertility-continuity/` 负责生育力、生殖衰老、配子质量、妊娠风险、生殖自主性和未来选择权；`domains/assisted-reproductive-technology-ivf-cycle-continuity/`、`domains/art-clinic-success-rate-quality-reporting-continuity/`、`domains/fertility-preservation-gamete-embryo-cryostorage-continuity/`、`domains/reproductive-tissue-donor-screening-traceability-continuity/`、`domains/preimplantation-genetic-testing-embryo-selection-governance-continuity/` 和 `domains/third-party-reproduction-surrogacy-donor-legal-ethics-continuity/` 负责 ART/IVF 周期、ART 诊所成功率报告、生育保存冷冻储存、生殖组织供体筛查追溯、PGT 胚胎选择治理和第三方生殖法律伦理这些执行层。
+- `domains/reproductive-fertility-continuity/` 负责生育力、生殖衰老、配子质量、妊娠风险、生殖自主性和未来选择权；`domains/polycystic-ovary-syndrome-metabolic-reproductive-continuity/`、`domains/endometriosis-pelvic-pain-fertility-continuity/`、`domains/uterine-fibroids-bleeding-anemia-fertility-continuity/`、`domains/male-factor-infertility-sperm-health-continuity/`、`domains/erectile-dysfunction-vascular-sexual-function-continuity/` 和 `domains/vulvovaginal-pain-infection-sexual-function-continuity/` 负责 PCOS、内异症、肌瘤、男性因素不育、ED 和外阴阴道疼痛/功能这些生殖内分泌、疼痛、血管和关系功能接口；`domains/assisted-reproductive-technology-ivf-cycle-continuity/`、`domains/art-clinic-success-rate-quality-reporting-continuity/`、`domains/fertility-preservation-gamete-embryo-cryostorage-continuity/`、`domains/reproductive-tissue-donor-screening-traceability-continuity/`、`domains/preimplantation-genetic-testing-embryo-selection-governance-continuity/` 和 `domains/third-party-reproduction-surrogacy-donor-legal-ethics-continuity/` 负责 ART/IVF 周期、ART 诊所成功率报告、生育保存冷冻储存、生殖组织供体筛查追溯、PGT 胚胎选择治理和第三方生殖法律伦理这些执行层。
 - `domains/attention-executive-control/` 负责注意力、执行功能、工作记忆、抑制控制、任务切换、冲动控制和分心环境。
 - `domains/learning-skill-acquisition/` 负责学习科学、技能形成、反馈、迁移、再训练和终身学习。
 - `domains/time-allocation-effective-time/` 负责时间使用、时间贫困、行政负担、等待成本、任务摩擦、有效时间和主观时间质量。

@@ -2077,6 +2077,24 @@ Human Infra 不能被设计成更精密的压榨系统。
 - 不收集、复制、处理或要求 PHI、诊断、实验室指标、药物清单、保险 ID、Medicaid/Medicare 信息、收入、住址、食品不安全问卷答案、EBT 交易、购买记录、配送地址、家庭厨房条件、饮食记录、过敏史、病历、转介单或个案福利/医疗/保险材料。
 - 不替代医生、注册营养师、药师、护士、保险计划、Medicaid/CMS、HHS、USDA、NIH、社区食品组织、食品银行、food pharmacy、福利机构、急救服务、法律、监管机构或官方服务渠道。
 
+## 生殖内分泌、盆腔疼痛、不育与性功能连续性边界
+
+`polycystic-ovary-syndrome-metabolic-reproductive-continuity`、`endometriosis-pelvic-pain-fertility-continuity`、`uterine-fibroids-bleeding-anemia-fertility-continuity`、`male-factor-infertility-sperm-health-continuity`、`erectile-dysfunction-vascular-sexual-function-continuity` 和 `vulvovaginal-pain-infection-sexual-function-continuity` 关注生殖内分泌、盆腔疼痛、异常出血、精子健康、血管性性功能信号、外阴阴道疼痛/感染/炎症如何影响有效时间、身体功能、关系稳定、未来生育选择权和主体持续性，不作为个人诊断、治疗、生育、性行为、伴侣关系、法律、保险或产品建议入口。
+
+可以做：
+
+- 整理 MedlinePlus、NICHD、NIDDK、WHO、ACOG、ASRM 等公开资料中的定义、变量、症状负担、诊断延迟、功能损失、证据边界和禁止用途。
+- 比较 PCOS、子宫内膜异位症、子宫肌瘤、男性因素不育、勃起功能障碍、外阴阴道疼痛/感染/炎症如何影响代谢风险、疼痛疲劳、贫血、性功能、隐私、伴侣负担、生育窗口、医疗可及和长期行动能力。
+- 记录资料中的筛查/诊断语境、治疗获得摩擦、污名、疼痛无效化、性健康隐私、伴侣和家庭负担、数据敏感性、商业夸大、转介边界和证据等级。
+
+不能做：
+
+- 不提供 PCOS、子宫内膜异位症、子宫肌瘤、不孕、精液异常、勃起功能障碍、外阴痛、阴道炎、性传播感染、盆腔痛、异常出血、贫血、怀孕风险、伴侣传播风险或个体性功能问题的诊断、鉴别诊断、检查解释、治疗、用药、手术、性生活、备孕、避孕、补剂、饮食、运动、激素、器械、产品或伴侣沟通建议。
+- 不判断某个人、伴侣、精液报告、影像报告、激素指标、月经记录、疼痛记录、性功能问卷、感染检测、妊娠状态、生育计划、保险计划、诊所、药物、手术或设备应如何具体处理。
+- 不生成治疗方案、用药方案、激素方案、促排/备孕方案、手术选择、盆底训练方案、性行为脚本、伴侣说服材料、保险申诉、医学必要性文件、诊所/医生/药品/器械推荐、隐私规避、检测规避、报告解释或个案医疗/法律/保险材料。
+- 不收集、复制、处理或要求 PHI、月经/排卵记录、性生活记录、伴侣身份、精液报告、影像报告、实验室指标、遗传结果、感染检测、病历、处方、保险 ID、支付记录、诊所账户、私密照片、身体图像、地址、怀孕资料、供体/胚胎资料或任何可识别的性健康/生殖健康个案材料。
+- 不替代 OB-GYN、reproductive endocrinologist、urologist、sexual medicine clinician、pelvic pain specialist、infectious disease clinician、primary care clinician、genetic counselor、fertility clinic、laboratory、pharmacist、therapist、律师、保险计划、FDA、CDC、NIH、WHO、ACOG、ASRM、NIDDK、NICHD、急救服务、监管机构或官方服务渠道。
+
 ## 生殖技术、生育保存与第三方生殖治理连续性边界
 
 `assisted-reproductive-technology-ivf-cycle-continuity`、`art-clinic-success-rate-quality-reporting-continuity`、`fertility-preservation-gamete-embryo-cryostorage-continuity`、`reproductive-tissue-donor-screening-traceability-continuity`、`preimplantation-genetic-testing-embryo-selection-governance-continuity` 和 `third-party-reproduction-surrogacy-donor-legal-ethics-continuity` 关注 ART/IVF 周期、ART 成功率质量报告、生育保存冷冻储存、生殖组织供体筛查追溯、PGT 胚胎选择治理和第三方生殖法律伦理如何影响未来选择权，不是个人不孕、生殖医疗、IVF、PGT、供体、代孕、胚胎处置、法律、保险、诊所选择或跨境服务建议入口。

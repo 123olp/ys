@@ -1,0 +1,49 @@
+# Vulvovaginal Pain Infection Sexual Function Continuity
+
+`vulvovaginal-pain-infection-sexual-function-continuity/` 研究外阴阴道疼痛、外阴痛、性交痛、复发感染/炎症、阴道微生态、绝经泌尿生殖症状、污名、隐私和性功能如何影响主体持续性。
+
+> 核心问题：外阴阴道健康不是边缘隐私问题，而是疼痛、感染、亲密关系、行动尊严、医疗可及和身体自主共同决定的有效时间与关系连续性问题。
+
+## 先验位置
+
+```text
+有效永生 / 主体持续性最大化
+  -> 主体需要疼痛可控、感染风险可见、身体自主、关系参与和医疗信任
+  -> 外阴阴道疼痛、复发感染、性交痛或污名会压缩行动、睡眠、关系和服务可及
+  -> 若症状被羞耻化或误归因，主体会损失有效时间、亲密关系质量和诊断窗口
+  -> 因此外阴阴道疼痛与功能是性健康、疼痛和泌尿生殖连续性的交叉域
+```
+
+## 关注对象
+
+- Vulvodynia、vulvar pain、dyspareunia、recurrent vulvovaginal symptoms、infection/inflammation context、vaginal microbiome context、genitourinary syndrome of menopause context、privacy、stigma、relationship burden。
+- 与 `sexual-health-sti-prevention-continuity/` 的边界：STI 域关注感染预防、检测和公共卫生；本域关注外阴阴道疼痛、复发症状和性功能参与。
+- 与 `perimenopause-menopause-midlife-health-continuity/` 的关系：绝经相关泌尿生殖症状可进入本域，但本域不做激素治疗建议。
+- 与 `chronic-pain-functional-restoration-continuity/` 的关系：外阴痛属于慢性疼痛和功能参与的特定位置。
+
+## Human Infra 模型链路
+
+```text
+外阴阴道疼痛与功能支持系统 T
+  -> 改变疼痛、复发症状、感染/炎症、微生态、隐私、污名、关系负担和服务可及变量 X
+  -> 改变主体有效时间、身体自主、亲密关系、医疗信任、睡眠和心理状态 S
+  -> 改变慢性疼痛、医疗回避、感染延误、关系冲突、污名压力和未来选择受限 lambda(t)
+  -> 影响主体尊严、关系参与、健康寿命和长期行动质量
+```
+
+## 非目标
+
+- 不提供外阴阴道疼痛、感染、分泌物、性交痛、微生态、绝经症状、药物、激素、护理产品、性行为、伴侣或个体医疗建议。
+- 不判断 STI、阴道炎、外阴痛、皮肤病、盆底问题、创伤或心理因素。
+- 不收集个人性行为、伴侣、疼痛、分泌物、照片、检查、用药、创伤或身份敏感资料。
+
+## Source Signals
+
+- NICHD vulvodynia: https://www.nichd.nih.gov/health/topics/vulvodynia
+- MedlinePlus vulvar disorders: https://medlineplus.gov/vulvardisorders.html
+- CDC bacterial vaginosis: https://www.cdc.gov/bacterial-vaginosis/
+
+## 下一步
+
+- 建立 Vulvovaginal Function Card：pain, recurrent symptoms, infection/inflammation, privacy, stigma, relationship burden, referral boundary。
+- 与 `sexual-health-sti-prevention-continuity/`、`chronic-pain-functional-restoration-continuity/`、`perimenopause-menopause-midlife-health-continuity/` 和 `pelvic-floor-continence-function-continuity/` 建立接口。
