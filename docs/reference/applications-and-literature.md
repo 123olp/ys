@@ -205,6 +205,7 @@
 | 敏感位置数据 | FTC location data；CPPA sensitive personal information；NIST Privacy Framework | 把地理轨迹、敏感地点、家庭/工作/医疗/宗教/庇护暴露和二次利用作为安全与自由边界 | 资料不是位置追踪、地理围栏 targeting、去匿名化、监控、跟踪、执法规避或地点推荐 |
 | 生物特征模板治理 | NIST FRVT；NIST digital identity；FTC biometric privacy | 把面部、声纹、指纹、步态等不可轻易更换的模板视为高不可逆身份风险 | 资料不是生物认证绕过、deepfake、识别部署、模板采集、身份冒用或供应商背书 |
 | 儿童青少年数据隐私 | FTC COPPA；FTC children/teen privacy；CPPA sensitive information | 把儿童同意、家长权利、定向广告、年龄阶段、教育/平台数据和未来选择权放入隐私生命周期 | 资料不是年龄门槛规避、儿童定向广告、家庭监控、教育平台规避或未成年画像工具 |
+| 儿童青少年线上健康与平台风险 | [Surgeon General social media advisory](https://www.hhs.gov/surgeongeneral/priorities/youth-mental-health/social-media/index.html)；[HHS/NTIA Kids Online Health and Safety Task Force](https://www.ntia.gov/page/kids-online-health-and-safety-task-force)；[AAP media and children](https://www.aap.org/en/patient-care/media-and-children/)；[StopBullying cyberbullying](https://www.stopbullying.gov/cyberbullying/what-is-it)；[NCMEC CyberTipline](https://report.cybertip.org/)；FTC children advertising / dark patterns / gaming materials | 把未成年人数字环境拆成青少年社交媒体心理健康、平台安全设计、网络霸凌举报、儿童线上性剥削举报、游戏商业机制和儿童隐性广告这些可审查风险链 | 资料不是心理诊断、危机干预、平台处方、年龄验证规避、家长控制绕过、儿童性内容处理、退款策略、营销策略、平台投放优化或未成年人敏感资料收集 |
 | 数据泄露通知与身份恢复 | IdentityTheft.gov；FTC data breach guidance；NIST CSF；CFPB freeze/fraud alerts | 把泄露通知、账号恢复、信用冻结、欺诈警报、文件修复和长期监测作为恢复基础设施 | 资料不是暗网搜索、撞库、凭据利用、账号接管、个案法律建议、勒索谈判或身份修复代办 |
 
 ## 数字内容可信、合成媒体与冒充风险底座

@@ -263,6 +263,12 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 敏感位置轨迹必须不成为攻击面 | `sensitive-location-data-exposure-continuity/` | precise location、sensitive place、geofence、mobile ad ID、broker | 医疗、庇护、学校、工作和家庭轨迹暴露，制造跟踪、报复和歧视风险 |
 | 生物特征模板必须可治理可替代 | `biometric-identifier-template-governance-continuity/` | face、voice、fingerprint、iris、template、liveness、bias | 身体特征被当作不可重置凭据，泄露或误识别后难以恢复 |
 | 未成年数据必须保护未来选择权 | `children-teen-data-privacy-consent-continuity/` | COPPA、parental consent、age assurance、edtech data、teen privacy、retention | 儿童青少年数据足迹在成熟前消耗安全、发展、注意力和成年机会边界 |
+| 青少年社交媒体必须保护恢复窗口 | `youth-social-media-mental-health-continuity/` | 推荐流、同伴反馈、身体形象、睡眠扰动、注意力负荷、心理健康风险 | 社交媒体机制若长期消耗睡眠、情绪恢复和归属感，会压缩学习参与与发展窗口 |
+| 平台安全必须默认进入设计 | `youth-online-safety-by-design-platform-governance-continuity/` | safety by design、年龄适配、默认安全、风险评估、透明度、举报响应、研究访问 | 未成年人保护若只靠家庭事后补救，会让平台机制持续制造不可见风险 |
+| 网络霸凌必须可举报可恢复 | `cyberbullying-online-harassment-reporting-continuity/` | cyberbullying、在线骚扰、羞辱扩散、威胁、冒充、学校/平台响应 | 线上霸凌会跨平台、家庭和学校持续侵蚀出勤、关系安全和心理恢复 |
+| 儿童线上性剥削必须有严格举报链 | `online-child-sexual-exploitation-sextortion-reporting-continuity/` | online enticement、sextortion、CSAM、CyberTipline、平台举报、受害者支持 | 性剥削影像和勒索会长期锁定身份、安全和恢复，必须只进入官方保护链 |
+| 游戏商业机制必须可披露可限制 | `gaming-loot-box-inapp-purchase-dark-pattern-continuity/` | loot box、内购、虚拟货币、随机奖励、订阅、dark patterns、退款摩擦 | 不透明游戏商业机制会把注意力、家庭资源和自我控制窗口转成持续消费压力 |
+| 儿童隐性广告必须可识别 | `child-stealth-advertising-influencer-marketing-continuity/` | influencer marketing、native ads、广告披露、kidfluencers、商业内容标签 | 儿童难以区分内容与广告时，商业说服会提前占用判断力和家庭资源 |
 | 泄露事件必须可通知可恢复 | `data-breach-notification-identity-recovery-continuity/` | breach notice、exposed data、identity recovery、credit freeze、fraud alert | 泄露资料长期转成身份盗用、账号接管、信用、医疗、税务和公共服务风险 |
 | 内容来源必须可验证 | `content-provenance-authenticity-credential-continuity/` | provenance、content credentials、publisher identity、metadata、signature | 内容来源不可验证时，主体难以区分记录、伪造、转述、合成和未知来源 |
 | 合成媒体必须可披露可解释 | `synthetic-media-watermarking-disclosure-continuity/` | watermark、disclosure、label、detector limit、provenance | AI 合成内容伪装成真实记录，劫持证据、情绪、声誉和公共判断 |
@@ -1159,6 +1165,12 @@ risk-engineering
   -> sensitive-location-data-exposure-continuity
   -> biometric-identifier-template-governance-continuity
   -> children-teen-data-privacy-consent-continuity
+  -> youth-social-media-mental-health-continuity
+  -> youth-online-safety-by-design-platform-governance-continuity
+  -> cyberbullying-online-harassment-reporting-continuity
+  -> online-child-sexual-exploitation-sextortion-reporting-continuity
+  -> gaming-loot-box-inapp-purchase-dark-pattern-continuity
+  -> child-stealth-advertising-influencer-marketing-continuity
   -> data-breach-notification-identity-recovery-continuity
   -> content-provenance-authenticity-credential-continuity
   -> synthetic-media-watermarking-disclosure-continuity

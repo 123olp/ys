@@ -449,6 +449,12 @@ human_infra/
     ├── sensitive-location-data-exposure-continuity/ # 敏感位置数据暴露连续性
     ├── biometric-identifier-template-governance-continuity/ # 生物特征标识与模板治理连续性
     ├── children-teen-data-privacy-consent-continuity/ # 儿童青少年数据隐私与同意连续性
+    ├── youth-social-media-mental-health-continuity/ # 青少年社交媒体心理健康连续性
+    ├── youth-online-safety-by-design-platform-governance-continuity/ # 青少年线上安全设计与平台治理连续性
+    ├── cyberbullying-online-harassment-reporting-continuity/ # 网络霸凌与在线骚扰举报连续性
+    ├── online-child-sexual-exploitation-sextortion-reporting-continuity/ # 儿童线上性剥削与 sextortion 举报连续性
+    ├── gaming-loot-box-inapp-purchase-dark-pattern-continuity/ # 游戏内购、loot box 与暗黑模式连续性
+    ├── child-stealth-advertising-influencer-marketing-continuity/ # 儿童隐性广告与网红营销连续性
     ├── data-breach-notification-identity-recovery-continuity/ # 数据泄露通知与身份恢复连续性
     ├── content-provenance-authenticity-credential-continuity/ # 内容来源、真实性凭据与验证连续性
     ├── synthetic-media-watermarking-disclosure-continuity/ # 合成媒体水印与披露连续性
@@ -903,6 +909,7 @@ human_infra/
 - `domains/rental-lease-tenancy-rights-continuity/`、`domains/eviction-prevention-court-diversion-continuity/`、`domains/emergency-rental-assistance-arrears-continuity/`、`domains/housing-choice-voucher-public-housing-continuity/`、`domains/fair-housing-discrimination-reasonable-accommodation-continuity/`、`domains/housing-habitability-inspection-code-enforcement-continuity/`、`domains/hud-approved-housing-counseling-navigation-continuity/` 和 `domains/manufactured-housing-park-tenure-safety-continuity/` 负责住房 tenure 稳定与可居住性执行连续性，覆盖租赁居住权、驱逐预防、欠租援助、住房补贴、公平住房、可居住性检查、住房咨询和制造房屋园区稳定。
 - `domains/self-represented-litigant-court-self-help-continuity/`、`domains/court-efiling-document-submission-continuity/`、`domains/remote-hybrid-court-hearing-access-continuity/`、`domains/court-language-access-interpreter-continuity/`、`domains/court-disability-accommodation-accessibility-continuity/`、`domains/court-fees-fines-ability-to-pay-continuity/`、`domains/jury-service-summons-hardship-continuity/` 和 `domains/small-claims-civil-dispute-resolution-continuity/` 负责法院接入与民事程序执行连续性，覆盖自助中心、电子提交、远程听证、语言口译、残障便利、费用罚金、陪审义务和小额纠纷恢复。
 - `domains/data-broker-registry-opt-out-deletion-continuity/`、`domains/privacy-rights-access-correction-deletion-continuity/`、`domains/opt-out-preference-signal-consent-revocation-continuity/`、`domains/commercial-surveillance-adtech-profile-continuity/`、`domains/sensitive-location-data-exposure-continuity/`、`domains/biometric-identifier-template-governance-continuity/`、`domains/children-teen-data-privacy-consent-continuity/` 和 `domains/data-breach-notification-identity-recovery-continuity/` 负责个人数据权利、隐私暴露与数据经纪连续性，覆盖数据经纪、访问更正删除、同意撤回、商业监控、位置数据、生物特征、未成年数据和泄露恢复。
+- `domains/youth-social-media-mental-health-continuity/`、`domains/youth-online-safety-by-design-platform-governance-continuity/`、`domains/cyberbullying-online-harassment-reporting-continuity/`、`domains/online-child-sexual-exploitation-sextortion-reporting-continuity/`、`domains/gaming-loot-box-inapp-purchase-dark-pattern-continuity/` 和 `domains/child-stealth-advertising-influencer-marketing-continuity/` 负责儿童青少年线上健康与平台风险连续性，覆盖青少年社交媒体心理健康、线上安全设计与平台治理、网络霸凌骚扰举报、儿童线上性剥削与 sextortion 举报、游戏内购/loot box/暗黑模式和儿童隐性广告/网红营销。
 - `domains/content-provenance-authenticity-credential-continuity/`、`domains/synthetic-media-watermarking-disclosure-continuity/`、`domains/ai-impersonation-deepfake-fraud-continuity/`、`domains/voice-call-caller-id-authentication-continuity/`、`domains/email-domain-authentication-spoofing-continuity/`、`domains/official-web-domain-brand-impersonation-continuity/`、`domains/digital-evidence-preservation-chain-of-custody-continuity/` 和 `domains/platform-content-moderation-notice-appeal-continuity/` 负责数字内容可信、合成媒体与冒充风险连续性，覆盖内容来源凭据、合成媒体披露、AI 冒充、电话认证、邮件认证、官网品牌冒充、数字证据保存和平台审核通知申诉。
 - `domains/copyright-authorship-registration-licensing-continuity/`、`domains/dmca-notice-counter-notice-platform-removal-continuity/`、`domains/creative-commons-open-content-license-continuity/`、`domains/open-source-software-license-compliance-continuity/`、`domains/trademark-brand-identity-rights-continuity/`、`domains/patent-invention-disclosure-maintenance-continuity/`、`domains/creator-royalty-rights-metadata-continuity/` 和 `domains/ai-training-data-rights-opt-out-provenance-continuity/` 负责知识产权、数字作品与 AI 训练数据权利连续性，覆盖版权作者身份登记许可、DMCA 通知反通知、开放内容许可、开源软件许可证、商标品牌身份、专利披露维护、创作者版税元数据和 AI 训练数据权利/provenance。
 - `domains/transportation-access-mobility/` 负责公共交通、无障碍交通、出行时间、医疗交通、交通成本和外部资源可达性。
@@ -1204,6 +1211,7 @@ human_infra/
 - 2026-07-01：新增第 117 波青少年到成年转变连续性域，覆盖离家无家可归青年外展庇护、寄养出离独立生活、少年司法重返 aftercare、过渡年龄青年心理健康、机会青年教育就业和怀孕育儿青年家庭支持。
 - 2026-07-01：新增第 118 波围产期连续性域，覆盖产前照护接入风险筛查、产后恢复随访、哺乳泵奶支持、早产 NICU 出院转接、妊娠丧失悲伤支持和围产期心理健康筛查转介。
 - 2026-07-01：新增第 119 波儿科预防与早期筛查连续性域，覆盖新生儿筛查结果随访、儿童健康体检预防照护、儿童免疫排程记录、发育行为筛查转介、儿童铅筛查环境随访和特殊健康需求儿童照护协调。
+- 2026-07-01：新增第 120 波儿童青少年线上健康与平台风险连续性域，覆盖青少年社交媒体心理健康、线上安全设计与平台治理、网络霸凌骚扰举报、儿童线上性剥削与 sextortion 举报、游戏内购/loot box/暗黑模式和儿童隐性广告/网红营销。
 - 2026-06-30：新增第四十一波 6 个收入、税务、社保、退休、失业和工伤权益记录连续性域，覆盖工资雇佣记录、税务申报记录、社会保险收入与福利记录、退休养老金计划、失业保险工资记录和工伤职业伤害权益。
 - 2026-06-30：新增第四十波 6 个资格证明、证照与能力可携带连续性域，覆盖教育记录核验、职业证照认证、技能胜任力凭证、继续教育再认证、学徒制工作中学习和可验证凭证钱包互操作。
 - 2026-06-30：新增第三十九波 6 个算法化准入、筛查与资格连续性域，覆盖信用与消费者报告、租房筛查、背景记录筛查、算法招聘、保险算法评分和公共福利自动资格系统。

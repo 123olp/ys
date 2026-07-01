@@ -1314,6 +1314,24 @@ domains/
 ├── children-teen-data-privacy-consent-continuity/
 │   ├── AGENTS.md
 │   └── README.md
+├── youth-social-media-mental-health-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── youth-online-safety-by-design-platform-governance-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── cyberbullying-online-harassment-reporting-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── online-child-sexual-exploitation-sextortion-reporting-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── gaming-loot-box-inapp-purchase-dark-pattern-continuity/
+│   ├── AGENTS.md
+│   └── README.md
+├── child-stealth-advertising-influencer-marketing-continuity/
+│   ├── AGENTS.md
+│   └── README.md
 ├── data-breach-notification-identity-recovery-continuity/
 │   ├── AGENTS.md
 │   └── README.md
@@ -2532,6 +2550,7 @@ domains/
 - `rental-lease-tenancy-rights-continuity/`、`eviction-prevention-court-diversion-continuity/`、`emergency-rental-assistance-arrears-continuity/`、`housing-choice-voucher-public-housing-continuity/`、`fair-housing-discrimination-reasonable-accommodation-continuity/`、`housing-habitability-inspection-code-enforcement-continuity/`、`hud-approved-housing-counseling-navigation-continuity/` 和 `manufactured-housing-park-tenure-safety-continuity/` 负责住房 tenure 稳定与可居住性执行连续性，覆盖租赁居住权、驱逐预防、欠租援助、住房补贴、公平住房、可居住性检查、住房咨询和制造房屋园区稳定。
 - `self-represented-litigant-court-self-help-continuity/`、`court-efiling-document-submission-continuity/`、`remote-hybrid-court-hearing-access-continuity/`、`court-language-access-interpreter-continuity/`、`court-disability-accommodation-accessibility-continuity/`、`court-fees-fines-ability-to-pay-continuity/`、`jury-service-summons-hardship-continuity/` 和 `small-claims-civil-dispute-resolution-continuity/` 负责法院接入与民事程序执行连续性，覆盖自助中心、电子提交、远程 hearing、语言口译、残障便利、费用罚金、陪审义务和小额纠纷恢复。
 - `data-broker-registry-opt-out-deletion-continuity/`、`privacy-rights-access-correction-deletion-continuity/`、`opt-out-preference-signal-consent-revocation-continuity/`、`commercial-surveillance-adtech-profile-continuity/`、`sensitive-location-data-exposure-continuity/`、`biometric-identifier-template-governance-continuity/`、`children-teen-data-privacy-consent-continuity/` 和 `data-breach-notification-identity-recovery-continuity/` 负责个人数据权利、隐私暴露与数据经纪连续性，覆盖数据经纪、访问更正删除、同意撤回、商业监控、位置数据、生物特征、未成年数据和泄露恢复。
+- `youth-social-media-mental-health-continuity/`、`youth-online-safety-by-design-platform-governance-continuity/`、`cyberbullying-online-harassment-reporting-continuity/`、`online-child-sexual-exploitation-sextortion-reporting-continuity/`、`gaming-loot-box-inapp-purchase-dark-pattern-continuity/` 和 `child-stealth-advertising-influencer-marketing-continuity/` 负责儿童青少年线上健康与平台风险连续性，整理青少年社交媒体心理健康、青少年线上安全设计与平台治理、网络霸凌在线骚扰举报、儿童线上性剥削与 sextortion 举报、游戏内购/loot box/暗黑模式和儿童隐性广告/网红营销这些未成年人数字环境风险机制。
 - `content-provenance-authenticity-credential-continuity/`、`synthetic-media-watermarking-disclosure-continuity/`、`ai-impersonation-deepfake-fraud-continuity/`、`voice-call-caller-id-authentication-continuity/`、`email-domain-authentication-spoofing-continuity/`、`official-web-domain-brand-impersonation-continuity/`、`digital-evidence-preservation-chain-of-custody-continuity/` 和 `platform-content-moderation-notice-appeal-continuity/` 负责数字内容可信、合成媒体与冒充风险连续性，覆盖内容来源凭据、合成媒体披露、AI 冒充、电话认证、邮件认证、官网品牌冒充、数字证据保存和平台审核通知申诉。
 - `copyright-authorship-registration-licensing-continuity/`、`dmca-notice-counter-notice-platform-removal-continuity/`、`creative-commons-open-content-license-continuity/`、`open-source-software-license-compliance-continuity/`、`trademark-brand-identity-rights-continuity/`、`patent-invention-disclosure-maintenance-continuity/`、`creator-royalty-rights-metadata-continuity/` 和 `ai-training-data-rights-opt-out-provenance-continuity/` 负责知识产权、数字作品与 AI 训练数据权利连续性，覆盖版权作者身份登记许可、DMCA 通知反通知、开放内容许可、开源软件许可证、商标品牌身份、专利披露维护、创作者版税元数据和 AI 训练数据权利/provenance。
 - `human-animal-bond-companion-care-continuity/`、`veterinary-care-access-cost-continuity/`、`service-animal-disability-access-continuity/`、`pet-identification-microchip-reunification-continuity/`、`pet-food-medication-supply-safety-continuity/`、`pet-disaster-evacuation-sheltering-continuity/`、`animal-shelter-rescue-rehoming-continuity/` 和 `animal-welfare-cruelty-reporting-continuity/` 负责伴侣动物、服务动物与宠物照护连续性，把关系支持、兽医入口、辅助接口、身份重聚、食药供应、灾害撤离、收容转接和福利报告纳入主体持续性模型。
@@ -2632,6 +2651,7 @@ domains/
 - `runaway-homeless-youth-outreach-shelter-continuity/`、`foster-care-aging-out-independent-living-continuity/`、`juvenile-justice-reentry-aftercare-continuity/`、`transition-age-youth-mental-health-service-continuity/`、`opportunity-youth-education-employment-pathway-continuity/` 和 `pregnant-parenting-youth-family-support-continuity/` 负责青少年转变窗口的证据边界，不提供逃离路线、庇护所定位、个案法律、法院、缓刑/监管规避、心理危机、诊断治疗、项目申请、就业、福利、育儿、怀孕、托育、住房或家庭冲突建议，也不收集或推断未成年人位置、身份、风险状态或家庭信息。
 - `prenatal-care-access-risk-screening-continuity/`、`postpartum-care-recovery-follow-up-continuity/`、`lactation-breastfeeding-support-continuity/`、`preterm-birth-nicu-discharge-transition-continuity/`、`pregnancy-loss-stillbirth-bereavement-continuity/` 和 `perinatal-mental-health-screening-referral-continuity/` 负责围产期连续性的证据边界，不提供怀孕确认、筛查解释、产后症状判断、喂养方案、NICU 出院判断、再次怀孕、心理诊断、用药、危机干预、家庭暴力处置、法律、工作学校、保险或个体医疗建议。
 - `newborn-screening-result-followup-continuity/`、`well-child-visit-preventive-care-continuity/`、`childhood-immunization-schedule-record-continuity/`、`developmental-behavioral-screening-referral-continuity/`、`pediatric-lead-screening-environmental-followup-continuity/` 和 `children-youth-special-health-care-needs-care-coordination-continuity/` 负责儿科预防与早期筛查连续性的证据边界，不提供筛查结果解释、遗传风险解释、儿科诊断、体检频率、疫苗建议、补种方案、发育量表解释、铅检测解释、治疗、设备、IEP/504、福利资格、保险授权或个体医疗/教育/法律建议。
+- `youth-social-media-mental-health-continuity/`、`youth-online-safety-by-design-platform-governance-continuity/`、`cyberbullying-online-harassment-reporting-continuity/`、`online-child-sexual-exploitation-sextortion-reporting-continuity/`、`gaming-loot-box-inapp-purchase-dark-pattern-continuity/` 和 `child-stealth-advertising-influencer-marketing-continuity/` 负责儿童青少年线上健康与平台风险连续性的证据边界，不提供心理诊断、危机干预、平台使用处方、屏幕时间计划、年龄验证规避、家长控制绕过、内容审核规避、个案调查、报案、法律申诉、儿童性内容处理、退款策略、营销策略、平台投放优化或未成年人敏感资料收集。
 - `child-care-availability-affordability-continuity/`、`child-care-licensing-health-safety-continuity/`、`child-care-subsidy-ccdf-payment-continuity/`、`head-start-early-head-start-family-support-continuity/`、`early-intervention-idea-part-c-developmental-services-continuity/` 和 `out-of-school-time-afterschool-summer-learning-continuity/` 负责早期儿童照护执行连续性的证据边界，不提供托育机构推荐、补贴申请、儿童诊断、治疗计划、IFSP/IEP 策略、学校安置、接送路线、项目报名、法律、医疗、教育或家庭个案建议。
 - `banking-deposit-account-access-continuity/`、`debt-obligation-collection-relief-continuity/`、`real-property-title-deed-record-continuity/`、`driver-license-vehicle-registration-continuity/`、`passport-travel-document-mobility-continuity/`、`contract-subscription-billing-consent-continuity/` 和 `notary-document-authentication-signature-continuity/` 负责资源控制、移动资格与交易执行连续性的证据边界，不提供个人银行、债务、破产、房产、车辆、驾驶、护照、签证、移民、订阅取消、合同审查、公证、apostille、电子签名、法律、金融或个案策略建议。
 - `long-distance-travel-booking-itinerary-continuity/`、`air-passenger-rights-disruption-refund-continuity/`、`aviation-security-screening-identity-continuity/`、`baggage-personal-property-travel-continuity/`、`lodging-temporary-accommodation-access-continuity/`、`travel-advisory-consular-assistance-continuity/`、`travel-health-preparedness-continuity/` 和 `customs-border-entry-declaration-continuity/` 负责旅行、住宿、安检、领事、健康和边境移动连续性的证据边界，不提供路线推荐、票务套利、退款赔偿、安检规避、违禁品携带、住宿选择、旅行安全、医疗、签证、移民、海关申报、保险、法律或个案策略建议。

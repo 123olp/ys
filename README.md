@@ -1526,6 +1526,12 @@ flowchart TD
 | [Sensitive Location Data Exposure Continuity](domains/sensitive-location-data-exposure-continuity/README.md) | precise location、sensitive places、geofence、mobile ad ID、broker 和 movement history | 防止移动轨迹成为跟踪、歧视、勒索、报复和身份关联攻击面 | 不提供定位、跟踪、地理围栏广告、执法规避、数据购买或去匿名化 |
 | [Biometric Identifier Template Governance Continuity](domains/biometric-identifier-template-governance-continuity/README.md) | face、voice、fingerprint、iris、template、liveness、matching 和 bias | 把身体特征从不可重置凭据风险转化为可治理、可替代、可审查接口 | 不提供生物认证绕过、deepfake、声纹伪造、模板反演或识别部署 |
 | [Children Teen Data Privacy Consent Continuity](domains/children-teen-data-privacy-consent-continuity/README.md) | COPPA、parental consent、age assurance、edtech data、teen privacy 和 retention | 防止未成年数据足迹在主体成熟前消耗安全、发展、注意力和未来选择权 | 不提供年龄规避、儿童画像、广告 targeting、家长控制绕过或监控方法 |
+| [Youth Social Media Mental Health Continuity](domains/youth-social-media-mental-health-continuity/README.md) | 青少年社交媒体、推荐流、同伴反馈、比较压力、身体形象、睡眠扰动和心理健康风险 | 把社交媒体环境对睡眠、注意力、归属感、情绪恢复和求助路径的影响纳入主体持续性 | 不提供心理诊断、危机干预、平台使用处方、屏幕时间计划、家庭冲突或治疗建议 |
+| [Youth Online Safety By Design Platform Governance Continuity](domains/youth-online-safety-by-design-platform-governance-continuity/README.md) | safety by design、age-appropriate design、默认安全设置、风险评估、透明度、举报响应和研究访问 | 把未成年人线上安全从家庭事后补救上移到平台设计、透明度和治理接口 | 不提供平台合规法律意见、年龄验证规避、家长控制绕过、内容审核规避或增长策略 |
+| [Cyberbullying Online Harassment Reporting Continuity](domains/cyberbullying-online-harassment-reporting-continuity/README.md) | cyberbullying、在线骚扰、羞辱扩散、威胁、冒充、举报响应、学校/平台接口和恢复支持 | 防止线上霸凌切断出勤、学习参与、关系安全、心理恢复和数字行动能力 | 不提供个案调查、证据固定、报案、法律、平台申诉、反击策略或危机处置建议 |
+| [Online Child Sexual Exploitation Sextortion Reporting Continuity](domains/online-child-sexual-exploitation-sextortion-reporting-continuity/README.md) | online enticement、sextortion、CSAM、非自愿影像、CyberTipline、平台举报和受害者支持 | 让儿童线上性剥削风险进入可举报、可移除、可转介和可恢复的保护链 | 不处理、生成、分析、索取、传播或保存任何儿童性内容、个案资料、调查取证或法律建议 |
+| [Gaming Loot Box Inapp Purchase Dark Pattern Continuity](domains/gaming-loot-box-inapp-purchase-dark-pattern-continuity/README.md) | 游戏内购、loot boxes、虚拟货币、随机奖励、订阅、dark patterns、退款摩擦和家长同意 | 把儿童游戏商业机制对注意力、睡眠、家庭资源、消费压力和自我控制的影响纳入审查 | 不提供退款、法律申诉、家长控制设置、充值套利、账号交易、外挂或内购绕过方法 |
+| [Child Stealth Advertising Influencer Marketing Continuity](domains/child-stealth-advertising-influencer-marketing-continuity/README.md) | 儿童隐性广告、influencer marketing、native advertising、广告披露、kidfluencers 和商业内容标签 | 防止儿童把广告、同伴内容和真实信息混为一体，保护注意力、判断力和家庭资源 | 不提供儿童营销策略、披露规避、平台投放优化、违规判断、刷量或个案建议 |
 | [Data Breach Notification Identity Recovery Continuity](domains/data-breach-notification-identity-recovery-continuity/README.md) | breach notification、identity theft recovery、credit freeze、fraud alert 和 remediation | 让泄露事件后的身份、账号、信用、医疗、税务和公共服务入口可恢复 | 不提供索赔建议、冻结操作、账号恢复代办、撞库、暗网搜索或泄露利用 |
 | [Content Provenance Authenticity Credential Continuity](domains/content-provenance-authenticity-credential-continuity/README.md) | content provenance、content credentials、publisher identity、signature、metadata 和 verification UX | 让数字内容来源、编辑历史和发布主体成为可审查线索 | 不提供伪造凭据、删元数据、绕过水印、取证结论或平台处置建议 |
 | [Synthetic Media Watermarking Disclosure Continuity](domains/synthetic-media-watermarking-disclosure-continuity/README.md) | synthetic media、AI-generated content、watermarking、disclosure、labeling 和 detector limitation | 降低 AI 合成内容对信任、证据、情绪和公共判断的劫持风险 | 不提供 deepfake 制作、检测规避、水印移除、个案判断或舆论操控 |
@@ -2118,6 +2124,12 @@ human_infra/
 │   ├── sensitive-location-data-exposure-continuity/
 │   ├── biometric-identifier-template-governance-continuity/
 │   ├── children-teen-data-privacy-consent-continuity/
+│   ├── youth-social-media-mental-health-continuity/
+│   ├── youth-online-safety-by-design-platform-governance-continuity/
+│   ├── cyberbullying-online-harassment-reporting-continuity/
+│   ├── online-child-sexual-exploitation-sextortion-reporting-continuity/
+│   ├── gaming-loot-box-inapp-purchase-dark-pattern-continuity/
+│   ├── child-stealth-advertising-influencer-marketing-continuity/
 │   ├── runaway-homeless-youth-outreach-shelter-continuity/
 │   ├── foster-care-aging-out-independent-living-continuity/
 │   ├── juvenile-justice-reentry-aftercare-continuity/
@@ -2653,5 +2665,6 @@ flowchart LR
 - 2026-07-01：新增第一百一十七波 6 个青少年到成年转变连续性域，覆盖离家无家可归青年外展庇护、寄养出离独立生活、少年司法重返 aftercare、过渡年龄青年心理健康、机会青年教育就业和怀孕育儿青年家庭支持。
 - 2026-07-01：新增第一百一十八波 6 个围产期连续性域，覆盖产前照护接入风险筛查、产后恢复随访、哺乳泵奶支持、早产 NICU 出院转接、妊娠丧失悲伤支持和围产期心理健康筛查转介。
 - 2026-07-01：新增第一百一十九波 6 个儿科预防与早期筛查连续性域，覆盖新生儿筛查结果随访、儿童健康体检预防照护、儿童免疫排程记录、发育行为筛查转介、儿童铅筛查环境随访和特殊健康需求儿童照护协调。
+- 2026-07-01：新增第一百二十波 6 个儿童青少年线上健康与平台风险连续性域，覆盖青少年社交媒体心理健康、线上安全设计与平台治理、网络霸凌骚扰举报、儿童线上性剥削与 sextortion 举报、游戏内购/loot box/暗黑模式和儿童隐性广告/网红营销。
 
 完整记录见 [CHANGELOG.md](CHANGELOG.md)。

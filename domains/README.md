@@ -131,6 +131,12 @@
 - `sensitive-location-data-exposure-continuity/`：敏感位置数据暴露连续性，整理 precise location、sensitive places、geofence、mobile ad ID 和 location brokers。
 - `biometric-identifier-template-governance-continuity/`：生物特征标识与模板治理连续性，整理 face、voice、fingerprint、iris、template、liveness 和 matching risk。
 - `children-teen-data-privacy-consent-continuity/`：儿童青少年数据隐私与同意连续性，整理 COPPA、parental consent、age assurance、edtech data 和 teen privacy。
+- `youth-social-media-mental-health-continuity/`：青少年社交媒体心理健康连续性，整理推荐流、同伴反馈、身体形象、睡眠扰动、注意力负荷和求助路径。
+- `youth-online-safety-by-design-platform-governance-continuity/`：青少年线上安全设计与平台治理连续性，整理 safety by design、年龄适配、默认安全、风险评估、透明度和研究访问。
+- `cyberbullying-online-harassment-reporting-continuity/`：网络霸凌与在线骚扰举报连续性，整理 cyberbullying、online harassment、羞辱扩散、威胁、冒充、举报响应和恢复支持。
+- `online-child-sexual-exploitation-sextortion-reporting-continuity/`：儿童线上性剥削与 sextortion 举报连续性，整理 online enticement、CSAM、非自愿影像、CyberTipline、平台举报和受害者支持。
+- `gaming-loot-box-inapp-purchase-dark-pattern-continuity/`：游戏 loot box、内购与暗黑模式连续性，整理 in-app purchases、随机奖励、虚拟货币、订阅、退款摩擦和儿童消费保护。
+- `child-stealth-advertising-influencer-marketing-continuity/`：儿童隐性广告与网红营销连续性，整理 influencer marketing、native advertising、广告披露、kidfluencers 和商业内容标签。
 - `data-breach-notification-identity-recovery-continuity/`：数据泄露通知与身份恢复连续性，整理 breach notification、identity theft recovery、credit freeze、fraud alert 和 remediation。
 - `content-provenance-authenticity-credential-continuity/`：内容来源、真实性凭据与验证连续性，整理 content provenance、content credentials、publisher identity、metadata 和 verification UX。
 - `synthetic-media-watermarking-disclosure-continuity/`：合成媒体水印与披露连续性，整理 synthetic media、AI-generated content、watermarking、disclosure 和 labeling。

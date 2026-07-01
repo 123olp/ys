@@ -137,3 +137,4 @@ Current decisions:
 - `0122-add-one-hundred-seventeenth-wave-transition-age-youth-domains.md`
 - `0123-add-one-hundred-eighteenth-wave-perinatal-continuity-domains.md`
 - `0124-add-one-hundred-nineteenth-wave-pediatric-prevention-screening-domains.md`
+- `0125-add-one-hundred-twentieth-wave-youth-online-health-platform-risk-domains.md`

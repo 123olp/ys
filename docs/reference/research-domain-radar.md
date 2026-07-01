@@ -181,6 +181,12 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | `sensitive-location-data-exposure-continuity/` | 敏感位置数据决定主体就医、求助、居住、工作和关系轨迹是否会成为攻击面 |
 | `biometric-identifier-template-governance-continuity/` | 生物特征模板治理决定身体凭据、误识别、偏差和不可撤销泄露风险是否可被约束 |
 | `children-teen-data-privacy-consent-continuity/` | 儿童青少年数据隐私决定未成年阶段的数据足迹是否会消耗发展、安全、注意力和成年选择权 |
+| `youth-social-media-mental-health-continuity/` | 青少年社交媒体心理健康决定推荐流、同伴反馈、身体形象和睡眠扰动是否会长期消耗情绪恢复和学习参与 |
+| `youth-online-safety-by-design-platform-governance-continuity/` | 青少年线上安全设计与平台治理决定未成年人保护是否进入默认设置、风险评估、透明度、举报响应和研究访问 |
+| `cyberbullying-online-harassment-reporting-continuity/` | 网络霸凌与在线骚扰举报决定线上伤害能否被学校、家庭、平台和支持服务接住 |
+| `online-child-sexual-exploitation-sextortion-reporting-continuity/` | 儿童线上性剥削与 sextortion 举报决定高度敏感伤害能否只进入官方保护、移除、转介和恢复链 |
+| `gaming-loot-box-inapp-purchase-dark-pattern-continuity/` | 游戏 loot box、内购与暗黑模式决定儿童注意力、家庭资源和消费控制是否被不透明机制消耗 |
+| `child-stealth-advertising-influencer-marketing-continuity/` | 儿童隐性广告与网红营销决定商业说服是否会混入内容、同伴影响和平台推荐中侵蚀判断力 |
 | `data-breach-notification-identity-recovery-continuity/` | 数据泄露通知和身份恢复决定泄露事件能否从不可见攻击面转成可处理恢复链 |
 | `content-provenance-authenticity-credential-continuity/` | 内容来源凭据决定主体能否识别材料发布者、编辑历史和可信验证入口 |
 | `synthetic-media-watermarking-disclosure-continuity/` | 合成媒体水印与披露决定 AI 生成内容是否会伪装成真实记录、证据或权威材料 |
@@ -1377,6 +1383,10 @@ Research Domain Radar 记录尚未晋升为正式 `domains/*` 的潜在研究域
 | Child Welfare Information Gateway / CDC ACEs / Children’s Bureau | 提示儿童保护、家庭安全、ACEs、儿童福利和制度伤害风险是儿童发展之外的独立未来主体形成域 |
 | FTC Scams / IdentityTheft.gov / CFPB Consumer Protection / FBI IC3 | 提示诈骗、身份盗用、投诉举报和消费者保护是数字身份与金融韧性之外的独立恢复域 |
 | StopBullying.gov / NCMEC CyberTipline / FTC Online Safety | 提示网络霸凌、在线骚扰、儿童在线剥削和数字伤害预防是数字参与安全的独立域 |
+| U.S. Surgeon General / HHS / NTIA / AAP youth online health and safety materials | 提示社交媒体、推荐系统、平台默认设计、家庭媒体边界和研究访问会影响青少年心理健康、睡眠、注意力和恢复能力 |
+| StopBullying.gov cyberbullying materials | 提示网络霸凌和在线骚扰需要连接学校、家庭、平台举报、心理支持和反报复边界 |
+| NCMEC / FBI / DOJ online child exploitation and sextortion materials | 提示儿童线上性剥削、sextortion 和 CSAM 举报必须有严格官方链路、受害者支持和禁止处理边界 |
+| FTC children gaming, dark patterns and advertising materials | 提示游戏内购、loot box、虚拟货币、暗黑模式、隐性广告和 influencer marketing 会影响儿童注意力、家庭资源和消费判断 |
 | NIH GARD / FDA Rare Diseases / NIH Undiagnosed Diseases Network | 提示罕见病和未确诊疾病需要独立处理诊断漫游、专家网络、患者登记、孤儿药和研究窗口 |
 | HHS Multiple Chronic Conditions / WHO Medication Without Harm / AHRQ Care Coordination | 提示多病共存、多重用药、治疗负担和跨专科照护协调是药品可及之外的独立复杂照护域 |
 | AHRQ Care Coordination / AHRQ care transitions resources / CMS quality and discharge materials | 提示出院、交接、用药重整、随访和再入院风险是医疗服务连续性中的独立断点 |
@@ -1620,6 +1630,15 @@ Source links:
 - https://www.ftc.gov/news-events/topics/protecting-consumer-privacy-security/location-data
 - https://www.nist.gov/programs-projects/face-recognition-vendor-test-frvt
 - https://www.ftc.gov/business-guidance/privacy-security/childrens-privacy
+- https://www.hhs.gov/surgeongeneral/priorities/youth-mental-health/social-media/index.html
+- https://www.ntia.gov/page/kids-online-health-and-safety-task-force
+- https://www.aap.org/en/patient-care/media-and-children/
+- https://www.stopbullying.gov/cyberbullying/what-is-it
+- https://report.cybertip.org/
+- https://www.fbi.gov/how-we-can-help-you/victim-services/cenp
+- https://www.justice.gov/criminal/criminal-ceos
+- https://www.ftc.gov/business-guidance/advertising-marketing/children
+- https://www.ftc.gov/business-guidance/blog/2022/09/bringing-dark-patterns-light
 - https://www.identitytheft.gov/
 - https://consumer.ftc.gov/articles/data-breach-response-guide-business
 - https://c2pa.org/specifications/specifications/2.1/specs/C2PA_Specification.html

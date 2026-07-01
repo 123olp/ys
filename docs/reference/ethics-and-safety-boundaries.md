@@ -228,6 +228,24 @@ Human Infra 不能被设计成更精密的压榨系统。
 - 收集、推断、公开或关联真实个人资料、数据经纪记录、地址、联系方式、位置轨迹、生物特征、未成年信息、泄露通知、账号凭据、SSN、金融账户、医疗账户、受害者身份或家庭关系等高风险敏感信息。
 - 把数据暴露、画像误用、泄露损害、诈骗受害、身份恢复失败、同意撤回失败、未成年人隐私风险或生物特征不可替换风险归因于个人不谨慎、技术素养不足、消费选择或不愿阅读条款。
 
+## 儿童青少年线上健康与平台风险连续性边界
+
+`youth-social-media-mental-health-continuity`、`youth-online-safety-by-design-platform-governance-continuity`、`cyberbullying-online-harassment-reporting-continuity`、`online-child-sexual-exploitation-sextortion-reporting-continuity`、`gaming-loot-box-inapp-purchase-dark-pattern-continuity` 和 `child-stealth-advertising-influencer-marketing-continuity` 关注未成年人数字环境如何通过推荐、默认设计、霸凌、剥削、游戏商业机制和隐性广告影响睡眠、注意力、心理恢复、关系安全、家庭资源和未来选择权，不是个人心理、家庭管控、学校投诉、平台操作、法律或营销建议入口。
+
+可以做：
+
+- 整理 U.S. Surgeon General、HHS/NTIA、AAP、StopBullying.gov、NCMEC、FBI、DOJ、FTC 和平台公开资料中的对象、机制、风险链、举报/转介接口和禁止用途。
+- 比较社交媒体心理健康、平台安全设计、网络霸凌、儿童线上性剥削、游戏内购暗黑模式和儿童隐性广告在睡眠、注意力、心理恢复、学习参与、消费压力和家庭支持上的断点。
+- 记录未成年人数据最小化、禁止个案判断、禁止二次伤害、官方举报链、危机服务转介、广告披露和平台透明度边界。
+
+不能做：
+
+- 不提供心理诊断、危机干预、平台使用处方、屏幕时间计划、家庭冲突处理、学校投诉、平台申诉、法律、执法、营销、退款、家长控制或个案建议。
+- 不判断某个儿童是否成瘾、抑郁、焦虑、自伤风险、被剥削、被霸凌、适合某平台、适合某游戏、需要被限制、需要报警或需要治疗。
+- 不生成举报文案、申诉文案、取证步骤、安全计划、诱捕策略、反击策略、退款策略、平台规避、年龄验证规避、家长控制绕过、内容审核规避、儿童广告投放、隐性营销或增长优化。
+- 不处理、生成、分析、索取、传播或保存任何儿童性内容、非自愿影像、聊天记录、账号、位置、学校、家庭、心理状态、消费记录、设备信息或其他未成年人敏感资料。
+- 不替代家长/监护人、学校、平台官方举报入口、NCMEC、执法、儿童保护、危机热线、心理健康专业人员、法律服务、消费者保护机构或广告合规专业判断。
+
 ## 数字内容可信、合成媒体与冒充风险连续性边界
 
 `content-provenance-authenticity-credential-continuity`、`synthetic-media-watermarking-disclosure-continuity`、`ai-impersonation-deepfake-fraud-continuity`、`voice-call-caller-id-authentication-continuity`、`email-domain-authentication-spoofing-continuity`、`official-web-domain-brand-impersonation-continuity`、`digital-evidence-preservation-chain-of-custody-continuity` 和 `platform-content-moderation-notice-appeal-continuity` 关注内容、通信和平台裁决如何保持可信、可说明、可申诉和可恢复，以及这些过程如何影响判断、支付、求助、维权、声誉、收入、表达和未来选择权，不是 deepfake、钓鱼、诈骗、取证操作、平台对抗或舆论操控工具。
