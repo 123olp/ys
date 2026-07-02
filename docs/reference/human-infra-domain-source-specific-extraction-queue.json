@@ -1,0 +1,78 @@
+{
+  "schemaVersion": "human-infra.domain-source-specific-extraction-queue.v1",
+  "queueId": "human-infra-domain-source-specific-extraction-queue-2026-07-02",
+  "status": "active-source-specific-extraction-queue-gate",
+  "purpose": "Define the derived source-specific reading queue required to turn domain field slots into exact claim, endpoint, population, uncertainty and transfer-boundary Source Cards.",
+  "sourceOfTruth": {
+    "domainSourceCardFieldExtraction": "docs/reference/human-infra-domain-source-card-field-extraction.json",
+    "domainClaimEvidenceMatrix": "docs/reference/human-infra-domain-claim-evidence-matrix.json",
+    "sourceCardExtractionRegister": "docs/reference/human-infra-falsifier-source-card-extraction.json",
+    "sourceCardSystem": "docs/reference/source-card-system.md",
+    "maturityGapRegister": "docs/reference/human-infra-maturity-gap-register.json"
+  },
+  "scope": {
+    "coverageLevel": "derived-domain-source-reading-queue-v0.1",
+    "derivedTaskUnit": "domainId + sourceCardId",
+    "coveredDomainCount": 26,
+    "coveredFieldRowCount": 26,
+    "expectedTaskCount": 81,
+    "expectedUniqueSourceAnchorCount": 20,
+    "selectionRule": "Derive one task for every sourceCardId attached to every field row in the domain Source Card field-extraction register.",
+    "currentLimitations": [
+      "This queue derives source-specific reading tasks; it does not contain completed source-specific extractions.",
+      "A queued task is not evidence that the cited source supports the domain endpoint.",
+      "No queued row may be promoted into calibrated modeling until exact claim, endpoint, population, uncertainty and transfer-boundary fields are filled from the source.",
+      "The queue covers current priority domains only; C2 long-tail domains still need future inclusion."
+    ]
+  },
+  "requiredPerTaskFields": [
+    "domainId",
+    "domainClaimId",
+    "fieldCardId",
+    "sourceCardId",
+    "exactClaimUse",
+    "endpointDefinition",
+    "populationOrSample",
+    "effectOrMechanismSignal",
+    "uncertaintyOrBias",
+    "transferBoundary",
+    "modelAdmissionDecision",
+    "nextAction"
+  ],
+  "queueDefaults": {
+    "taskStatus": "queued-source-specific-extraction-required",
+    "modelAdmissionDecision": "blocked-until-source-specific-fields-are-extracted",
+    "blockedUses": [
+      "calibrated-prediction",
+      "individual-recommendation",
+      "intervention-ranking",
+      "individual-death-date-output",
+      "domain-claim-upgrade"
+    ],
+    "minimumExtractionQuestion": "For this domain-source pair, what exact claim, endpoint, population, uncertainty and transfer boundary can this source support without overclaiming?"
+  },
+  "derivedQueueSummary": {
+    "coveredDomainCount": 26,
+    "coveredFieldRowCount": 26,
+    "derivedTaskCount": 81,
+    "uniqueSourceAnchorCount": 20,
+    "fieldCompletionState": "queue-derived-not-source-specific-extracted",
+    "remainingWork": [
+      "Generate source-specific Source Card rows for each derived task.",
+      "Fill exact claim use, endpoint definition, population/sample, effect/mechanism signal, uncertainty/bias and transfer boundary.",
+      "Only after field completion, decide whether a domain-source pair is eligible for qualitative support, model variable transfer, downgrade or rejection."
+    ]
+  },
+  "nonClaims": [
+    "This queue does not validate that any source supports any domain claim.",
+    "This queue does not complete source-specific reading.",
+    "This queue does not authorize calibrated prediction, individual advice, intervention ranking or individual death-date output.",
+    "This queue does not complete C2 long-tail domain coverage."
+  ],
+  "indexRequirements": [
+    "README.md",
+    "docs/reference/README.md",
+    "docs/reference/human-infra-maturity-roadmap.md",
+    "tools/README.md"
+  ]
+}

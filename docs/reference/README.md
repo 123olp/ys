@@ -20,6 +20,7 @@ Current documents:
 - `human-infra-domain-falsifier-coverage.json`: machine-readable C1 and priority C2 domain-level falsifier, downgrade-condition, variable-interface and prohibited-use coverage gate.
 - `human-infra-domain-claim-evidence-matrix.json`: machine-readable domain-level Claim-Evidence Matrix seed that joins the current 26 priority research domains to claim sources, variable-contract sources, falsifier sources, extracted Source Card IDs and next extraction steps.
 - `human-infra-domain-source-card-field-extraction.json`: machine-readable domain Source Card field-extraction register for endpoint candidates, population-boundary slots, uncertainty-channel slots, transfer-boundary slots and next source-specific extraction actions.
+- `human-infra-domain-source-specific-extraction-queue.json`: machine-readable queue that derives the 26 domain field rows into 81 domain-source reading tasks over 20 source anchors, while blocking calibrated modeling until exact claim, endpoint, population, uncertainty and transfer-boundary fields are extracted.
 - `human-infra-falsifier-source-card-backfill.json`: machine-readable v0.1 Source Card anchor backfill for current paper strong-claim falsifiers and C1/C2 priority-domain falsifier rows.
 - `human-infra-falsifier-source-card-extraction.json`: machine-readable field-level Source Card extraction register for all current falsifier source anchors.
 - `human-infra-maturity-gap-register.json`: machine-readable 100% maturity gap register for value clarity, research-framework and quantitative-model gates.

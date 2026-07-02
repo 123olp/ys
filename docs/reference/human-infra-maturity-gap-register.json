@@ -114,7 +114,7 @@
     {
       "axisId": "research_framework",
       "axisName": "研究框架",
-      "currentPercent": 83,
+      "currentPercent": 84,
       "targetPercent": 100,
       "definitionOfDone": "Every strong project claim can be traced to source cards, claim-evidence rows, variables, mechanism links, falsifiers, model position and governance boundary.",
       "primaryEvidence": [
@@ -124,6 +124,7 @@
         "docs/reference/human-infra-paper-claim-register.json",
         "docs/reference/human-infra-domain-claim-evidence-matrix.json",
         "docs/reference/human-infra-domain-source-card-field-extraction.json",
+        "docs/reference/human-infra-domain-source-specific-extraction-queue.json",
         "docs/reference/human-infra-falsifier-source-card-backfill.json",
         "docs/reference/human-infra-falsifier-source-card-extraction.json",
         "domains/README.md",
@@ -164,13 +165,14 @@
             "domains/c1-boundary-rewriting/longevity-evidence/docs/life-path-data-source-cards.md",
             "docs/reference/human-infra-domain-claim-evidence-matrix.json",
             "docs/reference/human-infra-domain-source-card-field-extraction.json",
+            "docs/reference/human-infra-domain-source-specific-extraction-queue.json",
             "tools/audit_human_infra_domain_claim_evidence_matrix.py"
           ],
           "missingEvidence": [
-            "Source-specific endpoint, population, effect-size, uncertainty and transfer-boundary rows for each domain-source pair.",
+            "Completed source-specific endpoint, population, effect-size, uncertainty and transfer-boundary rows for each of the 81 queued domain-source tasks.",
             "Domain-level Claim-Evidence Matrix coverage beyond the current priority C1/C2 set."
           ],
-          "nextAction": "Split the 26 field rows into source-specific Source Cards for endpoint definitions, populations, uncertainty channels and transfer boundaries.",
+          "nextAction": "Execute the 81 queued domain-source tasks and fill exact claim, endpoint definition, population, effect/mechanism signal, uncertainty and transfer-boundary Source Card fields.",
           "blocks100Percent": true
         },
         {
@@ -182,13 +184,14 @@
             "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_calibration_readiness.json",
             "docs/reference/human-infra-domain-falsifier-coverage.json",
             "docs/reference/human-infra-domain-claim-evidence-matrix.json",
-            "docs/reference/human-infra-domain-source-card-field-extraction.json"
+            "docs/reference/human-infra-domain-source-card-field-extraction.json",
+            "docs/reference/human-infra-domain-source-specific-extraction-queue.json"
           ],
           "missingEvidence": [
-            "Reusable variable template promoted from endpoint candidate slots into source-specific variable cards.",
+            "Reusable variable template promoted from the 81 queued source-specific endpoint tasks into source-specific variable cards.",
             "Domain-specific variable tables for C2 long-tail claims beyond the current priority set."
           ],
-          "nextAction": "Use the field extraction register as the join point, then extract source-specific variable, endpoint and uncertainty contracts.",
+          "nextAction": "Use the domain-source queue as the worklist, then extract source-specific variable, endpoint and uncertainty contracts.",
           "blocks100Percent": true
         },
         {
@@ -216,11 +219,13 @@
             "docs/reference/human-infra-domain-falsifier-coverage.json",
             "docs/reference/human-infra-domain-claim-evidence-matrix.json",
             "docs/reference/human-infra-domain-source-card-field-extraction.json",
+            "docs/reference/human-infra-domain-source-specific-extraction-queue.json",
             "docs/reference/human-infra-falsifier-source-card-backfill.json",
             "docs/reference/human-infra-falsifier-source-card-extraction.json",
             "tools/audit_human_infra_domain_falsifier_coverage.py",
             "tools/audit_human_infra_domain_claim_evidence_matrix.py",
             "tools/audit_human_infra_domain_source_card_field_extraction.py",
+            "tools/audit_human_infra_domain_source_specific_extraction_queue.py",
             "tools/audit_human_infra_falsifier_source_card_backfill.py",
             "tools/audit_human_infra_falsifier_source_card_extraction.py",
             "tools/audit_human_infra_page_claim_consistency.py",
@@ -228,9 +233,9 @@
           ],
           "missingEvidence": [
             "Falsifier rows for C2 domain claims beyond the current 20-domain priority set.",
-            "Source-specific rows that bind each source anchor to exact claim, variable, endpoint, population, uncertainty and transfer-boundary evidence."
+            "Completed source-specific rows that bind each queued source anchor to exact claim, variable, endpoint, population, uncertainty and transfer-boundary evidence."
           ],
-          "nextAction": "Convert current field slots into source-specific Source Cards with exact claim, variable, endpoint, population, uncertainty and transfer-boundary evidence.",
+          "nextAction": "Fill the domain-source extraction queue with exact claim, variable, endpoint, population, uncertainty and transfer-boundary evidence.",
           "blocks100Percent": true
         }
       ]
@@ -377,7 +382,7 @@
   "nextWorkOrder": [
     {
       "priority": 1,
-      "item": "Convert the 26 domain field-extraction rows into source-specific Source Cards with exact claim, endpoint, population, effect-size, uncertainty and transfer-boundary evidence.",
+      "item": "Fill the 81 queued domain-source tasks with exact claim, endpoint, population, effect-size, uncertainty and transfer-boundary evidence.",
       "unblocks": [
         "RESEARCH-G6-falsifier-and-downgrade-coverage"
       ]
