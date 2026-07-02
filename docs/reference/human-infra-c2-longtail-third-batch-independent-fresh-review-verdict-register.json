@@ -1,0 +1,1090 @@
+{
+  "schemaVersion": "human-infra.c2-longtail-third-batch-independent-fresh-review-verdict-register.v1",
+  "registerId": "human-infra-c2-longtail-third-batch-independent-fresh-review-verdict-register-2026-07-03",
+  "status": "active-fresh-review-verdict-register-complete",
+  "purpose": "Record independent fresh-review verdicts for C2-LT-B3 neuro-sensory-cognitive source-context extraction rows while keeping reviewed artifacts, corrected-source re-extraction, model admission and individual-use claims blocked.",
+  "sourceOfTruth": {
+    "independentFreshReviewProtocol": "docs/reference/human-infra-c2-longtail-third-batch-independent-fresh-review-protocol.json",
+    "localReviewRegister": "docs/reference/human-infra-c2-longtail-third-batch-local-review-register.json",
+    "sourceExtractionRegister": "docs/reference/human-infra-c2-longtail-third-batch-source-extraction-register.json",
+    "sourceResolutionRegister": "docs/reference/human-infra-c2-longtail-third-batch-source-resolution-register.json",
+    "evidencePolicy": "docs/reference/evidence-policy.md",
+    "maturityGapRegister": "docs/reference/human-infra-maturity-gap-register.json"
+  },
+  "scope": {
+    "reviewedBatchIds": [
+      "C2LTB3-FRB-01-neuro-icu-swallow-neuromuscular",
+      "C2LTB3-FRB-02-vision-hearing-vestibular-language"
+    ],
+    "reviewedBatchCount": 2,
+    "totalLocalReviewedExtractionTaskCount": 24,
+    "reviewedExtractionTaskCount": 24,
+    "remainingExtractionTaskCount": 0,
+    "reviewedDomainCount": 12,
+    "sourceResolutionIssueCount": 5,
+    "sourceResolutionSupportedCount": 5,
+    "boundedArtifactEligibleCount": 18,
+    "correctedSourceReextractionEligibleCount": 5,
+    "downgradeBeforeFillCount": 1,
+    "reviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+    "artifactPromotionDecision": "complete-two-batches-reviewed-bounded-artifact-fill-only-for-eligible-rows-and-corrected-reextraction-for-source-resolution-rows",
+    "nonClaims": [
+      "This verdict register is not a completed Source Card set or reviewed artifact set.",
+      "This verdict register does not authorize calibrated prediction, individual advice, individual death-date output, intervention ranking, domain-claim upgrade or clinical-validity claims.",
+      "Both C2-LT-B3 fresh-review batches have received verdicts; reviewed artifacts remain a separate promotion step.",
+      "Rows marked source-resolution-supported must enter corrected-source re-extraction or bounded companion-source review before any artifact fill.",
+      "Rows marked downgrade-required cannot fill reviewed artifacts until their downgrade condition is represented explicitly."
+    ]
+  },
+  "requiredReviewFields": [
+    "sourceIdentityVerdict",
+    "sourceResolutionVerdict",
+    "sourceContextVerdict",
+    "exactClaimUseVerdict",
+    "domainTransferVerdict",
+    "modelPositionVerdict",
+    "uncertaintyBoundaryVerdict",
+    "downgradeVerdict",
+    "blockedUseVerdict",
+    "reviewerNote"
+  ],
+  "verdictTaxonomy": [
+    "support-with-boundary",
+    "bounded-support",
+    "source-resolution-supported",
+    "downgrade-required",
+    "reject-source-context-mismatch",
+    "cannot-evaluate-insufficient-context"
+  ],
+  "artifactPromotionDecisions": [
+    "eligible-for-bounded-artifact-fill",
+    "eligible-for-corrected-source-reextraction",
+    "downgrade-before-fill",
+    "rejected-no-fill",
+    "blocked-cannot-evaluate"
+  ],
+  "blockedUses": [
+    "calibrated-prediction",
+    "individual-advice",
+    "individual-death-date-output",
+    "intervention-ranking",
+    "clinical-validity-claim",
+    "domain-claim-upgrade"
+  ],
+  "sourceTaskFreshReviews": [
+    {
+      "taskId": "C2LTB3-EXT-001",
+      "domainId": "traumatic-brain-injury-neurotrauma-recovery",
+      "reviewedSourceTitle": "Guidelines for the Management of Severe Traumatic Brain Injury, Fourth Edition",
+      "reviewedSourceUrl": "https://pubmed.ncbi.nlm.nih.gov/27654000/",
+      "freshReviewDate": "2026-07-03",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "freshReviewEvidence": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/27654000/",
+          "evidenceType": "ncbi-esummary-bibliographic-identity-check",
+          "finding": "NCBI ESummary identifies PMID 27654000 as Guidelines for the Management of Severe Traumatic Brain Injury, Fourth Edition. (Neurosurgery, 2017 Jan 1); use as source identity and bibliographic context evidence only."
+        }
+      ],
+      "sourceResolutionEvidence": [],
+      "registeredSourceRole": "severe-tbi-clinical-guideline-anchor",
+      "registeredExactClaimUse": "Can support source-context framing that severe traumatic brain injury management is governed through evidence-based recommendations around acute neurocritical care variables rather than a single longevity intervention.",
+      "registeredTransferBoundary": "Do not transfer this severe TBI guideline to mild pediatric concussion, chronic neurodegeneration, personal prognosis or generic cognitive enhancement claims.",
+      "sourceIdentityVerdict": "verified primary or authoritative source route",
+      "sourceResolutionVerdict": "no-source-resolution-required",
+      "sourceContextVerdict": "supports registered source role with clinical guideline or consensus boundary",
+      "exactClaimUseVerdict": "supports exact claim use as vocabulary, endpoint, source-lineage or route context only; no calibrated effect size or individual recommendation is admitted",
+      "domainTransferVerdict": "bounded transfer to endpoint, variable, program or care-pathway vocabulary; no intervention benefit, clinical decision or personal prognosis is admitted",
+      "modelPositionVerdict": "model-language-only; calibrated prediction, intervention ranking and individual prognosis remain blocked",
+      "uncertaintyBoundaryVerdict": "must carry source currentness, population/setting, evidence-grade, access, endpoint and implementation-transfer limits before artifact fill",
+      "downgradeVerdict": "supports bounded endpoint, variable and care-pathway vocabulary only",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this reviewed task",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-reviewed-source-context-only-no-calibrated-model-admission",
+      "reviewerNote": "Supports bounded route, endpoint and variable vocabulary only."
+    },
+    {
+      "taskId": "C2LTB3-EXT-002",
+      "domainId": "traumatic-brain-injury-neurotrauma-recovery",
+      "reviewedSourceTitle": "CDC Traumatic Brain Injury Clinical Guidance",
+      "reviewedSourceUrl": "https://www.cdc.gov/traumatic-brain-injury/hcp/clinical-guidance/index.html",
+      "freshReviewDate": "2026-07-03",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "freshReviewEvidence": [
+        {
+          "url": "https://www.cdc.gov/traumatic-brain-injury/hcp/clinical-guidance/index.html",
+          "evidenceType": "official-public-health-guidance-page",
+          "finding": "CDC page resolves for CDC Traumatic Brain Injury Clinical Guidance; use as public-health/program or guidance context only, not effect-size evidence."
+        }
+      ],
+      "sourceResolutionEvidence": [],
+      "registeredSourceRole": "pediatric-mild-tbi-clinical-guidance-boundary-source",
+      "registeredExactClaimUse": "Can support pediatric mild TBI clinical guidance context, especially evaluation, warning signs and management boundaries for concussion-like injury.",
+      "registeredTransferBoundary": "Do not use this page to support adult severe TBI, intracranial pressure management, ICU treatment or calibrated recovery predictions.",
+      "sourceIdentityVerdict": "verified authoritative public or guideline source route",
+      "sourceResolutionVerdict": "no-source-resolution-required",
+      "sourceContextVerdict": "supports registered source role with public-health, education, burden or route-context boundary",
+      "exactClaimUseVerdict": "supports exact claim use as vocabulary, endpoint, source-lineage or route context only; no calibrated effect size or individual recommendation is admitted",
+      "domainTransferVerdict": "bounded transfer to endpoint, variable, program or care-pathway vocabulary; no intervention benefit, clinical decision or personal prognosis is admitted",
+      "modelPositionVerdict": "model-language-only; calibrated prediction, intervention ranking and individual prognosis remain blocked",
+      "uncertaintyBoundaryVerdict": "must carry source currentness, population/setting, evidence-grade, access, endpoint and implementation-transfer limits before artifact fill",
+      "downgradeVerdict": "bounded public/context source; do not convert to intervention effect, mortality or personal prognosis evidence",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this reviewed task",
+      "reviewerVerdict": "bounded-support",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-reviewed-source-context-only-no-calibrated-model-admission",
+      "reviewerNote": "Bounded source-context support only; no effect-size, treatment ranking or individual prognosis use."
+    },
+    {
+      "taskId": "C2LTB3-EXT-003",
+      "domainId": "epilepsy-seizure-network-stability",
+      "reviewedSourceTitle": "NICE NG217 Epilepsies in children, young people and adults",
+      "reviewedSourceUrl": "https://www.nice.org.uk/guidance/ng217",
+      "freshReviewDate": "2026-07-03",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "freshReviewEvidence": [
+        {
+          "url": "https://www.nice.org.uk/guidance/ng217",
+          "evidenceType": "official-guideline-page",
+          "finding": "NICE guidance page resolves for NICE NG217 Epilepsies in children, young people and adults; use as official guideline-scope and care-route context evidence only."
+        }
+      ],
+      "sourceResolutionEvidence": [],
+      "registeredSourceRole": "epilepsy-clinical-guideline-anchor",
+      "registeredExactClaimUse": "Can support that epilepsy continuity depends on structured diagnosis, seizure classification, treatment planning, emergency/status epilepticus response and SUDEP risk reduction.",
+      "registeredTransferBoundary": "Do not use as proof that a given therapy improves life expectancy or cognitive outcome without separate endpoint evidence.",
+      "sourceIdentityVerdict": "verified primary or authoritative source route",
+      "sourceResolutionVerdict": "no-source-resolution-required",
+      "sourceContextVerdict": "supports registered source role with clinical guideline or consensus boundary",
+      "exactClaimUseVerdict": "supports exact claim use as vocabulary, endpoint, source-lineage or route context only; no calibrated effect size or individual recommendation is admitted",
+      "domainTransferVerdict": "bounded transfer to endpoint, variable, program or care-pathway vocabulary; no intervention benefit, clinical decision or personal prognosis is admitted",
+      "modelPositionVerdict": "model-language-only; calibrated prediction, intervention ranking and individual prognosis remain blocked",
+      "uncertaintyBoundaryVerdict": "must carry source currentness, population/setting, evidence-grade, access, endpoint and implementation-transfer limits before artifact fill",
+      "downgradeVerdict": "supports bounded endpoint, variable and care-pathway vocabulary only",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this reviewed task",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-reviewed-source-context-only-no-calibrated-model-admission",
+      "reviewerNote": "Supports bounded route, endpoint and variable vocabulary only."
+    },
+    {
+      "taskId": "C2LTB3-EXT-004",
+      "domainId": "epilepsy-seizure-network-stability",
+      "reviewedSourceTitle": "WHO Epilepsy fact sheet",
+      "reviewedSourceUrl": "https://www.who.int/news-room/fact-sheets/detail/epilepsy",
+      "freshReviewDate": "2026-07-03",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "freshReviewEvidence": [
+        {
+          "url": "https://www.who.int/news-room/fact-sheets/detail/epilepsy",
+          "evidenceType": "official-public-health-fact-sheet",
+          "finding": "WHO fact sheet resolves for WHO Epilepsy fact sheet; use as population burden and health-system context only."
+        }
+      ],
+      "sourceResolutionEvidence": [],
+      "registeredSourceRole": "epilepsy-public-health-burden-context-source",
+      "registeredExactClaimUse": "Can support qualitative public-health context that epilepsy is a major neurologic condition affecting function, safety and social participation.",
+      "registeredTransferBoundary": "Do not use WHO burden text as calibrated hazard, treatment-effect or individual prognosis evidence.",
+      "sourceIdentityVerdict": "verified authoritative public or guideline source route",
+      "sourceResolutionVerdict": "no-source-resolution-required",
+      "sourceContextVerdict": "supports registered source role with public-health, education, burden or route-context boundary",
+      "exactClaimUseVerdict": "supports exact claim use as vocabulary, endpoint, source-lineage or route context only; no calibrated effect size or individual recommendation is admitted",
+      "domainTransferVerdict": "bounded transfer to endpoint, variable, program or care-pathway vocabulary; no intervention benefit, clinical decision or personal prognosis is admitted",
+      "modelPositionVerdict": "model-language-only; calibrated prediction, intervention ranking and individual prognosis remain blocked",
+      "uncertaintyBoundaryVerdict": "must carry source currentness, population/setting, evidence-grade, access, endpoint and implementation-transfer limits before artifact fill",
+      "downgradeVerdict": "bounded public/context source; do not convert to intervention effect, mortality or personal prognosis evidence",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this reviewed task",
+      "reviewerVerdict": "bounded-support",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-reviewed-source-context-only-no-calibrated-model-admission",
+      "reviewerNote": "Bounded source-context support only; no effect-size, treatment ranking or individual prognosis use."
+    },
+    {
+      "taskId": "C2LTB3-EXT-005",
+      "domainId": "intensive-care-organ-support-delirium-continuity",
+      "reviewedSourceTitle": "PADIS Clinical Practice Guidelines for adult ICU patients",
+      "reviewedSourceUrl": "https://pubmed.ncbi.nlm.nih.gov/30113379/",
+      "freshReviewDate": "2026-07-03",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "freshReviewEvidence": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30113379/",
+          "evidenceType": "ncbi-esummary-bibliographic-identity-check",
+          "finding": "NCBI ESummary identifies PMID 30113379 as Clinical Practice Guidelines for the Prevention and Management of Pain, Agitation/Sedation, Delirium, Immobility, and Sleep Disruption in Adult Patients in the ICU. (Crit Care Med, 2018 Sep); use as source identity and bibliographic context evidence only."
+        }
+      ],
+      "sourceResolutionEvidence": [],
+      "registeredSourceRole": "adult-icu-padis-guideline-anchor",
+      "registeredExactClaimUse": "Can support adult ICU continuity framing around pain, agitation/sedation, delirium, immobility and sleep disruption as linked care domains.",
+      "registeredTransferBoundary": "Do not transfer PADIS recommendations to non-ICU cognitive enhancement or personal long-term prognosis without separate data.",
+      "sourceIdentityVerdict": "verified primary or authoritative source route",
+      "sourceResolutionVerdict": "no-source-resolution-required",
+      "sourceContextVerdict": "supports registered source role with clinical guideline or consensus boundary",
+      "exactClaimUseVerdict": "supports exact claim use as vocabulary, endpoint, source-lineage or route context only; no calibrated effect size or individual recommendation is admitted",
+      "domainTransferVerdict": "bounded transfer to endpoint, variable, program or care-pathway vocabulary; no intervention benefit, clinical decision or personal prognosis is admitted",
+      "modelPositionVerdict": "model-language-only; calibrated prediction, intervention ranking and individual prognosis remain blocked",
+      "uncertaintyBoundaryVerdict": "must carry source currentness, population/setting, evidence-grade, access, endpoint and implementation-transfer limits before artifact fill",
+      "downgradeVerdict": "supports bounded endpoint, variable and care-pathway vocabulary only",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this reviewed task",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-reviewed-source-context-only-no-calibrated-model-admission",
+      "reviewerNote": "Supports bounded route, endpoint and variable vocabulary only."
+    },
+    {
+      "taskId": "C2LTB3-EXT-006",
+      "domainId": "intensive-care-organ-support-delirium-continuity",
+      "reviewedSourceTitle": "NICE CG103 Delirium: prevention, diagnosis and management",
+      "reviewedSourceUrl": "https://www.nice.org.uk/guidance/cg103",
+      "freshReviewDate": "2026-07-03",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "freshReviewEvidence": [
+        {
+          "url": "https://www.nice.org.uk/guidance/cg103",
+          "evidenceType": "official-guideline-page",
+          "finding": "NICE guidance page resolves for NICE CG103 Delirium: prevention, diagnosis and management; use as official guideline-scope and care-route context evidence only."
+        }
+      ],
+      "sourceResolutionEvidence": [],
+      "registeredSourceRole": "delirium-prevention-diagnosis-management-guideline-anchor",
+      "registeredExactClaimUse": "Can support that delirium prevention, diagnosis and management in adults is a clinical continuity issue in hospitals and long-term care.",
+      "registeredTransferBoundary": "Do not use as evidence for non-clinical attention optimization, dementia treatment or individual mortality prediction.",
+      "sourceIdentityVerdict": "verified primary or authoritative source route",
+      "sourceResolutionVerdict": "no-source-resolution-required",
+      "sourceContextVerdict": "supports registered source role with clinical guideline or consensus boundary",
+      "exactClaimUseVerdict": "supports exact claim use as vocabulary, endpoint, source-lineage or route context only; no calibrated effect size or individual recommendation is admitted",
+      "domainTransferVerdict": "bounded transfer to endpoint, variable, program or care-pathway vocabulary; no intervention benefit, clinical decision or personal prognosis is admitted",
+      "modelPositionVerdict": "model-language-only; calibrated prediction, intervention ranking and individual prognosis remain blocked",
+      "uncertaintyBoundaryVerdict": "must carry source currentness, population/setting, evidence-grade, access, endpoint and implementation-transfer limits before artifact fill",
+      "downgradeVerdict": "supports bounded endpoint, variable and care-pathway vocabulary only",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this reviewed task",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-reviewed-source-context-only-no-calibrated-model-admission",
+      "reviewerNote": "Supports bounded route, endpoint and variable vocabulary only."
+    },
+    {
+      "taskId": "C2LTB3-EXT-007",
+      "domainId": "post-stroke-dysphagia-screening-recovery-continuity",
+      "reviewedSourceTitle": "ESO and ESSD guideline for diagnosis and treatment of post-stroke dysphagia",
+      "reviewedSourceUrl": "https://pubmed.ncbi.nlm.nih.gov/28390560/",
+      "freshReviewDate": "2026-07-03",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "freshReviewEvidence": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28390560/",
+          "evidenceType": "ncbi-esummary-bibliographic-identity-check",
+          "finding": "NCBI ESummary identifies PMID 28390560 as Reproductive Health Screening in Women with Autoimmune Diseases. (Rheum Dis Clin North Am, 2017 May); use as source identity and bibliographic context evidence only."
+        }
+      ],
+      "sourceResolutionEvidence": [
+        {
+          "candidateId": "C2LTB3-SRR-001-CAND-01",
+          "candidateRole": "corrected-guideline-source",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34746431/",
+          "evidenceType": "bibliographic-clinical-guideline-index",
+          "finding": "PMID 34746431 matches the queued ESO/ESSD post-stroke dysphagia guideline title and should replace the mismatched PMID 28390560 for this row.",
+          "useBoundary": "Use only after independent fresh review for post-stroke dysphagia screening, diagnosis, treatment-route and endpoint vocabulary; no individual swallowing advice or calibrated outcome claim."
+        }
+      ],
+      "registeredSourceRole": "invalid-for-queued-post-stroke-dysphagia-claim",
+      "registeredExactClaimUse": "The queued PMID resolves to a reproductive-health screening article, so it cannot support post-stroke dysphagia diagnosis or treatment claims. A likely correction candidate is PMID 34746431.",
+      "registeredTransferBoundary": "Must not be used for swallowing safety, aspiration, nutrition, stroke rehabilitation or mortality claims.",
+      "sourceIdentityVerdict": "original source issue confirmed; corrected, split or route-normalized candidate is available for re-extraction",
+      "sourceResolutionVerdict": "source-resolution-supported; original row cannot fill artifacts until corrected candidate is re-extracted and reviewed",
+      "sourceContextVerdict": "original registered source context is blocked; source-resolution candidates support the next corrected-source workflow only",
+      "exactClaimUseVerdict": "supports exact claim use as vocabulary, endpoint, source-lineage or route context only; no calibrated effect size or individual recommendation is admitted",
+      "domainTransferVerdict": "bounded transfer to endpoint, variable, program or care-pathway vocabulary; no intervention benefit, clinical decision or personal prognosis is admitted",
+      "modelPositionVerdict": "model-language-only; calibrated prediction, intervention ranking and individual prognosis remain blocked",
+      "uncertaintyBoundaryVerdict": "must carry source currentness, population/setting, evidence-grade, access, endpoint and implementation-transfer limits before artifact fill",
+      "downgradeVerdict": "source-resolution issue row must not fill artifacts from the original mismatched or access-limited route",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this reviewed task",
+      "reviewerVerdict": "source-resolution-supported",
+      "artifactPromotionDecision": "eligible-for-corrected-source-reextraction",
+      "modelAdmissionDecision": "blocked-reviewed-source-context-only-no-calibrated-model-admission",
+      "reviewerNote": "Source-resolution is supported, but this row must move to corrected-source re-extraction before any reviewed artifact fill."
+    },
+    {
+      "taskId": "C2LTB3-EXT-008",
+      "domainId": "post-stroke-dysphagia-screening-recovery-continuity",
+      "reviewedSourceTitle": "NICE NG236 Stroke rehabilitation in adults",
+      "reviewedSourceUrl": "https://www.nice.org.uk/guidance/ng236",
+      "freshReviewDate": "2026-07-03",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "freshReviewEvidence": [
+        {
+          "url": "https://www.nice.org.uk/guidance/ng236",
+          "evidenceType": "official-guideline-page",
+          "finding": "NICE guidance page resolves for NICE NG236 Stroke rehabilitation in adults; use as official guideline-scope and care-route context evidence only."
+        }
+      ],
+      "sourceResolutionEvidence": [],
+      "registeredSourceRole": "stroke-rehabilitation-guideline-context-source",
+      "registeredExactClaimUse": "Can support stroke rehabilitation context for adults, including assessment and therapy across common post-stroke problems; use as rehabilitation-route context rather than a dedicated dysphagia guideline.",
+      "registeredTransferBoundary": "Do not use as the sole source for aspiration pneumonia risk, swallow screening protocol efficacy or dysphagia-specific treatment effects.",
+      "sourceIdentityVerdict": "verified primary or authoritative source route",
+      "sourceResolutionVerdict": "no-source-resolution-required",
+      "sourceContextVerdict": "supports registered source role with clinical guideline or consensus boundary",
+      "exactClaimUseVerdict": "supports exact claim use as vocabulary, endpoint, source-lineage or route context only; no calibrated effect size or individual recommendation is admitted",
+      "domainTransferVerdict": "bounded transfer to endpoint, variable, program or care-pathway vocabulary; no intervention benefit, clinical decision or personal prognosis is admitted",
+      "modelPositionVerdict": "model-language-only; calibrated prediction, intervention ranking and individual prognosis remain blocked",
+      "uncertaintyBoundaryVerdict": "must carry source currentness, population/setting, evidence-grade, access, endpoint and implementation-transfer limits before artifact fill",
+      "downgradeVerdict": "supports bounded endpoint, variable and care-pathway vocabulary only",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this reviewed task",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-reviewed-source-context-only-no-calibrated-model-admission",
+      "reviewerNote": "Supports bounded route, endpoint and variable vocabulary only."
+    },
+    {
+      "taskId": "C2LTB3-EXT-009",
+      "domainId": "myasthenia-gravis-neuromuscular-junction-continuity",
+      "reviewedSourceTitle": "International Consensus Guidance for Management of Myasthenia Gravis: 2020 Update",
+      "reviewedSourceUrl": "https://pubmed.ncbi.nlm.nih.gov/33144515/",
+      "freshReviewDate": "2026-07-03",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "freshReviewEvidence": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33144515/",
+          "evidenceType": "ncbi-esummary-bibliographic-identity-check",
+          "finding": "NCBI ESummary identifies PMID 33144515 as International Consensus Guidance for Management of Myasthenia Gravis: 2020 Update. (Neurology, 2021 Jan 19); use as source identity and bibliographic context evidence only."
+        }
+      ],
+      "sourceResolutionEvidence": [],
+      "registeredSourceRole": "myasthenia-gravis-consensus-update-anchor",
+      "registeredExactClaimUse": "Can support updated consensus guidance context for myasthenia gravis management, including treatment classes and special clinical situations.",
+      "registeredTransferBoundary": "Do not use as personal treatment recommendation, generalized neuromuscular enhancement evidence or individual prognosis.",
+      "sourceIdentityVerdict": "verified primary or authoritative source route",
+      "sourceResolutionVerdict": "no-source-resolution-required",
+      "sourceContextVerdict": "supports registered source role with clinical guideline or consensus boundary",
+      "exactClaimUseVerdict": "supports exact claim use as vocabulary, endpoint, source-lineage or route context only; no calibrated effect size or individual recommendation is admitted",
+      "domainTransferVerdict": "bounded transfer to endpoint, variable, program or care-pathway vocabulary; no intervention benefit, clinical decision or personal prognosis is admitted",
+      "modelPositionVerdict": "model-language-only; calibrated prediction, intervention ranking and individual prognosis remain blocked",
+      "uncertaintyBoundaryVerdict": "must carry source currentness, population/setting, evidence-grade, access, endpoint and implementation-transfer limits before artifact fill",
+      "downgradeVerdict": "supports bounded endpoint, variable and care-pathway vocabulary only",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this reviewed task",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-reviewed-source-context-only-no-calibrated-model-admission",
+      "reviewerNote": "Supports bounded route, endpoint and variable vocabulary only."
+    },
+    {
+      "taskId": "C2LTB3-EXT-010",
+      "domainId": "myasthenia-gravis-neuromuscular-junction-continuity",
+      "reviewedSourceTitle": "International consensus guidance for management of myasthenia gravis: Executive summary",
+      "reviewedSourceUrl": "https://pubmed.ncbi.nlm.nih.gov/26494222/",
+      "freshReviewDate": "2026-07-03",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "freshReviewEvidence": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26494222/",
+          "evidenceType": "ncbi-esummary-bibliographic-identity-check",
+          "finding": "NCBI ESummary identifies PMID 26494222 as Reply to Letter: Complexity of venous symptoms. (Phlebology, 2016 Mar); use as source identity and bibliographic context evidence only."
+        }
+      ],
+      "sourceResolutionEvidence": [
+        {
+          "candidateId": "C2LTB3-SRR-002-CAND-01",
+          "candidateRole": "corrected-consensus-source",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/27358333/",
+          "evidenceType": "bibliographic-clinical-consensus-index",
+          "finding": "PMID 27358333 matches the queued MG executive-summary title and should replace mismatched PMID 26494222 for this row.",
+          "useBoundary": "Use only after independent fresh review for MG management taxonomy, crisis-risk, bulbar/respiratory variables and treatment-route vocabulary; no individual treatment advice."
+        }
+      ],
+      "registeredSourceRole": "invalid-for-queued-myasthenia-gravis-executive-summary-claim",
+      "registeredExactClaimUse": "The queued PMID resolves to a reply about venous symptoms, so it cannot support the myasthenia gravis executive summary. A likely correction candidate is PMID 27358333.",
+      "registeredTransferBoundary": "Must not be used for MG treatment, crisis, subtype or prognosis claims.",
+      "sourceIdentityVerdict": "original source issue confirmed; corrected, split or route-normalized candidate is available for re-extraction",
+      "sourceResolutionVerdict": "source-resolution-supported; original row cannot fill artifacts until corrected candidate is re-extracted and reviewed",
+      "sourceContextVerdict": "original registered source context is blocked; source-resolution candidates support the next corrected-source workflow only",
+      "exactClaimUseVerdict": "supports exact claim use as vocabulary, endpoint, source-lineage or route context only; no calibrated effect size or individual recommendation is admitted",
+      "domainTransferVerdict": "bounded transfer to endpoint, variable, program or care-pathway vocabulary; no intervention benefit, clinical decision or personal prognosis is admitted",
+      "modelPositionVerdict": "model-language-only; calibrated prediction, intervention ranking and individual prognosis remain blocked",
+      "uncertaintyBoundaryVerdict": "must carry source currentness, population/setting, evidence-grade, access, endpoint and implementation-transfer limits before artifact fill",
+      "downgradeVerdict": "source-resolution issue row must not fill artifacts from the original mismatched or access-limited route",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this reviewed task",
+      "reviewerVerdict": "source-resolution-supported",
+      "artifactPromotionDecision": "eligible-for-corrected-source-reextraction",
+      "modelAdmissionDecision": "blocked-reviewed-source-context-only-no-calibrated-model-admission",
+      "reviewerNote": "Source-resolution is supported, but this row must move to corrected-source re-extraction before any reviewed artifact fill."
+    },
+    {
+      "taskId": "C2LTB3-EXT-011",
+      "domainId": "spinal-muscular-atrophy-motor-neuron-continuity",
+      "reviewedSourceTitle": "Diagnosis and management of spinal muscular atrophy: Part 1",
+      "reviewedSourceUrl": "https://pubmed.ncbi.nlm.nih.gov/29305137/",
+      "freshReviewDate": "2026-07-03",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "freshReviewEvidence": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29305137/",
+          "evidenceType": "ncbi-esummary-bibliographic-identity-check",
+          "finding": "NCBI ESummary identifies PMID 29305137 as Diagnosis and management of spinal muscular atrophy: Part 2: Pulmonary and acute care; medications, supplements and immunizations; other organ systems; and ethics. (Neuromuscul Disord, 2018 Mar); use as source identity and bibliographic context evidence only."
+        }
+      ],
+      "sourceResolutionEvidence": [
+        {
+          "candidateId": "C2LTB3-SRR-003-CAND-01",
+          "candidateRole": "corrected-part1-source",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29290580/",
+          "evidenceType": "bibliographic-clinical-consensus-index",
+          "finding": "PMID 29290580 matches the queued Part 1 title and should replace PMID 29305137 for Part 1 diagnosis/rehabilitation/orthopedic/nutritional extraction.",
+          "useBoundary": "Use only after independent fresh review for SMA Part 1 artifact scope; do not merge with Part 2 pulmonary/acute-care content without a split row, and do not generate individual care advice."
+        },
+        {
+          "candidateId": "C2LTB3-SRR-003-CAND-02",
+          "candidateRole": "misrouted-part2-source-to-split-row",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29305137/",
+          "evidenceType": "bibliographic-clinical-consensus-index",
+          "finding": "The originally registered PMID is valid SMA evidence, but only for Part 2 scope and should be routed to the Part 2 row after source-resolution.",
+          "useBoundary": "Use only for a split Part 2 context artifact row after independent fresh review; do not count it as Part 1 evidence or generate individual care advice."
+        }
+      ],
+      "registeredSourceRole": "sma-part2-source-misrouted-as-part1",
+      "registeredExactClaimUse": "The queued PMID is relevant to SMA but resolves to the Part 2 consensus document covering pulmonary and acute care, medications, supplements, other organ systems and ethics, not Part 1 diagnosis/rehabilitation/nutrition.",
+      "registeredTransferBoundary": "Do not use this row as SMA Part 1 evidence or as a complete SMA standard-of-care source.",
+      "sourceIdentityVerdict": "original source issue confirmed; corrected, split or route-normalized candidate is available for re-extraction",
+      "sourceResolutionVerdict": "source-resolution-supported; original row cannot fill artifacts until corrected candidate is re-extracted and reviewed",
+      "sourceContextVerdict": "original registered source context is blocked; source-resolution candidates support the next corrected-source workflow only",
+      "exactClaimUseVerdict": "supports exact claim use as vocabulary, endpoint, source-lineage or route context only; no calibrated effect size or individual recommendation is admitted",
+      "domainTransferVerdict": "bounded transfer to endpoint, variable, program or care-pathway vocabulary; no intervention benefit, clinical decision or personal prognosis is admitted",
+      "modelPositionVerdict": "model-language-only; calibrated prediction, intervention ranking and individual prognosis remain blocked",
+      "uncertaintyBoundaryVerdict": "must carry source currentness, population/setting, evidence-grade, access, endpoint and implementation-transfer limits before artifact fill",
+      "downgradeVerdict": "source-resolution issue row must not fill artifacts from the original mismatched or access-limited route",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this reviewed task",
+      "reviewerVerdict": "source-resolution-supported",
+      "artifactPromotionDecision": "eligible-for-corrected-source-reextraction",
+      "modelAdmissionDecision": "blocked-reviewed-source-context-only-no-calibrated-model-admission",
+      "reviewerNote": "Source-resolution is supported, but this row must move to corrected-source re-extraction before any reviewed artifact fill."
+    },
+    {
+      "taskId": "C2LTB3-EXT-012",
+      "domainId": "spinal-muscular-atrophy-motor-neuron-continuity",
+      "reviewedSourceTitle": "Diagnosis and management of spinal muscular atrophy: Part 2",
+      "reviewedSourceUrl": "https://pubmed.ncbi.nlm.nih.gov/29305138/",
+      "freshReviewDate": "2026-07-03",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "freshReviewEvidence": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29305138/",
+          "evidenceType": "ncbi-esummary-bibliographic-identity-check",
+          "finding": "NCBI ESummary identifies PMID 29305138 as MuSK myasthenia gravis and pregnancy. (Neuromuscul Disord, 2018 Feb); use as source identity and bibliographic context evidence only."
+        }
+      ],
+      "sourceResolutionEvidence": [
+        {
+          "candidateId": "C2LTB3-SRR-004-CAND-01",
+          "candidateRole": "corrected-part2-source",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29305137/",
+          "evidenceType": "bibliographic-clinical-consensus-index",
+          "finding": "PMID 29305137 matches the queued SMA Part 2 title and should replace the mismatched PMID 29305138 for this row.",
+          "useBoundary": "Use only after independent fresh review for SMA Part 2 pulmonary, acute-care, medication, immunization, multisystem and ethics scope; no individual care advice."
+        }
+      ],
+      "registeredSourceRole": "invalid-for-queued-sma-part2-claim",
+      "registeredExactClaimUse": "The queued PMID resolves to a MuSK myasthenia gravis and pregnancy article, so it cannot support SMA Part 2. The apparent correction candidate for SMA Part 2 is PMID 29305137.",
+      "registeredTransferBoundary": "Must not be used for SMA diagnosis, care standards, respiratory management or therapy-continuity claims.",
+      "sourceIdentityVerdict": "original source issue confirmed; corrected, split or route-normalized candidate is available for re-extraction",
+      "sourceResolutionVerdict": "source-resolution-supported; original row cannot fill artifacts until corrected candidate is re-extracted and reviewed",
+      "sourceContextVerdict": "original registered source context is blocked; source-resolution candidates support the next corrected-source workflow only",
+      "exactClaimUseVerdict": "supports exact claim use as vocabulary, endpoint, source-lineage or route context only; no calibrated effect size or individual recommendation is admitted",
+      "domainTransferVerdict": "bounded transfer to endpoint, variable, program or care-pathway vocabulary; no intervention benefit, clinical decision or personal prognosis is admitted",
+      "modelPositionVerdict": "model-language-only; calibrated prediction, intervention ranking and individual prognosis remain blocked",
+      "uncertaintyBoundaryVerdict": "must carry source currentness, population/setting, evidence-grade, access, endpoint and implementation-transfer limits before artifact fill",
+      "downgradeVerdict": "source-resolution issue row must not fill artifacts from the original mismatched or access-limited route",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this reviewed task",
+      "reviewerVerdict": "source-resolution-supported",
+      "artifactPromotionDecision": "eligible-for-corrected-source-reextraction",
+      "modelAdmissionDecision": "blocked-reviewed-source-context-only-no-calibrated-model-admission",
+      "reviewerNote": "Source-resolution is supported, but this row must move to corrected-source re-extraction before any reviewed artifact fill."
+    },
+    {
+      "taskId": "C2LTB3-EXT-013",
+      "domainId": "age-related-macular-degeneration-central-vision-continuity",
+      "reviewedSourceTitle": "NICE NG82 Age-related macular degeneration",
+      "reviewedSourceUrl": "https://www.nice.org.uk/guidance/ng82",
+      "freshReviewDate": "2026-07-03",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "freshReviewEvidence": [
+        {
+          "url": "https://www.nice.org.uk/guidance/ng82",
+          "evidenceType": "official-guideline-page",
+          "finding": "NICE guidance page resolves for NICE NG82 Age-related macular degeneration; use as official guideline-scope and care-route context evidence only."
+        }
+      ],
+      "sourceResolutionEvidence": [],
+      "registeredSourceRole": "amd-clinical-guideline-anchor",
+      "registeredExactClaimUse": "Can support adult age-related macular degeneration diagnosis, classification, referral, treatment and monitoring as central-vision continuity infrastructure.",
+      "registeredTransferBoundary": "Do not use for non-AMD vision loss, general eye-health advice or individual treatment ranking.",
+      "sourceIdentityVerdict": "verified primary or authoritative source route",
+      "sourceResolutionVerdict": "no-source-resolution-required",
+      "sourceContextVerdict": "supports registered source role with clinical guideline or consensus boundary",
+      "exactClaimUseVerdict": "supports exact claim use as vocabulary, endpoint, source-lineage or route context only; no calibrated effect size or individual recommendation is admitted",
+      "domainTransferVerdict": "bounded transfer to endpoint, variable, program or care-pathway vocabulary; no intervention benefit, clinical decision or personal prognosis is admitted",
+      "modelPositionVerdict": "model-language-only; calibrated prediction, intervention ranking and individual prognosis remain blocked",
+      "uncertaintyBoundaryVerdict": "must carry source currentness, population/setting, evidence-grade, access, endpoint and implementation-transfer limits before artifact fill",
+      "downgradeVerdict": "supports bounded endpoint, variable and care-pathway vocabulary only",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this reviewed task",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-reviewed-source-context-only-no-calibrated-model-admission",
+      "reviewerNote": "Supports bounded route, endpoint and variable vocabulary only."
+    },
+    {
+      "taskId": "C2LTB3-EXT-014",
+      "domainId": "age-related-macular-degeneration-central-vision-continuity",
+      "reviewedSourceTitle": "National Eye Institute Age-Related Macular Degeneration",
+      "reviewedSourceUrl": "https://www.nei.nih.gov/learn-about-eye-health/eye-conditions-and-diseases/age-related-macular-degeneration",
+      "freshReviewDate": "2026-07-03",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "freshReviewEvidence": [
+        {
+          "url": "https://www.nei.nih.gov/learn-about-eye-health/eye-conditions-and-diseases/age-related-macular-degeneration",
+          "evidenceType": "official-public-condition-education-page",
+          "finding": "National Eye Institute page resolves for National Eye Institute Age-Related Macular Degeneration; use as public condition and functional-impact context only."
+        }
+      ],
+      "sourceResolutionEvidence": [],
+      "registeredSourceRole": "amd-public-condition-context-source",
+      "registeredExactClaimUse": "Can support condition-context framing that AMD affects central vision through macular disease and can impair reading, recognition and daily function.",
+      "registeredTransferBoundary": "Do not use as intervention-effect evidence or individual visual outcome prediction.",
+      "sourceIdentityVerdict": "verified authoritative public or guideline source route",
+      "sourceResolutionVerdict": "no-source-resolution-required",
+      "sourceContextVerdict": "supports registered source role with public-health, education, burden or route-context boundary",
+      "exactClaimUseVerdict": "supports exact claim use as vocabulary, endpoint, source-lineage or route context only; no calibrated effect size or individual recommendation is admitted",
+      "domainTransferVerdict": "bounded transfer to endpoint, variable, program or care-pathway vocabulary; no intervention benefit, clinical decision or personal prognosis is admitted",
+      "modelPositionVerdict": "model-language-only; calibrated prediction, intervention ranking and individual prognosis remain blocked",
+      "uncertaintyBoundaryVerdict": "must carry source currentness, population/setting, evidence-grade, access, endpoint and implementation-transfer limits before artifact fill",
+      "downgradeVerdict": "bounded public/context source; do not convert to intervention effect, mortality or personal prognosis evidence",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this reviewed task",
+      "reviewerVerdict": "bounded-support",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-reviewed-source-context-only-no-calibrated-model-admission",
+      "reviewerNote": "Bounded source-context support only; no effect-size, treatment ranking or individual prognosis use."
+    },
+    {
+      "taskId": "C2LTB3-EXT-015",
+      "domainId": "cataract-vision-restoration-continuity",
+      "reviewedSourceTitle": "NICE NG77 Cataracts in adults: management",
+      "reviewedSourceUrl": "https://www.nice.org.uk/guidance/ng77",
+      "freshReviewDate": "2026-07-03",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "freshReviewEvidence": [
+        {
+          "url": "https://www.nice.org.uk/guidance/ng77",
+          "evidenceType": "official-guideline-page",
+          "finding": "NICE guidance page resolves for NICE NG77 Cataracts in adults: management; use as official guideline-scope and care-route context evidence only."
+        }
+      ],
+      "sourceResolutionEvidence": [],
+      "registeredSourceRole": "cataract-management-guideline-anchor",
+      "registeredExactClaimUse": "Can support adult cataract management as a vision restoration and surgical-continuity domain covering referral, surgery and postoperative care.",
+      "registeredTransferBoundary": "Do not use for non-cataract blindness, individual surgical recommendation or generic longevity claims.",
+      "sourceIdentityVerdict": "verified primary or authoritative source route",
+      "sourceResolutionVerdict": "no-source-resolution-required",
+      "sourceContextVerdict": "supports registered source role with clinical guideline or consensus boundary",
+      "exactClaimUseVerdict": "supports exact claim use as vocabulary, endpoint, source-lineage or route context only; no calibrated effect size or individual recommendation is admitted",
+      "domainTransferVerdict": "bounded transfer to endpoint, variable, program or care-pathway vocabulary; no intervention benefit, clinical decision or personal prognosis is admitted",
+      "modelPositionVerdict": "model-language-only; calibrated prediction, intervention ranking and individual prognosis remain blocked",
+      "uncertaintyBoundaryVerdict": "must carry source currentness, population/setting, evidence-grade, access, endpoint and implementation-transfer limits before artifact fill",
+      "downgradeVerdict": "supports bounded endpoint, variable and care-pathway vocabulary only",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this reviewed task",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-reviewed-source-context-only-no-calibrated-model-admission",
+      "reviewerNote": "Supports bounded route, endpoint and variable vocabulary only."
+    },
+    {
+      "taskId": "C2LTB3-EXT-016",
+      "domainId": "cataract-vision-restoration-continuity",
+      "reviewedSourceTitle": "National Eye Institute Cataracts",
+      "reviewedSourceUrl": "https://www.nei.nih.gov/learn-about-eye-health/eye-conditions-and-diseases/cataracts",
+      "freshReviewDate": "2026-07-03",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "freshReviewEvidence": [
+        {
+          "url": "https://www.nei.nih.gov/learn-about-eye-health/eye-conditions-and-diseases/cataracts",
+          "evidenceType": "official-public-condition-education-page",
+          "finding": "National Eye Institute page resolves for National Eye Institute Cataracts; use as public condition and functional-impact context only."
+        }
+      ],
+      "sourceResolutionEvidence": [],
+      "registeredSourceRole": "cataract-public-condition-context-source",
+      "registeredExactClaimUse": "Can support public condition context that cataracts cloud the lens and can degrade vision, with diagnosis and treatment routes available.",
+      "registeredTransferBoundary": "Do not use as clinical trial evidence, surgical recommendation or personal outcome prediction.",
+      "sourceIdentityVerdict": "verified authoritative public or guideline source route",
+      "sourceResolutionVerdict": "no-source-resolution-required",
+      "sourceContextVerdict": "supports registered source role with public-health, education, burden or route-context boundary",
+      "exactClaimUseVerdict": "supports exact claim use as vocabulary, endpoint, source-lineage or route context only; no calibrated effect size or individual recommendation is admitted",
+      "domainTransferVerdict": "bounded transfer to endpoint, variable, program or care-pathway vocabulary; no intervention benefit, clinical decision or personal prognosis is admitted",
+      "modelPositionVerdict": "model-language-only; calibrated prediction, intervention ranking and individual prognosis remain blocked",
+      "uncertaintyBoundaryVerdict": "must carry source currentness, population/setting, evidence-grade, access, endpoint and implementation-transfer limits before artifact fill",
+      "downgradeVerdict": "bounded public/context source; do not convert to intervention effect, mortality or personal prognosis evidence",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this reviewed task",
+      "reviewerVerdict": "bounded-support",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-reviewed-source-context-only-no-calibrated-model-admission",
+      "reviewerNote": "Bounded source-context support only; no effect-size, treatment ranking or individual prognosis use."
+    },
+    {
+      "taskId": "C2LTB3-EXT-017",
+      "domainId": "age-related-hearing-loss-hearing-aid-continuity",
+      "reviewedSourceTitle": "NICE NG98 Hearing loss in adults: assessment and management",
+      "reviewedSourceUrl": "https://www.nice.org.uk/guidance/ng98",
+      "freshReviewDate": "2026-07-03",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "freshReviewEvidence": [
+        {
+          "url": "https://www.nice.org.uk/guidance/ng98",
+          "evidenceType": "official-guideline-page",
+          "finding": "NICE guidance page resolves for NICE NG98 Hearing loss in adults: assessment and management; use as official guideline-scope and care-route context evidence only."
+        }
+      ],
+      "sourceResolutionEvidence": [],
+      "registeredSourceRole": "adult-hearing-loss-assessment-management-guideline-anchor",
+      "registeredExactClaimUse": "Can support adult hearing-loss continuity through assessment, referral, audiology, management and communication-function pathways.",
+      "registeredTransferBoundary": "Do not use for newborn screening, sudden sensorineural hearing loss emergency pathways or individual device recommendation.",
+      "sourceIdentityVerdict": "verified primary or authoritative source route",
+      "sourceResolutionVerdict": "no-source-resolution-required",
+      "sourceContextVerdict": "supports registered source role with clinical guideline or consensus boundary",
+      "exactClaimUseVerdict": "supports exact claim use as vocabulary, endpoint, source-lineage or route context only; no calibrated effect size or individual recommendation is admitted",
+      "domainTransferVerdict": "bounded transfer to endpoint, variable, program or care-pathway vocabulary; no intervention benefit, clinical decision or personal prognosis is admitted",
+      "modelPositionVerdict": "model-language-only; calibrated prediction, intervention ranking and individual prognosis remain blocked",
+      "uncertaintyBoundaryVerdict": "must carry source currentness, population/setting, evidence-grade, access, endpoint and implementation-transfer limits before artifact fill",
+      "downgradeVerdict": "supports bounded endpoint, variable and care-pathway vocabulary only",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this reviewed task",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-reviewed-source-context-only-no-calibrated-model-admission",
+      "reviewerNote": "Supports bounded route, endpoint and variable vocabulary only."
+    },
+    {
+      "taskId": "C2LTB3-EXT-018",
+      "domainId": "age-related-hearing-loss-hearing-aid-continuity",
+      "reviewedSourceTitle": "WHO Deafness and hearing loss fact sheet",
+      "reviewedSourceUrl": "https://www.who.int/news-room/fact-sheets/detail/deafness-and-hearing-loss",
+      "freshReviewDate": "2026-07-03",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "freshReviewEvidence": [
+        {
+          "url": "https://www.who.int/news-room/fact-sheets/detail/deafness-and-hearing-loss",
+          "evidenceType": "official-public-health-fact-sheet",
+          "finding": "WHO fact sheet resolves for WHO Deafness and hearing loss fact sheet; use as population burden and health-system context only."
+        }
+      ],
+      "sourceResolutionEvidence": [],
+      "registeredSourceRole": "hearing-loss-public-health-burden-context-source",
+      "registeredExactClaimUse": "Can support qualitative population-level context that hearing loss affects communication, participation and access to education/work/social life.",
+      "registeredTransferBoundary": "Do not use as proof of a specific hearing intervention effect or as individual hearing outcome prediction.",
+      "sourceIdentityVerdict": "verified authoritative public or guideline source route",
+      "sourceResolutionVerdict": "no-source-resolution-required",
+      "sourceContextVerdict": "supports registered source role with public-health, education, burden or route-context boundary",
+      "exactClaimUseVerdict": "supports exact claim use as vocabulary, endpoint, source-lineage or route context only; no calibrated effect size or individual recommendation is admitted",
+      "domainTransferVerdict": "bounded transfer to endpoint, variable, program or care-pathway vocabulary; no intervention benefit, clinical decision or personal prognosis is admitted",
+      "modelPositionVerdict": "model-language-only; calibrated prediction, intervention ranking and individual prognosis remain blocked",
+      "uncertaintyBoundaryVerdict": "must carry source currentness, population/setting, evidence-grade, access, endpoint and implementation-transfer limits before artifact fill",
+      "downgradeVerdict": "bounded public/context source; do not convert to intervention effect, mortality or personal prognosis evidence",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this reviewed task",
+      "reviewerVerdict": "bounded-support",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-reviewed-source-context-only-no-calibrated-model-admission",
+      "reviewerNote": "Bounded source-context support only; no effect-size, treatment ranking or individual prognosis use."
+    },
+    {
+      "taskId": "C2LTB3-EXT-019",
+      "domainId": "sudden-hearing-loss-urgent-referral-continuity",
+      "reviewedSourceTitle": "Clinical Practice Guideline: Sudden Hearing Loss (Update)",
+      "reviewedSourceUrl": "https://pubmed.ncbi.nlm.nih.gov/31369359/",
+      "freshReviewDate": "2026-07-03",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "freshReviewEvidence": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31369359/",
+          "evidenceType": "ncbi-esummary-bibliographic-identity-check",
+          "finding": "NCBI ESummary identifies PMID 31369359 as Clinical Practice Guideline: Sudden Hearing Loss (Update). (Otolaryngol Head Neck Surg, 2019 Aug); use as source identity and bibliographic context evidence only."
+        }
+      ],
+      "sourceResolutionEvidence": [],
+      "registeredSourceRole": "adult-sudden-hearing-loss-clinical-guideline-anchor",
+      "registeredExactClaimUse": "Can support that sudden hearing loss requires timely differentiation of sensorineural and conductive causes, urgent management decisions and follow-up.",
+      "registeredTransferBoundary": "Do not use for chronic age-related hearing loss, newborn screening or individual treatment ranking.",
+      "sourceIdentityVerdict": "verified primary or authoritative source route",
+      "sourceResolutionVerdict": "no-source-resolution-required",
+      "sourceContextVerdict": "supports registered source role with clinical guideline or consensus boundary",
+      "exactClaimUseVerdict": "supports exact claim use as vocabulary, endpoint, source-lineage or route context only; no calibrated effect size or individual recommendation is admitted",
+      "domainTransferVerdict": "bounded transfer to endpoint, variable, program or care-pathway vocabulary; no intervention benefit, clinical decision or personal prognosis is admitted",
+      "modelPositionVerdict": "model-language-only; calibrated prediction, intervention ranking and individual prognosis remain blocked",
+      "uncertaintyBoundaryVerdict": "must carry source currentness, population/setting, evidence-grade, access, endpoint and implementation-transfer limits before artifact fill",
+      "downgradeVerdict": "supports bounded endpoint, variable and care-pathway vocabulary only",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this reviewed task",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-reviewed-source-context-only-no-calibrated-model-admission",
+      "reviewerNote": "Supports bounded route, endpoint and variable vocabulary only."
+    },
+    {
+      "taskId": "C2LTB3-EXT-020",
+      "domainId": "sudden-hearing-loss-urgent-referral-continuity",
+      "reviewedSourceTitle": "AAO-HNS Clinical Practice Guideline: Sudden Hearing Loss Update",
+      "reviewedSourceUrl": "https://www.entnet.org/resource/clinical-practice-guideline-sudden-hearing-loss-update/",
+      "freshReviewDate": "2026-07-03",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "freshReviewEvidence": [
+        {
+          "url": "https://www.entnet.org/resource/clinical-practice-guideline-sudden-hearing-loss-update/",
+          "evidenceType": "professional-society-guideline-page",
+          "finding": "AAO-HNS sudden hearing loss guideline route resolves; use only as guideline route identity and source-context support pending bounded extraction."
+        }
+      ],
+      "sourceResolutionEvidence": [
+        {
+          "candidateId": "C2LTB3-SRR-005-CAND-01",
+          "candidateRole": "canonical-publisher-guideline-page",
+          "url": "https://www.entnet.org/quality-practice/quality-products/clinical-practice-guidelines/sudden-hearing-loss-update/",
+          "evidenceType": "professional-society-guideline-page",
+          "finding": "The previously access-limited publisher route now resolves to a canonical AAO-HNS guideline page and should be manually reviewed before content extraction.",
+          "useBoundary": "Use only after manual/source-context fresh review of the publisher page; no individual urgent-referral or treatment-window advice."
+        },
+        {
+          "candidateId": "C2LTB3-SRR-005-CAND-02",
+          "candidateRole": "bibliographic-guideline-companion",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31369359/",
+          "evidenceType": "bibliographic-clinical-guideline-index",
+          "finding": "PMID 31369359 is the PubMed companion record for the AAO-HNS sudden hearing loss update and can anchor bibliographic identity if publisher access changes again.",
+          "useBoundary": "Use only as companion bibliographic identity and source-context artifact support pending fresh review; do not count as an independent second evidence source for the same guideline or generate individual urgent-referral advice."
+        }
+      ],
+      "registeredSourceRole": "blocked-publisher-guideline-route-page",
+      "registeredExactClaimUse": "The publisher landing page returned access-forbidden in automated checks, so this row can only mark the route to the AAO-HNS sudden hearing loss guideline and should rely on the PubMed companion row until manual access succeeds.",
+      "registeredTransferBoundary": "Do not treat this blocked page as independent evidence beyond the companion guideline record.",
+      "sourceIdentityVerdict": "original source issue confirmed; corrected, split or route-normalized candidate is available for re-extraction",
+      "sourceResolutionVerdict": "source-resolution-supported; original row cannot fill artifacts until corrected candidate is re-extracted and reviewed",
+      "sourceContextVerdict": "original registered source context is blocked; source-resolution candidates support the next corrected-source workflow only",
+      "exactClaimUseVerdict": "supports exact claim use as vocabulary, endpoint, source-lineage or route context only; no calibrated effect size or individual recommendation is admitted",
+      "domainTransferVerdict": "bounded transfer to endpoint, variable, program or care-pathway vocabulary; no intervention benefit, clinical decision or personal prognosis is admitted",
+      "modelPositionVerdict": "model-language-only; calibrated prediction, intervention ranking and individual prognosis remain blocked",
+      "uncertaintyBoundaryVerdict": "must carry source currentness, population/setting, evidence-grade, access, endpoint and implementation-transfer limits before artifact fill",
+      "downgradeVerdict": "source-resolution issue row must not fill artifacts from the original mismatched or access-limited route",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this reviewed task",
+      "reviewerVerdict": "source-resolution-supported",
+      "artifactPromotionDecision": "eligible-for-corrected-source-reextraction",
+      "modelAdmissionDecision": "blocked-reviewed-source-context-only-no-calibrated-model-admission",
+      "reviewerNote": "Source-resolution is supported, but this row must move to corrected-source re-extraction before any reviewed artifact fill."
+    },
+    {
+      "taskId": "C2LTB3-EXT-021",
+      "domainId": "vestibular-rehabilitation-balance-compensation-continuity",
+      "reviewedSourceTitle": "Vestibular Rehabilitation for Peripheral Vestibular Hypofunction: Updated Clinical Practice Guideline",
+      "reviewedSourceUrl": "https://pubmed.ncbi.nlm.nih.gov/34864777/",
+      "freshReviewDate": "2026-07-03",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "freshReviewEvidence": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34864777/",
+          "evidenceType": "ncbi-esummary-bibliographic-identity-check",
+          "finding": "NCBI ESummary identifies PMID 34864777 as Vestibular Rehabilitation for Peripheral Vestibular Hypofunction: An Updated Clinical Practice Guideline From the Academy of Neurologic Physical Therapy of the American Physical Therapy Association. (J Neurol Phys Ther, 2022 Apr 1); use as source identity and bibliographic context evidence only."
+        }
+      ],
+      "sourceResolutionEvidence": [],
+      "registeredSourceRole": "updated-vestibular-rehabilitation-guideline-anchor",
+      "registeredExactClaimUse": "Can support that vestibular physical therapy is guideline-supported for peripheral vestibular hypofunction and targets symptoms, gaze/postural stability and function.",
+      "registeredTransferBoundary": "Do not use for non-vestibular falls, central causes of dizziness or personal therapy prescription without clinical context.",
+      "sourceIdentityVerdict": "verified primary or authoritative source route",
+      "sourceResolutionVerdict": "no-source-resolution-required",
+      "sourceContextVerdict": "supports registered source role with clinical guideline or consensus boundary",
+      "exactClaimUseVerdict": "supports exact claim use as vocabulary, endpoint, source-lineage or route context only; no calibrated effect size or individual recommendation is admitted",
+      "domainTransferVerdict": "bounded transfer to endpoint, variable, program or care-pathway vocabulary; no intervention benefit, clinical decision or personal prognosis is admitted",
+      "modelPositionVerdict": "model-language-only; calibrated prediction, intervention ranking and individual prognosis remain blocked",
+      "uncertaintyBoundaryVerdict": "must carry source currentness, population/setting, evidence-grade, access, endpoint and implementation-transfer limits before artifact fill",
+      "downgradeVerdict": "supports bounded endpoint, variable and care-pathway vocabulary only",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this reviewed task",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-reviewed-source-context-only-no-calibrated-model-admission",
+      "reviewerNote": "Supports bounded route, endpoint and variable vocabulary only."
+    },
+    {
+      "taskId": "C2LTB3-EXT-022",
+      "domainId": "vestibular-rehabilitation-balance-compensation-continuity",
+      "reviewedSourceTitle": "Vestibular Rehabilitation for Peripheral Vestibular Hypofunction: Clinical Practice Guideline",
+      "reviewedSourceUrl": "https://pubmed.ncbi.nlm.nih.gov/26913496/",
+      "freshReviewDate": "2026-07-03",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "freshReviewEvidence": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26913496/",
+          "evidenceType": "ncbi-esummary-bibliographic-identity-check",
+          "finding": "NCBI ESummary identifies PMID 26913496 as Vestibular Rehabilitation for Peripheral Vestibular Hypofunction: An Evidence-Based Clinical Practice Guideline: FROM THE AMERICAN PHYSICAL THERAPY ASSOCIATION NEUROLOGY SECTION. (J Neurol Phys Ther, 2016 Apr); use as source identity and bibliographic context evidence only."
+        }
+      ],
+      "sourceResolutionEvidence": [],
+      "registeredSourceRole": "vestibular-rehabilitation-guideline-baseline-source",
+      "registeredExactClaimUse": "Can support baseline guideline context that vestibular rehabilitation benefits peripheral vestibular hypofunction and that isolated smooth-pursuit/saccadic exercises are not sufficient as standalone therapy.",
+      "registeredTransferBoundary": "Do not treat as current-only guidance when EXT-021 updated guideline is available.",
+      "sourceIdentityVerdict": "verified primary or authoritative source route, but currentness/scope downgrade is required",
+      "sourceResolutionVerdict": "no-source-resolution-required",
+      "sourceContextVerdict": "supports historical or earlier guideline source context only with downgrade against newer source availability",
+      "exactClaimUseVerdict": "supports exact claim use as vocabulary, endpoint, source-lineage or route context only; no calibrated effect size or individual recommendation is admitted",
+      "domainTransferVerdict": "bounded transfer to endpoint, variable, program or care-pathway vocabulary; no intervention benefit, clinical decision or personal prognosis is admitted",
+      "modelPositionVerdict": "model-language-only; calibrated prediction, intervention ranking and individual prognosis remain blocked",
+      "uncertaintyBoundaryVerdict": "must carry source currentness, population/setting, evidence-grade, access, endpoint and implementation-transfer limits before artifact fill",
+      "downgradeVerdict": "older guideline row requires downgrade-before-fill because an updated guideline source is present",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this reviewed task",
+      "reviewerVerdict": "downgrade-required",
+      "artifactPromotionDecision": "downgrade-before-fill",
+      "modelAdmissionDecision": "blocked-reviewed-source-context-only-no-calibrated-model-admission",
+      "reviewerNote": "Use only with an explicit currentness downgrade and updated-guideline companion context."
+    },
+    {
+      "taskId": "C2LTB3-EXT-023",
+      "domainId": "newborn-hearing-screening-language-development-continuity",
+      "reviewedSourceTitle": "CDC Early Hearing Detection and Intervention Programs",
+      "reviewedSourceUrl": "https://www.cdc.gov/ncbddd/hearingloss/ehdi-programs.html",
+      "freshReviewDate": "2026-07-03",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "freshReviewEvidence": [
+        {
+          "url": "https://www.cdc.gov/ncbddd/hearingloss/ehdi-programs.html",
+          "evidenceType": "official-public-health-guidance-page",
+          "finding": "CDC page resolves for CDC Early Hearing Detection and Intervention Programs; use as public-health/program or guidance context only, not effect-size evidence."
+        }
+      ],
+      "sourceResolutionEvidence": [],
+      "registeredSourceRole": "ehdi-public-health-program-context-source",
+      "registeredExactClaimUse": "Can support Early Hearing Detection and Intervention program context for screening, follow-up and service linkage for children with hearing loss.",
+      "registeredTransferBoundary": "Do not use as proof of individual language outcome or as a substitute for JCIH benchmark guidance.",
+      "sourceIdentityVerdict": "verified authoritative public or guideline source route",
+      "sourceResolutionVerdict": "no-source-resolution-required",
+      "sourceContextVerdict": "supports registered source role with public-health, education, burden or route-context boundary",
+      "exactClaimUseVerdict": "supports exact claim use as vocabulary, endpoint, source-lineage or route context only; no calibrated effect size or individual recommendation is admitted",
+      "domainTransferVerdict": "bounded transfer to endpoint, variable, program or care-pathway vocabulary; no intervention benefit, clinical decision or personal prognosis is admitted",
+      "modelPositionVerdict": "model-language-only; calibrated prediction, intervention ranking and individual prognosis remain blocked",
+      "uncertaintyBoundaryVerdict": "must carry source currentness, population/setting, evidence-grade, access, endpoint and implementation-transfer limits before artifact fill",
+      "downgradeVerdict": "bounded public/context source; do not convert to intervention effect, mortality or personal prognosis evidence",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this reviewed task",
+      "reviewerVerdict": "bounded-support",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-reviewed-source-context-only-no-calibrated-model-admission",
+      "reviewerNote": "Bounded source-context support only; no effect-size, treatment ranking or individual prognosis use."
+    },
+    {
+      "taskId": "C2LTB3-EXT-024",
+      "domainId": "newborn-hearing-screening-language-development-continuity",
+      "reviewedSourceTitle": "JCIH 2019 Executive Summary",
+      "reviewedSourceUrl": "https://www.jcih.org/JCIH_2019_Executive_Summary.pdf",
+      "freshReviewDate": "2026-07-03",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "freshReviewEvidence": [
+        {
+          "url": "https://www.jcih.org/JCIH_2019_Executive_Summary.pdf",
+          "evidenceType": "professional-consensus-pdf",
+          "finding": "JCIH 2019 executive summary PDF resolves; use as EHDI benchmark and continuity-of-care context only."
+        }
+      ],
+      "sourceResolutionEvidence": [],
+      "registeredSourceRole": "jcih-ehdi-consensus-benchmark-anchor",
+      "registeredExactClaimUse": "Can support JCIH 2019 EHDI benchmark framing: early hearing detection should move from birth screening through diagnosis and intervention, with 1-3-6 and aspirational 1-2-3 timelines to support language and communication outcomes.",
+      "registeredTransferBoundary": "Do not use as proof that screening alone guarantees outcomes; the source explicitly requires diagnosis, amplification/intervention and family support continuity.",
+      "sourceIdentityVerdict": "verified primary or authoritative source route",
+      "sourceResolutionVerdict": "no-source-resolution-required",
+      "sourceContextVerdict": "supports registered source role with clinical guideline or consensus boundary",
+      "exactClaimUseVerdict": "supports exact claim use as vocabulary, endpoint, source-lineage or route context only; no calibrated effect size or individual recommendation is admitted",
+      "domainTransferVerdict": "bounded transfer to endpoint, variable, program or care-pathway vocabulary; no intervention benefit, clinical decision or personal prognosis is admitted",
+      "modelPositionVerdict": "model-language-only; calibrated prediction, intervention ranking and individual prognosis remain blocked",
+      "uncertaintyBoundaryVerdict": "must carry source currentness, population/setting, evidence-grade, access, endpoint and implementation-transfer limits before artifact fill",
+      "downgradeVerdict": "supports bounded endpoint, variable and care-pathway vocabulary only",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this reviewed task",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-reviewed-source-context-only-no-calibrated-model-admission",
+      "reviewerNote": "Supports bounded route, endpoint and variable vocabulary only."
+    }
+  ],
+  "taskCoverage": [
+    {
+      "taskId": "C2LTB3-EXT-001",
+      "domainId": "traumatic-brain-injury-neurotrauma-recovery",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-reviewed-source-context-only-no-calibrated-model-admission"
+    },
+    {
+      "taskId": "C2LTB3-EXT-002",
+      "domainId": "traumatic-brain-injury-neurotrauma-recovery",
+      "reviewerVerdict": "bounded-support",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-reviewed-source-context-only-no-calibrated-model-admission"
+    },
+    {
+      "taskId": "C2LTB3-EXT-003",
+      "domainId": "epilepsy-seizure-network-stability",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-reviewed-source-context-only-no-calibrated-model-admission"
+    },
+    {
+      "taskId": "C2LTB3-EXT-004",
+      "domainId": "epilepsy-seizure-network-stability",
+      "reviewerVerdict": "bounded-support",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-reviewed-source-context-only-no-calibrated-model-admission"
+    },
+    {
+      "taskId": "C2LTB3-EXT-005",
+      "domainId": "intensive-care-organ-support-delirium-continuity",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-reviewed-source-context-only-no-calibrated-model-admission"
+    },
+    {
+      "taskId": "C2LTB3-EXT-006",
+      "domainId": "intensive-care-organ-support-delirium-continuity",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-reviewed-source-context-only-no-calibrated-model-admission"
+    },
+    {
+      "taskId": "C2LTB3-EXT-007",
+      "domainId": "post-stroke-dysphagia-screening-recovery-continuity",
+      "reviewerVerdict": "source-resolution-supported",
+      "artifactPromotionDecision": "eligible-for-corrected-source-reextraction",
+      "modelAdmissionDecision": "blocked-reviewed-source-context-only-no-calibrated-model-admission"
+    },
+    {
+      "taskId": "C2LTB3-EXT-008",
+      "domainId": "post-stroke-dysphagia-screening-recovery-continuity",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-reviewed-source-context-only-no-calibrated-model-admission"
+    },
+    {
+      "taskId": "C2LTB3-EXT-009",
+      "domainId": "myasthenia-gravis-neuromuscular-junction-continuity",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-reviewed-source-context-only-no-calibrated-model-admission"
+    },
+    {
+      "taskId": "C2LTB3-EXT-010",
+      "domainId": "myasthenia-gravis-neuromuscular-junction-continuity",
+      "reviewerVerdict": "source-resolution-supported",
+      "artifactPromotionDecision": "eligible-for-corrected-source-reextraction",
+      "modelAdmissionDecision": "blocked-reviewed-source-context-only-no-calibrated-model-admission"
+    },
+    {
+      "taskId": "C2LTB3-EXT-011",
+      "domainId": "spinal-muscular-atrophy-motor-neuron-continuity",
+      "reviewerVerdict": "source-resolution-supported",
+      "artifactPromotionDecision": "eligible-for-corrected-source-reextraction",
+      "modelAdmissionDecision": "blocked-reviewed-source-context-only-no-calibrated-model-admission"
+    },
+    {
+      "taskId": "C2LTB3-EXT-012",
+      "domainId": "spinal-muscular-atrophy-motor-neuron-continuity",
+      "reviewerVerdict": "source-resolution-supported",
+      "artifactPromotionDecision": "eligible-for-corrected-source-reextraction",
+      "modelAdmissionDecision": "blocked-reviewed-source-context-only-no-calibrated-model-admission"
+    },
+    {
+      "taskId": "C2LTB3-EXT-013",
+      "domainId": "age-related-macular-degeneration-central-vision-continuity",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-reviewed-source-context-only-no-calibrated-model-admission"
+    },
+    {
+      "taskId": "C2LTB3-EXT-014",
+      "domainId": "age-related-macular-degeneration-central-vision-continuity",
+      "reviewerVerdict": "bounded-support",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-reviewed-source-context-only-no-calibrated-model-admission"
+    },
+    {
+      "taskId": "C2LTB3-EXT-015",
+      "domainId": "cataract-vision-restoration-continuity",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-reviewed-source-context-only-no-calibrated-model-admission"
+    },
+    {
+      "taskId": "C2LTB3-EXT-016",
+      "domainId": "cataract-vision-restoration-continuity",
+      "reviewerVerdict": "bounded-support",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-reviewed-source-context-only-no-calibrated-model-admission"
+    },
+    {
+      "taskId": "C2LTB3-EXT-017",
+      "domainId": "age-related-hearing-loss-hearing-aid-continuity",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-reviewed-source-context-only-no-calibrated-model-admission"
+    },
+    {
+      "taskId": "C2LTB3-EXT-018",
+      "domainId": "age-related-hearing-loss-hearing-aid-continuity",
+      "reviewerVerdict": "bounded-support",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-reviewed-source-context-only-no-calibrated-model-admission"
+    },
+    {
+      "taskId": "C2LTB3-EXT-019",
+      "domainId": "sudden-hearing-loss-urgent-referral-continuity",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-reviewed-source-context-only-no-calibrated-model-admission"
+    },
+    {
+      "taskId": "C2LTB3-EXT-020",
+      "domainId": "sudden-hearing-loss-urgent-referral-continuity",
+      "reviewerVerdict": "source-resolution-supported",
+      "artifactPromotionDecision": "eligible-for-corrected-source-reextraction",
+      "modelAdmissionDecision": "blocked-reviewed-source-context-only-no-calibrated-model-admission"
+    },
+    {
+      "taskId": "C2LTB3-EXT-021",
+      "domainId": "vestibular-rehabilitation-balance-compensation-continuity",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-reviewed-source-context-only-no-calibrated-model-admission"
+    },
+    {
+      "taskId": "C2LTB3-EXT-022",
+      "domainId": "vestibular-rehabilitation-balance-compensation-continuity",
+      "reviewerVerdict": "downgrade-required",
+      "artifactPromotionDecision": "downgrade-before-fill",
+      "modelAdmissionDecision": "blocked-reviewed-source-context-only-no-calibrated-model-admission"
+    },
+    {
+      "taskId": "C2LTB3-EXT-023",
+      "domainId": "newborn-hearing-screening-language-development-continuity",
+      "reviewerVerdict": "bounded-support",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-reviewed-source-context-only-no-calibrated-model-admission"
+    },
+    {
+      "taskId": "C2LTB3-EXT-024",
+      "domainId": "newborn-hearing-screening-language-development-continuity",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-reviewed-source-context-only-no-calibrated-model-admission"
+    }
+  ],
+  "remainingFreshReviewBatches": [],
+  "summary": {
+    "reviewerVerdictCounts": {
+      "support-with-boundary": 12,
+      "bounded-support": 6,
+      "source-resolution-supported": 5,
+      "downgrade-required": 1
+    },
+    "artifactPromotionDecisionCounts": {
+      "eligible-for-bounded-artifact-fill": 18,
+      "eligible-for-corrected-source-reextraction": 5,
+      "downgrade-before-fill": 1
+    },
+    "nextRequiredStep": "Run corrected-source re-extraction for source-resolution-supported rows, apply downgrade-before-fill for EXT-022, then create bounded reviewed artifacts for eligible rows only."
+  }
+}

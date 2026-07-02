@@ -1,10 +1,10 @@
 {
   "schemaVersion": "human-infra.maturity-gap-register.v1",
-  "registerId": "human-infra-100-percent-maturity-gap-register-2026-07-02",
+  "registerId": "human-infra-100-percent-maturity-gap-register-2026-07-03",
   "status": "active-gap-register-not-complete",
   "purpose": "Track the concrete evidence still required to move Human Infra from value narrative, research framework and toy quantitative model toward a 100% research system.",
   "sourceRoadmap": "docs/reference/human-infra-maturity-roadmap.md",
-  "currentAssessmentDate": "2026-07-02",
+  "currentAssessmentDate": "2026-07-03",
   "completionRule": "The project is not 100% until every axis reaches 100 and every gate has status pass with direct evidence.",
   "globalBoundaries": [
     "Do not mark value clarity complete only because the README is persuasive.",
@@ -174,7 +174,9 @@
         "docs/reference/human-infra-c2-longtail-third-batch-source-resolution-register.json",
         "tools/audit_human_infra_c2_longtail_third_batch_source_resolution_register.py",
         "docs/reference/human-infra-c2-longtail-third-batch-independent-fresh-review-protocol.json",
-        "tools/audit_human_infra_c2_longtail_third_batch_independent_fresh_review_protocol.py"
+        "tools/audit_human_infra_c2_longtail_third_batch_independent_fresh_review_protocol.py",
+        "docs/reference/human-infra-c2-longtail-third-batch-independent-fresh-review-verdict-register.json",
+        "tools/audit_human_infra_c2_longtail_third_batch_independent_fresh_review_verdict_register.py"
       ],
       "gates": [
         {
@@ -280,12 +282,16 @@
             "docs/reference/human-infra-c2-longtail-third-batch-source-resolution-register.json",
             "tools/audit_human_infra_c2_longtail_third_batch_source_resolution_register.py",
             "docs/reference/human-infra-c2-longtail-third-batch-independent-fresh-review-protocol.json",
-            "tools/audit_human_infra_c2_longtail_third_batch_independent_fresh_review_protocol.py"
+            "tools/audit_human_infra_c2_longtail_third_batch_independent_fresh_review_protocol.py",
+            "docs/reference/human-infra-c2-longtail-third-batch-independent-fresh-review-verdict-register.json",
+            "tools/audit_human_infra_c2_longtail_third_batch_independent_fresh_review_verdict_register.py"
           ],
           "missingEvidence": [
-            "C2-LT-B1 now has 282 reviewed artifacts: 252 original reviewed artifacts for 42 eligible source rows plus 30 corrected-source reviewed artifacts for 5 eligible corrected rows. C2-LT-B2 now has 138 bounded reviewed artifacts from 23 eligible verdict rows, while 1 row remains downgrade-before-fill and the 5 corrected lineage/route/index/fulltext blocked rows remain preserved outside artifact promotion. C2-LT-B3 now has 24/24 source-context extraction rows, 24/24 local source-context review rows, a source-resolution register preparing 7 corrected/split/route-normalized candidates for the 5 issue rows, and an independent fresh-review protocol that splits all 24 rows into 2 review batches, but fresh-review verdicts, corrected re-extraction and reviewed artifacts are not complete. Full reviewed Source Card coverage for remaining C2 long-tail domains and model admission artifacts remain incomplete."
+            "C2-LT-B3 source-resolution-supported rows still need corrected-source re-extraction before any artifact fill.",
+            "C2-LT-B3 eligible rows still need bounded reviewed artifacts before C2 long-tail coverage can be considered closed.",
+            "Remaining C2 long-tail domains outside B1/B2/B3 still need batch selection, source extraction, fresh review and reviewed artifacts."
           ],
-          "nextAction": "Execute C2-LT-B3 fresh-review verdicts, corrected source re-extraction and bounded reviewed artifact preparation while keeping model admission blocked.",
+          "nextAction": "Run C2-LT-B3 corrected-source re-extraction for 5 source-resolution-supported rows, apply downgrade-before-fill for EXT-022, then create bounded reviewed artifacts for the 18 eligible rows while keeping model admission blocked.",
           "blocks100Percent": true
         },
         {
@@ -366,12 +372,16 @@
             "docs/reference/human-infra-c2-longtail-third-batch-source-resolution-register.json",
             "tools/audit_human_infra_c2_longtail_third_batch_source_resolution_register.py",
             "docs/reference/human-infra-c2-longtail-third-batch-independent-fresh-review-protocol.json",
-            "tools/audit_human_infra_c2_longtail_third_batch_independent_fresh_review_protocol.py"
+            "tools/audit_human_infra_c2_longtail_third_batch_independent_fresh_review_protocol.py",
+            "docs/reference/human-infra-c2-longtail-third-batch-independent-fresh-review-verdict-register.json",
+            "tools/audit_human_infra_c2_longtail_third_batch_independent_fresh_review_verdict_register.py"
           ],
           "missingEvidence": [
-            "C2-LT-B1 now has reviewed variable and endpoint artifacts for 42 original eligible source rows plus corrected variable/endpoint artifacts for the 5 eligible corrected rows. C2-LT-B2 now has reviewed variable and endpoint artifacts for 23 eligible verdict rows, while 1 row remains downgrade-before-fill. C2-LT-B3 variable seeds now have source-context extracted fields, local review, source-resolution candidates for the 5 issue rows and an independent fresh-review protocol, but no C2-LT-B3 row has a fresh-review verdict, corrected re-extraction output or governed variable/endpoint artifact. Calibrated variable contracts plus endpoint validation are not complete."
+            "C2-LT-B3 verdict rows are not yet converted into reviewed variable, endpoint, uncertainty, transfer-boundary and downgrade artifacts.",
+            "Source-resolution-supported rows still require corrected-source re-extraction before variable contract use.",
+            "Reviewed artifacts are not yet connected to any calibrated model-admission gate."
           ],
-          "nextAction": "Run C2-LT-B3 fresh-review verdicts and corrected source re-extraction before any governed variable contract use, keep C2-LT-B3 source-resolution rows as candidates only, and keep calibrated variable contracts blocked until model gates pass.",
+          "nextAction": "Convert only eligible C2-LT-B3 fresh-review rows into bounded artifacts after corrected-source re-extraction and downgrade handling; do not admit them to the calibrated model.",
           "blocks100Percent": true
         },
         {
@@ -477,12 +487,16 @@
             "docs/reference/human-infra-c2-longtail-third-batch-source-resolution-register.json",
             "tools/audit_human_infra_c2_longtail_third_batch_source_resolution_register.py",
             "docs/reference/human-infra-c2-longtail-third-batch-independent-fresh-review-protocol.json",
-            "tools/audit_human_infra_c2_longtail_third_batch_independent_fresh_review_protocol.py"
+            "tools/audit_human_infra_c2_longtail_third_batch_independent_fresh_review_protocol.py",
+            "docs/reference/human-infra-c2-longtail-third-batch-independent-fresh-review-verdict-register.json",
+            "tools/audit_human_infra_c2_longtail_third_batch_independent_fresh_review_verdict_register.py"
           ],
           "missingEvidence": [
-            "C2-LT-B1 now has downgrade-check artifacts for 42 original eligible source rows and promotion-time downgrade artifacts for the 5 eligible corrected rows. C2-LT-B2 now has transfer-boundary and downgrade-check artifacts for 23 eligible verdict rows. C2-LT-B3 now has locally reviewed source-context downgrade triggers, transfer boundaries, source-resolution candidates for 5 issue rows and an independent fresh-review protocol, but no rows have fresh-review verdicts, corrected re-extraction outputs or reviewed artifacts. The 1 C2-LT-B2 downgrade-before-fill row and the 5 corrected lineage/route/index/fulltext blocked rows remain blocked."
+            "C2-LT-B3 downgrade-before-fill row still needs explicit downgrade artifact representation.",
+            "Five C2-LT-B3 source-resolution-supported rows still need corrected-source re-extraction and downstream fresh review before artifact fill.",
+            "Remaining C2 long-tail domains still need independent source review and downgrade rows."
           ],
-          "nextAction": "Run C2-LT-B3 fresh-review verdicts and corrected source re-extraction before any downgrade/transfer-boundary artifact claims, preserve the 1 C2-LT-B2 downgrade-before-fill row, and keep corrected blocked rows plus model-admission boundaries intact.",
+          "nextAction": "Carry C2-LT-B3 downgrade-required and source-resolution-supported verdicts into the corrected re-extraction and reviewed-artifact workflow before any domain claim upgrade.",
           "blocks100Percent": true
         }
       ]
