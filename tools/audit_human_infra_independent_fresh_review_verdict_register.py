@@ -121,16 +121,39 @@ def repo_path(relative_path: str, context: str, errors: list[str]) -> Path | Non
     return target
 
 
-def get_protocol_batch(protocol: dict[str, Any], batch_id: str, errors: list[str]) -> dict[str, Any]:
+def get_protocol_batches(protocol: dict[str, Any], batch_ids: list[str], errors: list[str]) -> list[dict[str, Any]]:
     batches = protocol.get("reviewBatches")
     if not isinstance(batches, list):
         fail(errors, "protocol.reviewBatches must be a list")
-        return {}
-    matches = [batch for batch in batches if isinstance(batch, dict) and batch.get("batchId") == batch_id]
-    if len(matches) != 1:
-        fail(errors, f"protocol must contain exactly one batch {batch_id}")
-        return {}
-    return matches[0]
+        return []
+    by_id = {batch.get("batchId"): batch for batch in batches if isinstance(batch, dict)}
+    result: list[dict[str, Any]] = []
+    for batch_id in batch_ids:
+        batch = by_id.get(batch_id)
+        if not batch:
+            fail(errors, f"protocol must contain reviewed batch {batch_id}")
+            continue
+        result.append(batch)
+    if len(result) != len(set(batch_ids)):
+        fail(errors, "reviewed batch IDs must be unique and resolvable")
+    return result
+
+
+def aggregate_source_counts(batches: list[dict[str, Any]], errors: list[str]) -> Counter[str]:
+    counts: Counter[str] = Counter()
+    for batch in batches:
+        source_counts = batch.get("sourceAnchorCounts")
+        if not isinstance(source_counts, dict) or not source_counts:
+            fail(errors, f"{batch.get('batchId', '<unknown>')}.sourceAnchorCounts must be a non-empty object")
+            continue
+        for source_id, count in source_counts.items():
+            if source_id in counts:
+                fail(errors, f"source anchor appears in multiple reviewed batches: {source_id}")
+            if not isinstance(count, int):
+                fail(errors, f"{batch.get('batchId')}.sourceAnchorCounts.{source_id} must be an integer")
+                continue
+            counts[source_id] += count
+    return counts
 
 
 def validate_source_of_truth(register: dict[str, Any], errors: list[str]) -> None:
@@ -149,7 +172,8 @@ def validate_source_of_truth(register: dict[str, Any], errors: list[str]) -> Non
 def validate_scope(
     register: dict[str, Any],
     prep: dict[str, Any],
-    batch: dict[str, Any],
+    batches: list[dict[str, Any]],
+    expected_source_counts: Counter[str],
     packet_count: int,
     errors: list[str],
 ) -> None:
@@ -157,9 +181,13 @@ def validate_scope(
     if not isinstance(scope, dict):
         fail(errors, "scope must be an object")
         return
-    batch_id = require_string(scope.get("reviewedBatchId"), "scope.reviewedBatchId", errors)
-    if batch_id and batch_id != batch.get("batchId"):
-        fail(errors, "scope.reviewedBatchId must match the reviewed protocol batch")
+    batch_ids = require_string_list(scope.get("reviewedBatchIds"), "scope.reviewedBatchIds", errors, 1)
+    expected_batch_ids = [batch.get("batchId") for batch in batches]
+    if batch_ids != expected_batch_ids:
+        fail(errors, "scope.reviewedBatchIds must match the reviewed protocol batches in order")
+    batch_count = require_int(scope.get("reviewedBatchCount"), "scope.reviewedBatchCount", errors)
+    if batch_count is not None and batch_count != len(batches):
+        fail(errors, "scope.reviewedBatchCount must equal reviewedBatchIds length")
 
     prep_scope = prep.get("scope", {}) if isinstance(prep.get("scope"), dict) else {}
     total = require_int(scope.get("totalPreparedPromotionPacketCount"), "scope.totalPreparedPromotionPacketCount", errors)
@@ -170,17 +198,40 @@ def validate_scope(
     reviewed = require_int(scope.get("reviewedPromotionPacketCount"), "scope.reviewedPromotionPacketCount", errors)
     if reviewed is not None and reviewed != packet_count:
         fail(errors, f"scope.reviewedPromotionPacketCount must equal covered packet count={packet_count}")
-    if reviewed is not None and reviewed != batch.get("packetCount"):
-        fail(errors, "scope.reviewedPromotionPacketCount must match protocol batch packetCount")
+    expected_batch_packet_count = sum(int(batch.get("packetCount", 0)) for batch in batches)
+    if reviewed is not None and reviewed != expected_batch_packet_count:
+        fail(errors, "scope.reviewedPromotionPacketCount must match sum of reviewed protocol batch packetCount")
 
     remaining = require_int(scope.get("remainingPreparedPromotionPacketCount"), "scope.remainingPreparedPromotionPacketCount", errors)
     if remaining is not None and total is not None and reviewed is not None and remaining != total - reviewed:
         fail(errors, "scope.remainingPreparedPromotionPacketCount must equal total-reviewed")
 
     reviewed_sources = require_int(scope.get("reviewedSourceAnchorCount"), "scope.reviewedSourceAnchorCount", errors)
-    source_counts = batch.get("sourceAnchorCounts")
-    if isinstance(source_counts, dict) and reviewed_sources is not None and reviewed_sources != len(source_counts):
-        fail(errors, "scope.reviewedSourceAnchorCount must match protocol batch source count")
+    if reviewed_sources is not None and reviewed_sources != len(expected_source_counts):
+        fail(errors, "scope.reviewedSourceAnchorCount must match reviewed protocol source count")
+
+    summaries = register.get("batchSummaries")
+    if not isinstance(summaries, list) or len(summaries) != len(batches):
+        fail(errors, "batchSummaries must list every reviewed batch")
+    else:
+        protocol_by_id = {batch.get("batchId"): batch for batch in batches}
+        for index, summary in enumerate(summaries):
+            if not isinstance(summary, dict):
+                fail(errors, f"batchSummaries[{index}] must be an object")
+                continue
+            batch_id = require_string(summary.get("batchId"), f"batchSummaries[{index}].batchId", errors)
+            protocol_batch = protocol_by_id.get(batch_id)
+            if not protocol_batch:
+                fail(errors, f"batchSummaries[{index}] references a batch outside reviewedBatchIds")
+                continue
+            if summary.get("packetCount") != protocol_batch.get("packetCount"):
+                fail(errors, f"batchSummaries[{index}].packetCount must match protocol batch")
+            if summary.get("sourceAnchorCounts") != protocol_batch.get("sourceAnchorCounts"):
+                fail(errors, f"batchSummaries[{index}].sourceAnchorCounts must match protocol batch")
+            require_string(summary.get("artifactPromotionDecision"), f"batchSummaries[{index}].artifactPromotionDecision", errors)
+            model_decision = require_string(summary.get("modelAdmissionDecision"), f"batchSummaries[{index}].modelAdmissionDecision", errors)
+            if model_decision and "blocked" not in model_decision:
+                fail(errors, f"batchSummaries[{index}].modelAdmissionDecision must remain blocked")
 
     require_string(scope.get("reviewMode"), "scope.reviewMode", errors)
     require_string(scope.get("artifactPromotionDecision"), "scope.artifactPromotionDecision", errors)
@@ -233,17 +284,13 @@ def build_expected_packets(prep: dict[str, Any], source_ids: set[str], errors: l
 
 def validate_source_reviews(
     register: dict[str, Any],
-    batch: dict[str, Any],
+    expected_source_counts: Counter[str],
     local_review: dict[str, Any],
     extraction: dict[str, Any],
     prep: dict[str, Any],
     errors: list[str],
 ) -> tuple[set[str], Counter[str]]:
-    source_counts = batch.get("sourceAnchorCounts")
-    if not isinstance(source_counts, dict):
-        fail(errors, "protocol batch sourceAnchorCounts must be an object")
-        return set(), Counter()
-    expected_source_ids = set(source_counts)
+    expected_source_ids = set(expected_source_counts)
     local_by_source = {
         review.get("sourceCardId"): review
         for review in local_review.get("localReviews", [])
@@ -263,7 +310,7 @@ def validate_source_reviews(
         fail(errors, "sourceAnchorFreshReviews must be a list")
         return set(), Counter()
     if len(reviews) != len(expected_source_ids):
-        fail(errors, "sourceAnchorFreshReviews length must match reviewed batch source count")
+        fail(errors, "sourceAnchorFreshReviews length must match reviewed source count")
 
     blocked_required = set(register.get("blockedUses", []))
     protocol_verdicts = set(register.get("verdictTaxonomy", []))
@@ -353,7 +400,7 @@ def validate_packet_coverage(
     expected_packets: list[dict[str, Any]],
     covered_task_ids: set[str],
     source_packet_counts: Counter[str],
-    batch: dict[str, Any],
+    expected_source_counts: Counter[str],
     errors: list[str],
 ) -> int:
     coverage = register.get("packetCoverage")
@@ -394,9 +441,8 @@ def validate_packet_coverage(
     expected_source_counts = Counter(packet["sourceCardId"] for packet in expected_packets)
     if source_packet_counts != expected_source_counts:
         fail(errors, "sourceAnchorFreshReviews source packet counts must match prep reviewed packet counts")
-    batch_counts = Counter(batch.get("sourceAnchorCounts", {}))
-    if source_packet_counts != batch_counts:
-        fail(errors, "sourceAnchorFreshReviews source packet counts must match protocol batch sourceAnchorCounts")
+    if source_packet_counts != expected_source_counts:
+        fail(errors, "sourceAnchorFreshReviews source packet counts must match reviewed protocol sourceAnchorCounts")
     return len(coverage_ids)
 
 
@@ -428,13 +474,16 @@ def validate_register(
     validate_contract(register, prep, errors)
 
     scope = register.get("scope") if isinstance(register.get("scope"), dict) else {}
-    batch_id = scope.get("reviewedBatchId", "")
-    batch = get_protocol_batch(protocol, batch_id, errors)
-    source_counts = batch.get("sourceAnchorCounts") if isinstance(batch.get("sourceAnchorCounts"), dict) else {}
+    batch_ids = scope.get("reviewedBatchIds", [])
+    if not isinstance(batch_ids, list):
+        fail(errors, "scope.reviewedBatchIds must be a list")
+        batch_ids = []
+    batches = get_protocol_batches(protocol, [str(batch_id) for batch_id in batch_ids], errors)
+    source_counts = aggregate_source_counts(batches, errors)
     expected_packets = build_expected_packets(prep, set(source_counts), errors)
-    validate_scope(register, prep, batch, len(expected_packets), errors)
-    covered_task_ids, source_packet_counts = validate_source_reviews(register, batch, local_review, extraction, prep, errors)
-    packet_count = validate_packet_coverage(register, expected_packets, covered_task_ids, source_packet_counts, batch, errors)
+    validate_scope(register, prep, batches, source_counts, len(expected_packets), errors)
+    covered_task_ids, source_packet_counts = validate_source_reviews(register, source_counts, local_review, extraction, prep, errors)
+    packet_count = validate_packet_coverage(register, expected_packets, covered_task_ids, source_packet_counts, source_counts, errors)
     validate_index_requirements(register, errors)
     return len(source_counts), packet_count
 

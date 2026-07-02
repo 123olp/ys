@@ -12,19 +12,22 @@
     "maturityGapRegister": "docs/reference/human-infra-maturity-gap-register.json"
   },
   "scope": {
-    "reviewedBatchId": "FRB-01-method-statistical-model-standards",
-    "reviewedBatchLabel": "统计、生存分析、目标试验与预测模型方法锚点",
+    "reviewedBatchIds": [
+      "FRB-01-method-statistical-model-standards",
+      "FRB-02-biological-aging-mechanisms"
+    ],
+    "reviewedBatchCount": 2,
     "totalPreparedPromotionPacketCount": 81,
-    "reviewedPromotionPacketCount": 26,
-    "remainingPreparedPromotionPacketCount": 55,
-    "reviewedSourceAnchorCount": 5,
-    "coveredDomainCount": 16,
+    "reviewedPromotionPacketCount": 56,
+    "remainingPreparedPromotionPacketCount": 25,
+    "reviewedSourceAnchorCount": 12,
+    "coveredDomainCount": 21,
     "reviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
-    "artifactPromotionDecision": "FRB-01 rows may proceed to bounded artifact filling; model admission remains blocked until card filling, downgrade checks and model gates pass.",
+    "artifactPromotionDecision": "FRB-01 and FRB-02 rows may proceed to bounded artifact filling; model admission remains blocked until card filling, downgrade checks and model gates pass.",
     "nonClaims": [
       "This register is not a completed Source Card set, variable-card set, endpoint-card set, uncertainty-card set, transfer-boundary-card set or downgrade-check set.",
       "This register does not authorize calibrated prediction, individual recommendation, individual death-date output, intervention ranking, domain-claim upgrade or clinical-validity claims.",
-      "This register completes only the first independent fresh-review batch; the remaining prepared packs still require fresh review."
+      "This register completes only two independent fresh-review batches; the remaining prepared packs still require fresh review."
     ]
   },
   "requiredReviewFields": [
@@ -402,6 +405,474 @@
         "domain-claim-upgrade",
         "clinical-validity-claim"
       ]
+    },
+    {
+      "sourceCardId": "SA-HALLMARKS-AGING-2013",
+      "reviewedSourceTitle": "The Hallmarks of Aging",
+      "reviewedSourceAuthors": "Carlos López-Otín; Maria A. Blasco; Linda Partridge; Manuel Serrano; Guido Kroemer",
+      "reviewedSourceYear": "2013",
+      "sourceType": "review-paper",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "freshReviewEvidence": [
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3836174/",
+          "evidenceType": "pmc-full-text",
+          "finding": "PMC identifies the 2013 Cell review and its baseline aging-hallmark taxonomy."
+        },
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/23746838/",
+          "evidenceType": "pubmed-record",
+          "finding": "PubMed records the review and summarizes key hallmark categories such as genomic instability, telomere attrition and loss of proteostasis."
+        }
+      ],
+      "registeredSourceRole": "baseline-aging-hallmark-mechanism-taxonomy-anchor",
+      "registeredExactClaimUses": [
+        "Supports the baseline decomposition of aging into maintenance-related mechanism families, preserving historical vocabulary for domain mapping."
+      ],
+      "registeredTransferBoundaries": [
+        "Transfer only as historical mechanism vocabulary. It does not authorize intervention claims, biomarker substitution, or subject-level prediction."
+      ],
+      "sourceIdentityVerdict": "verified-primary-or-authoritative-review-source",
+      "sourceContextVerdict": "supports-baseline-aging-hallmark-taxonomy-role-with-boundary",
+      "exactClaimUseVerdict": "supports historical decomposition of aging into maintenance-related mechanism families for domain mapping only",
+      "domainTransferVerdict": "bounded-transfer-to-baseline mechanism vocabulary; no intervention effect, biomarker substitution, subject-level prediction or clinical benefit",
+      "modelPositionVerdict": "mechanism-taxonomy-language-only; model variables require separate endpoint, population and validation cards",
+      "uncertaintyBoundaryVerdict": "must carry review-level, taxonomy-level, tissue-context, species-context and non-interventional evidence limits",
+      "downgradeVerdict": "no downgrade required for baseline taxonomy use; downgrade required if used as intervention, biomarker or prediction evidence",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this batch",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "reviewerNote": "Fresh review confirms the 2013 Hallmarks paper is suitable as historical aging-mechanism taxonomy, not as calibrated effect or intervention evidence.",
+      "affectedPromotionTaskCount": 5,
+      "affectedPromotionTaskIds": [
+        "PROM-036-HIDOM-FLD012-SA-HALLMARKS-AGING-2013",
+        "PROM-038-HIDOM-FLD013-SA-HALLMARKS-AGING-2013",
+        "PROM-042-HIDOM-FLD015-SA-HALLMARKS-AGING-2013",
+        "PROM-044-HIDOM-FLD016-SA-HALLMARKS-AGING-2013",
+        "PROM-048-HIDOM-FLD018-SA-HALLMARKS-AGING-2013"
+      ],
+      "affectedDomainIds": [
+        "cellular-senescence-clearance",
+        "genomic-stability-dna-repair",
+        "mitochondrial-bioenergetics",
+        "proteostasis-autophagy",
+        "stem-cell-reserve-renewal"
+      ],
+      "affectedFieldCardIds": [
+        "HIDOM-FLD012",
+        "HIDOM-FLD013",
+        "HIDOM-FLD015",
+        "HIDOM-FLD016",
+        "HIDOM-FLD018"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "domain-claim-upgrade",
+        "clinical-validity-claim"
+      ]
+    },
+    {
+      "sourceCardId": "SA-HALLMARKS-AGING-2023",
+      "reviewedSourceTitle": "Hallmarks of aging: An expanding universe",
+      "reviewedSourceAuthors": "Carlos López-Otín; Maria A. Blasco; Linda Partridge; Manuel Serrano; Guido Kroemer",
+      "reviewedSourceYear": "2023",
+      "sourceType": "mechanism-taxonomy-review",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "freshReviewEvidence": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/36599349/",
+          "evidenceType": "pubmed-record",
+          "finding": "PubMed identifies the Cell 2023 review and records the expanded aging-hallmark framing, including twelve hallmark categories and the paper DOI 10.1016/j.cell.2022.11.001."
+        },
+        {
+          "url": "https://www.cell.com/cell/fulltext/S0092-8674(22)01377-0",
+          "evidenceType": "publisher-article-page",
+          "finding": "The Cell article is the primary publisher page for the 2023 expanded hallmark taxonomy. It supports mechanism-family vocabulary and interaction framing, not calibrated intervention effects."
+        }
+      ],
+      "registeredSourceRole": "expanded-aging-hallmark-mechanism-taxonomy-anchor",
+      "registeredExactClaimUses": [
+        "Supports treating aging as a multi-hallmark maintenance system and mapping domain variables to mechanism families, without importing intervention effects."
+      ],
+      "registeredTransferBoundaries": [
+        "Transfer only as mechanism decomposition and variable-discovery vocabulary. It does not prove causality, clinical benefit, longevity effect, or route safety."
+      ],
+      "sourceIdentityVerdict": "verified-primary-or-authoritative-review-source",
+      "sourceContextVerdict": "supports-expanded-aging-hallmark-taxonomy-role-with-boundary",
+      "exactClaimUseVerdict": "supports expanded multi-hallmark aging mechanism vocabulary and variable-discovery framing without importing intervention effects",
+      "domainTransferVerdict": "bounded-transfer-to mechanism decomposition and interaction vocabulary; no causality, clinical benefit, longevity effect or route safety",
+      "modelPositionVerdict": "mechanism-taxonomy-language-only; quantitative model admission requires source cards for endpoints, populations, parameters and uncertainty",
+      "uncertaintyBoundaryVerdict": "must carry review-level synthesis, hallmark interaction, tissue-context, species-context, intervention-specific and translation limits",
+      "downgradeVerdict": "no downgrade required for expanded taxonomy use; downgrade required for any direct clinical, LEV, route-safety or causal-effect claim",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this batch",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "reviewerNote": "Fresh review confirms the 2023 expanded Hallmarks paper supports mechanism-family mapping and single-channel overclaim downgrades, not human benefit claims.",
+      "affectedPromotionTaskCount": 15,
+      "affectedPromotionTaskIds": [
+        "PROM-026-HIDOM-FLD002-SA-HALLMARKS-AGING-2023",
+        "PROM-030-HIDOM-FLD008-SA-HALLMARKS-AGING-2023",
+        "PROM-033-HIDOM-FLD010-SA-HALLMARKS-AGING-2023",
+        "PROM-035-HIDOM-FLD012-SA-HALLMARKS-AGING-2023",
+        "PROM-037-HIDOM-FLD013-SA-HALLMARKS-AGING-2023",
+        "PROM-041-HIDOM-FLD015-SA-HALLMARKS-AGING-2023",
+        "PROM-043-HIDOM-FLD016-SA-HALLMARKS-AGING-2023",
+        "PROM-046-HIDOM-FLD017-SA-HALLMARKS-AGING-2023",
+        "PROM-047-HIDOM-FLD018-SA-HALLMARKS-AGING-2023",
+        "PROM-050-HIDOM-FLD019-SA-HALLMARKS-AGING-2023",
+        "PROM-051-HIDOM-FLD020-SA-HALLMARKS-AGING-2023",
+        "PROM-052-HIDOM-FLD021-SA-HALLMARKS-AGING-2023",
+        "PROM-053-HIDOM-FLD022-SA-HALLMARKS-AGING-2023",
+        "PROM-054-HIDOM-FLD023-SA-HALLMARKS-AGING-2023",
+        "PROM-055-HIDOM-FLD026-SA-HALLMARKS-AGING-2023"
+      ],
+      "affectedDomainIds": [
+        "cardiovascular-resilience",
+        "cellular-senescence-clearance",
+        "endocrine-hormonal-regulation",
+        "extracellular-matrix-glycation",
+        "genomic-stability-dna-repair",
+        "immune-maintenance",
+        "longevity-evidence",
+        "microbiome-ecology",
+        "mitochondrial-bioenergetics",
+        "musculoskeletal-integrity",
+        "nutrition-metabolic-health",
+        "proteostasis-autophagy",
+        "regenerative-medicine",
+        "renal-hepatic-clearance",
+        "stem-cell-reserve-renewal"
+      ],
+      "affectedFieldCardIds": [
+        "HIDOM-FLD002",
+        "HIDOM-FLD008",
+        "HIDOM-FLD010",
+        "HIDOM-FLD012",
+        "HIDOM-FLD013",
+        "HIDOM-FLD015",
+        "HIDOM-FLD016",
+        "HIDOM-FLD017",
+        "HIDOM-FLD018",
+        "HIDOM-FLD019",
+        "HIDOM-FLD020",
+        "HIDOM-FLD021",
+        "HIDOM-FLD022",
+        "HIDOM-FLD023",
+        "HIDOM-FLD026"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "domain-claim-upgrade",
+        "clinical-validity-claim"
+      ]
+    },
+    {
+      "sourceCardId": "SA-HALLMARKS-CANCER-2022",
+      "reviewedSourceTitle": "Hallmarks of Cancer: New Dimensions",
+      "reviewedSourceAuthors": "Douglas Hanahan",
+      "reviewedSourceYear": "2022",
+      "sourceType": "review-paper",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "freshReviewEvidence": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35022204/",
+          "evidenceType": "pubmed-record",
+          "finding": "PubMed identifies the 2022 Cancer Discovery article and its hallmarks-of-cancer framework."
+        },
+        {
+          "url": "https://aacrjournals.org/cancerdiscovery/article/12/1/31/675608/Hallmarks-of-Cancer-New-Dimensions",
+          "evidenceType": "publisher-article-page",
+          "finding": "The AACR journal page is the primary publisher context for the updated cancer-hallmarks framework."
+        }
+      ],
+      "registeredSourceRole": "cancer-risk-and-tumor-capability-abort-gate-anchor",
+      "registeredExactClaimUses": [
+        "Supports representing cancer as an adverse capability and safety-gate channel that can downgrade regeneration, reprogramming and maintenance claims."
+      ],
+      "registeredTransferBoundaries": [
+        "Transfer only as cancer-risk and abort-gate vocabulary. It does not prove screening benefit, treatment effect, or quantified cancer hazard."
+      ],
+      "sourceIdentityVerdict": "verified-primary-or-authoritative-review-source",
+      "sourceContextVerdict": "supports-cancer-risk-and-tumor-capability-abort-gate-role-with-boundary",
+      "exactClaimUseVerdict": "supports representing cancer as an adverse capability and safety-gate channel for regeneration, reprogramming and maintenance claims",
+      "domainTransferVerdict": "bounded-transfer-to cancer-risk and abort-gate vocabulary; no screening benefit, treatment effect, quantified hazard or individual advice",
+      "modelPositionVerdict": "risk-boundary-language-only; cancer model admission requires endpoint, population, test/treatment, follow-up and hazard evidence",
+      "uncertaintyBoundaryVerdict": "must carry review-level, cancer-type, tissue-context, endpoint-definition, exposure/intervention and hazard-estimation limits",
+      "downgradeVerdict": "no downgrade required for cancer-risk vocabulary; downgrade required if used as screening, treatment, quantified hazard or clinical-validity proof",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this batch",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "reviewerNote": "Fresh review confirms Hanahan 2022 is useful for cancer abort-gate vocabulary, not for estimating risk or proving screening/treatment benefit.",
+      "affectedPromotionTaskCount": 5,
+      "affectedPromotionTaskIds": [
+        "PROM-027-HIDOM-FLD007-SA-HALLMARKS-CANCER-2022",
+        "PROM-032-HIDOM-FLD009-SA-HALLMARKS-CANCER-2022",
+        "PROM-039-HIDOM-FLD013-SA-HALLMARKS-CANCER-2022",
+        "PROM-045-HIDOM-FLD016-SA-HALLMARKS-CANCER-2022",
+        "PROM-049-HIDOM-FLD018-SA-HALLMARKS-CANCER-2022"
+      ],
+      "affectedDomainIds": [
+        "cancer-screening-early-detection-continuity",
+        "cellular-reprogramming",
+        "cellular-senescence-clearance",
+        "genomic-stability-dna-repair",
+        "stem-cell-reserve-renewal"
+      ],
+      "affectedFieldCardIds": [
+        "HIDOM-FLD007",
+        "HIDOM-FLD009",
+        "HIDOM-FLD013",
+        "HIDOM-FLD016",
+        "HIDOM-FLD018"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "domain-claim-upgrade",
+        "clinical-validity-claim"
+      ]
+    },
+    {
+      "sourceCardId": "SA-YAMANAKA-IPS-2006",
+      "reviewedSourceTitle": "Induction of pluripotent stem cells from mouse embryonic and adult fibroblast cultures by defined factors",
+      "reviewedSourceAuthors": "Kazutoshi Takahashi; Shinya Yamanaka",
+      "reviewedSourceYear": "2006",
+      "sourceType": "primary-paper",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "freshReviewEvidence": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/16904174/",
+          "evidenceType": "pubmed-record",
+          "finding": "PubMed identifies the 2006 Cell primary paper describing induction of pluripotent stem cells by defined factors."
+        },
+        {
+          "url": "https://repository.kulib.kyoto-u.ac.jp/dspace/bitstream/2433/159777/1/j.cell.2006.07.024.pdf",
+          "evidenceType": "institutional-full-text-pdf",
+          "finding": "Kyoto University repository provides full-text access to the primary paper context for defined-factor reprogramming."
+        }
+      ],
+      "registeredSourceRole": "cell-identity-reprogramming-foundation-anchor",
+      "registeredExactClaimUses": [
+        "Supports the foundational claim that defined factors can reprogram mature cell state under experimental conditions, while separating identity rewiring from safe subject-level gain."
+      ],
+      "registeredTransferBoundaries": [
+        "Transfer only as a cell-state reprogramming foundation. It does not support human anti-aging therapy, lifespan extension, or safe tissue rejuvenation claims."
+      ],
+      "sourceIdentityVerdict": "verified-primary-experimental-source",
+      "sourceContextVerdict": "supports-cell-identity-reprogramming-foundation-role-with-boundary",
+      "exactClaimUseVerdict": "supports that defined factors can reprogram mature mouse fibroblast cell state under experimental conditions",
+      "domainTransferVerdict": "bounded-transfer-to cell-state reprogramming foundation; no human anti-aging therapy, lifespan extension, safe tissue rejuvenation or subject-continuity claim",
+      "modelPositionVerdict": "experimental-foundation-language-only; clinical, longevity and subject-level model admission remains blocked",
+      "uncertaintyBoundaryVerdict": "must carry species, cell-type, pluripotency, identity-loss, tumor-risk, delivery, integration and subject-continuity limits",
+      "downgradeVerdict": "bounded support only; downgrade any use that treats iPS induction as safe partial rejuvenation or Human Infra benefit evidence",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this batch",
+      "reviewerVerdict": "bounded-support",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "reviewerNote": "Fresh review confirms the paper establishes defined-factor cell reprogramming, while subject-level rejuvenation and safety claims remain unsupported.",
+      "affectedPromotionTaskCount": 1,
+      "affectedPromotionTaskIds": [
+        "PROM-028-HIDOM-FLD007-SA-YAMANAKA-IPS-2006"
+      ],
+      "affectedDomainIds": [
+        "cellular-reprogramming"
+      ],
+      "affectedFieldCardIds": [
+        "HIDOM-FLD007"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "domain-claim-upgrade",
+        "clinical-validity-claim"
+      ]
+    },
+    {
+      "sourceCardId": "SA-PARTIAL-REPROGRAMMING-2016",
+      "reviewedSourceTitle": "In Vivo Amelioration of Age-Associated Hallmarks by Partial Reprogramming",
+      "reviewedSourceAuthors": "Alejandro Ocampo et al.",
+      "reviewedSourceYear": "2016",
+      "sourceType": "preclinical-paper",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "freshReviewEvidence": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/27984723/",
+          "evidenceType": "pubmed-record",
+          "finding": "PubMed identifies the Cell 2016 preclinical partial-reprogramming paper and summarizes cyclic OSKM exposure."
+        },
+        {
+          "url": "https://www.cell.com/fulltext/S0092-8674%2816%2931664-6",
+          "evidenceType": "publisher-article-page",
+          "finding": "The Cell page is the primary publisher context for the preclinical controlled-window route."
+        }
+      ],
+      "registeredSourceRole": "partial-reprogramming-controlled-window-route-anchor",
+      "registeredExactClaimUses": [
+        "Supports modeling partial reprogramming as a controlled-window route where potential rejuvenation signals must be evaluated with identity, function and cancer gates."
+      ],
+      "registeredTransferBoundaries": [
+        "Transfer only as route-screening vocabulary for partial reprogramming. It does not establish clinical rejuvenation, LEV, or subject-level safety."
+      ],
+      "sourceIdentityVerdict": "verified-primary-preclinical-source",
+      "sourceContextVerdict": "supports-partial-reprogramming-controlled-window-route-role-with-boundary",
+      "exactClaimUseVerdict": "supports modeling partial reprogramming as a controlled-window preclinical route requiring identity, function and cancer gates",
+      "domainTransferVerdict": "bounded-transfer-to route-screening vocabulary; no clinical rejuvenation, LEV, subject-level safety or intervention ranking",
+      "modelPositionVerdict": "preclinical-route-language-only; human model admission requires endpoint, delivery, tissue, safety, durability and translation evidence",
+      "uncertaintyBoundaryVerdict": "must carry animal/preclinical, induction-window, identity-retention, tumor-risk, delivery, tissue-specific and durability limits",
+      "downgradeVerdict": "bounded support only; downgrade any use that treats preclinical hallmarks amelioration as human clinical rejuvenation or LEV evidence",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this batch",
+      "reviewerVerdict": "bounded-support",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "reviewerNote": "Fresh review confirms the source supports partial-reprogramming route vocabulary with strict safety gates, not human efficacy or subject-level safety.",
+      "affectedPromotionTaskCount": 2,
+      "affectedPromotionTaskIds": [
+        "PROM-029-HIDOM-FLD007-SA-PARTIAL-REPROGRAMMING-2016",
+        "PROM-031-HIDOM-FLD008-SA-PARTIAL-REPROGRAMMING-2016"
+      ],
+      "affectedDomainIds": [
+        "cellular-reprogramming",
+        "regenerative-medicine"
+      ],
+      "affectedFieldCardIds": [
+        "HIDOM-FLD007",
+        "HIDOM-FLD008"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "domain-claim-upgrade",
+        "clinical-validity-claim"
+      ]
+    },
+    {
+      "sourceCardId": "SA-GRIMAGE-2019",
+      "reviewedSourceTitle": "DNA methylation GrimAge strongly predicts lifespan and healthspan",
+      "reviewedSourceAuthors": "Ake T. Lu; et al.",
+      "reviewedSourceYear": "2019",
+      "sourceType": "biomarker-paper",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "freshReviewEvidence": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30669119/",
+          "evidenceType": "pubmed-record",
+          "finding": "PubMed identifies GrimAge as a DNA methylation biomarker paper connected to lifespan and healthspan prediction language."
+        },
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6366976/",
+          "evidenceType": "pmc-full-text",
+          "finding": "PMC provides full-text context for DNA methylation risk-marker construction, validation and mortality/healthspan associations."
+        }
+      ],
+      "registeredSourceRole": "biological-age-risk-marker-observation-anchor",
+      "registeredExactClaimUses": [
+        "Supports treating biological-age clocks as observation-layer risk markers, while separating risk stratification from causal control or intervention response."
+      ],
+      "registeredTransferBoundaries": [
+        "Transfer only as biomarker-risk and observation-process vocabulary. It does not prove mortality reduction, intervention effect, or personal prognosis."
+      ],
+      "sourceIdentityVerdict": "verified-primary-biomarker-source",
+      "sourceContextVerdict": "supports-biological-age-risk-marker-observation-role-with-boundary",
+      "exactClaimUseVerdict": "supports DNA methylation GrimAge as observation-layer risk-marker and risk-stratification vocabulary",
+      "domainTransferVerdict": "bounded-transfer-to biomarker-risk and observation-process vocabulary; no mortality reduction, causal control, intervention response or personal prognosis",
+      "modelPositionVerdict": "biomarker-observation-language-only; prediction model admission requires population, tissue, calibration, validation, batch and endpoint cards",
+      "uncertaintyBoundaryVerdict": "must carry cohort, tissue/sample, assay, batch, calibration, confounding, endpoint and transportability limits",
+      "downgradeVerdict": "no downgrade required for risk-marker vocabulary; downgrade required if used as causal rejuvenation, biomarker-optimization or personal-prognosis evidence",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this batch",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "reviewerNote": "Fresh review confirms GrimAge supports biomarker observation and risk-marker language, not causal intervention or individual prognosis claims.",
+      "affectedPromotionTaskCount": 1,
+      "affectedPromotionTaskIds": [
+        "PROM-040-HIDOM-FLD014-SA-GRIMAGE-2019"
+      ],
+      "affectedDomainIds": [
+        "biological-age-clocks-biomarker-validation"
+      ],
+      "affectedFieldCardIds": [
+        "HIDOM-FLD014"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "domain-claim-upgrade",
+        "clinical-validity-claim"
+      ]
+    },
+    {
+      "sourceCardId": "SA-IMMUNOSENESCENCE-2024",
+      "reviewedSourceTitle": "Immunosenescence: Aging and Immune System Decline",
+      "reviewedSourceAuthors": "Alyssa L. DeMaio; et al.",
+      "reviewedSourceYear": "2024",
+      "sourceType": "review-paper",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "freshReviewEvidence": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39771976/",
+          "evidenceType": "pubmed-record",
+          "finding": "PubMed identifies the 2024 review as a source on immune-system decline with aging."
+        },
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11680340/",
+          "evidenceType": "pmc-full-text",
+          "finding": "PMC provides full-text context for immune aging mechanisms, functional decline and tradeoffs relevant to source-card drafting."
+        }
+      ],
+      "registeredSourceRole": "immune-aging-multichannel-maintenance-anchor",
+      "registeredExactClaimUses": [
+        "Supports representing immune maintenance as multi-channel aging involving infection defense, cancer surveillance, inflammation, autoimmunity and recovery capacity."
+      ],
+      "registeredTransferBoundaries": [
+        "Transfer only as immune-aging mechanism and variable vocabulary. It does not support immune-boosting advice, treatment selection, or calibrated risk estimates."
+      ],
+      "sourceIdentityVerdict": "verified-primary-or-authoritative-review-source",
+      "sourceContextVerdict": "supports-immune-aging-multichannel-maintenance-role-with-boundary",
+      "exactClaimUseVerdict": "supports immune maintenance as multi-channel aging involving infection defense, cancer surveillance, inflammation, autoimmunity and recovery capacity",
+      "domainTransferVerdict": "bounded-transfer-to immune-aging mechanism and variable vocabulary; no immune-boosting advice, treatment selection, causal effect size or calibrated risk estimate",
+      "modelPositionVerdict": "mechanism-and-variable-language-only; model admission requires endpoint, population, safety, tradeoff and validation cards",
+      "uncertaintyBoundaryVerdict": "must carry review-level, immune-subsystem, age-group, infection/cancer/autoimmunity tradeoff, endpoint and clinical-translation limits",
+      "downgradeVerdict": "no downgrade required for immune-aging vocabulary; downgrade required if used as immune treatment, boosting advice or clinical-validity evidence",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this batch",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "reviewerNote": "Fresh review confirms immunosenescence material supports multi-channel immune-aging framing, while intervention and personal-risk claims remain blocked.",
+      "affectedPromotionTaskCount": 1,
+      "affectedPromotionTaskIds": [
+        "PROM-034-HIDOM-FLD010-SA-IMMUNOSENESCENCE-2024"
+      ],
+      "affectedDomainIds": [
+        "immune-maintenance"
+      ],
+      "affectedFieldCardIds": [
+        "HIDOM-FLD010"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "domain-claim-upgrade",
+        "clinical-validity-claim"
+      ]
     }
   ],
   "packetCoverage": [
@@ -631,6 +1102,276 @@
       "modelAdmissionDecision": "blocked-pending-card-promotion-and-model-gates"
     },
     {
+      "promotionTaskId": "PROM-026-HIDOM-FLD002-SA-HALLMARKS-AGING-2023",
+      "domainId": "longevity-evidence",
+      "fieldCardId": "HIDOM-FLD002",
+      "sourceCardId": "SA-HALLMARKS-AGING-2023",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-and-model-gates"
+    },
+    {
+      "promotionTaskId": "PROM-027-HIDOM-FLD007-SA-HALLMARKS-CANCER-2022",
+      "domainId": "cellular-reprogramming",
+      "fieldCardId": "HIDOM-FLD007",
+      "sourceCardId": "SA-HALLMARKS-CANCER-2022",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-and-model-gates"
+    },
+    {
+      "promotionTaskId": "PROM-028-HIDOM-FLD007-SA-YAMANAKA-IPS-2006",
+      "domainId": "cellular-reprogramming",
+      "fieldCardId": "HIDOM-FLD007",
+      "sourceCardId": "SA-YAMANAKA-IPS-2006",
+      "reviewerVerdict": "bounded-support",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-and-model-gates"
+    },
+    {
+      "promotionTaskId": "PROM-029-HIDOM-FLD007-SA-PARTIAL-REPROGRAMMING-2016",
+      "domainId": "cellular-reprogramming",
+      "fieldCardId": "HIDOM-FLD007",
+      "sourceCardId": "SA-PARTIAL-REPROGRAMMING-2016",
+      "reviewerVerdict": "bounded-support",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-and-model-gates"
+    },
+    {
+      "promotionTaskId": "PROM-030-HIDOM-FLD008-SA-HALLMARKS-AGING-2023",
+      "domainId": "regenerative-medicine",
+      "fieldCardId": "HIDOM-FLD008",
+      "sourceCardId": "SA-HALLMARKS-AGING-2023",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-and-model-gates"
+    },
+    {
+      "promotionTaskId": "PROM-031-HIDOM-FLD008-SA-PARTIAL-REPROGRAMMING-2016",
+      "domainId": "regenerative-medicine",
+      "fieldCardId": "HIDOM-FLD008",
+      "sourceCardId": "SA-PARTIAL-REPROGRAMMING-2016",
+      "reviewerVerdict": "bounded-support",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-and-model-gates"
+    },
+    {
+      "promotionTaskId": "PROM-032-HIDOM-FLD009-SA-HALLMARKS-CANCER-2022",
+      "domainId": "cancer-screening-early-detection-continuity",
+      "fieldCardId": "HIDOM-FLD009",
+      "sourceCardId": "SA-HALLMARKS-CANCER-2022",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-and-model-gates"
+    },
+    {
+      "promotionTaskId": "PROM-033-HIDOM-FLD010-SA-HALLMARKS-AGING-2023",
+      "domainId": "immune-maintenance",
+      "fieldCardId": "HIDOM-FLD010",
+      "sourceCardId": "SA-HALLMARKS-AGING-2023",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-and-model-gates"
+    },
+    {
+      "promotionTaskId": "PROM-034-HIDOM-FLD010-SA-IMMUNOSENESCENCE-2024",
+      "domainId": "immune-maintenance",
+      "fieldCardId": "HIDOM-FLD010",
+      "sourceCardId": "SA-IMMUNOSENESCENCE-2024",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-and-model-gates"
+    },
+    {
+      "promotionTaskId": "PROM-035-HIDOM-FLD012-SA-HALLMARKS-AGING-2023",
+      "domainId": "mitochondrial-bioenergetics",
+      "fieldCardId": "HIDOM-FLD012",
+      "sourceCardId": "SA-HALLMARKS-AGING-2023",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-and-model-gates"
+    },
+    {
+      "promotionTaskId": "PROM-036-HIDOM-FLD012-SA-HALLMARKS-AGING-2013",
+      "domainId": "mitochondrial-bioenergetics",
+      "fieldCardId": "HIDOM-FLD012",
+      "sourceCardId": "SA-HALLMARKS-AGING-2013",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-and-model-gates"
+    },
+    {
+      "promotionTaskId": "PROM-037-HIDOM-FLD013-SA-HALLMARKS-AGING-2023",
+      "domainId": "genomic-stability-dna-repair",
+      "fieldCardId": "HIDOM-FLD013",
+      "sourceCardId": "SA-HALLMARKS-AGING-2023",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-and-model-gates"
+    },
+    {
+      "promotionTaskId": "PROM-038-HIDOM-FLD013-SA-HALLMARKS-AGING-2013",
+      "domainId": "genomic-stability-dna-repair",
+      "fieldCardId": "HIDOM-FLD013",
+      "sourceCardId": "SA-HALLMARKS-AGING-2013",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-and-model-gates"
+    },
+    {
+      "promotionTaskId": "PROM-039-HIDOM-FLD013-SA-HALLMARKS-CANCER-2022",
+      "domainId": "genomic-stability-dna-repair",
+      "fieldCardId": "HIDOM-FLD013",
+      "sourceCardId": "SA-HALLMARKS-CANCER-2022",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-and-model-gates"
+    },
+    {
+      "promotionTaskId": "PROM-040-HIDOM-FLD014-SA-GRIMAGE-2019",
+      "domainId": "biological-age-clocks-biomarker-validation",
+      "fieldCardId": "HIDOM-FLD014",
+      "sourceCardId": "SA-GRIMAGE-2019",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-and-model-gates"
+    },
+    {
+      "promotionTaskId": "PROM-041-HIDOM-FLD015-SA-HALLMARKS-AGING-2023",
+      "domainId": "proteostasis-autophagy",
+      "fieldCardId": "HIDOM-FLD015",
+      "sourceCardId": "SA-HALLMARKS-AGING-2023",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-and-model-gates"
+    },
+    {
+      "promotionTaskId": "PROM-042-HIDOM-FLD015-SA-HALLMARKS-AGING-2013",
+      "domainId": "proteostasis-autophagy",
+      "fieldCardId": "HIDOM-FLD015",
+      "sourceCardId": "SA-HALLMARKS-AGING-2013",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-and-model-gates"
+    },
+    {
+      "promotionTaskId": "PROM-043-HIDOM-FLD016-SA-HALLMARKS-AGING-2023",
+      "domainId": "cellular-senescence-clearance",
+      "fieldCardId": "HIDOM-FLD016",
+      "sourceCardId": "SA-HALLMARKS-AGING-2023",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-and-model-gates"
+    },
+    {
+      "promotionTaskId": "PROM-044-HIDOM-FLD016-SA-HALLMARKS-AGING-2013",
+      "domainId": "cellular-senescence-clearance",
+      "fieldCardId": "HIDOM-FLD016",
+      "sourceCardId": "SA-HALLMARKS-AGING-2013",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-and-model-gates"
+    },
+    {
+      "promotionTaskId": "PROM-045-HIDOM-FLD016-SA-HALLMARKS-CANCER-2022",
+      "domainId": "cellular-senescence-clearance",
+      "fieldCardId": "HIDOM-FLD016",
+      "sourceCardId": "SA-HALLMARKS-CANCER-2022",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-and-model-gates"
+    },
+    {
+      "promotionTaskId": "PROM-046-HIDOM-FLD017-SA-HALLMARKS-AGING-2023",
+      "domainId": "extracellular-matrix-glycation",
+      "fieldCardId": "HIDOM-FLD017",
+      "sourceCardId": "SA-HALLMARKS-AGING-2023",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-and-model-gates"
+    },
+    {
+      "promotionTaskId": "PROM-047-HIDOM-FLD018-SA-HALLMARKS-AGING-2023",
+      "domainId": "stem-cell-reserve-renewal",
+      "fieldCardId": "HIDOM-FLD018",
+      "sourceCardId": "SA-HALLMARKS-AGING-2023",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-and-model-gates"
+    },
+    {
+      "promotionTaskId": "PROM-048-HIDOM-FLD018-SA-HALLMARKS-AGING-2013",
+      "domainId": "stem-cell-reserve-renewal",
+      "fieldCardId": "HIDOM-FLD018",
+      "sourceCardId": "SA-HALLMARKS-AGING-2013",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-and-model-gates"
+    },
+    {
+      "promotionTaskId": "PROM-049-HIDOM-FLD018-SA-HALLMARKS-CANCER-2022",
+      "domainId": "stem-cell-reserve-renewal",
+      "fieldCardId": "HIDOM-FLD018",
+      "sourceCardId": "SA-HALLMARKS-CANCER-2022",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-and-model-gates"
+    },
+    {
+      "promotionTaskId": "PROM-050-HIDOM-FLD019-SA-HALLMARKS-AGING-2023",
+      "domainId": "microbiome-ecology",
+      "fieldCardId": "HIDOM-FLD019",
+      "sourceCardId": "SA-HALLMARKS-AGING-2023",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-and-model-gates"
+    },
+    {
+      "promotionTaskId": "PROM-051-HIDOM-FLD020-SA-HALLMARKS-AGING-2023",
+      "domainId": "cardiovascular-resilience",
+      "fieldCardId": "HIDOM-FLD020",
+      "sourceCardId": "SA-HALLMARKS-AGING-2023",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-and-model-gates"
+    },
+    {
+      "promotionTaskId": "PROM-052-HIDOM-FLD021-SA-HALLMARKS-AGING-2023",
+      "domainId": "musculoskeletal-integrity",
+      "fieldCardId": "HIDOM-FLD021",
+      "sourceCardId": "SA-HALLMARKS-AGING-2023",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-and-model-gates"
+    },
+    {
+      "promotionTaskId": "PROM-053-HIDOM-FLD022-SA-HALLMARKS-AGING-2023",
+      "domainId": "nutrition-metabolic-health",
+      "fieldCardId": "HIDOM-FLD022",
+      "sourceCardId": "SA-HALLMARKS-AGING-2023",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-and-model-gates"
+    },
+    {
+      "promotionTaskId": "PROM-054-HIDOM-FLD023-SA-HALLMARKS-AGING-2023",
+      "domainId": "renal-hepatic-clearance",
+      "fieldCardId": "HIDOM-FLD023",
+      "sourceCardId": "SA-HALLMARKS-AGING-2023",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-and-model-gates"
+    },
+    {
+      "promotionTaskId": "PROM-055-HIDOM-FLD026-SA-HALLMARKS-AGING-2023",
+      "domainId": "endocrine-hormonal-regulation",
+      "fieldCardId": "HIDOM-FLD026",
+      "sourceCardId": "SA-HALLMARKS-AGING-2023",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-and-model-gates"
+    },
+    {
       "promotionTaskId": "PROM-070-HIDOM-FLD009-SA-NCI-SCREENING-BIAS",
       "domainId": "cancer-screening-early-detection-continuity",
       "fieldCardId": "HIDOM-FLD009",
@@ -641,7 +1382,6 @@
     }
   ],
   "remainingFreshReviewBatches": [
-    "FRB-02-biological-aging-mechanisms",
     "FRB-03-subject-continuity-capability-cognition",
     "FRB-04-digital-twin-ai-governance-future-waiting"
   ],
@@ -649,5 +1389,35 @@
     "docs/reference/README.md",
     "docs/reference/human-infra-maturity-roadmap.md",
     "tools/README.md"
+  ],
+  "batchSummaries": [
+    {
+      "batchId": "FRB-01-method-statistical-model-standards",
+      "packetCount": 26,
+      "sourceAnchorCounts": {
+        "SA-KAPLAN-MEIER-1958": 3,
+        "SA-COX-1972": 5,
+        "SA-TARGET-TRIAL-2022": 15,
+        "SA-TRIPOD-AI-2024": 2,
+        "SA-NCI-SCREENING-BIAS": 1
+      },
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-and-model-gates"
+    },
+    {
+      "batchId": "FRB-02-biological-aging-mechanisms",
+      "packetCount": 30,
+      "sourceAnchorCounts": {
+        "SA-HALLMARKS-AGING-2013": 5,
+        "SA-HALLMARKS-AGING-2023": 15,
+        "SA-HALLMARKS-CANCER-2022": 5,
+        "SA-YAMANAKA-IPS-2006": 1,
+        "SA-PARTIAL-REPROGRAMMING-2016": 2,
+        "SA-GRIMAGE-2019": 1,
+        "SA-IMMUNOSENESCENCE-2024": 1
+      },
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-and-model-gates"
+    }
   ]
 }

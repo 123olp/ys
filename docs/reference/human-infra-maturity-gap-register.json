@@ -114,7 +114,7 @@
     {
       "axisId": "research_framework",
       "axisName": "研究框架",
-      "currentPercent": 97,
+      "currentPercent": 98,
       "targetPercent": 100,
       "definitionOfDone": "Every strong project claim can be traced to source cards, claim-evidence rows, variables, mechanism links, falsifiers, model position and governance boundary.",
       "primaryEvidence": [
@@ -191,11 +191,11 @@
             "tools/audit_human_infra_independent_fresh_review_verdict_register.py"
           ],
           "missingEvidence": [
-            "Independent fresh reviewer verdicts for the remaining 55 prepared promotion artifact packs.",
+            "Independent fresh reviewer verdicts for the remaining 25 prepared promotion artifact packs.",
             "Filled reviewed Source Card artifacts that classify each completed field row as supported, bounded, downgraded or rejected.",
             "Domain-level Claim-Evidence Matrix coverage beyond the current priority C1/C2 set."
           ],
-          "nextAction": "Execute FRB-02 through FRB-04 in the independent fresh-review protocol, then fill reviewed Source Cards only for supported or bounded rows and keep model admission blocked.",
+          "nextAction": "Execute FRB-03 and FRB-04 in the independent fresh-review protocol, then fill reviewed Source Cards only for supported or bounded rows and keep model admission blocked.",
           "blocks100Percent": true
         },
         {
@@ -227,7 +227,7 @@
             "Filled endpoint, uncertainty and transfer-boundary cards derived from reviewed rows rather than field-extraction drafts.",
             "Domain-specific variable tables for C2 long-tail claims beyond the current priority set."
           ],
-          "nextAction": "Use the FRB-01 verdict register to fill bounded artifacts for method-anchor rows, then continue fresh review for remaining batches before promoting variables or endpoints from other sources.",
+          "nextAction": "Use the FRB-01 and FRB-02 verdict register rows to fill bounded artifacts for method and biological-aging rows, then continue fresh review for remaining batches before promoting other variables or endpoints.",
           "blocks100Percent": true
         },
         {
@@ -280,11 +280,11 @@
             "tools/audit_human_infra_independent_fresh_review_verdict_register.py"
           ],
           "missingEvidence": [
-            "Filled downgrade-check artifacts for the 26 reviewed FRB-01 method rows and the remaining 55 prepared promotion packs after independent fresh review.",
+            "Filled downgrade-check artifacts for the 56 reviewed FRB-01/FRB-02 rows and the remaining 25 prepared promotion packs after independent fresh review.",
             "Falsifier rows for C2 domain claims beyond the current 20-domain priority set.",
-            "Independent reviewer-confirmed boundary checks for all reviewed batches, not only FRB-01."
+            "Independent reviewer-confirmed boundary checks for all reviewed batches, not only FRB-01 and FRB-02."
           ],
-          "nextAction": "Use the FRB-01 fresh-review verdicts to fill the first downgrade-check IDs, then connect rejected or indirect rows from later batches back to falsifier and variable-card gates.",
+          "nextAction": "Use the FRB-01 and FRB-02 fresh-review verdicts to fill the first downgrade-check IDs, then connect rejected or indirect rows from remaining batches back to falsifier and variable-card gates.",
           "blocks100Percent": true
         }
       ]

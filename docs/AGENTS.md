@@ -235,7 +235,7 @@ docs/
 - `reference/human-infra-core-claim-evidence-matrix.md`：登记 Human Infra 核心主张、Source Anchor Cards、Claim-Evidence Matrix、方法转译契约和项目级证据 gate。
 - `reference/human-infra-audience-claim-map.json`：登记不同受众的 Claim ID 入口、价值翻译、禁止误读和邻近项目边界，用于把项目价值讲清楚而不改写核心主线。
 - `reference/human-infra-independent-fresh-review-protocol.json`：登记 81 个卡片晋升准备包的独立 fresh review 批次、审查字段、verdict taxonomy 和晋升规则；它只定义审查协议，不代表 verdict 已完成。
-- `reference/human-infra-independent-fresh-review-verdict-register.json`：登记 FRB-01 方法学批次 5 个来源锚点和 26 个晋升包的独立 fresh review verdict；它只允许 bounded artifact filling，不代表卡片填充、模型准入或个体预测。
+- `reference/human-infra-independent-fresh-review-verdict-register.json`：登记 FRB-01 方法学批次和 FRB-02 生物衰老机制批次 12 个来源锚点和 56 个晋升包的独立 fresh review verdict；它只允许 bounded artifact filling，不代表卡片填充、模型准入或个体预测。
 - `reference/life-path-prediction-model-contract.md`：定义干预、状态转移、风险函数、生存曲线、有效时间、主观时间、相对时间和未来选择权的预测模型契约。
 - `reference/life-path-prediction-model-governance.md`：定义定量预测模型的证据准入、偏差审查、验证、报告和禁止用途门禁。
 - `reference/project-boundary-v0.1.md`：定义当前公开版本边界、纳入范围、排除范围、材料落点和后续版本方向。
