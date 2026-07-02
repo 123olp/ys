@@ -4,6 +4,7 @@ All notable repository structure changes are recorded here.
 
 ## 2026-07-02
 
+- Added the first independent fresh-review verdict register and audit gate, covering FRB-01 method/statistical/model standards across 5 source anchors and 26/81 prepared promotion packets while keeping card filling, model admission, calibrated prediction and individual-use claims blocked.
 - Added a machine-readable audience-claim map and audit gate, closing the value-clarity axis with six audience entry points, six adjacent-project boundary distinctions and README/reference/toolchain index coverage.
 - Added an independent fresh-review protocol and audit gate, batching all 81 prepared card-promotion artifact packs into four review groups while keeping reviewed verdict count at 0 until real review artifacts exist.
 - Added a card-promotion prep register and audit gate, assigning 486 prepared Source/variable/endpoint/uncertainty/transfer/downgrade artifact IDs to the 81 locally reviewed promotion tasks while keeping independent fresh review and model admission blocked.

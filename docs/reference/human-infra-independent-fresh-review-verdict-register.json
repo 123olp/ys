@@ -1,0 +1,653 @@
+{
+  "schemaVersion": "human-infra.independent-fresh-review-verdict-register.v1",
+  "registerId": "human-infra-independent-fresh-review-verdict-register-2026-07-02",
+  "status": "active-fresh-review-verdict-register-partial",
+  "purpose": "Record independent fresh-review verdicts for prepared Human Infra card-promotion packs while keeping model admission and individual-use claims blocked.",
+  "sourceOfTruth": {
+    "independentFreshReviewProtocol": "docs/reference/human-infra-independent-fresh-review-protocol.json",
+    "cardPromotionPrepRegister": "docs/reference/human-infra-card-promotion-prep-register.json",
+    "sourceContextLocalReviewRegister": "docs/reference/human-infra-source-context-local-review-register.json",
+    "domainSourceSpecificExtractionRegister": "docs/reference/human-infra-domain-source-specific-extraction-register.json",
+    "evidencePolicy": "docs/reference/evidence-policy.md",
+    "maturityGapRegister": "docs/reference/human-infra-maturity-gap-register.json"
+  },
+  "scope": {
+    "reviewedBatchId": "FRB-01-method-statistical-model-standards",
+    "reviewedBatchLabel": "统计、生存分析、目标试验与预测模型方法锚点",
+    "totalPreparedPromotionPacketCount": 81,
+    "reviewedPromotionPacketCount": 26,
+    "remainingPreparedPromotionPacketCount": 55,
+    "reviewedSourceAnchorCount": 5,
+    "coveredDomainCount": 16,
+    "reviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+    "artifactPromotionDecision": "FRB-01 rows may proceed to bounded artifact filling; model admission remains blocked until card filling, downgrade checks and model gates pass.",
+    "nonClaims": [
+      "This register is not a completed Source Card set, variable-card set, endpoint-card set, uncertainty-card set, transfer-boundary-card set or downgrade-check set.",
+      "This register does not authorize calibrated prediction, individual recommendation, individual death-date output, intervention ranking, domain-claim upgrade or clinical-validity claims.",
+      "This register completes only the first independent fresh-review batch; the remaining prepared packs still require fresh review."
+    ]
+  },
+  "requiredReviewFields": [
+    "sourceIdentityVerdict",
+    "sourceContextVerdict",
+    "exactClaimUseVerdict",
+    "domainTransferVerdict",
+    "modelPositionVerdict",
+    "uncertaintyBoundaryVerdict",
+    "downgradeVerdict",
+    "blockedUseVerdict",
+    "reviewerNote"
+  ],
+  "verdictTaxonomy": [
+    "support-with-boundary",
+    "bounded-support",
+    "downgrade-required",
+    "reject-source-context-mismatch",
+    "cannot-evaluate-insufficient-context"
+  ],
+  "artifactPromotionDecisions": [
+    "eligible-for-bounded-artifact-fill",
+    "downgrade-before-fill",
+    "rejected-no-fill",
+    "blocked-cannot-evaluate"
+  ],
+  "blockedUses": [
+    "calibrated-prediction",
+    "individual-recommendation",
+    "individual-death-date-output",
+    "intervention-ranking",
+    "domain-claim-upgrade",
+    "clinical-validity-claim"
+  ],
+  "sourceAnchorFreshReviews": [
+    {
+      "sourceCardId": "SA-KAPLAN-MEIER-1958",
+      "reviewedSourceTitle": "Nonparametric estimation from incomplete observations",
+      "reviewedSourceAuthors": "Edward L. Kaplan; Paul Meier",
+      "reviewedSourceYear": "1958",
+      "sourceType": "method-paper",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "freshReviewEvidence": [
+        {
+          "url": "https://hero.epa.gov/reference/75292/",
+          "evidenceType": "metadata-and-abstract",
+          "finding": "HERO metadata identifies the source as a 1958 Journal of the American Statistical Association journal article by Kaplan and Meier, volume 53 issue 282, pages 457-481. The abstract describes incomplete observations, loss/censoring-like events, independence assumptions that require scrutiny, and nonparametric estimation of P(t)."
+        },
+        {
+          "url": "https://web.stanford.edu/~lutian/coursepdf/KMpaper.pdf",
+          "evidenceType": "public-course-pdf",
+          "finding": "The paper defines the survival function P(t) and product-limit estimate, and discusses losses, observation limits, and dependence between lifetimes and loss times."
+        }
+      ],
+      "registeredSourceRole": "survival-function-and-censoring-method-anchor",
+      "registeredExactClaimUses": [
+        "Supports aggregate time-to-event accounting for a defined risk set when time zero, event definition and censoring status are explicit."
+      ],
+      "registeredTransferBoundaries": [
+        "Transfer only as survival-curve and event-time vocabulary. It does not validate domain parameters, prove intervention benefit, or authorize personal prognosis."
+      ],
+      "sourceIdentityVerdict": "verified-primary-or-authoritative-method-source",
+      "sourceContextVerdict": "supports-survival-function-and-censoring-method-role-with-boundary",
+      "exactClaimUseVerdict": "supports aggregate survival-function and event-time accounting only when time zero, event definition, risk set and censoring or loss status are explicit",
+      "domainTransferVerdict": "bounded-transfer-to-survival-curve vocabulary; no intervention benefit, route feasibility, personal prognosis or parameter validation",
+      "modelPositionVerdict": "method-language-only; calibrated prediction and individual prognosis remain blocked",
+      "uncertaintyBoundaryVerdict": "must carry censoring/loss mechanism, time-origin, event-definition and risk-set applicability limits",
+      "downgradeVerdict": "no downgrade required for method vocabulary; downgrade required if used as causal, feasibility or personal-prediction evidence",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this batch",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "reviewerNote": "Fresh review confirms this source is usable as survival-analysis vocabulary for incomplete observations, not as Human Infra model calibration evidence.",
+      "affectedPromotionTaskCount": 3,
+      "affectedPromotionTaskIds": [
+        "PROM-001-HIDOM-FLD001-SA-KAPLAN-MEIER-1958",
+        "PROM-002-HIDOM-FLD002-SA-KAPLAN-MEIER-1958",
+        "PROM-014-HIDOM-FLD020-SA-KAPLAN-MEIER-1958"
+      ],
+      "affectedDomainIds": [
+        "cardiovascular-resilience",
+        "future-waiting",
+        "longevity-evidence"
+      ],
+      "affectedFieldCardIds": [
+        "HIDOM-FLD001",
+        "HIDOM-FLD002",
+        "HIDOM-FLD020"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "domain-claim-upgrade",
+        "clinical-validity-claim"
+      ]
+    },
+    {
+      "sourceCardId": "SA-COX-1972",
+      "reviewedSourceTitle": "Regression Models and Life-Tables",
+      "reviewedSourceAuthors": "D. R. Cox",
+      "reviewedSourceYear": "1972",
+      "sourceType": "method-paper",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "freshReviewEvidence": [
+        {
+          "url": "https://doi.org/10.1111/j.2517-6161.1972.tb00899.x",
+          "evidenceType": "publisher-doi-page",
+          "finding": "The publisher page identifies the paper as Journal of the Royal Statistical Society Series B, volume 34 issue 2, pages 187-202, and summarizes censored failure-time analysis where the hazard function is modeled as explanatory variables and coefficients multiplied by an arbitrary time function."
+        },
+        {
+          "url": "https://hero.epa.gov/reference/8785/",
+          "evidenceType": "metadata-and-abstract",
+          "finding": "EPA HERO metadata records the 1972 journal article, page range 187-220, peer review status, and an abstract matching censored failure-time, explanatory-variable and hazard-function language."
+        }
+      ],
+      "registeredSourceRole": "hazard-function-and-covariate-risk-method-anchor",
+      "registeredExactClaimUses": [
+        "Supports expressing domain variables as covariates associated with event hazard when time origin, event outcome and covariate measurement are explicit."
+      ],
+      "registeredTransferBoundaries": [
+        "Transfer only as hazard vocabulary and covariate-risk positioning. It does not prove causality, personalize risk, or rank interventions by itself."
+      ],
+      "sourceIdentityVerdict": "verified-primary-or-authoritative-method-source",
+      "sourceContextVerdict": "supports-hazard-function-and-covariate-risk-method-role-with-boundary",
+      "exactClaimUseVerdict": "supports expressing explicitly measured covariates as associated with event hazard under a defined time origin and event outcome",
+      "domainTransferVerdict": "bounded-transfer-to-hazard/covariate-risk vocabulary; no causality, personalization, intervention ranking or deployment validity",
+      "modelPositionVerdict": "method-language-only; calibrated prediction, causal inference and individual risk advice remain blocked",
+      "uncertaintyBoundaryVerdict": "must carry proportional-hazard/functional-form, covariate-measurement, censoring, validation and calibration limits",
+      "downgradeVerdict": "no downgrade required for hazard vocabulary; downgrade required if treated as causal effect, calibrated predictor or intervention-ranking evidence",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this batch",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "reviewerNote": "Fresh review confirms this source supports hazard-model vocabulary and covariate-risk positioning only within explicit modeling assumptions.",
+      "affectedPromotionTaskCount": 5,
+      "affectedPromotionTaskIds": [
+        "PROM-003-HIDOM-FLD002-SA-COX-1972",
+        "PROM-015-HIDOM-FLD020-SA-COX-1972",
+        "PROM-019-HIDOM-FLD023-SA-COX-1972",
+        "PROM-021-HIDOM-FLD024-SA-COX-1972",
+        "PROM-023-HIDOM-FLD025-SA-COX-1972"
+      ],
+      "affectedDomainIds": [
+        "blood-oxygen-hemostasis",
+        "cardiovascular-resilience",
+        "longevity-evidence",
+        "renal-hepatic-clearance",
+        "respiratory-oxygenation"
+      ],
+      "affectedFieldCardIds": [
+        "HIDOM-FLD002",
+        "HIDOM-FLD020",
+        "HIDOM-FLD023",
+        "HIDOM-FLD024",
+        "HIDOM-FLD025"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "domain-claim-upgrade",
+        "clinical-validity-claim"
+      ]
+    },
+    {
+      "sourceCardId": "SA-TARGET-TRIAL-2022",
+      "reviewedSourceTitle": "Target Trial Emulation: A Framework for Causal Inference From Observational Data",
+      "reviewedSourceAuthors": "Miguel A. Hernán; Wei Wang; David E. Leaf",
+      "reviewedSourceYear": "2022",
+      "sourceType": "method-paper",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "freshReviewEvidence": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/36508210/",
+          "evidenceType": "pubmed-record",
+          "finding": "PubMed identifies the JAMA 2022 article, DOI 10.1001/jama.2022.21383, and summarizes target trial emulation as designing an observational study to preserve advantages of a randomized clinical trial while pointing out method limitations."
+        }
+      ],
+      "registeredSourceRole": "intervention-causal-design-method-anchor",
+      "registeredExactClaimUses": [
+        "Supports translating a domain intervention question into target-trial fields: eligibility, strategies, assignment, follow-up, outcome, causal contrast and analysis plan."
+      ],
+      "registeredTransferBoundaries": [
+        "Transfer only as causal-design discipline for future intervention evaluation. It does not establish that any domain intervention works."
+      ],
+      "sourceIdentityVerdict": "verified-primary-or-authoritative-method-source",
+      "sourceContextVerdict": "supports-intervention-causal-design-role-with-boundary",
+      "exactClaimUseVerdict": "supports translating intervention questions into target-trial protocol fields; it does not make observational data causal by label alone",
+      "domainTransferVerdict": "bounded-transfer-to-causal-design discipline; no proof that any Human Infra intervention works and no individual recommendation",
+      "modelPositionVerdict": "causal-design-language-only; effect claims remain blocked until data, assumptions, bias checks and sensitivity analyses pass",
+      "uncertaintyBoundaryVerdict": "must carry eligibility, strategies, assignment, time zero, follow-up, outcome, causal contrast, confounding and transportability limits",
+      "downgradeVerdict": "no downgrade required for causal-design scaffolding; downgrade required for any asserted effect without target-trial-compatible evidence",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this batch",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "reviewerNote": "Fresh review confirms this source is a design protocol anchor, not an evidence shortcut for intervention benefit.",
+      "affectedPromotionTaskCount": 15,
+      "affectedPromotionTaskIds": [
+        "PROM-004-HIDOM-FLD002-SA-TARGET-TRIAL-2022",
+        "PROM-006-HIDOM-FLD008-SA-TARGET-TRIAL-2022",
+        "PROM-007-HIDOM-FLD009-SA-TARGET-TRIAL-2022",
+        "PROM-008-HIDOM-FLD010-SA-TARGET-TRIAL-2022",
+        "PROM-009-HIDOM-FLD014-SA-TARGET-TRIAL-2022",
+        "PROM-011-HIDOM-FLD015-SA-TARGET-TRIAL-2022",
+        "PROM-012-HIDOM-FLD017-SA-TARGET-TRIAL-2022",
+        "PROM-013-HIDOM-FLD019-SA-TARGET-TRIAL-2022",
+        "PROM-016-HIDOM-FLD020-SA-TARGET-TRIAL-2022",
+        "PROM-017-HIDOM-FLD021-SA-TARGET-TRIAL-2022",
+        "PROM-018-HIDOM-FLD022-SA-TARGET-TRIAL-2022",
+        "PROM-020-HIDOM-FLD023-SA-TARGET-TRIAL-2022",
+        "PROM-022-HIDOM-FLD024-SA-TARGET-TRIAL-2022",
+        "PROM-024-HIDOM-FLD025-SA-TARGET-TRIAL-2022",
+        "PROM-025-HIDOM-FLD026-SA-TARGET-TRIAL-2022"
+      ],
+      "affectedDomainIds": [
+        "biological-age-clocks-biomarker-validation",
+        "blood-oxygen-hemostasis",
+        "cancer-screening-early-detection-continuity",
+        "cardiovascular-resilience",
+        "endocrine-hormonal-regulation",
+        "extracellular-matrix-glycation",
+        "immune-maintenance",
+        "longevity-evidence",
+        "microbiome-ecology",
+        "musculoskeletal-integrity",
+        "nutrition-metabolic-health",
+        "proteostasis-autophagy",
+        "regenerative-medicine",
+        "renal-hepatic-clearance",
+        "respiratory-oxygenation"
+      ],
+      "affectedFieldCardIds": [
+        "HIDOM-FLD002",
+        "HIDOM-FLD008",
+        "HIDOM-FLD009",
+        "HIDOM-FLD010",
+        "HIDOM-FLD014",
+        "HIDOM-FLD015",
+        "HIDOM-FLD017",
+        "HIDOM-FLD019",
+        "HIDOM-FLD020",
+        "HIDOM-FLD021",
+        "HIDOM-FLD022",
+        "HIDOM-FLD023",
+        "HIDOM-FLD024",
+        "HIDOM-FLD025",
+        "HIDOM-FLD026"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "domain-claim-upgrade",
+        "clinical-validity-claim"
+      ]
+    },
+    {
+      "sourceCardId": "SA-TRIPOD-AI-2024",
+      "reviewedSourceTitle": "TRIPOD+AI statement: updated guidance for reporting clinical prediction models that use regression or machine learning methods",
+      "reviewedSourceAuthors": "Gary S. Collins et al.",
+      "reviewedSourceYear": "2024",
+      "sourceType": "reporting-guideline",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "freshReviewEvidence": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38626948/",
+          "evidenceType": "pubmed-record",
+          "finding": "PubMed identifies the BMJ 2024 TRIPOD+AI article, PMID 38626948, DOI 10.1136/bmj-2023-078378, and states the guideline aims at complete, accurate and transparent reporting of prediction-model studies."
+        },
+        {
+          "url": "https://www.equator-network.org/reporting-guidelines/tripod-statement/",
+          "evidenceType": "reporting-guideline-registry",
+          "finding": "EQUATOR lists TRIPOD+AI as guidance for reporting studies that develop a prediction model or evaluate performance and links checklist materials."
+        }
+      ],
+      "registeredSourceRole": "prediction-model-reporting-and-validation-method-anchor",
+      "registeredExactClaimUses": [
+        "Supports reporting requirements for prediction models: data source, participants, predictors, outcome, model development, validation, calibration and limitations."
+      ],
+      "registeredTransferBoundaries": [
+        "Transfer only as a prediction-reporting and validation checklist. It does not authorize clinical prediction, individual advice or automated action."
+      ],
+      "sourceIdentityVerdict": "verified-primary-or-authoritative-reporting-guideline-source",
+      "sourceContextVerdict": "supports-prediction-model-reporting-and-validation-role-with-boundary",
+      "exactClaimUseVerdict": "supports reporting requirements for prediction-model development and performance evaluation, including AI and regression models",
+      "domainTransferVerdict": "bounded-transfer-to-reporting/checklist vocabulary; no clinical validity, deployment fitness, calibration proof or individual advice",
+      "modelPositionVerdict": "reporting-guideline-only; Human Infra toy models remain non-clinical until validation, calibration and bias assessment are independently evidenced",
+      "uncertaintyBoundaryVerdict": "must carry data-source, participant, predictor, outcome, validation, calibration, limitation and transparency reporting limits",
+      "downgradeVerdict": "no downgrade required for reporting-standard use; downgrade required if used as model-performance evidence",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this batch",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "reviewerNote": "Fresh review confirms TRIPOD+AI is a reporting and transparency anchor, not proof that any Human Infra model works.",
+      "affectedPromotionTaskCount": 2,
+      "affectedPromotionTaskIds": [
+        "PROM-005-HIDOM-FLD002-SA-TRIPOD-AI-2024",
+        "PROM-010-HIDOM-FLD014-SA-TRIPOD-AI-2024"
+      ],
+      "affectedDomainIds": [
+        "biological-age-clocks-biomarker-validation",
+        "longevity-evidence"
+      ],
+      "affectedFieldCardIds": [
+        "HIDOM-FLD002",
+        "HIDOM-FLD014"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "domain-claim-upgrade",
+        "clinical-validity-claim"
+      ]
+    },
+    {
+      "sourceCardId": "SA-NCI-SCREENING-BIAS",
+      "reviewedSourceTitle": "What Cancer Screening Statistics Really Tell Us",
+      "reviewedSourceAuthors": "National Cancer Institute",
+      "reviewedSourceYear": "official-reference",
+      "sourceType": "official-explainer",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "freshReviewEvidence": [
+        {
+          "url": "https://www.cancer.gov/about-cancer/screening/research/what-screening-statistics-mean",
+          "evidenceType": "official-explainer",
+          "finding": "NCI explains why screening statistics require careful interpretation, including survival-after-diagnosis versus mortality endpoints."
+        },
+        {
+          "url": "https://www.cancer.gov/about-cancer/screening/research",
+          "evidenceType": "official-topic-page",
+          "finding": "NCI provides official context for cancer screening research and screening-benefit boundaries."
+        }
+      ],
+      "registeredSourceRole": "screening-endpoint-bias-and-harm-boundary-anchor",
+      "registeredExactClaimUses": [
+        "Supports separating earlier detection, survival-after-diagnosis statistics, mortality reduction, overdiagnosis, follow-up burden and net screening benefit."
+      ],
+      "registeredTransferBoundaries": [
+        "Transfer only as screening endpoint and bias vocabulary. It does not endorse or reject individual screening and does not prove mortality benefit."
+      ],
+      "sourceIdentityVerdict": "verified-authoritative-government-explainer-source",
+      "sourceContextVerdict": "supports-screening-endpoint-bias-boundary-role-with-boundary",
+      "exactClaimUseVerdict": "supports separating earlier detection, survival-after-diagnosis statistics, mortality reduction, overdiagnosis, follow-up burden and net benefit",
+      "domainTransferVerdict": "bounded-transfer-to-screening endpoint and bias vocabulary; no endorsement or rejection of individual screening",
+      "modelPositionVerdict": "boundary-language-only; screening benefit, harm and mortality claims require population/test/follow-up/mortality endpoint cards",
+      "uncertaintyBoundaryVerdict": "must carry lead-time, length bias, overdiagnosis, false-positive, follow-up-burden and mortality-endpoint limits",
+      "downgradeVerdict": "bounded support only; downgrade any row that treats earlier diagnosis or survival-after-diagnosis as mortality-benefit proof",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this batch",
+      "reviewerVerdict": "bounded-support",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "reviewerNote": "Fresh review confirms NCI material is suitable for screening-bias guardrails, not for individual screening advice or mortality-benefit proof.",
+      "affectedPromotionTaskCount": 1,
+      "affectedPromotionTaskIds": [
+        "PROM-070-HIDOM-FLD009-SA-NCI-SCREENING-BIAS"
+      ],
+      "affectedDomainIds": [
+        "cancer-screening-early-detection-continuity"
+      ],
+      "affectedFieldCardIds": [
+        "HIDOM-FLD009"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "domain-claim-upgrade",
+        "clinical-validity-claim"
+      ]
+    }
+  ],
+  "packetCoverage": [
+    {
+      "promotionTaskId": "PROM-001-HIDOM-FLD001-SA-KAPLAN-MEIER-1958",
+      "domainId": "future-waiting",
+      "fieldCardId": "HIDOM-FLD001",
+      "sourceCardId": "SA-KAPLAN-MEIER-1958",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-and-model-gates"
+    },
+    {
+      "promotionTaskId": "PROM-002-HIDOM-FLD002-SA-KAPLAN-MEIER-1958",
+      "domainId": "longevity-evidence",
+      "fieldCardId": "HIDOM-FLD002",
+      "sourceCardId": "SA-KAPLAN-MEIER-1958",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-and-model-gates"
+    },
+    {
+      "promotionTaskId": "PROM-003-HIDOM-FLD002-SA-COX-1972",
+      "domainId": "longevity-evidence",
+      "fieldCardId": "HIDOM-FLD002",
+      "sourceCardId": "SA-COX-1972",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-and-model-gates"
+    },
+    {
+      "promotionTaskId": "PROM-004-HIDOM-FLD002-SA-TARGET-TRIAL-2022",
+      "domainId": "longevity-evidence",
+      "fieldCardId": "HIDOM-FLD002",
+      "sourceCardId": "SA-TARGET-TRIAL-2022",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-and-model-gates"
+    },
+    {
+      "promotionTaskId": "PROM-005-HIDOM-FLD002-SA-TRIPOD-AI-2024",
+      "domainId": "longevity-evidence",
+      "fieldCardId": "HIDOM-FLD002",
+      "sourceCardId": "SA-TRIPOD-AI-2024",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-and-model-gates"
+    },
+    {
+      "promotionTaskId": "PROM-006-HIDOM-FLD008-SA-TARGET-TRIAL-2022",
+      "domainId": "regenerative-medicine",
+      "fieldCardId": "HIDOM-FLD008",
+      "sourceCardId": "SA-TARGET-TRIAL-2022",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-and-model-gates"
+    },
+    {
+      "promotionTaskId": "PROM-007-HIDOM-FLD009-SA-TARGET-TRIAL-2022",
+      "domainId": "cancer-screening-early-detection-continuity",
+      "fieldCardId": "HIDOM-FLD009",
+      "sourceCardId": "SA-TARGET-TRIAL-2022",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-and-model-gates"
+    },
+    {
+      "promotionTaskId": "PROM-008-HIDOM-FLD010-SA-TARGET-TRIAL-2022",
+      "domainId": "immune-maintenance",
+      "fieldCardId": "HIDOM-FLD010",
+      "sourceCardId": "SA-TARGET-TRIAL-2022",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-and-model-gates"
+    },
+    {
+      "promotionTaskId": "PROM-009-HIDOM-FLD014-SA-TARGET-TRIAL-2022",
+      "domainId": "biological-age-clocks-biomarker-validation",
+      "fieldCardId": "HIDOM-FLD014",
+      "sourceCardId": "SA-TARGET-TRIAL-2022",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-and-model-gates"
+    },
+    {
+      "promotionTaskId": "PROM-010-HIDOM-FLD014-SA-TRIPOD-AI-2024",
+      "domainId": "biological-age-clocks-biomarker-validation",
+      "fieldCardId": "HIDOM-FLD014",
+      "sourceCardId": "SA-TRIPOD-AI-2024",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-and-model-gates"
+    },
+    {
+      "promotionTaskId": "PROM-011-HIDOM-FLD015-SA-TARGET-TRIAL-2022",
+      "domainId": "proteostasis-autophagy",
+      "fieldCardId": "HIDOM-FLD015",
+      "sourceCardId": "SA-TARGET-TRIAL-2022",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-and-model-gates"
+    },
+    {
+      "promotionTaskId": "PROM-012-HIDOM-FLD017-SA-TARGET-TRIAL-2022",
+      "domainId": "extracellular-matrix-glycation",
+      "fieldCardId": "HIDOM-FLD017",
+      "sourceCardId": "SA-TARGET-TRIAL-2022",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-and-model-gates"
+    },
+    {
+      "promotionTaskId": "PROM-013-HIDOM-FLD019-SA-TARGET-TRIAL-2022",
+      "domainId": "microbiome-ecology",
+      "fieldCardId": "HIDOM-FLD019",
+      "sourceCardId": "SA-TARGET-TRIAL-2022",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-and-model-gates"
+    },
+    {
+      "promotionTaskId": "PROM-014-HIDOM-FLD020-SA-KAPLAN-MEIER-1958",
+      "domainId": "cardiovascular-resilience",
+      "fieldCardId": "HIDOM-FLD020",
+      "sourceCardId": "SA-KAPLAN-MEIER-1958",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-and-model-gates"
+    },
+    {
+      "promotionTaskId": "PROM-015-HIDOM-FLD020-SA-COX-1972",
+      "domainId": "cardiovascular-resilience",
+      "fieldCardId": "HIDOM-FLD020",
+      "sourceCardId": "SA-COX-1972",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-and-model-gates"
+    },
+    {
+      "promotionTaskId": "PROM-016-HIDOM-FLD020-SA-TARGET-TRIAL-2022",
+      "domainId": "cardiovascular-resilience",
+      "fieldCardId": "HIDOM-FLD020",
+      "sourceCardId": "SA-TARGET-TRIAL-2022",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-and-model-gates"
+    },
+    {
+      "promotionTaskId": "PROM-017-HIDOM-FLD021-SA-TARGET-TRIAL-2022",
+      "domainId": "musculoskeletal-integrity",
+      "fieldCardId": "HIDOM-FLD021",
+      "sourceCardId": "SA-TARGET-TRIAL-2022",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-and-model-gates"
+    },
+    {
+      "promotionTaskId": "PROM-018-HIDOM-FLD022-SA-TARGET-TRIAL-2022",
+      "domainId": "nutrition-metabolic-health",
+      "fieldCardId": "HIDOM-FLD022",
+      "sourceCardId": "SA-TARGET-TRIAL-2022",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-and-model-gates"
+    },
+    {
+      "promotionTaskId": "PROM-019-HIDOM-FLD023-SA-COX-1972",
+      "domainId": "renal-hepatic-clearance",
+      "fieldCardId": "HIDOM-FLD023",
+      "sourceCardId": "SA-COX-1972",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-and-model-gates"
+    },
+    {
+      "promotionTaskId": "PROM-020-HIDOM-FLD023-SA-TARGET-TRIAL-2022",
+      "domainId": "renal-hepatic-clearance",
+      "fieldCardId": "HIDOM-FLD023",
+      "sourceCardId": "SA-TARGET-TRIAL-2022",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-and-model-gates"
+    },
+    {
+      "promotionTaskId": "PROM-021-HIDOM-FLD024-SA-COX-1972",
+      "domainId": "respiratory-oxygenation",
+      "fieldCardId": "HIDOM-FLD024",
+      "sourceCardId": "SA-COX-1972",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-and-model-gates"
+    },
+    {
+      "promotionTaskId": "PROM-022-HIDOM-FLD024-SA-TARGET-TRIAL-2022",
+      "domainId": "respiratory-oxygenation",
+      "fieldCardId": "HIDOM-FLD024",
+      "sourceCardId": "SA-TARGET-TRIAL-2022",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-and-model-gates"
+    },
+    {
+      "promotionTaskId": "PROM-023-HIDOM-FLD025-SA-COX-1972",
+      "domainId": "blood-oxygen-hemostasis",
+      "fieldCardId": "HIDOM-FLD025",
+      "sourceCardId": "SA-COX-1972",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-and-model-gates"
+    },
+    {
+      "promotionTaskId": "PROM-024-HIDOM-FLD025-SA-TARGET-TRIAL-2022",
+      "domainId": "blood-oxygen-hemostasis",
+      "fieldCardId": "HIDOM-FLD025",
+      "sourceCardId": "SA-TARGET-TRIAL-2022",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-and-model-gates"
+    },
+    {
+      "promotionTaskId": "PROM-025-HIDOM-FLD026-SA-TARGET-TRIAL-2022",
+      "domainId": "endocrine-hormonal-regulation",
+      "fieldCardId": "HIDOM-FLD026",
+      "sourceCardId": "SA-TARGET-TRIAL-2022",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-and-model-gates"
+    },
+    {
+      "promotionTaskId": "PROM-070-HIDOM-FLD009-SA-NCI-SCREENING-BIAS",
+      "domainId": "cancer-screening-early-detection-continuity",
+      "fieldCardId": "HIDOM-FLD009",
+      "sourceCardId": "SA-NCI-SCREENING-BIAS",
+      "reviewerVerdict": "bounded-support",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-and-model-gates"
+    }
+  ],
+  "remainingFreshReviewBatches": [
+    "FRB-02-biological-aging-mechanisms",
+    "FRB-03-subject-continuity-capability-cognition",
+    "FRB-04-digital-twin-ai-governance-future-waiting"
+  ],
+  "indexRequirements": [
+    "docs/reference/README.md",
+    "docs/reference/human-infra-maturity-roadmap.md",
+    "tools/README.md"
+  ]
+}

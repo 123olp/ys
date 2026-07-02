@@ -114,7 +114,7 @@
     {
       "axisId": "research_framework",
       "axisName": "研究框架",
-      "currentPercent": 96,
+      "currentPercent": 97,
       "targetPercent": 100,
       "definitionOfDone": "Every strong project claim can be traced to source cards, claim-evidence rows, variables, mechanism links, falsifiers, model position and governance boundary.",
       "primaryEvidence": [
@@ -136,7 +136,9 @@
         "docs/reference/human-infra-card-promotion-prep-register.json",
         "tools/audit_human_infra_card_promotion_prep_register.py",
         "docs/reference/human-infra-independent-fresh-review-protocol.json",
-        "tools/audit_human_infra_independent_fresh_review_protocol.py"
+        "tools/audit_human_infra_independent_fresh_review_protocol.py",
+        "docs/reference/human-infra-independent-fresh-review-verdict-register.json",
+        "tools/audit_human_infra_independent_fresh_review_verdict_register.py"
       ],
       "gates": [
         {
@@ -184,14 +186,16 @@
             "docs/reference/human-infra-card-promotion-prep-register.json",
             "tools/audit_human_infra_card_promotion_prep_register.py",
             "docs/reference/human-infra-independent-fresh-review-protocol.json",
-            "tools/audit_human_infra_independent_fresh_review_protocol.py"
+            "tools/audit_human_infra_independent_fresh_review_protocol.py",
+            "docs/reference/human-infra-independent-fresh-review-verdict-register.json",
+            "tools/audit_human_infra_independent_fresh_review_verdict_register.py"
           ],
           "missingEvidence": [
-            "Independent fresh reviewer verdicts for all 81 prepared promotion artifact packs.",
+            "Independent fresh reviewer verdicts for the remaining 55 prepared promotion artifact packs.",
             "Filled reviewed Source Card artifacts that classify each completed field row as supported, bounded, downgraded or rejected.",
             "Domain-level Claim-Evidence Matrix coverage beyond the current priority C1/C2 set."
           ],
-          "nextAction": "Use the independent fresh-review protocol to execute the four review batches, then fill reviewed Source Cards only for supported or bounded rows and keep model admission blocked.",
+          "nextAction": "Execute FRB-02 through FRB-04 in the independent fresh-review protocol, then fill reviewed Source Cards only for supported or bounded rows and keep model admission blocked.",
           "blocks100Percent": true
         },
         {
@@ -214,14 +218,16 @@
             "docs/reference/human-infra-card-promotion-prep-register.json",
             "tools/audit_human_infra_card_promotion_prep_register.py",
             "docs/reference/human-infra-independent-fresh-review-protocol.json",
-            "tools/audit_human_infra_independent_fresh_review_protocol.py"
+            "tools/audit_human_infra_independent_fresh_review_protocol.py",
+            "docs/reference/human-infra-independent-fresh-review-verdict-register.json",
+            "tools/audit_human_infra_independent_fresh_review_verdict_register.py"
           ],
           "missingEvidence": [
-            "Filled variable cards promoted from the 81 prepared artifact packs after independent fresh review.",
+            "Filled variable cards promoted from reviewed, supported or bounded prepared artifact packs after independent fresh review.",
             "Filled endpoint, uncertainty and transfer-boundary cards derived from reviewed rows rather than field-extraction drafts.",
             "Domain-specific variable tables for C2 long-tail claims beyond the current priority set."
           ],
-          "nextAction": "After each independent fresh-review batch, fill prepared variable, endpoint, uncertainty and transfer-boundary artifact IDs only from supported or bounded rows, while keeping calibrated prediction blocked until model gates pass.",
+          "nextAction": "Use the FRB-01 verdict register to fill bounded artifacts for method-anchor rows, then continue fresh review for remaining batches before promoting variables or endpoints from other sources.",
           "blocks100Percent": true
         },
         {
@@ -269,14 +275,16 @@
             "docs/reference/human-infra-card-promotion-prep-register.json",
             "tools/audit_human_infra_card_promotion_prep_register.py",
             "docs/reference/human-infra-independent-fresh-review-protocol.json",
-            "tools/audit_human_infra_independent_fresh_review_protocol.py"
+            "tools/audit_human_infra_independent_fresh_review_protocol.py",
+            "docs/reference/human-infra-independent-fresh-review-verdict-register.json",
+            "tools/audit_human_infra_independent_fresh_review_verdict_register.py"
           ],
           "missingEvidence": [
-            "Filled downgrade-check artifacts for all 81 prepared promotion packs after independent fresh review.",
+            "Filled downgrade-check artifacts for the 26 reviewed FRB-01 method rows and the remaining 55 prepared promotion packs after independent fresh review.",
             "Falsifier rows for C2 domain claims beyond the current 20-domain priority set.",
-            "Independent reviewer-confirmed boundary checks that prevent completed field rows from being treated as calibrated evidence."
+            "Independent reviewer-confirmed boundary checks for all reviewed batches, not only FRB-01."
           ],
-          "nextAction": "Use the independent fresh-review protocol verdict taxonomy to fill prepared downgrade-check IDs and connect rejected or indirect rows back to falsifier and variable-card gates.",
+          "nextAction": "Use the FRB-01 fresh-review verdicts to fill the first downgrade-check IDs, then connect rejected or indirect rows from later batches back to falsifier and variable-card gates.",
           "blocks100Percent": true
         }
       ]

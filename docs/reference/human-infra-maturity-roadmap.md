@@ -30,7 +30,9 @@
 
 卡片晋升预注册账本见 [`human-infra-card-promotion-prep-register.json`](human-infra-card-promotion-prep-register.json)，由 `make card-promotion-prep-audit` 检查当前 81 个本地复核晋升任务是否已经预分配 486 个 Source/变量/endpoint/uncertainty/transfer/downgrade 待产物 ID、评审问题、阻塞用途和索引入口。该账本只是卡片晋升执行前的准备包，不等于独立 fresh review 或卡片完成。
 
-独立 fresh review 协议见 [`human-infra-independent-fresh-review-protocol.json`](human-infra-independent-fresh-review-protocol.json)，由 `make independent-fresh-review-protocol-audit` 检查 81 个准备包如何按四个批次进入独立审查，并确认当前 reviewed packet count 仍为 0。该协议只定义审查批次、字段和晋升规则，不等于任何 fresh review verdict 已经完成。
+独立 fresh review 协议见 [`human-infra-independent-fresh-review-protocol.json`](human-infra-independent-fresh-review-protocol.json)，由 `make independent-fresh-review-protocol-audit` 检查 81 个准备包如何按四个批次进入独立审查。该协议只定义审查批次、字段和晋升规则，不保存任何 fresh review verdict。
+
+独立 fresh review verdict 账本见 [`human-infra-independent-fresh-review-verdict-register.json`](human-infra-independent-fresh-review-verdict-register.json)，由 `make independent-fresh-review-verdict-audit` 检查 FRB-01 方法学批次的 5 个来源锚点和 26 个准备包是否完成独立 fresh review verdict，并确认这些 verdict 只允许 bounded artifact filling，不打开校准预测、个体建议、个体死亡日期、干预排序、域主张升级或临床有效性声明。
 
 ## Claim Spine
 
@@ -43,7 +45,7 @@
 | 轴线 | 当前成熟度 | 100% 状态 | 当前最大缺口 |
 | --- | ---: | --- | --- |
 | 项目价值 | 100% | 不同受众能用同一核心命题理解 Human Infra 的必要性 | 已有核心命题、多视角价值解析、页面级 Claim ID 一致性门禁、受众-主张映射和邻近项目边界对照；后续只需防止页面漂移 |
-| 研究框架 | 96% | 每条主张都进入 Source Card、Claim-Evidence Matrix、变量表和反证条件 | 已有核心主张矩阵、页面级 Claim ID 门禁、arXiv-style 论文页强主张门禁、C1/20 个优先 C2 反证覆盖门禁、v0.1 反证 Source Card 锚点回填、当前 21 个来源锚点字段级 Source Card 抽取、26 个优先域的域级 Claim-Evidence Matrix seed、26 个优先域的 endpoint 候选和 source-specific 深读槽位、81 个 domain-source 深读任务队列、81/81 个 domain-source 精读完成行、81 项卡片晋升队列、20 个来源锚点本地来源语境复核账本、81 项卡片晋升预注册包和本地审计门禁，但独立 fresh review、真实卡片填充、20 域之外的 C2 长尾域和校准模型准入仍未完成 |
+| 研究框架 | 97% | 每条主张都进入 Source Card、Claim-Evidence Matrix、变量表和反证条件 | 已有核心主张矩阵、页面级 Claim ID 门禁、arXiv-style 论文页强主张门禁、C1/20 个优先 C2 反证覆盖门禁、v0.1 反证 Source Card 锚点回填、当前 21 个来源锚点字段级 Source Card 抽取、26 个优先域的域级 Claim-Evidence Matrix seed、26 个优先域的 endpoint 候选和 source-specific 深读槽位、81 个 domain-source 深读任务队列、81/81 个 domain-source 精读完成行、81 项卡片晋升队列、20 个来源锚点本地来源语境复核账本、81 项卡片晋升预注册包、独立 fresh review 协议、FRB-01 方法学批次 26/81 个 fresh-review verdict 和本地审计门禁；剩余 55 个 verdict、真实卡片填充、20 域之外的 C2 长尾域和校准模型准入仍未完成 |
 | 定量模型 | 63% | 有可运行、可复现、可审查的场景级模型管线 | 已有 toy model、合成敏感性分析、审计器、校准预备契约、真实队列候选注册表、数据源 Source Cards、Data Card 模板、NHATS 数据准入草案、变量字典草案、extraction manifest 草案、机器可读 acquisition-readiness gates、R13/R14 file-tier table、第一版 NHATS estimand protocol、NHATS variable confirmation matrix、NHATS cohort-flow endpoint-routing protocol、synthetic disclosure-control validator、synthetic survey-design validator、synthetic missingness-route validator、NHATS route-field discovery validator 和 NHATS Colectica value-label review protocol validator，但还没有数据访问、Colectica value labels 精确确认、真实提取、真实 NHATS route classification、真实 NHATS 输出披露审查、真实 survey-design 加权估计、外部验证和校准后的敏感性分析 |
 
 ## 价值层 100%
@@ -225,7 +227,7 @@ life_path_toy_model_scenarios.json
 这一步已经把项目从“有定量想法的研究叙事”推进到“有最小可执行、可审计模型管线的研究系统”，并且开始把合成敏感性分析、真实队列候选、治理边界、第一份 NHATS 数据准入草案、NHATS 机器可读 acquisition-readiness gates、R13/R14 file-tier table、第一版 NHATS estimand protocol、NHATS variable confirmation matrix、NHATS cohort-flow endpoint-routing protocol、synthetic disclosure-control validator、synthetic survey-design validator、synthetic missingness-route validator、NHATS route-field discovery validator、NHATS Colectica value-label review protocol validator 和核心主张证据矩阵纳入机器审计。下一步不是继续膨胀新域，而是补三件硬东西：
 
 - 继续用 `human-infra-core-claim-evidence-matrix.md` 作为核心主张入口，把 README、论文页和 Web 页的强叙事都回连到同一组 Claim ID、来源角色和禁止外推边界。
-- 按 `human-infra-source-context-local-review-register.json` 从 20 个已完成本地复核的来源锚点出发，把 81 个晋升任务推进为独立 fresh review 后的 reviewed Source Cards、变量卡、endpoint 卡、uncertainty 卡、transfer-boundary 卡和 downgrade checks；独立 fresh review 完成前仍禁止模型准入。
+- 按 `human-infra-independent-fresh-review-verdict-register.json` 从已完成 FRB-01 的 26 个方法学 verdict 出发，先填 bounded reviewed Source Cards、变量卡、endpoint 卡、uncertainty 卡、transfer-boundary 卡和 downgrade checks；同时继续执行 FRB-02 到 FRB-04 的 55 个剩余 verdict。所有卡片完成和模型门禁完成前仍禁止模型准入。
 - 把 NHATS manifest、route-field discovery register、Colectica value-label review protocol 和 first estimand protocol 从 draft 推进到 governed acquisition-ready，补 Colectica 登录复核、value labels、question text、universe/skip logic、精确字段名、轮次、缺失码、公开/敏感/受限状态、权重、endpoint 定义、cohort flow、survey design、代码本来源和输出抑制规则。
 - 把 sensitivity analysis 从合成一因素扰动推进到基于真实队列、预注册范围和校准诊断的敏感性分析。
 

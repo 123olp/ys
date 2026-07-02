@@ -1,8 +1,8 @@
 {
   "schemaVersion": "human-infra.independent-fresh-review-protocol.v1",
   "registerId": "human-infra-independent-fresh-review-protocol-2026-07-02",
-  "status": "active-review-protocol-no-verdicts-yet",
-  "purpose": "Define the independent fresh-review batches, required checks and promotion boundaries for the 81 prepared card-promotion artifact packs without claiming any review verdict is complete.",
+  "status": "active-review-protocol",
+  "purpose": "Define the independent fresh-review batches, required checks and promotion boundaries for the 81 prepared card-promotion artifact packs without storing review verdicts inside the protocol artifact.",
   "sourceOfTruth": {
     "cardPromotionPrepRegister": "docs/reference/human-infra-card-promotion-prep-register.json",
     "sourceCardSystem": "docs/reference/source-card-system.md",
@@ -13,10 +13,10 @@
     "preparedPromotionPacketCount": 81,
     "coveredSourceAnchorCount": 20,
     "batchCount": 4,
-    "currentReviewedPacketCount": 0,
+    "protocolEmbeddedVerdictCount": 0,
     "selectionRule": "Every prepared promotion packet must receive an independent fresh-review verdict before any prepared Source, variable, endpoint, uncertainty, transfer-boundary or downgrade artifact can be filled.",
     "nonClaims": [
-      "This protocol is not an independent fresh review verdict.",
+      "This protocol is not an independent fresh review verdict register.",
       "This protocol does not complete any Source Card, variable card, endpoint card, uncertainty card, transfer-boundary card or downgrade check.",
       "This protocol does not authorize calibrated prediction, individual recommendation, individual death-date output, intervention ranking, domain-claim upgrade or clinical-validity claims."
     ]

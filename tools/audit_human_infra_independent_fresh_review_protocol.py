@@ -15,7 +15,7 @@ PROTOCOL_PATH = ROOT / "docs/reference/human-infra-independent-fresh-review-prot
 PREP_PATH = ROOT / "docs/reference/human-infra-card-promotion-prep-register.json"
 
 SCHEMA = "human-infra.independent-fresh-review-protocol.v1"
-STATUS = "active-review-protocol-no-verdicts-yet"
+STATUS = "active-review-protocol"
 PROTOCOL_LINK = "human-infra-independent-fresh-review-protocol.json"
 
 SOURCE_OF_TRUTH_KEYS = {
@@ -167,14 +167,14 @@ def validate_scope(protocol: dict[str, Any], prep: dict[str, Any], source_counts
     if batch_count is not None and batch_count != len(REQUIRED_BATCH_IDS):
         fail(errors, f"scope.batchCount must equal {len(REQUIRED_BATCH_IDS)}")
 
-    reviewed = require_int(scope.get("currentReviewedPacketCount"), "scope.currentReviewedPacketCount", errors)
+    reviewed = require_int(scope.get("protocolEmbeddedVerdictCount"), "scope.protocolEmbeddedVerdictCount", errors)
     if reviewed != 0:
-        fail(errors, "scope.currentReviewedPacketCount must remain 0 until verdict artifacts exist")
+        fail(errors, "scope.protocolEmbeddedVerdictCount must remain 0; verdicts belong in the verdict register")
 
     require_string(scope.get("selectionRule"), "scope.selectionRule", errors)
     non_claims = require_string_list(scope.get("nonClaims"), "scope.nonClaims", errors, 3)
     joined = " ".join(non_claims)
-    for phrase in ["not an independent fresh review verdict", "does not complete", "does not authorize calibrated prediction"]:
+    for phrase in ["not an independent fresh review verdict register", "does not complete", "does not authorize calibrated prediction"]:
         if phrase not in joined:
             fail(errors, f"scope.nonClaims must mention {phrase!r}")
 
