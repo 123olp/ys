@@ -1,0 +1,1668 @@
+{
+  "schemaVersion": "human-infra.c2ltb1-corrected-source-reviewed-card-artifact-register.v1",
+  "registerId": "human-infra-c2-longtail-first-batch-corrected-source-reviewed-card-artifact-register-2026-07-02",
+  "status": "active-c2ltb1-corrected-source-reviewed-card-artifact-register-model-blocked",
+  "purpose": "Promote only the five eligible C2-LT-B1 corrected source fresh-review rows into bounded reviewed artifacts while preserving blocked corrected rows and keeping model admission closed.",
+  "sourceOfTruth": {
+    "correctedSourceFreshReviewVerdictRegister": "docs/reference/human-infra-c2-longtail-first-batch-corrected-source-fresh-review-verdict-register.json",
+    "correctedSourceReextractionRegister": "docs/reference/human-infra-c2-longtail-first-batch-corrected-source-reextraction-register.json",
+    "correctedSourceReextractionQueue": "docs/reference/human-infra-c2-longtail-first-batch-corrected-source-reextraction-queue.json",
+    "originalReviewedCardArtifactRegister": "docs/reference/human-infra-c2-longtail-first-batch-reviewed-card-artifact-register.json",
+    "evidencePolicy": "docs/reference/evidence-policy.md",
+    "maturityGapRegister": "docs/reference/human-infra-maturity-gap-register.json"
+  },
+  "scope": {
+    "batchId": "C2-LT-B1",
+    "artifactLevel": "c2ltb1-corrected-source-fresh-review-verdict-to-reviewed-card-artifact",
+    "correctedFreshReviewRowCount": 10,
+    "eligibleCorrectedFreshReviewRowCount": 5,
+    "blockedCorrectedFreshReviewRowCount": 5,
+    "artifactTypeCount": 6,
+    "reviewedArtifactCount": 30,
+    "artifactTypes": [
+      "reviewed-source-card",
+      "reviewed-variable-card",
+      "reviewed-endpoint-card",
+      "reviewed-uncertainty-card",
+      "reviewed-transfer-boundary-card",
+      "reviewed-downgrade-check"
+    ],
+    "selectionRule": "Create six bounded reviewed artifact entities only for corrected source fresh-review rows whose artifactPromotionDecision is eligible-for-bounded-reviewed-artifact-prep.",
+    "blockedRowRule": "Rows marked context-lineage-only, direct-source-access-needed, publisher-route-only, directory-route-only or fulltext-needed are preserved in blockedRows and cannot create reviewed artifacts.",
+    "artifactStatusRule": "Artifacts are filled from corrected source re-extraction rows and corrected-source fresh-review verdict rows; every artifact remains bounded to source identity, endpoint vocabulary, uncertainty, transfer and downgrade use only.",
+    "modelAdmissionRule": "Every artifact keeps calibrated prediction, individual advice, individual death-date output, intervention ranking, domain-claim upgrade and clinical-validity claims blocked.",
+    "nonClaims": [
+      "This corrected-source artifact register is not model-ready.",
+      "This corrected-source artifact register does not authorize individual advice, clinical recommendations, individual death-date output, intervention ranking, domain-claim upgrade or clinical-validity claims.",
+      "This corrected-source artifact register does not fill rows marked lineage-only, route-only, index-only, publisher-restricted or fulltext-needed.",
+      "This corrected-source artifact register does not mark the remaining C2 long-tail domains complete; it only promotes five eligible corrected rows into bounded reviewed artifacts."
+    ]
+  },
+  "blockedUses": [
+    "calibrated-prediction",
+    "individual-advice",
+    "individual-death-date-output",
+    "intervention-ranking",
+    "clinical-validity-claim",
+    "domain-claim-upgrade"
+  ],
+  "reviewedArtifacts": [
+    {
+      "artifactId": "C2LTB1-CORR-ART-001-SOURCE-CARD",
+      "artifactType": "reviewed-source-card",
+      "artifactStatus": "filled-reviewed-c2ltb1-corrected-source-artifact-model-blocked",
+      "reextractionTaskId": "C2LTB1-CREXT-001",
+      "originTaskId": "C2LTB1-EXT-003",
+      "sourceResolutionReviewId": "C2LTB1-SRFR-001",
+      "correctedFreshReviewId": "C2LTB1-CFRV-001",
+      "domainId": "sepsis-shock-early-recognition-resuscitation-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/sepsis-shock-early-recognition-resuscitation-continuity",
+      "candidateId": "C2LTB1-BRR-003-CAND-01",
+      "sourceTitle": "Surviving Sepsis Campaign: International Guidelines for Management of Sepsis and Septic Shock 2026",
+      "sourceUrl": "https://www.sccm.org/survivingsepsiscampaign/guidelines-and-resources/surviving-sepsis-campaign-adult-guidelines",
+      "sourceAccessStatus": "official-html-page-accessible-automated-text-extracted",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "filled-from-eligible-corrected-source-fresh-review",
+      "modelAdmissionDecision": "blocked-pending-corrected-source-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://www.sccm.org/survivingsepsiscampaign/guidelines-and-resources/surviving-sepsis-campaign-adult-guidelines"
+      ],
+      "registeredExactClaimUse": "Supports treating adult sepsis and septic shock as a time-critical continuity domain spanning hospital, immediate prehospital and immediate post-hospital management, sepsis screening, treatment procedures and antimicrobial stewardship. The SCCM page states the 2026 adult guideline includes 129 statements, 46 new statements and more definitive recommendations.",
+      "registeredTransferBoundary": "Transfer only as guideline-route, endpoint and source-currentness vocabulary for adult sepsis. Do not use as a calibrated effect size, individual treatment pathway or proof that any sepsis intervention improves Human Infra model outcomes.",
+      "content": {
+        "sourceIdentity": {
+          "title": "Surviving Sepsis Campaign: International Guidelines for Management of Sepsis and Septic Shock 2026",
+          "url": "https://www.sccm.org/survivingsepsiscampaign/guidelines-and-resources/surviving-sepsis-campaign-adult-guidelines",
+          "candidateId": "C2LTB1-BRR-003-CAND-01",
+          "sourceAccessStatus": "official-html-page-accessible-automated-text-extracted",
+          "currentnessBoundary": "Current adult SSC route candidate as of 2026-07-02; it updates the 2021 SSC guideline and should be used as currentness anchor while the 2021 PMC/PubMed guideline remains prior-version lineage."
+        },
+        "sourceRole": "hazard-and-transition-route-anchor",
+        "exactClaimUse": "Supports treating adult sepsis and septic shock as a time-critical continuity domain spanning hospital, immediate prehospital and immediate post-hospital management, sepsis screening, treatment procedures and antimicrobial stewardship. The SCCM page states the 2026 adult guideline includes 129 statements, 46 new statements and more definitive recommendations.",
+        "transferBoundary": "Transfer only as guideline-route, endpoint and source-currentness vocabulary for adult sepsis. Do not use as a calibrated effect size, individual treatment pathway or proof that any sepsis intervention improves Human Infra model outcomes.",
+        "freshReviewEvidence": [
+          {
+            "url": "https://www.sccm.org/survivingsepsiscampaign/guidelines-and-resources/surviving-sepsis-campaign-adult-guidelines",
+            "evidenceType": "official-html-access-check",
+            "finding": "Automated access succeeded on 2026-07-02; SCCM page identifies the adult 2026 SSC guideline and update relationship."
+          }
+        ],
+        "reviewerNote": "Independent fresh review supports bounded artifact preparation for C2LTB1-CREXT-001: source identity, access status, claim scope, endpoint vocabulary and transfer boundary are sufficiently explicit for a guarded Source/variable/endpoint/uncertainty/transfer/downgrade artifact prep step."
+      }
+    },
+    {
+      "artifactId": "C2LTB1-CORR-ART-002-VARIABLE-CARD",
+      "artifactType": "reviewed-variable-card",
+      "artifactStatus": "filled-reviewed-c2ltb1-corrected-source-artifact-model-blocked",
+      "reextractionTaskId": "C2LTB1-CREXT-001",
+      "originTaskId": "C2LTB1-EXT-003",
+      "sourceResolutionReviewId": "C2LTB1-SRFR-001",
+      "correctedFreshReviewId": "C2LTB1-CFRV-001",
+      "domainId": "sepsis-shock-early-recognition-resuscitation-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/sepsis-shock-early-recognition-resuscitation-continuity",
+      "candidateId": "C2LTB1-BRR-003-CAND-01",
+      "sourceTitle": "Surviving Sepsis Campaign: International Guidelines for Management of Sepsis and Septic Shock 2026",
+      "sourceUrl": "https://www.sccm.org/survivingsepsiscampaign/guidelines-and-resources/surviving-sepsis-campaign-adult-guidelines",
+      "sourceAccessStatus": "official-html-page-accessible-automated-text-extracted",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "filled-from-eligible-corrected-source-fresh-review",
+      "modelAdmissionDecision": "blocked-pending-corrected-source-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://www.sccm.org/survivingsepsiscampaign/guidelines-and-resources/surviving-sepsis-campaign-adult-guidelines"
+      ],
+      "registeredExactClaimUse": "Supports treating adult sepsis and septic shock as a time-critical continuity domain spanning hospital, immediate prehospital and immediate post-hospital management, sepsis screening, treatment procedures and antimicrobial stewardship. The SCCM page states the 2026 adult guideline includes 129 statements, 46 new statements and more definitive recommendations.",
+      "registeredTransferBoundary": "Transfer only as guideline-route, endpoint and source-currentness vocabulary for adult sepsis. Do not use as a calibrated effect size, individual treatment pathway or proof that any sepsis intervention improves Human Infra model outcomes.",
+      "content": {
+        "variableQuestion": "Which bounded Human Infra variables can be extracted from C2LTB1-CREXT-001 for sepsis-shock-early-recognition-resuscitation-continuity?",
+        "variableSeed": [
+          "sepsis-screening-coverage",
+          "time-to-recognition",
+          "treatment-sop-availability",
+          "shock-transition-risk",
+          "organ-support-route"
+        ],
+        "sourceExtractedVariables": [
+          "sepsis-screening-coverage",
+          "time-to-recognition",
+          "treatment-sop-availability",
+          "shock-transition-risk",
+          "organ-support-route"
+        ],
+        "modelPosition": {
+          "primaryLocation": "hazard-and-transition-route-anchor",
+          "variables": [
+            "sepsis-screening-coverage",
+            "time-to-recognition",
+            "treatment-sop-availability",
+            "shock-transition-risk",
+            "organ-support-route"
+          ],
+          "admissibleUse": "corrected current source identity, route vocabulary and candidate endpoint definition only"
+        },
+        "admissibleUse": "corrected current source identity, route vocabulary and candidate endpoint definition only",
+        "promotionBoundary": "corrected-source artifact only; calibrated prediction, intervention ranking and individual prognosis remain blocked"
+      }
+    },
+    {
+      "artifactId": "C2LTB1-CORR-ART-003-ENDPOINT-CARD",
+      "artifactType": "reviewed-endpoint-card",
+      "artifactStatus": "filled-reviewed-c2ltb1-corrected-source-artifact-model-blocked",
+      "reextractionTaskId": "C2LTB1-CREXT-001",
+      "originTaskId": "C2LTB1-EXT-003",
+      "sourceResolutionReviewId": "C2LTB1-SRFR-001",
+      "correctedFreshReviewId": "C2LTB1-CFRV-001",
+      "domainId": "sepsis-shock-early-recognition-resuscitation-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/sepsis-shock-early-recognition-resuscitation-continuity",
+      "candidateId": "C2LTB1-BRR-003-CAND-01",
+      "sourceTitle": "Surviving Sepsis Campaign: International Guidelines for Management of Sepsis and Septic Shock 2026",
+      "sourceUrl": "https://www.sccm.org/survivingsepsiscampaign/guidelines-and-resources/surviving-sepsis-campaign-adult-guidelines",
+      "sourceAccessStatus": "official-html-page-accessible-automated-text-extracted",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "filled-from-eligible-corrected-source-fresh-review",
+      "modelAdmissionDecision": "blocked-pending-corrected-source-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://www.sccm.org/survivingsepsiscampaign/guidelines-and-resources/surviving-sepsis-campaign-adult-guidelines"
+      ],
+      "registeredExactClaimUse": "Supports treating adult sepsis and septic shock as a time-critical continuity domain spanning hospital, immediate prehospital and immediate post-hospital management, sepsis screening, treatment procedures and antimicrobial stewardship. The SCCM page states the 2026 adult guideline includes 129 statements, 46 new statements and more definitive recommendations.",
+      "registeredTransferBoundary": "Transfer only as guideline-route, endpoint and source-currentness vocabulary for adult sepsis. Do not use as a calibrated effect size, individual treatment pathway or proof that any sepsis intervention improves Human Infra model outcomes.",
+      "content": {
+        "endpointQuestion": "Which endpoint vocabulary can C2LTB1-CREXT-001 support without calibrated effect-size claims?",
+        "endpointDefinition": "Candidate endpoints or variables include sepsis screening coverage, time-to-recognition, standard operating procedure availability, antimicrobial initiation/de-escalation route, organ dysfunction trajectory, shock transition, ICU/hospital mortality, ARDS/mechanical ventilation route and post-hospital continuity.",
+        "populationOrSetting": "Adult patients with sepsis or septic shock in hospital, immediate prehospital and immediate post-hospital settings. Pediatric sepsis, individualized treatment decisions and local protocol details remain outside this row.",
+        "endpointBoundary": "supports exact claim use as vocabulary or route context only; no calibrated effect size or individual recommendation is admitted",
+        "modelPosition": "hazard-and-transition-route-anchor",
+        "blockedEndpointUses": [
+          "calibrated-prediction",
+          "individual-advice",
+          "individual-death-date-output",
+          "intervention-ranking",
+          "clinical-validity-claim",
+          "domain-claim-upgrade"
+        ]
+      }
+    },
+    {
+      "artifactId": "C2LTB1-CORR-ART-004-UNCERTAINTY-CARD",
+      "artifactType": "reviewed-uncertainty-card",
+      "artifactStatus": "filled-reviewed-c2ltb1-corrected-source-artifact-model-blocked",
+      "reextractionTaskId": "C2LTB1-CREXT-001",
+      "originTaskId": "C2LTB1-EXT-003",
+      "sourceResolutionReviewId": "C2LTB1-SRFR-001",
+      "correctedFreshReviewId": "C2LTB1-CFRV-001",
+      "domainId": "sepsis-shock-early-recognition-resuscitation-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/sepsis-shock-early-recognition-resuscitation-continuity",
+      "candidateId": "C2LTB1-BRR-003-CAND-01",
+      "sourceTitle": "Surviving Sepsis Campaign: International Guidelines for Management of Sepsis and Septic Shock 2026",
+      "sourceUrl": "https://www.sccm.org/survivingsepsiscampaign/guidelines-and-resources/surviving-sepsis-campaign-adult-guidelines",
+      "sourceAccessStatus": "official-html-page-accessible-automated-text-extracted",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "filled-from-eligible-corrected-source-fresh-review",
+      "modelAdmissionDecision": "blocked-pending-corrected-source-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://www.sccm.org/survivingsepsiscampaign/guidelines-and-resources/surviving-sepsis-campaign-adult-guidelines"
+      ],
+      "registeredExactClaimUse": "Supports treating adult sepsis and septic shock as a time-critical continuity domain spanning hospital, immediate prehospital and immediate post-hospital management, sepsis screening, treatment procedures and antimicrobial stewardship. The SCCM page states the 2026 adult guideline includes 129 statements, 46 new statements and more definitive recommendations.",
+      "registeredTransferBoundary": "Transfer only as guideline-route, endpoint and source-currentness vocabulary for adult sepsis. Do not use as a calibrated effect size, individual treatment pathway or proof that any sepsis intervention improves Human Infra model outcomes.",
+      "content": {
+        "uncertaintyQuestion": "What uncertainty, bias or currentness boundary must constrain C2LTB1-CREXT-001?",
+        "uncertaintyOrBias": "Guideline recommendations aggregate heterogeneous evidence and implementation settings. Access to diagnostics, antibiotics, ICU capacity, staffing, antimicrobial resistance patterns and local protocol fidelity can strongly limit transferability.",
+        "uncertaintyBoundaryVerdict": "transfer-boundary-present-and-required",
+        "evidenceLimit": "bounded transfer to endpoint, variable, route and source-currentness vocabulary; no intervention benefit, clinical decision or personal prognosis is admitted",
+        "downgradeTriggers": [
+          "Downgrade if later extraction cannot bind a specific recommendation or endpoint to a recommendation class, comparator or setting.",
+          "Downgrade if the row is reused for pediatric sepsis, outpatient infection management or individual antibiotic decisions.",
+          "Block model use if implementation capacity, antimicrobial resistance or ICU access constraints are ignored."
+        ]
+      }
+    },
+    {
+      "artifactId": "C2LTB1-CORR-ART-005-TRANSFER-BOUNDARY-CARD",
+      "artifactType": "reviewed-transfer-boundary-card",
+      "artifactStatus": "filled-reviewed-c2ltb1-corrected-source-artifact-model-blocked",
+      "reextractionTaskId": "C2LTB1-CREXT-001",
+      "originTaskId": "C2LTB1-EXT-003",
+      "sourceResolutionReviewId": "C2LTB1-SRFR-001",
+      "correctedFreshReviewId": "C2LTB1-CFRV-001",
+      "domainId": "sepsis-shock-early-recognition-resuscitation-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/sepsis-shock-early-recognition-resuscitation-continuity",
+      "candidateId": "C2LTB1-BRR-003-CAND-01",
+      "sourceTitle": "Surviving Sepsis Campaign: International Guidelines for Management of Sepsis and Septic Shock 2026",
+      "sourceUrl": "https://www.sccm.org/survivingsepsiscampaign/guidelines-and-resources/surviving-sepsis-campaign-adult-guidelines",
+      "sourceAccessStatus": "official-html-page-accessible-automated-text-extracted",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "filled-from-eligible-corrected-source-fresh-review",
+      "modelAdmissionDecision": "blocked-pending-corrected-source-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://www.sccm.org/survivingsepsiscampaign/guidelines-and-resources/surviving-sepsis-campaign-adult-guidelines"
+      ],
+      "registeredExactClaimUse": "Supports treating adult sepsis and septic shock as a time-critical continuity domain spanning hospital, immediate prehospital and immediate post-hospital management, sepsis screening, treatment procedures and antimicrobial stewardship. The SCCM page states the 2026 adult guideline includes 129 statements, 46 new statements and more definitive recommendations.",
+      "registeredTransferBoundary": "Transfer only as guideline-route, endpoint and source-currentness vocabulary for adult sepsis. Do not use as a calibrated effect size, individual treatment pathway or proof that any sepsis intervention improves Human Infra model outcomes.",
+      "content": {
+        "transferBoundaryQuestion": "How far can C2LTB1-CREXT-001 transfer into Human Infra claims for sepsis-shock-early-recognition-resuscitation-continuity?",
+        "domainTransferVerdict": "transfer-boundary-present-and-required",
+        "registeredTransferBoundary": "Transfer only as guideline-route, endpoint and source-currentness vocabulary for adult sepsis. Do not use as a calibrated effect size, individual treatment pathway or proof that any sepsis intervention improves Human Infra model outcomes.",
+        "sourceExtractionTransferBoundary": "Transfer only as guideline-route, endpoint and source-currentness vocabulary for adult sepsis. Do not use as a calibrated effect size, individual treatment pathway or proof that any sepsis intervention improves Human Infra model outcomes.",
+        "blockedTransferUses": [
+          "calibrated-prediction",
+          "individual-advice",
+          "individual-death-date-output",
+          "intervention-ranking",
+          "clinical-validity-claim",
+          "domain-claim-upgrade"
+        ]
+      }
+    },
+    {
+      "artifactId": "C2LTB1-CORR-ART-006-DOWNGRADE-CHECK",
+      "artifactType": "reviewed-downgrade-check",
+      "artifactStatus": "filled-reviewed-c2ltb1-corrected-source-artifact-model-blocked",
+      "reextractionTaskId": "C2LTB1-CREXT-001",
+      "originTaskId": "C2LTB1-EXT-003",
+      "sourceResolutionReviewId": "C2LTB1-SRFR-001",
+      "correctedFreshReviewId": "C2LTB1-CFRV-001",
+      "domainId": "sepsis-shock-early-recognition-resuscitation-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/sepsis-shock-early-recognition-resuscitation-continuity",
+      "candidateId": "C2LTB1-BRR-003-CAND-01",
+      "sourceTitle": "Surviving Sepsis Campaign: International Guidelines for Management of Sepsis and Septic Shock 2026",
+      "sourceUrl": "https://www.sccm.org/survivingsepsiscampaign/guidelines-and-resources/surviving-sepsis-campaign-adult-guidelines",
+      "sourceAccessStatus": "official-html-page-accessible-automated-text-extracted",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "filled-from-eligible-corrected-source-fresh-review",
+      "modelAdmissionDecision": "blocked-pending-corrected-source-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://www.sccm.org/survivingsepsiscampaign/guidelines-and-resources/surviving-sepsis-campaign-adult-guidelines"
+      ],
+      "registeredExactClaimUse": "Supports treating adult sepsis and septic shock as a time-critical continuity domain spanning hospital, immediate prehospital and immediate post-hospital management, sepsis screening, treatment procedures and antimicrobial stewardship. The SCCM page states the 2026 adult guideline includes 129 statements, 46 new statements and more definitive recommendations.",
+      "registeredTransferBoundary": "Transfer only as guideline-route, endpoint and source-currentness vocabulary for adult sepsis. Do not use as a calibrated effect size, individual treatment pathway or proof that any sepsis intervention improves Human Infra model outcomes.",
+      "content": {
+        "downgradeQuestion": "When must C2LTB1-CREXT-001 be downgraded before artifact or model use?",
+        "downgradeVerdict": "No blocking defect found for bounded artifact preparation; calibrated modeling and individual-use gates remain blocked.",
+        "reviewerVerdict": "support-with-boundary",
+        "downgradeRequiredWhen": [
+          "Downgrade if later extraction cannot bind a specific recommendation or endpoint to a recommendation class, comparator or setting.",
+          "Downgrade if the row is reused for pediatric sepsis, outpatient infection management or individual antibiotic decisions.",
+          "Block model use if implementation capacity, antimicrobial resistance or ICU access constraints are ignored."
+        ],
+        "blockedSiblingPolicy": "Rows with context-lineage-only, direct-source-access-needed, publisher-route-only, directory-route-only or fulltext-needed decisions stay outside reviewedArtifacts and remain in blockedRows."
+      }
+    },
+    {
+      "artifactId": "C2LTB1-CORR-ART-007-SOURCE-CARD",
+      "artifactType": "reviewed-source-card",
+      "artifactStatus": "filled-reviewed-c2ltb1-corrected-source-artifact-model-blocked",
+      "reextractionTaskId": "C2LTB1-CREXT-003",
+      "originTaskId": "C2LTB1-EXT-008",
+      "sourceResolutionReviewId": "C2LTB1-SRFR-002",
+      "correctedFreshReviewId": "C2LTB1-CFRV-003",
+      "domainId": "anaphylaxis-allergic-emergency-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/anaphylaxis-allergic-emergency-continuity",
+      "candidateId": "C2LTB1-BRR-008-CAND-01",
+      "sourceTitle": "Anaphylaxis: A 2023 practice parameter update",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/38108678/",
+      "sourceAccessStatus": "pubmed-abstract-accessible",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "filled-from-eligible-corrected-source-fresh-review",
+      "modelAdmissionDecision": "blocked-pending-corrected-source-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://pubmed.ncbi.nlm.nih.gov/38108678/"
+      ],
+      "registeredExactClaimUse": "Supports treating anaphylaxis as an emergency continuity domain involving revised diagnostic criteria, pattern definition, serum tryptase for diagnosis/underlying mast-cell disorders, age-specific pediatric presentation, setting-specific prevention/treatment, epinephrine autoinjector counseling and post-event diagnostic evaluation.",
+      "registeredTransferBoundary": "Transfer only as emergency-domain variable vocabulary and source identity. Do not use for individual anaphylaxis treatment, device prescription, medication stopping decisions or EMS advice.",
+      "content": {
+        "sourceIdentity": {
+          "title": "Anaphylaxis: A 2023 practice parameter update",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38108678/",
+          "candidateId": "C2LTB1-BRR-008-CAND-01",
+          "sourceAccessStatus": "pubmed-abstract-accessible",
+          "currentnessBoundary": "Practice parameter update published in Annals of Allergy, Asthma and Immunology in 2024 and focused on seven areas with new evidence and recommendations. It should be paired with source-specific review before being treated as current clinical guidance."
+        },
+        "sourceRole": "acute-emergency-recognition-and-response-route-anchor",
+        "exactClaimUse": "Supports treating anaphylaxis as an emergency continuity domain involving revised diagnostic criteria, pattern definition, serum tryptase for diagnosis/underlying mast-cell disorders, age-specific pediatric presentation, setting-specific prevention/treatment, epinephrine autoinjector counseling and post-event diagnostic evaluation.",
+        "transferBoundary": "Transfer only as emergency-domain variable vocabulary and source identity. Do not use for individual anaphylaxis treatment, device prescription, medication stopping decisions or EMS advice.",
+        "freshReviewEvidence": [
+          {
+            "url": "https://pubmed.ncbi.nlm.nih.gov/38108678/",
+            "evidenceType": "pubmed-abstract-check",
+            "finding": "PubMed confirms the 2023 practice parameter update and abstract-level scope for revised criteria, tryptase, autoinjector counseling and post-event evaluation topics."
+          }
+        ],
+        "reviewerNote": "Independent fresh review supports bounded artifact preparation for C2LTB1-CREXT-003: source identity, access status, claim scope, endpoint vocabulary and transfer boundary are sufficiently explicit for a guarded Source/variable/endpoint/uncertainty/transfer/downgrade artifact prep step."
+      }
+    },
+    {
+      "artifactId": "C2LTB1-CORR-ART-008-VARIABLE-CARD",
+      "artifactType": "reviewed-variable-card",
+      "artifactStatus": "filled-reviewed-c2ltb1-corrected-source-artifact-model-blocked",
+      "reextractionTaskId": "C2LTB1-CREXT-003",
+      "originTaskId": "C2LTB1-EXT-008",
+      "sourceResolutionReviewId": "C2LTB1-SRFR-002",
+      "correctedFreshReviewId": "C2LTB1-CFRV-003",
+      "domainId": "anaphylaxis-allergic-emergency-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/anaphylaxis-allergic-emergency-continuity",
+      "candidateId": "C2LTB1-BRR-008-CAND-01",
+      "sourceTitle": "Anaphylaxis: A 2023 practice parameter update",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/38108678/",
+      "sourceAccessStatus": "pubmed-abstract-accessible",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "filled-from-eligible-corrected-source-fresh-review",
+      "modelAdmissionDecision": "blocked-pending-corrected-source-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://pubmed.ncbi.nlm.nih.gov/38108678/"
+      ],
+      "registeredExactClaimUse": "Supports treating anaphylaxis as an emergency continuity domain involving revised diagnostic criteria, pattern definition, serum tryptase for diagnosis/underlying mast-cell disorders, age-specific pediatric presentation, setting-specific prevention/treatment, epinephrine autoinjector counseling and post-event diagnostic evaluation.",
+      "registeredTransferBoundary": "Transfer only as emergency-domain variable vocabulary and source identity. Do not use for individual anaphylaxis treatment, device prescription, medication stopping decisions or EMS advice.",
+      "content": {
+        "variableQuestion": "Which bounded Human Infra variables can be extracted from C2LTB1-CREXT-003 for anaphylaxis-allergic-emergency-continuity?",
+        "variableSeed": [
+          "anaphylaxis-recognition-criteria",
+          "epinephrine-autoinjector-training",
+          "serum-tryptase-diagnostic-route",
+          "ems-activation-context",
+          "specialist-referral-after-event"
+        ],
+        "sourceExtractedVariables": [
+          "anaphylaxis-recognition-criteria",
+          "epinephrine-autoinjector-training",
+          "serum-tryptase-diagnostic-route",
+          "ems-activation-context",
+          "specialist-referral-after-event"
+        ],
+        "modelPosition": {
+          "primaryLocation": "acute-emergency-recognition-and-response-route-anchor",
+          "variables": [
+            "anaphylaxis-recognition-criteria",
+            "epinephrine-autoinjector-training",
+            "serum-tryptase-diagnostic-route",
+            "ems-activation-context",
+            "specialist-referral-after-event"
+          ],
+          "admissibleUse": "bounded variable and route vocabulary after independent review only"
+        },
+        "admissibleUse": "bounded variable and route vocabulary after independent review only",
+        "promotionBoundary": "corrected-source artifact only; calibrated prediction, intervention ranking and individual prognosis remain blocked"
+      }
+    },
+    {
+      "artifactId": "C2LTB1-CORR-ART-009-ENDPOINT-CARD",
+      "artifactType": "reviewed-endpoint-card",
+      "artifactStatus": "filled-reviewed-c2ltb1-corrected-source-artifact-model-blocked",
+      "reextractionTaskId": "C2LTB1-CREXT-003",
+      "originTaskId": "C2LTB1-EXT-008",
+      "sourceResolutionReviewId": "C2LTB1-SRFR-002",
+      "correctedFreshReviewId": "C2LTB1-CFRV-003",
+      "domainId": "anaphylaxis-allergic-emergency-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/anaphylaxis-allergic-emergency-continuity",
+      "candidateId": "C2LTB1-BRR-008-CAND-01",
+      "sourceTitle": "Anaphylaxis: A 2023 practice parameter update",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/38108678/",
+      "sourceAccessStatus": "pubmed-abstract-accessible",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "filled-from-eligible-corrected-source-fresh-review",
+      "modelAdmissionDecision": "blocked-pending-corrected-source-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://pubmed.ncbi.nlm.nih.gov/38108678/"
+      ],
+      "registeredExactClaimUse": "Supports treating anaphylaxis as an emergency continuity domain involving revised diagnostic criteria, pattern definition, serum tryptase for diagnosis/underlying mast-cell disorders, age-specific pediatric presentation, setting-specific prevention/treatment, epinephrine autoinjector counseling and post-event diagnostic evaluation.",
+      "registeredTransferBoundary": "Transfer only as emergency-domain variable vocabulary and source identity. Do not use for individual anaphylaxis treatment, device prescription, medication stopping decisions or EMS advice.",
+      "content": {
+        "endpointQuestion": "Which endpoint vocabulary can C2LTB1-CREXT-003 support without calibrated effect-size claims?",
+        "endpointDefinition": "Candidate variables include recognition criteria, serum tryptase measurement route, epinephrine autoinjector availability/training, durable response after epinephrine, EMS activation pathway, recurrent idiopathic or insect-sting anaphylaxis evaluation and perioperative re-exposure planning.",
+        "populationOrSetting": "People at risk of or experiencing anaphylaxis across community, pediatric, adult, insect-sting, idiopathic and perioperative settings. This row does not provide individual emergency instructions.",
+        "endpointBoundary": "supports exact claim use as vocabulary or route context only; no calibrated effect size or individual recommendation is admitted",
+        "modelPosition": "acute-emergency-recognition-and-response-route-anchor",
+        "blockedEndpointUses": [
+          "calibrated-prediction",
+          "individual-advice",
+          "individual-death-date-output",
+          "intervention-ranking",
+          "clinical-validity-claim",
+          "domain-claim-upgrade"
+        ]
+      }
+    },
+    {
+      "artifactId": "C2LTB1-CORR-ART-010-UNCERTAINTY-CARD",
+      "artifactType": "reviewed-uncertainty-card",
+      "artifactStatus": "filled-reviewed-c2ltb1-corrected-source-artifact-model-blocked",
+      "reextractionTaskId": "C2LTB1-CREXT-003",
+      "originTaskId": "C2LTB1-EXT-008",
+      "sourceResolutionReviewId": "C2LTB1-SRFR-002",
+      "correctedFreshReviewId": "C2LTB1-CFRV-003",
+      "domainId": "anaphylaxis-allergic-emergency-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/anaphylaxis-allergic-emergency-continuity",
+      "candidateId": "C2LTB1-BRR-008-CAND-01",
+      "sourceTitle": "Anaphylaxis: A 2023 practice parameter update",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/38108678/",
+      "sourceAccessStatus": "pubmed-abstract-accessible",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "filled-from-eligible-corrected-source-fresh-review",
+      "modelAdmissionDecision": "blocked-pending-corrected-source-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://pubmed.ncbi.nlm.nih.gov/38108678/"
+      ],
+      "registeredExactClaimUse": "Supports treating anaphylaxis as an emergency continuity domain involving revised diagnostic criteria, pattern definition, serum tryptase for diagnosis/underlying mast-cell disorders, age-specific pediatric presentation, setting-specific prevention/treatment, epinephrine autoinjector counseling and post-event diagnostic evaluation.",
+      "registeredTransferBoundary": "Transfer only as emergency-domain variable vocabulary and source identity. Do not use for individual anaphylaxis treatment, device prescription, medication stopping decisions or EMS advice.",
+      "content": {
+        "uncertaintyQuestion": "What uncertainty, bias or currentness boundary must constrain C2LTB1-CREXT-003?",
+        "uncertaintyOrBias": "PubMed abstract supports high-level practice-parameter scope but not all recommendation details, evidence grades or local device availability. Full-text and guideline-body review remain required before artifact promotion.",
+        "uncertaintyBoundaryVerdict": "transfer-boundary-present-and-required",
+        "evidenceLimit": "bounded transfer to endpoint, variable, route and source-currentness vocabulary; no intervention benefit, clinical decision or personal prognosis is admitted",
+        "downgradeTriggers": [
+          "Downgrade if full text cannot confirm the exact recommendation and evidence boundary.",
+          "Downgrade if autoinjector or EMS claims are generalized across all patients without context.",
+          "Block if the row is used as individual emergency instructions."
+        ]
+      }
+    },
+    {
+      "artifactId": "C2LTB1-CORR-ART-011-TRANSFER-BOUNDARY-CARD",
+      "artifactType": "reviewed-transfer-boundary-card",
+      "artifactStatus": "filled-reviewed-c2ltb1-corrected-source-artifact-model-blocked",
+      "reextractionTaskId": "C2LTB1-CREXT-003",
+      "originTaskId": "C2LTB1-EXT-008",
+      "sourceResolutionReviewId": "C2LTB1-SRFR-002",
+      "correctedFreshReviewId": "C2LTB1-CFRV-003",
+      "domainId": "anaphylaxis-allergic-emergency-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/anaphylaxis-allergic-emergency-continuity",
+      "candidateId": "C2LTB1-BRR-008-CAND-01",
+      "sourceTitle": "Anaphylaxis: A 2023 practice parameter update",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/38108678/",
+      "sourceAccessStatus": "pubmed-abstract-accessible",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "filled-from-eligible-corrected-source-fresh-review",
+      "modelAdmissionDecision": "blocked-pending-corrected-source-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://pubmed.ncbi.nlm.nih.gov/38108678/"
+      ],
+      "registeredExactClaimUse": "Supports treating anaphylaxis as an emergency continuity domain involving revised diagnostic criteria, pattern definition, serum tryptase for diagnosis/underlying mast-cell disorders, age-specific pediatric presentation, setting-specific prevention/treatment, epinephrine autoinjector counseling and post-event diagnostic evaluation.",
+      "registeredTransferBoundary": "Transfer only as emergency-domain variable vocabulary and source identity. Do not use for individual anaphylaxis treatment, device prescription, medication stopping decisions or EMS advice.",
+      "content": {
+        "transferBoundaryQuestion": "How far can C2LTB1-CREXT-003 transfer into Human Infra claims for anaphylaxis-allergic-emergency-continuity?",
+        "domainTransferVerdict": "transfer-boundary-present-and-required",
+        "registeredTransferBoundary": "Transfer only as emergency-domain variable vocabulary and source identity. Do not use for individual anaphylaxis treatment, device prescription, medication stopping decisions or EMS advice.",
+        "sourceExtractionTransferBoundary": "Transfer only as emergency-domain variable vocabulary and source identity. Do not use for individual anaphylaxis treatment, device prescription, medication stopping decisions or EMS advice.",
+        "blockedTransferUses": [
+          "calibrated-prediction",
+          "individual-advice",
+          "individual-death-date-output",
+          "intervention-ranking",
+          "clinical-validity-claim",
+          "domain-claim-upgrade"
+        ]
+      }
+    },
+    {
+      "artifactId": "C2LTB1-CORR-ART-012-DOWNGRADE-CHECK",
+      "artifactType": "reviewed-downgrade-check",
+      "artifactStatus": "filled-reviewed-c2ltb1-corrected-source-artifact-model-blocked",
+      "reextractionTaskId": "C2LTB1-CREXT-003",
+      "originTaskId": "C2LTB1-EXT-008",
+      "sourceResolutionReviewId": "C2LTB1-SRFR-002",
+      "correctedFreshReviewId": "C2LTB1-CFRV-003",
+      "domainId": "anaphylaxis-allergic-emergency-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/anaphylaxis-allergic-emergency-continuity",
+      "candidateId": "C2LTB1-BRR-008-CAND-01",
+      "sourceTitle": "Anaphylaxis: A 2023 practice parameter update",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/38108678/",
+      "sourceAccessStatus": "pubmed-abstract-accessible",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "filled-from-eligible-corrected-source-fresh-review",
+      "modelAdmissionDecision": "blocked-pending-corrected-source-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://pubmed.ncbi.nlm.nih.gov/38108678/"
+      ],
+      "registeredExactClaimUse": "Supports treating anaphylaxis as an emergency continuity domain involving revised diagnostic criteria, pattern definition, serum tryptase for diagnosis/underlying mast-cell disorders, age-specific pediatric presentation, setting-specific prevention/treatment, epinephrine autoinjector counseling and post-event diagnostic evaluation.",
+      "registeredTransferBoundary": "Transfer only as emergency-domain variable vocabulary and source identity. Do not use for individual anaphylaxis treatment, device prescription, medication stopping decisions or EMS advice.",
+      "content": {
+        "downgradeQuestion": "When must C2LTB1-CREXT-003 be downgraded before artifact or model use?",
+        "downgradeVerdict": "No blocking defect found for bounded artifact preparation; calibrated modeling and individual-use gates remain blocked.",
+        "reviewerVerdict": "support-with-boundary",
+        "downgradeRequiredWhen": [
+          "Downgrade if full text cannot confirm the exact recommendation and evidence boundary.",
+          "Downgrade if autoinjector or EMS claims are generalized across all patients without context.",
+          "Block if the row is used as individual emergency instructions."
+        ],
+        "blockedSiblingPolicy": "Rows with context-lineage-only, direct-source-access-needed, publisher-route-only, directory-route-only or fulltext-needed decisions stay outside reviewedArtifacts and remain in blockedRows."
+      }
+    },
+    {
+      "artifactId": "C2LTB1-CORR-ART-013-SOURCE-CARD",
+      "artifactType": "reviewed-source-card",
+      "artifactStatus": "filled-reviewed-c2ltb1-corrected-source-artifact-model-blocked",
+      "reextractionTaskId": "C2LTB1-CREXT-004",
+      "originTaskId": "C2LTB1-EXT-008",
+      "sourceResolutionReviewId": "C2LTB1-SRFR-002",
+      "correctedFreshReviewId": "C2LTB1-CFRV-004",
+      "domainId": "anaphylaxis-allergic-emergency-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/anaphylaxis-allergic-emergency-continuity",
+      "candidateId": "C2LTB1-BRR-008-CAND-02",
+      "sourceTitle": "World allergy organization anaphylaxis guidance 2020",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7607509/",
+      "sourceAccessStatus": "pubmed-index-plus-pmc-fulltext-accessible",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "filled-from-eligible-corrected-source-fresh-review",
+      "modelAdmissionDecision": "blocked-pending-corrected-source-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://pubmed.ncbi.nlm.nih.gov/33204386/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC7607509/"
+      ],
+      "registeredExactClaimUse": "Supports treating anaphylaxis as severe acute systemic allergic reaction requiring guidance dissemination; intramuscular epinephrine/adrenaline remains first-line treatment; after anaphylaxis, referral to a specialist for cause assessment, recurrence prevention and self-management education is recommended; epinephrine autoinjector availability and affordability are access constraints.",
+      "registeredTransferBoundary": "Transfer only as global guidance, access-barrier and emergency-response vocabulary. Do not convert into individual treatment, prescription or emergency dispatch advice.",
+      "content": {
+        "sourceIdentity": {
+          "title": "World allergy organization anaphylaxis guidance 2020",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7607509/",
+          "candidateId": "C2LTB1-BRR-008-CAND-02",
+          "sourceAccessStatus": "pubmed-index-plus-pmc-fulltext-accessible",
+          "currentnessBoundary": "Open guidance published in 2020; useful as accessible global guidance context, but later 2023 practice parameter must be considered for newer evidence and recommendations."
+        },
+        "sourceRole": "emergency-response-access-and-self-management-route-anchor",
+        "exactClaimUse": "Supports treating anaphylaxis as severe acute systemic allergic reaction requiring guidance dissemination; intramuscular epinephrine/adrenaline remains first-line treatment; after anaphylaxis, referral to a specialist for cause assessment, recurrence prevention and self-management education is recommended; epinephrine autoinjector availability and affordability are access constraints.",
+        "transferBoundary": "Transfer only as global guidance, access-barrier and emergency-response vocabulary. Do not convert into individual treatment, prescription or emergency dispatch advice.",
+        "freshReviewEvidence": [
+          {
+            "url": "https://pubmed.ncbi.nlm.nih.gov/33204386/",
+            "evidenceType": "pubmed-abstract-check",
+            "finding": "PubMed confirms WAO 2020 guidance and abstract-level IM epinephrine, referral, self-management and access-barrier scope."
+          },
+          {
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7607509/",
+            "evidenceType": "pmc-open-fulltext-check",
+            "finding": "PMC full text is accessible for later source-card extraction."
+          }
+        ],
+        "reviewerNote": "Independent fresh review supports bounded artifact preparation for C2LTB1-CREXT-004: source identity, access status, claim scope, endpoint vocabulary and transfer boundary are sufficiently explicit for a guarded Source/variable/endpoint/uncertainty/transfer/downgrade artifact prep step."
+      }
+    },
+    {
+      "artifactId": "C2LTB1-CORR-ART-014-VARIABLE-CARD",
+      "artifactType": "reviewed-variable-card",
+      "artifactStatus": "filled-reviewed-c2ltb1-corrected-source-artifact-model-blocked",
+      "reextractionTaskId": "C2LTB1-CREXT-004",
+      "originTaskId": "C2LTB1-EXT-008",
+      "sourceResolutionReviewId": "C2LTB1-SRFR-002",
+      "correctedFreshReviewId": "C2LTB1-CFRV-004",
+      "domainId": "anaphylaxis-allergic-emergency-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/anaphylaxis-allergic-emergency-continuity",
+      "candidateId": "C2LTB1-BRR-008-CAND-02",
+      "sourceTitle": "World allergy organization anaphylaxis guidance 2020",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7607509/",
+      "sourceAccessStatus": "pubmed-index-plus-pmc-fulltext-accessible",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "filled-from-eligible-corrected-source-fresh-review",
+      "modelAdmissionDecision": "blocked-pending-corrected-source-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://pubmed.ncbi.nlm.nih.gov/33204386/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC7607509/"
+      ],
+      "registeredExactClaimUse": "Supports treating anaphylaxis as severe acute systemic allergic reaction requiring guidance dissemination; intramuscular epinephrine/adrenaline remains first-line treatment; after anaphylaxis, referral to a specialist for cause assessment, recurrence prevention and self-management education is recommended; epinephrine autoinjector availability and affordability are access constraints.",
+      "registeredTransferBoundary": "Transfer only as global guidance, access-barrier and emergency-response vocabulary. Do not convert into individual treatment, prescription or emergency dispatch advice.",
+      "content": {
+        "variableQuestion": "Which bounded Human Infra variables can be extracted from C2LTB1-CREXT-004 for anaphylaxis-allergic-emergency-continuity?",
+        "variableSeed": [
+          "im-epinephrine-first-line-route",
+          "specialist-referral-after-event",
+          "self-management-education",
+          "autoinjector-availability",
+          "autoinjector-affordability"
+        ],
+        "sourceExtractedVariables": [
+          "im-epinephrine-first-line-route",
+          "specialist-referral-after-event",
+          "self-management-education",
+          "autoinjector-availability",
+          "autoinjector-affordability"
+        ],
+        "modelPosition": {
+          "primaryLocation": "emergency-response-access-and-self-management-route-anchor",
+          "variables": [
+            "im-epinephrine-first-line-route",
+            "specialist-referral-after-event",
+            "self-management-education",
+            "autoinjector-availability",
+            "autoinjector-affordability"
+          ],
+          "admissibleUse": "global context and access-barrier variables after independent review only"
+        },
+        "admissibleUse": "global context and access-barrier variables after independent review only",
+        "promotionBoundary": "corrected-source artifact only; calibrated prediction, intervention ranking and individual prognosis remain blocked"
+      }
+    },
+    {
+      "artifactId": "C2LTB1-CORR-ART-015-ENDPOINT-CARD",
+      "artifactType": "reviewed-endpoint-card",
+      "artifactStatus": "filled-reviewed-c2ltb1-corrected-source-artifact-model-blocked",
+      "reextractionTaskId": "C2LTB1-CREXT-004",
+      "originTaskId": "C2LTB1-EXT-008",
+      "sourceResolutionReviewId": "C2LTB1-SRFR-002",
+      "correctedFreshReviewId": "C2LTB1-CFRV-004",
+      "domainId": "anaphylaxis-allergic-emergency-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/anaphylaxis-allergic-emergency-continuity",
+      "candidateId": "C2LTB1-BRR-008-CAND-02",
+      "sourceTitle": "World allergy organization anaphylaxis guidance 2020",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7607509/",
+      "sourceAccessStatus": "pubmed-index-plus-pmc-fulltext-accessible",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "filled-from-eligible-corrected-source-fresh-review",
+      "modelAdmissionDecision": "blocked-pending-corrected-source-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://pubmed.ncbi.nlm.nih.gov/33204386/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC7607509/"
+      ],
+      "registeredExactClaimUse": "Supports treating anaphylaxis as severe acute systemic allergic reaction requiring guidance dissemination; intramuscular epinephrine/adrenaline remains first-line treatment; after anaphylaxis, referral to a specialist for cause assessment, recurrence prevention and self-management education is recommended; epinephrine autoinjector availability and affordability are access constraints.",
+      "registeredTransferBoundary": "Transfer only as global guidance, access-barrier and emergency-response vocabulary. Do not convert into individual treatment, prescription or emergency dispatch advice.",
+      "content": {
+        "endpointQuestion": "Which endpoint vocabulary can C2LTB1-CREXT-004 support without calibrated effect-size claims?",
+        "endpointDefinition": "Candidate variables include IM epinephrine first-line route, specialist referral after event, recurrence-prevention education, self-management capacity, epinephrine autoinjector availability/affordability and country-level access constraints.",
+        "populationOrSetting": "Global patients and clinicians dealing with anaphylaxis emergencies; source includes health-system and access considerations, not individual emergency protocols.",
+        "endpointBoundary": "supports exact claim use as vocabulary or route context only; no calibrated effect size or individual recommendation is admitted",
+        "modelPosition": "emergency-response-access-and-self-management-route-anchor",
+        "blockedEndpointUses": [
+          "calibrated-prediction",
+          "individual-advice",
+          "individual-death-date-output",
+          "intervention-ranking",
+          "clinical-validity-claim",
+          "domain-claim-upgrade"
+        ]
+      }
+    },
+    {
+      "artifactId": "C2LTB1-CORR-ART-016-UNCERTAINTY-CARD",
+      "artifactType": "reviewed-uncertainty-card",
+      "artifactStatus": "filled-reviewed-c2ltb1-corrected-source-artifact-model-blocked",
+      "reextractionTaskId": "C2LTB1-CREXT-004",
+      "originTaskId": "C2LTB1-EXT-008",
+      "sourceResolutionReviewId": "C2LTB1-SRFR-002",
+      "correctedFreshReviewId": "C2LTB1-CFRV-004",
+      "domainId": "anaphylaxis-allergic-emergency-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/anaphylaxis-allergic-emergency-continuity",
+      "candidateId": "C2LTB1-BRR-008-CAND-02",
+      "sourceTitle": "World allergy organization anaphylaxis guidance 2020",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7607509/",
+      "sourceAccessStatus": "pubmed-index-plus-pmc-fulltext-accessible",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "filled-from-eligible-corrected-source-fresh-review",
+      "modelAdmissionDecision": "blocked-pending-corrected-source-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://pubmed.ncbi.nlm.nih.gov/33204386/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC7607509/"
+      ],
+      "registeredExactClaimUse": "Supports treating anaphylaxis as severe acute systemic allergic reaction requiring guidance dissemination; intramuscular epinephrine/adrenaline remains first-line treatment; after anaphylaxis, referral to a specialist for cause assessment, recurrence prevention and self-management education is recommended; epinephrine autoinjector availability and affordability are access constraints.",
+      "registeredTransferBoundary": "Transfer only as global guidance, access-barrier and emergency-response vocabulary. Do not convert into individual treatment, prescription or emergency dispatch advice.",
+      "content": {
+        "uncertaintyQuestion": "What uncertainty, bias or currentness boundary must constrain C2LTB1-CREXT-004?",
+        "uncertaintyOrBias": "Guidance availability and autoinjector affordability vary by country. Later practice parameters may update specific recommendations. Full text should be reviewed for formal recommendation strength before artifacts are promoted.",
+        "uncertaintyBoundaryVerdict": "transfer-boundary-present-and-required",
+        "evidenceLimit": "bounded transfer to endpoint, variable, route and source-currentness vocabulary; no intervention benefit, clinical decision or personal prognosis is admitted",
+        "downgradeTriggers": [
+          "Downgrade if the row omits country-level autoinjector availability and affordability constraints.",
+          "Downgrade if WAO 2020 is treated as newer than the 2023 practice parameter.",
+          "Block if source is used for individual emergency medical instructions."
+        ]
+      }
+    },
+    {
+      "artifactId": "C2LTB1-CORR-ART-017-TRANSFER-BOUNDARY-CARD",
+      "artifactType": "reviewed-transfer-boundary-card",
+      "artifactStatus": "filled-reviewed-c2ltb1-corrected-source-artifact-model-blocked",
+      "reextractionTaskId": "C2LTB1-CREXT-004",
+      "originTaskId": "C2LTB1-EXT-008",
+      "sourceResolutionReviewId": "C2LTB1-SRFR-002",
+      "correctedFreshReviewId": "C2LTB1-CFRV-004",
+      "domainId": "anaphylaxis-allergic-emergency-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/anaphylaxis-allergic-emergency-continuity",
+      "candidateId": "C2LTB1-BRR-008-CAND-02",
+      "sourceTitle": "World allergy organization anaphylaxis guidance 2020",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7607509/",
+      "sourceAccessStatus": "pubmed-index-plus-pmc-fulltext-accessible",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "filled-from-eligible-corrected-source-fresh-review",
+      "modelAdmissionDecision": "blocked-pending-corrected-source-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://pubmed.ncbi.nlm.nih.gov/33204386/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC7607509/"
+      ],
+      "registeredExactClaimUse": "Supports treating anaphylaxis as severe acute systemic allergic reaction requiring guidance dissemination; intramuscular epinephrine/adrenaline remains first-line treatment; after anaphylaxis, referral to a specialist for cause assessment, recurrence prevention and self-management education is recommended; epinephrine autoinjector availability and affordability are access constraints.",
+      "registeredTransferBoundary": "Transfer only as global guidance, access-barrier and emergency-response vocabulary. Do not convert into individual treatment, prescription or emergency dispatch advice.",
+      "content": {
+        "transferBoundaryQuestion": "How far can C2LTB1-CREXT-004 transfer into Human Infra claims for anaphylaxis-allergic-emergency-continuity?",
+        "domainTransferVerdict": "transfer-boundary-present-and-required",
+        "registeredTransferBoundary": "Transfer only as global guidance, access-barrier and emergency-response vocabulary. Do not convert into individual treatment, prescription or emergency dispatch advice.",
+        "sourceExtractionTransferBoundary": "Transfer only as global guidance, access-barrier and emergency-response vocabulary. Do not convert into individual treatment, prescription or emergency dispatch advice.",
+        "blockedTransferUses": [
+          "calibrated-prediction",
+          "individual-advice",
+          "individual-death-date-output",
+          "intervention-ranking",
+          "clinical-validity-claim",
+          "domain-claim-upgrade"
+        ]
+      }
+    },
+    {
+      "artifactId": "C2LTB1-CORR-ART-018-DOWNGRADE-CHECK",
+      "artifactType": "reviewed-downgrade-check",
+      "artifactStatus": "filled-reviewed-c2ltb1-corrected-source-artifact-model-blocked",
+      "reextractionTaskId": "C2LTB1-CREXT-004",
+      "originTaskId": "C2LTB1-EXT-008",
+      "sourceResolutionReviewId": "C2LTB1-SRFR-002",
+      "correctedFreshReviewId": "C2LTB1-CFRV-004",
+      "domainId": "anaphylaxis-allergic-emergency-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/anaphylaxis-allergic-emergency-continuity",
+      "candidateId": "C2LTB1-BRR-008-CAND-02",
+      "sourceTitle": "World allergy organization anaphylaxis guidance 2020",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7607509/",
+      "sourceAccessStatus": "pubmed-index-plus-pmc-fulltext-accessible",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "filled-from-eligible-corrected-source-fresh-review",
+      "modelAdmissionDecision": "blocked-pending-corrected-source-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://pubmed.ncbi.nlm.nih.gov/33204386/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC7607509/"
+      ],
+      "registeredExactClaimUse": "Supports treating anaphylaxis as severe acute systemic allergic reaction requiring guidance dissemination; intramuscular epinephrine/adrenaline remains first-line treatment; after anaphylaxis, referral to a specialist for cause assessment, recurrence prevention and self-management education is recommended; epinephrine autoinjector availability and affordability are access constraints.",
+      "registeredTransferBoundary": "Transfer only as global guidance, access-barrier and emergency-response vocabulary. Do not convert into individual treatment, prescription or emergency dispatch advice.",
+      "content": {
+        "downgradeQuestion": "When must C2LTB1-CREXT-004 be downgraded before artifact or model use?",
+        "downgradeVerdict": "No blocking defect found for bounded artifact preparation; calibrated modeling and individual-use gates remain blocked.",
+        "reviewerVerdict": "support-with-boundary",
+        "downgradeRequiredWhen": [
+          "Downgrade if the row omits country-level autoinjector availability and affordability constraints.",
+          "Downgrade if WAO 2020 is treated as newer than the 2023 practice parameter.",
+          "Block if source is used for individual emergency medical instructions."
+        ],
+        "blockedSiblingPolicy": "Rows with context-lineage-only, direct-source-access-needed, publisher-route-only, directory-route-only or fulltext-needed decisions stay outside reviewedArtifacts and remain in blockedRows."
+      }
+    },
+    {
+      "artifactId": "C2LTB1-CORR-ART-019-SOURCE-CARD",
+      "artifactType": "reviewed-source-card",
+      "artifactStatus": "filled-reviewed-c2ltb1-corrected-source-artifact-model-blocked",
+      "reextractionTaskId": "C2LTB1-CREXT-006",
+      "originTaskId": "C2LTB1-EXT-018",
+      "sourceResolutionReviewId": "C2LTB1-SRFR-004",
+      "correctedFreshReviewId": "C2LTB1-CFRV-006",
+      "domainId": "cerebrovascular-stroke-brain-perfusion-resilience",
+      "localDomainPath": "domains/c2-source-maintenance/cerebrovascular-stroke-brain-perfusion-resilience",
+      "candidateId": "C2LTB1-BRR-018-CAND-01",
+      "sourceTitle": "2026 Guideline for the Early Management of Patients With Acute Ischemic Stroke",
+      "sourceUrl": "https://professional.heart.org/en/science-news/2026-guideline-for-the-early-management-of-patients-with-acute-ischemic-stroke",
+      "sourceAccessStatus": "official-html-page-plus-pubmed-abstract-accessible",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "filled-from-eligible-corrected-source-fresh-review",
+      "modelAdmissionDecision": "blocked-pending-corrected-source-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://pubmed.ncbi.nlm.nih.gov/41582814/",
+        "https://professional.heart.org/en/science-news/2026-guideline-for-the-early-management-of-patients-with-acute-ischemic-stroke"
+      ],
+      "registeredExactClaimUse": "Supports treating acute ischemic stroke as a time-critical continuity domain from prehospital evaluation through acute treatment, early in-hospital complication management and early secondary prevention. AHA page highlights mobile stroke units, EMS triage, tenecteplase within 4.5 hours, broader endovascular thrombectomy eligibility and first pediatric AIS recommendations.",
+      "registeredTransferBoundary": "Transfer only as acute stroke guideline route and endpoint vocabulary. Do not use for individual thrombolysis/thrombectomy eligibility, dosing, emergency advice or calibrated Human Infra effect size.",
+      "content": {
+        "sourceIdentity": {
+          "title": "2026 Guideline for the Early Management of Patients With Acute Ischemic Stroke",
+          "url": "https://professional.heart.org/en/science-news/2026-guideline-for-the-early-management-of-patients-with-acute-ischemic-stroke",
+          "candidateId": "C2LTB1-BRR-018-CAND-01",
+          "sourceAccessStatus": "official-html-page-plus-pubmed-abstract-accessible",
+          "currentnessBoundary": "The 2026 AIS guideline replaces the 2018 acute ischemic stroke guideline and 2019 update; PubMed abstract reports literature through December 2024 plus selected high-impact studies through March 2025."
+        },
+        "sourceRole": "acute-hazard-transition-and-functional-outcome-route-anchor",
+        "exactClaimUse": "Supports treating acute ischemic stroke as a time-critical continuity domain from prehospital evaluation through acute treatment, early in-hospital complication management and early secondary prevention. AHA page highlights mobile stroke units, EMS triage, tenecteplase within 4.5 hours, broader endovascular thrombectomy eligibility and first pediatric AIS recommendations.",
+        "transferBoundary": "Transfer only as acute stroke guideline route and endpoint vocabulary. Do not use for individual thrombolysis/thrombectomy eligibility, dosing, emergency advice or calibrated Human Infra effect size.",
+        "freshReviewEvidence": [
+          {
+            "url": "https://pubmed.ncbi.nlm.nih.gov/41582814/",
+            "evidenceType": "pubmed-abstract-check",
+            "finding": "PubMed confirms the 2026 AHA/ASA AIS guideline, replacement relationship and abstract-level update topics."
+          },
+          {
+            "url": "https://professional.heart.org/en/science-news/2026-guideline-for-the-early-management-of-patients-with-acute-ischemic-stroke",
+            "evidenceType": "official-html-access-check",
+            "finding": "AHA Professional Heart Daily page was accessible and confirms guideline route and key public summary updates."
+          }
+        ],
+        "reviewerNote": "Independent fresh review supports bounded artifact preparation for C2LTB1-CREXT-006: source identity, access status, claim scope, endpoint vocabulary and transfer boundary are sufficiently explicit for a guarded Source/variable/endpoint/uncertainty/transfer/downgrade artifact prep step."
+      }
+    },
+    {
+      "artifactId": "C2LTB1-CORR-ART-020-VARIABLE-CARD",
+      "artifactType": "reviewed-variable-card",
+      "artifactStatus": "filled-reviewed-c2ltb1-corrected-source-artifact-model-blocked",
+      "reextractionTaskId": "C2LTB1-CREXT-006",
+      "originTaskId": "C2LTB1-EXT-018",
+      "sourceResolutionReviewId": "C2LTB1-SRFR-004",
+      "correctedFreshReviewId": "C2LTB1-CFRV-006",
+      "domainId": "cerebrovascular-stroke-brain-perfusion-resilience",
+      "localDomainPath": "domains/c2-source-maintenance/cerebrovascular-stroke-brain-perfusion-resilience",
+      "candidateId": "C2LTB1-BRR-018-CAND-01",
+      "sourceTitle": "2026 Guideline for the Early Management of Patients With Acute Ischemic Stroke",
+      "sourceUrl": "https://professional.heart.org/en/science-news/2026-guideline-for-the-early-management-of-patients-with-acute-ischemic-stroke",
+      "sourceAccessStatus": "official-html-page-plus-pubmed-abstract-accessible",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "filled-from-eligible-corrected-source-fresh-review",
+      "modelAdmissionDecision": "blocked-pending-corrected-source-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://pubmed.ncbi.nlm.nih.gov/41582814/",
+        "https://professional.heart.org/en/science-news/2026-guideline-for-the-early-management-of-patients-with-acute-ischemic-stroke"
+      ],
+      "registeredExactClaimUse": "Supports treating acute ischemic stroke as a time-critical continuity domain from prehospital evaluation through acute treatment, early in-hospital complication management and early secondary prevention. AHA page highlights mobile stroke units, EMS triage, tenecteplase within 4.5 hours, broader endovascular thrombectomy eligibility and first pediatric AIS recommendations.",
+      "registeredTransferBoundary": "Transfer only as acute stroke guideline route and endpoint vocabulary. Do not use for individual thrombolysis/thrombectomy eligibility, dosing, emergency advice or calibrated Human Infra effect size.",
+      "content": {
+        "variableQuestion": "Which bounded Human Infra variables can be extracted from C2LTB1-CREXT-006 for cerebrovascular-stroke-brain-perfusion-resilience?",
+        "variableSeed": [
+          "ems-triage-route",
+          "time-to-thrombolysis",
+          "endovascular-thrombectomy-eligibility",
+          "dysphagia-management-route",
+          "early-secondary-prevention-initiation"
+        ],
+        "sourceExtractedVariables": [
+          "ems-triage-route",
+          "time-to-thrombolysis",
+          "endovascular-thrombectomy-eligibility",
+          "dysphagia-management-route",
+          "early-secondary-prevention-initiation"
+        ],
+        "modelPosition": {
+          "primaryLocation": "acute-hazard-transition-and-functional-outcome-route-anchor",
+          "variables": [
+            "ems-triage-route",
+            "time-to-thrombolysis",
+            "endovascular-thrombectomy-eligibility",
+            "dysphagia-management-route",
+            "early-secondary-prevention-initiation"
+          ],
+          "admissibleUse": "bounded acute-stroke endpoint and pathway vocabulary after independent review only"
+        },
+        "admissibleUse": "bounded acute-stroke endpoint and pathway vocabulary after independent review only",
+        "promotionBoundary": "corrected-source artifact only; calibrated prediction, intervention ranking and individual prognosis remain blocked"
+      }
+    },
+    {
+      "artifactId": "C2LTB1-CORR-ART-021-ENDPOINT-CARD",
+      "artifactType": "reviewed-endpoint-card",
+      "artifactStatus": "filled-reviewed-c2ltb1-corrected-source-artifact-model-blocked",
+      "reextractionTaskId": "C2LTB1-CREXT-006",
+      "originTaskId": "C2LTB1-EXT-018",
+      "sourceResolutionReviewId": "C2LTB1-SRFR-004",
+      "correctedFreshReviewId": "C2LTB1-CFRV-006",
+      "domainId": "cerebrovascular-stroke-brain-perfusion-resilience",
+      "localDomainPath": "domains/c2-source-maintenance/cerebrovascular-stroke-brain-perfusion-resilience",
+      "candidateId": "C2LTB1-BRR-018-CAND-01",
+      "sourceTitle": "2026 Guideline for the Early Management of Patients With Acute Ischemic Stroke",
+      "sourceUrl": "https://professional.heart.org/en/science-news/2026-guideline-for-the-early-management-of-patients-with-acute-ischemic-stroke",
+      "sourceAccessStatus": "official-html-page-plus-pubmed-abstract-accessible",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "filled-from-eligible-corrected-source-fresh-review",
+      "modelAdmissionDecision": "blocked-pending-corrected-source-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://pubmed.ncbi.nlm.nih.gov/41582814/",
+        "https://professional.heart.org/en/science-news/2026-guideline-for-the-early-management-of-patients-with-acute-ischemic-stroke"
+      ],
+      "registeredExactClaimUse": "Supports treating acute ischemic stroke as a time-critical continuity domain from prehospital evaluation through acute treatment, early in-hospital complication management and early secondary prevention. AHA page highlights mobile stroke units, EMS triage, tenecteplase within 4.5 hours, broader endovascular thrombectomy eligibility and first pediatric AIS recommendations.",
+      "registeredTransferBoundary": "Transfer only as acute stroke guideline route and endpoint vocabulary. Do not use for individual thrombolysis/thrombectomy eligibility, dosing, emergency advice or calibrated Human Infra effect size.",
+      "content": {
+        "endpointQuestion": "Which endpoint vocabulary can C2LTB1-CREXT-006 support without calibrated effect-size claims?",
+        "endpointDefinition": "Candidate variables include EMS triage route, mobile stroke unit availability, time-to-thrombolysis, thrombolytic choice/eligibility, endovascular thrombectomy eligibility, hyperglycemia management, dysphagia management, pediatric AIS route and early secondary prevention initiation.",
+        "populationOrSetting": "Patients with acute ischemic stroke across prehospital, emergency, acute treatment and early inpatient settings; audience includes prehospital professionals, physicians, allied health professionals and administrators.",
+        "endpointBoundary": "supports exact claim use as vocabulary or route context only; no calibrated effect size or individual recommendation is admitted",
+        "modelPosition": "acute-hazard-transition-and-functional-outcome-route-anchor",
+        "blockedEndpointUses": [
+          "calibrated-prediction",
+          "individual-advice",
+          "individual-death-date-output",
+          "intervention-ranking",
+          "clinical-validity-claim",
+          "domain-claim-upgrade"
+        ]
+      }
+    },
+    {
+      "artifactId": "C2LTB1-CORR-ART-022-UNCERTAINTY-CARD",
+      "artifactType": "reviewed-uncertainty-card",
+      "artifactStatus": "filled-reviewed-c2ltb1-corrected-source-artifact-model-blocked",
+      "reextractionTaskId": "C2LTB1-CREXT-006",
+      "originTaskId": "C2LTB1-EXT-018",
+      "sourceResolutionReviewId": "C2LTB1-SRFR-004",
+      "correctedFreshReviewId": "C2LTB1-CFRV-006",
+      "domainId": "cerebrovascular-stroke-brain-perfusion-resilience",
+      "localDomainPath": "domains/c2-source-maintenance/cerebrovascular-stroke-brain-perfusion-resilience",
+      "candidateId": "C2LTB1-BRR-018-CAND-01",
+      "sourceTitle": "2026 Guideline for the Early Management of Patients With Acute Ischemic Stroke",
+      "sourceUrl": "https://professional.heart.org/en/science-news/2026-guideline-for-the-early-management-of-patients-with-acute-ischemic-stroke",
+      "sourceAccessStatus": "official-html-page-plus-pubmed-abstract-accessible",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "filled-from-eligible-corrected-source-fresh-review",
+      "modelAdmissionDecision": "blocked-pending-corrected-source-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://pubmed.ncbi.nlm.nih.gov/41582814/",
+        "https://professional.heart.org/en/science-news/2026-guideline-for-the-early-management-of-patients-with-acute-ischemic-stroke"
+      ],
+      "registeredExactClaimUse": "Supports treating acute ischemic stroke as a time-critical continuity domain from prehospital evaluation through acute treatment, early in-hospital complication management and early secondary prevention. AHA page highlights mobile stroke units, EMS triage, tenecteplase within 4.5 hours, broader endovascular thrombectomy eligibility and first pediatric AIS recommendations.",
+      "registeredTransferBoundary": "Transfer only as acute stroke guideline route and endpoint vocabulary. Do not use for individual thrombolysis/thrombectomy eligibility, dosing, emergency advice or calibrated Human Infra effect size.",
+      "content": {
+        "uncertaintyQuestion": "What uncertainty, bias or currentness boundary must constrain C2LTB1-CREXT-006?",
+        "uncertaintyOrBias": "Guideline recommendations depend on eligibility, imaging, timing, contraindications, local stroke-system capacity and pediatric/adult differences. PubMed abstract and page summaries do not replace full guideline extraction.",
+        "uncertaintyBoundaryVerdict": "transfer-boundary-present-and-required",
+        "evidenceLimit": "bounded transfer to endpoint, variable, route and source-currentness vocabulary; no intervention benefit, clinical decision or personal prognosis is admitted",
+        "downgradeTriggers": [
+          "Downgrade if full guideline review cannot bind a variable to a recommendation section, eligibility condition or care setting.",
+          "Downgrade if ischemic stroke guidance is transferred to hemorrhagic stroke.",
+          "Block model use if time-window, imaging, contraindication or local-system capacity constraints are omitted."
+        ]
+      }
+    },
+    {
+      "artifactId": "C2LTB1-CORR-ART-023-TRANSFER-BOUNDARY-CARD",
+      "artifactType": "reviewed-transfer-boundary-card",
+      "artifactStatus": "filled-reviewed-c2ltb1-corrected-source-artifact-model-blocked",
+      "reextractionTaskId": "C2LTB1-CREXT-006",
+      "originTaskId": "C2LTB1-EXT-018",
+      "sourceResolutionReviewId": "C2LTB1-SRFR-004",
+      "correctedFreshReviewId": "C2LTB1-CFRV-006",
+      "domainId": "cerebrovascular-stroke-brain-perfusion-resilience",
+      "localDomainPath": "domains/c2-source-maintenance/cerebrovascular-stroke-brain-perfusion-resilience",
+      "candidateId": "C2LTB1-BRR-018-CAND-01",
+      "sourceTitle": "2026 Guideline for the Early Management of Patients With Acute Ischemic Stroke",
+      "sourceUrl": "https://professional.heart.org/en/science-news/2026-guideline-for-the-early-management-of-patients-with-acute-ischemic-stroke",
+      "sourceAccessStatus": "official-html-page-plus-pubmed-abstract-accessible",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "filled-from-eligible-corrected-source-fresh-review",
+      "modelAdmissionDecision": "blocked-pending-corrected-source-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://pubmed.ncbi.nlm.nih.gov/41582814/",
+        "https://professional.heart.org/en/science-news/2026-guideline-for-the-early-management-of-patients-with-acute-ischemic-stroke"
+      ],
+      "registeredExactClaimUse": "Supports treating acute ischemic stroke as a time-critical continuity domain from prehospital evaluation through acute treatment, early in-hospital complication management and early secondary prevention. AHA page highlights mobile stroke units, EMS triage, tenecteplase within 4.5 hours, broader endovascular thrombectomy eligibility and first pediatric AIS recommendations.",
+      "registeredTransferBoundary": "Transfer only as acute stroke guideline route and endpoint vocabulary. Do not use for individual thrombolysis/thrombectomy eligibility, dosing, emergency advice or calibrated Human Infra effect size.",
+      "content": {
+        "transferBoundaryQuestion": "How far can C2LTB1-CREXT-006 transfer into Human Infra claims for cerebrovascular-stroke-brain-perfusion-resilience?",
+        "domainTransferVerdict": "transfer-boundary-present-and-required",
+        "registeredTransferBoundary": "Transfer only as acute stroke guideline route and endpoint vocabulary. Do not use for individual thrombolysis/thrombectomy eligibility, dosing, emergency advice or calibrated Human Infra effect size.",
+        "sourceExtractionTransferBoundary": "Transfer only as acute stroke guideline route and endpoint vocabulary. Do not use for individual thrombolysis/thrombectomy eligibility, dosing, emergency advice or calibrated Human Infra effect size.",
+        "blockedTransferUses": [
+          "calibrated-prediction",
+          "individual-advice",
+          "individual-death-date-output",
+          "intervention-ranking",
+          "clinical-validity-claim",
+          "domain-claim-upgrade"
+        ]
+      }
+    },
+    {
+      "artifactId": "C2LTB1-CORR-ART-024-DOWNGRADE-CHECK",
+      "artifactType": "reviewed-downgrade-check",
+      "artifactStatus": "filled-reviewed-c2ltb1-corrected-source-artifact-model-blocked",
+      "reextractionTaskId": "C2LTB1-CREXT-006",
+      "originTaskId": "C2LTB1-EXT-018",
+      "sourceResolutionReviewId": "C2LTB1-SRFR-004",
+      "correctedFreshReviewId": "C2LTB1-CFRV-006",
+      "domainId": "cerebrovascular-stroke-brain-perfusion-resilience",
+      "localDomainPath": "domains/c2-source-maintenance/cerebrovascular-stroke-brain-perfusion-resilience",
+      "candidateId": "C2LTB1-BRR-018-CAND-01",
+      "sourceTitle": "2026 Guideline for the Early Management of Patients With Acute Ischemic Stroke",
+      "sourceUrl": "https://professional.heart.org/en/science-news/2026-guideline-for-the-early-management-of-patients-with-acute-ischemic-stroke",
+      "sourceAccessStatus": "official-html-page-plus-pubmed-abstract-accessible",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "filled-from-eligible-corrected-source-fresh-review",
+      "modelAdmissionDecision": "blocked-pending-corrected-source-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://pubmed.ncbi.nlm.nih.gov/41582814/",
+        "https://professional.heart.org/en/science-news/2026-guideline-for-the-early-management-of-patients-with-acute-ischemic-stroke"
+      ],
+      "registeredExactClaimUse": "Supports treating acute ischemic stroke as a time-critical continuity domain from prehospital evaluation through acute treatment, early in-hospital complication management and early secondary prevention. AHA page highlights mobile stroke units, EMS triage, tenecteplase within 4.5 hours, broader endovascular thrombectomy eligibility and first pediatric AIS recommendations.",
+      "registeredTransferBoundary": "Transfer only as acute stroke guideline route and endpoint vocabulary. Do not use for individual thrombolysis/thrombectomy eligibility, dosing, emergency advice or calibrated Human Infra effect size.",
+      "content": {
+        "downgradeQuestion": "When must C2LTB1-CREXT-006 be downgraded before artifact or model use?",
+        "downgradeVerdict": "No blocking defect found for bounded artifact preparation; calibrated modeling and individual-use gates remain blocked.",
+        "reviewerVerdict": "support-with-boundary",
+        "downgradeRequiredWhen": [
+          "Downgrade if full guideline review cannot bind a variable to a recommendation section, eligibility condition or care setting.",
+          "Downgrade if ischemic stroke guidance is transferred to hemorrhagic stroke.",
+          "Block model use if time-window, imaging, contraindication or local-system capacity constraints are omitted."
+        ],
+        "blockedSiblingPolicy": "Rows with context-lineage-only, direct-source-access-needed, publisher-route-only, directory-route-only or fulltext-needed decisions stay outside reviewedArtifacts and remain in blockedRows."
+      }
+    },
+    {
+      "artifactId": "C2LTB1-CORR-ART-025-SOURCE-CARD",
+      "artifactType": "reviewed-source-card",
+      "artifactStatus": "filled-reviewed-c2ltb1-corrected-source-artifact-model-blocked",
+      "reextractionTaskId": "C2LTB1-CREXT-007",
+      "originTaskId": "C2LTB1-EXT-041",
+      "sourceResolutionReviewId": "C2LTB1-SRFR-005",
+      "correctedFreshReviewId": "C2LTB1-CFRV-007",
+      "domainId": "fertility-preservation-gamete-embryo-cryostorage-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/fertility-preservation-gamete-embryo-cryostorage-continuity",
+      "candidateId": "C2LTB1-BRR-041-CAND-01",
+      "sourceTitle": "Fertility Preservation in People With Cancer: ASCO Guideline Update",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/40106739/",
+      "sourceAccessStatus": "pubmed-abstract-accessible",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "filled-from-eligible-corrected-source-fresh-review",
+      "modelAdmissionDecision": "blocked-pending-corrected-source-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://pubmed.ncbi.nlm.nih.gov/40106739/"
+      ],
+      "registeredExactClaimUse": "Supports treating fertility preservation for people with cancer as a future-option continuity domain: reproductive risks should be evaluated and counseled at diagnosis and during survivorship; interested or uncertain patients should be referred to reproductive specialists; fertility preservation should be discussed before cancer-directed therapy; established methods include sperm cryopreservation, embryo/oocyte/ovarian tissue cryopreservation, ovarian transposition and conservative gynecologic surgery with specific experimental/emerging boundaries.",
+      "registeredTransferBoundary": "Transfer only as future-choice/fertility-continuity route and endpoint vocabulary. Do not use as individual oncology, reproductive medicine or insurance advice.",
+      "content": {
+        "sourceIdentity": {
+          "title": "Fertility Preservation in People With Cancer: ASCO Guideline Update",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40106739/",
+          "candidateId": "C2LTB1-BRR-041-CAND-01",
+          "sourceAccessStatus": "pubmed-abstract-accessible",
+          "currentnessBoundary": "ASCO guideline update published in Journal of Clinical Oncology in 2025; PubMed abstract states a multidisciplinary panel updated the systematic review and included 166 studies."
+        },
+        "sourceRole": "future-choice-preservation-and-reproductive-continuity-route-anchor",
+        "exactClaimUse": "Supports treating fertility preservation for people with cancer as a future-option continuity domain: reproductive risks should be evaluated and counseled at diagnosis and during survivorship; interested or uncertain patients should be referred to reproductive specialists; fertility preservation should be discussed before cancer-directed therapy; established methods include sperm cryopreservation, embryo/oocyte/ovarian tissue cryopreservation, ovarian transposition and conservative gynecologic surgery with specific experimental/emerging boundaries.",
+        "transferBoundary": "Transfer only as future-choice/fertility-continuity route and endpoint vocabulary. Do not use as individual oncology, reproductive medicine or insurance advice.",
+        "freshReviewEvidence": [
+          {
+            "url": "https://pubmed.ncbi.nlm.nih.gov/40106739/",
+            "evidenceType": "pubmed-abstract-check",
+            "finding": "PubMed confirms the 2025 ASCO guideline update and abstract-level fertility-preservation recommendations for people with cancer."
+          }
+        ],
+        "reviewerNote": "Independent fresh review supports bounded artifact preparation for C2LTB1-CREXT-007: source identity, access status, claim scope, endpoint vocabulary and transfer boundary are sufficiently explicit for a guarded Source/variable/endpoint/uncertainty/transfer/downgrade artifact prep step."
+      }
+    },
+    {
+      "artifactId": "C2LTB1-CORR-ART-026-VARIABLE-CARD",
+      "artifactType": "reviewed-variable-card",
+      "artifactStatus": "filled-reviewed-c2ltb1-corrected-source-artifact-model-blocked",
+      "reextractionTaskId": "C2LTB1-CREXT-007",
+      "originTaskId": "C2LTB1-EXT-041",
+      "sourceResolutionReviewId": "C2LTB1-SRFR-005",
+      "correctedFreshReviewId": "C2LTB1-CFRV-007",
+      "domainId": "fertility-preservation-gamete-embryo-cryostorage-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/fertility-preservation-gamete-embryo-cryostorage-continuity",
+      "candidateId": "C2LTB1-BRR-041-CAND-01",
+      "sourceTitle": "Fertility Preservation in People With Cancer: ASCO Guideline Update",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/40106739/",
+      "sourceAccessStatus": "pubmed-abstract-accessible",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "filled-from-eligible-corrected-source-fresh-review",
+      "modelAdmissionDecision": "blocked-pending-corrected-source-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://pubmed.ncbi.nlm.nih.gov/40106739/"
+      ],
+      "registeredExactClaimUse": "Supports treating fertility preservation for people with cancer as a future-option continuity domain: reproductive risks should be evaluated and counseled at diagnosis and during survivorship; interested or uncertain patients should be referred to reproductive specialists; fertility preservation should be discussed before cancer-directed therapy; established methods include sperm cryopreservation, embryo/oocyte/ovarian tissue cryopreservation, ovarian transposition and conservative gynecologic surgery with specific experimental/emerging boundaries.",
+      "registeredTransferBoundary": "Transfer only as future-choice/fertility-continuity route and endpoint vocabulary. Do not use as individual oncology, reproductive medicine or insurance advice.",
+      "content": {
+        "variableQuestion": "Which bounded Human Infra variables can be extracted from C2LTB1-CREXT-007 for fertility-preservation-gamete-embryo-cryostorage-continuity?",
+        "variableSeed": [
+          "reproductive-risk-counseling-timing",
+          "fertility-specialist-referral",
+          "gamete-or-embryo-cryostorage-route",
+          "ovarian-tissue-cryopreservation-route",
+          "coverage-and-access-barrier"
+        ],
+        "sourceExtractedVariables": [
+          "reproductive-risk-counseling-timing",
+          "fertility-specialist-referral",
+          "gamete-or-embryo-cryostorage-route",
+          "ovarian-tissue-cryopreservation-route",
+          "coverage-and-access-barrier"
+        ],
+        "modelPosition": {
+          "primaryLocation": "future-choice-preservation-and-reproductive-continuity-route-anchor",
+          "variables": [
+            "reproductive-risk-counseling-timing",
+            "fertility-specialist-referral",
+            "gamete-or-embryo-cryostorage-route",
+            "ovarian-tissue-cryopreservation-route",
+            "coverage-and-access-barrier"
+          ],
+          "admissibleUse": "bounded future-choice and route vocabulary after independent review only"
+        },
+        "admissibleUse": "bounded future-choice and route vocabulary after independent review only",
+        "promotionBoundary": "corrected-source artifact only; calibrated prediction, intervention ranking and individual prognosis remain blocked"
+      }
+    },
+    {
+      "artifactId": "C2LTB1-CORR-ART-027-ENDPOINT-CARD",
+      "artifactType": "reviewed-endpoint-card",
+      "artifactStatus": "filled-reviewed-c2ltb1-corrected-source-artifact-model-blocked",
+      "reextractionTaskId": "C2LTB1-CREXT-007",
+      "originTaskId": "C2LTB1-EXT-041",
+      "sourceResolutionReviewId": "C2LTB1-SRFR-005",
+      "correctedFreshReviewId": "C2LTB1-CFRV-007",
+      "domainId": "fertility-preservation-gamete-embryo-cryostorage-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/fertility-preservation-gamete-embryo-cryostorage-continuity",
+      "candidateId": "C2LTB1-BRR-041-CAND-01",
+      "sourceTitle": "Fertility Preservation in People With Cancer: ASCO Guideline Update",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/40106739/",
+      "sourceAccessStatus": "pubmed-abstract-accessible",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "filled-from-eligible-corrected-source-fresh-review",
+      "modelAdmissionDecision": "blocked-pending-corrected-source-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://pubmed.ncbi.nlm.nih.gov/40106739/"
+      ],
+      "registeredExactClaimUse": "Supports treating fertility preservation for people with cancer as a future-option continuity domain: reproductive risks should be evaluated and counseled at diagnosis and during survivorship; interested or uncertain patients should be referred to reproductive specialists; fertility preservation should be discussed before cancer-directed therapy; established methods include sperm cryopreservation, embryo/oocyte/ovarian tissue cryopreservation, ovarian transposition and conservative gynecologic surgery with specific experimental/emerging boundaries.",
+      "registeredTransferBoundary": "Transfer only as future-choice/fertility-continuity route and endpoint vocabulary. Do not use as individual oncology, reproductive medicine or insurance advice.",
+      "content": {
+        "endpointQuestion": "Which endpoint vocabulary can C2LTB1-CREXT-007 support without calibrated effect-size claims?",
+        "endpointDefinition": "Candidate variables include reproductive-risk counseling timing, specialist referral, pre-treatment fertility preservation discussion, sperm cryopreservation route, oocyte/embryo/ovarian tissue cryostorage route, ovarian transposition, conservative gynecologic surgery, post-treatment FP route, coverage/access advocacy and pediatric assent/guardian consent boundary.",
+        "populationOrSetting": "People with cancer at diagnosis, during treatment planning and survivorship; includes adults, pubertal children and selected prepubertal contexts as bounded by the guideline abstract.",
+        "endpointBoundary": "supports exact claim use as vocabulary or route context only; no calibrated effect size or individual recommendation is admitted",
+        "modelPosition": "future-choice-preservation-and-reproductive-continuity-route-anchor",
+        "blockedEndpointUses": [
+          "calibrated-prediction",
+          "individual-advice",
+          "individual-death-date-output",
+          "intervention-ranking",
+          "clinical-validity-claim",
+          "domain-claim-upgrade"
+        ]
+      }
+    },
+    {
+      "artifactId": "C2LTB1-CORR-ART-028-UNCERTAINTY-CARD",
+      "artifactType": "reviewed-uncertainty-card",
+      "artifactStatus": "filled-reviewed-c2ltb1-corrected-source-artifact-model-blocked",
+      "reextractionTaskId": "C2LTB1-CREXT-007",
+      "originTaskId": "C2LTB1-EXT-041",
+      "sourceResolutionReviewId": "C2LTB1-SRFR-005",
+      "correctedFreshReviewId": "C2LTB1-CFRV-007",
+      "domainId": "fertility-preservation-gamete-embryo-cryostorage-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/fertility-preservation-gamete-embryo-cryostorage-continuity",
+      "candidateId": "C2LTB1-BRR-041-CAND-01",
+      "sourceTitle": "Fertility Preservation in People With Cancer: ASCO Guideline Update",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/40106739/",
+      "sourceAccessStatus": "pubmed-abstract-accessible",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "filled-from-eligible-corrected-source-fresh-review",
+      "modelAdmissionDecision": "blocked-pending-corrected-source-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://pubmed.ncbi.nlm.nih.gov/40106739/"
+      ],
+      "registeredExactClaimUse": "Supports treating fertility preservation for people with cancer as a future-option continuity domain: reproductive risks should be evaluated and counseled at diagnosis and during survivorship; interested or uncertain patients should be referred to reproductive specialists; fertility preservation should be discussed before cancer-directed therapy; established methods include sperm cryopreservation, embryo/oocyte/ovarian tissue cryopreservation, ovarian transposition and conservative gynecologic surgery with specific experimental/emerging boundaries.",
+      "registeredTransferBoundary": "Transfer only as future-choice/fertility-continuity route and endpoint vocabulary. Do not use as individual oncology, reproductive medicine or insurance advice.",
+      "content": {
+        "uncertaintyQuestion": "What uncertainty, bias or currentness boundary must constrain C2LTB1-CREXT-007?",
+        "uncertaintyOrBias": "PubMed abstract provides recommendation-level summary but not all evidence grades, contraindications, cancer-specific timing constraints, access/coverage details or long-term outcome data.",
+        "uncertaintyBoundaryVerdict": "transfer-boundary-present-and-required",
+        "evidenceLimit": "bounded transfer to endpoint, variable, route and source-currentness vocabulary; no intervention benefit, clinical decision or personal prognosis is admitted",
+        "downgradeTriggers": [
+          "Downgrade if cancer type, treatment urgency, puberty status, experimental status or access constraints are omitted.",
+          "Downgrade if fertility preservation is portrayed as guaranteed future fertility.",
+          "Block if used for individual reproductive or cancer-treatment decisions."
+        ]
+      }
+    },
+    {
+      "artifactId": "C2LTB1-CORR-ART-029-TRANSFER-BOUNDARY-CARD",
+      "artifactType": "reviewed-transfer-boundary-card",
+      "artifactStatus": "filled-reviewed-c2ltb1-corrected-source-artifact-model-blocked",
+      "reextractionTaskId": "C2LTB1-CREXT-007",
+      "originTaskId": "C2LTB1-EXT-041",
+      "sourceResolutionReviewId": "C2LTB1-SRFR-005",
+      "correctedFreshReviewId": "C2LTB1-CFRV-007",
+      "domainId": "fertility-preservation-gamete-embryo-cryostorage-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/fertility-preservation-gamete-embryo-cryostorage-continuity",
+      "candidateId": "C2LTB1-BRR-041-CAND-01",
+      "sourceTitle": "Fertility Preservation in People With Cancer: ASCO Guideline Update",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/40106739/",
+      "sourceAccessStatus": "pubmed-abstract-accessible",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "filled-from-eligible-corrected-source-fresh-review",
+      "modelAdmissionDecision": "blocked-pending-corrected-source-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://pubmed.ncbi.nlm.nih.gov/40106739/"
+      ],
+      "registeredExactClaimUse": "Supports treating fertility preservation for people with cancer as a future-option continuity domain: reproductive risks should be evaluated and counseled at diagnosis and during survivorship; interested or uncertain patients should be referred to reproductive specialists; fertility preservation should be discussed before cancer-directed therapy; established methods include sperm cryopreservation, embryo/oocyte/ovarian tissue cryopreservation, ovarian transposition and conservative gynecologic surgery with specific experimental/emerging boundaries.",
+      "registeredTransferBoundary": "Transfer only as future-choice/fertility-continuity route and endpoint vocabulary. Do not use as individual oncology, reproductive medicine or insurance advice.",
+      "content": {
+        "transferBoundaryQuestion": "How far can C2LTB1-CREXT-007 transfer into Human Infra claims for fertility-preservation-gamete-embryo-cryostorage-continuity?",
+        "domainTransferVerdict": "transfer-boundary-present-and-required",
+        "registeredTransferBoundary": "Transfer only as future-choice/fertility-continuity route and endpoint vocabulary. Do not use as individual oncology, reproductive medicine or insurance advice.",
+        "sourceExtractionTransferBoundary": "Transfer only as future-choice/fertility-continuity route and endpoint vocabulary. Do not use as individual oncology, reproductive medicine or insurance advice.",
+        "blockedTransferUses": [
+          "calibrated-prediction",
+          "individual-advice",
+          "individual-death-date-output",
+          "intervention-ranking",
+          "clinical-validity-claim",
+          "domain-claim-upgrade"
+        ]
+      }
+    },
+    {
+      "artifactId": "C2LTB1-CORR-ART-030-DOWNGRADE-CHECK",
+      "artifactType": "reviewed-downgrade-check",
+      "artifactStatus": "filled-reviewed-c2ltb1-corrected-source-artifact-model-blocked",
+      "reextractionTaskId": "C2LTB1-CREXT-007",
+      "originTaskId": "C2LTB1-EXT-041",
+      "sourceResolutionReviewId": "C2LTB1-SRFR-005",
+      "correctedFreshReviewId": "C2LTB1-CFRV-007",
+      "domainId": "fertility-preservation-gamete-embryo-cryostorage-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/fertility-preservation-gamete-embryo-cryostorage-continuity",
+      "candidateId": "C2LTB1-BRR-041-CAND-01",
+      "sourceTitle": "Fertility Preservation in People With Cancer: ASCO Guideline Update",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/40106739/",
+      "sourceAccessStatus": "pubmed-abstract-accessible",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "filled-from-eligible-corrected-source-fresh-review",
+      "modelAdmissionDecision": "blocked-pending-corrected-source-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://pubmed.ncbi.nlm.nih.gov/40106739/"
+      ],
+      "registeredExactClaimUse": "Supports treating fertility preservation for people with cancer as a future-option continuity domain: reproductive risks should be evaluated and counseled at diagnosis and during survivorship; interested or uncertain patients should be referred to reproductive specialists; fertility preservation should be discussed before cancer-directed therapy; established methods include sperm cryopreservation, embryo/oocyte/ovarian tissue cryopreservation, ovarian transposition and conservative gynecologic surgery with specific experimental/emerging boundaries.",
+      "registeredTransferBoundary": "Transfer only as future-choice/fertility-continuity route and endpoint vocabulary. Do not use as individual oncology, reproductive medicine or insurance advice.",
+      "content": {
+        "downgradeQuestion": "When must C2LTB1-CREXT-007 be downgraded before artifact or model use?",
+        "downgradeVerdict": "No blocking defect found for bounded artifact preparation; calibrated modeling and individual-use gates remain blocked.",
+        "reviewerVerdict": "support-with-boundary",
+        "downgradeRequiredWhen": [
+          "Downgrade if cancer type, treatment urgency, puberty status, experimental status or access constraints are omitted.",
+          "Downgrade if fertility preservation is portrayed as guaranteed future fertility.",
+          "Block if used for individual reproductive or cancer-treatment decisions."
+        ],
+        "blockedSiblingPolicy": "Rows with context-lineage-only, direct-source-access-needed, publisher-route-only, directory-route-only or fulltext-needed decisions stay outside reviewedArtifacts and remain in blockedRows."
+      }
+    }
+  ],
+  "blockedRows": [
+    {
+      "reviewId": "C2LTB1-CFRV-002",
+      "reextractionTaskId": "C2LTB1-CREXT-002",
+      "originTaskId": "C2LTB1-EXT-003",
+      "sourceResolutionReviewId": "C2LTB1-SRFR-001",
+      "domainId": "sepsis-shock-early-recognition-resuscitation-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/sepsis-shock-early-recognition-resuscitation-continuity",
+      "candidateId": "C2LTB1-BRR-003-CAND-02",
+      "sourceTitle": "Surviving sepsis campaign: international guidelines for management of sepsis and septic shock 2021",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/34599691/",
+      "reviewerVerdict": "blocked-or-context-only",
+      "artifactPromotionDecision": "blocked-context-lineage-only-no-direct-artifact-fill",
+      "blockReason": "The 2021 sepsis source is useful as prior-version lineage, but current-source artifacts should be anchored to the 2026 SCCM page unless a separate lineage artifact is explicitly scoped later.",
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Keep this corrected row blocked or context-only until direct full source context supports a narrower artifact."
+    },
+    {
+      "reviewId": "C2LTB1-CFRV-005",
+      "reextractionTaskId": "C2LTB1-CREXT-005",
+      "originTaskId": "C2LTB1-EXT-017",
+      "sourceResolutionReviewId": "C2LTB1-SRFR-003",
+      "domainId": "cerebrovascular-stroke-brain-perfusion-resilience",
+      "localDomainPath": "domains/c2-source-maintenance/cerebrovascular-stroke-brain-perfusion-resilience",
+      "candidateId": "C2LTB1-BRR-017-CAND-01",
+      "sourceTitle": "NINDS Stroke health information",
+      "sourceUrl": "https://www.ninds.nih.gov/health-information/stroke",
+      "reviewerVerdict": "blocked-or-context-only",
+      "artifactPromotionDecision": "blocked-direct-source-access-needed",
+      "blockReason": "NINDS route remains direct-fetch blocked during automated review; search-index evidence can support route identity only, not reviewed artifact content.",
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Keep this corrected row blocked or context-only until direct full source context supports a narrower artifact."
+    },
+    {
+      "reviewId": "C2LTB1-CFRV-008",
+      "reextractionTaskId": "C2LTB1-CREXT-008",
+      "originTaskId": "C2LTB1-EXT-041",
+      "sourceResolutionReviewId": "C2LTB1-SRFR-005",
+      "domainId": "fertility-preservation-gamete-embryo-cryostorage-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/fertility-preservation-gamete-embryo-cryostorage-continuity",
+      "candidateId": "C2LTB1-BRR-041-CAND-03",
+      "sourceTitle": "ASCO Publications DOI for 2025 fertility preservation guideline update",
+      "sourceUrl": "https://ascopubs.org/doi/10.1200/JCO-24-02782",
+      "reviewerVerdict": "blocked-or-context-only",
+      "artifactPromotionDecision": "blocked-publisher-route-only",
+      "blockReason": "ASCO publisher DOI route returned 403; PubMed confirms DOI, but this row provides provenance route rather than recommendation content.",
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Keep this corrected row blocked or context-only until direct full source context supports a narrower artifact."
+    },
+    {
+      "reviewId": "C2LTB1-CFRV-009",
+      "reextractionTaskId": "C2LTB1-CREXT-009",
+      "originTaskId": "C2LTB1-EXT-045",
+      "sourceResolutionReviewId": "C2LTB1-SRFR-006",
+      "domainId": "skin-barrier-wound-healing",
+      "localDomainPath": "domains/c2-source-maintenance/skin-barrier-wound-healing",
+      "candidateId": "C2LTB1-BRR-045-CAND-01",
+      "sourceTitle": "Wound Healing Society Clinical Practice Guidelines and Tools",
+      "sourceUrl": "https://woundheal.org/clinical-tools/",
+      "reviewerVerdict": "blocked-or-context-only",
+      "artifactPromotionDecision": "blocked-directory-route-only",
+      "blockReason": "WHS clinical tools page is a directory and wound-type splitter, not a specific recommendation source.",
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Keep this corrected row blocked or context-only until direct full source context supports a narrower artifact."
+    },
+    {
+      "reviewId": "C2LTB1-CFRV-010",
+      "reextractionTaskId": "C2LTB1-CREXT-010",
+      "originTaskId": "C2LTB1-EXT-045",
+      "sourceResolutionReviewId": "C2LTB1-SRFR-006",
+      "domainId": "skin-barrier-wound-healing",
+      "localDomainPath": "domains/c2-source-maintenance/skin-barrier-wound-healing",
+      "candidateId": "C2LTB1-BRR-045-CAND-02",
+      "sourceTitle": "WHS (Wound Healing Society) guidelines update: Diabetic foot ulcer treatment guidelines",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/38032324/",
+      "reviewerVerdict": "blocked-or-context-only",
+      "artifactPromotionDecision": "blocked-fulltext-needed",
+      "blockReason": "PubMed confirms the WHS diabetic-foot-ulcer guideline identity but exposes no abstract in this run; full guideline content is needed before artifact promotion.",
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Keep this corrected row blocked or context-only until direct full source context supports a narrower artifact."
+    }
+  ],
+  "indexRequirements": [
+    "README.md",
+    "AGENTS.md",
+    "docs/AGENTS.md",
+    "docs/reference/README.md",
+    "docs/reference/human-infra-maturity-roadmap.md",
+    "tools/README.md",
+    "tools/AGENTS.md"
+  ],
+  "summary": {
+    "eligibleCorrectedRows": [
+      "C2LTB1-CREXT-001",
+      "C2LTB1-CREXT-003",
+      "C2LTB1-CREXT-004",
+      "C2LTB1-CREXT-006",
+      "C2LTB1-CREXT-007"
+    ],
+    "blockedCorrectedRows": [
+      "C2LTB1-CREXT-002",
+      "C2LTB1-CREXT-005",
+      "C2LTB1-CREXT-008",
+      "C2LTB1-CREXT-009",
+      "C2LTB1-CREXT-010"
+    ],
+    "artifactTypeCounts": {
+      "reviewed-source-card": 5,
+      "reviewed-variable-card": 5,
+      "reviewed-endpoint-card": 5,
+      "reviewed-uncertainty-card": 5,
+      "reviewed-transfer-boundary-card": 5,
+      "reviewed-downgrade-check": 5
+    },
+    "reviewedArtifactsCreated": 30,
+    "blockedRowsPreserved": 5,
+    "cumulativeC2LTB1ReviewedArtifactsAfterThisRegister": 282,
+    "modelAdmissionDecision": "blocked-pending-corrected-source-reviewed-artifact-gates-and-calibrated-model-validation",
+    "nextWorkOrder": "Expand governed reviewed artifacts across the remaining C2 long-tail domains while preserving corrected blocked rows until narrower source review resolves them."
+  }
+}
