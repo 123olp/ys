@@ -77,6 +77,8 @@ longevity-evidence/
 │   │   ├── life_path_nhats_cohort_flow_endpoint_protocol.json
 │   │   ├── life_path_nhats_disclosure_control_policy.json
 │   │   ├── life_path_nhats_disclosure_control_test_cases.json
+│   │   ├── life_path_nhats_survey_design_protocol.json
+│   │   ├── life_path_nhats_survey_design_test_cases.json
 │   │   └── life_path_toy_model_scenarios.json
 │   ├── processed/
 │   └── raw/
@@ -106,6 +108,7 @@ longevity-evidence/
     ├── collect_mvp_data.py
     ├── run_life_path_sensitivity_analysis.py
     ├── validate_nhats_disclosure_outputs.py
+    ├── validate_nhats_survey_design_plan.py
     └── run_life_path_toy_model.py
 ```
 
@@ -127,6 +130,9 @@ longevity-evidence/
 - `docs/life-path-data-card-nhats.md`：NHATS 数据准入卡草案，约束晚年功能/有效时间模型使用 NHATS 前必须满足的治理、设计、结局、变量、质量和中止条件。
 - `docs/life-path-variable-dictionary-nhats.md`：NHATS 变量家族字典草案，把设计变量、死亡边界、功能、认知、资源支持、环境和有效时间代理指标映射到生命路径模型角色。
 - `docs/life-path-extraction-manifest-nhats-draft.md`：NHATS 提取清单草案，把文件名、变量名、权重、缺失码、访问层级、endpoint、允许输出和中止条件作为写抽取脚本前的准入门。
+- `data/manual/life_path_nhats_survey_design_protocol.json`：NHATS survey-design 协议，要求权重、分层、PSU/variance unit、方差方法、domain rule、missingness route、round linkage 和披露验证全部就绪后才允许加权估计。
+- `data/manual/life_path_nhats_survey_design_test_cases.json`：NHATS survey-design 合成测试集，只验证 synthetic design-plan envelope 的 allow/block 行为，不包含真实 NHATS 权重、路由或参与者数据。
+- `scripts/validate_nhats_survey_design_plan.py`：NHATS survey-design 验证器，生成 `web/src/data/life-path-nhats-survey-design-validation.json`，证明缺权重、缺分层、缺 PSU、缺方差方法或提前公共推断时必须阻断。
 - `docs/collection-run-*.md`：历史采集记录和质量风险。
 - `data/manual/interventions.json`：首批 20 个干预对象、类别、别名和检索词。
 - `data/manual/higher_order_effects.tsv`：LEV 二阶 / 多阶效应模型输入，供 Web 导出脚本生成多阶飞轮图。

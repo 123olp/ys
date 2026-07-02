@@ -1,0 +1,208 @@
+{
+  "schemaVersion": "human-infra.life-path-nhats-survey-design-test-cases.v1",
+  "sourceId": "nhats",
+  "protocolId": "nhats-r13-r14-survey-design-protocol-draft",
+  "status": "synthetic-only-no-real-nhats-data",
+  "currentBoundary": {
+    "containsRealNhatsData": false,
+    "containsSyntheticOnly": true,
+    "surveyDesignProofOnly": true,
+    "publicInferenceProofOnly": false,
+    "calibrationAllowed": false,
+    "individualPredictionAllowed": false,
+    "reason": "These cases test the survey-design validator with synthetic design-plan envelopes only. They are not NHATS weights, route counts, cohort counts or participant data."
+  },
+  "cases": [
+    {
+      "id": "synthetic-complete-design-plan",
+      "expectedDecision": "allow-weighted-diagnostics",
+      "why": "Synthetic plan has all minimum design components, no real data, no public export, no calibration and no population-inference request.",
+      "designPlan": {
+        "schemaVersion": "human-infra.synthetic-nhats-survey-design-plan.v1",
+        "sourceId": "nhats",
+        "planId": "synthetic-complete-design-plan",
+        "containsRealNhatsData": false,
+        "containsRowLevelData": false,
+        "requestedUse": "weighted_diagnostic_only",
+        "publicExportRequested": false,
+        "populationInferenceRequested": false,
+        "calibrationRequested": false,
+        "individualPredictionRequested": false,
+        "disclosureValidationStatus": "synthetic-pass",
+        "weightField": {
+          "name": "synthetic_weight",
+          "status": "synthetic-confirmed"
+        },
+        "strataField": {
+          "name": "synthetic_stratum",
+          "status": "synthetic-confirmed"
+        },
+        "psuOrClusterField": {
+          "name": "synthetic_psu",
+          "status": "synthetic-confirmed"
+        },
+        "varianceMethod": "Taylor linearization",
+        "domainSubpopulationRule": "synthetic-domain-rule-present",
+        "missingnessRouteRule": "synthetic-route-map-present",
+        "roundLinkageRule": "synthetic-r13-r14-linkage-present"
+      }
+    },
+    {
+      "id": "synthetic-missing-weight",
+      "expectedDecision": "block-weighted-estimate",
+      "why": "No analysis weight is present.",
+      "designPlan": {
+        "schemaVersion": "human-infra.synthetic-nhats-survey-design-plan.v1",
+        "sourceId": "nhats",
+        "planId": "synthetic-missing-weight",
+        "containsRealNhatsData": false,
+        "containsRowLevelData": false,
+        "requestedUse": "weighted_diagnostic_only",
+        "publicExportRequested": false,
+        "populationInferenceRequested": false,
+        "calibrationRequested": false,
+        "individualPredictionRequested": false,
+        "disclosureValidationStatus": "synthetic-pass",
+        "strataField": {
+          "name": "synthetic_stratum",
+          "status": "synthetic-confirmed"
+        },
+        "psuOrClusterField": {
+          "name": "synthetic_psu",
+          "status": "synthetic-confirmed"
+        },
+        "varianceMethod": "Taylor linearization",
+        "domainSubpopulationRule": "synthetic-domain-rule-present",
+        "missingnessRouteRule": "synthetic-route-map-present",
+        "roundLinkageRule": "synthetic-r13-r14-linkage-present"
+      }
+    },
+    {
+      "id": "synthetic-missing-strata",
+      "expectedDecision": "block-weighted-estimate",
+      "why": "No stratum field is present.",
+      "designPlan": {
+        "schemaVersion": "human-infra.synthetic-nhats-survey-design-plan.v1",
+        "sourceId": "nhats",
+        "planId": "synthetic-missing-strata",
+        "containsRealNhatsData": false,
+        "containsRowLevelData": false,
+        "requestedUse": "weighted_diagnostic_only",
+        "publicExportRequested": false,
+        "populationInferenceRequested": false,
+        "calibrationRequested": false,
+        "individualPredictionRequested": false,
+        "disclosureValidationStatus": "synthetic-pass",
+        "weightField": {
+          "name": "synthetic_weight",
+          "status": "synthetic-confirmed"
+        },
+        "psuOrClusterField": {
+          "name": "synthetic_psu",
+          "status": "synthetic-confirmed"
+        },
+        "varianceMethod": "Taylor linearization",
+        "domainSubpopulationRule": "synthetic-domain-rule-present",
+        "missingnessRouteRule": "synthetic-route-map-present",
+        "roundLinkageRule": "synthetic-r13-r14-linkage-present"
+      }
+    },
+    {
+      "id": "synthetic-missing-psu",
+      "expectedDecision": "block-weighted-estimate",
+      "why": "No PSU / variance-unit / cluster field is present.",
+      "designPlan": {
+        "schemaVersion": "human-infra.synthetic-nhats-survey-design-plan.v1",
+        "sourceId": "nhats",
+        "planId": "synthetic-missing-psu",
+        "containsRealNhatsData": false,
+        "containsRowLevelData": false,
+        "requestedUse": "weighted_diagnostic_only",
+        "publicExportRequested": false,
+        "populationInferenceRequested": false,
+        "calibrationRequested": false,
+        "individualPredictionRequested": false,
+        "disclosureValidationStatus": "synthetic-pass",
+        "weightField": {
+          "name": "synthetic_weight",
+          "status": "synthetic-confirmed"
+        },
+        "strataField": {
+          "name": "synthetic_stratum",
+          "status": "synthetic-confirmed"
+        },
+        "varianceMethod": "Taylor linearization",
+        "domainSubpopulationRule": "synthetic-domain-rule-present",
+        "missingnessRouteRule": "synthetic-route-map-present",
+        "roundLinkageRule": "synthetic-r13-r14-linkage-present"
+      }
+    },
+    {
+      "id": "synthetic-no-variance-method",
+      "expectedDecision": "block-weighted-estimate",
+      "why": "No survey-design variance method is present.",
+      "designPlan": {
+        "schemaVersion": "human-infra.synthetic-nhats-survey-design-plan.v1",
+        "sourceId": "nhats",
+        "planId": "synthetic-no-variance-method",
+        "containsRealNhatsData": false,
+        "containsRowLevelData": false,
+        "requestedUse": "weighted_diagnostic_only",
+        "publicExportRequested": false,
+        "populationInferenceRequested": false,
+        "calibrationRequested": false,
+        "individualPredictionRequested": false,
+        "disclosureValidationStatus": "synthetic-pass",
+        "weightField": {
+          "name": "synthetic_weight",
+          "status": "synthetic-confirmed"
+        },
+        "strataField": {
+          "name": "synthetic_stratum",
+          "status": "synthetic-confirmed"
+        },
+        "psuOrClusterField": {
+          "name": "synthetic_psu",
+          "status": "synthetic-confirmed"
+        },
+        "domainSubpopulationRule": "synthetic-domain-rule-present",
+        "missingnessRouteRule": "synthetic-route-map-present",
+        "roundLinkageRule": "synthetic-r13-r14-linkage-present"
+      }
+    },
+    {
+      "id": "synthetic-public-inference-before-disclosure",
+      "expectedDecision": "block-weighted-estimate",
+      "why": "Population inference and public export are requested before a real disclosure-control report exists.",
+      "designPlan": {
+        "schemaVersion": "human-infra.synthetic-nhats-survey-design-plan.v1",
+        "sourceId": "nhats",
+        "planId": "synthetic-public-inference-before-disclosure",
+        "containsRealNhatsData": false,
+        "containsRowLevelData": false,
+        "requestedUse": "population_inference",
+        "publicExportRequested": true,
+        "populationInferenceRequested": true,
+        "calibrationRequested": false,
+        "individualPredictionRequested": false,
+        "disclosureValidationStatus": "missing-real-output-disclosure",
+        "weightField": {
+          "name": "synthetic_weight",
+          "status": "synthetic-confirmed"
+        },
+        "strataField": {
+          "name": "synthetic_stratum",
+          "status": "synthetic-confirmed"
+        },
+        "psuOrClusterField": {
+          "name": "synthetic_psu",
+          "status": "synthetic-confirmed"
+        },
+        "varianceMethod": "Taylor linearization",
+        "domainSubpopulationRule": "synthetic-domain-rule-present",
+        "missingnessRouteRule": "synthetic-route-map-present",
+        "roundLinkageRule": "synthetic-r13-r14-linkage-present"
+      }
+    }
+  ]
+}

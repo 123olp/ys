@@ -4,6 +4,7 @@ All notable repository structure changes are recorded here.
 
 ## 2026-07-02
 
+- Added a machine-readable NHATS survey-design protocol, synthetic allow/block test cases, validator script, generated Web validation report and audit coverage, enforcing weight, strata, PSU/variance-unit, variance-method, route-map and disclosure prerequisites before any weighted estimate, variance estimate, population inference or calibration claim.
 - Added a machine-readable NHATS disclosure-control policy, synthetic allow/block test cases, validator script, generated Web validation report and audit coverage, enforcing aggregate-only output, n < 5 suppression, row-level blocking, public-AI blocking and forbidden-output rules before any public export claim.
 - Added a machine-readable NHATS cohort-flow endpoint-routing protocol and audit coverage, pre-registering R13/R14 route rows, endpoint classes, aggregate-only output contracts, n < 5 disclosure control, readiness gates and blocked public-export/calibration boundaries before extraction.
 - Added a machine-readable NHATS variable-confirmation matrix and audit coverage, recording official source facts, R13/R14 candidate field patterns, variable groups, cohort-flow template, readiness gates and blocked extraction boundaries before Colectica/codebook confirmation.

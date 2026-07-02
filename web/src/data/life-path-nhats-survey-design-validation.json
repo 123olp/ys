@@ -1,0 +1,83 @@
+{
+  "schemaVersion": "human-infra.life-path-nhats-survey-design-validation.v1",
+  "generatedAt": "2026-07-02T03:27:06.304934+00:00",
+  "protocolPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_survey_design_protocol.json",
+  "protocolSha256": "fc36be4f7b5521f938a74063a7ba57f50a791b99008fe35bc1fd08b5a233d0ef",
+  "testCasesPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_survey_design_test_cases.json",
+  "testCasesSha256": "a0d106ff0e70450ae96a4d8749037839cae27bfb7feb68bf2636681c46f500cc",
+  "overallStatus": "PASS",
+  "boundary": {
+    "containsRealNhatsData": false,
+    "containsSyntheticOnly": true,
+    "surveyDesignProofOnly": true,
+    "publicInferenceProofOnly": false,
+    "calibrationAllowed": false,
+    "individualPredictionAllowed": false,
+    "note": "This report validates synthetic survey-design envelopes only; it does not validate real NHATS extraction, design-weighted estimation, population inference, calibration, clinical use or individual prediction."
+  },
+  "summary": {
+    "caseCount": 6,
+    "pass": 6,
+    "fail": 0,
+    "allowedCount": 1,
+    "blockedCount": 5,
+    "protocolIssueCount": 0,
+    "boundaryIssueCount": 0
+  },
+  "cases": [
+    {
+      "id": "synthetic-complete-design-plan",
+      "expectedDecision": "allow-weighted-diagnostics",
+      "observedDecision": "allow-weighted-diagnostics",
+      "status": "PASS",
+      "reasons": []
+    },
+    {
+      "id": "synthetic-missing-weight",
+      "expectedDecision": "block-weighted-estimate",
+      "observedDecision": "block-weighted-estimate",
+      "status": "PASS",
+      "reasons": [
+        "missing confirmed analysis weight"
+      ]
+    },
+    {
+      "id": "synthetic-missing-strata",
+      "expectedDecision": "block-weighted-estimate",
+      "observedDecision": "block-weighted-estimate",
+      "status": "PASS",
+      "reasons": [
+        "missing confirmed strata field"
+      ]
+    },
+    {
+      "id": "synthetic-missing-psu",
+      "expectedDecision": "block-weighted-estimate",
+      "observedDecision": "block-weighted-estimate",
+      "status": "PASS",
+      "reasons": [
+        "missing confirmed PSU / variance-unit / cluster field"
+      ]
+    },
+    {
+      "id": "synthetic-no-variance-method",
+      "expectedDecision": "block-weighted-estimate",
+      "observedDecision": "block-weighted-estimate",
+      "status": "PASS",
+      "reasons": [
+        "varianceMethod must be one of ['Taylor linearization', 'replicate weights', 'survey-package-compatible-plan']"
+      ]
+    },
+    {
+      "id": "synthetic-public-inference-before-disclosure",
+      "expectedDecision": "block-weighted-estimate",
+      "observedDecision": "block-weighted-estimate",
+      "status": "PASS",
+      "reasons": [
+        "publicExportRequested must be false for synthetic survey-design validation",
+        "populationInferenceRequested must be false until real design and disclosure gates pass",
+        "disclosureValidationStatus must be synthetic-pass for synthetic weighted diagnostics"
+      ]
+    }
+  ]
+}

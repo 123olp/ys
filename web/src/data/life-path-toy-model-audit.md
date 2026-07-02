@@ -3,7 +3,7 @@
 - Overall status: `PASS`
 - Model path: `web/src/data/life-path-toy-model.json`
 - Model SHA-256: `a4c92209d79d20579bf1f575d5ebf07ffe5be9ccaf6bf3f3eef08efa287b5377`
-- Generated at: `2026-07-02T03:11:27.265830+00:00`
+- Generated at: `2026-07-02T03:27:06.360135+00:00`
 
 ## Checks
 
@@ -164,6 +164,27 @@
 | `nhats-disclosure-validation-summary` | `PASS` | validation report must pass every synthetic case and include both allowed and blocked outputs |
 | `nhats-disclosure-validation-case-results` | `PASS` | missing_validation_case_ids=[] |
 | `nhats-disclosure-validation-boundary` | `PASS` | validation report must preserve synthetic-only, no-real-data, no-calibration and no-individual-prediction boundaries |
+| `nhats-survey-design-protocol-exists` | `PASS` | domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_survey_design_protocol.json |
+| `nhats-survey-design-test-cases-exist` | `PASS` | domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_survey_design_test_cases.json |
+| `nhats-survey-design-validation-exists` | `PASS` | web/src/data/life-path-nhats-survey-design-validation.json |
+| `nhats-survey-design-protocol-schema` | `PASS` | schemaVersion='human-infra.life-path-nhats-survey-design-protocol.v1' |
+| `nhats-survey-design-protocol-identity` | `PASS` | survey-design protocol must bind NHATS source, upstream readiness/file/estimand/variable/cohort/disclosure contracts and cannot-weight status |
+| `nhats-survey-design-current-decision` | `PASS` | survey-design protocol must block weighted counts, weighted curves, variance estimation, population inference, public export, calibration and individual prediction |
+| `nhats-survey-design-component-coverage` | `PASS` | missing_component_ids=[] |
+| `nhats-survey-design-candidate-fields` | `PASS` | candidate field families must include weight, variance-unit and stratum patterns while staying candidate-pattern-only |
+| `nhats-survey-design-readiness-gates` | `PASS` | missing_gate_ids=[] |
+| `nhats-survey-design-gate-summary` | `PASS` | gate summary must keep every survey-design gate missing and blocking |
+| `nhats-survey-design-source-trace` | `PASS` | survey-design protocol source trace must include NHATS conditions, Colectica, R13/R14 files, User Guide and Technical Paper 55 |
+| `nhats-survey-design-prohibited-actions` | `PASS` | survey-design protocol must prohibit premature weighted estimates, population inference, candidate-field overuse and individual outputs |
+| `nhats-survey-design-test-cases-schema` | `PASS` | survey-design test cases must bind NHATS source and synthetic-only protocol status |
+| `nhats-survey-design-test-cases-boundary` | `PASS` | survey-design test cases must be synthetic-only and prohibit calibration plus individual prediction |
+| `nhats-survey-design-test-case-coverage` | `PASS` | missing_case_ids=[] |
+| `nhats-survey-design-test-case-decision-mix` | `PASS` | synthetic survey-design cases must include both allowed diagnostics and blocked estimate examples |
+| `nhats-survey-design-validation-schema` | `PASS` | schemaVersion='human-infra.life-path-nhats-survey-design-validation.v1' |
+| `nhats-survey-design-validation-source-hashes` | `PASS` | survey-design validation report must point back to current protocol and test-case hashes |
+| `nhats-survey-design-validation-summary` | `PASS` | survey-design validation report must pass every synthetic case and include both allowed and blocked results |
+| `nhats-survey-design-validation-case-results` | `PASS` | missing_validation_case_ids=[] |
+| `nhats-survey-design-validation-boundary` | `PASS` | survey-design validation report must preserve synthetic-only, no-real-data, no-calibration and no-individual-prediction boundaries |
 | `sensitivity-analysis-exists` | `PASS` | web/src/data/life-path-sensitivity-analysis.json |
 | `sensitivity-schema-version` | `PASS` | schemaVersion='human-infra.life-path-sensitivity.v1' |
 | `sensitivity-source-model-hash` | `PASS` | sensitivity output must point back to the generated model path and sha256 |
@@ -257,14 +278,25 @@
 - Disclosure test cases path: `domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_disclosure_control_test_cases.json`
 - Disclosure test cases SHA-256: `0a9cccdbfbd951ba6d04eeb762b9387ba50a13336e4ee4ade43ed976acb4c9c5`
 - Disclosure validation path: `web/src/data/life-path-nhats-disclosure-control-validation.json`
-- Disclosure validation SHA-256: `9158458fea6b006d3fadf3a6c30f310178b755d5e627ca5589f8b0f4189e1c76`
+- Disclosure validation SHA-256: `8788839f90f710b9a41b329252c911251364d844a5db8470bf1956cc091628c2`
 - Disclosure validation status: `PASS`
 - Boundary: disclosure-control validation proves only that synthetic output envelopes obey aggregate-only, n<5 suppression, row-level blocking, public-AI blocking and forbidden-output rules; it does not authorize real NHATS extraction, public export, calibration, validation or individual prediction.
+
+## NHATS Survey Design Validation
+
+- Survey-design protocol path: `domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_survey_design_protocol.json`
+- Survey-design protocol SHA-256: `fc36be4f7b5521f938a74063a7ba57f50a791b99008fe35bc1fd08b5a233d0ef`
+- Survey-design test cases path: `domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_survey_design_test_cases.json`
+- Survey-design test cases SHA-256: `a0d106ff0e70450ae96a4d8749037839cae27bfb7feb68bf2636681c46f500cc`
+- Survey-design validation path: `web/src/data/life-path-nhats-survey-design-validation.json`
+- Survey-design validation SHA-256: `f795afa96dfd7e842d0c26d84e88bf35197d327409a3e700a61013b95ca2827d`
+- Survey-design validation status: `PASS`
+- Boundary: survey-design validation proves only that synthetic design-plan envelopes enforce weights, strata, PSU/variance-unit, variance-method, route-map and disclosure prerequisites; it does not authorize real NHATS weighted estimates, population inference, calibration, validation or individual prediction.
 
 ## Sensitivity Analysis
 
 - Sensitivity path: `web/src/data/life-path-sensitivity-analysis.json`
-- Sensitivity SHA-256: `13aca8362528eb0d55647fb950d83b0b6dfc2fb9690caee2b72480c93451a6e6`
+- Sensitivity SHA-256: `5a5306219bcb521a4356a2a9b1379b248322aecd84870066eee89ef22113bc22`
 - Sensitivity status: `PASS`
 - Boundary: sensitivity analysis is synthetic one-factor-at-a-time stress testing; it does not prove empirical parameter values, causal effects, calibrated prediction, or individual usefulness.
 

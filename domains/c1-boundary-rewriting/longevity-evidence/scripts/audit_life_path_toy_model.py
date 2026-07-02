@@ -142,6 +142,27 @@ DEFAULT_NHATS_DISCLOSURE_TEST_CASES = (
 DEFAULT_NHATS_DISCLOSURE_VALIDATION = (
     REPO_ROOT / "web" / "src" / "data" / "life-path-nhats-disclosure-control-validation.json"
 )
+DEFAULT_NHATS_SURVEY_DESIGN_PROTOCOL = (
+    REPO_ROOT
+    / "domains"
+    / "c1-boundary-rewriting"
+    / "longevity-evidence"
+    / "data"
+    / "manual"
+    / "life_path_nhats_survey_design_protocol.json"
+)
+DEFAULT_NHATS_SURVEY_DESIGN_TEST_CASES = (
+    REPO_ROOT
+    / "domains"
+    / "c1-boundary-rewriting"
+    / "longevity-evidence"
+    / "data"
+    / "manual"
+    / "life_path_nhats_survey_design_test_cases.json"
+)
+DEFAULT_NHATS_SURVEY_DESIGN_VALIDATION = (
+    REPO_ROOT / "web" / "src" / "data" / "life-path-nhats-survey-design-validation.json"
+)
 REQUIRED_MODEL_CARD_FIELDS = {
     "modelName",
     "modelClass",
@@ -398,6 +419,35 @@ REQUIRED_NHATS_DISCLOSURE_CASE_IDS = {
     "synthetic-row-level-leak",
     "synthetic-public-ai-upload",
     "synthetic-forbidden-output-type",
+}
+REQUIRED_NHATS_SURVEY_DESIGN_COMPONENT_IDS = {
+    "analysis_weight",
+    "strata",
+    "psu_or_cluster",
+    "variance_method",
+    "domain_subpopulation_rule",
+    "missingness_and_route_rule",
+    "round_linkage_rule",
+    "finite_population_boundary",
+}
+REQUIRED_NHATS_SURVEY_DESIGN_GATE_IDS = {
+    "technical-paper-confirmed",
+    "colectica-design-fields-confirmed",
+    "round-specific-weight-selected",
+    "strata-psu-fields-confirmed",
+    "variance-method-selected",
+    "domain-subpopulation-rule-selected",
+    "missingness-route-map-ready",
+    "disclosure-validation-passed",
+    "weighted-estimator-script-reviewed",
+}
+REQUIRED_NHATS_SURVEY_DESIGN_CASE_IDS = {
+    "synthetic-complete-design-plan",
+    "synthetic-missing-weight",
+    "synthetic-missing-strata",
+    "synthetic-missing-psu",
+    "synthetic-no-variance-method",
+    "synthetic-public-inference-before-disclosure",
 }
 
 
@@ -2811,6 +2861,359 @@ def audit_nhats_disclosure_control(
     }
 
 
+def audit_nhats_survey_design(
+    protocol_path: Path,
+    test_cases_path: Path,
+    validation_path: Path,
+) -> dict[str, Any]:
+    checks: list[dict[str, Any]] = []
+    protocol_exists = protocol_path.exists()
+    test_cases_exists = test_cases_path.exists()
+    validation_exists = validation_path.exists()
+    add_check(
+        checks,
+        "nhats-survey-design-protocol-exists",
+        status_from_bool(protocol_exists),
+        str(protocol_path.relative_to(REPO_ROOT)),
+    )
+    add_check(
+        checks,
+        "nhats-survey-design-test-cases-exist",
+        status_from_bool(test_cases_exists),
+        str(test_cases_path.relative_to(REPO_ROOT)),
+    )
+    add_check(
+        checks,
+        "nhats-survey-design-validation-exists",
+        status_from_bool(validation_exists),
+        str(validation_path.relative_to(REPO_ROOT)),
+    )
+
+    protocol = load_json(protocol_path) if protocol_exists else {}
+    test_cases = load_json(test_cases_path) if test_cases_exists else {}
+    validation = load_json(validation_path) if validation_exists else {}
+
+    protocol_schema_ok = (
+        protocol.get("schemaVersion")
+        == "human-infra.life-path-nhats-survey-design-protocol.v1"
+    )
+    add_check(
+        checks,
+        "nhats-survey-design-protocol-schema",
+        status_from_bool(protocol_exists and protocol_schema_ok),
+        f"schemaVersion={protocol.get('schemaVersion')!r}",
+    )
+
+    protocol_identity_ok = (
+        protocol.get("sourceId") == "nhats"
+        and protocol.get("protocolId") == "nhats-r13-r14-survey-design-protocol-draft"
+        and protocol.get("acquisitionReadinessId") == "nhats-acquisition-readiness-2026-07-02"
+        and protocol.get("fileTierTableId") == "nhats-r13-r14-file-tier-table-draft"
+        and protocol.get("estimandProtocolId")
+        == "nhats-r13-r14-functional-survival-estimand-protocol-draft"
+        and protocol.get("variableConfirmationMatrixId")
+        == "nhats-r13-r14-variable-confirmation-matrix-draft"
+        and protocol.get("cohortFlowEndpointProtocolId")
+        == "nhats-r13-r14-cohort-flow-endpoint-protocol-draft"
+        and protocol.get("disclosureControlPolicyId")
+        == "nhats-r13-r14-disclosure-control-policy-draft"
+        and protocol.get("status") == "protocol-only-cannot-weight-yet"
+    )
+    add_check(
+        checks,
+        "nhats-survey-design-protocol-identity",
+        status_from_bool(protocol_exists and protocol_identity_ok),
+        "survey-design protocol must bind NHATS source, upstream readiness/file/estimand/variable/cohort/disclosure contracts and cannot-weight status",
+    )
+
+    decision = protocol.get("currentDecision")
+    decision_ok = (
+        isinstance(decision, dict)
+        and decision.get("surveyDesignReady") is False
+        and decision.get("weightedCountsAllowed") is False
+        and decision.get("weightedCurvesAllowed") is False
+        and decision.get("varianceEstimationAllowed") is False
+        and decision.get("populationInferenceAllowed") is False
+        and decision.get("publicExportAllowed") is False
+        and decision.get("calibrationAllowed") is False
+        and decision.get("individualPredictionAllowed") is False
+    )
+    add_check(
+        checks,
+        "nhats-survey-design-current-decision",
+        status_from_bool(protocol_exists and decision_ok),
+        "survey-design protocol must block weighted counts, weighted curves, variance estimation, population inference, public export, calibration and individual prediction",
+    )
+
+    components = protocol.get("requiredDesignComponents")
+    observed_component_ids: set[str] = set()
+    components_ok = True
+    if isinstance(components, list):
+        for component in components:
+            if not isinstance(component, dict):
+                components_ok = False
+                continue
+            component_id = component.get("id")
+            if isinstance(component_id, str):
+                observed_component_ids.add(component_id)
+            if component.get("status") != "missing" or component.get("blocksWeightedEstimate") is not True:
+                components_ok = False
+            if not str(component.get("minimumEvidence", "")).strip():
+                components_ok = False
+    missing_components = sorted(
+        REQUIRED_NHATS_SURVEY_DESIGN_COMPONENT_IDS - observed_component_ids
+    )
+    add_check(
+        checks,
+        "nhats-survey-design-component-coverage",
+        status_from_bool(protocol_exists and isinstance(components, list) and components_ok and not missing_components),
+        f"missing_component_ids={missing_components}",
+    )
+
+    candidate_fields = protocol.get("candidateFieldFamilies")
+    candidate_fields_ok = (
+        isinstance(candidate_fields, list)
+        and has_text(candidate_fields, "w#anfinwgt0")
+        and has_text(candidate_fields, "w#varunit")
+        and has_text(candidate_fields, "w#varstrat")
+    )
+    if isinstance(candidate_fields, list):
+        for candidate in candidate_fields:
+            if not isinstance(candidate, dict) or candidate.get("status") != "candidate-pattern-only":
+                candidate_fields_ok = False
+    add_check(
+        checks,
+        "nhats-survey-design-candidate-fields",
+        status_from_bool(protocol_exists and candidate_fields_ok),
+        "candidate field families must include weight, variance-unit and stratum patterns while staying candidate-pattern-only",
+    )
+
+    gates = protocol.get("readinessGates")
+    observed_gate_ids: set[str] = set()
+    gates_ok = True
+    if isinstance(gates, list):
+        for gate in gates:
+            if not isinstance(gate, dict):
+                gates_ok = False
+                continue
+            gate_id = gate.get("id")
+            if isinstance(gate_id, str):
+                observed_gate_ids.add(gate_id)
+            if gate.get("status") != "missing" or gate.get("blocksWeightedEstimate") is not True:
+                gates_ok = False
+            if not str(gate.get("requiredEvidence", "")).strip():
+                gates_ok = False
+    missing_gate_ids = sorted(REQUIRED_NHATS_SURVEY_DESIGN_GATE_IDS - observed_gate_ids)
+    add_check(
+        checks,
+        "nhats-survey-design-readiness-gates",
+        status_from_bool(protocol_exists and isinstance(gates, list) and gates_ok and not missing_gate_ids),
+        f"missing_gate_ids={missing_gate_ids}",
+    )
+
+    summary = protocol.get("gateSummary")
+    summary_ok = (
+        isinstance(summary, dict)
+        and summary.get("requiredGateCount") == len(REQUIRED_NHATS_SURVEY_DESIGN_GATE_IDS)
+        and summary.get("readyGateCount") == 0
+        and summary.get("missingGateCount") == len(REQUIRED_NHATS_SURVEY_DESIGN_GATE_IDS)
+        and summary.get("blockingGateCount") == len(REQUIRED_NHATS_SURVEY_DESIGN_GATE_IDS)
+    )
+    add_check(
+        checks,
+        "nhats-survey-design-gate-summary",
+        status_from_bool(protocol_exists and summary_ok),
+        "gate summary must keep every survey-design gate missing and blocking",
+    )
+
+    source_trace = protocol.get("sourceTrace")
+    source_trace_ok = (
+        isinstance(source_trace, list)
+        and all(isinstance(url, str) and url.startswith("https://") for url in source_trace)
+        and has_text(source_trace, "conditions-of-use")
+        and has_text(source_trace, "cross-year-search")
+        and has_text(source_trace, "nhats/13")
+        and has_text(source_trace, "nhats/14")
+        and has_text(source_trace, "NHATSUserGuideR14")
+        and has_text(source_trace, "NHATSTechnicalPaper55")
+    )
+    add_check(
+        checks,
+        "nhats-survey-design-source-trace",
+        status_from_bool(protocol_exists and source_trace_ok),
+        "survey-design protocol source trace must include NHATS conditions, Colectica, R13/R14 files, User Guide and Technical Paper 55",
+    )
+
+    prohibited_ok = (
+        has_text(protocol.get("prohibitedActions", []), "weighted NHATS counts")
+        and has_text(protocol.get("prohibitedActions", []), "weighted curves")
+        and has_text(protocol.get("prohibitedActions", []), "population-inference")
+        and has_text(protocol.get("prohibitedActions", []), "candidate field patterns")
+        and has_text(protocol.get("prohibitedActions", []), "individual death dates")
+    )
+    add_check(
+        checks,
+        "nhats-survey-design-prohibited-actions",
+        status_from_bool(protocol_exists and prohibited_ok),
+        "survey-design protocol must prohibit premature weighted estimates, population inference, candidate-field overuse and individual outputs",
+    )
+
+    cases_schema_ok = (
+        test_cases.get("schemaVersion")
+        == "human-infra.life-path-nhats-survey-design-test-cases.v1"
+        and test_cases.get("sourceId") == "nhats"
+        and test_cases.get("protocolId") == "nhats-r13-r14-survey-design-protocol-draft"
+        and test_cases.get("status") == "synthetic-only-no-real-nhats-data"
+    )
+    add_check(
+        checks,
+        "nhats-survey-design-test-cases-schema",
+        status_from_bool(test_cases_exists and cases_schema_ok),
+        "survey-design test cases must bind NHATS source and synthetic-only protocol status",
+    )
+
+    boundary = test_cases.get("currentBoundary")
+    boundary_ok = (
+        isinstance(boundary, dict)
+        and boundary.get("containsRealNhatsData") is False
+        and boundary.get("containsSyntheticOnly") is True
+        and boundary.get("surveyDesignProofOnly") is True
+        and boundary.get("calibrationAllowed") is False
+        and boundary.get("individualPredictionAllowed") is False
+    )
+    add_check(
+        checks,
+        "nhats-survey-design-test-cases-boundary",
+        status_from_bool(test_cases_exists and boundary_ok),
+        "survey-design test cases must be synthetic-only and prohibit calibration plus individual prediction",
+    )
+
+    cases = test_cases.get("cases")
+    observed_case_ids: set[str] = set()
+    expected_mix_ok = False
+    if isinstance(cases, list):
+        expected_decisions = {
+            str(case.get("expectedDecision"))
+            for case in cases
+            if isinstance(case, dict)
+        }
+        expected_mix_ok = {
+            "allow-weighted-diagnostics",
+            "block-weighted-estimate",
+        }.issubset(expected_decisions)
+        for case in cases:
+            if isinstance(case, dict) and isinstance(case.get("id"), str):
+                observed_case_ids.add(case["id"])
+    missing_case_ids = sorted(REQUIRED_NHATS_SURVEY_DESIGN_CASE_IDS - observed_case_ids)
+    add_check(
+        checks,
+        "nhats-survey-design-test-case-coverage",
+        status_from_bool(test_cases_exists and isinstance(cases, list) and not missing_case_ids),
+        f"missing_case_ids={missing_case_ids}",
+    )
+    add_check(
+        checks,
+        "nhats-survey-design-test-case-decision-mix",
+        status_from_bool(test_cases_exists and expected_mix_ok),
+        "synthetic survey-design cases must include both allowed diagnostics and blocked estimate examples",
+    )
+
+    validation_schema_ok = (
+        validation.get("schemaVersion")
+        == "human-infra.life-path-nhats-survey-design-validation.v1"
+    )
+    add_check(
+        checks,
+        "nhats-survey-design-validation-schema",
+        status_from_bool(validation_exists and validation_schema_ok),
+        f"schemaVersion={validation.get('schemaVersion')!r}",
+    )
+
+    validation_paths_ok = (
+        validation.get("protocolPath") == str(protocol_path.relative_to(REPO_ROOT))
+        and validation.get("protocolSha256") == sha256_file(protocol_path)
+        and validation.get("testCasesPath") == str(test_cases_path.relative_to(REPO_ROOT))
+        and validation.get("testCasesSha256") == sha256_file(test_cases_path)
+    )
+    add_check(
+        checks,
+        "nhats-survey-design-validation-source-hashes",
+        status_from_bool(validation_exists and validation_paths_ok),
+        "survey-design validation report must point back to current protocol and test-case hashes",
+    )
+
+    validation_summary = validation.get("summary")
+    validation_summary_ok = (
+        validation.get("overallStatus") == "PASS"
+        and isinstance(validation_summary, dict)
+        and validation_summary.get("caseCount", 0) >= len(REQUIRED_NHATS_SURVEY_DESIGN_CASE_IDS)
+        and validation_summary.get("fail") == 0
+        and validation_summary.get("allowedCount", 0) > 0
+        and validation_summary.get("blockedCount", 0) > 0
+        and validation_summary.get("protocolIssueCount") == 0
+        and validation_summary.get("boundaryIssueCount") == 0
+    )
+    add_check(
+        checks,
+        "nhats-survey-design-validation-summary",
+        status_from_bool(validation_exists and validation_summary_ok),
+        "survey-design validation report must pass every synthetic case and include both allowed and blocked results",
+    )
+
+    validation_cases = validation.get("cases")
+    validation_cases_ok = isinstance(validation_cases, list)
+    validation_case_ids: set[str] = set()
+    if isinstance(validation_cases, list):
+        for case in validation_cases:
+            if not isinstance(case, dict):
+                validation_cases_ok = False
+                continue
+            case_id = case.get("id")
+            if isinstance(case_id, str):
+                validation_case_ids.add(case_id)
+            if case.get("status") != "PASS":
+                validation_cases_ok = False
+            if case.get("observedDecision") != case.get("expectedDecision"):
+                validation_cases_ok = False
+    missing_validation_case_ids = sorted(
+        REQUIRED_NHATS_SURVEY_DESIGN_CASE_IDS - validation_case_ids
+    )
+    add_check(
+        checks,
+        "nhats-survey-design-validation-case-results",
+        status_from_bool(validation_exists and validation_cases_ok and not missing_validation_case_ids),
+        f"missing_validation_case_ids={missing_validation_case_ids}",
+    )
+
+    validation_boundary = validation.get("boundary")
+    validation_boundary_ok = (
+        isinstance(validation_boundary, dict)
+        and validation_boundary.get("containsRealNhatsData") is False
+        and validation_boundary.get("containsSyntheticOnly") is True
+        and validation_boundary.get("surveyDesignProofOnly") is True
+        and validation_boundary.get("calibrationAllowed") is False
+        and validation_boundary.get("individualPredictionAllowed") is False
+    )
+    add_check(
+        checks,
+        "nhats-survey-design-validation-boundary",
+        status_from_bool(validation_exists and validation_boundary_ok),
+        "survey-design validation report must preserve synthetic-only, no-real-data, no-calibration and no-individual-prediction boundaries",
+    )
+
+    return {
+        "protocolPath": str(protocol_path.relative_to(REPO_ROOT)),
+        "protocolSha256": sha256_file(protocol_path) if protocol_exists else None,
+        "testCasesPath": str(test_cases_path.relative_to(REPO_ROOT)),
+        "testCasesSha256": sha256_file(test_cases_path) if test_cases_exists else None,
+        "validationPath": str(validation_path.relative_to(REPO_ROOT)),
+        "validationSha256": sha256_file(validation_path) if validation_exists else None,
+        "status": "PASS" if summarize_checks(checks)["fail"] == 0 else "FAIL",
+        "checks": checks,
+        "summary": summarize_checks(checks),
+    }
+
+
 def audit_sensitivity_analysis(
     sensitivity_path: Path,
     model_data: dict[str, Any],
@@ -3057,6 +3460,9 @@ def audit_model(
     nhats_disclosure_policy_path: Path,
     nhats_disclosure_test_cases_path: Path,
     nhats_disclosure_validation_path: Path,
+    nhats_survey_design_protocol_path: Path,
+    nhats_survey_design_test_cases_path: Path,
+    nhats_survey_design_validation_path: Path,
 ) -> dict[str, Any]:
     checks: list[dict[str, Any]] = []
     schema_version = data.get("schemaVersion")
@@ -3253,6 +3659,11 @@ def audit_model(
         nhats_disclosure_test_cases_path,
         nhats_disclosure_validation_path,
     )
+    nhats_survey_design_audit = audit_nhats_survey_design(
+        nhats_survey_design_protocol_path,
+        nhats_survey_design_test_cases_path,
+        nhats_survey_design_validation_path,
+    )
     sensitivity_audit = audit_sensitivity_analysis(sensitivity_path, data, model_path)
     checks.extend(readiness_audit["checks"])
     checks.extend(data_sources_audit["checks"])
@@ -3265,6 +3676,7 @@ def audit_model(
     checks.extend(nhats_variable_confirmation_matrix_audit["checks"])
     checks.extend(nhats_cohort_flow_endpoint_protocol_audit["checks"])
     checks.extend(nhats_disclosure_control_audit["checks"])
+    checks.extend(nhats_survey_design_audit["checks"])
     checks.extend(sensitivity_audit["checks"])
     failed = [check for check in checks if check["status"] == "FAIL"]
     overall = "PASS" if not failed else "FAIL"
@@ -3288,6 +3700,7 @@ def audit_model(
         "nhatsVariableConfirmationMatrix": nhats_variable_confirmation_matrix_audit,
         "nhatsCohortFlowEndpointProtocol": nhats_cohort_flow_endpoint_protocol_audit,
         "nhatsDisclosureControl": nhats_disclosure_control_audit,
+        "nhatsSurveyDesign": nhats_survey_design_audit,
         "sensitivityAnalysis": sensitivity_audit,
     }
 
@@ -3397,6 +3810,17 @@ def render_markdown(audit: dict[str, Any]) -> str:
             f"- Disclosure validation status: `{audit['nhatsDisclosureControl']['status']}`",
             "- Boundary: disclosure-control validation proves only that synthetic output envelopes obey aggregate-only, n<5 suppression, row-level blocking, public-AI blocking and forbidden-output rules; it does not authorize real NHATS extraction, public export, calibration, validation or individual prediction.",
             "",
+            "## NHATS Survey Design Validation",
+            "",
+            f"- Survey-design protocol path: `{audit['nhatsSurveyDesign']['protocolPath']}`",
+            f"- Survey-design protocol SHA-256: `{audit['nhatsSurveyDesign']['protocolSha256']}`",
+            f"- Survey-design test cases path: `{audit['nhatsSurveyDesign']['testCasesPath']}`",
+            f"- Survey-design test cases SHA-256: `{audit['nhatsSurveyDesign']['testCasesSha256']}`",
+            f"- Survey-design validation path: `{audit['nhatsSurveyDesign']['validationPath']}`",
+            f"- Survey-design validation SHA-256: `{audit['nhatsSurveyDesign']['validationSha256']}`",
+            f"- Survey-design validation status: `{audit['nhatsSurveyDesign']['status']}`",
+            "- Boundary: survey-design validation proves only that synthetic design-plan envelopes enforce weights, strata, PSU/variance-unit, variance-method, route-map and disclosure prerequisites; it does not authorize real NHATS weighted estimates, population inference, calibration, validation or individual prediction.",
+            "",
             "## Sensitivity Analysis",
             "",
             f"- Sensitivity path: `{audit['sensitivityAnalysis']['path']}`",
@@ -3485,6 +3909,21 @@ def parse_args() -> argparse.Namespace:
         type=Path,
         default=DEFAULT_NHATS_DISCLOSURE_VALIDATION,
     )
+    parser.add_argument(
+        "--nhats-survey-design-protocol",
+        type=Path,
+        default=DEFAULT_NHATS_SURVEY_DESIGN_PROTOCOL,
+    )
+    parser.add_argument(
+        "--nhats-survey-design-test-cases",
+        type=Path,
+        default=DEFAULT_NHATS_SURVEY_DESIGN_TEST_CASES,
+    )
+    parser.add_argument(
+        "--nhats-survey-design-validation",
+        type=Path,
+        default=DEFAULT_NHATS_SURVEY_DESIGN_VALIDATION,
+    )
     parser.add_argument("--json-out", type=Path, default=DEFAULT_JSON_OUT)
     parser.add_argument("--md-out", type=Path, default=DEFAULT_MD_OUT)
     return parser.parse_args()
@@ -3513,6 +3952,9 @@ def main() -> int:
     nhats_disclosure_policy_path = args.nhats_disclosure_policy.resolve()
     nhats_disclosure_test_cases_path = args.nhats_disclosure_test_cases.resolve()
     nhats_disclosure_validation_path = args.nhats_disclosure_validation.resolve()
+    nhats_survey_design_protocol_path = args.nhats_survey_design_protocol.resolve()
+    nhats_survey_design_test_cases_path = args.nhats_survey_design_test_cases.resolve()
+    nhats_survey_design_validation_path = args.nhats_survey_design_validation.resolve()
     audit = audit_model(
         load_json(model_path),
         model_path,
@@ -3532,6 +3974,9 @@ def main() -> int:
         nhats_disclosure_policy_path,
         nhats_disclosure_test_cases_path,
         nhats_disclosure_validation_path,
+        nhats_survey_design_protocol_path,
+        nhats_survey_design_test_cases_path,
+        nhats_survey_design_validation_path,
     )
     args.json_out.parent.mkdir(parents=True, exist_ok=True)
     with args.json_out.open("w", encoding="utf-8") as handle:

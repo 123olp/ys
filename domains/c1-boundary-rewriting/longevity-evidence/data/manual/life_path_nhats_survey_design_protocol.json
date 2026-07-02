@@ -1,0 +1,227 @@
+{
+  "schemaVersion": "human-infra.life-path-nhats-survey-design-protocol.v1",
+  "sourceId": "nhats",
+  "sourceName": "National Health and Aging Trends Study",
+  "protocolId": "nhats-r13-r14-survey-design-protocol-draft",
+  "acquisitionReadinessId": "nhats-acquisition-readiness-2026-07-02",
+  "fileTierTableId": "nhats-r13-r14-file-tier-table-draft",
+  "estimandProtocolId": "nhats-r13-r14-functional-survival-estimand-protocol-draft",
+  "variableConfirmationMatrixId": "nhats-r13-r14-variable-confirmation-matrix-draft",
+  "cohortFlowEndpointProtocolId": "nhats-r13-r14-cohort-flow-endpoint-protocol-draft",
+  "disclosureControlPolicyId": "nhats-r13-r14-disclosure-control-policy-draft",
+  "reviewDate": "2026-07-02",
+  "reviewer": "tradecatlabs",
+  "status": "protocol-only-cannot-weight-yet",
+  "protocolPurpose": "Define the minimum survey-design gate required before any NHATS R13/R14 cohort-flow, functional-survival, missingness or model-calibration output can be interpreted as a design-aware weighted estimate rather than an unweighted internal diagnostic.",
+  "currentDecision": {
+    "surveyDesignReady": false,
+    "weightedCountsAllowed": false,
+    "weightedCurvesAllowed": false,
+    "varianceEstimationAllowed": false,
+    "populationInferenceAllowed": false,
+    "publicExportAllowed": false,
+    "calibrationAllowed": false,
+    "individualPredictionAllowed": false,
+    "reason": "The survey-design protocol is registered, but exact round-specific weight, strata, PSU/variance-unit, variance method, eligible sample, missingness route map, disclosure validation and weighted-estimator script are not complete. Only synthetic validator tests are allowed."
+  },
+  "requiredDesignComponents": [
+    {
+      "id": "analysis_weight",
+      "label": "Round-specific analysis weight",
+      "minimumEvidence": "Exact NHATS R13/R14 weight variable selected from Colectica/codebook and matched to the intended target population and analysis file.",
+      "status": "missing",
+      "blocksWeightedEstimate": true
+    },
+    {
+      "id": "strata",
+      "label": "Stratum field",
+      "minimumEvidence": "Exact stratum or variance-stratum field confirmed for the selected public-use file and round.",
+      "status": "missing",
+      "blocksWeightedEstimate": true
+    },
+    {
+      "id": "psu_or_cluster",
+      "label": "PSU / variance unit / cluster field",
+      "minimumEvidence": "Exact PSU, variance unit or cluster field confirmed for the selected public-use file and round.",
+      "status": "missing",
+      "blocksWeightedEstimate": true
+    },
+    {
+      "id": "variance_method",
+      "label": "Variance estimation method",
+      "minimumEvidence": "Taylor linearization, replicate weights or another survey-package-compatible method selected and documented with NHATS method source.",
+      "status": "missing",
+      "blocksWeightedEstimate": true
+    },
+    {
+      "id": "domain_subpopulation_rule",
+      "label": "Domain / subpopulation rule",
+      "minimumEvidence": "Eligible R13/R14 subpopulation rule defined without dropping design information in a way that invalidates variance estimation.",
+      "status": "missing",
+      "blocksWeightedEstimate": true
+    },
+    {
+      "id": "missingness_and_route_rule",
+      "label": "Missingness and interview-route rule",
+      "minimumEvidence": "Death, proxy interview, residential care, nonresponse and not-classifiable routes mapped before any weighted rate, curve or missingness table.",
+      "status": "missing",
+      "blocksWeightedEstimate": true
+    },
+    {
+      "id": "round_linkage_rule",
+      "label": "R13/R14 linkage rule",
+      "minimumEvidence": "Baseline R13 sample-person records and R14 follow-up/endpoint routes linked through confirmed join keys and file tiers.",
+      "status": "missing",
+      "blocksWeightedEstimate": true
+    },
+    {
+      "id": "finite_population_boundary",
+      "label": "Finite population and inference boundary",
+      "minimumEvidence": "Target population, finite population interpretation and design-aware uncertainty boundary documented before population inference.",
+      "status": "missing",
+      "blocksWeightedEstimate": true
+    }
+  ],
+  "candidateFieldFamilies": [
+    {
+      "id": "final_full_sample_weight",
+      "candidatePattern": "w#anfinwgt0",
+      "role": "candidate analysis weight family",
+      "status": "candidate-pattern-only",
+      "sourceBoundary": "Candidate pattern from NHATS sample-design documentation and local variable dictionary; not yet round-confirmed for extraction."
+    },
+    {
+      "id": "variance_unit",
+      "candidatePattern": "w#varunit",
+      "role": "candidate PSU / variance-unit family",
+      "status": "candidate-pattern-only",
+      "sourceBoundary": "Candidate pattern from NHATS sample-design documentation and local variable dictionary; not yet round-confirmed for extraction."
+    },
+    {
+      "id": "variance_stratum",
+      "candidatePattern": "w#varstrat",
+      "role": "candidate stratum family",
+      "status": "candidate-pattern-only",
+      "sourceBoundary": "Candidate pattern from NHATS sample-design documentation and local variable dictionary; not yet round-confirmed for extraction."
+    },
+    {
+      "id": "replicate_weight_family",
+      "candidatePattern": "w#repwgt*",
+      "role": "candidate replicate-weight family if present and required by selected variance method",
+      "status": "candidate-pattern-only",
+      "sourceBoundary": "Candidate family only; no replicate-weight estimator is selected or implemented."
+    }
+  ],
+  "estimatorPlan": {
+    "allowedBeforeDesignReady": [
+      "synthetic_validator_tests",
+      "unweighted_internal_route_count_diagnostics_after_governed_access",
+      "schema_and_contract_audit"
+    ],
+    "blockedBeforeDesignReady": [
+      "weighted_cohort_flow_counts",
+      "weighted_endpoint_route_counts",
+      "weighted_missingness_rates",
+      "weighted_functional_survival_curves",
+      "design_based_confidence_intervals",
+      "population_inference",
+      "model_calibration",
+      "external_validation",
+      "public_export"
+    ],
+    "minimumEstimatorRequirements": [
+      "confirmed analysis weight",
+      "confirmed strata",
+      "confirmed PSU or variance unit",
+      "documented variance method",
+      "domain/subpopulation rule",
+      "missingness and interview-route map",
+      "disclosure-control validation",
+      "reviewed weighted-estimator script"
+    ]
+  },
+  "readinessGates": [
+    {
+      "id": "technical-paper-confirmed",
+      "status": "missing",
+      "requiredEvidence": "Technical Paper 55 / sample-design documentation reviewed for the selected round, file and variance method.",
+      "blocksWeightedEstimate": true
+    },
+    {
+      "id": "colectica-design-fields-confirmed",
+      "status": "missing",
+      "requiredEvidence": "Exact design variables confirmed through NHATS Cross-Year Search / Colectica or official codebooks.",
+      "blocksWeightedEstimate": true
+    },
+    {
+      "id": "round-specific-weight-selected",
+      "status": "missing",
+      "requiredEvidence": "R13/R14 analysis weight selected for the target population and file family.",
+      "blocksWeightedEstimate": true
+    },
+    {
+      "id": "strata-psu-fields-confirmed",
+      "status": "missing",
+      "requiredEvidence": "Strata and PSU/variance-unit fields confirmed and not inferred from prose alone.",
+      "blocksWeightedEstimate": true
+    },
+    {
+      "id": "variance-method-selected",
+      "status": "missing",
+      "requiredEvidence": "Taylor linearization, replicate-weight or equivalent survey-design variance method selected.",
+      "blocksWeightedEstimate": true
+    },
+    {
+      "id": "domain-subpopulation-rule-selected",
+      "status": "missing",
+      "requiredEvidence": "Domain/subpopulation handling rule documented before weighted estimation.",
+      "blocksWeightedEstimate": true
+    },
+    {
+      "id": "missingness-route-map-ready",
+      "status": "missing",
+      "requiredEvidence": "Endpoint, death, proxy, facility, nonresponse and not-classifiable routes mapped.",
+      "blocksWeightedEstimate": true
+    },
+    {
+      "id": "disclosure-validation-passed",
+      "status": "missing",
+      "requiredEvidence": "Disclosure-control validator passed for intended aggregate output envelope.",
+      "blocksWeightedEstimate": true
+    },
+    {
+      "id": "weighted-estimator-script-reviewed",
+      "status": "missing",
+      "requiredEvidence": "Weighted estimator script reviewed against survey-design, disclosure and no-individual-prediction gates.",
+      "blocksWeightedEstimate": true
+    }
+  ],
+  "gateSummary": {
+    "requiredGateCount": 9,
+    "readyGateCount": 0,
+    "missingGateCount": 9,
+    "blockingGateCount": 9
+  },
+  "sourceTrace": [
+    "https://www.nhats.org/conditions-of-use",
+    "https://www.nhats.org/data-access/cross-year-search",
+    "https://nhats.org/data-access/nhats/13",
+    "https://nhats.org/data-access/nhats/14",
+    "https://nhats.org/sites/default/files/public-documentation/NHATSUserGuideR14_02102026.pdf",
+    "https://nhats.org/sites/default/files/public-documentation/NHATSTechnicalPaper55_09042025.pdf"
+  ],
+  "prohibitedActions": [
+    "Do not report weighted NHATS counts before the survey-design protocol is ready.",
+    "Do not report weighted curves or design-based confidence intervals before weights, strata, PSU/variance unit and variance method are confirmed.",
+    "Do not make population-inference, calibration, validation or treatment-effect claims from unweighted internal diagnostics.",
+    "Do not use candidate field patterns as confirmed variable names.",
+    "Do not export row-level NHATS records or upload NHATS data to public AI systems.",
+    "Do not output individual death dates, personal medical advice or personal longevity rankings."
+  ],
+  "nextWork": [
+    "Confirm exact R13/R14 design variables through Colectica/codebooks before any weighted estimate.",
+    "Select a variance method and document whether it uses Taylor linearization, replicate weights or another survey-package-compatible approach.",
+    "Bind the survey-design gate to missingness, endpoint routing and disclosure-control validation.",
+    "Keep the validator synthetic-only until a governed workspace and reviewed estimator script exist."
+  ]
+}
