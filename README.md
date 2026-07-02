@@ -31,6 +31,8 @@ C2 长尾第四批晋升队列见 [C2 Longtail Fourth Batch Promotion Queue](doc
 
 C2 长尾第四批 manual/fulltext reviewed artifacts 见 [C2 Longtail Fourth Batch Manual Fulltext Reviewed Card Artifact Register](docs/reference/human-infra-c2-longtail-fourth-batch-manual-fulltext-reviewed-card-artifact-register.json)，它只把 3 个 eligible manual/fulltext fresh-review rows 晋升为 18 个 bounded reviewed artifacts，并保留 5 个 duplicate、route-only、manual-access 或 context-only blocked rows；模型准入仍阻塞。
 
+C2 长尾第五批晋升队列见 [C2 Longtail Fifth Batch Promotion Queue](docs/reference/human-infra-c2-longtail-fifth-batch-promotion-queue.json)，它选择 12 个仍未覆盖的细胞质量控制、细胞器通信、分子运输、膜脂韧性、清除和屏障底座 C2 域，绑定 24 个 web/API-checked 候选来源，作为端粒、翻译保真、溶酶体、ER/UPR、Golgi、过氧化物酶体、细胞器接触位点、细胞骨架、铁死亡、核质运输、glymphatic 清除和肠屏障路径的 source-specific 深读入口；它不完成 Source Card、fresh review、reviewed artifacts 或模型准入。
+
 边界：Human Infra 不是医疗建议，不输出个体死亡日期，不证明具体技术已经实现有效永生；当前只把主体持续性、生命路径和未来选择权组织成可审查的研究框架。
 
 | 问题类型 | 典型问题 | Human Infra 判断 |
@@ -200,6 +202,7 @@ flowchart LR
 | 查看 C2 长尾第四批 manual/fulltext extraction 账本 | [docs/reference/human-infra-c2-longtail-fourth-batch-manual-fulltext-extraction-register.json](docs/reference/human-infra-c2-longtail-fourth-batch-manual-fulltext-extraction-register.json) | 8 个 source-resolution 候选已完成有界全文/官方页路线抽取；3 行可进入 bounded fresh review，5 行保持 duplicate、route-only 或 manual-access 阻塞，模型准入仍阻塞 |
 | 查看 C2 长尾第四批 manual/fulltext fresh review 判定 | [docs/reference/human-infra-c2-longtail-fourth-batch-manual-fulltext-fresh-review-verdict-register.json](docs/reference/human-infra-c2-longtail-fourth-batch-manual-fulltext-fresh-review-verdict-register.json) | 8/8 个 manual/fulltext extraction 行已完成 independent fresh review；3 行可进入 bounded reviewed artifact prep，5 行继续 duplicate、route-only、manual-access 或 context-only 阻塞，模型准入仍阻塞 |
 | 查看 C2 长尾第四批 manual/fulltext reviewed artifacts | [docs/reference/human-infra-c2-longtail-fourth-batch-manual-fulltext-reviewed-card-artifact-register.json](docs/reference/human-infra-c2-longtail-fourth-batch-manual-fulltext-reviewed-card-artifact-register.json) | 3 个 eligible manual/fulltext fresh-review rows 已晋升为 18 个 Source/变量/endpoint/uncertainty/transfer/downgrade artifacts；5 个 blocked rows 继续保留，模型准入仍阻塞 |
+| 查看 C2 长尾第五批晋升队列 | [docs/reference/human-infra-c2-longtail-fifth-batch-promotion-queue.json](docs/reference/human-infra-c2-longtail-fifth-batch-promotion-queue.json) | 12 个细胞质量控制、细胞器通信、分子运输、膜脂韧性、清除和屏障底座 C2 域已进入第五批 source-specific 深读候选，绑定 24 个 web/API-checked 候选来源；仍不完成 Source Card、fresh review、reviewed artifacts 或模型准入 |
 | 查看域-来源深读队列 | [docs/reference/human-infra-domain-source-specific-extraction-queue.json](docs/reference/human-infra-domain-source-specific-extraction-queue.json) | 把 26 个域字段行派生为 81 个 domain-source 深读任务；队列不等于证据完成，只定义下一步精读阻塞项 |
 | 查看域-来源精读完成寄存器 | [docs/reference/human-infra-domain-source-specific-extraction-register.json](docs/reference/human-infra-domain-source-specific-extraction-register.json) | 当前完成 81/81 个 domain-source 精读字段行，覆盖方法锚点、生物机制、价值框架、认知扩展、脑保存、数字孪生、未来等待、AI 治理和筛查偏倚边界；仍禁止校准预测和个体建议 |
 | 查看域-来源卡片晋升队列 | [docs/reference/human-infra-domain-source-card-promotion-queue.json](docs/reference/human-infra-domain-source-card-promotion-queue.json) | 把 81 个完成字段行派生为 fresh review、Source Card、变量卡、endpoint 卡、uncertainty 卡、transfer-boundary 卡和 downgrade check 晋升任务；仍禁止模型准入 |

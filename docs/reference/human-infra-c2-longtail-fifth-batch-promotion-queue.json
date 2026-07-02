@@ -1,0 +1,1025 @@
+{
+  "schemaVersion": "human-infra.c2-longtail-fifth-batch-promotion-queue.v1",
+  "queueId": "human-infra-c2-longtail-fifth-batch-promotion-queue",
+  "status": "active-fifth-batch-queue-model-blocked",
+  "purpose": "Select the fifth C2 long-tail batch for source-specific review, prioritizing cellular quality-control, organelle communication, molecular transport, membrane-resilience and clearance/barrier substrates that determine whether the biological source body can keep functioning over long time horizons.",
+  "sourceOfTruth": {
+    "c2LongtailCoverageRegister": "docs/reference/human-infra-c2-longtail-coverage-register.json",
+    "firstBatchPromotionQueue": "docs/reference/human-infra-c2-longtail-first-batch-promotion-queue.json",
+    "secondBatchPromotionQueue": "docs/reference/human-infra-c2-longtail-second-batch-promotion-queue.json",
+    "thirdBatchPromotionQueue": "docs/reference/human-infra-c2-longtail-third-batch-promotion-queue.json",
+    "fourthBatchPromotionQueue": "docs/reference/human-infra-c2-longtail-fourth-batch-promotion-queue.json",
+    "domainClassification": "domains/_possibility-space-control/classification.tsv",
+    "sourceCardSystem": "docs/reference/source-card-system.md",
+    "maturityGapRegister": "docs/reference/human-infra-maturity-gap-register.json",
+    "maturityRoadmap": "docs/reference/human-infra-maturity-roadmap.md"
+  },
+  "scope": {
+    "batchId": "C2-LT-B5",
+    "batchDomainCount": 12,
+    "selectionRule": "Prioritize still-uncovered C2 domains where cellular quality control, organelle communication, molecular transport, membrane resilience, clearance and barrier functions control the long-horizon possibility of continued biological existence. This is importance/long-horizon/fundamentality oriented, not feasibility, novelty or clinical hype oriented.",
+    "requiredArtifactClasses": [
+      "domain-claim-evidence-row",
+      "domain-source-card-field-extraction",
+      "domain-source-specific-deep-read",
+      "source-context-local-review",
+      "independent-fresh-review-verdict",
+      "reviewed-source-card",
+      "variable-card",
+      "endpoint-card",
+      "uncertainty-card",
+      "transfer-boundary-card",
+      "downgrade-check"
+    ],
+    "nonClaims": [
+      "This queue does not complete Source Cards.",
+      "This queue does not complete independent fresh review.",
+      "This queue does not upgrade any domain claim.",
+      "This queue does not admit any domain into calibrated prediction.",
+      "This queue does not provide medical, clinical, individual, or intervention-ranking advice.",
+      "This queue does not mark C2-LT-B1 corrected blocked rows as resolved.",
+      "This queue does not mark the C2-LT-B2 downgrade-before-fill row as resolved.",
+      "This queue does not mark C2-LT-B3 issue, corrected, duplicate, downgrade or model-blocked rows as resolved.",
+      "This queue does not mark C2-LT-B4 duplicate, route-only, manual-access, context-only or model-blocked rows as resolved."
+    ]
+  },
+  "blockedUses": [
+    "calibrated-prediction",
+    "individual-advice",
+    "individual-death-date-output",
+    "intervention-ranking",
+    "clinical-validity-claim",
+    "domain-claim-upgrade"
+  ],
+  "batchRows": [
+    {
+      "batchId": "C2-LT-B5",
+      "priorityRank": 1,
+      "domainId": "telomere-maintenance",
+      "triageBucket": "cellular-molecular-maintenance",
+      "localDomainPath": "domains/c2-source-maintenance/telomere-maintenance",
+      "selectionReason": "细胞复制上限、端粒损耗和端粒酶调控决定组织更新与癌症风险的边界，是源体维护中连接衰老、再生和肿瘤化的底层变量。",
+      "claimSeed": "端粒长度、端粒保护、端粒酶活性和端粒相关疾病会改变复制衰老、干细胞耗竭、基因组稳定性、癌前风险和长期组织维护能力。",
+      "variableSeed": [
+        "telomere-length-distribution",
+        "telomerase-activity",
+        "replicative-senescence-threshold",
+        "telomere-dysfunction-induced-dna-damage",
+        "cancer-risk-coupling"
+      ],
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB5-SRC-01-1",
+          "title": "Disorders of Telomere Length.",
+          "url": "https://europepmc.org/article/MED/42334294",
+          "evidenceRole": "clinical-review-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03"
+        },
+        {
+          "sourceRefId": "C2LTB5-SRC-01-2",
+          "title": "Telomeres: History, Health and Hallmarks of Aging.",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8081271/",
+          "evidenceRole": "review-mechanism-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03"
+        }
+      ],
+      "requiredArtifactClasses": [
+        "domain-claim-evidence-row",
+        "domain-source-card-field-extraction",
+        "domain-source-specific-deep-read",
+        "source-context-local-review",
+        "independent-fresh-review-verdict",
+        "reviewed-source-card",
+        "variable-card",
+        "endpoint-card",
+        "uncertainty-card",
+        "transfer-boundary-card",
+        "downgrade-check"
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-c2-longtail-fifth-batch-source-card-promotion",
+      "nextAction": "Create the domain Claim-Evidence row, then perform Source Card field extraction, source-specific deep read, local source-context review and independent fresh review before any artifact promotion or model admission."
+    },
+    {
+      "batchId": "C2-LT-B5",
+      "priorityRank": 2,
+      "domainId": "ribosome-translation-fidelity-proteome-integrity-continuity",
+      "triageBucket": "cellular-molecular-maintenance",
+      "localDomainPath": "domains/c2-source-maintenance/ribosome-translation-fidelity-proteome-integrity-continuity",
+      "selectionReason": "翻译保真和蛋白质合成错误率决定蛋白质组质量，是细胞从信息到功能执行的基础接口，错误会通过蛋白稳态、应激和组织功能放大。",
+      "claimSeed": "核糖体翻译速度、错误率、质量控制和应激适应会改变蛋白质组完整性、细胞功能、衰老负担和长期恢复能力。",
+      "variableSeed": [
+        "translation-fidelity",
+        "ribosomal-stress",
+        "protein-misfolding-load",
+        "proteostasis-coupling",
+        "longevity-linked-synthesis-rate"
+      ],
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB5-SRC-02-1",
+          "title": "Translational fidelity and longevity are genetically linked.",
+          "url": "https://europepmc.org/article/MED/40804252",
+          "evidenceRole": "mechanistic-longevity-study-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03"
+        },
+        {
+          "sourceRefId": "C2LTB5-SRC-02-2",
+          "title": "Translational Fidelity Decline in the Aging Oocyte and Embryo Development.",
+          "url": "https://europepmc.org/article/MED/41898476",
+          "evidenceRole": "aging-translation-review-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03"
+        }
+      ],
+      "requiredArtifactClasses": [
+        "domain-claim-evidence-row",
+        "domain-source-card-field-extraction",
+        "domain-source-specific-deep-read",
+        "source-context-local-review",
+        "independent-fresh-review-verdict",
+        "reviewed-source-card",
+        "variable-card",
+        "endpoint-card",
+        "uncertainty-card",
+        "transfer-boundary-card",
+        "downgrade-check"
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-c2-longtail-fifth-batch-source-card-promotion",
+      "nextAction": "Create the domain Claim-Evidence row, then perform Source Card field extraction, source-specific deep read, local source-context review and independent fresh review before any artifact promotion or model admission."
+    },
+    {
+      "batchId": "C2-LT-B5",
+      "priorityRank": 3,
+      "domainId": "lysosomal-flux-lipofuscin-clearance-continuity",
+      "triageBucket": "cellular-molecular-maintenance",
+      "localDomainPath": "domains/c2-source-maintenance/lysosomal-flux-lipofuscin-clearance-continuity",
+      "selectionReason": "溶酶体通量和脂褐素负担决定细胞终端清除能力，清除失败会让损伤、聚集物和细胞器废物在长时间尺度上累积。",
+      "claimSeed": "溶酶体酸化、自噬通量、脂褐素积累和内膜系统清除效率会影响神经退行、组织修复、炎症和长期细胞质量控制。",
+      "variableSeed": [
+        "lysosomal-acidification",
+        "autophagic-flux",
+        "lipofuscin-burden",
+        "aggregate-clearance-capacity",
+        "endomembrane-failure-signal"
+      ],
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB5-SRC-03-1",
+          "title": "Lipofuscin accumulation in aging and neurodegeneration: a potential timebomb overlooked in Alzheimer's disease.",
+          "url": "https://europepmc.org/article/MED/41387918",
+          "evidenceRole": "aging-neurodegeneration-review-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03"
+        },
+        {
+          "sourceRefId": "C2LTB5-SRC-03-2",
+          "title": "Failure of lysosomal acidification and endomembrane network in neurodegeneration.",
+          "url": "https://europepmc.org/article/MED/41254240",
+          "evidenceRole": "lysosomal-mechanism-review-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03"
+        }
+      ],
+      "requiredArtifactClasses": [
+        "domain-claim-evidence-row",
+        "domain-source-card-field-extraction",
+        "domain-source-specific-deep-read",
+        "source-context-local-review",
+        "independent-fresh-review-verdict",
+        "reviewed-source-card",
+        "variable-card",
+        "endpoint-card",
+        "uncertainty-card",
+        "transfer-boundary-card",
+        "downgrade-check"
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-c2-longtail-fifth-batch-source-card-promotion",
+      "nextAction": "Create the domain Claim-Evidence row, then perform Source Card field extraction, source-specific deep read, local source-context review and independent fresh review before any artifact promotion or model admission."
+    },
+    {
+      "batchId": "C2-LT-B5",
+      "priorityRank": 4,
+      "domainId": "endoplasmic-reticulum-stress-upr-proteostasis-continuity",
+      "triageBucket": "cellular-molecular-maintenance",
+      "localDomainPath": "domains/c2-source-maintenance/endoplasmic-reticulum-stress-upr-proteostasis-continuity",
+      "selectionReason": "内质网应激和 UPR 决定分泌蛋白、膜蛋白与错误折叠蛋白的处理能力，是蛋白稳态从局部错误升级为系统炎症和细胞死亡的关键门槛。",
+      "claimSeed": "ER stress、UPR、ISR 和 ER-Golgi 转运调度会改变细胞韧性、炎症、代谢疾病、神经损伤和组织维护能力。",
+      "variableSeed": [
+        "er-stress-load",
+        "upr-branch-activation",
+        "isr-crosstalk",
+        "protein-folding-capacity",
+        "cell-fate-under-stress"
+      ],
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB5-SRC-04-1",
+          "title": "Unfolding Resilience: Molecular Integration of the Integrated Stress Response and Mitochondrial UPR in Skeletal Muscle Homeostasis.",
+          "url": "https://europepmc.org/article/MED/42201142",
+          "evidenceRole": "stress-response-review-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03"
+        },
+        {
+          "sourceRefId": "C2LTB5-SRC-04-2",
+          "title": "Homeostatic responses to diverse cellular stresses by the ER-Golgi trafficking pathways.",
+          "url": "https://europepmc.org/article/MED/42096823",
+          "evidenceRole": "er-golgi-homeostasis-review-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03"
+        }
+      ],
+      "requiredArtifactClasses": [
+        "domain-claim-evidence-row",
+        "domain-source-card-field-extraction",
+        "domain-source-specific-deep-read",
+        "source-context-local-review",
+        "independent-fresh-review-verdict",
+        "reviewed-source-card",
+        "variable-card",
+        "endpoint-card",
+        "uncertainty-card",
+        "transfer-boundary-card",
+        "downgrade-check"
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-c2-longtail-fifth-batch-source-card-promotion",
+      "nextAction": "Create the domain Claim-Evidence row, then perform Source Card field extraction, source-specific deep read, local source-context review and independent fresh review before any artifact promotion or model admission."
+    },
+    {
+      "batchId": "C2-LT-B5",
+      "priorityRank": 5,
+      "domainId": "golgi-secretory-trafficking-organelle-homeostasis-continuity",
+      "triageBucket": "cellular-molecular-maintenance",
+      "localDomainPath": "domains/c2-source-maintenance/golgi-secretory-trafficking-organelle-homeostasis-continuity",
+      "selectionReason": "Golgi 和分泌转运维持膜蛋白、糖基化、炎症因子和细胞外通讯的空间秩序，失衡会影响免疫、神经、代谢和组织结构。",
+      "claimSeed": "Golgi homeostasis、ER-Golgi trafficking、糖基化和分泌路径会改变细胞间通讯、炎症装配、蛋白运输和器官功能连续性。",
+      "variableSeed": [
+        "golgi-structure-integrity",
+        "secretory-trafficking-load",
+        "glycosylation-quality",
+        "membrane-protein-routing",
+        "stress-induced-trafficking-rewire"
+      ],
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB5-SRC-05-1",
+          "title": "Homeostatic responses to diverse cellular stresses by the ER-Golgi trafficking pathways.",
+          "url": "https://europepmc.org/article/MED/42096823",
+          "evidenceRole": "trafficking-homeostasis-review-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03"
+        },
+        {
+          "sourceRefId": "C2LTB5-SRC-05-2",
+          "title": "Intercompartmental communication in senescence.",
+          "url": "https://europepmc.org/article/MED/41911323",
+          "evidenceRole": "senescence-organelle-communication-review-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03"
+        }
+      ],
+      "requiredArtifactClasses": [
+        "domain-claim-evidence-row",
+        "domain-source-card-field-extraction",
+        "domain-source-specific-deep-read",
+        "source-context-local-review",
+        "independent-fresh-review-verdict",
+        "reviewed-source-card",
+        "variable-card",
+        "endpoint-card",
+        "uncertainty-card",
+        "transfer-boundary-card",
+        "downgrade-check"
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-c2-longtail-fifth-batch-source-card-promotion",
+      "nextAction": "Create the domain Claim-Evidence row, then perform Source Card field extraction, source-specific deep read, local source-context review and independent fresh review before any artifact promotion or model admission."
+    },
+    {
+      "batchId": "C2-LT-B5",
+      "priorityRank": 6,
+      "domainId": "peroxisome-redox-lipid-metabolism-homeostasis-continuity",
+      "triageBucket": "cellular-molecular-maintenance",
+      "localDomainPath": "domains/c2-source-maintenance/peroxisome-redox-lipid-metabolism-homeostasis-continuity",
+      "selectionReason": "过氧化物酶体连接脂质代谢、ROS 解毒和线粒体协同，是红氧平衡与膜脂稳态的细胞级维护节点。",
+      "claimSeed": "过氧化物酶体功能、脂肪酸氧化、ROS 清除和 peroxisome-mitochondria crosstalk 会影响炎症、神经退行、代谢韧性和衰老速度。",
+      "variableSeed": [
+        "peroxisomal-beta-oxidation",
+        "ros-detox-capacity",
+        "plasmalogen-lipid-status",
+        "mitochondria-peroxisome-crosstalk",
+        "peroxisome-turnover"
+      ],
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB5-SRC-06-1",
+          "title": "Peroxisomes in Aging: Guardians of Cellular Resilience and Function.",
+          "url": "https://europepmc.org/article/MED/41677620",
+          "evidenceRole": "aging-peroxisome-review-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03"
+        },
+        {
+          "sourceRefId": "C2LTB5-SRC-06-2",
+          "title": "Peroxisomal Dysfunction in Age-Related Diseases.",
+          "url": "https://europepmc.org/article/MED/28063767",
+          "evidenceRole": "age-related-disease-review-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03"
+        }
+      ],
+      "requiredArtifactClasses": [
+        "domain-claim-evidence-row",
+        "domain-source-card-field-extraction",
+        "domain-source-specific-deep-read",
+        "source-context-local-review",
+        "independent-fresh-review-verdict",
+        "reviewed-source-card",
+        "variable-card",
+        "endpoint-card",
+        "uncertainty-card",
+        "transfer-boundary-card",
+        "downgrade-check"
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-c2-longtail-fifth-batch-source-card-promotion",
+      "nextAction": "Create the domain Claim-Evidence row, then perform Source Card field extraction, source-specific deep read, local source-context review and independent fresh review before any artifact promotion or model admission."
+    },
+    {
+      "batchId": "C2-LT-B5",
+      "priorityRank": 7,
+      "domainId": "organelle-contact-sites-intercompartmental-communication-continuity",
+      "triageBucket": "cellular-molecular-maintenance",
+      "localDomainPath": "domains/c2-source-maintenance/organelle-contact-sites-intercompartmental-communication-continuity",
+      "selectionReason": "细胞器接触位点让线粒体、ER、溶酶体、过氧化物酶体和内膜网络共享脂质、钙信号与应激信息，是单细胞内部系统协作的结构基础。",
+      "claimSeed": "MAMs、膜接触位点和 interorganelle communication 会改变钙稳态、脂质转运、应激传播、衰老和神经退行风险。",
+      "variableSeed": [
+        "membrane-contact-site-integrity",
+        "calcium-transfer-stability",
+        "lipid-transfer-flux",
+        "organelle-stress-propagation",
+        "mitochondria-er-lysosome-crosstalk"
+      ],
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB5-SRC-07-1",
+          "title": "Intercompartmental communication in senescence.",
+          "url": "https://europepmc.org/article/MED/41911323",
+          "evidenceRole": "senescence-communication-review-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03"
+        },
+        {
+          "sourceRefId": "C2LTB5-SRC-07-2",
+          "title": "Mitochondria-associated membranes (MAMs): molecular organization, cellular functions, and their role in health and disease.",
+          "url": "https://europepmc.org/article/MED/41071679",
+          "evidenceRole": "mam-review-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03"
+        }
+      ],
+      "requiredArtifactClasses": [
+        "domain-claim-evidence-row",
+        "domain-source-card-field-extraction",
+        "domain-source-specific-deep-read",
+        "source-context-local-review",
+        "independent-fresh-review-verdict",
+        "reviewed-source-card",
+        "variable-card",
+        "endpoint-card",
+        "uncertainty-card",
+        "transfer-boundary-card",
+        "downgrade-check"
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-c2-longtail-fifth-batch-source-card-promotion",
+      "nextAction": "Create the domain Claim-Evidence row, then perform Source Card field extraction, source-specific deep read, local source-context review and independent fresh review before any artifact promotion or model admission."
+    },
+    {
+      "batchId": "C2-LT-B5",
+      "priorityRank": 8,
+      "domainId": "cytoskeleton-mechanotransduction-cellular-mechanics-continuity",
+      "triageBucket": "cellular-molecular-maintenance",
+      "localDomainPath": "domains/c2-source-maintenance/cytoskeleton-mechanotransduction-cellular-mechanics-continuity",
+      "selectionReason": "细胞骨架与机械转导把外部力、组织硬度、核结构和基因表达连接起来，是身体承载结构、免疫迁移、细胞分裂和组织修复的物理执行层。",
+      "claimSeed": "细胞骨架完整性、核力学、ECM 力输入和 mechanotransduction 会改变细胞命运、炎症、组织僵硬、运动系统退化和恢复能力。",
+      "variableSeed": [
+        "cytoskeletal-integrity",
+        "nuclear-mechanics",
+        "mechanotransduction-signal",
+        "ecm-stiffness-coupling",
+        "cell-migration-division-capacity"
+      ],
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB5-SRC-08-1",
+          "title": "The cellular mechanobiology of aging.",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8102302/",
+          "evidenceRole": "mechanobiology-aging-review-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03"
+        },
+        {
+          "sourceRefId": "C2LTB5-SRC-08-2",
+          "title": "Mechanomedicine: Translating mechanical forces into therapeutic strategies.",
+          "url": "https://europepmc.org/article/MED/41356273",
+          "evidenceRole": "mechanomedicine-review-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03"
+        }
+      ],
+      "requiredArtifactClasses": [
+        "domain-claim-evidence-row",
+        "domain-source-card-field-extraction",
+        "domain-source-specific-deep-read",
+        "source-context-local-review",
+        "independent-fresh-review-verdict",
+        "reviewed-source-card",
+        "variable-card",
+        "endpoint-card",
+        "uncertainty-card",
+        "transfer-boundary-card",
+        "downgrade-check"
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-c2-longtail-fifth-batch-source-card-promotion",
+      "nextAction": "Create the domain Claim-Evidence row, then perform Source Card field extraction, source-specific deep read, local source-context review and independent fresh review before any artifact promotion or model admission."
+    },
+    {
+      "batchId": "C2-LT-B5",
+      "priorityRank": 9,
+      "domainId": "ferroptosis-lipid-peroxidation-membrane-resilience-continuity",
+      "triageBucket": "cellular-molecular-maintenance",
+      "localDomainPath": "domains/c2-source-maintenance/ferroptosis-lipid-peroxidation-membrane-resilience-continuity",
+      "selectionReason": "铁死亡把铁负荷、脂质过氧化、抗氧化系统和膜完整性连接为一种细胞死亡风险，直接影响神经、心血管、免疫和炎症负担。",
+      "claimSeed": "铁稳态、PUFA 脂质过氧化、GPX4/GSH 轴和 ferroptosis susceptibility 会改变细胞死亡、组织炎症、屏障破坏和年龄相关疾病风险。",
+      "variableSeed": [
+        "iron-load",
+        "lipid-peroxidation-burden",
+        "gpx4-gsh-defense",
+        "ferroptosis-susceptibility",
+        "membrane-resilience"
+      ],
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB5-SRC-09-1",
+          "title": "Implication of ferroptosis in aging.",
+          "url": "https://europepmc.org/article/MED/34226536",
+          "evidenceRole": "aging-ferroptosis-review-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03"
+        },
+        {
+          "sourceRefId": "C2LTB5-SRC-09-2",
+          "title": "Ferro-aging: A novel paradigm linking iron overload, lipid peroxidation and cellular senescence.",
+          "url": "https://europepmc.org/article/MED/42250782",
+          "evidenceRole": "ferro-aging-review-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03"
+        }
+      ],
+      "requiredArtifactClasses": [
+        "domain-claim-evidence-row",
+        "domain-source-card-field-extraction",
+        "domain-source-specific-deep-read",
+        "source-context-local-review",
+        "independent-fresh-review-verdict",
+        "reviewed-source-card",
+        "variable-card",
+        "endpoint-card",
+        "uncertainty-card",
+        "transfer-boundary-card",
+        "downgrade-check"
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-c2-longtail-fifth-batch-source-card-promotion",
+      "nextAction": "Create the domain Claim-Evidence row, then perform Source Card field extraction, source-specific deep read, local source-context review and independent fresh review before any artifact promotion or model admission."
+    },
+    {
+      "batchId": "C2-LT-B5",
+      "priorityRank": 10,
+      "domainId": "nuclear-gateway-nucleocytoplasmic-transport-continuity",
+      "triageBucket": "cellular-molecular-maintenance",
+      "localDomainPath": "domains/c2-source-maintenance/nuclear-gateway-nucleocytoplasmic-transport-continuity",
+      "selectionReason": "核孔复合体、核输入输出和核质运输决定细胞信息边界，老化或堵塞会让蛋白质、RNA 和应激信号错位。",
+      "claimSeed": "核孔完整性、karyopherin 运输、核质分隔和核膜力学会影响蛋白稳态、基因表达、神经退行和细胞身份稳定性。",
+      "variableSeed": [
+        "nuclear-pore-integrity",
+        "karyopherin-transport-efficiency",
+        "nucleocytoplasmic-partitioning",
+        "rna-protein-export-load",
+        "nuclear-envelope-stress"
+      ],
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB5-SRC-10-1",
+          "title": "Karyopherins in Proteostasis and Aging.",
+          "url": "https://europepmc.org/article/MED/42107721",
+          "evidenceRole": "proteostasis-aging-review-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03"
+        },
+        {
+          "sourceRefId": "C2LTB5-SRC-10-2",
+          "title": "Pathologies at the gateway: exploring the link between nucleoporins and inherited diseases.",
+          "url": "https://europepmc.org/article/MED/42056597",
+          "evidenceRole": "nuclear-gateway-disease-review-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03"
+        }
+      ],
+      "requiredArtifactClasses": [
+        "domain-claim-evidence-row",
+        "domain-source-card-field-extraction",
+        "domain-source-specific-deep-read",
+        "source-context-local-review",
+        "independent-fresh-review-verdict",
+        "reviewed-source-card",
+        "variable-card",
+        "endpoint-card",
+        "uncertainty-card",
+        "transfer-boundary-card",
+        "downgrade-check"
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-c2-longtail-fifth-batch-source-card-promotion",
+      "nextAction": "Create the domain Claim-Evidence row, then perform Source Card field extraction, source-specific deep read, local source-context review and independent fresh review before any artifact promotion or model admission."
+    },
+    {
+      "batchId": "C2-LT-B5",
+      "priorityRank": 11,
+      "domainId": "lymphatic-glymphatic-clearance",
+      "triageBucket": "other-c2-source-maintenance",
+      "localDomainPath": "domains/c2-source-maintenance/lymphatic-glymphatic-clearance",
+      "selectionReason": "淋巴和 glymphatic 清除把组织液、免疫运输、脑代谢废物和睡眠恢复连接起来，是身体和大脑排污系统的连续性接口。",
+      "claimSeed": "淋巴流、脑膜淋巴、AQP4 相关 glymphatic clearance 和睡眠/血管耦合会改变脑衰老、神经退行、炎症、水肿和恢复质量。",
+      "variableSeed": [
+        "lymphatic-flow",
+        "glymphatic-clearance-rate",
+        "aqp4-polarization",
+        "sleep-dependent-waste-clearance",
+        "meningeal-lymphatic-function"
+      ],
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB5-SRC-11-1",
+          "title": "Impaired Glymphatic Clearance as a Mechanistic Link Between Brain Aging and Neurodegenerative Disease Pathogenesis.",
+          "url": "https://europepmc.org/article/MED/42264186",
+          "evidenceRole": "brain-aging-clearance-review-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03"
+        },
+        {
+          "sourceRefId": "C2LTB5-SRC-11-2",
+          "title": "Glymphatic system impairment in neurological disorders: potential mechanisms and therapeutic targets.",
+          "url": "https://europepmc.org/article/MED/42283969",
+          "evidenceRole": "neurological-disorder-clearance-review-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03"
+        }
+      ],
+      "requiredArtifactClasses": [
+        "domain-claim-evidence-row",
+        "domain-source-card-field-extraction",
+        "domain-source-specific-deep-read",
+        "source-context-local-review",
+        "independent-fresh-review-verdict",
+        "reviewed-source-card",
+        "variable-card",
+        "endpoint-card",
+        "uncertainty-card",
+        "transfer-boundary-card",
+        "downgrade-check"
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-c2-longtail-fifth-batch-source-card-promotion",
+      "nextAction": "Create the domain Claim-Evidence row, then perform Source Card field extraction, source-specific deep read, local source-context review and independent fresh review before any artifact promotion or model admission."
+    },
+    {
+      "batchId": "C2-LT-B5",
+      "priorityRank": 12,
+      "domainId": "gastrointestinal-barrier-absorption",
+      "triageBucket": "organ-system-homeostasis",
+      "localDomainPath": "domains/c2-source-maintenance/gastrointestinal-barrier-absorption",
+      "selectionReason": "肠道屏障和吸收决定营养、药物、微生物代谢物和炎症信号进入主体系统的方式，是外部物质转化为内部状态的基础门。",
+      "claimSeed": "肠上皮屏障、通透性、吸收能力、黏膜免疫和菌群互作会改变营养状态、炎症、药物暴露、感染风险和有效行动能力。",
+      "variableSeed": [
+        "intestinal-permeability",
+        "nutrient-absorption-efficiency",
+        "mucosal-immune-tone",
+        "microbiome-barrier-crosstalk",
+        "systemic-inflammation-leakage"
+      ],
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB5-SRC-12-1",
+          "title": "Intestinal barrier dysfunction: an evolutionarily conserved hallmark of aging.",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10184675/",
+          "evidenceRole": "aging-barrier-review-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03"
+        },
+        {
+          "sourceRefId": "C2LTB5-SRC-12-2",
+          "title": "The Intestinal Barrier: A Multilayered Gatekeeper Against Systemic Disease.",
+          "url": "https://europepmc.org/article/MED/42281745",
+          "evidenceRole": "intestinal-barrier-review-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03"
+        }
+      ],
+      "requiredArtifactClasses": [
+        "domain-claim-evidence-row",
+        "domain-source-card-field-extraction",
+        "domain-source-specific-deep-read",
+        "source-context-local-review",
+        "independent-fresh-review-verdict",
+        "reviewed-source-card",
+        "variable-card",
+        "endpoint-card",
+        "uncertainty-card",
+        "transfer-boundary-card",
+        "downgrade-check"
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-c2-longtail-fifth-batch-source-card-promotion",
+      "nextAction": "Create the domain Claim-Evidence row, then perform Source Card field extraction, source-specific deep read, local source-context review and independent fresh review before any artifact promotion or model admission."
+    }
+  ],
+  "summary": {
+    "batchId": "C2-LT-B5",
+    "batchDomainCount": 12,
+    "candidateSourceCount": 24,
+    "selectedDomainIds": [
+      "telomere-maintenance",
+      "ribosome-translation-fidelity-proteome-integrity-continuity",
+      "lysosomal-flux-lipofuscin-clearance-continuity",
+      "endoplasmic-reticulum-stress-upr-proteostasis-continuity",
+      "golgi-secretory-trafficking-organelle-homeostasis-continuity",
+      "peroxisome-redox-lipid-metabolism-homeostasis-continuity",
+      "organelle-contact-sites-intercompartmental-communication-continuity",
+      "cytoskeleton-mechanotransduction-cellular-mechanics-continuity",
+      "ferroptosis-lipid-peroxidation-membrane-resilience-continuity",
+      "nuclear-gateway-nucleocytoplasmic-transport-continuity",
+      "lymphatic-glymphatic-clearance",
+      "gastrointestinal-barrier-absorption"
+    ],
+    "modelAdmissionDecision": "blocked-pending-c2-longtail-fifth-batch-source-card-promotion",
+    "nextWorkOrder": "Create C2-LT-B5 source extraction queue, then run source-specific field extraction, local source-context review, independent fresh review, and bounded reviewed-artifact promotion while preserving all downgrade/source-resolution rows from earlier batches."
+  }
+}

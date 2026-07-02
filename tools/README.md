@@ -44,6 +44,7 @@
 - `audit_human_infra_c2_longtail_fourth_batch_manual_fulltext_extraction_register.py`: verifies that `docs/reference/human-infra-c2-longtail-fourth-batch-manual-fulltext-extraction-register.json` covers all eight C2-LT-B4 source-resolution candidates, separates bounded fresh-review candidates from duplicate/route-only/manual-access blocked rows, and keeps model admission blocked.
 - `audit_human_infra_c2_longtail_fourth_batch_manual_fulltext_fresh_review_verdict_register.py`: verifies that `docs/reference/human-infra-c2-longtail-fourth-batch-manual-fulltext-fresh-review-verdict-register.json` independently reviews all eight C2-LT-B4 manual/fulltext extraction rows, permits only three bounded artifact-prep rows, preserves five blocked/context-only rows, and keeps model admission blocked.
 - `audit_human_infra_c2_longtail_fourth_batch_manual_fulltext_reviewed_card_artifact_register.py`: verifies that `docs/reference/human-infra-c2-longtail-fourth-batch-manual-fulltext-reviewed-card-artifact-register.json` promotes only the three eligible C2-LT-B4 manual/fulltext fresh-review rows into 18 bounded reviewed artifacts, preserves five blocked rows and keeps model admission blocked.
+- `audit_human_infra_c2_longtail_fifth_batch_promotion_queue.py`: verifies that `docs/reference/human-infra-c2-longtail-fifth-batch-promotion-queue.json` selects 12 non-B1/B2/B3/B4 cellular-maintenance, organelle-communication, molecular-transport, clearance and barrier C2 long-tail domains, binds 24 web/API-checked candidate sources, preserves required promotion steps and keeps model admission blocked.
 - `audit_human_infra_c2_longtail_third_batch_source_extraction_register.py`: verifies that `docs/reference/human-infra-c2-longtail-third-batch-source-extraction-register.json` completes all 24/24 C2-LT-B3 source-context extraction rows with required fields, downgrade triggers, blocked uses, source-resolution flags and index links.
 - `audit_human_infra_c2_longtail_third_batch_local_review_register.py`: verifies that `docs/reference/human-infra-c2-longtail-third-batch-local-review-register.json` locally reviews all 24/24 C2-LT-B3 extraction rows, preserves five source-resolution/manual-access issue rows, keeps blocked uses complete, and routes only to independent fresh review or source resolution.
 - `audit_human_infra_c2_longtail_third_batch_source_resolution_register.py`: verifies that `docs/reference/human-infra-c2-longtail-third-batch-source-resolution-register.json` covers the five C2-LT-B3 local-review issue rows, prepares seven corrected/split/route-normalized candidates, preserves blocked uses and keeps model admission blocked.
@@ -159,6 +160,7 @@ make c2-longtail-fourth-batch-source-resolution-audit
 make c2-longtail-fourth-batch-manual-fulltext-extraction-audit
 make c2-longtail-fourth-batch-manual-fulltext-fresh-review-verdict-audit
 make c2-longtail-fourth-batch-manual-fulltext-reviewed-card-artifact-audit
+make c2-longtail-fifth-batch-promotion-audit
 make domain-source-queue-audit
 make domain-source-extraction-audit
 make domain-source-promotion-audit

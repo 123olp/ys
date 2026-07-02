@@ -198,7 +198,9 @@
         "docs/reference/human-infra-c2-longtail-fourth-batch-manual-fulltext-fresh-review-verdict-register.json",
         "tools/audit_human_infra_c2_longtail_fourth_batch_manual_fulltext_fresh_review_verdict_register.py",
         "docs/reference/human-infra-c2-longtail-fourth-batch-manual-fulltext-reviewed-card-artifact-register.json",
-        "tools/audit_human_infra_c2_longtail_fourth_batch_manual_fulltext_reviewed_card_artifact_register.py"
+        "tools/audit_human_infra_c2_longtail_fourth_batch_manual_fulltext_reviewed_card_artifact_register.py",
+        "docs/reference/human-infra-c2-longtail-fifth-batch-promotion-queue.json",
+        "tools/audit_human_infra_c2_longtail_fifth_batch_promotion_queue.py"
       ],
       "gates": [
         {
@@ -330,13 +332,16 @@
             "docs/reference/human-infra-c2-longtail-fourth-batch-manual-fulltext-fresh-review-verdict-register.json",
             "tools/audit_human_infra_c2_longtail_fourth_batch_manual_fulltext_fresh_review_verdict_register.py",
             "docs/reference/human-infra-c2-longtail-fourth-batch-manual-fulltext-reviewed-card-artifact-register.json",
-            "tools/audit_human_infra_c2_longtail_fourth_batch_manual_fulltext_reviewed_card_artifact_register.py"
+            "tools/audit_human_infra_c2_longtail_fourth_batch_manual_fulltext_reviewed_card_artifact_register.py",
+            "docs/reference/human-infra-c2-longtail-fifth-batch-promotion-queue.json",
+            "tools/audit_human_infra_c2_longtail_fifth_batch_promotion_queue.py"
           ],
           "missingEvidence": [
-            "C2-LT-B4 now has 18 bounded manual/fulltext reviewed artifacts, but remaining C2 long-tail domains outside B1/B2/B3/B4 still need batch selection, source extraction, fresh review and reviewed artifacts.",
-            "Reviewed artifacts are still bounded research artifacts and do not open calibrated model admission."
+            "C2-LT-B5 promotion queue exists for 12 cellular-maintenance, organelle-communication, molecular-transport, clearance and barrier domains, but it still needs source extraction, local review, independent fresh review and reviewed artifacts.",
+            "Remaining C2 long-tail domains outside B1/B2/B3/B4/B5 still need batch selection, source extraction, fresh review and reviewed artifacts.",
+            "Reviewed artifacts remain bounded research artifacts and do not open calibrated model admission."
           ],
-          "nextAction": "Continue C2 long-tail batch coverage outside B1/B2/B3/B4 while keeping all reviewed artifacts bounded and model admission blocked.",
+          "nextAction": "Create C2-LT-B5 source extraction queue and field-level source extraction while keeping all model-admission boundaries blocked.",
           "blocks100Percent": true
         },
         {
@@ -443,13 +448,16 @@
             "docs/reference/human-infra-c2-longtail-fourth-batch-manual-fulltext-fresh-review-verdict-register.json",
             "tools/audit_human_infra_c2_longtail_fourth_batch_manual_fulltext_fresh_review_verdict_register.py",
             "docs/reference/human-infra-c2-longtail-fourth-batch-manual-fulltext-reviewed-card-artifact-register.json",
-            "tools/audit_human_infra_c2_longtail_fourth_batch_manual_fulltext_reviewed_card_artifact_register.py"
+            "tools/audit_human_infra_c2_longtail_fourth_batch_manual_fulltext_reviewed_card_artifact_register.py",
+            "docs/reference/human-infra-c2-longtail-fifth-batch-promotion-queue.json",
+            "tools/audit_human_infra_c2_longtail_fifth_batch_promotion_queue.py"
           ],
           "missingEvidence": [
+            "B5 selected domains have claim and variable seeds only; they still need reviewed variable, endpoint, uncertainty, transfer-boundary and downgrade artifacts.",
             "B1/B2/B3/B4 reviewed artifacts are not connected to any calibrated model-admission gate.",
-            "Remaining C2 long-tail domains outside B1/B2/B3/B4 still need reviewed variable, endpoint, uncertainty, transfer-boundary and downgrade artifacts."
+            "Remaining C2 long-tail domains outside B1/B2/B3/B4/B5 still need reviewed variable, endpoint, uncertainty, transfer-boundary and downgrade artifacts."
           ],
-          "nextAction": "Keep B1/B2/B3/B4 artifacts as bounded vocabulary and route-contract evidence only; continue uncovered C2 batches before any calibrated model use.",
+          "nextAction": "Convert B5 candidate sources into source extraction rows before any variable-contract or model use.",
           "blocks100Percent": true
         },
         {
@@ -581,13 +589,16 @@
             "docs/reference/human-infra-c2-longtail-fourth-batch-manual-fulltext-fresh-review-verdict-register.json",
             "tools/audit_human_infra_c2_longtail_fourth_batch_manual_fulltext_fresh_review_verdict_register.py",
             "docs/reference/human-infra-c2-longtail-fourth-batch-manual-fulltext-reviewed-card-artifact-register.json",
-            "tools/audit_human_infra_c2_longtail_fourth_batch_manual_fulltext_reviewed_card_artifact_register.py"
+            "tools/audit_human_infra_c2_longtail_fourth_batch_manual_fulltext_reviewed_card_artifact_register.py",
+            "docs/reference/human-infra-c2-longtail-fifth-batch-promotion-queue.json",
+            "tools/audit_human_infra_c2_longtail_fifth_batch_promotion_queue.py"
           ],
           "missingEvidence": [
+            "C2-LT-B5 has no independent source review or downgrade rows yet.",
             "C2-LT-B4 reviewed artifact register preserves five duplicate, route-only, manual-access or context-only blockedRows, but remaining C2 long-tail domains still need independent source review and downgrade rows.",
             "All reviewed downgrade rows remain route-contract evidence only until model admission gates pass."
           ],
-          "nextAction": "Continue fresh-review and downgrade-row coverage for remaining C2 long-tail batches while preserving every blocked source-resolution row.",
+          "nextAction": "Run B5 source extraction, local review and independent fresh review to create downgrade rows while preserving every blocked source-resolution row.",
           "blocks100Percent": true
         }
       ]
@@ -749,7 +760,7 @@
   "nextWorkOrder": [
     {
       "priority": 1,
-      "item": "Continue C2 long-tail batch coverage outside B1/B2/B3/B4 while preserving all no-abstract, duplicate-lineage, route-only/manual-access, context-only and earlier blocked downgrade/source-resolution rows; do not open model admission until calibrated validation exists.",
+      "item": "Create C2-LT-B5 source extraction queue and field-level extraction for the 12 cellular-maintenance, organelle-communication, molecular-transport, clearance and barrier domains; preserve all no-abstract, duplicate-lineage, route-only/manual-access, context-only and earlier blocked downgrade/source-resolution rows, and do not open model admission until calibrated validation exists.",
       "unblocks": [
         "RESEARCH-G3-c1-c2-source-cards",
         "RESEARCH-G4-variable-mechanism-contracts",
