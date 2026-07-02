@@ -3,7 +3,7 @@
 - Overall status: `PASS`
 - Model path: `web/src/data/life-path-toy-model.json`
 - Model SHA-256: `a4c92209d79d20579bf1f575d5ebf07ffe5be9ccaf6bf3f3eef08efa287b5377`
-- Generated at: `2026-07-02T23:11:01.768317+00:00`
+- Generated at: `2026-07-02T23:28:23.437019+00:00`
 
 ## Checks
 
@@ -266,6 +266,14 @@
 | `nhats-colectica-authenticated-capture-template-validation-schema` | `PASS` | schemaVersion='human-infra.life-path-nhats-colectica-authenticated-capture-template-validation.v1' |
 | `nhats-colectica-authenticated-capture-template-validation-source-hash` | `PASS` | capture-template validation must point back to current template, access-route probe, execution register, protocol and route-field register hashes |
 | `nhats-colectica-authenticated-capture-template-validation-boundary` | `PASS` | validation must prove only template readiness while keeping authenticated capture and model admission blocked |
+| `nhats-l2-variable-family-admission-register-exists` | `PASS` | domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_l2_variable_family_admission_register.json |
+| `nhats-l2-variable-family-admission-validation-exists` | `PASS` | web/src/data/life-path-nhats-l2-variable-family-admission-validation.json |
+| `nhats-l2-variable-family-admission-schema` | `PASS` | schemaVersion='human-infra.life-path-nhats-l2-variable-family-admission.v1' |
+| `nhats-l2-variable-family-admission-boundary` | `PASS` | L2 candidate family mapping may be ready, but exact variables, data access, extraction, L4, calibration and individual prediction must remain blocked |
+| `nhats-l2-variable-family-admission-summary` | `PASS` | summary must preserve six L2 families and zero L4/L5 admissions |
+| `nhats-l2-variable-family-admission-validation-schema` | `PASS` | schemaVersion='human-infra.life-path-nhats-l2-variable-family-admission-validation.v1' |
+| `nhats-l2-variable-family-admission-validation-source-hash` | `PASS` | L2 family validation must point back to current estimand, variable matrix, model-admission contract, candidate registry and capture template hashes |
+| `nhats-l2-variable-family-admission-validation-boundary` | `PASS` | validation must prove only L2 family mapping while keeping L4, calibration and individual prediction blocked |
 | `sensitivity-analysis-exists` | `PASS` | web/src/data/life-path-sensitivity-analysis.json |
 | `sensitivity-schema-version` | `PASS` | schemaVersion='human-infra.life-path-sensitivity.v1' |
 | `sensitivity-source-model-hash` | `PASS` | sensitivity output must point back to the generated model path and sha256 |
@@ -408,7 +416,7 @@
 - Colectica execution register path: `domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_value_label_review_execution_register.json`
 - Colectica execution register SHA-256: `de6d17f9470a563346f92884cead1eec35cf5a954245751b0135efc60672b042`
 - Colectica execution validation path: `web/src/data/life-path-nhats-colectica-value-label-review-execution-validation.json`
-- Colectica execution validation SHA-256: `15f7dcbb4a032058b345c024f491a01dbf04faaf7cd64be4b62cb6682d4d4a64`
+- Colectica execution validation SHA-256: `b4d7570b06a50ad4fb1ba669c35f04214ddcc97ea1b912b204d5fe9fbc40b0e8`
 - Colectica execution validation status: `PASS`
 - Boundary: Colectica execution now records official source trace, field-level source-trace skeleton and standard negative-code family only; it still blocks login-derived value labels, question text, universe/skip logic, route-value maps, classifier promotion, weighted route counts, public export, calibration, validation and individual prediction.
 
@@ -417,7 +425,7 @@
 - Colectica access-route probe register path: `domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_access_route_probe_register.json`
 - Colectica access-route probe register SHA-256: `58941fde2c6a1c5488437a1ad447cb3dae2032739ef1ed579e29da98b96aaa89`
 - Colectica access-route probe validation path: `web/src/data/life-path-nhats-colectica-access-route-probe-validation.json`
-- Colectica access-route probe validation SHA-256: `bbdb7e07d85ad7b684f9418d633ffd3d7ba6626471b998ca64f8dce699373d53`
+- Colectica access-route probe validation SHA-256: `46e61d14e1b9def42e942bcfb4d5c6da8af9dbc9e2338a34e373c670f75d2e2f`
 - Colectica access-route probe validation status: `PASS`
 - Boundary: access-route probing verifies the public entry point, anonymous login boundary and technical-guide workflow only; it still blocks account status, authenticated variable page capture, value labels, question text, exports, calibration and individual prediction.
 
@@ -426,9 +434,18 @@
 - Colectica authenticated capture template path: `domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_authenticated_capture_template.json`
 - Colectica authenticated capture template SHA-256: `dc097acfcb44007b42a25ce500c6cb1d23b1154f6620a7797445293817313eeb`
 - Colectica authenticated capture template validation path: `web/src/data/life-path-nhats-colectica-authenticated-capture-template-validation.json`
-- Colectica authenticated capture template validation SHA-256: `9057324a474f784c0fa8104b8cd3415cebbb146a04a2cb4c280cc3160f15eece`
+- Colectica authenticated capture template validation SHA-256: `74000d4a0175184f7e50681be721f224b5d0ba6f8edca556587a39661244742a`
 - Colectica authenticated capture template validation status: `PASS`
 - Boundary: authenticated capture template validation proves only that the next capture evidence slots are complete; it still blocks account status, login, authenticated variable pages, value labels, question text, universe/skip logic, route classifiers, public export, calibration and individual prediction.
+
+## NHATS L2 Variable Family Admission
+
+- L2 variable-family admission register path: `domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_l2_variable_family_admission_register.json`
+- L2 variable-family admission register SHA-256: `da1d444f452482f37aa7d7d12cd97c9deb0b2d6006540f76c5d2588389dffce3`
+- L2 variable-family admission validation path: `web/src/data/life-path-nhats-l2-variable-family-admission-validation.json`
+- L2 variable-family admission validation SHA-256: `79c106706658c10519e03df034c6a91299b94e232e0e94d3359184748a176c71`
+- L2 variable-family admission validation status: `PASS`
+- Boundary: L2 variable-family admission validation proves only that the narrow estimand is mapped to six candidate families; it still blocks exact variables, governed data access, extraction, L4 admission, calibration and individual prediction.
 
 ## Sensitivity Analysis
 

@@ -1,6 +1,6 @@
 {
   "schemaVersion": "human-infra.life-path-toy-audit.v1",
-  "generatedAt": "2026-07-02T23:11:01.768317+00:00",
+  "generatedAt": "2026-07-02T23:28:23.437019+00:00",
   "modelPath": "web/src/data/life-path-toy-model.json",
   "modelSha256": "a4c92209d79d20579bf1f575d5ebf07ffe5be9ccaf6bf3f3eef08efa287b5377",
   "overallStatus": "PASS",
@@ -1291,6 +1291,46 @@
       "detail": "validation must prove only template readiness while keeping authenticated capture and model admission blocked"
     },
     {
+      "id": "nhats-l2-variable-family-admission-register-exists",
+      "status": "PASS",
+      "detail": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_l2_variable_family_admission_register.json"
+    },
+    {
+      "id": "nhats-l2-variable-family-admission-validation-exists",
+      "status": "PASS",
+      "detail": "web/src/data/life-path-nhats-l2-variable-family-admission-validation.json"
+    },
+    {
+      "id": "nhats-l2-variable-family-admission-schema",
+      "status": "PASS",
+      "detail": "schemaVersion='human-infra.life-path-nhats-l2-variable-family-admission.v1'"
+    },
+    {
+      "id": "nhats-l2-variable-family-admission-boundary",
+      "status": "PASS",
+      "detail": "L2 candidate family mapping may be ready, but exact variables, data access, extraction, L4, calibration and individual prediction must remain blocked"
+    },
+    {
+      "id": "nhats-l2-variable-family-admission-summary",
+      "status": "PASS",
+      "detail": "summary must preserve six L2 families and zero L4/L5 admissions"
+    },
+    {
+      "id": "nhats-l2-variable-family-admission-validation-schema",
+      "status": "PASS",
+      "detail": "schemaVersion='human-infra.life-path-nhats-l2-variable-family-admission-validation.v1'"
+    },
+    {
+      "id": "nhats-l2-variable-family-admission-validation-source-hash",
+      "status": "PASS",
+      "detail": "L2 family validation must point back to current estimand, variable matrix, model-admission contract, candidate registry and capture template hashes"
+    },
+    {
+      "id": "nhats-l2-variable-family-admission-validation-boundary",
+      "status": "PASS",
+      "detail": "validation must prove only L2 family mapping while keeping L4, calibration and individual prediction blocked"
+    },
+    {
       "id": "sensitivity-analysis-exists",
       "status": "PASS",
       "detail": "web/src/data/life-path-sensitivity-analysis.json"
@@ -1347,7 +1387,7 @@
     }
   ],
   "summary": {
-    "pass": 268,
+    "pass": 276,
     "warn": 0,
     "fail": 0
   },
@@ -2682,7 +2722,7 @@
     "registerPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_value_label_review_execution_register.json",
     "registerSha256": "de6d17f9470a563346f92884cead1eec35cf5a954245751b0135efc60672b042",
     "validationPath": "web/src/data/life-path-nhats-colectica-value-label-review-execution-validation.json",
-    "validationSha256": "15f7dcbb4a032058b345c024f491a01dbf04faaf7cd64be4b62cb6682d4d4a64",
+    "validationSha256": "b4d7570b06a50ad4fb1ba669c35f04214ddcc97ea1b912b204d5fe9fbc40b0e8",
     "status": "PASS",
     "checks": [
       {
@@ -2746,7 +2786,7 @@
     "registerPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_access_route_probe_register.json",
     "registerSha256": "58941fde2c6a1c5488437a1ad447cb3dae2032739ef1ed579e29da98b96aaa89",
     "validationPath": "web/src/data/life-path-nhats-colectica-access-route-probe-validation.json",
-    "validationSha256": "bbdb7e07d85ad7b684f9418d633ffd3d7ba6626471b998ca64f8dce699373d53",
+    "validationSha256": "46e61d14e1b9def42e942bcfb4d5c6da8af9dbc9e2338a34e373c670f75d2e2f",
     "status": "PASS",
     "checks": [
       {
@@ -2795,7 +2835,7 @@
     "templatePath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_authenticated_capture_template.json",
     "templateSha256": "dc097acfcb44007b42a25ce500c6cb1d23b1154f6620a7797445293817313eeb",
     "validationPath": "web/src/data/life-path-nhats-colectica-authenticated-capture-template-validation.json",
-    "validationSha256": "9057324a474f784c0fa8104b8cd3415cebbb146a04a2cb4c280cc3160f15eece",
+    "validationSha256": "74000d4a0175184f7e50681be721f224b5d0ba6f8edca556587a39661244742a",
     "status": "PASS",
     "checks": [
       {
@@ -2836,6 +2876,60 @@
     ],
     "summary": {
       "pass": 7,
+      "warn": 0,
+      "fail": 0
+    }
+  },
+  "nhatsL2VariableFamilyAdmission": {
+    "registerPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_l2_variable_family_admission_register.json",
+    "registerSha256": "da1d444f452482f37aa7d7d12cd97c9deb0b2d6006540f76c5d2588389dffce3",
+    "validationPath": "web/src/data/life-path-nhats-l2-variable-family-admission-validation.json",
+    "validationSha256": "79c106706658c10519e03df034c6a91299b94e232e0e94d3359184748a176c71",
+    "status": "PASS",
+    "checks": [
+      {
+        "id": "nhats-l2-variable-family-admission-register-exists",
+        "status": "PASS",
+        "detail": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_l2_variable_family_admission_register.json"
+      },
+      {
+        "id": "nhats-l2-variable-family-admission-validation-exists",
+        "status": "PASS",
+        "detail": "web/src/data/life-path-nhats-l2-variable-family-admission-validation.json"
+      },
+      {
+        "id": "nhats-l2-variable-family-admission-schema",
+        "status": "PASS",
+        "detail": "schemaVersion='human-infra.life-path-nhats-l2-variable-family-admission.v1'"
+      },
+      {
+        "id": "nhats-l2-variable-family-admission-boundary",
+        "status": "PASS",
+        "detail": "L2 candidate family mapping may be ready, but exact variables, data access, extraction, L4, calibration and individual prediction must remain blocked"
+      },
+      {
+        "id": "nhats-l2-variable-family-admission-summary",
+        "status": "PASS",
+        "detail": "summary must preserve six L2 families and zero L4/L5 admissions"
+      },
+      {
+        "id": "nhats-l2-variable-family-admission-validation-schema",
+        "status": "PASS",
+        "detail": "schemaVersion='human-infra.life-path-nhats-l2-variable-family-admission-validation.v1'"
+      },
+      {
+        "id": "nhats-l2-variable-family-admission-validation-source-hash",
+        "status": "PASS",
+        "detail": "L2 family validation must point back to current estimand, variable matrix, model-admission contract, candidate registry and capture template hashes"
+      },
+      {
+        "id": "nhats-l2-variable-family-admission-validation-boundary",
+        "status": "PASS",
+        "detail": "validation must prove only L2 family mapping while keeping L4, calibration and individual prediction blocked"
+      }
+    ],
+    "summary": {
+      "pass": 8,
       "warn": 0,
       "fail": 0
     }

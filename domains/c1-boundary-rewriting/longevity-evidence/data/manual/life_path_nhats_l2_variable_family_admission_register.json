@@ -1,0 +1,169 @@
+{
+  "schemaVersion": "human-infra.life-path-nhats-l2-variable-family-admission.v1",
+  "sourceId": "nhats",
+  "sourceName": "National Health and Aging Trends Study",
+  "registerId": "nhats-r13-r14-l2-variable-family-admission-register-2026-07-03",
+  "protocolId": "nhats-r13-r14-functional-survival-estimand-protocol-draft",
+  "variableConfirmationMatrixId": "nhats-r13-r14-variable-confirmation-matrix-draft",
+  "modelAdmissionContractId": "human-infra-model-admission-contract",
+  "modelAdmissionCandidateRegistryId": "human-infra-model-admission-candidate-registry-2026-07-03",
+  "reviewDate": "2026-07-03",
+  "reviewer": "tradecatlabs",
+  "status": "l2-variable-family-mapping-only-l4-blocked",
+  "registerPurpose": "Bind the first narrow NHATS aggregate functional-survival estimand to L2 candidate variable families before any exact field confirmation, extraction, calibration, validation or individual-use claim exists.",
+  "currentDecision": {
+    "narrowEstimandSelected": true,
+    "l2CandidateFamiliesMapped": true,
+    "exactVariablesConfirmed": false,
+    "colecticaValueLabelsConfirmed": false,
+    "colecticaAuthenticatedCapturesComplete": false,
+    "governedDataAccessReady": false,
+    "cohortFlowReady": false,
+    "surveyDesignReady": false,
+    "realExtractionAllowed": false,
+    "l4AdmissionAllowed": false,
+    "calibrationAllowed": false,
+    "individualPredictionAllowed": false,
+    "reason": "The first narrow estimand and six candidate family roles are mapped at L2, but every path to L4 remains blocked until governed data access, exact variables, value labels, cohort flow, survey design, disclosure control, validation and calibration diagnostics are complete."
+  },
+  "sourceBindings": {
+    "firstEstimandProtocolPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_first_estimand_protocol.json",
+    "variableConfirmationMatrixPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_variable_confirmation_matrix.json",
+    "modelAdmissionContractPath": "docs/reference/human-infra-model-admission-contract.json",
+    "modelAdmissionCandidateRegistryPath": "docs/reference/human-infra-model-admission-candidate-registry.json",
+    "authenticatedCaptureTemplatePath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_authenticated_capture_template.json"
+  },
+  "targetEstimand": {
+    "id": "E-NHATS-R13R14-FS-01",
+    "label": "Adjacent-round aggregate functional-survival state",
+    "timeZero": "R13 baseline interview state after official field confirmation",
+    "followupWindow": "R14 adjacent-round functional-survival classification",
+    "targetPopulationStatus": "candidate-only-unverified",
+    "admissionLevel": "L2-estimand-design-only",
+    "blockedUses": [
+      "individual-death-date-output",
+      "individual-life-expectancy-output",
+      "individual-advice",
+      "medical-advice",
+      "calibrated-prediction",
+      "causal-effect-claim",
+      "intervention-ranking"
+    ]
+  },
+  "candidateFamilyMappings": [
+    {
+      "familyId": "design_identity_route",
+      "predictorFamilyIds": ["design_identity"],
+      "variableGroupIds": ["identity_join_route"],
+      "admissionLevel": "L2-candidate-family-only",
+      "modelLocation": "cohort-definition-and-observation-process",
+      "roleInEstimand": "Define unit identity, round linkage, eligibility, interview route and join controls before any state, endpoint or weighted output is computed.",
+      "candidateFields": ["spid", "round identifier", "cohort flag", "interview status", "sample-person interview route", "proxy route indicator"],
+      "requiredBeforePromotion": ["exact field names", "value labels", "round coverage", "join-key uniqueness check", "Colectica or official codebook source hash"],
+      "currentStatus": "candidate-only-exact-fields-pending",
+      "promotionAllowed": false
+    },
+    {
+      "familyId": "survey_design",
+      "predictorFamilyIds": ["design_identity"],
+      "variableGroupIds": ["survey_design"],
+      "admissionLevel": "L2-candidate-family-only",
+      "modelLocation": "survey-design-and-population-inference-boundary",
+      "roleInEstimand": "Define whether aggregate descriptive outputs can become design-aware weighted summaries after official weight, strata, cluster and variance method confirmation.",
+      "candidateFields": ["w13anfinwgt0", "w13varunit", "w13varstrat", "w14anfinwgt0", "w14varunit", "w14varstrat", "replicate weights if selected"],
+      "requiredBeforePromotion": ["analysis weight selected", "strata and cluster variables confirmed", "variance method selected", "population inference boundary documented"],
+      "currentStatus": "candidate-pattern-only-exact-fields-pending",
+      "promotionAllowed": false
+    },
+    {
+      "familyId": "endpoint_censoring",
+      "predictorFamilyIds": [],
+      "variableGroupIds": ["endpoint_censoring"],
+      "admissionLevel": "L2-candidate-endpoint-family-only",
+      "modelLocation": "endpoint-routing-and-censoring-process",
+      "roleInEstimand": "Define R14 functional-survival outcome route, death boundary, known-alive-not-interviewed route, proxy route, residential-care route and not-classifiable state.",
+      "candidateFields": ["fl14spdied", "R14 interview status", "known alive but not interviewed route", "proxy interview route", "residential-care route", "Last Month of Life route if approved"],
+      "requiredBeforePromotion": ["death indicator confirmed", "nonresponse categories confirmed", "proxy route categories confirmed", "residential-care categories confirmed", "sensitive death-date fields excluded"],
+      "currentStatus": "candidate-only-exact-fields-pending",
+      "promotionAllowed": false
+    },
+    {
+      "familyId": "baseline_function",
+      "predictorFamilyIds": ["baseline_function"],
+      "variableGroupIds": ["baseline_function"],
+      "admissionLevel": "L2-candidate-family-only",
+      "modelLocation": "baseline-state-and-state-transition-candidate",
+      "roleInEstimand": "Describe R13 action-capacity state that could become a future predictor family for aggregate R14 functional-survival classification after exact fields and aggregation rules are frozen.",
+      "candidateFields": ["self-care activities", "mobility activities", "household activities", "medical-care activities", "participation in valued activities", "help, difficulty, unmet-need and accommodation indicators"],
+      "requiredBeforePromotion": ["exact variables by activity", "directionality", "skip logic", "missing codes", "pre-outcome aggregation rule"],
+      "currentStatus": "family-only-exact-fields-pending",
+      "promotionAllowed": false
+    },
+    {
+      "familyId": "baseline_cognition_attention",
+      "predictorFamilyIds": ["baseline_cognition_attention"],
+      "variableGroupIds": ["baseline_cognition_attention"],
+      "admissionLevel": "L2-candidate-family-only",
+      "modelLocation": "baseline-state-and-observation-process-candidate",
+      "roleInEstimand": "Describe R13 cognition, memory, attention and measurement-route state that could become a future aggregate predictor family after direct/proxy measurement rules are fixed.",
+      "candidateFields": ["cg13dwrdimmrc", "cg13dwrddlyrc", "orientation items", "clock drawing route", "proxy cognition route"],
+      "requiredBeforePromotion": ["exact direct-test fields", "proxy-test substitution rule", "clock image/public-file boundary", "score directionality", "missing and non-administered codes"],
+      "currentStatus": "candidate-pattern-only-exact-fields-pending",
+      "promotionAllowed": false
+    },
+    {
+      "familyId": "baseline_support_environment",
+      "predictorFamilyIds": ["baseline_support_resources", "baseline_environment_access"],
+      "variableGroupIds": ["baseline_support_environment"],
+      "admissionLevel": "L2-candidate-family-only",
+      "modelLocation": "baseline-context-resource-and-access-candidate",
+      "roleInEstimand": "Describe R13 social support, resource, home environment, transportation, technology and access context that could become a future aggregate predictor family only after public-use field tiers and disclosure risks are reviewed.",
+      "candidateFields": ["household members", "helper and caregiving context", "insurance and economic context", "home environment", "transportation and technology access"],
+      "requiredBeforePromotion": ["public versus sensitive field tier", "exact variables", "round availability", "small-cell disclosure risk", "pre-outcome inclusion rule"],
+      "currentStatus": "family-only-exact-fields-pending",
+      "promotionAllowed": false
+    }
+  ],
+  "blockedBeforeL4": [
+    "MODEL-G3-real-data-access",
+    "MODEL-G4-field-and-value-confirmation",
+    "MODEL-G5-real-extraction-and-cohort-flow",
+    "MODEL-G6-survey-design-and-weighted-estimates",
+    "MODEL-G7-external-validation-and-calibration",
+    "MAC-G4-data-access",
+    "MAC-G5-variable-confirmation",
+    "MAC-G6-extraction-and-cohort-flow",
+    "MAC-G7-validation-calibration"
+  ],
+  "hardAbortInheritance": [
+    "ABORT-1-no-source-identity",
+    "ABORT-2-biomarker-to-lifespan-leap",
+    "ABORT-3-animal-to-human-effect-leap",
+    "ABORT-4-no-comparator-or-time-zero",
+    "ABORT-5-individual-output",
+    "ABORT-6-raw-data-exposure"
+  ],
+  "summary": {
+    "targetEstimands": 1,
+    "candidateFamilyMappings": 6,
+    "l2CandidateFamilies": 6,
+    "l4Admissions": 0,
+    "l5Admissions": 0,
+    "calibratedPredictionAvailable": false,
+    "individualUseAllowed": false
+  },
+  "nextWork": [
+    "Fill authenticated Colectica capture slots for each route field with source hashes.",
+    "Confirm exact variables, value labels, question text, universe and skip logic for each family.",
+    "Freeze the pre-outcome aggregation rule for baseline function, cognition and support/environment families.",
+    "Keep all six mappings L2-only until G3-G7 and MAC-G4-G7 pass."
+  ],
+  "prohibitedActions": [
+    "treat candidate fields as confirmed variables",
+    "write an extraction script from this register",
+    "compute route classification from this register",
+    "compute coefficients, hazard ratios, calibrated risks or intervention effects from this register",
+    "upload raw or row-level NHATS data to public AI systems",
+    "emit row-level records, individual death dates, medical advice or personal longevity rankings"
+  ]
+}

@@ -661,7 +661,7 @@
     {
       "axisId": "quantitative_model",
       "axisName": "定量模型",
-      "currentPercent": 78,
+      "currentPercent": 79,
       "targetPercent": 100,
       "definitionOfDone": "A governed, reproducible, scenario-level model uses real approved data with confirmed variables, explicit estimands, survey design, disclosure control, validation, calibration diagnostics and Web visualization while preserving no-individual-prediction boundaries.",
       "primaryEvidence": [
@@ -679,7 +679,9 @@
         "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_access_route_probe_register.json",
         "web/src/data/life-path-nhats-colectica-access-route-probe-validation.json",
         "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_authenticated_capture_template.json",
-        "web/src/data/life-path-nhats-colectica-authenticated-capture-template-validation.json"
+        "web/src/data/life-path-nhats-colectica-authenticated-capture-template-validation.json",
+        "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_l2_variable_family_admission_register.json",
+        "web/src/data/life-path-nhats-l2-variable-family-admission-validation.json"
       ],
       "gates": [
         {
@@ -769,7 +771,9 @@
             "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_access_route_probe_register.json",
             "web/src/data/life-path-nhats-colectica-access-route-probe-validation.json",
             "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_authenticated_capture_template.json",
-            "web/src/data/life-path-nhats-colectica-authenticated-capture-template-validation.json"
+            "web/src/data/life-path-nhats-colectica-authenticated-capture-template-validation.json",
+            "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_l2_variable_family_admission_register.json",
+            "web/src/data/life-path-nhats-l2-variable-family-admission-validation.json"
           ],
           "missingEvidence": [
             "Controlled Colectica login/access record.",
@@ -823,15 +827,18 @@
           "requirement": "Model outputs are externally validated and calibrated against real outcomes within a pre-registered scope.",
           "evidence": [
             "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_calibration_readiness.json",
-            "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_data_source_candidates.json"
+            "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_data_source_candidates.json",
+            "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_l2_variable_family_admission_register.json",
+            "web/src/data/life-path-nhats-l2-variable-family-admission-validation.json"
           ],
           "missingEvidence": [
+            "L2 variable-family mapping now exists, but exact fields, value labels and real extracts are still absent.",
             "Real training/validation split or external cohort.",
             "Calibration diagnostics.",
             "Sensitivity analysis based on real parameter uncertainty.",
             "TRIPOD+AI / PROBAST-style reporting packet."
           ],
-          "nextAction": "Do not claim prediction validity until real-data calibration and external validation exist.",
+          "nextAction": "Use the L2 variable-family admission register only as a pre-admission map; do not claim prediction validity until real-data calibration and external validation exist.",
           "blocks100Percent": true
         },
         {
@@ -860,7 +867,7 @@
     },
     {
       "priority": 2,
-      "item": "Select a narrow aggregate estimand and mark which L2 candidate families could become model variables only after G4-G7 pass.",
+      "item": "Use the NHATS L2 variable-family admission register as the pre-admission map, then freeze exact Colectica evidence, pre-outcome aggregation rules and validation boundaries before any L4 candidate is reconsidered.",
       "unblocks": [
         "MODEL-G7-external-validation-and-calibration"
       ]

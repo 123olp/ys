@@ -264,6 +264,31 @@ DEFAULT_NHATS_COLECTICA_AUTHENTICATED_CAPTURE_TEMPLATE_VALIDATION = (
     / "data"
     / "life-path-nhats-colectica-authenticated-capture-template-validation.json"
 )
+DEFAULT_NHATS_L2_VARIABLE_FAMILY_ADMISSION_REGISTER = (
+    REPO_ROOT
+    / "domains"
+    / "c1-boundary-rewriting"
+    / "longevity-evidence"
+    / "data"
+    / "manual"
+    / "life_path_nhats_l2_variable_family_admission_register.json"
+)
+DEFAULT_NHATS_L2_VARIABLE_FAMILY_ADMISSION_VALIDATION = (
+    REPO_ROOT
+    / "web"
+    / "src"
+    / "data"
+    / "life-path-nhats-l2-variable-family-admission-validation.json"
+)
+DEFAULT_MODEL_ADMISSION_CONTRACT = (
+    REPO_ROOT / "docs" / "reference" / "human-infra-model-admission-contract.json"
+)
+DEFAULT_MODEL_ADMISSION_CANDIDATE_REGISTRY = (
+    REPO_ROOT
+    / "docs"
+    / "reference"
+    / "human-infra-model-admission-candidate-registry.json"
+)
 REQUIRED_MODEL_CARD_FIELDS = {
     "modelName",
     "modelClass",
@@ -4868,6 +4893,158 @@ def audit_nhats_colectica_authenticated_capture_template(
     }
 
 
+def audit_nhats_l2_variable_family_admission(
+    register_path: Path,
+    validation_path: Path,
+    first_estimand_path: Path,
+    variable_confirmation_matrix_path: Path,
+    model_admission_contract_path: Path,
+    model_admission_candidate_registry_path: Path,
+    authenticated_capture_template_path: Path,
+) -> dict[str, Any]:
+    checks: list[dict[str, Any]] = []
+    register_exists = register_path.exists()
+    validation_exists = validation_path.exists()
+    add_check(
+        checks,
+        "nhats-l2-variable-family-admission-register-exists",
+        status_from_bool(register_exists),
+        str(register_path.relative_to(REPO_ROOT)),
+    )
+    add_check(
+        checks,
+        "nhats-l2-variable-family-admission-validation-exists",
+        status_from_bool(validation_exists),
+        str(validation_path.relative_to(REPO_ROOT)),
+    )
+
+    register = load_json(register_path) if register_exists else {}
+    validation = load_json(validation_path) if validation_exists else {}
+
+    schema_ok = (
+        register.get("schemaVersion")
+        == "human-infra.life-path-nhats-l2-variable-family-admission.v1"
+    )
+    add_check(
+        checks,
+        "nhats-l2-variable-family-admission-schema",
+        status_from_bool(register_exists and schema_ok),
+        f"schemaVersion={register.get('schemaVersion')!r}",
+    )
+
+    decision = register.get("currentDecision")
+    boundary_ok = (
+        isinstance(decision, dict)
+        and decision.get("narrowEstimandSelected") is True
+        and decision.get("l2CandidateFamiliesMapped") is True
+        and decision.get("exactVariablesConfirmed") is False
+        and decision.get("colecticaValueLabelsConfirmed") is False
+        and decision.get("colecticaAuthenticatedCapturesComplete") is False
+        and decision.get("governedDataAccessReady") is False
+        and decision.get("realExtractionAllowed") is False
+        and decision.get("l4AdmissionAllowed") is False
+        and decision.get("calibrationAllowed") is False
+        and decision.get("individualPredictionAllowed") is False
+    )
+    add_check(
+        checks,
+        "nhats-l2-variable-family-admission-boundary",
+        status_from_bool(register_exists and boundary_ok),
+        "L2 candidate family mapping may be ready, but exact variables, data access, extraction, L4, calibration and individual prediction must remain blocked",
+    )
+
+    summary = register.get("summary")
+    summary_ok = (
+        isinstance(summary, dict)
+        and summary.get("candidateFamilyMappings") == 6
+        and summary.get("l2CandidateFamilies") == 6
+        and summary.get("l4Admissions") == 0
+        and summary.get("l5Admissions") == 0
+        and summary.get("calibratedPredictionAvailable") is False
+        and summary.get("individualUseAllowed") is False
+    )
+    add_check(
+        checks,
+        "nhats-l2-variable-family-admission-summary",
+        status_from_bool(register_exists and summary_ok),
+        "summary must preserve six L2 families and zero L4/L5 admissions",
+    )
+
+    validation_schema_ok = (
+        validation.get("schemaVersion")
+        == "human-infra.life-path-nhats-l2-variable-family-admission-validation.v1"
+    )
+    add_check(
+        checks,
+        "nhats-l2-variable-family-admission-validation-schema",
+        status_from_bool(validation_exists and validation_schema_ok),
+        f"schemaVersion={validation.get('schemaVersion')!r}",
+    )
+
+    validation_source_ok = (
+        validation.get("registerPath") == str(register_path.relative_to(REPO_ROOT))
+        and validation.get("registerSha256") == sha256_file(register_path)
+        and validation.get("firstEstimandProtocolPath")
+        == str(first_estimand_path.relative_to(REPO_ROOT))
+        and validation.get("firstEstimandProtocolSha256") == sha256_file(first_estimand_path)
+        and validation.get("variableConfirmationMatrixPath")
+        == str(variable_confirmation_matrix_path.relative_to(REPO_ROOT))
+        and validation.get("variableConfirmationMatrixSha256")
+        == sha256_file(variable_confirmation_matrix_path)
+        and validation.get("modelAdmissionContractPath")
+        == str(model_admission_contract_path.relative_to(REPO_ROOT))
+        and validation.get("modelAdmissionContractSha256")
+        == sha256_file(model_admission_contract_path)
+        and validation.get("modelAdmissionCandidateRegistryPath")
+        == str(model_admission_candidate_registry_path.relative_to(REPO_ROOT))
+        and validation.get("modelAdmissionCandidateRegistrySha256")
+        == sha256_file(model_admission_candidate_registry_path)
+        and validation.get("authenticatedCaptureTemplatePath")
+        == str(authenticated_capture_template_path.relative_to(REPO_ROOT))
+        and validation.get("authenticatedCaptureTemplateSha256")
+        == sha256_file(authenticated_capture_template_path)
+    )
+    add_check(
+        checks,
+        "nhats-l2-variable-family-admission-validation-source-hash",
+        status_from_bool(validation_exists and validation_source_ok),
+        "L2 family validation must point back to current estimand, variable matrix, model-admission contract, candidate registry and capture template hashes",
+    )
+
+    validation_boundary = validation.get("boundary")
+    validation_boundary_ok = (
+        validation.get("overallStatus") == "PASS"
+        and isinstance(validation.get("summary"), dict)
+        and validation["summary"].get("fail") == 0
+        and validation.get("candidateFamilyCount") == 6
+        and validation.get("l4Admissions") == 0
+        and validation.get("l5Admissions") == 0
+        and isinstance(validation_boundary, dict)
+        and validation_boundary.get("narrowEstimandSelected") is True
+        and validation_boundary.get("l2CandidateFamiliesMapped") is True
+        and validation_boundary.get("exactVariablesConfirmed") is False
+        and validation_boundary.get("l4AdmissionAllowed") is False
+        and validation_boundary.get("calibrationAllowed") is False
+        and validation_boundary.get("individualPredictionAllowed") is False
+    )
+    add_check(
+        checks,
+        "nhats-l2-variable-family-admission-validation-boundary",
+        status_from_bool(validation_exists and validation_boundary_ok),
+        "validation must prove only L2 family mapping while keeping L4, calibration and individual prediction blocked",
+    )
+
+    return {
+        "registerPath": str(register_path.relative_to(REPO_ROOT)),
+        "registerSha256": sha256_file(register_path) if register_exists else None,
+        "validationPath": str(validation_path.relative_to(REPO_ROOT)),
+        "validationSha256": sha256_file(validation_path) if validation_exists else None,
+        "status": "PASS" if summarize_checks(checks)["fail"] == 0 else "FAIL",
+        "checks": checks,
+        "summary": summarize_checks(checks),
+    }
+
+
 def audit_sensitivity_analysis(
     sensitivity_path: Path,
     model_data: dict[str, Any],
@@ -5130,6 +5307,8 @@ def audit_model(
     nhats_colectica_access_route_probe_validation_path: Path,
     nhats_colectica_authenticated_capture_template_path: Path,
     nhats_colectica_authenticated_capture_template_validation_path: Path,
+    nhats_l2_variable_family_admission_register_path: Path,
+    nhats_l2_variable_family_admission_validation_path: Path,
 ) -> dict[str, Any]:
     checks: list[dict[str, Any]] = []
     schema_version = data.get("schemaVersion")
@@ -5367,6 +5546,15 @@ def audit_model(
             nhats_route_field_discovery_register_path,
         )
     )
+    nhats_l2_variable_family_admission_audit = audit_nhats_l2_variable_family_admission(
+        nhats_l2_variable_family_admission_register_path,
+        nhats_l2_variable_family_admission_validation_path,
+        nhats_first_estimand_protocol_path,
+        nhats_variable_confirmation_matrix_path,
+        DEFAULT_MODEL_ADMISSION_CONTRACT,
+        DEFAULT_MODEL_ADMISSION_CANDIDATE_REGISTRY,
+        nhats_colectica_authenticated_capture_template_path,
+    )
     sensitivity_audit = audit_sensitivity_analysis(sensitivity_path, data, model_path)
     checks.extend(readiness_audit["checks"])
     checks.extend(data_sources_audit["checks"])
@@ -5386,6 +5574,7 @@ def audit_model(
     checks.extend(nhats_colectica_value_label_execution_audit["checks"])
     checks.extend(nhats_colectica_access_route_probe_audit["checks"])
     checks.extend(nhats_colectica_authenticated_capture_template_audit["checks"])
+    checks.extend(nhats_l2_variable_family_admission_audit["checks"])
     checks.extend(sensitivity_audit["checks"])
     failed = [check for check in checks if check["status"] == "FAIL"]
     overall = "PASS" if not failed else "FAIL"
@@ -5416,6 +5605,7 @@ def audit_model(
         "nhatsColecticaValueLabelReviewExecution": nhats_colectica_value_label_execution_audit,
         "nhatsColecticaAccessRouteProbe": nhats_colectica_access_route_probe_audit,
         "nhatsColecticaAuthenticatedCaptureTemplate": nhats_colectica_authenticated_capture_template_audit,
+        "nhatsL2VariableFamilyAdmission": nhats_l2_variable_family_admission_audit,
         "sensitivityAnalysis": sensitivity_audit,
     }
 
@@ -5592,6 +5782,15 @@ def render_markdown(audit: dict[str, Any]) -> str:
             f"- Colectica authenticated capture template validation status: `{audit['nhatsColecticaAuthenticatedCaptureTemplate']['status']}`",
             "- Boundary: authenticated capture template validation proves only that the next capture evidence slots are complete; it still blocks account status, login, authenticated variable pages, value labels, question text, universe/skip logic, route classifiers, public export, calibration and individual prediction.",
             "",
+            "## NHATS L2 Variable Family Admission",
+            "",
+            f"- L2 variable-family admission register path: `{audit['nhatsL2VariableFamilyAdmission']['registerPath']}`",
+            f"- L2 variable-family admission register SHA-256: `{audit['nhatsL2VariableFamilyAdmission']['registerSha256']}`",
+            f"- L2 variable-family admission validation path: `{audit['nhatsL2VariableFamilyAdmission']['validationPath']}`",
+            f"- L2 variable-family admission validation SHA-256: `{audit['nhatsL2VariableFamilyAdmission']['validationSha256']}`",
+            f"- L2 variable-family admission validation status: `{audit['nhatsL2VariableFamilyAdmission']['status']}`",
+            "- Boundary: L2 variable-family admission validation proves only that the narrow estimand is mapped to six candidate families; it still blocks exact variables, governed data access, extraction, L4 admission, calibration and individual prediction.",
+            "",
             "## Sensitivity Analysis",
             "",
             f"- Sensitivity path: `{audit['sensitivityAnalysis']['path']}`",
@@ -5760,6 +5959,16 @@ def parse_args() -> argparse.Namespace:
         type=Path,
         default=DEFAULT_NHATS_COLECTICA_AUTHENTICATED_CAPTURE_TEMPLATE_VALIDATION,
     )
+    parser.add_argument(
+        "--nhats-l2-variable-family-admission-register",
+        type=Path,
+        default=DEFAULT_NHATS_L2_VARIABLE_FAMILY_ADMISSION_REGISTER,
+    )
+    parser.add_argument(
+        "--nhats-l2-variable-family-admission-validation",
+        type=Path,
+        default=DEFAULT_NHATS_L2_VARIABLE_FAMILY_ADMISSION_VALIDATION,
+    )
     parser.add_argument("--json-out", type=Path, default=DEFAULT_JSON_OUT)
     parser.add_argument("--md-out", type=Path, default=DEFAULT_MD_OUT)
     return parser.parse_args()
@@ -5830,6 +6039,12 @@ def main() -> int:
     nhats_colectica_authenticated_capture_template_validation_path = (
         args.nhats_colectica_authenticated_capture_template_validation.resolve()
     )
+    nhats_l2_variable_family_admission_register_path = (
+        args.nhats_l2_variable_family_admission_register.resolve()
+    )
+    nhats_l2_variable_family_admission_validation_path = (
+        args.nhats_l2_variable_family_admission_validation.resolve()
+    )
     audit = audit_model(
         load_json(model_path),
         model_path,
@@ -5865,6 +6080,8 @@ def main() -> int:
         nhats_colectica_access_route_probe_validation_path,
         nhats_colectica_authenticated_capture_template_path,
         nhats_colectica_authenticated_capture_template_validation_path,
+        nhats_l2_variable_family_admission_register_path,
+        nhats_l2_variable_family_admission_validation_path,
     )
     args.json_out.parent.mkdir(parents=True, exist_ok=True)
     with args.json_out.open("w", encoding="utf-8") as handle:

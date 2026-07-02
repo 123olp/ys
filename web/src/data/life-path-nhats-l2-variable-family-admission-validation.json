@@ -1,0 +1,118 @@
+{
+  "schemaVersion": "human-infra.life-path-nhats-l2-variable-family-admission-validation.v1",
+  "generatedAt": "2026-07-02T23:28:23.365858+00:00",
+  "registerPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_l2_variable_family_admission_register.json",
+  "registerSha256": "da1d444f452482f37aa7d7d12cd97c9deb0b2d6006540f76c5d2588389dffce3",
+  "firstEstimandProtocolPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_first_estimand_protocol.json",
+  "firstEstimandProtocolSha256": "d939ef97e4a094036136d945e9739713e469b7b435c88857945e46a8f913e571",
+  "variableConfirmationMatrixPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_variable_confirmation_matrix.json",
+  "variableConfirmationMatrixSha256": "e6a459ac8560a5a40d29a0704ae3a0c9c3fa3a789663936b2f58cdcc899d33d6",
+  "modelAdmissionContractPath": "docs/reference/human-infra-model-admission-contract.json",
+  "modelAdmissionContractSha256": "106204810212c29fa665510d6937f0cce2ffe7edf42f28b78b589a92f9f617ff",
+  "modelAdmissionCandidateRegistryPath": "docs/reference/human-infra-model-admission-candidate-registry.json",
+  "modelAdmissionCandidateRegistrySha256": "5c5703b8ce1fae9cb11abec449446c7d34968081af54613130ccb85542842bb1",
+  "authenticatedCaptureTemplatePath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_authenticated_capture_template.json",
+  "authenticatedCaptureTemplateSha256": "dc097acfcb44007b42a25ce500c6cb1d23b1154f6620a7797445293817313eeb",
+  "overallStatus": "PASS",
+  "summary": {
+    "pass": 12,
+    "fail": 0
+  },
+  "targetEstimand": {
+    "id": "E-NHATS-R13R14-FS-01",
+    "label": "Adjacent-round aggregate functional-survival state",
+    "timeZero": "R13 baseline interview state after official field confirmation",
+    "followupWindow": "R14 adjacent-round functional-survival classification",
+    "targetPopulationStatus": "candidate-only-unverified",
+    "admissionLevel": "L2-estimand-design-only",
+    "blockedUses": [
+      "individual-death-date-output",
+      "individual-life-expectancy-output",
+      "individual-advice",
+      "medical-advice",
+      "calibrated-prediction",
+      "causal-effect-claim",
+      "intervention-ranking"
+    ]
+  },
+  "boundary": {
+    "narrowEstimandSelected": true,
+    "l2CandidateFamiliesMapped": true,
+    "exactVariablesConfirmed": false,
+    "colecticaValueLabelsConfirmed": false,
+    "colecticaAuthenticatedCapturesComplete": false,
+    "governedDataAccessReady": false,
+    "cohortFlowReady": false,
+    "surveyDesignReady": false,
+    "realExtractionAllowed": false,
+    "l4AdmissionAllowed": false,
+    "calibrationAllowed": false,
+    "individualPredictionAllowed": false,
+    "reason": "The first narrow estimand and six candidate family roles are mapped at L2, but every path to L4 remains blocked until governed data access, exact variables, value labels, cohort flow, survey design, disclosure control, validation and calibration diagnostics are complete."
+  },
+  "candidateFamilyCount": 6,
+  "l4Admissions": 0,
+  "l5Admissions": 0,
+  "checks": [
+    {
+      "id": "schema-version",
+      "status": "PASS",
+      "detail": "schemaVersion='human-infra.life-path-nhats-l2-variable-family-admission.v1'"
+    },
+    {
+      "id": "register-identity",
+      "status": "PASS",
+      "detail": "register must bind NHATS, first estimand, variable matrix and model admission truth sources"
+    },
+    {
+      "id": "current-decision-boundary",
+      "status": "PASS",
+      "detail": "narrow estimand and L2 mappings may be true, while exact variables, real extraction, L4, calibration and individual prediction remain false"
+    },
+    {
+      "id": "source-bindings-present",
+      "status": "PASS",
+      "detail": "missing=[]"
+    },
+    {
+      "id": "target-estimand-boundary",
+      "status": "PASS",
+      "detail": "target estimand must be L2 design-only and block individual/calibrated uses"
+    },
+    {
+      "id": "required-family-mappings",
+      "status": "PASS",
+      "detail": "observed=['baseline_cognition_attention', 'baseline_function', 'baseline_support_environment', 'design_identity_route', 'endpoint_censoring', 'survey_design']"
+    },
+    {
+      "id": "mapping-crosswalk-and-promotion-boundary",
+      "status": "PASS",
+      "detail": "every mapping must point to existing estimand/matrix families, stay L2 and keep promotionAllowed=false"
+    },
+    {
+      "id": "l4-blockers-complete",
+      "status": "PASS",
+      "detail": "missing=[]"
+    },
+    {
+      "id": "hard-abort-inheritance",
+      "status": "PASS",
+      "detail": "register must inherit all model-admission hard abort gates"
+    },
+    {
+      "id": "summary-boundary",
+      "status": "PASS",
+      "detail": "summary must report six L2 families, zero L4/L5 admissions and no calibrated or individual use"
+    },
+    {
+      "id": "prohibited-keys-absent",
+      "status": "PASS",
+      "detail": "present=[]"
+    },
+    {
+      "id": "capture-template-boundary-inherited",
+      "status": "PASS",
+      "detail": "L2 family admission must inherit authenticated capture template blockers"
+    }
+  ]
+}
