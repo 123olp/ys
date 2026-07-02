@@ -1,0 +1,337 @@
+{
+  "schemaVersion": "human-infra.model-admission-contract.v1",
+  "contractId": "human-infra-model-admission-contract",
+  "status": "active-model-admission-contract-calibrated-admission-blocked",
+  "reviewDate": "2026-07-03",
+  "owner": "tradecatlabs",
+  "purpose": "Define the gate between reviewed evidence artifacts and any Human Infra quantitative model input. The contract prevents Source/variable/endpoint/uncertainty/transfer/downgrade artifacts from being silently promoted into calibrated predictors, intervention effects or individual claims.",
+  "scope": {
+    "included": [
+      "admission levels for narrative evidence, bounded reviewed artifacts, variable candidates, synthetic toy models, aggregate calibrated research models and individual decision support",
+      "minimum gates for converting reviewed artifacts into model variables or scenario parameters",
+      "hard abort gates that keep evidence out of any model regardless of narrative value",
+      "current repository decision for B1-B5 reviewed artifacts and the life-path model pipeline"
+    ],
+    "excluded": [
+      "new statistical estimator",
+      "new clinical prediction model",
+      "personal decision support",
+      "individual death-date output",
+      "medical treatment recommendation",
+      "calibration claim without governed real data and validation"
+    ]
+  },
+  "sourceOfTruth": {
+    "predictionModelContract": "docs/reference/life-path-prediction-model-contract.md",
+    "predictionModelGovernance": "docs/reference/life-path-prediction-model-governance.md",
+    "maturityGapRegister": "docs/reference/human-infra-maturity-gap-register.json",
+    "maturityRoadmap": "docs/reference/human-infra-maturity-roadmap.md",
+    "calibrationReadiness": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_calibration_readiness.json",
+    "firstEstimandProtocol": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_first_estimand_protocol.json",
+    "variableConfirmationMatrix": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_variable_confirmation_matrix.json",
+    "publicMortalityAnchor": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_public_mortality_anchor.json",
+    "reviewedArtifactRegisters": [
+      "docs/reference/human-infra-reviewed-card-artifact-register.json",
+      "docs/reference/human-infra-c2-longtail-first-batch-reviewed-card-artifact-register.json",
+      "docs/reference/human-infra-c2-longtail-first-batch-corrected-source-reviewed-card-artifact-register.json",
+      "docs/reference/human-infra-c2-longtail-second-batch-reviewed-card-artifact-register.json",
+      "docs/reference/human-infra-c2-longtail-third-batch-reviewed-card-artifact-register.json",
+      "docs/reference/human-infra-c2-longtail-fourth-batch-manual-fulltext-reviewed-card-artifact-register.json",
+      "docs/reference/human-infra-c2-longtail-fifth-batch-reviewed-card-artifact-register.json"
+    ]
+  },
+  "admissionLevels": [
+    {
+      "level": "L0",
+      "name": "narrative-hypothesis",
+      "allowedUse": "May appear in explanatory prose, route maps or research questions only.",
+      "minimumEvidence": [
+        "topic boundary",
+        "non-goal statement",
+        "no quantitative wording"
+      ],
+      "blockedUses": [
+        "model-variable",
+        "effect-size",
+        "prediction",
+        "intervention-ranking",
+        "clinical-validity-claim"
+      ]
+    },
+    {
+      "level": "L1",
+      "name": "bounded-reviewed-artifact",
+      "allowedUse": "May support bounded Source, variable, endpoint, uncertainty, transfer-boundary or downgrade artifacts after fresh review.",
+      "minimumEvidence": [
+        "source identity",
+        "fresh review verdict",
+        "exact claim use",
+        "transfer boundary",
+        "blocked uses"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim"
+      ]
+    },
+    {
+      "level": "L2",
+      "name": "model-candidate-variable",
+      "allowedUse": "May be listed as a candidate variable, endpoint, uncertainty channel or downgrade trigger for a future model design.",
+      "minimumEvidence": [
+        "L1 reviewed artifact",
+        "model location",
+        "population or setting",
+        "endpoint or state definition",
+        "measurement source",
+        "downgrade trigger"
+      ],
+      "blockedUses": [
+        "parameter estimate",
+        "calibrated coefficient",
+        "causal effect",
+        "personal recommendation"
+      ]
+    },
+    {
+      "level": "L3",
+      "name": "synthetic-toy-model-input",
+      "allowedUse": "May enter synthetic scenarios or stress tests if the output is labeled synthetic and not calibrated.",
+      "minimumEvidence": [
+        "versioned synthetic scenario input",
+        "sanity checks",
+        "model card",
+        "no individual rows",
+        "explicit synthetic boundary"
+      ],
+      "blockedUses": [
+        "real-world intervention claim",
+        "real cohort calibration",
+        "individual prediction",
+        "medical advice"
+      ]
+    },
+    {
+      "level": "L4",
+      "name": "aggregate-calibrated-research-model",
+      "allowedUse": "May support aggregate scenario-level research estimates after governed data access, exact variable confirmation, extraction, weighting, disclosure control, validation and calibration diagnostics.",
+      "minimumEvidence": [
+        "governed data access",
+        "pre-registered estimand",
+        "confirmed variables and value labels",
+        "cohort flow",
+        "survey design or sampling design",
+        "calibration diagnostics",
+        "validation record",
+        "disclosure-control review"
+      ],
+      "blockedUses": [
+        "individual-death-date-output",
+        "individual-advice",
+        "individual death-date output",
+        "individual medical advice",
+        "coercive ranking",
+        "unreviewed public release"
+      ]
+    },
+    {
+      "level": "L5",
+      "name": "individual-decision-support",
+      "allowedUse": "Blocked by default in this repository.",
+      "minimumEvidence": [
+        "external clinical and ethical governance beyond this repository",
+        "individual consent and appeal process",
+        "safety review",
+        "external validation for intended use"
+      ],
+      "blockedUses": [
+        "current Human Infra repository output",
+        "individual-death-date-output",
+        "individual-advice",
+        "individual death-date output",
+        "insurance employment credit policing or coercive ranking",
+        "automated life decision"
+      ]
+    }
+  ],
+  "minimumAdmissionGates": [
+    {
+      "gateId": "MAC-G1-source-review",
+      "name": "Source identity and fresh review",
+      "requiredForLevels": [
+        "L1",
+        "L2",
+        "L3",
+        "L4"
+      ],
+      "passCondition": "The source has stable identity, accessible trace, reviewer verdict, exact-claim use and blocked-use boundary."
+    },
+    {
+      "gateId": "MAC-G2-model-location",
+      "name": "Model location",
+      "requiredForLevels": [
+        "L2",
+        "L3",
+        "L4"
+      ],
+      "passCondition": "The candidate declares whether it affects state transition, hazard, observation process, action policy, time accounting or governance boundary."
+    },
+    {
+      "gateId": "MAC-G3-estimand",
+      "name": "Estimand and comparator",
+      "requiredForLevels": [
+        "L4"
+      ],
+      "passCondition": "Population, time zero, intervention or exposure, comparator, outcome, horizon and censoring rule are explicit."
+    },
+    {
+      "gateId": "MAC-G4-data-access",
+      "name": "Governed data access",
+      "requiredForLevels": [
+        "L4"
+      ],
+      "passCondition": "The dataset access tier, registration status, allowed files, storage boundary and destruction rule are recorded."
+    },
+    {
+      "gateId": "MAC-G5-variable-confirmation",
+      "name": "Exact variable and value confirmation",
+      "requiredForLevels": [
+        "L4"
+      ],
+      "passCondition": "Exact fields, value labels, missing codes, question text, universe or skip logic and route-value crosswalk are confirmed from official sources."
+    },
+    {
+      "gateId": "MAC-G6-extraction-and-cohort-flow",
+      "name": "Reproducible extraction and cohort flow",
+      "requiredForLevels": [
+        "L4"
+      ],
+      "passCondition": "A governed extractor emits aggregate cohort-flow outputs without row-level data exposure."
+    },
+    {
+      "gateId": "MAC-G7-validation-calibration",
+      "name": "Validation and calibration",
+      "requiredForLevels": [
+        "L4"
+      ],
+      "passCondition": "Internal validation, external validation plan or result, calibration diagnostics and sensitivity analysis are present."
+    },
+    {
+      "gateId": "MAC-G8-governance-boundary",
+      "name": "Governance and prohibited use",
+      "requiredForLevels": [
+        "L1",
+        "L2",
+        "L3",
+        "L4",
+        "L5"
+      ],
+      "passCondition": "The artifact explicitly blocks individual death dates, individual medical advice, coercive ranking and clinical claims outside its evidence grade."
+    }
+  ],
+  "hardAbortGates": [
+    {
+      "abortId": "ABORT-1-no-source-identity",
+      "condition": "Source identity, version, access route or traceability is missing.",
+      "result": "cannot-evaluate"
+    },
+    {
+      "abortId": "ABORT-2-biomarker-to-lifespan-leap",
+      "condition": "A biomarker-only or mechanism-only result is converted into lifespan, mortality or effective-time effect without endpoint evidence.",
+      "result": "blocked"
+    },
+    {
+      "abortId": "ABORT-3-animal-to-human-effect-leap",
+      "condition": "Animal, in vitro or computational evidence is used as a human calibrated effect estimate.",
+      "result": "blocked"
+    },
+    {
+      "abortId": "ABORT-4-no-comparator-or-time-zero",
+      "condition": "Comparator, time zero, target population or horizon is absent for a quantitative intervention claim.",
+      "result": "blocked"
+    },
+    {
+      "abortId": "ABORT-5-individual-output",
+      "condition": "The output includes individual death date, individual life expectancy, individual medical advice or individual eligibility ranking.",
+      "result": "blocked"
+    },
+    {
+      "abortId": "ABORT-6-raw-data-exposure",
+      "condition": "Raw controlled or sensitive data would enter public artifacts, public AI systems or uncontrolled storage.",
+      "result": "blocked"
+    }
+  ],
+  "currentRepositoryDecision": {
+    "overallAdmission": "blocked-for-calibrated-model",
+    "highestAllowedLevel": "L3",
+    "highestAllowedLevelBoundary": "Synthetic toy scenarios and public aggregate mortality anchors are allowed only for sanity checks and visualization; they are not calibrated prediction evidence.",
+    "calibratedPredictionAvailable": false,
+    "individualUseAllowed": false,
+    "currentC2ReviewedArtifactsAdmission": "L1/L2-only",
+    "currentC2ReviewedArtifactsBoundary": "B1-B5 reviewed artifacts can define candidate variables, endpoints, uncertainty channels, transfer boundaries and downgrade triggers, but none is admitted as a calibrated model parameter or intervention effect.",
+    "publicMortalityAnchorAdmission": "L3-baseline-plausibility-only",
+    "nhatsAdmission": "pre-extraction-protocol-only",
+    "nextDecisionNeeded": "Create a model-admission candidate registry only after selecting a narrow estimand and confirming exact variables, value labels, cohort flow, survey design and disclosure control."
+  },
+  "artifactBridge": {
+    "reviewedArtifactDefaultLevel": "L1",
+    "candidateVariableMaximumWithoutData": "L2",
+    "toyModelMaximumWithoutRealCohort": "L3",
+    "aggregateCalibrationMinimumLevel": "L4",
+    "individualSupportDefault": "L5-blocked",
+    "requiredStatement": "Reviewed artifacts are evidence-boundary objects, not model parameters. A separate admission decision is required before any artifact changes a hazard, transition, observation, policy or time-accounting parameter."
+  },
+  "standardsTrace": [
+    {
+      "id": "TRIPOD+AI",
+      "url": "https://www.tripod-statement.org/",
+      "localRole": "Prediction-model reporting anchor for transparent intended use, predictors, outcomes, validation and limitations.",
+      "localBoundary": "Reporting anchor only; current repository outputs do not satisfy calibrated clinical prediction standards."
+    },
+    {
+      "id": "PROBAST/PROBAST+AI",
+      "url": "https://www.probast.org/",
+      "localRole": "Risk-of-bias and applicability review anchor for future prediction model studies.",
+      "localBoundary": "Bias-review anchor only; no low-bias prediction claim exists without real study design and data."
+    },
+    {
+      "id": "OHDSI Patient-Level Prediction",
+      "url": "https://www.ohdsi.org/web/wiki/doku.php?id=projects:workgroups:patient-level_prediction",
+      "localRole": "Engineering reference for patient-level prediction lifecycle concepts.",
+      "localBoundary": "Reference only; Human Infra does not currently run an OHDSI PLP model."
+    },
+    {
+      "id": "Target Trial Emulation",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/26994063/",
+      "localRole": "Causal-question discipline for intervention, comparator, time zero and follow-up.",
+      "localBoundary": "Method anchor only; not evidence that any Human Infra intervention effect is identified."
+    }
+  ],
+  "nextWorkOrders": [
+    {
+      "priority": 1,
+      "item": "Build a model-admission candidate registry that maps selected reviewed artifacts to L1/L2/L3/L4 decisions without opening calibrated admission.",
+      "unblocks": [
+        "MODEL-G2B-model-admission-contract",
+        "RESEARCH-G4-variable-mechanism-contracts"
+      ]
+    },
+    {
+      "priority": 2,
+      "item": "Execute NHATS Colectica value-label review protocol and fill field-level source trace, route-value crosswalk and missing-code map.",
+      "unblocks": [
+        "MODEL-G4-field-and-value-confirmation"
+      ]
+    },
+    {
+      "priority": 3,
+      "item": "Promote only fully confirmed aggregate fields into a pre-extraction cohort-flow implementation after data access and disclosure gates pass.",
+      "unblocks": [
+        "MODEL-G5-real-extraction-and-cohort-flow"
+      ]
+    }
+  ]
+}
