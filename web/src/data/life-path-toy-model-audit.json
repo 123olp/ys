@@ -1,6 +1,6 @@
 {
   "schemaVersion": "human-infra.life-path-toy-audit.v1",
-  "generatedAt": "2026-07-02T04:23:57.055916+00:00",
+  "generatedAt": "2026-07-02T17:23:50.616010+00:00",
   "modelPath": "web/src/data/life-path-toy-model.json",
   "modelSha256": "a4c92209d79d20579bf1f575d5ebf07ffe5be9ccaf6bf3f3eef08efa287b5377",
   "overallStatus": "PASS",
@@ -119,6 +119,11 @@
       "id": "readiness-data-missing-boundary",
       "status": "PASS",
       "detail": "data requirements must state that real cohort and endpoint follow-up are missing"
+    },
+    {
+      "id": "readiness-public-aggregate-mortality-anchor",
+      "status": "PASS",
+      "detail": "public mortality anchor must remain aggregate-only and calibration-blocked"
     },
     {
       "id": "readiness-validation-plan",
@@ -1222,7 +1227,7 @@
     }
   ],
   "summary": {
-    "pass": 243,
+    "pass": 244,
     "warn": 0,
     "fail": 0
   },
@@ -1260,7 +1265,7 @@
   ],
   "calibrationReadiness": {
     "path": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_calibration_readiness.json",
-    "sha256": "ca9bc83693b29f198d803bb0741cad4a136884e24d290073fcbe235712326bd2",
+    "sha256": "0f51dc87ed255704be46e6ede9553ed7dcfcb1b2d81beb92144f18990b3fb1af",
     "status": "PASS",
     "checks": [
       {
@@ -1309,6 +1314,11 @@
         "detail": "data requirements must state that real cohort and endpoint follow-up are missing"
       },
       {
+        "id": "readiness-public-aggregate-mortality-anchor",
+        "status": "PASS",
+        "detail": "public mortality anchor must remain aggregate-only and calibration-blocked"
+      },
+      {
         "id": "readiness-validation-plan",
         "status": "PASS",
         "detail": "validation plan must include internal/external validation fields and not-started status"
@@ -1345,7 +1355,7 @@
       }
     ],
     "summary": {
-      "pass": 16,
+      "pass": 17,
       "warn": 0,
       "fail": 0
     }

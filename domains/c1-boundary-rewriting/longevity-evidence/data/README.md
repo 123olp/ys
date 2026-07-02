@@ -10,6 +10,7 @@
 - `manual/higher_order_effects.tsv` 用于维护 LEV 二阶 / 多阶效应模型输入。
 - `manual/lev_route_cards.tsv` 用于维护 LEV 主流路线卡模型输入。
 - `manual/life_path_toy_model_scenarios.json` 用于维护生命路径 toy model 的合成队列场景输入。
+- `manual/life_path_public_mortality_anchor.json` 用于维护 NCHS 2021 U.S. Life Tables 的公开聚合死亡率锚点，支持 toy baseline plausibility comparison；该文件不包含个人数据，不授权校准预测、干预效果估计或个体死亡日期输出。
 - `manual/life_path_calibration_readiness.json` 用于维护生命路径模型从 toy model 进入校准模型前必须满足的研究设计、报告、验证和禁止用途字段。
 - `manual/life_path_data_source_candidates.json` 用于维护生命路径模型后续可能使用的官方队列、死亡链接、老龄化面板和外部验证候选源；该文件只登记候选和治理边界，不表示已经下载、访问或校准。
 - `manual/life_path_nhats_acquisition_readiness.json` 用于维护 NHATS 从候选数据源进入真实提取前的机器可读准入门；该文件只记录官方来源刷新、注册、文件层级、Colectica 变量确认、survey design、endpoint、披露控制、AI 边界和存储销毁要求，不表示已经 acquisition-ready。
@@ -41,6 +42,7 @@
 - `manual/higher_order_effects.tsv`：二阶 / 多阶效应、概率门、正负链路、研究域和来源引用。
 - `manual/lev_route_cards.tsv`：R1-R9 主流路线卡、直接效应、一阶 / 二阶 / 多阶效应、概率门和禁止外推边界。
 - `manual/life_path_toy_model_scenarios.json`：合成场景、基线风险、健康质量、控制变量和 LEV 阈值压力测试输入。
+- `manual/life_path_public_mortality_anchor.json`：NCHS 2021 U.S. Life Tables 男性/女性年龄 40-100 的公开聚合 `qx/lx/dx/Lx/Tx/ex` 锚点，用于约束 baseline hazard 的现实尺度；它不是个人数据、不是校准结果、不是干预效果估计。
 - `manual/life_path_calibration_readiness.json`：校准预备契约，记录 target population、time zero、outcome、estimand、predictor、censoring、validation、calibration、sensitivity、bias/applicability、reporting、prohibited use 和当前 cannot-calibrate-yet 边界。
 - `manual/life_path_data_source_candidates.json`：候选数据源注册表，记录 HRS、NCHS linked mortality、UK Biobank、All of Us、NHATS、ELSA、SHARE 和 Framingham 等官方入口、覆盖标签、访问治理状态、限制和禁止外推边界。
 - `manual/life_path_nhats_acquisition_readiness.json`：NHATS acquisition readiness 机器契约，记录官方入口、来源事实、提取前阻塞门、禁止动作和下一步证据，当前状态为 `cannot-extract-yet`。

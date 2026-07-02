@@ -82,6 +82,7 @@ longevity-evidence/
 │   │   ├── life_path_nhats_survey_design_test_cases.json
 │   │   ├── life_path_nhats_missingness_route_protocol.json
 │   │   ├── life_path_nhats_missingness_route_test_cases.json
+│   │   ├── life_path_public_mortality_anchor.json
 │   │   ├── life_path_nhats_route_field_discovery_register.json
 │   │   └── life_path_toy_model_scenarios.json
 │   ├── processed/
@@ -108,10 +109,12 @@ longevity-evidence/
 └── scripts/
     ├── README.md
     ├── audit_life_path_toy_model.py
+    ├── build_public_mortality_anchor.py
     ├── collect_core_data.py
     ├── collect_mvp_data.py
     ├── run_life_path_sensitivity_analysis.py
     ├── run_life_path_toy_model.py
+    ├── validate_public_mortality_anchor.py
     ├── validate_nhats_colectica_value_label_protocol.py
     ├── validate_nhats_disclosure_outputs.py
     ├── validate_nhats_missingness_route_map.py
@@ -145,6 +148,7 @@ longevity-evidence/
 - `data/manual/higher_order_effects.tsv`：LEV 二阶 / 多阶效应模型输入，供 Web 导出脚本生成多阶飞轮图。
 - `data/manual/lev_route_cards.tsv`：R1-R9 主流路线卡模型输入，供 Web 导出脚本生成路线矩阵和概率门图。
 - `data/manual/life_path_toy_model_scenarios.json`：生命路径 toy model 的合成场景输入，定义基线风险、健康质量、场景控制值和 LEV 阈值压力测试。
+- `data/manual/life_path_public_mortality_anchor.json`：NCHS 2021 U.S. Life Tables 的公开聚合死亡率锚点，用于 baseline hazard plausibility comparison；它不包含个人数据，不授权校准预测、干预效果估计或个体死亡日期输出。
 - `data/manual/life_path_calibration_readiness.json`：生命路径模型的校准预备契约，记录 target population、time zero、outcome、estimand、data requirement、validation、calibration、sensitivity、bias/applicability、reporting 和 prohibited use 字段；它证明下一阶段要补什么，不证明当前模型已校准。
 - `data/manual/life_path_data_source_candidates.json`：生命路径模型的候选数据源注册表，记录官方队列入口、可能模型角色、覆盖标签、访问治理状态和禁止外推边界；它只证明后续数据源搜索空间已被登记，不证明数据已访问、模型已校准或因果效应成立。
 - `data/manual/life_path_nhats_acquisition_readiness.json`：NHATS acquisition readiness 机器契约，记录官方来源刷新、注册状态、文件层级、Colectica 变量确认、round window、survey design、endpoint、披露控制、AI 边界、存储销毁和禁止动作；它只证明提取前准入条件被机器化审计，当前仍是 `cannot-extract-yet`。
@@ -160,6 +164,8 @@ longevity-evidence/
 - `data/processed/`：采集脚本生成的 JSONL 索引和汇总。
 - `scripts/collect_mvp_data.py`：采集 PubMed、OpenAlex、ClinicalTrials.gov 和 openFDA 标签数据。
 - `scripts/collect_core_data.py`：采集 HAGR、PubChem、openFDA event 和 Drugs@FDA 数据。
+- `scripts/build_public_mortality_anchor.py`：从 NCHS 官方 xlsx 生命表生成公开聚合死亡率锚点。
+- `scripts/validate_public_mortality_anchor.py`：离线审计公开聚合死亡率锚点的 schema、来源、年龄范围、列值和禁止用途边界。
 - `scripts/run_life_path_toy_model.py`：读取合成场景并导出 `web/src/data/life-path-toy-model.json`，用于 `/model/` 的最小可运行定量展示。
 - `scripts/run_life_path_sensitivity_analysis.py`：读取合成场景和已导出的 toy model，生成 `web/src/data/life-path-sensitivity-analysis.json`，用于一因素扰动检查场景排序、开放边界和最敏感参数。
 - `scripts/validate_nhats_disclosure_outputs.py`：读取 NHATS 披露控制策略和合成测试用例，生成 `web/src/data/life-path-nhats-disclosure-control-validation.json`，验证 aggregate-only、small-cell suppression、row-level block、public AI block 和 forbidden output type 规则。

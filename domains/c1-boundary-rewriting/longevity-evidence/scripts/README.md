@@ -13,6 +13,8 @@
 
 - `collect_mvp_data.py`：采集首批干预的 PubMed、OpenAlex、ClinicalTrials.gov 和 openFDA 数据。
 - `collect_core_data.py`：采集 HAGR、PubChem、openFDA 不良事件聚合和 Drugs@FDA 数据。
+- `build_public_mortality_anchor.py`：从 NCHS 2021 U.S. Life Tables 官方 xlsx 表生成 `data/manual/life_path_public_mortality_anchor.json`，作为公开聚合死亡率基线锚点；它不接触个人数据，不证明校准预测。
+- `validate_public_mortality_anchor.py`：离线审计 `data/manual/life_path_public_mortality_anchor.json` 的 schema、官方来源、年龄范围、sex-specific 表、qx/lx/ex 合理性和禁止个体预测边界。
 - `run_life_path_toy_model.py`：读取 `data/manual/life_path_toy_model_scenarios.json`，导出 `web/src/data/life-path-toy-model.json` 供 `/model/` 展示。
 - `run_life_path_sensitivity_analysis.py`：读取同一组合成场景和已生成 toy model，导出 `web/src/data/life-path-sensitivity-analysis.json`，用于检查风险倍率、健康质量位移、能力倍率、主观时间、LEV 进度和尾部风险扰动下的场景稳定性。
 - `validate_nhats_disclosure_outputs.py`：读取 `data/manual/life_path_nhats_disclosure_control_policy.json` 和 `data/manual/life_path_nhats_disclosure_control_test_cases.json`，导出 `web/src/data/life-path-nhats-disclosure-control-validation.json`，验证 NHATS synthetic output envelope 是否满足 aggregate-only、n < 5 suppression、row-level block、public AI block 和 forbidden-output rules。
@@ -27,6 +29,8 @@
 ```bash
 python3 domains/c1-boundary-rewriting/longevity-evidence/scripts/collect_mvp_data.py --limit 10
 python3 domains/c1-boundary-rewriting/longevity-evidence/scripts/collect_core_data.py
+python3 domains/c1-boundary-rewriting/longevity-evidence/scripts/build_public_mortality_anchor.py
+python3 domains/c1-boundary-rewriting/longevity-evidence/scripts/validate_public_mortality_anchor.py
 python3 domains/c1-boundary-rewriting/longevity-evidence/scripts/run_life_path_toy_model.py
 python3 domains/c1-boundary-rewriting/longevity-evidence/scripts/run_life_path_sensitivity_analysis.py
 python3 domains/c1-boundary-rewriting/longevity-evidence/scripts/validate_nhats_disclosure_outputs.py

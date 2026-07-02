@@ -3,7 +3,7 @@
 - Overall status: `PASS`
 - Model path: `web/src/data/life-path-toy-model.json`
 - Model SHA-256: `a4c92209d79d20579bf1f575d5ebf07ffe5be9ccaf6bf3f3eef08efa287b5377`
-- Generated at: `2026-07-02T04:23:57.055916+00:00`
+- Generated at: `2026-07-02T17:23:50.616010+00:00`
 
 ## Checks
 
@@ -32,6 +32,7 @@
 | `readiness-outcome-boundary` | `PASS` | outcomes must include primary cohort outcomes and forbid individual death-date output |
 | `readiness-estimands` | `PASS` | estimands must define scenario-level questions before calibration |
 | `readiness-data-missing-boundary` | `PASS` | data requirements must state that real cohort and endpoint follow-up are missing |
+| `readiness-public-aggregate-mortality-anchor` | `PASS` | public mortality anchor must remain aggregate-only and calibration-blocked |
 | `readiness-validation-plan` | `PASS` | validation plan must include internal/external validation fields and not-started status |
 | `readiness-calibration-plan` | `PASS` | calibration plan must include diagnostics and not-started status |
 | `readiness-sensitivity-plan` | `PASS` | sensitivity analysis plan must define required analyses |
@@ -256,7 +257,7 @@
 ## Calibration Readiness
 
 - Readiness path: `domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_calibration_readiness.json`
-- Readiness SHA-256: `ca9bc83693b29f198d803bb0741cad4a136884e24d290073fcbe235712326bd2`
+- Readiness SHA-256: `0f51dc87ed255704be46e6ede9553ed7dcfcb1b2d81beb92144f18990b3fb1af`
 - Readiness status: `PASS`
 - Boundary: readiness fields are present, but no real cohort, calibration, external validation, or individual use is available.
 

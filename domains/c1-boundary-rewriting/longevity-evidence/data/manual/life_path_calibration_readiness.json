@@ -165,6 +165,27 @@
     "candidateSourceRegistry": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_data_source_candidates.json",
     "minimumBeforeCalibration": "At least one governed longitudinal cohort with mortality and functional outcomes plus a held-out validation plan."
   },
+  "publicAggregateMortalityAnchor": {
+    "status": "available-for-baseline-plausibility-only",
+    "source": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_public_mortality_anchor.json",
+    "sourceAuthority": "National Center for Health Statistics, National Vital Statistics System",
+    "periodYear": 2021,
+    "scope": "United States sex-specific public aggregate period life tables, ages 40-100.",
+    "allowedUses": [
+      "baseline hazard plausibility comparison",
+      "life-table column contract testing",
+      "aggregate mortality scale anchoring before real cohort calibration"
+    ],
+    "blockedUses": [
+      "individual prediction",
+      "individual death-date output",
+      "medical advice",
+      "calibrated Human Infra prediction",
+      "intervention effect estimation",
+      "LEV proof"
+    ],
+    "boundary": "This public aggregate anchor improves the mortality baseline reference layer, but it does not satisfy real cohort access, field confirmation, censoring, survey design, calibration, external validation or individual-use gates."
+  },
   "censoringAndCompetingRisks": {
     "status": "required-before-calibration",
     "requiredFields": [

@@ -258,6 +258,7 @@ REQUIRED_READINESS_SECTIONS = {
     "estimands",
     "candidatePredictors",
     "dataRequirements",
+    "publicAggregateMortalityAnchor",
     "censoringAndCompetingRisks",
     "validationPlan",
     "calibrationPlan",
@@ -754,6 +755,22 @@ def audit_readiness(readiness: dict[str, Any], readiness_path: Path) -> dict[str
         "readiness-data-missing-boundary",
         status_from_bool(data_ok),
         "data requirements must state that real cohort and endpoint follow-up are missing",
+    )
+
+    public_anchor = readiness.get("publicAggregateMortalityAnchor")
+    public_anchor_ok = (
+        isinstance(public_anchor, dict)
+        and public_anchor.get("status") == "available-for-baseline-plausibility-only"
+        and str(public_anchor.get("source", "")).endswith("life_path_public_mortality_anchor.json")
+        and has_text(public_anchor.get("blockedUses", []), "individual")
+        and has_text(public_anchor.get("blockedUses", []), "calibrated")
+        and has_text(public_anchor.get("blockedUses", []), "intervention")
+    )
+    add_check(
+        checks,
+        "readiness-public-aggregate-mortality-anchor",
+        status_from_bool(public_anchor_ok),
+        "public mortality anchor must remain aggregate-only and calibration-blocked",
     )
 
     validation_plan = readiness.get("validationPlan")

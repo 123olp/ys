@@ -1,10 +1,11 @@
-.PHONY: check structure claim-matrix-audit maturity-gap-audit page-claim-audit audience-claim-map-audit paper-claim-audit domain-falsifier-audit domain-claim-matrix-audit domain-field-extraction-audit c2-longtail-coverage-audit c2-longtail-first-batch-promotion-audit c2-longtail-first-batch-source-extraction-audit c2-longtail-first-batch-source-extraction-register-audit c2-longtail-first-batch-local-review-audit c2-longtail-first-batch-independent-fresh-review-protocol-audit c2-longtail-first-batch-independent-fresh-review-verdict-audit c2-longtail-first-batch-reviewed-card-artifact-audit c2-longtail-first-batch-blocked-source-resolution-audit c2-longtail-first-batch-source-resolution-fresh-review-verdict-audit c2-longtail-first-batch-corrected-source-reextraction-queue-audit c2-longtail-first-batch-corrected-source-reextraction-register-audit c2-longtail-first-batch-corrected-source-fresh-review-verdict-audit c2-longtail-first-batch-corrected-source-reviewed-card-artifact-audit c2-longtail-second-batch-promotion-audit c2-longtail-second-batch-source-extraction-audit c2-longtail-second-batch-source-extraction-register-audit c2-longtail-second-batch-local-review-audit c2-longtail-second-batch-independent-fresh-review-protocol-audit c2-longtail-second-batch-independent-fresh-review-verdict-audit c2-longtail-second-batch-reviewed-card-artifact-audit c2-longtail-third-batch-promotion-audit c2-longtail-third-batch-source-extraction-audit c2-longtail-third-batch-source-extraction-register-audit c2-longtail-third-batch-local-review-audit c2-longtail-third-batch-source-resolution-audit domain-source-queue-audit domain-source-extraction-audit domain-source-promotion-audit source-context-local-review-audit card-promotion-prep-audit independent-fresh-review-protocol-audit independent-fresh-review-verdict-audit reviewed-card-artifact-audit future-boundary-route-card-audit falsifier-source-audit falsifier-source-extraction-audit py-compile clean
+.PHONY: check structure claim-matrix-audit maturity-gap-audit public-mortality-anchor-audit page-claim-audit audience-claim-map-audit paper-claim-audit domain-falsifier-audit domain-claim-matrix-audit domain-field-extraction-audit c2-longtail-coverage-audit c2-longtail-first-batch-promotion-audit c2-longtail-first-batch-source-extraction-audit c2-longtail-first-batch-source-extraction-register-audit c2-longtail-first-batch-local-review-audit c2-longtail-first-batch-independent-fresh-review-protocol-audit c2-longtail-first-batch-independent-fresh-review-verdict-audit c2-longtail-first-batch-reviewed-card-artifact-audit c2-longtail-first-batch-blocked-source-resolution-audit c2-longtail-first-batch-source-resolution-fresh-review-verdict-audit c2-longtail-first-batch-corrected-source-reextraction-queue-audit c2-longtail-first-batch-corrected-source-reextraction-register-audit c2-longtail-first-batch-corrected-source-fresh-review-verdict-audit c2-longtail-first-batch-corrected-source-reviewed-card-artifact-audit c2-longtail-second-batch-promotion-audit c2-longtail-second-batch-source-extraction-audit c2-longtail-second-batch-source-extraction-register-audit c2-longtail-second-batch-local-review-audit c2-longtail-second-batch-independent-fresh-review-protocol-audit c2-longtail-second-batch-independent-fresh-review-verdict-audit c2-longtail-second-batch-reviewed-card-artifact-audit c2-longtail-third-batch-promotion-audit c2-longtail-third-batch-source-extraction-audit c2-longtail-third-batch-source-extraction-register-audit c2-longtail-third-batch-local-review-audit c2-longtail-third-batch-source-resolution-audit domain-source-queue-audit domain-source-extraction-audit domain-source-promotion-audit source-context-local-review-audit card-promotion-prep-audit independent-fresh-review-protocol-audit independent-fresh-review-verdict-audit reviewed-card-artifact-audit future-boundary-route-card-audit falsifier-source-audit falsifier-source-extraction-audit py-compile clean
 
 check:
 	$(MAKE) clean
 	$(MAKE) structure
 	$(MAKE) claim-matrix-audit
 	$(MAKE) maturity-gap-audit
+	$(MAKE) public-mortality-anchor-audit
 	$(MAKE) page-claim-audit
 	$(MAKE) audience-claim-map-audit
 	$(MAKE) paper-claim-audit
@@ -60,6 +61,9 @@ claim-matrix-audit:
 
 maturity-gap-audit:
 	python3 tools/audit_human_infra_maturity_gap_register.py
+
+public-mortality-anchor-audit:
+	python3 domains/c1-boundary-rewriting/longevity-evidence/scripts/validate_public_mortality_anchor.py
 
 page-claim-audit:
 	python3 tools/audit_human_infra_page_claim_consistency.py
@@ -242,6 +246,8 @@ tools/audit_human_infra_domain_source_specific_extraction_queue.py \
 		tools/update_domain_doc_contracts.py \
 		domains/c1-boundary-rewriting/longevity-evidence/scripts/collect_mvp_data.py \
 		domains/c1-boundary-rewriting/longevity-evidence/scripts/collect_core_data.py \
+		domains/c1-boundary-rewriting/longevity-evidence/scripts/build_public_mortality_anchor.py \
+		domains/c1-boundary-rewriting/longevity-evidence/scripts/validate_public_mortality_anchor.py \
 		domains/c1-boundary-rewriting/longevity-evidence/scripts/run_life_path_toy_model.py \
 		domains/c1-boundary-rewriting/longevity-evidence/scripts/run_life_path_sensitivity_analysis.py \
 		domains/c1-boundary-rewriting/longevity-evidence/scripts/validate_nhats_disclosure_outputs.py \
