@@ -1,8 +1,8 @@
 {
   "schemaVersion": "human-infra.domain-source-specific-extraction-register.v1",
   "registerId": "human-infra-domain-source-specific-extraction-register-2026-07-02-v0.1",
-  "status": "partial-first-wave-method-anchor-extractions-not-complete",
-  "purpose": "Record the first completed source-specific extraction rows for Human Infra domain modeling, converting selected method anchors from queue items into audited endpoint, population, uncertainty and transfer-boundary fields without opening calibrated prediction.",
+  "status": "partial-second-wave-biological-mechanism-extractions-not-complete",
+  "purpose": "Record completed source-specific extraction rows for Human Infra domain modeling, converting selected method and biological-mechanism anchors from queue items into audited endpoint, population, uncertainty and transfer-boundary fields without opening calibrated prediction.",
   "sourceOfTruth": {
     "domainSourceSpecificExtractionQueue": "docs/reference/human-infra-domain-source-specific-extraction-queue.json",
     "domainSourceCardFieldExtraction": "docs/reference/human-infra-domain-source-card-field-extraction.json",
@@ -11,24 +11,32 @@
     "maturityGapRegister": "docs/reference/human-infra-maturity-gap-register.json"
   },
   "scope": {
-    "coverageLevel": "partial-first-wave-method-anchor-extractions",
+    "coverageLevel": "partial-second-wave-biological-mechanism-extractions",
     "derivedTaskUnit": "domainId + sourceCardId",
     "queuedTaskCount": 81,
-    "completedTaskCount": 25,
-    "remainingQueuedTaskCount": 56,
-    "completedFieldRowCount": 16,
-    "completedSourceAnchorCount": 4,
+    "completedTaskCount": 55,
+    "remainingQueuedTaskCount": 26,
+    "completedFieldRowCount": 21,
+    "completedSourceAnchorCount": 11,
     "completedSourceAnchors": [
       "SA-KAPLAN-MEIER-1958",
       "SA-COX-1972",
       "SA-TARGET-TRIAL-2022",
-      "SA-TRIPOD-AI-2024"
+      "SA-TRIPOD-AI-2024",
+      "SA-HALLMARKS-AGING-2023",
+      "SA-HALLMARKS-AGING-2013",
+      "SA-HALLMARKS-CANCER-2022",
+      "SA-YAMANAKA-IPS-2006",
+      "SA-PARTIAL-REPROGRAMMING-2016",
+      "SA-IMMUNOSENESCENCE-2024",
+      "SA-GRIMAGE-2019"
     ],
-    "selectionRule": "Complete the four method anchors that constrain survival curves, hazards, intervention estimands and prediction-model reporting before expanding into biological mechanism anchors.",
+    "selectionRule": "Complete method anchors first, then biological mechanism and safety anchors that constrain aging, cancer, reprogramming, immune maintenance and biomarker interpretation before expanding into social, cognitive and infrastructure anchors.",
     "currentLimitations": [
-      "Only 25 of the 81 queued domain-source tasks are complete.",
-      "Rows are method-anchor extractions, not full external literature fresh reviews.",
-      "Completed rows keep calibrated prediction, individual recommendation and intervention ranking blocked."
+      "Only 55 of the 81 queued domain-source tasks are complete.",
+      "Rows are field-level source-specific extractions, not full external literature fresh reviews.",
+      "Completed rows keep calibrated prediction, individual recommendation and intervention ranking blocked.",
+      "Remaining tasks still include social, cognitive, digital-twin, preservation and future-waiting anchors."
     ]
   },
   "sourceAnchorDecisions": [
@@ -73,6 +81,90 @@
       "sourceRole": "prediction-model-reporting-and-validation-method-anchor",
       "modelAdmissionDecision": "prediction-reporting-support-only-blocked-for-clinical-prediction",
       "transferBoundary": "Transfer only as a prediction-reporting and validation checklist. It does not authorize clinical prediction, individual advice or automated action.",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "intervention-ranking",
+        "individual-death-date-output"
+      ]
+    },
+    {
+      "sourceCardId": "SA-HALLMARKS-AGING-2023",
+      "sourceRole": "expanded-aging-hallmark-mechanism-taxonomy-anchor",
+      "modelAdmissionDecision": "mechanism-taxonomy-support-only-blocked-for-intervention-effect-claim",
+      "transferBoundary": "Transfer only as mechanism decomposition and variable-discovery vocabulary. It does not prove causality, clinical benefit, longevity effect, or route safety.",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "intervention-ranking",
+        "domain-claim-upgrade"
+      ]
+    },
+    {
+      "sourceCardId": "SA-HALLMARKS-AGING-2013",
+      "sourceRole": "baseline-aging-hallmark-mechanism-taxonomy-anchor",
+      "modelAdmissionDecision": "mechanism-taxonomy-support-only-blocked-for-intervention-effect-claim",
+      "transferBoundary": "Transfer only as historical mechanism vocabulary. It does not authorize intervention claims, biomarker substitution, or subject-level prediction.",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "intervention-ranking",
+        "domain-claim-upgrade"
+      ]
+    },
+    {
+      "sourceCardId": "SA-HALLMARKS-CANCER-2022",
+      "sourceRole": "cancer-risk-and-tumor-capability-abort-gate-anchor",
+      "modelAdmissionDecision": "adverse-mechanism-support-only-blocked-for-safety-or-benefit-claim",
+      "transferBoundary": "Transfer only as cancer-risk and abort-gate vocabulary. It does not prove screening benefit, treatment effect, or quantified cancer hazard.",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "intervention-ranking",
+        "domain-claim-upgrade"
+      ]
+    },
+    {
+      "sourceCardId": "SA-YAMANAKA-IPS-2006",
+      "sourceRole": "cell-identity-reprogramming-foundation-anchor",
+      "modelAdmissionDecision": "cell-state-transition-support-only-blocked-for-rejuvenation-claim",
+      "transferBoundary": "Transfer only as a cell-state reprogramming foundation. It does not support human anti-aging therapy, lifespan extension, or safe tissue rejuvenation claims.",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "intervention-ranking",
+        "domain-claim-upgrade"
+      ]
+    },
+    {
+      "sourceCardId": "SA-PARTIAL-REPROGRAMMING-2016",
+      "sourceRole": "partial-reprogramming-controlled-window-route-anchor",
+      "modelAdmissionDecision": "preclinical-route-support-only-blocked-for-clinical-rejuvenation-claim",
+      "transferBoundary": "Transfer only as route-screening vocabulary for partial reprogramming. It does not establish clinical rejuvenation, LEV, or subject-level safety.",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "intervention-ranking",
+        "domain-claim-upgrade"
+      ]
+    },
+    {
+      "sourceCardId": "SA-IMMUNOSENESCENCE-2024",
+      "sourceRole": "immune-aging-multichannel-maintenance-anchor",
+      "modelAdmissionDecision": "immune-mechanism-support-only-blocked-for-treatment-or-boost-claim",
+      "transferBoundary": "Transfer only as immune-aging mechanism and variable vocabulary. It does not support immune-boosting advice, treatment selection, or calibrated risk estimates.",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "intervention-ranking",
+        "domain-claim-upgrade"
+      ]
+    },
+    {
+      "sourceCardId": "SA-GRIMAGE-2019",
+      "sourceRole": "biological-age-risk-marker-observation-anchor",
+      "modelAdmissionDecision": "biomarker-observation-support-only-blocked-for-causal-or-predictive-claim",
+      "transferBoundary": "Transfer only as biomarker-risk and observation-process vocabulary. It does not prove mortality reduction, intervention effect, or personal prognosis.",
       "blockedUses": [
         "calibrated-prediction",
         "individual-recommendation",
@@ -624,6 +716,666 @@
       "uncertaintyOrBias": "Time-varying confounding, selection, adherence, immortal-time bias, competing risks, missingness and endpoint mismatch remain open unless explicitly handled.",
       "transferBoundary": "Transfer only as causal-design discipline for future intervention evaluation. It does not establish that any domain intervention works.",
       "modelAdmissionDecision": "causal-design-support-only-blocked-for-effect-claim",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "intervention-ranking",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Create endocrine axis cards separating deficiency, excess, replacement, suppression, feedback and adverse tradeoffs."
+    },
+    {
+      "domainId": "longevity-evidence",
+      "domainClaimId": "HIDOM-CL002",
+      "fieldCardId": "HIDOM-FLD002",
+      "sourceCardId": "SA-HALLMARKS-AGING-2023",
+      "extractionStatus": "completed-second-wave-biological-mechanism-field-extraction",
+      "sourceRole": "expanded-aging-hallmark-mechanism-taxonomy-anchor",
+      "exactClaimUse": "Supports treating aging as a multi-hallmark maintenance system and mapping domain variables to mechanism families, without importing intervention effects.",
+      "endpointDefinition": "For longevity-evidence, admissible endpoint language is limited to the registered endpoint candidates: survival-curve-shift, effective-time-change, LEV-threshold-status. The source does not add a new endpoint beyond this field row.",
+      "populationOrSample": "The source is used as a mechanism, observation or safety-boundary anchor; a concrete Human Infra population, tissue context, eligibility rule, measurement protocol and follow-up horizon must be supplied by a later domain-specific study before quantitative use.",
+      "effectOrMechanismSignal": "Mechanism-taxonomy signal only: identifies plausible maintenance layers and interactions that may constrain healthspan, lifespan or future option value.",
+      "uncertaintyOrBias": "Hallmark categories are conceptual and overlapping; species, tissue context, biomarker choice and endpoint mismatch can break transfer to Human Infra claims.",
+      "transferBoundary": "Transfer only as mechanism decomposition and variable-discovery vocabulary. It does not prove causality, clinical benefit, longevity effect, or route safety.",
+      "modelAdmissionDecision": "mechanism-taxonomy-support-only-blocked-for-intervention-effect-claim",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "intervention-ranking",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Extend LEV route cards to non-mainstream boundary routes and connect each route to a falsifier row."
+    },
+    {
+      "domainId": "cellular-reprogramming",
+      "domainClaimId": "HIDOM-CL007",
+      "fieldCardId": "HIDOM-FLD007",
+      "sourceCardId": "SA-HALLMARKS-CANCER-2022",
+      "extractionStatus": "completed-second-wave-biological-mechanism-field-extraction",
+      "sourceRole": "cancer-risk-and-tumor-capability-abort-gate-anchor",
+      "exactClaimUse": "Supports representing cancer as an adverse capability and safety-gate channel that can downgrade regeneration, reprogramming and maintenance claims.",
+      "endpointDefinition": "For cellular-reprogramming, admissible endpoint language is limited to the registered endpoint candidates: tissue-function-change, healthspan-proxy, safety-gate-status. The source does not add a new endpoint beyond this field row.",
+      "populationOrSample": "The source is used as a mechanism, observation or safety-boundary anchor; a concrete Human Infra population, tissue context, eligibility rule, measurement protocol and follow-up horizon must be supplied by a later domain-specific study before quantitative use.",
+      "effectOrMechanismSignal": "Adverse-mechanism signal only: identifies tumor-risk channels and malignancy transitions that can reduce survival, function and option value.",
+      "uncertaintyOrBias": "Cancer mechanisms vary by tissue, exposure, genotype, screening pathway and treatment context; early detection, risk reduction and survival benefit cannot be assumed equivalent.",
+      "transferBoundary": "Transfer only as cancer-risk and abort-gate vocabulary. It does not prove screening benefit, treatment effect, or quantified cancer hazard.",
+      "modelAdmissionDecision": "adverse-mechanism-support-only-blocked-for-safety-or-benefit-claim",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "intervention-ranking",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Convert the Yamanaka-factor literature spine into Source Cards with identity-loss and tumor-risk gates."
+    },
+    {
+      "domainId": "cellular-reprogramming",
+      "domainClaimId": "HIDOM-CL007",
+      "fieldCardId": "HIDOM-FLD007",
+      "sourceCardId": "SA-YAMANAKA-IPS-2006",
+      "extractionStatus": "completed-second-wave-biological-mechanism-field-extraction",
+      "sourceRole": "cell-identity-reprogramming-foundation-anchor",
+      "exactClaimUse": "Supports the foundational claim that defined factors can reprogram mature cell state under experimental conditions, while separating identity rewiring from safe subject-level gain.",
+      "endpointDefinition": "For cellular-reprogramming, admissible endpoint language is limited to the registered endpoint candidates: tissue-function-change, healthspan-proxy, safety-gate-status. The source does not add a new endpoint beyond this field row.",
+      "populationOrSample": "The source is used as a mechanism, observation or safety-boundary anchor; a concrete Human Infra population, tissue context, eligibility rule, measurement protocol and follow-up horizon must be supplied by a later domain-specific study before quantitative use.",
+      "effectOrMechanismSignal": "State-transition signal only: defined factors can move cells toward pluripotent states; this is not evidence of safe rejuvenation in a continuous subject.",
+      "uncertaintyOrBias": "Identity loss, pluripotency, tumor risk, delivery, tissue integration and subject-continuity gates can turn the route negative.",
+      "transferBoundary": "Transfer only as a cell-state reprogramming foundation. It does not support human anti-aging therapy, lifespan extension, or safe tissue rejuvenation claims.",
+      "modelAdmissionDecision": "cell-state-transition-support-only-blocked-for-rejuvenation-claim",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "intervention-ranking",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Convert the Yamanaka-factor literature spine into Source Cards with identity-loss and tumor-risk gates."
+    },
+    {
+      "domainId": "cellular-reprogramming",
+      "domainClaimId": "HIDOM-CL007",
+      "fieldCardId": "HIDOM-FLD007",
+      "sourceCardId": "SA-PARTIAL-REPROGRAMMING-2016",
+      "extractionStatus": "completed-second-wave-biological-mechanism-field-extraction",
+      "sourceRole": "partial-reprogramming-controlled-window-route-anchor",
+      "exactClaimUse": "Supports modeling partial reprogramming as a controlled-window route where potential rejuvenation signals must be evaluated with identity, function and cancer gates.",
+      "endpointDefinition": "For cellular-reprogramming, admissible endpoint language is limited to the registered endpoint candidates: tissue-function-change, healthspan-proxy, safety-gate-status. The source does not add a new endpoint beyond this field row.",
+      "populationOrSample": "The source is used as a mechanism, observation or safety-boundary anchor; a concrete Human Infra population, tissue context, eligibility rule, measurement protocol and follow-up horizon must be supplied by a later domain-specific study before quantitative use.",
+      "effectOrMechanismSignal": "Preclinical route signal only: controlled exposure may alter cellular age or function markers, but benefit and safety are inseparable from dose, timing, tissue and delivery.",
+      "uncertaintyOrBias": "Animal or cellular signals may not transfer to humans; overexposure, incomplete delivery, tumor risk, identity loss and functional deterioration remain central uncertainties.",
+      "transferBoundary": "Transfer only as route-screening vocabulary for partial reprogramming. It does not establish clinical rejuvenation, LEV, or subject-level safety.",
+      "modelAdmissionDecision": "preclinical-route-support-only-blocked-for-clinical-rejuvenation-claim",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "intervention-ranking",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Convert the Yamanaka-factor literature spine into Source Cards with identity-loss and tumor-risk gates."
+    },
+    {
+      "domainId": "regenerative-medicine",
+      "domainClaimId": "HIDOM-CL008",
+      "fieldCardId": "HIDOM-FLD008",
+      "sourceCardId": "SA-HALLMARKS-AGING-2023",
+      "extractionStatus": "completed-second-wave-biological-mechanism-field-extraction",
+      "sourceRole": "expanded-aging-hallmark-mechanism-taxonomy-anchor",
+      "exactClaimUse": "Supports treating aging as a multi-hallmark maintenance system and mapping domain variables to mechanism families, without importing intervention effects.",
+      "endpointDefinition": "For regenerative-medicine, admissible endpoint language is limited to the registered endpoint candidates: durable-function, recovery-time, future-option-access. The source does not add a new endpoint beyond this field row.",
+      "populationOrSample": "The source is used as a mechanism, observation or safety-boundary anchor; a concrete Human Infra population, tissue context, eligibility rule, measurement protocol and follow-up horizon must be supplied by a later domain-specific study before quantitative use.",
+      "effectOrMechanismSignal": "Mechanism-taxonomy signal only: identifies plausible maintenance layers and interactions that may constrain healthspan, lifespan or future option value.",
+      "uncertaintyOrBias": "Hallmark categories are conceptual and overlapping; species, tissue context, biomarker choice and endpoint mismatch can break transfer to Human Infra claims.",
+      "transferBoundary": "Transfer only as mechanism decomposition and variable-discovery vocabulary. It does not prove causality, clinical benefit, longevity effect, or route safety.",
+      "modelAdmissionDecision": "mechanism-taxonomy-support-only-blocked-for-intervention-effect-claim",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "intervention-ranking",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Build route cards separating cell therapy, tissue engineering, organ replacement and local repair."
+    },
+    {
+      "domainId": "regenerative-medicine",
+      "domainClaimId": "HIDOM-CL008",
+      "fieldCardId": "HIDOM-FLD008",
+      "sourceCardId": "SA-PARTIAL-REPROGRAMMING-2016",
+      "extractionStatus": "completed-second-wave-biological-mechanism-field-extraction",
+      "sourceRole": "partial-reprogramming-controlled-window-route-anchor",
+      "exactClaimUse": "Supports modeling partial reprogramming as a controlled-window route where potential rejuvenation signals must be evaluated with identity, function and cancer gates.",
+      "endpointDefinition": "For regenerative-medicine, admissible endpoint language is limited to the registered endpoint candidates: durable-function, recovery-time, future-option-access. The source does not add a new endpoint beyond this field row.",
+      "populationOrSample": "The source is used as a mechanism, observation or safety-boundary anchor; a concrete Human Infra population, tissue context, eligibility rule, measurement protocol and follow-up horizon must be supplied by a later domain-specific study before quantitative use.",
+      "effectOrMechanismSignal": "Preclinical route signal only: controlled exposure may alter cellular age or function markers, but benefit and safety are inseparable from dose, timing, tissue and delivery.",
+      "uncertaintyOrBias": "Animal or cellular signals may not transfer to humans; overexposure, incomplete delivery, tumor risk, identity loss and functional deterioration remain central uncertainties.",
+      "transferBoundary": "Transfer only as route-screening vocabulary for partial reprogramming. It does not establish clinical rejuvenation, LEV, or subject-level safety.",
+      "modelAdmissionDecision": "preclinical-route-support-only-blocked-for-clinical-rejuvenation-claim",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "intervention-ranking",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Build route cards separating cell therapy, tissue engineering, organ replacement and local repair."
+    },
+    {
+      "domainId": "cancer-screening-early-detection-continuity",
+      "domainClaimId": "HIDOM-CL009",
+      "fieldCardId": "HIDOM-FLD009",
+      "sourceCardId": "SA-HALLMARKS-CANCER-2022",
+      "extractionStatus": "completed-second-wave-biological-mechanism-field-extraction",
+      "sourceRole": "cancer-risk-and-tumor-capability-abort-gate-anchor",
+      "exactClaimUse": "Supports representing cancer as an adverse capability and safety-gate channel that can downgrade regeneration, reprogramming and maintenance claims.",
+      "endpointDefinition": "For cancer-screening-early-detection-continuity, admissible endpoint language is limited to the registered endpoint candidates: cancer-mortality-risk, treatment-burden, effective-time-preservation. The source does not add a new endpoint beyond this field row.",
+      "populationOrSample": "The source is used as a mechanism, observation or safety-boundary anchor; a concrete Human Infra population, tissue context, eligibility rule, measurement protocol and follow-up horizon must be supplied by a later domain-specific study before quantitative use.",
+      "effectOrMechanismSignal": "Adverse-mechanism signal only: identifies tumor-risk channels and malignancy transitions that can reduce survival, function and option value.",
+      "uncertaintyOrBias": "Cancer mechanisms vary by tissue, exposure, genotype, screening pathway and treatment context; early detection, risk reduction and survival benefit cannot be assumed equivalent.",
+      "transferBoundary": "Transfer only as cancer-risk and abort-gate vocabulary. It does not prove screening benefit, treatment effect, or quantified cancer hazard.",
+      "modelAdmissionDecision": "adverse-mechanism-support-only-blocked-for-safety-or-benefit-claim",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "intervention-ranking",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Create screening route cards that include mortality, overdiagnosis, follow-up and access gates."
+    },
+    {
+      "domainId": "immune-maintenance",
+      "domainClaimId": "HIDOM-CL010",
+      "fieldCardId": "HIDOM-FLD010",
+      "sourceCardId": "SA-HALLMARKS-AGING-2023",
+      "extractionStatus": "completed-second-wave-biological-mechanism-field-extraction",
+      "sourceRole": "expanded-aging-hallmark-mechanism-taxonomy-anchor",
+      "exactClaimUse": "Supports treating aging as a multi-hallmark maintenance system and mapping domain variables to mechanism families, without importing intervention effects.",
+      "endpointDefinition": "For immune-maintenance, admissible endpoint language is limited to the registered endpoint candidates: infection-risk, cancer-surveillance-risk, recovery-capacity. The source does not add a new endpoint beyond this field row.",
+      "populationOrSample": "The source is used as a mechanism, observation or safety-boundary anchor; a concrete Human Infra population, tissue context, eligibility rule, measurement protocol and follow-up horizon must be supplied by a later domain-specific study before quantitative use.",
+      "effectOrMechanismSignal": "Mechanism-taxonomy signal only: identifies plausible maintenance layers and interactions that may constrain healthspan, lifespan or future option value.",
+      "uncertaintyOrBias": "Hallmark categories are conceptual and overlapping; species, tissue context, biomarker choice and endpoint mismatch can break transfer to Human Infra claims.",
+      "transferBoundary": "Transfer only as mechanism decomposition and variable-discovery vocabulary. It does not prove causality, clinical benefit, longevity effect, or route safety.",
+      "modelAdmissionDecision": "mechanism-taxonomy-support-only-blocked-for-intervention-effect-claim",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "intervention-ranking",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Map immune-aging source cards into infection, inflammation, surveillance and autoimmunity channels."
+    },
+    {
+      "domainId": "immune-maintenance",
+      "domainClaimId": "HIDOM-CL010",
+      "fieldCardId": "HIDOM-FLD010",
+      "sourceCardId": "SA-IMMUNOSENESCENCE-2024",
+      "extractionStatus": "completed-second-wave-biological-mechanism-field-extraction",
+      "sourceRole": "immune-aging-multichannel-maintenance-anchor",
+      "exactClaimUse": "Supports representing immune maintenance as multi-channel aging involving infection defense, cancer surveillance, inflammation, autoimmunity and recovery capacity.",
+      "endpointDefinition": "For immune-maintenance, admissible endpoint language is limited to the registered endpoint candidates: infection-risk, cancer-surveillance-risk, recovery-capacity. The source does not add a new endpoint beyond this field row.",
+      "populationOrSample": "The source is used as a mechanism, observation or safety-boundary anchor; a concrete Human Infra population, tissue context, eligibility rule, measurement protocol and follow-up horizon must be supplied by a later domain-specific study before quantitative use.",
+      "effectOrMechanismSignal": "Mechanism signal only: immune decline and dysregulation can affect recovery and risk channels, but no immunotherapy or supplement effect is imported.",
+      "uncertaintyOrBias": "Single immune markers can mislead; improving one channel can worsen inflammation, autoimmunity or surveillance tradeoffs.",
+      "transferBoundary": "Transfer only as immune-aging mechanism and variable vocabulary. It does not support immune-boosting advice, treatment selection, or calibrated risk estimates.",
+      "modelAdmissionDecision": "immune-mechanism-support-only-blocked-for-treatment-or-boost-claim",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "intervention-ranking",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Map immune-aging source cards into infection, inflammation, surveillance and autoimmunity channels."
+    },
+    {
+      "domainId": "mitochondrial-bioenergetics",
+      "domainClaimId": "HIDOM-CL012",
+      "fieldCardId": "HIDOM-FLD012",
+      "sourceCardId": "SA-HALLMARKS-AGING-2023",
+      "extractionStatus": "completed-second-wave-biological-mechanism-field-extraction",
+      "sourceRole": "expanded-aging-hallmark-mechanism-taxonomy-anchor",
+      "exactClaimUse": "Supports treating aging as a multi-hallmark maintenance system and mapping domain variables to mechanism families, without importing intervention effects.",
+      "endpointDefinition": "For mitochondrial-bioenergetics, admissible endpoint language is limited to the registered endpoint candidates: action-capacity, recovery-quality, disease-risk-channel. The source does not add a new endpoint beyond this field row.",
+      "populationOrSample": "The source is used as a mechanism, observation or safety-boundary anchor; a concrete Human Infra population, tissue context, eligibility rule, measurement protocol and follow-up horizon must be supplied by a later domain-specific study before quantitative use.",
+      "effectOrMechanismSignal": "Mechanism-taxonomy signal only: identifies plausible maintenance layers and interactions that may constrain healthspan, lifespan or future option value.",
+      "uncertaintyOrBias": "Hallmark categories are conceptual and overlapping; species, tissue context, biomarker choice and endpoint mismatch can break transfer to Human Infra claims.",
+      "transferBoundary": "Transfer only as mechanism decomposition and variable-discovery vocabulary. It does not prove causality, clinical benefit, longevity effect, or route safety.",
+      "modelAdmissionDecision": "mechanism-taxonomy-support-only-blocked-for-intervention-effect-claim",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "intervention-ranking",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Build a biomarker-to-function map for mitochondrial claims."
+    },
+    {
+      "domainId": "mitochondrial-bioenergetics",
+      "domainClaimId": "HIDOM-CL012",
+      "fieldCardId": "HIDOM-FLD012",
+      "sourceCardId": "SA-HALLMARKS-AGING-2013",
+      "extractionStatus": "completed-second-wave-biological-mechanism-field-extraction",
+      "sourceRole": "baseline-aging-hallmark-mechanism-taxonomy-anchor",
+      "exactClaimUse": "Supports the baseline decomposition of aging into maintenance-related mechanism families, preserving historical vocabulary for domain mapping.",
+      "endpointDefinition": "For mitochondrial-bioenergetics, admissible endpoint language is limited to the registered endpoint candidates: action-capacity, recovery-quality, disease-risk-channel. The source does not add a new endpoint beyond this field row.",
+      "populationOrSample": "The source is used as a mechanism, observation or safety-boundary anchor; a concrete Human Infra population, tissue context, eligibility rule, measurement protocol and follow-up horizon must be supplied by a later domain-specific study before quantitative use.",
+      "effectOrMechanismSignal": "Baseline taxonomy signal only: orients domain variables to classical aging mechanisms but supplies no domain-specific effect size.",
+      "uncertaintyOrBias": "The original hallmark taxonomy is not a calibrated model; newer mechanisms, tissue differences and intervention evidence must be handled separately.",
+      "transferBoundary": "Transfer only as historical mechanism vocabulary. It does not authorize intervention claims, biomarker substitution, or subject-level prediction.",
+      "modelAdmissionDecision": "mechanism-taxonomy-support-only-blocked-for-intervention-effect-claim",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "intervention-ranking",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Build a biomarker-to-function map for mitochondrial claims."
+    },
+    {
+      "domainId": "genomic-stability-dna-repair",
+      "domainClaimId": "HIDOM-CL013",
+      "fieldCardId": "HIDOM-FLD013",
+      "sourceCardId": "SA-HALLMARKS-AGING-2023",
+      "extractionStatus": "completed-second-wave-biological-mechanism-field-extraction",
+      "sourceRole": "expanded-aging-hallmark-mechanism-taxonomy-anchor",
+      "exactClaimUse": "Supports treating aging as a multi-hallmark maintenance system and mapping domain variables to mechanism families, without importing intervention effects.",
+      "endpointDefinition": "For genomic-stability-dna-repair, admissible endpoint language is limited to the registered endpoint candidates: tissue-maintenance, malignancy-risk, healthspan-risk-channel. The source does not add a new endpoint beyond this field row.",
+      "populationOrSample": "The source is used as a mechanism, observation or safety-boundary anchor; a concrete Human Infra population, tissue context, eligibility rule, measurement protocol and follow-up horizon must be supplied by a later domain-specific study before quantitative use.",
+      "effectOrMechanismSignal": "Mechanism-taxonomy signal only: identifies plausible maintenance layers and interactions that may constrain healthspan, lifespan or future option value.",
+      "uncertaintyOrBias": "Hallmark categories are conceptual and overlapping; species, tissue context, biomarker choice and endpoint mismatch can break transfer to Human Infra claims.",
+      "transferBoundary": "Transfer only as mechanism decomposition and variable-discovery vocabulary. It does not prove causality, clinical benefit, longevity effect, or route safety.",
+      "modelAdmissionDecision": "mechanism-taxonomy-support-only-blocked-for-intervention-effect-claim",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "intervention-ranking",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Separate damage reduction, repair fidelity, senescence, apoptosis and cancer escape into distinct variables."
+    },
+    {
+      "domainId": "genomic-stability-dna-repair",
+      "domainClaimId": "HIDOM-CL013",
+      "fieldCardId": "HIDOM-FLD013",
+      "sourceCardId": "SA-HALLMARKS-AGING-2013",
+      "extractionStatus": "completed-second-wave-biological-mechanism-field-extraction",
+      "sourceRole": "baseline-aging-hallmark-mechanism-taxonomy-anchor",
+      "exactClaimUse": "Supports the baseline decomposition of aging into maintenance-related mechanism families, preserving historical vocabulary for domain mapping.",
+      "endpointDefinition": "For genomic-stability-dna-repair, admissible endpoint language is limited to the registered endpoint candidates: tissue-maintenance, malignancy-risk, healthspan-risk-channel. The source does not add a new endpoint beyond this field row.",
+      "populationOrSample": "The source is used as a mechanism, observation or safety-boundary anchor; a concrete Human Infra population, tissue context, eligibility rule, measurement protocol and follow-up horizon must be supplied by a later domain-specific study before quantitative use.",
+      "effectOrMechanismSignal": "Baseline taxonomy signal only: orients domain variables to classical aging mechanisms but supplies no domain-specific effect size.",
+      "uncertaintyOrBias": "The original hallmark taxonomy is not a calibrated model; newer mechanisms, tissue differences and intervention evidence must be handled separately.",
+      "transferBoundary": "Transfer only as historical mechanism vocabulary. It does not authorize intervention claims, biomarker substitution, or subject-level prediction.",
+      "modelAdmissionDecision": "mechanism-taxonomy-support-only-blocked-for-intervention-effect-claim",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "intervention-ranking",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Separate damage reduction, repair fidelity, senescence, apoptosis and cancer escape into distinct variables."
+    },
+    {
+      "domainId": "genomic-stability-dna-repair",
+      "domainClaimId": "HIDOM-CL013",
+      "fieldCardId": "HIDOM-FLD013",
+      "sourceCardId": "SA-HALLMARKS-CANCER-2022",
+      "extractionStatus": "completed-second-wave-biological-mechanism-field-extraction",
+      "sourceRole": "cancer-risk-and-tumor-capability-abort-gate-anchor",
+      "exactClaimUse": "Supports representing cancer as an adverse capability and safety-gate channel that can downgrade regeneration, reprogramming and maintenance claims.",
+      "endpointDefinition": "For genomic-stability-dna-repair, admissible endpoint language is limited to the registered endpoint candidates: tissue-maintenance, malignancy-risk, healthspan-risk-channel. The source does not add a new endpoint beyond this field row.",
+      "populationOrSample": "The source is used as a mechanism, observation or safety-boundary anchor; a concrete Human Infra population, tissue context, eligibility rule, measurement protocol and follow-up horizon must be supplied by a later domain-specific study before quantitative use.",
+      "effectOrMechanismSignal": "Adverse-mechanism signal only: identifies tumor-risk channels and malignancy transitions that can reduce survival, function and option value.",
+      "uncertaintyOrBias": "Cancer mechanisms vary by tissue, exposure, genotype, screening pathway and treatment context; early detection, risk reduction and survival benefit cannot be assumed equivalent.",
+      "transferBoundary": "Transfer only as cancer-risk and abort-gate vocabulary. It does not prove screening benefit, treatment effect, or quantified cancer hazard.",
+      "modelAdmissionDecision": "adverse-mechanism-support-only-blocked-for-safety-or-benefit-claim",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "intervention-ranking",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Separate damage reduction, repair fidelity, senescence, apoptosis and cancer escape into distinct variables."
+    },
+    {
+      "domainId": "biological-age-clocks-biomarker-validation",
+      "domainClaimId": "HIDOM-CL014",
+      "fieldCardId": "HIDOM-FLD014",
+      "sourceCardId": "SA-GRIMAGE-2019",
+      "extractionStatus": "completed-second-wave-biological-mechanism-field-extraction",
+      "sourceRole": "biological-age-risk-marker-observation-anchor",
+      "exactClaimUse": "Supports treating biological-age clocks as observation-layer risk markers, while separating risk stratification from causal control or intervention response.",
+      "endpointDefinition": "For biological-age-clocks-biomarker-validation, admissible endpoint language is limited to the registered endpoint candidates: state-estimation-quality, feedback-loop-validity, misoptimization-risk. The source does not add a new endpoint beyond this field row.",
+      "populationOrSample": "The source is used as a mechanism, observation or safety-boundary anchor; a concrete Human Infra population, tissue context, eligibility rule, measurement protocol and follow-up horizon must be supplied by a later domain-specific study before quantitative use.",
+      "effectOrMechanismSignal": "Observation signal only: clock values may correlate with lifespan or healthspan risk but do not by themselves identify actionable mediators.",
+      "uncertaintyOrBias": "Population transfer, calibration, endpoint alignment, batch effects, missing predictors and biomarker gaming can make clock improvements non-causal or misleading.",
+      "transferBoundary": "Transfer only as biomarker-risk and observation-process vocabulary. It does not prove mortality reduction, intervention effect, or personal prognosis.",
+      "modelAdmissionDecision": "biomarker-observation-support-only-blocked-for-causal-or-predictive-claim",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "intervention-ranking",
+        "individual-death-date-output"
+      ],
+      "nextAction": "Create a biomarker validation matrix separating correlation, prediction, intervention response, endpoint alignment and misuse."
+    },
+    {
+      "domainId": "proteostasis-autophagy",
+      "domainClaimId": "HIDOM-CL015",
+      "fieldCardId": "HIDOM-FLD015",
+      "sourceCardId": "SA-HALLMARKS-AGING-2023",
+      "extractionStatus": "completed-second-wave-biological-mechanism-field-extraction",
+      "sourceRole": "expanded-aging-hallmark-mechanism-taxonomy-anchor",
+      "exactClaimUse": "Supports treating aging as a multi-hallmark maintenance system and mapping domain variables to mechanism families, without importing intervention effects.",
+      "endpointDefinition": "For proteostasis-autophagy, admissible endpoint language is limited to the registered endpoint candidates: cellular-function-maintenance, recovery-resilience, toxicity-or-wasting-risk. The source does not add a new endpoint beyond this field row.",
+      "populationOrSample": "The source is used as a mechanism, observation or safety-boundary anchor; a concrete Human Infra population, tissue context, eligibility rule, measurement protocol and follow-up horizon must be supplied by a later domain-specific study before quantitative use.",
+      "effectOrMechanismSignal": "Mechanism-taxonomy signal only: identifies plausible maintenance layers and interactions that may constrain healthspan, lifespan or future option value.",
+      "uncertaintyOrBias": "Hallmark categories are conceptual and overlapping; species, tissue context, biomarker choice and endpoint mismatch can break transfer to Human Infra claims.",
+      "transferBoundary": "Transfer only as mechanism decomposition and variable-discovery vocabulary. It does not prove causality, clinical benefit, longevity effect, or route safety.",
+      "modelAdmissionDecision": "mechanism-taxonomy-support-only-blocked-for-intervention-effect-claim",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "intervention-ranking",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Build Source Cards separating autophagy flux markers, lysosomal function, tissue-level outcomes and adverse channels."
+    },
+    {
+      "domainId": "proteostasis-autophagy",
+      "domainClaimId": "HIDOM-CL015",
+      "fieldCardId": "HIDOM-FLD015",
+      "sourceCardId": "SA-HALLMARKS-AGING-2013",
+      "extractionStatus": "completed-second-wave-biological-mechanism-field-extraction",
+      "sourceRole": "baseline-aging-hallmark-mechanism-taxonomy-anchor",
+      "exactClaimUse": "Supports the baseline decomposition of aging into maintenance-related mechanism families, preserving historical vocabulary for domain mapping.",
+      "endpointDefinition": "For proteostasis-autophagy, admissible endpoint language is limited to the registered endpoint candidates: cellular-function-maintenance, recovery-resilience, toxicity-or-wasting-risk. The source does not add a new endpoint beyond this field row.",
+      "populationOrSample": "The source is used as a mechanism, observation or safety-boundary anchor; a concrete Human Infra population, tissue context, eligibility rule, measurement protocol and follow-up horizon must be supplied by a later domain-specific study before quantitative use.",
+      "effectOrMechanismSignal": "Baseline taxonomy signal only: orients domain variables to classical aging mechanisms but supplies no domain-specific effect size.",
+      "uncertaintyOrBias": "The original hallmark taxonomy is not a calibrated model; newer mechanisms, tissue differences and intervention evidence must be handled separately.",
+      "transferBoundary": "Transfer only as historical mechanism vocabulary. It does not authorize intervention claims, biomarker substitution, or subject-level prediction.",
+      "modelAdmissionDecision": "mechanism-taxonomy-support-only-blocked-for-intervention-effect-claim",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "intervention-ranking",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Build Source Cards separating autophagy flux markers, lysosomal function, tissue-level outcomes and adverse channels."
+    },
+    {
+      "domainId": "cellular-senescence-clearance",
+      "domainClaimId": "HIDOM-CL016",
+      "fieldCardId": "HIDOM-FLD016",
+      "sourceCardId": "SA-HALLMARKS-AGING-2023",
+      "extractionStatus": "completed-second-wave-biological-mechanism-field-extraction",
+      "sourceRole": "expanded-aging-hallmark-mechanism-taxonomy-anchor",
+      "exactClaimUse": "Supports treating aging as a multi-hallmark maintenance system and mapping domain variables to mechanism families, without importing intervention effects.",
+      "endpointDefinition": "For cellular-senescence-clearance, admissible endpoint language is limited to the registered endpoint candidates: functional-tissue-maintenance, inflammation-risk-change, safety-and-cancer-risk. The source does not add a new endpoint beyond this field row.",
+      "populationOrSample": "The source is used as a mechanism, observation or safety-boundary anchor; a concrete Human Infra population, tissue context, eligibility rule, measurement protocol and follow-up horizon must be supplied by a later domain-specific study before quantitative use.",
+      "effectOrMechanismSignal": "Mechanism-taxonomy signal only: identifies plausible maintenance layers and interactions that may constrain healthspan, lifespan or future option value.",
+      "uncertaintyOrBias": "Hallmark categories are conceptual and overlapping; species, tissue context, biomarker choice and endpoint mismatch can break transfer to Human Infra claims.",
+      "transferBoundary": "Transfer only as mechanism decomposition and variable-discovery vocabulary. It does not prove causality, clinical benefit, longevity effect, or route safety.",
+      "modelAdmissionDecision": "mechanism-taxonomy-support-only-blocked-for-intervention-effect-claim",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "intervention-ranking",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Create a senescence route matrix separating burden, SASP, tissue context, repair function and tail-risk channels."
+    },
+    {
+      "domainId": "cellular-senescence-clearance",
+      "domainClaimId": "HIDOM-CL016",
+      "fieldCardId": "HIDOM-FLD016",
+      "sourceCardId": "SA-HALLMARKS-AGING-2013",
+      "extractionStatus": "completed-second-wave-biological-mechanism-field-extraction",
+      "sourceRole": "baseline-aging-hallmark-mechanism-taxonomy-anchor",
+      "exactClaimUse": "Supports the baseline decomposition of aging into maintenance-related mechanism families, preserving historical vocabulary for domain mapping.",
+      "endpointDefinition": "For cellular-senescence-clearance, admissible endpoint language is limited to the registered endpoint candidates: functional-tissue-maintenance, inflammation-risk-change, safety-and-cancer-risk. The source does not add a new endpoint beyond this field row.",
+      "populationOrSample": "The source is used as a mechanism, observation or safety-boundary anchor; a concrete Human Infra population, tissue context, eligibility rule, measurement protocol and follow-up horizon must be supplied by a later domain-specific study before quantitative use.",
+      "effectOrMechanismSignal": "Baseline taxonomy signal only: orients domain variables to classical aging mechanisms but supplies no domain-specific effect size.",
+      "uncertaintyOrBias": "The original hallmark taxonomy is not a calibrated model; newer mechanisms, tissue differences and intervention evidence must be handled separately.",
+      "transferBoundary": "Transfer only as historical mechanism vocabulary. It does not authorize intervention claims, biomarker substitution, or subject-level prediction.",
+      "modelAdmissionDecision": "mechanism-taxonomy-support-only-blocked-for-intervention-effect-claim",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "intervention-ranking",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Create a senescence route matrix separating burden, SASP, tissue context, repair function and tail-risk channels."
+    },
+    {
+      "domainId": "cellular-senescence-clearance",
+      "domainClaimId": "HIDOM-CL016",
+      "fieldCardId": "HIDOM-FLD016",
+      "sourceCardId": "SA-HALLMARKS-CANCER-2022",
+      "extractionStatus": "completed-second-wave-biological-mechanism-field-extraction",
+      "sourceRole": "cancer-risk-and-tumor-capability-abort-gate-anchor",
+      "exactClaimUse": "Supports representing cancer as an adverse capability and safety-gate channel that can downgrade regeneration, reprogramming and maintenance claims.",
+      "endpointDefinition": "For cellular-senescence-clearance, admissible endpoint language is limited to the registered endpoint candidates: functional-tissue-maintenance, inflammation-risk-change, safety-and-cancer-risk. The source does not add a new endpoint beyond this field row.",
+      "populationOrSample": "The source is used as a mechanism, observation or safety-boundary anchor; a concrete Human Infra population, tissue context, eligibility rule, measurement protocol and follow-up horizon must be supplied by a later domain-specific study before quantitative use.",
+      "effectOrMechanismSignal": "Adverse-mechanism signal only: identifies tumor-risk channels and malignancy transitions that can reduce survival, function and option value.",
+      "uncertaintyOrBias": "Cancer mechanisms vary by tissue, exposure, genotype, screening pathway and treatment context; early detection, risk reduction and survival benefit cannot be assumed equivalent.",
+      "transferBoundary": "Transfer only as cancer-risk and abort-gate vocabulary. It does not prove screening benefit, treatment effect, or quantified cancer hazard.",
+      "modelAdmissionDecision": "adverse-mechanism-support-only-blocked-for-safety-or-benefit-claim",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "intervention-ranking",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Create a senescence route matrix separating burden, SASP, tissue context, repair function and tail-risk channels."
+    },
+    {
+      "domainId": "extracellular-matrix-glycation",
+      "domainClaimId": "HIDOM-CL017",
+      "fieldCardId": "HIDOM-FLD017",
+      "sourceCardId": "SA-HALLMARKS-AGING-2023",
+      "extractionStatus": "completed-second-wave-biological-mechanism-field-extraction",
+      "sourceRole": "expanded-aging-hallmark-mechanism-taxonomy-anchor",
+      "exactClaimUse": "Supports treating aging as a multi-hallmark maintenance system and mapping domain variables to mechanism families, without importing intervention effects.",
+      "endpointDefinition": "For extracellular-matrix-glycation, admissible endpoint language is limited to the registered endpoint candidates: mobility-and-function, organ-resilience, repair-or-fibrosis-risk. The source does not add a new endpoint beyond this field row.",
+      "populationOrSample": "The source is used as a mechanism, observation or safety-boundary anchor; a concrete Human Infra population, tissue context, eligibility rule, measurement protocol and follow-up horizon must be supplied by a later domain-specific study before quantitative use.",
+      "effectOrMechanismSignal": "Mechanism-taxonomy signal only: identifies plausible maintenance layers and interactions that may constrain healthspan, lifespan or future option value.",
+      "uncertaintyOrBias": "Hallmark categories are conceptual and overlapping; species, tissue context, biomarker choice and endpoint mismatch can break transfer to Human Infra claims.",
+      "transferBoundary": "Transfer only as mechanism decomposition and variable-discovery vocabulary. It does not prove causality, clinical benefit, longevity effect, or route safety.",
+      "modelAdmissionDecision": "mechanism-taxonomy-support-only-blocked-for-intervention-effect-claim",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "intervention-ranking",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Build ECM Source Cards linking crosslinks, fibrosis, tissue mechanics and functional outcomes."
+    },
+    {
+      "domainId": "stem-cell-reserve-renewal",
+      "domainClaimId": "HIDOM-CL018",
+      "fieldCardId": "HIDOM-FLD018",
+      "sourceCardId": "SA-HALLMARKS-AGING-2023",
+      "extractionStatus": "completed-second-wave-biological-mechanism-field-extraction",
+      "sourceRole": "expanded-aging-hallmark-mechanism-taxonomy-anchor",
+      "exactClaimUse": "Supports treating aging as a multi-hallmark maintenance system and mapping domain variables to mechanism families, without importing intervention effects.",
+      "endpointDefinition": "For stem-cell-reserve-renewal, admissible endpoint language is limited to the registered endpoint candidates: tissue-repair-capacity, regeneration-quality, cancer-or-exhaustion-risk. The source does not add a new endpoint beyond this field row.",
+      "populationOrSample": "The source is used as a mechanism, observation or safety-boundary anchor; a concrete Human Infra population, tissue context, eligibility rule, measurement protocol and follow-up horizon must be supplied by a later domain-specific study before quantitative use.",
+      "effectOrMechanismSignal": "Mechanism-taxonomy signal only: identifies plausible maintenance layers and interactions that may constrain healthspan, lifespan or future option value.",
+      "uncertaintyOrBias": "Hallmark categories are conceptual and overlapping; species, tissue context, biomarker choice and endpoint mismatch can break transfer to Human Infra claims.",
+      "transferBoundary": "Transfer only as mechanism decomposition and variable-discovery vocabulary. It does not prove causality, clinical benefit, longevity effect, or route safety.",
+      "modelAdmissionDecision": "mechanism-taxonomy-support-only-blocked-for-intervention-effect-claim",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "intervention-ranking",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Separate reserve, niche, proliferation, differentiation, integration and malignancy variables in Source Cards."
+    },
+    {
+      "domainId": "stem-cell-reserve-renewal",
+      "domainClaimId": "HIDOM-CL018",
+      "fieldCardId": "HIDOM-FLD018",
+      "sourceCardId": "SA-HALLMARKS-AGING-2013",
+      "extractionStatus": "completed-second-wave-biological-mechanism-field-extraction",
+      "sourceRole": "baseline-aging-hallmark-mechanism-taxonomy-anchor",
+      "exactClaimUse": "Supports the baseline decomposition of aging into maintenance-related mechanism families, preserving historical vocabulary for domain mapping.",
+      "endpointDefinition": "For stem-cell-reserve-renewal, admissible endpoint language is limited to the registered endpoint candidates: tissue-repair-capacity, regeneration-quality, cancer-or-exhaustion-risk. The source does not add a new endpoint beyond this field row.",
+      "populationOrSample": "The source is used as a mechanism, observation or safety-boundary anchor; a concrete Human Infra population, tissue context, eligibility rule, measurement protocol and follow-up horizon must be supplied by a later domain-specific study before quantitative use.",
+      "effectOrMechanismSignal": "Baseline taxonomy signal only: orients domain variables to classical aging mechanisms but supplies no domain-specific effect size.",
+      "uncertaintyOrBias": "The original hallmark taxonomy is not a calibrated model; newer mechanisms, tissue differences and intervention evidence must be handled separately.",
+      "transferBoundary": "Transfer only as historical mechanism vocabulary. It does not authorize intervention claims, biomarker substitution, or subject-level prediction.",
+      "modelAdmissionDecision": "mechanism-taxonomy-support-only-blocked-for-intervention-effect-claim",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "intervention-ranking",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Separate reserve, niche, proliferation, differentiation, integration and malignancy variables in Source Cards."
+    },
+    {
+      "domainId": "stem-cell-reserve-renewal",
+      "domainClaimId": "HIDOM-CL018",
+      "fieldCardId": "HIDOM-FLD018",
+      "sourceCardId": "SA-HALLMARKS-CANCER-2022",
+      "extractionStatus": "completed-second-wave-biological-mechanism-field-extraction",
+      "sourceRole": "cancer-risk-and-tumor-capability-abort-gate-anchor",
+      "exactClaimUse": "Supports representing cancer as an adverse capability and safety-gate channel that can downgrade regeneration, reprogramming and maintenance claims.",
+      "endpointDefinition": "For stem-cell-reserve-renewal, admissible endpoint language is limited to the registered endpoint candidates: tissue-repair-capacity, regeneration-quality, cancer-or-exhaustion-risk. The source does not add a new endpoint beyond this field row.",
+      "populationOrSample": "The source is used as a mechanism, observation or safety-boundary anchor; a concrete Human Infra population, tissue context, eligibility rule, measurement protocol and follow-up horizon must be supplied by a later domain-specific study before quantitative use.",
+      "effectOrMechanismSignal": "Adverse-mechanism signal only: identifies tumor-risk channels and malignancy transitions that can reduce survival, function and option value.",
+      "uncertaintyOrBias": "Cancer mechanisms vary by tissue, exposure, genotype, screening pathway and treatment context; early detection, risk reduction and survival benefit cannot be assumed equivalent.",
+      "transferBoundary": "Transfer only as cancer-risk and abort-gate vocabulary. It does not prove screening benefit, treatment effect, or quantified cancer hazard.",
+      "modelAdmissionDecision": "adverse-mechanism-support-only-blocked-for-safety-or-benefit-claim",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "intervention-ranking",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Separate reserve, niche, proliferation, differentiation, integration and malignancy variables in Source Cards."
+    },
+    {
+      "domainId": "microbiome-ecology",
+      "domainClaimId": "HIDOM-CL019",
+      "fieldCardId": "HIDOM-FLD019",
+      "sourceCardId": "SA-HALLMARKS-AGING-2023",
+      "extractionStatus": "completed-second-wave-biological-mechanism-field-extraction",
+      "sourceRole": "expanded-aging-hallmark-mechanism-taxonomy-anchor",
+      "exactClaimUse": "Supports treating aging as a multi-hallmark maintenance system and mapping domain variables to mechanism families, without importing intervention effects.",
+      "endpointDefinition": "For microbiome-ecology, admissible endpoint language is limited to the registered endpoint candidates: metabolic-and-immune-resilience, infection-or-inflammation-risk, function-and-recovery-change. The source does not add a new endpoint beyond this field row.",
+      "populationOrSample": "The source is used as a mechanism, observation or safety-boundary anchor; a concrete Human Infra population, tissue context, eligibility rule, measurement protocol and follow-up horizon must be supplied by a later domain-specific study before quantitative use.",
+      "effectOrMechanismSignal": "Mechanism-taxonomy signal only: identifies plausible maintenance layers and interactions that may constrain healthspan, lifespan or future option value.",
+      "uncertaintyOrBias": "Hallmark categories are conceptual and overlapping; species, tissue context, biomarker choice and endpoint mismatch can break transfer to Human Infra claims.",
+      "transferBoundary": "Transfer only as mechanism decomposition and variable-discovery vocabulary. It does not prove causality, clinical benefit, longevity effect, or route safety.",
+      "modelAdmissionDecision": "mechanism-taxonomy-support-only-blocked-for-intervention-effect-claim",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "intervention-ranking",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Build microbiome Source Cards separating association, causality, intervention response and safety transfer risks."
+    },
+    {
+      "domainId": "cardiovascular-resilience",
+      "domainClaimId": "HIDOM-CL020",
+      "fieldCardId": "HIDOM-FLD020",
+      "sourceCardId": "SA-HALLMARKS-AGING-2023",
+      "extractionStatus": "completed-second-wave-biological-mechanism-field-extraction",
+      "sourceRole": "expanded-aging-hallmark-mechanism-taxonomy-anchor",
+      "exactClaimUse": "Supports treating aging as a multi-hallmark maintenance system and mapping domain variables to mechanism families, without importing intervention effects.",
+      "endpointDefinition": "For cardiovascular-resilience, admissible endpoint language is limited to the registered endpoint candidates: major-cardiovascular-event-risk, functional-capacity, effective-time-loss-risk. The source does not add a new endpoint beyond this field row.",
+      "populationOrSample": "The source is used as a mechanism, observation or safety-boundary anchor; a concrete Human Infra population, tissue context, eligibility rule, measurement protocol and follow-up horizon must be supplied by a later domain-specific study before quantitative use.",
+      "effectOrMechanismSignal": "Mechanism-taxonomy signal only: identifies plausible maintenance layers and interactions that may constrain healthspan, lifespan or future option value.",
+      "uncertaintyOrBias": "Hallmark categories are conceptual and overlapping; species, tissue context, biomarker choice and endpoint mismatch can break transfer to Human Infra claims.",
+      "transferBoundary": "Transfer only as mechanism decomposition and variable-discovery vocabulary. It does not prove causality, clinical benefit, longevity effect, or route safety.",
+      "modelAdmissionDecision": "mechanism-taxonomy-support-only-blocked-for-intervention-effect-claim",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "intervention-ranking",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Map cardiovascular variables to hazard, function, recovery and treatment-burden outcomes."
+    },
+    {
+      "domainId": "musculoskeletal-integrity",
+      "domainClaimId": "HIDOM-CL021",
+      "fieldCardId": "HIDOM-FLD021",
+      "sourceCardId": "SA-HALLMARKS-AGING-2023",
+      "extractionStatus": "completed-second-wave-biological-mechanism-field-extraction",
+      "sourceRole": "expanded-aging-hallmark-mechanism-taxonomy-anchor",
+      "exactClaimUse": "Supports treating aging as a multi-hallmark maintenance system and mapping domain variables to mechanism families, without importing intervention effects.",
+      "endpointDefinition": "For musculoskeletal-integrity, admissible endpoint language is limited to the registered endpoint candidates: ADL-and-task-execution, injury-and-disability-risk, effective-time-preservation. The source does not add a new endpoint beyond this field row.",
+      "populationOrSample": "The source is used as a mechanism, observation or safety-boundary anchor; a concrete Human Infra population, tissue context, eligibility rule, measurement protocol and follow-up horizon must be supplied by a later domain-specific study before quantitative use.",
+      "effectOrMechanismSignal": "Mechanism-taxonomy signal only: identifies plausible maintenance layers and interactions that may constrain healthspan, lifespan or future option value.",
+      "uncertaintyOrBias": "Hallmark categories are conceptual and overlapping; species, tissue context, biomarker choice and endpoint mismatch can break transfer to Human Infra claims.",
+      "transferBoundary": "Transfer only as mechanism decomposition and variable-discovery vocabulary. It does not prove causality, clinical benefit, longevity effect, or route safety.",
+      "modelAdmissionDecision": "mechanism-taxonomy-support-only-blocked-for-intervention-effect-claim",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "intervention-ranking",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Create a musculoskeletal variable table connecting strength, balance, fracture risk, pain and task execution."
+    },
+    {
+      "domainId": "nutrition-metabolic-health",
+      "domainClaimId": "HIDOM-CL022",
+      "fieldCardId": "HIDOM-FLD022",
+      "sourceCardId": "SA-HALLMARKS-AGING-2023",
+      "extractionStatus": "completed-second-wave-biological-mechanism-field-extraction",
+      "sourceRole": "expanded-aging-hallmark-mechanism-taxonomy-anchor",
+      "exactClaimUse": "Supports treating aging as a multi-hallmark maintenance system and mapping domain variables to mechanism families, without importing intervention effects.",
+      "endpointDefinition": "For nutrition-metabolic-health, admissible endpoint language is limited to the registered endpoint candidates: functional-energy-and-recovery, cardiometabolic-risk-change, effective-time-and-access-burden. The source does not add a new endpoint beyond this field row.",
+      "populationOrSample": "The source is used as a mechanism, observation or safety-boundary anchor; a concrete Human Infra population, tissue context, eligibility rule, measurement protocol and follow-up horizon must be supplied by a later domain-specific study before quantitative use.",
+      "effectOrMechanismSignal": "Mechanism-taxonomy signal only: identifies plausible maintenance layers and interactions that may constrain healthspan, lifespan or future option value.",
+      "uncertaintyOrBias": "Hallmark categories are conceptual and overlapping; species, tissue context, biomarker choice and endpoint mismatch can break transfer to Human Infra claims.",
+      "transferBoundary": "Transfer only as mechanism decomposition and variable-discovery vocabulary. It does not prove causality, clinical benefit, longevity effect, or route safety.",
+      "modelAdmissionDecision": "mechanism-taxonomy-support-only-blocked-for-intervention-effect-claim",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "intervention-ranking",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Separate metabolic biomarkers, functional energy, adherence, access and adverse nutrition channels."
+    },
+    {
+      "domainId": "renal-hepatic-clearance",
+      "domainClaimId": "HIDOM-CL023",
+      "fieldCardId": "HIDOM-FLD023",
+      "sourceCardId": "SA-HALLMARKS-AGING-2023",
+      "extractionStatus": "completed-second-wave-biological-mechanism-field-extraction",
+      "sourceRole": "expanded-aging-hallmark-mechanism-taxonomy-anchor",
+      "exactClaimUse": "Supports treating aging as a multi-hallmark maintenance system and mapping domain variables to mechanism families, without importing intervention effects.",
+      "endpointDefinition": "For renal-hepatic-clearance, admissible endpoint language is limited to the registered endpoint candidates: homeostasis-stability, treatment-safety-window, organ-failure-risk. The source does not add a new endpoint beyond this field row.",
+      "populationOrSample": "The source is used as a mechanism, observation or safety-boundary anchor; a concrete Human Infra population, tissue context, eligibility rule, measurement protocol and follow-up horizon must be supplied by a later domain-specific study before quantitative use.",
+      "effectOrMechanismSignal": "Mechanism-taxonomy signal only: identifies plausible maintenance layers and interactions that may constrain healthspan, lifespan or future option value.",
+      "uncertaintyOrBias": "Hallmark categories are conceptual and overlapping; species, tissue context, biomarker choice and endpoint mismatch can break transfer to Human Infra claims.",
+      "transferBoundary": "Transfer only as mechanism decomposition and variable-discovery vocabulary. It does not prove causality, clinical benefit, longevity effect, or route safety.",
+      "modelAdmissionDecision": "mechanism-taxonomy-support-only-blocked-for-intervention-effect-claim",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "intervention-ranking",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Build clearance Source Cards connecting renal/hepatic variables to homeostasis, toxicity and treatment-safety outputs."
+    },
+    {
+      "domainId": "endocrine-hormonal-regulation",
+      "domainClaimId": "HIDOM-CL026",
+      "fieldCardId": "HIDOM-FLD026",
+      "sourceCardId": "SA-HALLMARKS-AGING-2023",
+      "extractionStatus": "completed-second-wave-biological-mechanism-field-extraction",
+      "sourceRole": "expanded-aging-hallmark-mechanism-taxonomy-anchor",
+      "exactClaimUse": "Supports treating aging as a multi-hallmark maintenance system and mapping domain variables to mechanism families, without importing intervention effects.",
+      "endpointDefinition": "For endocrine-hormonal-regulation, admissible endpoint language is limited to the registered endpoint candidates: energy-recovery-and-function, multi-system-risk-balance, effective-time-and-safety. The source does not add a new endpoint beyond this field row.",
+      "populationOrSample": "The source is used as a mechanism, observation or safety-boundary anchor; a concrete Human Infra population, tissue context, eligibility rule, measurement protocol and follow-up horizon must be supplied by a later domain-specific study before quantitative use.",
+      "effectOrMechanismSignal": "Mechanism-taxonomy signal only: identifies plausible maintenance layers and interactions that may constrain healthspan, lifespan or future option value.",
+      "uncertaintyOrBias": "Hallmark categories are conceptual and overlapping; species, tissue context, biomarker choice and endpoint mismatch can break transfer to Human Infra claims.",
+      "transferBoundary": "Transfer only as mechanism decomposition and variable-discovery vocabulary. It does not prove causality, clinical benefit, longevity effect, or route safety.",
+      "modelAdmissionDecision": "mechanism-taxonomy-support-only-blocked-for-intervention-effect-claim",
       "blockedUses": [
         "calibrated-prediction",
         "individual-recommendation",

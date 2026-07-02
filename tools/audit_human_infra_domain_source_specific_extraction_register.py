@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""审计首批域-来源精读完成寄存器。"""
+"""审计域-来源精读完成寄存器。"""
 
 from __future__ import annotations
 
@@ -16,12 +16,13 @@ FIELD_REGISTER_PATH = ROOT / "docs/reference/human-infra-domain-source-card-fiel
 SOURCE_EXTRACTION_PATH = ROOT / "docs/reference/human-infra-falsifier-source-card-extraction.json"
 
 SCHEMA = "human-infra.domain-source-specific-extraction-register.v1"
-STATUS = "partial-first-wave-method-anchor-extractions-not-complete"
+STATUS = "partial-second-wave-biological-mechanism-extractions-not-complete"
 REGISTER_LINK = "human-infra-domain-source-specific-extraction-register.json"
 EXPECTED_SOURCES = {
     "SA-KAPLAN-MEIER-1958": {
         "role": "survival-function-and-censoring-method-anchor",
         "decision": "qualitative-method-support-only-blocked-for-calibrated-prediction",
+        "row_status": "completed-first-wave-method-anchor-field-extraction",
         "blocked": {
             "calibrated-prediction",
             "individual-recommendation",
@@ -32,6 +33,7 @@ EXPECTED_SOURCES = {
     "SA-COX-1972": {
         "role": "hazard-function-and-covariate-risk-method-anchor",
         "decision": "qualitative-method-support-only-blocked-for-calibrated-prediction",
+        "row_status": "completed-first-wave-method-anchor-field-extraction",
         "blocked": {
             "calibrated-prediction",
             "individual-recommendation",
@@ -42,6 +44,7 @@ EXPECTED_SOURCES = {
     "SA-TARGET-TRIAL-2022": {
         "role": "intervention-causal-design-method-anchor",
         "decision": "causal-design-support-only-blocked-for-effect-claim",
+        "row_status": "completed-first-wave-method-anchor-field-extraction",
         "blocked": {
             "calibrated-prediction",
             "individual-recommendation",
@@ -52,6 +55,84 @@ EXPECTED_SOURCES = {
     "SA-TRIPOD-AI-2024": {
         "role": "prediction-model-reporting-and-validation-method-anchor",
         "decision": "prediction-reporting-support-only-blocked-for-clinical-prediction",
+        "row_status": "completed-first-wave-method-anchor-field-extraction",
+        "blocked": {
+            "calibrated-prediction",
+            "individual-recommendation",
+            "intervention-ranking",
+            "individual-death-date-output",
+        },
+    },
+    "SA-HALLMARKS-AGING-2023": {
+        "role": "expanded-aging-hallmark-mechanism-taxonomy-anchor",
+        "decision": "mechanism-taxonomy-support-only-blocked-for-intervention-effect-claim",
+        "row_status": "completed-second-wave-biological-mechanism-field-extraction",
+        "blocked": {
+            "calibrated-prediction",
+            "individual-recommendation",
+            "intervention-ranking",
+            "domain-claim-upgrade",
+        },
+    },
+    "SA-HALLMARKS-AGING-2013": {
+        "role": "baseline-aging-hallmark-mechanism-taxonomy-anchor",
+        "decision": "mechanism-taxonomy-support-only-blocked-for-intervention-effect-claim",
+        "row_status": "completed-second-wave-biological-mechanism-field-extraction",
+        "blocked": {
+            "calibrated-prediction",
+            "individual-recommendation",
+            "intervention-ranking",
+            "domain-claim-upgrade",
+        },
+    },
+    "SA-HALLMARKS-CANCER-2022": {
+        "role": "cancer-risk-and-tumor-capability-abort-gate-anchor",
+        "decision": "adverse-mechanism-support-only-blocked-for-safety-or-benefit-claim",
+        "row_status": "completed-second-wave-biological-mechanism-field-extraction",
+        "blocked": {
+            "calibrated-prediction",
+            "individual-recommendation",
+            "intervention-ranking",
+            "domain-claim-upgrade",
+        },
+    },
+    "SA-YAMANAKA-IPS-2006": {
+        "role": "cell-identity-reprogramming-foundation-anchor",
+        "decision": "cell-state-transition-support-only-blocked-for-rejuvenation-claim",
+        "row_status": "completed-second-wave-biological-mechanism-field-extraction",
+        "blocked": {
+            "calibrated-prediction",
+            "individual-recommendation",
+            "intervention-ranking",
+            "domain-claim-upgrade",
+        },
+    },
+    "SA-PARTIAL-REPROGRAMMING-2016": {
+        "role": "partial-reprogramming-controlled-window-route-anchor",
+        "decision": "preclinical-route-support-only-blocked-for-clinical-rejuvenation-claim",
+        "row_status": "completed-second-wave-biological-mechanism-field-extraction",
+        "blocked": {
+            "calibrated-prediction",
+            "individual-recommendation",
+            "intervention-ranking",
+            "domain-claim-upgrade",
+        },
+    },
+    "SA-IMMUNOSENESCENCE-2024": {
+        "role": "immune-aging-multichannel-maintenance-anchor",
+        "decision": "immune-mechanism-support-only-blocked-for-treatment-or-boost-claim",
+        "row_status": "completed-second-wave-biological-mechanism-field-extraction",
+        "blocked": {
+            "calibrated-prediction",
+            "individual-recommendation",
+            "intervention-ranking",
+            "domain-claim-upgrade",
+        },
+    },
+    "SA-GRIMAGE-2019": {
+        "role": "biological-age-risk-marker-observation-anchor",
+        "decision": "biomarker-observation-support-only-blocked-for-causal-or-predictive-claim",
+        "row_status": "completed-second-wave-biological-mechanism-field-extraction",
         "blocked": {
             "calibrated-prediction",
             "individual-recommendation",
@@ -218,8 +299,8 @@ def validate_scope(scope: Any, completed_count: int, touched_fields: int, queued
     if not isinstance(scope, dict):
         fail(errors, "scope must be an object")
         return
-    if scope.get("coverageLevel") != "partial-first-wave-method-anchor-extractions":
-        fail(errors, "scope.coverageLevel must be partial-first-wave-method-anchor-extractions")
+    if scope.get("coverageLevel") != "partial-second-wave-biological-mechanism-extractions":
+        fail(errors, "scope.coverageLevel must be partial-second-wave-biological-mechanism-extractions")
     if scope.get("derivedTaskUnit") != "domainId + sourceCardId":
         fail(errors, "scope.derivedTaskUnit must be domainId + sourceCardId")
     expected_counts = {
@@ -235,7 +316,7 @@ def validate_scope(scope: Any, completed_count: int, touched_fields: int, queued
             fail(errors, f"scope.{key} must equal {expected}")
     source_anchors = set(require_string_list(scope.get("completedSourceAnchors"), "scope.completedSourceAnchors", errors, len(EXPECTED_SOURCES)))
     if source_anchors != set(EXPECTED_SOURCES):
-        fail(errors, "scope.completedSourceAnchors must equal the first-wave method anchors")
+        fail(errors, "scope.completedSourceAnchors must equal the registered method and biological-mechanism anchors")
     require_string(scope.get("selectionRule"), "scope.selectionRule", errors)
     require_string_list(scope.get("currentLimitations"), "scope.currentLimitations", errors, 3)
 
@@ -266,7 +347,7 @@ def validate_anchor_decisions(decisions: Any, errors: list[str]) -> None:
             fail(errors, f"{source_id}.blockedUses must equal expected blocked uses")
         require_string(item.get("transferBoundary"), f"{source_id}.transferBoundary", errors)
     if seen != set(EXPECTED_SOURCES):
-        fail(errors, "sourceAnchorDecisions must contain every first-wave method anchor")
+        fail(errors, "sourceAnchorDecisions must contain every registered method and biological-mechanism anchor")
 
 
 def validate_completed_rows(rows: Any, field_context: dict[tuple[str, str], dict[str, Any]], errors: list[str]) -> tuple[int, int]:
@@ -301,14 +382,14 @@ def validate_completed_rows(rows: Any, field_context: dict[tuple[str, str], dict
             continue
 
         if source_id not in EXPECTED_SOURCES:
-            fail(errors, f"completed row uses source outside first-wave method anchors: {domain_id}/{source_id}")
+            fail(errors, f"completed row uses source outside registered method and biological-mechanism anchors: {domain_id}/{source_id}")
             continue
         expected = EXPECTED_SOURCES[source_id]
         if row.get("domainClaimId") != field_row.get("domainClaimId"):
             fail(errors, f"{domain_id}/{source_id} domainClaimId mismatch")
         if row.get("fieldCardId") != field_row.get("fieldCardId"):
             fail(errors, f"{domain_id}/{source_id} fieldCardId mismatch")
-        if row.get("extractionStatus") != "completed-first-wave-method-anchor-field-extraction":
+        if row.get("extractionStatus") != expected["row_status"]:
             fail(errors, f"{domain_id}/{source_id} extractionStatus mismatch")
         if row.get("sourceRole") != expected["role"]:
             fail(errors, f"{domain_id}/{source_id} sourceRole mismatch")

@@ -20,7 +20,7 @@
 
 域-来源深读队列见 [`human-infra-domain-source-specific-extraction-queue.json`](human-infra-domain-source-specific-extraction-queue.json)，由 `make domain-source-queue-audit` 检查 26 个域字段行是否派生为 81 个 domain-source 精读任务，并确认 exact claim、endpoint、population、uncertainty 和 transfer-boundary 精读完成前仍禁止校准预测、个体建议和域主张升级。
 
-首批域-来源精读完成寄存器见 [`human-infra-domain-source-specific-extraction-register.json`](human-infra-domain-source-specific-extraction-register.json)，由 `make domain-source-extraction-audit` 检查 25/81 个方法锚点精读任务是否已经绑定到 exact claim、endpoint、population、uncertainty、transfer-boundary 和模型准入阻塞语义。当前完成 Kaplan-Meier、Cox、Target Trial Emulation 和 TRIPOD+AI 四类方法锚点；剩余 56 项仍不得进入校准预测或个体建议。
+域-来源精读完成寄存器见 [`human-infra-domain-source-specific-extraction-register.json`](human-infra-domain-source-specific-extraction-register.json)，由 `make domain-source-extraction-audit` 检查 55/81 个方法与生物机制锚点精读任务是否已经绑定到 exact claim、endpoint、population、uncertainty、transfer-boundary 和模型准入阻塞语义。当前完成 Kaplan-Meier、Cox、Target Trial Emulation、TRIPOD+AI、衰老标志、癌症标志、Yamanaka / iPS、部分重编程、免疫衰老和 GrimAge 锚点；剩余 26 项仍不得进入校准预测或个体建议。
 
 ## Claim Spine
 
@@ -33,7 +33,7 @@
 | 轴线 | 当前成熟度 | 100% 状态 | 当前最大缺口 |
 | --- | ---: | --- | --- |
 | 项目价值 | 88% | 不同受众能用同一核心命题理解 Human Infra 的必要性 | 已有页面级 Claim ID 一致性门禁；还需要补 audience-to-claim map 和邻近项目边界对照 |
-| 研究框架 | 85% | 每条主张都进入 Source Card、Claim-Evidence Matrix、变量表和反证条件 | 已有核心主张矩阵、页面级 Claim ID 门禁、arXiv-style 论文页强主张门禁、C1/20 个优先 C2 反证覆盖门禁、v0.1 反证 Source Card 锚点回填、当前 21 个来源锚点字段级 Source Card 抽取、26 个优先域的域级 Claim-Evidence Matrix seed、26 个优先域的 endpoint 候选和 source-specific 深读槽位、81 个 domain-source 深读任务队列、25/81 个方法锚点精读完成行和本地审计门禁，但 56 个剩余 domain-source 精读任务、20 域之外的 C2 长尾域和外部文献核验仍未完成 |
+| 研究框架 | 87% | 每条主张都进入 Source Card、Claim-Evidence Matrix、变量表和反证条件 | 已有核心主张矩阵、页面级 Claim ID 门禁、arXiv-style 论文页强主张门禁、C1/20 个优先 C2 反证覆盖门禁、v0.1 反证 Source Card 锚点回填、当前 21 个来源锚点字段级 Source Card 抽取、26 个优先域的域级 Claim-Evidence Matrix seed、26 个优先域的 endpoint 候选和 source-specific 深读槽位、81 个 domain-source 深读任务队列、55/81 个方法与生物机制锚点精读完成行和本地审计门禁，但 26 个剩余 domain-source 精读任务、20 域之外的 C2 长尾域和外部文献核验仍未完成 |
 | 定量模型 | 63% | 有可运行、可复现、可审查的场景级模型管线 | 已有 toy model、合成敏感性分析、审计器、校准预备契约、真实队列候选注册表、数据源 Source Cards、Data Card 模板、NHATS 数据准入草案、变量字典草案、extraction manifest 草案、机器可读 acquisition-readiness gates、R13/R14 file-tier table、第一版 NHATS estimand protocol、NHATS variable confirmation matrix、NHATS cohort-flow endpoint-routing protocol、synthetic disclosure-control validator、synthetic survey-design validator、synthetic missingness-route validator、NHATS route-field discovery validator 和 NHATS Colectica value-label review protocol validator，但还没有数据访问、Colectica value labels 精确确认、真实提取、真实 NHATS route classification、真实 NHATS 输出披露审查、真实 survey-design 加权估计、外部验证和校准后的敏感性分析 |
 
 ## 价值层 100%
@@ -215,7 +215,7 @@ life_path_toy_model_scenarios.json
 这一步已经把项目从“有定量想法的研究叙事”推进到“有最小可执行、可审计模型管线的研究系统”，并且开始把合成敏感性分析、真实队列候选、治理边界、第一份 NHATS 数据准入草案、NHATS 机器可读 acquisition-readiness gates、R13/R14 file-tier table、第一版 NHATS estimand protocol、NHATS variable confirmation matrix、NHATS cohort-flow endpoint-routing protocol、synthetic disclosure-control validator、synthetic survey-design validator、synthetic missingness-route validator、NHATS route-field discovery validator、NHATS Colectica value-label review protocol validator 和核心主张证据矩阵纳入机器审计。下一步不是继续膨胀新域，而是补三件硬东西：
 
 - 继续用 `human-infra-core-claim-evidence-matrix.md` 作为核心主张入口，把 README、论文页和 Web 页的强叙事都回连到同一组 Claim ID、来源角色和禁止外推边界。
-- 按 `human-infra-domain-source-specific-extraction-queue.json` 的剩余 56 个 domain-source 任务继续完成 exact claim / endpoint / population / effect-size / uncertainty / transfer-boundary Source Cards，并继续把 C1/C2 长尾域接入同一矩阵。
+- 按 `human-infra-domain-source-specific-extraction-queue.json` 的剩余 26 个 domain-source 任务继续完成 exact claim / endpoint / population / effect-size / uncertainty / transfer-boundary Source Cards，并继续把 C1/C2 长尾域接入同一矩阵。
 - 把 NHATS manifest、route-field discovery register、Colectica value-label review protocol 和 first estimand protocol 从 draft 推进到 governed acquisition-ready，补 Colectica 登录复核、value labels、question text、universe/skip logic、精确字段名、轮次、缺失码、公开/敏感/受限状态、权重、endpoint 定义、cohort flow、survey design、代码本来源和输出抑制规则。
 - 把 sensitivity analysis 从合成一因素扰动推进到基于真实队列、预注册范围和校准诊断的敏感性分析。
 

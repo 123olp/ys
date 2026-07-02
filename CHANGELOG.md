@@ -4,6 +4,7 @@ All notable repository structure changes are recorded here.
 
 ## 2026-07-02
 
+- Expanded the domain-source-specific extraction register to 55/81 completed rows, adding biological-mechanism anchors for Hallmarks of Aging, Hallmarks of Cancer, Yamanaka / iPS, partial reprogramming, immunosenescence and GrimAge while keeping calibrated prediction and intervention ranking blocked.
 - Added a first-wave domain-source-specific extraction register and audit gate, completing 25/81 method-anchor extraction rows for Kaplan-Meier, Cox, Target Trial Emulation and TRIPOD+AI while keeping calibrated prediction, individual advice and intervention ranking blocked.
 - Added a domain-source-specific extraction queue and audit gate, deriving the 26 domain Source Card field rows into 81 domain-source reading tasks over 20 source anchors while keeping calibrated prediction and domain-claim upgrades blocked until exact claim, endpoint, population, uncertainty and transfer-boundary fields are extracted.
 - Added a domain Source Card field-extraction register and audit gate, giving all 26 priority domain matrix rows endpoint candidates, population-boundary slots, uncertainty-channel slots, transfer-boundary slots, source IDs and next source-specific extraction actions.
