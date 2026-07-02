@@ -18,6 +18,7 @@
 - `audit_human_infra_domain_source_card_promotion_queue.py`: verifies that the 81 completed domain-source field rows derive into fresh-review, Source Card, variable-card, endpoint-card, uncertainty-card, transfer-boundary-card and downgrade-check promotion tasks from `docs/reference/human-infra-domain-source-card-promotion-queue.json`, while keeping model admission blocked.
 - `audit_human_infra_source_context_local_review_register.py`: verifies that all 20 locally reviewed source anchors match the promotion queue, source evidence, affected tasks, blocked uses and index links from `docs/reference/human-infra-source-context-local-review-register.json`.
 - `audit_human_infra_card_promotion_prep_register.py`: verifies that the 81 locally reviewed promotion tasks have prepared Source/variable/endpoint/uncertainty/transfer/downgrade artifact IDs, reviewer questions, blocked uses and index links from `docs/reference/human-infra-card-promotion-prep-register.json`, while keeping independent fresh review and model admission blocked.
+- `audit_human_infra_independent_fresh_review_protocol.py`: verifies that the independent fresh-review protocol in `docs/reference/human-infra-independent-fresh-review-protocol.json` batches the 81 prepared artifact packs, matches prep-register source counts, preserves verdict taxonomy and keeps reviewed packet count at 0 until verdict artifacts exist.
 - `audit_human_infra_falsifier_source_card_backfill.py`: verifies that current paper strong claims and C1/C2 priority-domain falsifier rows have Source Card anchor backfill, evidence roles, supported-use boundaries and transfer boundaries from `docs/reference/human-infra-falsifier-source-card-backfill.json`.
 - `audit_human_infra_falsifier_source_card_extraction.py`: verifies that all current source anchors from `docs/reference/human-infra-falsifier-source-card-extraction.json` map to exact source identity, Human Infra domains, paper claims, model positions, transfer boundaries and the human-readable source-note pack.
 - `check_repository.py`: verifies required files, required directories, temporary filename cleanup, Python cache cleanup, and local Markdown links.
@@ -52,6 +53,8 @@ python3 tools/audit_human_infra_domain_source_specific_extraction_queue.py
 python3 tools/audit_human_infra_domain_source_specific_extraction_register.py
 python3 tools/audit_human_infra_domain_source_card_promotion_queue.py
 python3 tools/audit_human_infra_source_context_local_review_register.py
+python3 tools/audit_human_infra_card_promotion_prep_register.py
+python3 tools/audit_human_infra_independent_fresh_review_protocol.py
 python3 tools/audit_human_infra_falsifier_source_card_backfill.py
 python3 tools/audit_human_infra_falsifier_source_card_extraction.py
 python3 tools/update_domain_doc_contracts.py
@@ -68,6 +71,8 @@ make domain-source-queue-audit
 make domain-source-extraction-audit
 make domain-source-promotion-audit
 make source-context-local-review-audit
+make card-promotion-prep-audit
+make independent-fresh-review-protocol-audit
 make falsifier-source-audit
 make falsifier-source-extraction-audit
 make check

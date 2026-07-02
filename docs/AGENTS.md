@@ -180,6 +180,7 @@ docs/
 │   ├── human-infra-domain-source-card-promotion-queue.json
 │   ├── human-infra-source-context-local-review-register.json
 │   ├── human-infra-card-promotion-prep-register.json
+│   ├── human-infra-independent-fresh-review-protocol.json
 │   ├── human-infra-falsifier-source-card-backfill.json
 │   ├── human-infra-falsifier-source-card-extraction.json
 │   ├── human-infra-maturity-roadmap.md
@@ -232,6 +233,7 @@ docs/
 - `reference/applications-and-literature.md`：整理 Human Infra 的真实应用案例和首批文献主干。
 - `reference/human-infra-core-claim-evidence-matrix.md`：登记 Human Infra 核心主张、Source Anchor Cards、Claim-Evidence Matrix、方法转译契约和项目级证据 gate。
 - `reference/human-infra-audience-claim-map.json`：登记不同受众的 Claim ID 入口、价值翻译、禁止误读和邻近项目边界，用于把项目价值讲清楚而不改写核心主线。
+- `reference/human-infra-independent-fresh-review-protocol.json`：登记 81 个卡片晋升准备包的独立 fresh review 批次、审查字段、verdict taxonomy 和晋升规则；它只定义审查协议，不代表 verdict 已完成。
 - `reference/life-path-prediction-model-contract.md`：定义干预、状态转移、风险函数、生存曲线、有效时间、主观时间、相对时间和未来选择权的预测模型契约。
 - `reference/life-path-prediction-model-governance.md`：定义定量预测模型的证据准入、偏差审查、验证、报告和禁止用途门禁。
 - `reference/project-boundary-v0.1.md`：定义当前公开版本边界、纳入范围、排除范围、材料落点和后续版本方向。

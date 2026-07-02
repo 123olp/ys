@@ -1,0 +1,119 @@
+{
+  "schemaVersion": "human-infra.independent-fresh-review-protocol.v1",
+  "registerId": "human-infra-independent-fresh-review-protocol-2026-07-02",
+  "status": "active-review-protocol-no-verdicts-yet",
+  "purpose": "Define the independent fresh-review batches, required checks and promotion boundaries for the 81 prepared card-promotion artifact packs without claiming any review verdict is complete.",
+  "sourceOfTruth": {
+    "cardPromotionPrepRegister": "docs/reference/human-infra-card-promotion-prep-register.json",
+    "sourceCardSystem": "docs/reference/source-card-system.md",
+    "evidencePolicy": "docs/reference/evidence-policy.md",
+    "maturityGapRegister": "docs/reference/human-infra-maturity-gap-register.json"
+  },
+  "scope": {
+    "preparedPromotionPacketCount": 81,
+    "coveredSourceAnchorCount": 20,
+    "batchCount": 4,
+    "currentReviewedPacketCount": 0,
+    "selectionRule": "Every prepared promotion packet must receive an independent fresh-review verdict before any prepared Source, variable, endpoint, uncertainty, transfer-boundary or downgrade artifact can be filled.",
+    "nonClaims": [
+      "This protocol is not an independent fresh review verdict.",
+      "This protocol does not complete any Source Card, variable card, endpoint card, uncertainty card, transfer-boundary card or downgrade check.",
+      "This protocol does not authorize calibrated prediction, individual recommendation, individual death-date output, intervention ranking, domain-claim upgrade or clinical-validity claims."
+    ]
+  },
+  "requiredReviewFields": [
+    "sourceIdentityVerdict",
+    "sourceContextVerdict",
+    "exactClaimUseVerdict",
+    "domainTransferVerdict",
+    "modelPositionVerdict",
+    "uncertaintyBoundaryVerdict",
+    "downgradeVerdict",
+    "blockedUseVerdict",
+    "reviewerNote"
+  ],
+  "verdictTaxonomy": [
+    "support-with-boundary",
+    "bounded-support",
+    "downgrade-required",
+    "reject-source-context-mismatch",
+    "cannot-evaluate-insufficient-context"
+  ],
+  "blockedUses": [
+    "calibrated-prediction",
+    "clinical-validity-claim",
+    "domain-claim-upgrade",
+    "individual-death-date-output",
+    "individual-recommendation",
+    "intervention-ranking"
+  ],
+  "promotionRules": [
+    "Only support-with-boundary or bounded-support rows may fill reviewed source, variable, endpoint, uncertainty and transfer-boundary artifacts.",
+    "downgrade-required rows must fill downgrade-check artifacts before any downstream matrix update.",
+    "reject-source-context-mismatch rows must be removed from promotion and linked back to the relevant falsifier or boundary row.",
+    "cannot-evaluate-insufficient-context rows remain blocked until source identity, claim context and transfer boundary are refreshed from primary sources."
+  ],
+  "reviewBatches": [
+    {
+      "batchId": "FRB-01-method-statistical-model-standards",
+      "batchLabel": "统计、生存分析、目标试验与预测模型方法锚点",
+      "packetCount": 26,
+      "sourceAnchorCounts": {
+        "SA-KAPLAN-MEIER-1958": 3,
+        "SA-COX-1972": 5,
+        "SA-TARGET-TRIAL-2022": 15,
+        "SA-TRIPOD-AI-2024": 2,
+        "SA-NCI-SCREENING-BIAS": 1
+      },
+      "reviewPriority": "first",
+      "reviewFocus": "Confirm exact method role, endpoint language, censoring or bias boundary, and whether the source can support model-position language without becoming calibrated prediction evidence."
+    },
+    {
+      "batchId": "FRB-02-biological-aging-mechanisms",
+      "batchLabel": "衰老、癌症、重编程、免疫与生物年龄机制锚点",
+      "packetCount": 30,
+      "sourceAnchorCounts": {
+        "SA-HALLMARKS-AGING-2013": 5,
+        "SA-HALLMARKS-AGING-2023": 15,
+        "SA-HALLMARKS-CANCER-2022": 5,
+        "SA-YAMANAKA-IPS-2006": 1,
+        "SA-PARTIAL-REPROGRAMMING-2016": 2,
+        "SA-GRIMAGE-2019": 1,
+        "SA-IMMUNOSENESCENCE-2024": 1
+      },
+      "reviewPriority": "second",
+      "reviewFocus": "Separate mechanism plausibility, biomarker association, animal or cell evidence, and human endpoint evidence; block any direct extension into intervention ranking or clinical validity."
+    },
+    {
+      "batchId": "FRB-03-subject-continuity-capability-cognition",
+      "batchLabel": "主体持续性、能力方法、扩展心智与脑保存边界锚点",
+      "packetCount": 19,
+      "sourceAnchorCounts": {
+        "SA-WHO-CONSTITUTION": 10,
+        "SA-CAPABILITY-APPROACH": 2,
+        "SA-EXTENDED-MIND-1998": 4,
+        "SA-BRAIN-PRESERVATION-2024": 3
+      },
+      "reviewPriority": "third",
+      "reviewFocus": "Confirm normative, conceptual and identity-continuity roles; prevent philosophical or preservation sources from being promoted into biological feasibility or personal-continuity proof."
+    },
+    {
+      "batchId": "FRB-04-digital-twin-ai-governance-future-waiting",
+      "batchLabel": "数字孪生、AI 治理、相对论时间差分与未来等待锚点",
+      "packetCount": 6,
+      "sourceAnchorCounts": {
+        "SA-DYNAMIC-DIGITAL-TWIN-2022": 3,
+        "SA-NIST-AI-RMF-2023": 1,
+        "SA-GPS-RELATIVITY-2003": 1,
+        "SA-NASA-BLACK-HOLES": 1
+      },
+      "reviewPriority": "fourth",
+      "reviewFocus": "Confirm tool, governance, relativity and future-waiting boundary roles; block any leap from redshift, digital-twin or AI-risk material to engineering feasibility or personal survival claims."
+    }
+  ],
+  "indexRequirements": [
+    "docs/reference/README.md",
+    "docs/reference/human-infra-maturity-roadmap.md",
+    "tools/README.md"
+  ]
+}

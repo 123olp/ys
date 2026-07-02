@@ -30,6 +30,8 @@
 
 卡片晋升预注册账本见 [`human-infra-card-promotion-prep-register.json`](human-infra-card-promotion-prep-register.json)，由 `make card-promotion-prep-audit` 检查当前 81 个本地复核晋升任务是否已经预分配 486 个 Source/变量/endpoint/uncertainty/transfer/downgrade 待产物 ID、评审问题、阻塞用途和索引入口。该账本只是卡片晋升执行前的准备包，不等于独立 fresh review 或卡片完成。
 
+独立 fresh review 协议见 [`human-infra-independent-fresh-review-protocol.json`](human-infra-independent-fresh-review-protocol.json)，由 `make independent-fresh-review-protocol-audit` 检查 81 个准备包如何按四个批次进入独立审查，并确认当前 reviewed packet count 仍为 0。该协议只定义审查批次、字段和晋升规则，不等于任何 fresh review verdict 已经完成。
+
 ## Claim Spine
 
 本路线图对齐 `HI-CL1`、`HI-CL2`、`HI-CL3`、`HI-CL4`、`HI-CL6` 和 `HI-CL7`：主体持续性是价值成立条件，Human Infra 的对象是主体持续性的基础条件集合，定量模型必须区分寿命、健康寿命、有效时间和未来选择权，并把技术放入变量、状态、风险函数和证据链中审查。边界：不是医疗建议；不输出个体死亡日期；不证明具体技术已经实现有效永生。

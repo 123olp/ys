@@ -1,4 +1,4 @@
-.PHONY: check structure claim-matrix-audit maturity-gap-audit page-claim-audit audience-claim-map-audit paper-claim-audit domain-falsifier-audit domain-claim-matrix-audit domain-field-extraction-audit domain-source-queue-audit domain-source-extraction-audit domain-source-promotion-audit source-context-local-review-audit card-promotion-prep-audit falsifier-source-audit falsifier-source-extraction-audit py-compile clean
+.PHONY: check structure claim-matrix-audit maturity-gap-audit page-claim-audit audience-claim-map-audit paper-claim-audit domain-falsifier-audit domain-claim-matrix-audit domain-field-extraction-audit domain-source-queue-audit domain-source-extraction-audit domain-source-promotion-audit source-context-local-review-audit card-promotion-prep-audit independent-fresh-review-protocol-audit falsifier-source-audit falsifier-source-extraction-audit py-compile clean
 
 check:
 	$(MAKE) clean
@@ -16,6 +16,7 @@ check:
 	$(MAKE) domain-source-promotion-audit
 	$(MAKE) source-context-local-review-audit
 	$(MAKE) card-promotion-prep-audit
+	$(MAKE) independent-fresh-review-protocol-audit
 	$(MAKE) falsifier-source-audit
 	$(MAKE) falsifier-source-extraction-audit
 	$(MAKE) py-compile
@@ -64,6 +65,9 @@ source-context-local-review-audit:
 card-promotion-prep-audit:
 	python3 tools/audit_human_infra_card_promotion_prep_register.py
 
+independent-fresh-review-protocol-audit:
+	python3 tools/audit_human_infra_independent_fresh_review_protocol.py
+
 falsifier-source-audit:
 	python3 tools/audit_human_infra_falsifier_source_card_backfill.py
 
@@ -85,6 +89,7 @@ py-compile:
 		tools/audit_human_infra_domain_source_card_promotion_queue.py \
 		tools/audit_human_infra_source_context_local_review_register.py \
 		tools/audit_human_infra_card_promotion_prep_register.py \
+		tools/audit_human_infra_independent_fresh_review_protocol.py \
 		tools/audit_human_infra_falsifier_source_card_backfill.py \
 		tools/audit_human_infra_falsifier_source_card_extraction.py \
 		tools/arxiv_html_paper_tool.py \
