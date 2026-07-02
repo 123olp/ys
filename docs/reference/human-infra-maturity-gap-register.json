@@ -182,7 +182,9 @@
         "docs/reference/human-infra-c2-longtail-third-batch-corrected-source-reextraction-register.json",
         "docs/reference/human-infra-c2-longtail-third-batch-corrected-source-fresh-review-verdict-register.json",
         "tools/audit_human_infra_c2_longtail_third_batch_corrected_source_fresh_review_verdict_register.py",
-        "tools/audit_human_infra_c2_longtail_third_batch_corrected_source_reextraction_register.py"
+        "tools/audit_human_infra_c2_longtail_third_batch_corrected_source_reextraction_register.py",
+        "docs/reference/human-infra-c2-longtail-third-batch-reviewed-card-artifact-register.json",
+        "tools/audit_human_infra_c2_longtail_third_batch_reviewed_card_artifact_register.py"
       ],
       "gates": [
         {
@@ -296,14 +298,14 @@
             "docs/reference/human-infra-c2-longtail-third-batch-corrected-source-reextraction-register.json",
             "docs/reference/human-infra-c2-longtail-third-batch-corrected-source-fresh-review-verdict-register.json",
             "tools/audit_human_infra_c2_longtail_third_batch_corrected_source_fresh_review_verdict_register.py",
-            "tools/audit_human_infra_c2_longtail_third_batch_corrected_source_reextraction_register.py"
+            "tools/audit_human_infra_c2_longtail_third_batch_corrected_source_reextraction_register.py",
+            "docs/reference/human-infra-c2-longtail-third-batch-reviewed-card-artifact-register.json",
+            "tools/audit_human_infra_c2_longtail_third_batch_reviewed_card_artifact_register.py"
           ],
           "missingEvidence": [
-            "C2-LT-B3 eligible original and corrected rows still need bounded reviewed artifacts before C2 long-tail coverage can be considered closed.",
-            "C2-LT-B3 EXT-022 downgrade-before-fill and C2LTB3-CREXT-004 duplicate/split route blocked row still need explicit reviewed artifact or boundary representation.",
             "Remaining C2 long-tail domains outside B1/B2/B3 still need batch selection, source extraction, fresh review and reviewed artifacts."
           ],
-          "nextAction": "Create bounded reviewed artifacts for the 18 original C2-LT-B3 eligible rows plus the 6 corrected-source eligible rows, preserve EXT-022 downgrade-before-fill and C2LTB3-CREXT-004 duplicate/split blocking, and keep model admission blocked.",
+          "nextAction": "Select and run the next C2 long-tail batch outside B1/B2/B3 through promotion queue, source extraction, local review, independent fresh review and bounded reviewed artifacts while keeping model admission blocked.",
           "blocks100Percent": true
         },
         {
@@ -392,14 +394,15 @@
             "docs/reference/human-infra-c2-longtail-third-batch-corrected-source-reextraction-register.json",
             "docs/reference/human-infra-c2-longtail-third-batch-corrected-source-fresh-review-verdict-register.json",
             "tools/audit_human_infra_c2_longtail_third_batch_corrected_source_fresh_review_verdict_register.py",
-            "tools/audit_human_infra_c2_longtail_third_batch_corrected_source_reextraction_register.py"
+            "tools/audit_human_infra_c2_longtail_third_batch_corrected_source_reextraction_register.py",
+            "docs/reference/human-infra-c2-longtail-third-batch-reviewed-card-artifact-register.json",
+            "tools/audit_human_infra_c2_longtail_third_batch_reviewed_card_artifact_register.py"
           ],
           "missingEvidence": [
-            "C2-LT-B3 fresh-reviewed eligible rows are not yet converted into reviewed variable, endpoint, uncertainty, transfer-boundary and downgrade artifacts.",
-            "C2-LT-B3 AAO-HNS publisher-route access update still needs bounded artifact representation before any variable contract use.",
-            "Reviewed artifacts are not yet connected to any calibrated model-admission gate."
+            "B3 reviewed artifacts are not yet connected to any calibrated model-admission gate.",
+            "Remaining C2 long-tail domains outside B1/B2/B3 still need reviewed variable, endpoint, uncertainty, transfer-boundary and downgrade artifacts."
           ],
-          "nextAction": "Convert only C2-LT-B3 eligible rows into bounded artifacts and keep route/split/downgrade rows out of variable-contract promotion; do not admit them to the calibrated model.",
+          "nextAction": "Keep B3 artifacts as bounded vocabulary and route-contract evidence only; continue remaining C2 batches and do not admit any artifact to calibrated model use before model gates pass.",
           "blocks100Percent": true
         },
         {
@@ -513,14 +516,14 @@
             "docs/reference/human-infra-c2-longtail-third-batch-corrected-source-reextraction-register.json",
             "docs/reference/human-infra-c2-longtail-third-batch-corrected-source-fresh-review-verdict-register.json",
             "tools/audit_human_infra_c2_longtail_third_batch_corrected_source_fresh_review_verdict_register.py",
-            "tools/audit_human_infra_c2_longtail_third_batch_corrected_source_reextraction_register.py"
+            "tools/audit_human_infra_c2_longtail_third_batch_corrected_source_reextraction_register.py",
+            "docs/reference/human-infra-c2-longtail-third-batch-reviewed-card-artifact-register.json",
+            "tools/audit_human_infra_c2_longtail_third_batch_reviewed_card_artifact_register.py"
           ],
           "missingEvidence": [
-            "C2-LT-B3 EXT-022 downgrade-before-fill row still needs explicit downgrade artifact representation.",
-            "C2-LT-B3 C2LTB3-CREXT-004 duplicate/split route blocked row still needs explicit blocked-row representation to prevent duplicate source counting.",
             "Remaining C2 long-tail domains still need independent source review and downgrade rows."
           ],
-          "nextAction": "Carry C2-LT-B3 downgrade-required and duplicate/split blocked rows into reviewed-artifact workflow before any domain claim upgrade.",
+          "nextAction": "Continue C2 long-tail batch coverage and preserve downgrade/duplicate/source-resolution rows as explicit blockedRows before any domain claim upgrade.",
           "blocks100Percent": true
         }
       ]
@@ -682,7 +685,7 @@
   "nextWorkOrder": [
     {
       "priority": 1,
-      "item": "Create C2-LT-B3 reviewed artifacts for 18 original eligible rows plus 6 corrected-source eligible rows, with explicit EXT-022 downgrade and C2LTB3-CREXT-004 duplicate/split blocked-row representation.",
+      "item": "Select the next C2 long-tail batch outside B1/B2/B3 and run the same queue, extraction, local review, independent fresh review and reviewed-artifact loop while preserving blocked downgrade/source-resolution rows.",
       "unblocks": [
         "RESEARCH-G3-c1-c2-source-cards",
         "RESEARCH-G4-variable-mechanism-contracts",
