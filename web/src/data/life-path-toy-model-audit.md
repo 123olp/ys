@@ -3,7 +3,7 @@
 - Overall status: `PASS`
 - Model path: `web/src/data/life-path-toy-model.json`
 - Model SHA-256: `a4c92209d79d20579bf1f575d5ebf07ffe5be9ccaf6bf3f3eef08efa287b5377`
-- Generated at: `2026-07-02T01:38:26.279879+00:00`
+- Generated at: `2026-07-02T01:57:08.979450+00:00`
 
 ## Checks
 
@@ -69,7 +69,9 @@
 | `nhats-extraction-manifest-exists` | `PASS` | domains/c1-boundary-rewriting/longevity-evidence/docs/life-path-extraction-manifest-nhats-draft.md |
 | `nhats-extraction-manifest-identity` | `PASS` | manifest must bind NHATS source card, data card, variable dictionary, manifest ID, and cannot-extract status |
 | `nhats-extraction-manifest-access-terms` | `PASS` | manifest must record registration, sensitive/restricted application, Colectica, aggregate reporting, n<5, and public AI upload boundaries |
+| `nhats-extraction-manifest-official-source-refresh` | `PASS` | manifest must record current official NHATS access, Colectica, AI-upload, temporary-file-availability and restricted-file facts |
 | `nhats-extraction-manifest-no-data-boundary` | `PASS` | manifest must explicitly block download, extraction script, raw repository data, calibration/validation claim, and individual death-date prediction |
+| `nhats-extraction-manifest-acquisition-readiness-gates` | `PASS` | manifest must expose acquisition-readiness gates before any governed NHATS extraction |
 | `nhats-extraction-manifest-variable-groups` | `PASS` | manifest must include identity, weight/design, endpoint, cognition, effective-time and derived-output variables |
 | `nhats-extraction-manifest-extraction-rules` | `PASS` | manifest must block scripts, downloads, sensitive/restricted use, metrics, unsafe display, and prose-only variable inference |
 | `nhats-extraction-manifest-required-slots` | `PASS` | manifest must expose the blank slots required before governed extraction |
@@ -122,14 +124,14 @@
 ## NHATS Extraction Manifest
 
 - Manifest path: `domains/c1-boundary-rewriting/longevity-evidence/docs/life-path-extraction-manifest-nhats-draft.md`
-- Manifest SHA-256: `2a3f3472cfa5a22f06af864145fd883ef919b45cfa5e8302e0644c9e059ea1ce`
+- Manifest SHA-256: `a667200dc19d1c1e22f221bd68ef9560cb8bd33e683e771bdaa8bd525c6388ac`
 - Manifest status: `PASS`
 - Boundary: the manifest is a pre-extraction gate; it blocks scripts, downloads, field inference, calibration, validation, raw-data exposure and unsafe individual outputs until official file-level requirements are complete.
 
 ## Sensitivity Analysis
 
 - Sensitivity path: `web/src/data/life-path-sensitivity-analysis.json`
-- Sensitivity SHA-256: `b0d4947cc2e99c983b96bf424b5b6e9b0443209f3f5f23d5750444cf926473ad`
+- Sensitivity SHA-256: `73ce504931ad39a88f012185a1959cf6d617b98804a691e167e111a83281e10c`
 - Sensitivity status: `PASS`
 - Boundary: sensitivity analysis is synthetic one-factor-at-a-time stress testing; it does not prove empirical parameter values, causal effects, calibrated prediction, or individual usefulness.
 

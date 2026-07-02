@@ -894,6 +894,27 @@ def audit_nhats_extraction_manifest(manifest_path: Path) -> dict[str, Any]:
         "manifest must record registration, sensitive/restricted application, Colectica, aggregate reporting, n<5, and public AI upload boundaries",
     )
 
+    source_refresh_ok = all(
+        token.lower() in manifest_text.lower()
+        for token in (
+            "Observed on 2026-07-02",
+            "All NHATS files require registration",
+            "public-use files are for registered users",
+            "Cross-year metadata search is provided through Colectica",
+            "January 22, 2026",
+            "April 6, 2026",
+            "temporarily unavailable due to impending website updates",
+            "public LLMs or AI platforms is treated as data sharing",
+            "Restricted files contain fields with additional identification risk",
+        )
+    )
+    add_check(
+        checks,
+        "nhats-extraction-manifest-official-source-refresh",
+        status_from_bool(manifest_exists and source_refresh_ok),
+        "manifest must record current official NHATS access, Colectica, AI-upload, temporary-file-availability and restricted-file facts",
+    )
+
     no_data_boundary_ok = all(
         token.lower() in manifest_text.lower()
         for token in (
@@ -909,6 +930,29 @@ def audit_nhats_extraction_manifest(manifest_path: Path) -> dict[str, Any]:
         "nhats-extraction-manifest-no-data-boundary",
         status_from_bool(manifest_exists and no_data_boundary_ok),
         "manifest must explicitly block download, extraction script, raw repository data, calibration/validation claim, and individual death-date prediction",
+    )
+
+    acquisition_gates_ok = all(
+        token in manifest_text
+        for token in (
+            "`official-source-refresh`",
+            "`registration-status`",
+            "`file-access-tier`",
+            "`colectica-variable-confirmation`",
+            "`round-window`",
+            "`survey-design-plan`",
+            "`endpoint-definition`",
+            "`disclosure-control`",
+            "`ai-boundary`",
+            "`storage-destruction-plan`",
+            "If any acquisition readiness gate remains Missing or only Partial, decision = cannot-extract-yet.",
+        )
+    )
+    add_check(
+        checks,
+        "nhats-extraction-manifest-acquisition-readiness-gates",
+        status_from_bool(manifest_exists and acquisition_gates_ok),
+        "manifest must expose acquisition-readiness gates before any governed NHATS extraction",
     )
 
     variable_groups_ok = all(

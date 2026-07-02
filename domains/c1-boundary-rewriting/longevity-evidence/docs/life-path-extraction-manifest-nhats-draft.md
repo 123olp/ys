@@ -61,6 +61,42 @@ The NHATS/NSOC Conditions of Use impose these model-relevant boundaries:
 - Destroy downloaded files and derived data if requested by NHATS.
 - Sensitive-data magnitude and frequency tabulations with `n < 5` require suppression or additional restriction handling.
 
+## Official Source Refresh
+
+Observed on 2026-07-02 from official NHATS pages:
+
+| Official source | Current fact captured for this manifest | Human Infra consequence |
+| --- | --- | --- |
+| Data Access | All NHATS files require registration. Public-use files are for registered users; sensitive and restricted files require additional application. | No acquisition, extraction or field table may be marked ready without registration status and file-specific access tier. |
+| Cross-Year Search | Cross-year metadata search is provided through Colectica and requires separate registration; metadata includes item numbers, variable names, labels, values, value labels and question text. | Exact variables must come from Colectica/codebooks, not prose inference. |
+| Conditions of Use | January 22, 2026 added a condition prohibiting NHATS/NSOC uploads to public LLMs or AI platforms; April 6, 2026 edited the public-use sharing rule. | No NHATS/NSOC raw data, row-level derivatives or small-cell tables may enter public AI systems, this repository, public issues or ungated notebooks. |
+| Welcome / AI notice | Uploading NHATS/NSOC data to public LLMs or AI platforms is treated as data sharing and is not allowed. | AI assistance may only use public documentation, synthetic examples or aggregate non-disclosive outputs. |
+| NHATS Files | NHATS file pages state data files are temporarily unavailable due to impending website updates; round pages still expose file families and approval boundaries. | Acquisition readiness must be rechecked immediately before any registration, download or script work. |
+| Sensitive & Restricted Files | Restricted files contain fields with additional identification risk and are limited to qualifying researchers meeting additional requirements. | Biomarkers, genetics, CMS/Medicare linkage, sensitive demographics and restricted geography remain excluded until approval is documented. |
+
+## Acquisition Readiness Gates
+
+The manifest may move from `draft / cannot-extract-yet` to `acquisition-ready` only when all gates below are filled from official NHATS sources and reviewed locally.
+
+| Gate | Required evidence before acquisition | Current status |
+| --- | --- | --- |
+| `official-source-refresh` | Date-stamped review of Data Access, Conditions of Use, Cross-Year Search, Files and Sensitive/Restricted file pages. | Partial; current review recorded but not enough for download. |
+| `registration-status` | Registered NHATS account identity, permitted user boundary and no-sharing obligations recorded outside the public repository. | Missing. |
+| `file-access-tier` | For each planned file: public-use, sensitive or restricted tier; approval status; allowed local storage path. | Missing. |
+| `colectica-variable-confirmation` | Exact variable names, labels, value labels, missing codes and question text confirmed from Colectica or official codebooks. | Missing. |
+| `round-window` | Selected rounds, file versions, release dates and cohort refresh handling fixed before extraction. | Missing. |
+| `survey-design-plan` | Weight, strata, cluster and replicate-weight strategy matched to estimand. | Missing. |
+| `endpoint-definition` | Death, functional-survival, proxy interview, residential-care and censoring rules fixed before data access. | Missing. |
+| `disclosure-control` | `n < 5` suppression, aggregate-only export and no row-level output checks implemented. | Missing. |
+| `ai-boundary` | Written rule that public AI tools may see only public docs, synthetic examples or aggregate non-disclosive outputs. | Partial; boundary written, not operationalized. |
+| `storage-destruction-plan` | Governed local storage, access log, derived-data boundary and destruction-on-request process defined. | Missing. |
+
+Quality gate:
+
+```text
+If any acquisition readiness gate remains Missing or only Partial, decision = cannot-extract-yet.
+```
+
 ## Source Files
 
 The first extraction attempt must use only files that can be justified by this manifest and file-specific access terms.

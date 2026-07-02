@@ -4,6 +4,7 @@ All notable repository structure changes are recorded here.
 
 ## 2026-07-02
 
+- Added NHATS acquisition-readiness gates to the life-path extraction manifest and toy-model audit, capturing official access, Colectica, AI-upload, temporary-file-availability, restricted-file and pre-extraction governance boundaries.
 - Added a local core Claim-Evidence Matrix audit gate and `make claim-matrix-audit`, checking source anchors, claim IDs, evidence gates, prohibited-use boundaries, method URLs, and index links.
 - Added the Human Infra core Claim-Evidence Matrix, binding first-principle project claims to source anchor cards, method translation boundaries, project-level evidence gates, and prohibited extrapolations.
 - Added synthetic life-path sensitivity analysis export, audit coverage, generated Web data, and `/model/` summary panels for one-factor perturbations across hazard multiplier, health-quality shift, capability multiplier, subjective-time expansion, LEV progress rate, and tail-risk penalty.
