@@ -252,12 +252,14 @@
             "docs/reference/human-infra-c2-longtail-second-batch-source-extraction-register.json",
             "tools/audit_human_infra_c2_longtail_second_batch_source_extraction_register.py",
             "docs/reference/human-infra-c2-longtail-second-batch-local-review-register.json",
-            "tools/audit_human_infra_c2_longtail_second_batch_local_review_register.py"
+            "tools/audit_human_infra_c2_longtail_second_batch_local_review_register.py",
+            "docs/reference/human-infra-c2-longtail-second-batch-independent-fresh-review-protocol.json",
+            "tools/audit_human_infra_c2_longtail_second_batch_independent_fresh_review_protocol.py"
           ],
           "missingEvidence": [
-            "C2-LT-B1 now has 282 reviewed artifacts: 252 original reviewed artifacts for 42 eligible source rows plus 30 corrected-source reviewed artifacts for 5 eligible corrected rows. C2-LT-B2 now has 24/24 source-context extraction rows and 24/24 local source-context review rows for 12 additional remaining C2 long-tail domains, but those B2 rows still lack independent fresh review verdicts and reviewed artifacts. The 5 corrected rows marked lineage/route/index/fulltext blocked remain preserved outside artifact promotion. Full reviewed Source Card coverage for remaining C2 long-tail domains and model admission artifacts remain incomplete."
+            "C2-LT-B1 now has 282 reviewed artifacts: 252 original reviewed artifacts for 42 eligible source rows plus 30 corrected-source reviewed artifacts for 5 eligible corrected rows. C2-LT-B2 now has 24/24 source-context extraction rows, 24/24 local source-context review rows and a 2-batch independent fresh review protocol for 12 additional remaining C2 long-tail domains, but those B2 rows still lack independent fresh review verdicts and reviewed artifacts. The 5 corrected rows marked lineage/route/index/fulltext blocked remain preserved outside artifact promotion. Full reviewed Source Card coverage for remaining C2 long-tail domains and model admission artifacts remain incomplete."
           ],
-          "nextAction": "Build and execute the C2-LT-B2 independent fresh review protocol from the 24 locally reviewed extraction rows, then promote only eligible rows into reviewed artifacts while preserving the 5 corrected lineage/route/index/fulltext blocked rows and keeping model admission blocked.",
+          "nextAction": "Execute C2-LT-B2 independent fresh review verdicts from the protocol batches, then promote only eligible rows into reviewed artifacts while preserving the 5 corrected lineage/route/index/fulltext blocked rows and keeping model admission blocked.",
           "blocks100Percent": true
         },
         {
@@ -320,12 +322,14 @@
             "docs/reference/human-infra-c2-longtail-second-batch-source-extraction-register.json",
             "tools/audit_human_infra_c2_longtail_second_batch_source_extraction_register.py",
             "docs/reference/human-infra-c2-longtail-second-batch-local-review-register.json",
-            "tools/audit_human_infra_c2_longtail_second_batch_local_review_register.py"
+            "tools/audit_human_infra_c2_longtail_second_batch_local_review_register.py",
+            "docs/reference/human-infra-c2-longtail-second-batch-independent-fresh-review-protocol.json",
+            "tools/audit_human_infra_c2_longtail_second_batch_independent_fresh_review_protocol.py"
           ],
           "missingEvidence": [
-            "C2-LT-B1 now has reviewed variable and endpoint artifacts for 42 original eligible source rows plus corrected variable/endpoint artifacts for the 5 eligible corrected rows. C2-LT-B2 has 24/24 locally reviewed source-context rows with variable and endpoint candidates for 12 additional remaining C2 domains, but those candidates are not yet independently fresh-reviewed or promoted into governed variable/endpoint artifacts. The 5 corrected lineage/route/index/fulltext rows remain blocked, and calibrated variable contracts and endpoint validation are not complete."
+            "C2-LT-B1 now has reviewed variable and endpoint artifacts for 42 original eligible source rows plus corrected variable/endpoint artifacts for the 5 eligible corrected rows. C2-LT-B2 has 24/24 locally reviewed source-context rows and a 2-batch independent fresh review protocol with variable and endpoint candidates for 12 additional remaining C2 domains, but those candidates are not yet independently fresh-reviewed or promoted into governed variable/endpoint artifacts. The 5 corrected lineage/route/index/fulltext rows remain blocked, and calibrated variable contracts and endpoint validation are not complete."
           ],
-          "nextAction": "Send C2-LT-B2 locally reviewed variable and endpoint candidates through independent fresh review before any governed artifact promotion; keep calibrated variable contracts blocked until artifact and model gates pass.",
+          "nextAction": "Execute C2-LT-B2 independent fresh review verdicts for locally reviewed variable and endpoint candidates before any governed artifact promotion; keep calibrated variable contracts blocked until artifact and model gates pass.",
           "blocks100Percent": true
         },
         {
@@ -413,12 +417,14 @@
             "docs/reference/human-infra-c2-longtail-second-batch-source-extraction-register.json",
             "tools/audit_human_infra_c2_longtail_second_batch_source_extraction_register.py",
             "docs/reference/human-infra-c2-longtail-second-batch-local-review-register.json",
-            "tools/audit_human_infra_c2_longtail_second_batch_local_review_register.py"
+            "tools/audit_human_infra_c2_longtail_second_batch_local_review_register.py",
+            "docs/reference/human-infra-c2-longtail-second-batch-independent-fresh-review-protocol.json",
+            "tools/audit_human_infra_c2_longtail_second_batch_independent_fresh_review_protocol.py"
           ],
           "missingEvidence": [
-            "C2-LT-B1 now has downgrade-check artifacts for 42 original eligible source rows and promotion-time downgrade artifacts for the 5 eligible corrected rows. C2-LT-B2 has 24/24 locally reviewed source-context rows with downgrade triggers and transfer boundaries, but not yet fresh-review verdicts or reviewed downgrade artifacts. The 5 corrected lineage/route/index/fulltext blocked rows remain blocked."
+            "C2-LT-B1 now has downgrade-check artifacts for 42 original eligible source rows and promotion-time downgrade artifacts for the 5 eligible corrected rows. C2-LT-B2 has 24/24 locally reviewed source-context rows and a 2-batch independent fresh review protocol covering downgrade triggers and transfer boundaries, but not yet fresh-review verdicts or reviewed downgrade artifacts. The 5 corrected lineage/route/index/fulltext blocked rows remain blocked."
           ],
-          "nextAction": "Send C2-LT-B2 locally reviewed downgrade triggers and transfer boundaries through independent fresh review before any reviewed artifact promotion; keep corrected blocked rows and model-admission boundaries intact.",
+          "nextAction": "Execute C2-LT-B2 independent fresh review verdicts for downgrade triggers and transfer boundaries before any reviewed artifact promotion; keep corrected blocked rows and model-admission boundaries intact.",
           "blocks100Percent": true
         }
       ]
@@ -565,7 +571,7 @@
   "nextWorkOrder": [
     {
       "priority": 1,
-      "item": "Build and execute C2-LT-B2 independent fresh review protocol and verdicts from the 24 locally reviewed extraction rows, then prepare reviewed artifacts only for eligible rows while preserving the 5 corrected lineage/route/index/fulltext blocked rows and keeping model admission blocked.",
+      "item": "Execute C2-LT-B2 independent fresh review verdicts from the 2 protocol batches, then prepare reviewed artifacts only for eligible rows while preserving the 5 corrected lineage/route/index/fulltext blocked rows and keeping model admission blocked.",
       "unblocks": [
         "RESEARCH-G3-c1-c2-source-cards",
         "RESEARCH-G4-variable-mechanism-contracts",

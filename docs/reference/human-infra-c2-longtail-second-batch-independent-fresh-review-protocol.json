@@ -1,0 +1,133 @@
+{
+  "schemaVersion": "human-infra.c2-longtail-second-batch-independent-fresh-review-protocol.v1",
+  "registerId": "human-infra-c2-longtail-second-batch-independent-fresh-review-protocol-2026-07-02",
+  "status": "active-review-protocol",
+  "purpose": "Define independent fresh-review batches, required checks and promotion boundaries for the 24 locally reviewed C2-LT-B2 source-context extraction rows without storing verdicts inside the protocol artifact.",
+  "sourceOfTruth": {
+    "localReviewRegister": "docs/reference/human-infra-c2-longtail-second-batch-local-review-register.json",
+    "sourceExtractionRegister": "docs/reference/human-infra-c2-longtail-second-batch-source-extraction-register.json",
+    "sourceExtractionQueue": "docs/reference/human-infra-c2-longtail-second-batch-source-extraction-queue.json",
+    "sourceCardSystem": "docs/reference/source-card-system.md",
+    "evidencePolicy": "docs/reference/evidence-policy.md",
+    "maturityGapRegister": "docs/reference/human-infra-maturity-gap-register.json"
+  },
+  "scope": {
+    "localReviewedExtractionTaskCount": 24,
+    "coveredDomainCount": 12,
+    "batchCount": 2,
+    "protocolEmbeddedVerdictCount": 0,
+    "selectionRule": "Every C2-LT-B2 local-review row must receive independent fresh review before any reviewed artifact or model-admission claim.",
+    "nonClaims": [
+      "This protocol is not an independent fresh review verdict register.",
+      "This protocol does not complete Source Cards, variable cards, endpoint cards, uncertainty cards, transfer-boundary cards or downgrade-check artifacts.",
+      "This protocol does not authorize calibrated prediction, individual advice, individual death-date output, intervention ranking, domain-claim upgrade or clinical-validity claims."
+    ]
+  },
+  "requiredReviewFields": [
+    "sourceIdentityVerdict",
+    "sourceContextVerdict",
+    "exactClaimUseVerdict",
+    "domainTransferVerdict",
+    "modelPositionVerdict",
+    "uncertaintyBoundaryVerdict",
+    "downgradeVerdict",
+    "blockedUseVerdict",
+    "reviewerNote"
+  ],
+  "verdictTaxonomy": [
+    "support-with-boundary",
+    "bounded-support",
+    "downgrade-required",
+    "reject-source-context-mismatch",
+    "cannot-evaluate-insufficient-context"
+  ],
+  "artifactPromotionDecisions": [
+    "eligible-for-bounded-artifact-fill",
+    "downgrade-before-fill",
+    "rejected-no-fill",
+    "blocked-cannot-evaluate"
+  ],
+  "blockedUses": [
+    "calibrated-prediction",
+    "individual-advice",
+    "individual-death-date-output",
+    "intervention-ranking",
+    "clinical-validity-claim",
+    "domain-claim-upgrade"
+  ],
+  "promotionRules": [
+    "support-with-boundary or bounded-support may proceed only to bounded reviewed-artifact fill, never directly to model admission.",
+    "downgrade-required rows must carry a downgrade note before artifact fill and remain blocked for calibrated prediction.",
+    "reject-source-context-mismatch rows must not fill reviewed artifacts until source identity or role is corrected.",
+    "cannot-evaluate-insufficient-context rows remain blocked until a primary or authoritative source can be independently checked.",
+    "Artifact promotion decisions are limited to eligible-for-bounded-artifact-fill, downgrade-before-fill, rejected-no-fill and blocked-cannot-evaluate."
+  ],
+  "indexRequirements": [
+    "README.md",
+    "docs/reference/README.md",
+    "docs/reference/human-infra-maturity-roadmap.md",
+    "tools/README.md"
+  ],
+  "reviewBatches": [
+    {
+      "batchId": "C2LTB2-FRB-01-hemorrhage-airway-critical-care",
+      "sourceLocalReviewBatchId": "C2LTB2-LR-01-hemorrhage-airway-critical-care",
+      "batchLabel": "出血、心衰、气道、烧伤、机械通气与创伤系统域",
+      "taskCount": 12,
+      "taskIds": [
+        "C2LTB2-EXT-001",
+        "C2LTB2-EXT-002",
+        "C2LTB2-EXT-003",
+        "C2LTB2-EXT-004",
+        "C2LTB2-EXT-005",
+        "C2LTB2-EXT-006",
+        "C2LTB2-EXT-007",
+        "C2LTB2-EXT-008",
+        "C2LTB2-EXT-009",
+        "C2LTB2-EXT-010",
+        "C2LTB2-EXT-011",
+        "C2LTB2-EXT-012"
+      ],
+      "domainIds": [
+        "acute-gastrointestinal-bleeding-endoscopy-continuity",
+        "acute-heart-failure-decompensation-continuity",
+        "asthma-copd-exacerbation-airway-continuity",
+        "burn-injury-critical-care-rehabilitation-continuity",
+        "mechanical-ventilation-respiratory-failure-continuity",
+        "trauma-system-hemorrhage-control-continuity"
+      ],
+      "reviewPriority": "first",
+      "reviewFocus": "independent fresh review must verify acute-route source identity, guideline currentness, endpoint specificity, system-capacity boundary and no clinical recommendation overclaim before artifact promotion"
+    },
+    {
+      "batchId": "C2LTB2-FRB-02-infection-wound-postacute-transfusion",
+      "sourceLocalReviewBatchId": "C2LTB2-LR-02-infection-wound-postacute-transfusion",
+      "batchLabel": "感染、伤口、后急性感染、误吸与输血连续性域",
+      "taskCount": 12,
+      "taskIds": [
+        "C2LTB2-EXT-013",
+        "C2LTB2-EXT-014",
+        "C2LTB2-EXT-015",
+        "C2LTB2-EXT-016",
+        "C2LTB2-EXT-017",
+        "C2LTB2-EXT-018",
+        "C2LTB2-EXT-019",
+        "C2LTB2-EXT-020",
+        "C2LTB2-EXT-021",
+        "C2LTB2-EXT-022",
+        "C2LTB2-EXT-023",
+        "C2LTB2-EXT-024"
+      ],
+      "domainIds": [
+        "aspiration-pneumonia-airway-protection-continuity",
+        "diabetic-foot-ulcer-amputation-prevention-continuity",
+        "long-covid-post-acute-infection-continuity",
+        "transfusion-blood-management-hemorrhage-continuity",
+        "urinary-tract-infection-pyelonephritis-urosepsis-continuity",
+        "wound-infection-cellulitis-sepsis-continuity"
+      ],
+      "reviewPriority": "second",
+      "reviewFocus": "independent fresh review must verify infection-site specificity, post-acute syndrome boundary, wound severity, airway-protection setting, transfusion threshold context and transfer limits before artifact promotion"
+    }
+  ]
+}
