@@ -1,6 +1,6 @@
 {
   "schemaVersion": "human-infra.life-path-toy-audit.v1",
-  "generatedAt": "2026-07-02T17:23:50.616010+00:00",
+  "generatedAt": "2026-07-02T22:35:07.898699+00:00",
   "modelPath": "web/src/data/life-path-toy-model.json",
   "modelSha256": "a4c92209d79d20579bf1f575d5ebf07ffe5be9ccaf6bf3f3eef08efa287b5377",
   "overallStatus": "PASS",
@@ -1171,6 +1171,56 @@
       "detail": "validation boundary must keep value labels, route-value crosswalk and individual prediction blocked"
     },
     {
+      "id": "nhats-colectica-value-label-execution-register-exists",
+      "status": "PASS",
+      "detail": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_value_label_review_execution_register.json"
+    },
+    {
+      "id": "nhats-colectica-value-label-execution-validation-exists",
+      "status": "PASS",
+      "detail": "web/src/data/life-path-nhats-colectica-value-label-review-execution-validation.json"
+    },
+    {
+      "id": "nhats-colectica-value-label-execution-schema",
+      "status": "PASS",
+      "detail": "schemaVersion='human-infra.life-path-nhats-colectica-value-label-review-execution-register.v1'"
+    },
+    {
+      "id": "nhats-colectica-value-label-execution-identity",
+      "status": "PASS",
+      "detail": "execution register must bind NHATS, current protocol, current route-field register and login-required partial execution status"
+    },
+    {
+      "id": "nhats-colectica-value-label-execution-boundary",
+      "status": "PASS",
+      "detail": "field trace and standard negative-code family may be prepared, but login, labels, crosswalk, signoff, classifier, weighted counts, export, calibration and individual prediction must remain blocked"
+    },
+    {
+      "id": "nhats-colectica-value-label-execution-no-confirmed-map",
+      "status": "PASS",
+      "detail": "prohibited_keys=[]"
+    },
+    {
+      "id": "nhats-colectica-value-label-execution-validation-schema",
+      "status": "PASS",
+      "detail": "schemaVersion='human-infra.life-path-nhats-colectica-value-label-review-execution-validation.v1'"
+    },
+    {
+      "id": "nhats-colectica-value-label-execution-validation-source-hash",
+      "status": "PASS",
+      "detail": "execution validation must point back to current register, protocol and route-field register hashes"
+    },
+    {
+      "id": "nhats-colectica-value-label-execution-validation-summary",
+      "status": "PASS",
+      "detail": "Colectica execution validation must pass with zero failed checks"
+    },
+    {
+      "id": "nhats-colectica-value-label-execution-validation-boundary",
+      "status": "PASS",
+      "detail": "execution validation boundary must preserve field-trace-only status and block labels, route maps, classifier, export, calibration and individual prediction"
+    },
+    {
       "id": "sensitivity-analysis-exists",
       "status": "PASS",
       "detail": "web/src/data/life-path-sensitivity-analysis.json"
@@ -1227,7 +1277,7 @@
     }
   ],
   "summary": {
-    "pass": 244,
+    "pass": 254,
     "warn": 0,
     "fail": 0
   },
@@ -2554,6 +2604,70 @@
     ],
     "summary": {
       "pass": 17,
+      "warn": 0,
+      "fail": 0
+    }
+  },
+  "nhatsColecticaValueLabelReviewExecution": {
+    "registerPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_value_label_review_execution_register.json",
+    "registerSha256": "de6d17f9470a563346f92884cead1eec35cf5a954245751b0135efc60672b042",
+    "validationPath": "web/src/data/life-path-nhats-colectica-value-label-review-execution-validation.json",
+    "validationSha256": "5f26901997f7cd36babd3fe6989a0fe4ce75cbf875fecc1650efa178eec76f36",
+    "status": "PASS",
+    "checks": [
+      {
+        "id": "nhats-colectica-value-label-execution-register-exists",
+        "status": "PASS",
+        "detail": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_value_label_review_execution_register.json"
+      },
+      {
+        "id": "nhats-colectica-value-label-execution-validation-exists",
+        "status": "PASS",
+        "detail": "web/src/data/life-path-nhats-colectica-value-label-review-execution-validation.json"
+      },
+      {
+        "id": "nhats-colectica-value-label-execution-schema",
+        "status": "PASS",
+        "detail": "schemaVersion='human-infra.life-path-nhats-colectica-value-label-review-execution-register.v1'"
+      },
+      {
+        "id": "nhats-colectica-value-label-execution-identity",
+        "status": "PASS",
+        "detail": "execution register must bind NHATS, current protocol, current route-field register and login-required partial execution status"
+      },
+      {
+        "id": "nhats-colectica-value-label-execution-boundary",
+        "status": "PASS",
+        "detail": "field trace and standard negative-code family may be prepared, but login, labels, crosswalk, signoff, classifier, weighted counts, export, calibration and individual prediction must remain blocked"
+      },
+      {
+        "id": "nhats-colectica-value-label-execution-no-confirmed-map",
+        "status": "PASS",
+        "detail": "prohibited_keys=[]"
+      },
+      {
+        "id": "nhats-colectica-value-label-execution-validation-schema",
+        "status": "PASS",
+        "detail": "schemaVersion='human-infra.life-path-nhats-colectica-value-label-review-execution-validation.v1'"
+      },
+      {
+        "id": "nhats-colectica-value-label-execution-validation-source-hash",
+        "status": "PASS",
+        "detail": "execution validation must point back to current register, protocol and route-field register hashes"
+      },
+      {
+        "id": "nhats-colectica-value-label-execution-validation-summary",
+        "status": "PASS",
+        "detail": "Colectica execution validation must pass with zero failed checks"
+      },
+      {
+        "id": "nhats-colectica-value-label-execution-validation-boundary",
+        "status": "PASS",
+        "detail": "execution validation boundary must preserve field-trace-only status and block labels, route maps, classifier, export, calibration and individual prediction"
+      }
+    ],
+    "summary": {
+      "pass": 10,
       "warn": 0,
       "fail": 0
     }

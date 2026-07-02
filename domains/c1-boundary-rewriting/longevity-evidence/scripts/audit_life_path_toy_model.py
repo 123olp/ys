@@ -216,6 +216,22 @@ DEFAULT_NHATS_COLECTICA_VALUE_LABEL_VALIDATION = (
     / "data"
     / "life-path-nhats-colectica-value-label-validation.json"
 )
+DEFAULT_NHATS_COLECTICA_VALUE_LABEL_EXECUTION_REGISTER = (
+    REPO_ROOT
+    / "domains"
+    / "c1-boundary-rewriting"
+    / "longevity-evidence"
+    / "data"
+    / "manual"
+    / "life_path_nhats_colectica_value_label_review_execution_register.json"
+)
+DEFAULT_NHATS_COLECTICA_VALUE_LABEL_EXECUTION_VALIDATION = (
+    REPO_ROOT
+    / "web"
+    / "src"
+    / "data"
+    / "life-path-nhats-colectica-value-label-review-execution-validation.json"
+)
 REQUIRED_MODEL_CARD_FIELDS = {
     "modelName",
     "modelClass",
@@ -4401,6 +4417,174 @@ def audit_nhats_colectica_value_label_review(
     }
 
 
+def audit_nhats_colectica_value_label_review_execution(
+    execution_register_path: Path,
+    execution_validation_path: Path,
+    protocol_path: Path,
+    route_field_register_path: Path,
+) -> dict[str, Any]:
+    checks: list[dict[str, Any]] = []
+    register_exists = execution_register_path.exists()
+    validation_exists = execution_validation_path.exists()
+    add_check(
+        checks,
+        "nhats-colectica-value-label-execution-register-exists",
+        status_from_bool(register_exists),
+        str(execution_register_path.relative_to(REPO_ROOT)),
+    )
+    add_check(
+        checks,
+        "nhats-colectica-value-label-execution-validation-exists",
+        status_from_bool(validation_exists),
+        str(execution_validation_path.relative_to(REPO_ROOT)),
+    )
+
+    register = load_json(execution_register_path) if register_exists else {}
+    validation = load_json(execution_validation_path) if validation_exists else {}
+
+    schema_ok = (
+        register.get("schemaVersion")
+        == "human-infra.life-path-nhats-colectica-value-label-review-execution-register.v1"
+    )
+    add_check(
+        checks,
+        "nhats-colectica-value-label-execution-schema",
+        status_from_bool(register_exists and schema_ok),
+        f"schemaVersion={register.get('schemaVersion')!r}",
+    )
+
+    identity_ok = (
+        register.get("sourceId") == "nhats"
+        and register.get("protocolId")
+        == "nhats-r13-r14-colectica-value-label-review-protocol-draft"
+        and register.get("routeFieldDiscoveryRegisterId")
+        == "nhats-r13-r14-route-field-discovery-register-draft"
+        and register.get("status")
+        == "partial-executed-official-source-trace-ready-colectica-login-required"
+    )
+    add_check(
+        checks,
+        "nhats-colectica-value-label-execution-identity",
+        status_from_bool(register_exists and identity_ok),
+        "execution register must bind NHATS, current protocol, current route-field register and login-required partial execution status",
+    )
+
+    decision = register.get("currentDecision")
+    decision_ok = (
+        isinstance(decision, dict)
+        and decision.get("fieldLevelSourceTracePrepared") is True
+        and decision.get("negativeMissingCodeFamilyMapped") is True
+        and decision.get("colecticaLoginCompleted") is False
+        and decision.get("colecticaVariablePagesCaptured") is False
+        and decision.get("valueLabelsConfirmed") is False
+        and decision.get("questionTextConfirmed") is False
+        and decision.get("universeSkipLogicConfirmed") is False
+        and decision.get("routeValueCrosswalkReady") is False
+        and decision.get("variableSpecificMissingCodeMapReady") is False
+        and decision.get("secondReviewerSignoff") is False
+        and decision.get("routeClassifierAllowed") is False
+        and decision.get("weightedRouteCountsAllowed") is False
+        and decision.get("publicExportAllowed") is False
+        and decision.get("calibrationAllowed") is False
+        and decision.get("individualPredictionAllowed") is False
+    )
+    add_check(
+        checks,
+        "nhats-colectica-value-label-execution-boundary",
+        status_from_bool(register_exists and decision_ok),
+        "field trace and standard negative-code family may be prepared, but login, labels, crosswalk, signoff, classifier, weighted counts, export, calibration and individual prediction must remain blocked",
+    )
+
+    value_label_key_hits = sorted(
+        collect_keys(register)
+        & {
+            "confirmedValueLabels",
+            "valueLabelMap",
+            "routeValueMap",
+            "colecticaValueLabelTable",
+            "rawValueLabels",
+        }
+    )
+    add_check(
+        checks,
+        "nhats-colectica-value-label-execution-no-confirmed-map",
+        status_from_bool(register_exists and not value_label_key_hits),
+        f"prohibited_keys={value_label_key_hits}",
+    )
+
+    validation_schema_ok = (
+        validation.get("schemaVersion")
+        == "human-infra.life-path-nhats-colectica-value-label-review-execution-validation.v1"
+    )
+    add_check(
+        checks,
+        "nhats-colectica-value-label-execution-validation-schema",
+        status_from_bool(validation_exists and validation_schema_ok),
+        f"schemaVersion={validation.get('schemaVersion')!r}",
+    )
+
+    validation_source_ok = (
+        validation.get("executionRegisterPath")
+        == str(execution_register_path.relative_to(REPO_ROOT))
+        and validation.get("executionRegisterSha256") == sha256_file(execution_register_path)
+        and validation.get("protocolPath") == str(protocol_path.relative_to(REPO_ROOT))
+        and validation.get("protocolSha256") == sha256_file(protocol_path)
+        and validation.get("routeFieldDiscoveryRegisterPath")
+        == str(route_field_register_path.relative_to(REPO_ROOT))
+        and validation.get("routeFieldDiscoveryRegisterSha256")
+        == sha256_file(route_field_register_path)
+    )
+    add_check(
+        checks,
+        "nhats-colectica-value-label-execution-validation-source-hash",
+        status_from_bool(validation_exists and validation_source_ok),
+        "execution validation must point back to current register, protocol and route-field register hashes",
+    )
+
+    validation_summary = validation.get("summary")
+    validation_summary_ok = (
+        validation.get("overallStatus") == "PASS"
+        and isinstance(validation_summary, dict)
+        and validation_summary.get("fail") == 0
+    )
+    add_check(
+        checks,
+        "nhats-colectica-value-label-execution-validation-summary",
+        status_from_bool(validation_exists and validation_summary_ok),
+        "Colectica execution validation must pass with zero failed checks",
+    )
+
+    boundary = validation.get("boundary")
+    boundary_ok = (
+        isinstance(boundary, dict)
+        and boundary.get("fieldLevelSourceTracePrepared") is True
+        and boundary.get("standardNegativeCodeFamilyOnly") is True
+        and boundary.get("containsConfirmedValueLabels") is False
+        and boundary.get("containsRouteValueMap") is False
+        and boundary.get("routeClassifierAllowed") is False
+        and boundary.get("weightedRouteCountsAllowed") is False
+        and boundary.get("publicExportAllowed") is False
+        and boundary.get("calibrationAllowed") is False
+        and boundary.get("individualPredictionAllowed") is False
+    )
+    add_check(
+        checks,
+        "nhats-colectica-value-label-execution-validation-boundary",
+        status_from_bool(validation_exists and boundary_ok),
+        "execution validation boundary must preserve field-trace-only status and block labels, route maps, classifier, export, calibration and individual prediction",
+    )
+
+    return {
+        "registerPath": str(execution_register_path.relative_to(REPO_ROOT)),
+        "registerSha256": sha256_file(execution_register_path) if register_exists else None,
+        "validationPath": str(execution_validation_path.relative_to(REPO_ROOT)),
+        "validationSha256": sha256_file(execution_validation_path) if validation_exists else None,
+        "status": "PASS" if summarize_checks(checks)["fail"] == 0 else "FAIL",
+        "checks": checks,
+        "summary": summarize_checks(checks),
+    }
+
+
 def audit_sensitivity_analysis(
     sensitivity_path: Path,
     model_data: dict[str, Any],
@@ -4657,6 +4841,8 @@ def audit_model(
     nhats_route_field_discovery_validation_path: Path,
     nhats_colectica_value_label_protocol_path: Path,
     nhats_colectica_value_label_validation_path: Path,
+    nhats_colectica_value_label_execution_register_path: Path,
+    nhats_colectica_value_label_execution_validation_path: Path,
 ) -> dict[str, Any]:
     checks: list[dict[str, Any]] = []
     schema_version = data.get("schemaVersion")
@@ -4871,6 +5057,14 @@ def audit_model(
         nhats_colectica_value_label_protocol_path,
         nhats_colectica_value_label_validation_path,
     )
+    nhats_colectica_value_label_execution_audit = (
+        audit_nhats_colectica_value_label_review_execution(
+            nhats_colectica_value_label_execution_register_path,
+            nhats_colectica_value_label_execution_validation_path,
+            nhats_colectica_value_label_protocol_path,
+            nhats_route_field_discovery_register_path,
+        )
+    )
     sensitivity_audit = audit_sensitivity_analysis(sensitivity_path, data, model_path)
     checks.extend(readiness_audit["checks"])
     checks.extend(data_sources_audit["checks"])
@@ -4887,6 +5081,7 @@ def audit_model(
     checks.extend(nhats_missingness_route_audit["checks"])
     checks.extend(nhats_route_field_discovery_audit["checks"])
     checks.extend(nhats_colectica_value_label_audit["checks"])
+    checks.extend(nhats_colectica_value_label_execution_audit["checks"])
     checks.extend(sensitivity_audit["checks"])
     failed = [check for check in checks if check["status"] == "FAIL"]
     overall = "PASS" if not failed else "FAIL"
@@ -4914,6 +5109,7 @@ def audit_model(
         "nhatsMissingnessRoute": nhats_missingness_route_audit,
         "nhatsRouteFieldDiscovery": nhats_route_field_discovery_audit,
         "nhatsColecticaValueLabelReview": nhats_colectica_value_label_audit,
+        "nhatsColecticaValueLabelReviewExecution": nhats_colectica_value_label_execution_audit,
         "sensitivityAnalysis": sensitivity_audit,
     }
 
@@ -5063,6 +5259,15 @@ def render_markdown(audit: dict[str, Any]) -> str:
             f"- Colectica value-label validation status: `{audit['nhatsColecticaValueLabelReview']['status']}`",
             "- Boundary: Colectica value-label review protocol defines the next evidence gate, but it does not contain confirmed value-label maps, question text, skip logic, route-value crosswalks, classifier promotion, weighted route counts, public export, calibration, validation or individual prediction.",
             "",
+            "## NHATS Colectica Value-Label Review Execution",
+            "",
+            f"- Colectica execution register path: `{audit['nhatsColecticaValueLabelReviewExecution']['registerPath']}`",
+            f"- Colectica execution register SHA-256: `{audit['nhatsColecticaValueLabelReviewExecution']['registerSha256']}`",
+            f"- Colectica execution validation path: `{audit['nhatsColecticaValueLabelReviewExecution']['validationPath']}`",
+            f"- Colectica execution validation SHA-256: `{audit['nhatsColecticaValueLabelReviewExecution']['validationSha256']}`",
+            f"- Colectica execution validation status: `{audit['nhatsColecticaValueLabelReviewExecution']['status']}`",
+            "- Boundary: Colectica execution now records official source trace, field-level source-trace skeleton and standard negative-code family only; it still blocks login-derived value labels, question text, universe/skip logic, route-value maps, classifier promotion, weighted route counts, public export, calibration, validation and individual prediction.",
+            "",
             "## Sensitivity Analysis",
             "",
             f"- Sensitivity path: `{audit['sensitivityAnalysis']['path']}`",
@@ -5201,6 +5406,16 @@ def parse_args() -> argparse.Namespace:
         type=Path,
         default=DEFAULT_NHATS_COLECTICA_VALUE_LABEL_VALIDATION,
     )
+    parser.add_argument(
+        "--nhats-colectica-value-label-execution-register",
+        type=Path,
+        default=DEFAULT_NHATS_COLECTICA_VALUE_LABEL_EXECUTION_REGISTER,
+    )
+    parser.add_argument(
+        "--nhats-colectica-value-label-execution-validation",
+        type=Path,
+        default=DEFAULT_NHATS_COLECTICA_VALUE_LABEL_EXECUTION_VALIDATION,
+    )
     parser.add_argument("--json-out", type=Path, default=DEFAULT_JSON_OUT)
     parser.add_argument("--md-out", type=Path, default=DEFAULT_MD_OUT)
     return parser.parse_args()
@@ -5253,6 +5468,12 @@ def main() -> int:
     nhats_colectica_value_label_validation_path = (
         args.nhats_colectica_value_label_validation.resolve()
     )
+    nhats_colectica_value_label_execution_register_path = (
+        args.nhats_colectica_value_label_execution_register.resolve()
+    )
+    nhats_colectica_value_label_execution_validation_path = (
+        args.nhats_colectica_value_label_execution_validation.resolve()
+    )
     audit = audit_model(
         load_json(model_path),
         model_path,
@@ -5282,6 +5503,8 @@ def main() -> int:
         nhats_route_field_discovery_validation_path,
         nhats_colectica_value_label_protocol_path,
         nhats_colectica_value_label_validation_path,
+        nhats_colectica_value_label_execution_register_path,
+        nhats_colectica_value_label_execution_validation_path,
     )
     args.json_out.parent.mkdir(parents=True, exist_ok=True)
     with args.json_out.open("w", encoding="utf-8") as handle:

@@ -71,6 +71,7 @@ longevity-evidence/
 │   │   ├── life_path_calibration_readiness.json
 │   │   ├── life_path_data_source_candidates.json
 │   │   ├── life_path_nhats_acquisition_readiness.json
+│   │   ├── life_path_nhats_colectica_value_label_review_execution_register.json
 │   │   ├── life_path_nhats_colectica_value_label_review_protocol.json
 │   │   ├── life_path_nhats_file_tier_table.json
 │   │   ├── life_path_nhats_first_estimand_protocol.json
@@ -115,6 +116,7 @@ longevity-evidence/
     ├── run_life_path_sensitivity_analysis.py
     ├── run_life_path_toy_model.py
     ├── validate_public_mortality_anchor.py
+    ├── validate_nhats_colectica_value_label_review_execution.py
     ├── validate_nhats_colectica_value_label_protocol.py
     ├── validate_nhats_disclosure_outputs.py
     ├── validate_nhats_missingness_route_map.py
@@ -160,6 +162,7 @@ longevity-evidence/
 - `data/manual/life_path_nhats_disclosure_control_test_cases.json`：NHATS 披露控制合成测试用例，覆盖安全聚合、小单元未抑制、小单元已抑制、行级泄漏、public AI upload 和禁止输出类型；它只保存 synthetic envelopes，不保存真实 NHATS 数据。
 - `data/manual/life_path_nhats_route_field_discovery_register.json`：NHATS R13/R14 路由字段发现登记表，记录官方 crosswalk 和 User Guide 中的身份、状态、proxy、facility、death、missingness、design weight 和 disclosure 候选字段；它只证明字段候选已登记，不替代 Colectica value labels、受控数据访问、分类器审查、披露审查或校准。
 - `data/manual/life_path_nhats_colectica_value_label_review_protocol.json`：NHATS Colectica value-label 复核协议，记录登录、字段级来源追踪、值标签、问题文本、universe/skip logic、route-value crosswalk、negative missing-code map、敏感 death-date 排除、二次复核和输出披露边界；它只证明下一步复核门已机器化，不替代已确认 value labels 或真实 route classifier。
+- `data/manual/life_path_nhats_colectica_value_label_review_execution_register.json`：NHATS Colectica value-label 复核第一轮执行登记，记录官方来源追踪、字段级 source-trace 骨架、standard negative-code family 和仍未通过的登录、值标签、问题文本、skip logic、route-value crosswalk、二次复核、公开输出和模型准入阻塞门。
 - `data/raw/`：采集脚本保存的原始 API 响应和下载快照。
 - `data/processed/`：采集脚本生成的 JSONL 索引和汇总。
 - `scripts/collect_mvp_data.py`：采集 PubMed、OpenAlex、ClinicalTrials.gov 和 openFDA 标签数据。
@@ -171,7 +174,8 @@ longevity-evidence/
 - `scripts/validate_nhats_disclosure_outputs.py`：读取 NHATS 披露控制策略和合成测试用例，生成 `web/src/data/life-path-nhats-disclosure-control-validation.json`，验证 aggregate-only、small-cell suppression、row-level block、public AI block 和 forbidden output type 规则。
 - `scripts/validate_nhats_route_field_discovery.py`：读取 NHATS route-field discovery register，生成 `web/src/data/life-path-nhats-route-field-discovery-validation.json`，验证官方字段发现仍然保持 Colectica、数据访问、分类器、加权统计、公开导出、校准和个体预测阻塞。
 - `scripts/validate_nhats_colectica_value_label_protocol.py`：读取 NHATS Colectica value-label review protocol，生成 `web/src/data/life-path-nhats-colectica-value-label-validation.json`，验证 value labels、question text、skip logic、route crosswalk、classifier、weighted counts、public export、calibration 和 individual prediction 仍被阻塞。
-- `scripts/audit_life_path_toy_model.py`：审计生成后的生命路径 toy model、合成敏感性分析、校准预备契约、候选数据源注册表、数据源 Source Cards、Data Card 模板、NHATS Data Card、NHATS 变量字典、NHATS extraction manifest、NHATS acquisition readiness 机器契约、NHATS file-tier table、NHATS first estimand protocol、NHATS variable confirmation matrix、NHATS cohort-flow endpoint protocol、NHATS disclosure-control validation、NHATS survey-design validation、NHATS missingness-route validation、NHATS route-field discovery validation 和 NHATS Colectica value-label validation，输出机器可读 JSON 和人可读 Markdown，检查模型卡、来源 hash、生存曲线、概率范围、LEV 开放边界、敏感性参数覆盖、校准预备字段、候选数据源治理边界、数据卡准入文档、提取前治理门禁、准入门机器化状态、文件层级覆盖、第一版 estimand 研究设计门、变量确认门、队列流转/终点路由/披露控制门、合成 disclosure/survey/missingness validator 结果、官方字段发现边界、Colectica 复核协议门和禁止个体死亡日期字段。
+- `scripts/validate_nhats_colectica_value_label_review_execution.py`：读取 NHATS Colectica value-label review execution register，生成 `web/src/data/life-path-nhats-colectica-value-label-review-execution-validation.json`，验证第一轮执行登记只打开 source trace / negative-code family 证据，不打开 value labels、route map、classifier、weighted counts、public export、calibration 或 individual prediction。
+- `scripts/audit_life_path_toy_model.py`：审计生成后的生命路径 toy model、合成敏感性分析、校准预备契约、候选数据源注册表、数据源 Source Cards、Data Card 模板、NHATS Data Card、NHATS 变量字典、NHATS extraction manifest、NHATS acquisition readiness 机器契约、NHATS file-tier table、NHATS first estimand protocol、NHATS variable confirmation matrix、NHATS cohort-flow endpoint protocol、NHATS disclosure-control validation、NHATS survey-design validation、NHATS missingness-route validation、NHATS route-field discovery validation、NHATS Colectica value-label validation 和 NHATS Colectica value-label execution validation，输出机器可读 JSON 和人可读 Markdown，检查模型卡、来源 hash、生存曲线、概率范围、LEV 开放边界、敏感性参数覆盖、校准预备字段、候选数据源治理边界、数据卡准入文档、提取前治理门禁、准入门机器化状态、文件层级覆盖、第一版 estimand 研究设计门、变量确认门、队列流转/终点路由/披露控制门、合成 disclosure/survey/missingness validator 结果、官方字段发现边界、Colectica 复核协议门、Colectica 第一轮执行登记边界和禁止个体死亡日期字段。
 
 ## 依赖关系
 

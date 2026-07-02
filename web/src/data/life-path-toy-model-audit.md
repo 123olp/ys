@@ -3,7 +3,7 @@
 - Overall status: `PASS`
 - Model path: `web/src/data/life-path-toy-model.json`
 - Model SHA-256: `a4c92209d79d20579bf1f575d5ebf07ffe5be9ccaf6bf3f3eef08efa287b5377`
-- Generated at: `2026-07-02T17:23:50.616010+00:00`
+- Generated at: `2026-07-02T22:35:07.898699+00:00`
 
 ## Checks
 
@@ -242,6 +242,16 @@
 | `nhats-colectica-value-label-validation-source-hash` | `PASS` | Colectica value-label validation must point back to current protocol hash |
 | `nhats-colectica-value-label-validation-summary` | `PASS` | Colectica value-label validation must pass with zero failed checks |
 | `nhats-colectica-value-label-validation-boundary` | `PASS` | validation boundary must keep value labels, route-value crosswalk and individual prediction blocked |
+| `nhats-colectica-value-label-execution-register-exists` | `PASS` | domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_value_label_review_execution_register.json |
+| `nhats-colectica-value-label-execution-validation-exists` | `PASS` | web/src/data/life-path-nhats-colectica-value-label-review-execution-validation.json |
+| `nhats-colectica-value-label-execution-schema` | `PASS` | schemaVersion='human-infra.life-path-nhats-colectica-value-label-review-execution-register.v1' |
+| `nhats-colectica-value-label-execution-identity` | `PASS` | execution register must bind NHATS, current protocol, current route-field register and login-required partial execution status |
+| `nhats-colectica-value-label-execution-boundary` | `PASS` | field trace and standard negative-code family may be prepared, but login, labels, crosswalk, signoff, classifier, weighted counts, export, calibration and individual prediction must remain blocked |
+| `nhats-colectica-value-label-execution-no-confirmed-map` | `PASS` | prohibited_keys=[] |
+| `nhats-colectica-value-label-execution-validation-schema` | `PASS` | schemaVersion='human-infra.life-path-nhats-colectica-value-label-review-execution-validation.v1' |
+| `nhats-colectica-value-label-execution-validation-source-hash` | `PASS` | execution validation must point back to current register, protocol and route-field register hashes |
+| `nhats-colectica-value-label-execution-validation-summary` | `PASS` | Colectica execution validation must pass with zero failed checks |
+| `nhats-colectica-value-label-execution-validation-boundary` | `PASS` | execution validation boundary must preserve field-trace-only status and block labels, route maps, classifier, export, calibration and individual prediction |
 | `sensitivity-analysis-exists` | `PASS` | web/src/data/life-path-sensitivity-analysis.json |
 | `sensitivity-schema-version` | `PASS` | schemaVersion='human-infra.life-path-sensitivity.v1' |
 | `sensitivity-source-model-hash` | `PASS` | sensitivity output must point back to the generated model path and sha256 |
@@ -378,6 +388,15 @@
 - Colectica value-label validation SHA-256: `187f757f4c2640d9f7387a4064f169dbd32b7e63f0062d61629426e5cb88ce8c`
 - Colectica value-label validation status: `PASS`
 - Boundary: Colectica value-label review protocol defines the next evidence gate, but it does not contain confirmed value-label maps, question text, skip logic, route-value crosswalks, classifier promotion, weighted route counts, public export, calibration, validation or individual prediction.
+
+## NHATS Colectica Value-Label Review Execution
+
+- Colectica execution register path: `domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_value_label_review_execution_register.json`
+- Colectica execution register SHA-256: `de6d17f9470a563346f92884cead1eec35cf5a954245751b0135efc60672b042`
+- Colectica execution validation path: `web/src/data/life-path-nhats-colectica-value-label-review-execution-validation.json`
+- Colectica execution validation SHA-256: `5f26901997f7cd36babd3fe6989a0fe4ce75cbf875fecc1650efa178eec76f36`
+- Colectica execution validation status: `PASS`
+- Boundary: Colectica execution now records official source trace, field-level source-trace skeleton and standard negative-code family only; it still blocks login-derived value labels, question text, universe/skip logic, route-value maps, classifier promotion, weighted route counts, public export, calibration, validation and individual prediction.
 
 ## Sensitivity Analysis
 

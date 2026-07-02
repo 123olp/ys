@@ -1,0 +1,90 @@
+{
+  "schemaVersion": "human-infra.life-path-nhats-colectica-value-label-review-execution-validation.v1",
+  "generatedAt": "2026-07-02T22:34:52.214574+00:00",
+  "sourceId": "nhats",
+  "executionRegisterPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_value_label_review_execution_register.json",
+  "executionRegisterSha256": "de6d17f9470a563346f92884cead1eec35cf5a954245751b0135efc60672b042",
+  "protocolPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_value_label_review_protocol.json",
+  "protocolSha256": "bd5130152b3c57d5a6d8cdc767df85bc8a10e19e1225738f13940bd3734ff416",
+  "routeFieldDiscoveryRegisterPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_route_field_discovery_register.json",
+  "routeFieldDiscoveryRegisterSha256": "32d86995a0438e2104e6850334eefa63b30176b0767dd2229bc73a517ef5ade4",
+  "overallStatus": "PASS",
+  "summary": {
+    "pass": 12,
+    "fail": 0
+  },
+  "checks": [
+    {
+      "id": "schema-version",
+      "status": "PASS",
+      "detail": "schemaVersion='human-infra.life-path-nhats-colectica-value-label-review-execution-register.v1'"
+    },
+    {
+      "id": "execution-register-identity",
+      "status": "PASS",
+      "detail": "register must bind NHATS, current protocol, current route-field register and partial-login-required status"
+    },
+    {
+      "id": "decision-boundary",
+      "status": "PASS",
+      "detail": "only source trace and standard negative-code family may be prepared; login, labels, crosswalk, classifier, export, calibration and individual prediction must remain false"
+    },
+    {
+      "id": "access-review-boundary",
+      "status": "PASS",
+      "detail": "access review must record login-required status without credentials, raw metadata or restricted materials"
+    },
+    {
+      "id": "source-evidence",
+      "status": "PASS",
+      "detail": "missing=[]"
+    },
+    {
+      "id": "field-level-source-trace",
+      "status": "PASS",
+      "detail": "missing=[]"
+    },
+    {
+      "id": "sensitive-death-date-exclusion",
+      "status": "PASS",
+      "detail": "excluded=['dm13mthdied', 'dm13yrdied', 'dm14mthdied', 'dm14yrdied']"
+    },
+    {
+      "id": "route-value-crosswalk-skeleton",
+      "status": "PASS",
+      "detail": "route-value crosswalk must be skeleton-only with zero confirmed raw value rows"
+    },
+    {
+      "id": "negative-missing-code-family",
+      "status": "PASS",
+      "detail": "observed_codes=[-9, -8, -7, -1]"
+    },
+    {
+      "id": "blocking-gates",
+      "status": "PASS",
+      "detail": "missing=[]"
+    },
+    {
+      "id": "prohibited-actions",
+      "status": "PASS",
+      "detail": "register must prohibit route inference, unreviewed value labels, negative-code overuse, classifier execution and public AI exposure"
+    },
+    {
+      "id": "no-confirmed-value-label-map",
+      "status": "PASS",
+      "detail": "prohibited_keys=[]"
+    }
+  ],
+  "boundary": {
+    "containsRealNhatsData": false,
+    "containsConfirmedValueLabels": false,
+    "containsRouteValueMap": false,
+    "fieldLevelSourceTracePrepared": true,
+    "standardNegativeCodeFamilyOnly": true,
+    "routeClassifierAllowed": false,
+    "weightedRouteCountsAllowed": false,
+    "publicExportAllowed": false,
+    "calibrationAllowed": false,
+    "individualPredictionAllowed": false
+  }
+}
