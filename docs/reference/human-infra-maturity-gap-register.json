@@ -256,12 +256,14 @@
             "docs/reference/human-infra-c2-longtail-second-batch-independent-fresh-review-protocol.json",
             "tools/audit_human_infra_c2_longtail_second_batch_independent_fresh_review_protocol.py",
             "docs/reference/human-infra-c2-longtail-second-batch-independent-fresh-review-verdict-register.json",
-            "tools/audit_human_infra_c2_longtail_second_batch_independent_fresh_review_verdict_register.py"
+            "tools/audit_human_infra_c2_longtail_second_batch_independent_fresh_review_verdict_register.py",
+            "docs/reference/human-infra-c2-longtail-second-batch-reviewed-card-artifact-register.json",
+            "tools/audit_human_infra_c2_longtail_second_batch_reviewed_card_artifact_register.py"
           ],
           "missingEvidence": [
-            "C2-LT-B1 now has 282 reviewed artifacts: 252 original reviewed artifacts for 42 eligible source rows plus 30 corrected-source reviewed artifacts for 5 eligible corrected rows. C2-LT-B2 now has 24/24 source-context extraction rows, 24/24 local source-context review rows, a 2-batch independent fresh review protocol and 24/24 independent fresh-review verdicts for 12 additional remaining C2 long-tail domains. The B2 verdict register allows only 23 rows into bounded reviewed artifact fill and keeps 1 row downgrade-before-fill. The 5 corrected lineage/route/index/fulltext blocked rows remain preserved outside artifact promotion. Full reviewed Source Card coverage for remaining C2 long-tail domains and model admission artifacts remain incomplete."
+            "C2-LT-B1 now has 282 reviewed artifacts: 252 original reviewed artifacts for 42 eligible source rows plus 30 corrected-source reviewed artifacts for 5 eligible corrected rows. C2-LT-B2 now has 138 bounded reviewed artifacts from 23 eligible verdict rows, while 1 row remains downgrade-before-fill and the 5 corrected lineage/route/index/fulltext blocked rows remain preserved outside artifact promotion. Full reviewed Source Card coverage for remaining C2 long-tail domains and model admission artifacts remain incomplete."
           ],
-          "nextAction": "Promote the 23 C2-LT-B2 eligible verdict rows into bounded reviewed artifacts, keep the 1 downgrade-before-fill row blocked until its source-path downgrade condition is closed, preserve the 5 corrected lineage/route/index/fulltext blocked rows, and keep model admission blocked.",
+          "nextAction": "Continue the next C2 long-tail coverage batch, keep the 1 C2-LT-B2 downgrade-before-fill row blocked until source-path normalization, preserve the 5 corrected lineage/route/index/fulltext blocked rows, and keep model admission blocked.",
           "blocks100Percent": true
         },
         {
@@ -328,12 +330,14 @@
             "docs/reference/human-infra-c2-longtail-second-batch-independent-fresh-review-protocol.json",
             "tools/audit_human_infra_c2_longtail_second_batch_independent_fresh_review_protocol.py",
             "docs/reference/human-infra-c2-longtail-second-batch-independent-fresh-review-verdict-register.json",
-            "tools/audit_human_infra_c2_longtail_second_batch_independent_fresh_review_verdict_register.py"
+            "tools/audit_human_infra_c2_longtail_second_batch_independent_fresh_review_verdict_register.py",
+            "docs/reference/human-infra-c2-longtail-second-batch-reviewed-card-artifact-register.json",
+            "tools/audit_human_infra_c2_longtail_second_batch_reviewed_card_artifact_register.py"
           ],
           "missingEvidence": [
-            "C2-LT-B1 now has reviewed variable and endpoint artifacts for 42 original eligible source rows plus corrected variable/endpoint artifacts for the 5 eligible corrected rows. C2-LT-B2 has 24/24 locally reviewed source-context rows, a 2-batch independent fresh review protocol and 24/24 fresh-review verdicts with variable and endpoint candidates for 12 additional remaining C2 domains, but those candidates are not yet promoted into governed variable/endpoint artifacts. The B2 verdict register marks 23 rows eligible only for bounded artifact fill and 1 row downgrade-before-fill. The 5 corrected lineage/route/index/fulltext rows remain blocked, and calibrated variable contracts plus endpoint validation are not complete."
+            "C2-LT-B1 now has reviewed variable and endpoint artifacts for 42 original eligible source rows plus corrected variable/endpoint artifacts for the 5 eligible corrected rows. C2-LT-B2 now has reviewed variable and endpoint artifacts for 23 eligible verdict rows, while 1 row remains downgrade-before-fill. The 5 corrected lineage/route/index/fulltext rows remain blocked, and calibrated variable contracts plus endpoint validation are not complete."
           ],
-          "nextAction": "Promote only the 23 eligible C2-LT-B2 variable and endpoint candidates into governed artifacts after verdict alignment; keep the downgrade-before-fill row and calibrated variable contracts blocked until artifact and model gates pass.",
+          "nextAction": "Use the C2-LT-B2 reviewed artifacts only as bounded inputs for later governed variable contracts, keep the downgrade-before-fill row and calibrated variable contracts blocked until model gates pass, and continue remaining C2 coverage.",
           "blocks100Percent": true
         },
         {
@@ -425,12 +429,14 @@
             "docs/reference/human-infra-c2-longtail-second-batch-independent-fresh-review-protocol.json",
             "tools/audit_human_infra_c2_longtail_second_batch_independent_fresh_review_protocol.py",
             "docs/reference/human-infra-c2-longtail-second-batch-independent-fresh-review-verdict-register.json",
-            "tools/audit_human_infra_c2_longtail_second_batch_independent_fresh_review_verdict_register.py"
+            "tools/audit_human_infra_c2_longtail_second_batch_independent_fresh_review_verdict_register.py",
+            "docs/reference/human-infra-c2-longtail-second-batch-reviewed-card-artifact-register.json",
+            "tools/audit_human_infra_c2_longtail_second_batch_reviewed_card_artifact_register.py"
           ],
           "missingEvidence": [
-            "C2-LT-B1 now has downgrade-check artifacts for 42 original eligible source rows and promotion-time downgrade artifacts for the 5 eligible corrected rows. C2-LT-B2 has 24/24 locally reviewed source-context rows, a 2-batch independent fresh review protocol and 24/24 independent fresh-review verdicts covering downgrade triggers and transfer boundaries. The B2 verdict register still keeps 1 row downgrade-before-fill and no B2 reviewed downgrade artifacts exist yet. The 5 corrected lineage/route/index/fulltext blocked rows remain blocked."
+            "C2-LT-B1 now has downgrade-check artifacts for 42 original eligible source rows and promotion-time downgrade artifacts for the 5 eligible corrected rows. C2-LT-B2 now has transfer-boundary and downgrade-check artifacts for 23 eligible verdict rows. The 1 C2-LT-B2 downgrade-before-fill row remains blocked, and the 5 corrected lineage/route/index/fulltext blocked rows remain blocked."
           ],
-          "nextAction": "Create reviewed downgrade/transfer-boundary artifacts for the 23 eligible C2-LT-B2 rows, preserve the 1 downgrade-before-fill row until source-path normalization, and keep corrected blocked rows plus model-admission boundaries intact.",
+          "nextAction": "Preserve the 1 C2-LT-B2 downgrade-before-fill row until source-path normalization, continue remaining C2 long-tail downgrade coverage, and keep corrected blocked rows plus model-admission boundaries intact.",
           "blocks100Percent": true
         }
       ]
@@ -577,7 +583,7 @@
   "nextWorkOrder": [
     {
       "priority": 1,
-      "item": "Promote the 23 C2-LT-B2 eligible fresh-review rows into bounded reviewed artifacts, preserve the 1 downgrade-before-fill row until source-path normalization, preserve the 5 corrected lineage/route/index/fulltext blocked rows, and keep model admission blocked.",
+      "item": "Continue the next C2 long-tail coverage batch after C2-LT-B2 reviewed artifacts, preserve the 1 C2-LT-B2 downgrade-before-fill row until source-path normalization, preserve the 5 corrected lineage/route/index/fulltext blocked rows, and keep model admission blocked.",
       "unblocks": [
         "RESEARCH-G3-c1-c2-source-cards",
         "RESEARCH-G4-variable-mechanism-contracts",
