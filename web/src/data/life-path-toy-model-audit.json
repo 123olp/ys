@@ -1,6 +1,6 @@
 {
   "schemaVersion": "human-infra.life-path-toy-audit.v1",
-  "generatedAt": "2026-07-02T22:51:45.912115+00:00",
+  "generatedAt": "2026-07-02T23:11:01.768317+00:00",
   "modelPath": "web/src/data/life-path-toy-model.json",
   "modelSha256": "a4c92209d79d20579bf1f575d5ebf07ffe5be9ccaf6bf3f3eef08efa287b5377",
   "overallStatus": "PASS",
@@ -1256,6 +1256,41 @@
       "detail": "validation must prove only public access-route probing while keeping authenticated capture and model admission blocked"
     },
     {
+      "id": "nhats-colectica-authenticated-capture-template-exists",
+      "status": "PASS",
+      "detail": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_authenticated_capture_template.json"
+    },
+    {
+      "id": "nhats-colectica-authenticated-capture-template-validation-exists",
+      "status": "PASS",
+      "detail": "web/src/data/life-path-nhats-colectica-authenticated-capture-template-validation.json"
+    },
+    {
+      "id": "nhats-colectica-authenticated-capture-template-schema",
+      "status": "PASS",
+      "detail": "schemaVersion='human-infra.life-path-nhats-colectica-authenticated-capture-template.v1'"
+    },
+    {
+      "id": "nhats-colectica-authenticated-capture-template-boundary",
+      "status": "PASS",
+      "detail": "template may be ready, but account status, login, captures, labels, classifier, export, calibration and individual prediction must remain blocked"
+    },
+    {
+      "id": "nhats-colectica-authenticated-capture-template-validation-schema",
+      "status": "PASS",
+      "detail": "schemaVersion='human-infra.life-path-nhats-colectica-authenticated-capture-template-validation.v1'"
+    },
+    {
+      "id": "nhats-colectica-authenticated-capture-template-validation-source-hash",
+      "status": "PASS",
+      "detail": "capture-template validation must point back to current template, access-route probe, execution register, protocol and route-field register hashes"
+    },
+    {
+      "id": "nhats-colectica-authenticated-capture-template-validation-boundary",
+      "status": "PASS",
+      "detail": "validation must prove only template readiness while keeping authenticated capture and model admission blocked"
+    },
+    {
       "id": "sensitivity-analysis-exists",
       "status": "PASS",
       "detail": "web/src/data/life-path-sensitivity-analysis.json"
@@ -1312,7 +1347,7 @@
     }
   ],
   "summary": {
-    "pass": 261,
+    "pass": 268,
     "warn": 0,
     "fail": 0
   },
@@ -2647,7 +2682,7 @@
     "registerPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_value_label_review_execution_register.json",
     "registerSha256": "de6d17f9470a563346f92884cead1eec35cf5a954245751b0135efc60672b042",
     "validationPath": "web/src/data/life-path-nhats-colectica-value-label-review-execution-validation.json",
-    "validationSha256": "414efc789b603d1e44932378fbe9b51a1698cc34f9388a7da25d0467044ed6b4",
+    "validationSha256": "15f7dcbb4a032058b345c024f491a01dbf04faaf7cd64be4b62cb6682d4d4a64",
     "status": "PASS",
     "checks": [
       {
@@ -2711,7 +2746,7 @@
     "registerPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_access_route_probe_register.json",
     "registerSha256": "58941fde2c6a1c5488437a1ad447cb3dae2032739ef1ed579e29da98b96aaa89",
     "validationPath": "web/src/data/life-path-nhats-colectica-access-route-probe-validation.json",
-    "validationSha256": "958a061c2751b9611b2dfde748e6cb8a9752ff9877ba673bc0d31d3620ba82af",
+    "validationSha256": "bbdb7e07d85ad7b684f9418d633ffd3d7ba6626471b998ca64f8dce699373d53",
     "status": "PASS",
     "checks": [
       {
@@ -2748,6 +2783,55 @@
         "id": "nhats-colectica-access-route-probe-validation-boundary",
         "status": "PASS",
         "detail": "validation must prove only public access-route probing while keeping authenticated capture and model admission blocked"
+      }
+    ],
+    "summary": {
+      "pass": 7,
+      "warn": 0,
+      "fail": 0
+    }
+  },
+  "nhatsColecticaAuthenticatedCaptureTemplate": {
+    "templatePath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_authenticated_capture_template.json",
+    "templateSha256": "dc097acfcb44007b42a25ce500c6cb1d23b1154f6620a7797445293817313eeb",
+    "validationPath": "web/src/data/life-path-nhats-colectica-authenticated-capture-template-validation.json",
+    "validationSha256": "9057324a474f784c0fa8104b8cd3415cebbb146a04a2cb4c280cc3160f15eece",
+    "status": "PASS",
+    "checks": [
+      {
+        "id": "nhats-colectica-authenticated-capture-template-exists",
+        "status": "PASS",
+        "detail": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_authenticated_capture_template.json"
+      },
+      {
+        "id": "nhats-colectica-authenticated-capture-template-validation-exists",
+        "status": "PASS",
+        "detail": "web/src/data/life-path-nhats-colectica-authenticated-capture-template-validation.json"
+      },
+      {
+        "id": "nhats-colectica-authenticated-capture-template-schema",
+        "status": "PASS",
+        "detail": "schemaVersion='human-infra.life-path-nhats-colectica-authenticated-capture-template.v1'"
+      },
+      {
+        "id": "nhats-colectica-authenticated-capture-template-boundary",
+        "status": "PASS",
+        "detail": "template may be ready, but account status, login, captures, labels, classifier, export, calibration and individual prediction must remain blocked"
+      },
+      {
+        "id": "nhats-colectica-authenticated-capture-template-validation-schema",
+        "status": "PASS",
+        "detail": "schemaVersion='human-infra.life-path-nhats-colectica-authenticated-capture-template-validation.v1'"
+      },
+      {
+        "id": "nhats-colectica-authenticated-capture-template-validation-source-hash",
+        "status": "PASS",
+        "detail": "capture-template validation must point back to current template, access-route probe, execution register, protocol and route-field register hashes"
+      },
+      {
+        "id": "nhats-colectica-authenticated-capture-template-validation-boundary",
+        "status": "PASS",
+        "detail": "validation must prove only template readiness while keeping authenticated capture and model admission blocked"
       }
     ],
     "summary": {

@@ -1,0 +1,148 @@
+{
+  "schemaVersion": "human-infra.life-path-nhats-colectica-authenticated-capture-template.v1",
+  "sourceId": "nhats",
+  "sourceName": "National Health and Aging Trends Study",
+  "templateId": "nhats-r13-r14-colectica-authenticated-capture-template-2026-07-03",
+  "executionRegisterId": "nhats-r13-r14-colectica-value-label-review-execution-register-2026-07-03",
+  "accessRouteProbeRegisterId": "nhats-r13-r14-colectica-access-route-probe-2026-07-03",
+  "protocolId": "nhats-r13-r14-colectica-value-label-review-protocol-draft",
+  "routeFieldDiscoveryRegisterId": "nhats-r13-r14-route-field-discovery-register-draft",
+  "reviewDate": "2026-07-03",
+  "reviewer": "tradecatlabs",
+  "status": "template-only-authenticated-capture-not-started",
+  "templatePurpose": "Define the minimum audited evidence slots required after controlled NHATS Colectica login before route fields, value labels, question text, universe or skip logic may influence any route classifier, aggregate cohort-flow output, calibration step or model-admission decision.",
+  "currentDecision": {
+    "templateReady": true,
+    "controlledColecticaAccountStatusRecorded": false,
+    "colecticaLoginCompleted": false,
+    "authenticatedVariablePagesCaptured": false,
+    "sourceCaptureHashesRecorded": false,
+    "valueLabelsConfirmed": false,
+    "questionTextConfirmed": false,
+    "universeSkipLogicConfirmed": false,
+    "routeValueCrosswalkReady": false,
+    "variableSpecificMissingCodeMapReady": false,
+    "secondReviewerSignoff": false,
+    "routeClassifierAllowed": false,
+    "endpointClassificationAllowed": false,
+    "weightedRouteCountsAllowed": false,
+    "publicExportAllowed": false,
+    "calibrationAllowed": false,
+    "individualPredictionAllowed": false,
+    "reason": "The capture template is ready, but no controlled account record, authenticated variable page, source capture hash, value label, question text, universe/skip logic, route crosswalk, reviewer signoff, extraction, public export, calibration or individual prediction is available."
+  },
+  "sourceBindings": {
+    "accessRouteProbeRegisterPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_access_route_probe_register.json",
+    "executionRegisterPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_value_label_review_execution_register.json",
+    "protocolPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_value_label_review_protocol.json",
+    "routeFieldDiscoveryRegisterPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_route_field_discovery_register.json"
+  },
+  "captureEvidenceSlots": [
+    "requiredRouteFieldId",
+    "candidateVariables",
+    "colecticaItemId",
+    "variableName",
+    "round",
+    "fileName",
+    "detailsPageUrl",
+    "sourceCaptureSha256",
+    "captureMethod",
+    "captureDate",
+    "valueLabelsReviewed",
+    "questionTextReviewed",
+    "universeSkipLogicReviewed",
+    "concordanceReviewed",
+    "publicUseTierReviewed",
+    "sensitiveRestrictedExclusionReviewed",
+    "variableSpecificMissingCodesReviewed",
+    "reviewerNotes",
+    "secondReviewerSignoff",
+    "promotionAllowed"
+  ],
+  "requiredCaptureUnits": [
+    {
+      "requiredRouteFieldId": "identity_join_key",
+      "candidateVariables": ["spid", "spidr12"],
+      "captureStatus": "missing-authenticated-source-capture",
+      "promotionAllowed": false
+    },
+    {
+      "requiredRouteFieldId": "round13_baseline_eligibility",
+      "candidateVariables": ["r13status", "r13statuscat", "r13dcontnew", "fl13newsample", "fl13facility"],
+      "captureStatus": "missing-authenticated-source-capture",
+      "promotionAllowed": false
+    },
+    {
+      "requiredRouteFieldId": "round14_interview_status",
+      "candidateVariables": ["r14status", "r14statuscat", "r14dcontnew", "r14breakoffst", "r14breakoffqt", "fl14pt2miss", "r14dlmlint"],
+      "captureStatus": "missing-authenticated-source-capture",
+      "promotionAllowed": false
+    },
+    {
+      "requiredRouteFieldId": "proxy_status",
+      "candidateVariables": ["is13resptype", "op13proxy", "op13whyproxy", "is14resptype", "op14proxy", "op14whyproxy"],
+      "captureStatus": "missing-authenticated-source-capture",
+      "promotionAllowed": false
+    },
+    {
+      "requiredRouteFieldId": "facility_residential_status",
+      "candidateVariables": ["r13dresid", "fl13facility", "r14dresid", "fl14facility"],
+      "captureStatus": "missing-authenticated-source-capture",
+      "promotionAllowed": false
+    },
+    {
+      "requiredRouteFieldId": "death_decedent_indicator",
+      "candidateVariables": ["fl13spdied", "fl14spdied", "r13dlmlint", "r14dlmlint"],
+      "sensitiveExcludedVariables": ["dm13mthdied", "dm13yrdied", "dm14mthdied", "dm14yrdied"],
+      "captureStatus": "missing-authenticated-source-capture",
+      "promotionAllowed": false
+    },
+    {
+      "requiredRouteFieldId": "nonresponse_missing_code",
+      "candidateVariables": ["r13breakoffst", "r13breakoffqt", "fl13pt2miss", "r14breakoffst", "r14breakoffqt", "fl14pt2miss"],
+      "captureStatus": "missing-authenticated-source-capture",
+      "promotionAllowed": false
+    },
+    {
+      "requiredRouteFieldId": "design_weight_linkage",
+      "candidateVariables": ["w13varstrat", "w13varunit", "w14varstrat", "w14varunit"],
+      "captureStatus": "missing-authenticated-source-capture",
+      "promotionAllowed": false
+    },
+    {
+      "requiredRouteFieldId": "disclosure_cell_count",
+      "candidateVariables": ["computed_output_cell_n"],
+      "captureStatus": "computed-output-gate-pending-real-extraction",
+      "promotionAllowed": false
+    }
+  ],
+  "captureCompletionRequirements": [
+    "controlled Colectica account status recorded outside public repository",
+    "authenticated variable Details page URL or stable Colectica item identifier recorded for every required route field",
+    "source capture SHA-256 recorded for every reviewed variable page or basket export",
+    "value labels reviewed from authenticated source, not inferred from crosswalk variable names",
+    "question text reviewed from authenticated source",
+    "universe and skip logic reviewed from authenticated source",
+    "concordance and round/file membership reviewed",
+    "public-use, sensitive and restricted variable tier reviewed",
+    "variable-specific missing-code map drafted",
+    "sensitive month/year death fields excluded from public route outputs",
+    "second reviewer signoff completed before route classifier promotion"
+  ],
+  "blockedUntil": [
+    "controlled account status is recorded without credentials",
+    "all requiredCaptureUnits have authenticated source captures with hashes",
+    "value labels, question text, universe and skip logic are reviewed",
+    "route-value crosswalk and missing-code map are drafted",
+    "sensitive death-date exclusion is reconfirmed",
+    "second reviewer signoff is complete",
+    "disclosure and survey-design gates remain passing after any real aggregate output is proposed"
+  ],
+  "prohibitedActions": [
+    "Do not store credentials, session cookies, authentication tokens, account profile details or reviewer personal data in this repository.",
+    "Do not commit raw Colectica metadata dumps, raw NHATS records, row-level route outputs or sensitive death-date fields.",
+    "Do not infer value labels, question text, universe or skip logic from crosswalk variable names.",
+    "Do not upload NHATS, NSOC, authenticated Colectica captures or raw exports to public AI systems.",
+    "Do not enable route classifier, endpoint classification, weighted route counts, public export, calibration or individual prediction from this template."
+  ]
+}

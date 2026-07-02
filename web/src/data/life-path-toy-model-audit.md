@@ -3,7 +3,7 @@
 - Overall status: `PASS`
 - Model path: `web/src/data/life-path-toy-model.json`
 - Model SHA-256: `a4c92209d79d20579bf1f575d5ebf07ffe5be9ccaf6bf3f3eef08efa287b5377`
-- Generated at: `2026-07-02T22:51:45.912115+00:00`
+- Generated at: `2026-07-02T23:11:01.768317+00:00`
 
 ## Checks
 
@@ -259,6 +259,13 @@
 | `nhats-colectica-access-route-probe-validation-schema` | `PASS` | schemaVersion='human-infra.life-path-nhats-colectica-access-route-probe-validation.v1' |
 | `nhats-colectica-access-route-probe-validation-source-hash` | `PASS` | access-route validation must point back to current probe register and execution register hashes |
 | `nhats-colectica-access-route-probe-validation-boundary` | `PASS` | validation must prove only public access-route probing while keeping authenticated capture and model admission blocked |
+| `nhats-colectica-authenticated-capture-template-exists` | `PASS` | domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_authenticated_capture_template.json |
+| `nhats-colectica-authenticated-capture-template-validation-exists` | `PASS` | web/src/data/life-path-nhats-colectica-authenticated-capture-template-validation.json |
+| `nhats-colectica-authenticated-capture-template-schema` | `PASS` | schemaVersion='human-infra.life-path-nhats-colectica-authenticated-capture-template.v1' |
+| `nhats-colectica-authenticated-capture-template-boundary` | `PASS` | template may be ready, but account status, login, captures, labels, classifier, export, calibration and individual prediction must remain blocked |
+| `nhats-colectica-authenticated-capture-template-validation-schema` | `PASS` | schemaVersion='human-infra.life-path-nhats-colectica-authenticated-capture-template-validation.v1' |
+| `nhats-colectica-authenticated-capture-template-validation-source-hash` | `PASS` | capture-template validation must point back to current template, access-route probe, execution register, protocol and route-field register hashes |
+| `nhats-colectica-authenticated-capture-template-validation-boundary` | `PASS` | validation must prove only template readiness while keeping authenticated capture and model admission blocked |
 | `sensitivity-analysis-exists` | `PASS` | web/src/data/life-path-sensitivity-analysis.json |
 | `sensitivity-schema-version` | `PASS` | schemaVersion='human-infra.life-path-sensitivity.v1' |
 | `sensitivity-source-model-hash` | `PASS` | sensitivity output must point back to the generated model path and sha256 |
@@ -401,7 +408,7 @@
 - Colectica execution register path: `domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_value_label_review_execution_register.json`
 - Colectica execution register SHA-256: `de6d17f9470a563346f92884cead1eec35cf5a954245751b0135efc60672b042`
 - Colectica execution validation path: `web/src/data/life-path-nhats-colectica-value-label-review-execution-validation.json`
-- Colectica execution validation SHA-256: `414efc789b603d1e44932378fbe9b51a1698cc34f9388a7da25d0467044ed6b4`
+- Colectica execution validation SHA-256: `15f7dcbb4a032058b345c024f491a01dbf04faaf7cd64be4b62cb6682d4d4a64`
 - Colectica execution validation status: `PASS`
 - Boundary: Colectica execution now records official source trace, field-level source-trace skeleton and standard negative-code family only; it still blocks login-derived value labels, question text, universe/skip logic, route-value maps, classifier promotion, weighted route counts, public export, calibration, validation and individual prediction.
 
@@ -410,9 +417,18 @@
 - Colectica access-route probe register path: `domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_access_route_probe_register.json`
 - Colectica access-route probe register SHA-256: `58941fde2c6a1c5488437a1ad447cb3dae2032739ef1ed579e29da98b96aaa89`
 - Colectica access-route probe validation path: `web/src/data/life-path-nhats-colectica-access-route-probe-validation.json`
-- Colectica access-route probe validation SHA-256: `958a061c2751b9611b2dfde748e6cb8a9752ff9877ba673bc0d31d3620ba82af`
+- Colectica access-route probe validation SHA-256: `bbdb7e07d85ad7b684f9418d633ffd3d7ba6626471b998ca64f8dce699373d53`
 - Colectica access-route probe validation status: `PASS`
 - Boundary: access-route probing verifies the public entry point, anonymous login boundary and technical-guide workflow only; it still blocks account status, authenticated variable page capture, value labels, question text, exports, calibration and individual prediction.
+
+## NHATS Colectica Authenticated Capture Template
+
+- Colectica authenticated capture template path: `domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_authenticated_capture_template.json`
+- Colectica authenticated capture template SHA-256: `dc097acfcb44007b42a25ce500c6cb1d23b1154f6620a7797445293817313eeb`
+- Colectica authenticated capture template validation path: `web/src/data/life-path-nhats-colectica-authenticated-capture-template-validation.json`
+- Colectica authenticated capture template validation SHA-256: `9057324a474f784c0fa8104b8cd3415cebbb146a04a2cb4c280cc3160f15eece`
+- Colectica authenticated capture template validation status: `PASS`
+- Boundary: authenticated capture template validation proves only that the next capture evidence slots are complete; it still blocks account status, login, authenticated variable pages, value labels, question text, universe/skip logic, route classifiers, public export, calibration and individual prediction.
 
 ## Sensitivity Analysis
 

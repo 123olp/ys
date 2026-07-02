@@ -248,6 +248,22 @@ DEFAULT_NHATS_COLECTICA_ACCESS_ROUTE_PROBE_VALIDATION = (
     / "data"
     / "life-path-nhats-colectica-access-route-probe-validation.json"
 )
+DEFAULT_NHATS_COLECTICA_AUTHENTICATED_CAPTURE_TEMPLATE = (
+    REPO_ROOT
+    / "domains"
+    / "c1-boundary-rewriting"
+    / "longevity-evidence"
+    / "data"
+    / "manual"
+    / "life_path_nhats_colectica_authenticated_capture_template.json"
+)
+DEFAULT_NHATS_COLECTICA_AUTHENTICATED_CAPTURE_TEMPLATE_VALIDATION = (
+    REPO_ROOT
+    / "web"
+    / "src"
+    / "data"
+    / "life-path-nhats-colectica-authenticated-capture-template-validation.json"
+)
 REQUIRED_MODEL_CARD_FIELDS = {
     "modelName",
     "modelClass",
@@ -4719,6 +4735,139 @@ def audit_nhats_colectica_access_route_probe(
     }
 
 
+def audit_nhats_colectica_authenticated_capture_template(
+    template_path: Path,
+    validation_path: Path,
+    access_route_probe_path: Path,
+    execution_register_path: Path,
+    protocol_path: Path,
+    route_field_register_path: Path,
+) -> dict[str, Any]:
+    checks: list[dict[str, Any]] = []
+    template_exists = template_path.exists()
+    validation_exists = validation_path.exists()
+    add_check(
+        checks,
+        "nhats-colectica-authenticated-capture-template-exists",
+        status_from_bool(template_exists),
+        str(template_path.relative_to(REPO_ROOT)),
+    )
+    add_check(
+        checks,
+        "nhats-colectica-authenticated-capture-template-validation-exists",
+        status_from_bool(validation_exists),
+        str(validation_path.relative_to(REPO_ROOT)),
+    )
+
+    template = load_json(template_path) if template_exists else {}
+    validation = load_json(validation_path) if validation_exists else {}
+
+    schema_ok = (
+        template.get("schemaVersion")
+        == "human-infra.life-path-nhats-colectica-authenticated-capture-template.v1"
+    )
+    add_check(
+        checks,
+        "nhats-colectica-authenticated-capture-template-schema",
+        status_from_bool(template_exists and schema_ok),
+        f"schemaVersion={template.get('schemaVersion')!r}",
+    )
+
+    decision = template.get("currentDecision")
+    boundary_ok = (
+        isinstance(decision, dict)
+        and decision.get("templateReady") is True
+        and decision.get("controlledColecticaAccountStatusRecorded") is False
+        and decision.get("colecticaLoginCompleted") is False
+        and decision.get("authenticatedVariablePagesCaptured") is False
+        and decision.get("sourceCaptureHashesRecorded") is False
+        and decision.get("valueLabelsConfirmed") is False
+        and decision.get("questionTextConfirmed") is False
+        and decision.get("universeSkipLogicConfirmed") is False
+        and decision.get("routeClassifierAllowed") is False
+        and decision.get("publicExportAllowed") is False
+        and decision.get("calibrationAllowed") is False
+        and decision.get("individualPredictionAllowed") is False
+    )
+    add_check(
+        checks,
+        "nhats-colectica-authenticated-capture-template-boundary",
+        status_from_bool(template_exists and boundary_ok),
+        "template may be ready, but account status, login, captures, labels, classifier, export, calibration and individual prediction must remain blocked",
+    )
+
+    validation_schema_ok = (
+        validation.get("schemaVersion")
+        == "human-infra.life-path-nhats-colectica-authenticated-capture-template-validation.v1"
+    )
+    add_check(
+        checks,
+        "nhats-colectica-authenticated-capture-template-validation-schema",
+        status_from_bool(validation_exists and validation_schema_ok),
+        f"schemaVersion={validation.get('schemaVersion')!r}",
+    )
+
+    validation_source_ok = (
+        validation.get("templatePath") == str(template_path.relative_to(REPO_ROOT))
+        and validation.get("templateSha256") == sha256_file(template_path)
+        and validation.get("accessRouteProbeRegisterPath")
+        == str(access_route_probe_path.relative_to(REPO_ROOT))
+        and validation.get("accessRouteProbeRegisterSha256")
+        == sha256_file(access_route_probe_path)
+        and validation.get("executionRegisterPath")
+        == str(execution_register_path.relative_to(REPO_ROOT))
+        and validation.get("executionRegisterSha256") == sha256_file(execution_register_path)
+        and validation.get("protocolPath") == str(protocol_path.relative_to(REPO_ROOT))
+        and validation.get("protocolSha256") == sha256_file(protocol_path)
+        and validation.get("routeFieldDiscoveryRegisterPath")
+        == str(route_field_register_path.relative_to(REPO_ROOT))
+        and validation.get("routeFieldDiscoveryRegisterSha256")
+        == sha256_file(route_field_register_path)
+    )
+    add_check(
+        checks,
+        "nhats-colectica-authenticated-capture-template-validation-source-hash",
+        status_from_bool(validation_exists and validation_source_ok),
+        "capture-template validation must point back to current template, access-route probe, execution register, protocol and route-field register hashes",
+    )
+
+    validation_boundary = validation.get("boundary")
+    validation_boundary_ok = (
+        validation.get("overallStatus") == "PASS"
+        and isinstance(validation.get("summary"), dict)
+        and validation["summary"].get("fail") == 0
+        and isinstance(validation_boundary, dict)
+        and validation_boundary.get("templateReady") is True
+        and validation_boundary.get("controlledColecticaAccountStatusRecorded") is False
+        and validation_boundary.get("colecticaLoginCompleted") is False
+        and validation_boundary.get("authenticatedVariablePagesCaptured") is False
+        and validation_boundary.get("sourceCaptureHashesRecorded") is False
+        and validation_boundary.get("valueLabelsConfirmed") is False
+        and validation_boundary.get("questionTextConfirmed") is False
+        and validation_boundary.get("universeSkipLogicConfirmed") is False
+        and validation_boundary.get("routeClassifierAllowed") is False
+        and validation_boundary.get("publicExportAllowed") is False
+        and validation_boundary.get("calibrationAllowed") is False
+        and validation_boundary.get("individualPredictionAllowed") is False
+    )
+    add_check(
+        checks,
+        "nhats-colectica-authenticated-capture-template-validation-boundary",
+        status_from_bool(validation_exists and validation_boundary_ok),
+        "validation must prove only template readiness while keeping authenticated capture and model admission blocked",
+    )
+
+    return {
+        "templatePath": str(template_path.relative_to(REPO_ROOT)),
+        "templateSha256": sha256_file(template_path) if template_exists else None,
+        "validationPath": str(validation_path.relative_to(REPO_ROOT)),
+        "validationSha256": sha256_file(validation_path) if validation_exists else None,
+        "status": "PASS" if summarize_checks(checks)["fail"] == 0 else "FAIL",
+        "checks": checks,
+        "summary": summarize_checks(checks),
+    }
+
+
 def audit_sensitivity_analysis(
     sensitivity_path: Path,
     model_data: dict[str, Any],
@@ -4979,6 +5128,8 @@ def audit_model(
     nhats_colectica_value_label_execution_validation_path: Path,
     nhats_colectica_access_route_probe_register_path: Path,
     nhats_colectica_access_route_probe_validation_path: Path,
+    nhats_colectica_authenticated_capture_template_path: Path,
+    nhats_colectica_authenticated_capture_template_validation_path: Path,
 ) -> dict[str, Any]:
     checks: list[dict[str, Any]] = []
     schema_version = data.get("schemaVersion")
@@ -5206,6 +5357,16 @@ def audit_model(
         nhats_colectica_access_route_probe_validation_path,
         nhats_colectica_value_label_execution_register_path,
     )
+    nhats_colectica_authenticated_capture_template_audit = (
+        audit_nhats_colectica_authenticated_capture_template(
+            nhats_colectica_authenticated_capture_template_path,
+            nhats_colectica_authenticated_capture_template_validation_path,
+            nhats_colectica_access_route_probe_register_path,
+            nhats_colectica_value_label_execution_register_path,
+            nhats_colectica_value_label_protocol_path,
+            nhats_route_field_discovery_register_path,
+        )
+    )
     sensitivity_audit = audit_sensitivity_analysis(sensitivity_path, data, model_path)
     checks.extend(readiness_audit["checks"])
     checks.extend(data_sources_audit["checks"])
@@ -5224,6 +5385,7 @@ def audit_model(
     checks.extend(nhats_colectica_value_label_audit["checks"])
     checks.extend(nhats_colectica_value_label_execution_audit["checks"])
     checks.extend(nhats_colectica_access_route_probe_audit["checks"])
+    checks.extend(nhats_colectica_authenticated_capture_template_audit["checks"])
     checks.extend(sensitivity_audit["checks"])
     failed = [check for check in checks if check["status"] == "FAIL"]
     overall = "PASS" if not failed else "FAIL"
@@ -5253,6 +5415,7 @@ def audit_model(
         "nhatsColecticaValueLabelReview": nhats_colectica_value_label_audit,
         "nhatsColecticaValueLabelReviewExecution": nhats_colectica_value_label_execution_audit,
         "nhatsColecticaAccessRouteProbe": nhats_colectica_access_route_probe_audit,
+        "nhatsColecticaAuthenticatedCaptureTemplate": nhats_colectica_authenticated_capture_template_audit,
         "sensitivityAnalysis": sensitivity_audit,
     }
 
@@ -5420,6 +5583,15 @@ def render_markdown(audit: dict[str, Any]) -> str:
             f"- Colectica access-route probe validation status: `{audit['nhatsColecticaAccessRouteProbe']['status']}`",
             "- Boundary: access-route probing verifies the public entry point, anonymous login boundary and technical-guide workflow only; it still blocks account status, authenticated variable page capture, value labels, question text, exports, calibration and individual prediction.",
             "",
+            "## NHATS Colectica Authenticated Capture Template",
+            "",
+            f"- Colectica authenticated capture template path: `{audit['nhatsColecticaAuthenticatedCaptureTemplate']['templatePath']}`",
+            f"- Colectica authenticated capture template SHA-256: `{audit['nhatsColecticaAuthenticatedCaptureTemplate']['templateSha256']}`",
+            f"- Colectica authenticated capture template validation path: `{audit['nhatsColecticaAuthenticatedCaptureTemplate']['validationPath']}`",
+            f"- Colectica authenticated capture template validation SHA-256: `{audit['nhatsColecticaAuthenticatedCaptureTemplate']['validationSha256']}`",
+            f"- Colectica authenticated capture template validation status: `{audit['nhatsColecticaAuthenticatedCaptureTemplate']['status']}`",
+            "- Boundary: authenticated capture template validation proves only that the next capture evidence slots are complete; it still blocks account status, login, authenticated variable pages, value labels, question text, universe/skip logic, route classifiers, public export, calibration and individual prediction.",
+            "",
             "## Sensitivity Analysis",
             "",
             f"- Sensitivity path: `{audit['sensitivityAnalysis']['path']}`",
@@ -5578,6 +5750,16 @@ def parse_args() -> argparse.Namespace:
         type=Path,
         default=DEFAULT_NHATS_COLECTICA_ACCESS_ROUTE_PROBE_VALIDATION,
     )
+    parser.add_argument(
+        "--nhats-colectica-authenticated-capture-template",
+        type=Path,
+        default=DEFAULT_NHATS_COLECTICA_AUTHENTICATED_CAPTURE_TEMPLATE,
+    )
+    parser.add_argument(
+        "--nhats-colectica-authenticated-capture-template-validation",
+        type=Path,
+        default=DEFAULT_NHATS_COLECTICA_AUTHENTICATED_CAPTURE_TEMPLATE_VALIDATION,
+    )
     parser.add_argument("--json-out", type=Path, default=DEFAULT_JSON_OUT)
     parser.add_argument("--md-out", type=Path, default=DEFAULT_MD_OUT)
     return parser.parse_args()
@@ -5642,6 +5824,12 @@ def main() -> int:
     nhats_colectica_access_route_probe_validation_path = (
         args.nhats_colectica_access_route_probe_validation.resolve()
     )
+    nhats_colectica_authenticated_capture_template_path = (
+        args.nhats_colectica_authenticated_capture_template.resolve()
+    )
+    nhats_colectica_authenticated_capture_template_validation_path = (
+        args.nhats_colectica_authenticated_capture_template_validation.resolve()
+    )
     audit = audit_model(
         load_json(model_path),
         model_path,
@@ -5675,6 +5863,8 @@ def main() -> int:
         nhats_colectica_value_label_execution_validation_path,
         nhats_colectica_access_route_probe_register_path,
         nhats_colectica_access_route_probe_validation_path,
+        nhats_colectica_authenticated_capture_template_path,
+        nhats_colectica_authenticated_capture_template_validation_path,
     )
     args.json_out.parent.mkdir(parents=True, exist_ok=True)
     with args.json_out.open("w", encoding="utf-8") as handle:

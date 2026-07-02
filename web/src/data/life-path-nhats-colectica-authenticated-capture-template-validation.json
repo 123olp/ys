@@ -1,0 +1,92 @@
+{
+  "schemaVersion": "human-infra.life-path-nhats-colectica-authenticated-capture-template-validation.v1",
+  "generatedAt": "2026-07-02T23:10:51.800128+00:00",
+  "templatePath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_authenticated_capture_template.json",
+  "templateSha256": "dc097acfcb44007b42a25ce500c6cb1d23b1154f6620a7797445293817313eeb",
+  "accessRouteProbeRegisterPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_access_route_probe_register.json",
+  "accessRouteProbeRegisterSha256": "58941fde2c6a1c5488437a1ad447cb3dae2032739ef1ed579e29da98b96aaa89",
+  "executionRegisterPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_value_label_review_execution_register.json",
+  "executionRegisterSha256": "de6d17f9470a563346f92884cead1eec35cf5a954245751b0135efc60672b042",
+  "protocolPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_value_label_review_protocol.json",
+  "protocolSha256": "bd5130152b3c57d5a6d8cdc767df85bc8a10e19e1225738f13940bd3734ff416",
+  "routeFieldDiscoveryRegisterPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_route_field_discovery_register.json",
+  "routeFieldDiscoveryRegisterSha256": "32d86995a0438e2104e6850334eefa63b30176b0767dd2229bc73a517ef5ade4",
+  "templateId": "nhats-r13-r14-colectica-authenticated-capture-template-2026-07-03",
+  "overallStatus": "PASS",
+  "summary": {
+    "pass": 11,
+    "fail": 0
+  },
+  "checks": [
+    {
+      "id": "schema-version",
+      "status": "PASS",
+      "detail": "schemaVersion='human-infra.life-path-nhats-colectica-authenticated-capture-template.v1'"
+    },
+    {
+      "id": "template-identity",
+      "status": "PASS",
+      "detail": "template must bind NHATS, access-route probe, execution register, value-label protocol and route-field register while staying template-only"
+    },
+    {
+      "id": "decision-boundary",
+      "status": "PASS",
+      "detail": "only templateReady may be true; account, login, capture, labels, route map, classifier, export, calibration and individual prediction must remain false"
+    },
+    {
+      "id": "source-bindings",
+      "status": "PASS",
+      "detail": "template must point to current upstream register paths"
+    },
+    {
+      "id": "capture-evidence-slots",
+      "status": "PASS",
+      "detail": "missing=[]"
+    },
+    {
+      "id": "required-capture-units",
+      "status": "PASS",
+      "detail": "missing=[]"
+    },
+    {
+      "id": "sensitive-death-exclusion",
+      "status": "PASS",
+      "detail": "sensitive_excluded=['dm13mthdied', 'dm13yrdied', 'dm14mthdied', 'dm14yrdied']"
+    },
+    {
+      "id": "capture-completion-requirements",
+      "status": "PASS",
+      "detail": "template must require account status, hashes, value labels, question text, universe/skip logic and second review"
+    },
+    {
+      "id": "blocked-until",
+      "status": "PASS",
+      "detail": "template must keep authenticated captures, route crosswalk, second review, disclosure and survey design as blockers"
+    },
+    {
+      "id": "prohibited-actions",
+      "status": "PASS",
+      "detail": "template must block credentials, raw dumps, crosswalk-as-labels, public AI upload, calibration and individual prediction"
+    },
+    {
+      "id": "no-credential-or-raw-data-keys",
+      "status": "PASS",
+      "detail": "prohibited_keys=[]"
+    }
+  ],
+  "boundary": {
+    "templateReady": true,
+    "controlledColecticaAccountStatusRecorded": false,
+    "colecticaLoginCompleted": false,
+    "authenticatedVariablePagesCaptured": false,
+    "sourceCaptureHashesRecorded": false,
+    "valueLabelsConfirmed": false,
+    "questionTextConfirmed": false,
+    "universeSkipLogicConfirmed": false,
+    "routeClassifierAllowed": false,
+    "publicExportAllowed": false,
+    "calibrationAllowed": false,
+    "individualPredictionAllowed": false
+  },
+  "note": "This validation proves only that an authenticated Colectica capture template exists. It does not prove account access, variable page capture, value labels, question text, universe/skip logic, route classifiers, public export, calibration or individual prediction."
+}
