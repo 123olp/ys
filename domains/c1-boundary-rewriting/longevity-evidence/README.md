@@ -116,6 +116,7 @@ longevity-evidence/
 │   └── product-brief.md
 └── scripts/
     ├── README.md
+    ├── audit_life_path_toy_model.py
     ├── collect_core_data.py
     ├── collect_mvp_data.py
     └── run_life_path_toy_model.py
@@ -144,7 +145,7 @@ longevity-evidence/
 
 `docs/lev-source-cards.md` 保存第一批 Source Cards，限定二阶 / 多阶效应理论来源能支持什么、不能支持什么。
 
-`data/manual/life_path_toy_model_scenarios.json` 和 `scripts/run_life_path_toy_model.py` 是最小定量管线：前者保存合成场景，后者生成 `web/src/data/life-path-toy-model.json` 供 `/model/` 消费。该模型只验证生命路径建模契约，不作为真实医学预测。
+`data/manual/life_path_toy_model_scenarios.json`、`scripts/run_life_path_toy_model.py` 和 `scripts/audit_life_path_toy_model.py` 是最小定量管线：输入保存合成场景，导出器生成 `web/src/data/life-path-toy-model.json`，审计器生成 `web/src/data/life-path-toy-model-audit.json` / `.md`。该模型只验证生命路径建模契约，不作为真实医学预测。
 
 ## 运行示例
 
@@ -154,4 +155,5 @@ longevity-evidence/
 python3 domains/c1-boundary-rewriting/longevity-evidence/scripts/collect_mvp_data.py --limit 10
 python3 domains/c1-boundary-rewriting/longevity-evidence/scripts/collect_core_data.py
 python3 domains/c1-boundary-rewriting/longevity-evidence/scripts/run_life_path_toy_model.py
+python3 domains/c1-boundary-rewriting/longevity-evidence/scripts/audit_life_path_toy_model.py
 ```

@@ -1,0 +1,110 @@
+{
+  "schemaVersion": "human-infra.life-path-toy-audit.v1",
+  "generatedAt": "2026-07-02T00:37:24.662528+00:00",
+  "modelPath": "web/src/data/life-path-toy-model.json",
+  "modelSha256": "d8e159031625099446ab769439d6e0296516cdc8e33e983373fdf05a2a110253",
+  "overallStatus": "PASS",
+  "checks": [
+    {
+      "id": "schema-version",
+      "status": "PASS",
+      "detail": "schemaVersion='human-infra.life-path-toy-results.v1'"
+    },
+    {
+      "id": "source-hash",
+      "status": "PASS",
+      "detail": "source path and sha256 must point back to the scenario input"
+    },
+    {
+      "id": "model-card-required-fields",
+      "status": "PASS",
+      "detail": "required=['evidenceBoundary', 'modelClass', 'modelName', 'nonUses', 'purpose', 'upgradeGate']"
+    },
+    {
+      "id": "prohibited-use-boundary",
+      "status": "PASS",
+      "detail": "model card must explicitly prohibit death-date or individual prediction use"
+    },
+    {
+      "id": "synthetic-evidence-boundary",
+      "status": "PASS",
+      "detail": "model card must state the synthetic evidence boundary"
+    },
+    {
+      "id": "scenario-count",
+      "status": "PASS",
+      "detail": "scenario_count=4"
+    },
+    {
+      "id": "scenario-id-unique",
+      "status": "PASS",
+      "detail": "ids=['baseline', 'assisted', 'convergence', 'escape']"
+    },
+    {
+      "id": "baseline-scenario-present",
+      "status": "PASS",
+      "detail": "baseline scenario must be present for comparison"
+    },
+    {
+      "id": "metrics-required-fields",
+      "status": "PASS",
+      "detail": "each scenario must expose required metrics"
+    },
+    {
+      "id": "survival-curve-monotonic",
+      "status": "PASS",
+      "detail": "scenario survival curves must be monotonic non-increasing"
+    },
+    {
+      "id": "probability-ranges",
+      "status": "PASS",
+      "detail": "survival and health-quality values must remain in [0, 1]"
+    },
+    {
+      "id": "resource-budget-ranges",
+      "status": "PASS",
+      "detail": "resource budget percentages must remain in [0, 100]"
+    },
+    {
+      "id": "lev-open-boundary-contract",
+      "status": "PASS",
+      "detail": "LEV >= 1 must be reported as open boundary"
+    },
+    {
+      "id": "no-individual-death-date-fields",
+      "status": "PASS",
+      "detail": "prohibited_keys=[]"
+    }
+  ],
+  "summary": {
+    "pass": 14,
+    "warn": 0,
+    "fail": 0
+  },
+  "standardAlignment": [
+    {
+      "standard": "TRIPOD+AI",
+      "localGate": "model card + schema + transparent scenario output",
+      "status": "PARTIAL",
+      "boundary": "toy model only; no development/validation cohort"
+    },
+    {
+      "standard": "PROBAST / PROBAST+AI",
+      "localGate": "bias/applicability placeholders and prohibited-use boundary",
+      "status": "PARTIAL",
+      "boundary": "formal risk-of-bias assessment requires real study design and data"
+    },
+    {
+      "standard": "ISPOR modeling good practices",
+      "localGate": "versioned inputs, executable model, generated outputs, audit artifact",
+      "status": "PARTIAL",
+      "boundary": "no decision model, calibration, cost model, or sensitivity analysis yet"
+    },
+    {
+      "standard": "MRC complex interventions framework",
+      "localGate": "mechanism chain and context boundary in maturity roadmap",
+      "status": "PARTIAL",
+      "boundary": "stakeholder process and implementation evaluation are not started"
+    }
+  ]
+}

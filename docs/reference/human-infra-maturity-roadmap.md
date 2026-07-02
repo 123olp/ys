@@ -8,9 +8,9 @@
 
 | 轴线 | 当前成熟度 | 100% 状态 | 当前最大缺口 |
 | --- | ---: | --- | --- |
-| 项目价值 | 70% | 不同受众能用同一核心命题理解 Human Infra 的必要性 | 缺少统一成熟度契约和外部框架对齐 |
-| 研究框架 | 35% | 每条主张都进入 Source Card、Claim-Evidence Matrix、变量表和反证条件 | 研究域多，但主张级证据闭环还不均匀 |
-| 定量模型 | 10% | 有可运行、可复现、可审查的场景级模型管线 | Web 主要是示意计算，缺少独立模型输入、导出器和模型卡 |
+| 项目价值 | 82% | 不同受众能用同一核心命题理解 Human Infra 的必要性 | 还需要把同一价值语言压入所有论文页和传播页 |
+| 研究框架 | 50% | 每条主张都进入 Source Card、Claim-Evidence Matrix、变量表和反证条件 | 研究域多，但主张级证据闭环还不均匀 |
+| 定量模型 | 30% | 有可运行、可复现、可审查的场景级模型管线 | 已有 toy model 与审计器，但还没有校准数据、外部验证和敏感性分析 |
 
 ## 价值层 100%
 
@@ -82,6 +82,7 @@ versioned inputs
 - 不输出个体死亡日期，不给个体医疗建议，不声明真实疗效。
 - 包含模型卡：用途、非用途、输入来源、证据等级、主要假设、已知限制和升级条件。
 - 包含 sanity checks：生存曲线单调、概率范围合法、无个人预测字段、场景 ID 唯一。
+- 包含审计产物：机器可读 JSON 和人可读 Markdown，证明模型输出满足本地报告契约。
 
 ## 外部方法锚点
 
@@ -147,11 +148,32 @@ versioned inputs
 life_path_toy_model_scenarios.json
   -> run_life_path_toy_model.py
   -> life-path-toy-model.json
+  -> audit_life_path_toy_model.py
+  -> life-path-toy-model-audit.json / .md
   -> /model/ Web 图表
-  -> model card + sanity checks
+  -> model card + sanity checks + audit checks
 ```
 
-这一步完成后，项目会从“有定量想法的研究叙事”进入“有最小可执行模型管线的研究系统”。
+这一步完成后，项目会从“有定量想法的研究叙事”进入“有最小可执行、可审计模型管线的研究系统”。
+
+## 当前已具备的定量门禁
+
+`npm run export:life-path-toy` 生成场景级模型输出。
+
+`npm run audit:life-path-toy` 生成 `web/src/data/life-path-toy-model-audit.json` 和 `web/src/data/life-path-toy-model-audit.md`，当前检查包括：
+
+- schema version 是否正确；
+- source path 和 sha256 是否回到输入场景；
+- model card 是否包含必需字段；
+- prohibited use 是否明确禁止个体死亡日期和个体预测；
+- evidence boundary 是否明确为 synthetic；
+- scenario ID 是否唯一且包含 baseline；
+- 每个场景是否包含必需 metrics；
+- 生存曲线是否单调非增；
+- survival / health-quality 是否处于 `[0, 1]`；
+- resource budget 是否处于 `[0, 100]`；
+- `LEV >= 1` 是否显示开放边界；
+- 是否不存在个体死亡日期字段。
 
 ## 参考入口
 

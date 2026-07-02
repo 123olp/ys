@@ -10,6 +10,7 @@
     "export:references": "node scripts/export-reference-registry.mjs",
     "export:lev-model": "node scripts/export-lev-model-data.mjs",
     "export:life-path-toy": "python3 ../domains/c1-boundary-rewriting/longevity-evidence/scripts/run_life_path_toy_model.py --out src/data/life-path-toy-model.json",
+    "audit:life-path-toy": "python3 ../domains/c1-boundary-rewriting/longevity-evidence/scripts/audit_life_path_toy_model.py --model src/data/life-path-toy-model.json --json-out src/data/life-path-toy-model-audit.json --md-out src/data/life-path-toy-model-audit.md",
     "export:citation-contexts": "node scripts/export-citation-context-review-packet.mjs",
     "export:fresh-reviewer-protocol": "node scripts/export-fresh-reviewer-citation-audit-protocol.mjs",
     "verify:references": "node scripts/verify-reference-registry.mjs",

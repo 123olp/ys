@@ -4,6 +4,7 @@ All notable repository structure changes are recorded here.
 
 ## 2026-07-02
 
+- Added the life-path toy model audit gate and generated audit artifacts, checking model card fields, source hash, scenario metrics, curve monotonicity, probability ranges, resource budgets, LEV open-boundary reporting, and prohibited individual death-date fields.
 - Added the Human Infra maturity roadmap and a runnable synthetic life-path toy model pipeline, connecting versioned scenario input, Python export, generated Web JSON, and `/model/` D3 visualization.
 - Added LEV structured model assets: `higher_order_effects.tsv`, `lev_route_cards.tsv`, route-card template, Source Cards, Web export script, generated `lev-model.json`, and `/lev/` route visualization page.
 - Added `domains/c1-boundary-rewriting/longevity-evidence/docs/lev-higher-order-effects-discovery.md` to capture second-order and multi-order LEV discovery findings, including flexible resources, adoption diffusion, intervention-generated inequalities, rebound effects, calibration risks, and new probability gates.
