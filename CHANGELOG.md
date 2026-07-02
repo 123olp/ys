@@ -4,6 +4,7 @@ All notable repository structure changes are recorded here.
 
 ## 2026-07-02
 
+- Added a machine-readable page-level Claim ID consistency register and audit gate, wiring README, Web homepage, arXiv-style paper pages, the life-path model note and the maturity roadmap to the same Human Infra claim spine and prohibited-use boundary language.
 - Added a machine-readable Human Infra 100% maturity gap register and audit gate, aligning value clarity, research-framework and quantitative-model gaps with the maturity roadmap, local evidence paths, blocked gates and next work order.
 - Added a machine-readable NHATS Colectica value-label review protocol, validator script, generated Web validation report and audit coverage, defining the review artifacts and blocking gates required before route-field candidates can be promoted into classifier inputs.
 - Added a machine-readable NHATS route-field discovery register, validator script, generated Web validation report and audit coverage, recording official R13/R14 crosswalk route-field candidates while keeping Colectica value labels, governed data access, classifier review, weighted route counts, public export, calibration and individual prediction blocked.

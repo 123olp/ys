@@ -10,6 +10,7 @@ tools/
 ├── README.md                         # 工具入口和常用命令
 ├── audit_core_claim_evidence_matrix.py # 核心主张证据矩阵审计器
 ├── audit_human_infra_maturity_gap_register.py # 100% 成熟度缺口账本审计器
+├── audit_human_infra_page_claim_consistency.py # 页面级 Claim ID 一致性审计器
 ├── arxiv_html_paper_tool.py          # arXiv HTML papers 复用 CLI
 ├── check_repository.py               # 仓库结构和 Markdown 链接检查
 ├── update_domain_doc_contracts.py     # 研究域 README/AGENTS 标准块、研究骨架和代理流程生成器
@@ -34,6 +35,7 @@ tools/
 - `check_repository.py` 只检查仓库结构、临时文件名、Python 缓存和本地 Markdown 链接。
 - `audit_core_claim_evidence_matrix.py` 只检查核心 Claim-Evidence Matrix 的结构契约、Source Anchor、Claim ID、gate、方法锚点、禁止用途和入口索引，不验证外部文献真实性。
 - `audit_human_infra_maturity_gap_register.py` 只检查 100% 成熟度缺口账本的结构契约、三条成熟度轴、gate 状态、证据路径、路线图百分比一致性和入口索引，不证明项目已经完成 100%。
+- `audit_human_infra_page_claim_consistency.py` 只检查主要 README、Web、论文和 reference 页面是否包含账本要求的 Claim ID、Claim spine 标签和禁止用途边界，不验证外部文献真实性或域级证据闭环。
 - `update_domain_doc_contracts.py` 只根据 `domains/_possibility-space-control/classification.tsv` 为正式研究域 README/AGENTS 生成标准元信息、研究推进骨架、维护契约和代理执行流程块。
 - `arxiv_html_paper_tool.py` 只负责 arXiv HTML papers 资源安装、资产校验、Astro 布局和页面骨架生成。
 - `arxiv-html-paper/templates/` 保留可复制模板，不承载 Human Infra 正文理论。

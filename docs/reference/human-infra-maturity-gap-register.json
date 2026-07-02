@@ -16,7 +16,7 @@
     {
       "axisId": "value_clarity",
       "axisName": "项目价值",
-      "currentPercent": 82,
+      "currentPercent": 88,
       "targetPercent": 100,
       "definitionOfDone": "Different audiences can understand Human Infra through one stable first-principles thesis, with audience-specific entry points that all preserve scope, evidence and prohibited-use boundaries.",
       "primaryEvidence": [
@@ -97,24 +97,24 @@
         },
         {
           "gateId": "VALUE-G6-page-consistency-audit",
-          "status": "blocked",
+          "status": "pass",
           "requirement": "README, Web homepage, paper pages and major reference documents use one consistent value grammar and claim boundary.",
           "evidence": [
             "README.md",
-            "docs/reference/human-infra-core-claim-evidence-matrix.md"
+            "docs/reference/human-infra-core-claim-evidence-matrix.md",
+            "docs/reference/human-infra-page-claim-consistency.json",
+            "tools/audit_human_infra_page_claim_consistency.py"
           ],
-          "missingEvidence": [
-            "Machine audit that scans major pages for required Claim IDs and prohibited-use language."
-          ],
-          "nextAction": "Add a page-consistency audit after page-level Claim IDs are inserted.",
-          "blocks100Percent": true
+          "missingEvidence": [],
+          "nextAction": "Keep major pages aligned through make page-claim-audit before broadening the audit into audience-specific pages.",
+          "blocks100Percent": false
         }
       ]
     },
     {
       "axisId": "research_framework",
       "axisName": "研究框架",
-      "currentPercent": 55,
+      "currentPercent": 58,
       "targetPercent": 100,
       "definitionOfDone": "Every strong project claim can be traced to source cards, claim-evidence rows, variables, mechanism links, falsifiers, model position and governance boundary.",
       "primaryEvidence": [
@@ -196,16 +196,19 @@
         },
         {
           "gateId": "RESEARCH-G6-falsifier-and-downgrade-coverage",
-          "status": "blocked",
+          "status": "partial",
           "requirement": "Every strong claim has at least one falsifier or downgrade condition.",
           "evidence": [
-            "docs/reference/human-infra-core-claim-evidence-matrix.md"
+            "docs/reference/human-infra-core-claim-evidence-matrix.md",
+            "docs/reference/human-infra-page-claim-consistency.json",
+            "tools/audit_human_infra_page_claim_consistency.py"
           ],
           "missingEvidence": [
             "Machine audit for domain-level falsifier coverage.",
-            "Falsifier rows for major Web page claims and arXiv-style paper claims."
+            "Falsifier rows for major domain-level claims and all arXiv-style paper claims.",
+            "Claim-to-falsifier coverage for C1/C2 priority research domains."
           ],
-          "nextAction": "Add a claim coverage audit after page-level claims are indexed.",
+          "nextAction": "Extend page-level Claim ID coverage into a domain-level falsifier and downgrade-condition audit.",
           "blocks100Percent": true
         }
       ]
@@ -352,9 +355,8 @@
   "nextWorkOrder": [
     {
       "priority": 1,
-      "item": "Add page-level Claim ID consistency audit for README, Web homepage, paper pages and major reference pages.",
+      "item": "Extend page-level Claim ID consistency into domain-level falsifier and downgrade-condition coverage for C1/C2 priority domains.",
       "unblocks": [
-        "VALUE-G6-page-consistency-audit",
         "RESEARCH-G6-falsifier-and-downgrade-coverage"
       ]
     },

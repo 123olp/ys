@@ -1,0 +1,139 @@
+{
+  "schemaVersion": "human-infra.page-claim-consistency.v1",
+  "registerId": "human-infra-page-claim-consistency-2026-07-02",
+  "status": "active-consistency-gate",
+  "purpose": "Keep major Human Infra entry pages aligned to the same project-level Claim IDs, value grammar and prohibited-use boundaries.",
+  "coreMatrix": "docs/reference/human-infra-core-claim-evidence-matrix.md",
+  "maturityGapRegister": "docs/reference/human-infra-maturity-gap-register.json",
+  "globalRequiredClaims": [
+    "HI-CL1",
+    "HI-CL2",
+    "HI-CL3",
+    "HI-CL6"
+  ],
+  "globalBoundaryPhrases": [
+    "不是医疗建议",
+    "不输出个体死亡日期",
+    "不证明具体技术已经实现有效永生"
+  ],
+  "pages": [
+    {
+      "pageId": "root-readme",
+      "path": "README.md",
+      "pageType": "project-entry",
+      "requiredClaims": [
+        "HI-CL1",
+        "HI-CL2",
+        "HI-CL3",
+        "HI-CL6"
+      ],
+      "requiredBoundaryPhrases": [
+        "不是医疗建议",
+        "不输出个体死亡日期",
+        "不证明具体技术已经实现有效永生"
+      ],
+      "claimSpineLabel": "主张脊柱"
+    },
+    {
+      "pageId": "web-home",
+      "path": "web/src/pages/index.astro",
+      "pageType": "web-entry",
+      "requiredClaims": [
+        "HI-CL1",
+        "HI-CL2",
+        "HI-CL3",
+        "HI-CL6"
+      ],
+      "requiredBoundaryPhrases": [
+        "不是医疗建议",
+        "不输出个体死亡日期",
+        "不证明具体技术已经实现有效永生"
+      ],
+      "claimSpineLabel": "Claim Spine"
+    },
+    {
+      "pageId": "web-main-paper",
+      "path": "web/src/pages/paper.astro",
+      "pageType": "arxiv-style-paper",
+      "requiredClaims": [
+        "HI-CL1",
+        "HI-CL2",
+        "HI-CL3",
+        "HI-CL4",
+        "HI-CL6",
+        "HI-CL7"
+      ],
+      "requiredBoundaryPhrases": [
+        "不是医疗建议",
+        "不输出个体死亡日期",
+        "不证明具体技术已经实现有效永生"
+      ],
+      "claimSpineLabel": "Claim spine"
+    },
+    {
+      "pageId": "effective-immortality-paper",
+      "path": "web/src/pages/papers/effective-immortality-flywheel.astro",
+      "pageType": "arxiv-style-paper",
+      "requiredClaims": [
+        "HI-CL1",
+        "HI-CL2",
+        "HI-CL3",
+        "HI-CL6",
+        "HI-CL7"
+      ],
+      "requiredBoundaryPhrases": [
+        "不是医疗建议",
+        "不输出个体死亡日期",
+        "不证明具体技术已经实现有效永生"
+      ],
+      "claimSpineLabel": "Claim spine"
+    },
+    {
+      "pageId": "life-path-model-doc",
+      "path": "docs/explanations/life-path-prediction-model.md",
+      "pageType": "model-doc",
+      "requiredClaims": [
+        "HI-CL3",
+        "HI-CL4",
+        "HI-CL6",
+        "HI-CL7"
+      ],
+      "requiredBoundaryPhrases": [
+        "不是医疗建议",
+        "不输出个体死亡日期",
+        "不证明具体技术已经实现有效永生"
+      ],
+      "claimSpineLabel": "Claim Spine"
+    },
+    {
+      "pageId": "maturity-roadmap",
+      "path": "docs/reference/human-infra-maturity-roadmap.md",
+      "pageType": "reference-contract",
+      "requiredClaims": [
+        "HI-CL1",
+        "HI-CL2",
+        "HI-CL3",
+        "HI-CL4",
+        "HI-CL6",
+        "HI-CL7"
+      ],
+      "requiredBoundaryPhrases": [
+        "不是医疗建议",
+        "不输出个体死亡日期",
+        "不证明具体技术已经实现有效永生"
+      ],
+      "claimSpineLabel": "Claim Spine"
+    }
+  ],
+  "indexRequirements": [
+    "README.md",
+    "docs/reference/README.md",
+    "docs/reference/human-infra-maturity-roadmap.md",
+    "tools/README.md"
+  ],
+  "nonClaims": [
+    "This register does not prove that every domain has source-level evidence closure.",
+    "This register does not validate external papers, medical facts or quantitative calibration.",
+    "This register only gates page-level alignment to project-level claims and prohibited-use language."
+  ]
+}

@@ -17,6 +17,12 @@ Human Infra 是一个研究“能够继续做事的主体”如何被维护、�
 
 主体持续性是价值实现的边界条件。
 
+### 主张脊柱
+
+本页对齐核心主张 `HI-CL1`、`HI-CL2`、`HI-CL3` 和 `HI-CL6`，完整矩阵见 [Human Infra Core Claim-Evidence Matrix](docs/reference/human-infra-core-claim-evidence-matrix.md)，页面一致性门禁见 [Page Claim Consistency Register](docs/reference/human-infra-page-claim-consistency.json)。
+
+边界：Human Infra 不是医疗建议，不输出个体死亡日期，不证明具体技术已经实现有效永生；当前只把主体持续性、生命路径和未来选择权组织成可审查的研究框架。
+
 | 问题类型 | 典型问题 | Human Infra 判断 |
 | --- | --- | --- |
 | 边界内优化 | 做什么、怎么做、怎样更快、怎样产出更多 | 重要，但仍是主体有限持续性内部的派生问题 |

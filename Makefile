@@ -1,10 +1,11 @@
-.PHONY: check structure claim-matrix-audit maturity-gap-audit py-compile clean
+.PHONY: check structure claim-matrix-audit maturity-gap-audit page-claim-audit py-compile clean
 
 check:
 	$(MAKE) clean
 	$(MAKE) structure
 	$(MAKE) claim-matrix-audit
 	$(MAKE) maturity-gap-audit
+	$(MAKE) page-claim-audit
 	$(MAKE) py-compile
 	$(MAKE) clean
 	$(MAKE) structure
@@ -18,10 +19,14 @@ claim-matrix-audit:
 maturity-gap-audit:
 	python3 tools/audit_human_infra_maturity_gap_register.py
 
+page-claim-audit:
+	python3 tools/audit_human_infra_page_claim_consistency.py
+
 py-compile:
 	python3 -m py_compile \
 		tools/audit_core_claim_evidence_matrix.py \
 		tools/audit_human_infra_maturity_gap_register.py \
+		tools/audit_human_infra_page_claim_consistency.py \
 		tools/arxiv_html_paper_tool.py \
 		tools/check_repository.py \
 		tools/update_domain_doc_contracts.py \
