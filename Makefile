@@ -1,4 +1,4 @@
-.PHONY: check structure claim-matrix-audit maturity-gap-audit page-claim-audit audience-claim-map-audit paper-claim-audit domain-falsifier-audit domain-claim-matrix-audit domain-field-extraction-audit c2-longtail-coverage-audit c2-longtail-first-batch-promotion-audit c2-longtail-first-batch-source-extraction-audit c2-longtail-first-batch-source-extraction-register-audit c2-longtail-first-batch-local-review-audit c2-longtail-first-batch-independent-fresh-review-protocol-audit c2-longtail-first-batch-independent-fresh-review-verdict-audit domain-source-queue-audit domain-source-extraction-audit domain-source-promotion-audit source-context-local-review-audit card-promotion-prep-audit independent-fresh-review-protocol-audit independent-fresh-review-verdict-audit reviewed-card-artifact-audit future-boundary-route-card-audit falsifier-source-audit falsifier-source-extraction-audit py-compile clean
+.PHONY: check structure claim-matrix-audit maturity-gap-audit page-claim-audit audience-claim-map-audit paper-claim-audit domain-falsifier-audit domain-claim-matrix-audit domain-field-extraction-audit c2-longtail-coverage-audit c2-longtail-first-batch-promotion-audit c2-longtail-first-batch-source-extraction-audit c2-longtail-first-batch-source-extraction-register-audit c2-longtail-first-batch-local-review-audit c2-longtail-first-batch-independent-fresh-review-protocol-audit c2-longtail-first-batch-independent-fresh-review-verdict-audit c2-longtail-first-batch-reviewed-card-artifact-audit domain-source-queue-audit domain-source-extraction-audit domain-source-promotion-audit source-context-local-review-audit card-promotion-prep-audit independent-fresh-review-protocol-audit independent-fresh-review-verdict-audit reviewed-card-artifact-audit future-boundary-route-card-audit falsifier-source-audit falsifier-source-extraction-audit py-compile clean
 
 check:
 	$(MAKE) clean
@@ -18,6 +18,7 @@ check:
 	$(MAKE) c2-longtail-first-batch-local-review-audit
 	$(MAKE) c2-longtail-first-batch-independent-fresh-review-protocol-audit
 	$(MAKE) c2-longtail-first-batch-independent-fresh-review-verdict-audit
+	$(MAKE) c2-longtail-first-batch-reviewed-card-artifact-audit
 	$(MAKE) domain-source-queue-audit
 	$(MAKE) domain-source-extraction-audit
 	$(MAKE) domain-source-promotion-audit
@@ -81,6 +82,9 @@ c2-longtail-first-batch-independent-fresh-review-protocol-audit:
 c2-longtail-first-batch-independent-fresh-review-verdict-audit:
 	python3 tools/audit_human_infra_c2_longtail_first_batch_independent_fresh_review_verdict_register.py
 
+c2-longtail-first-batch-reviewed-card-artifact-audit:
+	python3 tools/audit_human_infra_c2_longtail_first_batch_reviewed_card_artifact_register.py
+
 domain-source-queue-audit:
 	python3 tools/audit_human_infra_domain_source_specific_extraction_queue.py
 
@@ -131,6 +135,7 @@ py-compile:
 		tools/audit_human_infra_c2_longtail_first_batch_local_review_register.py \
 		tools/audit_human_infra_c2_longtail_first_batch_independent_fresh_review_protocol.py \
 		tools/audit_human_infra_c2_longtail_first_batch_independent_fresh_review_verdict_register.py \
+		tools/audit_human_infra_c2_longtail_first_batch_reviewed_card_artifact_register.py \
 		tools/audit_human_infra_domain_source_specific_extraction_queue.py \
 		tools/audit_human_infra_domain_source_specific_extraction_register.py \
 		tools/audit_human_infra_domain_source_card_promotion_queue.py \
