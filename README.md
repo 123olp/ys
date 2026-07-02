@@ -31,7 +31,7 @@ C2 长尾第四批晋升队列见 [C2 Longtail Fourth Batch Promotion Queue](doc
 
 C2 长尾第四批 manual/fulltext reviewed artifacts 见 [C2 Longtail Fourth Batch Manual Fulltext Reviewed Card Artifact Register](docs/reference/human-infra-c2-longtail-fourth-batch-manual-fulltext-reviewed-card-artifact-register.json)，它只把 3 个 eligible manual/fulltext fresh-review rows 晋升为 18 个 bounded reviewed artifacts，并保留 5 个 duplicate、route-only、manual-access 或 context-only blocked rows；模型准入仍阻塞。
 
-C2 长尾第五批晋升队列见 [C2 Longtail Fifth Batch Promotion Queue](docs/reference/human-infra-c2-longtail-fifth-batch-promotion-queue.json)，它选择 12 个仍未覆盖的细胞质量控制、细胞器通信、分子运输、膜脂韧性、清除和屏障底座 C2 域，绑定 24 个 web/API-checked 候选来源，作为端粒、翻译保真、溶酶体、ER/UPR、Golgi、过氧化物酶体、细胞器接触位点、细胞骨架、铁死亡、核质运输、glymphatic 清除和肠屏障路径的 source-specific 深读入口；它不完成 Source Card、fresh review、reviewed artifacts 或模型准入。第五批来源深读队列见 [C2 Longtail Fifth Batch Source Extraction Queue](docs/reference/human-infra-c2-longtail-fifth-batch-source-extraction-queue.json)，它把 24 个候选来源派生成 24 个 exact claim、endpoint、population、uncertainty、transfer-boundary、downgrade 和 model-position 抽取任务。第五批来源抽取寄存器见 [C2 Longtail Fifth Batch Source Extraction Register](docs/reference/human-infra-c2-longtail-fifth-batch-source-extraction-register.json)，它完成 24/24 个来源语境字段抽取，并显式保留 6 个无开放全文需人工复核行、2 组跨域复用来源和模型准入阻塞边界。第五批本地来源语境复核见 [C2 Longtail Fifth Batch Local Review Register](docs/reference/human-infra-c2-longtail-fifth-batch-local-review-register.json)，它确认 24/24 个抽取行只可进入 independent fresh review 或 source-resolution/manual fulltext，8 个问题行继续阻塞 reviewed artifacts 和模型准入。
+C2 长尾第五批晋升队列见 [C2 Longtail Fifth Batch Promotion Queue](docs/reference/human-infra-c2-longtail-fifth-batch-promotion-queue.json)，它选择 12 个仍未覆盖的细胞质量控制、细胞器通信、分子运输、膜脂韧性、清除和屏障底座 C2 域，绑定 24 个 web/API-checked 候选来源，作为端粒、翻译保真、溶酶体、ER/UPR、Golgi、过氧化物酶体、细胞器接触位点、细胞骨架、铁死亡、核质运输、glymphatic 清除和肠屏障路径的 source-specific 深读入口；它不完成 Source Card、fresh review、reviewed artifacts 或模型准入。第五批来源深读队列见 [C2 Longtail Fifth Batch Source Extraction Queue](docs/reference/human-infra-c2-longtail-fifth-batch-source-extraction-queue.json)，它把 24 个候选来源派生成 24 个 exact claim、endpoint、population、uncertainty、transfer-boundary、downgrade 和 model-position 抽取任务。第五批来源抽取寄存器见 [C2 Longtail Fifth Batch Source Extraction Register](docs/reference/human-infra-c2-longtail-fifth-batch-source-extraction-register.json)，它完成 24/24 个来源语境字段抽取，并显式保留 6 个无开放全文需人工复核行、2 组跨域复用来源和模型准入阻塞边界。第五批本地来源语境复核见 [C2 Longtail Fifth Batch Local Review Register](docs/reference/human-infra-c2-longtail-fifth-batch-local-review-register.json)，它确认 24/24 个抽取行只可进入 independent fresh review 或 source-resolution/manual fulltext，8 个问题行继续阻塞 reviewed artifacts 和模型准入。第五批 source-resolution 账本见 [C2 Longtail Fifth Batch Source Resolution Register](docs/reference/human-infra-c2-longtail-fifth-batch-source-resolution-register.json)，它把 8 个问题行整理为 14 个 PubMed、Europe PMC、DOI 或 PMC 路线候选，并继续阻塞 manual/fulltext extraction、fresh review、reviewed artifacts 和模型准入。
 
 边界：Human Infra 不是医疗建议，不输出个体死亡日期，不证明具体技术已经实现有效永生；当前只把主体持续性、生命路径和未来选择权组织成可审查的研究框架。
 
@@ -106,6 +106,33 @@ Human Infra 可以从多条路径理解项目价值。当前 README 保留三个
 
 这条链路对应 Human Infra 对加速回报定律的转译：技术进步降低下一轮创新成本，而主体持续性提升降低长期目标的失败成本。时间不只是倒计时，也可以成为能力、资源和可能性空间复利增长的底座。
 
+## 实现持续性主线
+
+实现持续性研究的终极目的不是给世界贴分类标签，而是判断：任何一个域到底在“实现链路”的哪一段防止断裂。一个主体从“想做事”到“真的做成事”，必须在时间、损耗、风险和环境变化中保持连续。
+
+`C0` 是价值原点：主体持续性本身。它意味着主体仍然存在，仍能感知、判断、行动、学习、修正和选择。`C0` 不是普通研究域，而是所有研究的终极目的。
+
+在 `C0` 之下，实现持续性有 6 条主线：
+
+| 层级 | 主线 | 关注对象 | 实现目标 |
+| --- | --- | --- | --- |
+| C1 | 边界改写线 | 寿命、死亡、时间、身份连续性和未来抵达边界 | 让主体拥有更长、更开放的未来窗口 |
+| C2 | 源体维护线 | 身体、脑、生命系统、衰老控制和损伤修复 | 让产生可能性的载体不提前坍塌 |
+| C3 | 生成引擎线 | 认知、学习、注意力、AI 协作和工具能力 | 让主体持续生成新路径、新方案和新能力 |
+| C4 | 转换通道线 | 医疗、研究、数据、制度、服务、市场和权利接口 | 把潜在可能性转成可执行路径 |
+| C5 | 生态承载线 | 食物、水、能源、住房、金融、交通、通信、公共治理和基础设施 | 让行动有现实环境承载，而不是只停留在能力层 |
+| C6 | 局部解锁线 | 具体疾病、流程、账号、身份、维修、预约、支付、申诉、照护和家庭任务等最后一公里阻塞 | 解除让人“明明有目标但做不下去”的卡点 |
+
+```text
+C0 主体持续性
+  -> C1 改写边界
+  -> C2 维护载体
+  -> C3 增强生成
+  -> C4 打通转换
+  -> C5 承载环境
+  -> C6 解锁局部阻塞
+```
+
 ## 研究范围
 
 Human Infra 用“主体持续性”作为纳入标准，避免把所有话题混成一个筐：某条线路是否增强主体继续存在、继续行动、继续修正和继续选择的能力。
@@ -147,6 +174,7 @@ flowchart LR
 | --- | --- | --- |
 | 理解核心理论 | [核心命题](#核心命题) | 主体持续性为什么是价值实现的边界条件 |
 | 查看理论链路 | [理论链路](#理论链路) | 从价值、主体、死亡边界到 Human Infra 的因果链 |
+| 查看实现持续性主线 | [实现持续性主线](#实现持续性主线) | 从 C0 价值原点到 C1-C6 六条实现主线，判断每个域在实现链路中防止哪类断裂 |
 | 查看研究范围 | [研究范围](#研究范围) | 哪些领域属于主体持续性工程，以及为什么属于 |
 | 从多视角理解项目价值 | [多视角价值解析](#多视角价值解析) / [完整文档](docs/explanations/value-lenses.md) | 主体持续性、通用资源预算增量和反稀缺工程视角 |
 | 理解有效永生的复利效应 | [有效永生的加速回报飞轮](#有效永生的加速回报飞轮) / [论文草案](docs/explanations/effective-immortality-acceleration-flywheel.md) / [证据矩阵](docs/source-notes/2026-06-28-effective-immortality-flywheel-evidence-matrix.md) | 主体持续时间、能力升级、技术采用和可能性空间如何互相强化 |
@@ -206,6 +234,7 @@ flowchart LR
 | 查看 C2 长尾第五批来源深读队列 | [docs/reference/human-infra-c2-longtail-fifth-batch-source-extraction-queue.json](docs/reference/human-infra-c2-longtail-fifth-batch-source-extraction-queue.json) | 24 个第五批候选来源已派生成 source-specific 深读任务；仍不等于 local review、fresh review、reviewed artifacts 或模型准入 |
 | 查看 C2 长尾第五批来源抽取寄存器 | [docs/reference/human-infra-c2-longtail-fifth-batch-source-extraction-register.json](docs/reference/human-infra-c2-longtail-fifth-batch-source-extraction-register.json) | 24/24 个第五批来源已完成本地字段级抽取，并标出无开放全文人工复核、跨域复用来源、模型生物/综述边界和模型准入阻塞；仍需 local review、independent fresh review、reviewed artifacts 和模型准入审查 |
 | 查看 C2 长尾第五批本地来源语境复核 | [docs/reference/human-infra-c2-longtail-fifth-batch-local-review-register.json](docs/reference/human-infra-c2-longtail-fifth-batch-local-review-register.json) | 24/24 个第五批来源抽取行已完成本地结构复核；非问题行只可进入 independent fresh review，8 个无开放全文或跨域复用问题行必须先 source-resolution/manual fulltext，模型准入仍阻塞 |
+| 查看 C2 长尾第五批 source-resolution 账本 | [docs/reference/human-infra-c2-longtail-fifth-batch-source-resolution-register.json](docs/reference/human-infra-c2-longtail-fifth-batch-source-resolution-register.json) | 8 个第五批本地复核问题行已整理为 14 个 PubMed、Europe PMC、DOI 或 PMC 路线候选；仍需 manual/fulltext extraction、independent fresh review、reviewed artifacts 和模型准入审查 |
 | 查看域-来源深读队列 | [docs/reference/human-infra-domain-source-specific-extraction-queue.json](docs/reference/human-infra-domain-source-specific-extraction-queue.json) | 把 26 个域字段行派生为 81 个 domain-source 深读任务；队列不等于证据完成，只定义下一步精读阻塞项 |
 | 查看域-来源精读完成寄存器 | [docs/reference/human-infra-domain-source-specific-extraction-register.json](docs/reference/human-infra-domain-source-specific-extraction-register.json) | 当前完成 81/81 个 domain-source 精读字段行，覆盖方法锚点、生物机制、价值框架、认知扩展、脑保存、数字孪生、未来等待、AI 治理和筛查偏倚边界；仍禁止校准预测和个体建议 |
 | 查看域-来源卡片晋升队列 | [docs/reference/human-infra-domain-source-card-promotion-queue.json](docs/reference/human-infra-domain-source-card-promotion-queue.json) | 把 81 个完成字段行派生为 fresh review、Source Card、变量卡、endpoint 卡、uncertainty 卡、transfer-boundary 卡和 downgrade check 晋升任务；仍禁止模型准入 |

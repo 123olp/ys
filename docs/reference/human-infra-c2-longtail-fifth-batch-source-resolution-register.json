@@ -1,0 +1,524 @@
+{
+  "schemaVersion": "human-infra.c2-longtail-fifth-batch-source-resolution-register.v1",
+  "registerId": "human-infra-c2-longtail-fifth-batch-source-resolution-register-2026-07-03",
+  "status": "active-c2ltb5-source-resolution-register-independent-fresh-review-required",
+  "purpose": "Resolve the eight C2-LT-B5 local-review issue rows into no-open-fulltext/manual-fulltext and duplicate cross-domain source-lineage candidates without changing reviewed artifact or model admission status.",
+  "sourceOfTruth": {
+    "sourceExtractionQueue": "docs/reference/human-infra-c2-longtail-fifth-batch-source-extraction-queue.json",
+    "sourceExtractionRegister": "docs/reference/human-infra-c2-longtail-fifth-batch-source-extraction-register.json",
+    "localReviewRegister": "docs/reference/human-infra-c2-longtail-fifth-batch-local-review-register.json",
+    "evidencePolicy": "docs/reference/evidence-policy.md",
+    "maturityGapRegister": "docs/reference/human-infra-maturity-gap-register.json"
+  },
+  "scope": {
+    "batchId": "C2-LT-B5",
+    "resolutionLevel": "c2ltb5-local-review-issue-row-source-resolution-v0.1",
+    "totalLocalReviewRowCount": 24,
+    "issueRowCount": 8,
+    "noOpenFulltextIssueCount": 6,
+    "duplicateCrossDomainIssueCount": 4,
+    "resolutionCandidateCount": 14,
+    "nonClaims": [
+      "This register does not change any source into reviewed evidence.",
+      "This register does not create reviewed artifacts, Source Cards, variable cards, endpoint cards, uncertainty cards, transfer-boundary cards or downgrade rows.",
+      "This register does not authorize model admission, individual advice, individual death-date output, clinical validity claims or intervention ranking.",
+      "This register only prepares source-route candidates that must pass manual/fulltext extraction and independent fresh review before bounded artifact use."
+    ]
+  },
+  "verificationSources": [
+    {
+      "verificationId": "C2LTB5-SR-VERIFY-NCBI-PUBMED-20260703",
+      "title": "NCBI PubMed metadata check for C2-LT-B5 issue PMIDs",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id=42334294,42096823,41911323,42250782,42107721,42264186&retmode=json",
+      "sourceType": "official-ncbi-metadata-api",
+      "useBoundary": "Use only for source identity, DOI, PMCID, abstract-availability and bibliographic lineage; not for extracting effect claims, clinical recommendations or model variables."
+    },
+    {
+      "verificationId": "C2LTB5-SR-VERIFY-EUROPEPMC-ROUTE-20260703",
+      "title": "Europe PMC route check for C2-LT-B5 issue PMIDs",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:42334294%20OR%20EXT_ID:42096823%20OR%20EXT_ID:41911323%20OR%20EXT_ID:42250782%20OR%20EXT_ID:42107721%20OR%20EXT_ID:42264186&format=json&pageSize=20",
+      "sourceType": "europepmc-metadata-route-check",
+      "useBoundary": "Use only for PMID, DOI, PMCID, open-access and route metadata; exact source text still requires manual/fulltext extraction and independent fresh review."
+    },
+    {
+      "verificationId": "C2LTB5-SR-VERIFY-PMC-SENESCENCE-FULLTEXT-20260703",
+      "title": "PMC fulltext route check for Intercompartmental communication in senescence",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13145362/",
+      "sourceType": "pmc-open-fulltext-route-check",
+      "useBoundary": "Use only to preserve the open fulltext route and duplicate lineage between EXT-010 and EXT-013 before independent fresh review."
+    }
+  ],
+  "blockedUses": [
+    "calibrated-prediction",
+    "individual-advice",
+    "individual-death-date-output",
+    "intervention-ranking",
+    "clinical-validity-claim",
+    "domain-claim-upgrade"
+  ],
+  "resolutionRows": [
+    {
+      "resolutionId": "C2LTB5-SRR-001",
+      "taskId": "C2LTB5-EXT-001",
+      "domainId": "telomere-maintenance",
+      "localDomainPath": "domains/c2-source-maintenance/telomere-maintenance",
+      "sourceRefId": "C2LTB5-SRC-01-1",
+      "originalRegisteredTitle": "Disorders of Telomere Length.",
+      "originalRegisteredUrl": "https://europepmc.org/article/MED/42334294",
+      "localReviewIssueType": "no-open-fulltext-manual-review-needed",
+      "currentSourceCheck": {
+        "observedTitle": "PMID 42334294 resolves to NEJM Evidence review Disorders of Telomere Length with DOI 10.1056/EVIDra2600012; PubMed and Europe PMC expose abstract metadata but no PMCID/open-access fulltext route.",
+        "verificationEvidence": "C2LTB5-SR-VERIFY-NCBI-PUBMED-20260703",
+        "result": "valid-bibliographic-review-route-no-open-fulltext-manual-review-required"
+      },
+      "sourceResolutionDecision": "preserve-nejm-evidence-telomere-disorder-review-route-and-require-manual-fulltext-before-artifact-fill",
+      "sourceResolutionStatus": "candidate-resolution-prepared-not-fresh-reviewed",
+      "sourceResolutionCandidates": [
+        {
+          "candidateId": "C2LTB5-SRR-001-CAND-01",
+          "candidateRole": "pubmed-bibliographic-route",
+          "title": "Disorders of Telomere Length.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42334294/",
+          "sourceType": "bibliographic-or-doi-route",
+          "sourceIdentityStatus": "no-pmcid-europepmc-openaccess-N",
+          "verificationEvidence": "C2LTB5-SR-VERIFY-NCBI-PUBMED-20260703",
+          "resolutionFinding": "Candidate route prepared from NCBI PubMed, Europe PMC and local source-context review metadata; it is not independently fresh reviewed.",
+          "useBoundary": "Use only for source-route resolution, manual/fulltext extraction planning and independent fresh review; no artifact fill, individual advice, calibrated risk, intervention ranking or model admission."
+        },
+        {
+          "candidateId": "C2LTB5-SRR-001-CAND-02",
+          "candidateRole": "publisher-doi-route",
+          "title": "Disorders of Telomere Length.",
+          "url": "https://doi.org/10.1056/EVIDra2600012",
+          "sourceType": "bibliographic-or-doi-route",
+          "sourceIdentityStatus": "no-pmcid-europepmc-openaccess-N",
+          "verificationEvidence": "C2LTB5-SR-VERIFY-NCBI-PUBMED-20260703",
+          "resolutionFinding": "DOI/publisher route exists for manual fulltext access; no open PMC route was found in this pass.",
+          "useBoundary": "Use only for source-route resolution, manual/fulltext extraction planning and independent fresh review; no artifact fill, individual advice, calibrated risk, intervention ranking or model admission."
+        }
+      ],
+      "requiredFreshReviewActions": [
+        "Manually access the NEJM Evidence review or authorized fulltext route and record exact source text for short/ultra-long telomere disorder boundaries.",
+        "Separate clinical telomere-length disorder phenotype framing from population-wide longevity, telomerase activation or anti-aging intervention claims.",
+        "Re-extract endpoint, population/setting, uncertainty, transfer boundary, downgrade triggers and model position from fulltext.",
+        "Run independent fresh review before any bounded artifact can be created.",
+        "Keep model admission and all prohibited individual uses blocked."
+      ],
+      "artifactPromotionDecision": "blocked-pending-resolution-fresh-review",
+      "modelAdmissionDecision": "blocked-pending-source-resolution-independent-fresh-review-and-reviewed-artifact-gates",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ]
+    },
+    {
+      "resolutionId": "C2LTB5-SRR-002",
+      "taskId": "C2LTB5-EXT-008",
+      "domainId": "endoplasmic-reticulum-stress-upr-proteostasis-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/endoplasmic-reticulum-stress-upr-proteostasis-continuity",
+      "sourceRefId": "C2LTB5-SRC-04-2",
+      "originalRegisteredTitle": "Homeostatic responses to diverse cellular stresses by the ER-Golgi trafficking pathways.",
+      "originalRegisteredUrl": "https://europepmc.org/article/MED/42096823",
+      "localReviewIssueType": "no-open-fulltext-shared-source-primary-route",
+      "currentSourceCheck": {
+        "observedTitle": "PMID 42096823 resolves to Current Opinion in Cell Biology review Homeostatic responses to diverse cellular stresses by the ER-Golgi trafficking pathways with DOI 10.1016/j.ceb.2026.102646; Europe PMC reports no PMCID/open-access route.",
+        "verificationEvidence": "C2LTB5-SR-VERIFY-NCBI-PUBMED-20260703",
+        "result": "valid-primary-shared-source-route-no-open-fulltext-manual-review-required"
+      },
+      "sourceResolutionDecision": "preserve-er-golgi-trafficking-review-primary-shared-route-and-require-manual-fulltext-before-artifact-fill",
+      "sourceResolutionStatus": "candidate-resolution-prepared-not-fresh-reviewed",
+      "sourceResolutionCandidates": [
+        {
+          "candidateId": "C2LTB5-SRR-008-CAND-01",
+          "candidateRole": "pubmed-primary-shared-route",
+          "title": "Homeostatic responses to diverse cellular stresses by the ER-Golgi trafficking pathways.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42096823/",
+          "sourceType": "bibliographic-or-doi-route",
+          "sourceIdentityStatus": "no-pmcid-europepmc-openaccess-N",
+          "verificationEvidence": "C2LTB5-SR-VERIFY-NCBI-PUBMED-20260703",
+          "resolutionFinding": "Candidate route prepared from NCBI PubMed, Europe PMC and local source-context review metadata; it is not independently fresh reviewed.",
+          "useBoundary": "Use only for source-route resolution, manual/fulltext extraction planning and independent fresh review; no artifact fill, individual advice, calibrated risk, intervention ranking or model admission."
+        },
+        {
+          "candidateId": "C2LTB5-SRR-008-CAND-02",
+          "candidateRole": "publisher-doi-route",
+          "title": "Homeostatic responses to diverse cellular stresses by the ER-Golgi trafficking pathways.",
+          "url": "https://doi.org/10.1016/j.ceb.2026.102646",
+          "sourceType": "bibliographic-or-doi-route",
+          "sourceIdentityStatus": "no-pmcid-europepmc-openaccess-N",
+          "verificationEvidence": "C2LTB5-SR-VERIFY-NCBI-PUBMED-20260703",
+          "resolutionFinding": "DOI/publisher route exists for manual fulltext access; no open PMC route was found in this pass.",
+          "useBoundary": "Use only for source-route resolution, manual/fulltext extraction planning and independent fresh review; no artifact fill, individual advice, calibrated risk, intervention ranking or model admission."
+        }
+      ],
+      "requiredFreshReviewActions": [
+        "Manually access the Current Opinion in Cell Biology review or DOI route and record exact ER-Golgi stress-trafficking source text.",
+        "Preserve EXT-008 as the primary source route for the shared ER-Golgi trafficking source before evidence counting.",
+        "Separate ER stress/UPR framing from Golgi-domain companion vocabulary and do not count EXT-009 as independent evidence.",
+        "Run independent fresh review before bounded artifact creation.",
+        "Keep model admission and prohibited individual uses blocked."
+      ],
+      "artifactPromotionDecision": "blocked-pending-resolution-fresh-review",
+      "modelAdmissionDecision": "blocked-pending-source-resolution-independent-fresh-review-and-reviewed-artifact-gates",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ]
+    },
+    {
+      "resolutionId": "C2LTB5-SRR-003",
+      "taskId": "C2LTB5-EXT-009",
+      "domainId": "golgi-secretory-trafficking-organelle-homeostasis-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/golgi-secretory-trafficking-organelle-homeostasis-continuity",
+      "sourceRefId": "C2LTB5-SRC-05-1",
+      "originalRegisteredTitle": "Homeostatic responses to diverse cellular stresses by the ER-Golgi trafficking pathways.",
+      "originalRegisteredUrl": "https://europepmc.org/article/MED/42096823",
+      "localReviewIssueType": "duplicate-cross-domain-source-and-no-open-fulltext",
+      "currentSourceCheck": {
+        "observedTitle": "EXT-009 points to the same PMID 42096823 and DOI 10.1016/j.ceb.2026.102646 as EXT-008; it is a Golgi-domain companion route, not a second independent source.",
+        "verificationEvidence": "C2LTB5-SR-VERIFY-EUROPEPMC-ROUTE-20260703",
+        "result": "valid-duplicate-companion-route-not-independent-evidence"
+      },
+      "sourceResolutionDecision": "collapse-or-route-normalize-er-golgi-duplicate-companion-before-evidence-counting",
+      "sourceResolutionStatus": "candidate-resolution-prepared-not-fresh-reviewed",
+      "sourceResolutionCandidates": [
+        {
+          "candidateId": "C2LTB5-SRR-009-CAND-01",
+          "candidateRole": "duplicate-companion-source-route",
+          "title": "Homeostatic responses to diverse cellular stresses by the ER-Golgi trafficking pathways.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42096823/",
+          "sourceType": "duplicate-cross-domain-source-route",
+          "sourceIdentityStatus": "no-pmcid-europepmc-openaccess-N-duplicate-route-not-independent-evidence",
+          "verificationEvidence": "C2LTB5-SR-VERIFY-EUROPEPMC-ROUTE-20260703",
+          "resolutionFinding": "Candidate records a duplicate cross-domain source lineage; it can preserve domain vocabulary but must not be counted as independent evidence.",
+          "useBoundary": "Use only for source-route resolution, manual/fulltext extraction planning and independent fresh review; no artifact fill, individual advice, calibrated risk, intervention ranking or model admission."
+        }
+      ],
+      "requiredFreshReviewActions": [
+        "Link EXT-009 to EXT-008 as the same ER-Golgi trafficking source lineage.",
+        "Choose one evidence-counting anchor or explicitly mark EXT-009 as duplicate companion vocabulary route.",
+        "If retained for Golgi vocabulary, re-extract only bounded domain-specific transfer boundaries after manual fulltext review.",
+        "Run independent fresh review before bounded artifact creation.",
+        "Keep model admission and prohibited individual uses blocked."
+      ],
+      "artifactPromotionDecision": "blocked-pending-resolution-fresh-review",
+      "modelAdmissionDecision": "blocked-pending-source-resolution-independent-fresh-review-and-reviewed-artifact-gates",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ]
+    },
+    {
+      "resolutionId": "C2LTB5-SRR-004",
+      "taskId": "C2LTB5-EXT-010",
+      "domainId": "golgi-secretory-trafficking-organelle-homeostasis-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/golgi-secretory-trafficking-organelle-homeostasis-continuity",
+      "sourceRefId": "C2LTB5-SRC-05-2",
+      "originalRegisteredTitle": "Intercompartmental communication in senescence.",
+      "originalRegisteredUrl": "https://europepmc.org/article/MED/41911323",
+      "localReviewIssueType": "duplicate-cross-domain-source-primary-route",
+      "currentSourceCheck": {
+        "observedTitle": "PMID 41911323 resolves to FEBS Open Bio review Intercompartmental communication in senescence with PMCID PMC13145362 and DOI 10.1002/2211-5463.70236; PMC fulltext route is available.",
+        "verificationEvidence": "C2LTB5-SR-VERIFY-PMC-SENESCENCE-FULLTEXT-20260703",
+        "result": "valid-open-fulltext-primary-route-but-duplicate-cross-domain-lineage"
+      },
+      "sourceResolutionDecision": "preserve-senescence-intercompartmental-communication-primary-pmc-route-and-link-secondary-route-before-evidence-counting",
+      "sourceResolutionStatus": "candidate-resolution-prepared-not-fresh-reviewed",
+      "sourceResolutionCandidates": [
+        {
+          "candidateId": "C2LTB5-SRR-010-CAND-01",
+          "candidateRole": "pubmed-pmc-primary-route",
+          "title": "Intercompartmental communication in senescence.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41911323/",
+          "sourceType": "pmc-open-fulltext-route",
+          "sourceIdentityStatus": "pmcid-PMC13145362-europepmc-openaccess-Y",
+          "verificationEvidence": "C2LTB5-SR-VERIFY-PMC-SENESCENCE-FULLTEXT-20260703",
+          "resolutionFinding": "PMC fulltext route exists and can support later bounded extraction only after independent fresh review.",
+          "useBoundary": "Use only for source-route resolution, manual/fulltext extraction planning and independent fresh review; no artifact fill, individual advice, calibrated risk, intervention ranking or model admission."
+        },
+        {
+          "candidateId": "C2LTB5-SRR-010-CAND-02",
+          "candidateRole": "pmc-open-fulltext-primary-route",
+          "title": "Intercompartmental communication in senescence.",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13145362/",
+          "sourceType": "pmc-open-fulltext-route",
+          "sourceIdentityStatus": "pmcid-PMC13145362-europepmc-openaccess-Y",
+          "verificationEvidence": "C2LTB5-SR-VERIFY-PMC-SENESCENCE-FULLTEXT-20260703",
+          "resolutionFinding": "PMC fulltext route exists and can support later bounded extraction only after independent fresh review.",
+          "useBoundary": "Use only for source-route resolution, manual/fulltext extraction planning and independent fresh review; no artifact fill, individual advice, calibrated risk, intervention ranking or model admission."
+        }
+      ],
+      "requiredFreshReviewActions": [
+        "Register EXT-010 as the primary evidence-counting route for the senescence intercompartmental-communication source.",
+        "Use PMC13145362 only after independent fresh review to extract exact Golgi/secretory/intercompartmental communication boundaries.",
+        "Link EXT-013 to EXT-010 as a secondary domain vocabulary route, not independent evidence.",
+        "Run independent fresh review before bounded artifact creation.",
+        "Keep model admission and prohibited individual uses blocked."
+      ],
+      "artifactPromotionDecision": "blocked-pending-resolution-fresh-review",
+      "modelAdmissionDecision": "blocked-pending-source-resolution-independent-fresh-review-and-reviewed-artifact-gates",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ]
+    },
+    {
+      "resolutionId": "C2LTB5-SRR-005",
+      "taskId": "C2LTB5-EXT-013",
+      "domainId": "organelle-contact-sites-intercompartmental-communication-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/organelle-contact-sites-intercompartmental-communication-continuity",
+      "sourceRefId": "C2LTB5-SRC-07-1",
+      "originalRegisteredTitle": "Intercompartmental communication in senescence.",
+      "originalRegisteredUrl": "https://europepmc.org/article/MED/41911323",
+      "localReviewIssueType": "duplicate-cross-domain-source-secondary-route",
+      "currentSourceCheck": {
+        "observedTitle": "EXT-013 reuses PMID 41911323 / PMCID PMC13145362 from EXT-010 for the organelle-contact-sites domain; it is a secondary route for domain vocabulary, not a second independent source.",
+        "verificationEvidence": "C2LTB5-SR-VERIFY-PMC-SENESCENCE-FULLTEXT-20260703",
+        "result": "valid-duplicate-secondary-route-not-independent-evidence"
+      },
+      "sourceResolutionDecision": "collapse-or-route-normalize-senescence-intercompartmental-communication-secondary-route-before-evidence-counting",
+      "sourceResolutionStatus": "candidate-resolution-prepared-not-fresh-reviewed",
+      "sourceResolutionCandidates": [
+        {
+          "candidateId": "C2LTB5-SRR-013-CAND-01",
+          "candidateRole": "duplicate-secondary-pmc-source-route",
+          "title": "Intercompartmental communication in senescence.",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13145362/",
+          "sourceType": "pmc-open-fulltext-route",
+          "sourceIdentityStatus": "pmcid-PMC13145362-europepmc-openaccess-Y-duplicate-route-not-independent-evidence",
+          "verificationEvidence": "C2LTB5-SR-VERIFY-PMC-SENESCENCE-FULLTEXT-20260703",
+          "resolutionFinding": "Candidate records a duplicate cross-domain source lineage; it can preserve domain vocabulary but must not be counted as independent evidence.",
+          "useBoundary": "Use only for source-route resolution, manual/fulltext extraction planning and independent fresh review; no artifact fill, individual advice, calibrated risk, intervention ranking or model admission."
+        }
+      ],
+      "requiredFreshReviewActions": [
+        "Link EXT-013 to EXT-010 as the same senescence intercompartmental-communication source lineage.",
+        "Retain EXT-013 only as organelle-contact vocabulary route if fresh review confirms exact contact-site statements.",
+        "Do not count EXT-010 and EXT-013 as independent evidence.",
+        "Run independent fresh review before bounded artifact creation.",
+        "Keep model admission and prohibited individual uses blocked."
+      ],
+      "artifactPromotionDecision": "blocked-pending-resolution-fresh-review",
+      "modelAdmissionDecision": "blocked-pending-source-resolution-independent-fresh-review-and-reviewed-artifact-gates",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ]
+    },
+    {
+      "resolutionId": "C2LTB5-SRR-006",
+      "taskId": "C2LTB5-EXT-018",
+      "domainId": "ferroptosis-lipid-peroxidation-membrane-resilience-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/ferroptosis-lipid-peroxidation-membrane-resilience-continuity",
+      "sourceRefId": "C2LTB5-SRC-09-2",
+      "originalRegisteredTitle": "Ferro-aging: A novel paradigm linking iron overload, lipid peroxidation and cellular senescence.",
+      "originalRegisteredUrl": "https://europepmc.org/article/MED/42250782",
+      "localReviewIssueType": "no-open-fulltext-manual-review-needed",
+      "currentSourceCheck": {
+        "observedTitle": "PMID 42250782 resolves to Free Radical Biology and Medicine review Ferro-aging with DOI 10.1016/j.freeradbiomed.2026.06.012; PubMed and Europe PMC expose abstract metadata but no PMCID/open-access fulltext route.",
+        "verificationEvidence": "C2LTB5-SR-VERIFY-NCBI-PUBMED-20260703",
+        "result": "valid-hypothesis-review-route-no-open-fulltext-manual-review-required"
+      },
+      "sourceResolutionDecision": "preserve-ferro-aging-review-route-and-require-manual-fulltext-before-artifact-fill",
+      "sourceResolutionStatus": "candidate-resolution-prepared-not-fresh-reviewed",
+      "sourceResolutionCandidates": [
+        {
+          "candidateId": "C2LTB5-SRR-018-CAND-01",
+          "candidateRole": "pubmed-bibliographic-route",
+          "title": "Ferro-aging: A novel paradigm linking iron overload, lipid peroxidation and cellular senescence.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42250782/",
+          "sourceType": "bibliographic-or-doi-route",
+          "sourceIdentityStatus": "no-pmcid-europepmc-openaccess-N",
+          "verificationEvidence": "C2LTB5-SR-VERIFY-NCBI-PUBMED-20260703",
+          "resolutionFinding": "Candidate route prepared from NCBI PubMed, Europe PMC and local source-context review metadata; it is not independently fresh reviewed.",
+          "useBoundary": "Use only for source-route resolution, manual/fulltext extraction planning and independent fresh review; no artifact fill, individual advice, calibrated risk, intervention ranking or model admission."
+        },
+        {
+          "candidateId": "C2LTB5-SRR-018-CAND-02",
+          "candidateRole": "publisher-doi-route",
+          "title": "Ferro-aging: A novel paradigm linking iron overload, lipid peroxidation and cellular senescence.",
+          "url": "https://doi.org/10.1016/j.freeradbiomed.2026.06.012",
+          "sourceType": "bibliographic-or-doi-route",
+          "sourceIdentityStatus": "no-pmcid-europepmc-openaccess-N",
+          "verificationEvidence": "C2LTB5-SR-VERIFY-NCBI-PUBMED-20260703",
+          "resolutionFinding": "DOI/publisher route exists for manual fulltext access; no open PMC route was found in this pass.",
+          "useBoundary": "Use only for source-route resolution, manual/fulltext extraction planning and independent fresh review; no artifact fill, individual advice, calibrated risk, intervention ranking or model admission."
+        }
+      ],
+      "requiredFreshReviewActions": [
+        "Manually access the Free Radical Biology and Medicine review or DOI route and record exact ferro-aging text.",
+        "Treat ferro-aging as hypothesis/paradigm framing until fresh review verifies claim strength and downgrade triggers.",
+        "Separate iron overload, lipid peroxidation, senescence and ferroptosis variables from settled causal or intervention claims.",
+        "Run independent fresh review before bounded artifact creation.",
+        "Keep model admission and prohibited individual uses blocked."
+      ],
+      "artifactPromotionDecision": "blocked-pending-resolution-fresh-review",
+      "modelAdmissionDecision": "blocked-pending-source-resolution-independent-fresh-review-and-reviewed-artifact-gates",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ]
+    },
+    {
+      "resolutionId": "C2LTB5-SRR-007",
+      "taskId": "C2LTB5-EXT-019",
+      "domainId": "nuclear-gateway-nucleocytoplasmic-transport-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/nuclear-gateway-nucleocytoplasmic-transport-continuity",
+      "sourceRefId": "C2LTB5-SRC-10-1",
+      "originalRegisteredTitle": "Karyopherins in Proteostasis and Aging.",
+      "originalRegisteredUrl": "https://europepmc.org/article/MED/42107721",
+      "localReviewIssueType": "no-open-fulltext-manual-review-needed",
+      "currentSourceCheck": {
+        "observedTitle": "PMID 42107721 resolves to Ageing Research Reviews article Karyopherins in proteostasis and aging with DOI 10.1016/j.arr.2026.103161; Europe PMC reports no PMCID/open-access fulltext route.",
+        "verificationEvidence": "C2LTB5-SR-VERIFY-NCBI-PUBMED-20260703",
+        "result": "valid-review-route-no-open-fulltext-manual-review-required"
+      },
+      "sourceResolutionDecision": "preserve-karyopherin-proteostasis-aging-review-route-and-require-manual-fulltext-before-artifact-fill",
+      "sourceResolutionStatus": "candidate-resolution-prepared-not-fresh-reviewed",
+      "sourceResolutionCandidates": [
+        {
+          "candidateId": "C2LTB5-SRR-019-CAND-01",
+          "candidateRole": "pubmed-bibliographic-route",
+          "title": "Karyopherins in Proteostasis and Aging.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42107721/",
+          "sourceType": "bibliographic-or-doi-route",
+          "sourceIdentityStatus": "no-pmcid-europepmc-openaccess-N",
+          "verificationEvidence": "C2LTB5-SR-VERIFY-NCBI-PUBMED-20260703",
+          "resolutionFinding": "Candidate route prepared from NCBI PubMed, Europe PMC and local source-context review metadata; it is not independently fresh reviewed.",
+          "useBoundary": "Use only for source-route resolution, manual/fulltext extraction planning and independent fresh review; no artifact fill, individual advice, calibrated risk, intervention ranking or model admission."
+        },
+        {
+          "candidateId": "C2LTB5-SRR-019-CAND-02",
+          "candidateRole": "publisher-doi-route",
+          "title": "Karyopherins in Proteostasis and Aging.",
+          "url": "https://doi.org/10.1016/j.arr.2026.103161",
+          "sourceType": "bibliographic-or-doi-route",
+          "sourceIdentityStatus": "no-pmcid-europepmc-openaccess-N",
+          "verificationEvidence": "C2LTB5-SR-VERIFY-NCBI-PUBMED-20260703",
+          "resolutionFinding": "DOI/publisher route exists for manual fulltext access; no open PMC route was found in this pass.",
+          "useBoundary": "Use only for source-route resolution, manual/fulltext extraction planning and independent fresh review; no artifact fill, individual advice, calibrated risk, intervention ranking or model admission."
+        }
+      ],
+      "requiredFreshReviewActions": [
+        "Manually access the Ageing Research Reviews article or DOI route and record exact karyopherin/proteostasis text.",
+        "Separate nuclear transport/proteostasis vocabulary from treatment, prognosis or lifespan claims.",
+        "Re-extract endpoint, population/setting, uncertainty, transfer boundary, downgrade triggers and model position from fulltext.",
+        "Run independent fresh review before bounded artifact creation.",
+        "Keep model admission and prohibited individual uses blocked."
+      ],
+      "artifactPromotionDecision": "blocked-pending-resolution-fresh-review",
+      "modelAdmissionDecision": "blocked-pending-source-resolution-independent-fresh-review-and-reviewed-artifact-gates",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ]
+    },
+    {
+      "resolutionId": "C2LTB5-SRR-008",
+      "taskId": "C2LTB5-EXT-021",
+      "domainId": "lymphatic-glymphatic-clearance",
+      "localDomainPath": "domains/c2-source-maintenance/lymphatic-glymphatic-clearance",
+      "sourceRefId": "C2LTB5-SRC-11-1",
+      "originalRegisteredTitle": "Impaired Glymphatic Clearance as a Mechanistic Link Between Brain Aging and Neurodegenerative Disease Pathogenesis.",
+      "originalRegisteredUrl": "https://europepmc.org/article/MED/42264186",
+      "localReviewIssueType": "no-open-fulltext-manual-review-needed",
+      "currentSourceCheck": {
+        "observedTitle": "PMID 42264186 resolves to Ageing Research Reviews article Impaired Glymphatic Clearance as a Mechanistic Link Between Brain Aging and Neurodegenerative Disease Pathogenesis with DOI 10.1016/j.arr.2026.103202; Europe PMC reports no PMCID/open-access fulltext route.",
+        "verificationEvidence": "C2LTB5-SR-VERIFY-NCBI-PUBMED-20260703",
+        "result": "valid-mechanistic-review-route-no-open-fulltext-manual-review-required"
+      },
+      "sourceResolutionDecision": "preserve-glymphatic-aging-review-route-and-require-manual-fulltext-before-artifact-fill",
+      "sourceResolutionStatus": "candidate-resolution-prepared-not-fresh-reviewed",
+      "sourceResolutionCandidates": [
+        {
+          "candidateId": "C2LTB5-SRR-021-CAND-01",
+          "candidateRole": "pubmed-bibliographic-route",
+          "title": "Impaired Glymphatic Clearance as a Mechanistic Link Between Brain Aging and Neurodegenerative Disease Pathogenesis.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42264186/",
+          "sourceType": "bibliographic-or-doi-route",
+          "sourceIdentityStatus": "no-pmcid-europepmc-openaccess-N",
+          "verificationEvidence": "C2LTB5-SR-VERIFY-NCBI-PUBMED-20260703",
+          "resolutionFinding": "Candidate route prepared from NCBI PubMed, Europe PMC and local source-context review metadata; it is not independently fresh reviewed.",
+          "useBoundary": "Use only for source-route resolution, manual/fulltext extraction planning and independent fresh review; no artifact fill, individual advice, calibrated risk, intervention ranking or model admission."
+        },
+        {
+          "candidateId": "C2LTB5-SRR-021-CAND-02",
+          "candidateRole": "publisher-doi-route",
+          "title": "Impaired Glymphatic Clearance as a Mechanistic Link Between Brain Aging and Neurodegenerative Disease Pathogenesis.",
+          "url": "https://doi.org/10.1016/j.arr.2026.103202",
+          "sourceType": "bibliographic-or-doi-route",
+          "sourceIdentityStatus": "no-pmcid-europepmc-openaccess-N",
+          "verificationEvidence": "C2LTB5-SR-VERIFY-NCBI-PUBMED-20260703",
+          "resolutionFinding": "DOI/publisher route exists for manual fulltext access; no open PMC route was found in this pass.",
+          "useBoundary": "Use only for source-route resolution, manual/fulltext extraction planning and independent fresh review; no artifact fill, individual advice, calibrated risk, intervention ranking or model admission."
+        }
+      ],
+      "requiredFreshReviewActions": [
+        "Manually access the Ageing Research Reviews article or DOI route and record exact glymphatic-clearance source text.",
+        "Separate glymphatic mechanistic hypotheses from individual dementia prognosis, sleep intervention ranking or calibrated neurodegeneration risk.",
+        "Re-extract endpoint, population/setting, uncertainty, transfer boundary, downgrade triggers and model position from fulltext.",
+        "Run independent fresh review before bounded artifact creation.",
+        "Keep model admission and prohibited individual uses blocked."
+      ],
+      "artifactPromotionDecision": "blocked-pending-resolution-fresh-review",
+      "modelAdmissionDecision": "blocked-pending-source-resolution-independent-fresh-review-and-reviewed-artifact-gates",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ]
+    }
+  ],
+  "requiredNextArtifacts": [
+    "c2ltb5-manual-fulltext-extraction-register-for-no-open-fulltext-and-duplicate-lineage-routes",
+    "c2ltb5-independent-fresh-review-protocol",
+    "c2ltb5-independent-fresh-review-verdict-register",
+    "reviewed-source-card",
+    "variable-card",
+    "endpoint-card",
+    "uncertainty-card",
+    "transfer-boundary-card",
+    "downgrade-check-row"
+  ],
+  "modelAdmissionDecision": "blocked-pending-manual-fulltext-extraction-independent-fresh-review-reviewed-artifacts-and-model-gates",
+  "indexRequirements": [
+    "README.md",
+    "AGENTS.md",
+    "docs/AGENTS.md",
+    "docs/reference/README.md",
+    "docs/reference/human-infra-maturity-roadmap.md",
+    "tools/README.md",
+    "tools/AGENTS.md"
+  ]
+}
