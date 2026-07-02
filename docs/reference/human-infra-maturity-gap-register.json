@@ -132,6 +132,8 @@
         "tools/audit_human_infra_c2_longtail_first_batch_source_extraction_queue.py",
         "docs/reference/human-infra-c2-longtail-first-batch-source-extraction-register.json",
         "tools/audit_human_infra_c2_longtail_first_batch_source_extraction_register.py",
+        "docs/reference/human-infra-c2-longtail-first-batch-local-review-register.json",
+        "tools/audit_human_infra_c2_longtail_first_batch_local_review_register.py",
         "docs/reference/human-infra-domain-source-specific-extraction-queue.json",
         "docs/reference/human-infra-domain-source-specific-extraction-register.json",
         "docs/reference/human-infra-falsifier-source-card-backfill.json",
@@ -210,12 +212,14 @@
             "docs/reference/human-infra-c2-longtail-first-batch-source-extraction-queue.json",
             "tools/audit_human_infra_c2_longtail_first_batch_source_extraction_queue.py",
             "docs/reference/human-infra-c2-longtail-first-batch-source-extraction-register.json",
-            "tools/audit_human_infra_c2_longtail_first_batch_source_extraction_register.py"
+            "tools/audit_human_infra_c2_longtail_first_batch_source_extraction_register.py",
+            "docs/reference/human-infra-c2-longtail-first-batch-local-review-register.json",
+            "tools/audit_human_infra_c2_longtail_first_batch_local_review_register.py"
           ],
           "missingEvidence": [
-            "Filled Claim-Evidence rows and reviewed Source Card artifacts for the 184 C2 long-tail domains listed in human-infra-c2-longtail-coverage-register.json. The first 24 high-impact domains are queued and now derived into 48 source-specific deep-read tasks in human-infra-c2-longtail-first-batch-source-extraction-queue.json, with all 48/48 source-context fields filled in human-infra-c2-longtail-first-batch-source-extraction-register.json. Local source-context review, independent fresh review and reviewed artifacts for this C2-LT-B1 batch are not yet produced."
+            "Filled Claim-Evidence rows and reviewed Source Card artifacts for the 184 C2 long-tail domains listed in human-infra-c2-longtail-coverage-register.json. The first 24 high-impact domains are queued, derived into 48 source-specific deep-read tasks, completed as 48/48 source-context extraction rows, and locally reviewed in human-infra-c2-longtail-first-batch-local-review-register.json. Independent fresh review and reviewed artifacts for this C2-LT-B1 batch are not yet produced."
           ],
-          "nextAction": "Route all 48 C2-LT-B1 source-context extraction rows through local source-context review, independent fresh review and artifact promotion before any Source Card or model admission claim.",
+          "nextAction": "Route all 48 locally reviewed C2-LT-B1 source-context extraction rows through independent fresh review and artifact promotion before any Source Card or model admission claim.",
           "blocks100Percent": true
         },
         {
@@ -250,12 +254,14 @@
             "docs/reference/human-infra-c2-longtail-first-batch-source-extraction-queue.json",
             "tools/audit_human_infra_c2_longtail_first_batch_source_extraction_queue.py",
             "docs/reference/human-infra-c2-longtail-first-batch-source-extraction-register.json",
-            "tools/audit_human_infra_c2_longtail_first_batch_source_extraction_register.py"
+            "tools/audit_human_infra_c2_longtail_first_batch_source_extraction_register.py",
+            "docs/reference/human-infra-c2-longtail-first-batch-local-review-register.json",
+            "tools/audit_human_infra_c2_longtail_first_batch_local_review_register.py"
           ],
           "missingEvidence": [
-            "Variable, endpoint, uncertainty and transfer-boundary cards for the 184 C2 long-tail domains listed in human-infra-c2-longtail-coverage-register.json. The first 24 high-impact domains now have claim/variable seeds, 48 source-specific deep-read tasks and 48/48 pilot source-context extraction rows, but no reviewed variable or endpoint cards."
+            "Variable, endpoint, uncertainty and transfer-boundary cards for the 184 C2 long-tail domains listed in human-infra-c2-longtail-coverage-register.json. The first 24 high-impact domains now have claim/variable seeds, 48 source-specific deep-read tasks, 48/48 pilot source-context extraction rows and 48/48 local source-context review rows, but no reviewed variable or endpoint cards."
           ],
-          "nextAction": "Use the C2-LT-B1 extraction register pattern to fill the remaining exact source-context fields before promoting variable and endpoint contracts.",
+          "nextAction": "Route C2-LT-B1 local review rows through independent fresh review before promoting variable and endpoint contracts.",
           "blocks100Percent": true
         },
         {
@@ -315,12 +321,14 @@
             "docs/reference/human-infra-c2-longtail-first-batch-source-extraction-queue.json",
             "tools/audit_human_infra_c2_longtail_first_batch_source_extraction_queue.py",
             "docs/reference/human-infra-c2-longtail-first-batch-source-extraction-register.json",
-            "tools/audit_human_infra_c2_longtail_first_batch_source_extraction_register.py"
+            "tools/audit_human_infra_c2_longtail_first_batch_source_extraction_register.py",
+            "docs/reference/human-infra-c2-longtail-first-batch-local-review-register.json",
+            "tools/audit_human_infra_c2_longtail_first_batch_local_review_register.py"
           ],
           "missingEvidence": [
-            "Downgrade-check artifacts and falsifier rows for the 184 C2 long-tail domains listed in human-infra-c2-longtail-coverage-register.json. The C2-LT-B1 source extraction queue defines downgrade extraction slots and all 48/48 pilot rows now contain downgrade triggers, but reviewed downgrade-check artifacts are not yet produced."
+            "Downgrade-check artifacts and falsifier rows for the 184 C2 long-tail domains listed in human-infra-c2-longtail-coverage-register.json. The C2-LT-B1 source extraction queue defines downgrade extraction slots, all 48/48 pilot rows now contain downgrade triggers, and all 48/48 rows have local source-context review, but reviewed downgrade-check artifacts are not yet produced."
           ],
-          "nextAction": "Promote the 48 C2-LT-B1 downgrade triggers into reviewed downgrade-check and falsifier artifacts after local review and independent fresh review.",
+          "nextAction": "Promote the 48 C2-LT-B1 downgrade triggers into reviewed downgrade-check and falsifier artifacts after independent fresh review.",
           "blocks100Percent": true
         }
       ]
@@ -467,7 +475,7 @@
   "nextWorkOrder": [
     {
       "priority": 1,
-      "item": "Route the 48/48 source-specific C2-LT-B1 extraction rows from human-infra-c2-longtail-first-batch-source-extraction-register.json into local source-context review, independent fresh review and reviewed artifact promotion.",
+      "item": "Route the 48/48 locally reviewed C2-LT-B1 extraction rows from human-infra-c2-longtail-first-batch-local-review-register.json into independent fresh review and reviewed artifact promotion.",
       "unblocks": [
         "RESEARCH-G3-c1-c2-source-cards",
         "RESEARCH-G4-variable-mechanism-contracts",
