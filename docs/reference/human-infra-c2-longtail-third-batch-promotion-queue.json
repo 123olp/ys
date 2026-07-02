@@ -1,0 +1,1023 @@
+{
+  "schemaVersion": "human-infra.c2-longtail-third-batch-promotion-queue.v1",
+  "queueId": "human-infra-c2-longtail-third-batch-promotion-queue-2026-07-02",
+  "status": "active-third-batch-queue-model-blocked",
+  "purpose": "Select a third bounded set of still-uncovered C2 long-tail domains focused on neuro-sensory-cognitive continuity: brain injury, seizure stability, ICU delirium, swallowing safety, neuromuscular action, vision, hearing, balance and early language development. This queue opens governed source-specific deep reading without opening model admission.",
+  "sourceOfTruth": {
+    "c2LongtailCoverageRegister": "docs/reference/human-infra-c2-longtail-coverage-register.json",
+    "firstBatchPromotionQueue": "docs/reference/human-infra-c2-longtail-first-batch-promotion-queue.json",
+    "secondBatchPromotionQueue": "docs/reference/human-infra-c2-longtail-second-batch-promotion-queue.json",
+    "domainClassification": "domains/_possibility-space-control/classification.tsv",
+    "sourceCardSystem": "docs/reference/source-card-system.md",
+    "maturityGapRegister": "docs/reference/human-infra-maturity-gap-register.json",
+    "maturityRoadmap": "docs/reference/human-infra-maturity-roadmap.md"
+  },
+  "scope": {
+    "batchId": "C2-LT-B3",
+    "batchDomainCount": 12,
+    "selectionRule": "Prioritize still-uncovered C2 domains where neuro-sensory-cognitive continuity directly affects subject continuity: consciousness, seizure stability, swallowing/nutrition, neuromuscular action, central vision, hearing, balance, communication and early language development. This is importance/long-horizon/fundamentality oriented, not feasibility or hype oriented.",
+    "requiredArtifactClasses": [
+      "domain-claim-evidence-row",
+      "domain-source-card-field-extraction",
+      "domain-source-specific-deep-read",
+      "source-context-local-review",
+      "independent-fresh-review-verdict",
+      "reviewed-source-card",
+      "variable-card",
+      "endpoint-card",
+      "uncertainty-card",
+      "transfer-boundary-card",
+      "downgrade-check"
+    ],
+    "nonClaims": [
+      "This queue does not complete Source Cards.",
+      "This queue does not complete independent fresh review.",
+      "This queue does not upgrade any domain claim.",
+      "This queue does not admit any domain into calibrated prediction.",
+      "This queue does not provide medical, clinical, individual, or intervention-ranking advice.",
+      "This queue does not mark C2-LT-B1 corrected blocked rows or the C2-LT-B2 downgrade-before-fill row as resolved."
+    ]
+  },
+  "blockedUses": [
+    "calibrated-prediction",
+    "individual-advice",
+    "individual-death-date-output",
+    "intervention-ranking",
+    "clinical-validity-claim",
+    "domain-claim-upgrade"
+  ],
+  "batchRows": [
+    {
+      "batchId": "C2-LT-B3",
+      "priorityRank": 1,
+      "domainId": "traumatic-brain-injury-neurotrauma-recovery",
+      "triageBucket": "neuro-sensory-cognitive-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/traumatic-brain-injury-neurotrauma-recovery",
+      "selectionReason": "创伤性脑损伤直接威胁意识、认知、运动、行为调节和长期功能恢复，是主体连续性从物理损伤进入认知损伤的核心急性路径。",
+      "claimSeed": "TBI 的早期严重度评估、颅内压/灌注管理、临床路径和康复衔接会影响死亡、神经功能结局、认知恢复和长期照护负担。",
+      "variableSeed": [
+        "injury-severity",
+        "intracranial-pressure-risk",
+        "cerebral-perfusion-status",
+        "neurocognitive-outcome",
+        "rehabilitation-transition"
+      ],
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB3-SRC-01-1",
+          "title": "Guidelines for the Management of Severe Traumatic Brain Injury, Fourth Edition",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/27654000/",
+          "evidenceRole": "clinical-guideline-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-02"
+        },
+        {
+          "sourceRefId": "C2LTB3-SRC-01-2",
+          "title": "CDC Traumatic Brain Injury Clinical Guidance",
+          "url": "https://www.cdc.gov/traumatic-brain-injury/hcp/clinical-guidance/index.html",
+          "evidenceRole": "public-health-clinical-guidance-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-02"
+        }
+      ],
+      "requiredArtifactClasses": [
+        "domain-claim-evidence-row",
+        "domain-source-card-field-extraction",
+        "domain-source-specific-deep-read",
+        "source-context-local-review",
+        "independent-fresh-review-verdict",
+        "reviewed-source-card",
+        "variable-card",
+        "endpoint-card",
+        "uncertainty-card",
+        "transfer-boundary-card",
+        "downgrade-check"
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-c2-longtail-third-batch-source-card-promotion",
+      "nextAction": "Create the domain Claim-Evidence row, then perform Source Card field extraction, source-specific deep read, local source-context review and independent fresh review before any artifact promotion or model admission."
+    },
+    {
+      "batchId": "C2-LT-B3",
+      "priorityRank": 2,
+      "domainId": "epilepsy-seizure-network-stability",
+      "triageBucket": "neuro-sensory-cognitive-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/epilepsy-seizure-network-stability",
+      "selectionReason": "癫痫把神经网络稳定性、意识中断、事故风险、药物连续性和社会功能约束连接起来，是认知主体可持续行动的基础风险域。",
+      "claimSeed": "癫痫诊断、发作分类、抗发作治疗、急救计划和共病管理会影响发作控制、伤害风险、认知负荷和生活连续性。",
+      "variableSeed": [
+        "seizure-frequency",
+        "seizure-type",
+        "medication-continuity",
+        "injury-risk",
+        "cognitive-functional-burden"
+      ],
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB3-SRC-02-1",
+          "title": "NICE NG217 Epilepsies in children, young people and adults",
+          "url": "https://www.nice.org.uk/guidance/ng217",
+          "evidenceRole": "clinical-guideline-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-02"
+        },
+        {
+          "sourceRefId": "C2LTB3-SRC-02-2",
+          "title": "WHO Epilepsy fact sheet",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/epilepsy",
+          "evidenceRole": "public-health-burden-context-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-02"
+        }
+      ],
+      "requiredArtifactClasses": [
+        "domain-claim-evidence-row",
+        "domain-source-card-field-extraction",
+        "domain-source-specific-deep-read",
+        "source-context-local-review",
+        "independent-fresh-review-verdict",
+        "reviewed-source-card",
+        "variable-card",
+        "endpoint-card",
+        "uncertainty-card",
+        "transfer-boundary-card",
+        "downgrade-check"
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-c2-longtail-third-batch-source-card-promotion",
+      "nextAction": "Create the domain Claim-Evidence row, then perform Source Card field extraction, source-specific deep read, local source-context review and independent fresh review before any artifact promotion or model admission."
+    },
+    {
+      "batchId": "C2-LT-B3",
+      "priorityRank": 3,
+      "domainId": "intensive-care-organ-support-delirium-continuity",
+      "triageBucket": "neuro-sensory-cognitive-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/intensive-care-organ-support-delirium-continuity",
+      "selectionReason": "ICU 谵妄连接器官支持、镇静、睡眠、疼痛、认知失败和长期 ICU 后综合征，是急性救治中主体意识连续性最脆弱的节点之一。",
+      "claimSeed": "ICU 成人的疼痛、镇静、谵妄、活动和睡眠管理会影响谵妄发生、机械通气时间、功能恢复和长期认知结局。",
+      "variableSeed": [
+        "delirium-status",
+        "sedation-depth",
+        "mechanical-ventilation-duration",
+        "sleep-disruption",
+        "post-icu-cognitive-function"
+      ],
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB3-SRC-03-1",
+          "title": "PADIS Clinical Practice Guidelines for adult ICU patients",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30113379/",
+          "evidenceRole": "clinical-guideline-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-02"
+        },
+        {
+          "sourceRefId": "C2LTB3-SRC-03-2",
+          "title": "NICE CG103 Delirium: prevention, diagnosis and management",
+          "url": "https://www.nice.org.uk/guidance/cg103",
+          "evidenceRole": "clinical-guideline-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-02"
+        }
+      ],
+      "requiredArtifactClasses": [
+        "domain-claim-evidence-row",
+        "domain-source-card-field-extraction",
+        "domain-source-specific-deep-read",
+        "source-context-local-review",
+        "independent-fresh-review-verdict",
+        "reviewed-source-card",
+        "variable-card",
+        "endpoint-card",
+        "uncertainty-card",
+        "transfer-boundary-card",
+        "downgrade-check"
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-c2-longtail-third-batch-source-card-promotion",
+      "nextAction": "Create the domain Claim-Evidence row, then perform Source Card field extraction, source-specific deep read, local source-context review and independent fresh review before any artifact promotion or model admission."
+    },
+    {
+      "batchId": "C2-LT-B3",
+      "priorityRank": 4,
+      "domainId": "post-stroke-dysphagia-screening-recovery-continuity",
+      "triageBucket": "neuro-sensory-cognitive-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/post-stroke-dysphagia-screening-recovery-continuity",
+      "selectionReason": "卒中后吞咽障碍把脑损伤、误吸肺炎、营养不足、康复速度和照护负担相连，是神经恢复路径中的高风险可筛查节点。",
+      "claimSeed": "卒中后吞咽筛查、评估、营养路径和吞咽康复会影响误吸、肺炎、营养状态、住院结局和功能恢复。",
+      "variableSeed": [
+        "swallow-screening-status",
+        "aspiration-risk",
+        "pneumonia-risk",
+        "nutrition-route",
+        "functional-recovery"
+      ],
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB3-SRC-04-1",
+          "title": "ESO and ESSD guideline for diagnosis and treatment of post-stroke dysphagia",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28390560/",
+          "evidenceRole": "clinical-guideline-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-02"
+        },
+        {
+          "sourceRefId": "C2LTB3-SRC-04-2",
+          "title": "NICE NG236 Stroke rehabilitation in adults",
+          "url": "https://www.nice.org.uk/guidance/ng236",
+          "evidenceRole": "rehabilitation-guideline-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-02"
+        }
+      ],
+      "requiredArtifactClasses": [
+        "domain-claim-evidence-row",
+        "domain-source-card-field-extraction",
+        "domain-source-specific-deep-read",
+        "source-context-local-review",
+        "independent-fresh-review-verdict",
+        "reviewed-source-card",
+        "variable-card",
+        "endpoint-card",
+        "uncertainty-card",
+        "transfer-boundary-card",
+        "downgrade-check"
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-c2-longtail-third-batch-source-card-promotion",
+      "nextAction": "Create the domain Claim-Evidence row, then perform Source Card field extraction, source-specific deep read, local source-context review and independent fresh review before any artifact promotion or model admission."
+    },
+    {
+      "batchId": "C2-LT-B3",
+      "priorityRank": 5,
+      "domainId": "myasthenia-gravis-neuromuscular-junction-continuity",
+      "triageBucket": "neuro-sensory-cognitive-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/myasthenia-gravis-neuromuscular-junction-continuity",
+      "selectionReason": "重症肌无力直接影响神经肌肉传递、吞咽、呼吸和波动性行动能力，危象时会转化为生命支持问题。",
+      "claimSeed": "MG 的诊断、免疫治疗、危象识别、胸腺治疗和长期管理会影响肌无力负担、呼吸风险、吞咽安全和行动连续性。",
+      "variableSeed": [
+        "muscle-weakness-severity",
+        "bulbar-symptom-burden",
+        "respiratory-crisis-risk",
+        "immunotherapy-status",
+        "functional-fluctuation"
+      ],
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB3-SRC-05-1",
+          "title": "International Consensus Guidance for Management of Myasthenia Gravis: 2020 Update",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33144515/",
+          "evidenceRole": "clinical-consensus-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-02"
+        },
+        {
+          "sourceRefId": "C2LTB3-SRC-05-2",
+          "title": "International consensus guidance for management of myasthenia gravis: Executive summary",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26494222/",
+          "evidenceRole": "clinical-consensus-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-02"
+        }
+      ],
+      "requiredArtifactClasses": [
+        "domain-claim-evidence-row",
+        "domain-source-card-field-extraction",
+        "domain-source-specific-deep-read",
+        "source-context-local-review",
+        "independent-fresh-review-verdict",
+        "reviewed-source-card",
+        "variable-card",
+        "endpoint-card",
+        "uncertainty-card",
+        "transfer-boundary-card",
+        "downgrade-check"
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-c2-longtail-third-batch-source-card-promotion",
+      "nextAction": "Create the domain Claim-Evidence row, then perform Source Card field extraction, source-specific deep read, local source-context review and independent fresh review before any artifact promotion or model admission."
+    },
+    {
+      "batchId": "C2-LT-B3",
+      "priorityRank": 6,
+      "domainId": "spinal-muscular-atrophy-motor-neuron-continuity",
+      "triageBucket": "neuro-sensory-cognitive-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/spinal-muscular-atrophy-motor-neuron-continuity",
+      "selectionReason": "SMA 把运动神经元损失、呼吸、营养、骨骼、遗传治疗窗口和长期运动能力连接起来，是从分子治疗到主体行动能力的关键桥梁。",
+      "claimSeed": "SMA 的诊断、遗传治疗/疾病修饰治疗、呼吸管理、营养管理和康复支持会影响运动里程碑、呼吸风险和长期功能。",
+      "variableSeed": [
+        "motor-function-score",
+        "respiratory-support-need",
+        "feeding-nutrition-status",
+        "disease-modifying-therapy-access",
+        "developmental-milestone"
+      ],
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB3-SRC-06-1",
+          "title": "Diagnosis and management of spinal muscular atrophy: Part 1",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29305137/",
+          "evidenceRole": "clinical-consensus-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-02"
+        },
+        {
+          "sourceRefId": "C2LTB3-SRC-06-2",
+          "title": "Diagnosis and management of spinal muscular atrophy: Part 2",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29305138/",
+          "evidenceRole": "clinical-consensus-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-02"
+        }
+      ],
+      "requiredArtifactClasses": [
+        "domain-claim-evidence-row",
+        "domain-source-card-field-extraction",
+        "domain-source-specific-deep-read",
+        "source-context-local-review",
+        "independent-fresh-review-verdict",
+        "reviewed-source-card",
+        "variable-card",
+        "endpoint-card",
+        "uncertainty-card",
+        "transfer-boundary-card",
+        "downgrade-check"
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-c2-longtail-third-batch-source-card-promotion",
+      "nextAction": "Create the domain Claim-Evidence row, then perform Source Card field extraction, source-specific deep read, local source-context review and independent fresh review before any artifact promotion or model admission."
+    },
+    {
+      "batchId": "C2-LT-B3",
+      "priorityRank": 7,
+      "domainId": "age-related-macular-degeneration-central-vision-continuity",
+      "triageBucket": "neuro-sensory-cognitive-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/age-related-macular-degeneration-central-vision-continuity",
+      "selectionReason": "AMD 损害中央视觉，直接影响阅读、导航、药物管理、数字工具使用和独立生活，是感知资源衰退的核心慢性路径。",
+      "claimSeed": "AMD 的早期识别、湿性/干性分型、抗 VEGF 治疗、低视力支持和随访会影响中央视觉保存、功能独立性和照护需求。",
+      "variableSeed": [
+        "central-visual-acuity",
+        "amd-subtype",
+        "anti-vegf-treatment-status",
+        "low-vision-support",
+        "functional-independence"
+      ],
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB3-SRC-07-1",
+          "title": "NICE NG82 Age-related macular degeneration",
+          "url": "https://www.nice.org.uk/guidance/ng82",
+          "evidenceRole": "clinical-guideline-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-02"
+        },
+        {
+          "sourceRefId": "C2LTB3-SRC-07-2",
+          "title": "National Eye Institute Age-Related Macular Degeneration",
+          "url": "https://www.nei.nih.gov/learn-about-eye-health/eye-conditions-and-diseases/age-related-macular-degeneration",
+          "evidenceRole": "public-health-condition-context-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-02"
+        }
+      ],
+      "requiredArtifactClasses": [
+        "domain-claim-evidence-row",
+        "domain-source-card-field-extraction",
+        "domain-source-specific-deep-read",
+        "source-context-local-review",
+        "independent-fresh-review-verdict",
+        "reviewed-source-card",
+        "variable-card",
+        "endpoint-card",
+        "uncertainty-card",
+        "transfer-boundary-card",
+        "downgrade-check"
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-c2-longtail-third-batch-source-card-promotion",
+      "nextAction": "Create the domain Claim-Evidence row, then perform Source Card field extraction, source-specific deep read, local source-context review and independent fresh review before any artifact promotion or model admission."
+    },
+    {
+      "batchId": "C2-LT-B3",
+      "priorityRank": 8,
+      "domainId": "cataract-vision-restoration-continuity",
+      "triageBucket": "neuro-sensory-cognitive-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/cataract-vision-restoration-continuity",
+      "selectionReason": "白内障是可治疗的视觉损失主因之一，影响跌倒、阅读、驾驶、工作和自主生活，是恢复感知资源的高价值路径。",
+      "claimSeed": "白内障评估、手术适应证、围手术风险和术后视觉恢复会影响视觉功能、跌倒风险、生活质量和行动独立性。",
+      "variableSeed": [
+        "visual-acuity",
+        "surgical-eligibility",
+        "functional-vision-limitation",
+        "fall-risk",
+        "postoperative-visual-outcome"
+      ],
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB3-SRC-08-1",
+          "title": "NICE NG77 Cataracts in adults: management",
+          "url": "https://www.nice.org.uk/guidance/ng77",
+          "evidenceRole": "clinical-guideline-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-02"
+        },
+        {
+          "sourceRefId": "C2LTB3-SRC-08-2",
+          "title": "National Eye Institute Cataracts",
+          "url": "https://www.nei.nih.gov/learn-about-eye-health/eye-conditions-and-diseases/cataracts",
+          "evidenceRole": "public-health-condition-context-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-02"
+        }
+      ],
+      "requiredArtifactClasses": [
+        "domain-claim-evidence-row",
+        "domain-source-card-field-extraction",
+        "domain-source-specific-deep-read",
+        "source-context-local-review",
+        "independent-fresh-review-verdict",
+        "reviewed-source-card",
+        "variable-card",
+        "endpoint-card",
+        "uncertainty-card",
+        "transfer-boundary-card",
+        "downgrade-check"
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-c2-longtail-third-batch-source-card-promotion",
+      "nextAction": "Create the domain Claim-Evidence row, then perform Source Card field extraction, source-specific deep read, local source-context review and independent fresh review before any artifact promotion or model admission."
+    },
+    {
+      "batchId": "C2-LT-B3",
+      "priorityRank": 9,
+      "domainId": "age-related-hearing-loss-hearing-aid-continuity",
+      "triageBucket": "neuro-sensory-cognitive-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/age-related-hearing-loss-hearing-aid-continuity",
+      "selectionReason": "年龄相关听力损失会增加沟通成本、社会隔离、认知负荷、医疗沟通失败和安全提示丢失，是注意力与协作资源的感知底座问题。",
+      "claimSeed": "成人听力评估、助听器/听觉辅助、沟通支持和服务可及性会影响沟通连续性、社会参与、认知负荷和安全响应。",
+      "variableSeed": [
+        "hearing-threshold",
+        "speech-in-noise-difficulty",
+        "hearing-aid-access",
+        "communication-participation",
+        "listening-effort"
+      ],
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB3-SRC-09-1",
+          "title": "NICE NG98 Hearing loss in adults: assessment and management",
+          "url": "https://www.nice.org.uk/guidance/ng98",
+          "evidenceRole": "clinical-guideline-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-02"
+        },
+        {
+          "sourceRefId": "C2LTB3-SRC-09-2",
+          "title": "WHO Deafness and hearing loss fact sheet",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/deafness-and-hearing-loss",
+          "evidenceRole": "public-health-burden-context-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-02"
+        }
+      ],
+      "requiredArtifactClasses": [
+        "domain-claim-evidence-row",
+        "domain-source-card-field-extraction",
+        "domain-source-specific-deep-read",
+        "source-context-local-review",
+        "independent-fresh-review-verdict",
+        "reviewed-source-card",
+        "variable-card",
+        "endpoint-card",
+        "uncertainty-card",
+        "transfer-boundary-card",
+        "downgrade-check"
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-c2-longtail-third-batch-source-card-promotion",
+      "nextAction": "Create the domain Claim-Evidence row, then perform Source Card field extraction, source-specific deep read, local source-context review and independent fresh review before any artifact promotion or model admission."
+    },
+    {
+      "batchId": "C2-LT-B3",
+      "priorityRank": 10,
+      "domainId": "sudden-hearing-loss-urgent-referral-continuity",
+      "triageBucket": "neuro-sensory-cognitive-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/sudden-hearing-loss-urgent-referral-continuity",
+      "selectionReason": "突发性听力下降有明确时间窗口和急诊转诊意义，影响沟通、空间警觉和心理安全，是感知功能急性失效路径。",
+      "claimSeed": "突发性听力下降的及时识别、鉴别诊断、听力评估、治疗窗口和随访会影响听力恢复概率和长期沟通功能。",
+      "variableSeed": [
+        "time-to-audiometry",
+        "hearing-loss-severity",
+        "steroid-treatment-window",
+        "vestibular-symptoms",
+        "hearing-recovery-outcome"
+      ],
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB3-SRC-10-1",
+          "title": "Clinical Practice Guideline: Sudden Hearing Loss (Update)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31369359/",
+          "evidenceRole": "clinical-guideline-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-02"
+        },
+        {
+          "sourceRefId": "C2LTB3-SRC-10-2",
+          "title": "AAO-HNS Clinical Practice Guideline: Sudden Hearing Loss Update",
+          "url": "https://www.entnet.org/resource/clinical-practice-guideline-sudden-hearing-loss-update/",
+          "evidenceRole": "clinical-guideline-context-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-02"
+        }
+      ],
+      "requiredArtifactClasses": [
+        "domain-claim-evidence-row",
+        "domain-source-card-field-extraction",
+        "domain-source-specific-deep-read",
+        "source-context-local-review",
+        "independent-fresh-review-verdict",
+        "reviewed-source-card",
+        "variable-card",
+        "endpoint-card",
+        "uncertainty-card",
+        "transfer-boundary-card",
+        "downgrade-check"
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-c2-longtail-third-batch-source-card-promotion",
+      "nextAction": "Create the domain Claim-Evidence row, then perform Source Card field extraction, source-specific deep read, local source-context review and independent fresh review before any artifact promotion or model admission."
+    },
+    {
+      "batchId": "C2-LT-B3",
+      "priorityRank": 11,
+      "domainId": "vestibular-rehabilitation-balance-compensation-continuity",
+      "triageBucket": "neuro-sensory-cognitive-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/vestibular-rehabilitation-balance-compensation-continuity",
+      "selectionReason": "前庭功能损害会影响平衡、空间定向、跌倒风险、移动半径和视觉-运动稳定性，是行动自由的感知-运动接口。",
+      "claimSeed": "前庭低功能的诊断、前庭康复、凝视稳定、平衡训练和功能评估会影响跌倒风险、步态稳定、眩晕负担和移动能力。",
+      "variableSeed": [
+        "vestibular-hypofunction-status",
+        "gaze-stability",
+        "dizziness-handicap",
+        "fall-risk",
+        "mobility-confidence"
+      ],
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB3-SRC-11-1",
+          "title": "Vestibular Rehabilitation for Peripheral Vestibular Hypofunction: Updated Clinical Practice Guideline",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34864777/",
+          "evidenceRole": "clinical-guideline-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-02"
+        },
+        {
+          "sourceRefId": "C2LTB3-SRC-11-2",
+          "title": "Vestibular Rehabilitation for Peripheral Vestibular Hypofunction: Clinical Practice Guideline",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26913496/",
+          "evidenceRole": "clinical-guideline-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-02"
+        }
+      ],
+      "requiredArtifactClasses": [
+        "domain-claim-evidence-row",
+        "domain-source-card-field-extraction",
+        "domain-source-specific-deep-read",
+        "source-context-local-review",
+        "independent-fresh-review-verdict",
+        "reviewed-source-card",
+        "variable-card",
+        "endpoint-card",
+        "uncertainty-card",
+        "transfer-boundary-card",
+        "downgrade-check"
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-c2-longtail-third-batch-source-card-promotion",
+      "nextAction": "Create the domain Claim-Evidence row, then perform Source Card field extraction, source-specific deep read, local source-context review and independent fresh review before any artifact promotion or model admission."
+    },
+    {
+      "batchId": "C2-LT-B3",
+      "priorityRank": 12,
+      "domainId": "newborn-hearing-screening-language-development-continuity",
+      "triageBucket": "neuro-sensory-cognitive-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/newborn-hearing-screening-language-development-continuity",
+      "selectionReason": "新生儿听力筛查影响语言发育、认知社会化和教育入口，是主体能力形成早期窗口中的感知基础设施。",
+      "claimSeed": "新生儿听力筛查、诊断确认、早期干预和家庭支持会影响语言发育、沟通能力、教育准备度和长期社会参与。",
+      "variableSeed": [
+        "screening-completion",
+        "diagnostic-confirmation-timing",
+        "early-intervention-enrollment",
+        "language-development-outcome",
+        "family-support-access"
+      ],
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB3-SRC-12-1",
+          "title": "CDC Early Hearing Detection and Intervention Programs",
+          "url": "https://www.cdc.gov/ncbddd/hearingloss/ehdi-programs.html",
+          "evidenceRole": "public-health-program-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-02"
+        },
+        {
+          "sourceRefId": "C2LTB3-SRC-12-2",
+          "title": "JCIH 2019 Executive Summary",
+          "url": "https://www.jcih.org/JCIH_2019_Executive_Summary.pdf",
+          "evidenceRole": "clinical-consensus-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-02"
+        }
+      ],
+      "requiredArtifactClasses": [
+        "domain-claim-evidence-row",
+        "domain-source-card-field-extraction",
+        "domain-source-specific-deep-read",
+        "source-context-local-review",
+        "independent-fresh-review-verdict",
+        "reviewed-source-card",
+        "variable-card",
+        "endpoint-card",
+        "uncertainty-card",
+        "transfer-boundary-card",
+        "downgrade-check"
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-c2-longtail-third-batch-source-card-promotion",
+      "nextAction": "Create the domain Claim-Evidence row, then perform Source Card field extraction, source-specific deep read, local source-context review and independent fresh review before any artifact promotion or model admission."
+    }
+  ],
+  "summary": {
+    "batchId": "C2-LT-B3",
+    "batchDomainCount": 12,
+    "candidateSourceCount": 24,
+    "triageBucketCounts": {
+      "neuro-sensory-cognitive-continuity": 12
+    },
+    "selectedDomainIds": [
+      "traumatic-brain-injury-neurotrauma-recovery",
+      "epilepsy-seizure-network-stability",
+      "intensive-care-organ-support-delirium-continuity",
+      "post-stroke-dysphagia-screening-recovery-continuity",
+      "myasthenia-gravis-neuromuscular-junction-continuity",
+      "spinal-muscular-atrophy-motor-neuron-continuity",
+      "age-related-macular-degeneration-central-vision-continuity",
+      "cataract-vision-restoration-continuity",
+      "age-related-hearing-loss-hearing-aid-continuity",
+      "sudden-hearing-loss-urgent-referral-continuity",
+      "vestibular-rehabilitation-balance-compensation-continuity",
+      "newborn-hearing-screening-language-development-continuity"
+    ],
+    "modelAdmissionDecision": "blocked-pending-c2-longtail-third-batch-source-card-promotion",
+    "nextWorkOrder": "Turn C2-LT-B3 queued domains into source-extraction tasks, then local review, independent fresh review and reviewed artifacts while keeping model admission blocked."
+  }
+}

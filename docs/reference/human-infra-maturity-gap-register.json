@@ -258,12 +258,14 @@
             "docs/reference/human-infra-c2-longtail-second-batch-independent-fresh-review-verdict-register.json",
             "tools/audit_human_infra_c2_longtail_second_batch_independent_fresh_review_verdict_register.py",
             "docs/reference/human-infra-c2-longtail-second-batch-reviewed-card-artifact-register.json",
-            "tools/audit_human_infra_c2_longtail_second_batch_reviewed_card_artifact_register.py"
+            "tools/audit_human_infra_c2_longtail_second_batch_reviewed_card_artifact_register.py",
+            "docs/reference/human-infra-c2-longtail-third-batch-promotion-queue.json",
+            "tools/audit_human_infra_c2_longtail_third_batch_promotion_queue.py"
           ],
           "missingEvidence": [
-            "C2-LT-B1 now has 282 reviewed artifacts: 252 original reviewed artifacts for 42 eligible source rows plus 30 corrected-source reviewed artifacts for 5 eligible corrected rows. C2-LT-B2 now has 138 bounded reviewed artifacts from 23 eligible verdict rows, while 1 row remains downgrade-before-fill and the 5 corrected lineage/route/index/fulltext blocked rows remain preserved outside artifact promotion. Full reviewed Source Card coverage for remaining C2 long-tail domains and model admission artifacts remain incomplete."
+            "C2-LT-B1 now has 282 reviewed artifacts: 252 original reviewed artifacts for 42 eligible source rows plus 30 corrected-source reviewed artifacts for 5 eligible corrected rows. C2-LT-B2 now has 138 bounded reviewed artifacts from 23 eligible verdict rows, while 1 row remains downgrade-before-fill and the 5 corrected lineage/route/index/fulltext blocked rows remain preserved outside artifact promotion. C2-LT-B3 now opens 12 additional neuro-sensory-cognitive C2 domains with 24 web-checked candidate sources, but it is only a promotion queue. Full reviewed Source Card coverage for remaining C2 long-tail domains and model admission artifacts remain incomplete."
           ],
-          "nextAction": "Continue the next C2 long-tail coverage batch, keep the 1 C2-LT-B2 downgrade-before-fill row blocked until source-path normalization, preserve the 5 corrected lineage/route/index/fulltext blocked rows, and keep model admission blocked.",
+          "nextAction": "Turn C2-LT-B3 queued domains into source-specific extraction tasks, keep the 1 C2-LT-B2 downgrade-before-fill row blocked until source-path normalization, preserve the 5 corrected lineage/route/index/fulltext blocked rows, and keep model admission blocked.",
           "blocks100Percent": true
         },
         {
@@ -332,12 +334,14 @@
             "docs/reference/human-infra-c2-longtail-second-batch-independent-fresh-review-verdict-register.json",
             "tools/audit_human_infra_c2_longtail_second_batch_independent_fresh_review_verdict_register.py",
             "docs/reference/human-infra-c2-longtail-second-batch-reviewed-card-artifact-register.json",
-            "tools/audit_human_infra_c2_longtail_second_batch_reviewed_card_artifact_register.py"
+            "tools/audit_human_infra_c2_longtail_second_batch_reviewed_card_artifact_register.py",
+            "docs/reference/human-infra-c2-longtail-third-batch-promotion-queue.json",
+            "tools/audit_human_infra_c2_longtail_third_batch_promotion_queue.py"
           ],
           "missingEvidence": [
-            "C2-LT-B1 now has reviewed variable and endpoint artifacts for 42 original eligible source rows plus corrected variable/endpoint artifacts for the 5 eligible corrected rows. C2-LT-B2 now has reviewed variable and endpoint artifacts for 23 eligible verdict rows, while 1 row remains downgrade-before-fill. The 5 corrected lineage/route/index/fulltext rows remain blocked, and calibrated variable contracts plus endpoint validation are not complete."
+            "C2-LT-B1 now has reviewed variable and endpoint artifacts for 42 original eligible source rows plus corrected variable/endpoint artifacts for the 5 eligible corrected rows. C2-LT-B2 now has reviewed variable and endpoint artifacts for 23 eligible verdict rows, while 1 row remains downgrade-before-fill. C2-LT-B3 has 12 additional queued neuro-sensory-cognitive domains with variable seeds, but those seeds are not yet extracted, fresh-reviewed, or promoted into governed variable/endpoint artifacts. Calibrated variable contracts plus endpoint validation are not complete."
           ],
-          "nextAction": "Use the C2-LT-B2 reviewed artifacts only as bounded inputs for later governed variable contracts, keep the downgrade-before-fill row and calibrated variable contracts blocked until model gates pass, and continue remaining C2 coverage.",
+          "nextAction": "Run C2-LT-B3 source extraction before any governed variable contract use, keep C2-LT-B3 variable seeds as queue-only candidates, and keep calibrated variable contracts blocked until model gates pass.",
           "blocks100Percent": true
         },
         {
@@ -431,12 +435,14 @@
             "docs/reference/human-infra-c2-longtail-second-batch-independent-fresh-review-verdict-register.json",
             "tools/audit_human_infra_c2_longtail_second_batch_independent_fresh_review_verdict_register.py",
             "docs/reference/human-infra-c2-longtail-second-batch-reviewed-card-artifact-register.json",
-            "tools/audit_human_infra_c2_longtail_second_batch_reviewed_card_artifact_register.py"
+            "tools/audit_human_infra_c2_longtail_second_batch_reviewed_card_artifact_register.py",
+            "docs/reference/human-infra-c2-longtail-third-batch-promotion-queue.json",
+            "tools/audit_human_infra_c2_longtail_third_batch_promotion_queue.py"
           ],
           "missingEvidence": [
-            "C2-LT-B1 now has downgrade-check artifacts for 42 original eligible source rows and promotion-time downgrade artifacts for the 5 eligible corrected rows. C2-LT-B2 now has transfer-boundary and downgrade-check artifacts for 23 eligible verdict rows. The 1 C2-LT-B2 downgrade-before-fill row remains blocked, and the 5 corrected lineage/route/index/fulltext blocked rows remain blocked."
+            "C2-LT-B1 now has downgrade-check artifacts for 42 original eligible source rows and promotion-time downgrade artifacts for the 5 eligible corrected rows. C2-LT-B2 now has transfer-boundary and downgrade-check artifacts for 23 eligible verdict rows. C2-LT-B3 has queued transfer-boundary/downgrade extraction requirements for 12 additional neuro-sensory-cognitive domains, but those downgrade checks are not yet extracted, reviewed, or promoted. The 1 C2-LT-B2 downgrade-before-fill row and the 5 corrected lineage/route/index/fulltext blocked rows remain blocked."
           ],
-          "nextAction": "Preserve the 1 C2-LT-B2 downgrade-before-fill row until source-path normalization, continue remaining C2 long-tail downgrade coverage, and keep corrected blocked rows plus model-admission boundaries intact.",
+          "nextAction": "Run C2-LT-B3 source extraction and downstream review before any downgrade/transfer-boundary artifact claims, preserve the 1 C2-LT-B2 downgrade-before-fill row, and keep corrected blocked rows plus model-admission boundaries intact.",
           "blocks100Percent": true
         }
       ]
@@ -583,7 +589,7 @@
   "nextWorkOrder": [
     {
       "priority": 1,
-      "item": "Continue the next C2 long-tail coverage batch after C2-LT-B2 reviewed artifacts, preserve the 1 C2-LT-B2 downgrade-before-fill row until source-path normalization, preserve the 5 corrected lineage/route/index/fulltext blocked rows, and keep model admission blocked.",
+      "item": "Turn C2-LT-B3 queued neuro-sensory-cognitive domains into source-specific extraction tasks, preserve the 1 C2-LT-B2 downgrade-before-fill row until source-path normalization, preserve the 5 corrected lineage/route/index/fulltext blocked rows, and keep model admission blocked.",
       "unblocks": [
         "RESEARCH-G3-c1-c2-source-cards",
         "RESEARCH-G4-variable-mechanism-contracts",
