@@ -114,7 +114,7 @@
     {
       "axisId": "research_framework",
       "axisName": "研究框架",
-      "currentPercent": 87,
+      "currentPercent": 90,
       "targetPercent": 100,
       "definitionOfDone": "Every strong project claim can be traced to source cards, claim-evidence rows, variables, mechanism links, falsifiers, model position and governance boundary.",
       "primaryEvidence": [
@@ -172,11 +172,11 @@
             "tools/audit_human_infra_domain_source_specific_extraction_register.py"
           ],
           "missingEvidence": [
-            "Completed source-specific endpoint, population, effect-size, uncertainty and transfer-boundary rows for the remaining 26 of 81 queued domain-source tasks.",
+            "Full source-context fresh review for all 81 completed source-specific field rows.",
             "Domain-level Claim-Evidence Matrix coverage beyond the current priority C1/C2 set.",
-            "Full external source-context review for completed method and biological-mechanism anchors."
+            "Promotion of completed field rows into reusable Source Cards with reviewer verdicts and downgrade triggers."
           ],
-          "nextAction": "Continue the source-specific extraction register beyond the current 55 method and biological-mechanism rows until all remaining 26 domain-source tasks have exact claim, endpoint definition, population, effect/mechanism signal, uncertainty and transfer-boundary fields.",
+          "nextAction": "Promote the 81 completed source-specific rows into fresh-reviewed Source Cards, reviewer verdicts, evidence-grade notes and downgrade checks before allowing stronger domain claims.",
           "blocks100Percent": true
         },
         {
@@ -194,11 +194,11 @@
             "tools/audit_human_infra_domain_source_specific_extraction_register.py"
           ],
           "missingEvidence": [
-            "Reusable variable template promoted from the remaining 26 queued source-specific endpoint tasks into source-specific variable cards.",
+            "Reusable variable templates promoted from the 81 completed source-specific field rows into source-specific variable cards.",
             "Domain-specific variable tables for C2 long-tail claims beyond the current priority set.",
-            "Variable-card promotion from the 55 completed method and biological-mechanism extraction rows."
+            "Endpoint, uncertainty and transfer-boundary cards derived from completed rows and reviewed against source context."
           ],
-          "nextAction": "Use the completed method and biological-mechanism rows as variable-contract patterns, then extract source-specific variable, endpoint and uncertainty contracts for the remaining queue.",
+          "nextAction": "Promote completed rows into source-specific variable, endpoint, uncertainty and transfer-boundary contracts, then attach them to model-entry gates without opening calibrated prediction.",
           "blocks100Percent": true
         },
         {
@@ -242,10 +242,10 @@
           ],
           "missingEvidence": [
             "Falsifier rows for C2 domain claims beyond the current 20-domain priority set.",
-            "Completed source-specific rows for the remaining 26 queued source anchors, binding exact claim, variable, endpoint, population, uncertainty and transfer-boundary evidence.",
-            "Fresh review downgrade checks for completed source-specific rows."
+            "Fresh-review downgrade checks for all completed source-specific rows.",
+            "Reviewer-confirmed boundary checks that prevent completed field rows from being treated as calibrated evidence."
           ],
-          "nextAction": "Fill the remaining 26 domain-source extraction rows with exact claim, variable, endpoint, population, uncertainty and transfer-boundary evidence, then add fresh-review downgrade checks.",
+          "nextAction": "Add fresh-review downgrade checks and promote completed rows into falsifier, variable and endpoint cards before raising any domain claim maturity.",
           "blocks100Percent": true
         }
       ]
@@ -392,7 +392,7 @@
   "nextWorkOrder": [
     {
       "priority": 1,
-      "item": "Fill the remaining 26 queued domain-source tasks after the method and biological-mechanism extraction rows, then promote completed rows into reusable variable, endpoint, uncertainty and transfer-boundary cards.",
+      "item": "Promote the 81 completed domain-source field extraction rows into fresh-reviewed Source Cards, reusable variable cards, endpoint cards, uncertainty cards, transfer-boundary cards and downgrade checks.",
       "unblocks": [
         "RESEARCH-G3-c1-c2-source-cards",
         "RESEARCH-G4-variable-mechanism-contracts",

@@ -1,8 +1,8 @@
 {
   "schemaVersion": "human-infra.domain-source-specific-extraction-register.v1",
   "registerId": "human-infra-domain-source-specific-extraction-register-2026-07-02-v0.1",
-  "status": "partial-second-wave-biological-mechanism-extractions-not-complete",
-  "purpose": "Record completed source-specific extraction rows for Human Infra domain modeling, converting selected method and biological-mechanism anchors from queue items into audited endpoint, population, uncertainty and transfer-boundary fields without opening calibrated prediction.",
+  "status": "all-queued-source-specific-extractions-complete-pending-fresh-review",
+  "purpose": "Record completed source-specific extraction rows for Human Infra domain modeling, converting every queued domain-source task into audited endpoint, population, uncertainty and transfer-boundary fields without opening calibrated prediction.",
   "sourceOfTruth": {
     "domainSourceSpecificExtractionQueue": "docs/reference/human-infra-domain-source-specific-extraction-queue.json",
     "domainSourceCardFieldExtraction": "docs/reference/human-infra-domain-source-card-field-extraction.json",
@@ -11,13 +11,13 @@
     "maturityGapRegister": "docs/reference/human-infra-maturity-gap-register.json"
   },
   "scope": {
-    "coverageLevel": "partial-second-wave-biological-mechanism-extractions",
+    "coverageLevel": "full-queue-source-specific-field-extractions",
     "derivedTaskUnit": "domainId + sourceCardId",
     "queuedTaskCount": 81,
-    "completedTaskCount": 55,
-    "remainingQueuedTaskCount": 26,
-    "completedFieldRowCount": 21,
-    "completedSourceAnchorCount": 11,
+    "completedTaskCount": 81,
+    "remainingQueuedTaskCount": 0,
+    "completedFieldRowCount": 26,
+    "completedSourceAnchorCount": 20,
     "completedSourceAnchors": [
       "SA-KAPLAN-MEIER-1958",
       "SA-COX-1972",
@@ -29,14 +29,23 @@
       "SA-YAMANAKA-IPS-2006",
       "SA-PARTIAL-REPROGRAMMING-2016",
       "SA-IMMUNOSENESCENCE-2024",
-      "SA-GRIMAGE-2019"
+      "SA-GRIMAGE-2019",
+      "SA-WHO-CONSTITUTION",
+      "SA-CAPABILITY-APPROACH",
+      "SA-EXTENDED-MIND-1998",
+      "SA-DYNAMIC-DIGITAL-TWIN-2022",
+      "SA-BRAIN-PRESERVATION-2024",
+      "SA-GPS-RELATIVITY-2003",
+      "SA-NASA-BLACK-HOLES",
+      "SA-NIST-AI-RMF-2023",
+      "SA-NCI-SCREENING-BIAS"
     ],
-    "selectionRule": "Complete method anchors first, then biological mechanism and safety anchors that constrain aging, cancer, reprogramming, immune maintenance and biomarker interpretation before expanding into social, cognitive and infrastructure anchors.",
+    "selectionRule": "Complete all queued source-specific field extractions across method anchors, biological mechanisms, health-functioning value anchors, cognitive infrastructure, digital twins, brain preservation, future waiting, AI governance and screening-bias boundaries before fresh-review and variable-card promotion.",
     "currentLimitations": [
-      "Only 55 of the 81 queued domain-source tasks are complete.",
+      "All 81 queued domain-source field extractions are complete at the register level.",
       "Rows are field-level source-specific extractions, not full external literature fresh reviews.",
       "Completed rows keep calibrated prediction, individual recommendation and intervention ranking blocked.",
-      "Remaining tasks still include social, cognitive, digital-twin, preservation and future-waiting anchors."
+      "Next work is source-context fresh review, variable-card promotion, long-tail domain expansion and calibrated data-model validation."
     ]
   },
   "sourceAnchorDecisions": [
@@ -170,6 +179,114 @@
         "individual-recommendation",
         "intervention-ranking",
         "individual-death-date-output"
+      ]
+    },
+    {
+      "sourceCardId": "SA-WHO-CONSTITUTION",
+      "sourceRole": "health-functioning-wellbeing-value-anchor",
+      "modelAdmissionDecision": "value-definition-support-only-blocked-for-intervention-or-prediction-claim",
+      "transferBoundary": "Transfer only as health-functioning and wellbeing vocabulary. It does not prove any intervention effect, disease endpoint, or individual prognosis.",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "intervention-ranking",
+        "domain-claim-upgrade"
+      ]
+    },
+    {
+      "sourceCardId": "SA-CAPABILITY-APPROACH",
+      "sourceRole": "capability-option-value-and-functioning-value-anchor",
+      "modelAdmissionDecision": "value-framework-support-only-blocked-for-effect-claim",
+      "transferBoundary": "Transfer only as value and option-space vocabulary. It does not prove intervention efficacy, resource effect size or individual welfare improvement.",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "intervention-ranking",
+        "domain-claim-upgrade"
+      ]
+    },
+    {
+      "sourceCardId": "SA-EXTENDED-MIND-1998",
+      "sourceRole": "extended-cognition-tool-dependence-continuity-anchor",
+      "modelAdmissionDecision": "cognitive-infrastructure-support-only-blocked-for-performance-or-continuity-claim",
+      "transferBoundary": "Transfer only as extended-cognition and tool-dependence vocabulary. It does not prove memory preservation, identity continuity or task-performance gain.",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "intervention-ranking",
+        "domain-claim-upgrade"
+      ]
+    },
+    {
+      "sourceCardId": "SA-DYNAMIC-DIGITAL-TWIN-2022",
+      "sourceRole": "subject-state-modeling-architecture-anchor",
+      "modelAdmissionDecision": "modeling-architecture-support-only-blocked-for-prediction-or-treatment-claim",
+      "transferBoundary": "Transfer only as modeling-architecture vocabulary. It does not authorize prediction, prevention, treatment, personal advice or simulated-subject continuity claims.",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "intervention-ranking",
+        "domain-claim-upgrade"
+      ]
+    },
+    {
+      "sourceCardId": "SA-BRAIN-PRESERVATION-2024",
+      "sourceRole": "brain-information-preservation-and-continuity-boundary-anchor",
+      "modelAdmissionDecision": "preservation-structure-support-only-blocked-for-revival-or-identity-claim",
+      "transferBoundary": "Transfer only as brain-information preservation boundary vocabulary. It does not support revival, emulation success, identity survival or preservation-service advice.",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "intervention-ranking",
+        "domain-claim-upgrade"
+      ]
+    },
+    {
+      "sourceCardId": "SA-GPS-RELATIVITY-2003",
+      "sourceRole": "proper-time-reference-frame-accounting-anchor",
+      "modelAdmissionDecision": "time-accounting-support-only-blocked-for-waiting-feasibility-claim",
+      "transferBoundary": "Transfer only as proper-time and reference-frame vocabulary. It does not prove black-hole waiting feasibility, safety, communication, exit or life-support viability.",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "intervention-ranking",
+        "domain-claim-upgrade"
+      ]
+    },
+    {
+      "sourceCardId": "SA-NASA-BLACK-HOLES",
+      "sourceRole": "black-hole-public-boundary-and-hazard-explainer-anchor",
+      "modelAdmissionDecision": "public-explainer-support-only-blocked-for-engineering-feasibility-claim",
+      "transferBoundary": "Transfer only as public boundary and hazard vocabulary. It does not support artificial black holes, engineered waiting rooms, survival strategy or feasible time-bridge claims.",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "intervention-ranking",
+        "domain-claim-upgrade"
+      ]
+    },
+    {
+      "sourceCardId": "SA-NIST-AI-RMF-2023",
+      "sourceRole": "ai-risk-governance-and-trustworthiness-anchor",
+      "modelAdmissionDecision": "ai-governance-support-only-blocked-for-autonomous-action-claim",
+      "transferBoundary": "Transfer only as AI risk-management vocabulary. It does not authorize autonomous action, clinical decision-making, personal advice or capability claims.",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "intervention-ranking",
+        "domain-claim-upgrade"
+      ]
+    },
+    {
+      "sourceCardId": "SA-NCI-SCREENING-BIAS",
+      "sourceRole": "screening-endpoint-bias-and-harm-boundary-anchor",
+      "modelAdmissionDecision": "endpoint-bias-support-only-blocked-for-screening-benefit-claim",
+      "transferBoundary": "Transfer only as screening endpoint and bias vocabulary. It does not endorse or reject individual screening and does not prove mortality benefit.",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "intervention-ranking",
+        "domain-claim-upgrade"
       ]
     }
   ],
@@ -1383,13 +1500,585 @@
         "domain-claim-upgrade"
       ],
       "nextAction": "Create endocrine axis cards separating deficiency, excess, replacement, suppression, feedback and adverse tradeoffs."
+    },
+    {
+      "domainId": "future-waiting",
+      "domainClaimId": "HIDOM-CL001",
+      "fieldCardId": "HIDOM-FLD001",
+      "sourceCardId": "SA-GPS-RELATIVITY-2003",
+      "extractionStatus": "completed-third-wave-continuity-governance-and-future-path-field-extraction",
+      "sourceRole": "proper-time-reference-frame-accounting-anchor",
+      "exactClaimUse": "Supports distinguishing proper time, external reference time, clock-rate accounting and reference-frame dependence for future-waiting hypotheses.",
+      "endpointDefinition": "For future-waiting, admissible endpoint language is limited to the registered endpoint candidates: effective-waiting-cost, future-option-access, net-continuity-gain. The source does not add a new endpoint beyond this field row.",
+      "populationOrSample": "The source is used as a value, governance, architecture, preservation, cognitive-support or time-accounting anchor; a concrete Human Infra population, eligibility rule, measurement protocol, scenario card and follow-up horizon must be supplied by a later domain-specific study before quantitative use.",
+      "effectOrMechanismSignal": "Time-accounting signal only: relativistic clock corrections demonstrate time-rate accounting, not safe waiting infrastructure or strong-redshift engineering.",
+      "uncertaintyOrBias": "Weak-field operational corrections cannot be extrapolated to controlled strong-redshift waiting rooms without metric, worldline, observer and risk cards.",
+      "transferBoundary": "Transfer only as proper-time and reference-frame vocabulary. It does not prove black-hole waiting feasibility, safety, communication, exit or life-support viability.",
+      "modelAdmissionDecision": "time-accounting-support-only-blocked-for-waiting-feasibility-claim",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "intervention-ranking",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Create route cards for future waiting, biostasis, and metric-redshift variants with exit and continuity gates."
+    },
+    {
+      "domainId": "future-waiting",
+      "domainClaimId": "HIDOM-CL001",
+      "fieldCardId": "HIDOM-FLD001",
+      "sourceCardId": "SA-NASA-BLACK-HOLES",
+      "extractionStatus": "completed-third-wave-continuity-governance-and-future-path-field-extraction",
+      "sourceRole": "black-hole-public-boundary-and-hazard-explainer-anchor",
+      "exactClaimUse": "Supports public-facing boundary language for black holes, time dilation, event horizons and environmental hazards while keeping waiting-room claims metaphorical unless formal scenario cards exist.",
+      "endpointDefinition": "For future-waiting, admissible endpoint language is limited to the registered endpoint candidates: effective-waiting-cost, future-option-access, net-continuity-gain. The source does not add a new endpoint beyond this field row.",
+      "populationOrSample": "The source is used as a value, governance, architecture, preservation, cognitive-support or time-accounting anchor; a concrete Human Infra population, eligibility rule, measurement protocol, scenario card and follow-up horizon must be supplied by a later domain-specific study before quantitative use.",
+      "effectOrMechanismSignal": "Explainer signal only: provides strong-gravity context and hazard vocabulary, not an engineering mechanism for subject waiting.",
+      "uncertaintyOrBias": "Popular explanations can be overread; event horizon, radiation, tidal, orbit, communication, exit and governance risks block naive waiting interpretations.",
+      "transferBoundary": "Transfer only as public boundary and hazard vocabulary. It does not support artificial black holes, engineered waiting rooms, survival strategy or feasible time-bridge claims.",
+      "modelAdmissionDecision": "public-explainer-support-only-blocked-for-engineering-feasibility-claim",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "intervention-ranking",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Create route cards for future waiting, biostasis, and metric-redshift variants with exit and continuity gates."
+    },
+    {
+      "domainId": "biostasis-cryopreservation",
+      "domainClaimId": "HIDOM-CL003",
+      "fieldCardId": "HIDOM-FLD003",
+      "sourceCardId": "SA-EXTENDED-MIND-1998",
+      "extractionStatus": "completed-third-wave-continuity-governance-and-future-path-field-extraction",
+      "sourceRole": "extended-cognition-tool-dependence-continuity-anchor",
+      "exactClaimUse": "Supports modeling stable external tools, records and memory systems as possible subject-support infrastructure when integration and reliability criteria hold.",
+      "endpointDefinition": "For biostasis-cryopreservation, admissible endpoint language is limited to the registered endpoint candidates: preservation-claim-status, revival-condition-readiness, continuity-risk. The source does not add a new endpoint beyond this field row.",
+      "populationOrSample": "The source is used as a value, governance, architecture, preservation, cognitive-support or time-accounting anchor; a concrete Human Infra population, eligibility rule, measurement protocol, scenario card and follow-up horizon must be supplied by a later domain-specific study before quantitative use.",
+      "effectOrMechanismSignal": "Conceptual cognition-support signal only: external supports may change task capacity if reliable, available and integrated, but task performance requires separate evidence.",
+      "uncertaintyOrBias": "Tool dependence, loss of access, security failure, coercion, non-portability and unreliable integration can turn enhancement into continuity risk.",
+      "transferBoundary": "Transfer only as extended-cognition and tool-dependence vocabulary. It does not prove memory preservation, identity continuity or task-performance gain.",
+      "modelAdmissionDecision": "cognitive-infrastructure-support-only-blocked-for-performance-or-continuity-claim",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "intervention-ranking",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Build Source Cards separating structure preservation evidence from revival and continuity claims."
+    },
+    {
+      "domainId": "biostasis-cryopreservation",
+      "domainClaimId": "HIDOM-CL003",
+      "fieldCardId": "HIDOM-FLD003",
+      "sourceCardId": "SA-BRAIN-PRESERVATION-2024",
+      "extractionStatus": "completed-third-wave-continuity-governance-and-future-path-field-extraction",
+      "sourceRole": "brain-information-preservation-and-continuity-boundary-anchor",
+      "exactClaimUse": "Supports separating neural structure preservation from revival, functional recovery, identity continuity and future repair claims.",
+      "endpointDefinition": "For biostasis-cryopreservation, admissible endpoint language is limited to the registered endpoint candidates: preservation-claim-status, revival-condition-readiness, continuity-risk. The source does not add a new endpoint beyond this field row.",
+      "populationOrSample": "The source is used as a value, governance, architecture, preservation, cognitive-support or time-accounting anchor; a concrete Human Infra population, eligibility rule, measurement protocol, scenario card and follow-up horizon must be supplied by a later domain-specific study before quantitative use.",
+      "effectOrMechanismSignal": "Preservation-boundary signal only: preserved structure may be relevant to future option value only if information sufficiency, readout, repair and governance gates hold.",
+      "uncertaintyOrBias": "Memory sufficiency, dynamic state loss, connectomic completeness, revival feasibility, subjective continuity and service governance remain unresolved.",
+      "transferBoundary": "Transfer only as brain-information preservation boundary vocabulary. It does not support revival, emulation success, identity survival or preservation-service advice.",
+      "modelAdmissionDecision": "preservation-structure-support-only-blocked-for-revival-or-identity-claim",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "intervention-ranking",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Build Source Cards separating structure preservation evidence from revival and continuity claims."
+    },
+    {
+      "domainId": "biostasis-cryopreservation",
+      "domainClaimId": "HIDOM-CL003",
+      "fieldCardId": "HIDOM-FLD003",
+      "sourceCardId": "SA-CAPABILITY-APPROACH",
+      "extractionStatus": "completed-third-wave-continuity-governance-and-future-path-field-extraction",
+      "sourceRole": "capability-option-value-and-functioning-value-anchor",
+      "exactClaimUse": "Supports evaluating Human Infra through real functionings, capabilities and future choices rather than biological survival alone.",
+      "endpointDefinition": "For biostasis-cryopreservation, admissible endpoint language is limited to the registered endpoint candidates: preservation-claim-status, revival-condition-readiness, continuity-risk. The source does not add a new endpoint beyond this field row.",
+      "populationOrSample": "The source is used as a value, governance, architecture, preservation, cognitive-support or time-accounting anchor; a concrete Human Infra population, eligibility rule, measurement protocol, scenario card and follow-up horizon must be supplied by a later domain-specific study before quantitative use.",
+      "effectOrMechanismSignal": "Value-framework signal only: resources matter through conversion into actual action capacity and option value, not as automatic benefits.",
+      "uncertaintyOrBias": "Capability language must not replace empirical evidence; conversion factors, social constraints, agency and distributional differences must be specified.",
+      "transferBoundary": "Transfer only as value and option-space vocabulary. It does not prove intervention efficacy, resource effect size or individual welfare improvement.",
+      "modelAdmissionDecision": "value-framework-support-only-blocked-for-effect-claim",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "intervention-ranking",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Build Source Cards separating structure preservation evidence from revival and continuity claims."
+    },
+    {
+      "domainId": "brain-preservation-connectomics-emulation",
+      "domainClaimId": "HIDOM-CL004",
+      "fieldCardId": "HIDOM-FLD004",
+      "sourceCardId": "SA-EXTENDED-MIND-1998",
+      "extractionStatus": "completed-third-wave-continuity-governance-and-future-path-field-extraction",
+      "sourceRole": "extended-cognition-tool-dependence-continuity-anchor",
+      "exactClaimUse": "Supports modeling stable external tools, records and memory systems as possible subject-support infrastructure when integration and reliability criteria hold.",
+      "endpointDefinition": "For brain-preservation-connectomics-emulation, admissible endpoint language is limited to the registered endpoint candidates: identity-continuity-status, information-loss-risk, emulation-claim-maturity. The source does not add a new endpoint beyond this field row.",
+      "populationOrSample": "The source is used as a value, governance, architecture, preservation, cognitive-support or time-accounting anchor; a concrete Human Infra population, eligibility rule, measurement protocol, scenario card and follow-up horizon must be supplied by a later domain-specific study before quantitative use.",
+      "effectOrMechanismSignal": "Conceptual cognition-support signal only: external supports may change task capacity if reliable, available and integrated, but task performance requires separate evidence.",
+      "uncertaintyOrBias": "Tool dependence, loss of access, security failure, coercion, non-portability and unreliable integration can turn enhancement into continuity risk.",
+      "transferBoundary": "Transfer only as extended-cognition and tool-dependence vocabulary. It does not prove memory preservation, identity continuity or task-performance gain.",
+      "modelAdmissionDecision": "cognitive-infrastructure-support-only-blocked-for-performance-or-continuity-claim",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "intervention-ranking",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Create a brain-information sufficiency matrix covering structure, dynamics, memory trace, validation and identity theory."
+    },
+    {
+      "domainId": "brain-preservation-connectomics-emulation",
+      "domainClaimId": "HIDOM-CL004",
+      "fieldCardId": "HIDOM-FLD004",
+      "sourceCardId": "SA-BRAIN-PRESERVATION-2024",
+      "extractionStatus": "completed-third-wave-continuity-governance-and-future-path-field-extraction",
+      "sourceRole": "brain-information-preservation-and-continuity-boundary-anchor",
+      "exactClaimUse": "Supports separating neural structure preservation from revival, functional recovery, identity continuity and future repair claims.",
+      "endpointDefinition": "For brain-preservation-connectomics-emulation, admissible endpoint language is limited to the registered endpoint candidates: identity-continuity-status, information-loss-risk, emulation-claim-maturity. The source does not add a new endpoint beyond this field row.",
+      "populationOrSample": "The source is used as a value, governance, architecture, preservation, cognitive-support or time-accounting anchor; a concrete Human Infra population, eligibility rule, measurement protocol, scenario card and follow-up horizon must be supplied by a later domain-specific study before quantitative use.",
+      "effectOrMechanismSignal": "Preservation-boundary signal only: preserved structure may be relevant to future option value only if information sufficiency, readout, repair and governance gates hold.",
+      "uncertaintyOrBias": "Memory sufficiency, dynamic state loss, connectomic completeness, revival feasibility, subjective continuity and service governance remain unresolved.",
+      "transferBoundary": "Transfer only as brain-information preservation boundary vocabulary. It does not support revival, emulation success, identity survival or preservation-service advice.",
+      "modelAdmissionDecision": "preservation-structure-support-only-blocked-for-revival-or-identity-claim",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "intervention-ranking",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Create a brain-information sufficiency matrix covering structure, dynamics, memory trace, validation and identity theory."
+    },
+    {
+      "domainId": "brain-preservation-connectomics-emulation",
+      "domainClaimId": "HIDOM-CL004",
+      "fieldCardId": "HIDOM-FLD004",
+      "sourceCardId": "SA-DYNAMIC-DIGITAL-TWIN-2022",
+      "extractionStatus": "completed-third-wave-continuity-governance-and-future-path-field-extraction",
+      "sourceRole": "subject-state-modeling-architecture-anchor",
+      "exactClaimUse": "Supports digital twin language only when observation, integration, update, validation and use-case boundaries are specified.",
+      "endpointDefinition": "For brain-preservation-connectomics-emulation, admissible endpoint language is limited to the registered endpoint candidates: identity-continuity-status, information-loss-risk, emulation-claim-maturity. The source does not add a new endpoint beyond this field row.",
+      "populationOrSample": "The source is used as a value, governance, architecture, preservation, cognitive-support or time-accounting anchor; a concrete Human Infra population, eligibility rule, measurement protocol, scenario card and follow-up horizon must be supplied by a later domain-specific study before quantitative use.",
+      "effectOrMechanismSignal": "Architecture signal only: a digital twin can host state and risk models if data, validation and update loops exist; it supplies no risk estimate by itself.",
+      "uncertaintyOrBias": "Data quality, missingness, representativeness, validation failure, model drift, causal confusion and governance limits can invalidate twin-based claims.",
+      "transferBoundary": "Transfer only as modeling-architecture vocabulary. It does not authorize prediction, prevention, treatment, personal advice or simulated-subject continuity claims.",
+      "modelAdmissionDecision": "modeling-architecture-support-only-blocked-for-prediction-or-treatment-claim",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "intervention-ranking",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Create a brain-information sufficiency matrix covering structure, dynamics, memory trace, validation and identity theory."
+    },
+    {
+      "domainId": "disembodied-cns",
+      "domainClaimId": "HIDOM-CL005",
+      "fieldCardId": "HIDOM-FLD005",
+      "sourceCardId": "SA-WHO-CONSTITUTION",
+      "extractionStatus": "completed-third-wave-continuity-governance-and-future-path-field-extraction",
+      "sourceRole": "health-functioning-wellbeing-value-anchor",
+      "exactClaimUse": "Supports defining subject continuity and effective life through physical, mental and social functioning, not survival or disease absence alone.",
+      "endpointDefinition": "For disembodied-cns, admissible endpoint language is limited to the registered endpoint candidates: continuity-maintenance-status, agency-loss-risk, governance-abort-status. The source does not add a new endpoint beyond this field row.",
+      "populationOrSample": "The source is used as a value, governance, architecture, preservation, cognitive-support or time-accounting anchor; a concrete Human Infra population, eligibility rule, measurement protocol, scenario card and follow-up horizon must be supplied by a later domain-specific study before quantitative use.",
+      "effectOrMechanismSignal": "Value-definition signal only: identifies health dimensions that must be observed when judging effective time, function and future option value.",
+      "uncertaintyOrBias": "The source is a constitutional value anchor, not an empirical transition model; operational measures, populations and outcomes must be defined separately.",
+      "transferBoundary": "Transfer only as health-functioning and wellbeing vocabulary. It does not prove any intervention effect, disease endpoint, or individual prognosis.",
+      "modelAdmissionDecision": "value-definition-support-only-blocked-for-intervention-or-prediction-claim",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "intervention-ranking",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Separate viability, consciousness, agency and governance requirements into independent abort gates."
+    },
+    {
+      "domainId": "disembodied-cns",
+      "domainClaimId": "HIDOM-CL005",
+      "fieldCardId": "HIDOM-FLD005",
+      "sourceCardId": "SA-BRAIN-PRESERVATION-2024",
+      "extractionStatus": "completed-third-wave-continuity-governance-and-future-path-field-extraction",
+      "sourceRole": "brain-information-preservation-and-continuity-boundary-anchor",
+      "exactClaimUse": "Supports separating neural structure preservation from revival, functional recovery, identity continuity and future repair claims.",
+      "endpointDefinition": "For disembodied-cns, admissible endpoint language is limited to the registered endpoint candidates: continuity-maintenance-status, agency-loss-risk, governance-abort-status. The source does not add a new endpoint beyond this field row.",
+      "populationOrSample": "The source is used as a value, governance, architecture, preservation, cognitive-support or time-accounting anchor; a concrete Human Infra population, eligibility rule, measurement protocol, scenario card and follow-up horizon must be supplied by a later domain-specific study before quantitative use.",
+      "effectOrMechanismSignal": "Preservation-boundary signal only: preserved structure may be relevant to future option value only if information sufficiency, readout, repair and governance gates hold.",
+      "uncertaintyOrBias": "Memory sufficiency, dynamic state loss, connectomic completeness, revival feasibility, subjective continuity and service governance remain unresolved.",
+      "transferBoundary": "Transfer only as brain-information preservation boundary vocabulary. It does not support revival, emulation success, identity survival or preservation-service advice.",
+      "modelAdmissionDecision": "preservation-structure-support-only-blocked-for-revival-or-identity-claim",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "intervention-ranking",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Separate viability, consciousness, agency and governance requirements into independent abort gates."
+    },
+    {
+      "domainId": "disembodied-cns",
+      "domainClaimId": "HIDOM-CL005",
+      "fieldCardId": "HIDOM-FLD005",
+      "sourceCardId": "SA-DYNAMIC-DIGITAL-TWIN-2022",
+      "extractionStatus": "completed-third-wave-continuity-governance-and-future-path-field-extraction",
+      "sourceRole": "subject-state-modeling-architecture-anchor",
+      "exactClaimUse": "Supports digital twin language only when observation, integration, update, validation and use-case boundaries are specified.",
+      "endpointDefinition": "For disembodied-cns, admissible endpoint language is limited to the registered endpoint candidates: continuity-maintenance-status, agency-loss-risk, governance-abort-status. The source does not add a new endpoint beyond this field row.",
+      "populationOrSample": "The source is used as a value, governance, architecture, preservation, cognitive-support or time-accounting anchor; a concrete Human Infra population, eligibility rule, measurement protocol, scenario card and follow-up horizon must be supplied by a later domain-specific study before quantitative use.",
+      "effectOrMechanismSignal": "Architecture signal only: a digital twin can host state and risk models if data, validation and update loops exist; it supplies no risk estimate by itself.",
+      "uncertaintyOrBias": "Data quality, missingness, representativeness, validation failure, model drift, causal confusion and governance limits can invalidate twin-based claims.",
+      "transferBoundary": "Transfer only as modeling-architecture vocabulary. It does not authorize prediction, prevention, treatment, personal advice or simulated-subject continuity claims.",
+      "modelAdmissionDecision": "modeling-architecture-support-only-blocked-for-prediction-or-treatment-claim",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "intervention-ranking",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Separate viability, consciousness, agency and governance requirements into independent abort gates."
+    },
+    {
+      "domainId": "memory-editing",
+      "domainClaimId": "HIDOM-CL006",
+      "fieldCardId": "HIDOM-FLD006",
+      "sourceCardId": "SA-EXTENDED-MIND-1998",
+      "extractionStatus": "completed-third-wave-continuity-governance-and-future-path-field-extraction",
+      "sourceRole": "extended-cognition-tool-dependence-continuity-anchor",
+      "exactClaimUse": "Supports modeling stable external tools, records and memory systems as possible subject-support infrastructure when integration and reliability criteria hold.",
+      "endpointDefinition": "For memory-editing, admissible endpoint language is limited to the registered endpoint candidates: agency-quality, identity-continuity-risk, coercion-risk. The source does not add a new endpoint beyond this field row.",
+      "populationOrSample": "The source is used as a value, governance, architecture, preservation, cognitive-support or time-accounting anchor; a concrete Human Infra population, eligibility rule, measurement protocol, scenario card and follow-up horizon must be supplied by a later domain-specific study before quantitative use.",
+      "effectOrMechanismSignal": "Conceptual cognition-support signal only: external supports may change task capacity if reliable, available and integrated, but task performance requires separate evidence.",
+      "uncertaintyOrBias": "Tool dependence, loss of access, security failure, coercion, non-portability and unreliable integration can turn enhancement into continuity risk.",
+      "transferBoundary": "Transfer only as extended-cognition and tool-dependence vocabulary. It does not prove memory preservation, identity continuity or task-performance gain.",
+      "modelAdmissionDecision": "cognitive-infrastructure-support-only-blocked-for-performance-or-continuity-claim",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "intervention-ranking",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Build a memory intervention boundary table separating therapeutic, enhancement, coercive and evidentiary contexts."
+    },
+    {
+      "domainId": "memory-editing",
+      "domainClaimId": "HIDOM-CL006",
+      "fieldCardId": "HIDOM-FLD006",
+      "sourceCardId": "SA-CAPABILITY-APPROACH",
+      "extractionStatus": "completed-third-wave-continuity-governance-and-future-path-field-extraction",
+      "sourceRole": "capability-option-value-and-functioning-value-anchor",
+      "exactClaimUse": "Supports evaluating Human Infra through real functionings, capabilities and future choices rather than biological survival alone.",
+      "endpointDefinition": "For memory-editing, admissible endpoint language is limited to the registered endpoint candidates: agency-quality, identity-continuity-risk, coercion-risk. The source does not add a new endpoint beyond this field row.",
+      "populationOrSample": "The source is used as a value, governance, architecture, preservation, cognitive-support or time-accounting anchor; a concrete Human Infra population, eligibility rule, measurement protocol, scenario card and follow-up horizon must be supplied by a later domain-specific study before quantitative use.",
+      "effectOrMechanismSignal": "Value-framework signal only: resources matter through conversion into actual action capacity and option value, not as automatic benefits.",
+      "uncertaintyOrBias": "Capability language must not replace empirical evidence; conversion factors, social constraints, agency and distributional differences must be specified.",
+      "transferBoundary": "Transfer only as value and option-space vocabulary. It does not prove intervention efficacy, resource effect size or individual welfare improvement.",
+      "modelAdmissionDecision": "value-framework-support-only-blocked-for-effect-claim",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "intervention-ranking",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Build a memory intervention boundary table separating therapeutic, enhancement, coercive and evidentiary contexts."
+    },
+    {
+      "domainId": "memory-editing",
+      "domainClaimId": "HIDOM-CL006",
+      "fieldCardId": "HIDOM-FLD006",
+      "sourceCardId": "SA-NIST-AI-RMF-2023",
+      "extractionStatus": "completed-third-wave-continuity-governance-and-future-path-field-extraction",
+      "sourceRole": "ai-risk-governance-and-trustworthiness-anchor",
+      "exactClaimUse": "Supports treating AI assistance as governed infrastructure that requires measurement, monitoring, accountability and risk management before it can support subject continuity.",
+      "endpointDefinition": "For memory-editing, admissible endpoint language is limited to the registered endpoint candidates: agency-quality, identity-continuity-risk, coercion-risk. The source does not add a new endpoint beyond this field row.",
+      "populationOrSample": "The source is used as a value, governance, architecture, preservation, cognitive-support or time-accounting anchor; a concrete Human Infra population, eligibility rule, measurement protocol, scenario card and follow-up horizon must be supplied by a later domain-specific study before quantitative use.",
+      "effectOrMechanismSignal": "Governance signal only: AI can reduce or increase friction, error and option value depending on trustworthiness, monitoring and human-AI handoff design.",
+      "uncertaintyOrBias": "Opacity, automation bias, dependency, adversarial behavior, data drift, security failure and accountability gaps can turn AI enhancement into a negative channel.",
+      "transferBoundary": "Transfer only as AI risk-management vocabulary. It does not authorize autonomous action, clinical decision-making, personal advice or capability claims.",
+      "modelAdmissionDecision": "ai-governance-support-only-blocked-for-autonomous-action-claim",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "intervention-ranking",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Build a memory intervention boundary table separating therapeutic, enhancement, coercive and evidentiary contexts."
+    },
+    {
+      "domainId": "cancer-screening-early-detection-continuity",
+      "domainClaimId": "HIDOM-CL009",
+      "fieldCardId": "HIDOM-FLD009",
+      "sourceCardId": "SA-NCI-SCREENING-BIAS",
+      "extractionStatus": "completed-third-wave-continuity-governance-and-future-path-field-extraction",
+      "sourceRole": "screening-endpoint-bias-and-harm-boundary-anchor",
+      "exactClaimUse": "Supports separating earlier detection, survival-after-diagnosis statistics, mortality reduction, overdiagnosis, follow-up burden and net screening benefit.",
+      "endpointDefinition": "For cancer-screening-early-detection-continuity, admissible endpoint language is limited to the registered endpoint candidates: cancer-mortality-risk, treatment-burden, effective-time-preservation. The source does not add a new endpoint beyond this field row.",
+      "populationOrSample": "The source is used as a value, governance, architecture, preservation, cognitive-support or time-accounting anchor; a concrete Human Infra population, eligibility rule, measurement protocol, scenario card and follow-up horizon must be supplied by a later domain-specific study before quantitative use.",
+      "effectOrMechanismSignal": "Endpoint-interpretation signal only: detection timing can change observed survival statistics without changing death time or net continuity gain.",
+      "uncertaintyOrBias": "Lead-time bias, length bias, overdiagnosis, false positives, downstream procedures and access differences can make screening claims misleading.",
+      "transferBoundary": "Transfer only as screening endpoint and bias vocabulary. It does not endorse or reject individual screening and does not prove mortality benefit.",
+      "modelAdmissionDecision": "endpoint-bias-support-only-blocked-for-screening-benefit-claim",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "intervention-ranking",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Create screening route cards that include mortality, overdiagnosis, follow-up and access gates."
+    },
+    {
+      "domainId": "neuro-continuity",
+      "domainClaimId": "HIDOM-CL011",
+      "fieldCardId": "HIDOM-FLD011",
+      "sourceCardId": "SA-WHO-CONSTITUTION",
+      "extractionStatus": "completed-third-wave-continuity-governance-and-future-path-field-extraction",
+      "sourceRole": "health-functioning-wellbeing-value-anchor",
+      "exactClaimUse": "Supports defining subject continuity and effective life through physical, mental and social functioning, not survival or disease absence alone.",
+      "endpointDefinition": "For neuro-continuity, admissible endpoint language is limited to the registered endpoint candidates: agency-preservation, identity-continuity, effective-time-quality. The source does not add a new endpoint beyond this field row.",
+      "populationOrSample": "The source is used as a value, governance, architecture, preservation, cognitive-support or time-accounting anchor; a concrete Human Infra population, eligibility rule, measurement protocol, scenario card and follow-up horizon must be supplied by a later domain-specific study before quantitative use.",
+      "effectOrMechanismSignal": "Value-definition signal only: identifies health dimensions that must be observed when judging effective time, function and future option value.",
+      "uncertaintyOrBias": "The source is a constitutional value anchor, not an empirical transition model; operational measures, populations and outcomes must be defined separately.",
+      "transferBoundary": "Transfer only as health-functioning and wellbeing vocabulary. It does not prove any intervention effect, disease endpoint, or individual prognosis.",
+      "modelAdmissionDecision": "value-definition-support-only-blocked-for-intervention-or-prediction-claim",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "intervention-ranking",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Create variables for memory, executive function, agency, communication and identity-continuity risk."
+    },
+    {
+      "domainId": "neuro-continuity",
+      "domainClaimId": "HIDOM-CL011",
+      "fieldCardId": "HIDOM-FLD011",
+      "sourceCardId": "SA-EXTENDED-MIND-1998",
+      "extractionStatus": "completed-third-wave-continuity-governance-and-future-path-field-extraction",
+      "sourceRole": "extended-cognition-tool-dependence-continuity-anchor",
+      "exactClaimUse": "Supports modeling stable external tools, records and memory systems as possible subject-support infrastructure when integration and reliability criteria hold.",
+      "endpointDefinition": "For neuro-continuity, admissible endpoint language is limited to the registered endpoint candidates: agency-preservation, identity-continuity, effective-time-quality. The source does not add a new endpoint beyond this field row.",
+      "populationOrSample": "The source is used as a value, governance, architecture, preservation, cognitive-support or time-accounting anchor; a concrete Human Infra population, eligibility rule, measurement protocol, scenario card and follow-up horizon must be supplied by a later domain-specific study before quantitative use.",
+      "effectOrMechanismSignal": "Conceptual cognition-support signal only: external supports may change task capacity if reliable, available and integrated, but task performance requires separate evidence.",
+      "uncertaintyOrBias": "Tool dependence, loss of access, security failure, coercion, non-portability and unreliable integration can turn enhancement into continuity risk.",
+      "transferBoundary": "Transfer only as extended-cognition and tool-dependence vocabulary. It does not prove memory preservation, identity continuity or task-performance gain.",
+      "modelAdmissionDecision": "cognitive-infrastructure-support-only-blocked-for-performance-or-continuity-claim",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "intervention-ranking",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Create variables for memory, executive function, agency, communication and identity-continuity risk."
+    },
+    {
+      "domainId": "neuro-continuity",
+      "domainClaimId": "HIDOM-CL011",
+      "fieldCardId": "HIDOM-FLD011",
+      "sourceCardId": "SA-DYNAMIC-DIGITAL-TWIN-2022",
+      "extractionStatus": "completed-third-wave-continuity-governance-and-future-path-field-extraction",
+      "sourceRole": "subject-state-modeling-architecture-anchor",
+      "exactClaimUse": "Supports digital twin language only when observation, integration, update, validation and use-case boundaries are specified.",
+      "endpointDefinition": "For neuro-continuity, admissible endpoint language is limited to the registered endpoint candidates: agency-preservation, identity-continuity, effective-time-quality. The source does not add a new endpoint beyond this field row.",
+      "populationOrSample": "The source is used as a value, governance, architecture, preservation, cognitive-support or time-accounting anchor; a concrete Human Infra population, eligibility rule, measurement protocol, scenario card and follow-up horizon must be supplied by a later domain-specific study before quantitative use.",
+      "effectOrMechanismSignal": "Architecture signal only: a digital twin can host state and risk models if data, validation and update loops exist; it supplies no risk estimate by itself.",
+      "uncertaintyOrBias": "Data quality, missingness, representativeness, validation failure, model drift, causal confusion and governance limits can invalidate twin-based claims.",
+      "transferBoundary": "Transfer only as modeling-architecture vocabulary. It does not authorize prediction, prevention, treatment, personal advice or simulated-subject continuity claims.",
+      "modelAdmissionDecision": "modeling-architecture-support-only-blocked-for-prediction-or-treatment-claim",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "intervention-ranking",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Create variables for memory, executive function, agency, communication and identity-continuity risk."
+    },
+    {
+      "domainId": "mitochondrial-bioenergetics",
+      "domainClaimId": "HIDOM-CL012",
+      "fieldCardId": "HIDOM-FLD012",
+      "sourceCardId": "SA-WHO-CONSTITUTION",
+      "extractionStatus": "completed-third-wave-continuity-governance-and-future-path-field-extraction",
+      "sourceRole": "health-functioning-wellbeing-value-anchor",
+      "exactClaimUse": "Supports defining subject continuity and effective life through physical, mental and social functioning, not survival or disease absence alone.",
+      "endpointDefinition": "For mitochondrial-bioenergetics, admissible endpoint language is limited to the registered endpoint candidates: action-capacity, recovery-quality, disease-risk-channel. The source does not add a new endpoint beyond this field row.",
+      "populationOrSample": "The source is used as a value, governance, architecture, preservation, cognitive-support or time-accounting anchor; a concrete Human Infra population, eligibility rule, measurement protocol, scenario card and follow-up horizon must be supplied by a later domain-specific study before quantitative use.",
+      "effectOrMechanismSignal": "Value-definition signal only: identifies health dimensions that must be observed when judging effective time, function and future option value.",
+      "uncertaintyOrBias": "The source is a constitutional value anchor, not an empirical transition model; operational measures, populations and outcomes must be defined separately.",
+      "transferBoundary": "Transfer only as health-functioning and wellbeing vocabulary. It does not prove any intervention effect, disease endpoint, or individual prognosis.",
+      "modelAdmissionDecision": "value-definition-support-only-blocked-for-intervention-or-prediction-claim",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "intervention-ranking",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Build a biomarker-to-function map for mitochondrial claims."
+    },
+    {
+      "domainId": "extracellular-matrix-glycation",
+      "domainClaimId": "HIDOM-CL017",
+      "fieldCardId": "HIDOM-FLD017",
+      "sourceCardId": "SA-WHO-CONSTITUTION",
+      "extractionStatus": "completed-third-wave-continuity-governance-and-future-path-field-extraction",
+      "sourceRole": "health-functioning-wellbeing-value-anchor",
+      "exactClaimUse": "Supports defining subject continuity and effective life through physical, mental and social functioning, not survival or disease absence alone.",
+      "endpointDefinition": "For extracellular-matrix-glycation, admissible endpoint language is limited to the registered endpoint candidates: mobility-and-function, organ-resilience, repair-or-fibrosis-risk. The source does not add a new endpoint beyond this field row.",
+      "populationOrSample": "The source is used as a value, governance, architecture, preservation, cognitive-support or time-accounting anchor; a concrete Human Infra population, eligibility rule, measurement protocol, scenario card and follow-up horizon must be supplied by a later domain-specific study before quantitative use.",
+      "effectOrMechanismSignal": "Value-definition signal only: identifies health dimensions that must be observed when judging effective time, function and future option value.",
+      "uncertaintyOrBias": "The source is a constitutional value anchor, not an empirical transition model; operational measures, populations and outcomes must be defined separately.",
+      "transferBoundary": "Transfer only as health-functioning and wellbeing vocabulary. It does not prove any intervention effect, disease endpoint, or individual prognosis.",
+      "modelAdmissionDecision": "value-definition-support-only-blocked-for-intervention-or-prediction-claim",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "intervention-ranking",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Build ECM Source Cards linking crosslinks, fibrosis, tissue mechanics and functional outcomes."
+    },
+    {
+      "domainId": "microbiome-ecology",
+      "domainClaimId": "HIDOM-CL019",
+      "fieldCardId": "HIDOM-FLD019",
+      "sourceCardId": "SA-WHO-CONSTITUTION",
+      "extractionStatus": "completed-third-wave-continuity-governance-and-future-path-field-extraction",
+      "sourceRole": "health-functioning-wellbeing-value-anchor",
+      "exactClaimUse": "Supports defining subject continuity and effective life through physical, mental and social functioning, not survival or disease absence alone.",
+      "endpointDefinition": "For microbiome-ecology, admissible endpoint language is limited to the registered endpoint candidates: metabolic-and-immune-resilience, infection-or-inflammation-risk, function-and-recovery-change. The source does not add a new endpoint beyond this field row.",
+      "populationOrSample": "The source is used as a value, governance, architecture, preservation, cognitive-support or time-accounting anchor; a concrete Human Infra population, eligibility rule, measurement protocol, scenario card and follow-up horizon must be supplied by a later domain-specific study before quantitative use.",
+      "effectOrMechanismSignal": "Value-definition signal only: identifies health dimensions that must be observed when judging effective time, function and future option value.",
+      "uncertaintyOrBias": "The source is a constitutional value anchor, not an empirical transition model; operational measures, populations and outcomes must be defined separately.",
+      "transferBoundary": "Transfer only as health-functioning and wellbeing vocabulary. It does not prove any intervention effect, disease endpoint, or individual prognosis.",
+      "modelAdmissionDecision": "value-definition-support-only-blocked-for-intervention-or-prediction-claim",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "intervention-ranking",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Build microbiome Source Cards separating association, causality, intervention response and safety transfer risks."
+    },
+    {
+      "domainId": "musculoskeletal-integrity",
+      "domainClaimId": "HIDOM-CL021",
+      "fieldCardId": "HIDOM-FLD021",
+      "sourceCardId": "SA-WHO-CONSTITUTION",
+      "extractionStatus": "completed-third-wave-continuity-governance-and-future-path-field-extraction",
+      "sourceRole": "health-functioning-wellbeing-value-anchor",
+      "exactClaimUse": "Supports defining subject continuity and effective life through physical, mental and social functioning, not survival or disease absence alone.",
+      "endpointDefinition": "For musculoskeletal-integrity, admissible endpoint language is limited to the registered endpoint candidates: ADL-and-task-execution, injury-and-disability-risk, effective-time-preservation. The source does not add a new endpoint beyond this field row.",
+      "populationOrSample": "The source is used as a value, governance, architecture, preservation, cognitive-support or time-accounting anchor; a concrete Human Infra population, eligibility rule, measurement protocol, scenario card and follow-up horizon must be supplied by a later domain-specific study before quantitative use.",
+      "effectOrMechanismSignal": "Value-definition signal only: identifies health dimensions that must be observed when judging effective time, function and future option value.",
+      "uncertaintyOrBias": "The source is a constitutional value anchor, not an empirical transition model; operational measures, populations and outcomes must be defined separately.",
+      "transferBoundary": "Transfer only as health-functioning and wellbeing vocabulary. It does not prove any intervention effect, disease endpoint, or individual prognosis.",
+      "modelAdmissionDecision": "value-definition-support-only-blocked-for-intervention-or-prediction-claim",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "intervention-ranking",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Create a musculoskeletal variable table connecting strength, balance, fracture risk, pain and task execution."
+    },
+    {
+      "domainId": "nutrition-metabolic-health",
+      "domainClaimId": "HIDOM-CL022",
+      "fieldCardId": "HIDOM-FLD022",
+      "sourceCardId": "SA-WHO-CONSTITUTION",
+      "extractionStatus": "completed-third-wave-continuity-governance-and-future-path-field-extraction",
+      "sourceRole": "health-functioning-wellbeing-value-anchor",
+      "exactClaimUse": "Supports defining subject continuity and effective life through physical, mental and social functioning, not survival or disease absence alone.",
+      "endpointDefinition": "For nutrition-metabolic-health, admissible endpoint language is limited to the registered endpoint candidates: functional-energy-and-recovery, cardiometabolic-risk-change, effective-time-and-access-burden. The source does not add a new endpoint beyond this field row.",
+      "populationOrSample": "The source is used as a value, governance, architecture, preservation, cognitive-support or time-accounting anchor; a concrete Human Infra population, eligibility rule, measurement protocol, scenario card and follow-up horizon must be supplied by a later domain-specific study before quantitative use.",
+      "effectOrMechanismSignal": "Value-definition signal only: identifies health dimensions that must be observed when judging effective time, function and future option value.",
+      "uncertaintyOrBias": "The source is a constitutional value anchor, not an empirical transition model; operational measures, populations and outcomes must be defined separately.",
+      "transferBoundary": "Transfer only as health-functioning and wellbeing vocabulary. It does not prove any intervention effect, disease endpoint, or individual prognosis.",
+      "modelAdmissionDecision": "value-definition-support-only-blocked-for-intervention-or-prediction-claim",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "intervention-ranking",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Separate metabolic biomarkers, functional energy, adherence, access and adverse nutrition channels."
+    },
+    {
+      "domainId": "respiratory-oxygenation",
+      "domainClaimId": "HIDOM-CL024",
+      "fieldCardId": "HIDOM-FLD024",
+      "sourceCardId": "SA-WHO-CONSTITUTION",
+      "extractionStatus": "completed-third-wave-continuity-governance-and-future-path-field-extraction",
+      "sourceRole": "health-functioning-wellbeing-value-anchor",
+      "exactClaimUse": "Supports defining subject continuity and effective life through physical, mental and social functioning, not survival or disease absence alone.",
+      "endpointDefinition": "For respiratory-oxygenation, admissible endpoint language is limited to the registered endpoint candidates: cognitive-and-physical-energy, acute-respiratory-failure-risk, effective-time-loss. The source does not add a new endpoint beyond this field row.",
+      "populationOrSample": "The source is used as a value, governance, architecture, preservation, cognitive-support or time-accounting anchor; a concrete Human Infra population, eligibility rule, measurement protocol, scenario card and follow-up horizon must be supplied by a later domain-specific study before quantitative use.",
+      "effectOrMechanismSignal": "Value-definition signal only: identifies health dimensions that must be observed when judging effective time, function and future option value.",
+      "uncertaintyOrBias": "The source is a constitutional value anchor, not an empirical transition model; operational measures, populations and outcomes must be defined separately.",
+      "transferBoundary": "Transfer only as health-functioning and wellbeing vocabulary. It does not prove any intervention effect, disease endpoint, or individual prognosis.",
+      "modelAdmissionDecision": "value-definition-support-only-blocked-for-intervention-or-prediction-claim",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "intervention-ranking",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Connect oxygenation, sleep breathing, airway risk and environmental exposure to energy and effective-time outputs."
+    },
+    {
+      "domainId": "blood-oxygen-hemostasis",
+      "domainClaimId": "HIDOM-CL025",
+      "fieldCardId": "HIDOM-FLD025",
+      "sourceCardId": "SA-WHO-CONSTITUTION",
+      "extractionStatus": "completed-third-wave-continuity-governance-and-future-path-field-extraction",
+      "sourceRole": "health-functioning-wellbeing-value-anchor",
+      "exactClaimUse": "Supports defining subject continuity and effective life through physical, mental and social functioning, not survival or disease absence alone.",
+      "endpointDefinition": "For blood-oxygen-hemostasis, admissible endpoint language is limited to the registered endpoint candidates: fatigue-and-function, acute-event-risk, treatment-safety-balance. The source does not add a new endpoint beyond this field row.",
+      "populationOrSample": "The source is used as a value, governance, architecture, preservation, cognitive-support or time-accounting anchor; a concrete Human Infra population, eligibility rule, measurement protocol, scenario card and follow-up horizon must be supplied by a later domain-specific study before quantitative use.",
+      "effectOrMechanismSignal": "Value-definition signal only: identifies health dimensions that must be observed when judging effective time, function and future option value.",
+      "uncertaintyOrBias": "The source is a constitutional value anchor, not an empirical transition model; operational measures, populations and outcomes must be defined separately.",
+      "transferBoundary": "Transfer only as health-functioning and wellbeing vocabulary. It does not prove any intervention effect, disease endpoint, or individual prognosis.",
+      "modelAdmissionDecision": "value-definition-support-only-blocked-for-intervention-or-prediction-claim",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "intervention-ranking",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Build a hemostasis tradeoff map covering oxygen transport, bleeding, thrombosis, transfusion and functional endpoints."
+    },
+    {
+      "domainId": "endocrine-hormonal-regulation",
+      "domainClaimId": "HIDOM-CL026",
+      "fieldCardId": "HIDOM-FLD026",
+      "sourceCardId": "SA-WHO-CONSTITUTION",
+      "extractionStatus": "completed-third-wave-continuity-governance-and-future-path-field-extraction",
+      "sourceRole": "health-functioning-wellbeing-value-anchor",
+      "exactClaimUse": "Supports defining subject continuity and effective life through physical, mental and social functioning, not survival or disease absence alone.",
+      "endpointDefinition": "For endocrine-hormonal-regulation, admissible endpoint language is limited to the registered endpoint candidates: energy-recovery-and-function, multi-system-risk-balance, effective-time-and-safety. The source does not add a new endpoint beyond this field row.",
+      "populationOrSample": "The source is used as a value, governance, architecture, preservation, cognitive-support or time-accounting anchor; a concrete Human Infra population, eligibility rule, measurement protocol, scenario card and follow-up horizon must be supplied by a later domain-specific study before quantitative use.",
+      "effectOrMechanismSignal": "Value-definition signal only: identifies health dimensions that must be observed when judging effective time, function and future option value.",
+      "uncertaintyOrBias": "The source is a constitutional value anchor, not an empirical transition model; operational measures, populations and outcomes must be defined separately.",
+      "transferBoundary": "Transfer only as health-functioning and wellbeing vocabulary. It does not prove any intervention effect, disease endpoint, or individual prognosis.",
+      "modelAdmissionDecision": "value-definition-support-only-blocked-for-intervention-or-prediction-claim",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "intervention-ranking",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Create endocrine axis cards separating deficiency, excess, replacement, suppression, feedback and adverse tradeoffs."
     }
   ],
   "nonClaims": [
-    "This register does not complete the full 81-task source-specific extraction queue.",
+    "This register completes the current 81-task source-specific field extraction queue but does not complete fresh external literature review.",
     "This register does not prove that any domain intervention extends lifespan, healthspan, effective time or future option value.",
     "This register does not authorize calibrated survival prediction, individual death-date output, clinical advice, or intervention ranking.",
-    "This register does not replace full-text peer review or source-context verification."
+    "This register does not replace full-text peer review, source-context verification, variable-card promotion or model validation."
   ],
   "indexRequirements": [
     "README.md",

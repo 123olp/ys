@@ -16,7 +16,7 @@ FIELD_REGISTER_PATH = ROOT / "docs/reference/human-infra-domain-source-card-fiel
 SOURCE_EXTRACTION_PATH = ROOT / "docs/reference/human-infra-falsifier-source-card-extraction.json"
 
 SCHEMA = "human-infra.domain-source-specific-extraction-register.v1"
-STATUS = "partial-second-wave-biological-mechanism-extractions-not-complete"
+STATUS = "all-queued-source-specific-extractions-complete-pending-fresh-review"
 REGISTER_LINK = "human-infra-domain-source-specific-extraction-register.json"
 EXPECTED_SOURCES = {
     "SA-KAPLAN-MEIER-1958": {
@@ -138,6 +138,105 @@ EXPECTED_SOURCES = {
             "individual-recommendation",
             "intervention-ranking",
             "individual-death-date-output",
+        },
+    },
+    "SA-WHO-CONSTITUTION": {
+        "role": "health-functioning-wellbeing-value-anchor",
+        "decision": "value-definition-support-only-blocked-for-intervention-or-prediction-claim",
+        "row_status": "completed-third-wave-continuity-governance-and-future-path-field-extraction",
+        "blocked": {
+            "calibrated-prediction",
+            "individual-recommendation",
+            "intervention-ranking",
+            "domain-claim-upgrade",
+        },
+    },
+    "SA-CAPABILITY-APPROACH": {
+        "role": "capability-option-value-and-functioning-value-anchor",
+        "decision": "value-framework-support-only-blocked-for-effect-claim",
+        "row_status": "completed-third-wave-continuity-governance-and-future-path-field-extraction",
+        "blocked": {
+            "calibrated-prediction",
+            "individual-recommendation",
+            "intervention-ranking",
+            "domain-claim-upgrade",
+        },
+    },
+    "SA-EXTENDED-MIND-1998": {
+        "role": "extended-cognition-tool-dependence-continuity-anchor",
+        "decision": "cognitive-infrastructure-support-only-blocked-for-performance-or-continuity-claim",
+        "row_status": "completed-third-wave-continuity-governance-and-future-path-field-extraction",
+        "blocked": {
+            "calibrated-prediction",
+            "individual-recommendation",
+            "intervention-ranking",
+            "domain-claim-upgrade",
+        },
+    },
+    "SA-DYNAMIC-DIGITAL-TWIN-2022": {
+        "role": "subject-state-modeling-architecture-anchor",
+        "decision": "modeling-architecture-support-only-blocked-for-prediction-or-treatment-claim",
+        "row_status": "completed-third-wave-continuity-governance-and-future-path-field-extraction",
+        "blocked": {
+            "calibrated-prediction",
+            "individual-recommendation",
+            "intervention-ranking",
+            "domain-claim-upgrade",
+        },
+    },
+    "SA-BRAIN-PRESERVATION-2024": {
+        "role": "brain-information-preservation-and-continuity-boundary-anchor",
+        "decision": "preservation-structure-support-only-blocked-for-revival-or-identity-claim",
+        "row_status": "completed-third-wave-continuity-governance-and-future-path-field-extraction",
+        "blocked": {
+            "calibrated-prediction",
+            "individual-recommendation",
+            "intervention-ranking",
+            "domain-claim-upgrade",
+        },
+    },
+    "SA-GPS-RELATIVITY-2003": {
+        "role": "proper-time-reference-frame-accounting-anchor",
+        "decision": "time-accounting-support-only-blocked-for-waiting-feasibility-claim",
+        "row_status": "completed-third-wave-continuity-governance-and-future-path-field-extraction",
+        "blocked": {
+            "calibrated-prediction",
+            "individual-recommendation",
+            "intervention-ranking",
+            "domain-claim-upgrade",
+        },
+    },
+    "SA-NASA-BLACK-HOLES": {
+        "role": "black-hole-public-boundary-and-hazard-explainer-anchor",
+        "decision": "public-explainer-support-only-blocked-for-engineering-feasibility-claim",
+        "row_status": "completed-third-wave-continuity-governance-and-future-path-field-extraction",
+        "blocked": {
+            "calibrated-prediction",
+            "individual-recommendation",
+            "intervention-ranking",
+            "domain-claim-upgrade",
+        },
+    },
+    "SA-NIST-AI-RMF-2023": {
+        "role": "ai-risk-governance-and-trustworthiness-anchor",
+        "decision": "ai-governance-support-only-blocked-for-autonomous-action-claim",
+        "row_status": "completed-third-wave-continuity-governance-and-future-path-field-extraction",
+        "blocked": {
+            "calibrated-prediction",
+            "individual-recommendation",
+            "intervention-ranking",
+            "domain-claim-upgrade",
+        },
+    },
+    "SA-NCI-SCREENING-BIAS": {
+        "role": "screening-endpoint-bias-and-harm-boundary-anchor",
+        "decision": "endpoint-bias-support-only-blocked-for-screening-benefit-claim",
+        "row_status": "completed-third-wave-continuity-governance-and-future-path-field-extraction",
+        "blocked": {
+            "calibrated-prediction",
+            "individual-recommendation",
+            "intervention-ranking",
+            "domain-claim-upgrade",
         },
     },
 }
@@ -299,8 +398,8 @@ def validate_scope(scope: Any, completed_count: int, touched_fields: int, queued
     if not isinstance(scope, dict):
         fail(errors, "scope must be an object")
         return
-    if scope.get("coverageLevel") != "partial-second-wave-biological-mechanism-extractions":
-        fail(errors, "scope.coverageLevel must be partial-second-wave-biological-mechanism-extractions")
+    if scope.get("coverageLevel") != "full-queue-source-specific-field-extractions":
+        fail(errors, "scope.coverageLevel must be full-queue-source-specific-field-extractions")
     if scope.get("derivedTaskUnit") != "domainId + sourceCardId":
         fail(errors, "scope.derivedTaskUnit must be domainId + sourceCardId")
     expected_counts = {
@@ -316,7 +415,7 @@ def validate_scope(scope: Any, completed_count: int, touched_fields: int, queued
             fail(errors, f"scope.{key} must equal {expected}")
     source_anchors = set(require_string_list(scope.get("completedSourceAnchors"), "scope.completedSourceAnchors", errors, len(EXPECTED_SOURCES)))
     if source_anchors != set(EXPECTED_SOURCES):
-        fail(errors, "scope.completedSourceAnchors must equal the registered method and biological-mechanism anchors")
+        fail(errors, "scope.completedSourceAnchors must equal all registered source anchors")
     require_string(scope.get("selectionRule"), "scope.selectionRule", errors)
     require_string_list(scope.get("currentLimitations"), "scope.currentLimitations", errors, 3)
 
@@ -347,7 +446,7 @@ def validate_anchor_decisions(decisions: Any, errors: list[str]) -> None:
             fail(errors, f"{source_id}.blockedUses must equal expected blocked uses")
         require_string(item.get("transferBoundary"), f"{source_id}.transferBoundary", errors)
     if seen != set(EXPECTED_SOURCES):
-        fail(errors, "sourceAnchorDecisions must contain every registered method and biological-mechanism anchor")
+        fail(errors, "sourceAnchorDecisions must contain every registered source anchor")
 
 
 def validate_completed_rows(rows: Any, field_context: dict[tuple[str, str], dict[str, Any]], errors: list[str]) -> tuple[int, int]:
@@ -382,7 +481,7 @@ def validate_completed_rows(rows: Any, field_context: dict[tuple[str, str], dict
             continue
 
         if source_id not in EXPECTED_SOURCES:
-            fail(errors, f"completed row uses source outside registered method and biological-mechanism anchors: {domain_id}/{source_id}")
+            fail(errors, f"completed row uses source outside registered source anchors: {domain_id}/{source_id}")
             continue
         expected = EXPECTED_SOURCES[source_id]
         if row.get("domainClaimId") != field_row.get("domainClaimId"):
