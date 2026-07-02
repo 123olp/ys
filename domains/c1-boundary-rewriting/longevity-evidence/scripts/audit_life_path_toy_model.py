@@ -112,6 +112,15 @@ DEFAULT_NHATS_VARIABLE_CONFIRMATION_MATRIX = (
     / "manual"
     / "life_path_nhats_variable_confirmation_matrix.json"
 )
+DEFAULT_NHATS_COHORT_FLOW_ENDPOINT_PROTOCOL = (
+    REPO_ROOT
+    / "domains"
+    / "c1-boundary-rewriting"
+    / "longevity-evidence"
+    / "data"
+    / "manual"
+    / "life_path_nhats_cohort_flow_endpoint_protocol.json"
+)
 REQUIRED_MODEL_CARD_FIELDS = {
     "modelName",
     "modelClass",
@@ -303,6 +312,55 @@ REQUIRED_NHATS_VARIABLE_MATRIX_GATE_IDS = {
     "survey-design-ready",
     "missingness-map-ready",
     "ai-and-disclosure-safe",
+}
+REQUIRED_NHATS_COHORT_FLOW_SOURCE_FACT_IDS = {
+    "colectica-required-for-routes",
+    "conditions-aggregate-ai-boundary",
+    "sensitive-small-cell-boundary",
+    "user-guide-missing-route-boundary",
+    "sample-design-weight-boundary",
+    "r13-r14-file-window",
+}
+REQUIRED_NHATS_COHORT_FLOW_ROW_IDS = {
+    "source_refresh",
+    "registered_access",
+    "canonical_r13_file_selection",
+    "canonical_r14_file_selection",
+    "r13_baseline_candidates",
+    "r13_design_identity_ready",
+    "r14_followup_linkage",
+    "r14_endpoint_route_counts",
+    "survey_design_ready",
+    "disclosure_control_ready",
+}
+REQUIRED_NHATS_ENDPOINT_ROUTE_IDS = {
+    "alive_self_interview",
+    "alive_proxy_interview",
+    "alive_known_not_interviewed",
+    "alive_residential_or_facility_route",
+    "decedent_or_death_boundary",
+    "not_classifiable_missing_route",
+    "excluded_sensitive_or_restricted_required",
+    "suppressed_small_cell",
+}
+REQUIRED_NHATS_COHORT_OUTPUT_IDS = {
+    "cohort_flow_counts",
+    "endpoint_route_counts",
+    "missingness_table",
+    "survey_design_plan",
+    "disclosure_control_report",
+    "aggregate_functional_survival_distribution",
+}
+REQUIRED_NHATS_COHORT_GATE_IDS = {
+    "official-source-refresh",
+    "registered-access",
+    "canonical-file-selection",
+    "colectica-route-confirmation",
+    "missingness-route-map",
+    "endpoint-route-map",
+    "survey-design-ready",
+    "disclosure-control-ready",
+    "governed-storage-ready",
 }
 
 
@@ -2167,6 +2225,286 @@ def audit_nhats_variable_confirmation_matrix(matrix_path: Path) -> dict[str, Any
     }
 
 
+def audit_nhats_cohort_flow_endpoint_protocol(protocol_path: Path) -> dict[str, Any]:
+    checks: list[dict[str, Any]] = []
+    exists = protocol_path.exists()
+    add_check(
+        checks,
+        "nhats-cohort-flow-endpoint-protocol-exists",
+        status_from_bool(exists),
+        str(protocol_path.relative_to(REPO_ROOT)),
+    )
+    protocol = load_json(protocol_path) if exists else {}
+
+    schema_ok = (
+        protocol.get("schemaVersion")
+        == "human-infra.life-path-nhats-cohort-flow-endpoint-protocol.v1"
+    )
+    add_check(
+        checks,
+        "nhats-cohort-flow-endpoint-protocol-schema",
+        status_from_bool(exists and schema_ok),
+        f"schemaVersion={protocol.get('schemaVersion')!r}",
+    )
+
+    identity_ok = (
+        protocol.get("sourceId") == "nhats"
+        and protocol.get("protocolId") == "nhats-r13-r14-cohort-flow-endpoint-protocol-draft"
+        and protocol.get("estimandProtocolId")
+        == "nhats-r13-r14-functional-survival-estimand-protocol-draft"
+        and protocol.get("variableConfirmationMatrixId")
+        == "nhats-r13-r14-variable-confirmation-matrix-draft"
+        and protocol.get("manifestId") == "nhats-r1-r14-effective-time-manifest-draft"
+        and protocol.get("fileTierTableId") == "nhats-r13-r14-file-tier-table-draft"
+        and protocol.get("status") == "protocol-only-cannot-extract"
+    )
+    add_check(
+        checks,
+        "nhats-cohort-flow-endpoint-protocol-identity",
+        status_from_bool(exists and identity_ok),
+        "protocol must bind NHATS source, first estimand, variable matrix, manifest, file-tier table and cannot-extract status",
+    )
+
+    decision = protocol.get("currentDecision")
+    decision_ok = (
+        isinstance(decision, dict)
+        and decision.get("cohortFlowRunnable") is False
+        and decision.get("endpointRoutingRunnable") is False
+        and decision.get("downloadAllowed") is False
+        and decision.get("extractionScriptAllowed") is False
+        and decision.get("weightedMetricsAllowed") is False
+        and decision.get("publicExportAllowed") is False
+        and decision.get("calibrationAllowed") is False
+        and decision.get("individualPredictionAllowed") is False
+    )
+    add_check(
+        checks,
+        "nhats-cohort-flow-endpoint-protocol-current-decision",
+        status_from_bool(exists and decision_ok),
+        "current decision must block cohort flow, endpoint routing, download, extraction scripts, weighted metrics, public export, calibration and individual prediction",
+    )
+
+    facts = protocol.get("officialSourceFacts")
+    observed_fact_ids: set[str] = set()
+    facts_ok = isinstance(facts, list) and len(facts) >= len(
+        REQUIRED_NHATS_COHORT_FLOW_SOURCE_FACT_IDS
+    )
+    source_urls_ok = True
+    if isinstance(facts, list):
+        for fact in facts:
+            if not isinstance(fact, dict):
+                facts_ok = False
+                continue
+            fact_id = fact.get("id")
+            if isinstance(fact_id, str):
+                observed_fact_ids.add(fact_id)
+            url = fact.get("sourceUrl")
+            if not isinstance(url, str) or not url.startswith("https://"):
+                source_urls_ok = False
+            if not str(fact.get("fact", "")).strip() or not str(
+                fact.get("modelConsequence", "")
+            ).strip():
+                facts_ok = False
+    missing_fact_ids = sorted(REQUIRED_NHATS_COHORT_FLOW_SOURCE_FACT_IDS - observed_fact_ids)
+    add_check(
+        checks,
+        "nhats-cohort-flow-endpoint-protocol-source-facts",
+        status_from_bool(exists and facts_ok and source_urls_ok and not missing_fact_ids),
+        f"missing_fact_ids={missing_fact_ids}",
+    )
+
+    rows = protocol.get("cohortFlowRows")
+    observed_row_ids: set[str] = set()
+    rows_ok = isinstance(rows, list) and len(rows) >= len(REQUIRED_NHATS_COHORT_FLOW_ROW_IDS)
+    if isinstance(rows, list):
+        for row in rows:
+            if not isinstance(row, dict):
+                rows_ok = False
+                continue
+            row_id = row.get("id")
+            if isinstance(row_id, str):
+                observed_row_ids.add(row_id)
+            if row.get("status") != "missing" or row.get("blocksRun") is not True:
+                rows_ok = False
+            if not str(row.get("requiredEvidence", "")).strip() or not str(
+                row.get("outputArtifact", "")
+            ).strip():
+                rows_ok = False
+    missing_row_ids = sorted(REQUIRED_NHATS_COHORT_FLOW_ROW_IDS - observed_row_ids)
+    add_check(
+        checks,
+        "nhats-cohort-flow-endpoint-protocol-flow-rows",
+        status_from_bool(exists and rows_ok and not missing_row_ids),
+        f"missing_row_ids={missing_row_ids}",
+    )
+
+    routes = protocol.get("endpointRouteClasses")
+    observed_route_ids: set[str] = set()
+    routes_ok = isinstance(routes, list) and len(routes) >= len(REQUIRED_NHATS_ENDPOINT_ROUTE_IDS)
+    if isinstance(routes, list):
+        for route in routes:
+            if not isinstance(route, dict):
+                routes_ok = False
+                continue
+            route_id = route.get("id")
+            if isinstance(route_id, str):
+                observed_route_ids.add(route_id)
+            if route.get("currentStatus") != "unconfirmed":
+                routes_ok = False
+            if not str(route.get("meaning", "")).strip() or not str(
+                route.get("requiredEvidence", "")
+            ).strip():
+                routes_ok = False
+    missing_route_ids = sorted(REQUIRED_NHATS_ENDPOINT_ROUTE_IDS - observed_route_ids)
+    add_check(
+        checks,
+        "nhats-cohort-flow-endpoint-protocol-route-classes",
+        status_from_bool(exists and routes_ok and not missing_route_ids),
+        f"missing_route_ids={missing_route_ids}",
+    )
+
+    outputs = protocol.get("analysisOutputContracts")
+    observed_output_ids: set[str] = set()
+    outputs_ok = isinstance(outputs, list) and len(outputs) >= len(REQUIRED_NHATS_COHORT_OUTPUT_IDS)
+    if isinstance(outputs, list):
+        for output in outputs:
+            if not isinstance(output, dict):
+                outputs_ok = False
+                continue
+            output_id = output.get("id")
+            if isinstance(output_id, str):
+                observed_output_ids.add(output_id)
+            if output.get("rowLevelAllowed") is not False:
+                outputs_ok = False
+            if output.get("requiresDisclosureReview") is not True:
+                outputs_ok = False
+            if not str(output.get("meaning", "")).strip():
+                outputs_ok = False
+    missing_output_ids = sorted(REQUIRED_NHATS_COHORT_OUTPUT_IDS - observed_output_ids)
+    add_check(
+        checks,
+        "nhats-cohort-flow-endpoint-protocol-output-contracts",
+        status_from_bool(exists and outputs_ok and not missing_output_ids),
+        f"missing_output_ids={missing_output_ids}",
+    )
+
+    disclosure = protocol.get("disclosureControl")
+    disclosure_ok = (
+        isinstance(disclosure, dict)
+        and disclosure.get("smallCellThreshold") == 5
+        and has_text(disclosure.get("smallCellRule", ""), "Counts below 5")
+        and disclosure.get("publicAiUploadAllowed") is False
+        and disclosure.get("rowLevelExportAllowed") is False
+        and disclosure.get("aggregateOnly") is True
+        and disclosure.get("status") == "not-ready"
+    )
+    add_check(
+        checks,
+        "nhats-cohort-flow-endpoint-protocol-disclosure-control",
+        status_from_bool(exists and disclosure_ok),
+        "disclosure control must enforce n<5 suppression, aggregate-only export, no row-level export and no public AI upload",
+    )
+
+    gates = protocol.get("readinessGates")
+    observed_gate_ids: set[str] = set()
+    gates_ok = isinstance(gates, list) and len(gates) >= len(REQUIRED_NHATS_COHORT_GATE_IDS)
+    if isinstance(gates, list):
+        for gate in gates:
+            if not isinstance(gate, dict):
+                gates_ok = False
+                continue
+            gate_id = gate.get("id")
+            if isinstance(gate_id, str):
+                observed_gate_ids.add(gate_id)
+            if gate.get("status") != "missing" or gate.get("blocksRun") is not True:
+                gates_ok = False
+            if not str(gate.get("requiredEvidence", "")).strip():
+                gates_ok = False
+    missing_gate_ids = sorted(REQUIRED_NHATS_COHORT_GATE_IDS - observed_gate_ids)
+    add_check(
+        checks,
+        "nhats-cohort-flow-endpoint-protocol-readiness-gates",
+        status_from_bool(exists and gates_ok and not missing_gate_ids),
+        f"missing_gate_ids={missing_gate_ids}",
+    )
+
+    summary = protocol.get("gateSummary")
+    summary_ok = (
+        isinstance(summary, dict)
+        and summary.get("requiredGateCount") == len(REQUIRED_NHATS_COHORT_GATE_IDS)
+        and summary.get("readyGateCount") == 0
+        and summary.get("missingGateCount") == len(REQUIRED_NHATS_COHORT_GATE_IDS)
+        and summary.get("blockingGateCount") == len(REQUIRED_NHATS_COHORT_GATE_IDS)
+    )
+    add_check(
+        checks,
+        "nhats-cohort-flow-endpoint-protocol-gate-summary",
+        status_from_bool(exists and summary_ok),
+        "gate summary must keep every cohort-flow and endpoint-routing gate missing and blocking",
+    )
+
+    prohibited = protocol.get("prohibitedActions")
+    prohibited_ok = (
+        isinstance(prohibited, list)
+        and has_text(prohibited, "download")
+        and has_text(prohibited, "extraction scripts")
+        and has_text(prohibited, "candidate field names")
+        and has_text(prohibited, "row-level")
+        and has_text(prohibited, "individual death-date")
+        and has_text(prohibited, "public AI")
+        and has_text(prohibited, "small-cell")
+        and has_text(prohibited, "calibration")
+    )
+    add_check(
+        checks,
+        "nhats-cohort-flow-endpoint-protocol-prohibited-actions",
+        status_from_bool(exists and prohibited_ok),
+        "protocol must prohibit download, scripts, candidate-name routing, row-level export, individual death-date prediction, public AI upload, small-cell export and calibration claims",
+    )
+
+    next_work_ok = (
+        isinstance(protocol.get("nextWork"), list)
+        and has_text(protocol["nextWork"], "Colectica")
+        and has_text(protocol["nextWork"], "canonical public annual")
+        and has_text(protocol["nextWork"], "cohort-flow")
+        and has_text(protocol["nextWork"], "missingness")
+        and has_text(protocol["nextWork"], "disclosure-control")
+        and has_text(protocol["nextWork"], "survey-design")
+    )
+    add_check(
+        checks,
+        "nhats-cohort-flow-endpoint-protocol-next-work",
+        status_from_bool(exists and next_work_ok),
+        "next work must point to Colectica route fields, canonical files, cohort-flow table, missingness map, disclosure control and survey design",
+    )
+
+    source_trace = protocol.get("sourceTrace")
+    source_trace_ok = (
+        isinstance(source_trace, list)
+        and all(isinstance(url, str) and url.startswith("https://") for url in source_trace)
+        and has_text(source_trace, "cross-year-search")
+        and has_text(source_trace, "conditions-of-use")
+        and has_text(source_trace, "NHATSUserGuideR14")
+        and has_text(source_trace, "NHATSTechnicalPaper55")
+        and has_text(source_trace, "nhats/13")
+        and has_text(source_trace, "nhats/14")
+    )
+    add_check(
+        checks,
+        "nhats-cohort-flow-endpoint-protocol-source-trace",
+        status_from_bool(exists and source_trace_ok),
+        "source trace must include Cross-Year Search, Conditions, User Guide, Technical Paper 55 and R13/R14 file pages",
+    )
+
+    return {
+        "path": str(protocol_path.relative_to(REPO_ROOT)),
+        "sha256": sha256_file(protocol_path) if exists else None,
+        "status": "PASS" if summarize_checks(checks)["fail"] == 0 else "FAIL",
+        "checks": checks,
+        "summary": summarize_checks(checks),
+    }
+
+
 def audit_sensitivity_analysis(
     sensitivity_path: Path,
     model_data: dict[str, Any],
@@ -2409,6 +2747,7 @@ def audit_model(
     nhats_file_tier_table_path: Path,
     nhats_first_estimand_protocol_path: Path,
     nhats_variable_confirmation_matrix_path: Path,
+    nhats_cohort_flow_endpoint_protocol_path: Path,
 ) -> dict[str, Any]:
     checks: list[dict[str, Any]] = []
     schema_version = data.get("schemaVersion")
@@ -2595,6 +2934,11 @@ def audit_model(
     nhats_variable_confirmation_matrix_audit = audit_nhats_variable_confirmation_matrix(
         nhats_variable_confirmation_matrix_path,
     )
+    nhats_cohort_flow_endpoint_protocol_audit = (
+        audit_nhats_cohort_flow_endpoint_protocol(
+            nhats_cohort_flow_endpoint_protocol_path,
+        )
+    )
     sensitivity_audit = audit_sensitivity_analysis(sensitivity_path, data, model_path)
     checks.extend(readiness_audit["checks"])
     checks.extend(data_sources_audit["checks"])
@@ -2605,6 +2949,7 @@ def audit_model(
     checks.extend(nhats_file_tier_table_audit["checks"])
     checks.extend(nhats_first_estimand_protocol_audit["checks"])
     checks.extend(nhats_variable_confirmation_matrix_audit["checks"])
+    checks.extend(nhats_cohort_flow_endpoint_protocol_audit["checks"])
     checks.extend(sensitivity_audit["checks"])
     failed = [check for check in checks if check["status"] == "FAIL"]
     overall = "PASS" if not failed else "FAIL"
@@ -2626,6 +2971,7 @@ def audit_model(
         "nhatsFileTierTable": nhats_file_tier_table_audit,
         "nhatsFirstEstimandProtocol": nhats_first_estimand_protocol_audit,
         "nhatsVariableConfirmationMatrix": nhats_variable_confirmation_matrix_audit,
+        "nhatsCohortFlowEndpointProtocol": nhats_cohort_flow_endpoint_protocol_audit,
         "sensitivityAnalysis": sensitivity_audit,
     }
 
@@ -2717,6 +3063,13 @@ def render_markdown(audit: dict[str, Any]) -> str:
             f"- Variable confirmation matrix status: `{audit['nhatsVariableConfirmationMatrix']['status']}`",
             "- Boundary: the variable confirmation matrix records official source facts, candidate field patterns, variable groups and cohort-flow gates, but it still blocks data download, extraction scripts, unconfirmed pattern-derived variables, calibration and individual prediction.",
             "",
+            "## NHATS Cohort Flow Endpoint Protocol",
+            "",
+            f"- Cohort-flow endpoint protocol path: `{audit['nhatsCohortFlowEndpointProtocol']['path']}`",
+            f"- Cohort-flow endpoint protocol SHA-256: `{audit['nhatsCohortFlowEndpointProtocol']['sha256']}`",
+            f"- Cohort-flow endpoint protocol status: `{audit['nhatsCohortFlowEndpointProtocol']['status']}`",
+            "- Boundary: the cohort-flow endpoint protocol pre-registers route classes, aggregate output contracts, disclosure control and blocking gates, but it still blocks download, extraction, endpoint routing, public export, calibration and individual prediction.",
+            "",
             "## Sensitivity Analysis",
             "",
             f"- Sensitivity path: `{audit['sensitivityAnalysis']['path']}`",
@@ -2785,6 +3138,11 @@ def parse_args() -> argparse.Namespace:
         type=Path,
         default=DEFAULT_NHATS_VARIABLE_CONFIRMATION_MATRIX,
     )
+    parser.add_argument(
+        "--nhats-cohort-flow-endpoint-protocol",
+        type=Path,
+        default=DEFAULT_NHATS_COHORT_FLOW_ENDPOINT_PROTOCOL,
+    )
     parser.add_argument("--json-out", type=Path, default=DEFAULT_JSON_OUT)
     parser.add_argument("--md-out", type=Path, default=DEFAULT_MD_OUT)
     return parser.parse_args()
@@ -2807,6 +3165,9 @@ def main() -> int:
     nhats_variable_confirmation_matrix_path = (
         args.nhats_variable_confirmation_matrix.resolve()
     )
+    nhats_cohort_flow_endpoint_protocol_path = (
+        args.nhats_cohort_flow_endpoint_protocol.resolve()
+    )
     audit = audit_model(
         load_json(model_path),
         model_path,
@@ -2822,6 +3183,7 @@ def main() -> int:
         nhats_file_tier_table_path,
         nhats_first_estimand_protocol_path,
         nhats_variable_confirmation_matrix_path,
+        nhats_cohort_flow_endpoint_protocol_path,
     )
     args.json_out.parent.mkdir(parents=True, exist_ok=True)
     with args.json_out.open("w", encoding="utf-8") as handle:

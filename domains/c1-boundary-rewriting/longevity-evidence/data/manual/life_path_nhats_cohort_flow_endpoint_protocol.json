@@ -1,0 +1,329 @@
+{
+  "schemaVersion": "human-infra.life-path-nhats-cohort-flow-endpoint-protocol.v1",
+  "sourceId": "nhats",
+  "sourceName": "National Health and Aging Trends Study",
+  "protocolId": "nhats-r13-r14-cohort-flow-endpoint-protocol-draft",
+  "estimandProtocolId": "nhats-r13-r14-functional-survival-estimand-protocol-draft",
+  "variableConfirmationMatrixId": "nhats-r13-r14-variable-confirmation-matrix-draft",
+  "manifestId": "nhats-r1-r14-effective-time-manifest-draft",
+  "fileTierTableId": "nhats-r13-r14-file-tier-table-draft",
+  "reviewDate": "2026-07-02",
+  "reviewer": "tradecatlabs",
+  "status": "protocol-only-cannot-extract",
+  "protocolPurpose": "Pre-register the R13/R14 cohort-flow, endpoint-routing, survey-design and disclosure-control protocol that must exist before any NHATS extraction script, weighted metric, calibration, validation or public Web output.",
+  "currentDecision": {
+    "cohortFlowRunnable": false,
+    "endpointRoutingRunnable": false,
+    "downloadAllowed": false,
+    "extractionScriptAllowed": false,
+    "weightedMetricsAllowed": false,
+    "publicExportAllowed": false,
+    "calibrationAllowed": false,
+    "individualPredictionAllowed": false,
+    "reason": "The required route classes and output contracts are pre-registered, but registration, exact variables, missing codes, endpoint fields, survey-design variables, cohort-flow evidence and disclosure-control validation remain incomplete."
+  },
+  "officialSourceFacts": [
+    {
+      "id": "colectica-required-for-routes",
+      "sourceUrl": "https://www.nhats.org/data-access/cross-year-search",
+      "fact": "NHATS Cross-Year Search is a Colectica metadata database that includes item numbers, variable names, labels, values, value labels and question text after separate registration.",
+      "modelConsequence": "No cohort-flow or endpoint route may be computed from candidate prose names; every route field must be confirmed from Colectica, codebooks or official crosswalks."
+    },
+    {
+      "id": "conditions-aggregate-ai-boundary",
+      "sourceUrl": "https://www.nhats.org/conditions-of-use",
+      "fact": "NHATS/NSOC Conditions of Use require aggregate statistical reporting, prohibit unapproved sharing, and prohibit uploading NHATS/NSOC data to public LLM or AI platforms.",
+      "modelConsequence": "Only aggregate non-disclosive route counts can leave a governed workspace; public AI systems may receive public documentation, synthetic examples or approved aggregate outputs only."
+    },
+    {
+      "id": "sensitive-small-cell-boundary",
+      "sourceUrl": "https://www.nhats.org/conditions-of-use",
+      "fact": "Sensitive-data tabulations with fewer than five observations require suppression or additional restriction handling under the NHATS/NSOC Conditions of Use.",
+      "modelConsequence": "Cohort-flow and endpoint-route outputs must pass a small-cell disclosure gate before public export."
+    },
+    {
+      "id": "user-guide-missing-route-boundary",
+      "sourceUrl": "https://nhats.org/sites/default/files/public-documentation/NHATSUserGuideR14_02102026.pdf",
+      "fact": "The Rounds 1-14 User Guide documents variable naming conventions, public-use file structure and standard negative-value missingness codes.",
+      "modelConsequence": "Every endpoint route must distinguish real endpoint states from refusal, don't know, inapplicable, missing, proxy, route and skip-pattern states before metrics."
+    },
+    {
+      "id": "sample-design-weight-boundary",
+      "sourceUrl": "https://nhats.org/sites/default/files/public-documentation/NHATSTechnicalPaper55_09042025.pdf",
+      "fact": "NHATS sample design and weighting documentation describes analytic weights, strata, PSU/cluster and variance approaches.",
+      "modelConsequence": "Weighted route counts or population summaries are blocked until the analysis weight, strata, PSU/cluster and variance method are fixed."
+    },
+    {
+      "id": "r13-r14-file-window",
+      "sourceUrl": "https://nhats.org/data-access/nhats/13",
+      "fact": "The R13 and R14 file pages list public annual file families, public clock drawing image resources, and sensitive resources with separate application requirements.",
+      "modelConsequence": "The first route protocol is limited to the candidate public annual R13/R14 path until registration, canonical format selection and file-tier constraints are complete."
+    }
+  ],
+  "cohortFlowRows": [
+    {
+      "id": "source_refresh",
+      "label": "Official source refresh",
+      "requiredEvidence": "Date-stamped review of NHATS Data Access, Conditions of Use, Cross-Year Search, R13/R14 file pages, User Guide and Technical Paper 55.",
+      "outputArtifact": "source_refresh_record",
+      "status": "missing",
+      "blocksRun": true
+    },
+    {
+      "id": "registered_access",
+      "label": "Registered access boundary",
+      "requiredEvidence": "Registered NHATS account, permitted user boundary and data-sharing obligations recorded outside the public repository.",
+      "outputArtifact": "governed_access_record",
+      "status": "missing",
+      "blocksRun": true
+    },
+    {
+      "id": "canonical_r13_file_selection",
+      "label": "Canonical R13 public annual file",
+      "requiredEvidence": "One R13 public annual file format selected with release path, access tier, storage boundary and no-public-AI rule.",
+      "outputArtifact": "r13_file_selection_record",
+      "status": "missing",
+      "blocksRun": true
+    },
+    {
+      "id": "canonical_r14_file_selection",
+      "label": "Canonical R14 public annual file",
+      "requiredEvidence": "One R14 public annual file format selected with release path, access tier, storage boundary and no-public-AI rule.",
+      "outputArtifact": "r14_file_selection_record",
+      "status": "missing",
+      "blocksRun": true
+    },
+    {
+      "id": "r13_baseline_candidates",
+      "label": "R13 baseline eligible candidates",
+      "requiredEvidence": "R13 sample-person eligibility, age frame, interview route, residence route, public-use field tier and design identity fields confirmed.",
+      "outputArtifact": "r13_baseline_candidate_count",
+      "status": "missing",
+      "blocksRun": true
+    },
+    {
+      "id": "r13_design_identity_ready",
+      "label": "R13 design and identity readiness",
+      "requiredEvidence": "Join key, round identifier, cohort flag, interview status, analysis weight, strata and PSU/cluster fields confirmed.",
+      "outputArtifact": "r13_design_identity_ready_flag",
+      "status": "missing",
+      "blocksRun": true
+    },
+    {
+      "id": "r14_followup_linkage",
+      "label": "R13-to-R14 linkage",
+      "requiredEvidence": "Official join key, follow-up status categories, route variables and allowed public-use linkage boundary confirmed.",
+      "outputArtifact": "r13_to_r14_linkage_count",
+      "status": "missing",
+      "blocksRun": true
+    },
+    {
+      "id": "r14_endpoint_route_counts",
+      "label": "R14 endpoint route counts",
+      "requiredEvidence": "R14 alive, proxy, known-alive-not-interviewed, residential/facility, decedent/death-boundary, missing and restricted routes mapped to confirmed fields.",
+      "outputArtifact": "r14_endpoint_route_count_table",
+      "status": "missing",
+      "blocksRun": true
+    },
+    {
+      "id": "survey_design_ready",
+      "label": "Survey design readiness",
+      "requiredEvidence": "Analysis weight, strata, PSU/cluster, variance method and population inference boundary fixed before weighted metrics.",
+      "outputArtifact": "survey_design_plan",
+      "status": "missing",
+      "blocksRun": true
+    },
+    {
+      "id": "disclosure_control_ready",
+      "label": "Disclosure control readiness",
+      "requiredEvidence": "Aggregate-only export, n < 5 suppression, no row-level output and public-AI upload exclusion validator implemented.",
+      "outputArtifact": "disclosure_control_report",
+      "status": "missing",
+      "blocksRun": true
+    }
+  ],
+  "endpointRouteClasses": [
+    {
+      "id": "alive_self_interview",
+      "meaning": "R14 route where the sample person is alive and represented by a direct self interview.",
+      "requiredEvidence": "Confirmed R14 interview-status and self-route value labels.",
+      "currentStatus": "unconfirmed"
+    },
+    {
+      "id": "alive_proxy_interview",
+      "meaning": "R14 route where the sample person is alive and represented by a proxy interview or proxy measurement route.",
+      "requiredEvidence": "Confirmed proxy route variables, value labels and substitution rules.",
+      "currentStatus": "unconfirmed"
+    },
+    {
+      "id": "alive_known_not_interviewed",
+      "meaning": "R14 route where the sample person is known or inferred alive but does not have a usable interview for endpoint component construction.",
+      "requiredEvidence": "Confirmed status categories distinguishing alive noninterview from refusal, missing, inapplicable and death boundary.",
+      "currentStatus": "unconfirmed"
+    },
+    {
+      "id": "alive_residential_or_facility_route",
+      "meaning": "R14 route where residential care, facility or nursing-home context changes the functional-survival interpretation.",
+      "requiredEvidence": "Confirmed residential/facility route variables, public-use tier and endpoint aggregation rule.",
+      "currentStatus": "unconfirmed"
+    },
+    {
+      "id": "decedent_or_death_boundary",
+      "meaning": "R14 route where the endpoint boundary is death or a decedent status allowed by public-use fields.",
+      "requiredEvidence": "Confirmed death/decedent flag, file tier, value labels and no individual death-date output rule.",
+      "currentStatus": "unconfirmed"
+    },
+    {
+      "id": "not_classifiable_missing_route",
+      "meaning": "Rows that cannot be safely assigned to a functional-survival route because missingness, skip logic, nonresponse or value labels remain unresolved.",
+      "requiredEvidence": "Complete negative-code and skip-logic map for every selected field.",
+      "currentStatus": "unconfirmed"
+    },
+    {
+      "id": "excluded_sensitive_or_restricted_required",
+      "meaning": "Rows or route detail that would require sensitive or restricted NHATS files not approved for the first public-use pass.",
+      "requiredEvidence": "File-tier table linking the route to sensitive or restricted resources and an exclusion rule.",
+      "currentStatus": "unconfirmed"
+    },
+    {
+      "id": "suppressed_small_cell",
+      "meaning": "Aggregate route cells that cannot be publicly exported because disclosure control flags cell size or sensitivity concerns.",
+      "requiredEvidence": "Disclosure-control validator result with small-cell threshold and export decision.",
+      "currentStatus": "unconfirmed"
+    }
+  ],
+  "analysisOutputContracts": [
+    {
+      "id": "cohort_flow_counts",
+      "meaning": "Aggregate count table for every cohort-flow row from source refresh through disclosure control.",
+      "rowLevelAllowed": false,
+      "requiresDisclosureReview": true
+    },
+    {
+      "id": "endpoint_route_counts",
+      "meaning": "Aggregate count table for R14 endpoint-route classes after confirmed route mapping.",
+      "rowLevelAllowed": false,
+      "requiresDisclosureReview": true
+    },
+    {
+      "id": "missingness_table",
+      "meaning": "Aggregate missingness and not-classifiable route table for selected variables and endpoint classes.",
+      "rowLevelAllowed": false,
+      "requiresDisclosureReview": true
+    },
+    {
+      "id": "survey_design_plan",
+      "meaning": "Documentation artifact fixing weight, strata, PSU/cluster and variance method before weighted route outputs.",
+      "rowLevelAllowed": false,
+      "requiresDisclosureReview": true
+    },
+    {
+      "id": "disclosure_control_report",
+      "meaning": "Pre-export validation artifact for aggregate-only, n < 5 suppression, no row-level export and no public AI upload.",
+      "rowLevelAllowed": false,
+      "requiresDisclosureReview": true
+    },
+    {
+      "id": "aggregate_functional_survival_distribution",
+      "meaning": "Aggregate distribution of the pre-registered functional-survival outcome after all gates are ready.",
+      "rowLevelAllowed": false,
+      "requiresDisclosureReview": true
+    }
+  ],
+  "disclosureControl": {
+    "smallCellThreshold": 5,
+    "smallCellRule": "Counts below 5 must not be publicly exported; sensitive-data magnitude or frequency tabulations with n < 5 require suppression or additional restriction handling.",
+    "publicAiUploadAllowed": false,
+    "rowLevelExportAllowed": false,
+    "aggregateOnly": true,
+    "status": "not-ready"
+  },
+  "readinessGates": [
+    {
+      "id": "official-source-refresh",
+      "requiredEvidence": "Fresh official page review before any download, extraction or route mapping.",
+      "status": "missing",
+      "blocksRun": true
+    },
+    {
+      "id": "registered-access",
+      "requiredEvidence": "Registered user and permitted-use boundary confirmed outside the public repository.",
+      "status": "missing",
+      "blocksRun": true
+    },
+    {
+      "id": "canonical-file-selection",
+      "requiredEvidence": "One canonical R13 and one canonical R14 public annual format selected with governed storage boundary.",
+      "status": "missing",
+      "blocksRun": true
+    },
+    {
+      "id": "colectica-route-confirmation",
+      "requiredEvidence": "Every cohort-flow and endpoint route field confirmed from Colectica, codebook or official crosswalk.",
+      "status": "missing",
+      "blocksRun": true
+    },
+    {
+      "id": "missingness-route-map",
+      "requiredEvidence": "Negative missing codes, skip logic, proxy route and not-classifiable rules mapped for all selected fields.",
+      "status": "missing",
+      "blocksRun": true
+    },
+    {
+      "id": "endpoint-route-map",
+      "requiredEvidence": "Alive, proxy, known-alive-not-interviewed, residential/facility, death boundary, missing, restricted and suppressed routes mapped.",
+      "status": "missing",
+      "blocksRun": true
+    },
+    {
+      "id": "survey-design-ready",
+      "requiredEvidence": "Analysis weight, strata, PSU/cluster and variance method fixed before weighted metrics.",
+      "status": "missing",
+      "blocksRun": true
+    },
+    {
+      "id": "disclosure-control-ready",
+      "requiredEvidence": "Aggregate-only, small-cell suppression and no-public-AI export validator implemented.",
+      "status": "missing",
+      "blocksRun": true
+    },
+    {
+      "id": "governed-storage-ready",
+      "requiredEvidence": "Non-public raw/derived storage, access log and destruction-on-request process defined.",
+      "status": "missing",
+      "blocksRun": true
+    }
+  ],
+  "gateSummary": {
+    "requiredGateCount": 9,
+    "readyGateCount": 0,
+    "missingGateCount": 9,
+    "blockingGateCount": 9
+  },
+  "prohibitedActions": [
+    "download NHATS files from this route protocol",
+    "write extraction scripts before route fields and missing codes are confirmed",
+    "compute endpoint routing from candidate field names",
+    "export row-level NHATS records",
+    "produce individual death-date prediction",
+    "upload raw, row-level or derived disclosive NHATS data to public AI systems",
+    "export small-cell route counts",
+    "claim calibration, validation, treatment effect or clinical usefulness"
+  ],
+  "nextWork": [
+    "Confirm exact Colectica route fields and value labels for R13/R14 identity, interview status, follow-up status, proxy, residential/facility and death-boundary variables.",
+    "Select canonical public annual R13/R14 files after registration and governed-storage setup.",
+    "Fill a cohort-flow count table only after route fields, missingness and file tiers are confirmed.",
+    "Build a missingness and endpoint-route map before any functional-survival metric.",
+    "Implement the disclosure-control validator before public export.",
+    "Fix survey-design weight, strata, PSU/cluster and variance method before weighted summaries."
+  ],
+  "sourceTrace": [
+    "https://www.nhats.org/data-access/cross-year-search",
+    "https://www.nhats.org/conditions-of-use",
+    "https://nhats.org/sites/default/files/public-documentation/NHATSUserGuideR14_02102026.pdf",
+    "https://nhats.org/sites/default/files/public-documentation/NHATSTechnicalPaper55_09042025.pdf",
+    "https://nhats.org/data-access/nhats/13",
+    "https://nhats.org/data-access/nhats/14"
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "schemaVersion": "human-infra.life-path-toy-audit.v1",
-  "generatedAt": "2026-07-02T02:44:01.742074+00:00",
+  "generatedAt": "2026-07-02T02:56:21.046161+00:00",
   "modelPath": "web/src/data/life-path-toy-model.json",
   "modelSha256": "a4c92209d79d20579bf1f575d5ebf07ffe5be9ccaf6bf3f3eef08efa287b5377",
   "overallStatus": "PASS",
@@ -626,6 +626,76 @@
       "detail": "source trace must include Cross-Year Search, User Guide, Technical Paper 55, Conditions of Use and R13/R14 file pages"
     },
     {
+      "id": "nhats-cohort-flow-endpoint-protocol-exists",
+      "status": "PASS",
+      "detail": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_cohort_flow_endpoint_protocol.json"
+    },
+    {
+      "id": "nhats-cohort-flow-endpoint-protocol-schema",
+      "status": "PASS",
+      "detail": "schemaVersion='human-infra.life-path-nhats-cohort-flow-endpoint-protocol.v1'"
+    },
+    {
+      "id": "nhats-cohort-flow-endpoint-protocol-identity",
+      "status": "PASS",
+      "detail": "protocol must bind NHATS source, first estimand, variable matrix, manifest, file-tier table and cannot-extract status"
+    },
+    {
+      "id": "nhats-cohort-flow-endpoint-protocol-current-decision",
+      "status": "PASS",
+      "detail": "current decision must block cohort flow, endpoint routing, download, extraction scripts, weighted metrics, public export, calibration and individual prediction"
+    },
+    {
+      "id": "nhats-cohort-flow-endpoint-protocol-source-facts",
+      "status": "PASS",
+      "detail": "missing_fact_ids=[]"
+    },
+    {
+      "id": "nhats-cohort-flow-endpoint-protocol-flow-rows",
+      "status": "PASS",
+      "detail": "missing_row_ids=[]"
+    },
+    {
+      "id": "nhats-cohort-flow-endpoint-protocol-route-classes",
+      "status": "PASS",
+      "detail": "missing_route_ids=[]"
+    },
+    {
+      "id": "nhats-cohort-flow-endpoint-protocol-output-contracts",
+      "status": "PASS",
+      "detail": "missing_output_ids=[]"
+    },
+    {
+      "id": "nhats-cohort-flow-endpoint-protocol-disclosure-control",
+      "status": "PASS",
+      "detail": "disclosure control must enforce n<5 suppression, aggregate-only export, no row-level export and no public AI upload"
+    },
+    {
+      "id": "nhats-cohort-flow-endpoint-protocol-readiness-gates",
+      "status": "PASS",
+      "detail": "missing_gate_ids=[]"
+    },
+    {
+      "id": "nhats-cohort-flow-endpoint-protocol-gate-summary",
+      "status": "PASS",
+      "detail": "gate summary must keep every cohort-flow and endpoint-routing gate missing and blocking"
+    },
+    {
+      "id": "nhats-cohort-flow-endpoint-protocol-prohibited-actions",
+      "status": "PASS",
+      "detail": "protocol must prohibit download, scripts, candidate-name routing, row-level export, individual death-date prediction, public AI upload, small-cell export and calibration claims"
+    },
+    {
+      "id": "nhats-cohort-flow-endpoint-protocol-next-work",
+      "status": "PASS",
+      "detail": "next work must point to Colectica route fields, canonical files, cohort-flow table, missingness map, disclosure control and survey design"
+    },
+    {
+      "id": "nhats-cohort-flow-endpoint-protocol-source-trace",
+      "status": "PASS",
+      "detail": "source trace must include Cross-Year Search, Conditions, User Guide, Technical Paper 55 and R13/R14 file pages"
+    },
+    {
       "id": "sensitivity-analysis-exists",
       "status": "PASS",
       "detail": "web/src/data/life-path-sensitivity-analysis.json"
@@ -682,7 +752,7 @@
     }
   ],
   "summary": {
-    "pass": 135,
+    "pass": 149,
     "warn": 0,
     "fail": 0
   },
@@ -1380,9 +1450,91 @@
       "fail": 0
     }
   },
+  "nhatsCohortFlowEndpointProtocol": {
+    "path": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_cohort_flow_endpoint_protocol.json",
+    "sha256": "e92a91ffda407cb8fab2e4c3991abadf0ab83c08642e3767802594ba4b037c00",
+    "status": "PASS",
+    "checks": [
+      {
+        "id": "nhats-cohort-flow-endpoint-protocol-exists",
+        "status": "PASS",
+        "detail": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_cohort_flow_endpoint_protocol.json"
+      },
+      {
+        "id": "nhats-cohort-flow-endpoint-protocol-schema",
+        "status": "PASS",
+        "detail": "schemaVersion='human-infra.life-path-nhats-cohort-flow-endpoint-protocol.v1'"
+      },
+      {
+        "id": "nhats-cohort-flow-endpoint-protocol-identity",
+        "status": "PASS",
+        "detail": "protocol must bind NHATS source, first estimand, variable matrix, manifest, file-tier table and cannot-extract status"
+      },
+      {
+        "id": "nhats-cohort-flow-endpoint-protocol-current-decision",
+        "status": "PASS",
+        "detail": "current decision must block cohort flow, endpoint routing, download, extraction scripts, weighted metrics, public export, calibration and individual prediction"
+      },
+      {
+        "id": "nhats-cohort-flow-endpoint-protocol-source-facts",
+        "status": "PASS",
+        "detail": "missing_fact_ids=[]"
+      },
+      {
+        "id": "nhats-cohort-flow-endpoint-protocol-flow-rows",
+        "status": "PASS",
+        "detail": "missing_row_ids=[]"
+      },
+      {
+        "id": "nhats-cohort-flow-endpoint-protocol-route-classes",
+        "status": "PASS",
+        "detail": "missing_route_ids=[]"
+      },
+      {
+        "id": "nhats-cohort-flow-endpoint-protocol-output-contracts",
+        "status": "PASS",
+        "detail": "missing_output_ids=[]"
+      },
+      {
+        "id": "nhats-cohort-flow-endpoint-protocol-disclosure-control",
+        "status": "PASS",
+        "detail": "disclosure control must enforce n<5 suppression, aggregate-only export, no row-level export and no public AI upload"
+      },
+      {
+        "id": "nhats-cohort-flow-endpoint-protocol-readiness-gates",
+        "status": "PASS",
+        "detail": "missing_gate_ids=[]"
+      },
+      {
+        "id": "nhats-cohort-flow-endpoint-protocol-gate-summary",
+        "status": "PASS",
+        "detail": "gate summary must keep every cohort-flow and endpoint-routing gate missing and blocking"
+      },
+      {
+        "id": "nhats-cohort-flow-endpoint-protocol-prohibited-actions",
+        "status": "PASS",
+        "detail": "protocol must prohibit download, scripts, candidate-name routing, row-level export, individual death-date prediction, public AI upload, small-cell export and calibration claims"
+      },
+      {
+        "id": "nhats-cohort-flow-endpoint-protocol-next-work",
+        "status": "PASS",
+        "detail": "next work must point to Colectica route fields, canonical files, cohort-flow table, missingness map, disclosure control and survey design"
+      },
+      {
+        "id": "nhats-cohort-flow-endpoint-protocol-source-trace",
+        "status": "PASS",
+        "detail": "source trace must include Cross-Year Search, Conditions, User Guide, Technical Paper 55 and R13/R14 file pages"
+      }
+    ],
+    "summary": {
+      "pass": 14,
+      "warn": 0,
+      "fail": 0
+    }
+  },
   "sensitivityAnalysis": {
     "path": "web/src/data/life-path-sensitivity-analysis.json",
-    "sha256": "23db0de266e11164bb1df1a13cff8f8ed874b6e99847d6e83e3e976be723a29e",
+    "sha256": "1bb9d489e06350705a6e2704294efa48091d41a89f609775b6611dc6a6808d0b",
     "status": "PASS",
     "checks": [
       {

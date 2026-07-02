@@ -3,7 +3,7 @@
 - Overall status: `PASS`
 - Model path: `web/src/data/life-path-toy-model.json`
 - Model SHA-256: `a4c92209d79d20579bf1f575d5ebf07ffe5be9ccaf6bf3f3eef08efa287b5377`
-- Generated at: `2026-07-02T02:44:01.742074+00:00`
+- Generated at: `2026-07-02T02:56:21.046161+00:00`
 
 ## Checks
 
@@ -133,6 +133,20 @@
 | `nhats-variable-confirmation-matrix-prohibited-actions` | `PASS` | matrix must prohibit download, extraction scripts, unconfirmed pattern names, outcome-peeking, public AI upload and individual outputs |
 | `nhats-variable-confirmation-matrix-next-work` | `PASS` | next work must point to Colectica, cohort flow, survey design and disclosure control |
 | `nhats-variable-confirmation-matrix-source-trace` | `PASS` | source trace must include Cross-Year Search, User Guide, Technical Paper 55, Conditions of Use and R13/R14 file pages |
+| `nhats-cohort-flow-endpoint-protocol-exists` | `PASS` | domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_cohort_flow_endpoint_protocol.json |
+| `nhats-cohort-flow-endpoint-protocol-schema` | `PASS` | schemaVersion='human-infra.life-path-nhats-cohort-flow-endpoint-protocol.v1' |
+| `nhats-cohort-flow-endpoint-protocol-identity` | `PASS` | protocol must bind NHATS source, first estimand, variable matrix, manifest, file-tier table and cannot-extract status |
+| `nhats-cohort-flow-endpoint-protocol-current-decision` | `PASS` | current decision must block cohort flow, endpoint routing, download, extraction scripts, weighted metrics, public export, calibration and individual prediction |
+| `nhats-cohort-flow-endpoint-protocol-source-facts` | `PASS` | missing_fact_ids=[] |
+| `nhats-cohort-flow-endpoint-protocol-flow-rows` | `PASS` | missing_row_ids=[] |
+| `nhats-cohort-flow-endpoint-protocol-route-classes` | `PASS` | missing_route_ids=[] |
+| `nhats-cohort-flow-endpoint-protocol-output-contracts` | `PASS` | missing_output_ids=[] |
+| `nhats-cohort-flow-endpoint-protocol-disclosure-control` | `PASS` | disclosure control must enforce n<5 suppression, aggregate-only export, no row-level export and no public AI upload |
+| `nhats-cohort-flow-endpoint-protocol-readiness-gates` | `PASS` | missing_gate_ids=[] |
+| `nhats-cohort-flow-endpoint-protocol-gate-summary` | `PASS` | gate summary must keep every cohort-flow and endpoint-routing gate missing and blocking |
+| `nhats-cohort-flow-endpoint-protocol-prohibited-actions` | `PASS` | protocol must prohibit download, scripts, candidate-name routing, row-level export, individual death-date prediction, public AI upload, small-cell export and calibration claims |
+| `nhats-cohort-flow-endpoint-protocol-next-work` | `PASS` | next work must point to Colectica route fields, canonical files, cohort-flow table, missingness map, disclosure control and survey design |
+| `nhats-cohort-flow-endpoint-protocol-source-trace` | `PASS` | source trace must include Cross-Year Search, Conditions, User Guide, Technical Paper 55 and R13/R14 file pages |
 | `sensitivity-analysis-exists` | `PASS` | web/src/data/life-path-sensitivity-analysis.json |
 | `sensitivity-schema-version` | `PASS` | schemaVersion='human-infra.life-path-sensitivity.v1' |
 | `sensitivity-source-model-hash` | `PASS` | sensitivity output must point back to the generated model path and sha256 |
@@ -212,10 +226,17 @@
 - Variable confirmation matrix status: `PASS`
 - Boundary: the variable confirmation matrix records official source facts, candidate field patterns, variable groups and cohort-flow gates, but it still blocks data download, extraction scripts, unconfirmed pattern-derived variables, calibration and individual prediction.
 
+## NHATS Cohort Flow Endpoint Protocol
+
+- Cohort-flow endpoint protocol path: `domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_cohort_flow_endpoint_protocol.json`
+- Cohort-flow endpoint protocol SHA-256: `e92a91ffda407cb8fab2e4c3991abadf0ab83c08642e3767802594ba4b037c00`
+- Cohort-flow endpoint protocol status: `PASS`
+- Boundary: the cohort-flow endpoint protocol pre-registers route classes, aggregate output contracts, disclosure control and blocking gates, but it still blocks download, extraction, endpoint routing, public export, calibration and individual prediction.
+
 ## Sensitivity Analysis
 
 - Sensitivity path: `web/src/data/life-path-sensitivity-analysis.json`
-- Sensitivity SHA-256: `23db0de266e11164bb1df1a13cff8f8ed874b6e99847d6e83e3e976be723a29e`
+- Sensitivity SHA-256: `1bb9d489e06350705a6e2704294efa48091d41a89f609775b6611dc6a6808d0b`
 - Sensitivity status: `PASS`
 - Boundary: sensitivity analysis is synthetic one-factor-at-a-time stress testing; it does not prove empirical parameter values, causal effects, calibrated prediction, or individual usefulness.
 
