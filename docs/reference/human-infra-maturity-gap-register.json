@@ -114,7 +114,7 @@
     {
       "axisId": "research_framework",
       "axisName": "研究框架",
-      "currentPercent": 92,
+      "currentPercent": 93,
       "targetPercent": 100,
       "definitionOfDone": "Every strong project claim can be traced to source cards, claim-evidence rows, variables, mechanism links, falsifiers, model position and governance boundary.",
       "primaryEvidence": [
@@ -179,12 +179,12 @@
             "tools/audit_human_infra_source_context_local_review_register.py"
           ],
           "missingEvidence": [
-            "Independent fresh reviewer verdicts for the 4 locally reviewed method anchors and 25 affected promotion tasks.",
-            "Source-context local review execution for the remaining non-method source anchors and 56 queued promotion tasks.",
+            "Independent fresh reviewer verdicts for the 6 locally reviewed foundation anchors and 50 affected promotion tasks.",
+            "Source-context local review execution for the remaining 31 queued promotion tasks.",
             "Promotion verdicts that classify each completed field row as supported, bounded, downgraded or rejected.",
             "Domain-level Claim-Evidence Matrix coverage beyond the current priority C1/C2 set."
           ],
-          "nextAction": "Convert the 25 locally reviewed method-anchor tasks into reviewed Source Card drafts only after independent review, then continue local source-context review for the remaining anchors and keep model admission blocked.",
+          "nextAction": "Convert the 50 locally reviewed foundation-anchor tasks into reviewed Source Card drafts only after independent review, then continue local source-context review for the remaining 31 promotion tasks and keep model admission blocked.",
           "blocks100Percent": true
         },
         {
@@ -206,12 +206,12 @@
             "tools/audit_human_infra_source_context_local_review_register.py"
           ],
           "missingEvidence": [
-            "Variable cards promoted from the 25 locally reviewed method-anchor tasks after independent fresh review.",
+            "Variable cards promoted from the 50 locally reviewed foundation-anchor tasks after independent fresh review.",
             "Endpoint, uncertainty and transfer-boundary cards derived from reviewed rows rather than field-extraction drafts.",
-            "Local source-context review and later card promotion for the remaining 56 queued promotion tasks.",
+            "Local source-context review and later card promotion for the remaining 31 queued promotion tasks.",
             "Domain-specific variable tables for C2 long-tail claims beyond the current priority set."
           ],
-          "nextAction": "Use the local review register as the first drafting queue for method-anchor variable, endpoint, uncertainty and transfer-boundary cards, while keeping calibrated prediction blocked until independent review and model gates pass.",
+          "nextAction": "Use the local review register as the first drafting queue for method, aging-mechanism and health-value variable, endpoint, uncertainty and transfer-boundary cards, while keeping calibrated prediction blocked until independent review and model gates pass.",
           "blocks100Percent": true
         },
         {
@@ -258,12 +258,12 @@
             "tools/audit_human_infra_source_context_local_review_register.py"
           ],
           "missingEvidence": [
-            "Executed downgrade checks for the 25 locally reviewed method-anchor promotion tasks.",
-            "Executed downgrade checks for the remaining 56 promotion tasks after local and independent review.",
+            "Executed downgrade checks for the 50 locally reviewed foundation-anchor promotion tasks.",
+            "Executed downgrade checks for the remaining 31 promotion tasks after local and independent review.",
             "Falsifier rows for C2 domain claims beyond the current 20-domain priority set.",
             "Independent reviewer-confirmed boundary checks that prevent completed field rows from being treated as calibrated evidence."
           ],
-          "nextAction": "Materialize downgrade-check rows from the 25 locally reviewed method anchors, then continue the remaining queue and connect rejected or indirect rows back to falsifier and variable-card gates.",
+          "nextAction": "Materialize downgrade-check rows from the 50 locally reviewed foundation anchors, then continue the remaining queue and connect rejected or indirect rows back to falsifier and variable-card gates.",
           "blocks100Percent": true
         }
       ]
@@ -410,7 +410,7 @@
   "nextWorkOrder": [
     {
       "priority": 1,
-      "item": "Continue from the source-context local review register: draft reviewed Source/variable/endpoint/uncertainty/transfer-boundary/downgrade card artifacts for the 25 affected method-anchor tasks after independent review, and run local review for the remaining 56 promotion tasks.",
+      "item": "Continue from the source-context local review register: draft reviewed Source/variable/endpoint/uncertainty/transfer-boundary/downgrade card artifacts for the 50 affected foundation-anchor tasks after independent review, and run local review for the remaining 31 promotion tasks.",
       "unblocks": [
         "RESEARCH-G3-c1-c2-source-cards",
         "RESEARCH-G4-variable-mechanism-contracts",

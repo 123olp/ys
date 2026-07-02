@@ -1,8 +1,8 @@
 {
   "schemaVersion": "human-infra.source-context-local-review-register.v1",
   "registerId": "human-infra-source-context-local-review-register-2026-07-02",
-  "status": "partial-local-review-method-anchors-complete-independent-fresh-review-required",
-  "purpose": "Record local source-context review for high-leverage method anchors before promoting completed domain-source field rows into reusable cards. This is not an external independent fresh-review verdict.",
+  "status": "partial-local-review-foundation-anchors-complete-independent-fresh-review-required",
+  "purpose": "Record local source-context review for high-leverage method, mechanism-taxonomy and value anchors before promoting completed domain-source field rows into reusable cards. This is not an external independent fresh-review verdict.",
   "sourceOfTruth": {
     "domainSourceCardPromotionQueue": "docs/reference/human-infra-domain-source-card-promotion-queue.json",
     "domainSourceSpecificExtractionRegister": "docs/reference/human-infra-domain-source-specific-extraction-register.json",
@@ -11,21 +11,23 @@
   },
   "scope": {
     "reviewLevel": "source-anchor-local-context-review",
-    "reviewedSourceAnchorCount": 4,
-    "affectedPromotionTaskCount": 25,
-    "affectedDomainCount": 16,
+    "reviewedSourceAnchorCount": 6,
+    "affectedPromotionTaskCount": 50,
+    "affectedDomainCount": 22,
     "reviewedSourceAnchors": [
       "SA-COX-1972",
+      "SA-HALLMARKS-AGING-2023",
       "SA-KAPLAN-MEIER-1958",
       "SA-TARGET-TRIAL-2022",
-      "SA-TRIPOD-AI-2024"
+      "SA-TRIPOD-AI-2024",
+      "SA-WHO-CONSTITUTION"
     ],
-    "selectionRule": "Review the four method anchors first because they govern survival curves, hazards, causal intervention framing and prediction-model reporting across multiple promotion tasks.",
+    "selectionRule": "Review the highest-leverage anchors first: method anchors that govern modeling language, an expanded aging-mechanism taxonomy that spans biological maintenance domains, and a health-functioning value anchor that constrains outcome framing.",
     "currentLimitations": [
       "This is a local source-context review, not an external independent fresh reviewer verdict.",
-      "Reviewed method anchors support method vocabulary only; they do not validate domain data, model calibration, intervention effects or individual recommendations.",
+      "Reviewed anchors support method, taxonomy and value vocabulary only; they do not validate domain data, model calibration, intervention effects or individual recommendations.",
       "Rows remain blocked from model admission until reviewed cards, downgrade checks and later model gates pass.",
-      "Biological, value, cognitive, preservation, future-waiting and governance anchors still need later local and independent review."
+      "Cancer, reprogramming, immune-aging, biomarker, brain-preservation, digital-twin, future-waiting, AI-governance and screening-bias anchors still need later local and independent review."
     ]
   },
   "requiredPerReviewFields": [
@@ -120,6 +122,109 @@
         "intervention-ranking",
         "domain-claim-upgrade",
         "clinical-validity-claim"
+      ]
+    },
+    {
+      "sourceCardId": "SA-HALLMARKS-AGING-2023",
+      "reviewedSourceTitle": "Hallmarks of aging: An expanding universe",
+      "reviewedSourceAuthors": "Carlos López-Otín; Maria A. Blasco; Linda Partridge; Manuel Serrano; Guido Kroemer",
+      "reviewedSourceYear": "2023",
+      "sourceType": "mechanism-taxonomy-review",
+      "reviewEvidence": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/36599349/",
+          "evidenceType": "pubmed-record",
+          "finding": "PubMed identifies the Cell 2023 review and records the expanded aging-hallmark framing, including twelve hallmark categories and the paper DOI 10.1016/j.cell.2022.11.001."
+        },
+        {
+          "url": "https://www.cell.com/cell/fulltext/S0092-8674(22)01377-0",
+          "evidenceType": "publisher-article-page",
+          "finding": "The Cell article is the primary publisher page for the 2023 expanded hallmark taxonomy. It supports mechanism-family vocabulary and interaction framing, not calibrated intervention effects."
+        }
+      ],
+      "supports": [
+        "Mechanism-taxonomy vocabulary for mapping aging-related maintenance layers across biological domains.",
+        "Multi-hallmark interaction framing that supports variable discovery and downgrade checks when single-channel claims overreach.",
+        "Boundary language separating plausible mechanism families from direct clinical benefit, longevity effect or route safety claims."
+      ],
+      "doesNotSupport": [
+        "Calibrated lifespan, healthspan or effective-time prediction.",
+        "Causal proof that targeting any hallmark improves human subject continuity.",
+        "Individual intervention ranking, medical advice or LEV-route success claims."
+      ],
+      "reviewerBoundary": "Transfer only as expanded aging mechanism taxonomy and variable-discovery vocabulary. Every domain use still needs endpoint, population, effect, uncertainty, tissue-context and intervention-specific evidence before model admission.",
+      "reviewDate": "2026-07-02",
+      "reviewMode": "local-source-context-review-from-primary-or-registry-sources",
+      "sourceContextVerdict": "local-review-pass-with-boundaries-requires-independent-fresh-review",
+      "promotionDecision": "eligible-for-card-drafting-only-after-independent-review",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-independent-review-and-model-gates",
+      "requiredNextArtifacts": [
+        "reviewed-source-card",
+        "variable-card",
+        "endpoint-card",
+        "uncertainty-card",
+        "transfer-boundary-card",
+        "downgrade-check-row"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "domain-claim-upgrade",
+        "clinical-validity-claim"
+      ],
+      "affectedPromotionTaskCount": 15,
+      "affectedPromotionTaskIds": [
+        "PROM-026-HIDOM-FLD002-SA-HALLMARKS-AGING-2023",
+        "PROM-030-HIDOM-FLD008-SA-HALLMARKS-AGING-2023",
+        "PROM-033-HIDOM-FLD010-SA-HALLMARKS-AGING-2023",
+        "PROM-035-HIDOM-FLD012-SA-HALLMARKS-AGING-2023",
+        "PROM-037-HIDOM-FLD013-SA-HALLMARKS-AGING-2023",
+        "PROM-041-HIDOM-FLD015-SA-HALLMARKS-AGING-2023",
+        "PROM-043-HIDOM-FLD016-SA-HALLMARKS-AGING-2023",
+        "PROM-046-HIDOM-FLD017-SA-HALLMARKS-AGING-2023",
+        "PROM-047-HIDOM-FLD018-SA-HALLMARKS-AGING-2023",
+        "PROM-050-HIDOM-FLD019-SA-HALLMARKS-AGING-2023",
+        "PROM-051-HIDOM-FLD020-SA-HALLMARKS-AGING-2023",
+        "PROM-052-HIDOM-FLD021-SA-HALLMARKS-AGING-2023",
+        "PROM-053-HIDOM-FLD022-SA-HALLMARKS-AGING-2023",
+        "PROM-054-HIDOM-FLD023-SA-HALLMARKS-AGING-2023",
+        "PROM-055-HIDOM-FLD026-SA-HALLMARKS-AGING-2023"
+      ],
+      "affectedDomainIds": [
+        "cardiovascular-resilience",
+        "cellular-senescence-clearance",
+        "endocrine-hormonal-regulation",
+        "extracellular-matrix-glycation",
+        "genomic-stability-dna-repair",
+        "immune-maintenance",
+        "longevity-evidence",
+        "microbiome-ecology",
+        "mitochondrial-bioenergetics",
+        "musculoskeletal-integrity",
+        "nutrition-metabolic-health",
+        "proteostasis-autophagy",
+        "regenerative-medicine",
+        "renal-hepatic-clearance",
+        "stem-cell-reserve-renewal"
+      ],
+      "affectedFieldCardIds": [
+        "HIDOM-FLD002",
+        "HIDOM-FLD008",
+        "HIDOM-FLD010",
+        "HIDOM-FLD012",
+        "HIDOM-FLD013",
+        "HIDOM-FLD015",
+        "HIDOM-FLD016",
+        "HIDOM-FLD017",
+        "HIDOM-FLD018",
+        "HIDOM-FLD019",
+        "HIDOM-FLD020",
+        "HIDOM-FLD021",
+        "HIDOM-FLD022",
+        "HIDOM-FLD023",
+        "HIDOM-FLD026"
       ]
     },
     {
@@ -343,6 +448,94 @@
         "intervention-ranking",
         "domain-claim-upgrade",
         "clinical-validity-claim"
+      ]
+    },
+    {
+      "sourceCardId": "SA-WHO-CONSTITUTION",
+      "reviewedSourceTitle": "Constitution of the World Health Organization",
+      "reviewedSourceAuthors": "World Health Organization",
+      "reviewedSourceYear": "1946/1948",
+      "sourceType": "constitutional-value-anchor",
+      "reviewEvidence": [
+        {
+          "url": "https://www.who.int/about/governance/constitution",
+          "evidenceType": "official-who-constitution-page",
+          "finding": "The official WHO page states the Constitution preamble principles, including health as physical, mental and social well-being, health as a fundamental right, and the dependence of health on cooperation and social measures."
+        },
+        {
+          "url": "https://treaties.un.org/doc/Treaties/1948/04/19480407%2010-51%20PM/Ch_IX_01p.pdf",
+          "evidenceType": "un-treaty-text-pdf",
+          "finding": "The UN treaty text provides the formal constitutional source context for the WHO preamble. It supports value and scope framing, not empirical transition probabilities or intervention effects."
+        }
+      ],
+      "supports": [
+        "Health, functioning and wellbeing vocabulary for evaluating subject continuity beyond mere survival or disease absence.",
+        "Value-scope framing that connects physical, mental and social conditions to Human Infra outcome selection.",
+        "Boundary language that makes health and social measures part of the infrastructure context without proving any specific domain intervention."
+      ],
+      "doesNotSupport": [
+        "Empirical effect sizes, transition functions, hazard reductions or causal mechanisms.",
+        "Individual prognosis, clinical recommendations, benefit eligibility or service advice.",
+        "Treating a broad wellbeing definition as a calibrated measurement model."
+      ],
+      "reviewerBoundary": "Transfer only as health-functioning, wellbeing and rights vocabulary for outcome framing. Operational endpoints, measures, populations, causal evidence and governance boundaries must be supplied separately.",
+      "reviewDate": "2026-07-02",
+      "reviewMode": "local-source-context-review-from-primary-or-registry-sources",
+      "sourceContextVerdict": "local-review-pass-with-boundaries-requires-independent-fresh-review",
+      "promotionDecision": "eligible-for-card-drafting-only-after-independent-review",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-independent-review-and-model-gates",
+      "requiredNextArtifacts": [
+        "reviewed-source-card",
+        "variable-card",
+        "endpoint-card",
+        "uncertainty-card",
+        "transfer-boundary-card",
+        "downgrade-check-row"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "domain-claim-upgrade",
+        "clinical-validity-claim"
+      ],
+      "affectedPromotionTaskCount": 10,
+      "affectedPromotionTaskIds": [
+        "PROM-064-HIDOM-FLD005-SA-WHO-CONSTITUTION",
+        "PROM-071-HIDOM-FLD011-SA-WHO-CONSTITUTION",
+        "PROM-074-HIDOM-FLD012-SA-WHO-CONSTITUTION",
+        "PROM-075-HIDOM-FLD017-SA-WHO-CONSTITUTION",
+        "PROM-076-HIDOM-FLD019-SA-WHO-CONSTITUTION",
+        "PROM-077-HIDOM-FLD021-SA-WHO-CONSTITUTION",
+        "PROM-078-HIDOM-FLD022-SA-WHO-CONSTITUTION",
+        "PROM-079-HIDOM-FLD024-SA-WHO-CONSTITUTION",
+        "PROM-080-HIDOM-FLD025-SA-WHO-CONSTITUTION",
+        "PROM-081-HIDOM-FLD026-SA-WHO-CONSTITUTION"
+      ],
+      "affectedDomainIds": [
+        "blood-oxygen-hemostasis",
+        "disembodied-cns",
+        "endocrine-hormonal-regulation",
+        "extracellular-matrix-glycation",
+        "microbiome-ecology",
+        "mitochondrial-bioenergetics",
+        "musculoskeletal-integrity",
+        "neuro-continuity",
+        "nutrition-metabolic-health",
+        "respiratory-oxygenation"
+      ],
+      "affectedFieldCardIds": [
+        "HIDOM-FLD005",
+        "HIDOM-FLD011",
+        "HIDOM-FLD012",
+        "HIDOM-FLD017",
+        "HIDOM-FLD019",
+        "HIDOM-FLD021",
+        "HIDOM-FLD022",
+        "HIDOM-FLD024",
+        "HIDOM-FLD025",
+        "HIDOM-FLD026"
       ]
     }
   ],

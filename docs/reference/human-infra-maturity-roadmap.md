@@ -24,7 +24,7 @@
 
 域-来源卡片晋升队列见 [`human-infra-domain-source-card-promotion-queue.json`](human-infra-domain-source-card-promotion-queue.json)，由 `make domain-source-promotion-audit` 检查 81 个完成字段行是否一一派生为 source-context fresh review、Source Card、变量卡、endpoint 卡、uncertainty 卡、transfer-boundary 卡和 downgrade check 任务。该队列只是下一步执行队列，不证明任何晋升任务已经完成，也不打开校准预测、个体建议或干预排序。
 
-来源语境本地复核账本见 [`human-infra-source-context-local-review-register.json`](human-infra-source-context-local-review-register.json)，由 `make source-context-local-review-audit` 检查第一批 4 个高杠杆方法锚点是否反查到 25 个晋升任务、来源证据、受影响域、阻塞用途和索引入口。该账本只是本地 source-context 复核，不等于独立 fresh review、Source Card 晋升完成或模型准入。
+来源语境本地复核账本见 [`human-infra-source-context-local-review-register.json`](human-infra-source-context-local-review-register.json)，由 `make source-context-local-review-audit` 检查第一批 6 个高杠杆方法、衰老机制和健康价值基础锚点是否反查到 50 个晋升任务、22 个受影响域、来源证据、阻塞用途和索引入口。该账本只是本地 source-context 复核，不等于独立 fresh review、Source Card 晋升完成或模型准入。
 
 ## Claim Spine
 
@@ -37,7 +37,7 @@
 | 轴线 | 当前成熟度 | 100% 状态 | 当前最大缺口 |
 | --- | ---: | --- | --- |
 | 项目价值 | 88% | 不同受众能用同一核心命题理解 Human Infra 的必要性 | 已有页面级 Claim ID 一致性门禁；还需要补 audience-to-claim map 和邻近项目边界对照 |
-| 研究框架 | 92% | 每条主张都进入 Source Card、Claim-Evidence Matrix、变量表和反证条件 | 已有核心主张矩阵、页面级 Claim ID 门禁、arXiv-style 论文页强主张门禁、C1/20 个优先 C2 反证覆盖门禁、v0.1 反证 Source Card 锚点回填、当前 21 个来源锚点字段级 Source Card 抽取、26 个优先域的域级 Claim-Evidence Matrix seed、26 个优先域的 endpoint 候选和 source-specific 深读槽位、81 个 domain-source 深读任务队列、81/81 个 domain-source 精读完成行、81 项卡片晋升队列、4 个方法锚点本地来源语境复核账本和本地审计门禁，但独立 fresh review、变量卡晋升、20 域之外的 C2 长尾域和校准模型准入仍未完成 |
+| 研究框架 | 93% | 每条主张都进入 Source Card、Claim-Evidence Matrix、变量表和反证条件 | 已有核心主张矩阵、页面级 Claim ID 门禁、arXiv-style 论文页强主张门禁、C1/20 个优先 C2 反证覆盖门禁、v0.1 反证 Source Card 锚点回填、当前 21 个来源锚点字段级 Source Card 抽取、26 个优先域的域级 Claim-Evidence Matrix seed、26 个优先域的 endpoint 候选和 source-specific 深读槽位、81 个 domain-source 深读任务队列、81/81 个 domain-source 精读完成行、81 项卡片晋升队列、6 个方法/机制/价值基础锚点本地来源语境复核账本和本地审计门禁，但独立 fresh review、变量卡晋升、20 域之外的 C2 长尾域和校准模型准入仍未完成 |
 | 定量模型 | 63% | 有可运行、可复现、可审查的场景级模型管线 | 已有 toy model、合成敏感性分析、审计器、校准预备契约、真实队列候选注册表、数据源 Source Cards、Data Card 模板、NHATS 数据准入草案、变量字典草案、extraction manifest 草案、机器可读 acquisition-readiness gates、R13/R14 file-tier table、第一版 NHATS estimand protocol、NHATS variable confirmation matrix、NHATS cohort-flow endpoint-routing protocol、synthetic disclosure-control validator、synthetic survey-design validator、synthetic missingness-route validator、NHATS route-field discovery validator 和 NHATS Colectica value-label review protocol validator，但还没有数据访问、Colectica value labels 精确确认、真实提取、真实 NHATS route classification、真实 NHATS 输出披露审查、真实 survey-design 加权估计、外部验证和校准后的敏感性分析 |
 
 ## 价值层 100%
@@ -219,7 +219,7 @@ life_path_toy_model_scenarios.json
 这一步已经把项目从“有定量想法的研究叙事”推进到“有最小可执行、可审计模型管线的研究系统”，并且开始把合成敏感性分析、真实队列候选、治理边界、第一份 NHATS 数据准入草案、NHATS 机器可读 acquisition-readiness gates、R13/R14 file-tier table、第一版 NHATS estimand protocol、NHATS variable confirmation matrix、NHATS cohort-flow endpoint-routing protocol、synthetic disclosure-control validator、synthetic survey-design validator、synthetic missingness-route validator、NHATS route-field discovery validator、NHATS Colectica value-label review protocol validator 和核心主张证据矩阵纳入机器审计。下一步不是继续膨胀新域，而是补三件硬东西：
 
 - 继续用 `human-infra-core-claim-evidence-matrix.md` 作为核心主张入口，把 README、论文页和 Web 页的强叙事都回连到同一组 Claim ID、来源角色和禁止外推边界。
-- 按 `human-infra-source-context-local-review-register.json` 继续执行剩余来源锚点本地复核，并把已复核的 25 个方法锚点晋升任务推进为 reviewed Source Cards、变量卡、endpoint 卡、uncertainty 卡、transfer-boundary 卡和 downgrade checks；独立 fresh review 完成前仍禁止模型准入。
+- 按 `human-infra-source-context-local-review-register.json` 继续执行剩余 31 个晋升任务的来源锚点本地复核，并把已复核的 50 个基础锚点晋升任务推进为 reviewed Source Cards、变量卡、endpoint 卡、uncertainty 卡、transfer-boundary 卡和 downgrade checks；独立 fresh review 完成前仍禁止模型准入。
 - 把 NHATS manifest、route-field discovery register、Colectica value-label review protocol 和 first estimand protocol 从 draft 推进到 governed acquisition-ready，补 Colectica 登录复核、value labels、question text、universe/skip logic、精确字段名、轮次、缺失码、公开/敏感/受限状态、权重、endpoint 定义、cohort flow、survey design、代码本来源和输出抑制规则。
 - 把 sensitivity analysis 从合成一因素扰动推进到基于真实队列、预注册范围和校准诊断的敏感性分析。
 
