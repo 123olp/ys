@@ -1,0 +1,1710 @@
+{
+  "schemaVersion": "human-infra.c2ltb5-independent-fresh-review-verdict-register.v1",
+  "registerId": "human-infra-c2-longtail-fifth-batch-independent-fresh-review-verdict-register-2026-07-03",
+  "status": "active-c2ltb5-independent-fresh-review-verdict-register-model-blocked",
+  "purpose": "Record independent fresh-review verdicts for C2-LT-B5 non-issue source extraction rows and manual/fulltext route rows, allowing only bounded artifact-prep for supported rows while preserving route-only, manual-access, duplicate-lineage and model-admission blocks.",
+  "sourceOfTruth": {
+    "sourceExtractionRegister": "docs/reference/human-infra-c2-longtail-fifth-batch-source-extraction-register.json",
+    "localReviewRegister": "docs/reference/human-infra-c2-longtail-fifth-batch-local-review-register.json",
+    "sourceResolutionRegister": "docs/reference/human-infra-c2-longtail-fifth-batch-source-resolution-register.json",
+    "manualFulltextExtractionRegister": "docs/reference/human-infra-c2-longtail-fifth-batch-manual-fulltext-extraction-register.json",
+    "evidencePolicy": "docs/reference/evidence-policy.md",
+    "maturityGapRegister": "docs/reference/human-infra-maturity-gap-register.json"
+  },
+  "scope": {
+    "batchId": "C2-LT-B5",
+    "reviewLevel": "c2ltb5-independent-fresh-review-v0.1",
+    "sourceExtractionFreshReviewRowCount": 16,
+    "manualFulltextFreshReviewRowCount": 14,
+    "reviewedFreshReviewRowCount": 30,
+    "eligibleForArtifactPrepRowCount": 17,
+    "blockedOrContextOnlyRowCount": 13,
+    "directReviewedArtifactRowCount": 0,
+    "modelAdmissionOpenedRowCount": 0,
+    "nonClaims": [
+      "This verdict register does not create reviewed artifacts.",
+      "This verdict register does not open model admission.",
+      "This verdict register does not authorize calibrated prediction, individual advice, intervention ranking, clinical validity claims or individual death-date output.",
+      "Fresh-review verdicts only affect bounded artifact-prep eligibility and do not override downstream artifact, model-validation or prohibited-use gates.",
+      "Route-only, manual-access and duplicate-lineage rows remain blocked even when source identity is verified."
+    ]
+  },
+  "summary": {
+    "reviewedSourceExtractionRows": 16,
+    "reviewedManualFulltextRows": 14,
+    "eligibleSourceExtractionRows": [
+      "C2LTB5-EXT-002",
+      "C2LTB5-EXT-003",
+      "C2LTB5-EXT-004",
+      "C2LTB5-EXT-005",
+      "C2LTB5-EXT-006",
+      "C2LTB5-EXT-007",
+      "C2LTB5-EXT-011",
+      "C2LTB5-EXT-012",
+      "C2LTB5-EXT-014",
+      "C2LTB5-EXT-015",
+      "C2LTB5-EXT-016",
+      "C2LTB5-EXT-017",
+      "C2LTB5-EXT-020",
+      "C2LTB5-EXT-022",
+      "C2LTB5-EXT-023",
+      "C2LTB5-EXT-024"
+    ],
+    "eligibleManualFulltextRows": [
+      "C2LTB5-MFEXT-007"
+    ],
+    "blockedOrContextOnlyManualFulltextRows": [
+      "C2LTB5-MFEXT-001",
+      "C2LTB5-MFEXT-002",
+      "C2LTB5-MFEXT-003",
+      "C2LTB5-MFEXT-004",
+      "C2LTB5-MFEXT-005",
+      "C2LTB5-MFEXT-006",
+      "C2LTB5-MFEXT-008",
+      "C2LTB5-MFEXT-009",
+      "C2LTB5-MFEXT-010",
+      "C2LTB5-MFEXT-011",
+      "C2LTB5-MFEXT-012",
+      "C2LTB5-MFEXT-013",
+      "C2LTB5-MFEXT-014"
+    ],
+    "directReviewedArtifactsCreated": 0,
+    "modelAdmissionDecision": "blocked",
+    "newFreshReviewFacts": [
+      "Sixteen non-issue B5 source-extraction rows can enter bounded artifact preparation with source-specific transfer and downgrade boundaries.",
+      "The Intercompartmental communication in senescence PMC fulltext route is the retained bounded anchor after collapsing PubMed/PMC and EXT-010/EXT-013 duplicate lineage.",
+      "The paired PubMed route for the same senescence source is preserved as provenance context only and must not be counted as independent evidence.",
+      "Twelve route-only, manual-access or duplicate manual/fulltext rows remain blocked until authorized fulltext access, source-resolution or duplicate-collapse review changes their status.",
+      "All rows keep calibrated prediction, clinical validity claims, intervention ranking, individual advice and individual death-date output blocked."
+    ],
+    "nextWorkOrder": "Prepare bounded reviewed artifacts for the sixteen eligible source-extraction rows and one retained manual/fulltext PMC row; preserve thirteen manual route-only/manual-access/duplicate rows as blocked/context-only and keep calibrated model admission blocked."
+  },
+  "blockedUses": [
+    "calibrated-prediction",
+    "individual-advice",
+    "individual-death-date-output",
+    "intervention-ranking",
+    "clinical-validity-claim",
+    "domain-claim-upgrade"
+  ],
+  "sourceExtractionFreshReviews": [
+    {
+      "reviewId": "C2LTB5-FRV-001",
+      "batchId": "C2-LT-B5",
+      "originTaskId": "C2LTB5-EXT-002",
+      "domainId": "telomere-maintenance",
+      "localDomainPath": "domains/c2-source-maintenance/telomere-maintenance",
+      "sourceTitle": "Telomeres: History, Health and Hallmarks of Aging.",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8081271/",
+      "freshReviewDate": "2026-07-03",
+      "freshReviewMode": "source-extraction-independent-fresh-review",
+      "sourceIdentityVerdict": "supported-by-open-route-metadata-and-source-extraction-row",
+      "sourceAccessVerdict": "pmc-fulltext-abstract-aligned",
+      "sourceContextVerdict": "sufficient-for-bounded-artifact-prep-with-row-specific-boundaries",
+      "currentnessVerdict": "currentness is bounded to the version captured by the source extraction register and external route metadata; no later updates are inferred.",
+      "exactClaimUseVerdict": "bounded-claim-supported-only-at-source-extraction-scope",
+      "endpointVariableVerdict": "endpoint-and-variable-vocabulary-supported-with-transfer-boundary",
+      "transferBoundaryVerdict": "transfer-boundary-present-and-required",
+      "uncertaintyBoundaryVerdict": "uncertainty boundary remains required because these are not calibrated effect estimates or clinical prediction rows.",
+      "reviewerVerdict": "support-with-boundary",
+      "freshReviewFinding": "Fresh review supports Telomeres: History, Health and Hallmarks of Aging. as a bounded source-context anchor for telomere-maintenance; it supports vocabulary, mechanism framing, endpoint/variable candidates and downgrade checks, not intervention effects or calibrated prediction.",
+      "downgradeOrBlockReason": "Downgrade if later review finds source mismatch, unavailable fulltext, model-organism overtransfer, clinical recommendation overreach, duplicate evidence counting or lack of exact endpoint support.",
+      "artifactPromotionDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "allowedArtifactTypes": [
+        "reviewed-source-card",
+        "reviewed-variable-card",
+        "reviewed-endpoint-card",
+        "reviewed-uncertainty-card",
+        "reviewed-transfer-boundary-card",
+        "reviewed-downgrade-check"
+      ],
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8081271/",
+          "evidenceType": "source-route-or-fulltext-route",
+          "finding": "Route was used to verify source identity and bounded fresh-review eligibility only."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-fifth-batch-source-extraction-register.json",
+          "evidenceType": "local-source-extraction-register",
+          "finding": "Local extraction row provides exact claim, endpoint, uncertainty, transfer and model-position boundaries."
+        }
+      ],
+      "nextAction": "Prepare bounded reviewed source, variable, endpoint, uncertainty, transfer-boundary and downgrade artifacts; keep model admission blocked."
+    },
+    {
+      "reviewId": "C2LTB5-FRV-002",
+      "batchId": "C2-LT-B5",
+      "originTaskId": "C2LTB5-EXT-003",
+      "domainId": "ribosome-translation-fidelity-proteome-integrity-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/ribosome-translation-fidelity-proteome-integrity-continuity",
+      "sourceTitle": "Translational fidelity and longevity are genetically linked.",
+      "sourceUrl": "https://europepmc.org/article/MED/40804252",
+      "freshReviewDate": "2026-07-03",
+      "freshReviewMode": "source-extraction-independent-fresh-review",
+      "sourceIdentityVerdict": "supported-by-open-route-metadata-and-source-extraction-row",
+      "sourceAccessVerdict": "pmc-open-fulltext-abstract-aligned",
+      "sourceContextVerdict": "sufficient-for-bounded-artifact-prep-with-row-specific-boundaries",
+      "currentnessVerdict": "currentness is bounded to the version captured by the source extraction register and external route metadata; no later updates are inferred.",
+      "exactClaimUseVerdict": "bounded-claim-supported-only-at-source-extraction-scope",
+      "endpointVariableVerdict": "endpoint-and-variable-vocabulary-supported-with-transfer-boundary",
+      "transferBoundaryVerdict": "transfer-boundary-present-and-required",
+      "uncertaintyBoundaryVerdict": "uncertainty boundary remains required because these are not calibrated effect estimates or clinical prediction rows.",
+      "reviewerVerdict": "support-with-boundary",
+      "freshReviewFinding": "Fresh review supports Translational fidelity and longevity are genetically linked. as a bounded source-context anchor for ribosome-translation-fidelity-proteome-integrity-continuity; it supports vocabulary, mechanism framing, endpoint/variable candidates and downgrade checks, not intervention effects or calibrated prediction.",
+      "downgradeOrBlockReason": "Downgrade if later review finds source mismatch, unavailable fulltext, model-organism overtransfer, clinical recommendation overreach, duplicate evidence counting or lack of exact endpoint support.",
+      "artifactPromotionDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "allowedArtifactTypes": [
+        "reviewed-source-card",
+        "reviewed-variable-card",
+        "reviewed-endpoint-card",
+        "reviewed-uncertainty-card",
+        "reviewed-transfer-boundary-card",
+        "reviewed-downgrade-check"
+      ],
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://europepmc.org/article/MED/40804252",
+          "evidenceType": "source-route-or-fulltext-route",
+          "finding": "Route was used to verify source identity and bounded fresh-review eligibility only."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-fifth-batch-source-extraction-register.json",
+          "evidenceType": "local-source-extraction-register",
+          "finding": "Local extraction row provides exact claim, endpoint, uncertainty, transfer and model-position boundaries."
+        }
+      ],
+      "nextAction": "Prepare bounded reviewed source, variable, endpoint, uncertainty, transfer-boundary and downgrade artifacts; keep model admission blocked."
+    },
+    {
+      "reviewId": "C2LTB5-FRV-003",
+      "batchId": "C2-LT-B5",
+      "originTaskId": "C2LTB5-EXT-004",
+      "domainId": "ribosome-translation-fidelity-proteome-integrity-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/ribosome-translation-fidelity-proteome-integrity-continuity",
+      "sourceTitle": "Translational Fidelity Decline in the Aging Oocyte and Embryo Development.",
+      "sourceUrl": "https://europepmc.org/article/MED/41898476",
+      "freshReviewDate": "2026-07-03",
+      "freshReviewMode": "source-extraction-independent-fresh-review",
+      "sourceIdentityVerdict": "supported-by-open-route-metadata-and-source-extraction-row",
+      "sourceAccessVerdict": "pmc-open-fulltext-abstract-aligned",
+      "sourceContextVerdict": "sufficient-for-bounded-artifact-prep-with-row-specific-boundaries",
+      "currentnessVerdict": "currentness is bounded to the version captured by the source extraction register and external route metadata; no later updates are inferred.",
+      "exactClaimUseVerdict": "bounded-claim-supported-only-at-source-extraction-scope",
+      "endpointVariableVerdict": "endpoint-and-variable-vocabulary-supported-with-transfer-boundary",
+      "transferBoundaryVerdict": "transfer-boundary-present-and-required",
+      "uncertaintyBoundaryVerdict": "uncertainty boundary remains required because these are not calibrated effect estimates or clinical prediction rows.",
+      "reviewerVerdict": "support-with-boundary",
+      "freshReviewFinding": "Fresh review supports Translational Fidelity Decline in the Aging Oocyte and Embryo Development. as a bounded source-context anchor for ribosome-translation-fidelity-proteome-integrity-continuity; it supports vocabulary, mechanism framing, endpoint/variable candidates and downgrade checks, not intervention effects or calibrated prediction.",
+      "downgradeOrBlockReason": "Downgrade if later review finds source mismatch, unavailable fulltext, model-organism overtransfer, clinical recommendation overreach, duplicate evidence counting or lack of exact endpoint support.",
+      "artifactPromotionDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "allowedArtifactTypes": [
+        "reviewed-source-card",
+        "reviewed-variable-card",
+        "reviewed-endpoint-card",
+        "reviewed-uncertainty-card",
+        "reviewed-transfer-boundary-card",
+        "reviewed-downgrade-check"
+      ],
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://europepmc.org/article/MED/41898476",
+          "evidenceType": "source-route-or-fulltext-route",
+          "finding": "Route was used to verify source identity and bounded fresh-review eligibility only."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-fifth-batch-source-extraction-register.json",
+          "evidenceType": "local-source-extraction-register",
+          "finding": "Local extraction row provides exact claim, endpoint, uncertainty, transfer and model-position boundaries."
+        }
+      ],
+      "nextAction": "Prepare bounded reviewed source, variable, endpoint, uncertainty, transfer-boundary and downgrade artifacts; keep model admission blocked."
+    },
+    {
+      "reviewId": "C2LTB5-FRV-004",
+      "batchId": "C2-LT-B5",
+      "originTaskId": "C2LTB5-EXT-005",
+      "domainId": "lysosomal-flux-lipofuscin-clearance-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/lysosomal-flux-lipofuscin-clearance-continuity",
+      "sourceTitle": "Lipofuscin accumulation in aging and neurodegeneration: a potential timebomb overlooked in Alzheimer's disease.",
+      "sourceUrl": "https://europepmc.org/article/MED/41387918",
+      "freshReviewDate": "2026-07-03",
+      "freshReviewMode": "source-extraction-independent-fresh-review",
+      "sourceIdentityVerdict": "supported-by-open-route-metadata-and-source-extraction-row",
+      "sourceAccessVerdict": "pmc-open-fulltext-abstract-aligned",
+      "sourceContextVerdict": "sufficient-for-bounded-artifact-prep-with-row-specific-boundaries",
+      "currentnessVerdict": "currentness is bounded to the version captured by the source extraction register and external route metadata; no later updates are inferred.",
+      "exactClaimUseVerdict": "bounded-claim-supported-only-at-source-extraction-scope",
+      "endpointVariableVerdict": "endpoint-and-variable-vocabulary-supported-with-transfer-boundary",
+      "transferBoundaryVerdict": "transfer-boundary-present-and-required",
+      "uncertaintyBoundaryVerdict": "uncertainty boundary remains required because these are not calibrated effect estimates or clinical prediction rows.",
+      "reviewerVerdict": "support-with-boundary",
+      "freshReviewFinding": "Fresh review supports Lipofuscin accumulation in aging and neurodegeneration: a potential timebomb overlooked in Alzheimer's disease. as a bounded source-context anchor for lysosomal-flux-lipofuscin-clearance-continuity; it supports vocabulary, mechanism framing, endpoint/variable candidates and downgrade checks, not intervention effects or calibrated prediction.",
+      "downgradeOrBlockReason": "Downgrade if later review finds source mismatch, unavailable fulltext, model-organism overtransfer, clinical recommendation overreach, duplicate evidence counting or lack of exact endpoint support.",
+      "artifactPromotionDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "allowedArtifactTypes": [
+        "reviewed-source-card",
+        "reviewed-variable-card",
+        "reviewed-endpoint-card",
+        "reviewed-uncertainty-card",
+        "reviewed-transfer-boundary-card",
+        "reviewed-downgrade-check"
+      ],
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://europepmc.org/article/MED/41387918",
+          "evidenceType": "source-route-or-fulltext-route",
+          "finding": "Route was used to verify source identity and bounded fresh-review eligibility only."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-fifth-batch-source-extraction-register.json",
+          "evidenceType": "local-source-extraction-register",
+          "finding": "Local extraction row provides exact claim, endpoint, uncertainty, transfer and model-position boundaries."
+        }
+      ],
+      "nextAction": "Prepare bounded reviewed source, variable, endpoint, uncertainty, transfer-boundary and downgrade artifacts; keep model admission blocked."
+    },
+    {
+      "reviewId": "C2LTB5-FRV-005",
+      "batchId": "C2-LT-B5",
+      "originTaskId": "C2LTB5-EXT-006",
+      "domainId": "lysosomal-flux-lipofuscin-clearance-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/lysosomal-flux-lipofuscin-clearance-continuity",
+      "sourceTitle": "Failure of lysosomal acidification and endomembrane network in neurodegeneration.",
+      "sourceUrl": "https://europepmc.org/article/MED/41254240",
+      "freshReviewDate": "2026-07-03",
+      "freshReviewMode": "source-extraction-independent-fresh-review",
+      "sourceIdentityVerdict": "supported-by-open-route-metadata-and-source-extraction-row",
+      "sourceAccessVerdict": "pmc-open-fulltext-abstract-aligned",
+      "sourceContextVerdict": "sufficient-for-bounded-artifact-prep-with-row-specific-boundaries",
+      "currentnessVerdict": "currentness is bounded to the version captured by the source extraction register and external route metadata; no later updates are inferred.",
+      "exactClaimUseVerdict": "bounded-claim-supported-only-at-source-extraction-scope",
+      "endpointVariableVerdict": "endpoint-and-variable-vocabulary-supported-with-transfer-boundary",
+      "transferBoundaryVerdict": "transfer-boundary-present-and-required",
+      "uncertaintyBoundaryVerdict": "uncertainty boundary remains required because these are not calibrated effect estimates or clinical prediction rows.",
+      "reviewerVerdict": "support-with-boundary",
+      "freshReviewFinding": "Fresh review supports Failure of lysosomal acidification and endomembrane network in neurodegeneration. as a bounded source-context anchor for lysosomal-flux-lipofuscin-clearance-continuity; it supports vocabulary, mechanism framing, endpoint/variable candidates and downgrade checks, not intervention effects or calibrated prediction.",
+      "downgradeOrBlockReason": "Downgrade if later review finds source mismatch, unavailable fulltext, model-organism overtransfer, clinical recommendation overreach, duplicate evidence counting or lack of exact endpoint support.",
+      "artifactPromotionDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "allowedArtifactTypes": [
+        "reviewed-source-card",
+        "reviewed-variable-card",
+        "reviewed-endpoint-card",
+        "reviewed-uncertainty-card",
+        "reviewed-transfer-boundary-card",
+        "reviewed-downgrade-check"
+      ],
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://europepmc.org/article/MED/41254240",
+          "evidenceType": "source-route-or-fulltext-route",
+          "finding": "Route was used to verify source identity and bounded fresh-review eligibility only."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-fifth-batch-source-extraction-register.json",
+          "evidenceType": "local-source-extraction-register",
+          "finding": "Local extraction row provides exact claim, endpoint, uncertainty, transfer and model-position boundaries."
+        }
+      ],
+      "nextAction": "Prepare bounded reviewed source, variable, endpoint, uncertainty, transfer-boundary and downgrade artifacts; keep model admission blocked."
+    },
+    {
+      "reviewId": "C2LTB5-FRV-006",
+      "batchId": "C2-LT-B5",
+      "originTaskId": "C2LTB5-EXT-007",
+      "domainId": "endoplasmic-reticulum-stress-upr-proteostasis-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/endoplasmic-reticulum-stress-upr-proteostasis-continuity",
+      "sourceTitle": "Unfolding Resilience: Molecular Integration of the Integrated Stress Response and Mitochondrial UPR in Skeletal Muscle Homeostasis.",
+      "sourceUrl": "https://europepmc.org/article/MED/42201142",
+      "freshReviewDate": "2026-07-03",
+      "freshReviewMode": "source-extraction-independent-fresh-review",
+      "sourceIdentityVerdict": "supported-by-open-route-metadata-and-source-extraction-row",
+      "sourceAccessVerdict": "pmc-open-fulltext-abstract-aligned",
+      "sourceContextVerdict": "sufficient-for-bounded-artifact-prep-with-row-specific-boundaries",
+      "currentnessVerdict": "currentness is bounded to the version captured by the source extraction register and external route metadata; no later updates are inferred.",
+      "exactClaimUseVerdict": "bounded-claim-supported-only-at-source-extraction-scope",
+      "endpointVariableVerdict": "endpoint-and-variable-vocabulary-supported-with-transfer-boundary",
+      "transferBoundaryVerdict": "transfer-boundary-present-and-required",
+      "uncertaintyBoundaryVerdict": "uncertainty boundary remains required because these are not calibrated effect estimates or clinical prediction rows.",
+      "reviewerVerdict": "support-with-boundary",
+      "freshReviewFinding": "Fresh review supports Unfolding Resilience: Molecular Integration of the Integrated Stress Response and Mitochondrial UPR in Skeletal Muscle Homeostasis. as a bounded source-context anchor for endoplasmic-reticulum-stress-upr-proteostasis-continuity; it supports vocabulary, mechanism framing, endpoint/variable candidates and downgrade checks, not intervention effects or calibrated prediction.",
+      "downgradeOrBlockReason": "Downgrade if later review finds source mismatch, unavailable fulltext, model-organism overtransfer, clinical recommendation overreach, duplicate evidence counting or lack of exact endpoint support.",
+      "artifactPromotionDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "allowedArtifactTypes": [
+        "reviewed-source-card",
+        "reviewed-variable-card",
+        "reviewed-endpoint-card",
+        "reviewed-uncertainty-card",
+        "reviewed-transfer-boundary-card",
+        "reviewed-downgrade-check"
+      ],
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://europepmc.org/article/MED/42201142",
+          "evidenceType": "source-route-or-fulltext-route",
+          "finding": "Route was used to verify source identity and bounded fresh-review eligibility only."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-fifth-batch-source-extraction-register.json",
+          "evidenceType": "local-source-extraction-register",
+          "finding": "Local extraction row provides exact claim, endpoint, uncertainty, transfer and model-position boundaries."
+        }
+      ],
+      "nextAction": "Prepare bounded reviewed source, variable, endpoint, uncertainty, transfer-boundary and downgrade artifacts; keep model admission blocked."
+    },
+    {
+      "reviewId": "C2LTB5-FRV-007",
+      "batchId": "C2-LT-B5",
+      "originTaskId": "C2LTB5-EXT-011",
+      "domainId": "peroxisome-redox-lipid-metabolism-homeostasis-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/peroxisome-redox-lipid-metabolism-homeostasis-continuity",
+      "sourceTitle": "Peroxisomes in Aging: Guardians of Cellular Resilience and Function.",
+      "sourceUrl": "https://europepmc.org/article/MED/41677620",
+      "freshReviewDate": "2026-07-03",
+      "freshReviewMode": "source-extraction-independent-fresh-review",
+      "sourceIdentityVerdict": "supported-by-open-route-metadata-and-source-extraction-row",
+      "sourceAccessVerdict": "pmc-open-fulltext-abstract-aligned",
+      "sourceContextVerdict": "sufficient-for-bounded-artifact-prep-with-row-specific-boundaries",
+      "currentnessVerdict": "currentness is bounded to the version captured by the source extraction register and external route metadata; no later updates are inferred.",
+      "exactClaimUseVerdict": "bounded-claim-supported-only-at-source-extraction-scope",
+      "endpointVariableVerdict": "endpoint-and-variable-vocabulary-supported-with-transfer-boundary",
+      "transferBoundaryVerdict": "transfer-boundary-present-and-required",
+      "uncertaintyBoundaryVerdict": "uncertainty boundary remains required because these are not calibrated effect estimates or clinical prediction rows.",
+      "reviewerVerdict": "support-with-boundary",
+      "freshReviewFinding": "Fresh review supports Peroxisomes in Aging: Guardians of Cellular Resilience and Function. as a bounded source-context anchor for peroxisome-redox-lipid-metabolism-homeostasis-continuity; it supports vocabulary, mechanism framing, endpoint/variable candidates and downgrade checks, not intervention effects or calibrated prediction.",
+      "downgradeOrBlockReason": "Downgrade if later review finds source mismatch, unavailable fulltext, model-organism overtransfer, clinical recommendation overreach, duplicate evidence counting or lack of exact endpoint support.",
+      "artifactPromotionDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "allowedArtifactTypes": [
+        "reviewed-source-card",
+        "reviewed-variable-card",
+        "reviewed-endpoint-card",
+        "reviewed-uncertainty-card",
+        "reviewed-transfer-boundary-card",
+        "reviewed-downgrade-check"
+      ],
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://europepmc.org/article/MED/41677620",
+          "evidenceType": "source-route-or-fulltext-route",
+          "finding": "Route was used to verify source identity and bounded fresh-review eligibility only."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-fifth-batch-source-extraction-register.json",
+          "evidenceType": "local-source-extraction-register",
+          "finding": "Local extraction row provides exact claim, endpoint, uncertainty, transfer and model-position boundaries."
+        }
+      ],
+      "nextAction": "Prepare bounded reviewed source, variable, endpoint, uncertainty, transfer-boundary and downgrade artifacts; keep model admission blocked."
+    },
+    {
+      "reviewId": "C2LTB5-FRV-008",
+      "batchId": "C2-LT-B5",
+      "originTaskId": "C2LTB5-EXT-012",
+      "domainId": "peroxisome-redox-lipid-metabolism-homeostasis-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/peroxisome-redox-lipid-metabolism-homeostasis-continuity",
+      "sourceTitle": "Peroxisomal Dysfunction in Age-Related Diseases.",
+      "sourceUrl": "https://europepmc.org/article/MED/28063767",
+      "freshReviewDate": "2026-07-03",
+      "freshReviewMode": "source-extraction-independent-fresh-review",
+      "sourceIdentityVerdict": "supported-by-open-route-metadata-and-source-extraction-row",
+      "sourceAccessVerdict": "pmc-fulltext-abstract-aligned",
+      "sourceContextVerdict": "sufficient-for-bounded-artifact-prep-with-row-specific-boundaries",
+      "currentnessVerdict": "currentness is bounded to the version captured by the source extraction register and external route metadata; no later updates are inferred.",
+      "exactClaimUseVerdict": "bounded-claim-supported-only-at-source-extraction-scope",
+      "endpointVariableVerdict": "endpoint-and-variable-vocabulary-supported-with-transfer-boundary",
+      "transferBoundaryVerdict": "transfer-boundary-present-and-required",
+      "uncertaintyBoundaryVerdict": "uncertainty boundary remains required because these are not calibrated effect estimates or clinical prediction rows.",
+      "reviewerVerdict": "support-with-boundary",
+      "freshReviewFinding": "Fresh review supports Peroxisomal Dysfunction in Age-Related Diseases. as a bounded source-context anchor for peroxisome-redox-lipid-metabolism-homeostasis-continuity; it supports vocabulary, mechanism framing, endpoint/variable candidates and downgrade checks, not intervention effects or calibrated prediction.",
+      "downgradeOrBlockReason": "Downgrade if later review finds source mismatch, unavailable fulltext, model-organism overtransfer, clinical recommendation overreach, duplicate evidence counting or lack of exact endpoint support.",
+      "artifactPromotionDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "allowedArtifactTypes": [
+        "reviewed-source-card",
+        "reviewed-variable-card",
+        "reviewed-endpoint-card",
+        "reviewed-uncertainty-card",
+        "reviewed-transfer-boundary-card",
+        "reviewed-downgrade-check"
+      ],
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://europepmc.org/article/MED/28063767",
+          "evidenceType": "source-route-or-fulltext-route",
+          "finding": "Route was used to verify source identity and bounded fresh-review eligibility only."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-fifth-batch-source-extraction-register.json",
+          "evidenceType": "local-source-extraction-register",
+          "finding": "Local extraction row provides exact claim, endpoint, uncertainty, transfer and model-position boundaries."
+        }
+      ],
+      "nextAction": "Prepare bounded reviewed source, variable, endpoint, uncertainty, transfer-boundary and downgrade artifacts; keep model admission blocked."
+    },
+    {
+      "reviewId": "C2LTB5-FRV-009",
+      "batchId": "C2-LT-B5",
+      "originTaskId": "C2LTB5-EXT-014",
+      "domainId": "organelle-contact-sites-intercompartmental-communication-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/organelle-contact-sites-intercompartmental-communication-continuity",
+      "sourceTitle": "Mitochondria-associated membranes (MAMs): molecular organization, cellular functions, and their role in health and disease.",
+      "sourceUrl": "https://europepmc.org/article/MED/41071679",
+      "freshReviewDate": "2026-07-03",
+      "freshReviewMode": "source-extraction-independent-fresh-review",
+      "sourceIdentityVerdict": "supported-by-open-route-metadata-and-source-extraction-row",
+      "sourceAccessVerdict": "pmc-open-fulltext-abstract-aligned",
+      "sourceContextVerdict": "sufficient-for-bounded-artifact-prep-with-row-specific-boundaries",
+      "currentnessVerdict": "currentness is bounded to the version captured by the source extraction register and external route metadata; no later updates are inferred.",
+      "exactClaimUseVerdict": "bounded-claim-supported-only-at-source-extraction-scope",
+      "endpointVariableVerdict": "endpoint-and-variable-vocabulary-supported-with-transfer-boundary",
+      "transferBoundaryVerdict": "transfer-boundary-present-and-required",
+      "uncertaintyBoundaryVerdict": "uncertainty boundary remains required because these are not calibrated effect estimates or clinical prediction rows.",
+      "reviewerVerdict": "support-with-boundary",
+      "freshReviewFinding": "Fresh review supports Mitochondria-associated membranes (MAMs): molecular organization, cellular functions, and their role in health and disease. as a bounded source-context anchor for organelle-contact-sites-intercompartmental-communication-continuity; it supports vocabulary, mechanism framing, endpoint/variable candidates and downgrade checks, not intervention effects or calibrated prediction.",
+      "downgradeOrBlockReason": "Downgrade if later review finds source mismatch, unavailable fulltext, model-organism overtransfer, clinical recommendation overreach, duplicate evidence counting or lack of exact endpoint support.",
+      "artifactPromotionDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "allowedArtifactTypes": [
+        "reviewed-source-card",
+        "reviewed-variable-card",
+        "reviewed-endpoint-card",
+        "reviewed-uncertainty-card",
+        "reviewed-transfer-boundary-card",
+        "reviewed-downgrade-check"
+      ],
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://europepmc.org/article/MED/41071679",
+          "evidenceType": "source-route-or-fulltext-route",
+          "finding": "Route was used to verify source identity and bounded fresh-review eligibility only."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-fifth-batch-source-extraction-register.json",
+          "evidenceType": "local-source-extraction-register",
+          "finding": "Local extraction row provides exact claim, endpoint, uncertainty, transfer and model-position boundaries."
+        }
+      ],
+      "nextAction": "Prepare bounded reviewed source, variable, endpoint, uncertainty, transfer-boundary and downgrade artifacts; keep model admission blocked."
+    },
+    {
+      "reviewId": "C2LTB5-FRV-010",
+      "batchId": "C2-LT-B5",
+      "originTaskId": "C2LTB5-EXT-015",
+      "domainId": "cytoskeleton-mechanotransduction-cellular-mechanics-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/cytoskeleton-mechanotransduction-cellular-mechanics-continuity",
+      "sourceTitle": "The cellular mechanobiology of aging.",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8102302/",
+      "freshReviewDate": "2026-07-03",
+      "freshReviewMode": "source-extraction-independent-fresh-review",
+      "sourceIdentityVerdict": "supported-by-open-route-metadata-and-source-extraction-row",
+      "sourceAccessVerdict": "pmc-fulltext-abstract-aligned",
+      "sourceContextVerdict": "sufficient-for-bounded-artifact-prep-with-row-specific-boundaries",
+      "currentnessVerdict": "currentness is bounded to the version captured by the source extraction register and external route metadata; no later updates are inferred.",
+      "exactClaimUseVerdict": "bounded-claim-supported-only-at-source-extraction-scope",
+      "endpointVariableVerdict": "endpoint-and-variable-vocabulary-supported-with-transfer-boundary",
+      "transferBoundaryVerdict": "transfer-boundary-present-and-required",
+      "uncertaintyBoundaryVerdict": "uncertainty boundary remains required because these are not calibrated effect estimates or clinical prediction rows.",
+      "reviewerVerdict": "support-with-boundary",
+      "freshReviewFinding": "Fresh review supports The cellular mechanobiology of aging. as a bounded source-context anchor for cytoskeleton-mechanotransduction-cellular-mechanics-continuity; it supports vocabulary, mechanism framing, endpoint/variable candidates and downgrade checks, not intervention effects or calibrated prediction.",
+      "downgradeOrBlockReason": "Downgrade if later review finds source mismatch, unavailable fulltext, model-organism overtransfer, clinical recommendation overreach, duplicate evidence counting or lack of exact endpoint support.",
+      "artifactPromotionDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "allowedArtifactTypes": [
+        "reviewed-source-card",
+        "reviewed-variable-card",
+        "reviewed-endpoint-card",
+        "reviewed-uncertainty-card",
+        "reviewed-transfer-boundary-card",
+        "reviewed-downgrade-check"
+      ],
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8102302/",
+          "evidenceType": "source-route-or-fulltext-route",
+          "finding": "Route was used to verify source identity and bounded fresh-review eligibility only."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-fifth-batch-source-extraction-register.json",
+          "evidenceType": "local-source-extraction-register",
+          "finding": "Local extraction row provides exact claim, endpoint, uncertainty, transfer and model-position boundaries."
+        }
+      ],
+      "nextAction": "Prepare bounded reviewed source, variable, endpoint, uncertainty, transfer-boundary and downgrade artifacts; keep model admission blocked."
+    },
+    {
+      "reviewId": "C2LTB5-FRV-011",
+      "batchId": "C2-LT-B5",
+      "originTaskId": "C2LTB5-EXT-016",
+      "domainId": "cytoskeleton-mechanotransduction-cellular-mechanics-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/cytoskeleton-mechanotransduction-cellular-mechanics-continuity",
+      "sourceTitle": "Mechanomedicine: Translating mechanical forces into therapeutic strategies.",
+      "sourceUrl": "https://europepmc.org/article/MED/41356273",
+      "freshReviewDate": "2026-07-03",
+      "freshReviewMode": "source-extraction-independent-fresh-review",
+      "sourceIdentityVerdict": "supported-by-open-route-metadata-and-source-extraction-row",
+      "sourceAccessVerdict": "pmc-fulltext-abstract-aligned",
+      "sourceContextVerdict": "sufficient-for-bounded-artifact-prep-with-row-specific-boundaries",
+      "currentnessVerdict": "currentness is bounded to the version captured by the source extraction register and external route metadata; no later updates are inferred.",
+      "exactClaimUseVerdict": "bounded-claim-supported-only-at-source-extraction-scope",
+      "endpointVariableVerdict": "endpoint-and-variable-vocabulary-supported-with-transfer-boundary",
+      "transferBoundaryVerdict": "transfer-boundary-present-and-required",
+      "uncertaintyBoundaryVerdict": "uncertainty boundary remains required because these are not calibrated effect estimates or clinical prediction rows.",
+      "reviewerVerdict": "support-with-boundary",
+      "freshReviewFinding": "Fresh review supports Mechanomedicine: Translating mechanical forces into therapeutic strategies. as a bounded source-context anchor for cytoskeleton-mechanotransduction-cellular-mechanics-continuity; it supports vocabulary, mechanism framing, endpoint/variable candidates and downgrade checks, not intervention effects or calibrated prediction.",
+      "downgradeOrBlockReason": "Downgrade if later review finds source mismatch, unavailable fulltext, model-organism overtransfer, clinical recommendation overreach, duplicate evidence counting or lack of exact endpoint support.",
+      "artifactPromotionDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "allowedArtifactTypes": [
+        "reviewed-source-card",
+        "reviewed-variable-card",
+        "reviewed-endpoint-card",
+        "reviewed-uncertainty-card",
+        "reviewed-transfer-boundary-card",
+        "reviewed-downgrade-check"
+      ],
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://europepmc.org/article/MED/41356273",
+          "evidenceType": "source-route-or-fulltext-route",
+          "finding": "Route was used to verify source identity and bounded fresh-review eligibility only."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-fifth-batch-source-extraction-register.json",
+          "evidenceType": "local-source-extraction-register",
+          "finding": "Local extraction row provides exact claim, endpoint, uncertainty, transfer and model-position boundaries."
+        }
+      ],
+      "nextAction": "Prepare bounded reviewed source, variable, endpoint, uncertainty, transfer-boundary and downgrade artifacts; keep model admission blocked."
+    },
+    {
+      "reviewId": "C2LTB5-FRV-012",
+      "batchId": "C2-LT-B5",
+      "originTaskId": "C2LTB5-EXT-017",
+      "domainId": "ferroptosis-lipid-peroxidation-membrane-resilience-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/ferroptosis-lipid-peroxidation-membrane-resilience-continuity",
+      "sourceTitle": "Implication of ferroptosis in aging.",
+      "sourceUrl": "https://europepmc.org/article/MED/34226536",
+      "freshReviewDate": "2026-07-03",
+      "freshReviewMode": "source-extraction-independent-fresh-review",
+      "sourceIdentityVerdict": "supported-by-open-route-metadata-and-source-extraction-row",
+      "sourceAccessVerdict": "pmc-open-fulltext-abstract-aligned",
+      "sourceContextVerdict": "sufficient-for-bounded-artifact-prep-with-row-specific-boundaries",
+      "currentnessVerdict": "currentness is bounded to the version captured by the source extraction register and external route metadata; no later updates are inferred.",
+      "exactClaimUseVerdict": "bounded-claim-supported-only-at-source-extraction-scope",
+      "endpointVariableVerdict": "endpoint-and-variable-vocabulary-supported-with-transfer-boundary",
+      "transferBoundaryVerdict": "transfer-boundary-present-and-required",
+      "uncertaintyBoundaryVerdict": "uncertainty boundary remains required because these are not calibrated effect estimates or clinical prediction rows.",
+      "reviewerVerdict": "support-with-boundary",
+      "freshReviewFinding": "Fresh review supports Implication of ferroptosis in aging. as a bounded source-context anchor for ferroptosis-lipid-peroxidation-membrane-resilience-continuity; it supports vocabulary, mechanism framing, endpoint/variable candidates and downgrade checks, not intervention effects or calibrated prediction.",
+      "downgradeOrBlockReason": "Downgrade if later review finds source mismatch, unavailable fulltext, model-organism overtransfer, clinical recommendation overreach, duplicate evidence counting or lack of exact endpoint support.",
+      "artifactPromotionDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "allowedArtifactTypes": [
+        "reviewed-source-card",
+        "reviewed-variable-card",
+        "reviewed-endpoint-card",
+        "reviewed-uncertainty-card",
+        "reviewed-transfer-boundary-card",
+        "reviewed-downgrade-check"
+      ],
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://europepmc.org/article/MED/34226536",
+          "evidenceType": "source-route-or-fulltext-route",
+          "finding": "Route was used to verify source identity and bounded fresh-review eligibility only."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-fifth-batch-source-extraction-register.json",
+          "evidenceType": "local-source-extraction-register",
+          "finding": "Local extraction row provides exact claim, endpoint, uncertainty, transfer and model-position boundaries."
+        }
+      ],
+      "nextAction": "Prepare bounded reviewed source, variable, endpoint, uncertainty, transfer-boundary and downgrade artifacts; keep model admission blocked."
+    },
+    {
+      "reviewId": "C2LTB5-FRV-013",
+      "batchId": "C2-LT-B5",
+      "originTaskId": "C2LTB5-EXT-020",
+      "domainId": "nuclear-gateway-nucleocytoplasmic-transport-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/nuclear-gateway-nucleocytoplasmic-transport-continuity",
+      "sourceTitle": "Pathologies at the gateway: exploring the link between nucleoporins and inherited diseases.",
+      "sourceUrl": "https://europepmc.org/article/MED/42056597",
+      "freshReviewDate": "2026-07-03",
+      "freshReviewMode": "source-extraction-independent-fresh-review",
+      "sourceIdentityVerdict": "supported-by-open-route-metadata-and-source-extraction-row",
+      "sourceAccessVerdict": "pmc-open-fulltext-abstract-aligned",
+      "sourceContextVerdict": "sufficient-for-bounded-artifact-prep-with-row-specific-boundaries",
+      "currentnessVerdict": "currentness is bounded to the version captured by the source extraction register and external route metadata; no later updates are inferred.",
+      "exactClaimUseVerdict": "bounded-claim-supported-only-at-source-extraction-scope",
+      "endpointVariableVerdict": "endpoint-and-variable-vocabulary-supported-with-transfer-boundary",
+      "transferBoundaryVerdict": "transfer-boundary-present-and-required",
+      "uncertaintyBoundaryVerdict": "uncertainty boundary remains required because these are not calibrated effect estimates or clinical prediction rows.",
+      "reviewerVerdict": "support-with-boundary",
+      "freshReviewFinding": "Fresh review supports Pathologies at the gateway: exploring the link between nucleoporins and inherited diseases. as a bounded source-context anchor for nuclear-gateway-nucleocytoplasmic-transport-continuity; it supports vocabulary, mechanism framing, endpoint/variable candidates and downgrade checks, not intervention effects or calibrated prediction.",
+      "downgradeOrBlockReason": "Downgrade if later review finds source mismatch, unavailable fulltext, model-organism overtransfer, clinical recommendation overreach, duplicate evidence counting or lack of exact endpoint support.",
+      "artifactPromotionDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "allowedArtifactTypes": [
+        "reviewed-source-card",
+        "reviewed-variable-card",
+        "reviewed-endpoint-card",
+        "reviewed-uncertainty-card",
+        "reviewed-transfer-boundary-card",
+        "reviewed-downgrade-check"
+      ],
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://europepmc.org/article/MED/42056597",
+          "evidenceType": "source-route-or-fulltext-route",
+          "finding": "Route was used to verify source identity and bounded fresh-review eligibility only."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-fifth-batch-source-extraction-register.json",
+          "evidenceType": "local-source-extraction-register",
+          "finding": "Local extraction row provides exact claim, endpoint, uncertainty, transfer and model-position boundaries."
+        }
+      ],
+      "nextAction": "Prepare bounded reviewed source, variable, endpoint, uncertainty, transfer-boundary and downgrade artifacts; keep model admission blocked."
+    },
+    {
+      "reviewId": "C2LTB5-FRV-014",
+      "batchId": "C2-LT-B5",
+      "originTaskId": "C2LTB5-EXT-022",
+      "domainId": "lymphatic-glymphatic-clearance",
+      "localDomainPath": "domains/c2-source-maintenance/lymphatic-glymphatic-clearance",
+      "sourceTitle": "Glymphatic system impairment in neurological disorders: potential mechanisms and therapeutic targets.",
+      "sourceUrl": "https://europepmc.org/article/MED/42283969",
+      "freshReviewDate": "2026-07-03",
+      "freshReviewMode": "source-extraction-independent-fresh-review",
+      "sourceIdentityVerdict": "supported-by-open-route-metadata-and-source-extraction-row",
+      "sourceAccessVerdict": "pmc-open-fulltext-abstract-aligned",
+      "sourceContextVerdict": "sufficient-for-bounded-artifact-prep-with-row-specific-boundaries",
+      "currentnessVerdict": "currentness is bounded to the version captured by the source extraction register and external route metadata; no later updates are inferred.",
+      "exactClaimUseVerdict": "bounded-claim-supported-only-at-source-extraction-scope",
+      "endpointVariableVerdict": "endpoint-and-variable-vocabulary-supported-with-transfer-boundary",
+      "transferBoundaryVerdict": "transfer-boundary-present-and-required",
+      "uncertaintyBoundaryVerdict": "uncertainty boundary remains required because these are not calibrated effect estimates or clinical prediction rows.",
+      "reviewerVerdict": "support-with-boundary",
+      "freshReviewFinding": "Fresh review supports Glymphatic system impairment in neurological disorders: potential mechanisms and therapeutic targets. as a bounded source-context anchor for lymphatic-glymphatic-clearance; it supports vocabulary, mechanism framing, endpoint/variable candidates and downgrade checks, not intervention effects or calibrated prediction.",
+      "downgradeOrBlockReason": "Downgrade if later review finds source mismatch, unavailable fulltext, model-organism overtransfer, clinical recommendation overreach, duplicate evidence counting or lack of exact endpoint support.",
+      "artifactPromotionDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "allowedArtifactTypes": [
+        "reviewed-source-card",
+        "reviewed-variable-card",
+        "reviewed-endpoint-card",
+        "reviewed-uncertainty-card",
+        "reviewed-transfer-boundary-card",
+        "reviewed-downgrade-check"
+      ],
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://europepmc.org/article/MED/42283969",
+          "evidenceType": "source-route-or-fulltext-route",
+          "finding": "Route was used to verify source identity and bounded fresh-review eligibility only."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-fifth-batch-source-extraction-register.json",
+          "evidenceType": "local-source-extraction-register",
+          "finding": "Local extraction row provides exact claim, endpoint, uncertainty, transfer and model-position boundaries."
+        }
+      ],
+      "nextAction": "Prepare bounded reviewed source, variable, endpoint, uncertainty, transfer-boundary and downgrade artifacts; keep model admission blocked."
+    },
+    {
+      "reviewId": "C2LTB5-FRV-015",
+      "batchId": "C2-LT-B5",
+      "originTaskId": "C2LTB5-EXT-023",
+      "domainId": "gastrointestinal-barrier-absorption",
+      "localDomainPath": "domains/c2-source-maintenance/gastrointestinal-barrier-absorption",
+      "sourceTitle": "Intestinal barrier dysfunction: an evolutionarily conserved hallmark of aging.",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10184675/",
+      "freshReviewDate": "2026-07-03",
+      "freshReviewMode": "source-extraction-independent-fresh-review",
+      "sourceIdentityVerdict": "supported-by-open-route-metadata-and-source-extraction-row",
+      "sourceAccessVerdict": "pmc-open-fulltext-abstract-aligned",
+      "sourceContextVerdict": "sufficient-for-bounded-artifact-prep-with-row-specific-boundaries",
+      "currentnessVerdict": "currentness is bounded to the version captured by the source extraction register and external route metadata; no later updates are inferred.",
+      "exactClaimUseVerdict": "bounded-claim-supported-only-at-source-extraction-scope",
+      "endpointVariableVerdict": "endpoint-and-variable-vocabulary-supported-with-transfer-boundary",
+      "transferBoundaryVerdict": "transfer-boundary-present-and-required",
+      "uncertaintyBoundaryVerdict": "uncertainty boundary remains required because these are not calibrated effect estimates or clinical prediction rows.",
+      "reviewerVerdict": "support-with-boundary",
+      "freshReviewFinding": "Fresh review supports Intestinal barrier dysfunction: an evolutionarily conserved hallmark of aging. as a bounded source-context anchor for gastrointestinal-barrier-absorption; it supports vocabulary, mechanism framing, endpoint/variable candidates and downgrade checks, not intervention effects or calibrated prediction.",
+      "downgradeOrBlockReason": "Downgrade if later review finds source mismatch, unavailable fulltext, model-organism overtransfer, clinical recommendation overreach, duplicate evidence counting or lack of exact endpoint support.",
+      "artifactPromotionDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "allowedArtifactTypes": [
+        "reviewed-source-card",
+        "reviewed-variable-card",
+        "reviewed-endpoint-card",
+        "reviewed-uncertainty-card",
+        "reviewed-transfer-boundary-card",
+        "reviewed-downgrade-check"
+      ],
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10184675/",
+          "evidenceType": "source-route-or-fulltext-route",
+          "finding": "Route was used to verify source identity and bounded fresh-review eligibility only."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-fifth-batch-source-extraction-register.json",
+          "evidenceType": "local-source-extraction-register",
+          "finding": "Local extraction row provides exact claim, endpoint, uncertainty, transfer and model-position boundaries."
+        }
+      ],
+      "nextAction": "Prepare bounded reviewed source, variable, endpoint, uncertainty, transfer-boundary and downgrade artifacts; keep model admission blocked."
+    },
+    {
+      "reviewId": "C2LTB5-FRV-016",
+      "batchId": "C2-LT-B5",
+      "originTaskId": "C2LTB5-EXT-024",
+      "domainId": "gastrointestinal-barrier-absorption",
+      "localDomainPath": "domains/c2-source-maintenance/gastrointestinal-barrier-absorption",
+      "sourceTitle": "The Intestinal Barrier: A Multilayered Gatekeeper Against Systemic Disease.",
+      "sourceUrl": "https://europepmc.org/article/MED/42281745",
+      "freshReviewDate": "2026-07-03",
+      "freshReviewMode": "source-extraction-independent-fresh-review",
+      "sourceIdentityVerdict": "supported-by-open-route-metadata-and-source-extraction-row",
+      "sourceAccessVerdict": "pmc-open-fulltext-abstract-aligned",
+      "sourceContextVerdict": "sufficient-for-bounded-artifact-prep-with-row-specific-boundaries",
+      "currentnessVerdict": "currentness is bounded to the version captured by the source extraction register and external route metadata; no later updates are inferred.",
+      "exactClaimUseVerdict": "bounded-claim-supported-only-at-source-extraction-scope",
+      "endpointVariableVerdict": "endpoint-and-variable-vocabulary-supported-with-transfer-boundary",
+      "transferBoundaryVerdict": "transfer-boundary-present-and-required",
+      "uncertaintyBoundaryVerdict": "uncertainty boundary remains required because these are not calibrated effect estimates or clinical prediction rows.",
+      "reviewerVerdict": "support-with-boundary",
+      "freshReviewFinding": "Fresh review supports The Intestinal Barrier: A Multilayered Gatekeeper Against Systemic Disease. as a bounded source-context anchor for gastrointestinal-barrier-absorption; it supports vocabulary, mechanism framing, endpoint/variable candidates and downgrade checks, not intervention effects or calibrated prediction.",
+      "downgradeOrBlockReason": "Downgrade if later review finds source mismatch, unavailable fulltext, model-organism overtransfer, clinical recommendation overreach, duplicate evidence counting or lack of exact endpoint support.",
+      "artifactPromotionDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "allowedArtifactTypes": [
+        "reviewed-source-card",
+        "reviewed-variable-card",
+        "reviewed-endpoint-card",
+        "reviewed-uncertainty-card",
+        "reviewed-transfer-boundary-card",
+        "reviewed-downgrade-check"
+      ],
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://europepmc.org/article/MED/42281745",
+          "evidenceType": "source-route-or-fulltext-route",
+          "finding": "Route was used to verify source identity and bounded fresh-review eligibility only."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-fifth-batch-source-extraction-register.json",
+          "evidenceType": "local-source-extraction-register",
+          "finding": "Local extraction row provides exact claim, endpoint, uncertainty, transfer and model-position boundaries."
+        }
+      ],
+      "nextAction": "Prepare bounded reviewed source, variable, endpoint, uncertainty, transfer-boundary and downgrade artifacts; keep model admission blocked."
+    }
+  ],
+  "manualFulltextFreshReviews": [
+    {
+      "reviewId": "C2LTB5-MFFRV-001",
+      "batchId": "C2-LT-B5",
+      "manualExtractionId": "C2LTB5-MFEXT-001",
+      "originTaskId": "C2LTB5-EXT-001",
+      "sourceResolutionId": "C2LTB5-SRR-001",
+      "domainId": "telomere-maintenance",
+      "localDomainPath": "domains/c2-source-maintenance/telomere-maintenance",
+      "candidateId": "C2LTB5-SRR-001-CAND-01",
+      "sourceTitle": "Disorders of Telomere Length.",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/42334294/",
+      "freshReviewDate": "2026-07-03",
+      "freshReviewMode": "manual-fulltext-extraction-independent-fresh-review",
+      "sourceIdentityVerdict": "supported-route-identity",
+      "sourceAccessVerdict": "no-pmcid-europepmc-openaccess-N",
+      "sourceContextVerdict": "route-or-manual-access-context-only-no-direct-artifact-fill",
+      "currentnessVerdict": "currentness is bounded to the route and version captured by source-resolution/manual extraction; no later clinical or mechanistic update is inferred.",
+      "exactClaimVerdict": "route-scope-supported-exact-claim-not-admitted",
+      "endpointVariableVerdict": "endpoint-vocabulary-context-only",
+      "transferBoundaryVerdict": "transfer-boundary-present-and-required",
+      "reviewerVerdict": "blocked-or-context-only",
+      "freshReviewFinding": "Fresh review preserves Disorders of Telomere Length. as pubmed-bibliographic-route context only; current access/duplicate status is insufficient for direct artifact fill.",
+      "downgradeOrBlockReason": "Manual/fulltext access, duplicate-lineage handling or source-route limitation remains unresolved; no direct reviewed artifact may be created from this row.",
+      "artifactPromotionDecision": "blocked-route-or-manual-access-required-no-direct-artifact-fill",
+      "allowedArtifactTypes": [],
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id=42334294,42096823,41911323,42250782,42107721,42264186&retmode=json",
+          "evidenceType": "source-resolution-verification-route",
+          "finding": "Official route metadata supports source identity and access-state classification only; it does not create reviewed artifact content."
+        },
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42334294/",
+          "evidenceType": "bibliographic-or-doi-route",
+          "finding": "Candidate route is retained for bounded manual/fulltext extraction planning under the row-specific access and duplicate boundary."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-fifth-batch-manual-fulltext-extraction-register.json",
+          "evidenceType": "manual-fulltext-extraction-register",
+          "finding": "Local manual/fulltext extraction row provides access, duplicate and transfer-boundary context."
+        }
+      ],
+      "nextAction": "Obtain authorized fulltext or publisher route access, then repeat manual extraction before independent fresh review."
+    },
+    {
+      "reviewId": "C2LTB5-MFFRV-002",
+      "batchId": "C2-LT-B5",
+      "manualExtractionId": "C2LTB5-MFEXT-002",
+      "originTaskId": "C2LTB5-EXT-001",
+      "sourceResolutionId": "C2LTB5-SRR-001",
+      "domainId": "telomere-maintenance",
+      "localDomainPath": "domains/c2-source-maintenance/telomere-maintenance",
+      "candidateId": "C2LTB5-SRR-001-CAND-02",
+      "sourceTitle": "Disorders of Telomere Length.",
+      "sourceUrl": "https://doi.org/10.1056/EVIDra2600012",
+      "freshReviewDate": "2026-07-03",
+      "freshReviewMode": "manual-fulltext-extraction-independent-fresh-review",
+      "sourceIdentityVerdict": "supported-route-identity",
+      "sourceAccessVerdict": "no-pmcid-europepmc-openaccess-N",
+      "sourceContextVerdict": "route-or-manual-access-context-only-no-direct-artifact-fill",
+      "currentnessVerdict": "currentness is bounded to the route and version captured by source-resolution/manual extraction; no later clinical or mechanistic update is inferred.",
+      "exactClaimVerdict": "route-scope-supported-exact-claim-not-admitted",
+      "endpointVariableVerdict": "endpoint-vocabulary-context-only",
+      "transferBoundaryVerdict": "transfer-boundary-present-and-required",
+      "reviewerVerdict": "blocked-or-context-only",
+      "freshReviewFinding": "Fresh review preserves Disorders of Telomere Length. as publisher-doi-route context only; current access/duplicate status is insufficient for direct artifact fill.",
+      "downgradeOrBlockReason": "Manual/fulltext access, duplicate-lineage handling or source-route limitation remains unresolved; no direct reviewed artifact may be created from this row.",
+      "artifactPromotionDecision": "blocked-route-or-manual-access-required-no-direct-artifact-fill",
+      "allowedArtifactTypes": [],
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id=42334294,42096823,41911323,42250782,42107721,42264186&retmode=json",
+          "evidenceType": "source-resolution-verification-route",
+          "finding": "Official route metadata supports source identity and access-state classification only; it does not create reviewed artifact content."
+        },
+        {
+          "url": "https://doi.org/10.1056/EVIDra2600012",
+          "evidenceType": "bibliographic-or-doi-route",
+          "finding": "Candidate route is retained for bounded manual/fulltext extraction planning under the row-specific access and duplicate boundary."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-fifth-batch-manual-fulltext-extraction-register.json",
+          "evidenceType": "manual-fulltext-extraction-register",
+          "finding": "Local manual/fulltext extraction row provides access, duplicate and transfer-boundary context."
+        }
+      ],
+      "nextAction": "Obtain authorized fulltext or publisher route access, then repeat manual extraction before independent fresh review."
+    },
+    {
+      "reviewId": "C2LTB5-MFFRV-003",
+      "batchId": "C2-LT-B5",
+      "manualExtractionId": "C2LTB5-MFEXT-003",
+      "originTaskId": "C2LTB5-EXT-008",
+      "sourceResolutionId": "C2LTB5-SRR-002",
+      "domainId": "endoplasmic-reticulum-stress-upr-proteostasis-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/endoplasmic-reticulum-stress-upr-proteostasis-continuity",
+      "candidateId": "C2LTB5-SRR-008-CAND-01",
+      "sourceTitle": "Homeostatic responses to diverse cellular stresses by the ER-Golgi trafficking pathways.",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/42096823/",
+      "freshReviewDate": "2026-07-03",
+      "freshReviewMode": "manual-fulltext-extraction-independent-fresh-review",
+      "sourceIdentityVerdict": "supported-route-identity",
+      "sourceAccessVerdict": "no-pmcid-europepmc-openaccess-N",
+      "sourceContextVerdict": "route-or-manual-access-context-only-no-direct-artifact-fill",
+      "currentnessVerdict": "currentness is bounded to the route and version captured by source-resolution/manual extraction; no later clinical or mechanistic update is inferred.",
+      "exactClaimVerdict": "route-scope-supported-exact-claim-not-admitted",
+      "endpointVariableVerdict": "endpoint-vocabulary-context-only",
+      "transferBoundaryVerdict": "transfer-boundary-present-and-required",
+      "reviewerVerdict": "blocked-or-context-only",
+      "freshReviewFinding": "Fresh review preserves Homeostatic responses to diverse cellular stresses by the ER-Golgi trafficking pathways. as pubmed-primary-shared-route context only; current access/duplicate status is insufficient for direct artifact fill.",
+      "downgradeOrBlockReason": "Manual/fulltext access, duplicate-lineage handling or source-route limitation remains unresolved; no direct reviewed artifact may be created from this row.",
+      "artifactPromotionDecision": "blocked-route-or-manual-access-required-no-direct-artifact-fill",
+      "allowedArtifactTypes": [],
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id=42334294,42096823,41911323,42250782,42107721,42264186&retmode=json",
+          "evidenceType": "source-resolution-verification-route",
+          "finding": "Official route metadata supports source identity and access-state classification only; it does not create reviewed artifact content."
+        },
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42096823/",
+          "evidenceType": "bibliographic-or-doi-route",
+          "finding": "Candidate route is retained for bounded manual/fulltext extraction planning under the row-specific access and duplicate boundary."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-fifth-batch-manual-fulltext-extraction-register.json",
+          "evidenceType": "manual-fulltext-extraction-register",
+          "finding": "Local manual/fulltext extraction row provides access, duplicate and transfer-boundary context."
+        }
+      ],
+      "nextAction": "Obtain authorized fulltext or publisher route access, then repeat manual extraction before independent fresh review."
+    },
+    {
+      "reviewId": "C2LTB5-MFFRV-004",
+      "batchId": "C2-LT-B5",
+      "manualExtractionId": "C2LTB5-MFEXT-004",
+      "originTaskId": "C2LTB5-EXT-008",
+      "sourceResolutionId": "C2LTB5-SRR-002",
+      "domainId": "endoplasmic-reticulum-stress-upr-proteostasis-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/endoplasmic-reticulum-stress-upr-proteostasis-continuity",
+      "candidateId": "C2LTB5-SRR-008-CAND-02",
+      "sourceTitle": "Homeostatic responses to diverse cellular stresses by the ER-Golgi trafficking pathways.",
+      "sourceUrl": "https://doi.org/10.1016/j.ceb.2026.102646",
+      "freshReviewDate": "2026-07-03",
+      "freshReviewMode": "manual-fulltext-extraction-independent-fresh-review",
+      "sourceIdentityVerdict": "supported-route-identity",
+      "sourceAccessVerdict": "no-pmcid-europepmc-openaccess-N",
+      "sourceContextVerdict": "route-or-manual-access-context-only-no-direct-artifact-fill",
+      "currentnessVerdict": "currentness is bounded to the route and version captured by source-resolution/manual extraction; no later clinical or mechanistic update is inferred.",
+      "exactClaimVerdict": "route-scope-supported-exact-claim-not-admitted",
+      "endpointVariableVerdict": "endpoint-vocabulary-context-only",
+      "transferBoundaryVerdict": "transfer-boundary-present-and-required",
+      "reviewerVerdict": "blocked-or-context-only",
+      "freshReviewFinding": "Fresh review preserves Homeostatic responses to diverse cellular stresses by the ER-Golgi trafficking pathways. as publisher-doi-route context only; current access/duplicate status is insufficient for direct artifact fill.",
+      "downgradeOrBlockReason": "Manual/fulltext access, duplicate-lineage handling or source-route limitation remains unresolved; no direct reviewed artifact may be created from this row.",
+      "artifactPromotionDecision": "blocked-route-or-manual-access-required-no-direct-artifact-fill",
+      "allowedArtifactTypes": [],
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id=42334294,42096823,41911323,42250782,42107721,42264186&retmode=json",
+          "evidenceType": "source-resolution-verification-route",
+          "finding": "Official route metadata supports source identity and access-state classification only; it does not create reviewed artifact content."
+        },
+        {
+          "url": "https://doi.org/10.1016/j.ceb.2026.102646",
+          "evidenceType": "bibliographic-or-doi-route",
+          "finding": "Candidate route is retained for bounded manual/fulltext extraction planning under the row-specific access and duplicate boundary."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-fifth-batch-manual-fulltext-extraction-register.json",
+          "evidenceType": "manual-fulltext-extraction-register",
+          "finding": "Local manual/fulltext extraction row provides access, duplicate and transfer-boundary context."
+        }
+      ],
+      "nextAction": "Obtain authorized fulltext or publisher route access, then repeat manual extraction before independent fresh review."
+    },
+    {
+      "reviewId": "C2LTB5-MFFRV-005",
+      "batchId": "C2-LT-B5",
+      "manualExtractionId": "C2LTB5-MFEXT-005",
+      "originTaskId": "C2LTB5-EXT-009",
+      "sourceResolutionId": "C2LTB5-SRR-003",
+      "domainId": "golgi-secretory-trafficking-organelle-homeostasis-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/golgi-secretory-trafficking-organelle-homeostasis-continuity",
+      "candidateId": "C2LTB5-SRR-009-CAND-01",
+      "sourceTitle": "Homeostatic responses to diverse cellular stresses by the ER-Golgi trafficking pathways.",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/42096823/",
+      "freshReviewDate": "2026-07-03",
+      "freshReviewMode": "manual-fulltext-extraction-independent-fresh-review",
+      "sourceIdentityVerdict": "supported-route-identity",
+      "sourceAccessVerdict": "no-pmcid-europepmc-openaccess-N-duplicate-route-not-independent-evidence",
+      "sourceContextVerdict": "route-or-manual-access-context-only-no-direct-artifact-fill",
+      "currentnessVerdict": "currentness is bounded to the route and version captured by source-resolution/manual extraction; no later clinical or mechanistic update is inferred.",
+      "exactClaimVerdict": "route-scope-supported-exact-claim-not-admitted",
+      "endpointVariableVerdict": "endpoint-vocabulary-context-only",
+      "transferBoundaryVerdict": "transfer-boundary-present-and-required",
+      "reviewerVerdict": "blocked-or-context-only",
+      "freshReviewFinding": "Fresh review preserves Homeostatic responses to diverse cellular stresses by the ER-Golgi trafficking pathways. as duplicate-companion-source-route context only; current access/duplicate status is insufficient for direct artifact fill.",
+      "downgradeOrBlockReason": "Manual/fulltext access, duplicate-lineage handling or source-route limitation remains unresolved; no direct reviewed artifact may be created from this row.",
+      "artifactPromotionDecision": "blocked-route-or-manual-access-required-no-direct-artifact-fill",
+      "allowedArtifactTypes": [],
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:42334294%20OR%20EXT_ID:42096823%20OR%20EXT_ID:41911323%20OR%20EXT_ID:42250782%20OR%20EXT_ID:42107721%20OR%20EXT_ID:42264186&format=json&pageSize=20",
+          "evidenceType": "source-resolution-verification-route",
+          "finding": "Official route metadata supports source identity and access-state classification only; it does not create reviewed artifact content."
+        },
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42096823/",
+          "evidenceType": "duplicate-cross-domain-source-route",
+          "finding": "Candidate route is retained for bounded manual/fulltext extraction planning under the row-specific access and duplicate boundary."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-fifth-batch-manual-fulltext-extraction-register.json",
+          "evidenceType": "manual-fulltext-extraction-register",
+          "finding": "Local manual/fulltext extraction row provides access, duplicate and transfer-boundary context."
+        }
+      ],
+      "nextAction": "Fresh review must collapse this candidate into the retained primary route or preserve it as duplicate context only."
+    },
+    {
+      "reviewId": "C2LTB5-MFFRV-006",
+      "batchId": "C2-LT-B5",
+      "manualExtractionId": "C2LTB5-MFEXT-006",
+      "originTaskId": "C2LTB5-EXT-010",
+      "sourceResolutionId": "C2LTB5-SRR-004",
+      "domainId": "golgi-secretory-trafficking-organelle-homeostasis-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/golgi-secretory-trafficking-organelle-homeostasis-continuity",
+      "candidateId": "C2LTB5-SRR-010-CAND-01",
+      "sourceTitle": "Intercompartmental communication in senescence.",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/41911323/",
+      "freshReviewDate": "2026-07-03",
+      "freshReviewMode": "manual-fulltext-extraction-independent-fresh-review",
+      "sourceIdentityVerdict": "supported-route-identity",
+      "sourceAccessVerdict": "pmc-open-fulltext-route-accessible",
+      "sourceContextVerdict": "route-context-only-not-independent-evidence",
+      "currentnessVerdict": "currentness is bounded to the route and version captured by source-resolution/manual extraction; no later clinical or mechanistic update is inferred.",
+      "exactClaimVerdict": "route-identity-supported-exact-claim-not-separately-admitted",
+      "endpointVariableVerdict": "endpoint-vocabulary-context-only",
+      "transferBoundaryVerdict": "transfer-boundary-present-and-required",
+      "reviewerVerdict": "blocked-or-context-only",
+      "freshReviewFinding": "Fresh review supports the PubMed route as identity/provenance context for the same PMC fulltext source, but it must not be counted as a second independent evidence line.",
+      "downgradeOrBlockReason": "Paired PubMed/PMC lineage creates duplicate counting risk; retain the PubMed route only as provenance context for the selected PMC fulltext route.",
+      "artifactPromotionDecision": "blocked-route-context-no-direct-artifact-fill",
+      "allowedArtifactTypes": [],
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13145362/",
+          "evidenceType": "source-resolution-verification-route",
+          "finding": "Official route metadata supports source identity and access-state classification only; it does not create reviewed artifact content."
+        },
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41911323/",
+          "evidenceType": "pmc-open-fulltext-route",
+          "finding": "Candidate route is retained for bounded manual/fulltext extraction planning under the row-specific access and duplicate boundary."
+        },
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13145362/",
+          "evidenceType": "pmc-open-fulltext-route",
+          "finding": "PMC route is accessible for bounded fulltext context extraction of the primary senescence intercompartmental-communication source."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-fifth-batch-manual-fulltext-extraction-register.json",
+          "evidenceType": "manual-fulltext-extraction-register",
+          "finding": "Local manual/fulltext extraction row provides access, duplicate and transfer-boundary context."
+        }
+      ],
+      "nextAction": "Use the paired PMC fulltext row as the retained bounded artifact-prep route; keep this PubMed row context-only."
+    },
+    {
+      "reviewId": "C2LTB5-MFFRV-007",
+      "batchId": "C2-LT-B5",
+      "manualExtractionId": "C2LTB5-MFEXT-007",
+      "originTaskId": "C2LTB5-EXT-010",
+      "sourceResolutionId": "C2LTB5-SRR-004",
+      "domainId": "golgi-secretory-trafficking-organelle-homeostasis-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/golgi-secretory-trafficking-organelle-homeostasis-continuity",
+      "candidateId": "C2LTB5-SRR-010-CAND-02",
+      "sourceTitle": "Intercompartmental communication in senescence.",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13145362/",
+      "freshReviewDate": "2026-07-03",
+      "freshReviewMode": "manual-fulltext-extraction-independent-fresh-review",
+      "sourceIdentityVerdict": "supported-route-identity",
+      "sourceAccessVerdict": "pmc-open-fulltext-route-accessible",
+      "sourceContextVerdict": "sufficient-for-bounded-artifact-prep-after-duplicate-lineage-collapse",
+      "currentnessVerdict": "currentness is bounded to the route and version captured by source-resolution/manual extraction; no later clinical or mechanistic update is inferred.",
+      "exactClaimVerdict": "bounded-claim-supported",
+      "endpointVariableVerdict": "intercompartmental-senescence-communication-vocabulary-supported-with-review-boundary",
+      "transferBoundaryVerdict": "transfer-boundary-present-and-required",
+      "reviewerVerdict": "support-with-boundary",
+      "freshReviewFinding": "Fresh review supports the PMC fulltext route for Intercompartmental communication in senescence as the retained bounded anchor after duplicate-lineage collapse; it supports senescence intercompartmental-communication vocabulary and transfer-boundary artifacts, not independent effect sizes or calibrated prediction.",
+      "downgradeOrBlockReason": "Eligible only as the retained PMC fulltext route after collapsing the paired PubMed/PMC lineage and the EXT-010/EXT-013 duplicate source reuse.",
+      "artifactPromotionDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "allowedArtifactTypes": [
+        "reviewed-source-card",
+        "reviewed-variable-card",
+        "reviewed-endpoint-card",
+        "reviewed-uncertainty-card",
+        "reviewed-transfer-boundary-card",
+        "reviewed-downgrade-check"
+      ],
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13145362/",
+          "evidenceType": "source-resolution-verification-route",
+          "finding": "Official route metadata supports source identity and access-state classification only; it does not create reviewed artifact content."
+        },
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13145362/",
+          "evidenceType": "pmc-open-fulltext-route",
+          "finding": "Candidate route is retained for bounded manual/fulltext extraction planning under the row-specific access and duplicate boundary."
+        },
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13145362/",
+          "evidenceType": "pmc-open-fulltext-route",
+          "finding": "PMC route is accessible for bounded fulltext context extraction of the primary senescence intercompartmental-communication source."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-fifth-batch-manual-fulltext-extraction-register.json",
+          "evidenceType": "manual-fulltext-extraction-register",
+          "finding": "Local manual/fulltext extraction row provides access, duplicate and transfer-boundary context."
+        }
+      ],
+      "nextAction": "Prepare bounded artifacts for the retained PMC fulltext route and preserve linked PubMed/duplicate routes as context only."
+    },
+    {
+      "reviewId": "C2LTB5-MFFRV-008",
+      "batchId": "C2-LT-B5",
+      "manualExtractionId": "C2LTB5-MFEXT-008",
+      "originTaskId": "C2LTB5-EXT-013",
+      "sourceResolutionId": "C2LTB5-SRR-005",
+      "domainId": "organelle-contact-sites-intercompartmental-communication-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/organelle-contact-sites-intercompartmental-communication-continuity",
+      "candidateId": "C2LTB5-SRR-013-CAND-01",
+      "sourceTitle": "Intercompartmental communication in senescence.",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13145362/",
+      "freshReviewDate": "2026-07-03",
+      "freshReviewMode": "manual-fulltext-extraction-independent-fresh-review",
+      "sourceIdentityVerdict": "supported-route-identity",
+      "sourceAccessVerdict": "pmcid-PMC13145362-europepmc-openaccess-Y-duplicate-route-not-independent-evidence",
+      "sourceContextVerdict": "route-or-manual-access-context-only-no-direct-artifact-fill",
+      "currentnessVerdict": "currentness is bounded to the route and version captured by source-resolution/manual extraction; no later clinical or mechanistic update is inferred.",
+      "exactClaimVerdict": "route-scope-supported-exact-claim-not-admitted",
+      "endpointVariableVerdict": "endpoint-vocabulary-context-only",
+      "transferBoundaryVerdict": "transfer-boundary-present-and-required",
+      "reviewerVerdict": "blocked-or-context-only",
+      "freshReviewFinding": "Fresh review preserves Intercompartmental communication in senescence. as duplicate-secondary-pmc-source-route context only; current access/duplicate status is insufficient for direct artifact fill.",
+      "downgradeOrBlockReason": "Manual/fulltext access, duplicate-lineage handling or source-route limitation remains unresolved; no direct reviewed artifact may be created from this row.",
+      "artifactPromotionDecision": "blocked-route-or-manual-access-required-no-direct-artifact-fill",
+      "allowedArtifactTypes": [],
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13145362/",
+          "evidenceType": "source-resolution-verification-route",
+          "finding": "Official route metadata supports source identity and access-state classification only; it does not create reviewed artifact content."
+        },
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13145362/",
+          "evidenceType": "pmc-open-fulltext-route",
+          "finding": "Candidate route is retained for bounded manual/fulltext extraction planning under the row-specific access and duplicate boundary."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-fifth-batch-manual-fulltext-extraction-register.json",
+          "evidenceType": "manual-fulltext-extraction-register",
+          "finding": "Local manual/fulltext extraction row provides access, duplicate and transfer-boundary context."
+        }
+      ],
+      "nextAction": "Fresh review must collapse this candidate into the retained primary route or preserve it as duplicate context only."
+    },
+    {
+      "reviewId": "C2LTB5-MFFRV-009",
+      "batchId": "C2-LT-B5",
+      "manualExtractionId": "C2LTB5-MFEXT-009",
+      "originTaskId": "C2LTB5-EXT-018",
+      "sourceResolutionId": "C2LTB5-SRR-006",
+      "domainId": "ferroptosis-lipid-peroxidation-membrane-resilience-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/ferroptosis-lipid-peroxidation-membrane-resilience-continuity",
+      "candidateId": "C2LTB5-SRR-018-CAND-01",
+      "sourceTitle": "Ferro-aging: A novel paradigm linking iron overload, lipid peroxidation and cellular senescence.",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/42250782/",
+      "freshReviewDate": "2026-07-03",
+      "freshReviewMode": "manual-fulltext-extraction-independent-fresh-review",
+      "sourceIdentityVerdict": "supported-route-identity",
+      "sourceAccessVerdict": "no-pmcid-europepmc-openaccess-N",
+      "sourceContextVerdict": "route-or-manual-access-context-only-no-direct-artifact-fill",
+      "currentnessVerdict": "currentness is bounded to the route and version captured by source-resolution/manual extraction; no later clinical or mechanistic update is inferred.",
+      "exactClaimVerdict": "route-scope-supported-exact-claim-not-admitted",
+      "endpointVariableVerdict": "endpoint-vocabulary-context-only",
+      "transferBoundaryVerdict": "transfer-boundary-present-and-required",
+      "reviewerVerdict": "blocked-or-context-only",
+      "freshReviewFinding": "Fresh review preserves Ferro-aging: A novel paradigm linking iron overload, lipid peroxidation and cellular senescence. as pubmed-bibliographic-route context only; current access/duplicate status is insufficient for direct artifact fill.",
+      "downgradeOrBlockReason": "Manual/fulltext access, duplicate-lineage handling or source-route limitation remains unresolved; no direct reviewed artifact may be created from this row.",
+      "artifactPromotionDecision": "blocked-route-or-manual-access-required-no-direct-artifact-fill",
+      "allowedArtifactTypes": [],
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id=42334294,42096823,41911323,42250782,42107721,42264186&retmode=json",
+          "evidenceType": "source-resolution-verification-route",
+          "finding": "Official route metadata supports source identity and access-state classification only; it does not create reviewed artifact content."
+        },
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42250782/",
+          "evidenceType": "bibliographic-or-doi-route",
+          "finding": "Candidate route is retained for bounded manual/fulltext extraction planning under the row-specific access and duplicate boundary."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-fifth-batch-manual-fulltext-extraction-register.json",
+          "evidenceType": "manual-fulltext-extraction-register",
+          "finding": "Local manual/fulltext extraction row provides access, duplicate and transfer-boundary context."
+        }
+      ],
+      "nextAction": "Obtain authorized fulltext or publisher route access, then repeat manual extraction before independent fresh review."
+    },
+    {
+      "reviewId": "C2LTB5-MFFRV-010",
+      "batchId": "C2-LT-B5",
+      "manualExtractionId": "C2LTB5-MFEXT-010",
+      "originTaskId": "C2LTB5-EXT-018",
+      "sourceResolutionId": "C2LTB5-SRR-006",
+      "domainId": "ferroptosis-lipid-peroxidation-membrane-resilience-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/ferroptosis-lipid-peroxidation-membrane-resilience-continuity",
+      "candidateId": "C2LTB5-SRR-018-CAND-02",
+      "sourceTitle": "Ferro-aging: A novel paradigm linking iron overload, lipid peroxidation and cellular senescence.",
+      "sourceUrl": "https://doi.org/10.1016/j.freeradbiomed.2026.06.012",
+      "freshReviewDate": "2026-07-03",
+      "freshReviewMode": "manual-fulltext-extraction-independent-fresh-review",
+      "sourceIdentityVerdict": "supported-route-identity",
+      "sourceAccessVerdict": "no-pmcid-europepmc-openaccess-N",
+      "sourceContextVerdict": "route-or-manual-access-context-only-no-direct-artifact-fill",
+      "currentnessVerdict": "currentness is bounded to the route and version captured by source-resolution/manual extraction; no later clinical or mechanistic update is inferred.",
+      "exactClaimVerdict": "route-scope-supported-exact-claim-not-admitted",
+      "endpointVariableVerdict": "endpoint-vocabulary-context-only",
+      "transferBoundaryVerdict": "transfer-boundary-present-and-required",
+      "reviewerVerdict": "blocked-or-context-only",
+      "freshReviewFinding": "Fresh review preserves Ferro-aging: A novel paradigm linking iron overload, lipid peroxidation and cellular senescence. as publisher-doi-route context only; current access/duplicate status is insufficient for direct artifact fill.",
+      "downgradeOrBlockReason": "Manual/fulltext access, duplicate-lineage handling or source-route limitation remains unresolved; no direct reviewed artifact may be created from this row.",
+      "artifactPromotionDecision": "blocked-route-or-manual-access-required-no-direct-artifact-fill",
+      "allowedArtifactTypes": [],
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id=42334294,42096823,41911323,42250782,42107721,42264186&retmode=json",
+          "evidenceType": "source-resolution-verification-route",
+          "finding": "Official route metadata supports source identity and access-state classification only; it does not create reviewed artifact content."
+        },
+        {
+          "url": "https://doi.org/10.1016/j.freeradbiomed.2026.06.012",
+          "evidenceType": "bibliographic-or-doi-route",
+          "finding": "Candidate route is retained for bounded manual/fulltext extraction planning under the row-specific access and duplicate boundary."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-fifth-batch-manual-fulltext-extraction-register.json",
+          "evidenceType": "manual-fulltext-extraction-register",
+          "finding": "Local manual/fulltext extraction row provides access, duplicate and transfer-boundary context."
+        }
+      ],
+      "nextAction": "Obtain authorized fulltext or publisher route access, then repeat manual extraction before independent fresh review."
+    },
+    {
+      "reviewId": "C2LTB5-MFFRV-011",
+      "batchId": "C2-LT-B5",
+      "manualExtractionId": "C2LTB5-MFEXT-011",
+      "originTaskId": "C2LTB5-EXT-019",
+      "sourceResolutionId": "C2LTB5-SRR-007",
+      "domainId": "nuclear-gateway-nucleocytoplasmic-transport-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/nuclear-gateway-nucleocytoplasmic-transport-continuity",
+      "candidateId": "C2LTB5-SRR-019-CAND-01",
+      "sourceTitle": "Karyopherins in Proteostasis and Aging.",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/42107721/",
+      "freshReviewDate": "2026-07-03",
+      "freshReviewMode": "manual-fulltext-extraction-independent-fresh-review",
+      "sourceIdentityVerdict": "supported-route-identity",
+      "sourceAccessVerdict": "no-pmcid-europepmc-openaccess-N",
+      "sourceContextVerdict": "route-or-manual-access-context-only-no-direct-artifact-fill",
+      "currentnessVerdict": "currentness is bounded to the route and version captured by source-resolution/manual extraction; no later clinical or mechanistic update is inferred.",
+      "exactClaimVerdict": "route-scope-supported-exact-claim-not-admitted",
+      "endpointVariableVerdict": "endpoint-vocabulary-context-only",
+      "transferBoundaryVerdict": "transfer-boundary-present-and-required",
+      "reviewerVerdict": "blocked-or-context-only",
+      "freshReviewFinding": "Fresh review preserves Karyopherins in Proteostasis and Aging. as pubmed-bibliographic-route context only; current access/duplicate status is insufficient for direct artifact fill.",
+      "downgradeOrBlockReason": "Manual/fulltext access, duplicate-lineage handling or source-route limitation remains unresolved; no direct reviewed artifact may be created from this row.",
+      "artifactPromotionDecision": "blocked-route-or-manual-access-required-no-direct-artifact-fill",
+      "allowedArtifactTypes": [],
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id=42334294,42096823,41911323,42250782,42107721,42264186&retmode=json",
+          "evidenceType": "source-resolution-verification-route",
+          "finding": "Official route metadata supports source identity and access-state classification only; it does not create reviewed artifact content."
+        },
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42107721/",
+          "evidenceType": "bibliographic-or-doi-route",
+          "finding": "Candidate route is retained for bounded manual/fulltext extraction planning under the row-specific access and duplicate boundary."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-fifth-batch-manual-fulltext-extraction-register.json",
+          "evidenceType": "manual-fulltext-extraction-register",
+          "finding": "Local manual/fulltext extraction row provides access, duplicate and transfer-boundary context."
+        }
+      ],
+      "nextAction": "Obtain authorized fulltext or publisher route access, then repeat manual extraction before independent fresh review."
+    },
+    {
+      "reviewId": "C2LTB5-MFFRV-012",
+      "batchId": "C2-LT-B5",
+      "manualExtractionId": "C2LTB5-MFEXT-012",
+      "originTaskId": "C2LTB5-EXT-019",
+      "sourceResolutionId": "C2LTB5-SRR-007",
+      "domainId": "nuclear-gateway-nucleocytoplasmic-transport-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/nuclear-gateway-nucleocytoplasmic-transport-continuity",
+      "candidateId": "C2LTB5-SRR-019-CAND-02",
+      "sourceTitle": "Karyopherins in Proteostasis and Aging.",
+      "sourceUrl": "https://doi.org/10.1016/j.arr.2026.103161",
+      "freshReviewDate": "2026-07-03",
+      "freshReviewMode": "manual-fulltext-extraction-independent-fresh-review",
+      "sourceIdentityVerdict": "supported-route-identity",
+      "sourceAccessVerdict": "no-pmcid-europepmc-openaccess-N",
+      "sourceContextVerdict": "route-or-manual-access-context-only-no-direct-artifact-fill",
+      "currentnessVerdict": "currentness is bounded to the route and version captured by source-resolution/manual extraction; no later clinical or mechanistic update is inferred.",
+      "exactClaimVerdict": "route-scope-supported-exact-claim-not-admitted",
+      "endpointVariableVerdict": "endpoint-vocabulary-context-only",
+      "transferBoundaryVerdict": "transfer-boundary-present-and-required",
+      "reviewerVerdict": "blocked-or-context-only",
+      "freshReviewFinding": "Fresh review preserves Karyopherins in Proteostasis and Aging. as publisher-doi-route context only; current access/duplicate status is insufficient for direct artifact fill.",
+      "downgradeOrBlockReason": "Manual/fulltext access, duplicate-lineage handling or source-route limitation remains unresolved; no direct reviewed artifact may be created from this row.",
+      "artifactPromotionDecision": "blocked-route-or-manual-access-required-no-direct-artifact-fill",
+      "allowedArtifactTypes": [],
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id=42334294,42096823,41911323,42250782,42107721,42264186&retmode=json",
+          "evidenceType": "source-resolution-verification-route",
+          "finding": "Official route metadata supports source identity and access-state classification only; it does not create reviewed artifact content."
+        },
+        {
+          "url": "https://doi.org/10.1016/j.arr.2026.103161",
+          "evidenceType": "bibliographic-or-doi-route",
+          "finding": "Candidate route is retained for bounded manual/fulltext extraction planning under the row-specific access and duplicate boundary."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-fifth-batch-manual-fulltext-extraction-register.json",
+          "evidenceType": "manual-fulltext-extraction-register",
+          "finding": "Local manual/fulltext extraction row provides access, duplicate and transfer-boundary context."
+        }
+      ],
+      "nextAction": "Obtain authorized fulltext or publisher route access, then repeat manual extraction before independent fresh review."
+    },
+    {
+      "reviewId": "C2LTB5-MFFRV-013",
+      "batchId": "C2-LT-B5",
+      "manualExtractionId": "C2LTB5-MFEXT-013",
+      "originTaskId": "C2LTB5-EXT-021",
+      "sourceResolutionId": "C2LTB5-SRR-008",
+      "domainId": "lymphatic-glymphatic-clearance",
+      "localDomainPath": "domains/c2-source-maintenance/lymphatic-glymphatic-clearance",
+      "candidateId": "C2LTB5-SRR-021-CAND-01",
+      "sourceTitle": "Impaired Glymphatic Clearance as a Mechanistic Link Between Brain Aging and Neurodegenerative Disease Pathogenesis.",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/42264186/",
+      "freshReviewDate": "2026-07-03",
+      "freshReviewMode": "manual-fulltext-extraction-independent-fresh-review",
+      "sourceIdentityVerdict": "supported-route-identity",
+      "sourceAccessVerdict": "no-pmcid-europepmc-openaccess-N",
+      "sourceContextVerdict": "route-or-manual-access-context-only-no-direct-artifact-fill",
+      "currentnessVerdict": "currentness is bounded to the route and version captured by source-resolution/manual extraction; no later clinical or mechanistic update is inferred.",
+      "exactClaimVerdict": "route-scope-supported-exact-claim-not-admitted",
+      "endpointVariableVerdict": "endpoint-vocabulary-context-only",
+      "transferBoundaryVerdict": "transfer-boundary-present-and-required",
+      "reviewerVerdict": "blocked-or-context-only",
+      "freshReviewFinding": "Fresh review preserves Impaired Glymphatic Clearance as a Mechanistic Link Between Brain Aging and Neurodegenerative Disease Pathogenesis. as pubmed-bibliographic-route context only; current access/duplicate status is insufficient for direct artifact fill.",
+      "downgradeOrBlockReason": "Manual/fulltext access, duplicate-lineage handling or source-route limitation remains unresolved; no direct reviewed artifact may be created from this row.",
+      "artifactPromotionDecision": "blocked-route-or-manual-access-required-no-direct-artifact-fill",
+      "allowedArtifactTypes": [],
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id=42334294,42096823,41911323,42250782,42107721,42264186&retmode=json",
+          "evidenceType": "source-resolution-verification-route",
+          "finding": "Official route metadata supports source identity and access-state classification only; it does not create reviewed artifact content."
+        },
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42264186/",
+          "evidenceType": "bibliographic-or-doi-route",
+          "finding": "Candidate route is retained for bounded manual/fulltext extraction planning under the row-specific access and duplicate boundary."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-fifth-batch-manual-fulltext-extraction-register.json",
+          "evidenceType": "manual-fulltext-extraction-register",
+          "finding": "Local manual/fulltext extraction row provides access, duplicate and transfer-boundary context."
+        }
+      ],
+      "nextAction": "Obtain authorized fulltext or publisher route access, then repeat manual extraction before independent fresh review."
+    },
+    {
+      "reviewId": "C2LTB5-MFFRV-014",
+      "batchId": "C2-LT-B5",
+      "manualExtractionId": "C2LTB5-MFEXT-014",
+      "originTaskId": "C2LTB5-EXT-021",
+      "sourceResolutionId": "C2LTB5-SRR-008",
+      "domainId": "lymphatic-glymphatic-clearance",
+      "localDomainPath": "domains/c2-source-maintenance/lymphatic-glymphatic-clearance",
+      "candidateId": "C2LTB5-SRR-021-CAND-02",
+      "sourceTitle": "Impaired Glymphatic Clearance as a Mechanistic Link Between Brain Aging and Neurodegenerative Disease Pathogenesis.",
+      "sourceUrl": "https://doi.org/10.1016/j.arr.2026.103202",
+      "freshReviewDate": "2026-07-03",
+      "freshReviewMode": "manual-fulltext-extraction-independent-fresh-review",
+      "sourceIdentityVerdict": "supported-route-identity",
+      "sourceAccessVerdict": "no-pmcid-europepmc-openaccess-N",
+      "sourceContextVerdict": "route-or-manual-access-context-only-no-direct-artifact-fill",
+      "currentnessVerdict": "currentness is bounded to the route and version captured by source-resolution/manual extraction; no later clinical or mechanistic update is inferred.",
+      "exactClaimVerdict": "route-scope-supported-exact-claim-not-admitted",
+      "endpointVariableVerdict": "endpoint-vocabulary-context-only",
+      "transferBoundaryVerdict": "transfer-boundary-present-and-required",
+      "reviewerVerdict": "blocked-or-context-only",
+      "freshReviewFinding": "Fresh review preserves Impaired Glymphatic Clearance as a Mechanistic Link Between Brain Aging and Neurodegenerative Disease Pathogenesis. as publisher-doi-route context only; current access/duplicate status is insufficient for direct artifact fill.",
+      "downgradeOrBlockReason": "Manual/fulltext access, duplicate-lineage handling or source-route limitation remains unresolved; no direct reviewed artifact may be created from this row.",
+      "artifactPromotionDecision": "blocked-route-or-manual-access-required-no-direct-artifact-fill",
+      "allowedArtifactTypes": [],
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id=42334294,42096823,41911323,42250782,42107721,42264186&retmode=json",
+          "evidenceType": "source-resolution-verification-route",
+          "finding": "Official route metadata supports source identity and access-state classification only; it does not create reviewed artifact content."
+        },
+        {
+          "url": "https://doi.org/10.1016/j.arr.2026.103202",
+          "evidenceType": "bibliographic-or-doi-route",
+          "finding": "Candidate route is retained for bounded manual/fulltext extraction planning under the row-specific access and duplicate boundary."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-fifth-batch-manual-fulltext-extraction-register.json",
+          "evidenceType": "manual-fulltext-extraction-register",
+          "finding": "Local manual/fulltext extraction row provides access, duplicate and transfer-boundary context."
+        }
+      ],
+      "nextAction": "Obtain authorized fulltext or publisher route access, then repeat manual extraction before independent fresh review."
+    }
+  ],
+  "indexRequirements": [
+    "README.md",
+    "AGENTS.md",
+    "docs/AGENTS.md",
+    "docs/reference/README.md",
+    "docs/reference/human-infra-maturity-roadmap.md",
+    "tools/README.md",
+    "tools/AGENTS.md"
+  ]
+}
