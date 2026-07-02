@@ -4,6 +4,7 @@ All notable repository structure changes are recorded here.
 
 ## 2026-07-02
 
+- Added a domain-source card promotion queue and audit gate, deriving all 81 completed field extraction rows into source-context fresh-review, Source Card, variable-card, endpoint-card, uncertainty-card, transfer-boundary-card and downgrade-check tasks while keeping model admission blocked.
 - Completed the domain-source-specific extraction register to 81/81 rows, adding continuity, governance and future-path anchors for WHO health, capability approach, extended mind, human digital twins, brain preservation, GPS relativity, NASA black holes, NIST AI RMF and NCI screening-bias boundaries while keeping fresh review, calibrated prediction and individual advice blocked.
 - Expanded the domain-source-specific extraction register to 55/81 completed rows, adding biological-mechanism anchors for Hallmarks of Aging, Hallmarks of Cancer, Yamanaka / iPS, partial reprogramming, immunosenescence and GrimAge while keeping calibrated prediction and intervention ranking blocked.
 - Added a first-wave domain-source-specific extraction register and audit gate, completing 25/81 method-anchor extraction rows for Kaplan-Meier, Cox, Target Trial Emulation and TRIPOD+AI while keeping calibrated prediction, individual advice and intervention ranking blocked.

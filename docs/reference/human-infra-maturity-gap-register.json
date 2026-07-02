@@ -114,7 +114,7 @@
     {
       "axisId": "research_framework",
       "axisName": "研究框架",
-      "currentPercent": 90,
+      "currentPercent": 91,
       "targetPercent": 100,
       "definitionOfDone": "Every strong project claim can be traced to source cards, claim-evidence rows, variables, mechanism links, falsifiers, model position and governance boundary.",
       "primaryEvidence": [
@@ -129,7 +129,8 @@
         "docs/reference/human-infra-falsifier-source-card-backfill.json",
         "docs/reference/human-infra-falsifier-source-card-extraction.json",
         "domains/README.md",
-        "domains/_possibility-space-control/classification.tsv"
+        "domains/_possibility-space-control/classification.tsv",
+        "docs/reference/human-infra-domain-source-card-promotion-queue.json"
       ],
       "gates": [
         {
@@ -169,14 +170,16 @@
             "docs/reference/human-infra-domain-source-specific-extraction-queue.json",
             "tools/audit_human_infra_domain_claim_evidence_matrix.py",
             "docs/reference/human-infra-domain-source-specific-extraction-register.json",
-            "tools/audit_human_infra_domain_source_specific_extraction_register.py"
+            "tools/audit_human_infra_domain_source_specific_extraction_register.py",
+            "docs/reference/human-infra-domain-source-card-promotion-queue.json",
+            "tools/audit_human_infra_domain_source_card_promotion_queue.py"
           ],
           "missingEvidence": [
-            "Full source-context fresh review for all 81 completed source-specific field rows.",
-            "Domain-level Claim-Evidence Matrix coverage beyond the current priority C1/C2 set.",
-            "Promotion of completed field rows into reusable Source Cards with reviewer verdicts and downgrade triggers."
+            "Source-context fresh review execution for the 81 queued promotion tasks.",
+            "Promotion verdicts that classify each completed field row as supported, bounded, downgraded or rejected.",
+            "Domain-level Claim-Evidence Matrix coverage beyond the current priority C1/C2 set."
           ],
-          "nextAction": "Promote the 81 completed source-specific rows into fresh-reviewed Source Cards, reviewer verdicts, evidence-grade notes and downgrade checks before allowing stronger domain claims.",
+          "nextAction": "Execute the 81-task promotion queue: complete source-context fresh review, write reviewer verdicts and promote only supported content into reusable Source Cards with downgrade triggers.",
           "blocks100Percent": true
         },
         {
@@ -191,14 +194,16 @@
             "docs/reference/human-infra-domain-source-card-field-extraction.json",
             "docs/reference/human-infra-domain-source-specific-extraction-queue.json",
             "docs/reference/human-infra-domain-source-specific-extraction-register.json",
-            "tools/audit_human_infra_domain_source_specific_extraction_register.py"
+            "tools/audit_human_infra_domain_source_specific_extraction_register.py",
+            "docs/reference/human-infra-domain-source-card-promotion-queue.json",
+            "tools/audit_human_infra_domain_source_card_promotion_queue.py"
           ],
           "missingEvidence": [
-            "Reusable variable templates promoted from the 81 completed source-specific field rows into source-specific variable cards.",
-            "Domain-specific variable tables for C2 long-tail claims beyond the current priority set.",
-            "Endpoint, uncertainty and transfer-boundary cards derived from completed rows and reviewed against source context."
+            "Variable cards promoted from the 81 queued promotion tasks after fresh review.",
+            "Endpoint, uncertainty and transfer-boundary cards derived from reviewed rows rather than field-extraction drafts.",
+            "Domain-specific variable tables for C2 long-tail claims beyond the current priority set."
           ],
-          "nextAction": "Promote completed rows into source-specific variable, endpoint, uncertainty and transfer-boundary contracts, then attach them to model-entry gates without opening calibrated prediction.",
+          "nextAction": "Use the promotion queue to create reviewed variable, endpoint, uncertainty and transfer-boundary cards, then attach them to model-entry gates without opening calibrated prediction.",
           "blocks100Percent": true
         },
         {
@@ -238,14 +243,16 @@
             "tools/audit_human_infra_page_claim_consistency.py",
             "tools/audit_human_infra_paper_claim_register.py",
             "docs/reference/human-infra-domain-source-specific-extraction-register.json",
-            "tools/audit_human_infra_domain_source_specific_extraction_register.py"
+            "tools/audit_human_infra_domain_source_specific_extraction_register.py",
+            "docs/reference/human-infra-domain-source-card-promotion-queue.json",
+            "tools/audit_human_infra_domain_source_card_promotion_queue.py"
           ],
           "missingEvidence": [
+            "Executed downgrade checks for all 81 promotion tasks.",
             "Falsifier rows for C2 domain claims beyond the current 20-domain priority set.",
-            "Fresh-review downgrade checks for all completed source-specific rows.",
             "Reviewer-confirmed boundary checks that prevent completed field rows from being treated as calibrated evidence."
           ],
-          "nextAction": "Add fresh-review downgrade checks and promote completed rows into falsifier, variable and endpoint cards before raising any domain claim maturity.",
+          "nextAction": "Execute downgrade-check registration from the promotion queue and connect rejected or indirect rows back to falsifier and variable-card gates.",
           "blocks100Percent": true
         }
       ]
@@ -392,7 +399,7 @@
   "nextWorkOrder": [
     {
       "priority": 1,
-      "item": "Promote the 81 completed domain-source field extraction rows into fresh-reviewed Source Cards, reusable variable cards, endpoint cards, uncertainty cards, transfer-boundary cards and downgrade checks.",
+      "item": "Execute the 81-task domain-source card promotion queue: complete source-context fresh review, reviewer verdicts, variable cards, endpoint cards, uncertainty cards, transfer-boundary cards and downgrade checks.",
       "unblocks": [
         "RESEARCH-G3-c1-c2-source-cards",
         "RESEARCH-G4-variable-mechanism-contracts",

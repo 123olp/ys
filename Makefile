@@ -1,4 +1,4 @@
-.PHONY: check structure claim-matrix-audit maturity-gap-audit page-claim-audit paper-claim-audit domain-falsifier-audit domain-claim-matrix-audit domain-field-extraction-audit domain-source-queue-audit domain-source-extraction-audit falsifier-source-audit falsifier-source-extraction-audit py-compile clean
+.PHONY: check structure claim-matrix-audit maturity-gap-audit page-claim-audit paper-claim-audit domain-falsifier-audit domain-claim-matrix-audit domain-field-extraction-audit domain-source-queue-audit domain-source-extraction-audit domain-source-promotion-audit falsifier-source-audit falsifier-source-extraction-audit py-compile clean
 
 check:
 	$(MAKE) clean
@@ -12,6 +12,7 @@ check:
 	$(MAKE) domain-field-extraction-audit
 	$(MAKE) domain-source-queue-audit
 	$(MAKE) domain-source-extraction-audit
+	$(MAKE) domain-source-promotion-audit
 	$(MAKE) falsifier-source-audit
 	$(MAKE) falsifier-source-extraction-audit
 	$(MAKE) py-compile
@@ -48,6 +49,9 @@ domain-source-queue-audit:
 domain-source-extraction-audit:
 	python3 tools/audit_human_infra_domain_source_specific_extraction_register.py
 
+domain-source-promotion-audit:
+	python3 tools/audit_human_infra_domain_source_card_promotion_queue.py
+
 falsifier-source-audit:
 	python3 tools/audit_human_infra_falsifier_source_card_backfill.py
 
@@ -65,6 +69,7 @@ py-compile:
 		tools/audit_human_infra_domain_source_card_field_extraction.py \
 		tools/audit_human_infra_domain_source_specific_extraction_queue.py \
 		tools/audit_human_infra_domain_source_specific_extraction_register.py \
+		tools/audit_human_infra_domain_source_card_promotion_queue.py \
 		tools/audit_human_infra_falsifier_source_card_backfill.py \
 		tools/audit_human_infra_falsifier_source_card_extraction.py \
 		tools/arxiv_html_paper_tool.py \
