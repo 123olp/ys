@@ -1,0 +1,225 @@
+{
+  "schemaVersion": "human-infra.life-path-nhats-first-estimand-protocol.v1",
+  "sourceId": "nhats",
+  "sourceName": "National Health and Aging Trends Study",
+  "protocolId": "nhats-r13-r14-functional-survival-estimand-protocol-draft",
+  "dataCardId": "nhats-r1-r14-effective-time-draft",
+  "manifestId": "nhats-r1-r14-effective-time-manifest-draft",
+  "variableDictionaryId": "nhats-life-path-variable-dictionary-draft",
+  "acquisitionReadinessId": "nhats-acquisition-readiness-2026-07-02",
+  "fileTierTableId": "nhats-r13-r14-file-tier-table-draft",
+  "reviewDate": "2026-07-02",
+  "reviewer": "tradecatlabs",
+  "status": "protocol-only-cannot-run-yet",
+  "protocolPurpose": "Pre-register the first narrow NHATS functional-survival estimand before data download, extraction scripts, variable selection, calibration, validation or Web display.",
+  "currentDecision": {
+    "estimandRunnable": false,
+    "downloadAllowed": false,
+    "extractionScriptAllowed": false,
+    "variableSelectionAfterOutcomeAllowed": false,
+    "calibrationAllowed": false,
+    "externalValidationAllowed": false,
+    "individualPredictionAllowed": false,
+    "reason": "The estimand question and analysis boundary are pre-registered, but registration, exact variables, missing codes, weights, endpoint fields, cohort flow, disclosure control and governed storage remain incomplete."
+  },
+  "estimand": {
+    "id": "E-NHATS-R13R14-FS-01",
+    "label": "Adjacent-round aggregate functional-survival state",
+    "question": "Among eligible NHATS sample persons represented in the Round 13 public-use annual file, what is the aggregate Round 14 functional-survival state after freezing baseline predictors at Round 13?",
+    "estimandType": "cohort-level descriptive-predictive estimand",
+    "notAnEstimandFor": [
+      "individual death-date prediction",
+      "individual treatment effect",
+      "clinical decision rule",
+      "LEV proof",
+      "causal effect of an intervention"
+    ]
+  },
+  "targetPopulation": {
+    "unit": "NHATS sample person",
+    "ageFrame": "Age 65+ NHATS sample persons represented by the selected public-use annual file family.",
+    "baselineRound": 13,
+    "followupRound": 14,
+    "inclusionCriteria": [
+      "present in governed R13 public-use annual file after registration",
+      "eligible for R14 adjacent-round follow-up classification",
+      "has required design, identity and interview-route variables after official confirmation"
+    ],
+    "exclusionCriteria": [
+      "records requiring sensitive or restricted files in the first pass",
+      "rows whose endpoint, interview route or residential state cannot be classified from approved public-use fields",
+      "rows that would create small-cell disclosure risk in aggregate outputs"
+    ],
+    "status": "candidate-only-unverified"
+  },
+  "timeZero": {
+    "indexRule": "Freeze predictors at the R13 interview state after confirming official variable names and missing codes.",
+    "predictorLookbackWindow": "R13 interview content only unless a field is explicitly pre-registered as historical baseline context.",
+    "followupStart": "Immediately after the R13 baseline state.",
+    "followupEnd": "R14 functional-survival classification window.",
+    "outcomePeekingBlocked": true,
+    "status": "pre-registered-draft"
+  },
+  "outcomeDefinition": {
+    "primaryOutcome": "functional_survival_state_r14",
+    "components": [
+      "alive_or_decedent_boundary",
+      "functional_state",
+      "cognitive_route_or_status",
+      "participation_or_independence_state",
+      "residential_or_proxy_route_state"
+    ],
+    "candidateScale": [
+      "alive_functionally_independent_or_low_support",
+      "alive_functionally_limited_or_support_needed",
+      "alive_high_support_or_residential_care",
+      "decedent_or_endpoint_death_boundary",
+      "not_classifiable_due_to_governed_missingness"
+    ],
+    "forbiddenOutcome": "individual death date or personal life expectancy.",
+    "status": "definition-draft-no-field-names-yet"
+  },
+  "predictorFamilies": [
+    {
+      "id": "design_identity",
+      "role": "join, round, cohort, interview route and survey design readiness",
+      "sourceFamily": "R13/R14 public annual files plus official methods documentation",
+      "status": "exact-fields-pending"
+    },
+    {
+      "id": "baseline_function",
+      "role": "baseline action-capacity state",
+      "sourceFamily": "self-care, mobility, household activities and medical-care activity families",
+      "status": "exact-fields-pending"
+    },
+    {
+      "id": "baseline_cognition_attention",
+      "role": "baseline cognition, memory and measurement route state",
+      "sourceFamily": "direct cognition, proxy cognition and route indicators",
+      "status": "exact-fields-pending"
+    },
+    {
+      "id": "baseline_support_resources",
+      "role": "external support and resource context",
+      "sourceFamily": "household, helper, insurance, economic and care-support families",
+      "status": "exact-fields-pending"
+    },
+    {
+      "id": "baseline_environment_access",
+      "role": "execution friction and access context",
+      "sourceFamily": "home environment, transportation, technology and service-access families",
+      "status": "exact-fields-pending"
+    }
+  ],
+  "censoringAndMissingness": {
+    "mustDistinguish": [
+      "death",
+      "not interviewed but known alive",
+      "proxy interview",
+      "residential care route",
+      "refusal or nonresponse",
+      "file-access limitation",
+      "not classifiable from public-use first-pass variables"
+    ],
+    "rule": "Each row must be routed to outcome, censoring, proxy/residential route or not-classifiable before any model metric is computed.",
+    "status": "rules-draft-no-field-names-yet"
+  },
+  "surveyDesignPlan": {
+    "requiredBeforeMetrics": [
+      "round-specific analysis weight",
+      "strata variable",
+      "cluster or PSU variable",
+      "replicate-weight decision if required",
+      "variance method",
+      "population inference boundary"
+    ],
+    "currentStatus": "not-ready",
+    "blockedUntil": "Blocked until exact design and weight variables are confirmed from official methods documentation, codebooks or Colectica."
+  },
+  "analysisPlan": {
+    "allowedFirstOutputs": [
+      "cohort_flow_counts",
+      "variable_availability_table",
+      "missingness_table",
+      "weighted_or_design-aware_descriptive_summary_if_design_ready",
+      "aggregate_functional_survival_state_distribution",
+      "model_development_diagnostics_without_individual_predictions"
+    ],
+    "prohibitedFirstOutputs": [
+      "row-level records",
+      "individual death-date prediction",
+      "personal longevity ranking",
+      "personal medical advice",
+      "small-cell outputs",
+      "calibration claim",
+      "external validation claim",
+      "causal intervention effect claim"
+    ],
+    "modelClassBoundary": "screening / descriptive-predictive protocol only until governed data and validation exist"
+  },
+  "readinessGates": [
+    {
+      "id": "registration-status",
+      "requiredEvidence": "Registered NHATS access and permitted user boundary recorded outside the public repository.",
+      "status": "missing",
+      "blocksRun": true
+    },
+    {
+      "id": "canonical-file-format",
+      "requiredEvidence": "One canonical public-use annual file format selected for R13/R14.",
+      "status": "missing",
+      "blocksRun": true
+    },
+    {
+      "id": "exact-variable-confirmation",
+      "requiredEvidence": "Exact field names, labels, value labels, missing codes and question text confirmed from Colectica, codebooks or official crosswalks.",
+      "status": "missing",
+      "blocksRun": true
+    },
+    {
+      "id": "endpoint-censoring-rule",
+      "requiredEvidence": "Death, proxy, residential care, nonresponse and not-classifiable routes mapped to official fields.",
+      "status": "missing",
+      "blocksRun": true
+    },
+    {
+      "id": "survey-design-ready",
+      "requiredEvidence": "Weight, strata, cluster/PSU and variance method fixed.",
+      "status": "missing",
+      "blocksRun": true
+    },
+    {
+      "id": "disclosure-control-ready",
+      "requiredEvidence": "Small-cell suppression and aggregate-only export validator implemented.",
+      "status": "missing",
+      "blocksRun": true
+    },
+    {
+      "id": "governed-storage-ready",
+      "requiredEvidence": "Non-public storage, access log, raw/derived boundary and destruction-on-request process defined.",
+      "status": "missing",
+      "blocksRun": true
+    }
+  ],
+  "gateSummary": {
+    "requiredGateCount": 7,
+    "readyGateCount": 0,
+    "missingGateCount": 7,
+    "blockingGateCount": 7
+  },
+  "sourceTrace": [
+    "https://nhats.org/data-access/nhats/13",
+    "https://nhats.org/data-access/nhats/14",
+    "https://nhats.org/data-access/cross-year-search",
+    "https://nhats.org/nhats/methods-documentation?id=heading0",
+    "https://nhats.org/sites/default/files/public-documentation/NHATSUserGuideR14_02102026.pdf",
+    "https://nhats.org/sites/default/files/public-documentation/NHATSTechnicalPaper55_09042025.pdf",
+    "https://www.nhats.org/conditions-of-use"
+  ],
+  "nextWork": [
+    "Select one canonical R13/R14 public annual file format after registration.",
+    "Use Colectica, codebooks or official crosswalks to fill exact variables and missing codes for each predictor and outcome family.",
+    "Write a cohort-flow template before any extraction script exists.",
+    "Implement disclosure-control and governed-storage checks before any derived output leaves the workspace."
+  ]
+}

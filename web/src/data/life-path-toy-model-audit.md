@@ -3,7 +3,7 @@
 - Overall status: `PASS`
 - Model path: `web/src/data/life-path-toy-model.json`
 - Model SHA-256: `a4c92209d79d20579bf1f575d5ebf07ffe5be9ccaf6bf3f3eef08efa287b5377`
-- Generated at: `2026-07-02T02:20:50.838420+00:00`
+- Generated at: `2026-07-02T02:34:10.811615+00:00`
 
 ## Checks
 
@@ -104,6 +104,22 @@
 | `nhats-file-tier-table-prohibited-actions` | `PASS` | file-tier table must prohibit premature download, prose-only variables, sensitive-file use, raw storage, public AI upload and individual prediction |
 | `nhats-file-tier-table-next-work` | `PASS` | next work must point to canonical format, Colectica variables, weights, endpoint and disclosure-control work |
 | `nhats-file-tier-table-source-trace` | `PASS` | source trace must include R13/R14 files, Cross-Year Search, methods documentation and Conditions of Use |
+| `nhats-first-estimand-protocol-exists` | `PASS` | domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_first_estimand_protocol.json |
+| `nhats-first-estimand-protocol-schema` | `PASS` | schemaVersion='human-infra.life-path-nhats-first-estimand-protocol.v1' |
+| `nhats-first-estimand-protocol-identity` | `PASS` | protocol must bind NHATS source, Data Card, manifest, variable dictionary, acquisition readiness and file-tier table |
+| `nhats-first-estimand-protocol-current-decision` | `PASS` | protocol must block running, download, extraction scripts, post-outcome variable selection, calibration, validation and individual prediction |
+| `nhats-first-estimand-protocol-estimand-boundary` | `PASS` | estimand must be cohort-level functional-survival and must not claim individual, causal, clinical or LEV proof use |
+| `nhats-first-estimand-protocol-target-population` | `PASS` | target population must bind R13/R14, age 65+, public-use first pass and sensitive/restricted exclusion |
+| `nhats-first-estimand-protocol-time-zero` | `PASS` | time zero must freeze R13 predictors, end at R14 follow-up and block outcome peeking |
+| `nhats-first-estimand-protocol-outcome-definition` | `PASS` | outcome must define aggregate functional-survival state and forbid individual death-date output |
+| `nhats-first-estimand-protocol-predictor-families` | `PASS` | missing_predictor_ids=[] |
+| `nhats-first-estimand-protocol-censoring-missingness` | `PASS` | censoring rules must distinguish death, proxy, residential care, nonresponse and not-classifiable states before metrics |
+| `nhats-first-estimand-protocol-survey-design` | `PASS` | survey design must require weights, strata, cluster/PSU and variance method before metrics |
+| `nhats-first-estimand-protocol-analysis-boundary` | `PASS` | analysis plan must allow only aggregate diagnostics and prohibit row-level, small-cell, individual and validation/calibration outputs |
+| `nhats-first-estimand-protocol-readiness-gates` | `PASS` | missing_gate_ids=[] |
+| `nhats-first-estimand-protocol-gate-summary` | `PASS` | gate summary must keep every estimand gate blocking until ready evidence exists |
+| `nhats-first-estimand-protocol-source-trace` | `PASS` | source trace must include R13/R14 files, Cross-Year Search, methods documentation and Conditions of Use |
+| `nhats-first-estimand-protocol-next-work` | `PASS` | next work must point to canonical files, Colectica/codebooks, cohort flow and disclosure control |
 | `sensitivity-analysis-exists` | `PASS` | web/src/data/life-path-sensitivity-analysis.json |
 | `sensitivity-schema-version` | `PASS` | schemaVersion='human-infra.life-path-sensitivity.v1' |
 | `sensitivity-source-model-hash` | `PASS` | sensitivity output must point back to the generated model path and sha256 |
@@ -169,10 +185,17 @@
 - File-tier table status: `PASS`
 - Boundary: the file-tier table maps official R13/R14 public and sensitive file families, but it still blocks download, extraction, repository storage, public AI upload, calibration and individual prediction.
 
+## NHATS First Estimand Protocol
+
+- First estimand protocol path: `domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_first_estimand_protocol.json`
+- First estimand protocol SHA-256: `d939ef97e4a094036136d945e9739713e469b7b435c88857945e46a8f913e571`
+- First estimand protocol status: `PASS`
+- Boundary: the first estimand protocol pre-registers the R13/R14 aggregate functional-survival question, time-zero, outcome, censoring, survey-design and output boundaries, but it still blocks data download, extraction, calibration, validation and individual prediction.
+
 ## Sensitivity Analysis
 
 - Sensitivity path: `web/src/data/life-path-sensitivity-analysis.json`
-- Sensitivity SHA-256: `610b8522a9bbac4dda54fbb5ac9316ae841b67b19bfcad49484ee33ba3fc3696`
+- Sensitivity SHA-256: `a9fbcb12c1b1690106bae5215ececab16f3d49c9c47c7a0a64637b6cd75e6b7e`
 - Sensitivity status: `PASS`
 - Boundary: sensitivity analysis is synthetic one-factor-at-a-time stress testing; it does not prove empirical parameter values, causal effects, calibrated prediction, or individual usefulness.
 

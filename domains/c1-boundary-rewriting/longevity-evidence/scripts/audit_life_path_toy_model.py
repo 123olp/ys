@@ -94,6 +94,15 @@ DEFAULT_NHATS_FILE_TIER_TABLE = (
     / "manual"
     / "life_path_nhats_file_tier_table.json"
 )
+DEFAULT_NHATS_FIRST_ESTIMAND_PROTOCOL = (
+    REPO_ROOT
+    / "domains"
+    / "c1-boundary-rewriting"
+    / "longevity-evidence"
+    / "data"
+    / "manual"
+    / "life_path_nhats_first_estimand_protocol.json"
+)
 REQUIRED_MODEL_CARD_FIELDS = {
     "modelName",
     "modelClass",
@@ -237,6 +246,22 @@ REQUIRED_NHATS_FILE_TIER_METHOD_DOC_IDS = {
     "cross-year-search",
     "round-13-crosswalk",
     "round-14-crosswalk",
+}
+REQUIRED_NHATS_FIRST_ESTIMAND_PREDICTOR_IDS = {
+    "design_identity",
+    "baseline_function",
+    "baseline_cognition_attention",
+    "baseline_support_resources",
+    "baseline_environment_access",
+}
+REQUIRED_NHATS_FIRST_ESTIMAND_GATE_IDS = {
+    "registration-status",
+    "canonical-file-format",
+    "exact-variable-confirmation",
+    "endpoint-censoring-rule",
+    "survey-design-ready",
+    "disclosure-control-ready",
+    "governed-storage-ready",
 }
 
 
@@ -1566,6 +1591,282 @@ def audit_nhats_file_tier_table(table_path: Path) -> dict[str, Any]:
     }
 
 
+def audit_nhats_first_estimand_protocol(protocol_path: Path) -> dict[str, Any]:
+    checks: list[dict[str, Any]] = []
+    exists = protocol_path.exists()
+    add_check(
+        checks,
+        "nhats-first-estimand-protocol-exists",
+        status_from_bool(exists),
+        str(protocol_path.relative_to(REPO_ROOT)),
+    )
+    protocol = load_json(protocol_path) if exists else {}
+
+    schema_ok = (
+        protocol.get("schemaVersion")
+        == "human-infra.life-path-nhats-first-estimand-protocol.v1"
+    )
+    add_check(
+        checks,
+        "nhats-first-estimand-protocol-schema",
+        status_from_bool(exists and schema_ok),
+        f"schemaVersion={protocol.get('schemaVersion')!r}",
+    )
+
+    identity_ok = (
+        protocol.get("sourceId") == "nhats"
+        and protocol.get("protocolId") == "nhats-r13-r14-functional-survival-estimand-protocol-draft"
+        and protocol.get("dataCardId") == "nhats-r1-r14-effective-time-draft"
+        and protocol.get("manifestId") == "nhats-r1-r14-effective-time-manifest-draft"
+        and protocol.get("variableDictionaryId") == "nhats-life-path-variable-dictionary-draft"
+        and protocol.get("acquisitionReadinessId") == "nhats-acquisition-readiness-2026-07-02"
+        and protocol.get("fileTierTableId") == "nhats-r13-r14-file-tier-table-draft"
+        and protocol.get("status") == "protocol-only-cannot-run-yet"
+    )
+    add_check(
+        checks,
+        "nhats-first-estimand-protocol-identity",
+        status_from_bool(exists and identity_ok),
+        "protocol must bind NHATS source, Data Card, manifest, variable dictionary, acquisition readiness and file-tier table",
+    )
+
+    decision = protocol.get("currentDecision")
+    decision_ok = (
+        isinstance(decision, dict)
+        and decision.get("estimandRunnable") is False
+        and decision.get("downloadAllowed") is False
+        and decision.get("extractionScriptAllowed") is False
+        and decision.get("variableSelectionAfterOutcomeAllowed") is False
+        and decision.get("calibrationAllowed") is False
+        and decision.get("externalValidationAllowed") is False
+        and decision.get("individualPredictionAllowed") is False
+    )
+    add_check(
+        checks,
+        "nhats-first-estimand-protocol-current-decision",
+        status_from_bool(exists and decision_ok),
+        "protocol must block running, download, extraction scripts, post-outcome variable selection, calibration, validation and individual prediction",
+    )
+
+    estimand = protocol.get("estimand")
+    estimand_ok = (
+        isinstance(estimand, dict)
+        and estimand.get("id") == "E-NHATS-R13R14-FS-01"
+        and "functional-survival" in str(estimand.get("label", "")).lower()
+        and "cohort-level" in str(estimand.get("estimandType", "")).lower()
+        and has_text(estimand.get("notAnEstimandFor", []), "individual death-date")
+        and has_text(estimand.get("notAnEstimandFor", []), "causal effect")
+    )
+    add_check(
+        checks,
+        "nhats-first-estimand-protocol-estimand-boundary",
+        status_from_bool(exists and estimand_ok),
+        "estimand must be cohort-level functional-survival and must not claim individual, causal, clinical or LEV proof use",
+    )
+
+    target = protocol.get("targetPopulation")
+    target_ok = (
+        isinstance(target, dict)
+        and target.get("baselineRound") == 13
+        and target.get("followupRound") == 14
+        and "65+" in str(target.get("ageFrame", ""))
+        and has_text(target.get("inclusionCriteria", []), "R13 public-use annual")
+        and has_text(target.get("exclusionCriteria", []), "sensitive or restricted")
+        and target.get("status") == "candidate-only-unverified"
+    )
+    add_check(
+        checks,
+        "nhats-first-estimand-protocol-target-population",
+        status_from_bool(exists and target_ok),
+        "target population must bind R13/R14, age 65+, public-use first pass and sensitive/restricted exclusion",
+    )
+
+    time_zero = protocol.get("timeZero")
+    time_zero_ok = (
+        isinstance(time_zero, dict)
+        and "R13" in str(time_zero.get("indexRule", ""))
+        and "R14" in str(time_zero.get("followupEnd", ""))
+        and time_zero.get("outcomePeekingBlocked") is True
+        and time_zero.get("status") == "pre-registered-draft"
+    )
+    add_check(
+        checks,
+        "nhats-first-estimand-protocol-time-zero",
+        status_from_bool(exists and time_zero_ok),
+        "time zero must freeze R13 predictors, end at R14 follow-up and block outcome peeking",
+    )
+
+    outcome = protocol.get("outcomeDefinition")
+    outcome_ok = (
+        isinstance(outcome, dict)
+        and outcome.get("primaryOutcome") == "functional_survival_state_r14"
+        and has_text(outcome.get("components", []), "alive_or_decedent_boundary")
+        and has_text(outcome.get("components", []), "functional_state")
+        and has_text(outcome.get("candidateScale", []), "decedent")
+        and "individual death date" in str(outcome.get("forbiddenOutcome", "")).lower()
+        and outcome.get("status") == "definition-draft-no-field-names-yet"
+    )
+    add_check(
+        checks,
+        "nhats-first-estimand-protocol-outcome-definition",
+        status_from_bool(exists and outcome_ok),
+        "outcome must define aggregate functional-survival state and forbid individual death-date output",
+    )
+
+    predictor_families = protocol.get("predictorFamilies")
+    observed_predictor_ids: set[str] = set()
+    predictors_ok = True
+    if isinstance(predictor_families, list):
+        for family in predictor_families:
+            if not isinstance(family, dict):
+                predictors_ok = False
+                continue
+            family_id = family.get("id")
+            if isinstance(family_id, str):
+                observed_predictor_ids.add(family_id)
+            if family.get("status") != "exact-fields-pending":
+                predictors_ok = False
+            if not str(family.get("role", "")).strip() or not str(family.get("sourceFamily", "")).strip():
+                predictors_ok = False
+    missing_predictor_ids = sorted(
+        REQUIRED_NHATS_FIRST_ESTIMAND_PREDICTOR_IDS - observed_predictor_ids
+    )
+    add_check(
+        checks,
+        "nhats-first-estimand-protocol-predictor-families",
+        status_from_bool(exists and isinstance(predictor_families, list) and predictors_ok and not missing_predictor_ids),
+        f"missing_predictor_ids={missing_predictor_ids}",
+    )
+
+    censoring = protocol.get("censoringAndMissingness")
+    censoring_ok = (
+        isinstance(censoring, dict)
+        and has_text(censoring.get("mustDistinguish", []), "death")
+        and has_text(censoring.get("mustDistinguish", []), "proxy interview")
+        and has_text(censoring.get("mustDistinguish", []), "residential care")
+        and has_text(censoring.get("mustDistinguish", []), "nonresponse")
+        and "before any model metric" in str(censoring.get("rule", "")).lower()
+        and censoring.get("status") == "rules-draft-no-field-names-yet"
+    )
+    add_check(
+        checks,
+        "nhats-first-estimand-protocol-censoring-missingness",
+        status_from_bool(exists and censoring_ok),
+        "censoring rules must distinguish death, proxy, residential care, nonresponse and not-classifiable states before metrics",
+    )
+
+    survey_design = protocol.get("surveyDesignPlan")
+    survey_design_ok = (
+        isinstance(survey_design, dict)
+        and has_text(survey_design.get("requiredBeforeMetrics", []), "analysis weight")
+        and has_text(survey_design.get("requiredBeforeMetrics", []), "strata")
+        and has_text(survey_design.get("requiredBeforeMetrics", []), "cluster")
+        and has_text(survey_design.get("requiredBeforeMetrics", []), "variance")
+        and survey_design.get("currentStatus") == "not-ready"
+        and "blocked" in str(survey_design.get("blockedUntil", "")).lower()
+    )
+    add_check(
+        checks,
+        "nhats-first-estimand-protocol-survey-design",
+        status_from_bool(exists and survey_design_ok),
+        "survey design must require weights, strata, cluster/PSU and variance method before metrics",
+    )
+
+    analysis_plan = protocol.get("analysisPlan")
+    analysis_plan_ok = (
+        isinstance(analysis_plan, dict)
+        and has_text(analysis_plan.get("allowedFirstOutputs", []), "cohort_flow_counts")
+        and has_text(analysis_plan.get("allowedFirstOutputs", []), "missingness_table")
+        and has_text(analysis_plan.get("prohibitedFirstOutputs", []), "row-level")
+        and has_text(analysis_plan.get("prohibitedFirstOutputs", []), "individual death-date")
+        and has_text(analysis_plan.get("prohibitedFirstOutputs", []), "small-cell")
+        and "descriptive-predictive protocol" in str(analysis_plan.get("modelClassBoundary", "")).lower()
+    )
+    add_check(
+        checks,
+        "nhats-first-estimand-protocol-analysis-boundary",
+        status_from_bool(exists and analysis_plan_ok),
+        "analysis plan must allow only aggregate diagnostics and prohibit row-level, small-cell, individual and validation/calibration outputs",
+    )
+
+    gates = protocol.get("readinessGates")
+    observed_gate_ids: set[str] = set()
+    gates_ok = True
+    if isinstance(gates, list):
+        for gate in gates:
+            if not isinstance(gate, dict):
+                gates_ok = False
+                continue
+            gate_id = gate.get("id")
+            if isinstance(gate_id, str):
+                observed_gate_ids.add(gate_id)
+            if gate.get("status") != "missing" or gate.get("blocksRun") is not True:
+                gates_ok = False
+            if not str(gate.get("requiredEvidence", "")).strip():
+                gates_ok = False
+    missing_gate_ids = sorted(REQUIRED_NHATS_FIRST_ESTIMAND_GATE_IDS - observed_gate_ids)
+    add_check(
+        checks,
+        "nhats-first-estimand-protocol-readiness-gates",
+        status_from_bool(exists and isinstance(gates, list) and gates_ok and not missing_gate_ids),
+        f"missing_gate_ids={missing_gate_ids}",
+    )
+
+    summary = protocol.get("gateSummary")
+    summary_ok = (
+        isinstance(summary, dict)
+        and summary.get("requiredGateCount") == len(REQUIRED_NHATS_FIRST_ESTIMAND_GATE_IDS)
+        and summary.get("readyGateCount") == 0
+        and summary.get("missingGateCount") == len(REQUIRED_NHATS_FIRST_ESTIMAND_GATE_IDS)
+        and summary.get("blockingGateCount") == len(REQUIRED_NHATS_FIRST_ESTIMAND_GATE_IDS)
+    )
+    add_check(
+        checks,
+        "nhats-first-estimand-protocol-gate-summary",
+        status_from_bool(exists and summary_ok),
+        "gate summary must keep every estimand gate blocking until ready evidence exists",
+    )
+
+    source_trace = protocol.get("sourceTrace")
+    source_trace_ok = (
+        isinstance(source_trace, list)
+        and all(isinstance(url, str) and url.startswith("https://") for url in source_trace)
+        and has_text(source_trace, "nhats/13")
+        and has_text(source_trace, "nhats/14")
+        and has_text(source_trace, "cross-year-search")
+        and has_text(source_trace, "methods-documentation")
+        and has_text(source_trace, "conditions-of-use")
+    )
+    add_check(
+        checks,
+        "nhats-first-estimand-protocol-source-trace",
+        status_from_bool(exists and source_trace_ok),
+        "source trace must include R13/R14 files, Cross-Year Search, methods documentation and Conditions of Use",
+    )
+
+    next_work_ok = (
+        isinstance(protocol.get("nextWork"), list)
+        and has_text(protocol["nextWork"], "canonical R13/R14")
+        and has_text(protocol["nextWork"], "Colectica")
+        and has_text(protocol["nextWork"], "cohort-flow")
+        and has_text(protocol["nextWork"], "disclosure-control")
+    )
+    add_check(
+        checks,
+        "nhats-first-estimand-protocol-next-work",
+        status_from_bool(exists and next_work_ok),
+        "next work must point to canonical files, Colectica/codebooks, cohort flow and disclosure control",
+    )
+
+    return {
+        "path": str(protocol_path.relative_to(REPO_ROOT)),
+        "sha256": sha256_file(protocol_path) if exists else None,
+        "status": "PASS" if summarize_checks(checks)["fail"] == 0 else "FAIL",
+        "checks": checks,
+        "summary": summarize_checks(checks),
+    }
+
+
 def audit_sensitivity_analysis(
     sensitivity_path: Path,
     model_data: dict[str, Any],
@@ -1806,6 +2107,7 @@ def audit_model(
     nhats_extraction_manifest_path: Path,
     nhats_acquisition_readiness_path: Path,
     nhats_file_tier_table_path: Path,
+    nhats_first_estimand_protocol_path: Path,
 ) -> dict[str, Any]:
     checks: list[dict[str, Any]] = []
     schema_version = data.get("schemaVersion")
@@ -1986,6 +2288,9 @@ def audit_model(
     nhats_file_tier_table_audit = audit_nhats_file_tier_table(
         nhats_file_tier_table_path,
     )
+    nhats_first_estimand_protocol_audit = audit_nhats_first_estimand_protocol(
+        nhats_first_estimand_protocol_path,
+    )
     sensitivity_audit = audit_sensitivity_analysis(sensitivity_path, data, model_path)
     checks.extend(readiness_audit["checks"])
     checks.extend(data_sources_audit["checks"])
@@ -1994,6 +2299,7 @@ def audit_model(
     checks.extend(nhats_extraction_manifest_audit["checks"])
     checks.extend(nhats_acquisition_readiness_audit["checks"])
     checks.extend(nhats_file_tier_table_audit["checks"])
+    checks.extend(nhats_first_estimand_protocol_audit["checks"])
     checks.extend(sensitivity_audit["checks"])
     failed = [check for check in checks if check["status"] == "FAIL"]
     overall = "PASS" if not failed else "FAIL"
@@ -2013,6 +2319,7 @@ def audit_model(
         "nhatsExtractionManifest": nhats_extraction_manifest_audit,
         "nhatsAcquisitionReadiness": nhats_acquisition_readiness_audit,
         "nhatsFileTierTable": nhats_file_tier_table_audit,
+        "nhatsFirstEstimandProtocol": nhats_first_estimand_protocol_audit,
         "sensitivityAnalysis": sensitivity_audit,
     }
 
@@ -2090,6 +2397,13 @@ def render_markdown(audit: dict[str, Any]) -> str:
             f"- File-tier table status: `{audit['nhatsFileTierTable']['status']}`",
             "- Boundary: the file-tier table maps official R13/R14 public and sensitive file families, but it still blocks download, extraction, repository storage, public AI upload, calibration and individual prediction.",
             "",
+            "## NHATS First Estimand Protocol",
+            "",
+            f"- First estimand protocol path: `{audit['nhatsFirstEstimandProtocol']['path']}`",
+            f"- First estimand protocol SHA-256: `{audit['nhatsFirstEstimandProtocol']['sha256']}`",
+            f"- First estimand protocol status: `{audit['nhatsFirstEstimandProtocol']['status']}`",
+            "- Boundary: the first estimand protocol pre-registers the R13/R14 aggregate functional-survival question, time-zero, outcome, censoring, survey-design and output boundaries, but it still blocks data download, extraction, calibration, validation and individual prediction.",
+            "",
             "## Sensitivity Analysis",
             "",
             f"- Sensitivity path: `{audit['sensitivityAnalysis']['path']}`",
@@ -2148,6 +2462,11 @@ def parse_args() -> argparse.Namespace:
         type=Path,
         default=DEFAULT_NHATS_FILE_TIER_TABLE,
     )
+    parser.add_argument(
+        "--nhats-first-estimand-protocol",
+        type=Path,
+        default=DEFAULT_NHATS_FIRST_ESTIMAND_PROTOCOL,
+    )
     parser.add_argument("--json-out", type=Path, default=DEFAULT_JSON_OUT)
     parser.add_argument("--md-out", type=Path, default=DEFAULT_MD_OUT)
     return parser.parse_args()
@@ -2166,6 +2485,7 @@ def main() -> int:
     nhats_extraction_manifest_path = args.nhats_extraction_manifest.resolve()
     nhats_acquisition_readiness_path = args.nhats_acquisition_readiness.resolve()
     nhats_file_tier_table_path = args.nhats_file_tier_table.resolve()
+    nhats_first_estimand_protocol_path = args.nhats_first_estimand_protocol.resolve()
     audit = audit_model(
         load_json(model_path),
         model_path,
@@ -2179,6 +2499,7 @@ def main() -> int:
         nhats_extraction_manifest_path,
         nhats_acquisition_readiness_path,
         nhats_file_tier_table_path,
+        nhats_first_estimand_protocol_path,
     )
     args.json_out.parent.mkdir(parents=True, exist_ok=True)
     with args.json_out.open("w", encoding="utf-8") as handle:

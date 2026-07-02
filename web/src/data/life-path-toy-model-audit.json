@@ -1,6 +1,6 @@
 {
   "schemaVersion": "human-infra.life-path-toy-audit.v1",
-  "generatedAt": "2026-07-02T02:20:50.838420+00:00",
+  "generatedAt": "2026-07-02T02:34:10.811615+00:00",
   "modelPath": "web/src/data/life-path-toy-model.json",
   "modelSha256": "a4c92209d79d20579bf1f575d5ebf07ffe5be9ccaf6bf3f3eef08efa287b5377",
   "overallStatus": "PASS",
@@ -481,6 +481,86 @@
       "detail": "source trace must include R13/R14 files, Cross-Year Search, methods documentation and Conditions of Use"
     },
     {
+      "id": "nhats-first-estimand-protocol-exists",
+      "status": "PASS",
+      "detail": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_first_estimand_protocol.json"
+    },
+    {
+      "id": "nhats-first-estimand-protocol-schema",
+      "status": "PASS",
+      "detail": "schemaVersion='human-infra.life-path-nhats-first-estimand-protocol.v1'"
+    },
+    {
+      "id": "nhats-first-estimand-protocol-identity",
+      "status": "PASS",
+      "detail": "protocol must bind NHATS source, Data Card, manifest, variable dictionary, acquisition readiness and file-tier table"
+    },
+    {
+      "id": "nhats-first-estimand-protocol-current-decision",
+      "status": "PASS",
+      "detail": "protocol must block running, download, extraction scripts, post-outcome variable selection, calibration, validation and individual prediction"
+    },
+    {
+      "id": "nhats-first-estimand-protocol-estimand-boundary",
+      "status": "PASS",
+      "detail": "estimand must be cohort-level functional-survival and must not claim individual, causal, clinical or LEV proof use"
+    },
+    {
+      "id": "nhats-first-estimand-protocol-target-population",
+      "status": "PASS",
+      "detail": "target population must bind R13/R14, age 65+, public-use first pass and sensitive/restricted exclusion"
+    },
+    {
+      "id": "nhats-first-estimand-protocol-time-zero",
+      "status": "PASS",
+      "detail": "time zero must freeze R13 predictors, end at R14 follow-up and block outcome peeking"
+    },
+    {
+      "id": "nhats-first-estimand-protocol-outcome-definition",
+      "status": "PASS",
+      "detail": "outcome must define aggregate functional-survival state and forbid individual death-date output"
+    },
+    {
+      "id": "nhats-first-estimand-protocol-predictor-families",
+      "status": "PASS",
+      "detail": "missing_predictor_ids=[]"
+    },
+    {
+      "id": "nhats-first-estimand-protocol-censoring-missingness",
+      "status": "PASS",
+      "detail": "censoring rules must distinguish death, proxy, residential care, nonresponse and not-classifiable states before metrics"
+    },
+    {
+      "id": "nhats-first-estimand-protocol-survey-design",
+      "status": "PASS",
+      "detail": "survey design must require weights, strata, cluster/PSU and variance method before metrics"
+    },
+    {
+      "id": "nhats-first-estimand-protocol-analysis-boundary",
+      "status": "PASS",
+      "detail": "analysis plan must allow only aggregate diagnostics and prohibit row-level, small-cell, individual and validation/calibration outputs"
+    },
+    {
+      "id": "nhats-first-estimand-protocol-readiness-gates",
+      "status": "PASS",
+      "detail": "missing_gate_ids=[]"
+    },
+    {
+      "id": "nhats-first-estimand-protocol-gate-summary",
+      "status": "PASS",
+      "detail": "gate summary must keep every estimand gate blocking until ready evidence exists"
+    },
+    {
+      "id": "nhats-first-estimand-protocol-source-trace",
+      "status": "PASS",
+      "detail": "source trace must include R13/R14 files, Cross-Year Search, methods documentation and Conditions of Use"
+    },
+    {
+      "id": "nhats-first-estimand-protocol-next-work",
+      "status": "PASS",
+      "detail": "next work must point to canonical files, Colectica/codebooks, cohort flow and disclosure control"
+    },
+    {
       "id": "sensitivity-analysis-exists",
       "status": "PASS",
       "detail": "web/src/data/life-path-sensitivity-analysis.json"
@@ -537,7 +617,7 @@
     }
   ],
   "summary": {
-    "pass": 106,
+    "pass": 122,
     "warn": 0,
     "fail": 0
   },
@@ -1066,9 +1146,101 @@
       "fail": 0
     }
   },
+  "nhatsFirstEstimandProtocol": {
+    "path": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_first_estimand_protocol.json",
+    "sha256": "d939ef97e4a094036136d945e9739713e469b7b435c88857945e46a8f913e571",
+    "status": "PASS",
+    "checks": [
+      {
+        "id": "nhats-first-estimand-protocol-exists",
+        "status": "PASS",
+        "detail": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_first_estimand_protocol.json"
+      },
+      {
+        "id": "nhats-first-estimand-protocol-schema",
+        "status": "PASS",
+        "detail": "schemaVersion='human-infra.life-path-nhats-first-estimand-protocol.v1'"
+      },
+      {
+        "id": "nhats-first-estimand-protocol-identity",
+        "status": "PASS",
+        "detail": "protocol must bind NHATS source, Data Card, manifest, variable dictionary, acquisition readiness and file-tier table"
+      },
+      {
+        "id": "nhats-first-estimand-protocol-current-decision",
+        "status": "PASS",
+        "detail": "protocol must block running, download, extraction scripts, post-outcome variable selection, calibration, validation and individual prediction"
+      },
+      {
+        "id": "nhats-first-estimand-protocol-estimand-boundary",
+        "status": "PASS",
+        "detail": "estimand must be cohort-level functional-survival and must not claim individual, causal, clinical or LEV proof use"
+      },
+      {
+        "id": "nhats-first-estimand-protocol-target-population",
+        "status": "PASS",
+        "detail": "target population must bind R13/R14, age 65+, public-use first pass and sensitive/restricted exclusion"
+      },
+      {
+        "id": "nhats-first-estimand-protocol-time-zero",
+        "status": "PASS",
+        "detail": "time zero must freeze R13 predictors, end at R14 follow-up and block outcome peeking"
+      },
+      {
+        "id": "nhats-first-estimand-protocol-outcome-definition",
+        "status": "PASS",
+        "detail": "outcome must define aggregate functional-survival state and forbid individual death-date output"
+      },
+      {
+        "id": "nhats-first-estimand-protocol-predictor-families",
+        "status": "PASS",
+        "detail": "missing_predictor_ids=[]"
+      },
+      {
+        "id": "nhats-first-estimand-protocol-censoring-missingness",
+        "status": "PASS",
+        "detail": "censoring rules must distinguish death, proxy, residential care, nonresponse and not-classifiable states before metrics"
+      },
+      {
+        "id": "nhats-first-estimand-protocol-survey-design",
+        "status": "PASS",
+        "detail": "survey design must require weights, strata, cluster/PSU and variance method before metrics"
+      },
+      {
+        "id": "nhats-first-estimand-protocol-analysis-boundary",
+        "status": "PASS",
+        "detail": "analysis plan must allow only aggregate diagnostics and prohibit row-level, small-cell, individual and validation/calibration outputs"
+      },
+      {
+        "id": "nhats-first-estimand-protocol-readiness-gates",
+        "status": "PASS",
+        "detail": "missing_gate_ids=[]"
+      },
+      {
+        "id": "nhats-first-estimand-protocol-gate-summary",
+        "status": "PASS",
+        "detail": "gate summary must keep every estimand gate blocking until ready evidence exists"
+      },
+      {
+        "id": "nhats-first-estimand-protocol-source-trace",
+        "status": "PASS",
+        "detail": "source trace must include R13/R14 files, Cross-Year Search, methods documentation and Conditions of Use"
+      },
+      {
+        "id": "nhats-first-estimand-protocol-next-work",
+        "status": "PASS",
+        "detail": "next work must point to canonical files, Colectica/codebooks, cohort flow and disclosure control"
+      }
+    ],
+    "summary": {
+      "pass": 16,
+      "warn": 0,
+      "fail": 0
+    }
+  },
   "sensitivityAnalysis": {
     "path": "web/src/data/life-path-sensitivity-analysis.json",
-    "sha256": "610b8522a9bbac4dda54fbb5ac9316ae841b67b19bfcad49484ee33ba3fc3696",
+    "sha256": "a9fbcb12c1b1690106bae5215ececab16f3d49c9c47c7a0a64637b6cd75e6b7e",
     "status": "PASS",
     "checks": [
       {
