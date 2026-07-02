@@ -1,0 +1,1003 @@
+{
+  "schemaVersion": "human-infra.c2-longtail-second-batch-independent-fresh-review-verdict-register.v1",
+  "registerId": "human-infra-c2-longtail-second-batch-independent-fresh-review-verdict-register-2026-07-02",
+  "status": "active-fresh-review-verdict-register-complete",
+  "purpose": "Record independent fresh-review verdicts for C2-LT-B2 source-context extraction rows while keeping reviewed artifacts, model admission and individual-use claims blocked.",
+  "sourceOfTruth": {
+    "independentFreshReviewProtocol": "docs/reference/human-infra-c2-longtail-second-batch-independent-fresh-review-protocol.json",
+    "localReviewRegister": "docs/reference/human-infra-c2-longtail-second-batch-local-review-register.json",
+    "sourceExtractionRegister": "docs/reference/human-infra-c2-longtail-second-batch-source-extraction-register.json",
+    "evidencePolicy": "docs/reference/evidence-policy.md",
+    "maturityGapRegister": "docs/reference/human-infra-maturity-gap-register.json"
+  },
+  "scope": {
+    "reviewedBatchIds": [
+      "C2LTB2-FRB-01-hemorrhage-airway-critical-care",
+      "C2LTB2-FRB-02-infection-wound-postacute-transfusion"
+    ],
+    "reviewedBatchCount": 2,
+    "totalLocalReviewedExtractionTaskCount": 24,
+    "reviewedExtractionTaskCount": 24,
+    "remainingExtractionTaskCount": 0,
+    "reviewedDomainCount": 12,
+    "reviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+    "artifactPromotionDecision": "complete-two-batches-reviewed-bounded-artifact-fill-only-for-eligible-rows",
+    "nonClaims": [
+      "This verdict register is not a completed Source Card set or reviewed artifact set.",
+      "This verdict register does not authorize calibrated prediction, individual advice, individual death-date output, intervention ranking, domain-claim upgrade or clinical-validity claims.",
+      "Both C2-LT-B2 fresh-review batches have received verdicts; reviewed artifacts remain a separate promotion step.",
+      "Rows marked downgrade-required or cannot-evaluate-insufficient-context cannot fill reviewed artifacts until their downgrade or source-resolution condition is closed."
+    ]
+  },
+  "requiredReviewFields": [
+    "sourceIdentityVerdict",
+    "sourceContextVerdict",
+    "exactClaimUseVerdict",
+    "domainTransferVerdict",
+    "modelPositionVerdict",
+    "uncertaintyBoundaryVerdict",
+    "downgradeVerdict",
+    "blockedUseVerdict",
+    "reviewerNote"
+  ],
+  "verdictTaxonomy": [
+    "support-with-boundary",
+    "bounded-support",
+    "downgrade-required",
+    "reject-source-context-mismatch",
+    "cannot-evaluate-insufficient-context"
+  ],
+  "artifactPromotionDecisions": [
+    "eligible-for-bounded-artifact-fill",
+    "downgrade-before-fill",
+    "rejected-no-fill",
+    "blocked-cannot-evaluate"
+  ],
+  "blockedUses": [
+    "calibrated-prediction",
+    "individual-advice",
+    "individual-death-date-output",
+    "intervention-ranking",
+    "clinical-validity-claim",
+    "domain-claim-upgrade"
+  ],
+  "sourceTaskFreshReviews": [
+    {
+      "taskId": "C2LTB2-EXT-001",
+      "domainId": "acute-gastrointestinal-bleeding-endoscopy-continuity",
+      "reviewedSourceTitle": "ACG Clinical Guideline: Upper Gastrointestinal and Ulcer Bleeding",
+      "reviewedSourceUrl": "https://pubmed.ncbi.nlm.nih.gov/33929377/",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "freshReviewEvidence": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33929377/",
+          "evidenceType": "bibliographic-primary-index",
+          "finding": "PubMed identifies the ACG upper gastrointestinal and ulcer bleeding clinical guideline; browser access may present anti-bot checks, so use as bibliographic and guideline-identity evidence only."
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK470300/",
+          "evidenceType": "secondary-bibliographic-cross-reference",
+          "finding": "NCBI Bookshelf cites the same ACG guideline with title, journal, date and PubMed identifier, supporting source identity and guideline lineage."
+        }
+      ],
+      "registeredSourceRole": "upper-gastrointestinal-bleeding-clinical-route-and-endpoint-anchor",
+      "registeredExactClaimUse": "Supports using acute upper gastrointestinal and ulcer bleeding as a time-sensitive hemorrhage continuity domain where risk stratification, resuscitation, transfusion need, endoscopic timing, hemostasis and rebleeding prevention define source-specific route variables.",
+      "registeredTransferBoundary": "Transfer only to route, endpoint and variable vocabulary. Do not use this source to rank interventions or infer an individual bleeding prognosis.",
+      "sourceIdentityVerdict": "verified-primary-or-authoritative-source",
+      "sourceContextVerdict": "supports-registered-source-role-with-boundary",
+      "exactClaimUseVerdict": "supports exact claim use as vocabulary or route context only; no calibrated effect size or individual recommendation is admitted",
+      "domainTransferVerdict": "bounded transfer to endpoint, variable and care-pathway vocabulary; no intervention benefit, clinical decision or personal prognosis is admitted",
+      "modelPositionVerdict": "model-language-only; calibrated prediction, intervention ranking and individual prognosis remain blocked",
+      "uncertaintyBoundaryVerdict": "must carry source currentness, population/setting, evidence-grade, access, endpoint and implementation-transfer limits before artifact fill",
+      "downgradeVerdict": "ACG UGIB guideline supports bounded hemorrhage-route and endpoint vocabulary only.",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this reviewed task",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "reviewerNote": "ACG UGIB guideline supports bounded hemorrhage-route and endpoint vocabulary only."
+    },
+    {
+      "taskId": "C2LTB2-EXT-002",
+      "domainId": "acute-gastrointestinal-bleeding-endoscopy-continuity",
+      "reviewedSourceTitle": "ACG Clinical Guidelines directory",
+      "reviewedSourceUrl": "https://gi.org/guidelines/",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "freshReviewEvidence": [
+        {
+          "url": "https://gi.org/guidelines/",
+          "evidenceType": "official-guideline-directory",
+          "finding": "ACG guideline directory resolves as a guideline discovery surface; it supports route lineage and source discovery but not a single exact clinical claim."
+        }
+      ],
+      "registeredSourceRole": "gastroenterology-guideline-route-directory-anchor",
+      "registeredExactClaimUse": "Supports the guideline-discovery route for gastrointestinal bleeding and related digestive-disease guidance, but functions primarily as a source navigation and version-control anchor rather than a claim-specific evidence source.",
+      "registeredTransferBoundary": "Transfer only as source-discovery and lineage support. If no exact recommendation is extracted from the underlying guideline, keep the row as route-context only.",
+      "sourceIdentityVerdict": "verified-primary-or-authoritative-source",
+      "sourceContextVerdict": "supports-registered-source-role-with-boundary",
+      "exactClaimUseVerdict": "supports exact claim use as vocabulary or route context only; no calibrated effect size or individual recommendation is admitted",
+      "domainTransferVerdict": "bounded transfer to endpoint, variable and care-pathway vocabulary; no intervention benefit, clinical decision or personal prognosis is admitted",
+      "modelPositionVerdict": "model-language-only; calibrated prediction, intervention ranking and individual prognosis remain blocked",
+      "uncertaintyBoundaryVerdict": "must carry source currentness, population/setting, evidence-grade, access, endpoint and implementation-transfer limits before artifact fill",
+      "downgradeVerdict": "ACG directory is bounded to guideline-discovery and route-lineage metadata.",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this reviewed task",
+      "reviewerVerdict": "bounded-support",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "reviewerNote": "ACG directory is bounded to guideline-discovery and route-lineage metadata."
+    },
+    {
+      "taskId": "C2LTB2-EXT-003",
+      "domainId": "acute-heart-failure-decompensation-continuity",
+      "reviewedSourceTitle": "2022 AHA/ACC/HFSA Guideline for the Management of Heart Failure",
+      "reviewedSourceUrl": "https://professional.heart.org/en/guidelines-statements/2022-ahaacchfsa-guideline-for-the-management-of-heart-failure-a-report-of-thecir0000000000001063",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "freshReviewEvidence": [
+        {
+          "url": "https://professional.heart.org/en/guidelines-statements/2022-ahaacchfsa-guideline-for-the-management-of-heart-failure-a-report-of-thecir0000000000001063",
+          "evidenceType": "professional-guideline-hub",
+          "finding": "AHA Professional Heart Daily exposes the 2022 AHA/ACC/HFSA heart failure guideline hub with journal resources, slide sets and related tools."
+        }
+      ],
+      "registeredSourceRole": "heart-failure-guideline-route-endpoint-and-transition-anchor",
+      "registeredExactClaimUse": "Supports treating acute heart failure decompensation as a congestion, oxygenation, renal-function, hospitalization and transition-of-care continuity failure where diagnosis, inpatient stabilization and post-discharge optimization define model variables.",
+      "registeredTransferBoundary": "Transfer only to heart-failure route vocabulary and candidate variables. No calibrated readmission or mortality parameter is admitted from this row.",
+      "sourceIdentityVerdict": "verified-primary-or-authoritative-source",
+      "sourceContextVerdict": "supports-registered-source-role-with-boundary",
+      "exactClaimUseVerdict": "supports exact claim use as vocabulary or route context only; no calibrated effect size or individual recommendation is admitted",
+      "domainTransferVerdict": "bounded transfer to endpoint, variable and care-pathway vocabulary; no intervention benefit, clinical decision or personal prognosis is admitted",
+      "modelPositionVerdict": "model-language-only; calibrated prediction, intervention ranking and individual prognosis remain blocked",
+      "uncertaintyBoundaryVerdict": "must carry source currentness, population/setting, evidence-grade, access, endpoint and implementation-transfer limits before artifact fill",
+      "downgradeVerdict": "AHA/ACC/HFSA heart failure guideline supports bounded heart-failure route and endpoint vocabulary.",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this reviewed task",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "reviewerNote": "AHA/ACC/HFSA heart failure guideline supports bounded heart-failure route and endpoint vocabulary."
+    },
+    {
+      "taskId": "C2LTB2-EXT-004",
+      "domainId": "acute-heart-failure-decompensation-continuity",
+      "reviewedSourceTitle": "NICE Acute heart failure: diagnosis and management CG187",
+      "reviewedSourceUrl": "https://www.nice.org.uk/guidance/cg187",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "freshReviewEvidence": [
+        {
+          "url": "https://www.nice.org.uk/guidance/cg187",
+          "evidenceType": "official-guideline-page",
+          "finding": "NICE CG187 identifies acute heart failure diagnosis and management guidance, publication/update dates and adult population scope."
+        }
+      ],
+      "registeredSourceRole": "acute-heart-failure-diagnosis-management-guideline-anchor",
+      "registeredExactClaimUse": "Supports acute heart failure as a hospital-facing diagnostic and management pathway where specialist assessment, natriuretic peptide or imaging routes, oxygenation, pharmacologic decongestion and discharge planning become extraction variables.",
+      "registeredTransferBoundary": "Transfer only as diagnosis/management pathway and endpoint language. Do not infer personal medication choices, prognosis or calibrated effect size.",
+      "sourceIdentityVerdict": "verified-primary-or-authoritative-source",
+      "sourceContextVerdict": "supports-registered-source-role-with-boundary",
+      "exactClaimUseVerdict": "supports exact claim use as vocabulary or route context only; no calibrated effect size or individual recommendation is admitted",
+      "domainTransferVerdict": "bounded transfer to endpoint, variable and care-pathway vocabulary; no intervention benefit, clinical decision or personal prognosis is admitted",
+      "modelPositionVerdict": "model-language-only; calibrated prediction, intervention ranking and individual prognosis remain blocked",
+      "uncertaintyBoundaryVerdict": "must carry source currentness, population/setting, evidence-grade, access, endpoint and implementation-transfer limits before artifact fill",
+      "downgradeVerdict": "NICE CG187 supports acute heart-failure diagnosis, treatment-after-stabilisation and service-boundary variables.",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this reviewed task",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "reviewerNote": "NICE CG187 supports acute heart-failure diagnosis, treatment-after-stabilisation and service-boundary variables."
+    },
+    {
+      "taskId": "C2LTB2-EXT-005",
+      "domainId": "asthma-copd-exacerbation-airway-continuity",
+      "reviewedSourceTitle": "Global Initiative for Asthma reports",
+      "reviewedSourceUrl": "https://ginasthma.org/reports/",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "freshReviewEvidence": [
+        {
+          "url": "https://ginasthma.org/reports/",
+          "evidenceType": "official-strategy-report-hub",
+          "finding": "GINA reports page exposes 2026 strategy materials and severe asthma guide resources; use as asthma strategy and exacerbation-route source context."
+        }
+      ],
+      "registeredSourceRole": "asthma-strategy-report-exacerbation-risk-and-control-anchor",
+      "registeredExactClaimUse": "Supports asthma exacerbation continuity modeling by anchoring control assessment, exacerbation risk, reliever/controller strategy, action planning, acute worsening recognition and post-exacerbation review as route variables.",
+      "registeredTransferBoundary": "Transfer only to asthma variable vocabulary and care-route structure. Do not use this row for personal inhaler advice or intervention ranking.",
+      "sourceIdentityVerdict": "verified-primary-or-authoritative-source",
+      "sourceContextVerdict": "supports-registered-source-role-with-boundary",
+      "exactClaimUseVerdict": "supports exact claim use as vocabulary or route context only; no calibrated effect size or individual recommendation is admitted",
+      "domainTransferVerdict": "bounded transfer to endpoint, variable and care-pathway vocabulary; no intervention benefit, clinical decision or personal prognosis is admitted",
+      "modelPositionVerdict": "model-language-only; calibrated prediction, intervention ranking and individual prognosis remain blocked",
+      "uncertaintyBoundaryVerdict": "must carry source currentness, population/setting, evidence-grade, access, endpoint and implementation-transfer limits before artifact fill",
+      "downgradeVerdict": "GINA reports support asthma control, exacerbation and acute-asthma route vocabulary only.",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this reviewed task",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "reviewerNote": "GINA reports support asthma control, exacerbation and acute-asthma route vocabulary only."
+    },
+    {
+      "taskId": "C2LTB2-EXT-006",
+      "domainId": "asthma-copd-exacerbation-airway-continuity",
+      "reviewedSourceTitle": "Global Initiative for Chronic Obstructive Lung Disease 2026 Report and Pocket Guide",
+      "reviewedSourceUrl": "https://goldcopd.org/2026-gold-report-and-pocket-guide/",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "freshReviewEvidence": [
+        {
+          "url": "https://goldcopd.org/2026-gold-report-and-pocket-guide/",
+          "evidenceType": "official-strategy-report-page",
+          "finding": "GOLD page resolves the 2026 report and pocket guide source for COPD strategy context."
+        }
+      ],
+      "registeredSourceRole": "copd-strategy-report-exacerbation-and-hospitalization-anchor",
+      "registeredExactClaimUse": "Supports COPD exacerbation as an airway and systemic-risk continuity domain where symptoms, airflow limitation, exacerbation history, oxygenation, hospitalization and prevention strategy define extraction variables.",
+      "registeredTransferBoundary": "Transfer only to COPD exacerbation variables and route structure. No individual prognosis, medication recommendation or calibrated effect size is admitted.",
+      "sourceIdentityVerdict": "verified-primary-or-authoritative-source",
+      "sourceContextVerdict": "supports-registered-source-role-with-boundary",
+      "exactClaimUseVerdict": "supports exact claim use as vocabulary or route context only; no calibrated effect size or individual recommendation is admitted",
+      "domainTransferVerdict": "bounded transfer to endpoint, variable and care-pathway vocabulary; no intervention benefit, clinical decision or personal prognosis is admitted",
+      "modelPositionVerdict": "model-language-only; calibrated prediction, intervention ranking and individual prognosis remain blocked",
+      "uncertaintyBoundaryVerdict": "must carry source currentness, population/setting, evidence-grade, access, endpoint and implementation-transfer limits before artifact fill",
+      "downgradeVerdict": "GOLD 2026 supports COPD exacerbation and hospitalization route vocabulary only.",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this reviewed task",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "reviewerNote": "GOLD 2026 supports COPD exacerbation and hospitalization route vocabulary only."
+    },
+    {
+      "taskId": "C2LTB2-EXT-007",
+      "domainId": "burn-injury-critical-care-rehabilitation-continuity",
+      "reviewedSourceTitle": "American Burn Association Guidelines for Burn Patient Referral",
+      "reviewedSourceUrl": "https://www.ameriburn.org/burn-care-team/resources/guidelines-for-burn-patient-referral",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "freshReviewEvidence": [
+        {
+          "url": "https://www.ameriburn.org/burn-care-team/resources/guidelines-for-burn-patient-referral",
+          "evidenceType": "official-referral-guideline-page",
+          "finding": "American Burn Association referral guideline page defines burn referral and consultation context, while explicitly warning it is not a substitute for professional judgment."
+        }
+      ],
+      "registeredSourceRole": "burn-center-referral-and-severity-triage-anchor",
+      "registeredExactClaimUse": "Supports burn injury continuity modeling by anchoring burn-center referral criteria, injury severity, special locations, inhalation or electrical/chemical mechanisms, comorbidity and recovery-resource needs as triage variables.",
+      "registeredTransferBoundary": "Transfer only as burn referral, severity and pathway vocabulary. Do not use this row for personal burn treatment, transfer decisions or outcome prediction.",
+      "sourceIdentityVerdict": "verified-primary-or-authoritative-source",
+      "sourceContextVerdict": "supports-registered-source-role-with-boundary",
+      "exactClaimUseVerdict": "supports exact claim use as vocabulary or route context only; no calibrated effect size or individual recommendation is admitted",
+      "domainTransferVerdict": "bounded transfer to endpoint, variable and care-pathway vocabulary; no intervention benefit, clinical decision or personal prognosis is admitted",
+      "modelPositionVerdict": "model-language-only; calibrated prediction, intervention ranking and individual prognosis remain blocked",
+      "uncertaintyBoundaryVerdict": "must carry source currentness, population/setting, evidence-grade, access, endpoint and implementation-transfer limits before artifact fill",
+      "downgradeVerdict": "ABA referral guidance supports burn severity, referral and consultation variables with judgment boundary.",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this reviewed task",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "reviewerNote": "ABA referral guidance supports burn severity, referral and consultation variables with judgment boundary."
+    },
+    {
+      "taskId": "C2LTB2-EXT-008",
+      "domainId": "burn-injury-critical-care-rehabilitation-continuity",
+      "reviewedSourceTitle": "WHO Burns fact sheet",
+      "reviewedSourceUrl": "https://www.who.int/news-room/fact-sheets/detail/burns",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "freshReviewEvidence": [
+        {
+          "url": "https://www.who.int/news-room/fact-sheets/detail/burns",
+          "evidenceType": "official-fact-sheet",
+          "finding": "WHO burns fact sheet resolves as a burden, prevention and rehabilitation context source, not a clinical guideline."
+        }
+      ],
+      "registeredSourceRole": "burns-burden-prevention-and-rehabilitation-context-anchor",
+      "registeredExactClaimUse": "Supports burns as a global injury and disability continuity domain by anchoring burden, prevention, acute consequences, infection risk, reconstructive needs and rehabilitation context.",
+      "registeredTransferBoundary": "Transfer only to burden, prevention and recovery-context framing. Do not use this source to define individual burn severity management or calibrated outcome effects.",
+      "sourceIdentityVerdict": "verified-primary-or-authoritative-source",
+      "sourceContextVerdict": "supports-registered-source-role-with-boundary",
+      "exactClaimUseVerdict": "supports exact claim use as vocabulary or route context only; no calibrated effect size or individual recommendation is admitted",
+      "domainTransferVerdict": "bounded transfer to endpoint, variable and care-pathway vocabulary; no intervention benefit, clinical decision or personal prognosis is admitted",
+      "modelPositionVerdict": "model-language-only; calibrated prediction, intervention ranking and individual prognosis remain blocked",
+      "uncertaintyBoundaryVerdict": "must carry source currentness, population/setting, evidence-grade, access, endpoint and implementation-transfer limits before artifact fill",
+      "downgradeVerdict": "WHO burns fact sheet is bounded to burden, prevention and public-health context.",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this reviewed task",
+      "reviewerVerdict": "bounded-support",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "reviewerNote": "WHO burns fact sheet is bounded to burden, prevention and public-health context."
+    },
+    {
+      "taskId": "C2LTB2-EXT-009",
+      "domainId": "mechanical-ventilation-respiratory-failure-continuity",
+      "reviewedSourceTitle": "ATS Clinical Practice Guideline update for ARDS management",
+      "reviewedSourceUrl": "https://academic.oup.com/ajrccm/article/209/1/24/8427573",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "freshReviewEvidence": [
+        {
+          "url": "https://academic.oup.com/ajrccm/article/209/1/24/8427573",
+          "evidenceType": "journal-guideline-publication",
+          "finding": "Registered AJRCCM URL is used as the source publication route for the ARDS management update."
+        },
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10870893/",
+          "evidenceType": "open-fulltext-index",
+          "finding": "Open full-text mirror identifies the ARDS management update and supports route variables for adult ARDS management."
+        }
+      ],
+      "registeredSourceRole": "ards-mechanical-ventilation-guideline-anchor",
+      "registeredExactClaimUse": "Supports mechanical ventilation and ARDS as an organ-support continuity domain where oxygenation, ventilation settings, prone positioning, PEEP, neuromuscular blockade or extracorporeal escalation become route variables.",
+      "registeredTransferBoundary": "Transfer only to ARDS ventilation route and endpoint vocabulary. No personal ventilator strategy or calibrated survival effect is admitted.",
+      "sourceIdentityVerdict": "verified-primary-or-authoritative-source",
+      "sourceContextVerdict": "supports-registered-source-role-with-boundary",
+      "exactClaimUseVerdict": "supports exact claim use as vocabulary or route context only; no calibrated effect size or individual recommendation is admitted",
+      "domainTransferVerdict": "bounded transfer to endpoint, variable and care-pathway vocabulary; no intervention benefit, clinical decision or personal prognosis is admitted",
+      "modelPositionVerdict": "model-language-only; calibrated prediction, intervention ranking and individual prognosis remain blocked",
+      "uncertaintyBoundaryVerdict": "must carry source currentness, population/setting, evidence-grade, access, endpoint and implementation-transfer limits before artifact fill",
+      "downgradeVerdict": "ATS ARDS update supports adult ARDS ventilation strategy vocabulary only.",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this reviewed task",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "reviewerNote": "ATS ARDS update supports adult ARDS ventilation strategy vocabulary only."
+    },
+    {
+      "taskId": "C2LTB2-EXT-010",
+      "domainId": "mechanical-ventilation-respiratory-failure-continuity",
+      "reviewedSourceTitle": "SCCM Mechanical Ventilation in Adult Patients with Acute Respiratory Distress Syndrome",
+      "reviewedSourceUrl": "https://www.sccm.org/clinical-resources/guidelines/guidelines/mechanical-ventilation-in-adult-patients-with-ac",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "freshReviewEvidence": [
+        {
+          "url": "https://www.sccm.org/clinical-resources/guidelines/guidelines/mechanical-ventilation-in-adult-patients-with-ac",
+          "evidenceType": "clinical-guideline-page",
+          "finding": "SCCM page identifies the ATS/ESICM/SCCM mechanical ventilation guideline for adult ARDS and its selected ventilatory interventions."
+        },
+        {
+          "url": "https://www.thoracic.org/statements/guideline-implementation-tools/mechanical-ventilation-in-adults-with-ards.php",
+          "evidenceType": "professional-guideline-implementation-tools",
+          "finding": "ATS implementation tools page cross-references the adult ARDS mechanical ventilation guideline and related systematic reviews."
+        }
+      ],
+      "registeredSourceRole": "critical-care-mechanical-ventilation-guideline-route-anchor",
+      "registeredExactClaimUse": "Supports adult ARDS ventilation as a critical-care support pathway where protective ventilation, oxygenation targets, adjunctive positioning and escalation boundaries define task variables.",
+      "registeredTransferBoundary": "Transfer only as a critical-care route anchor and source lineage. Do not infer clinical strategy or model parameters from this row alone.",
+      "sourceIdentityVerdict": "verified-primary-or-authoritative-source",
+      "sourceContextVerdict": "supports-registered-source-role-with-boundary",
+      "exactClaimUseVerdict": "supports exact claim use as vocabulary or route context only; no calibrated effect size or individual recommendation is admitted",
+      "domainTransferVerdict": "bounded transfer to endpoint, variable and care-pathway vocabulary; no intervention benefit, clinical decision or personal prognosis is admitted",
+      "modelPositionVerdict": "model-language-only; calibrated prediction, intervention ranking and individual prognosis remain blocked",
+      "uncertaintyBoundaryVerdict": "must carry source currentness, population/setting, evidence-grade, access, endpoint and implementation-transfer limits before artifact fill",
+      "downgradeVerdict": "SCCM/ATS ARDS guidance supports ventilation-route vocabulary with currentness boundary.",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this reviewed task",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "reviewerNote": "SCCM/ATS ARDS guidance supports ventilation-route vocabulary with currentness boundary."
+    },
+    {
+      "taskId": "C2LTB2-EXT-011",
+      "domainId": "trauma-system-hemorrhage-control-continuity",
+      "reviewedSourceTitle": "ACS Resources for Optimal Care of the Injured Patient standards",
+      "reviewedSourceUrl": "https://www.facs.org/quality-programs/trauma/quality/verification-review-and-consultation-program/standards/",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "freshReviewEvidence": [
+        {
+          "url": "https://www.facs.org/quality-programs/trauma/quality/verification-review-and-consultation-program/standards/",
+          "evidenceType": "official-trauma-standards-page",
+          "finding": "ACS trauma standards page supports trauma center verification, standards and system-capacity context."
+        }
+      ],
+      "registeredSourceRole": "trauma-system-standards-and-center-capacity-anchor",
+      "registeredExactClaimUse": "Supports trauma-system continuity modeling by anchoring trauma center verification, system resources, surgical/critical-care capability, performance improvement and timely definitive care as infrastructure variables.",
+      "registeredTransferBoundary": "Transfer only to trauma-system variables, route capacity and endpoint vocabulary. Do not use as individual trauma prognosis or facility ranking.",
+      "sourceIdentityVerdict": "verified-primary-or-authoritative-source",
+      "sourceContextVerdict": "supports-registered-source-role-with-boundary",
+      "exactClaimUseVerdict": "supports exact claim use as vocabulary or route context only; no calibrated effect size or individual recommendation is admitted",
+      "domainTransferVerdict": "bounded transfer to endpoint, variable and care-pathway vocabulary; no intervention benefit, clinical decision or personal prognosis is admitted",
+      "modelPositionVerdict": "model-language-only; calibrated prediction, intervention ranking and individual prognosis remain blocked",
+      "uncertaintyBoundaryVerdict": "must carry source currentness, population/setting, evidence-grade, access, endpoint and implementation-transfer limits before artifact fill",
+      "downgradeVerdict": "ACS trauma standards support system capacity, verification and trauma-route variables only.",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this reviewed task",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "reviewerNote": "ACS trauma standards support system capacity, verification and trauma-route variables only."
+    },
+    {
+      "taskId": "C2LTB2-EXT-012",
+      "domainId": "trauma-system-hemorrhage-control-continuity",
+      "reviewedSourceTitle": "STOP THE BLEED official program",
+      "reviewedSourceUrl": "https://www.stopthebleed.org/",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "freshReviewEvidence": [
+        {
+          "url": "https://www.stopthebleed.org/",
+          "evidenceType": "official-public-health-training-program",
+          "finding": "STOP THE BLEED official program supports bystander hemorrhage-control education and public action route context, not calibrated treatment effect."
+        }
+      ],
+      "registeredSourceRole": "bystander-hemorrhage-control-education-and-action-route-anchor",
+      "registeredExactClaimUse": "Supports life-threatening bleeding as a time-critical continuity failure where public recognition, direct pressure, wound packing, tourniquet access and emergency response connection become action-route variables.",
+      "registeredTransferBoundary": "Transfer only to public-action, preparedness and hemorrhage-control route variables. Do not use this row to provide procedural instructions or individual outcome predictions.",
+      "sourceIdentityVerdict": "verified-primary-or-authoritative-source",
+      "sourceContextVerdict": "supports-registered-source-role-with-boundary",
+      "exactClaimUseVerdict": "supports exact claim use as vocabulary or route context only; no calibrated effect size or individual recommendation is admitted",
+      "domainTransferVerdict": "bounded transfer to endpoint, variable and care-pathway vocabulary; no intervention benefit, clinical decision or personal prognosis is admitted",
+      "modelPositionVerdict": "model-language-only; calibrated prediction, intervention ranking and individual prognosis remain blocked",
+      "uncertaintyBoundaryVerdict": "must carry source currentness, population/setting, evidence-grade, access, endpoint and implementation-transfer limits before artifact fill",
+      "downgradeVerdict": "STOP THE BLEED is bounded to education/action-route variables and implementation context.",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this reviewed task",
+      "reviewerVerdict": "bounded-support",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "reviewerNote": "STOP THE BLEED is bounded to education/action-route variables and implementation context."
+    },
+    {
+      "taskId": "C2LTB2-EXT-013",
+      "domainId": "urinary-tract-infection-pyelonephritis-urosepsis-continuity",
+      "reviewedSourceTitle": "EAU Guidelines on Urological Infections",
+      "reviewedSourceUrl": "https://uroweb.org/guidelines/urological-infections/chapter/the-guideline",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "freshReviewEvidence": [
+        {
+          "url": "https://uroweb.org/guidelines/urological-infections/chapter/the-guideline",
+          "evidenceType": "professional-guideline-page",
+          "finding": "EAU urological infections guideline resolves and provides classification, systemic UTI and risk-factor vocabulary."
+        }
+      ],
+      "registeredSourceRole": "urological-infection-guideline-pyelonephritis-urosepsis-anchor",
+      "registeredExactClaimUse": "Supports urinary infection continuity modeling by anchoring uncomplicated versus complicated infection, pyelonephritis, obstruction, antimicrobial route, imaging/source control and urosepsis escalation variables.",
+      "registeredTransferBoundary": "Transfer only to infection-classification, escalation and endpoint vocabulary. Do not use for personal antibiotic choices or calibrated risk prediction.",
+      "sourceIdentityVerdict": "verified-primary-or-authoritative-source",
+      "sourceContextVerdict": "supports-registered-source-role-with-boundary",
+      "exactClaimUseVerdict": "supports exact claim use as vocabulary or route context only; no calibrated effect size or individual recommendation is admitted",
+      "domainTransferVerdict": "bounded transfer to endpoint, variable and care-pathway vocabulary; no intervention benefit, clinical decision or personal prognosis is admitted",
+      "modelPositionVerdict": "model-language-only; calibrated prediction, intervention ranking and individual prognosis remain blocked",
+      "uncertaintyBoundaryVerdict": "must carry source currentness, population/setting, evidence-grade, access, endpoint and implementation-transfer limits before artifact fill",
+      "downgradeVerdict": "EAU urological infection guideline supports UTI/systemic infection classification and route variables.",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this reviewed task",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "reviewerNote": "EAU urological infection guideline supports UTI/systemic infection classification and route variables."
+    },
+    {
+      "taskId": "C2LTB2-EXT-014",
+      "domainId": "urinary-tract-infection-pyelonephritis-urosepsis-continuity",
+      "reviewedSourceTitle": "IDSA Complicated Urinary Tract Infections guideline",
+      "reviewedSourceUrl": "https://academic.oup.com/cid/advance-article/doi/10.1093/cid/ciaf462/8384478",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "freshReviewEvidence": [
+        {
+          "url": "https://academic.oup.com/cid/advance-article/doi/10.1093/cid/ciaf462/8384478",
+          "evidenceType": "journal-guideline-publication",
+          "finding": "Registered CID advance-article URL is used as cUTI guideline publication route; exact recommendation use requires article-level extraction."
+        }
+      ],
+      "registeredSourceRole": "complicated-uti-guideline-antimicrobial-and-duration-anchor",
+      "registeredExactClaimUse": "Supports complicated urinary tract infection as a route domain where syndrome definition, antimicrobial selection, treatment duration, source control and clinical response become variables requiring careful population boundaries.",
+      "registeredTransferBoundary": "Transfer only to syndrome, route and endpoint vocabulary. Do not infer individual antimicrobial decisions, duration choices or calibrated benefit.",
+      "sourceIdentityVerdict": "verified-primary-or-authoritative-source",
+      "sourceContextVerdict": "supports-registered-source-role-with-boundary",
+      "exactClaimUseVerdict": "supports exact claim use as vocabulary or route context only; no calibrated effect size or individual recommendation is admitted",
+      "domainTransferVerdict": "bounded transfer to endpoint, variable and care-pathway vocabulary; no intervention benefit, clinical decision or personal prognosis is admitted",
+      "modelPositionVerdict": "model-language-only; calibrated prediction, intervention ranking and individual prognosis remain blocked",
+      "uncertaintyBoundaryVerdict": "must carry source currentness, population/setting, evidence-grade, access, endpoint and implementation-transfer limits before artifact fill",
+      "downgradeVerdict": "IDSA cUTI publication supports complicated UTI route and antimicrobial-duration vocabulary with article-level extraction boundary.",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this reviewed task",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "reviewerNote": "IDSA cUTI publication supports complicated UTI route and antimicrobial-duration vocabulary with article-level extraction boundary."
+    },
+    {
+      "taskId": "C2LTB2-EXT-015",
+      "domainId": "diabetic-foot-ulcer-amputation-prevention-continuity",
+      "reviewedSourceTitle": "IWGDF Guidelines 2023",
+      "reviewedSourceUrl": "https://iwgdfguidelines.org/guidelines-2023/",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "freshReviewEvidence": [
+        {
+          "url": "https://iwgdfguidelines.org/guidelines-2023/",
+          "evidenceType": "professional-guideline-suite",
+          "finding": "IWGDF 2023 page is a guideline suite entry point; it supports diabetic-foot guideline lineage and route discovery, not a single exact recommendation."
+        }
+      ],
+      "registeredSourceRole": "diabetic-foot-ulcer-multidisciplinary-guideline-suite-anchor",
+      "registeredExactClaimUse": "Supports diabetic foot ulcer continuity modeling by anchoring prevention, offloading, infection, peripheral artery disease, wound healing and amputation prevention as linked route variables.",
+      "registeredTransferBoundary": "Transfer only to DFU route, endpoint and variable vocabulary. Do not use for personal wound management or amputation-risk prediction.",
+      "sourceIdentityVerdict": "verified-primary-or-authoritative-source",
+      "sourceContextVerdict": "supports-registered-source-role-with-boundary",
+      "exactClaimUseVerdict": "supports exact claim use as vocabulary or route context only; no calibrated effect size or individual recommendation is admitted",
+      "domainTransferVerdict": "bounded transfer to endpoint, variable and care-pathway vocabulary; no intervention benefit, clinical decision or personal prognosis is admitted",
+      "modelPositionVerdict": "model-language-only; calibrated prediction, intervention ranking and individual prognosis remain blocked",
+      "uncertaintyBoundaryVerdict": "must carry source currentness, population/setting, evidence-grade, access, endpoint and implementation-transfer limits before artifact fill",
+      "downgradeVerdict": "IWGDF suite is bounded to guideline-suite discovery and multidisciplinary route vocabulary.",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this reviewed task",
+      "reviewerVerdict": "bounded-support",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "reviewerNote": "IWGDF suite is bounded to guideline-suite discovery and multidisciplinary route vocabulary."
+    },
+    {
+      "taskId": "C2LTB2-EXT-016",
+      "domainId": "diabetic-foot-ulcer-amputation-prevention-continuity",
+      "reviewedSourceTitle": "IDSA Diabetic Foot Infections guideline",
+      "reviewedSourceUrl": "https://www.idsociety.org/practice-guideline/diabetic-foot-infections/",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "freshReviewEvidence": [
+        {
+          "url": "https://www.idsociety.org/practice-guideline/diabetic-foot-infections/",
+          "evidenceType": "professional-guideline-page",
+          "finding": "IDSA/IWGDF diabetic foot infection guideline page resolves diagnosis and treatment source context for diabetes-related foot infection."
+        }
+      ],
+      "registeredSourceRole": "diabetic-foot-infection-diagnosis-treatment-guideline-anchor",
+      "registeredExactClaimUse": "Supports diabetic foot infection as a source-specific infection and limb-continuity pathway where diagnosis, severity classification, osteomyelitis assessment, source control and antimicrobial route define extraction variables.",
+      "registeredTransferBoundary": "Transfer only to infection-severity and limb-continuity variable definitions. No personal antibiotic, surgery or amputation prediction is admitted.",
+      "sourceIdentityVerdict": "verified-primary-or-authoritative-source",
+      "sourceContextVerdict": "supports-registered-source-role-with-boundary",
+      "exactClaimUseVerdict": "supports exact claim use as vocabulary or route context only; no calibrated effect size or individual recommendation is admitted",
+      "domainTransferVerdict": "bounded transfer to endpoint, variable and care-pathway vocabulary; no intervention benefit, clinical decision or personal prognosis is admitted",
+      "modelPositionVerdict": "model-language-only; calibrated prediction, intervention ranking and individual prognosis remain blocked",
+      "uncertaintyBoundaryVerdict": "must carry source currentness, population/setting, evidence-grade, access, endpoint and implementation-transfer limits before artifact fill",
+      "downgradeVerdict": "IDSA/IWGDF diabetic foot infection guideline supports infection diagnosis/treatment-route variables only.",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this reviewed task",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "reviewerNote": "IDSA/IWGDF diabetic foot infection guideline supports infection diagnosis/treatment-route variables only."
+    },
+    {
+      "taskId": "C2LTB2-EXT-017",
+      "domainId": "long-covid-post-acute-infection-continuity",
+      "reviewedSourceTitle": "CDC Long COVID clinical guidance",
+      "reviewedSourceUrl": "https://www.cdc.gov/long-covid/hcp/clinical-guidance/index.html",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "freshReviewEvidence": [
+        {
+          "url": "https://www.cdc.gov/long-covid/hcp/clinical-guidance/index.html",
+          "evidenceType": "official-clinical-guidance",
+          "finding": "CDC Long COVID clinical guidance resolves as healthcare-professional guidance for symptoms, assessment, care and functional context."
+        }
+      ],
+      "registeredSourceRole": "long-covid-clinical-guidance-function-and-symptom-anchor",
+      "registeredExactClaimUse": "Supports Long COVID as a post-acute continuity domain where symptom burden, fatigue, cognitive dysfunction, post-exertional worsening, functional limitation, work impact and rehabilitation access define variables.",
+      "registeredTransferBoundary": "Transfer only to functional, symptom and recovery-route vocabulary. Do not use this row to diagnose Long COVID or estimate personal prognosis.",
+      "sourceIdentityVerdict": "verified-primary-or-authoritative-source",
+      "sourceContextVerdict": "supports-registered-source-role-with-boundary",
+      "exactClaimUseVerdict": "supports exact claim use as vocabulary or route context only; no calibrated effect size or individual recommendation is admitted",
+      "domainTransferVerdict": "bounded transfer to endpoint, variable and care-pathway vocabulary; no intervention benefit, clinical decision or personal prognosis is admitted",
+      "modelPositionVerdict": "model-language-only; calibrated prediction, intervention ranking and individual prognosis remain blocked",
+      "uncertaintyBoundaryVerdict": "must carry source currentness, population/setting, evidence-grade, access, endpoint and implementation-transfer limits before artifact fill",
+      "downgradeVerdict": "CDC Long COVID guidance supports function, symptom burden and care-route vocabulary only.",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this reviewed task",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "reviewerNote": "CDC Long COVID guidance supports function, symptom burden and care-route vocabulary only."
+    },
+    {
+      "taskId": "C2LTB2-EXT-018",
+      "domainId": "long-covid-post-acute-infection-continuity",
+      "reviewedSourceTitle": "NICE COVID-19 rapid guideline: managing the long-term effects of COVID-19",
+      "reviewedSourceUrl": "https://www.nice.org.uk/guidance/ng188",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "freshReviewEvidence": [
+        {
+          "url": "https://www.nice.org.uk/guidance/ng188",
+          "evidenceType": "official-guideline-page",
+          "finding": "NICE NG188 identifies managing long-term effects of COVID-19 guidance, updated 2024, with assessment, care planning, follow-up and service organisation scope."
+        }
+      ],
+      "registeredSourceRole": "long-term-covid-effects-assessment-and-care-guideline-anchor",
+      "registeredExactClaimUse": "Supports long-term COVID effects as a care-continuity domain where assessment, multidisciplinary support, symptom management, rehabilitation and follow-up become extraction variables.",
+      "registeredTransferBoundary": "Transfer only to assessment, function and care-route vocabulary. Do not infer diagnostic certainty, individual prognosis or treatment ranking.",
+      "sourceIdentityVerdict": "verified-primary-or-authoritative-source",
+      "sourceContextVerdict": "supports-registered-source-role-with-boundary",
+      "exactClaimUseVerdict": "supports exact claim use as vocabulary or route context only; no calibrated effect size or individual recommendation is admitted",
+      "domainTransferVerdict": "bounded transfer to endpoint, variable and care-pathway vocabulary; no intervention benefit, clinical decision or personal prognosis is admitted",
+      "modelPositionVerdict": "model-language-only; calibrated prediction, intervention ranking and individual prognosis remain blocked",
+      "uncertaintyBoundaryVerdict": "must carry source currentness, population/setting, evidence-grade, access, endpoint and implementation-transfer limits before artifact fill",
+      "downgradeVerdict": "NICE NG188 supports long-COVID assessment, care planning, follow-up and continuity variables.",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this reviewed task",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "reviewerNote": "NICE NG188 supports long-COVID assessment, care planning, follow-up and continuity variables."
+    },
+    {
+      "taskId": "C2LTB2-EXT-019",
+      "domainId": "wound-infection-cellulitis-sepsis-continuity",
+      "reviewedSourceTitle": "IDSA Skin and Soft Tissue Infections guideline",
+      "reviewedSourceUrl": "https://www.idsociety.org/practice-guideline/skin-and-soft-tissue-infections/",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "freshReviewEvidence": [
+        {
+          "url": "https://www.idsociety.org/practice-guideline/skin-and-soft-tissue-infections/",
+          "evidenceType": "professional-guideline-page",
+          "finding": "IDSA SSTI page identifies a current 2014 guideline for diagnosis and management of skin and soft tissue infections, with correction note and GRADE methods."
+        }
+      ],
+      "registeredSourceRole": "skin-soft-tissue-infection-guideline-severity-and-source-control-anchor",
+      "registeredExactClaimUse": "Supports wound infection, cellulitis and soft-tissue infection as a barrier-to-systemic-risk pathway where severity, systemic signs, drainage/source control, antimicrobial route and recurrence define variables.",
+      "registeredTransferBoundary": "Transfer only to infection classification, source-control and endpoint vocabulary. Do not use for personal antimicrobial or surgical decisions.",
+      "sourceIdentityVerdict": "verified-primary-or-authoritative-source",
+      "sourceContextVerdict": "supports-registered-source-role-with-boundary",
+      "exactClaimUseVerdict": "supports exact claim use as vocabulary or route context only; no calibrated effect size or individual recommendation is admitted",
+      "domainTransferVerdict": "bounded transfer to endpoint, variable and care-pathway vocabulary; no intervention benefit, clinical decision or personal prognosis is admitted",
+      "modelPositionVerdict": "model-language-only; calibrated prediction, intervention ranking and individual prognosis remain blocked",
+      "uncertaintyBoundaryVerdict": "must carry source currentness, population/setting, evidence-grade, access, endpoint and implementation-transfer limits before artifact fill",
+      "downgradeVerdict": "IDSA SSTI source is bounded by age/currentness and supports severity/source-control vocabulary only.",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this reviewed task",
+      "reviewerVerdict": "bounded-support",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "reviewerNote": "IDSA SSTI source is bounded by age/currentness and supports severity/source-control vocabulary only."
+    },
+    {
+      "taskId": "C2LTB2-EXT-020",
+      "domainId": "wound-infection-cellulitis-sepsis-continuity",
+      "reviewedSourceTitle": "NICE Cellulitis and erysipelas antimicrobial prescribing NG141",
+      "reviewedSourceUrl": "https://www.nice.org.uk/guidance/ng141",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "freshReviewEvidence": [
+        {
+          "url": "https://www.nice.org.uk/guidance/ng141",
+          "evidenceType": "official-guidance-page",
+          "finding": "NICE NG141 resolves as cellulitis and erysipelas antimicrobial prescribing guidance; use for route and antimicrobial-context vocabulary only."
+        }
+      ],
+      "registeredSourceRole": "cellulitis-erysipelas-antimicrobial-prescribing-guideline-anchor",
+      "registeredExactClaimUse": "Supports cellulitis and erysipelas as a common skin-boundary failure mode where severity, site, systemic illness, antimicrobial route, reassessment and recurrence become variables.",
+      "registeredTransferBoundary": "Transfer only to cellulitis/erysipelas endpoint and route vocabulary. Do not infer personal antibiotic choice or model-calibrated effect.",
+      "sourceIdentityVerdict": "verified-primary-or-authoritative-source",
+      "sourceContextVerdict": "supports-registered-source-role-with-boundary",
+      "exactClaimUseVerdict": "supports exact claim use as vocabulary or route context only; no calibrated effect size or individual recommendation is admitted",
+      "domainTransferVerdict": "bounded transfer to endpoint, variable and care-pathway vocabulary; no intervention benefit, clinical decision or personal prognosis is admitted",
+      "modelPositionVerdict": "model-language-only; calibrated prediction, intervention ranking and individual prognosis remain blocked",
+      "uncertaintyBoundaryVerdict": "must carry source currentness, population/setting, evidence-grade, access, endpoint and implementation-transfer limits before artifact fill",
+      "downgradeVerdict": "NICE NG141 supports cellulitis/erysipelas antimicrobial-route vocabulary with UK guidance boundary.",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this reviewed task",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "reviewerNote": "NICE NG141 supports cellulitis/erysipelas antimicrobial-route vocabulary with UK guidance boundary."
+    },
+    {
+      "taskId": "C2LTB2-EXT-021",
+      "domainId": "aspiration-pneumonia-airway-protection-continuity",
+      "reviewedSourceTitle": "British Thoracic Society Clinical Statement on aspiration pneumonia",
+      "reviewedSourceUrl": "https://www.brit-thoracic.org.uk/clinical-resources/clinical-statements/aspiration-pneumonia/",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "freshReviewEvidence": [
+        {
+          "url": "https://www.brit-thoracic.org.uk/clinical-resources/clinical-statements/aspiration-pneumonia/",
+          "evidenceType": "professional-statement-page",
+          "finding": "BTS clinical statement page resolves aspiration pneumonia statement materials and route context."
+        }
+      ],
+      "registeredSourceRole": "aspiration-pneumonia-clinical-statement-route-anchor",
+      "registeredExactClaimUse": "Supports aspiration pneumonia as an airway-protection continuity domain where aspiration risk, dysphagia, neurologic impairment, oral/feeding route, pneumonia diagnosis and prevention or management context define variables.",
+      "registeredTransferBoundary": "Transfer only to risk, airway-protection, swallowing and pneumonia-route variables. Do not use for personal feeding, antibiotic or diagnostic advice.",
+      "sourceIdentityVerdict": "verified-primary-or-authoritative-source",
+      "sourceContextVerdict": "supports-registered-source-role-with-boundary",
+      "exactClaimUseVerdict": "supports exact claim use as vocabulary or route context only; no calibrated effect size or individual recommendation is admitted",
+      "domainTransferVerdict": "bounded transfer to endpoint, variable and care-pathway vocabulary; no intervention benefit, clinical decision or personal prognosis is admitted",
+      "modelPositionVerdict": "model-language-only; calibrated prediction, intervention ranking and individual prognosis remain blocked",
+      "uncertaintyBoundaryVerdict": "must carry source currentness, population/setting, evidence-grade, access, endpoint and implementation-transfer limits before artifact fill",
+      "downgradeVerdict": "BTS clinical statement supports aspiration pneumonia route, dysphagia and airway-protection variables only.",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this reviewed task",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "reviewerNote": "BTS clinical statement supports aspiration pneumonia route, dysphagia and airway-protection variables only."
+    },
+    {
+      "taskId": "C2LTB2-EXT-022",
+      "domainId": "aspiration-pneumonia-airway-protection-continuity",
+      "reviewedSourceTitle": "Thorax BTS Clinical Statement on aspiration pneumonia publication",
+      "reviewedSourceUrl": "https://thorax.bmj.com/content/78/Suppl_1/s3",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "freshReviewEvidence": [
+        {
+          "url": "https://thorax.bmj.com/content/78/Suppl_1/s3",
+          "evidenceType": "journal-statement-publication-access-limited",
+          "finding": "Browser retrieval of the registered Thorax publication URL returned access restriction; use only after source identity/path is normalized against the BTS statement page."
+        },
+        {
+          "url": "https://www.brit-thoracic.org.uk/clinical-resources/clinical-statements/aspiration-pneumonia/",
+          "evidenceType": "adjacent-professional-statement-page",
+          "finding": "BTS statement page independently resolves the clinical statement route, but does not by itself prove the exact Thorax publication row."
+        }
+      ],
+      "registeredSourceRole": "aspiration-pneumonia-publication-source-context-anchor",
+      "registeredExactClaimUse": "Supports the published source lineage for aspiration pneumonia clinical statement content, allowing later extraction of definitions, risk factors, prevention boundaries and management endpoints from the full text.",
+      "registeredTransferBoundary": "Transfer only as publication lineage and source-context anchor until exact statement text is extracted and reviewed.",
+      "sourceIdentityVerdict": "source-identity-requires-path-normalization-before-fill",
+      "sourceContextVerdict": "supports-only-after-source-path-downgrade",
+      "exactClaimUseVerdict": "supports exact claim use as vocabulary or route context only; no calibrated effect size or individual recommendation is admitted",
+      "domainTransferVerdict": "bounded transfer to endpoint, variable and care-pathway vocabulary; no intervention benefit, clinical decision or personal prognosis is admitted",
+      "modelPositionVerdict": "model-language-only; calibrated prediction, intervention ranking and individual prognosis remain blocked",
+      "uncertaintyBoundaryVerdict": "must carry source currentness, population/setting, evidence-grade, access, endpoint and implementation-transfer limits before artifact fill",
+      "downgradeVerdict": "Registered Thorax publication URL requires identity/path normalization before bounded artifact fill.",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this reviewed task",
+      "reviewerVerdict": "downgrade-required",
+      "artifactPromotionDecision": "downgrade-before-fill",
+      "reviewerNote": "Registered Thorax publication URL requires identity/path normalization before bounded artifact fill."
+    },
+    {
+      "taskId": "C2LTB2-EXT-023",
+      "domainId": "transfusion-blood-management-hemorrhage-continuity",
+      "reviewedSourceTitle": "AABB International Guidelines for Red Blood Cell Transfusion",
+      "reviewedSourceUrl": "https://jamanetwork.com/journals/jama/fullarticle/2810754",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "freshReviewEvidence": [
+        {
+          "url": "https://jamanetwork.com/journals/jama/fullarticle/2810754",
+          "evidenceType": "journal-guideline-publication",
+          "finding": "JAMA page identifies Red Blood Cell Transfusion: 2023 AABB International Guidelines, citation, publication details and recommendation context."
+        }
+      ],
+      "registeredSourceRole": "red-blood-cell-transfusion-threshold-guideline-anchor",
+      "registeredExactClaimUse": "Supports transfusion and blood management modeling by anchoring red blood cell transfusion thresholds, clinical context, hemoglobin endpoint, oxygen delivery, adverse events and restrictive-versus-liberal strategy boundaries.",
+      "registeredTransferBoundary": "Transfer only to transfusion threshold, oxygen-delivery and endpoint vocabulary. Do not use for personal transfusion decisions or calibrated mortality effects.",
+      "sourceIdentityVerdict": "verified-primary-or-authoritative-source",
+      "sourceContextVerdict": "supports-registered-source-role-with-boundary",
+      "exactClaimUseVerdict": "supports exact claim use as vocabulary or route context only; no calibrated effect size or individual recommendation is admitted",
+      "domainTransferVerdict": "bounded transfer to endpoint, variable and care-pathway vocabulary; no intervention benefit, clinical decision or personal prognosis is admitted",
+      "modelPositionVerdict": "model-language-only; calibrated prediction, intervention ranking and individual prognosis remain blocked",
+      "uncertaintyBoundaryVerdict": "must carry source currentness, population/setting, evidence-grade, access, endpoint and implementation-transfer limits before artifact fill",
+      "downgradeVerdict": "AABB/JAMA guideline supports transfusion threshold and blood-management route vocabulary only.",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this reviewed task",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "reviewerNote": "AABB/JAMA guideline supports transfusion threshold and blood-management route vocabulary only."
+    },
+    {
+      "taskId": "C2LTB2-EXT-024",
+      "domainId": "transfusion-blood-management-hemorrhage-continuity",
+      "reviewedSourceTitle": "National Blood Authority Patient Blood Management Guideline for Adults with Critical Bleeding",
+      "reviewedSourceUrl": "https://www.blood.gov.au/sites/default/files/documents/2024-05/Guideline%20Patient%20blood%20management%20guideline%20for%20adults%20with%20critical%20bleeding.pdf",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "freshReviewEvidence": [
+        {
+          "url": "https://www.blood.gov.au/sites/default/files/documents/2024-05/Guideline%20Patient%20blood%20management%20guideline%20for%20adults%20with%20critical%20bleeding.pdf",
+          "evidenceType": "official-guideline-pdf",
+          "finding": "National Blood Authority PDF resolves as Patient blood management guideline for adults with critical bleeding."
+        }
+      ],
+      "registeredSourceRole": "critical-bleeding-patient-blood-management-guideline-anchor",
+      "registeredExactClaimUse": "Supports critical bleeding and massive transfusion as an acute resource-and-oxygen-delivery continuity pathway where hemorrhage recognition, protocol activation, component therapy, coagulopathy, monitoring and survival endpoints define variables.",
+      "registeredTransferBoundary": "Transfer only to critical-bleeding, massive-transfusion and blood-resource pathway variables. Do not use for personal transfusion or resuscitation advice.",
+      "sourceIdentityVerdict": "verified-primary-or-authoritative-source",
+      "sourceContextVerdict": "supports-registered-source-role-with-boundary",
+      "exactClaimUseVerdict": "supports exact claim use as vocabulary or route context only; no calibrated effect size or individual recommendation is admitted",
+      "domainTransferVerdict": "bounded transfer to endpoint, variable and care-pathway vocabulary; no intervention benefit, clinical decision or personal prognosis is admitted",
+      "modelPositionVerdict": "model-language-only; calibrated prediction, intervention ranking and individual prognosis remain blocked",
+      "uncertaintyBoundaryVerdict": "must carry source currentness, population/setting, evidence-grade, access, endpoint and implementation-transfer limits before artifact fill",
+      "downgradeVerdict": "NBA critical bleeding guideline supports critical-bleeding PBM route and system-readiness variables only.",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this reviewed task",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "reviewerNote": "NBA critical bleeding guideline supports critical-bleeding PBM route and system-readiness variables only."
+    }
+  ],
+  "taskCoverage": [
+    {
+      "taskId": "C2LTB2-EXT-001",
+      "domainId": "acute-gastrointestinal-bleeding-endoscopy-continuity",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-reviewed-artifacts-and-model-gates"
+    },
+    {
+      "taskId": "C2LTB2-EXT-002",
+      "domainId": "acute-gastrointestinal-bleeding-endoscopy-continuity",
+      "reviewerVerdict": "bounded-support",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-reviewed-artifacts-and-model-gates"
+    },
+    {
+      "taskId": "C2LTB2-EXT-003",
+      "domainId": "acute-heart-failure-decompensation-continuity",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-reviewed-artifacts-and-model-gates"
+    },
+    {
+      "taskId": "C2LTB2-EXT-004",
+      "domainId": "acute-heart-failure-decompensation-continuity",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-reviewed-artifacts-and-model-gates"
+    },
+    {
+      "taskId": "C2LTB2-EXT-005",
+      "domainId": "asthma-copd-exacerbation-airway-continuity",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-reviewed-artifacts-and-model-gates"
+    },
+    {
+      "taskId": "C2LTB2-EXT-006",
+      "domainId": "asthma-copd-exacerbation-airway-continuity",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-reviewed-artifacts-and-model-gates"
+    },
+    {
+      "taskId": "C2LTB2-EXT-007",
+      "domainId": "burn-injury-critical-care-rehabilitation-continuity",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-reviewed-artifacts-and-model-gates"
+    },
+    {
+      "taskId": "C2LTB2-EXT-008",
+      "domainId": "burn-injury-critical-care-rehabilitation-continuity",
+      "reviewerVerdict": "bounded-support",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-reviewed-artifacts-and-model-gates"
+    },
+    {
+      "taskId": "C2LTB2-EXT-009",
+      "domainId": "mechanical-ventilation-respiratory-failure-continuity",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-reviewed-artifacts-and-model-gates"
+    },
+    {
+      "taskId": "C2LTB2-EXT-010",
+      "domainId": "mechanical-ventilation-respiratory-failure-continuity",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-reviewed-artifacts-and-model-gates"
+    },
+    {
+      "taskId": "C2LTB2-EXT-011",
+      "domainId": "trauma-system-hemorrhage-control-continuity",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-reviewed-artifacts-and-model-gates"
+    },
+    {
+      "taskId": "C2LTB2-EXT-012",
+      "domainId": "trauma-system-hemorrhage-control-continuity",
+      "reviewerVerdict": "bounded-support",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-reviewed-artifacts-and-model-gates"
+    },
+    {
+      "taskId": "C2LTB2-EXT-013",
+      "domainId": "urinary-tract-infection-pyelonephritis-urosepsis-continuity",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-reviewed-artifacts-and-model-gates"
+    },
+    {
+      "taskId": "C2LTB2-EXT-014",
+      "domainId": "urinary-tract-infection-pyelonephritis-urosepsis-continuity",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-reviewed-artifacts-and-model-gates"
+    },
+    {
+      "taskId": "C2LTB2-EXT-015",
+      "domainId": "diabetic-foot-ulcer-amputation-prevention-continuity",
+      "reviewerVerdict": "bounded-support",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-reviewed-artifacts-and-model-gates"
+    },
+    {
+      "taskId": "C2LTB2-EXT-016",
+      "domainId": "diabetic-foot-ulcer-amputation-prevention-continuity",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-reviewed-artifacts-and-model-gates"
+    },
+    {
+      "taskId": "C2LTB2-EXT-017",
+      "domainId": "long-covid-post-acute-infection-continuity",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-reviewed-artifacts-and-model-gates"
+    },
+    {
+      "taskId": "C2LTB2-EXT-018",
+      "domainId": "long-covid-post-acute-infection-continuity",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-reviewed-artifacts-and-model-gates"
+    },
+    {
+      "taskId": "C2LTB2-EXT-019",
+      "domainId": "wound-infection-cellulitis-sepsis-continuity",
+      "reviewerVerdict": "bounded-support",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-reviewed-artifacts-and-model-gates"
+    },
+    {
+      "taskId": "C2LTB2-EXT-020",
+      "domainId": "wound-infection-cellulitis-sepsis-continuity",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-reviewed-artifacts-and-model-gates"
+    },
+    {
+      "taskId": "C2LTB2-EXT-021",
+      "domainId": "aspiration-pneumonia-airway-protection-continuity",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-reviewed-artifacts-and-model-gates"
+    },
+    {
+      "taskId": "C2LTB2-EXT-022",
+      "domainId": "aspiration-pneumonia-airway-protection-continuity",
+      "reviewerVerdict": "downgrade-required",
+      "artifactPromotionDecision": "downgrade-before-fill",
+      "modelAdmissionDecision": "blocked-pending-reviewed-artifacts-and-model-gates"
+    },
+    {
+      "taskId": "C2LTB2-EXT-023",
+      "domainId": "transfusion-blood-management-hemorrhage-continuity",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-reviewed-artifacts-and-model-gates"
+    },
+    {
+      "taskId": "C2LTB2-EXT-024",
+      "domainId": "transfusion-blood-management-hemorrhage-continuity",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-reviewed-artifacts-and-model-gates"
+    }
+  ],
+  "remainingFreshReviewBatches": [],
+  "indexRequirements": [
+    "README.md",
+    "docs/reference/README.md",
+    "docs/reference/human-infra-maturity-roadmap.md",
+    "tools/README.md"
+  ],
+  "batchSummaries": [
+    {
+      "batchId": "C2LTB2-FRB-01-hemorrhage-airway-critical-care",
+      "taskCount": 12,
+      "domainIds": [
+        "acute-gastrointestinal-bleeding-endoscopy-continuity",
+        "acute-heart-failure-decompensation-continuity",
+        "asthma-copd-exacerbation-airway-continuity",
+        "burn-injury-critical-care-rehabilitation-continuity",
+        "mechanical-ventilation-respiratory-failure-continuity",
+        "trauma-system-hemorrhage-control-continuity"
+      ],
+      "reviewerVerdictCounts": {
+        "support-with-boundary": 9,
+        "bounded-support": 3
+      },
+      "artifactPromotionDecisionCounts": {
+        "eligible-for-bounded-artifact-fill": 12
+      },
+      "modelAdmissionDecision": "blocked-pending-reviewed-artifacts-and-model-gates"
+    },
+    {
+      "batchId": "C2LTB2-FRB-02-infection-wound-postacute-transfusion",
+      "taskCount": 12,
+      "domainIds": [
+        "aspiration-pneumonia-airway-protection-continuity",
+        "diabetic-foot-ulcer-amputation-prevention-continuity",
+        "long-covid-post-acute-infection-continuity",
+        "transfusion-blood-management-hemorrhage-continuity",
+        "urinary-tract-infection-pyelonephritis-urosepsis-continuity",
+        "wound-infection-cellulitis-sepsis-continuity"
+      ],
+      "reviewerVerdictCounts": {
+        "support-with-boundary": 9,
+        "bounded-support": 2,
+        "downgrade-required": 1
+      },
+      "artifactPromotionDecisionCounts": {
+        "eligible-for-bounded-artifact-fill": 11,
+        "downgrade-before-fill": 1
+      },
+      "modelAdmissionDecision": "blocked-pending-reviewed-artifacts-and-model-gates"
+    }
+  ]
+}
