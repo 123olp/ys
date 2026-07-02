@@ -41,6 +41,7 @@
 - `audit_human_infra_c2_longtail_fourth_batch_source_extraction_register.py`: verifies that `docs/reference/human-infra-c2-longtail-fourth-batch-source-extraction-register.json` completes all 24/24 C2-LT-B4 source-context extraction rows with required fields, downgrade triggers, blocked uses, absent-abstract/duplicate-lineage flags and index links.
 - `audit_human_infra_c2_longtail_fourth_batch_local_review_register.py`: verifies that `docs/reference/human-infra-c2-longtail-fourth-batch-local-review-register.json` locally reviews all 24/24 C2-LT-B4 extraction rows, preserves one duplicate consensus lineage row and three no-abstract fulltext-needed rows, keeps blocked uses complete, and routes only to independent fresh review or source resolution.
 - `audit_human_infra_c2_longtail_fourth_batch_source_resolution_register.py`: verifies that `docs/reference/human-infra-c2-longtail-fourth-batch-source-resolution-register.json` covers the four C2-LT-B4 local-review issue rows, prepares eight duplicate-lineage/fulltext-route candidates, preserves blocked uses and keeps model admission blocked.
+- `audit_human_infra_c2_longtail_fourth_batch_manual_fulltext_extraction_register.py`: verifies that `docs/reference/human-infra-c2-longtail-fourth-batch-manual-fulltext-extraction-register.json` covers all eight C2-LT-B4 source-resolution candidates, separates bounded fresh-review candidates from duplicate/route-only/manual-access blocked rows, and keeps model admission blocked.
 - `audit_human_infra_c2_longtail_third_batch_source_extraction_register.py`: verifies that `docs/reference/human-infra-c2-longtail-third-batch-source-extraction-register.json` completes all 24/24 C2-LT-B3 source-context extraction rows with required fields, downgrade triggers, blocked uses, source-resolution flags and index links.
 - `audit_human_infra_c2_longtail_third_batch_local_review_register.py`: verifies that `docs/reference/human-infra-c2-longtail-third-batch-local-review-register.json` locally reviews all 24/24 C2-LT-B3 extraction rows, preserves five source-resolution/manual-access issue rows, keeps blocked uses complete, and routes only to independent fresh review or source resolution.
 - `audit_human_infra_c2_longtail_third_batch_source_resolution_register.py`: verifies that `docs/reference/human-infra-c2-longtail-third-batch-source-resolution-register.json` covers the five C2-LT-B3 local-review issue rows, prepares seven corrected/split/route-normalized candidates, preserves blocked uses and keeps model admission blocked.
@@ -153,6 +154,7 @@ make c2-longtail-fourth-batch-source-extraction-audit
 make c2-longtail-fourth-batch-source-extraction-register-audit
 make c2-longtail-fourth-batch-local-review-audit
 make c2-longtail-fourth-batch-source-resolution-audit
+make c2-longtail-fourth-batch-manual-fulltext-extraction-audit
 make domain-source-queue-audit
 make domain-source-extraction-audit
 make domain-source-promotion-audit
