@@ -134,6 +134,10 @@
         "tools/audit_human_infra_c2_longtail_first_batch_source_extraction_register.py",
         "docs/reference/human-infra-c2-longtail-first-batch-local-review-register.json",
         "tools/audit_human_infra_c2_longtail_first_batch_local_review_register.py",
+        "docs/reference/human-infra-c2-longtail-first-batch-independent-fresh-review-protocol.json",
+        "tools/audit_human_infra_c2_longtail_first_batch_independent_fresh_review_protocol.py",
+        "docs/reference/human-infra-c2-longtail-first-batch-independent-fresh-review-verdict-register.json",
+        "tools/audit_human_infra_c2_longtail_first_batch_independent_fresh_review_verdict_register.py",
         "docs/reference/human-infra-domain-source-specific-extraction-queue.json",
         "docs/reference/human-infra-domain-source-specific-extraction-register.json",
         "docs/reference/human-infra-falsifier-source-card-backfill.json",
@@ -214,12 +218,16 @@
             "docs/reference/human-infra-c2-longtail-first-batch-source-extraction-register.json",
             "tools/audit_human_infra_c2_longtail_first_batch_source_extraction_register.py",
             "docs/reference/human-infra-c2-longtail-first-batch-local-review-register.json",
-            "tools/audit_human_infra_c2_longtail_first_batch_local_review_register.py"
+            "tools/audit_human_infra_c2_longtail_first_batch_local_review_register.py",
+            "docs/reference/human-infra-c2-longtail-first-batch-independent-fresh-review-protocol.json",
+            "tools/audit_human_infra_c2_longtail_first_batch_independent_fresh_review_protocol.py",
+            "docs/reference/human-infra-c2-longtail-first-batch-independent-fresh-review-verdict-register.json",
+            "tools/audit_human_infra_c2_longtail_first_batch_independent_fresh_review_verdict_register.py"
           ],
           "missingEvidence": [
-            "Filled Claim-Evidence rows and reviewed Source Card artifacts for the 184 C2 long-tail domains listed in human-infra-c2-longtail-coverage-register.json. The first 24 high-impact domains are queued, derived into 48 source-specific deep-read tasks, completed as 48/48 source-context extraction rows, and locally reviewed in human-infra-c2-longtail-first-batch-local-review-register.json. Independent fresh review and reviewed artifacts for this C2-LT-B1 batch are not yet produced."
+            "Filled Claim-Evidence rows and reviewed Source Card artifacts for the 184 C2 long-tail domains listed in human-infra-c2-longtail-coverage-register.json. The first 24 high-impact domains are queued, derived into 48 source-specific deep-read tasks, completed as 48/48 source-context extraction rows, locally reviewed in human-infra-c2-longtail-first-batch-local-review-register.json, covered by a 48-row independent fresh-review protocol, and partially reviewed with 12/48 fresh-review verdicts. The remaining 36/48 C2-LT-B1 sources and reviewed artifacts are not yet produced."
           ],
-          "nextAction": "Route all 48 locally reviewed C2-LT-B1 source-context extraction rows through independent fresh review and artifact promotion before any Source Card or model admission claim.",
+          "nextAction": "Complete the remaining 36/48 C2-LT-B1 independent fresh-review verdicts, then promote eligible rows into reviewed artifacts before any Source Card or model admission claim.",
           "blocks100Percent": true
         },
         {
@@ -256,12 +264,16 @@
             "docs/reference/human-infra-c2-longtail-first-batch-source-extraction-register.json",
             "tools/audit_human_infra_c2_longtail_first_batch_source_extraction_register.py",
             "docs/reference/human-infra-c2-longtail-first-batch-local-review-register.json",
-            "tools/audit_human_infra_c2_longtail_first_batch_local_review_register.py"
+            "tools/audit_human_infra_c2_longtail_first_batch_local_review_register.py",
+            "docs/reference/human-infra-c2-longtail-first-batch-independent-fresh-review-protocol.json",
+            "tools/audit_human_infra_c2_longtail_first_batch_independent_fresh_review_protocol.py",
+            "docs/reference/human-infra-c2-longtail-first-batch-independent-fresh-review-verdict-register.json",
+            "tools/audit_human_infra_c2_longtail_first_batch_independent_fresh_review_verdict_register.py"
           ],
           "missingEvidence": [
-            "Variable, endpoint, uncertainty and transfer-boundary cards for the 184 C2 long-tail domains listed in human-infra-c2-longtail-coverage-register.json. The first 24 high-impact domains now have claim/variable seeds, 48 source-specific deep-read tasks, 48/48 pilot source-context extraction rows and 48/48 local source-context review rows, but no reviewed variable or endpoint cards."
+            "Variable, endpoint, uncertainty and transfer-boundary cards for the 184 C2 long-tail domains listed in human-infra-c2-longtail-coverage-register.json. The first 24 high-impact domains now have claim/variable seeds, 48 source-specific deep-read tasks, 48/48 pilot source-context extraction rows, 48/48 local source-context review rows, a 48-row fresh-review protocol and 12/48 fresh-review verdicts, but no reviewed variable or endpoint cards."
           ],
-          "nextAction": "Route C2-LT-B1 local review rows through independent fresh review before promoting variable and endpoint contracts.",
+          "nextAction": "Complete remaining C2-LT-B1 independent fresh review before promoting variable and endpoint contracts.",
           "blocks100Percent": true
         },
         {
@@ -323,12 +335,16 @@
             "docs/reference/human-infra-c2-longtail-first-batch-source-extraction-register.json",
             "tools/audit_human_infra_c2_longtail_first_batch_source_extraction_register.py",
             "docs/reference/human-infra-c2-longtail-first-batch-local-review-register.json",
-            "tools/audit_human_infra_c2_longtail_first_batch_local_review_register.py"
+            "tools/audit_human_infra_c2_longtail_first_batch_local_review_register.py",
+            "docs/reference/human-infra-c2-longtail-first-batch-independent-fresh-review-protocol.json",
+            "tools/audit_human_infra_c2_longtail_first_batch_independent_fresh_review_protocol.py",
+            "docs/reference/human-infra-c2-longtail-first-batch-independent-fresh-review-verdict-register.json",
+            "tools/audit_human_infra_c2_longtail_first_batch_independent_fresh_review_verdict_register.py"
           ],
           "missingEvidence": [
-            "Downgrade-check artifacts and falsifier rows for the 184 C2 long-tail domains listed in human-infra-c2-longtail-coverage-register.json. The C2-LT-B1 source extraction queue defines downgrade extraction slots, all 48/48 pilot rows now contain downgrade triggers, and all 48/48 rows have local source-context review, but reviewed downgrade-check artifacts are not yet produced."
+            "Downgrade-check artifacts and falsifier rows for the 184 C2 long-tail domains listed in human-infra-c2-longtail-coverage-register.json. The C2-LT-B1 source extraction queue defines downgrade extraction slots, all 48/48 pilot rows now contain downgrade triggers, all 48/48 rows have local source-context review, and 12/48 rows have independent fresh-review verdicts, but reviewed downgrade-check artifacts are not yet produced."
           ],
-          "nextAction": "Promote the 48 C2-LT-B1 downgrade triggers into reviewed downgrade-check and falsifier artifacts after independent fresh review.",
+          "nextAction": "Complete remaining C2-LT-B1 independent fresh review, then promote downgrade triggers into reviewed downgrade-check and falsifier artifacts.",
           "blocks100Percent": true
         }
       ]
@@ -475,7 +491,7 @@
   "nextWorkOrder": [
     {
       "priority": 1,
-      "item": "Route the 48/48 locally reviewed C2-LT-B1 extraction rows from human-infra-c2-longtail-first-batch-local-review-register.json into independent fresh review and reviewed artifact promotion.",
+      "item": "Complete the remaining 36/48 C2-LT-B1 independent fresh-review verdicts from human-infra-c2-longtail-first-batch-independent-fresh-review-protocol.json, then promote eligible rows into reviewed artifacts.",
       "unblocks": [
         "RESEARCH-G3-c1-c2-source-cards",
         "RESEARCH-G4-variable-mechanism-contracts",

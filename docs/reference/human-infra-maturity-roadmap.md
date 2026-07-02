@@ -48,6 +48,10 @@ C2 长尾第一批来源抽取试运行见 [`human-infra-c2-longtail-first-batch
 
 C2 长尾第一批本地来源语境复核见 [`human-infra-c2-longtail-first-batch-local-review-register.json`](human-infra-c2-longtail-first-batch-local-review-register.json)，由 `make c2-longtail-first-batch-local-review-audit` 检查 48/48 个来源抽取行是否完成本地结构复核、反查队列与抽取账本、保持禁止用途，并且只允许进入 independent fresh review。它不等于 reviewed artifacts、Source Card 晋升或模型准入完成。
 
+C2 长尾第一批独立 fresh review 协议见 [`human-infra-c2-longtail-first-batch-independent-fresh-review-protocol.json`](human-infra-c2-longtail-first-batch-independent-fresh-review-protocol.json)，由 `make c2-longtail-first-batch-independent-fresh-review-protocol-audit` 检查 48 个本地复核行是否拆成 4 个 fresh-review 批次，并把 verdict 字段、降级动作和禁止用途写入协议。
+
+C2 长尾第一批独立 fresh review 判定见 [`human-infra-c2-longtail-first-batch-independent-fresh-review-verdict-register.json`](human-infra-c2-longtail-first-batch-independent-fresh-review-verdict-register.json)，由 `make c2-longtail-first-batch-independent-fresh-review-verdict-audit` 检查当前 12/48 个来源是否已有外部核验证据、reviewer verdict、artifact promotion decision 和阻塞边界。该账本当前仍是 partial，剩余 36 个来源待复核。
+
 ## Claim Spine
 
 本路线图对齐 `HI-CL1`、`HI-CL2`、`HI-CL3`、`HI-CL4`、`HI-CL6` 和 `HI-CL7`：主体持续性是价值成立条件，Human Infra 的对象是主体持续性的基础条件集合，定量模型必须区分寿命、健康寿命、有效时间和未来选择权，并把技术放入变量、状态、风险函数和证据链中审查。边界：不是医疗建议；不输出个体死亡日期；不证明具体技术已经实现有效永生。
@@ -59,7 +63,7 @@ C2 长尾第一批本地来源语境复核见 [`human-infra-c2-longtail-first-ba
 | 轴线 | 当前成熟度 | 100% 状态 | 当前最大缺口 |
 | --- | ---: | --- | --- |
 | 项目价值 | 100% | 不同受众能用同一核心命题理解 Human Infra 的必要性 | 已有核心命题、多视角价值解析、页面级 Claim ID 一致性门禁、受众-主张映射和邻近项目边界对照；后续只需防止页面漂移 |
-| 研究框架 | 99% | 每条主张都进入 Source Card、Claim-Evidence Matrix、变量表和反证条件 | 已有核心主张矩阵、页面级 Claim ID 门禁、arXiv-style 论文页强主张门禁、C1/20 个优先 C2 反证覆盖门禁、v0.1 反证 Source Card 锚点回填、当前 21 个来源锚点字段级 Source Card 抽取、26 个优先域的域级 Claim-Evidence Matrix seed、26 个优先域的 endpoint 候选和 source-specific 深读槽位、81 个 domain-source 深读任务队列、81/81 个 domain-source 精读完成行、81 项卡片晋升队列、20 个来源锚点本地来源语境复核账本、81 项卡片晋升预注册包、独立 fresh review 协议、FRB-01 到 FRB-04 合计 81/81 个 fresh-review verdict、486 个 reviewed card artifacts、4 条 future-boundary route cards、204 个 C2 域长尾覆盖账本、本地审计门禁、第一批 24 个高影响 C2 长尾域晋升队列、48 个 C2-LT-B1 逐源深读任务、48/48 个 C2-LT-B1 来源抽取试运行行和 48/48 个 C2-LT-B1 本地来源语境复核门禁；184 个 C2 长尾域的实际 Source Card / 变量 / endpoint / downgrade artifact 和校准模型准入仍未完成 |
+| 研究框架 | 99% | 每条主张都进入 Source Card、Claim-Evidence Matrix、变量表和反证条件 | 已有核心主张矩阵、页面级 Claim ID 门禁、arXiv-style 论文页强主张门禁、C1/20 个优先 C2 反证覆盖门禁、v0.1 反证 Source Card 锚点回填、当前 21 个来源锚点字段级 Source Card 抽取、26 个优先域的域级 Claim-Evidence Matrix seed、26 个优先域的 endpoint 候选和 source-specific 深读槽位、81 个 domain-source 深读任务队列、81/81 个 domain-source 精读完成行、81 项卡片晋升队列、20 个来源锚点本地来源语境复核账本、81 项卡片晋升预注册包、独立 fresh review 协议、FRB-01 到 FRB-04 合计 81/81 个 fresh-review verdict、486 个 reviewed card artifacts、4 条 future-boundary route cards、204 个 C2 域长尾覆盖账本、本地审计门禁、第一批 24 个高影响 C2 长尾域晋升队列、48 个 C2-LT-B1 逐源深读任务、48/48 个 C2-LT-B1 来源抽取试运行行、48/48 个 C2-LT-B1 本地来源语境复核门禁、C2-LT-B1 48 行独立 fresh-review 协议和 12/48 个 C2-LT-B1 独立 fresh-review verdict；剩余 36 个 C2-LT-B1 来源、184 个 C2 长尾域的实际 Source Card / 变量 / endpoint / downgrade artifact 和校准模型准入仍未完成 |
 | 定量模型 | 63% | 有可运行、可复现、可审查的场景级模型管线 | 已有 toy model、合成敏感性分析、审计器、校准预备契约、真实队列候选注册表、数据源 Source Cards、Data Card 模板、NHATS 数据准入草案、变量字典草案、extraction manifest 草案、机器可读 acquisition-readiness gates、R13/R14 file-tier table、第一版 NHATS estimand protocol、NHATS variable confirmation matrix、NHATS cohort-flow endpoint-routing protocol、synthetic disclosure-control validator、synthetic survey-design validator、synthetic missingness-route validator、NHATS route-field discovery validator 和 NHATS Colectica value-label review protocol validator，但还没有数据访问、Colectica value labels 精确确认、真实提取、真实 NHATS route classification、真实 NHATS 输出披露审查、真实 survey-design 加权估计、外部验证和校准后的敏感性分析 |
 
 ## 价值层 100%
@@ -241,7 +245,7 @@ life_path_toy_model_scenarios.json
 这一步已经把项目从“有定量想法的研究叙事”推进到“有最小可执行、可审计模型管线的研究系统”，并且开始把合成敏感性分析、真实队列候选、治理边界、第一份 NHATS 数据准入草案、NHATS 机器可读 acquisition-readiness gates、R13/R14 file-tier table、第一版 NHATS estimand protocol、NHATS variable confirmation matrix、NHATS cohort-flow endpoint-routing protocol、synthetic disclosure-control validator、synthetic survey-design validator、synthetic missingness-route validator、NHATS route-field discovery validator、NHATS Colectica value-label review protocol validator 和核心主张证据矩阵纳入机器审计。下一步不是继续膨胀新域，而是补三件硬东西：
 
 - 继续用 `human-infra-core-claim-evidence-matrix.md` 作为核心主张入口，把 README、论文页和 Web 页的强叙事都回连到同一组 Claim ID、来源角色和禁止外推边界。
-- 按 `human-infra-c2-longtail-first-batch-source-extraction-queue.json` 执行 C2-LT-B1 的 48 个 source-specific 深读任务：当前 `human-infra-c2-longtail-first-batch-source-extraction-register.json` 已完成 48/48 个来源语境字段抽取，`human-infra-c2-longtail-first-batch-local-review-register.json` 已完成 48/48 个本地来源语境复核；下一步进入 independent fresh review 和 reviewed artifacts。所有模型门禁完成前仍禁止模型准入。
+- 按 `human-infra-c2-longtail-first-batch-source-extraction-queue.json` 执行 C2-LT-B1 的 48 个 source-specific 深读任务：当前 `human-infra-c2-longtail-first-batch-source-extraction-register.json` 已完成 48/48 个来源语境字段抽取，`human-infra-c2-longtail-first-batch-local-review-register.json` 已完成 48/48 个本地来源语境复核，`human-infra-c2-longtail-first-batch-independent-fresh-review-protocol.json` 已覆盖 48/48 个 fresh-review 批次，`human-infra-c2-longtail-first-batch-independent-fresh-review-verdict-register.json` 已完成第一批 12/48 个 fresh-review verdict；下一步完成剩余 36/48 个 fresh review，再进入 reviewed artifacts。所有模型门禁完成前仍禁止模型准入。
 - 把 NHATS manifest、route-field discovery register、Colectica value-label review protocol 和 first estimand protocol 从 draft 推进到 governed acquisition-ready，补 Colectica 登录复核、value labels、question text、universe/skip logic、精确字段名、轮次、缺失码、公开/敏感/受限状态、权重、endpoint 定义、cohort flow、survey design、代码本来源和输出抑制规则。
 - 把 sensitivity analysis 从合成一因素扰动推进到基于真实队列、预注册范围和校准诊断的敏感性分析。
 

@@ -1,0 +1,193 @@
+{
+  "schemaVersion": "human-infra.c2-longtail-first-batch-independent-fresh-review-protocol.v1",
+  "registerId": "human-infra-c2-longtail-first-batch-independent-fresh-review-protocol-2026-07-02",
+  "status": "active-review-protocol",
+  "purpose": "Define independent fresh-review batches, required checks and promotion boundaries for the 48 locally reviewed C2-LT-B1 source-context extraction rows without storing verdicts inside the protocol artifact.",
+  "sourceOfTruth": {
+    "localReviewRegister": "docs/reference/human-infra-c2-longtail-first-batch-local-review-register.json",
+    "sourceExtractionRegister": "docs/reference/human-infra-c2-longtail-first-batch-source-extraction-register.json",
+    "sourceExtractionQueue": "docs/reference/human-infra-c2-longtail-first-batch-source-extraction-queue.json",
+    "sourceCardSystem": "docs/reference/source-card-system.md",
+    "evidencePolicy": "docs/reference/evidence-policy.md",
+    "maturityGapRegister": "docs/reference/human-infra-maturity-gap-register.json"
+  },
+  "scope": {
+    "localReviewedExtractionTaskCount": 48,
+    "coveredDomainCount": 24,
+    "batchCount": 4,
+    "protocolEmbeddedVerdictCount": 0,
+    "selectionRule": "Every C2-LT-B1 local-review row must receive independent fresh review before any reviewed artifact or model-admission claim.",
+    "nonClaims": [
+      "This protocol is not an independent fresh review verdict register.",
+      "This protocol does not complete Source Cards, variable cards, endpoint cards, uncertainty cards, transfer-boundary cards or downgrade-check artifacts.",
+      "This protocol does not authorize calibrated prediction, individual advice, individual death-date output, intervention ranking, domain-claim upgrade or clinical-validity claims."
+    ]
+  },
+  "requiredReviewFields": [
+    "sourceIdentityVerdict",
+    "sourceContextVerdict",
+    "exactClaimUseVerdict",
+    "domainTransferVerdict",
+    "modelPositionVerdict",
+    "uncertaintyBoundaryVerdict",
+    "downgradeVerdict",
+    "blockedUseVerdict",
+    "reviewerNote"
+  ],
+  "verdictTaxonomy": [
+    "support-with-boundary",
+    "bounded-support",
+    "downgrade-required",
+    "reject-source-context-mismatch",
+    "cannot-evaluate-insufficient-context"
+  ],
+  "artifactPromotionDecisions": [
+    "eligible-for-bounded-artifact-fill",
+    "downgrade-before-fill",
+    "rejected-no-fill",
+    "blocked-cannot-evaluate"
+  ],
+  "blockedUses": [
+    "calibrated-prediction",
+    "individual-advice",
+    "individual-death-date-output",
+    "intervention-ranking",
+    "clinical-validity-claim",
+    "domain-claim-upgrade"
+  ],
+  "promotionRules": [
+    "support-with-boundary or bounded-support may proceed only to bounded reviewed-artifact fill, never directly to model admission.",
+    "downgrade-required rows must carry a downgrade note before artifact fill and remain blocked for calibrated prediction.",
+    "reject-source-context-mismatch rows must not fill reviewed artifacts until source identity or role is corrected.",
+    "cannot-evaluate-insufficient-context rows remain blocked until a primary or authoritative source can be independently checked.",
+    "Artifact promotion decisions are limited to eligible-for-bounded-artifact-fill, downgrade-before-fill, rejected-no-fill and blocked-cannot-evaluate."
+  ],
+  "reviewBatches": [
+    {
+      "batchId": "C2LTB1-FRB-01-acute-and-chronic-transition",
+      "sourceLocalReviewBatchId": "C2LTB1-LR-01-acute-and-chronic-transition",
+      "batchLabel": "急性高风险与慢性转移域",
+      "taskCount": 12,
+      "taskIds": [
+        "C2LTB1-EXT-001",
+        "C2LTB1-EXT-002",
+        "C2LTB1-EXT-003",
+        "C2LTB1-EXT-004",
+        "C2LTB1-EXT-005",
+        "C2LTB1-EXT-006",
+        "C2LTB1-EXT-007",
+        "C2LTB1-EXT-008",
+        "C2LTB1-EXT-009",
+        "C2LTB1-EXT-010",
+        "C2LTB1-EXT-011",
+        "C2LTB1-EXT-012"
+      ],
+      "domainIds": [
+        "acute-coronary-syndrome-reperfusion-continuity",
+        "sepsis-shock-early-recognition-resuscitation-continuity",
+        "acute-kidney-injury-renal-replacement-continuity",
+        "anaphylaxis-allergic-emergency-continuity",
+        "chronic-kidney-disease-screening-progression-continuity",
+        "prediabetes-diabetes-prevention-continuity"
+      ],
+      "reviewPriority": "first",
+      "reviewFocus": "independent fresh review must verify source identity, guideline/currentness boundaries, endpoint specificity and transfer limits before artifact promotion"
+    },
+    {
+      "batchId": "C2LTB1-FRB-02-metabolic-fitness-neuro-motor",
+      "sourceLocalReviewBatchId": "C2LTB1-LR-02-metabolic-fitness-neuro-motor",
+      "batchLabel": "代谢、体能、神经与运动连续性域",
+      "taskCount": 12,
+      "taskIds": [
+        "C2LTB1-EXT-013",
+        "C2LTB1-EXT-014",
+        "C2LTB1-EXT-015",
+        "C2LTB1-EXT-016",
+        "C2LTB1-EXT-017",
+        "C2LTB1-EXT-018",
+        "C2LTB1-EXT-019",
+        "C2LTB1-EXT-020",
+        "C2LTB1-EXT-021",
+        "C2LTB1-EXT-022",
+        "C2LTB1-EXT-023",
+        "C2LTB1-EXT-024"
+      ],
+      "domainIds": [
+        "obesity-adiposity-metabolic-risk-continuity",
+        "cardiorespiratory-fitness-vo2max-aerobic-capacity-continuity",
+        "cerebrovascular-stroke-brain-perfusion-resilience",
+        "delirium-acute-cognitive-failure-prevention",
+        "disorders-of-consciousness-coma-recovery",
+        "amyotrophic-lateral-sclerosis-motor-neuron-continuity"
+      ],
+      "reviewPriority": "second",
+      "reviewFocus": "independent fresh review must verify measurement boundaries, disease heterogeneity, function endpoints and subject-continuity safeguards before artifact promotion"
+    },
+    {
+      "batchId": "C2LTB1-FRB-03-oncology-infectious-immunization",
+      "sourceLocalReviewBatchId": "C2LTB1-LR-03-oncology-infectious-immunization",
+      "batchLabel": "肿瘤控制、抗菌韧性与免疫基础设施域",
+      "taskCount": 12,
+      "taskIds": [
+        "C2LTB1-EXT-025",
+        "C2LTB1-EXT-026",
+        "C2LTB1-EXT-027",
+        "C2LTB1-EXT-028",
+        "C2LTB1-EXT-029",
+        "C2LTB1-EXT-030",
+        "C2LTB1-EXT-031",
+        "C2LTB1-EXT-032",
+        "C2LTB1-EXT-033",
+        "C2LTB1-EXT-034",
+        "C2LTB1-EXT-035",
+        "C2LTB1-EXT-036"
+      ],
+      "domainIds": [
+        "cancer-control",
+        "colorectal-cancer-screening-treatment-continuity",
+        "breast-cancer-screening-treatment-survivorship-continuity",
+        "cervical-cancer-hpv-prevention-screening-continuity",
+        "antimicrobial-resilience",
+        "immunization-public-health-surveillance"
+      ],
+      "reviewPriority": "third",
+      "reviewFocus": "independent fresh review must verify screening recommendation scope, cancer-site specificity, pathogen or vaccine specificity, surveillance quality and access boundaries before artifact promotion"
+    },
+    {
+      "batchId": "C2LTB1-FRB-04-liver-newborn-reproductive-pain-barrier-safety",
+      "sourceLocalReviewBatchId": "C2LTB1-LR-04-liver-newborn-reproductive-pain-barrier-safety",
+      "batchLabel": "肝脏、新生儿、生殖选择、疼痛、屏障和患者安全域",
+      "taskCount": 12,
+      "taskIds": [
+        "C2LTB1-EXT-037",
+        "C2LTB1-EXT-038",
+        "C2LTB1-EXT-039",
+        "C2LTB1-EXT-040",
+        "C2LTB1-EXT-041",
+        "C2LTB1-EXT-042",
+        "C2LTB1-EXT-043",
+        "C2LTB1-EXT-044",
+        "C2LTB1-EXT-045",
+        "C2LTB1-EXT-046",
+        "C2LTB1-EXT-047",
+        "C2LTB1-EXT-048"
+      ],
+      "domainIds": [
+        "chronic-viral-hepatitis-screening-liver-protection-continuity",
+        "newborn-screening-result-followup-continuity",
+        "fertility-preservation-gamete-embryo-cryostorage-continuity",
+        "chronic-pain-functional-restoration-continuity",
+        "skin-barrier-wound-healing",
+        "patient-safety-organizational-learning"
+      ],
+      "reviewPriority": "fourth",
+      "reviewFocus": "independent fresh review must verify programme indicators, screening follow-up, consent and storage governance, functional outcomes, implementation fidelity and safety-event measurement before artifact promotion"
+    }
+  ],
+  "indexRequirements": [
+    "README.md",
+    "docs/reference/README.md",
+    "docs/reference/human-infra-maturity-roadmap.md",
+    "tools/README.md"
+  ]
+}

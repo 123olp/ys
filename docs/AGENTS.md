@@ -180,6 +180,8 @@ docs/
 │   ├── human-infra-c2-longtail-first-batch-source-extraction-queue.json
 │   ├── human-infra-c2-longtail-first-batch-source-extraction-register.json
 │   ├── human-infra-c2-longtail-first-batch-local-review-register.json
+│   ├── human-infra-c2-longtail-first-batch-independent-fresh-review-protocol.json
+│   ├── human-infra-c2-longtail-first-batch-independent-fresh-review-verdict-register.json
 │   ├── human-infra-domain-source-specific-extraction-queue.json
 │   ├── human-infra-domain-source-specific-extraction-register.json
 │   ├── human-infra-domain-source-card-promotion-queue.json
@@ -379,6 +381,8 @@ docs/
 - `reference/human-infra-c2-longtail-first-batch-source-extraction-queue.json`：把第一批 24 个 C2 长尾域的 48 个候选来源派生成 source-specific 深读任务，要求抽取 exact claim、endpoint、population/setting、mechanism/effect、uncertainty、transfer boundary、downgrade 和 model position；它仍不等于来源已读完或证据已成立。
 - `reference/human-infra-c2-longtail-first-batch-source-extraction-register.json`：记录 C2-LT-B1 48/48 个来源的字段级抽取试运行，覆盖第一批 24 个高影响 C2 长尾域；它仍不等于 fresh review、Source Card 晋升或模型准入。
 - `reference/human-infra-c2-longtail-first-batch-local-review-register.json`：记录 C2-LT-B1 48/48 个来源抽取行的本地来源语境复核，确认其只可进入 independent fresh review；它仍不等于 reviewed artifacts、Source Card 晋升完成或模型准入。
+- `reference/human-infra-c2-longtail-first-batch-independent-fresh-review-protocol.json`：把 C2-LT-B1 48 个本地复核行拆成四个 independent fresh-review 批次，定义 verdict 字段、降级判定和禁止用途边界；它不存放判定。
+- `reference/human-infra-c2-longtail-first-batch-independent-fresh-review-verdict-register.json`：记录 C2-LT-B1 独立 fresh review 的 partial verdict，当前覆盖第一批 12/48 个来源，保留剩余 36 个来源和所有模型准入阻塞。
 - `reference/human-infra-domain-source-specific-extraction-queue.json`：把 26 个域字段行派生为 81 个 domain-source 深读任务，作为 exact claim、endpoint、population、uncertainty 和 transfer-boundary 精读前的模型准入阻塞队列。
 - `reference/human-infra-domain-source-specific-extraction-register.json`：记录当前 81/81 个 domain-source 精读完成行，绑定 exact claim、endpoint、population、uncertainty、transfer-boundary 和禁止用途边界；它仍不等于外部文献 fresh review 或校准预测准入。
 - `reference/human-infra-domain-source-card-promotion-queue.json`：把 81 个 completed field rows 派生为 fresh review、Source Card、变量卡、endpoint 卡、uncertainty 卡、transfer-boundary 卡和 downgrade check 晋升任务；它仍不等于晋升完成或模型准入。

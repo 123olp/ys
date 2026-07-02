@@ -1,0 +1,561 @@
+{
+  "schemaVersion": "human-infra.c2-longtail-first-batch-independent-fresh-review-verdict-register.v1",
+  "registerId": "human-infra-c2-longtail-first-batch-independent-fresh-review-verdict-register-2026-07-02",
+  "status": "active-fresh-review-verdict-register-partial",
+  "purpose": "Record independent fresh-review verdicts for C2-LT-B1 source-context extraction rows while keeping reviewed artifacts, model admission and individual-use claims blocked.",
+  "sourceOfTruth": {
+    "independentFreshReviewProtocol": "docs/reference/human-infra-c2-longtail-first-batch-independent-fresh-review-protocol.json",
+    "localReviewRegister": "docs/reference/human-infra-c2-longtail-first-batch-local-review-register.json",
+    "sourceExtractionRegister": "docs/reference/human-infra-c2-longtail-first-batch-source-extraction-register.json",
+    "evidencePolicy": "docs/reference/evidence-policy.md",
+    "maturityGapRegister": "docs/reference/human-infra-maturity-gap-register.json"
+  },
+  "scope": {
+    "reviewedBatchIds": [
+      "C2LTB1-FRB-01-acute-and-chronic-transition"
+    ],
+    "reviewedBatchCount": 1,
+    "totalLocalReviewedExtractionTaskCount": 48,
+    "reviewedExtractionTaskCount": 12,
+    "remainingExtractionTaskCount": 36,
+    "reviewedDomainCount": 6,
+    "reviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+    "artifactPromotionDecision": "partial-first-batch-reviewed-bounded-artifact-fill-only-for-eligible-rows",
+    "nonClaims": [
+      "This verdict register is not a completed Source Card set or reviewed artifact set.",
+      "This verdict register does not authorize calibrated prediction, individual advice, individual death-date output, intervention ranking, domain-claim upgrade or clinical-validity claims.",
+      "Only the first C2-LT-B1 fresh-review batch has received verdicts; remaining prepared rows still require fresh review.",
+      "Rows marked downgrade-required or cannot-evaluate-insufficient-context cannot fill reviewed artifacts until their downgrade or source-resolution condition is closed."
+    ]
+  },
+  "requiredReviewFields": [
+    "sourceIdentityVerdict",
+    "sourceContextVerdict",
+    "exactClaimUseVerdict",
+    "domainTransferVerdict",
+    "modelPositionVerdict",
+    "uncertaintyBoundaryVerdict",
+    "downgradeVerdict",
+    "blockedUseVerdict",
+    "reviewerNote"
+  ],
+  "verdictTaxonomy": [
+    "support-with-boundary",
+    "bounded-support",
+    "downgrade-required",
+    "reject-source-context-mismatch",
+    "cannot-evaluate-insufficient-context"
+  ],
+  "artifactPromotionDecisions": [
+    "eligible-for-bounded-artifact-fill",
+    "downgrade-before-fill",
+    "rejected-no-fill",
+    "blocked-cannot-evaluate"
+  ],
+  "blockedUses": [
+    "calibrated-prediction",
+    "individual-advice",
+    "individual-death-date-output",
+    "intervention-ranking",
+    "clinical-validity-claim",
+    "domain-claim-upgrade"
+  ],
+  "sourceTaskFreshReviews": [
+    {
+      "taskId": "C2LTB1-EXT-001",
+      "domainId": "acute-coronary-syndrome-reperfusion-continuity",
+      "reviewedSourceTitle": "2025 ACC/AHA/ACEP/NAEMSP/SCAI Guideline for Acute Coronary Syndromes",
+      "reviewedSourceUrl": "https://www.ahajournals.org/doi/10.1161/CIR.0000000000001309",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "freshReviewEvidence": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40014670/",
+          "evidenceType": "bibliographic-primary-index",
+          "finding": "PubMed indexes the 2025 ACC/AHA/ACEP/NAEMSP/SCAI ACS guideline and identifies it as incorporating new ACS evidence since prior STEMI/NSTE-ACS guidance."
+        },
+        {
+          "url": "https://professional.heart.org/en/guidelines-statements/2025-accahaacepnaemspscai-guideline-for-the-management-of-patients-with-acutecir0000000000001309",
+          "evidenceType": "professional-guideline-hub",
+          "finding": "AHA Professional Heart Daily exposes the guideline hub for the 2025 ACS management guideline."
+        }
+      ],
+      "registeredSourceRole": "acute-coronary-syndrome-clinical-route-and-endpoint-anchor",
+      "registeredExactClaimUse": "Supports treating ACS as a time-sensitive continuity failure mode where diagnosis, reperfusion, antithrombotic therapy, revascularization, rehabilitation and secondary prevention define the route variables to be extracted before any model use.",
+      "registeredTransferBoundary": "Transfer only as endpoint, variable and care-pathway vocabulary. The source does not provide a calibrated Human Infra effect size or authorize personal ACS treatment advice.",
+      "sourceIdentityVerdict": "verified-primary-or-authoritative-source",
+      "sourceContextVerdict": "supports-registered-source-role-with-boundary",
+      "exactClaimUseVerdict": "supports exact claim use as vocabulary or route context only; no calibrated effect size or individual recommendation is admitted",
+      "domainTransferVerdict": "bounded transfer to endpoint, variable and care-pathway vocabulary; no intervention benefit, clinical decision or personal prognosis is admitted",
+      "modelPositionVerdict": "model-language-only; calibrated prediction, intervention ranking and individual prognosis remain blocked",
+      "uncertaintyBoundaryVerdict": "must carry source currentness, population/setting, evidence-grade, access, endpoint and implementation-transfer limits before artifact fill",
+      "downgradeVerdict": "independent source check supports bounded vocabulary use only",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this reviewed task",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "reviewerNote": "independent source check supports bounded vocabulary use only"
+    },
+    {
+      "taskId": "C2LTB1-EXT-002",
+      "domainId": "acute-coronary-syndrome-reperfusion-continuity",
+      "reviewedSourceTitle": "AHA Heart Disease and Stroke Statistics",
+      "reviewedSourceUrl": "https://professional.heart.org/en/science-news/heart-disease-and-stroke-statistics-2024-update",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "freshReviewEvidence": [
+        {
+          "url": "https://professional.heart.org/en/science-news/heart-disease-and-stroke-statistics-2024-update",
+          "evidenceType": "professional-statistics-hub",
+          "finding": "AHA describes the 2024 statistical update as annually reported data on cardiovascular disease, stroke, risk factors, outcomes, quality of care, procedures and costs."
+        }
+      ],
+      "registeredSourceRole": "cardiovascular-burden-and-endpoint-context-anchor",
+      "registeredExactClaimUse": "Supports ACS and cardiovascular disease as major burden domains for subject-continuity modeling by anchoring population-level event, mortality and risk-factor context.",
+      "registeredTransferBoundary": "Transfer only to prioritization, endpoint vocabulary and denominator context. Do not use this source to estimate the benefit of reperfusion, medication or rehabilitation.",
+      "sourceIdentityVerdict": "verified-primary-or-authoritative-source",
+      "sourceContextVerdict": "supports-registered-source-role-with-boundary",
+      "exactClaimUseVerdict": "supports exact claim use as vocabulary or route context only; no calibrated effect size or individual recommendation is admitted",
+      "domainTransferVerdict": "bounded transfer to endpoint, variable and care-pathway vocabulary; no intervention benefit, clinical decision or personal prognosis is admitted",
+      "modelPositionVerdict": "model-language-only; calibrated prediction, intervention ranking and individual prognosis remain blocked",
+      "uncertaintyBoundaryVerdict": "must carry source currentness, population/setting, evidence-grade, access, endpoint and implementation-transfer limits before artifact fill",
+      "downgradeVerdict": "independent source check supports bounded vocabulary use only",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this reviewed task",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "reviewerNote": "independent source check supports bounded vocabulary use only"
+    },
+    {
+      "taskId": "C2LTB1-EXT-003",
+      "domainId": "sepsis-shock-early-recognition-resuscitation-continuity",
+      "reviewedSourceTitle": "Surviving Sepsis Campaign international guidelines for management of sepsis and septic shock",
+      "reviewedSourceUrl": "https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "freshReviewEvidence": [
+        {
+          "url": "https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-guidelines-2021",
+          "evidenceType": "clinical-guideline-page",
+          "finding": "SCCM adult Surviving Sepsis Campaign guidance includes time-sensitive antimicrobial and rapid assessment recommendations; the originally registered SCCM URL resolves to a pediatric-specific page and therefore needs transfer downgrading."
+        }
+      ],
+      "registeredSourceRole": "sepsis-recognition-resuscitation-and-organ-support-route-anchor",
+      "registeredExactClaimUse": "Supports treating sepsis and septic shock as acute systemic continuity failures where early recognition, antimicrobial therapy, source control, resuscitation and organ support define the route variables.",
+      "registeredTransferBoundary": "Transfer only to route design, variables and endpoint vocabulary. Do not infer a personal sepsis prognosis or a calibrated Human Infra intervention effect from this register row.",
+      "sourceIdentityVerdict": "verified-primary-or-authoritative-source",
+      "sourceContextVerdict": "supports-only-after-scope-downgrade",
+      "exactClaimUseVerdict": "supports exact claim use as vocabulary or route context only; no calibrated effect size or individual recommendation is admitted",
+      "domainTransferVerdict": "bounded transfer to endpoint, variable and care-pathway vocabulary; no intervention benefit, clinical decision or personal prognosis is admitted",
+      "modelPositionVerdict": "model-language-only; calibrated prediction, intervention ranking and individual prognosis remain blocked",
+      "uncertaintyBoundaryVerdict": "must carry source currentness, population/setting, evidence-grade, access, endpoint and implementation-transfer limits before artifact fill",
+      "downgradeVerdict": "registered SCCM URL/title scope requires adult-vs-pediatric and setting downgrade before artifact fill",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this reviewed task",
+      "reviewerVerdict": "downgrade-required",
+      "artifactPromotionDecision": "downgrade-before-fill",
+      "reviewerNote": "registered SCCM URL/title scope requires adult-vs-pediatric and setting downgrade before artifact fill"
+    },
+    {
+      "taskId": "C2LTB1-EXT-004",
+      "domainId": "sepsis-shock-early-recognition-resuscitation-continuity",
+      "reviewedSourceTitle": "CDC Sepsis clinical information",
+      "reviewedSourceUrl": "https://www.cdc.gov/sepsis/hcp/clinical-care/index.html",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "freshReviewEvidence": [
+        {
+          "url": "https://www.cdc.gov/sepsis/hcp/clinical-care/index.html",
+          "evidenceType": "public-health-clinical-care-page",
+          "finding": "CDC clinical care material emphasizes facility policies, alerting responsible clinicians, and starting antibiotics as soon as possible with targeted therapy when the bacterial cause is known."
+        },
+        {
+          "url": "https://www.cdc.gov/sepsis/hcp/core-elements/index.html",
+          "evidenceType": "public-health-program-page",
+          "finding": "CDC Hospital Sepsis Program Core Elements frame sepsis care as multidisciplinary structures and procedures for improving hospital management and outcomes."
+        }
+      ],
+      "registeredSourceRole": "sepsis-public-health-clinical-context-anchor",
+      "registeredExactClaimUse": "Supports the public-health and clinical-context framing that sepsis requires rapid recognition, diagnostic evaluation, antimicrobial treatment and escalation when organ dysfunction or shock is suspected.",
+      "registeredTransferBoundary": "Transfer only as public-health route context and vocabulary. Do not use as calibrated effect evidence, diagnostic advice or treatment instruction.",
+      "sourceIdentityVerdict": "verified-primary-or-authoritative-source",
+      "sourceContextVerdict": "supports-registered-source-role-with-boundary",
+      "exactClaimUseVerdict": "supports exact claim use as vocabulary or route context only; no calibrated effect size or individual recommendation is admitted",
+      "domainTransferVerdict": "bounded transfer to endpoint, variable and care-pathway vocabulary; no intervention benefit, clinical decision or personal prognosis is admitted",
+      "modelPositionVerdict": "model-language-only; calibrated prediction, intervention ranking and individual prognosis remain blocked",
+      "uncertaintyBoundaryVerdict": "must carry source currentness, population/setting, evidence-grade, access, endpoint and implementation-transfer limits before artifact fill",
+      "downgradeVerdict": "independent source check supports bounded vocabulary use only",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this reviewed task",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "reviewerNote": "independent source check supports bounded vocabulary use only"
+    },
+    {
+      "taskId": "C2LTB1-EXT-005",
+      "domainId": "acute-kidney-injury-renal-replacement-continuity",
+      "reviewedSourceTitle": "KDIGO Acute Kidney Injury guideline hub",
+      "reviewedSourceUrl": "https://kdigo.org/guidelines/acute-kidney-injury/",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "freshReviewEvidence": [
+        {
+          "url": "https://kdigo.org/guidelines/acute-kidney-injury/",
+          "evidenceType": "guideline-hub",
+          "finding": "KDIGO AKI/AKD hub describes an updated framework spanning kidney injury, recovery and CKD risk; draft materials must not be treated as final guideline recommendations until finalized."
+        },
+        {
+          "url": "https://kdigo.org/wp-content/uploads/2026/03/KDIGO-2026-AKI-AKD-Guideline-Public-Review-Draft-March-2026.pdf",
+          "evidenceType": "public-review-draft",
+          "finding": "The 2026 AKI/AKD guideline draft is explicitly marked as a public review draft and should be used only as draft/currentness context."
+        }
+      ],
+      "registeredSourceRole": "aki-definition-risk-management-and-krt-route-anchor",
+      "registeredExactClaimUse": "Supports AKI as a continuity domain where definition, staging, risk prediction, nephrotoxin stewardship, fluid/hemodynamic management, kidney replacement therapy and follow-up define the route variables.",
+      "registeredTransferBoundary": "Transfer only to AKI variable, staging and route vocabulary. Do not use as proof that a specific AKI intervention improves lifespan or effective time.",
+      "sourceIdentityVerdict": "verified-primary-or-authoritative-source",
+      "sourceContextVerdict": "supports-registered-source-role-with-boundary",
+      "exactClaimUseVerdict": "supports exact claim use as vocabulary or route context only; no calibrated effect size or individual recommendation is admitted",
+      "domainTransferVerdict": "bounded transfer to endpoint, variable and care-pathway vocabulary; no intervention benefit, clinical decision or personal prognosis is admitted",
+      "modelPositionVerdict": "model-language-only; calibrated prediction, intervention ranking and individual prognosis remain blocked",
+      "uncertaintyBoundaryVerdict": "must carry source currentness, population/setting, evidence-grade, access, endpoint and implementation-transfer limits before artifact fill",
+      "downgradeVerdict": "official hub supports AKI/AKD route vocabulary, but 2026 draft material must remain draft/currentness context",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this reviewed task",
+      "reviewerVerdict": "bounded-support",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "reviewerNote": "official hub supports AKI/AKD route vocabulary, but 2026 draft material must remain draft/currentness context"
+    },
+    {
+      "taskId": "C2LTB1-EXT-006",
+      "domainId": "acute-kidney-injury-renal-replacement-continuity",
+      "reviewedSourceTitle": "NIDDK Acute Kidney Injury information",
+      "reviewedSourceUrl": "https://usrds-adr.niddk.nih.gov/2023/chronic-kidney-disease/4-acute-kidney-injury",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "freshReviewEvidence": [
+        {
+          "url": "https://usrds-adr.niddk.nih.gov/2023/chronic-kidney-disease/4-acute-kidney-injury",
+          "evidenceType": "annual-data-report-page",
+          "finding": "USRDS/NIDDK Annual Data Report page identifies the AKI chapter within the 2023 chronic kidney disease report; automated content extraction is sparse, so use is limited to report/chapter identity and epidemiology-routing vocabulary pending fuller review."
+        }
+      ],
+      "registeredSourceRole": "aki-burden-hospitalization-and-outcome-context-anchor",
+      "registeredExactClaimUse": "Supports AKI as a population-burden and outcome-context domain, especially for hospitalization, dialysis-requiring AKI, mortality and kidney-disease transition questions.",
+      "registeredTransferBoundary": "Transfer only to burden, endpoint naming and transition-context framing. Do not infer causal effects of fluids, drugs, dialysis timing or individual prognosis.",
+      "sourceIdentityVerdict": "verified-primary-or-authoritative-source",
+      "sourceContextVerdict": "supports-registered-source-role-with-boundary",
+      "exactClaimUseVerdict": "supports exact claim use as vocabulary or route context only; no calibrated effect size or individual recommendation is admitted",
+      "domainTransferVerdict": "bounded transfer to endpoint, variable and care-pathway vocabulary; no intervention benefit, clinical decision or personal prognosis is admitted",
+      "modelPositionVerdict": "model-language-only; calibrated prediction, intervention ranking and individual prognosis remain blocked",
+      "uncertaintyBoundaryVerdict": "must carry source currentness, population/setting, evidence-grade, access, endpoint and implementation-transfer limits before artifact fill",
+      "downgradeVerdict": "USRDS page supports report/chapter identity and epidemiology-routing vocabulary pending fuller extraction",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this reviewed task",
+      "reviewerVerdict": "bounded-support",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "reviewerNote": "USRDS page supports report/chapter identity and epidemiology-routing vocabulary pending fuller extraction"
+    },
+    {
+      "taskId": "C2LTB1-EXT-007",
+      "domainId": "anaphylaxis-allergic-emergency-continuity",
+      "reviewedSourceTitle": "World Allergy Organization Anaphylaxis Guidance",
+      "reviewedSourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7607509/",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "freshReviewEvidence": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33204386/",
+          "evidenceType": "bibliographic-primary-index",
+          "finding": "PubMed indexes World Allergy Organization Anaphylaxis Guidance 2020 and identifies anaphylaxis as the severe clinical presentation of acute systemic allergic reactions."
+        },
+        {
+          "url": "https://www.worldallergyorganizationjournal.org/article/S1939-4551(20)30375-6/fulltext",
+          "evidenceType": "journal-fulltext-page",
+          "finding": "The WAO journal fulltext page presents the updated position document and management context for anaphylaxis."
+        }
+      ],
+      "registeredSourceRole": "anaphylaxis-definition-epinephrine-and-emergency-route-anchor",
+      "registeredExactClaimUse": "Supports anaphylaxis as an acute continuity-risk domain where rapid recognition, epinephrine access, airway/circulation risk and emergency transfer define the route variables.",
+      "registeredTransferBoundary": "Transfer only to emergency route, endpoint and downgrade vocabulary. Do not use to advise an individual whether or how to administer medication.",
+      "sourceIdentityVerdict": "verified-primary-or-authoritative-source",
+      "sourceContextVerdict": "supports-registered-source-role-with-boundary",
+      "exactClaimUseVerdict": "supports exact claim use as vocabulary or route context only; no calibrated effect size or individual recommendation is admitted",
+      "domainTransferVerdict": "bounded transfer to endpoint, variable and care-pathway vocabulary; no intervention benefit, clinical decision or personal prognosis is admitted",
+      "modelPositionVerdict": "model-language-only; calibrated prediction, intervention ranking and individual prognosis remain blocked",
+      "uncertaintyBoundaryVerdict": "must carry source currentness, population/setting, evidence-grade, access, endpoint and implementation-transfer limits before artifact fill",
+      "downgradeVerdict": "independent source check supports bounded vocabulary use only",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this reviewed task",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "reviewerNote": "independent source check supports bounded vocabulary use only"
+    },
+    {
+      "taskId": "C2LTB1-EXT-008",
+      "domainId": "anaphylaxis-allergic-emergency-continuity",
+      "reviewedSourceTitle": "NIAID Anaphylaxis information",
+      "reviewedSourceUrl": "https://www.niaid.nih.gov/diseases-conditions/anaphylaxis",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "freshReviewEvidence": [
+        {
+          "url": "https://www.niaid.nih.gov/diseases-conditions/anaphylaxis",
+          "evidenceType": "registered-url-access-attempt",
+          "finding": "The registered NIAID anaphylaxis URL could not be independently resolved by the browser tool in this review pass."
+        },
+        {
+          "url": "https://www.niaid.nih.gov/diseases-conditions/food-allergy",
+          "evidenceType": "adjacent-authoritative-source",
+          "finding": "NIAID food-allergy material discusses severe life-threatening allergic reactions including anaphylaxis, but this is adjacent context rather than confirmation of the registered anaphylaxis page."
+        }
+      ],
+      "registeredSourceRole": "anaphylaxis-public-explainer-and-access-context-anchor",
+      "registeredExactClaimUse": "Supports public-facing anaphylaxis context: severe allergic reactions are urgent events requiring recognition, treatment access and follow-up planning.",
+      "registeredTransferBoundary": "Transfer only as communication and access-context support. Do not use as clinical instruction, individual risk estimate or medication recommendation.",
+      "sourceIdentityVerdict": "registered-source-not-independently-resolved-in-this-pass",
+      "sourceContextVerdict": "insufficient-context-for-source-role",
+      "exactClaimUseVerdict": "exact claim use remains blocked until registered source identity is resolved",
+      "domainTransferVerdict": "domain transfer remains blocked pending fresh source resolution",
+      "modelPositionVerdict": "model-language-only; calibrated prediction, intervention ranking and individual prognosis remain blocked",
+      "uncertaintyBoundaryVerdict": "must carry source currentness, population/setting, evidence-grade, access, endpoint and implementation-transfer limits before artifact fill",
+      "downgradeVerdict": "registered NIAID anaphylaxis page could not be independently resolved; adjacent NIAID allergy material is not enough for artifact fill",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this reviewed task",
+      "reviewerVerdict": "cannot-evaluate-insufficient-context",
+      "artifactPromotionDecision": "blocked-cannot-evaluate",
+      "reviewerNote": "registered NIAID anaphylaxis page could not be independently resolved; adjacent NIAID allergy material is not enough for artifact fill"
+    },
+    {
+      "taskId": "C2LTB1-EXT-009",
+      "domainId": "chronic-kidney-disease-screening-progression-continuity",
+      "reviewedSourceTitle": "KDIGO 2024 Clinical Practice Guideline for CKD Evaluation and Management",
+      "reviewedSourceUrl": "https://kdigo.org/guidelines/ckd-evaluation-and-management/",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "freshReviewEvidence": [
+        {
+          "url": "https://kdigo.org/guidelines/ckd-evaluation-and-management/",
+          "evidenceType": "guideline-hub",
+          "finding": "KDIGO hosts the CKD Evaluation and Management guideline hub for CKD screening, evaluation and management vocabulary."
+        }
+      ],
+      "registeredSourceRole": "ckd-evaluation-staging-progression-and-management-route-anchor",
+      "registeredExactClaimUse": "Supports CKD as a chronic state-transition domain where eGFR, albuminuria, progression risk, cardiovascular risk and kidney-failure transition define core model variables.",
+      "registeredTransferBoundary": "Transfer only to CKD state, staging, progression and endpoint vocabulary. Do not use as an individual kidney-risk calculator or treatment recommendation.",
+      "sourceIdentityVerdict": "verified-primary-or-authoritative-source",
+      "sourceContextVerdict": "supports-registered-source-role-with-boundary",
+      "exactClaimUseVerdict": "supports exact claim use as vocabulary or route context only; no calibrated effect size or individual recommendation is admitted",
+      "domainTransferVerdict": "bounded transfer to endpoint, variable and care-pathway vocabulary; no intervention benefit, clinical decision or personal prognosis is admitted",
+      "modelPositionVerdict": "model-language-only; calibrated prediction, intervention ranking and individual prognosis remain blocked",
+      "uncertaintyBoundaryVerdict": "must carry source currentness, population/setting, evidence-grade, access, endpoint and implementation-transfer limits before artifact fill",
+      "downgradeVerdict": "independent source check supports bounded vocabulary use only",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this reviewed task",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "reviewerNote": "independent source check supports bounded vocabulary use only"
+    },
+    {
+      "taskId": "C2LTB1-EXT-010",
+      "domainId": "chronic-kidney-disease-screening-progression-continuity",
+      "reviewedSourceTitle": "CDC Chronic Kidney Disease surveillance and facts",
+      "reviewedSourceUrl": "https://www.cdc.gov/kidney-disease/php/data-research/index.html",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "freshReviewEvidence": [
+        {
+          "url": "https://www.cdc.gov/kidney-disease/php/data-research/index.html",
+          "evidenceType": "public-health-data-page",
+          "finding": "CDC chronic kidney disease data page provides public-health facts and surveillance framing for CKD burden and risk communication."
+        }
+      ],
+      "registeredSourceRole": "ckd-burden-surveillance-and-screening-context-anchor",
+      "registeredExactClaimUse": "Supports CKD as a high-burden public-health and screening domain, useful for denominator, awareness, prevalence and risk-factor context.",
+      "registeredTransferBoundary": "Transfer only to burden, screening-context and observation-process vocabulary. Do not infer treatment benefit, individual risk or causal effect.",
+      "sourceIdentityVerdict": "verified-primary-or-authoritative-source",
+      "sourceContextVerdict": "supports-registered-source-role-with-boundary",
+      "exactClaimUseVerdict": "supports exact claim use as vocabulary or route context only; no calibrated effect size or individual recommendation is admitted",
+      "domainTransferVerdict": "bounded transfer to endpoint, variable and care-pathway vocabulary; no intervention benefit, clinical decision or personal prognosis is admitted",
+      "modelPositionVerdict": "model-language-only; calibrated prediction, intervention ranking and individual prognosis remain blocked",
+      "uncertaintyBoundaryVerdict": "must carry source currentness, population/setting, evidence-grade, access, endpoint and implementation-transfer limits before artifact fill",
+      "downgradeVerdict": "independent source check supports bounded vocabulary use only",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this reviewed task",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "reviewerNote": "independent source check supports bounded vocabulary use only"
+    },
+    {
+      "taskId": "C2LTB1-EXT-011",
+      "domainId": "prediabetes-diabetes-prevention-continuity",
+      "reviewedSourceTitle": "Diabetes Prevention Program Outcomes Study",
+      "reviewedSourceUrl": "https://www.niddk.nih.gov/about-niddk/research-areas/diabetes/diabetes-prevention-program-dpp",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "freshReviewEvidence": [
+        {
+          "url": "https://www.niddk.nih.gov/about-niddk/research-areas/diabetes/diabetes-prevention-program-dpp",
+          "evidenceType": "research-program-page",
+          "finding": "NIDDK describes the Diabetes Prevention Program and Outcomes Study as research on preventing type 2 diabetes and longer-term follow-up."
+        }
+      ],
+      "registeredSourceRole": "prediabetes-to-diabetes-transition-intervention-evidence-anchor",
+      "registeredExactClaimUse": "Supports diabetes prevention as a transition-domain candidate where lifestyle and medication interventions can be studied against diabetes incidence and longer follow-up outcomes.",
+      "registeredTransferBoundary": "Transfer only as a candidate transition and intervention-evidence anchor after exact trial endpoints are extracted. Do not use for personal prevention advice or individual risk prediction.",
+      "sourceIdentityVerdict": "verified-primary-or-authoritative-source",
+      "sourceContextVerdict": "supports-registered-source-role-with-boundary",
+      "exactClaimUseVerdict": "supports exact claim use as vocabulary or route context only; no calibrated effect size or individual recommendation is admitted",
+      "domainTransferVerdict": "bounded transfer to endpoint, variable and care-pathway vocabulary; no intervention benefit, clinical decision or personal prognosis is admitted",
+      "modelPositionVerdict": "model-language-only; calibrated prediction, intervention ranking and individual prognosis remain blocked",
+      "uncertaintyBoundaryVerdict": "must carry source currentness, population/setting, evidence-grade, access, endpoint and implementation-transfer limits before artifact fill",
+      "downgradeVerdict": "independent source check supports bounded vocabulary use only",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this reviewed task",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "reviewerNote": "independent source check supports bounded vocabulary use only"
+    },
+    {
+      "taskId": "C2LTB1-EXT-012",
+      "domainId": "prediabetes-diabetes-prevention-continuity",
+      "reviewedSourceTitle": "CDC National Diabetes Statistics Report",
+      "reviewedSourceUrl": "https://www.cdc.gov/diabetes/php/data-research/index.html",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "freshReviewEvidence": [
+        {
+          "url": "https://www.cdc.gov/diabetes/php/data-research/index.html",
+          "evidenceType": "public-health-data-page",
+          "finding": "CDC National Diabetes Statistics Report page provides diabetes prevalence and burden data framing for population-level diabetes risk context."
+        }
+      ],
+      "registeredSourceRole": "diabetes-burden-surveillance-and-endpoint-context-anchor",
+      "registeredExactClaimUse": "Supports diabetes and prediabetes as high-burden transition domains with public-health surveillance context for prevalence, diagnosis status, complications and risk-factor framing.",
+      "registeredTransferBoundary": "Transfer only to population burden, endpoint vocabulary and observation-process context. Do not infer causal effects of prevention programs or personal diabetes risk.",
+      "sourceIdentityVerdict": "verified-primary-or-authoritative-source",
+      "sourceContextVerdict": "supports-registered-source-role-with-boundary",
+      "exactClaimUseVerdict": "supports exact claim use as vocabulary or route context only; no calibrated effect size or individual recommendation is admitted",
+      "domainTransferVerdict": "bounded transfer to endpoint, variable and care-pathway vocabulary; no intervention benefit, clinical decision or personal prognosis is admitted",
+      "modelPositionVerdict": "model-language-only; calibrated prediction, intervention ranking and individual prognosis remain blocked",
+      "uncertaintyBoundaryVerdict": "must carry source currentness, population/setting, evidence-grade, access, endpoint and implementation-transfer limits before artifact fill",
+      "downgradeVerdict": "independent source check supports bounded vocabulary use only",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this reviewed task",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "reviewerNote": "independent source check supports bounded vocabulary use only"
+    }
+  ],
+  "taskCoverage": [
+    {
+      "taskId": "C2LTB1-EXT-001",
+      "domainId": "acute-coronary-syndrome-reperfusion-continuity",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-reviewed-artifacts-and-model-gates"
+    },
+    {
+      "taskId": "C2LTB1-EXT-002",
+      "domainId": "acute-coronary-syndrome-reperfusion-continuity",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-reviewed-artifacts-and-model-gates"
+    },
+    {
+      "taskId": "C2LTB1-EXT-003",
+      "domainId": "sepsis-shock-early-recognition-resuscitation-continuity",
+      "reviewerVerdict": "downgrade-required",
+      "artifactPromotionDecision": "downgrade-before-fill",
+      "modelAdmissionDecision": "blocked-pending-reviewed-artifacts-and-model-gates"
+    },
+    {
+      "taskId": "C2LTB1-EXT-004",
+      "domainId": "sepsis-shock-early-recognition-resuscitation-continuity",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-reviewed-artifacts-and-model-gates"
+    },
+    {
+      "taskId": "C2LTB1-EXT-005",
+      "domainId": "acute-kidney-injury-renal-replacement-continuity",
+      "reviewerVerdict": "bounded-support",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-reviewed-artifacts-and-model-gates"
+    },
+    {
+      "taskId": "C2LTB1-EXT-006",
+      "domainId": "acute-kidney-injury-renal-replacement-continuity",
+      "reviewerVerdict": "bounded-support",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-reviewed-artifacts-and-model-gates"
+    },
+    {
+      "taskId": "C2LTB1-EXT-007",
+      "domainId": "anaphylaxis-allergic-emergency-continuity",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-reviewed-artifacts-and-model-gates"
+    },
+    {
+      "taskId": "C2LTB1-EXT-008",
+      "domainId": "anaphylaxis-allergic-emergency-continuity",
+      "reviewerVerdict": "cannot-evaluate-insufficient-context",
+      "artifactPromotionDecision": "blocked-cannot-evaluate",
+      "modelAdmissionDecision": "blocked-pending-reviewed-artifacts-and-model-gates"
+    },
+    {
+      "taskId": "C2LTB1-EXT-009",
+      "domainId": "chronic-kidney-disease-screening-progression-continuity",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-reviewed-artifacts-and-model-gates"
+    },
+    {
+      "taskId": "C2LTB1-EXT-010",
+      "domainId": "chronic-kidney-disease-screening-progression-continuity",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-reviewed-artifacts-and-model-gates"
+    },
+    {
+      "taskId": "C2LTB1-EXT-011",
+      "domainId": "prediabetes-diabetes-prevention-continuity",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-reviewed-artifacts-and-model-gates"
+    },
+    {
+      "taskId": "C2LTB1-EXT-012",
+      "domainId": "prediabetes-diabetes-prevention-continuity",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-reviewed-artifacts-and-model-gates"
+    }
+  ],
+  "remainingFreshReviewBatches": [
+    "C2LTB1-FRB-02-metabolic-fitness-neuro-motor",
+    "C2LTB1-FRB-03-oncology-infectious-immunization",
+    "C2LTB1-FRB-04-liver-newborn-reproductive-pain-barrier-safety"
+  ],
+  "indexRequirements": [
+    "README.md",
+    "docs/reference/README.md",
+    "docs/reference/human-infra-maturity-roadmap.md",
+    "tools/README.md"
+  ],
+  "batchSummaries": [
+    {
+      "batchId": "C2LTB1-FRB-01-acute-and-chronic-transition",
+      "taskCount": 12,
+      "domainIds": [
+        "acute-coronary-syndrome-reperfusion-continuity",
+        "sepsis-shock-early-recognition-resuscitation-continuity",
+        "acute-kidney-injury-renal-replacement-continuity",
+        "anaphylaxis-allergic-emergency-continuity",
+        "chronic-kidney-disease-screening-progression-continuity",
+        "prediabetes-diabetes-prevention-continuity"
+      ],
+      "reviewerVerdictCounts": {
+        "support-with-boundary": 8,
+        "downgrade-required": 1,
+        "bounded-support": 2,
+        "cannot-evaluate-insufficient-context": 1
+      },
+      "artifactPromotionDecisionCounts": {
+        "eligible-for-bounded-artifact-fill": 10,
+        "downgrade-before-fill": 1,
+        "blocked-cannot-evaluate": 1
+      },
+      "modelAdmissionDecision": "blocked-pending-reviewed-artifacts-and-model-gates"
+    }
+  ]
+}
