@@ -1,0 +1,361 @@
+{
+  "schemaVersion": "human-infra.source-context-local-review-register.v1",
+  "registerId": "human-infra-source-context-local-review-register-2026-07-02",
+  "status": "partial-local-review-method-anchors-complete-independent-fresh-review-required",
+  "purpose": "Record local source-context review for high-leverage method anchors before promoting completed domain-source field rows into reusable cards. This is not an external independent fresh-review verdict.",
+  "sourceOfTruth": {
+    "domainSourceCardPromotionQueue": "docs/reference/human-infra-domain-source-card-promotion-queue.json",
+    "domainSourceSpecificExtractionRegister": "docs/reference/human-infra-domain-source-specific-extraction-register.json",
+    "sourceCardSystem": "docs/reference/source-card-system.md",
+    "maturityGapRegister": "docs/reference/human-infra-maturity-gap-register.json"
+  },
+  "scope": {
+    "reviewLevel": "source-anchor-local-context-review",
+    "reviewedSourceAnchorCount": 4,
+    "affectedPromotionTaskCount": 25,
+    "affectedDomainCount": 16,
+    "reviewedSourceAnchors": [
+      "SA-COX-1972",
+      "SA-KAPLAN-MEIER-1958",
+      "SA-TARGET-TRIAL-2022",
+      "SA-TRIPOD-AI-2024"
+    ],
+    "selectionRule": "Review the four method anchors first because they govern survival curves, hazards, causal intervention framing and prediction-model reporting across multiple promotion tasks.",
+    "currentLimitations": [
+      "This is a local source-context review, not an external independent fresh reviewer verdict.",
+      "Reviewed method anchors support method vocabulary only; they do not validate domain data, model calibration, intervention effects or individual recommendations.",
+      "Rows remain blocked from model admission until reviewed cards, downgrade checks and later model gates pass.",
+      "Biological, value, cognitive, preservation, future-waiting and governance anchors still need later local and independent review."
+    ]
+  },
+  "requiredPerReviewFields": [
+    "sourceCardId",
+    "reviewedSourceTitle",
+    "reviewedSourceAuthors",
+    "reviewedSourceYear",
+    "sourceType",
+    "reviewDate",
+    "reviewMode",
+    "sourceContextVerdict",
+    "reviewEvidence",
+    "supports",
+    "doesNotSupport",
+    "reviewerBoundary",
+    "affectedPromotionTaskCount",
+    "affectedPromotionTaskIds",
+    "affectedDomainIds",
+    "affectedFieldCardIds",
+    "promotionDecision",
+    "modelAdmissionDecision",
+    "requiredNextArtifacts",
+    "blockedUses"
+  ],
+  "localReviews": [
+    {
+      "reviewedSourceTitle": "Regression Models and Life-Tables",
+      "reviewedSourceAuthors": "D. R. Cox",
+      "reviewedSourceYear": "1972",
+      "sourceType": "method-paper",
+      "sourceContextVerdict": "local-review-pass-with-boundaries-requires-independent-fresh-review",
+      "reviewEvidence": [
+        {
+          "url": "https://doi.org/10.1111/j.2517-6161.1972.tb00899.x",
+          "evidenceType": "publisher-doi-page",
+          "finding": "The publisher page identifies the paper as Journal of the Royal Statistical Society Series B, volume 34 issue 2, pages 187-202, and summarizes censored failure-time analysis where the hazard function is modeled as explanatory variables and coefficients multiplied by an arbitrary time function."
+        },
+        {
+          "url": "https://hero.epa.gov/reference/8785/",
+          "evidenceType": "metadata-and-abstract",
+          "finding": "EPA HERO metadata records the 1972 journal article, page range 187-220, peer review status, and an abstract matching censored failure-time, explanatory-variable and hazard-function language."
+        }
+      ],
+      "supports": [
+        "Hazard-function vocabulary, covariate-risk framing and censored failure-time regression position.",
+        "Boundary between risk modeling and causal intervention claims."
+      ],
+      "doesNotSupport": [
+        "Causal effect claims without a target-trial or other causal design.",
+        "External calibration, individual prediction validity, intervention ranking, or personal survival estimates."
+      ],
+      "reviewerBoundary": "Transfer only as hazard/covariate risk-function vocabulary. Requires assumption checks, validation, calibration and causal design before model or intervention use.",
+      "sourceCardId": "SA-COX-1972",
+      "reviewDate": "2026-07-02",
+      "reviewMode": "local-source-context-review-from-primary-or-registry-sources",
+      "affectedPromotionTaskCount": 5,
+      "affectedPromotionTaskIds": [
+        "PROM-003-HIDOM-FLD002-SA-COX-1972",
+        "PROM-015-HIDOM-FLD020-SA-COX-1972",
+        "PROM-019-HIDOM-FLD023-SA-COX-1972",
+        "PROM-021-HIDOM-FLD024-SA-COX-1972",
+        "PROM-023-HIDOM-FLD025-SA-COX-1972"
+      ],
+      "affectedDomainIds": [
+        "blood-oxygen-hemostasis",
+        "cardiovascular-resilience",
+        "longevity-evidence",
+        "renal-hepatic-clearance",
+        "respiratory-oxygenation"
+      ],
+      "affectedFieldCardIds": [
+        "HIDOM-FLD002",
+        "HIDOM-FLD020",
+        "HIDOM-FLD023",
+        "HIDOM-FLD024",
+        "HIDOM-FLD025"
+      ],
+      "promotionDecision": "eligible-for-card-drafting-only-after-independent-review",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-independent-review-and-model-gates",
+      "requiredNextArtifacts": [
+        "reviewed-source-card",
+        "variable-card",
+        "endpoint-card",
+        "uncertainty-card",
+        "transfer-boundary-card",
+        "downgrade-check-row"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "domain-claim-upgrade",
+        "clinical-validity-claim"
+      ]
+    },
+    {
+      "reviewedSourceTitle": "Nonparametric estimation from incomplete observations",
+      "reviewedSourceAuthors": "Edward L. Kaplan; Paul Meier",
+      "reviewedSourceYear": "1958",
+      "sourceType": "method-paper",
+      "sourceContextVerdict": "local-review-pass-with-boundaries-requires-independent-fresh-review",
+      "reviewEvidence": [
+        {
+          "url": "https://hero.epa.gov/reference/75292/",
+          "evidenceType": "metadata-and-abstract",
+          "finding": "HERO metadata identifies the source as a 1958 Journal of the American Statistical Association journal article by Kaplan and Meier, volume 53 issue 282, pages 457-481. The abstract describes incomplete observations, loss/censoring-like events, independence assumptions that require scrutiny, and nonparametric estimation of P(t)."
+        },
+        {
+          "url": "https://web.stanford.edu/~lutian/coursepdf/KMpaper.pdf",
+          "evidenceType": "public-course-pdf",
+          "finding": "The paper defines the survival function P(t) and product-limit estimate, and discusses losses, observation limits, and dependence between lifetimes and loss times."
+        }
+      ],
+      "supports": [
+        "Aggregate survival-function and event-time accounting when time origin, event definition and censoring/loss rules are explicit.",
+        "Use as method vocabulary for survival curves and incomplete observations."
+      ],
+      "doesNotSupport": [
+        "Individual prognosis or death-date output.",
+        "Intervention effect, causality, route feasibility, calibrated model validation, or personal recommendation."
+      ],
+      "reviewerBoundary": "Transfer only as survival curve, product-limit and incomplete-observation vocabulary. Requires separate cohort, endpoint, censoring and validation cards before any quantitative model use.",
+      "sourceCardId": "SA-KAPLAN-MEIER-1958",
+      "reviewDate": "2026-07-02",
+      "reviewMode": "local-source-context-review-from-primary-or-registry-sources",
+      "affectedPromotionTaskCount": 3,
+      "affectedPromotionTaskIds": [
+        "PROM-001-HIDOM-FLD001-SA-KAPLAN-MEIER-1958",
+        "PROM-002-HIDOM-FLD002-SA-KAPLAN-MEIER-1958",
+        "PROM-014-HIDOM-FLD020-SA-KAPLAN-MEIER-1958"
+      ],
+      "affectedDomainIds": [
+        "cardiovascular-resilience",
+        "future-waiting",
+        "longevity-evidence"
+      ],
+      "affectedFieldCardIds": [
+        "HIDOM-FLD001",
+        "HIDOM-FLD002",
+        "HIDOM-FLD020"
+      ],
+      "promotionDecision": "eligible-for-card-drafting-only-after-independent-review",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-independent-review-and-model-gates",
+      "requiredNextArtifacts": [
+        "reviewed-source-card",
+        "variable-card",
+        "endpoint-card",
+        "uncertainty-card",
+        "transfer-boundary-card",
+        "downgrade-check-row"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "domain-claim-upgrade",
+        "clinical-validity-claim"
+      ]
+    },
+    {
+      "reviewedSourceTitle": "Target Trial Emulation: A Framework for Causal Inference From Observational Data",
+      "reviewedSourceAuthors": "Miguel A. Hernán; Wei Wang; David E. Leaf",
+      "reviewedSourceYear": "2022",
+      "sourceType": "method-paper",
+      "sourceContextVerdict": "local-review-pass-with-boundaries-requires-independent-fresh-review",
+      "reviewEvidence": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/36508210/",
+          "evidenceType": "pubmed-record",
+          "finding": "PubMed identifies the JAMA 2022 article, DOI 10.1001/jama.2022.21383, and summarizes target trial emulation as designing an observational study to preserve advantages of a randomized clinical trial while pointing out method limitations."
+        }
+      ],
+      "supports": [
+        "Causal-design checklist for intervention questions: time zero, eligibility, treatment strategies, assignment, follow-up, outcome and estimand logic.",
+        "Downgrading observational associations that lack target-trial-compatible design."
+      ],
+      "doesNotSupport": [
+        "Making weak observational data causal by naming a target trial.",
+        "Eliminating unmeasured confounding, guaranteeing transportability, or generating individual recommendations."
+      ],
+      "reviewerBoundary": "Transfer only as causal-design and emulation protocol vocabulary. Any effect claim still needs data, assumptions, sensitivity checks and bias assessment.",
+      "sourceCardId": "SA-TARGET-TRIAL-2022",
+      "reviewDate": "2026-07-02",
+      "reviewMode": "local-source-context-review-from-primary-or-registry-sources",
+      "affectedPromotionTaskCount": 15,
+      "affectedPromotionTaskIds": [
+        "PROM-004-HIDOM-FLD002-SA-TARGET-TRIAL-2022",
+        "PROM-006-HIDOM-FLD008-SA-TARGET-TRIAL-2022",
+        "PROM-007-HIDOM-FLD009-SA-TARGET-TRIAL-2022",
+        "PROM-008-HIDOM-FLD010-SA-TARGET-TRIAL-2022",
+        "PROM-009-HIDOM-FLD014-SA-TARGET-TRIAL-2022",
+        "PROM-011-HIDOM-FLD015-SA-TARGET-TRIAL-2022",
+        "PROM-012-HIDOM-FLD017-SA-TARGET-TRIAL-2022",
+        "PROM-013-HIDOM-FLD019-SA-TARGET-TRIAL-2022",
+        "PROM-016-HIDOM-FLD020-SA-TARGET-TRIAL-2022",
+        "PROM-017-HIDOM-FLD021-SA-TARGET-TRIAL-2022",
+        "PROM-018-HIDOM-FLD022-SA-TARGET-TRIAL-2022",
+        "PROM-020-HIDOM-FLD023-SA-TARGET-TRIAL-2022",
+        "PROM-022-HIDOM-FLD024-SA-TARGET-TRIAL-2022",
+        "PROM-024-HIDOM-FLD025-SA-TARGET-TRIAL-2022",
+        "PROM-025-HIDOM-FLD026-SA-TARGET-TRIAL-2022"
+      ],
+      "affectedDomainIds": [
+        "biological-age-clocks-biomarker-validation",
+        "blood-oxygen-hemostasis",
+        "cancer-screening-early-detection-continuity",
+        "cardiovascular-resilience",
+        "endocrine-hormonal-regulation",
+        "extracellular-matrix-glycation",
+        "immune-maintenance",
+        "longevity-evidence",
+        "microbiome-ecology",
+        "musculoskeletal-integrity",
+        "nutrition-metabolic-health",
+        "proteostasis-autophagy",
+        "regenerative-medicine",
+        "renal-hepatic-clearance",
+        "respiratory-oxygenation"
+      ],
+      "affectedFieldCardIds": [
+        "HIDOM-FLD002",
+        "HIDOM-FLD008",
+        "HIDOM-FLD009",
+        "HIDOM-FLD010",
+        "HIDOM-FLD014",
+        "HIDOM-FLD015",
+        "HIDOM-FLD017",
+        "HIDOM-FLD019",
+        "HIDOM-FLD020",
+        "HIDOM-FLD021",
+        "HIDOM-FLD022",
+        "HIDOM-FLD023",
+        "HIDOM-FLD024",
+        "HIDOM-FLD025",
+        "HIDOM-FLD026"
+      ],
+      "promotionDecision": "eligible-for-card-drafting-only-after-independent-review",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-independent-review-and-model-gates",
+      "requiredNextArtifacts": [
+        "reviewed-source-card",
+        "variable-card",
+        "endpoint-card",
+        "uncertainty-card",
+        "transfer-boundary-card",
+        "downgrade-check-row"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "domain-claim-upgrade",
+        "clinical-validity-claim"
+      ]
+    },
+    {
+      "reviewedSourceTitle": "TRIPOD+AI statement: updated guidance for reporting clinical prediction models that use regression or machine learning methods",
+      "reviewedSourceAuthors": "Gary S. Collins et al.",
+      "reviewedSourceYear": "2024",
+      "sourceType": "reporting-guideline",
+      "sourceContextVerdict": "local-review-pass-with-boundaries-requires-independent-fresh-review",
+      "reviewEvidence": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38626948/",
+          "evidenceType": "pubmed-record",
+          "finding": "PubMed identifies the BMJ 2024 TRIPOD+AI article, PMID 38626948, DOI 10.1136/bmj-2023-078378, and states the guideline aims at complete, accurate and transparent reporting of prediction-model studies."
+        },
+        {
+          "url": "https://www.equator-network.org/reporting-guidelines/tripod-statement/",
+          "evidenceType": "reporting-guideline-registry",
+          "finding": "EQUATOR lists TRIPOD+AI as guidance for reporting studies that develop a prediction model or evaluate performance and links checklist materials."
+        }
+      ],
+      "supports": [
+        "Reporting and transparency requirements for prediction-model development and evaluation, including AI and regression models.",
+        "Blocking claims that a toy or draft model is clinically valid without transparent predictors, outcomes, validation, calibration and performance reporting."
+      ],
+      "doesNotSupport": [
+        "Clinical validity, calibration, fitness for deployment, individual advice, or proof that a model works.",
+        "Replacing model validation, bias assessment, data provenance or external evaluation."
+      ],
+      "reviewerBoundary": "Transfer only as prediction-model reporting and appraisal vocabulary. It is a reporting guideline, not validation evidence for Human Infra models.",
+      "sourceCardId": "SA-TRIPOD-AI-2024",
+      "reviewDate": "2026-07-02",
+      "reviewMode": "local-source-context-review-from-primary-or-registry-sources",
+      "affectedPromotionTaskCount": 2,
+      "affectedPromotionTaskIds": [
+        "PROM-005-HIDOM-FLD002-SA-TRIPOD-AI-2024",
+        "PROM-010-HIDOM-FLD014-SA-TRIPOD-AI-2024"
+      ],
+      "affectedDomainIds": [
+        "biological-age-clocks-biomarker-validation",
+        "longevity-evidence"
+      ],
+      "affectedFieldCardIds": [
+        "HIDOM-FLD002",
+        "HIDOM-FLD014"
+      ],
+      "promotionDecision": "eligible-for-card-drafting-only-after-independent-review",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-independent-review-and-model-gates",
+      "requiredNextArtifacts": [
+        "reviewed-source-card",
+        "variable-card",
+        "endpoint-card",
+        "uncertainty-card",
+        "transfer-boundary-card",
+        "downgrade-check-row"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "domain-claim-upgrade",
+        "clinical-validity-claim"
+      ]
+    }
+  ],
+  "nonClaims": [
+    "This register does not claim external independent fresh review has been completed.",
+    "This register does not authorize calibrated prediction, clinical validity, intervention ranking, individual advice or individual death-date output.",
+    "This register does not prove the reviewed sources support any Human Infra domain intervention effects.",
+    "This register does not replace full reviewed Source Cards, variable cards, endpoint cards, uncertainty cards, transfer-boundary cards or downgrade-check rows."
+  ],
+  "indexRequirements": [
+    "README.md",
+    "docs/reference/README.md",
+    "docs/reference/human-infra-maturity-roadmap.md",
+    "tools/README.md"
+  ]
+}

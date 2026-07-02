@@ -17,6 +17,8 @@ tools/
 ├── audit_human_infra_domain_source_card_field_extraction.py # 域 Source Card 字段抽取审计器
 ├── audit_human_infra_domain_source_specific_extraction_queue.py # 域-来源深读队列审计器
 ├── audit_human_infra_domain_source_specific_extraction_register.py # 域-来源精读完成寄存器审计器
+├── audit_human_infra_domain_source_card_promotion_queue.py # 域-来源卡片晋升队列审计器
+├── audit_human_infra_source_context_local_review_register.py # 来源语境本地复核账本审计器
 ├── audit_human_infra_falsifier_source_card_backfill.py # 反证 Source Card 锚点回填审计器
 ├── audit_human_infra_falsifier_source_card_extraction.py # 反证 Source Card 字段级抽取审计器
 ├── arxiv_html_paper_tool.py          # arXiv HTML papers 复用 CLI
@@ -51,6 +53,7 @@ tools/
 - `audit_human_infra_domain_source_specific_extraction_queue.py` 只检查当前 26 个域字段行是否派生为 81 个 domain-source 深读任务，并确认模型准入仍被 exact claim、endpoint、population、uncertainty 和 transfer-boundary 精读阻塞；它不证明任何来源已经支持对应域主张。
 - `audit_human_infra_domain_source_specific_extraction_register.py` 只检查当前 81/81 个 domain-source 精读完成行是否来自队列、字段匹配、阻塞用途完整、索引到位；它不证明外部文献已完成 fresh review，也不打开校准预测、个体建议或干预排序。
 - `audit_human_infra_domain_source_card_promotion_queue.py` 只检查当前 81 个 completed field rows 是否一一派生为 fresh review、Source Card、变量卡、endpoint 卡、uncertainty 卡、transfer-boundary 卡和 downgrade check 晋升任务；它不证明任何晋升任务已经完成，也不打开模型准入。
+- `audit_human_infra_source_context_local_review_register.py` 只检查当前 4 个本地复核方法锚点是否反查到 promotion queue、来源证据、受影响任务、阻塞用途和入口索引；它不证明独立 fresh review 已完成，也不允许个体预测、干预排序或临床有效性声明。
 - `audit_human_infra_falsifier_source_card_backfill.py` 只检查当前论文强主张和 C1/C2 优先域反证是否具备 Source Card 锚点、证据角色、可用范围和外推边界；它不证明外部文献正确，也不等于完成逐篇 Source Card 精读。
 - `audit_human_infra_falsifier_source_card_extraction.py` 只检查当前 21 个来源锚点是否全部完成字段级 Source Card 抽取，并绑定来源身份、域、论文 claim、模型位置、边界和人工可读包；它不证明外部文献正确，也不等于完成域级 Claim-Evidence Matrix。
 - `update_domain_doc_contracts.py` 只根据 `domains/_possibility-space-control/classification.tsv` 为正式研究域 README/AGENTS 生成标准元信息、研究推进骨架、维护契约和代理执行流程块。

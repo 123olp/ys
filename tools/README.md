@@ -15,6 +15,7 @@
 - `audit_human_infra_domain_source_specific_extraction_queue.py`: verifies that the 26 domain field rows derive into 81 domain-source reading tasks over 20 source anchors from `docs/reference/human-infra-domain-source-specific-extraction-queue.json`, while keeping calibrated modeling blocked until exact claim, endpoint, population, uncertainty and transfer-boundary fields are extracted.
 - `audit_human_infra_domain_source_specific_extraction_register.py`: verifies the completed 81/81 domain-source extraction rows from `docs/reference/human-infra-domain-source-specific-extraction-register.json`, including source-role decisions, endpoint binding, blocked uses and index links.
 - `audit_human_infra_domain_source_card_promotion_queue.py`: verifies that the 81 completed domain-source field rows derive into fresh-review, Source Card, variable-card, endpoint-card, uncertainty-card, transfer-boundary-card and downgrade-check promotion tasks from `docs/reference/human-infra-domain-source-card-promotion-queue.json`, while keeping model admission blocked.
+- `audit_human_infra_source_context_local_review_register.py`: verifies that the first four locally reviewed method anchors match the promotion queue, source evidence, affected tasks, blocked uses and index links from `docs/reference/human-infra-source-context-local-review-register.json`.
 - `audit_human_infra_falsifier_source_card_backfill.py`: verifies that current paper strong claims and C1/C2 priority-domain falsifier rows have Source Card anchor backfill, evidence roles, supported-use boundaries and transfer boundaries from `docs/reference/human-infra-falsifier-source-card-backfill.json`.
 - `audit_human_infra_falsifier_source_card_extraction.py`: verifies that all current source anchors from `docs/reference/human-infra-falsifier-source-card-extraction.json` map to exact source identity, Human Infra domains, paper claims, model positions, transfer boundaries and the human-readable source-note pack.
 - `check_repository.py`: verifies required files, required directories, temporary filename cleanup, Python cache cleanup, and local Markdown links.
@@ -47,6 +48,7 @@ python3 tools/audit_human_infra_domain_source_card_field_extraction.py
 python3 tools/audit_human_infra_domain_source_specific_extraction_queue.py
 python3 tools/audit_human_infra_domain_source_specific_extraction_register.py
 python3 tools/audit_human_infra_domain_source_card_promotion_queue.py
+python3 tools/audit_human_infra_source_context_local_review_register.py
 python3 tools/audit_human_infra_falsifier_source_card_backfill.py
 python3 tools/audit_human_infra_falsifier_source_card_extraction.py
 python3 tools/update_domain_doc_contracts.py
@@ -61,6 +63,7 @@ make domain-field-extraction-audit
 make domain-source-queue-audit
 make domain-source-extraction-audit
 make domain-source-promotion-audit
+make source-context-local-review-audit
 make falsifier-source-audit
 make falsifier-source-extraction-audit
 make check
