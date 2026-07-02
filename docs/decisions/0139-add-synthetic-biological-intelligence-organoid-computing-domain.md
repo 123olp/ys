@@ -17,6 +17,7 @@ Create `domains/c2-source-maintenance/synthetic-biological-intelligence-organoid
 - `README.md`
 - `AGENTS.md`
 - `literature-review.md`
+- `claim-evidence-matrix.md`
 
 Index the domain through root docs, `domains/`, `docs/reference/`, the Research Domain Atlas, Research Domain Radar, ethics boundaries, applications/literature, and repository structure checks.
 
@@ -43,6 +44,8 @@ living neural substrate
 ```
 
 This does not create a consciousness claim, mind-upload path, subject-transfer claim, clinical recommendation, or experimental protocol.
+
+The domain also carries a dedicated claim-evidence matrix for active-compute scale effects, network effects, CL API / CL1 platform claims, and "superhuman" narratives. Strong claims must be routed through that matrix before they can be reused in higher-level Human Infra papers, dashboards, or quantitative-model documents.
 
 ## Source Signals
 
