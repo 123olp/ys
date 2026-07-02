@@ -1,0 +1,440 @@
+{
+  "schemaVersion": "human-infra.c2ltb3-corrected-source-fresh-review-verdict-register.v1",
+  "registerId": "human-infra-c2-longtail-third-batch-corrected-source-fresh-review-verdict-register-2026-07-03",
+  "status": "active-c2ltb3-corrected-source-fresh-review-verdict-register-model-blocked",
+  "purpose": "Independently fresh-review the seven C2-LT-B3 corrected/split/route-normalized re-extraction outputs and decide which rows may enter bounded reviewed-artifact preparation while keeping model admission blocked.",
+  "sourceOfTruth": {
+    "correctedSourceReextractionRegister": "docs/reference/human-infra-c2-longtail-third-batch-corrected-source-reextraction-register.json",
+    "correctedSourceReextractionQueue": "docs/reference/human-infra-c2-longtail-third-batch-corrected-source-reextraction-queue.json",
+    "sourceResolutionRegister": "docs/reference/human-infra-c2-longtail-third-batch-source-resolution-register.json",
+    "independentFreshReviewVerdictRegister": "docs/reference/human-infra-c2-longtail-third-batch-independent-fresh-review-verdict-register.json",
+    "evidencePolicy": "docs/reference/evidence-policy.md",
+    "maturityGapRegister": "docs/reference/human-infra-maturity-gap-register.json"
+  },
+  "scope": {
+    "batchId": "C2-LT-B3",
+    "reviewLevel": "c2ltb3-corrected-source-fresh-review-v0.1",
+    "correctedExtractionRowCount": 7,
+    "reviewedCorrectedExtractionRowCount": 7,
+    "eligibleForArtifactPrepRowCount": 6,
+    "blockedOrContextOnlyRowCount": 1,
+    "directReviewedArtifactRowCount": 0,
+    "modelAdmissionOpenedRowCount": 0,
+    "nonClaims": [
+      "This verdict register does not create reviewed artifacts.",
+      "This verdict register does not open model admission.",
+      "This verdict register does not authorize calibrated prediction, individual advice or clinical validity claims.",
+      "Fresh-review access changes, including the AAO-HNS publisher route becoming accessible, only affect bounded artifact-prep eligibility and do not override model gates."
+    ]
+  },
+  "requiredReviewFields": [
+    "sourceIdentityVerdict",
+    "sourceAccessVerdict",
+    "sourceContextVerdict",
+    "currentnessVerdict",
+    "exactClaimVerdict",
+    "endpointVariableVerdict",
+    "transferBoundaryVerdict",
+    "reviewerVerdict",
+    "artifactPromotionDecision",
+    "modelAdmissionDecision",
+    "reviewEvidenceTrace"
+  ],
+  "verdictTaxonomy": [
+    "support-with-boundary",
+    "blocked-or-context-only"
+  ],
+  "artifactPromotionDecisions": [
+    "eligible-for-bounded-reviewed-artifact-prep",
+    "blocked-duplicate-split-route-no-direct-artifact-fill",
+    "blocked-route-or-manual-access-required-no-direct-artifact-fill"
+  ],
+  "blockedUses": [
+    "calibrated-prediction",
+    "individual-advice",
+    "individual-death-date-output",
+    "intervention-ranking",
+    "clinical-validity-claim",
+    "domain-claim-upgrade"
+  ],
+  "correctedSourceFreshReviews": [
+    {
+      "reviewId": "C2LTB3-CFRV-001",
+      "batchId": "C2-LT-B3",
+      "reextractionTaskId": "C2LTB3-CREXT-001",
+      "originTaskId": "C2LTB3-EXT-007",
+      "sourceResolutionId": "C2LTB3-SRR-001",
+      "domainId": "post-stroke-dysphagia-screening-recovery-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/post-stroke-dysphagia-screening-recovery-continuity",
+      "candidateId": "C2LTB3-SRR-001-CAND-01",
+      "sourceTitle": "European Stroke Organisation and European Society for Swallowing Disorders guideline for the diagnosis and treatment of post-stroke dysphagia",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/34746431/",
+      "freshReviewDate": "2026-07-03",
+      "freshReviewMode": "corrected-source-reextraction-independent-fresh-review",
+      "sourceIdentityVerdict": "supported-corrected-pubmed-guideline-identity",
+      "sourceAccessVerdict": "pubmed-abstract-accessible-independent-review",
+      "sourceContextVerdict": "sufficient-for-bounded-artifact-prep",
+      "currentnessVerdict": "2021 ESO/ESSD guideline identity is supported as a PSD guideline-context anchor; full recommendation grading and later-currentness checks remain bounded to future full-text review.",
+      "exactClaimVerdict": "bounded-claim-supported",
+      "endpointVariableVerdict": "endpoint-vocabulary-supported-with-evidence-grade-boundary",
+      "transferBoundaryVerdict": "transfer-boundary-present-and-required",
+      "reviewerVerdict": "support-with-boundary",
+      "freshReviewFinding": "Independent PubMed review confirms the corrected PSD guideline identity and abstract-level support for screening, assessment, aspiration pneumonia, malnutrition, dehydration, poor outcome and mortality pathway vocabulary. It can enter bounded artifact preparation, but not calibrated mortality or individual swallowing-treatment claims.",
+      "downgradeOrBlockReason": "No blocking defect found for bounded artifact preparation; recommendation strength, full intervention details and implementation context still require full guideline review.",
+      "artifactPromotionDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "allowedArtifactTypes": [
+        "reviewed-source-card",
+        "reviewed-variable-card",
+        "reviewed-endpoint-card",
+        "reviewed-uncertainty-card",
+        "reviewed-transfer-boundary-card",
+        "reviewed-downgrade-check"
+      ],
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34746431/",
+          "evidenceType": "pubmed-abstract-independent-fresh-review",
+          "finding": "PubMed record identifies the ESO/ESSD post-stroke dysphagia guideline and states PSD is present in more than half of acute stroke patients, with aspiration pneumonia, malnutrition, dehydration, poor outcome and mortality pathways; the abstract reports evidence-graded screening and assessment recommendations."
+        }
+      ],
+      "nextAction": "Prepare bounded PSD source, endpoint, uncertainty, transfer-boundary and downgrade artifacts; do not infer calibrated mortality reduction or individual treatment advice."
+    },
+    {
+      "reviewId": "C2LTB3-CFRV-002",
+      "batchId": "C2-LT-B3",
+      "reextractionTaskId": "C2LTB3-CREXT-002",
+      "originTaskId": "C2LTB3-EXT-010",
+      "sourceResolutionId": "C2LTB3-SRR-002",
+      "domainId": "myasthenia-gravis-neuromuscular-junction-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/myasthenia-gravis-neuromuscular-junction-continuity",
+      "candidateId": "C2LTB3-SRR-002-CAND-01",
+      "sourceTitle": "International consensus guidance for management of myasthenia gravis: Executive summary",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/27358333/",
+      "freshReviewDate": "2026-07-03",
+      "freshReviewMode": "corrected-source-reextraction-independent-fresh-review",
+      "sourceIdentityVerdict": "supported-corrected-pubmed-consensus-identity",
+      "sourceAccessVerdict": "pubmed-abstract-accessible-independent-review",
+      "sourceContextVerdict": "sufficient-for-bounded-artifact-prep-with-currentness-boundary",
+      "currentnessVerdict": "2016 international consensus executive summary is supported as baseline MG consensus vocabulary; newer MG updates require separate currentness artifacts before current-guideline claims.",
+      "exactClaimVerdict": "bounded-claim-supported",
+      "endpointVariableVerdict": "state-and-treatment-route-vocabulary-supported",
+      "transferBoundaryVerdict": "transfer-boundary-present-and-required",
+      "reviewerVerdict": "support-with-boundary",
+      "freshReviewFinding": "Independent PubMed review confirms the corrected MG consensus identity and supports treatment-goal, remission/minimal manifestation, ocular MG, impending crisis, manifest crisis, refractory MG, IVIG/plasma exchange, thymectomy, juvenile MG, MuSK and pregnancy route vocabulary. It is eligible only as bounded baseline consensus evidence.",
+      "downgradeOrBlockReason": "No blocking defect for bounded baseline artifact preparation; currentness, individual treatment selection and calibrated crisis risk remain blocked.",
+      "artifactPromotionDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "allowedArtifactTypes": [
+        "reviewed-source-card",
+        "reviewed-variable-card",
+        "reviewed-endpoint-card",
+        "reviewed-uncertainty-card",
+        "reviewed-transfer-boundary-card",
+        "reviewed-downgrade-check"
+      ],
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/27358333/",
+          "evidenceType": "pubmed-abstract-independent-fresh-review",
+          "finding": "PubMed abstract identifies the international consensus guidance executive summary and lists MG definitions and management topics generated by expert consensus and RAND/UCLA appropriateness methodology."
+        }
+      ],
+      "nextAction": "Prepare bounded MG baseline consensus artifacts and mark newer-guidance currentness as a separate future review requirement."
+    },
+    {
+      "reviewId": "C2LTB3-CFRV-003",
+      "batchId": "C2-LT-B3",
+      "reextractionTaskId": "C2LTB3-CREXT-003",
+      "originTaskId": "C2LTB3-EXT-011",
+      "sourceResolutionId": "C2LTB3-SRR-003",
+      "domainId": "spinal-muscular-atrophy-motor-neuron-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/spinal-muscular-atrophy-motor-neuron-continuity",
+      "candidateId": "C2LTB3-SRR-003-CAND-01",
+      "sourceTitle": "Diagnosis and management of spinal muscular atrophy: Part 1: Recommendations for diagnosis, rehabilitation, orthopedic and nutritional care",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/29290580/",
+      "freshReviewDate": "2026-07-03",
+      "freshReviewMode": "corrected-source-reextraction-independent-fresh-review",
+      "sourceIdentityVerdict": "supported-corrected-pubmed-sma-part1-identity",
+      "sourceAccessVerdict": "pubmed-abstract-accessible-independent-review",
+      "sourceContextVerdict": "sufficient-for-bounded-artifact-prep-part-specific",
+      "currentnessVerdict": "2018 SMA Part 1 standard-of-care update is supported only for diagnosis, rehabilitation, orthopedic/spinal, nutritional, swallowing and GI scope; therapy-era currentness remains bounded.",
+      "exactClaimVerdict": "bounded-claim-supported-part1-only",
+      "endpointVariableVerdict": "part1-care-domain-vocabulary-supported",
+      "transferBoundaryVerdict": "transfer-boundary-present-and-required",
+      "reviewerVerdict": "support-with-boundary",
+      "freshReviewFinding": "Independent PubMed review confirms the corrected SMA Part 1 identity and supports Part 1 care-domain vocabulary for diagnosis, rehabilitation, orthopedic/spinal management, nutrition, swallowing and gastrointestinal management. It must not be merged with pulmonary or acute-care Part 2 claims.",
+      "downgradeOrBlockReason": "No blocking defect for bounded Part 1 artifact preparation; Part 2 and therapy-era changes remain separate boundaries.",
+      "artifactPromotionDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "allowedArtifactTypes": [
+        "reviewed-source-card",
+        "reviewed-variable-card",
+        "reviewed-endpoint-card",
+        "reviewed-uncertainty-card",
+        "reviewed-transfer-boundary-card",
+        "reviewed-downgrade-check"
+      ],
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29290580/",
+          "evidenceType": "pubmed-abstract-independent-fresh-review",
+          "finding": "PubMed abstract confirms Part 1 covers methods plus updated diagnosis, rehabilitation, orthopedic/spinal, nutritional, swallowing and gastrointestinal management, while pulmonary and acute-care topics are assigned to Part 2."
+        }
+      ],
+      "nextAction": "Prepare bounded SMA Part 1 artifacts and preserve the Part 1/Part 2 split as a downgrade boundary."
+    },
+    {
+      "reviewId": "C2LTB3-CFRV-004",
+      "batchId": "C2-LT-B3",
+      "reextractionTaskId": "C2LTB3-CREXT-004",
+      "originTaskId": "C2LTB3-EXT-011",
+      "sourceResolutionId": "C2LTB3-SRR-003",
+      "domainId": "spinal-muscular-atrophy-motor-neuron-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/spinal-muscular-atrophy-motor-neuron-continuity",
+      "candidateId": "C2LTB3-SRR-003-CAND-02",
+      "sourceTitle": "Diagnosis and management of spinal muscular atrophy: Part 2: Pulmonary and acute care; medications, supplements and immunizations; other organ systems; and ethics",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/29305137/",
+      "freshReviewDate": "2026-07-03",
+      "freshReviewMode": "corrected-source-reextraction-independent-fresh-review",
+      "sourceIdentityVerdict": "supported-duplicate-split-route-identity-only",
+      "sourceAccessVerdict": "pubmed-abstract-accessible-but-duplicate-split-route",
+      "sourceContextVerdict": "route-boundary-only-not-content-artifact",
+      "currentnessVerdict": "Same PMID as corrected Part 2 content row; currentness belongs to the Part 2 row, not this split-boundary row.",
+      "exactClaimVerdict": "content-claim-blocked-route-only",
+      "endpointVariableVerdict": "endpoint-vocabulary-blocked-duplicate-boundary-only",
+      "transferBoundaryVerdict": "transfer-boundary-present-and-required",
+      "reviewerVerdict": "blocked-or-context-only",
+      "freshReviewFinding": "Independent review confirms that this row should only document the source-routing error: PMID 29305137 is SMA Part 2 evidence and was misrouted under the Part 1 row. It must not be counted as a second independent evidence source or direct content artifact.",
+      "downgradeOrBlockReason": "Duplicate/split-route boundary only; promoting this row would double-count the same guideline record and inflate evidence coverage.",
+      "artifactPromotionDecision": "blocked-duplicate-split-route-no-direct-artifact-fill",
+      "allowedArtifactTypes": [],
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29305137/",
+          "evidenceType": "pubmed-abstract-independent-fresh-review",
+          "finding": "PubMed abstract identifies PMID 29305137 as SMA Part 2 covering pulmonary, acute care, medications, immunizations, other organ systems and ethics, confirming the split boundary from the Part 1 row."
+        }
+      ],
+      "nextAction": "Use only as route/split downgrade evidence; do not create direct reviewed content artifacts from this row."
+    },
+    {
+      "reviewId": "C2LTB3-CFRV-005",
+      "batchId": "C2-LT-B3",
+      "reextractionTaskId": "C2LTB3-CREXT-005",
+      "originTaskId": "C2LTB3-EXT-012",
+      "sourceResolutionId": "C2LTB3-SRR-004",
+      "domainId": "spinal-muscular-atrophy-motor-neuron-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/spinal-muscular-atrophy-motor-neuron-continuity",
+      "candidateId": "C2LTB3-SRR-004-CAND-01",
+      "sourceTitle": "Diagnosis and management of spinal muscular atrophy: Part 2: Pulmonary and acute care; medications, supplements and immunizations; other organ systems; and ethics",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/29305137/",
+      "freshReviewDate": "2026-07-03",
+      "freshReviewMode": "corrected-source-reextraction-independent-fresh-review",
+      "sourceIdentityVerdict": "supported-corrected-pubmed-sma-part2-identity",
+      "sourceAccessVerdict": "pubmed-abstract-accessible-independent-review",
+      "sourceContextVerdict": "sufficient-for-bounded-artifact-prep-part-specific",
+      "currentnessVerdict": "2018 SMA Part 2 standard-of-care update is supported for pulmonary, acute-care, medication, immunization, other-organ and ethics scope; new-therapy currentness remains bounded.",
+      "exactClaimVerdict": "bounded-claim-supported-part2-only",
+      "endpointVariableVerdict": "part2-care-domain-vocabulary-supported",
+      "transferBoundaryVerdict": "transfer-boundary-present-and-required",
+      "reviewerVerdict": "support-with-boundary",
+      "freshReviewFinding": "Independent PubMed review confirms the corrected SMA Part 2 identity and supports pulmonary management, acute care, medications, immunizations, other-organ-system involvement and ethics/palliative-supportive care vocabulary. It is eligible only as bounded Part 2 evidence.",
+      "downgradeOrBlockReason": "No blocking defect for bounded Part 2 artifact preparation; Part 1 topics and therapy-era changes remain separate boundaries.",
+      "artifactPromotionDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "allowedArtifactTypes": [
+        "reviewed-source-card",
+        "reviewed-variable-card",
+        "reviewed-endpoint-card",
+        "reviewed-uncertainty-card",
+        "reviewed-transfer-boundary-card",
+        "reviewed-downgrade-check"
+      ],
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29305137/",
+          "evidenceType": "pubmed-abstract-independent-fresh-review",
+          "finding": "PubMed abstract confirms Part 2 covers pulmonary management, acute care, medications, supplements, immunizations, other organ systems and ethics, with explicit relevance pressure from emerging therapies changing survival and natural history."
+        }
+      ],
+      "nextAction": "Prepare bounded SMA Part 2 artifacts and preserve the duplicate split-boundary row as non-content evidence."
+    },
+    {
+      "reviewId": "C2LTB3-CFRV-006",
+      "batchId": "C2-LT-B3",
+      "reextractionTaskId": "C2LTB3-CREXT-006",
+      "originTaskId": "C2LTB3-EXT-020",
+      "sourceResolutionId": "C2LTB3-SRR-005",
+      "domainId": "sudden-hearing-loss-urgent-referral-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/sudden-hearing-loss-urgent-referral-continuity",
+      "candidateId": "C2LTB3-SRR-005-CAND-01",
+      "sourceTitle": "Clinical Practice Guideline: Sudden Hearing Loss (Update)",
+      "sourceUrl": "https://www.entnet.org/quality-practice/quality-products/clinical-practice-guidelines/sudden-hearing-loss-update/",
+      "freshReviewDate": "2026-07-03",
+      "freshReviewMode": "corrected-source-reextraction-independent-fresh-review",
+      "sourceIdentityVerdict": "supported-official-publisher-guideline-route",
+      "sourceAccessVerdict": "official-html-page-accessible-in-fresh-review-supersedes-prior-403-route-only",
+      "sourceContextVerdict": "sufficient-for-bounded-artifact-prep-with-recommendation-detail-boundary",
+      "currentnessVerdict": "AAO-HNS publisher page identifies the 2019 Sudden Hearing Loss guideline update and states it replaces the 2012 CPG; later updates still require separate currentness review.",
+      "exactClaimVerdict": "bounded-claim-supported-official-page-scope",
+      "endpointVariableVerdict": "official-page-scope-and-resource-vocabulary-supported",
+      "transferBoundaryVerdict": "transfer-boundary-present-and-required",
+      "reviewerVerdict": "support-with-boundary",
+      "freshReviewFinding": "Fresh publisher-route review now returns HTTP 200 and visible AAO-HNS page text. The page supports official route identity, adult sudden hearing loss / idiopathic SSNHL scope, prompt recognition and management goals, and links to guideline resources. It can enter bounded artifact preparation, but not recommendation-level, treatment-window or individual referral advice without full guideline text review.",
+      "downgradeOrBlockReason": "Prior automated 403 route-only status is superseded for this fresh review, but full key action statements and recommendation details remain outside this row unless separately reviewed.",
+      "artifactPromotionDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "allowedArtifactTypes": [
+        "reviewed-source-card",
+        "reviewed-variable-card",
+        "reviewed-endpoint-card",
+        "reviewed-uncertainty-card",
+        "reviewed-transfer-boundary-card",
+        "reviewed-downgrade-check"
+      ],
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://www.entnet.org/quality-practice/quality-products/clinical-practice-guidelines/sudden-hearing-loss-update/",
+          "evidenceType": "official-publisher-page-independent-fresh-review",
+          "finding": "Fresh review returned HTTP 200 and visible page text identifying Clinical Practice Guideline: Sudden Hearing Loss (Update), adult patients aged 18 years or older, idiopathic sudden sensorineural hearing loss focus, 2012 replacement status, prompt recognition/management goals and guideline resource links."
+        },
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31369359/",
+          "evidenceType": "pubmed-companion-cross-check",
+          "finding": "PubMed companion record aligns with the 2019 AAO-HNSF guideline update scope and supports bibliographic cross-checking, but does not create a second independent guideline source."
+        }
+      ],
+      "nextAction": "Prepare bounded official-route SSNHL artifacts with an explicit full-guideline/recommendation-detail boundary; do not output urgent-referral or treatment-window advice."
+    },
+    {
+      "reviewId": "C2LTB3-CFRV-007",
+      "batchId": "C2-LT-B3",
+      "reextractionTaskId": "C2LTB3-CREXT-007",
+      "originTaskId": "C2LTB3-EXT-020",
+      "sourceResolutionId": "C2LTB3-SRR-005",
+      "domainId": "sudden-hearing-loss-urgent-referral-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/sudden-hearing-loss-urgent-referral-continuity",
+      "candidateId": "C2LTB3-SRR-005-CAND-02",
+      "sourceTitle": "Clinical Practice Guideline: Sudden Hearing Loss (Update)",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/31369359/",
+      "freshReviewDate": "2026-07-03",
+      "freshReviewMode": "corrected-source-reextraction-independent-fresh-review",
+      "sourceIdentityVerdict": "supported-pubmed-companion-identity",
+      "sourceAccessVerdict": "pubmed-abstract-accessible-independent-review",
+      "sourceContextVerdict": "sufficient-for-bounded-companion-artifact-prep-not-independent-second-source",
+      "currentnessVerdict": "2019 PubMed companion record supports bibliographic and abstract-level scope for the AAO-HNSF update; currentness follows the official guideline route unless later replacement is found.",
+      "exactClaimVerdict": "bounded-claim-supported-companion-scope",
+      "endpointVariableVerdict": "abstract-level-scope-and-endpoint-vocabulary-supported",
+      "transferBoundaryVerdict": "transfer-boundary-present-and-required",
+      "reviewerVerdict": "support-with-boundary",
+      "freshReviewFinding": "Independent PubMed review confirms adult sudden hearing loss / idiopathic SSNHL scope, diagnostic-management-follow-up purpose, prompt recognition and management route, and hearing/quality-of-life outcome vocabulary. It may support bounded companion artifacts, but must not be counted as a second independent source separate from the publisher guideline.",
+      "downgradeOrBlockReason": "No blocking defect for bounded companion artifact preparation; recommendation-level claims, treatment timing and individual urgent-referral advice remain blocked.",
+      "artifactPromotionDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "allowedArtifactTypes": [
+        "reviewed-source-card",
+        "reviewed-variable-card",
+        "reviewed-endpoint-card",
+        "reviewed-uncertainty-card",
+        "reviewed-transfer-boundary-card",
+        "reviewed-downgrade-check"
+      ],
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31369359/",
+          "evidenceType": "pubmed-abstract-independent-fresh-review",
+          "finding": "PubMed abstract identifies the AAO-HNSF sudden hearing loss update, adult age scope, idiopathic SSNHL focus, diagnostic/management/follow-up recommendations, and prompt recognition/management goals; it provides abstract-level endpoint vocabulary only."
+        }
+      ],
+      "nextAction": "Prepare bounded companion SSNHL artifacts only if paired with the official route boundary; do not count as independent duplicate evidence or produce individual advice."
+    }
+  ],
+  "indexRequirements": [
+    "README.md",
+    "AGENTS.md",
+    "docs/AGENTS.md",
+    "docs/reference/README.md",
+    "docs/reference/human-infra-maturity-roadmap.md",
+    "tools/README.md",
+    "tools/AGENTS.md"
+  ],
+  "summary": {
+    "reviewedCorrectedRows": 7,
+    "eligibleForArtifactPrepRows": [
+      "C2LTB3-CREXT-001",
+      "C2LTB3-CREXT-002",
+      "C2LTB3-CREXT-003",
+      "C2LTB3-CREXT-005",
+      "C2LTB3-CREXT-006",
+      "C2LTB3-CREXT-007"
+    ],
+    "blockedOrContextOnlyRows": [
+      "C2LTB3-CREXT-004"
+    ],
+    "directReviewedArtifactsCreated": 0,
+    "modelAdmissionDecision": "blocked",
+    "newFreshReviewFacts": [
+      "AAO-HNS publisher route for sudden hearing loss returned HTTP 200 during 2026-07-03 fresh review, superseding the earlier route-only access status for artifact-prep eligibility only.",
+      "The SMA Part 2 duplicate/split route remains blocked as direct content evidence to prevent duplicate source counting."
+    ],
+    "nextWorkOrder": "Prepare bounded reviewed artifacts for the 18 original C2-LT-B3 eligible fresh-review rows plus the 6 corrected-source eligible rows, preserve the duplicate split-boundary row and EXT-022 downgrade-before-fill boundary, and keep calibrated modeling blocked."
+  }
+}
