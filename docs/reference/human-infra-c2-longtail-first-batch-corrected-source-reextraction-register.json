@@ -1,0 +1,653 @@
+{
+  "schemaVersion": "human-infra.c2ltb1-corrected-source-reextraction-register.v1",
+  "registerId": "human-infra-c2-longtail-first-batch-corrected-source-reextraction-register-2026-07-02",
+  "status": "active-c2ltb1-corrected-source-reextracted-model-blocked",
+  "purpose": "Record bounded corrected source re-extractions for the 10 selected C2-LT-B1 source-resolution candidates before any reviewed artifact or model admission decision.",
+  "sourceOfTruth": {
+    "correctedSourceReextractionQueue": "docs/reference/human-infra-c2-longtail-first-batch-corrected-source-reextraction-queue.json",
+    "sourceResolutionFreshReviewVerdictRegister": "docs/reference/human-infra-c2-longtail-first-batch-source-resolution-fresh-review-verdict-register.json",
+    "reviewedCardArtifactRegister": "docs/reference/human-infra-c2-longtail-first-batch-reviewed-card-artifact-register.json",
+    "evidencePolicy": "docs/reference/evidence-policy.md",
+    "maturityGapRegister": "docs/reference/human-infra-maturity-gap-register.json"
+  },
+  "scope": {
+    "batchId": "C2-LT-B1",
+    "queueTaskCount": 10,
+    "reextractedRowCount": 10,
+    "boundedFreshReviewCandidateCount": 5,
+    "routeOrIndexOnlyCount": 5,
+    "directArtifactFillCount": 0,
+    "modelAdmissionOpenedCount": 0,
+    "extractionLimit": "This register records corrected source-context extraction only; it does not itself create reviewed artifacts or authorize model admission."
+  },
+  "requiredPerRowFields": [
+    "reextractionTaskId",
+    "sourceIdentityCorrection",
+    "currentnessBoundary",
+    "exactClaimUse",
+    "endpointDefinition",
+    "populationOrSetting",
+    "effectOrMechanismSignal",
+    "uncertaintyOrBias",
+    "transferBoundary",
+    "downgradeTriggers",
+    "modelPosition",
+    "artifactPromotionReadiness",
+    "modelAdmissionDecision",
+    "sourceEvidenceTrace",
+    "nextAction"
+  ],
+  "blockedUses": [
+    "calibrated-prediction",
+    "individual-advice",
+    "individual-death-date-output",
+    "intervention-ranking",
+    "clinical-validity-claim",
+    "domain-claim-upgrade"
+  ],
+  "extractedRows": [
+    {
+      "reextractionTaskId": "C2LTB1-CREXT-001",
+      "originTaskId": "C2LTB1-EXT-003",
+      "sourceResolutionReviewId": "C2LTB1-SRFR-001",
+      "domainId": "sepsis-shock-early-recognition-resuscitation-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/sepsis-shock-early-recognition-resuscitation-continuity",
+      "candidateId": "C2LTB1-BRR-003-CAND-01",
+      "sourceTitle": "Surviving Sepsis Campaign: International Guidelines for Management of Sepsis and Septic Shock 2026",
+      "sourceUrl": "https://www.sccm.org/survivingsepsiscampaign/guidelines-and-resources/surviving-sepsis-campaign-adult-guidelines",
+      "extractionStatus": "completed-corrected-source-reextraction-bounded",
+      "sourceAccessStatus": "official-html-page-accessible-automated-text-extracted",
+      "sourceIdentityCorrection": "Corrects the prior sepsis row to the SCCM Surviving Sepsis Campaign adult guidelines page for the 2026 International Guidelines for Management of Sepsis and Septic Shock.",
+      "currentnessBoundary": "Current adult SSC route candidate as of 2026-07-02; it updates the 2021 SSC guideline and should be used as currentness anchor while the 2021 PMC/PubMed guideline remains prior-version lineage.",
+      "exactClaimUse": "Supports treating adult sepsis and septic shock as a time-critical continuity domain spanning hospital, immediate prehospital and immediate post-hospital management, sepsis screening, treatment procedures and antimicrobial stewardship. The SCCM page states the 2026 adult guideline includes 129 statements, 46 new statements and more definitive recommendations.",
+      "endpointDefinition": "Candidate endpoints or variables include sepsis screening coverage, time-to-recognition, standard operating procedure availability, antimicrobial initiation/de-escalation route, organ dysfunction trajectory, shock transition, ICU/hospital mortality, ARDS/mechanical ventilation route and post-hospital continuity.",
+      "populationOrSetting": "Adult patients with sepsis or septic shock in hospital, immediate prehospital and immediate post-hospital settings. Pediatric sepsis, individualized treatment decisions and local protocol details remain outside this row.",
+      "effectOrMechanismSignal": "Mechanism route: infection-triggered dysregulated host response can create organ dysfunction and shock; earlier recognition, structured procedures, responsible antimicrobial use and organ-support pathways are potential hazard-transition variables.",
+      "uncertaintyOrBias": "Guideline recommendations aggregate heterogeneous evidence and implementation settings. Access to diagnostics, antibiotics, ICU capacity, staffing, antimicrobial resistance patterns and local protocol fidelity can strongly limit transferability.",
+      "transferBoundary": "Transfer only as guideline-route, endpoint and source-currentness vocabulary for adult sepsis. Do not use as a calibrated effect size, individual treatment pathway or proof that any sepsis intervention improves Human Infra model outcomes.",
+      "downgradeTriggers": [
+        "Downgrade if later extraction cannot bind a specific recommendation or endpoint to a recommendation class, comparator or setting.",
+        "Downgrade if the row is reused for pediatric sepsis, outpatient infection management or individual antibiotic decisions.",
+        "Block model use if implementation capacity, antimicrobial resistance or ICU access constraints are ignored."
+      ],
+      "modelPosition": {
+        "primaryLocation": "hazard-and-transition-route-anchor",
+        "variables": [
+          "sepsis-screening-coverage",
+          "time-to-recognition",
+          "treatment-sop-availability",
+          "shock-transition-risk",
+          "organ-support-route"
+        ],
+        "admissibleUse": "corrected current source identity, route vocabulary and candidate endpoint definition only"
+      },
+      "artifactPromotionReadiness": "eligible-for-independent-fresh-review-before-bounded-artifact-promotion",
+      "modelAdmissionDecision": "blocked-pending-corrected-extraction-independent-review-and-artifact-gates",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "sourceEvidenceTrace": [
+        {
+          "url": "https://www.sccm.org/survivingsepsiscampaign/guidelines-and-resources/surviving-sepsis-campaign-adult-guidelines",
+          "evidenceType": "professional-society-current-guideline-page",
+          "finding": "SCCM identifies the adult Surviving Sepsis Campaign 2026 guideline, its adult sepsis/septic shock scope, update relationship to 2021 and recommendation-count/currentness signals."
+        }
+      ],
+      "nextAction": "Send to independent fresh review as current adult sepsis guideline extraction; create artifacts only if review confirms bounded source use."
+    },
+    {
+      "reextractionTaskId": "C2LTB1-CREXT-002",
+      "originTaskId": "C2LTB1-EXT-003",
+      "sourceResolutionReviewId": "C2LTB1-SRFR-001",
+      "domainId": "sepsis-shock-early-recognition-resuscitation-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/sepsis-shock-early-recognition-resuscitation-continuity",
+      "candidateId": "C2LTB1-BRR-003-CAND-02",
+      "sourceTitle": "Surviving sepsis campaign: international guidelines for management of sepsis and septic shock 2021",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/34599691/",
+      "extractionStatus": "completed-corrected-source-reextraction-lineage-only",
+      "sourceAccessStatus": "pubmed-index-plus-pmc-fulltext-accessible",
+      "sourceIdentityCorrection": "Preserves the 2021 SSC adult guideline as prior-version bibliographic and PMC lineage for the corrected sepsis row, not as the current 2026 anchor.",
+      "currentnessBoundary": "Prior version relative to SCCM 2026 adult guideline. It remains useful for lineage and for extracting historically published adult sepsis route concepts only when marked as previous-version.",
+      "exactClaimUse": "Supports prior-version context that sepsis is life-threatening organ dysfunction caused by dysregulated host response to infection; early identification and appropriate initial-hour management are guideline concerns; hospitals and systems are recommended to use performance improvement programs, screening for high-risk acutely ill patients and standard operating procedures.",
+      "endpointDefinition": "Candidate lineage endpoints include prior-version sepsis screening program, standard operating procedure presence, early treatment route, organ dysfunction and mortality/fatality burden signals.",
+      "populationOrSetting": "Adult hospital patients with sepsis or septic shock under the 2021 guideline scope. Use as lineage/context when comparing 2021 to 2026 guideline updates.",
+      "effectOrMechanismSignal": "Mechanism route: dysregulated infection response creates organ dysfunction; early recognition and standardized processes can define hazard-detection and transition variables.",
+      "uncertaintyOrBias": "The guideline is superseded or updated by the 2026 SCCM page for currentness. Its use should not erase later recommendations, newer evidence or changed implementation contexts.",
+      "transferBoundary": "Transfer only as prior-version lineage and background route context. Do not promote as current adult sepsis guidance when the 2026 source is available.",
+      "downgradeTriggers": [
+        "Downgrade if this row is cited as current 2026 guidance.",
+        "Downgrade if prior-version statements are used without checking whether the 2026 guideline changed them.",
+        "Block direct artifact promotion unless independent review confirms whether the artifact is lineage-only or source-card eligible."
+      ],
+      "modelPosition": {
+        "primaryLocation": "source-lineage-and-currentness-boundary",
+        "variables": [
+          "guideline-version",
+          "sepsis-screening-program-lineage",
+          "standard-operating-procedure-lineage",
+          "early-recognition-route"
+        ],
+        "admissibleUse": "prior-version lineage and source-currentness boundary only"
+      },
+      "artifactPromotionReadiness": "context-only-independent-review-required-no-direct-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-corrected-extraction-independent-review-and-artifact-gates",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "sourceEvidenceTrace": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34599691/",
+          "evidenceType": "bibliographic-guideline-index",
+          "finding": "PubMed indexes the 2021 Surviving Sepsis Campaign guideline, journal, date, DOI and PMC full-text linkage."
+        },
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8486643/",
+          "evidenceType": "open-fulltext-prior-guideline",
+          "finding": "PMC full text exposes the adult sepsis/septic shock scope, sepsis definition, early identification framing and screening/treatment procedure recommendations."
+        }
+      ],
+      "nextAction": "Use only as prior-version lineage unless independent review explicitly promotes a bounded lineage artifact."
+    },
+    {
+      "reextractionTaskId": "C2LTB1-CREXT-003",
+      "originTaskId": "C2LTB1-EXT-008",
+      "sourceResolutionReviewId": "C2LTB1-SRFR-002",
+      "domainId": "anaphylaxis-allergic-emergency-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/anaphylaxis-allergic-emergency-continuity",
+      "candidateId": "C2LTB1-BRR-008-CAND-01",
+      "sourceTitle": "Anaphylaxis: A 2023 practice parameter update",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/38108678/",
+      "extractionStatus": "completed-corrected-source-reextraction-bounded",
+      "sourceAccessStatus": "pubmed-abstract-accessible",
+      "sourceIdentityCorrection": "Corrects the blocked anaphylaxis row to the 2023 practice parameter update indexed in PubMed.",
+      "currentnessBoundary": "Practice parameter update published in Annals of Allergy, Asthma and Immunology in 2024 and focused on seven areas with new evidence and recommendations. It should be paired with source-specific review before being treated as current clinical guidance.",
+      "exactClaimUse": "Supports treating anaphylaxis as an emergency continuity domain involving revised diagnostic criteria, pattern definition, serum tryptase for diagnosis/underlying mast-cell disorders, age-specific pediatric presentation, setting-specific prevention/treatment, epinephrine autoinjector counseling and post-event diagnostic evaluation.",
+      "endpointDefinition": "Candidate variables include recognition criteria, serum tryptase measurement route, epinephrine autoinjector availability/training, durable response after epinephrine, EMS activation pathway, recurrent idiopathic or insect-sting anaphylaxis evaluation and perioperative re-exposure planning.",
+      "populationOrSetting": "People at risk of or experiencing anaphylaxis across community, pediatric, adult, insect-sting, idiopathic and perioperative settings. This row does not provide individual emergency instructions.",
+      "effectOrMechanismSignal": "Mechanism route: rapid systemic allergic reaction can create acute airway, circulatory or multisystem failure; recognition, epinephrine access/training, diagnostic workup and specialist evaluation are route variables for continuity protection.",
+      "uncertaintyOrBias": "PubMed abstract supports high-level practice-parameter scope but not all recommendation details, evidence grades or local device availability. Full-text and guideline-body review remain required before artifact promotion.",
+      "transferBoundary": "Transfer only as emergency-domain variable vocabulary and source identity. Do not use for individual anaphylaxis treatment, device prescription, medication stopping decisions or EMS advice.",
+      "downgradeTriggers": [
+        "Downgrade if full text cannot confirm the exact recommendation and evidence boundary.",
+        "Downgrade if autoinjector or EMS claims are generalized across all patients without context.",
+        "Block if the row is used as individual emergency instructions."
+      ],
+      "modelPosition": {
+        "primaryLocation": "acute-emergency-recognition-and-response-route-anchor",
+        "variables": [
+          "anaphylaxis-recognition-criteria",
+          "epinephrine-autoinjector-training",
+          "serum-tryptase-diagnostic-route",
+          "ems-activation-context",
+          "specialist-referral-after-event"
+        ],
+        "admissibleUse": "bounded variable and route vocabulary after independent review only"
+      },
+      "artifactPromotionReadiness": "eligible-for-independent-fresh-review-before-bounded-artifact-promotion",
+      "modelAdmissionDecision": "blocked-pending-corrected-extraction-independent-review-and-artifact-gates",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "sourceEvidenceTrace": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38108678/",
+          "evidenceType": "bibliographic-abstract-index",
+          "finding": "PubMed abstract states the 2023 practice parameter update covers seven new-evidence areas, revised diagnostic criteria, tryptase, pediatric features, community settings, epinephrine autoinjector counseling and post-event evaluation topics."
+        }
+      ],
+      "nextAction": "Fresh-review the full practice parameter before creating endpoint or uncertainty artifacts."
+    },
+    {
+      "reextractionTaskId": "C2LTB1-CREXT-004",
+      "originTaskId": "C2LTB1-EXT-008",
+      "sourceResolutionReviewId": "C2LTB1-SRFR-002",
+      "domainId": "anaphylaxis-allergic-emergency-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/anaphylaxis-allergic-emergency-continuity",
+      "candidateId": "C2LTB1-BRR-008-CAND-02",
+      "sourceTitle": "World allergy organization anaphylaxis guidance 2020",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7607509/",
+      "extractionStatus": "completed-corrected-source-reextraction-bounded",
+      "sourceAccessStatus": "pubmed-index-plus-pmc-fulltext-accessible",
+      "sourceIdentityCorrection": "Adds WAO 2020 guidance as open full-text anaphylaxis guidance context for the corrected anaphylaxis row.",
+      "currentnessBoundary": "Open guidance published in 2020; useful as accessible global guidance context, but later 2023 practice parameter must be considered for newer evidence and recommendations.",
+      "exactClaimUse": "Supports treating anaphylaxis as severe acute systemic allergic reaction requiring guidance dissemination; intramuscular epinephrine/adrenaline remains first-line treatment; after anaphylaxis, referral to a specialist for cause assessment, recurrence prevention and self-management education is recommended; epinephrine autoinjector availability and affordability are access constraints.",
+      "endpointDefinition": "Candidate variables include IM epinephrine first-line route, specialist referral after event, recurrence-prevention education, self-management capacity, epinephrine autoinjector availability/affordability and country-level access constraints.",
+      "populationOrSetting": "Global patients and clinicians dealing with anaphylaxis emergencies; source includes health-system and access considerations, not individual emergency protocols.",
+      "effectOrMechanismSignal": "Mechanism route: systemic allergic reaction creates acute emergency risk; rapid first-line treatment, post-event referral, education and access to autoinjectors affect continuity through recognition and response capacity.",
+      "uncertaintyOrBias": "Guidance availability and autoinjector affordability vary by country. Later practice parameters may update specific recommendations. Full text should be reviewed for formal recommendation strength before artifacts are promoted.",
+      "transferBoundary": "Transfer only as global guidance, access-barrier and emergency-response vocabulary. Do not convert into individual treatment, prescription or emergency dispatch advice.",
+      "downgradeTriggers": [
+        "Downgrade if the row omits country-level autoinjector availability and affordability constraints.",
+        "Downgrade if WAO 2020 is treated as newer than the 2023 practice parameter.",
+        "Block if source is used for individual emergency medical instructions."
+      ],
+      "modelPosition": {
+        "primaryLocation": "emergency-response-access-and-self-management-route-anchor",
+        "variables": [
+          "im-epinephrine-first-line-route",
+          "specialist-referral-after-event",
+          "self-management-education",
+          "autoinjector-availability",
+          "autoinjector-affordability"
+        ],
+        "admissibleUse": "global context and access-barrier variables after independent review only"
+      },
+      "artifactPromotionReadiness": "eligible-for-independent-fresh-review-before-bounded-artifact-promotion",
+      "modelAdmissionDecision": "blocked-pending-corrected-extraction-independent-review-and-artifact-gates",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "sourceEvidenceTrace": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33204386/",
+          "evidenceType": "bibliographic-abstract-index",
+          "finding": "PubMed indexes WAO 2020 guidance and its abstract states anaphylaxis severity, first-line IM epinephrine, specialist referral, self-management education and autoinjector access issues."
+        },
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7607509/",
+          "evidenceType": "open-fulltext-guidance",
+          "finding": "PMC full text is accessible and can support later source-card extraction after independent review."
+        }
+      ],
+      "nextAction": "Fresh-review WAO 2020 against the 2023 practice parameter and split currentness/access-context artifacts."
+    },
+    {
+      "reextractionTaskId": "C2LTB1-CREXT-005",
+      "originTaskId": "C2LTB1-EXT-017",
+      "sourceResolutionReviewId": "C2LTB1-SRFR-003",
+      "domainId": "cerebrovascular-stroke-brain-perfusion-resilience",
+      "localDomainPath": "domains/c2-source-maintenance/cerebrovascular-stroke-brain-perfusion-resilience",
+      "candidateId": "C2LTB1-BRR-017-CAND-01",
+      "sourceTitle": "NINDS Stroke health information",
+      "sourceUrl": "https://www.ninds.nih.gov/health-information/stroke",
+      "extractionStatus": "completed-corrected-source-reextraction-index-bounded",
+      "sourceAccessStatus": "official-source-search-index-accessible-direct-automated-fetch-403",
+      "sourceIdentityCorrection": "Normalizes the blocked stroke row to the NINDS stroke health-information route and its stroke-overview subpage discovered through indexed official search results.",
+      "currentnessBoundary": "Official NIH/NINDS patient-education route. Direct automated fetch returned 403 during this run, so extraction is limited to official indexed page snippets and should be rechecked manually before artifact promotion.",
+      "exactClaimUse": "Supports only high-level stroke-domain framing: stroke is a medical emergency caused by blocked or burst blood flow to the brain; earlier treatment can reduce disability and save lives; NINDS organizes stroke information around warning signs, prevention, assessment, treatment, recovery and research.",
+      "endpointDefinition": "Candidate variables include stroke recognition route, time-to-treatment, emergency activation, brain perfusion interruption, disability outcome, recovery/rehabilitation route and prevention risk-factor route.",
+      "populationOrSetting": "General public, patients, caregivers and health-professional information route for stroke education. Not a clinical guideline or individual diagnosis/treatment source.",
+      "effectOrMechanismSignal": "Mechanism route: interruption or bleeding in cerebral blood supply can rapidly injure brain cells; timelier recognition and treatment are continuity-relevant because disability and death risks depend on time and severity.",
+      "uncertaintyOrBias": "Search-index extraction is weaker than direct source-context reading. The row must stay downgraded until official page content is manually or technically accessible and exact text, dates and subpage boundaries are checked.",
+      "transferBoundary": "Transfer only as a public-education route and high-level stroke continuity vocabulary. Do not use as an acute stroke guideline, treatment eligibility source or calibrated risk source.",
+      "downgradeTriggers": [
+        "Keep downgraded if the NINDS page remains inaccessible for direct source-context review.",
+        "Downgrade if public-education text is used as professional guideline evidence.",
+        "Block model use if no independent review confirms warning-sign, treatment and recovery subpage boundaries."
+      ],
+      "modelPosition": {
+        "primaryLocation": "public-education-route-and-domain-vocabulary-anchor",
+        "variables": [
+          "stroke-warning-sign-route",
+          "time-to-treatment",
+          "brain-perfusion-interruption",
+          "post-stroke-disability",
+          "recovery-route"
+        ],
+        "admissibleUse": "high-level public-education route only, no artifact promotion before direct-context review"
+      },
+      "artifactPromotionReadiness": "downgraded-source-index-only-independent-direct-review-required",
+      "modelAdmissionDecision": "blocked-pending-corrected-extraction-independent-review-and-artifact-gates",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "sourceEvidenceTrace": [
+        {
+          "url": "https://www.ninds.nih.gov/health-information/stroke/stroke-overview",
+          "evidenceType": "official-search-index-and-snippet",
+          "finding": "Official indexed NINDS stroke-overview result states stroke is a serious emergency involving blocked or burst brain blood flow, with earlier treatment reducing disability and saving lives."
+        },
+        {
+          "url": "https://www.ninds.nih.gov/health-information/stroke",
+          "evidenceType": "official-route-direct-fetch-blocked",
+          "finding": "Direct automated fetch returned 403; use only as route identity until direct source review succeeds."
+        }
+      ],
+      "nextAction": "Re-fetch or manually review the NINDS route and subpages before any artifact promotion."
+    },
+    {
+      "reextractionTaskId": "C2LTB1-CREXT-006",
+      "originTaskId": "C2LTB1-EXT-018",
+      "sourceResolutionReviewId": "C2LTB1-SRFR-004",
+      "domainId": "cerebrovascular-stroke-brain-perfusion-resilience",
+      "localDomainPath": "domains/c2-source-maintenance/cerebrovascular-stroke-brain-perfusion-resilience",
+      "candidateId": "C2LTB1-BRR-018-CAND-01",
+      "sourceTitle": "2026 Guideline for the Early Management of Patients With Acute Ischemic Stroke",
+      "sourceUrl": "https://professional.heart.org/en/science-news/2026-guideline-for-the-early-management-of-patients-with-acute-ischemic-stroke",
+      "extractionStatus": "completed-corrected-source-reextraction-bounded",
+      "sourceAccessStatus": "official-html-page-plus-pubmed-abstract-accessible",
+      "sourceIdentityCorrection": "Corrects the acute ischemic stroke row to the AHA/ASA 2026 guideline page and PubMed-indexed Stroke guideline.",
+      "currentnessBoundary": "The 2026 AIS guideline replaces the 2018 acute ischemic stroke guideline and 2019 update; PubMed abstract reports literature through December 2024 plus selected high-impact studies through March 2025.",
+      "exactClaimUse": "Supports treating acute ischemic stroke as a time-critical continuity domain from prehospital evaluation through acute treatment, early in-hospital complication management and early secondary prevention. AHA page highlights mobile stroke units, EMS triage, tenecteplase within 4.5 hours, broader endovascular thrombectomy eligibility and first pediatric AIS recommendations.",
+      "endpointDefinition": "Candidate variables include EMS triage route, mobile stroke unit availability, time-to-thrombolysis, thrombolytic choice/eligibility, endovascular thrombectomy eligibility, hyperglycemia management, dysphagia management, pediatric AIS route and early secondary prevention initiation.",
+      "populationOrSetting": "Patients with acute ischemic stroke across prehospital, emergency, acute treatment and early inpatient settings; audience includes prehospital professionals, physicians, allied health professionals and administrators.",
+      "effectOrMechanismSignal": "Mechanism route: ischemic interruption of cerebral perfusion creates time-sensitive tissue-risk; thrombolysis, thrombectomy, supportive management and early prevention define transition variables for survival and functional outcome pathways.",
+      "uncertaintyOrBias": "Guideline recommendations depend on eligibility, imaging, timing, contraindications, local stroke-system capacity and pediatric/adult differences. PubMed abstract and page summaries do not replace full guideline extraction.",
+      "transferBoundary": "Transfer only as acute stroke guideline route and endpoint vocabulary. Do not use for individual thrombolysis/thrombectomy eligibility, dosing, emergency advice or calibrated Human Infra effect size.",
+      "downgradeTriggers": [
+        "Downgrade if full guideline review cannot bind a variable to a recommendation section, eligibility condition or care setting.",
+        "Downgrade if ischemic stroke guidance is transferred to hemorrhagic stroke.",
+        "Block model use if time-window, imaging, contraindication or local-system capacity constraints are omitted."
+      ],
+      "modelPosition": {
+        "primaryLocation": "acute-hazard-transition-and-functional-outcome-route-anchor",
+        "variables": [
+          "ems-triage-route",
+          "time-to-thrombolysis",
+          "endovascular-thrombectomy-eligibility",
+          "dysphagia-management-route",
+          "early-secondary-prevention-initiation"
+        ],
+        "admissibleUse": "bounded acute-stroke endpoint and pathway vocabulary after independent review only"
+      },
+      "artifactPromotionReadiness": "eligible-for-independent-fresh-review-before-bounded-artifact-promotion",
+      "modelAdmissionDecision": "blocked-pending-corrected-extraction-independent-review-and-artifact-gates",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "sourceEvidenceTrace": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41582814/",
+          "evidenceType": "bibliographic-abstract-guideline-index",
+          "finding": "PubMed abstract identifies the 2026 AHA/ASA AIS guideline, replacement relationship to 2018/2019 guidance and key update topics."
+        },
+        {
+          "url": "https://professional.heart.org/en/science-news/2026-guideline-for-the-early-management-of-patients-with-acute-ischemic-stroke",
+          "evidenceType": "professional-guideline-page",
+          "finding": "AHA Professional Heart Daily page highlights mobile stroke units, EMS triage, tenecteplase within 4.5 hours, broader EVT eligibility and pediatric AIS guidance."
+        }
+      ],
+      "nextAction": "Fresh-review full guideline sections before endpoint or variable artifact promotion."
+    },
+    {
+      "reextractionTaskId": "C2LTB1-CREXT-007",
+      "originTaskId": "C2LTB1-EXT-041",
+      "sourceResolutionReviewId": "C2LTB1-SRFR-005",
+      "domainId": "fertility-preservation-gamete-embryo-cryostorage-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/fertility-preservation-gamete-embryo-cryostorage-continuity",
+      "candidateId": "C2LTB1-BRR-041-CAND-01",
+      "sourceTitle": "Fertility Preservation in People With Cancer: ASCO Guideline Update",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/40106739/",
+      "extractionStatus": "completed-corrected-source-reextraction-bounded",
+      "sourceAccessStatus": "pubmed-abstract-accessible",
+      "sourceIdentityCorrection": "Corrects the fertility-preservation row to the 2025 ASCO guideline update indexed in PubMed.",
+      "currentnessBoundary": "ASCO guideline update published in Journal of Clinical Oncology in 2025; PubMed abstract states a multidisciplinary panel updated the systematic review and included 166 studies.",
+      "exactClaimUse": "Supports treating fertility preservation for people with cancer as a future-option continuity domain: reproductive risks should be evaluated and counseled at diagnosis and during survivorship; interested or uncertain patients should be referred to reproductive specialists; fertility preservation should be discussed before cancer-directed therapy; established methods include sperm cryopreservation, embryo/oocyte/ovarian tissue cryopreservation, ovarian transposition and conservative gynecologic surgery with specific experimental/emerging boundaries.",
+      "endpointDefinition": "Candidate variables include reproductive-risk counseling timing, specialist referral, pre-treatment fertility preservation discussion, sperm cryopreservation route, oocyte/embryo/ovarian tissue cryostorage route, ovarian transposition, conservative gynecologic surgery, post-treatment FP route, coverage/access advocacy and pediatric assent/guardian consent boundary.",
+      "populationOrSetting": "People with cancer at diagnosis, during treatment planning and survivorship; includes adults, pubertal children and selected prepubertal contexts as bounded by the guideline abstract.",
+      "effectOrMechanismSignal": "Mechanism route: cancer therapy can reduce future reproductive options; timely counseling, referral and cryopreservation/tissue-preservation pathways preserve future choice space rather than directly extending biological lifespan.",
+      "uncertaintyOrBias": "PubMed abstract provides recommendation-level summary but not all evidence grades, contraindications, cancer-specific timing constraints, access/coverage details or long-term outcome data.",
+      "transferBoundary": "Transfer only as future-choice/fertility-continuity route and endpoint vocabulary. Do not use as individual oncology, reproductive medicine or insurance advice.",
+      "downgradeTriggers": [
+        "Downgrade if cancer type, treatment urgency, puberty status, experimental status or access constraints are omitted.",
+        "Downgrade if fertility preservation is portrayed as guaranteed future fertility.",
+        "Block if used for individual reproductive or cancer-treatment decisions."
+      ],
+      "modelPosition": {
+        "primaryLocation": "future-choice-preservation-and-reproductive-continuity-route-anchor",
+        "variables": [
+          "reproductive-risk-counseling-timing",
+          "fertility-specialist-referral",
+          "gamete-or-embryo-cryostorage-route",
+          "ovarian-tissue-cryopreservation-route",
+          "coverage-and-access-barrier"
+        ],
+        "admissibleUse": "bounded future-choice and route vocabulary after independent review only"
+      },
+      "artifactPromotionReadiness": "eligible-for-independent-fresh-review-before-bounded-artifact-promotion",
+      "modelAdmissionDecision": "blocked-pending-corrected-extraction-independent-review-and-artifact-gates",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "sourceEvidenceTrace": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40106739/",
+          "evidenceType": "bibliographic-abstract-guideline-index",
+          "finding": "PubMed abstract gives the ASCO 2025 purpose, methods, evidence base size and recommendation summary for counseling, referral and established/experimental FP methods."
+        }
+      ],
+      "nextAction": "Fresh-review the ASCO guideline full text or official summary before creating Source/endpoint artifacts."
+    },
+    {
+      "reextractionTaskId": "C2LTB1-CREXT-008",
+      "originTaskId": "C2LTB1-EXT-041",
+      "sourceResolutionReviewId": "C2LTB1-SRFR-005",
+      "domainId": "fertility-preservation-gamete-embryo-cryostorage-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/fertility-preservation-gamete-embryo-cryostorage-continuity",
+      "candidateId": "C2LTB1-BRR-041-CAND-03",
+      "sourceTitle": "ASCO Publications DOI for 2025 fertility preservation guideline update",
+      "sourceUrl": "https://ascopubs.org/doi/10.1200/JCO-24-02782",
+      "extractionStatus": "completed-corrected-source-reextraction-publisher-route-only",
+      "sourceAccessStatus": "publisher-doi-page-automated-fetch-403-pubmed-doi-confirmed",
+      "sourceIdentityCorrection": "Confirms the publisher DOI route for the 2025 ASCO fertility preservation guideline update but does not provide automated full-text extraction in this run.",
+      "currentnessBoundary": "Publisher DOI matches PubMed DOI 10.1200/JCO-24-02782. Treat as source identity and full-text retrieval route only until publisher access or manual review succeeds.",
+      "exactClaimUse": "Supports publisher-route verification for the ASCO 2025 guideline update. Exact recommendation content should be drawn from PubMed abstract or full text after access, not from the inaccessible DOI page itself.",
+      "endpointDefinition": "No direct endpoint extraction from the publisher page in this run; possible endpoint artifacts must inherit from PubMed/full-text review after access.",
+      "populationOrSetting": "People with cancer only as inherited from the PubMed-indexed guideline; publisher page access status does not independently expand scope.",
+      "effectOrMechanismSignal": "No mechanism extraction from inaccessible publisher page; source route supports DOI provenance only.",
+      "uncertaintyOrBias": "Automated fetch returned 403. Treat this row as access/provenance evidence, not content evidence. Full text may contain richer recommendation boundaries unavailable to this extraction.",
+      "transferBoundary": "Transfer only as DOI/provenance route. Do not use as recommendation content, endpoint evidence or artifact fill source without full-text review.",
+      "downgradeTriggers": [
+        "Keep route-only if publisher full text remains inaccessible.",
+        "Downgrade if DOI provenance is used as if it contained recommendation text.",
+        "Block direct artifact promotion from this row alone."
+      ],
+      "modelPosition": {
+        "primaryLocation": "source-provenance-and-fulltext-route-boundary",
+        "variables": [
+          "publisher-doi-route",
+          "fulltext-access-status",
+          "source-provenance-confirmation"
+        ],
+        "admissibleUse": "publisher route verification only"
+      },
+      "artifactPromotionReadiness": "route-only-no-direct-artifact-promotion",
+      "modelAdmissionDecision": "blocked-pending-corrected-extraction-independent-review-and-artifact-gates",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "sourceEvidenceTrace": [
+        {
+          "url": "https://ascopubs.org/doi/10.1200/JCO-24-02782",
+          "evidenceType": "publisher-doi-route-automated-access-restricted",
+          "finding": "Publisher DOI route exists in the queue but automated fetch returned 403 during this run."
+        },
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40106739/",
+          "evidenceType": "pubmed-doi-crosscheck",
+          "finding": "PubMed confirms DOI 10.1200/JCO-24-02782 for the ASCO 2025 guideline update."
+        }
+      ],
+      "nextAction": "Use as DOI route only; do not create content artifacts until full text or official guideline summary is reviewed."
+    },
+    {
+      "reextractionTaskId": "C2LTB1-CREXT-009",
+      "originTaskId": "C2LTB1-EXT-045",
+      "sourceResolutionReviewId": "C2LTB1-SRFR-006",
+      "domainId": "skin-barrier-wound-healing",
+      "localDomainPath": "domains/c2-source-maintenance/skin-barrier-wound-healing",
+      "candidateId": "C2LTB1-BRR-045-CAND-01",
+      "sourceTitle": "Wound Healing Society Clinical Practice Guidelines and Tools",
+      "sourceUrl": "https://woundheal.org/clinical-tools/",
+      "extractionStatus": "completed-corrected-source-reextraction-directory-route-only",
+      "sourceAccessStatus": "official-html-directory-accessible-automated-text-extracted",
+      "sourceIdentityCorrection": "Corrects the blocked generic wound-healing row to the WHS clinical tools directory, which routes wound-care guidance by wound type and topic.",
+      "currentnessBoundary": "Directory source exposes foundational guidelines, wound-type guidance and specific diabetic foot ulcer/pressure ulcer AvoMD module and guideline years. It is a routing source, not a single guideline body.",
+      "exactClaimUse": "Supports splitting the skin/wound domain into wound-type-specific source rows. WHS presents core wound-care guideline documents and topic-specific guidance, including diabetic foot ulcer, pressure ulcer, arterial ulcer, venous ulcer and chronic wound resources, with select pressure-ulcer and diabetic-foot-ulcer guidance accessible through AvoMD/EHR routes.",
+      "endpointDefinition": "Candidate route variables include wound type, guideline year, clinical module availability, EHR/app accessibility route and guideline topic category. It does not define wound-healing outcomes by itself.",
+      "populationOrSetting": "Wound-care clinicians and guideline users across wound-type categories; source is directory-level and must be split before condition-specific artifacts.",
+      "effectOrMechanismSignal": "Directory mechanism signal: wound-care evidence is organized by wound type and care module rather than one universal wound-healing intervention; Human Infra extraction must preserve wound-type specificity.",
+      "uncertaintyOrBias": "Directory pages may link to publisher content, modules and older guideline versions. Exact recommendation text, evidence strength and endpoint definitions require the specific guideline article or module.",
+      "transferBoundary": "Transfer only as source-routing and wound-type taxonomy. Do not use the directory page as direct evidence for diabetic foot ulcer treatment, pressure injury care or wound outcome effects.",
+      "downgradeTriggers": [
+        "Keep route-only unless a specific wound-type guideline is extracted.",
+        "Downgrade if guideline year, wound type or module route is omitted.",
+        "Block artifact promotion if directory text is used as clinical recommendation content."
+      ],
+      "modelPosition": {
+        "primaryLocation": "source-routing-and-domain-splitting-anchor",
+        "variables": [
+          "wound-type-category",
+          "guideline-year",
+          "clinical-module-route",
+          "publisher-or-app-access-route"
+        ],
+        "admissibleUse": "directory split and routing only"
+      },
+      "artifactPromotionReadiness": "route-only-no-direct-artifact-promotion",
+      "modelAdmissionDecision": "blocked-pending-corrected-extraction-independent-review-and-artifact-gates",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "sourceEvidenceTrace": [
+        {
+          "url": "https://woundheal.org/clinical-tools/",
+          "evidenceType": "professional-society-clinical-tools-directory",
+          "finding": "WHS clinical tools page lists foundational wound-care guidelines and wound-type/topic guidance, including diabetic foot ulcer and pressure ulcer resources and AvoMD module routes."
+        }
+      ],
+      "nextAction": "Split into wound-type-specific rows; use only specific guideline articles or modules for content artifacts."
+    },
+    {
+      "reextractionTaskId": "C2LTB1-CREXT-010",
+      "originTaskId": "C2LTB1-EXT-045",
+      "sourceResolutionReviewId": "C2LTB1-SRFR-006",
+      "domainId": "skin-barrier-wound-healing",
+      "localDomainPath": "domains/c2-source-maintenance/skin-barrier-wound-healing",
+      "candidateId": "C2LTB1-BRR-045-CAND-02",
+      "sourceTitle": "WHS (Wound Healing Society) guidelines update: Diabetic foot ulcer treatment guidelines",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/38032324/",
+      "extractionStatus": "completed-corrected-source-reextraction-bibliographic-index-only",
+      "sourceAccessStatus": "pubmed-index-accessible-no-abstract-in-efetch",
+      "sourceIdentityCorrection": "Identifies the specific WHS diabetic foot ulcer treatment guideline update indexed in PubMed and cross-routed by the WHS clinical tools page.",
+      "currentnessBoundary": "PubMed indexes the WHS diabetic foot ulcer treatment guidelines in Wound Repair and Regeneration, published 2024 Jan-Feb with DOI 10.1111/wrr.13133. WHS directory lists diabetic foot ulcer guideline years including 2023 and module access.",
+      "exactClaimUse": "Supports only source identity and wound-type split for diabetic foot ulcer guideline extraction. No treatment recommendation content is extracted from PubMed because the record does not expose an abstract in this run.",
+      "endpointDefinition": "Candidate endpoints must be extracted from the full guideline later. Possible categories remain diabetic foot ulcer treatment route, wound closure/healing, infection, offloading, vascular assessment and amputation prevention, but these are not confirmed by this row alone.",
+      "populationOrSetting": "People with diabetic foot ulcers and clinicians using WHS diabetic foot ulcer guidance, pending full guideline review.",
+      "effectOrMechanismSignal": "This row confirms the need for wound-type-specific extraction; it does not independently support a treatment mechanism without full text.",
+      "uncertaintyOrBias": "PubMed metadata alone is not enough for exact claim or endpoint artifacts. Publisher access, full text or guideline module review is required before promotion.",
+      "transferBoundary": "Transfer only as bibliographic identity for a diabetic-foot-ulcer-specific source. Do not use as generic wound-healing evidence or treatment-effect source.",
+      "downgradeTriggers": [
+        "Keep blocked if full guideline text or official module cannot be reviewed.",
+        "Downgrade if diabetic foot ulcer guidance is generalized to all wounds.",
+        "Block artifact promotion if endpoint and recommendation details remain absent."
+      ],
+      "modelPosition": {
+        "primaryLocation": "source-identity-and-wound-type-split-boundary",
+        "variables": [
+          "diabetic-foot-ulcer-guideline-identity",
+          "guideline-year",
+          "fulltext-access-status",
+          "wound-type-specific-route"
+        ],
+        "admissibleUse": "bibliographic source identity only until full guideline extraction"
+      },
+      "artifactPromotionReadiness": "fulltext-needed-no-direct-artifact-promotion",
+      "modelAdmissionDecision": "blocked-pending-corrected-extraction-independent-review-and-artifact-gates",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "sourceEvidenceTrace": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38032324/",
+          "evidenceType": "bibliographic-guideline-index",
+          "finding": "PubMed confirms title, journal, publication window and DOI for the WHS diabetic foot ulcer treatment guideline update but exposes no abstract in this run."
+        },
+        {
+          "url": "https://woundheal.org/clinical-tools/",
+          "evidenceType": "professional-directory-cross-route",
+          "finding": "WHS clinical tools page lists diabetic foot ulcer guidelines and module routes, supporting the source split."
+        }
+      ],
+      "nextAction": "Retrieve full guideline or module content before any diabetic-foot-ulcer endpoint artifact is created."
+    }
+  ],
+  "nonClaims": [
+    "This register does not override independent fresh review verdicts.",
+    "This register does not create reviewed Source Cards, variable cards, endpoint cards, uncertainty cards, transfer-boundary cards or downgrade-check artifacts.",
+    "This register does not authorize calibrated prediction, individual advice, individual death-date output, intervention ranking, clinical validity claims or domain-claim upgrades.",
+    "Route-only, index-only and access-restricted rows remain blocked until source-specific full context review succeeds."
+  ],
+  "indexRequirements": [
+    "README.md",
+    "AGENTS.md",
+    "docs/AGENTS.md",
+    "docs/reference/README.md",
+    "docs/reference/human-infra-maturity-roadmap.md",
+    "tools/README.md",
+    "tools/AGENTS.md"
+  ],
+  "summary": {
+    "reextractedRowCount": 10,
+    "freshReviewCandidateTaskIds": [
+      "C2LTB1-CREXT-001",
+      "C2LTB1-CREXT-003",
+      "C2LTB1-CREXT-004",
+      "C2LTB1-CREXT-006",
+      "C2LTB1-CREXT-007"
+    ],
+    "routeOrIndexOnlyTaskIds": [
+      "C2LTB1-CREXT-002",
+      "C2LTB1-CREXT-005",
+      "C2LTB1-CREXT-008",
+      "C2LTB1-CREXT-009",
+      "C2LTB1-CREXT-010"
+    ],
+    "remainingWork": [
+      "Run independent fresh review over all corrected extraction rows before any artifact promotion.",
+      "Split route-only, index-only, publisher-restricted and fulltext-needed rows from content-bearing rows.",
+      "Only after review, derive Source/variable/endpoint/uncertainty/transfer/downgrade artifacts for eligible rows.",
+      "Keep all calibrated modeling and individual-use gates blocked until downstream artifact and model-validation gates pass."
+    ]
+  }
+}
