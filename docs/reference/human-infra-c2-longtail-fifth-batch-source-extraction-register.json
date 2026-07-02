@@ -1,0 +1,1130 @@
+{
+  "schemaVersion": "human-infra.c2-longtail-fifth-batch-source-extraction-register.v1",
+  "registerId": "C2-LT-B5-SOURCE-EXTRACTION-REGISTER",
+  "status": "active-c2ltb5-source-extractions-pending-fresh-review",
+  "purpose": "Record completed local source-context field extraction for the fifth C2 long-tail source-extraction queue, covering cellular quality-control, organelle communication, molecular transport, membrane-resilience, clearance and barrier continuity domains while preserving duplicate-source, review-only, model-organism, no-open-fulltext and model-admission blocks.",
+  "sourceOfTruth": {
+    "sourceExtractionQueue": "docs/reference/human-infra-c2-longtail-fifth-batch-source-extraction-queue.json",
+    "sourceCardSystem": "docs/reference/source-card-system.md",
+    "maturityGapRegister": "docs/reference/human-infra-maturity-gap-register.json",
+    "maturityRoadmap": "docs/reference/human-infra-maturity-roadmap.md"
+  },
+  "scope": {
+    "batchId": "C2-LT-B5",
+    "queueTaskCount": 24,
+    "extractedTaskCount": 24,
+    "remainingTaskCount": 0,
+    "coveredDomainCount": 12,
+    "selectedTaskIds": [
+      "C2LTB5-EXT-001",
+      "C2LTB5-EXT-002",
+      "C2LTB5-EXT-003",
+      "C2LTB5-EXT-004",
+      "C2LTB5-EXT-005",
+      "C2LTB5-EXT-006",
+      "C2LTB5-EXT-007",
+      "C2LTB5-EXT-008",
+      "C2LTB5-EXT-009",
+      "C2LTB5-EXT-010",
+      "C2LTB5-EXT-011",
+      "C2LTB5-EXT-012",
+      "C2LTB5-EXT-013",
+      "C2LTB5-EXT-014",
+      "C2LTB5-EXT-015",
+      "C2LTB5-EXT-016",
+      "C2LTB5-EXT-017",
+      "C2LTB5-EXT-018",
+      "C2LTB5-EXT-019",
+      "C2LTB5-EXT-020",
+      "C2LTB5-EXT-021",
+      "C2LTB5-EXT-022",
+      "C2LTB5-EXT-023",
+      "C2LTB5-EXT-024"
+    ],
+    "extractionDepth": "source-context-field-extraction-with-duplicate-source-no-open-fulltext-model-organism-and-review-only-flags",
+    "currentLimitations": [
+      "This register completes local source-context field extraction only; it does not complete local review, independent fresh review or reviewed artifact promotion.",
+      "Rows with no open fulltext in automated access remain manual-review-needed before artifact fill.",
+      "Duplicate cross-domain source reuse must be handled before evidence counting.",
+      "Most B5 sources are review or model-organism context rather than calibrated human prediction sources."
+    ]
+  },
+  "sourceAccessNotes": [
+    "All 24 C2-LT-B5 candidate source rows were checked through Europe PMC core metadata, PubMed/PMCID anchors or PMC fulltext discovery on 2026-07-03.",
+    "Six source rows remain no-open-fulltext/manual-review-needed in the automated pass: C2LTB5-EXT-001, C2LTB5-EXT-008, C2LTB5-EXT-009, C2LTB5-EXT-018, C2LTB5-EXT-019 and C2LTB5-EXT-021.",
+    "Two source records are intentionally reused across domains and must not be counted as independent evidence twice: C2LTB5-EXT-008/C2LTB5-EXT-009 and C2LTB5-EXT-010/C2LTB5-EXT-013.",
+    "Model-organism and reproductive-context sources are preserved as bounded mechanism/context rows, not direct human lifespan or effective-immortality evidence.",
+    "All rows are source-context support only; source existence, abstract alignment or PMC availability does not admit calibrated model parameters."
+  ],
+  "extractedRows": [
+    {
+      "taskId": "C2LTB5-EXT-001",
+      "domainId": "telomere-maintenance",
+      "localDomainPath": "domains/c2-source-maintenance/telomere-maintenance",
+      "sourceRefId": "C2LTB5-SRC-01-1",
+      "sourceTitle": "Disorders of Telomere Length.",
+      "sourceUrl": "https://europepmc.org/article/MED/42334294",
+      "extractionStatus": "completed-c2ltb5-source-context-extraction",
+      "sourceAccessStatus": "europepmc-abstract-no-open-fulltext-manual-review-needed",
+      "sourceRole": "telomere-length-disorder-clinical-review-anchor",
+      "exactClaimUse": "Can support source-context framing that both short and ultra-long telomere length states can drive disease risk: short telomere length is associated with degenerative phenotypes such as immunodeficiency, bone marrow failure and pulmonary disease, while ultra-long telomere length can predispose to benign and malignant neoplasia.",
+      "endpointDefinition": "Candidate endpoints include telomere length distribution, short telomere syndrome status, bone marrow failure, pulmonary disease, immunodeficiency, ultra-long-telomere variants and neoplasia incidence.",
+      "populationOrSetting": "Children and adults with inherited or clinically suspected telomere length disorders; clinical review context rather than population-wide anti-aging intervention context.",
+      "effectOrMechanismSignal": "Mechanism signal is boundary-setting: telomere shortening can constrain tissue renewal and drive degenerative disease, while excessive telomere length can extend replicative potential in ways that couple to neoplasia risk.",
+      "uncertaintyOrBias": "The source is a 2026 clinical review with no open fulltext in automated access; it should not be used to estimate individual telomere length risk, anti-aging benefit or telomerase intervention safety without fulltext review.",
+      "transferBoundary": "Transfer only to qualitative telomere-length boundary framing and cancer-degeneration coupling; do not transfer to personal telomere testing interpretation, telomerase activation claims or lifespan prediction.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis or individual death-date output",
+        "source is used beyond its population, review, model-organism, disease, cell-biology or source-lineage role without local review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population boundary and transfer boundary needed for bounded artifact fill",
+        "duplicate cross-domain source reuse is counted as independent evidence rather than source-route lineage"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 cellular replication-boundary and cancer-coupled source-maintenance extraction register",
+        "variables": [
+          "telomere-length-distribution",
+          "telomerase-activity",
+          "replicative-senescence-threshold",
+          "telomere-dysfunction-induced-dna-damage",
+          "cancer-risk-coupling"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, then fresh review, before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, preserve duplicate-source and no-open-fulltext boundaries, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB5-EXT-002",
+      "domainId": "telomere-maintenance",
+      "localDomainPath": "domains/c2-source-maintenance/telomere-maintenance",
+      "sourceRefId": "C2LTB5-SRC-01-2",
+      "sourceTitle": "Telomeres: History, Health and Hallmarks of Aging.",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8081271/",
+      "extractionStatus": "completed-c2ltb5-source-context-extraction",
+      "sourceAccessStatus": "pmc-fulltext-abstract-aligned",
+      "sourceRole": "telomere-hallmarks-aging-review-anchor",
+      "exactClaimUse": "Can support source-context framing that telomere dysfunction is linked to multiple hallmarks of aging and can amplify molecular processes contributing to age-related disease, including neurodegeneration and cancer.",
+      "endpointDefinition": "Candidate endpoints include telomere dysfunction, telomere attrition, DNA damage response activation, aging-hallmark linkage, neurodegeneration and cancer-related disease context.",
+      "populationOrSetting": "Aging biology and age-related disease review context; not limited to one disease cohort or intervention trial.",
+      "effectOrMechanismSignal": "Mechanism signal is telomere dysfunction acting as a cellular stress and genome-protection failure that intersects with aging hallmarks and disease pathways.",
+      "uncertaintyOrBias": "Review-level synthesis; it supports mechanism vocabulary but does not calibrate effect sizes, intervention response or individual survival curves.",
+      "transferBoundary": "Transfer only to mechanism and variable-card framing for telomere maintenance; do not use as proof that manipulating telomeres improves human longevity.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis or individual death-date output",
+        "source is used beyond its population, review, model-organism, disease, cell-biology or source-lineage role without local review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population boundary and transfer boundary needed for bounded artifact fill",
+        "duplicate cross-domain source reuse is counted as independent evidence rather than source-route lineage"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 cellular replication-boundary and cancer-coupled source-maintenance extraction register",
+        "variables": [
+          "telomere-length-distribution",
+          "telomerase-activity",
+          "replicative-senescence-threshold",
+          "telomere-dysfunction-induced-dna-damage",
+          "cancer-risk-coupling"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, then fresh review, before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, preserve duplicate-source and no-open-fulltext boundaries, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB5-EXT-003",
+      "domainId": "ribosome-translation-fidelity-proteome-integrity-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/ribosome-translation-fidelity-proteome-integrity-continuity",
+      "sourceRefId": "C2LTB5-SRC-02-1",
+      "sourceTitle": "Translational fidelity and longevity are genetically linked.",
+      "sourceUrl": "https://europepmc.org/article/MED/40804252",
+      "extractionStatus": "completed-c2ltb5-source-context-extraction",
+      "sourceAccessStatus": "pmc-open-fulltext-abstract-aligned",
+      "sourceRole": "yeast-translation-fidelity-longevity-genetic-link-anchor",
+      "exactClaimUse": "Can support source-context framing that translational fidelity and longevity can be genetically linked in yeast, with fidelity-longevity correlation detectable in long-lived samples and QTL evidence implicating VPS70.",
+      "endpointDefinition": "Candidate endpoints include yeast lifespan, translational fidelity/error rate, QTL locus effects, VPS70 genotype/replacement and translational machinery integrity.",
+      "populationOrSetting": "BY x RM yeast recombinant haploid progenies and yeast genetic validation setting; model-organism evidence only.",
+      "effectOrMechanismSignal": "Mechanism signal is that translation errors and fidelity variation can affect proteome quality and lifespan-related phenotypes in a controlled model organism.",
+      "uncertaintyOrBias": "Model-organism study; yeast fidelity-longevity linkage cannot be directly transferred to human lifespan, clinical interventions or individual proteostasis risk.",
+      "transferBoundary": "Transfer only as a conserved-principle candidate for translation fidelity as a source-maintenance variable; do not transfer to human longevity estimates or treatment claims.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis or individual death-date output",
+        "source is used beyond its population, review, model-organism, disease, cell-biology or source-lineage role without local review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population boundary and transfer boundary needed for bounded artifact fill",
+        "duplicate cross-domain source reuse is counted as independent evidence rather than source-route lineage"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 translation fidelity and proteome integrity source-maintenance extraction register",
+        "variables": [
+          "translation-fidelity",
+          "ribosomal-stress",
+          "protein-misfolding-load",
+          "proteostasis-coupling",
+          "longevity-linked-synthesis-rate"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, then fresh review, before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, preserve duplicate-source and no-open-fulltext boundaries, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB5-EXT-004",
+      "domainId": "ribosome-translation-fidelity-proteome-integrity-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/ribosome-translation-fidelity-proteome-integrity-continuity",
+      "sourceRefId": "C2LTB5-SRC-02-2",
+      "sourceTitle": "Translational Fidelity Decline in the Aging Oocyte and Embryo Development.",
+      "sourceUrl": "https://europepmc.org/article/MED/41898476",
+      "extractionStatus": "completed-c2ltb5-source-context-extraction",
+      "sourceAccessStatus": "pmc-open-fulltext-abstract-aligned",
+      "sourceRole": "oocyte-aging-translation-fidelity-review-anchor",
+      "exactClaimUse": "Can support source-context framing that age-related changes in translational fidelity may affect oocyte competence and early embryo development because oocytes rely heavily on regulated translation of stored maternal mRNAs.",
+      "endpointDefinition": "Candidate endpoints include oocyte competence, embryo developmental arrest, euploid embryo competence, rRNA integrity, tRNA modification, aminoacylation accuracy and translational regulator function.",
+      "populationOrSetting": "Female reproductive aging, oocyte maturation and early embryo development; assisted reproductive technology relevance but not whole-body longevity.",
+      "effectOrMechanismSignal": "Mechanism signal is decline or disruption in translation fidelity compromising proteome integrity in transcriptionally quiet oocytes and early embryos.",
+      "uncertaintyOrBias": "Review-level and reproductive-context evidence; it should not be generalized to all tissues or calibrated lifespan models without additional sources.",
+      "transferBoundary": "Transfer only to reproductive/source-maintenance interface and translation-fidelity variable framing; do not use for general human cognitive, lifespan or anti-aging intervention claims.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis or individual death-date output",
+        "source is used beyond its population, review, model-organism, disease, cell-biology or source-lineage role without local review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population boundary and transfer boundary needed for bounded artifact fill",
+        "duplicate cross-domain source reuse is counted as independent evidence rather than source-route lineage"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 translation fidelity and proteome integrity source-maintenance extraction register",
+        "variables": [
+          "translation-fidelity",
+          "ribosomal-stress",
+          "protein-misfolding-load",
+          "proteostasis-coupling",
+          "longevity-linked-synthesis-rate"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, then fresh review, before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, preserve duplicate-source and no-open-fulltext boundaries, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB5-EXT-005",
+      "domainId": "lysosomal-flux-lipofuscin-clearance-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/lysosomal-flux-lipofuscin-clearance-continuity",
+      "sourceRefId": "C2LTB5-SRC-03-1",
+      "sourceTitle": "Lipofuscin accumulation in aging and neurodegeneration: a potential timebomb overlooked in Alzheimer's disease.",
+      "sourceUrl": "https://europepmc.org/article/MED/41387918",
+      "extractionStatus": "completed-c2ltb5-source-context-extraction",
+      "sourceAccessStatus": "pmc-open-fulltext-abstract-aligned",
+      "sourceRole": "lipofuscin-aging-neurodegeneration-review-anchor",
+      "exactClaimUse": "Can support source-context framing that lipofuscin accumulation in aged neurons and microglia should be treated as more than an inert aging marker and may modulate age-related neurodegenerative processes including Alzheimer disease hypotheses.",
+      "endpointDefinition": "Candidate endpoints include lipofuscin accumulation, autofluorescent granules, neuronal and microglial burden, amyloid-beta plaque context and gray/white matter distribution.",
+      "populationOrSetting": "Aging and neurodegeneration review context, especially Alzheimer disease; not an intervention trial.",
+      "effectOrMechanismSignal": "Mechanism signal is impaired degradation and persistent lipofuscin load potentially altering cellular quality control, inflammatory state and protein aggregation context.",
+      "uncertaintyOrBias": "The source is explicitly review/hypothesis-heavy and leaves mechanistic questions unresolved; it cannot establish causality or treatment efficacy by itself.",
+      "transferBoundary": "Transfer only to lysosomal waste-load and lipofuscin variable framing; do not use as proof that lipofuscin clearance extends lifespan or prevents Alzheimer disease.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis or individual death-date output",
+        "source is used beyond its population, review, model-organism, disease, cell-biology or source-lineage role without local review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population boundary and transfer boundary needed for bounded artifact fill",
+        "duplicate cross-domain source reuse is counted as independent evidence rather than source-route lineage"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 lysosomal flux, lipofuscin and endomembrane clearance source-maintenance extraction register",
+        "variables": [
+          "lysosomal-acidification",
+          "autophagic-flux",
+          "lipofuscin-burden",
+          "aggregate-clearance-capacity",
+          "endomembrane-failure-signal"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, then fresh review, before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, preserve duplicate-source and no-open-fulltext boundaries, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB5-EXT-006",
+      "domainId": "lysosomal-flux-lipofuscin-clearance-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/lysosomal-flux-lipofuscin-clearance-continuity",
+      "sourceRefId": "C2LTB5-SRC-03-2",
+      "sourceTitle": "Failure of lysosomal acidification and endomembrane network in neurodegeneration.",
+      "sourceUrl": "https://europepmc.org/article/MED/41254240",
+      "extractionStatus": "completed-c2ltb5-source-context-extraction",
+      "sourceAccessStatus": "pmc-open-fulltext-abstract-aligned",
+      "sourceRole": "lysosomal-acidification-endomembrane-network-review-anchor",
+      "exactClaimUse": "Can support source-context framing that lysosomal V-ATPase-dependent acidification enables hydrolase activity and proteostasis, and that V-ATPase dysfunction can disrupt organelle communication, autophagy and stress signaling in neurodegeneration.",
+      "endpointDefinition": "Candidate endpoints include lysosomal pH/acidification, V-ATPase function, hydrolase activity, proteostasis, calcium and lipid exchange at contact sites, autophagic flux and stress signaling.",
+      "populationOrSetting": "Cell biology and neurodegeneration review context; not specific to a validated human treatment protocol.",
+      "effectOrMechanismSignal": "Mechanism signal is lysosomal acidification as a hub for degradation, endomembrane network coordination and interorganelle communication.",
+      "uncertaintyOrBias": "Review-level evidence; pathway plausibility is stronger than calibrated disease prediction, and cell-type and disease-stage specificity must be preserved.",
+      "transferBoundary": "Transfer only to lysosomal flux and clearance mechanism cards; do not use for individual neurodegeneration prognosis or intervention ranking.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis or individual death-date output",
+        "source is used beyond its population, review, model-organism, disease, cell-biology or source-lineage role without local review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population boundary and transfer boundary needed for bounded artifact fill",
+        "duplicate cross-domain source reuse is counted as independent evidence rather than source-route lineage"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 lysosomal flux, lipofuscin and endomembrane clearance source-maintenance extraction register",
+        "variables": [
+          "lysosomal-acidification",
+          "autophagic-flux",
+          "lipofuscin-burden",
+          "aggregate-clearance-capacity",
+          "endomembrane-failure-signal"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, then fresh review, before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, preserve duplicate-source and no-open-fulltext boundaries, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB5-EXT-007",
+      "domainId": "endoplasmic-reticulum-stress-upr-proteostasis-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/endoplasmic-reticulum-stress-upr-proteostasis-continuity",
+      "sourceRefId": "C2LTB5-SRC-04-1",
+      "sourceTitle": "Unfolding Resilience: Molecular Integration of the Integrated Stress Response and Mitochondrial UPR in Skeletal Muscle Homeostasis.",
+      "sourceUrl": "https://europepmc.org/article/MED/42201142",
+      "extractionStatus": "completed-c2ltb5-source-context-extraction",
+      "sourceAccessStatus": "pmc-open-fulltext-abstract-aligned",
+      "sourceRole": "mitochondrial-isr-uprmt-skeletal-muscle-stress-review-anchor",
+      "exactClaimUse": "Can support source-context framing that mitochondrial ISR and UPRmt are quality-control mechanisms activated during mitochondrial perturbation and orchestrated by ATF4, CHOP and ATF5 to restore homeostasis in skeletal muscle.",
+      "endpointDefinition": "Candidate endpoints include mitochondrial perturbation, ISR activation, UPRmt activation, ATF4/CHOP/ATF5 signaling, protective gene expression and skeletal muscle homeostasis.",
+      "populationOrSetting": "Skeletal muscle stress-response review context focused on mitochondrial rather than canonical ER UPR pathways.",
+      "effectOrMechanismSignal": "Mechanism signal is stress-response integration and retrograde signaling preserving muscle cellular homeostasis under mitochondrial stress.",
+      "uncertaintyOrBias": "This source is a partial fit for the ER-stress domain because it primarily addresses mitochondrial ISR/UPRmt; use as cross-stress-response context only.",
+      "transferBoundary": "Transfer only to integrated stress-response vocabulary and muscle quality-control boundary; do not use as direct evidence for ER-specific UPR intervention or systemic longevity benefit.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis or individual death-date output",
+        "source is used beyond its population, review, model-organism, disease, cell-biology or source-lineage role without local review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population boundary and transfer boundary needed for bounded artifact fill",
+        "duplicate cross-domain source reuse is counted as independent evidence rather than source-route lineage"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 ER stress, UPR and proteostasis stress-response extraction register",
+        "variables": [
+          "er-stress-load",
+          "upr-branch-activation",
+          "isr-crosstalk",
+          "protein-folding-capacity",
+          "cell-fate-under-stress"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, then fresh review, before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, preserve duplicate-source and no-open-fulltext boundaries, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB5-EXT-008",
+      "domainId": "endoplasmic-reticulum-stress-upr-proteostasis-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/endoplasmic-reticulum-stress-upr-proteostasis-continuity",
+      "sourceRefId": "C2LTB5-SRC-04-2",
+      "sourceTitle": "Homeostatic responses to diverse cellular stresses by the ER-Golgi trafficking pathways.",
+      "sourceUrl": "https://europepmc.org/article/MED/42096823",
+      "extractionStatus": "completed-c2ltb5-source-context-extraction",
+      "sourceAccessStatus": "europepmc-abstract-no-open-fulltext-manual-review-needed",
+      "sourceRole": "er-golgi-trafficking-stress-homeostasis-review-anchor",
+      "exactClaimUse": "Can support source-context framing that cells modify ER-Golgi membrane trafficking and activate alternative transport routes under environmental and internal stress to preserve organelle function, cell viability and homeostasis.",
+      "endpointDefinition": "Candidate endpoints include ER-Golgi transport activity, membrane trafficking pathway state, alternative transport activation, organelle function and stress survival.",
+      "populationOrSetting": "Cell biology review context across environmental and internal cellular stresses; no organism-level intervention cohort.",
+      "effectOrMechanismSignal": "Mechanism signal is dynamic transport rerouting and ER/Golgi trafficking adaptation under stress.",
+      "uncertaintyOrBias": "Automated access found abstract metadata but not open fulltext; exact pathway details require manual fulltext review before artifact promotion.",
+      "transferBoundary": "Transfer only to ER-Golgi stress-transport mechanism framing; do not use as calibrated evidence of disease risk or intervention efficacy.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis or individual death-date output",
+        "source is used beyond its population, review, model-organism, disease, cell-biology or source-lineage role without local review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population boundary and transfer boundary needed for bounded artifact fill",
+        "duplicate cross-domain source reuse is counted as independent evidence rather than source-route lineage"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 ER stress, UPR and proteostasis stress-response extraction register",
+        "variables": [
+          "er-stress-load",
+          "upr-branch-activation",
+          "isr-crosstalk",
+          "protein-folding-capacity",
+          "cell-fate-under-stress"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, then fresh review, before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, preserve duplicate-source and no-open-fulltext boundaries, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB5-EXT-009",
+      "domainId": "golgi-secretory-trafficking-organelle-homeostasis-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/golgi-secretory-trafficking-organelle-homeostasis-continuity",
+      "sourceRefId": "C2LTB5-SRC-05-1",
+      "sourceTitle": "Homeostatic responses to diverse cellular stresses by the ER-Golgi trafficking pathways.",
+      "sourceUrl": "https://europepmc.org/article/MED/42096823",
+      "extractionStatus": "completed-c2ltb5-source-context-extraction",
+      "sourceAccessStatus": "europepmc-abstract-no-open-fulltext-manual-review-needed-duplicate-with-c2ltb5-src-04-2",
+      "sourceRole": "golgi-er-trafficking-stress-homeostasis-shared-source-anchor",
+      "exactClaimUse": "Can support source-context framing that Golgi and ER trafficking pathways participate in cellular stress adaptation by modifying transport activity and bypass routes to maintain organelle and cellular homeostasis.",
+      "endpointDefinition": "Candidate endpoints include Golgi/ER trafficking response, organelle transport load, alternative pathway activation and organelle-level homeostasis.",
+      "populationOrSetting": "Cell biology review context; same source as C2LTB5-SRC-04-2 reused for the Golgi domain.",
+      "effectOrMechanismSignal": "Mechanism signal is Golgi and ER trafficking acting as conversion routes for stress adaptation and secretory/endosomal load management.",
+      "uncertaintyOrBias": "This is duplicate cross-domain reuse, not independent evidence; no open fulltext was available in automated access.",
+      "transferBoundary": "Transfer only as a shared ER-Golgi transport source for Golgi domain vocabulary; do not count as independent evidence separate from C2LTB5-SRC-04-2.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis or individual death-date output",
+        "source is used beyond its population, review, model-organism, disease, cell-biology or source-lineage role without local review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population boundary and transfer boundary needed for bounded artifact fill",
+        "duplicate cross-domain source reuse is counted as independent evidence rather than source-route lineage"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 Golgi secretory trafficking and organelle homeostasis extraction register",
+        "variables": [
+          "golgi-structure-integrity",
+          "secretory-trafficking-load",
+          "glycosylation-quality",
+          "membrane-protein-routing",
+          "stress-induced-trafficking-rewire"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, then fresh review, before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, preserve duplicate-source and no-open-fulltext boundaries, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB5-EXT-010",
+      "domainId": "golgi-secretory-trafficking-organelle-homeostasis-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/golgi-secretory-trafficking-organelle-homeostasis-continuity",
+      "sourceRefId": "C2LTB5-SRC-05-2",
+      "sourceTitle": "Intercompartmental communication in senescence.",
+      "sourceUrl": "https://europepmc.org/article/MED/41911323",
+      "extractionStatus": "completed-c2ltb5-source-context-extraction",
+      "sourceAccessStatus": "pmc-open-fulltext-abstract-aligned",
+      "sourceRole": "senescence-intercompartmental-communication-review-anchor",
+      "exactClaimUse": "Can support source-context framing that senescent cells remodel plasma membrane, nucleus, ER, Golgi, endolysosomal system, mitochondria, condensates and cytoskeleton, altering intracellular communication networks needed for homeostasis.",
+      "endpointDefinition": "Candidate endpoints include SASP, senescent-cell compartment remodeling, vesicular trafficking, secretory/endocytic/autophagic routes, interorganelle contact sites and organelle network homeostasis.",
+      "populationOrSetting": "Cellular senescence review context; aging tissue dysfunction and age-related disease framing but not direct clinical intervention evidence.",
+      "effectOrMechanismSignal": "Mechanism signal is senescence-associated remodeling of intracellular compartments and communication routes that can change secretion, inflammation and homeostatic control.",
+      "uncertaintyOrBias": "Review-level synthesis; senescence context must not be generalized to every Golgi disorder or used as calibrated burden estimate.",
+      "transferBoundary": "Transfer only to Golgi/secretory and intercompartmental communication variable framing; do not use as proof that altering Golgi traffic reverses aging.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis or individual death-date output",
+        "source is used beyond its population, review, model-organism, disease, cell-biology or source-lineage role without local review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population boundary and transfer boundary needed for bounded artifact fill",
+        "duplicate cross-domain source reuse is counted as independent evidence rather than source-route lineage"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 Golgi secretory trafficking and organelle homeostasis extraction register",
+        "variables": [
+          "golgi-structure-integrity",
+          "secretory-trafficking-load",
+          "glycosylation-quality",
+          "membrane-protein-routing",
+          "stress-induced-trafficking-rewire"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, then fresh review, before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, preserve duplicate-source and no-open-fulltext boundaries, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB5-EXT-011",
+      "domainId": "peroxisome-redox-lipid-metabolism-homeostasis-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/peroxisome-redox-lipid-metabolism-homeostasis-continuity",
+      "sourceRefId": "C2LTB5-SRC-06-1",
+      "sourceTitle": "Peroxisomes in Aging: Guardians of Cellular Resilience and Function.",
+      "sourceUrl": "https://europepmc.org/article/MED/41677620",
+      "extractionStatus": "completed-c2ltb5-source-context-extraction",
+      "sourceAccessStatus": "pmc-open-fulltext-abstract-aligned",
+      "sourceRole": "peroxisome-aging-cellular-resilience-review-anchor",
+      "exactClaimUse": "Can support source-context framing that peroxisomes support lipid metabolism, redox regulation and signaling, and that aging-related declines in catalase activity, fatty acid beta-oxidation, plasmalogen biosynthesis and pexophagy can propagate oxidative and metabolic disturbances.",
+      "endpointDefinition": "Candidate endpoints include catalase activity, fatty acid beta-oxidation, plasmalogen biosynthesis, bile acid/DHA metabolism, pexophagy, oxidative stress and membrane composition.",
+      "populationOrSetting": "Aging and age-related disease review context across cellular resilience; not a human intervention trial.",
+      "effectOrMechanismSignal": "Mechanism signal is peroxisomal dysfunction affecting redox balance, lipid metabolism, membrane composition and crosstalk with mitochondria, ER and lysosomes.",
+      "uncertaintyOrBias": "Review-level evidence; the role of peroxisomes varies by tissue and disease and cannot directly calibrate human longevity effects.",
+      "transferBoundary": "Transfer only to peroxisome redox/lipid metabolism variables and cross-organelle resilience framing; do not use for individual intervention claims.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis or individual death-date output",
+        "source is used beyond its population, review, model-organism, disease, cell-biology or source-lineage role without local review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population boundary and transfer boundary needed for bounded artifact fill",
+        "duplicate cross-domain source reuse is counted as independent evidence rather than source-route lineage"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 peroxisome redox and lipid metabolism extraction register",
+        "variables": [
+          "peroxisomal-beta-oxidation",
+          "ros-detox-capacity",
+          "plasmalogen-lipid-status",
+          "mitochondria-peroxisome-crosstalk",
+          "peroxisome-turnover"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, then fresh review, before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, preserve duplicate-source and no-open-fulltext boundaries, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB5-EXT-012",
+      "domainId": "peroxisome-redox-lipid-metabolism-homeostasis-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/peroxisome-redox-lipid-metabolism-homeostasis-continuity",
+      "sourceRefId": "C2LTB5-SRC-06-2",
+      "sourceTitle": "Peroxisomal Dysfunction in Age-Related Diseases.",
+      "sourceUrl": "https://europepmc.org/article/MED/28063767",
+      "extractionStatus": "completed-c2ltb5-source-context-extraction",
+      "sourceAccessStatus": "pmc-fulltext-abstract-aligned",
+      "sourceRole": "peroxisomal-dysfunction-age-related-disease-review-anchor",
+      "exactClaimUse": "Can support source-context framing that peroxisomes are important for lipid and ROS metabolism and that peroxisomal dysfunction is connected to diabetes, neurodegeneration, cancer and other age-related disease mechanisms outside inherited peroxisomal disorders.",
+      "endpointDefinition": "Candidate endpoints include peroxisomal function, ROS metabolism, lipid metabolism, diabetes complications, neurodegenerative disorders and cancer-related pathway context.",
+      "populationOrSetting": "Age-related disease review context, including acquired diseases and inherited peroxisome disorder comparison.",
+      "effectOrMechanismSignal": "Mechanism signal is altered peroxisomal lipid and reactive oxygen species metabolism contributing to disease pathophysiology and potential targetability.",
+      "uncertaintyOrBias": "Review-level and partly translational; targetability language is exploratory and not proof of prevention or treatment benefit.",
+      "transferBoundary": "Transfer only to disease-mechanism and variable framing; do not use as evidence that peroxisome targeting extends human lifespan.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis or individual death-date output",
+        "source is used beyond its population, review, model-organism, disease, cell-biology or source-lineage role without local review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population boundary and transfer boundary needed for bounded artifact fill",
+        "duplicate cross-domain source reuse is counted as independent evidence rather than source-route lineage"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 peroxisome redox and lipid metabolism extraction register",
+        "variables": [
+          "peroxisomal-beta-oxidation",
+          "ros-detox-capacity",
+          "plasmalogen-lipid-status",
+          "mitochondria-peroxisome-crosstalk",
+          "peroxisome-turnover"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, then fresh review, before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, preserve duplicate-source and no-open-fulltext boundaries, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB5-EXT-013",
+      "domainId": "organelle-contact-sites-intercompartmental-communication-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/organelle-contact-sites-intercompartmental-communication-continuity",
+      "sourceRefId": "C2LTB5-SRC-07-1",
+      "sourceTitle": "Intercompartmental communication in senescence.",
+      "sourceUrl": "https://europepmc.org/article/MED/41911323",
+      "extractionStatus": "completed-c2ltb5-source-context-extraction",
+      "sourceAccessStatus": "pmc-open-fulltext-abstract-aligned-duplicate-with-c2ltb5-src-05-2",
+      "sourceRole": "senescence-interorganelle-contact-site-shared-source-anchor",
+      "exactClaimUse": "Can support source-context framing that senescence alters interorganelle contact sites, including contacts among mitochondria, ER and lysosomes, and thereby changes lipid exchange, calcium signaling and homeostatic communication.",
+      "endpointDefinition": "Candidate endpoints include senescent-cell contact-site remodeling, mitochondria-ER-lysosome contacts, lipid exchange, calcium signaling, vesicular trafficking and SASP-associated communication.",
+      "populationOrSetting": "Cellular senescence review context; same source as C2LTB5-SRC-05-2 reused for organelle-contact domain.",
+      "effectOrMechanismSignal": "Mechanism signal is age/senescence-related intercompartmental remodeling disrupting intracellular communication and homeostasis.",
+      "uncertaintyOrBias": "Duplicate cross-domain reuse; should not be counted as independent evidence from the Golgi-domain row.",
+      "transferBoundary": "Transfer only to organelle-contact and senescence contact-site vocabulary; do not count as an additional independent source beyond C2LTB5-SRC-05-2.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis or individual death-date output",
+        "source is used beyond its population, review, model-organism, disease, cell-biology or source-lineage role without local review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population boundary and transfer boundary needed for bounded artifact fill",
+        "duplicate cross-domain source reuse is counted as independent evidence rather than source-route lineage"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 organelle contact-site and intercompartmental communication extraction register",
+        "variables": [
+          "membrane-contact-site-integrity",
+          "calcium-transfer-stability",
+          "lipid-transfer-flux",
+          "organelle-stress-propagation",
+          "mitochondria-er-lysosome-crosstalk"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, then fresh review, before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, preserve duplicate-source and no-open-fulltext boundaries, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB5-EXT-014",
+      "domainId": "organelle-contact-sites-intercompartmental-communication-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/organelle-contact-sites-intercompartmental-communication-continuity",
+      "sourceRefId": "C2LTB5-SRC-07-2",
+      "sourceTitle": "Mitochondria-associated membranes (MAMs): molecular organization, cellular functions, and their role in health and disease.",
+      "sourceUrl": "https://europepmc.org/article/MED/41071679",
+      "extractionStatus": "completed-c2ltb5-source-context-extraction",
+      "sourceAccessStatus": "pmc-open-fulltext-abstract-aligned",
+      "sourceRole": "mam-organization-health-disease-review-anchor",
+      "exactClaimUse": "Can support source-context framing that mitochondria-associated membranes are specialized ER-mitochondria contact sites coordinating lipid transfer, calcium signaling, metabolic regulation, autophagy and mitophagy, and that MAM dysfunction is implicated in multiple diseases.",
+      "endpointDefinition": "Candidate endpoints include ER-mitochondria distance, tethering proteins, IP3R-GRP75-VDAC1 complex, sigma-1 receptor, lipid transfer, calcium signaling, autophagy/mitophagy and disease-associated MAM dysfunction.",
+      "populationOrSetting": "Cell biology health-and-disease review context, including neurodegeneration examples; not a clinical intervention dataset.",
+      "effectOrMechanismSignal": "Mechanism signal is physical contact-site organization coordinating organelle communication and quality control.",
+      "uncertaintyOrBias": "Review-level mechanistic synthesis; disease examples do not establish broad causal or therapeutic efficacy without context-specific evidence.",
+      "transferBoundary": "Transfer only to MAM/contact-site model variables and mechanism cards; do not use for individual disease prediction or treatment prioritization.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis or individual death-date output",
+        "source is used beyond its population, review, model-organism, disease, cell-biology or source-lineage role without local review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population boundary and transfer boundary needed for bounded artifact fill",
+        "duplicate cross-domain source reuse is counted as independent evidence rather than source-route lineage"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 organelle contact-site and intercompartmental communication extraction register",
+        "variables": [
+          "membrane-contact-site-integrity",
+          "calcium-transfer-stability",
+          "lipid-transfer-flux",
+          "organelle-stress-propagation",
+          "mitochondria-er-lysosome-crosstalk"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, then fresh review, before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, preserve duplicate-source and no-open-fulltext boundaries, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB5-EXT-015",
+      "domainId": "cytoskeleton-mechanotransduction-cellular-mechanics-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/cytoskeleton-mechanotransduction-cellular-mechanics-continuity",
+      "sourceRefId": "C2LTB5-SRC-08-1",
+      "sourceTitle": "The cellular mechanobiology of aging.",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8102302/",
+      "extractionStatus": "completed-c2ltb5-source-context-extraction",
+      "sourceAccessStatus": "pmc-fulltext-abstract-aligned",
+      "sourceRole": "cellular-mechanobiology-aging-review-anchor",
+      "exactClaimUse": "Can support source-context framing that aging changes cytoskeleton structure, mechanosensitive signaling, intracellular forces and mechanotransduction, contributing to dysfunction across cardiovascular, musculoskeletal, skin and immune systems.",
+      "endpointDefinition": "Candidate endpoints include cytoskeleton structure, mechanosensitive signaling, cellular force state, extracellular biomechanical signal sensing, mechanotransduction and organ-system dysfunction.",
+      "populationOrSetting": "Aging mechanobiology review context across organ systems; not an intervention trial.",
+      "effectOrMechanismSignal": "Mechanism signal is progressive cellular mechanical decline affecting how cells sense and adapt to tissue-level biomechanical environments.",
+      "uncertaintyOrBias": "Review-level synthesis; organ-specific mechanisms and causal weights differ and require downstream sources before model use.",
+      "transferBoundary": "Transfer only to cellular mechanics and mechanotransduction variable framing; do not use as proof of specific mechanotherapy efficacy.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis or individual death-date output",
+        "source is used beyond its population, review, model-organism, disease, cell-biology or source-lineage role without local review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population boundary and transfer boundary needed for bounded artifact fill",
+        "duplicate cross-domain source reuse is counted as independent evidence rather than source-route lineage"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 cytoskeleton, mechanotransduction and cellular mechanics extraction register",
+        "variables": [
+          "cytoskeletal-integrity",
+          "nuclear-mechanics",
+          "mechanotransduction-signal",
+          "ecm-stiffness-coupling",
+          "cell-migration-division-capacity"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, then fresh review, before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, preserve duplicate-source and no-open-fulltext boundaries, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB5-EXT-016",
+      "domainId": "cytoskeleton-mechanotransduction-cellular-mechanics-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/cytoskeleton-mechanotransduction-cellular-mechanics-continuity",
+      "sourceRefId": "C2LTB5-SRC-08-2",
+      "sourceTitle": "Mechanomedicine: Translating mechanical forces into therapeutic strategies.",
+      "sourceUrl": "https://europepmc.org/article/MED/41356273",
+      "extractionStatus": "completed-c2ltb5-source-context-extraction",
+      "sourceAccessStatus": "pmc-fulltext-abstract-aligned",
+      "sourceRole": "mechanomedicine-translation-review-anchor",
+      "exactClaimUse": "Can support source-context framing that mechanical cues such as stiffness, flow and compression shape cell behavior, tissue function and disease progression, and that tools like organ-on-chip, force imaging and mechanosensors may support mechanomedicine translation.",
+      "endpointDefinition": "Candidate endpoints include stiffness, flow, compression, mechanotransduction, inflammation, aging, fibrosis, tumor invasion, mechanomemory and force-responsive circuits.",
+      "populationOrSetting": "Interdisciplinary mechanomedicine review context spanning diagnostics and therapeutic strategy development.",
+      "effectOrMechanismSignal": "Mechanism signal is mechanical force sensing and transduction as a modifiable channel linking tissue environment to cell behavior.",
+      "uncertaintyOrBias": "Translational review; many applications are early-stage tools or strategies rather than validated clinical interventions.",
+      "transferBoundary": "Transfer only to mechanomedicine toolchain and mechanism framing; do not use for ranking mechanical interventions or clinical recommendations.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis or individual death-date output",
+        "source is used beyond its population, review, model-organism, disease, cell-biology or source-lineage role without local review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population boundary and transfer boundary needed for bounded artifact fill",
+        "duplicate cross-domain source reuse is counted as independent evidence rather than source-route lineage"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 cytoskeleton, mechanotransduction and cellular mechanics extraction register",
+        "variables": [
+          "cytoskeletal-integrity",
+          "nuclear-mechanics",
+          "mechanotransduction-signal",
+          "ecm-stiffness-coupling",
+          "cell-migration-division-capacity"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, then fresh review, before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, preserve duplicate-source and no-open-fulltext boundaries, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB5-EXT-017",
+      "domainId": "ferroptosis-lipid-peroxidation-membrane-resilience-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/ferroptosis-lipid-peroxidation-membrane-resilience-continuity",
+      "sourceRefId": "C2LTB5-SRC-09-1",
+      "sourceTitle": "Implication of ferroptosis in aging.",
+      "sourceUrl": "https://europepmc.org/article/MED/34226536",
+      "extractionStatus": "completed-c2ltb5-source-context-extraction",
+      "sourceAccessStatus": "pmc-open-fulltext-abstract-aligned",
+      "sourceRole": "ferroptosis-aging-review-anchor",
+      "exactClaimUse": "Can support source-context framing that ferroptosis is an iron-dependent regulated cell death process connected to oxidative stress, lipid peroxidation and inflammation in aging contexts.",
+      "endpointDefinition": "Candidate endpoints include iron-dependent cell death, ROS/antioxidant imbalance, lipid peroxidation, inflammation, necrosis/apoptosis/autophagy comparison and tissue-level aging stress.",
+      "populationOrSetting": "Aging and stress-response review context; broad organismal aging framing rather than clinical intervention evidence.",
+      "effectOrMechanismSignal": "Mechanism signal is iron-dependent lipid peroxidation producing membrane damage and regulated cell death under oxidative stress conditions.",
+      "uncertaintyOrBias": "Broad review with heterogeneous evidence; does not quantify tissue-specific ferroptosis burden or intervention benefit.",
+      "transferBoundary": "Transfer only to ferroptosis/lipid-peroxidation mechanism vocabulary; do not use to claim ferroptosis inhibition extends lifespan.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis or individual death-date output",
+        "source is used beyond its population, review, model-organism, disease, cell-biology or source-lineage role without local review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population boundary and transfer boundary needed for bounded artifact fill",
+        "duplicate cross-domain source reuse is counted as independent evidence rather than source-route lineage"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 ferroptosis, lipid peroxidation and membrane resilience extraction register",
+        "variables": [
+          "iron-load",
+          "lipid-peroxidation-burden",
+          "gpx4-gsh-defense",
+          "ferroptosis-susceptibility",
+          "membrane-resilience"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, then fresh review, before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, preserve duplicate-source and no-open-fulltext boundaries, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB5-EXT-018",
+      "domainId": "ferroptosis-lipid-peroxidation-membrane-resilience-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/ferroptosis-lipid-peroxidation-membrane-resilience-continuity",
+      "sourceRefId": "C2LTB5-SRC-09-2",
+      "sourceTitle": "Ferro-aging: A novel paradigm linking iron overload, lipid peroxidation and cellular senescence.",
+      "sourceUrl": "https://europepmc.org/article/MED/42250782",
+      "extractionStatus": "completed-c2ltb5-source-context-extraction",
+      "sourceAccessStatus": "europepmc-abstract-no-open-fulltext-manual-review-needed",
+      "sourceRole": "ferro-aging-paradigm-review-anchor",
+      "exactClaimUse": "Can support source-context framing that age-related iron accumulation can amplify oxidative stress, mitochondrial damage, inflammaging, lipid peroxidation, senescence and ferroptosis within a proposed ferro-aging cascade.",
+      "endpointDefinition": "Candidate endpoints include iron accumulation, lipid peroxidation, mitochondrial damage, inflammaging, ferritinophagy impairment, senescence and ferroptosis susceptibility.",
+      "populationOrSetting": "Aging biology review/paradigm context; no open fulltext in automated access and not a calibrated clinical model.",
+      "effectOrMechanismSignal": "Mechanism signal is iron overload as an amplifier rather than sole driver, connecting lipid peroxidation to senescence and ferroptotic cell death.",
+      "uncertaintyOrBias": "New paradigm language is hypothesis-generating; manual fulltext review is required before artifact promotion.",
+      "transferBoundary": "Transfer only to ferro-aging hypothesis and variable discovery; do not use as settled causal model or intervention ranking evidence.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis or individual death-date output",
+        "source is used beyond its population, review, model-organism, disease, cell-biology or source-lineage role without local review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population boundary and transfer boundary needed for bounded artifact fill",
+        "duplicate cross-domain source reuse is counted as independent evidence rather than source-route lineage"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 ferroptosis, lipid peroxidation and membrane resilience extraction register",
+        "variables": [
+          "iron-load",
+          "lipid-peroxidation-burden",
+          "gpx4-gsh-defense",
+          "ferroptosis-susceptibility",
+          "membrane-resilience"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, then fresh review, before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, preserve duplicate-source and no-open-fulltext boundaries, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB5-EXT-019",
+      "domainId": "nuclear-gateway-nucleocytoplasmic-transport-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/nuclear-gateway-nucleocytoplasmic-transport-continuity",
+      "sourceRefId": "C2LTB5-SRC-10-1",
+      "sourceTitle": "Karyopherins in Proteostasis and Aging.",
+      "sourceUrl": "https://europepmc.org/article/MED/42107721",
+      "extractionStatus": "completed-c2ltb5-source-context-extraction",
+      "sourceAccessStatus": "europepmc-abstract-no-open-fulltext-manual-review-needed",
+      "sourceRole": "karyopherin-proteostasis-aging-review-anchor",
+      "exactClaimUse": "Can support source-context framing that nucleocytoplasmic transport through the nuclear pore complex is part of the proteostasis network, with karyopherins mediating protein partitioning and chaperone-like anti-aggregation functions relevant to aging and age-associated disease.",
+      "endpointDefinition": "Candidate endpoints include karyopherin-mediated import/export, Ran GTPase cycle, NPC transport, protein aggregation, aberrant phase separation and age-associated disease context.",
+      "populationOrSetting": "Proteostasis and aging review context; no open fulltext in automated access.",
+      "effectOrMechanismSignal": "Mechanism signal is nuclear-cytoplasmic partitioning and karyopherin chaperone-like activity preserving protein localization and preventing aggregation.",
+      "uncertaintyOrBias": "Review-level and no automated open fulltext; should not be used as calibrated disease or lifespan evidence without fulltext review.",
+      "transferBoundary": "Transfer only to nucleocytoplasmic transport and proteostasis-variable framing; do not use for treatment recommendations or individual risk prediction.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis or individual death-date output",
+        "source is used beyond its population, review, model-organism, disease, cell-biology or source-lineage role without local review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population boundary and transfer boundary needed for bounded artifact fill",
+        "duplicate cross-domain source reuse is counted as independent evidence rather than source-route lineage"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 nuclear gateway and nucleocytoplasmic transport extraction register",
+        "variables": [
+          "nuclear-pore-integrity",
+          "karyopherin-transport-efficiency",
+          "nucleocytoplasmic-partitioning",
+          "rna-protein-export-load",
+          "nuclear-envelope-stress"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, then fresh review, before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, preserve duplicate-source and no-open-fulltext boundaries, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB5-EXT-020",
+      "domainId": "nuclear-gateway-nucleocytoplasmic-transport-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/nuclear-gateway-nucleocytoplasmic-transport-continuity",
+      "sourceRefId": "C2LTB5-SRC-10-2",
+      "sourceTitle": "Pathologies at the gateway: exploring the link between nucleoporins and inherited diseases.",
+      "sourceUrl": "https://europepmc.org/article/MED/42056597",
+      "extractionStatus": "completed-c2ltb5-source-context-extraction",
+      "sourceAccessStatus": "pmc-open-fulltext-abstract-aligned",
+      "sourceRole": "nucleoporin-inherited-disease-gateway-review-anchor",
+      "exactClaimUse": "Can support source-context framing that nuclear pore complexes are essential gatekeepers maintaining nuclear-cytoplasmic compartmentalization and that nucleoporin defects are linked to inherited diseases with tissue-specific clinical features.",
+      "endpointDefinition": "Candidate endpoints include nucleoporin gene/allele status, NPC transport, nuclear envelope compartmentalization, genotype-phenotype correlations and organ-specific inherited disease features.",
+      "populationOrSetting": "Inherited disease and nucleoporin cell-biology review context; not general aging cohort evidence.",
+      "effectOrMechanismSignal": "Mechanism signal is disruption of nuclear gateway structure/function altering transport and compartment integrity in specific tissues.",
+      "uncertaintyOrBias": "Clinical inherited-disease focus limits transfer to aging; disease mechanisms may be allele- and tissue-specific.",
+      "transferBoundary": "Transfer only to nuclear-gateway failure modes and compartmentalization variables; do not generalize to all aging-related nuclear transport decline.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis or individual death-date output",
+        "source is used beyond its population, review, model-organism, disease, cell-biology or source-lineage role without local review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population boundary and transfer boundary needed for bounded artifact fill",
+        "duplicate cross-domain source reuse is counted as independent evidence rather than source-route lineage"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 nuclear gateway and nucleocytoplasmic transport extraction register",
+        "variables": [
+          "nuclear-pore-integrity",
+          "karyopherin-transport-efficiency",
+          "nucleocytoplasmic-partitioning",
+          "rna-protein-export-load",
+          "nuclear-envelope-stress"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, then fresh review, before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, preserve duplicate-source and no-open-fulltext boundaries, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB5-EXT-021",
+      "domainId": "lymphatic-glymphatic-clearance",
+      "localDomainPath": "domains/c2-source-maintenance/lymphatic-glymphatic-clearance",
+      "sourceRefId": "C2LTB5-SRC-11-1",
+      "sourceTitle": "Impaired Glymphatic Clearance as a Mechanistic Link Between Brain Aging and Neurodegenerative Disease Pathogenesis.",
+      "sourceUrl": "https://europepmc.org/article/MED/42264186",
+      "extractionStatus": "completed-c2ltb5-source-context-extraction",
+      "sourceAccessStatus": "europepmc-abstract-no-open-fulltext-manual-review-needed",
+      "sourceRole": "glymphatic-aging-neurodegeneration-mechanistic-review-anchor",
+      "exactClaimUse": "Can support source-context framing that the glymphatic system promotes CSF-ISF exchange and macromolecular waste clearance, deteriorates with age, and may mechanistically connect brain aging with aggregation-prone protein accumulation and cognitive impairment.",
+      "endpointDefinition": "Candidate endpoints include CSF influx, ISF solute clearance, AQP4 polarization, amyloid-beta/tau/alpha-synuclein clearance, neuroimaging transport markers and cognitive impairment association.",
+      "populationOrSetting": "Brain aging and neurodegenerative disease review context; no open fulltext in automated access.",
+      "effectOrMechanismSignal": "Mechanism signal is age-related impairment of astrocyte, vascular and AQP4-coupled clearance reducing waste removal and promoting pathological protein accumulation.",
+      "uncertaintyOrBias": "Review-level; human neuroimaging associations and experimental evidence need modality-specific review before model variables are calibrated.",
+      "transferBoundary": "Transfer only to glymphatic clearance variable framing and mechanistic hypotheses; do not use for individual dementia prognosis or sleep/clearance intervention ranking.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis or individual death-date output",
+        "source is used beyond its population, review, model-organism, disease, cell-biology or source-lineage role without local review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population boundary and transfer boundary needed for bounded artifact fill",
+        "duplicate cross-domain source reuse is counted as independent evidence rather than source-route lineage"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 lymphatic/glymphatic clearance and brain waste removal extraction register",
+        "variables": [
+          "lymphatic-flow",
+          "glymphatic-clearance-rate",
+          "aqp4-polarization",
+          "sleep-dependent-waste-clearance",
+          "meningeal-lymphatic-function"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, then fresh review, before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, preserve duplicate-source and no-open-fulltext boundaries, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB5-EXT-022",
+      "domainId": "lymphatic-glymphatic-clearance",
+      "localDomainPath": "domains/c2-source-maintenance/lymphatic-glymphatic-clearance",
+      "sourceRefId": "C2LTB5-SRC-11-2",
+      "sourceTitle": "Glymphatic system impairment in neurological disorders: potential mechanisms and therapeutic targets.",
+      "sourceUrl": "https://europepmc.org/article/MED/42283969",
+      "extractionStatus": "completed-c2ltb5-source-context-extraction",
+      "sourceAccessStatus": "pmc-open-fulltext-abstract-aligned",
+      "sourceRole": "glymphatic-neurological-disorders-review-anchor",
+      "exactClaimUse": "Can support source-context framing that glymphatic dysfunction can be both consequence and driver of neurological disorders by impairing glial-dependent perivascular waste clearance and coupling CNS clearance with immune and vascular pathology.",
+      "endpointDefinition": "Candidate endpoints include AQP4 polarization, CSF-ISF exchange, neurotoxic waste accumulation, neuroinflammation, gliovascular remodeling and disease progression context.",
+      "populationOrSetting": "Neurological disorder review context; broader than aging alone and not an intervention efficacy trial.",
+      "effectOrMechanismSignal": "Mechanism signal is impaired perivascular convective clearance creating positive feedback with neuroinflammation, vascular remodeling and waste accumulation.",
+      "uncertaintyOrBias": "Mechanistic and therapeutic-target review; targetability language requires trial-level evidence before any clinical or predictive use.",
+      "transferBoundary": "Transfer only to lymphatic/glymphatic clearance mechanism and endpoint vocabulary; do not use for clinical decision support.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis or individual death-date output",
+        "source is used beyond its population, review, model-organism, disease, cell-biology or source-lineage role without local review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population boundary and transfer boundary needed for bounded artifact fill",
+        "duplicate cross-domain source reuse is counted as independent evidence rather than source-route lineage"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 lymphatic/glymphatic clearance and brain waste removal extraction register",
+        "variables": [
+          "lymphatic-flow",
+          "glymphatic-clearance-rate",
+          "aqp4-polarization",
+          "sleep-dependent-waste-clearance",
+          "meningeal-lymphatic-function"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, then fresh review, before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, preserve duplicate-source and no-open-fulltext boundaries, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB5-EXT-023",
+      "domainId": "gastrointestinal-barrier-absorption",
+      "localDomainPath": "domains/c2-source-maintenance/gastrointestinal-barrier-absorption",
+      "sourceRefId": "C2LTB5-SRC-12-1",
+      "sourceTitle": "Intestinal barrier dysfunction: an evolutionarily conserved hallmark of aging.",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10184675/",
+      "extractionStatus": "completed-c2ltb5-source-context-extraction",
+      "sourceAccessStatus": "pmc-open-fulltext-abstract-aligned",
+      "sourceRole": "intestinal-barrier-aging-conserved-hallmark-review-anchor",
+      "exactClaimUse": "Can support source-context framing that intestinal barrier dysfunction is an evolutionarily conserved feature of aging across multiple organisms and is linked to microbial alterations, immune activation, metabolic changes, systemic health decline and mortality.",
+      "endpointDefinition": "Candidate endpoints include intestinal epithelial integrity, barrier permeability, microbial alteration, immune response, metabolic alteration, systemic health decline and mortality association.",
+      "populationOrSetting": "Comparative aging biology across worms, flies, fish, rodents and primates; not direct human intervention evidence.",
+      "effectOrMechanismSignal": "Mechanism signal is loss of epithelial barrier integrity enabling microbial/systemic inflammatory and metabolic consequences that affect organismal health.",
+      "uncertaintyOrBias": "Cross-species synthesis; human transfer and causal direction require species- and assay-specific review.",
+      "transferBoundary": "Transfer only to intestinal barrier as an aging-linked source-maintenance variable; do not use to prescribe gut interventions or individual lifespan prediction.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis or individual death-date output",
+        "source is used beyond its population, review, model-organism, disease, cell-biology or source-lineage role without local review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population boundary and transfer boundary needed for bounded artifact fill",
+        "duplicate cross-domain source reuse is counted as independent evidence rather than source-route lineage"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 gastrointestinal barrier, absorption and systemic exposure extraction register",
+        "variables": [
+          "intestinal-permeability",
+          "nutrient-absorption-efficiency",
+          "mucosal-immune-tone",
+          "microbiome-barrier-crosstalk",
+          "systemic-inflammation-leakage"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, then fresh review, before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, preserve duplicate-source and no-open-fulltext boundaries, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB5-EXT-024",
+      "domainId": "gastrointestinal-barrier-absorption",
+      "localDomainPath": "domains/c2-source-maintenance/gastrointestinal-barrier-absorption",
+      "sourceRefId": "C2LTB5-SRC-12-2",
+      "sourceTitle": "The Intestinal Barrier: A Multilayered Gatekeeper Against Systemic Disease.",
+      "sourceUrl": "https://europepmc.org/article/MED/42281745",
+      "extractionStatus": "completed-c2ltb5-source-context-extraction",
+      "sourceAccessStatus": "pmc-open-fulltext-abstract-aligned",
+      "sourceRole": "intestinal-barrier-multilayer-systemic-disease-review-anchor",
+      "exactClaimUse": "Can support source-context framing that the intestinal barrier performs nutrient absorption and defense through physical, chemical, microbiological and immunological layers, and that disruption increases permeability and systemic disease risk context.",
+      "endpointDefinition": "Candidate endpoints include physical barrier integrity, mucus/chemical barrier state, microbiological barrier, mucosal immune barrier, intestinal permeability and small/large intestine regional differences.",
+      "populationOrSetting": "Intestinal barrier and systemic disease review context; not focused only on aging or one intervention.",
+      "effectOrMechanismSignal": "Mechanism signal is multilayer barrier failure allowing harmful substances and pathogens to translocate into systemic circulation.",
+      "uncertaintyOrBias": "Review-level evidence; leaky-gut terminology requires careful operational definition and cannot support broad unsupported claims.",
+      "transferBoundary": "Transfer only to barrier architecture and endpoint vocabulary; do not use as evidence for specific dietary, supplement or microbiome interventions.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis or individual death-date output",
+        "source is used beyond its population, review, model-organism, disease, cell-biology or source-lineage role without local review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population boundary and transfer boundary needed for bounded artifact fill",
+        "duplicate cross-domain source reuse is counted as independent evidence rather than source-route lineage"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 gastrointestinal barrier, absorption and systemic exposure extraction register",
+        "variables": [
+          "intestinal-permeability",
+          "nutrient-absorption-efficiency",
+          "mucosal-immune-tone",
+          "microbiome-barrier-crosstalk",
+          "systemic-inflammation-leakage"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, then fresh review, before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, preserve duplicate-source and no-open-fulltext boundaries, then send eligible rows to independent fresh review before bounded artifact promotion."
+    }
+  ],
+  "nonClaims": [
+    "This register does not complete local source-context review or independent fresh review.",
+    "This register does not create reviewed Source Cards, variable cards, endpoint cards, uncertainty cards, transfer-boundary cards or downgrade-check artifacts.",
+    "This register does not resolve no-open-fulltext/manual-review needs or duplicate cross-domain source reuse; it records them as boundaries.",
+    "This register does not authorize clinical advice, individual prediction, intervention ranking, calibrated model admission or individual death-date output.",
+    "This register does not claim that any B5 source proves human longevity escape velocity, effective immortality or intervention efficacy."
+  ],
+  "indexRequirements": [
+    "README.md",
+    "docs/reference/README.md",
+    "docs/reference/human-infra-maturity-roadmap.md",
+    "tools/README.md"
+  ]
+}
