@@ -85,6 +85,8 @@ longevity-evidence/
 │   ├── lev-route-card-template.md
 │   ├── lev-source-cards.md
 │   ├── lev-mainstream-routes.md
+│   ├── life-path-data-card-template.md
+│   ├── life-path-data-source-cards.md
 │   ├── mvp-roadmap.md
 │   └── product-brief.md
 └── scripts/
@@ -108,6 +110,8 @@ longevity-evidence/
 - `docs/lev-route-card-template.md`：LEV 路线卡契约，规定新路线必须填写的变量、概率门、证据和禁止外推边界。
 - `docs/lev-source-cards.md`：LEV Source Cards，保存来源能支持和不能支持的主张边界。
 - `docs/lev-mainstream-routes.md`：长寿逃逸速度主流路线、官方/论文来源信号、现有研究域映射和证据边界。
+- `docs/life-path-data-source-cards.md`：生命路径候选数据源 Source Cards，保存每个官方数据源可能支持的变量、不能支持的结论、接入前缺口和下一步 Data Card 要求。
+- `docs/life-path-data-card-template.md`：真实队列进入模型前必须填写的数据卡模板，约束治理、研究设计、结局、预测变量、数据质量、模型用途、决策和来源追踪。
 - `docs/collection-run-*.md`：历史采集记录和质量风险。
 - `data/manual/interventions.json`：首批 20 个干预对象、类别、别名和检索词。
 - `data/manual/higher_order_effects.tsv`：LEV 二阶 / 多阶效应模型输入，供 Web 导出脚本生成多阶飞轮图。
@@ -120,7 +124,7 @@ longevity-evidence/
 - `scripts/collect_mvp_data.py`：采集 PubMed、OpenAlex、ClinicalTrials.gov 和 openFDA 标签数据。
 - `scripts/collect_core_data.py`：采集 HAGR、PubChem、openFDA event 和 Drugs@FDA 数据。
 - `scripts/run_life_path_toy_model.py`：读取合成场景并导出 `web/src/data/life-path-toy-model.json`，用于 `/model/` 的最小可运行定量展示。
-- `scripts/audit_life_path_toy_model.py`：审计生成后的生命路径 toy model、校准预备契约和候选数据源注册表，输出机器可读 JSON 和人可读 Markdown，检查模型卡、来源 hash、生存曲线、概率范围、LEV 开放边界、校准预备字段、候选数据源治理边界和禁止个体死亡日期字段。
+- `scripts/audit_life_path_toy_model.py`：审计生成后的生命路径 toy model、校准预备契约、候选数据源注册表、数据源 Source Cards 和 Data Card 模板，输出机器可读 JSON 和人可读 Markdown，检查模型卡、来源 hash、生存曲线、概率范围、LEV 开放边界、校准预备字段、候选数据源治理边界、数据卡准入文档和禁止个体死亡日期字段。
 
 ## 依赖关系
 

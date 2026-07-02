@@ -33,6 +33,22 @@ DEFAULT_DATA_SOURCES = (
     / "manual"
     / "life_path_data_source_candidates.json"
 )
+DEFAULT_SOURCE_CARDS = (
+    REPO_ROOT
+    / "domains"
+    / "c1-boundary-rewriting"
+    / "longevity-evidence"
+    / "docs"
+    / "life-path-data-source-cards.md"
+)
+DEFAULT_DATA_CARD_TEMPLATE = (
+    REPO_ROOT
+    / "domains"
+    / "c1-boundary-rewriting"
+    / "longevity-evidence"
+    / "docs"
+    / "life-path-data-card-template.md"
+)
 REQUIRED_MODEL_CARD_FIELDS = {
     "modelName",
     "modelClass",
@@ -112,6 +128,17 @@ REQUIRED_COVERAGE_TAGS = {
     "resourceSocial",
     "externalValidation",
 }
+REQUIRED_DATA_CARD_TEMPLATE_SECTIONS = {
+    "Header",
+    "Governance",
+    "Study Design",
+    "Outcomes",
+    "Predictors",
+    "Data Quality",
+    "Model Use",
+    "Decision",
+    "Source Trace",
+}
 
 
 def load_json(path: Path) -> dict[str, Any]:
@@ -120,6 +147,10 @@ def load_json(path: Path) -> dict[str, Any]:
     if not isinstance(data, dict):
         raise ValueError(f"{path} must contain a JSON object")
     return data
+
+
+def load_text(path: Path) -> str:
+    return path.read_text(encoding="utf-8")
 
 
 def sha256_file(path: Path) -> str:
@@ -508,11 +539,125 @@ def audit_data_sources(data_sources: dict[str, Any], data_sources_path: Path) ->
     }
 
 
+def audit_source_card_docs(
+    data_sources: dict[str, Any],
+    source_cards_path: Path,
+    data_card_template_path: Path,
+) -> dict[str, Any]:
+    checks: list[dict[str, Any]] = []
+
+    source_cards_exists = source_cards_path.exists()
+    data_card_template_exists = data_card_template_path.exists()
+    add_check(
+        checks,
+        "source-cards-doc-exists",
+        status_from_bool(source_cards_exists),
+        str(source_cards_path.relative_to(REPO_ROOT)),
+    )
+    add_check(
+        checks,
+        "data-card-template-exists",
+        status_from_bool(data_card_template_exists),
+        str(data_card_template_path.relative_to(REPO_ROOT)),
+    )
+
+    source_cards_text = load_text(source_cards_path) if source_cards_exists else ""
+    data_card_template_text = load_text(data_card_template_path) if data_card_template_exists else ""
+    candidates = data_sources.get("candidates")
+    candidate_ids: list[str] = []
+    official_urls: list[str] = []
+    if isinstance(candidates, list):
+        for candidate in candidates:
+            if not isinstance(candidate, dict):
+                continue
+            candidate_id = candidate.get("id")
+            official_url = candidate.get("officialUrl")
+            if isinstance(candidate_id, str):
+                candidate_ids.append(candidate_id)
+            if isinstance(official_url, str):
+                official_urls.append(official_url)
+
+    missing_ids = [candidate_id for candidate_id in candidate_ids if candidate_id not in source_cards_text]
+    add_check(
+        checks,
+        "source-cards-cover-candidate-ids",
+        status_from_bool(source_cards_exists and not missing_ids),
+        f"missing_ids={missing_ids}",
+    )
+
+    missing_urls = [official_url for official_url in official_urls if official_url not in source_cards_text]
+    add_check(
+        checks,
+        "source-cards-cover-official-urls",
+        status_from_bool(source_cards_exists and not missing_urls),
+        f"missing_urls={missing_urls}",
+    )
+
+    source_boundary_ok = all(
+        token.lower() in source_cards_text.lower()
+        for token in (
+            "candidate-source-card-only",
+            "未下载任何真实数据",
+            "未建立任何校准",
+            "no individual death-date prediction",
+            "no external validation",
+        )
+    )
+    add_check(
+        checks,
+        "source-cards-boundary-language",
+        status_from_bool(source_cards_exists and source_boundary_ok),
+        "source cards must preserve candidate-only, no-data, no-calibration, no-individual-prediction, and no-validation boundaries",
+    )
+
+    missing_template_sections = [
+        section
+        for section in sorted(REQUIRED_DATA_CARD_TEMPLATE_SECTIONS)
+        if f"## {section}" not in data_card_template_text
+    ]
+    add_check(
+        checks,
+        "data-card-template-required-sections",
+        status_from_bool(data_card_template_exists and not missing_template_sections),
+        f"missing_sections={missing_template_sections}",
+    )
+
+    template_boundary_ok = all(
+        token.lower() in data_card_template_text.lower()
+        for token in (
+            "No individual death-date prediction",
+            "No personal medical advice",
+            "No personal longevity ranking",
+            "No model calibration claim before validation diagnostics exist",
+        )
+    )
+    add_check(
+        checks,
+        "data-card-template-prohibited-outputs",
+        status_from_bool(data_card_template_exists and template_boundary_ok),
+        "data card template must block individual death-date prediction, personal medical advice, personal longevity ranking, and premature calibration claims",
+    )
+
+    source_card_sha = sha256_file(source_cards_path) if source_cards_exists else None
+    data_card_template_sha = sha256_file(data_card_template_path) if data_card_template_exists else None
+    return {
+        "sourceCardsPath": str(source_cards_path.relative_to(REPO_ROOT)),
+        "sourceCardsSha256": source_card_sha,
+        "dataCardTemplatePath": str(data_card_template_path.relative_to(REPO_ROOT)),
+        "dataCardTemplateSha256": data_card_template_sha,
+        "status": "PASS" if summarize_checks(checks)["fail"] == 0 else "FAIL",
+        "checks": checks,
+        "summary": summarize_checks(checks),
+    }
+
+
 def audit_model(
     data: dict[str, Any],
     model_path: Path,
     readiness_path: Path,
     data_sources_path: Path,
+    source_cards_path: Path,
+    data_card_template_path: Path,
 ) -> dict[str, Any]:
     checks: list[dict[str, Any]] = []
     schema_version = data.get("schemaVersion")
@@ -673,9 +818,16 @@ def audit_model(
         },
     ]
     readiness_audit = audit_readiness(load_json(readiness_path), readiness_path)
-    data_sources_audit = audit_data_sources(load_json(data_sources_path), data_sources_path)
+    data_sources = load_json(data_sources_path)
+    data_sources_audit = audit_data_sources(data_sources, data_sources_path)
+    source_card_docs_audit = audit_source_card_docs(
+        data_sources,
+        source_cards_path,
+        data_card_template_path,
+    )
     checks.extend(readiness_audit["checks"])
     checks.extend(data_sources_audit["checks"])
+    checks.extend(source_card_docs_audit["checks"])
     failed = [check for check in checks if check["status"] == "FAIL"]
     overall = "PASS" if not failed else "FAIL"
     return {
@@ -689,6 +841,7 @@ def audit_model(
         "standardAlignment": standard_alignment,
         "calibrationReadiness": readiness_audit,
         "dataSourceCandidates": data_sources_audit,
+        "sourceCardDocs": source_card_docs_audit,
     }
 
 
@@ -726,6 +879,15 @@ def render_markdown(audit: dict[str, Any]) -> str:
             f"- Registry status: `{audit['dataSourceCandidates']['status']}`",
             "- Boundary: candidate sources are mapped, but no data has been downloaded, accessed, fitted, calibrated, or validated.",
             "",
+            "## Source Card Docs",
+            "",
+            f"- Source Cards path: `{audit['sourceCardDocs']['sourceCardsPath']}`",
+            f"- Source Cards SHA-256: `{audit['sourceCardDocs']['sourceCardsSha256']}`",
+            f"- Data Card template path: `{audit['sourceCardDocs']['dataCardTemplatePath']}`",
+            f"- Data Card template SHA-256: `{audit['sourceCardDocs']['dataCardTemplateSha256']}`",
+            f"- Source Card docs status: `{audit['sourceCardDocs']['status']}`",
+            "- Boundary: source cards and the data-card template only prove data-governance readiness scaffolding; they do not prove data access, field availability, calibration, or validation.",
+            "",
             "## Standard Alignment",
             "",
             "| Standard | Local gate | Status | Boundary |",
@@ -753,6 +915,8 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--model", type=Path, default=DEFAULT_MODEL)
     parser.add_argument("--readiness", type=Path, default=DEFAULT_READINESS)
     parser.add_argument("--data-sources", type=Path, default=DEFAULT_DATA_SOURCES)
+    parser.add_argument("--source-cards", type=Path, default=DEFAULT_SOURCE_CARDS)
+    parser.add_argument("--data-card-template", type=Path, default=DEFAULT_DATA_CARD_TEMPLATE)
     parser.add_argument("--json-out", type=Path, default=DEFAULT_JSON_OUT)
     parser.add_argument("--md-out", type=Path, default=DEFAULT_MD_OUT)
     return parser.parse_args()
@@ -763,7 +927,16 @@ def main() -> int:
     model_path = args.model.resolve()
     readiness_path = args.readiness.resolve()
     data_sources_path = args.data_sources.resolve()
-    audit = audit_model(load_json(model_path), model_path, readiness_path, data_sources_path)
+    source_cards_path = args.source_cards.resolve()
+    data_card_template_path = args.data_card_template.resolve()
+    audit = audit_model(
+        load_json(model_path),
+        model_path,
+        readiness_path,
+        data_sources_path,
+        source_cards_path,
+        data_card_template_path,
+    )
     args.json_out.parent.mkdir(parents=True, exist_ok=True)
     with args.json_out.open("w", encoding="utf-8") as handle:
         json.dump(audit, handle, ensure_ascii=False, indent=2)

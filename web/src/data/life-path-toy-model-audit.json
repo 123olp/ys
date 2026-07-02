@@ -1,8 +1,8 @@
 {
   "schemaVersion": "human-infra.life-path-toy-audit.v1",
-  "generatedAt": "2026-07-02T00:55:43.031199+00:00",
+  "generatedAt": "2026-07-02T01:06:48.126895+00:00",
   "modelPath": "web/src/data/life-path-toy-model.json",
-  "modelSha256": "7852d4d10f70ad5829f7d9c2bbac39641a120eb766ca6b5689073d8d4d45280e",
+  "modelSha256": "1de891d93a814c8075b0404d774949fe4f76b59e58ac002dd7a944ad07cc153b",
   "overallStatus": "PASS",
   "checks": [
     {
@@ -209,10 +209,45 @@
       "id": "data-sources-next-work",
       "status": "PASS",
       "detail": "registry must point toward Source Cards, variable dictionaries, data cards, and governed acquisition"
+    },
+    {
+      "id": "source-cards-doc-exists",
+      "status": "PASS",
+      "detail": "domains/c1-boundary-rewriting/longevity-evidence/docs/life-path-data-source-cards.md"
+    },
+    {
+      "id": "data-card-template-exists",
+      "status": "PASS",
+      "detail": "domains/c1-boundary-rewriting/longevity-evidence/docs/life-path-data-card-template.md"
+    },
+    {
+      "id": "source-cards-cover-candidate-ids",
+      "status": "PASS",
+      "detail": "missing_ids=[]"
+    },
+    {
+      "id": "source-cards-cover-official-urls",
+      "status": "PASS",
+      "detail": "missing_urls=[]"
+    },
+    {
+      "id": "source-cards-boundary-language",
+      "status": "PASS",
+      "detail": "source cards must preserve candidate-only, no-data, no-calibration, no-individual-prediction, and no-validation boundaries"
+    },
+    {
+      "id": "data-card-template-required-sections",
+      "status": "PASS",
+      "detail": "missing_sections=[]"
+    },
+    {
+      "id": "data-card-template-prohibited-outputs",
+      "status": "PASS",
+      "detail": "data card template must block individual death-date prediction, personal medical advice, personal longevity ranking, and premature calibration claims"
     }
   ],
   "summary": {
-    "pass": 41,
+    "pass": 48,
     "warn": 0,
     "fail": 0
   },
@@ -403,6 +438,55 @@
     ],
     "summary": {
       "pass": 11,
+      "warn": 0,
+      "fail": 0
+    }
+  },
+  "sourceCardDocs": {
+    "sourceCardsPath": "domains/c1-boundary-rewriting/longevity-evidence/docs/life-path-data-source-cards.md",
+    "sourceCardsSha256": "178013a5d3a45388d735c297df0c566415dc28d6aeec8891823a1d21dedb7b68",
+    "dataCardTemplatePath": "domains/c1-boundary-rewriting/longevity-evidence/docs/life-path-data-card-template.md",
+    "dataCardTemplateSha256": "2ad38f8931e365e78b471ef03087f7eeb1624f87ff96be615d950c890fae94c2",
+    "status": "PASS",
+    "checks": [
+      {
+        "id": "source-cards-doc-exists",
+        "status": "PASS",
+        "detail": "domains/c1-boundary-rewriting/longevity-evidence/docs/life-path-data-source-cards.md"
+      },
+      {
+        "id": "data-card-template-exists",
+        "status": "PASS",
+        "detail": "domains/c1-boundary-rewriting/longevity-evidence/docs/life-path-data-card-template.md"
+      },
+      {
+        "id": "source-cards-cover-candidate-ids",
+        "status": "PASS",
+        "detail": "missing_ids=[]"
+      },
+      {
+        "id": "source-cards-cover-official-urls",
+        "status": "PASS",
+        "detail": "missing_urls=[]"
+      },
+      {
+        "id": "source-cards-boundary-language",
+        "status": "PASS",
+        "detail": "source cards must preserve candidate-only, no-data, no-calibration, no-individual-prediction, and no-validation boundaries"
+      },
+      {
+        "id": "data-card-template-required-sections",
+        "status": "PASS",
+        "detail": "missing_sections=[]"
+      },
+      {
+        "id": "data-card-template-prohibited-outputs",
+        "status": "PASS",
+        "detail": "data card template must block individual death-date prediction, personal medical advice, personal longevity ranking, and premature calibration claims"
+      }
+    ],
+    "summary": {
+      "pass": 7,
       "warn": 0,
       "fail": 0
     }

@@ -2,8 +2,8 @@
 
 - Overall status: `PASS`
 - Model path: `web/src/data/life-path-toy-model.json`
-- Model SHA-256: `7852d4d10f70ad5829f7d9c2bbac39641a120eb766ca6b5689073d8d4d45280e`
-- Generated at: `2026-07-02T00:55:43.031199+00:00`
+- Model SHA-256: `1de891d93a814c8075b0404d774949fe4f76b59e58ac002dd7a944ad07cc153b`
+- Generated at: `2026-07-02T01:06:48.126895+00:00`
 
 ## Checks
 
@@ -50,6 +50,13 @@
 | `data-sources-coverage-summary` | `PASS` | coverage summary must map required model needs to candidate IDs |
 | `data-sources-prohibited-claims` | `PASS` | each candidate must block individual prediction and calibration/causal overclaim |
 | `data-sources-next-work` | `PASS` | registry must point toward Source Cards, variable dictionaries, data cards, and governed acquisition |
+| `source-cards-doc-exists` | `PASS` | domains/c1-boundary-rewriting/longevity-evidence/docs/life-path-data-source-cards.md |
+| `data-card-template-exists` | `PASS` | domains/c1-boundary-rewriting/longevity-evidence/docs/life-path-data-card-template.md |
+| `source-cards-cover-candidate-ids` | `PASS` | missing_ids=[] |
+| `source-cards-cover-official-urls` | `PASS` | missing_urls=[] |
+| `source-cards-boundary-language` | `PASS` | source cards must preserve candidate-only, no-data, no-calibration, no-individual-prediction, and no-validation boundaries |
+| `data-card-template-required-sections` | `PASS` | missing_sections=[] |
+| `data-card-template-prohibited-outputs` | `PASS` | data card template must block individual death-date prediction, personal medical advice, personal longevity ranking, and premature calibration claims |
 
 ## Calibration Readiness
 
@@ -64,6 +71,15 @@
 - Registry SHA-256: `da21ba7fa51d964ca86913b7a1820159a981a25cced8d3f304f4efd24f35d82e`
 - Registry status: `PASS`
 - Boundary: candidate sources are mapped, but no data has been downloaded, accessed, fitted, calibrated, or validated.
+
+## Source Card Docs
+
+- Source Cards path: `domains/c1-boundary-rewriting/longevity-evidence/docs/life-path-data-source-cards.md`
+- Source Cards SHA-256: `178013a5d3a45388d735c297df0c566415dc28d6aeec8891823a1d21dedb7b68`
+- Data Card template path: `domains/c1-boundary-rewriting/longevity-evidence/docs/life-path-data-card-template.md`
+- Data Card template SHA-256: `2ad38f8931e365e78b471ef03087f7eeb1624f87ff96be615d950c890fae94c2`
+- Source Card docs status: `PASS`
+- Boundary: source cards and the data-card template only prove data-governance readiness scaffolding; they do not prove data access, field availability, calibration, or validation.
 
 ## Standard Alignment
 

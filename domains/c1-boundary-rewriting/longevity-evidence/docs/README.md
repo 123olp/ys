@@ -13,6 +13,8 @@ This directory stores the Longevity Evidence domain model, data source plans, co
 - `lev-route-card-template.md`: reusable route-card contract for new LEV routes.
 - `lev-source-cards.md`: first source-card batch for LEV higher-order effect modeling.
 - `lev-mainstream-routes.md`: mainstream longevity escape velocity route map, source signals, and cross-domain routing.
+- `life-path-data-source-cards.md`: candidate source cards for HRS, NCHS linked mortality, UK Biobank, All of Us, NHATS, ELSA, SHARE, and Framingham before real model calibration.
+- `life-path-data-card-template.md`: required governance and study-design template before any candidate source can be used for calibration, validation, benchmarking, or display.
 - `mvp-roadmap.md`: first 0-6 week product path.
 - `collection-run-2026-05-29.md`: first MVP collection run.
 - `collection-run-2026-05-29-expanded.md`: expanded core data collection run.
