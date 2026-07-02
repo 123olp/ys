@@ -1,6 +1,6 @@
 {
   "schemaVersion": "human-infra.life-path-nhats-route-field-discovery-validation.v1",
-  "generatedAt": "2026-07-02T04:08:40.843658+00:00",
+  "generatedAt": "2026-07-02T04:23:56.885323+00:00",
   "sourceId": "nhats",
   "registerPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_route_field_discovery_register.json",
   "registerSha256": "32d86995a0438e2104e6850334eefa63b30176b0767dd2229bc73a517ef5ade4",

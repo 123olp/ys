@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "human-infra.life-path-nhats-colectica-value-label-validation.v1",
+  "generatedAt": "2026-07-02T04:23:56.989276+00:00",
+  "sourceId": "nhats",
+  "protocolPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_value_label_review_protocol.json",
+  "protocolSha256": "bd5130152b3c57d5a6d8cdc767df85bc8a10e19e1225738f13940bd3734ff416",
+  "overallStatus": "PASS",
+  "summary": {
+    "pass": 11,
+    "fail": 0
+  },
+  "checks": [
+    {
+      "id": "schema-version",
+      "status": "PASS",
+      "detail": "schemaVersion='human-infra.life-path-nhats-colectica-value-label-review-protocol.v1'"
+    },
+    {
+      "id": "protocol-identity",
+      "status": "PASS",
+      "detail": "protocol must bind NHATS, route-field discovery, missingness route, variable matrix and value-labels-not-reviewed status"
+    },
+    {
+      "id": "decision-boundary",
+      "status": "PASS",
+      "detail": "only the review protocol may be ready; login, labels, route crosswalk, classifier, endpoint, weighted counts, export, calibration and individual prediction must remain false"
+    },
+    {
+      "id": "required-source-evidence",
+      "status": "PASS",
+      "detail": "missing=[]"
+    },
+    {
+      "id": "review-artifact-requirements",
+      "status": "PASS",
+      "detail": "missing=[]"
+    },
+    {
+      "id": "route-field-review-units",
+      "status": "PASS",
+      "detail": "missing=[]"
+    },
+    {
+      "id": "sensitive-death-date-exclusion",
+      "status": "PASS",
+      "detail": "excluded=['dm13mthdied', 'dm13yrdied', 'dm14mthdied', 'dm14yrdied']"
+    },
+    {
+      "id": "blocking-gates",
+      "status": "PASS",
+      "detail": "missing=[]"
+    },
+    {
+      "id": "prohibited-actions",
+      "status": "PASS",
+      "detail": "protocol must prohibit unreviewed value-label tables, crosswalk-as-values, route classifier, weighted counts and public AI upload"
+    },
+    {
+      "id": "official-source-trace",
+      "status": "PASS",
+      "detail": "sourceTrace must include official Colectica, conditions, User Guide and R13/R14 crosswalk URLs"
+    },
+    {
+      "id": "no-confirmed-value-label-map",
+      "status": "PASS",
+      "detail": "prohibited_keys=[]"
+    }
+  ],
+  "boundary": "The Colectica value-label review protocol is present, but value labels, question text, universe/skip logic, route-value crosswalk, missing-code map, classifier promotion, weighted route counts, public export, calibration and individual prediction remain blocked."
+}

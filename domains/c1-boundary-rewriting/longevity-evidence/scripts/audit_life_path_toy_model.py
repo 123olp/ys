@@ -200,6 +200,22 @@ DEFAULT_NHATS_ROUTE_FIELD_DISCOVERY_VALIDATION = (
     / "data"
     / "life-path-nhats-route-field-discovery-validation.json"
 )
+DEFAULT_NHATS_COLECTICA_VALUE_LABEL_PROTOCOL = (
+    REPO_ROOT
+    / "domains"
+    / "c1-boundary-rewriting"
+    / "longevity-evidence"
+    / "data"
+    / "manual"
+    / "life_path_nhats_colectica_value_label_review_protocol.json"
+)
+DEFAULT_NHATS_COLECTICA_VALUE_LABEL_VALIDATION = (
+    REPO_ROOT
+    / "web"
+    / "src"
+    / "data"
+    / "life-path-nhats-colectica-value-label-validation.json"
+)
 REQUIRED_MODEL_CARD_FIELDS = {
     "modelName",
     "modelClass",
@@ -551,6 +567,29 @@ REQUIRED_NHATS_ROUTE_FIELD_DISCOVERY_GATE_IDS = {
     "survey-design-linkage-reviewed",
     "route-classifier-code-reviewed",
     "disclosure-output-review-ready",
+}
+REQUIRED_NHATS_COLECTICA_VALUE_LABEL_EVIDENCE_IDS = {
+    "nhats-cross-year-search-colectica-values",
+    "nhats-cross-year-search-colectica-login",
+    "nhats-conditions-of-use-public-ai-and-aggregation",
+}
+REQUIRED_NHATS_COLECTICA_VALUE_LABEL_ARTIFACT_IDS = {
+    "colectica-access-log",
+    "field-level-source-trace",
+    "route-value-crosswalk",
+    "reviewer-signoff",
+}
+REQUIRED_NHATS_COLECTICA_VALUE_LABEL_GATE_IDS = {
+    "colectica-login-recorded",
+    "colectica-variable-pages-reviewed",
+    "value-label-source-capture-hashed",
+    "question-text-and-universe-reviewed",
+    "route-value-crosswalk-drafted",
+    "negative-missing-code-map-drafted",
+    "sensitive-death-date-exclusion-confirmed",
+    "second-reviewer-signoff",
+    "route-classifier-promotion-review",
+    "public-output-disclosure-boundary-reviewed",
 }
 
 
@@ -4018,6 +4057,333 @@ def audit_nhats_route_field_discovery(
     }
 
 
+def audit_nhats_colectica_value_label_review(
+    protocol_path: Path,
+    validation_path: Path,
+) -> dict[str, Any]:
+    checks: list[dict[str, Any]] = []
+    protocol_exists = protocol_path.exists()
+    validation_exists = validation_path.exists()
+    add_check(
+        checks,
+        "nhats-colectica-value-label-protocol-exists",
+        status_from_bool(protocol_exists),
+        str(protocol_path.relative_to(REPO_ROOT)),
+    )
+    add_check(
+        checks,
+        "nhats-colectica-value-label-validation-exists",
+        status_from_bool(validation_exists),
+        str(validation_path.relative_to(REPO_ROOT)),
+    )
+
+    protocol = load_json(protocol_path) if protocol_exists else {}
+    validation = load_json(validation_path) if validation_exists else {}
+
+    schema_ok = (
+        protocol.get("schemaVersion")
+        == "human-infra.life-path-nhats-colectica-value-label-review-protocol.v1"
+    )
+    add_check(
+        checks,
+        "nhats-colectica-value-label-protocol-schema",
+        status_from_bool(protocol_exists and schema_ok),
+        f"schemaVersion={protocol.get('schemaVersion')!r}",
+    )
+
+    identity_ok = (
+        protocol.get("sourceId") == "nhats"
+        and protocol.get("protocolId")
+        == "nhats-r13-r14-colectica-value-label-review-protocol-draft"
+        and protocol.get("routeFieldDiscoveryRegisterId")
+        == "nhats-r13-r14-route-field-discovery-register-draft"
+        and protocol.get("missingnessRouteProtocolId")
+        == "nhats-r13-r14-missingness-route-protocol-draft"
+        and protocol.get("variableConfirmationMatrixId")
+        == "nhats-r13-r14-variable-confirmation-matrix-draft"
+        and protocol.get("status") == "protocol-only-value-labels-not-reviewed"
+    )
+    add_check(
+        checks,
+        "nhats-colectica-value-label-protocol-identity",
+        status_from_bool(protocol_exists and identity_ok),
+        "protocol must bind NHATS, route-field discovery, missingness route, variable matrix and value-labels-not-reviewed status",
+    )
+
+    decision = protocol.get("currentDecision")
+    decision_ok = (
+        isinstance(decision, dict)
+        and decision.get("colecticaReviewProtocolReady") is True
+        and decision.get("colecticaLoginCompleted") is False
+        and decision.get("valueLabelsConfirmed") is False
+        and decision.get("questionTextConfirmed") is False
+        and decision.get("universeSkipLogicConfirmed") is False
+        and decision.get("routeValueCrosswalkReady") is False
+        and decision.get("negativeMissingCodeMapReady") is False
+        and decision.get("routeClassifierAllowed") is False
+        and decision.get("endpointClassificationAllowed") is False
+        and decision.get("weightedRouteCountsAllowed") is False
+        and decision.get("publicExportAllowed") is False
+        and decision.get("calibrationAllowed") is False
+        and decision.get("individualPredictionAllowed") is False
+    )
+    add_check(
+        checks,
+        "nhats-colectica-value-label-decision-boundary",
+        status_from_bool(protocol_exists and decision_ok),
+        "only protocol readiness may be true; Colectica login, labels, question text, route crosswalk, classifier, endpoint, weighted counts, export, calibration and individual prediction must remain false",
+    )
+
+    evidence = protocol.get("sourceEvidence")
+    observed_evidence_ids: set[str] = set()
+    evidence_ok = isinstance(evidence, list)
+    if isinstance(evidence, list):
+        for row in evidence:
+            if not isinstance(row, dict):
+                evidence_ok = False
+                continue
+            evidence_id = row.get("id")
+            if isinstance(evidence_id, str):
+                observed_evidence_ids.add(evidence_id)
+            if not (
+                isinstance(row.get("url"), str)
+                and row["url"].startswith("https://")
+                and isinstance(row.get("supports"), list)
+                and isinstance(row.get("doesNotSupport"), list)
+            ):
+                evidence_ok = False
+    missing_evidence_ids = sorted(
+        REQUIRED_NHATS_COLECTICA_VALUE_LABEL_EVIDENCE_IDS - observed_evidence_ids
+    )
+    add_check(
+        checks,
+        "nhats-colectica-value-label-source-evidence",
+        status_from_bool(protocol_exists and evidence_ok and not missing_evidence_ids),
+        f"missing_evidence_ids={missing_evidence_ids}",
+    )
+
+    artifacts = protocol.get("reviewArtifactRequirements")
+    observed_artifact_ids: set[str] = set()
+    artifacts_ok = isinstance(artifacts, list)
+    if isinstance(artifacts, list):
+        for artifact in artifacts:
+            if not isinstance(artifact, dict):
+                artifacts_ok = False
+                continue
+            artifact_id = artifact.get("id")
+            if isinstance(artifact_id, str):
+                observed_artifact_ids.add(artifact_id)
+            if (
+                artifact.get("status") != "missing"
+                or artifact.get("blocksPromotion") is not True
+                or not isinstance(artifact.get("requiredFields"), list)
+                or len(artifact.get("requiredFields", [])) < 4
+            ):
+                artifacts_ok = False
+    missing_artifact_ids = sorted(
+        REQUIRED_NHATS_COLECTICA_VALUE_LABEL_ARTIFACT_IDS - observed_artifact_ids
+    )
+    add_check(
+        checks,
+        "nhats-colectica-value-label-review-artifacts",
+        status_from_bool(protocol_exists and artifacts_ok and not missing_artifact_ids),
+        f"missing_artifact_ids={missing_artifact_ids}",
+    )
+
+    units = protocol.get("routeFieldReviewUnits")
+    observed_unit_ids: set[str] = set()
+    units_ok = isinstance(units, list)
+    if isinstance(units, list):
+        for unit in units:
+            if not isinstance(unit, dict):
+                units_ok = False
+                continue
+            unit_id = unit.get("requiredRouteFieldId")
+            if isinstance(unit_id, str):
+                observed_unit_ids.add(unit_id)
+            if (
+                unit.get("promotionAllowed") is not False
+                or unit.get("status")
+                not in {
+                    "pending-colectica-review",
+                    "computed-output-gate-pending-review",
+                }
+                or not isinstance(unit.get("candidateVariables"), list)
+                or not unit.get("candidateVariables")
+                or not isinstance(unit.get("mustConfirm"), list)
+                or len(unit.get("mustConfirm", [])) < 3
+            ):
+                units_ok = False
+    missing_unit_ids = sorted(REQUIRED_NHATS_MISSINGNESS_ROUTE_FIELD_IDS - observed_unit_ids)
+    add_check(
+        checks,
+        "nhats-colectica-value-label-review-units",
+        status_from_bool(protocol_exists and units_ok and not missing_unit_ids),
+        f"missing_unit_ids={missing_unit_ids}",
+    )
+
+    death_unit: dict[str, Any] = {}
+    if isinstance(units, list):
+        death_unit = next(
+            (
+                unit
+                for unit in units
+                if isinstance(unit, dict)
+                and unit.get("requiredRouteFieldId") == "death_decedent_indicator"
+            ),
+            {},
+        )
+    sensitive_excluded = set()
+    if isinstance(death_unit, dict) and isinstance(
+        death_unit.get("sensitiveExcludedVariables"), list
+    ):
+        sensitive_excluded.update(
+            str(value) for value in death_unit["sensitiveExcludedVariables"]
+        )
+    sensitive_ok = {
+        "dm13mthdied",
+        "dm13yrdied",
+        "dm14mthdied",
+        "dm14yrdied",
+    }.issubset(sensitive_excluded)
+    add_check(
+        checks,
+        "nhats-colectica-value-label-sensitive-death-exclusion",
+        status_from_bool(
+            protocol_exists
+            and sensitive_ok
+            and has_text(protocol.get("prohibitedActions", []), "individual death dates")
+        ),
+        f"sensitive_excluded={sorted(sensitive_excluded)}",
+    )
+
+    gates = protocol.get("blockingGates")
+    observed_gate_ids: set[str] = set()
+    gates_ok = isinstance(gates, list)
+    if isinstance(gates, list):
+        for gate in gates:
+            if not isinstance(gate, dict):
+                gates_ok = False
+                continue
+            gate_id = gate.get("id")
+            if isinstance(gate_id, str):
+                observed_gate_ids.add(gate_id)
+            if gate.get("status") != "missing" or gate.get("blocksValueLabelPromotion") is not True:
+                gates_ok = False
+    missing_gate_ids = sorted(
+        REQUIRED_NHATS_COLECTICA_VALUE_LABEL_GATE_IDS - observed_gate_ids
+    )
+    add_check(
+        checks,
+        "nhats-colectica-value-label-blocking-gates",
+        status_from_bool(protocol_exists and gates_ok and not missing_gate_ids),
+        f"missing_gate_ids={missing_gate_ids}",
+    )
+
+    prohibited = protocol.get("prohibitedActions", [])
+    prohibited_ok = (
+        has_text(prohibited, "unreviewed Colectica value-label tables")
+        and has_text(prohibited, "crosswalk variable names")
+        and has_text(prohibited, "real NHATS route classifier")
+        and has_text(prohibited, "weighted route counts")
+        and has_text(prohibited, "public AI")
+    )
+    add_check(
+        checks,
+        "nhats-colectica-value-label-prohibited-actions",
+        status_from_bool(protocol_exists and prohibited_ok),
+        "protocol must block unreviewed value-label tables, crosswalk-as-values, route classifier, weighted counts and public AI upload",
+    )
+
+    value_label_key_hits = sorted(
+        collect_keys(protocol)
+        & {
+            "confirmedValueLabels",
+            "valueLabelMap",
+            "routeValueMap",
+            "colecticaValueLabelTable",
+            "rawValueLabels",
+        }
+    )
+    add_check(
+        checks,
+        "nhats-colectica-value-label-no-confirmed-map",
+        status_from_bool(protocol_exists and not value_label_key_hits),
+        f"prohibited_keys={value_label_key_hits}",
+    )
+
+    source_trace = protocol.get("sourceTrace")
+    source_trace_ok = (
+        isinstance(source_trace, list)
+        and all(isinstance(url, str) and url.startswith("https://") for url in source_trace)
+        and has_text(source_trace, "cross-year-search")
+        and has_text(source_trace, "conditions-of-use")
+        and has_text(source_trace, "NHATSUserGuideR14")
+        and has_text(source_trace, "NHATSR13Instrument-VariableCrosswalk")
+        and has_text(source_trace, "NHATSR14Instrument-VariableCrosswalk")
+    )
+    add_check(
+        checks,
+        "nhats-colectica-value-label-source-trace",
+        status_from_bool(protocol_exists and source_trace_ok),
+        "sourceTrace must include official Colectica, conditions, User Guide and R13/R14 crosswalk URLs",
+    )
+
+    validation_schema_ok = (
+        validation.get("schemaVersion")
+        == "human-infra.life-path-nhats-colectica-value-label-validation.v1"
+    )
+    add_check(
+        checks,
+        "nhats-colectica-value-label-validation-schema",
+        status_from_bool(validation_exists and validation_schema_ok),
+        f"schemaVersion={validation.get('schemaVersion')!r}",
+    )
+    validation_source_ok = (
+        validation.get("protocolPath") == str(protocol_path.relative_to(REPO_ROOT))
+        and validation.get("protocolSha256") == sha256_file(protocol_path)
+    )
+    add_check(
+        checks,
+        "nhats-colectica-value-label-validation-source-hash",
+        status_from_bool(validation_exists and validation_source_ok),
+        "Colectica value-label validation must point back to current protocol hash",
+    )
+    validation_summary = validation.get("summary")
+    validation_summary_ok = (
+        validation.get("overallStatus") == "PASS"
+        and isinstance(validation_summary, dict)
+        and validation_summary.get("fail") == 0
+    )
+    add_check(
+        checks,
+        "nhats-colectica-value-label-validation-summary",
+        status_from_bool(validation_exists and validation_summary_ok),
+        "Colectica value-label validation must pass with zero failed checks",
+    )
+    boundary_ok = (
+        has_text(validation.get("boundary"), "value labels")
+        and has_text(validation.get("boundary"), "route-value crosswalk")
+        and has_text(validation.get("boundary"), "individual prediction")
+    )
+    add_check(
+        checks,
+        "nhats-colectica-value-label-validation-boundary",
+        status_from_bool(validation_exists and boundary_ok),
+        "validation boundary must keep value labels, route-value crosswalk and individual prediction blocked",
+    )
+
+    return {
+        "protocolPath": str(protocol_path.relative_to(REPO_ROOT)),
+        "protocolSha256": sha256_file(protocol_path) if protocol_exists else None,
+        "validationPath": str(validation_path.relative_to(REPO_ROOT)),
+        "validationSha256": sha256_file(validation_path) if validation_exists else None,
+        "status": "PASS" if summarize_checks(checks)["fail"] == 0 else "FAIL",
+        "checks": checks,
+        "summary": summarize_checks(checks),
+    }
+
+
 def audit_sensitivity_analysis(
     sensitivity_path: Path,
     model_data: dict[str, Any],
@@ -4272,6 +4638,8 @@ def audit_model(
     nhats_missingness_route_validation_path: Path,
     nhats_route_field_discovery_register_path: Path,
     nhats_route_field_discovery_validation_path: Path,
+    nhats_colectica_value_label_protocol_path: Path,
+    nhats_colectica_value_label_validation_path: Path,
 ) -> dict[str, Any]:
     checks: list[dict[str, Any]] = []
     schema_version = data.get("schemaVersion")
@@ -4482,6 +4850,10 @@ def audit_model(
         nhats_route_field_discovery_register_path,
         nhats_route_field_discovery_validation_path,
     )
+    nhats_colectica_value_label_audit = audit_nhats_colectica_value_label_review(
+        nhats_colectica_value_label_protocol_path,
+        nhats_colectica_value_label_validation_path,
+    )
     sensitivity_audit = audit_sensitivity_analysis(sensitivity_path, data, model_path)
     checks.extend(readiness_audit["checks"])
     checks.extend(data_sources_audit["checks"])
@@ -4497,6 +4869,7 @@ def audit_model(
     checks.extend(nhats_survey_design_audit["checks"])
     checks.extend(nhats_missingness_route_audit["checks"])
     checks.extend(nhats_route_field_discovery_audit["checks"])
+    checks.extend(nhats_colectica_value_label_audit["checks"])
     checks.extend(sensitivity_audit["checks"])
     failed = [check for check in checks if check["status"] == "FAIL"]
     overall = "PASS" if not failed else "FAIL"
@@ -4523,6 +4896,7 @@ def audit_model(
         "nhatsSurveyDesign": nhats_survey_design_audit,
         "nhatsMissingnessRoute": nhats_missingness_route_audit,
         "nhatsRouteFieldDiscovery": nhats_route_field_discovery_audit,
+        "nhatsColecticaValueLabelReview": nhats_colectica_value_label_audit,
         "sensitivityAnalysis": sensitivity_audit,
     }
 
@@ -4663,6 +5037,15 @@ def render_markdown(audit: dict[str, Any]) -> str:
             f"- Route-field discovery validation status: `{audit['nhatsRouteFieldDiscovery']['status']}`",
             "- Boundary: route-field discovery records official R13/R14 crosswalk candidates, but it does not replace Colectica value-label confirmation, governed file access, classifier review, disclosure review, weighted route counts, calibration, validation or individual prediction.",
             "",
+            "## NHATS Colectica Value-Label Review",
+            "",
+            f"- Colectica value-label protocol path: `{audit['nhatsColecticaValueLabelReview']['protocolPath']}`",
+            f"- Colectica value-label protocol SHA-256: `{audit['nhatsColecticaValueLabelReview']['protocolSha256']}`",
+            f"- Colectica value-label validation path: `{audit['nhatsColecticaValueLabelReview']['validationPath']}`",
+            f"- Colectica value-label validation SHA-256: `{audit['nhatsColecticaValueLabelReview']['validationSha256']}`",
+            f"- Colectica value-label validation status: `{audit['nhatsColecticaValueLabelReview']['status']}`",
+            "- Boundary: Colectica value-label review protocol defines the next evidence gate, but it does not contain confirmed value-label maps, question text, skip logic, route-value crosswalks, classifier promotion, weighted route counts, public export, calibration, validation or individual prediction.",
+            "",
             "## Sensitivity Analysis",
             "",
             f"- Sensitivity path: `{audit['sensitivityAnalysis']['path']}`",
@@ -4791,6 +5174,16 @@ def parse_args() -> argparse.Namespace:
         type=Path,
         default=DEFAULT_NHATS_ROUTE_FIELD_DISCOVERY_VALIDATION,
     )
+    parser.add_argument(
+        "--nhats-colectica-value-label-protocol",
+        type=Path,
+        default=DEFAULT_NHATS_COLECTICA_VALUE_LABEL_PROTOCOL,
+    )
+    parser.add_argument(
+        "--nhats-colectica-value-label-validation",
+        type=Path,
+        default=DEFAULT_NHATS_COLECTICA_VALUE_LABEL_VALIDATION,
+    )
     parser.add_argument("--json-out", type=Path, default=DEFAULT_JSON_OUT)
     parser.add_argument("--md-out", type=Path, default=DEFAULT_MD_OUT)
     return parser.parse_args()
@@ -4837,6 +5230,12 @@ def main() -> int:
     nhats_route_field_discovery_validation_path = (
         args.nhats_route_field_discovery_validation.resolve()
     )
+    nhats_colectica_value_label_protocol_path = (
+        args.nhats_colectica_value_label_protocol.resolve()
+    )
+    nhats_colectica_value_label_validation_path = (
+        args.nhats_colectica_value_label_validation.resolve()
+    )
     audit = audit_model(
         load_json(model_path),
         model_path,
@@ -4864,6 +5263,8 @@ def main() -> int:
         nhats_missingness_route_validation_path,
         nhats_route_field_discovery_register_path,
         nhats_route_field_discovery_validation_path,
+        nhats_colectica_value_label_protocol_path,
+        nhats_colectica_value_label_validation_path,
     )
     args.json_out.parent.mkdir(parents=True, exist_ok=True)
     with args.json_out.open("w", encoding="utf-8") as handle:

@@ -3,7 +3,7 @@
 - Overall status: `PASS`
 - Model path: `web/src/data/life-path-toy-model.json`
 - Model SHA-256: `a4c92209d79d20579bf1f575d5ebf07ffe5be9ccaf6bf3f3eef08efa287b5377`
-- Generated at: `2026-07-02T04:08:40.900253+00:00`
+- Generated at: `2026-07-02T04:23:57.055916+00:00`
 
 ## Checks
 
@@ -224,6 +224,23 @@
 | `nhats-route-field-discovery-validation-source-hash` | `PASS` | route-field discovery validation must point back to current register hash |
 | `nhats-route-field-discovery-validation-summary` | `PASS` | route-field discovery validation must pass with zero failed checks |
 | `nhats-route-field-discovery-validation-boundary` | `PASS` | validation boundary must keep Colectica, weighted count and individual prediction gates blocked |
+| `nhats-colectica-value-label-protocol-exists` | `PASS` | domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_value_label_review_protocol.json |
+| `nhats-colectica-value-label-validation-exists` | `PASS` | web/src/data/life-path-nhats-colectica-value-label-validation.json |
+| `nhats-colectica-value-label-protocol-schema` | `PASS` | schemaVersion='human-infra.life-path-nhats-colectica-value-label-review-protocol.v1' |
+| `nhats-colectica-value-label-protocol-identity` | `PASS` | protocol must bind NHATS, route-field discovery, missingness route, variable matrix and value-labels-not-reviewed status |
+| `nhats-colectica-value-label-decision-boundary` | `PASS` | only protocol readiness may be true; Colectica login, labels, question text, route crosswalk, classifier, endpoint, weighted counts, export, calibration and individual prediction must remain false |
+| `nhats-colectica-value-label-source-evidence` | `PASS` | missing_evidence_ids=[] |
+| `nhats-colectica-value-label-review-artifacts` | `PASS` | missing_artifact_ids=[] |
+| `nhats-colectica-value-label-review-units` | `PASS` | missing_unit_ids=[] |
+| `nhats-colectica-value-label-sensitive-death-exclusion` | `PASS` | sensitive_excluded=['dm13mthdied', 'dm13yrdied', 'dm14mthdied', 'dm14yrdied'] |
+| `nhats-colectica-value-label-blocking-gates` | `PASS` | missing_gate_ids=[] |
+| `nhats-colectica-value-label-prohibited-actions` | `PASS` | protocol must block unreviewed value-label tables, crosswalk-as-values, route classifier, weighted counts and public AI upload |
+| `nhats-colectica-value-label-no-confirmed-map` | `PASS` | prohibited_keys=[] |
+| `nhats-colectica-value-label-source-trace` | `PASS` | sourceTrace must include official Colectica, conditions, User Guide and R13/R14 crosswalk URLs |
+| `nhats-colectica-value-label-validation-schema` | `PASS` | schemaVersion='human-infra.life-path-nhats-colectica-value-label-validation.v1' |
+| `nhats-colectica-value-label-validation-source-hash` | `PASS` | Colectica value-label validation must point back to current protocol hash |
+| `nhats-colectica-value-label-validation-summary` | `PASS` | Colectica value-label validation must pass with zero failed checks |
+| `nhats-colectica-value-label-validation-boundary` | `PASS` | validation boundary must keep value labels, route-value crosswalk and individual prediction blocked |
 | `sensitivity-analysis-exists` | `PASS` | web/src/data/life-path-sensitivity-analysis.json |
 | `sensitivity-schema-version` | `PASS` | schemaVersion='human-infra.life-path-sensitivity.v1' |
 | `sensitivity-source-model-hash` | `PASS` | sensitivity output must point back to the generated model path and sha256 |
@@ -317,7 +334,7 @@
 - Disclosure test cases path: `domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_disclosure_control_test_cases.json`
 - Disclosure test cases SHA-256: `0a9cccdbfbd951ba6d04eeb762b9387ba50a13336e4ee4ade43ed976acb4c9c5`
 - Disclosure validation path: `web/src/data/life-path-nhats-disclosure-control-validation.json`
-- Disclosure validation SHA-256: `452908c103e63bac9f2c4faf7d5c74e0e77c7fb001a4575bcc4f7737cca71c12`
+- Disclosure validation SHA-256: `4521f8f4f4b324557d715420f9921bda4f8f3b7c771d686d73f3133c4cddf8a7`
 - Disclosure validation status: `PASS`
 - Boundary: disclosure-control validation proves only that synthetic output envelopes obey aggregate-only, n<5 suppression, row-level blocking, public-AI blocking and forbidden-output rules; it does not authorize real NHATS extraction, public export, calibration, validation or individual prediction.
 
@@ -328,7 +345,7 @@
 - Survey-design test cases path: `domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_survey_design_test_cases.json`
 - Survey-design test cases SHA-256: `a0d106ff0e70450ae96a4d8749037839cae27bfb7feb68bf2636681c46f500cc`
 - Survey-design validation path: `web/src/data/life-path-nhats-survey-design-validation.json`
-- Survey-design validation SHA-256: `24c8fbcfb219e25f8054a76345ef40c63cfb42f18303cceff055e895e4a5385f`
+- Survey-design validation SHA-256: `d224047b1b9afeb407d72a4f330882f39b5cdcbe4ef46a9f5fffa30f4418bd1b`
 - Survey-design validation status: `PASS`
 - Boundary: survey-design validation proves only that synthetic design-plan envelopes enforce weights, strata, PSU/variance-unit, variance-method, route-map and disclosure prerequisites; it does not authorize real NHATS weighted estimates, population inference, calibration, validation or individual prediction.
 
@@ -339,7 +356,7 @@
 - Missingness-route test cases path: `domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_missingness_route_test_cases.json`
 - Missingness-route test cases SHA-256: `38928543b47a1f950de5925c2bb329fc544df4516aa882015240e7047674b4be`
 - Missingness-route validation path: `web/src/data/life-path-nhats-missingness-route-validation.json`
-- Missingness-route validation SHA-256: `b99f9291f8f2933fd565fcfb10e11b3f64f57d2d6feefa453a67ca064c22b12b`
+- Missingness-route validation SHA-256: `5ba9bc4b68b237261aab743566e3316984717df4f653731c3888d21fd85cd8bb`
 - Missingness-route validation status: `PASS`
 - Boundary: missingness-route validation proves only that synthetic route envelopes separate death, self interview, proxy interview, facility route, missingness, conflicts and small-cell suppression; it does not authorize real NHATS route classification, weighted route counts, calibration, validation or individual prediction.
 
@@ -348,14 +365,23 @@
 - Route-field discovery register path: `domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_route_field_discovery_register.json`
 - Route-field discovery register SHA-256: `32d86995a0438e2104e6850334eefa63b30176b0767dd2229bc73a517ef5ade4`
 - Route-field discovery validation path: `web/src/data/life-path-nhats-route-field-discovery-validation.json`
-- Route-field discovery validation SHA-256: `7175060ed0e50ad24fdafead0e2e5cc3082e6973aa4ef7cfca376e54d59cec2f`
+- Route-field discovery validation SHA-256: `17ab82030672df59b7bf8fc30df5a52124b6876147b85bb0a4cca1ed343ca9a6`
 - Route-field discovery validation status: `PASS`
 - Boundary: route-field discovery records official R13/R14 crosswalk candidates, but it does not replace Colectica value-label confirmation, governed file access, classifier review, disclosure review, weighted route counts, calibration, validation or individual prediction.
+
+## NHATS Colectica Value-Label Review
+
+- Colectica value-label protocol path: `domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_value_label_review_protocol.json`
+- Colectica value-label protocol SHA-256: `bd5130152b3c57d5a6d8cdc767df85bc8a10e19e1225738f13940bd3734ff416`
+- Colectica value-label validation path: `web/src/data/life-path-nhats-colectica-value-label-validation.json`
+- Colectica value-label validation SHA-256: `187f757f4c2640d9f7387a4064f169dbd32b7e63f0062d61629426e5cb88ce8c`
+- Colectica value-label validation status: `PASS`
+- Boundary: Colectica value-label review protocol defines the next evidence gate, but it does not contain confirmed value-label maps, question text, skip logic, route-value crosswalks, classifier promotion, weighted route counts, public export, calibration, validation or individual prediction.
 
 ## Sensitivity Analysis
 
 - Sensitivity path: `web/src/data/life-path-sensitivity-analysis.json`
-- Sensitivity SHA-256: `62a5a722d5a521fc3486395f42c8d9b459d3aa9fdd00e4f4a22a3ceb89b25b48`
+- Sensitivity SHA-256: `ae87c8af0fc7ff94a1456de4ef6b9772be3c2b4eb4af52b82e4eaeaa378ac4fc`
 - Sensitivity status: `PASS`
 - Boundary: sensitivity analysis is synthetic one-factor-at-a-time stress testing; it does not prove empirical parameter values, causal effects, calibrated prediction, or individual usefulness.
 

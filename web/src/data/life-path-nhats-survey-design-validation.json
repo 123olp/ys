@@ -1,6 +1,6 @@
 {
   "schemaVersion": "human-infra.life-path-nhats-survey-design-validation.v1",
-  "generatedAt": "2026-07-02T04:08:40.624381+00:00",
+  "generatedAt": "2026-07-02T04:23:56.673502+00:00",
   "protocolPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_survey_design_protocol.json",
   "protocolSha256": "fc36be4f7b5521f938a74063a7ba57f50a791b99008fe35bc1fd08b5a233d0ef",
   "testCasesPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_survey_design_test_cases.json",

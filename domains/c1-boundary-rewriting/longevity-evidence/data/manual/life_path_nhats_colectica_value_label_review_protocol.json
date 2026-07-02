@@ -1,0 +1,370 @@
+{
+  "schemaVersion": "human-infra.life-path-nhats-colectica-value-label-review-protocol.v1",
+  "sourceId": "nhats",
+  "sourceName": "National Health and Aging Trends Study",
+  "protocolId": "nhats-r13-r14-colectica-value-label-review-protocol-draft",
+  "routeFieldDiscoveryRegisterId": "nhats-r13-r14-route-field-discovery-register-draft",
+  "missingnessRouteProtocolId": "nhats-r13-r14-missingness-route-protocol-draft",
+  "variableConfirmationMatrixId": "nhats-r13-r14-variable-confirmation-matrix-draft",
+  "reviewDate": "2026-07-02",
+  "reviewer": "tradecatlabs",
+  "status": "protocol-only-value-labels-not-reviewed",
+  "protocolPurpose": "Define the minimum Colectica value-label review gate required before NHATS R13/R14 discovered route fields can be promoted from official crosswalk candidates to endpoint-route classifier inputs.",
+  "currentDecision": {
+    "colecticaReviewProtocolReady": true,
+    "colecticaLoginCompleted": false,
+    "valueLabelsConfirmed": false,
+    "questionTextConfirmed": false,
+    "universeSkipLogicConfirmed": false,
+    "routeValueCrosswalkReady": false,
+    "negativeMissingCodeMapReady": false,
+    "routeClassifierAllowed": false,
+    "endpointClassificationAllowed": false,
+    "weightedRouteCountsAllowed": false,
+    "publicExportAllowed": false,
+    "calibrationAllowed": false,
+    "individualPredictionAllowed": false,
+    "reason": "The review protocol is ready, but Colectica login, value-label extraction, question text, universe/skip logic, route-value crosswalk, missing-code map, second review and classifier sign-off are not complete."
+  },
+  "sourceEvidence": [
+    {
+      "id": "nhats-cross-year-search-colectica-values",
+      "sourceType": "official-web-page",
+      "url": "https://www.nhats.org/data-access/cross-year-search",
+      "evidenceUse": "NHATS states the Colectica Portal supports search across NHATS/NSOC variables and includes variable names, labels, values/value labels, question text and related metadata.",
+      "supports": [
+        "colectica-is-value-label-source",
+        "question-text-review-required",
+        "metadata-review-required"
+      ],
+      "doesNotSupport": [
+        "value-labels-reviewed",
+        "route-classifier-ready",
+        "public-use-data-downloaded"
+      ]
+    },
+    {
+      "id": "nhats-cross-year-search-colectica-login",
+      "sourceType": "official-web-page",
+      "url": "https://www.nhats.org/data-access/cross-year-search",
+      "evidenceUse": "NHATS states the Colectica site is independently hosted and requires separate login/registration.",
+      "supports": [
+        "colectica-login-gate",
+        "independent-access-record-required"
+      ],
+      "doesNotSupport": [
+        "automated-public-scrape-allowed",
+        "metadata-already-reviewed"
+      ]
+    },
+    {
+      "id": "nhats-conditions-of-use-public-ai-and-aggregation",
+      "sourceType": "official-policy",
+      "url": "https://www.nhats.org/conditions-of-use",
+      "evidenceUse": "NHATS Conditions of Use require careful handling of NHATS/NSOC data, block unapproved public AI sharing and restrict public reporting to aggregate/group results with small-cell suppression.",
+      "supports": [
+        "no-public-ai-upload",
+        "aggregate-only-boundary",
+        "small-cell-suppression-boundary"
+      ],
+      "doesNotSupport": [
+        "row-level-output",
+        "individual-death-date-output",
+        "unsafe-public-route-counts"
+      ]
+    }
+  ],
+  "reviewArtifactRequirements": [
+    {
+      "id": "colectica-access-log",
+      "requiredFields": [
+        "reviewer",
+        "reviewDate",
+        "colecticaAccountStatus",
+        "sourceUrl",
+        "roundsReviewed",
+        "accessBoundary"
+      ],
+      "status": "missing",
+      "blocksPromotion": true
+    },
+    {
+      "id": "field-level-source-trace",
+      "requiredFields": [
+        "variableName",
+        "round",
+        "variableLabel",
+        "questionText",
+        "valueLabelSource",
+        "universeOrSkipLogic",
+        "fileTier",
+        "sourceCaptureHash"
+      ],
+      "status": "missing",
+      "blocksPromotion": true
+    },
+    {
+      "id": "route-value-crosswalk",
+      "requiredFields": [
+        "variableName",
+        "rawCode",
+        "valueLabel",
+        "routeClass",
+        "dominanceRule",
+        "missingnessTreatment",
+        "sensitiveExclusion"
+      ],
+      "status": "missing",
+      "blocksPromotion": true
+    },
+    {
+      "id": "reviewer-signoff",
+      "requiredFields": [
+        "primaryReviewer",
+        "secondReviewer",
+        "conflictResolution",
+        "classifierPromotionDecision",
+        "promotionBoundary"
+      ],
+      "status": "missing",
+      "blocksPromotion": true
+    }
+  ],
+  "routeFieldReviewUnits": [
+    {
+      "requiredRouteFieldId": "identity_join_key",
+      "candidateVariables": [
+        "spid",
+        "spidr12"
+      ],
+      "mustConfirm": [
+        "canonical sample-person identifier",
+        "round linkage rule",
+        "public-use availability",
+        "no restricted identifier dependency"
+      ],
+      "status": "pending-colectica-review",
+      "promotionAllowed": false
+    },
+    {
+      "requiredRouteFieldId": "round13_baseline_eligibility",
+      "candidateVariables": [
+        "r13status",
+        "r13statuscat",
+        "r13dcontnew",
+        "fl13newsample",
+        "fl13facility"
+      ],
+      "mustConfirm": [
+        "R13 denominator inclusion value labels",
+        "new-sample and carried-forward rules",
+        "facility baseline handling",
+        "missing and inapplicable values"
+      ],
+      "status": "pending-colectica-review",
+      "promotionAllowed": false
+    },
+    {
+      "requiredRouteFieldId": "round14_interview_status",
+      "candidateVariables": [
+        "r14status",
+        "r14statuscat",
+        "r14dcontnew",
+        "r14breakoffst",
+        "r14breakoffqt",
+        "fl14pt2miss",
+        "r14dlmlint"
+      ],
+      "mustConfirm": [
+        "R14 interview status value labels",
+        "partial interview and breakoff handling",
+        "known alive noninterview values",
+        "Last Month of Life indicator source and tier"
+      ],
+      "status": "pending-colectica-review",
+      "promotionAllowed": false
+    },
+    {
+      "requiredRouteFieldId": "proxy_status",
+      "candidateVariables": [
+        "is13resptype",
+        "op13proxy",
+        "op13whyproxy",
+        "is14resptype",
+        "op14proxy",
+        "op14whyproxy"
+      ],
+      "mustConfirm": [
+        "self versus proxy response labels",
+        "proxy reason labels",
+        "proxy route aggregation boundary",
+        "proxy values that must stay separate from self interview"
+      ],
+      "status": "pending-colectica-review",
+      "promotionAllowed": false
+    },
+    {
+      "requiredRouteFieldId": "facility_residential_status",
+      "candidateVariables": [
+        "r13dresid",
+        "fl13facility",
+        "r14dresid",
+        "fl14facility"
+      ],
+      "mustConfirm": [
+        "facility and residential care value labels",
+        "nursing-home versus residential-care distinction",
+        "alive facility route handling",
+        "sensitive/public tier boundary"
+      ],
+      "status": "pending-colectica-review",
+      "promotionAllowed": false
+    },
+    {
+      "requiredRouteFieldId": "death_decedent_indicator",
+      "candidateVariables": [
+        "fl13spdied",
+        "fl14spdied",
+        "r#dresid=6",
+        "r#dlmlint=1",
+        "r#status=62"
+      ],
+      "sensitiveExcludedVariables": [
+        "dm13mthdied",
+        "dm13yrdied",
+        "dm14mthdied",
+        "dm14yrdied"
+      ],
+      "mustConfirm": [
+        "public-use death indicator labels",
+        "LML and tracker value labels",
+        "death-boundary dominance rule",
+        "sensitive death month/year exclusion"
+      ],
+      "status": "pending-colectica-review",
+      "promotionAllowed": false
+    },
+    {
+      "requiredRouteFieldId": "nonresponse_missing_code",
+      "candidateVariables": [
+        "r13breakoffst",
+        "r13breakoffqt",
+        "fl13pt2miss",
+        "r14breakoffst",
+        "r14breakoffqt",
+        "fl14pt2miss"
+      ],
+      "mustConfirm": [
+        "variable-specific inapplicable labels",
+        "refused and don't-know labels",
+        "missing and no-prior-round labels",
+        "missingness remains separate from endpoint outcome"
+      ],
+      "status": "pending-colectica-review",
+      "promotionAllowed": false
+    },
+    {
+      "requiredRouteFieldId": "design_weight_linkage",
+      "candidateVariables": [
+        "w13anfinwgt0",
+        "w13anfinwgt1-50",
+        "w13varunit",
+        "w13varstrat",
+        "w14anfinwgt0",
+        "w14anfinwgt1-50",
+        "w14varunit",
+        "w14varstrat"
+      ],
+      "mustConfirm": [
+        "round-specific final analysis weight labels",
+        "replicate weight family and file tier",
+        "variance unit and strata labels",
+        "domain analysis and weighted route-count boundary"
+      ],
+      "status": "pending-colectica-review",
+      "promotionAllowed": false
+    },
+    {
+      "requiredRouteFieldId": "disclosure_cell_count",
+      "candidateVariables": [
+        "aggregate_cell_n",
+        "suppression_required",
+        "suppression_reason"
+      ],
+      "mustConfirm": [
+        "computed-only output field",
+        "n < 5 suppression or stricter rule",
+        "no row-level export",
+        "no public AI upload before explicit approval"
+      ],
+      "status": "computed-output-gate-pending-review",
+      "promotionAllowed": false
+    }
+  ],
+  "blockingGates": [
+    {
+      "id": "colectica-login-recorded",
+      "status": "missing",
+      "blocksValueLabelPromotion": true
+    },
+    {
+      "id": "colectica-variable-pages-reviewed",
+      "status": "missing",
+      "blocksValueLabelPromotion": true
+    },
+    {
+      "id": "value-label-source-capture-hashed",
+      "status": "missing",
+      "blocksValueLabelPromotion": true
+    },
+    {
+      "id": "question-text-and-universe-reviewed",
+      "status": "missing",
+      "blocksValueLabelPromotion": true
+    },
+    {
+      "id": "route-value-crosswalk-drafted",
+      "status": "missing",
+      "blocksValueLabelPromotion": true
+    },
+    {
+      "id": "negative-missing-code-map-drafted",
+      "status": "missing",
+      "blocksValueLabelPromotion": true
+    },
+    {
+      "id": "sensitive-death-date-exclusion-confirmed",
+      "status": "missing",
+      "blocksValueLabelPromotion": true
+    },
+    {
+      "id": "second-reviewer-signoff",
+      "status": "missing",
+      "blocksValueLabelPromotion": true
+    },
+    {
+      "id": "route-classifier-promotion-review",
+      "status": "missing",
+      "blocksValueLabelPromotion": true
+    },
+    {
+      "id": "public-output-disclosure-boundary-reviewed",
+      "status": "missing",
+      "blocksValueLabelPromotion": true
+    }
+  ],
+  "prohibitedActions": [
+    "Do not copy unreviewed Colectica value-label tables into public model inputs.",
+    "Do not treat crosswalk variable names as endpoint route values.",
+    "Do not implement a real NHATS route classifier before value labels, question text, skip logic and dominance rules are reviewed.",
+    "Do not compute weighted route counts, public outputs, calibration metrics or survival curves from unpromoted fields.",
+    "Do not expose participant-level data, individual death dates, death month/year, small cells or NHATS/NSOC materials to public AI systems without express NHATS approval."
+  ],
+  "sourceTrace": [
+    "https://www.nhats.org/data-access/cross-year-search",
+    "https://www.nhats.org/conditions-of-use",
+    "https://nhats.org/sites/default/files/public-documentation/NHATSUserGuideR14_02102026.pdf",
+    "https://nhats.org/sites/default/files/public-documentation/NHATSR13Instrument-VariableCrosswalk_01212026_0.pdf",
+    "https://nhats.org/sites/default/files/public-documentation/NHATSR14Instrument-VariableCrosswalk_02102026.pdf"
+  ]
+}

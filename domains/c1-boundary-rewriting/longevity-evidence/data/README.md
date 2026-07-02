@@ -24,11 +24,13 @@
 - `manual/life_path_nhats_missingness_route_protocol.json` 用于维护 NHATS missingness / endpoint-route gate，固定死亡边界、self/proxy/facility 路由、known-alive noninterview、缺失/失访、not-classifiable、小单元抑制和 dominance rules。
 - `manual/life_path_nhats_missingness_route_test_cases.json` 用于维护 NHATS missingness-route validator 的合成测试用例；该文件只包含 synthetic route envelopes，不包含真实 NHATS route counts、cohort counts、死亡记录或参与者数据。
 - `manual/life_path_nhats_route_field_discovery_register.json` 用于维护 NHATS R13/R14 官方 crosswalk 和 User Guide 中已经发现的 route-field 候选；该文件只记录字段发现、来源边界和阻塞门，不表示 Colectica value labels 已确认、真实文件已访问、route classifier 已允许或 endpoint classification 已可执行。
+- `manual/life_path_nhats_colectica_value_label_review_protocol.json` 用于维护 NHATS Colectica value-label 复核协议；该文件只定义登录记录、字段级 source trace、route-value crosswalk、missing-code map、二次复核和分类器晋升门，不表示任何 value labels、question text、skip logic 或 route classifier 已确认。
 - `web/src/data/life-path-sensitivity-analysis.json` 是从 `manual/life_path_toy_model_scenarios.json` 派生的合成 sensitivity 输出；它不放在本目录内，但由本域脚本生成并由本域审计器检查。
 - `web/src/data/life-path-nhats-disclosure-control-validation.json` 是从披露控制 policy 和 synthetic test cases 派生的验证报告；它不放在本目录内，但由本域脚本生成并由本域审计器检查。
 - `web/src/data/life-path-nhats-survey-design-validation.json` 是从 survey-design protocol 和 synthetic test cases 派生的验证报告；它不放在本目录内，但由本域脚本生成并由本域审计器检查。
 - `web/src/data/life-path-nhats-missingness-route-validation.json` 是从 missingness-route protocol 和 synthetic test cases 派生的验证报告；它不放在本目录内，但由本域脚本生成并由本域审计器检查。
 - `web/src/data/life-path-nhats-route-field-discovery-validation.json` 是从 route-field discovery register 派生的验证报告；它不放在本目录内，但由本域脚本生成并由本域审计器检查。
+- `web/src/data/life-path-nhats-colectica-value-label-validation.json` 是从 Colectica value-label review protocol 派生的验证报告；它不放在本目录内，但由本域脚本生成并由本域审计器检查。
 - 每份数据必须记录来源、抓取时间和处理脚本。
 
 `raw/` 和 `processed/` 是可再生成的数据产物，已在根 `.gitignore` 中按多子域路径忽略；需要保留样例或发布快照时，应先写清来源、版本和体积边界。
@@ -53,11 +55,13 @@
 - `manual/life_path_nhats_missingness_route_protocol.json`：NHATS missingness / endpoint-route 协议，记录 alive self、alive proxy、alive facility/residential、known alive not interviewed、decedent/death boundary、missing/nonresponse、not classifiable、restricted-required 和 small-cell suppression 路由类及阻塞门。
 - `manual/life_path_nhats_missingness_route_test_cases.json`：NHATS missingness-route 合成测试集，覆盖 allow-route-classification 与 block-route-classification 两类结果，用于证明 validator 能阻断 missingness-as-outcome、alive/death 冲突和小单元未抑制公开导出。
 - `manual/life_path_nhats_route_field_discovery_register.json`：NHATS route-field discovery 登记表，记录 R13/R14 crosswalk 中的身份、状态、proxy、facility、death、missingness、design weight 和 disclosure cell count 候选字段，同时保留 Colectica、数据访问、分类器、披露和校准阻塞门。
+- `manual/life_path_nhats_colectica_value_label_review_protocol.json`：NHATS Colectica value-label review 协议，记录字段级值标签复核、问题文本、universe/skip logic、route-value crosswalk、negative missing-code map、sensitive death-date exclusion、二次复核和 public-output disclosure 边界，当前状态为 `protocol-only-value-labels-not-reviewed`。
 - `../../../../web/src/data/life-path-sensitivity-analysis.json`：由 `run_life_path_sensitivity_analysis.py` 生成的合成敏感性分析输出，记录 48 个一因素扰动结果、场景稳定性摘要、最敏感参数和禁止个体用途边界。
 - `../../../../web/src/data/life-path-nhats-disclosure-control-validation.json`：由 `validate_nhats_disclosure_outputs.py` 生成的 disclosure-control validation 输出，记录 6 个合成用例、policy/test-case hash、allow/block 决策和 synthetic-only 边界。
 - `../../../../web/src/data/life-path-nhats-survey-design-validation.json`：由 `validate_nhats_survey_design_plan.py` 生成的 survey-design validation 输出，记录 6 个合成用例、protocol/test-case hash、allow/block 决策和 synthetic-only 边界。
 - `../../../../web/src/data/life-path-nhats-missingness-route-validation.json`：由 `validate_nhats_missingness_route_map.py` 生成的 missingness-route validation 输出，记录 8 个合成用例、protocol/test-case hash、allow/block 决策、route class 覆盖和 synthetic-only 边界。
 - `../../../../web/src/data/life-path-nhats-route-field-discovery-validation.json`：由 `validate_nhats_route_field_discovery.py` 生成的 route-field discovery validation 输出，记录 register hash、source evidence、field family、blocking gate 和禁止用途检查结果。
+- `../../../../web/src/data/life-path-nhats-colectica-value-label-validation.json`：由 `validate_nhats_colectica_value_label_protocol.py` 生成的 Colectica value-label validation 输出，记录 protocol hash、source evidence、artifact requirements、route-field review units、blocking gates 和 no-confirmed-value-label-map 边界。
 - `raw/`：采集脚本保存的原始响应。
 - `processed/`：采集脚本生成的 JSONL 索引和汇总。
 - `processed/hagr/`：HAGR 官方 zip 快照解压后的 CSV 文件。
