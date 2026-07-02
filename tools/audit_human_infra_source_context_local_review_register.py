@@ -14,7 +14,7 @@ REGISTER_PATH = ROOT / "docs/reference/human-infra-source-context-local-review-r
 PROMOTION_QUEUE_PATH = ROOT / "docs/reference/human-infra-domain-source-card-promotion-queue.json"
 
 SCHEMA = "human-infra.source-context-local-review-register.v1"
-STATUS = "partial-local-review-foundation-anchors-complete-independent-fresh-review-required"
+STATUS = "complete-local-review-all-source-anchors-independent-fresh-review-required"
 REGISTER_LINK = "human-infra-source-context-local-review-register.json"
 
 SOURCE_OF_TRUTH_KEYS = [

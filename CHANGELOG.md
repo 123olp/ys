@@ -4,7 +4,7 @@ All notable repository structure changes are recorded here.
 
 ## 2026-07-02
 
-- Expanded the source-context local review register and audit gate to the first six high-leverage method, aging-mechanism and health-value anchors, covering 50 promotion tasks and 22 domains while keeping independent fresh review, card promotion, calibrated prediction and model admission blocked.
+- Completed the source-context local review register and audit gate for all 20 current source anchors, covering 81 promotion tasks and 26 domains while keeping independent fresh review, card promotion, calibrated prediction and model admission blocked.
 - Added a domain-source card promotion queue and audit gate, deriving all 81 completed field extraction rows into source-context fresh-review, Source Card, variable-card, endpoint-card, uncertainty-card, transfer-boundary-card and downgrade-check tasks while keeping model admission blocked.
 - Completed the domain-source-specific extraction register to 81/81 rows, adding continuity, governance and future-path anchors for WHO health, capability approach, extended mind, human digital twins, brain preservation, GPS relativity, NASA black holes, NIST AI RMF and NCI screening-bias boundaries while keeping fresh review, calibrated prediction and individual advice blocked.
 - Expanded the domain-source-specific extraction register to 55/81 completed rows, adding biological-mechanism anchors for Hallmarks of Aging, Hallmarks of Cancer, Yamanaka / iPS, partial reprogramming, immunosenescence and GrimAge while keeping calibrated prediction and intervention ranking blocked.

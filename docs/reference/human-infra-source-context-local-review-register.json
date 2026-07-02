@@ -1,8 +1,8 @@
 {
   "schemaVersion": "human-infra.source-context-local-review-register.v1",
   "registerId": "human-infra-source-context-local-review-register-2026-07-02",
-  "status": "partial-local-review-foundation-anchors-complete-independent-fresh-review-required",
-  "purpose": "Record local source-context review for high-leverage method, mechanism-taxonomy and value anchors before promoting completed domain-source field rows into reusable cards. This is not an external independent fresh-review verdict.",
+  "status": "complete-local-review-all-source-anchors-independent-fresh-review-required",
+  "purpose": "Track local source-context review for every current source anchor in the domain-source promotion queue, while keeping independent fresh review, card promotion and model admission gates explicitly closed.",
   "sourceOfTruth": {
     "domainSourceCardPromotionQueue": "docs/reference/human-infra-domain-source-card-promotion-queue.json",
     "domainSourceSpecificExtractionRegister": "docs/reference/human-infra-domain-source-specific-extraction-register.json",
@@ -11,23 +11,37 @@
   },
   "scope": {
     "reviewLevel": "source-anchor-local-context-review",
-    "reviewedSourceAnchorCount": 6,
-    "affectedPromotionTaskCount": 50,
-    "affectedDomainCount": 22,
+    "reviewedSourceAnchorCount": 20,
+    "affectedPromotionTaskCount": 81,
+    "affectedDomainCount": 26,
     "reviewedSourceAnchors": [
+      "SA-BRAIN-PRESERVATION-2024",
+      "SA-CAPABILITY-APPROACH",
       "SA-COX-1972",
+      "SA-DYNAMIC-DIGITAL-TWIN-2022",
+      "SA-EXTENDED-MIND-1998",
+      "SA-GPS-RELATIVITY-2003",
+      "SA-GRIMAGE-2019",
+      "SA-HALLMARKS-AGING-2013",
       "SA-HALLMARKS-AGING-2023",
+      "SA-HALLMARKS-CANCER-2022",
+      "SA-IMMUNOSENESCENCE-2024",
       "SA-KAPLAN-MEIER-1958",
+      "SA-NASA-BLACK-HOLES",
+      "SA-NCI-SCREENING-BIAS",
+      "SA-NIST-AI-RMF-2023",
+      "SA-PARTIAL-REPROGRAMMING-2016",
       "SA-TARGET-TRIAL-2022",
       "SA-TRIPOD-AI-2024",
-      "SA-WHO-CONSTITUTION"
+      "SA-WHO-CONSTITUTION",
+      "SA-YAMANAKA-IPS-2006"
     ],
-    "selectionRule": "Review the highest-leverage anchors first: method anchors that govern modeling language, an expanded aging-mechanism taxonomy that spans biological maintenance domains, and a health-functioning value anchor that constrains outcome framing.",
+    "selectionRule": "Review every current source anchor referenced by the 81 domain-source card promotion tasks before drafting reviewed Source Cards, variable cards, endpoint cards, uncertainty cards, transfer-boundary cards or downgrade checks.",
     "currentLimitations": [
       "This is a local source-context review, not an external independent fresh reviewer verdict.",
-      "Reviewed anchors support method, taxonomy and value vocabulary only; they do not validate domain data, model calibration, intervention effects or individual recommendations.",
-      "Rows remain blocked from model admission until reviewed cards, downgrade checks and later model gates pass.",
-      "Cancer, reprogramming, immune-aging, biomarker, brain-preservation, digital-twin, future-waiting, AI-governance and screening-bias anchors still need later local and independent review."
+      "Reviewed anchors support method, taxonomy, value, mechanism, governance, preservation, time-accounting, bias and public-boundary vocabulary only; they do not validate domain data, model calibration, intervention effects or individual recommendations.",
+      "Rows remain blocked from model admission until independent fresh review, reviewed Source Cards, variable cards, endpoint cards, uncertainty cards, transfer-boundary cards, downgrade checks and later model gates pass.",
+      "Completion of local source-context review does not complete Source Card promotion, domain-claim upgrade, clinical validity, calibrated prediction or individual-level use."
     ]
   },
   "requiredPerReviewFields": [
@@ -53,6 +67,133 @@
     "blockedUses"
   ],
   "localReviews": [
+    {
+      "reviewDate": "2026-07-02",
+      "reviewMode": "local-source-context-review-from-primary-or-registry-sources",
+      "sourceContextVerdict": "local-review-pass-with-boundaries-requires-independent-fresh-review",
+      "promotionDecision": "eligible-for-card-drafting-only-after-independent-review",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-independent-review-and-model-gates",
+      "requiredNextArtifacts": [
+        "reviewed-source-card",
+        "variable-card",
+        "endpoint-card",
+        "uncertainty-card",
+        "transfer-boundary-card",
+        "downgrade-check-row"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "domain-claim-upgrade",
+        "clinical-validity-claim"
+      ],
+      "affectedPromotionTaskCount": 3,
+      "affectedPromotionTaskIds": [
+        "PROM-059-HIDOM-FLD003-SA-BRAIN-PRESERVATION-2024",
+        "PROM-062-HIDOM-FLD004-SA-BRAIN-PRESERVATION-2024",
+        "PROM-065-HIDOM-FLD005-SA-BRAIN-PRESERVATION-2024"
+      ],
+      "affectedDomainIds": [
+        "biostasis-cryopreservation",
+        "brain-preservation-connectomics-emulation",
+        "disembodied-cns"
+      ],
+      "affectedFieldCardIds": [
+        "HIDOM-FLD003",
+        "HIDOM-FLD004",
+        "HIDOM-FLD005"
+      ],
+      "sourceCardId": "SA-BRAIN-PRESERVATION-2024",
+      "reviewedSourceTitle": "Structural brain preservation: a potential bridge to future medical technologies",
+      "reviewedSourceAuthors": "Andrew T. McKenzie; Ariel Zeleznikow-Johnston; Jordan S. Sparks; Oge Nnadi; John Smart; Keith Wiley; Michael A. Cerullo; Aschwin de Wolf; Francesca Minerva; Ramón Risco; George M. Church; João Pedro de Magalhães; Emil F. Kendziorra",
+      "reviewedSourceYear": "2024",
+      "sourceType": "review-paper",
+      "reviewEvidence": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39315362/",
+          "evidenceType": "pubmed-record",
+          "finding": "PubMed identifies the 2024 Frontiers in Medical Technology review and summarizes structural brain preservation as a potential bridge to future restoration technologies."
+        },
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11416988/",
+          "evidenceType": "pmc-full-text",
+          "finding": "PMC provides full-text context for structural preservation, theoretical recovery technologies, and ethical/legal boundary issues."
+        }
+      ],
+      "supports": [
+        "Transfers brain-information preservation boundary vocabulary into Human Infra source-card drafting.",
+        "Supports boundary checks, variable discovery, and downgrade framing when used within its source context."
+      ],
+      "doesNotSupport": [
+        "Calibrated prediction, individual recommendation, individual death-date output, or intervention ranking.",
+        "Domain-claim upgrade without independent fresh review, endpoint cards, uncertainty cards and transfer-boundary checks."
+      ],
+      "reviewerBoundary": "Transfer only as brain-information preservation boundary vocabulary. Empirical endpoints, populations, effects, uncertainty and governance boundaries must be specified separately before model admission."
+    },
+    {
+      "reviewDate": "2026-07-02",
+      "reviewMode": "local-source-context-review-from-primary-or-registry-sources",
+      "sourceContextVerdict": "local-review-pass-with-boundaries-requires-independent-fresh-review",
+      "promotionDecision": "eligible-for-card-drafting-only-after-independent-review",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-independent-review-and-model-gates",
+      "requiredNextArtifacts": [
+        "reviewed-source-card",
+        "variable-card",
+        "endpoint-card",
+        "uncertainty-card",
+        "transfer-boundary-card",
+        "downgrade-check-row"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "domain-claim-upgrade",
+        "clinical-validity-claim"
+      ],
+      "affectedPromotionTaskCount": 2,
+      "affectedPromotionTaskIds": [
+        "PROM-060-HIDOM-FLD003-SA-CAPABILITY-APPROACH",
+        "PROM-068-HIDOM-FLD006-SA-CAPABILITY-APPROACH"
+      ],
+      "affectedDomainIds": [
+        "biostasis-cryopreservation",
+        "memory-editing"
+      ],
+      "affectedFieldCardIds": [
+        "HIDOM-FLD003",
+        "HIDOM-FLD006"
+      ],
+      "sourceCardId": "SA-CAPABILITY-APPROACH",
+      "reviewedSourceTitle": "Capability Approach",
+      "reviewedSourceAuthors": "Ingrid Robeyns; Stanford Encyclopedia of Philosophy",
+      "reviewedSourceYear": "living-reference",
+      "sourceType": "philosophy-reference",
+      "reviewEvidence": [
+        {
+          "url": "https://plato.stanford.edu/entries/capability-approach/",
+          "evidenceType": "stanford-encyclopedia-reference",
+          "finding": "SEP defines the capability approach around capabilities, functionings and freedom to achieve well-being."
+        },
+        {
+          "url": "https://iep.utm.edu/sen-cap/",
+          "evidenceType": "philosophy-reference",
+          "finding": "IEP explains the approach as focusing on lives people have reason to value rather than resources alone."
+        }
+      ],
+      "supports": [
+        "Transfers capability, functioning and option-value vocabulary into Human Infra source-card drafting.",
+        "Supports boundary checks, variable discovery, and downgrade framing when used within its source context."
+      ],
+      "doesNotSupport": [
+        "Calibrated prediction, individual recommendation, individual death-date output, or intervention ranking.",
+        "Domain-claim upgrade without independent fresh review, endpoint cards, uncertainty cards and transfer-boundary checks."
+      ],
+      "reviewerBoundary": "Transfer only as capability, functioning and option-value vocabulary. Empirical endpoints, populations, effects, uncertainty and governance boundaries must be specified separately before model admission."
+    },
     {
       "reviewedSourceTitle": "Regression Models and Life-Tables",
       "reviewedSourceAuthors": "D. R. Cox",
@@ -123,6 +264,333 @@
         "domain-claim-upgrade",
         "clinical-validity-claim"
       ]
+    },
+    {
+      "reviewDate": "2026-07-02",
+      "reviewMode": "local-source-context-review-from-primary-or-registry-sources",
+      "sourceContextVerdict": "local-review-pass-with-boundaries-requires-independent-fresh-review",
+      "promotionDecision": "eligible-for-card-drafting-only-after-independent-review",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-independent-review-and-model-gates",
+      "requiredNextArtifacts": [
+        "reviewed-source-card",
+        "variable-card",
+        "endpoint-card",
+        "uncertainty-card",
+        "transfer-boundary-card",
+        "downgrade-check-row"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "domain-claim-upgrade",
+        "clinical-validity-claim"
+      ],
+      "affectedPromotionTaskCount": 3,
+      "affectedPromotionTaskIds": [
+        "PROM-063-HIDOM-FLD004-SA-DYNAMIC-DIGITAL-TWIN-2022",
+        "PROM-066-HIDOM-FLD005-SA-DYNAMIC-DIGITAL-TWIN-2022",
+        "PROM-073-HIDOM-FLD011-SA-DYNAMIC-DIGITAL-TWIN-2022"
+      ],
+      "affectedDomainIds": [
+        "brain-preservation-connectomics-emulation",
+        "disembodied-cns",
+        "neuro-continuity"
+      ],
+      "affectedFieldCardIds": [
+        "HIDOM-FLD004",
+        "HIDOM-FLD005",
+        "HIDOM-FLD011"
+      ],
+      "sourceCardId": "SA-DYNAMIC-DIGITAL-TWIN-2022",
+      "reviewedSourceTitle": "Dynamic Digital Twin: Diagnosis, Treatment, Prediction, and Prevention of Disease During the Life Course",
+      "reviewedSourceAuthors": "Skander Tahar Mulder et al.",
+      "reviewedSourceYear": "2022",
+      "sourceType": "digital-health-review",
+      "reviewEvidence": [
+        {
+          "url": "https://www.jmir.org/2022/9/e35675",
+          "evidenceType": "publisher-article-page",
+          "finding": "JMIR identifies the article as J Med Internet Res 2022;24(9):e35675."
+        },
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/36103220/",
+          "evidenceType": "pubmed-record",
+          "finding": "PubMed records the article metadata and life-course digital-twin framing."
+        },
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9520391/",
+          "evidenceType": "pmc-full-text",
+          "finding": "PMC supports digital-twin architecture, multimodal modeling, and validation challenge context."
+        }
+      ],
+      "supports": [
+        "Transfers subject-state modeling architecture vocabulary into Human Infra source-card drafting.",
+        "Supports boundary checks, variable discovery, and downgrade framing when used within its source context."
+      ],
+      "doesNotSupport": [
+        "Calibrated prediction, individual recommendation, individual death-date output, or intervention ranking.",
+        "Domain-claim upgrade without independent fresh review, endpoint cards, uncertainty cards and transfer-boundary checks."
+      ],
+      "reviewerBoundary": "Transfer only as subject-state modeling architecture vocabulary. Empirical endpoints, populations, effects, uncertainty and governance boundaries must be specified separately before model admission."
+    },
+    {
+      "reviewDate": "2026-07-02",
+      "reviewMode": "local-source-context-review-from-primary-or-registry-sources",
+      "sourceContextVerdict": "local-review-pass-with-boundaries-requires-independent-fresh-review",
+      "promotionDecision": "eligible-for-card-drafting-only-after-independent-review",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-independent-review-and-model-gates",
+      "requiredNextArtifacts": [
+        "reviewed-source-card",
+        "variable-card",
+        "endpoint-card",
+        "uncertainty-card",
+        "transfer-boundary-card",
+        "downgrade-check-row"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "domain-claim-upgrade",
+        "clinical-validity-claim"
+      ],
+      "affectedPromotionTaskCount": 4,
+      "affectedPromotionTaskIds": [
+        "PROM-058-HIDOM-FLD003-SA-EXTENDED-MIND-1998",
+        "PROM-061-HIDOM-FLD004-SA-EXTENDED-MIND-1998",
+        "PROM-067-HIDOM-FLD006-SA-EXTENDED-MIND-1998",
+        "PROM-072-HIDOM-FLD011-SA-EXTENDED-MIND-1998"
+      ],
+      "affectedDomainIds": [
+        "biostasis-cryopreservation",
+        "brain-preservation-connectomics-emulation",
+        "memory-editing",
+        "neuro-continuity"
+      ],
+      "affectedFieldCardIds": [
+        "HIDOM-FLD003",
+        "HIDOM-FLD004",
+        "HIDOM-FLD006",
+        "HIDOM-FLD011"
+      ],
+      "sourceCardId": "SA-EXTENDED-MIND-1998",
+      "reviewedSourceTitle": "The Extended Mind",
+      "reviewedSourceAuthors": "Andy Clark; David J. Chalmers",
+      "reviewedSourceYear": "1998",
+      "sourceType": "philosophy-paper",
+      "reviewEvidence": [
+        {
+          "url": "https://academic.oup.com/analysis/article-pdf/58/1/7/359060/58-1-7.pdf",
+          "evidenceType": "publisher-pdf-page",
+          "finding": "Oxford Academic identifies the Analysis article, volume 58 issue 1, pages 7-19."
+        },
+        {
+          "url": "https://philpapers.org/rec/CLATEM",
+          "evidenceType": "philosophy-index-record",
+          "finding": "PhilPapers records the canonical extended-mind paper and DOI metadata."
+        }
+      ],
+      "supports": [
+        "Transfers extended-cognition and external-tool-dependence vocabulary into Human Infra source-card drafting.",
+        "Supports boundary checks, variable discovery, and downgrade framing when used within its source context."
+      ],
+      "doesNotSupport": [
+        "Calibrated prediction, individual recommendation, individual death-date output, or intervention ranking.",
+        "Domain-claim upgrade without independent fresh review, endpoint cards, uncertainty cards and transfer-boundary checks."
+      ],
+      "reviewerBoundary": "Transfer only as extended-cognition and external-tool-dependence vocabulary. Empirical endpoints, populations, effects, uncertainty and governance boundaries must be specified separately before model admission."
+    },
+    {
+      "reviewDate": "2026-07-02",
+      "reviewMode": "local-source-context-review-from-primary-or-registry-sources",
+      "sourceContextVerdict": "local-review-pass-with-boundaries-requires-independent-fresh-review",
+      "promotionDecision": "eligible-for-card-drafting-only-after-independent-review",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-independent-review-and-model-gates",
+      "requiredNextArtifacts": [
+        "reviewed-source-card",
+        "variable-card",
+        "endpoint-card",
+        "uncertainty-card",
+        "transfer-boundary-card",
+        "downgrade-check-row"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "domain-claim-upgrade",
+        "clinical-validity-claim"
+      ],
+      "sourceCardId": "SA-GPS-RELATIVITY-2003",
+      "affectedPromotionTaskCount": 1,
+      "affectedPromotionTaskIds": [
+        "PROM-056-HIDOM-FLD001-SA-GPS-RELATIVITY-2003"
+      ],
+      "affectedDomainIds": [
+        "future-waiting"
+      ],
+      "affectedFieldCardIds": [
+        "HIDOM-FLD001"
+      ],
+      "reviewedSourceTitle": "Relativity in the Global Positioning System",
+      "reviewedSourceAuthors": "Neil Ashby",
+      "reviewedSourceYear": "2003",
+      "sourceType": "physics-review",
+      "reviewEvidence": [
+        {
+          "url": "https://link.springer.com/article/10.12942/lrr-2003-1",
+          "evidenceType": "journal-article-record",
+          "finding": "Living Reviews in Relativity identifies Ashby 2003 as a review of relativistic effects that must be accounted for in GPS clock operation."
+        },
+        {
+          "url": "https://inspirehep.net/literature/1252883",
+          "evidenceType": "bibliographic-record",
+          "finding": "INSPIRE indexes the same review and supports use as a source for clock-rate and reference-frame accounting language."
+        }
+      ],
+      "supports": [
+        "Transfers proper-time, coordinate-time and reference-frame accounting vocabulary into future-waiting source-card drafting.",
+        "Supports boundary checks that weak-field clock corrections are operational facts but not controlled strong-redshift waiting-room feasibility evidence."
+      ],
+      "doesNotSupport": [
+        "Calibrated prediction, individual recommendation, individual death-date output, or intervention ranking.",
+        "Artificial black-hole, engineered waiting-room, life-support, communication, exit or safety claims."
+      ],
+      "reviewerBoundary": "Transfer only as proper-time and reference-frame vocabulary. Strong-redshift waiting scenarios require metric, worldline, observer, risk and exit cards before model admission."
+    },
+    {
+      "reviewDate": "2026-07-02",
+      "reviewMode": "local-source-context-review-from-primary-or-registry-sources",
+      "sourceContextVerdict": "local-review-pass-with-boundaries-requires-independent-fresh-review",
+      "promotionDecision": "eligible-for-card-drafting-only-after-independent-review",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-independent-review-and-model-gates",
+      "requiredNextArtifacts": [
+        "reviewed-source-card",
+        "variable-card",
+        "endpoint-card",
+        "uncertainty-card",
+        "transfer-boundary-card",
+        "downgrade-check-row"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "domain-claim-upgrade",
+        "clinical-validity-claim"
+      ],
+      "sourceCardId": "SA-GRIMAGE-2019",
+      "affectedPromotionTaskCount": 1,
+      "affectedPromotionTaskIds": [
+        "PROM-040-HIDOM-FLD014-SA-GRIMAGE-2019"
+      ],
+      "affectedDomainIds": [
+        "biological-age-clocks-biomarker-validation"
+      ],
+      "affectedFieldCardIds": [
+        "HIDOM-FLD014"
+      ],
+      "reviewedSourceTitle": "DNA methylation GrimAge strongly predicts lifespan and healthspan",
+      "reviewedSourceAuthors": "Ake T. Lu; et al.",
+      "reviewedSourceYear": "2019",
+      "sourceType": "biomarker-paper",
+      "reviewEvidence": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30669119/",
+          "evidenceType": "pubmed-record",
+          "finding": "PubMed identifies GrimAge as a DNA methylation biomarker paper connected to lifespan and healthspan prediction language."
+        },
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6366976/",
+          "evidenceType": "pmc-full-text",
+          "finding": "PMC provides full-text context for DNA methylation risk-marker construction, validation and mortality/healthspan associations."
+        }
+      ],
+      "supports": [
+        "Transfers biological-age clock language as observation-layer risk-marker vocabulary into biomarker-validation source-card drafting.",
+        "Supports separating state estimation and risk stratification from causal control, intervention response and personal prognosis."
+      ],
+      "doesNotSupport": [
+        "Calibrated prediction, individual recommendation, individual death-date output, or intervention ranking.",
+        "Mortality reduction, intervention effect, causal rejuvenation, personal prognosis or biomarker-optimization advice."
+      ],
+      "reviewerBoundary": "Transfer only as biomarker-risk and observation-process vocabulary. Population, tissue, calibration, batch, endpoint and transfer-boundary cards remain required before model admission."
+    },
+    {
+      "reviewDate": "2026-07-02",
+      "reviewMode": "local-source-context-review-from-primary-or-registry-sources",
+      "sourceContextVerdict": "local-review-pass-with-boundaries-requires-independent-fresh-review",
+      "promotionDecision": "eligible-for-card-drafting-only-after-independent-review",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-independent-review-and-model-gates",
+      "requiredNextArtifacts": [
+        "reviewed-source-card",
+        "variable-card",
+        "endpoint-card",
+        "uncertainty-card",
+        "transfer-boundary-card",
+        "downgrade-check-row"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "domain-claim-upgrade",
+        "clinical-validity-claim"
+      ],
+      "affectedPromotionTaskCount": 5,
+      "affectedPromotionTaskIds": [
+        "PROM-036-HIDOM-FLD012-SA-HALLMARKS-AGING-2013",
+        "PROM-038-HIDOM-FLD013-SA-HALLMARKS-AGING-2013",
+        "PROM-042-HIDOM-FLD015-SA-HALLMARKS-AGING-2013",
+        "PROM-044-HIDOM-FLD016-SA-HALLMARKS-AGING-2013",
+        "PROM-048-HIDOM-FLD018-SA-HALLMARKS-AGING-2013"
+      ],
+      "affectedDomainIds": [
+        "cellular-senescence-clearance",
+        "genomic-stability-dna-repair",
+        "mitochondrial-bioenergetics",
+        "proteostasis-autophagy",
+        "stem-cell-reserve-renewal"
+      ],
+      "affectedFieldCardIds": [
+        "HIDOM-FLD012",
+        "HIDOM-FLD013",
+        "HIDOM-FLD015",
+        "HIDOM-FLD016",
+        "HIDOM-FLD018"
+      ],
+      "sourceCardId": "SA-HALLMARKS-AGING-2013",
+      "reviewedSourceTitle": "The Hallmarks of Aging",
+      "reviewedSourceAuthors": "Carlos López-Otín; Maria A. Blasco; Linda Partridge; Manuel Serrano; Guido Kroemer",
+      "reviewedSourceYear": "2013",
+      "sourceType": "review-paper",
+      "reviewEvidence": [
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3836174/",
+          "evidenceType": "pmc-full-text",
+          "finding": "PMC identifies the 2013 Cell review and its baseline aging-hallmark taxonomy."
+        },
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/23746838/",
+          "evidenceType": "pubmed-record",
+          "finding": "PubMed records the review and summarizes key hallmark categories such as genomic instability, telomere attrition and loss of proteostasis."
+        }
+      ],
+      "supports": [
+        "Transfers baseline aging-mechanism taxonomy into Human Infra source-card drafting.",
+        "Supports boundary checks, variable discovery, and downgrade framing when used within its source context."
+      ],
+      "doesNotSupport": [
+        "Calibrated prediction, individual recommendation, individual death-date output, or intervention ranking.",
+        "Domain-claim upgrade without independent fresh review, endpoint cards, uncertainty cards and transfer-boundary checks."
+      ],
+      "reviewerBoundary": "Transfer only as baseline aging-mechanism taxonomy. Empirical endpoints, populations, effects, uncertainty and governance boundaries must be specified separately before model admission."
     },
     {
       "sourceCardId": "SA-HALLMARKS-AGING-2023",
@@ -228,6 +696,136 @@
       ]
     },
     {
+      "reviewDate": "2026-07-02",
+      "reviewMode": "local-source-context-review-from-primary-or-registry-sources",
+      "sourceContextVerdict": "local-review-pass-with-boundaries-requires-independent-fresh-review",
+      "promotionDecision": "eligible-for-card-drafting-only-after-independent-review",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-independent-review-and-model-gates",
+      "requiredNextArtifacts": [
+        "reviewed-source-card",
+        "variable-card",
+        "endpoint-card",
+        "uncertainty-card",
+        "transfer-boundary-card",
+        "downgrade-check-row"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "domain-claim-upgrade",
+        "clinical-validity-claim"
+      ],
+      "affectedPromotionTaskCount": 5,
+      "affectedPromotionTaskIds": [
+        "PROM-027-HIDOM-FLD007-SA-HALLMARKS-CANCER-2022",
+        "PROM-032-HIDOM-FLD009-SA-HALLMARKS-CANCER-2022",
+        "PROM-039-HIDOM-FLD013-SA-HALLMARKS-CANCER-2022",
+        "PROM-045-HIDOM-FLD016-SA-HALLMARKS-CANCER-2022",
+        "PROM-049-HIDOM-FLD018-SA-HALLMARKS-CANCER-2022"
+      ],
+      "affectedDomainIds": [
+        "cancer-screening-early-detection-continuity",
+        "cellular-reprogramming",
+        "cellular-senescence-clearance",
+        "genomic-stability-dna-repair",
+        "stem-cell-reserve-renewal"
+      ],
+      "affectedFieldCardIds": [
+        "HIDOM-FLD007",
+        "HIDOM-FLD009",
+        "HIDOM-FLD013",
+        "HIDOM-FLD016",
+        "HIDOM-FLD018"
+      ],
+      "sourceCardId": "SA-HALLMARKS-CANCER-2022",
+      "reviewedSourceTitle": "Hallmarks of Cancer: New Dimensions",
+      "reviewedSourceAuthors": "Douglas Hanahan",
+      "reviewedSourceYear": "2022",
+      "sourceType": "review-paper",
+      "reviewEvidence": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35022204/",
+          "evidenceType": "pubmed-record",
+          "finding": "PubMed identifies the 2022 Cancer Discovery article and its hallmarks-of-cancer framework."
+        },
+        {
+          "url": "https://aacrjournals.org/cancerdiscovery/article/12/1/31/675608/Hallmarks-of-Cancer-New-Dimensions",
+          "evidenceType": "publisher-article-page",
+          "finding": "The AACR journal page is the primary publisher context for the updated cancer-hallmarks framework."
+        }
+      ],
+      "supports": [
+        "Transfers cancer-risk and adverse-capability vocabulary into Human Infra source-card drafting.",
+        "Supports boundary checks, variable discovery, and downgrade framing when used within its source context."
+      ],
+      "doesNotSupport": [
+        "Calibrated prediction, individual recommendation, individual death-date output, or intervention ranking.",
+        "Domain-claim upgrade without independent fresh review, endpoint cards, uncertainty cards and transfer-boundary checks."
+      ],
+      "reviewerBoundary": "Transfer only as cancer-risk and adverse-capability vocabulary. Empirical endpoints, populations, effects, uncertainty and governance boundaries must be specified separately before model admission."
+    },
+    {
+      "reviewDate": "2026-07-02",
+      "reviewMode": "local-source-context-review-from-primary-or-registry-sources",
+      "sourceContextVerdict": "local-review-pass-with-boundaries-requires-independent-fresh-review",
+      "promotionDecision": "eligible-for-card-drafting-only-after-independent-review",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-independent-review-and-model-gates",
+      "requiredNextArtifacts": [
+        "reviewed-source-card",
+        "variable-card",
+        "endpoint-card",
+        "uncertainty-card",
+        "transfer-boundary-card",
+        "downgrade-check-row"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "domain-claim-upgrade",
+        "clinical-validity-claim"
+      ],
+      "sourceCardId": "SA-IMMUNOSENESCENCE-2024",
+      "affectedPromotionTaskCount": 1,
+      "affectedPromotionTaskIds": [
+        "PROM-034-HIDOM-FLD010-SA-IMMUNOSENESCENCE-2024"
+      ],
+      "affectedDomainIds": [
+        "immune-maintenance"
+      ],
+      "affectedFieldCardIds": [
+        "HIDOM-FLD010"
+      ],
+      "reviewedSourceTitle": "Immunosenescence: Aging and Immune System Decline",
+      "reviewedSourceAuthors": "Alyssa L. DeMaio; et al.",
+      "reviewedSourceYear": "2024",
+      "sourceType": "review-paper",
+      "reviewEvidence": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39771976/",
+          "evidenceType": "pubmed-record",
+          "finding": "PubMed identifies the 2024 review as a source on immune-system decline with aging."
+        },
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11680340/",
+          "evidenceType": "pmc-full-text",
+          "finding": "PMC provides full-text context for immune aging mechanisms, functional decline and tradeoffs relevant to source-card drafting."
+        }
+      ],
+      "supports": [
+        "Transfers immune-aging vocabulary for infection defense, cancer surveillance, inflammation, autoimmunity and recovery capacity.",
+        "Supports multi-channel immune maintenance framing where single immune-marker improvement cannot be treated as global subject-continuity gain."
+      ],
+      "doesNotSupport": [
+        "Calibrated prediction, individual recommendation, individual death-date output, or intervention ranking.",
+        "Immune-boosting advice, treatment selection, causal effect size, personal risk estimate or clinical validity claim."
+      ],
+      "reviewerBoundary": "Transfer only as immune-aging mechanism and variable vocabulary. Tissue, population, endpoint, safety and tradeoff cards remain required before model admission."
+    },
+    {
       "reviewedSourceTitle": "Nonparametric estimation from incomplete observations",
       "reviewedSourceAuthors": "Edward L. Kaplan; Paul Meier",
       "reviewedSourceYear": "1958",
@@ -291,6 +889,250 @@
         "domain-claim-upgrade",
         "clinical-validity-claim"
       ]
+    },
+    {
+      "reviewDate": "2026-07-02",
+      "reviewMode": "local-source-context-review-from-primary-or-registry-sources",
+      "sourceContextVerdict": "local-review-pass-with-boundaries-requires-independent-fresh-review",
+      "promotionDecision": "eligible-for-card-drafting-only-after-independent-review",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-independent-review-and-model-gates",
+      "requiredNextArtifacts": [
+        "reviewed-source-card",
+        "variable-card",
+        "endpoint-card",
+        "uncertainty-card",
+        "transfer-boundary-card",
+        "downgrade-check-row"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "domain-claim-upgrade",
+        "clinical-validity-claim"
+      ],
+      "sourceCardId": "SA-NASA-BLACK-HOLES",
+      "affectedPromotionTaskCount": 1,
+      "affectedPromotionTaskIds": [
+        "PROM-057-HIDOM-FLD001-SA-NASA-BLACK-HOLES"
+      ],
+      "affectedDomainIds": [
+        "future-waiting"
+      ],
+      "affectedFieldCardIds": [
+        "HIDOM-FLD001"
+      ],
+      "reviewedSourceTitle": "Black Holes - NASA Science",
+      "reviewedSourceAuthors": "NASA Science",
+      "reviewedSourceYear": "official-reference",
+      "sourceType": "official-explainer",
+      "reviewEvidence": [
+        {
+          "url": "https://science.nasa.gov/universe/black-holes/",
+          "evidenceType": "official-explainer",
+          "finding": "NASA Science provides public boundary language for black holes, event horizons and environmental hazards."
+        },
+        {
+          "url": "https://science.nasa.gov/universe/what-happens-when-something-gets-too-close-to-a-black-hole/",
+          "evidenceType": "official-explainer",
+          "finding": "NASA Science explains near-black-hole behavior in public-facing terms and supports hazard-aware framing rather than feasibility claims."
+        }
+      ],
+      "supports": [
+        "Transfers public-facing black-hole, time-dilation and hazard vocabulary into future-waiting communication boundary drafting.",
+        "Supports treating black-hole waiting-room language as metaphorical unless formal metric, orbit, life-support, communication and exit scenario cards exist."
+      ],
+      "doesNotSupport": [
+        "Calibrated prediction, individual recommendation, individual death-date output, or intervention ranking.",
+        "Artificial black holes, engineered waiting rooms, survival strategy, controlled redshift infrastructure or feasible time-bridge claims."
+      ],
+      "reviewerBoundary": "Transfer only as public boundary and hazard vocabulary. Do not use NASA explainer material as engineering feasibility or subject-survival evidence."
+    },
+    {
+      "reviewDate": "2026-07-02",
+      "reviewMode": "local-source-context-review-from-primary-or-registry-sources",
+      "sourceContextVerdict": "local-review-pass-with-boundaries-requires-independent-fresh-review",
+      "promotionDecision": "eligible-for-card-drafting-only-after-independent-review",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-independent-review-and-model-gates",
+      "requiredNextArtifacts": [
+        "reviewed-source-card",
+        "variable-card",
+        "endpoint-card",
+        "uncertainty-card",
+        "transfer-boundary-card",
+        "downgrade-check-row"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "domain-claim-upgrade",
+        "clinical-validity-claim"
+      ],
+      "sourceCardId": "SA-NCI-SCREENING-BIAS",
+      "affectedPromotionTaskCount": 1,
+      "affectedPromotionTaskIds": [
+        "PROM-070-HIDOM-FLD009-SA-NCI-SCREENING-BIAS"
+      ],
+      "affectedDomainIds": [
+        "cancer-screening-early-detection-continuity"
+      ],
+      "affectedFieldCardIds": [
+        "HIDOM-FLD009"
+      ],
+      "reviewedSourceTitle": "What Cancer Screening Statistics Really Tell Us",
+      "reviewedSourceAuthors": "National Cancer Institute",
+      "reviewedSourceYear": "official-reference",
+      "sourceType": "official-explainer",
+      "reviewEvidence": [
+        {
+          "url": "https://www.cancer.gov/about-cancer/screening/research/what-screening-statistics-mean",
+          "evidenceType": "official-explainer",
+          "finding": "NCI explains why screening statistics require careful interpretation, including survival-after-diagnosis versus mortality endpoints."
+        },
+        {
+          "url": "https://www.cancer.gov/about-cancer/screening/research",
+          "evidenceType": "official-topic-page",
+          "finding": "NCI provides official context for cancer screening research and screening-benefit boundaries."
+        }
+      ],
+      "supports": [
+        "Transfers screening endpoint and bias vocabulary for lead-time bias, length bias, overdiagnosis, false positives and net benefit framing.",
+        "Supports separating earlier detection and survival-after-diagnosis statistics from mortality reduction and effective-time preservation claims."
+      ],
+      "doesNotSupport": [
+        "Calibrated prediction, individual recommendation, individual death-date output, or intervention ranking.",
+        "Endorsement or rejection of individual screening, mortality benefit proof, treatment choice or clinical validity claim."
+      ],
+      "reviewerBoundary": "Transfer only as screening endpoint and bias vocabulary. Concrete screening claims need population, test, follow-up, harm and mortality endpoint cards."
+    },
+    {
+      "reviewDate": "2026-07-02",
+      "reviewMode": "local-source-context-review-from-primary-or-registry-sources",
+      "sourceContextVerdict": "local-review-pass-with-boundaries-requires-independent-fresh-review",
+      "promotionDecision": "eligible-for-card-drafting-only-after-independent-review",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-independent-review-and-model-gates",
+      "requiredNextArtifacts": [
+        "reviewed-source-card",
+        "variable-card",
+        "endpoint-card",
+        "uncertainty-card",
+        "transfer-boundary-card",
+        "downgrade-check-row"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "domain-claim-upgrade",
+        "clinical-validity-claim"
+      ],
+      "sourceCardId": "SA-NIST-AI-RMF-2023",
+      "affectedPromotionTaskCount": 1,
+      "affectedPromotionTaskIds": [
+        "PROM-069-HIDOM-FLD006-SA-NIST-AI-RMF-2023"
+      ],
+      "affectedDomainIds": [
+        "memory-editing"
+      ],
+      "affectedFieldCardIds": [
+        "HIDOM-FLD006"
+      ],
+      "reviewedSourceTitle": "Artificial Intelligence Risk Management Framework (AI RMF 1.0)",
+      "reviewedSourceAuthors": "National Institute of Standards and Technology",
+      "reviewedSourceYear": "2023",
+      "sourceType": "risk-management-framework",
+      "reviewEvidence": [
+        {
+          "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+          "evidenceType": "official-framework-page",
+          "finding": "NIST identifies AI RMF as a framework for managing AI risks and trustworthy AI characteristics."
+        },
+        {
+          "url": "https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-ai-rmf-10",
+          "evidenceType": "official-publication-record",
+          "finding": "NIST publication record identifies AI RMF 1.0 as the official framework document."
+        },
+        {
+          "url": "https://nvlpubs.nist.gov/nistpubs/ai/nist.ai.100-1.pdf",
+          "evidenceType": "official-pdf",
+          "finding": "The official PDF provides the framework context for governance, measurement, management and monitoring of AI risks."
+        }
+      ],
+      "supports": [
+        "Transfers AI risk-management vocabulary for measuring, monitoring, governing and accounting for AI-assisted subject-continuity infrastructure.",
+        "Supports treating AI enhancement as governed infrastructure rather than automatically beneficial capability expansion."
+      ],
+      "doesNotSupport": [
+        "Calibrated prediction, individual recommendation, individual death-date output, or intervention ranking.",
+        "Autonomous action, clinical decision-making, personal advice, memory-editing efficacy or capability-improvement claims."
+      ],
+      "reviewerBoundary": "Transfer only as AI risk-management vocabulary. Specific AI tools require task, user, context, failure, accountability and monitoring cards before model admission."
+    },
+    {
+      "reviewDate": "2026-07-02",
+      "reviewMode": "local-source-context-review-from-primary-or-registry-sources",
+      "sourceContextVerdict": "local-review-pass-with-boundaries-requires-independent-fresh-review",
+      "promotionDecision": "eligible-for-card-drafting-only-after-independent-review",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-independent-review-and-model-gates",
+      "requiredNextArtifacts": [
+        "reviewed-source-card",
+        "variable-card",
+        "endpoint-card",
+        "uncertainty-card",
+        "transfer-boundary-card",
+        "downgrade-check-row"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "domain-claim-upgrade",
+        "clinical-validity-claim"
+      ],
+      "affectedPromotionTaskCount": 2,
+      "affectedPromotionTaskIds": [
+        "PROM-029-HIDOM-FLD007-SA-PARTIAL-REPROGRAMMING-2016",
+        "PROM-031-HIDOM-FLD008-SA-PARTIAL-REPROGRAMMING-2016"
+      ],
+      "affectedDomainIds": [
+        "cellular-reprogramming",
+        "regenerative-medicine"
+      ],
+      "affectedFieldCardIds": [
+        "HIDOM-FLD007",
+        "HIDOM-FLD008"
+      ],
+      "sourceCardId": "SA-PARTIAL-REPROGRAMMING-2016",
+      "reviewedSourceTitle": "In Vivo Amelioration of Age-Associated Hallmarks by Partial Reprogramming",
+      "reviewedSourceAuthors": "Alejandro Ocampo et al.",
+      "reviewedSourceYear": "2016",
+      "sourceType": "preclinical-paper",
+      "reviewEvidence": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/27984723/",
+          "evidenceType": "pubmed-record",
+          "finding": "PubMed identifies the Cell 2016 preclinical partial-reprogramming paper and summarizes cyclic OSKM exposure."
+        },
+        {
+          "url": "https://www.cell.com/fulltext/S0092-8674%2816%2931664-6",
+          "evidenceType": "publisher-article-page",
+          "finding": "The Cell page is the primary publisher context for the preclinical controlled-window route."
+        }
+      ],
+      "supports": [
+        "Transfers partial-reprogramming controlled-window route vocabulary into Human Infra source-card drafting.",
+        "Supports boundary checks, variable discovery, and downgrade framing when used within its source context."
+      ],
+      "doesNotSupport": [
+        "Calibrated prediction, individual recommendation, individual death-date output, or intervention ranking.",
+        "Domain-claim upgrade without independent fresh review, endpoint cards, uncertainty cards and transfer-boundary checks."
+      ],
+      "reviewerBoundary": "Transfer only as partial-reprogramming controlled-window route vocabulary. Empirical endpoints, populations, effects, uncertainty and governance boundaries must be specified separately before model admission."
     },
     {
       "reviewedSourceTitle": "Target Trial Emulation: A Framework for Causal Inference From Observational Data",
@@ -537,6 +1379,65 @@
         "HIDOM-FLD025",
         "HIDOM-FLD026"
       ]
+    },
+    {
+      "reviewDate": "2026-07-02",
+      "reviewMode": "local-source-context-review-from-primary-or-registry-sources",
+      "sourceContextVerdict": "local-review-pass-with-boundaries-requires-independent-fresh-review",
+      "promotionDecision": "eligible-for-card-drafting-only-after-independent-review",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-independent-review-and-model-gates",
+      "requiredNextArtifacts": [
+        "reviewed-source-card",
+        "variable-card",
+        "endpoint-card",
+        "uncertainty-card",
+        "transfer-boundary-card",
+        "downgrade-check-row"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "domain-claim-upgrade",
+        "clinical-validity-claim"
+      ],
+      "sourceCardId": "SA-YAMANAKA-IPS-2006",
+      "affectedPromotionTaskCount": 1,
+      "affectedPromotionTaskIds": [
+        "PROM-028-HIDOM-FLD007-SA-YAMANAKA-IPS-2006"
+      ],
+      "affectedDomainIds": [
+        "cellular-reprogramming"
+      ],
+      "affectedFieldCardIds": [
+        "HIDOM-FLD007"
+      ],
+      "reviewedSourceTitle": "Induction of pluripotent stem cells from mouse embryonic and adult fibroblast cultures by defined factors",
+      "reviewedSourceAuthors": "Kazutoshi Takahashi; Shinya Yamanaka",
+      "reviewedSourceYear": "2006",
+      "sourceType": "primary-paper",
+      "reviewEvidence": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/16904174/",
+          "evidenceType": "pubmed-record",
+          "finding": "PubMed identifies the 2006 Cell primary paper describing induction of pluripotent stem cells by defined factors."
+        },
+        {
+          "url": "https://repository.kulib.kyoto-u.ac.jp/dspace/bitstream/2433/159777/1/j.cell.2006.07.024.pdf",
+          "evidenceType": "institutional-full-text-pdf",
+          "finding": "Kyoto University repository provides full-text access to the primary paper context for defined-factor reprogramming."
+        }
+      ],
+      "supports": [
+        "Transfers foundational cell-state reprogramming vocabulary into cellular-reprogramming source-card drafting.",
+        "Supports separating defined-factor identity rewiring under experimental conditions from subject-level safety, delivery and continuity claims."
+      ],
+      "doesNotSupport": [
+        "Calibrated prediction, individual recommendation, individual death-date output, or intervention ranking.",
+        "Human anti-aging therapy, lifespan extension, safe tissue rejuvenation, delivery feasibility or subject-continuity claims."
+      ],
+      "reviewerBoundary": "Transfer only as a cell-state reprogramming foundation. Human Infra use must keep identity loss, pluripotency, tumor risk, delivery, integration and continuity gates explicit."
     }
   ],
   "nonClaims": [
