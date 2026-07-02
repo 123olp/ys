@@ -194,7 +194,9 @@
         "docs/reference/human-infra-c2-longtail-fourth-batch-source-resolution-register.json",
         "tools/audit_human_infra_c2_longtail_fourth_batch_source_resolution_register.py",
         "docs/reference/human-infra-c2-longtail-fourth-batch-manual-fulltext-extraction-register.json",
-        "tools/audit_human_infra_c2_longtail_fourth_batch_manual_fulltext_extraction_register.py"
+        "tools/audit_human_infra_c2_longtail_fourth_batch_manual_fulltext_extraction_register.py",
+        "docs/reference/human-infra-c2-longtail-fourth-batch-manual-fulltext-fresh-review-verdict-register.json",
+        "tools/audit_human_infra_c2_longtail_fourth_batch_manual_fulltext_fresh_review_verdict_register.py"
       ],
       "gates": [
         {
@@ -322,13 +324,15 @@
             "docs/reference/human-infra-c2-longtail-fourth-batch-source-resolution-register.json",
             "tools/audit_human_infra_c2_longtail_fourth_batch_source_resolution_register.py",
             "docs/reference/human-infra-c2-longtail-fourth-batch-manual-fulltext-extraction-register.json",
-            "tools/audit_human_infra_c2_longtail_fourth_batch_manual_fulltext_extraction_register.py"
+            "tools/audit_human_infra_c2_longtail_fourth_batch_manual_fulltext_extraction_register.py",
+            "docs/reference/human-infra-c2-longtail-fourth-batch-manual-fulltext-fresh-review-verdict-register.json",
+            "tools/audit_human_infra_c2_longtail_fourth_batch_manual_fulltext_fresh_review_verdict_register.py"
           ],
           "missingEvidence": [
-            "C2-LT-B4 manual/fulltext extraction register exists but still needs independent fresh review and reviewed artifacts.",
+            "C2-LT-B4 manual/fulltext fresh-review verdict register exists but still needs bounded reviewed artifacts.",
             "Remaining C2 long-tail domains outside B1/B2/B3/B4 still need batch selection, source extraction, fresh review and reviewed artifacts."
           ],
-          "nextAction": "Run C2-LT-B4 independent fresh review and bounded reviewed artifacts while keeping model admission blocked.",
+          "nextAction": "Run C2-LT-B4 bounded reviewed artifacts while keeping model admission blocked.",
           "blocks100Percent": true
         },
         {
@@ -431,14 +435,16 @@
             "docs/reference/human-infra-c2-longtail-fourth-batch-source-resolution-register.json",
             "tools/audit_human_infra_c2_longtail_fourth_batch_source_resolution_register.py",
             "docs/reference/human-infra-c2-longtail-fourth-batch-manual-fulltext-extraction-register.json",
-            "tools/audit_human_infra_c2_longtail_fourth_batch_manual_fulltext_extraction_register.py"
+            "tools/audit_human_infra_c2_longtail_fourth_batch_manual_fulltext_extraction_register.py",
+            "docs/reference/human-infra-c2-longtail-fourth-batch-manual-fulltext-fresh-review-verdict-register.json",
+            "tools/audit_human_infra_c2_longtail_fourth_batch_manual_fulltext_fresh_review_verdict_register.py"
           ],
           "missingEvidence": [
-            "B3 reviewed artifacts and B4 source-resolution candidates are not yet connected to any calibrated model-admission gate.",
-            "C2-LT-B4 manual/fulltext extraction rows still need reviewed variable, endpoint, uncertainty, transfer-boundary and downgrade artifacts.",
+            "B3 reviewed artifacts and B4 fresh-review eligible rows are not yet connected to any calibrated model-admission gate.",
+            "C2-LT-B4 fresh-review eligible rows still need reviewed variable, endpoint, uncertainty, transfer-boundary and downgrade artifacts.",
             "Remaining C2 long-tail domains outside B1/B2/B3/B4 still need reviewed variable, endpoint, uncertainty, transfer-boundary and downgrade artifacts."
           ],
-          "nextAction": "Keep B3 artifacts and B4 manual/fulltext extraction rows as bounded vocabulary and route-contract evidence only; complete B4 fresh review/artifact gates before any calibrated model use.",
+          "nextAction": "Keep B3 artifacts and B4 fresh-review eligible rows as bounded vocabulary and route-contract evidence only; complete B4 artifact gates before any calibrated model use.",
           "blocks100Percent": true
         },
         {
@@ -566,13 +572,15 @@
             "docs/reference/human-infra-c2-longtail-fourth-batch-source-resolution-register.json",
             "tools/audit_human_infra_c2_longtail_fourth_batch_source_resolution_register.py",
             "docs/reference/human-infra-c2-longtail-fourth-batch-manual-fulltext-extraction-register.json",
-            "tools/audit_human_infra_c2_longtail_fourth_batch_manual_fulltext_extraction_register.py"
+            "tools/audit_human_infra_c2_longtail_fourth_batch_manual_fulltext_extraction_register.py",
+            "docs/reference/human-infra-c2-longtail-fourth-batch-manual-fulltext-fresh-review-verdict-register.json",
+            "tools/audit_human_infra_c2_longtail_fourth_batch_manual_fulltext_fresh_review_verdict_register.py"
           ],
           "missingEvidence": [
-            "C2-LT-B4 manual/fulltext extraction rows preserve no-abstract, duplicate-lineage and route-only boundaries but still need independent source review and reviewed downgrade rows.",
+            "C2-LT-B4 manual/fulltext fresh-review verdict rows preserve no-abstract, duplicate-lineage, route-only and context-only boundaries but still need reviewed downgrade rows.",
             "Remaining C2 long-tail domains still need independent source review and downgrade rows."
           ],
-          "nextAction": "Run C2-LT-B4 independent fresh review, then preserve no-abstract, duplicate-lineage, route-only and source-resolution rows as explicit blockedRows before any domain claim upgrade.",
+          "nextAction": "Create B4 reviewed downgrade rows from the three eligible fresh-review verdicts while preserving duplicate-lineage, route-only, manual-access and context-only rows as blockedRows before any domain claim upgrade.",
           "blocks100Percent": true
         }
       ]
@@ -734,7 +742,7 @@
   "nextWorkOrder": [
     {
       "priority": 1,
-      "item": "Complete C2-LT-B4 independent fresh review and reviewed-artifact loop while preserving no-abstract, duplicate-lineage, route-only/manual-access and all earlier blocked downgrade/source-resolution rows.",
+      "item": "Complete C2-LT-B4 reviewed-artifact loop while preserving no-abstract, duplicate-lineage, route-only/manual-access, context-only and all earlier blocked downgrade/source-resolution rows.",
       "unblocks": [
         "RESEARCH-G3-c1-c2-source-cards",
         "RESEARCH-G4-variable-mechanism-contracts",
