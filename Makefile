@@ -1,4 +1,4 @@
-.PHONY: check structure claim-matrix-audit maturity-gap-audit page-claim-audit audience-claim-map-audit paper-claim-audit domain-falsifier-audit domain-claim-matrix-audit domain-field-extraction-audit c2-longtail-coverage-audit c2-longtail-first-batch-promotion-audit domain-source-queue-audit domain-source-extraction-audit domain-source-promotion-audit source-context-local-review-audit card-promotion-prep-audit independent-fresh-review-protocol-audit independent-fresh-review-verdict-audit reviewed-card-artifact-audit future-boundary-route-card-audit falsifier-source-audit falsifier-source-extraction-audit py-compile clean
+.PHONY: check structure claim-matrix-audit maturity-gap-audit page-claim-audit audience-claim-map-audit paper-claim-audit domain-falsifier-audit domain-claim-matrix-audit domain-field-extraction-audit c2-longtail-coverage-audit c2-longtail-first-batch-promotion-audit c2-longtail-first-batch-source-extraction-audit domain-source-queue-audit domain-source-extraction-audit domain-source-promotion-audit source-context-local-review-audit card-promotion-prep-audit independent-fresh-review-protocol-audit independent-fresh-review-verdict-audit reviewed-card-artifact-audit future-boundary-route-card-audit falsifier-source-audit falsifier-source-extraction-audit py-compile clean
 
 check:
 	$(MAKE) clean
@@ -13,6 +13,7 @@ check:
 	$(MAKE) domain-field-extraction-audit
 	$(MAKE) c2-longtail-coverage-audit
 	$(MAKE) c2-longtail-first-batch-promotion-audit
+	$(MAKE) c2-longtail-first-batch-source-extraction-audit
 	$(MAKE) domain-source-queue-audit
 	$(MAKE) domain-source-extraction-audit
 	$(MAKE) domain-source-promotion-audit
@@ -61,6 +62,9 @@ c2-longtail-coverage-audit:
 c2-longtail-first-batch-promotion-audit:
 	python3 tools/audit_human_infra_c2_longtail_first_batch_promotion_queue.py
 
+c2-longtail-first-batch-source-extraction-audit:
+	python3 tools/audit_human_infra_c2_longtail_first_batch_source_extraction_queue.py
+
 domain-source-queue-audit:
 	python3 tools/audit_human_infra_domain_source_specific_extraction_queue.py
 
@@ -106,6 +110,7 @@ py-compile:
 		tools/audit_human_infra_domain_source_card_field_extraction.py \
 		tools/audit_human_infra_c2_longtail_coverage_register.py \
 		tools/audit_human_infra_c2_longtail_first_batch_promotion_queue.py \
+		tools/audit_human_infra_c2_longtail_first_batch_source_extraction_queue.py \
 		tools/audit_human_infra_domain_source_specific_extraction_queue.py \
 		tools/audit_human_infra_domain_source_specific_extraction_register.py \
 		tools/audit_human_infra_domain_source_card_promotion_queue.py \

@@ -231,7 +231,7 @@
         {
           "sourceRefId": "C2LTB1-SRC-03-2",
           "title": "NIDDK Acute Kidney Injury information",
-          "url": "https://www.niddk.nih.gov/health-information/kidney-disease/acute-kidney-injury",
+          "url": "https://usrds-adr.niddk.nih.gov/2023/chronic-kidney-disease/4-acute-kidney-injury",
           "evidenceRole": "patient-facing-mechanism-context-candidate",
           "requiredExtraction": [
             "exact-claim-or-recommendation",
@@ -240,7 +240,8 @@
             "effect-or-mechanism-signal",
             "uncertainty-bias-transfer-boundary"
           ],
-          "reviewStatus": "candidate-not-yet-source-carded"
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "reviewStatusNote": "URL refreshed after best-effort link check; source still requires source-specific extraction and fresh review."
         }
       ],
       "requiredArtifactClasses": [
@@ -294,7 +295,7 @@
         {
           "sourceRefId": "C2LTB1-SRC-04-1",
           "title": "World Allergy Organization Anaphylaxis Guidance",
-          "url": "https://www.worldallergy.org/resources/world-allergy/wao-anaphylaxis-guidance",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7607509/",
           "evidenceRole": "clinical-guidance-candidate",
           "requiredExtraction": [
             "exact-claim-or-recommendation",
@@ -303,7 +304,8 @@
             "effect-or-mechanism-signal",
             "uncertainty-bias-transfer-boundary"
           ],
-          "reviewStatus": "candidate-not-yet-source-carded"
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "reviewStatusNote": "URL refreshed after best-effort link check; source still requires source-specific extraction and fresh review."
         },
         {
           "sourceRefId": "C2LTB1-SRC-04-2",
@@ -539,7 +541,7 @@
         {
           "sourceRefId": "C2LTB1-SRC-07-2",
           "title": "CDC Adult Obesity Facts",
-          "url": "https://www.cdc.gov/obesity/php/data-research/adult-obesity-facts.html",
+          "url": "https://www.cdc.gov/obesity/adult-obesity-facts/index.html",
           "evidenceRole": "population-burden-context-candidate",
           "requiredExtraction": [
             "exact-claim-or-recommendation",
@@ -548,7 +550,8 @@
             "effect-or-mechanism-signal",
             "uncertainty-bias-transfer-boundary"
           ],
-          "reviewStatus": "candidate-not-yet-source-carded"
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "reviewStatusNote": "URL refreshed after best-effort link check; source still requires source-specific extraction and fresh review."
         }
       ],
       "requiredArtifactClasses": [

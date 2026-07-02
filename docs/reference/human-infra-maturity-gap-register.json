@@ -128,6 +128,8 @@
         "docs/reference/human-infra-c2-longtail-coverage-register.json",
         "docs/reference/human-infra-c2-longtail-first-batch-promotion-queue.json",
         "tools/audit_human_infra_c2_longtail_first_batch_promotion_queue.py",
+        "docs/reference/human-infra-c2-longtail-first-batch-source-extraction-queue.json",
+        "tools/audit_human_infra_c2_longtail_first_batch_source_extraction_queue.py",
         "docs/reference/human-infra-domain-source-specific-extraction-queue.json",
         "docs/reference/human-infra-domain-source-specific-extraction-register.json",
         "docs/reference/human-infra-falsifier-source-card-backfill.json",
@@ -202,12 +204,14 @@
             "docs/reference/human-infra-c2-longtail-coverage-register.json",
             "tools/audit_human_infra_c2_longtail_coverage_register.py",
             "docs/reference/human-infra-c2-longtail-first-batch-promotion-queue.json",
-            "tools/audit_human_infra_c2_longtail_first_batch_promotion_queue.py"
+            "tools/audit_human_infra_c2_longtail_first_batch_promotion_queue.py",
+            "docs/reference/human-infra-c2-longtail-first-batch-source-extraction-queue.json",
+            "tools/audit_human_infra_c2_longtail_first_batch_source_extraction_queue.py"
           ],
           "missingEvidence": [
-            "Filled Claim-Evidence rows and reviewed Source Card artifacts for the 184 C2 long-tail domains listed in human-infra-c2-longtail-coverage-register.json. The first 24 high-impact domains are queued in human-infra-c2-longtail-first-batch-promotion-queue.json but not yet promoted."
+            "Filled Claim-Evidence rows and reviewed Source Card artifacts for the 184 C2 long-tail domains listed in human-infra-c2-longtail-coverage-register.json. The first 24 high-impact domains are queued and now derived into 48 source-specific deep-read tasks in human-infra-c2-longtail-first-batch-source-extraction-queue.json, but the source-specific fields and reviewed artifacts are not yet filled."
           ],
-          "nextAction": "Execute the C2-LT-B1 queue into domain Claim-Evidence rows, source extraction, source-specific deep read, local review, independent fresh review and reviewed artifacts.",
+          "nextAction": "Execute the 48 C2-LT-B1 source-specific deep-read tasks into exact claim, endpoint, population/setting, mechanism/effect, uncertainty, transfer-boundary, downgrade and model-position fields.",
           "blocks100Percent": true
         },
         {
@@ -238,12 +242,14 @@
             "docs/reference/human-infra-c2-longtail-coverage-register.json",
             "tools/audit_human_infra_c2_longtail_coverage_register.py",
             "docs/reference/human-infra-c2-longtail-first-batch-promotion-queue.json",
-            "tools/audit_human_infra_c2_longtail_first_batch_promotion_queue.py"
+            "tools/audit_human_infra_c2_longtail_first_batch_promotion_queue.py",
+            "docs/reference/human-infra-c2-longtail-first-batch-source-extraction-queue.json",
+            "tools/audit_human_infra_c2_longtail_first_batch_source_extraction_queue.py"
           ],
           "missingEvidence": [
-            "Variable, endpoint, uncertainty and transfer-boundary cards for the 184 C2 long-tail domains listed in human-infra-c2-longtail-coverage-register.json. The first 24 high-impact domains now have claim and variable seeds but not reviewed cards."
+            "Variable, endpoint, uncertainty and transfer-boundary cards for the 184 C2 long-tail domains listed in human-infra-c2-longtail-coverage-register.json. The first 24 high-impact domains now have claim/variable seeds and 48 source-specific deep-read tasks, but no reviewed variable or endpoint cards."
           ],
-          "nextAction": "Use the C2-LT-B1 queue to perform source-specific extraction before promoting variable and endpoint contracts.",
+          "nextAction": "Use the C2-LT-B1 source extraction queue to fill exact source-context fields before promoting variable and endpoint contracts.",
           "blocks100Percent": true
         },
         {
@@ -299,12 +305,14 @@
             "docs/reference/human-infra-c2-longtail-coverage-register.json",
             "tools/audit_human_infra_c2_longtail_coverage_register.py",
             "docs/reference/human-infra-c2-longtail-first-batch-promotion-queue.json",
-            "tools/audit_human_infra_c2_longtail_first_batch_promotion_queue.py"
+            "tools/audit_human_infra_c2_longtail_first_batch_promotion_queue.py",
+            "docs/reference/human-infra-c2-longtail-first-batch-source-extraction-queue.json",
+            "tools/audit_human_infra_c2_longtail_first_batch_source_extraction_queue.py"
           ],
           "missingEvidence": [
-            "Downgrade-check artifacts and falsifier rows for the 184 C2 long-tail domains listed in human-infra-c2-longtail-coverage-register.json. The C2-LT-B1 queue names candidate sources but has not yet produced downgrade-check artifacts."
+            "Downgrade-check artifacts and falsifier rows for the 184 C2 long-tail domains listed in human-infra-c2-longtail-coverage-register.json. The C2-LT-B1 source extraction queue defines downgrade extraction slots but has not yet produced downgrade-check artifacts."
           ],
-          "nextAction": "Run C2-LT-B1 through reviewed artifact promotion before adding downgrade-check and falsifier coverage to the long-tail domains.",
+          "nextAction": "Fill downgrade triggers in the 48 C2-LT-B1 source-specific tasks before adding reviewed downgrade-check and falsifier artifacts.",
           "blocks100Percent": true
         }
       ]
@@ -451,7 +459,7 @@
   "nextWorkOrder": [
     {
       "priority": 1,
-      "item": "Execute the 24-domain C2-LT-B1 queue from human-infra-c2-longtail-first-batch-promotion-queue.json into Claim-Evidence rows, source extraction rows and source-specific deep-read tasks.",
+      "item": "Execute the 48 source-specific C2-LT-B1 tasks from human-infra-c2-longtail-first-batch-source-extraction-queue.json into exact claim, endpoint, population/setting, mechanism/effect, uncertainty, transfer-boundary, downgrade and model-position fields.",
       "unblocks": [
         "RESEARCH-G3-c1-c2-source-cards",
         "RESEARCH-G4-variable-mechanism-contracts",
