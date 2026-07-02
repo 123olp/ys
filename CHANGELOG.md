@@ -4,6 +4,7 @@ All notable repository structure changes are recorded here.
 
 ## 2026-07-02
 
+- Added a first-wave domain-source-specific extraction register and audit gate, completing 25/81 method-anchor extraction rows for Kaplan-Meier, Cox, Target Trial Emulation and TRIPOD+AI while keeping calibrated prediction, individual advice and intervention ranking blocked.
 - Added a domain-source-specific extraction queue and audit gate, deriving the 26 domain Source Card field rows into 81 domain-source reading tasks over 20 source anchors while keeping calibrated prediction and domain-claim upgrades blocked until exact claim, endpoint, population, uncertainty and transfer-boundary fields are extracted.
 - Added a domain Source Card field-extraction register and audit gate, giving all 26 priority domain matrix rows endpoint candidates, population-boundary slots, uncertainty-channel slots, transfer-boundary slots, source IDs and next source-specific extraction actions.
 - Added a domain-level Claim-Evidence Matrix seed and audit gate, joining the current 26 priority research domains to claim sources, variable-contract sources, falsifier sources, extracted Source Card IDs, blocked-use boundaries and next extraction actions.

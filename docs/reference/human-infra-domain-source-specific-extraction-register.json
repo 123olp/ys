@@ -1,0 +1,648 @@
+{
+  "schemaVersion": "human-infra.domain-source-specific-extraction-register.v1",
+  "registerId": "human-infra-domain-source-specific-extraction-register-2026-07-02-v0.1",
+  "status": "partial-first-wave-method-anchor-extractions-not-complete",
+  "purpose": "Record the first completed source-specific extraction rows for Human Infra domain modeling, converting selected method anchors from queue items into audited endpoint, population, uncertainty and transfer-boundary fields without opening calibrated prediction.",
+  "sourceOfTruth": {
+    "domainSourceSpecificExtractionQueue": "docs/reference/human-infra-domain-source-specific-extraction-queue.json",
+    "domainSourceCardFieldExtraction": "docs/reference/human-infra-domain-source-card-field-extraction.json",
+    "sourceCardExtractionRegister": "docs/reference/human-infra-falsifier-source-card-extraction.json",
+    "sourceCardSystem": "docs/reference/source-card-system.md",
+    "maturityGapRegister": "docs/reference/human-infra-maturity-gap-register.json"
+  },
+  "scope": {
+    "coverageLevel": "partial-first-wave-method-anchor-extractions",
+    "derivedTaskUnit": "domainId + sourceCardId",
+    "queuedTaskCount": 81,
+    "completedTaskCount": 25,
+    "remainingQueuedTaskCount": 56,
+    "completedFieldRowCount": 16,
+    "completedSourceAnchorCount": 4,
+    "completedSourceAnchors": [
+      "SA-KAPLAN-MEIER-1958",
+      "SA-COX-1972",
+      "SA-TARGET-TRIAL-2022",
+      "SA-TRIPOD-AI-2024"
+    ],
+    "selectionRule": "Complete the four method anchors that constrain survival curves, hazards, intervention estimands and prediction-model reporting before expanding into biological mechanism anchors.",
+    "currentLimitations": [
+      "Only 25 of the 81 queued domain-source tasks are complete.",
+      "Rows are method-anchor extractions, not full external literature fresh reviews.",
+      "Completed rows keep calibrated prediction, individual recommendation and intervention ranking blocked."
+    ]
+  },
+  "sourceAnchorDecisions": [
+    {
+      "sourceCardId": "SA-KAPLAN-MEIER-1958",
+      "sourceRole": "survival-function-and-censoring-method-anchor",
+      "modelAdmissionDecision": "qualitative-method-support-only-blocked-for-calibrated-prediction",
+      "transferBoundary": "Transfer only as survival-curve and event-time vocabulary. It does not validate domain parameters, prove intervention benefit, or authorize personal prognosis.",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "intervention-ranking",
+        "individual-death-date-output"
+      ]
+    },
+    {
+      "sourceCardId": "SA-COX-1972",
+      "sourceRole": "hazard-function-and-covariate-risk-method-anchor",
+      "modelAdmissionDecision": "qualitative-method-support-only-blocked-for-calibrated-prediction",
+      "transferBoundary": "Transfer only as hazard vocabulary and covariate-risk positioning. It does not prove causality, personalize risk, or rank interventions by itself.",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "intervention-ranking",
+        "individual-death-date-output"
+      ]
+    },
+    {
+      "sourceCardId": "SA-TARGET-TRIAL-2022",
+      "sourceRole": "intervention-causal-design-method-anchor",
+      "modelAdmissionDecision": "causal-design-support-only-blocked-for-effect-claim",
+      "transferBoundary": "Transfer only as causal-design discipline for future intervention evaluation. It does not establish that any domain intervention works.",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "intervention-ranking",
+        "domain-claim-upgrade"
+      ]
+    },
+    {
+      "sourceCardId": "SA-TRIPOD-AI-2024",
+      "sourceRole": "prediction-model-reporting-and-validation-method-anchor",
+      "modelAdmissionDecision": "prediction-reporting-support-only-blocked-for-clinical-prediction",
+      "transferBoundary": "Transfer only as a prediction-reporting and validation checklist. It does not authorize clinical prediction, individual advice or automated action.",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "intervention-ranking",
+        "individual-death-date-output"
+      ]
+    }
+  ],
+  "completedRows": [
+    {
+      "domainId": "future-waiting",
+      "domainClaimId": "HIDOM-CL001",
+      "fieldCardId": "HIDOM-FLD001",
+      "sourceCardId": "SA-KAPLAN-MEIER-1958",
+      "extractionStatus": "completed-first-wave-method-anchor-field-extraction",
+      "sourceRole": "survival-function-and-censoring-method-anchor",
+      "exactClaimUse": "Supports aggregate time-to-event accounting for a defined risk set when time zero, event definition and censoring status are explicit.",
+      "endpointDefinition": "For future-waiting, admissible endpoint language is limited to the registered endpoint candidates: effective-waiting-cost, future-option-access, net-continuity-gain. The source does not add a new endpoint beyond this field row.",
+      "populationOrSample": "The source is used as a method anchor; a concrete Human Infra population, cohort, eligibility rule, time zero and follow-up horizon must be supplied by a later domain-specific study before quantitative use.",
+      "effectOrMechanismSignal": "Method signal only: estimates survival probability from incomplete event-time observations; it does not estimate an intervention mechanism.",
+      "uncertaintyOrBias": "Censoring rules, event ascertainment, time origin and cohort definition can change the curve; synthetic curves cannot be treated as real survival evidence.",
+      "transferBoundary": "Transfer only as survival-curve and event-time vocabulary. It does not validate domain parameters, prove intervention benefit, or authorize personal prognosis.",
+      "modelAdmissionDecision": "qualitative-method-support-only-blocked-for-calibrated-prediction",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "intervention-ranking",
+        "individual-death-date-output"
+      ],
+      "nextAction": "Create route cards for future waiting, biostasis, and metric-redshift variants with exit and continuity gates."
+    },
+    {
+      "domainId": "longevity-evidence",
+      "domainClaimId": "HIDOM-CL002",
+      "fieldCardId": "HIDOM-FLD002",
+      "sourceCardId": "SA-KAPLAN-MEIER-1958",
+      "extractionStatus": "completed-first-wave-method-anchor-field-extraction",
+      "sourceRole": "survival-function-and-censoring-method-anchor",
+      "exactClaimUse": "Supports aggregate time-to-event accounting for a defined risk set when time zero, event definition and censoring status are explicit.",
+      "endpointDefinition": "For longevity-evidence, admissible endpoint language is limited to the registered endpoint candidates: survival-curve-shift, effective-time-change, LEV-threshold-status. The source does not add a new endpoint beyond this field row.",
+      "populationOrSample": "The source is used as a method anchor; a concrete Human Infra population, cohort, eligibility rule, time zero and follow-up horizon must be supplied by a later domain-specific study before quantitative use.",
+      "effectOrMechanismSignal": "Method signal only: estimates survival probability from incomplete event-time observations; it does not estimate an intervention mechanism.",
+      "uncertaintyOrBias": "Censoring rules, event ascertainment, time origin and cohort definition can change the curve; synthetic curves cannot be treated as real survival evidence.",
+      "transferBoundary": "Transfer only as survival-curve and event-time vocabulary. It does not validate domain parameters, prove intervention benefit, or authorize personal prognosis.",
+      "modelAdmissionDecision": "qualitative-method-support-only-blocked-for-calibrated-prediction",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "intervention-ranking",
+        "individual-death-date-output"
+      ],
+      "nextAction": "Extend LEV route cards to non-mainstream boundary routes and connect each route to a falsifier row."
+    },
+    {
+      "domainId": "longevity-evidence",
+      "domainClaimId": "HIDOM-CL002",
+      "fieldCardId": "HIDOM-FLD002",
+      "sourceCardId": "SA-COX-1972",
+      "extractionStatus": "completed-first-wave-method-anchor-field-extraction",
+      "sourceRole": "hazard-function-and-covariate-risk-method-anchor",
+      "exactClaimUse": "Supports expressing domain variables as covariates associated with event hazard when time origin, event outcome and covariate measurement are explicit.",
+      "endpointDefinition": "For longevity-evidence, admissible endpoint language is limited to the registered endpoint candidates: survival-curve-shift, effective-time-change, LEV-threshold-status. The source does not add a new endpoint beyond this field row.",
+      "populationOrSample": "The source is used as a method anchor; a concrete Human Infra population, cohort, eligibility rule, time zero and follow-up horizon must be supplied by a later domain-specific study before quantitative use.",
+      "effectOrMechanismSignal": "Method signal only: positions covariates relative to a hazard function; causal action claims require an additional causal design.",
+      "uncertaintyOrBias": "Proportionality, confounding, measurement timing, censoring and model validation limits must be checked before any risk interpretation.",
+      "transferBoundary": "Transfer only as hazard vocabulary and covariate-risk positioning. It does not prove causality, personalize risk, or rank interventions by itself.",
+      "modelAdmissionDecision": "qualitative-method-support-only-blocked-for-calibrated-prediction",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "intervention-ranking",
+        "individual-death-date-output"
+      ],
+      "nextAction": "Extend LEV route cards to non-mainstream boundary routes and connect each route to a falsifier row."
+    },
+    {
+      "domainId": "longevity-evidence",
+      "domainClaimId": "HIDOM-CL002",
+      "fieldCardId": "HIDOM-FLD002",
+      "sourceCardId": "SA-TARGET-TRIAL-2022",
+      "extractionStatus": "completed-first-wave-method-anchor-field-extraction",
+      "sourceRole": "intervention-causal-design-method-anchor",
+      "exactClaimUse": "Supports translating a domain intervention question into target-trial fields: eligibility, strategies, assignment, follow-up, outcome, causal contrast and analysis plan.",
+      "endpointDefinition": "For longevity-evidence, admissible endpoint language is limited to the registered endpoint candidates: survival-curve-shift, effective-time-change, LEV-threshold-status. The source does not add a new endpoint beyond this field row.",
+      "populationOrSample": "The source is used as a method anchor; a concrete Human Infra population, cohort, eligibility rule, time zero and follow-up horizon must be supplied by a later domain-specific study before quantitative use.",
+      "effectOrMechanismSignal": "Design signal only: separates observational association from a hypothetical intervention estimand; it supplies no effect size without suitable data.",
+      "uncertaintyOrBias": "Time-varying confounding, selection, adherence, immortal-time bias, competing risks, missingness and endpoint mismatch remain open unless explicitly handled.",
+      "transferBoundary": "Transfer only as causal-design discipline for future intervention evaluation. It does not establish that any domain intervention works.",
+      "modelAdmissionDecision": "causal-design-support-only-blocked-for-effect-claim",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "intervention-ranking",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Extend LEV route cards to non-mainstream boundary routes and connect each route to a falsifier row."
+    },
+    {
+      "domainId": "longevity-evidence",
+      "domainClaimId": "HIDOM-CL002",
+      "fieldCardId": "HIDOM-FLD002",
+      "sourceCardId": "SA-TRIPOD-AI-2024",
+      "extractionStatus": "completed-first-wave-method-anchor-field-extraction",
+      "sourceRole": "prediction-model-reporting-and-validation-method-anchor",
+      "exactClaimUse": "Supports reporting requirements for prediction models: data source, participants, predictors, outcome, model development, validation, calibration and limitations.",
+      "endpointDefinition": "For longevity-evidence, admissible endpoint language is limited to the registered endpoint candidates: survival-curve-shift, effective-time-change, LEV-threshold-status. The source does not add a new endpoint beyond this field row.",
+      "populationOrSample": "The source is used as a method anchor; a concrete Human Infra population, cohort, eligibility rule, time zero and follow-up horizon must be supplied by a later domain-specific study before quantitative use.",
+      "effectOrMechanismSignal": "Reporting signal only: clarifies what a prediction model must disclose; it does not make the model accurate or clinically useful.",
+      "uncertaintyOrBias": "Risk of bias, dataset shift, calibration failure, missing predictors, leakage and lack of external validation can invalidate predictive use.",
+      "transferBoundary": "Transfer only as a prediction-reporting and validation checklist. It does not authorize clinical prediction, individual advice or automated action.",
+      "modelAdmissionDecision": "prediction-reporting-support-only-blocked-for-clinical-prediction",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "intervention-ranking",
+        "individual-death-date-output"
+      ],
+      "nextAction": "Extend LEV route cards to non-mainstream boundary routes and connect each route to a falsifier row."
+    },
+    {
+      "domainId": "regenerative-medicine",
+      "domainClaimId": "HIDOM-CL008",
+      "fieldCardId": "HIDOM-FLD008",
+      "sourceCardId": "SA-TARGET-TRIAL-2022",
+      "extractionStatus": "completed-first-wave-method-anchor-field-extraction",
+      "sourceRole": "intervention-causal-design-method-anchor",
+      "exactClaimUse": "Supports translating a domain intervention question into target-trial fields: eligibility, strategies, assignment, follow-up, outcome, causal contrast and analysis plan.",
+      "endpointDefinition": "For regenerative-medicine, admissible endpoint language is limited to the registered endpoint candidates: durable-function, recovery-time, future-option-access. The source does not add a new endpoint beyond this field row.",
+      "populationOrSample": "The source is used as a method anchor; a concrete Human Infra population, cohort, eligibility rule, time zero and follow-up horizon must be supplied by a later domain-specific study before quantitative use.",
+      "effectOrMechanismSignal": "Design signal only: separates observational association from a hypothetical intervention estimand; it supplies no effect size without suitable data.",
+      "uncertaintyOrBias": "Time-varying confounding, selection, adherence, immortal-time bias, competing risks, missingness and endpoint mismatch remain open unless explicitly handled.",
+      "transferBoundary": "Transfer only as causal-design discipline for future intervention evaluation. It does not establish that any domain intervention works.",
+      "modelAdmissionDecision": "causal-design-support-only-blocked-for-effect-claim",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "intervention-ranking",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Build route cards separating cell therapy, tissue engineering, organ replacement and local repair."
+    },
+    {
+      "domainId": "cancer-screening-early-detection-continuity",
+      "domainClaimId": "HIDOM-CL009",
+      "fieldCardId": "HIDOM-FLD009",
+      "sourceCardId": "SA-TARGET-TRIAL-2022",
+      "extractionStatus": "completed-first-wave-method-anchor-field-extraction",
+      "sourceRole": "intervention-causal-design-method-anchor",
+      "exactClaimUse": "Supports translating a domain intervention question into target-trial fields: eligibility, strategies, assignment, follow-up, outcome, causal contrast and analysis plan.",
+      "endpointDefinition": "For cancer-screening-early-detection-continuity, admissible endpoint language is limited to the registered endpoint candidates: cancer-mortality-risk, treatment-burden, effective-time-preservation. The source does not add a new endpoint beyond this field row.",
+      "populationOrSample": "The source is used as a method anchor; a concrete Human Infra population, cohort, eligibility rule, time zero and follow-up horizon must be supplied by a later domain-specific study before quantitative use.",
+      "effectOrMechanismSignal": "Design signal only: separates observational association from a hypothetical intervention estimand; it supplies no effect size without suitable data.",
+      "uncertaintyOrBias": "Time-varying confounding, selection, adherence, immortal-time bias, competing risks, missingness and endpoint mismatch remain open unless explicitly handled.",
+      "transferBoundary": "Transfer only as causal-design discipline for future intervention evaluation. It does not establish that any domain intervention works.",
+      "modelAdmissionDecision": "causal-design-support-only-blocked-for-effect-claim",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "intervention-ranking",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Create screening route cards that include mortality, overdiagnosis, follow-up and access gates."
+    },
+    {
+      "domainId": "immune-maintenance",
+      "domainClaimId": "HIDOM-CL010",
+      "fieldCardId": "HIDOM-FLD010",
+      "sourceCardId": "SA-TARGET-TRIAL-2022",
+      "extractionStatus": "completed-first-wave-method-anchor-field-extraction",
+      "sourceRole": "intervention-causal-design-method-anchor",
+      "exactClaimUse": "Supports translating a domain intervention question into target-trial fields: eligibility, strategies, assignment, follow-up, outcome, causal contrast and analysis plan.",
+      "endpointDefinition": "For immune-maintenance, admissible endpoint language is limited to the registered endpoint candidates: infection-risk, cancer-surveillance-risk, recovery-capacity. The source does not add a new endpoint beyond this field row.",
+      "populationOrSample": "The source is used as a method anchor; a concrete Human Infra population, cohort, eligibility rule, time zero and follow-up horizon must be supplied by a later domain-specific study before quantitative use.",
+      "effectOrMechanismSignal": "Design signal only: separates observational association from a hypothetical intervention estimand; it supplies no effect size without suitable data.",
+      "uncertaintyOrBias": "Time-varying confounding, selection, adherence, immortal-time bias, competing risks, missingness and endpoint mismatch remain open unless explicitly handled.",
+      "transferBoundary": "Transfer only as causal-design discipline for future intervention evaluation. It does not establish that any domain intervention works.",
+      "modelAdmissionDecision": "causal-design-support-only-blocked-for-effect-claim",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "intervention-ranking",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Map immune-aging source cards into infection, inflammation, surveillance and autoimmunity channels."
+    },
+    {
+      "domainId": "biological-age-clocks-biomarker-validation",
+      "domainClaimId": "HIDOM-CL014",
+      "fieldCardId": "HIDOM-FLD014",
+      "sourceCardId": "SA-TARGET-TRIAL-2022",
+      "extractionStatus": "completed-first-wave-method-anchor-field-extraction",
+      "sourceRole": "intervention-causal-design-method-anchor",
+      "exactClaimUse": "Supports translating a domain intervention question into target-trial fields: eligibility, strategies, assignment, follow-up, outcome, causal contrast and analysis plan.",
+      "endpointDefinition": "For biological-age-clocks-biomarker-validation, admissible endpoint language is limited to the registered endpoint candidates: state-estimation-quality, feedback-loop-validity, misoptimization-risk. The source does not add a new endpoint beyond this field row.",
+      "populationOrSample": "The source is used as a method anchor; a concrete Human Infra population, cohort, eligibility rule, time zero and follow-up horizon must be supplied by a later domain-specific study before quantitative use.",
+      "effectOrMechanismSignal": "Design signal only: separates observational association from a hypothetical intervention estimand; it supplies no effect size without suitable data.",
+      "uncertaintyOrBias": "Time-varying confounding, selection, adherence, immortal-time bias, competing risks, missingness and endpoint mismatch remain open unless explicitly handled.",
+      "transferBoundary": "Transfer only as causal-design discipline for future intervention evaluation. It does not establish that any domain intervention works.",
+      "modelAdmissionDecision": "causal-design-support-only-blocked-for-effect-claim",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "intervention-ranking",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Create a biomarker validation matrix separating correlation, prediction, intervention response, endpoint alignment and misuse."
+    },
+    {
+      "domainId": "biological-age-clocks-biomarker-validation",
+      "domainClaimId": "HIDOM-CL014",
+      "fieldCardId": "HIDOM-FLD014",
+      "sourceCardId": "SA-TRIPOD-AI-2024",
+      "extractionStatus": "completed-first-wave-method-anchor-field-extraction",
+      "sourceRole": "prediction-model-reporting-and-validation-method-anchor",
+      "exactClaimUse": "Supports reporting requirements for prediction models: data source, participants, predictors, outcome, model development, validation, calibration and limitations.",
+      "endpointDefinition": "For biological-age-clocks-biomarker-validation, admissible endpoint language is limited to the registered endpoint candidates: state-estimation-quality, feedback-loop-validity, misoptimization-risk. The source does not add a new endpoint beyond this field row.",
+      "populationOrSample": "The source is used as a method anchor; a concrete Human Infra population, cohort, eligibility rule, time zero and follow-up horizon must be supplied by a later domain-specific study before quantitative use.",
+      "effectOrMechanismSignal": "Reporting signal only: clarifies what a prediction model must disclose; it does not make the model accurate or clinically useful.",
+      "uncertaintyOrBias": "Risk of bias, dataset shift, calibration failure, missing predictors, leakage and lack of external validation can invalidate predictive use.",
+      "transferBoundary": "Transfer only as a prediction-reporting and validation checklist. It does not authorize clinical prediction, individual advice or automated action.",
+      "modelAdmissionDecision": "prediction-reporting-support-only-blocked-for-clinical-prediction",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "intervention-ranking",
+        "individual-death-date-output"
+      ],
+      "nextAction": "Create a biomarker validation matrix separating correlation, prediction, intervention response, endpoint alignment and misuse."
+    },
+    {
+      "domainId": "proteostasis-autophagy",
+      "domainClaimId": "HIDOM-CL015",
+      "fieldCardId": "HIDOM-FLD015",
+      "sourceCardId": "SA-TARGET-TRIAL-2022",
+      "extractionStatus": "completed-first-wave-method-anchor-field-extraction",
+      "sourceRole": "intervention-causal-design-method-anchor",
+      "exactClaimUse": "Supports translating a domain intervention question into target-trial fields: eligibility, strategies, assignment, follow-up, outcome, causal contrast and analysis plan.",
+      "endpointDefinition": "For proteostasis-autophagy, admissible endpoint language is limited to the registered endpoint candidates: cellular-function-maintenance, recovery-resilience, toxicity-or-wasting-risk. The source does not add a new endpoint beyond this field row.",
+      "populationOrSample": "The source is used as a method anchor; a concrete Human Infra population, cohort, eligibility rule, time zero and follow-up horizon must be supplied by a later domain-specific study before quantitative use.",
+      "effectOrMechanismSignal": "Design signal only: separates observational association from a hypothetical intervention estimand; it supplies no effect size without suitable data.",
+      "uncertaintyOrBias": "Time-varying confounding, selection, adherence, immortal-time bias, competing risks, missingness and endpoint mismatch remain open unless explicitly handled.",
+      "transferBoundary": "Transfer only as causal-design discipline for future intervention evaluation. It does not establish that any domain intervention works.",
+      "modelAdmissionDecision": "causal-design-support-only-blocked-for-effect-claim",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "intervention-ranking",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Build Source Cards separating autophagy flux markers, lysosomal function, tissue-level outcomes and adverse channels."
+    },
+    {
+      "domainId": "extracellular-matrix-glycation",
+      "domainClaimId": "HIDOM-CL017",
+      "fieldCardId": "HIDOM-FLD017",
+      "sourceCardId": "SA-TARGET-TRIAL-2022",
+      "extractionStatus": "completed-first-wave-method-anchor-field-extraction",
+      "sourceRole": "intervention-causal-design-method-anchor",
+      "exactClaimUse": "Supports translating a domain intervention question into target-trial fields: eligibility, strategies, assignment, follow-up, outcome, causal contrast and analysis plan.",
+      "endpointDefinition": "For extracellular-matrix-glycation, admissible endpoint language is limited to the registered endpoint candidates: mobility-and-function, organ-resilience, repair-or-fibrosis-risk. The source does not add a new endpoint beyond this field row.",
+      "populationOrSample": "The source is used as a method anchor; a concrete Human Infra population, cohort, eligibility rule, time zero and follow-up horizon must be supplied by a later domain-specific study before quantitative use.",
+      "effectOrMechanismSignal": "Design signal only: separates observational association from a hypothetical intervention estimand; it supplies no effect size without suitable data.",
+      "uncertaintyOrBias": "Time-varying confounding, selection, adherence, immortal-time bias, competing risks, missingness and endpoint mismatch remain open unless explicitly handled.",
+      "transferBoundary": "Transfer only as causal-design discipline for future intervention evaluation. It does not establish that any domain intervention works.",
+      "modelAdmissionDecision": "causal-design-support-only-blocked-for-effect-claim",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "intervention-ranking",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Build ECM Source Cards linking crosslinks, fibrosis, tissue mechanics and functional outcomes."
+    },
+    {
+      "domainId": "microbiome-ecology",
+      "domainClaimId": "HIDOM-CL019",
+      "fieldCardId": "HIDOM-FLD019",
+      "sourceCardId": "SA-TARGET-TRIAL-2022",
+      "extractionStatus": "completed-first-wave-method-anchor-field-extraction",
+      "sourceRole": "intervention-causal-design-method-anchor",
+      "exactClaimUse": "Supports translating a domain intervention question into target-trial fields: eligibility, strategies, assignment, follow-up, outcome, causal contrast and analysis plan.",
+      "endpointDefinition": "For microbiome-ecology, admissible endpoint language is limited to the registered endpoint candidates: metabolic-and-immune-resilience, infection-or-inflammation-risk, function-and-recovery-change. The source does not add a new endpoint beyond this field row.",
+      "populationOrSample": "The source is used as a method anchor; a concrete Human Infra population, cohort, eligibility rule, time zero and follow-up horizon must be supplied by a later domain-specific study before quantitative use.",
+      "effectOrMechanismSignal": "Design signal only: separates observational association from a hypothetical intervention estimand; it supplies no effect size without suitable data.",
+      "uncertaintyOrBias": "Time-varying confounding, selection, adherence, immortal-time bias, competing risks, missingness and endpoint mismatch remain open unless explicitly handled.",
+      "transferBoundary": "Transfer only as causal-design discipline for future intervention evaluation. It does not establish that any domain intervention works.",
+      "modelAdmissionDecision": "causal-design-support-only-blocked-for-effect-claim",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "intervention-ranking",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Build microbiome Source Cards separating association, causality, intervention response and safety transfer risks."
+    },
+    {
+      "domainId": "cardiovascular-resilience",
+      "domainClaimId": "HIDOM-CL020",
+      "fieldCardId": "HIDOM-FLD020",
+      "sourceCardId": "SA-KAPLAN-MEIER-1958",
+      "extractionStatus": "completed-first-wave-method-anchor-field-extraction",
+      "sourceRole": "survival-function-and-censoring-method-anchor",
+      "exactClaimUse": "Supports aggregate time-to-event accounting for a defined risk set when time zero, event definition and censoring status are explicit.",
+      "endpointDefinition": "For cardiovascular-resilience, admissible endpoint language is limited to the registered endpoint candidates: major-cardiovascular-event-risk, functional-capacity, effective-time-loss-risk. The source does not add a new endpoint beyond this field row.",
+      "populationOrSample": "The source is used as a method anchor; a concrete Human Infra population, cohort, eligibility rule, time zero and follow-up horizon must be supplied by a later domain-specific study before quantitative use.",
+      "effectOrMechanismSignal": "Method signal only: estimates survival probability from incomplete event-time observations; it does not estimate an intervention mechanism.",
+      "uncertaintyOrBias": "Censoring rules, event ascertainment, time origin and cohort definition can change the curve; synthetic curves cannot be treated as real survival evidence.",
+      "transferBoundary": "Transfer only as survival-curve and event-time vocabulary. It does not validate domain parameters, prove intervention benefit, or authorize personal prognosis.",
+      "modelAdmissionDecision": "qualitative-method-support-only-blocked-for-calibrated-prediction",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "intervention-ranking",
+        "individual-death-date-output"
+      ],
+      "nextAction": "Map cardiovascular variables to hazard, function, recovery and treatment-burden outcomes."
+    },
+    {
+      "domainId": "cardiovascular-resilience",
+      "domainClaimId": "HIDOM-CL020",
+      "fieldCardId": "HIDOM-FLD020",
+      "sourceCardId": "SA-COX-1972",
+      "extractionStatus": "completed-first-wave-method-anchor-field-extraction",
+      "sourceRole": "hazard-function-and-covariate-risk-method-anchor",
+      "exactClaimUse": "Supports expressing domain variables as covariates associated with event hazard when time origin, event outcome and covariate measurement are explicit.",
+      "endpointDefinition": "For cardiovascular-resilience, admissible endpoint language is limited to the registered endpoint candidates: major-cardiovascular-event-risk, functional-capacity, effective-time-loss-risk. The source does not add a new endpoint beyond this field row.",
+      "populationOrSample": "The source is used as a method anchor; a concrete Human Infra population, cohort, eligibility rule, time zero and follow-up horizon must be supplied by a later domain-specific study before quantitative use.",
+      "effectOrMechanismSignal": "Method signal only: positions covariates relative to a hazard function; causal action claims require an additional causal design.",
+      "uncertaintyOrBias": "Proportionality, confounding, measurement timing, censoring and model validation limits must be checked before any risk interpretation.",
+      "transferBoundary": "Transfer only as hazard vocabulary and covariate-risk positioning. It does not prove causality, personalize risk, or rank interventions by itself.",
+      "modelAdmissionDecision": "qualitative-method-support-only-blocked-for-calibrated-prediction",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "intervention-ranking",
+        "individual-death-date-output"
+      ],
+      "nextAction": "Map cardiovascular variables to hazard, function, recovery and treatment-burden outcomes."
+    },
+    {
+      "domainId": "cardiovascular-resilience",
+      "domainClaimId": "HIDOM-CL020",
+      "fieldCardId": "HIDOM-FLD020",
+      "sourceCardId": "SA-TARGET-TRIAL-2022",
+      "extractionStatus": "completed-first-wave-method-anchor-field-extraction",
+      "sourceRole": "intervention-causal-design-method-anchor",
+      "exactClaimUse": "Supports translating a domain intervention question into target-trial fields: eligibility, strategies, assignment, follow-up, outcome, causal contrast and analysis plan.",
+      "endpointDefinition": "For cardiovascular-resilience, admissible endpoint language is limited to the registered endpoint candidates: major-cardiovascular-event-risk, functional-capacity, effective-time-loss-risk. The source does not add a new endpoint beyond this field row.",
+      "populationOrSample": "The source is used as a method anchor; a concrete Human Infra population, cohort, eligibility rule, time zero and follow-up horizon must be supplied by a later domain-specific study before quantitative use.",
+      "effectOrMechanismSignal": "Design signal only: separates observational association from a hypothetical intervention estimand; it supplies no effect size without suitable data.",
+      "uncertaintyOrBias": "Time-varying confounding, selection, adherence, immortal-time bias, competing risks, missingness and endpoint mismatch remain open unless explicitly handled.",
+      "transferBoundary": "Transfer only as causal-design discipline for future intervention evaluation. It does not establish that any domain intervention works.",
+      "modelAdmissionDecision": "causal-design-support-only-blocked-for-effect-claim",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "intervention-ranking",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Map cardiovascular variables to hazard, function, recovery and treatment-burden outcomes."
+    },
+    {
+      "domainId": "musculoskeletal-integrity",
+      "domainClaimId": "HIDOM-CL021",
+      "fieldCardId": "HIDOM-FLD021",
+      "sourceCardId": "SA-TARGET-TRIAL-2022",
+      "extractionStatus": "completed-first-wave-method-anchor-field-extraction",
+      "sourceRole": "intervention-causal-design-method-anchor",
+      "exactClaimUse": "Supports translating a domain intervention question into target-trial fields: eligibility, strategies, assignment, follow-up, outcome, causal contrast and analysis plan.",
+      "endpointDefinition": "For musculoskeletal-integrity, admissible endpoint language is limited to the registered endpoint candidates: ADL-and-task-execution, injury-and-disability-risk, effective-time-preservation. The source does not add a new endpoint beyond this field row.",
+      "populationOrSample": "The source is used as a method anchor; a concrete Human Infra population, cohort, eligibility rule, time zero and follow-up horizon must be supplied by a later domain-specific study before quantitative use.",
+      "effectOrMechanismSignal": "Design signal only: separates observational association from a hypothetical intervention estimand; it supplies no effect size without suitable data.",
+      "uncertaintyOrBias": "Time-varying confounding, selection, adherence, immortal-time bias, competing risks, missingness and endpoint mismatch remain open unless explicitly handled.",
+      "transferBoundary": "Transfer only as causal-design discipline for future intervention evaluation. It does not establish that any domain intervention works.",
+      "modelAdmissionDecision": "causal-design-support-only-blocked-for-effect-claim",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "intervention-ranking",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Create a musculoskeletal variable table connecting strength, balance, fracture risk, pain and task execution."
+    },
+    {
+      "domainId": "nutrition-metabolic-health",
+      "domainClaimId": "HIDOM-CL022",
+      "fieldCardId": "HIDOM-FLD022",
+      "sourceCardId": "SA-TARGET-TRIAL-2022",
+      "extractionStatus": "completed-first-wave-method-anchor-field-extraction",
+      "sourceRole": "intervention-causal-design-method-anchor",
+      "exactClaimUse": "Supports translating a domain intervention question into target-trial fields: eligibility, strategies, assignment, follow-up, outcome, causal contrast and analysis plan.",
+      "endpointDefinition": "For nutrition-metabolic-health, admissible endpoint language is limited to the registered endpoint candidates: functional-energy-and-recovery, cardiometabolic-risk-change, effective-time-and-access-burden. The source does not add a new endpoint beyond this field row.",
+      "populationOrSample": "The source is used as a method anchor; a concrete Human Infra population, cohort, eligibility rule, time zero and follow-up horizon must be supplied by a later domain-specific study before quantitative use.",
+      "effectOrMechanismSignal": "Design signal only: separates observational association from a hypothetical intervention estimand; it supplies no effect size without suitable data.",
+      "uncertaintyOrBias": "Time-varying confounding, selection, adherence, immortal-time bias, competing risks, missingness and endpoint mismatch remain open unless explicitly handled.",
+      "transferBoundary": "Transfer only as causal-design discipline for future intervention evaluation. It does not establish that any domain intervention works.",
+      "modelAdmissionDecision": "causal-design-support-only-blocked-for-effect-claim",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "intervention-ranking",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Separate metabolic biomarkers, functional energy, adherence, access and adverse nutrition channels."
+    },
+    {
+      "domainId": "renal-hepatic-clearance",
+      "domainClaimId": "HIDOM-CL023",
+      "fieldCardId": "HIDOM-FLD023",
+      "sourceCardId": "SA-COX-1972",
+      "extractionStatus": "completed-first-wave-method-anchor-field-extraction",
+      "sourceRole": "hazard-function-and-covariate-risk-method-anchor",
+      "exactClaimUse": "Supports expressing domain variables as covariates associated with event hazard when time origin, event outcome and covariate measurement are explicit.",
+      "endpointDefinition": "For renal-hepatic-clearance, admissible endpoint language is limited to the registered endpoint candidates: homeostasis-stability, treatment-safety-window, organ-failure-risk. The source does not add a new endpoint beyond this field row.",
+      "populationOrSample": "The source is used as a method anchor; a concrete Human Infra population, cohort, eligibility rule, time zero and follow-up horizon must be supplied by a later domain-specific study before quantitative use.",
+      "effectOrMechanismSignal": "Method signal only: positions covariates relative to a hazard function; causal action claims require an additional causal design.",
+      "uncertaintyOrBias": "Proportionality, confounding, measurement timing, censoring and model validation limits must be checked before any risk interpretation.",
+      "transferBoundary": "Transfer only as hazard vocabulary and covariate-risk positioning. It does not prove causality, personalize risk, or rank interventions by itself.",
+      "modelAdmissionDecision": "qualitative-method-support-only-blocked-for-calibrated-prediction",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "intervention-ranking",
+        "individual-death-date-output"
+      ],
+      "nextAction": "Build clearance Source Cards connecting renal/hepatic variables to homeostasis, toxicity and treatment-safety outputs."
+    },
+    {
+      "domainId": "renal-hepatic-clearance",
+      "domainClaimId": "HIDOM-CL023",
+      "fieldCardId": "HIDOM-FLD023",
+      "sourceCardId": "SA-TARGET-TRIAL-2022",
+      "extractionStatus": "completed-first-wave-method-anchor-field-extraction",
+      "sourceRole": "intervention-causal-design-method-anchor",
+      "exactClaimUse": "Supports translating a domain intervention question into target-trial fields: eligibility, strategies, assignment, follow-up, outcome, causal contrast and analysis plan.",
+      "endpointDefinition": "For renal-hepatic-clearance, admissible endpoint language is limited to the registered endpoint candidates: homeostasis-stability, treatment-safety-window, organ-failure-risk. The source does not add a new endpoint beyond this field row.",
+      "populationOrSample": "The source is used as a method anchor; a concrete Human Infra population, cohort, eligibility rule, time zero and follow-up horizon must be supplied by a later domain-specific study before quantitative use.",
+      "effectOrMechanismSignal": "Design signal only: separates observational association from a hypothetical intervention estimand; it supplies no effect size without suitable data.",
+      "uncertaintyOrBias": "Time-varying confounding, selection, adherence, immortal-time bias, competing risks, missingness and endpoint mismatch remain open unless explicitly handled.",
+      "transferBoundary": "Transfer only as causal-design discipline for future intervention evaluation. It does not establish that any domain intervention works.",
+      "modelAdmissionDecision": "causal-design-support-only-blocked-for-effect-claim",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "intervention-ranking",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Build clearance Source Cards connecting renal/hepatic variables to homeostasis, toxicity and treatment-safety outputs."
+    },
+    {
+      "domainId": "respiratory-oxygenation",
+      "domainClaimId": "HIDOM-CL024",
+      "fieldCardId": "HIDOM-FLD024",
+      "sourceCardId": "SA-COX-1972",
+      "extractionStatus": "completed-first-wave-method-anchor-field-extraction",
+      "sourceRole": "hazard-function-and-covariate-risk-method-anchor",
+      "exactClaimUse": "Supports expressing domain variables as covariates associated with event hazard when time origin, event outcome and covariate measurement are explicit.",
+      "endpointDefinition": "For respiratory-oxygenation, admissible endpoint language is limited to the registered endpoint candidates: cognitive-and-physical-energy, acute-respiratory-failure-risk, effective-time-loss. The source does not add a new endpoint beyond this field row.",
+      "populationOrSample": "The source is used as a method anchor; a concrete Human Infra population, cohort, eligibility rule, time zero and follow-up horizon must be supplied by a later domain-specific study before quantitative use.",
+      "effectOrMechanismSignal": "Method signal only: positions covariates relative to a hazard function; causal action claims require an additional causal design.",
+      "uncertaintyOrBias": "Proportionality, confounding, measurement timing, censoring and model validation limits must be checked before any risk interpretation.",
+      "transferBoundary": "Transfer only as hazard vocabulary and covariate-risk positioning. It does not prove causality, personalize risk, or rank interventions by itself.",
+      "modelAdmissionDecision": "qualitative-method-support-only-blocked-for-calibrated-prediction",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "intervention-ranking",
+        "individual-death-date-output"
+      ],
+      "nextAction": "Connect oxygenation, sleep breathing, airway risk and environmental exposure to energy and effective-time outputs."
+    },
+    {
+      "domainId": "respiratory-oxygenation",
+      "domainClaimId": "HIDOM-CL024",
+      "fieldCardId": "HIDOM-FLD024",
+      "sourceCardId": "SA-TARGET-TRIAL-2022",
+      "extractionStatus": "completed-first-wave-method-anchor-field-extraction",
+      "sourceRole": "intervention-causal-design-method-anchor",
+      "exactClaimUse": "Supports translating a domain intervention question into target-trial fields: eligibility, strategies, assignment, follow-up, outcome, causal contrast and analysis plan.",
+      "endpointDefinition": "For respiratory-oxygenation, admissible endpoint language is limited to the registered endpoint candidates: cognitive-and-physical-energy, acute-respiratory-failure-risk, effective-time-loss. The source does not add a new endpoint beyond this field row.",
+      "populationOrSample": "The source is used as a method anchor; a concrete Human Infra population, cohort, eligibility rule, time zero and follow-up horizon must be supplied by a later domain-specific study before quantitative use.",
+      "effectOrMechanismSignal": "Design signal only: separates observational association from a hypothetical intervention estimand; it supplies no effect size without suitable data.",
+      "uncertaintyOrBias": "Time-varying confounding, selection, adherence, immortal-time bias, competing risks, missingness and endpoint mismatch remain open unless explicitly handled.",
+      "transferBoundary": "Transfer only as causal-design discipline for future intervention evaluation. It does not establish that any domain intervention works.",
+      "modelAdmissionDecision": "causal-design-support-only-blocked-for-effect-claim",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "intervention-ranking",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Connect oxygenation, sleep breathing, airway risk and environmental exposure to energy and effective-time outputs."
+    },
+    {
+      "domainId": "blood-oxygen-hemostasis",
+      "domainClaimId": "HIDOM-CL025",
+      "fieldCardId": "HIDOM-FLD025",
+      "sourceCardId": "SA-COX-1972",
+      "extractionStatus": "completed-first-wave-method-anchor-field-extraction",
+      "sourceRole": "hazard-function-and-covariate-risk-method-anchor",
+      "exactClaimUse": "Supports expressing domain variables as covariates associated with event hazard when time origin, event outcome and covariate measurement are explicit.",
+      "endpointDefinition": "For blood-oxygen-hemostasis, admissible endpoint language is limited to the registered endpoint candidates: fatigue-and-function, acute-event-risk, treatment-safety-balance. The source does not add a new endpoint beyond this field row.",
+      "populationOrSample": "The source is used as a method anchor; a concrete Human Infra population, cohort, eligibility rule, time zero and follow-up horizon must be supplied by a later domain-specific study before quantitative use.",
+      "effectOrMechanismSignal": "Method signal only: positions covariates relative to a hazard function; causal action claims require an additional causal design.",
+      "uncertaintyOrBias": "Proportionality, confounding, measurement timing, censoring and model validation limits must be checked before any risk interpretation.",
+      "transferBoundary": "Transfer only as hazard vocabulary and covariate-risk positioning. It does not prove causality, personalize risk, or rank interventions by itself.",
+      "modelAdmissionDecision": "qualitative-method-support-only-blocked-for-calibrated-prediction",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "intervention-ranking",
+        "individual-death-date-output"
+      ],
+      "nextAction": "Build a hemostasis tradeoff map covering oxygen transport, bleeding, thrombosis, transfusion and functional endpoints."
+    },
+    {
+      "domainId": "blood-oxygen-hemostasis",
+      "domainClaimId": "HIDOM-CL025",
+      "fieldCardId": "HIDOM-FLD025",
+      "sourceCardId": "SA-TARGET-TRIAL-2022",
+      "extractionStatus": "completed-first-wave-method-anchor-field-extraction",
+      "sourceRole": "intervention-causal-design-method-anchor",
+      "exactClaimUse": "Supports translating a domain intervention question into target-trial fields: eligibility, strategies, assignment, follow-up, outcome, causal contrast and analysis plan.",
+      "endpointDefinition": "For blood-oxygen-hemostasis, admissible endpoint language is limited to the registered endpoint candidates: fatigue-and-function, acute-event-risk, treatment-safety-balance. The source does not add a new endpoint beyond this field row.",
+      "populationOrSample": "The source is used as a method anchor; a concrete Human Infra population, cohort, eligibility rule, time zero and follow-up horizon must be supplied by a later domain-specific study before quantitative use.",
+      "effectOrMechanismSignal": "Design signal only: separates observational association from a hypothetical intervention estimand; it supplies no effect size without suitable data.",
+      "uncertaintyOrBias": "Time-varying confounding, selection, adherence, immortal-time bias, competing risks, missingness and endpoint mismatch remain open unless explicitly handled.",
+      "transferBoundary": "Transfer only as causal-design discipline for future intervention evaluation. It does not establish that any domain intervention works.",
+      "modelAdmissionDecision": "causal-design-support-only-blocked-for-effect-claim",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "intervention-ranking",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Build a hemostasis tradeoff map covering oxygen transport, bleeding, thrombosis, transfusion and functional endpoints."
+    },
+    {
+      "domainId": "endocrine-hormonal-regulation",
+      "domainClaimId": "HIDOM-CL026",
+      "fieldCardId": "HIDOM-FLD026",
+      "sourceCardId": "SA-TARGET-TRIAL-2022",
+      "extractionStatus": "completed-first-wave-method-anchor-field-extraction",
+      "sourceRole": "intervention-causal-design-method-anchor",
+      "exactClaimUse": "Supports translating a domain intervention question into target-trial fields: eligibility, strategies, assignment, follow-up, outcome, causal contrast and analysis plan.",
+      "endpointDefinition": "For endocrine-hormonal-regulation, admissible endpoint language is limited to the registered endpoint candidates: energy-recovery-and-function, multi-system-risk-balance, effective-time-and-safety. The source does not add a new endpoint beyond this field row.",
+      "populationOrSample": "The source is used as a method anchor; a concrete Human Infra population, cohort, eligibility rule, time zero and follow-up horizon must be supplied by a later domain-specific study before quantitative use.",
+      "effectOrMechanismSignal": "Design signal only: separates observational association from a hypothetical intervention estimand; it supplies no effect size without suitable data.",
+      "uncertaintyOrBias": "Time-varying confounding, selection, adherence, immortal-time bias, competing risks, missingness and endpoint mismatch remain open unless explicitly handled.",
+      "transferBoundary": "Transfer only as causal-design discipline for future intervention evaluation. It does not establish that any domain intervention works.",
+      "modelAdmissionDecision": "causal-design-support-only-blocked-for-effect-claim",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "intervention-ranking",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Create endocrine axis cards separating deficiency, excess, replacement, suppression, feedback and adverse tradeoffs."
+    }
+  ],
+  "nonClaims": [
+    "This register does not complete the full 81-task source-specific extraction queue.",
+    "This register does not prove that any domain intervention extends lifespan, healthspan, effective time or future option value.",
+    "This register does not authorize calibrated survival prediction, individual death-date output, clinical advice, or intervention ranking.",
+    "This register does not replace full-text peer review or source-context verification."
+  ],
+  "indexRequirements": [
+    "README.md",
+    "docs/reference/README.md",
+    "docs/reference/human-infra-maturity-roadmap.md",
+    "tools/README.md"
+  ]
+}
