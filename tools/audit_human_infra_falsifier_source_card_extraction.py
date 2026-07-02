@@ -291,6 +291,13 @@ def validate_source_cards(
         require_string_list(item.get("risksAndMisreadings"), f"{context}.risksAndMisreadings", errors, 2)
         require_string(item.get("repositoryAction"), f"{context}.repositoryAction", errors)
         require_string(item.get("nextExtractionStep"), f"{context}.nextExtractionStep", errors)
+
+    missing = sorted(set(known_sources) - seen)
+    stale = sorted(seen - set(known_sources))
+    if missing:
+        fail(errors, f"sourceCards missing backfill source anchors: {', '.join(missing)}")
+    if stale:
+        fail(errors, f"sourceCards contains stale source anchors: {', '.join(stale)}")
     return (ordered_ids, domain_ref_count, paper_claim_ref_count)
 
 
@@ -301,7 +308,9 @@ def validate_coverage_summary(value: Any, source_ids: list[str], errors: list[st
     selected = require_string_list(value.get("selectedSourceAnchors"), "coverageSummary.selectedSourceAnchors", errors, 1)
     if selected and selected != source_ids:
         fail(errors, "coverageSummary.selectedSourceAnchors must exactly match sourceCards order")
-    require_int(value.get("remainingSourceAnchorCount"), "coverageSummary.remainingSourceAnchorCount", errors)
+    remaining_count = require_int(value.get("remainingSourceAnchorCount"), "coverageSummary.remainingSourceAnchorCount", errors)
+    if remaining_count not in (None, 0):
+        fail(errors, "coverageSummary.remainingSourceAnchorCount must be 0 when all current anchors are extracted")
     require_string(value.get("remainingWork"), "coverageSummary.remainingWork", errors)
 
 

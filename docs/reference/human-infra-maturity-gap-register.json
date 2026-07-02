@@ -114,7 +114,7 @@
     {
       "axisId": "research_framework",
       "axisName": "研究框架",
-      "currentPercent": 75,
+      "currentPercent": 78,
       "targetPercent": 100,
       "definitionOfDone": "Every strong project claim can be traced to source cards, claim-evidence rows, variables, mechanism links, falsifiers, model position and governance boundary.",
       "primaryEvidence": [
@@ -216,10 +216,9 @@
           ],
           "missingEvidence": [
             "Falsifier rows for C2 domain claims beyond the current 20-domain priority set.",
-            "Field-level Source Cards for the remaining 11 source anchors.",
             "Domain-level Source Cards that split each source anchor into exact claim, variable, endpoint, population, uncertainty and transfer-boundary rows."
           ],
-          "nextAction": "Extend field-level Source Card extraction to the remaining source anchors, then split C1/C2 domain claims into domain-level Source Cards.",
+          "nextAction": "Split C1/C2 domain claims into domain-level Source Cards with exact claim, variable, endpoint, population, uncertainty and transfer-boundary rows.",
           "blocks100Percent": true
         }
       ]
@@ -366,7 +365,7 @@
   "nextWorkOrder": [
     {
       "priority": 1,
-      "item": "Extend the field-level falsifier Source Card extraction to the remaining source anchors, then split C1/C2 domain claims into domain-level Source Cards.",
+      "item": "Split C1/C2 domain claims into domain-level Source Cards with exact claim, variable, endpoint, population, uncertainty and transfer-boundary rows.",
       "unblocks": [
         "RESEARCH-G6-falsifier-and-downgrade-coverage"
       ]

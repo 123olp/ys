@@ -12,7 +12,7 @@
 
 反证 Source Card 锚点回填账本见 [`human-infra-falsifier-source-card-backfill.json`](human-infra-falsifier-source-card-backfill.json)，由 `make falsifier-source-audit` 检查当前论文强主张和 C1/C2 优先域反证是否具备来源锚点、证据角色、可用范围、迁移边界和后续 Source Card 动作。
 
-反证 Source Card 字段级抽取账本见 [`human-infra-falsifier-source-card-extraction.json`](human-infra-falsifier-source-card-extraction.json)，由 `make falsifier-source-extraction-audit` 检查第一批高杠杆来源锚点是否进入来源身份、域、论文 claim、模型位置、反证用途、迁移边界和人工可读包。
+反证 Source Card 字段级抽取账本见 [`human-infra-falsifier-source-card-extraction.json`](human-infra-falsifier-source-card-extraction.json)，由 `make falsifier-source-extraction-audit` 检查当前全部来源锚点是否进入来源身份、域、论文 claim、模型位置、反证用途、迁移边界和人工可读包。
 
 ## Claim Spine
 
@@ -25,7 +25,7 @@
 | 轴线 | 当前成熟度 | 100% 状态 | 当前最大缺口 |
 | --- | ---: | --- | --- |
 | 项目价值 | 88% | 不同受众能用同一核心命题理解 Human Infra 的必要性 | 已有页面级 Claim ID 一致性门禁；还需要补 audience-to-claim map 和邻近项目边界对照 |
-| 研究框架 | 75% | 每条主张都进入 Source Card、Claim-Evidence Matrix、变量表和反证条件 | 已有核心主张矩阵、页面级 Claim ID 门禁、arXiv-style 论文页强主张门禁、C1/20 个优先 C2 反证覆盖门禁、v0.1 反证 Source Card 锚点回填、第一批字段级 Source Card 抽取、方法锚点和本地审计门禁，但剩余来源锚点、20 域之外的 C2 长尾域和逐篇 Source Card 精读仍未完成 |
+| 研究框架 | 78% | 每条主张都进入 Source Card、Claim-Evidence Matrix、变量表和反证条件 | 已有核心主张矩阵、页面级 Claim ID 门禁、arXiv-style 论文页强主张门禁、C1/20 个优先 C2 反证覆盖门禁、v0.1 反证 Source Card 锚点回填、当前 21 个来源锚点字段级 Source Card 抽取、方法锚点和本地审计门禁，但 20 域之外的 C2 长尾域、域级 Claim-Evidence Matrix 和逐篇深度精读仍未完成 |
 | 定量模型 | 63% | 有可运行、可复现、可审查的场景级模型管线 | 已有 toy model、合成敏感性分析、审计器、校准预备契约、真实队列候选注册表、数据源 Source Cards、Data Card 模板、NHATS 数据准入草案、变量字典草案、extraction manifest 草案、机器可读 acquisition-readiness gates、R13/R14 file-tier table、第一版 NHATS estimand protocol、NHATS variable confirmation matrix、NHATS cohort-flow endpoint-routing protocol、synthetic disclosure-control validator、synthetic survey-design validator、synthetic missingness-route validator、NHATS route-field discovery validator 和 NHATS Colectica value-label review protocol validator，但还没有数据访问、Colectica value labels 精确确认、真实提取、真实 NHATS route classification、真实 NHATS 输出披露审查、真实 survey-design 加权估计、外部验证和校准后的敏感性分析 |
 
 ## 价值层 100%

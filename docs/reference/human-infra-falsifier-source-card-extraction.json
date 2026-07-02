@@ -10,14 +10,13 @@
   "maturityGapRegister": "docs/reference/human-infra-maturity-gap-register.json",
   "humanReadablePack": "docs/source-notes/2026-07-02-falsifier-source-card-field-extraction.md",
   "scope": {
-    "coverageLevel": "field-source-cards-v0.1",
-    "selectedSourceAnchorCount": 10,
-    "selectionRule": "Select sources that anchor the largest number of model-critical falsifiers: aging mechanism taxonomy, biomarker versus endpoint, reprogramming identity risk, survival/hazard methods, causal intervention design, prediction reporting and subject-continuity value framing.",
+    "coverageLevel": "field-source-cards-v1.0-all-current-anchors",
+    "selectedSourceAnchorCount": 21,
+    "selectionRule": "Cover every current source anchor in the backfill register at field level before claiming RESEARCH-G6 has source-card extraction coverage.",
     "currentLimitations": [
-      "This extraction covers the first 10 highest-leverage source anchors, not all 21 source anchors in the backfill register.",
       "This extraction records field-level use and transfer boundaries; it is not a live external literature review.",
       "This extraction does not validate intervention efficacy, individual medical action, individual lifespan, NCG calibration or personal prediction.",
-      "Remaining source anchors still require equivalent field-level extraction before RESEARCH-G6 can pass completely."
+      "This extraction covers current source anchors, but domain-level Source Cards still need exact claim, variable, endpoint, population, uncertainty and transfer-boundary rows."
     ]
   },
   "sourceCards": [
@@ -626,6 +625,676 @@
       ],
       "repositoryAction": "Use as a value Source Card connecting HI-CL1/HI-CL3 to measurable function and option-value fields.",
       "nextExtractionStep": "Create a capability-to-variable crosswalk for effective time, function, agency, recovery and future option value."
+    },
+    {
+      "sourceId": "SA-HALLMARKS-AGING-2013",
+      "cardStatus": "field-extracted-v0.1",
+      "sourceIdentity": {
+        "title": "The Hallmarks of Aging",
+        "year": "2013",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3836174/",
+        "sourceType": "review-paper"
+      },
+      "oneSentenceUse": "Use this source as the baseline aging-hallmark taxonomy that anchors the original biological-maintenance vocabulary.",
+      "humanInfraMapping": {
+        "domainIds": [
+          "genomic-stability-dna-repair",
+          "biological-age-clocks-biomarker-validation",
+          "proteostasis-autophagy",
+          "mitochondrial-bioenergetics",
+          "cellular-senescence-clearance",
+          "stem-cell-reserve-renewal"
+        ],
+        "paperClaimIds": [
+          "HIPAPER-CL1",
+          "HIPAPER-CL3"
+        ],
+        "subjectContinuityVariables": [
+          "genomic-integrity",
+          "telomere-state",
+          "proteostasis-capacity",
+          "mitochondrial-function",
+          "senescent-cell-burden",
+          "stem-cell-reserve"
+        ],
+        "valueLens": "baseline source-maintenance taxonomy",
+        "safetyBoundary": "Historical mechanism taxonomy is not sufficient for intervention or prediction claims."
+      },
+      "modelPosition": {
+        "stateVariable": "Baseline biological-maintenance state families.",
+        "stateTransition": "Conceptual deterioration mechanisms only.",
+        "hazard": "No calibrated hazard imported.",
+        "observationProcess": "Suggests domains that may need separate measurement.",
+        "actionPolicy": "Not an intervention policy.",
+        "timeAccounting": "Supports lifespan and healthspan terminology only as background.",
+        "optionValue": "Supports why multiple maintenance failures can reduce future option value."
+      },
+      "evidenceRoles": [
+        "mechanism taxonomy",
+        "historical anchor",
+        "domain vocabulary"
+      ],
+      "keyExtracts": [
+        "The original hallmark framework provides a baseline decomposition of aging mechanisms.",
+        "Human Infra should preserve historical continuity between older and expanded aging taxonomies.",
+        "A domain can borrow hallmark vocabulary without gaining intervention-level evidence."
+      ],
+      "supportedUse": "Use to anchor older C2 mechanism domains and continuity between 2013 and 2023 hallmark framing.",
+      "falsifierUse": "If a claim cites hallmark status as proof of lifespan extension, downgrade it to mechanism-level support.",
+      "transferBoundary": "Does not prove that targeting a hallmark improves human survival, function or effective time.",
+      "risksAndMisreadings": [
+        "A canonical review can be mistaken for final consensus.",
+        "Mechanism naming can be mistaken for controllability.",
+        "Historical taxonomy can miss newer systemic or ecological variables."
+      ],
+      "repositoryAction": "Use as the baseline Source Card for original aging-maintenance domain language.",
+      "nextExtractionStep": "Map each original hallmark to current C2 domain rows and note which newer variables require updated sources."
+    },
+    {
+      "sourceId": "SA-NCI-SCREENING-BIAS",
+      "cardStatus": "field-extracted-v0.1",
+      "sourceIdentity": {
+        "title": "What Cancer Screening Statistics Really Tell Us",
+        "year": "official-reference",
+        "url": "https://www.cancer.gov/about-cancer/screening/research/what-screening-statistics-mean",
+        "sourceType": "official-explainer"
+      },
+      "oneSentenceUse": "Use this source to anchor the rule that earlier detection, survival time after diagnosis and screening benefit must be separated.",
+      "humanInfraMapping": {
+        "domainIds": [
+          "cancer-screening-early-detection-continuity",
+          "longevity-evidence",
+          "biological-age-clocks-biomarker-validation"
+        ],
+        "paperClaimIds": [
+          "HIPAPER-CL1",
+          "HIPAPER-CL2"
+        ],
+        "subjectContinuityVariables": [
+          "screening-detection-time",
+          "lead-time-bias",
+          "overdiagnosis-risk",
+          "mortality-endpoint",
+          "harm-benefit-balance"
+        ],
+        "valueLens": "endpoint discipline for early detection",
+        "safetyBoundary": "Screening statistics need endpoint and harm interpretation before any survival claim."
+      },
+      "modelPosition": {
+        "stateVariable": "Screening and detection-state variables.",
+        "stateTransition": "No disease-control transition imported by detection alone.",
+        "hazard": "Mortality reduction must be distinguished from survival-time artifacts.",
+        "observationProcess": "Primary use: observation and endpoint interpretation.",
+        "actionPolicy": "No screening recommendation or personal medical advice.",
+        "timeAccounting": "Separates diagnosis timing from actual life extension.",
+        "optionValue": "Earlier detection may affect option value only if net benefit and actionability hold."
+      },
+      "evidenceRoles": [
+        "official boundary explainer",
+        "endpoint interpretation",
+        "screening bias guardrail"
+      ],
+      "keyExtracts": [
+        "Screening can make survival after diagnosis appear longer without changing death time.",
+        "Overdiagnosis and harms must be represented before treating detection as a continuity gain.",
+        "Human Infra should not let observation variables masquerade as intervention outcomes."
+      ],
+      "supportedUse": "Use to gate cancer-screening and early-detection claims in route cards and model pages.",
+      "falsifierUse": "If a claim treats earlier detection or longer post-diagnosis survival as mortality benefit without bias review, downgrade it.",
+      "transferBoundary": "Does not endorse or reject individual screening; it only governs interpretation of screening evidence.",
+      "risksAndMisreadings": [
+        "Early detection can be mistaken for life extension.",
+        "Survival statistics can be mistaken for mortality reduction.",
+        "Screening harms can be omitted from model outputs."
+      ],
+      "repositoryAction": "Use as a cross-cutting endpoint-boundary card for cancer and biomarker observation routes.",
+      "nextExtractionStep": "Create a screening endpoint checklist separating incidence, detection, survival, mortality, overdiagnosis and harms."
+    },
+    {
+      "sourceId": "SA-IMMUNOSENESCENCE-2024",
+      "cardStatus": "field-extracted-v0.1",
+      "sourceIdentity": {
+        "title": "Immunosenescence: Aging and Immune System Decline",
+        "year": "2024",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/39771976/",
+        "sourceType": "review-paper"
+      },
+      "oneSentenceUse": "Use this source to anchor immune aging, inflammaging and immune-function tradeoffs as C2 source-maintenance variables.",
+      "humanInfraMapping": {
+        "domainIds": [
+          "immune-maintenance",
+          "longevity-evidence",
+          "cancer-screening-early-detection-continuity",
+          "cellular-senescence-clearance"
+        ],
+        "paperClaimIds": [
+          "HIPAPER-CL1",
+          "HIPAPER-CL3"
+        ],
+        "subjectContinuityVariables": [
+          "immune-reserve",
+          "inflammaging",
+          "infection-risk",
+          "vaccine-response",
+          "immune-surveillance"
+        ],
+        "valueLens": "immune source-maintenance",
+        "safetyBoundary": "Immune mechanism vocabulary does not prove a given immune intervention improves lifespan."
+      },
+      "modelPosition": {
+        "stateVariable": "Immune aging and inflammatory state variables.",
+        "stateTransition": "Candidate immune decline and dysregulation pathways.",
+        "hazard": "Supports infection, cancer and inflammatory risk vocabulary, not calibrated hazards.",
+        "observationProcess": "Suggests immune-function, inflammation and response observations.",
+        "actionPolicy": "No immunotherapy, vaccine or supplement recommendation.",
+        "timeAccounting": "Immune decline can affect healthspan and survival only through separately evidenced outcomes.",
+        "optionValue": "Immune reserve can constrain future treatment and recovery options."
+      },
+      "evidenceRoles": [
+        "mechanism scaffold",
+        "risk-channel vocabulary",
+        "immune-maintenance boundary"
+      ],
+      "keyExtracts": [
+        "Immune aging is a multi-channel maintenance problem, not a single immune boost target.",
+        "Improving one immune marker may worsen other risks if inflammatory or autoimmune channels are ignored.",
+        "Human Infra should model immune maintenance through infection, cancer surveillance, inflammation and recovery pathways."
+      ],
+      "supportedUse": "Use to define immune-maintenance variables and downgrade simplistic immune-enhancement claims.",
+      "falsifierUse": "If an immune route lacks infection, inflammation, cancer-surveillance and adverse-activation boundaries, mark it incomplete.",
+      "transferBoundary": "Does not prove lifespan benefit, individual immune status or intervention safety.",
+      "risksAndMisreadings": [
+        "Immune stimulation can be confused with immune resilience.",
+        "Inflammation reduction can be overread without infection and cancer tradeoffs.",
+        "Aging immune taxonomy can be overgeneralized to individual intervention choice."
+      ],
+      "repositoryAction": "Use as the field Source Card for immune-maintenance falsifier rows.",
+      "nextExtractionStep": "Split immune-maintenance variables into infection, vaccine response, inflammaging, cancer surveillance and recovery domains."
+    },
+    {
+      "sourceId": "SA-PERSONAL-INFORMATICS-2010",
+      "cardStatus": "field-extracted-v0.1",
+      "sourceIdentity": {
+        "title": "A Stage-Based Model of Personal Informatics Systems",
+        "year": "2010",
+        "url": "https://dl.acm.org/doi/10.1145/1753326.1753409",
+        "sourceType": "human-computer-interaction-paper"
+      },
+      "oneSentenceUse": "Use this source to anchor the observation-to-reflection-to-action loop for self-tracking and personal feedback systems.",
+      "humanInfraMapping": {
+        "domainIds": [
+          "longevity-evidence",
+          "neuro-continuity",
+          "nutrition-metabolic-health",
+          "cardiovascular-resilience"
+        ],
+        "paperClaimIds": [
+          "HIPAPER-CL1",
+          "HIPAPER-CL4"
+        ],
+        "subjectContinuityVariables": [
+          "self-tracking-stage",
+          "data-collection-friction",
+          "reflection-quality",
+          "action-loop-completion",
+          "feedback-delay"
+        ],
+        "valueLens": "measurement-to-action infrastructure",
+        "safetyBoundary": "Self-tracking workflow design does not prove health or longevity outcomes."
+      },
+      "modelPosition": {
+        "stateVariable": "Observed personal state variables.",
+        "stateTransition": "Action loops can change future state only with separate causal evidence.",
+        "hazard": "No hazard estimate imported.",
+        "observationProcess": "Primary use: preparation, collection, integration, reflection and action stages.",
+        "actionPolicy": "Supports action-loop design, not action choice.",
+        "timeAccounting": "Can affect effective time through friction and feedback delay if measured.",
+        "optionValue": "Better observation may increase future choice only if it supports action and recovery."
+      },
+      "evidenceRoles": [
+        "HCI workflow model",
+        "observation process",
+        "feedback-loop boundary"
+      ],
+      "keyExtracts": [
+        "Personal data systems require stages before data becomes useful action.",
+        "Collection without integration, reflection and action should not be counted as a continuity improvement.",
+        "Human Infra should model measurement burden and feedback delay as possible negative channels."
+      ],
+      "supportedUse": "Use to gate self-tracking, wearable and personal-data claims through workflow completion.",
+      "falsifierUse": "If a data tool stops at collection and cannot support reflection or action, downgrade it to observation-only.",
+      "transferBoundary": "Does not prove a tool improves health, cognition, effective time or survival.",
+      "risksAndMisreadings": [
+        "More data can be mistaken for better decisions.",
+        "Tracking burden can reduce effective time.",
+        "Reflection and action stages can be ignored in dashboards."
+      ],
+      "repositoryAction": "Use as the Source Card for observation-process and feedback-loop gates.",
+      "nextExtractionStep": "Create a personal-informatics route checklist covering preparation, collection, integration, reflection, action and burden."
+    },
+    {
+      "sourceId": "SA-DYNAMIC-DIGITAL-TWIN-2022",
+      "cardStatus": "field-extracted-v0.1",
+      "sourceIdentity": {
+        "title": "Dynamic Digital Twin: Diagnosis, Treatment, Prediction, and Prevention of Disease During the Life Course",
+        "year": "2022",
+        "url": "https://www.jmir.org/2022/9/e35675",
+        "sourceType": "digital-health-review"
+      },
+      "oneSentenceUse": "Use this source to anchor digital twin language as a life-course modeling architecture, not as proof that a complete human twin exists.",
+      "humanInfraMapping": {
+        "domainIds": [
+          "longevity-evidence",
+          "biological-age-clocks-biomarker-validation",
+          "neuro-continuity",
+          "cardiovascular-resilience"
+        ],
+        "paperClaimIds": [
+          "HIPAPER-CL1",
+          "HIPAPER-CL2"
+        ],
+        "subjectContinuityVariables": [
+          "multimodal-state-model",
+          "simulation-scope",
+          "prediction-horizon",
+          "prevention-route",
+          "implementation-barrier"
+        ],
+        "valueLens": "subject-state modeling architecture",
+        "safetyBoundary": "Digital-twin architecture vocabulary is not clinical deployment proof."
+      },
+      "modelPosition": {
+        "stateVariable": "Multimodal subject-state representation.",
+        "stateTransition": "Candidate simulation of state evolution if data and model validation exist.",
+        "hazard": "Can host risk models but imports no hazard estimate by itself.",
+        "observationProcess": "Requires multimodal data acquisition, integration and update process.",
+        "actionPolicy": "No treatment policy without validated decision model.",
+        "timeAccounting": "Can represent life-course horizons if defined.",
+        "optionValue": "A validated twin could increase option value through earlier planning, but current use is architectural."
+      },
+      "evidenceRoles": [
+        "model architecture",
+        "digital-health review",
+        "implementation-boundary source"
+      ],
+      "keyExtracts": [
+        "A digital twin is a modeling architecture that depends on data integration and validation.",
+        "Prediction, prevention and treatment claims need different evidence tiers.",
+        "Human Infra should not use twin language unless observation, update and validation loops are specified."
+      ],
+      "supportedUse": "Use to describe the long-term target architecture for subject-state simulation.",
+      "falsifierUse": "If a page says digital twin but lacks data, update loop, validation and deployment boundary, downgrade to conceptual architecture.",
+      "transferBoundary": "Does not prove an operational human digital twin, clinical decision support, or calibrated life-path model exists.",
+      "risksAndMisreadings": [
+        "Architecture can be mistaken for implementation.",
+        "Simulation can be mistaken for validated prediction.",
+        "Life-course language can hide missing longitudinal data."
+      ],
+      "repositoryAction": "Use as the Source Card for digital-twin architecture in model contracts.",
+      "nextExtractionStep": "Create a digital-twin readiness checklist for data, model, validation, update, governance and deployment status."
+    },
+    {
+      "sourceId": "SA-EXTENDED-MIND-1998",
+      "cardStatus": "field-extracted-v0.1",
+      "sourceIdentity": {
+        "title": "The Extended Mind",
+        "year": "1998",
+        "url": "https://onlinelibrary.wiley.com/doi/abs/10.1111/1467-8284.00096",
+        "sourceType": "philosophy-paper"
+      },
+      "oneSentenceUse": "Use this source to anchor the conceptual legitimacy of external tools, memory supports and environments as possible parts of cognitive agency.",
+      "humanInfraMapping": {
+        "domainIds": [
+          "memory-editing",
+          "neuro-continuity",
+          "brain-preservation-connectomics-emulation",
+          "disembodied-cns"
+        ],
+        "paperClaimIds": [
+          "HIPAPER-CL3",
+          "HIPAPER-CL4"
+        ],
+        "subjectContinuityVariables": [
+          "external-memory-support",
+          "tool-integration",
+          "cognitive-offloading",
+          "agency-boundary",
+          "dependence-risk"
+        ],
+        "valueLens": "cognitive extension and tool integration",
+        "safetyBoundary": "Conceptual support for extension does not prove durable capability gains."
+      },
+      "modelPosition": {
+        "stateVariable": "Cognitive support and external-memory state.",
+        "stateTransition": "Tool integration may change task performance only with separate task evidence.",
+        "hazard": "No mortality hazard imported; dependence and failure are negative channels.",
+        "observationProcess": "Requires measuring whether tools are reliably available and integrated.",
+        "actionPolicy": "Can frame tool-use policy questions, not specific recommendations.",
+        "timeAccounting": "May affect effective time through task execution if evidenced.",
+        "optionValue": "External supports can expand future options if reliable, governed and recoverable."
+      },
+      "evidenceRoles": [
+        "conceptual framework",
+        "cognitive-extension genealogy",
+        "tool-boundary source"
+      ],
+      "keyExtracts": [
+        "Cognitive work can sometimes involve stable external supports, not just internal brain states.",
+        "Human Infra can treat tools and memory systems as subject-support infrastructure when integration criteria hold.",
+        "Tool dependence must be modeled as a continuity risk, not only as enhancement."
+      ],
+      "supportedUse": "Use to justify why AI tools, external memory and knowledge systems belong in the subject-continuity map.",
+      "falsifierUse": "If a tool is unreliable, unavailable, unauditable or agency-eroding, it cannot be counted as stable cognitive extension.",
+      "transferBoundary": "Does not prove any specific AI, memory or automation tool improves long-term subject continuity.",
+      "risksAndMisreadings": [
+        "Philosophical possibility can be mistaken for empirical tool efficacy.",
+        "External support can be confused with identity continuity.",
+        "Dependence and lock-in risks can be ignored."
+      ],
+      "repositoryAction": "Use as the concept Source Card for tool, AI and memory-extension claims.",
+      "nextExtractionStep": "Create a tool-integration checklist covering reliability, access, agency, recoverability, privacy and failure modes."
+    },
+    {
+      "sourceId": "SA-BRAIN-PRESERVATION-2024",
+      "cardStatus": "field-extracted-v0.1",
+      "sourceIdentity": {
+        "title": "Structural brain preservation: a potential bridge to future medical technologies",
+        "year": "2024",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11416988/",
+        "sourceType": "review-paper"
+      },
+      "oneSentenceUse": "Use this source to anchor brain preservation as a conditional structural-preservation bridge hypothesis rather than a proof of revival or continuity.",
+      "humanInfraMapping": {
+        "domainIds": [
+          "brain-preservation-connectomics-emulation",
+          "biostasis-cryopreservation",
+          "neuro-continuity",
+          "future-waiting"
+        ],
+        "paperClaimIds": [
+          "HIPAPER-CL3",
+          "HIPAPER-CL4"
+        ],
+        "subjectContinuityVariables": [
+          "structural-fidelity",
+          "memory-trace-preservation",
+          "repair-window",
+          "revival-uncertainty",
+          "identity-continuity-boundary"
+        ],
+        "valueLens": "information preservation under continuity uncertainty",
+        "safetyBoundary": "Structural preservation is not revival, emulation or identity-continuity proof."
+      },
+      "modelPosition": {
+        "stateVariable": "Preserved neural structure and information-fidelity state.",
+        "stateTransition": "Future repair is hypothetical and cannot be modeled as a validated transition.",
+        "hazard": "No survival hazard; the key risk is irreversible information loss.",
+        "observationProcess": "Requires preservation-quality and information-sufficiency evidence.",
+        "actionPolicy": "No individual preservation service advice.",
+        "timeAccounting": "Belongs to future-waiting and biostasis time-bridge framing only.",
+        "optionValue": "May preserve future option value only if information sufficiency and revival conditions hold."
+      },
+      "evidenceRoles": [
+        "review paper",
+        "preservation hypothesis",
+        "identity-boundary source"
+      ],
+      "keyExtracts": [
+        "Brain preservation can be framed as a bridge to future technology only under strong information-preservation assumptions.",
+        "Human Infra must separate structure preservation from functional revival and subject continuity.",
+        "Any positive route needs memory, identity, readout, repair and governance gates."
+      ],
+      "supportedUse": "Use to define brain-preservation route conditions and falsifiers.",
+      "falsifierUse": "If preserved structure cannot support memory, agency or functional reconstruction claims, downgrade to anatomical archive.",
+      "transferBoundary": "Does not prove uploading, revival, identity continuity, service quality or personal actionability.",
+      "risksAndMisreadings": [
+        "Preservation can be mistaken for survival.",
+        "Structural fidelity can be mistaken for mind continuity.",
+        "Future repair can be assumed without evidence."
+      ],
+      "repositoryAction": "Use as the Source Card for brain-preservation and biostasis continuity gates.",
+      "nextExtractionStep": "Create a brain-information sufficiency matrix covering structure, dynamics, memory, readout, repair and identity theory."
+    },
+    {
+      "sourceId": "SA-GPS-RELATIVITY-2003",
+      "cardStatus": "field-extracted-v0.1",
+      "sourceIdentity": {
+        "title": "Relativity in the Global Positioning System",
+        "year": "2003",
+        "url": "https://link.springer.com/article/10.12942/lrr-2003-1",
+        "sourceType": "physics-review"
+      },
+      "oneSentenceUse": "Use this source to anchor that relativistic clock effects are real engineering corrections, while keeping weak-field GPS evidence separate from strong-redshift waiting claims.",
+      "humanInfraMapping": {
+        "domainIds": [
+          "future-waiting",
+          "longevity-evidence"
+        ],
+        "paperClaimIds": [
+          "HIPAPER-CL5",
+          "HIPAPER-CL7",
+          "HIPAPER-CL9"
+        ],
+        "subjectContinuityVariables": [
+          "proper-time-differential",
+          "reference-observer",
+          "clock-rate-correction",
+          "weak-field-boundary"
+        ],
+        "valueLens": "time-accounting mechanism anchor",
+        "safetyBoundary": "GPS relativity does not support black-hole waiting, metric engineering or human-use feasibility."
+      },
+      "modelPosition": {
+        "stateVariable": "No subject biological state variable.",
+        "stateTransition": "No waiting-state transition by itself.",
+        "hazard": "No life risk imported.",
+        "observationProcess": "Supports reference-frame and clock-rate accounting.",
+        "actionPolicy": "No action policy.",
+        "timeAccounting": "Primary use: proper-time and external-time distinction.",
+        "optionValue": "Only supports the time-accounting concept for future-waiting hypotheses."
+      },
+      "evidenceRoles": [
+        "physics method anchor",
+        "time-accounting source",
+        "weak-field boundary"
+      ],
+      "keyExtracts": [
+        "Relativistic time corrections are operationally important in GPS.",
+        "Weak-field engineering corrections cannot be extrapolated to controlled strong-redshift waiting rooms.",
+        "Human Infra waiting papers must bind K to a metric, worldline and reference observer."
+      ],
+      "supportedUse": "Use to support proper-time differential terminology and reference-observer discipline.",
+      "falsifierUse": "If a waiting scenario lacks metric, worldline or observer definition, classify it cannot-evaluate.",
+      "transferBoundary": "Does not prove strong gravity waiting, artificial black holes, safe orbiting, exit, life support or recursive waiting.",
+      "risksAndMisreadings": [
+        "Weak-field time correction can be overstated as strong-field feasibility.",
+        "Clock effects can be mistaken for subject-continuity benefit.",
+        "Reference-time ambiguity can hide model invalidity."
+      ],
+      "repositoryAction": "Use as the physics Source Card for proper-time differential waiting terminology.",
+      "nextExtractionStep": "Create a metric/worldline/reference-observer card template for future-waiting scenarios."
+    },
+    {
+      "sourceId": "SA-NASA-BLACK-HOLES",
+      "cardStatus": "field-extracted-v0.1",
+      "sourceIdentity": {
+        "title": "Black Holes - NASA Science",
+        "year": "official-reference",
+        "url": "https://science.nasa.gov/universe/black-holes/",
+        "sourceType": "official-explainer"
+      },
+      "oneSentenceUse": "Use this source as public-facing black-hole context and hazard boundary, not as proof of a usable waiting room.",
+      "humanInfraMapping": {
+        "domainIds": [
+          "future-waiting",
+          "biostasis-cryopreservation"
+        ],
+        "paperClaimIds": [
+          "HIPAPER-CL5",
+          "HIPAPER-CL7",
+          "HIPAPER-CL9"
+        ],
+        "subjectContinuityVariables": [
+          "strong-gravity-context",
+          "event-horizon-boundary",
+          "tidal-and-radiation-risk",
+          "public-metaphor-control"
+        ],
+        "valueLens": "public concept boundary",
+        "safetyBoundary": "NASA black-hole education pages are context sources, not engineering or survival protocols."
+      },
+      "modelPosition": {
+        "stateVariable": "No subject state variable.",
+        "stateTransition": "No actionable waiting transition.",
+        "hazard": "Supports hazard vocabulary at a public-explainer level only.",
+        "observationProcess": "Helps define public terminology and non-claim boundaries.",
+        "actionPolicy": "No action policy.",
+        "timeAccounting": "Supports black-hole time-dilation context only at explanation level.",
+        "optionValue": "No direct option-value support."
+      },
+      "evidenceRoles": [
+        "official explainer",
+        "public terminology boundary",
+        "hazard context"
+      ],
+      "keyExtracts": [
+        "Black holes provide a useful public context for strong gravity but not an engineering plan.",
+        "Event horizons and environmental hazards must block naive waiting-room interpretations.",
+        "Human Infra should keep 'black-hole waiting room' as metaphor unless formal scenario cards exist."
+      ],
+      "supportedUse": "Use to constrain public language around black-hole waiting-room metaphors.",
+      "falsifierUse": "If black-hole context is used to imply reachable, safe or reversible waiting, downgrade to metaphor-only.",
+      "transferBoundary": "Does not prove controlled redshift zones, safe human proximity, communication, exit, life support or recursive upgrading.",
+      "risksAndMisreadings": [
+        "Popular science language can be converted into engineering claims.",
+        "Time dilation can be isolated from environment and exit risks.",
+        "Black-hole metaphors can imply guaranteed future access."
+      ],
+      "repositoryAction": "Use as a public-boundary Source Card for future-waiting pages.",
+      "nextExtractionStep": "Pair with metric-card and abort-gate sources before any future-waiting scenario is promoted."
+    },
+    {
+      "sourceId": "SA-NIST-AI-RMF-2023",
+      "cardStatus": "field-extracted-v0.1",
+      "sourceIdentity": {
+        "title": "Artificial Intelligence Risk Management Framework (AI RMF 1.0)",
+        "year": "2023",
+        "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+        "sourceType": "risk-management-framework"
+      },
+      "oneSentenceUse": "Use this source to anchor AI governance, risk framing and trustworthiness boundaries for AI-enhanced Human Infra routes.",
+      "humanInfraMapping": {
+        "domainIds": [
+          "longevity-evidence",
+          "neuro-continuity",
+          "future-waiting",
+          "brain-preservation-connectomics-emulation"
+        ],
+        "paperClaimIds": [
+          "HIPAPER-CL4",
+          "HIPAPER-CL9",
+          "HIPAPER-CL10"
+        ],
+        "subjectContinuityVariables": [
+          "ai-risk",
+          "trustworthiness",
+          "human-oversight",
+          "tool-dependence",
+          "failure-monitoring"
+        ],
+        "valueLens": "AI governance for subject support",
+        "safetyBoundary": "Risk-management framework support does not prove a specific AI tool is safe or beneficial."
+      },
+      "modelPosition": {
+        "stateVariable": "AI tool and governance state variables.",
+        "stateTransition": "Can structure governance transitions, not biological transitions.",
+        "hazard": "Supports AI risk-channel language, not calibrated mortality hazard.",
+        "observationProcess": "Requires monitoring, measurement and documentation of AI behavior.",
+        "actionPolicy": "Frames governance policies, not individual advice.",
+        "timeAccounting": "Can affect effective time through risk, friction and automation only with evidence.",
+        "optionValue": "AI systems can expand or reduce option value depending on governance and failure modes."
+      },
+      "evidenceRoles": [
+        "risk framework",
+        "AI governance boundary",
+        "tool-safety guardrail"
+      ],
+      "keyExtracts": [
+        "AI support must be governed by risk, measurement and accountability rather than capability slogans.",
+        "Trustworthiness and monitoring are prerequisites before AI is treated as Human Infra support.",
+        "AI can create negative channels: dependency, opacity, error propagation and governance failure."
+      ],
+      "supportedUse": "Use to gate AI-enhancement, AI prediction and AI-assisted research claims.",
+      "falsifierUse": "If an AI route lacks risk management, monitoring, human accountability or failure response, downgrade or block it.",
+      "transferBoundary": "Does not certify any AI system, model, agent, dashboard or clinical decision support tool.",
+      "risksAndMisreadings": [
+        "Framework citation can be mistaken for compliance.",
+        "AI capability can be mistaken for trustworthy subject support.",
+        "Governance overhead can be ignored in effective-time claims."
+      ],
+      "repositoryAction": "Use as the AI governance Source Card for tool and model boundary gates.",
+      "nextExtractionStep": "Create an AI route risk table covering measurement, monitoring, accountability, failure modes and human handoff."
+    },
+    {
+      "sourceId": "SA-WHO-CONSTITUTION",
+      "cardStatus": "field-extracted-v0.1",
+      "sourceIdentity": {
+        "title": "Constitution of the World Health Organization",
+        "year": "official-reference",
+        "url": "https://www.who.int/about/governance/constitution",
+        "sourceType": "normative-health-reference"
+      },
+      "oneSentenceUse": "Use this source to anchor health as broader than absence of disease and to keep Human Infra value language tied to function and social conditions.",
+      "humanInfraMapping": {
+        "domainIds": [
+          "longevity-evidence",
+          "nutrition-metabolic-health",
+          "cardiovascular-resilience",
+          "neuro-continuity"
+        ],
+        "paperClaimIds": [
+          "HIPAPER-CL1",
+          "HIPAPER-CL3"
+        ],
+        "subjectContinuityVariables": [
+          "health-state",
+          "functioning",
+          "mental-wellbeing",
+          "social-support",
+          "absence-of-disease-boundary"
+        ],
+        "valueLens": "health as multidimensional subject support",
+        "safetyBoundary": "Normative health definition does not prove any intervention works."
+      },
+      "modelPosition": {
+        "stateVariable": "Physical, mental and social health-state dimensions.",
+        "stateTransition": "No empirical transition imported.",
+        "hazard": "No hazard estimate imported.",
+        "observationProcess": "Supports using function and wellbeing observations beyond disease status.",
+        "actionPolicy": "No action policy.",
+        "timeAccounting": "Supports healthspan and effective-time definitions beyond mere survival.",
+        "optionValue": "Supports why social and functional conditions affect future choice."
+      },
+      "evidenceRoles": [
+        "normative health reference",
+        "value boundary",
+        "multidimensional outcome anchor"
+      ],
+      "keyExtracts": [
+        "Human Infra should not reduce health to absence of disease.",
+        "Physical, mental and social dimensions are relevant to subject continuity.",
+        "A longer life with collapsed function or social support can fail the effective-life boundary."
+      ],
+      "supportedUse": "Use to justify multidimensional health, function and social support outputs.",
+      "falsifierUse": "If a route improves survival while destroying mental, social or functional support, downgrade it under effective-life boundaries.",
+      "transferBoundary": "Does not validate any medical, policy, AI or social intervention.",
+      "risksAndMisreadings": [
+        "Broad health language can become too vague without variables.",
+        "Normative definitions can be overread as empirical evidence.",
+        "Wellbeing can be claimed without measurement."
+      ],
+      "repositoryAction": "Use as a normative Source Card for healthspan, function and social support variables.",
+      "nextExtractionStep": "Create a health-state variable crosswalk connecting physical, mental, social, function and effective-time fields."
     }
   ],
   "coverageSummary": {
@@ -639,10 +1308,21 @@
       "SA-COX-1972",
       "SA-TARGET-TRIAL-2022",
       "SA-TRIPOD-AI-2024",
-      "SA-CAPABILITY-APPROACH"
+      "SA-CAPABILITY-APPROACH",
+      "SA-HALLMARKS-AGING-2013",
+      "SA-NCI-SCREENING-BIAS",
+      "SA-IMMUNOSENESCENCE-2024",
+      "SA-PERSONAL-INFORMATICS-2010",
+      "SA-DYNAMIC-DIGITAL-TWIN-2022",
+      "SA-EXTENDED-MIND-1998",
+      "SA-BRAIN-PRESERVATION-2024",
+      "SA-GPS-RELATIVITY-2003",
+      "SA-NASA-BLACK-HOLES",
+      "SA-NIST-AI-RMF-2023",
+      "SA-WHO-CONSTITUTION"
     ],
-    "remainingSourceAnchorCount": 11,
-    "remainingWork": "Extract the remaining 11 anchors, then split domain-level cards for C1/C2 priority claims."
+    "remainingSourceAnchorCount": 0,
+    "remainingWork": "Split C1/C2 domain-level cards into exact claim, variable, endpoint, population, uncertainty and transfer-boundary rows."
   },
   "indexRequirements": [
     "README.md",
@@ -654,7 +1334,7 @@
   "nonClaims": [
     "This register does not prove any source is sufficient for an intervention claim.",
     "This register does not permit individual death-date prediction, individual clinical advice, individual lifespan ranking or unvalidated model calibration.",
-    "This register does not complete all field-level Source Cards; it is the first extraction slice.",
+    "This register completes field-level extraction for current source anchors only; it does not complete domain-level claim extraction.",
     "This register is a local traceability gate for research framework maturity, not a scientific literature review substitute."
   ]
 }

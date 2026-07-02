@@ -16,7 +16,7 @@
 - `2026-06-29-effective-immortality-flywheel-candidate-source-extraction.md`：有效永生飞轮 Candidate Source Extraction v0.1，从候选来源摘要、官方页、PDF 或元数据中抽取支持范围、不可支持范围和晋升决策。
 - `2026-06-29-effective-immortality-flywheel-source-promotion-synthesis.md`：有效永生飞轮候选来源晋升综合 v0.1，把候选来源转成方法卡片、来源卡片、风险偏倚门禁或暂停队列。
 - `2026-06-29-effective-immortality-flywheel-pre-submission-review.md`：有效永生飞轮本地预提交审查记录，检查版本漂移、必需边界、机械文风、核心 audit 产物和正式提交前剩余队列。
-- `2026-07-02-falsifier-source-card-field-extraction.md`：反证 Source Card 字段级抽取 v0.1，把第一批 10 个高杠杆来源锚点映射到域、论文 claim、模型位置、反证用途和迁移边界；机器账本见 `human-infra-falsifier-source-card-extraction.json`。
+- `2026-07-02-falsifier-source-card-field-extraction.md`：反证 Source Card 字段级抽取 v1.0，把当前 21 个来源锚点映射到域、论文 claim、模型位置、反证用途和迁移边界；机器账本见 `human-infra-falsifier-source-card-extraction.json`。
 - `2026-06-29-metric-redshift-recursive-waiting-revision-notes.md`：度规红移递归等待假设论文页 v0.2 优化记录，沉淀 auto-research 工具使用、结构改动、Problem Anchor、来源卡片草案和下一步任务。
 - `2026-06-29-proper-time-differential-waiting-hypothesis-revision-notes.md`：度规红移固有时差分路径专项论文页 v0.9 优化记录，沉淀 arXiv 论文页工具 seed、结构化 JSON 数据源、Source Cards、Claim-Evidence Matrix、Scenario Cards、Scenario Evaluation Registry、Qualitative NCG Scale、Scenario Variable Matrix、Toy NCG Evaluation Protocol、NCG Formula Decomposition、数据驱动 SVG 场景比较图、Citation Context Review Packet、Citation Context Local Review、Reference Verification、Pre-Submission Review、图表计划和 coverage audit。
 - `2026-06-29-controllable-metric-waiting-room-hypothesis-revision-notes.md`：可控度规等待室假设论文页收口记录，沉淀研究对象、理论命名、toy NCG 推导、场景比较、引用语境、预提交审查、coverage audit 和剩余外部审查边界。

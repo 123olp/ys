@@ -1,6 +1,6 @@
 # Falsifier Source Card Field Extraction v0.1
 
-This pack promotes the first 10 high-leverage anchors from
+This pack promotes all current anchors from
 [`human-infra-falsifier-source-card-backfill.json`](../reference/human-infra-falsifier-source-card-backfill.json)
 into field-level Source Cards.
 
@@ -10,8 +10,8 @@ It follows the [`Source Card System`](../reference/source-card-system.md): each 
 
 | Item | Status |
 | --- | --- |
-| Selected source anchors | 10 |
-| Backfill anchors remaining | 11 |
+| Selected source anchors | 21 |
+| Backfill anchors remaining | 0 |
 | Main purpose | Move from source links to field-level source use |
 | Allowed use | Research traceability, model-position mapping, falsifier and downgrade checks |
 | Prohibited use | Individual prediction, clinical advice, intervention ranking, proof of effective immortality |
@@ -30,6 +30,17 @@ It follows the [`Source Card System`](../reference/source-card-system.md): each 
 | `SA-TARGET-TRIAL-2022` | Intervention-versus-association boundary | Causal estimand and action-policy gate | Target-trial language does not remove data limitations |
 | `SA-TRIPOD-AI-2024` | Prediction model reporting and validation boundary | Model-card, validation and calibration reporting | Reporting guidance does not validate the current toy model |
 | `SA-CAPABILITY-APPROACH` | Normative support for capability, function and future choice | Value objective and option-value framing | Normative support is not empirical effectiveness |
+| `SA-HALLMARKS-AGING-2013` | Baseline aging-mechanism taxonomy | Biological-maintenance state families | Historical taxonomy is not intervention proof |
+| `SA-NCI-SCREENING-BIAS` | Screening endpoint and bias boundary | Detection, mortality and harm interpretation | Earlier detection is not automatically life extension |
+| `SA-IMMUNOSENESCENCE-2024` | Immune aging and inflammaging scaffold | Immune-maintenance state and risk channels | Immune vocabulary is not intervention efficacy |
+| `SA-PERSONAL-INFORMATICS-2010` | Self-tracking workflow | Observation, reflection and action stages | Data collection alone is not continuity gain |
+| `SA-DYNAMIC-DIGITAL-TWIN-2022` | Life-course digital twin architecture | Subject-state modeling and simulation readiness | Architecture is not validated deployment |
+| `SA-EXTENDED-MIND-1998` | Tool and memory extension genealogy | Cognitive support and agency boundary | Conceptual extension is not empirical tool benefit |
+| `SA-BRAIN-PRESERVATION-2024` | Structural brain preservation hypothesis | Preservation fidelity and identity boundary | Preservation is not revival or continuity proof |
+| `SA-GPS-RELATIVITY-2003` | Relativistic clock accounting | Proper-time and reference-observer discipline | Weak-field GPS evidence is not strong-redshift waiting feasibility |
+| `SA-NASA-BLACK-HOLES` | Public black-hole context and hazard boundary | Metaphor control and hazard vocabulary | Explainer context is not a waiting-room protocol |
+| `SA-NIST-AI-RMF-2023` | AI risk-management boundary | Trustworthiness, monitoring and failure modes | Framework citation does not certify a tool |
+| `SA-WHO-CONSTITUTION` | Multidimensional health value anchor | Physical, mental and social health-state dimensions | Normative health definition is not intervention evidence |
 
 ## Cards
 
@@ -123,8 +134,107 @@ It follows the [`Source Card System`](../reference/source-card-system.md): each 
 - Falsifier use: if a route extends time while destroying agency, cognition, function or choice, it fails the capability boundary.
 - Boundary: does not prove empirical effectiveness of any biological, AI, social or physical route.
 
+### `SA-HALLMARKS-AGING-2013`
+
+- Source: *The Hallmarks of Aging*, 2013, `https://pmc.ncbi.nlm.nih.gov/articles/PMC3836174/`
+- Use: baseline aging-hallmark taxonomy for original biological-maintenance domains.
+- Domains: `genomic-stability-dna-repair`, `biological-age-clocks-biomarker-validation`, `proteostasis-autophagy`, `mitochondrial-bioenergetics`, `cellular-senescence-clearance`, `stem-cell-reserve-renewal`.
+- Model position: biological-maintenance state families and conceptual deterioration mechanisms.
+- Falsifier use: if hallmark status is cited as proof of lifespan extension, downgrade to mechanism-level support.
+- Boundary: does not prove that targeting a hallmark improves human survival, function or effective time.
+
+### `SA-NCI-SCREENING-BIAS`
+
+- Source: *What Cancer Screening Statistics Really Tell Us*, official NCI explainer, `https://www.cancer.gov/about-cancer/screening/research/what-screening-statistics-mean`
+- Use: endpoint and bias boundary for early-detection claims.
+- Domains: `cancer-screening-early-detection-continuity`, `longevity-evidence`, `biological-age-clocks-biomarker-validation`.
+- Model position: screening observation, lead-time bias, overdiagnosis, mortality endpoint and harm-benefit fields.
+- Falsifier use: if earlier detection or longer post-diagnosis survival is treated as mortality benefit without bias review, downgrade the claim.
+- Boundary: does not endorse or reject individual screening.
+
+### `SA-IMMUNOSENESCENCE-2024`
+
+- Source: *Immunosenescence: Aging and Immune System Decline*, 2024, `https://pubmed.ncbi.nlm.nih.gov/39771976/`
+- Use: immune aging, inflammaging and immune-function tradeoff scaffold.
+- Domains: `immune-maintenance`, `longevity-evidence`, `cancer-screening-early-detection-continuity`, `cellular-senescence-clearance`.
+- Model position: immune reserve, inflammation, infection risk, vaccine response and immune surveillance.
+- Falsifier use: if an immune route lacks infection, inflammation, cancer-surveillance and adverse-activation boundaries, mark it incomplete.
+- Boundary: does not prove lifespan benefit, individual immune status or intervention safety.
+
+### `SA-PERSONAL-INFORMATICS-2010`
+
+- Source: *A Stage-Based Model of Personal Informatics Systems*, 2010, `https://dl.acm.org/doi/10.1145/1753326.1753409`
+- Use: self-tracking workflow from preparation and collection through reflection and action.
+- Domains: `longevity-evidence`, `neuro-continuity`, `nutrition-metabolic-health`, `cardiovascular-resilience`.
+- Model position: observation process, feedback delay, reflection quality and action-loop completion.
+- Falsifier use: if a data tool stops at collection and cannot support reflection or action, downgrade it to observation-only.
+- Boundary: does not prove a tool improves health, cognition, effective time or survival.
+
+### `SA-DYNAMIC-DIGITAL-TWIN-2022`
+
+- Source: *Dynamic Digital Twin: Diagnosis, Treatment, Prediction, and Prevention of Disease During the Life Course*, 2022, `https://www.jmir.org/2022/9/e35675`
+- Use: life-course subject-state modeling architecture.
+- Domains: `longevity-evidence`, `biological-age-clocks-biomarker-validation`, `neuro-continuity`, `cardiovascular-resilience`.
+- Model position: multimodal state model, simulation scope, prediction horizon and implementation barriers.
+- Falsifier use: if a page says digital twin but lacks data, update loop, validation and deployment boundary, downgrade to architecture-only.
+- Boundary: does not prove an operational human digital twin or calibrated life-path model exists.
+
+### `SA-EXTENDED-MIND-1998`
+
+- Source: *The Extended Mind*, 1998, `https://onlinelibrary.wiley.com/doi/abs/10.1111/1467-8284.00096`
+- Use: conceptual support for external tools, memory systems and environments as possible cognitive supports.
+- Domains: `memory-editing`, `neuro-continuity`, `brain-preservation-connectomics-emulation`, `disembodied-cns`.
+- Model position: cognitive support, tool integration, external memory and agency boundary.
+- Falsifier use: if a tool is unreliable, unavailable, unauditable or agency-eroding, it cannot count as stable cognitive extension.
+- Boundary: does not prove any specific AI, memory or automation tool improves long-term subject continuity.
+
+### `SA-BRAIN-PRESERVATION-2024`
+
+- Source: *Structural brain preservation: a potential bridge to future medical technologies*, 2024, `https://pmc.ncbi.nlm.nih.gov/articles/PMC11416988/`
+- Use: structural-preservation bridge hypothesis for neuro-continuity routes.
+- Domains: `brain-preservation-connectomics-emulation`, `biostasis-cryopreservation`, `neuro-continuity`, `future-waiting`.
+- Model position: structural fidelity, memory trace preservation, repair window and identity-continuity boundary.
+- Falsifier use: if preserved structure cannot support memory, agency or functional reconstruction claims, downgrade to anatomical archive.
+- Boundary: does not prove uploading, revival, identity continuity, service quality or personal actionability.
+
+### `SA-GPS-RELATIVITY-2003`
+
+- Source: *Relativity in the Global Positioning System*, 2003, `https://link.springer.com/article/10.12942/lrr-2003-1`
+- Use: relativistic clock accounting and reference-observer discipline.
+- Domains: `future-waiting`, `longevity-evidence`.
+- Model position: proper-time differential, reference observer, clock-rate correction and weak-field boundary.
+- Falsifier use: if a waiting scenario lacks metric, worldline or observer definition, classify it cannot-evaluate.
+- Boundary: does not prove strong-gravity waiting, artificial black holes, safe orbiting, exit or life support.
+
+### `SA-NASA-BLACK-HOLES`
+
+- Source: *Black Holes - NASA Science*, official explainer, `https://science.nasa.gov/universe/black-holes/`
+- Use: public black-hole context and hazard boundary.
+- Domains: `future-waiting`, `biostasis-cryopreservation`.
+- Model position: strong-gravity context, event-horizon boundary, hazard vocabulary and metaphor control.
+- Falsifier use: if black-hole context is used to imply reachable, safe or reversible waiting, downgrade to metaphor-only.
+- Boundary: does not prove controlled redshift zones, safe human proximity, communication, exit, life support or recursive upgrading.
+
+### `SA-NIST-AI-RMF-2023`
+
+- Source: *Artificial Intelligence Risk Management Framework (AI RMF 1.0)*, 2023, `https://www.nist.gov/itl/ai-risk-management-framework`
+- Use: AI governance, risk framing and trustworthiness boundary.
+- Domains: `longevity-evidence`, `neuro-continuity`, `future-waiting`, `brain-preservation-connectomics-emulation`.
+- Model position: AI tool state, risk management, monitoring, failure modes and human accountability.
+- Falsifier use: if an AI route lacks risk management, monitoring, accountability or failure response, downgrade or block it.
+- Boundary: does not certify any AI system, model, agent, dashboard or clinical decision support tool.
+
+### `SA-WHO-CONSTITUTION`
+
+- Source: *Constitution of the World Health Organization*, official reference, `https://www.who.int/about/governance/constitution`
+- Use: health as multidimensional subject support rather than absence of disease alone.
+- Domains: `longevity-evidence`, `nutrition-metabolic-health`, `cardiovascular-resilience`, `neuro-continuity`.
+- Model position: physical, mental and social health-state dimensions.
+- Falsifier use: if a route improves survival while destroying mental, social or functional support, downgrade under effective-life boundaries.
+- Boundary: does not validate any medical, policy, AI or social intervention.
+
 ## Next Work
 
-1. Extract the remaining 11 source anchors from the backfill register.
-2. Split C1/C2 domain-level cards into exact claim, variable, endpoint, population and uncertainty rows.
-3. Build reusable target-trial, prediction-model and biomarker endpoint templates for future route cards.
+1. Split C1/C2 domain-level cards into exact claim, variable, endpoint, population and uncertainty rows.
+2. Build reusable target-trial, prediction-model and biomarker endpoint templates for future route cards.
+3. Promote field-level source cards into domain-level Claim-Evidence Matrices where claims are strong enough to enter papers or Web pages.
