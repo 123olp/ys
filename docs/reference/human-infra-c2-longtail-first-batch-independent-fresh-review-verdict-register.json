@@ -13,19 +13,20 @@
   "scope": {
     "reviewedBatchIds": [
       "C2LTB1-FRB-01-acute-and-chronic-transition",
-      "C2LTB1-FRB-02-metabolic-fitness-neuro-motor"
+      "C2LTB1-FRB-02-metabolic-fitness-neuro-motor",
+      "C2LTB1-FRB-03-oncology-infectious-immunization"
     ],
-    "reviewedBatchCount": 2,
+    "reviewedBatchCount": 3,
     "totalLocalReviewedExtractionTaskCount": 48,
-    "reviewedExtractionTaskCount": 24,
-    "remainingExtractionTaskCount": 24,
-    "reviewedDomainCount": 12,
+    "reviewedExtractionTaskCount": 36,
+    "remainingExtractionTaskCount": 12,
+    "reviewedDomainCount": 18,
     "reviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
-    "artifactPromotionDecision": "partial-first-two-batches-reviewed-bounded-artifact-fill-only-for-eligible-rows",
+    "artifactPromotionDecision": "partial-first-three-batches-reviewed-bounded-artifact-fill-only-for-eligible-rows",
     "nonClaims": [
       "This verdict register is not a completed Source Card set or reviewed artifact set.",
       "This verdict register does not authorize calibrated prediction, individual advice, individual death-date output, intervention ranking, domain-claim upgrade or clinical-validity claims.",
-      "Only the first two C2-LT-B1 fresh-review batches have received verdicts; remaining prepared rows still require fresh review.",
+      "Only the first three C2-LT-B1 fresh-review batches have received verdicts; remaining prepared rows still require fresh review.",
       "Rows marked downgrade-required or cannot-evaluate-insufficient-context cannot fill reviewed artifacts until their downgrade or source-resolution condition is closed."
     ]
   },
@@ -787,6 +788,379 @@
       "reviewerVerdict": "support-with-boundary",
       "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
       "reviewerNote": "AAN ALS practice parameter supports guideline-route vocabulary only and requires currentness handling before stronger claims."
+    },
+    {
+      "taskId": "C2LTB1-EXT-025",
+      "domainId": "cancer-control",
+      "reviewedSourceTitle": "WHO Cancer fact sheet",
+      "reviewedSourceUrl": "https://www.who.int/news-room/fact-sheets/detail/cancer",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "exactClaimUseVerdict": "supports exact claim use as vocabulary or route context only; no calibrated effect size or individual recommendation is admitted",
+      "domainTransferVerdict": "bounded transfer to endpoint, variable and care-pathway vocabulary; no intervention benefit, clinical decision or personal prognosis is admitted",
+      "modelPositionVerdict": "model-language-only; calibrated prediction, intervention ranking and individual prognosis remain blocked",
+      "uncertaintyBoundaryVerdict": "must carry source currentness, population/setting, evidence-grade, access, endpoint and implementation-transfer limits before artifact fill",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this reviewed task",
+      "freshReviewEvidence": [
+        {
+          "url": "https://www.who.int/news-room/fact-sheets/detail/cancer",
+          "evidenceType": "official-fact-sheet",
+          "finding": "WHO cancer fact sheet supports global cancer burden, risk-factor, prevention, diagnosis, treatment and palliative-care context; use only as global cancer-control vocabulary and burden context."
+        }
+      ],
+      "registeredSourceRole": "global-cancer-burden-prevention-screening-and-treatment-context-anchor",
+      "registeredExactClaimUse": "Supports cancer control as a global burden and continuity domain spanning prevention, early detection, diagnosis, treatment, palliative care and survivorship burden.",
+      "registeredTransferBoundary": "Transfer only to global cancer-control framing, endpoint vocabulary and burden context until tumor-specific and setting-specific evidence is extracted.",
+      "sourceIdentityVerdict": "verified-primary-or-authoritative-source",
+      "sourceContextVerdict": "supports-registered-source-role-with-boundary",
+      "downgradeVerdict": "WHO source supports global cancer-control burden and route vocabulary only.",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "reviewerNote": "WHO source supports global cancer-control burden and route vocabulary only."
+    },
+    {
+      "taskId": "C2LTB1-EXT-026",
+      "domainId": "cancer-control",
+      "reviewedSourceTitle": "NCI Cancer Control and Population Sciences",
+      "reviewedSourceUrl": "https://cancercontrol.cancer.gov/",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "exactClaimUseVerdict": "supports exact claim use as vocabulary or route context only; no calibrated effect size or individual recommendation is admitted",
+      "domainTransferVerdict": "bounded transfer to endpoint, variable and care-pathway vocabulary; no intervention benefit, clinical decision or personal prognosis is admitted",
+      "modelPositionVerdict": "model-language-only; calibrated prediction, intervention ranking and individual prognosis remain blocked",
+      "uncertaintyBoundaryVerdict": "must carry source currentness, population/setting, evidence-grade, access, endpoint and implementation-transfer limits before artifact fill",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this reviewed task",
+      "freshReviewEvidence": [
+        {
+          "url": "https://cancercontrol.cancer.gov/",
+          "evidenceType": "official-research-program-page",
+          "finding": "NCI DCCPS page supports cancer control and population science as surveillance, epidemiology, health services, behavioral science, survivorship and implementation-research domains; use only for taxonomy and research-routing context."
+        }
+      ],
+      "registeredSourceRole": "cancer-control-research-program-and-population-science-context-anchor",
+      "registeredExactClaimUse": "Supports cancer control as a research-program domain that connects prevention, behavioral science, surveillance, implementation, survivorship and population health.",
+      "registeredTransferBoundary": "Transfer only to taxonomy, research-area routing and variable family selection. Use study-specific sources for effects, endpoints or calibration.",
+      "sourceIdentityVerdict": "verified-primary-or-authoritative-source",
+      "sourceContextVerdict": "supports-registered-source-role-with-boundary",
+      "downgradeVerdict": "NCI DCCPS source supports research taxonomy and variable-family routing, not effect estimates.",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "reviewerNote": "NCI DCCPS source supports research taxonomy and variable-family routing, not effect estimates."
+    },
+    {
+      "taskId": "C2LTB1-EXT-027",
+      "domainId": "colorectal-cancer-screening-treatment-continuity",
+      "reviewedSourceTitle": "USPSTF Colorectal Cancer Screening Recommendation",
+      "reviewedSourceUrl": "https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/colorectal-cancer-screening",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "exactClaimUseVerdict": "supports exact claim use as vocabulary or route context only; no calibrated effect size or individual recommendation is admitted",
+      "domainTransferVerdict": "bounded transfer to endpoint, variable and care-pathway vocabulary; no intervention benefit, clinical decision or personal prognosis is admitted",
+      "modelPositionVerdict": "model-language-only; calibrated prediction, intervention ranking and individual prognosis remain blocked",
+      "uncertaintyBoundaryVerdict": "must carry source currentness, population/setting, evidence-grade, access, endpoint and implementation-transfer limits before artifact fill",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this reviewed task",
+      "freshReviewEvidence": [
+        {
+          "url": "https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/colorectal-cancer-screening",
+          "evidenceType": "clinical-preventive-recommendation",
+          "finding": "USPSTF colorectal cancer screening recommendation supports age-stratified screening-route, modality and grade vocabulary; no individualized screening decision or calibrated effect size is admitted."
+        }
+      ],
+      "registeredSourceRole": "colorectal-cancer-screening-age-test-and-followup-guideline-anchor",
+      "registeredExactClaimUse": "Supports colorectal cancer screening as a prevention and early-detection route whose model variables must separate eligible population, screening modality, abnormal-test follow-up and outcome endpoints.",
+      "registeredTransferBoundary": "Transfer only to screening-route endpoint vocabulary until recommendation grade, eligible age range, modality and follow-up requirements are fully extracted.",
+      "sourceIdentityVerdict": "verified-primary-or-authoritative-source",
+      "sourceContextVerdict": "supports-registered-source-role-with-boundary",
+      "downgradeVerdict": "USPSTF source supports guideline-route and endpoint vocabulary with age/population boundaries only.",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "reviewerNote": "USPSTF source supports guideline-route and endpoint vocabulary with age/population boundaries only."
+    },
+    {
+      "taskId": "C2LTB1-EXT-028",
+      "domainId": "colorectal-cancer-screening-treatment-continuity",
+      "reviewedSourceTitle": "CDC Colorectal Cancer Screening",
+      "reviewedSourceUrl": "https://www.cdc.gov/colorectal-cancer/screening/index.html",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "exactClaimUseVerdict": "supports exact claim use as vocabulary or route context only; no calibrated effect size or individual recommendation is admitted",
+      "domainTransferVerdict": "bounded transfer to endpoint, variable and care-pathway vocabulary; no intervention benefit, clinical decision or personal prognosis is admitted",
+      "modelPositionVerdict": "model-language-only; calibrated prediction, intervention ranking and individual prognosis remain blocked",
+      "uncertaintyBoundaryVerdict": "must carry source currentness, population/setting, evidence-grade, access, endpoint and implementation-transfer limits before artifact fill",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this reviewed task",
+      "freshReviewEvidence": [
+        {
+          "url": "https://www.cdc.gov/colorectal-cancer/screening/index.html",
+          "evidenceType": "public-health-screening-page",
+          "finding": "CDC colorectal cancer screening page supports public-facing screening recommendation context, test-type awareness and follow-up access vocabulary; use is implementation-context only."
+        }
+      ],
+      "registeredSourceRole": "colorectal-cancer-public-health-screening-access-and-awareness-context-anchor",
+      "registeredExactClaimUse": "Supports colorectal cancer screening as a public-health implementation domain with attention to screening awareness, test types and follow-up access.",
+      "registeredTransferBoundary": "Transfer only to implementation and patient-facing screening-route vocabulary; use USPSTF or trial/modeling evidence for recommendation strength and effect estimates.",
+      "sourceIdentityVerdict": "verified-primary-or-authoritative-source",
+      "sourceContextVerdict": "supports-registered-source-role-with-boundary",
+      "downgradeVerdict": "CDC source is bounded to public-health implementation and patient-facing screening-route vocabulary.",
+      "reviewerVerdict": "bounded-support",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "reviewerNote": "CDC source is bounded to public-health implementation and patient-facing screening-route vocabulary."
+    },
+    {
+      "taskId": "C2LTB1-EXT-029",
+      "domainId": "breast-cancer-screening-treatment-survivorship-continuity",
+      "reviewedSourceTitle": "USPSTF Breast Cancer Screening Recommendation",
+      "reviewedSourceUrl": "https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/breast-cancer-screening",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "exactClaimUseVerdict": "supports exact claim use as vocabulary or route context only; no calibrated effect size or individual recommendation is admitted",
+      "domainTransferVerdict": "bounded transfer to endpoint, variable and care-pathway vocabulary; no intervention benefit, clinical decision or personal prognosis is admitted",
+      "modelPositionVerdict": "model-language-only; calibrated prediction, intervention ranking and individual prognosis remain blocked",
+      "uncertaintyBoundaryVerdict": "must carry source currentness, population/setting, evidence-grade, access, endpoint and implementation-transfer limits before artifact fill",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this reviewed task",
+      "freshReviewEvidence": [
+        {
+          "url": "https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/breast-cancer-screening",
+          "evidenceType": "clinical-preventive-recommendation",
+          "finding": "USPSTF breast cancer screening recommendation supports biennial mammography route vocabulary, age range, recommendation grade and benefit-harm boundary; no individual decision or effect calibration is admitted."
+        },
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38687503/",
+          "evidenceType": "bibliographic-recommendation-index",
+          "finding": "PubMed indexes the USPSTF breast cancer screening recommendation statement and supports source identity/currentness cross-checking."
+        }
+      ],
+      "registeredSourceRole": "breast-cancer-screening-age-modality-and-harm-benefit-guideline-anchor",
+      "registeredExactClaimUse": "Supports breast cancer screening as a guideline route where age, risk, imaging modality, benefit-harm balance and follow-up must be separated before model use.",
+      "registeredTransferBoundary": "Transfer only to guideline-route and endpoint vocabulary until recommendation grade, population boundaries and harm-benefit evidence are extracted.",
+      "sourceIdentityVerdict": "verified-primary-or-authoritative-source",
+      "sourceContextVerdict": "supports-registered-source-role-with-boundary",
+      "downgradeVerdict": "USPSTF source supports breast screening guideline-route vocabulary with population and harm-benefit boundaries only.",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "reviewerNote": "USPSTF source supports breast screening guideline-route vocabulary with population and harm-benefit boundaries only."
+    },
+    {
+      "taskId": "C2LTB1-EXT-030",
+      "domainId": "breast-cancer-screening-treatment-survivorship-continuity",
+      "reviewedSourceTitle": "NCI Breast Cancer Treatment",
+      "reviewedSourceUrl": "https://www.cancer.gov/types/breast/patient/breast-treatment-pdq",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "exactClaimUseVerdict": "supports exact claim use as vocabulary or route context only; no calibrated effect size or individual recommendation is admitted",
+      "domainTransferVerdict": "bounded transfer to endpoint, variable and care-pathway vocabulary; no intervention benefit, clinical decision or personal prognosis is admitted",
+      "modelPositionVerdict": "model-language-only; calibrated prediction, intervention ranking and individual prognosis remain blocked",
+      "uncertaintyBoundaryVerdict": "must carry source currentness, population/setting, evidence-grade, access, endpoint and implementation-transfer limits before artifact fill",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this reviewed task",
+      "freshReviewEvidence": [
+        {
+          "url": "https://www.cancer.gov/types/breast/patient/breast-treatment-pdq",
+          "evidenceType": "official-cancer-treatment-summary",
+          "finding": "NCI Breast Cancer Treatment PDQ patient source supports breast cancer treatment-route, stage/subtype and survivorship vocabulary; it is not a formal guideline or individualized treatment recommendation."
+        },
+        {
+          "url": "https://www.cancer.gov/types/breast/treatment",
+          "evidenceType": "official-treatment-overview",
+          "finding": "NCI breast treatment overview supports local/systemic treatment category vocabulary and treatment-by-stage routing context."
+        }
+      ],
+      "registeredSourceRole": "breast-cancer-treatment-stage-subtype-and-survivorship-context-anchor",
+      "registeredExactClaimUse": "Supports breast cancer treatment as a stage, subtype and modality-dependent continuity domain where treatment route, recurrence risk, late effects and function need separate extraction.",
+      "registeredTransferBoundary": "Transfer only to treatment-route vocabulary, endpoint families and survivorship burden context. Use trial and guideline evidence for effect sizes or recommendations.",
+      "sourceIdentityVerdict": "verified-primary-or-authoritative-source",
+      "sourceContextVerdict": "supports-registered-source-role-with-boundary",
+      "downgradeVerdict": "NCI source is bounded to treatment-route and survivorship vocabulary, not guideline-grade treatment selection.",
+      "reviewerVerdict": "bounded-support",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "reviewerNote": "NCI source is bounded to treatment-route and survivorship vocabulary, not guideline-grade treatment selection."
+    },
+    {
+      "taskId": "C2LTB1-EXT-031",
+      "domainId": "cervical-cancer-hpv-prevention-screening-continuity",
+      "reviewedSourceTitle": "USPSTF Cervical Cancer Screening Recommendation",
+      "reviewedSourceUrl": "https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/cervical-cancer-screening",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "exactClaimUseVerdict": "supports exact claim use as vocabulary or route context only; no calibrated effect size or individual recommendation is admitted",
+      "domainTransferVerdict": "bounded transfer to endpoint, variable and care-pathway vocabulary; no intervention benefit, clinical decision or personal prognosis is admitted",
+      "modelPositionVerdict": "model-language-only; calibrated prediction, intervention ranking and individual prognosis remain blocked",
+      "uncertaintyBoundaryVerdict": "must carry source currentness, population/setting, evidence-grade, access, endpoint and implementation-transfer limits before artifact fill",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this reviewed task",
+      "freshReviewEvidence": [
+        {
+          "url": "https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/cervical-cancer-screening",
+          "evidenceType": "clinical-preventive-recommendation",
+          "finding": "USPSTF cervical cancer screening recommendation supports age group, test strategy, interval and exclusion vocabulary; currentness/update status must be carried before stronger claims."
+        },
+        {
+          "url": "https://www.uspreventiveservicestaskforce.org/uspstf/draft-recommendation/cervical-cancer-screening-adults-adolescents",
+          "evidenceType": "draft-update-currentness-signal",
+          "finding": "USPSTF draft update page indicates the cervical screening topic has an update process; use reinforces the need to carry currentness boundary."
+        }
+      ],
+      "registeredSourceRole": "cervical-cancer-screening-age-test-and-followup-guideline-anchor",
+      "registeredExactClaimUse": "Supports cervical cancer screening as a guideline route where age group, test strategy, interval, abnormal-result follow-up and exclusions define the usable variables.",
+      "registeredTransferBoundary": "Transfer only to screening test and guideline-route vocabulary until exact recommendation wording, population exclusions and evidence grade are extracted.",
+      "sourceIdentityVerdict": "verified-primary-or-authoritative-source",
+      "sourceContextVerdict": "supports-registered-source-role-with-boundary",
+      "downgradeVerdict": "USPSTF source supports cervical screening-route vocabulary with explicit currentness and population boundaries.",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "reviewerNote": "USPSTF source supports cervical screening-route vocabulary with explicit currentness and population boundaries."
+    },
+    {
+      "taskId": "C2LTB1-EXT-032",
+      "domainId": "cervical-cancer-hpv-prevention-screening-continuity",
+      "reviewedSourceTitle": "WHO Cervical Cancer fact sheet",
+      "reviewedSourceUrl": "https://www.who.int/news-room/fact-sheets/detail/cervical-cancer",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "exactClaimUseVerdict": "supports exact claim use as vocabulary or route context only; no calibrated effect size or individual recommendation is admitted",
+      "domainTransferVerdict": "bounded transfer to endpoint, variable and care-pathway vocabulary; no intervention benefit, clinical decision or personal prognosis is admitted",
+      "modelPositionVerdict": "model-language-only; calibrated prediction, intervention ranking and individual prognosis remain blocked",
+      "uncertaintyBoundaryVerdict": "must carry source currentness, population/setting, evidence-grade, access, endpoint and implementation-transfer limits before artifact fill",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this reviewed task",
+      "freshReviewEvidence": [
+        {
+          "url": "https://www.who.int/news-room/fact-sheets/detail/cervical-cancer",
+          "evidenceType": "official-fact-sheet",
+          "finding": "WHO cervical cancer fact sheet supports HPV-linked disease framing, vaccination, screening, treatment and elimination-strategy vocabulary; use only for global burden and prevention context."
+        }
+      ],
+      "registeredSourceRole": "cervical-cancer-hpv-burden-prevention-and-screening-context-anchor",
+      "registeredExactClaimUse": "Supports cervical cancer as an HPV-linked preventable cancer-control domain involving vaccination, screening, treatment of precancer and access to care.",
+      "registeredTransferBoundary": "Transfer only to global burden, HPV prevention framing and endpoint vocabulary; use guideline and trial sources for specific recommendations or effect sizes.",
+      "sourceIdentityVerdict": "verified-primary-or-authoritative-source",
+      "sourceContextVerdict": "supports-registered-source-role-with-boundary",
+      "downgradeVerdict": "WHO source supports global cervical cancer burden and HPV prevention/screening vocabulary only.",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "reviewerNote": "WHO source supports global cervical cancer burden and HPV prevention/screening vocabulary only."
+    },
+    {
+      "taskId": "C2LTB1-EXT-033",
+      "domainId": "antimicrobial-resilience",
+      "reviewedSourceTitle": "WHO Antimicrobial resistance",
+      "reviewedSourceUrl": "https://www.who.int/health-topics/antimicrobial-resistance",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "exactClaimUseVerdict": "supports exact claim use as vocabulary or route context only; no calibrated effect size or individual recommendation is admitted",
+      "domainTransferVerdict": "bounded transfer to endpoint, variable and care-pathway vocabulary; no intervention benefit, clinical decision or personal prognosis is admitted",
+      "modelPositionVerdict": "model-language-only; calibrated prediction, intervention ranking and individual prognosis remain blocked",
+      "uncertaintyBoundaryVerdict": "must carry source currentness, population/setting, evidence-grade, access, endpoint and implementation-transfer limits before artifact fill",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this reviewed task",
+      "freshReviewEvidence": [
+        {
+          "url": "https://www.who.int/health-topics/antimicrobial-resistance",
+          "evidenceType": "official-health-topic-page",
+          "finding": "WHO AMR health topic supports antimicrobial resistance as a global public-health risk and surveillance domain; use only as AMR mechanism and system-risk vocabulary."
+        },
+        {
+          "url": "https://www.who.int/news-room/fact-sheets/detail/antimicrobial-resistance",
+          "evidenceType": "official-fact-sheet-cross-check",
+          "finding": "WHO AMR fact sheet supports AMR burden, drivers, stewardship and global threat context for source-role cross-checking."
+        }
+      ],
+      "registeredSourceRole": "global-amr-risk-mechanism-and-surveillance-context-anchor",
+      "registeredExactClaimUse": "Supports antimicrobial resistance as a system-level continuity risk where pathogen resistance, antibiotic pressure, infection prevention and surveillance affect treatment reliability.",
+      "registeredTransferBoundary": "Transfer only to AMR mechanism, burden and surveillance-variable vocabulary until pathogen-specific data and setting-specific surveillance are extracted.",
+      "sourceIdentityVerdict": "verified-primary-or-authoritative-source",
+      "sourceContextVerdict": "supports-registered-source-role-with-boundary",
+      "downgradeVerdict": "WHO source supports AMR risk, mechanism and surveillance vocabulary, not pathogen-specific calibration.",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "reviewerNote": "WHO source supports AMR risk, mechanism and surveillance vocabulary, not pathogen-specific calibration."
+    },
+    {
+      "taskId": "C2LTB1-EXT-034",
+      "domainId": "antimicrobial-resilience",
+      "reviewedSourceTitle": "CDC Antimicrobial Resistance Threats Report",
+      "reviewedSourceUrl": "https://www.cdc.gov/antimicrobial-resistance/data-research/threats/index.html",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "exactClaimUseVerdict": "supports exact claim use as vocabulary or route context only; no calibrated effect size or individual recommendation is admitted",
+      "domainTransferVerdict": "bounded transfer to endpoint, variable and care-pathway vocabulary; no intervention benefit, clinical decision or personal prognosis is admitted",
+      "modelPositionVerdict": "model-language-only; calibrated prediction, intervention ranking and individual prognosis remain blocked",
+      "uncertaintyBoundaryVerdict": "must carry source currentness, population/setting, evidence-grade, access, endpoint and implementation-transfer limits before artifact fill",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this reviewed task",
+      "freshReviewEvidence": [
+        {
+          "url": "https://www.cdc.gov/antimicrobial-resistance/data-research/threats/index.html",
+          "evidenceType": "public-health-threat-report-page",
+          "finding": "CDC AR Threats Report page supports U.S. antimicrobial-resistant infection burden, deaths and organism threat-prioritization vocabulary; use is U.S.-bounded surveillance context only."
+        }
+      ],
+      "registeredSourceRole": "us-amr-threat-burden-prioritization-and-surveillance-context-anchor",
+      "registeredExactClaimUse": "Supports AMR as a US threat-ranking and burden domain where organism-specific threat categories, infections, deaths and prevention capacity require separate extraction.",
+      "registeredTransferBoundary": "Transfer only to US AMR threat taxonomy, surveillance variables and burden context; do not generalize globally or to individual treatment.",
+      "sourceIdentityVerdict": "verified-primary-or-authoritative-source",
+      "sourceContextVerdict": "supports-registered-source-role-with-boundary",
+      "downgradeVerdict": "CDC source supports U.S. AMR threat taxonomy and burden context only.",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "reviewerNote": "CDC source supports U.S. AMR threat taxonomy and burden context only."
+    },
+    {
+      "taskId": "C2LTB1-EXT-035",
+      "domainId": "immunization-public-health-surveillance",
+      "reviewedSourceTitle": "WHO Immunization Agenda 2030",
+      "reviewedSourceUrl": "https://www.who.int/teams/immunization-vaccines-and-biologicals/strategies/ia2030",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "exactClaimUseVerdict": "supports exact claim use as vocabulary or route context only; no calibrated effect size or individual recommendation is admitted",
+      "domainTransferVerdict": "bounded transfer to endpoint, variable and care-pathway vocabulary; no intervention benefit, clinical decision or personal prognosis is admitted",
+      "modelPositionVerdict": "model-language-only; calibrated prediction, intervention ranking and individual prognosis remain blocked",
+      "uncertaintyBoundaryVerdict": "must carry source currentness, population/setting, evidence-grade, access, endpoint and implementation-transfer limits before artifact fill",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this reviewed task",
+      "freshReviewEvidence": [
+        {
+          "url": "https://www.who.int/teams/immunization-vaccines-and-biologicals/strategies/ia2030",
+          "evidenceType": "global-strategy-page",
+          "finding": "WHO Immunization Agenda 2030 supports immunization coverage, equity, life-course vaccination, health security and surveillance strategy vocabulary; no vaccine-specific effect claim is admitted."
+        }
+      ],
+      "registeredSourceRole": "global-immunization-strategy-coverage-equity-and-surveillance-context-anchor",
+      "registeredExactClaimUse": "Supports immunization as a population-level continuity infrastructure involving vaccination coverage, equity, life-course vaccination and outbreak prevention.",
+      "registeredTransferBoundary": "Transfer only to global strategy, system-variable taxonomy and endpoint families; use schedule, surveillance and disease-specific sources for operational claims.",
+      "sourceIdentityVerdict": "verified-primary-or-authoritative-source",
+      "sourceContextVerdict": "supports-registered-source-role-with-boundary",
+      "downgradeVerdict": "WHO IA2030 supports global immunization system-variable taxonomy only.",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "reviewerNote": "WHO IA2030 supports global immunization system-variable taxonomy only."
+    },
+    {
+      "taskId": "C2LTB1-EXT-036",
+      "domainId": "immunization-public-health-surveillance",
+      "reviewedSourceTitle": "CDC Immunization Schedules",
+      "reviewedSourceUrl": "https://www.cdc.gov/vaccines/hcp/imz-schedules/index.html",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "exactClaimUseVerdict": "supports exact claim use as vocabulary or route context only; no calibrated effect size or individual recommendation is admitted",
+      "domainTransferVerdict": "bounded transfer to endpoint, variable and care-pathway vocabulary; no intervention benefit, clinical decision or personal prognosis is admitted",
+      "modelPositionVerdict": "model-language-only; calibrated prediction, intervention ranking and individual prognosis remain blocked",
+      "uncertaintyBoundaryVerdict": "must carry source currentness, population/setting, evidence-grade, access, endpoint and implementation-transfer limits before artifact fill",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this reviewed task",
+      "freshReviewEvidence": [
+        {
+          "url": "https://www.cdc.gov/vaccines/hcp/imz-schedules/index.html",
+          "evidenceType": "clinical-schedule-hub",
+          "finding": "CDC immunization schedules hub supports U.S. age, risk-group, timing and vaccine-specific schedule metadata; use is schedule metadata only, not effectiveness, safety or individual advice."
+        },
+        {
+          "url": "https://www.cdc.gov/vaccines/hcp/imz-schedules/child-adolescent-age.html",
+          "evidenceType": "schedule-page-cross-check",
+          "finding": "CDC child and adolescent schedule page supports age-based schedule routing and health-care-provider context."
+        }
+      ],
+      "registeredSourceRole": "us-vaccine-schedule-age-risk-and-clinical-route-anchor",
+      "registeredExactClaimUse": "Supports immunization schedule variables as age, risk-group, timing and vaccine-specific route metadata for later vaccine-preventable disease modeling.",
+      "registeredTransferBoundary": "Transfer only to schedule metadata and endpoint vocabulary until vaccine-specific effectiveness, safety and coverage evidence are extracted separately.",
+      "sourceIdentityVerdict": "verified-primary-or-authoritative-source",
+      "sourceContextVerdict": "supports-registered-source-role-with-boundary",
+      "downgradeVerdict": "CDC source supports U.S. immunization schedule metadata and route vocabulary only.",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "reviewerNote": "CDC source supports U.S. immunization schedule metadata and route vocabulary only."
     }
   ],
   "taskCoverage": [
@@ -957,10 +1331,93 @@
       "reviewerVerdict": "support-with-boundary",
       "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
       "modelAdmissionDecision": "blocked-pending-reviewed-artifacts-and-model-gates"
+    },
+    {
+      "taskId": "C2LTB1-EXT-025",
+      "domainId": "cancer-control",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-reviewed-artifacts-and-model-gates"
+    },
+    {
+      "taskId": "C2LTB1-EXT-026",
+      "domainId": "cancer-control",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-reviewed-artifacts-and-model-gates"
+    },
+    {
+      "taskId": "C2LTB1-EXT-027",
+      "domainId": "colorectal-cancer-screening-treatment-continuity",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-reviewed-artifacts-and-model-gates"
+    },
+    {
+      "taskId": "C2LTB1-EXT-028",
+      "domainId": "colorectal-cancer-screening-treatment-continuity",
+      "reviewerVerdict": "bounded-support",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-reviewed-artifacts-and-model-gates"
+    },
+    {
+      "taskId": "C2LTB1-EXT-029",
+      "domainId": "breast-cancer-screening-treatment-survivorship-continuity",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-reviewed-artifacts-and-model-gates"
+    },
+    {
+      "taskId": "C2LTB1-EXT-030",
+      "domainId": "breast-cancer-screening-treatment-survivorship-continuity",
+      "reviewerVerdict": "bounded-support",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-reviewed-artifacts-and-model-gates"
+    },
+    {
+      "taskId": "C2LTB1-EXT-031",
+      "domainId": "cervical-cancer-hpv-prevention-screening-continuity",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-reviewed-artifacts-and-model-gates"
+    },
+    {
+      "taskId": "C2LTB1-EXT-032",
+      "domainId": "cervical-cancer-hpv-prevention-screening-continuity",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-reviewed-artifacts-and-model-gates"
+    },
+    {
+      "taskId": "C2LTB1-EXT-033",
+      "domainId": "antimicrobial-resilience",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-reviewed-artifacts-and-model-gates"
+    },
+    {
+      "taskId": "C2LTB1-EXT-034",
+      "domainId": "antimicrobial-resilience",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-reviewed-artifacts-and-model-gates"
+    },
+    {
+      "taskId": "C2LTB1-EXT-035",
+      "domainId": "immunization-public-health-surveillance",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-reviewed-artifacts-and-model-gates"
+    },
+    {
+      "taskId": "C2LTB1-EXT-036",
+      "domainId": "immunization-public-health-surveillance",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-reviewed-artifacts-and-model-gates"
     }
   ],
   "remainingFreshReviewBatches": [
-    "C2LTB1-FRB-03-oncology-infectious-immunization",
     "C2LTB1-FRB-04-liver-newborn-reproductive-pain-barrier-safety"
   ],
   "indexRequirements": [
@@ -1013,6 +1470,26 @@
       "artifactPromotionDecisionCounts": {
         "eligible-for-bounded-artifact-fill": 10,
         "downgrade-before-fill": 2
+      },
+      "modelAdmissionDecision": "blocked-pending-reviewed-artifacts-and-model-gates"
+    },
+    {
+      "batchId": "C2LTB1-FRB-03-oncology-infectious-immunization",
+      "taskCount": 12,
+      "domainIds": [
+        "cancer-control",
+        "colorectal-cancer-screening-treatment-continuity",
+        "breast-cancer-screening-treatment-survivorship-continuity",
+        "cervical-cancer-hpv-prevention-screening-continuity",
+        "antimicrobial-resilience",
+        "immunization-public-health-surveillance"
+      ],
+      "reviewerVerdictCounts": {
+        "support-with-boundary": 10,
+        "bounded-support": 2
+      },
+      "artifactPromotionDecisionCounts": {
+        "eligible-for-bounded-artifact-fill": 12
       },
       "modelAdmissionDecision": "blocked-pending-reviewed-artifacts-and-model-gates"
     }
