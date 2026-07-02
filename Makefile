@@ -1,4 +1,4 @@
-.PHONY: check structure claim-matrix-audit maturity-gap-audit page-claim-audit audience-claim-map-audit paper-claim-audit domain-falsifier-audit domain-claim-matrix-audit domain-field-extraction-audit domain-source-queue-audit domain-source-extraction-audit domain-source-promotion-audit source-context-local-review-audit card-promotion-prep-audit independent-fresh-review-protocol-audit independent-fresh-review-verdict-audit reviewed-card-artifact-audit future-boundary-route-card-audit falsifier-source-audit falsifier-source-extraction-audit py-compile clean
+.PHONY: check structure claim-matrix-audit maturity-gap-audit page-claim-audit audience-claim-map-audit paper-claim-audit domain-falsifier-audit domain-claim-matrix-audit domain-field-extraction-audit c2-longtail-coverage-audit domain-source-queue-audit domain-source-extraction-audit domain-source-promotion-audit source-context-local-review-audit card-promotion-prep-audit independent-fresh-review-protocol-audit independent-fresh-review-verdict-audit reviewed-card-artifact-audit future-boundary-route-card-audit falsifier-source-audit falsifier-source-extraction-audit py-compile clean
 
 check:
 	$(MAKE) clean
@@ -11,6 +11,7 @@ check:
 	$(MAKE) domain-falsifier-audit
 	$(MAKE) domain-claim-matrix-audit
 	$(MAKE) domain-field-extraction-audit
+	$(MAKE) c2-longtail-coverage-audit
 	$(MAKE) domain-source-queue-audit
 	$(MAKE) domain-source-extraction-audit
 	$(MAKE) domain-source-promotion-audit
@@ -52,6 +53,9 @@ domain-claim-matrix-audit:
 
 domain-field-extraction-audit:
 	python3 tools/audit_human_infra_domain_source_card_field_extraction.py
+
+c2-longtail-coverage-audit:
+	python3 tools/audit_human_infra_c2_longtail_coverage_register.py
 
 domain-source-queue-audit:
 	python3 tools/audit_human_infra_domain_source_specific_extraction_queue.py
@@ -96,6 +100,7 @@ py-compile:
 		tools/audit_human_infra_domain_falsifier_coverage.py \
 		tools/audit_human_infra_domain_claim_evidence_matrix.py \
 		tools/audit_human_infra_domain_source_card_field_extraction.py \
+		tools/audit_human_infra_c2_longtail_coverage_register.py \
 		tools/audit_human_infra_domain_source_specific_extraction_queue.py \
 		tools/audit_human_infra_domain_source_specific_extraction_register.py \
 		tools/audit_human_infra_domain_source_card_promotion_queue.py \

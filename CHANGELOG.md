@@ -4,6 +4,7 @@ All notable repository structure changes are recorded here.
 
 ## 2026-07-02
 
+- Added a C2 long-tail coverage register and audit gate, tracking all 204 C2 source-maintenance domains with 20 priority reviewed-artifact covered domains and 184 long-tail uncovered domains still blocked from model admission.
 - Added a future-boundary route card register and audit gate for future waiting, biological stasis, neuro-identity continuity and AI-enabled acceleration, keeping route feasibility, calibrated prediction and individual-use claims blocked.
 - Added a reviewed card artifact register and audit gate, promoting all 81 fresh-reviewed promotion packets into 486 reviewed Source/variable/endpoint/uncertainty/transfer-boundary/downgrade artifact entities while keeping model admission and individual-use claims blocked.
 - Completed the independent fresh-review verdict register across FRB-01 through FRB-04, covering all 20 source anchors and 81/81 prepared promotion packets while keeping card filling, model admission and individual-use claims blocked.
