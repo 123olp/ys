@@ -240,12 +240,14 @@
             "docs/reference/human-infra-c2-longtail-first-batch-corrected-source-reextraction-queue.json",
             "tools/audit_human_infra_c2_longtail_first_batch_corrected_source_reextraction_queue.py",
             "docs/reference/human-infra-c2-longtail-first-batch-corrected-source-reextraction-register.json",
-            "tools/audit_human_infra_c2_longtail_first_batch_corrected_source_reextraction_register.py"
+            "tools/audit_human_infra_c2_longtail_first_batch_corrected_source_reextraction_register.py",
+            "docs/reference/human-infra-c2-longtail-first-batch-corrected-source-fresh-review-verdict-register.json",
+            "tools/audit_human_infra_c2_longtail_first_batch_corrected_source_fresh_review_verdict_register.py"
           ],
           "missingEvidence": [
-            "C2-LT-B1 now has 252 reviewed artifacts for 42 eligible source rows, source-resolution candidates and fresh-review verdicts for the 6 non-eligible rows, a 10-task corrected source re-extraction queue, and 10/10 bounded corrected source re-extraction outputs. Those outputs still require independent fresh review, route/index/fulltext split decisions and reviewed artifact creation before they can count as Source Card coverage; full domain-level Source Card coverage for the remaining 184 C2 long-tail domains and model admission artifacts remain incomplete."
+            "C2-LT-B1 now has 252 reviewed artifacts for 42 eligible source rows, source-resolution candidates and fresh-review verdicts for the 6 non-eligible rows, a 10-task corrected source re-extraction queue, 10/10 bounded corrected source re-extraction outputs, and 10/10 corrected-source fresh-review verdicts. Only 5 corrected rows are eligible for bounded reviewed artifact prep; 5 rows remain lineage/route/index/fulltext blocked. Reviewed artifacts for those 5 eligible corrected rows, full domain-level Source Card coverage for the remaining 184 C2 long-tail domains and model admission artifacts remain incomplete."
           ],
-          "nextAction": "Run independent fresh review over the 10 corrected source re-extraction outputs, split route/index/fulltext-only rows from content-bearing rows, then promote only eligible rows into governed reviewed artifacts.",
+          "nextAction": "Create bounded reviewed artifacts only for the 5 eligible corrected rows, preserve the 5 lineage/route/index/fulltext blocked rows, then expand reviewed Source/variable/endpoint/downgrade artifact coverage across the remaining C2 long-tail domains.",
           "blocks100Percent": true
         },
         {
@@ -296,12 +298,14 @@
             "docs/reference/human-infra-c2-longtail-first-batch-corrected-source-reextraction-queue.json",
             "tools/audit_human_infra_c2_longtail_first_batch_corrected_source_reextraction_queue.py",
             "docs/reference/human-infra-c2-longtail-first-batch-corrected-source-reextraction-register.json",
-            "tools/audit_human_infra_c2_longtail_first_batch_corrected_source_reextraction_register.py"
+            "tools/audit_human_infra_c2_longtail_first_batch_corrected_source_reextraction_register.py",
+            "docs/reference/human-infra-c2-longtail-first-batch-corrected-source-fresh-review-verdict-register.json",
+            "tools/audit_human_infra_c2_longtail_first_batch_corrected_source_fresh_review_verdict_register.py"
           ],
           "missingEvidence": [
-            "C2-LT-B1 now has reviewed variable and endpoint artifacts for 42 eligible source rows plus 10 bounded corrected re-extraction outputs for the previously blocked rows, but independent-reviewed corrected variable/endpoint artifacts for those outputs, remaining C2 long-tail domains, calibrated variable contracts and endpoint validation are not complete."
+            "C2-LT-B1 now has reviewed variable and endpoint artifacts for 42 eligible source rows plus 10/10 corrected-source fresh-review verdicts for the previously blocked corrected outputs. Only 5 corrected rows may enter bounded variable/endpoint artifact prep; 5 rows remain blocked, and remaining C2 long-tail domains, calibrated variable contracts and endpoint validation are not complete."
           ],
-          "nextAction": "Fresh-review the 10 corrected extraction outputs and convert only eligible rows into governed variable and endpoint artifacts; keep calibrated variable contracts blocked until artifact and model gates pass.",
+          "nextAction": "Convert only the 5 eligible corrected rows into governed variable and endpoint artifacts; keep the 5 blocked corrected rows and calibrated variable contracts blocked until artifact and model gates pass.",
           "blocks100Percent": true
         },
         {
@@ -377,12 +381,14 @@
             "docs/reference/human-infra-c2-longtail-first-batch-corrected-source-reextraction-queue.json",
             "tools/audit_human_infra_c2_longtail_first_batch_corrected_source_reextraction_queue.py",
             "docs/reference/human-infra-c2-longtail-first-batch-corrected-source-reextraction-register.json",
-            "tools/audit_human_infra_c2_longtail_first_batch_corrected_source_reextraction_register.py"
+            "tools/audit_human_infra_c2_longtail_first_batch_corrected_source_reextraction_register.py",
+            "docs/reference/human-infra-c2-longtail-first-batch-corrected-source-fresh-review-verdict-register.json",
+            "tools/audit_human_infra_c2_longtail_first_batch_corrected_source_fresh_review_verdict_register.py"
           ],
           "missingEvidence": [
-            "C2-LT-B1 now has downgrade-check artifacts for 42 eligible source rows, explicit source-resolution candidates and verdicts for 5 downgrade-before-fill rows plus 1 cannot-evaluate row, and 10 bounded corrected source re-extraction outputs. Those outputs still need independent review and promotion-time downgrade checks, and full falsifier artifacts for the remaining C2 long-tail domains are not complete."
+            "C2-LT-B1 now has downgrade-check artifacts for 42 eligible source rows, explicit source-resolution candidates and verdicts for 5 downgrade-before-fill rows plus 1 cannot-evaluate row, 10 bounded corrected source re-extraction outputs, and 10/10 corrected-source fresh-review verdicts. Only 5 corrected rows can receive promotion-time downgrade artifacts; 5 rows remain lineage/route/index/fulltext blocked, and full falsifier artifacts for the remaining C2 long-tail domains are not complete."
           ],
-          "nextAction": "Run independent fresh review and promotion-time downgrade checks for the 10 corrected extraction outputs; preserve route/index/fulltext-only blocks where corrected sources still fail, then expand downgrade/falsifier artifact coverage across remaining C2 long-tail domains.",
+          "nextAction": "Create promotion-time downgrade checks only for the 5 eligible corrected rows; preserve lineage/route/index/fulltext blocks for the 5 blocked rows, then expand downgrade/falsifier artifact coverage across remaining C2 long-tail domains.",
           "blocks100Percent": true
         }
       ]
@@ -529,7 +535,7 @@
   "nextWorkOrder": [
     {
       "priority": 1,
-      "item": "Run independent fresh review over the 10 C2-LT-B1 corrected source re-extraction outputs, split route/index/fulltext-only rows, then promote only eligible corrected rows into governed reviewed artifacts.",
+      "item": "Create bounded reviewed artifacts for the 5 C2-LT-B1 corrected source fresh-review eligible rows while preserving the 5 lineage/route/index/fulltext blocked rows, then run artifact audit before model admission remains blocked.",
       "unblocks": [
         "RESEARCH-G3-c1-c2-source-cards",
         "RESEARCH-G4-variable-mechanism-contracts",

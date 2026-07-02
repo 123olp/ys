@@ -1,0 +1,583 @@
+{
+  "schemaVersion": "human-infra.c2ltb1-corrected-source-fresh-review-verdict-register.v1",
+  "registerId": "human-infra-c2-longtail-first-batch-corrected-source-fresh-review-verdict-register-2026-07-02",
+  "status": "active-c2ltb1-corrected-source-fresh-review-verdict-register-model-blocked",
+  "purpose": "Independently fresh-review the 10 corrected source re-extraction outputs and decide which rows may enter bounded reviewed-artifact preparation while keeping model admission blocked.",
+  "sourceOfTruth": {
+    "correctedSourceReextractionRegister": "docs/reference/human-infra-c2-longtail-first-batch-corrected-source-reextraction-register.json",
+    "correctedSourceReextractionQueue": "docs/reference/human-infra-c2-longtail-first-batch-corrected-source-reextraction-queue.json",
+    "sourceResolutionFreshReviewVerdictRegister": "docs/reference/human-infra-c2-longtail-first-batch-source-resolution-fresh-review-verdict-register.json",
+    "evidencePolicy": "docs/reference/evidence-policy.md",
+    "maturityGapRegister": "docs/reference/human-infra-maturity-gap-register.json"
+  },
+  "scope": {
+    "batchId": "C2-LT-B1",
+    "reviewLevel": "c2ltb1-corrected-source-fresh-review-v0.1",
+    "correctedExtractionRowCount": 10,
+    "reviewedCorrectedExtractionRowCount": 10,
+    "eligibleForArtifactPrepRowCount": 5,
+    "blockedOrContextOnlyRowCount": 5,
+    "directReviewedArtifactRowCount": 0,
+    "modelAdmissionOpenedRowCount": 0,
+    "nonClaims": [
+      "This verdict register does not create reviewed artifacts.",
+      "This verdict register does not open model admission.",
+      "This verdict register does not authorize calibrated prediction, individual advice or clinical validity claims.",
+      "Rows marked route-only, lineage-only, index-only, publisher-restricted or fulltext-needed remain blocked until a narrower future review succeeds."
+    ]
+  },
+  "requiredReviewFields": [
+    "sourceIdentityVerdict",
+    "sourceAccessVerdict",
+    "sourceContextVerdict",
+    "currentnessVerdict",
+    "exactClaimVerdict",
+    "endpointVariableVerdict",
+    "transferBoundaryVerdict",
+    "reviewerVerdict",
+    "artifactPromotionDecision",
+    "modelAdmissionDecision",
+    "reviewEvidenceTrace"
+  ],
+  "verdictTaxonomy": [
+    "support-with-boundary",
+    "blocked-or-context-only"
+  ],
+  "artifactPromotionDecisions": [
+    "eligible-for-bounded-reviewed-artifact-prep",
+    "blocked-context-lineage-only-no-direct-artifact-fill",
+    "blocked-direct-source-access-needed",
+    "blocked-publisher-route-only",
+    "blocked-directory-route-only",
+    "blocked-fulltext-needed"
+  ],
+  "blockedUses": [
+    "calibrated-prediction",
+    "individual-advice",
+    "individual-death-date-output",
+    "intervention-ranking",
+    "clinical-validity-claim",
+    "domain-claim-upgrade"
+  ],
+  "correctedSourceFreshReviews": [
+    {
+      "reviewId": "C2LTB1-CFRV-001",
+      "batchId": "C2-LT-B1",
+      "reextractionTaskId": "C2LTB1-CREXT-001",
+      "originTaskId": "C2LTB1-EXT-003",
+      "sourceResolutionReviewId": "C2LTB1-SRFR-001",
+      "domainId": "sepsis-shock-early-recognition-resuscitation-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/sepsis-shock-early-recognition-resuscitation-continuity",
+      "candidateId": "C2LTB1-BRR-003-CAND-01",
+      "sourceTitle": "Surviving Sepsis Campaign: International Guidelines for Management of Sepsis and Septic Shock 2026",
+      "sourceUrl": "https://www.sccm.org/survivingsepsiscampaign/guidelines-and-resources/surviving-sepsis-campaign-adult-guidelines",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "corrected-source-reextraction-independent-fresh-review",
+      "sourceIdentityVerdict": "supported",
+      "sourceAccessVerdict": "official-html-page-accessible-automated-text-extracted",
+      "sourceContextVerdict": "sufficient-for-bounded-artifact-prep",
+      "currentnessVerdict": "Current adult SSC route candidate as of 2026-07-02; it updates the 2021 SSC guideline and should be used as currentness anchor while the 2021 PMC/PubMed guideline remains prior-version lineage.",
+      "exactClaimVerdict": "bounded-claim-supported",
+      "endpointVariableVerdict": "endpoint-vocabulary-supported",
+      "transferBoundaryVerdict": "transfer-boundary-present-and-required",
+      "reviewerVerdict": "support-with-boundary",
+      "freshReviewFinding": "Independent fresh review supports bounded artifact preparation for C2LTB1-CREXT-001: source identity, access status, claim scope, endpoint vocabulary and transfer boundary are sufficiently explicit for a guarded Source/variable/endpoint/uncertainty/transfer/downgrade artifact prep step.",
+      "downgradeOrBlockReason": "No blocking defect found for bounded artifact preparation; calibrated modeling and individual-use gates remain blocked.",
+      "artifactPromotionDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "allowedArtifactTypes": [
+        "reviewed-source-card",
+        "reviewed-variable-card",
+        "reviewed-endpoint-card",
+        "reviewed-uncertainty-card",
+        "reviewed-transfer-boundary-card",
+        "reviewed-downgrade-check"
+      ],
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://www.sccm.org/survivingsepsiscampaign/guidelines-and-resources/surviving-sepsis-campaign-adult-guidelines",
+          "evidenceType": "official-html-access-check",
+          "finding": "Automated access succeeded on 2026-07-02; SCCM page identifies the adult 2026 SSC guideline and update relationship."
+        }
+      ],
+      "nextAction": "Prepare bounded reviewed artifacts from this corrected row, then run artifact audit before model use."
+    },
+    {
+      "reviewId": "C2LTB1-CFRV-002",
+      "batchId": "C2-LT-B1",
+      "reextractionTaskId": "C2LTB1-CREXT-002",
+      "originTaskId": "C2LTB1-EXT-003",
+      "sourceResolutionReviewId": "C2LTB1-SRFR-001",
+      "domainId": "sepsis-shock-early-recognition-resuscitation-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/sepsis-shock-early-recognition-resuscitation-continuity",
+      "candidateId": "C2LTB1-BRR-003-CAND-02",
+      "sourceTitle": "Surviving sepsis campaign: international guidelines for management of sepsis and septic shock 2021",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/34599691/",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "corrected-source-reextraction-independent-fresh-review",
+      "sourceIdentityVerdict": "supported-route-or-lineage-only",
+      "sourceAccessVerdict": "pubmed-index-plus-pmc-fulltext-accessible",
+      "sourceContextVerdict": "insufficient-for-direct-artifact-promotion",
+      "currentnessVerdict": "Prior version relative to SCCM 2026 adult guideline. It remains useful for lineage and for extracting historically published adult sepsis route concepts only when marked as previous-version.",
+      "exactClaimVerdict": "bounded-claim-not-promotable-from-this-row",
+      "endpointVariableVerdict": "endpoint-vocabulary-blocked-or-route-only",
+      "transferBoundaryVerdict": "transfer-boundary-present-and-required",
+      "reviewerVerdict": "blocked-or-context-only",
+      "freshReviewFinding": "Independent fresh review keeps C2LTB1-CREXT-002 out of direct artifact promotion: The 2021 sepsis source is useful as prior-version lineage, but current-source artifacts should be anchored to the 2026 SCCM page unless a separate lineage artifact is explicitly scoped later.",
+      "downgradeOrBlockReason": "The 2021 sepsis source is useful as prior-version lineage, but current-source artifacts should be anchored to the 2026 SCCM page unless a separate lineage artifact is explicitly scoped later.",
+      "artifactPromotionDecision": "blocked-context-lineage-only-no-direct-artifact-fill",
+      "allowedArtifactTypes": [],
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34599691/",
+          "evidenceType": "pubmed-index-check",
+          "finding": "PubMed confirms title, journal, date, DOI and PMC linkage for the 2021 SSC guideline."
+        },
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8486643/",
+          "evidenceType": "pmc-open-fulltext-lineage-check",
+          "finding": "PMC full text can support prior-version lineage and screening/treatment-process context."
+        }
+      ],
+      "nextAction": "Keep this corrected row blocked or context-only until direct full source context supports a narrower artifact."
+    },
+    {
+      "reviewId": "C2LTB1-CFRV-003",
+      "batchId": "C2-LT-B1",
+      "reextractionTaskId": "C2LTB1-CREXT-003",
+      "originTaskId": "C2LTB1-EXT-008",
+      "sourceResolutionReviewId": "C2LTB1-SRFR-002",
+      "domainId": "anaphylaxis-allergic-emergency-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/anaphylaxis-allergic-emergency-continuity",
+      "candidateId": "C2LTB1-BRR-008-CAND-01",
+      "sourceTitle": "Anaphylaxis: A 2023 practice parameter update",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/38108678/",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "corrected-source-reextraction-independent-fresh-review",
+      "sourceIdentityVerdict": "supported",
+      "sourceAccessVerdict": "pubmed-abstract-accessible",
+      "sourceContextVerdict": "sufficient-for-bounded-artifact-prep",
+      "currentnessVerdict": "Practice parameter update published in Annals of Allergy, Asthma and Immunology in 2024 and focused on seven areas with new evidence and recommendations. It should be paired with source-specific review before being treated as current clinical guidance.",
+      "exactClaimVerdict": "bounded-claim-supported",
+      "endpointVariableVerdict": "endpoint-vocabulary-supported",
+      "transferBoundaryVerdict": "transfer-boundary-present-and-required",
+      "reviewerVerdict": "support-with-boundary",
+      "freshReviewFinding": "Independent fresh review supports bounded artifact preparation for C2LTB1-CREXT-003: source identity, access status, claim scope, endpoint vocabulary and transfer boundary are sufficiently explicit for a guarded Source/variable/endpoint/uncertainty/transfer/downgrade artifact prep step.",
+      "downgradeOrBlockReason": "No blocking defect found for bounded artifact preparation; calibrated modeling and individual-use gates remain blocked.",
+      "artifactPromotionDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "allowedArtifactTypes": [
+        "reviewed-source-card",
+        "reviewed-variable-card",
+        "reviewed-endpoint-card",
+        "reviewed-uncertainty-card",
+        "reviewed-transfer-boundary-card",
+        "reviewed-downgrade-check"
+      ],
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38108678/",
+          "evidenceType": "pubmed-abstract-check",
+          "finding": "PubMed confirms the 2023 practice parameter update and abstract-level scope for revised criteria, tryptase, autoinjector counseling and post-event evaluation topics."
+        }
+      ],
+      "nextAction": "Prepare bounded reviewed artifacts from this corrected row, then run artifact audit before model use."
+    },
+    {
+      "reviewId": "C2LTB1-CFRV-004",
+      "batchId": "C2-LT-B1",
+      "reextractionTaskId": "C2LTB1-CREXT-004",
+      "originTaskId": "C2LTB1-EXT-008",
+      "sourceResolutionReviewId": "C2LTB1-SRFR-002",
+      "domainId": "anaphylaxis-allergic-emergency-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/anaphylaxis-allergic-emergency-continuity",
+      "candidateId": "C2LTB1-BRR-008-CAND-02",
+      "sourceTitle": "World allergy organization anaphylaxis guidance 2020",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7607509/",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "corrected-source-reextraction-independent-fresh-review",
+      "sourceIdentityVerdict": "supported",
+      "sourceAccessVerdict": "pubmed-index-plus-pmc-fulltext-accessible",
+      "sourceContextVerdict": "sufficient-for-bounded-artifact-prep",
+      "currentnessVerdict": "Open guidance published in 2020; useful as accessible global guidance context, but later 2023 practice parameter must be considered for newer evidence and recommendations.",
+      "exactClaimVerdict": "bounded-claim-supported",
+      "endpointVariableVerdict": "endpoint-vocabulary-supported",
+      "transferBoundaryVerdict": "transfer-boundary-present-and-required",
+      "reviewerVerdict": "support-with-boundary",
+      "freshReviewFinding": "Independent fresh review supports bounded artifact preparation for C2LTB1-CREXT-004: source identity, access status, claim scope, endpoint vocabulary and transfer boundary are sufficiently explicit for a guarded Source/variable/endpoint/uncertainty/transfer/downgrade artifact prep step.",
+      "downgradeOrBlockReason": "No blocking defect found for bounded artifact preparation; calibrated modeling and individual-use gates remain blocked.",
+      "artifactPromotionDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "allowedArtifactTypes": [
+        "reviewed-source-card",
+        "reviewed-variable-card",
+        "reviewed-endpoint-card",
+        "reviewed-uncertainty-card",
+        "reviewed-transfer-boundary-card",
+        "reviewed-downgrade-check"
+      ],
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33204386/",
+          "evidenceType": "pubmed-abstract-check",
+          "finding": "PubMed confirms WAO 2020 guidance and abstract-level IM epinephrine, referral, self-management and access-barrier scope."
+        },
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7607509/",
+          "evidenceType": "pmc-open-fulltext-check",
+          "finding": "PMC full text is accessible for later source-card extraction."
+        }
+      ],
+      "nextAction": "Prepare bounded reviewed artifacts from this corrected row, then run artifact audit before model use."
+    },
+    {
+      "reviewId": "C2LTB1-CFRV-005",
+      "batchId": "C2-LT-B1",
+      "reextractionTaskId": "C2LTB1-CREXT-005",
+      "originTaskId": "C2LTB1-EXT-017",
+      "sourceResolutionReviewId": "C2LTB1-SRFR-003",
+      "domainId": "cerebrovascular-stroke-brain-perfusion-resilience",
+      "localDomainPath": "domains/c2-source-maintenance/cerebrovascular-stroke-brain-perfusion-resilience",
+      "candidateId": "C2LTB1-BRR-017-CAND-01",
+      "sourceTitle": "NINDS Stroke health information",
+      "sourceUrl": "https://www.ninds.nih.gov/health-information/stroke",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "corrected-source-reextraction-independent-fresh-review",
+      "sourceIdentityVerdict": "supported-route-or-lineage-only",
+      "sourceAccessVerdict": "official-source-search-index-accessible-direct-automated-fetch-403",
+      "sourceContextVerdict": "insufficient-for-direct-artifact-promotion",
+      "currentnessVerdict": "Official NIH/NINDS patient-education route. Direct automated fetch returned 403 during this run, so extraction is limited to official indexed page snippets and should be rechecked manually before artifact promotion.",
+      "exactClaimVerdict": "bounded-claim-not-promotable-from-this-row",
+      "endpointVariableVerdict": "endpoint-vocabulary-blocked-or-route-only",
+      "transferBoundaryVerdict": "transfer-boundary-present-and-required",
+      "reviewerVerdict": "blocked-or-context-only",
+      "freshReviewFinding": "Independent fresh review keeps C2LTB1-CREXT-005 out of direct artifact promotion: NINDS route remains direct-fetch blocked during automated review; search-index evidence can support route identity only, not reviewed artifact content.",
+      "downgradeOrBlockReason": "NINDS route remains direct-fetch blocked during automated review; search-index evidence can support route identity only, not reviewed artifact content.",
+      "artifactPromotionDecision": "blocked-direct-source-access-needed",
+      "allowedArtifactTypes": [],
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://www.ninds.nih.gov/health-information/stroke",
+          "evidenceType": "official-route-access-check",
+          "finding": "Direct automated fetch returned 403 on 2026-07-02, so the row cannot be promoted beyond route identity without manual/direct review."
+        }
+      ],
+      "nextAction": "Keep this corrected row blocked or context-only until direct full source context supports a narrower artifact."
+    },
+    {
+      "reviewId": "C2LTB1-CFRV-006",
+      "batchId": "C2-LT-B1",
+      "reextractionTaskId": "C2LTB1-CREXT-006",
+      "originTaskId": "C2LTB1-EXT-018",
+      "sourceResolutionReviewId": "C2LTB1-SRFR-004",
+      "domainId": "cerebrovascular-stroke-brain-perfusion-resilience",
+      "localDomainPath": "domains/c2-source-maintenance/cerebrovascular-stroke-brain-perfusion-resilience",
+      "candidateId": "C2LTB1-BRR-018-CAND-01",
+      "sourceTitle": "2026 Guideline for the Early Management of Patients With Acute Ischemic Stroke",
+      "sourceUrl": "https://professional.heart.org/en/science-news/2026-guideline-for-the-early-management-of-patients-with-acute-ischemic-stroke",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "corrected-source-reextraction-independent-fresh-review",
+      "sourceIdentityVerdict": "supported",
+      "sourceAccessVerdict": "official-html-page-plus-pubmed-abstract-accessible",
+      "sourceContextVerdict": "sufficient-for-bounded-artifact-prep",
+      "currentnessVerdict": "The 2026 AIS guideline replaces the 2018 acute ischemic stroke guideline and 2019 update; PubMed abstract reports literature through December 2024 plus selected high-impact studies through March 2025.",
+      "exactClaimVerdict": "bounded-claim-supported",
+      "endpointVariableVerdict": "endpoint-vocabulary-supported",
+      "transferBoundaryVerdict": "transfer-boundary-present-and-required",
+      "reviewerVerdict": "support-with-boundary",
+      "freshReviewFinding": "Independent fresh review supports bounded artifact preparation for C2LTB1-CREXT-006: source identity, access status, claim scope, endpoint vocabulary and transfer boundary are sufficiently explicit for a guarded Source/variable/endpoint/uncertainty/transfer/downgrade artifact prep step.",
+      "downgradeOrBlockReason": "No blocking defect found for bounded artifact preparation; calibrated modeling and individual-use gates remain blocked.",
+      "artifactPromotionDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "allowedArtifactTypes": [
+        "reviewed-source-card",
+        "reviewed-variable-card",
+        "reviewed-endpoint-card",
+        "reviewed-uncertainty-card",
+        "reviewed-transfer-boundary-card",
+        "reviewed-downgrade-check"
+      ],
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41582814/",
+          "evidenceType": "pubmed-abstract-check",
+          "finding": "PubMed confirms the 2026 AHA/ASA AIS guideline, replacement relationship and abstract-level update topics."
+        },
+        {
+          "url": "https://professional.heart.org/en/science-news/2026-guideline-for-the-early-management-of-patients-with-acute-ischemic-stroke",
+          "evidenceType": "official-html-access-check",
+          "finding": "AHA Professional Heart Daily page was accessible and confirms guideline route and key public summary updates."
+        }
+      ],
+      "nextAction": "Prepare bounded reviewed artifacts from this corrected row, then run artifact audit before model use."
+    },
+    {
+      "reviewId": "C2LTB1-CFRV-007",
+      "batchId": "C2-LT-B1",
+      "reextractionTaskId": "C2LTB1-CREXT-007",
+      "originTaskId": "C2LTB1-EXT-041",
+      "sourceResolutionReviewId": "C2LTB1-SRFR-005",
+      "domainId": "fertility-preservation-gamete-embryo-cryostorage-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/fertility-preservation-gamete-embryo-cryostorage-continuity",
+      "candidateId": "C2LTB1-BRR-041-CAND-01",
+      "sourceTitle": "Fertility Preservation in People With Cancer: ASCO Guideline Update",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/40106739/",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "corrected-source-reextraction-independent-fresh-review",
+      "sourceIdentityVerdict": "supported",
+      "sourceAccessVerdict": "pubmed-abstract-accessible",
+      "sourceContextVerdict": "sufficient-for-bounded-artifact-prep",
+      "currentnessVerdict": "ASCO guideline update published in Journal of Clinical Oncology in 2025; PubMed abstract states a multidisciplinary panel updated the systematic review and included 166 studies.",
+      "exactClaimVerdict": "bounded-claim-supported",
+      "endpointVariableVerdict": "endpoint-vocabulary-supported",
+      "transferBoundaryVerdict": "transfer-boundary-present-and-required",
+      "reviewerVerdict": "support-with-boundary",
+      "freshReviewFinding": "Independent fresh review supports bounded artifact preparation for C2LTB1-CREXT-007: source identity, access status, claim scope, endpoint vocabulary and transfer boundary are sufficiently explicit for a guarded Source/variable/endpoint/uncertainty/transfer/downgrade artifact prep step.",
+      "downgradeOrBlockReason": "No blocking defect found for bounded artifact preparation; calibrated modeling and individual-use gates remain blocked.",
+      "artifactPromotionDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "allowedArtifactTypes": [
+        "reviewed-source-card",
+        "reviewed-variable-card",
+        "reviewed-endpoint-card",
+        "reviewed-uncertainty-card",
+        "reviewed-transfer-boundary-card",
+        "reviewed-downgrade-check"
+      ],
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40106739/",
+          "evidenceType": "pubmed-abstract-check",
+          "finding": "PubMed confirms the 2025 ASCO guideline update and abstract-level fertility-preservation recommendations for people with cancer."
+        }
+      ],
+      "nextAction": "Prepare bounded reviewed artifacts from this corrected row, then run artifact audit before model use."
+    },
+    {
+      "reviewId": "C2LTB1-CFRV-008",
+      "batchId": "C2-LT-B1",
+      "reextractionTaskId": "C2LTB1-CREXT-008",
+      "originTaskId": "C2LTB1-EXT-041",
+      "sourceResolutionReviewId": "C2LTB1-SRFR-005",
+      "domainId": "fertility-preservation-gamete-embryo-cryostorage-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/fertility-preservation-gamete-embryo-cryostorage-continuity",
+      "candidateId": "C2LTB1-BRR-041-CAND-03",
+      "sourceTitle": "ASCO Publications DOI for 2025 fertility preservation guideline update",
+      "sourceUrl": "https://ascopubs.org/doi/10.1200/JCO-24-02782",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "corrected-source-reextraction-independent-fresh-review",
+      "sourceIdentityVerdict": "supported-route-or-lineage-only",
+      "sourceAccessVerdict": "publisher-doi-page-automated-fetch-403-pubmed-doi-confirmed",
+      "sourceContextVerdict": "insufficient-for-direct-artifact-promotion",
+      "currentnessVerdict": "Publisher DOI matches PubMed DOI 10.1200/JCO-24-02782. Treat as source identity and full-text retrieval route only until publisher access or manual review succeeds.",
+      "exactClaimVerdict": "bounded-claim-not-promotable-from-this-row",
+      "endpointVariableVerdict": "endpoint-vocabulary-blocked-or-route-only",
+      "transferBoundaryVerdict": "transfer-boundary-present-and-required",
+      "reviewerVerdict": "blocked-or-context-only",
+      "freshReviewFinding": "Independent fresh review keeps C2LTB1-CREXT-008 out of direct artifact promotion: ASCO publisher DOI route returned 403; PubMed confirms DOI, but this row provides provenance route rather than recommendation content.",
+      "downgradeOrBlockReason": "ASCO publisher DOI route returned 403; PubMed confirms DOI, but this row provides provenance route rather than recommendation content.",
+      "artifactPromotionDecision": "blocked-publisher-route-only",
+      "allowedArtifactTypes": [],
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://ascopubs.org/doi/10.1200/JCO-24-02782",
+          "evidenceType": "publisher-route-access-check",
+          "finding": "Publisher DOI route returned 403 on 2026-07-02; PubMed DOI confirmation supports provenance only."
+        },
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40106739/",
+          "evidenceType": "pubmed-doi-crosscheck",
+          "finding": "PubMed confirms DOI 10.1200/JCO-24-02782 for the ASCO 2025 guideline update."
+        }
+      ],
+      "nextAction": "Keep this corrected row blocked or context-only until direct full source context supports a narrower artifact."
+    },
+    {
+      "reviewId": "C2LTB1-CFRV-009",
+      "batchId": "C2-LT-B1",
+      "reextractionTaskId": "C2LTB1-CREXT-009",
+      "originTaskId": "C2LTB1-EXT-045",
+      "sourceResolutionReviewId": "C2LTB1-SRFR-006",
+      "domainId": "skin-barrier-wound-healing",
+      "localDomainPath": "domains/c2-source-maintenance/skin-barrier-wound-healing",
+      "candidateId": "C2LTB1-BRR-045-CAND-01",
+      "sourceTitle": "Wound Healing Society Clinical Practice Guidelines and Tools",
+      "sourceUrl": "https://woundheal.org/clinical-tools/",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "corrected-source-reextraction-independent-fresh-review",
+      "sourceIdentityVerdict": "supported-route-or-lineage-only",
+      "sourceAccessVerdict": "official-html-directory-accessible-automated-text-extracted",
+      "sourceContextVerdict": "insufficient-for-direct-artifact-promotion",
+      "currentnessVerdict": "Directory source exposes foundational guidelines, wound-type guidance and specific diabetic foot ulcer/pressure ulcer AvoMD module and guideline years. It is a routing source, not a single guideline body.",
+      "exactClaimVerdict": "bounded-claim-not-promotable-from-this-row",
+      "endpointVariableVerdict": "endpoint-vocabulary-blocked-or-route-only",
+      "transferBoundaryVerdict": "transfer-boundary-present-and-required",
+      "reviewerVerdict": "blocked-or-context-only",
+      "freshReviewFinding": "Independent fresh review keeps C2LTB1-CREXT-009 out of direct artifact promotion: WHS clinical tools page is a directory and wound-type splitter, not a specific recommendation source.",
+      "downgradeOrBlockReason": "WHS clinical tools page is a directory and wound-type splitter, not a specific recommendation source.",
+      "artifactPromotionDecision": "blocked-directory-route-only",
+      "allowedArtifactTypes": [],
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://woundheal.org/clinical-tools/",
+          "evidenceType": "official-html-directory-check",
+          "finding": "WHS clinical tools page was accessible and lists wound-type-specific guidelines and modules, supporting routing and split decisions only."
+        }
+      ],
+      "nextAction": "Keep this corrected row blocked or context-only until direct full source context supports a narrower artifact."
+    },
+    {
+      "reviewId": "C2LTB1-CFRV-010",
+      "batchId": "C2-LT-B1",
+      "reextractionTaskId": "C2LTB1-CREXT-010",
+      "originTaskId": "C2LTB1-EXT-045",
+      "sourceResolutionReviewId": "C2LTB1-SRFR-006",
+      "domainId": "skin-barrier-wound-healing",
+      "localDomainPath": "domains/c2-source-maintenance/skin-barrier-wound-healing",
+      "candidateId": "C2LTB1-BRR-045-CAND-02",
+      "sourceTitle": "WHS (Wound Healing Society) guidelines update: Diabetic foot ulcer treatment guidelines",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/38032324/",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "corrected-source-reextraction-independent-fresh-review",
+      "sourceIdentityVerdict": "supported-route-or-lineage-only",
+      "sourceAccessVerdict": "pubmed-index-accessible-no-abstract-in-efetch",
+      "sourceContextVerdict": "insufficient-for-direct-artifact-promotion",
+      "currentnessVerdict": "PubMed indexes the WHS diabetic foot ulcer treatment guidelines in Wound Repair and Regeneration, published 2024 Jan-Feb with DOI 10.1111/wrr.13133. WHS directory lists diabetic foot ulcer guideline years including 2023 and module access.",
+      "exactClaimVerdict": "bounded-claim-not-promotable-from-this-row",
+      "endpointVariableVerdict": "endpoint-vocabulary-blocked-or-route-only",
+      "transferBoundaryVerdict": "transfer-boundary-present-and-required",
+      "reviewerVerdict": "blocked-or-context-only",
+      "freshReviewFinding": "Independent fresh review keeps C2LTB1-CREXT-010 out of direct artifact promotion: PubMed confirms the WHS diabetic-foot-ulcer guideline identity but exposes no abstract in this run; full guideline content is needed before artifact promotion.",
+      "downgradeOrBlockReason": "PubMed confirms the WHS diabetic-foot-ulcer guideline identity but exposes no abstract in this run; full guideline content is needed before artifact promotion.",
+      "artifactPromotionDecision": "blocked-fulltext-needed",
+      "allowedArtifactTypes": [],
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38032324/",
+          "evidenceType": "pubmed-index-check",
+          "finding": "PubMed confirms WHS diabetic foot ulcer guideline title, journal, publication window and DOI, but no abstract content was available in efetch during this run."
+        },
+        {
+          "url": "https://woundheal.org/clinical-tools/",
+          "evidenceType": "official-directory-crosscheck",
+          "finding": "WHS clinical tools page cross-routes diabetic foot ulcer guidelines but is not itself the guideline content."
+        }
+      ],
+      "nextAction": "Keep this corrected row blocked or context-only until direct full source context supports a narrower artifact."
+    }
+  ],
+  "indexRequirements": [
+    "README.md",
+    "AGENTS.md",
+    "docs/AGENTS.md",
+    "docs/reference/README.md",
+    "docs/reference/human-infra-maturity-roadmap.md",
+    "tools/README.md",
+    "tools/AGENTS.md"
+  ],
+  "summary": {
+    "reviewedCorrectedRows": 10,
+    "eligibleForArtifactPrepRows": [
+      "C2LTB1-CREXT-001",
+      "C2LTB1-CREXT-003",
+      "C2LTB1-CREXT-004",
+      "C2LTB1-CREXT-006",
+      "C2LTB1-CREXT-007"
+    ],
+    "blockedOrContextOnlyRows": [
+      "C2LTB1-CREXT-002",
+      "C2LTB1-CREXT-005",
+      "C2LTB1-CREXT-008",
+      "C2LTB1-CREXT-009",
+      "C2LTB1-CREXT-010"
+    ],
+    "directReviewedArtifactsCreated": 0,
+    "modelAdmissionDecision": "blocked",
+    "nextWorkOrder": "Prepare bounded reviewed artifacts only for the eligible corrected rows; preserve blocked/context-only rows as source-boundary evidence and keep calibrated modeling blocked."
+  }
+}
