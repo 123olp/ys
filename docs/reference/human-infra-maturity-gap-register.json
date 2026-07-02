@@ -114,7 +114,7 @@
     {
       "axisId": "research_framework",
       "axisName": "研究框架",
-      "currentPercent": 73,
+      "currentPercent": 75,
       "targetPercent": 100,
       "definitionOfDone": "Every strong project claim can be traced to source cards, claim-evidence rows, variables, mechanism links, falsifiers, model position and governance boundary.",
       "primaryEvidence": [
@@ -123,6 +123,7 @@
         "docs/reference/source-card-system.md",
         "docs/reference/human-infra-paper-claim-register.json",
         "docs/reference/human-infra-falsifier-source-card-backfill.json",
+        "docs/reference/human-infra-falsifier-source-card-extraction.json",
         "domains/README.md",
         "domains/_possibility-space-control/classification.tsv"
       ],
@@ -206,16 +207,19 @@
             "docs/reference/human-infra-paper-claim-register.json",
             "docs/reference/human-infra-domain-falsifier-coverage.json",
             "docs/reference/human-infra-falsifier-source-card-backfill.json",
+            "docs/reference/human-infra-falsifier-source-card-extraction.json",
             "tools/audit_human_infra_domain_falsifier_coverage.py",
             "tools/audit_human_infra_falsifier_source_card_backfill.py",
+            "tools/audit_human_infra_falsifier_source_card_extraction.py",
             "tools/audit_human_infra_page_claim_consistency.py",
             "tools/audit_human_infra_paper_claim_register.py"
           ],
           "missingEvidence": [
             "Falsifier rows for C2 domain claims beyond the current 20-domain priority set.",
-            "Full field-level Source Cards that split each source anchor into exact claim, variable, endpoint, population, uncertainty and transfer-boundary rows."
+            "Field-level Source Cards for the remaining 11 source anchors.",
+            "Domain-level Source Cards that split each source anchor into exact claim, variable, endpoint, population, uncertainty and transfer-boundary rows."
           ],
-          "nextAction": "Convert the v0.1 source-anchor backfill into full field-level Source Cards, then extend falsifier coverage beyond the current priority set.",
+          "nextAction": "Extend field-level Source Card extraction to the remaining source anchors, then split C1/C2 domain claims into domain-level Source Cards.",
           "blocks100Percent": true
         }
       ]
@@ -362,7 +366,7 @@
   "nextWorkOrder": [
     {
       "priority": 1,
-      "item": "Convert the v0.1 falsifier source-anchor backfill into full field-level Source Cards, then extend falsifier coverage beyond the current priority set.",
+      "item": "Extend the field-level falsifier Source Card extraction to the remaining source anchors, then split C1/C2 domain claims into domain-level Source Cards.",
       "unblocks": [
         "RESEARCH-G6-falsifier-and-downgrade-coverage"
       ]

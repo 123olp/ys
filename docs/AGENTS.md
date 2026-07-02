@@ -173,6 +173,7 @@ docs/
 │   ├── glossary.md
 │   ├── human-infra-core-claim-evidence-matrix.md
 │   ├── human-infra-falsifier-source-card-backfill.json
+│   ├── human-infra-falsifier-source-card-extraction.json
 │   ├── human-infra-maturity-roadmap.md
 │   ├── life-path-prediction-model-contract.md
 │   ├── life-path-prediction-model-governance.md
@@ -351,6 +352,7 @@ docs/
 - `reference/research-model-visualization-toolkit.md`：沉淀科研论文阅读、文献脊梁、模型工具、可视化标准和 Human Infra 定量页面实现路线。
 - `reference/source-card-system.md`：定义论文、书籍、工具、案例、标准和数据集进入项目之前的资料卡片制度。
 - `reference/human-infra-falsifier-source-card-backfill.json`：把当前论文强主张和 C1/C2 优先域反证回填到 Source Card 来源锚点、证据角色、可用范围和外推边界。
+- `reference/human-infra-falsifier-source-card-extraction.json`：把第一批高杠杆来源锚点抽取为字段级 Source Cards，绑定来源身份、域、论文 claim、模型位置、反证用途和迁移边界。
 - `reference/domain-map.md`：定义根项目与子域的边界、迁移切片、主动不做和验证点。
 - `reference/ethics-and-safety-boundaries.md`：定义医疗、组织、去具身中枢、记忆编辑和数据证据边界。
 - `reference/evidence-policy.md`：定义证据、解释、主张、推测和决策的分层规则。
@@ -369,6 +371,7 @@ docs/
 - `source-notes/2026-06-28-effective-immortality-flywheel-derivation-package.md`：保存有效永生飞轮公式推导包，冻结不变量、假设、符号、推导图、主公式、边界和开放风险。
 - `source-notes/2026-06-28-effective-immortality-flywheel-evidence-matrix.md`：保存有效永生飞轮证据矩阵，把主链路拆成可检验边，并记录候选来源、证据角色、断裂条件和下一步模型任务。
 - `source-notes/2026-06-28-effective-immortality-flywheel-source-cards.md`：保存有效永生飞轮第一批来源卡片，服务后续论文扩写、模型变量和 Web 可视化。
+- `source-notes/2026-07-02-falsifier-source-card-field-extraction.md`：保存第一批反证来源的字段级 Source Card 人工可读包，服务研究框架补齐和模型变量迁移。
 - `source-notes/2026-06-29-metric-redshift-recursive-waiting-revision-notes.md`：保存度规红移递归等待假设论文页 v0.2 优化依据、来源分层和下一步科研任务。
 - `source-notes/2026-06-29-controllable-metric-waiting-room-hypothesis-revision-notes.md`：保存可控度规等待室假设论文页收口记录，包括研究对象、toy NCG 推导、场景比较、引用语境、预提交审查和覆盖审计。
 - `templates/`：保存决策记录、子域 README、research card、source note 和 reference 文档模板。

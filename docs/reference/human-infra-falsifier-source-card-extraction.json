@@ -1,0 +1,660 @@
+{
+  "schemaVersion": "human-infra.falsifier-source-card-extraction.v1",
+  "registerId": "human-infra-falsifier-source-card-field-extraction-2026-07-02",
+  "status": "active-field-source-card-extraction-gate",
+  "purpose": "Promote the first source-anchor backfill into field-level Source Cards for the highest-leverage falsifier families, so strong Human Infra claims can be reviewed by exact source identity, domain mapping, model position, supported use, transfer boundary and next extraction step.",
+  "backfillRegister": "docs/reference/human-infra-falsifier-source-card-backfill.json",
+  "sourceCardSystem": "docs/reference/source-card-system.md",
+  "domainFalsifierRegister": "docs/reference/human-infra-domain-falsifier-coverage.json",
+  "paperClaimRegister": "docs/reference/human-infra-paper-claim-register.json",
+  "maturityGapRegister": "docs/reference/human-infra-maturity-gap-register.json",
+  "humanReadablePack": "docs/source-notes/2026-07-02-falsifier-source-card-field-extraction.md",
+  "scope": {
+    "coverageLevel": "field-source-cards-v0.1",
+    "selectedSourceAnchorCount": 10,
+    "selectionRule": "Select sources that anchor the largest number of model-critical falsifiers: aging mechanism taxonomy, biomarker versus endpoint, reprogramming identity risk, survival/hazard methods, causal intervention design, prediction reporting and subject-continuity value framing.",
+    "currentLimitations": [
+      "This extraction covers the first 10 highest-leverage source anchors, not all 21 source anchors in the backfill register.",
+      "This extraction records field-level use and transfer boundaries; it is not a live external literature review.",
+      "This extraction does not validate intervention efficacy, individual medical action, individual lifespan, NCG calibration or personal prediction.",
+      "Remaining source anchors still require equivalent field-level extraction before RESEARCH-G6 can pass completely."
+    ]
+  },
+  "sourceCards": [
+    {
+      "sourceId": "SA-HALLMARKS-AGING-2023",
+      "cardStatus": "field-extracted-v0.1",
+      "sourceIdentity": {
+        "title": "Hallmarks of aging: An expanding universe",
+        "year": "2023",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/36599349/",
+        "sourceType": "review-paper"
+      },
+      "oneSentenceUse": "Use this source as the high-level aging-mechanism scaffold for mapping Human Infra biological source-maintenance domains into variable families.",
+      "humanInfraMapping": {
+        "domainIds": [
+          "longevity-evidence",
+          "cellular-reprogramming",
+          "mitochondrial-bioenergetics",
+          "proteostasis-autophagy",
+          "cellular-senescence-clearance",
+          "stem-cell-reserve-renewal"
+        ],
+        "paperClaimIds": [
+          "HIPAPER-CL1",
+          "HIPAPER-CL3"
+        ],
+        "subjectContinuityVariables": [
+          "aging-mechanism-family",
+          "cellular-maintenance-capacity",
+          "organ-system-resilience",
+          "damage-and-repair-balance"
+        ],
+        "valueLens": "subject-continuity source maintenance",
+        "safetyBoundary": "Mechanism taxonomy only; do not infer that any intervention extends lifespan or healthspan."
+      },
+      "modelPosition": {
+        "stateVariable": "Candidate aging-hallmark state families.",
+        "stateTransition": "Mechanism hypotheses for how state deterioration could progress.",
+        "hazard": "Indirect hazard vocabulary only; no source-specific hazard ratio is imported.",
+        "observationProcess": "Suggests which biomarker or functional domains may need observation.",
+        "actionPolicy": "Not an intervention policy.",
+        "timeAccounting": "Supports healthspan and lifespan language only as conceptual targets.",
+        "optionValue": "Supports the idea that multiple maintenance failures can constrain future action."
+      },
+      "evidenceRoles": [
+        "mechanism scaffold",
+        "domain taxonomy",
+        "falsifier vocabulary"
+      ],
+      "keyExtracts": [
+        "Aging should be treated as a multi-hallmark system rather than a single variable.",
+        "Human Infra domain rows should separate mechanism plausibility from intervention outcome evidence.",
+        "Any strong longevity claim must identify which maintenance layer it affects and which layers remain unaddressed."
+      ],
+      "supportedUse": "Use to group C2 source-maintenance domains and to require multi-mechanism downgrade conditions.",
+      "falsifierUse": "If a claim treats one hallmark or one biomarker as sufficient for effective immortality, downgrade it to a narrow candidate mechanism.",
+      "transferBoundary": "Does not support individual prediction, clinical recommendation, intervention ranking or proof of longevity escape velocity.",
+      "risksAndMisreadings": [
+        "Hallmark coverage can be mistaken for causality.",
+        "Mechanism breadth can be mistaken for therapeutic maturity.",
+        "Review-level synthesis can hide domain-specific uncertainty."
+      ],
+      "repositoryAction": "Use as a shared source card for C2 mechanism taxonomy and RESEARCH-G3/G6 downgrade checks.",
+      "nextExtractionStep": "Split each hallmark used by a C2 domain into domain-level variable rows with endpoint, population and uncertainty fields."
+    },
+    {
+      "sourceId": "SA-GRIMAGE-2019",
+      "cardStatus": "field-extracted-v0.1",
+      "sourceIdentity": {
+        "title": "DNA methylation GrimAge strongly predicts lifespan and healthspan",
+        "year": "2019",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6366976/",
+        "sourceType": "biomarker-paper"
+      },
+      "oneSentenceUse": "Use this source to anchor biological-age clocks as observation and risk-association tools, not as proof that changing a clock changes survival.",
+      "humanInfraMapping": {
+        "domainIds": [
+          "biological-age-clocks-biomarker-validation",
+          "longevity-evidence"
+        ],
+        "paperClaimIds": [
+          "HIPAPER-CL1",
+          "HIPAPER-CL2"
+        ],
+        "subjectContinuityVariables": [
+          "biological-age-estimate",
+          "mortality-risk-association",
+          "healthspan-association",
+          "biomarker-endpoint-gap"
+        ],
+        "valueLens": "observation before intervention",
+        "safetyBoundary": "Biomarker association is not an intervention effect."
+      },
+      "modelPosition": {
+        "stateVariable": "Biological-age proxy or risk-marker state.",
+        "stateTransition": "No causal transition imported without intervention evidence.",
+        "hazard": "Supports risk-association framing for mortality-related modeling.",
+        "observationProcess": "Primary use: an observation layer candidate.",
+        "actionPolicy": "Cannot directly select an action from the clock value.",
+        "timeAccounting": "Can inform aggregate lifespan/healthspan risk discussions only.",
+        "optionValue": "May help prioritize uncertainty reduction if validated for the target population."
+      },
+      "evidenceRoles": [
+        "association",
+        "biomarker validation",
+        "observation boundary"
+      ],
+      "keyExtracts": [
+        "A molecular clock can be useful for risk stratification without proving causal control.",
+        "Biomarker improvement must remain separate from disease endpoint or mortality improvement.",
+        "Model cards should report whether a variable is an observation proxy or an actionable mediator."
+      ],
+      "supportedUse": "Use to force a biomarker-versus-endpoint distinction in longevity and model visualization claims.",
+      "falsifierUse": "If a page treats a lower biological-age score as sufficient evidence of extended effective life, downgrade the claim.",
+      "transferBoundary": "Does not validate a personal prognosis, therapeutic target, lifespan extension intervention or calibrated Human Infra model.",
+      "risksAndMisreadings": [
+        "Clock age can be overread as biological destiny.",
+        "Clock reversal can be overread as hazard reversal.",
+        "Population associations may not transfer to an individual or new cohort."
+      ],
+      "repositoryAction": "Use as the first field-level card for biological-age observation and no-individual-prediction boundaries.",
+      "nextExtractionStep": "Create a biomarker endpoint table separating clock inputs, outcome associations, target population and intervention evidence."
+    },
+    {
+      "sourceId": "SA-YAMANAKA-IPS-2006",
+      "cardStatus": "field-extracted-v0.1",
+      "sourceIdentity": {
+        "title": "Induction of pluripotent stem cells from mouse embryonic and adult fibroblast cultures by defined factors",
+        "year": "2006",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/16904174/",
+        "sourceType": "primary-paper"
+      },
+      "oneSentenceUse": "Use this source as the origin anchor for defined-factor cellular identity reprogramming and the need to separate age reset from identity preservation.",
+      "humanInfraMapping": {
+        "domainIds": [
+          "cellular-reprogramming",
+          "regenerative-medicine",
+          "stem-cell-reserve-renewal"
+        ],
+        "paperClaimIds": [
+          "HIPAPER-CL1"
+        ],
+        "subjectContinuityVariables": [
+          "cell-identity-state",
+          "pluripotency-risk",
+          "repair-capacity-hypothesis",
+          "identity-preservation-boundary"
+        ],
+        "valueLens": "state rewriting with continuity risk",
+        "safetyBoundary": "Cellular reprogramming origin evidence is not whole-body rejuvenation evidence."
+      },
+      "modelPosition": {
+        "stateVariable": "Cell identity and differentiation state.",
+        "stateTransition": "Defined factors can move cells toward pluripotent states under experimental conditions.",
+        "hazard": "Risk language concerns identity loss and tumor-related safety gates, not quantified Human Infra hazard.",
+        "observationProcess": "Requires markers that distinguish identity, age state and function.",
+        "actionPolicy": "No direct human intervention policy.",
+        "timeAccounting": "Does not directly support lifespan, healthspan or effective-time estimates.",
+        "optionValue": "Creates a research path for future repair technologies, conditional on safety and control."
+      },
+      "evidenceRoles": [
+        "mechanism origin",
+        "state-transition proof of principle",
+        "identity-risk boundary"
+      ],
+      "keyExtracts": [
+        "Mature cell state can be experimentally reprogrammed under defined-factor conditions.",
+        "The Human Infra model must distinguish cell identity rewiring from safe subject-level continuity gain.",
+        "A path that resets cells too far can become a negative route if identity, cancer or function gates fail."
+      ],
+      "supportedUse": "Use to introduce cellular reprogramming as a research domain and to require identity-preservation gates.",
+      "falsifierUse": "If a claim jumps from iPS induction to human rejuvenation, mark it as unsupported and require partial-reprogramming and clinical safety evidence.",
+      "transferBoundary": "Does not support whole-organism age reversal, clinical anti-aging use, longevity escape velocity or subject-continuity preservation.",
+      "risksAndMisreadings": [
+        "Pluripotency can be confused with rejuvenation.",
+        "Cell-level proof can be confused with organism-level therapy.",
+        "Identity erasure can be ignored when only age reset is emphasized."
+      ],
+      "repositoryAction": "Use as the baseline source card for cellular-reprogramming genealogy and safety boundary language.",
+      "nextExtractionStep": "Pair this card with partial-reprogramming and cancer-risk cards before any positive reprogramming route card is allowed."
+    },
+    {
+      "sourceId": "SA-PARTIAL-REPROGRAMMING-2016",
+      "cardStatus": "field-extracted-v0.1",
+      "sourceIdentity": {
+        "title": "In Vivo Amelioration of Age-Associated Hallmarks by Partial Reprogramming",
+        "year": "2016",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5679279/",
+        "sourceType": "preclinical-paper"
+      },
+      "oneSentenceUse": "Use this source to represent partial reprogramming as a preclinical route hypothesis that requires dose, duration, identity and safety gates.",
+      "humanInfraMapping": {
+        "domainIds": [
+          "cellular-reprogramming",
+          "regenerative-medicine",
+          "longevity-evidence",
+          "cancer-screening-early-detection-continuity"
+        ],
+        "paperClaimIds": [
+          "HIPAPER-CL1",
+          "HIPAPER-CL3"
+        ],
+        "subjectContinuityVariables": [
+          "partial-age-reset",
+          "cell-identity-retention",
+          "tumor-risk",
+          "functional-restoration-signal"
+        ],
+        "valueLens": "boundary rewriting under safety gates",
+        "safetyBoundary": "Preclinical improvement signals do not prove human lifespan or healthspan benefit."
+      },
+      "modelPosition": {
+        "stateVariable": "Cellular age and identity markers.",
+        "stateTransition": "Candidate state transition under controlled partial reprogramming exposure.",
+        "hazard": "Introduces cancer and dysfunction gates as possible negative hazards.",
+        "observationProcess": "Requires molecular, functional and safety observations.",
+        "actionPolicy": "No personal action policy; only research route screening.",
+        "timeAccounting": "Cannot set LEV or lifespan timing.",
+        "optionValue": "May increase future repair route value if identity and safety gates hold."
+      },
+      "evidenceRoles": [
+        "preclinical mechanism",
+        "safety-boundary signal",
+        "route hypothesis"
+      ],
+      "keyExtracts": [
+        "Partial reprogramming should be represented as a controlled-window problem rather than a generic rejuvenation slogan.",
+        "The positive channel is inseparable from identity loss, tumor and delivery-risk falsifiers.",
+        "Human Infra route cards must identify which evidence is animal, cellular, biomarker, functional or clinical."
+      ],
+      "supportedUse": "Use to define a reprogramming route as candidate-only until clinical endpoint and safety evidence are present.",
+      "falsifierUse": "If dose-duration control, identity retention or tumor-risk evidence is missing, classify the route as cannot-evaluate or negative under safety gates.",
+      "transferBoundary": "Does not prove human anti-aging therapy, systemic rejuvenation, individual intervention ranking or effective immortality.",
+      "risksAndMisreadings": [
+        "Preclinical hallmarks can be treated as clinical endpoints.",
+        "Partial exposure can be presumed safe without delivery and shutdown evidence.",
+        "Local or model-organism results can be overgeneralized to whole humans."
+      ],
+      "repositoryAction": "Use as a required source for cellular-reprogramming route cards and high-impact C1/C2 field extraction.",
+      "nextExtractionStep": "Extract dose, duration, model organism, observed endpoints, adverse signals and human-transfer gaps into a dedicated route card."
+    },
+    {
+      "sourceId": "SA-HALLMARKS-CANCER-2022",
+      "cardStatus": "field-extracted-v0.1",
+      "sourceIdentity": {
+        "title": "Hallmarks of Cancer: New Dimensions",
+        "year": "2022",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/35022204/",
+        "sourceType": "review-paper"
+      },
+      "oneSentenceUse": "Use this source to anchor cancer as a core negative-channel and safety-boundary system for any route that increases proliferation, repair or reprogramming pressure.",
+      "humanInfraMapping": {
+        "domainIds": [
+          "cancer-screening-early-detection-continuity",
+          "cellular-reprogramming",
+          "genomic-stability-dna-repair",
+          "immune-maintenance"
+        ],
+        "paperClaimIds": [
+          "HIPAPER-CL1",
+          "HIPAPER-CL3"
+        ],
+        "subjectContinuityVariables": [
+          "tumor-capability-risk",
+          "genomic-instability",
+          "immune-surveillance",
+          "screening-versus-control-boundary"
+        ],
+        "valueLens": "risk boundary for source-maintenance interventions",
+        "safetyBoundary": "Cancer mechanism taxonomy does not prove screening or intervention benefit."
+      },
+      "modelPosition": {
+        "stateVariable": "Tumor-risk and cancer-capability families.",
+        "stateTransition": "Mechanism vocabulary for adverse transitions toward malignant states.",
+        "hazard": "Supports cancer-risk language but not calibrated Human Infra hazard estimates.",
+        "observationProcess": "Suggests screening and surveillance variables require benefit-harm review.",
+        "actionPolicy": "No direct intervention policy.",
+        "timeAccounting": "Cancer risk can constrain healthspan and survival, but no time estimate is imported.",
+        "optionValue": "High cancer risk can destroy future option value even when repair signals improve."
+      },
+      "evidenceRoles": [
+        "mechanism taxonomy",
+        "negative-channel boundary",
+        "safety falsifier"
+      ],
+      "keyExtracts": [
+        "Any growth, regeneration or reprogramming claim needs an explicit cancer-risk channel.",
+        "Cancer control is not equivalent to early detection unless outcomes and harms are addressed.",
+        "Human Infra should treat tumor risk as an abort or downgrade gate for aggressive maintenance routes."
+      ],
+      "supportedUse": "Use to require cancer-risk falsifiers for reprogramming, stem-cell and regenerative routes.",
+      "falsifierUse": "If a route increases proliferative or identity-changing pressure without cancer-risk governance, downgrade or block the claim.",
+      "transferBoundary": "Does not support a specific screening protocol, treatment choice, personal cancer-risk estimate or net survival benefit.",
+      "risksAndMisreadings": [
+        "Cancer-hallmark knowledge can be mistaken for cancer-control capability.",
+        "Screening can be mistaken for mortality reduction without bias and harm review.",
+        "Repair-oriented routes can ignore malignant transformation risk."
+      ],
+      "repositoryAction": "Use as a cross-cutting safety source card for C1/C2 route gates.",
+      "nextExtractionStep": "Pair with screening-bias and clinical endpoint cards before any cancer-control route is promoted."
+    },
+    {
+      "sourceId": "SA-KAPLAN-MEIER-1958",
+      "cardStatus": "field-extracted-v0.1",
+      "sourceIdentity": {
+        "title": "Nonparametric Estimation from Incomplete Observations",
+        "year": "1958",
+        "url": "https://web.stanford.edu/~lutian/coursepdf/KMpaper.pdf",
+        "sourceType": "method-paper"
+      },
+      "oneSentenceUse": "Use this source as the method anchor for aggregate survival-curve thinking and censoring-aware visualization boundaries.",
+      "humanInfraMapping": {
+        "domainIds": [
+          "longevity-evidence",
+          "future-waiting",
+          "biological-age-clocks-biomarker-validation"
+        ],
+        "paperClaimIds": [
+          "HIPAPER-CL2",
+          "HIPAPER-CL5",
+          "HIPAPER-CL7",
+          "HIPAPER-CL9"
+        ],
+        "subjectContinuityVariables": [
+          "survival-function",
+          "censoring-status",
+          "aggregate-endpoint",
+          "time-to-event-boundary"
+        ],
+        "valueLens": "aggregate survival accounting",
+        "safetyBoundary": "Survival method support is not parameter validation."
+      },
+      "modelPosition": {
+        "stateVariable": "Not a biological state variable.",
+        "stateTransition": "Not a transition model.",
+        "hazard": "Complements hazard thinking by estimating survival functions.",
+        "observationProcess": "Requires time-to-event and censoring fields.",
+        "actionPolicy": "No action policy.",
+        "timeAccounting": "Primary use: lifespan and event-time accounting at aggregate level.",
+        "optionValue": "Supports visualizing remaining population-level survival, not personal fate."
+      },
+      "evidenceRoles": [
+        "method standard",
+        "time-to-event estimation",
+        "visualization boundary"
+      ],
+      "keyExtracts": [
+        "Human Infra survival visualizations need censoring-aware aggregate logic.",
+        "A survival curve is not an individual death-date prediction.",
+        "Any model page using S(t) language must specify population, time origin and event definition."
+      ],
+      "supportedUse": "Use to anchor aggregate survival curves and prohibit individual date outputs.",
+      "falsifierUse": "If a chart infers individual remaining life from aggregate survival language, fail the boundary gate.",
+      "transferBoundary": "Does not validate a data source, intervention, scenario parameter, NCG value or personal survival estimate.",
+      "risksAndMisreadings": [
+        "Aggregate curves can be read as personal predictions.",
+        "Censoring assumptions can be ignored.",
+        "Synthetic curves can be mistaken for real calibrated evidence."
+      ],
+      "repositoryAction": "Use as a method card for model and Web visualization gates.",
+      "nextExtractionStep": "Create a survival-visualization checklist covering cohort, time zero, censoring, event and prohibited outputs."
+    },
+    {
+      "sourceId": "SA-COX-1972",
+      "cardStatus": "field-extracted-v0.1",
+      "sourceIdentity": {
+        "title": "Regression Models and Life-Tables",
+        "year": "1972",
+        "url": "https://www.jstor.org/stable/2985181",
+        "sourceType": "method-paper"
+      },
+      "oneSentenceUse": "Use this source as the method anchor for hazard-function and covariate-to-risk language in the Human Infra model contract.",
+      "humanInfraMapping": {
+        "domainIds": [
+          "longevity-evidence",
+          "biological-age-clocks-biomarker-validation",
+          "cardiovascular-resilience"
+        ],
+        "paperClaimIds": [
+          "HIPAPER-CL1",
+          "HIPAPER-CL2"
+        ],
+        "subjectContinuityVariables": [
+          "hazard-function",
+          "covariate-risk-link",
+          "baseline-risk",
+          "time-varying-confounding-boundary"
+        ],
+        "valueLens": "risk-function discipline",
+        "safetyBoundary": "Hazard modeling is not causal proof by itself."
+      },
+      "modelPosition": {
+        "stateVariable": "Covariates may represent state variables if measured.",
+        "stateTransition": "No state transition model unless extended by longitudinal design.",
+        "hazard": "Primary use: risk-function vocabulary and model position.",
+        "observationProcess": "Requires covariate definition, time origin and event outcome.",
+        "actionPolicy": "No action policy without causal design.",
+        "timeAccounting": "Connects risk functions to survival over time.",
+        "optionValue": "Can express risk gradients that affect future option value if validated."
+      },
+      "evidenceRoles": [
+        "method standard",
+        "hazard model",
+        "risk-function boundary"
+      ],
+      "keyExtracts": [
+        "The Human Infra chain should place interventions through variables before hazard changes.",
+        "Association models cannot be treated as intervention simulators without causal assumptions.",
+        "Risk-function language needs explicit covariates, outcome, time origin and validation."
+      ],
+      "supportedUse": "Use to anchor lambda(t) and covariate-risk model language.",
+      "falsifierUse": "If a claim treats a covariate association as do(A) intervention effect, downgrade it to observational association.",
+      "transferBoundary": "Does not prove causality, individual prediction validity, external calibration or a specific intervention effect.",
+      "risksAndMisreadings": [
+        "Hazard ratios can be overread as causal effects.",
+        "Proportional-hazard assumptions can be hidden.",
+        "Population-level risk can be overtransferred to personal advice."
+      ],
+      "repositoryAction": "Use as a required method card for life-path prediction and hazard-position claims.",
+      "nextExtractionStep": "Add a hazard-model reporting checklist aligned with causal and prediction-model cards."
+    },
+    {
+      "sourceId": "SA-TARGET-TRIAL-2022",
+      "cardStatus": "field-extracted-v0.1",
+      "sourceIdentity": {
+        "title": "A Framework for Causal Inference From Observational Data",
+        "year": "2022",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/36508210/",
+        "sourceType": "method-paper"
+      },
+      "oneSentenceUse": "Use this source to anchor the intervention-versus-association boundary and the requirement to emulate a target trial before estimating action effects.",
+      "humanInfraMapping": {
+        "domainIds": [
+          "longevity-evidence",
+          "cellular-reprogramming",
+          "nutrition-metabolic-health",
+          "cardiovascular-resilience"
+        ],
+        "paperClaimIds": [
+          "HIPAPER-CL1",
+          "HIPAPER-CL3",
+          "HIPAPER-CL4"
+        ],
+        "subjectContinuityVariables": [
+          "intervention",
+          "comparator",
+          "eligibility",
+          "time-zero",
+          "endpoint",
+          "confounding-boundary"
+        ],
+        "valueLens": "causal decision discipline",
+        "safetyBoundary": "Causal framing does not remove data quality, confounding or ethics constraints."
+      },
+      "modelPosition": {
+        "stateVariable": "Defines which baseline and time-varying variables must be explicit.",
+        "stateTransition": "Can support intervention-state-transition design if estimand fields are complete.",
+        "hazard": "Hazard effects require target-trial-compatible design.",
+        "observationProcess": "Separates measured history from treatment assignment and outcome.",
+        "actionPolicy": "Primary method anchor for intervention-policy evaluation.",
+        "timeAccounting": "Requires time zero, follow-up and endpoint horizon.",
+        "optionValue": "Helps decide whether a route is actionable or only observational."
+      },
+      "evidenceRoles": [
+        "causal method",
+        "intervention design",
+        "association downgrade gate"
+      ],
+      "keyExtracts": [
+        "Human Infra should ask what trial would answer the intervention question before using observational data.",
+        "Eligibility, treatment strategies, assignment, follow-up, outcome and analysis plan are required for causal claims.",
+        "Without a target-trial frame, technology claims should remain association, mechanism or candidate-route claims."
+      ],
+      "supportedUse": "Use to gate all claims that say a technology or intervention changes lifespan, healthspan, effective time or future option value.",
+      "falsifierUse": "If no intervention, comparator, time zero or endpoint can be specified, mark the route cannot-evaluate for causal effect.",
+      "transferBoundary": "Does not make weak data causal, does not validate unmeasured confounding control and does not produce personal recommendations.",
+      "risksAndMisreadings": [
+        "Target-trial vocabulary can be used without real data feasibility.",
+        "Observational completeness can be mistaken for randomization.",
+        "Actionability can be claimed before eligibility and endpoint are specified."
+      ],
+      "repositoryAction": "Use as a central field-level card for moving from qualitative routes to quantitative estimands.",
+      "nextExtractionStep": "Create a reusable target-trial field template for route cards and future model data manifests."
+    },
+    {
+      "sourceId": "SA-TRIPOD-AI-2024",
+      "cardStatus": "field-extracted-v0.1",
+      "sourceIdentity": {
+        "title": "TRIPOD+AI statement: updated guidance for reporting clinical prediction models",
+        "year": "2024",
+        "url": "https://www.bmj.com/content/385/bmj-2023-078378",
+        "sourceType": "reporting-guideline"
+      },
+      "oneSentenceUse": "Use this source to anchor prediction-model reporting, validation and no-overclaim boundaries for any Human Infra quantitative model page.",
+      "humanInfraMapping": {
+        "domainIds": [
+          "longevity-evidence",
+          "biological-age-clocks-biomarker-validation",
+          "future-waiting"
+        ],
+        "paperClaimIds": [
+          "HIPAPER-CL2",
+          "HIPAPER-CL5",
+          "HIPAPER-CL7",
+          "HIPAPER-CL9",
+          "HIPAPER-CL10"
+        ],
+        "subjectContinuityVariables": [
+          "prediction-target",
+          "model-inputs",
+          "validation-split",
+          "calibration-status",
+          "prohibited-output-boundary"
+        ],
+        "valueLens": "prediction governance",
+        "safetyBoundary": "Reporting guidance does not certify a model as valid."
+      },
+      "modelPosition": {
+        "stateVariable": "Requires explicit predictor and outcome definitions.",
+        "stateTransition": "Not a transition model.",
+        "hazard": "Prediction models may include risk outputs only with validation and calibration.",
+        "observationProcess": "Primary use: reporting the observation and data pipeline.",
+        "actionPolicy": "Does not authorize clinical action.",
+        "timeAccounting": "Requires horizon and outcome timing if time-dependent predictions exist.",
+        "optionValue": "Supports transparent uncertainty and model update boundaries."
+      },
+      "evidenceRoles": [
+        "reporting guideline",
+        "prediction-model boundary",
+        "validation and calibration checklist"
+      ],
+      "keyExtracts": [
+        "Human Infra prediction artifacts must report data, predictors, outcomes, model development, validation and limitations.",
+        "A toy model should be explicitly labeled as toy or synthetic and cannot inherit clinical validity from reporting structure.",
+        "Prediction governance must keep individual death dates and personal medical advice out of current outputs."
+      ],
+      "supportedUse": "Use to gate Web model pages, model cards and future data pipeline reporting.",
+      "falsifierUse": "If a model lacks validation, calibration, outcome definition or prohibited-output boundary, downgrade it to toy or exploratory status.",
+      "transferBoundary": "Does not validate the current toy model, NHATS plan, NCG protocol or any clinical prediction.",
+      "risksAndMisreadings": [
+        "Compliance language can be mistaken for model quality.",
+        "Transparent reporting can be mistaken for clinical usefulness.",
+        "Synthetic outputs can be mistaken for real calibrated predictions."
+      ],
+      "repositoryAction": "Use as a reporting-standard card for MODEL-G7 and no-individual-prediction gates.",
+      "nextExtractionStep": "Create a TRIPOD+AI-aligned model card checklist for Human Infra toy, candidate and real-data model tiers."
+    },
+    {
+      "sourceId": "SA-CAPABILITY-APPROACH",
+      "cardStatus": "field-extracted-v0.1",
+      "sourceIdentity": {
+        "title": "Capability Approach",
+        "year": "living-reference",
+        "url": "https://plato.stanford.edu/entries/capability-approach/",
+        "sourceType": "philosophy-reference"
+      },
+      "oneSentenceUse": "Use this source to anchor the value claim that Human Infra cares about real capability to exist, act, learn, recover and choose, not merely biological duration.",
+      "humanInfraMapping": {
+        "domainIds": [
+          "longevity-evidence",
+          "future-waiting",
+          "brain-preservation-connectomics-emulation",
+          "neuro-continuity",
+          "biostasis-cryopreservation"
+        ],
+        "paperClaimIds": [
+          "HIPAPER-CL3",
+          "HIPAPER-CL4"
+        ],
+        "subjectContinuityVariables": [
+          "agency",
+          "future-option-value",
+          "effective-time",
+          "functioning",
+          "resource-conversion"
+        ],
+        "valueLens": "capability and future choice",
+        "safetyBoundary": "Normative support does not prove empirical effectiveness."
+      },
+      "modelPosition": {
+        "stateVariable": "Functioning and capability states.",
+        "stateTransition": "Conceptual support for how resources convert into action capacity.",
+        "hazard": "No mortality hazard imported.",
+        "observationProcess": "Suggests function and option-value observations beyond biomarkers.",
+        "actionPolicy": "Can shape objective selection, not specific interventions.",
+        "timeAccounting": "Supports effective time and future choice as value-relevant outputs.",
+        "optionValue": "Primary value anchor for option value and possibility-space language."
+      },
+      "evidenceRoles": [
+        "normative framework",
+        "value boundary",
+        "subject-continuity interpretation"
+      ],
+      "keyExtracts": [
+        "The project should not reduce effective immortality to biological survival alone.",
+        "Resources matter through their conversion into real capabilities and future choices.",
+        "Value claims need separate empirical evidence before becoming intervention claims."
+      ],
+      "supportedUse": "Use to explain why effective life, function, agency and future choice are legitimate Human Infra outputs.",
+      "falsifierUse": "If a route extends time while destroying agency, cognition, function or choice, it fails the capability boundary.",
+      "transferBoundary": "Does not prove any biological, AI, social or physical route increases capability; it only frames what would count as valuable.",
+      "risksAndMisreadings": [
+        "Normative legitimacy can be mistaken for empirical support.",
+        "Capability language can become vague unless tied to variables.",
+        "Future choice can be overclaimed without access, adoption and continuity gates."
+      ],
+      "repositoryAction": "Use as a value Source Card connecting HI-CL1/HI-CL3 to measurable function and option-value fields.",
+      "nextExtractionStep": "Create a capability-to-variable crosswalk for effective time, function, agency, recovery and future option value."
+    }
+  ],
+  "coverageSummary": {
+    "selectedSourceAnchors": [
+      "SA-HALLMARKS-AGING-2023",
+      "SA-GRIMAGE-2019",
+      "SA-YAMANAKA-IPS-2006",
+      "SA-PARTIAL-REPROGRAMMING-2016",
+      "SA-HALLMARKS-CANCER-2022",
+      "SA-KAPLAN-MEIER-1958",
+      "SA-COX-1972",
+      "SA-TARGET-TRIAL-2022",
+      "SA-TRIPOD-AI-2024",
+      "SA-CAPABILITY-APPROACH"
+    ],
+    "remainingSourceAnchorCount": 11,
+    "remainingWork": "Extract the remaining 11 anchors, then split domain-level cards for C1/C2 priority claims."
+  },
+  "indexRequirements": [
+    "README.md",
+    "docs/reference/README.md",
+    "docs/reference/human-infra-maturity-roadmap.md",
+    "docs/source-notes/README.md",
+    "tools/README.md"
+  ],
+  "nonClaims": [
+    "This register does not prove any source is sufficient for an intervention claim.",
+    "This register does not permit individual death-date prediction, individual clinical advice, individual lifespan ranking or unvalidated model calibration.",
+    "This register does not complete all field-level Source Cards; it is the first extraction slice.",
+    "This register is a local traceability gate for research framework maturity, not a scientific literature review substitute."
+  ]
+}
