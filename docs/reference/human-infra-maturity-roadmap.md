@@ -9,7 +9,7 @@
 | 轴线 | 当前成熟度 | 100% 状态 | 当前最大缺口 |
 | --- | ---: | --- | --- |
 | 项目价值 | 82% | 不同受众能用同一核心命题理解 Human Infra 的必要性 | 还需要把同一价值语言压入所有论文页和传播页 |
-| 研究框架 | 52% | 每条主张都进入 Source Card、Claim-Evidence Matrix、变量表和反证条件 | 研究域多，但主张级证据闭环还不均匀 |
+| 研究框架 | 54% | 每条主张都进入 Source Card、Claim-Evidence Matrix、变量表和反证条件 | 已有核心主张矩阵和方法锚点，但 C1/C2 具体研究域的主张级证据闭环还不均匀 |
 | 定量模型 | 52% | 有可运行、可复现、可审查的场景级模型管线 | 已有 toy model、合成敏感性分析、审计器、校准预备契约、真实队列候选注册表、数据源 Source Cards、Data Card 模板、NHATS 数据准入草案、变量字典草案和 extraction manifest 草案，但还没有数据访问、精确字段字典、真实提取、外部验证和校准后的敏感性分析 |
 
 ## 价值层 100%
@@ -167,6 +167,7 @@ life_path_toy_model_scenarios.json
 
 这一步已经把项目从“有定量想法的研究叙事”推进到“有最小可执行、可审计模型管线的研究系统”，并且开始把合成敏感性分析、真实队列候选、治理边界和第一份 NHATS 数据准入草案纳入机器审计。下一步不是继续膨胀新域，而是补三件硬东西：
 
+- 用 `human-infra-core-claim-evidence-matrix.md` 作为核心主张入口，把 README、论文页和 Web 页的强叙事都回连到同一组 Claim ID、来源角色和禁止外推边界。
 - 把 C1/C2 核心主张做成 Source Cards 和 Claim-Evidence Matrix。
 - 把 NHATS manifest 从 draft 推进到 governed acquisition-ready，补精确字段名、轮次、缺失码、公开/敏感/受限状态、权重、endpoint 定义、代码本来源和输出抑制规则。
 - 把 sensitivity analysis 从合成一因素扰动推进到基于真实队列、预注册范围和校准诊断的敏感性分析。

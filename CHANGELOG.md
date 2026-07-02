@@ -4,6 +4,7 @@ All notable repository structure changes are recorded here.
 
 ## 2026-07-02
 
+- Added the Human Infra core Claim-Evidence Matrix, binding first-principle project claims to source anchor cards, method translation boundaries, project-level evidence gates, and prohibited extrapolations.
 - Added synthetic life-path sensitivity analysis export, audit coverage, generated Web data, and `/model/` summary panels for one-factor perturbations across hazard multiplier, health-quality shift, capability multiplier, subjective-time expansion, LEV progress rate, and tail-risk penalty.
 - Added the NHATS life-path extraction manifest draft and connected it to local documentation as the pre-extraction governance gate before data download, field extraction, script creation, calibration, validation, or individual prediction.
 - Added the first NHATS life-path Data Card draft and variable-family dictionary, then extended the toy model audit gate to verify NHATS source identity, official source trace, candidate-only boundaries, effective-time proxy, core design/decedent/cognition examples, and cannot-calibrate/cannot-evaluate decisions.

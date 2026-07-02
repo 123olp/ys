@@ -140,6 +140,7 @@ flowchart LR
 | 查看 v0.1 项目边界 | [docs/reference/project-boundary-v0.1.md](docs/reference/project-boundary-v0.1.md) | 当前公开版本里 Human Infra 是什么、不是什么、材料应该落到哪里 |
 | 查看伦理与安全红线 | [docs/reference/ethics-and-safety-boundaries.md](docs/reference/ethics-and-safety-boundaries.md) | 医疗、神经、生命支持和组织使用边界 |
 | 查看证据规则 | [docs/reference/evidence-policy.md](docs/reference/evidence-policy.md) | 如何区分原始资料、证据和稳定结论 |
+| 查看核心主张证据矩阵 | [docs/reference/human-infra-core-claim-evidence-matrix.md](docs/reference/human-infra-core-claim-evidence-matrix.md) | Human Infra 第一性主张、外部方法锚点、证据角色和禁止外推边界 |
 | 查看成熟度路线 | [docs/reference/human-infra-maturity-roadmap.md](docs/reference/human-infra-maturity-roadmap.md) | 从价值讲清、研究框架到可运行定量模型的 100% 状态和当前差距 |
 | 查看定量预测模型 | [模型说明](docs/explanations/life-path-prediction-model.md) / [模型契约](docs/reference/life-path-prediction-model-contract.md) / [模型治理](docs/reference/life-path-prediction-model-governance.md) / [科研工具包](docs/reference/research-model-visualization-toolkit.md) | 如何量化判断技术、因素和干预对寿命、有效时间、主观时间、相对时间和未来选择权的影响 |
 | 整理论文、书籍、工具和案例 | [资料卡片制度](docs/reference/source-card-system.md) / [资料卡片模板](docs/templates/research-card.md) | 把外部资料转成可复用语料、模型变量和 Web 展示材料 |
