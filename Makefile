@@ -1,4 +1,4 @@
-.PHONY: check structure claim-matrix-audit maturity-gap-audit page-claim-audit domain-falsifier-audit py-compile clean
+.PHONY: check structure claim-matrix-audit maturity-gap-audit page-claim-audit paper-claim-audit domain-falsifier-audit py-compile clean
 
 check:
 	$(MAKE) clean
@@ -6,6 +6,7 @@ check:
 	$(MAKE) claim-matrix-audit
 	$(MAKE) maturity-gap-audit
 	$(MAKE) page-claim-audit
+	$(MAKE) paper-claim-audit
 	$(MAKE) domain-falsifier-audit
 	$(MAKE) py-compile
 	$(MAKE) clean
@@ -23,6 +24,9 @@ maturity-gap-audit:
 page-claim-audit:
 	python3 tools/audit_human_infra_page_claim_consistency.py
 
+paper-claim-audit:
+	python3 tools/audit_human_infra_paper_claim_register.py
+
 domain-falsifier-audit:
 	python3 tools/audit_human_infra_domain_falsifier_coverage.py
 
@@ -31,6 +35,7 @@ py-compile:
 		tools/audit_core_claim_evidence_matrix.py \
 		tools/audit_human_infra_maturity_gap_register.py \
 		tools/audit_human_infra_page_claim_consistency.py \
+		tools/audit_human_infra_paper_claim_register.py \
 		tools/audit_human_infra_domain_falsifier_coverage.py \
 		tools/arxiv_html_paper_tool.py \
 		tools/check_repository.py \

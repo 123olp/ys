@@ -6,6 +6,8 @@
 
 页面级主张一致性账本见 [`human-infra-page-claim-consistency.json`](human-infra-page-claim-consistency.json)，由 `make page-claim-audit` 检查 README、Web 首页、论文页和关键 reference 页面是否都保留同一组 Claim ID 与禁止用途边界。
 
+论文页强主张账本见 [`human-infra-paper-claim-register.json`](human-infra-paper-claim-register.json)，由 `make paper-claim-audit` 检查每个 arXiv-style 论文页是否注册了论文级强主张、核心 Claim ID、反证条件、降级动作和禁止用途边界。
+
 域级反证覆盖账本见 [`human-infra-domain-falsifier-coverage.json`](human-infra-domain-falsifier-coverage.json)，由 `make domain-falsifier-audit` 检查 C1 全域和优先 C2 域是否具备强主张、变量接口、反证条件、降级动作和禁止用途脚手架。
 
 ## Claim Spine
@@ -19,7 +21,7 @@
 | 轴线 | 当前成熟度 | 100% 状态 | 当前最大缺口 |
 | --- | ---: | --- | --- |
 | 项目价值 | 88% | 不同受众能用同一核心命题理解 Human Infra 的必要性 | 已有页面级 Claim ID 一致性门禁；还需要补 audience-to-claim map 和邻近项目边界对照 |
-| 研究框架 | 62% | 每条主张都进入 Source Card、Claim-Evidence Matrix、变量表和反证条件 | 已有核心主张矩阵、页面级 Claim ID 门禁、C1/优先 C2 反证覆盖门禁、方法锚点和本地审计门禁，但 C2 长尾域、arXiv 论文页和 Source Cards 的主张级证据闭环还不均匀 |
+| 研究框架 | 66% | 每条主张都进入 Source Card、Claim-Evidence Matrix、变量表和反证条件 | 已有核心主张矩阵、页面级 Claim ID 门禁、arXiv-style 论文页强主张门禁、C1/优先 C2 反证覆盖门禁、方法锚点和本地审计门禁，但 C2 长尾域和 Source Cards 的主张级证据闭环还不均匀 |
 | 定量模型 | 63% | 有可运行、可复现、可审查的场景级模型管线 | 已有 toy model、合成敏感性分析、审计器、校准预备契约、真实队列候选注册表、数据源 Source Cards、Data Card 模板、NHATS 数据准入草案、变量字典草案、extraction manifest 草案、机器可读 acquisition-readiness gates、R13/R14 file-tier table、第一版 NHATS estimand protocol、NHATS variable confirmation matrix、NHATS cohort-flow endpoint-routing protocol、synthetic disclosure-control validator、synthetic survey-design validator、synthetic missingness-route validator、NHATS route-field discovery validator 和 NHATS Colectica value-label review protocol validator，但还没有数据访问、Colectica value labels 精确确认、真实提取、真实 NHATS route classification、真实 NHATS 输出披露审查、真实 survey-design 加权估计、外部验证和校准后的敏感性分析 |
 
 ## 价值层 100%

@@ -114,13 +114,14 @@
     {
       "axisId": "research_framework",
       "axisName": "研究框架",
-      "currentPercent": 62,
+      "currentPercent": 66,
       "targetPercent": 100,
       "definitionOfDone": "Every strong project claim can be traced to source cards, claim-evidence rows, variables, mechanism links, falsifiers, model position and governance boundary.",
       "primaryEvidence": [
         "docs/reference/human-infra-core-claim-evidence-matrix.md",
         "docs/reference/evidence-policy.md",
         "docs/reference/source-card-system.md",
+        "docs/reference/human-infra-paper-claim-register.json",
         "domains/README.md",
         "domains/_possibility-space-control/classification.tsv"
       ],
@@ -201,16 +202,17 @@
           "evidence": [
             "docs/reference/human-infra-core-claim-evidence-matrix.md",
             "docs/reference/human-infra-page-claim-consistency.json",
+            "docs/reference/human-infra-paper-claim-register.json",
             "docs/reference/human-infra-domain-falsifier-coverage.json",
             "tools/audit_human_infra_domain_falsifier_coverage.py",
-            "tools/audit_human_infra_page_claim_consistency.py"
+            "tools/audit_human_infra_page_claim_consistency.py",
+            "tools/audit_human_infra_paper_claim_register.py"
           ],
           "missingEvidence": [
             "Falsifier rows for C2 long-tail domain claims beyond the priority subset.",
-            "Falsifier rows for all arXiv-style paper-specific claim registers.",
             "Source Card backfill that validates each priority-domain falsifier against external or internal evidence."
           ],
-          "nextAction": "Extend priority-domain falsifier coverage into C2 long-tail domains and arXiv-style paper claim registers, then backfill Source Cards.",
+          "nextAction": "Extend priority-domain falsifier coverage into C2 long-tail domains, then backfill Source Cards for paper and domain falsifiers.",
           "blocks100Percent": true
         }
       ]
@@ -357,7 +359,7 @@
   "nextWorkOrder": [
     {
       "priority": 1,
-      "item": "Extend priority-domain falsifier coverage into C2 long-tail domains and arXiv-style paper claim registers.",
+      "item": "Extend priority-domain falsifier coverage into C2 long-tail domains and backfill Source Cards for paper/domain falsifiers.",
       "unblocks": [
         "RESEARCH-G6-falsifier-and-downgrade-coverage"
       ]

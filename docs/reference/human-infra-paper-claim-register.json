@@ -1,0 +1,409 @@
+{
+  "schemaVersion": "human-infra.paper-claim-register.v1",
+  "registerId": "human-infra-arxiv-style-paper-claim-register-2026-07-02",
+  "status": "active-paper-claim-gate",
+  "purpose": "Keep every arXiv-style Human Infra paper page bound to explicit strong claims, core Claim IDs, falsifiers, downgrade actions and prohibited-use boundaries.",
+  "coreMatrix": "docs/reference/human-infra-core-claim-evidence-matrix.md",
+  "pageConsistencyRegister": "docs/reference/human-infra-page-claim-consistency.json",
+  "domainFalsifierRegister": "docs/reference/human-infra-domain-falsifier-coverage.json",
+  "maturityGapRegister": "docs/reference/human-infra-maturity-gap-register.json",
+  "globalRequiredBoundaryPhrases": [
+    "Claim spine",
+    "不是医疗建议",
+    "不输出个体死亡日期",
+    "不证明具体技术已经实现有效永生"
+  ],
+  "papers": [
+    {
+      "paperId": "human-infra-main-paper",
+      "path": "web/src/pages/paper.astro",
+      "paperType": "arxiv-style-working-paper",
+      "arxivId": "human-infra/working-paper.0001",
+      "sourceDataPaths": [],
+      "requiredClaims": [
+        "HI-CL1",
+        "HI-CL2",
+        "HI-CL3",
+        "HI-CL4",
+        "HI-CL6",
+        "HI-CL7"
+      ],
+      "requiredBoundaryPhrases": [
+        "Claim spine",
+        "不是医疗建议",
+        "不输出个体死亡日期",
+        "不证明具体技术已经实现有效永生"
+      ],
+      "strongClaims": [
+        {
+          "claimId": "HIPAPER-CL1",
+          "claimText": "Human Infra can translate singularity-style technology narratives into life-path modeling objects: variables, mechanisms, evidence boundaries, scenarios and visualization contracts.",
+          "linkedCoreClaims": [
+            "HI-CL2",
+            "HI-CL3",
+            "HI-CL4",
+            "HI-CL7"
+          ],
+          "modelPosition": "research-narrative-to-model-translation",
+          "falsifiers": [
+            {
+              "condition": "The page cannot identify variables, state transitions, risk functions or scenario outputs behind a technology narrative.",
+              "downgradeAction": "Downgrade the claim to a learning note and remove model-language framing.",
+              "evidenceNeeded": "A variable map, model contract or source-card row connecting the narrative to HI-CL4."
+            },
+            {
+              "condition": "The cited source only supports a speculative forecast and not a methodological modeling step.",
+              "downgradeAction": "Keep the source as context only and mark the modeling claim as unsupported.",
+              "evidenceNeeded": "Claim-evidence row separating fact, trend, forecast and model use."
+            }
+          ],
+          "prohibitedUses": [
+            "不输出个体死亡日期",
+            "不是医疗建议",
+            "不证明具体技术已经实现有效永生"
+          ]
+        },
+        {
+          "claimId": "HIPAPER-CL2",
+          "claimText": "LEV threshold visualization may express finite, critical and open-boundary states, but it must not become an individual lifespan prediction.",
+          "linkedCoreClaims": [
+            "HI-CL3",
+            "HI-CL6"
+          ],
+          "modelPosition": "screening-visualization-boundary",
+          "falsifiers": [
+            {
+              "condition": "A chart, table or script emits an individual death date, personal remaining-life estimate or personal medical recommendation.",
+              "downgradeAction": "Block the page and fail the model/paper boundary gate.",
+              "evidenceNeeded": "Audit output proving aggregate-only or synthetic-only reporting."
+            },
+            {
+              "condition": "LEV(t) > 1 is presented as guaranteed immortality rather than a scenario-state label.",
+              "downgradeAction": "Rewrite as an open-boundary expression and remove guarantee language.",
+              "evidenceNeeded": "Boundary paragraph and model card prohibited-use row."
+            }
+          ],
+          "prohibitedUses": [
+            "不输出个体死亡日期",
+            "不证明具体技术已经实现有效永生"
+          ]
+        }
+      ]
+    },
+    {
+      "paperId": "effective-immortality-flywheel-paper",
+      "path": "web/src/pages/papers/effective-immortality-flywheel.astro",
+      "paperType": "arxiv-style-working-paper",
+      "arxivId": "human-infra/working-paper.0002",
+      "sourceDataPaths": [],
+      "requiredClaims": [
+        "HI-CL1",
+        "HI-CL2",
+        "HI-CL3",
+        "HI-CL6",
+        "HI-CL7"
+      ],
+      "requiredBoundaryPhrases": [
+        "Claim spine",
+        "不是医疗建议",
+        "不输出个体死亡日期",
+        "不证明具体技术已经实现有效永生"
+      ],
+      "strongClaims": [
+        {
+          "claimId": "HIPAPER-CL3",
+          "claimText": "Effective immortality is framed as a conditional acceleration flywheel linking sustained time, learning rounds, accumulated capability, technology adoption, action quality and possibility space.",
+          "linkedCoreClaims": [
+            "HI-CL1",
+            "HI-CL2",
+            "HI-CL3",
+            "HI-CL7"
+          ],
+          "modelPosition": "conditional-causal-chain",
+          "falsifiers": [
+            {
+              "condition": "Longer survival fails to translate into effective time, learning rounds, capability accumulation or option value.",
+              "downgradeAction": "Downgrade from acceleration flywheel to simple longevity extension.",
+              "evidenceNeeded": "Variable table showing T, E, R, C, A, Q and O links with evidence status."
+            },
+            {
+              "condition": "Technology adoption increases risk, dependency or cognitive load more than it improves action quality.",
+              "downgradeAction": "Mark the corresponding technology family as negative or cannot-evaluate.",
+              "evidenceNeeded": "Task-level evidence register with negative-channel rows."
+            }
+          ],
+          "prohibitedUses": [
+            "不是医疗建议",
+            "不证明具体技术已经实现有效永生"
+          ]
+        },
+        {
+          "claimId": "HIPAPER-CL4",
+          "claimText": "AI, memory tools, social systems and resources can enter the flywheel only through bounded task evidence, not through generic enhancement slogans.",
+          "linkedCoreClaims": [
+            "HI-CL4",
+            "HI-CL5",
+            "HI-CL7"
+          ],
+          "modelPosition": "task-evidence-gated-enhancement",
+          "falsifiers": [
+            {
+              "condition": "A technology claim lacks task, population, comparator, endpoint, uncertainty, cost or adverse-channel fields.",
+              "downgradeAction": "Remove it from the flywheel claim and keep it as a candidate technology.",
+              "evidenceNeeded": "AI Task Evidence Register or equivalent source-card row."
+            },
+            {
+              "condition": "An effect is only a short-term productivity gain and cannot be linked to sustained subject-continuity capacity.",
+              "downgradeAction": "Limit the claim to local task support and remove long-term continuity implication.",
+              "evidenceNeeded": "Mechanism row connecting the task effect to capability, recovery or future option value."
+            }
+          ],
+          "prohibitedUses": [
+            "不输出个体死亡日期",
+            "不证明具体技术已经实现有效永生"
+          ]
+        }
+      ]
+    },
+    {
+      "paperId": "metric-redshift-recursive-waiting-paper",
+      "path": "web/src/pages/papers/metric-redshift-recursive-waiting.astro",
+      "paperType": "arxiv-style-working-paper",
+      "arxivId": "human-infra/working-paper.0003",
+      "sourceDataPaths": [],
+      "requiredClaims": [
+        "HI-CL2",
+        "HI-CL3",
+        "HI-CL4",
+        "HI-CL6",
+        "HI-CL7"
+      ],
+      "requiredBoundaryPhrases": [
+        "Claim spine",
+        "不是医疗建议",
+        "不输出个体死亡日期",
+        "不证明具体技术已经实现有效永生"
+      ],
+      "strongClaims": [
+        {
+          "claimId": "HIPAPER-CL5",
+          "claimText": "Metric-redshift recursive waiting is a conditional protocol: K is a proper-time differential input, not a direct benefit, safety proof or feasibility claim.",
+          "linkedCoreClaims": [
+            "HI-CL3",
+            "HI-CL4",
+            "HI-CL6",
+            "HI-CL7"
+          ],
+          "modelPosition": "future-waiting-screening-protocol",
+          "falsifiers": [
+            {
+              "condition": "A scenario lacks a defined metric, reference observer, subject worldline or K calculation boundary.",
+              "downgradeAction": "Classify the scenario as cannot-evaluate and block NCG calculation.",
+              "evidenceNeeded": "Metric Card and Orbit/Worldline Card."
+            },
+            {
+              "condition": "High K is used to override exit failure, continuity failure or tail-risk abort gates.",
+              "downgradeAction": "Classify the scenario as blocked or negative-under-current-evidence.",
+              "evidenceNeeded": "Abort-gate table showing PExit, PContinuity and RTail thresholds."
+            }
+          ],
+          "prohibitedUses": [
+            "不是医疗建议",
+            "不输出个体死亡日期",
+            "不证明具体技术已经实现有效永生"
+          ]
+        },
+        {
+          "claimId": "HIPAPER-CL6",
+          "claimText": "Recursive waiting requires a Wait-Exit-Upgrade-Repeat state transition in which the upgrade improves the next waiting round's safety, access, repair or governance parameters.",
+          "linkedCoreClaims": [
+            "HI-CL2",
+            "HI-CL4",
+            "HI-CL7"
+          ],
+          "modelPosition": "conditional-recursive-state-transition",
+          "falsifiers": [
+            {
+              "condition": "Exit, adoption or subject-continuity gates are unknown, zero or ungoverned.",
+              "downgradeAction": "Stop at protocol-only status and do not claim a recursive flywheel.",
+              "evidenceNeeded": "Scenario Cards covering Exit, Adoption, Continuity and Risk."
+            },
+            {
+              "condition": "The next state does not improve any waiting condition or increases catastrophic risk.",
+              "downgradeAction": "Classify the recursive step as failed and remove positive recursive language.",
+              "evidenceNeeded": "Upgrade-to-next-round parameter comparison."
+            }
+          ],
+          "prohibitedUses": [
+            "不输出个体死亡日期",
+            "不证明具体技术已经实现有效永生"
+          ]
+        }
+      ]
+    },
+    {
+      "paperId": "proper-time-differential-waiting-paper",
+      "path": "web/src/pages/papers/proper-time-differential-waiting-hypothesis.astro",
+      "paperType": "arxiv-style-working-paper",
+      "arxivId": "human-infra/working-paper.0004",
+      "sourceDataPaths": [],
+      "requiredClaims": [
+        "HI-CL2",
+        "HI-CL3",
+        "HI-CL4",
+        "HI-CL6",
+        "HI-CL7"
+      ],
+      "requiredBoundaryPhrases": [
+        "Claim spine",
+        "不是医疗建议",
+        "不输出个体死亡日期",
+        "不证明具体技术已经实现有效永生"
+      ],
+      "strongClaims": [
+        {
+          "claimId": "HIPAPER-CL7",
+          "claimText": "The public phrase 'black-hole waiting room' is narrowed into the formal research object 'metric-redshift proper-time differential waiting path'.",
+          "linkedCoreClaims": [
+            "HI-CL2",
+            "HI-CL4",
+            "HI-CL7"
+          ],
+          "modelPosition": "terminology-and-scope-control",
+          "falsifiers": [
+            {
+              "condition": "The page discusses black holes without metric, proper-time, external-reference and exit/adoption definitions.",
+              "downgradeAction": "Keep the phrase as a public metaphor only and remove formal-path status.",
+              "evidenceNeeded": "Terminology table and physics-interface section."
+            },
+            {
+              "condition": "The phrase is used to imply resurrection, guaranteed immortality or practical engineering availability.",
+              "downgradeAction": "Block publication until non-goal and prohibited-use boundaries are restored.",
+              "evidenceNeeded": "Non-goal paragraph and prohibited-use language."
+            }
+          ],
+          "prohibitedUses": [
+            "不是医疗建议",
+            "不输出个体死亡日期",
+            "不证明具体技术已经实现有效永生"
+          ]
+        },
+        {
+          "claimId": "HIPAPER-CL8",
+          "claimText": "Scenario cards and qualitative NCG scale must precede any claim that a future-waiting path has positive subject-continuity value.",
+          "linkedCoreClaims": [
+            "HI-CL4",
+            "HI-CL6",
+            "HI-CL7"
+          ],
+          "modelPosition": "screening-before-evaluation",
+          "falsifiers": [
+            {
+              "condition": "A scenario lacks metric, orbit/worldline, continuity, window, risk or exit cards.",
+              "downgradeAction": "Classify as cannot-evaluate and remove positive NCG language.",
+              "evidenceNeeded": "Six-card scenario packet."
+            },
+            {
+              "condition": "The NCG scale is used as a real quantitative prediction without calibrated variables.",
+              "downgradeAction": "Rewrite as qualitative screening only and block numerical prediction claims.",
+              "evidenceNeeded": "Model boundary row distinguishing qualitative scale, toy model and calibrated model."
+            }
+          ],
+          "prohibitedUses": [
+            "不输出个体死亡日期",
+            "不证明具体技术已经实现有效永生"
+          ]
+        }
+      ]
+    },
+    {
+      "paperId": "controllable-metric-waiting-room-paper",
+      "path": "web/src/pages/papers/controllable-metric-waiting-room-hypothesis.astro",
+      "paperType": "arxiv-style-working-paper",
+      "arxivId": "human-infra/working-paper.0005",
+      "sourceDataPaths": [
+        "web/src/data/controllable-metric-waiting-room-hypothesis.json"
+      ],
+      "requiredClaims": [
+        "HI-CL2",
+        "HI-CL3",
+        "HI-CL4",
+        "HI-CL6",
+        "HI-CL7"
+      ],
+      "requiredBoundaryPhrases": [
+        "Claim spine",
+        "不是医疗建议",
+        "不输出个体死亡日期",
+        "不证明具体技术已经实现有效永生"
+      ],
+      "strongClaims": [
+        {
+          "claimId": "HIPAPER-CL9",
+          "claimText": "A controllable metric waiting room is only a hypothesis if metric control, proper-time differential, exit access, subject continuity, technical adoption and governance can be specified together.",
+          "linkedCoreClaims": [
+            "HI-CL2",
+            "HI-CL4",
+            "HI-CL7"
+          ],
+          "modelPosition": "conditional-scenario-requirement",
+          "falsifiers": [
+            {
+              "condition": "The proposed waiting room lacks controllable metric definition, access lifecycle or subject-continuity accounting.",
+              "downgradeAction": "Downgrade to speculative metaphor and remove research-object status.",
+              "evidenceNeeded": "Concept rows, state machine rows and continuity card."
+            },
+            {
+              "condition": "The scenario cannot compare against ordinary waiting, biostasis, relativistic travel or medical acceleration routes.",
+              "downgradeAction": "Mark as incomplete route card and block net-value claims.",
+              "evidenceNeeded": "Comparator row and opportunity-cost field."
+            }
+          ],
+          "prohibitedUses": [
+            "不是医疗建议",
+            "不输出个体死亡日期",
+            "不证明具体技术已经实现有效永生"
+          ]
+        },
+        {
+          "claimId": "HIPAPER-CL10",
+          "claimText": "Toy NCG for controllable waiting rooms is a conceptual screening expression; high K cannot substitute for P_exit, P_adopt, P_cont, residual risk and opportunity-cost review.",
+          "linkedCoreClaims": [
+            "HI-CL3",
+            "HI-CL4",
+            "HI-CL6",
+            "HI-CL7"
+          ],
+          "modelPosition": "toy-screening-expression",
+          "falsifiers": [
+            {
+              "condition": "The page or data treats NCG as a calibrated predictor of individual lifespan, safety or engineering feasibility.",
+              "downgradeAction": "Block the claim and relabel NCG as non-predictive toy screening.",
+              "evidenceNeeded": "Pre-submission review row and prohibited-use statement."
+            },
+            {
+              "condition": "Probability gates are left at implicit 1 or risk terms are omitted.",
+              "downgradeAction": "Classify the scenario as cannot-evaluate or negative depending on missingness and risk state.",
+              "evidenceNeeded": "Gate column rows and risk matrix rows."
+            }
+          ],
+          "prohibitedUses": [
+            "不输出个体死亡日期",
+            "不证明具体技术已经实现有效永生"
+          ]
+        }
+      ]
+    }
+  ],
+  "indexRequirements": [
+    "README.md",
+    "docs/reference/README.md",
+    "docs/reference/human-infra-maturity-roadmap.md",
+    "tools/README.md"
+  ],
+  "nonClaims": [
+    "This register does not prove any paper claim true.",
+    "This register does not validate external physics, biomedical, AI, engineering or governance literature.",
+    "This register only gates local arXiv-style paper pages so strong claims have traceable core Claim IDs, falsifiers, downgrade actions and prohibited-use boundaries."
+  ]
+}
