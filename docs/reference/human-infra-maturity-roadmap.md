@@ -10,7 +10,7 @@
 | --- | ---: | --- | --- |
 | 项目价值 | 82% | 不同受众能用同一核心命题理解 Human Infra 的必要性 | 还需要把同一价值语言压入所有论文页和传播页 |
 | 研究框架 | 55% | 每条主张都进入 Source Card、Claim-Evidence Matrix、变量表和反证条件 | 已有核心主张矩阵、方法锚点和本地审计门禁，但 C1/C2 具体研究域的主张级证据闭环还不均匀 |
-| 定量模型 | 58% | 有可运行、可复现、可审查的场景级模型管线 | 已有 toy model、合成敏感性分析、审计器、校准预备契约、真实队列候选注册表、数据源 Source Cards、Data Card 模板、NHATS 数据准入草案、变量字典草案、extraction manifest 草案、机器可读 acquisition-readiness gates、R13/R14 file-tier table、第一版 NHATS estimand protocol、NHATS variable confirmation matrix 和 NHATS cohort-flow endpoint-routing protocol，但还没有数据访问、Colectica 精确字段确认、真实提取、外部验证和校准后的敏感性分析 |
+| 定量模型 | 59% | 有可运行、可复现、可审查的场景级模型管线 | 已有 toy model、合成敏感性分析、审计器、校准预备契约、真实队列候选注册表、数据源 Source Cards、Data Card 模板、NHATS 数据准入草案、变量字典草案、extraction manifest 草案、机器可读 acquisition-readiness gates、R13/R14 file-tier table、第一版 NHATS estimand protocol、NHATS variable confirmation matrix、NHATS cohort-flow endpoint-routing protocol 和 synthetic disclosure-control validator，但还没有数据访问、Colectica 精确字段确认、真实提取、真实 NHATS 输出披露审查、外部验证和校准后的敏感性分析 |
 
 ## 价值层 100%
 
@@ -166,11 +166,15 @@ life_path_toy_model_scenarios.json
   -> life_path_nhats_first_estimand_protocol.json
   -> life_path_nhats_variable_confirmation_matrix.json
   -> life_path_nhats_cohort_flow_endpoint_protocol.json
+  -> life_path_nhats_disclosure_control_policy.json
+  -> life_path_nhats_disclosure_control_test_cases.json
+  -> validate_nhats_disclosure_outputs.py
+  -> life-path-nhats-disclosure-control-validation.json
   -> /model/ Web 图表
-  -> model card + sanity checks + synthetic sensitivity checks + calibration-readiness audit checks + data-source candidate audit checks + source-card/data-card readiness checks + NHATS data-admission checks + pre-extraction manifest checks + machine-readable acquisition-readiness checks + file-tier table checks + first-estimand protocol checks + variable-confirmation matrix checks + cohort-flow endpoint-routing protocol checks
+  -> model card + sanity checks + synthetic sensitivity checks + calibration-readiness audit checks + data-source candidate audit checks + source-card/data-card readiness checks + NHATS data-admission checks + pre-extraction manifest checks + machine-readable acquisition-readiness checks + file-tier table checks + first-estimand protocol checks + variable-confirmation matrix checks + cohort-flow endpoint-routing protocol checks + synthetic disclosure-control checks
 ```
 
-这一步已经把项目从“有定量想法的研究叙事”推进到“有最小可执行、可审计模型管线的研究系统”，并且开始把合成敏感性分析、真实队列候选、治理边界、第一份 NHATS 数据准入草案、NHATS 机器可读 acquisition-readiness gates、R13/R14 file-tier table、第一版 NHATS estimand protocol、NHATS variable confirmation matrix、NHATS cohort-flow endpoint-routing protocol 和核心主张证据矩阵纳入机器审计。下一步不是继续膨胀新域，而是补三件硬东西：
+这一步已经把项目从“有定量想法的研究叙事”推进到“有最小可执行、可审计模型管线的研究系统”，并且开始把合成敏感性分析、真实队列候选、治理边界、第一份 NHATS 数据准入草案、NHATS 机器可读 acquisition-readiness gates、R13/R14 file-tier table、第一版 NHATS estimand protocol、NHATS variable confirmation matrix、NHATS cohort-flow endpoint-routing protocol、synthetic disclosure-control validator 和核心主张证据矩阵纳入机器审计。下一步不是继续膨胀新域，而是补三件硬东西：
 
 - 继续用 `human-infra-core-claim-evidence-matrix.md` 作为核心主张入口，把 README、论文页和 Web 页的强叙事都回连到同一组 Claim ID、来源角色和禁止外推边界。
 - 把 C1/C2 核心主张做成 Source Cards 和 Claim-Evidence Matrix。
@@ -217,6 +221,9 @@ life_path_toy_model_scenarios.json
 - NHATS first estimand protocol 是否存在，是否预注册 R13/R14 cohort-level functional-survival 研究问题、target population、time zero、outcome、predictor family、censoring/missingness、survey design、readiness gates、aggregate-only 输出边界，并继续禁止下载、抽取、校准、验证和个体预测。
 - NHATS variable confirmation matrix 是否存在，是否记录 Colectica/codebook 字段真相源、User Guide 变量命名/缺失码线索、Technical Paper 55 权重/方差线索、R13/R14 候选字段模式、变量组、cohort-flow 模板、readiness gates、禁止动作和官方来源追踪，并继续阻止从候选字段直接写抽取脚本。
 - NHATS cohort-flow endpoint-routing protocol 是否存在，是否记录 R13/R14 队列流转行、R14 终点路由类、aggregate-only 输出契约、n < 5 披露控制、readiness gates、禁止动作和官方来源追踪，并继续阻止下载、抽取、公开导出、校准和个体预测。
+- NHATS disclosure-control policy 是否存在，是否记录 aggregate-only、n < 5 suppression、row-level block、public AI block、允许输出类型、禁止输出类型和官方来源追踪，并继续阻止真实 public export、校准和个体预测。
+- NHATS disclosure-control synthetic test cases 是否存在，是否覆盖 allow-export 与 block-export、small-cell unsuppressed、small-cell suppressed、row-level leak、public AI upload 和 forbidden output type。
+- NHATS disclosure-control validation 是否存在，是否回到当前 policy/test-case hash，是否 `PASS`，是否 6 个合成用例全通过，并保留 synthetic-only、no-real-data、no-calibration 和 no-individual-prediction 边界。
 
 ## 参考入口
 

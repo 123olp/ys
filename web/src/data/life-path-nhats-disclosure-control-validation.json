@@ -1,0 +1,79 @@
+{
+  "schemaVersion": "human-infra.life-path-nhats-disclosure-control-validation.v1",
+  "generatedAt": "2026-07-02T03:11:27.214913+00:00",
+  "policyPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_disclosure_control_policy.json",
+  "policySha256": "f41f63332d409a234d6b9f49b08274ee8b472faa7cb14ea81c98c85494fc7573",
+  "testCasesPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_disclosure_control_test_cases.json",
+  "testCasesSha256": "0a9cccdbfbd951ba6d04eeb762b9387ba50a13336e4ee4ade43ed976acb4c9c5",
+  "overallStatus": "PASS",
+  "boundary": {
+    "containsRealNhatsData": false,
+    "containsSyntheticOnly": true,
+    "publicExportProofOnly": true,
+    "calibrationAllowed": false,
+    "individualPredictionAllowed": false,
+    "note": "This report validates synthetic output envelopes only; it does not validate real NHATS extraction, calibration, causal inference, clinical use or individual prediction."
+  },
+  "summary": {
+    "caseCount": 6,
+    "pass": 6,
+    "fail": 0,
+    "allowedCount": 2,
+    "blockedCount": 4,
+    "policyIssueCount": 0,
+    "boundaryIssueCount": 0
+  },
+  "cases": [
+    {
+      "id": "synthetic-safe-aggregate",
+      "expectedDecision": "allow-export",
+      "observedDecision": "allow-export",
+      "status": "PASS",
+      "reasons": []
+    },
+    {
+      "id": "synthetic-small-cell-unsuppressed",
+      "expectedDecision": "block-export",
+      "observedDecision": "block-export",
+      "status": "PASS",
+      "reasons": [
+        "cell[0] count below 5 is not suppressed"
+      ]
+    },
+    {
+      "id": "synthetic-small-cell-suppressed",
+      "expectedDecision": "allow-export",
+      "observedDecision": "allow-export",
+      "status": "PASS",
+      "reasons": []
+    },
+    {
+      "id": "synthetic-row-level-leak",
+      "expectedDecision": "block-export",
+      "observedDecision": "block-export",
+      "status": "PASS",
+      "reasons": [
+        "containsRowLevelData must be false"
+      ]
+    },
+    {
+      "id": "synthetic-public-ai-upload",
+      "expectedDecision": "block-export",
+      "observedDecision": "block-export",
+      "status": "PASS",
+      "reasons": [
+        "publicAiUploadRequested must be false"
+      ]
+    },
+    {
+      "id": "synthetic-forbidden-output-type",
+      "expectedDecision": "block-export",
+      "observedDecision": "block-export",
+      "status": "PASS",
+      "reasons": [
+        "outputType 'individual_death_date_prediction' is not allowed",
+        "outputType 'individual_death_date_prediction' is explicitly forbidden"
+      ]
+    }
+  ]
+}

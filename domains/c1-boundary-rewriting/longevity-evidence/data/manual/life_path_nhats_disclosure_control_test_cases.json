@@ -1,0 +1,160 @@
+{
+  "schemaVersion": "human-infra.life-path-nhats-disclosure-control-test-cases.v1",
+  "sourceId": "nhats",
+  "policyId": "nhats-r13-r14-disclosure-control-policy-draft",
+  "status": "synthetic-only-no-real-nhats-data",
+  "currentBoundary": {
+    "containsRealNhatsData": false,
+    "containsSyntheticOnly": true,
+    "publicExportProofOnly": true,
+    "calibrationAllowed": false,
+    "individualPredictionAllowed": false,
+    "reason": "These cases test the disclosure-control validator with synthetic envelopes only. They are not NHATS route counts, cohort counts or participant data."
+  },
+  "cases": [
+    {
+      "id": "synthetic-safe-aggregate",
+      "expectedDecision": "allow-export",
+      "why": "Aggregate output, no row-level data, no public AI upload, and all public cells are at or above the small-cell threshold.",
+      "output": {
+        "schemaVersion": "human-infra.synthetic-nhats-output.v1",
+        "sourceId": "nhats",
+        "outputId": "synthetic-safe-aggregate-output",
+        "outputType": "cohort_flow_counts",
+        "containsRowLevelData": false,
+        "publicExportRequested": true,
+        "publicAiUploadRequested": false,
+        "cells": [
+          {
+            "id": "r13_baseline_candidate_count",
+            "count": 50,
+            "suppressed": false,
+            "sensitivityTier": "aggregate-public-synthetic"
+          },
+          {
+            "id": "r14_endpoint_route_count",
+            "count": 25,
+            "suppressed": false,
+            "sensitivityTier": "aggregate-public-synthetic"
+          }
+        ]
+      }
+    },
+    {
+      "id": "synthetic-small-cell-unsuppressed",
+      "expectedDecision": "block-export",
+      "why": "Public export contains an unsuppressed count below the n < 5 threshold.",
+      "output": {
+        "schemaVersion": "human-infra.synthetic-nhats-output.v1",
+        "sourceId": "nhats",
+        "outputId": "synthetic-small-cell-unsuppressed-output",
+        "outputType": "endpoint_route_counts",
+        "containsRowLevelData": false,
+        "publicExportRequested": true,
+        "publicAiUploadRequested": false,
+        "cells": [
+          {
+            "id": "suppressed_small_cell_candidate",
+            "count": 3,
+            "suppressed": false,
+            "sensitivityTier": "small-cell-synthetic"
+          }
+        ]
+      }
+    },
+    {
+      "id": "synthetic-small-cell-suppressed",
+      "expectedDecision": "allow-export",
+      "why": "Public export contains a count below threshold, but the cell is explicitly suppressed.",
+      "output": {
+        "schemaVersion": "human-infra.synthetic-nhats-output.v1",
+        "sourceId": "nhats",
+        "outputId": "synthetic-small-cell-suppressed-output",
+        "outputType": "endpoint_route_counts",
+        "containsRowLevelData": false,
+        "publicExportRequested": true,
+        "publicAiUploadRequested": false,
+        "cells": [
+          {
+            "id": "small_cell_suppressed_candidate",
+            "count": 3,
+            "suppressed": true,
+            "sensitivityTier": "small-cell-synthetic"
+          },
+          {
+            "id": "regular_route_count",
+            "count": 18,
+            "suppressed": false,
+            "sensitivityTier": "aggregate-public-synthetic"
+          }
+        ]
+      }
+    },
+    {
+      "id": "synthetic-row-level-leak",
+      "expectedDecision": "block-export",
+      "why": "Output envelope declares row-level data.",
+      "output": {
+        "schemaVersion": "human-infra.synthetic-nhats-output.v1",
+        "sourceId": "nhats",
+        "outputId": "synthetic-row-level-leak-output",
+        "outputType": "cohort_flow_counts",
+        "containsRowLevelData": true,
+        "publicExportRequested": true,
+        "publicAiUploadRequested": false,
+        "cells": [
+          {
+            "id": "row_level_like_count",
+            "count": 12,
+            "suppressed": false,
+            "sensitivityTier": "unsafe-synthetic"
+          }
+        ]
+      }
+    },
+    {
+      "id": "synthetic-public-ai-upload",
+      "expectedDecision": "block-export",
+      "why": "Policy blocks public AI upload even when the output is aggregate-shaped.",
+      "output": {
+        "schemaVersion": "human-infra.synthetic-nhats-output.v1",
+        "sourceId": "nhats",
+        "outputId": "synthetic-public-ai-upload-output",
+        "outputType": "missingness_table",
+        "containsRowLevelData": false,
+        "publicExportRequested": true,
+        "publicAiUploadRequested": true,
+        "cells": [
+          {
+            "id": "missingness_route_count",
+            "count": 14,
+            "suppressed": false,
+            "sensitivityTier": "aggregate-public-synthetic"
+          }
+        ]
+      }
+    },
+    {
+      "id": "synthetic-forbidden-output-type",
+      "expectedDecision": "block-export",
+      "why": "Policy blocks individual and row-level output types even if the rest of the envelope is present.",
+      "output": {
+        "schemaVersion": "human-infra.synthetic-nhats-output.v1",
+        "sourceId": "nhats",
+        "outputId": "synthetic-forbidden-output-type-output",
+        "outputType": "individual_death_date_prediction",
+        "containsRowLevelData": false,
+        "publicExportRequested": true,
+        "publicAiUploadRequested": false,
+        "cells": [
+          {
+            "id": "unsafe_individual_output_placeholder",
+            "count": 99,
+            "suppressed": false,
+            "sensitivityTier": "forbidden-output-synthetic"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -121,6 +121,27 @@ DEFAULT_NHATS_COHORT_FLOW_ENDPOINT_PROTOCOL = (
     / "manual"
     / "life_path_nhats_cohort_flow_endpoint_protocol.json"
 )
+DEFAULT_NHATS_DISCLOSURE_POLICY = (
+    REPO_ROOT
+    / "domains"
+    / "c1-boundary-rewriting"
+    / "longevity-evidence"
+    / "data"
+    / "manual"
+    / "life_path_nhats_disclosure_control_policy.json"
+)
+DEFAULT_NHATS_DISCLOSURE_TEST_CASES = (
+    REPO_ROOT
+    / "domains"
+    / "c1-boundary-rewriting"
+    / "longevity-evidence"
+    / "data"
+    / "manual"
+    / "life_path_nhats_disclosure_control_test_cases.json"
+)
+DEFAULT_NHATS_DISCLOSURE_VALIDATION = (
+    REPO_ROOT / "web" / "src" / "data" / "life-path-nhats-disclosure-control-validation.json"
+)
 REQUIRED_MODEL_CARD_FIELDS = {
     "modelName",
     "modelClass",
@@ -361,6 +382,22 @@ REQUIRED_NHATS_COHORT_GATE_IDS = {
     "survey-design-ready",
     "disclosure-control-ready",
     "governed-storage-ready",
+}
+REQUIRED_NHATS_DISCLOSURE_OUTPUT_TYPES = {
+    "cohort_flow_counts",
+    "endpoint_route_counts",
+    "missingness_table",
+    "survey_design_plan",
+    "disclosure_control_report",
+    "aggregate_functional_survival_distribution",
+}
+REQUIRED_NHATS_DISCLOSURE_CASE_IDS = {
+    "synthetic-safe-aggregate",
+    "synthetic-small-cell-unsuppressed",
+    "synthetic-small-cell-suppressed",
+    "synthetic-row-level-leak",
+    "synthetic-public-ai-upload",
+    "synthetic-forbidden-output-type",
 }
 
 
@@ -2505,6 +2542,275 @@ def audit_nhats_cohort_flow_endpoint_protocol(protocol_path: Path) -> dict[str, 
     }
 
 
+def audit_nhats_disclosure_control(
+    policy_path: Path,
+    test_cases_path: Path,
+    validation_path: Path,
+) -> dict[str, Any]:
+    checks: list[dict[str, Any]] = []
+    policy_exists = policy_path.exists()
+    test_cases_exists = test_cases_path.exists()
+    validation_exists = validation_path.exists()
+    add_check(
+        checks,
+        "nhats-disclosure-policy-exists",
+        status_from_bool(policy_exists),
+        str(policy_path.relative_to(REPO_ROOT)),
+    )
+    add_check(
+        checks,
+        "nhats-disclosure-test-cases-exist",
+        status_from_bool(test_cases_exists),
+        str(test_cases_path.relative_to(REPO_ROOT)),
+    )
+    add_check(
+        checks,
+        "nhats-disclosure-validation-exists",
+        status_from_bool(validation_exists),
+        str(validation_path.relative_to(REPO_ROOT)),
+    )
+
+    policy = load_json(policy_path) if policy_exists else {}
+    test_cases = load_json(test_cases_path) if test_cases_exists else {}
+    validation = load_json(validation_path) if validation_exists else {}
+
+    policy_schema_ok = (
+        policy.get("schemaVersion")
+        == "human-infra.life-path-nhats-disclosure-control-policy.v1"
+    )
+    add_check(
+        checks,
+        "nhats-disclosure-policy-schema",
+        status_from_bool(policy_exists and policy_schema_ok),
+        f"schemaVersion={policy.get('schemaVersion')!r}",
+    )
+
+    policy_identity_ok = (
+        policy.get("sourceId") == "nhats"
+        and policy.get("policyId") == "nhats-r13-r14-disclosure-control-policy-draft"
+        and policy.get("cohortFlowEndpointProtocolId")
+        == "nhats-r13-r14-cohort-flow-endpoint-protocol-draft"
+        and policy.get("estimandProtocolId")
+        == "nhats-r13-r14-functional-survival-estimand-protocol-draft"
+        and policy.get("variableConfirmationMatrixId")
+        == "nhats-r13-r14-variable-confirmation-matrix-draft"
+        and policy.get("status") == "policy-draft-validator-required"
+    )
+    add_check(
+        checks,
+        "nhats-disclosure-policy-identity",
+        status_from_bool(policy_exists and policy_identity_ok),
+        "policy must bind NHATS source, cohort-flow protocol, first estimand, variable matrix and draft status",
+    )
+
+    decision = policy.get("currentDecision")
+    decision_ok = (
+        isinstance(decision, dict)
+        and decision.get("publicExportAllowed") is False
+        and decision.get("rowLevelExportAllowed") is False
+        and decision.get("publicAiUploadAllowed") is False
+        and decision.get("smallCellExportAllowed") is False
+        and decision.get("calibrationAllowed") is False
+        and decision.get("individualPredictionAllowed") is False
+    )
+    add_check(
+        checks,
+        "nhats-disclosure-policy-current-decision",
+        status_from_bool(policy_exists and decision_ok),
+        "policy must block public export, row-level export, public AI upload, small-cell export, calibration and individual prediction",
+    )
+
+    rules = policy.get("rules")
+    allowed_output_types = set(rules.get("allowedOutputTypes", [])) if isinstance(rules, dict) else set()
+    forbidden_output_types = set(rules.get("forbiddenOutputTypes", [])) if isinstance(rules, dict) else set()
+    rules_ok = (
+        isinstance(rules, dict)
+        and rules.get("aggregateOnly") is True
+        and rules.get("smallCellThreshold") == 5
+        and REQUIRED_NHATS_DISCLOSURE_OUTPUT_TYPES.issubset(allowed_output_types)
+        and {"row_level_records", "individual_death_date_prediction", "calibration_claim"}.issubset(
+            forbidden_output_types
+        )
+        and has_text(rules.get("publicAiUploadRule", ""), "public LLM")
+        and has_text(rules.get("rowLevelRule", ""), "Row-level")
+    )
+    add_check(
+        checks,
+        "nhats-disclosure-policy-rules",
+        status_from_bool(policy_exists and rules_ok),
+        "policy rules must require aggregate-only output, n<5 suppression, allowed aggregate outputs, forbidden unsafe outputs, row-level block and public-AI block",
+    )
+
+    source_trace = policy.get("sourceTrace")
+    source_trace_ok = (
+        isinstance(source_trace, list)
+        and all(isinstance(url, str) and url.startswith("https://") for url in source_trace)
+        and has_text(source_trace, "conditions-of-use")
+        and has_text(source_trace, "cross-year-search")
+        and has_text(source_trace, "nhats/13")
+        and has_text(source_trace, "nhats/14")
+        and has_text(source_trace, "NHATSUserGuideR14")
+        and has_text(source_trace, "NHATSTechnicalPaper55")
+    )
+    add_check(
+        checks,
+        "nhats-disclosure-policy-source-trace",
+        status_from_bool(policy_exists and source_trace_ok),
+        "policy source trace must include NHATS conditions, Colectica, R13/R14 files, User Guide and Technical Paper 55",
+    )
+
+    cases_schema_ok = (
+        test_cases.get("schemaVersion")
+        == "human-infra.life-path-nhats-disclosure-control-test-cases.v1"
+        and test_cases.get("sourceId") == "nhats"
+        and test_cases.get("policyId") == "nhats-r13-r14-disclosure-control-policy-draft"
+        and test_cases.get("status") == "synthetic-only-no-real-nhats-data"
+    )
+    add_check(
+        checks,
+        "nhats-disclosure-test-cases-schema",
+        status_from_bool(test_cases_exists and cases_schema_ok),
+        "test cases must bind NHATS source and synthetic-only policy status",
+    )
+
+    boundary = test_cases.get("currentBoundary")
+    boundary_ok = (
+        isinstance(boundary, dict)
+        and boundary.get("containsRealNhatsData") is False
+        and boundary.get("containsSyntheticOnly") is True
+        and boundary.get("publicExportProofOnly") is True
+        and boundary.get("calibrationAllowed") is False
+        and boundary.get("individualPredictionAllowed") is False
+    )
+    add_check(
+        checks,
+        "nhats-disclosure-test-cases-boundary",
+        status_from_bool(test_cases_exists and boundary_ok),
+        "test cases must be synthetic-only and prohibit calibration plus individual prediction",
+    )
+
+    cases = test_cases.get("cases")
+    observed_case_ids: set[str] = set()
+    expected_mix_ok = False
+    if isinstance(cases, list):
+        expected_decisions = {
+            str(case.get("expectedDecision"))
+            for case in cases
+            if isinstance(case, dict)
+        }
+        expected_mix_ok = {"allow-export", "block-export"}.issubset(expected_decisions)
+        for case in cases:
+            if isinstance(case, dict) and isinstance(case.get("id"), str):
+                observed_case_ids.add(case["id"])
+    missing_case_ids = sorted(REQUIRED_NHATS_DISCLOSURE_CASE_IDS - observed_case_ids)
+    add_check(
+        checks,
+        "nhats-disclosure-test-case-coverage",
+        status_from_bool(test_cases_exists and isinstance(cases, list) and not missing_case_ids),
+        f"missing_case_ids={missing_case_ids}",
+    )
+    add_check(
+        checks,
+        "nhats-disclosure-test-case-decision-mix",
+        status_from_bool(test_cases_exists and expected_mix_ok),
+        "synthetic cases must include both allowed and blocked examples",
+    )
+
+    validation_schema_ok = (
+        validation.get("schemaVersion")
+        == "human-infra.life-path-nhats-disclosure-control-validation.v1"
+    )
+    add_check(
+        checks,
+        "nhats-disclosure-validation-schema",
+        status_from_bool(validation_exists and validation_schema_ok),
+        f"schemaVersion={validation.get('schemaVersion')!r}",
+    )
+
+    validation_paths_ok = (
+        validation.get("policyPath") == str(policy_path.relative_to(REPO_ROOT))
+        and validation.get("policySha256") == sha256_file(policy_path)
+        and validation.get("testCasesPath") == str(test_cases_path.relative_to(REPO_ROOT))
+        and validation.get("testCasesSha256") == sha256_file(test_cases_path)
+    )
+    add_check(
+        checks,
+        "nhats-disclosure-validation-source-hashes",
+        status_from_bool(validation_exists and validation_paths_ok),
+        "validation report must point back to current policy and test-case hashes",
+    )
+
+    summary = validation.get("summary")
+    validation_summary_ok = (
+        validation.get("overallStatus") == "PASS"
+        and isinstance(summary, dict)
+        and summary.get("caseCount", 0) >= len(REQUIRED_NHATS_DISCLOSURE_CASE_IDS)
+        and summary.get("fail") == 0
+        and summary.get("allowedCount", 0) > 0
+        and summary.get("blockedCount", 0) > 0
+        and summary.get("policyIssueCount") == 0
+        and summary.get("boundaryIssueCount") == 0
+    )
+    add_check(
+        checks,
+        "nhats-disclosure-validation-summary",
+        status_from_bool(validation_exists and validation_summary_ok),
+        "validation report must pass every synthetic case and include both allowed and blocked outputs",
+    )
+
+    validation_cases = validation.get("cases")
+    validation_cases_ok = isinstance(validation_cases, list)
+    validation_case_ids: set[str] = set()
+    if isinstance(validation_cases, list):
+        for case in validation_cases:
+            if not isinstance(case, dict):
+                validation_cases_ok = False
+                continue
+            case_id = case.get("id")
+            if isinstance(case_id, str):
+                validation_case_ids.add(case_id)
+            if case.get("status") != "PASS":
+                validation_cases_ok = False
+            if case.get("observedDecision") != case.get("expectedDecision"):
+                validation_cases_ok = False
+    missing_validation_case_ids = sorted(
+        REQUIRED_NHATS_DISCLOSURE_CASE_IDS - validation_case_ids
+    )
+    add_check(
+        checks,
+        "nhats-disclosure-validation-case-results",
+        status_from_bool(validation_exists and validation_cases_ok and not missing_validation_case_ids),
+        f"missing_validation_case_ids={missing_validation_case_ids}",
+    )
+
+    validation_boundary = validation.get("boundary")
+    validation_boundary_ok = (
+        isinstance(validation_boundary, dict)
+        and validation_boundary.get("containsRealNhatsData") is False
+        and validation_boundary.get("containsSyntheticOnly") is True
+        and validation_boundary.get("calibrationAllowed") is False
+        and validation_boundary.get("individualPredictionAllowed") is False
+    )
+    add_check(
+        checks,
+        "nhats-disclosure-validation-boundary",
+        status_from_bool(validation_exists and validation_boundary_ok),
+        "validation report must preserve synthetic-only, no-real-data, no-calibration and no-individual-prediction boundaries",
+    )
+
+    return {
+        "policyPath": str(policy_path.relative_to(REPO_ROOT)),
+        "policySha256": sha256_file(policy_path) if policy_exists else None,
+        "testCasesPath": str(test_cases_path.relative_to(REPO_ROOT)),
+        "testCasesSha256": sha256_file(test_cases_path) if test_cases_exists else None,
+        "validationPath": str(validation_path.relative_to(REPO_ROOT)),
+        "validationSha256": sha256_file(validation_path) if validation_exists else None,
+        "status": "PASS" if summarize_checks(checks)["fail"] == 0 else "FAIL",
+        "checks": checks,
+        "summary": summarize_checks(checks),
+    }
+
+
 def audit_sensitivity_analysis(
     sensitivity_path: Path,
     model_data: dict[str, Any],
@@ -2748,6 +3054,9 @@ def audit_model(
     nhats_first_estimand_protocol_path: Path,
     nhats_variable_confirmation_matrix_path: Path,
     nhats_cohort_flow_endpoint_protocol_path: Path,
+    nhats_disclosure_policy_path: Path,
+    nhats_disclosure_test_cases_path: Path,
+    nhats_disclosure_validation_path: Path,
 ) -> dict[str, Any]:
     checks: list[dict[str, Any]] = []
     schema_version = data.get("schemaVersion")
@@ -2939,6 +3248,11 @@ def audit_model(
             nhats_cohort_flow_endpoint_protocol_path,
         )
     )
+    nhats_disclosure_control_audit = audit_nhats_disclosure_control(
+        nhats_disclosure_policy_path,
+        nhats_disclosure_test_cases_path,
+        nhats_disclosure_validation_path,
+    )
     sensitivity_audit = audit_sensitivity_analysis(sensitivity_path, data, model_path)
     checks.extend(readiness_audit["checks"])
     checks.extend(data_sources_audit["checks"])
@@ -2950,6 +3264,7 @@ def audit_model(
     checks.extend(nhats_first_estimand_protocol_audit["checks"])
     checks.extend(nhats_variable_confirmation_matrix_audit["checks"])
     checks.extend(nhats_cohort_flow_endpoint_protocol_audit["checks"])
+    checks.extend(nhats_disclosure_control_audit["checks"])
     checks.extend(sensitivity_audit["checks"])
     failed = [check for check in checks if check["status"] == "FAIL"]
     overall = "PASS" if not failed else "FAIL"
@@ -2972,6 +3287,7 @@ def audit_model(
         "nhatsFirstEstimandProtocol": nhats_first_estimand_protocol_audit,
         "nhatsVariableConfirmationMatrix": nhats_variable_confirmation_matrix_audit,
         "nhatsCohortFlowEndpointProtocol": nhats_cohort_flow_endpoint_protocol_audit,
+        "nhatsDisclosureControl": nhats_disclosure_control_audit,
         "sensitivityAnalysis": sensitivity_audit,
     }
 
@@ -3070,6 +3386,17 @@ def render_markdown(audit: dict[str, Any]) -> str:
             f"- Cohort-flow endpoint protocol status: `{audit['nhatsCohortFlowEndpointProtocol']['status']}`",
             "- Boundary: the cohort-flow endpoint protocol pre-registers route classes, aggregate output contracts, disclosure control and blocking gates, but it still blocks download, extraction, endpoint routing, public export, calibration and individual prediction.",
             "",
+            "## NHATS Disclosure Control Validation",
+            "",
+            f"- Disclosure policy path: `{audit['nhatsDisclosureControl']['policyPath']}`",
+            f"- Disclosure policy SHA-256: `{audit['nhatsDisclosureControl']['policySha256']}`",
+            f"- Disclosure test cases path: `{audit['nhatsDisclosureControl']['testCasesPath']}`",
+            f"- Disclosure test cases SHA-256: `{audit['nhatsDisclosureControl']['testCasesSha256']}`",
+            f"- Disclosure validation path: `{audit['nhatsDisclosureControl']['validationPath']}`",
+            f"- Disclosure validation SHA-256: `{audit['nhatsDisclosureControl']['validationSha256']}`",
+            f"- Disclosure validation status: `{audit['nhatsDisclosureControl']['status']}`",
+            "- Boundary: disclosure-control validation proves only that synthetic output envelopes obey aggregate-only, n<5 suppression, row-level blocking, public-AI blocking and forbidden-output rules; it does not authorize real NHATS extraction, public export, calibration, validation or individual prediction.",
+            "",
             "## Sensitivity Analysis",
             "",
             f"- Sensitivity path: `{audit['sensitivityAnalysis']['path']}`",
@@ -3143,6 +3470,21 @@ def parse_args() -> argparse.Namespace:
         type=Path,
         default=DEFAULT_NHATS_COHORT_FLOW_ENDPOINT_PROTOCOL,
     )
+    parser.add_argument(
+        "--nhats-disclosure-policy",
+        type=Path,
+        default=DEFAULT_NHATS_DISCLOSURE_POLICY,
+    )
+    parser.add_argument(
+        "--nhats-disclosure-test-cases",
+        type=Path,
+        default=DEFAULT_NHATS_DISCLOSURE_TEST_CASES,
+    )
+    parser.add_argument(
+        "--nhats-disclosure-validation",
+        type=Path,
+        default=DEFAULT_NHATS_DISCLOSURE_VALIDATION,
+    )
     parser.add_argument("--json-out", type=Path, default=DEFAULT_JSON_OUT)
     parser.add_argument("--md-out", type=Path, default=DEFAULT_MD_OUT)
     return parser.parse_args()
@@ -3168,6 +3510,9 @@ def main() -> int:
     nhats_cohort_flow_endpoint_protocol_path = (
         args.nhats_cohort_flow_endpoint_protocol.resolve()
     )
+    nhats_disclosure_policy_path = args.nhats_disclosure_policy.resolve()
+    nhats_disclosure_test_cases_path = args.nhats_disclosure_test_cases.resolve()
+    nhats_disclosure_validation_path = args.nhats_disclosure_validation.resolve()
     audit = audit_model(
         load_json(model_path),
         model_path,
@@ -3184,6 +3529,9 @@ def main() -> int:
         nhats_first_estimand_protocol_path,
         nhats_variable_confirmation_matrix_path,
         nhats_cohort_flow_endpoint_protocol_path,
+        nhats_disclosure_policy_path,
+        nhats_disclosure_test_cases_path,
+        nhats_disclosure_validation_path,
     )
     args.json_out.parent.mkdir(parents=True, exist_ok=True)
     with args.json_out.open("w", encoding="utf-8") as handle:

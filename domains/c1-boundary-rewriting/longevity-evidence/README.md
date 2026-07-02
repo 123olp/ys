@@ -101,6 +101,13 @@ longevity-evidence/
 │   │   ├── lev_route_cards.tsv
 │   │   ├── life_path_calibration_readiness.json
 │   │   ├── life_path_data_source_candidates.json
+│   │   ├── life_path_nhats_acquisition_readiness.json
+│   │   ├── life_path_nhats_cohort_flow_endpoint_protocol.json
+│   │   ├── life_path_nhats_disclosure_control_policy.json
+│   │   ├── life_path_nhats_disclosure_control_test_cases.json
+│   │   ├── life_path_nhats_file_tier_table.json
+│   │   ├── life_path_nhats_first_estimand_protocol.json
+│   │   ├── life_path_nhats_variable_confirmation_matrix.json
 │   │   └── life_path_toy_model_scenarios.json
 │   └── processed/
 ├── docs/
@@ -126,7 +133,9 @@ longevity-evidence/
     ├── audit_life_path_toy_model.py
     ├── collect_core_data.py
     ├── collect_mvp_data.py
-    └── run_life_path_toy_model.py
+    ├── run_life_path_sensitivity_analysis.py
+    ├── run_life_path_toy_model.py
+    └── validate_nhats_disclosure_outputs.py
 ```
 
 ## MVP
@@ -152,7 +161,7 @@ longevity-evidence/
 
 `docs/lev-source-cards.md` 保存第一批 Source Cards，限定二阶 / 多阶效应理论来源能支持什么、不能支持什么。
 
-`data/manual/life_path_toy_model_scenarios.json`、`data/manual/life_path_calibration_readiness.json`、`data/manual/life_path_data_source_candidates.json`、`data/manual/life_path_nhats_acquisition_readiness.json`、`data/manual/life_path_nhats_file_tier_table.json`、`data/manual/life_path_nhats_first_estimand_protocol.json`、`docs/life-path-data-source-cards.md`、`docs/life-path-data-card-template.md`、`docs/life-path-data-card-nhats.md`、`docs/life-path-variable-dictionary-nhats.md`、`docs/life-path-extraction-manifest-nhats-draft.md`、`scripts/run_life_path_toy_model.py`、`scripts/run_life_path_sensitivity_analysis.py` 和 `scripts/audit_life_path_toy_model.py` 是最小定量管线：输入保存合成场景，校准预备契约记录 target population、time zero、outcome、estimand、validation、calibration、sensitivity 和 prohibited use 等下一阶段字段，候选数据源注册表记录 HRS、NCHS linked mortality、UK Biobank、All of Us、NHATS、ELSA、SHARE 和 Framingham 等可能用于后续校准或外部验证的官方入口与治理边界，Source Cards 把每个候选源的支持范围和禁止外推边界落成可审查文本，Data Card 模板规定真实数据进入模型前必须补齐的治理、设计、变量、质量、验证和禁止输出字段，NHATS Data Card、变量字典草案、extraction manifest 草案、机器可读 acquisition readiness、R13/R14 file-tier table 和第一版 estimand protocol 提供第一份晚年功能/有效时间模型准入样板，并明确未补齐文件名、变量名、权重、缺失码、访问层级、endpoint、cohort flow、survey design、披露控制和输出规则前不能写抽取脚本或下载数据，导出器生成 `web/src/data/life-path-toy-model.json`，敏感性导出器生成 `web/src/data/life-path-sensitivity-analysis.json`，审计器生成 `web/src/data/life-path-toy-model-audit.json` / `.md`。该模型只验证生命路径建模契约、校准预备边界、候选数据源边界、数据卡准入脚手架、提取前治理门禁、第一版 estimand 预注册门和合成敏感性分析，不作为真实医学预测。
+`data/manual/life_path_toy_model_scenarios.json`、`data/manual/life_path_calibration_readiness.json`、`data/manual/life_path_data_source_candidates.json`、`data/manual/life_path_nhats_acquisition_readiness.json`、`data/manual/life_path_nhats_file_tier_table.json`、`data/manual/life_path_nhats_first_estimand_protocol.json`、`data/manual/life_path_nhats_variable_confirmation_matrix.json`、`data/manual/life_path_nhats_cohort_flow_endpoint_protocol.json`、`data/manual/life_path_nhats_disclosure_control_policy.json`、`data/manual/life_path_nhats_disclosure_control_test_cases.json`、`docs/life-path-data-source-cards.md`、`docs/life-path-data-card-template.md`、`docs/life-path-data-card-nhats.md`、`docs/life-path-variable-dictionary-nhats.md`、`docs/life-path-extraction-manifest-nhats-draft.md`、`scripts/run_life_path_toy_model.py`、`scripts/run_life_path_sensitivity_analysis.py`、`scripts/validate_nhats_disclosure_outputs.py` 和 `scripts/audit_life_path_toy_model.py` 是最小定量管线：输入保存合成场景，校准预备契约记录 target population、time zero、outcome、estimand、validation、calibration、sensitivity 和 prohibited use 等下一阶段字段，候选数据源注册表记录 HRS、NCHS linked mortality、UK Biobank、All of Us、NHATS、ELSA、SHARE 和 Framingham 等可能用于后续校准或外部验证的官方入口与治理边界，Source Cards 把每个候选源的支持范围和禁止外推边界落成可审查文本，Data Card 模板规定真实数据进入模型前必须补齐的治理、设计、变量、质量、验证和禁止输出字段，NHATS Data Card、变量字典草案、extraction manifest 草案、机器可读 acquisition readiness、R13/R14 file-tier table、第一版 estimand protocol、variable confirmation matrix、cohort-flow endpoint-routing protocol 和 disclosure-control validator 提供第一份晚年功能/有效时间模型准入与公开导出门禁样板，并明确未补齐文件名、变量名、权重、缺失码、访问层级、endpoint、cohort flow、survey design、披露控制和输出规则前不能写抽取脚本或下载数据，导出器生成 `web/src/data/life-path-toy-model.json`，敏感性导出器生成 `web/src/data/life-path-sensitivity-analysis.json`，披露验证器生成 `web/src/data/life-path-nhats-disclosure-control-validation.json`，审计器生成 `web/src/data/life-path-toy-model-audit.json` / `.md`。该模型只验证生命路径建模契约、校准预备边界、候选数据源边界、数据卡准入脚手架、提取前治理门禁、第一版 estimand 预注册门、合成敏感性分析和合成披露控制门，不作为真实医学预测。
 
 ## 运行示例
 

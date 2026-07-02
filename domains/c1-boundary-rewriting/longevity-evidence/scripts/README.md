@@ -15,7 +15,8 @@
 - `collect_core_data.py`：采集 HAGR、PubChem、openFDA 不良事件聚合和 Drugs@FDA 数据。
 - `run_life_path_toy_model.py`：读取 `data/manual/life_path_toy_model_scenarios.json`，导出 `web/src/data/life-path-toy-model.json` 供 `/model/` 展示。
 - `run_life_path_sensitivity_analysis.py`：读取同一组合成场景和已生成 toy model，导出 `web/src/data/life-path-sensitivity-analysis.json`，用于检查风险倍率、健康质量位移、能力倍率、主观时间、LEV 进度和尾部风险扰动下的场景稳定性。
-- `audit_life_path_toy_model.py`：审计 `web/src/data/life-path-toy-model.json`、`web/src/data/life-path-sensitivity-analysis.json`、`data/manual/life_path_calibration_readiness.json`、`data/manual/life_path_data_source_candidates.json`、`data/manual/life_path_nhats_acquisition_readiness.json`、`data/manual/life_path_nhats_file_tier_table.json`、`data/manual/life_path_nhats_first_estimand_protocol.json`、`data/manual/life_path_nhats_variable_confirmation_matrix.json`、`data/manual/life_path_nhats_cohort_flow_endpoint_protocol.json`、`docs/life-path-data-source-cards.md`、`docs/life-path-data-card-template.md`、`docs/life-path-data-card-nhats.md`、`docs/life-path-variable-dictionary-nhats.md` 和 `docs/life-path-extraction-manifest-nhats-draft.md`，并导出 `web/src/data/life-path-toy-model-audit.json` / `.md`。
+- `validate_nhats_disclosure_outputs.py`：读取 `data/manual/life_path_nhats_disclosure_control_policy.json` 和 `data/manual/life_path_nhats_disclosure_control_test_cases.json`，导出 `web/src/data/life-path-nhats-disclosure-control-validation.json`，验证 NHATS synthetic output envelope 是否满足 aggregate-only、n < 5 suppression、row-level block、public AI block 和 forbidden-output rules。
+- `audit_life_path_toy_model.py`：审计 `web/src/data/life-path-toy-model.json`、`web/src/data/life-path-sensitivity-analysis.json`、`web/src/data/life-path-nhats-disclosure-control-validation.json`、`data/manual/life_path_calibration_readiness.json`、`data/manual/life_path_data_source_candidates.json`、`data/manual/life_path_nhats_acquisition_readiness.json`、`data/manual/life_path_nhats_file_tier_table.json`、`data/manual/life_path_nhats_first_estimand_protocol.json`、`data/manual/life_path_nhats_variable_confirmation_matrix.json`、`data/manual/life_path_nhats_cohort_flow_endpoint_protocol.json`、`data/manual/life_path_nhats_disclosure_control_policy.json`、`data/manual/life_path_nhats_disclosure_control_test_cases.json`、`docs/life-path-data-source-cards.md`、`docs/life-path-data-card-template.md`、`docs/life-path-data-card-nhats.md`、`docs/life-path-variable-dictionary-nhats.md` 和 `docs/life-path-extraction-manifest-nhats-draft.md`，并导出 `web/src/data/life-path-toy-model-audit.json` / `.md`。
 
 运行示例：
 
@@ -24,5 +25,6 @@ python3 domains/c1-boundary-rewriting/longevity-evidence/scripts/collect_mvp_dat
 python3 domains/c1-boundary-rewriting/longevity-evidence/scripts/collect_core_data.py
 python3 domains/c1-boundary-rewriting/longevity-evidence/scripts/run_life_path_toy_model.py
 python3 domains/c1-boundary-rewriting/longevity-evidence/scripts/run_life_path_sensitivity_analysis.py
+python3 domains/c1-boundary-rewriting/longevity-evidence/scripts/validate_nhats_disclosure_outputs.py
 python3 domains/c1-boundary-rewriting/longevity-evidence/scripts/audit_life_path_toy_model.py
 ```

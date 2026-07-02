@@ -1,6 +1,6 @@
 {
   "schemaVersion": "human-infra.life-path-toy-audit.v1",
-  "generatedAt": "2026-07-02T02:56:21.046161+00:00",
+  "generatedAt": "2026-07-02T03:11:27.265830+00:00",
   "modelPath": "web/src/data/life-path-toy-model.json",
   "modelSha256": "a4c92209d79d20579bf1f575d5ebf07ffe5be9ccaf6bf3f3eef08efa287b5377",
   "overallStatus": "PASS",
@@ -696,6 +696,91 @@
       "detail": "source trace must include Cross-Year Search, Conditions, User Guide, Technical Paper 55 and R13/R14 file pages"
     },
     {
+      "id": "nhats-disclosure-policy-exists",
+      "status": "PASS",
+      "detail": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_disclosure_control_policy.json"
+    },
+    {
+      "id": "nhats-disclosure-test-cases-exist",
+      "status": "PASS",
+      "detail": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_disclosure_control_test_cases.json"
+    },
+    {
+      "id": "nhats-disclosure-validation-exists",
+      "status": "PASS",
+      "detail": "web/src/data/life-path-nhats-disclosure-control-validation.json"
+    },
+    {
+      "id": "nhats-disclosure-policy-schema",
+      "status": "PASS",
+      "detail": "schemaVersion='human-infra.life-path-nhats-disclosure-control-policy.v1'"
+    },
+    {
+      "id": "nhats-disclosure-policy-identity",
+      "status": "PASS",
+      "detail": "policy must bind NHATS source, cohort-flow protocol, first estimand, variable matrix and draft status"
+    },
+    {
+      "id": "nhats-disclosure-policy-current-decision",
+      "status": "PASS",
+      "detail": "policy must block public export, row-level export, public AI upload, small-cell export, calibration and individual prediction"
+    },
+    {
+      "id": "nhats-disclosure-policy-rules",
+      "status": "PASS",
+      "detail": "policy rules must require aggregate-only output, n<5 suppression, allowed aggregate outputs, forbidden unsafe outputs, row-level block and public-AI block"
+    },
+    {
+      "id": "nhats-disclosure-policy-source-trace",
+      "status": "PASS",
+      "detail": "policy source trace must include NHATS conditions, Colectica, R13/R14 files, User Guide and Technical Paper 55"
+    },
+    {
+      "id": "nhats-disclosure-test-cases-schema",
+      "status": "PASS",
+      "detail": "test cases must bind NHATS source and synthetic-only policy status"
+    },
+    {
+      "id": "nhats-disclosure-test-cases-boundary",
+      "status": "PASS",
+      "detail": "test cases must be synthetic-only and prohibit calibration plus individual prediction"
+    },
+    {
+      "id": "nhats-disclosure-test-case-coverage",
+      "status": "PASS",
+      "detail": "missing_case_ids=[]"
+    },
+    {
+      "id": "nhats-disclosure-test-case-decision-mix",
+      "status": "PASS",
+      "detail": "synthetic cases must include both allowed and blocked examples"
+    },
+    {
+      "id": "nhats-disclosure-validation-schema",
+      "status": "PASS",
+      "detail": "schemaVersion='human-infra.life-path-nhats-disclosure-control-validation.v1'"
+    },
+    {
+      "id": "nhats-disclosure-validation-source-hashes",
+      "status": "PASS",
+      "detail": "validation report must point back to current policy and test-case hashes"
+    },
+    {
+      "id": "nhats-disclosure-validation-summary",
+      "status": "PASS",
+      "detail": "validation report must pass every synthetic case and include both allowed and blocked outputs"
+    },
+    {
+      "id": "nhats-disclosure-validation-case-results",
+      "status": "PASS",
+      "detail": "missing_validation_case_ids=[]"
+    },
+    {
+      "id": "nhats-disclosure-validation-boundary",
+      "status": "PASS",
+      "detail": "validation report must preserve synthetic-only, no-real-data, no-calibration and no-individual-prediction boundaries"
+    },
+    {
       "id": "sensitivity-analysis-exists",
       "status": "PASS",
       "detail": "web/src/data/life-path-sensitivity-analysis.json"
@@ -752,7 +837,7 @@
     }
   ],
   "summary": {
-    "pass": 149,
+    "pass": 166,
     "warn": 0,
     "fail": 0
   },
@@ -1532,9 +1617,110 @@
       "fail": 0
     }
   },
+  "nhatsDisclosureControl": {
+    "policyPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_disclosure_control_policy.json",
+    "policySha256": "f41f63332d409a234d6b9f49b08274ee8b472faa7cb14ea81c98c85494fc7573",
+    "testCasesPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_disclosure_control_test_cases.json",
+    "testCasesSha256": "0a9cccdbfbd951ba6d04eeb762b9387ba50a13336e4ee4ade43ed976acb4c9c5",
+    "validationPath": "web/src/data/life-path-nhats-disclosure-control-validation.json",
+    "validationSha256": "9158458fea6b006d3fadf3a6c30f310178b755d5e627ca5589f8b0f4189e1c76",
+    "status": "PASS",
+    "checks": [
+      {
+        "id": "nhats-disclosure-policy-exists",
+        "status": "PASS",
+        "detail": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_disclosure_control_policy.json"
+      },
+      {
+        "id": "nhats-disclosure-test-cases-exist",
+        "status": "PASS",
+        "detail": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_disclosure_control_test_cases.json"
+      },
+      {
+        "id": "nhats-disclosure-validation-exists",
+        "status": "PASS",
+        "detail": "web/src/data/life-path-nhats-disclosure-control-validation.json"
+      },
+      {
+        "id": "nhats-disclosure-policy-schema",
+        "status": "PASS",
+        "detail": "schemaVersion='human-infra.life-path-nhats-disclosure-control-policy.v1'"
+      },
+      {
+        "id": "nhats-disclosure-policy-identity",
+        "status": "PASS",
+        "detail": "policy must bind NHATS source, cohort-flow protocol, first estimand, variable matrix and draft status"
+      },
+      {
+        "id": "nhats-disclosure-policy-current-decision",
+        "status": "PASS",
+        "detail": "policy must block public export, row-level export, public AI upload, small-cell export, calibration and individual prediction"
+      },
+      {
+        "id": "nhats-disclosure-policy-rules",
+        "status": "PASS",
+        "detail": "policy rules must require aggregate-only output, n<5 suppression, allowed aggregate outputs, forbidden unsafe outputs, row-level block and public-AI block"
+      },
+      {
+        "id": "nhats-disclosure-policy-source-trace",
+        "status": "PASS",
+        "detail": "policy source trace must include NHATS conditions, Colectica, R13/R14 files, User Guide and Technical Paper 55"
+      },
+      {
+        "id": "nhats-disclosure-test-cases-schema",
+        "status": "PASS",
+        "detail": "test cases must bind NHATS source and synthetic-only policy status"
+      },
+      {
+        "id": "nhats-disclosure-test-cases-boundary",
+        "status": "PASS",
+        "detail": "test cases must be synthetic-only and prohibit calibration plus individual prediction"
+      },
+      {
+        "id": "nhats-disclosure-test-case-coverage",
+        "status": "PASS",
+        "detail": "missing_case_ids=[]"
+      },
+      {
+        "id": "nhats-disclosure-test-case-decision-mix",
+        "status": "PASS",
+        "detail": "synthetic cases must include both allowed and blocked examples"
+      },
+      {
+        "id": "nhats-disclosure-validation-schema",
+        "status": "PASS",
+        "detail": "schemaVersion='human-infra.life-path-nhats-disclosure-control-validation.v1'"
+      },
+      {
+        "id": "nhats-disclosure-validation-source-hashes",
+        "status": "PASS",
+        "detail": "validation report must point back to current policy and test-case hashes"
+      },
+      {
+        "id": "nhats-disclosure-validation-summary",
+        "status": "PASS",
+        "detail": "validation report must pass every synthetic case and include both allowed and blocked outputs"
+      },
+      {
+        "id": "nhats-disclosure-validation-case-results",
+        "status": "PASS",
+        "detail": "missing_validation_case_ids=[]"
+      },
+      {
+        "id": "nhats-disclosure-validation-boundary",
+        "status": "PASS",
+        "detail": "validation report must preserve synthetic-only, no-real-data, no-calibration and no-individual-prediction boundaries"
+      }
+    ],
+    "summary": {
+      "pass": 17,
+      "warn": 0,
+      "fail": 0
+    }
+  },
   "sensitivityAnalysis": {
     "path": "web/src/data/life-path-sensitivity-analysis.json",
-    "sha256": "1bb9d489e06350705a6e2704294efa48091d41a89f609775b6611dc6a6808d0b",
+    "sha256": "13aca8362528eb0d55647fb950d83b0b6dfc2fb9690caee2b72480c93451a6e6",
     "status": "PASS",
     "checks": [
       {

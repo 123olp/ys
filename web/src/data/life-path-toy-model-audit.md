@@ -3,7 +3,7 @@
 - Overall status: `PASS`
 - Model path: `web/src/data/life-path-toy-model.json`
 - Model SHA-256: `a4c92209d79d20579bf1f575d5ebf07ffe5be9ccaf6bf3f3eef08efa287b5377`
-- Generated at: `2026-07-02T02:56:21.046161+00:00`
+- Generated at: `2026-07-02T03:11:27.265830+00:00`
 
 ## Checks
 
@@ -147,6 +147,23 @@
 | `nhats-cohort-flow-endpoint-protocol-prohibited-actions` | `PASS` | protocol must prohibit download, scripts, candidate-name routing, row-level export, individual death-date prediction, public AI upload, small-cell export and calibration claims |
 | `nhats-cohort-flow-endpoint-protocol-next-work` | `PASS` | next work must point to Colectica route fields, canonical files, cohort-flow table, missingness map, disclosure control and survey design |
 | `nhats-cohort-flow-endpoint-protocol-source-trace` | `PASS` | source trace must include Cross-Year Search, Conditions, User Guide, Technical Paper 55 and R13/R14 file pages |
+| `nhats-disclosure-policy-exists` | `PASS` | domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_disclosure_control_policy.json |
+| `nhats-disclosure-test-cases-exist` | `PASS` | domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_disclosure_control_test_cases.json |
+| `nhats-disclosure-validation-exists` | `PASS` | web/src/data/life-path-nhats-disclosure-control-validation.json |
+| `nhats-disclosure-policy-schema` | `PASS` | schemaVersion='human-infra.life-path-nhats-disclosure-control-policy.v1' |
+| `nhats-disclosure-policy-identity` | `PASS` | policy must bind NHATS source, cohort-flow protocol, first estimand, variable matrix and draft status |
+| `nhats-disclosure-policy-current-decision` | `PASS` | policy must block public export, row-level export, public AI upload, small-cell export, calibration and individual prediction |
+| `nhats-disclosure-policy-rules` | `PASS` | policy rules must require aggregate-only output, n<5 suppression, allowed aggregate outputs, forbidden unsafe outputs, row-level block and public-AI block |
+| `nhats-disclosure-policy-source-trace` | `PASS` | policy source trace must include NHATS conditions, Colectica, R13/R14 files, User Guide and Technical Paper 55 |
+| `nhats-disclosure-test-cases-schema` | `PASS` | test cases must bind NHATS source and synthetic-only policy status |
+| `nhats-disclosure-test-cases-boundary` | `PASS` | test cases must be synthetic-only and prohibit calibration plus individual prediction |
+| `nhats-disclosure-test-case-coverage` | `PASS` | missing_case_ids=[] |
+| `nhats-disclosure-test-case-decision-mix` | `PASS` | synthetic cases must include both allowed and blocked examples |
+| `nhats-disclosure-validation-schema` | `PASS` | schemaVersion='human-infra.life-path-nhats-disclosure-control-validation.v1' |
+| `nhats-disclosure-validation-source-hashes` | `PASS` | validation report must point back to current policy and test-case hashes |
+| `nhats-disclosure-validation-summary` | `PASS` | validation report must pass every synthetic case and include both allowed and blocked outputs |
+| `nhats-disclosure-validation-case-results` | `PASS` | missing_validation_case_ids=[] |
+| `nhats-disclosure-validation-boundary` | `PASS` | validation report must preserve synthetic-only, no-real-data, no-calibration and no-individual-prediction boundaries |
 | `sensitivity-analysis-exists` | `PASS` | web/src/data/life-path-sensitivity-analysis.json |
 | `sensitivity-schema-version` | `PASS` | schemaVersion='human-infra.life-path-sensitivity.v1' |
 | `sensitivity-source-model-hash` | `PASS` | sensitivity output must point back to the generated model path and sha256 |
@@ -233,10 +250,21 @@
 - Cohort-flow endpoint protocol status: `PASS`
 - Boundary: the cohort-flow endpoint protocol pre-registers route classes, aggregate output contracts, disclosure control and blocking gates, but it still blocks download, extraction, endpoint routing, public export, calibration and individual prediction.
 
+## NHATS Disclosure Control Validation
+
+- Disclosure policy path: `domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_disclosure_control_policy.json`
+- Disclosure policy SHA-256: `f41f63332d409a234d6b9f49b08274ee8b472faa7cb14ea81c98c85494fc7573`
+- Disclosure test cases path: `domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_disclosure_control_test_cases.json`
+- Disclosure test cases SHA-256: `0a9cccdbfbd951ba6d04eeb762b9387ba50a13336e4ee4ade43ed976acb4c9c5`
+- Disclosure validation path: `web/src/data/life-path-nhats-disclosure-control-validation.json`
+- Disclosure validation SHA-256: `9158458fea6b006d3fadf3a6c30f310178b755d5e627ca5589f8b0f4189e1c76`
+- Disclosure validation status: `PASS`
+- Boundary: disclosure-control validation proves only that synthetic output envelopes obey aggregate-only, n<5 suppression, row-level blocking, public-AI blocking and forbidden-output rules; it does not authorize real NHATS extraction, public export, calibration, validation or individual prediction.
+
 ## Sensitivity Analysis
 
 - Sensitivity path: `web/src/data/life-path-sensitivity-analysis.json`
-- Sensitivity SHA-256: `1bb9d489e06350705a6e2704294efa48091d41a89f609775b6611dc6a6808d0b`
+- Sensitivity SHA-256: `13aca8362528eb0d55647fb950d83b0b6dfc2fb9690caee2b72480c93451a6e6`
 - Sensitivity status: `PASS`
 - Boundary: sensitivity analysis is synthetic one-factor-at-a-time stress testing; it does not prove empirical parameter values, causal effects, calibrated prediction, or individual usefulness.
 

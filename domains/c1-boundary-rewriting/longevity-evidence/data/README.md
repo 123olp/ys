@@ -17,7 +17,10 @@
 - `manual/life_path_nhats_first_estimand_protocol.json` 用于维护 NHATS R13/R14 第一版 aggregate functional-survival estimand 预注册协议；该文件只固定 target population、time zero、outcome、predictor family、censoring、survey design 和输出边界，不授权下载、抽取、校准、验证或个体预测。
 - `manual/life_path_nhats_variable_confirmation_matrix.json` 用于维护 NHATS R13/R14 第一版 estimand 的变量确认矩阵、候选字段模式、cohort-flow 模板和阻塞门；该文件只记录字段搜索空间和缺口，不授权用候选字段写抽取脚本。
 - `manual/life_path_nhats_cohort_flow_endpoint_protocol.json` 用于维护 NHATS R13/R14 队列流转、终点路由、输出契约、披露控制和 readiness gates；该文件只预注册路线与禁止动作，不授权下载、抽取、公开导出、校准或个体预测。
+- `manual/life_path_nhats_disclosure_control_policy.json` 用于维护 NHATS 输出公开导出前的披露控制策略，固定 aggregate-only、n < 5 suppression、row-level export block、public AI upload block、允许输出类型和禁止输出类型。
+- `manual/life_path_nhats_disclosure_control_test_cases.json` 用于维护 NHATS 披露控制 validator 的合成测试用例；该文件只包含 synthetic output envelopes，不包含真实 NHATS 数据或真实 route counts。
 - `web/src/data/life-path-sensitivity-analysis.json` 是从 `manual/life_path_toy_model_scenarios.json` 派生的合成 sensitivity 输出；它不放在本目录内，但由本域脚本生成并由本域审计器检查。
+- `web/src/data/life-path-nhats-disclosure-control-validation.json` 是从披露控制 policy 和 synthetic test cases 派生的验证报告；它不放在本目录内，但由本域脚本生成并由本域审计器检查。
 - 每份数据必须记录来源、抓取时间和处理脚本。
 
 `raw/` 和 `processed/` 是可再生成的数据产物，已在根 `.gitignore` 中按多子域路径忽略；需要保留样例或发布快照时，应先写清来源、版本和体积边界。
@@ -35,7 +38,10 @@
 - `manual/life_path_nhats_first_estimand_protocol.json`：NHATS 第一版 estimand 协议，预注册 R13/R14 cohort-level functional-survival 问题、R13 time zero、R14 endpoint 边界、候选预测变量家族、缺失/删失路由、survey design 阻塞项和 aggregate-only 输出边界。
 - `manual/life_path_nhats_variable_confirmation_matrix.json`：NHATS 变量确认矩阵，记录 Colectica/codebook 作为字段真相源、User Guide 命名/缺失码线索、Technical Paper 55 权重/方差方法线索、候选字段组、cohort-flow 模板、readiness gates 和禁止动作。
 - `manual/life_path_nhats_cohort_flow_endpoint_protocol.json`：NHATS cohort-flow / endpoint-routing 协议，记录 R13/R14 队列流转行、R14 终点路由类、aggregate-only 输出契约、n < 5 披露控制、阻塞门和禁止动作，当前状态为 `protocol-only-cannot-extract`。
+- `manual/life_path_nhats_disclosure_control_policy.json`：NHATS 披露控制策略，记录可公开输出的 aggregate-only 类型、小单元抑制阈值、row-level / public AI / individual prediction / calibration 禁止边界和 validator contract。
+- `manual/life_path_nhats_disclosure_control_test_cases.json`：NHATS 披露控制合成测试集，覆盖 allow-export 与 block-export 两类结果，用于证明 validator 能阻断小单元未抑制、行级泄漏、public AI upload 和禁止输出类型。
 - `../../../../web/src/data/life-path-sensitivity-analysis.json`：由 `run_life_path_sensitivity_analysis.py` 生成的合成敏感性分析输出，记录 48 个一因素扰动结果、场景稳定性摘要、最敏感参数和禁止个体用途边界。
+- `../../../../web/src/data/life-path-nhats-disclosure-control-validation.json`：由 `validate_nhats_disclosure_outputs.py` 生成的 disclosure-control validation 输出，记录 6 个合成用例、policy/test-case hash、allow/block 决策和 synthetic-only 边界。
 - `raw/`：采集脚本保存的原始响应。
 - `processed/`：采集脚本生成的 JSONL 索引和汇总。
 - `processed/hagr/`：HAGR 官方 zip 快照解压后的 CSV 文件。

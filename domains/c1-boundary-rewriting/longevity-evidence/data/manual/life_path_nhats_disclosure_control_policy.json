@@ -1,0 +1,105 @@
+{
+  "schemaVersion": "human-infra.life-path-nhats-disclosure-control-policy.v1",
+  "sourceId": "nhats",
+  "sourceName": "National Health and Aging Trends Study",
+  "policyId": "nhats-r13-r14-disclosure-control-policy-draft",
+  "cohortFlowEndpointProtocolId": "nhats-r13-r14-cohort-flow-endpoint-protocol-draft",
+  "estimandProtocolId": "nhats-r13-r14-functional-survival-estimand-protocol-draft",
+  "variableConfirmationMatrixId": "nhats-r13-r14-variable-confirmation-matrix-draft",
+  "reviewDate": "2026-07-02",
+  "reviewer": "tradecatlabs",
+  "status": "policy-draft-validator-required",
+  "policyPurpose": "Define the minimum disclosure-control gate for any NHATS-derived cohort-flow, endpoint-route, missingness, survey-design or aggregate functional-survival output before it can leave a governed workspace or enter the public Human Infra Web layer.",
+  "currentDecision": {
+    "publicExportAllowed": false,
+    "rowLevelExportAllowed": false,
+    "publicAiUploadAllowed": false,
+    "smallCellExportAllowed": false,
+    "calibrationAllowed": false,
+    "individualPredictionAllowed": false,
+    "reason": "The disclosure policy is registered, but no real NHATS data, exact variables, route counts, survey-design plan, governed workspace or disclosure report exists. Only synthetic validator tests are allowed."
+  },
+  "rules": {
+    "aggregateOnly": true,
+    "smallCellThreshold": 5,
+    "smallCellRule": "For public export, every cell with count below 5 must be suppressed before output. Unsuppressed counts below 5 block export.",
+    "rowLevelRule": "Row-level records, participant identifiers, join keys, interview rows and record-level extracts cannot be exported from the governed workspace.",
+    "publicAiUploadRule": "NHATS/NSOC data and any output that could expose NHATS row-level or small-cell information cannot be uploaded to public LLM or AI platforms.",
+    "allowedOutputTypes": [
+      "cohort_flow_counts",
+      "endpoint_route_counts",
+      "missingness_table",
+      "survey_design_plan",
+      "disclosure_control_report",
+      "aggregate_functional_survival_distribution"
+    ],
+    "forbiddenOutputTypes": [
+      "row_level_records",
+      "individual_death_date_prediction",
+      "personal_medical_advice",
+      "personal_longevity_ranking",
+      "calibration_claim",
+      "validation_claim",
+      "treatment_effect_claim"
+    ],
+    "requiredReportFields": [
+      "schemaVersion",
+      "sourceId",
+      "outputId",
+      "outputType",
+      "containsRowLevelData",
+      "publicExportRequested",
+      "publicAiUploadRequested",
+      "cells"
+    ],
+    "cellFields": [
+      "id",
+      "count",
+      "suppressed",
+      "sensitivityTier"
+    ],
+    "prohibitedKeys": [
+      "spid",
+      "participantId",
+      "personId",
+      "rowRecords",
+      "recordRows",
+      "deathDate",
+      "death_date",
+      "individualDeathDate",
+      "individual_death_date",
+      "predictedDeathDate",
+      "predicted_death_date"
+    ]
+  },
+  "validatorContract": {
+    "validatorScript": "domains/c1-boundary-rewriting/longevity-evidence/scripts/validate_nhats_disclosure_outputs.py",
+    "testCases": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_disclosure_control_test_cases.json",
+    "generatedReport": "web/src/data/life-path-nhats-disclosure-control-validation.json",
+    "requiredDecisionVocabulary": [
+      "allow-export",
+      "block-export"
+    ],
+    "currentBoundary": "synthetic validator only; no real NHATS rows, route counts or cell counts are present in repository"
+  },
+  "sourceTrace": [
+    "https://www.nhats.org/conditions-of-use",
+    "https://www.nhats.org/data-access/cross-year-search",
+    "https://nhats.org/data-access/nhats/13",
+    "https://nhats.org/data-access/nhats/14",
+    "https://nhats.org/sites/default/files/public-documentation/NHATSUserGuideR14_02102026.pdf",
+    "https://nhats.org/sites/default/files/public-documentation/NHATSTechnicalPaper55_09042025.pdf"
+  ],
+  "prohibitedActions": [
+    "Do not export row-level NHATS records.",
+    "Do not upload NHATS data or unsafe derived outputs to public AI systems.",
+    "Do not publicly export unsuppressed cells with count below 5.",
+    "Do not use disclosure validation as evidence of model calibration, predictive validity, causal effect or individual usefulness.",
+    "Do not output individual death dates, personal medical advice or personal longevity rankings."
+  ],
+  "nextWork": [
+    "Run the synthetic validator and publish only the generated validator report.",
+    "After governed access exists, bind real outputs to the same policy before any public export.",
+    "Keep disclosure-control validation separate from model calibration and survey-design validation."
+  ]
+}
