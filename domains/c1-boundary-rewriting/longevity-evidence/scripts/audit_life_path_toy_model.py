@@ -85,6 +85,15 @@ DEFAULT_NHATS_ACQUISITION_READINESS = (
     / "manual"
     / "life_path_nhats_acquisition_readiness.json"
 )
+DEFAULT_NHATS_FILE_TIER_TABLE = (
+    REPO_ROOT
+    / "domains"
+    / "c1-boundary-rewriting"
+    / "longevity-evidence"
+    / "data"
+    / "manual"
+    / "life_path_nhats_file_tier_table.json"
+)
 REQUIRED_MODEL_CARD_FIELDS = {
     "modelName",
     "modelClass",
@@ -203,6 +212,31 @@ REQUIRED_NHATS_ACQUISITION_GATE_IDS = {
     "disclosure-control",
     "ai-boundary",
     "storage-destruction-plan",
+}
+REQUIRED_NHATS_FILE_TIER_ROW_IDS = {
+    "nhats-r13-annual-public-sas",
+    "nhats-r13-annual-public-stata",
+    "nhats-r14-annual-public-sas",
+    "nhats-r14-annual-public-stata",
+    "nhats-r13-clock-drawing-public-tiff",
+    "nhats-r14-clock-drawing-public-tiff",
+    "nhats-r13-sample-person-sensitive-sas",
+    "nhats-r13-sample-person-sensitive-stata",
+    "nhats-r14-sample-person-sensitive-sas",
+    "nhats-r14-sample-person-sensitive-stata",
+    "nhats-r13-other-person-sensitive-sas",
+    "nhats-r13-other-person-sensitive-stata",
+    "nhats-r14-other-person-sensitive-sas",
+    "nhats-r14-other-person-sensitive-stata",
+    "nhats-r13-seasonality-weights-sensitive-sas",
+    "nhats-r13-seasonality-weights-sensitive-stata",
+}
+REQUIRED_NHATS_FILE_TIER_METHOD_DOC_IDS = {
+    "user-guide-r1-r14",
+    "sample-design-faq",
+    "cross-year-search",
+    "round-13-crosswalk",
+    "round-14-crosswalk",
 }
 
 
@@ -1126,6 +1160,7 @@ def audit_nhats_acquisition_readiness(readiness_path: Path) -> dict[str, Any]:
         readiness.get("sourceId") == "nhats"
         and readiness.get("dataCardId") == "nhats-r1-r14-effective-time-draft"
         and readiness.get("manifestId") == "nhats-r1-r14-effective-time-manifest-draft"
+        and readiness.get("fileTierTableId") == "nhats-r13-r14-file-tier-table-draft"
         and readiness.get("status") == "cannot-extract-yet"
     )
     add_check(
@@ -1279,6 +1314,252 @@ def audit_nhats_acquisition_readiness(readiness_path: Path) -> dict[str, Any]:
     return {
         "path": str(readiness_path.relative_to(REPO_ROOT)),
         "sha256": sha256_file(readiness_path) if exists else None,
+        "status": "PASS" if summarize_checks(checks)["fail"] == 0 else "FAIL",
+        "checks": checks,
+        "summary": summarize_checks(checks),
+    }
+
+
+def audit_nhats_file_tier_table(table_path: Path) -> dict[str, Any]:
+    checks: list[dict[str, Any]] = []
+    exists = table_path.exists()
+    add_check(
+        checks,
+        "nhats-file-tier-table-exists",
+        status_from_bool(exists),
+        str(table_path.relative_to(REPO_ROOT)),
+    )
+    table = load_json(table_path) if exists else {}
+
+    schema_ok = table.get("schemaVersion") == "human-infra.life-path-nhats-file-tier-table.v1"
+    add_check(
+        checks,
+        "nhats-file-tier-table-schema",
+        status_from_bool(exists and schema_ok),
+        f"schemaVersion={table.get('schemaVersion')!r}",
+    )
+
+    identity_ok = (
+        table.get("sourceId") == "nhats"
+        and table.get("tableId") == "nhats-r13-r14-file-tier-table-draft"
+        and table.get("dataCardId") == "nhats-r1-r14-effective-time-draft"
+        and table.get("manifestId") == "nhats-r1-r14-effective-time-manifest-draft"
+        and table.get("acquisitionReadinessId") == "nhats-acquisition-readiness-2026-07-02"
+        and table.get("status") == "candidate-file-tier-table-only"
+    )
+    add_check(
+        checks,
+        "nhats-file-tier-table-identity",
+        status_from_bool(exists and identity_ok),
+        "file-tier table must bind NHATS source, Data Card, manifest, acquisition readiness and candidate-only status",
+    )
+
+    decision = table.get("currentDecision")
+    decision_ok = (
+        isinstance(decision, dict)
+        and decision.get("fileTierTableReady") is False
+        and decision.get("downloadAllowed") is False
+        and decision.get("extractionScriptAllowed") is False
+        and decision.get("rawDataAllowedInRepository") is False
+        and decision.get("publicAiUploadAllowed") is False
+        and decision.get("calibrationAllowed") is False
+        and decision.get("individualPredictionAllowed") is False
+    )
+    add_check(
+        checks,
+        "nhats-file-tier-table-current-decision",
+        status_from_bool(exists and decision_ok),
+        "file-tier table must still block download, scripts, repository storage, public AI upload, calibration and individual prediction",
+    )
+
+    round_window = table.get("roundWindowCandidate")
+    round_window_ok = (
+        isinstance(round_window, dict)
+        and round_window.get("baselineRound") == 13
+        and round_window.get("followupRound") == 14
+        and round_window.get("decision") == "candidate-only"
+        and round_window.get("extractionAllowed") is False
+    )
+    add_check(
+        checks,
+        "nhats-file-tier-table-round-window",
+        status_from_bool(exists and round_window_ok),
+        "round-window candidate must remain R13/R14 candidate-only and extraction-blocked",
+    )
+
+    rows = table.get("fileRows")
+    observed_row_ids: set[str] = set()
+    row_shape_ok = True
+    source_paths_ok = True
+    row_boundary_ok = True
+    candidate_core_rows = 0
+    public_rows = 0
+    sensitive_rows = 0
+    if isinstance(rows, list):
+        for row in rows:
+            if not isinstance(row, dict):
+                row_shape_ok = False
+                row_boundary_ok = False
+                continue
+            row_id = row.get("id")
+            if isinstance(row_id, str):
+                observed_row_ids.add(row_id)
+            required_keys = {
+                "round",
+                "fileFamily",
+                "format",
+                "accessTier",
+                "officialPageUrl",
+                "officialFilePath",
+                "downloadStateOnOfficialPage",
+                "publicIndicatorOnOfficialPage",
+                "candidateUse",
+                "whyItMatters",
+                "blocksRemaining",
+                "downloadAllowedNow",
+                "extractionAllowedNow",
+                "repoStorageAllowed",
+                "publicAiUploadAllowed",
+            }
+            if any(key not in row for key in required_keys):
+                row_shape_ok = False
+            if not str(row.get("officialPageUrl", "")).startswith("https://"):
+                source_paths_ok = False
+            if not str(row.get("officialFilePath", "")).startswith("/system/files/"):
+                source_paths_ok = False
+            if not isinstance(row.get("blocksRemaining"), list) or not row["blocksRemaining"]:
+                row_boundary_ok = False
+            if (
+                row.get("downloadAllowedNow") is not False
+                or row.get("extractionAllowedNow") is not False
+                or row.get("repoStorageAllowed") is not False
+                or row.get("publicAiUploadAllowed") is not False
+            ):
+                row_boundary_ok = False
+            if row.get("candidateUse") == "candidate-core":
+                candidate_core_rows += 1
+            if row.get("accessTier") == "public-use-registration-required":
+                public_rows += 1
+            if row.get("accessTier") == "sensitive-application-required":
+                sensitive_rows += 1
+    missing_rows = sorted(REQUIRED_NHATS_FILE_TIER_ROW_IDS - observed_row_ids)
+    add_check(
+        checks,
+        "nhats-file-tier-table-row-coverage",
+        status_from_bool(exists and isinstance(rows, list) and not missing_rows),
+        f"missing_row_ids={missing_rows}",
+    )
+    add_check(
+        checks,
+        "nhats-file-tier-table-row-shape",
+        status_from_bool(exists and row_shape_ok),
+        "each file row must expose file family, format, access tier, official path, planned use and blocking fields",
+    )
+    add_check(
+        checks,
+        "nhats-file-tier-table-source-paths",
+        status_from_bool(exists and source_paths_ok),
+        "file rows must point to official HTTPS pages and official /system/files paths",
+    )
+    add_check(
+        checks,
+        "nhats-file-tier-table-row-boundaries",
+        status_from_bool(exists and row_boundary_ok),
+        "every row must keep download, extraction, repository storage and public AI upload blocked",
+    )
+
+    tier_summary = table.get("tierSummary")
+    tier_summary_ok = (
+        isinstance(tier_summary, dict)
+        and tier_summary.get("fileRowCount") == len(REQUIRED_NHATS_FILE_TIER_ROW_IDS)
+        and tier_summary.get("candidateCoreRows") == candidate_core_rows == 4
+        and tier_summary.get("publicUseRegistrationRequiredRows") == public_rows == 6
+        and tier_summary.get("sensitiveApplicationRequiredRows") == sensitive_rows == 10
+        and tier_summary.get("downloadAllowedRows") == 0
+        and tier_summary.get("extractionAllowedRows") == 0
+        and tier_summary.get("repoStorageAllowedRows") == 0
+        and tier_summary.get("publicAiUploadAllowedRows") == 0
+    )
+    add_check(
+        checks,
+        "nhats-file-tier-table-tier-summary",
+        status_from_bool(exists and tier_summary_ok),
+        "tier summary must match row counts and keep all download/extraction/storage/AI rows blocked",
+    )
+
+    method_docs = table.get("methodDocumentRequirements")
+    observed_doc_ids: set[str] = set()
+    method_docs_ok = True
+    if isinstance(method_docs, list):
+        for doc in method_docs:
+            if not isinstance(doc, dict):
+                method_docs_ok = False
+                continue
+            doc_id = doc.get("id")
+            if isinstance(doc_id, str):
+                observed_doc_ids.add(doc_id)
+            if not str(doc.get("url", "")).startswith("https://"):
+                method_docs_ok = False
+            if not str(doc.get("requiredFor", "")).strip() or not str(doc.get("status", "")).strip():
+                method_docs_ok = False
+    missing_doc_ids = sorted(REQUIRED_NHATS_FILE_TIER_METHOD_DOC_IDS - observed_doc_ids)
+    add_check(
+        checks,
+        "nhats-file-tier-table-method-docs",
+        status_from_bool(exists and isinstance(method_docs, list) and method_docs_ok and not missing_doc_ids),
+        f"missing_method_doc_ids={missing_doc_ids}",
+    )
+
+    prohibited_ok = (
+        has_text(table.get("prohibitedActions", []), "download NHATS files")
+        and has_text(table.get("prohibitedActions", []), "Colectica")
+        and has_text(table.get("prohibitedActions", []), "sensitive files")
+        and has_text(table.get("prohibitedActions", []), "raw NHATS")
+        and has_text(table.get("prohibitedActions", []), "public LLMs")
+        and has_text(table.get("prohibitedActions", []), "individual death-date")
+    )
+    add_check(
+        checks,
+        "nhats-file-tier-table-prohibited-actions",
+        status_from_bool(exists and prohibited_ok),
+        "file-tier table must prohibit premature download, prose-only variables, sensitive-file use, raw storage, public AI upload and individual prediction",
+    )
+
+    next_work_ok = (
+        isinstance(table.get("nextWork"), list)
+        and has_text(table["nextWork"], "canonical public-use annual file format")
+        and has_text(table["nextWork"], "Colectica")
+        and has_text(table["nextWork"], "weights")
+        and has_text(table["nextWork"], "endpoint")
+        and has_text(table["nextWork"], "disclosure-control")
+    )
+    add_check(
+        checks,
+        "nhats-file-tier-table-next-work",
+        status_from_bool(exists and next_work_ok),
+        "next work must point to canonical format, Colectica variables, weights, endpoint and disclosure-control work",
+    )
+
+    source_trace = table.get("sourceTrace")
+    source_trace_ok = (
+        isinstance(source_trace, list)
+        and all(isinstance(url, str) and url.startswith("https://") for url in source_trace)
+        and has_text(source_trace, "nhats/13")
+        and has_text(source_trace, "nhats/14")
+        and has_text(source_trace, "cross-year-search")
+        and has_text(source_trace, "methods-documentation")
+        and has_text(source_trace, "conditions-of-use")
+    )
+    add_check(
+        checks,
+        "nhats-file-tier-table-source-trace",
+        status_from_bool(exists and source_trace_ok),
+        "source trace must include R13/R14 files, Cross-Year Search, methods documentation and Conditions of Use",
+    )
+
+    return {
+        "path": str(table_path.relative_to(REPO_ROOT)),
+        "sha256": sha256_file(table_path) if exists else None,
         "status": "PASS" if summarize_checks(checks)["fail"] == 0 else "FAIL",
         "checks": checks,
         "summary": summarize_checks(checks),
@@ -1524,6 +1805,7 @@ def audit_model(
     nhats_variable_dictionary_path: Path,
     nhats_extraction_manifest_path: Path,
     nhats_acquisition_readiness_path: Path,
+    nhats_file_tier_table_path: Path,
 ) -> dict[str, Any]:
     checks: list[dict[str, Any]] = []
     schema_version = data.get("schemaVersion")
@@ -1701,6 +1983,9 @@ def audit_model(
     nhats_acquisition_readiness_audit = audit_nhats_acquisition_readiness(
         nhats_acquisition_readiness_path,
     )
+    nhats_file_tier_table_audit = audit_nhats_file_tier_table(
+        nhats_file_tier_table_path,
+    )
     sensitivity_audit = audit_sensitivity_analysis(sensitivity_path, data, model_path)
     checks.extend(readiness_audit["checks"])
     checks.extend(data_sources_audit["checks"])
@@ -1708,6 +1993,7 @@ def audit_model(
     checks.extend(nhats_docs_audit["checks"])
     checks.extend(nhats_extraction_manifest_audit["checks"])
     checks.extend(nhats_acquisition_readiness_audit["checks"])
+    checks.extend(nhats_file_tier_table_audit["checks"])
     checks.extend(sensitivity_audit["checks"])
     failed = [check for check in checks if check["status"] == "FAIL"]
     overall = "PASS" if not failed else "FAIL"
@@ -1726,6 +2012,7 @@ def audit_model(
         "nhatsDataAdmission": nhats_docs_audit,
         "nhatsExtractionManifest": nhats_extraction_manifest_audit,
         "nhatsAcquisitionReadiness": nhats_acquisition_readiness_audit,
+        "nhatsFileTierTable": nhats_file_tier_table_audit,
         "sensitivityAnalysis": sensitivity_audit,
     }
 
@@ -1796,6 +2083,13 @@ def render_markdown(audit: dict[str, Any]) -> str:
             f"- Acquisition readiness status: `{audit['nhatsAcquisitionReadiness']['status']}`",
             "- Boundary: the structured readiness contract keeps NHATS at cannot-extract-yet until registration, file-tier, Colectica variables, endpoint, survey design, disclosure control, AI boundary and storage/destruction gates are ready.",
             "",
+            "## NHATS File Tier Table",
+            "",
+            f"- File-tier table path: `{audit['nhatsFileTierTable']['path']}`",
+            f"- File-tier table SHA-256: `{audit['nhatsFileTierTable']['sha256']}`",
+            f"- File-tier table status: `{audit['nhatsFileTierTable']['status']}`",
+            "- Boundary: the file-tier table maps official R13/R14 public and sensitive file families, but it still blocks download, extraction, repository storage, public AI upload, calibration and individual prediction.",
+            "",
             "## Sensitivity Analysis",
             "",
             f"- Sensitivity path: `{audit['sensitivityAnalysis']['path']}`",
@@ -1849,6 +2143,11 @@ def parse_args() -> argparse.Namespace:
         type=Path,
         default=DEFAULT_NHATS_ACQUISITION_READINESS,
     )
+    parser.add_argument(
+        "--nhats-file-tier-table",
+        type=Path,
+        default=DEFAULT_NHATS_FILE_TIER_TABLE,
+    )
     parser.add_argument("--json-out", type=Path, default=DEFAULT_JSON_OUT)
     parser.add_argument("--md-out", type=Path, default=DEFAULT_MD_OUT)
     return parser.parse_args()
@@ -1866,6 +2165,7 @@ def main() -> int:
     nhats_variable_dictionary_path = args.nhats_variable_dictionary.resolve()
     nhats_extraction_manifest_path = args.nhats_extraction_manifest.resolve()
     nhats_acquisition_readiness_path = args.nhats_acquisition_readiness.resolve()
+    nhats_file_tier_table_path = args.nhats_file_tier_table.resolve()
     audit = audit_model(
         load_json(model_path),
         model_path,
@@ -1878,6 +2178,7 @@ def main() -> int:
         nhats_variable_dictionary_path,
         nhats_extraction_manifest_path,
         nhats_acquisition_readiness_path,
+        nhats_file_tier_table_path,
     )
     args.json_out.parent.mkdir(parents=True, exist_ok=True)
     with args.json_out.open("w", encoding="utf-8") as handle:

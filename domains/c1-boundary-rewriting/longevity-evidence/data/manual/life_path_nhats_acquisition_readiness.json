@@ -2,8 +2,11 @@
   "schemaVersion": "human-infra.life-path-nhats-acquisition-readiness.v1",
   "sourceId": "nhats",
   "sourceName": "National Health and Aging Trends Study",
+  "acquisitionReadinessId": "nhats-acquisition-readiness-2026-07-02",
   "dataCardId": "nhats-r1-r14-effective-time-draft",
   "manifestId": "nhats-r1-r14-effective-time-manifest-draft",
+  "fileTierTableId": "nhats-r13-r14-file-tier-table-draft",
+  "fileTierTablePath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_file_tier_table.json",
   "reviewDate": "2026-07-02",
   "reviewer": "tradecatlabs",
   "status": "cannot-extract-yet",
@@ -13,7 +16,7 @@
     "rawDataAllowedInRepository": false,
     "calibrationAllowed": false,
     "individualPredictionAllowed": false,
-    "reason": "Official access, file-tier, Colectica variable confirmation, survey-design plan, endpoint definition, disclosure control and governed storage are not complete."
+    "reason": "Official access and a first R13/R14 file-tier table are documented, but registration, Colectica variable confirmation, survey-design plan, endpoint definition, disclosure control and governed storage are not complete."
   },
   "officialSourceRefresh": [
     {
@@ -77,9 +80,9 @@
     {
       "id": "file-access-tier",
       "requiredEvidence": "For each planned file, record public-use, sensitive or restricted tier, approval status and allowed local storage path.",
-      "status": "missing",
+      "status": "partial",
       "blocksExtraction": true,
-      "nextEvidence": "Build file-tier table from current NHATS file pages."
+      "nextEvidence": "Complete registration state, approval status, canonical format choice and governed storage path for the candidate R13/R14 annual files."
     },
     {
       "id": "colectica-variable-confirmation",
@@ -134,8 +137,8 @@
   "gateSummary": {
     "requiredGateCount": 10,
     "readyGateCount": 0,
-    "partialGateCount": 2,
-    "missingGateCount": 8,
+    "partialGateCount": 3,
+    "missingGateCount": 7,
     "blockingGateCount": 10
   },
   "allowedAiInputs": [
@@ -153,7 +156,7 @@
     "claim calibration or validation before governed cohort diagnostics exist"
   ],
   "nextWork": [
-    "Build a file-tier table for the narrow first estimand from current NHATS round pages.",
+    "Complete the first file-tier table with registration state, canonical format choice, approval status and governed storage path.",
     "Use Cross-Year Search or official codebooks to confirm exact variables for one functional-survival endpoint.",
     "Define survey-design and disclosure-control plans before any extraction script exists.",
     "Keep current decision at cannot-extract-yet until every gate is ready."

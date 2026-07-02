@@ -1,0 +1,508 @@
+{
+  "schemaVersion": "human-infra.life-path-nhats-file-tier-table.v1",
+  "sourceId": "nhats",
+  "sourceName": "National Health and Aging Trends Study",
+  "tableId": "nhats-r13-r14-file-tier-table-draft",
+  "dataCardId": "nhats-r1-r14-effective-time-draft",
+  "manifestId": "nhats-r1-r14-effective-time-manifest-draft",
+  "acquisitionReadinessId": "nhats-acquisition-readiness-2026-07-02",
+  "reviewDate": "2026-07-02",
+  "reviewer": "tradecatlabs",
+  "status": "candidate-file-tier-table-only",
+  "roundWindowCandidate": {
+    "id": "nhats-r13-r14-adjacent-round-functional-survival-candidate",
+    "baselineRound": 13,
+    "followupRound": 14,
+    "reason": "Adjacent recent public annual file families can support the first governed late-life functional-survival design review after registration and exact variable confirmation.",
+    "decision": "candidate-only",
+    "extractionAllowed": false
+  },
+  "currentDecision": {
+    "fileTierTableReady": false,
+    "downloadAllowed": false,
+    "extractionScriptAllowed": false,
+    "rawDataAllowedInRepository": false,
+    "publicAiUploadAllowed": false,
+    "calibrationAllowed": false,
+    "individualPredictionAllowed": false,
+    "reason": "R13/R14 official file families and access tiers are mapped, but registration, exact variables, missing codes, survey-design variables, endpoint rules, governed storage and disclosure-control checks remain incomplete."
+  },
+  "officialPageSignals": [
+    {
+      "id": "round-14-files",
+      "url": "https://nhats.org/data-access/nhats/14",
+      "observedFact": "Round 14 page lists public-use Annual Data Files in SAS and STATA, public-use Clock Drawing Images in TIFF, and sensitive Sample Person and Other Person files in SAS and STATA.",
+      "modelConsequence": "Only R14 public annual files may remain candidate-core for the first public-use path; sensitive files stay excluded until application and approval."
+    },
+    {
+      "id": "round-13-files",
+      "url": "https://nhats.org/data-access/nhats/13",
+      "observedFact": "Round 13 page lists public-use Annual Data Files V2 in SAS and STATA, public-use Clock Drawing Images in TIFF, sensitive Sample Person and Other Person files, and sensitive Seasonality Weights.",
+      "modelConsequence": "Only R13 public annual files may remain candidate-core for the first public-use path; R13 seasonality weights remain blocked unless a sensitive-file application is approved."
+    },
+    {
+      "id": "cross-year-search",
+      "url": "https://nhats.org/data-access/cross-year-search",
+      "observedFact": "Cross-Year Search is a Colectica metadata database containing item numbers, variable names, labels, values, value labels and question text and requires separate registration.",
+      "modelConsequence": "File-tier mapping is insufficient for extraction; exact variables still require Colectica or official codebook confirmation."
+    },
+    {
+      "id": "methods-documentation",
+      "url": "https://nhats.org/nhats/methods-documentation?id=heading0",
+      "observedFact": "Methods documentation exposes the Rounds 1-14 User Guide, sample design and weighting documents, instruments, and instrument-variable crosswalks.",
+      "modelConsequence": "Variable and survey-design gates must be resolved from methods documentation before any derived metric is computed."
+    },
+    {
+      "id": "conditions-of-use",
+      "url": "https://www.nhats.org/conditions-of-use",
+      "observedFact": "NHATS Conditions of Use prohibit identification attempts, unapproved transfers, public LLM or AI uploads, and require aggregate statistical reporting.",
+      "modelConsequence": "The file-tier table cannot authorize raw repository storage, public AI upload, row-level export or individual prediction."
+    }
+  ],
+  "fileRows": [
+    {
+      "id": "nhats-r13-annual-public-sas",
+      "round": 13,
+      "fileFamily": "Annual Data Files",
+      "format": "SAS",
+      "accessTier": "public-use-registration-required",
+      "officialPageUrl": "https://nhats.org/data-access/nhats/13",
+      "officialFilePath": "/system/files/public-use/2026-02/NHATS_R13_Final_Release_SAS_V2.zip",
+      "downloadStateOnOfficialPage": "Live",
+      "publicIndicatorOnOfficialPage": "On",
+      "candidateUse": "candidate-core",
+      "whyItMatters": "Candidate baseline public annual file family for SP status, function, cognition, support, environment and design review.",
+      "blocksRemaining": [
+        "registration-status",
+        "colectica-variable-confirmation",
+        "survey-design-plan",
+        "endpoint-definition",
+        "disclosure-control",
+        "storage-destruction-plan"
+      ],
+      "downloadAllowedNow": false,
+      "extractionAllowedNow": false,
+      "repoStorageAllowed": false,
+      "publicAiUploadAllowed": false
+    },
+    {
+      "id": "nhats-r13-annual-public-stata",
+      "round": 13,
+      "fileFamily": "Annual Data Files",
+      "format": "STATA",
+      "accessTier": "public-use-registration-required",
+      "officialPageUrl": "https://nhats.org/data-access/nhats/13",
+      "officialFilePath": "/system/files/public-use/2026-02/NHATS_R13_Final_Release_STATA_V2.zip",
+      "downloadStateOnOfficialPage": "Live",
+      "publicIndicatorOnOfficialPage": "On",
+      "candidateUse": "candidate-core",
+      "whyItMatters": "Alternative public annual format for the same candidate baseline round; one canonical format must be selected before extraction.",
+      "blocksRemaining": [
+        "registration-status",
+        "canonical-format-selection",
+        "colectica-variable-confirmation",
+        "survey-design-plan",
+        "endpoint-definition",
+        "disclosure-control",
+        "storage-destruction-plan"
+      ],
+      "downloadAllowedNow": false,
+      "extractionAllowedNow": false,
+      "repoStorageAllowed": false,
+      "publicAiUploadAllowed": false
+    },
+    {
+      "id": "nhats-r14-annual-public-sas",
+      "round": 14,
+      "fileFamily": "Annual Data Files",
+      "format": "SAS",
+      "accessTier": "public-use-registration-required",
+      "officialPageUrl": "https://nhats.org/data-access/nhats/14",
+      "officialFilePath": "/system/files/public-use/2026-02/NHATS_R14_Final_Release_SAS.zip",
+      "downloadStateOnOfficialPage": "Live",
+      "publicIndicatorOnOfficialPage": "On",
+      "candidateUse": "candidate-core",
+      "whyItMatters": "Candidate follow-up public annual file family for adjacent-round functional-survival state review.",
+      "blocksRemaining": [
+        "registration-status",
+        "colectica-variable-confirmation",
+        "survey-design-plan",
+        "endpoint-definition",
+        "disclosure-control",
+        "storage-destruction-plan"
+      ],
+      "downloadAllowedNow": false,
+      "extractionAllowedNow": false,
+      "repoStorageAllowed": false,
+      "publicAiUploadAllowed": false
+    },
+    {
+      "id": "nhats-r14-annual-public-stata",
+      "round": 14,
+      "fileFamily": "Annual Data Files",
+      "format": "STATA",
+      "accessTier": "public-use-registration-required",
+      "officialPageUrl": "https://nhats.org/data-access/nhats/14",
+      "officialFilePath": "/system/files/public-use/2026-02/NHATS_R14_Final_Release_STATA.zip",
+      "downloadStateOnOfficialPage": "Live",
+      "publicIndicatorOnOfficialPage": "On",
+      "candidateUse": "candidate-core",
+      "whyItMatters": "Alternative public annual format for the same candidate follow-up round; one canonical format must be selected before extraction.",
+      "blocksRemaining": [
+        "registration-status",
+        "canonical-format-selection",
+        "colectica-variable-confirmation",
+        "survey-design-plan",
+        "endpoint-definition",
+        "disclosure-control",
+        "storage-destruction-plan"
+      ],
+      "downloadAllowedNow": false,
+      "extractionAllowedNow": false,
+      "repoStorageAllowed": false,
+      "publicAiUploadAllowed": false
+    },
+    {
+      "id": "nhats-r13-clock-drawing-public-tiff",
+      "round": 13,
+      "fileFamily": "Clock Drawing Images",
+      "format": "TIFF",
+      "accessTier": "public-use-registration-required",
+      "officialPageUrl": "https://nhats.org/data-access/nhats/13",
+      "officialFilePath": "/system/files/public-use/2026-01/NHATS_R13_ClockDrawings.zip",
+      "downloadStateOnOfficialPage": "Live",
+      "publicIndicatorOnOfficialPage": "On",
+      "candidateUse": "excluded-media-first-pass",
+      "whyItMatters": "Potential cognitive signal, but image processing, disclosure and scoring rules are outside the first functional-survival extraction.",
+      "blocksRemaining": [
+        "registration-status",
+        "image-processing-protocol",
+        "disclosure-control",
+        "storage-destruction-plan"
+      ],
+      "downloadAllowedNow": false,
+      "extractionAllowedNow": false,
+      "repoStorageAllowed": false,
+      "publicAiUploadAllowed": false
+    },
+    {
+      "id": "nhats-r14-clock-drawing-public-tiff",
+      "round": 14,
+      "fileFamily": "Clock Drawing Images",
+      "format": "TIFF",
+      "accessTier": "public-use-registration-required",
+      "officialPageUrl": "https://nhats.org/data-access/nhats/14",
+      "officialFilePath": "/system/files/public-use/2026-01/NHATS_R14_ClockDrawings.zip",
+      "downloadStateOnOfficialPage": "Live",
+      "publicIndicatorOnOfficialPage": "On",
+      "candidateUse": "excluded-media-first-pass",
+      "whyItMatters": "Potential cognitive signal, but image processing, disclosure and scoring rules are outside the first functional-survival extraction.",
+      "blocksRemaining": [
+        "registration-status",
+        "image-processing-protocol",
+        "disclosure-control",
+        "storage-destruction-plan"
+      ],
+      "downloadAllowedNow": false,
+      "extractionAllowedNow": false,
+      "repoStorageAllowed": false,
+      "publicAiUploadAllowed": false
+    },
+    {
+      "id": "nhats-r13-sample-person-sensitive-sas",
+      "round": 13,
+      "fileFamily": "Sample Person",
+      "format": "SAS",
+      "accessTier": "sensitive-application-required",
+      "officialPageUrl": "https://nhats.org/data-access/nhats/13",
+      "officialFilePath": "/system/files/sensitive/2026-01/NHATS_R13_SP_Sen_Dem_SAS.zip",
+      "downloadStateOnOfficialPage": "Live",
+      "publicIndicatorOnOfficialPage": "Off",
+      "candidateUse": "excluded-sensitive",
+      "whyItMatters": "Sensitive demographics can improve model context but require additional application and are outside the public-use first pass.",
+      "blocksRemaining": [
+        "sensitive-file-application",
+        "approval-status",
+        "restricted-workspace",
+        "disclosure-control"
+      ],
+      "downloadAllowedNow": false,
+      "extractionAllowedNow": false,
+      "repoStorageAllowed": false,
+      "publicAiUploadAllowed": false
+    },
+    {
+      "id": "nhats-r13-sample-person-sensitive-stata",
+      "round": 13,
+      "fileFamily": "Sample Person",
+      "format": "STATA",
+      "accessTier": "sensitive-application-required",
+      "officialPageUrl": "https://nhats.org/data-access/nhats/13",
+      "officialFilePath": "/system/files/sensitive/2026-01/NHATS_R13_SP_Sen_Dem_STATA.zip",
+      "downloadStateOnOfficialPage": "Live",
+      "publicIndicatorOnOfficialPage": "Off",
+      "candidateUse": "excluded-sensitive",
+      "whyItMatters": "Alternative sensitive SP format; excluded until approval and canonical format selection.",
+      "blocksRemaining": [
+        "sensitive-file-application",
+        "approval-status",
+        "restricted-workspace",
+        "disclosure-control"
+      ],
+      "downloadAllowedNow": false,
+      "extractionAllowedNow": false,
+      "repoStorageAllowed": false,
+      "publicAiUploadAllowed": false
+    },
+    {
+      "id": "nhats-r14-sample-person-sensitive-sas",
+      "round": 14,
+      "fileFamily": "Sample Person",
+      "format": "SAS",
+      "accessTier": "sensitive-application-required",
+      "officialPageUrl": "https://nhats.org/data-access/nhats/14",
+      "officialFilePath": "/system/files/sensitive/2026-02/NHATS_Round_14_SP_Sen_Dem_File_SAS.zip",
+      "downloadStateOnOfficialPage": "Live",
+      "publicIndicatorOnOfficialPage": "Off",
+      "candidateUse": "excluded-sensitive",
+      "whyItMatters": "Sensitive demographics can improve model context but require additional application and are outside the public-use first pass.",
+      "blocksRemaining": [
+        "sensitive-file-application",
+        "approval-status",
+        "restricted-workspace",
+        "disclosure-control"
+      ],
+      "downloadAllowedNow": false,
+      "extractionAllowedNow": false,
+      "repoStorageAllowed": false,
+      "publicAiUploadAllowed": false
+    },
+    {
+      "id": "nhats-r14-sample-person-sensitive-stata",
+      "round": 14,
+      "fileFamily": "Sample Person",
+      "format": "STATA",
+      "accessTier": "sensitive-application-required",
+      "officialPageUrl": "https://nhats.org/data-access/nhats/14",
+      "officialFilePath": "/system/files/sensitive/2026-02/NHATS_Round_14_SP_Sen_Dem_File_STATA.zip",
+      "downloadStateOnOfficialPage": "Live",
+      "publicIndicatorOnOfficialPage": "Off",
+      "candidateUse": "excluded-sensitive",
+      "whyItMatters": "Alternative sensitive SP format; excluded until approval and canonical format selection.",
+      "blocksRemaining": [
+        "sensitive-file-application",
+        "approval-status",
+        "restricted-workspace",
+        "disclosure-control"
+      ],
+      "downloadAllowedNow": false,
+      "extractionAllowedNow": false,
+      "repoStorageAllowed": false,
+      "publicAiUploadAllowed": false
+    },
+    {
+      "id": "nhats-r13-other-person-sensitive-sas",
+      "round": 13,
+      "fileFamily": "Other Person",
+      "format": "SAS",
+      "accessTier": "sensitive-application-required",
+      "officialPageUrl": "https://nhats.org/data-access/nhats/13",
+      "officialFilePath": "/system/files/sensitive/2026-01/NHATS_R13_OP_Sen_Dem_SAS.zip",
+      "downloadStateOnOfficialPage": "Live",
+      "publicIndicatorOnOfficialPage": "Off",
+      "candidateUse": "excluded-sensitive",
+      "whyItMatters": "Other-person sensitive files may support helper network context but are outside the public-use first pass.",
+      "blocksRemaining": [
+        "sensitive-file-application",
+        "approval-status",
+        "restricted-workspace",
+        "disclosure-control"
+      ],
+      "downloadAllowedNow": false,
+      "extractionAllowedNow": false,
+      "repoStorageAllowed": false,
+      "publicAiUploadAllowed": false
+    },
+    {
+      "id": "nhats-r13-other-person-sensitive-stata",
+      "round": 13,
+      "fileFamily": "Other Person",
+      "format": "STATA",
+      "accessTier": "sensitive-application-required",
+      "officialPageUrl": "https://nhats.org/data-access/nhats/13",
+      "officialFilePath": "/system/files/sensitive/2026-01/NHATS_R13_OP_Sen_Dem_STATA.zip",
+      "downloadStateOnOfficialPage": "Live",
+      "publicIndicatorOnOfficialPage": "Off",
+      "candidateUse": "excluded-sensitive",
+      "whyItMatters": "Alternative OP sensitive format; excluded until approval and canonical format selection.",
+      "blocksRemaining": [
+        "sensitive-file-application",
+        "approval-status",
+        "restricted-workspace",
+        "disclosure-control"
+      ],
+      "downloadAllowedNow": false,
+      "extractionAllowedNow": false,
+      "repoStorageAllowed": false,
+      "publicAiUploadAllowed": false
+    },
+    {
+      "id": "nhats-r14-other-person-sensitive-sas",
+      "round": 14,
+      "fileFamily": "Other Person",
+      "format": "SAS",
+      "accessTier": "sensitive-application-required",
+      "officialPageUrl": "https://nhats.org/data-access/nhats/14",
+      "officialFilePath": "/system/files/sensitive/2026-02/NHATS_Round_14_OP_Sen_Dem_Files_SAS.zip",
+      "downloadStateOnOfficialPage": "Live",
+      "publicIndicatorOnOfficialPage": "Off",
+      "candidateUse": "excluded-sensitive",
+      "whyItMatters": "Other-person sensitive files may support helper network context but are outside the public-use first pass.",
+      "blocksRemaining": [
+        "sensitive-file-application",
+        "approval-status",
+        "restricted-workspace",
+        "disclosure-control"
+      ],
+      "downloadAllowedNow": false,
+      "extractionAllowedNow": false,
+      "repoStorageAllowed": false,
+      "publicAiUploadAllowed": false
+    },
+    {
+      "id": "nhats-r14-other-person-sensitive-stata",
+      "round": 14,
+      "fileFamily": "Other Person",
+      "format": "STATA",
+      "accessTier": "sensitive-application-required",
+      "officialPageUrl": "https://nhats.org/data-access/nhats/14",
+      "officialFilePath": "/system/files/sensitive/2026-02/NHATS_Round_14_OP_Sen_Dem_Files_STATA.zip",
+      "downloadStateOnOfficialPage": "Live",
+      "publicIndicatorOnOfficialPage": "Off",
+      "candidateUse": "excluded-sensitive",
+      "whyItMatters": "Alternative OP sensitive format; excluded until approval and canonical format selection.",
+      "blocksRemaining": [
+        "sensitive-file-application",
+        "approval-status",
+        "restricted-workspace",
+        "disclosure-control"
+      ],
+      "downloadAllowedNow": false,
+      "extractionAllowedNow": false,
+      "repoStorageAllowed": false,
+      "publicAiUploadAllowed": false
+    },
+    {
+      "id": "nhats-r13-seasonality-weights-sensitive-sas",
+      "round": 13,
+      "fileFamily": "Seasonality Weights",
+      "format": "SAS",
+      "accessTier": "sensitive-application-required",
+      "officialPageUrl": "https://nhats.org/data-access/nhats/13",
+      "officialFilePath": "/system/files/sensitive/2026-01/NHATS_R13_Seasonal_Weights_SAS.zip",
+      "downloadStateOnOfficialPage": "Live",
+      "publicIndicatorOnOfficialPage": "Off",
+      "candidateUse": "blocked-design-extension",
+      "whyItMatters": "May affect seasonality-adjusted analysis but requires sensitive-file application; the first public-use model must not silently depend on it.",
+      "blocksRemaining": [
+        "sensitive-file-application",
+        "survey-design-plan",
+        "approval-status",
+        "restricted-workspace"
+      ],
+      "downloadAllowedNow": false,
+      "extractionAllowedNow": false,
+      "repoStorageAllowed": false,
+      "publicAiUploadAllowed": false
+    },
+    {
+      "id": "nhats-r13-seasonality-weights-sensitive-stata",
+      "round": 13,
+      "fileFamily": "Seasonality Weights",
+      "format": "STATA",
+      "accessTier": "sensitive-application-required",
+      "officialPageUrl": "https://nhats.org/data-access/nhats/13",
+      "officialFilePath": "/system/files/sensitive/2026-01/NHATS_R13_Seasonal_Weights_STATA.zip",
+      "downloadStateOnOfficialPage": "Live",
+      "publicIndicatorOnOfficialPage": "Off",
+      "candidateUse": "blocked-design-extension",
+      "whyItMatters": "Alternative sensitive seasonality weight format; blocked until sensitive-file access and survey-design plan are approved.",
+      "blocksRemaining": [
+        "sensitive-file-application",
+        "survey-design-plan",
+        "approval-status",
+        "restricted-workspace"
+      ],
+      "downloadAllowedNow": false,
+      "extractionAllowedNow": false,
+      "repoStorageAllowed": false,
+      "publicAiUploadAllowed": false
+    }
+  ],
+  "methodDocumentRequirements": [
+    {
+      "id": "user-guide-r1-r14",
+      "url": "https://nhats.org/sites/default/files/public-documentation/NHATSUserGuideR14_02102026.pdf",
+      "requiredFor": "data file structure, created measures, interview routes, longitudinal content and model-role interpretation",
+      "status": "required-not-yet-extracted"
+    },
+    {
+      "id": "sample-design-faq",
+      "url": "https://nhats.org/sites/default/files/public-documentation/NHATSTechnicalPaper55_09042025.pdf",
+      "requiredFor": "sample design, weights, strata, clusters, variance estimation and national estimates",
+      "status": "required-not-yet-extracted"
+    },
+    {
+      "id": "cross-year-search",
+      "url": "https://nhats.org/data-access/cross-year-search",
+      "requiredFor": "exact item numbers, variable names, labels, value labels and question text",
+      "status": "required-not-yet-registered"
+    },
+    {
+      "id": "round-13-crosswalk",
+      "url": "https://nhats.org/nhats/methods-documentation?id=heading0",
+      "requiredFor": "R13 instrument-to-variable mapping and V1/V2 change review",
+      "status": "required-not-yet-extracted"
+    },
+    {
+      "id": "round-14-crosswalk",
+      "url": "https://nhats.org/nhats/methods-documentation?id=heading0",
+      "requiredFor": "R14 instrument-to-variable mapping and beta/final change review",
+      "status": "required-not-yet-extracted"
+    }
+  ],
+  "tierSummary": {
+    "fileRowCount": 16,
+    "candidateCoreRows": 4,
+    "publicUseRegistrationRequiredRows": 6,
+    "sensitiveApplicationRequiredRows": 10,
+    "downloadAllowedRows": 0,
+    "extractionAllowedRows": 0,
+    "repoStorageAllowedRows": 0,
+    "publicAiUploadAllowedRows": 0
+  },
+  "prohibitedActions": [
+    "download NHATS files before registration and governed storage are approved",
+    "select exact variables from prose instead of Colectica or official crosswalks",
+    "treat public-use registration-required files as open public web data",
+    "use sensitive files before application approval",
+    "store raw NHATS or NSOC files in this repository",
+    "upload raw or row-level NHATS or NSOC data to public LLMs or AI platforms",
+    "compute model calibration or validation from this table alone",
+    "produce individual death-date prediction or personal medical advice"
+  ],
+  "nextWork": [
+    "Choose one canonical public-use annual file format for R13/R14 after registration.",
+    "Confirm exact field names, labels, value labels and missing codes through Colectica or official crosswalks.",
+    "Bind round-specific weights, strata and cluster variables before any metric calculation.",
+    "Define endpoint and censoring rules before observing data.",
+    "Create a governed storage and disclosure-control runbook before download."
+  ],
+  "sourceTrace": [
+    "https://nhats.org/data-access/nhats/13",
+    "https://nhats.org/data-access/nhats/14",
+    "https://nhats.org/data-access/cross-year-search",
+    "https://nhats.org/nhats/methods-documentation?id=heading0",
+    "https://www.nhats.org/conditions-of-use"
+  ]
+}

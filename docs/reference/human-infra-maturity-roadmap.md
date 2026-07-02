@@ -10,7 +10,7 @@
 | --- | ---: | --- | --- |
 | 项目价值 | 82% | 不同受众能用同一核心命题理解 Human Infra 的必要性 | 还需要把同一价值语言压入所有论文页和传播页 |
 | 研究框架 | 55% | 每条主张都进入 Source Card、Claim-Evidence Matrix、变量表和反证条件 | 已有核心主张矩阵、方法锚点和本地审计门禁，但 C1/C2 具体研究域的主张级证据闭环还不均匀 |
-| 定量模型 | 54% | 有可运行、可复现、可审查的场景级模型管线 | 已有 toy model、合成敏感性分析、审计器、校准预备契约、真实队列候选注册表、数据源 Source Cards、Data Card 模板、NHATS 数据准入草案、变量字典草案、extraction manifest 草案和机器可读 acquisition-readiness gates，但还没有数据访问、精确字段字典、真实提取、外部验证和校准后的敏感性分析 |
+| 定量模型 | 55% | 有可运行、可复现、可审查的场景级模型管线 | 已有 toy model、合成敏感性分析、审计器、校准预备契约、真实队列候选注册表、数据源 Source Cards、Data Card 模板、NHATS 数据准入草案、变量字典草案、extraction manifest 草案、机器可读 acquisition-readiness gates 和 R13/R14 file-tier table，但还没有数据访问、精确字段字典、真实提取、外部验证和校准后的敏感性分析 |
 
 ## 价值层 100%
 
@@ -162,11 +162,12 @@ life_path_toy_model_scenarios.json
   -> life-path-variable-dictionary-nhats.md
   -> life-path-extraction-manifest-nhats-draft.md
   -> life_path_nhats_acquisition_readiness.json
+  -> life_path_nhats_file_tier_table.json
   -> /model/ Web 图表
-  -> model card + sanity checks + synthetic sensitivity checks + calibration-readiness audit checks + data-source candidate audit checks + source-card/data-card readiness checks + NHATS data-admission checks + pre-extraction manifest checks + machine-readable acquisition-readiness checks
+  -> model card + sanity checks + synthetic sensitivity checks + calibration-readiness audit checks + data-source candidate audit checks + source-card/data-card readiness checks + NHATS data-admission checks + pre-extraction manifest checks + machine-readable acquisition-readiness checks + file-tier table checks
 ```
 
-这一步已经把项目从“有定量想法的研究叙事”推进到“有最小可执行、可审计模型管线的研究系统”，并且开始把合成敏感性分析、真实队列候选、治理边界、第一份 NHATS 数据准入草案、NHATS 机器可读 acquisition-readiness gates 和核心主张证据矩阵纳入机器审计。下一步不是继续膨胀新域，而是补三件硬东西：
+这一步已经把项目从“有定量想法的研究叙事”推进到“有最小可执行、可审计模型管线的研究系统”，并且开始把合成敏感性分析、真实队列候选、治理边界、第一份 NHATS 数据准入草案、NHATS 机器可读 acquisition-readiness gates、R13/R14 file-tier table 和核心主张证据矩阵纳入机器审计。下一步不是继续膨胀新域，而是补三件硬东西：
 
 - 继续用 `human-infra-core-claim-evidence-matrix.md` 作为核心主张入口，把 README、论文页和 Web 页的强叙事都回连到同一组 Claim ID、来源角色和禁止外推边界。
 - 把 C1/C2 核心主张做成 Source Cards 和 Claim-Evidence Matrix。
@@ -209,6 +210,7 @@ life_path_toy_model_scenarios.json
 - NHATS 变量字典草案是否存在，是否保持 candidate-only 边界，并覆盖 design/identity、outcome boundary、function/mobility、cognition/attention、resources/support、environment/access 和 effective_time_proxy 这些模型角色。
 - NHATS extraction manifest 草案是否存在，是否绑定 source card、Data Card 和变量字典，是否保持 cannot-extract-yet 状态，是否记录官方访问条款、Colectica/codebook 依赖、候选变量组、禁止 raw data 入库 / public LLM 上传、允许/禁止输出和中止条件。
 - NHATS acquisition readiness 机器契约是否存在，是否保持 `cannot-extract-yet`，是否覆盖官方来源刷新、注册状态、文件层级、Colectica 变量确认、round window、survey design、endpoint、披露控制、AI 边界、存储销毁、禁止动作和下一步证据。
+- NHATS file-tier table 是否存在，是否覆盖 R13/R14 annual public files、clock drawing images、sensitive SP/OP files 和 R13 seasonality weights，是否记录 access tier、官方路径、候选用途、方法文档依赖，并继续禁止下载、抽取、raw data 入库、public AI 上传、校准和个体预测。
 
 ## 参考入口
 

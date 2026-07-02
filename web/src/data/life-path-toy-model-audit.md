@@ -3,7 +3,7 @@
 - Overall status: `PASS`
 - Model path: `web/src/data/life-path-toy-model.json`
 - Model SHA-256: `a4c92209d79d20579bf1f575d5ebf07ffe5be9ccaf6bf3f3eef08efa287b5377`
-- Generated at: `2026-07-02T02:09:02.486755+00:00`
+- Generated at: `2026-07-02T02:20:50.838420+00:00`
 
 ## Checks
 
@@ -90,6 +90,20 @@
 | `nhats-acquisition-readiness-gate-summary` | `PASS` | gate summary must keep all acquisition gates blocking until ready evidence exists |
 | `nhats-acquisition-readiness-prohibited-actions` | `PASS` | readiness contract must prohibit premature download, scripts, raw data, public AI upload, individual death-date prediction and calibration claims |
 | `nhats-acquisition-readiness-next-work` | `PASS` | next work must point to file-tier, Cross-Year Search variable confirmation and disclosure control |
+| `nhats-file-tier-table-exists` | `PASS` | domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_file_tier_table.json |
+| `nhats-file-tier-table-schema` | `PASS` | schemaVersion='human-infra.life-path-nhats-file-tier-table.v1' |
+| `nhats-file-tier-table-identity` | `PASS` | file-tier table must bind NHATS source, Data Card, manifest, acquisition readiness and candidate-only status |
+| `nhats-file-tier-table-current-decision` | `PASS` | file-tier table must still block download, scripts, repository storage, public AI upload, calibration and individual prediction |
+| `nhats-file-tier-table-round-window` | `PASS` | round-window candidate must remain R13/R14 candidate-only and extraction-blocked |
+| `nhats-file-tier-table-row-coverage` | `PASS` | missing_row_ids=[] |
+| `nhats-file-tier-table-row-shape` | `PASS` | each file row must expose file family, format, access tier, official path, planned use and blocking fields |
+| `nhats-file-tier-table-source-paths` | `PASS` | file rows must point to official HTTPS pages and official /system/files paths |
+| `nhats-file-tier-table-row-boundaries` | `PASS` | every row must keep download, extraction, repository storage and public AI upload blocked |
+| `nhats-file-tier-table-tier-summary` | `PASS` | tier summary must match row counts and keep all download/extraction/storage/AI rows blocked |
+| `nhats-file-tier-table-method-docs` | `PASS` | missing_method_doc_ids=[] |
+| `nhats-file-tier-table-prohibited-actions` | `PASS` | file-tier table must prohibit premature download, prose-only variables, sensitive-file use, raw storage, public AI upload and individual prediction |
+| `nhats-file-tier-table-next-work` | `PASS` | next work must point to canonical format, Colectica variables, weights, endpoint and disclosure-control work |
+| `nhats-file-tier-table-source-trace` | `PASS` | source trace must include R13/R14 files, Cross-Year Search, methods documentation and Conditions of Use |
 | `sensitivity-analysis-exists` | `PASS` | web/src/data/life-path-sensitivity-analysis.json |
 | `sensitivity-schema-version` | `PASS` | schemaVersion='human-infra.life-path-sensitivity.v1' |
 | `sensitivity-source-model-hash` | `PASS` | sensitivity output must point back to the generated model path and sha256 |
@@ -144,14 +158,21 @@
 ## NHATS Acquisition Readiness
 
 - Acquisition readiness path: `domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_acquisition_readiness.json`
-- Acquisition readiness SHA-256: `98c7d8560d055afc09f830281ffa978f03bc7a974c9d9e047cf21dbcba58172d`
+- Acquisition readiness SHA-256: `d6338729fac294557236ccebf26c049dab941e8ca1e74669b767c7c427805b19`
 - Acquisition readiness status: `PASS`
 - Boundary: the structured readiness contract keeps NHATS at cannot-extract-yet until registration, file-tier, Colectica variables, endpoint, survey design, disclosure control, AI boundary and storage/destruction gates are ready.
+
+## NHATS File Tier Table
+
+- File-tier table path: `domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_file_tier_table.json`
+- File-tier table SHA-256: `18c151512ffb6e075a134765e13d5b4b07252be10b9e55a211f7d890cefdc6f1`
+- File-tier table status: `PASS`
+- Boundary: the file-tier table maps official R13/R14 public and sensitive file families, but it still blocks download, extraction, repository storage, public AI upload, calibration and individual prediction.
 
 ## Sensitivity Analysis
 
 - Sensitivity path: `web/src/data/life-path-sensitivity-analysis.json`
-- Sensitivity SHA-256: `0f4be62b42ad49f206209bdfca1417ac48033234492fef1b0a0769e2b8656b60`
+- Sensitivity SHA-256: `610b8522a9bbac4dda54fbb5ac9316ae841b67b19bfcad49484ee33ba3fc3696`
 - Sensitivity status: `PASS`
 - Boundary: sensitivity analysis is synthetic one-factor-at-a-time stress testing; it does not prove empirical parameter values, causal effects, calibrated prediction, or individual usefulness.
 
