@@ -2,8 +2,8 @@
 
 - Overall status: `PASS`
 - Model path: `web/src/data/life-path-toy-model.json`
-- Model SHA-256: `4626678190e78d3fc2dc35851e6996e88c68e93b6c6194097c63c511c679ccd6`
-- Generated at: `2026-07-02T01:14:57.393291+00:00`
+- Model SHA-256: `b219a23eb9b87d807a579b65b69e1ff3a52926df08cfb9a3f256f0aebfa9e2eb`
+- Generated at: `2026-07-02T01:26:16.690331+00:00`
 
 ## Checks
 
@@ -66,6 +66,15 @@
 | `nhats-variable-dictionary-boundaries` | `PASS` | NHATS variable dictionary must remain candidate-only and block extraction/calibration/individual-prediction claims |
 | `nhats-variable-dictionary-core-examples` | `PASS` | NHATS variable dictionary must include design, decedent, and cognition example fields while still marking them as candidates |
 | `nhats-variable-dictionary-model-roles` | `PASS` | NHATS variable dictionary must map variable families to Human Infra model roles and keep decision at cannot-calibrate-yet |
+| `nhats-extraction-manifest-exists` | `PASS` | domains/c1-boundary-rewriting/longevity-evidence/docs/life-path-extraction-manifest-nhats-draft.md |
+| `nhats-extraction-manifest-identity` | `PASS` | manifest must bind NHATS source card, data card, variable dictionary, manifest ID, and cannot-extract status |
+| `nhats-extraction-manifest-access-terms` | `PASS` | manifest must record registration, sensitive/restricted application, Colectica, aggregate reporting, n<5, and public AI upload boundaries |
+| `nhats-extraction-manifest-no-data-boundary` | `PASS` | manifest must explicitly block download, extraction script, raw repository data, calibration/validation claim, and individual death-date prediction |
+| `nhats-extraction-manifest-variable-groups` | `PASS` | manifest must include identity, weight/design, endpoint, cognition, effective-time and derived-output variables |
+| `nhats-extraction-manifest-extraction-rules` | `PASS` | manifest must block scripts, downloads, sensitive/restricted use, metrics, unsafe display, and prose-only variable inference |
+| `nhats-extraction-manifest-required-slots` | `PASS` | manifest must expose the blank slots required before governed extraction |
+| `nhats-extraction-manifest-abort-conditions` | `PASS` | manifest must define abort gates for access, Colectica, weights/design, endpoint ambiguity, disclosure suppression, raw-data leakage, and unsafe outputs |
+| `nhats-extraction-manifest-source-trace` | `PASS` | manifest must cite official NHATS overview, access, terms, cross-year search, files, user guide, and sample design sources |
 
 ## Calibration Readiness
 
@@ -98,6 +107,13 @@
 - NHATS variable dictionary SHA-256: `906b7648dac9dda5c43b83bab2c44b58e53aab7e79aa13da4e77adc879b06ea8`
 - NHATS data admission status: `PASS`
 - Boundary: NHATS is only a draft admission candidate for late-life effective-time modeling; no data access, extraction, calibration, validation, or individual prediction is claimed.
+
+## NHATS Extraction Manifest
+
+- Manifest path: `domains/c1-boundary-rewriting/longevity-evidence/docs/life-path-extraction-manifest-nhats-draft.md`
+- Manifest SHA-256: `2a3f3472cfa5a22f06af864145fd883ef919b45cfa5e8302e0644c9e059ea1ce`
+- Manifest status: `PASS`
+- Boundary: the manifest is a pre-extraction gate; it blocks scripts, downloads, field inference, calibration, validation, raw-data exposure and unsafe individual outputs until official file-level requirements are complete.
 
 ## Standard Alignment
 

@@ -65,6 +65,14 @@ DEFAULT_NHATS_VARIABLE_DICTIONARY = (
     / "docs"
     / "life-path-variable-dictionary-nhats.md"
 )
+DEFAULT_NHATS_EXTRACTION_MANIFEST = (
+    REPO_ROOT
+    / "domains"
+    / "c1-boundary-rewriting"
+    / "longevity-evidence"
+    / "docs"
+    / "life-path-extraction-manifest-nhats-draft.md"
+)
 REQUIRED_MODEL_CARD_FIELDS = {
     "modelName",
     "modelClass",
@@ -825,6 +833,188 @@ def audit_nhats_data_admission_docs(
     }
 
 
+def audit_nhats_extraction_manifest(manifest_path: Path) -> dict[str, Any]:
+    checks: list[dict[str, Any]] = []
+
+    manifest_exists = manifest_path.exists()
+    add_check(
+        checks,
+        "nhats-extraction-manifest-exists",
+        status_from_bool(manifest_exists),
+        str(manifest_path.relative_to(REPO_ROOT)),
+    )
+
+    manifest_text = load_text(manifest_path) if manifest_exists else ""
+
+    identity_ok = all(
+        token in manifest_text
+        for token in (
+            "manifest_id: nhats-r1-r14-effective-time-manifest-draft",
+            "source_card_id: nhats",
+            "data_card_id: nhats-r1-r14-effective-time-draft",
+            "variable_dictionary_id: nhats-life-path-variable-dictionary-draft",
+            "status: draft / cannot-extract-yet",
+        )
+    )
+    add_check(
+        checks,
+        "nhats-extraction-manifest-identity",
+        status_from_bool(manifest_exists and identity_ok),
+        "manifest must bind NHATS source card, data card, variable dictionary, manifest ID, and cannot-extract status",
+    )
+
+    access_terms_ok = all(
+        token.lower() in manifest_text.lower()
+        for token in (
+            "registered users",
+            "sensitive and restricted files require additional application",
+            "public large language model",
+            "ai platforms",
+            "aggregate statistical reporting",
+            "n < 5",
+            "Colectica",
+            "separate registration",
+        )
+    )
+    add_check(
+        checks,
+        "nhats-extraction-manifest-access-terms",
+        status_from_bool(manifest_exists and access_terms_ok),
+        "manifest must record registration, sensitive/restricted application, Colectica, aggregate reporting, n<5, and public AI upload boundaries",
+    )
+
+    no_data_boundary_ok = all(
+        token.lower() in manifest_text.lower()
+        for token in (
+            "No NHATS data downloaded",
+            "No extraction script authorized",
+            "No raw data in repository",
+            "No calibration or validation claim",
+            "No individual death-date prediction",
+        )
+    )
+    add_check(
+        checks,
+        "nhats-extraction-manifest-no-data-boundary",
+        status_from_bool(manifest_exists and no_data_boundary_ok),
+        "manifest must explicitly block download, extraction script, raw repository data, calibration/validation claim, and individual death-date prediction",
+    )
+
+    variable_groups_ok = all(
+        token in manifest_text
+        for token in (
+            "spid",
+            "w#anfinwgt0",
+            "w#varunit",
+            "w#varstrat",
+            "fl#spdied",
+            "cg#dwrdimmrc",
+            "cg#dwrddlyrc",
+            "effective_time_proxy",
+            "functional_survival_state",
+            "survey_design_ready",
+        )
+    )
+    add_check(
+        checks,
+        "nhats-extraction-manifest-variable-groups",
+        status_from_bool(manifest_exists and variable_groups_ok),
+        "manifest must include identity, weight/design, endpoint, cognition, effective-time and derived-output variables",
+    )
+
+    extraction_rules_ok = all(
+        token.lower() in manifest_text.lower()
+        for token in (
+            "do not write an extraction script",
+            "do not download or store",
+            "do not use sensitive/restricted files",
+            "do not compute model metrics",
+            "do not display any output",
+            "do not infer exact variables from prose alone",
+        )
+    )
+    add_check(
+        checks,
+        "nhats-extraction-manifest-extraction-rules",
+        status_from_bool(manifest_exists and extraction_rules_ok),
+        "manifest must block scripts, downloads, sensitive/restricted use, metrics, unsafe display, and prose-only variable inference",
+    )
+
+    required_slots_ok = all(
+        token in manifest_text
+        for token in (
+            "nhats_release:",
+            "rounds:",
+            "file_names:",
+            "access_tier:",
+            "variables:",
+            "derived_variables:",
+            "weight_variables:",
+            "design_variables:",
+            "replicate_weight_variables:",
+            "missing_codes:",
+            "value_labels:",
+            "join_keys:",
+            "endpoint_fields:",
+            "allowed_outputs:",
+            "forbidden_outputs:",
+        )
+    )
+    add_check(
+        checks,
+        "nhats-extraction-manifest-required-slots",
+        status_from_bool(manifest_exists and required_slots_ok),
+        "manifest must expose the blank slots required before governed extraction",
+    )
+
+    abort_conditions_ok = all(
+        token.lower() in manifest_text.lower()
+        for token in (
+            "access terms cannot be satisfied",
+            "colectica unavailable",
+            "weights or design variables are unavailable",
+            "endpoint definition is ambiguous",
+            "n < 5 suppression cannot be enforced",
+            "raw data would enter the repository",
+            "individual prediction",
+            "medical advice",
+        )
+    )
+    add_check(
+        checks,
+        "nhats-extraction-manifest-abort-conditions",
+        status_from_bool(manifest_exists and abort_conditions_ok),
+        "manifest must define abort gates for access, Colectica, weights/design, endpoint ambiguity, disclosure suppression, raw-data leakage, and unsafe outputs",
+    )
+
+    source_trace_ok = all(
+        token in manifest_text
+        for token in (
+            "https://www.nhats.org/nhats",
+            "https://www.nhats.org/data-access",
+            "https://www.nhats.org/conditions-of-use",
+            "https://www.nhats.org/data-access/cross-year-search",
+            "https://www.nhats.org/data-access/nhats",
+            "NHATSUserGuideR14_02102026.pdf",
+            "NHATSTechnicalPaper55_09042025.pdf",
+        )
+    )
+    add_check(
+        checks,
+        "nhats-extraction-manifest-source-trace",
+        status_from_bool(manifest_exists and source_trace_ok),
+        "manifest must cite official NHATS overview, access, terms, cross-year search, files, user guide, and sample design sources",
+    )
+
+    return {
+        "path": str(manifest_path.relative_to(REPO_ROOT)),
+        "sha256": sha256_file(manifest_path) if manifest_exists else None,
+        "status": "PASS" if summarize_checks(checks)["fail"] == 0 else "FAIL",
+        "checks": checks,
+        "summary": summarize_checks(checks),
+    }
+
+
 def audit_model(
     data: dict[str, Any],
     model_path: Path,
@@ -834,6 +1024,7 @@ def audit_model(
     data_card_template_path: Path,
     nhats_data_card_path: Path,
     nhats_variable_dictionary_path: Path,
+    nhats_extraction_manifest_path: Path,
 ) -> dict[str, Any]:
     checks: list[dict[str, Any]] = []
     schema_version = data.get("schemaVersion")
@@ -1005,10 +1196,14 @@ def audit_model(
         nhats_data_card_path,
         nhats_variable_dictionary_path,
     )
+    nhats_extraction_manifest_audit = audit_nhats_extraction_manifest(
+        nhats_extraction_manifest_path,
+    )
     checks.extend(readiness_audit["checks"])
     checks.extend(data_sources_audit["checks"])
     checks.extend(source_card_docs_audit["checks"])
     checks.extend(nhats_docs_audit["checks"])
+    checks.extend(nhats_extraction_manifest_audit["checks"])
     failed = [check for check in checks if check["status"] == "FAIL"]
     overall = "PASS" if not failed else "FAIL"
     return {
@@ -1024,6 +1219,7 @@ def audit_model(
         "dataSourceCandidates": data_sources_audit,
         "sourceCardDocs": source_card_docs_audit,
         "nhatsDataAdmission": nhats_docs_audit,
+        "nhatsExtractionManifest": nhats_extraction_manifest_audit,
     }
 
 
@@ -1079,6 +1275,13 @@ def render_markdown(audit: dict[str, Any]) -> str:
             f"- NHATS data admission status: `{audit['nhatsDataAdmission']['status']}`",
             "- Boundary: NHATS is only a draft admission candidate for late-life effective-time modeling; no data access, extraction, calibration, validation, or individual prediction is claimed.",
             "",
+            "## NHATS Extraction Manifest",
+            "",
+            f"- Manifest path: `{audit['nhatsExtractionManifest']['path']}`",
+            f"- Manifest SHA-256: `{audit['nhatsExtractionManifest']['sha256']}`",
+            f"- Manifest status: `{audit['nhatsExtractionManifest']['status']}`",
+            "- Boundary: the manifest is a pre-extraction gate; it blocks scripts, downloads, field inference, calibration, validation, raw-data exposure and unsafe individual outputs until official file-level requirements are complete.",
+            "",
             "## Standard Alignment",
             "",
             "| Standard | Local gate | Status | Boundary |",
@@ -1114,6 +1317,11 @@ def parse_args() -> argparse.Namespace:
         type=Path,
         default=DEFAULT_NHATS_VARIABLE_DICTIONARY,
     )
+    parser.add_argument(
+        "--nhats-extraction-manifest",
+        type=Path,
+        default=DEFAULT_NHATS_EXTRACTION_MANIFEST,
+    )
     parser.add_argument("--json-out", type=Path, default=DEFAULT_JSON_OUT)
     parser.add_argument("--md-out", type=Path, default=DEFAULT_MD_OUT)
     return parser.parse_args()
@@ -1128,6 +1336,7 @@ def main() -> int:
     data_card_template_path = args.data_card_template.resolve()
     nhats_data_card_path = args.nhats_data_card.resolve()
     nhats_variable_dictionary_path = args.nhats_variable_dictionary.resolve()
+    nhats_extraction_manifest_path = args.nhats_extraction_manifest.resolve()
     audit = audit_model(
         load_json(model_path),
         model_path,
@@ -1137,6 +1346,7 @@ def main() -> int:
         data_card_template_path,
         nhats_data_card_path,
         nhats_variable_dictionary_path,
+        nhats_extraction_manifest_path,
     )
     args.json_out.parent.mkdir(parents=True, exist_ok=True)
     with args.json_out.open("w", encoding="utf-8") as handle:

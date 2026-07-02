@@ -17,6 +17,7 @@ This directory stores the Longevity Evidence domain model, data source plans, co
 - `life-path-data-card-template.md`: required governance and study-design template before any candidate source can be used for calibration, validation, benchmarking, or display.
 - `life-path-data-card-nhats.md`: first NHATS Data Card draft for late-life functional-survival and effective-time modeling admission review.
 - `life-path-variable-dictionary-nhats.md`: first NHATS variable-family dictionary draft mapping function, cognition, support, environment, design and endpoint fields to Human Infra model roles.
+- `life-path-extraction-manifest-nhats-draft.md`: pre-extraction NHATS manifest draft that blocks scripts and downloads until file names, variables, weights, missing codes, access tiers, endpoints and output rules are governed.
 - `mvp-roadmap.md`: first 0-6 week product path.
 - `collection-run-2026-05-29.md`: first MVP collection run.
 - `collection-run-2026-05-29-expanded.md`: expanded core data collection run.

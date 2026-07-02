@@ -1,8 +1,8 @@
 {
   "schemaVersion": "human-infra.life-path-toy-audit.v1",
-  "generatedAt": "2026-07-02T01:14:57.393291+00:00",
+  "generatedAt": "2026-07-02T01:26:16.690331+00:00",
   "modelPath": "web/src/data/life-path-toy-model.json",
-  "modelSha256": "4626678190e78d3fc2dc35851e6996e88c68e93b6c6194097c63c511c679ccd6",
+  "modelSha256": "b219a23eb9b87d807a579b65b69e1ff3a52926df08cfb9a3f256f0aebfa9e2eb",
   "overallStatus": "PASS",
   "checks": [
     {
@@ -289,10 +289,55 @@
       "id": "nhats-variable-dictionary-model-roles",
       "status": "PASS",
       "detail": "NHATS variable dictionary must map variable families to Human Infra model roles and keep decision at cannot-calibrate-yet"
+    },
+    {
+      "id": "nhats-extraction-manifest-exists",
+      "status": "PASS",
+      "detail": "domains/c1-boundary-rewriting/longevity-evidence/docs/life-path-extraction-manifest-nhats-draft.md"
+    },
+    {
+      "id": "nhats-extraction-manifest-identity",
+      "status": "PASS",
+      "detail": "manifest must bind NHATS source card, data card, variable dictionary, manifest ID, and cannot-extract status"
+    },
+    {
+      "id": "nhats-extraction-manifest-access-terms",
+      "status": "PASS",
+      "detail": "manifest must record registration, sensitive/restricted application, Colectica, aggregate reporting, n<5, and public AI upload boundaries"
+    },
+    {
+      "id": "nhats-extraction-manifest-no-data-boundary",
+      "status": "PASS",
+      "detail": "manifest must explicitly block download, extraction script, raw repository data, calibration/validation claim, and individual death-date prediction"
+    },
+    {
+      "id": "nhats-extraction-manifest-variable-groups",
+      "status": "PASS",
+      "detail": "manifest must include identity, weight/design, endpoint, cognition, effective-time and derived-output variables"
+    },
+    {
+      "id": "nhats-extraction-manifest-extraction-rules",
+      "status": "PASS",
+      "detail": "manifest must block scripts, downloads, sensitive/restricted use, metrics, unsafe display, and prose-only variable inference"
+    },
+    {
+      "id": "nhats-extraction-manifest-required-slots",
+      "status": "PASS",
+      "detail": "manifest must expose the blank slots required before governed extraction"
+    },
+    {
+      "id": "nhats-extraction-manifest-abort-conditions",
+      "status": "PASS",
+      "detail": "manifest must define abort gates for access, Colectica, weights/design, endpoint ambiguity, disclosure suppression, raw-data leakage, and unsafe outputs"
+    },
+    {
+      "id": "nhats-extraction-manifest-source-trace",
+      "status": "PASS",
+      "detail": "manifest must cite official NHATS overview, access, terms, cross-year search, files, user guide, and sample design sources"
     }
   ],
   "summary": {
-    "pass": 57,
+    "pass": 66,
     "warn": 0,
     "fail": 0
   },
@@ -587,6 +632,63 @@
         "id": "nhats-variable-dictionary-model-roles",
         "status": "PASS",
         "detail": "NHATS variable dictionary must map variable families to Human Infra model roles and keep decision at cannot-calibrate-yet"
+      }
+    ],
+    "summary": {
+      "pass": 9,
+      "warn": 0,
+      "fail": 0
+    }
+  },
+  "nhatsExtractionManifest": {
+    "path": "domains/c1-boundary-rewriting/longevity-evidence/docs/life-path-extraction-manifest-nhats-draft.md",
+    "sha256": "2a3f3472cfa5a22f06af864145fd883ef919b45cfa5e8302e0644c9e059ea1ce",
+    "status": "PASS",
+    "checks": [
+      {
+        "id": "nhats-extraction-manifest-exists",
+        "status": "PASS",
+        "detail": "domains/c1-boundary-rewriting/longevity-evidence/docs/life-path-extraction-manifest-nhats-draft.md"
+      },
+      {
+        "id": "nhats-extraction-manifest-identity",
+        "status": "PASS",
+        "detail": "manifest must bind NHATS source card, data card, variable dictionary, manifest ID, and cannot-extract status"
+      },
+      {
+        "id": "nhats-extraction-manifest-access-terms",
+        "status": "PASS",
+        "detail": "manifest must record registration, sensitive/restricted application, Colectica, aggregate reporting, n<5, and public AI upload boundaries"
+      },
+      {
+        "id": "nhats-extraction-manifest-no-data-boundary",
+        "status": "PASS",
+        "detail": "manifest must explicitly block download, extraction script, raw repository data, calibration/validation claim, and individual death-date prediction"
+      },
+      {
+        "id": "nhats-extraction-manifest-variable-groups",
+        "status": "PASS",
+        "detail": "manifest must include identity, weight/design, endpoint, cognition, effective-time and derived-output variables"
+      },
+      {
+        "id": "nhats-extraction-manifest-extraction-rules",
+        "status": "PASS",
+        "detail": "manifest must block scripts, downloads, sensitive/restricted use, metrics, unsafe display, and prose-only variable inference"
+      },
+      {
+        "id": "nhats-extraction-manifest-required-slots",
+        "status": "PASS",
+        "detail": "manifest must expose the blank slots required before governed extraction"
+      },
+      {
+        "id": "nhats-extraction-manifest-abort-conditions",
+        "status": "PASS",
+        "detail": "manifest must define abort gates for access, Colectica, weights/design, endpoint ambiguity, disclosure suppression, raw-data leakage, and unsafe outputs"
+      },
+      {
+        "id": "nhats-extraction-manifest-source-trace",
+        "status": "PASS",
+        "detail": "manifest must cite official NHATS overview, access, terms, cross-year search, files, user guide, and sample design sources"
       }
     ],
     "summary": {

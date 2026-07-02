@@ -87,6 +87,7 @@ longevity-evidence/
 │   ├── lev-mainstream-routes.md
 │   ├── life-path-data-card-template.md
 │   ├── life-path-data-card-nhats.md
+│   ├── life-path-extraction-manifest-nhats-draft.md
 │   ├── life-path-data-source-cards.md
 │   ├── life-path-variable-dictionary-nhats.md
 │   ├── mvp-roadmap.md
@@ -116,6 +117,7 @@ longevity-evidence/
 - `docs/life-path-data-card-template.md`：真实队列进入模型前必须填写的数据卡模板，约束治理、研究设计、结局、预测变量、数据质量、模型用途、决策和来源追踪。
 - `docs/life-path-data-card-nhats.md`：NHATS 数据准入卡草案，约束晚年功能/有效时间模型使用 NHATS 前必须满足的治理、设计、结局、变量、质量和中止条件。
 - `docs/life-path-variable-dictionary-nhats.md`：NHATS 变量家族字典草案，把设计变量、死亡边界、功能、认知、资源支持、环境和有效时间代理指标映射到生命路径模型角色。
+- `docs/life-path-extraction-manifest-nhats-draft.md`：NHATS 提取清单草案，把文件名、变量名、权重、缺失码、访问层级、endpoint、允许输出和中止条件作为写抽取脚本前的准入门。
 - `docs/collection-run-*.md`：历史采集记录和质量风险。
 - `data/manual/interventions.json`：首批 20 个干预对象、类别、别名和检索词。
 - `data/manual/higher_order_effects.tsv`：LEV 二阶 / 多阶效应模型输入，供 Web 导出脚本生成多阶飞轮图。
@@ -128,7 +130,7 @@ longevity-evidence/
 - `scripts/collect_mvp_data.py`：采集 PubMed、OpenAlex、ClinicalTrials.gov 和 openFDA 标签数据。
 - `scripts/collect_core_data.py`：采集 HAGR、PubChem、openFDA event 和 Drugs@FDA 数据。
 - `scripts/run_life_path_toy_model.py`：读取合成场景并导出 `web/src/data/life-path-toy-model.json`，用于 `/model/` 的最小可运行定量展示。
-- `scripts/audit_life_path_toy_model.py`：审计生成后的生命路径 toy model、校准预备契约、候选数据源注册表、数据源 Source Cards、Data Card 模板、NHATS Data Card 和 NHATS 变量字典，输出机器可读 JSON 和人可读 Markdown，检查模型卡、来源 hash、生存曲线、概率范围、LEV 开放边界、校准预备字段、候选数据源治理边界、数据卡准入文档和禁止个体死亡日期字段。
+- `scripts/audit_life_path_toy_model.py`：审计生成后的生命路径 toy model、校准预备契约、候选数据源注册表、数据源 Source Cards、Data Card 模板、NHATS Data Card、NHATS 变量字典和 NHATS extraction manifest，输出机器可读 JSON 和人可读 Markdown，检查模型卡、来源 hash、生存曲线、概率范围、LEV 开放边界、校准预备字段、候选数据源治理边界、数据卡准入文档、提取前治理门禁和禁止个体死亡日期字段。
 
 ## 依赖关系
 
