@@ -140,7 +140,9 @@
         "docs/reference/human-infra-independent-fresh-review-verdict-register.json",
         "tools/audit_human_infra_independent_fresh_review_verdict_register.py",
         "docs/reference/human-infra-reviewed-card-artifact-register.json",
-        "tools/audit_human_infra_reviewed_card_artifact_register.py"
+        "tools/audit_human_infra_reviewed_card_artifact_register.py",
+        "docs/reference/human-infra-future-boundary-route-card-register.json",
+        "tools/audit_human_infra_future_boundary_route_card_register.py"
       ],
       "gates": [
         {
@@ -234,17 +236,17 @@
         },
         {
           "gateId": "RESEARCH-G5-route-probability-gates",
-          "status": "partial",
+          "status": "pass",
           "requirement": "Major routes expose technical window, access, adoption, duration, composability, tail risk and opportunity cost gates.",
           "evidence": [
             "domains/c1-boundary-rewriting/longevity-evidence/data/manual/lev_route_cards.tsv",
-            "domains/c1-boundary-rewriting/longevity-evidence/docs/lev-route-card-template.md"
+            "domains/c1-boundary-rewriting/longevity-evidence/docs/lev-route-card-template.md",
+            "docs/reference/human-infra-future-boundary-route-card-register.json",
+            "tools/audit_human_infra_future_boundary_route_card_register.py"
           ],
-          "missingEvidence": [
-            "Route-card coverage for every high-priority future-boundary route, not just mainstream LEV routes."
-          ],
-          "nextAction": "Extend route-card governance to future waiting, biological stasis, neuro-continuity and AI-enabled acceleration domains.",
-          "blocks100Percent": true
+          "missingEvidence": [],
+          "nextAction": "Maintain route-card audit coverage when new high-priority future-boundary routes are added.",
+          "blocks100Percent": false
         },
         {
           "gateId": "RESEARCH-G6-falsifier-and-downgrade-coverage",
@@ -433,9 +435,11 @@
   "nextWorkOrder": [
     {
       "priority": 1,
-      "item": "Extend route-card governance to every high-priority future-boundary route, including future waiting, biological stasis, neuro-continuity and AI-enabled acceleration.",
+      "item": "Extend reviewed Source Card, variable, endpoint, uncertainty, transfer-boundary and downgrade coverage beyond the current priority domains into C2 long-tail claims.",
       "unblocks": [
-        "RESEARCH-G5-route-probability-gates"
+        "RESEARCH-G3-c1-c2-source-cards",
+        "RESEARCH-G4-variable-mechanism-contracts",
+        "RESEARCH-G6-falsifier-and-downgrade-coverage"
       ]
     },
     {
@@ -447,10 +451,9 @@
     },
     {
       "priority": 3,
-      "item": "Extend reviewed Source Card, variable, endpoint, uncertainty, transfer-boundary and downgrade coverage beyond the current priority domains into C2 long-tail claims.",
+      "item": "Promote route-card gate outputs into quantitative model scenario candidates only after real data access, field confirmation and calibration gates pass.",
       "unblocks": [
-        "RESEARCH-G3-c1-c2-source-cards",
-        "RESEARCH-G4-variable-mechanism-contracts"
+        "MODEL-G7-external-validation-and-calibration"
       ]
     }
   ]

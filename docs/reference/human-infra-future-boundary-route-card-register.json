@@ -1,0 +1,495 @@
+{
+  "schemaVersion": "human-infra.future-boundary-route-card-register.v1",
+  "registerId": "human-infra-future-boundary-route-card-register-2026-07-02",
+  "status": "active-route-card-register-model-blocked",
+  "purpose": "Register high-priority future-boundary routes as auditable route cards with probability gates, abort gates, positive chains, negative chains and prohibited-use boundaries.",
+  "sourceOfTruth": {
+    "maturityGapRegister": "docs/reference/human-infra-maturity-gap-register.json",
+    "maturityRoadmap": "docs/reference/human-infra-maturity-roadmap.md",
+    "levRouteTemplate": "domains/c1-boundary-rewriting/longevity-evidence/docs/lev-route-card-template.md",
+    "domainClassification": "domains/_possibility-space-control/classification.tsv",
+    "reviewedCardArtifactRegister": "docs/reference/human-infra-reviewed-card-artifact-register.json"
+  },
+  "scope": {
+    "routeCardLevel": "future-boundary-route-probability-gate",
+    "routeCardCount": 4,
+    "coveredRouteFamilies": [
+      "future-waiting",
+      "biological-stasis",
+      "neuro-identity-continuity",
+      "ai-enabled-acceleration"
+    ],
+    "requiredGateDimensions": [
+      "technical-window",
+      "access",
+      "adoption",
+      "duration",
+      "composability",
+      "tail-risk",
+      "opportunity-cost"
+    ],
+    "nonClaims": [
+      "does not prove route feasibility",
+      "does not open calibrated model admission",
+      "does not permit individual advice",
+      "does not output individual death dates",
+      "does not rank interventions",
+      "does not claim effective immortality has been achieved"
+    ]
+  },
+  "blockedUses": [
+    "calibrated-prediction",
+    "individual-advice",
+    "individual-death-date-output",
+    "intervention-ranking",
+    "clinical-validity-claim",
+    "engineering-feasibility-claim",
+    "route-feasibility-promise"
+  ],
+  "gateDimensionTaxonomy": [
+    {
+      "dimension": "technical-window",
+      "meaning": "Whether the relevant future technology, repair capability, measurement capability or infrastructure window can exist within the route's assumed horizon."
+    },
+    {
+      "dimension": "access",
+      "meaning": "Whether the subject or support system can reach, afford, use, retrieve or otherwise access the relevant route stage."
+    },
+    {
+      "dimension": "adoption",
+      "meaning": "Whether the subject can safely adopt the route output after access, including comprehension, consent, integration and execution."
+    },
+    {
+      "dimension": "duration",
+      "meaning": "Whether the route can preserve subject continuity over the time span it requires."
+    },
+    {
+      "dimension": "composability",
+      "meaning": "Whether the route output can combine with later technologies, recovery systems, identity conditions or governance constraints."
+    },
+    {
+      "dimension": "tail-risk",
+      "meaning": "Whether low-probability high-damage failures are bounded by abort gates rather than averaged away."
+    },
+    {
+      "dimension": "opportunity-cost",
+      "meaning": "Whether resources allocated to the route displace safer or more evidenced subject-continuity options."
+    }
+  ],
+  "routeCards": [
+    {
+      "routeId": "FB-R1",
+      "routeFamily": "future-waiting",
+      "routeName": "Metric-redshift future waiting",
+      "routeStatus": "route-card-active-model-blocked",
+      "routeType": "boundary-rewriting-time-differential",
+      "primaryDomainPath": "domains/c1-boundary-rewriting/future-waiting",
+      "supportingDomainPaths": [
+        "domains/c1-boundary-rewriting/disembodied-cns",
+        "domains/c2-source-maintenance/neuro-continuity",
+        "domains/c4-conversion-channel/technology-foresight-horizon-scanning"
+      ],
+      "reviewedArtifactSupport": {
+        "domainIds": [
+          "future-waiting"
+        ],
+        "minimumReviewedArtifactCount": 18,
+        "interpretation": "Reviewed artifacts support route-card boundary work only; they do not admit a calibrated model or engineering feasibility claim."
+      },
+      "claimBoundary": {
+        "directClaim": "A proper-time differential route can reduce subject-experienced waiting time relative to an external reference time in a conditional metric-redshift scenario.",
+        "supportedClaim": "The route is a conditional research protocol for modeling waiting cost, exit, continuity, technology-window and risk gates.",
+        "forbiddenInference": "A high time-differential factor does not prove a usable black-hole waiting room, artificial gravity engineering, safe return, or effective immortality."
+      },
+      "effectChain": {
+        "directEffect": "Changes the ratio between subject proper time and external reference time.",
+        "firstOrderEffect": "If controllable entry, survival, communication and exit exist, the subject may wait through more external technological time with less experienced time.",
+        "secondOrderEffect": "Exit and adoption gates determine whether matured external technologies can actually improve the next subject-continuity cycle.",
+        "multiOrderEffect": "A wait-exit-upgrade-repeat loop can only become an acceleration route if each cycle improves safety, exit, continuity or adoption probability.",
+        "positiveChain": [
+          "metric-redshift differential",
+          "reduced subject waiting cost",
+          "external technology window matures",
+          "exit and adoption succeed",
+          "next waiting cycle parameters improve"
+        ],
+        "negativeChain": [
+          "high redshift factor",
+          "life support, exit or communication fails",
+          "subject continuity or governance fails",
+          "tail risk dominates time benefit",
+          "route is blocked despite high K"
+        ]
+      },
+      "gateCoverage": [
+        {
+          "dimension": "technical-window",
+          "gateId": "P_window",
+          "gateQuestion": "Can external technology mature during the reference-time interval without assuming guaranteed progress?",
+          "currentStatus": "blocked-pending-scenario-card"
+        },
+        {
+          "dimension": "access",
+          "gateId": "P_entry_exit",
+          "gateQuestion": "Can a subject enter, remain, communicate and exit without treating a thought experiment as an engineering plan?",
+          "currentStatus": "blocked-pending-metric-orbit-exit-cards"
+        },
+        {
+          "dimension": "adoption",
+          "gateId": "P_adopt",
+          "gateQuestion": "Can the subject use the matured technology after exit under evidence, consent and governance constraints?",
+          "currentStatus": "blocked-pending-technology-window-card"
+        },
+        {
+          "dimension": "duration",
+          "gateId": "P_survive_wait",
+          "gateQuestion": "Can life support, cognition and continuity survive the required proper-time interval?",
+          "currentStatus": "blocked-pending-life-support-card"
+        },
+        {
+          "dimension": "composability",
+          "gateId": "P_recursive_upgrade",
+          "gateQuestion": "Does one exit-and-upgrade cycle improve the next cycle rather than merely repeat the same risk?",
+          "currentStatus": "blocked-pending-recursion-card"
+        },
+        {
+          "dimension": "tail-risk",
+          "gateId": "A_tail_abort",
+          "gateQuestion": "Do irreversible fall-in, radiation, tidal, control, governance and continuity failures trigger abort before any benefit calculation?",
+          "currentStatus": "blocked"
+        },
+        {
+          "dimension": "opportunity-cost",
+          "gateId": "C_opportunity",
+          "gateQuestion": "Does route investment displace nearer evidence-based survival, repair, recovery or resilience paths?",
+          "currentStatus": "not-estimated"
+        }
+      ],
+      "abortGates": [
+        "No validated exit pathway.",
+        "No subject-continuity preservation definition.",
+        "Unbounded tail risk or unavailable governance stop condition.",
+        "Claim depends on engineering feasibility not supplied by evidence."
+      ],
+      "sourceRefs": [
+        "domains/c1-boundary-rewriting/future-waiting/README.md",
+        "domains/c1-boundary-rewriting/future-waiting/paths/black-hole-waiting-room.md",
+        "web/src/pages/papers/metric-redshift-recursive-waiting.astro",
+        "web/src/pages/papers/controllable-metric-waiting-room-hypothesis.astro"
+      ],
+      "modelAdmissionDecision": "blocked-pending-route-scenario-cards-and-calibration"
+    },
+    {
+      "routeId": "FB-R2",
+      "routeFamily": "biological-stasis",
+      "routeName": "Biostasis and cryopreservation to future repair",
+      "routeStatus": "route-card-active-model-blocked",
+      "routeType": "boundary-rewriting-preservation",
+      "primaryDomainPath": "domains/c1-boundary-rewriting/biostasis-cryopreservation",
+      "supportingDomainPaths": [
+        "domains/c1-boundary-rewriting/brain-preservation-connectomics-emulation",
+        "domains/c2-source-maintenance/neuro-continuity",
+        "domains/c4-conversion-channel/health-data-privacy-governance"
+      ],
+      "reviewedArtifactSupport": {
+        "domainIds": [
+          "biostasis-cryopreservation",
+          "brain-preservation-connectomics-emulation",
+          "neuro-continuity"
+        ],
+        "minimumReviewedArtifactCount": 54,
+        "interpretation": "Reviewed artifacts support route-card boundary work only; preservation, revival and identity-continuity claims remain blocked."
+      },
+      "claimBoundary": {
+        "directClaim": "Biostasis routes attempt to reduce biological degradation or preserve structure while waiting for future repair capability.",
+        "supportedClaim": "The route can be modeled as a preservation-quality, future-repair, reversibility and continuity-gate problem.",
+        "forbiddenInference": "Cryopreservation, vitrification, organ preservation or neural preservation evidence does not prove human revival, restored identity, or effective immortality."
+      },
+      "effectChain": {
+        "directEffect": "Attempts to slow, stop or preserve biological and neural damage accumulation during a waiting interval.",
+        "firstOrderEffect": "Preservation quality changes the probability that future repair systems have a usable target.",
+        "secondOrderEffect": "Future repair and identity-continuity gates determine whether preserved structure can become subject continuity rather than archival material.",
+        "multiOrderEffect": "If preservation and repair improve over time, route value depends on iterative storage quality, recovery technology and governance continuity.",
+        "positiveChain": [
+          "biological degradation slows",
+          "structure preservation improves",
+          "future repair window may mature",
+          "recovery and continuity gates are evaluated",
+          "future choice set expands conditionally"
+        ],
+        "negativeChain": [
+          "preservation intervention starts too late or damages tissue",
+          "critical neural or systemic information is lost",
+          "future repair or rewarming remains unavailable",
+          "identity continuity cannot be established",
+          "route remains archival rather than subject-continuity preserving"
+        ]
+      },
+      "gateCoverage": [
+        {
+          "dimension": "technical-window",
+          "gateId": "P_future_repair",
+          "gateQuestion": "Can future repair or rewarming technology plausibly address the preserved damage class?",
+          "currentStatus": "blocked-pending-repair-source-cards"
+        },
+        {
+          "dimension": "access",
+          "gateId": "P_preservation_access",
+          "gateQuestion": "Can preservation be initiated, maintained, identified and legally governed without losing the subject target?",
+          "currentStatus": "blocked-pending-logistics-and-legal-cards"
+        },
+        {
+          "dimension": "adoption",
+          "gateId": "P_recover_adopt",
+          "gateQuestion": "Can any future recovery output be adopted as the same subject rather than a copy, archive or damaged continuation?",
+          "currentStatus": "blocked-pending-continuity-card"
+        },
+        {
+          "dimension": "duration",
+          "gateId": "P_storage_persist",
+          "gateQuestion": "Can physical storage, identity records, funding and custody persist over the required time horizon?",
+          "currentStatus": "blocked-pending-storage-governance-card"
+        },
+        {
+          "dimension": "composability",
+          "gateId": "P_repair_composable",
+          "gateQuestion": "Can preservation quality combine with future repair, neural continuity and legal identity systems?",
+          "currentStatus": "blocked-pending-route-integration-card"
+        },
+        {
+          "dimension": "tail-risk",
+          "gateId": "A_information_loss_abort",
+          "gateQuestion": "Does irreversible information loss, identity uncertainty or storage failure trigger route downgrade?",
+          "currentStatus": "blocked"
+        },
+        {
+          "dimension": "opportunity-cost",
+          "gateId": "C_preservation_opportunity",
+          "gateQuestion": "Does preservation investment displace current preventive, medical, social or recovery interventions with stronger evidence?",
+          "currentStatus": "not-estimated"
+        }
+      ],
+      "abortGates": [
+        "No preserved target sufficient for the claimed continuity condition.",
+        "No reversible or repairable state definition.",
+        "Storage custody, legal identity or consent chain fails.",
+        "Route is represented as proven revival or clinical recommendation."
+      ],
+      "sourceRefs": [
+        "domains/c1-boundary-rewriting/biostasis-cryopreservation/README.md",
+        "domains/c1-boundary-rewriting/brain-preservation-connectomics-emulation/README.md",
+        "domains/c2-source-maintenance/neuro-continuity/README.md"
+      ],
+      "modelAdmissionDecision": "blocked-pending-preservation-quality-and-continuity-cards"
+    },
+    {
+      "routeId": "FB-R3",
+      "routeFamily": "neuro-identity-continuity",
+      "routeName": "Neural and identity continuity preservation",
+      "routeStatus": "route-card-active-model-blocked",
+      "routeType": "source-maintenance-identity-boundary",
+      "primaryDomainPath": "domains/c2-source-maintenance/neuro-continuity",
+      "supportingDomainPaths": [
+        "domains/c1-boundary-rewriting/memory-editing",
+        "domains/c1-boundary-rewriting/disembodied-cns",
+        "domains/c1-boundary-rewriting/brain-preservation-connectomics-emulation",
+        "domains/c3-generation-engine/cognitive-augmentation"
+      ],
+      "reviewedArtifactSupport": {
+        "domainIds": [
+          "neuro-continuity",
+          "memory-editing",
+          "disembodied-cns",
+          "brain-preservation-connectomics-emulation"
+        ],
+        "minimumReviewedArtifactCount": 72,
+        "interpretation": "Reviewed artifacts support identity-continuity route boundaries only; they do not prove consciousness, uploading, or memory-editing safety."
+      },
+      "claimBoundary": {
+        "directClaim": "Subject-continuity routes must preserve or govern the neural, memory, personality, agency and self-model conditions that make extended life belong to the same subject.",
+        "supportedClaim": "Neuro-continuity is a necessary gate for many life-extension routes because biological survival without cognition, memory or agency may fail the target value condition.",
+        "forbiddenInference": "Neural preservation, memory editing, digital avatars, BCI or cognitive tools do not by themselves prove personal identity continuity."
+      },
+      "effectChain": {
+        "directEffect": "Changes neural integrity, memory stability, cognitive agency, self-model continuity and identity-governance variables.",
+        "firstOrderEffect": "Preserved cognition and agency determine whether time extension remains usable effective time.",
+        "secondOrderEffect": "Continuity quality changes technology adoption, consent, recovery and long-term project execution.",
+        "multiOrderEffect": "Stable neuro-identity continuity lets other biomedical, AI and future-waiting routes compound without losing the subject target.",
+        "positiveChain": [
+          "neural substrate and memory remain coherent",
+          "agency and self-model remain usable",
+          "extended time remains effective time",
+          "future technologies can be understood and adopted",
+          "subject-continuity flywheel remains target-aligned"
+        ],
+        "negativeChain": [
+          "brain injury, degeneration or identity disruption",
+          "memory, personality, judgment or agency collapse",
+          "extended survival no longer preserves the intended subject",
+          "technology adoption and consent degrade",
+          "route fails the value boundary even if body survives"
+        ]
+      },
+      "gateCoverage": [
+        {
+          "dimension": "technical-window",
+          "gateId": "P_neuro_repair_window",
+          "gateQuestion": "Can relevant neural repair, protection, rehabilitation, preservation or interface methods affect the continuity variable being claimed?",
+          "currentStatus": "blocked-pending-variable-specific-source-cards"
+        },
+        {
+          "dimension": "access",
+          "gateId": "P_neuro_service_access",
+          "gateQuestion": "Can subjects access diagnosis, prevention, rehabilitation, assistive tools, continuity records or support systems?",
+          "currentStatus": "blocked-pending-access-cards"
+        },
+        {
+          "dimension": "adoption",
+          "gateId": "P_consent_agency_adopt",
+          "gateQuestion": "Can the subject consent, understand and safely integrate neural or cognitive interventions?",
+          "currentStatus": "blocked-pending-agency-card"
+        },
+        {
+          "dimension": "duration",
+          "gateId": "P_continuity_persist",
+          "gateQuestion": "Can memory, personality, agency and functional cognition remain stable enough across the relevant duration?",
+          "currentStatus": "blocked-pending-continuity-measurement-card"
+        },
+        {
+          "dimension": "composability",
+          "gateId": "P_identity_composable",
+          "gateQuestion": "Can neural continuity combine with biological repair, AI tools, preservation, legal identity and social recognition?",
+          "currentStatus": "blocked-pending-cross-domain-card"
+        },
+        {
+          "dimension": "tail-risk",
+          "gateId": "A_false_continuity_abort",
+          "gateQuestion": "Does memory corruption, coercive editing, personality collapse, irreversible coma or false-copy continuity trigger abort?",
+          "currentStatus": "blocked"
+        },
+        {
+          "dimension": "opportunity-cost",
+          "gateId": "C_neuro_opportunity",
+          "gateQuestion": "Does investment in speculative neuro-continuity displace prevention, rehabilitation, accessibility or caregiver support with stronger evidence?",
+          "currentStatus": "not-estimated"
+        }
+      ],
+      "abortGates": [
+        "Continuity condition is undefined or replaced by a copy/likeness claim.",
+        "Consent, agency or self-model is bypassed.",
+        "Memory editing, preservation or BCI claim is treated as identity proof.",
+        "Route ignores neurodegeneration, injury, delirium or cognitive failure risk."
+      ],
+      "sourceRefs": [
+        "domains/c2-source-maintenance/neuro-continuity/README.md",
+        "domains/c1-boundary-rewriting/memory-editing/README.md",
+        "domains/c1-boundary-rewriting/disembodied-cns/README.md",
+        "domains/c1-boundary-rewriting/brain-preservation-connectomics-emulation/README.md",
+        "domains/c3-generation-engine/cognitive-augmentation/README.md"
+      ],
+      "modelAdmissionDecision": "blocked-pending-continuity-variable-and-identity-boundary-cards"
+    },
+    {
+      "routeId": "FB-R4",
+      "routeFamily": "ai-enabled-acceleration",
+      "routeName": "AI-enabled acceleration of capability and biomedical windows",
+      "routeStatus": "route-card-active-model-blocked",
+      "routeType": "generation-engine-acceleration",
+      "primaryDomainPath": "domains/c3-generation-engine/cognitive-augmentation",
+      "supportingDomainPaths": [
+        "domains/c3-generation-engine/ai-drug-discovery-protein-design",
+        "domains/c3-generation-engine/ai-agency-safety",
+        "domains/c4-conversion-channel/research-infrastructure-open-science-translation",
+        "domains/c4-conversion-channel/technology-foresight-horizon-scanning"
+      ],
+      "reviewedArtifactSupport": {
+        "domainIds": [],
+        "minimumReviewedArtifactCount": 0,
+        "interpretation": "This route currently has domain-level support but no reviewed artifact pack in the priority artifact register; model admission is blocked until AI-route Source Cards are promoted."
+      },
+      "claimBoundary": {
+        "directClaim": "AI can lower search, synthesis, design, coordination and decision-support costs in research and subject task execution.",
+        "supportedClaim": "AI-enabled acceleration should be modeled as changing technology-window probability, understanding probability, adoption probability, calibration quality and tail-risk exposure.",
+        "forbiddenInference": "AI capability, model benchmarks, generated candidates or automation do not prove biomedical efficacy, safe autonomy, longer life, or effective immortality."
+      },
+      "effectChain": {
+        "directEffect": "Changes cognitive throughput, candidate generation, research iteration, evidence synthesis, automation and coordination variables.",
+        "firstOrderEffect": "The subject and research ecosystem can notice, understand, test and coordinate more options per unit time.",
+        "secondOrderEffect": "If calibration and governance hold, AI can increase probability of reaching useful biomedical, social or safety windows before failure.",
+        "multiOrderEffect": "Capability acceleration can enter the subject-continuity flywheel only if it improves learning, repair, adoption and governance faster than it adds dependency, error or misuse risk.",
+        "positiveChain": [
+          "AI lowers search and design cost",
+          "more candidate technologies and decisions can be explored",
+          "evidence and experiments cycle faster",
+          "useful technology windows become more likely",
+          "subject capability and continuity infrastructure compound"
+        ],
+        "negativeChain": [
+          "AI increases speed without calibration",
+          "invalid candidates, hallucinated evidence or unsafe agents propagate",
+          "resources shift into noisy or harmful paths",
+          "automation erodes agency or creates tail risk",
+          "acceleration becomes risk amplification"
+        ]
+      },
+      "gateCoverage": [
+        {
+          "dimension": "technical-window",
+          "gateId": "P_ai_window_creation",
+          "gateQuestion": "Does AI materially improve discovery, validation or translation windows rather than only produce more unvalidated candidates?",
+          "currentStatus": "blocked-pending-ai-source-cards"
+        },
+        {
+          "dimension": "access",
+          "gateId": "P_ai_access",
+          "gateQuestion": "Can subjects and researchers access compute, data, tools, interfaces and support without excluding most beneficiaries?",
+          "currentStatus": "blocked-pending-access-and-equity-cards"
+        },
+        {
+          "dimension": "adoption",
+          "gateId": "P_ai_safe_adoption",
+          "gateQuestion": "Can users safely adopt AI outputs with review, consent, accountability, rollback and scope limits?",
+          "currentStatus": "blocked-pending-agent-safety-card"
+        },
+        {
+          "dimension": "duration",
+          "gateId": "P_ai_persist",
+          "gateQuestion": "Can AI workflows remain reliable over long horizons despite model drift, data drift, cost shifts and security failures?",
+          "currentStatus": "blocked-pending-operations-card"
+        },
+        {
+          "dimension": "composability",
+          "gateId": "P_ai_composable",
+          "gateQuestion": "Can AI outputs combine with wet-lab, clinical, governance, human skill and social-support systems?",
+          "currentStatus": "blocked-pending-translation-card"
+        },
+        {
+          "dimension": "tail-risk",
+          "gateId": "A_ai_tail_abort",
+          "gateQuestion": "Do hallucination, unsafe autonomy, dual-use, privacy loss, coercion or systemic dependence trigger abort or downgrade?",
+          "currentStatus": "blocked"
+        },
+        {
+          "dimension": "opportunity-cost",
+          "gateId": "C_ai_opportunity",
+          "gateQuestion": "Does AI acceleration consume attention, money, compute or institutional trust that would otherwise support stronger subject-continuity infrastructure?",
+          "currentStatus": "not-estimated"
+        }
+      ],
+      "abortGates": [
+        "AI-generated candidate is treated as evidence without validation.",
+        "Agentic system can act irreversibly without review and rollback.",
+        "AI route creates unbounded privacy, dual-use, security or autonomy risk.",
+        "Acceleration claim ignores calibration, access or equity failure."
+      ],
+      "sourceRefs": [
+        "domains/c3-generation-engine/cognitive-augmentation/README.md",
+        "domains/c3-generation-engine/ai-drug-discovery-protein-design/README.md",
+        "domains/c3-generation-engine/ai-agency-safety/README.md",
+        "domains/c4-conversion-channel/research-infrastructure-open-science-translation/README.md",
+        "domains/c4-conversion-channel/technology-foresight-horizon-scanning/README.md"
+      ],
+      "modelAdmissionDecision": "blocked-pending-ai-route-source-card-promotion-and-calibration"
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-.PHONY: check structure claim-matrix-audit maturity-gap-audit page-claim-audit audience-claim-map-audit paper-claim-audit domain-falsifier-audit domain-claim-matrix-audit domain-field-extraction-audit domain-source-queue-audit domain-source-extraction-audit domain-source-promotion-audit source-context-local-review-audit card-promotion-prep-audit independent-fresh-review-protocol-audit independent-fresh-review-verdict-audit reviewed-card-artifact-audit falsifier-source-audit falsifier-source-extraction-audit py-compile clean
+.PHONY: check structure claim-matrix-audit maturity-gap-audit page-claim-audit audience-claim-map-audit paper-claim-audit domain-falsifier-audit domain-claim-matrix-audit domain-field-extraction-audit domain-source-queue-audit domain-source-extraction-audit domain-source-promotion-audit source-context-local-review-audit card-promotion-prep-audit independent-fresh-review-protocol-audit independent-fresh-review-verdict-audit reviewed-card-artifact-audit future-boundary-route-card-audit falsifier-source-audit falsifier-source-extraction-audit py-compile clean
 
 check:
 	$(MAKE) clean
@@ -19,6 +19,7 @@ check:
 	$(MAKE) independent-fresh-review-protocol-audit
 	$(MAKE) independent-fresh-review-verdict-audit
 	$(MAKE) reviewed-card-artifact-audit
+	$(MAKE) future-boundary-route-card-audit
 	$(MAKE) falsifier-source-audit
 	$(MAKE) falsifier-source-extraction-audit
 	$(MAKE) py-compile
@@ -76,6 +77,9 @@ independent-fresh-review-verdict-audit:
 reviewed-card-artifact-audit:
 	python3 tools/audit_human_infra_reviewed_card_artifact_register.py
 
+future-boundary-route-card-audit:
+	python3 tools/audit_human_infra_future_boundary_route_card_register.py
+
 falsifier-source-audit:
 	python3 tools/audit_human_infra_falsifier_source_card_backfill.py
 
@@ -100,6 +104,7 @@ py-compile:
 		tools/audit_human_infra_independent_fresh_review_protocol.py \
 		tools/audit_human_infra_independent_fresh_review_verdict_register.py \
 		tools/audit_human_infra_reviewed_card_artifact_register.py \
+		tools/audit_human_infra_future_boundary_route_card_register.py \
 		tools/audit_human_infra_falsifier_source_card_backfill.py \
 		tools/audit_human_infra_falsifier_source_card_extraction.py \
 		tools/arxiv_html_paper_tool.py \
