@@ -162,7 +162,9 @@
         "docs/reference/human-infra-future-boundary-route-card-register.json",
         "tools/audit_human_infra_future_boundary_route_card_register.py",
         "docs/reference/human-infra-c2-longtail-first-batch-source-resolution-fresh-review-verdict-register.json",
-        "tools/audit_human_infra_c2_longtail_first_batch_source_resolution_fresh_review_verdict_register.py"
+        "tools/audit_human_infra_c2_longtail_first_batch_source_resolution_fresh_review_verdict_register.py",
+        "docs/reference/human-infra-c2-longtail-first-batch-corrected-source-reextraction-queue.json",
+        "tools/audit_human_infra_c2_longtail_first_batch_corrected_source_reextraction_queue.py"
       ],
       "gates": [
         {
@@ -234,12 +236,14 @@
             "docs/reference/human-infra-c2-longtail-first-batch-blocked-source-resolution-register.json",
             "docs/reference/human-infra-c2-longtail-first-batch-reviewed-card-artifact-register.json",
             "docs/reference/human-infra-c2-longtail-first-batch-source-resolution-fresh-review-verdict-register.json",
-            "tools/audit_human_infra_c2_longtail_first_batch_source_resolution_fresh_review_verdict_register.py"
+            "tools/audit_human_infra_c2_longtail_first_batch_source_resolution_fresh_review_verdict_register.py",
+            "docs/reference/human-infra-c2-longtail-first-batch-corrected-source-reextraction-queue.json",
+            "tools/audit_human_infra_c2_longtail_first_batch_corrected_source_reextraction_queue.py"
           ],
           "missingEvidence": [
-            "C2-LT-B1 now has 252 reviewed artifacts for 42 eligible source rows, source-resolution candidates for the 6 non-eligible rows, and source-resolution fresh-review verdicts for those 6 rows. The 6 rows still require corrected source re-extraction, source-specific splitting where marked route-only, independent review after re-extraction, and reviewed artifact creation before they can count as Source Card coverage; full domain-level Source Card coverage for the remaining 184 C2 long-tail domains and model admission artifacts remain incomplete."
+            "C2-LT-B1 now has 252 reviewed artifacts for 42 eligible source rows, source-resolution candidates and fresh-review verdicts for the 6 non-eligible rows, and 10 corrected source re-extraction queue tasks. Those 10 tasks still require corrected extraction outputs, source-specific splitting where marked, independent review after re-extraction, and reviewed artifact creation before they can count as Source Card coverage; full domain-level Source Card coverage for the remaining 184 C2 long-tail domains and model admission artifacts remain incomplete."
           ],
-          "nextAction": "Create a corrected source re-extraction queue/register for the 6 source-resolution-reviewed C2-LT-B1 rows, then run extraction, review and artifact promotion only for rows that satisfy the bounded eligibility gates.",
+          "nextAction": "Execute the corrected source re-extraction queue for the 10 selected corrected candidates, produce a corrected extraction register, then run bounded eligibility review before any artifact promotion.",
           "blocks100Percent": true
         },
         {
@@ -286,12 +290,14 @@
             "docs/reference/human-infra-c2-longtail-first-batch-blocked-source-resolution-register.json",
             "docs/reference/human-infra-c2-longtail-first-batch-reviewed-card-artifact-register.json",
             "docs/reference/human-infra-c2-longtail-first-batch-source-resolution-fresh-review-verdict-register.json",
-            "tools/audit_human_infra_c2_longtail_first_batch_source_resolution_fresh_review_verdict_register.py"
+            "tools/audit_human_infra_c2_longtail_first_batch_source_resolution_fresh_review_verdict_register.py",
+            "docs/reference/human-infra-c2-longtail-first-batch-corrected-source-reextraction-queue.json",
+            "tools/audit_human_infra_c2_longtail_first_batch_corrected_source_reextraction_queue.py"
           ],
           "missingEvidence": [
-            "C2-LT-B1 now has reviewed variable and endpoint artifacts for 42 eligible source rows and source-resolution fresh-review verdicts for 6 blocked rows, but corrected variable/endpoint artifacts for those blocked rows, remaining C2 long-tail domains, calibrated variable contracts and endpoint validation are not complete."
+            "C2-LT-B1 now has reviewed variable and endpoint artifacts for 42 eligible source rows plus 10 corrected re-extraction tasks for the blocked rows, but corrected variable/endpoint artifacts for those tasks, remaining C2 long-tail domains, calibrated variable contracts and endpoint validation are not complete."
           ],
-          "nextAction": "Re-extract corrected sources for the 6 source-resolution-reviewed rows before converting any corrected row into governed variable and endpoint artifacts; keep calibrated variable contracts blocked until artifact and model gates pass.",
+          "nextAction": "Fill corrected source re-extraction outputs for the 10 queued tasks before converting any corrected row into governed variable and endpoint artifacts; keep calibrated variable contracts blocked until artifact and model gates pass.",
           "blocks100Percent": true
         },
         {
@@ -363,12 +369,14 @@
             "docs/reference/human-infra-c2-longtail-first-batch-blocked-source-resolution-register.json",
             "docs/reference/human-infra-c2-longtail-first-batch-reviewed-card-artifact-register.json",
             "docs/reference/human-infra-c2-longtail-first-batch-source-resolution-fresh-review-verdict-register.json",
-            "tools/audit_human_infra_c2_longtail_first_batch_source_resolution_fresh_review_verdict_register.py"
+            "tools/audit_human_infra_c2_longtail_first_batch_source_resolution_fresh_review_verdict_register.py",
+            "docs/reference/human-infra-c2-longtail-first-batch-corrected-source-reextraction-queue.json",
+            "tools/audit_human_infra_c2_longtail_first_batch_corrected_source_reextraction_queue.py"
           ],
           "missingEvidence": [
-            "C2-LT-B1 now has downgrade-check artifacts for 42 eligible source rows, explicit source-resolution candidates for 5 downgrade-before-fill rows plus 1 cannot-evaluate row, and fresh-review verdicts over those correction candidates. The corrected rows still need re-extraction and promotion-time downgrade checks, and full falsifier artifacts for the remaining C2 long-tail domains are not complete."
+            "C2-LT-B1 now has downgrade-check artifacts for 42 eligible source rows, explicit source-resolution candidates and verdicts for 5 downgrade-before-fill rows plus 1 cannot-evaluate row, and 10 corrected source re-extraction tasks. Those tasks still need re-extraction outputs and promotion-time downgrade checks, and full falsifier artifacts for the remaining C2 long-tail domains are not complete."
           ],
-          "nextAction": "Create corrected source re-extraction rows for the 6 source-resolution-reviewed blocked rows and preserve downgrade/cannot-evaluate decisions where corrected sources still fail; then expand downgrade/falsifier artifact coverage across remaining C2 long-tail domains.",
+          "nextAction": "Execute corrected source re-extraction for the 10 queued tasks and preserve downgrade/cannot-evaluate decisions where corrected sources still fail; then expand downgrade/falsifier artifact coverage across remaining C2 long-tail domains.",
           "blocks100Percent": true
         }
       ]
@@ -515,7 +523,7 @@
   "nextWorkOrder": [
     {
       "priority": 1,
-      "item": "Create a corrected source re-extraction queue/register for the 6 C2-LT-B1 source-resolution-reviewed blocked rows, split route-only hub/directory cases, then re-run extraction and artifact eligibility review.",
+      "item": "Execute the corrected source re-extraction queue for the 10 C2-LT-B1 selected corrected candidates, split route-only hub/directory cases, then produce a corrected extraction register for fresh review and artifact eligibility decisions.",
       "unblocks": [
         "RESEARCH-G3-c1-c2-source-cards",
         "RESEARCH-G4-variable-mechanism-contracts",
