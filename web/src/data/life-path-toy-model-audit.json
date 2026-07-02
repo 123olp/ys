@@ -1,6 +1,6 @@
 {
   "schemaVersion": "human-infra.life-path-toy-audit.v1",
-  "generatedAt": "2026-07-02T01:57:08.979450+00:00",
+  "generatedAt": "2026-07-02T02:09:02.486755+00:00",
   "modelPath": "web/src/data/life-path-toy-model.json",
   "modelSha256": "a4c92209d79d20579bf1f575d5ebf07ffe5be9ccaf6bf3f3eef08efa287b5377",
   "overallStatus": "PASS",
@@ -346,6 +346,71 @@
       "detail": "manifest must cite official NHATS overview, access, terms, cross-year search, files, user guide, and sample design sources"
     },
     {
+      "id": "nhats-acquisition-readiness-exists",
+      "status": "PASS",
+      "detail": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_acquisition_readiness.json"
+    },
+    {
+      "id": "nhats-acquisition-readiness-schema",
+      "status": "PASS",
+      "detail": "schemaVersion='human-infra.life-path-nhats-acquisition-readiness.v1'"
+    },
+    {
+      "id": "nhats-acquisition-readiness-identity",
+      "status": "PASS",
+      "detail": "readiness contract must bind NHATS source, Data Card, manifest and cannot-extract status"
+    },
+    {
+      "id": "nhats-acquisition-readiness-current-decision",
+      "status": "PASS",
+      "detail": "current decision must explicitly block acquisition, extraction scripts, raw repository data, calibration and individual prediction"
+    },
+    {
+      "id": "nhats-acquisition-readiness-source-coverage",
+      "status": "PASS",
+      "detail": "missing_source_ids=[]"
+    },
+    {
+      "id": "nhats-acquisition-readiness-source-urls",
+      "status": "PASS",
+      "detail": "official source refresh entries must use HTTPS URLs"
+    },
+    {
+      "id": "nhats-acquisition-readiness-source-facts",
+      "status": "PASS",
+      "detail": "official source refresh entries must include observed fact and model consequence"
+    },
+    {
+      "id": "nhats-acquisition-readiness-gate-coverage",
+      "status": "PASS",
+      "detail": "missing_gate_ids=[]"
+    },
+    {
+      "id": "nhats-acquisition-readiness-gate-status",
+      "status": "PASS",
+      "detail": "each gate must have a valid status, required evidence and next evidence"
+    },
+    {
+      "id": "nhats-acquisition-readiness-blocking-gates",
+      "status": "PASS",
+      "detail": "missing or partial gates must block extraction"
+    },
+    {
+      "id": "nhats-acquisition-readiness-gate-summary",
+      "status": "PASS",
+      "detail": "gate summary must keep all acquisition gates blocking until ready evidence exists"
+    },
+    {
+      "id": "nhats-acquisition-readiness-prohibited-actions",
+      "status": "PASS",
+      "detail": "readiness contract must prohibit premature download, scripts, raw data, public AI upload, individual death-date prediction and calibration claims"
+    },
+    {
+      "id": "nhats-acquisition-readiness-next-work",
+      "status": "PASS",
+      "detail": "next work must point to file-tier, Cross-Year Search variable confirmation and disclosure control"
+    },
+    {
       "id": "sensitivity-analysis-exists",
       "status": "PASS",
       "detail": "web/src/data/life-path-sensitivity-analysis.json"
@@ -402,7 +467,7 @@
     }
   ],
   "summary": {
-    "pass": 79,
+    "pass": 92,
     "warn": 0,
     "fail": 0
   },
@@ -772,9 +837,86 @@
       "fail": 0
     }
   },
+  "nhatsAcquisitionReadiness": {
+    "path": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_acquisition_readiness.json",
+    "sha256": "98c7d8560d055afc09f830281ffa978f03bc7a974c9d9e047cf21dbcba58172d",
+    "status": "PASS",
+    "checks": [
+      {
+        "id": "nhats-acquisition-readiness-exists",
+        "status": "PASS",
+        "detail": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_acquisition_readiness.json"
+      },
+      {
+        "id": "nhats-acquisition-readiness-schema",
+        "status": "PASS",
+        "detail": "schemaVersion='human-infra.life-path-nhats-acquisition-readiness.v1'"
+      },
+      {
+        "id": "nhats-acquisition-readiness-identity",
+        "status": "PASS",
+        "detail": "readiness contract must bind NHATS source, Data Card, manifest and cannot-extract status"
+      },
+      {
+        "id": "nhats-acquisition-readiness-current-decision",
+        "status": "PASS",
+        "detail": "current decision must explicitly block acquisition, extraction scripts, raw repository data, calibration and individual prediction"
+      },
+      {
+        "id": "nhats-acquisition-readiness-source-coverage",
+        "status": "PASS",
+        "detail": "missing_source_ids=[]"
+      },
+      {
+        "id": "nhats-acquisition-readiness-source-urls",
+        "status": "PASS",
+        "detail": "official source refresh entries must use HTTPS URLs"
+      },
+      {
+        "id": "nhats-acquisition-readiness-source-facts",
+        "status": "PASS",
+        "detail": "official source refresh entries must include observed fact and model consequence"
+      },
+      {
+        "id": "nhats-acquisition-readiness-gate-coverage",
+        "status": "PASS",
+        "detail": "missing_gate_ids=[]"
+      },
+      {
+        "id": "nhats-acquisition-readiness-gate-status",
+        "status": "PASS",
+        "detail": "each gate must have a valid status, required evidence and next evidence"
+      },
+      {
+        "id": "nhats-acquisition-readiness-blocking-gates",
+        "status": "PASS",
+        "detail": "missing or partial gates must block extraction"
+      },
+      {
+        "id": "nhats-acquisition-readiness-gate-summary",
+        "status": "PASS",
+        "detail": "gate summary must keep all acquisition gates blocking until ready evidence exists"
+      },
+      {
+        "id": "nhats-acquisition-readiness-prohibited-actions",
+        "status": "PASS",
+        "detail": "readiness contract must prohibit premature download, scripts, raw data, public AI upload, individual death-date prediction and calibration claims"
+      },
+      {
+        "id": "nhats-acquisition-readiness-next-work",
+        "status": "PASS",
+        "detail": "next work must point to file-tier, Cross-Year Search variable confirmation and disclosure control"
+      }
+    ],
+    "summary": {
+      "pass": 13,
+      "warn": 0,
+      "fail": 0
+    }
+  },
   "sensitivityAnalysis": {
     "path": "web/src/data/life-path-sensitivity-analysis.json",
-    "sha256": "73ce504931ad39a88f012185a1959cf6d617b98804a691e167e111a83281e10c",
+    "sha256": "0f4be62b42ad49f206209bdfca1417ac48033234492fef1b0a0769e2b8656b60",
     "status": "PASS",
     "checks": [
       {

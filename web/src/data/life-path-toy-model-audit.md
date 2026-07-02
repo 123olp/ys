@@ -3,7 +3,7 @@
 - Overall status: `PASS`
 - Model path: `web/src/data/life-path-toy-model.json`
 - Model SHA-256: `a4c92209d79d20579bf1f575d5ebf07ffe5be9ccaf6bf3f3eef08efa287b5377`
-- Generated at: `2026-07-02T01:57:08.979450+00:00`
+- Generated at: `2026-07-02T02:09:02.486755+00:00`
 
 ## Checks
 
@@ -77,6 +77,19 @@
 | `nhats-extraction-manifest-required-slots` | `PASS` | manifest must expose the blank slots required before governed extraction |
 | `nhats-extraction-manifest-abort-conditions` | `PASS` | manifest must define abort gates for access, Colectica, weights/design, endpoint ambiguity, disclosure suppression, raw-data leakage, and unsafe outputs |
 | `nhats-extraction-manifest-source-trace` | `PASS` | manifest must cite official NHATS overview, access, terms, cross-year search, files, user guide, and sample design sources |
+| `nhats-acquisition-readiness-exists` | `PASS` | domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_acquisition_readiness.json |
+| `nhats-acquisition-readiness-schema` | `PASS` | schemaVersion='human-infra.life-path-nhats-acquisition-readiness.v1' |
+| `nhats-acquisition-readiness-identity` | `PASS` | readiness contract must bind NHATS source, Data Card, manifest and cannot-extract status |
+| `nhats-acquisition-readiness-current-decision` | `PASS` | current decision must explicitly block acquisition, extraction scripts, raw repository data, calibration and individual prediction |
+| `nhats-acquisition-readiness-source-coverage` | `PASS` | missing_source_ids=[] |
+| `nhats-acquisition-readiness-source-urls` | `PASS` | official source refresh entries must use HTTPS URLs |
+| `nhats-acquisition-readiness-source-facts` | `PASS` | official source refresh entries must include observed fact and model consequence |
+| `nhats-acquisition-readiness-gate-coverage` | `PASS` | missing_gate_ids=[] |
+| `nhats-acquisition-readiness-gate-status` | `PASS` | each gate must have a valid status, required evidence and next evidence |
+| `nhats-acquisition-readiness-blocking-gates` | `PASS` | missing or partial gates must block extraction |
+| `nhats-acquisition-readiness-gate-summary` | `PASS` | gate summary must keep all acquisition gates blocking until ready evidence exists |
+| `nhats-acquisition-readiness-prohibited-actions` | `PASS` | readiness contract must prohibit premature download, scripts, raw data, public AI upload, individual death-date prediction and calibration claims |
+| `nhats-acquisition-readiness-next-work` | `PASS` | next work must point to file-tier, Cross-Year Search variable confirmation and disclosure control |
 | `sensitivity-analysis-exists` | `PASS` | web/src/data/life-path-sensitivity-analysis.json |
 | `sensitivity-schema-version` | `PASS` | schemaVersion='human-infra.life-path-sensitivity.v1' |
 | `sensitivity-source-model-hash` | `PASS` | sensitivity output must point back to the generated model path and sha256 |
@@ -128,10 +141,17 @@
 - Manifest status: `PASS`
 - Boundary: the manifest is a pre-extraction gate; it blocks scripts, downloads, field inference, calibration, validation, raw-data exposure and unsafe individual outputs until official file-level requirements are complete.
 
+## NHATS Acquisition Readiness
+
+- Acquisition readiness path: `domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_acquisition_readiness.json`
+- Acquisition readiness SHA-256: `98c7d8560d055afc09f830281ffa978f03bc7a974c9d9e047cf21dbcba58172d`
+- Acquisition readiness status: `PASS`
+- Boundary: the structured readiness contract keeps NHATS at cannot-extract-yet until registration, file-tier, Colectica variables, endpoint, survey design, disclosure control, AI boundary and storage/destruction gates are ready.
+
 ## Sensitivity Analysis
 
 - Sensitivity path: `web/src/data/life-path-sensitivity-analysis.json`
-- Sensitivity SHA-256: `73ce504931ad39a88f012185a1959cf6d617b98804a691e167e111a83281e10c`
+- Sensitivity SHA-256: `0f4be62b42ad49f206209bdfca1417ac48033234492fef1b0a0769e2b8656b60`
 - Sensitivity status: `PASS`
 - Boundary: sensitivity analysis is synthetic one-factor-at-a-time stress testing; it does not prove empirical parameter values, causal effects, calibrated prediction, or individual usefulness.
 

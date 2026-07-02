@@ -1,0 +1,170 @@
+{
+  "schemaVersion": "human-infra.life-path-nhats-acquisition-readiness.v1",
+  "sourceId": "nhats",
+  "sourceName": "National Health and Aging Trends Study",
+  "dataCardId": "nhats-r1-r14-effective-time-draft",
+  "manifestId": "nhats-r1-r14-effective-time-manifest-draft",
+  "reviewDate": "2026-07-02",
+  "reviewer": "tradecatlabs",
+  "status": "cannot-extract-yet",
+  "currentDecision": {
+    "acquisitionReady": false,
+    "extractionScriptAllowed": false,
+    "rawDataAllowedInRepository": false,
+    "calibrationAllowed": false,
+    "individualPredictionAllowed": false,
+    "reason": "Official access, file-tier, Colectica variable confirmation, survey-design plan, endpoint definition, disclosure control and governed storage are not complete."
+  },
+  "officialSourceRefresh": [
+    {
+      "id": "data-access",
+      "url": "https://www.nhats.org/data-access",
+      "observedFact": "All NHATS data files require registration. Public-use files are available to registered users; sensitive and restricted files require additional application.",
+      "modelConsequence": "No NHATS file can become acquisition-ready without registration status, user boundary and file-specific access tier."
+    },
+    {
+      "id": "cross-year-search",
+      "url": "https://www.nhats.org/data-access/cross-year-search",
+      "observedFact": "Cross-Year Search is provided through Colectica and requires separate registration; metadata includes item numbers, variable names, labels, values, value labels and question text.",
+      "modelConsequence": "Exact model variables must be confirmed from Colectica or official codebooks before extraction."
+    },
+    {
+      "id": "conditions-of-use",
+      "url": "https://www.nhats.org/conditions-of-use",
+      "observedFact": "The Conditions of Use prohibit identification attempts, unapproved data sharing and uploads of NHATS or NSOC data to public LLMs or AI platforms; sensitive-data tabulations with n < 5 require suppression or additional restriction handling.",
+      "modelConsequence": "Only aggregate non-disclosive outputs can leave a governed workspace, and public AI systems may not receive raw or row-level data."
+    },
+    {
+      "id": "welcome-ai-notice",
+      "url": "https://www.nhats.org/",
+      "observedFact": "The official NHATS welcome page records a 2026-01-22 Conditions of Use update for public large language models and AI platforms and a 2026-04-06 edit to public-use data sharing conditions.",
+      "modelConsequence": "The AI boundary must be treated as a current access condition, not as optional local preference."
+    },
+    {
+      "id": "nhats-files",
+      "url": "https://www.nhats.org/data-access/nhats",
+      "observedFact": "NHATS files pages expose file families, DOI metadata and approval boundaries, while data file availability must be rechecked immediately before acquisition.",
+      "modelConsequence": "Round windows and file names remain incomplete until a fresh file-page review is recorded."
+    },
+    {
+      "id": "round-14-files",
+      "url": "https://nhats.org/researcher/nhats/download-public-use-files?id=22",
+      "observedFact": "Round 14 files include DOI metadata and file families for public annual data and sensitive or restricted resources that require approval.",
+      "modelConsequence": "Round 14 can be considered only after public/sensitive/restricted status is attached to every planned file."
+    },
+    {
+      "id": "round-13-files",
+      "url": "https://nhats.org/researcher/nhats/download-public-use-files?id=21",
+      "observedFact": "Round 13 files include DOI metadata and file families for public annual data plus sensitive sample-person resources that require approval.",
+      "modelConsequence": "Round 13 can be considered only after file tier and approval state are recorded."
+    }
+  ],
+  "gates": [
+    {
+      "id": "official-source-refresh",
+      "requiredEvidence": "Date-stamped review of Data Access, Conditions of Use, Cross-Year Search, Files and relevant round-file pages.",
+      "status": "partial",
+      "blocksExtraction": true,
+      "nextEvidence": "Repeat immediately before registration, download or script work."
+    },
+    {
+      "id": "registration-status",
+      "requiredEvidence": "Registered NHATS account identity, permitted user boundary and no-sharing obligations recorded outside the public repository.",
+      "status": "missing",
+      "blocksExtraction": true,
+      "nextEvidence": "Complete NHATS registration and record only non-sensitive registration status metadata."
+    },
+    {
+      "id": "file-access-tier",
+      "requiredEvidence": "For each planned file, record public-use, sensitive or restricted tier, approval status and allowed local storage path.",
+      "status": "missing",
+      "blocksExtraction": true,
+      "nextEvidence": "Build file-tier table from current NHATS file pages."
+    },
+    {
+      "id": "colectica-variable-confirmation",
+      "requiredEvidence": "Exact variable names, item numbers, labels, value labels, missing codes and question text from Colectica or official codebooks.",
+      "status": "missing",
+      "blocksExtraction": true,
+      "nextEvidence": "Fill one narrow functional-survival estimand variable table from Cross-Year Search."
+    },
+    {
+      "id": "round-window",
+      "requiredEvidence": "Selected rounds, file versions, release dates and cohort refresh handling fixed before extraction.",
+      "status": "missing",
+      "blocksExtraction": true,
+      "nextEvidence": "Choose the first development window and document why it fits the estimand."
+    },
+    {
+      "id": "survey-design-plan",
+      "requiredEvidence": "Weight, strata, cluster and replicate-weight strategy matched to the estimand.",
+      "status": "missing",
+      "blocksExtraction": true,
+      "nextEvidence": "Bind weight and design variables to the selected round window."
+    },
+    {
+      "id": "endpoint-definition",
+      "requiredEvidence": "Death, functional-survival, proxy interview, residential-care and censoring rules fixed before data access.",
+      "status": "missing",
+      "blocksExtraction": true,
+      "nextEvidence": "Pre-register endpoint and censoring rules before observing data."
+    },
+    {
+      "id": "disclosure-control",
+      "requiredEvidence": "n < 5 suppression, aggregate-only export and no row-level output checks implemented.",
+      "status": "missing",
+      "blocksExtraction": true,
+      "nextEvidence": "Define local output validator before any derived export."
+    },
+    {
+      "id": "ai-boundary",
+      "requiredEvidence": "Written rule that public AI tools may see only public docs, synthetic examples or aggregate non-disclosive outputs.",
+      "status": "partial",
+      "blocksExtraction": true,
+      "nextEvidence": "Operationalize with workspace policy and pre-export review."
+    },
+    {
+      "id": "storage-destruction-plan",
+      "requiredEvidence": "Governed local storage, access log, derived-data boundary and destruction-on-request process defined.",
+      "status": "missing",
+      "blocksExtraction": true,
+      "nextEvidence": "Create a non-public storage and destruction runbook before download."
+    }
+  ],
+  "gateSummary": {
+    "requiredGateCount": 10,
+    "readyGateCount": 0,
+    "partialGateCount": 2,
+    "missingGateCount": 8,
+    "blockingGateCount": 10
+  },
+  "allowedAiInputs": [
+    "public NHATS documentation URLs",
+    "synthetic examples created without row-level NHATS or NSOC data",
+    "aggregate non-disclosive outputs that pass disclosure review"
+  ],
+  "prohibitedActions": [
+    "download NHATS data before acquisition-ready",
+    "write extraction scripts before exact variables and file tiers are complete",
+    "place raw NHATS or NSOC data in this repository",
+    "upload raw or row-level NHATS or NSOC data to public LLMs or AI platforms",
+    "produce individual death-date prediction",
+    "produce personal medical advice",
+    "claim calibration or validation before governed cohort diagnostics exist"
+  ],
+  "nextWork": [
+    "Build a file-tier table for the narrow first estimand from current NHATS round pages.",
+    "Use Cross-Year Search or official codebooks to confirm exact variables for one functional-survival endpoint.",
+    "Define survey-design and disclosure-control plans before any extraction script exists.",
+    "Keep current decision at cannot-extract-yet until every gate is ready."
+  ],
+  "sourceTrace": [
+    "https://www.nhats.org/data-access",
+    "https://www.nhats.org/data-access/cross-year-search",
+    "https://www.nhats.org/conditions-of-use",
+    "https://www.nhats.org/",
+    "https://www.nhats.org/data-access/nhats",
+    "https://nhats.org/researcher/nhats/download-public-use-files?id=22",
+    "https://nhats.org/researcher/nhats/download-public-use-files?id=21"
+  ]
+}

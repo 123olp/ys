@@ -76,6 +76,15 @@ DEFAULT_NHATS_EXTRACTION_MANIFEST = (
     / "docs"
     / "life-path-extraction-manifest-nhats-draft.md"
 )
+DEFAULT_NHATS_ACQUISITION_READINESS = (
+    REPO_ROOT
+    / "domains"
+    / "c1-boundary-rewriting"
+    / "longevity-evidence"
+    / "data"
+    / "manual"
+    / "life_path_nhats_acquisition_readiness.json"
+)
 REQUIRED_MODEL_CARD_FIELDS = {
     "modelName",
     "modelClass",
@@ -173,6 +182,27 @@ REQUIRED_SENSITIVITY_PARAMETERS = {
     "subjectiveTimeExpansion",
     "levProgressRate",
     "riskTailPenalty",
+}
+REQUIRED_NHATS_ACQUISITION_SOURCE_IDS = {
+    "data-access",
+    "cross-year-search",
+    "conditions-of-use",
+    "welcome-ai-notice",
+    "nhats-files",
+    "round-14-files",
+    "round-13-files",
+}
+REQUIRED_NHATS_ACQUISITION_GATE_IDS = {
+    "official-source-refresh",
+    "registration-status",
+    "file-access-tier",
+    "colectica-variable-confirmation",
+    "round-window",
+    "survey-design-plan",
+    "endpoint-definition",
+    "disclosure-control",
+    "ai-boundary",
+    "storage-destruction-plan",
 }
 
 
@@ -1070,6 +1100,191 @@ def audit_nhats_extraction_manifest(manifest_path: Path) -> dict[str, Any]:
     }
 
 
+def audit_nhats_acquisition_readiness(readiness_path: Path) -> dict[str, Any]:
+    checks: list[dict[str, Any]] = []
+    exists = readiness_path.exists()
+    add_check(
+        checks,
+        "nhats-acquisition-readiness-exists",
+        status_from_bool(exists),
+        str(readiness_path.relative_to(REPO_ROOT)),
+    )
+    readiness = load_json(readiness_path) if exists else {}
+
+    schema_ok = (
+        readiness.get("schemaVersion")
+        == "human-infra.life-path-nhats-acquisition-readiness.v1"
+    )
+    add_check(
+        checks,
+        "nhats-acquisition-readiness-schema",
+        status_from_bool(exists and schema_ok),
+        f"schemaVersion={readiness.get('schemaVersion')!r}",
+    )
+
+    identity_ok = (
+        readiness.get("sourceId") == "nhats"
+        and readiness.get("dataCardId") == "nhats-r1-r14-effective-time-draft"
+        and readiness.get("manifestId") == "nhats-r1-r14-effective-time-manifest-draft"
+        and readiness.get("status") == "cannot-extract-yet"
+    )
+    add_check(
+        checks,
+        "nhats-acquisition-readiness-identity",
+        status_from_bool(exists and identity_ok),
+        "readiness contract must bind NHATS source, Data Card, manifest and cannot-extract status",
+    )
+
+    decision = readiness.get("currentDecision")
+    decision_ok = (
+        isinstance(decision, dict)
+        and decision.get("acquisitionReady") is False
+        and decision.get("extractionScriptAllowed") is False
+        and decision.get("rawDataAllowedInRepository") is False
+        and decision.get("calibrationAllowed") is False
+        and decision.get("individualPredictionAllowed") is False
+    )
+    add_check(
+        checks,
+        "nhats-acquisition-readiness-current-decision",
+        status_from_bool(exists and decision_ok),
+        "current decision must explicitly block acquisition, extraction scripts, raw repository data, calibration and individual prediction",
+    )
+
+    sources = readiness.get("officialSourceRefresh")
+    observed_source_ids: set[str] = set()
+    source_urls_ok = True
+    source_facts_ok = True
+    if isinstance(sources, list):
+        for source in sources:
+            if not isinstance(source, dict):
+                source_facts_ok = False
+                continue
+            source_id = source.get("id")
+            if isinstance(source_id, str):
+                observed_source_ids.add(source_id)
+            url = source.get("url")
+            if not isinstance(url, str) or not url.startswith("https://"):
+                source_urls_ok = False
+            if not str(source.get("observedFact", "")).strip() or not str(
+                source.get("modelConsequence", "")
+            ).strip():
+                source_facts_ok = False
+    missing_source_ids = sorted(REQUIRED_NHATS_ACQUISITION_SOURCE_IDS - observed_source_ids)
+    add_check(
+        checks,
+        "nhats-acquisition-readiness-source-coverage",
+        status_from_bool(exists and isinstance(sources, list) and not missing_source_ids),
+        f"missing_source_ids={missing_source_ids}",
+    )
+    add_check(
+        checks,
+        "nhats-acquisition-readiness-source-urls",
+        status_from_bool(exists and source_urls_ok),
+        "official source refresh entries must use HTTPS URLs",
+    )
+    add_check(
+        checks,
+        "nhats-acquisition-readiness-source-facts",
+        status_from_bool(exists and source_facts_ok),
+        "official source refresh entries must include observed fact and model consequence",
+    )
+
+    gates = readiness.get("gates")
+    observed_gate_ids: set[str] = set()
+    gate_status_ok = True
+    blocking_ok = True
+    if isinstance(gates, list):
+        for gate in gates:
+            if not isinstance(gate, dict):
+                gate_status_ok = False
+                blocking_ok = False
+                continue
+            gate_id = gate.get("id")
+            if isinstance(gate_id, str):
+                observed_gate_ids.add(gate_id)
+            status = gate.get("status")
+            if status not in {"missing", "partial", "ready"}:
+                gate_status_ok = False
+            if status in {"missing", "partial"} and gate.get("blocksExtraction") is not True:
+                blocking_ok = False
+            if not str(gate.get("requiredEvidence", "")).strip() or not str(
+                gate.get("nextEvidence", "")
+            ).strip():
+                gate_status_ok = False
+    missing_gate_ids = sorted(REQUIRED_NHATS_ACQUISITION_GATE_IDS - observed_gate_ids)
+    add_check(
+        checks,
+        "nhats-acquisition-readiness-gate-coverage",
+        status_from_bool(exists and isinstance(gates, list) and not missing_gate_ids),
+        f"missing_gate_ids={missing_gate_ids}",
+    )
+    add_check(
+        checks,
+        "nhats-acquisition-readiness-gate-status",
+        status_from_bool(exists and gate_status_ok),
+        "each gate must have a valid status, required evidence and next evidence",
+    )
+    add_check(
+        checks,
+        "nhats-acquisition-readiness-blocking-gates",
+        status_from_bool(exists and blocking_ok),
+        "missing or partial gates must block extraction",
+    )
+
+    summary = readiness.get("gateSummary")
+    summary_ok = (
+        isinstance(summary, dict)
+        and summary.get("requiredGateCount") == len(REQUIRED_NHATS_ACQUISITION_GATE_IDS)
+        and summary.get("readyGateCount") == 0
+        and summary.get("blockingGateCount") == len(REQUIRED_NHATS_ACQUISITION_GATE_IDS)
+        and summary.get("partialGateCount", 0) + summary.get("missingGateCount", 0)
+        == len(REQUIRED_NHATS_ACQUISITION_GATE_IDS)
+    )
+    add_check(
+        checks,
+        "nhats-acquisition-readiness-gate-summary",
+        status_from_bool(exists and summary_ok),
+        "gate summary must keep all acquisition gates blocking until ready evidence exists",
+    )
+
+    prohibited_ok = (
+        has_text(readiness.get("prohibitedActions", []), "download NHATS data")
+        and has_text(readiness.get("prohibitedActions", []), "extraction scripts")
+        and has_text(readiness.get("prohibitedActions", []), "raw NHATS")
+        and has_text(readiness.get("prohibitedActions", []), "public LLMs")
+        and has_text(readiness.get("prohibitedActions", []), "individual death-date")
+        and has_text(readiness.get("prohibitedActions", []), "calibration")
+    )
+    add_check(
+        checks,
+        "nhats-acquisition-readiness-prohibited-actions",
+        status_from_bool(exists and prohibited_ok),
+        "readiness contract must prohibit premature download, scripts, raw data, public AI upload, individual death-date prediction and calibration claims",
+    )
+
+    next_work_ok = (
+        isinstance(readiness.get("nextWork"), list)
+        and has_text(readiness["nextWork"], "file-tier table")
+        and has_text(readiness["nextWork"], "Cross-Year Search")
+        and has_text(readiness["nextWork"], "disclosure-control")
+    )
+    add_check(
+        checks,
+        "nhats-acquisition-readiness-next-work",
+        status_from_bool(exists and next_work_ok),
+        "next work must point to file-tier, Cross-Year Search variable confirmation and disclosure control",
+    )
+
+    return {
+        "path": str(readiness_path.relative_to(REPO_ROOT)),
+        "sha256": sha256_file(readiness_path) if exists else None,
+        "status": "PASS" if summarize_checks(checks)["fail"] == 0 else "FAIL",
+        "checks": checks,
+        "summary": summarize_checks(checks),
+    }
+
+
 def audit_sensitivity_analysis(
     sensitivity_path: Path,
     model_data: dict[str, Any],
@@ -1308,6 +1523,7 @@ def audit_model(
     nhats_data_card_path: Path,
     nhats_variable_dictionary_path: Path,
     nhats_extraction_manifest_path: Path,
+    nhats_acquisition_readiness_path: Path,
 ) -> dict[str, Any]:
     checks: list[dict[str, Any]] = []
     schema_version = data.get("schemaVersion")
@@ -1482,12 +1698,16 @@ def audit_model(
     nhats_extraction_manifest_audit = audit_nhats_extraction_manifest(
         nhats_extraction_manifest_path,
     )
+    nhats_acquisition_readiness_audit = audit_nhats_acquisition_readiness(
+        nhats_acquisition_readiness_path,
+    )
     sensitivity_audit = audit_sensitivity_analysis(sensitivity_path, data, model_path)
     checks.extend(readiness_audit["checks"])
     checks.extend(data_sources_audit["checks"])
     checks.extend(source_card_docs_audit["checks"])
     checks.extend(nhats_docs_audit["checks"])
     checks.extend(nhats_extraction_manifest_audit["checks"])
+    checks.extend(nhats_acquisition_readiness_audit["checks"])
     checks.extend(sensitivity_audit["checks"])
     failed = [check for check in checks if check["status"] == "FAIL"]
     overall = "PASS" if not failed else "FAIL"
@@ -1505,6 +1725,7 @@ def audit_model(
         "sourceCardDocs": source_card_docs_audit,
         "nhatsDataAdmission": nhats_docs_audit,
         "nhatsExtractionManifest": nhats_extraction_manifest_audit,
+        "nhatsAcquisitionReadiness": nhats_acquisition_readiness_audit,
         "sensitivityAnalysis": sensitivity_audit,
     }
 
@@ -1568,6 +1789,13 @@ def render_markdown(audit: dict[str, Any]) -> str:
             f"- Manifest status: `{audit['nhatsExtractionManifest']['status']}`",
             "- Boundary: the manifest is a pre-extraction gate; it blocks scripts, downloads, field inference, calibration, validation, raw-data exposure and unsafe individual outputs until official file-level requirements are complete.",
             "",
+            "## NHATS Acquisition Readiness",
+            "",
+            f"- Acquisition readiness path: `{audit['nhatsAcquisitionReadiness']['path']}`",
+            f"- Acquisition readiness SHA-256: `{audit['nhatsAcquisitionReadiness']['sha256']}`",
+            f"- Acquisition readiness status: `{audit['nhatsAcquisitionReadiness']['status']}`",
+            "- Boundary: the structured readiness contract keeps NHATS at cannot-extract-yet until registration, file-tier, Colectica variables, endpoint, survey design, disclosure control, AI boundary and storage/destruction gates are ready.",
+            "",
             "## Sensitivity Analysis",
             "",
             f"- Sensitivity path: `{audit['sensitivityAnalysis']['path']}`",
@@ -1616,6 +1844,11 @@ def parse_args() -> argparse.Namespace:
         type=Path,
         default=DEFAULT_NHATS_EXTRACTION_MANIFEST,
     )
+    parser.add_argument(
+        "--nhats-acquisition-readiness",
+        type=Path,
+        default=DEFAULT_NHATS_ACQUISITION_READINESS,
+    )
     parser.add_argument("--json-out", type=Path, default=DEFAULT_JSON_OUT)
     parser.add_argument("--md-out", type=Path, default=DEFAULT_MD_OUT)
     return parser.parse_args()
@@ -1632,6 +1865,7 @@ def main() -> int:
     nhats_data_card_path = args.nhats_data_card.resolve()
     nhats_variable_dictionary_path = args.nhats_variable_dictionary.resolve()
     nhats_extraction_manifest_path = args.nhats_extraction_manifest.resolve()
+    nhats_acquisition_readiness_path = args.nhats_acquisition_readiness.resolve()
     audit = audit_model(
         load_json(model_path),
         model_path,
@@ -1643,6 +1877,7 @@ def main() -> int:
         nhats_data_card_path,
         nhats_variable_dictionary_path,
         nhats_extraction_manifest_path,
+        nhats_acquisition_readiness_path,
     )
     args.json_out.parent.mkdir(parents=True, exist_ok=True)
     with args.json_out.open("w", encoding="utf-8") as handle:

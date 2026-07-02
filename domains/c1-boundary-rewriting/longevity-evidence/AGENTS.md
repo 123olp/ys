@@ -70,6 +70,7 @@ longevity-evidence/
 │   │   ├── lev_route_cards.tsv
 │   │   ├── life_path_calibration_readiness.json
 │   │   ├── life_path_data_source_candidates.json
+│   │   ├── life_path_nhats_acquisition_readiness.json
 │   │   └── life_path_toy_model_scenarios.json
 │   ├── processed/
 │   └── raw/
@@ -126,13 +127,14 @@ longevity-evidence/
 - `data/manual/life_path_toy_model_scenarios.json`：生命路径 toy model 的合成场景输入，定义基线风险、健康质量、场景控制值和 LEV 阈值压力测试。
 - `data/manual/life_path_calibration_readiness.json`：生命路径模型的校准预备契约，记录 target population、time zero、outcome、estimand、data requirement、validation、calibration、sensitivity、bias/applicability、reporting 和 prohibited use 字段；它证明下一阶段要补什么，不证明当前模型已校准。
 - `data/manual/life_path_data_source_candidates.json`：生命路径模型的候选数据源注册表，记录官方队列入口、可能模型角色、覆盖标签、访问治理状态和禁止外推边界；它只证明后续数据源搜索空间已被登记，不证明数据已访问、模型已校准或因果效应成立。
+- `data/manual/life_path_nhats_acquisition_readiness.json`：NHATS acquisition readiness 机器契约，记录官方来源刷新、注册状态、文件层级、Colectica 变量确认、round window、survey design、endpoint、披露控制、AI 边界、存储销毁和禁止动作；它只证明提取前准入条件被机器化审计，当前仍是 `cannot-extract-yet`。
 - `data/raw/`：采集脚本保存的原始 API 响应和下载快照。
 - `data/processed/`：采集脚本生成的 JSONL 索引和汇总。
 - `scripts/collect_mvp_data.py`：采集 PubMed、OpenAlex、ClinicalTrials.gov 和 openFDA 标签数据。
 - `scripts/collect_core_data.py`：采集 HAGR、PubChem、openFDA event 和 Drugs@FDA 数据。
 - `scripts/run_life_path_toy_model.py`：读取合成场景并导出 `web/src/data/life-path-toy-model.json`，用于 `/model/` 的最小可运行定量展示。
 - `scripts/run_life_path_sensitivity_analysis.py`：读取合成场景和已导出的 toy model，生成 `web/src/data/life-path-sensitivity-analysis.json`，用于一因素扰动检查场景排序、开放边界和最敏感参数。
-- `scripts/audit_life_path_toy_model.py`：审计生成后的生命路径 toy model、合成敏感性分析、校准预备契约、候选数据源注册表、数据源 Source Cards、Data Card 模板、NHATS Data Card、NHATS 变量字典和 NHATS extraction manifest，输出机器可读 JSON 和人可读 Markdown，检查模型卡、来源 hash、生存曲线、概率范围、LEV 开放边界、敏感性参数覆盖、校准预备字段、候选数据源治理边界、数据卡准入文档、提取前治理门禁和禁止个体死亡日期字段。
+- `scripts/audit_life_path_toy_model.py`：审计生成后的生命路径 toy model、合成敏感性分析、校准预备契约、候选数据源注册表、数据源 Source Cards、Data Card 模板、NHATS Data Card、NHATS 变量字典、NHATS extraction manifest 和 NHATS acquisition readiness 机器契约，输出机器可读 JSON 和人可读 Markdown，检查模型卡、来源 hash、生存曲线、概率范围、LEV 开放边界、敏感性参数覆盖、校准预备字段、候选数据源治理边界、数据卡准入文档、提取前治理门禁、准入门机器化状态和禁止个体死亡日期字段。
 
 ## 依赖关系
 
