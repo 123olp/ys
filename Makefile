@@ -1,8 +1,9 @@
-.PHONY: check structure py-compile clean
+.PHONY: check structure claim-matrix-audit py-compile clean
 
 check:
 	$(MAKE) clean
 	$(MAKE) structure
+	$(MAKE) claim-matrix-audit
 	$(MAKE) py-compile
 	$(MAKE) clean
 	$(MAKE) structure
@@ -10,8 +11,12 @@ check:
 structure:
 	python3 tools/check_repository.py
 
+claim-matrix-audit:
+	python3 tools/audit_core_claim_evidence_matrix.py
+
 py-compile:
 	python3 -m py_compile \
+		tools/audit_core_claim_evidence_matrix.py \
 		tools/arxiv_html_paper_tool.py \
 		tools/check_repository.py \
 		tools/update_domain_doc_contracts.py \

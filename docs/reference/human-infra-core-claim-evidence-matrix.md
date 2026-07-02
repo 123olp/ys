@@ -94,6 +94,17 @@ ISPOR-SMDM / OHDSI / DYNAMO-HIA
 | 定量模型 | 已有 toy model、合成敏感性分析和本地审计 | 进入真实队列前补 acquisition-ready Data Card、字段字典、权重、endpoint 和输出抑制 |
 | 治理边界 | 已有禁止个体死亡日期、医学建议和未校准外推边界 | 把所有强叙事页面纳入同一 claim gate |
 
+## Local Audit
+
+本矩阵进入本地质量门禁：
+
+```bash
+python3 tools/audit_core_claim_evidence_matrix.py
+make claim-matrix-audit
+```
+
+审计范围只覆盖结构契约：Source Anchor、Claim ID、gate、禁止用途、方法锚点 URL 和入口索引。它不验证外部文献真实性，也不把方法锚点升级为实证证据。
+
 ## Source Traceability
 
 - Capability Approach, Stanford Encyclopedia of Philosophy: https://plato.stanford.edu/entries/capability-approach/
