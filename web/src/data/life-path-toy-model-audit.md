@@ -2,8 +2,8 @@
 
 - Overall status: `PASS`
 - Model path: `web/src/data/life-path-toy-model.json`
-- Model SHA-256: `1de891d93a814c8075b0404d774949fe4f76b59e58ac002dd7a944ad07cc153b`
-- Generated at: `2026-07-02T01:06:48.126895+00:00`
+- Model SHA-256: `4626678190e78d3fc2dc35851e6996e88c68e93b6c6194097c63c511c679ccd6`
+- Generated at: `2026-07-02T01:14:57.393291+00:00`
 
 ## Checks
 
@@ -57,6 +57,15 @@
 | `source-cards-boundary-language` | `PASS` | source cards must preserve candidate-only, no-data, no-calibration, no-individual-prediction, and no-validation boundaries |
 | `data-card-template-required-sections` | `PASS` | missing_sections=[] |
 | `data-card-template-prohibited-outputs` | `PASS` | data card template must block individual death-date prediction, personal medical advice, personal longevity ranking, and premature calibration claims |
+| `nhats-data-card-exists` | `PASS` | domains/c1-boundary-rewriting/longevity-evidence/docs/life-path-data-card-nhats.md |
+| `nhats-variable-dictionary-exists` | `PASS` | domains/c1-boundary-rewriting/longevity-evidence/docs/life-path-variable-dictionary-nhats.md |
+| `nhats-data-card-identity` | `PASS` | NHATS Data Card must identify source_card_id, source name, draft status, and data_card_id |
+| `nhats-data-card-boundaries` | `PASS` | NHATS Data Card must block individual prediction, medical advice, personal ranking, premature calibration, and raw-data AI upload |
+| `nhats-data-card-source-trace` | `PASS` | NHATS Data Card must cite overview, data access, conditions of use, user guide, and sample design sources |
+| `nhats-data-card-decision` | `PASS` | NHATS Data Card must keep the current decision at cannot-evaluate-yet and name effective_time_proxy plus abort conditions |
+| `nhats-variable-dictionary-boundaries` | `PASS` | NHATS variable dictionary must remain candidate-only and block extraction/calibration/individual-prediction claims |
+| `nhats-variable-dictionary-core-examples` | `PASS` | NHATS variable dictionary must include design, decedent, and cognition example fields while still marking them as candidates |
+| `nhats-variable-dictionary-model-roles` | `PASS` | NHATS variable dictionary must map variable families to Human Infra model roles and keep decision at cannot-calibrate-yet |
 
 ## Calibration Readiness
 
@@ -80,6 +89,15 @@
 - Data Card template SHA-256: `2ad38f8931e365e78b471ef03087f7eeb1624f87ff96be615d950c890fae94c2`
 - Source Card docs status: `PASS`
 - Boundary: source cards and the data-card template only prove data-governance readiness scaffolding; they do not prove data access, field availability, calibration, or validation.
+
+## NHATS Data Admission
+
+- NHATS Data Card path: `domains/c1-boundary-rewriting/longevity-evidence/docs/life-path-data-card-nhats.md`
+- NHATS Data Card SHA-256: `d368611ca03032e5ab1c5f728299b6584b01a659ab8f0cf2e1f2d755ed57d417`
+- NHATS variable dictionary path: `domains/c1-boundary-rewriting/longevity-evidence/docs/life-path-variable-dictionary-nhats.md`
+- NHATS variable dictionary SHA-256: `906b7648dac9dda5c43b83bab2c44b58e53aab7e79aa13da4e77adc879b06ea8`
+- NHATS data admission status: `PASS`
+- Boundary: NHATS is only a draft admission candidate for late-life effective-time modeling; no data access, extraction, calibration, validation, or individual prediction is claimed.
 
 ## Standard Alignment
 

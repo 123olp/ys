@@ -10,7 +10,7 @@
 | --- | ---: | --- | --- |
 | 项目价值 | 82% | 不同受众能用同一核心命题理解 Human Infra 的必要性 | 还需要把同一价值语言压入所有论文页和传播页 |
 | 研究框架 | 52% | 每条主张都进入 Source Card、Claim-Evidence Matrix、变量表和反证条件 | 研究域多，但主张级证据闭环还不均匀 |
-| 定量模型 | 45% | 有可运行、可复现、可审查的场景级模型管线 | 已有 toy model、审计器、校准预备契约、真实队列候选注册表、数据源 Source Cards 和 Data Card 模板，但还没有数据访问、变量字典、真实 Data Cards、外部验证和已执行敏感性分析 |
+| 定量模型 | 48% | 有可运行、可复现、可审查的场景级模型管线 | 已有 toy model、审计器、校准预备契约、真实队列候选注册表、数据源 Source Cards、Data Card 模板和 NHATS 数据准入草案，但还没有数据访问、精确字段字典、提取清单、外部验证和已执行敏感性分析 |
 
 ## 价值层 100%
 
@@ -156,14 +156,16 @@ life_path_toy_model_scenarios.json
   -> life_path_data_source_candidates.json
   -> life-path-data-source-cards.md
   -> life-path-data-card-template.md
+  -> life-path-data-card-nhats.md
+  -> life-path-variable-dictionary-nhats.md
   -> /model/ Web 图表
-  -> model card + sanity checks + calibration-readiness audit checks + data-source candidate audit checks + source-card/data-card readiness checks
+  -> model card + sanity checks + calibration-readiness audit checks + data-source candidate audit checks + source-card/data-card readiness checks + NHATS data-admission checks
 ```
 
-这一步已经把项目从“有定量想法的研究叙事”推进到“有最小可执行、可审计模型管线的研究系统”，并且开始把真实队列候选和治理边界纳入机器审计。下一步不是继续膨胀新域，而是补三件硬东西：
+这一步已经把项目从“有定量想法的研究叙事”推进到“有最小可执行、可审计模型管线的研究系统”，并且开始把真实队列候选、治理边界和第一份 NHATS 数据准入草案纳入机器审计。下一步不是继续膨胀新域，而是补三件硬东西：
 
 - 把 C1/C2 核心主张做成 Source Cards 和 Claim-Evidence Matrix。
-- 把 life-path 候选数据源逐个转成真实 Data Cards 和变量字典，补变量可得性、缺失机制、代表性、访问规则和伦理边界。
+- 把 NHATS 草案推进到精确变量字典和 extraction manifest，补字段名、轮次、缺失码、公开/敏感/受限状态、权重和 endpoint 定义。
 - 执行 sensitivity analysis，并把结果接入审计产物和 `/model/` 可视化。
 
 ## 当前已具备的定量门禁
@@ -194,6 +196,8 @@ life_path_toy_model_scenarios.json
 - 每个候选源是否使用官方 HTTPS URL、写明 access/governance status，并禁止个体预测、校准过度主张和因果过度主张。
 - 数据源 Source Cards 是否存在、覆盖每个候选源 ID 和官方 URL，并保留 candidate-only、未下载真实数据、未建立校准、禁止个体死亡日期预测和未外部验证边界；
 - Data Card 模板是否存在，是否包含 Header、Governance、Study Design、Outcomes、Predictors、Data Quality、Model Use、Decision 和 Source Trace，并禁止个体死亡日期预测、个人医疗建议、个人寿命排名和未验证的校准声明。
+- NHATS Data Card 是否存在，是否包含 source_card_id、draft/cannot-evaluate-yet 状态、官方来源追踪、禁止个体预测、禁止个人医疗建议、禁止 raw data 上传到公共 AI 系统、有效时间代理、不可评估决策和中止条件。
+- NHATS 变量字典草案是否存在，是否保持 candidate-only 边界，并覆盖 design/identity、outcome boundary、function/mobility、cognition/attention、resources/support、environment/access 和 effective_time_proxy 这些模型角色。
 
 ## 参考入口
 

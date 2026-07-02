@@ -49,6 +49,22 @@ DEFAULT_DATA_CARD_TEMPLATE = (
     / "docs"
     / "life-path-data-card-template.md"
 )
+DEFAULT_NHATS_DATA_CARD = (
+    REPO_ROOT
+    / "domains"
+    / "c1-boundary-rewriting"
+    / "longevity-evidence"
+    / "docs"
+    / "life-path-data-card-nhats.md"
+)
+DEFAULT_NHATS_VARIABLE_DICTIONARY = (
+    REPO_ROOT
+    / "domains"
+    / "c1-boundary-rewriting"
+    / "longevity-evidence"
+    / "docs"
+    / "life-path-variable-dictionary-nhats.md"
+)
 REQUIRED_MODEL_CARD_FIELDS = {
     "modelName",
     "modelClass",
@@ -651,6 +667,164 @@ def audit_source_card_docs(
     }
 
 
+def audit_nhats_data_admission_docs(
+    nhats_data_card_path: Path,
+    nhats_variable_dictionary_path: Path,
+) -> dict[str, Any]:
+    checks: list[dict[str, Any]] = []
+
+    data_card_exists = nhats_data_card_path.exists()
+    dictionary_exists = nhats_variable_dictionary_path.exists()
+    add_check(
+        checks,
+        "nhats-data-card-exists",
+        status_from_bool(data_card_exists),
+        str(nhats_data_card_path.relative_to(REPO_ROOT)),
+    )
+    add_check(
+        checks,
+        "nhats-variable-dictionary-exists",
+        status_from_bool(dictionary_exists),
+        str(nhats_variable_dictionary_path.relative_to(REPO_ROOT)),
+    )
+
+    data_card_text = load_text(nhats_data_card_path) if data_card_exists else ""
+    dictionary_text = load_text(nhats_variable_dictionary_path) if dictionary_exists else ""
+
+    data_card_identity_ok = all(
+        token in data_card_text
+        for token in (
+            "data_card_id: nhats-r1-r14-effective-time-draft",
+            "source_card_id: nhats",
+            "source_name: National Health and Aging Trends Study",
+            "status: draft / cannot-evaluate-yet",
+        )
+    )
+    add_check(
+        checks,
+        "nhats-data-card-identity",
+        status_from_bool(data_card_exists and data_card_identity_ok),
+        "NHATS Data Card must identify source_card_id, source name, draft status, and data_card_id",
+    )
+
+    data_card_boundary_ok = all(
+        token.lower() in data_card_text.lower()
+        for token in (
+            "No individual death-date prediction",
+            "No personal medical advice",
+            "No personal longevity ranking",
+            "No model calibration claim before validation diagnostics exist",
+            "No NHATS/NSOC raw data upload",
+        )
+    )
+    add_check(
+        checks,
+        "nhats-data-card-boundaries",
+        status_from_bool(data_card_exists and data_card_boundary_ok),
+        "NHATS Data Card must block individual prediction, medical advice, personal ranking, premature calibration, and raw-data AI upload",
+    )
+
+    data_card_sources_ok = all(
+        token in data_card_text
+        for token in (
+            "https://www.nhats.org/nhats",
+            "https://www.nhats.org/data-access",
+            "https://www.nhats.org/conditions-of-use",
+            "NHATSUserGuideR14_02102026.pdf",
+            "NHATSTechnicalPaper55_09042025.pdf",
+        )
+    )
+    add_check(
+        checks,
+        "nhats-data-card-source-trace",
+        status_from_bool(data_card_exists and data_card_sources_ok),
+        "NHATS Data Card must cite overview, data access, conditions of use, user guide, and sample design sources",
+    )
+
+    data_card_decision_ok = all(
+        token.lower() in data_card_text.lower()
+        for token in (
+            "decision: cannot-evaluate-yet",
+            "no governed data access",
+            "effective_time_proxy",
+            "abort_conditions",
+        )
+    )
+    add_check(
+        checks,
+        "nhats-data-card-decision",
+        status_from_bool(data_card_exists and data_card_decision_ok),
+        "NHATS Data Card must keep the current decision at cannot-evaluate-yet and name effective_time_proxy plus abort conditions",
+    )
+
+    dictionary_boundary_ok = all(
+        token.lower() in dictionary_text.lower()
+        for token in (
+            "candidate-variable-dictionary-only",
+            "No NHATS data downloaded",
+            "No extraction manifest approved",
+            "No model calibration",
+            "No individual death-date prediction",
+        )
+    )
+    add_check(
+        checks,
+        "nhats-variable-dictionary-boundaries",
+        status_from_bool(dictionary_exists and dictionary_boundary_ok),
+        "NHATS variable dictionary must remain candidate-only and block extraction/calibration/individual-prediction claims",
+    )
+
+    dictionary_fields_ok = all(
+        token in dictionary_text
+        for token in (
+            "w#anfinwgt0",
+            "w#varunit",
+            "w#varstrat",
+            "fl#spdied",
+            "cg#dwrdimmrc",
+            "cg#dwrddlyrc",
+        )
+    )
+    add_check(
+        checks,
+        "nhats-variable-dictionary-core-examples",
+        status_from_bool(dictionary_exists and dictionary_fields_ok),
+        "NHATS variable dictionary must include design, decedent, and cognition example fields while still marking them as candidates",
+    )
+
+    dictionary_model_roles_ok = all(
+        token in dictionary_text
+        for token in (
+            "design_and_identity",
+            "outcome_boundary",
+            "function_and_mobility",
+            "cognition_and_attention",
+            "resources_and_support",
+            "environment_and_access",
+            "effective_time_proxy",
+            "decision: cannot-calibrate-yet",
+        )
+    )
+    add_check(
+        checks,
+        "nhats-variable-dictionary-model-roles",
+        status_from_bool(dictionary_exists and dictionary_model_roles_ok),
+        "NHATS variable dictionary must map variable families to Human Infra model roles and keep decision at cannot-calibrate-yet",
+    )
+
+    return {
+        "dataCardPath": str(nhats_data_card_path.relative_to(REPO_ROOT)),
+        "dataCardSha256": sha256_file(nhats_data_card_path) if data_card_exists else None,
+        "variableDictionaryPath": str(nhats_variable_dictionary_path.relative_to(REPO_ROOT)),
+        "variableDictionarySha256": sha256_file(nhats_variable_dictionary_path)
+        if dictionary_exists
+        else None,
+        "status": "PASS" if summarize_checks(checks)["fail"] == 0 else "FAIL",
+        "checks": checks,
+        "summary": summarize_checks(checks),
+    }
+
+
 def audit_model(
     data: dict[str, Any],
     model_path: Path,
@@ -658,6 +832,8 @@ def audit_model(
     data_sources_path: Path,
     source_cards_path: Path,
     data_card_template_path: Path,
+    nhats_data_card_path: Path,
+    nhats_variable_dictionary_path: Path,
 ) -> dict[str, Any]:
     checks: list[dict[str, Any]] = []
     schema_version = data.get("schemaVersion")
@@ -825,9 +1001,14 @@ def audit_model(
         source_cards_path,
         data_card_template_path,
     )
+    nhats_docs_audit = audit_nhats_data_admission_docs(
+        nhats_data_card_path,
+        nhats_variable_dictionary_path,
+    )
     checks.extend(readiness_audit["checks"])
     checks.extend(data_sources_audit["checks"])
     checks.extend(source_card_docs_audit["checks"])
+    checks.extend(nhats_docs_audit["checks"])
     failed = [check for check in checks if check["status"] == "FAIL"]
     overall = "PASS" if not failed else "FAIL"
     return {
@@ -842,6 +1023,7 @@ def audit_model(
         "calibrationReadiness": readiness_audit,
         "dataSourceCandidates": data_sources_audit,
         "sourceCardDocs": source_card_docs_audit,
+        "nhatsDataAdmission": nhats_docs_audit,
     }
 
 
@@ -888,6 +1070,15 @@ def render_markdown(audit: dict[str, Any]) -> str:
             f"- Source Card docs status: `{audit['sourceCardDocs']['status']}`",
             "- Boundary: source cards and the data-card template only prove data-governance readiness scaffolding; they do not prove data access, field availability, calibration, or validation.",
             "",
+            "## NHATS Data Admission",
+            "",
+            f"- NHATS Data Card path: `{audit['nhatsDataAdmission']['dataCardPath']}`",
+            f"- NHATS Data Card SHA-256: `{audit['nhatsDataAdmission']['dataCardSha256']}`",
+            f"- NHATS variable dictionary path: `{audit['nhatsDataAdmission']['variableDictionaryPath']}`",
+            f"- NHATS variable dictionary SHA-256: `{audit['nhatsDataAdmission']['variableDictionarySha256']}`",
+            f"- NHATS data admission status: `{audit['nhatsDataAdmission']['status']}`",
+            "- Boundary: NHATS is only a draft admission candidate for late-life effective-time modeling; no data access, extraction, calibration, validation, or individual prediction is claimed.",
+            "",
             "## Standard Alignment",
             "",
             "| Standard | Local gate | Status | Boundary |",
@@ -917,6 +1108,12 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--data-sources", type=Path, default=DEFAULT_DATA_SOURCES)
     parser.add_argument("--source-cards", type=Path, default=DEFAULT_SOURCE_CARDS)
     parser.add_argument("--data-card-template", type=Path, default=DEFAULT_DATA_CARD_TEMPLATE)
+    parser.add_argument("--nhats-data-card", type=Path, default=DEFAULT_NHATS_DATA_CARD)
+    parser.add_argument(
+        "--nhats-variable-dictionary",
+        type=Path,
+        default=DEFAULT_NHATS_VARIABLE_DICTIONARY,
+    )
     parser.add_argument("--json-out", type=Path, default=DEFAULT_JSON_OUT)
     parser.add_argument("--md-out", type=Path, default=DEFAULT_MD_OUT)
     return parser.parse_args()
@@ -929,6 +1126,8 @@ def main() -> int:
     data_sources_path = args.data_sources.resolve()
     source_cards_path = args.source_cards.resolve()
     data_card_template_path = args.data_card_template.resolve()
+    nhats_data_card_path = args.nhats_data_card.resolve()
+    nhats_variable_dictionary_path = args.nhats_variable_dictionary.resolve()
     audit = audit_model(
         load_json(model_path),
         model_path,
@@ -936,6 +1135,8 @@ def main() -> int:
         data_sources_path,
         source_cards_path,
         data_card_template_path,
+        nhats_data_card_path,
+        nhats_variable_dictionary_path,
     )
     args.json_out.parent.mkdir(parents=True, exist_ok=True)
     with args.json_out.open("w", encoding="utf-8") as handle:

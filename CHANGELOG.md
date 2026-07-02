@@ -4,6 +4,7 @@ All notable repository structure changes are recorded here.
 
 ## 2026-07-02
 
+- Added the first NHATS life-path Data Card draft and variable-family dictionary, then extended the toy model audit gate to verify NHATS source identity, official source trace, candidate-only boundaries, effective-time proxy, core design/decedent/cognition examples, and cannot-calibrate/cannot-evaluate decisions.
 - Added life-path data-source Source Cards, a required Data Card template, and audit checks that verify candidate source coverage, official URLs, data-governance boundary language, required Data Card sections, and prohibited individual/calibration outputs.
 - Added the life-path candidate data-source registry and extended the toy model audit gate to verify official source URLs, access/governance status, coverage tags, candidate-only boundaries, and prohibited individual/calibration/causal overclaims.
 - Added the life-path calibration readiness contract and extended the toy model audit gate to check target population, time zero, outcomes, estimands, data requirements, censoring, validation, calibration, sensitivity, bias/applicability, reporting and prohibited-use fields before any calibrated model claim is allowed.

@@ -1,8 +1,8 @@
 {
   "schemaVersion": "human-infra.life-path-toy-audit.v1",
-  "generatedAt": "2026-07-02T01:06:48.126895+00:00",
+  "generatedAt": "2026-07-02T01:14:57.393291+00:00",
   "modelPath": "web/src/data/life-path-toy-model.json",
-  "modelSha256": "1de891d93a814c8075b0404d774949fe4f76b59e58ac002dd7a944ad07cc153b",
+  "modelSha256": "4626678190e78d3fc2dc35851e6996e88c68e93b6c6194097c63c511c679ccd6",
   "overallStatus": "PASS",
   "checks": [
     {
@@ -244,10 +244,55 @@
       "id": "data-card-template-prohibited-outputs",
       "status": "PASS",
       "detail": "data card template must block individual death-date prediction, personal medical advice, personal longevity ranking, and premature calibration claims"
+    },
+    {
+      "id": "nhats-data-card-exists",
+      "status": "PASS",
+      "detail": "domains/c1-boundary-rewriting/longevity-evidence/docs/life-path-data-card-nhats.md"
+    },
+    {
+      "id": "nhats-variable-dictionary-exists",
+      "status": "PASS",
+      "detail": "domains/c1-boundary-rewriting/longevity-evidence/docs/life-path-variable-dictionary-nhats.md"
+    },
+    {
+      "id": "nhats-data-card-identity",
+      "status": "PASS",
+      "detail": "NHATS Data Card must identify source_card_id, source name, draft status, and data_card_id"
+    },
+    {
+      "id": "nhats-data-card-boundaries",
+      "status": "PASS",
+      "detail": "NHATS Data Card must block individual prediction, medical advice, personal ranking, premature calibration, and raw-data AI upload"
+    },
+    {
+      "id": "nhats-data-card-source-trace",
+      "status": "PASS",
+      "detail": "NHATS Data Card must cite overview, data access, conditions of use, user guide, and sample design sources"
+    },
+    {
+      "id": "nhats-data-card-decision",
+      "status": "PASS",
+      "detail": "NHATS Data Card must keep the current decision at cannot-evaluate-yet and name effective_time_proxy plus abort conditions"
+    },
+    {
+      "id": "nhats-variable-dictionary-boundaries",
+      "status": "PASS",
+      "detail": "NHATS variable dictionary must remain candidate-only and block extraction/calibration/individual-prediction claims"
+    },
+    {
+      "id": "nhats-variable-dictionary-core-examples",
+      "status": "PASS",
+      "detail": "NHATS variable dictionary must include design, decedent, and cognition example fields while still marking them as candidates"
+    },
+    {
+      "id": "nhats-variable-dictionary-model-roles",
+      "status": "PASS",
+      "detail": "NHATS variable dictionary must map variable families to Human Infra model roles and keep decision at cannot-calibrate-yet"
     }
   ],
   "summary": {
-    "pass": 48,
+    "pass": 57,
     "warn": 0,
     "fail": 0
   },
@@ -487,6 +532,65 @@
     ],
     "summary": {
       "pass": 7,
+      "warn": 0,
+      "fail": 0
+    }
+  },
+  "nhatsDataAdmission": {
+    "dataCardPath": "domains/c1-boundary-rewriting/longevity-evidence/docs/life-path-data-card-nhats.md",
+    "dataCardSha256": "d368611ca03032e5ab1c5f728299b6584b01a659ab8f0cf2e1f2d755ed57d417",
+    "variableDictionaryPath": "domains/c1-boundary-rewriting/longevity-evidence/docs/life-path-variable-dictionary-nhats.md",
+    "variableDictionarySha256": "906b7648dac9dda5c43b83bab2c44b58e53aab7e79aa13da4e77adc879b06ea8",
+    "status": "PASS",
+    "checks": [
+      {
+        "id": "nhats-data-card-exists",
+        "status": "PASS",
+        "detail": "domains/c1-boundary-rewriting/longevity-evidence/docs/life-path-data-card-nhats.md"
+      },
+      {
+        "id": "nhats-variable-dictionary-exists",
+        "status": "PASS",
+        "detail": "domains/c1-boundary-rewriting/longevity-evidence/docs/life-path-variable-dictionary-nhats.md"
+      },
+      {
+        "id": "nhats-data-card-identity",
+        "status": "PASS",
+        "detail": "NHATS Data Card must identify source_card_id, source name, draft status, and data_card_id"
+      },
+      {
+        "id": "nhats-data-card-boundaries",
+        "status": "PASS",
+        "detail": "NHATS Data Card must block individual prediction, medical advice, personal ranking, premature calibration, and raw-data AI upload"
+      },
+      {
+        "id": "nhats-data-card-source-trace",
+        "status": "PASS",
+        "detail": "NHATS Data Card must cite overview, data access, conditions of use, user guide, and sample design sources"
+      },
+      {
+        "id": "nhats-data-card-decision",
+        "status": "PASS",
+        "detail": "NHATS Data Card must keep the current decision at cannot-evaluate-yet and name effective_time_proxy plus abort conditions"
+      },
+      {
+        "id": "nhats-variable-dictionary-boundaries",
+        "status": "PASS",
+        "detail": "NHATS variable dictionary must remain candidate-only and block extraction/calibration/individual-prediction claims"
+      },
+      {
+        "id": "nhats-variable-dictionary-core-examples",
+        "status": "PASS",
+        "detail": "NHATS variable dictionary must include design, decedent, and cognition example fields while still marking them as candidates"
+      },
+      {
+        "id": "nhats-variable-dictionary-model-roles",
+        "status": "PASS",
+        "detail": "NHATS variable dictionary must map variable families to Human Infra model roles and keep decision at cannot-calibrate-yet"
+      }
+    ],
+    "summary": {
+      "pass": 9,
       "warn": 0,
       "fail": 0
     }
