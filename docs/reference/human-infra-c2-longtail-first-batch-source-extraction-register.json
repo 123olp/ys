@@ -1,0 +1,569 @@
+{
+  "schemaVersion": "human-infra.c2-longtail-first-batch-source-extraction-register.v1",
+  "registerId": "human-infra-c2-longtail-first-batch-source-extraction-register",
+  "status": "active-c2ltb1-pilot-source-extractions-pending-fresh-review",
+  "purpose": "Record the first completed pilot source-specific extractions from the C2 long-tail first-batch queue. This register converts candidate sources into exact claim, endpoint, population, mechanism, uncertainty, transfer-boundary, downgrade and model-position fields while keeping calibrated modeling blocked.",
+  "sourceOfTruth": {
+    "sourceExtractionQueue": "docs/reference/human-infra-c2-longtail-first-batch-source-extraction-queue.json",
+    "sourceCardSystem": "docs/reference/source-card-system.md",
+    "maturityGapRegister": "docs/reference/human-infra-maturity-gap-register.json",
+    "maturityRoadmap": "docs/reference/human-infra-maturity-roadmap.md"
+  },
+  "scope": {
+    "batchId": "C2-LT-B1",
+    "queueTaskCount": 48,
+    "extractedTaskCount": 12,
+    "remainingTaskCount": 36,
+    "coveredDomainCount": 6,
+    "extractionDepth": "first-12-high-impact-acute-and-chronic-transition-sources",
+    "selectedTaskIds": [
+      "C2LTB1-EXT-001",
+      "C2LTB1-EXT-002",
+      "C2LTB1-EXT-003",
+      "C2LTB1-EXT-004",
+      "C2LTB1-EXT-005",
+      "C2LTB1-EXT-006",
+      "C2LTB1-EXT-007",
+      "C2LTB1-EXT-008",
+      "C2LTB1-EXT-009",
+      "C2LTB1-EXT-010",
+      "C2LTB1-EXT-011",
+      "C2LTB1-EXT-012"
+    ],
+    "currentLimitations": [
+      "This is a pilot extraction register, not a complete first-batch Source Card set.",
+      "Rows are local source-context extractions and still require independent fresh review before card promotion.",
+      "No row admits calibrated prediction, intervention ranking, clinical advice or individual prognosis."
+    ]
+  },
+  "sourceAccessNotes": [
+    "Publisher, society and government pages may block automated HTTP retrieval; URL accessibility is recorded as source-context metadata and does not itself upgrade or downgrade a scientific claim.",
+    "Guideline sources are used as route, endpoint and variable-definition anchors unless later fresh review extracts exact recommendation text, evidence grade, population and comparator.",
+    "Statistical-report and surveillance sources are used as burden and endpoint-context anchors, not causal-effect anchors."
+  ],
+  "extractedRows": [
+    {
+      "taskId": "C2LTB1-EXT-001",
+      "domainId": "acute-coronary-syndrome-reperfusion-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/acute-coronary-syndrome-reperfusion-continuity",
+      "sourceRefId": "C2LTB1-SRC-01-1",
+      "sourceTitle": "2025 ACC/AHA/ACEP/NAEMSP/SCAI Guideline for Acute Coronary Syndromes",
+      "sourceUrl": "https://www.ahajournals.org/doi/10.1161/CIR.0000000000001309",
+      "extractionStatus": "completed-c2ltb1-pilot-source-context-extraction",
+      "sourceAccessStatus": "official-source-identified-automated-access-may-be-restricted",
+      "sourceRole": "acute-coronary-syndrome-clinical-route-and-endpoint-anchor",
+      "exactClaimUse": "Supports treating ACS as a time-sensitive continuity failure mode where diagnosis, reperfusion, antithrombotic therapy, revascularization, rehabilitation and secondary prevention define the route variables to be extracted before any model use.",
+      "endpointDefinition": "Candidate endpoints include time-to-reperfusion, acute mortality, recurrent ischemic events, bleeding events, heart-failure transition, functional recovery and secondary-prevention adherence.",
+      "populationOrSetting": "People presenting with suspected or confirmed acute coronary syndrome across emergency medical services, emergency departments, inpatient cardiology and post-discharge care. Individual eligibility and treatment decisions remain outside this register.",
+      "effectOrMechanismSignal": "Mechanism-level route signal: myocardial ischemia and thrombosis create a time-sensitive hazard channel; reperfusion and secondary prevention may alter acute risk, recurrent-event risk and functional reserve.",
+      "uncertaintyOrBias": "Guidelines synthesize heterogeneous trials and evidence grades; local access, presentation delay, contraindications, bleeding risk and adherence can change transferability.",
+      "transferBoundary": "Transfer only as endpoint, variable and care-pathway vocabulary. The source does not provide a calibrated Human Infra effect size or authorize personal ACS treatment advice.",
+      "downgradeTriggers": [
+        "If a later card cannot extract recommendation class, evidence level, endpoint and comparator, keep as qualitative route support only.",
+        "If a claim jumps from guideline pathway to individual survival gain, downgrade to unsupported.",
+        "If bleeding, contraindication or access constraints are omitted, block intervention-ranking use."
+      ],
+      "modelPosition": {
+        "primaryLocation": "hazard-and-transition-route-anchor",
+        "variables": [
+          "time-to-reperfusion",
+          "case-fatality-risk",
+          "recurrent-event-risk",
+          "functional-recovery",
+          "secondary-prevention-adherence"
+        ],
+        "admissibleUse": "candidate endpoint and route definition only"
+      },
+      "modelAdmissionDecision": "pilot-source-context-support-only-blocked-for-calibrated-modeling",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Create an ACS Source Card separating acute hazard reduction, post-event functional recovery, secondary prevention and access-delay variables."
+    },
+    {
+      "taskId": "C2LTB1-EXT-002",
+      "domainId": "acute-coronary-syndrome-reperfusion-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/acute-coronary-syndrome-reperfusion-continuity",
+      "sourceRefId": "C2LTB1-SRC-01-2",
+      "sourceTitle": "AHA Heart Disease and Stroke Statistics",
+      "sourceUrl": "https://professional.heart.org/en/science-news/heart-disease-and-stroke-statistics-2024-update",
+      "extractionStatus": "completed-c2ltb1-pilot-source-context-extraction",
+      "sourceAccessStatus": "official-statistics-source-identified-automated-access-may-be-restricted",
+      "sourceRole": "cardiovascular-burden-and-endpoint-context-anchor",
+      "exactClaimUse": "Supports ACS and cardiovascular disease as major burden domains for subject-continuity modeling by anchoring population-level event, mortality and risk-factor context.",
+      "endpointDefinition": "Admissible endpoint language is limited to population burden, mortality, cardiovascular event categories and risk-factor context; this source does not define an intervention effect.",
+      "populationOrSetting": "Population-level cardiovascular statistics, usually United States centered with selected global comparisons depending on the annual update section.",
+      "effectOrMechanismSignal": "Burden-context signal only: the scale of cardiovascular events justifies ACS as a high-priority C2 continuity domain, but does not itself identify a causal intervention pathway.",
+      "uncertaintyOrBias": "Annual statistics combine surveillance systems, registry definitions and reporting conventions; endpoints may shift by year, coding source and population subgroup.",
+      "transferBoundary": "Transfer only to prioritization, endpoint vocabulary and denominator context. Do not use this source to estimate the benefit of reperfusion, medication or rehabilitation.",
+      "downgradeTriggers": [
+        "If used as causal evidence for any intervention, downgrade to burden-context only.",
+        "If year, geography or endpoint definition is omitted, block quantitative parameter use.",
+        "If subgroup differences are ignored, require population-boundary review."
+      ],
+      "modelPosition": {
+        "primaryLocation": "burden-prioritization-and-endpoint-context",
+        "variables": [
+          "case-fatality-risk",
+          "recurrent-event-risk",
+          "cardiovascular-burden",
+          "population-risk-context"
+        ],
+        "admissibleUse": "domain priority and endpoint-context support only"
+      },
+      "modelAdmissionDecision": "burden-context-support-only-blocked-for-calibrated-modeling",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Extract the annual statistics sections into a burden card with year, geography, endpoint names and denominator definitions."
+    },
+    {
+      "taskId": "C2LTB1-EXT-003",
+      "domainId": "sepsis-shock-early-recognition-resuscitation-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/sepsis-shock-early-recognition-resuscitation-continuity",
+      "sourceRefId": "C2LTB1-SRC-02-1",
+      "sourceTitle": "Surviving Sepsis Campaign international guidelines for management of sepsis and septic shock",
+      "sourceUrl": "https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines",
+      "extractionStatus": "completed-c2ltb1-pilot-source-context-extraction",
+      "sourceAccessStatus": "official-guideline-source-identified",
+      "sourceRole": "sepsis-recognition-resuscitation-and-organ-support-route-anchor",
+      "exactClaimUse": "Supports treating sepsis and septic shock as acute systemic continuity failures where early recognition, antimicrobial therapy, source control, resuscitation and organ support define the route variables.",
+      "endpointDefinition": "Candidate endpoints include time-to-antibiotics, lactate or shock markers, organ dysfunction, vasopressor requirement, ICU survival, hospital mortality and post-sepsis functional burden.",
+      "populationOrSetting": "Patients with suspected or confirmed sepsis or septic shock in emergency, ward and ICU settings. Later cards must separate adult, pediatric and setting-specific recommendations.",
+      "effectOrMechanismSignal": "Mechanism-level route signal: infection-triggered dysregulated host response can produce organ dysfunction and shock; timely therapy and support may alter acute hazard and recovery trajectory.",
+      "uncertaintyOrBias": "Guideline evidence is heterogeneous across infection sources, severity, age groups, health-system resources and recommendation strength; bundle timing can be confounded by severity and access.",
+      "transferBoundary": "Transfer only to route design, variables and endpoint vocabulary. Do not infer a personal sepsis prognosis or a calibrated Human Infra intervention effect from this register row.",
+      "downgradeTriggers": [
+        "If adult and pediatric recommendations are mixed without boundary, downgrade to general route support.",
+        "If time-to-treatment is used without severity and setting context, block parameter admission.",
+        "If post-sepsis disability is omitted, require functional-burden extraction before continuity claims."
+      ],
+      "modelPosition": {
+        "primaryLocation": "acute-hazard-and-recovery-transition-anchor",
+        "variables": [
+          "time-to-antibiotics",
+          "lactate-or-shock-marker",
+          "organ-dysfunction-score",
+          "icu-survival",
+          "post-sepsis-functional-burden"
+        ],
+        "admissibleUse": "candidate acute-hazard and recovery-route definition only"
+      },
+      "modelAdmissionDecision": "pilot-source-context-support-only-blocked-for-calibrated-modeling",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Create separate sepsis cards for early recognition, antimicrobial timing, shock resuscitation, organ support and post-sepsis recovery."
+    },
+    {
+      "taskId": "C2LTB1-EXT-004",
+      "domainId": "sepsis-shock-early-recognition-resuscitation-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/sepsis-shock-early-recognition-resuscitation-continuity",
+      "sourceRefId": "C2LTB1-SRC-02-2",
+      "sourceTitle": "CDC Sepsis clinical information",
+      "sourceUrl": "https://www.cdc.gov/sepsis/hcp/clinical-care/index.html",
+      "extractionStatus": "completed-c2ltb1-pilot-source-context-extraction",
+      "sourceAccessStatus": "official-public-health-source-identified",
+      "sourceRole": "sepsis-public-health-clinical-context-anchor",
+      "exactClaimUse": "Supports the public-health and clinical-context framing that sepsis requires rapid recognition, diagnostic evaluation, antimicrobial treatment and escalation when organ dysfunction or shock is suspected.",
+      "endpointDefinition": "Admissible endpoints are presentation recognition, diagnostic workup, antimicrobial timing, escalation to emergency or critical care, survival and post-acute burden.",
+      "populationOrSetting": "General healthcare professional context for people with suspected sepsis across clinical settings; not a trial population and not an individual diagnostic rule.",
+      "effectOrMechanismSignal": "Context signal: sepsis is framed as a medical emergency with infection, organ dysfunction and time-sensitive treatment pathways.",
+      "uncertaintyOrBias": "Public-health pages simplify evidence and may omit recommendation grades, comparators and detailed populations; they are not substitutes for full clinical guidelines.",
+      "transferBoundary": "Transfer only as public-health route context and vocabulary. Do not use as calibrated effect evidence, diagnostic advice or treatment instruction.",
+      "downgradeTriggers": [
+        "If treated as a clinical protocol without guideline extraction, downgrade to context support.",
+        "If individual symptom interpretation is implied, block individual-advice use.",
+        "If ICU, post-acute or equity access boundaries are missing, keep model admission blocked."
+      ],
+      "modelPosition": {
+        "primaryLocation": "observation-process-and-escalation-route-context",
+        "variables": [
+          "time-to-antibiotics",
+          "organ-dysfunction-score",
+          "emergency-care-access",
+          "post-sepsis-functional-burden"
+        ],
+        "admissibleUse": "public-health clinical-context support only"
+      },
+      "modelAdmissionDecision": "public-health-context-support-only-blocked-for-calibrated-modeling",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Pair with guideline and cohort evidence before any sepsis hazard or recovery parameter is proposed."
+    },
+    {
+      "taskId": "C2LTB1-EXT-005",
+      "domainId": "acute-kidney-injury-renal-replacement-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/acute-kidney-injury-renal-replacement-continuity",
+      "sourceRefId": "C2LTB1-SRC-03-1",
+      "sourceTitle": "KDIGO Acute Kidney Injury guideline hub",
+      "sourceUrl": "https://kdigo.org/guidelines/acute-kidney-injury/",
+      "extractionStatus": "completed-c2ltb1-pilot-source-context-extraction",
+      "sourceAccessStatus": "official-guideline-hub-identified",
+      "sourceRole": "aki-definition-risk-management-and-krt-route-anchor",
+      "exactClaimUse": "Supports AKI as a continuity domain where definition, staging, risk prediction, nephrotoxin stewardship, fluid/hemodynamic management, kidney replacement therapy and follow-up define the route variables.",
+      "endpointDefinition": "Candidate endpoints include AKI stage, need for kidney replacement therapy, fluid balance, acute mortality, kidney recovery, CKD transition and long-term adverse kidney or cardiovascular outcomes.",
+      "populationOrSetting": "People at risk for, or experiencing, acute kidney disease or injury across hospital, ICU, procedure, medication and post-discharge contexts. Later cards must separate pediatric/adult and critical-care boundaries.",
+      "effectOrMechanismSignal": "Mechanism-level route signal: acute renal filtration and homeostasis failure can alter fluid, electrolyte, acid-base, medication-safety and multi-organ risk channels.",
+      "uncertaintyOrBias": "Guideline hubs contain definitions and recommendations but not a single effect estimate; biomarker use, e-alerts, KRT timing and modality depend on setting and evidence strength.",
+      "transferBoundary": "Transfer only to AKI variable, staging and route vocabulary. Do not use as proof that a specific AKI intervention improves lifespan or effective time.",
+      "downgradeTriggers": [
+        "If AKI stage, baseline creatinine and follow-up horizon are absent, block quantitative use.",
+        "If KRT timing or modality is treated as universally beneficial, downgrade to route hypothesis.",
+        "If CKD transition and medication-toxicity boundaries are omitted, keep as qualitative support."
+      ],
+      "modelPosition": {
+        "primaryLocation": "state-transition-and-organ-failure-route-anchor",
+        "variables": [
+          "aki-stage",
+          "renal-replacement-need",
+          "fluid-balance",
+          "mortality-risk",
+          "ckd-transition-risk"
+        ],
+        "admissibleUse": "candidate renal-failure state and transition vocabulary only"
+      },
+      "modelAdmissionDecision": "pilot-source-context-support-only-blocked-for-calibrated-modeling",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Extract KDIGO AKI definition, staging, KRT and follow-up cards with separate endpoint and population boundaries."
+    },
+    {
+      "taskId": "C2LTB1-EXT-006",
+      "domainId": "acute-kidney-injury-renal-replacement-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/acute-kidney-injury-renal-replacement-continuity",
+      "sourceRefId": "C2LTB1-SRC-03-2",
+      "sourceTitle": "NIDDK Acute Kidney Injury information",
+      "sourceUrl": "https://usrds-adr.niddk.nih.gov/2023/chronic-kidney-disease/4-acute-kidney-injury",
+      "extractionStatus": "completed-c2ltb1-pilot-source-context-extraction",
+      "sourceAccessStatus": "official-usrds-statistical-chapter-identified",
+      "sourceRole": "aki-burden-hospitalization-and-outcome-context-anchor",
+      "exactClaimUse": "Supports AKI as a population-burden and outcome-context domain, especially for hospitalization, dialysis-requiring AKI, mortality and kidney-disease transition questions.",
+      "endpointDefinition": "Admissible endpoint language includes AKI hospitalization, dialysis-requiring AKI, mortality, kidney recovery and later CKD or kidney-failure transition when the report defines them.",
+      "populationOrSetting": "Population-level surveillance and administrative-data context, not an intervention cohort and not an individual risk calculator.",
+      "effectOrMechanismSignal": "Burden-context signal: AKI is a high-impact acute-to-chronic transition state that can affect survival, treatment safety and long-term organ reserve.",
+      "uncertaintyOrBias": "Administrative definitions, coding changes, hospitalization selection and dialysis definitions can change measured burden and apparent outcomes.",
+      "transferBoundary": "Transfer only to burden, endpoint naming and transition-context framing. Do not infer causal effects of fluids, drugs, dialysis timing or individual prognosis.",
+      "downgradeTriggers": [
+        "If surveillance definitions are omitted, block parameter use.",
+        "If AKI burden is treated as intervention effect evidence, downgrade to context only.",
+        "If kidney recovery and CKD transition horizons are mixed, require separate endpoint cards."
+      ],
+      "modelPosition": {
+        "primaryLocation": "burden-and-transition-context",
+        "variables": [
+          "aki-stage",
+          "renal-replacement-need",
+          "mortality-risk",
+          "ckd-transition-risk"
+        ],
+        "admissibleUse": "burden and endpoint-context support only"
+      },
+      "modelAdmissionDecision": "burden-context-support-only-blocked-for-calibrated-modeling",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Build an AKI burden card with source-year, denominator, AKI definition and dialysis-requiring subgroup boundaries."
+    },
+    {
+      "taskId": "C2LTB1-EXT-007",
+      "domainId": "anaphylaxis-allergic-emergency-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/anaphylaxis-allergic-emergency-continuity",
+      "sourceRefId": "C2LTB1-SRC-04-1",
+      "sourceTitle": "World Allergy Organization Anaphylaxis Guidance",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7607509/",
+      "extractionStatus": "completed-c2ltb1-pilot-source-context-extraction",
+      "sourceAccessStatus": "open-access-full-text-identified",
+      "sourceRole": "anaphylaxis-definition-epinephrine-and-emergency-route-anchor",
+      "exactClaimUse": "Supports anaphylaxis as an acute continuity-risk domain where rapid recognition, epinephrine access, airway/circulation risk and emergency transfer define the route variables.",
+      "endpointDefinition": "Candidate endpoints include time-to-epinephrine, respiratory or cardiovascular compromise, recurrence or biphasic reaction risk, emergency-care access and acute survival.",
+      "populationOrSetting": "People with suspected anaphylaxis across community, emergency, allergy and healthcare settings; individual trigger identification and action plans require clinical context outside this register.",
+      "effectOrMechanismSignal": "Mechanism-level route signal: systemic allergic reaction can rapidly compromise airway, breathing and circulation; timely epinephrine and emergency response may alter acute hazard.",
+      "uncertaintyOrBias": "Guidance documents combine consensus and evidence across triggers, ages and settings; access to epinephrine, education and emergency services strongly modifies route performance.",
+      "transferBoundary": "Transfer only to emergency route, endpoint and downgrade vocabulary. Do not use to advise an individual whether or how to administer medication.",
+      "downgradeTriggers": [
+        "If epinephrine access, airway risk and emergency transfer are not separated, keep as route support.",
+        "If individual allergy diagnosis or medication instructions are implied, block individual-advice use.",
+        "If recurrence and follow-up risks are omitted, require post-event continuity extraction."
+      ],
+      "modelPosition": {
+        "primaryLocation": "acute-emergency-hazard-and-recovery-route-anchor",
+        "variables": [
+          "epinephrine-access",
+          "time-to-treatment",
+          "airway-compromise-risk",
+          "recurrence-risk",
+          "emergency-care-access"
+        ],
+        "admissibleUse": "emergency-route and endpoint vocabulary only"
+      },
+      "modelAdmissionDecision": "pilot-source-context-support-only-blocked-for-calibrated-modeling",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Create separate cards for recognition criteria, epinephrine route, emergency transfer, recurrence and long-term trigger-management boundaries."
+    },
+    {
+      "taskId": "C2LTB1-EXT-008",
+      "domainId": "anaphylaxis-allergic-emergency-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/anaphylaxis-allergic-emergency-continuity",
+      "sourceRefId": "C2LTB1-SRC-04-2",
+      "sourceTitle": "NIAID Anaphylaxis information",
+      "sourceUrl": "https://www.niaid.nih.gov/diseases-conditions/anaphylaxis",
+      "extractionStatus": "completed-c2ltb1-pilot-source-context-extraction",
+      "sourceAccessStatus": "official-public-information-source-identified",
+      "sourceRole": "anaphylaxis-public-explainer-and-access-context-anchor",
+      "exactClaimUse": "Supports public-facing anaphylaxis context: severe allergic reactions are urgent events requiring recognition, treatment access and follow-up planning.",
+      "endpointDefinition": "Admissible endpoint language includes urgent recognition, treatment access, airway or circulatory compromise, recurrence risk and emergency-care connection.",
+      "populationOrSetting": "General public and patient-education context for anaphylaxis risk, not a controlled study population or treatment protocol.",
+      "effectOrMechanismSignal": "Context signal: anaphylaxis is a rapid systemic reaction that can threaten breathing and circulation; infrastructure variables include education, medication access and emergency response.",
+      "uncertaintyOrBias": "Public information pages simplify mechanisms and treatment pathways; they do not provide graded evidence, effect sizes or individualized plans.",
+      "transferBoundary": "Transfer only as communication and access-context support. Do not use as clinical instruction, individual risk estimate or medication recommendation.",
+      "downgradeTriggers": [
+        "If used as guideline-grade evidence, downgrade to public explainer support.",
+        "If individual treatment instruction is implied, block individual-advice use.",
+        "If trigger, follow-up and access boundaries are absent, require a full clinical-source card."
+      ],
+      "modelPosition": {
+        "primaryLocation": "public-understanding-and-access-context",
+        "variables": [
+          "epinephrine-access",
+          "time-to-treatment",
+          "emergency-care-access",
+          "recurrence-risk"
+        ],
+        "admissibleUse": "public context and infrastructure vocabulary only"
+      },
+      "modelAdmissionDecision": "public-explainer-support-only-blocked-for-calibrated-modeling",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Pair with WAO or specialty guideline cards before using anaphylaxis route variables in any model-facing artifact."
+    },
+    {
+      "taskId": "C2LTB1-EXT-009",
+      "domainId": "chronic-kidney-disease-screening-progression-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/chronic-kidney-disease-screening-progression-continuity",
+      "sourceRefId": "C2LTB1-SRC-05-1",
+      "sourceTitle": "KDIGO 2024 Clinical Practice Guideline for CKD Evaluation and Management",
+      "sourceUrl": "https://kdigo.org/guidelines/ckd-evaluation-and-management/",
+      "extractionStatus": "completed-c2ltb1-pilot-source-context-extraction",
+      "sourceAccessStatus": "official-guideline-hub-identified",
+      "sourceRole": "ckd-evaluation-staging-progression-and-management-route-anchor",
+      "exactClaimUse": "Supports CKD as a chronic state-transition domain where eGFR, albuminuria, progression risk, cardiovascular risk and kidney-failure transition define core model variables.",
+      "endpointDefinition": "Candidate endpoints include CKD diagnosis/stage, eGFR slope, albuminuria category, cardiovascular events, kidney failure, renal replacement transition, mortality and quality-of-life burden.",
+      "populationOrSetting": "People with known or suspected CKD across primary care, nephrology and comorbidity-management settings. Later extraction must separate disease stage, diabetes, hypertension and age-group boundaries.",
+      "effectOrMechanismSignal": "Mechanism-level route signal: chronic loss of filtration and albuminuric injury can alter cardiovascular risk, medication safety, treatment burden and long-term reserve.",
+      "uncertaintyOrBias": "Guideline recommendations depend on testing availability, staging definitions, comorbidity, risk equations, medication access and evidence grade.",
+      "transferBoundary": "Transfer only to CKD state, staging, progression and endpoint vocabulary. Do not use as an individual kidney-risk calculator or treatment recommendation.",
+      "downgradeTriggers": [
+        "If eGFR and albuminuria categories are not specified, block model parameter use.",
+        "If CKD progression is inferred without horizon and population, downgrade to qualitative state support.",
+        "If cardiovascular and kidney outcomes are merged, require separate endpoint cards."
+      ],
+      "modelPosition": {
+        "primaryLocation": "chronic-state-transition-and-hazard-anchor",
+        "variables": [
+          "egfr",
+          "albuminuria",
+          "progression-rate",
+          "cardiovascular-risk",
+          "renal-replacement-transition"
+        ],
+        "admissibleUse": "candidate chronic kidney state and transition vocabulary only"
+      },
+      "modelAdmissionDecision": "pilot-source-context-support-only-blocked-for-calibrated-modeling",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Create CKD cards for staging, risk prediction, progression endpoints, cardiovascular coupling and treatment-burden boundaries."
+    },
+    {
+      "taskId": "C2LTB1-EXT-010",
+      "domainId": "chronic-kidney-disease-screening-progression-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/chronic-kidney-disease-screening-progression-continuity",
+      "sourceRefId": "C2LTB1-SRC-05-2",
+      "sourceTitle": "CDC Chronic Kidney Disease surveillance and facts",
+      "sourceUrl": "https://www.cdc.gov/kidney-disease/php/data-research/index.html",
+      "extractionStatus": "completed-c2ltb1-pilot-source-context-extraction",
+      "sourceAccessStatus": "official-public-health-surveillance-source-identified",
+      "sourceRole": "ckd-burden-surveillance-and-screening-context-anchor",
+      "exactClaimUse": "Supports CKD as a high-burden public-health and screening domain, useful for denominator, awareness, prevalence and risk-factor context.",
+      "endpointDefinition": "Admissible endpoints include CKD prevalence, awareness, risk-factor context, kidney failure transition and burden measures when the surveillance source defines them.",
+      "populationOrSetting": "Population surveillance and public-health data context, not an intervention trial or individual diagnostic pathway.",
+      "effectOrMechanismSignal": "Burden-context signal: CKD can remain under-recognized while contributing to cardiovascular and kidney-failure risk; screening and access variables matter for observation processes.",
+      "uncertaintyOrBias": "Surveillance estimates depend on survey, laboratory definitions, coding, sampling, awareness measures and population subgroup representation.",
+      "transferBoundary": "Transfer only to burden, screening-context and observation-process vocabulary. Do not infer treatment benefit, individual risk or causal effect.",
+      "downgradeTriggers": [
+        "If used as treatment-effect evidence, downgrade to surveillance context.",
+        "If denominator and CKD definition are absent, block quantitative use.",
+        "If awareness and access bias are omitted, require observation-process extraction."
+      ],
+      "modelPosition": {
+        "primaryLocation": "observation-process-and-burden-context",
+        "variables": [
+          "egfr",
+          "albuminuria",
+          "screening-coverage",
+          "cardiovascular-risk",
+          "renal-replacement-transition"
+        ],
+        "admissibleUse": "surveillance and observation-process support only"
+      },
+      "modelAdmissionDecision": "surveillance-context-support-only-blocked-for-calibrated-modeling",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Build a CDC CKD surveillance card with denominator, testing definition, population and year boundaries."
+    },
+    {
+      "taskId": "C2LTB1-EXT-011",
+      "domainId": "prediabetes-diabetes-prevention-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/prediabetes-diabetes-prevention-continuity",
+      "sourceRefId": "C2LTB1-SRC-06-1",
+      "sourceTitle": "Diabetes Prevention Program Outcomes Study",
+      "sourceUrl": "https://www.niddk.nih.gov/about-niddk/research-areas/diabetes/diabetes-prevention-program-dpp",
+      "extractionStatus": "completed-c2ltb1-pilot-source-context-extraction",
+      "sourceAccessStatus": "official-study-program-summary-identified",
+      "sourceRole": "prediabetes-to-diabetes-transition-intervention-evidence-anchor",
+      "exactClaimUse": "Supports diabetes prevention as a transition-domain candidate where lifestyle and medication interventions can be studied against diabetes incidence and longer follow-up outcomes.",
+      "endpointDefinition": "Candidate endpoints include diabetes incidence, weight change, physical-activity or lifestyle adherence, cardiometabolic risk markers and long-term diabetes-related complications.",
+      "populationOrSetting": "People with elevated diabetes risk or prediabetes enrolled in DPP/DPPOS-style research settings; transfer requires eligibility, comparator, follow-up and adherence boundaries.",
+      "effectOrMechanismSignal": "Intervention-route signal: changing weight, activity, diet and medication exposure can alter transition probability from prediabetes or high risk to diagnosed diabetes.",
+      "uncertaintyOrBias": "Trial eligibility, intensity of lifestyle support, adherence, medication tolerance, follow-up duration and population subgroup differences constrain generalization.",
+      "transferBoundary": "Transfer only as a candidate transition and intervention-evidence anchor after exact trial endpoints are extracted. Do not use for personal prevention advice or individual risk prediction.",
+      "downgradeTriggers": [
+        "If DPP and DPPOS endpoints or follow-up horizons are mixed, require separate cards.",
+        "If individual lifestyle or medication advice is implied, block individual-advice use.",
+        "If adherence and support intensity are omitted, downgrade effect-transfer claims."
+      ],
+      "modelPosition": {
+        "primaryLocation": "state-transition-intervention-evidence-anchor",
+        "variables": [
+          "hba1c-or-fasting-glucose",
+          "diabetes-incidence",
+          "weight-change",
+          "activity-pattern",
+          "cardiometabolic-risk"
+        ],
+        "admissibleUse": "candidate transition-intervention evidence pending full endpoint extraction"
+      },
+      "modelAdmissionDecision": "transition-evidence-anchor-only-blocked-for-calibrated-modeling",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Extract DPP and DPPOS trial design, endpoints, population, comparator, adherence and follow-up horizon into a full Source Card."
+    },
+    {
+      "taskId": "C2LTB1-EXT-012",
+      "domainId": "prediabetes-diabetes-prevention-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/prediabetes-diabetes-prevention-continuity",
+      "sourceRefId": "C2LTB1-SRC-06-2",
+      "sourceTitle": "CDC National Diabetes Statistics Report",
+      "sourceUrl": "https://www.cdc.gov/diabetes/php/data-research/index.html",
+      "extractionStatus": "completed-c2ltb1-pilot-source-context-extraction",
+      "sourceAccessStatus": "official-public-health-statistics-source-identified",
+      "sourceRole": "diabetes-burden-surveillance-and-endpoint-context-anchor",
+      "exactClaimUse": "Supports diabetes and prediabetes as high-burden transition domains with public-health surveillance context for prevalence, diagnosis status, complications and risk-factor framing.",
+      "endpointDefinition": "Admissible endpoints include diabetes prevalence, prediabetes prevalence, diagnosis status, complications, risk factors and population burden when the report defines them.",
+      "populationOrSetting": "Population-level surveillance context, not an intervention cohort and not an individual risk-prediction model.",
+      "effectOrMechanismSignal": "Burden-context signal: diabetes and prediabetes affect long-term cardiometabolic risk, complications and health-system burden; source does not provide intervention effect estimates.",
+      "uncertaintyOrBias": "Surveillance estimates depend on survey methods, diagnostic definitions, self-report, laboratory availability, year and subgroup representation.",
+      "transferBoundary": "Transfer only to population burden, endpoint vocabulary and observation-process context. Do not infer causal effects of prevention programs or personal diabetes risk.",
+      "downgradeTriggers": [
+        "If used as causal evidence for prevention, downgrade to surveillance context.",
+        "If diagnostic definition, year or population denominator is omitted, block quantitative use.",
+        "If prediabetes and diagnosed diabetes endpoints are merged, require separate endpoint cards."
+      ],
+      "modelPosition": {
+        "primaryLocation": "burden-and-observation-process-context",
+        "variables": [
+          "hba1c-or-fasting-glucose",
+          "diabetes-incidence",
+          "diagnosis-status",
+          "cardiometabolic-risk"
+        ],
+        "admissibleUse": "surveillance context and endpoint vocabulary only"
+      },
+      "modelAdmissionDecision": "surveillance-context-support-only-blocked-for-calibrated-modeling",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Build a CDC diabetes statistics card with year, denominator, diabetes/prediabetes definitions and complication endpoint boundaries."
+    }
+  ],
+  "nonClaims": [
+    "This register does not complete all 48 first-batch source extraction tasks.",
+    "This register does not replace full Source Cards or independent fresh review.",
+    "This register does not admit any source into calibrated prediction, clinical validity, intervention ranking or personal recommendation use.",
+    "This register does not output individual death dates, individual life expectancy, diagnosis, treatment, dosing or emergency advice."
+  ],
+  "indexRequirements": [
+    "README.md must link this register in the claim spine.",
+    "docs/reference/README.md must describe this register as the 12/48 pilot extraction register.",
+    "docs/reference/human-infra-maturity-roadmap.md must name this register as progress toward the research-framework gate while keeping model admission blocked.",
+    "tools/README.md must list the audit command for this register."
+  ]
+}
