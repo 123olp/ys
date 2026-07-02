@@ -8,6 +8,7 @@
 - `audit_core_claim_evidence_matrix.py`: verifies that the core Human Infra Claim-Evidence Matrix keeps required source anchors, claim IDs, evidence gates, prohibited-use boundaries, method URLs, and index links.
 - `audit_human_infra_maturity_gap_register.py`: verifies that the 100% maturity gap register keeps value, research-framework, and quantitative-model gates aligned with the maturity roadmap, local evidence paths, and blocked-state boundaries.
 - `audit_human_infra_model_admission_contract.py`: verifies that the model-admission contract keeps L0-L5 admission levels, MAC gates, hard abort gates, standards trace, index links, and calibrated/individual-use blocks intact.
+- `audit_human_infra_model_admission_candidate_registry.py`: verifies that the model-admission candidate registry covers all reviewed artifact registers from the contract, preserves L1/L2-only reviewed artifacts, keeps synthetic outputs L3-only, and blocks L4/L5.
 - `audit_human_infra_page_claim_consistency.py`: verifies that major README, Web and paper pages keep required Human Infra Claim IDs, claim-spine labels and prohibited-use boundary phrases from `docs/reference/human-infra-page-claim-consistency.json`.
 - `audit_human_infra_audience_claim_map.py`: verifies that value clarity has audience-specific Claim ID entry points and adjacent-project boundary distinctions from `docs/reference/human-infra-audience-claim-map.json`.
 - `audit_human_infra_paper_claim_register.py`: verifies that every arXiv-style paper page has paper-specific strong claims, core Claim IDs, falsifiers, downgrade actions, registered source data paths and prohibited-use boundaries from `docs/reference/human-infra-paper-claim-register.json`.
@@ -96,6 +97,7 @@ python3 tools/check_repository.py
 python3 tools/audit_core_claim_evidence_matrix.py
 python3 tools/audit_human_infra_maturity_gap_register.py
 python3 tools/audit_human_infra_model_admission_contract.py
+python3 tools/audit_human_infra_model_admission_candidate_registry.py
 python3 tools/audit_human_infra_page_claim_consistency.py
 python3 tools/audit_human_infra_audience_claim_map.py
 python3 tools/audit_human_infra_paper_claim_register.py
@@ -124,6 +126,7 @@ python3 tools/arxiv_html_paper_tool.py verify-assets --public-dir web/public
 make claim-matrix-audit
 make maturity-gap-audit
 make model-admission-contract-audit
+make model-admission-candidate-registry-audit
 make page-claim-audit
 make audience-claim-map-audit
 make paper-claim-audit

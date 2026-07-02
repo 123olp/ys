@@ -1,0 +1,462 @@
+{
+  "schemaVersion": "human-infra.model-admission-candidate-registry.v1",
+  "registryId": "human-infra-model-admission-candidate-registry-2026-07-03",
+  "status": "active-model-admission-candidate-registry-calibrated-blocked",
+  "owner": "tradecatlabs",
+  "purpose": "Map reviewed Human Infra evidence artifacts to model-admission levels without admitting them as calibrated model parameters, intervention effects or individual-use claims.",
+  "sourceOfTruth": {
+    "modelAdmissionContract": "docs/reference/human-infra-model-admission-contract.json",
+    "maturityGapRegister": "docs/reference/human-infra-maturity-gap-register.json",
+    "maturityRoadmap": "docs/reference/human-infra-maturity-roadmap.md",
+    "predictionModelContract": "docs/reference/life-path-prediction-model-contract.md",
+    "predictionModelGovernance": "docs/reference/life-path-prediction-model-governance.md",
+    "reviewedArtifactRegisters": [
+      "docs/reference/human-infra-reviewed-card-artifact-register.json",
+      "docs/reference/human-infra-c2-longtail-first-batch-reviewed-card-artifact-register.json",
+      "docs/reference/human-infra-c2-longtail-first-batch-corrected-source-reviewed-card-artifact-register.json",
+      "docs/reference/human-infra-c2-longtail-second-batch-reviewed-card-artifact-register.json",
+      "docs/reference/human-infra-c2-longtail-third-batch-reviewed-card-artifact-register.json",
+      "docs/reference/human-infra-c2-longtail-fourth-batch-manual-fulltext-reviewed-card-artifact-register.json",
+      "docs/reference/human-infra-c2-longtail-fifth-batch-reviewed-card-artifact-register.json"
+    ],
+    "toyModelOutput": "web/src/data/life-path-toy-model.json",
+    "toyModelAudit": "web/src/data/life-path-toy-model-audit.json",
+    "publicMortalityAnchor": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_public_mortality_anchor.json",
+    "firstEstimandProtocol": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_first_estimand_protocol.json",
+    "variableConfirmationMatrix": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_variable_confirmation_matrix.json"
+  },
+  "aggregateDecision": {
+    "reviewedArtifactRegisters": 7,
+    "reviewedArtifactsCovered": 1170,
+    "blockedRowsPreserved": 32,
+    "highestReviewedArtifactLevel": "L2",
+    "highestCurrentModelLevel": "L3",
+    "l4AggregateCalibratedAdmissions": 0,
+    "l5IndividualAdmissions": 0,
+    "calibratedPredictionAvailable": false,
+    "individualUseAllowed": false,
+    "decision": "reviewed-artifacts-are-L1/L2-only; synthetic toy and public aggregate baseline may remain L3; L4 and L5 stay blocked"
+  },
+  "reviewedArtifactAdmissionDecisions": [
+    {
+      "decisionId": "MACR-001-core-reviewed-artifacts",
+      "sourceRegisterPath": "docs/reference/human-infra-reviewed-card-artifact-register.json",
+      "sourceRegisterStatusMustContain": "model-blocked",
+      "reviewedArtifactCount": 486,
+      "blockedRowCount": 0,
+      "currentAdmissionLevel": "L1/L2-only",
+      "maxLevelWithoutAdditionalGates": "L2",
+      "allowedUses": [
+        "bounded source-card evidence",
+        "candidate variable language",
+        "candidate endpoint language",
+        "uncertainty channel framing",
+        "transfer-boundary framing",
+        "downgrade-trigger framing"
+      ],
+      "blockedLevels": [
+        "L3-synthetic-input-without-explicit-scenario-selection",
+        "L4-aggregate-calibrated-research-model",
+        "L5-individual-decision-support"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim"
+      ],
+      "requiredBeforeL3": [
+        "explicit synthetic scenario file",
+        "model card",
+        "sanity checks",
+        "synthetic-only output boundary"
+      ],
+      "requiredBeforeL4": [
+        "narrow estimand",
+        "governed data access",
+        "confirmed variables and value labels",
+        "cohort flow",
+        "survey design or sampling design",
+        "validation and calibration diagnostics"
+      ],
+      "requiredBeforeL5": [
+        "external clinical and ethical governance",
+        "individual consent and appeal process",
+        "external validation for intended use"
+      ]
+    },
+    {
+      "decisionId": "MACR-002-c2ltb1-reviewed-artifacts",
+      "sourceRegisterPath": "docs/reference/human-infra-c2-longtail-first-batch-reviewed-card-artifact-register.json",
+      "sourceRegisterStatusMustContain": "model-blocked",
+      "reviewedArtifactCount": 252,
+      "blockedRowCount": 6,
+      "currentAdmissionLevel": "L1/L2-only",
+      "maxLevelWithoutAdditionalGates": "L2",
+      "allowedUses": [
+        "bounded source-card evidence",
+        "candidate variable language",
+        "candidate endpoint language",
+        "uncertainty channel framing",
+        "transfer-boundary framing",
+        "downgrade-trigger framing"
+      ],
+      "blockedLevels": [
+        "L3-synthetic-input-without-explicit-scenario-selection",
+        "L4-aggregate-calibrated-research-model",
+        "L5-individual-decision-support"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim"
+      ],
+      "requiredBeforeL3": [
+        "explicit synthetic scenario file",
+        "model card",
+        "sanity checks",
+        "synthetic-only output boundary"
+      ],
+      "requiredBeforeL4": [
+        "narrow estimand",
+        "governed data access",
+        "confirmed variables and value labels",
+        "cohort flow",
+        "survey design or sampling design",
+        "validation and calibration diagnostics"
+      ],
+      "requiredBeforeL5": [
+        "external clinical and ethical governance",
+        "individual consent and appeal process",
+        "external validation for intended use"
+      ]
+    },
+    {
+      "decisionId": "MACR-003-c2ltb1-corrected-reviewed-artifacts",
+      "sourceRegisterPath": "docs/reference/human-infra-c2-longtail-first-batch-corrected-source-reviewed-card-artifact-register.json",
+      "sourceRegisterStatusMustContain": "model-blocked",
+      "reviewedArtifactCount": 30,
+      "blockedRowCount": 5,
+      "currentAdmissionLevel": "L1/L2-only",
+      "maxLevelWithoutAdditionalGates": "L2",
+      "allowedUses": [
+        "bounded source-card evidence",
+        "candidate variable language",
+        "candidate endpoint language",
+        "uncertainty channel framing",
+        "transfer-boundary framing",
+        "downgrade-trigger framing"
+      ],
+      "blockedLevels": [
+        "L3-synthetic-input-without-explicit-scenario-selection",
+        "L4-aggregate-calibrated-research-model",
+        "L5-individual-decision-support"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim"
+      ],
+      "requiredBeforeL3": [
+        "explicit synthetic scenario file",
+        "model card",
+        "sanity checks",
+        "synthetic-only output boundary"
+      ],
+      "requiredBeforeL4": [
+        "narrow estimand",
+        "governed data access",
+        "confirmed variables and value labels",
+        "cohort flow",
+        "survey design or sampling design",
+        "validation and calibration diagnostics"
+      ],
+      "requiredBeforeL5": [
+        "external clinical and ethical governance",
+        "individual consent and appeal process",
+        "external validation for intended use"
+      ]
+    },
+    {
+      "decisionId": "MACR-004-c2ltb2-reviewed-artifacts",
+      "sourceRegisterPath": "docs/reference/human-infra-c2-longtail-second-batch-reviewed-card-artifact-register.json",
+      "sourceRegisterStatusMustContain": "model-blocked",
+      "reviewedArtifactCount": 138,
+      "blockedRowCount": 1,
+      "currentAdmissionLevel": "L1/L2-only",
+      "maxLevelWithoutAdditionalGates": "L2",
+      "allowedUses": [
+        "bounded source-card evidence",
+        "candidate variable language",
+        "candidate endpoint language",
+        "uncertainty channel framing",
+        "transfer-boundary framing",
+        "downgrade-trigger framing"
+      ],
+      "blockedLevels": [
+        "L3-synthetic-input-without-explicit-scenario-selection",
+        "L4-aggregate-calibrated-research-model",
+        "L5-individual-decision-support"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim"
+      ],
+      "requiredBeforeL3": [
+        "explicit synthetic scenario file",
+        "model card",
+        "sanity checks",
+        "synthetic-only output boundary"
+      ],
+      "requiredBeforeL4": [
+        "narrow estimand",
+        "governed data access",
+        "confirmed variables and value labels",
+        "cohort flow",
+        "survey design or sampling design",
+        "validation and calibration diagnostics"
+      ],
+      "requiredBeforeL5": [
+        "external clinical and ethical governance",
+        "individual consent and appeal process",
+        "external validation for intended use"
+      ]
+    },
+    {
+      "decisionId": "MACR-005-c2ltb3-reviewed-artifacts",
+      "sourceRegisterPath": "docs/reference/human-infra-c2-longtail-third-batch-reviewed-card-artifact-register.json",
+      "sourceRegisterStatusMustContain": "model-blocked",
+      "reviewedArtifactCount": 144,
+      "blockedRowCount": 2,
+      "currentAdmissionLevel": "L1/L2-only",
+      "maxLevelWithoutAdditionalGates": "L2",
+      "allowedUses": [
+        "bounded source-card evidence",
+        "candidate variable language",
+        "candidate endpoint language",
+        "uncertainty channel framing",
+        "transfer-boundary framing",
+        "downgrade-trigger framing"
+      ],
+      "blockedLevels": [
+        "L3-synthetic-input-without-explicit-scenario-selection",
+        "L4-aggregate-calibrated-research-model",
+        "L5-individual-decision-support"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim"
+      ],
+      "requiredBeforeL3": [
+        "explicit synthetic scenario file",
+        "model card",
+        "sanity checks",
+        "synthetic-only output boundary"
+      ],
+      "requiredBeforeL4": [
+        "narrow estimand",
+        "governed data access",
+        "confirmed variables and value labels",
+        "cohort flow",
+        "survey design or sampling design",
+        "validation and calibration diagnostics"
+      ],
+      "requiredBeforeL5": [
+        "external clinical and ethical governance",
+        "individual consent and appeal process",
+        "external validation for intended use"
+      ]
+    },
+    {
+      "decisionId": "MACR-006-c2ltb4-manual-reviewed-artifacts",
+      "sourceRegisterPath": "docs/reference/human-infra-c2-longtail-fourth-batch-manual-fulltext-reviewed-card-artifact-register.json",
+      "sourceRegisterStatusMustContain": "model-blocked",
+      "reviewedArtifactCount": 18,
+      "blockedRowCount": 5,
+      "currentAdmissionLevel": "L1/L2-only",
+      "maxLevelWithoutAdditionalGates": "L2",
+      "allowedUses": [
+        "bounded source-card evidence",
+        "candidate variable language",
+        "candidate endpoint language",
+        "uncertainty channel framing",
+        "transfer-boundary framing",
+        "downgrade-trigger framing"
+      ],
+      "blockedLevels": [
+        "L3-synthetic-input-without-explicit-scenario-selection",
+        "L4-aggregate-calibrated-research-model",
+        "L5-individual-decision-support"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim"
+      ],
+      "requiredBeforeL3": [
+        "explicit synthetic scenario file",
+        "model card",
+        "sanity checks",
+        "synthetic-only output boundary"
+      ],
+      "requiredBeforeL4": [
+        "narrow estimand",
+        "governed data access",
+        "confirmed variables and value labels",
+        "cohort flow",
+        "survey design or sampling design",
+        "validation and calibration diagnostics"
+      ],
+      "requiredBeforeL5": [
+        "external clinical and ethical governance",
+        "individual consent and appeal process",
+        "external validation for intended use"
+      ]
+    },
+    {
+      "decisionId": "MACR-007-c2ltb5-reviewed-artifacts",
+      "sourceRegisterPath": "docs/reference/human-infra-c2-longtail-fifth-batch-reviewed-card-artifact-register.json",
+      "sourceRegisterStatusMustContain": "model-blocked",
+      "reviewedArtifactCount": 102,
+      "blockedRowCount": 13,
+      "currentAdmissionLevel": "L1/L2-only",
+      "maxLevelWithoutAdditionalGates": "L2",
+      "allowedUses": [
+        "bounded source-card evidence",
+        "candidate variable language",
+        "candidate endpoint language",
+        "uncertainty channel framing",
+        "transfer-boundary framing",
+        "downgrade-trigger framing"
+      ],
+      "blockedLevels": [
+        "L3-synthetic-input-without-explicit-scenario-selection",
+        "L4-aggregate-calibrated-research-model",
+        "L5-individual-decision-support"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim"
+      ],
+      "requiredBeforeL3": [
+        "explicit synthetic scenario file",
+        "model card",
+        "sanity checks",
+        "synthetic-only output boundary"
+      ],
+      "requiredBeforeL4": [
+        "narrow estimand",
+        "governed data access",
+        "confirmed variables and value labels",
+        "cohort flow",
+        "survey design or sampling design",
+        "validation and calibration diagnostics"
+      ],
+      "requiredBeforeL5": [
+        "external clinical and ethical governance",
+        "individual consent and appeal process",
+        "external validation for intended use"
+      ]
+    }
+  ],
+  "existingL3Decisions": [
+    {
+      "decisionId": "MACR-L3-001-life-path-toy-model",
+      "sourcePath": "web/src/data/life-path-toy-model.json",
+      "auditPath": "web/src/data/life-path-toy-model-audit.json",
+      "currentAdmissionLevel": "L3",
+      "allowedUse": "synthetic scenario visualization and sanity checking only",
+      "blockedUses": [
+        "real-world intervention claim",
+        "real cohort calibration",
+        "individual prediction",
+        "medical advice"
+      ],
+      "calibrated": false
+    },
+    {
+      "decisionId": "MACR-L3-002-public-mortality-anchor",
+      "sourcePath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_public_mortality_anchor.json",
+      "currentAdmissionLevel": "L3-baseline-plausibility-only",
+      "allowedUse": "public aggregate baseline plausibility comparison only",
+      "blockedUses": [
+        "cohort calibration",
+        "intervention evidence",
+        "individual prediction",
+        "medical advice"
+      ],
+      "calibrated": false
+    }
+  ],
+  "blockedL4Candidates": [
+    {
+      "candidateId": "MACR-L4-BLOCK-001-nhats-first-estimand",
+      "sourcePath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_first_estimand_protocol.json",
+      "blockedAt": [
+        "MAC-G4-data-access",
+        "MAC-G5-variable-confirmation",
+        "MAC-G6-extraction-and-cohort-flow",
+        "MAC-G7-validation-calibration"
+      ],
+      "reason": "Pre-extraction protocol exists, but governed data access, exact value labels, real extraction, survey design execution, validation and calibration are absent."
+    },
+    {
+      "candidateId": "MACR-L4-BLOCK-002-nhats-variable-confirmation",
+      "sourcePath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_variable_confirmation_matrix.json",
+      "blockedAt": [
+        "MAC-G5-variable-confirmation",
+        "MAC-G6-extraction-and-cohort-flow",
+        "MAC-G7-validation-calibration"
+      ],
+      "reason": "Candidate fields are organized, but Colectica value-label review, route-value crosswalk, missing-code map and second reviewer signoff are absent."
+    }
+  ],
+  "hardAbortInheritance": [
+    "ABORT-1-no-source-identity",
+    "ABORT-2-biomarker-to-lifespan-leap",
+    "ABORT-3-animal-to-human-effect-leap",
+    "ABORT-4-no-comparator-or-time-zero",
+    "ABORT-5-individual-output",
+    "ABORT-6-raw-data-exposure"
+  ],
+  "nextWorkOrders": [
+    {
+      "priority": 1,
+      "item": "Select a narrow aggregate estimand and mark which L2 candidate families could become model variables only after G4-G7 pass.",
+      "unblocks": [
+        "MODEL-G4-field-and-value-confirmation",
+        "MODEL-G7-external-validation-and-calibration"
+      ]
+    },
+    {
+      "priority": 2,
+      "item": "Execute the NHATS Colectica value-label review protocol before creating any L4 extraction or calibration candidate.",
+      "unblocks": [
+        "MODEL-G4-field-and-value-confirmation"
+      ]
+    },
+    {
+      "priority": 3,
+      "item": "Keep future C2 reviewed artifacts entering this registry as L1/L2-only until a new admission decision passes the same audit.",
+      "unblocks": [
+        "RESEARCH-G4-variable-mechanism-contracts"
+      ]
+    }
+  ]
+}

@@ -11,6 +11,7 @@ tools/
 ├── audit_core_claim_evidence_matrix.py # 核心主张证据矩阵审计器
 ├── audit_human_infra_maturity_gap_register.py # 100% 成熟度缺口账本审计器
 ├── audit_human_infra_model_admission_contract.py # 模型准入契约审计器
+├── audit_human_infra_model_admission_candidate_registry.py # 模型准入候选注册表审计器
 ├── audit_human_infra_page_claim_consistency.py # 页面级 Claim ID 一致性审计器
 ├── audit_human_infra_audience_claim_map.py # 受众-主张映射与邻近项目边界审计器
 ├── audit_human_infra_paper_claim_register.py # arXiv-style 论文页强主张注册表审计器
@@ -87,6 +88,7 @@ tools/
 - `audit_core_claim_evidence_matrix.py` 只检查核心 Claim-Evidence Matrix 的结构契约、Source Anchor、Claim ID、gate、方法锚点、禁止用途和入口索引，不验证外部文献真实性。
 - `audit_human_infra_maturity_gap_register.py` 只检查 100% 成熟度缺口账本的结构契约、三条成熟度轴、gate 状态、证据路径、路线图百分比一致性和入口索引，不证明项目已经完成 100%。
 - `audit_human_infra_model_admission_contract.py` 只检查模型准入契约的 L0-L5 层级、MAC gates、hard abort gates、方法锚点、入口索引和校准/个体用途阻塞状态，不证明任何 reviewed artifact 已可作为真实模型参数。
+- `audit_human_infra_model_admission_candidate_registry.py` 只检查模型准入候选注册表是否覆盖契约中的 reviewed artifact registers、数量是否回到来源、L1/L2/L3/L4/L5 边界是否一致，不证明任何候选已经可校准或可用于个体预测。
 - `audit_human_infra_page_claim_consistency.py` 只检查主要 README、Web、论文和 reference 页面是否包含账本要求的 Claim ID、Claim spine 标签和禁止用途边界，不验证外部文献真实性或域级证据闭环。
 - `audit_human_infra_audience_claim_map.py` 只检查受众-主张映射账本是否覆盖研究者、构建者、长寿读者、基础设施读者、治理审查者和模型开发者，并保留邻近项目边界、入口索引和禁止误读；它不证明传播效果或外部科学主张。
 - `audit_human_infra_paper_claim_register.py` 只检查 arXiv-style 论文页是否全部进入论文强主张注册表，并具备强主张、核心 Claim ID、反证条件、降级动作、source data path 和禁止用途边界；它不证明论文主张为真，也不验证外部文献真实性。

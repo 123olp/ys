@@ -234,6 +234,7 @@ docs/
 │   ├── human-infra-falsifier-source-card-extraction.json
 │   ├── human-infra-maturity-roadmap.md
 │   ├── human-infra-model-admission-contract.json
+│   ├── human-infra-model-admission-candidate-registry.json
 │   ├── life-path-prediction-model-contract.md
 │   ├── life-path-prediction-model-governance.md
 │   ├── project-boundary-v0.1.md
@@ -288,6 +289,7 @@ docs/
 - `reference/human-infra-reviewed-card-artifact-register.json`：登记 486 个 reviewed card artifact 实体，把 fresh review verdict 晋升为 Source/变量/endpoint/uncertainty/transfer/downgrade 可审计卡片层；它仍不代表模型准入或个体用途许可。
 - `reference/human-infra-future-boundary-route-card-register.json`：登记未来等待、生物停滞、神经身份连续性和 AI 加速四条 future-boundary route card，统一概率门、中止门、正负链路和禁止外推边界。
 - `reference/human-infra-model-admission-contract.json`：定义 L0-L5 证据到模型准入层级、MAC gates、hard abort gates 和 B1-B5 reviewed artifacts 的 L1/L2-only 边界，防止 reviewed artifact 被误升格为校准预测参数、干预效果或个体用途。
+- `reference/human-infra-model-admission-candidate-registry.json`：登记 reviewed artifacts、synthetic toy model、public aggregate mortality anchor 和 NHATS draft candidates 的当前准入层级，确认 1170 个 reviewed artifacts 只允许 L1/L2，L4/L5 继续阻塞。
 - `reference/life-path-prediction-model-contract.md`：定义干预、状态转移、风险函数、生存曲线、有效时间、主观时间、相对时间和未来选择权的预测模型契约。
 - `reference/life-path-prediction-model-governance.md`：定义定量预测模型的证据准入、偏差审查、验证、报告和禁止用途门禁。
 - `reference/project-boundary-v0.1.md`：定义当前公开版本边界、纳入范围、排除范围、材料落点和后续版本方向。

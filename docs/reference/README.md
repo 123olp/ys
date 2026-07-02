@@ -128,6 +128,7 @@ Current documents:
 - `human-infra-maturity-roadmap.md`: maturity contract for value clarity, serious research framework, and runnable quantitative model stages.
 - `human-infra-maturity-gap-register.json`: machine-readable 100% maturity gap register for value clarity, research-framework, and quantitative-model gates.
 - `human-infra-model-admission-contract.json`: machine-readable model-admission contract that separates narrative evidence, bounded reviewed artifacts, candidate variables, synthetic toy inputs, aggregate calibrated models, and blocked individual decision support.
+- `human-infra-model-admission-candidate-registry.json`: machine-readable candidate registry that maps seven reviewed artifact registers, current synthetic L3 artifacts, and blocked L4 NHATS candidates to admission decisions without opening calibrated prediction.
 - `life-path-prediction-model-contract.md`: quantitative contract for modeling interventions, state transitions, hazards, survival, effective time, subjective time, relative time, and option value.
 - `life-path-prediction-model-governance.md`: governance gates for evidence admission, uncertainty, validation, reporting, and prohibited uses of life-path predictions.
 - `project-boundary-v0.1.md`: first public boundary for what Human Infra is, what it is not, and what v0.1 work includes.
