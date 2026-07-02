@@ -201,6 +201,10 @@ docs/
 │   ├── human-infra-c2-longtail-third-batch-source-extraction-register.json
 │   ├── human-infra-c2-longtail-third-batch-local-review-register.json
 │   ├── human-infra-c2-longtail-third-batch-source-resolution-register.json
+│   ├── human-infra-c2-longtail-third-batch-independent-fresh-review-protocol.json
+│   ├── human-infra-c2-longtail-third-batch-independent-fresh-review-verdict-register.json
+│   ├── human-infra-c2-longtail-third-batch-corrected-source-reextraction-queue.json
+│   ├── human-infra-c2-longtail-third-batch-corrected-source-reextraction-register.json
 │   ├── human-infra-domain-source-specific-extraction-queue.json
 │   ├── human-infra-domain-source-specific-extraction-register.json
 │   ├── human-infra-domain-source-card-promotion-queue.json
@@ -421,6 +425,9 @@ docs/
 - `reference/human-infra-c2-longtail-third-batch-source-extraction-register.json`：记录 C2-LT-B3 24/24 个来源的本地字段级抽取，显式保留错源、标题/分卷错配、访问受限和降级触发边界；它仍不等于本地复核、fresh review、reviewed artifacts 或模型准入。
 - `reference/human-infra-c2-longtail-third-batch-local-review-register.json`：记录 C2-LT-B3 24/24 个来源抽取行的本地来源语境复核，确认其只可进入 independent fresh review 或 source-resolution，并保留 5 个错源/错配/访问受限问题行；它仍不等于 reviewed artifacts、Source Card 晋升完成或模型准入。
 - `reference/human-infra-c2-longtail-third-batch-source-resolution-register.json`：记录 C2-LT-B3 5 个本地复核问题行的来源纠偏候选，把错源、分卷错配和 publisher route 问题拆成 7 个 corrected/split/route-normalized 候选；它仍不等于 fresh review、corrected re-extraction、reviewed artifacts 或模型准入。
+- `reference/human-infra-c2-longtail-third-batch-independent-fresh-review-verdict-register.json`：记录 C2-LT-B3 24/24 个来源的 independent fresh-review 判定，18 行可 bounded artifact fill、5 行进入 corrected-source re-extraction、1 行 downgrade-before-fill；它仍不创建 reviewed artifacts、不打开模型准入。
+- `reference/human-infra-c2-longtail-third-batch-corrected-source-reextraction-queue.json`：把 C2-LT-B3 5 个 source-resolution-supported 问题行中的 7 个 corrected/split/route-normalized 候选派生成 corrected source re-extraction 任务；它仍只是任务队列，不等于重新抽取完成或 artifact 晋升。
+- `reference/human-infra-c2-longtail-third-batch-corrected-source-reextraction-register.json`：记录 C2-LT-B3 7/7 个 corrected/split/route-normalized 候选的 bounded re-extraction 输出，5 行可进入下一轮 independent fresh review，2 行保持 route/split 阻塞；它仍不等于 fresh review 通过、artifact 晋升或模型准入。
 - `reference/human-infra-domain-source-specific-extraction-queue.json`：把 26 个域字段行派生为 81 个 domain-source 深读任务，作为 exact claim、endpoint、population、uncertainty 和 transfer-boundary 精读前的模型准入阻塞队列。
 - `reference/human-infra-domain-source-specific-extraction-register.json`：记录当前 81/81 个 domain-source 精读完成行，绑定 exact claim、endpoint、population、uncertainty、transfer-boundary 和禁止用途边界；它仍不等于外部文献 fresh review 或校准预测准入。
 - `reference/human-infra-domain-source-card-promotion-queue.json`：把 81 个 completed field rows 派生为 fresh review、Source Card、变量卡、endpoint 卡、uncertainty 卡、transfer-boundary 卡和 downgrade check 晋升任务；它仍不等于晋升完成或模型准入。

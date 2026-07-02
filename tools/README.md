@@ -41,6 +41,8 @@
 - `audit_human_infra_c2_longtail_third_batch_source_resolution_register.py`: verifies that `docs/reference/human-infra-c2-longtail-third-batch-source-resolution-register.json` covers the five C2-LT-B3 local-review issue rows, prepares seven corrected/split/route-normalized candidates, preserves blocked uses and keeps model admission blocked.
 - `audit_human_infra_c2_longtail_third_batch_independent_fresh_review_protocol.py`: verifies that `docs/reference/human-infra-c2-longtail-third-batch-independent-fresh-review-protocol.json` splits the 24 locally reviewed C2-LT-B3 rows into two fresh-review batches, includes the five source-resolution issue rows, and keeps verdicts, reviewed artifacts and model admission outside the protocol.
 - `audit_human_infra_c2_longtail_third_batch_independent_fresh_review_verdict_register.py`: verifies that `docs/reference/human-infra-c2-longtail-third-batch-independent-fresh-review-verdict-register.json` completes 24/24 C2-LT-B3 fresh-review verdicts, routes five issue rows to corrected-source re-extraction, keeps one row downgrade-before-fill, and keeps model admission blocked.
+- `audit_human_infra_c2_longtail_third_batch_corrected_source_reextraction_queue.py`: verifies that `docs/reference/human-infra-c2-longtail-third-batch-corrected-source-reextraction-queue.json` derives seven corrected/split/route-normalized source candidates from the five C2-LT-B3 source-resolution-supported issue rows while keeping artifact promotion and model admission blocked.
+- `audit_human_infra_c2_longtail_third_batch_corrected_source_reextraction_register.py`: verifies that `docs/reference/human-infra-c2-longtail-third-batch-corrected-source-reextraction-register.json` completes all seven C2-LT-B3 corrected re-extraction tasks with required source identity, endpoint, uncertainty, transfer-boundary, downgrade and model-position fields while preserving route/split blocking and model-admission boundaries.
 - `audit_human_infra_domain_source_specific_extraction_queue.py`: verifies that the 26 domain field rows derive into 81 domain-source reading tasks over 20 source anchors from `docs/reference/human-infra-domain-source-specific-extraction-queue.json`, while keeping calibrated modeling blocked until exact claim, endpoint, population, uncertainty and transfer-boundary fields are extracted.
 - `audit_human_infra_domain_source_specific_extraction_register.py`: verifies the completed 81/81 domain-source extraction rows from `docs/reference/human-infra-domain-source-specific-extraction-register.json`, including source-role decisions, endpoint binding, blocked uses and index links.
 - `audit_human_infra_domain_source_card_promotion_queue.py`: verifies that the 81 completed domain-source field rows derive into fresh-review, Source Card, variable-card, endpoint-card, uncertainty-card, transfer-boundary-card and downgrade-check promotion tasks from `docs/reference/human-infra-domain-source-card-promotion-queue.json`, while keeping model admission blocked.
@@ -135,6 +137,8 @@ make c2-longtail-third-batch-local-review-audit
 make c2-longtail-third-batch-source-resolution-audit
 make c2-longtail-third-batch-independent-fresh-review-protocol-audit
 make c2-longtail-third-batch-independent-fresh-review-verdict-audit
+make c2-longtail-third-batch-corrected-source-reextraction-queue-audit
+make c2-longtail-third-batch-corrected-source-reextraction-register-audit
 make domain-source-queue-audit
 make domain-source-extraction-audit
 make domain-source-promotion-audit

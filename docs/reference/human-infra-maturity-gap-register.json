@@ -176,7 +176,11 @@
         "docs/reference/human-infra-c2-longtail-third-batch-independent-fresh-review-protocol.json",
         "tools/audit_human_infra_c2_longtail_third_batch_independent_fresh_review_protocol.py",
         "docs/reference/human-infra-c2-longtail-third-batch-independent-fresh-review-verdict-register.json",
-        "tools/audit_human_infra_c2_longtail_third_batch_independent_fresh_review_verdict_register.py"
+        "tools/audit_human_infra_c2_longtail_third_batch_independent_fresh_review_verdict_register.py",
+        "docs/reference/human-infra-c2-longtail-third-batch-corrected-source-reextraction-queue.json",
+        "tools/audit_human_infra_c2_longtail_third_batch_corrected_source_reextraction_queue.py",
+        "docs/reference/human-infra-c2-longtail-third-batch-corrected-source-reextraction-register.json",
+        "tools/audit_human_infra_c2_longtail_third_batch_corrected_source_reextraction_register.py"
       ],
       "gates": [
         {
@@ -284,14 +288,18 @@
             "docs/reference/human-infra-c2-longtail-third-batch-independent-fresh-review-protocol.json",
             "tools/audit_human_infra_c2_longtail_third_batch_independent_fresh_review_protocol.py",
             "docs/reference/human-infra-c2-longtail-third-batch-independent-fresh-review-verdict-register.json",
-            "tools/audit_human_infra_c2_longtail_third_batch_independent_fresh_review_verdict_register.py"
+            "tools/audit_human_infra_c2_longtail_third_batch_independent_fresh_review_verdict_register.py",
+            "docs/reference/human-infra-c2-longtail-third-batch-corrected-source-reextraction-queue.json",
+            "tools/audit_human_infra_c2_longtail_third_batch_corrected_source_reextraction_queue.py",
+            "docs/reference/human-infra-c2-longtail-third-batch-corrected-source-reextraction-register.json",
+            "tools/audit_human_infra_c2_longtail_third_batch_corrected_source_reextraction_register.py"
           ],
           "missingEvidence": [
-            "C2-LT-B3 source-resolution-supported rows still need corrected-source re-extraction before any artifact fill.",
+            "C2-LT-B3 corrected-source re-extraction outputs still need independent fresh review before any corrected artifact fill.",
             "C2-LT-B3 eligible rows still need bounded reviewed artifacts before C2 long-tail coverage can be considered closed.",
             "Remaining C2 long-tail domains outside B1/B2/B3 still need batch selection, source extraction, fresh review and reviewed artifacts."
           ],
-          "nextAction": "Run C2-LT-B3 corrected-source re-extraction for 5 source-resolution-supported rows, apply downgrade-before-fill for EXT-022, then create bounded reviewed artifacts for the 18 eligible rows while keeping model admission blocked.",
+          "nextAction": "Run C2-LT-B3 corrected-source fresh review verdicts for the 7 corrected extraction outputs, apply downgrade-before-fill for EXT-022, then create bounded reviewed artifacts for eligible rows while keeping model admission blocked.",
           "blocks100Percent": true
         },
         {
@@ -374,14 +382,18 @@
             "docs/reference/human-infra-c2-longtail-third-batch-independent-fresh-review-protocol.json",
             "tools/audit_human_infra_c2_longtail_third_batch_independent_fresh_review_protocol.py",
             "docs/reference/human-infra-c2-longtail-third-batch-independent-fresh-review-verdict-register.json",
-            "tools/audit_human_infra_c2_longtail_third_batch_independent_fresh_review_verdict_register.py"
+            "tools/audit_human_infra_c2_longtail_third_batch_independent_fresh_review_verdict_register.py",
+            "docs/reference/human-infra-c2-longtail-third-batch-corrected-source-reextraction-queue.json",
+            "tools/audit_human_infra_c2_longtail_third_batch_corrected_source_reextraction_queue.py",
+            "docs/reference/human-infra-c2-longtail-third-batch-corrected-source-reextraction-register.json",
+            "tools/audit_human_infra_c2_longtail_third_batch_corrected_source_reextraction_register.py"
           ],
           "missingEvidence": [
-            "C2-LT-B3 verdict rows are not yet converted into reviewed variable, endpoint, uncertainty, transfer-boundary and downgrade artifacts.",
-            "Source-resolution-supported rows still require corrected-source re-extraction before variable contract use.",
+            "C2-LT-B3 verdict rows and corrected-source outputs are not yet converted into reviewed variable, endpoint, uncertainty, transfer-boundary and downgrade artifacts.",
+            "Corrected-source re-extraction outputs still require independent fresh review before variable contract use.",
             "Reviewed artifacts are not yet connected to any calibrated model-admission gate."
           ],
-          "nextAction": "Convert only eligible C2-LT-B3 fresh-review rows into bounded artifacts after corrected-source re-extraction and downgrade handling; do not admit them to the calibrated model.",
+          "nextAction": "Fresh-review the C2-LT-B3 corrected-source outputs, then convert only eligible B3 rows into bounded artifacts; do not admit them to the calibrated model.",
           "blocks100Percent": true
         },
         {
@@ -489,14 +501,18 @@
             "docs/reference/human-infra-c2-longtail-third-batch-independent-fresh-review-protocol.json",
             "tools/audit_human_infra_c2_longtail_third_batch_independent_fresh_review_protocol.py",
             "docs/reference/human-infra-c2-longtail-third-batch-independent-fresh-review-verdict-register.json",
-            "tools/audit_human_infra_c2_longtail_third_batch_independent_fresh_review_verdict_register.py"
+            "tools/audit_human_infra_c2_longtail_third_batch_independent_fresh_review_verdict_register.py",
+            "docs/reference/human-infra-c2-longtail-third-batch-corrected-source-reextraction-queue.json",
+            "tools/audit_human_infra_c2_longtail_third_batch_corrected_source_reextraction_queue.py",
+            "docs/reference/human-infra-c2-longtail-third-batch-corrected-source-reextraction-register.json",
+            "tools/audit_human_infra_c2_longtail_third_batch_corrected_source_reextraction_register.py"
           ],
           "missingEvidence": [
             "C2-LT-B3 downgrade-before-fill row still needs explicit downgrade artifact representation.",
-            "Five C2-LT-B3 source-resolution-supported rows still need corrected-source re-extraction and downstream fresh review before artifact fill.",
+            "Seven C2-LT-B3 corrected-source re-extraction outputs still need downstream fresh review before artifact fill.",
             "Remaining C2 long-tail domains still need independent source review and downgrade rows."
           ],
-          "nextAction": "Carry C2-LT-B3 downgrade-required and source-resolution-supported verdicts into the corrected re-extraction and reviewed-artifact workflow before any domain claim upgrade.",
+          "nextAction": "Carry C2-LT-B3 downgrade-required and corrected-source re-extraction outputs into corrected fresh review and reviewed-artifact workflow before any domain claim upgrade.",
           "blocks100Percent": true
         }
       ]
@@ -658,7 +674,7 @@
   "nextWorkOrder": [
     {
       "priority": 1,
-      "item": "Run C2-LT-B3 local source-context review, source-resolution for mismatched/access-limited rows, independent fresh review and bounded artifact fill; preserve the 1 C2-LT-B2 downgrade-before-fill row, preserve the 5 corrected lineage/route/index/fulltext blocked rows, and keep model admission blocked.",
+      "item": "Run C2-LT-B3 corrected-source fresh review verdicts for 7 corrected extraction outputs, then derive bounded reviewed artifacts for eligible B3 rows while keeping model admission blocked.",
       "unblocks": [
         "RESEARCH-G3-c1-c2-source-cards",
         "RESEARCH-G4-variable-mechanism-contracts",

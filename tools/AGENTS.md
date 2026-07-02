@@ -41,6 +41,8 @@ tools/
 ├── audit_human_infra_c2_longtail_third_batch_source_resolution_register.py # C2-LT-B3 source-resolution 审计器
 ├── audit_human_infra_c2_longtail_third_batch_independent_fresh_review_protocol.py # C2-LT-B3 独立 fresh review 协议审计器
 ├── audit_human_infra_c2_longtail_third_batch_independent_fresh_review_verdict_register.py # C2-LT-B3 独立 fresh review 判定审计器
+├── audit_human_infra_c2_longtail_third_batch_corrected_source_reextraction_queue.py # C2-LT-B3 corrected source re-extraction 队列审计器
+├── audit_human_infra_c2_longtail_third_batch_corrected_source_reextraction_register.py # C2-LT-B3 corrected source re-extraction 完成审计器
 ├── audit_human_infra_domain_source_specific_extraction_queue.py # 域-来源深读队列审计器
 ├── audit_human_infra_domain_source_specific_extraction_register.py # 域-来源精读完成寄存器审计器
 ├── audit_human_infra_domain_source_card_promotion_queue.py # 域-来源卡片晋升队列审计器
@@ -106,6 +108,8 @@ tools/
 - `audit_human_infra_c2_longtail_third_batch_source_resolution_register.py` 只检查 `docs/reference/human-infra-c2-longtail-third-batch-source-resolution-register.json` 是否覆盖 C2-LT-B3 5 个本地复核问题行、准备 7 个 corrected/split/route-normalized 候选、保留 fresh-review 和 corrected-reextraction 后续门槛，并继续阻塞 reviewed artifacts、Source Card 晋升和模型准入。
 - `audit_human_infra_c2_longtail_third_batch_independent_fresh_review_protocol.py` 只检查 `docs/reference/human-infra-c2-longtail-third-batch-independent-fresh-review-protocol.json` 是否把 C2-LT-B3 24 个本地复核行拆成 2 个 fresh-review 批次、把 5 个 source-resolution issue rows 纳入纠偏检查，并继续禁止协议内 verdict、reviewed artifacts 和模型准入。
 - `audit_human_infra_c2_longtail_third_batch_independent_fresh_review_verdict_register.py` 只检查 `docs/reference/human-infra-c2-longtail-third-batch-independent-fresh-review-verdict-register.json` 是否完成 C2-LT-B3 24/24 个来源的 fresh-review 判定、把 18 行限定为 bounded artifact fill、把 5 个问题行限定为 corrected-source re-extraction、把 1 行保持 downgrade-before-fill，并继续阻塞 reviewed artifacts 和模型准入。
+- `audit_human_infra_c2_longtail_third_batch_corrected_source_reextraction_queue.py` 只检查 `docs/reference/human-infra-c2-longtail-third-batch-corrected-source-reextraction-queue.json` 是否把 5 个 source-resolution-supported 问题行的 7 个 corrected/split/route-normalized 候选派生成 corrected source re-extraction 任务，并继续阻塞 artifact 晋升和模型准入。
+- `audit_human_infra_c2_longtail_third_batch_corrected_source_reextraction_register.py` 只检查 `docs/reference/human-infra-c2-longtail-third-batch-corrected-source-reextraction-register.json` 是否覆盖 7/7 个 corrected re-extraction 任务、补足来源身份/endpoint/不确定性/迁移边界/降级/模型位置字段，并继续阻塞 route/split 行、artifact 晋升和模型准入；它不证明 independent fresh review 已通过。
 - `audit_human_infra_domain_source_specific_extraction_queue.py` 只检查当前 26 个域字段行是否派生为 81 个 domain-source 深读任务，并确认模型准入仍被 exact claim、endpoint、population、uncertainty 和 transfer-boundary 精读阻塞；它不证明任何来源已经支持对应域主张。
 - `audit_human_infra_domain_source_specific_extraction_register.py` 只检查当前 81/81 个 domain-source 精读完成行是否来自队列、字段匹配、阻塞用途完整、索引到位；它不证明外部文献已完成 fresh review，也不打开校准预测、个体建议或干预排序。
 - `audit_human_infra_domain_source_card_promotion_queue.py` 只检查当前 81 个 completed field rows 是否一一派生为 fresh review、Source Card、变量卡、endpoint 卡、uncertainty 卡、transfer-boundary 卡和 downgrade check 晋升任务；它不证明任何晋升任务已经完成，也不打开模型准入。
