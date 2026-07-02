@@ -176,6 +176,7 @@ docs/
 │   ├── human-infra-domain-claim-evidence-matrix.json
 │   ├── human-infra-domain-source-card-field-extraction.json
 │   ├── human-infra-c2-longtail-coverage-register.json
+│   ├── human-infra-c2-longtail-first-batch-promotion-queue.json
 │   ├── human-infra-domain-source-specific-extraction-queue.json
 │   ├── human-infra-domain-source-specific-extraction-register.json
 │   ├── human-infra-domain-source-card-promotion-queue.json
@@ -371,6 +372,7 @@ docs/
 - `reference/human-infra-domain-claim-evidence-matrix.json`：把当前 26 个优先研究域 join 到域强主张来源、变量契约来源、反证来源、字段级 Source Card ID 和下一步抽取动作。
 - `reference/human-infra-domain-source-card-field-extraction.json`：把当前 26 个优先研究域拆到 endpoint 候选、population 槽位、uncertainty 槽位、transfer-boundary 槽位和 source-specific 深读动作。
 - `reference/human-infra-c2-longtail-coverage-register.json`：登记全部 204 个 C2 源体维护域的覆盖状态，区分 20 个 priority reviewed-artifact covered 域和 184 个仍缺 Claim-Evidence/source/fresh-review/card artifact 的长尾域。
+- `reference/human-infra-c2-longtail-first-batch-promotion-queue.json`：登记第一批 24 个高影响未覆盖 C2 长尾域的候选来源、claim seed、variable seed、晋升步骤和禁止用途边界；它只是执行队列，不等于 Source Card、fresh review 或模型准入完成。
 - `reference/human-infra-domain-source-specific-extraction-queue.json`：把 26 个域字段行派生为 81 个 domain-source 深读任务，作为 exact claim、endpoint、population、uncertainty 和 transfer-boundary 精读前的模型准入阻塞队列。
 - `reference/human-infra-domain-source-specific-extraction-register.json`：记录当前 81/81 个 domain-source 精读完成行，绑定 exact claim、endpoint、population、uncertainty、transfer-boundary 和禁止用途边界；它仍不等于外部文献 fresh review 或校准预测准入。
 - `reference/human-infra-domain-source-card-promotion-queue.json`：把 81 个 completed field rows 派生为 fresh review、Source Card、变量卡、endpoint 卡、uncertainty 卡、transfer-boundary 卡和 downgrade check 晋升任务；它仍不等于晋升完成或模型准入。

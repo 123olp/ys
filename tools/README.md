@@ -14,6 +14,7 @@
 - `audit_human_infra_domain_claim_evidence_matrix.py`: verifies that the current 26 priority research domains are joined to domain claims, variable-contract sources, falsifier sources and extracted Source Card IDs from `docs/reference/human-infra-domain-claim-evidence-matrix.json`.
 - `audit_human_infra_domain_source_card_field_extraction.py`: verifies that each current domain matrix seed row has endpoint candidates, source IDs, population-boundary slots, uncertainty-channel slots, transfer-boundary slots and next field-extraction actions from `docs/reference/human-infra-domain-source-card-field-extraction.json`.
 - `audit_human_infra_c2_longtail_coverage_register.py`: verifies that `docs/reference/human-infra-c2-longtail-coverage-register.json` covers every C2 source-maintenance domain from `classification.tsv`, distinguishes 20 reviewed priority domains from 184 long-tail uncovered domains, and keeps model admission blocked.
+- `audit_human_infra_c2_longtail_first_batch_promotion_queue.py`: verifies that `docs/reference/human-infra-c2-longtail-first-batch-promotion-queue.json` selects the first high-impact C2 long-tail domains, keeps them tied to the coverage register, requires candidate sources and promotion steps, and keeps model admission blocked.
 - `audit_human_infra_domain_source_specific_extraction_queue.py`: verifies that the 26 domain field rows derive into 81 domain-source reading tasks over 20 source anchors from `docs/reference/human-infra-domain-source-specific-extraction-queue.json`, while keeping calibrated modeling blocked until exact claim, endpoint, population, uncertainty and transfer-boundary fields are extracted.
 - `audit_human_infra_domain_source_specific_extraction_register.py`: verifies the completed 81/81 domain-source extraction rows from `docs/reference/human-infra-domain-source-specific-extraction-register.json`, including source-role decisions, endpoint binding, blocked uses and index links.
 - `audit_human_infra_domain_source_card_promotion_queue.py`: verifies that the 81 completed domain-source field rows derive into fresh-review, Source Card, variable-card, endpoint-card, uncertainty-card, transfer-boundary-card and downgrade-check promotion tasks from `docs/reference/human-infra-domain-source-card-promotion-queue.json`, while keeping model admission blocked.
@@ -53,6 +54,8 @@ python3 tools/audit_human_infra_paper_claim_register.py
 python3 tools/audit_human_infra_domain_falsifier_coverage.py
 python3 tools/audit_human_infra_domain_claim_evidence_matrix.py
 python3 tools/audit_human_infra_domain_source_card_field_extraction.py
+python3 tools/audit_human_infra_c2_longtail_coverage_register.py
+python3 tools/audit_human_infra_c2_longtail_first_batch_promotion_queue.py
 python3 tools/audit_human_infra_domain_source_specific_extraction_queue.py
 python3 tools/audit_human_infra_domain_source_specific_extraction_register.py
 python3 tools/audit_human_infra_domain_source_card_promotion_queue.py
@@ -72,6 +75,8 @@ make paper-claim-audit
 make domain-falsifier-audit
 make domain-claim-matrix-audit
 make domain-field-extraction-audit
+make c2-longtail-coverage-audit
+make c2-longtail-first-batch-promotion-audit
 make domain-source-queue-audit
 make domain-source-extraction-audit
 make domain-source-promotion-audit

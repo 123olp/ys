@@ -126,6 +126,8 @@
         "docs/reference/human-infra-domain-source-card-field-extraction.json",
         "tools/audit_human_infra_c2_longtail_coverage_register.py",
         "docs/reference/human-infra-c2-longtail-coverage-register.json",
+        "docs/reference/human-infra-c2-longtail-first-batch-promotion-queue.json",
+        "tools/audit_human_infra_c2_longtail_first_batch_promotion_queue.py",
         "docs/reference/human-infra-domain-source-specific-extraction-queue.json",
         "docs/reference/human-infra-domain-source-specific-extraction-register.json",
         "docs/reference/human-infra-falsifier-source-card-backfill.json",
@@ -198,12 +200,14 @@
             "docs/reference/human-infra-reviewed-card-artifact-register.json",
             "tools/audit_human_infra_reviewed_card_artifact_register.py",
             "docs/reference/human-infra-c2-longtail-coverage-register.json",
-            "tools/audit_human_infra_c2_longtail_coverage_register.py"
+            "tools/audit_human_infra_c2_longtail_coverage_register.py",
+            "docs/reference/human-infra-c2-longtail-first-batch-promotion-queue.json",
+            "tools/audit_human_infra_c2_longtail_first_batch_promotion_queue.py"
           ],
           "missingEvidence": [
-            "Filled Claim-Evidence rows and reviewed Source Card artifacts for the 184 C2 long-tail domains listed in human-infra-c2-longtail-coverage-register.json."
+            "Filled Claim-Evidence rows and reviewed Source Card artifacts for the 184 C2 long-tail domains listed in human-infra-c2-longtail-coverage-register.json. The first 24 high-impact domains are queued in human-infra-c2-longtail-first-batch-promotion-queue.json but not yet promoted."
           ],
-          "nextAction": "Batch C2 long-tail domains from the coverage register into domain Claim-Evidence rows, source extraction, source-specific deep read, local review, independent fresh review and reviewed artifacts.",
+          "nextAction": "Execute the C2-LT-B1 queue into domain Claim-Evidence rows, source extraction, source-specific deep read, local review, independent fresh review and reviewed artifacts.",
           "blocks100Percent": true
         },
         {
@@ -232,12 +236,14 @@
             "docs/reference/human-infra-reviewed-card-artifact-register.json",
             "tools/audit_human_infra_reviewed_card_artifact_register.py",
             "docs/reference/human-infra-c2-longtail-coverage-register.json",
-            "tools/audit_human_infra_c2_longtail_coverage_register.py"
+            "tools/audit_human_infra_c2_longtail_coverage_register.py",
+            "docs/reference/human-infra-c2-longtail-first-batch-promotion-queue.json",
+            "tools/audit_human_infra_c2_longtail_first_batch_promotion_queue.py"
           ],
           "missingEvidence": [
-            "Variable, endpoint, uncertainty and transfer-boundary cards for the 184 C2 long-tail domains listed in human-infra-c2-longtail-coverage-register.json."
+            "Variable, endpoint, uncertainty and transfer-boundary cards for the 184 C2 long-tail domains listed in human-infra-c2-longtail-coverage-register.json. The first 24 high-impact domains now have claim and variable seeds but not reviewed cards."
           ],
-          "nextAction": "Promote C2 long-tail coverage rows into variable and endpoint contracts only after source-specific extraction and fresh review.",
+          "nextAction": "Use the C2-LT-B1 queue to perform source-specific extraction before promoting variable and endpoint contracts.",
           "blocks100Percent": true
         },
         {
@@ -291,12 +297,14 @@
             "docs/reference/human-infra-reviewed-card-artifact-register.json",
             "tools/audit_human_infra_reviewed_card_artifact_register.py",
             "docs/reference/human-infra-c2-longtail-coverage-register.json",
-            "tools/audit_human_infra_c2_longtail_coverage_register.py"
+            "tools/audit_human_infra_c2_longtail_coverage_register.py",
+            "docs/reference/human-infra-c2-longtail-first-batch-promotion-queue.json",
+            "tools/audit_human_infra_c2_longtail_first_batch_promotion_queue.py"
           ],
           "missingEvidence": [
-            "Downgrade-check artifacts and falsifier rows for the 184 C2 long-tail domains listed in human-infra-c2-longtail-coverage-register.json."
+            "Downgrade-check artifacts and falsifier rows for the 184 C2 long-tail domains listed in human-infra-c2-longtail-coverage-register.json. The C2-LT-B1 queue names candidate sources but has not yet produced downgrade-check artifacts."
           ],
-          "nextAction": "Extend downgrade-check and falsifier coverage from the reviewed artifact register into C2 long-tail domain claims.",
+          "nextAction": "Run C2-LT-B1 through reviewed artifact promotion before adding downgrade-check and falsifier coverage to the long-tail domains.",
           "blocks100Percent": true
         }
       ]
@@ -443,7 +451,7 @@
   "nextWorkOrder": [
     {
       "priority": 1,
-      "item": "Promote the first batch from human-infra-c2-longtail-coverage-register.json into Claim-Evidence rows, source extraction rows and source-specific deep-read tasks.",
+      "item": "Execute the 24-domain C2-LT-B1 queue from human-infra-c2-longtail-first-batch-promotion-queue.json into Claim-Evidence rows, source extraction rows and source-specific deep-read tasks.",
       "unblocks": [
         "RESEARCH-G3-c1-c2-source-cards",
         "RESEARCH-G4-variable-mechanism-contracts",
