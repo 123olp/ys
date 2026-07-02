@@ -1,0 +1,1104 @@
+{
+  "schemaVersion": "human-infra.c2-longtail-third-batch-source-extraction-register.v1",
+  "registerId": "human-infra-c2-longtail-third-batch-source-extraction-register-2026-07-02",
+  "status": "active-c2ltb3-source-extractions-pending-fresh-review",
+  "purpose": "Record source-context field extraction for all C2-LT-B3 neuro-sensory-cognitive domain-source tasks while preserving source-lineage mismatches, access limitations, transfer boundaries, downgrade triggers and model-admission blocks.",
+  "sourceOfTruth": {
+    "sourceExtractionQueue": "docs/reference/human-infra-c2-longtail-third-batch-source-extraction-queue.json",
+    "sourceCardSystem": "docs/reference/source-card-system.md",
+    "maturityGapRegister": "docs/reference/human-infra-maturity-gap-register.json",
+    "maturityRoadmap": "docs/reference/human-infra-maturity-roadmap.md"
+  },
+  "scope": {
+    "batchId": "C2-LT-B3",
+    "queueTaskCount": 24,
+    "extractedTaskCount": 24,
+    "remainingTaskCount": 0,
+    "coveredDomainCount": 12,
+    "selectedTaskIds": [
+      "C2LTB3-EXT-001",
+      "C2LTB3-EXT-002",
+      "C2LTB3-EXT-003",
+      "C2LTB3-EXT-004",
+      "C2LTB3-EXT-005",
+      "C2LTB3-EXT-006",
+      "C2LTB3-EXT-007",
+      "C2LTB3-EXT-008",
+      "C2LTB3-EXT-009",
+      "C2LTB3-EXT-010",
+      "C2LTB3-EXT-011",
+      "C2LTB3-EXT-012",
+      "C2LTB3-EXT-013",
+      "C2LTB3-EXT-014",
+      "C2LTB3-EXT-015",
+      "C2LTB3-EXT-016",
+      "C2LTB3-EXT-017",
+      "C2LTB3-EXT-018",
+      "C2LTB3-EXT-019",
+      "C2LTB3-EXT-020",
+      "C2LTB3-EXT-021",
+      "C2LTB3-EXT-022",
+      "C2LTB3-EXT-023",
+      "C2LTB3-EXT-024"
+    ],
+    "extractionDepth": "source-context-field-extraction-with-source-resolution-flags",
+    "currentLimitations": [
+      "This register completes local source-context field extraction only; it does not complete local review, independent fresh review or reviewed artifact promotion.",
+      "Several queued source lines contain lineage or title mismatches and must be resolved before artifact fill.",
+      "Publisher access limits and PDF/manual-review requirements are preserved as boundaries rather than converted into evidence claims.",
+      "No row authorizes calibrated prediction, individual advice, intervention ranking, clinical-validity claims or individual death-date output."
+    ]
+  },
+  "sourceAccessNotes": [
+    "PubMed records were checked through NCBI source metadata; mismatched PMID rows are explicitly blocked for domain-claim use until source-resolution.",
+    "Official NICE, CDC, WHO and NEI pages are used as source-context anchors only; they are not treated as calibrated model evidence.",
+    "The AAO-HNS publisher page for sudden hearing loss returned access-forbidden in automated checks, so the row remains route-context only pending manual access.",
+    "The JCIH 2019 Executive Summary PDF was accessible and its EHDI benchmark language was extracted into bounded source-context fields."
+  ],
+  "extractedRows": [
+    {
+      "taskId": "C2LTB3-EXT-001",
+      "domainId": "traumatic-brain-injury-neurotrauma-recovery",
+      "localDomainPath": "domains/c2-source-maintenance/traumatic-brain-injury-neurotrauma-recovery",
+      "sourceRefId": "C2LTB3-SRC-01-1",
+      "sourceTitle": "Guidelines for the Management of Severe Traumatic Brain Injury, Fourth Edition",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/27654000/",
+      "extractionStatus": "completed-c2ltb3-source-context-extraction",
+      "sourceAccessStatus": "pubmed-record-aligned",
+      "sourceRole": "severe-tbi-clinical-guideline-anchor",
+      "exactClaimUse": "Can support source-context framing that severe traumatic brain injury management is governed through evidence-based recommendations around acute neurocritical care variables rather than a single longevity intervention.",
+      "endpointDefinition": "Severe TBI care endpoints include mortality, intracranial pressure risk, cerebral perfusion status, neurologic outcome and transition into rehabilitation or long-term care.",
+      "populationOrSetting": "Patients with severe traumatic brain injury in acute clinical and neurocritical care settings.",
+      "effectOrMechanismSignal": "Clinical management acts through secondary injury prevention, intracranial pressure/perfusion control and structured acute-care decisions that affect later neurologic function.",
+      "uncertaintyOrBias": "Guideline recommendations only apply where the evidence base supports them and do not create individualized prognostic calibration.",
+      "transferBoundary": "Do not transfer this severe TBI guideline to mild pediatric concussion, chronic neurodegeneration, personal prognosis or generic cognitive enhancement claims.",
+      "downgradeTriggers": [
+        "source is used for mild TBI or concussion claims",
+        "source is used to rank interventions without guideline-context review",
+        "source is treated as individual neurologic prognosis evidence"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 neuro-sensory-cognitive source-context extraction register",
+        "variables": [
+          "injury-severity",
+          "intracranial-pressure-risk",
+          "cerebral-perfusion-status",
+          "neurocognitive-outcome",
+          "rehabilitation-transition"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, then fresh review, before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, resolve any lineage/access mismatch, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB3-EXT-002",
+      "domainId": "traumatic-brain-injury-neurotrauma-recovery",
+      "localDomainPath": "domains/c2-source-maintenance/traumatic-brain-injury-neurotrauma-recovery",
+      "sourceRefId": "C2LTB3-SRC-01-2",
+      "sourceTitle": "CDC Traumatic Brain Injury Clinical Guidance",
+      "sourceUrl": "https://www.cdc.gov/traumatic-brain-injury/hcp/clinical-guidance/index.html",
+      "extractionStatus": "completed-c2ltb3-source-context-extraction",
+      "sourceAccessStatus": "official-cdc-page-aligned",
+      "sourceRole": "pediatric-mild-tbi-clinical-guidance-boundary-source",
+      "exactClaimUse": "Can support pediatric mild TBI clinical guidance context, especially evaluation, warning signs and management boundaries for concussion-like injury.",
+      "endpointDefinition": "Observable endpoints include pediatric symptom persistence, return-to-activity readiness, red-flag escalation and clinical follow-up needs.",
+      "populationOrSetting": "Children and adolescents with mild traumatic brain injury in outpatient, emergency or public-health guidance settings.",
+      "effectOrMechanismSignal": "Guidance modifies continuity through early recognition, safe activity progression and escalation when symptoms indicate higher risk.",
+      "uncertaintyOrBias": "This source is pediatric mild TBI guidance, not severe TBI neurocritical-care evidence.",
+      "transferBoundary": "Do not use this page to support adult severe TBI, intracranial pressure management, ICU treatment or calibrated recovery predictions.",
+      "downgradeTriggers": [
+        "source is used for severe TBI physiology",
+        "source is used outside pediatric mild TBI scope",
+        "source is used as outcome-calibration evidence"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 neuro-sensory-cognitive source-context extraction register",
+        "variables": [
+          "injury-severity",
+          "intracranial-pressure-risk",
+          "cerebral-perfusion-status",
+          "neurocognitive-outcome",
+          "rehabilitation-transition"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, then fresh review, before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, resolve any lineage/access mismatch, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB3-EXT-003",
+      "domainId": "epilepsy-seizure-network-stability",
+      "localDomainPath": "domains/c2-source-maintenance/epilepsy-seizure-network-stability",
+      "sourceRefId": "C2LTB3-SRC-02-1",
+      "sourceTitle": "NICE NG217 Epilepsies in children, young people and adults",
+      "sourceUrl": "https://www.nice.org.uk/guidance/ng217",
+      "extractionStatus": "completed-c2ltb3-source-context-extraction",
+      "sourceAccessStatus": "official-nice-guideline-page-aligned",
+      "sourceRole": "epilepsy-clinical-guideline-anchor",
+      "exactClaimUse": "Can support that epilepsy continuity depends on structured diagnosis, seizure classification, treatment planning, emergency/status epilepticus response and SUDEP risk reduction.",
+      "endpointDefinition": "Endpoints include seizure frequency, seizure type, antiseizure treatment continuity, status epilepticus escalation, injury risk and comorbidity burden.",
+      "populationOrSetting": "Children, young people and adults with epilepsies across diagnosis, treatment and ongoing care settings.",
+      "effectOrMechanismSignal": "Care affects continuity by stabilizing seizure networks, reducing acute injury windows and improving treatment and safety planning.",
+      "uncertaintyOrBias": "Guideline scope is clinical management; it does not quantify individual lifetime seizure trajectories.",
+      "transferBoundary": "Do not use as proof that a given therapy improves life expectancy or cognitive outcome without separate endpoint evidence.",
+      "downgradeTriggers": [
+        "source is used for individual medication choice",
+        "source is used to infer mortality benefit without endpoint evidence",
+        "source is transferred outside epilepsy diagnosis and management"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 neuro-sensory-cognitive source-context extraction register",
+        "variables": [
+          "seizure-frequency",
+          "seizure-type",
+          "medication-continuity",
+          "injury-risk",
+          "cognitive-functional-burden"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, then fresh review, before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, resolve any lineage/access mismatch, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB3-EXT-004",
+      "domainId": "epilepsy-seizure-network-stability",
+      "localDomainPath": "domains/c2-source-maintenance/epilepsy-seizure-network-stability",
+      "sourceRefId": "C2LTB3-SRC-02-2",
+      "sourceTitle": "WHO Epilepsy fact sheet",
+      "sourceUrl": "https://www.who.int/news-room/fact-sheets/detail/epilepsy",
+      "extractionStatus": "completed-c2ltb3-source-context-extraction",
+      "sourceAccessStatus": "official-who-fact-sheet-aligned",
+      "sourceRole": "epilepsy-public-health-burden-context-source",
+      "exactClaimUse": "Can support qualitative public-health context that epilepsy is a major neurologic condition affecting function, safety and social participation.",
+      "endpointDefinition": "Endpoints include seizure-related disability, treatment access, stigma, injury exposure and quality-of-life burden at population level.",
+      "populationOrSetting": "Population-level epilepsy burden and health-system access context.",
+      "effectOrMechanismSignal": "System-level access to diagnosis, treatment and social support changes continuity by reducing preventable seizure burden and exclusion.",
+      "uncertaintyOrBias": "Fact-sheet burden context is not a clinical trial, guideline or individual prediction model.",
+      "transferBoundary": "Do not use WHO burden text as calibrated hazard, treatment-effect or individual prognosis evidence.",
+      "downgradeTriggers": [
+        "source is used as intervention efficacy evidence",
+        "source is used for individual prognosis",
+        "source is used without preserving public-health context"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 neuro-sensory-cognitive source-context extraction register",
+        "variables": [
+          "seizure-frequency",
+          "seizure-type",
+          "medication-continuity",
+          "injury-risk",
+          "cognitive-functional-burden"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, then fresh review, before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, resolve any lineage/access mismatch, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB3-EXT-005",
+      "domainId": "intensive-care-organ-support-delirium-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/intensive-care-organ-support-delirium-continuity",
+      "sourceRefId": "C2LTB3-SRC-03-1",
+      "sourceTitle": "PADIS Clinical Practice Guidelines for adult ICU patients",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/30113379/",
+      "extractionStatus": "completed-c2ltb3-source-context-extraction",
+      "sourceAccessStatus": "pubmed-record-aligned",
+      "sourceRole": "adult-icu-padis-guideline-anchor",
+      "exactClaimUse": "Can support adult ICU continuity framing around pain, agitation/sedation, delirium, immobility and sleep disruption as linked care domains.",
+      "endpointDefinition": "Endpoints include delirium occurrence, sedation depth/exposure, pain control, mobility status, sleep disruption and ICU functional recovery burden.",
+      "populationOrSetting": "Adult ICU patients under PADIS clinical practice guideline scope.",
+      "effectOrMechanismSignal": "ICU care affects continuity through modifiable acute exposures that can change delirium, immobility and recovery trajectories.",
+      "uncertaintyOrBias": "Guideline evidence does not supply individual ICU cognitive-risk calibration or all-cause survival effects.",
+      "transferBoundary": "Do not transfer PADIS recommendations to non-ICU cognitive enhancement or personal long-term prognosis without separate data.",
+      "downgradeTriggers": [
+        "source is used outside adult ICU PADIS scope",
+        "source is used as calibrated delirium prediction",
+        "source is used to rank ICU protocols without evidence grading"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 neuro-sensory-cognitive source-context extraction register",
+        "variables": [
+          "delirium-status",
+          "sedation-depth",
+          "mechanical-ventilation-duration",
+          "sleep-disruption",
+          "post-icu-cognitive-function"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, then fresh review, before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, resolve any lineage/access mismatch, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB3-EXT-006",
+      "domainId": "intensive-care-organ-support-delirium-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/intensive-care-organ-support-delirium-continuity",
+      "sourceRefId": "C2LTB3-SRC-03-2",
+      "sourceTitle": "NICE CG103 Delirium: prevention, diagnosis and management",
+      "sourceUrl": "https://www.nice.org.uk/guidance/cg103",
+      "extractionStatus": "completed-c2ltb3-source-context-extraction",
+      "sourceAccessStatus": "official-nice-guideline-page-aligned",
+      "sourceRole": "delirium-prevention-diagnosis-management-guideline-anchor",
+      "exactClaimUse": "Can support that delirium prevention, diagnosis and management in adults is a clinical continuity issue in hospitals and long-term care.",
+      "endpointDefinition": "Endpoints include delirium risk identification, delirium occurrence, diagnosis timing, complication burden and care-setting continuity.",
+      "populationOrSetting": "Adults aged 18 and older in hospital or long-term care settings.",
+      "effectOrMechanismSignal": "Structured delirium prevention and recognition may reduce complications and care disruption by addressing acute cognitive failure pathways.",
+      "uncertaintyOrBias": "Guideline framing does not quantify individual delirium risk or long-term cognitive decline from a specific intervention.",
+      "transferBoundary": "Do not use as evidence for non-clinical attention optimization, dementia treatment or individual mortality prediction.",
+      "downgradeTriggers": [
+        "source is used outside adult hospital/long-term-care delirium scope",
+        "source is used as dementia evidence",
+        "source is used for individual risk calibration"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 neuro-sensory-cognitive source-context extraction register",
+        "variables": [
+          "delirium-status",
+          "sedation-depth",
+          "mechanical-ventilation-duration",
+          "sleep-disruption",
+          "post-icu-cognitive-function"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, then fresh review, before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, resolve any lineage/access mismatch, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB3-EXT-007",
+      "domainId": "post-stroke-dysphagia-screening-recovery-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/post-stroke-dysphagia-screening-recovery-continuity",
+      "sourceRefId": "C2LTB3-SRC-04-1",
+      "sourceTitle": "ESO and ESSD guideline for diagnosis and treatment of post-stroke dysphagia",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/28390560/",
+      "extractionStatus": "completed-c2ltb3-source-context-extraction",
+      "sourceAccessStatus": "pubmed-title-mismatch-source-resolution-required",
+      "sourceRole": "invalid-for-queued-post-stroke-dysphagia-claim",
+      "exactClaimUse": "The queued PMID resolves to a reproductive-health screening article, so it cannot support post-stroke dysphagia diagnosis or treatment claims. A likely correction candidate is PMID 34746431.",
+      "endpointDefinition": "No valid post-stroke dysphagia endpoint can be extracted from the queued source URL.",
+      "populationOrSetting": "Queued source is not a stroke or dysphagia population source; source-resolution is required before any domain use.",
+      "effectOrMechanismSignal": "No valid dysphagia mechanism or effect signal is supported by this mismatched source.",
+      "uncertaintyOrBias": "Lineage error: source title and actual PubMed record do not align with the domain claim seed.",
+      "transferBoundary": "Must not be used for swallowing safety, aspiration, nutrition, stroke rehabilitation or mortality claims.",
+      "downgradeTriggers": [
+        "queued PMID remains unresolved",
+        "source is used despite title mismatch",
+        "corrected post-stroke dysphagia source is not independently reviewed"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 neuro-sensory-cognitive source-context extraction register",
+        "variables": [
+          "swallow-screening-status",
+          "aspiration-risk",
+          "pneumonia-risk",
+          "nutrition-route",
+          "functional-recovery"
+        ],
+        "admissibleUse": "source-lineage correction only; blocked for artifact promotion until corrected source is reviewed"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, resolve any lineage/access mismatch, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB3-EXT-008",
+      "domainId": "post-stroke-dysphagia-screening-recovery-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/post-stroke-dysphagia-screening-recovery-continuity",
+      "sourceRefId": "C2LTB3-SRC-04-2",
+      "sourceTitle": "NICE NG236 Stroke rehabilitation in adults",
+      "sourceUrl": "https://www.nice.org.uk/guidance/ng236",
+      "extractionStatus": "completed-c2ltb3-source-context-extraction",
+      "sourceAccessStatus": "official-nice-guideline-page-aligned",
+      "sourceRole": "stroke-rehabilitation-guideline-context-source",
+      "exactClaimUse": "Can support stroke rehabilitation context for adults, including assessment and therapy across common post-stroke problems; use as rehabilitation-route context rather than a dedicated dysphagia guideline.",
+      "endpointDefinition": "Endpoints include stroke rehabilitation needs, functional recovery, therapy access, feeding/swallowing-related care route where covered, and community transition.",
+      "populationOrSetting": "Adults and young people over 16 receiving rehabilitation after stroke in hospital or community contexts.",
+      "effectOrMechanismSignal": "Structured rehabilitation affects continuity by coordinating assessment, therapy and recovery transitions after stroke.",
+      "uncertaintyOrBias": "The guideline is broader stroke rehabilitation guidance and should not replace a specific post-stroke dysphagia diagnostic/treatment source.",
+      "transferBoundary": "Do not use as the sole source for aspiration pneumonia risk, swallow screening protocol efficacy or dysphagia-specific treatment effects.",
+      "downgradeTriggers": [
+        "source is used as dedicated dysphagia guideline",
+        "source is used for quantified aspiration risk",
+        "source is used without stroke rehabilitation context"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 neuro-sensory-cognitive source-context extraction register",
+        "variables": [
+          "swallow-screening-status",
+          "aspiration-risk",
+          "pneumonia-risk",
+          "nutrition-route",
+          "functional-recovery"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, then fresh review, before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, resolve any lineage/access mismatch, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB3-EXT-009",
+      "domainId": "myasthenia-gravis-neuromuscular-junction-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/myasthenia-gravis-neuromuscular-junction-continuity",
+      "sourceRefId": "C2LTB3-SRC-05-1",
+      "sourceTitle": "International Consensus Guidance for Management of Myasthenia Gravis: 2020 Update",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/33144515/",
+      "extractionStatus": "completed-c2ltb3-source-context-extraction",
+      "sourceAccessStatus": "pubmed-record-aligned",
+      "sourceRole": "myasthenia-gravis-consensus-update-anchor",
+      "exactClaimUse": "Can support updated consensus guidance context for myasthenia gravis management, including treatment classes and special clinical situations.",
+      "endpointDefinition": "Endpoints include disease severity, exacerbation/crisis risk, treatment response, ocular/generalized phenotype and therapy continuity.",
+      "populationOrSetting": "Patients with myasthenia gravis under international consensus management guidance.",
+      "effectOrMechanismSignal": "Management affects continuity through neuromuscular junction stability, exacerbation prevention and treatment escalation/de-escalation decisions.",
+      "uncertaintyOrBias": "Consensus update is not a calibrated individual response model and depends on clinical subtype and prior treatment context.",
+      "transferBoundary": "Do not use as personal treatment recommendation, generalized neuromuscular enhancement evidence or individual prognosis.",
+      "downgradeTriggers": [
+        "source is used for individual treatment choice",
+        "source ignores MG subtype/context",
+        "source is used for non-MG neuromuscular claims"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 neuro-sensory-cognitive source-context extraction register",
+        "variables": [
+          "muscle-weakness-severity",
+          "bulbar-symptom-burden",
+          "respiratory-crisis-risk",
+          "immunotherapy-status",
+          "functional-fluctuation"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, then fresh review, before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, resolve any lineage/access mismatch, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB3-EXT-010",
+      "domainId": "myasthenia-gravis-neuromuscular-junction-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/myasthenia-gravis-neuromuscular-junction-continuity",
+      "sourceRefId": "C2LTB3-SRC-05-2",
+      "sourceTitle": "International consensus guidance for management of myasthenia gravis: Executive summary",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/26494222/",
+      "extractionStatus": "completed-c2ltb3-source-context-extraction",
+      "sourceAccessStatus": "pubmed-title-mismatch-source-resolution-required",
+      "sourceRole": "invalid-for-queued-myasthenia-gravis-executive-summary-claim",
+      "exactClaimUse": "The queued PMID resolves to a reply about venous symptoms, so it cannot support the myasthenia gravis executive summary. A likely correction candidate is PMID 27358333.",
+      "endpointDefinition": "No valid MG endpoint can be extracted from the queued source URL.",
+      "populationOrSetting": "Queued source is not a myasthenia gravis consensus source; source-resolution is required.",
+      "effectOrMechanismSignal": "No valid MG mechanism, recommendation or effect signal is supported by this mismatched source.",
+      "uncertaintyOrBias": "Lineage error: source title and actual PubMed record do not align.",
+      "transferBoundary": "Must not be used for MG treatment, crisis, subtype or prognosis claims.",
+      "downgradeTriggers": [
+        "queued PMID remains unresolved",
+        "source is used despite title mismatch",
+        "corrected MG executive-summary source is not fresh reviewed"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 neuro-sensory-cognitive source-context extraction register",
+        "variables": [
+          "muscle-weakness-severity",
+          "bulbar-symptom-burden",
+          "respiratory-crisis-risk",
+          "immunotherapy-status",
+          "functional-fluctuation"
+        ],
+        "admissibleUse": "source-lineage correction only; blocked for artifact promotion until corrected source is reviewed"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, resolve any lineage/access mismatch, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB3-EXT-011",
+      "domainId": "spinal-muscular-atrophy-motor-neuron-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/spinal-muscular-atrophy-motor-neuron-continuity",
+      "sourceRefId": "C2LTB3-SRC-06-1",
+      "sourceTitle": "Diagnosis and management of spinal muscular atrophy: Part 1",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/29305137/",
+      "extractionStatus": "completed-c2ltb3-source-context-extraction",
+      "sourceAccessStatus": "pubmed-record-title-part-mismatch",
+      "sourceRole": "sma-part2-source-misrouted-as-part1",
+      "exactClaimUse": "The queued PMID is relevant to SMA but resolves to the Part 2 consensus document covering pulmonary and acute care, medications, supplements, other organ systems and ethics, not Part 1 diagnosis/rehabilitation/nutrition.",
+      "endpointDefinition": "Usable endpoints after source-resolution include pulmonary support, acute-care vulnerability, medication/supplement management and multisystem SMA continuity.",
+      "populationOrSetting": "Individuals with spinal muscular atrophy under consensus care guidance, specifically Part 2 scope.",
+      "effectOrMechanismSignal": "SMA continuity is affected by respiratory/acute-care support and multisystem management, but this row cannot support Part 1-only diagnosis or rehabilitation claims.",
+      "uncertaintyOrBias": "Title/part mismatch requires local correction before artifact promotion, even though the source is domain-relevant.",
+      "transferBoundary": "Do not use this row as SMA Part 1 evidence or as a complete SMA standard-of-care source.",
+      "downgradeTriggers": [
+        "row is promoted under the wrong SMA part title",
+        "source is used for diagnosis/rehabilitation/nutrition Part 1 claims",
+        "source-resolution is not completed before fresh review"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 neuro-sensory-cognitive source-context extraction register",
+        "variables": [
+          "motor-function-score",
+          "respiratory-support-need",
+          "feeding-nutrition-status",
+          "disease-modifying-therapy-access",
+          "developmental-milestone"
+        ],
+        "admissibleUse": "bounded source-context only after source-resolution or manual access review; blocked for artifact promotion in current form"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, resolve any lineage/access mismatch, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB3-EXT-012",
+      "domainId": "spinal-muscular-atrophy-motor-neuron-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/spinal-muscular-atrophy-motor-neuron-continuity",
+      "sourceRefId": "C2LTB3-SRC-06-2",
+      "sourceTitle": "Diagnosis and management of spinal muscular atrophy: Part 2",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/29305138/",
+      "extractionStatus": "completed-c2ltb3-source-context-extraction",
+      "sourceAccessStatus": "pubmed-title-mismatch-source-resolution-required",
+      "sourceRole": "invalid-for-queued-sma-part2-claim",
+      "exactClaimUse": "The queued PMID resolves to a MuSK myasthenia gravis and pregnancy article, so it cannot support SMA Part 2. The apparent correction candidate for SMA Part 2 is PMID 29305137.",
+      "endpointDefinition": "No valid SMA endpoint can be extracted from the queued source URL.",
+      "populationOrSetting": "Queued source is not an SMA consensus-care source; source-resolution is required.",
+      "effectOrMechanismSignal": "No valid SMA motor neuron, respiratory, nutrition or acute-care signal is supported by this mismatched source.",
+      "uncertaintyOrBias": "Lineage error: source title and actual PubMed record do not align with the SMA domain.",
+      "transferBoundary": "Must not be used for SMA diagnosis, care standards, respiratory management or therapy-continuity claims.",
+      "downgradeTriggers": [
+        "queued PMID remains unresolved",
+        "source is used despite title mismatch",
+        "corrected SMA source is not independently reviewed"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 neuro-sensory-cognitive source-context extraction register",
+        "variables": [
+          "motor-function-score",
+          "respiratory-support-need",
+          "feeding-nutrition-status",
+          "disease-modifying-therapy-access",
+          "developmental-milestone"
+        ],
+        "admissibleUse": "source-lineage correction only; blocked for artifact promotion until corrected source is reviewed"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, resolve any lineage/access mismatch, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB3-EXT-013",
+      "domainId": "age-related-macular-degeneration-central-vision-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/age-related-macular-degeneration-central-vision-continuity",
+      "sourceRefId": "C2LTB3-SRC-07-1",
+      "sourceTitle": "NICE NG82 Age-related macular degeneration",
+      "sourceUrl": "https://www.nice.org.uk/guidance/ng82",
+      "extractionStatus": "completed-c2ltb3-source-context-extraction",
+      "sourceAccessStatus": "official-nice-guideline-page-aligned",
+      "sourceRole": "amd-clinical-guideline-anchor",
+      "exactClaimUse": "Can support adult age-related macular degeneration diagnosis, classification, referral, treatment and monitoring as central-vision continuity infrastructure.",
+      "endpointDefinition": "Endpoints include AMD type/stage, central vision impairment, referral urgency, treatment/monitoring status and sight-loss prevention pathway.",
+      "populationOrSetting": "Adults with suspected or confirmed age-related macular degeneration.",
+      "effectOrMechanismSignal": "Timely diagnosis, referral and treatment can affect central vision preservation and functional independence.",
+      "uncertaintyOrBias": "Guideline scope does not provide individualized visual prognosis or prove benefit outside covered AMD care pathways.",
+      "transferBoundary": "Do not use for non-AMD vision loss, general eye-health advice or individual treatment ranking.",
+      "downgradeTriggers": [
+        "source is used outside AMD scope",
+        "source is used for individual prognosis",
+        "source ignores AMD subtype and treatment context"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 neuro-sensory-cognitive source-context extraction register",
+        "variables": [
+          "central-visual-acuity",
+          "amd-subtype",
+          "anti-vegf-treatment-status",
+          "low-vision-support",
+          "functional-independence"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, then fresh review, before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, resolve any lineage/access mismatch, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB3-EXT-014",
+      "domainId": "age-related-macular-degeneration-central-vision-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/age-related-macular-degeneration-central-vision-continuity",
+      "sourceRefId": "C2LTB3-SRC-07-2",
+      "sourceTitle": "National Eye Institute Age-Related Macular Degeneration",
+      "sourceUrl": "https://www.nei.nih.gov/learn-about-eye-health/eye-conditions-and-diseases/age-related-macular-degeneration",
+      "extractionStatus": "completed-c2ltb3-source-context-extraction",
+      "sourceAccessStatus": "official-nei-condition-page-aligned",
+      "sourceRole": "amd-public-condition-context-source",
+      "exactClaimUse": "Can support condition-context framing that AMD affects central vision through macular disease and can impair reading, recognition and daily function.",
+      "endpointDefinition": "Endpoints include central vision symptoms, macular disease stage, diagnostic evaluation and treatment/monitoring context.",
+      "populationOrSetting": "Public-facing AMD education context for people at risk of or affected by AMD.",
+      "effectOrMechanismSignal": "Macular degeneration affects visual input quality, which constrains task execution and independence.",
+      "uncertaintyOrBias": "Public education page is not a trial, guideline grading document or calibrated prognosis model.",
+      "transferBoundary": "Do not use as intervention-effect evidence or individual visual outcome prediction.",
+      "downgradeTriggers": [
+        "source is used as clinical guideline evidence",
+        "source is used for treatment effect calibration",
+        "source is detached from AMD condition context"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 neuro-sensory-cognitive source-context extraction register",
+        "variables": [
+          "central-visual-acuity",
+          "amd-subtype",
+          "anti-vegf-treatment-status",
+          "low-vision-support",
+          "functional-independence"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, then fresh review, before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, resolve any lineage/access mismatch, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB3-EXT-015",
+      "domainId": "cataract-vision-restoration-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/cataract-vision-restoration-continuity",
+      "sourceRefId": "C2LTB3-SRC-08-1",
+      "sourceTitle": "NICE NG77 Cataracts in adults: management",
+      "sourceUrl": "https://www.nice.org.uk/guidance/ng77",
+      "extractionStatus": "completed-c2ltb3-source-context-extraction",
+      "sourceAccessStatus": "official-nice-guideline-page-aligned",
+      "sourceRole": "cataract-management-guideline-anchor",
+      "exactClaimUse": "Can support adult cataract management as a vision restoration and surgical-continuity domain covering referral, surgery and postoperative care.",
+      "endpointDefinition": "Endpoints include visual impairment from cataract, referral/surgery pathway, complication prevention and post-surgical functional recovery.",
+      "populationOrSetting": "Adults aged 18 and older with cataracts under NICE management guidance.",
+      "effectOrMechanismSignal": "Cataract surgery and perioperative care can restore visual input and reduce task-limiting sensory friction when indicated.",
+      "uncertaintyOrBias": "Guideline context does not quantify personal surgical risk-benefit or guarantee visual recovery.",
+      "transferBoundary": "Do not use for non-cataract blindness, individual surgical recommendation or generic longevity claims.",
+      "downgradeTriggers": [
+        "source is used outside adult cataract management",
+        "source is used for individual surgical advice",
+        "source is used for non-cataract vision restoration claims"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 neuro-sensory-cognitive source-context extraction register",
+        "variables": [
+          "visual-acuity",
+          "surgical-eligibility",
+          "functional-vision-limitation",
+          "fall-risk",
+          "postoperative-visual-outcome"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, then fresh review, before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, resolve any lineage/access mismatch, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB3-EXT-016",
+      "domainId": "cataract-vision-restoration-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/cataract-vision-restoration-continuity",
+      "sourceRefId": "C2LTB3-SRC-08-2",
+      "sourceTitle": "National Eye Institute Cataracts",
+      "sourceUrl": "https://www.nei.nih.gov/learn-about-eye-health/eye-conditions-and-diseases/cataracts",
+      "extractionStatus": "completed-c2ltb3-source-context-extraction",
+      "sourceAccessStatus": "official-nei-condition-page-aligned",
+      "sourceRole": "cataract-public-condition-context-source",
+      "exactClaimUse": "Can support public condition context that cataracts cloud the lens and can degrade vision, with diagnosis and treatment routes available.",
+      "endpointDefinition": "Endpoints include lens opacity, visual symptoms, diagnosis and treatment/surgery context.",
+      "populationOrSetting": "Public-facing cataract education context.",
+      "effectOrMechanismSignal": "Lens clouding reduces visual signal quality and can impair work, mobility and independent task execution.",
+      "uncertaintyOrBias": "Public condition page is not calibrated evidence for surgical outcomes or individual treatment need.",
+      "transferBoundary": "Do not use as clinical trial evidence, surgical recommendation or personal outcome prediction.",
+      "downgradeTriggers": [
+        "source is used as treatment-effect calibration",
+        "source is used for personal surgical advice",
+        "source is generalized beyond cataract condition context"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 neuro-sensory-cognitive source-context extraction register",
+        "variables": [
+          "visual-acuity",
+          "surgical-eligibility",
+          "functional-vision-limitation",
+          "fall-risk",
+          "postoperative-visual-outcome"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, then fresh review, before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, resolve any lineage/access mismatch, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB3-EXT-017",
+      "domainId": "age-related-hearing-loss-hearing-aid-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/age-related-hearing-loss-hearing-aid-continuity",
+      "sourceRefId": "C2LTB3-SRC-09-1",
+      "sourceTitle": "NICE NG98 Hearing loss in adults: assessment and management",
+      "sourceUrl": "https://www.nice.org.uk/guidance/ng98",
+      "extractionStatus": "completed-c2ltb3-source-context-extraction",
+      "sourceAccessStatus": "official-nice-guideline-page-aligned",
+      "sourceRole": "adult-hearing-loss-assessment-management-guideline-anchor",
+      "exactClaimUse": "Can support adult hearing-loss continuity through assessment, referral, audiology, management and communication-function pathways.",
+      "endpointDefinition": "Endpoints include hearing difficulty, audiology assessment, referral route, hearing-aid/management pathway and quality-of-life burden.",
+      "populationOrSetting": "Adults aged over 18 with suspected or confirmed hearing loss.",
+      "effectOrMechanismSignal": "Hearing assessment and management can preserve communication access, safety awareness and participation in social/task environments.",
+      "uncertaintyOrBias": "Guideline is not individualized hearing-aid efficacy calibration and excludes some pediatric/newborn contexts.",
+      "transferBoundary": "Do not use for newborn screening, sudden sensorineural hearing loss emergency pathways or individual device recommendation.",
+      "downgradeTriggers": [
+        "source is used for pediatric/newborn hearing screening",
+        "source is used for sudden hearing loss urgency",
+        "source is used as personal device prescription"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 neuro-sensory-cognitive source-context extraction register",
+        "variables": [
+          "hearing-threshold",
+          "speech-in-noise-difficulty",
+          "hearing-aid-access",
+          "communication-participation",
+          "listening-effort"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, then fresh review, before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, resolve any lineage/access mismatch, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB3-EXT-018",
+      "domainId": "age-related-hearing-loss-hearing-aid-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/age-related-hearing-loss-hearing-aid-continuity",
+      "sourceRefId": "C2LTB3-SRC-09-2",
+      "sourceTitle": "WHO Deafness and hearing loss fact sheet",
+      "sourceUrl": "https://www.who.int/news-room/fact-sheets/detail/deafness-and-hearing-loss",
+      "extractionStatus": "completed-c2ltb3-source-context-extraction",
+      "sourceAccessStatus": "official-who-fact-sheet-aligned",
+      "sourceRole": "hearing-loss-public-health-burden-context-source",
+      "exactClaimUse": "Can support qualitative population-level context that hearing loss affects communication, participation and access to education/work/social life.",
+      "endpointDefinition": "Endpoints include hearing loss burden, communication access, assistive-care access and population-level ear/hearing care needs.",
+      "populationOrSetting": "Global public-health context for deafness and hearing loss.",
+      "effectOrMechanismSignal": "Access to prevention, diagnosis, rehabilitation and assistive technologies changes communication continuity and participation.",
+      "uncertaintyOrBias": "Fact sheet is burden/context evidence, not a clinical guideline or individual prognosis model.",
+      "transferBoundary": "Do not use as proof of a specific hearing intervention effect or as individual hearing outcome prediction.",
+      "downgradeTriggers": [
+        "source is used for device efficacy",
+        "source is used for individual prognosis",
+        "source is used without preserving public-health context"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 neuro-sensory-cognitive source-context extraction register",
+        "variables": [
+          "hearing-threshold",
+          "speech-in-noise-difficulty",
+          "hearing-aid-access",
+          "communication-participation",
+          "listening-effort"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, then fresh review, before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, resolve any lineage/access mismatch, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB3-EXT-019",
+      "domainId": "sudden-hearing-loss-urgent-referral-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/sudden-hearing-loss-urgent-referral-continuity",
+      "sourceRefId": "C2LTB3-SRC-10-1",
+      "sourceTitle": "Clinical Practice Guideline: Sudden Hearing Loss (Update)",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/31369359/",
+      "extractionStatus": "completed-c2ltb3-source-context-extraction",
+      "sourceAccessStatus": "pubmed-record-aligned",
+      "sourceRole": "adult-sudden-hearing-loss-clinical-guideline-anchor",
+      "exactClaimUse": "Can support that sudden hearing loss requires timely differentiation of sensorineural and conductive causes, urgent management decisions and follow-up.",
+      "endpointDefinition": "Endpoints include sudden hearing-loss onset, sensorineural versus conductive classification, referral/diagnostic timing, treatment route and hearing recovery follow-up.",
+      "populationOrSetting": "Adults with sudden hearing loss under AAO-HNS clinical practice guideline scope.",
+      "effectOrMechanismSignal": "Prompt recognition and appropriate management can affect hearing recovery opportunity and prevent missed urgent pathology.",
+      "uncertaintyOrBias": "Guideline scope is adult sudden hearing loss and does not supply personal recovery probability.",
+      "transferBoundary": "Do not use for chronic age-related hearing loss, newborn screening or individual treatment ranking.",
+      "downgradeTriggers": [
+        "source is used for chronic hearing loss",
+        "source is used for pediatric/newborn hearing screening",
+        "source is used for personal recovery prediction"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 neuro-sensory-cognitive source-context extraction register",
+        "variables": [
+          "time-to-audiometry",
+          "hearing-loss-severity",
+          "steroid-treatment-window",
+          "vestibular-symptoms",
+          "hearing-recovery-outcome"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, then fresh review, before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, resolve any lineage/access mismatch, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB3-EXT-020",
+      "domainId": "sudden-hearing-loss-urgent-referral-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/sudden-hearing-loss-urgent-referral-continuity",
+      "sourceRefId": "C2LTB3-SRC-10-2",
+      "sourceTitle": "AAO-HNS Clinical Practice Guideline: Sudden Hearing Loss Update",
+      "sourceUrl": "https://www.entnet.org/resource/clinical-practice-guideline-sudden-hearing-loss-update/",
+      "extractionStatus": "completed-c2ltb3-source-context-extraction",
+      "sourceAccessStatus": "publisher-page-forbidden-pubmed-guideline-companion-available",
+      "sourceRole": "blocked-publisher-guideline-route-page",
+      "exactClaimUse": "The publisher landing page returned access-forbidden in automated checks, so this row can only mark the route to the AAO-HNS sudden hearing loss guideline and should rely on the PubMed companion row until manual access succeeds.",
+      "endpointDefinition": "No independent endpoint extraction from the blocked page; use EXT-019 for sudden hearing loss guideline context.",
+      "populationOrSetting": "Publisher page for adult sudden hearing loss guideline route, pending manual access.",
+      "effectOrMechanismSignal": "No independent mechanism signal may be extracted from the blocked page in this pass.",
+      "uncertaintyOrBias": "Automated access failure prevents source-context confirmation from the publisher page.",
+      "transferBoundary": "Do not treat this blocked page as independent evidence beyond the companion guideline record.",
+      "downgradeTriggers": [
+        "manual page access remains blocked",
+        "row is counted as independent evidence from EXT-019",
+        "publisher page claims are inferred without source text"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 neuro-sensory-cognitive source-context extraction register",
+        "variables": [
+          "time-to-audiometry",
+          "hearing-loss-severity",
+          "steroid-treatment-window",
+          "vestibular-symptoms",
+          "hearing-recovery-outcome"
+        ],
+        "admissibleUse": "bounded source-context only after source-resolution or manual access review; blocked for artifact promotion in current form"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, resolve any lineage/access mismatch, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB3-EXT-021",
+      "domainId": "vestibular-rehabilitation-balance-compensation-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/vestibular-rehabilitation-balance-compensation-continuity",
+      "sourceRefId": "C2LTB3-SRC-11-1",
+      "sourceTitle": "Vestibular Rehabilitation for Peripheral Vestibular Hypofunction: Updated Clinical Practice Guideline",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/34864777/",
+      "extractionStatus": "completed-c2ltb3-source-context-extraction",
+      "sourceAccessStatus": "pubmed-record-aligned",
+      "sourceRole": "updated-vestibular-rehabilitation-guideline-anchor",
+      "exactClaimUse": "Can support that vestibular physical therapy is guideline-supported for peripheral vestibular hypofunction and targets symptoms, gaze/postural stability and function.",
+      "endpointDefinition": "Endpoints include dizziness/vertigo symptom burden, gaze stability, postural stability, functional mobility and vestibular rehabilitation participation.",
+      "populationOrSetting": "People with peripheral vestibular hypofunction under the updated vestibular rehabilitation clinical practice guideline.",
+      "effectOrMechanismSignal": "Vestibular rehabilitation improves continuity through compensation, gaze/postural stabilization and mobility confidence.",
+      "uncertaintyOrBias": "Guideline applies to peripheral vestibular hypofunction and should not be generalized to all balance disorders or central neurologic disease.",
+      "transferBoundary": "Do not use for non-vestibular falls, central causes of dizziness or personal therapy prescription without clinical context.",
+      "downgradeTriggers": [
+        "source is used outside peripheral vestibular hypofunction",
+        "source is used for individualized therapy dosing",
+        "source is used for unrelated balance impairment"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 neuro-sensory-cognitive source-context extraction register",
+        "variables": [
+          "vestibular-hypofunction-status",
+          "gaze-stability",
+          "dizziness-handicap",
+          "fall-risk",
+          "mobility-confidence"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, then fresh review, before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, resolve any lineage/access mismatch, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB3-EXT-022",
+      "domainId": "vestibular-rehabilitation-balance-compensation-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/vestibular-rehabilitation-balance-compensation-continuity",
+      "sourceRefId": "C2LTB3-SRC-11-2",
+      "sourceTitle": "Vestibular Rehabilitation for Peripheral Vestibular Hypofunction: Clinical Practice Guideline",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/26913496/",
+      "extractionStatus": "completed-c2ltb3-source-context-extraction",
+      "sourceAccessStatus": "pubmed-record-aligned",
+      "sourceRole": "vestibular-rehabilitation-guideline-baseline-source",
+      "exactClaimUse": "Can support baseline guideline context that vestibular rehabilitation benefits peripheral vestibular hypofunction and that isolated smooth-pursuit/saccadic exercises are not sufficient as standalone therapy.",
+      "endpointDefinition": "Endpoints include vestibular symptoms, gaze stability, balance/postural control and activity participation.",
+      "populationOrSetting": "Adults with unilateral or bilateral peripheral vestibular hypofunction in the 2016 vestibular rehabilitation guideline scope.",
+      "effectOrMechanismSignal": "Rehabilitation affects continuity by training vestibular compensation and balance/gaze-control function.",
+      "uncertaintyOrBias": "Earlier guideline has been updated; use with update history and not as sole current standard when updated guidance exists.",
+      "transferBoundary": "Do not treat as current-only guidance when EXT-021 updated guideline is available.",
+      "downgradeTriggers": [
+        "source is used without noting updated guideline",
+        "source is used for central vestibular disorders",
+        "source is used as individual dosing advice"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 neuro-sensory-cognitive source-context extraction register",
+        "variables": [
+          "vestibular-hypofunction-status",
+          "gaze-stability",
+          "dizziness-handicap",
+          "fall-risk",
+          "mobility-confidence"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, then fresh review, before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, resolve any lineage/access mismatch, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB3-EXT-023",
+      "domainId": "newborn-hearing-screening-language-development-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/newborn-hearing-screening-language-development-continuity",
+      "sourceRefId": "C2LTB3-SRC-12-1",
+      "sourceTitle": "CDC Early Hearing Detection and Intervention Programs",
+      "sourceUrl": "https://www.cdc.gov/ncbddd/hearingloss/ehdi-programs.html",
+      "extractionStatus": "completed-c2ltb3-source-context-extraction",
+      "sourceAccessStatus": "official-cdc-program-page-aligned",
+      "sourceRole": "ehdi-public-health-program-context-source",
+      "exactClaimUse": "Can support Early Hearing Detection and Intervention program context for screening, follow-up and service linkage for children with hearing loss.",
+      "endpointDefinition": "Endpoints include newborn/child hearing screening completion, follow-up, diagnostic linkage, intervention linkage and program continuity.",
+      "populationOrSetting": "Children with or at risk of hearing loss within public-health EHDI program context.",
+      "effectOrMechanismSignal": "Screening and follow-up infrastructure affects language-development opportunity by reducing missed or delayed identification and referral.",
+      "uncertaintyOrBias": "CDC program page is public-health program context, not a detailed clinical consensus statement or individual developmental prediction model.",
+      "transferBoundary": "Do not use as proof of individual language outcome or as a substitute for JCIH benchmark guidance.",
+      "downgradeTriggers": [
+        "source is used for individual outcome prediction",
+        "source is used as full clinical benchmark guidance",
+        "source is detached from screening/follow-up program context"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 neuro-sensory-cognitive source-context extraction register",
+        "variables": [
+          "screening-completion",
+          "diagnostic-confirmation-timing",
+          "early-intervention-enrollment",
+          "language-development-outcome",
+          "family-support-access"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, then fresh review, before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, resolve any lineage/access mismatch, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB3-EXT-024",
+      "domainId": "newborn-hearing-screening-language-development-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/newborn-hearing-screening-language-development-continuity",
+      "sourceRefId": "C2LTB3-SRC-12-2",
+      "sourceTitle": "JCIH 2019 Executive Summary",
+      "sourceUrl": "https://www.jcih.org/JCIH_2019_Executive_Summary.pdf",
+      "extractionStatus": "completed-c2ltb3-source-context-extraction",
+      "sourceAccessStatus": "pdf-executive-summary-accessed",
+      "sourceRole": "jcih-ehdi-consensus-benchmark-anchor",
+      "exactClaimUse": "Can support JCIH 2019 EHDI benchmark framing: early hearing detection should move from birth screening through diagnosis and intervention, with 1-3-6 and aspirational 1-2-3 timelines to support language and communication outcomes.",
+      "endpointDefinition": "Endpoints include screening by 1 month, audiologic diagnosis by 3 months, early intervention by 6 months, or improved 1-2-3 timelines where systems meet benchmarks.",
+      "populationOrSetting": "Infants and young children who are deaf or hard of hearing, and EHDI systems serving them and their families.",
+      "effectOrMechanismSignal": "Timely identification, diagnosis, amplification or communication intervention and family support affect language, cognitive, social-emotional and educational continuity.",
+      "uncertaintyOrBias": "Consensus executive summary is not an individual developmental prediction model and depends on access to high-quality audiologic and early intervention services.",
+      "transferBoundary": "Do not use as proof that screening alone guarantees outcomes; the source explicitly requires diagnosis, amplification/intervention and family support continuity.",
+      "downgradeTriggers": [
+        "source is reduced to screening-only claim",
+        "source is used for individual language prediction",
+        "EHDI follow-up and intervention access are not preserved"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 neuro-sensory-cognitive source-context extraction register",
+        "variables": [
+          "screening-completion",
+          "diagnostic-confirmation-timing",
+          "early-intervention-enrollment",
+          "language-development-outcome",
+          "family-support-access"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, then fresh review, before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, resolve any lineage/access mismatch, then send eligible rows to independent fresh review before bounded artifact promotion."
+    }
+  ],
+  "nonClaims": [
+    "This register does not complete independent fresh review.",
+    "This register does not create reviewed Source Cards, variable cards, endpoint cards, uncertainty cards, transfer-boundary cards or downgrade-check artifacts.",
+    "This register does not repair mismatched source lineage rows; it only records the mismatch and next required source-resolution step.",
+    "This register does not authorize clinical advice, individual prediction, intervention ranking, calibrated model admission or individual death-date output."
+  ],
+  "indexRequirements": [
+    "README.md",
+    "docs/reference/README.md",
+    "docs/reference/human-infra-maturity-roadmap.md",
+    "tools/README.md"
+  ]
+}

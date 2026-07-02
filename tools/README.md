@@ -36,6 +36,7 @@
 - `audit_human_infra_c2_longtail_second_batch_reviewed_card_artifact_register.py`: verifies that `docs/reference/human-infra-c2-longtail-second-batch-reviewed-card-artifact-register.json` promotes exactly the 23 eligible C2-LT-B2 rows into 138 bounded reviewed artifacts, preserves 1 downgrade-before-fill row, and keeps model admission blocked.
 - `audit_human_infra_c2_longtail_third_batch_promotion_queue.py`: verifies that `docs/reference/human-infra-c2-longtail-third-batch-promotion-queue.json` selects 12 non-B1/B2 neuro-sensory-cognitive C2 long-tail domains, binds 24 web-checked candidate sources, preserves required promotion steps and keeps model admission blocked.
 - `audit_human_infra_c2_longtail_third_batch_source_extraction_queue.py`: verifies that `docs/reference/human-infra-c2-longtail-third-batch-source-extraction-queue.json` derives the third-batch promotion queue into 24 domain-source extraction tasks with required slots, questions, blocked uses, index links and model-admission boundaries.
+- `audit_human_infra_c2_longtail_third_batch_source_extraction_register.py`: verifies that `docs/reference/human-infra-c2-longtail-third-batch-source-extraction-register.json` completes all 24/24 C2-LT-B3 source-context extraction rows with required fields, downgrade triggers, blocked uses, source-resolution flags and index links.
 - `audit_human_infra_domain_source_specific_extraction_queue.py`: verifies that the 26 domain field rows derive into 81 domain-source reading tasks over 20 source anchors from `docs/reference/human-infra-domain-source-specific-extraction-queue.json`, while keeping calibrated modeling blocked until exact claim, endpoint, population, uncertainty and transfer-boundary fields are extracted.
 - `audit_human_infra_domain_source_specific_extraction_register.py`: verifies the completed 81/81 domain-source extraction rows from `docs/reference/human-infra-domain-source-specific-extraction-register.json`, including source-role decisions, endpoint binding, blocked uses and index links.
 - `audit_human_infra_domain_source_card_promotion_queue.py`: verifies that the 81 completed domain-source field rows derive into fresh-review, Source Card, variable-card, endpoint-card, uncertainty-card, transfer-boundary-card and downgrade-check promotion tasks from `docs/reference/human-infra-domain-source-card-promotion-queue.json`, while keeping model admission blocked.
@@ -125,6 +126,7 @@ make c2-longtail-second-batch-independent-fresh-review-verdict-audit
 make c2-longtail-second-batch-reviewed-card-artifact-audit
 make c2-longtail-third-batch-promotion-audit
 make c2-longtail-third-batch-source-extraction-audit
+make c2-longtail-third-batch-source-extraction-register-audit
 make domain-source-queue-audit
 make domain-source-extraction-audit
 make domain-source-promotion-audit

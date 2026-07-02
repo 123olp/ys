@@ -166,7 +166,9 @@
         "docs/reference/human-infra-c2-longtail-first-batch-corrected-source-reextraction-queue.json",
         "tools/audit_human_infra_c2_longtail_first_batch_corrected_source_reextraction_queue.py",
         "docs/reference/human-infra-c2-longtail-third-batch-source-extraction-queue.json",
-        "tools/audit_human_infra_c2_longtail_third_batch_source_extraction_queue.py"
+        "tools/audit_human_infra_c2_longtail_third_batch_source_extraction_queue.py",
+        "docs/reference/human-infra-c2-longtail-third-batch-source-extraction-register.json",
+        "tools/audit_human_infra_c2_longtail_third_batch_source_extraction_register.py"
       ],
       "gates": [
         {
@@ -264,12 +266,14 @@
             "docs/reference/human-infra-c2-longtail-third-batch-promotion-queue.json",
             "tools/audit_human_infra_c2_longtail_third_batch_promotion_queue.py",
             "docs/reference/human-infra-c2-longtail-third-batch-source-extraction-queue.json",
-            "tools/audit_human_infra_c2_longtail_third_batch_source_extraction_queue.py"
+            "tools/audit_human_infra_c2_longtail_third_batch_source_extraction_queue.py",
+            "docs/reference/human-infra-c2-longtail-third-batch-source-extraction-register.json",
+            "tools/audit_human_infra_c2_longtail_third_batch_source_extraction_register.py"
           ],
           "missingEvidence": [
-            "C2-LT-B1 now has 282 reviewed artifacts: 252 original reviewed artifacts for 42 eligible source rows plus 30 corrected-source reviewed artifacts for 5 eligible corrected rows. C2-LT-B2 now has 138 bounded reviewed artifacts from 23 eligible verdict rows, while 1 row remains downgrade-before-fill and the 5 corrected lineage/route/index/fulltext blocked rows remain preserved outside artifact promotion. C2-LT-B3 now has 24 source-specific extraction tasks for 12 neuro-sensory-cognitive domains, but extraction rows, local review, independent fresh review and reviewed artifacts are not complete. Full reviewed Source Card coverage for remaining C2 long-tail domains and model admission artifacts remain incomplete."
+            "C2-LT-B1 now has 282 reviewed artifacts: 252 original reviewed artifacts for 42 eligible source rows plus 30 corrected-source reviewed artifacts for 5 eligible corrected rows. C2-LT-B2 now has 138 bounded reviewed artifacts from 23 eligible verdict rows, while 1 row remains downgrade-before-fill and the 5 corrected lineage/route/index/fulltext blocked rows remain preserved outside artifact promotion. C2-LT-B3 now has 24/24 source-context extraction rows for 12 neuro-sensory-cognitive domains, but local review, source-resolution, independent fresh review and reviewed artifacts are not complete. Full reviewed Source Card coverage for remaining C2 long-tail domains and model admission artifacts remain incomplete."
           ],
-          "nextAction": "Execute C2-LT-B3 source-specific field extraction, then local source-context review and independent fresh review while keeping model admission blocked.",
+          "nextAction": "Run C2-LT-B3 local source-context review, resolve mismatched or access-limited source rows, then execute independent fresh review while keeping model admission blocked.",
           "blocks100Percent": true
         },
         {
@@ -342,12 +346,14 @@
             "docs/reference/human-infra-c2-longtail-third-batch-promotion-queue.json",
             "tools/audit_human_infra_c2_longtail_third_batch_promotion_queue.py",
             "docs/reference/human-infra-c2-longtail-third-batch-source-extraction-queue.json",
-            "tools/audit_human_infra_c2_longtail_third_batch_source_extraction_queue.py"
+            "tools/audit_human_infra_c2_longtail_third_batch_source_extraction_queue.py",
+            "docs/reference/human-infra-c2-longtail-third-batch-source-extraction-register.json",
+            "tools/audit_human_infra_c2_longtail_third_batch_source_extraction_register.py"
           ],
           "missingEvidence": [
-            "C2-LT-B1 now has reviewed variable and endpoint artifacts for 42 original eligible source rows plus corrected variable/endpoint artifacts for the 5 eligible corrected rows. C2-LT-B2 now has reviewed variable and endpoint artifacts for 23 eligible verdict rows, while 1 row remains downgrade-before-fill. C2-LT-B3 variable seeds now have task-level extraction slots, but they are not yet source-extracted, fresh-reviewed, or promoted into governed variable/endpoint artifacts. Calibrated variable contracts plus endpoint validation are not complete."
+            "C2-LT-B1 now has reviewed variable and endpoint artifacts for 42 original eligible source rows plus corrected variable/endpoint artifacts for the 5 eligible corrected rows. C2-LT-B2 now has reviewed variable and endpoint artifacts for 23 eligible verdict rows, while 1 row remains downgrade-before-fill. C2-LT-B3 variable seeds now have source-context extracted fields, but they are not yet locally reviewed, fresh-reviewed, or promoted into governed variable/endpoint artifacts. Calibrated variable contracts plus endpoint validation are not complete."
           ],
-          "nextAction": "Run C2-LT-B3 source extraction before any governed variable contract use, keep C2-LT-B3 variable seeds as queue-only candidates, and keep calibrated variable contracts blocked until model gates pass.",
+          "nextAction": "Run C2-LT-B3 local review and fresh review before any governed variable contract use, keep C2-LT-B3 extracted variables as source-context candidates only, and keep calibrated variable contracts blocked until model gates pass.",
           "blocks100Percent": true
         },
         {
@@ -445,12 +451,14 @@
             "docs/reference/human-infra-c2-longtail-third-batch-promotion-queue.json",
             "tools/audit_human_infra_c2_longtail_third_batch_promotion_queue.py",
             "docs/reference/human-infra-c2-longtail-third-batch-source-extraction-queue.json",
-            "tools/audit_human_infra_c2_longtail_third_batch_source_extraction_queue.py"
+            "tools/audit_human_infra_c2_longtail_third_batch_source_extraction_queue.py",
+            "docs/reference/human-infra-c2-longtail-third-batch-source-extraction-register.json",
+            "tools/audit_human_infra_c2_longtail_third_batch_source_extraction_register.py"
           ],
           "missingEvidence": [
-            "C2-LT-B1 now has downgrade-check artifacts for 42 original eligible source rows and promotion-time downgrade artifacts for the 5 eligible corrected rows. C2-LT-B2 now has transfer-boundary and downgrade-check artifacts for 23 eligible verdict rows. C2-LT-B3 now has queued transfer-boundary/downgrade extraction tasks for 12 additional neuro-sensory-cognitive domains, but those downgrade checks are not yet extracted, reviewed, or promoted. The 1 C2-LT-B2 downgrade-before-fill row and the 5 corrected lineage/route/index/fulltext blocked rows remain blocked."
+            "C2-LT-B1 now has downgrade-check artifacts for 42 original eligible source rows and promotion-time downgrade artifacts for the 5 eligible corrected rows. C2-LT-B2 now has transfer-boundary and downgrade-check artifacts for 23 eligible verdict rows. C2-LT-B3 now has source-context downgrade triggers and transfer boundaries for 24 rows, including explicit mismatch/access downgrade triggers, but those checks are not yet locally reviewed, fresh-reviewed, or promoted. The 1 C2-LT-B2 downgrade-before-fill row and the 5 corrected lineage/route/index/fulltext blocked rows remain blocked."
           ],
-          "nextAction": "Run C2-LT-B3 source extraction and downstream review before any downgrade/transfer-boundary artifact claims, preserve the 1 C2-LT-B2 downgrade-before-fill row, and keep corrected blocked rows plus model-admission boundaries intact.",
+          "nextAction": "Run C2-LT-B3 local review and downstream fresh review before any downgrade/transfer-boundary artifact claims, preserve the 1 C2-LT-B2 downgrade-before-fill row, and keep corrected blocked rows plus model-admission boundaries intact.",
           "blocks100Percent": true
         }
       ]
@@ -597,7 +605,7 @@
   "nextWorkOrder": [
     {
       "priority": 1,
-      "item": "Execute C2-LT-B3 source-specific extraction rows, then local review and independent fresh review; preserve the 1 C2-LT-B2 downgrade-before-fill row, preserve the 5 corrected lineage/route/index/fulltext blocked rows, and keep model admission blocked.",
+      "item": "Run C2-LT-B3 local source-context review, source-resolution for mismatched/access-limited rows, independent fresh review and bounded artifact fill; preserve the 1 C2-LT-B2 downgrade-before-fill row, preserve the 5 corrected lineage/route/index/fulltext blocked rows, and keep model admission blocked.",
       "unblocks": [
         "RESEARCH-G3-c1-c2-source-cards",
         "RESEARCH-G4-variable-mechanism-contracts",
