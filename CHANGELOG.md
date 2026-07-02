@@ -4,6 +4,7 @@ All notable repository structure changes are recorded here.
 
 ## 2026-07-02
 
+- Added a reviewed card artifact register and audit gate, promoting all 81 fresh-reviewed promotion packets into 486 reviewed Source/variable/endpoint/uncertainty/transfer-boundary/downgrade artifact entities while keeping model admission and individual-use claims blocked.
 - Completed the independent fresh-review verdict register across FRB-01 through FRB-04, covering all 20 source anchors and 81/81 prepared promotion packets while keeping card filling, model admission and individual-use claims blocked.
 - Extended the independent fresh-review verdict register to FRB-03 subject-continuity/capability/cognition anchors, bringing cumulative coverage to 16 source anchors and 75/81 prepared promotion packets while keeping card filling, model admission and individual-use claims blocked.
 - Extended the independent fresh-review verdict register and audit gate to FRB-02 biological-aging mechanisms, bringing cumulative coverage to 12 source anchors and 56/81 prepared promotion packets while keeping card filling, model admission and individual-use claims blocked.

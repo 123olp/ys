@@ -138,7 +138,9 @@
         "docs/reference/human-infra-independent-fresh-review-protocol.json",
         "tools/audit_human_infra_independent_fresh_review_protocol.py",
         "docs/reference/human-infra-independent-fresh-review-verdict-register.json",
-        "tools/audit_human_infra_independent_fresh_review_verdict_register.py"
+        "tools/audit_human_infra_independent_fresh_review_verdict_register.py",
+        "docs/reference/human-infra-reviewed-card-artifact-register.json",
+        "tools/audit_human_infra_reviewed_card_artifact_register.py"
       ],
       "gates": [
         {
@@ -188,13 +190,14 @@
             "docs/reference/human-infra-independent-fresh-review-protocol.json",
             "tools/audit_human_infra_independent_fresh_review_protocol.py",
             "docs/reference/human-infra-independent-fresh-review-verdict-register.json",
-            "tools/audit_human_infra_independent_fresh_review_verdict_register.py"
+            "tools/audit_human_infra_independent_fresh_review_verdict_register.py",
+            "docs/reference/human-infra-reviewed-card-artifact-register.json",
+            "tools/audit_human_infra_reviewed_card_artifact_register.py"
           ],
           "missingEvidence": [
-            "Filled reviewed Source Card artifacts that classify each completed field row as supported, bounded, downgraded or rejected after all 81 independent fresh-review verdicts.",
             "Domain-level Claim-Evidence Matrix coverage beyond the current priority C1/C2 set."
           ],
-          "nextAction": "Fill reviewed Source Cards only for supported or bounded rows from the completed FRB-01 through FRB-04 verdict register and keep model admission blocked.",
+          "nextAction": "Extend reviewed Source Card and Claim-Evidence Matrix coverage beyond the current 26 priority domains while keeping model admission blocked.",
           "blocks100Percent": true
         },
         {
@@ -219,14 +222,14 @@
             "docs/reference/human-infra-independent-fresh-review-protocol.json",
             "tools/audit_human_infra_independent_fresh_review_protocol.py",
             "docs/reference/human-infra-independent-fresh-review-verdict-register.json",
-            "tools/audit_human_infra_independent_fresh_review_verdict_register.py"
+            "tools/audit_human_infra_independent_fresh_review_verdict_register.py",
+            "docs/reference/human-infra-reviewed-card-artifact-register.json",
+            "tools/audit_human_infra_reviewed_card_artifact_register.py"
           ],
           "missingEvidence": [
-            "Filled variable cards promoted from reviewed, supported or bounded prepared artifact packs after independent fresh review.",
-            "Filled endpoint, uncertainty and transfer-boundary cards derived from reviewed rows rather than field-extraction drafts.",
             "Domain-specific variable tables for C2 long-tail claims beyond the current priority set."
           ],
-          "nextAction": "Use the complete FRB-01 through FRB-04 verdict register to fill bounded artifacts for reviewed Source, variable, endpoint, uncertainty and transfer-boundary cards before promoting remaining variables or endpoints.",
+          "nextAction": "Use the reviewed card artifact register as the current priority-domain variable/endpoint/uncertainty/transfer layer, then extend the same contract to C2 long-tail domains before model admission.",
           "blocks100Percent": true
         },
         {
@@ -276,13 +279,14 @@
             "docs/reference/human-infra-independent-fresh-review-protocol.json",
             "tools/audit_human_infra_independent_fresh_review_protocol.py",
             "docs/reference/human-infra-independent-fresh-review-verdict-register.json",
-            "tools/audit_human_infra_independent_fresh_review_verdict_register.py"
+            "tools/audit_human_infra_independent_fresh_review_verdict_register.py",
+            "docs/reference/human-infra-reviewed-card-artifact-register.json",
+            "tools/audit_human_infra_reviewed_card_artifact_register.py"
           ],
           "missingEvidence": [
-            "Filled downgrade-check artifacts for the 81 reviewed FRB-01 through FRB-04 rows after independent fresh review.",
             "Falsifier rows for C2 domain claims beyond the current 20-domain priority set."
           ],
-          "nextAction": "Use the complete FRB-01 through FRB-04 fresh-review verdict register to fill downgrade-check IDs and connect rejected or indirect rows back to falsifier and variable-card gates.",
+          "nextAction": "Extend downgrade-check and falsifier coverage from the reviewed artifact register into C2 long-tail domain claims.",
           "blocks100Percent": true
         }
       ]
@@ -429,11 +433,9 @@
   "nextWorkOrder": [
     {
       "priority": 1,
-      "item": "Fill reviewed Source/variable/endpoint/uncertainty/transfer-boundary/downgrade artifacts from the completed 81/81 independent fresh-review verdict register only for supported or bounded rows.",
+      "item": "Extend route-card governance to every high-priority future-boundary route, including future waiting, biological stasis, neuro-continuity and AI-enabled acceleration.",
       "unblocks": [
-        "RESEARCH-G3-c1-c2-source-cards",
-        "RESEARCH-G4-variable-mechanism-contracts",
-        "RESEARCH-G6-falsifier-and-downgrade-coverage"
+        "RESEARCH-G5-route-probability-gates"
       ]
     },
     {
@@ -445,7 +447,7 @@
     },
     {
       "priority": 3,
-      "item": "Extend the domain Claim-Evidence Matrix beyond the current priority domains and promote field rows into reusable variable contract templates.",
+      "item": "Extend reviewed Source Card, variable, endpoint, uncertainty, transfer-boundary and downgrade coverage beyond the current priority domains into C2 long-tail claims.",
       "unblocks": [
         "RESEARCH-G3-c1-c2-source-cards",
         "RESEARCH-G4-variable-mechanism-contracts"

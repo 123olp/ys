@@ -62,6 +62,7 @@ tools/
 - `audit_human_infra_card_promotion_prep_register.py` 只检查当前 81 个本地复核晋升任务是否预注册 Source/变量/endpoint/uncertainty/transfer/downgrade 待产物 ID、评审问题、阻塞用途和入口索引；它不证明独立 fresh review 或卡片晋升已经完成。
 - `audit_human_infra_independent_fresh_review_protocol.py` 只检查独立 fresh review 协议是否把 81 个准备包按批次绑定到真实 source counts、verdict taxonomy、blocked uses 和入口索引；它不证明任何 fresh review verdict 已完成。
 - `audit_human_infra_independent_fresh_review_verdict_register.py` 只检查独立 fresh review verdict 账本是否把已复核批次的来源锚点和晋升包绑定到 protocol、prep register、本地来源复核、source-specific extraction、阻塞用途和入口索引；它不证明卡片已经填充，也不打开模型准入。
+- `audit_human_infra_reviewed_card_artifact_register.py` 只检查 reviewed card artifact 账本是否把 81 个 fresh-reviewed 晋升包落成 486 个 Source/变量/endpoint/uncertainty/transfer/downgrade artifact 实体，并确认模型准入、个体建议和临床有效性声明仍被阻塞。
 - `audit_human_infra_falsifier_source_card_backfill.py` 只检查当前论文强主张和 C1/C2 优先域反证是否具备 Source Card 锚点、证据角色、可用范围和外推边界；它不证明外部文献正确，也不等于完成逐篇 Source Card 精读。
 - `audit_human_infra_falsifier_source_card_extraction.py` 只检查当前 21 个来源锚点是否全部完成字段级 Source Card 抽取，并绑定来源身份、域、论文 claim、模型位置、边界和人工可读包；它不证明外部文献正确，也不等于完成域级 Claim-Evidence Matrix。
 - `update_domain_doc_contracts.py` 只根据 `domains/_possibility-space-control/classification.tsv` 为正式研究域 README/AGENTS 生成标准元信息、研究推进骨架、维护契约和代理执行流程块。
