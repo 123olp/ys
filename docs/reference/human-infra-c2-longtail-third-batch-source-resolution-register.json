@@ -1,0 +1,343 @@
+{
+  "schemaVersion": "human-infra.c2-longtail-third-batch-source-resolution-register.v1",
+  "registerId": "human-infra-c2-longtail-third-batch-source-resolution-register-2026-07-03",
+  "status": "active-c2ltb3-source-resolution-register-independent-fresh-review-required",
+  "purpose": "Resolve the five C2-LT-B3 local-review issue rows into corrected, split or route-normalized source candidates without changing artifact promotion or model admission status.",
+  "sourceOfTruth": {
+    "sourceExtractionQueue": "docs/reference/human-infra-c2-longtail-third-batch-source-extraction-queue.json",
+    "sourceExtractionRegister": "docs/reference/human-infra-c2-longtail-third-batch-source-extraction-register.json",
+    "localReviewRegister": "docs/reference/human-infra-c2-longtail-third-batch-local-review-register.json",
+    "evidencePolicy": "docs/reference/evidence-policy.md",
+    "maturityGapRegister": "docs/reference/human-infra-maturity-gap-register.json"
+  },
+  "scope": {
+    "batchId": "C2-LT-B3",
+    "resolutionLevel": "c2ltb3-local-review-issue-row-source-resolution-v0.1",
+    "totalLocalReviewRowCount": 24,
+    "issueRowCount": 5,
+    "pubmedTitleMismatchCount": 3,
+    "pubmedPartMismatchCount": 1,
+    "publisherAccessOrRouteIssueCount": 1,
+    "resolutionCandidateCount": 7,
+    "selectionRule": "Include every C2-LT-B3 sourceResolutionFindings row from the local review register.",
+    "resolutionRule": "Prepare corrected, split or route-normalized candidates only; do not create reviewed artifacts until independent fresh review validates each corrected source row.",
+    "nonClaims": [
+      "This register does not change the C2-LT-B3 source extraction register.",
+      "This register does not create reviewed artifacts for C2-LT-B3 issue rows.",
+      "This register does not authorize calibrated prediction, individual advice, intervention ranking, clinical-validity claims, domain-claim upgrade or individual death-date output.",
+      "This register only records source identity correction and route normalization inputs for a future independent fresh review."
+    ]
+  },
+  "verificationSources": [
+    {
+      "verificationId": "C2LTB3-SR-VERIFY-NCBI-ESUMMARY-20260703",
+      "title": "NCBI ESummary PubMed metadata check for C2-LT-B3 issue PMIDs",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id=34746431%2C27358333%2C29290580%2C29305137%2C29305138%2C26494222%2C28390560&retmode=json",
+      "sourceType": "official-ncbi-metadata-api",
+      "useBoundary": "Use only for source identity, title, journal and bibliographic lineage correction; not for extracting clinical recommendations or effect claims."
+    },
+    {
+      "verificationId": "C2LTB3-SR-VERIFY-AAOHNS-ROUTE-20260703",
+      "title": "AAO-HNS sudden hearing loss update publisher route check",
+      "url": "https://www.entnet.org/resource/clinical-practice-guideline-sudden-hearing-loss-update/",
+      "sourceType": "professional-society-guideline-page-route",
+      "useBoundary": "Use only for route normalization and current publisher-page access status; source content still requires independent fresh review before artifact fill."
+    },
+    {
+      "verificationId": "C2LTB3-SR-VERIFY-PUBMED-SSNHL-20260703",
+      "title": "PubMed companion record for Clinical Practice Guideline: Sudden Hearing Loss (Update)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31369359/",
+      "sourceType": "bibliographic-guideline-index",
+      "useBoundary": "Use only as bibliographic companion evidence for the AAO-HNS sudden-hearing-loss guideline update pending source-context fresh review."
+    }
+  ],
+  "blockedUses": [
+    "calibrated-prediction",
+    "individual-advice",
+    "individual-death-date-output",
+    "intervention-ranking",
+    "clinical-validity-claim",
+    "domain-claim-upgrade"
+  ],
+  "resolutionRows": [
+    {
+      "resolutionId": "C2LTB3-SRR-001",
+      "taskId": "C2LTB3-EXT-007",
+      "domainId": "post-stroke-dysphagia-screening-recovery-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/post-stroke-dysphagia-screening-recovery-continuity",
+      "sourceRefId": "C2LTB3-SRC-04-1",
+      "originalRegisteredTitle": "ESO and ESSD guideline for diagnosis and treatment of post-stroke dysphagia",
+      "originalRegisteredUrl": "https://pubmed.ncbi.nlm.nih.gov/28390560/",
+      "localReviewIssueType": "pubmed-title-mismatch",
+      "currentSourceCheck": {
+        "observedTitle": "PMID 28390560 resolves to Reproductive Health Screening in Women with Autoimmune Diseases.",
+        "verificationEvidence": "C2LTB3-SR-VERIFY-NCBI-ESUMMARY-20260703",
+        "result": "registered-url-invalid-for-post-stroke-dysphagia-domain"
+      },
+      "sourceResolutionDecision": "replace-mismatched-pmid-with-eso-essd-post-stroke-dysphagia-guideline-pmid",
+      "sourceResolutionStatus": "candidate-resolution-prepared-not-fresh-reviewed",
+      "sourceResolutionCandidates": [
+        {
+          "candidateId": "C2LTB3-SRR-001-CAND-01",
+          "candidateRole": "corrected-guideline-source",
+          "title": "European Stroke Organisation and European Society for Swallowing Disorders guideline for the diagnosis and treatment of post-stroke dysphagia",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34746431/",
+          "sourceType": "bibliographic-clinical-guideline-index",
+          "sourceIdentityStatus": "verified-title-match-via-ncbi-esummary",
+          "verificationEvidence": "C2LTB3-SR-VERIFY-NCBI-ESUMMARY-20260703",
+          "resolutionFinding": "PMID 34746431 matches the queued ESO/ESSD post-stroke dysphagia guideline title and should replace the mismatched PMID 28390560 for this row.",
+          "useBoundary": "Use only after independent fresh review for post-stroke dysphagia screening, diagnosis, treatment-route and endpoint vocabulary; no individual swallowing advice or calibrated outcome claim."
+        }
+      ],
+      "requiredFreshReviewActions": [
+        "Verify source identity and currentness for the corrected PMID.",
+        "Re-extract exact claim, endpoint, population/setting, uncertainty, transfer boundary, downgrade triggers and model position from the corrected source.",
+        "Confirm whether full text is accessible or whether bibliographic-index-only downgrade is needed.",
+        "Run independent fresh review before any reviewed artifact can be created.",
+        "Keep all model admission and prohibited individual uses blocked."
+      ],
+      "artifactPromotionDecision": "blocked-pending-resolution-fresh-review",
+      "modelAdmissionDecision": "blocked-pending-source-resolution-independent-fresh-review-and-reviewed-artifact-gates",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ]
+    },
+    {
+      "resolutionId": "C2LTB3-SRR-002",
+      "taskId": "C2LTB3-EXT-010",
+      "domainId": "myasthenia-gravis-neuromuscular-junction-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/myasthenia-gravis-neuromuscular-junction-continuity",
+      "sourceRefId": "C2LTB3-SRC-05-2",
+      "originalRegisteredTitle": "International consensus guidance for management of myasthenia gravis: Executive summary",
+      "originalRegisteredUrl": "https://pubmed.ncbi.nlm.nih.gov/26494222/",
+      "localReviewIssueType": "pubmed-title-mismatch",
+      "currentSourceCheck": {
+        "observedTitle": "PMID 26494222 resolves to Reply to Letter: Complexity of venous symptoms.",
+        "verificationEvidence": "C2LTB3-SR-VERIFY-NCBI-ESUMMARY-20260703",
+        "result": "registered-url-invalid-for-myasthenia-gravis-domain"
+      },
+      "sourceResolutionDecision": "replace-mismatched-pmid-with-mg-executive-summary-pmid",
+      "sourceResolutionStatus": "candidate-resolution-prepared-not-fresh-reviewed",
+      "sourceResolutionCandidates": [
+        {
+          "candidateId": "C2LTB3-SRR-002-CAND-01",
+          "candidateRole": "corrected-consensus-source",
+          "title": "International consensus guidance for management of myasthenia gravis: Executive summary",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/27358333/",
+          "sourceType": "bibliographic-clinical-consensus-index",
+          "sourceIdentityStatus": "verified-title-match-via-ncbi-esummary",
+          "verificationEvidence": "C2LTB3-SR-VERIFY-NCBI-ESUMMARY-20260703",
+          "resolutionFinding": "PMID 27358333 matches the queued MG executive-summary title and should replace mismatched PMID 26494222 for this row.",
+          "useBoundary": "Use only after independent fresh review for MG management taxonomy, crisis-risk, bulbar/respiratory variables and treatment-route vocabulary; no individual treatment advice."
+        }
+      ],
+      "requiredFreshReviewActions": [
+        "Verify source identity and currentness for the corrected PMID.",
+        "Re-extract exact claim, endpoint, population/setting, uncertainty, transfer boundary, downgrade triggers and model position from the corrected source.",
+        "Check whether newer MG guidance should be split into a separate currentness row rather than overwriting this historical executive summary.",
+        "Run independent fresh review before any reviewed artifact can be created.",
+        "Keep all model admission and prohibited individual uses blocked."
+      ],
+      "artifactPromotionDecision": "blocked-pending-resolution-fresh-review",
+      "modelAdmissionDecision": "blocked-pending-source-resolution-independent-fresh-review-and-reviewed-artifact-gates",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ]
+    },
+    {
+      "resolutionId": "C2LTB3-SRR-003",
+      "taskId": "C2LTB3-EXT-011",
+      "domainId": "spinal-muscular-atrophy-motor-neuron-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/spinal-muscular-atrophy-motor-neuron-continuity",
+      "sourceRefId": "C2LTB3-SRC-06-1",
+      "originalRegisteredTitle": "Diagnosis and management of spinal muscular atrophy: Part 1",
+      "originalRegisteredUrl": "https://pubmed.ncbi.nlm.nih.gov/29305137/",
+      "localReviewIssueType": "pubmed-record-title-part-mismatch",
+      "currentSourceCheck": {
+        "observedTitle": "PMID 29305137 resolves to Diagnosis and management of spinal muscular atrophy: Part 2.",
+        "verificationEvidence": "C2LTB3-SR-VERIFY-NCBI-ESUMMARY-20260703",
+        "result": "registered-url-domain-relevant-but-wrong-part-for-queued-title"
+      },
+      "sourceResolutionDecision": "split-sma-part1-and-part2-lineage-before-fresh-review",
+      "sourceResolutionStatus": "candidate-resolution-prepared-not-fresh-reviewed",
+      "sourceResolutionCandidates": [
+        {
+          "candidateId": "C2LTB3-SRR-003-CAND-01",
+          "candidateRole": "corrected-part1-source",
+          "title": "Diagnosis and management of spinal muscular atrophy: Part 1: Recommendations for diagnosis, rehabilitation, orthopedic and nutritional care",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29290580/",
+          "sourceType": "bibliographic-clinical-consensus-index",
+          "sourceIdentityStatus": "verified-title-match-via-ncbi-esummary",
+          "verificationEvidence": "C2LTB3-SR-VERIFY-NCBI-ESUMMARY-20260703",
+          "resolutionFinding": "PMID 29290580 matches the queued Part 1 title and should replace PMID 29305137 for Part 1 diagnosis/rehabilitation/orthopedic/nutritional extraction.",
+          "useBoundary": "Use only after independent fresh review for SMA Part 1 artifact scope; do not merge with Part 2 pulmonary/acute-care content without a split row, and do not generate individual care advice."
+        },
+        {
+          "candidateId": "C2LTB3-SRR-003-CAND-02",
+          "candidateRole": "misrouted-part2-source-to-split-row",
+          "title": "Diagnosis and management of spinal muscular atrophy: Part 2: Pulmonary and acute care; medications, supplements and immunizations; other organ systems; and ethics",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29305137/",
+          "sourceType": "bibliographic-clinical-consensus-index",
+          "sourceIdentityStatus": "verified-title-match-via-ncbi-esummary",
+          "verificationEvidence": "C2LTB3-SR-VERIFY-NCBI-ESUMMARY-20260703",
+          "resolutionFinding": "The originally registered PMID is valid SMA evidence, but only for Part 2 scope and should be routed to the Part 2 row after source-resolution.",
+          "useBoundary": "Use only for a split Part 2 context artifact row after independent fresh review; do not count it as Part 1 evidence or generate individual care advice."
+        }
+      ],
+      "requiredFreshReviewActions": [
+        "Verify Part 1 and Part 2 source identity separately.",
+        "Re-extract Part 1 diagnosis, rehabilitation, orthopedic and nutritional claims from PMID 29290580.",
+        "Route PMID 29305137 to Part 2 scope or split the task into source-specific rows.",
+        "Run independent fresh review before any reviewed artifact can be created.",
+        "Keep all model admission and prohibited individual uses blocked."
+      ],
+      "artifactPromotionDecision": "blocked-pending-resolution-fresh-review",
+      "modelAdmissionDecision": "blocked-pending-source-resolution-independent-fresh-review-and-reviewed-artifact-gates",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ]
+    },
+    {
+      "resolutionId": "C2LTB3-SRR-004",
+      "taskId": "C2LTB3-EXT-012",
+      "domainId": "spinal-muscular-atrophy-motor-neuron-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/spinal-muscular-atrophy-motor-neuron-continuity",
+      "sourceRefId": "C2LTB3-SRC-06-2",
+      "originalRegisteredTitle": "Diagnosis and management of spinal muscular atrophy: Part 2",
+      "originalRegisteredUrl": "https://pubmed.ncbi.nlm.nih.gov/29305138/",
+      "localReviewIssueType": "pubmed-title-mismatch",
+      "currentSourceCheck": {
+        "observedTitle": "PMID 29305138 resolves to MuSK myasthenia gravis and pregnancy.",
+        "verificationEvidence": "C2LTB3-SR-VERIFY-NCBI-ESUMMARY-20260703",
+        "result": "registered-url-invalid-for-spinal-muscular-atrophy-domain"
+      },
+      "sourceResolutionDecision": "replace-mismatched-pmid-with-sma-part2-pmid",
+      "sourceResolutionStatus": "candidate-resolution-prepared-not-fresh-reviewed",
+      "sourceResolutionCandidates": [
+        {
+          "candidateId": "C2LTB3-SRR-004-CAND-01",
+          "candidateRole": "corrected-part2-source",
+          "title": "Diagnosis and management of spinal muscular atrophy: Part 2: Pulmonary and acute care; medications, supplements and immunizations; other organ systems; and ethics",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29305137/",
+          "sourceType": "bibliographic-clinical-consensus-index",
+          "sourceIdentityStatus": "verified-title-match-via-ncbi-esummary",
+          "verificationEvidence": "C2LTB3-SR-VERIFY-NCBI-ESUMMARY-20260703",
+          "resolutionFinding": "PMID 29305137 matches the queued SMA Part 2 title and should replace the mismatched PMID 29305138 for this row.",
+          "useBoundary": "Use only after independent fresh review for SMA Part 2 pulmonary, acute-care, medication, immunization, multisystem and ethics scope; no individual care advice."
+        }
+      ],
+      "requiredFreshReviewActions": [
+        "Verify source identity and currentness for the corrected Part 2 PMID.",
+        "Re-extract exact claim, endpoint, population/setting, uncertainty, transfer boundary, downgrade triggers and model position from the corrected source.",
+        "Confirm that Part 1 and Part 2 rows are not merged into one overbroad SMA artifact.",
+        "Run independent fresh review before any reviewed artifact can be created.",
+        "Keep all model admission and prohibited individual uses blocked."
+      ],
+      "artifactPromotionDecision": "blocked-pending-resolution-fresh-review",
+      "modelAdmissionDecision": "blocked-pending-source-resolution-independent-fresh-review-and-reviewed-artifact-gates",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ]
+    },
+    {
+      "resolutionId": "C2LTB3-SRR-005",
+      "taskId": "C2LTB3-EXT-020",
+      "domainId": "sudden-hearing-loss-urgent-referral-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/sudden-hearing-loss-urgent-referral-continuity",
+      "sourceRefId": "C2LTB3-SRC-10-2",
+      "originalRegisteredTitle": "AAO-HNS Clinical Practice Guideline: Sudden Hearing Loss Update",
+      "originalRegisteredUrl": "https://www.entnet.org/resource/clinical-practice-guideline-sudden-hearing-loss-update/",
+      "localReviewIssueType": "publisher-page-forbidden",
+      "currentSourceCheck": {
+        "observedTitle": "The registered AAO-HNS URL now returns status 200 and redirects to the canonical quality-practice sudden hearing loss update page in local access checks.",
+        "verificationEvidence": "C2LTB3-SR-VERIFY-AAOHNS-ROUTE-20260703",
+        "result": "publisher-route-normalized-companion-pubmed-available"
+      },
+      "sourceResolutionDecision": "normalize-publisher-route-and-pair-with-pubmed-guideline-companion-before-fresh-review",
+      "sourceResolutionStatus": "candidate-resolution-prepared-not-fresh-reviewed",
+      "sourceResolutionCandidates": [
+        {
+          "candidateId": "C2LTB3-SRR-005-CAND-01",
+          "candidateRole": "canonical-publisher-guideline-page",
+          "title": "Clinical Practice Guideline: Sudden Hearing Loss (Update)",
+          "url": "https://www.entnet.org/quality-practice/quality-products/clinical-practice-guidelines/sudden-hearing-loss-update/",
+          "sourceType": "professional-society-guideline-page",
+          "sourceIdentityStatus": "route-normalized-from-registered-url",
+          "verificationEvidence": "C2LTB3-SR-VERIFY-AAOHNS-ROUTE-20260703",
+          "resolutionFinding": "The previously access-limited publisher route now resolves to a canonical AAO-HNS guideline page and should be manually reviewed before content extraction.",
+          "useBoundary": "Use only after manual/source-context fresh review of the publisher page; no individual urgent-referral or treatment-window advice."
+        },
+        {
+          "candidateId": "C2LTB3-SRR-005-CAND-02",
+          "candidateRole": "bibliographic-guideline-companion",
+          "title": "Clinical Practice Guideline: Sudden Hearing Loss (Update)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31369359/",
+          "sourceType": "bibliographic-clinical-guideline-index",
+          "sourceIdentityStatus": "verified-title-match-via-ncbi-esummary",
+          "verificationEvidence": "C2LTB3-SR-VERIFY-PUBMED-SSNHL-20260703",
+          "resolutionFinding": "PMID 31369359 is the PubMed companion record for the AAO-HNS sudden hearing loss update and can anchor bibliographic identity if publisher access changes again.",
+          "useBoundary": "Use only as companion bibliographic identity and source-context artifact support pending fresh review; do not count as an independent second evidence source for the same guideline or generate individual urgent-referral advice."
+        }
+      ],
+      "requiredFreshReviewActions": [
+        "Manually or browser-review the canonical AAO-HNS publisher page.",
+        "Pair the publisher page with PubMed companion PMID 31369359 for source identity, not duplicate evidence counting.",
+        "Re-extract exact claim, endpoint, population/setting, uncertainty, transfer boundary, downgrade triggers and model position from accessible source text.",
+        "Run independent fresh review before any reviewed artifact can be created.",
+        "Keep all model admission and prohibited individual uses blocked."
+      ],
+      "artifactPromotionDecision": "blocked-pending-resolution-fresh-review",
+      "modelAdmissionDecision": "blocked-pending-source-resolution-independent-fresh-review-and-reviewed-artifact-gates",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ]
+    }
+  ],
+  "requiredNextArtifacts": [
+    "c2ltb3-source-resolution-fresh-review-verdict-register",
+    "c2ltb3-corrected-source-reextraction-queue",
+    "c2ltb3-corrected-source-reextraction-register",
+    "c2ltb3-corrected-source-fresh-review-verdict-register",
+    "bounded-reviewed-source-card",
+    "bounded-variable-card",
+    "bounded-endpoint-card",
+    "bounded-uncertainty-card",
+    "bounded-transfer-boundary-card",
+    "bounded-downgrade-check-row"
+  ],
+  "modelAdmissionDecision": "blocked-pending-source-resolution-fresh-review-corrected-reextraction-reviewed-artifacts-and-quantitative-model-gates",
+  "indexRequirements": [
+    "README.md",
+    "AGENTS.md",
+    "docs/AGENTS.md",
+    "docs/reference/README.md",
+    "docs/reference/human-infra-maturity-roadmap.md",
+    "tools/README.md",
+    "tools/AGENTS.md"
+  ]
+}

@@ -200,6 +200,7 @@ docs/
 │   ├── human-infra-c2-longtail-third-batch-source-extraction-queue.json
 │   ├── human-infra-c2-longtail-third-batch-source-extraction-register.json
 │   ├── human-infra-c2-longtail-third-batch-local-review-register.json
+│   ├── human-infra-c2-longtail-third-batch-source-resolution-register.json
 │   ├── human-infra-domain-source-specific-extraction-queue.json
 │   ├── human-infra-domain-source-specific-extraction-register.json
 │   ├── human-infra-domain-source-card-promotion-queue.json
@@ -419,6 +420,7 @@ docs/
 - `reference/human-infra-c2-longtail-third-batch-source-extraction-queue.json`：把第三批 12 个神经-感知-认知 C2 长尾域的 24 个候选来源派生成 source-specific 深读任务，要求抽取 exact claim、endpoint、population/setting、mechanism/effect、uncertainty、transfer boundary、downgrade 和 model position；它仍不等于来源已读完、fresh review 或 artifact 晋升完成。
 - `reference/human-infra-c2-longtail-third-batch-source-extraction-register.json`：记录 C2-LT-B3 24/24 个来源的本地字段级抽取，显式保留错源、标题/分卷错配、访问受限和降级触发边界；它仍不等于本地复核、fresh review、reviewed artifacts 或模型准入。
 - `reference/human-infra-c2-longtail-third-batch-local-review-register.json`：记录 C2-LT-B3 24/24 个来源抽取行的本地来源语境复核，确认其只可进入 independent fresh review 或 source-resolution，并保留 5 个错源/错配/访问受限问题行；它仍不等于 reviewed artifacts、Source Card 晋升完成或模型准入。
+- `reference/human-infra-c2-longtail-third-batch-source-resolution-register.json`：记录 C2-LT-B3 5 个本地复核问题行的来源纠偏候选，把错源、分卷错配和 publisher route 问题拆成 7 个 corrected/split/route-normalized 候选；它仍不等于 fresh review、corrected re-extraction、reviewed artifacts 或模型准入。
 - `reference/human-infra-domain-source-specific-extraction-queue.json`：把 26 个域字段行派生为 81 个 domain-source 深读任务，作为 exact claim、endpoint、population、uncertainty 和 transfer-boundary 精读前的模型准入阻塞队列。
 - `reference/human-infra-domain-source-specific-extraction-register.json`：记录当前 81/81 个 domain-source 精读完成行，绑定 exact claim、endpoint、population、uncertainty、transfer-boundary 和禁止用途边界；它仍不等于外部文献 fresh review 或校准预测准入。
 - `reference/human-infra-domain-source-card-promotion-queue.json`：把 81 个 completed field rows 派生为 fresh review、Source Card、变量卡、endpoint 卡、uncertainty 卡、transfer-boundary 卡和 downgrade check 晋升任务；它仍不等于晋升完成或模型准入。
