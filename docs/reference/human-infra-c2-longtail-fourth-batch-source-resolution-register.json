@@ -1,0 +1,336 @@
+{
+  "schemaVersion": "human-infra.c2-longtail-fourth-batch-source-resolution-register.v1",
+  "registerId": "human-infra-c2-longtail-fourth-batch-source-resolution-register-2026-07-03",
+  "status": "active-c2ltb4-source-resolution-register-independent-fresh-review-required",
+  "purpose": "Resolve the four C2-LT-B4 local-review issue rows into duplicate-lineage, official-guideline-page, DOI or fulltext-route candidates without changing artifact promotion or model admission status.",
+  "sourceOfTruth": {
+    "sourceExtractionQueue": "docs/reference/human-infra-c2-longtail-fourth-batch-source-extraction-queue.json",
+    "sourceExtractionRegister": "docs/reference/human-infra-c2-longtail-fourth-batch-source-extraction-register.json",
+    "localReviewRegister": "docs/reference/human-infra-c2-longtail-fourth-batch-local-review-register.json",
+    "evidencePolicy": "docs/reference/evidence-policy.md",
+    "maturityGapRegister": "docs/reference/human-infra-maturity-gap-register.json"
+  },
+  "scope": {
+    "batchId": "C2-LT-B4",
+    "resolutionLevel": "c2ltb4-local-review-issue-row-source-resolution-v0.1",
+    "totalLocalReviewRowCount": 24,
+    "issueRowCount": 4,
+    "duplicateLineageIssueCount": 1,
+    "noAbstractFulltextIssueCount": 3,
+    "resolutionCandidateCount": 8,
+    "nonClaims": [
+      "This register does not change any source into reviewed evidence.",
+      "This register does not create reviewed artifacts, Source Cards, variable cards, endpoint cards, uncertainty cards, transfer-boundary cards or downgrade rows.",
+      "This register does not authorize model admission, individual advice, individual death-date output, clinical validity claims or intervention ranking.",
+      "This register only prepares source-route candidates that must pass manual/fulltext extraction and independent fresh review before bounded artifact use."
+    ]
+  },
+  "verificationSources": [
+    {
+      "verificationId": "C2LTB4-SR-VERIFY-NCBI-PUBMED-20260703",
+      "title": "NCBI PubMed XML metadata check for C2-LT-B4 issue PMIDs",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=38907161,39052901,39210715,36727674,32810434&retmode=xml",
+      "sourceType": "official-ncbi-metadata-api",
+      "useBoundary": "Use only for source identity, DOI, PMCID, abstract-availability and bibliographic lineage; not for extracting clinical recommendations or effect claims."
+    },
+    {
+      "verificationId": "C2LTB4-SR-VERIFY-DIABETES-PMC-DUPLICATE-20260703",
+      "title": "PMC fulltext routes for adult hyperglycemic crises consensus report duplicate publication lineage",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11272983/",
+      "sourceType": "pmc-fulltext-route-check",
+      "useBoundary": "Use only to preserve duplicate publication route handling between Diabetes Care and Diabetologia consensus report routes before independent fresh review."
+    },
+    {
+      "verificationId": "C2LTB4-SR-VERIFY-ESC-GUIDELINE-PAGE-20260703",
+      "title": "ESC official 2024 elevated blood pressure and hypertension guideline page route check",
+      "url": "https://www.escardio.org/guidelines/clinical-practice-guidelines/all-esc-practice-guidelines/elevated-blood-pressure-and-hypertension/",
+      "sourceType": "professional-society-guideline-page-route",
+      "useBoundary": "Use only for guideline route, scope and fulltext candidate identification; exact guideline text still requires manual/fulltext extraction and independent fresh review."
+    },
+    {
+      "verificationId": "C2LTB4-SR-VERIFY-AASLD-PMC-PUBMED-20260703",
+      "title": "PubMed/PMC route check for AASLD NAFLD practice guidance",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10735173/",
+      "sourceType": "pmc-fulltext-practice-guidance-route",
+      "useBoundary": "Use only to identify fulltext route and source identity for later fresh review; not for individual liver-disease guidance or calibrated prognosis."
+    },
+    {
+      "verificationId": "C2LTB4-SR-VERIFY-AASLD-PAGE-20260703",
+      "title": "AASLD official practice-guideline route for NAFLD/MASLD guidance",
+      "url": "https://www.aasld.org/practice-guidelines/clinical-assessment-and-management-metabolic-dysfunction-associated-steatotic",
+      "sourceType": "professional-society-guidance-page-route",
+      "useBoundary": "Use only for source-route and terminology normalization; exact claims require fulltext/manual review and independent fresh review."
+    },
+    {
+      "verificationId": "C2LTB4-SR-VERIFY-AGA-GUIDANCE-PAGE-20260703",
+      "title": "AGA official gastrointestinal evaluation of iron deficiency anemia guidance page route check",
+      "url": "https://gastro.org/clinical-guidance/gastrointestinal-evaluation-of-iron-deficiency-anemia/",
+      "sourceType": "professional-society-clinical-guidance-page-route",
+      "useBoundary": "Use only for guideline route, recommendation-page and DOI candidate identification; exact claims require independent fresh review before artifact fill."
+    }
+  ],
+  "blockedUses": [
+    "calibrated-prediction",
+    "individual-advice",
+    "individual-death-date-output",
+    "intervention-ranking",
+    "clinical-validity-claim",
+    "domain-claim-upgrade"
+  ],
+  "resolutionRows": [
+    {
+      "resolutionId": "C2LTB4-SRR-001",
+      "taskId": "C2LTB4-EXT-002",
+      "domainId": "diabetic-hyperglycemic-hypoglycemic-crisis-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/diabetic-hyperglycemic-hypoglycemic-crisis-continuity",
+      "sourceRefId": "C2LTB4-SRC-01-2",
+      "originalRegisteredTitle": "Hyperglycemic Crises in Adults With Diabetes: A Consensus Report",
+      "originalRegisteredUrl": "https://pubmed.ncbi.nlm.nih.gov/39052901/",
+      "localReviewIssueType": "duplicate-consensus-lineage",
+      "currentSourceCheck": {
+        "observedTitle": "PMID 39052901 resolves to the Diabetes Care route of the adult hyperglycemic crises consensus report; PMID 38907161 resolves to the Diabetologia route of the same consensus report lineage.",
+        "verificationEvidence": "C2LTB4-SR-VERIFY-NCBI-PUBMED-20260703",
+        "result": "valid-source-route-but-duplicate-consensus-lineage-not-independent-evidence"
+      },
+      "sourceResolutionDecision": "collapse-or-route-normalize-duplicate-consensus-publication-before-evidence-counting",
+      "sourceResolutionStatus": "candidate-resolution-prepared-not-fresh-reviewed",
+      "sourceResolutionCandidates": [
+        {
+          "candidateId": "C2LTB4-SRR-001-CAND-01",
+          "candidateRole": "primary-or-companion-consensus-route-diabetologia",
+          "title": "Hyperglycaemic crises in adults with diabetes: a consensus report",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38907161/",
+          "sourceType": "bibliographic-consensus-report-index-with-pmc-fulltext-route",
+          "sourceIdentityStatus": "verified-title-match-via-ncbi-pubmed-metadata-pmcid-PMC11343900",
+          "verificationEvidence": "C2LTB4-SR-VERIFY-DIABETES-PMC-DUPLICATE-20260703",
+          "resolutionFinding": "PMID 38907161 is the Diabetologia spelling route for the adult hyperglycaemic crises consensus report and should be treated as the same consensus lineage as EXT-002 unless a reviewer explicitly assigns separate route roles.",
+          "useBoundary": "Use only after independent fresh review for consensus-route lineage and adult hyperglycemic-crisis vocabulary; do not count as independent evidence or generate individual care advice."
+        },
+        {
+          "candidateId": "C2LTB4-SRR-001-CAND-02",
+          "candidateRole": "duplicate-companion-consensus-route-diabetes-care",
+          "title": "Hyperglycemic Crises in Adults With Diabetes: A Consensus Report",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39052901/",
+          "sourceType": "bibliographic-consensus-report-index-with-pmc-fulltext-route",
+          "sourceIdentityStatus": "verified-title-match-via-ncbi-pubmed-metadata-pmcid-PMC11272983",
+          "verificationEvidence": "C2LTB4-SR-VERIFY-DIABETES-PMC-DUPLICATE-20260703",
+          "resolutionFinding": "PMID 39052901 is a valid Diabetes Care publication route for the same adult hyperglycemic crises consensus report lineage and should remain duplicate-route evidence unless fresh review proves a distinct source role.",
+          "useBoundary": "Use only after independent fresh review as duplicate/companion route lineage; no independent evidence counting, intervention ranking, individual advice or calibrated outcome claim."
+        }
+      ],
+      "requiredFreshReviewActions": [
+        "Verify whether EXT-001 and EXT-002 share identical or materially overlapping consensus content.",
+        "Choose one evidence-counting anchor or explicitly mark one row as duplicate-route companion.",
+        "Re-extract exact claim, endpoint, population/setting, uncertainty, transfer boundary, downgrade triggers and model position from the retained route after duplicate handling.",
+        "Run independent fresh review before any reviewed artifact can be created.",
+        "Keep all model admission and prohibited individual uses blocked."
+      ],
+      "artifactPromotionDecision": "blocked-pending-resolution-fresh-review",
+      "modelAdmissionDecision": "blocked-pending-source-resolution-independent-fresh-review-and-reviewed-artifact-gates",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ]
+    },
+    {
+      "resolutionId": "C2LTB4-SRR-002",
+      "taskId": "C2LTB4-EXT-005",
+      "domainId": "hypertensive-crisis-end-organ-risk-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/hypertensive-crisis-end-organ-risk-continuity",
+      "sourceRefId": "C2LTB4-SRC-03-1",
+      "originalRegisteredTitle": "2024 ESC Guidelines for the management of elevated blood pressure and hypertension",
+      "originalRegisteredUrl": "https://pubmed.ncbi.nlm.nih.gov/39210715/",
+      "localReviewIssueType": "no-abstract-fulltext-needed",
+      "currentSourceCheck": {
+        "observedTitle": "PMID 39210715 resolves to the 2024 ESC Guidelines for management of elevated blood pressure and hypertension; PubMed has no abstract, while the ESC official guideline page and DOI route identify the guideline family.",
+        "verificationEvidence": "C2LTB4-SR-VERIFY-ESC-GUIDELINE-PAGE-20260703",
+        "result": "fulltext-route-identified-but-pubmed-abstract-absent-manual-review-required"
+      },
+      "sourceResolutionDecision": "preserve-esc-guideline-source-route-and-require-manual-fulltext-extraction-before-artifact-fill",
+      "sourceResolutionStatus": "candidate-resolution-prepared-not-fresh-reviewed",
+      "sourceResolutionCandidates": [
+        {
+          "candidateId": "C2LTB4-SRR-002-CAND-01",
+          "candidateRole": "official-society-guideline-page-route",
+          "title": "2024 ESC Guidelines for the Management of Elevated Blood Pressure and Hypertension",
+          "url": "https://www.escardio.org/guidelines/clinical-practice-guidelines/all-esc-practice-guidelines/elevated-blood-pressure-and-hypertension/",
+          "sourceType": "professional-society-guideline-page-route",
+          "sourceIdentityStatus": "official-esc-guideline-page-identified-not-fresh-reviewed",
+          "verificationEvidence": "C2LTB4-SR-VERIFY-ESC-GUIDELINE-PAGE-20260703",
+          "resolutionFinding": "ESC official page identifies the 2024 guideline, summarizes its diagnosis/evaluation/management scope, and links the European Heart Journal route; it can be used as source-route evidence only before fulltext extraction.",
+          "useBoundary": "Use only for guideline route and scope anchoring before independent fresh review; no individual blood-pressure target, drug choice, crisis management, model variable or artifact claim."
+        },
+        {
+          "candidateId": "C2LTB4-SRR-002-CAND-02",
+          "candidateRole": "journal-doi-fulltext-route",
+          "title": "2024 ESC Guidelines for the management of elevated blood pressure and hypertension",
+          "url": "https://doi.org/10.1093/eurheartj/ehae178",
+          "sourceType": "journal-doi-guideline-route",
+          "sourceIdentityStatus": "doi-verified-via-pubmed-metadata-publisher-access-may-require-manual-review",
+          "verificationEvidence": "C2LTB4-SR-VERIFY-NCBI-PUBMED-20260703",
+          "resolutionFinding": "PubMed metadata verifies DOI 10.1093/eurheartj/ehae178 and absent abstract status; exact ESC guideline claims require publisher or official fulltext/manual access review.",
+          "useBoundary": "Use only as DOI/fulltext route candidate until manual fulltext extraction and independent fresh review complete; no individual advice or artifact fill."
+        }
+      ],
+      "requiredFreshReviewActions": [
+        "Manually access the ESC or European Heart Journal full guideline route and record exact source text boundaries.",
+        "Separate chronic elevated-blood-pressure/hypertension guidance from acute hypertensive emergency claims.",
+        "Re-extract endpoint, population/setting, uncertainty, transfer boundary, downgrade triggers and model position from the full guideline.",
+        "Run independent fresh review before any reviewed artifact can be created.",
+        "Keep all model admission and prohibited individual uses blocked."
+      ],
+      "artifactPromotionDecision": "blocked-pending-resolution-fresh-review",
+      "modelAdmissionDecision": "blocked-pending-source-resolution-independent-fresh-review-and-reviewed-artifact-gates",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ]
+    },
+    {
+      "resolutionId": "C2LTB4-SRR-003",
+      "taskId": "C2LTB4-EXT-011",
+      "domainId": "chronic-liver-disease-masld-mash-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/chronic-liver-disease-masld-mash-continuity",
+      "sourceRefId": "C2LTB4-SRC-06-1",
+      "originalRegisteredTitle": "AASLD Practice Guidance on the clinical assessment and management of nonalcoholic fatty liver disease",
+      "originalRegisteredUrl": "https://pubmed.ncbi.nlm.nih.gov/36727674/",
+      "localReviewIssueType": "no-abstract-fulltext-needed",
+      "currentSourceCheck": {
+        "observedTitle": "PMID 36727674 resolves to AASLD Practice Guidance on clinical assessment and management of NAFLD; PubMed has no abstract but PubMed metadata gives PMCID PMC10735173 and DOI 10.1097/HEP.0000000000000323.",
+        "verificationEvidence": "C2LTB4-SR-VERIFY-AASLD-PMC-PUBMED-20260703",
+        "result": "pmc-fulltext-route-identified-but-independent-fresh-review-still-required"
+      },
+      "sourceResolutionDecision": "preserve-aasld-guidance-route-and-require-fulltext-extraction-before-artifact-fill",
+      "sourceResolutionStatus": "candidate-resolution-prepared-not-fresh-reviewed",
+      "sourceResolutionCandidates": [
+        {
+          "candidateId": "C2LTB4-SRR-003-CAND-01",
+          "candidateRole": "pmc-fulltext-route",
+          "title": "AASLD Practice Guidance on the clinical assessment and management of nonalcoholic fatty liver disease",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10735173/",
+          "sourceType": "open-fulltext-practice-guidance-route",
+          "sourceIdentityStatus": "pmcid-verified-via-ncbi-pubmed-metadata-not-fresh-reviewed",
+          "verificationEvidence": "C2LTB4-SR-VERIFY-AASLD-PMC-PUBMED-20260703",
+          "resolutionFinding": "PMCID PMC10735173 provides an open fulltext route for the AASLD NAFLD practice guidance; it can support later fulltext extraction but has not yet passed independent fresh review.",
+          "useBoundary": "Use only after independent fresh review for NAFLD/MASLD assessment, fibrosis-risk, surveillance and management vocabulary; no individual liver-disease advice or calibrated risk claim."
+        },
+        {
+          "candidateId": "C2LTB4-SRR-003-CAND-02",
+          "candidateRole": "aasld-practice-guideline-page-route",
+          "title": "AASLD Practice Guidance on the Clinical Assessment and Management of Nonalcoholic Fatty Liver Disease [updated 2023]",
+          "url": "https://www.aasld.org/practice-guidelines/clinical-assessment-and-management-metabolic-dysfunction-associated-steatotic",
+          "sourceType": "professional-society-guidance-page-route",
+          "sourceIdentityStatus": "official-aasld-guidance-page-identified-not-fresh-reviewed",
+          "verificationEvidence": "C2LTB4-SR-VERIFY-AASLD-PAGE-20260703",
+          "resolutionFinding": "AASLD guideline page identifies the updated 2023 practice guidance route and related terminology context; exact source claims should still be extracted from fulltext and independently reviewed.",
+          "useBoundary": "Use only for source-route and terminology normalization before artifact creation; no individual management, staging, surveillance or calibrated prognosis claim."
+        }
+      ],
+      "requiredFreshReviewActions": [
+        "Manually review the PMC/open fulltext or official AASLD route and record exact NAFLD/MASLD terminology boundaries.",
+        "Separate assessment/fibrosis-risk/surveillance vocabulary from treatment or individual-management claims.",
+        "Re-extract endpoint, population/setting, uncertainty, transfer boundary, downgrade triggers and model position from full guidance.",
+        "Run independent fresh review before any reviewed artifact can be created.",
+        "Keep all model admission and prohibited individual uses blocked."
+      ],
+      "artifactPromotionDecision": "blocked-pending-resolution-fresh-review",
+      "modelAdmissionDecision": "blocked-pending-source-resolution-independent-fresh-review-and-reviewed-artifact-gates",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ]
+    },
+    {
+      "resolutionId": "C2LTB4-SRR-004",
+      "taskId": "C2LTB4-EXT-020",
+      "domainId": "iron-deficiency-anemia-oxygen-carrying-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/iron-deficiency-anemia-oxygen-carrying-continuity",
+      "sourceRefId": "C2LTB4-SRC-10-2",
+      "originalRegisteredTitle": "AGA Clinical Practice Guidelines on the Gastrointestinal Evaluation of Iron Deficiency Anemia",
+      "originalRegisteredUrl": "https://pubmed.ncbi.nlm.nih.gov/32810434/",
+      "localReviewIssueType": "no-abstract-fulltext-needed",
+      "currentSourceCheck": {
+        "observedTitle": "PMID 32810434 resolves to AGA Clinical Practice Guidelines on the Gastrointestinal Evaluation of Iron Deficiency Anemia; PubMed has no abstract, while the AGA guidance page and DOI route identify the guideline and recommendations page.",
+        "verificationEvidence": "C2LTB4-SR-VERIFY-AGA-GUIDANCE-PAGE-20260703",
+        "result": "official-guidance-route-identified-but-pubmed-abstract-absent-manual-review-required"
+      },
+      "sourceResolutionDecision": "preserve-aga-guideline-route-and-require-manual-fulltext-extraction-before-artifact-fill",
+      "sourceResolutionStatus": "candidate-resolution-prepared-not-fresh-reviewed",
+      "sourceResolutionCandidates": [
+        {
+          "candidateId": "C2LTB4-SRR-004-CAND-01",
+          "candidateRole": "official-society-guidance-page-route",
+          "title": "Gastrointestinal evaluation of iron deficiency anemia",
+          "url": "https://gastro.org/clinical-guidance/gastrointestinal-evaluation-of-iron-deficiency-anemia/",
+          "sourceType": "professional-society-clinical-guidance-page-route",
+          "sourceIdentityStatus": "official-aga-guidance-page-identified-not-fresh-reviewed",
+          "verificationEvidence": "C2LTB4-SR-VERIFY-AGA-GUIDANCE-PAGE-20260703",
+          "resolutionFinding": "AGA official clinical guidance page identifies the IDA gastrointestinal evaluation guideline, publication date, DOI route and recommendation list; exact use still requires independent fresh review.",
+          "useBoundary": "Use only after independent fresh review for GI-evaluation vocabulary, ferritin cutoff, endoscopy-route and post-negative-evaluation endpoint framing; no individual endoscopy advice or calibrated cancer-risk claim."
+        },
+        {
+          "candidateId": "C2LTB4-SRR-004-CAND-02",
+          "candidateRole": "journal-doi-fulltext-route",
+          "title": "AGA Clinical Practice Guidelines on the Gastrointestinal Evaluation of Iron Deficiency Anemia",
+          "url": "https://doi.org/10.1053/j.gastro.2020.06.046",
+          "sourceType": "journal-doi-guideline-route",
+          "sourceIdentityStatus": "doi-verified-via-pubmed-metadata-publisher-access-may-require-manual-review",
+          "verificationEvidence": "C2LTB4-SR-VERIFY-NCBI-PUBMED-20260703",
+          "resolutionFinding": "PubMed metadata verifies DOI 10.1053/j.gastro.2020.06.046 and absent abstract status; publisher fulltext access may require manual review before artifact fill.",
+          "useBoundary": "Use only as DOI/fulltext route candidate until manual fulltext extraction and independent fresh review complete; no individual advice or artifact fill."
+        }
+      ],
+      "requiredFreshReviewActions": [
+        "Manually review the AGA official guidance page and journal full guideline route for exact recommendations and scope.",
+        "Separate IDA diagnosis/evaluation route vocabulary from treatment decisions, individual endoscopy decisions and malignancy probability claims.",
+        "Re-extract endpoint, population/setting, uncertainty, transfer boundary, downgrade triggers and model position from the full guideline.",
+        "Run independent fresh review before any reviewed artifact can be created.",
+        "Keep all model admission and prohibited individual uses blocked."
+      ],
+      "artifactPromotionDecision": "blocked-pending-resolution-fresh-review",
+      "modelAdmissionDecision": "blocked-pending-source-resolution-independent-fresh-review-and-reviewed-artifact-gates",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ]
+    }
+  ],
+  "requiredNextArtifacts": [
+    "c2ltb4-source-resolution-fresh-review-verdict-register",
+    "c2ltb4-manual-fulltext-extraction-register",
+    "c2ltb4-independent-fresh-review-protocol",
+    "c2ltb4-independent-fresh-review-verdict-register",
+    "bounded-reviewed-source-card",
+    "bounded-variable-card",
+    "bounded-endpoint-card",
+    "bounded-uncertainty-card",
+    "bounded-transfer-boundary-card",
+    "bounded-downgrade-check-row"
+  ],
+  "modelAdmissionDecision": "blocked-pending-source-resolution-independent-fresh-review-reviewed-artifacts-and-model-gates",
+  "indexRequirements": [
+    "README.md",
+    "AGENTS.md",
+    "docs/AGENTS.md",
+    "docs/reference/README.md",
+    "docs/reference/human-infra-maturity-roadmap.md",
+    "tools/README.md",
+    "tools/AGENTS.md"
+  ]
+}

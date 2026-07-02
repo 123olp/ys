@@ -208,6 +208,7 @@ docs/
 │   ├── human-infra-c2-longtail-fourth-batch-source-extraction-queue.json
 │   ├── human-infra-c2-longtail-fourth-batch-source-extraction-register.json
 │   ├── human-infra-c2-longtail-fourth-batch-local-review-register.json
+│   ├── human-infra-c2-longtail-fourth-batch-source-resolution-register.json
 │   ├── human-infra-c2-longtail-third-batch-corrected-source-reextraction-register.json
 │   ├── human-infra-c2-longtail-third-batch-corrected-source-fresh-review-verdict-register.json
 │   ├── human-infra-c2-longtail-third-batch-reviewed-card-artifact-register.json
@@ -432,6 +433,7 @@ docs/
 - `reference/human-infra-c2-longtail-fourth-batch-source-extraction-queue.json`：把第四批 12 个代谢、内分泌、肾肝、电解质和携氧稳态 C2 长尾域的 24 个候选来源派生成 source-specific 深读任务，要求抽取 exact claim、endpoint、population/setting、mechanism/effect、uncertainty、transfer boundary、downgrade 和 model position；它仍不等于来源已读完、fresh review 或 artifact 晋升完成。
 - `reference/human-infra-c2-longtail-fourth-batch-source-extraction-register.json`：记录 C2-LT-B4 24/24 个来源的本地字段级抽取，显式保留无摘要全文复核、重复共识路线、降级触发和模型阻塞边界；它仍不等于本地复核、fresh review、reviewed artifacts 或模型准入。
 - `reference/human-infra-c2-longtail-fourth-batch-local-review-register.json`：记录 C2-LT-B4 24/24 个来源抽取行的本地来源语境复核，确认非问题行只可进入 independent fresh review，1 个重复共识路线行和 3 个无摘要需全文行必须先 source-resolution/manual fulltext；它仍不等于 reviewed artifacts、Source Card 晋升完成或模型准入。
+- `reference/human-infra-c2-longtail-fourth-batch-source-resolution-register.json`：记录 C2-LT-B4 4 个本地复核问题行的来源路线候选，把重复共识路线、ESC 指南、AASLD fulltext 路径和 AGA 指南路径拆成 8 个可审查候选；它仍不等于 fresh review、manual fulltext extraction、reviewed artifacts 或模型准入。
 - `reference/human-infra-c2-longtail-third-batch-source-extraction-register.json`：记录 C2-LT-B3 24/24 个来源的本地字段级抽取，显式保留错源、标题/分卷错配、访问受限和降级触发边界；它仍不等于本地复核、fresh review、reviewed artifacts 或模型准入。
 - `reference/human-infra-c2-longtail-third-batch-local-review-register.json`：记录 C2-LT-B3 24/24 个来源抽取行的本地来源语境复核，确认其只可进入 independent fresh review 或 source-resolution，并保留 5 个错源/错配/访问受限问题行；它仍不等于 reviewed artifacts、Source Card 晋升完成或模型准入。
 - `reference/human-infra-c2-longtail-third-batch-source-resolution-register.json`：记录 C2-LT-B3 5 个本地复核问题行的来源纠偏候选，把错源、分卷错配和 publisher route 问题拆成 7 个 corrected/split/route-normalized 候选；它仍不等于 fresh review、corrected re-extraction、reviewed artifacts 或模型准入。
