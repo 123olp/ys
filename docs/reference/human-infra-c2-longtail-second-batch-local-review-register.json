@@ -1,0 +1,174 @@
+{
+  "schemaVersion": "human-infra.c2-longtail-second-batch-local-review-register.v1",
+  "registerId": "human-infra-c2-longtail-second-batch-local-review-register",
+  "status": "complete-local-source-context-review-independent-fresh-review-required",
+  "purpose": "Record local source-context review for all 24 C2-LT-B2 source extraction rows. This register verifies that the extracted rows are structurally ready to enter independent fresh review, while keeping Source Card promotion, reviewed artifacts and model admission blocked.",
+  "sourceOfTruth": {
+    "sourceExtractionQueue": "docs/reference/human-infra-c2-longtail-second-batch-source-extraction-queue.json",
+    "sourceExtractionRegister": "docs/reference/human-infra-c2-longtail-second-batch-source-extraction-register.json",
+    "sourceCardSystem": "docs/reference/source-card-system.md",
+    "maturityGapRegister": "docs/reference/human-infra-maturity-gap-register.json"
+  },
+  "scope": {
+    "batchId": "C2-LT-B2",
+    "reviewLevel": "source-extraction-row-local-context-review",
+    "sourceExtractionTaskCount": 24,
+    "localReviewedExtractionTaskCount": 24,
+    "coveredDomainCount": 12,
+    "reviewBatchCount": 2,
+    "selectionRule": "Review every C2-LT-B2 source extraction row after field extraction and before independent fresh review, card promotion or any model-admission consideration.",
+    "reviewedExtractionTaskIds": [
+      "C2LTB2-EXT-001",
+      "C2LTB2-EXT-002",
+      "C2LTB2-EXT-003",
+      "C2LTB2-EXT-004",
+      "C2LTB2-EXT-005",
+      "C2LTB2-EXT-006",
+      "C2LTB2-EXT-007",
+      "C2LTB2-EXT-008",
+      "C2LTB2-EXT-009",
+      "C2LTB2-EXT-010",
+      "C2LTB2-EXT-011",
+      "C2LTB2-EXT-012",
+      "C2LTB2-EXT-013",
+      "C2LTB2-EXT-014",
+      "C2LTB2-EXT-015",
+      "C2LTB2-EXT-016",
+      "C2LTB2-EXT-017",
+      "C2LTB2-EXT-018",
+      "C2LTB2-EXT-019",
+      "C2LTB2-EXT-020",
+      "C2LTB2-EXT-021",
+      "C2LTB2-EXT-022",
+      "C2LTB2-EXT-023",
+      "C2LTB2-EXT-024"
+    ],
+    "currentLimitations": [
+      "This is a local structural and source-context review, not independent fresh review.",
+      "This register does not validate external source claims, evidence grades, clinical recommendations, effect sizes or model calibration.",
+      "Rows can move to independent fresh review, but they cannot move to Source Card promotion or reviewed artifacts until fresh-review verdicts exist.",
+      "No row admits calibrated prediction, individual advice, individual death-date output, intervention ranking, clinical-validity claim or domain-claim upgrade."
+    ]
+  },
+  "requiredExtractionFieldsReviewed": [
+    "taskId",
+    "domainId",
+    "localDomainPath",
+    "sourceRefId",
+    "sourceTitle",
+    "sourceUrl",
+    "sourceRole",
+    "exactClaimUse",
+    "endpointDefinition",
+    "populationOrSetting",
+    "effectOrMechanismSignal",
+    "uncertaintyOrBias",
+    "transferBoundary",
+    "downgradeTriggers",
+    "modelPosition",
+    "modelAdmissionDecision",
+    "blockedUses",
+    "nextAction"
+  ],
+  "localReviewVerdict": "local-review-pass-for-independent-fresh-review-only",
+  "promotionDecision": "eligible-for-independent-fresh-review-only",
+  "modelAdmissionDecision": "blocked-pending-independent-fresh-review-reviewed-artifacts-and-model-gates",
+  "blockedUses": [
+    "calibrated-prediction",
+    "individual-advice",
+    "individual-death-date-output",
+    "intervention-ranking",
+    "clinical-validity-claim",
+    "domain-claim-upgrade"
+  ],
+  "requiredNextArtifacts": [
+    "c2ltb2-independent-fresh-review-protocol",
+    "c2ltb2-independent-fresh-review-verdict-register",
+    "reviewed-source-card",
+    "variable-card",
+    "endpoint-card",
+    "uncertainty-card",
+    "transfer-boundary-card",
+    "downgrade-check-row"
+  ],
+  "localReviewChecks": [
+    "Every reviewed task is present in the C2-LT-B2 source extraction queue.",
+    "Every reviewed task has a completed extraction row in the C2-LT-B2 source extraction register.",
+    "Every extraction row preserves exact claim use, endpoint, population or setting, mechanism or effect, uncertainty, transfer boundary, downgrade triggers and model position.",
+    "Every extraction row keeps model admission blocked and prohibited uses complete.",
+    "Every local domain path exists and exposes README.md and AGENTS.md.",
+    "The register explicitly routes the batch to independent fresh review before Source Card promotion."
+  ],
+  "reviewBatches": [
+    {
+      "reviewBatchId": "C2LTB2-LR-01-hemorrhage-airway-critical-care",
+      "reviewLabel": "出血、心衰、气道、烧伤、机械通气与创伤系统域",
+      "taskCount": 12,
+      "taskIds": [
+        "C2LTB2-EXT-001",
+        "C2LTB2-EXT-002",
+        "C2LTB2-EXT-003",
+        "C2LTB2-EXT-004",
+        "C2LTB2-EXT-005",
+        "C2LTB2-EXT-006",
+        "C2LTB2-EXT-007",
+        "C2LTB2-EXT-008",
+        "C2LTB2-EXT-009",
+        "C2LTB2-EXT-010",
+        "C2LTB2-EXT-011",
+        "C2LTB2-EXT-012"
+      ],
+      "domainIds": [
+        "acute-gastrointestinal-bleeding-endoscopy-continuity",
+        "acute-heart-failure-decompensation-continuity",
+        "asthma-copd-exacerbation-airway-continuity",
+        "burn-injury-critical-care-rehabilitation-continuity",
+        "mechanical-ventilation-respiratory-failure-continuity",
+        "trauma-system-hemorrhage-control-continuity"
+      ],
+      "reviewDecision": "local-review-pass-for-independent-fresh-review-only",
+      "nextReviewMode": "independent fresh review must verify acute-route source identity, guideline currentness, endpoint specificity, system-capacity boundary and no clinical recommendation overclaim before artifact promotion"
+    },
+    {
+      "reviewBatchId": "C2LTB2-LR-02-infection-wound-postacute-transfusion",
+      "reviewLabel": "感染、伤口、后急性感染、误吸与输血连续性域",
+      "taskCount": 12,
+      "taskIds": [
+        "C2LTB2-EXT-013",
+        "C2LTB2-EXT-014",
+        "C2LTB2-EXT-015",
+        "C2LTB2-EXT-016",
+        "C2LTB2-EXT-017",
+        "C2LTB2-EXT-018",
+        "C2LTB2-EXT-019",
+        "C2LTB2-EXT-020",
+        "C2LTB2-EXT-021",
+        "C2LTB2-EXT-022",
+        "C2LTB2-EXT-023",
+        "C2LTB2-EXT-024"
+      ],
+      "domainIds": [
+        "aspiration-pneumonia-airway-protection-continuity",
+        "diabetic-foot-ulcer-amputation-prevention-continuity",
+        "long-covid-post-acute-infection-continuity",
+        "transfusion-blood-management-hemorrhage-continuity",
+        "urinary-tract-infection-pyelonephritis-urosepsis-continuity",
+        "wound-infection-cellulitis-sepsis-continuity"
+      ],
+      "reviewDecision": "local-review-pass-for-independent-fresh-review-only",
+      "nextReviewMode": "independent fresh review must verify infection-site specificity, post-acute syndrome boundary, wound severity, airway-protection setting, transfusion threshold context and transfer limits before artifact promotion"
+    }
+  ],
+  "nonClaims": [
+    "This register is not an independent fresh review verdict register.",
+    "This register does not complete any reviewed Source Card, variable card, endpoint card, uncertainty card, transfer-boundary card or downgrade-check artifact.",
+    "This register does not validate external source truth, clinical recommendations, intervention effects, calibrated risks or individual prognosis.",
+    "This register does not authorize model admission, domain-claim upgrade, intervention ranking, individual advice or individual death-date output."
+  ],
+  "indexRequirements": [
+    "README.md",
+    "docs/reference/README.md",
+    "docs/reference/human-infra-maturity-roadmap.md",
+    "tools/README.md"
+  ]
+}
