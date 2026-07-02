@@ -8,7 +8,7 @@
   "maturityGapRegister": "docs/reference/human-infra-maturity-gap-register.json",
   "scope": {
     "c1Coverage": "all one-hop C1 boundary-rewriting research domains with README and AGENTS files",
-    "priorityC2Minimum": 8,
+    "priorityC2Minimum": 20,
     "priorityC2Domains": [
       "cellular-reprogramming",
       "regenerative-medicine",
@@ -17,7 +17,19 @@
       "neuro-continuity",
       "mitochondrial-bioenergetics",
       "genomic-stability-dna-repair",
-      "biological-age-clocks-biomarker-validation"
+      "biological-age-clocks-biomarker-validation",
+      "proteostasis-autophagy",
+      "cellular-senescence-clearance",
+      "extracellular-matrix-glycation",
+      "stem-cell-reserve-renewal",
+      "microbiome-ecology",
+      "cardiovascular-resilience",
+      "musculoskeletal-integrity",
+      "nutrition-metabolic-health",
+      "renal-hepatic-clearance",
+      "respiratory-oxygenation",
+      "blood-oxygen-hemostasis",
+      "endocrine-hormonal-regulation"
     ],
     "currentLimitations": [
       "This is priority-domain coverage, not full coverage of every C2 domain.",
@@ -711,6 +723,596 @@
         "不提供个体医疗建议"
       ],
       "nextEvidenceAction": "Create a biomarker validation matrix separating correlation, prediction, intervention response, endpoint alignment and misuse."
+    },
+    {
+      "domainId": "proteostasis-autophagy",
+      "tier": "C2",
+      "path": "domains/c2-source-maintenance/proteostasis-autophagy",
+      "requiredClaims": [
+        "HI-CL2",
+        "HI-CL4",
+        "HI-CL5",
+        "HI-CL6",
+        "HI-CL7"
+      ],
+      "strongClaim": "Proteostasis and autophagy support subject continuity only when protein quality-control changes improve function, resilience or recovery without causing toxicity, wasting or failed clearance.",
+      "modelPosition": "cellular-quality-control-screening",
+      "variables": {
+        "inputs": [
+          "proteotoxic-load",
+          "autophagy-flux-state",
+          "intervention-or-stress-context"
+        ],
+        "mediators": [
+          "aggregate-clearance",
+          "lysosomal-capacity",
+          "cell-stress-response"
+        ],
+        "outputs": [
+          "cellular-function-maintenance",
+          "recovery-resilience",
+          "toxicity-or-wasting-risk"
+        ]
+      },
+      "falsifiers": [
+        {
+          "condition": "Autophagy or proteostasis markers improve while tissue function, strength, cognition or survival-relevant resilience does not improve.",
+          "downgradeAction": "downgrade to biomarker-only mechanism claim",
+          "evidenceNeeded": "function endpoint or recovery endpoint linked to protein-quality variables"
+        },
+        {
+          "condition": "The route increases catabolism, malnutrition, toxicity, immune stress or cancer-supportive survival of damaged cells.",
+          "downgradeAction": "classify as mixed-effect or negative quality-control route",
+          "evidenceNeeded": "adverse-channel evidence covering wasting, toxicity, immune stress and malignant persistence"
+        }
+      ],
+      "prohibitedUses": [
+        "不提供补剂建议",
+        "不提供药物建议",
+        "不提供个体医疗建议"
+      ],
+      "nextEvidenceAction": "Build Source Cards separating autophagy flux markers, lysosomal function, tissue-level outcomes and adverse channels."
+    },
+    {
+      "domainId": "cellular-senescence-clearance",
+      "tier": "C2",
+      "path": "domains/c2-source-maintenance/cellular-senescence-clearance",
+      "requiredClaims": [
+        "HI-CL2",
+        "HI-CL4",
+        "HI-CL5",
+        "HI-CL6",
+        "HI-CL7"
+      ],
+      "strongClaim": "Senescence clearance can enter Human Infra only when reduced senescent burden or SASP activity improves tissue function while preserving repair, tumor suppression and safety.",
+      "modelPosition": "damage-cell-burden-screening",
+      "variables": {
+        "inputs": [
+          "senescent-cell-burden",
+          "SASP-inflammatory-signal",
+          "senolytic-or-senomorphic-route"
+        ],
+        "mediators": [
+          "tissue-inflammation",
+          "repair-cell-availability",
+          "tumor-suppression-context"
+        ],
+        "outputs": [
+          "functional-tissue-maintenance",
+          "inflammation-risk-change",
+          "safety-and-cancer-risk"
+        ]
+      },
+      "falsifiers": [
+        {
+          "condition": "A senescence-targeted route clears markers but worsens wound healing, immune defense, tissue repair or frailty.",
+          "downgradeAction": "downgrade to context-limited or negative route",
+          "evidenceNeeded": "repair, infection, wound-healing and frailty endpoint evidence"
+        },
+        {
+          "condition": "The claim ignores that senescence can be protective in tumor suppression or tissue remodeling contexts.",
+          "downgradeAction": "block universal clearance language and require context-specific framing",
+          "evidenceNeeded": "context table separating harmful chronic senescence from protective senescence roles"
+        }
+      ],
+      "prohibitedUses": [
+        "不提供药物建议",
+        "不提供补剂建议",
+        "不提供个体医疗建议"
+      ],
+      "nextEvidenceAction": "Create a senescence route matrix separating burden, SASP, tissue context, repair function and tail-risk channels."
+    },
+    {
+      "domainId": "extracellular-matrix-glycation",
+      "tier": "C2",
+      "path": "domains/c2-source-maintenance/extracellular-matrix-glycation",
+      "requiredClaims": [
+        "HI-CL2",
+        "HI-CL3",
+        "HI-CL4",
+        "HI-CL6",
+        "HI-CL7"
+      ],
+      "strongClaim": "Extracellular matrix and glycation routes affect subject continuity only when structural stiffness, fibrosis or crosslink burden can be tied to mobility, vascular function, wound healing or organ resilience.",
+      "modelPosition": "structural-maintenance-screening",
+      "variables": {
+        "inputs": [
+          "matrix-crosslink-burden",
+          "fibrosis-state",
+          "mechanical-tissue-context"
+        ],
+        "mediators": [
+          "tissue-elasticity",
+          "vascular-compliance",
+          "repair-remodeling-balance"
+        ],
+        "outputs": [
+          "mobility-and-function",
+          "organ-resilience",
+          "repair-or-fibrosis-risk"
+        ]
+      },
+      "falsifiers": [
+        {
+          "condition": "A route changes matrix or glycation markers without improving mechanical function, perfusion, mobility, wound healing or organ endpoints.",
+          "downgradeAction": "downgrade to structural biomarker hypothesis",
+          "evidenceNeeded": "mechanical, vascular, mobility or wound-healing endpoint evidence"
+        },
+        {
+          "condition": "Matrix remodeling increases rupture, impaired healing, inflammation, fibrosis rebound or off-target tissue damage.",
+          "downgradeAction": "classify as high-structural-risk route",
+          "evidenceNeeded": "tissue-specific remodeling safety and failure-mode evidence"
+        }
+      ],
+      "prohibitedUses": [
+        "不提供治疗建议",
+        "不提供检测解释",
+        "不提供个体医疗建议"
+      ],
+      "nextEvidenceAction": "Build ECM Source Cards linking crosslinks, fibrosis, tissue mechanics and functional outcomes."
+    },
+    {
+      "domainId": "stem-cell-reserve-renewal",
+      "tier": "C2",
+      "path": "domains/c2-source-maintenance/stem-cell-reserve-renewal",
+      "requiredClaims": [
+        "HI-CL2",
+        "HI-CL4",
+        "HI-CL5",
+        "HI-CL6",
+        "HI-CL7"
+      ],
+      "strongClaim": "Stem-cell reserve and renewal support continuity only when they preserve tissue repair capacity without exhausting niches, inducing dysplasia or increasing malignant transformation.",
+      "modelPosition": "repair-reserve-screening",
+      "variables": {
+        "inputs": [
+          "stem-cell-pool-state",
+          "niche-signal-context",
+          "regeneration-stimulus"
+        ],
+        "mediators": [
+          "self-renewal-balance",
+          "differentiation-fidelity",
+          "clonal-expansion-risk"
+        ],
+        "outputs": [
+          "tissue-repair-capacity",
+          "regeneration-quality",
+          "cancer-or-exhaustion-risk"
+        ]
+      },
+      "falsifiers": [
+        {
+          "condition": "A route increases proliferation or stem-cell markers without durable functional repair or tissue integration.",
+          "downgradeAction": "downgrade to proliferation-marker claim",
+          "evidenceNeeded": "durable repair, differentiation fidelity and integration evidence"
+        },
+        {
+          "condition": "Renewal stimulation increases clonal expansion, dysplasia, fibrosis or tumor risk.",
+          "downgradeAction": "classify as high-tail-risk regeneration route",
+          "evidenceNeeded": "longitudinal clonal, dysplasia, fibrosis and malignancy safety evidence"
+        }
+      ],
+      "prohibitedUses": [
+        "不提供细胞治疗建议",
+        "不提供个体医疗建议",
+        "不证明再生疗法有效"
+      ],
+      "nextEvidenceAction": "Separate reserve, niche, proliferation, differentiation, integration and malignancy variables in Source Cards."
+    },
+    {
+      "domainId": "microbiome-ecology",
+      "tier": "C2",
+      "path": "domains/c2-source-maintenance/microbiome-ecology",
+      "requiredClaims": [
+        "HI-CL2",
+        "HI-CL4",
+        "HI-CL5",
+        "HI-CL6",
+        "HI-CL7"
+      ],
+      "strongClaim": "Microbiome ecology affects subject continuity only when microbial changes can be tied to metabolism, immunity, barrier function, inflammation, infection risk or treatment response.",
+      "modelPosition": "ecosystem-mediator-screening",
+      "variables": {
+        "inputs": [
+          "microbial-community-state",
+          "diet-drug-environment-context",
+          "host-barrier-and-immune-state"
+        ],
+        "mediators": [
+          "metabolite-production",
+          "immune-modulation",
+          "pathogen-resistance"
+        ],
+        "outputs": [
+          "metabolic-and-immune-resilience",
+          "infection-or-inflammation-risk",
+          "function-and-recovery-change"
+        ]
+      },
+      "falsifiers": [
+        {
+          "condition": "A microbiome association cannot distinguish cause, consequence, confounding, diet, medication or disease-state effects.",
+          "downgradeAction": "downgrade to observational association",
+          "evidenceNeeded": "causal design, longitudinal data, intervention evidence or sensitivity analysis"
+        },
+        {
+          "condition": "Microbiome manipulation worsens infection risk, immune dysregulation, GI symptoms or treatment safety.",
+          "downgradeAction": "classify as mixed-effect or unsafe ecological intervention",
+          "evidenceNeeded": "adverse event, pathogen transfer, immune and symptom outcome evidence"
+        }
+      ],
+      "prohibitedUses": [
+        "不提供饮食建议",
+        "不提供益生菌或移植建议",
+        "不提供个体医疗建议"
+      ],
+      "nextEvidenceAction": "Build microbiome Source Cards separating association, causality, intervention response and safety transfer risks."
+    },
+    {
+      "domainId": "cardiovascular-resilience",
+      "tier": "C2",
+      "path": "domains/c2-source-maintenance/cardiovascular-resilience",
+      "requiredClaims": [
+        "HI-CL2",
+        "HI-CL3",
+        "HI-CL4",
+        "HI-CL6",
+        "HI-CL7"
+      ],
+      "strongClaim": "Cardiovascular resilience is a core source-maintenance route only when risk-factor control, perfusion, vascular integrity and recovery capacity reduce failure risk without creating harmful tradeoffs.",
+      "modelPosition": "major-system-failure-risk-screening",
+      "variables": {
+        "inputs": [
+          "blood-pressure-lipid-glycemic-context",
+          "vascular-structure-state",
+          "cardiac-functional-reserve"
+        ],
+        "mediators": [
+          "atherosclerotic-risk",
+          "perfusion-stability",
+          "thrombotic-and-bleeding-balance"
+        ],
+        "outputs": [
+          "major-cardiovascular-event-risk",
+          "functional-capacity",
+          "effective-time-loss-risk"
+        ]
+      },
+      "falsifiers": [
+        {
+          "condition": "A cardiovascular route improves a surrogate while failing to reduce events, functional decline, hospitalization or effective-time loss.",
+          "downgradeAction": "downgrade to surrogate-only cardiovascular claim",
+          "evidenceNeeded": "event, function, hospitalization or effective-time endpoint evidence"
+        },
+        {
+          "condition": "Risk reduction increases falls, bleeding, hypotension, renal injury, treatment burden or access inequity.",
+          "downgradeAction": "classify as mixed-effect route with explicit harm channels",
+          "evidenceNeeded": "adverse event, burden, access and subgroup evidence"
+        }
+      ],
+      "prohibitedUses": [
+        "不提供用药建议",
+        "不解释个人检测结果",
+        "不提供个体医疗建议"
+      ],
+      "nextEvidenceAction": "Map cardiovascular variables to hazard, function, recovery and treatment-burden outcomes."
+    },
+    {
+      "domainId": "musculoskeletal-integrity",
+      "tier": "C2",
+      "path": "domains/c2-source-maintenance/musculoskeletal-integrity",
+      "requiredClaims": [
+        "HI-CL2",
+        "HI-CL3",
+        "HI-CL4",
+        "HI-CL6",
+        "HI-CL7"
+      ],
+      "strongClaim": "Musculoskeletal integrity supports subject continuity by preserving mobility, strength, balance, fracture resistance and task execution capacity under risk and recovery constraints.",
+      "modelPosition": "mobility-and-load-bearing-screening",
+      "variables": {
+        "inputs": [
+          "muscle-mass-strength-state",
+          "bone-density-fracture-risk",
+          "joint-and-balance-function"
+        ],
+        "mediators": [
+          "mobility-capacity",
+          "fall-and-fracture-risk",
+          "rehabilitation-response"
+        ],
+        "outputs": [
+          "ADL-and-task-execution",
+          "injury-and-disability-risk",
+          "effective-time-preservation"
+        ]
+      },
+      "falsifiers": [
+        {
+          "condition": "A route improves body-composition or imaging markers without improving strength, mobility, falls, fractures, pain or daily function.",
+          "downgradeAction": "downgrade to structural surrogate claim",
+          "evidenceNeeded": "strength, mobility, falls, fracture, pain or ADL endpoint evidence"
+        },
+        {
+          "condition": "Training, drug or device pathways increase injury, pain, overuse, frailty, access burden or adherence failure.",
+          "downgradeAction": "classify as context-limited or negative execution route",
+          "evidenceNeeded": "injury, adherence, functional and subgroup feasibility evidence"
+        }
+      ],
+      "prohibitedUses": [
+        "不提供训练处方",
+        "不提供用药或设备建议",
+        "不提供个体医疗建议"
+      ],
+      "nextEvidenceAction": "Create a musculoskeletal variable table connecting strength, balance, fracture risk, pain and task execution."
+    },
+    {
+      "domainId": "nutrition-metabolic-health",
+      "tier": "C2",
+      "path": "domains/c2-source-maintenance/nutrition-metabolic-health",
+      "requiredClaims": [
+        "HI-CL2",
+        "HI-CL3",
+        "HI-CL4",
+        "HI-CL5",
+        "HI-CL6",
+        "HI-CL7"
+      ],
+      "strongClaim": "Nutrition and metabolic health support subject continuity only when energy availability, metabolic risk, body composition and food environment are modeled with safety, adherence and access constraints.",
+      "modelPosition": "metabolic-resource-screening",
+      "variables": {
+        "inputs": [
+          "diet-quality-and-energy-availability",
+          "metabolic-risk-state",
+          "food-access-environment"
+        ],
+        "mediators": [
+          "glycemic-insulin-lipid-signaling",
+          "body-composition-change",
+          "adherence-and-burden"
+        ],
+        "outputs": [
+          "functional-energy-and-recovery",
+          "cardiometabolic-risk-change",
+          "effective-time-and-access-burden"
+        ]
+      },
+      "falsifiers": [
+        {
+          "condition": "A diet or metabolic route improves a biomarker but worsens energy, mood, function, social feasibility, eating-disorder risk or long-term adherence.",
+          "downgradeAction": "classify as mixed-effect or unsafe resource route",
+          "evidenceNeeded": "function, safety, adherence, burden and subgroup evidence"
+        },
+        {
+          "condition": "The route ignores food access, cost, culture, comorbidity, medication interaction or baseline nutritional risk.",
+          "downgradeAction": "downgrade to context-limited intervention claim",
+          "evidenceNeeded": "implementation-context and access-equity evidence"
+        }
+      ],
+      "prohibitedUses": [
+        "不提供个人饮食方案",
+        "不提供补剂建议",
+        "不提供个体医疗建议"
+      ],
+      "nextEvidenceAction": "Separate metabolic biomarkers, functional energy, adherence, access and adverse nutrition channels."
+    },
+    {
+      "domainId": "renal-hepatic-clearance",
+      "tier": "C2",
+      "path": "domains/c2-source-maintenance/renal-hepatic-clearance",
+      "requiredClaims": [
+        "HI-CL2",
+        "HI-CL4",
+        "HI-CL5",
+        "HI-CL6",
+        "HI-CL7"
+      ],
+      "strongClaim": "Renal and hepatic clearance maintain subject continuity by preserving internal-environment stability, drug handling, toxin removal and metabolic reserve under failure-risk constraints.",
+      "modelPosition": "clearance-and-homeostasis-screening",
+      "variables": {
+        "inputs": [
+          "kidney-filtration-state",
+          "liver-metabolic-clearance-state",
+          "toxin-drug-exposure"
+        ],
+        "mediators": [
+          "fluid-electrolyte-control",
+          "drug-metabolite-accumulation",
+          "systemic-toxicity-risk"
+        ],
+        "outputs": [
+          "homeostasis-stability",
+          "treatment-safety-window",
+          "organ-failure-risk"
+        ]
+      },
+      "falsifiers": [
+        {
+          "condition": "A clearance claim lacks kidney/liver function, exposure, medication, comorbidity or acute-failure context.",
+          "downgradeAction": "downgrade to incomplete homeostasis claim",
+          "evidenceNeeded": "renal, hepatic, exposure and treatment-context variables"
+        },
+        {
+          "condition": "A route improves one clearance marker while increasing dehydration, electrolyte imbalance, toxicity, bleeding, infection or treatment burden.",
+          "downgradeAction": "classify as mixed-effect clearance route",
+          "evidenceNeeded": "safety, adverse-event, medication-interaction and function evidence"
+        }
+      ],
+      "prohibitedUses": [
+        "不解释化验结果",
+        "不提供用药建议",
+        "不提供个体医疗建议"
+      ],
+      "nextEvidenceAction": "Build clearance Source Cards connecting renal/hepatic variables to homeostasis, toxicity and treatment-safety outputs."
+    },
+    {
+      "domainId": "respiratory-oxygenation",
+      "tier": "C2",
+      "path": "domains/c2-source-maintenance/respiratory-oxygenation",
+      "requiredClaims": [
+        "HI-CL2",
+        "HI-CL3",
+        "HI-CL4",
+        "HI-CL6",
+        "HI-CL7"
+      ],
+      "strongClaim": "Respiratory oxygenation supports subject continuity when ventilation, oxygen exchange, airway protection, sleep breathing and exposure control preserve energy, cognition and survival reserve.",
+      "modelPosition": "oxygenation-and-airway-screening",
+      "variables": {
+        "inputs": [
+          "ventilation-and-gas-exchange-state",
+          "airway-obstruction-or-protection-risk",
+          "environmental-air-exposure"
+        ],
+        "mediators": [
+          "oxygen-saturation-stability",
+          "sleep-and-fatigue-burden",
+          "infection-and-exacerbation-risk"
+        ],
+        "outputs": [
+          "cognitive-and-physical-energy",
+          "acute-respiratory-failure-risk",
+          "effective-time-loss"
+        ]
+      },
+      "falsifiers": [
+        {
+          "condition": "Respiratory markers improve without measurable gains in symptoms, sleep, cognition, activity, exacerbations or survival-relevant reserve.",
+          "downgradeAction": "downgrade to physiology-marker claim",
+          "evidenceNeeded": "symptom, sleep, activity, exacerbation or reserve endpoint evidence"
+        },
+        {
+          "condition": "A route increases device burden, adherence failure, infection risk, CO2 retention, oxygen hazard or access inequity.",
+          "downgradeAction": "classify as context-limited or negative respiratory route",
+          "evidenceNeeded": "device, adherence, adverse-event and access evidence"
+        }
+      ],
+      "prohibitedUses": [
+        "不提供设备设置建议",
+        "不解释个人检测结果",
+        "不提供个体医疗建议"
+      ],
+      "nextEvidenceAction": "Connect oxygenation, sleep breathing, airway risk and environmental exposure to energy and effective-time outputs."
+    },
+    {
+      "domainId": "blood-oxygen-hemostasis",
+      "tier": "C2",
+      "path": "domains/c2-source-maintenance/blood-oxygen-hemostasis",
+      "requiredClaims": [
+        "HI-CL2",
+        "HI-CL3",
+        "HI-CL4",
+        "HI-CL6",
+        "HI-CL7"
+      ],
+      "strongClaim": "Blood oxygen transport and hemostasis matter for continuity only when anemia, oxygen-carrying capacity, bleeding, thrombosis and transfusion safety are linked to function and failure risk.",
+      "modelPosition": "transport-and-hemostasis-screening",
+      "variables": {
+        "inputs": [
+          "hemoglobin-oxygen-carrying-state",
+          "coagulation-bleeding-thrombosis-context",
+          "transfusion-or-anticoagulation-route"
+        ],
+        "mediators": [
+          "tissue-oxygen-delivery",
+          "bleeding-risk",
+          "thrombotic-risk"
+        ],
+        "outputs": [
+          "fatigue-and-function",
+          "acute-event-risk",
+          "treatment-safety-balance"
+        ]
+      },
+      "falsifiers": [
+        {
+          "condition": "A blood marker improves without improving fatigue, exercise tolerance, cognition, bleeding/thrombotic outcomes or acute-event risk.",
+          "downgradeAction": "downgrade to laboratory-marker claim",
+          "evidenceNeeded": "function, oxygen-delivery, bleeding/thrombosis and acute-event evidence"
+        },
+        {
+          "condition": "A route reduces one risk while increasing opposing bleeding, clotting, transfusion, immune or access risks.",
+          "downgradeAction": "classify as tradeoff-sensitive hemostasis route",
+          "evidenceNeeded": "risk-balance evidence for bleeding, thrombosis, transfusion and safety"
+        }
+      ],
+      "prohibitedUses": [
+        "不解释血液检测",
+        "不提供用药建议",
+        "不提供个体医疗建议"
+      ],
+      "nextEvidenceAction": "Build a hemostasis tradeoff map covering oxygen transport, bleeding, thrombosis, transfusion and functional endpoints."
+    },
+    {
+      "domainId": "endocrine-hormonal-regulation",
+      "tier": "C2",
+      "path": "domains/c2-source-maintenance/endocrine-hormonal-regulation",
+      "requiredClaims": [
+        "HI-CL2",
+        "HI-CL3",
+        "HI-CL4",
+        "HI-CL5",
+        "HI-CL6",
+        "HI-CL7"
+      ],
+      "strongClaim": "Endocrine regulation supports subject continuity only when hormonal feedback, stress response, metabolism, reproduction, bone, mood and cardiovascular tradeoffs are modeled as a coupled control system.",
+      "modelPosition": "feedback-control-screening",
+      "variables": {
+        "inputs": [
+          "hormone-axis-state",
+          "feedback-loop-context",
+          "replacement-or-suppression-route"
+        ],
+        "mediators": [
+          "metabolic-and-stress-response",
+          "bone-reproductive-mood-effects",
+          "cardiovascular-and-cancer-risk"
+        ],
+        "outputs": [
+          "energy-recovery-and-function",
+          "multi-system-risk-balance",
+          "effective-time-and-safety"
+        ]
+      },
+      "falsifiers": [
+        {
+          "condition": "A hormonal route improves a single lab value while worsening mood, sleep, bone, fertility, cardiovascular risk, cancer risk or feedback stability.",
+          "downgradeAction": "classify as coupled-system mixed-effect route",
+          "evidenceNeeded": "multi-axis outcome and adverse-channel evidence"
+        },
+        {
+          "condition": "The claim ignores feedback loops, age, sex, comorbidity, baseline deficiency/excess, dose or monitoring context.",
+          "downgradeAction": "downgrade to context-limited endocrine claim",
+          "evidenceNeeded": "axis-specific, population-specific and feedback-aware evidence"
+        }
+      ],
+      "prohibitedUses": [
+        "不解释激素检测",
+        "不提供激素治疗建议",
+        "不提供个体医疗建议"
+      ],
+      "nextEvidenceAction": "Create endocrine axis cards separating deficiency, excess, replacement, suppression, feedback and adverse tradeoffs."
     }
   ],
   "indexRequirements": [

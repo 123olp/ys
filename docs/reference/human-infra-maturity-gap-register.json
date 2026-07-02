@@ -114,7 +114,7 @@
     {
       "axisId": "research_framework",
       "axisName": "研究框架",
-      "currentPercent": 66,
+      "currentPercent": 70,
       "targetPercent": 100,
       "definitionOfDone": "Every strong project claim can be traced to source cards, claim-evidence rows, variables, mechanism links, falsifiers, model position and governance boundary.",
       "primaryEvidence": [
@@ -209,10 +209,10 @@
             "tools/audit_human_infra_paper_claim_register.py"
           ],
           "missingEvidence": [
-            "Falsifier rows for C2 long-tail domain claims beyond the priority subset.",
-            "Source Card backfill that validates each priority-domain falsifier against external or internal evidence."
+            "Falsifier rows for C2 domain claims beyond the current 20-domain priority set.",
+            "Source Card backfill that validates each priority-domain and paper-specific falsifier against external or internal evidence."
           ],
-          "nextAction": "Extend priority-domain falsifier coverage into C2 long-tail domains, then backfill Source Cards for paper and domain falsifiers.",
+          "nextAction": "Backfill Source Cards for paper and 20 priority C2 domain falsifiers, then extend falsifier coverage beyond the current priority set.",
           "blocks100Percent": true
         }
       ]
@@ -359,7 +359,7 @@
   "nextWorkOrder": [
     {
       "priority": 1,
-      "item": "Extend priority-domain falsifier coverage into C2 long-tail domains and backfill Source Cards for paper/domain falsifiers.",
+      "item": "Backfill Source Cards for paper and 20 priority C2 domain falsifiers, then extend falsifier coverage beyond the current priority set.",
       "unblocks": [
         "RESEARCH-G6-falsifier-and-downgrade-coverage"
       ]

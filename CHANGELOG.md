@@ -4,6 +4,7 @@ All notable repository structure changes are recorded here.
 
 ## 2026-07-02
 
+- Expanded the domain falsifier coverage gate from 8 to 20 priority C2 source-maintenance domains, adding second-wave falsifier scaffolding for proteostasis, senescence, ECM/glycation, stem-cell reserve, microbiome, cardiovascular, musculoskeletal, nutrition/metabolic, renal/hepatic, respiratory, blood oxygen/hemostasis and endocrine regulation domains.
 - Added a machine-readable arXiv-style paper claim register and audit gate, requiring every PaperReaderLayout page to register paper-specific strong claims, core Claim IDs, falsifiers, downgrade actions, source data paths and prohibited-use boundaries.
 - Added a machine-readable C1 and priority C2 domain falsifier coverage register and audit gate, requiring strong claims, model positions, variable interfaces, falsifier rows, downgrade actions and prohibited-use boundaries before priority domain claims can be treated as research-framework covered.
 - Added a machine-readable page-level Claim ID consistency register and audit gate, wiring README, Web homepage, arXiv-style paper pages, the life-path model note and the maturity roadmap to the same Human Infra claim spine and prohibited-use boundary language.
