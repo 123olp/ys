@@ -1,0 +1,154 @@
+{
+  "schemaVersion": "human-infra.c2-longtail-third-batch-independent-fresh-review-protocol.v1",
+  "registerId": "human-infra-c2-longtail-third-batch-independent-fresh-review-protocol-2026-07-03",
+  "status": "active-review-protocol",
+  "purpose": "Define independent fresh-review batches, required source-resolution checks and promotion boundaries for the 24 locally reviewed C2-LT-B3 source-context extraction rows without storing verdicts inside the protocol artifact.",
+  "sourceOfTruth": {
+    "localReviewRegister": "docs/reference/human-infra-c2-longtail-third-batch-local-review-register.json",
+    "sourceResolutionRegister": "docs/reference/human-infra-c2-longtail-third-batch-source-resolution-register.json",
+    "sourceExtractionRegister": "docs/reference/human-infra-c2-longtail-third-batch-source-extraction-register.json",
+    "sourceExtractionQueue": "docs/reference/human-infra-c2-longtail-third-batch-source-extraction-queue.json",
+    "sourceCardSystem": "docs/reference/source-card-system.md",
+    "evidencePolicy": "docs/reference/evidence-policy.md",
+    "maturityGapRegister": "docs/reference/human-infra-maturity-gap-register.json"
+  },
+  "scope": {
+    "localReviewedExtractionTaskCount": 24,
+    "coveredDomainCount": 12,
+    "batchCount": 2,
+    "sourceResolutionIssueCount": 5,
+    "sourceResolutionCandidateCount": 7,
+    "protocolEmbeddedVerdictCount": 0,
+    "selectionRule": "Every C2-LT-B3 local-review row must receive independent fresh review before any reviewed artifact or model-admission claim; rows flagged in the source-resolution register must also review the corrected, split or route-normalized candidates before artifact fill.",
+    "sourceResolutionIssueTaskIds": [
+      "C2LTB3-EXT-007",
+      "C2LTB3-EXT-010",
+      "C2LTB3-EXT-011",
+      "C2LTB3-EXT-012",
+      "C2LTB3-EXT-020"
+    ],
+    "nonClaims": [
+      "This protocol is not an independent fresh review verdict register.",
+      "This protocol does not complete Source Cards, variable cards, endpoint cards, uncertainty cards, transfer-boundary cards or downgrade-check artifacts.",
+      "This protocol does not repair the source extraction register or replace corrected-source re-extraction.",
+      "This protocol does not authorize calibrated prediction, individual advice, individual death-date output, intervention ranking, domain-claim upgrade or clinical-validity claims."
+    ]
+  },
+  "requiredReviewFields": [
+    "sourceIdentityVerdict",
+    "sourceResolutionVerdict",
+    "sourceContextVerdict",
+    "exactClaimUseVerdict",
+    "domainTransferVerdict",
+    "modelPositionVerdict",
+    "uncertaintyBoundaryVerdict",
+    "downgradeVerdict",
+    "blockedUseVerdict",
+    "reviewerNote"
+  ],
+  "verdictTaxonomy": [
+    "support-with-boundary",
+    "bounded-support",
+    "source-resolution-supported",
+    "downgrade-required",
+    "reject-source-context-mismatch",
+    "cannot-evaluate-insufficient-context"
+  ],
+  "artifactPromotionDecisions": [
+    "eligible-for-bounded-artifact-fill",
+    "eligible-for-corrected-source-reextraction",
+    "downgrade-before-fill",
+    "rejected-no-fill",
+    "blocked-cannot-evaluate"
+  ],
+  "blockedUses": [
+    "calibrated-prediction",
+    "individual-advice",
+    "individual-death-date-output",
+    "intervention-ranking",
+    "clinical-validity-claim",
+    "domain-claim-upgrade"
+  ],
+  "sourceResolutionRules": [
+    "Rows listed in sourceResolutionIssueTaskIds cannot fill reviewed artifacts from the original mismatched or access-blocked source row.",
+    "source-resolution-supported may proceed only to corrected source re-extraction or bounded companion-source review, not direct model admission.",
+    "Corrected, split or route-normalized candidates must preserve source identity, currentness, exact claim, endpoint, uncertainty, transfer boundary, downgrade trigger and model-position checks.",
+    "Publisher access-blocked rows may use companion bibliographic records only as bounded source-context support until the primary route is manually accessible or a current authoritative equivalent is verified."
+  ],
+  "promotionRules": [
+    "support-with-boundary or bounded-support may proceed only to bounded reviewed-artifact fill for rows without unresolved source-resolution issues, never directly to model admission.",
+    "source-resolution-supported rows may proceed only to eligible-for-corrected-source-reextraction or bounded companion-source review before any artifact fill.",
+    "downgrade-required rows must carry a downgrade note before artifact fill and remain blocked for calibrated prediction.",
+    "reject-source-context-mismatch rows must not fill reviewed artifacts until source identity or role is corrected.",
+    "cannot-evaluate-insufficient-context rows remain blocked until a primary or authoritative source can be independently checked.",
+    "Artifact promotion decisions are limited to eligible-for-bounded-artifact-fill, eligible-for-corrected-source-reextraction, downgrade-before-fill, rejected-no-fill and blocked-cannot-evaluate."
+  ],
+  "indexRequirements": [
+    "README.md",
+    "docs/reference/README.md",
+    "docs/reference/human-infra-maturity-roadmap.md",
+    "tools/README.md"
+  ],
+  "reviewBatches": [
+    {
+      "batchId": "C2LTB3-FRB-01-neuro-icu-swallow-neuromuscular",
+      "sourceLocalReviewBatchId": "C2LTB3-LR-01-neuro-icu-swallow-neuromuscular",
+      "batchLabel": "TBI、癫痫、ICU 谵妄、卒中吞咽、MG 与 SMA 神经连续性域",
+      "taskCount": 12,
+      "taskIds": [
+        "C2LTB3-EXT-001",
+        "C2LTB3-EXT-002",
+        "C2LTB3-EXT-003",
+        "C2LTB3-EXT-004",
+        "C2LTB3-EXT-005",
+        "C2LTB3-EXT-006",
+        "C2LTB3-EXT-007",
+        "C2LTB3-EXT-008",
+        "C2LTB3-EXT-009",
+        "C2LTB3-EXT-010",
+        "C2LTB3-EXT-011",
+        "C2LTB3-EXT-012"
+      ],
+      "domainIds": [
+        "epilepsy-seizure-network-stability",
+        "intensive-care-organ-support-delirium-continuity",
+        "myasthenia-gravis-neuromuscular-junction-continuity",
+        "post-stroke-dysphagia-screening-recovery-continuity",
+        "spinal-muscular-atrophy-motor-neuron-continuity",
+        "traumatic-brain-injury-neurotrauma-recovery"
+      ],
+      "reviewPriority": "first",
+      "reviewFocus": "independent fresh review must verify neurocritical-care scope, pediatric mild-TBI boundary, epilepsy guideline scope, ICU delirium setting, post-stroke dysphagia corrected PMID, MG PMID correction, SMA part/title split and no individual clinical recommendation overclaim before artifact promotion"
+    },
+    {
+      "batchId": "C2LTB3-FRB-02-vision-hearing-vestibular-language",
+      "sourceLocalReviewBatchId": "C2LTB3-LR-02-vision-hearing-vestibular-language",
+      "batchLabel": "AMD、白内障、听力、突发听损、前庭康复与新生儿听筛语言发展域",
+      "taskCount": 12,
+      "taskIds": [
+        "C2LTB3-EXT-013",
+        "C2LTB3-EXT-014",
+        "C2LTB3-EXT-015",
+        "C2LTB3-EXT-016",
+        "C2LTB3-EXT-017",
+        "C2LTB3-EXT-018",
+        "C2LTB3-EXT-019",
+        "C2LTB3-EXT-020",
+        "C2LTB3-EXT-021",
+        "C2LTB3-EXT-022",
+        "C2LTB3-EXT-023",
+        "C2LTB3-EXT-024"
+      ],
+      "domainIds": [
+        "age-related-hearing-loss-hearing-aid-continuity",
+        "age-related-macular-degeneration-central-vision-continuity",
+        "cataract-vision-restoration-continuity",
+        "newborn-hearing-screening-language-development-continuity",
+        "sudden-hearing-loss-urgent-referral-continuity",
+        "vestibular-rehabilitation-balance-compensation-continuity"
+      ],
+      "reviewPriority": "second",
+      "reviewFocus": "independent fresh review must verify visual-function scope, public condition-page limits, adult hearing-loss guideline scope, sudden-hearing-loss publisher access boundary with PubMed companion record, vestibular guideline update status, EHDI benchmark context and no individual prognosis overclaim before artifact promotion"
+    }
+  ]
+}
