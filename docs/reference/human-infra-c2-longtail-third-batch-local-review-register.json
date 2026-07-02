@@ -1,0 +1,216 @@
+{
+  "schemaVersion": "human-infra.c2-longtail-third-batch-local-review-register.v1",
+  "registerId": "human-infra-c2-longtail-third-batch-local-review-register-2026-07-03",
+  "status": "complete-local-source-context-review-independent-fresh-review-required",
+  "purpose": "Record local source-context review for all 24 C2-LT-B3 source extraction rows. This register verifies structural readiness for independent fresh review while preserving source-resolution issues, blocked uses, reviewed-artifact blocks and model-admission blocks.",
+  "sourceOfTruth": {
+    "sourceExtractionQueue": "docs/reference/human-infra-c2-longtail-third-batch-source-extraction-queue.json",
+    "sourceExtractionRegister": "docs/reference/human-infra-c2-longtail-third-batch-source-extraction-register.json",
+    "sourceCardSystem": "docs/reference/source-card-system.md",
+    "maturityGapRegister": "docs/reference/human-infra-maturity-gap-register.json"
+  },
+  "scope": {
+    "batchId": "C2-LT-B3",
+    "reviewLevel": "source-extraction-row-local-context-review",
+    "sourceExtractionTaskCount": 24,
+    "localReviewedExtractionTaskCount": 24,
+    "coveredDomainCount": 12,
+    "reviewBatchCount": 2,
+    "sourceResolutionIssueCount": 5,
+    "selectionRule": "Review every C2-LT-B3 source extraction row after field extraction and before independent fresh review, card promotion or any model-admission consideration.",
+    "reviewedExtractionTaskIds": [
+      "C2LTB3-EXT-001",
+      "C2LTB3-EXT-002",
+      "C2LTB3-EXT-003",
+      "C2LTB3-EXT-004",
+      "C2LTB3-EXT-005",
+      "C2LTB3-EXT-006",
+      "C2LTB3-EXT-007",
+      "C2LTB3-EXT-008",
+      "C2LTB3-EXT-009",
+      "C2LTB3-EXT-010",
+      "C2LTB3-EXT-011",
+      "C2LTB3-EXT-012",
+      "C2LTB3-EXT-013",
+      "C2LTB3-EXT-014",
+      "C2LTB3-EXT-015",
+      "C2LTB3-EXT-016",
+      "C2LTB3-EXT-017",
+      "C2LTB3-EXT-018",
+      "C2LTB3-EXT-019",
+      "C2LTB3-EXT-020",
+      "C2LTB3-EXT-021",
+      "C2LTB3-EXT-022",
+      "C2LTB3-EXT-023",
+      "C2LTB3-EXT-024"
+    ],
+    "currentLimitations": [
+      "This is a local structural and source-context review, not independent fresh review.",
+      "Rows with PubMed mismatches, title/part mismatches or publisher access blocks require source-resolution or manual access before they can support domain claims.",
+      "Rows can move to independent fresh review or source-resolution review, but they cannot move to Source Card promotion or reviewed artifacts until fresh-review verdicts exist.",
+      "No row admits calibrated prediction, individual advice, individual death-date output, intervention ranking, clinical-validity claim or domain-claim upgrade."
+    ]
+  },
+  "requiredExtractionFieldsReviewed": [
+    "taskId",
+    "domainId",
+    "localDomainPath",
+    "sourceRefId",
+    "sourceTitle",
+    "sourceUrl",
+    "sourceRole",
+    "exactClaimUse",
+    "endpointDefinition",
+    "populationOrSetting",
+    "effectOrMechanismSignal",
+    "uncertaintyOrBias",
+    "transferBoundary",
+    "downgradeTriggers",
+    "modelPosition",
+    "modelAdmissionDecision",
+    "blockedUses",
+    "nextAction"
+  ],
+  "localReviewVerdict": "local-review-pass-for-independent-fresh-review-only-with-source-resolution-flags-preserved",
+  "promotionDecision": "eligible-for-independent-fresh-review-only-not-reviewed-artifact-fill",
+  "sourceResolutionDecision": "five-rows-require-source-resolution-manual-access-or-bounded-companion-review-before-domain-claim-support",
+  "modelAdmissionDecision": "blocked-pending-independent-fresh-review-reviewed-artifacts-and-model-gates",
+  "blockedUses": [
+    "calibrated-prediction",
+    "individual-advice",
+    "individual-death-date-output",
+    "intervention-ranking",
+    "clinical-validity-claim",
+    "domain-claim-upgrade"
+  ],
+  "requiredNextArtifacts": [
+    "c2ltb3-independent-fresh-review-protocol",
+    "c2ltb3-independent-fresh-review-verdict-register",
+    "c2ltb3-source-resolution-register-for-issue-rows",
+    "reviewed-source-card",
+    "variable-card",
+    "endpoint-card",
+    "uncertainty-card",
+    "transfer-boundary-card",
+    "downgrade-check-row"
+  ],
+  "localReviewChecks": [
+    "Every reviewed task is present in the C2-LT-B3 source extraction queue.",
+    "Every reviewed task has a completed extraction row in the C2-LT-B3 source extraction register.",
+    "Every extraction row preserves exact claim use, endpoint, population or setting, mechanism or effect, uncertainty, transfer boundary, downgrade triggers and model position.",
+    "Every extraction row keeps model admission blocked and prohibited uses complete.",
+    "Every local domain path exists and exposes README.md and AGENTS.md.",
+    "Rows with source-lineage, title/part or publisher-access issues are explicitly preserved in sourceResolutionFindings.",
+    "The register routes the batch to independent fresh review and source-resolution review before Source Card promotion."
+  ],
+  "sourceResolutionFindings": [
+    {
+      "taskId": "C2LTB3-EXT-007",
+      "issueType": "pubmed-title-mismatch",
+      "reviewDisposition": "source-resolution-required-before-fresh-review-verdict-can-support-domain-claim",
+      "correctionCandidate": "PMID 34746431 likely matches ESO/ESSD post-stroke dysphagia guideline",
+      "reason": "Queued PMID resolves to reproductive-health screening, not post-stroke dysphagia."
+    },
+    {
+      "taskId": "C2LTB3-EXT-010",
+      "issueType": "pubmed-title-mismatch",
+      "reviewDisposition": "source-resolution-required-before-fresh-review-verdict-can-support-domain-claim",
+      "correctionCandidate": "PMID 27358333 likely matches MG executive summary",
+      "reason": "Queued PMID resolves to venous-symptom reply, not MG consensus executive summary."
+    },
+    {
+      "taskId": "C2LTB3-EXT-011",
+      "issueType": "pubmed-record-title-part-mismatch",
+      "reviewDisposition": "bounded-fresh-review-allowed-only-as-sma-part2-context-or-source-resolution-required-for-part1-claim",
+      "correctionCandidate": "PMID 29290580 likely matches SMA Part 1 diagnosis/rehabilitation/orthopedic/nutritional care",
+      "reason": "Queued PMID is SMA-relevant but resolves to Part 2, not queued Part 1 title."
+    },
+    {
+      "taskId": "C2LTB3-EXT-012",
+      "issueType": "pubmed-title-mismatch",
+      "reviewDisposition": "source-resolution-required-before-fresh-review-verdict-can-support-domain-claim",
+      "correctionCandidate": "PMID 29305137 likely matches SMA Part 2",
+      "reason": "Queued PMID resolves to MuSK myasthenia gravis and pregnancy, not SMA Part 2."
+    },
+    {
+      "taskId": "C2LTB3-EXT-020",
+      "issueType": "publisher-page-forbidden",
+      "reviewDisposition": "manual-access-or-companion-pubmed-row-required-before-independent-evidence-counting",
+      "correctionCandidate": "Use EXT-019 PubMed guideline record as companion until publisher page is manually accessible",
+      "reason": "AAO-HNS publisher route page was access-forbidden in automated checks."
+    }
+  ],
+  "reviewBatches": [
+    {
+      "reviewBatchId": "C2LTB3-LR-01-neuro-icu-swallow-neuromuscular",
+      "reviewLabel": "TBI、癫痫、ICU 谵妄、卒中吞咽、MG 与 SMA 神经连续性域",
+      "taskIds": [
+        "C2LTB3-EXT-001",
+        "C2LTB3-EXT-002",
+        "C2LTB3-EXT-003",
+        "C2LTB3-EXT-004",
+        "C2LTB3-EXT-005",
+        "C2LTB3-EXT-006",
+        "C2LTB3-EXT-007",
+        "C2LTB3-EXT-008",
+        "C2LTB3-EXT-009",
+        "C2LTB3-EXT-010",
+        "C2LTB3-EXT-011",
+        "C2LTB3-EXT-012"
+      ],
+      "nextReviewMode": "independent fresh review must verify neurocritical-care scope, pediatric mild-TBI boundary, epilepsy guideline scope, ICU delirium setting, post-stroke dysphagia source-resolution, MG PMID correction, SMA part/title correction and no individual clinical recommendation overclaim before artifact promotion",
+      "taskCount": 12,
+      "domainIds": [
+        "epilepsy-seizure-network-stability",
+        "intensive-care-organ-support-delirium-continuity",
+        "myasthenia-gravis-neuromuscular-junction-continuity",
+        "post-stroke-dysphagia-screening-recovery-continuity",
+        "spinal-muscular-atrophy-motor-neuron-continuity",
+        "traumatic-brain-injury-neurotrauma-recovery"
+      ],
+      "reviewDecision": "local-review-pass-for-independent-fresh-review-only"
+    },
+    {
+      "reviewBatchId": "C2LTB3-LR-02-vision-hearing-vestibular-language",
+      "reviewLabel": "AMD、白内障、听力、突发听损、前庭康复与新生儿听筛语言发展域",
+      "taskIds": [
+        "C2LTB3-EXT-013",
+        "C2LTB3-EXT-014",
+        "C2LTB3-EXT-015",
+        "C2LTB3-EXT-016",
+        "C2LTB3-EXT-017",
+        "C2LTB3-EXT-018",
+        "C2LTB3-EXT-019",
+        "C2LTB3-EXT-020",
+        "C2LTB3-EXT-021",
+        "C2LTB3-EXT-022",
+        "C2LTB3-EXT-023",
+        "C2LTB3-EXT-024"
+      ],
+      "nextReviewMode": "independent fresh review must verify visual-function scope, public condition-page limits, adult hearing-loss guideline scope, sudden-hearing-loss publisher access boundary, vestibular guideline update status, EHDI benchmark context and no individual prognosis overclaim before artifact promotion",
+      "taskCount": 12,
+      "domainIds": [
+        "age-related-hearing-loss-hearing-aid-continuity",
+        "age-related-macular-degeneration-central-vision-continuity",
+        "cataract-vision-restoration-continuity",
+        "newborn-hearing-screening-language-development-continuity",
+        "sudden-hearing-loss-urgent-referral-continuity",
+        "vestibular-rehabilitation-balance-compensation-continuity"
+      ],
+      "reviewDecision": "local-review-pass-for-independent-fresh-review-only"
+    }
+  ],
+  "nonClaims": [
+    "This register is not an independent fresh review verdict register.",
+    "This register does not complete any reviewed Source Card, variable card, endpoint card, uncertainty card, transfer-boundary card or downgrade-check artifact.",
+    "This register does not repair source-lineage mismatches; it records them for source-resolution review.",
+    "This register does not validate external source truth, clinical recommendations, intervention effects, calibrated risks or individual prognosis.",
+    "This register does not authorize model admission, domain-claim upgrade, intervention ranking, individual advice or individual death-date output."
+  ],
+  "indexRequirements": [
+    "README.md",
+    "docs/reference/README.md",
+    "docs/reference/human-infra-maturity-roadmap.md",
+    "tools/README.md"
+  ]
+}
