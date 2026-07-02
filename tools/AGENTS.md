@@ -16,7 +16,7 @@ tools/
 ├── audit_human_infra_domain_falsifier_coverage.py # C1/C2 优先域反证覆盖审计器
 ├── audit_human_infra_domain_claim_evidence_matrix.py # 域级主张-证据矩阵审计器
 ├── audit_human_infra_domain_source_card_field_extraction.py # 域 Source Card 字段抽取审计器
-├── audit_human_infra_c2_longtail_first_batch_source_extraction_register.py # C2-LT-B1 12/48 来源抽取试运行审计器
+├── audit_human_infra_c2_longtail_first_batch_source_extraction_register.py # C2-LT-B1 24/48 来源抽取试运行审计器
 ├── audit_human_infra_domain_source_specific_extraction_queue.py # 域-来源深读队列审计器
 ├── audit_human_infra_domain_source_specific_extraction_register.py # 域-来源精读完成寄存器审计器
 ├── audit_human_infra_domain_source_card_promotion_queue.py # 域-来源卡片晋升队列审计器
@@ -57,7 +57,7 @@ tools/
 - `audit_human_infra_domain_claim_evidence_matrix.py` 只检查当前 26 个优先研究域是否通过域级矩阵连接到强主张、变量契约来源、反证来源和已抽取 Source Card ID；它不证明外部文献正确，也不等于完成逐条 endpoint / population / uncertainty Source Card 精读。
 - `audit_human_infra_domain_source_card_field_extraction.py` 只检查当前 26 个优先研究域是否具备 endpoint 候选、population 槽位、uncertainty 槽位、transfer-boundary 槽位和下一步抽取动作；它不证明 source-specific endpoint、样本、人群、效应量或不确定性已经完成精读。
 - `audit_human_infra_c2_longtail_coverage_register.py` 只检查 C2 长尾覆盖账本是否覆盖 `classification.tsv` 中全部 C2 域，并明确 20 个已覆盖优先域与 184 个长尾缺口；它不补足长尾证据。
-- `audit_human_infra_c2_longtail_first_batch_source_extraction_register.py` 只检查 C2-LT-B1 来源抽取试运行账本是否完成前 12/48 个来源语境字段、阻塞用途、索引和队列映射；它不证明 full Source Cards、fresh review 或模型准入已经完成。
+- `audit_human_infra_c2_longtail_first_batch_source_extraction_register.py` 只检查 C2-LT-B1 来源抽取试运行账本是否完成前 24/48 个来源语境字段、阻塞用途、索引和队列映射；它不证明 full Source Cards、fresh review 或模型准入已经完成。
 - `audit_human_infra_domain_source_specific_extraction_queue.py` 只检查当前 26 个域字段行是否派生为 81 个 domain-source 深读任务，并确认模型准入仍被 exact claim、endpoint、population、uncertainty 和 transfer-boundary 精读阻塞；它不证明任何来源已经支持对应域主张。
 - `audit_human_infra_domain_source_specific_extraction_register.py` 只检查当前 81/81 个 domain-source 精读完成行是否来自队列、字段匹配、阻塞用途完整、索引到位；它不证明外部文献已完成 fresh review，也不打开校准预测、个体建议或干预排序。
 - `audit_human_infra_domain_source_card_promotion_queue.py` 只检查当前 81 个 completed field rows 是否一一派生为 fresh review、Source Card、变量卡、endpoint 卡、uncertainty 卡、transfer-boundary 卡和 downgrade check 晋升任务；它不证明任何晋升任务已经完成，也不打开模型准入。

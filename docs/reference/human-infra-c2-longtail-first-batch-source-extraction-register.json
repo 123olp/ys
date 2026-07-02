@@ -12,10 +12,10 @@
   "scope": {
     "batchId": "C2-LT-B1",
     "queueTaskCount": 48,
-    "extractedTaskCount": 12,
-    "remainingTaskCount": 36,
-    "coveredDomainCount": 6,
-    "extractionDepth": "first-12-high-impact-acute-and-chronic-transition-sources",
+    "extractedTaskCount": 24,
+    "remainingTaskCount": 24,
+    "coveredDomainCount": 12,
+    "extractionDepth": "first-24-high-impact-acute-chronic-metabolic-fitness-neuro-and-motor-continuity-sources",
     "selectedTaskIds": [
       "C2LTB1-EXT-001",
       "C2LTB1-EXT-002",
@@ -28,7 +28,19 @@
       "C2LTB1-EXT-009",
       "C2LTB1-EXT-010",
       "C2LTB1-EXT-011",
-      "C2LTB1-EXT-012"
+      "C2LTB1-EXT-012",
+      "C2LTB1-EXT-013",
+      "C2LTB1-EXT-014",
+      "C2LTB1-EXT-015",
+      "C2LTB1-EXT-016",
+      "C2LTB1-EXT-017",
+      "C2LTB1-EXT-018",
+      "C2LTB1-EXT-019",
+      "C2LTB1-EXT-020",
+      "C2LTB1-EXT-021",
+      "C2LTB1-EXT-022",
+      "C2LTB1-EXT-023",
+      "C2LTB1-EXT-024"
     ],
     "currentLimitations": [
       "This is a pilot extraction register, not a complete first-batch Source Card set.",
@@ -552,6 +564,520 @@
         "domain-claim-upgrade"
       ],
       "nextAction": "Build a CDC diabetes statistics card with year, denominator, diabetes/prediabetes definitions and complication endpoint boundaries."
+    },
+    {
+      "taskId": "C2LTB1-EXT-013",
+      "domainId": "obesity-adiposity-metabolic-risk-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/obesity-adiposity-metabolic-risk-continuity",
+      "sourceRefId": "C2LTB1-SRC-07-1",
+      "sourceTitle": "WHO Obesity and overweight fact sheet",
+      "sourceUrl": "https://www.who.int/news-room/fact-sheets/detail/obesity-and-overweight",
+      "extractionStatus": "completed-c2ltb1-pilot-source-context-extraction",
+      "sourceAccessStatus": "official-global-public-health-fact-sheet-source-identified",
+      "sourceRole": "global-obesity-burden-definition-and-risk-context-anchor",
+      "exactClaimUse": "Supports obesity and overweight as global burden and risk-context domains, including measurement vocabulary, disease-risk framing and population-level public-health relevance.",
+      "endpointDefinition": "Candidate endpoints include BMI category, overweight or obesity prevalence, metabolic disease burden, cardiovascular disease burden, musculoskeletal burden and population-level risk-factor context when defined by the source.",
+      "populationOrSetting": "Global population and public-health setting. The source is not a clinical trial, not an individual body-composition assessment and not a personalized weight-loss protocol.",
+      "effectOrMechanismSignal": "Burden and mechanism-context signal: excess adiposity is linked with noncommunicable disease risk, metabolic stress, mechanical load and health-system burden, but this extraction does not quantify individual causal effects.",
+      "uncertaintyOrBias": "BMI does not directly measure fat distribution, body composition or individual metabolic health; country, age, sex, ethnicity, survey method and diagnostic threshold affect transferability.",
+      "transferBoundary": "Transfer only to global burden framing, endpoint vocabulary and risk-channel identification. Do not infer personal prognosis, treatment ranking or calibrated adiposity-risk effects.",
+      "downgradeTriggers": [
+        "If BMI is treated as a complete body-composition measure, downgrade to measurement-context only.",
+        "If prevalence or burden is transferred across countries, age groups or years without denominator review, block quantitative use.",
+        "If the source is used to rank obesity interventions, block and require intervention-specific evidence."
+      ],
+      "modelPosition": {
+        "primaryLocation": "burden-definition-and-risk-channel-context",
+        "variables": [
+          "bmi-or-waist",
+          "metabolic-risk-cluster",
+          "inflammation-signal",
+          "mobility-burden",
+          "disease-incidence"
+        ],
+        "admissibleUse": "global burden and endpoint vocabulary only"
+      },
+      "modelAdmissionDecision": "burden-context-support-only-blocked-for-calibrated-modeling",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Create a full obesity Source Card with WHO measurement definitions, year, population denominator, burden endpoints and explicit BMI limitation notes."
+    },
+    {
+      "taskId": "C2LTB1-EXT-014",
+      "domainId": "obesity-adiposity-metabolic-risk-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/obesity-adiposity-metabolic-risk-continuity",
+      "sourceRefId": "C2LTB1-SRC-07-2",
+      "sourceTitle": "CDC Adult Obesity Facts",
+      "sourceUrl": "https://www.cdc.gov/obesity/adult-obesity-facts/index.html",
+      "extractionStatus": "completed-c2ltb1-pilot-source-context-extraction",
+      "sourceAccessStatus": "official-us-public-health-surveillance-source-identified",
+      "sourceRole": "us-adult-obesity-prevalence-and-disparity-context-anchor",
+      "exactClaimUse": "Supports adult obesity as a US population-burden and disparity context domain that can inform endpoint vocabulary and observation-process boundaries.",
+      "endpointDefinition": "Candidate endpoints include adult obesity prevalence, severe obesity prevalence, demographic subgroup differences and obesity-associated disease burden where the source defines them.",
+      "populationOrSetting": "US adult surveillance and public-health reporting context, not an intervention cohort and not a personalized obesity diagnosis or treatment plan.",
+      "effectOrMechanismSignal": "Population-context signal: obesity burden varies by subgroup and is associated with chronic disease channels relevant to healthspan and effective action capacity.",
+      "uncertaintyOrBias": "Estimates depend on surveillance year, survey design, self-report or measured height and weight, subgroup sample size and definitional thresholds.",
+      "transferBoundary": "Transfer only to US burden, disparity and endpoint-context work. Do not generalize to non-US populations or use as individual risk calibration without data review.",
+      "downgradeTriggers": [
+        "If year, data source or population denominator is omitted, block quantitative use.",
+        "If obesity prevalence is treated as intervention efficacy, downgrade to burden context.",
+        "If subgroup disparities are used without sample and method notes, require fresh review before promotion."
+      ],
+      "modelPosition": {
+        "primaryLocation": "population-burden-and-observation-process-context",
+        "variables": [
+          "bmi-or-waist",
+          "metabolic-risk-cluster",
+          "mobility-burden",
+          "disease-incidence"
+        ],
+        "admissibleUse": "US surveillance context and endpoint vocabulary only"
+      },
+      "modelAdmissionDecision": "surveillance-context-support-only-blocked-for-calibrated-modeling",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Extract CDC adult obesity year, denominator, measurement method, subgroup fields and severe-obesity endpoint definitions into a full Source Card."
+    },
+    {
+      "taskId": "C2LTB1-EXT-015",
+      "domainId": "cardiorespiratory-fitness-vo2max-aerobic-capacity-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/cardiorespiratory-fitness-vo2max-aerobic-capacity-continuity",
+      "sourceRefId": "C2LTB1-SRC-08-1",
+      "sourceTitle": "AHA Scientific Statement: Cardiorespiratory Fitness in Clinical Practice",
+      "sourceUrl": "https://www.ahajournals.org/doi/10.1161/CIR.0000000000000461",
+      "extractionStatus": "completed-c2ltb1-pilot-source-context-extraction",
+      "sourceAccessStatus": "official-scientific-statement-source-identified-automated-access-may-be-restricted",
+      "sourceRole": "cardiorespiratory-fitness-measurement-and-risk-context-anchor",
+      "exactClaimUse": "Supports cardiorespiratory fitness as a measurable functional-reserve and risk-stratification domain that may be represented by exercise capacity, VO2max or fitness-category variables.",
+      "endpointDefinition": "Candidate endpoints include VO2max, estimated cardiorespiratory fitness, exercise capacity, fitness category, functional reserve and all-cause or cardiovascular risk context when extracted from the statement.",
+      "populationOrSetting": "Clinical-practice and preventive-cardiology context. This register does not convert the statement into individual exercise prescription or personal risk prediction.",
+      "effectOrMechanismSignal": "Measurement and risk-context signal: aerobic capacity captures integrated cardiovascular, pulmonary, muscular and metabolic reserve relevant to fatigue burden and action capacity.",
+      "uncertaintyOrBias": "Fitness estimates vary by direct measurement versus estimation, protocol, age, sex, medication, comorbidity, disability, baseline activity and selection into testing.",
+      "transferBoundary": "Transfer only to measurement vocabulary and candidate functional-reserve variables until exact statement claims, tables and evidence grades are freshly reviewed.",
+      "downgradeTriggers": [
+        "If VO2max and estimated fitness are merged without method flags, block quantitative use.",
+        "If observational risk associations are used as intervention effects, downgrade to risk-context only.",
+        "If test protocol, population or contraindication boundaries are omitted, keep model admission blocked."
+      ],
+      "modelPosition": {
+        "primaryLocation": "functional-reserve-measurement-and-risk-context",
+        "variables": [
+          "vo2max-or-fitness-category",
+          "exercise-capacity",
+          "all-cause-mortality-risk",
+          "fatigue-burden",
+          "functional-reserve"
+        ],
+        "admissibleUse": "fitness variable and endpoint vocabulary pending full statement extraction"
+      },
+      "modelAdmissionDecision": "measurement-context-support-only-blocked-for-calibrated-modeling",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Extract AHA CRF measurement definitions, risk claim boundaries, testing protocols and evidence tables into a Source Card."
+    },
+    {
+      "taskId": "C2LTB1-EXT-016",
+      "domainId": "cardiorespiratory-fitness-vo2max-aerobic-capacity-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/cardiorespiratory-fitness-vo2max-aerobic-capacity-continuity",
+      "sourceRefId": "C2LTB1-SRC-08-2",
+      "sourceTitle": "Physical Activity Guidelines for Americans",
+      "sourceUrl": "https://health.gov/our-work/nutrition-physical-activity/physical-activity-guidelines",
+      "extractionStatus": "completed-c2ltb1-pilot-source-context-extraction",
+      "sourceAccessStatus": "official-us-public-health-guideline-source-identified",
+      "sourceRole": "physical-activity-guideline-and-functional-capacity-context-anchor",
+      "exactClaimUse": "Supports physical activity as a public-health guideline domain connected to aerobic capacity, functional reserve, chronic-disease risk and effective-time maintenance.",
+      "endpointDefinition": "Candidate endpoints include aerobic activity volume, muscle-strengthening activity, sedentary behavior context, functional capacity and guideline-defined activity categories.",
+      "populationOrSetting": "US public-health guideline setting across age and population groups. It is not a personalized exercise prescription and not an individual contraindication assessment.",
+      "effectOrMechanismSignal": "Guideline-context signal: regular physical activity is positioned as a broad healthspan-supporting exposure affecting cardiometabolic, musculoskeletal, cognitive and functional outcomes.",
+      "uncertaintyOrBias": "Recommendations differ by age, disability, pregnancy, chronic disease, baseline fitness and safety constraints; adherence and dose measurement are major uncertainty sources.",
+      "transferBoundary": "Transfer only to activity-domain vocabulary, exposure categories and qualitative functional-reserve framing until dose-response and subgroup evidence are separately reviewed.",
+      "downgradeTriggers": [
+        "If guideline categories are used as calibrated effect sizes, block quantitative use.",
+        "If safety, disability or chronic-disease adaptation is omitted, block personal-advice use.",
+        "If activity dose is transferred without measurement method, downgrade to qualitative exposure context."
+      ],
+      "modelPosition": {
+        "primaryLocation": "behavioral-exposure-and-functional-reserve-context",
+        "variables": [
+          "vo2max-or-fitness-category",
+          "exercise-capacity",
+          "activity-volume",
+          "fatigue-burden",
+          "functional-reserve"
+        ],
+        "admissibleUse": "public-health exposure vocabulary and qualitative functional-reserve context"
+      },
+      "modelAdmissionDecision": "guideline-context-support-only-blocked-for-calibrated-modeling",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Build a guideline Source Card separating age groups, activity categories, safety boundaries, dose-response claims and evidence-summary sources."
+    },
+    {
+      "taskId": "C2LTB1-EXT-017",
+      "domainId": "cerebrovascular-stroke-brain-perfusion-resilience",
+      "localDomainPath": "domains/c2-source-maintenance/cerebrovascular-stroke-brain-perfusion-resilience",
+      "sourceRefId": "C2LTB1-SRC-09-1",
+      "sourceTitle": "NINDS Stroke information",
+      "sourceUrl": "https://www.ninds.nih.gov/health-information/disorders/stroke",
+      "extractionStatus": "completed-c2ltb1-pilot-source-context-extraction",
+      "sourceAccessStatus": "official-nih-disease-information-source-identified",
+      "sourceRole": "stroke-mechanism-symptom-treatment-and-recovery-context-anchor",
+      "exactClaimUse": "Supports stroke as a time-sensitive brain-perfusion and neurological-continuity failure mode involving ischemic or hemorrhagic mechanisms, symptoms, emergency care, recovery and prevention context.",
+      "endpointDefinition": "Candidate endpoints include stroke type, time-to-care, neurological deficit, functional outcome, recurrent stroke risk, rehabilitation access and long-term disability context.",
+      "populationOrSetting": "General disease-information context for people with stroke risk, suspected stroke, post-stroke recovery or caregivers. It is not a personal triage, treatment or prognosis tool.",
+      "effectOrMechanismSignal": "Mechanism-context signal: interrupted brain blood flow or bleeding can produce acute mortality, neurological injury, functional loss, language/cognitive impairment and recovery needs.",
+      "uncertaintyOrBias": "Disease-information pages simplify heterogeneous stroke types, etiologies, severity, treatment windows, local care pathways and rehabilitation access.",
+      "transferBoundary": "Transfer only to mechanism vocabulary, route variables and endpoint candidates. Emergency response, therapy eligibility and prognosis require clinical sources and individual assessment.",
+      "downgradeTriggers": [
+        "If ischemic and hemorrhagic stroke are merged without type flags, block endpoint promotion.",
+        "If time-to-care is converted into individual survival gain, downgrade to unsupported.",
+        "If rehabilitation access and baseline severity are omitted, block functional-outcome claims."
+      ],
+      "modelPosition": {
+        "primaryLocation": "acute-neurological-hazard-and-recovery-route-context",
+        "variables": [
+          "time-to-reperfusion-or-care",
+          "stroke-severity",
+          "functional-outcome",
+          "recurrent-stroke-risk",
+          "rehabilitation-access"
+        ],
+        "admissibleUse": "mechanism and endpoint vocabulary for stroke-continuity modeling"
+      },
+      "modelAdmissionDecision": "disease-context-support-only-blocked-for-calibrated-modeling",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Extract stroke type definitions, emergency timing boundaries, recovery endpoints and rehabilitation variables into a full Source Card."
+    },
+    {
+      "taskId": "C2LTB1-EXT-018",
+      "domainId": "cerebrovascular-stroke-brain-perfusion-resilience",
+      "localDomainPath": "domains/c2-source-maintenance/cerebrovascular-stroke-brain-perfusion-resilience",
+      "sourceRefId": "C2LTB1-SRC-09-2",
+      "sourceTitle": "AHA/ASA Stroke Guidelines hub",
+      "sourceUrl": "https://www.stroke.org/en/professionals/stroke-resource-library/prevention-and-treatment-guidelines",
+      "extractionStatus": "completed-c2ltb1-pilot-source-context-extraction",
+      "sourceAccessStatus": "official-professional-guideline-hub-source-identified",
+      "sourceRole": "stroke-guideline-route-and-prevention-context-anchor",
+      "exactClaimUse": "Supports stroke prevention and treatment as a guideline-governed continuity route requiring source-specific extraction of guideline title, population, recommendation class, evidence level and endpoint.",
+      "endpointDefinition": "Candidate endpoints include primary prevention, acute treatment, secondary prevention, recurrence, functional recovery and guideline-specific clinical outcomes after exact guideline selection.",
+      "populationOrSetting": "Professional guideline library context spanning different stroke scenarios. The hub itself is an index and must not be used as a single recommendation source without selecting a specific guideline.",
+      "effectOrMechanismSignal": "Guideline-route signal: prevention, acute care and secondary prevention can alter stroke risk channels and recovery pathways, but the hub only points to detailed sources.",
+      "uncertaintyOrBias": "The hub aggregates multiple documents with different dates, populations and evidence standards; stale guideline versions or wrong document selection can misclassify claims.",
+      "transferBoundary": "Transfer only as route-to-source and guideline-discovery metadata until each specific AHA/ASA guideline is extracted separately.",
+      "downgradeTriggers": [
+        "If a claim cites the hub without a specific guideline document, block Source Card promotion.",
+        "If recommendation class, evidence level or population is missing, keep as route metadata.",
+        "If prevention and acute-treatment claims are mixed, require separate endpoint cards."
+      ],
+      "modelPosition": {
+        "primaryLocation": "guideline-discovery-and-route-index-context",
+        "variables": [
+          "time-to-reperfusion-or-care",
+          "stroke-severity",
+          "functional-outcome",
+          "recurrent-stroke-risk",
+          "rehabilitation-access"
+        ],
+        "admissibleUse": "guideline index and route metadata only"
+      },
+      "modelAdmissionDecision": "guideline-index-support-only-blocked-for-calibrated-modeling",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Select the relevant AHA/ASA guideline documents and extract exact recommendations, populations, endpoints and evidence grades."
+    },
+    {
+      "taskId": "C2LTB1-EXT-019",
+      "domainId": "delirium-acute-cognitive-failure-prevention",
+      "localDomainPath": "domains/c2-source-maintenance/delirium-acute-cognitive-failure-prevention",
+      "sourceRefId": "C2LTB1-SRC-10-1",
+      "sourceTitle": "SCCM PADIS Guidelines",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/30113379/",
+      "extractionStatus": "completed-c2ltb1-pilot-source-context-extraction",
+      "sourceAccessStatus": "pubmed-indexed-critical-care-guideline-source-identified",
+      "sourceRole": "icu-pain-agitation-delirium-immobility-sleep-guideline-context-anchor",
+      "exactClaimUse": "Supports delirium as an ICU cognitive-failure and recovery-risk domain embedded in pain, agitation, sedation, immobility and sleep-disruption management.",
+      "endpointDefinition": "Candidate endpoints include delirium incidence, delirium duration, sedation exposure, pain/agitation status, immobility, sleep disruption and post-discharge cognitive or functional outcomes.",
+      "populationOrSetting": "Adult ICU and critical-care context addressed by PADIS guidance. It does not cover all hospital delirium settings or authorize personal sedation decisions.",
+      "effectOrMechanismSignal": "Care-pathway signal: sedation, pain control, mobility, sleep and delirium detection are modifiable process variables that can influence acute cognitive failure and recovery trajectory.",
+      "uncertaintyOrBias": "Guideline recommendations depend on ICU population, evidence certainty, instrument choice, staffing, ventilation status, baseline cognition and delirium ascertainment method.",
+      "transferBoundary": "Transfer only to ICU delirium endpoint and care-process vocabulary until recommendation strength, evidence level, population and comparator are extracted.",
+      "downgradeTriggers": [
+        "If ICU PADIS claims are generalized to all delirium without setting flags, downgrade to ICU-specific context.",
+        "If sedation exposure is treated as a simple causal variable without confounding by severity, block model use.",
+        "If screening tool and delirium definition are missing, keep as qualitative route support."
+      ],
+      "modelPosition": {
+        "primaryLocation": "acute-cognitive-failure-care-process-context",
+        "variables": [
+          "delirium-incidence",
+          "duration-of-delirium",
+          "sedation-exposure",
+          "cognitive-recovery",
+          "post-discharge-function"
+        ],
+        "admissibleUse": "ICU delirium endpoint and care-process vocabulary pending full guideline extraction"
+      },
+      "modelAdmissionDecision": "critical-care-guideline-context-only-blocked-for-calibrated-modeling",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Extract PADIS recommendation classes, delirium instruments, intervention bundles, ICU populations and evidence certainty into a full Source Card."
+    },
+    {
+      "taskId": "C2LTB1-EXT-020",
+      "domainId": "delirium-acute-cognitive-failure-prevention",
+      "localDomainPath": "domains/c2-source-maintenance/delirium-acute-cognitive-failure-prevention",
+      "sourceRefId": "C2LTB1-SRC-10-2",
+      "sourceTitle": "NICE Delirium prevention diagnosis and management guideline",
+      "sourceUrl": "https://www.nice.org.uk/guidance/cg103",
+      "extractionStatus": "completed-c2ltb1-pilot-source-context-extraction",
+      "sourceAccessStatus": "official-clinical-guideline-source-identified",
+      "sourceRole": "delirium-risk-identification-prevention-diagnosis-and-management-anchor",
+      "exactClaimUse": "Supports delirium prevention, diagnosis and management as a structured hospital and long-term-care pathway with risk identification, assessment and response components.",
+      "endpointDefinition": "Candidate endpoints include delirium risk status, new delirium, delirium severity or duration, cognitive recovery, functional recovery and care-dependence transition.",
+      "populationOrSetting": "Clinical guideline context for people in hospital and long-term care settings covered by NICE CG103; individual diagnosis and treatment remain outside this register.",
+      "effectOrMechanismSignal": "Prevention and management pathway signal: identifying risk factors, addressing precipitating factors and recognizing acute cognitive change may alter delirium incidence, duration and recovery context.",
+      "uncertaintyOrBias": "Guideline applicability depends on setting, baseline dementia, sensory impairment, acute illness severity, medication exposure, care staffing and diagnostic instrument use.",
+      "transferBoundary": "Transfer only to guideline pathway structure and endpoint vocabulary until exact NICE recommendations, populations and evidence details are extracted.",
+      "downgradeTriggers": [
+        "If delirium and dementia are conflated, block endpoint promotion.",
+        "If guideline pathway is converted into effect size without trial evidence, downgrade to qualitative pathway support.",
+        "If setting, risk factors or assessment method are omitted, keep model admission blocked."
+      ],
+      "modelPosition": {
+        "primaryLocation": "delirium-prevention-diagnosis-management-pathway-context",
+        "variables": [
+          "delirium-incidence",
+          "duration-of-delirium",
+          "sedation-exposure",
+          "cognitive-recovery",
+          "post-discharge-function"
+        ],
+        "admissibleUse": "clinical pathway and endpoint vocabulary pending full NICE extraction"
+      },
+      "modelAdmissionDecision": "clinical-guideline-pathway-only-blocked-for-calibrated-modeling",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Extract NICE risk-factor lists, prevention components, diagnostic criteria, recommendation wording and evidence caveats into a Source Card."
+    },
+    {
+      "taskId": "C2LTB1-EXT-021",
+      "domainId": "disorders-of-consciousness-coma-recovery",
+      "localDomainPath": "domains/c2-source-maintenance/disorders-of-consciousness-coma-recovery",
+      "sourceRefId": "C2LTB1-SRC-11-1",
+      "sourceTitle": "AAN Practice Guideline Update: Disorders of Consciousness",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/30089618/",
+      "extractionStatus": "completed-c2ltb1-pilot-source-context-extraction",
+      "sourceAccessStatus": "pubmed-indexed-neurology-guideline-source-identified",
+      "sourceRole": "disorders-of-consciousness-diagnosis-prognosis-and-care-decision-anchor",
+      "exactClaimUse": "Supports disorders of consciousness as a subject-continuity boundary domain where diagnosis, prognosis, communication capacity and care planning require high-evidence safeguards.",
+      "endpointDefinition": "Candidate endpoints include diagnostic state, behavioral responsiveness, recovery status, communication capacity, prognosis horizon, long-term function and decision-support boundary.",
+      "populationOrSetting": "Neurology and rehabilitation context for patients with prolonged disorders of consciousness after brain injury. This register does not decide care withdrawal, prognosis or personal communication status.",
+      "effectOrMechanismSignal": "Assessment and prognosis signal: structured diagnosis and follow-up can affect recovery-window recognition, misdiagnosis risk, care planning and continuity judgments.",
+      "uncertaintyOrBias": "Diagnosis can be confounded by fluctuating arousal, sensory/motor impairment, medication, examiner expertise, tool selection, imaging availability and time since injury.",
+      "transferBoundary": "Transfer only to endpoint vocabulary, evidence-boundary requirements and subject-continuity governance. Do not use for individual prognosis or care decisions.",
+      "downgradeTriggers": [
+        "If diagnostic state is assigned without validated assessment context, block model use.",
+        "If prognosis is converted into individual outcome prediction, block personal prediction use.",
+        "If time since injury, etiology and assessment method are missing, keep as qualitative boundary context."
+      ],
+      "modelPosition": {
+        "primaryLocation": "subject-continuity-boundary-and-prognosis-governance-context",
+        "variables": [
+          "diagnostic-state",
+          "recovery-probability",
+          "communication-capacity",
+          "care-decision-boundary",
+          "long-term-function"
+        ],
+        "admissibleUse": "boundary, endpoint and governance vocabulary pending full guideline extraction"
+      },
+      "modelAdmissionDecision": "subject-continuity-boundary-context-only-blocked-for-calibrated-modeling",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Extract AAN diagnostic categories, prognostic time horizons, assessment tools, evidence levels and family-decision boundaries into a Source Card."
+    },
+    {
+      "taskId": "C2LTB1-EXT-022",
+      "domainId": "disorders-of-consciousness-coma-recovery",
+      "localDomainPath": "domains/c2-source-maintenance/disorders-of-consciousness-coma-recovery",
+      "sourceRefId": "C2LTB1-SRC-11-2",
+      "sourceTitle": "Model Systems Knowledge Translation Center TBI and disorders of consciousness",
+      "sourceUrl": "https://msktc.org/tbi/factsheets/disorders-consciousness",
+      "extractionStatus": "completed-c2ltb1-pilot-source-context-extraction",
+      "sourceAccessStatus": "rehabilitation-education-factsheet-source-identified",
+      "sourceRole": "patient-family-rehabilitation-context-and-plain-language-definition-anchor",
+      "exactClaimUse": "Supports patient and family-facing explanation of coma, vegetative/unresponsive wakefulness, minimally conscious state, recovery expectations and rehabilitation context.",
+      "endpointDefinition": "Candidate endpoints include level of consciousness, behavioral response, communication ability, recovery stage, rehabilitation need and caregiver decision-support context.",
+      "populationOrSetting": "TBI rehabilitation education setting for patients, families and caregivers; not a formal diagnostic instrument or individual recovery prediction source.",
+      "effectOrMechanismSignal": "Rehabilitation-context signal: structured education and rehabilitation framing may support continuity decisions, care coordination and interpretation of recovery states.",
+      "uncertaintyOrBias": "Factsheets simplify complex prognosis and may not include full evidence grading, diagnostic protocols, etiology differences or local rehabilitation capacity.",
+      "transferBoundary": "Transfer only to plain-language taxonomy, caregiver-facing context and rehabilitation-route vocabulary; guideline-level claims need clinical guideline sources.",
+      "downgradeTriggers": [
+        "If factsheet language is used as a clinical diagnostic standard, downgrade to education context.",
+        "If recovery expectations are treated as calibrated prognosis, block prediction use.",
+        "If etiology, time since injury or assessment method is omitted, keep as qualitative support."
+      ],
+      "modelPosition": {
+        "primaryLocation": "rehabilitation-education-and-caregiver-context",
+        "variables": [
+          "diagnostic-state",
+          "communication-capacity",
+          "care-decision-boundary",
+          "long-term-function"
+        ],
+        "admissibleUse": "plain-language endpoint and rehabilitation-route context only"
+      },
+      "modelAdmissionDecision": "education-context-support-only-blocked-for-calibrated-modeling",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Pair this education source with the AAN guideline card and extract differences between plain-language taxonomy and diagnostic standards."
+    },
+    {
+      "taskId": "C2LTB1-EXT-023",
+      "domainId": "amyotrophic-lateral-sclerosis-motor-neuron-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/amyotrophic-lateral-sclerosis-motor-neuron-continuity",
+      "sourceRefId": "C2LTB1-SRC-12-1",
+      "sourceTitle": "NINDS Amyotrophic Lateral Sclerosis information",
+      "sourceUrl": "https://www.ninds.nih.gov/health-information/disorders/amyotrophic-lateral-sclerosis-als",
+      "extractionStatus": "completed-c2ltb1-pilot-source-context-extraction",
+      "sourceAccessStatus": "official-nih-disease-information-source-identified",
+      "sourceRole": "als-mechanism-symptom-progression-and-support-context-anchor",
+      "exactClaimUse": "Supports ALS as a progressive motor-neuron continuity failure mode affecting movement, speech, swallowing, respiration, communication access, caregiving and effective action time.",
+      "endpointDefinition": "Candidate endpoints include functional rating, respiratory function, swallowing status, speech or communication access, mobility, care burden and survival-context variables.",
+      "populationOrSetting": "General ALS disease-information context for people with ALS, families and caregivers. It is not a treatment recommendation, eligibility rule or individual prognosis source.",
+      "effectOrMechanismSignal": "Mechanism-context signal: degeneration of motor neurons can progressively reduce voluntary movement, respiratory reserve, nutrition/swallowing safety and communication capacity.",
+      "uncertaintyOrBias": "ALS progression is heterogeneous by onset type, genetics, age, respiratory status, care access, assistive technology, nutrition and treatment availability.",
+      "transferBoundary": "Transfer only to mechanism, endpoint and support-need vocabulary. Do not infer individual progression rate, treatment effect or survival estimate.",
+      "downgradeTriggers": [
+        "If ALS progression is modeled without subtype and baseline function, block calibrated use.",
+        "If support technology is treated as disease-modifying therapy, downgrade to function-support context.",
+        "If respiratory and swallowing endpoints are omitted, block action-capacity claims."
+      ],
+      "modelPosition": {
+        "primaryLocation": "motor-neuron-continuity-mechanism-and-support-need-context",
+        "variables": [
+          "functional-rating-scale",
+          "respiratory-function",
+          "swallowing-status",
+          "communication-access",
+          "care-burden"
+        ],
+        "admissibleUse": "disease mechanism and support-variable vocabulary only"
+      },
+      "modelAdmissionDecision": "disease-context-support-only-blocked-for-calibrated-modeling",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Extract ALS progression endpoints, support technology boundaries, respiratory/nutrition variables and heterogeneity notes into a Source Card."
+    },
+    {
+      "taskId": "C2LTB1-EXT-024",
+      "domainId": "amyotrophic-lateral-sclerosis-motor-neuron-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/amyotrophic-lateral-sclerosis-motor-neuron-continuity",
+      "sourceRefId": "C2LTB1-SRC-12-2",
+      "sourceTitle": "AAN ALS practice parameter update",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/19822872/",
+      "extractionStatus": "completed-c2ltb1-pilot-source-context-extraction",
+      "sourceAccessStatus": "pubmed-indexed-neurology-practice-parameter-source-identified",
+      "sourceRole": "als-clinical-management-and-supportive-care-guideline-context-anchor",
+      "exactClaimUse": "Supports ALS clinical-management extraction needs for respiratory care, nutrition, communication, multidisciplinary support and disease-modifying or symptom-management boundaries after full guideline review.",
+      "endpointDefinition": "Candidate endpoints include functional rating, respiratory decline, noninvasive ventilation context, nutrition or gastrostomy context, communication support, quality of life and care burden.",
+      "populationOrSetting": "Clinical guideline context for ALS management. This register does not provide patient-specific treatment choice, timing or prognosis.",
+      "effectOrMechanismSignal": "Guideline-route signal: supportive and clinical management can change functional maintenance, respiratory safety, nutrition, communication access and care-continuity variables.",
+      "uncertaintyOrBias": "Guideline evidence depends on publication date, evidence class, evolving ALS therapies, patient heterogeneity, care access and whether recommendations remain current.",
+      "transferBoundary": "Transfer only to guideline-route vocabulary until exact recommendations, evidence classes, dates and currentness checks are extracted.",
+      "downgradeTriggers": [
+        "If older practice parameters are used without currentness review, downgrade to historical guideline context.",
+        "If guideline management routes are converted into survival gains without trial extraction, block quantitative use.",
+        "If respiratory, nutrition and communication endpoints are not separated, require endpoint-specific cards."
+      ],
+      "modelPosition": {
+        "primaryLocation": "motor-neuron-continuity-management-route-context",
+        "variables": [
+          "functional-rating-scale",
+          "respiratory-function",
+          "swallowing-status",
+          "communication-access",
+          "care-burden"
+        ],
+        "admissibleUse": "guideline route and endpoint vocabulary pending currentness and recommendation extraction"
+      },
+      "modelAdmissionDecision": "clinical-guideline-context-only-blocked-for-calibrated-modeling",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Fresh-review the AAN ALS parameter for recommendation wording, evidence class, date/currentness, respiratory, nutrition and communication-support endpoints."
     }
   ],
   "nonClaims": [
@@ -562,7 +1088,7 @@
   ],
   "indexRequirements": [
     "README.md must link this register in the claim spine.",
-    "docs/reference/README.md must describe this register as the 12/48 pilot extraction register.",
+    "docs/reference/README.md must describe this register as the 24/48 pilot extraction register.",
     "docs/reference/human-infra-maturity-roadmap.md must name this register as progress toward the research-framework gate while keeping model admission blocked.",
     "tools/README.md must list the audit command for this register."
   ]

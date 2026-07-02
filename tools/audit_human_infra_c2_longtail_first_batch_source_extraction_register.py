@@ -16,7 +16,7 @@ QUEUE_PATH = ROOT / "docs/reference/human-infra-c2-longtail-first-batch-source-e
 SCHEMA = "human-infra.c2-longtail-first-batch-source-extraction-register.v1"
 STATUS = "active-c2ltb1-pilot-source-extractions-pending-fresh-review"
 REGISTER_LINK = "human-infra-c2-longtail-first-batch-source-extraction-register.json"
-EXPECTED_TASK_IDS = [f"C2LTB1-EXT-{index:03d}" for index in range(1, 13)]
+EXPECTED_TASK_IDS = [f"C2LTB1-EXT-{index:03d}" for index in range(1, 25)]
 REQUIRED_BLOCKED_USES = {
     "calibrated-prediction",
     "individual-advice",
@@ -141,7 +141,7 @@ def validate_scope(scope: Any, rows: list[dict[str, Any]], queue_count: int, err
             fail(errors, f"scope.{key} must equal {expected}")
     selected = require_string_list(scope.get("selectedTaskIds"), "scope.selectedTaskIds", errors, len(EXPECTED_TASK_IDS))
     if selected != EXPECTED_TASK_IDS:
-        fail(errors, "scope.selectedTaskIds must equal the first 12 C2LTB1 extraction task IDs")
+        fail(errors, "scope.selectedTaskIds must equal the first 24 C2LTB1 extraction task IDs")
     if require_string(scope.get("batchId"), "scope.batchId", errors) != "C2-LT-B1":
         fail(errors, "scope.batchId must be C2-LT-B1")
     require_string(scope.get("extractionDepth"), "scope.extractionDepth", errors)
