@@ -1,7 +1,7 @@
 {
   "schemaVersion": "human-infra.c2-longtail-first-batch-independent-fresh-review-verdict-register.v1",
   "registerId": "human-infra-c2-longtail-first-batch-independent-fresh-review-verdict-register-2026-07-02",
-  "status": "active-fresh-review-verdict-register-partial",
+  "status": "active-fresh-review-verdict-register-complete",
   "purpose": "Record independent fresh-review verdicts for C2-LT-B1 source-context extraction rows while keeping reviewed artifacts, model admission and individual-use claims blocked.",
   "sourceOfTruth": {
     "independentFreshReviewProtocol": "docs/reference/human-infra-c2-longtail-first-batch-independent-fresh-review-protocol.json",
@@ -14,19 +14,20 @@
     "reviewedBatchIds": [
       "C2LTB1-FRB-01-acute-and-chronic-transition",
       "C2LTB1-FRB-02-metabolic-fitness-neuro-motor",
-      "C2LTB1-FRB-03-oncology-infectious-immunization"
+      "C2LTB1-FRB-03-oncology-infectious-immunization",
+      "C2LTB1-FRB-04-liver-newborn-reproductive-pain-barrier-safety"
     ],
-    "reviewedBatchCount": 3,
+    "reviewedBatchCount": 4,
     "totalLocalReviewedExtractionTaskCount": 48,
-    "reviewedExtractionTaskCount": 36,
-    "remainingExtractionTaskCount": 12,
-    "reviewedDomainCount": 18,
+    "reviewedExtractionTaskCount": 48,
+    "remainingExtractionTaskCount": 0,
+    "reviewedDomainCount": 24,
     "reviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
-    "artifactPromotionDecision": "partial-first-three-batches-reviewed-bounded-artifact-fill-only-for-eligible-rows",
+    "artifactPromotionDecision": "complete-four-batches-reviewed-bounded-artifact-fill-only-for-eligible-rows",
     "nonClaims": [
       "This verdict register is not a completed Source Card set or reviewed artifact set.",
       "This verdict register does not authorize calibrated prediction, individual advice, individual death-date output, intervention ranking, domain-claim upgrade or clinical-validity claims.",
-      "Only the first three C2-LT-B1 fresh-review batches have received verdicts; remaining prepared rows still require fresh review.",
+      "All four C2-LT-B1 fresh-review batches have received verdicts; reviewed artifacts remain a separate promotion step.",
       "Rows marked downgrade-required or cannot-evaluate-insufficient-context cannot fill reviewed artifacts until their downgrade or source-resolution condition is closed."
     ]
   },
@@ -1161,6 +1162,409 @@
       "reviewerVerdict": "support-with-boundary",
       "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
       "reviewerNote": "CDC source supports U.S. immunization schedule metadata and route vocabulary only."
+    },
+    {
+      "taskId": "C2LTB1-EXT-037",
+      "domainId": "chronic-viral-hepatitis-screening-liver-protection-continuity",
+      "reviewedSourceTitle": "CDC Viral Hepatitis",
+      "reviewedSourceUrl": "https://www.cdc.gov/hepatitis/index.html",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "exactClaimUseVerdict": "supports exact claim use as vocabulary or route context only; no calibrated effect size or individual recommendation is admitted",
+      "domainTransferVerdict": "bounded transfer to endpoint, variable and care-pathway vocabulary; no intervention benefit, clinical decision or personal prognosis is admitted",
+      "modelPositionVerdict": "model-language-only; calibrated prediction, intervention ranking and individual prognosis remain blocked",
+      "uncertaintyBoundaryVerdict": "must carry source currentness, population/setting, evidence-grade, access, endpoint and implementation-transfer limits before artifact fill",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this reviewed task",
+      "freshReviewEvidence": [
+        {
+          "url": "https://www.cdc.gov/hepatitis/index.html",
+          "evidenceType": "official-public-health-topic-page",
+          "finding": "CDC Viral Hepatitis page supports viral hepatitis basics, statistics, surveillance, resources, population and impact context; use only as screening, prevention and liver-risk vocabulary."
+        },
+        {
+          "url": "https://www.cdc.gov/hepatitis-surveillance-2023/about/index.html",
+          "evidenceType": "official-surveillance-report-context",
+          "finding": "CDC hepatitis surveillance report supports surveillance and trend context for viral hepatitis, without individual progression or treatment-effect calibration."
+        }
+      ],
+      "registeredSourceRole": "viral-hepatitis-screening-prevention-and-liver-risk-context-anchor",
+      "registeredExactClaimUse": "Supports chronic viral hepatitis as a screening, linkage-to-care and liver-protection continuity domain involving HBV, HCV, cirrhosis and hepatocellular carcinoma risk channels.",
+      "registeredTransferBoundary": "Transfer only to screening and liver-risk endpoint vocabulary; guideline-specific testing, treatment and surveillance recommendations require separate sources.",
+      "sourceIdentityVerdict": "verified-primary-or-authoritative-source",
+      "sourceContextVerdict": "supports-registered-source-role-with-boundary",
+      "downgradeVerdict": "CDC source supports viral hepatitis screening, prevention, surveillance and liver-risk vocabulary only.",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "reviewerNote": "CDC source supports viral hepatitis screening, prevention, surveillance and liver-risk vocabulary only."
+    },
+    {
+      "taskId": "C2LTB1-EXT-038",
+      "domainId": "chronic-viral-hepatitis-screening-liver-protection-continuity",
+      "reviewedSourceTitle": "WHO Global hepatitis programme",
+      "reviewedSourceUrl": "https://www.who.int/teams/global-hiv-hepatitis-and-stis-programmes/hepatitis",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "exactClaimUseVerdict": "supports exact claim use as vocabulary or route context only; no calibrated effect size or individual recommendation is admitted",
+      "domainTransferVerdict": "bounded transfer to endpoint, variable and care-pathway vocabulary; no intervention benefit, clinical decision or personal prognosis is admitted",
+      "modelPositionVerdict": "model-language-only; calibrated prediction, intervention ranking and individual prognosis remain blocked",
+      "uncertaintyBoundaryVerdict": "must carry source currentness, population/setting, evidence-grade, access, endpoint and implementation-transfer limits before artifact fill",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this reviewed task",
+      "freshReviewEvidence": [
+        {
+          "url": "https://www.who.int/teams/global-hiv-hepatitis-and-stis-programmes/hepatitis/overview",
+          "evidenceType": "official-programme-page",
+          "finding": "WHO Global Hepatitis programme page supports prevention, testing, treatment, service delivery, monitoring and global programme vocabulary; no individual disease-course estimate is admitted."
+        },
+        {
+          "url": "https://www.who.int/teams/global-hiv-hepatitis-and-stis-programmes/hepatitis/strategic-information",
+          "evidenceType": "official-strategic-information-page",
+          "finding": "WHO strategic information page supports hepatitis surveillance, monitoring and evaluation vocabulary for programme decisions."
+        }
+      ],
+      "registeredSourceRole": "global-hepatitis-elimination-testing-treatment-and-surveillance-context-anchor",
+      "registeredExactClaimUse": "Supports viral hepatitis as a global elimination and health-system domain involving testing, treatment, prevention, surveillance and liver-disease burden.",
+      "registeredTransferBoundary": "Transfer only to programme indicator vocabulary and global strategy context; use clinical guidelines and cohort studies for individual-level disease progression or treatment effects.",
+      "sourceIdentityVerdict": "verified-primary-or-authoritative-source",
+      "sourceContextVerdict": "supports-registered-source-role-with-boundary",
+      "downgradeVerdict": "WHO source supports programme, surveillance and global strategy vocabulary only.",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "reviewerNote": "WHO source supports programme, surveillance and global strategy vocabulary only."
+    },
+    {
+      "taskId": "C2LTB1-EXT-039",
+      "domainId": "newborn-screening-result-followup-continuity",
+      "reviewedSourceTitle": "HRSA Newborn Screening",
+      "reviewedSourceUrl": "https://newbornscreening.hrsa.gov/",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "exactClaimUseVerdict": "supports exact claim use as vocabulary or route context only; no calibrated effect size or individual recommendation is admitted",
+      "domainTransferVerdict": "bounded transfer to endpoint, variable and care-pathway vocabulary; no intervention benefit, clinical decision or personal prognosis is admitted",
+      "modelPositionVerdict": "model-language-only; calibrated prediction, intervention ranking and individual prognosis remain blocked",
+      "uncertaintyBoundaryVerdict": "must carry source currentness, population/setting, evidence-grade, access, endpoint and implementation-transfer limits before artifact fill",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this reviewed task",
+      "freshReviewEvidence": [
+        {
+          "url": "https://newbornscreening.hrsa.gov/",
+          "evidenceType": "official-information-center",
+          "finding": "HRSA Newborn Screening Information Center supports newborn screening as rare-condition detection before illness and provides parent/provider resources; use as screening-system and follow-up vocabulary only."
+        },
+        {
+          "url": "https://www.hrsa.gov/advisory-committees/heritable-disorders/rusp",
+          "evidenceType": "official-panel-context",
+          "finding": "HRSA RUSP page supports condition-panel and evidence/net-benefit selection vocabulary for newborn screening programmes."
+        }
+      ],
+      "registeredSourceRole": "newborn-screening-condition-panel-result-and-followup-context-anchor",
+      "registeredExactClaimUse": "Supports newborn screening as an early-life continuity system where timely screening, result reporting, confirmatory testing and treatment linkage affect developmental outcomes.",
+      "registeredTransferBoundary": "Transfer only to screening-system endpoint vocabulary and follow-up route context. Disease-specific effects require condition-specific evidence.",
+      "sourceIdentityVerdict": "verified-primary-or-authoritative-source",
+      "sourceContextVerdict": "supports-registered-source-role-with-boundary",
+      "downgradeVerdict": "HRSA source supports newborn screening condition-panel, result and follow-up route vocabulary only.",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "reviewerNote": "HRSA source supports newborn screening condition-panel, result and follow-up route vocabulary only."
+    },
+    {
+      "taskId": "C2LTB1-EXT-040",
+      "domainId": "newborn-screening-result-followup-continuity",
+      "reviewedSourceTitle": "CDC Newborn Screening",
+      "reviewedSourceUrl": "https://www.cdc.gov/newborn-screening/index.html",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "exactClaimUseVerdict": "supports exact claim use as vocabulary or route context only; no calibrated effect size or individual recommendation is admitted",
+      "domainTransferVerdict": "bounded transfer to endpoint, variable and care-pathway vocabulary; no intervention benefit, clinical decision or personal prognosis is admitted",
+      "modelPositionVerdict": "model-language-only; calibrated prediction, intervention ranking and individual prognosis remain blocked",
+      "uncertaintyBoundaryVerdict": "must carry source currentness, population/setting, evidence-grade, access, endpoint and implementation-transfer limits before artifact fill",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this reviewed task",
+      "freshReviewEvidence": [
+        {
+          "url": "https://www.cdc.gov/newborn-screening/index.html",
+          "evidenceType": "official-public-health-topic-page",
+          "finding": "CDC newborn screening page supports newborn screening as identification of conditions affecting long-term health and survival; use as public-health lab and follow-up infrastructure vocabulary."
+        },
+        {
+          "url": "https://www.cdc.gov/newborn-screening/php/about/index.html",
+          "evidenceType": "official-laboratory-context-page",
+          "finding": "CDC newborn screening laboratories page supports quality-control, technical-assistance and reliable screening infrastructure vocabulary."
+        }
+      ],
+      "registeredSourceRole": "newborn-screening-public-health-lab-and-followup-context-anchor",
+      "registeredExactClaimUse": "Supports newborn screening as a public-health laboratory and follow-up infrastructure where testing quality, result communication and early intervention affect continuity.",
+      "registeredTransferBoundary": "Transfer only to public-health screening-process variables. Use condition-specific evidence for outcome magnitude and clinical pathways.",
+      "sourceIdentityVerdict": "verified-primary-or-authoritative-source",
+      "sourceContextVerdict": "supports-registered-source-role-with-boundary",
+      "downgradeVerdict": "CDC source supports public-health laboratory, quality and follow-up process variables only.",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "reviewerNote": "CDC source supports public-health laboratory, quality and follow-up process variables only."
+    },
+    {
+      "taskId": "C2LTB1-EXT-041",
+      "domainId": "fertility-preservation-gamete-embryo-cryostorage-continuity",
+      "reviewedSourceTitle": "ASCO Fertility Preservation Guideline Update",
+      "reviewedSourceUrl": "https://pubmed.ncbi.nlm.nih.gov/29620997/",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "exactClaimUseVerdict": "supports exact claim use as vocabulary or route context only; no calibrated effect size or individual recommendation is admitted",
+      "domainTransferVerdict": "bounded transfer to endpoint, variable and care-pathway vocabulary; no intervention benefit, clinical decision or personal prognosis is admitted",
+      "modelPositionVerdict": "model-language-only; calibrated prediction, intervention ranking and individual prognosis remain blocked",
+      "uncertaintyBoundaryVerdict": "must carry source currentness, population/setting, evidence-grade, access, endpoint and implementation-transfer limits before artifact fill",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this reviewed task",
+      "freshReviewEvidence": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29620997/",
+          "evidenceType": "bibliographic-guideline-index",
+          "finding": "PubMed indexes the 2018 ASCO fertility preservation guideline update, but newer ASCO update records exist; artifact fill should first resolve currentness and whether the 2025 update supersedes the registered source."
+        },
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40106739/",
+          "evidenceType": "newer-guideline-currentness-signal",
+          "finding": "PubMed indexes a newer ASCO fertility preservation guideline update, creating a currentness boundary for the registered 2018 source."
+        }
+      ],
+      "registeredSourceRole": "cancer-treatment-fertility-preservation-counseling-and-option-value-anchor",
+      "registeredExactClaimUse": "Supports fertility preservation as a future-option preservation route for people facing gonadotoxic cancer treatment, requiring counseling, timing, method and consent extraction.",
+      "registeredTransferBoundary": "Transfer only to counseling and option-preservation endpoint vocabulary until recommendation details and method-specific success evidence are extracted.",
+      "sourceIdentityVerdict": "registered-source-needs-currentness-or-path-resolution",
+      "sourceContextVerdict": "source role remains plausible but downgrade-before-fill is required until currentness/path is resolved",
+      "downgradeVerdict": "registered ASCO 2018 source needs currentness resolution against newer ASCO update before artifact fill.",
+      "reviewerVerdict": "downgrade-required",
+      "artifactPromotionDecision": "downgrade-before-fill",
+      "reviewerNote": "registered ASCO 2018 source needs currentness resolution against newer ASCO update before artifact fill."
+    },
+    {
+      "taskId": "C2LTB1-EXT-042",
+      "domainId": "fertility-preservation-gamete-embryo-cryostorage-continuity",
+      "reviewedSourceTitle": "ASRM Fertility preservation resources",
+      "reviewedSourceUrl": "https://www.asrm.org/practice-guidance/practice-committee-documents/",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "exactClaimUseVerdict": "supports exact claim use as vocabulary or route context only; no calibrated effect size or individual recommendation is admitted",
+      "domainTransferVerdict": "bounded transfer to endpoint, variable and care-pathway vocabulary; no intervention benefit, clinical decision or personal prognosis is admitted",
+      "modelPositionVerdict": "model-language-only; calibrated prediction, intervention ranking and individual prognosis remain blocked",
+      "uncertaintyBoundaryVerdict": "must carry source currentness, population/setting, evidence-grade, access, endpoint and implementation-transfer limits before artifact fill",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this reviewed task",
+      "freshReviewEvidence": [
+        {
+          "url": "https://www.asrm.org/practice-guidance/practice-committee-documents/",
+          "evidenceType": "professional-guidance-directory",
+          "finding": "ASRM Practice Committee documents page supports professional-guidance discovery for fertility preservation and reproductive governance topics; use only as route metadata."
+        },
+        {
+          "url": "https://www.asrm.org/practice-guidance/practice-committee-documents/fertility-preservation-in-patients-with-medical-indications-a-committee-opinion-2026/",
+          "evidenceType": "specific-guidance-currentness-signal",
+          "finding": "ASRM 2026 fertility-preservation committee opinion provides a more specific guidance target for later extraction."
+        }
+      ],
+      "registeredSourceRole": "fertility-preservation-professional-guidance-discovery-and-governance-context-anchor",
+      "registeredExactClaimUse": "Supports professional-guidance discovery for fertility preservation, cryostorage, consent, disposition and reproductive-tissue governance questions.",
+      "registeredTransferBoundary": "Transfer only as professional-guidance route metadata until a specific ASRM committee document is selected and extracted.",
+      "sourceIdentityVerdict": "verified-primary-or-authoritative-source",
+      "sourceContextVerdict": "supports-registered-source-role-with-boundary",
+      "downgradeVerdict": "ASRM directory is bounded to guidance-discovery and governance-route metadata; specific documents need separate extraction.",
+      "reviewerVerdict": "bounded-support",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "reviewerNote": "ASRM directory is bounded to guidance-discovery and governance-route metadata; specific documents need separate extraction."
+    },
+    {
+      "taskId": "C2LTB1-EXT-043",
+      "domainId": "chronic-pain-functional-restoration-continuity",
+      "reviewedSourceTitle": "CDC Clinical Practice Guideline for Prescribing Opioids for Pain",
+      "reviewedSourceUrl": "https://www.cdc.gov/mmwr/volumes/71/rr/rr7103a1.htm",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "exactClaimUseVerdict": "supports exact claim use as vocabulary or route context only; no calibrated effect size or individual recommendation is admitted",
+      "domainTransferVerdict": "bounded transfer to endpoint, variable and care-pathway vocabulary; no intervention benefit, clinical decision or personal prognosis is admitted",
+      "modelPositionVerdict": "model-language-only; calibrated prediction, intervention ranking and individual prognosis remain blocked",
+      "uncertaintyBoundaryVerdict": "must carry source currentness, population/setting, evidence-grade, access, endpoint and implementation-transfer limits before artifact fill",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this reviewed task",
+      "freshReviewEvidence": [
+        {
+          "url": "https://www.cdc.gov/mmwr/volumes/71/rr/rr7103a1.htm",
+          "evidenceType": "official-clinical-practice-guideline",
+          "finding": "CDC 2022 opioid prescribing guideline supports outpatient acute, subacute and chronic pain care vocabulary, benefit-risk categories and functional outcome framing; no individual pain treatment advice is admitted."
+        },
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/36327391/",
+          "evidenceType": "bibliographic-guideline-index",
+          "finding": "PubMed indexes the CDC 2022 opioid prescribing guideline and supports source identity cross-checking."
+        }
+      ],
+      "registeredSourceRole": "pain-opioid-risk-benefit-functional-outcome-guideline-context-anchor",
+      "registeredExactClaimUse": "Supports chronic pain as a function, risk and medication-exposure domain where pain interference, functional status, opioid exposure and safety monitoring must be separated.",
+      "registeredTransferBoundary": "Transfer only to pain-function and opioid-risk endpoint vocabulary until recommendation category, population and evidence certainty are extracted.",
+      "sourceIdentityVerdict": "verified-primary-or-authoritative-source",
+      "sourceContextVerdict": "supports-registered-source-role-with-boundary",
+      "downgradeVerdict": "CDC guideline supports pain-function and opioid-risk endpoint vocabulary with population/exclusion boundaries only.",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "reviewerNote": "CDC guideline supports pain-function and opioid-risk endpoint vocabulary with population/exclusion boundaries only."
+    },
+    {
+      "taskId": "C2LTB1-EXT-044",
+      "domainId": "chronic-pain-functional-restoration-continuity",
+      "reviewedSourceTitle": "NICE Chronic pain guideline",
+      "reviewedSourceUrl": "https://www.nice.org.uk/guidance/ng193",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "exactClaimUseVerdict": "supports exact claim use as vocabulary or route context only; no calibrated effect size or individual recommendation is admitted",
+      "domainTransferVerdict": "bounded transfer to endpoint, variable and care-pathway vocabulary; no intervention benefit, clinical decision or personal prognosis is admitted",
+      "modelPositionVerdict": "model-language-only; calibrated prediction, intervention ranking and individual prognosis remain blocked",
+      "uncertaintyBoundaryVerdict": "must carry source currentness, population/setting, evidence-grade, access, endpoint and implementation-transfer limits before artifact fill",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this reviewed task",
+      "freshReviewEvidence": [
+        {
+          "url": "https://www.nice.org.uk/guidance/ng193",
+          "evidenceType": "clinical-guideline-page",
+          "finding": "NICE NG193 covers assessment of chronic primary and secondary pain and management of chronic primary pain in people aged 16 years and over; use as assessment, care-plan and endpoint vocabulary only."
+        }
+      ],
+      "registeredSourceRole": "chronic-primary-pain-assessment-management-and-function-context-anchor",
+      "registeredExactClaimUse": "Supports chronic pain management as a functional restoration and quality-of-life pathway requiring assessment, nonpharmacologic/pharmacologic boundaries and outcome separation.",
+      "registeredTransferBoundary": "Transfer only to chronic pain assessment and management endpoint vocabulary; intervention effects require recommendation-specific and trial-level extraction.",
+      "sourceIdentityVerdict": "verified-primary-or-authoritative-source",
+      "sourceContextVerdict": "supports-registered-source-role-with-boundary",
+      "downgradeVerdict": "NICE source supports chronic pain assessment and management pathway vocabulary, not intervention-effect calibration.",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "reviewerNote": "NICE source supports chronic pain assessment and management pathway vocabulary, not intervention-effect calibration."
+    },
+    {
+      "taskId": "C2LTB1-EXT-045",
+      "domainId": "skin-barrier-wound-healing",
+      "reviewedSourceTitle": "Wound Healing Society Guidelines",
+      "reviewedSourceUrl": "https://pubmed.ncbi.nlm.nih.gov/26850744/",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "exactClaimUseVerdict": "supports exact claim use as vocabulary or route context only; no calibrated effect size or individual recommendation is admitted",
+      "domainTransferVerdict": "bounded transfer to endpoint, variable and care-pathway vocabulary; no intervention benefit, clinical decision or personal prognosis is admitted",
+      "modelPositionVerdict": "model-language-only; calibrated prediction, intervention ranking and individual prognosis remain blocked",
+      "uncertaintyBoundaryVerdict": "must carry source currentness, population/setting, evidence-grade, access, endpoint and implementation-transfer limits before artifact fill",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this reviewed task",
+      "freshReviewEvidence": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26850744/",
+          "evidenceType": "registered-url-resolution-attempt",
+          "finding": "The registered PubMed source URL for Wound Healing Society Guidelines needs source-identity resolution before artifact fill; fresh search surfaced adjacent WHS guideline records rather than this exact registered record."
+        },
+        {
+          "url": "https://woundheal.org/clinical-tools/",
+          "evidenceType": "professional-guideline-directory",
+          "finding": "Wound Healing Society clinical tools page supports WHS guideline availability across wound types and can guide source correction before artifact fill."
+        }
+      ],
+      "registeredSourceRole": "wound-healing-clinical-guideline-and-infection-risk-context-anchor",
+      "registeredExactClaimUse": "Supports wound healing as a skin-barrier continuity domain where wound type, healing time, infection, pain, exudate and care supplies must be extracted separately.",
+      "registeredTransferBoundary": "Transfer only to wound endpoint and clinical-route vocabulary until exact guideline recommendations, wound types and evidence quality are extracted.",
+      "sourceIdentityVerdict": "registered-source-needs-currentness-or-path-resolution",
+      "sourceContextVerdict": "source role remains plausible but downgrade-before-fill is required until currentness/path is resolved",
+      "downgradeVerdict": "registered WHS PubMed source requires identity/path correction before bounded artifact fill.",
+      "reviewerVerdict": "downgrade-required",
+      "artifactPromotionDecision": "downgrade-before-fill",
+      "reviewerNote": "registered WHS PubMed source requires identity/path correction before bounded artifact fill."
+    },
+    {
+      "taskId": "C2LTB1-EXT-046",
+      "domainId": "skin-barrier-wound-healing",
+      "reviewedSourceTitle": "AHRQ Preventing Pressure Ulcers in Hospitals toolkit",
+      "reviewedSourceUrl": "https://www.ahrq.gov/patient-safety/settings/hospital/resource/pressureulcer/tool/index.html",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "exactClaimUseVerdict": "supports exact claim use as vocabulary or route context only; no calibrated effect size or individual recommendation is admitted",
+      "domainTransferVerdict": "bounded transfer to endpoint, variable and care-pathway vocabulary; no intervention benefit, clinical decision or personal prognosis is admitted",
+      "modelPositionVerdict": "model-language-only; calibrated prediction, intervention ranking and individual prognosis remain blocked",
+      "uncertaintyBoundaryVerdict": "must carry source currentness, population/setting, evidence-grade, access, endpoint and implementation-transfer limits before artifact fill",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this reviewed task",
+      "freshReviewEvidence": [
+        {
+          "url": "https://www.ahrq.gov/patient-safety/settings/hospital/resource/pressureulcer/tool/index.html",
+          "evidenceType": "official-implementation-toolkit",
+          "finding": "AHRQ pressure ulcer prevention toolkit supports interdisciplinary hospital implementation, risk assessment and prevention-process vocabulary; no outcome-effect estimate is admitted."
+        },
+        {
+          "url": "https://www.ahrq.gov/patient-safety/settings/hospital/resource/pressure-injury/guide.html",
+          "evidenceType": "official-implementation-guide",
+          "finding": "AHRQ pressure injury implementation guide supports structured implementation-team and quality-improvement vocabulary."
+        }
+      ],
+      "registeredSourceRole": "pressure-injury-prevention-hospital-implementation-and-care-process-anchor",
+      "registeredExactClaimUse": "Supports pressure-injury prevention as a hospital implementation and patient-safety continuity route involving risk assessment, repositioning, support surfaces, skin checks and team processes.",
+      "registeredTransferBoundary": "Transfer only to implementation process variables and pressure-injury prevention route context; outcome effect estimates require study-specific evidence.",
+      "sourceIdentityVerdict": "verified-primary-or-authoritative-source",
+      "sourceContextVerdict": "supports-registered-source-role-with-boundary",
+      "downgradeVerdict": "AHRQ toolkit supports pressure-injury implementation variables and care-process route context only.",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "reviewerNote": "AHRQ toolkit supports pressure-injury implementation variables and care-process route context only."
+    },
+    {
+      "taskId": "C2LTB1-EXT-047",
+      "domainId": "patient-safety-organizational-learning",
+      "reviewedSourceTitle": "AHRQ Patient Safety Network",
+      "reviewedSourceUrl": "https://psnet.ahrq.gov/",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "exactClaimUseVerdict": "supports exact claim use as vocabulary or route context only; no calibrated effect size or individual recommendation is admitted",
+      "domainTransferVerdict": "bounded transfer to endpoint, variable and care-pathway vocabulary; no intervention benefit, clinical decision or personal prognosis is admitted",
+      "modelPositionVerdict": "model-language-only; calibrated prediction, intervention ranking and individual prognosis remain blocked",
+      "uncertaintyBoundaryVerdict": "must carry source currentness, population/setting, evidence-grade, access, endpoint and implementation-transfer limits before artifact fill",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this reviewed task",
+      "freshReviewEvidence": [
+        {
+          "url": "https://psnet.ahrq.gov/",
+          "evidenceType": "official-patient-safety-knowledge-base",
+          "finding": "AHRQ PSNet supports patient-safety knowledge-base, innovations, toolkits, training and event-learning vocabulary; use as safety taxonomy and evidence-discovery context only."
+        },
+        {
+          "url": "https://psnet.ahrq.gov/primer/reporting-patient-safety-events",
+          "evidenceType": "official-patient-safety-primer",
+          "finding": "AHRQ PSNet event reporting primer supports patient-safety reporting, learning and limitation vocabulary."
+        }
+      ],
+      "registeredSourceRole": "patient-safety-knowledge-base-event-learning-and-safety-culture-context-anchor",
+      "registeredExactClaimUse": "Supports patient safety as an organizational-learning domain involving adverse events, near misses, safety culture, communication, reporting and learning loops.",
+      "registeredTransferBoundary": "Transfer only to safety taxonomy, learning-loop variables and evidence-discovery routing; use intervention-specific studies for effect estimates.",
+      "sourceIdentityVerdict": "verified-primary-or-authoritative-source",
+      "sourceContextVerdict": "supports-registered-source-role-with-boundary",
+      "downgradeVerdict": "AHRQ PSNet supports safety taxonomy, event-learning and discovery-route vocabulary only.",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "reviewerNote": "AHRQ PSNet supports safety taxonomy, event-learning and discovery-route vocabulary only."
+    },
+    {
+      "taskId": "C2LTB1-EXT-048",
+      "domainId": "patient-safety-organizational-learning",
+      "reviewedSourceTitle": "AHRQ CUSP Toolkit",
+      "reviewedSourceUrl": "https://www.ahrq.gov/hai/cusp/index.html",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "exactClaimUseVerdict": "supports exact claim use as vocabulary or route context only; no calibrated effect size or individual recommendation is admitted",
+      "domainTransferVerdict": "bounded transfer to endpoint, variable and care-pathway vocabulary; no intervention benefit, clinical decision or personal prognosis is admitted",
+      "modelPositionVerdict": "model-language-only; calibrated prediction, intervention ranking and individual prognosis remain blocked",
+      "uncertaintyBoundaryVerdict": "must carry source currentness, population/setting, evidence-grade, access, endpoint and implementation-transfer limits before artifact fill",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this reviewed task",
+      "freshReviewEvidence": [
+        {
+          "url": "https://www.ahrq.gov/hai/cusp/index.html",
+          "evidenceType": "official-safety-program-toolkit",
+          "finding": "AHRQ CUSP page supports CUSP as a method combining teamwork, clinical best practices and safety science; use as organizational-learning and implementation-process vocabulary only."
+        },
+        {
+          "url": "https://www.ahrq.gov/hai/cusp/modules/index.html",
+          "evidenceType": "official-toolkit-module-page",
+          "finding": "AHRQ Core CUSP toolkit module page supports modular, unit-level change resources and implementation variables."
+        }
+      ],
+      "registeredSourceRole": "cusp-teamwork-culture-learning-and-harm-reduction-implementation-anchor",
+      "registeredExactClaimUse": "Supports CUSP as an organizational safety and learning toolkit context where team communication, culture, harm identification and feedback cycles become implementation variables.",
+      "registeredTransferBoundary": "Transfer only to organizational-learning process variables and toolkit-route context; local outcome effect requires implementation evaluation evidence.",
+      "sourceIdentityVerdict": "verified-primary-or-authoritative-source",
+      "sourceContextVerdict": "supports-registered-source-role-with-boundary",
+      "downgradeVerdict": "AHRQ CUSP supports team, culture, harm-identification and feedback-cycle variables only.",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "reviewerNote": "AHRQ CUSP supports team, culture, harm-identification and feedback-cycle variables only."
     }
   ],
   "taskCoverage": [
@@ -1415,11 +1819,93 @@
       "reviewerVerdict": "support-with-boundary",
       "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
       "modelAdmissionDecision": "blocked-pending-reviewed-artifacts-and-model-gates"
+    },
+    {
+      "taskId": "C2LTB1-EXT-037",
+      "domainId": "chronic-viral-hepatitis-screening-liver-protection-continuity",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-reviewed-artifacts-and-model-gates"
+    },
+    {
+      "taskId": "C2LTB1-EXT-038",
+      "domainId": "chronic-viral-hepatitis-screening-liver-protection-continuity",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-reviewed-artifacts-and-model-gates"
+    },
+    {
+      "taskId": "C2LTB1-EXT-039",
+      "domainId": "newborn-screening-result-followup-continuity",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-reviewed-artifacts-and-model-gates"
+    },
+    {
+      "taskId": "C2LTB1-EXT-040",
+      "domainId": "newborn-screening-result-followup-continuity",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-reviewed-artifacts-and-model-gates"
+    },
+    {
+      "taskId": "C2LTB1-EXT-041",
+      "domainId": "fertility-preservation-gamete-embryo-cryostorage-continuity",
+      "reviewerVerdict": "downgrade-required",
+      "artifactPromotionDecision": "downgrade-before-fill",
+      "modelAdmissionDecision": "blocked-pending-reviewed-artifacts-and-model-gates"
+    },
+    {
+      "taskId": "C2LTB1-EXT-042",
+      "domainId": "fertility-preservation-gamete-embryo-cryostorage-continuity",
+      "reviewerVerdict": "bounded-support",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-reviewed-artifacts-and-model-gates"
+    },
+    {
+      "taskId": "C2LTB1-EXT-043",
+      "domainId": "chronic-pain-functional-restoration-continuity",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-reviewed-artifacts-and-model-gates"
+    },
+    {
+      "taskId": "C2LTB1-EXT-044",
+      "domainId": "chronic-pain-functional-restoration-continuity",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-reviewed-artifacts-and-model-gates"
+    },
+    {
+      "taskId": "C2LTB1-EXT-045",
+      "domainId": "skin-barrier-wound-healing",
+      "reviewerVerdict": "downgrade-required",
+      "artifactPromotionDecision": "downgrade-before-fill",
+      "modelAdmissionDecision": "blocked-pending-reviewed-artifacts-and-model-gates"
+    },
+    {
+      "taskId": "C2LTB1-EXT-046",
+      "domainId": "skin-barrier-wound-healing",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-reviewed-artifacts-and-model-gates"
+    },
+    {
+      "taskId": "C2LTB1-EXT-047",
+      "domainId": "patient-safety-organizational-learning",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-reviewed-artifacts-and-model-gates"
+    },
+    {
+      "taskId": "C2LTB1-EXT-048",
+      "domainId": "patient-safety-organizational-learning",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-reviewed-artifacts-and-model-gates"
     }
   ],
-  "remainingFreshReviewBatches": [
-    "C2LTB1-FRB-04-liver-newborn-reproductive-pain-barrier-safety"
-  ],
+  "remainingFreshReviewBatches": [],
   "indexRequirements": [
     "README.md",
     "docs/reference/README.md",
@@ -1490,6 +1976,28 @@
       },
       "artifactPromotionDecisionCounts": {
         "eligible-for-bounded-artifact-fill": 12
+      },
+      "modelAdmissionDecision": "blocked-pending-reviewed-artifacts-and-model-gates"
+    },
+    {
+      "batchId": "C2LTB1-FRB-04-liver-newborn-reproductive-pain-barrier-safety",
+      "taskCount": 12,
+      "domainIds": [
+        "chronic-viral-hepatitis-screening-liver-protection-continuity",
+        "newborn-screening-result-followup-continuity",
+        "fertility-preservation-gamete-embryo-cryostorage-continuity",
+        "chronic-pain-functional-restoration-continuity",
+        "skin-barrier-wound-healing",
+        "patient-safety-organizational-learning"
+      ],
+      "reviewerVerdictCounts": {
+        "support-with-boundary": 9,
+        "downgrade-required": 2,
+        "bounded-support": 1
+      },
+      "artifactPromotionDecisionCounts": {
+        "eligible-for-bounded-artifact-fill": 10,
+        "downgrade-before-fill": 2
       },
       "modelAdmissionDecision": "blocked-pending-reviewed-artifacts-and-model-gates"
     }
