@@ -1,0 +1,281 @@
+{
+  "schemaVersion": "human-infra.domain-source-card-field-extraction.v1",
+  "registerId": "human-infra-domain-source-card-field-extraction-2026-07-02",
+  "status": "active-domain-field-extraction-gate",
+  "purpose": "Promote each current domain Claim-Evidence Matrix seed row into Source Card extraction fields for endpoints, population boundary, uncertainty channels, transfer boundary and next source-specific extraction action.",
+  "sourceOfTruth": {
+    "domainClaimEvidenceMatrix": "docs/reference/human-infra-domain-claim-evidence-matrix.json",
+    "domainFalsifierRegister": "docs/reference/human-infra-domain-falsifier-coverage.json",
+    "sourceCardExtractionRegister": "docs/reference/human-infra-falsifier-source-card-extraction.json",
+    "sourceCardSystem": "docs/reference/source-card-system.md",
+    "maturityGapRegister": "docs/reference/human-infra-maturity-gap-register.json"
+  },
+  "scope": {
+    "coverageLevel": "domain-source-card-field-slots-v0.1",
+    "coveredDomainCount": 26,
+    "selectionRule": "Cover every domain row currently present in the domain Claim-Evidence Matrix seed.",
+    "currentLimitations": [
+      "Endpoint candidates are extracted from the domain variable outputs, not yet from each external paper.",
+      "Population, uncertainty and transfer-boundary fields are required slots, not completed source-specific evidence extraction.",
+      "Rows remain blocked for calibrated prediction, individual recommendation, intervention ranking and individual death-date output.",
+      "The next maturity step is source-by-source extraction of endpoint definitions, sample/population, effect sizes, uncertainty and transfer boundaries."
+    ]
+  },
+  "rowDefaults": {
+    "claimFieldSource": "docs/reference/human-infra-domain-falsifier-coverage.json#entries[].strongClaim",
+    "endpointFieldSource": "docs/reference/human-infra-domain-falsifier-coverage.json#entries[].variables.outputs",
+    "populationBoundary": "requires-source-specific-population-extraction-before-calibration",
+    "uncertaintyChannels": [
+      "effect-size",
+      "endpoint-validity",
+      "population-applicability",
+      "measurement-error",
+      "time-horizon",
+      "tail-risk",
+      "access-and-adoption"
+    ],
+    "transferBoundary": "domain-framing-only-not-intervention-proof-not-individual-prediction",
+    "fieldExtractionStatus": "endpoint-candidates-extracted-population-uncertainty-transfer-boundary-stubbed",
+    "blockedUses": [
+      "calibrated-prediction",
+      "individual-recommendation",
+      "intervention-ranking",
+      "individual-death-date-output"
+    ]
+  },
+  "fieldRows": [
+    {
+      "fieldCardId": "HIDOM-FLD001",
+      "domainClaimId": "HIDOM-CL001",
+      "domainId": "future-waiting",
+      "sourceCardIds": ["SA-GPS-RELATIVITY-2003", "SA-NASA-BLACK-HOLES", "SA-KAPLAN-MEIER-1958"],
+      "endpointCandidates": ["effective-waiting-cost", "future-option-access", "net-continuity-gain"],
+      "nextFieldExtractionAction": "Create route cards for future waiting, biostasis, and metric-redshift variants with exit and continuity gates."
+    },
+    {
+      "fieldCardId": "HIDOM-FLD002",
+      "domainClaimId": "HIDOM-CL002",
+      "domainId": "longevity-evidence",
+      "sourceCardIds": ["SA-HALLMARKS-AGING-2023", "SA-TARGET-TRIAL-2022", "SA-TRIPOD-AI-2024", "SA-KAPLAN-MEIER-1958", "SA-COX-1972"],
+      "endpointCandidates": ["survival-curve-shift", "effective-time-change", "LEV-threshold-status"],
+      "nextFieldExtractionAction": "Extend LEV route cards to non-mainstream boundary routes and connect each route to a falsifier row."
+    },
+    {
+      "fieldCardId": "HIDOM-FLD003",
+      "domainClaimId": "HIDOM-CL003",
+      "domainId": "biostasis-cryopreservation",
+      "sourceCardIds": ["SA-BRAIN-PRESERVATION-2024", "SA-EXTENDED-MIND-1998", "SA-CAPABILITY-APPROACH"],
+      "endpointCandidates": ["preservation-claim-status", "revival-condition-readiness", "continuity-risk"],
+      "nextFieldExtractionAction": "Build Source Cards separating structure preservation evidence from revival and continuity claims."
+    },
+    {
+      "fieldCardId": "HIDOM-FLD004",
+      "domainClaimId": "HIDOM-CL004",
+      "domainId": "brain-preservation-connectomics-emulation",
+      "sourceCardIds": ["SA-BRAIN-PRESERVATION-2024", "SA-EXTENDED-MIND-1998", "SA-DYNAMIC-DIGITAL-TWIN-2022"],
+      "endpointCandidates": ["identity-continuity-status", "information-loss-risk", "emulation-claim-maturity"],
+      "nextFieldExtractionAction": "Create a brain-information sufficiency matrix covering structure, dynamics, memory trace, validation and identity theory."
+    },
+    {
+      "fieldCardId": "HIDOM-FLD005",
+      "domainClaimId": "HIDOM-CL005",
+      "domainId": "disembodied-cns",
+      "sourceCardIds": ["SA-DYNAMIC-DIGITAL-TWIN-2022", "SA-BRAIN-PRESERVATION-2024", "SA-WHO-CONSTITUTION"],
+      "endpointCandidates": ["continuity-maintenance-status", "agency-loss-risk", "governance-abort-status"],
+      "nextFieldExtractionAction": "Separate viability, consciousness, agency and governance requirements into independent abort gates."
+    },
+    {
+      "fieldCardId": "HIDOM-FLD006",
+      "domainClaimId": "HIDOM-CL006",
+      "domainId": "memory-editing",
+      "sourceCardIds": ["SA-EXTENDED-MIND-1998", "SA-NIST-AI-RMF-2023", "SA-CAPABILITY-APPROACH"],
+      "endpointCandidates": ["agency-quality", "identity-continuity-risk", "coercion-risk"],
+      "nextFieldExtractionAction": "Build a memory intervention boundary table separating therapeutic, enhancement, coercive and evidentiary contexts."
+    },
+    {
+      "fieldCardId": "HIDOM-FLD007",
+      "domainClaimId": "HIDOM-CL007",
+      "domainId": "cellular-reprogramming",
+      "sourceCardIds": ["SA-YAMANAKA-IPS-2006", "SA-PARTIAL-REPROGRAMMING-2016", "SA-HALLMARKS-CANCER-2022"],
+      "endpointCandidates": ["tissue-function-change", "healthspan-proxy", "safety-gate-status"],
+      "nextFieldExtractionAction": "Convert the Yamanaka-factor literature spine into Source Cards with identity-loss and tumor-risk gates."
+    },
+    {
+      "fieldCardId": "HIDOM-FLD008",
+      "domainClaimId": "HIDOM-CL008",
+      "domainId": "regenerative-medicine",
+      "sourceCardIds": ["SA-HALLMARKS-AGING-2023", "SA-PARTIAL-REPROGRAMMING-2016", "SA-TARGET-TRIAL-2022"],
+      "endpointCandidates": ["durable-function", "recovery-time", "future-option-access"],
+      "nextFieldExtractionAction": "Build route cards separating cell therapy, tissue engineering, organ replacement and local repair."
+    },
+    {
+      "fieldCardId": "HIDOM-FLD009",
+      "domainClaimId": "HIDOM-CL009",
+      "domainId": "cancer-screening-early-detection-continuity",
+      "sourceCardIds": ["SA-HALLMARKS-CANCER-2022", "SA-NCI-SCREENING-BIAS", "SA-TARGET-TRIAL-2022"],
+      "endpointCandidates": ["cancer-mortality-risk", "treatment-burden", "effective-time-preservation"],
+      "nextFieldExtractionAction": "Create screening route cards that include mortality, overdiagnosis, follow-up and access gates."
+    },
+    {
+      "fieldCardId": "HIDOM-FLD010",
+      "domainClaimId": "HIDOM-CL010",
+      "domainId": "immune-maintenance",
+      "sourceCardIds": ["SA-IMMUNOSENESCENCE-2024", "SA-HALLMARKS-AGING-2023", "SA-TARGET-TRIAL-2022"],
+      "endpointCandidates": ["infection-risk", "cancer-surveillance-risk", "recovery-capacity"],
+      "nextFieldExtractionAction": "Map immune-aging source cards into infection, inflammation, surveillance and autoimmunity channels."
+    },
+    {
+      "fieldCardId": "HIDOM-FLD011",
+      "domainClaimId": "HIDOM-CL011",
+      "domainId": "neuro-continuity",
+      "sourceCardIds": ["SA-DYNAMIC-DIGITAL-TWIN-2022", "SA-EXTENDED-MIND-1998", "SA-WHO-CONSTITUTION"],
+      "endpointCandidates": ["agency-preservation", "identity-continuity", "effective-time-quality"],
+      "nextFieldExtractionAction": "Create variables for memory, executive function, agency, communication and identity-continuity risk."
+    },
+    {
+      "fieldCardId": "HIDOM-FLD012",
+      "domainClaimId": "HIDOM-CL012",
+      "domainId": "mitochondrial-bioenergetics",
+      "sourceCardIds": ["SA-HALLMARKS-AGING-2023", "SA-HALLMARKS-AGING-2013", "SA-WHO-CONSTITUTION"],
+      "endpointCandidates": ["action-capacity", "recovery-quality", "disease-risk-channel"],
+      "nextFieldExtractionAction": "Build a biomarker-to-function map for mitochondrial claims."
+    },
+    {
+      "fieldCardId": "HIDOM-FLD013",
+      "domainClaimId": "HIDOM-CL013",
+      "domainId": "genomic-stability-dna-repair",
+      "sourceCardIds": ["SA-HALLMARKS-AGING-2023", "SA-HALLMARKS-AGING-2013", "SA-HALLMARKS-CANCER-2022"],
+      "endpointCandidates": ["tissue-maintenance", "malignancy-risk", "healthspan-risk-channel"],
+      "nextFieldExtractionAction": "Separate damage reduction, repair fidelity, senescence, apoptosis and cancer escape into distinct variables."
+    },
+    {
+      "fieldCardId": "HIDOM-FLD014",
+      "domainClaimId": "HIDOM-CL014",
+      "domainId": "biological-age-clocks-biomarker-validation",
+      "sourceCardIds": ["SA-GRIMAGE-2019", "SA-TRIPOD-AI-2024", "SA-TARGET-TRIAL-2022"],
+      "endpointCandidates": ["state-estimation-quality", "feedback-loop-validity", "misoptimization-risk"],
+      "nextFieldExtractionAction": "Create a biomarker validation matrix separating correlation, prediction, intervention response, endpoint alignment and misuse."
+    },
+    {
+      "fieldCardId": "HIDOM-FLD015",
+      "domainClaimId": "HIDOM-CL015",
+      "domainId": "proteostasis-autophagy",
+      "sourceCardIds": ["SA-HALLMARKS-AGING-2023", "SA-HALLMARKS-AGING-2013", "SA-TARGET-TRIAL-2022"],
+      "endpointCandidates": ["cellular-function-maintenance", "recovery-resilience", "toxicity-or-wasting-risk"],
+      "nextFieldExtractionAction": "Build Source Cards separating autophagy flux markers, lysosomal function, tissue-level outcomes and adverse channels."
+    },
+    {
+      "fieldCardId": "HIDOM-FLD016",
+      "domainClaimId": "HIDOM-CL016",
+      "domainId": "cellular-senescence-clearance",
+      "sourceCardIds": ["SA-HALLMARKS-AGING-2023", "SA-HALLMARKS-AGING-2013", "SA-HALLMARKS-CANCER-2022"],
+      "endpointCandidates": ["functional-tissue-maintenance", "inflammation-risk-change", "safety-and-cancer-risk"],
+      "nextFieldExtractionAction": "Create a senescence route matrix separating burden, SASP, tissue context, repair function and tail-risk channels."
+    },
+    {
+      "fieldCardId": "HIDOM-FLD017",
+      "domainClaimId": "HIDOM-CL017",
+      "domainId": "extracellular-matrix-glycation",
+      "sourceCardIds": ["SA-HALLMARKS-AGING-2023", "SA-WHO-CONSTITUTION", "SA-TARGET-TRIAL-2022"],
+      "endpointCandidates": ["mobility-and-function", "organ-resilience", "repair-or-fibrosis-risk"],
+      "nextFieldExtractionAction": "Build ECM Source Cards linking crosslinks, fibrosis, tissue mechanics and functional outcomes."
+    },
+    {
+      "fieldCardId": "HIDOM-FLD018",
+      "domainClaimId": "HIDOM-CL018",
+      "domainId": "stem-cell-reserve-renewal",
+      "sourceCardIds": ["SA-HALLMARKS-AGING-2023", "SA-HALLMARKS-AGING-2013", "SA-HALLMARKS-CANCER-2022"],
+      "endpointCandidates": ["tissue-repair-capacity", "regeneration-quality", "cancer-or-exhaustion-risk"],
+      "nextFieldExtractionAction": "Separate reserve, niche, proliferation, differentiation, integration and malignancy variables in Source Cards."
+    },
+    {
+      "fieldCardId": "HIDOM-FLD019",
+      "domainClaimId": "HIDOM-CL019",
+      "domainId": "microbiome-ecology",
+      "sourceCardIds": ["SA-HALLMARKS-AGING-2023", "SA-TARGET-TRIAL-2022", "SA-WHO-CONSTITUTION"],
+      "endpointCandidates": ["metabolic-and-immune-resilience", "infection-or-inflammation-risk", "function-and-recovery-change"],
+      "nextFieldExtractionAction": "Build microbiome Source Cards separating association, causality, intervention response and safety transfer risks."
+    },
+    {
+      "fieldCardId": "HIDOM-FLD020",
+      "domainClaimId": "HIDOM-CL020",
+      "domainId": "cardiovascular-resilience",
+      "sourceCardIds": ["SA-COX-1972", "SA-KAPLAN-MEIER-1958", "SA-TARGET-TRIAL-2022", "SA-HALLMARKS-AGING-2023"],
+      "endpointCandidates": ["major-cardiovascular-event-risk", "functional-capacity", "effective-time-loss-risk"],
+      "nextFieldExtractionAction": "Map cardiovascular variables to hazard, function, recovery and treatment-burden outcomes."
+    },
+    {
+      "fieldCardId": "HIDOM-FLD021",
+      "domainClaimId": "HIDOM-CL021",
+      "domainId": "musculoskeletal-integrity",
+      "sourceCardIds": ["SA-HALLMARKS-AGING-2023", "SA-WHO-CONSTITUTION", "SA-TARGET-TRIAL-2022"],
+      "endpointCandidates": ["ADL-and-task-execution", "injury-and-disability-risk", "effective-time-preservation"],
+      "nextFieldExtractionAction": "Create a musculoskeletal variable table connecting strength, balance, fracture risk, pain and task execution."
+    },
+    {
+      "fieldCardId": "HIDOM-FLD022",
+      "domainClaimId": "HIDOM-CL022",
+      "domainId": "nutrition-metabolic-health",
+      "sourceCardIds": ["SA-HALLMARKS-AGING-2023", "SA-TARGET-TRIAL-2022", "SA-WHO-CONSTITUTION"],
+      "endpointCandidates": ["functional-energy-and-recovery", "cardiometabolic-risk-change", "effective-time-and-access-burden"],
+      "nextFieldExtractionAction": "Separate metabolic biomarkers, functional energy, adherence, access and adverse nutrition channels."
+    },
+    {
+      "fieldCardId": "HIDOM-FLD023",
+      "domainClaimId": "HIDOM-CL023",
+      "domainId": "renal-hepatic-clearance",
+      "sourceCardIds": ["SA-HALLMARKS-AGING-2023", "SA-COX-1972", "SA-TARGET-TRIAL-2022"],
+      "endpointCandidates": ["homeostasis-stability", "treatment-safety-window", "organ-failure-risk"],
+      "nextFieldExtractionAction": "Build clearance Source Cards connecting renal/hepatic variables to homeostasis, toxicity and treatment-safety outputs."
+    },
+    {
+      "fieldCardId": "HIDOM-FLD024",
+      "domainClaimId": "HIDOM-CL024",
+      "domainId": "respiratory-oxygenation",
+      "sourceCardIds": ["SA-WHO-CONSTITUTION", "SA-COX-1972", "SA-TARGET-TRIAL-2022"],
+      "endpointCandidates": ["cognitive-and-physical-energy", "acute-respiratory-failure-risk", "effective-time-loss"],
+      "nextFieldExtractionAction": "Connect oxygenation, sleep breathing, airway risk and environmental exposure to energy and effective-time outputs."
+    },
+    {
+      "fieldCardId": "HIDOM-FLD025",
+      "domainClaimId": "HIDOM-CL025",
+      "domainId": "blood-oxygen-hemostasis",
+      "sourceCardIds": ["SA-COX-1972", "SA-TARGET-TRIAL-2022", "SA-WHO-CONSTITUTION"],
+      "endpointCandidates": ["fatigue-and-function", "acute-event-risk", "treatment-safety-balance"],
+      "nextFieldExtractionAction": "Build a hemostasis tradeoff map covering oxygen transport, bleeding, thrombosis, transfusion and functional endpoints."
+    },
+    {
+      "fieldCardId": "HIDOM-FLD026",
+      "domainClaimId": "HIDOM-CL026",
+      "domainId": "endocrine-hormonal-regulation",
+      "sourceCardIds": ["SA-HALLMARKS-AGING-2023", "SA-TARGET-TRIAL-2022", "SA-WHO-CONSTITUTION"],
+      "endpointCandidates": ["energy-recovery-and-function", "multi-system-risk-balance", "effective-time-and-safety"],
+      "nextFieldExtractionAction": "Create endocrine axis cards separating deficiency, excess, replacement, suppression, feedback and adverse tradeoffs."
+    }
+  ],
+  "coverageSummary": {
+    "coveredDomainCount": 26,
+    "coveredFieldRowCount": 26,
+    "coveredEndpointCandidateCount": 78,
+    "coveredSourceAnchorCount": 20,
+    "fieldCompletionState": "endpoint-candidates-present-population-uncertainty-transfer-boundaries-blocked-for-source-specific-extraction",
+    "remainingWork": [
+      "Extract source-specific endpoint definitions and endpoint alignment from each source card.",
+      "Extract source-specific target population, sample, species, setting and applicability boundaries.",
+      "Extract effect-size, measurement, time-horizon, bias, uncertainty and tail-risk rows for each domain-source pair.",
+      "Promote only fully extracted rows into calibrated model candidates."
+    ]
+  },
+  "nonClaims": [
+    "This register does not complete source-specific extraction.",
+    "This register does not validate external literature or effect sizes.",
+    "This register does not authorize calibrated prediction, individual advice, intervention ranking or individual death-date output.",
+    "This register does not mean all C2 long-tail domains have equivalent field extraction coverage."
+  ],
+  "indexRequirements": [
+    "README.md",
+    "docs/reference/README.md",
+    "docs/reference/human-infra-maturity-roadmap.md",
+    "tools/README.md"
+  ]
+}

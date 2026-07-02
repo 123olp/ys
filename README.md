@@ -19,7 +19,7 @@ Human Infra 是一个研究“能够继续做事的主体”如何被维护、�
 
 ### 主张脊柱
 
-本页对齐核心主张 `HI-CL1`、`HI-CL2`、`HI-CL3` 和 `HI-CL6`，完整矩阵见 [Human Infra Core Claim-Evidence Matrix](docs/reference/human-infra-core-claim-evidence-matrix.md)，页面一致性门禁见 [Page Claim Consistency Register](docs/reference/human-infra-page-claim-consistency.json)，论文强主张门禁见 [Paper Claim Register](docs/reference/human-infra-paper-claim-register.json)，优先域反证门禁见 [Domain Falsifier Coverage Register](docs/reference/human-infra-domain-falsifier-coverage.json)，域级主张证据矩阵见 [Domain Claim-Evidence Matrix](docs/reference/human-infra-domain-claim-evidence-matrix.json)，反证 Source Card 锚点回填见 [Falsifier Source Card Backfill](docs/reference/human-infra-falsifier-source-card-backfill.json)，字段级 Source Card 抽取见 [Falsifier Source Card Extraction](docs/reference/human-infra-falsifier-source-card-extraction.json)。
+本页对齐核心主张 `HI-CL1`、`HI-CL2`、`HI-CL3` 和 `HI-CL6`，完整矩阵见 [Human Infra Core Claim-Evidence Matrix](docs/reference/human-infra-core-claim-evidence-matrix.md)，页面一致性门禁见 [Page Claim Consistency Register](docs/reference/human-infra-page-claim-consistency.json)，论文强主张门禁见 [Paper Claim Register](docs/reference/human-infra-paper-claim-register.json)，优先域反证门禁见 [Domain Falsifier Coverage Register](docs/reference/human-infra-domain-falsifier-coverage.json)，域级主张证据矩阵见 [Domain Claim-Evidence Matrix](docs/reference/human-infra-domain-claim-evidence-matrix.json)，域 Source Card 字段抽取见 [Domain Source Card Field Extraction](docs/reference/human-infra-domain-source-card-field-extraction.json)，反证 Source Card 锚点回填见 [Falsifier Source Card Backfill](docs/reference/human-infra-falsifier-source-card-backfill.json)，字段级 Source Card 抽取见 [Falsifier Source Card Extraction](docs/reference/human-infra-falsifier-source-card-extraction.json)。
 
 边界：Human Infra 不是医疗建议，不输出个体死亡日期，不证明具体技术已经实现有效永生；当前只把主体持续性、生命路径和未来选择权组织成可审查的研究框架。
 
@@ -149,6 +149,7 @@ flowchart LR
 | 查看核心主张证据矩阵 | [docs/reference/human-infra-core-claim-evidence-matrix.md](docs/reference/human-infra-core-claim-evidence-matrix.md) | Human Infra 第一性主张、外部方法锚点、证据角色和禁止外推边界 |
 | 查看论文页强主张门禁 | [docs/reference/human-infra-paper-claim-register.json](docs/reference/human-infra-paper-claim-register.json) | arXiv-style 论文页的强主张、核心 Claim ID、反证条件、降级动作和禁止用途边界 |
 | 查看域级主张证据矩阵 | [docs/reference/human-infra-domain-claim-evidence-matrix.json](docs/reference/human-infra-domain-claim-evidence-matrix.json) | 当前 26 个优先研究域如何连接强主张、变量契约来源、反证来源、Source Card ID 和下一步抽取动作 |
+| 查看域 Source Card 字段抽取 | [docs/reference/human-infra-domain-source-card-field-extraction.json](docs/reference/human-infra-domain-source-card-field-extraction.json) | 当前 26 个优先域的 endpoint 候选、population 槽位、uncertainty 槽位、transfer-boundary 槽位和 source-specific 深读动作 |
 | 查看反证来源锚点回填 | [docs/reference/human-infra-falsifier-source-card-backfill.json](docs/reference/human-infra-falsifier-source-card-backfill.json) | 当前论文强主张和 C1/C2 优先域反证对应的 Source Card 锚点、证据角色、可用范围和外推边界 |
 | 查看字段级 Source Card 抽取 | [docs/reference/human-infra-falsifier-source-card-extraction.json](docs/reference/human-infra-falsifier-source-card-extraction.json) / [人工可读包](docs/source-notes/2026-07-02-falsifier-source-card-field-extraction.md) | 第一批高杠杆来源锚点如何进入域、论文 claim、模型位置、反证用途和迁移边界 |
 | 查看成熟度路线 | [成熟度路线](docs/reference/human-infra-maturity-roadmap.md) / [缺口账本](docs/reference/human-infra-maturity-gap-register.json) | 从价值讲清、研究框架到可运行定量模型的 100% 状态、当前差距和机器可审计 gate |

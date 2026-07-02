@@ -114,7 +114,7 @@
     {
       "axisId": "research_framework",
       "axisName": "研究框架",
-      "currentPercent": 81,
+      "currentPercent": 83,
       "targetPercent": 100,
       "definitionOfDone": "Every strong project claim can be traced to source cards, claim-evidence rows, variables, mechanism links, falsifiers, model position and governance boundary.",
       "primaryEvidence": [
@@ -123,6 +123,7 @@
         "docs/reference/source-card-system.md",
         "docs/reference/human-infra-paper-claim-register.json",
         "docs/reference/human-infra-domain-claim-evidence-matrix.json",
+        "docs/reference/human-infra-domain-source-card-field-extraction.json",
         "docs/reference/human-infra-falsifier-source-card-backfill.json",
         "docs/reference/human-infra-falsifier-source-card-extraction.json",
         "domains/README.md",
@@ -162,13 +163,14 @@
             "domains/c1-boundary-rewriting/longevity-evidence/docs/lev-source-cards.md",
             "domains/c1-boundary-rewriting/longevity-evidence/docs/life-path-data-source-cards.md",
             "docs/reference/human-infra-domain-claim-evidence-matrix.json",
+            "docs/reference/human-infra-domain-source-card-field-extraction.json",
             "tools/audit_human_infra_domain_claim_evidence_matrix.py"
           ],
           "missingEvidence": [
-            "Endpoint-, population-, uncertainty- and transfer-boundary-level Source Cards for each domain matrix seed row.",
+            "Source-specific endpoint, population, effect-size, uncertainty and transfer-boundary rows for each domain-source pair.",
             "Domain-level Claim-Evidence Matrix coverage beyond the current priority C1/C2 set."
           ],
-          "nextAction": "Split the 26 seed domain rows into exact Source Cards for claims, endpoints, populations, uncertainty and transfer boundaries.",
+          "nextAction": "Split the 26 field rows into source-specific Source Cards for endpoint definitions, populations, uncertainty channels and transfer boundaries.",
           "blocks100Percent": true
         },
         {
@@ -179,13 +181,14 @@
             "docs/reference/life-path-prediction-model-contract.md",
             "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_calibration_readiness.json",
             "docs/reference/human-infra-domain-falsifier-coverage.json",
-            "docs/reference/human-infra-domain-claim-evidence-matrix.json"
+            "docs/reference/human-infra-domain-claim-evidence-matrix.json",
+            "docs/reference/human-infra-domain-source-card-field-extraction.json"
           ],
           "missingEvidence": [
-            "Reusable variable template promoted from the current domain falsifier register into field-level domain Source Cards.",
+            "Reusable variable template promoted from endpoint candidate slots into source-specific variable cards.",
             "Domain-specific variable tables for C2 long-tail claims beyond the current priority set."
           ],
-          "nextAction": "Use the domain matrix as the join point, then expand each row into claim-specific variable cards and endpoint contracts.",
+          "nextAction": "Use the field extraction register as the join point, then extract source-specific variable, endpoint and uncertainty contracts.",
           "blocks100Percent": true
         },
         {
@@ -212,10 +215,12 @@
             "docs/reference/human-infra-paper-claim-register.json",
             "docs/reference/human-infra-domain-falsifier-coverage.json",
             "docs/reference/human-infra-domain-claim-evidence-matrix.json",
+            "docs/reference/human-infra-domain-source-card-field-extraction.json",
             "docs/reference/human-infra-falsifier-source-card-backfill.json",
             "docs/reference/human-infra-falsifier-source-card-extraction.json",
             "tools/audit_human_infra_domain_falsifier_coverage.py",
             "tools/audit_human_infra_domain_claim_evidence_matrix.py",
+            "tools/audit_human_infra_domain_source_card_field_extraction.py",
             "tools/audit_human_infra_falsifier_source_card_backfill.py",
             "tools/audit_human_infra_falsifier_source_card_extraction.py",
             "tools/audit_human_infra_page_claim_consistency.py",
@@ -223,9 +228,9 @@
           ],
           "missingEvidence": [
             "Falsifier rows for C2 domain claims beyond the current 20-domain priority set.",
-            "Domain-level Source Cards that split each source anchor into exact claim, variable, endpoint, population, uncertainty and transfer-boundary rows."
+            "Source-specific rows that bind each source anchor to exact claim, variable, endpoint, population, uncertainty and transfer-boundary evidence."
           ],
-          "nextAction": "Split C1/C2 domain claims into domain-level Source Cards with exact claim, variable, endpoint, population, uncertainty and transfer-boundary rows.",
+          "nextAction": "Convert current field slots into source-specific Source Cards with exact claim, variable, endpoint, population, uncertainty and transfer-boundary evidence.",
           "blocks100Percent": true
         }
       ]
@@ -372,7 +377,7 @@
   "nextWorkOrder": [
     {
       "priority": 1,
-      "item": "Split C1/C2 domain claims into domain-level Source Cards with exact claim, variable, endpoint, population, uncertainty and transfer-boundary rows.",
+      "item": "Convert the 26 domain field-extraction rows into source-specific Source Cards with exact claim, endpoint, population, effect-size, uncertainty and transfer-boundary evidence.",
       "unblocks": [
         "RESEARCH-G6-falsifier-and-downgrade-coverage"
       ]
@@ -386,7 +391,7 @@
     },
     {
       "priority": 3,
-      "item": "Extend the domain Claim-Evidence Matrix beyond the current priority domains and promote seed rows into reusable variable contract templates.",
+      "item": "Extend the domain Claim-Evidence Matrix beyond the current priority domains and promote field rows into reusable variable contract templates.",
       "unblocks": [
         "RESEARCH-G3-c1-c2-source-cards",
         "RESEARCH-G4-variable-mechanism-contracts"

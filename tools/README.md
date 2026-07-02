@@ -11,6 +11,7 @@
 - `audit_human_infra_paper_claim_register.py`: verifies that every arXiv-style paper page has paper-specific strong claims, core Claim IDs, falsifiers, downgrade actions, registered source data paths and prohibited-use boundaries from `docs/reference/human-infra-paper-claim-register.json`.
 - `audit_human_infra_domain_falsifier_coverage.py`: verifies that C1 and the current 20 priority C2 research domains keep falsifier, downgrade-condition, variable-interface and prohibited-use scaffolding from `docs/reference/human-infra-domain-falsifier-coverage.json`.
 - `audit_human_infra_domain_claim_evidence_matrix.py`: verifies that the current 26 priority research domains are joined to domain claims, variable-contract sources, falsifier sources and extracted Source Card IDs from `docs/reference/human-infra-domain-claim-evidence-matrix.json`.
+- `audit_human_infra_domain_source_card_field_extraction.py`: verifies that each current domain matrix seed row has endpoint candidates, source IDs, population-boundary slots, uncertainty-channel slots, transfer-boundary slots and next field-extraction actions from `docs/reference/human-infra-domain-source-card-field-extraction.json`.
 - `audit_human_infra_falsifier_source_card_backfill.py`: verifies that current paper strong claims and C1/C2 priority-domain falsifier rows have Source Card anchor backfill, evidence roles, supported-use boundaries and transfer boundaries from `docs/reference/human-infra-falsifier-source-card-backfill.json`.
 - `audit_human_infra_falsifier_source_card_extraction.py`: verifies that all current source anchors from `docs/reference/human-infra-falsifier-source-card-extraction.json` map to exact source identity, Human Infra domains, paper claims, model positions, transfer boundaries and the human-readable source-note pack.
 - `check_repository.py`: verifies required files, required directories, temporary filename cleanup, Python cache cleanup, and local Markdown links.
@@ -39,6 +40,7 @@ python3 tools/audit_human_infra_page_claim_consistency.py
 python3 tools/audit_human_infra_paper_claim_register.py
 python3 tools/audit_human_infra_domain_falsifier_coverage.py
 python3 tools/audit_human_infra_domain_claim_evidence_matrix.py
+python3 tools/audit_human_infra_domain_source_card_field_extraction.py
 python3 tools/audit_human_infra_falsifier_source_card_backfill.py
 python3 tools/audit_human_infra_falsifier_source_card_extraction.py
 python3 tools/update_domain_doc_contracts.py
@@ -49,6 +51,7 @@ make page-claim-audit
 make paper-claim-audit
 make domain-falsifier-audit
 make domain-claim-matrix-audit
+make domain-field-extraction-audit
 make falsifier-source-audit
 make falsifier-source-extraction-audit
 make check

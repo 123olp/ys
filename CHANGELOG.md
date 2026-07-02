@@ -4,6 +4,7 @@ All notable repository structure changes are recorded here.
 
 ## 2026-07-02
 
+- Added a domain Source Card field-extraction register and audit gate, giving all 26 priority domain matrix rows endpoint candidates, population-boundary slots, uncertainty-channel slots, transfer-boundary slots, source IDs and next source-specific extraction actions.
 - Added a domain-level Claim-Evidence Matrix seed and audit gate, joining the current 26 priority research domains to claim sources, variable-contract sources, falsifier sources, extracted Source Card IDs, blocked-use boundaries and next extraction actions.
 - Added a machine-readable falsifier Source Card field-extraction register, human-readable source-note pack and audit gate, promoting all 21 current source anchors into domain mappings, paper claim links, model positions, falsifier uses and transfer boundaries.
 - Added a machine-readable falsifier Source Card anchor backfill register and audit gate, covering all current arXiv-style paper strong claims and C1/C2 priority-domain falsifier rows with source anchors, evidence roles, supported-use boundaries, transfer boundaries and next Source Card actions.
