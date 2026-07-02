@@ -186,7 +186,9 @@
         "docs/reference/human-infra-c2-longtail-third-batch-reviewed-card-artifact-register.json",
         "tools/audit_human_infra_c2_longtail_third_batch_reviewed_card_artifact_register.py",
         "docs/reference/human-infra-c2-longtail-fourth-batch-source-extraction-queue.json",
-        "tools/audit_human_infra_c2_longtail_fourth_batch_source_extraction_queue.py"
+        "tools/audit_human_infra_c2_longtail_fourth_batch_source_extraction_queue.py",
+        "docs/reference/human-infra-c2-longtail-fourth-batch-source-extraction-register.json",
+        "tools/audit_human_infra_c2_longtail_fourth_batch_source_extraction_register.py"
       ],
       "gates": [
         {
@@ -306,13 +308,15 @@
             "docs/reference/human-infra-c2-longtail-fourth-batch-promotion-queue.json",
             "tools/audit_human_infra_c2_longtail_fourth_batch_promotion_queue.py",
             "docs/reference/human-infra-c2-longtail-fourth-batch-source-extraction-queue.json",
-            "tools/audit_human_infra_c2_longtail_fourth_batch_source_extraction_queue.py"
+            "tools/audit_human_infra_c2_longtail_fourth_batch_source_extraction_queue.py",
+            "docs/reference/human-infra-c2-longtail-fourth-batch-source-extraction-register.json",
+            "tools/audit_human_infra_c2_longtail_fourth_batch_source_extraction_register.py"
           ],
           "missingEvidence": [
-            "C2-LT-B4 source extraction queue exists but still needs source extraction register, local review, independent fresh review and reviewed artifacts.",
+            "C2-LT-B4 source extraction register exists but still needs local review, independent fresh review and reviewed artifacts.",
             "Remaining C2 long-tail domains outside B1/B2/B3/B4 still need batch selection, source extraction, fresh review and reviewed artifacts."
           ],
-          "nextAction": "Run C2-LT-B4 source-specific extraction into a completed register, then continue local review, independent fresh review and bounded reviewed artifacts while keeping model admission blocked.",
+          "nextAction": "Run C2-LT-B4 local source-context review, then independent fresh review and bounded reviewed artifacts while keeping model admission blocked.",
           "blocks100Percent": true
         },
         {
@@ -407,14 +411,16 @@
             "docs/reference/human-infra-c2-longtail-fourth-batch-promotion-queue.json",
             "tools/audit_human_infra_c2_longtail_fourth_batch_promotion_queue.py",
             "docs/reference/human-infra-c2-longtail-fourth-batch-source-extraction-queue.json",
-            "tools/audit_human_infra_c2_longtail_fourth_batch_source_extraction_queue.py"
+            "tools/audit_human_infra_c2_longtail_fourth_batch_source_extraction_queue.py",
+            "docs/reference/human-infra-c2-longtail-fourth-batch-source-extraction-register.json",
+            "tools/audit_human_infra_c2_longtail_fourth_batch_source_extraction_register.py"
           ],
           "missingEvidence": [
-            "B3 reviewed artifacts and B4 source-extraction tasks are not yet connected to any calibrated model-admission gate.",
+            "B3 reviewed artifacts and B4 source-extracted rows are not yet connected to any calibrated model-admission gate.",
             "C2-LT-B4 still needs reviewed variable, endpoint, uncertainty, transfer-boundary and downgrade artifacts.",
             "Remaining C2 long-tail domains outside B1/B2/B3/B4 still need reviewed variable, endpoint, uncertainty, transfer-boundary and downgrade artifacts."
           ],
-          "nextAction": "Keep B3 artifacts and B4 source-extraction tasks as bounded vocabulary and route-contract evidence only; complete B4 extraction/review/artifact gates before any calibrated model use.",
+          "nextAction": "Keep B3 artifacts and B4 source-extracted rows as bounded vocabulary and route-contract evidence only; complete B4 local review/fresh review/artifact gates before any calibrated model use.",
           "blocks100Percent": true
         },
         {
@@ -534,13 +540,15 @@
             "docs/reference/human-infra-c2-longtail-fourth-batch-promotion-queue.json",
             "tools/audit_human_infra_c2_longtail_fourth_batch_promotion_queue.py",
             "docs/reference/human-infra-c2-longtail-fourth-batch-source-extraction-queue.json",
-            "tools/audit_human_infra_c2_longtail_fourth_batch_source_extraction_queue.py"
+            "tools/audit_human_infra_c2_longtail_fourth_batch_source_extraction_queue.py",
+            "docs/reference/human-infra-c2-longtail-fourth-batch-source-extraction-register.json",
+            "tools/audit_human_infra_c2_longtail_fourth_batch_source_extraction_register.py"
           ],
           "missingEvidence": [
-            "C2-LT-B4 source extraction queue exists but still needs independent source review and downgrade rows.",
+            "C2-LT-B4 source extraction register exists but still needs local review, independent source review and reviewed downgrade rows.",
             "Remaining C2 long-tail domains still need independent source review and downgrade rows."
           ],
-          "nextAction": "Continue C2-LT-B4 source extraction and preserve downgrade/duplicate/source-resolution rows as explicit blockedRows before any domain claim upgrade.",
+          "nextAction": "Run C2-LT-B4 local review and preserve no-abstract, duplicate-lineage, downgrade and source-resolution rows as explicit blockedRows before any domain claim upgrade.",
           "blocks100Percent": true
         }
       ]
@@ -702,7 +710,7 @@
   "nextWorkOrder": [
     {
       "priority": 1,
-      "item": "Complete C2-LT-B4 source extraction register, local review, independent fresh review and reviewed-artifact loop while preserving all earlier blocked downgrade/source-resolution rows.",
+      "item": "Complete C2-LT-B4 local review, independent fresh review and reviewed-artifact loop while preserving no-abstract, duplicate-lineage and all earlier blocked downgrade/source-resolution rows.",
       "unblocks": [
         "RESEARCH-G3-c1-c2-source-cards",
         "RESEARCH-G4-variable-mechanism-contracts",

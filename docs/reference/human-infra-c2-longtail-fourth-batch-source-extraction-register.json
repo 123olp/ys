@@ -1,0 +1,1108 @@
+{
+  "schemaVersion": "human-infra.c2-longtail-fourth-batch-source-extraction-register.v1",
+  "registerId": "C2-LT-B4-SOURCE-EXTRACTION-REGISTER",
+  "status": "active-c2ltb4-source-extractions-pending-fresh-review",
+  "purpose": "Record completed local source-context field extraction for the fourth C2 long-tail source-extraction queue, covering metabolic, endocrine, renal, hepatic, electrolyte and oxygen-carrying continuity domains while preserving no-abstract, duplicate-lineage, transfer-boundary and model-admission blocks.",
+  "sourceOfTruth": {
+    "sourceExtractionQueue": "docs/reference/human-infra-c2-longtail-fourth-batch-source-extraction-queue.json",
+    "sourceCardSystem": "docs/reference/source-card-system.md",
+    "maturityGapRegister": "docs/reference/human-infra-maturity-gap-register.json",
+    "maturityRoadmap": "docs/reference/human-infra-maturity-roadmap.md"
+  },
+  "scope": {
+    "batchId": "C2-LT-B4",
+    "queueTaskCount": 24,
+    "extractedTaskCount": 24,
+    "remainingTaskCount": 0,
+    "coveredDomainCount": 12,
+    "selectedTaskIds": [
+      "C2LTB4-EXT-001",
+      "C2LTB4-EXT-002",
+      "C2LTB4-EXT-003",
+      "C2LTB4-EXT-004",
+      "C2LTB4-EXT-005",
+      "C2LTB4-EXT-006",
+      "C2LTB4-EXT-007",
+      "C2LTB4-EXT-008",
+      "C2LTB4-EXT-009",
+      "C2LTB4-EXT-010",
+      "C2LTB4-EXT-011",
+      "C2LTB4-EXT-012",
+      "C2LTB4-EXT-013",
+      "C2LTB4-EXT-014",
+      "C2LTB4-EXT-015",
+      "C2LTB4-EXT-016",
+      "C2LTB4-EXT-017",
+      "C2LTB4-EXT-018",
+      "C2LTB4-EXT-019",
+      "C2LTB4-EXT-020",
+      "C2LTB4-EXT-021",
+      "C2LTB4-EXT-022",
+      "C2LTB4-EXT-023",
+      "C2LTB4-EXT-024"
+    ],
+    "extractionDepth": "source-context-field-extraction-with-no-abstract-and-duplicate-lineage-flags",
+    "currentLimitations": [
+      "This register completes local source-context field extraction only; it does not complete local review, independent fresh review or reviewed artifact promotion.",
+      "Rows with absent PubMed abstracts remain fulltext/manual-review-needed before artifact fill.",
+      "Duplicate consensus publication lineage rows must be handled before evidence counting.",
+      "No row authorizes calibrated prediction, individual advice, intervention ranking, clinical-validity claims or individual death-date output."
+    ]
+  },
+  "sourceAccessNotes": [
+    "PubMed records and abstracts were checked through NCBI source metadata for all 24 C2-LT-B4 queued sources.",
+    "Three PubMed records had no abstract in the automated source-context pass and remain fulltext/manual-review-needed before artifact promotion: C2LTB4-EXT-005, C2LTB4-EXT-011 and C2LTB4-EXT-020.",
+    "C2LTB4-EXT-001 and C2LTB4-EXT-002 appear to be the same adult hyperglycemic crisis consensus report through different journal/publication-lineage routes; local review must decide duplicate handling before evidence counting.",
+    "All rows are source-context support only; guideline, consensus, statement or standard status does not admit calibrated model parameters."
+  ],
+  "extractedRows": [
+    {
+      "taskId": "C2LTB4-EXT-001",
+      "domainId": "diabetic-hyperglycemic-hypoglycemic-crisis-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/diabetic-hyperglycemic-hypoglycemic-crisis-continuity",
+      "sourceRefId": "C2LTB4-SRC-01-1",
+      "sourceTitle": "Hyperglycaemic crises in adults with diabetes: a consensus report",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/38907161/",
+      "extractionStatus": "completed-c2ltb4-source-context-extraction",
+      "sourceAccessStatus": "pubmed-consensus-abstract-aligned",
+      "sourceRole": "hyperglycaemic-crisis-consensus-pathophysiology-diagnosis-treatment-prevention-anchor",
+      "exactClaimUse": "Can support source-context framing that adult DKA and HHS are acute metabolic crisis continuity failures governed by consensus recommendations for epidemiology, pathophysiology, clinical presentation, diagnosis, treatment and prevention.",
+      "endpointDefinition": "Candidate endpoints include DKA/HHS status, hyperosmolality, acidosis/ketosis, potassium shift risk, fluid deficit, precipitating factor control, hospital course and recurrence prevention.",
+      "populationOrSetting": "Adults with diabetes experiencing diabetic ketoacidosis or hyperglycaemic hyperosmolar state in emergency, inpatient and post-crisis prevention settings.",
+      "effectOrMechanismSignal": "Crisis management changes continuity through correction of dehydration, hyperglycemia, ketosis/acidosis, osmolality and electrolyte shifts while addressing triggers that affect recurrence risk.",
+      "uncertaintyOrBias": "Consensus guidance is not an individualized crisis calculator; evidence strength, local ICU capability, comorbidity, pregnancy, kidney function and precipitating infection can alter transferability.",
+      "transferBoundary": "Do not transfer this row to pediatric protocols, individual insulin/fluid dosing, personal prognosis or calibrated mortality estimates.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis or individual death-date output",
+        "source is used beyond its population, guideline, consensus, statement or source-lineage role without local review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population boundary and transfer boundary needed for bounded artifact fill"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 metabolic-endocrine-renal-hepatic source-context extraction register",
+        "variables": [
+          "ketone-acidosis-status",
+          "serum-osmolality",
+          "glucose-trajectory",
+          "potassium-shift-risk",
+          "recurrence-prevention-continuity"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, then fresh review, before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, preserve any no-abstract/fulltext/manual-review boundary, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB4-EXT-002",
+      "domainId": "diabetic-hyperglycemic-hypoglycemic-crisis-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/diabetic-hyperglycemic-hypoglycemic-crisis-continuity",
+      "sourceRefId": "C2LTB4-SRC-01-2",
+      "sourceTitle": "Hyperglycemic Crises in Adults With Diabetes: A Consensus Report",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/39052901/",
+      "extractionStatus": "completed-c2ltb4-source-context-extraction",
+      "sourceAccessStatus": "pubmed-consensus-review-abstract-aligned",
+      "sourceRole": "hyperglycemic-crisis-ada-easd-jbds-aace-dts-duplicate-consensus-anchor",
+      "exactClaimUse": "Can support the same adult DKA/HHS source-context domain as the related Diabetologia consensus report, with Diabetes Care publication lineage preserving the ADA-facing consensus route.",
+      "endpointDefinition": "Candidate endpoints include DKA/HHS diagnosis, treatment response, electrolyte safety, precipitating factor resolution, hospitalization and prevention of recurrent hyperglycemic crisis.",
+      "populationOrSetting": "Adults with diabetes in acute care and post-discharge prevention settings covered by ADA/EASD/JBDS/AACE/DTS consensus scope.",
+      "effectOrMechanismSignal": "Mechanism-level signal is acute metabolic stabilization plus prevention: correcting volume, insulin deficit and electrolyte abnormalities can reduce acute hazard while recurrence prevention protects future continuity.",
+      "uncertaintyOrBias": "This row likely duplicates the consensus content from another journal route; local review must decide whether to keep both lineage anchors or collapse one as duplicate.",
+      "transferBoundary": "Transfer only as consensus-source lineage and adult hyperglycemic-crisis route vocabulary; do not count as independent evidence strength without duplicate handling.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis or individual death-date output",
+        "source is used beyond its population, guideline, consensus, statement or source-lineage role without local review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population boundary and transfer boundary needed for bounded artifact fill",
+        "duplicate publication lineage is counted as independent evidence rather than source-route lineage"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 metabolic-endocrine-renal-hepatic source-context extraction register",
+        "variables": [
+          "ketone-acidosis-status",
+          "serum-osmolality",
+          "glucose-trajectory",
+          "potassium-shift-risk",
+          "recurrence-prevention-continuity"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, then fresh review, before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, preserve any no-abstract/fulltext/manual-review boundary, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB4-EXT-003",
+      "domainId": "diabetes-insulin-glucose-monitoring-supplies-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/diabetes-insulin-glucose-monitoring-supplies-continuity",
+      "sourceRefId": "C2LTB4-SRC-02-1",
+      "sourceTitle": "Pharmacologic Approaches to Glycemic Treatment: Standards of Care in Diabetes-2026",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/41358900/",
+      "extractionStatus": "completed-c2ltb4-source-context-extraction",
+      "sourceAccessStatus": "pubmed-annual-standard-abstract-aligned",
+      "sourceRole": "diabetes-pharmacologic-treatment-standards-current-year-anchor",
+      "exactClaimUse": "Can support that diabetes pharmacologic treatment is organized through ADA annual Standards of Care, including treatment goals, care components and quality-of-care evaluation tools.",
+      "endpointDefinition": "Candidate endpoints include glycemic treatment plan continuity, medication class access, insulin use, hypoglycemia burden, treatment intensification/deintensification context and care-quality evaluation.",
+      "populationOrSetting": "People with diabetes receiving pharmacologic glycemic treatment under ADA standards; specific subtypes and comorbidities require later source-card separation.",
+      "effectOrMechanismSignal": "Treatment continuity affects future health through sustained glycemic control, hypoglycemia avoidance, medication access, complication prevention and quality-of-care feedback.",
+      "uncertaintyOrBias": "Annual standards change; recommendations are care standards rather than individual outcome estimates, and 2026 details require full standard section review before artifact promotion.",
+      "transferBoundary": "Do not use as individualized drug selection, treatment ranking or calibrated risk reduction without separate endpoint and trial evidence.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis or individual death-date output",
+        "source is used beyond its population, guideline, consensus, statement or source-lineage role without local review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population boundary and transfer boundary needed for bounded artifact fill"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 metabolic-endocrine-renal-hepatic source-context extraction register",
+        "variables": [
+          "insulin-access-continuity",
+          "glucose-monitoring-frequency",
+          "medication-continuity",
+          "hypoglycemia-burden",
+          "supply-interruption-risk"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, then fresh review, before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, preserve any no-abstract/fulltext/manual-review boundary, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB4-EXT-004",
+      "domainId": "diabetes-insulin-glucose-monitoring-supplies-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/diabetes-insulin-glucose-monitoring-supplies-continuity",
+      "sourceRefId": "C2LTB4-SRC-02-2",
+      "sourceTitle": "7. Diabetes Technology: Standards of Care in Diabetes-2025",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/39651978/",
+      "extractionStatus": "completed-c2ltb4-source-context-extraction",
+      "sourceAccessStatus": "pubmed-annual-technology-standard-abstract-aligned",
+      "sourceRole": "diabetes-technology-monitoring-device-supply-standard-anchor",
+      "exactClaimUse": "Can support that diabetes technology is part of ADA Standards of Care and that devices such as glucose monitoring and insulin delivery systems belong in the supplies-and-monitoring continuity domain.",
+      "endpointDefinition": "Candidate endpoints include CGM or pump availability, glucose monitoring frequency, device continuity, data availability, hypoglycemia exposure and interruption of technology supply.",
+      "populationOrSetting": "People with diabetes using or being considered for diabetes technologies, with device-specific eligibility and training boundaries requiring later review.",
+      "effectOrMechanismSignal": "Technology modifies continuity by improving observation frequency, feedback speed, insulin delivery workflow and detection of hypoglycemic or hyperglycemic excursions.",
+      "uncertaintyOrBias": "Device benefit depends on access, training, adherence, sensor/pump supply reliability, data interpretation and yearly standards updates.",
+      "transferBoundary": "Transfer only to technology and monitoring variable vocabulary. Do not infer individual benefit, prescribe devices or rank technologies.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis or individual death-date output",
+        "source is used beyond its population, guideline, consensus, statement or source-lineage role without local review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population boundary and transfer boundary needed for bounded artifact fill"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 metabolic-endocrine-renal-hepatic source-context extraction register",
+        "variables": [
+          "insulin-access-continuity",
+          "glucose-monitoring-frequency",
+          "cgM-or-pump-availability",
+          "hypoglycemia-burden",
+          "supply-interruption-risk"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, then fresh review, before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, preserve any no-abstract/fulltext/manual-review boundary, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB4-EXT-005",
+      "domainId": "hypertensive-crisis-end-organ-risk-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/hypertensive-crisis-end-organ-risk-continuity",
+      "sourceRefId": "C2LTB4-SRC-03-1",
+      "sourceTitle": "2024 ESC Guidelines for the management of elevated blood pressure and hypertension",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/39210715/",
+      "extractionStatus": "completed-c2ltb4-source-context-extraction",
+      "sourceAccessStatus": "pubmed-practice-guideline-record-no-abstract-fulltext-needed",
+      "sourceRole": "elevated-blood-pressure-hypertension-guideline-lineage-anchor",
+      "exactClaimUse": "Can support source lineage that ESC issued 2024 guidance for elevated blood pressure and hypertension, but PubMed metadata lacks an abstract, so exact recommendations must be extracted from the full guideline before claim promotion.",
+      "endpointDefinition": "Candidate endpoints remain provisional: blood pressure category, hypertension diagnosis, target-organ damage risk, treatment threshold and follow-up intensity.",
+      "populationOrSetting": "Adults with elevated blood pressure or hypertension within ESC guideline scope; acute hypertensive crisis claims require exact full-text verification.",
+      "effectOrMechanismSignal": "Likely route signal is blood-pressure control and target-organ risk reduction, but this row should remain lineage-context until exact guideline text is reviewed.",
+      "uncertaintyOrBias": "No PubMed abstract was available in the local extraction pass; using the title alone for acute crisis or end-organ management would overclaim.",
+      "transferBoundary": "Do not use this row for crisis-specific management, treatment speed, drug ranking or endpoint calibration until full guideline text is reviewed.",
+      "downgradeTriggers": [
+        "PubMed abstract is absent and exact full-text source context is not manually extracted",
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis or individual death-date output",
+        "source is used beyond its population, guideline, consensus, statement or source-lineage role without local review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population boundary and transfer boundary needed for bounded artifact fill"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 metabolic-endocrine-renal-hepatic source-context extraction register",
+        "variables": [
+          "blood-pressure-severity",
+          "acute-end-organ-damage",
+          "treatment-setting",
+          "blood-pressure-reduction-tempo",
+          "follow-up-continuity"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, then fresh review, before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, preserve any no-abstract/fulltext/manual-review boundary, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB4-EXT-006",
+      "domainId": "hypertensive-crisis-end-organ-risk-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/hypertensive-crisis-end-organ-risk-continuity",
+      "sourceRefId": "C2LTB4-SRC-03-2",
+      "sourceTitle": "The Management of Elevated Blood Pressure in the Acute Care Setting: A Scientific Statement From the American Heart Association",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/38804130/",
+      "extractionStatus": "completed-c2ltb4-source-context-extraction",
+      "sourceAccessStatus": "pubmed-scientific-statement-abstract-aligned",
+      "sourceRole": "acute-care-elevated-blood-pressure-target-organ-damage-boundary-anchor",
+      "exactClaimUse": "Can support source-context framing that elevated inpatient or emergency-department blood pressure is common, evidence is less developed than outpatient hypertension care, and hypertensive emergency is distinguished by new or worsening target-organ damage.",
+      "endpointDefinition": "Candidate endpoints include acute-care BP elevation, presence of target-organ damage, care setting, treatment decision context, practice variation and follow-up continuity.",
+      "populationOrSetting": "Emergency department and inpatient acute-care settings with elevated BP, including asymptomatic elevations and hypertensive emergency boundaries.",
+      "effectOrMechanismSignal": "Continuity signal is hazard triage: target-organ damage changes urgency, care pathway and downstream risk, while evidence gaps require conservative model use.",
+      "uncertaintyOrBias": "The statement explicitly notes limited acute-care evidence and practice variation; it should not be treated as a calibrated intervention-effect source.",
+      "transferBoundary": "Transfer only to acute-care hypertension boundary vocabulary and target-organ-damage triage variables, not individual BP treatment advice.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis or individual death-date output",
+        "source is used beyond its population, guideline, consensus, statement or source-lineage role without local review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population boundary and transfer boundary needed for bounded artifact fill"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 metabolic-endocrine-renal-hepatic source-context extraction register",
+        "variables": [
+          "blood-pressure-severity",
+          "acute-end-organ-damage",
+          "treatment-setting",
+          "blood-pressure-reduction-tempo",
+          "follow-up-continuity"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, then fresh review, before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, preserve any no-abstract/fulltext/manual-review boundary, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB4-EXT-007",
+      "domainId": "dialysis-access-vascular-peritoneal-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/dialysis-access-vascular-peritoneal-continuity",
+      "sourceRefId": "C2LTB4-SRC-04-1",
+      "sourceTitle": "KDOQI Clinical Practice Guideline for Vascular Access: 2019 Update",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/32778223/",
+      "extractionStatus": "completed-c2ltb4-source-context-extraction",
+      "sourceAccessStatus": "pubmed-guideline-abstract-aligned",
+      "sourceRole": "vascular-access-life-plan-choice-patency-complication-guideline-anchor",
+      "exactClaimUse": "Can support that vascular access care for CKD/hemodialysis is governed by KDOQI guidance including ESKD Life-Plan concepts, access choice, targets for fistulas/grafts/catheters and multidisciplinary management.",
+      "endpointDefinition": "Candidate endpoints include access type, access patency, access intervention burden, infection/thrombosis complications, dialysis adequacy and alignment with life-plan.",
+      "populationOrSetting": "Chronic kidney disease and hemodialysis patients requiring vascular access planning, creation, monitoring and maintenance.",
+      "effectOrMechanismSignal": "Access quality affects continuity by controlling whether dialysis can be delivered reliably while minimizing infection, thrombosis, procedures and hospitalizations.",
+      "uncertaintyOrBias": "Access recommendations depend on patient life-plan, vessels, comorbidity, modality choice, center capability and evolving evidence.",
+      "transferBoundary": "Do not transfer to peritoneal dialysis care, individual access choice or calibrated survival without separate evidence.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis or individual death-date output",
+        "source is used beyond its population, guideline, consensus, statement or source-lineage role without local review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population boundary and transfer boundary needed for bounded artifact fill"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 metabolic-endocrine-renal-hepatic source-context extraction register",
+        "variables": [
+          "access-type",
+          "access-patency",
+          "access-infection-risk",
+          "dialysis-adequacy",
+          "access-intervention-burden"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, then fresh review, before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, preserve any no-abstract/fulltext/manual-review boundary, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB4-EXT-008",
+      "domainId": "dialysis-access-vascular-peritoneal-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/dialysis-access-vascular-peritoneal-continuity",
+      "sourceRefId": "C2LTB4-SRC-04-2",
+      "sourceTitle": "UK Kidney Association Clinical Practice Guideline on vascular access for haemodialysis",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/40813633/",
+      "extractionStatus": "completed-c2ltb4-source-context-extraction",
+      "sourceAccessStatus": "pubmed-guideline-review-abstract-aligned",
+      "sourceRole": "uk-haemodialysis-vascular-access-standard-of-care-anchor",
+      "exactClaimUse": "Can support that good-quality vascular access care for patients approaching or undergoing haemodialysis involves graded guideline statements and a center-level standard-of-care frame.",
+      "endpointDefinition": "Candidate endpoints include access planning, access type, cannulation/maintenance quality, infection or thrombosis complications and dialysis-center process reliability.",
+      "populationOrSetting": "Patients approaching or undergoing haemodialysis in UK dialysis-center and related medicine settings.",
+      "effectOrMechanismSignal": "The guideline modifies continuity through system-level access planning and maintenance processes that preserve dialysis delivery capacity.",
+      "uncertaintyOrBias": "The source itself warns patients not to interpret it as a rulebook; transferability outside UK practice and exact recommendations require full guideline review.",
+      "transferBoundary": "Use as vascular-access care-quality and system-process vocabulary only, not individual access choice or prognosis.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis or individual death-date output",
+        "source is used beyond its population, guideline, consensus, statement or source-lineage role without local review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population boundary and transfer boundary needed for bounded artifact fill"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 metabolic-endocrine-renal-hepatic source-context extraction register",
+        "variables": [
+          "access-type",
+          "access-patency",
+          "access-infection-risk",
+          "dialysis-adequacy",
+          "access-intervention-burden"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, then fresh review, before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, preserve any no-abstract/fulltext/manual-review boundary, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB4-EXT-009",
+      "domainId": "kidney-transplant-immunosuppression-graft-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/kidney-transplant-immunosuppression-graft-continuity",
+      "sourceRefId": "C2LTB4-SRC-05-1",
+      "sourceTitle": "KDIGO clinical practice guideline for the care of kidney transplant recipients",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/19845597/",
+      "extractionStatus": "completed-c2ltb4-source-context-extraction",
+      "sourceAccessStatus": "pubmed-guideline-abstract-aligned",
+      "sourceRole": "kidney-transplant-immunosuppression-graft-monitoring-complication-guideline-anchor",
+      "exactClaimUse": "Can support that kidney transplant recipient continuity is structured by evidence-based recommendations for immunosuppression, graft monitoring and prevention/management of post-transplant complications.",
+      "endpointDefinition": "Candidate endpoints include graft function, rejection risk, immunosuppression continuity, infection surveillance, malignancy/cardiovascular complications and patient/graft survival.",
+      "populationOrSetting": "Adults and children after kidney transplantation under KDIGO care guidance.",
+      "effectOrMechanismSignal": "Transplant continuity depends on balancing immune suppression against rejection, infection, malignancy and cardiovascular risk while monitoring graft function.",
+      "uncertaintyOrBias": "Guideline is from 2009 and may need updated source layering for newer immunosuppression, viral surveillance and long-term outcome evidence.",
+      "transferBoundary": "Do not use as current standalone evidence for all transplant practices without newer supporting rows and fresh review.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis or individual death-date output",
+        "source is used beyond its population, guideline, consensus, statement or source-lineage role without local review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population boundary and transfer boundary needed for bounded artifact fill"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 metabolic-endocrine-renal-hepatic source-context extraction register",
+        "variables": [
+          "immunosuppression-continuity",
+          "graft-function",
+          "rejection-risk",
+          "infection-surveillance",
+          "malignancy-cardiovascular-risk"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, then fresh review, before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, preserve any no-abstract/fulltext/manual-review boundary, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB4-EXT-010",
+      "domainId": "kidney-transplant-immunosuppression-graft-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/kidney-transplant-immunosuppression-graft-continuity",
+      "sourceRefId": "C2LTB4-SRC-05-2",
+      "sourceTitle": "The Second International Consensus Guidelines on the Management of BK Polyomavirus in Kidney Transplantation",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/38605438/",
+      "extractionStatus": "completed-c2ltb4-source-context-extraction",
+      "sourceAccessStatus": "pubmed-consensus-abstract-aligned",
+      "sourceRole": "bk-polyomavirus-kidney-transplant-screening-risk-factor-consensus-anchor",
+      "exactClaimUse": "Can support that BK polyomavirus remains a significant post-kidney-transplant challenge and that updated consensus guidance addresses risk factors, screening frequency and early intervention to limit allograft damage.",
+      "endpointDefinition": "Candidate endpoints include BKPyV-DNAemia, BKPyV-nephropathy, screening interval, immunosuppression exposure, graft damage and transplant outcome.",
+      "populationOrSetting": "Kidney transplant recipients, including risk-factor contexts involving donor/recipient serostatus, age, sex, tacrolimus, acute rejection and steroid exposure.",
+      "effectOrMechanismSignal": "Viral monitoring and immunosuppression adjustment can affect graft continuity by detecting BKPyV before substantial allograft damage.",
+      "uncertaintyOrBias": "Applies to BKPyV-specific transplant infection risk, not all post-transplant infection or graft failure mechanisms.",
+      "transferBoundary": "Do not generalize to non-kidney transplants, all viral infections or individual immunosuppression decisions without fresh review.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis or individual death-date output",
+        "source is used beyond its population, guideline, consensus, statement or source-lineage role without local review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population boundary and transfer boundary needed for bounded artifact fill"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 metabolic-endocrine-renal-hepatic source-context extraction register",
+        "variables": [
+          "immunosuppression-continuity",
+          "graft-function",
+          "rejection-risk",
+          "infection-surveillance",
+          "malignancy-cardiovascular-risk"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, then fresh review, before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, preserve any no-abstract/fulltext/manual-review boundary, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB4-EXT-011",
+      "domainId": "chronic-liver-disease-masld-mash-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/chronic-liver-disease-masld-mash-continuity",
+      "sourceRefId": "C2LTB4-SRC-06-1",
+      "sourceTitle": "AASLD Practice Guidance on the clinical assessment and management of nonalcoholic fatty liver disease",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/36727674/",
+      "extractionStatus": "completed-c2ltb4-source-context-extraction",
+      "sourceAccessStatus": "pubmed-guidance-record-no-abstract-fulltext-needed",
+      "sourceRole": "aasld-nafld-masld-practice-guidance-lineage-anchor",
+      "exactClaimUse": "Can support source lineage for AASLD clinical assessment and management guidance on NAFLD/MASLD, but PubMed metadata lacks an abstract, so exact assessment, fibrosis and management claims require full guidance review.",
+      "endpointDefinition": "Candidate endpoints remain provisional: steatosis, fibrosis stage, metabolic comorbidity, cirrhosis transition and hepatocellular carcinoma surveillance.",
+      "populationOrSetting": "People with NAFLD/MASLD or metabolic-risk liver disease in hepatology, primary care and metabolic care settings; exact scope requires full guidance review.",
+      "effectOrMechanismSignal": "Likely route signal is risk stratification and management of metabolic liver disease, but no exact claim should be promoted from metadata alone.",
+      "uncertaintyOrBias": "No abstract was available in PubMed for local extraction; terminology has shifted from NAFLD to MASLD/MASH, requiring careful source-context normalization.",
+      "transferBoundary": "Use as AASLD guidance lineage only until full text confirms definitions, endpoints and recommendations.",
+      "downgradeTriggers": [
+        "PubMed abstract is absent and exact full-text source context is not manually extracted",
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis or individual death-date output",
+        "source is used beyond its population, guideline, consensus, statement or source-lineage role without local review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population boundary and transfer boundary needed for bounded artifact fill"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 metabolic-endocrine-renal-hepatic source-context extraction register",
+        "variables": [
+          "fibrosis-stage",
+          "metabolic-risk-burden",
+          "liver-enzyme-pattern",
+          "cirrhosis-transition-risk",
+          "hepatocellular-carcinoma-surveillance"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, then fresh review, before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, preserve any no-abstract/fulltext/manual-review boundary, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB4-EXT-012",
+      "domainId": "chronic-liver-disease-masld-mash-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/chronic-liver-disease-masld-mash-continuity",
+      "sourceRefId": "C2LTB4-SRC-06-2",
+      "sourceTitle": "EASL-EASD-EASO Clinical Practice Guidelines on the management of metabolic dysfunction-associated steatotic liver disease",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/38851997/",
+      "extractionStatus": "completed-c2ltb4-source-context-extraction",
+      "sourceAccessStatus": "pubmed-guideline-abstract-aligned",
+      "sourceRole": "masld-mash-definition-case-finding-fibrosis-treatment-guideline-anchor",
+      "exactClaimUse": "Can support that MASLD is steatotic liver disease with cardiometabolic risk factors absent harmful alcohol intake, and that the disease spectrum includes steatosis, MASH, fibrosis, cirrhosis and MASH-related HCC.",
+      "endpointDefinition": "Candidate endpoints include fibrosis stage, cardiometabolic risk burden, steatosis/MASH status, cirrhosis transition, liver-related events and HCC surveillance.",
+      "populationOrSetting": "Individuals with suspected or established MASLD/MASH across hepatology, diabetes, obesity and primary-care case-finding settings.",
+      "effectOrMechanismSignal": "Risk stratification and non-invasive testing can route subjects toward prevention, treatment and surveillance pathways that protect hepatic and systemic continuity.",
+      "uncertaintyOrBias": "Guideline is broad; non-invasive tests, treatment availability and definitions may change, and cardiometabolic confounding must be preserved.",
+      "transferBoundary": "Transfer to MASLD definitions, fibrosis/case-finding variables and route logic only; do not infer individual liver outcome probabilities.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis or individual death-date output",
+        "source is used beyond its population, guideline, consensus, statement or source-lineage role without local review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population boundary and transfer boundary needed for bounded artifact fill"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 metabolic-endocrine-renal-hepatic source-context extraction register",
+        "variables": [
+          "fibrosis-stage",
+          "metabolic-risk-burden",
+          "liver-enzyme-pattern",
+          "cirrhosis-transition-risk",
+          "hepatocellular-carcinoma-surveillance"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, then fresh review, before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, preserve any no-abstract/fulltext/manual-review boundary, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB4-EXT-013",
+      "domainId": "thyroid-disease-endocrine-function-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/thyroid-disease-endocrine-function-continuity",
+      "sourceRefId": "C2LTB4-SRC-07-1",
+      "sourceTitle": "Guidelines for the treatment of hypothyroidism: prepared by the American Thyroid Association task force on thyroid hormone replacement",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/25266247/",
+      "extractionStatus": "completed-c2ltb4-source-context-extraction",
+      "sourceAccessStatus": "pubmed-guideline-abstract-aligned",
+      "sourceRole": "hypothyroidism-levothyroxine-goals-alternatives-guideline-anchor",
+      "exactClaimUse": "Can support that hypothyroidism treatment guidance addresses levothyroxine therapy goals, standard therapy, sources of dissatisfaction, treatment alternatives and knowledge gaps.",
+      "endpointDefinition": "Candidate endpoints include TSH/free T4 status, replacement adequacy, persistent symptoms, overtreatment/undertreatment risk and quality-of-life or functional burden.",
+      "populationOrSetting": "People with hypothyroidism receiving thyroid hormone replacement, with specific populations requiring exact guideline review.",
+      "effectOrMechanismSignal": "Thyroid replacement continuity affects metabolic rate, cardiovascular/bone risk, cognition, mood, fatigue and daily functional capacity through hormone axis normalization.",
+      "uncertaintyOrBias": "Persistent symptoms on levothyroxine, alternative therapy evidence and patient subgroups are debated; no individual treatment choice is admitted.",
+      "transferBoundary": "Do not transfer to hyperthyroidism, thyroid cancer, individualized dosing or proof of cognitive/longevity benefit without endpoint evidence.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis or individual death-date output",
+        "source is used beyond its population, guideline, consensus, statement or source-lineage role without local review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population boundary and transfer boundary needed for bounded artifact fill"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 metabolic-endocrine-renal-hepatic source-context extraction register",
+        "variables": [
+          "tsh-free-t4-status",
+          "replacement-adequacy",
+          "cardiovascular-bone-risk",
+          "symptom-functional-burden",
+          "quality-of-life-burden"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, then fresh review, before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, preserve any no-abstract/fulltext/manual-review boundary, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB4-EXT-014",
+      "domainId": "thyroid-disease-endocrine-function-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/thyroid-disease-endocrine-function-continuity",
+      "sourceRefId": "C2LTB4-SRC-07-2",
+      "sourceTitle": "2016 American Thyroid Association Guidelines for Diagnosis and Management of Hyperthyroidism and Other Causes of Thyrotoxicosis",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/27521067/",
+      "extractionStatus": "completed-c2ltb4-source-context-extraction",
+      "sourceAccessStatus": "pubmed-guideline-abstract-aligned",
+      "sourceRole": "thyrotoxicosis-diagnosis-etiology-treatment-guideline-anchor",
+      "exactClaimUse": "Can support that thyrotoxicosis has multiple etiologies, manifestations and therapies, and that appropriate treatment requires accurate diagnosis plus consideration of comorbid conditions and patient preference.",
+      "endpointDefinition": "Candidate endpoints include thyrotoxicosis severity, etiology, cardiovascular status, treatment selection context, symptom control, bone/cardiac risk and follow-up continuity.",
+      "populationOrSetting": "Patients with hyperthyroidism or other causes of thyrotoxicosis across generalist and subspecialty care settings.",
+      "effectOrMechanismSignal": "Diagnosis and treatment affect continuity by reducing hormone excess, arrhythmia/cardiovascular stress, bone risk, neuropsychiatric burden and functional impairment.",
+      "uncertaintyOrBias": "Therapy choice depends on etiology, pregnancy, comorbidities, local access and patient preference; this row cannot rank treatments.",
+      "transferBoundary": "Transfer only to thyroid excess variable vocabulary and clinical route boundaries, not individual therapy advice or risk calibration.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis or individual death-date output",
+        "source is used beyond its population, guideline, consensus, statement or source-lineage role without local review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population boundary and transfer boundary needed for bounded artifact fill"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 metabolic-endocrine-renal-hepatic source-context extraction register",
+        "variables": [
+          "tsh-free-t4-status",
+          "thyrotoxicosis-severity",
+          "cardiovascular-bone-risk",
+          "symptom-functional-burden",
+          "follow-up-continuity"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, then fresh review, before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, preserve any no-abstract/fulltext/manual-review boundary, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB4-EXT-015",
+      "domainId": "adrenal-insufficiency-cortisol-stress-response-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/adrenal-insufficiency-cortisol-stress-response-continuity",
+      "sourceRefId": "C2LTB4-SRC-08-1",
+      "sourceTitle": "Diagnosis and Treatment of Primary Adrenal Insufficiency: An Endocrine Society Clinical Practice Guideline",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/26760044/",
+      "extractionStatus": "completed-c2ltb4-source-context-extraction",
+      "sourceAccessStatus": "pubmed-guideline-review-abstract-aligned",
+      "sourceRole": "primary-adrenal-insufficiency-diagnosis-treatment-guideline-anchor",
+      "exactClaimUse": "Can support that primary adrenal insufficiency diagnosis and treatment are governed by an Endocrine Society guideline using GRADE evidence review and covering diagnostic and therapeutic management.",
+      "endpointDefinition": "Candidate endpoints include cortisol replacement adequacy, mineralocorticoid replacement context, adrenal crisis risk, sodium/potassium status, hypotension and patient education readiness.",
+      "populationOrSetting": "Patients with primary adrenal insufficiency in endocrine, acute illness and long-term self-management settings.",
+      "effectOrMechanismSignal": "Replacement therapy and crisis-prevention education protect continuity by maintaining stress-response capacity, blood pressure, electrolytes and acute decompensation readiness.",
+      "uncertaintyOrBias": "The guideline focuses on primary adrenal insufficiency; secondary adrenal insufficiency and perioperative steroid coverage need separate source rows.",
+      "transferBoundary": "Do not use for individual steroid dosing, crisis triage or all adrenal disorders without exact recommendation review.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis or individual death-date output",
+        "source is used beyond its population, guideline, consensus, statement or source-lineage role without local review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population boundary and transfer boundary needed for bounded artifact fill"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 metabolic-endocrine-renal-hepatic source-context extraction register",
+        "variables": [
+          "cortisol-replacement-adequacy",
+          "stress-dose-readiness",
+          "adrenal-crisis-risk",
+          "sodium-potassium-status",
+          "patient-education-continuity"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, then fresh review, before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, preserve any no-abstract/fulltext/manual-review boundary, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB4-EXT-016",
+      "domainId": "adrenal-insufficiency-cortisol-stress-response-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/adrenal-insufficiency-cortisol-stress-response-continuity",
+      "sourceRefId": "C2LTB4-SRC-08-2",
+      "sourceTitle": "Guidelines for the management of glucocorticoids during the peri-operative period for patients with adrenal insufficiency",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/32017012/",
+      "extractionStatus": "completed-c2ltb4-source-context-extraction",
+      "sourceAccessStatus": "pubmed-perioperative-guideline-abstract-aligned",
+      "sourceRole": "perioperative-glucocorticoid-coverage-adrenal-insufficiency-guideline-anchor",
+      "exactClaimUse": "Can support that patients with adrenal insufficiency should be identified and adequately supplemented with glucocorticoids during the perioperative period, with primary and secondary adrenal insufficiency distinguished.",
+      "endpointDefinition": "Candidate endpoints include perioperative steroid coverage, adrenal crisis prevention, hypotension risk, stress-dose readiness and surgical-period monitoring.",
+      "populationOrSetting": "Patients with primary or secondary adrenal insufficiency, or those taking physiological replacement corticosteroids, undergoing surgery or procedures.",
+      "effectOrMechanismSignal": "Perioperative glucocorticoid supplementation protects stress-response continuity during surgical stress when endogenous cortisol response may be inadequate.",
+      "uncertaintyOrBias": "Applies specifically to perioperative management; chronic replacement adequacy and non-surgical acute illness routes require separate evidence.",
+      "transferBoundary": "Do not transfer to routine chronic dosing, self-treatment advice or non-adrenal steroid use without full guideline review.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis or individual death-date output",
+        "source is used beyond its population, guideline, consensus, statement or source-lineage role without local review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population boundary and transfer boundary needed for bounded artifact fill"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 metabolic-endocrine-renal-hepatic source-context extraction register",
+        "variables": [
+          "cortisol-replacement-adequacy",
+          "stress-dose-readiness",
+          "adrenal-crisis-risk",
+          "sodium-potassium-status",
+          "perioperative-risk-window"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, then fresh review, before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, preserve any no-abstract/fulltext/manual-review boundary, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB4-EXT-017",
+      "domainId": "fluid-electrolyte-acid-base-homeostasis",
+      "localDomainPath": "domains/c2-source-maintenance/fluid-electrolyte-acid-base-homeostasis",
+      "sourceRefId": "C2LTB4-SRC-09-1",
+      "sourceTitle": "Clinical practice guideline on diagnosis and treatment of hyponatraemia",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/24569125/",
+      "extractionStatus": "completed-c2ltb4-source-context-extraction",
+      "sourceAccessStatus": "pubmed-guideline-abstract-aligned",
+      "sourceRole": "hyponatraemia-diagnosis-treatment-mortality-morbidity-guideline-anchor",
+      "exactClaimUse": "Can support that hyponatraemia is a common body-fluid/electrolyte disorder, defined as serum sodium below 135 mmol/l, associated with symptoms ranging from subtle to life-threatening and with increased mortality, morbidity and length of stay.",
+      "endpointDefinition": "Candidate endpoints include serum sodium, symptom severity, correction rate, neurologic risk, mortality/morbidity association and hospital length of stay.",
+      "populationOrSetting": "Patients with hyponatraemia across clinical practice settings and diverse underlying conditions.",
+      "effectOrMechanismSignal": "Sodium and water balance affects neural function, hospitalization and acute hazard; diagnosis and correction strategy shape safety and continuity.",
+      "uncertaintyOrBias": "Hyponatraemia occurs across heterogeneous diseases and specialties; cause, chronicity and correction risk must be separated before any modeling.",
+      "transferBoundary": "Do not transfer to all electrolyte disorders, individual correction plans or calibrated mortality without condition-specific evidence.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis or individual death-date output",
+        "source is used beyond its population, guideline, consensus, statement or source-lineage role without local review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population boundary and transfer boundary needed for bounded artifact fill"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 metabolic-endocrine-renal-hepatic source-context extraction register",
+        "variables": [
+          "serum-sodium",
+          "volume-status",
+          "acid-base-status",
+          "correction-rate-risk",
+          "neurologic-risk"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, then fresh review, before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, preserve any no-abstract/fulltext/manual-review boundary, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB4-EXT-018",
+      "domainId": "fluid-electrolyte-acid-base-homeostasis",
+      "localDomainPath": "domains/c2-source-maintenance/fluid-electrolyte-acid-base-homeostasis",
+      "sourceRefId": "C2LTB4-SRC-09-2",
+      "sourceTitle": "Emergency management of severe hyperkalemia: Guideline for best practice and opportunities for the future",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/27693804/",
+      "extractionStatus": "completed-c2ltb4-source-context-extraction",
+      "sourceAccessStatus": "pubmed-review-guideline-abstract-aligned",
+      "sourceRole": "severe-hyperkalemia-emergency-management-cardiac-risk-anchor",
+      "exactClaimUse": "Can support that hyperkalemia is common in CKD, diabetes and heart failure, can cause potentially fatal cardiac dysrhythmias, is associated with increased mortality and lacks purely objective emergency-treatment thresholds.",
+      "endpointDefinition": "Candidate endpoints include serum potassium, ECG/cardiac dysrhythmia risk, emergency-treatment trigger, kidney/heart-failure context and mortality association.",
+      "populationOrSetting": "Patients with severe hyperkalemia, especially in chronic kidney disease, diabetes mellitus or heart failure settings.",
+      "effectOrMechanismSignal": "Potassium elevation affects membrane excitability and cardiac rhythm stability; emergency management is a hazard-control route for acute death risk.",
+      "uncertaintyOrBias": "The abstract notes emergency therapy decisions rely heavily on clinical judgment and evidence gaps; do not treat the algorithm as calibrated universal risk.",
+      "transferBoundary": "Transfer only to potassium hazard variables and emergency route logic, not individual treatment sequence or outcome prediction.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis or individual death-date output",
+        "source is used beyond its population, guideline, consensus, statement or source-lineage role without local review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population boundary and transfer boundary needed for bounded artifact fill"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 metabolic-endocrine-renal-hepatic source-context extraction register",
+        "variables": [
+          "serum-potassium",
+          "acid-base-status",
+          "renal-function-context",
+          "cardiac-dysrhythmia-risk",
+          "emergency-treatment-trigger"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, then fresh review, before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, preserve any no-abstract/fulltext/manual-review boundary, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB4-EXT-019",
+      "domainId": "iron-deficiency-anemia-oxygen-carrying-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/iron-deficiency-anemia-oxygen-carrying-continuity",
+      "sourceRefId": "C2LTB4-SRC-10-1",
+      "sourceTitle": "British Society of Gastroenterology guidelines for the management of iron deficiency anaemia in adults",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/34497146/",
+      "extractionStatus": "completed-c2ltb4-source-context-extraction",
+      "sourceAccessStatus": "pubmed-guideline-abstract-aligned",
+      "sourceRole": "iron-deficiency-anaemia-diagnosis-iron-replacement-gi-pathology-guideline-anchor",
+      "exactClaimUse": "Can support that iron deficiency anaemia is a major morbidity burden, usually diagnosable by blood testing, treatable with oral or intravenous iron, and may reflect dietary deficiency, malabsorption, menstrual loss, GI blood loss or significant GI pathology.",
+      "endpointDefinition": "Candidate endpoints include hemoglobin, ferritin/transferrin saturation, iron replacement route, fatigue/functional burden, GI evaluation and recurrent blood-loss source.",
+      "populationOrSetting": "Adults with iron deficiency anaemia, including men and postmenopausal women where underlying GI pathology must be considered.",
+      "effectOrMechanismSignal": "Iron repletion and etiology identification affect oxygen-carrying capacity, fatigue, functional recovery and detection of bleeding or malignant causes.",
+      "uncertaintyOrBias": "Causes vary widely; GI evaluation and treatment route depend on sex, age, menopausal status, symptoms, comorbidities and local endoscopy access.",
+      "transferBoundary": "Do not use as a universal fatigue explanation, individual cancer-risk estimate or treatment recommendation without full guideline context.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis or individual death-date output",
+        "source is used beyond its population, guideline, consensus, statement or source-lineage role without local review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population boundary and transfer boundary needed for bounded artifact fill"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 metabolic-endocrine-renal-hepatic source-context extraction register",
+        "variables": [
+          "hemoglobin-level",
+          "ferritin-transferrin-saturation",
+          "bleeding-or-malabsorption-source",
+          "iron-repletion-route",
+          "functional-fatigue-burden"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, then fresh review, before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, preserve any no-abstract/fulltext/manual-review boundary, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB4-EXT-020",
+      "domainId": "iron-deficiency-anemia-oxygen-carrying-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/iron-deficiency-anemia-oxygen-carrying-continuity",
+      "sourceRefId": "C2LTB4-SRC-10-2",
+      "sourceTitle": "AGA Clinical Practice Guidelines on the Gastrointestinal Evaluation of Iron Deficiency Anemia",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/32810434/",
+      "extractionStatus": "completed-c2ltb4-source-context-extraction",
+      "sourceAccessStatus": "pubmed-practice-guideline-record-no-abstract-fulltext-needed",
+      "sourceRole": "aga-iron-deficiency-anemia-gi-evaluation-guideline-lineage-anchor",
+      "exactClaimUse": "Can support AGA guideline lineage for gastrointestinal evaluation of iron deficiency anemia, but PubMed metadata lacks an abstract, so exact endoscopy/evaluation recommendations require full guideline review.",
+      "endpointDefinition": "Candidate endpoints remain provisional: IDA confirmation, GI evaluation route, bleeding source, malignancy exclusion, iron replacement context and follow-up.",
+      "populationOrSetting": "Patients with iron deficiency anemia being evaluated for gastrointestinal causes under AGA guideline scope; exact sex/age/risk boundaries require full source review.",
+      "effectOrMechanismSignal": "Likely route signal is detecting GI sources of chronic blood loss that affect oxygen-carrying capacity and future morbidity, but metadata alone cannot support recommendations.",
+      "uncertaintyOrBias": "No abstract was available in PubMed; this row should remain lineage-context until exact recommendations and populations are extracted.",
+      "transferBoundary": "Do not use for endoscopy decisions, cancer probability, or iron treatment route claims until full guideline review is completed.",
+      "downgradeTriggers": [
+        "PubMed abstract is absent and exact full-text source context is not manually extracted",
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis or individual death-date output",
+        "source is used beyond its population, guideline, consensus, statement or source-lineage role without local review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population boundary and transfer boundary needed for bounded artifact fill"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 metabolic-endocrine-renal-hepatic source-context extraction register",
+        "variables": [
+          "hemoglobin-level",
+          "ferritin-transferrin-saturation",
+          "bleeding-or-malabsorption-source",
+          "gi-evaluation-route",
+          "functional-fatigue-burden"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, then fresh review, before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, preserve any no-abstract/fulltext/manual-review boundary, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB4-EXT-021",
+      "domainId": "cushing-syndrome-hypercortisolism-metabolic-bone-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/cushing-syndrome-hypercortisolism-metabolic-bone-continuity",
+      "sourceRefId": "C2LTB4-SRC-11-1",
+      "sourceTitle": "Treatment of Cushing's Syndrome: An Endocrine Society Clinical Practice Guideline",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/26222757/",
+      "extractionStatus": "completed-c2ltb4-source-context-extraction",
+      "sourceAccessStatus": "pubmed-guideline-abstract-aligned",
+      "sourceRole": "cushing-syndrome-treatment-guideline-mortality-metabolic-bone-risk-anchor",
+      "exactClaimUse": "Can support that Cushing syndrome treatment guidance was developed through systematic reviews and GRADE methods, providing a source route for therapy, cortisol normalization and complication-management variables.",
+      "endpointDefinition": "Candidate endpoints include cortisol excess status, treatment modality, metabolic/hypertension burden, bone/fracture risk, infection risk, recurrence monitoring and mortality-risk context.",
+      "populationOrSetting": "Patients with Cushing syndrome requiring treatment planning and long-term endocrine follow-up.",
+      "effectOrMechanismSignal": "Reducing hypercortisolism can protect continuity through metabolic, cardiovascular, skeletal, immune and psychiatric pathways, but exact outcome claims need full recommendation extraction.",
+      "uncertaintyOrBias": "The abstract is methods-heavy; exact recommendations, disease subtype and evidence quality require full guideline review.",
+      "transferBoundary": "Do not transfer to screening/diagnosis alone, individual treatment selection or calibrated mortality benefit.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis or individual death-date output",
+        "source is used beyond its population, guideline, consensus, statement or source-lineage role without local review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population boundary and transfer boundary needed for bounded artifact fill"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 metabolic-endocrine-renal-hepatic source-context extraction register",
+        "variables": [
+          "cortisol-excess-status",
+          "etiology-localization",
+          "metabolic-hypertension-burden",
+          "bone-fracture-risk",
+          "post-treatment-recurrence-monitoring"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, then fresh review, before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, preserve any no-abstract/fulltext/manual-review boundary, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB4-EXT-022",
+      "domainId": "cushing-syndrome-hypercortisolism-metabolic-bone-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/cushing-syndrome-hypercortisolism-metabolic-bone-continuity",
+      "sourceRefId": "C2LTB4-SRC-11-2",
+      "sourceTitle": "Consensus on diagnosis and management of Cushing's disease: a guideline update",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/34687601/",
+      "extractionStatus": "completed-c2ltb4-source-context-extraction",
+      "sourceAccessStatus": "pubmed-consensus-review-abstract-aligned",
+      "sourceRole": "cushing-disease-diagnosis-treatment-long-term-management-consensus-anchor",
+      "exactClaimUse": "Can support that Cushing disease requires accurate diagnosis, careful treatment selection and long-term management to optimize outcomes, with updated consensus covering screening/diagnosis, surgery, medical/radiation therapy and complications.",
+      "endpointDefinition": "Candidate endpoints include diagnostic confirmation, treatment selection, biochemical control, recurrence, disease/treatment complications, metabolic burden and long-term follow-up.",
+      "populationOrSetting": "Patients with Cushing disease, a pituitary ACTH-dependent subtype of Cushing syndrome, in specialist endocrine and pituitary care settings.",
+      "effectOrMechanismSignal": "The route affects continuity through source localization, disease control, treatment complication management and recurrence surveillance.",
+      "uncertaintyOrBias": "Cushing disease is not all Cushing syndrome; consensus workshop evidence synthesis must be separated from guideline-grade recommendations.",
+      "transferBoundary": "Do not generalize to adrenal or ectopic Cushing etiologies, individual therapy decisions or exact prognosis without source-specific review.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis or individual death-date output",
+        "source is used beyond its population, guideline, consensus, statement or source-lineage role without local review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population boundary and transfer boundary needed for bounded artifact fill"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 metabolic-endocrine-renal-hepatic source-context extraction register",
+        "variables": [
+          "cortisol-excess-status",
+          "etiology-localization",
+          "metabolic-hypertension-burden",
+          "bone-fracture-risk",
+          "post-treatment-recurrence-monitoring"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, then fresh review, before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, preserve any no-abstract/fulltext/manual-review boundary, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB4-EXT-023",
+      "domainId": "pituitary-disorders-hormone-axis-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/pituitary-disorders-hormone-axis-continuity",
+      "sourceRefId": "C2LTB4-SRC-12-1",
+      "sourceTitle": "Pituitary incidentaloma: an Endocrine Society clinical practice guideline",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/21474686/",
+      "extractionStatus": "completed-c2ltb4-source-context-extraction",
+      "sourceAccessStatus": "pubmed-guideline-abstract-aligned",
+      "sourceRole": "pituitary-incidentaloma-hormone-visual-field-imaging-followup-guideline-anchor",
+      "exactClaimUse": "Can support that pituitary incidentaloma evaluation includes history/physical examination, laboratory screening for hormone hypersecretion and hypopituitarism, visual field examination when near optic structures, and clinical assessment/imaging follow-up when not surgically removed.",
+      "endpointDefinition": "Candidate endpoints include pituitary hormone-axis status, hypersecretion, hypopituitarism, mass effect, visual-field risk, imaging follow-up and surgical referral criteria.",
+      "populationOrSetting": "Patients with pituitary incidentalomas discovered on imaging, across endocrine, ophthalmologic, neurosurgical and follow-up settings.",
+      "effectOrMechanismSignal": "Pituitary lesion monitoring protects continuity through vision preservation, hormonal crisis prevention and timely treatment of mass-effect or endocrine dysfunction.",
+      "uncertaintyOrBias": "Guideline is incidentaloma-specific; functioning tumors and known pituitary disorders may require separate disease-specific sources.",
+      "transferBoundary": "Do not use for all pituitary tumors, individual surgery decisions or calibrated visual/hormonal outcome prediction.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis or individual death-date output",
+        "source is used beyond its population, guideline, consensus, statement or source-lineage role without local review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population boundary and transfer boundary needed for bounded artifact fill"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 metabolic-endocrine-renal-hepatic source-context extraction register",
+        "variables": [
+          "pituitary-hormone-axis-status",
+          "mass-effect-visual-field-risk",
+          "hypersecretion-pattern",
+          "hypopituitarism-risk",
+          "follow-up-imaging-continuity"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, then fresh review, before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, preserve any no-abstract/fulltext/manual-review boundary, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB4-EXT-024",
+      "domainId": "pituitary-disorders-hormone-axis-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/pituitary-disorders-hormone-axis-continuity",
+      "sourceRefId": "C2LTB4-SRC-12-2",
+      "sourceTitle": "Diagnosis and treatment of hyperprolactinemia: an Endocrine Society clinical practice guideline",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/21296991/",
+      "extractionStatus": "completed-c2ltb4-source-context-extraction",
+      "sourceAccessStatus": "pubmed-guideline-review-abstract-aligned",
+      "sourceRole": "hyperprolactinemia-diagnosis-treatment-endocrine-guideline-anchor",
+      "exactClaimUse": "Can support that hyperprolactinemia diagnosis and treatment guidance was developed using GRADE methods and expert consensus, providing a source route for prolactin-related pituitary hormone-axis continuity.",
+      "endpointDefinition": "Candidate endpoints include prolactin excess, pituitary source context, gonadal/reproductive effects, medication/tumor etiology, treatment response and follow-up continuity.",
+      "populationOrSetting": "Patients with hyperprolactinemia in endocrine and pituitary care settings; exact pregnancy, macroadenoma and medication-induced boundaries require full review.",
+      "effectOrMechanismSignal": "Managing prolactin excess can affect reproductive hormones, sexual function, bone/gonadal axis and tumor-related continuity.",
+      "uncertaintyOrBias": "Abstract mainly states guideline process; exact diagnostic tests and treatment recommendations must be extracted before artifact promotion.",
+      "transferBoundary": "Do not use for all pituitary disorders, individual dopamine-agonist decisions or fertility prognosis without full guideline context.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis or individual death-date output",
+        "source is used beyond its population, guideline, consensus, statement or source-lineage role without local review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population boundary and transfer boundary needed for bounded artifact fill"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 metabolic-endocrine-renal-hepatic source-context extraction register",
+        "variables": [
+          "pituitary-hormone-axis-status",
+          "hypersecretion-pattern",
+          "hypopituitarism-risk",
+          "reproductive-axis-status",
+          "follow-up-imaging-continuity"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, then fresh review, before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, preserve any no-abstract/fulltext/manual-review boundary, then send eligible rows to independent fresh review before bounded artifact promotion."
+    }
+  ],
+  "nonClaims": [
+    "This register does not complete local source-context review or independent fresh review.",
+    "This register does not create reviewed Source Cards, variable cards, endpoint cards, uncertainty cards, transfer-boundary cards or downgrade-check artifacts.",
+    "This register does not resolve absent-abstract fulltext needs or duplicate publication lineage; it records them as boundaries.",
+    "This register does not authorize clinical advice, individual prediction, intervention ranking, calibrated model admission or individual death-date output."
+  ],
+  "indexRequirements": [
+    "README.md",
+    "docs/reference/README.md",
+    "docs/reference/human-infra-maturity-roadmap.md",
+    "tools/README.md"
+  ]
+}
