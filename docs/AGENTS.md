@@ -217,6 +217,7 @@ docs/
 │   ├── human-infra-c2-longtail-fifth-batch-source-extraction-register.json
 │   ├── human-infra-c2-longtail-fifth-batch-local-review-register.json
 │   ├── human-infra-c2-longtail-fifth-batch-source-resolution-register.json
+│   ├── human-infra-c2-longtail-fifth-batch-manual-fulltext-extraction-register.json
 │   ├── human-infra-c2-longtail-third-batch-corrected-source-reextraction-register.json
 │   ├── human-infra-c2-longtail-third-batch-corrected-source-fresh-review-verdict-register.json
 │   ├── human-infra-c2-longtail-third-batch-reviewed-card-artifact-register.json
@@ -450,6 +451,7 @@ docs/
 - `reference/human-infra-c2-longtail-fifth-batch-source-extraction-register.json`：记录 C2-LT-B5 24/24 个来源的本地字段级抽取，显式保留无开放全文人工复核、跨域复用来源、模型生物/综述边界、降级触发和模型阻塞边界；它仍不等于本地复核、fresh review、reviewed artifacts 或模型准入。
 - `reference/human-infra-c2-longtail-fifth-batch-local-review-register.json`：记录 C2-LT-B5 24/24 个来源抽取行的本地来源语境复核，确认非问题行只可进入 independent fresh review，8 个无开放全文或跨域复用问题行必须先 source-resolution/manual fulltext；它仍不等于 reviewed artifacts、Source Card 晋升完成或模型准入。
 - `reference/human-infra-c2-longtail-fifth-batch-source-resolution-register.json`：记录 C2-LT-B5 8 个本地复核问题行的来源路线候选，把无开放全文、需人工全文和跨域复用来源整理为 14 个 PubMed、Europe PMC、DOI 或 PMC route；它仍不等于 manual/fulltext extraction、fresh review、reviewed artifacts 或模型准入。
+- `reference/human-infra-c2-longtail-fifth-batch-manual-fulltext-extraction-register.json`：记录 C2-LT-B5 14 个 source-resolution 候选的 manual/fulltext 路线抽取，把 2 个 PMC 主路线标为 bounded fresh-review 候选，把 12 个 route-only/manual-access/duplicate 行继续阻塞；它仍不创建 reviewed artifacts 或模型准入。
 - `reference/human-infra-c2-longtail-third-batch-source-extraction-register.json`：记录 C2-LT-B3 24/24 个来源的本地字段级抽取，显式保留错源、标题/分卷错配、访问受限和降级触发边界；它仍不等于本地复核、fresh review、reviewed artifacts 或模型准入。
 - `reference/human-infra-c2-longtail-third-batch-local-review-register.json`：记录 C2-LT-B3 24/24 个来源抽取行的本地来源语境复核，确认其只可进入 independent fresh review 或 source-resolution，并保留 5 个错源/错配/访问受限问题行；它仍不等于 reviewed artifacts、Source Card 晋升完成或模型准入。
 - `reference/human-infra-c2-longtail-third-batch-source-resolution-register.json`：记录 C2-LT-B3 5 个本地复核问题行的来源纠偏候选，把错源、分卷错配和 publisher route 问题拆成 7 个 corrected/split/route-normalized 候选；它仍不等于 fresh review、corrected re-extraction、reviewed artifacts 或模型准入。

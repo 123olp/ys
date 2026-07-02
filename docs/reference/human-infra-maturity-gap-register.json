@@ -208,6 +208,7 @@
         "docs/reference/human-infra-c2-longtail-fifth-batch-local-review-register.json",
         "tools/audit_human_infra_c2_longtail_fifth_batch_local_review_register.py",
         "docs/reference/human-infra-c2-longtail-fifth-batch-source-resolution-register.json",
+        "docs/reference/human-infra-c2-longtail-fifth-batch-manual-fulltext-extraction-register.json",
         "tools/audit_human_infra_c2_longtail_fifth_batch_source_resolution_register.py"
       ],
       "gates": [
@@ -350,15 +351,16 @@
             "docs/reference/human-infra-c2-longtail-fifth-batch-local-review-register.json",
             "tools/audit_human_infra_c2_longtail_fifth_batch_local_review_register.py",
             "docs/reference/human-infra-c2-longtail-fifth-batch-source-resolution-register.json",
+            "docs/reference/human-infra-c2-longtail-fifth-batch-manual-fulltext-extraction-register.json",
             "tools/audit_human_infra_c2_longtail_fifth_batch_source_resolution_register.py"
           ],
           "missingEvidence": [
-            "C2-LT-B5 source-context extraction, local review and source-resolution now cover the 24 rows and 8 issue rows, but the 14 route candidates still require manual/fulltext extraction before artifact use.",
-            "C2-LT-B5 non-issue rows can only enter independent fresh review; they are not reviewed artifacts and do not open model admission.",
+            "C2-LT-B5 source-context extraction, local review, source-resolution and manual/fulltext extraction now cover the 24 rows, 8 issue rows and 14 route candidates; only 2 PMC primary-route rows are bounded fresh-review candidates and 12 route-only/manual-access/duplicate rows remain blocked.",
+            "C2-LT-B5 non-issue rows and the two manual/fulltext eligible rows still require independent fresh review before any bounded artifact fill.",
             "Remaining C2 long-tail domains outside B1/B2/B3/B4/B5 still need batch selection, source extraction, local review, source-resolution as needed, fresh review and reviewed artifacts.",
             "Reviewed artifacts remain bounded research artifacts and do not open calibrated model admission."
           ],
-          "nextAction": "Create C2-LT-B5 manual/fulltext extraction register for the 14 source-resolution candidates, then route eligible B5 rows into independent fresh review before bounded artifact fill.",
+          "nextAction": "Create C2-LT-B5 independent fresh-review protocol/verdict for eligible non-issue and manual/fulltext rows, then prepare only bounded reviewed artifacts while keeping model admission blocked.",
           "blocks100Percent": true
         },
         {
@@ -475,15 +477,16 @@
             "docs/reference/human-infra-c2-longtail-fifth-batch-local-review-register.json",
             "tools/audit_human_infra_c2_longtail_fifth_batch_local_review_register.py",
             "docs/reference/human-infra-c2-longtail-fifth-batch-source-resolution-register.json",
+            "docs/reference/human-infra-c2-longtail-fifth-batch-manual-fulltext-extraction-register.json",
             "tools/audit_human_infra_c2_longtail_fifth_batch_source_resolution_register.py"
           ],
           "missingEvidence": [
-            "B5 selected domains now have 24/24 source-context extraction rows, 24/24 local-review rows and 14 source-resolution route candidates, but still need manual/fulltext extraction and independent fresh review before reviewed variable, endpoint, uncertainty, transfer-boundary and downgrade artifacts.",
-            "B5 eligible rows still require independent fresh review before any variable-contract or model use.",
+            "B5 selected domains now have 24/24 source-context extraction rows, 24/24 local-review rows, 14 source-resolution candidates and 14 manual/fulltext extraction rows, but still need independent fresh review before reviewed variable, endpoint, uncertainty, transfer-boundary and downgrade artifacts.",
+            "Only 2 B5 manual/fulltext rows can enter bounded fresh review from source-resolution; 12 remain route-only/manual-access/duplicate blocked.",
             "B1/B2/B3/B4 reviewed artifacts are not connected to any calibrated model-admission gate.",
             "Remaining C2 long-tail domains outside B1/B2/B3/B4/B5 still need reviewed variable, endpoint, uncertainty, transfer-boundary and downgrade artifacts."
           ],
-          "nextAction": "Run B5 manual/fulltext extraction and independent fresh review before variable-contract, reviewed-card or calibrated-model use.",
+          "nextAction": "Run B5 independent fresh review before variable-contract, reviewed-card or calibrated-model use; do not use manual/fulltext extraction rows as model variables.",
           "blocks100Percent": true
         },
         {
@@ -625,15 +628,16 @@
             "docs/reference/human-infra-c2-longtail-fifth-batch-local-review-register.json",
             "tools/audit_human_infra_c2_longtail_fifth_batch_local_review_register.py",
             "docs/reference/human-infra-c2-longtail-fifth-batch-source-resolution-register.json",
+            "docs/reference/human-infra-c2-longtail-fifth-batch-manual-fulltext-extraction-register.json",
             "tools/audit_human_infra_c2_longtail_fifth_batch_source_resolution_register.py"
           ],
           "missingEvidence": [
-            "C2-LT-B5 source-resolution records 14 route candidates for 8 issue rows, but the candidates still need manual/fulltext extraction before reviewed downgrade rows can be created.",
-            "C2-LT-B5 eligible rows still require independent fresh review before downgrade triggers can become bounded reviewed artifacts.",
+            "C2-LT-B5 manual/fulltext extraction records 14 route candidates for 8 issue rows, but reviewed downgrade rows still require independent fresh review.",
+            "Only 2 B5 manual/fulltext rows can become bounded artifact-prep candidates; 12 rows must stay route-only/manual-access/duplicate blocked unless future manual access or fresh review changes their status.",
             "Remaining C2 long-tail domains outside B1/B2/B3/B4/B5 still require source-specific downgrade and falsifier coverage.",
             "All B5 rows remain route-contract or source-context evidence only, not model-admitted evidence."
           ],
-          "nextAction": "Use B5 manual/fulltext extraction and independent fresh review to convert source-resolution candidates into reviewed downgrade rows or keep them blocked.",
+          "nextAction": "Use B5 independent fresh review to convert only eligible source-resolution/manual-fulltext candidates into reviewed downgrade rows or keep them blocked.",
           "blocks100Percent": true
         }
       ]
@@ -795,7 +799,7 @@
   "nextWorkOrder": [
     {
       "priority": 1,
-      "item": "Create C2-LT-B5 manual/fulltext extraction register for the 14 source-resolution route candidates and prepare independent fresh-review protocol for eligible B5 rows; preserve no-open-fulltext/manual-review, duplicate cross-domain source pairs, model-organism/review-only boundaries and model-admission blocking.",
+      "item": "Create C2-LT-B5 independent fresh-review protocol/verdict for eligible non-issue and manual/fulltext rows, then prepare bounded reviewed artifacts only for rows that pass review; preserve no-open-fulltext/manual-review, duplicate cross-domain source pairs, model-organism/review-only boundaries and model-admission blocking.",
       "unblocks": [
         "RESEARCH-G3-c1-c2-source-cards",
         "RESEARCH-G4-variable-mechanism-contracts",

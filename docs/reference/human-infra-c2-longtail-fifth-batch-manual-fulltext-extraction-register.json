@@ -1,0 +1,931 @@
+{
+  "schemaVersion": "human-infra.c2ltb5-manual-fulltext-extraction-register.v1",
+  "registerId": "human-infra-c2-longtail-fifth-batch-manual-fulltext-extraction-register-2026-07-03",
+  "status": "active-c2ltb5-manual-fulltext-extracted-fresh-review-required-model-blocked",
+  "purpose": "Record bounded manual/fulltext or official-route extraction for the fourteen C2-LT-B5 source-resolution candidates while preserving duplicate, route-only, manual-access and model-admission blocks.",
+  "sourceOfTruth": {
+    "sourceResolutionRegister": "docs/reference/human-infra-c2-longtail-fifth-batch-source-resolution-register.json",
+    "sourceExtractionRegister": "docs/reference/human-infra-c2-longtail-fifth-batch-source-extraction-register.json",
+    "localReviewRegister": "docs/reference/human-infra-c2-longtail-fifth-batch-local-review-register.json",
+    "evidencePolicy": "docs/reference/evidence-policy.md",
+    "maturityGapRegister": "docs/reference/human-infra-maturity-gap-register.json"
+  },
+  "scope": {
+    "batchId": "C2-LT-B5",
+    "manualExtractionLevel": "c2ltb5-source-resolution-manual-fulltext-extraction-v0.1",
+    "sourceResolutionIssueRowCount": 8,
+    "sourceResolutionCandidateCount": 14,
+    "manualExtractedRowCount": 14,
+    "boundedFreshReviewCandidateRowCount": 2,
+    "duplicateOrRouteOnlyBlockedRowCount": 12,
+    "directReviewedArtifactRowCount": 0,
+    "modelAdmissionOpenedRowCount": 0,
+    "nonClaims": [
+      "This register is not an independent fresh review verdict.",
+      "This register does not create reviewed artifacts, Source Cards or model-ready variables.",
+      "This register does not authorize individual advice, clinical recommendations, intervention ranking, calibrated prediction or individual death-date output.",
+      "Official metadata routes, DOI routes and PMC routes are used only within the bounded source context stated per row."
+    ]
+  },
+  "summary": {
+    "boundedFreshReviewCandidateRows": [
+      "C2LTB5-MFEXT-006",
+      "C2LTB5-MFEXT-007"
+    ],
+    "duplicateOrRouteOnlyBlockedRows": [
+      "C2LTB5-MFEXT-001",
+      "C2LTB5-MFEXT-002",
+      "C2LTB5-MFEXT-003",
+      "C2LTB5-MFEXT-004",
+      "C2LTB5-MFEXT-005",
+      "C2LTB5-MFEXT-008",
+      "C2LTB5-MFEXT-009",
+      "C2LTB5-MFEXT-010",
+      "C2LTB5-MFEXT-011",
+      "C2LTB5-MFEXT-012",
+      "C2LTB5-MFEXT-013",
+      "C2LTB5-MFEXT-014"
+    ],
+    "newFacts": [
+      "Five no-PMCID PubMed/DOI source families remain manual/fulltext-access routes only and cannot fill artifacts in this pass.",
+      "The ER-Golgi trafficking source is shared across EXT-008 and EXT-009; EXT-009 must remain duplicate/source-lineage context unless fresh review selects a bounded vocabulary-only role.",
+      "Intercompartmental communication in senescence has an open PMC fulltext route for the EXT-010 primary source line and can enter bounded fresh review through paired PubMed/PMC routes.",
+      "The EXT-013 organelle-contact route reuses PMC13145362 and must not be counted as independent evidence before fresh review collapses duplicate lineage."
+    ],
+    "nextWorkOrder": "Run independent fresh review over the fourteen manual extraction rows; only two rows can be considered bounded artifact-prep candidates before review, and all model admission gates remain blocked."
+  },
+  "blockedUses": [
+    "calibrated-prediction",
+    "individual-advice",
+    "individual-death-date-output",
+    "intervention-ranking",
+    "clinical-validity-claim",
+    "domain-claim-upgrade"
+  ],
+  "manualExtractionRows": [
+    {
+      "manualExtractionId": "C2LTB5-MFEXT-001",
+      "batchId": "C2-LT-B5",
+      "originTaskId": "C2LTB5-EXT-001",
+      "sourceResolutionId": "C2LTB5-SRR-001",
+      "domainId": "telomere-maintenance",
+      "localDomainPath": "domains/c2-source-maintenance/telomere-maintenance",
+      "candidateId": "C2LTB5-SRR-001-CAND-01",
+      "candidateRole": "pubmed-bibliographic-route",
+      "sourceTitle": "Disorders of Telomere Length.",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/42334294/",
+      "extractionDate": "2026-07-03",
+      "extractionMode": "manual-route-and-fulltext-context-extraction-v0.1",
+      "extractionStatus": "route-metadata-extracted-manual-fulltext-required",
+      "sourceAccessStatus": "no-pmcid-europepmc-openaccess-N",
+      "sourceIdentityFinding": "Disorders of Telomere Length. is verified as a PubMed/DOI route, but NCBI/Europe PMC checks found no PMCID or open-access fulltext route in this pass.",
+      "currentnessBoundary": "Use the source only for the publication route and version identified in the source-resolution register; do not infer later updates, clinical applicability or generalized longevity effects.",
+      "exactClaimUse": "Use only for source-route identity and manual fulltext acquisition planning; do not extract exact claims from this route yet.",
+      "endpointDefinition": "Telomere length disorder phenotype and diagnostic boundary language, not population-wide longevity or telomerase-intervention effect estimates.",
+      "populationOrSetting": "Clinical telomere-biology disorder context only, pending manual NEJM Evidence fulltext access.",
+      "effectOrMechanismSignal": "Bibliographic route supports source identity for short or ultra-long telomere disorder review context; it does not provide open fulltext claims in this pass.",
+      "uncertaintyOrBias": "No open fulltext was available through the checked official metadata routes, so claim scope, methods, limitations and downgrade triggers remain unreviewed.",
+      "transferBoundary": "Transfers only to manual fulltext acquisition and future independent fresh review; no reviewed artifact, clinical claim or model variable may be filled directly.",
+      "downgradeTriggers": [
+        "Block artifact creation until authorized fulltext or publisher/manual text is available.",
+        "Block model admission until independent fresh review and reviewed artifact gates pass.",
+        "Block individual advice, intervention ranking and calibrated prediction regardless of source-route identity."
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 source-maintenance evidence layer before reviewed artifact promotion",
+        "variables": [
+          "telomere-disorder-source-route",
+          "no-open-fulltext-risk",
+          "anti-aging-overgeneralization-risk"
+        ],
+        "admissibleUse": "May inform bounded source/variable/endpoint/uncertainty/transfer/downgrade artifact preparation only after independent fresh review; cannot directly enter calibrated prediction."
+      },
+      "artifactPromotionReadiness": "blocked-route-or-manual-access-required-no-direct-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-manual-extraction-independent-fresh-review-and-reviewed-artifact-gates",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "sourceEvidenceTrace": [
+        {
+          "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id=42334294,42096823,41911323,42250782,42107721,42264186&retmode=json",
+          "evidenceType": "source-resolution-verification-route",
+          "finding": "Official route metadata supports source identity and access-state classification only; it does not create reviewed artifact content."
+        },
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42334294/",
+          "evidenceType": "bibliographic-or-doi-route",
+          "finding": "Candidate route is retained for bounded manual/fulltext extraction planning under the row-specific access and duplicate boundary."
+        }
+      ],
+      "nextAction": "Obtain authorized fulltext or publisher route access, then repeat manual extraction before independent fresh review."
+    },
+    {
+      "manualExtractionId": "C2LTB5-MFEXT-002",
+      "batchId": "C2-LT-B5",
+      "originTaskId": "C2LTB5-EXT-001",
+      "sourceResolutionId": "C2LTB5-SRR-001",
+      "domainId": "telomere-maintenance",
+      "localDomainPath": "domains/c2-source-maintenance/telomere-maintenance",
+      "candidateId": "C2LTB5-SRR-001-CAND-02",
+      "candidateRole": "publisher-doi-route",
+      "sourceTitle": "Disorders of Telomere Length.",
+      "sourceUrl": "https://doi.org/10.1056/EVIDra2600012",
+      "extractionDate": "2026-07-03",
+      "extractionMode": "manual-route-and-fulltext-context-extraction-v0.1",
+      "extractionStatus": "route-metadata-extracted-manual-fulltext-required",
+      "sourceAccessStatus": "no-pmcid-europepmc-openaccess-N",
+      "sourceIdentityFinding": "Disorders of Telomere Length. is verified as a PubMed/DOI route, but NCBI/Europe PMC checks found no PMCID or open-access fulltext route in this pass.",
+      "currentnessBoundary": "Use the source only for the publication route and version identified in the source-resolution register; do not infer later updates, clinical applicability or generalized longevity effects.",
+      "exactClaimUse": "Use only for source-route identity and manual fulltext acquisition planning; do not extract exact claims from this route yet.",
+      "endpointDefinition": "Telomere length disorder phenotype and diagnostic boundary language, not population-wide longevity or telomerase-intervention effect estimates.",
+      "populationOrSetting": "Clinical telomere-biology disorder context only, pending manual NEJM Evidence fulltext access.",
+      "effectOrMechanismSignal": "Bibliographic route supports source identity for short or ultra-long telomere disorder review context; it does not provide open fulltext claims in this pass.",
+      "uncertaintyOrBias": "No open fulltext was available through the checked official metadata routes, so claim scope, methods, limitations and downgrade triggers remain unreviewed.",
+      "transferBoundary": "Transfers only to manual fulltext acquisition and future independent fresh review; no reviewed artifact, clinical claim or model variable may be filled directly.",
+      "downgradeTriggers": [
+        "Block artifact creation until authorized fulltext or publisher/manual text is available.",
+        "Block model admission until independent fresh review and reviewed artifact gates pass.",
+        "Block individual advice, intervention ranking and calibrated prediction regardless of source-route identity."
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 source-maintenance evidence layer before reviewed artifact promotion",
+        "variables": [
+          "telomere-disorder-source-route",
+          "no-open-fulltext-risk",
+          "anti-aging-overgeneralization-risk"
+        ],
+        "admissibleUse": "May inform bounded source/variable/endpoint/uncertainty/transfer/downgrade artifact preparation only after independent fresh review; cannot directly enter calibrated prediction."
+      },
+      "artifactPromotionReadiness": "blocked-route-or-manual-access-required-no-direct-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-manual-extraction-independent-fresh-review-and-reviewed-artifact-gates",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "sourceEvidenceTrace": [
+        {
+          "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id=42334294,42096823,41911323,42250782,42107721,42264186&retmode=json",
+          "evidenceType": "source-resolution-verification-route",
+          "finding": "Official route metadata supports source identity and access-state classification only; it does not create reviewed artifact content."
+        },
+        {
+          "url": "https://doi.org/10.1056/EVIDra2600012",
+          "evidenceType": "bibliographic-or-doi-route",
+          "finding": "Candidate route is retained for bounded manual/fulltext extraction planning under the row-specific access and duplicate boundary."
+        }
+      ],
+      "nextAction": "Obtain authorized fulltext or publisher route access, then repeat manual extraction before independent fresh review."
+    },
+    {
+      "manualExtractionId": "C2LTB5-MFEXT-003",
+      "batchId": "C2-LT-B5",
+      "originTaskId": "C2LTB5-EXT-008",
+      "sourceResolutionId": "C2LTB5-SRR-002",
+      "domainId": "endoplasmic-reticulum-stress-upr-proteostasis-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/endoplasmic-reticulum-stress-upr-proteostasis-continuity",
+      "candidateId": "C2LTB5-SRR-008-CAND-01",
+      "candidateRole": "pubmed-primary-shared-route",
+      "sourceTitle": "Homeostatic responses to diverse cellular stresses by the ER-Golgi trafficking pathways.",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/42096823/",
+      "extractionDate": "2026-07-03",
+      "extractionMode": "manual-route-and-fulltext-context-extraction-v0.1",
+      "extractionStatus": "route-metadata-extracted-manual-fulltext-required",
+      "sourceAccessStatus": "no-pmcid-europepmc-openaccess-N",
+      "sourceIdentityFinding": "Homeostatic responses to diverse cellular stresses by the ER-Golgi trafficking pathways. is verified as a PubMed/DOI route, but NCBI/Europe PMC checks found no PMCID or open-access fulltext route in this pass.",
+      "currentnessBoundary": "Use the source only for the publication route and version identified in the source-resolution register; do not infer later updates, clinical applicability or generalized longevity effects.",
+      "exactClaimUse": "Use only for source-route identity and manual fulltext acquisition planning; do not extract exact claims from this route yet.",
+      "endpointDefinition": "ER-Golgi stress and trafficking pathway vocabulary only until the Current Opinion fulltext is manually accessed.",
+      "populationOrSetting": "Cell biology review context, not a human clinical cohort or intervention trial.",
+      "effectOrMechanismSignal": "Bibliographic route supports ER-Golgi trafficking review identity; exact UPR/proteostasis claims require manual fulltext extraction.",
+      "uncertaintyOrBias": "No open fulltext was available through the checked official metadata routes, so claim scope, methods, limitations and downgrade triggers remain unreviewed.",
+      "transferBoundary": "Transfers only to manual fulltext acquisition and future independent fresh review; no reviewed artifact, clinical claim or model variable may be filled directly.",
+      "downgradeTriggers": [
+        "Block artifact creation until authorized fulltext or publisher/manual text is available.",
+        "Block model admission until independent fresh review and reviewed artifact gates pass.",
+        "Block individual advice, intervention ranking and calibrated prediction regardless of source-route identity."
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 source-maintenance evidence layer before reviewed artifact promotion",
+        "variables": [
+          "er-golgi-stress-route",
+          "manual-fulltext-required",
+          "shared-source-counting-risk"
+        ],
+        "admissibleUse": "May inform bounded source/variable/endpoint/uncertainty/transfer/downgrade artifact preparation only after independent fresh review; cannot directly enter calibrated prediction."
+      },
+      "artifactPromotionReadiness": "blocked-route-or-manual-access-required-no-direct-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-manual-extraction-independent-fresh-review-and-reviewed-artifact-gates",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "sourceEvidenceTrace": [
+        {
+          "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id=42334294,42096823,41911323,42250782,42107721,42264186&retmode=json",
+          "evidenceType": "source-resolution-verification-route",
+          "finding": "Official route metadata supports source identity and access-state classification only; it does not create reviewed artifact content."
+        },
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42096823/",
+          "evidenceType": "bibliographic-or-doi-route",
+          "finding": "Candidate route is retained for bounded manual/fulltext extraction planning under the row-specific access and duplicate boundary."
+        }
+      ],
+      "nextAction": "Obtain authorized fulltext or publisher route access, then repeat manual extraction before independent fresh review."
+    },
+    {
+      "manualExtractionId": "C2LTB5-MFEXT-004",
+      "batchId": "C2-LT-B5",
+      "originTaskId": "C2LTB5-EXT-008",
+      "sourceResolutionId": "C2LTB5-SRR-002",
+      "domainId": "endoplasmic-reticulum-stress-upr-proteostasis-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/endoplasmic-reticulum-stress-upr-proteostasis-continuity",
+      "candidateId": "C2LTB5-SRR-008-CAND-02",
+      "candidateRole": "publisher-doi-route",
+      "sourceTitle": "Homeostatic responses to diverse cellular stresses by the ER-Golgi trafficking pathways.",
+      "sourceUrl": "https://doi.org/10.1016/j.ceb.2026.102646",
+      "extractionDate": "2026-07-03",
+      "extractionMode": "manual-route-and-fulltext-context-extraction-v0.1",
+      "extractionStatus": "route-metadata-extracted-manual-fulltext-required",
+      "sourceAccessStatus": "no-pmcid-europepmc-openaccess-N",
+      "sourceIdentityFinding": "Homeostatic responses to diverse cellular stresses by the ER-Golgi trafficking pathways. is verified as a PubMed/DOI route, but NCBI/Europe PMC checks found no PMCID or open-access fulltext route in this pass.",
+      "currentnessBoundary": "Use the source only for the publication route and version identified in the source-resolution register; do not infer later updates, clinical applicability or generalized longevity effects.",
+      "exactClaimUse": "Use only for source-route identity and manual fulltext acquisition planning; do not extract exact claims from this route yet.",
+      "endpointDefinition": "ER-Golgi stress and trafficking pathway vocabulary only until the Current Opinion fulltext is manually accessed.",
+      "populationOrSetting": "Cell biology review context, not a human clinical cohort or intervention trial.",
+      "effectOrMechanismSignal": "Bibliographic route supports ER-Golgi trafficking review identity; exact UPR/proteostasis claims require manual fulltext extraction.",
+      "uncertaintyOrBias": "No open fulltext was available through the checked official metadata routes, so claim scope, methods, limitations and downgrade triggers remain unreviewed.",
+      "transferBoundary": "Transfers only to manual fulltext acquisition and future independent fresh review; no reviewed artifact, clinical claim or model variable may be filled directly.",
+      "downgradeTriggers": [
+        "Block artifact creation until authorized fulltext or publisher/manual text is available.",
+        "Block model admission until independent fresh review and reviewed artifact gates pass.",
+        "Block individual advice, intervention ranking and calibrated prediction regardless of source-route identity."
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 source-maintenance evidence layer before reviewed artifact promotion",
+        "variables": [
+          "er-golgi-stress-route",
+          "manual-fulltext-required",
+          "shared-source-counting-risk"
+        ],
+        "admissibleUse": "May inform bounded source/variable/endpoint/uncertainty/transfer/downgrade artifact preparation only after independent fresh review; cannot directly enter calibrated prediction."
+      },
+      "artifactPromotionReadiness": "blocked-route-or-manual-access-required-no-direct-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-manual-extraction-independent-fresh-review-and-reviewed-artifact-gates",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "sourceEvidenceTrace": [
+        {
+          "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id=42334294,42096823,41911323,42250782,42107721,42264186&retmode=json",
+          "evidenceType": "source-resolution-verification-route",
+          "finding": "Official route metadata supports source identity and access-state classification only; it does not create reviewed artifact content."
+        },
+        {
+          "url": "https://doi.org/10.1016/j.ceb.2026.102646",
+          "evidenceType": "bibliographic-or-doi-route",
+          "finding": "Candidate route is retained for bounded manual/fulltext extraction planning under the row-specific access and duplicate boundary."
+        }
+      ],
+      "nextAction": "Obtain authorized fulltext or publisher route access, then repeat manual extraction before independent fresh review."
+    },
+    {
+      "manualExtractionId": "C2LTB5-MFEXT-005",
+      "batchId": "C2-LT-B5",
+      "originTaskId": "C2LTB5-EXT-009",
+      "sourceResolutionId": "C2LTB5-SRR-003",
+      "domainId": "golgi-secretory-trafficking-organelle-homeostasis-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/golgi-secretory-trafficking-organelle-homeostasis-continuity",
+      "candidateId": "C2LTB5-SRR-009-CAND-01",
+      "candidateRole": "duplicate-companion-source-route",
+      "sourceTitle": "Homeostatic responses to diverse cellular stresses by the ER-Golgi trafficking pathways.",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/42096823/",
+      "extractionDate": "2026-07-03",
+      "extractionMode": "manual-route-and-fulltext-context-extraction-v0.1",
+      "extractionStatus": "duplicate-route-extracted-no-independent-artifact",
+      "sourceAccessStatus": "no-pmcid-europepmc-openaccess-N-duplicate-route-not-independent-evidence",
+      "sourceIdentityFinding": "This candidate is a duplicate companion route for the ER-Golgi trafficking source and has no open PMC/fulltext route in this pass.",
+      "currentnessBoundary": "Use the source only for the publication route and version identified in the source-resolution register; do not infer later updates, clinical applicability or generalized longevity effects.",
+      "exactClaimUse": "Use only to preserve duplicate/source-lineage context before fresh review; do not create direct artifacts or count it as separate evidence.",
+      "endpointDefinition": "Duplicate companion route only; no independent endpoint definition is admitted from this row.",
+      "populationOrSetting": "Same ER-Golgi trafficking review lineage as EXT-008, not a separate population or study setting.",
+      "effectOrMechanismSignal": "May preserve ER/Golgi shared-source lineage only; exact claims require manual fulltext through the primary EXT-008 route.",
+      "uncertaintyOrBias": "Duplicate cross-domain source reuse can inflate evidence coverage if treated as independent support.",
+      "transferBoundary": "Transfers only to duplicate-lineage handling and future anchor selection; no model input or reviewed artifact is created from this row.",
+      "downgradeTriggers": [
+        "Block independent evidence counting if this row duplicates a primary source route.",
+        "Block artifact creation until fresh review selects a retained anchor or explicitly allows vocabulary-only context.",
+        "Block model admission and individual-use claims."
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 source-maintenance evidence layer before reviewed artifact promotion",
+        "variables": [
+          "er-golgi-duplicate-source-route",
+          "shared-source-counting-risk",
+          "manual-fulltext-required"
+        ],
+        "admissibleUse": "May inform bounded source/variable/endpoint/uncertainty/transfer/downgrade artifact preparation only after independent fresh review; cannot directly enter calibrated prediction."
+      },
+      "artifactPromotionReadiness": "duplicate-route-context-no-direct-artifact-promotion",
+      "modelAdmissionDecision": "blocked-pending-manual-extraction-independent-fresh-review-and-reviewed-artifact-gates",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "sourceEvidenceTrace": [
+        {
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:42334294%20OR%20EXT_ID:42096823%20OR%20EXT_ID:41911323%20OR%20EXT_ID:42250782%20OR%20EXT_ID:42107721%20OR%20EXT_ID:42264186&format=json&pageSize=20",
+          "evidenceType": "source-resolution-verification-route",
+          "finding": "Official route metadata supports source identity and access-state classification only; it does not create reviewed artifact content."
+        },
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42096823/",
+          "evidenceType": "duplicate-cross-domain-source-route",
+          "finding": "Candidate route is retained for bounded manual/fulltext extraction planning under the row-specific access and duplicate boundary."
+        }
+      ],
+      "nextAction": "Fresh review must collapse this candidate into the retained primary route or preserve it as duplicate context only."
+    },
+    {
+      "manualExtractionId": "C2LTB5-MFEXT-006",
+      "batchId": "C2-LT-B5",
+      "originTaskId": "C2LTB5-EXT-010",
+      "sourceResolutionId": "C2LTB5-SRR-004",
+      "domainId": "golgi-secretory-trafficking-organelle-homeostasis-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/golgi-secretory-trafficking-organelle-homeostasis-continuity",
+      "candidateId": "C2LTB5-SRR-010-CAND-01",
+      "candidateRole": "pubmed-pmc-primary-route",
+      "sourceTitle": "Intercompartmental communication in senescence.",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/41911323/",
+      "extractionDate": "2026-07-03",
+      "extractionMode": "manual-route-and-fulltext-context-extraction-v0.1",
+      "extractionStatus": "bounded-fulltext-route-context-extracted",
+      "sourceAccessStatus": "pmc-open-fulltext-route-accessible",
+      "sourceIdentityFinding": "PMID 41911323 / PMCID PMC13145362 provides an open PMC route for Intercompartmental communication in senescence and can support bounded fresh review of the primary EXT-010 source line.",
+      "currentnessBoundary": "Use the source only for the publication route and version identified in the source-resolution register; do not infer later updates, clinical applicability or generalized longevity effects.",
+      "exactClaimUse": "Use only for bounded source-context extraction about cellular senescence and intercompartmental communication before independent fresh review; no direct reviewed artifact or model coefficient is created.",
+      "endpointDefinition": "Cellular senescence and intercompartmental communication are review-level mechanism contexts; they are not clinical lifespan, mortality or individual risk endpoints.",
+      "populationOrSetting": "Cellular and organelle-level senescence literature, not an individual-subject cohort, intervention trial or clinical decision setting.",
+      "effectOrMechanismSignal": "Open fulltext context discusses cellular senescence, SASP, organelle communication routes, interorganelle contact-site signaling and transport/diffusion signals as mechanism vocabulary for later review.",
+      "uncertaintyOrBias": "The source is a review-level mechanism synthesis and must not be promoted as causal proof, clinical validity evidence or an independent duplicate source without fresh review.",
+      "transferBoundary": "Transfers only to bounded source/variable/endpoint/uncertainty/transfer/downgrade artifact preparation for EXT-010 after independent fresh review; cannot be counted twice across PubMed and PMC routes.",
+      "downgradeTriggers": [
+        "Block artifact creation if fresh review cannot bind the exact PMC text to a bounded source claim.",
+        "Block independent evidence counting if PubMed and PMC routes are treated as separate evidence lines.",
+        "Block model admission and all individual prediction or advice uses."
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 source-maintenance evidence layer before reviewed artifact promotion",
+        "variables": [
+          "senescence-intercompartmental-communication",
+          "organelle-communication-route-vocabulary",
+          "duplicate-route-counting-risk"
+        ],
+        "admissibleUse": "May inform bounded source/variable/endpoint/uncertainty/transfer/downgrade artifact preparation only after independent fresh review; cannot directly enter calibrated prediction."
+      },
+      "artifactPromotionReadiness": "bounded-fresh-review-candidate-fulltext-context-available-primary-route",
+      "modelAdmissionDecision": "blocked-pending-manual-extraction-independent-fresh-review-and-reviewed-artifact-gates",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "sourceEvidenceTrace": [
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13145362/",
+          "evidenceType": "source-resolution-verification-route",
+          "finding": "Official route metadata supports source identity and access-state classification only; it does not create reviewed artifact content."
+        },
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41911323/",
+          "evidenceType": "pmc-open-fulltext-route",
+          "finding": "Candidate route is retained for bounded manual/fulltext extraction planning under the row-specific access and duplicate boundary."
+        },
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13145362/",
+          "evidenceType": "pmc-open-fulltext-route",
+          "finding": "PMC route is accessible for bounded fulltext context extraction of the primary senescence intercompartmental-communication source."
+        }
+      ],
+      "nextAction": "Run independent fresh review over the PMC fulltext route and collapse PubMed/PMC route counting before bounded artifact prep."
+    },
+    {
+      "manualExtractionId": "C2LTB5-MFEXT-007",
+      "batchId": "C2-LT-B5",
+      "originTaskId": "C2LTB5-EXT-010",
+      "sourceResolutionId": "C2LTB5-SRR-004",
+      "domainId": "golgi-secretory-trafficking-organelle-homeostasis-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/golgi-secretory-trafficking-organelle-homeostasis-continuity",
+      "candidateId": "C2LTB5-SRR-010-CAND-02",
+      "candidateRole": "pmc-open-fulltext-primary-route",
+      "sourceTitle": "Intercompartmental communication in senescence.",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13145362/",
+      "extractionDate": "2026-07-03",
+      "extractionMode": "manual-route-and-fulltext-context-extraction-v0.1",
+      "extractionStatus": "bounded-fulltext-route-context-extracted",
+      "sourceAccessStatus": "pmc-open-fulltext-route-accessible",
+      "sourceIdentityFinding": "PMID 41911323 / PMCID PMC13145362 provides an open PMC route for Intercompartmental communication in senescence and can support bounded fresh review of the primary EXT-010 source line.",
+      "currentnessBoundary": "Use the source only for the publication route and version identified in the source-resolution register; do not infer later updates, clinical applicability or generalized longevity effects.",
+      "exactClaimUse": "Use only for bounded source-context extraction about cellular senescence and intercompartmental communication before independent fresh review; no direct reviewed artifact or model coefficient is created.",
+      "endpointDefinition": "Cellular senescence and intercompartmental communication are review-level mechanism contexts; they are not clinical lifespan, mortality or individual risk endpoints.",
+      "populationOrSetting": "Cellular and organelle-level senescence literature, not an individual-subject cohort, intervention trial or clinical decision setting.",
+      "effectOrMechanismSignal": "Open fulltext context discusses cellular senescence, SASP, organelle communication routes, interorganelle contact-site signaling and transport/diffusion signals as mechanism vocabulary for later review.",
+      "uncertaintyOrBias": "The source is a review-level mechanism synthesis and must not be promoted as causal proof, clinical validity evidence or an independent duplicate source without fresh review.",
+      "transferBoundary": "Transfers only to bounded source/variable/endpoint/uncertainty/transfer/downgrade artifact preparation for EXT-010 after independent fresh review; cannot be counted twice across PubMed and PMC routes.",
+      "downgradeTriggers": [
+        "Block artifact creation if fresh review cannot bind the exact PMC text to a bounded source claim.",
+        "Block independent evidence counting if PubMed and PMC routes are treated as separate evidence lines.",
+        "Block model admission and all individual prediction or advice uses."
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 source-maintenance evidence layer before reviewed artifact promotion",
+        "variables": [
+          "senescence-intercompartmental-communication",
+          "organelle-communication-route-vocabulary",
+          "duplicate-route-counting-risk"
+        ],
+        "admissibleUse": "May inform bounded source/variable/endpoint/uncertainty/transfer/downgrade artifact preparation only after independent fresh review; cannot directly enter calibrated prediction."
+      },
+      "artifactPromotionReadiness": "bounded-fresh-review-candidate-fulltext-context-available-primary-route",
+      "modelAdmissionDecision": "blocked-pending-manual-extraction-independent-fresh-review-and-reviewed-artifact-gates",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "sourceEvidenceTrace": [
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13145362/",
+          "evidenceType": "source-resolution-verification-route",
+          "finding": "Official route metadata supports source identity and access-state classification only; it does not create reviewed artifact content."
+        },
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13145362/",
+          "evidenceType": "pmc-open-fulltext-route",
+          "finding": "Candidate route is retained for bounded manual/fulltext extraction planning under the row-specific access and duplicate boundary."
+        },
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13145362/",
+          "evidenceType": "pmc-open-fulltext-route",
+          "finding": "PMC route is accessible for bounded fulltext context extraction of the primary senescence intercompartmental-communication source."
+        }
+      ],
+      "nextAction": "Run independent fresh review over the PMC fulltext route and collapse PubMed/PMC route counting before bounded artifact prep."
+    },
+    {
+      "manualExtractionId": "C2LTB5-MFEXT-008",
+      "batchId": "C2-LT-B5",
+      "originTaskId": "C2LTB5-EXT-013",
+      "sourceResolutionId": "C2LTB5-SRR-005",
+      "domainId": "organelle-contact-sites-intercompartmental-communication-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/organelle-contact-sites-intercompartmental-communication-continuity",
+      "candidateId": "C2LTB5-SRR-013-CAND-01",
+      "candidateRole": "duplicate-secondary-pmc-source-route",
+      "sourceTitle": "Intercompartmental communication in senescence.",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13145362/",
+      "extractionDate": "2026-07-03",
+      "extractionMode": "manual-route-and-fulltext-context-extraction-v0.1",
+      "extractionStatus": "duplicate-route-extracted-no-independent-artifact",
+      "sourceAccessStatus": "pmcid-PMC13145362-europepmc-openaccess-Y-duplicate-route-not-independent-evidence",
+      "sourceIdentityFinding": "PMC13145362 is accessible but this candidate is a secondary duplicate route linked to EXT-010 and must not be counted as an independent evidence line.",
+      "currentnessBoundary": "Use the source only for the publication route and version identified in the source-resolution register; do not infer later updates, clinical applicability or generalized longevity effects.",
+      "exactClaimUse": "Use only to preserve duplicate/source-lineage context before fresh review; do not create direct artifacts or count it as separate evidence.",
+      "endpointDefinition": "Duplicate source-route context only; no independent endpoint definition is admitted from this row.",
+      "populationOrSetting": "Same review-level senescence source lineage as EXT-010, not a separate population or study setting.",
+      "effectOrMechanismSignal": "May preserve organelle-contact or intercompartmental vocabulary only as duplicate context if fresh review later confirms exact statements.",
+      "uncertaintyOrBias": "Duplicate cross-domain source reuse can inflate evidence coverage if treated as independent support.",
+      "transferBoundary": "Transfers only to duplicate-lineage handling and future anchor selection; no model input or reviewed artifact is created from this row.",
+      "downgradeTriggers": [
+        "Block independent evidence counting if this row duplicates a primary source route.",
+        "Block artifact creation until fresh review selects a retained anchor or explicitly allows vocabulary-only context.",
+        "Block model admission and individual-use claims."
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 source-maintenance evidence layer before reviewed artifact promotion",
+        "variables": [
+          "senescence-duplicate-source-route",
+          "organelle-contact-vocabulary-boundary",
+          "evidence-counting-risk"
+        ],
+        "admissibleUse": "May inform bounded source/variable/endpoint/uncertainty/transfer/downgrade artifact preparation only after independent fresh review; cannot directly enter calibrated prediction."
+      },
+      "artifactPromotionReadiness": "duplicate-route-context-no-direct-artifact-promotion",
+      "modelAdmissionDecision": "blocked-pending-manual-extraction-independent-fresh-review-and-reviewed-artifact-gates",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "sourceEvidenceTrace": [
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13145362/",
+          "evidenceType": "source-resolution-verification-route",
+          "finding": "Official route metadata supports source identity and access-state classification only; it does not create reviewed artifact content."
+        },
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13145362/",
+          "evidenceType": "pmc-open-fulltext-route",
+          "finding": "Candidate route is retained for bounded manual/fulltext extraction planning under the row-specific access and duplicate boundary."
+        }
+      ],
+      "nextAction": "Fresh review must collapse this candidate into the retained primary route or preserve it as duplicate context only."
+    },
+    {
+      "manualExtractionId": "C2LTB5-MFEXT-009",
+      "batchId": "C2-LT-B5",
+      "originTaskId": "C2LTB5-EXT-018",
+      "sourceResolutionId": "C2LTB5-SRR-006",
+      "domainId": "ferroptosis-lipid-peroxidation-membrane-resilience-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/ferroptosis-lipid-peroxidation-membrane-resilience-continuity",
+      "candidateId": "C2LTB5-SRR-018-CAND-01",
+      "candidateRole": "pubmed-bibliographic-route",
+      "sourceTitle": "Ferro-aging: A novel paradigm linking iron overload, lipid peroxidation and cellular senescence.",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/42250782/",
+      "extractionDate": "2026-07-03",
+      "extractionMode": "manual-route-and-fulltext-context-extraction-v0.1",
+      "extractionStatus": "route-metadata-extracted-manual-fulltext-required",
+      "sourceAccessStatus": "no-pmcid-europepmc-openaccess-N",
+      "sourceIdentityFinding": "Ferro-aging: A novel paradigm linking iron overload, lipid peroxidation and cellular senescence. is verified as a PubMed/DOI route, but NCBI/Europe PMC checks found no PMCID or open-access fulltext route in this pass.",
+      "currentnessBoundary": "Use the source only for the publication route and version identified in the source-resolution register; do not infer later updates, clinical applicability or generalized longevity effects.",
+      "exactClaimUse": "Use only for source-route identity and manual fulltext acquisition planning; do not extract exact claims from this route yet.",
+      "endpointDefinition": "Ferro-aging paradigm vocabulary around iron overload, lipid peroxidation and senescence, not calibrated membrane-failure or lifespan endpoints.",
+      "populationOrSetting": "Review-level ferroptosis and aging literature context, pending publisher/fulltext access.",
+      "effectOrMechanismSignal": "Bibliographic route supports source identity for ferro-aging framing; exact mechanism strength and downgrade triggers remain unavailable without fulltext.",
+      "uncertaintyOrBias": "No open fulltext was available through the checked official metadata routes, so claim scope, methods, limitations and downgrade triggers remain unreviewed.",
+      "transferBoundary": "Transfers only to manual fulltext acquisition and future independent fresh review; no reviewed artifact, clinical claim or model variable may be filled directly.",
+      "downgradeTriggers": [
+        "Block artifact creation until authorized fulltext or publisher/manual text is available.",
+        "Block model admission until independent fresh review and reviewed artifact gates pass.",
+        "Block individual advice, intervention ranking and calibrated prediction regardless of source-route identity."
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 source-maintenance evidence layer before reviewed artifact promotion",
+        "variables": [
+          "ferro-aging-review-route",
+          "manual-fulltext-required",
+          "hypothesis-strength-risk"
+        ],
+        "admissibleUse": "May inform bounded source/variable/endpoint/uncertainty/transfer/downgrade artifact preparation only after independent fresh review; cannot directly enter calibrated prediction."
+      },
+      "artifactPromotionReadiness": "blocked-route-or-manual-access-required-no-direct-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-manual-extraction-independent-fresh-review-and-reviewed-artifact-gates",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "sourceEvidenceTrace": [
+        {
+          "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id=42334294,42096823,41911323,42250782,42107721,42264186&retmode=json",
+          "evidenceType": "source-resolution-verification-route",
+          "finding": "Official route metadata supports source identity and access-state classification only; it does not create reviewed artifact content."
+        },
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42250782/",
+          "evidenceType": "bibliographic-or-doi-route",
+          "finding": "Candidate route is retained for bounded manual/fulltext extraction planning under the row-specific access and duplicate boundary."
+        }
+      ],
+      "nextAction": "Obtain authorized fulltext or publisher route access, then repeat manual extraction before independent fresh review."
+    },
+    {
+      "manualExtractionId": "C2LTB5-MFEXT-010",
+      "batchId": "C2-LT-B5",
+      "originTaskId": "C2LTB5-EXT-018",
+      "sourceResolutionId": "C2LTB5-SRR-006",
+      "domainId": "ferroptosis-lipid-peroxidation-membrane-resilience-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/ferroptosis-lipid-peroxidation-membrane-resilience-continuity",
+      "candidateId": "C2LTB5-SRR-018-CAND-02",
+      "candidateRole": "publisher-doi-route",
+      "sourceTitle": "Ferro-aging: A novel paradigm linking iron overload, lipid peroxidation and cellular senescence.",
+      "sourceUrl": "https://doi.org/10.1016/j.freeradbiomed.2026.06.012",
+      "extractionDate": "2026-07-03",
+      "extractionMode": "manual-route-and-fulltext-context-extraction-v0.1",
+      "extractionStatus": "route-metadata-extracted-manual-fulltext-required",
+      "sourceAccessStatus": "no-pmcid-europepmc-openaccess-N",
+      "sourceIdentityFinding": "Ferro-aging: A novel paradigm linking iron overload, lipid peroxidation and cellular senescence. is verified as a PubMed/DOI route, but NCBI/Europe PMC checks found no PMCID or open-access fulltext route in this pass.",
+      "currentnessBoundary": "Use the source only for the publication route and version identified in the source-resolution register; do not infer later updates, clinical applicability or generalized longevity effects.",
+      "exactClaimUse": "Use only for source-route identity and manual fulltext acquisition planning; do not extract exact claims from this route yet.",
+      "endpointDefinition": "Ferro-aging paradigm vocabulary around iron overload, lipid peroxidation and senescence, not calibrated membrane-failure or lifespan endpoints.",
+      "populationOrSetting": "Review-level ferroptosis and aging literature context, pending publisher/fulltext access.",
+      "effectOrMechanismSignal": "Bibliographic route supports source identity for ferro-aging framing; exact mechanism strength and downgrade triggers remain unavailable without fulltext.",
+      "uncertaintyOrBias": "No open fulltext was available through the checked official metadata routes, so claim scope, methods, limitations and downgrade triggers remain unreviewed.",
+      "transferBoundary": "Transfers only to manual fulltext acquisition and future independent fresh review; no reviewed artifact, clinical claim or model variable may be filled directly.",
+      "downgradeTriggers": [
+        "Block artifact creation until authorized fulltext or publisher/manual text is available.",
+        "Block model admission until independent fresh review and reviewed artifact gates pass.",
+        "Block individual advice, intervention ranking and calibrated prediction regardless of source-route identity."
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 source-maintenance evidence layer before reviewed artifact promotion",
+        "variables": [
+          "ferro-aging-review-route",
+          "manual-fulltext-required",
+          "hypothesis-strength-risk"
+        ],
+        "admissibleUse": "May inform bounded source/variable/endpoint/uncertainty/transfer/downgrade artifact preparation only after independent fresh review; cannot directly enter calibrated prediction."
+      },
+      "artifactPromotionReadiness": "blocked-route-or-manual-access-required-no-direct-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-manual-extraction-independent-fresh-review-and-reviewed-artifact-gates",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "sourceEvidenceTrace": [
+        {
+          "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id=42334294,42096823,41911323,42250782,42107721,42264186&retmode=json",
+          "evidenceType": "source-resolution-verification-route",
+          "finding": "Official route metadata supports source identity and access-state classification only; it does not create reviewed artifact content."
+        },
+        {
+          "url": "https://doi.org/10.1016/j.freeradbiomed.2026.06.012",
+          "evidenceType": "bibliographic-or-doi-route",
+          "finding": "Candidate route is retained for bounded manual/fulltext extraction planning under the row-specific access and duplicate boundary."
+        }
+      ],
+      "nextAction": "Obtain authorized fulltext or publisher route access, then repeat manual extraction before independent fresh review."
+    },
+    {
+      "manualExtractionId": "C2LTB5-MFEXT-011",
+      "batchId": "C2-LT-B5",
+      "originTaskId": "C2LTB5-EXT-019",
+      "sourceResolutionId": "C2LTB5-SRR-007",
+      "domainId": "nuclear-gateway-nucleocytoplasmic-transport-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/nuclear-gateway-nucleocytoplasmic-transport-continuity",
+      "candidateId": "C2LTB5-SRR-019-CAND-01",
+      "candidateRole": "pubmed-bibliographic-route",
+      "sourceTitle": "Karyopherins in Proteostasis and Aging.",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/42107721/",
+      "extractionDate": "2026-07-03",
+      "extractionMode": "manual-route-and-fulltext-context-extraction-v0.1",
+      "extractionStatus": "route-metadata-extracted-manual-fulltext-required",
+      "sourceAccessStatus": "no-pmcid-europepmc-openaccess-N",
+      "sourceIdentityFinding": "Karyopherins in Proteostasis and Aging. is verified as a PubMed/DOI route, but NCBI/Europe PMC checks found no PMCID or open-access fulltext route in this pass.",
+      "currentnessBoundary": "Use the source only for the publication route and version identified in the source-resolution register; do not infer later updates, clinical applicability or generalized longevity effects.",
+      "exactClaimUse": "Use only for source-route identity and manual fulltext acquisition planning; do not extract exact claims from this route yet.",
+      "endpointDefinition": "Karyopherin, nucleocytoplasmic transport and proteostasis vocabulary only, not treatment, prognosis or lifespan effect estimates.",
+      "populationOrSetting": "Ageing Research Reviews source context pending manual publisher/fulltext access.",
+      "effectOrMechanismSignal": "Bibliographic route supports source identity for karyopherin/proteostasis-aging review context; exact claims require manual fulltext extraction.",
+      "uncertaintyOrBias": "No open fulltext was available through the checked official metadata routes, so claim scope, methods, limitations and downgrade triggers remain unreviewed.",
+      "transferBoundary": "Transfers only to manual fulltext acquisition and future independent fresh review; no reviewed artifact, clinical claim or model variable may be filled directly.",
+      "downgradeTriggers": [
+        "Block artifact creation until authorized fulltext or publisher/manual text is available.",
+        "Block model admission until independent fresh review and reviewed artifact gates pass.",
+        "Block individual advice, intervention ranking and calibrated prediction regardless of source-route identity."
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 source-maintenance evidence layer before reviewed artifact promotion",
+        "variables": [
+          "karyopherin-source-route",
+          "nuclear-transport-vocabulary",
+          "manual-fulltext-required"
+        ],
+        "admissibleUse": "May inform bounded source/variable/endpoint/uncertainty/transfer/downgrade artifact preparation only after independent fresh review; cannot directly enter calibrated prediction."
+      },
+      "artifactPromotionReadiness": "blocked-route-or-manual-access-required-no-direct-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-manual-extraction-independent-fresh-review-and-reviewed-artifact-gates",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "sourceEvidenceTrace": [
+        {
+          "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id=42334294,42096823,41911323,42250782,42107721,42264186&retmode=json",
+          "evidenceType": "source-resolution-verification-route",
+          "finding": "Official route metadata supports source identity and access-state classification only; it does not create reviewed artifact content."
+        },
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42107721/",
+          "evidenceType": "bibliographic-or-doi-route",
+          "finding": "Candidate route is retained for bounded manual/fulltext extraction planning under the row-specific access and duplicate boundary."
+        }
+      ],
+      "nextAction": "Obtain authorized fulltext or publisher route access, then repeat manual extraction before independent fresh review."
+    },
+    {
+      "manualExtractionId": "C2LTB5-MFEXT-012",
+      "batchId": "C2-LT-B5",
+      "originTaskId": "C2LTB5-EXT-019",
+      "sourceResolutionId": "C2LTB5-SRR-007",
+      "domainId": "nuclear-gateway-nucleocytoplasmic-transport-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/nuclear-gateway-nucleocytoplasmic-transport-continuity",
+      "candidateId": "C2LTB5-SRR-019-CAND-02",
+      "candidateRole": "publisher-doi-route",
+      "sourceTitle": "Karyopherins in Proteostasis and Aging.",
+      "sourceUrl": "https://doi.org/10.1016/j.arr.2026.103161",
+      "extractionDate": "2026-07-03",
+      "extractionMode": "manual-route-and-fulltext-context-extraction-v0.1",
+      "extractionStatus": "route-metadata-extracted-manual-fulltext-required",
+      "sourceAccessStatus": "no-pmcid-europepmc-openaccess-N",
+      "sourceIdentityFinding": "Karyopherins in Proteostasis and Aging. is verified as a PubMed/DOI route, but NCBI/Europe PMC checks found no PMCID or open-access fulltext route in this pass.",
+      "currentnessBoundary": "Use the source only for the publication route and version identified in the source-resolution register; do not infer later updates, clinical applicability or generalized longevity effects.",
+      "exactClaimUse": "Use only for source-route identity and manual fulltext acquisition planning; do not extract exact claims from this route yet.",
+      "endpointDefinition": "Karyopherin, nucleocytoplasmic transport and proteostasis vocabulary only, not treatment, prognosis or lifespan effect estimates.",
+      "populationOrSetting": "Ageing Research Reviews source context pending manual publisher/fulltext access.",
+      "effectOrMechanismSignal": "Bibliographic route supports source identity for karyopherin/proteostasis-aging review context; exact claims require manual fulltext extraction.",
+      "uncertaintyOrBias": "No open fulltext was available through the checked official metadata routes, so claim scope, methods, limitations and downgrade triggers remain unreviewed.",
+      "transferBoundary": "Transfers only to manual fulltext acquisition and future independent fresh review; no reviewed artifact, clinical claim or model variable may be filled directly.",
+      "downgradeTriggers": [
+        "Block artifact creation until authorized fulltext or publisher/manual text is available.",
+        "Block model admission until independent fresh review and reviewed artifact gates pass.",
+        "Block individual advice, intervention ranking and calibrated prediction regardless of source-route identity."
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 source-maintenance evidence layer before reviewed artifact promotion",
+        "variables": [
+          "karyopherin-source-route",
+          "nuclear-transport-vocabulary",
+          "manual-fulltext-required"
+        ],
+        "admissibleUse": "May inform bounded source/variable/endpoint/uncertainty/transfer/downgrade artifact preparation only after independent fresh review; cannot directly enter calibrated prediction."
+      },
+      "artifactPromotionReadiness": "blocked-route-or-manual-access-required-no-direct-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-manual-extraction-independent-fresh-review-and-reviewed-artifact-gates",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "sourceEvidenceTrace": [
+        {
+          "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id=42334294,42096823,41911323,42250782,42107721,42264186&retmode=json",
+          "evidenceType": "source-resolution-verification-route",
+          "finding": "Official route metadata supports source identity and access-state classification only; it does not create reviewed artifact content."
+        },
+        {
+          "url": "https://doi.org/10.1016/j.arr.2026.103161",
+          "evidenceType": "bibliographic-or-doi-route",
+          "finding": "Candidate route is retained for bounded manual/fulltext extraction planning under the row-specific access and duplicate boundary."
+        }
+      ],
+      "nextAction": "Obtain authorized fulltext or publisher route access, then repeat manual extraction before independent fresh review."
+    },
+    {
+      "manualExtractionId": "C2LTB5-MFEXT-013",
+      "batchId": "C2-LT-B5",
+      "originTaskId": "C2LTB5-EXT-021",
+      "sourceResolutionId": "C2LTB5-SRR-008",
+      "domainId": "lymphatic-glymphatic-clearance",
+      "localDomainPath": "domains/c2-source-maintenance/lymphatic-glymphatic-clearance",
+      "candidateId": "C2LTB5-SRR-021-CAND-01",
+      "candidateRole": "pubmed-bibliographic-route",
+      "sourceTitle": "Impaired Glymphatic Clearance as a Mechanistic Link Between Brain Aging and Neurodegenerative Disease Pathogenesis.",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/42264186/",
+      "extractionDate": "2026-07-03",
+      "extractionMode": "manual-route-and-fulltext-context-extraction-v0.1",
+      "extractionStatus": "route-metadata-extracted-manual-fulltext-required",
+      "sourceAccessStatus": "no-pmcid-europepmc-openaccess-N",
+      "sourceIdentityFinding": "Impaired Glymphatic Clearance as a Mechanistic Link Between Brain Aging and Neurodegenerative Disease Pathogenesis. is verified as a PubMed/DOI route, but NCBI/Europe PMC checks found no PMCID or open-access fulltext route in this pass.",
+      "currentnessBoundary": "Use the source only for the publication route and version identified in the source-resolution register; do not infer later updates, clinical applicability or generalized longevity effects.",
+      "exactClaimUse": "Use only for source-route identity and manual fulltext acquisition planning; do not extract exact claims from this route yet.",
+      "endpointDefinition": "Glymphatic-clearance mechanistic review vocabulary only, not individual dementia prognosis, sleep intervention ranking or neurodegeneration risk model.",
+      "populationOrSetting": "Review-level brain aging and neurodegenerative disease pathogenesis context pending manual publisher/fulltext access.",
+      "effectOrMechanismSignal": "Bibliographic route supports source identity for glymphatic-clearance review context; exact claims require manual fulltext extraction.",
+      "uncertaintyOrBias": "No open fulltext was available through the checked official metadata routes, so claim scope, methods, limitations and downgrade triggers remain unreviewed.",
+      "transferBoundary": "Transfers only to manual fulltext acquisition and future independent fresh review; no reviewed artifact, clinical claim or model variable may be filled directly.",
+      "downgradeTriggers": [
+        "Block artifact creation until authorized fulltext or publisher/manual text is available.",
+        "Block model admission until independent fresh review and reviewed artifact gates pass.",
+        "Block individual advice, intervention ranking and calibrated prediction regardless of source-route identity."
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 source-maintenance evidence layer before reviewed artifact promotion",
+        "variables": [
+          "glymphatic-clearance-source-route",
+          "brain-aging-mechanism-vocabulary",
+          "manual-fulltext-required"
+        ],
+        "admissibleUse": "May inform bounded source/variable/endpoint/uncertainty/transfer/downgrade artifact preparation only after independent fresh review; cannot directly enter calibrated prediction."
+      },
+      "artifactPromotionReadiness": "blocked-route-or-manual-access-required-no-direct-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-manual-extraction-independent-fresh-review-and-reviewed-artifact-gates",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "sourceEvidenceTrace": [
+        {
+          "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id=42334294,42096823,41911323,42250782,42107721,42264186&retmode=json",
+          "evidenceType": "source-resolution-verification-route",
+          "finding": "Official route metadata supports source identity and access-state classification only; it does not create reviewed artifact content."
+        },
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42264186/",
+          "evidenceType": "bibliographic-or-doi-route",
+          "finding": "Candidate route is retained for bounded manual/fulltext extraction planning under the row-specific access and duplicate boundary."
+        }
+      ],
+      "nextAction": "Obtain authorized fulltext or publisher route access, then repeat manual extraction before independent fresh review."
+    },
+    {
+      "manualExtractionId": "C2LTB5-MFEXT-014",
+      "batchId": "C2-LT-B5",
+      "originTaskId": "C2LTB5-EXT-021",
+      "sourceResolutionId": "C2LTB5-SRR-008",
+      "domainId": "lymphatic-glymphatic-clearance",
+      "localDomainPath": "domains/c2-source-maintenance/lymphatic-glymphatic-clearance",
+      "candidateId": "C2LTB5-SRR-021-CAND-02",
+      "candidateRole": "publisher-doi-route",
+      "sourceTitle": "Impaired Glymphatic Clearance as a Mechanistic Link Between Brain Aging and Neurodegenerative Disease Pathogenesis.",
+      "sourceUrl": "https://doi.org/10.1016/j.arr.2026.103202",
+      "extractionDate": "2026-07-03",
+      "extractionMode": "manual-route-and-fulltext-context-extraction-v0.1",
+      "extractionStatus": "route-metadata-extracted-manual-fulltext-required",
+      "sourceAccessStatus": "no-pmcid-europepmc-openaccess-N",
+      "sourceIdentityFinding": "Impaired Glymphatic Clearance as a Mechanistic Link Between Brain Aging and Neurodegenerative Disease Pathogenesis. is verified as a PubMed/DOI route, but NCBI/Europe PMC checks found no PMCID or open-access fulltext route in this pass.",
+      "currentnessBoundary": "Use the source only for the publication route and version identified in the source-resolution register; do not infer later updates, clinical applicability or generalized longevity effects.",
+      "exactClaimUse": "Use only for source-route identity and manual fulltext acquisition planning; do not extract exact claims from this route yet.",
+      "endpointDefinition": "Glymphatic-clearance mechanistic review vocabulary only, not individual dementia prognosis, sleep intervention ranking or neurodegeneration risk model.",
+      "populationOrSetting": "Review-level brain aging and neurodegenerative disease pathogenesis context pending manual publisher/fulltext access.",
+      "effectOrMechanismSignal": "Bibliographic route supports source identity for glymphatic-clearance review context; exact claims require manual fulltext extraction.",
+      "uncertaintyOrBias": "No open fulltext was available through the checked official metadata routes, so claim scope, methods, limitations and downgrade triggers remain unreviewed.",
+      "transferBoundary": "Transfers only to manual fulltext acquisition and future independent fresh review; no reviewed artifact, clinical claim or model variable may be filled directly.",
+      "downgradeTriggers": [
+        "Block artifact creation until authorized fulltext or publisher/manual text is available.",
+        "Block model admission until independent fresh review and reviewed artifact gates pass.",
+        "Block individual advice, intervention ranking and calibrated prediction regardless of source-route identity."
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 source-maintenance evidence layer before reviewed artifact promotion",
+        "variables": [
+          "glymphatic-clearance-source-route",
+          "brain-aging-mechanism-vocabulary",
+          "manual-fulltext-required"
+        ],
+        "admissibleUse": "May inform bounded source/variable/endpoint/uncertainty/transfer/downgrade artifact preparation only after independent fresh review; cannot directly enter calibrated prediction."
+      },
+      "artifactPromotionReadiness": "blocked-route-or-manual-access-required-no-direct-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-manual-extraction-independent-fresh-review-and-reviewed-artifact-gates",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "sourceEvidenceTrace": [
+        {
+          "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id=42334294,42096823,41911323,42250782,42107721,42264186&retmode=json",
+          "evidenceType": "source-resolution-verification-route",
+          "finding": "Official route metadata supports source identity and access-state classification only; it does not create reviewed artifact content."
+        },
+        {
+          "url": "https://doi.org/10.1016/j.arr.2026.103202",
+          "evidenceType": "bibliographic-or-doi-route",
+          "finding": "Candidate route is retained for bounded manual/fulltext extraction planning under the row-specific access and duplicate boundary."
+        }
+      ],
+      "nextAction": "Obtain authorized fulltext or publisher route access, then repeat manual extraction before independent fresh review."
+    }
+  ]
+}
