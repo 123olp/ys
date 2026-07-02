@@ -235,7 +235,7 @@ docs/
 - `reference/human-infra-core-claim-evidence-matrix.md`：登记 Human Infra 核心主张、Source Anchor Cards、Claim-Evidence Matrix、方法转译契约和项目级证据 gate。
 - `reference/human-infra-audience-claim-map.json`：登记不同受众的 Claim ID 入口、价值翻译、禁止误读和邻近项目边界，用于把项目价值讲清楚而不改写核心主线。
 - `reference/human-infra-independent-fresh-review-protocol.json`：登记 81 个卡片晋升准备包的独立 fresh review 批次、审查字段、verdict taxonomy 和晋升规则；它只定义审查协议，不代表 verdict 已完成。
-- `reference/human-infra-independent-fresh-review-verdict-register.json`：登记 FRB-01 方法学批次和 FRB-02 生物衰老机制批次 12 个来源锚点和 56 个晋升包的独立 fresh review verdict；它只允许 bounded artifact filling，不代表卡片填充、模型准入或个体预测。
+- `reference/human-infra-independent-fresh-review-verdict-register.json`：登记 FRB-01 到 FRB-04 全部批次 20 个来源锚点和 81 个晋升包的独立 fresh review verdict；它只允许 bounded artifact filling，不代表卡片填充、模型准入或个体预测。
 - `reference/life-path-prediction-model-contract.md`：定义干预、状态转移、风险函数、生存曲线、有效时间、主观时间、相对时间和未来选择权的预测模型契约。
 - `reference/life-path-prediction-model-governance.md`：定义定量预测模型的证据准入、偏差审查、验证、报告和禁止用途门禁。
 - `reference/project-boundary-v0.1.md`：定义当前公开版本边界、纳入范围、排除范围、材料落点和后续版本方向。
@@ -372,7 +372,7 @@ docs/
 - `reference/human-infra-domain-source-card-promotion-queue.json`：把 81 个 completed field rows 派生为 fresh review、Source Card、变量卡、endpoint 卡、uncertainty 卡、transfer-boundary 卡和 downgrade check 晋升任务；它仍不等于晋升完成或模型准入。
 - `reference/human-infra-source-context-local-review-register.json`：记录当前 20 个来源锚点的本地来源语境复核，覆盖 81 个晋升任务和 26 个域；它仍不等于独立 fresh review、Source Card 晋升完成或模型准入。
 - `reference/human-infra-card-promotion-prep-register.json`：为 81 个已本地复核的晋升任务预注册 486 个 Source/变量/endpoint/uncertainty/transfer/downgrade 待产物 ID、评审问题和阻塞用途；它仍不等于独立 fresh review 或卡片完成。
-- `reference/human-infra-independent-fresh-review-verdict-register.json`：记录第一批独立 fresh review verdict，必须与 protocol、prep register、本地来源复核和 source-specific extraction 保持交叉一致；它仍不等于 Source Card、变量卡、endpoint 卡、uncertainty 卡、transfer-boundary 卡或 downgrade check 已完成。
+- `reference/human-infra-independent-fresh-review-verdict-register.json`：记录累计独立 fresh review verdict，必须与 protocol、prep register、本地来源复核和 source-specific extraction 保持交叉一致；它仍不等于 Source Card、变量卡、endpoint 卡、uncertainty 卡、transfer-boundary 卡或 downgrade check 已完成。
 - `reference/human-infra-falsifier-source-card-extraction.json`：把第一批高杠杆来源锚点抽取为字段级 Source Cards，绑定来源身份、域、论文 claim、模型位置、反证用途和迁移边界。
 - `reference/domain-map.md`：定义根项目与子域的边界、迁移切片、主动不做和验证点。
 - `reference/ethics-and-safety-boundaries.md`：定义医疗、组织、去具身中枢、记忆编辑和数据证据边界。

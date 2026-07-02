@@ -114,7 +114,7 @@
     {
       "axisId": "research_framework",
       "axisName": "研究框架",
-      "currentPercent": 98,
+      "currentPercent": 99,
       "targetPercent": 100,
       "definitionOfDone": "Every strong project claim can be traced to source cards, claim-evidence rows, variables, mechanism links, falsifiers, model position and governance boundary.",
       "primaryEvidence": [
@@ -191,11 +191,10 @@
             "tools/audit_human_infra_independent_fresh_review_verdict_register.py"
           ],
           "missingEvidence": [
-            "Independent fresh reviewer verdicts for the remaining 25 prepared promotion artifact packs.",
-            "Filled reviewed Source Card artifacts that classify each completed field row as supported, bounded, downgraded or rejected.",
+            "Filled reviewed Source Card artifacts that classify each completed field row as supported, bounded, downgraded or rejected after all 81 independent fresh-review verdicts.",
             "Domain-level Claim-Evidence Matrix coverage beyond the current priority C1/C2 set."
           ],
-          "nextAction": "Execute FRB-03 and FRB-04 in the independent fresh-review protocol, then fill reviewed Source Cards only for supported or bounded rows and keep model admission blocked.",
+          "nextAction": "Fill reviewed Source Cards only for supported or bounded rows from the completed FRB-01 through FRB-04 verdict register and keep model admission blocked.",
           "blocks100Percent": true
         },
         {
@@ -227,7 +226,7 @@
             "Filled endpoint, uncertainty and transfer-boundary cards derived from reviewed rows rather than field-extraction drafts.",
             "Domain-specific variable tables for C2 long-tail claims beyond the current priority set."
           ],
-          "nextAction": "Use the FRB-01 and FRB-02 verdict register rows to fill bounded artifacts for method and biological-aging rows, then continue fresh review for remaining batches before promoting other variables or endpoints.",
+          "nextAction": "Use the complete FRB-01 through FRB-04 verdict register to fill bounded artifacts for reviewed Source, variable, endpoint, uncertainty and transfer-boundary cards before promoting remaining variables or endpoints.",
           "blocks100Percent": true
         },
         {
@@ -280,11 +279,10 @@
             "tools/audit_human_infra_independent_fresh_review_verdict_register.py"
           ],
           "missingEvidence": [
-            "Filled downgrade-check artifacts for the 56 reviewed FRB-01/FRB-02 rows and the remaining 25 prepared promotion packs after independent fresh review.",
-            "Falsifier rows for C2 domain claims beyond the current 20-domain priority set.",
-            "Independent reviewer-confirmed boundary checks for all reviewed batches, not only FRB-01 and FRB-02."
+            "Filled downgrade-check artifacts for the 81 reviewed FRB-01 through FRB-04 rows after independent fresh review.",
+            "Falsifier rows for C2 domain claims beyond the current 20-domain priority set."
           ],
-          "nextAction": "Use the FRB-01 and FRB-02 fresh-review verdicts to fill the first downgrade-check IDs, then connect rejected or indirect rows from remaining batches back to falsifier and variable-card gates.",
+          "nextAction": "Use the complete FRB-01 through FRB-04 fresh-review verdict register to fill downgrade-check IDs and connect rejected or indirect rows back to falsifier and variable-card gates.",
           "blocks100Percent": true
         }
       ]
@@ -431,7 +429,7 @@
   "nextWorkOrder": [
     {
       "priority": 1,
-      "item": "Execute the independent fresh-review protocol for all 81 prepared artifact packs, then fill reviewed Source/variable/endpoint/uncertainty/transfer-boundary/downgrade artifacts only for supported or bounded rows.",
+      "item": "Fill reviewed Source/variable/endpoint/uncertainty/transfer-boundary/downgrade artifacts from the completed 81/81 independent fresh-review verdict register only for supported or bounded rows.",
       "unblocks": [
         "RESEARCH-G3-c1-c2-source-cards",
         "RESEARCH-G4-variable-mechanism-contracts",

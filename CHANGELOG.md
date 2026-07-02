@@ -4,6 +4,8 @@ All notable repository structure changes are recorded here.
 
 ## 2026-07-02
 
+- Completed the independent fresh-review verdict register across FRB-01 through FRB-04, covering all 20 source anchors and 81/81 prepared promotion packets while keeping card filling, model admission and individual-use claims blocked.
+- Extended the independent fresh-review verdict register to FRB-03 subject-continuity/capability/cognition anchors, bringing cumulative coverage to 16 source anchors and 75/81 prepared promotion packets while keeping card filling, model admission and individual-use claims blocked.
 - Extended the independent fresh-review verdict register and audit gate to FRB-02 biological-aging mechanisms, bringing cumulative coverage to 12 source anchors and 56/81 prepared promotion packets while keeping card filling, model admission and individual-use claims blocked.
 - Added the first independent fresh-review verdict register and audit gate, covering FRB-01 method/statistical/model standards across 5 source anchors and 26/81 prepared promotion packets while keeping card filling, model admission, calibrated prediction and individual-use claims blocked.
 - Added a machine-readable audience-claim map and audit gate, closing the value-clarity axis with six audience entry points, six adjacent-project boundary distinctions and README/reference/toolchain index coverage.

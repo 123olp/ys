@@ -1,7 +1,7 @@
 {
   "schemaVersion": "human-infra.independent-fresh-review-verdict-register.v1",
   "registerId": "human-infra-independent-fresh-review-verdict-register-2026-07-02",
-  "status": "active-fresh-review-verdict-register-partial",
+  "status": "active-fresh-review-verdict-register-complete",
   "purpose": "Record independent fresh-review verdicts for prepared Human Infra card-promotion packs while keeping model admission and individual-use claims blocked.",
   "sourceOfTruth": {
     "independentFreshReviewProtocol": "docs/reference/human-infra-independent-fresh-review-protocol.json",
@@ -14,20 +14,22 @@
   "scope": {
     "reviewedBatchIds": [
       "FRB-01-method-statistical-model-standards",
-      "FRB-02-biological-aging-mechanisms"
+      "FRB-02-biological-aging-mechanisms",
+      "FRB-03-subject-continuity-capability-cognition",
+      "FRB-04-digital-twin-ai-governance-future-waiting"
     ],
-    "reviewedBatchCount": 2,
+    "reviewedBatchCount": 4,
     "totalPreparedPromotionPacketCount": 81,
-    "reviewedPromotionPacketCount": 56,
-    "remainingPreparedPromotionPacketCount": 25,
-    "reviewedSourceAnchorCount": 12,
-    "coveredDomainCount": 21,
+    "reviewedPromotionPacketCount": 81,
+    "remainingPreparedPromotionPacketCount": 0,
+    "reviewedSourceAnchorCount": 20,
+    "coveredDomainCount": 26,
     "reviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
-    "artifactPromotionDecision": "FRB-01 and FRB-02 rows may proceed to bounded artifact filling; model admission remains blocked until card filling, downgrade checks and model gates pass.",
+    "artifactPromotionDecision": "FRB-01 through FRB-04 rows may proceed to bounded artifact filling; model admission remains blocked until card filling, downgrade checks and model gates pass.",
     "nonClaims": [
       "This register is not a completed Source Card set, variable-card set, endpoint-card set, uncertainty-card set, transfer-boundary-card set or downgrade-check set.",
       "This register does not authorize calibrated prediction, individual recommendation, individual death-date output, intervention ranking, domain-claim upgrade or clinical-validity claims.",
-      "This register completes only two independent fresh-review batches; the remaining prepared packs still require fresh review."
+      "This register completes independent fresh-review verdicts for all prepared packs; all prepared packs have received fresh review, but downstream card filling and model gates remain blocked."
     ]
   },
   "requiredReviewFields": [
@@ -873,6 +875,523 @@
         "domain-claim-upgrade",
         "clinical-validity-claim"
       ]
+    },
+    {
+      "sourceCardId": "SA-WHO-CONSTITUTION",
+      "reviewedSourceTitle": "Constitution of the World Health Organization",
+      "reviewedSourceAuthors": "World Health Organization",
+      "reviewedSourceYear": "1946/1948",
+      "sourceType": "constitutional-value-anchor",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "freshReviewEvidence": [
+        {
+          "url": "https://www.who.int/about/governance/constitution",
+          "evidenceType": "official-who-constitution-page",
+          "finding": "The official WHO page states the Constitution preamble principles, including health as physical, mental and social well-being, health as a fundamental right, and the dependence of health on cooperation and social measures."
+        },
+        {
+          "url": "https://treaties.un.org/doc/Treaties/1948/04/19480407%2010-51%20PM/Ch_IX_01p.pdf",
+          "evidenceType": "un-treaty-text-pdf",
+          "finding": "The UN treaty text provides the formal constitutional source context for the WHO preamble. It supports value and scope framing, not empirical transition probabilities or intervention effects."
+        }
+      ],
+      "registeredSourceRole": "health-functioning-wellbeing-value-anchor",
+      "registeredExactClaimUses": [
+        "Supports defining subject continuity and effective life through physical, mental and social functioning, not survival or disease absence alone."
+      ],
+      "registeredTransferBoundaries": [
+        "Transfer only as health-functioning and wellbeing vocabulary. It does not prove any intervention effect, disease endpoint, or individual prognosis."
+      ],
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "sourceIdentityVerdict": "verified-official-constitutional-value-source",
+      "sourceContextVerdict": "supports health-functioning-wellbeing framing with official constitutional boundary",
+      "exactClaimUseVerdict": "supports outcome framing that treats subject continuity as physical, mental and social functioning rather than mere biological survival",
+      "domainTransferVerdict": "bounded-transfer-to-health-functioning and wellbeing vocabulary; no empirical intervention effect, disease endpoint, prognosis or resource effect size",
+      "modelPositionVerdict": "value-and-outcome-language-only; calibrated prediction, clinical validity and individual prognosis remain blocked",
+      "uncertaintyBoundaryVerdict": "must supply separate operational endpoints, populations, measures, causal evidence and governance boundary before any model use",
+      "downgradeVerdict": "no downgrade required for value-scope vocabulary; downgrade required if used as empirical effect, eligibility, prognosis or clinical evidence",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this source",
+      "reviewerNote": "Fresh review confirms WHO Constitution is usable as Human Infra health/functioning/wellbeing framing, not as empirical evidence for any intervention or prediction model.",
+      "affectedPromotionTaskCount": 10,
+      "affectedPromotionTaskIds": [
+        "PROM-064-HIDOM-FLD005-SA-WHO-CONSTITUTION",
+        "PROM-071-HIDOM-FLD011-SA-WHO-CONSTITUTION",
+        "PROM-074-HIDOM-FLD012-SA-WHO-CONSTITUTION",
+        "PROM-075-HIDOM-FLD017-SA-WHO-CONSTITUTION",
+        "PROM-076-HIDOM-FLD019-SA-WHO-CONSTITUTION",
+        "PROM-077-HIDOM-FLD021-SA-WHO-CONSTITUTION",
+        "PROM-078-HIDOM-FLD022-SA-WHO-CONSTITUTION",
+        "PROM-079-HIDOM-FLD024-SA-WHO-CONSTITUTION",
+        "PROM-080-HIDOM-FLD025-SA-WHO-CONSTITUTION",
+        "PROM-081-HIDOM-FLD026-SA-WHO-CONSTITUTION"
+      ],
+      "affectedDomainIds": [
+        "blood-oxygen-hemostasis",
+        "disembodied-cns",
+        "endocrine-hormonal-regulation",
+        "extracellular-matrix-glycation",
+        "microbiome-ecology",
+        "mitochondrial-bioenergetics",
+        "musculoskeletal-integrity",
+        "neuro-continuity",
+        "nutrition-metabolic-health",
+        "respiratory-oxygenation"
+      ],
+      "affectedFieldCardIds": [
+        "HIDOM-FLD005",
+        "HIDOM-FLD011",
+        "HIDOM-FLD012",
+        "HIDOM-FLD017",
+        "HIDOM-FLD019",
+        "HIDOM-FLD021",
+        "HIDOM-FLD022",
+        "HIDOM-FLD024",
+        "HIDOM-FLD025",
+        "HIDOM-FLD026"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "domain-claim-upgrade",
+        "clinical-validity-claim"
+      ]
+    },
+    {
+      "sourceCardId": "SA-CAPABILITY-APPROACH",
+      "reviewedSourceTitle": "Capability Approach",
+      "reviewedSourceAuthors": "Ingrid Robeyns; Stanford Encyclopedia of Philosophy",
+      "reviewedSourceYear": "living-reference",
+      "sourceType": "philosophy-reference",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "freshReviewEvidence": [
+        {
+          "url": "https://plato.stanford.edu/entries/capability-approach/",
+          "evidenceType": "stanford-encyclopedia-reference",
+          "finding": "SEP defines the capability approach around capabilities, functionings and freedom to achieve well-being."
+        },
+        {
+          "url": "https://iep.utm.edu/sen-cap/",
+          "evidenceType": "philosophy-reference",
+          "finding": "IEP explains the approach as focusing on lives people have reason to value rather than resources alone."
+        }
+      ],
+      "registeredSourceRole": "capability-option-value-and-functioning-value-anchor",
+      "registeredExactClaimUses": [
+        "Supports evaluating Human Infra through real functionings, capabilities and future choices rather than biological survival alone."
+      ],
+      "registeredTransferBoundaries": [
+        "Transfer only as value and option-space vocabulary. It does not prove intervention efficacy, resource effect size or individual welfare improvement."
+      ],
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "sourceIdentityVerdict": "verified-authoritative-philosophy-reference-source",
+      "sourceContextVerdict": "supports capability, functioning and option-space value framing with philosophical boundary",
+      "exactClaimUseVerdict": "supports evaluating Human Infra by real functionings, capabilities and future choices rather than biological survival alone",
+      "domainTransferVerdict": "bounded-transfer-to-capability and option-value vocabulary; no intervention efficacy, resource effect size or individual welfare improvement",
+      "modelPositionVerdict": "normative-value-language-only; calibrated prediction, welfare quantification and individual recommendation remain blocked",
+      "uncertaintyBoundaryVerdict": "must separate normative capability language from empirical endpoint measurement, effect estimation and person-level utility claims",
+      "downgradeVerdict": "no downgrade required for value-language anchoring; downgrade required if used as evidence of causal effect, resource value or individual outcome improvement",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this source",
+      "reviewerNote": "Fresh review confirms the capability approach can anchor Human Infra option-space language, but it cannot validate domain effects or quantitative welfare claims.",
+      "affectedPromotionTaskCount": 2,
+      "affectedPromotionTaskIds": [
+        "PROM-060-HIDOM-FLD003-SA-CAPABILITY-APPROACH",
+        "PROM-068-HIDOM-FLD006-SA-CAPABILITY-APPROACH"
+      ],
+      "affectedDomainIds": [
+        "biostasis-cryopreservation",
+        "memory-editing"
+      ],
+      "affectedFieldCardIds": [
+        "HIDOM-FLD003",
+        "HIDOM-FLD006"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "domain-claim-upgrade",
+        "clinical-validity-claim"
+      ]
+    },
+    {
+      "sourceCardId": "SA-EXTENDED-MIND-1998",
+      "reviewedSourceTitle": "The Extended Mind",
+      "reviewedSourceAuthors": "Andy Clark; David J. Chalmers",
+      "reviewedSourceYear": "1998",
+      "sourceType": "philosophy-paper",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "freshReviewEvidence": [
+        {
+          "url": "https://academic.oup.com/analysis/article-pdf/58/1/7/359060/58-1-7.pdf",
+          "evidenceType": "publisher-pdf-page",
+          "finding": "Oxford Academic identifies the Analysis article, volume 58 issue 1, pages 7-19."
+        },
+        {
+          "url": "https://philpapers.org/rec/CLATEM",
+          "evidenceType": "philosophy-index-record",
+          "finding": "PhilPapers records the canonical extended-mind paper and DOI metadata."
+        }
+      ],
+      "registeredSourceRole": "extended-cognition-tool-dependence-continuity-anchor",
+      "registeredExactClaimUses": [
+        "Supports modeling stable external tools, records and memory systems as possible subject-support infrastructure when integration and reliability criteria hold."
+      ],
+      "registeredTransferBoundaries": [
+        "Transfer only as extended-cognition and tool-dependence vocabulary. It does not prove memory preservation, identity continuity or task-performance gain."
+      ],
+      "reviewerVerdict": "bounded-support",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "sourceIdentityVerdict": "verified-primary-philosophy-paper-source",
+      "sourceContextVerdict": "supports extended-cognition and external-tool-dependence vocabulary with conceptual boundary",
+      "exactClaimUseVerdict": "supports modeling reliable external tools, records and memory systems as possible subject-support infrastructure only when integration criteria are explicitly stated",
+      "domainTransferVerdict": "bounded-transfer-to-extended-cognition vocabulary; no proof of memory preservation, identity continuity, task-performance gain or digital survival",
+      "modelPositionVerdict": "conceptual-boundary-language-only; calibrated prediction, identity-survival proof and performance-effect claims remain blocked",
+      "uncertaintyBoundaryVerdict": "must carry integration, reliability, accessibility and coupling criteria; external storage alone is insufficient for subject-continuity claims",
+      "downgradeVerdict": "downgrade required if used as empirical evidence for memory preservation, identity continuity, cognitive enhancement or tool efficacy",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this source",
+      "reviewerNote": "Fresh review confirms this paper can supply external-tool-dependence language, but not empirical proof that external records preserve memory or personal identity.",
+      "affectedPromotionTaskCount": 4,
+      "affectedPromotionTaskIds": [
+        "PROM-058-HIDOM-FLD003-SA-EXTENDED-MIND-1998",
+        "PROM-061-HIDOM-FLD004-SA-EXTENDED-MIND-1998",
+        "PROM-067-HIDOM-FLD006-SA-EXTENDED-MIND-1998",
+        "PROM-072-HIDOM-FLD011-SA-EXTENDED-MIND-1998"
+      ],
+      "affectedDomainIds": [
+        "biostasis-cryopreservation",
+        "brain-preservation-connectomics-emulation",
+        "memory-editing",
+        "neuro-continuity"
+      ],
+      "affectedFieldCardIds": [
+        "HIDOM-FLD003",
+        "HIDOM-FLD004",
+        "HIDOM-FLD006",
+        "HIDOM-FLD011"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "domain-claim-upgrade",
+        "clinical-validity-claim"
+      ]
+    },
+    {
+      "sourceCardId": "SA-BRAIN-PRESERVATION-2024",
+      "reviewedSourceTitle": "Structural brain preservation: a potential bridge to future medical technologies",
+      "reviewedSourceAuthors": "Andrew T. McKenzie; Ariel Zeleznikow-Johnston; Jordan S. Sparks; Oge Nnadi; John Smart; Keith Wiley; Michael A. Cerullo; Aschwin de Wolf; Francesca Minerva; Ramón Risco; George M. Church; João Pedro de Magalhães; Emil F. Kendziorra",
+      "reviewedSourceYear": "2024",
+      "sourceType": "review-paper",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "freshReviewEvidence": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39315362/",
+          "evidenceType": "pubmed-record",
+          "finding": "PubMed identifies the 2024 Frontiers in Medical Technology review and summarizes structural brain preservation as a potential bridge to future restoration technologies."
+        },
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11416988/",
+          "evidenceType": "pmc-full-text",
+          "finding": "PMC provides full-text context for structural preservation, theoretical recovery technologies, and ethical/legal boundary issues."
+        }
+      ],
+      "registeredSourceRole": "brain-information-preservation-and-continuity-boundary-anchor",
+      "registeredExactClaimUses": [
+        "Supports separating neural structure preservation from revival, functional recovery, identity continuity and future repair claims."
+      ],
+      "registeredTransferBoundaries": [
+        "Transfer only as brain-information preservation boundary vocabulary. It does not support revival, emulation success, identity survival or preservation-service advice."
+      ],
+      "reviewerVerdict": "bounded-support",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "sourceIdentityVerdict": "verified-review-paper-with-pubmed-and-full-text-context",
+      "sourceContextVerdict": "supports structural brain preservation as a potential bridge concept with strong feasibility and identity boundary",
+      "exactClaimUseVerdict": "supports separating neural structure preservation from revival, functional recovery, identity continuity and future repair claims",
+      "domainTransferVerdict": "bounded-transfer-to-brain-information-preservation boundary vocabulary; no revival, emulation success, identity survival or preservation-service advice",
+      "modelPositionVerdict": "boundary-and-hypothesis-language-only; calibrated prediction, personal-continuity proof and engineering feasibility remain blocked",
+      "uncertaintyBoundaryVerdict": "must carry preservation fidelity, damage, recoverability, interpretation, future-technology, ethical and legal uncertainty separately",
+      "downgradeVerdict": "downgrade required if used as evidence that brain preservation enables revival, emulation, personal survival or actionable service choice",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this source",
+      "reviewerNote": "Fresh review confirms this review is suitable for boundary vocabulary around structural preservation, not as proof of revival, identity continuity or engineering adoption.",
+      "affectedPromotionTaskCount": 3,
+      "affectedPromotionTaskIds": [
+        "PROM-059-HIDOM-FLD003-SA-BRAIN-PRESERVATION-2024",
+        "PROM-062-HIDOM-FLD004-SA-BRAIN-PRESERVATION-2024",
+        "PROM-065-HIDOM-FLD005-SA-BRAIN-PRESERVATION-2024"
+      ],
+      "affectedDomainIds": [
+        "biostasis-cryopreservation",
+        "brain-preservation-connectomics-emulation",
+        "disembodied-cns"
+      ],
+      "affectedFieldCardIds": [
+        "HIDOM-FLD003",
+        "HIDOM-FLD004",
+        "HIDOM-FLD005"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "domain-claim-upgrade",
+        "clinical-validity-claim"
+      ]
+    },
+    {
+      "sourceCardId": "SA-DYNAMIC-DIGITAL-TWIN-2022",
+      "reviewedSourceTitle": "Dynamic Digital Twin: Diagnosis, Treatment, Prediction, and Prevention of Disease During the Life Course",
+      "reviewedSourceAuthors": "Skander Tahar Mulder et al.",
+      "reviewedSourceYear": "2022",
+      "sourceType": "digital-health-review",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "freshReviewEvidence": [
+        {
+          "url": "https://www.jmir.org/2022/9/e35675",
+          "evidenceType": "publisher-article-page",
+          "finding": "JMIR identifies the article as J Med Internet Res 2022;24(9):e35675."
+        },
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/36103220/",
+          "evidenceType": "pubmed-record",
+          "finding": "PubMed records the article metadata and life-course digital-twin framing."
+        },
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9520391/",
+          "evidenceType": "pmc-full-text",
+          "finding": "PMC supports digital-twin architecture, multimodal modeling, and validation challenge context."
+        }
+      ],
+      "registeredSourceRole": "subject-state-modeling-architecture-anchor",
+      "registeredExactClaimUses": [
+        "Supports digital twin language only when observation, integration, update, validation and use-case boundaries are specified."
+      ],
+      "registeredTransferBoundaries": [
+        "Transfer only as modeling-architecture vocabulary. It does not authorize prediction, prevention, treatment, personal advice or simulated-subject continuity claims."
+      ],
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "sourceIdentityVerdict": "verified-digital-health-review-source-with-publisher-pubmed-and-full-text-context",
+      "sourceContextVerdict": "supports digital-twin architecture language for life-course disease modeling with validation and use-case boundaries",
+      "exactClaimUseVerdict": "supports digital twin language only when observation, integration, update, validation and use-case boundaries are specified",
+      "domainTransferVerdict": "bounded-transfer-to-modeling-architecture vocabulary; no prediction, prevention, treatment, personal advice or simulated-subject continuity claims",
+      "modelPositionVerdict": "architecture-and-validation-challenge-language-only; calibrated prediction and simulated-subject continuity remain blocked",
+      "uncertaintyBoundaryVerdict": "must carry observation quality, integration assumptions, update frequency, validation status, use-case limits and clinical governance separately",
+      "downgradeVerdict": "no downgrade required for architecture vocabulary; downgrade required if used as validated predictor, treatment tool, prevention evidence or personal digital-twin claim",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this source",
+      "reviewerNote": "Fresh review confirms the source can anchor digital-twin architecture vocabulary, but not Human Infra prediction validity or simulated subject-continuity claims.",
+      "affectedPromotionTaskCount": 3,
+      "affectedPromotionTaskIds": [
+        "PROM-063-HIDOM-FLD004-SA-DYNAMIC-DIGITAL-TWIN-2022",
+        "PROM-066-HIDOM-FLD005-SA-DYNAMIC-DIGITAL-TWIN-2022",
+        "PROM-073-HIDOM-FLD011-SA-DYNAMIC-DIGITAL-TWIN-2022"
+      ],
+      "affectedDomainIds": [
+        "brain-preservation-connectomics-emulation",
+        "disembodied-cns",
+        "neuro-continuity"
+      ],
+      "affectedFieldCardIds": [
+        "HIDOM-FLD004",
+        "HIDOM-FLD005",
+        "HIDOM-FLD011"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "domain-claim-upgrade",
+        "clinical-validity-claim"
+      ]
+    },
+    {
+      "sourceCardId": "SA-NIST-AI-RMF-2023",
+      "reviewedSourceTitle": "Artificial Intelligence Risk Management Framework (AI RMF 1.0)",
+      "reviewedSourceAuthors": "National Institute of Standards and Technology",
+      "reviewedSourceYear": "2023",
+      "sourceType": "risk-management-framework",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "freshReviewEvidence": [
+        {
+          "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+          "evidenceType": "official-framework-page",
+          "finding": "NIST identifies AI RMF as a framework for managing AI risks and trustworthy AI characteristics."
+        },
+        {
+          "url": "https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-ai-rmf-10",
+          "evidenceType": "official-publication-record",
+          "finding": "NIST publication record identifies AI RMF 1.0 as the official framework document."
+        },
+        {
+          "url": "https://nvlpubs.nist.gov/nistpubs/ai/nist.ai.100-1.pdf",
+          "evidenceType": "official-pdf",
+          "finding": "The official PDF provides the framework context for governance, measurement, management and monitoring of AI risks."
+        }
+      ],
+      "registeredSourceRole": "ai-risk-governance-and-trustworthiness-anchor",
+      "registeredExactClaimUses": [
+        "Supports treating AI assistance as governed infrastructure that requires measurement, monitoring, accountability and risk management before it can support subject continuity."
+      ],
+      "registeredTransferBoundaries": [
+        "Transfer only as AI risk-management vocabulary. It does not authorize autonomous action, clinical decision-making, personal advice or capability claims."
+      ],
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "sourceIdentityVerdict": "verified-official-nist-risk-management-framework-source",
+      "sourceContextVerdict": "supports AI risk-management vocabulary for governance, measurement, monitoring and accountability boundaries",
+      "exactClaimUseVerdict": "supports treating AI assistance as governed infrastructure that requires measurement, monitoring, accountability and risk management before it can support subject continuity",
+      "domainTransferVerdict": "bounded-transfer-to-AI-risk-management vocabulary; no autonomous action, clinical decision-making, personal advice or capability claims",
+      "modelPositionVerdict": "governance-boundary-language-only; AI enhancement value, safety and efficacy remain blocked without tool-specific cards",
+      "uncertaintyBoundaryVerdict": "must carry task, user, context, failure mode, monitoring, accountability and human oversight conditions before downstream model use",
+      "downgradeVerdict": "no downgrade required for governance vocabulary; downgrade required if used as evidence that an AI tool is safe, effective, aligned or clinically valid",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this source",
+      "reviewerNote": "Fresh review confirms AI RMF is usable as governance vocabulary for AI-assisted Human Infra, not as evidence that any AI intervention improves continuity.",
+      "affectedPromotionTaskCount": 1,
+      "affectedPromotionTaskIds": [
+        "PROM-069-HIDOM-FLD006-SA-NIST-AI-RMF-2023"
+      ],
+      "affectedDomainIds": [
+        "memory-editing"
+      ],
+      "affectedFieldCardIds": [
+        "HIDOM-FLD006"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "domain-claim-upgrade",
+        "clinical-validity-claim"
+      ]
+    },
+    {
+      "sourceCardId": "SA-GPS-RELATIVITY-2003",
+      "reviewedSourceTitle": "Relativity in the Global Positioning System",
+      "reviewedSourceAuthors": "Neil Ashby",
+      "reviewedSourceYear": "2003",
+      "sourceType": "physics-review",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "freshReviewEvidence": [
+        {
+          "url": "https://link.springer.com/article/10.12942/lrr-2003-1",
+          "evidenceType": "journal-article-record",
+          "finding": "Living Reviews in Relativity identifies Ashby 2003 as a review of relativistic effects that must be accounted for in GPS clock operation."
+        },
+        {
+          "url": "https://inspirehep.net/literature/1252883",
+          "evidenceType": "bibliographic-record",
+          "finding": "INSPIRE indexes the same review and supports use as a source for clock-rate and reference-frame accounting language."
+        }
+      ],
+      "registeredSourceRole": "proper-time-reference-frame-accounting-anchor",
+      "registeredExactClaimUses": [
+        "Supports distinguishing proper time, external reference time, clock-rate accounting and reference-frame dependence for future-waiting hypotheses."
+      ],
+      "registeredTransferBoundaries": [
+        "Transfer only as proper-time and reference-frame vocabulary. It does not prove black-hole waiting feasibility, safety, communication, exit or life-support viability."
+      ],
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "sourceIdentityVerdict": "verified-physics-review-source-for-operational-relativity-in-GPS",
+      "sourceContextVerdict": "supports proper-time, coordinate-time, reference-frame and clock-rate accounting vocabulary with weak-field engineering boundary",
+      "exactClaimUseVerdict": "supports distinguishing proper time, external reference time, clock-rate accounting and reference-frame dependence for future-waiting hypotheses",
+      "domainTransferVerdict": "bounded-transfer-to-proper-time and reference-frame vocabulary; no black-hole waiting feasibility, safety, communication, exit or life-support viability",
+      "modelPositionVerdict": "physics-accounting-language-only; engineered waiting-room feasibility and subject-survival modeling remain blocked",
+      "uncertaintyBoundaryVerdict": "must bind any K or time-differential statement to a metric, worldline, observer, clock comparison, risk and exit card",
+      "downgradeVerdict": "no downgrade required for time-accounting vocabulary; downgrade required if used as strong-redshift waiting-room feasibility or safety evidence",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this source",
+      "reviewerNote": "Fresh review confirms this source supports rigorous clock/reference-frame language, not artificial black holes or future-waiting engineering feasibility.",
+      "affectedPromotionTaskCount": 1,
+      "affectedPromotionTaskIds": [
+        "PROM-056-HIDOM-FLD001-SA-GPS-RELATIVITY-2003"
+      ],
+      "affectedDomainIds": [
+        "future-waiting"
+      ],
+      "affectedFieldCardIds": [
+        "HIDOM-FLD001"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "domain-claim-upgrade",
+        "clinical-validity-claim"
+      ]
+    },
+    {
+      "sourceCardId": "SA-NASA-BLACK-HOLES",
+      "reviewedSourceTitle": "Black Holes - NASA Science",
+      "reviewedSourceAuthors": "NASA Science",
+      "reviewedSourceYear": "official-reference",
+      "sourceType": "official-explainer",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "freshReviewEvidence": [
+        {
+          "url": "https://science.nasa.gov/universe/black-holes/",
+          "evidenceType": "official-explainer",
+          "finding": "NASA Science provides public boundary language for black holes, event horizons and environmental hazards."
+        },
+        {
+          "url": "https://science.nasa.gov/universe/what-happens-when-something-gets-too-close-to-a-black-hole/",
+          "evidenceType": "official-explainer",
+          "finding": "NASA Science explains near-black-hole behavior in public-facing terms and supports hazard-aware framing rather than feasibility claims."
+        }
+      ],
+      "registeredSourceRole": "black-hole-public-boundary-and-hazard-explainer-anchor",
+      "registeredExactClaimUses": [
+        "Supports public-facing boundary language for black holes, time dilation, event horizons and environmental hazards while keeping waiting-room claims metaphorical unless formal scenario cards exist."
+      ],
+      "registeredTransferBoundaries": [
+        "Transfer only as public boundary and hazard vocabulary. It does not support artificial black holes, engineered waiting rooms, survival strategy or feasible time-bridge claims."
+      ],
+      "reviewerVerdict": "bounded-support",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "sourceIdentityVerdict": "verified-official-public-explainer-source",
+      "sourceContextVerdict": "supports public-facing black-hole, event-horizon, time-dilation and hazard boundary language",
+      "exactClaimUseVerdict": "supports public-facing boundary language for black holes, time dilation, event horizons and environmental hazards while keeping waiting-room claims metaphorical unless formal scenario cards exist",
+      "domainTransferVerdict": "bounded-transfer-to-public boundary and hazard vocabulary; no artificial black holes, engineered waiting rooms, survival strategy or feasible time-bridge claims",
+      "modelPositionVerdict": "communication-boundary-language-only; engineering feasibility, controlled redshift infrastructure and subject-survival claims remain blocked",
+      "uncertaintyBoundaryVerdict": "must treat black-hole waiting-room language as metaphorical unless metric, orbit/worldline, life-support, communication, exit and tail-risk cards exist",
+      "downgradeVerdict": "downgrade required if used as engineering, feasibility, survivability, artificial-black-hole or controlled-waiting evidence",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this source",
+      "reviewerNote": "Fresh review confirms NASA material is suitable for public hazard framing, not as proof of a controllable black-hole waiting path.",
+      "affectedPromotionTaskCount": 1,
+      "affectedPromotionTaskIds": [
+        "PROM-057-HIDOM-FLD001-SA-NASA-BLACK-HOLES"
+      ],
+      "affectedDomainIds": [
+        "future-waiting"
+      ],
+      "affectedFieldCardIds": [
+        "HIDOM-FLD001"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-recommendation",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "domain-claim-upgrade",
+        "clinical-validity-claim"
+      ]
     }
   ],
   "packetCoverage": [
@@ -1372,6 +1891,132 @@
       "modelAdmissionDecision": "blocked-pending-card-promotion-and-model-gates"
     },
     {
+      "promotionTaskId": "PROM-056-HIDOM-FLD001-SA-GPS-RELATIVITY-2003",
+      "domainId": "future-waiting",
+      "fieldCardId": "HIDOM-FLD001",
+      "sourceCardId": "SA-GPS-RELATIVITY-2003",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-and-model-gates"
+    },
+    {
+      "promotionTaskId": "PROM-057-HIDOM-FLD001-SA-NASA-BLACK-HOLES",
+      "domainId": "future-waiting",
+      "fieldCardId": "HIDOM-FLD001",
+      "sourceCardId": "SA-NASA-BLACK-HOLES",
+      "reviewerVerdict": "bounded-support",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-and-model-gates"
+    },
+    {
+      "promotionTaskId": "PROM-058-HIDOM-FLD003-SA-EXTENDED-MIND-1998",
+      "domainId": "biostasis-cryopreservation",
+      "fieldCardId": "HIDOM-FLD003",
+      "sourceCardId": "SA-EXTENDED-MIND-1998",
+      "reviewerVerdict": "bounded-support",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-and-model-gates"
+    },
+    {
+      "promotionTaskId": "PROM-059-HIDOM-FLD003-SA-BRAIN-PRESERVATION-2024",
+      "domainId": "biostasis-cryopreservation",
+      "fieldCardId": "HIDOM-FLD003",
+      "sourceCardId": "SA-BRAIN-PRESERVATION-2024",
+      "reviewerVerdict": "bounded-support",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-and-model-gates"
+    },
+    {
+      "promotionTaskId": "PROM-060-HIDOM-FLD003-SA-CAPABILITY-APPROACH",
+      "domainId": "biostasis-cryopreservation",
+      "fieldCardId": "HIDOM-FLD003",
+      "sourceCardId": "SA-CAPABILITY-APPROACH",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-and-model-gates"
+    },
+    {
+      "promotionTaskId": "PROM-061-HIDOM-FLD004-SA-EXTENDED-MIND-1998",
+      "domainId": "brain-preservation-connectomics-emulation",
+      "fieldCardId": "HIDOM-FLD004",
+      "sourceCardId": "SA-EXTENDED-MIND-1998",
+      "reviewerVerdict": "bounded-support",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-and-model-gates"
+    },
+    {
+      "promotionTaskId": "PROM-062-HIDOM-FLD004-SA-BRAIN-PRESERVATION-2024",
+      "domainId": "brain-preservation-connectomics-emulation",
+      "fieldCardId": "HIDOM-FLD004",
+      "sourceCardId": "SA-BRAIN-PRESERVATION-2024",
+      "reviewerVerdict": "bounded-support",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-and-model-gates"
+    },
+    {
+      "promotionTaskId": "PROM-063-HIDOM-FLD004-SA-DYNAMIC-DIGITAL-TWIN-2022",
+      "domainId": "brain-preservation-connectomics-emulation",
+      "fieldCardId": "HIDOM-FLD004",
+      "sourceCardId": "SA-DYNAMIC-DIGITAL-TWIN-2022",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-and-model-gates"
+    },
+    {
+      "promotionTaskId": "PROM-064-HIDOM-FLD005-SA-WHO-CONSTITUTION",
+      "domainId": "disembodied-cns",
+      "fieldCardId": "HIDOM-FLD005",
+      "sourceCardId": "SA-WHO-CONSTITUTION",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-and-model-gates"
+    },
+    {
+      "promotionTaskId": "PROM-065-HIDOM-FLD005-SA-BRAIN-PRESERVATION-2024",
+      "domainId": "disembodied-cns",
+      "fieldCardId": "HIDOM-FLD005",
+      "sourceCardId": "SA-BRAIN-PRESERVATION-2024",
+      "reviewerVerdict": "bounded-support",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-and-model-gates"
+    },
+    {
+      "promotionTaskId": "PROM-066-HIDOM-FLD005-SA-DYNAMIC-DIGITAL-TWIN-2022",
+      "domainId": "disembodied-cns",
+      "fieldCardId": "HIDOM-FLD005",
+      "sourceCardId": "SA-DYNAMIC-DIGITAL-TWIN-2022",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-and-model-gates"
+    },
+    {
+      "promotionTaskId": "PROM-067-HIDOM-FLD006-SA-EXTENDED-MIND-1998",
+      "domainId": "memory-editing",
+      "fieldCardId": "HIDOM-FLD006",
+      "sourceCardId": "SA-EXTENDED-MIND-1998",
+      "reviewerVerdict": "bounded-support",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-and-model-gates"
+    },
+    {
+      "promotionTaskId": "PROM-068-HIDOM-FLD006-SA-CAPABILITY-APPROACH",
+      "domainId": "memory-editing",
+      "fieldCardId": "HIDOM-FLD006",
+      "sourceCardId": "SA-CAPABILITY-APPROACH",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-and-model-gates"
+    },
+    {
+      "promotionTaskId": "PROM-069-HIDOM-FLD006-SA-NIST-AI-RMF-2023",
+      "domainId": "memory-editing",
+      "fieldCardId": "HIDOM-FLD006",
+      "sourceCardId": "SA-NIST-AI-RMF-2023",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-and-model-gates"
+    },
+    {
       "promotionTaskId": "PROM-070-HIDOM-FLD009-SA-NCI-SCREENING-BIAS",
       "domainId": "cancer-screening-early-detection-continuity",
       "fieldCardId": "HIDOM-FLD009",
@@ -1379,12 +2024,108 @@
       "reviewerVerdict": "bounded-support",
       "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
       "modelAdmissionDecision": "blocked-pending-card-promotion-and-model-gates"
+    },
+    {
+      "promotionTaskId": "PROM-071-HIDOM-FLD011-SA-WHO-CONSTITUTION",
+      "domainId": "neuro-continuity",
+      "fieldCardId": "HIDOM-FLD011",
+      "sourceCardId": "SA-WHO-CONSTITUTION",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-and-model-gates"
+    },
+    {
+      "promotionTaskId": "PROM-072-HIDOM-FLD011-SA-EXTENDED-MIND-1998",
+      "domainId": "neuro-continuity",
+      "fieldCardId": "HIDOM-FLD011",
+      "sourceCardId": "SA-EXTENDED-MIND-1998",
+      "reviewerVerdict": "bounded-support",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-and-model-gates"
+    },
+    {
+      "promotionTaskId": "PROM-073-HIDOM-FLD011-SA-DYNAMIC-DIGITAL-TWIN-2022",
+      "domainId": "neuro-continuity",
+      "fieldCardId": "HIDOM-FLD011",
+      "sourceCardId": "SA-DYNAMIC-DIGITAL-TWIN-2022",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-and-model-gates"
+    },
+    {
+      "promotionTaskId": "PROM-074-HIDOM-FLD012-SA-WHO-CONSTITUTION",
+      "domainId": "mitochondrial-bioenergetics",
+      "fieldCardId": "HIDOM-FLD012",
+      "sourceCardId": "SA-WHO-CONSTITUTION",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-and-model-gates"
+    },
+    {
+      "promotionTaskId": "PROM-075-HIDOM-FLD017-SA-WHO-CONSTITUTION",
+      "domainId": "extracellular-matrix-glycation",
+      "fieldCardId": "HIDOM-FLD017",
+      "sourceCardId": "SA-WHO-CONSTITUTION",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-and-model-gates"
+    },
+    {
+      "promotionTaskId": "PROM-076-HIDOM-FLD019-SA-WHO-CONSTITUTION",
+      "domainId": "microbiome-ecology",
+      "fieldCardId": "HIDOM-FLD019",
+      "sourceCardId": "SA-WHO-CONSTITUTION",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-and-model-gates"
+    },
+    {
+      "promotionTaskId": "PROM-077-HIDOM-FLD021-SA-WHO-CONSTITUTION",
+      "domainId": "musculoskeletal-integrity",
+      "fieldCardId": "HIDOM-FLD021",
+      "sourceCardId": "SA-WHO-CONSTITUTION",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-and-model-gates"
+    },
+    {
+      "promotionTaskId": "PROM-078-HIDOM-FLD022-SA-WHO-CONSTITUTION",
+      "domainId": "nutrition-metabolic-health",
+      "fieldCardId": "HIDOM-FLD022",
+      "sourceCardId": "SA-WHO-CONSTITUTION",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-and-model-gates"
+    },
+    {
+      "promotionTaskId": "PROM-079-HIDOM-FLD024-SA-WHO-CONSTITUTION",
+      "domainId": "respiratory-oxygenation",
+      "fieldCardId": "HIDOM-FLD024",
+      "sourceCardId": "SA-WHO-CONSTITUTION",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-and-model-gates"
+    },
+    {
+      "promotionTaskId": "PROM-080-HIDOM-FLD025-SA-WHO-CONSTITUTION",
+      "domainId": "blood-oxygen-hemostasis",
+      "fieldCardId": "HIDOM-FLD025",
+      "sourceCardId": "SA-WHO-CONSTITUTION",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-and-model-gates"
+    },
+    {
+      "promotionTaskId": "PROM-081-HIDOM-FLD026-SA-WHO-CONSTITUTION",
+      "domainId": "endocrine-hormonal-regulation",
+      "fieldCardId": "HIDOM-FLD026",
+      "sourceCardId": "SA-WHO-CONSTITUTION",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-and-model-gates"
     }
   ],
-  "remainingFreshReviewBatches": [
-    "FRB-03-subject-continuity-capability-cognition",
-    "FRB-04-digital-twin-ai-governance-future-waiting"
-  ],
+  "remainingFreshReviewBatches": [],
   "indexRequirements": [
     "docs/reference/README.md",
     "docs/reference/human-infra-maturity-roadmap.md",
@@ -1415,6 +2156,30 @@
         "SA-PARTIAL-REPROGRAMMING-2016": 2,
         "SA-GRIMAGE-2019": 1,
         "SA-IMMUNOSENESCENCE-2024": 1
+      },
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-and-model-gates"
+    },
+    {
+      "batchId": "FRB-03-subject-continuity-capability-cognition",
+      "packetCount": 19,
+      "sourceAnchorCounts": {
+        "SA-WHO-CONSTITUTION": 10,
+        "SA-CAPABILITY-APPROACH": 2,
+        "SA-EXTENDED-MIND-1998": 4,
+        "SA-BRAIN-PRESERVATION-2024": 3
+      },
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-card-promotion-and-model-gates"
+    },
+    {
+      "batchId": "FRB-04-digital-twin-ai-governance-future-waiting",
+      "packetCount": 6,
+      "sourceAnchorCounts": {
+        "SA-DYNAMIC-DIGITAL-TWIN-2022": 3,
+        "SA-NIST-AI-RMF-2023": 1,
+        "SA-GPS-RELATIVITY-2003": 1,
+        "SA-NASA-BLACK-HOLES": 1
       },
       "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
       "modelAdmissionDecision": "blocked-pending-card-promotion-and-model-gates"

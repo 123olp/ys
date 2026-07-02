@@ -18,7 +18,8 @@ LOCAL_REVIEW_PATH = ROOT / "docs/reference/human-infra-source-context-local-revi
 EXTRACTION_PATH = ROOT / "docs/reference/human-infra-domain-source-specific-extraction-register.json"
 
 SCHEMA = "human-infra.independent-fresh-review-verdict-register.v1"
-STATUS = "active-fresh-review-verdict-register-partial"
+PARTIAL_STATUS = "active-fresh-review-verdict-register-partial"
+COMPLETE_STATUS = "active-fresh-review-verdict-register-complete"
 VERDICT_LINK = "human-infra-independent-fresh-review-verdict-register.json"
 
 SOURCE_OF_TRUTH_KEYS = {
@@ -240,10 +241,16 @@ def validate_scope(
     for phrase in [
         "not a completed Source Card set",
         "does not authorize calibrated prediction",
-        "remaining prepared packs still require fresh review",
     ]:
         if phrase not in joined:
             fail(errors, f"scope.nonClaims must mention {phrase!r}")
+    completion_phrase = (
+        "all prepared packs have received fresh review"
+        if remaining == 0
+        else "remaining prepared packs still require fresh review"
+    )
+    if completion_phrase not in joined:
+        fail(errors, f"scope.nonClaims must mention {completion_phrase!r}")
 
 
 def validate_contract(register: dict[str, Any], prep: dict[str, Any], errors: list[str]) -> None:
@@ -466,8 +473,9 @@ def validate_register(
 ) -> tuple[int, int]:
     if register.get("schemaVersion") != SCHEMA:
         fail(errors, f"schemaVersion must be {SCHEMA}")
-    if register.get("status") != STATUS:
-        fail(errors, f"status must be {STATUS}")
+    status = register.get("status")
+    if status not in {PARTIAL_STATUS, COMPLETE_STATUS}:
+        fail(errors, f"status must be {PARTIAL_STATUS} or {COMPLETE_STATUS}")
     require_string(register.get("registerId"), "registerId", errors)
     require_string(register.get("purpose"), "purpose", errors)
     validate_source_of_truth(register, errors)
@@ -482,6 +490,12 @@ def validate_register(
     source_counts = aggregate_source_counts(batches, errors)
     expected_packets = build_expected_packets(prep, set(source_counts), errors)
     validate_scope(register, prep, batches, source_counts, len(expected_packets), errors)
+    prep_scope = prep.get("scope", {}) if isinstance(prep.get("scope"), dict) else {}
+    total_packets = prep_scope.get("artifactPackCount")
+    if isinstance(total_packets, int):
+        expected_status = COMPLETE_STATUS if len(expected_packets) == total_packets else PARTIAL_STATUS
+        if status != expected_status:
+            fail(errors, f"status must be {expected_status} for reviewed packet count {len(expected_packets)}/{total_packets}")
     covered_task_ids, source_packet_counts = validate_source_reviews(register, source_counts, local_review, extraction, prep, errors)
     packet_count = validate_packet_coverage(register, expected_packets, covered_task_ids, source_packet_counts, source_counts, errors)
     validate_index_requirements(register, errors)
