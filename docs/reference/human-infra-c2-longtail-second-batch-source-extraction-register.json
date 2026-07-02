@@ -1,0 +1,1101 @@
+{
+  "schemaVersion": "human-infra.c2-longtail-second-batch-source-extraction-register.v1",
+  "registerId": "human-infra-c2-longtail-second-batch-source-extraction-register",
+  "status": "active-c2ltb2-source-extractions-pending-fresh-review",
+  "purpose": "Record completed local source-context extractions from the C2 long-tail second-batch source extraction queue. This register converts 24 candidate sources into exact claim, endpoint, population, mechanism, uncertainty, transfer-boundary, downgrade and model-position fields while keeping calibrated modeling blocked.",
+  "sourceOfTruth": {
+    "sourceExtractionQueue": "docs/reference/human-infra-c2-longtail-second-batch-source-extraction-queue.json",
+    "sourceCardSystem": "docs/reference/source-card-system.md",
+    "maturityGapRegister": "docs/reference/human-infra-maturity-gap-register.json",
+    "maturityRoadmap": "docs/reference/human-infra-maturity-roadmap.md"
+  },
+  "scope": {
+    "batchId": "C2-LT-B2",
+    "queueTaskCount": 24,
+    "extractedTaskCount": 24,
+    "remainingTaskCount": 0,
+    "coveredDomainCount": 12,
+    "extractionDepth": "complete-24-source-context-extractions-for-second-12-high-impact-c2-longtail-domains",
+    "selectedTaskIds": [
+      "C2LTB2-EXT-001",
+      "C2LTB2-EXT-002",
+      "C2LTB2-EXT-003",
+      "C2LTB2-EXT-004",
+      "C2LTB2-EXT-005",
+      "C2LTB2-EXT-006",
+      "C2LTB2-EXT-007",
+      "C2LTB2-EXT-008",
+      "C2LTB2-EXT-009",
+      "C2LTB2-EXT-010",
+      "C2LTB2-EXT-011",
+      "C2LTB2-EXT-012",
+      "C2LTB2-EXT-013",
+      "C2LTB2-EXT-014",
+      "C2LTB2-EXT-015",
+      "C2LTB2-EXT-016",
+      "C2LTB2-EXT-017",
+      "C2LTB2-EXT-018",
+      "C2LTB2-EXT-019",
+      "C2LTB2-EXT-020",
+      "C2LTB2-EXT-021",
+      "C2LTB2-EXT-022",
+      "C2LTB2-EXT-023",
+      "C2LTB2-EXT-024"
+    ],
+    "currentLimitations": [
+      "This is a source-context extraction register, not a complete second-batch Source Card set.",
+      "Rows are local source-context extractions and still require independent fresh review before card promotion.",
+      "No row admits calibrated prediction, intervention ranking, clinical advice or individual prognosis."
+    ]
+  },
+  "sourceAccessNotes": [
+    "Publisher, society and government pages may block automated HTTP retrieval; URL accessibility is recorded as source-context metadata and does not itself upgrade or downgrade a scientific claim.",
+    "Guideline sources are used as route, endpoint and variable-definition anchors unless later fresh review extracts exact recommendation text, evidence grade, population and comparator.",
+    "Directory, program, fact-sheet and publication-route sources are used as lineage, burden, implementation or endpoint-context anchors, not causal-effect anchors."
+  ],
+  "extractedRows": [
+    {
+      "taskId": "C2LTB2-EXT-001",
+      "domainId": "acute-gastrointestinal-bleeding-endoscopy-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/acute-gastrointestinal-bleeding-endoscopy-continuity",
+      "sourceRefId": "C2LTB2-SRC-01-1",
+      "sourceTitle": "ACG Clinical Guideline: Upper Gastrointestinal and Ulcer Bleeding",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/33929377/",
+      "extractionStatus": "completed-c2ltb2-source-context-extraction",
+      "sourceAccessStatus": "pubmed-guideline-record-identified",
+      "sourceRole": "upper-gastrointestinal-bleeding-clinical-route-and-endpoint-anchor",
+      "exactClaimUse": "Supports using acute upper gastrointestinal and ulcer bleeding as a time-sensitive hemorrhage continuity domain where risk stratification, resuscitation, transfusion need, endoscopic timing, hemostasis and rebleeding prevention define source-specific route variables.",
+      "endpointDefinition": "Candidate endpoints include hemodynamic instability, transfusion requirement, time-to-endoscopy, endoscopic hemostasis need, rebleeding, hospital mortality and post-discharge recurrence risk.",
+      "populationOrSetting": "Adults with overt upper gastrointestinal bleeding or ulcer bleeding in emergency, inpatient gastroenterology and post-discharge care settings. This register does not determine patient-specific management.",
+      "effectOrMechanismSignal": "Mechanism-level route signal: blood loss and recurrent bleeding change circulating volume, oxygen delivery and mortality risk; resuscitation and definitive hemostasis may alter the acute hazard channel and recovery window.",
+      "uncertaintyOrBias": "Guideline synthesis depends on bleeding source, severity, comorbidities, anticoagulant exposure, transfusion thresholds, endoscopy access and evidence grade; local endoscopy capacity can change transferability.",
+      "transferBoundary": "Transfer only to route, endpoint and variable vocabulary. Do not use this source to rank interventions or infer an individual bleeding prognosis.",
+      "downgradeTriggers": [
+        "If later review cannot extract exact source text, endpoint, population boundary and source role, keep this row as source-context support only.",
+        "If the row is used for individual advice, intervention ranking, clinical-validity claims or individual prognosis, downgrade to prohibited use.",
+        "If the source is used beyond its guideline, statement, burden, route or publication-lineage role, require transfer-boundary review before promotion."
+      ],
+      "modelPosition": {
+        "primaryLocation": "hazard-transition-and-route-anchor",
+        "variables": [
+          "hemodynamic-instability",
+          "time-to-endoscopy",
+          "transfusion-need",
+          "rebleeding-risk",
+          "mortality-risk"
+        ],
+        "admissibleUse": "candidate endpoint, variable and route definition only"
+      },
+      "modelAdmissionDecision": "source-context-support-only-blocked-for-calibrated-modeling",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Create a UGIB Source Card separating risk stratification, resuscitation, endoscopy timing, hemostasis and rebleeding-prevention variables."
+    },
+    {
+      "taskId": "C2LTB2-EXT-002",
+      "domainId": "acute-gastrointestinal-bleeding-endoscopy-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/acute-gastrointestinal-bleeding-endoscopy-continuity",
+      "sourceRefId": "C2LTB2-SRC-01-2",
+      "sourceTitle": "ACG Clinical Guidelines directory",
+      "sourceUrl": "https://gi.org/guidelines/",
+      "extractionStatus": "completed-c2ltb2-source-context-extraction",
+      "sourceAccessStatus": "official-guideline-directory-identified",
+      "sourceRole": "gastroenterology-guideline-route-directory-anchor",
+      "exactClaimUse": "Supports the guideline-discovery route for gastrointestinal bleeding and related digestive-disease guidance, but functions primarily as a source navigation and version-control anchor rather than a claim-specific evidence source.",
+      "endpointDefinition": "Admissible endpoints are guideline identity, topic scope, publication route and update discovery; it does not itself define an effect estimate.",
+      "populationOrSetting": "Professional gastroenterology guideline directory context, mainly for locating current ACG guidance and related source lineage.",
+      "effectOrMechanismSignal": "Route signal only: reliable guideline retrieval and version tracking reduce source drift when constructing later Source Cards for GI bleeding pathways.",
+      "uncertaintyOrBias": "Directory pages can change layout, topic grouping and link targets; they may not contain exact recommendations, endpoint definitions or evidence grades.",
+      "transferBoundary": "Transfer only as source-discovery and lineage support. If no exact recommendation is extracted from the underlying guideline, keep the row as route-context only.",
+      "downgradeTriggers": [
+        "If later review cannot extract exact source text, endpoint, population boundary and source role, keep this row as source-context support only.",
+        "If the row is used for individual advice, intervention ranking, clinical-validity claims or individual prognosis, downgrade to prohibited use.",
+        "If the source is used beyond its guideline, statement, burden, route or publication-lineage role, require transfer-boundary review before promotion."
+      ],
+      "modelPosition": {
+        "primaryLocation": "hazard-transition-and-route-anchor",
+        "variables": [
+          "guideline-lineage",
+          "source-version",
+          "topic-route",
+          "endpoint-context"
+        ],
+        "admissibleUse": "candidate endpoint, variable and route definition only"
+      },
+      "modelAdmissionDecision": "source-context-support-only-blocked-for-calibrated-modeling",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Use the directory only to preserve source lineage, then extract exact claims from the linked guideline record or full guideline source."
+    },
+    {
+      "taskId": "C2LTB2-EXT-003",
+      "domainId": "acute-heart-failure-decompensation-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/acute-heart-failure-decompensation-continuity",
+      "sourceRefId": "C2LTB2-SRC-02-1",
+      "sourceTitle": "2022 AHA/ACC/HFSA Guideline for the Management of Heart Failure",
+      "sourceUrl": "https://professional.heart.org/en/guidelines-statements/2022-ahaacchfsa-guideline-for-the-management-of-heart-failure-a-report-of-thecir0000000000001063",
+      "extractionStatus": "completed-c2ltb2-source-context-extraction",
+      "sourceAccessStatus": "official-professional-guideline-page-identified",
+      "sourceRole": "heart-failure-guideline-route-endpoint-and-transition-anchor",
+      "exactClaimUse": "Supports treating acute heart failure decompensation as a congestion, oxygenation, renal-function, hospitalization and transition-of-care continuity failure where diagnosis, inpatient stabilization and post-discharge optimization define model variables.",
+      "endpointDefinition": "Candidate endpoints include congestion severity, oxygen requirement, renal function change, length of stay, readmission, mortality and transition to guideline-directed long-term therapy.",
+      "populationOrSetting": "People with heart failure across acute hospital, emergency, inpatient cardiology and follow-up settings, with chronic heart-failure subtype boundaries requiring later card separation.",
+      "effectOrMechanismSignal": "Mechanism-level route signal: volume overload, impaired cardiac output and neurohormonal activation can shift short-term hazard and functional reserve; discharge transition affects recurrent decompensation risk.",
+      "uncertaintyOrBias": "Guideline scope spans chronic and acute care; evidence strength differs across HF subtype, renal function, blood pressure, access and comorbidity. Avoid mixing inpatient stabilization with chronic therapy effects.",
+      "transferBoundary": "Transfer only to heart-failure route vocabulary and candidate variables. No calibrated readmission or mortality parameter is admitted from this row.",
+      "downgradeTriggers": [
+        "If later review cannot extract exact source text, endpoint, population boundary and source role, keep this row as source-context support only.",
+        "If the row is used for individual advice, intervention ranking, clinical-validity claims or individual prognosis, downgrade to prohibited use.",
+        "If the source is used beyond its guideline, statement, burden, route or publication-lineage role, require transfer-boundary review before promotion."
+      ],
+      "modelPosition": {
+        "primaryLocation": "hazard-transition-and-route-anchor",
+        "variables": [
+          "congestion-severity",
+          "oxygenation-status",
+          "renal-function-change",
+          "readmission-risk",
+          "guideline-directed-therapy-transition"
+        ],
+        "admissibleUse": "candidate endpoint, variable and route definition only"
+      },
+      "modelAdmissionDecision": "source-context-support-only-blocked-for-calibrated-modeling",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Create separate heart-failure cards for acute stabilization, renal/electrolyte monitoring, discharge transition and chronic therapy optimization."
+    },
+    {
+      "taskId": "C2LTB2-EXT-004",
+      "domainId": "acute-heart-failure-decompensation-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/acute-heart-failure-decompensation-continuity",
+      "sourceRefId": "C2LTB2-SRC-02-2",
+      "sourceTitle": "NICE Acute heart failure: diagnosis and management CG187",
+      "sourceUrl": "https://www.nice.org.uk/guidance/cg187",
+      "extractionStatus": "completed-c2ltb2-source-context-extraction",
+      "sourceAccessStatus": "official-nice-guideline-identified",
+      "sourceRole": "acute-heart-failure-diagnosis-management-guideline-anchor",
+      "exactClaimUse": "Supports acute heart failure as a hospital-facing diagnostic and management pathway where specialist assessment, natriuretic peptide or imaging routes, oxygenation, pharmacologic decongestion and discharge planning become extraction variables.",
+      "endpointDefinition": "Candidate endpoints include diagnostic confirmation, oxygenation status, diuretic response, escalation need, discharge readiness, readmission and early follow-up continuity.",
+      "populationOrSetting": "Adults with suspected or diagnosed acute heart failure in emergency or hospital settings under NICE clinical guideline scope.",
+      "effectOrMechanismSignal": "Mechanism-level route signal: rapid diagnostic sorting and decongestion may change respiratory distress, renal perfusion, admission trajectory and downstream functional recovery.",
+      "uncertaintyOrBias": "Applicability is bound to NICE guideline context, UK care pathways, update date, service access and recommendation strength; local systems may differ.",
+      "transferBoundary": "Transfer only as diagnosis/management pathway and endpoint language. Do not infer personal medication choices, prognosis or calibrated effect size.",
+      "downgradeTriggers": [
+        "If later review cannot extract exact source text, endpoint, population boundary and source role, keep this row as source-context support only.",
+        "If the row is used for individual advice, intervention ranking, clinical-validity claims or individual prognosis, downgrade to prohibited use.",
+        "If the source is used beyond its guideline, statement, burden, route or publication-lineage role, require transfer-boundary review before promotion."
+      ],
+      "modelPosition": {
+        "primaryLocation": "hazard-transition-and-route-anchor",
+        "variables": [
+          "diagnostic-confirmation",
+          "oxygenation-status",
+          "diuretic-response",
+          "discharge-transition",
+          "readmission-risk"
+        ],
+        "admissibleUse": "candidate endpoint, variable and route definition only"
+      },
+      "modelAdmissionDecision": "source-context-support-only-blocked-for-calibrated-modeling",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Extract NICE acute-HF pathway fields into a bounded card with update date, service setting and recommendation context."
+    },
+    {
+      "taskId": "C2LTB2-EXT-005",
+      "domainId": "asthma-copd-exacerbation-airway-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/asthma-copd-exacerbation-airway-continuity",
+      "sourceRefId": "C2LTB2-SRC-03-1",
+      "sourceTitle": "Global Initiative for Asthma reports",
+      "sourceUrl": "https://ginasthma.org/reports/",
+      "extractionStatus": "completed-c2ltb2-source-context-extraction",
+      "sourceAccessStatus": "official-strategy-report-page-identified",
+      "sourceRole": "asthma-strategy-report-exacerbation-risk-and-control-anchor",
+      "exactClaimUse": "Supports asthma exacerbation continuity modeling by anchoring control assessment, exacerbation risk, reliever/controller strategy, action planning, acute worsening recognition and post-exacerbation review as route variables.",
+      "endpointDefinition": "Candidate endpoints include exacerbation frequency, symptom control, reliever use, oral corticosteroid exposure, emergency visits, hospitalization and lung-function or activity limitation.",
+      "populationOrSetting": "People with asthma across outpatient, emergency and follow-up care, with age group, severity, medication access and phenotype boundaries requiring later separation.",
+      "effectOrMechanismSignal": "Mechanism-level route signal: airway inflammation and bronchoconstriction produce variable airflow limitation; prevention and timely escalation may alter exacerbation frequency and acute respiratory risk.",
+      "uncertaintyOrBias": "GINA reports are strategy documents rather than a single trial; recommendation details vary by age, severity, medication availability and annual update.",
+      "transferBoundary": "Transfer only to asthma variable vocabulary and care-route structure. Do not use this row for personal inhaler advice or intervention ranking.",
+      "downgradeTriggers": [
+        "If later review cannot extract exact source text, endpoint, population boundary and source role, keep this row as source-context support only.",
+        "If the row is used for individual advice, intervention ranking, clinical-validity claims or individual prognosis, downgrade to prohibited use.",
+        "If the source is used beyond its guideline, statement, burden, route or publication-lineage role, require transfer-boundary review before promotion."
+      ],
+      "modelPosition": {
+        "primaryLocation": "hazard-transition-and-route-anchor",
+        "variables": [
+          "exacerbation-frequency",
+          "airflow-obstruction-severity",
+          "oxygenation-status",
+          "hospitalization-risk",
+          "ventilation-escalation-risk"
+        ],
+        "admissibleUse": "candidate endpoint, variable and route definition only"
+      },
+      "modelAdmissionDecision": "source-context-support-only-blocked-for-calibrated-modeling",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Create an asthma exacerbation card separating prevention, action-plan escalation, emergency care and post-exacerbation review variables."
+    },
+    {
+      "taskId": "C2LTB2-EXT-006",
+      "domainId": "asthma-copd-exacerbation-airway-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/asthma-copd-exacerbation-airway-continuity",
+      "sourceRefId": "C2LTB2-SRC-03-2",
+      "sourceTitle": "Global Initiative for Chronic Obstructive Lung Disease 2026 Report and Pocket Guide",
+      "sourceUrl": "https://goldcopd.org/2026-gold-report-and-pocket-guide/",
+      "extractionStatus": "completed-c2ltb2-source-context-extraction",
+      "sourceAccessStatus": "official-strategy-report-page-identified",
+      "sourceRole": "copd-strategy-report-exacerbation-and-hospitalization-anchor",
+      "exactClaimUse": "Supports COPD exacerbation as an airway and systemic-risk continuity domain where symptoms, airflow limitation, exacerbation history, oxygenation, hospitalization and prevention strategy define extraction variables.",
+      "endpointDefinition": "Candidate endpoints include exacerbation count, symptom burden, FEV1 or airflow category, oxygenation, hospitalization, ventilation escalation and mortality or readmission context.",
+      "populationOrSetting": "People with COPD in stable, acute-exacerbation and post-exacerbation settings, with phenotype, comorbidity, smoking exposure and medication access boundaries.",
+      "effectOrMechanismSignal": "Mechanism-level route signal: chronic airflow limitation plus exacerbating triggers can reduce oxygenation and functional reserve; prevention and exacerbation management may affect admission and recovery trajectories.",
+      "uncertaintyOrBias": "GOLD is a strategy report updated over time; evidence levels and classifications can shift, and implementation depends on spirometry access, therapy availability and comorbidity burden.",
+      "transferBoundary": "Transfer only to COPD exacerbation variables and route structure. No individual prognosis, medication recommendation or calibrated effect size is admitted.",
+      "downgradeTriggers": [
+        "If later review cannot extract exact source text, endpoint, population boundary and source role, keep this row as source-context support only.",
+        "If the row is used for individual advice, intervention ranking, clinical-validity claims or individual prognosis, downgrade to prohibited use.",
+        "If the source is used beyond its guideline, statement, burden, route or publication-lineage role, require transfer-boundary review before promotion."
+      ],
+      "modelPosition": {
+        "primaryLocation": "hazard-transition-and-route-anchor",
+        "variables": [
+          "exacerbation-frequency",
+          "airflow-obstruction-severity",
+          "oxygenation-status",
+          "hospitalization-risk",
+          "ventilation-escalation-risk"
+        ],
+        "admissibleUse": "candidate endpoint, variable and route definition only"
+      },
+      "modelAdmissionDecision": "source-context-support-only-blocked-for-calibrated-modeling",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Create a COPD card separating stable risk stratification, acute exacerbation management, ventilation escalation and readmission prevention."
+    },
+    {
+      "taskId": "C2LTB2-EXT-007",
+      "domainId": "burn-injury-critical-care-rehabilitation-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/burn-injury-critical-care-rehabilitation-continuity",
+      "sourceRefId": "C2LTB2-SRC-04-1",
+      "sourceTitle": "American Burn Association Guidelines for Burn Patient Referral",
+      "sourceUrl": "https://www.ameriburn.org/burn-care-team/resources/guidelines-for-burn-patient-referral",
+      "extractionStatus": "completed-c2ltb2-source-context-extraction",
+      "sourceAccessStatus": "official-professional-referral-guideline-identified",
+      "sourceRole": "burn-center-referral-and-severity-triage-anchor",
+      "exactClaimUse": "Supports burn injury continuity modeling by anchoring burn-center referral criteria, injury severity, special locations, inhalation or electrical/chemical mechanisms, comorbidity and recovery-resource needs as triage variables.",
+      "endpointDefinition": "Candidate endpoints include burn size/depth, referral indication, airway/inhalation risk, fluid resuscitation need, infection risk, graft or surgery need, rehabilitation function and long-term scarring or disability burden.",
+      "populationOrSetting": "People with burn injuries across first contact, emergency, burn-center referral, inpatient burn care and rehabilitation contexts. This row does not give clinical triage instructions.",
+      "effectOrMechanismSignal": "Mechanism-level route signal: skin barrier loss, fluid shifts, infection risk, pain and contracture can shift both acute mortality and long-term action capacity; specialty referral affects care-route continuity.",
+      "uncertaintyOrBias": "Referral criteria are triage tools and may vary by system capacity, age, comorbidity and mechanism; source text must be preserved before using any criterion.",
+      "transferBoundary": "Transfer only as burn referral, severity and pathway vocabulary. Do not use this row for personal burn treatment, transfer decisions or outcome prediction.",
+      "downgradeTriggers": [
+        "If later review cannot extract exact source text, endpoint, population boundary and source role, keep this row as source-context support only.",
+        "If the row is used for individual advice, intervention ranking, clinical-validity claims or individual prognosis, downgrade to prohibited use.",
+        "If the source is used beyond its guideline, statement, burden, route or publication-lineage role, require transfer-boundary review before promotion."
+      ],
+      "modelPosition": {
+        "primaryLocation": "hazard-transition-and-route-anchor",
+        "variables": [
+          "burn-size-depth",
+          "burn-center-referral",
+          "fluid-resuscitation-need",
+          "infection-risk",
+          "rehabilitation-function"
+        ],
+        "admissibleUse": "candidate endpoint, variable and route definition only"
+      },
+      "modelAdmissionDecision": "source-context-support-only-blocked-for-calibrated-modeling",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Create a burn route card separating referral criteria, resuscitation risk, infection/barrier loss, rehabilitation and long-term functional recovery."
+    },
+    {
+      "taskId": "C2LTB2-EXT-008",
+      "domainId": "burn-injury-critical-care-rehabilitation-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/burn-injury-critical-care-rehabilitation-continuity",
+      "sourceRefId": "C2LTB2-SRC-04-2",
+      "sourceTitle": "WHO Burns fact sheet",
+      "sourceUrl": "https://www.who.int/news-room/fact-sheets/detail/burns",
+      "extractionStatus": "completed-c2ltb2-source-context-extraction",
+      "sourceAccessStatus": "official-who-fact-sheet-identified",
+      "sourceRole": "burns-burden-prevention-and-rehabilitation-context-anchor",
+      "exactClaimUse": "Supports burns as a global injury and disability continuity domain by anchoring burden, prevention, acute consequences, infection risk, reconstructive needs and rehabilitation context.",
+      "endpointDefinition": "Candidate endpoints include burn incidence or burden, mortality context, disability-adjusted burden, infection or sepsis context, rehabilitation need and prevention route.",
+      "populationOrSetting": "Population-level burn burden and prevention context across global public-health settings, including vulnerable groups and resource variation.",
+      "effectOrMechanismSignal": "Burden-context signal: burns can produce immediate life risk and long recovery demands through barrier loss, fluid shifts, infection and functional impairment.",
+      "uncertaintyOrBias": "Fact sheets are burden and prevention summaries, not detailed clinical-effect evidence; numbers and definitions may update and must be time-stamped before quantitative use.",
+      "transferBoundary": "Transfer only to burden, prevention and recovery-context framing. Do not use this source to define individual burn severity management or calibrated outcome effects.",
+      "downgradeTriggers": [
+        "If later review cannot extract exact source text, endpoint, population boundary and source role, keep this row as source-context support only.",
+        "If the row is used for individual advice, intervention ranking, clinical-validity claims or individual prognosis, downgrade to prohibited use.",
+        "If the source is used beyond its guideline, statement, burden, route or publication-lineage role, require transfer-boundary review before promotion."
+      ],
+      "modelPosition": {
+        "primaryLocation": "hazard-transition-and-route-anchor",
+        "variables": [
+          "burn-burden",
+          "infection-risk",
+          "rehabilitation-function",
+          "prevention-route",
+          "mortality-context"
+        ],
+        "admissibleUse": "candidate endpoint, variable and route definition only"
+      },
+      "modelAdmissionDecision": "source-context-support-only-blocked-for-calibrated-modeling",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Extract WHO burn burden and prevention language into a context card with date, population boundary and non-clinical-use limits."
+    },
+    {
+      "taskId": "C2LTB2-EXT-009",
+      "domainId": "mechanical-ventilation-respiratory-failure-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/mechanical-ventilation-respiratory-failure-continuity",
+      "sourceRefId": "C2LTB2-SRC-05-1",
+      "sourceTitle": "ATS Clinical Practice Guideline update for ARDS management",
+      "sourceUrl": "https://academic.oup.com/ajrccm/article/209/1/24/8427573",
+      "extractionStatus": "completed-c2ltb2-source-context-extraction",
+      "sourceAccessStatus": "guideline-publication-page-identified",
+      "sourceRole": "ards-mechanical-ventilation-guideline-anchor",
+      "exactClaimUse": "Supports mechanical ventilation and ARDS as an organ-support continuity domain where oxygenation, ventilation settings, prone positioning, PEEP, neuromuscular blockade or extracorporeal escalation become route variables.",
+      "endpointDefinition": "Candidate endpoints include oxygenation, ventilator-free days, mortality, barotrauma or ventilator-induced injury, ICU length of stay, delirium/function burden and escalation to ECMO or adjunctive support.",
+      "populationOrSetting": "Adults with acute respiratory distress syndrome or severe acute respiratory failure in intensive-care settings, with severity, resource and contraindication boundaries.",
+      "effectOrMechanismSignal": "Mechanism-level route signal: gas-exchange failure and ventilator-induced injury risk connect respiratory support parameters to acute survival and post-ICU function.",
+      "uncertaintyOrBias": "Guideline evidence is intervention-specific, ICU-resource dependent and may distinguish strong from conditional recommendations; patient heterogeneity and local practice change transferability.",
+      "transferBoundary": "Transfer only to ARDS ventilation route and endpoint vocabulary. No personal ventilator strategy or calibrated survival effect is admitted.",
+      "downgradeTriggers": [
+        "If later review cannot extract exact source text, endpoint, population boundary and source role, keep this row as source-context support only.",
+        "If the row is used for individual advice, intervention ranking, clinical-validity claims or individual prognosis, downgrade to prohibited use.",
+        "If the source is used beyond its guideline, statement, burden, route or publication-lineage role, require transfer-boundary review before promotion."
+      ],
+      "modelPosition": {
+        "primaryLocation": "hazard-transition-and-route-anchor",
+        "variables": [
+          "oxygenation-status",
+          "ventilator-support-intensity",
+          "ventilator-free-days",
+          "icu-survival",
+          "post-icu-functional-burden"
+        ],
+        "admissibleUse": "candidate endpoint, variable and route definition only"
+      },
+      "modelAdmissionDecision": "source-context-support-only-blocked-for-calibrated-modeling",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Create ARDS cards for lung-protective ventilation, prone positioning, adjunctive support and post-ICU recovery variables."
+    },
+    {
+      "taskId": "C2LTB2-EXT-010",
+      "domainId": "mechanical-ventilation-respiratory-failure-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/mechanical-ventilation-respiratory-failure-continuity",
+      "sourceRefId": "C2LTB2-SRC-05-2",
+      "sourceTitle": "SCCM Mechanical Ventilation in Adult Patients with Acute Respiratory Distress Syndrome",
+      "sourceUrl": "https://www.sccm.org/clinical-resources/guidelines/guidelines/mechanical-ventilation-in-adult-patients-with-ac",
+      "extractionStatus": "completed-c2ltb2-source-context-extraction",
+      "sourceAccessStatus": "official-society-guideline-page-identified",
+      "sourceRole": "critical-care-mechanical-ventilation-guideline-route-anchor",
+      "exactClaimUse": "Supports adult ARDS ventilation as a critical-care support pathway where protective ventilation, oxygenation targets, adjunctive positioning and escalation boundaries define task variables.",
+      "endpointDefinition": "Candidate endpoints include oxygenation, ventilator-free days, mortality, ventilator-associated complications, ICU resource intensity and functional recovery after critical illness.",
+      "populationOrSetting": "Adult patients with acute respiratory distress syndrome receiving mechanical ventilation in critical-care settings.",
+      "effectOrMechanismSignal": "Mechanism-level route signal: ventilator support preserves oxygen delivery but can add lung injury, sedation and ICU-burden pathways that affect both survival and effective time after discharge.",
+      "uncertaintyOrBias": "Society guideline pages can be summaries or route pages; exact recommendations, evidence quality and update dates must be extracted from full guideline context.",
+      "transferBoundary": "Transfer only as a critical-care route anchor and source lineage. Do not infer clinical strategy or model parameters from this row alone.",
+      "downgradeTriggers": [
+        "If later review cannot extract exact source text, endpoint, population boundary and source role, keep this row as source-context support only.",
+        "If the row is used for individual advice, intervention ranking, clinical-validity claims or individual prognosis, downgrade to prohibited use.",
+        "If the source is used beyond its guideline, statement, burden, route or publication-lineage role, require transfer-boundary review before promotion."
+      ],
+      "modelPosition": {
+        "primaryLocation": "hazard-transition-and-route-anchor",
+        "variables": [
+          "oxygenation-status",
+          "ventilator-support-intensity",
+          "ventilator-free-days",
+          "icu-survival",
+          "post-icu-functional-burden"
+        ],
+        "admissibleUse": "candidate endpoint, variable and route definition only"
+      },
+      "modelAdmissionDecision": "source-context-support-only-blocked-for-calibrated-modeling",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Use the SCCM route to preserve guideline lineage, then extract exact recommendations and evidence levels from the full ARDS guideline source."
+    },
+    {
+      "taskId": "C2LTB2-EXT-011",
+      "domainId": "trauma-system-hemorrhage-control-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/trauma-system-hemorrhage-control-continuity",
+      "sourceRefId": "C2LTB2-SRC-06-1",
+      "sourceTitle": "ACS Resources for Optimal Care of the Injured Patient standards",
+      "sourceUrl": "https://www.facs.org/quality-programs/trauma/quality/verification-review-and-consultation-program/standards/",
+      "extractionStatus": "completed-c2ltb2-source-context-extraction",
+      "sourceAccessStatus": "official-trauma-standards-page-identified",
+      "sourceRole": "trauma-system-standards-and-center-capacity-anchor",
+      "exactClaimUse": "Supports trauma-system continuity modeling by anchoring trauma center verification, system resources, surgical/critical-care capability, performance improvement and timely definitive care as infrastructure variables.",
+      "endpointDefinition": "Candidate endpoints include time-to-definitive-care, hemorrhage control route, trauma center level or capability, mortality, complications, rehabilitation transition and system performance indicators.",
+      "populationOrSetting": "Trauma systems, trauma centers and injured patients moving through prehospital, emergency, operative, critical-care and rehabilitation pathways.",
+      "effectOrMechanismSignal": "Mechanism-level route signal: severe injury survival depends on coordinated prehospital triage, hemorrhage control, definitive surgical capacity and system learning loops.",
+      "uncertaintyOrBias": "Standards define infrastructure requirements and verification expectations; they do not by themselves quantify patient-level effect sizes and may be jurisdiction-specific.",
+      "transferBoundary": "Transfer only to trauma-system variables, route capacity and endpoint vocabulary. Do not use as individual trauma prognosis or facility ranking.",
+      "downgradeTriggers": [
+        "If later review cannot extract exact source text, endpoint, population boundary and source role, keep this row as source-context support only.",
+        "If the row is used for individual advice, intervention ranking, clinical-validity claims or individual prognosis, downgrade to prohibited use.",
+        "If the source is used beyond its guideline, statement, burden, route or publication-lineage role, require transfer-boundary review before promotion."
+      ],
+      "modelPosition": {
+        "primaryLocation": "hazard-transition-and-route-anchor",
+        "variables": [
+          "trauma-center-capability",
+          "time-to-definitive-care",
+          "hemorrhage-control-route",
+          "mortality-risk",
+          "rehabilitation-transition"
+        ],
+        "admissibleUse": "candidate endpoint, variable and route definition only"
+      },
+      "modelAdmissionDecision": "source-context-support-only-blocked-for-calibrated-modeling",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Create trauma-system cards separating prehospital triage, hemorrhage control, definitive care capacity and rehabilitation transition."
+    },
+    {
+      "taskId": "C2LTB2-EXT-012",
+      "domainId": "trauma-system-hemorrhage-control-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/trauma-system-hemorrhage-control-continuity",
+      "sourceRefId": "C2LTB2-SRC-06-2",
+      "sourceTitle": "STOP THE BLEED official program",
+      "sourceUrl": "https://www.stopthebleed.org/",
+      "extractionStatus": "completed-c2ltb2-source-context-extraction",
+      "sourceAccessStatus": "official-program-source-identified",
+      "sourceRole": "bystander-hemorrhage-control-education-and-action-route-anchor",
+      "exactClaimUse": "Supports life-threatening bleeding as a time-critical continuity failure where public recognition, direct pressure, wound packing, tourniquet access and emergency response connection become action-route variables.",
+      "endpointDefinition": "Candidate endpoints include bleeding-recognition, time-to-control, bystander action, tourniquet or pressure use, EMS handoff and preventable death context.",
+      "populationOrSetting": "Public, workplace, school, community and prehospital bleeding-control education contexts before professional trauma care.",
+      "effectOrMechanismSignal": "Mechanism-level route signal: rapid external hemorrhage control can preserve circulating volume and time-to-definitive-care during the first minutes after injury.",
+      "uncertaintyOrBias": "Education-program materials are implementation and public-action anchors, not clinical-trial effect estimates; local training quality, device availability and injury type alter transferability.",
+      "transferBoundary": "Transfer only to public-action, preparedness and hemorrhage-control route variables. Do not use this row to provide procedural instructions or individual outcome predictions.",
+      "downgradeTriggers": [
+        "If later review cannot extract exact source text, endpoint, population boundary and source role, keep this row as source-context support only.",
+        "If the row is used for individual advice, intervention ranking, clinical-validity claims or individual prognosis, downgrade to prohibited use.",
+        "If the source is used beyond its guideline, statement, burden, route or publication-lineage role, require transfer-boundary review before promotion."
+      ],
+      "modelPosition": {
+        "primaryLocation": "hazard-transition-and-route-anchor",
+        "variables": [
+          "bleeding-recognition",
+          "time-to-hemorrhage-control",
+          "bystander-action",
+          "ems-handoff",
+          "preventable-death-context"
+        ],
+        "admissibleUse": "candidate endpoint, variable and route definition only"
+      },
+      "modelAdmissionDecision": "source-context-support-only-blocked-for-calibrated-modeling",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Create a bleeding-control route card separating public recognition, equipment access, emergency handoff and trauma-system linkage."
+    },
+    {
+      "taskId": "C2LTB2-EXT-013",
+      "domainId": "urinary-tract-infection-pyelonephritis-urosepsis-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/urinary-tract-infection-pyelonephritis-urosepsis-continuity",
+      "sourceRefId": "C2LTB2-SRC-07-1",
+      "sourceTitle": "EAU Guidelines on Urological Infections",
+      "sourceUrl": "https://uroweb.org/guidelines/urological-infections/chapter/the-guideline",
+      "extractionStatus": "completed-c2ltb2-source-context-extraction",
+      "sourceAccessStatus": "official-guideline-chapter-identified",
+      "sourceRole": "urological-infection-guideline-pyelonephritis-urosepsis-anchor",
+      "exactClaimUse": "Supports urinary infection continuity modeling by anchoring uncomplicated versus complicated infection, pyelonephritis, obstruction, antimicrobial route, imaging/source control and urosepsis escalation variables.",
+      "endpointDefinition": "Candidate endpoints include infection severity, fever/systemic signs, renal involvement, obstruction/source-control need, antimicrobial route, hospitalization, sepsis escalation and recurrence.",
+      "populationOrSetting": "Patients with urological infections across primary, emergency, urology and inpatient settings, with infection type, pregnancy, catheter, obstruction and resistance boundaries.",
+      "effectOrMechanismSignal": "Mechanism-level route signal: ascending urinary infection, obstruction or resistant pathogens can shift local infection into renal injury and systemic sepsis pathways.",
+      "uncertaintyOrBias": "Guideline recommendations depend on microbiology, resistance setting, host factors and imaging/source-control availability; regional antimicrobial ecology matters.",
+      "transferBoundary": "Transfer only to infection-classification, escalation and endpoint vocabulary. Do not use for personal antibiotic choices or calibrated risk prediction.",
+      "downgradeTriggers": [
+        "If later review cannot extract exact source text, endpoint, population boundary and source role, keep this row as source-context support only.",
+        "If the row is used for individual advice, intervention ranking, clinical-validity claims or individual prognosis, downgrade to prohibited use.",
+        "If the source is used beyond its guideline, statement, burden, route or publication-lineage role, require transfer-boundary review before promotion."
+      ],
+      "modelPosition": {
+        "primaryLocation": "hazard-transition-and-route-anchor",
+        "variables": [
+          "infection-severity",
+          "renal-involvement",
+          "source-control-need",
+          "antibiotic-route",
+          "urosepsis-risk"
+        ],
+        "admissibleUse": "candidate endpoint, variable and route definition only"
+      },
+      "modelAdmissionDecision": "source-context-support-only-blocked-for-calibrated-modeling",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Create UTI/pyelonephritis cards separating uncomplicated infection, complicated infection, obstruction/source control and urosepsis escalation."
+    },
+    {
+      "taskId": "C2LTB2-EXT-014",
+      "domainId": "urinary-tract-infection-pyelonephritis-urosepsis-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/urinary-tract-infection-pyelonephritis-urosepsis-continuity",
+      "sourceRefId": "C2LTB2-SRC-07-2",
+      "sourceTitle": "IDSA Complicated Urinary Tract Infections guideline",
+      "sourceUrl": "https://academic.oup.com/cid/advance-article/doi/10.1093/cid/ciaf462/8384478",
+      "extractionStatus": "completed-c2ltb2-source-context-extraction",
+      "sourceAccessStatus": "guideline-publication-page-identified",
+      "sourceRole": "complicated-uti-guideline-antimicrobial-and-duration-anchor",
+      "exactClaimUse": "Supports complicated urinary tract infection as a route domain where syndrome definition, antimicrobial selection, treatment duration, source control and clinical response become variables requiring careful population boundaries.",
+      "endpointDefinition": "Candidate endpoints include clinical cure, recurrence, bacteremia or systemic infection, antimicrobial route/duration, adverse events and resistance context.",
+      "populationOrSetting": "People with complicated urinary tract infection or pyelonephritis under IDSA guideline scope, with organism, resistance, host factor and severity boundaries.",
+      "effectOrMechanismSignal": "Mechanism-level route signal: antimicrobial appropriateness, source control and host risk affect infection resolution, recurrence and sepsis transition.",
+      "uncertaintyOrBias": "Publication is a guideline source whose recommendations are bound by evidence certainty, local resistance, population exclusions and update state.",
+      "transferBoundary": "Transfer only to syndrome, route and endpoint vocabulary. Do not infer individual antimicrobial decisions, duration choices or calibrated benefit.",
+      "downgradeTriggers": [
+        "If later review cannot extract exact source text, endpoint, population boundary and source role, keep this row as source-context support only.",
+        "If the row is used for individual advice, intervention ranking, clinical-validity claims or individual prognosis, downgrade to prohibited use.",
+        "If the source is used beyond its guideline, statement, burden, route or publication-lineage role, require transfer-boundary review before promotion."
+      ],
+      "modelPosition": {
+        "primaryLocation": "hazard-transition-and-route-anchor",
+        "variables": [
+          "clinical-response",
+          "recurrence-risk",
+          "antibiotic-route",
+          "source-control-need",
+          "resistance-context"
+        ],
+        "admissibleUse": "candidate endpoint, variable and route definition only"
+      },
+      "modelAdmissionDecision": "source-context-support-only-blocked-for-calibrated-modeling",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Extract syndrome definitions, outcome endpoints, population exclusions and downgrade triggers before any Source Card promotion."
+    },
+    {
+      "taskId": "C2LTB2-EXT-015",
+      "domainId": "diabetic-foot-ulcer-amputation-prevention-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/diabetic-foot-ulcer-amputation-prevention-continuity",
+      "sourceRefId": "C2LTB2-SRC-08-1",
+      "sourceTitle": "IWGDF Guidelines 2023",
+      "sourceUrl": "https://iwgdfguidelines.org/guidelines-2023/",
+      "extractionStatus": "completed-c2ltb2-source-context-extraction",
+      "sourceAccessStatus": "official-guideline-suite-identified",
+      "sourceRole": "diabetic-foot-ulcer-multidisciplinary-guideline-suite-anchor",
+      "exactClaimUse": "Supports diabetic foot ulcer continuity modeling by anchoring prevention, offloading, infection, peripheral artery disease, wound healing and amputation prevention as linked route variables.",
+      "endpointDefinition": "Candidate endpoints include ulcer occurrence, healing time, infection, ischemia, hospitalization, revascularization, amputation, recurrence and mobility/function impact.",
+      "populationOrSetting": "People with diabetes at risk of or living with foot ulcers, spanning outpatient podiatry, vascular, infectious disease, wound care and rehabilitation settings.",
+      "effectOrMechanismSignal": "Mechanism-level route signal: neuropathy, pressure, ischemia, infection and delayed wound healing can convert a local wound into amputation risk and long-term mobility loss.",
+      "uncertaintyOrBias": "Guidelines are modular and recommendation applicability depends on ulcer type, infection severity, vascular status, offloading access and local multidisciplinary care.",
+      "transferBoundary": "Transfer only to DFU route, endpoint and variable vocabulary. Do not use for personal wound management or amputation-risk prediction.",
+      "downgradeTriggers": [
+        "If later review cannot extract exact source text, endpoint, population boundary and source role, keep this row as source-context support only.",
+        "If the row is used for individual advice, intervention ranking, clinical-validity claims or individual prognosis, downgrade to prohibited use.",
+        "If the source is used beyond its guideline, statement, burden, route or publication-lineage role, require transfer-boundary review before promotion."
+      ],
+      "modelPosition": {
+        "primaryLocation": "hazard-transition-and-route-anchor",
+        "variables": [
+          "ulcer-healing",
+          "infection-severity",
+          "perfusion-status",
+          "amputation-risk",
+          "mobility-function"
+        ],
+        "admissibleUse": "candidate endpoint, variable and route definition only"
+      },
+      "modelAdmissionDecision": "source-context-support-only-blocked-for-calibrated-modeling",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Create DFU cards separating prevention/offloading, infection, vascular status, wound healing and amputation-prevention variables."
+    },
+    {
+      "taskId": "C2LTB2-EXT-016",
+      "domainId": "diabetic-foot-ulcer-amputation-prevention-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/diabetic-foot-ulcer-amputation-prevention-continuity",
+      "sourceRefId": "C2LTB2-SRC-08-2",
+      "sourceTitle": "IDSA Diabetic Foot Infections guideline",
+      "sourceUrl": "https://www.idsociety.org/practice-guideline/diabetic-foot-infections/",
+      "extractionStatus": "completed-c2ltb2-source-context-extraction",
+      "sourceAccessStatus": "official-clinical-guideline-identified",
+      "sourceRole": "diabetic-foot-infection-diagnosis-treatment-guideline-anchor",
+      "exactClaimUse": "Supports diabetic foot infection as a source-specific infection and limb-continuity pathway where diagnosis, severity classification, osteomyelitis assessment, source control and antimicrobial route define extraction variables.",
+      "endpointDefinition": "Candidate endpoints include infection severity, osteomyelitis, hospitalization, surgical/source-control need, amputation, recurrence and wound healing trajectory.",
+      "populationOrSetting": "People with diabetes-related foot infections across outpatient, hospital, surgical and infectious disease settings.",
+      "effectOrMechanismSignal": "Mechanism-level route signal: local infection plus neuropathy, ischemia and impaired healing can escalate to systemic infection, tissue loss and amputation.",
+      "uncertaintyOrBias": "Guideline use depends on infection severity, vascular disease, culture methods, imaging access, surgical availability and evidence certainty.",
+      "transferBoundary": "Transfer only to infection-severity and limb-continuity variable definitions. No personal antibiotic, surgery or amputation prediction is admitted.",
+      "downgradeTriggers": [
+        "If later review cannot extract exact source text, endpoint, population boundary and source role, keep this row as source-context support only.",
+        "If the row is used for individual advice, intervention ranking, clinical-validity claims or individual prognosis, downgrade to prohibited use.",
+        "If the source is used beyond its guideline, statement, burden, route or publication-lineage role, require transfer-boundary review before promotion."
+      ],
+      "modelPosition": {
+        "primaryLocation": "hazard-transition-and-route-anchor",
+        "variables": [
+          "infection-severity",
+          "osteomyelitis-status",
+          "source-control-need",
+          "amputation-risk",
+          "wound-healing"
+        ],
+        "admissibleUse": "candidate endpoint, variable and route definition only"
+      },
+      "modelAdmissionDecision": "source-context-support-only-blocked-for-calibrated-modeling",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Create a diabetic-foot-infection Source Card separating severity classification, osteomyelitis, source control and antimicrobial-route variables."
+    },
+    {
+      "taskId": "C2LTB2-EXT-017",
+      "domainId": "long-covid-post-acute-infection-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/long-covid-post-acute-infection-continuity",
+      "sourceRefId": "C2LTB2-SRC-09-1",
+      "sourceTitle": "CDC Long COVID clinical guidance",
+      "sourceUrl": "https://www.cdc.gov/long-covid/hcp/clinical-guidance/index.html",
+      "extractionStatus": "completed-c2ltb2-source-context-extraction",
+      "sourceAccessStatus": "official-cdc-clinical-guidance-identified",
+      "sourceRole": "long-covid-clinical-guidance-function-and-symptom-anchor",
+      "exactClaimUse": "Supports Long COVID as a post-acute continuity domain where symptom burden, fatigue, cognitive dysfunction, post-exertional worsening, functional limitation, work impact and rehabilitation access define variables.",
+      "endpointDefinition": "Candidate endpoints include symptom duration, fatigue severity, cognitive symptoms, activity limitation, return-to-work or school impact, care utilization and quality-of-life burden.",
+      "populationOrSetting": "People with post-acute symptoms after SARS-CoV-2 infection in clinical and public-health settings; individual diagnosis and treatment decisions remain out of scope.",
+      "effectOrMechanismSignal": "Mechanism-level route signal: post-infectious multisystem symptoms can reduce effective time, cognitive bandwidth, physical capacity and future task options even after acute survival.",
+      "uncertaintyOrBias": "Guidance reflects evolving evidence, heterogeneous definitions, variable testing history, comorbidity and symptom clusters; endpoint definitions must be time-stamped.",
+      "transferBoundary": "Transfer only to functional, symptom and recovery-route vocabulary. Do not use this row to diagnose Long COVID or estimate personal prognosis.",
+      "downgradeTriggers": [
+        "If later review cannot extract exact source text, endpoint, population boundary and source role, keep this row as source-context support only.",
+        "If the row is used for individual advice, intervention ranking, clinical-validity claims or individual prognosis, downgrade to prohibited use.",
+        "If the source is used beyond its guideline, statement, burden, route or publication-lineage role, require transfer-boundary review before promotion."
+      ],
+      "modelPosition": {
+        "primaryLocation": "hazard-transition-and-route-anchor",
+        "variables": [
+          "post-acute-symptom-burden",
+          "fatigue-severity",
+          "cognitive-function-burden",
+          "work-function-impact",
+          "rehabilitation-access"
+        ],
+        "admissibleUse": "candidate endpoint, variable and route definition only"
+      },
+      "modelAdmissionDecision": "source-context-support-only-blocked-for-calibrated-modeling",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Create Long COVID cards separating symptom clusters, function outcomes, work/education impact and rehabilitation-access variables."
+    },
+    {
+      "taskId": "C2LTB2-EXT-018",
+      "domainId": "long-covid-post-acute-infection-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/long-covid-post-acute-infection-continuity",
+      "sourceRefId": "C2LTB2-SRC-09-2",
+      "sourceTitle": "NICE COVID-19 rapid guideline: managing the long-term effects of COVID-19",
+      "sourceUrl": "https://www.nice.org.uk/guidance/ng188",
+      "extractionStatus": "completed-c2ltb2-source-context-extraction",
+      "sourceAccessStatus": "official-nice-guideline-identified",
+      "sourceRole": "long-term-covid-effects-assessment-and-care-guideline-anchor",
+      "exactClaimUse": "Supports long-term COVID effects as a care-continuity domain where assessment, multidisciplinary support, symptom management, rehabilitation and follow-up become extraction variables.",
+      "endpointDefinition": "Candidate endpoints include ongoing symptom burden, functional impairment, breathlessness/fatigue/cognitive symptoms, care-plan presence, rehabilitation and return-to-activity outcomes.",
+      "populationOrSetting": "People with ongoing symptomatic COVID-19 or post-COVID-19 syndrome under NICE/SIGN/RCGP guideline scope, with age, severity and service boundaries.",
+      "effectOrMechanismSignal": "Mechanism-level route signal: persistent symptoms after infection affect physical, cognitive and social function; structured assessment and coordinated care shape recovery pathway variables.",
+      "uncertaintyOrBias": "Guideline recommendations have evolved; evidence remains heterogeneous, and national care pathways may not transfer directly across systems.",
+      "transferBoundary": "Transfer only to assessment, function and care-route vocabulary. Do not infer diagnostic certainty, individual prognosis or treatment ranking.",
+      "downgradeTriggers": [
+        "If later review cannot extract exact source text, endpoint, population boundary and source role, keep this row as source-context support only.",
+        "If the row is used for individual advice, intervention ranking, clinical-validity claims or individual prognosis, downgrade to prohibited use.",
+        "If the source is used beyond its guideline, statement, burden, route or publication-lineage role, require transfer-boundary review before promotion."
+      ],
+      "modelPosition": {
+        "primaryLocation": "hazard-transition-and-route-anchor",
+        "variables": [
+          "symptom-duration",
+          "functional-impairment",
+          "cognitive-function-burden",
+          "rehabilitation-access",
+          "care-continuity"
+        ],
+        "admissibleUse": "candidate endpoint, variable and route definition only"
+      },
+      "modelAdmissionDecision": "source-context-support-only-blocked-for-calibrated-modeling",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Extract definitions for ongoing symptomatic COVID-19 and post-COVID syndrome, plus functional endpoints and service boundaries."
+    },
+    {
+      "taskId": "C2LTB2-EXT-019",
+      "domainId": "wound-infection-cellulitis-sepsis-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/wound-infection-cellulitis-sepsis-continuity",
+      "sourceRefId": "C2LTB2-SRC-10-1",
+      "sourceTitle": "IDSA Skin and Soft Tissue Infections guideline",
+      "sourceUrl": "https://www.idsociety.org/practice-guideline/skin-and-soft-tissue-infections/",
+      "extractionStatus": "completed-c2ltb2-source-context-extraction",
+      "sourceAccessStatus": "official-clinical-guideline-identified",
+      "sourceRole": "skin-soft-tissue-infection-guideline-severity-and-source-control-anchor",
+      "exactClaimUse": "Supports wound infection, cellulitis and soft-tissue infection as a barrier-to-systemic-risk pathway where severity, systemic signs, drainage/source control, antimicrobial route and recurrence define variables.",
+      "endpointDefinition": "Candidate endpoints include local infection severity, systemic signs, abscess or drainage need, hospitalization, recurrence, necrotizing infection concern and sepsis transition.",
+      "populationOrSetting": "People with skin and soft-tissue infections across outpatient, emergency, inpatient and surgical settings.",
+      "effectOrMechanismSignal": "Mechanism-level route signal: skin barrier breach and bacterial invasion can escalate from local inflammation to systemic infection; source control and severity sorting define route transitions.",
+      "uncertaintyOrBias": "Guideline categories cover diverse syndromes; cellulitis, abscess, necrotizing infection and immunocompromised states require separate boundaries.",
+      "transferBoundary": "Transfer only to infection classification, source-control and endpoint vocabulary. Do not use for personal antimicrobial or surgical decisions.",
+      "downgradeTriggers": [
+        "If later review cannot extract exact source text, endpoint, population boundary and source role, keep this row as source-context support only.",
+        "If the row is used for individual advice, intervention ranking, clinical-validity claims or individual prognosis, downgrade to prohibited use.",
+        "If the source is used beyond its guideline, statement, burden, route or publication-lineage role, require transfer-boundary review before promotion."
+      ],
+      "modelPosition": {
+        "primaryLocation": "hazard-transition-and-route-anchor",
+        "variables": [
+          "infection-severity",
+          "systemic-signs",
+          "source-control-need",
+          "antibiotic-route",
+          "recurrence-risk"
+        ],
+        "admissibleUse": "candidate endpoint, variable and route definition only"
+      },
+      "modelAdmissionDecision": "source-context-support-only-blocked-for-calibrated-modeling",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Create SSTI cards separating cellulitis, abscess, necrotizing concern, source control and recurrence-prevention variables."
+    },
+    {
+      "taskId": "C2LTB2-EXT-020",
+      "domainId": "wound-infection-cellulitis-sepsis-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/wound-infection-cellulitis-sepsis-continuity",
+      "sourceRefId": "C2LTB2-SRC-10-2",
+      "sourceTitle": "NICE Cellulitis and erysipelas antimicrobial prescribing NG141",
+      "sourceUrl": "https://www.nice.org.uk/guidance/ng141",
+      "extractionStatus": "completed-c2ltb2-source-context-extraction",
+      "sourceAccessStatus": "official-nice-guideline-identified",
+      "sourceRole": "cellulitis-erysipelas-antimicrobial-prescribing-guideline-anchor",
+      "exactClaimUse": "Supports cellulitis and erysipelas as a common skin-boundary failure mode where severity, site, systemic illness, antimicrobial route, reassessment and recurrence become variables.",
+      "endpointDefinition": "Candidate endpoints include symptom severity, systemic illness, treatment route, reassessment need, complications, recurrence and service escalation.",
+      "populationOrSetting": "Adults, young people and children with cellulitis or erysipelas under NICE antimicrobial prescribing guidance, with allergy, severity and setting boundaries.",
+      "effectOrMechanismSignal": "Mechanism-level route signal: bacterial skin infection can impair mobility, sleep, work and systemic stability; early reassessment and escalation boundaries shape recovery time.",
+      "uncertaintyOrBias": "Antimicrobial guidance is tied to national resistance assumptions, prescribing context and review date; local microbiology and severity must not be ignored.",
+      "transferBoundary": "Transfer only to cellulitis/erysipelas endpoint and route vocabulary. Do not infer personal antibiotic choice or model-calibrated effect.",
+      "downgradeTriggers": [
+        "If later review cannot extract exact source text, endpoint, population boundary and source role, keep this row as source-context support only.",
+        "If the row is used for individual advice, intervention ranking, clinical-validity claims or individual prognosis, downgrade to prohibited use.",
+        "If the source is used beyond its guideline, statement, burden, route or publication-lineage role, require transfer-boundary review before promotion."
+      ],
+      "modelPosition": {
+        "primaryLocation": "hazard-transition-and-route-anchor",
+        "variables": [
+          "infection-severity",
+          "systemic-signs",
+          "antibiotic-route",
+          "reassessment-need",
+          "recurrence-risk"
+        ],
+        "admissibleUse": "candidate endpoint, variable and route definition only"
+      },
+      "modelAdmissionDecision": "source-context-support-only-blocked-for-calibrated-modeling",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Extract cellulitis severity and reassessment boundaries into a source card before any local-review or fresh-review promotion."
+    },
+    {
+      "taskId": "C2LTB2-EXT-021",
+      "domainId": "aspiration-pneumonia-airway-protection-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/aspiration-pneumonia-airway-protection-continuity",
+      "sourceRefId": "C2LTB2-SRC-11-1",
+      "sourceTitle": "British Thoracic Society Clinical Statement on aspiration pneumonia",
+      "sourceUrl": "https://www.brit-thoracic.org.uk/clinical-resources/clinical-statements/aspiration-pneumonia/",
+      "extractionStatus": "completed-c2ltb2-source-context-extraction",
+      "sourceAccessStatus": "official-clinical-statement-page-identified",
+      "sourceRole": "aspiration-pneumonia-clinical-statement-route-anchor",
+      "exactClaimUse": "Supports aspiration pneumonia as an airway-protection continuity domain where aspiration risk, dysphagia, neurologic impairment, oral/feeding route, pneumonia diagnosis and prevention or management context define variables.",
+      "endpointDefinition": "Candidate endpoints include aspiration risk, swallow-screening status, pneumonia occurrence, oxygenation, hospitalization, mortality, nutrition route and functional decline.",
+      "populationOrSetting": "People at risk of aspiration pneumonia, including older adults, neurologic disease, stroke, impaired consciousness, dysphagia and long-term-care populations, under clinical-statement scope.",
+      "effectOrMechanismSignal": "Mechanism-level route signal: impaired airway protection and swallowing can move oral or gastric contents into the lung, producing infection, hypoxia and functional decline.",
+      "uncertaintyOrBias": "Clinical statements synthesize heterogeneous evidence and practice context; aspiration pneumonia definitions, prevention evidence and antibiotic assumptions may vary.",
+      "transferBoundary": "Transfer only to risk, airway-protection, swallowing and pneumonia-route variables. Do not use for personal feeding, antibiotic or diagnostic advice.",
+      "downgradeTriggers": [
+        "If later review cannot extract exact source text, endpoint, population boundary and source role, keep this row as source-context support only.",
+        "If the row is used for individual advice, intervention ranking, clinical-validity claims or individual prognosis, downgrade to prohibited use.",
+        "If the source is used beyond its guideline, statement, burden, route or publication-lineage role, require transfer-boundary review before promotion."
+      ],
+      "modelPosition": {
+        "primaryLocation": "hazard-transition-and-route-anchor",
+        "variables": [
+          "aspiration-risk",
+          "swallow-screening-status",
+          "airway-protection-capacity",
+          "pneumonia-risk",
+          "nutrition-route"
+        ],
+        "admissibleUse": "candidate endpoint, variable and route definition only"
+      },
+      "modelAdmissionDecision": "source-context-support-only-blocked-for-calibrated-modeling",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Create aspiration cards separating dysphagia screening, airway protection, nutrition route, pneumonia endpoint and long-term function burden."
+    },
+    {
+      "taskId": "C2LTB2-EXT-022",
+      "domainId": "aspiration-pneumonia-airway-protection-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/aspiration-pneumonia-airway-protection-continuity",
+      "sourceRefId": "C2LTB2-SRC-11-2",
+      "sourceTitle": "Thorax BTS Clinical Statement on aspiration pneumonia publication",
+      "sourceUrl": "https://thorax.bmj.com/content/78/Suppl_1/s3",
+      "extractionStatus": "completed-c2ltb2-source-context-extraction",
+      "sourceAccessStatus": "journal-publication-page-identified",
+      "sourceRole": "aspiration-pneumonia-publication-source-context-anchor",
+      "exactClaimUse": "Supports the published source lineage for aspiration pneumonia clinical statement content, allowing later extraction of definitions, risk factors, prevention boundaries and management endpoints from the full text.",
+      "endpointDefinition": "Candidate endpoints include aspiration risk, dysphagia, pneumonia diagnosis, oxygenation/hospitalization, nutrition route and mortality or functional decline context.",
+      "populationOrSetting": "Publication context for aspiration pneumonia across adult clinical settings, with statement-specific scope and citation boundary.",
+      "effectOrMechanismSignal": "Route signal: publication-level source context allows stable extraction of aspiration risk, airway protection and pneumonia endpoints from the clinical statement.",
+      "uncertaintyOrBias": "Full text may contain nuanced definitions and evidence limitations; abstract or page metadata alone is insufficient for detailed claim admission.",
+      "transferBoundary": "Transfer only as publication lineage and source-context anchor until exact statement text is extracted and reviewed.",
+      "downgradeTriggers": [
+        "If later review cannot extract exact source text, endpoint, population boundary and source role, keep this row as source-context support only.",
+        "If the row is used for individual advice, intervention ranking, clinical-validity claims or individual prognosis, downgrade to prohibited use.",
+        "If the source is used beyond its guideline, statement, burden, route or publication-lineage role, require transfer-boundary review before promotion."
+      ],
+      "modelPosition": {
+        "primaryLocation": "hazard-transition-and-route-anchor",
+        "variables": [
+          "aspiration-risk",
+          "swallow-screening-status",
+          "airway-protection-capacity",
+          "pneumonia-risk",
+          "nutrition-route"
+        ],
+        "admissibleUse": "candidate endpoint, variable and route definition only"
+      },
+      "modelAdmissionDecision": "source-context-support-only-blocked-for-calibrated-modeling",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Use the Thorax publication as the canonical source when extracting exact aspiration pneumonia definitions, risk factors and endpoint boundaries."
+    },
+    {
+      "taskId": "C2LTB2-EXT-023",
+      "domainId": "transfusion-blood-management-hemorrhage-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/transfusion-blood-management-hemorrhage-continuity",
+      "sourceRefId": "C2LTB2-SRC-12-1",
+      "sourceTitle": "AABB International Guidelines for Red Blood Cell Transfusion",
+      "sourceUrl": "https://jamanetwork.com/journals/jama/fullarticle/2810754",
+      "extractionStatus": "completed-c2ltb2-source-context-extraction",
+      "sourceAccessStatus": "journal-guideline-publication-identified",
+      "sourceRole": "red-blood-cell-transfusion-threshold-guideline-anchor",
+      "exactClaimUse": "Supports transfusion and blood management modeling by anchoring red blood cell transfusion thresholds, clinical context, hemoglobin endpoint, oxygen delivery, adverse events and restrictive-versus-liberal strategy boundaries.",
+      "endpointDefinition": "Candidate endpoints include hemoglobin concentration, transfusion exposure, mortality, ischemic events, bleeding context, transfusion reaction or complication and functional recovery where measured.",
+      "populationOrSetting": "Hospitalized adult and pediatric populations covered by AABB international RBC transfusion guideline scope, with specific exclusions and clinical context boundaries.",
+      "effectOrMechanismSignal": "Mechanism-level route signal: anemia and hemorrhage reduce oxygen-carrying capacity, while transfusion may restore oxygen delivery but introduces exposure and complication tradeoffs.",
+      "uncertaintyOrBias": "Guideline thresholds vary by population, clinical context, evidence certainty and exclusions; hemoglobin alone cannot capture active bleeding, ischemia or patient-specific physiology.",
+      "transferBoundary": "Transfer only to transfusion threshold, oxygen-delivery and endpoint vocabulary. Do not use for personal transfusion decisions or calibrated mortality effects.",
+      "downgradeTriggers": [
+        "If later review cannot extract exact source text, endpoint, population boundary and source role, keep this row as source-context support only.",
+        "If the row is used for individual advice, intervention ranking, clinical-validity claims or individual prognosis, downgrade to prohibited use.",
+        "If the source is used beyond its guideline, statement, burden, route or publication-lineage role, require transfer-boundary review before promotion."
+      ],
+      "modelPosition": {
+        "primaryLocation": "hazard-transition-and-route-anchor",
+        "variables": [
+          "hemoglobin-threshold",
+          "transfusion-exposure",
+          "critical-bleeding-status",
+          "transfusion-adverse-event-risk",
+          "oxygen-delivery-capacity"
+        ],
+        "admissibleUse": "candidate endpoint, variable and route definition only"
+      },
+      "modelAdmissionDecision": "source-context-support-only-blocked-for-calibrated-modeling",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Create transfusion cards separating stable anemia thresholds, active bleeding, massive transfusion, adverse events and oxygen-delivery endpoints."
+    },
+    {
+      "taskId": "C2LTB2-EXT-024",
+      "domainId": "transfusion-blood-management-hemorrhage-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/transfusion-blood-management-hemorrhage-continuity",
+      "sourceRefId": "C2LTB2-SRC-12-2",
+      "sourceTitle": "National Blood Authority Patient Blood Management Guideline for Adults with Critical Bleeding",
+      "sourceUrl": "https://www.blood.gov.au/sites/default/files/documents/2024-05/Guideline%20Patient%20blood%20management%20guideline%20for%20adults%20with%20critical%20bleeding.pdf",
+      "extractionStatus": "completed-c2ltb2-source-context-extraction",
+      "sourceAccessStatus": "official-guideline-pdf-identified",
+      "sourceRole": "critical-bleeding-patient-blood-management-guideline-anchor",
+      "exactClaimUse": "Supports critical bleeding and massive transfusion as an acute resource-and-oxygen-delivery continuity pathway where hemorrhage recognition, protocol activation, component therapy, coagulopathy, monitoring and survival endpoints define variables.",
+      "endpointDefinition": "Candidate endpoints include critical bleeding status, massive transfusion activation, hemoglobin or coagulation markers, shock, mortality, transfusion adverse events and resource availability.",
+      "populationOrSetting": "Adults with critical bleeding or major hemorrhage in hospital, trauma, surgical or critical-care contexts under Australian National Blood Authority PBM guideline scope.",
+      "effectOrMechanismSignal": "Mechanism-level route signal: uncontrolled hemorrhage and coagulopathy threaten oxygen delivery and survival; coordinated blood management protocols affect acute stabilization and downstream recovery.",
+      "uncertaintyOrBias": "Guideline use depends on setting, blood product availability, lab/viscoelastic testing, trauma versus surgical context and update date; it is not a universal individual protocol.",
+      "transferBoundary": "Transfer only to critical-bleeding, massive-transfusion and blood-resource pathway variables. Do not use for personal transfusion or resuscitation advice.",
+      "downgradeTriggers": [
+        "If later review cannot extract exact source text, endpoint, population boundary and source role, keep this row as source-context support only.",
+        "If the row is used for individual advice, intervention ranking, clinical-validity claims or individual prognosis, downgrade to prohibited use.",
+        "If the source is used beyond its guideline, statement, burden, route or publication-lineage role, require transfer-boundary review before promotion."
+      ],
+      "modelPosition": {
+        "primaryLocation": "hazard-transition-and-route-anchor",
+        "variables": [
+          "critical-bleeding-status",
+          "massive-transfusion-route",
+          "hemoglobin-threshold",
+          "transfusion-adverse-event-risk",
+          "oxygen-delivery-capacity"
+        ],
+        "admissibleUse": "candidate endpoint, variable and route definition only"
+      },
+      "modelAdmissionDecision": "source-context-support-only-blocked-for-calibrated-modeling",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Create a critical-bleeding card separating hemorrhage recognition, protocol activation, component therapy, coagulopathy monitoring and resource constraints."
+    }
+  ],
+  "nonClaims": [
+    "This register does not validate that any source supports a final Human Infra domain claim.",
+    "This register does not complete independent fresh review.",
+    "This register does not complete Source Cards, variable cards, endpoint cards, uncertainty cards, transfer-boundary cards or downgrade checks.",
+    "This register does not authorize calibrated prediction, individual advice, intervention ranking, clinical-validity claims or individual death-date output."
+  ],
+  "indexRequirements": [
+    "README.md",
+    "docs/reference/README.md",
+    "docs/reference/human-infra-maturity-roadmap.md",
+    "tools/README.md"
+  ]
+}
