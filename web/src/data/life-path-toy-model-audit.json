@@ -1,6 +1,6 @@
 {
   "schemaVersion": "human-infra.life-path-toy-audit.v1",
-  "generatedAt": "2026-07-02T03:49:23.961996+00:00",
+  "generatedAt": "2026-07-02T04:08:40.900253+00:00",
   "modelPath": "web/src/data/life-path-toy-model.json",
   "modelSha256": "a4c92209d79d20579bf1f575d5ebf07ffe5be9ccaf6bf3f3eef08efa287b5377",
   "overallStatus": "PASS",
@@ -1006,6 +1006,81 @@
       "detail": "missingness-route validation report must preserve synthetic-only, no-real-data, no-calibration and no-individual-prediction boundaries"
     },
     {
+      "id": "nhats-route-field-discovery-register-exists",
+      "status": "PASS",
+      "detail": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_route_field_discovery_register.json"
+    },
+    {
+      "id": "nhats-route-field-discovery-validation-exists",
+      "status": "PASS",
+      "detail": "web/src/data/life-path-nhats-route-field-discovery-validation.json"
+    },
+    {
+      "id": "nhats-route-field-discovery-schema",
+      "status": "PASS",
+      "detail": "schemaVersion='human-infra.life-path-nhats-route-field-discovery-register.v1'"
+    },
+    {
+      "id": "nhats-route-field-discovery-identity",
+      "status": "PASS",
+      "detail": "register must bind NHATS, route protocol, variable confirmation matrix and cannot-route status"
+    },
+    {
+      "id": "nhats-route-field-discovery-current-decision",
+      "status": "PASS",
+      "detail": "crosswalk field discovery may be true, but Colectica, data download, classifier, endpoint, weighted counts, public export, calibration and individual prediction must remain false"
+    },
+    {
+      "id": "nhats-route-field-discovery-source-evidence",
+      "status": "PASS",
+      "detail": "missing_evidence_ids=[]"
+    },
+    {
+      "id": "nhats-route-field-discovery-field-families",
+      "status": "PASS",
+      "detail": "missing_field_ids=[]"
+    },
+    {
+      "id": "nhats-route-field-discovery-sensitive-death-exclusion",
+      "status": "PASS",
+      "detail": "sensitive_excluded=['dm13mthdied', 'dm13yrdied', 'dm14mthdied', 'dm14yrdied']"
+    },
+    {
+      "id": "nhats-route-field-discovery-blocking-gates",
+      "status": "PASS",
+      "detail": "missing_gate_ids=[]"
+    },
+    {
+      "id": "nhats-route-field-discovery-prohibited-actions",
+      "status": "PASS",
+      "detail": "register must block real routing, weighted counts, public AI upload, individual death dates and crosswalk-as-Colectica substitution"
+    },
+    {
+      "id": "nhats-route-field-discovery-source-trace",
+      "status": "PASS",
+      "detail": "sourceTrace must include official Colectica, conditions, User Guide and R13/R14 crosswalk URLs"
+    },
+    {
+      "id": "nhats-route-field-discovery-validation-schema",
+      "status": "PASS",
+      "detail": "schemaVersion='human-infra.life-path-nhats-route-field-discovery-validation.v1'"
+    },
+    {
+      "id": "nhats-route-field-discovery-validation-source-hash",
+      "status": "PASS",
+      "detail": "route-field discovery validation must point back to current register hash"
+    },
+    {
+      "id": "nhats-route-field-discovery-validation-summary",
+      "status": "PASS",
+      "detail": "route-field discovery validation must pass with zero failed checks"
+    },
+    {
+      "id": "nhats-route-field-discovery-validation-boundary",
+      "status": "PASS",
+      "detail": "validation boundary must keep Colectica, weighted count and individual prediction gates blocked"
+    },
+    {
       "id": "sensitivity-analysis-exists",
       "status": "PASS",
       "detail": "web/src/data/life-path-sensitivity-analysis.json"
@@ -1062,7 +1137,7 @@
     }
   ],
   "summary": {
-    "pass": 211,
+    "pass": 226,
     "warn": 0,
     "fail": 0
   },
@@ -1848,7 +1923,7 @@
     "testCasesPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_disclosure_control_test_cases.json",
     "testCasesSha256": "0a9cccdbfbd951ba6d04eeb762b9387ba50a13336e4ee4ade43ed976acb4c9c5",
     "validationPath": "web/src/data/life-path-nhats-disclosure-control-validation.json",
-    "validationSha256": "16de849198d312b6b5cca3acca4e16abc6272ed86dac7c4d1a678b848ef87d2d",
+    "validationSha256": "452908c103e63bac9f2c4faf7d5c74e0e77c7fb001a4575bcc4f7737cca71c12",
     "status": "PASS",
     "checks": [
       {
@@ -1949,7 +2024,7 @@
     "testCasesPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_survey_design_test_cases.json",
     "testCasesSha256": "a0d106ff0e70450ae96a4d8749037839cae27bfb7feb68bf2636681c46f500cc",
     "validationPath": "web/src/data/life-path-nhats-survey-design-validation.json",
-    "validationSha256": "404608006f4d6cba90f0c12668abdfadc501f12eeb089655f822fe2661f2a4e6",
+    "validationSha256": "24c8fbcfb219e25f8054a76345ef40c63cfb42f18303cceff055e895e4a5385f",
     "status": "PASS",
     "checks": [
       {
@@ -2070,7 +2145,7 @@
     "testCasesPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_missingness_route_test_cases.json",
     "testCasesSha256": "38928543b47a1f950de5925c2bb329fc544df4516aa882015240e7047674b4be",
     "validationPath": "web/src/data/life-path-nhats-missingness-route-validation.json",
-    "validationSha256": "b51da075466a68cd08bda96981755dc71e79309ae9b3bf34e1bf13f1288d36d1",
+    "validationSha256": "b99f9291f8f2933fd565fcfb10e11b3f64f57d2d6feefa453a67ca064c22b12b",
     "status": "PASS",
     "checks": [
       {
@@ -2200,9 +2275,98 @@
       "fail": 0
     }
   },
+  "nhatsRouteFieldDiscovery": {
+    "registerPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_route_field_discovery_register.json",
+    "registerSha256": "32d86995a0438e2104e6850334eefa63b30176b0767dd2229bc73a517ef5ade4",
+    "validationPath": "web/src/data/life-path-nhats-route-field-discovery-validation.json",
+    "validationSha256": "7175060ed0e50ad24fdafead0e2e5cc3082e6973aa4ef7cfca376e54d59cec2f",
+    "status": "PASS",
+    "checks": [
+      {
+        "id": "nhats-route-field-discovery-register-exists",
+        "status": "PASS",
+        "detail": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_route_field_discovery_register.json"
+      },
+      {
+        "id": "nhats-route-field-discovery-validation-exists",
+        "status": "PASS",
+        "detail": "web/src/data/life-path-nhats-route-field-discovery-validation.json"
+      },
+      {
+        "id": "nhats-route-field-discovery-schema",
+        "status": "PASS",
+        "detail": "schemaVersion='human-infra.life-path-nhats-route-field-discovery-register.v1'"
+      },
+      {
+        "id": "nhats-route-field-discovery-identity",
+        "status": "PASS",
+        "detail": "register must bind NHATS, route protocol, variable confirmation matrix and cannot-route status"
+      },
+      {
+        "id": "nhats-route-field-discovery-current-decision",
+        "status": "PASS",
+        "detail": "crosswalk field discovery may be true, but Colectica, data download, classifier, endpoint, weighted counts, public export, calibration and individual prediction must remain false"
+      },
+      {
+        "id": "nhats-route-field-discovery-source-evidence",
+        "status": "PASS",
+        "detail": "missing_evidence_ids=[]"
+      },
+      {
+        "id": "nhats-route-field-discovery-field-families",
+        "status": "PASS",
+        "detail": "missing_field_ids=[]"
+      },
+      {
+        "id": "nhats-route-field-discovery-sensitive-death-exclusion",
+        "status": "PASS",
+        "detail": "sensitive_excluded=['dm13mthdied', 'dm13yrdied', 'dm14mthdied', 'dm14yrdied']"
+      },
+      {
+        "id": "nhats-route-field-discovery-blocking-gates",
+        "status": "PASS",
+        "detail": "missing_gate_ids=[]"
+      },
+      {
+        "id": "nhats-route-field-discovery-prohibited-actions",
+        "status": "PASS",
+        "detail": "register must block real routing, weighted counts, public AI upload, individual death dates and crosswalk-as-Colectica substitution"
+      },
+      {
+        "id": "nhats-route-field-discovery-source-trace",
+        "status": "PASS",
+        "detail": "sourceTrace must include official Colectica, conditions, User Guide and R13/R14 crosswalk URLs"
+      },
+      {
+        "id": "nhats-route-field-discovery-validation-schema",
+        "status": "PASS",
+        "detail": "schemaVersion='human-infra.life-path-nhats-route-field-discovery-validation.v1'"
+      },
+      {
+        "id": "nhats-route-field-discovery-validation-source-hash",
+        "status": "PASS",
+        "detail": "route-field discovery validation must point back to current register hash"
+      },
+      {
+        "id": "nhats-route-field-discovery-validation-summary",
+        "status": "PASS",
+        "detail": "route-field discovery validation must pass with zero failed checks"
+      },
+      {
+        "id": "nhats-route-field-discovery-validation-boundary",
+        "status": "PASS",
+        "detail": "validation boundary must keep Colectica, weighted count and individual prediction gates blocked"
+      }
+    ],
+    "summary": {
+      "pass": 15,
+      "warn": 0,
+      "fail": 0
+    }
+  },
   "sensitivityAnalysis": {
     "path": "web/src/data/life-path-sensitivity-analysis.json",
-    "sha256": "8d2db388cbc99b89a717dbf41b54c994407eba7caa3ff0acc415ada4c0f1224a",
+    "sha256": "62a5a722d5a521fc3486395f42c8d9b459d3aa9fdd00e4f4a22a3ceb89b25b48",
     "status": "PASS",
     "checks": [
       {

@@ -81,6 +81,7 @@ longevity-evidence/
 │   │   ├── life_path_nhats_survey_design_test_cases.json
 │   │   ├── life_path_nhats_missingness_route_protocol.json
 │   │   ├── life_path_nhats_missingness_route_test_cases.json
+│   │   ├── life_path_nhats_route_field_discovery_register.json
 │   │   └── life_path_toy_model_scenarios.json
 │   ├── processed/
 │   └── raw/
@@ -109,6 +110,7 @@ longevity-evidence/
     ├── collect_core_data.py
     ├── collect_mvp_data.py
     ├── run_life_path_sensitivity_analysis.py
+    ├── validate_nhats_route_field_discovery.py
     ├── validate_nhats_disclosure_outputs.py
     ├── validate_nhats_survey_design_plan.py
     ├── validate_nhats_missingness_route_map.py
@@ -150,6 +152,7 @@ longevity-evidence/
 - `data/manual/life_path_nhats_cohort_flow_endpoint_protocol.json`：NHATS 队列流转与终点路由协议，记录 R13/R14 cohort-flow rows、R14 endpoint route classes、aggregate-only output contracts、n < 5 披露控制、readiness gates 和禁止动作；它只证明路由门禁已预注册，不授权下载、抽取、公开导出、校准或个体预测。
 - `data/manual/life_path_nhats_disclosure_control_policy.json`：NHATS 披露控制策略，记录 aggregate-only、n < 5 suppression、row-level export block、public AI upload block、允许/禁止输出类型和 validator 契约；它只证明公开导出门禁已机器化，不授权真实 NHATS 输出离开受控环境。
 - `data/manual/life_path_nhats_disclosure_control_test_cases.json`：NHATS 披露控制合成测试用例，覆盖安全聚合、小单元未抑制、小单元已抑制、行级泄漏、public AI upload 和禁止输出类型；它只保存 synthetic envelopes，不保存真实 NHATS 数据。
+- `data/manual/life_path_nhats_route_field_discovery_register.json`：NHATS R13/R14 路由字段发现登记表，记录官方 crosswalk 和 User Guide 中的身份、状态、proxy、facility、death、missingness、design weight 和 disclosure 候选字段；它只证明字段候选已登记，不替代 Colectica value labels、受控数据访问、分类器审查、披露审查或校准。
 - `data/raw/`：采集脚本保存的原始 API 响应和下载快照。
 - `data/processed/`：采集脚本生成的 JSONL 索引和汇总。
 - `scripts/collect_mvp_data.py`：采集 PubMed、OpenAlex、ClinicalTrials.gov 和 openFDA 标签数据。
@@ -157,7 +160,8 @@ longevity-evidence/
 - `scripts/run_life_path_toy_model.py`：读取合成场景并导出 `web/src/data/life-path-toy-model.json`，用于 `/model/` 的最小可运行定量展示。
 - `scripts/run_life_path_sensitivity_analysis.py`：读取合成场景和已导出的 toy model，生成 `web/src/data/life-path-sensitivity-analysis.json`，用于一因素扰动检查场景排序、开放边界和最敏感参数。
 - `scripts/validate_nhats_disclosure_outputs.py`：读取 NHATS 披露控制策略和合成测试用例，生成 `web/src/data/life-path-nhats-disclosure-control-validation.json`，验证 aggregate-only、small-cell suppression、row-level block、public AI block 和 forbidden output type 规则。
-- `scripts/audit_life_path_toy_model.py`：审计生成后的生命路径 toy model、合成敏感性分析、校准预备契约、候选数据源注册表、数据源 Source Cards、Data Card 模板、NHATS Data Card、NHATS 变量字典、NHATS extraction manifest、NHATS acquisition readiness 机器契约、NHATS file-tier table、NHATS first estimand protocol、NHATS variable confirmation matrix、NHATS cohort-flow endpoint protocol 和 NHATS disclosure-control validation，输出机器可读 JSON 和人可读 Markdown，检查模型卡、来源 hash、生存曲线、概率范围、LEV 开放边界、敏感性参数覆盖、校准预备字段、候选数据源治理边界、数据卡准入文档、提取前治理门禁、准入门机器化状态、文件层级覆盖、第一版 estimand 研究设计门、变量确认门、队列流转/终点路由/披露控制门、合成 disclosure validator 结果和禁止个体死亡日期字段。
+- `scripts/validate_nhats_route_field_discovery.py`：读取 NHATS route-field discovery register，生成 `web/src/data/life-path-nhats-route-field-discovery-validation.json`，验证官方字段发现仍然保持 Colectica、数据访问、分类器、加权统计、公开导出、校准和个体预测阻塞。
+- `scripts/audit_life_path_toy_model.py`：审计生成后的生命路径 toy model、合成敏感性分析、校准预备契约、候选数据源注册表、数据源 Source Cards、Data Card 模板、NHATS Data Card、NHATS 变量字典、NHATS extraction manifest、NHATS acquisition readiness 机器契约、NHATS file-tier table、NHATS first estimand protocol、NHATS variable confirmation matrix、NHATS cohort-flow endpoint protocol、NHATS disclosure-control validation、NHATS survey-design validation、NHATS missingness-route validation 和 NHATS route-field discovery validation，输出机器可读 JSON 和人可读 Markdown，检查模型卡、来源 hash、生存曲线、概率范围、LEV 开放边界、敏感性参数覆盖、校准预备字段、候选数据源治理边界、数据卡准入文档、提取前治理门禁、准入门机器化状态、文件层级覆盖、第一版 estimand 研究设计门、变量确认门、队列流转/终点路由/披露控制门、合成 disclosure/survey/missingness validator 结果、官方字段发现边界和禁止个体死亡日期字段。
 
 ## 依赖关系
 

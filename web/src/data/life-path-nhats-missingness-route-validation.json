@@ -1,6 +1,6 @@
 {
   "schemaVersion": "human-infra.life-path-nhats-missingness-route-validation.v1",
-  "generatedAt": "2026-07-02T03:49:23.906324+00:00",
+  "generatedAt": "2026-07-02T04:08:40.729621+00:00",
   "protocolPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_missingness_route_protocol.json",
   "protocolSha256": "e5f68ca68fd44aff81e2146eb2fa75534aab10440129b42f218f5473386e12fd",
   "testCasesPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_missingness_route_test_cases.json",

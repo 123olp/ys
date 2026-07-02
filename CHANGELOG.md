@@ -4,6 +4,7 @@ All notable repository structure changes are recorded here.
 
 ## 2026-07-02
 
+- Added a machine-readable NHATS route-field discovery register, validator script, generated Web validation report and audit coverage, recording official R13/R14 crosswalk route-field candidates while keeping Colectica value labels, governed data access, classifier review, weighted route counts, public export, calibration and individual prediction blocked.
 - Added a machine-readable NHATS missingness / endpoint-route protocol, synthetic route envelopes, validator script, generated Web validation report and audit coverage, enforcing death-boundary dominance, missingness-as-not-outcome, self/proxy/facility route separation, alive/death conflict blocking and n < 5 suppression before endpoint classification, weighted route counts, calibration or public export.
 - Added a machine-readable NHATS survey-design protocol, synthetic allow/block test cases, validator script, generated Web validation report and audit coverage, enforcing weight, strata, PSU/variance-unit, variance-method, route-map and disclosure prerequisites before any weighted estimate, variance estimate, population inference or calibration claim.
 - Added a machine-readable NHATS disclosure-control policy, synthetic allow/block test cases, validator script, generated Web validation report and audit coverage, enforcing aggregate-only output, n < 5 suppression, row-level blocking, public-AI blocking and forbidden-output rules before any public export claim.

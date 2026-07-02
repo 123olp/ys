@@ -3,7 +3,7 @@
 - Overall status: `PASS`
 - Model path: `web/src/data/life-path-toy-model.json`
 - Model SHA-256: `a4c92209d79d20579bf1f575d5ebf07ffe5be9ccaf6bf3f3eef08efa287b5377`
-- Generated at: `2026-07-02T03:49:23.961996+00:00`
+- Generated at: `2026-07-02T04:08:40.900253+00:00`
 
 ## Checks
 
@@ -209,6 +209,21 @@
 | `nhats-missingness-route-validation-case-results` | `PASS` | missing_validation_case_ids=[] |
 | `nhats-missingness-route-validation-route-coverage` | `PASS` | observed_route_classes=['alive_facility_or_residential_route', 'alive_proxy_interview', 'alive_self_interview', 'decedent_or_death_boundary', 'missing_or_nonresponse', 'not_classifiable', 'suppressed_small_cell'] |
 | `nhats-missingness-route-validation-boundary` | `PASS` | missingness-route validation report must preserve synthetic-only, no-real-data, no-calibration and no-individual-prediction boundaries |
+| `nhats-route-field-discovery-register-exists` | `PASS` | domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_route_field_discovery_register.json |
+| `nhats-route-field-discovery-validation-exists` | `PASS` | web/src/data/life-path-nhats-route-field-discovery-validation.json |
+| `nhats-route-field-discovery-schema` | `PASS` | schemaVersion='human-infra.life-path-nhats-route-field-discovery-register.v1' |
+| `nhats-route-field-discovery-identity` | `PASS` | register must bind NHATS, route protocol, variable confirmation matrix and cannot-route status |
+| `nhats-route-field-discovery-current-decision` | `PASS` | crosswalk field discovery may be true, but Colectica, data download, classifier, endpoint, weighted counts, public export, calibration and individual prediction must remain false |
+| `nhats-route-field-discovery-source-evidence` | `PASS` | missing_evidence_ids=[] |
+| `nhats-route-field-discovery-field-families` | `PASS` | missing_field_ids=[] |
+| `nhats-route-field-discovery-sensitive-death-exclusion` | `PASS` | sensitive_excluded=['dm13mthdied', 'dm13yrdied', 'dm14mthdied', 'dm14yrdied'] |
+| `nhats-route-field-discovery-blocking-gates` | `PASS` | missing_gate_ids=[] |
+| `nhats-route-field-discovery-prohibited-actions` | `PASS` | register must block real routing, weighted counts, public AI upload, individual death dates and crosswalk-as-Colectica substitution |
+| `nhats-route-field-discovery-source-trace` | `PASS` | sourceTrace must include official Colectica, conditions, User Guide and R13/R14 crosswalk URLs |
+| `nhats-route-field-discovery-validation-schema` | `PASS` | schemaVersion='human-infra.life-path-nhats-route-field-discovery-validation.v1' |
+| `nhats-route-field-discovery-validation-source-hash` | `PASS` | route-field discovery validation must point back to current register hash |
+| `nhats-route-field-discovery-validation-summary` | `PASS` | route-field discovery validation must pass with zero failed checks |
+| `nhats-route-field-discovery-validation-boundary` | `PASS` | validation boundary must keep Colectica, weighted count and individual prediction gates blocked |
 | `sensitivity-analysis-exists` | `PASS` | web/src/data/life-path-sensitivity-analysis.json |
 | `sensitivity-schema-version` | `PASS` | schemaVersion='human-infra.life-path-sensitivity.v1' |
 | `sensitivity-source-model-hash` | `PASS` | sensitivity output must point back to the generated model path and sha256 |
@@ -302,7 +317,7 @@
 - Disclosure test cases path: `domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_disclosure_control_test_cases.json`
 - Disclosure test cases SHA-256: `0a9cccdbfbd951ba6d04eeb762b9387ba50a13336e4ee4ade43ed976acb4c9c5`
 - Disclosure validation path: `web/src/data/life-path-nhats-disclosure-control-validation.json`
-- Disclosure validation SHA-256: `16de849198d312b6b5cca3acca4e16abc6272ed86dac7c4d1a678b848ef87d2d`
+- Disclosure validation SHA-256: `452908c103e63bac9f2c4faf7d5c74e0e77c7fb001a4575bcc4f7737cca71c12`
 - Disclosure validation status: `PASS`
 - Boundary: disclosure-control validation proves only that synthetic output envelopes obey aggregate-only, n<5 suppression, row-level blocking, public-AI blocking and forbidden-output rules; it does not authorize real NHATS extraction, public export, calibration, validation or individual prediction.
 
@@ -313,7 +328,7 @@
 - Survey-design test cases path: `domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_survey_design_test_cases.json`
 - Survey-design test cases SHA-256: `a0d106ff0e70450ae96a4d8749037839cae27bfb7feb68bf2636681c46f500cc`
 - Survey-design validation path: `web/src/data/life-path-nhats-survey-design-validation.json`
-- Survey-design validation SHA-256: `404608006f4d6cba90f0c12668abdfadc501f12eeb089655f822fe2661f2a4e6`
+- Survey-design validation SHA-256: `24c8fbcfb219e25f8054a76345ef40c63cfb42f18303cceff055e895e4a5385f`
 - Survey-design validation status: `PASS`
 - Boundary: survey-design validation proves only that synthetic design-plan envelopes enforce weights, strata, PSU/variance-unit, variance-method, route-map and disclosure prerequisites; it does not authorize real NHATS weighted estimates, population inference, calibration, validation or individual prediction.
 
@@ -324,14 +339,23 @@
 - Missingness-route test cases path: `domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_missingness_route_test_cases.json`
 - Missingness-route test cases SHA-256: `38928543b47a1f950de5925c2bb329fc544df4516aa882015240e7047674b4be`
 - Missingness-route validation path: `web/src/data/life-path-nhats-missingness-route-validation.json`
-- Missingness-route validation SHA-256: `b51da075466a68cd08bda96981755dc71e79309ae9b3bf34e1bf13f1288d36d1`
+- Missingness-route validation SHA-256: `b99f9291f8f2933fd565fcfb10e11b3f64f57d2d6feefa453a67ca064c22b12b`
 - Missingness-route validation status: `PASS`
 - Boundary: missingness-route validation proves only that synthetic route envelopes separate death, self interview, proxy interview, facility route, missingness, conflicts and small-cell suppression; it does not authorize real NHATS route classification, weighted route counts, calibration, validation or individual prediction.
+
+## NHATS Route Field Discovery
+
+- Route-field discovery register path: `domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_route_field_discovery_register.json`
+- Route-field discovery register SHA-256: `32d86995a0438e2104e6850334eefa63b30176b0767dd2229bc73a517ef5ade4`
+- Route-field discovery validation path: `web/src/data/life-path-nhats-route-field-discovery-validation.json`
+- Route-field discovery validation SHA-256: `7175060ed0e50ad24fdafead0e2e5cc3082e6973aa4ef7cfca376e54d59cec2f`
+- Route-field discovery validation status: `PASS`
+- Boundary: route-field discovery records official R13/R14 crosswalk candidates, but it does not replace Colectica value-label confirmation, governed file access, classifier review, disclosure review, weighted route counts, calibration, validation or individual prediction.
 
 ## Sensitivity Analysis
 
 - Sensitivity path: `web/src/data/life-path-sensitivity-analysis.json`
-- Sensitivity SHA-256: `8d2db388cbc99b89a717dbf41b54c994407eba7caa3ff0acc415ada4c0f1224a`
+- Sensitivity SHA-256: `62a5a722d5a521fc3486395f42c8d9b459d3aa9fdd00e4f4a22a3ceb89b25b48`
 - Sensitivity status: `PASS`
 - Boundary: sensitivity analysis is synthetic one-factor-at-a-time stress testing; it does not prove empirical parameter values, causal effects, calibrated prediction, or individual usefulness.
 

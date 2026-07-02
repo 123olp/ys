@@ -184,6 +184,22 @@ DEFAULT_NHATS_MISSINGNESS_ROUTE_TEST_CASES = (
 DEFAULT_NHATS_MISSINGNESS_ROUTE_VALIDATION = (
     REPO_ROOT / "web" / "src" / "data" / "life-path-nhats-missingness-route-validation.json"
 )
+DEFAULT_NHATS_ROUTE_FIELD_DISCOVERY_REGISTER = (
+    REPO_ROOT
+    / "domains"
+    / "c1-boundary-rewriting"
+    / "longevity-evidence"
+    / "data"
+    / "manual"
+    / "life_path_nhats_route_field_discovery_register.json"
+)
+DEFAULT_NHATS_ROUTE_FIELD_DISCOVERY_VALIDATION = (
+    REPO_ROOT
+    / "web"
+    / "src"
+    / "data"
+    / "life-path-nhats-route-field-discovery-validation.json"
+)
 REQUIRED_MODEL_CARD_FIELDS = {
     "modelName",
     "modelClass",
@@ -512,6 +528,29 @@ REQUIRED_NHATS_MISSINGNESS_ROUTE_CASE_IDS = {
     "synthetic-conflicting-alive-and-decedent-flags",
     "synthetic-public-small-cell-unsuppressed",
     "synthetic-public-small-cell-suppressed",
+}
+REQUIRED_NHATS_ROUTE_FIELD_DISCOVERY_EVIDENCE_IDS = {
+    "nhats-cross-year-search-colectica",
+    "nhats-conditions-of-use-ai-and-small-cell",
+    "nhats-user-guide-proxy-prefixes",
+    "nhats-user-guide-weight-design",
+    "nhats-user-guide-missing-negative-codes",
+    "nhats-user-guide-lml-death-boundary",
+    "nhats-r14-crosswalk-route-fields",
+    "nhats-r13-crosswalk-route-fields",
+    "nhats-r14-crosswalk-design-fields",
+    "nhats-r13-crosswalk-design-fields",
+}
+REQUIRED_NHATS_ROUTE_FIELD_DISCOVERY_GATE_IDS = {
+    "colectica-value-labels-confirmed",
+    "public-use-file-access-confirmed",
+    "canonical-file-format-selected",
+    "sensitive-death-date-exclusion-reviewed",
+    "route-value-crosswalk-reviewed",
+    "negative-missing-code-map-reviewed",
+    "survey-design-linkage-reviewed",
+    "route-classifier-code-reviewed",
+    "disclosure-output-review-ready",
 }
 
 
@@ -3706,6 +3745,279 @@ def audit_nhats_missingness_route(
     }
 
 
+def audit_nhats_route_field_discovery(
+    register_path: Path,
+    validation_path: Path,
+) -> dict[str, Any]:
+    checks: list[dict[str, Any]] = []
+    register_exists = register_path.exists()
+    validation_exists = validation_path.exists()
+    add_check(
+        checks,
+        "nhats-route-field-discovery-register-exists",
+        status_from_bool(register_exists),
+        str(register_path.relative_to(REPO_ROOT)),
+    )
+    add_check(
+        checks,
+        "nhats-route-field-discovery-validation-exists",
+        status_from_bool(validation_exists),
+        str(validation_path.relative_to(REPO_ROOT)),
+    )
+
+    register = load_json(register_path) if register_exists else {}
+    validation = load_json(validation_path) if validation_exists else {}
+
+    schema_ok = (
+        register.get("schemaVersion")
+        == "human-infra.life-path-nhats-route-field-discovery-register.v1"
+    )
+    add_check(
+        checks,
+        "nhats-route-field-discovery-schema",
+        status_from_bool(register_exists and schema_ok),
+        f"schemaVersion={register.get('schemaVersion')!r}",
+    )
+
+    identity_ok = (
+        register.get("sourceId") == "nhats"
+        and register.get("registerId")
+        == "nhats-r13-r14-route-field-discovery-register-draft"
+        and register.get("routeProtocolId")
+        == "nhats-r13-r14-missingness-route-protocol-draft"
+        and register.get("variableConfirmationMatrixId")
+        == "nhats-r13-r14-variable-confirmation-matrix-draft"
+        and register.get("status") == "crosswalk-confirmed-colectica-pending-cannot-route"
+    )
+    add_check(
+        checks,
+        "nhats-route-field-discovery-identity",
+        status_from_bool(register_exists and identity_ok),
+        "register must bind NHATS, route protocol, variable confirmation matrix and cannot-route status",
+    )
+
+    decision = register.get("fieldDiscoveryDecision")
+    decision_ok = (
+        isinstance(decision, dict)
+        and decision.get("routeFieldsDiscoveredFromOfficialCrosswalk") is True
+        and decision.get("colecticaValueLabelsConfirmed") is False
+        and decision.get("publicUseDataDownloaded") is False
+        and decision.get("routeClassifierAllowed") is False
+        and decision.get("endpointClassificationAllowed") is False
+        and decision.get("weightedRouteCountsAllowed") is False
+        and decision.get("publicExportAllowed") is False
+        and decision.get("calibrationAllowed") is False
+        and decision.get("individualPredictionAllowed") is False
+    )
+    add_check(
+        checks,
+        "nhats-route-field-discovery-current-decision",
+        status_from_bool(register_exists and decision_ok),
+        "crosswalk field discovery may be true, but Colectica, data download, classifier, endpoint, weighted counts, public export, calibration and individual prediction must remain false",
+    )
+
+    evidence = register.get("sourceEvidence")
+    observed_evidence_ids: set[str] = set()
+    evidence_ok = isinstance(evidence, list)
+    if isinstance(evidence, list):
+        for row in evidence:
+            if not isinstance(row, dict):
+                evidence_ok = False
+                continue
+            evidence_id = row.get("id")
+            if isinstance(evidence_id, str):
+                observed_evidence_ids.add(evidence_id)
+            if not (
+                isinstance(row.get("url"), str)
+                and row["url"].startswith("https://")
+                and isinstance(row.get("supports"), list)
+                and isinstance(row.get("doesNotSupport"), list)
+            ):
+                evidence_ok = False
+    missing_evidence_ids = sorted(
+        REQUIRED_NHATS_ROUTE_FIELD_DISCOVERY_EVIDENCE_IDS - observed_evidence_ids
+    )
+    add_check(
+        checks,
+        "nhats-route-field-discovery-source-evidence",
+        status_from_bool(register_exists and evidence_ok and not missing_evidence_ids),
+        f"missing_evidence_ids={missing_evidence_ids}",
+    )
+
+    families = register.get("routeFieldFamilies")
+    observed_field_ids: set[str] = set()
+    families_ok = isinstance(families, list)
+    if isinstance(families, list):
+        for family in families:
+            if not isinstance(family, dict):
+                families_ok = False
+                continue
+            field_id = family.get("requiredRouteFieldId")
+            if isinstance(field_id, str):
+                observed_field_ids.add(field_id)
+            if (
+                family.get("classificationReadiness") is not False
+                or not str(family.get("status", "")).strip()
+                or not isinstance(family.get("candidateVariables"), dict)
+                or not isinstance(family.get("evidenceIds"), list)
+                or not isinstance(family.get("remainingChecks"), list)
+            ):
+                families_ok = False
+    missing_field_ids = sorted(
+        REQUIRED_NHATS_MISSINGNESS_ROUTE_FIELD_IDS - observed_field_ids
+    )
+    add_check(
+        checks,
+        "nhats-route-field-discovery-field-families",
+        status_from_bool(register_exists and families_ok and not missing_field_ids),
+        f"missing_field_ids={missing_field_ids}",
+    )
+
+    death_family: dict[str, Any] = {}
+    if isinstance(families, list):
+        death_family = next(
+            (
+                family
+                for family in families
+                if isinstance(family, dict)
+                and family.get("requiredRouteFieldId") == "death_decedent_indicator"
+            ),
+            {},
+        )
+    sensitive_excluded: set[str] = set()
+    if isinstance(death_family, dict):
+        sensitive = death_family.get("sensitiveExcludedVariables")
+        if isinstance(sensitive, dict):
+            for values in sensitive.values():
+                if isinstance(values, list):
+                    sensitive_excluded.update(str(value) for value in values)
+    sensitive_ok = {
+        "dm13mthdied",
+        "dm13yrdied",
+        "dm14mthdied",
+        "dm14yrdied",
+    }.issubset(sensitive_excluded)
+    add_check(
+        checks,
+        "nhats-route-field-discovery-sensitive-death-exclusion",
+        status_from_bool(
+            register_exists
+            and sensitive_ok
+            and has_text(register.get("prohibitedActions", []), "individual death dates")
+        ),
+        f"sensitive_excluded={sorted(sensitive_excluded)}",
+    )
+
+    gates = register.get("blockingGates")
+    observed_gate_ids: set[str] = set()
+    gates_ok = isinstance(gates, list)
+    if isinstance(gates, list):
+        for gate in gates:
+            if not isinstance(gate, dict):
+                gates_ok = False
+                continue
+            gate_id = gate.get("id")
+            if isinstance(gate_id, str):
+                observed_gate_ids.add(gate_id)
+            if gate.get("status") != "missing" or gate.get("blocksRouteClassification") is not True:
+                gates_ok = False
+    missing_gate_ids = sorted(
+        REQUIRED_NHATS_ROUTE_FIELD_DISCOVERY_GATE_IDS - observed_gate_ids
+    )
+    add_check(
+        checks,
+        "nhats-route-field-discovery-blocking-gates",
+        status_from_bool(register_exists and gates_ok and not missing_gate_ids),
+        f"missing_gate_ids={missing_gate_ids}",
+    )
+
+    prohibited = register.get("prohibitedActions", [])
+    prohibited_ok = (
+        has_text(prohibited, "classify real NHATS records")
+        and has_text(prohibited, "weighted route counts")
+        and has_text(prohibited, "public AI")
+        and has_text(prohibited, "individual death dates")
+        and has_text(prohibited, "Colectica value-label confirmation")
+    )
+    add_check(
+        checks,
+        "nhats-route-field-discovery-prohibited-actions",
+        status_from_bool(register_exists and prohibited_ok),
+        "register must block real routing, weighted counts, public AI upload, individual death dates and crosswalk-as-Colectica substitution",
+    )
+
+    source_trace = register.get("sourceTrace")
+    source_trace_ok = (
+        isinstance(source_trace, list)
+        and all(isinstance(url, str) and url.startswith("https://") for url in source_trace)
+        and has_text(source_trace, "cross-year-search")
+        and has_text(source_trace, "conditions-of-use")
+        and has_text(source_trace, "NHATSUserGuideR14")
+        and has_text(source_trace, "NHATSR13Instrument-VariableCrosswalk")
+        and has_text(source_trace, "NHATSR14Instrument-VariableCrosswalk")
+    )
+    add_check(
+        checks,
+        "nhats-route-field-discovery-source-trace",
+        status_from_bool(register_exists and source_trace_ok),
+        "sourceTrace must include official Colectica, conditions, User Guide and R13/R14 crosswalk URLs",
+    )
+
+    validation_schema_ok = (
+        validation.get("schemaVersion")
+        == "human-infra.life-path-nhats-route-field-discovery-validation.v1"
+    )
+    add_check(
+        checks,
+        "nhats-route-field-discovery-validation-schema",
+        status_from_bool(validation_exists and validation_schema_ok),
+        f"schemaVersion={validation.get('schemaVersion')!r}",
+    )
+    validation_source_ok = (
+        validation.get("registerPath") == str(register_path.relative_to(REPO_ROOT))
+        and validation.get("registerSha256") == sha256_file(register_path)
+    )
+    add_check(
+        checks,
+        "nhats-route-field-discovery-validation-source-hash",
+        status_from_bool(validation_exists and validation_source_ok),
+        "route-field discovery validation must point back to current register hash",
+    )
+    validation_summary = validation.get("summary")
+    validation_summary_ok = (
+        validation.get("overallStatus") == "PASS"
+        and isinstance(validation_summary, dict)
+        and validation_summary.get("fail") == 0
+    )
+    add_check(
+        checks,
+        "nhats-route-field-discovery-validation-summary",
+        status_from_bool(validation_exists and validation_summary_ok),
+        "route-field discovery validation must pass with zero failed checks",
+    )
+    boundary_ok = (
+        has_text(validation.get("boundary"), "Colectica value labels")
+        and has_text(validation.get("boundary"), "weighted route counts")
+        and has_text(validation.get("boundary"), "individual prediction")
+    )
+    add_check(
+        checks,
+        "nhats-route-field-discovery-validation-boundary",
+        status_from_bool(validation_exists and boundary_ok),
+        "validation boundary must keep Colectica, weighted count and individual prediction gates blocked",
+    )
+
+    return {
+        "registerPath": str(register_path.relative_to(REPO_ROOT)),
+        "registerSha256": sha256_file(register_path) if register_exists else None,
+        "validationPath": str(validation_path.relative_to(REPO_ROOT)),
+        "validationSha256": sha256_file(validation_path) if validation_exists else None,
+        "status": "PASS" if summarize_checks(checks)["fail"] == 0 else "FAIL",
+        "checks": checks,
+        "summary": summarize_checks(checks),
+    }
+
+
 def audit_sensitivity_analysis(
     sensitivity_path: Path,
     model_data: dict[str, Any],
@@ -3958,6 +4270,8 @@ def audit_model(
     nhats_missingness_route_protocol_path: Path,
     nhats_missingness_route_test_cases_path: Path,
     nhats_missingness_route_validation_path: Path,
+    nhats_route_field_discovery_register_path: Path,
+    nhats_route_field_discovery_validation_path: Path,
 ) -> dict[str, Any]:
     checks: list[dict[str, Any]] = []
     schema_version = data.get("schemaVersion")
@@ -4164,6 +4478,10 @@ def audit_model(
         nhats_missingness_route_test_cases_path,
         nhats_missingness_route_validation_path,
     )
+    nhats_route_field_discovery_audit = audit_nhats_route_field_discovery(
+        nhats_route_field_discovery_register_path,
+        nhats_route_field_discovery_validation_path,
+    )
     sensitivity_audit = audit_sensitivity_analysis(sensitivity_path, data, model_path)
     checks.extend(readiness_audit["checks"])
     checks.extend(data_sources_audit["checks"])
@@ -4178,6 +4496,7 @@ def audit_model(
     checks.extend(nhats_disclosure_control_audit["checks"])
     checks.extend(nhats_survey_design_audit["checks"])
     checks.extend(nhats_missingness_route_audit["checks"])
+    checks.extend(nhats_route_field_discovery_audit["checks"])
     checks.extend(sensitivity_audit["checks"])
     failed = [check for check in checks if check["status"] == "FAIL"]
     overall = "PASS" if not failed else "FAIL"
@@ -4203,6 +4522,7 @@ def audit_model(
         "nhatsDisclosureControl": nhats_disclosure_control_audit,
         "nhatsSurveyDesign": nhats_survey_design_audit,
         "nhatsMissingnessRoute": nhats_missingness_route_audit,
+        "nhatsRouteFieldDiscovery": nhats_route_field_discovery_audit,
         "sensitivityAnalysis": sensitivity_audit,
     }
 
@@ -4334,6 +4654,15 @@ def render_markdown(audit: dict[str, Any]) -> str:
             f"- Missingness-route validation status: `{audit['nhatsMissingnessRoute']['status']}`",
             "- Boundary: missingness-route validation proves only that synthetic route envelopes separate death, self interview, proxy interview, facility route, missingness, conflicts and small-cell suppression; it does not authorize real NHATS route classification, weighted route counts, calibration, validation or individual prediction.",
             "",
+            "## NHATS Route Field Discovery",
+            "",
+            f"- Route-field discovery register path: `{audit['nhatsRouteFieldDiscovery']['registerPath']}`",
+            f"- Route-field discovery register SHA-256: `{audit['nhatsRouteFieldDiscovery']['registerSha256']}`",
+            f"- Route-field discovery validation path: `{audit['nhatsRouteFieldDiscovery']['validationPath']}`",
+            f"- Route-field discovery validation SHA-256: `{audit['nhatsRouteFieldDiscovery']['validationSha256']}`",
+            f"- Route-field discovery validation status: `{audit['nhatsRouteFieldDiscovery']['status']}`",
+            "- Boundary: route-field discovery records official R13/R14 crosswalk candidates, but it does not replace Colectica value-label confirmation, governed file access, classifier review, disclosure review, weighted route counts, calibration, validation or individual prediction.",
+            "",
             "## Sensitivity Analysis",
             "",
             f"- Sensitivity path: `{audit['sensitivityAnalysis']['path']}`",
@@ -4452,6 +4781,16 @@ def parse_args() -> argparse.Namespace:
         type=Path,
         default=DEFAULT_NHATS_MISSINGNESS_ROUTE_VALIDATION,
     )
+    parser.add_argument(
+        "--nhats-route-field-discovery-register",
+        type=Path,
+        default=DEFAULT_NHATS_ROUTE_FIELD_DISCOVERY_REGISTER,
+    )
+    parser.add_argument(
+        "--nhats-route-field-discovery-validation",
+        type=Path,
+        default=DEFAULT_NHATS_ROUTE_FIELD_DISCOVERY_VALIDATION,
+    )
     parser.add_argument("--json-out", type=Path, default=DEFAULT_JSON_OUT)
     parser.add_argument("--md-out", type=Path, default=DEFAULT_MD_OUT)
     return parser.parse_args()
@@ -4492,6 +4831,12 @@ def main() -> int:
     nhats_missingness_route_validation_path = (
         args.nhats_missingness_route_validation.resolve()
     )
+    nhats_route_field_discovery_register_path = (
+        args.nhats_route_field_discovery_register.resolve()
+    )
+    nhats_route_field_discovery_validation_path = (
+        args.nhats_route_field_discovery_validation.resolve()
+    )
     audit = audit_model(
         load_json(model_path),
         model_path,
@@ -4517,6 +4862,8 @@ def main() -> int:
         nhats_missingness_route_protocol_path,
         nhats_missingness_route_test_cases_path,
         nhats_missingness_route_validation_path,
+        nhats_route_field_discovery_register_path,
+        nhats_route_field_discovery_validation_path,
     )
     args.json_out.parent.mkdir(parents=True, exist_ok=True)
     with args.json_out.open("w", encoding="utf-8") as handle:

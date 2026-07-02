@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "human-infra.life-path-nhats-route-field-discovery-validation.v1",
+  "generatedAt": "2026-07-02T04:08:40.843658+00:00",
+  "sourceId": "nhats",
+  "registerPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_route_field_discovery_register.json",
+  "registerSha256": "32d86995a0438e2104e6850334eefa63b30176b0767dd2229bc73a517ef5ade4",
+  "overallStatus": "PASS",
+  "summary": {
+    "pass": 11,
+    "fail": 0
+  },
+  "checks": [
+    {
+      "id": "schema-version",
+      "status": "PASS",
+      "detail": "schemaVersion='human-infra.life-path-nhats-route-field-discovery-register.v1'"
+    },
+    {
+      "id": "register-identity",
+      "status": "PASS",
+      "detail": "register must bind NHATS, route protocol, variable matrix and cannot-route status"
+    },
+    {
+      "id": "field-discovery-decision-boundary",
+      "status": "PASS",
+      "detail": "official crosswalk discovery may be true, but Colectica, data download, classifier, endpoint, weighted counts, public export, calibration and individual prediction must remain false"
+    },
+    {
+      "id": "required-source-evidence",
+      "status": "PASS",
+      "detail": "missing=[]"
+    },
+    {
+      "id": "source-evidence-boundaries",
+      "status": "PASS",
+      "detail": "every source evidence row must include https URL, supports and doesNotSupport boundaries"
+    },
+    {
+      "id": "required-route-field-families",
+      "status": "PASS",
+      "detail": "missing=[]"
+    },
+    {
+      "id": "field-families-not-classification-ready",
+      "status": "PASS",
+      "detail": "every discovered field family must remain not classification-ready and retain evidence plus remaining checks"
+    },
+    {
+      "id": "sensitive-death-date-fields-excluded",
+      "status": "PASS",
+      "detail": "excluded=['dm13mthdied', 'dm13yrdied', 'dm14mthdied', 'dm14yrdied']"
+    },
+    {
+      "id": "required-blocking-gates",
+      "status": "PASS",
+      "detail": "missing=[]"
+    },
+    {
+      "id": "prohibited-actions-boundary",
+      "status": "PASS",
+      "detail": "register must prohibit premature routing, weighted counts, public AI, individual death dates and crosswalk-as-Colectica substitution"
+    },
+    {
+      "id": "official-source-trace",
+      "status": "PASS",
+      "detail": "required_tokens=['NHATSR13Instrument-VariableCrosswalk', 'NHATSR14Instrument-VariableCrosswalk', 'NHATSUserGuideR14', 'conditions-of-use', 'cross-year-search', 'nhats/13', 'nhats/14']"
+    }
+  ],
+  "boundary": "Official crosswalk field discovery is registered, but Colectica value labels, governed public-use access, route classifier review, weighted route counts, public export, calibration and individual prediction remain blocked."
+}

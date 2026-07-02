@@ -1,0 +1,513 @@
+{
+  "schemaVersion": "human-infra.life-path-nhats-route-field-discovery-register.v1",
+  "sourceId": "nhats",
+  "sourceName": "National Health and Aging Trends Study",
+  "registerId": "nhats-r13-r14-route-field-discovery-register-draft",
+  "routeProtocolId": "nhats-r13-r14-missingness-route-protocol-draft",
+  "variableConfirmationMatrixId": "nhats-r13-r14-variable-confirmation-matrix-draft",
+  "reviewDate": "2026-07-02",
+  "reviewer": "tradecatlabs",
+  "status": "crosswalk-confirmed-colectica-pending-cannot-route",
+  "registerPurpose": "Record official NHATS R13/R14 crosswalk and User Guide route-field candidates before any endpoint-route classifier, extraction script, weighted count or calibration model is allowed.",
+  "fieldDiscoveryDecision": {
+    "routeFieldsDiscoveredFromOfficialCrosswalk": true,
+    "colecticaValueLabelsConfirmed": false,
+    "publicUseDataDownloaded": false,
+    "routeClassifierAllowed": false,
+    "endpointClassificationAllowed": false,
+    "weightedRouteCountsAllowed": false,
+    "publicExportAllowed": false,
+    "calibrationAllowed": false,
+    "individualPredictionAllowed": false,
+    "reason": "R13/R14 route-field candidates are visible in official crosswalks and the R14 User Guide, but Colectica value labels, governed data access, file-level extraction rules, route classifier review and disclosure review remain missing."
+  },
+  "sourceEvidence": [
+    {
+      "id": "nhats-cross-year-search-colectica",
+      "sourceType": "official-web-page",
+      "url": "https://www.nhats.org/data-access/cross-year-search",
+      "evidenceUse": "Colectica is the source for variable search, value labels, question text and cross-year metadata; final route values remain Colectica-pending.",
+      "supports": [
+        "colectica-source-of-truth",
+        "value-labels-not-confirmed"
+      ],
+      "doesNotSupport": [
+        "public-use-data-downloaded",
+        "route-classifier-ready",
+        "endpoint-classification-ready"
+      ]
+    },
+    {
+      "id": "nhats-conditions-of-use-ai-and-small-cell",
+      "sourceType": "official-policy",
+      "url": "https://www.nhats.org/conditions-of-use",
+      "evidenceUse": "NHATS conditions require controlled use, block public AI upload without express approval and require aggregation/suppression for small cells.",
+      "supports": [
+        "public-ai-upload-block",
+        "aggregate-only-public-output",
+        "small-cell-suppression-gate"
+      ],
+      "doesNotSupport": [
+        "row-level-public-export",
+        "individual-death-date-output",
+        "unsafe-public-prediction"
+      ]
+    },
+    {
+      "id": "nhats-user-guide-proxy-prefixes",
+      "sourceType": "official-user-guide",
+      "url": "https://nhats.org/sites/default/files/public-documentation/NHATSUserGuideR14_02102026.pdf",
+      "evidenceUse": "R14 User Guide describes proxy interview handling and self/proxy variable-name prefixes, including self variables and proxy variables.",
+      "supports": [
+        "proxy-route-family",
+        "self-proxy-separation"
+      ],
+      "doesNotSupport": [
+        "proxy-route-aggregation-ready",
+        "proxy-value-labels-confirmed"
+      ]
+    },
+    {
+      "id": "nhats-user-guide-weight-design",
+      "sourceType": "official-user-guide",
+      "url": "https://nhats.org/sites/default/files/public-documentation/NHATSUserGuideR14_02102026.pdf",
+      "evidenceUse": "R14 User Guide states public-use files include final analytic weight, PSU and strata, while replicate weights are separate files.",
+      "supports": [
+        "survey-design-route-linkage-required",
+        "weight-strata-variance-unit-family"
+      ],
+      "doesNotSupport": [
+        "weighted-estimator-reviewed",
+        "population-inference-ready"
+      ]
+    },
+    {
+      "id": "nhats-user-guide-missing-negative-codes",
+      "sourceType": "official-user-guide",
+      "url": "https://nhats.org/sites/default/files/public-documentation/NHATSUserGuideR14_02102026.pdf",
+      "evidenceUse": "R14 User Guide records negative missing-value conventions including inapplicable, refused, don't know, missing, deceased, nursing home, residential care and no prior round interview.",
+      "supports": [
+        "negative-missing-code-family",
+        "missingness-is-not-outcome"
+      ],
+      "doesNotSupport": [
+        "variable-specific-missing-map-ready",
+        "missingness-rate-ready"
+      ]
+    },
+    {
+      "id": "nhats-user-guide-lml-death-boundary",
+      "sourceType": "official-user-guide",
+      "url": "https://nhats.org/sites/default/files/public-documentation/NHATSUserGuideR14_02102026.pdf",
+      "evidenceUse": "R14 User Guide describes Last Month of Life interview identification and sensitive death-month/year boundaries.",
+      "supports": [
+        "death-boundary-family",
+        "sensitive-death-date-exclusion"
+      ],
+      "doesNotSupport": [
+        "individual-death-date-output",
+        "death-route-value-labels-confirmed"
+      ]
+    },
+    {
+      "id": "nhats-r14-crosswalk-route-fields",
+      "sourceType": "official-crosswalk",
+      "url": "https://nhats.org/sites/default/files/public-documentation/NHATSR14Instrument-VariableCrosswalk_02102026.pdf",
+      "evidenceUse": "R14 Instrument-Variable Crosswalk lists sample identity, status, breakoff, partial missing, facility, proxy, residence, death and design variables.",
+      "supports": [
+        "r14-route-field-candidates",
+        "r14-design-field-candidates"
+      ],
+      "doesNotSupport": [
+        "r14-route-value-labels-confirmed",
+        "r14-public-use-file-downloaded"
+      ]
+    },
+    {
+      "id": "nhats-r13-crosswalk-route-fields",
+      "sourceType": "official-crosswalk",
+      "url": "https://nhats.org/sites/default/files/public-documentation/NHATSR13Instrument-VariableCrosswalk_01212026_0.pdf",
+      "evidenceUse": "R13 Instrument-Variable Crosswalk lists sample identity, status, new-sample, breakoff, partial missing, facility, proxy, residence, death and design variables.",
+      "supports": [
+        "r13-route-field-candidates",
+        "r13-design-field-candidates"
+      ],
+      "doesNotSupport": [
+        "r13-route-value-labels-confirmed",
+        "r13-public-use-file-downloaded"
+      ]
+    },
+    {
+      "id": "nhats-r14-crosswalk-design-fields",
+      "sourceType": "official-crosswalk",
+      "url": "https://nhats.org/sites/default/files/public-documentation/NHATSR14Instrument-VariableCrosswalk_02102026.pdf",
+      "evidenceUse": "R14 crosswalk identifies annual final weight, replicate-weight family, variance unit and variance strata candidates.",
+      "supports": [
+        "r14-weight-linkage-candidates"
+      ],
+      "doesNotSupport": [
+        "weighted-route-counts-ready"
+      ]
+    },
+    {
+      "id": "nhats-r13-crosswalk-design-fields",
+      "sourceType": "official-crosswalk",
+      "url": "https://nhats.org/sites/default/files/public-documentation/NHATSR13Instrument-VariableCrosswalk_01212026_0.pdf",
+      "evidenceUse": "R13 crosswalk identifies annual final weight, replicate-weight family, variance unit and variance strata candidates.",
+      "supports": [
+        "r13-weight-linkage-candidates"
+      ],
+      "doesNotSupport": [
+        "weighted-route-counts-ready"
+      ]
+    }
+  ],
+  "routeFieldFamilies": [
+    {
+      "requiredRouteFieldId": "identity_join_key",
+      "modelRole": "Link the same sample person across R13 and R14 before any route or endpoint state can be interpreted.",
+      "candidateVariables": {
+        "r13": [
+          "spid",
+          "spidr12"
+        ],
+        "r14": [
+          "spid",
+          "spidr12"
+        ]
+      },
+      "status": "crosswalk-confirmed-colectica-pending",
+      "classificationReadiness": false,
+      "evidenceIds": [
+        "nhats-r13-crosswalk-route-fields",
+        "nhats-r14-crosswalk-route-fields"
+      ],
+      "remainingChecks": [
+        "confirm canonical public-use join key",
+        "confirm longitudinal linkage rule",
+        "confirm no restricted identifier is required"
+      ]
+    },
+    {
+      "requiredRouteFieldId": "round13_baseline_eligibility",
+      "modelRole": "Define the R13 denominator and baseline eligibility before any R14 transition or functional-survival route is counted.",
+      "candidateVariables": {
+        "r13": [
+          "r13status",
+          "r13statuscat",
+          "r13dcontnew",
+          "fl13newsample",
+          "fl13facility"
+        ],
+        "r14": [
+          "r14status",
+          "r14statuscat",
+          "r14dcontnew"
+        ]
+      },
+      "status": "crosswalk-confirmed-colectica-pending",
+      "classificationReadiness": false,
+      "evidenceIds": [
+        "nhats-r13-crosswalk-route-fields",
+        "nhats-r14-crosswalk-route-fields"
+      ],
+      "remainingChecks": [
+        "confirm R13 denominator inclusion values",
+        "confirm round-entry and carried-forward rules",
+        "confirm baseline facility handling"
+      ]
+    },
+    {
+      "requiredRouteFieldId": "round14_interview_status",
+      "modelRole": "Separate R14 interview, noninterview, partial, death-boundary and unresolved follow-up states.",
+      "candidateVariables": {
+        "r14": [
+          "r14status",
+          "r14statuscat",
+          "r14dcontnew",
+          "r14breakoffst",
+          "r14breakoffqt",
+          "fl14pt2miss"
+        ]
+      },
+      "derivedSignals": [
+        {
+          "candidate": "r14dlmlint",
+          "status": "user-guide-indicator-colectica-pending",
+          "reason": "User Guide describes r#dlmlint as an LML interview indicator, but exact R14 field/value use must be confirmed before route classification."
+        }
+      ],
+      "status": "crosswalk-confirmed-colectica-pending",
+      "classificationReadiness": false,
+      "evidenceIds": [
+        "nhats-r14-crosswalk-route-fields",
+        "nhats-user-guide-lml-death-boundary"
+      ],
+      "remainingChecks": [
+        "confirm value labels for R14 status variables",
+        "confirm partial interview and breakoff handling",
+        "confirm LML indicator location and public-use tier"
+      ]
+    },
+    {
+      "requiredRouteFieldId": "proxy_status",
+      "modelRole": "Keep alive self interview and alive proxy interview routes separate until aggregation is pre-registered.",
+      "candidateVariables": {
+        "r13": [
+          "is13resptype",
+          "op13proxy",
+          "op13whyproxy"
+        ],
+        "r14": [
+          "is14resptype",
+          "op14proxy",
+          "op14whyproxy"
+        ]
+      },
+      "status": "crosswalk-confirmed-colectica-pending",
+      "classificationReadiness": false,
+      "evidenceIds": [
+        "nhats-r13-crosswalk-route-fields",
+        "nhats-r14-crosswalk-route-fields",
+        "nhats-user-guide-proxy-prefixes"
+      ],
+      "remainingChecks": [
+        "confirm self/proxy value labels",
+        "confirm proxy substitution rule",
+        "pre-register whether proxy route is aggregated or reported separately"
+      ]
+    },
+    {
+      "requiredRouteFieldId": "facility_residential_status",
+      "modelRole": "Separate facility, nursing-home or residential-care route states from ordinary self/proxy interview routes.",
+      "candidateVariables": {
+        "r13": [
+          "r13dresid",
+          "fl13facility"
+        ],
+        "r14": [
+          "r14dresid",
+          "fl14facility"
+        ]
+      },
+      "status": "crosswalk-confirmed-colectica-pending",
+      "classificationReadiness": false,
+      "evidenceIds": [
+        "nhats-r13-crosswalk-route-fields",
+        "nhats-r14-crosswalk-route-fields",
+        "nhats-user-guide-missing-negative-codes"
+      ],
+      "remainingChecks": [
+        "confirm residential/facility value labels",
+        "confirm nursing-home and residential-care route handling",
+        "confirm public-use versus sensitive-file boundary"
+      ]
+    },
+    {
+      "requiredRouteFieldId": "death_decedent_indicator",
+      "modelRole": "Identify public-use death or decedent boundary without exposing individual death dates.",
+      "candidateVariables": {
+        "r13": [
+          "fl13spdied"
+        ],
+        "r14": [
+          "fl14spdied"
+        ]
+      },
+      "sensitiveExcludedVariables": {
+        "r13": [
+          "dm13mthdied",
+          "dm13yrdied"
+        ],
+        "r14": [
+          "dm14mthdied",
+          "dm14yrdied"
+        ]
+      },
+      "derivedSignals": [
+        {
+          "candidate": "r#dresid=6",
+          "status": "user-guide-indicator-colectica-pending",
+          "reason": "User Guide describes this death-residence route signal, but exact round-specific values must be confirmed."
+        },
+        {
+          "candidate": "r#dlmlint=1",
+          "status": "user-guide-indicator-colectica-pending",
+          "reason": "User Guide describes this LML interview indicator, but it is not sufficient alone for public endpoint classification."
+        },
+        {
+          "candidate": "r#status=62",
+          "status": "user-guide-indicator-colectica-pending",
+          "reason": "User Guide describes status 62 as an LML tracker signal; value-label and route dominance still require confirmation."
+        }
+      ],
+      "status": "crosswalk-confirmed-colectica-pending-sensitive-exclusion-required",
+      "classificationReadiness": false,
+      "evidenceIds": [
+        "nhats-r13-crosswalk-route-fields",
+        "nhats-r14-crosswalk-route-fields",
+        "nhats-user-guide-lml-death-boundary"
+      ],
+      "remainingChecks": [
+        "confirm public-use death indicator values",
+        "confirm sensitive death date exclusion",
+        "confirm death-boundary dominance rule"
+      ]
+    },
+    {
+      "requiredRouteFieldId": "nonresponse_missing_code",
+      "modelRole": "Prevent refusal, don't know, inapplicable, skip, missing and nonresponse values from being converted into alive/dead/healthy/impaired endpoints.",
+      "candidateVariables": {
+        "r13": [
+          "r13breakoffst",
+          "r13breakoffqt",
+          "fl13pt2miss"
+        ],
+        "r14": [
+          "r14breakoffst",
+          "r14breakoffqt",
+          "fl14pt2miss"
+        ]
+      },
+      "candidateCodeFamilies": [
+        "-1 inapplicable",
+        "-7 refused",
+        "-8 don't know",
+        "-9 missing",
+        "-91 deceased",
+        "-92 nursing home",
+        "-93 residential care setting",
+        "-94 no prior round interview"
+      ],
+      "status": "crosswalk-and-user-guide-confirmed-colectica-pending",
+      "classificationReadiness": false,
+      "evidenceIds": [
+        "nhats-r13-crosswalk-route-fields",
+        "nhats-r14-crosswalk-route-fields",
+        "nhats-user-guide-missing-negative-codes"
+      ],
+      "remainingChecks": [
+        "confirm variable-specific missing code applicability",
+        "confirm skip pattern by endpoint component",
+        "confirm missingness stays separate from outcome"
+      ]
+    },
+    {
+      "requiredRouteFieldId": "design_weight_linkage",
+      "modelRole": "Link any future route counts to the correct final weight, replicate weights, strata and variance unit before weighted population estimates are allowed.",
+      "candidateVariables": {
+        "r13": [
+          "w13anfinwgt0",
+          "w13varunit",
+          "w13varstrat"
+        ],
+        "r14": [
+          "w14anfinwgt0",
+          "w14varunit",
+          "w14varstrat"
+        ]
+      },
+      "replicateWeightFamilies": {
+        "r13": "w13anfinwgt1-50",
+        "r14": "w14anfinwgt1-50"
+      },
+      "status": "crosswalk-confirmed-method-review-pending",
+      "classificationReadiness": false,
+      "evidenceIds": [
+        "nhats-r13-crosswalk-design-fields",
+        "nhats-r14-crosswalk-design-fields",
+        "nhats-user-guide-weight-design"
+      ],
+      "remainingChecks": [
+        "confirm variance method",
+        "confirm domain analysis rule",
+        "confirm R13/R14 weight choice for route table",
+        "confirm replicate weight file access boundary"
+      ]
+    },
+    {
+      "requiredRouteFieldId": "disclosure_cell_count",
+      "modelRole": "Require aggregate cell count and suppression flag for every public route output cell.",
+      "candidateVariables": {
+        "computed": [
+          "aggregate_cell_n",
+          "suppression_required",
+          "suppression_reason"
+        ]
+      },
+      "status": "computed-output-gate-not-source-field",
+      "classificationReadiness": false,
+      "evidenceIds": [
+        "nhats-conditions-of-use-ai-and-small-cell"
+      ],
+      "remainingChecks": [
+        "compute aggregate cell counts only inside governed analysis environment",
+        "apply n < 5 suppression or stricter policy",
+        "block public export before disclosure review"
+      ]
+    }
+  ],
+  "blockingGates": [
+    {
+      "id": "colectica-value-labels-confirmed",
+      "status": "missing",
+      "blocksRouteClassification": true
+    },
+    {
+      "id": "public-use-file-access-confirmed",
+      "status": "missing",
+      "blocksRouteClassification": true
+    },
+    {
+      "id": "canonical-file-format-selected",
+      "status": "missing",
+      "blocksRouteClassification": true
+    },
+    {
+      "id": "sensitive-death-date-exclusion-reviewed",
+      "status": "missing",
+      "blocksRouteClassification": true
+    },
+    {
+      "id": "route-value-crosswalk-reviewed",
+      "status": "missing",
+      "blocksRouteClassification": true
+    },
+    {
+      "id": "negative-missing-code-map-reviewed",
+      "status": "missing",
+      "blocksRouteClassification": true
+    },
+    {
+      "id": "survey-design-linkage-reviewed",
+      "status": "missing",
+      "blocksRouteClassification": true
+    },
+    {
+      "id": "route-classifier-code-reviewed",
+      "status": "missing",
+      "blocksRouteClassification": true
+    },
+    {
+      "id": "disclosure-output-review-ready",
+      "status": "missing",
+      "blocksRouteClassification": true
+    }
+  ],
+  "prohibitedActions": [
+    "Do not classify real NHATS records into endpoint routes from this register alone.",
+    "Do not compute weighted route counts, missingness rates, survival curves, calibration metrics or public Web outputs from this register alone.",
+    "Do not expose row-level NHATS data, individual death dates, death month/year, participant identifiers or small cells.",
+    "Do not upload NHATS data, documents or reports containing NHATS/NSOC data to public AI systems without express NHATS approval.",
+    "Do not treat crosswalk field discovery as Colectica value-label confirmation."
+  ],
+  "sourceTrace": [
+    "https://www.nhats.org/data-access/cross-year-search",
+    "https://www.nhats.org/conditions-of-use",
+    "https://www.nhats.org/data-access/nhats/13",
+    "https://www.nhats.org/data-access/nhats/14",
+    "https://nhats.org/sites/default/files/public-documentation/NHATSUserGuideR14_02102026.pdf",
+    "https://nhats.org/sites/default/files/public-documentation/NHATSR13Instrument-VariableCrosswalk_01212026_0.pdf",
+    "https://nhats.org/sites/default/files/public-documentation/NHATSR14Instrument-VariableCrosswalk_02102026.pdf"
+  ]
+}

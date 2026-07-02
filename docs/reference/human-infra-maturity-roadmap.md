@@ -10,7 +10,7 @@
 | --- | ---: | --- | --- |
 | 项目价值 | 82% | 不同受众能用同一核心命题理解 Human Infra 的必要性 | 还需要把同一价值语言压入所有论文页和传播页 |
 | 研究框架 | 55% | 每条主张都进入 Source Card、Claim-Evidence Matrix、变量表和反证条件 | 已有核心主张矩阵、方法锚点和本地审计门禁，但 C1/C2 具体研究域的主张级证据闭环还不均匀 |
-| 定量模型 | 61% | 有可运行、可复现、可审查的场景级模型管线 | 已有 toy model、合成敏感性分析、审计器、校准预备契约、真实队列候选注册表、数据源 Source Cards、Data Card 模板、NHATS 数据准入草案、变量字典草案、extraction manifest 草案、机器可读 acquisition-readiness gates、R13/R14 file-tier table、第一版 NHATS estimand protocol、NHATS variable confirmation matrix、NHATS cohort-flow endpoint-routing protocol、synthetic disclosure-control validator、synthetic survey-design validator 和 synthetic missingness-route validator，但还没有数据访问、Colectica 精确字段确认、真实提取、真实 NHATS route fields、真实 NHATS 输出披露审查、真实 survey-design 加权估计、外部验证和校准后的敏感性分析 |
+| 定量模型 | 62% | 有可运行、可复现、可审查的场景级模型管线 | 已有 toy model、合成敏感性分析、审计器、校准预备契约、真实队列候选注册表、数据源 Source Cards、Data Card 模板、NHATS 数据准入草案、变量字典草案、extraction manifest 草案、机器可读 acquisition-readiness gates、R13/R14 file-tier table、第一版 NHATS estimand protocol、NHATS variable confirmation matrix、NHATS cohort-flow endpoint-routing protocol、synthetic disclosure-control validator、synthetic survey-design validator、synthetic missingness-route validator 和 NHATS route-field discovery validator，但还没有数据访问、Colectica value labels 精确确认、真实提取、真实 NHATS route classification、真实 NHATS 输出披露审查、真实 survey-design 加权估计、外部验证和校准后的敏感性分析 |
 
 ## 价值层 100%
 
@@ -178,15 +178,18 @@ life_path_toy_model_scenarios.json
   -> life_path_nhats_missingness_route_test_cases.json
   -> validate_nhats_missingness_route_map.py
   -> life-path-nhats-missingness-route-validation.json
+  -> life_path_nhats_route_field_discovery_register.json
+  -> validate_nhats_route_field_discovery.py
+  -> life-path-nhats-route-field-discovery-validation.json
   -> /model/ Web 图表
-  -> model card + sanity checks + synthetic sensitivity checks + calibration-readiness audit checks + data-source candidate audit checks + source-card/data-card readiness checks + NHATS data-admission checks + pre-extraction manifest checks + machine-readable acquisition-readiness checks + file-tier table checks + first-estimand protocol checks + variable-confirmation matrix checks + cohort-flow endpoint-routing protocol checks + synthetic disclosure-control checks + synthetic survey-design checks + synthetic missingness-route checks
+  -> model card + sanity checks + synthetic sensitivity checks + calibration-readiness audit checks + data-source candidate audit checks + source-card/data-card readiness checks + NHATS data-admission checks + pre-extraction manifest checks + machine-readable acquisition-readiness checks + file-tier table checks + first-estimand protocol checks + variable-confirmation matrix checks + cohort-flow endpoint-routing protocol checks + synthetic disclosure-control checks + synthetic survey-design checks + synthetic missingness-route checks + official route-field discovery checks
 ```
 
-这一步已经把项目从“有定量想法的研究叙事”推进到“有最小可执行、可审计模型管线的研究系统”，并且开始把合成敏感性分析、真实队列候选、治理边界、第一份 NHATS 数据准入草案、NHATS 机器可读 acquisition-readiness gates、R13/R14 file-tier table、第一版 NHATS estimand protocol、NHATS variable confirmation matrix、NHATS cohort-flow endpoint-routing protocol、synthetic disclosure-control validator、synthetic survey-design validator、synthetic missingness-route validator 和核心主张证据矩阵纳入机器审计。下一步不是继续膨胀新域，而是补三件硬东西：
+这一步已经把项目从“有定量想法的研究叙事”推进到“有最小可执行、可审计模型管线的研究系统”，并且开始把合成敏感性分析、真实队列候选、治理边界、第一份 NHATS 数据准入草案、NHATS 机器可读 acquisition-readiness gates、R13/R14 file-tier table、第一版 NHATS estimand protocol、NHATS variable confirmation matrix、NHATS cohort-flow endpoint-routing protocol、synthetic disclosure-control validator、synthetic survey-design validator、synthetic missingness-route validator、NHATS route-field discovery validator 和核心主张证据矩阵纳入机器审计。下一步不是继续膨胀新域，而是补三件硬东西：
 
 - 继续用 `human-infra-core-claim-evidence-matrix.md` 作为核心主张入口，把 README、论文页和 Web 页的强叙事都回连到同一组 Claim ID、来源角色和禁止外推边界。
 - 把 C1/C2 核心主张做成 Source Cards 和 Claim-Evidence Matrix。
-- 把 NHATS manifest 和 first estimand protocol 从 draft 推进到 governed acquisition-ready，补精确字段名、轮次、缺失码、公开/敏感/受限状态、权重、endpoint 定义、cohort flow、survey design、代码本来源和输出抑制规则。
+- 把 NHATS manifest、route-field discovery register 和 first estimand protocol 从 draft 推进到 governed acquisition-ready，补 Colectica value labels、精确字段名、轮次、缺失码、公开/敏感/受限状态、权重、endpoint 定义、cohort flow、survey design、代码本来源和输出抑制规则。
 - 把 sensitivity analysis 从合成一因素扰动推进到基于真实队列、预注册范围和校准诊断的敏感性分析。
 
 ## 当前已具备的定量门禁
@@ -234,6 +237,7 @@ life_path_toy_model_scenarios.json
 - NHATS disclosure-control validation 是否存在，是否回到当前 policy/test-case hash，是否 `PASS`，是否 6 个合成用例全通过，并保留 synthetic-only、no-real-data、no-calibration 和 no-individual-prediction 边界。
 - NHATS survey-design protocol / test cases / validation 是否存在，是否回到当前 protocol/test-case hash，是否 `PASS`，是否覆盖权重、分层、PSU/variance unit、方差方法、domain rule、route-map、round linkage 和 disclosure prerequisites，并继续保留 synthetic-only、no-real-data、no-calibration 和 no-individual-prediction 边界。
 - NHATS missingness-route protocol / test cases / validation 是否存在，是否回到当前 protocol/test-case hash，是否 `PASS`，是否覆盖 alive self、alive proxy、alive facility/residential、death boundary、missing/nonresponse、not-classifiable、small-cell suppression、alive/death 冲突和禁止 missingness-as-outcome 边界。
+- NHATS route-field discovery register / validation 是否存在，是否回到当前 register hash，是否 `PASS`，是否记录官方 R13/R14 crosswalk 字段候选、Colectica value-labels-pending 状态、sensitive death-date exclusion、阻塞门、source evidence 和禁止真实 route classification / weighted route counts / public AI / individual prediction 边界。
 
 ## 参考入口
 
