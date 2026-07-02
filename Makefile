@@ -26,6 +26,7 @@ py-compile:
 		domains/c1-boundary-rewriting/longevity-evidence/scripts/run_life_path_sensitivity_analysis.py \
 		domains/c1-boundary-rewriting/longevity-evidence/scripts/validate_nhats_disclosure_outputs.py \
 		domains/c1-boundary-rewriting/longevity-evidence/scripts/validate_nhats_survey_design_plan.py \
+		domains/c1-boundary-rewriting/longevity-evidence/scripts/validate_nhats_missingness_route_map.py \
 		domains/c1-boundary-rewriting/longevity-evidence/scripts/audit_life_path_toy_model.py
 
 clean:

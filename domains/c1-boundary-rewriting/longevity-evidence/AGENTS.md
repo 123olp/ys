@@ -79,6 +79,8 @@ longevity-evidence/
 │   │   ├── life_path_nhats_disclosure_control_test_cases.json
 │   │   ├── life_path_nhats_survey_design_protocol.json
 │   │   ├── life_path_nhats_survey_design_test_cases.json
+│   │   ├── life_path_nhats_missingness_route_protocol.json
+│   │   ├── life_path_nhats_missingness_route_test_cases.json
 │   │   └── life_path_toy_model_scenarios.json
 │   ├── processed/
 │   └── raw/
@@ -109,6 +111,7 @@ longevity-evidence/
     ├── run_life_path_sensitivity_analysis.py
     ├── validate_nhats_disclosure_outputs.py
     ├── validate_nhats_survey_design_plan.py
+    ├── validate_nhats_missingness_route_map.py
     └── run_life_path_toy_model.py
 ```
 

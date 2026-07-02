@@ -1,0 +1,273 @@
+{
+  "schemaVersion": "human-infra.life-path-nhats-missingness-route-test-cases.v1",
+  "sourceId": "nhats",
+  "protocolId": "nhats-r13-r14-missingness-route-protocol-draft",
+  "status": "synthetic-only-no-real-nhats-data",
+  "currentBoundary": {
+    "containsRealNhatsData": false,
+    "containsSyntheticOnly": true,
+    "routeMapProofOnly": true,
+    "publicInferenceProofOnly": false,
+    "calibrationAllowed": false,
+    "individualPredictionAllowed": false,
+    "reason": "These cases test missingness and endpoint-route logic with synthetic route envelopes only. They are not NHATS route counts, cohort counts, participant data, mortality data or calibrated model outputs."
+  },
+  "cases": [
+    {
+      "id": "synthetic-alive-self-interview-route",
+      "expectedDecision": "allow-route-classification",
+      "why": "Synthetic status is alive, direct self interview, no unresolved missingness, no public export and no small-cell issue.",
+      "routeEnvelope": {
+        "schemaVersion": "human-infra.synthetic-nhats-route-envelope.v1",
+        "sourceId": "nhats",
+        "routeId": "synthetic-alive-self-interview-route",
+        "containsRealNhatsData": false,
+        "containsRowLevelData": false,
+        "publicExportRequested": false,
+        "publicAiUploadRequested": false,
+        "calibrationRequested": false,
+        "individualPredictionRequested": false,
+        "statusSignals": {
+          "aliveStatus": true,
+          "deathIndicator": false,
+          "interviewRoute": "self",
+          "proxyStatus": false,
+          "facilityResidentialStatus": false,
+          "knownAliveNotInterviewed": false,
+          "missingOrNonresponse": false,
+          "restrictedRequired": false
+        },
+        "missingCodeStatus": "resolved",
+        "disclosure": {
+          "cellCount": 12,
+          "suppressed": false
+        },
+        "expectedRouteClass": "alive_self_interview"
+      }
+    },
+    {
+      "id": "synthetic-alive-proxy-interview-route",
+      "expectedDecision": "allow-route-classification",
+      "why": "Synthetic status is alive through proxy route and remains separate from self interview.",
+      "routeEnvelope": {
+        "schemaVersion": "human-infra.synthetic-nhats-route-envelope.v1",
+        "sourceId": "nhats",
+        "routeId": "synthetic-alive-proxy-interview-route",
+        "containsRealNhatsData": false,
+        "containsRowLevelData": false,
+        "publicExportRequested": false,
+        "publicAiUploadRequested": false,
+        "calibrationRequested": false,
+        "individualPredictionRequested": false,
+        "statusSignals": {
+          "aliveStatus": true,
+          "deathIndicator": false,
+          "interviewRoute": "proxy",
+          "proxyStatus": true,
+          "facilityResidentialStatus": false,
+          "knownAliveNotInterviewed": false,
+          "missingOrNonresponse": false,
+          "restrictedRequired": false
+        },
+        "missingCodeStatus": "resolved",
+        "disclosure": {
+          "cellCount": 9,
+          "suppressed": false
+        },
+        "expectedRouteClass": "alive_proxy_interview"
+      }
+    },
+    {
+      "id": "synthetic-alive-facility-route",
+      "expectedDecision": "allow-route-classification",
+      "why": "Synthetic status is alive but facility/residential context requires a distinct route class.",
+      "routeEnvelope": {
+        "schemaVersion": "human-infra.synthetic-nhats-route-envelope.v1",
+        "sourceId": "nhats",
+        "routeId": "synthetic-alive-facility-route",
+        "containsRealNhatsData": false,
+        "containsRowLevelData": false,
+        "publicExportRequested": false,
+        "publicAiUploadRequested": false,
+        "calibrationRequested": false,
+        "individualPredictionRequested": false,
+        "statusSignals": {
+          "aliveStatus": true,
+          "deathIndicator": false,
+          "interviewRoute": "facility",
+          "proxyStatus": false,
+          "facilityResidentialStatus": true,
+          "knownAliveNotInterviewed": false,
+          "missingOrNonresponse": false,
+          "restrictedRequired": false
+        },
+        "missingCodeStatus": "resolved",
+        "disclosure": {
+          "cellCount": 7,
+          "suppressed": false
+        },
+        "expectedRouteClass": "alive_facility_or_residential_route"
+      }
+    },
+    {
+      "id": "synthetic-decedent-dominates-functional-route",
+      "expectedDecision": "allow-route-classification",
+      "why": "Synthetic death/decedent boundary dominates functional status and routes to death boundary without individual death-date output.",
+      "routeEnvelope": {
+        "schemaVersion": "human-infra.synthetic-nhats-route-envelope.v1",
+        "sourceId": "nhats",
+        "routeId": "synthetic-decedent-dominates-functional-route",
+        "containsRealNhatsData": false,
+        "containsRowLevelData": false,
+        "publicExportRequested": false,
+        "publicAiUploadRequested": false,
+        "calibrationRequested": false,
+        "individualPredictionRequested": false,
+        "statusSignals": {
+          "aliveStatus": false,
+          "deathIndicator": true,
+          "interviewRoute": "none",
+          "proxyStatus": false,
+          "facilityResidentialStatus": false,
+          "knownAliveNotInterviewed": false,
+          "missingOrNonresponse": false,
+          "restrictedRequired": false
+        },
+        "missingCodeStatus": "resolved",
+        "disclosure": {
+          "cellCount": 11,
+          "suppressed": false
+        },
+        "expectedRouteClass": "decedent_or_death_boundary"
+      }
+    },
+    {
+      "id": "synthetic-missing-status-blocks-endpoint",
+      "expectedDecision": "block-route-classification",
+      "why": "Missing or nonresponse state cannot be treated as alive, dead or functional endpoint.",
+      "routeEnvelope": {
+        "schemaVersion": "human-infra.synthetic-nhats-route-envelope.v1",
+        "sourceId": "nhats",
+        "routeId": "synthetic-missing-status-blocks-endpoint",
+        "containsRealNhatsData": false,
+        "containsRowLevelData": false,
+        "publicExportRequested": false,
+        "publicAiUploadRequested": false,
+        "calibrationRequested": false,
+        "individualPredictionRequested": false,
+        "statusSignals": {
+          "aliveStatus": null,
+          "deathIndicator": false,
+          "interviewRoute": "unknown",
+          "proxyStatus": false,
+          "facilityResidentialStatus": false,
+          "knownAliveNotInterviewed": false,
+          "missingOrNonresponse": true,
+          "restrictedRequired": false
+        },
+        "missingCodeStatus": "unresolved",
+        "disclosure": {
+          "cellCount": 8,
+          "suppressed": false
+        },
+        "expectedRouteClass": "missing_or_nonresponse"
+      }
+    },
+    {
+      "id": "synthetic-conflicting-alive-and-decedent-flags",
+      "expectedDecision": "block-route-classification",
+      "why": "Alive and death indicators conflict and require field-level review before any endpoint route.",
+      "routeEnvelope": {
+        "schemaVersion": "human-infra.synthetic-nhats-route-envelope.v1",
+        "sourceId": "nhats",
+        "routeId": "synthetic-conflicting-alive-and-decedent-flags",
+        "containsRealNhatsData": false,
+        "containsRowLevelData": false,
+        "publicExportRequested": false,
+        "publicAiUploadRequested": false,
+        "calibrationRequested": false,
+        "individualPredictionRequested": false,
+        "statusSignals": {
+          "aliveStatus": true,
+          "deathIndicator": true,
+          "interviewRoute": "self",
+          "proxyStatus": false,
+          "facilityResidentialStatus": false,
+          "knownAliveNotInterviewed": false,
+          "missingOrNonresponse": false,
+          "restrictedRequired": false
+        },
+        "missingCodeStatus": "resolved",
+        "disclosure": {
+          "cellCount": 10,
+          "suppressed": false
+        },
+        "expectedRouteClass": "not_classifiable"
+      }
+    },
+    {
+      "id": "synthetic-public-small-cell-unsuppressed",
+      "expectedDecision": "block-route-classification",
+      "why": "Public export of an unsuppressed n < 5 route cell must be blocked.",
+      "routeEnvelope": {
+        "schemaVersion": "human-infra.synthetic-nhats-route-envelope.v1",
+        "sourceId": "nhats",
+        "routeId": "synthetic-public-small-cell-unsuppressed",
+        "containsRealNhatsData": false,
+        "containsRowLevelData": false,
+        "publicExportRequested": true,
+        "publicAiUploadRequested": false,
+        "calibrationRequested": false,
+        "individualPredictionRequested": false,
+        "statusSignals": {
+          "aliveStatus": true,
+          "deathIndicator": false,
+          "interviewRoute": "self",
+          "proxyStatus": false,
+          "facilityResidentialStatus": false,
+          "knownAliveNotInterviewed": false,
+          "missingOrNonresponse": false,
+          "restrictedRequired": false
+        },
+        "missingCodeStatus": "resolved",
+        "disclosure": {
+          "cellCount": 3,
+          "suppressed": false
+        },
+        "expectedRouteClass": "alive_self_interview"
+      }
+    },
+    {
+      "id": "synthetic-public-small-cell-suppressed",
+      "expectedDecision": "allow-route-classification",
+      "why": "A public route output with n < 5 is only allowed in this synthetic validator when the cell is explicitly suppressed.",
+      "routeEnvelope": {
+        "schemaVersion": "human-infra.synthetic-nhats-route-envelope.v1",
+        "sourceId": "nhats",
+        "routeId": "synthetic-public-small-cell-suppressed",
+        "containsRealNhatsData": false,
+        "containsRowLevelData": false,
+        "publicExportRequested": true,
+        "publicAiUploadRequested": false,
+        "calibrationRequested": false,
+        "individualPredictionRequested": false,
+        "statusSignals": {
+          "aliveStatus": true,
+          "deathIndicator": false,
+          "interviewRoute": "self",
+          "proxyStatus": false,
+          "facilityResidentialStatus": false,
+          "knownAliveNotInterviewed": false,
+          "missingOrNonresponse": false,
+          "restrictedRequired": false
+        },
+        "missingCodeStatus": "resolved",
+        "disclosure": {
+          "cellCount": 3,
+          "suppressed": true
+        },
+        "expectedRouteClass": "suppressed_small_cell"
+      }
+    }
+  ]
+}

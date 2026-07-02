@@ -1,0 +1,305 @@
+{
+  "schemaVersion": "human-infra.life-path-nhats-missingness-route-protocol.v1",
+  "sourceId": "nhats",
+  "sourceName": "National Health and Aging Trends Study",
+  "protocolId": "nhats-r13-r14-missingness-route-protocol-draft",
+  "acquisitionReadinessId": "nhats-acquisition-readiness-2026-07-02",
+  "fileTierTableId": "nhats-r13-r14-file-tier-table-draft",
+  "estimandProtocolId": "nhats-r13-r14-functional-survival-estimand-protocol-draft",
+  "variableConfirmationMatrixId": "nhats-r13-r14-variable-confirmation-matrix-draft",
+  "cohortFlowEndpointProtocolId": "nhats-r13-r14-cohort-flow-endpoint-protocol-draft",
+  "disclosureControlPolicyId": "nhats-r13-r14-disclosure-control-policy-draft",
+  "surveyDesignProtocolId": "nhats-r13-r14-survey-design-protocol-draft",
+  "reviewDate": "2026-07-02",
+  "reviewer": "tradecatlabs",
+  "status": "protocol-only-cannot-route-yet",
+  "protocolPurpose": "Define the minimum missingness and endpoint-route gate required before any NHATS R13/R14 functional-survival, effective-time, route-count, missingness-rate, calibration or public Web output can interpret records as endpoint states rather than unresolved data-collection states.",
+  "currentDecision": {
+    "routeMapReady": false,
+    "endpointClassificationAllowed": false,
+    "missingnessRateAllowed": false,
+    "weightedRouteCountsAllowed": false,
+    "functionalSurvivalCurveAllowed": false,
+    "publicExportAllowed": false,
+    "calibrationAllowed": false,
+    "individualPredictionAllowed": false,
+    "reason": "The route classes and dominance rules are registered, but exact R13/R14 status, proxy, facility, death-boundary, missing-code, design and disclosure fields are not confirmed. Only synthetic validator tests are allowed."
+  },
+  "requiredRouteClasses": [
+    {
+      "id": "alive_self_interview",
+      "meaning": "The sample person is alive at follow-up and represented by a direct self interview route.",
+      "minimumEvidence": "Confirmed follow-up status and self-interview value labels from Colectica, codebook or official crosswalk.",
+      "status": "unconfirmed",
+      "blocksEndpointClassification": true
+    },
+    {
+      "id": "alive_proxy_interview",
+      "meaning": "The sample person is alive at follow-up and represented by a proxy interview or proxy measurement route.",
+      "minimumEvidence": "Confirmed proxy status, substitution rule and endpoint aggregation rule.",
+      "status": "unconfirmed",
+      "blocksEndpointClassification": true
+    },
+    {
+      "id": "alive_facility_or_residential_route",
+      "meaning": "The sample person is alive at follow-up and a facility, nursing-home, residential care or similar route changes endpoint interpretation.",
+      "minimumEvidence": "Confirmed facility/residential route fields and public-use tier boundary.",
+      "status": "unconfirmed",
+      "blocksEndpointClassification": true
+    },
+    {
+      "id": "alive_known_not_interviewed",
+      "meaning": "The sample person is known alive but lacks a usable follow-up interview for endpoint component construction.",
+      "minimumEvidence": "Confirmed known-alive noninterview category distinct from refusal, inapplicable, missing, proxy route and death boundary.",
+      "status": "unconfirmed",
+      "blocksEndpointClassification": true
+    },
+    {
+      "id": "decedent_or_death_boundary",
+      "meaning": "The follow-up route reaches a death, decedent or mortality boundary allowed by public-use fields.",
+      "minimumEvidence": "Confirmed death/decedent indicator, value labels, file tier and no individual death-date output rule.",
+      "status": "unconfirmed",
+      "blocksEndpointClassification": true
+    },
+    {
+      "id": "missing_or_nonresponse",
+      "meaning": "Follow-up status is unresolved because of refusal, don't know, nonresponse, skip logic, inapplicable value or missing data.",
+      "minimumEvidence": "Confirmed negative-value missing code map and variable-specific skip-logic handling.",
+      "status": "unconfirmed",
+      "blocksEndpointClassification": true
+    },
+    {
+      "id": "not_classifiable",
+      "meaning": "The record cannot be safely assigned to alive, death or missing route classes with current evidence.",
+      "minimumEvidence": "Explicit not-classifiable denominator rule and review status.",
+      "status": "unconfirmed",
+      "blocksEndpointClassification": true
+    },
+    {
+      "id": "excluded_sensitive_or_restricted_required",
+      "meaning": "The route detail requires sensitive or restricted NHATS files not approved for the first public-use pass.",
+      "minimumEvidence": "File-tier table linking the route to sensitive or restricted resources and a pre-registered exclusion rule.",
+      "status": "unconfirmed",
+      "blocksEndpointClassification": true
+    },
+    {
+      "id": "suppressed_small_cell",
+      "meaning": "The aggregate route cell cannot be publicly exported because disclosure control flags cell size or sensitivity.",
+      "minimumEvidence": "Disclosure-control validator result with n < 5 suppression or stricter restriction handling.",
+      "status": "unconfirmed",
+      "blocksEndpointClassification": true
+    }
+  ],
+  "requiredRouteFields": [
+    {
+      "id": "identity_join_key",
+      "minimumEvidence": "Confirmed sample-person join key for R13/R14 linkage.",
+      "status": "missing",
+      "blocksEndpointClassification": true
+    },
+    {
+      "id": "round13_baseline_eligibility",
+      "minimumEvidence": "Confirmed baseline eligibility rule and denominator inclusion boundary.",
+      "status": "missing",
+      "blocksEndpointClassification": true
+    },
+    {
+      "id": "round14_interview_status",
+      "minimumEvidence": "Confirmed follow-up interview status field and value labels.",
+      "status": "missing",
+      "blocksEndpointClassification": true
+    },
+    {
+      "id": "proxy_status",
+      "minimumEvidence": "Confirmed proxy interview, proxy respondent or proxy measurement route field.",
+      "status": "missing",
+      "blocksEndpointClassification": true
+    },
+    {
+      "id": "facility_residential_status",
+      "minimumEvidence": "Confirmed facility, nursing-home, residential care or living-arrangement route field.",
+      "status": "missing",
+      "blocksEndpointClassification": true
+    },
+    {
+      "id": "death_decedent_indicator",
+      "minimumEvidence": "Confirmed death, decedent or mortality-boundary field without individual death-date exposure.",
+      "status": "missing",
+      "blocksEndpointClassification": true
+    },
+    {
+      "id": "nonresponse_missing_code",
+      "minimumEvidence": "Confirmed variable-level missing, refusal, don't-know, inapplicable and skip-code map.",
+      "status": "missing",
+      "blocksEndpointClassification": true
+    },
+    {
+      "id": "design_weight_linkage",
+      "minimumEvidence": "Confirmed linkage from route classes to analysis weight, strata, PSU/cluster and variance method.",
+      "status": "missing",
+      "blocksEndpointClassification": true
+    },
+    {
+      "id": "disclosure_cell_count",
+      "minimumEvidence": "Aggregate cell count and suppression flag required for every public route output cell.",
+      "status": "missing",
+      "blocksEndpointClassification": true
+    }
+  ],
+  "candidateFieldFamilies": [
+    {
+      "id": "sample_person_identity",
+      "candidatePattern": "spid or official sample-person identifier family",
+      "role": "candidate identity join key family",
+      "status": "candidate-pattern-only",
+      "sourceBoundary": "Candidate role only; exact R13/R14 join key must be confirmed through Colectica/codebook before extraction."
+    },
+    {
+      "id": "followup_interview_status",
+      "candidatePattern": "round-specific interview-status or final-disposition family",
+      "role": "candidate follow-up status family",
+      "status": "candidate-pattern-only",
+      "sourceBoundary": "Candidate role only; do not infer alive/death/nonresponse routes from prose labels."
+    },
+    {
+      "id": "proxy_route",
+      "candidatePattern": "round-specific proxy respondent / proxy route family",
+      "role": "candidate proxy route family",
+      "status": "candidate-pattern-only",
+      "sourceBoundary": "Candidate role only; proxy route aggregation must be pre-registered."
+    },
+    {
+      "id": "facility_residential_route",
+      "candidatePattern": "round-specific residential care / facility / nursing-home route family",
+      "role": "candidate facility or residential route family",
+      "status": "candidate-pattern-only",
+      "sourceBoundary": "Candidate role only; sensitive-file requirements and endpoint interpretation must be confirmed."
+    },
+    {
+      "id": "death_decedent_boundary",
+      "candidatePattern": "round-specific death / decedent / mortality-boundary family",
+      "role": "candidate death-boundary family",
+      "status": "candidate-pattern-only",
+      "sourceBoundary": "Candidate role only; no individual death-date, date-of-death or mortality rank may be exported."
+    },
+    {
+      "id": "standard_negative_missing_codes",
+      "candidatePattern": "-1 / -7 / -8 / -9 style NHATS negative-value missing-code family",
+      "role": "candidate missing-code family",
+      "status": "candidate-pattern-only",
+      "sourceBoundary": "Candidate convention only; every selected variable needs a field-level missing-code map from official documentation."
+    }
+  ],
+  "dominanceRules": [
+    {
+      "id": "death-boundary-dominates-functional-state",
+      "rule": "If confirmed death/decedent status is present, the record routes to decedent_or_death_boundary and must not be interpreted as an alive functional-status observation.",
+      "status": "registered"
+    },
+    {
+      "id": "missingness-is-not-outcome",
+      "rule": "Missing, refusal, don't-know, inapplicable and nonresponse states must not be converted into alive, dead, impaired or healthy endpoint states.",
+      "status": "registered"
+    },
+    {
+      "id": "proxy-and-facility-stay-separate",
+      "rule": "Alive self, alive proxy and alive facility/residential routes must remain separate until an aggregation rule is pre-registered.",
+      "status": "registered"
+    },
+    {
+      "id": "not-classifiable-keeps-denominator",
+      "rule": "Not-classifiable rows cannot be silently dropped; the denominator rule must preserve or explicitly account for them.",
+      "status": "registered"
+    },
+    {
+      "id": "small-cell-suppression-before-public-export",
+      "rule": "Public route outputs must suppress n < 5 cells or apply stricter disclosure handling before export.",
+      "status": "registered"
+    }
+  ],
+  "readinessGates": [
+    {
+      "id": "colectica-route-fields-confirmed",
+      "status": "missing",
+      "requiredEvidence": "Exact route variables and value labels confirmed from NHATS Cross-Year Search / Colectica or official codebooks.",
+      "blocksEndpointClassification": true
+    },
+    {
+      "id": "baseline-eligibility-rule-confirmed",
+      "status": "missing",
+      "requiredEvidence": "R13 denominator, eligibility and sample-person inclusion rule confirmed.",
+      "blocksEndpointClassification": true
+    },
+    {
+      "id": "followup-status-fields-confirmed",
+      "status": "missing",
+      "requiredEvidence": "R14 interview status, final disposition or follow-up route field confirmed.",
+      "blocksEndpointClassification": true
+    },
+    {
+      "id": "death-boundary-fields-confirmed",
+      "status": "missing",
+      "requiredEvidence": "Death/decedent boundary field confirmed without individual death-date exposure.",
+      "blocksEndpointClassification": true
+    },
+    {
+      "id": "proxy-facility-route-fields-confirmed",
+      "status": "missing",
+      "requiredEvidence": "Proxy and facility/residential route fields confirmed with aggregation boundary.",
+      "blocksEndpointClassification": true
+    },
+    {
+      "id": "missing-code-crosswalk-ready",
+      "status": "missing",
+      "requiredEvidence": "Field-level missing, refusal, don't-know, inapplicable and skip-code crosswalk complete.",
+      "blocksEndpointClassification": true
+    },
+    {
+      "id": "survey-design-linkage-ready",
+      "status": "missing",
+      "requiredEvidence": "Route classes can be linked to confirmed weight, strata, PSU/cluster and variance method.",
+      "blocksEndpointClassification": true
+    },
+    {
+      "id": "disclosure-control-ready",
+      "status": "missing",
+      "requiredEvidence": "Aggregate-only, n < 5 suppression, no row-level output and no public-AI upload validation complete.",
+      "blocksEndpointClassification": true
+    },
+    {
+      "id": "route-classifier-script-reviewed",
+      "status": "missing",
+      "requiredEvidence": "Route classifier script reviewed against dominance rules, missingness handling, survey design, disclosure and no-individual-prediction gates.",
+      "blocksEndpointClassification": true
+    }
+  ],
+  "gateSummary": {
+    "requiredGateCount": 9,
+    "readyGateCount": 0,
+    "missingGateCount": 9,
+    "blockingGateCount": 9
+  },
+  "sourceTrace": [
+    "https://www.nhats.org/conditions-of-use",
+    "https://www.nhats.org/data-access/cross-year-search",
+    "https://nhats.org/data-access/nhats/13",
+    "https://nhats.org/data-access/nhats/14",
+    "https://nhats.org/sites/default/files/public-documentation/NHATSUserGuideR14_02102026.pdf",
+    "https://nhats.org/sites/default/files/public-documentation/NHATSTechnicalPaper55_09042025.pdf"
+  ],
+  "prohibitedActions": [
+    "Do not classify endpoint routes before exact route fields and value labels are confirmed.",
+    "Do not treat missingness, refusal, don't know, inapplicable, skip logic or nonresponse as alive, dead, impaired or healthy endpoint states.",
+    "Do not merge self, proxy, facility and known-alive-not-interviewed routes before an aggregation rule is pre-registered.",
+    "Do not compute weighted route counts before survey-design linkage is ready.",
+    "Do not export route counts before disclosure control passes.",
+    "Do not upload raw, row-level, derived disclosive or unpublished NHATS route outputs to public AI systems.",
+    "Do not output individual death dates, personal medical advice, personal longevity ranking or individual prediction."
+  ],
+  "nextWork": [
+    "Confirm exact R13/R14 route variables and value labels through Colectica/codebooks.",
+    "Map field-level negative missing codes and skip logic before endpoint construction.",
+    "Bind the missingness-route validator to survey-design and disclosure-control validators.",
+    "Keep route validation synthetic-only until governed access, exact fields, reviewed classifier code and disclosure control exist."
+  ]
+}

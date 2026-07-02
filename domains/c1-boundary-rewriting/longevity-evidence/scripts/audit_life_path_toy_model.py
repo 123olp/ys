@@ -163,6 +163,27 @@ DEFAULT_NHATS_SURVEY_DESIGN_TEST_CASES = (
 DEFAULT_NHATS_SURVEY_DESIGN_VALIDATION = (
     REPO_ROOT / "web" / "src" / "data" / "life-path-nhats-survey-design-validation.json"
 )
+DEFAULT_NHATS_MISSINGNESS_ROUTE_PROTOCOL = (
+    REPO_ROOT
+    / "domains"
+    / "c1-boundary-rewriting"
+    / "longevity-evidence"
+    / "data"
+    / "manual"
+    / "life_path_nhats_missingness_route_protocol.json"
+)
+DEFAULT_NHATS_MISSINGNESS_ROUTE_TEST_CASES = (
+    REPO_ROOT
+    / "domains"
+    / "c1-boundary-rewriting"
+    / "longevity-evidence"
+    / "data"
+    / "manual"
+    / "life_path_nhats_missingness_route_test_cases.json"
+)
+DEFAULT_NHATS_MISSINGNESS_ROUTE_VALIDATION = (
+    REPO_ROOT / "web" / "src" / "data" / "life-path-nhats-missingness-route-validation.json"
+)
 REQUIRED_MODEL_CARD_FIELDS = {
     "modelName",
     "modelClass",
@@ -448,6 +469,49 @@ REQUIRED_NHATS_SURVEY_DESIGN_CASE_IDS = {
     "synthetic-missing-psu",
     "synthetic-no-variance-method",
     "synthetic-public-inference-before-disclosure",
+}
+REQUIRED_NHATS_MISSINGNESS_ROUTE_CLASS_IDS = {
+    "alive_self_interview",
+    "alive_proxy_interview",
+    "alive_facility_or_residential_route",
+    "alive_known_not_interviewed",
+    "decedent_or_death_boundary",
+    "missing_or_nonresponse",
+    "not_classifiable",
+    "excluded_sensitive_or_restricted_required",
+    "suppressed_small_cell",
+}
+REQUIRED_NHATS_MISSINGNESS_ROUTE_FIELD_IDS = {
+    "identity_join_key",
+    "round13_baseline_eligibility",
+    "round14_interview_status",
+    "proxy_status",
+    "facility_residential_status",
+    "death_decedent_indicator",
+    "nonresponse_missing_code",
+    "design_weight_linkage",
+    "disclosure_cell_count",
+}
+REQUIRED_NHATS_MISSINGNESS_ROUTE_GATE_IDS = {
+    "colectica-route-fields-confirmed",
+    "baseline-eligibility-rule-confirmed",
+    "followup-status-fields-confirmed",
+    "death-boundary-fields-confirmed",
+    "proxy-facility-route-fields-confirmed",
+    "missing-code-crosswalk-ready",
+    "survey-design-linkage-ready",
+    "disclosure-control-ready",
+    "route-classifier-script-reviewed",
+}
+REQUIRED_NHATS_MISSINGNESS_ROUTE_CASE_IDS = {
+    "synthetic-alive-self-interview-route",
+    "synthetic-alive-proxy-interview-route",
+    "synthetic-alive-facility-route",
+    "synthetic-decedent-dominates-functional-route",
+    "synthetic-missing-status-blocks-endpoint",
+    "synthetic-conflicting-alive-and-decedent-flags",
+    "synthetic-public-small-cell-unsuppressed",
+    "synthetic-public-small-cell-suppressed",
 }
 
 
@@ -3214,6 +3278,434 @@ def audit_nhats_survey_design(
     }
 
 
+def audit_nhats_missingness_route(
+    protocol_path: Path,
+    test_cases_path: Path,
+    validation_path: Path,
+) -> dict[str, Any]:
+    checks: list[dict[str, Any]] = []
+    protocol_exists = protocol_path.exists()
+    test_cases_exists = test_cases_path.exists()
+    validation_exists = validation_path.exists()
+    add_check(
+        checks,
+        "nhats-missingness-route-protocol-exists",
+        status_from_bool(protocol_exists),
+        str(protocol_path.relative_to(REPO_ROOT)),
+    )
+    add_check(
+        checks,
+        "nhats-missingness-route-test-cases-exist",
+        status_from_bool(test_cases_exists),
+        str(test_cases_path.relative_to(REPO_ROOT)),
+    )
+    add_check(
+        checks,
+        "nhats-missingness-route-validation-exists",
+        status_from_bool(validation_exists),
+        str(validation_path.relative_to(REPO_ROOT)),
+    )
+
+    protocol = load_json(protocol_path) if protocol_exists else {}
+    test_cases = load_json(test_cases_path) if test_cases_exists else {}
+    validation = load_json(validation_path) if validation_exists else {}
+
+    protocol_schema_ok = (
+        protocol.get("schemaVersion")
+        == "human-infra.life-path-nhats-missingness-route-protocol.v1"
+    )
+    add_check(
+        checks,
+        "nhats-missingness-route-protocol-schema",
+        status_from_bool(protocol_exists and protocol_schema_ok),
+        f"schemaVersion={protocol.get('schemaVersion')!r}",
+    )
+
+    protocol_identity_ok = (
+        protocol.get("sourceId") == "nhats"
+        and protocol.get("protocolId")
+        == "nhats-r13-r14-missingness-route-protocol-draft"
+        and protocol.get("acquisitionReadinessId") == "nhats-acquisition-readiness-2026-07-02"
+        and protocol.get("fileTierTableId") == "nhats-r13-r14-file-tier-table-draft"
+        and protocol.get("estimandProtocolId")
+        == "nhats-r13-r14-functional-survival-estimand-protocol-draft"
+        and protocol.get("variableConfirmationMatrixId")
+        == "nhats-r13-r14-variable-confirmation-matrix-draft"
+        and protocol.get("cohortFlowEndpointProtocolId")
+        == "nhats-r13-r14-cohort-flow-endpoint-protocol-draft"
+        and protocol.get("disclosureControlPolicyId")
+        == "nhats-r13-r14-disclosure-control-policy-draft"
+        and protocol.get("surveyDesignProtocolId")
+        == "nhats-r13-r14-survey-design-protocol-draft"
+        and protocol.get("status") == "protocol-only-cannot-route-yet"
+    )
+    add_check(
+        checks,
+        "nhats-missingness-route-protocol-identity",
+        status_from_bool(protocol_exists and protocol_identity_ok),
+        "missingness-route protocol must bind NHATS source, upstream readiness/file/estimand/variable/cohort/disclosure/survey contracts and cannot-route status",
+    )
+
+    decision = protocol.get("currentDecision")
+    decision_ok = (
+        isinstance(decision, dict)
+        and decision.get("routeMapReady") is False
+        and decision.get("endpointClassificationAllowed") is False
+        and decision.get("missingnessRateAllowed") is False
+        and decision.get("weightedRouteCountsAllowed") is False
+        and decision.get("functionalSurvivalCurveAllowed") is False
+        and decision.get("publicExportAllowed") is False
+        and decision.get("calibrationAllowed") is False
+        and decision.get("individualPredictionAllowed") is False
+    )
+    add_check(
+        checks,
+        "nhats-missingness-route-current-decision",
+        status_from_bool(protocol_exists and decision_ok),
+        "missingness-route protocol must block endpoint classification, missingness rates, weighted route counts, functional-survival curves, public export, calibration and individual prediction",
+    )
+
+    route_classes = protocol.get("requiredRouteClasses")
+    observed_route_class_ids: set[str] = set()
+    route_classes_ok = True
+    if isinstance(route_classes, list):
+        for route_class in route_classes:
+            if not isinstance(route_class, dict):
+                route_classes_ok = False
+                continue
+            route_class_id = route_class.get("id")
+            if isinstance(route_class_id, str):
+                observed_route_class_ids.add(route_class_id)
+            if (
+                route_class.get("status") != "unconfirmed"
+                or route_class.get("blocksEndpointClassification") is not True
+            ):
+                route_classes_ok = False
+            if not str(route_class.get("minimumEvidence", "")).strip():
+                route_classes_ok = False
+    missing_route_classes = sorted(
+        REQUIRED_NHATS_MISSINGNESS_ROUTE_CLASS_IDS - observed_route_class_ids
+    )
+    add_check(
+        checks,
+        "nhats-missingness-route-class-coverage",
+        status_from_bool(protocol_exists and isinstance(route_classes, list) and route_classes_ok and not missing_route_classes),
+        f"missing_route_class_ids={missing_route_classes}",
+    )
+
+    route_fields = protocol.get("requiredRouteFields")
+    observed_route_field_ids: set[str] = set()
+    route_fields_ok = True
+    if isinstance(route_fields, list):
+        for route_field in route_fields:
+            if not isinstance(route_field, dict):
+                route_fields_ok = False
+                continue
+            route_field_id = route_field.get("id")
+            if isinstance(route_field_id, str):
+                observed_route_field_ids.add(route_field_id)
+            if (
+                route_field.get("status") != "missing"
+                or route_field.get("blocksEndpointClassification") is not True
+            ):
+                route_fields_ok = False
+            if not str(route_field.get("minimumEvidence", "")).strip():
+                route_fields_ok = False
+    missing_route_fields = sorted(
+        REQUIRED_NHATS_MISSINGNESS_ROUTE_FIELD_IDS - observed_route_field_ids
+    )
+    add_check(
+        checks,
+        "nhats-missingness-route-field-coverage",
+        status_from_bool(protocol_exists and isinstance(route_fields, list) and route_fields_ok and not missing_route_fields),
+        f"missing_route_field_ids={missing_route_fields}",
+    )
+
+    candidate_fields = protocol.get("candidateFieldFamilies")
+    candidate_fields_ok = (
+        isinstance(candidate_fields, list)
+        and has_text(candidate_fields, "sample-person identifier")
+        and has_text(candidate_fields, "interview-status")
+        and has_text(candidate_fields, "proxy")
+        and has_text(candidate_fields, "residential")
+        and has_text(candidate_fields, "death")
+        and has_text(candidate_fields, "negative-value missing-code")
+    )
+    if isinstance(candidate_fields, list):
+        for candidate in candidate_fields:
+            if not isinstance(candidate, dict) or candidate.get("status") != "candidate-pattern-only":
+                candidate_fields_ok = False
+    add_check(
+        checks,
+        "nhats-missingness-route-candidate-fields",
+        status_from_bool(protocol_exists and candidate_fields_ok),
+        "candidate field families must cover identity, interview status, proxy, residential, death and missing codes while staying candidate-pattern-only",
+    )
+
+    dominance_rules = protocol.get("dominanceRules")
+    dominance_rules_ok = (
+        isinstance(dominance_rules, list)
+        and has_text(dominance_rules, "death-boundary-dominates-functional-state")
+        and has_text(dominance_rules, "missingness-is-not-outcome")
+        and has_text(dominance_rules, "proxy-and-facility-stay-separate")
+        and has_text(dominance_rules, "not-classifiable-keeps-denominator")
+        and has_text(dominance_rules, "small-cell-suppression-before-public-export")
+    )
+    add_check(
+        checks,
+        "nhats-missingness-route-dominance-rules",
+        status_from_bool(protocol_exists and dominance_rules_ok),
+        "dominance rules must register death dominance, missingness blocking, proxy/facility separation, denominator handling and small-cell suppression",
+    )
+
+    gates = protocol.get("readinessGates")
+    observed_gate_ids: set[str] = set()
+    gates_ok = True
+    if isinstance(gates, list):
+        for gate in gates:
+            if not isinstance(gate, dict):
+                gates_ok = False
+                continue
+            gate_id = gate.get("id")
+            if isinstance(gate_id, str):
+                observed_gate_ids.add(gate_id)
+            if gate.get("status") != "missing" or gate.get("blocksEndpointClassification") is not True:
+                gates_ok = False
+            if not str(gate.get("requiredEvidence", "")).strip():
+                gates_ok = False
+    missing_gate_ids = sorted(REQUIRED_NHATS_MISSINGNESS_ROUTE_GATE_IDS - observed_gate_ids)
+    add_check(
+        checks,
+        "nhats-missingness-route-readiness-gates",
+        status_from_bool(protocol_exists and isinstance(gates, list) and gates_ok and not missing_gate_ids),
+        f"missing_gate_ids={missing_gate_ids}",
+    )
+
+    summary = protocol.get("gateSummary")
+    summary_ok = (
+        isinstance(summary, dict)
+        and summary.get("requiredGateCount") == len(REQUIRED_NHATS_MISSINGNESS_ROUTE_GATE_IDS)
+        and summary.get("readyGateCount") == 0
+        and summary.get("missingGateCount") == len(REQUIRED_NHATS_MISSINGNESS_ROUTE_GATE_IDS)
+        and summary.get("blockingGateCount") == len(REQUIRED_NHATS_MISSINGNESS_ROUTE_GATE_IDS)
+    )
+    add_check(
+        checks,
+        "nhats-missingness-route-gate-summary",
+        status_from_bool(protocol_exists and summary_ok),
+        "gate summary must keep every missingness-route gate missing and blocking",
+    )
+
+    source_trace = protocol.get("sourceTrace")
+    source_trace_ok = (
+        isinstance(source_trace, list)
+        and all(isinstance(url, str) and url.startswith("https://") for url in source_trace)
+        and has_text(source_trace, "conditions-of-use")
+        and has_text(source_trace, "cross-year-search")
+        and has_text(source_trace, "nhats/13")
+        and has_text(source_trace, "nhats/14")
+        and has_text(source_trace, "NHATSUserGuideR14")
+        and has_text(source_trace, "NHATSTechnicalPaper55")
+    )
+    add_check(
+        checks,
+        "nhats-missingness-route-source-trace",
+        status_from_bool(protocol_exists and source_trace_ok),
+        "missingness-route protocol source trace must include NHATS conditions, Colectica, R13/R14 files, User Guide and Technical Paper 55",
+    )
+
+    prohibited_ok = (
+        has_text(protocol.get("prohibitedActions", []), "exact route fields")
+        and has_text(protocol.get("prohibitedActions", []), "missingness")
+        and has_text(protocol.get("prohibitedActions", []), "weighted route counts")
+        and has_text(protocol.get("prohibitedActions", []), "public AI")
+        and has_text(protocol.get("prohibitedActions", []), "individual death dates")
+    )
+    add_check(
+        checks,
+        "nhats-missingness-route-prohibited-actions",
+        status_from_bool(protocol_exists and prohibited_ok),
+        "missingness-route protocol must prohibit premature routing, missingness-as-outcome, weighted route counts, public AI upload and individual death-date outputs",
+    )
+
+    cases_schema_ok = (
+        test_cases.get("schemaVersion")
+        == "human-infra.life-path-nhats-missingness-route-test-cases.v1"
+        and test_cases.get("sourceId") == "nhats"
+        and test_cases.get("protocolId")
+        == "nhats-r13-r14-missingness-route-protocol-draft"
+        and test_cases.get("status") == "synthetic-only-no-real-nhats-data"
+    )
+    add_check(
+        checks,
+        "nhats-missingness-route-test-cases-schema",
+        status_from_bool(test_cases_exists and cases_schema_ok),
+        "missingness-route test cases must bind NHATS source and synthetic-only protocol status",
+    )
+
+    boundary = test_cases.get("currentBoundary")
+    boundary_ok = (
+        isinstance(boundary, dict)
+        and boundary.get("containsRealNhatsData") is False
+        and boundary.get("containsSyntheticOnly") is True
+        and boundary.get("routeMapProofOnly") is True
+        and boundary.get("calibrationAllowed") is False
+        and boundary.get("individualPredictionAllowed") is False
+    )
+    add_check(
+        checks,
+        "nhats-missingness-route-test-cases-boundary",
+        status_from_bool(test_cases_exists and boundary_ok),
+        "missingness-route test cases must be synthetic-only and prohibit calibration plus individual prediction",
+    )
+
+    cases = test_cases.get("cases")
+    observed_case_ids: set[str] = set()
+    expected_mix_ok = False
+    if isinstance(cases, list):
+        expected_decisions = {
+            str(case.get("expectedDecision"))
+            for case in cases
+            if isinstance(case, dict)
+        }
+        expected_mix_ok = {
+            "allow-route-classification",
+            "block-route-classification",
+        }.issubset(expected_decisions)
+        for case in cases:
+            if isinstance(case, dict) and isinstance(case.get("id"), str):
+                observed_case_ids.add(case["id"])
+    missing_case_ids = sorted(REQUIRED_NHATS_MISSINGNESS_ROUTE_CASE_IDS - observed_case_ids)
+    add_check(
+        checks,
+        "nhats-missingness-route-test-case-coverage",
+        status_from_bool(test_cases_exists and isinstance(cases, list) and not missing_case_ids),
+        f"missing_case_ids={missing_case_ids}",
+    )
+    add_check(
+        checks,
+        "nhats-missingness-route-test-case-decision-mix",
+        status_from_bool(test_cases_exists and expected_mix_ok),
+        "synthetic missingness-route cases must include both allowed route classifications and blocked endpoint examples",
+    )
+
+    validation_schema_ok = (
+        validation.get("schemaVersion")
+        == "human-infra.life-path-nhats-missingness-route-validation.v1"
+    )
+    add_check(
+        checks,
+        "nhats-missingness-route-validation-schema",
+        status_from_bool(validation_exists and validation_schema_ok),
+        f"schemaVersion={validation.get('schemaVersion')!r}",
+    )
+
+    validation_paths_ok = (
+        validation.get("protocolPath") == str(protocol_path.relative_to(REPO_ROOT))
+        and validation.get("protocolSha256") == sha256_file(protocol_path)
+        and validation.get("testCasesPath") == str(test_cases_path.relative_to(REPO_ROOT))
+        and validation.get("testCasesSha256") == sha256_file(test_cases_path)
+    )
+    add_check(
+        checks,
+        "nhats-missingness-route-validation-source-hashes",
+        status_from_bool(validation_exists and validation_paths_ok),
+        "missingness-route validation report must point back to current protocol and test-case hashes",
+    )
+
+    validation_summary = validation.get("summary")
+    validation_summary_ok = (
+        validation.get("overallStatus") == "PASS"
+        and isinstance(validation_summary, dict)
+        and validation_summary.get("caseCount", 0)
+        >= len(REQUIRED_NHATS_MISSINGNESS_ROUTE_CASE_IDS)
+        and validation_summary.get("fail") == 0
+        and validation_summary.get("allowedCount", 0) > 0
+        and validation_summary.get("blockedCount", 0) > 0
+        and validation_summary.get("protocolIssueCount") == 0
+        and validation_summary.get("boundaryIssueCount") == 0
+        and validation_summary.get("routeCoverageOk") is True
+    )
+    add_check(
+        checks,
+        "nhats-missingness-route-validation-summary",
+        status_from_bool(validation_exists and validation_summary_ok),
+        "missingness-route validation report must pass every synthetic case, include allow/block results and cover route classes",
+    )
+
+    validation_cases = validation.get("cases")
+    validation_cases_ok = isinstance(validation_cases, list)
+    validation_case_ids: set[str] = set()
+    validation_route_classes: set[str] = set()
+    if isinstance(validation_cases, list):
+        for case in validation_cases:
+            if not isinstance(case, dict):
+                validation_cases_ok = False
+                continue
+            case_id = case.get("id")
+            if isinstance(case_id, str):
+                validation_case_ids.add(case_id)
+            route_class = case.get("observedRouteClass")
+            if isinstance(route_class, str):
+                validation_route_classes.add(route_class)
+            if case.get("status") != "PASS":
+                validation_cases_ok = False
+            if case.get("observedDecision") != case.get("expectedDecision"):
+                validation_cases_ok = False
+    missing_validation_case_ids = sorted(
+        REQUIRED_NHATS_MISSINGNESS_ROUTE_CASE_IDS - validation_case_ids
+    )
+    route_validation_ok = {
+        "alive_self_interview",
+        "alive_proxy_interview",
+        "alive_facility_or_residential_route",
+        "decedent_or_death_boundary",
+        "missing_or_nonresponse",
+        "not_classifiable",
+        "suppressed_small_cell",
+    }.issubset(validation_route_classes)
+    add_check(
+        checks,
+        "nhats-missingness-route-validation-case-results",
+        status_from_bool(validation_exists and validation_cases_ok and not missing_validation_case_ids),
+        f"missing_validation_case_ids={missing_validation_case_ids}",
+    )
+    add_check(
+        checks,
+        "nhats-missingness-route-validation-route-coverage",
+        status_from_bool(validation_exists and route_validation_ok),
+        f"observed_route_classes={sorted(validation_route_classes)}",
+    )
+
+    validation_boundary = validation.get("boundary")
+    validation_boundary_ok = (
+        isinstance(validation_boundary, dict)
+        and validation_boundary.get("containsRealNhatsData") is False
+        and validation_boundary.get("containsSyntheticOnly") is True
+        and validation_boundary.get("routeMapProofOnly") is True
+        and validation_boundary.get("calibrationAllowed") is False
+        and validation_boundary.get("individualPredictionAllowed") is False
+    )
+    add_check(
+        checks,
+        "nhats-missingness-route-validation-boundary",
+        status_from_bool(validation_exists and validation_boundary_ok),
+        "missingness-route validation report must preserve synthetic-only, no-real-data, no-calibration and no-individual-prediction boundaries",
+    )
+
+    return {
+        "protocolPath": str(protocol_path.relative_to(REPO_ROOT)),
+        "protocolSha256": sha256_file(protocol_path) if protocol_exists else None,
+        "testCasesPath": str(test_cases_path.relative_to(REPO_ROOT)),
+        "testCasesSha256": sha256_file(test_cases_path) if test_cases_exists else None,
+        "validationPath": str(validation_path.relative_to(REPO_ROOT)),
+        "validationSha256": sha256_file(validation_path) if validation_exists else None,
+        "status": "PASS" if summarize_checks(checks)["fail"] == 0 else "FAIL",
+        "checks": checks,
+        "summary": summarize_checks(checks),
+    }
+
+
 def audit_sensitivity_analysis(
     sensitivity_path: Path,
     model_data: dict[str, Any],
@@ -3463,6 +3955,9 @@ def audit_model(
     nhats_survey_design_protocol_path: Path,
     nhats_survey_design_test_cases_path: Path,
     nhats_survey_design_validation_path: Path,
+    nhats_missingness_route_protocol_path: Path,
+    nhats_missingness_route_test_cases_path: Path,
+    nhats_missingness_route_validation_path: Path,
 ) -> dict[str, Any]:
     checks: list[dict[str, Any]] = []
     schema_version = data.get("schemaVersion")
@@ -3664,6 +4159,11 @@ def audit_model(
         nhats_survey_design_test_cases_path,
         nhats_survey_design_validation_path,
     )
+    nhats_missingness_route_audit = audit_nhats_missingness_route(
+        nhats_missingness_route_protocol_path,
+        nhats_missingness_route_test_cases_path,
+        nhats_missingness_route_validation_path,
+    )
     sensitivity_audit = audit_sensitivity_analysis(sensitivity_path, data, model_path)
     checks.extend(readiness_audit["checks"])
     checks.extend(data_sources_audit["checks"])
@@ -3677,6 +4177,7 @@ def audit_model(
     checks.extend(nhats_cohort_flow_endpoint_protocol_audit["checks"])
     checks.extend(nhats_disclosure_control_audit["checks"])
     checks.extend(nhats_survey_design_audit["checks"])
+    checks.extend(nhats_missingness_route_audit["checks"])
     checks.extend(sensitivity_audit["checks"])
     failed = [check for check in checks if check["status"] == "FAIL"]
     overall = "PASS" if not failed else "FAIL"
@@ -3701,6 +4202,7 @@ def audit_model(
         "nhatsCohortFlowEndpointProtocol": nhats_cohort_flow_endpoint_protocol_audit,
         "nhatsDisclosureControl": nhats_disclosure_control_audit,
         "nhatsSurveyDesign": nhats_survey_design_audit,
+        "nhatsMissingnessRoute": nhats_missingness_route_audit,
         "sensitivityAnalysis": sensitivity_audit,
     }
 
@@ -3821,6 +4323,17 @@ def render_markdown(audit: dict[str, Any]) -> str:
             f"- Survey-design validation status: `{audit['nhatsSurveyDesign']['status']}`",
             "- Boundary: survey-design validation proves only that synthetic design-plan envelopes enforce weights, strata, PSU/variance-unit, variance-method, route-map and disclosure prerequisites; it does not authorize real NHATS weighted estimates, population inference, calibration, validation or individual prediction.",
             "",
+            "## NHATS Missingness Route Validation",
+            "",
+            f"- Missingness-route protocol path: `{audit['nhatsMissingnessRoute']['protocolPath']}`",
+            f"- Missingness-route protocol SHA-256: `{audit['nhatsMissingnessRoute']['protocolSha256']}`",
+            f"- Missingness-route test cases path: `{audit['nhatsMissingnessRoute']['testCasesPath']}`",
+            f"- Missingness-route test cases SHA-256: `{audit['nhatsMissingnessRoute']['testCasesSha256']}`",
+            f"- Missingness-route validation path: `{audit['nhatsMissingnessRoute']['validationPath']}`",
+            f"- Missingness-route validation SHA-256: `{audit['nhatsMissingnessRoute']['validationSha256']}`",
+            f"- Missingness-route validation status: `{audit['nhatsMissingnessRoute']['status']}`",
+            "- Boundary: missingness-route validation proves only that synthetic route envelopes separate death, self interview, proxy interview, facility route, missingness, conflicts and small-cell suppression; it does not authorize real NHATS route classification, weighted route counts, calibration, validation or individual prediction.",
+            "",
             "## Sensitivity Analysis",
             "",
             f"- Sensitivity path: `{audit['sensitivityAnalysis']['path']}`",
@@ -3924,6 +4437,21 @@ def parse_args() -> argparse.Namespace:
         type=Path,
         default=DEFAULT_NHATS_SURVEY_DESIGN_VALIDATION,
     )
+    parser.add_argument(
+        "--nhats-missingness-route-protocol",
+        type=Path,
+        default=DEFAULT_NHATS_MISSINGNESS_ROUTE_PROTOCOL,
+    )
+    parser.add_argument(
+        "--nhats-missingness-route-test-cases",
+        type=Path,
+        default=DEFAULT_NHATS_MISSINGNESS_ROUTE_TEST_CASES,
+    )
+    parser.add_argument(
+        "--nhats-missingness-route-validation",
+        type=Path,
+        default=DEFAULT_NHATS_MISSINGNESS_ROUTE_VALIDATION,
+    )
     parser.add_argument("--json-out", type=Path, default=DEFAULT_JSON_OUT)
     parser.add_argument("--md-out", type=Path, default=DEFAULT_MD_OUT)
     return parser.parse_args()
@@ -3955,6 +4483,15 @@ def main() -> int:
     nhats_survey_design_protocol_path = args.nhats_survey_design_protocol.resolve()
     nhats_survey_design_test_cases_path = args.nhats_survey_design_test_cases.resolve()
     nhats_survey_design_validation_path = args.nhats_survey_design_validation.resolve()
+    nhats_missingness_route_protocol_path = (
+        args.nhats_missingness_route_protocol.resolve()
+    )
+    nhats_missingness_route_test_cases_path = (
+        args.nhats_missingness_route_test_cases.resolve()
+    )
+    nhats_missingness_route_validation_path = (
+        args.nhats_missingness_route_validation.resolve()
+    )
     audit = audit_model(
         load_json(model_path),
         model_path,
@@ -3977,6 +4514,9 @@ def main() -> int:
         nhats_survey_design_protocol_path,
         nhats_survey_design_test_cases_path,
         nhats_survey_design_validation_path,
+        nhats_missingness_route_protocol_path,
+        nhats_missingness_route_test_cases_path,
+        nhats_missingness_route_validation_path,
     )
     args.json_out.parent.mkdir(parents=True, exist_ok=True)
     with args.json_out.open("w", encoding="utf-8") as handle:

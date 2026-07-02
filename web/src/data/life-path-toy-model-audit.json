@@ -1,6 +1,6 @@
 {
   "schemaVersion": "human-infra.life-path-toy-audit.v1",
-  "generatedAt": "2026-07-02T03:27:06.360135+00:00",
+  "generatedAt": "2026-07-02T03:49:23.961996+00:00",
   "modelPath": "web/src/data/life-path-toy-model.json",
   "modelSha256": "a4c92209d79d20579bf1f575d5ebf07ffe5be9ccaf6bf3f3eef08efa287b5377",
   "overallStatus": "PASS",
@@ -886,6 +886,126 @@
       "detail": "survey-design validation report must preserve synthetic-only, no-real-data, no-calibration and no-individual-prediction boundaries"
     },
     {
+      "id": "nhats-missingness-route-protocol-exists",
+      "status": "PASS",
+      "detail": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_missingness_route_protocol.json"
+    },
+    {
+      "id": "nhats-missingness-route-test-cases-exist",
+      "status": "PASS",
+      "detail": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_missingness_route_test_cases.json"
+    },
+    {
+      "id": "nhats-missingness-route-validation-exists",
+      "status": "PASS",
+      "detail": "web/src/data/life-path-nhats-missingness-route-validation.json"
+    },
+    {
+      "id": "nhats-missingness-route-protocol-schema",
+      "status": "PASS",
+      "detail": "schemaVersion='human-infra.life-path-nhats-missingness-route-protocol.v1'"
+    },
+    {
+      "id": "nhats-missingness-route-protocol-identity",
+      "status": "PASS",
+      "detail": "missingness-route protocol must bind NHATS source, upstream readiness/file/estimand/variable/cohort/disclosure/survey contracts and cannot-route status"
+    },
+    {
+      "id": "nhats-missingness-route-current-decision",
+      "status": "PASS",
+      "detail": "missingness-route protocol must block endpoint classification, missingness rates, weighted route counts, functional-survival curves, public export, calibration and individual prediction"
+    },
+    {
+      "id": "nhats-missingness-route-class-coverage",
+      "status": "PASS",
+      "detail": "missing_route_class_ids=[]"
+    },
+    {
+      "id": "nhats-missingness-route-field-coverage",
+      "status": "PASS",
+      "detail": "missing_route_field_ids=[]"
+    },
+    {
+      "id": "nhats-missingness-route-candidate-fields",
+      "status": "PASS",
+      "detail": "candidate field families must cover identity, interview status, proxy, residential, death and missing codes while staying candidate-pattern-only"
+    },
+    {
+      "id": "nhats-missingness-route-dominance-rules",
+      "status": "PASS",
+      "detail": "dominance rules must register death dominance, missingness blocking, proxy/facility separation, denominator handling and small-cell suppression"
+    },
+    {
+      "id": "nhats-missingness-route-readiness-gates",
+      "status": "PASS",
+      "detail": "missing_gate_ids=[]"
+    },
+    {
+      "id": "nhats-missingness-route-gate-summary",
+      "status": "PASS",
+      "detail": "gate summary must keep every missingness-route gate missing and blocking"
+    },
+    {
+      "id": "nhats-missingness-route-source-trace",
+      "status": "PASS",
+      "detail": "missingness-route protocol source trace must include NHATS conditions, Colectica, R13/R14 files, User Guide and Technical Paper 55"
+    },
+    {
+      "id": "nhats-missingness-route-prohibited-actions",
+      "status": "PASS",
+      "detail": "missingness-route protocol must prohibit premature routing, missingness-as-outcome, weighted route counts, public AI upload and individual death-date outputs"
+    },
+    {
+      "id": "nhats-missingness-route-test-cases-schema",
+      "status": "PASS",
+      "detail": "missingness-route test cases must bind NHATS source and synthetic-only protocol status"
+    },
+    {
+      "id": "nhats-missingness-route-test-cases-boundary",
+      "status": "PASS",
+      "detail": "missingness-route test cases must be synthetic-only and prohibit calibration plus individual prediction"
+    },
+    {
+      "id": "nhats-missingness-route-test-case-coverage",
+      "status": "PASS",
+      "detail": "missing_case_ids=[]"
+    },
+    {
+      "id": "nhats-missingness-route-test-case-decision-mix",
+      "status": "PASS",
+      "detail": "synthetic missingness-route cases must include both allowed route classifications and blocked endpoint examples"
+    },
+    {
+      "id": "nhats-missingness-route-validation-schema",
+      "status": "PASS",
+      "detail": "schemaVersion='human-infra.life-path-nhats-missingness-route-validation.v1'"
+    },
+    {
+      "id": "nhats-missingness-route-validation-source-hashes",
+      "status": "PASS",
+      "detail": "missingness-route validation report must point back to current protocol and test-case hashes"
+    },
+    {
+      "id": "nhats-missingness-route-validation-summary",
+      "status": "PASS",
+      "detail": "missingness-route validation report must pass every synthetic case, include allow/block results and cover route classes"
+    },
+    {
+      "id": "nhats-missingness-route-validation-case-results",
+      "status": "PASS",
+      "detail": "missing_validation_case_ids=[]"
+    },
+    {
+      "id": "nhats-missingness-route-validation-route-coverage",
+      "status": "PASS",
+      "detail": "observed_route_classes=['alive_facility_or_residential_route', 'alive_proxy_interview', 'alive_self_interview', 'decedent_or_death_boundary', 'missing_or_nonresponse', 'not_classifiable', 'suppressed_small_cell']"
+    },
+    {
+      "id": "nhats-missingness-route-validation-boundary",
+      "status": "PASS",
+      "detail": "missingness-route validation report must preserve synthetic-only, no-real-data, no-calibration and no-individual-prediction boundaries"
+    },
+    {
       "id": "sensitivity-analysis-exists",
       "status": "PASS",
       "detail": "web/src/data/life-path-sensitivity-analysis.json"
@@ -942,7 +1062,7 @@
     }
   ],
   "summary": {
-    "pass": 187,
+    "pass": 211,
     "warn": 0,
     "fail": 0
   },
@@ -1728,7 +1848,7 @@
     "testCasesPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_disclosure_control_test_cases.json",
     "testCasesSha256": "0a9cccdbfbd951ba6d04eeb762b9387ba50a13336e4ee4ade43ed976acb4c9c5",
     "validationPath": "web/src/data/life-path-nhats-disclosure-control-validation.json",
-    "validationSha256": "8788839f90f710b9a41b329252c911251364d844a5db8470bf1956cc091628c2",
+    "validationSha256": "16de849198d312b6b5cca3acca4e16abc6272ed86dac7c4d1a678b848ef87d2d",
     "status": "PASS",
     "checks": [
       {
@@ -1829,7 +1949,7 @@
     "testCasesPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_survey_design_test_cases.json",
     "testCasesSha256": "a0d106ff0e70450ae96a4d8749037839cae27bfb7feb68bf2636681c46f500cc",
     "validationPath": "web/src/data/life-path-nhats-survey-design-validation.json",
-    "validationSha256": "f795afa96dfd7e842d0c26d84e88bf35197d327409a3e700a61013b95ca2827d",
+    "validationSha256": "404608006f4d6cba90f0c12668abdfadc501f12eeb089655f822fe2661f2a4e6",
     "status": "PASS",
     "checks": [
       {
@@ -1944,9 +2064,145 @@
       "fail": 0
     }
   },
+  "nhatsMissingnessRoute": {
+    "protocolPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_missingness_route_protocol.json",
+    "protocolSha256": "e5f68ca68fd44aff81e2146eb2fa75534aab10440129b42f218f5473386e12fd",
+    "testCasesPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_missingness_route_test_cases.json",
+    "testCasesSha256": "38928543b47a1f950de5925c2bb329fc544df4516aa882015240e7047674b4be",
+    "validationPath": "web/src/data/life-path-nhats-missingness-route-validation.json",
+    "validationSha256": "b51da075466a68cd08bda96981755dc71e79309ae9b3bf34e1bf13f1288d36d1",
+    "status": "PASS",
+    "checks": [
+      {
+        "id": "nhats-missingness-route-protocol-exists",
+        "status": "PASS",
+        "detail": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_missingness_route_protocol.json"
+      },
+      {
+        "id": "nhats-missingness-route-test-cases-exist",
+        "status": "PASS",
+        "detail": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_missingness_route_test_cases.json"
+      },
+      {
+        "id": "nhats-missingness-route-validation-exists",
+        "status": "PASS",
+        "detail": "web/src/data/life-path-nhats-missingness-route-validation.json"
+      },
+      {
+        "id": "nhats-missingness-route-protocol-schema",
+        "status": "PASS",
+        "detail": "schemaVersion='human-infra.life-path-nhats-missingness-route-protocol.v1'"
+      },
+      {
+        "id": "nhats-missingness-route-protocol-identity",
+        "status": "PASS",
+        "detail": "missingness-route protocol must bind NHATS source, upstream readiness/file/estimand/variable/cohort/disclosure/survey contracts and cannot-route status"
+      },
+      {
+        "id": "nhats-missingness-route-current-decision",
+        "status": "PASS",
+        "detail": "missingness-route protocol must block endpoint classification, missingness rates, weighted route counts, functional-survival curves, public export, calibration and individual prediction"
+      },
+      {
+        "id": "nhats-missingness-route-class-coverage",
+        "status": "PASS",
+        "detail": "missing_route_class_ids=[]"
+      },
+      {
+        "id": "nhats-missingness-route-field-coverage",
+        "status": "PASS",
+        "detail": "missing_route_field_ids=[]"
+      },
+      {
+        "id": "nhats-missingness-route-candidate-fields",
+        "status": "PASS",
+        "detail": "candidate field families must cover identity, interview status, proxy, residential, death and missing codes while staying candidate-pattern-only"
+      },
+      {
+        "id": "nhats-missingness-route-dominance-rules",
+        "status": "PASS",
+        "detail": "dominance rules must register death dominance, missingness blocking, proxy/facility separation, denominator handling and small-cell suppression"
+      },
+      {
+        "id": "nhats-missingness-route-readiness-gates",
+        "status": "PASS",
+        "detail": "missing_gate_ids=[]"
+      },
+      {
+        "id": "nhats-missingness-route-gate-summary",
+        "status": "PASS",
+        "detail": "gate summary must keep every missingness-route gate missing and blocking"
+      },
+      {
+        "id": "nhats-missingness-route-source-trace",
+        "status": "PASS",
+        "detail": "missingness-route protocol source trace must include NHATS conditions, Colectica, R13/R14 files, User Guide and Technical Paper 55"
+      },
+      {
+        "id": "nhats-missingness-route-prohibited-actions",
+        "status": "PASS",
+        "detail": "missingness-route protocol must prohibit premature routing, missingness-as-outcome, weighted route counts, public AI upload and individual death-date outputs"
+      },
+      {
+        "id": "nhats-missingness-route-test-cases-schema",
+        "status": "PASS",
+        "detail": "missingness-route test cases must bind NHATS source and synthetic-only protocol status"
+      },
+      {
+        "id": "nhats-missingness-route-test-cases-boundary",
+        "status": "PASS",
+        "detail": "missingness-route test cases must be synthetic-only and prohibit calibration plus individual prediction"
+      },
+      {
+        "id": "nhats-missingness-route-test-case-coverage",
+        "status": "PASS",
+        "detail": "missing_case_ids=[]"
+      },
+      {
+        "id": "nhats-missingness-route-test-case-decision-mix",
+        "status": "PASS",
+        "detail": "synthetic missingness-route cases must include both allowed route classifications and blocked endpoint examples"
+      },
+      {
+        "id": "nhats-missingness-route-validation-schema",
+        "status": "PASS",
+        "detail": "schemaVersion='human-infra.life-path-nhats-missingness-route-validation.v1'"
+      },
+      {
+        "id": "nhats-missingness-route-validation-source-hashes",
+        "status": "PASS",
+        "detail": "missingness-route validation report must point back to current protocol and test-case hashes"
+      },
+      {
+        "id": "nhats-missingness-route-validation-summary",
+        "status": "PASS",
+        "detail": "missingness-route validation report must pass every synthetic case, include allow/block results and cover route classes"
+      },
+      {
+        "id": "nhats-missingness-route-validation-case-results",
+        "status": "PASS",
+        "detail": "missing_validation_case_ids=[]"
+      },
+      {
+        "id": "nhats-missingness-route-validation-route-coverage",
+        "status": "PASS",
+        "detail": "observed_route_classes=['alive_facility_or_residential_route', 'alive_proxy_interview', 'alive_self_interview', 'decedent_or_death_boundary', 'missing_or_nonresponse', 'not_classifiable', 'suppressed_small_cell']"
+      },
+      {
+        "id": "nhats-missingness-route-validation-boundary",
+        "status": "PASS",
+        "detail": "missingness-route validation report must preserve synthetic-only, no-real-data, no-calibration and no-individual-prediction boundaries"
+      }
+    ],
+    "summary": {
+      "pass": 24,
+      "warn": 0,
+      "fail": 0
+    }
+  },
   "sensitivityAnalysis": {
     "path": "web/src/data/life-path-sensitivity-analysis.json",
-    "sha256": "5a5306219bcb521a4356a2a9b1379b248322aecd84870066eee89ef22113bc22",
+    "sha256": "8d2db388cbc99b89a717dbf41b54c994407eba7caa3ff0acc415ada4c0f1224a",
     "status": "PASS",
     "checks": [
       {

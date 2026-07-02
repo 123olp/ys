@@ -3,7 +3,7 @@
 - Overall status: `PASS`
 - Model path: `web/src/data/life-path-toy-model.json`
 - Model SHA-256: `a4c92209d79d20579bf1f575d5ebf07ffe5be9ccaf6bf3f3eef08efa287b5377`
-- Generated at: `2026-07-02T03:27:06.360135+00:00`
+- Generated at: `2026-07-02T03:49:23.961996+00:00`
 
 ## Checks
 
@@ -185,6 +185,30 @@
 | `nhats-survey-design-validation-summary` | `PASS` | survey-design validation report must pass every synthetic case and include both allowed and blocked results |
 | `nhats-survey-design-validation-case-results` | `PASS` | missing_validation_case_ids=[] |
 | `nhats-survey-design-validation-boundary` | `PASS` | survey-design validation report must preserve synthetic-only, no-real-data, no-calibration and no-individual-prediction boundaries |
+| `nhats-missingness-route-protocol-exists` | `PASS` | domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_missingness_route_protocol.json |
+| `nhats-missingness-route-test-cases-exist` | `PASS` | domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_missingness_route_test_cases.json |
+| `nhats-missingness-route-validation-exists` | `PASS` | web/src/data/life-path-nhats-missingness-route-validation.json |
+| `nhats-missingness-route-protocol-schema` | `PASS` | schemaVersion='human-infra.life-path-nhats-missingness-route-protocol.v1' |
+| `nhats-missingness-route-protocol-identity` | `PASS` | missingness-route protocol must bind NHATS source, upstream readiness/file/estimand/variable/cohort/disclosure/survey contracts and cannot-route status |
+| `nhats-missingness-route-current-decision` | `PASS` | missingness-route protocol must block endpoint classification, missingness rates, weighted route counts, functional-survival curves, public export, calibration and individual prediction |
+| `nhats-missingness-route-class-coverage` | `PASS` | missing_route_class_ids=[] |
+| `nhats-missingness-route-field-coverage` | `PASS` | missing_route_field_ids=[] |
+| `nhats-missingness-route-candidate-fields` | `PASS` | candidate field families must cover identity, interview status, proxy, residential, death and missing codes while staying candidate-pattern-only |
+| `nhats-missingness-route-dominance-rules` | `PASS` | dominance rules must register death dominance, missingness blocking, proxy/facility separation, denominator handling and small-cell suppression |
+| `nhats-missingness-route-readiness-gates` | `PASS` | missing_gate_ids=[] |
+| `nhats-missingness-route-gate-summary` | `PASS` | gate summary must keep every missingness-route gate missing and blocking |
+| `nhats-missingness-route-source-trace` | `PASS` | missingness-route protocol source trace must include NHATS conditions, Colectica, R13/R14 files, User Guide and Technical Paper 55 |
+| `nhats-missingness-route-prohibited-actions` | `PASS` | missingness-route protocol must prohibit premature routing, missingness-as-outcome, weighted route counts, public AI upload and individual death-date outputs |
+| `nhats-missingness-route-test-cases-schema` | `PASS` | missingness-route test cases must bind NHATS source and synthetic-only protocol status |
+| `nhats-missingness-route-test-cases-boundary` | `PASS` | missingness-route test cases must be synthetic-only and prohibit calibration plus individual prediction |
+| `nhats-missingness-route-test-case-coverage` | `PASS` | missing_case_ids=[] |
+| `nhats-missingness-route-test-case-decision-mix` | `PASS` | synthetic missingness-route cases must include both allowed route classifications and blocked endpoint examples |
+| `nhats-missingness-route-validation-schema` | `PASS` | schemaVersion='human-infra.life-path-nhats-missingness-route-validation.v1' |
+| `nhats-missingness-route-validation-source-hashes` | `PASS` | missingness-route validation report must point back to current protocol and test-case hashes |
+| `nhats-missingness-route-validation-summary` | `PASS` | missingness-route validation report must pass every synthetic case, include allow/block results and cover route classes |
+| `nhats-missingness-route-validation-case-results` | `PASS` | missing_validation_case_ids=[] |
+| `nhats-missingness-route-validation-route-coverage` | `PASS` | observed_route_classes=['alive_facility_or_residential_route', 'alive_proxy_interview', 'alive_self_interview', 'decedent_or_death_boundary', 'missing_or_nonresponse', 'not_classifiable', 'suppressed_small_cell'] |
+| `nhats-missingness-route-validation-boundary` | `PASS` | missingness-route validation report must preserve synthetic-only, no-real-data, no-calibration and no-individual-prediction boundaries |
 | `sensitivity-analysis-exists` | `PASS` | web/src/data/life-path-sensitivity-analysis.json |
 | `sensitivity-schema-version` | `PASS` | schemaVersion='human-infra.life-path-sensitivity.v1' |
 | `sensitivity-source-model-hash` | `PASS` | sensitivity output must point back to the generated model path and sha256 |
@@ -278,7 +302,7 @@
 - Disclosure test cases path: `domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_disclosure_control_test_cases.json`
 - Disclosure test cases SHA-256: `0a9cccdbfbd951ba6d04eeb762b9387ba50a13336e4ee4ade43ed976acb4c9c5`
 - Disclosure validation path: `web/src/data/life-path-nhats-disclosure-control-validation.json`
-- Disclosure validation SHA-256: `8788839f90f710b9a41b329252c911251364d844a5db8470bf1956cc091628c2`
+- Disclosure validation SHA-256: `16de849198d312b6b5cca3acca4e16abc6272ed86dac7c4d1a678b848ef87d2d`
 - Disclosure validation status: `PASS`
 - Boundary: disclosure-control validation proves only that synthetic output envelopes obey aggregate-only, n<5 suppression, row-level blocking, public-AI blocking and forbidden-output rules; it does not authorize real NHATS extraction, public export, calibration, validation or individual prediction.
 
@@ -289,14 +313,25 @@
 - Survey-design test cases path: `domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_survey_design_test_cases.json`
 - Survey-design test cases SHA-256: `a0d106ff0e70450ae96a4d8749037839cae27bfb7feb68bf2636681c46f500cc`
 - Survey-design validation path: `web/src/data/life-path-nhats-survey-design-validation.json`
-- Survey-design validation SHA-256: `f795afa96dfd7e842d0c26d84e88bf35197d327409a3e700a61013b95ca2827d`
+- Survey-design validation SHA-256: `404608006f4d6cba90f0c12668abdfadc501f12eeb089655f822fe2661f2a4e6`
 - Survey-design validation status: `PASS`
 - Boundary: survey-design validation proves only that synthetic design-plan envelopes enforce weights, strata, PSU/variance-unit, variance-method, route-map and disclosure prerequisites; it does not authorize real NHATS weighted estimates, population inference, calibration, validation or individual prediction.
+
+## NHATS Missingness Route Validation
+
+- Missingness-route protocol path: `domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_missingness_route_protocol.json`
+- Missingness-route protocol SHA-256: `e5f68ca68fd44aff81e2146eb2fa75534aab10440129b42f218f5473386e12fd`
+- Missingness-route test cases path: `domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_missingness_route_test_cases.json`
+- Missingness-route test cases SHA-256: `38928543b47a1f950de5925c2bb329fc544df4516aa882015240e7047674b4be`
+- Missingness-route validation path: `web/src/data/life-path-nhats-missingness-route-validation.json`
+- Missingness-route validation SHA-256: `b51da075466a68cd08bda96981755dc71e79309ae9b3bf34e1bf13f1288d36d1`
+- Missingness-route validation status: `PASS`
+- Boundary: missingness-route validation proves only that synthetic route envelopes separate death, self interview, proxy interview, facility route, missingness, conflicts and small-cell suppression; it does not authorize real NHATS route classification, weighted route counts, calibration, validation or individual prediction.
 
 ## Sensitivity Analysis
 
 - Sensitivity path: `web/src/data/life-path-sensitivity-analysis.json`
-- Sensitivity SHA-256: `5a5306219bcb521a4356a2a9b1379b248322aecd84870066eee89ef22113bc22`
+- Sensitivity SHA-256: `8d2db388cbc99b89a717dbf41b54c994407eba7caa3ff0acc415ada4c0f1224a`
 - Sensitivity status: `PASS`
 - Boundary: sensitivity analysis is synthetic one-factor-at-a-time stress testing; it does not prove empirical parameter values, causal effects, calibrated prediction, or individual usefulness.
 

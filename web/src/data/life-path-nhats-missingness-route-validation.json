@@ -1,0 +1,110 @@
+{
+  "schemaVersion": "human-infra.life-path-nhats-missingness-route-validation.v1",
+  "generatedAt": "2026-07-02T03:49:23.906324+00:00",
+  "protocolPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_missingness_route_protocol.json",
+  "protocolSha256": "e5f68ca68fd44aff81e2146eb2fa75534aab10440129b42f218f5473386e12fd",
+  "testCasesPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_missingness_route_test_cases.json",
+  "testCasesSha256": "38928543b47a1f950de5925c2bb329fc544df4516aa882015240e7047674b4be",
+  "overallStatus": "PASS",
+  "boundary": {
+    "containsRealNhatsData": false,
+    "containsSyntheticOnly": true,
+    "routeMapProofOnly": true,
+    "publicInferenceProofOnly": false,
+    "calibrationAllowed": false,
+    "individualPredictionAllowed": false,
+    "note": "This report validates synthetic missingness and endpoint-route envelopes only; it does not validate real NHATS extraction, route fields, weighted route counts, public export, calibration, clinical use or individual prediction."
+  },
+  "summary": {
+    "caseCount": 8,
+    "pass": 8,
+    "fail": 0,
+    "allowedCount": 5,
+    "blockedCount": 3,
+    "protocolIssueCount": 0,
+    "boundaryIssueCount": 0,
+    "routeCoverageOk": true,
+    "observedRouteClasses": [
+      "alive_facility_or_residential_route",
+      "alive_proxy_interview",
+      "alive_self_interview",
+      "decedent_or_death_boundary",
+      "missing_or_nonresponse",
+      "not_classifiable",
+      "suppressed_small_cell"
+    ]
+  },
+  "cases": [
+    {
+      "id": "synthetic-alive-self-interview-route",
+      "expectedDecision": "allow-route-classification",
+      "observedDecision": "allow-route-classification",
+      "observedRouteClass": "alive_self_interview",
+      "status": "PASS",
+      "reasons": []
+    },
+    {
+      "id": "synthetic-alive-proxy-interview-route",
+      "expectedDecision": "allow-route-classification",
+      "observedDecision": "allow-route-classification",
+      "observedRouteClass": "alive_proxy_interview",
+      "status": "PASS",
+      "reasons": []
+    },
+    {
+      "id": "synthetic-alive-facility-route",
+      "expectedDecision": "allow-route-classification",
+      "observedDecision": "allow-route-classification",
+      "observedRouteClass": "alive_facility_or_residential_route",
+      "status": "PASS",
+      "reasons": []
+    },
+    {
+      "id": "synthetic-decedent-dominates-functional-route",
+      "expectedDecision": "allow-route-classification",
+      "observedDecision": "allow-route-classification",
+      "observedRouteClass": "decedent_or_death_boundary",
+      "status": "PASS",
+      "reasons": []
+    },
+    {
+      "id": "synthetic-missing-status-blocks-endpoint",
+      "expectedDecision": "block-route-classification",
+      "observedDecision": "block-route-classification",
+      "observedRouteClass": "missing_or_nonresponse",
+      "status": "PASS",
+      "reasons": [
+        "missing or nonresponse route cannot be endpoint-classified"
+      ]
+    },
+    {
+      "id": "synthetic-conflicting-alive-and-decedent-flags",
+      "expectedDecision": "block-route-classification",
+      "observedDecision": "block-route-classification",
+      "observedRouteClass": "not_classifiable",
+      "status": "PASS",
+      "reasons": [
+        "aliveStatus and deathIndicator conflict"
+      ]
+    },
+    {
+      "id": "synthetic-public-small-cell-unsuppressed",
+      "expectedDecision": "block-route-classification",
+      "observedDecision": "block-route-classification",
+      "observedRouteClass": "suppressed_small_cell",
+      "status": "PASS",
+      "reasons": [
+        "public export requested for unsuppressed n < 5 route cell",
+        "expectedRouteClass='alive_self_interview' but observed='suppressed_small_cell'"
+      ]
+    },
+    {
+      "id": "synthetic-public-small-cell-suppressed",
+      "expectedDecision": "allow-route-classification",
+      "observedDecision": "allow-route-classification",
+      "observedRouteClass": "suppressed_small_cell",
+      "status": "PASS",
+      "reasons": []
+    }
+  ]
+}
