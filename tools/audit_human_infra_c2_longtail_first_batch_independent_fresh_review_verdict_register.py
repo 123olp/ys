@@ -290,7 +290,12 @@ def validate_coverage(verdict: dict[str, Any], reviewed_batches: list[dict[str, 
             fail(errors, f"taskCoverage[{index}].modelAdmissionDecision must remain blocked")
 
 
-def validate_remaining_and_summaries(verdict: dict[str, Any], remaining_batches: list[str], errors: list[str]) -> None:
+def validate_remaining_and_summaries(
+    verdict: dict[str, Any],
+    reviewed_batches: list[dict[str, Any]],
+    remaining_batches: list[str],
+    errors: list[str],
+) -> None:
     remaining = require_string_list(verdict.get("remainingFreshReviewBatches"), "remainingFreshReviewBatches", errors, 0)
     if remaining != remaining_batches:
         fail(errors, "remainingFreshReviewBatches must list unreviewed protocol batches in order")
@@ -301,13 +306,30 @@ def validate_remaining_and_summaries(verdict: dict[str, Any], remaining_batches:
     reviewed_batch_ids = verdict.get("scope", {}).get("reviewedBatchIds", []) if isinstance(verdict.get("scope"), dict) else []
     if [summary.get("batchId") for summary in summaries if isinstance(summary, dict)] != reviewed_batch_ids:
         fail(errors, "batchSummaries must match reviewedBatchIds")
-    coverage = [item for item in verdict.get("taskCoverage", []) if isinstance(item, dict)]
-    verdict_counts = Counter(item.get("reviewerVerdict") for item in coverage)
-    decision_counts = Counter(item.get("artifactPromotionDecision") for item in coverage)
+    coverage_by_task = {
+        item.get("taskId"): item
+        for item in verdict.get("taskCoverage", [])
+        if isinstance(item, dict)
+    }
+    protocol_batch_by_id = {batch.get("batchId"): batch for batch in reviewed_batches}
     for index, summary in enumerate(summaries):
         if not isinstance(summary, dict):
             fail(errors, f"batchSummaries[{index}] must be an object")
             continue
+        batch = protocol_batch_by_id.get(summary.get("batchId"))
+        if not batch:
+            fail(errors, f"batchSummaries[{index}].batchId must match a reviewed protocol batch")
+            continue
+        batch_coverage = [coverage_by_task.get(task_id) for task_id in batch.get("taskIds", [])]
+        if any(item is None for item in batch_coverage):
+            fail(errors, f"batchSummaries[{index}] references taskCoverage outside reviewed tasks")
+            continue
+        verdict_counts = Counter(item.get("reviewerVerdict") for item in batch_coverage if isinstance(item, dict))
+        decision_counts = Counter(item.get("artifactPromotionDecision") for item in batch_coverage if isinstance(item, dict))
+        if summary.get("taskCount") != len(batch.get("taskIds", [])):
+            fail(errors, f"batchSummaries[{index}].taskCount must match protocol batch")
+        if set(summary.get("domainIds", [])) != set(batch.get("domainIds", [])):
+            fail(errors, f"batchSummaries[{index}].domainIds must match protocol batch")
         if summary.get("reviewerVerdictCounts") != dict(verdict_counts):
             fail(errors, f"batchSummaries[{index}].reviewerVerdictCounts must match taskCoverage")
         if summary.get("artifactPromotionDecisionCounts") != dict(decision_counts):
@@ -339,7 +361,7 @@ def main() -> int:
         reviewed_batches, remaining_batches = validate_scope(verdict, batches, errors)
         validate_reviews(verdict, reviewed_batches, rows, protocol, errors)
         validate_coverage(verdict, reviewed_batches, protocol, errors)
-        validate_remaining_and_summaries(verdict, remaining_batches, errors)
+        validate_remaining_and_summaries(verdict, reviewed_batches, remaining_batches, errors)
         validate_index_links(verdict, errors)
     if errors:
         for error in errors:

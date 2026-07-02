@@ -12,19 +12,20 @@
   },
   "scope": {
     "reviewedBatchIds": [
-      "C2LTB1-FRB-01-acute-and-chronic-transition"
+      "C2LTB1-FRB-01-acute-and-chronic-transition",
+      "C2LTB1-FRB-02-metabolic-fitness-neuro-motor"
     ],
-    "reviewedBatchCount": 1,
+    "reviewedBatchCount": 2,
     "totalLocalReviewedExtractionTaskCount": 48,
-    "reviewedExtractionTaskCount": 12,
-    "remainingExtractionTaskCount": 36,
-    "reviewedDomainCount": 6,
+    "reviewedExtractionTaskCount": 24,
+    "remainingExtractionTaskCount": 24,
+    "reviewedDomainCount": 12,
     "reviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
-    "artifactPromotionDecision": "partial-first-batch-reviewed-bounded-artifact-fill-only-for-eligible-rows",
+    "artifactPromotionDecision": "partial-first-two-batches-reviewed-bounded-artifact-fill-only-for-eligible-rows",
     "nonClaims": [
       "This verdict register is not a completed Source Card set or reviewed artifact set.",
       "This verdict register does not authorize calibrated prediction, individual advice, individual death-date output, intervention ranking, domain-claim upgrade or clinical-validity claims.",
-      "Only the first C2-LT-B1 fresh-review batch has received verdicts; remaining prepared rows still require fresh review.",
+      "Only the first two C2-LT-B1 fresh-review batches have received verdicts; remaining prepared rows still require fresh review.",
       "Rows marked downgrade-required or cannot-evaluate-insufficient-context cannot fill reviewed artifacts until their downgrade or source-resolution condition is closed."
     ]
   },
@@ -433,6 +434,359 @@
       "reviewerVerdict": "support-with-boundary",
       "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
       "reviewerNote": "independent source check supports bounded vocabulary use only"
+    },
+    {
+      "taskId": "C2LTB1-EXT-013",
+      "domainId": "obesity-adiposity-metabolic-risk-continuity",
+      "reviewedSourceTitle": "WHO Obesity and overweight fact sheet",
+      "reviewedSourceUrl": "https://www.who.int/news-room/fact-sheets/detail/obesity-and-overweight",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "exactClaimUseVerdict": "supports exact claim use as vocabulary or route context only; no calibrated effect size or individual recommendation is admitted",
+      "domainTransferVerdict": "bounded transfer to endpoint, variable and care-pathway vocabulary; no intervention benefit, clinical decision or personal prognosis is admitted",
+      "modelPositionVerdict": "model-language-only; calibrated prediction, intervention ranking and individual prognosis remain blocked",
+      "uncertaintyBoundaryVerdict": "must carry source currentness, population/setting, evidence-grade, access, endpoint and implementation-transfer limits before artifact fill",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this reviewed task",
+      "freshReviewEvidence": [
+        {
+          "url": "https://www.who.int/news-room/fact-sheets/detail/obesity-and-overweight",
+          "evidenceType": "official-fact-sheet",
+          "finding": "WHO obesity fact sheet supports obesity and overweight definition, global burden and health-risk vocabulary; use only as population-level burden and risk-context evidence."
+        }
+      ],
+      "registeredSourceRole": "global-obesity-burden-definition-and-risk-context-anchor",
+      "registeredExactClaimUse": "Supports obesity and overweight as global burden and risk-context domains, including measurement vocabulary, disease-risk framing and population-level public-health relevance.",
+      "registeredTransferBoundary": "Transfer only to global burden framing, endpoint vocabulary and risk-channel identification. Do not infer personal prognosis, treatment ranking or calibrated adiposity-risk effects.",
+      "sourceIdentityVerdict": "verified-primary-or-authoritative-source",
+      "sourceContextVerdict": "supports-registered-source-role-with-boundary",
+      "downgradeVerdict": "WHO source supports bounded global burden, measurement and risk-context vocabulary only.",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "reviewerNote": "WHO source supports bounded global burden, measurement and risk-context vocabulary only."
+    },
+    {
+      "taskId": "C2LTB1-EXT-014",
+      "domainId": "obesity-adiposity-metabolic-risk-continuity",
+      "reviewedSourceTitle": "CDC Adult Obesity Facts",
+      "reviewedSourceUrl": "https://www.cdc.gov/obesity/adult-obesity-facts/index.html",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "exactClaimUseVerdict": "supports exact claim use as vocabulary or route context only; no calibrated effect size or individual recommendation is admitted",
+      "domainTransferVerdict": "bounded transfer to endpoint, variable and care-pathway vocabulary; no intervention benefit, clinical decision or personal prognosis is admitted",
+      "modelPositionVerdict": "model-language-only; calibrated prediction, intervention ranking and individual prognosis remain blocked",
+      "uncertaintyBoundaryVerdict": "must carry source currentness, population/setting, evidence-grade, access, endpoint and implementation-transfer limits before artifact fill",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this reviewed task",
+      "freshReviewEvidence": [
+        {
+          "url": "https://www.cdc.gov/obesity/adult-obesity-facts/index.html",
+          "evidenceType": "public-health-fact-page",
+          "finding": "CDC adult obesity facts supports U.S. adult obesity prevalence, disparity and public-health burden context; use only as U.S. surveillance and endpoint-context vocabulary."
+        }
+      ],
+      "registeredSourceRole": "us-adult-obesity-prevalence-and-disparity-context-anchor",
+      "registeredExactClaimUse": "Supports adult obesity as a US population-burden and disparity context domain that can inform endpoint vocabulary and observation-process boundaries.",
+      "registeredTransferBoundary": "Transfer only to US burden, disparity and endpoint-context work. Do not generalize to non-US populations or use as individual risk calibration without data review.",
+      "sourceIdentityVerdict": "verified-primary-or-authoritative-source",
+      "sourceContextVerdict": "supports-registered-source-role-with-boundary",
+      "downgradeVerdict": "CDC source supports U.S.-bounded surveillance context and should not be generalized to individual risk calibration.",
+      "reviewerVerdict": "bounded-support",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "reviewerNote": "CDC source supports U.S.-bounded surveillance context and should not be generalized to individual risk calibration."
+    },
+    {
+      "taskId": "C2LTB1-EXT-015",
+      "domainId": "cardiorespiratory-fitness-vo2max-aerobic-capacity-continuity",
+      "reviewedSourceTitle": "AHA Scientific Statement: Cardiorespiratory Fitness in Clinical Practice",
+      "reviewedSourceUrl": "https://www.ahajournals.org/doi/10.1161/CIR.0000000000000461",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "exactClaimUseVerdict": "supports exact claim use as vocabulary or route context only; no calibrated effect size or individual recommendation is admitted",
+      "domainTransferVerdict": "bounded transfer to endpoint, variable and care-pathway vocabulary; no intervention benefit, clinical decision or personal prognosis is admitted",
+      "modelPositionVerdict": "model-language-only; calibrated prediction, intervention ranking and individual prognosis remain blocked",
+      "uncertaintyBoundaryVerdict": "must carry source currentness, population/setting, evidence-grade, access, endpoint and implementation-transfer limits before artifact fill",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this reviewed task",
+      "freshReviewEvidence": [
+        {
+          "url": "https://www.ahajournals.org/doi/10.1161/CIR.0000000000000461",
+          "evidenceType": "scientific-statement",
+          "finding": "AHA scientific statement supports cardiorespiratory fitness as a clinically meaningful measurement and risk-marker domain; no individual VO2max prognosis or calibrated Human Infra effect size is admitted."
+        },
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/27881567/",
+          "evidenceType": "bibliographic-index",
+          "finding": "PubMed bibliographic record provides an independent index for the AHA cardiorespiratory fitness scientific statement."
+        }
+      ],
+      "registeredSourceRole": "cardiorespiratory-fitness-measurement-and-risk-context-anchor",
+      "registeredExactClaimUse": "Supports cardiorespiratory fitness as a measurable functional-reserve and risk-stratification domain that may be represented by exercise capacity, VO2max or fitness-category variables.",
+      "registeredTransferBoundary": "Transfer only to measurement vocabulary and candidate functional-reserve variables until exact statement claims, tables and evidence grades are freshly reviewed.",
+      "sourceIdentityVerdict": "verified-primary-or-authoritative-source",
+      "sourceContextVerdict": "supports-registered-source-role-with-boundary",
+      "downgradeVerdict": "AHA source supports CRF measurement and functional-reserve vocabulary with clinical-context boundaries only.",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "reviewerNote": "AHA source supports CRF measurement and functional-reserve vocabulary with clinical-context boundaries only."
+    },
+    {
+      "taskId": "C2LTB1-EXT-016",
+      "domainId": "cardiorespiratory-fitness-vo2max-aerobic-capacity-continuity",
+      "reviewedSourceTitle": "Physical Activity Guidelines for Americans",
+      "reviewedSourceUrl": "https://health.gov/our-work/nutrition-physical-activity/physical-activity-guidelines",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "exactClaimUseVerdict": "supports exact claim use as vocabulary or route context only; no calibrated effect size or individual recommendation is admitted",
+      "domainTransferVerdict": "bounded transfer to endpoint, variable and care-pathway vocabulary; no intervention benefit, clinical decision or personal prognosis is admitted",
+      "modelPositionVerdict": "model-language-only; calibrated prediction, intervention ranking and individual prognosis remain blocked",
+      "uncertaintyBoundaryVerdict": "must carry source currentness, population/setting, evidence-grade, access, endpoint and implementation-transfer limits before artifact fill",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this reviewed task",
+      "freshReviewEvidence": [
+        {
+          "url": "https://health.gov/our-work/nutrition-physical-activity/physical-activity-guidelines",
+          "evidenceType": "federal-guideline-hub",
+          "finding": "Physical Activity Guidelines for Americans hub supports physical activity recommendation, exposure-category and broad health-outcome vocabulary; no individualized activity prescription or calibrated effect is admitted."
+        }
+      ],
+      "registeredSourceRole": "physical-activity-guideline-and-functional-capacity-context-anchor",
+      "registeredExactClaimUse": "Supports physical activity as a public-health guideline domain connected to aerobic capacity, functional reserve, chronic-disease risk and effective-time maintenance.",
+      "registeredTransferBoundary": "Transfer only to activity-domain vocabulary, exposure categories and qualitative functional-reserve framing until dose-response and subgroup evidence are separately reviewed.",
+      "sourceIdentityVerdict": "verified-primary-or-authoritative-source",
+      "sourceContextVerdict": "supports-registered-source-role-with-boundary",
+      "downgradeVerdict": "Health.gov source supports guideline-domain vocabulary and qualitative functional-reserve framing only.",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "reviewerNote": "Health.gov source supports guideline-domain vocabulary and qualitative functional-reserve framing only."
+    },
+    {
+      "taskId": "C2LTB1-EXT-017",
+      "domainId": "cerebrovascular-stroke-brain-perfusion-resilience",
+      "reviewedSourceTitle": "NINDS Stroke information",
+      "reviewedSourceUrl": "https://www.ninds.nih.gov/health-information/disorders/stroke",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "exactClaimUseVerdict": "supports exact claim use as vocabulary or route context only; no calibrated effect size or individual recommendation is admitted",
+      "domainTransferVerdict": "bounded transfer to endpoint, variable and care-pathway vocabulary; no intervention benefit, clinical decision or personal prognosis is admitted",
+      "modelPositionVerdict": "model-language-only; calibrated prediction, intervention ranking and individual prognosis remain blocked",
+      "uncertaintyBoundaryVerdict": "must carry source currentness, population/setting, evidence-grade, access, endpoint and implementation-transfer limits before artifact fill",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this reviewed task",
+      "freshReviewEvidence": [
+        {
+          "url": "https://www.ninds.nih.gov/health-information/disorders/stroke",
+          "evidenceType": "registered-url-currentness-check",
+          "finding": "The registered NINDS stroke URL is an official candidate source, but exact path/currentness should be resolved before artifact fill; use remains downgraded to source-resolution work only."
+        }
+      ],
+      "registeredSourceRole": "stroke-mechanism-symptom-treatment-and-recovery-context-anchor",
+      "registeredExactClaimUse": "Supports stroke as a time-sensitive brain-perfusion and neurological-continuity failure mode involving ischemic or hemorrhagic mechanisms, symptoms, emergency care, recovery and prevention context.",
+      "registeredTransferBoundary": "Transfer only to mechanism vocabulary, route variables and endpoint candidates. Emergency response, therapy eligibility and prognosis require clinical sources and individual assessment.",
+      "sourceIdentityVerdict": "registered-source-needs-currentness-or-path-resolution",
+      "sourceContextVerdict": "source role remains plausible but downgrade-before-fill is required until currentness/path is resolved",
+      "downgradeVerdict": "registered NINDS source needs currentness/path resolution before bounded artifact fill.",
+      "reviewerVerdict": "downgrade-required",
+      "artifactPromotionDecision": "downgrade-before-fill",
+      "reviewerNote": "registered NINDS source needs currentness/path resolution before bounded artifact fill."
+    },
+    {
+      "taskId": "C2LTB1-EXT-018",
+      "domainId": "cerebrovascular-stroke-brain-perfusion-resilience",
+      "reviewedSourceTitle": "AHA/ASA Stroke Guidelines hub",
+      "reviewedSourceUrl": "https://www.stroke.org/en/professionals/stroke-resource-library/prevention-and-treatment-guidelines",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "exactClaimUseVerdict": "supports exact claim use as vocabulary or route context only; no calibrated effect size or individual recommendation is admitted",
+      "domainTransferVerdict": "bounded transfer to endpoint, variable and care-pathway vocabulary; no intervention benefit, clinical decision or personal prognosis is admitted",
+      "modelPositionVerdict": "model-language-only; calibrated prediction, intervention ranking and individual prognosis remain blocked",
+      "uncertaintyBoundaryVerdict": "must carry source currentness, population/setting, evidence-grade, access, endpoint and implementation-transfer limits before artifact fill",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this reviewed task",
+      "freshReviewEvidence": [
+        {
+          "url": "https://www.stroke.org/en/professionals/stroke-resource-library/prevention-and-treatment-guidelines",
+          "evidenceType": "registered-url-currentness-check",
+          "finding": "The registered AHA/ASA stroke guideline hub requires path/currentness normalization and source-specific guideline extraction before artifact fill; it remains a route-to-source candidate only."
+        }
+      ],
+      "registeredSourceRole": "stroke-guideline-route-and-prevention-context-anchor",
+      "registeredExactClaimUse": "Supports stroke prevention and treatment as a guideline-governed continuity route requiring source-specific extraction of guideline title, population, recommendation class, evidence level and endpoint.",
+      "registeredTransferBoundary": "Transfer only as route-to-source and guideline-discovery metadata until each specific AHA/ASA guideline is extracted separately.",
+      "sourceIdentityVerdict": "registered-source-needs-currentness-or-path-resolution",
+      "sourceContextVerdict": "source role remains plausible but downgrade-before-fill is required until currentness/path is resolved",
+      "downgradeVerdict": "registered AHA/ASA guideline hub remains downgrade-before-fill until exact guideline sources are normalized.",
+      "reviewerVerdict": "downgrade-required",
+      "artifactPromotionDecision": "downgrade-before-fill",
+      "reviewerNote": "registered AHA/ASA guideline hub remains downgrade-before-fill until exact guideline sources are normalized."
+    },
+    {
+      "taskId": "C2LTB1-EXT-019",
+      "domainId": "delirium-acute-cognitive-failure-prevention",
+      "reviewedSourceTitle": "SCCM PADIS Guidelines",
+      "reviewedSourceUrl": "https://pubmed.ncbi.nlm.nih.gov/30113379/",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "exactClaimUseVerdict": "supports exact claim use as vocabulary or route context only; no calibrated effect size or individual recommendation is admitted",
+      "domainTransferVerdict": "bounded transfer to endpoint, variable and care-pathway vocabulary; no intervention benefit, clinical decision or personal prognosis is admitted",
+      "modelPositionVerdict": "model-language-only; calibrated prediction, intervention ranking and individual prognosis remain blocked",
+      "uncertaintyBoundaryVerdict": "must carry source currentness, population/setting, evidence-grade, access, endpoint and implementation-transfer limits before artifact fill",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this reviewed task",
+      "freshReviewEvidence": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30113379/",
+          "evidenceType": "bibliographic-guideline-index",
+          "finding": "PubMed indexes the 2018 PADIS guideline for adult ICU pain, agitation/sedation, delirium, immobility and sleep disruption; use is bounded to ICU guideline vocabulary and endpoint context."
+        }
+      ],
+      "registeredSourceRole": "icu-pain-agitation-delirium-immobility-sleep-guideline-context-anchor",
+      "registeredExactClaimUse": "Supports delirium as an ICU cognitive-failure and recovery-risk domain embedded in pain, agitation, sedation, immobility and sleep-disruption management.",
+      "registeredTransferBoundary": "Transfer only to ICU delirium endpoint and care-process vocabulary until recommendation strength, evidence level, population and comparator are extracted.",
+      "sourceIdentityVerdict": "verified-primary-or-authoritative-source",
+      "sourceContextVerdict": "supports-registered-source-role-with-boundary",
+      "downgradeVerdict": "PADIS supports ICU delirium and care-process vocabulary only; recommendation strength and currentness require later artifact extraction.",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "reviewerNote": "PADIS supports ICU delirium and care-process vocabulary only; recommendation strength and currentness require later artifact extraction."
+    },
+    {
+      "taskId": "C2LTB1-EXT-020",
+      "domainId": "delirium-acute-cognitive-failure-prevention",
+      "reviewedSourceTitle": "NICE Delirium prevention diagnosis and management guideline",
+      "reviewedSourceUrl": "https://www.nice.org.uk/guidance/cg103",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "exactClaimUseVerdict": "supports exact claim use as vocabulary or route context only; no calibrated effect size or individual recommendation is admitted",
+      "domainTransferVerdict": "bounded transfer to endpoint, variable and care-pathway vocabulary; no intervention benefit, clinical decision or personal prognosis is admitted",
+      "modelPositionVerdict": "model-language-only; calibrated prediction, intervention ranking and individual prognosis remain blocked",
+      "uncertaintyBoundaryVerdict": "must carry source currentness, population/setting, evidence-grade, access, endpoint and implementation-transfer limits before artifact fill",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this reviewed task",
+      "freshReviewEvidence": [
+        {
+          "url": "https://www.nice.org.uk/guidance/cg103",
+          "evidenceType": "clinical-guideline-page",
+          "finding": "NICE CG103 covers delirium prevention, diagnosis and management in hospital and long-term care; use is bounded to guideline pathway, setting and endpoint vocabulary."
+        }
+      ],
+      "registeredSourceRole": "delirium-risk-identification-prevention-diagnosis-and-management-anchor",
+      "registeredExactClaimUse": "Supports delirium prevention, diagnosis and management as a structured hospital and long-term-care pathway with risk identification, assessment and response components.",
+      "registeredTransferBoundary": "Transfer only to guideline pathway structure and endpoint vocabulary until exact NICE recommendations, populations and evidence details are extracted.",
+      "sourceIdentityVerdict": "verified-primary-or-authoritative-source",
+      "sourceContextVerdict": "supports-registered-source-role-with-boundary",
+      "downgradeVerdict": "NICE source supports delirium pathway vocabulary with setting-specific boundaries only.",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "reviewerNote": "NICE source supports delirium pathway vocabulary with setting-specific boundaries only."
+    },
+    {
+      "taskId": "C2LTB1-EXT-021",
+      "domainId": "disorders-of-consciousness-coma-recovery",
+      "reviewedSourceTitle": "AAN Practice Guideline Update: Disorders of Consciousness",
+      "reviewedSourceUrl": "https://pubmed.ncbi.nlm.nih.gov/30089618/",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "exactClaimUseVerdict": "supports exact claim use as vocabulary or route context only; no calibrated effect size or individual recommendation is admitted",
+      "domainTransferVerdict": "bounded transfer to endpoint, variable and care-pathway vocabulary; no intervention benefit, clinical decision or personal prognosis is admitted",
+      "modelPositionVerdict": "model-language-only; calibrated prediction, intervention ranking and individual prognosis remain blocked",
+      "uncertaintyBoundaryVerdict": "must carry source currentness, population/setting, evidence-grade, access, endpoint and implementation-transfer limits before artifact fill",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this reviewed task",
+      "freshReviewEvidence": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30089618/",
+          "evidenceType": "bibliographic-guideline-index",
+          "finding": "PubMed indexes the AAN/ACRM/NIDILRR practice guideline update for prolonged disorders of consciousness; use supports diagnostic, prognostic and care-planning vocabulary with strict population and individual-prognosis boundaries."
+        }
+      ],
+      "registeredSourceRole": "disorders-of-consciousness-diagnosis-prognosis-and-care-decision-anchor",
+      "registeredExactClaimUse": "Supports disorders of consciousness as a subject-continuity boundary domain where diagnosis, prognosis, communication capacity and care planning require high-evidence safeguards.",
+      "registeredTransferBoundary": "Transfer only to endpoint vocabulary, evidence-boundary requirements and subject-continuity governance. Do not use for individual prognosis or care decisions.",
+      "sourceIdentityVerdict": "verified-primary-or-authoritative-source",
+      "sourceContextVerdict": "supports-registered-source-role-with-boundary",
+      "downgradeVerdict": "AAN DoC guideline supports subject-continuity governance vocabulary but not individual prognosis.",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "reviewerNote": "AAN DoC guideline supports subject-continuity governance vocabulary but not individual prognosis."
+    },
+    {
+      "taskId": "C2LTB1-EXT-022",
+      "domainId": "disorders-of-consciousness-coma-recovery",
+      "reviewedSourceTitle": "Model Systems Knowledge Translation Center TBI and disorders of consciousness",
+      "reviewedSourceUrl": "https://msktc.org/tbi/factsheets/disorders-consciousness",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "exactClaimUseVerdict": "supports exact claim use as vocabulary or route context only; no calibrated effect size or individual recommendation is admitted",
+      "domainTransferVerdict": "bounded transfer to endpoint, variable and care-pathway vocabulary; no intervention benefit, clinical decision or personal prognosis is admitted",
+      "modelPositionVerdict": "model-language-only; calibrated prediction, intervention ranking and individual prognosis remain blocked",
+      "uncertaintyBoundaryVerdict": "must carry source currentness, population/setting, evidence-grade, access, endpoint and implementation-transfer limits before artifact fill",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this reviewed task",
+      "freshReviewEvidence": [
+        {
+          "url": "https://msktc.org/tbi/factsheets/disorders-consciousness",
+          "evidenceType": "patient-education-factsheet",
+          "finding": "MSKTC factsheet supports patient/family-facing TBI disorders-of-consciousness taxonomy, recovery-state and rehabilitation-context vocabulary; use is not guideline-level evidence."
+        }
+      ],
+      "registeredSourceRole": "patient-family-rehabilitation-context-and-plain-language-definition-anchor",
+      "registeredExactClaimUse": "Supports patient and family-facing explanation of coma, vegetative/unresponsive wakefulness, minimally conscious state, recovery expectations and rehabilitation context.",
+      "registeredTransferBoundary": "Transfer only to plain-language taxonomy, caregiver-facing context and rehabilitation-route vocabulary; guideline-level claims need clinical guideline sources.",
+      "sourceIdentityVerdict": "verified-primary-or-authoritative-source",
+      "sourceContextVerdict": "supports-registered-source-role-with-boundary",
+      "downgradeVerdict": "MSKTC source is bounded to plain-language education and rehabilitation context, not clinical guideline claims.",
+      "reviewerVerdict": "bounded-support",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "reviewerNote": "MSKTC source is bounded to plain-language education and rehabilitation context, not clinical guideline claims."
+    },
+    {
+      "taskId": "C2LTB1-EXT-023",
+      "domainId": "amyotrophic-lateral-sclerosis-motor-neuron-continuity",
+      "reviewedSourceTitle": "NINDS Amyotrophic Lateral Sclerosis information",
+      "reviewedSourceUrl": "https://www.ninds.nih.gov/health-information/disorders/amyotrophic-lateral-sclerosis-als",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "exactClaimUseVerdict": "supports exact claim use as vocabulary or route context only; no calibrated effect size or individual recommendation is admitted",
+      "domainTransferVerdict": "bounded transfer to endpoint, variable and care-pathway vocabulary; no intervention benefit, clinical decision or personal prognosis is admitted",
+      "modelPositionVerdict": "model-language-only; calibrated prediction, intervention ranking and individual prognosis remain blocked",
+      "uncertaintyBoundaryVerdict": "must carry source currentness, population/setting, evidence-grade, access, endpoint and implementation-transfer limits before artifact fill",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this reviewed task",
+      "freshReviewEvidence": [
+        {
+          "url": "https://www.ninds.nih.gov/health-information/disorders/amyotrophic-lateral-sclerosis-als",
+          "evidenceType": "official-disease-information-page",
+          "finding": "NINDS ALS page supports ALS mechanism, symptom, progression and support-need vocabulary; no individual progression rate, survival estimate or treatment-effect calibration is admitted."
+        }
+      ],
+      "registeredSourceRole": "als-mechanism-symptom-progression-and-support-context-anchor",
+      "registeredExactClaimUse": "Supports ALS as a progressive motor-neuron continuity failure mode affecting movement, speech, swallowing, respiration, communication access, caregiving and effective action time.",
+      "registeredTransferBoundary": "Transfer only to mechanism, endpoint and support-need vocabulary. Do not infer individual progression rate, treatment effect or survival estimate.",
+      "sourceIdentityVerdict": "verified-primary-or-authoritative-source",
+      "sourceContextVerdict": "supports-registered-source-role-with-boundary",
+      "downgradeVerdict": "NINDS source supports ALS disease and support-context vocabulary only.",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "reviewerNote": "NINDS source supports ALS disease and support-context vocabulary only."
+    },
+    {
+      "taskId": "C2LTB1-EXT-024",
+      "domainId": "amyotrophic-lateral-sclerosis-motor-neuron-continuity",
+      "reviewedSourceTitle": "AAN ALS practice parameter update",
+      "reviewedSourceUrl": "https://pubmed.ncbi.nlm.nih.gov/19822872/",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "independent-fresh-review-primary-or-authoritative-source-check",
+      "exactClaimUseVerdict": "supports exact claim use as vocabulary or route context only; no calibrated effect size or individual recommendation is admitted",
+      "domainTransferVerdict": "bounded transfer to endpoint, variable and care-pathway vocabulary; no intervention benefit, clinical decision or personal prognosis is admitted",
+      "modelPositionVerdict": "model-language-only; calibrated prediction, intervention ranking and individual prognosis remain blocked",
+      "uncertaintyBoundaryVerdict": "must carry source currentness, population/setting, evidence-grade, access, endpoint and implementation-transfer limits before artifact fill",
+      "blockedUseVerdict": "all protocol blocked uses remain blocked for this reviewed task",
+      "freshReviewEvidence": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/19822872/",
+          "evidenceType": "bibliographic-guideline-index",
+          "finding": "PubMed indexes the AAN ALS practice parameter update; use supports ALS nutrition, respiratory, communication and multidisciplinary-care vocabulary with dated-guideline/currentness boundary."
+        }
+      ],
+      "registeredSourceRole": "als-clinical-management-and-supportive-care-guideline-context-anchor",
+      "registeredExactClaimUse": "Supports ALS clinical-management extraction needs for respiratory care, nutrition, communication, multidisciplinary support and disease-modifying or symptom-management boundaries after full guideline review.",
+      "registeredTransferBoundary": "Transfer only to guideline-route vocabulary until exact recommendations, evidence classes, dates and currentness checks are extracted.",
+      "sourceIdentityVerdict": "verified-primary-or-authoritative-source",
+      "sourceContextVerdict": "supports-registered-source-role-with-boundary",
+      "downgradeVerdict": "AAN ALS practice parameter supports guideline-route vocabulary only and requires currentness handling before stronger claims.",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "reviewerNote": "AAN ALS practice parameter supports guideline-route vocabulary only and requires currentness handling before stronger claims."
     }
   ],
   "taskCoverage": [
@@ -519,10 +873,93 @@
       "reviewerVerdict": "support-with-boundary",
       "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
       "modelAdmissionDecision": "blocked-pending-reviewed-artifacts-and-model-gates"
+    },
+    {
+      "taskId": "C2LTB1-EXT-013",
+      "domainId": "obesity-adiposity-metabolic-risk-continuity",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-reviewed-artifacts-and-model-gates"
+    },
+    {
+      "taskId": "C2LTB1-EXT-014",
+      "domainId": "obesity-adiposity-metabolic-risk-continuity",
+      "reviewerVerdict": "bounded-support",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-reviewed-artifacts-and-model-gates"
+    },
+    {
+      "taskId": "C2LTB1-EXT-015",
+      "domainId": "cardiorespiratory-fitness-vo2max-aerobic-capacity-continuity",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-reviewed-artifacts-and-model-gates"
+    },
+    {
+      "taskId": "C2LTB1-EXT-016",
+      "domainId": "cardiorespiratory-fitness-vo2max-aerobic-capacity-continuity",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-reviewed-artifacts-and-model-gates"
+    },
+    {
+      "taskId": "C2LTB1-EXT-017",
+      "domainId": "cerebrovascular-stroke-brain-perfusion-resilience",
+      "reviewerVerdict": "downgrade-required",
+      "artifactPromotionDecision": "downgrade-before-fill",
+      "modelAdmissionDecision": "blocked-pending-reviewed-artifacts-and-model-gates"
+    },
+    {
+      "taskId": "C2LTB1-EXT-018",
+      "domainId": "cerebrovascular-stroke-brain-perfusion-resilience",
+      "reviewerVerdict": "downgrade-required",
+      "artifactPromotionDecision": "downgrade-before-fill",
+      "modelAdmissionDecision": "blocked-pending-reviewed-artifacts-and-model-gates"
+    },
+    {
+      "taskId": "C2LTB1-EXT-019",
+      "domainId": "delirium-acute-cognitive-failure-prevention",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-reviewed-artifacts-and-model-gates"
+    },
+    {
+      "taskId": "C2LTB1-EXT-020",
+      "domainId": "delirium-acute-cognitive-failure-prevention",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-reviewed-artifacts-and-model-gates"
+    },
+    {
+      "taskId": "C2LTB1-EXT-021",
+      "domainId": "disorders-of-consciousness-coma-recovery",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-reviewed-artifacts-and-model-gates"
+    },
+    {
+      "taskId": "C2LTB1-EXT-022",
+      "domainId": "disorders-of-consciousness-coma-recovery",
+      "reviewerVerdict": "bounded-support",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-reviewed-artifacts-and-model-gates"
+    },
+    {
+      "taskId": "C2LTB1-EXT-023",
+      "domainId": "amyotrophic-lateral-sclerosis-motor-neuron-continuity",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-reviewed-artifacts-and-model-gates"
+    },
+    {
+      "taskId": "C2LTB1-EXT-024",
+      "domainId": "amyotrophic-lateral-sclerosis-motor-neuron-continuity",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "eligible-for-bounded-artifact-fill",
+      "modelAdmissionDecision": "blocked-pending-reviewed-artifacts-and-model-gates"
     }
   ],
   "remainingFreshReviewBatches": [
-    "C2LTB1-FRB-02-metabolic-fitness-neuro-motor",
     "C2LTB1-FRB-03-oncology-infectious-immunization",
     "C2LTB1-FRB-04-liver-newborn-reproductive-pain-barrier-safety"
   ],
@@ -554,6 +991,28 @@
         "eligible-for-bounded-artifact-fill": 10,
         "downgrade-before-fill": 1,
         "blocked-cannot-evaluate": 1
+      },
+      "modelAdmissionDecision": "blocked-pending-reviewed-artifacts-and-model-gates"
+    },
+    {
+      "batchId": "C2LTB1-FRB-02-metabolic-fitness-neuro-motor",
+      "taskCount": 12,
+      "domainIds": [
+        "obesity-adiposity-metabolic-risk-continuity",
+        "cardiorespiratory-fitness-vo2max-aerobic-capacity-continuity",
+        "cerebrovascular-stroke-brain-perfusion-resilience",
+        "delirium-acute-cognitive-failure-prevention",
+        "disorders-of-consciousness-coma-recovery",
+        "amyotrophic-lateral-sclerosis-motor-neuron-continuity"
+      ],
+      "reviewerVerdictCounts": {
+        "support-with-boundary": 8,
+        "bounded-support": 2,
+        "downgrade-required": 2
+      },
+      "artifactPromotionDecisionCounts": {
+        "eligible-for-bounded-artifact-fill": 10,
+        "downgrade-before-fill": 2
       },
       "modelAdmissionDecision": "blocked-pending-reviewed-artifacts-and-model-gates"
     }
