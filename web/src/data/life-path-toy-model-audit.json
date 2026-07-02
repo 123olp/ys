@@ -1,8 +1,8 @@
 {
   "schemaVersion": "human-infra.life-path-toy-audit.v1",
-  "generatedAt": "2026-07-02T00:46:22.749565+00:00",
+  "generatedAt": "2026-07-02T00:55:43.031199+00:00",
   "modelPath": "web/src/data/life-path-toy-model.json",
-  "modelSha256": "05c981d4526bcbd23c83ad535e40e6545d0c191a8b3a44ff12c6f018b208c6cc",
+  "modelSha256": "7852d4d10f70ad5829f7d9c2bbac39641a120eb766ca6b5689073d8d4d45280e",
   "overallStatus": "PASS",
   "checks": [
     {
@@ -154,10 +154,65 @@
       "id": "readiness-upgrade-gate",
       "status": "PASS",
       "detail": "upgrade gate must keep the current decision at cannot-calibrate-yet"
+    },
+    {
+      "id": "data-sources-schema-version",
+      "status": "PASS",
+      "detail": "schemaVersion='human-infra.life-path-data-source-candidates.v1'"
+    },
+    {
+      "id": "data-sources-candidate-only-boundary",
+      "status": "PASS",
+      "detail": "registry must state no data download, access grant, individual data, calibration claim, or causal claim"
+    },
+    {
+      "id": "data-sources-candidate-count",
+      "status": "PASS",
+      "detail": "candidate_count=8"
+    },
+    {
+      "id": "data-sources-candidate-id-unique",
+      "status": "PASS",
+      "detail": "ids=['hrs', 'nchs-linked-mortality-nhanes-nhis', 'uk-biobank', 'all-of-us', 'nhats', 'elsa', 'share', 'framingham-heart-study']"
+    },
+    {
+      "id": "data-sources-required-fields",
+      "status": "PASS",
+      "detail": "required=['accessStatus', 'ageFrame', 'cohortType', 'coverageTags', 'geography', 'governanceStatus', 'id', 'limitations', 'modelRoles', 'name', 'officialUrl', 'outcomeSupport', 'populationFrame', 'predictorSupport', 'prohibitedClaims', 'sourceAuthority', 'strengths']"
+    },
+    {
+      "id": "data-sources-official-https-urls",
+      "status": "PASS",
+      "detail": "each candidate must use an official HTTPS URL"
+    },
+    {
+      "id": "data-sources-access-governance",
+      "status": "PASS",
+      "detail": "each candidate must state access and governance status"
+    },
+    {
+      "id": "data-sources-coverage-tags",
+      "status": "PASS",
+      "detail": "missing_tags=[]"
+    },
+    {
+      "id": "data-sources-coverage-summary",
+      "status": "PASS",
+      "detail": "coverage summary must map required model needs to candidate IDs"
+    },
+    {
+      "id": "data-sources-prohibited-claims",
+      "status": "PASS",
+      "detail": "each candidate must block individual prediction and calibration/causal overclaim"
+    },
+    {
+      "id": "data-sources-next-work",
+      "status": "PASS",
+      "detail": "registry must point toward Source Cards, variable dictionaries, data cards, and governed acquisition"
     }
   ],
   "summary": {
-    "pass": 30,
+    "pass": 41,
     "warn": 0,
     "fail": 0
   },
@@ -195,7 +250,7 @@
   ],
   "calibrationReadiness": {
     "path": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_calibration_readiness.json",
-    "sha256": "5640fa8b3c5466de351e3ba5763da7477a1b40657d102cdaee7486a174d63166",
+    "sha256": "ca9bc83693b29f198d803bb0741cad4a136884e24d290073fcbe235712326bd2",
     "status": "PASS",
     "checks": [
       {
@@ -281,6 +336,73 @@
     ],
     "summary": {
       "pass": 16,
+      "warn": 0,
+      "fail": 0
+    }
+  },
+  "dataSourceCandidates": {
+    "path": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_data_source_candidates.json",
+    "sha256": "da21ba7fa51d964ca86913b7a1820159a981a25cced8d3f304f4efd24f35d82e",
+    "status": "PASS",
+    "checks": [
+      {
+        "id": "data-sources-schema-version",
+        "status": "PASS",
+        "detail": "schemaVersion='human-infra.life-path-data-source-candidates.v1'"
+      },
+      {
+        "id": "data-sources-candidate-only-boundary",
+        "status": "PASS",
+        "detail": "registry must state no data download, access grant, individual data, calibration claim, or causal claim"
+      },
+      {
+        "id": "data-sources-candidate-count",
+        "status": "PASS",
+        "detail": "candidate_count=8"
+      },
+      {
+        "id": "data-sources-candidate-id-unique",
+        "status": "PASS",
+        "detail": "ids=['hrs', 'nchs-linked-mortality-nhanes-nhis', 'uk-biobank', 'all-of-us', 'nhats', 'elsa', 'share', 'framingham-heart-study']"
+      },
+      {
+        "id": "data-sources-required-fields",
+        "status": "PASS",
+        "detail": "required=['accessStatus', 'ageFrame', 'cohortType', 'coverageTags', 'geography', 'governanceStatus', 'id', 'limitations', 'modelRoles', 'name', 'officialUrl', 'outcomeSupport', 'populationFrame', 'predictorSupport', 'prohibitedClaims', 'sourceAuthority', 'strengths']"
+      },
+      {
+        "id": "data-sources-official-https-urls",
+        "status": "PASS",
+        "detail": "each candidate must use an official HTTPS URL"
+      },
+      {
+        "id": "data-sources-access-governance",
+        "status": "PASS",
+        "detail": "each candidate must state access and governance status"
+      },
+      {
+        "id": "data-sources-coverage-tags",
+        "status": "PASS",
+        "detail": "missing_tags=[]"
+      },
+      {
+        "id": "data-sources-coverage-summary",
+        "status": "PASS",
+        "detail": "coverage summary must map required model needs to candidate IDs"
+      },
+      {
+        "id": "data-sources-prohibited-claims",
+        "status": "PASS",
+        "detail": "each candidate must block individual prediction and calibration/causal overclaim"
+      },
+      {
+        "id": "data-sources-next-work",
+        "status": "PASS",
+        "detail": "registry must point toward Source Cards, variable dictionaries, data cards, and governed acquisition"
+      }
+    ],
+    "summary": {
+      "pass": 11,
       "warn": 0,
       "fail": 0
     }

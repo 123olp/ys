@@ -10,7 +10,7 @@
 | --- | ---: | --- | --- |
 | 项目价值 | 82% | 不同受众能用同一核心命题理解 Human Infra 的必要性 | 还需要把同一价值语言压入所有论文页和传播页 |
 | 研究框架 | 52% | 每条主张都进入 Source Card、Claim-Evidence Matrix、变量表和反证条件 | 研究域多，但主张级证据闭环还不均匀 |
-| 定量模型 | 38% | 有可运行、可复现、可审查的场景级模型管线 | 已有 toy model、审计器和校准预备契约，但还没有真实队列、外部验证和已执行敏感性分析 |
+| 定量模型 | 42% | 有可运行、可复现、可审查的场景级模型管线 | 已有 toy model、审计器、校准预备契约和真实队列候选注册表，但还没有数据访问、Source Cards、外部验证和已执行敏感性分析 |
 
 ## 价值层 100%
 
@@ -153,14 +153,15 @@ life_path_toy_model_scenarios.json
   -> audit_life_path_toy_model.py
   -> life-path-toy-model-audit.json / .md
   -> life_path_calibration_readiness.json
+  -> life_path_data_source_candidates.json
   -> /model/ Web 图表
-  -> model card + sanity checks + calibration-readiness audit checks
+  -> model card + sanity checks + calibration-readiness audit checks + data-source candidate audit checks
 ```
 
-这一步已经把项目从“有定量想法的研究叙事”推进到“有最小可执行、可审计模型管线的研究系统”。下一步不是继续膨胀新域，而是补三件硬东西：
+这一步已经把项目从“有定量想法的研究叙事”推进到“有最小可执行、可审计模型管线的研究系统”，并且开始把真实队列候选和治理边界纳入机器审计。下一步不是继续膨胀新域，而是补三件硬东西：
 
 - 把 C1/C2 核心主张做成 Source Cards 和 Claim-Evidence Matrix。
-- 给 life-path 模型补真实队列候选、变量可得性、缺失机制和伦理边界。
+- 把 life-path 候选数据源逐个转成 Source Cards / Data Cards，补变量可得性、缺失机制、代表性、访问规则和伦理边界。
 - 执行 sensitivity analysis，并把结果接入审计产物和 `/model/` 可视化。
 
 ## 当前已具备的定量门禁
@@ -185,6 +186,10 @@ life_path_toy_model_scenarios.json
 - 是否明确当前没有真实队列、校准、外部验证和个体用途；
 - 是否包含 TRIPOD+AI、PROBAST/PROBAST+AI、ISPOR、MRC 和 OHDSI PLP 方法锚点；
 - 是否包含 target population、time zero、outcome、estimand、predictor、data requirement、censoring、validation、calibration、sensitivity、bias/applicability、reporting 和 prohibited use 字段。
+- 候选数据源注册表是否存在；
+- 候选数据源是否明确 no data download、no access grant、no individual data、no calibration claim 和 no causal claim；
+- 候选数据源是否覆盖 mortality、function、biomarkers、cognition、resource/social 和 external validation 的最低需求；
+- 每个候选源是否使用官方 HTTPS URL、写明 access/governance status，并禁止个体预测、校准过度主张和因果过度主张。
 
 ## 参考入口
 

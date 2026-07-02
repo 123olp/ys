@@ -1,0 +1,516 @@
+{
+  "schemaVersion": "human-infra.life-path-data-source-candidates.v1",
+  "status": "candidate-registry-only",
+  "lastReviewed": "2026-07-02",
+  "purpose": "Register authoritative candidate data sources that could eventually support cohort-level life-path model calibration, validation, or external comparison. This registry does not grant access, download data, or prove model validity.",
+  "currentBoundary": {
+    "noDataDownloaded": true,
+    "noDataAccessGranted": true,
+    "noIndividualDataPresent": true,
+    "noCalibrationClaim": true,
+    "noCausalClaim": true,
+    "summary": "The registry only maps possible data sources to future model roles and governance constraints."
+  },
+  "minimumUseRequirements": [
+    "Confirm access rules and data-use agreement before any acquisition.",
+    "Define target population, time zero, outcomes, censoring and predictors before using any source.",
+    "Record missingness, measurement error, representativeness and linkage limitations.",
+    "Use a held-out or external validation design before making predictive-validity claims.",
+    "Keep all outputs cohort-level and prohibit individual death-date prediction."
+  ],
+  "candidates": [
+    {
+      "id": "hrs",
+      "name": "Health and Retirement Study",
+      "sourceAuthority": "official-study-site",
+      "officialUrl": "https://hrs.isr.umich.edu/",
+      "geography": "United States",
+      "cohortType": "longitudinal-panel",
+      "populationFrame": "Representative U.S. aging panel; HRS describes approximately 20,000 surveyed people in America.",
+      "ageFrame": "Older adults and spouses; aging-focused population.",
+      "accessStatus": "public-and-restricted-products",
+      "governanceStatus": "Requires HRS data conditions of use; restricted and administrative linkages require separate approval.",
+      "modelRoles": [
+        "development-candidate",
+        "aging-panel-context",
+        "resource-and-function-predictor-candidate"
+      ],
+      "coverageTags": [
+        "mortality",
+        "function",
+        "cognition",
+        "resourceSocial",
+        "healthcareUse",
+        "externalValidation"
+      ],
+      "outcomeSupport": [
+        "mortalityFollowup",
+        "functionalStatus",
+        "cognitiveMeasures",
+        "retirementAndEconomicTrajectory"
+      ],
+      "predictorSupport": [
+        "age",
+        "baselineHealthState",
+        "diseaseHistory",
+        "functionalStatus",
+        "cognitionAndAttention",
+        "resourceAccess",
+        "socialSupport",
+        "healthcareAccess"
+      ],
+      "strengths": [
+        "Aging-specific longitudinal design.",
+        "Strong resource, work, retirement, health and cognition variables.",
+        "Useful for effective-time and future-option-value proxy design."
+      ],
+      "limitations": [
+        "Not a full biomedical biomarker platform for all participants.",
+        "Restricted data and administrative linkages require governance.",
+        "U.S. aging-panel transportability must be tested before broader use."
+      ],
+      "prohibitedClaims": [
+        "Does not prove Human Infra model calibration.",
+        "Does not support individual death-date prediction.",
+        "Does not by itself prove causal intervention effects."
+      ]
+    },
+    {
+      "id": "nchs-linked-mortality-nhanes-nhis",
+      "name": "NCHS Linked Mortality Files for NHANES and NHIS",
+      "sourceAuthority": "official-government-data-linkage",
+      "officialUrl": "https://www.cdc.gov/nchs/linked-data/mortality-files/index.html",
+      "geography": "United States",
+      "cohortType": "survey-to-mortality-linkage",
+      "populationFrame": "NCHS survey participants linked to National Death Index mortality follow-up.",
+      "ageFrame": "Survey-specific; public-use mortality files contain limited adult mortality data.",
+      "accessStatus": "public-use-and-restricted-use",
+      "governanceStatus": "Public files are privacy-protected; restricted-use files require NCHS Research Data Center approval.",
+      "modelRoles": [
+        "mortality-endpoint-candidate",
+        "biomarker-risk-calibration-candidate",
+        "external-validation-candidate"
+      ],
+      "coverageTags": [
+        "mortality",
+        "biomarkers",
+        "healthBehaviors",
+        "resourceSocial",
+        "externalValidation"
+      ],
+      "outcomeSupport": [
+        "allCauseMortality",
+        "causeOfDeathLimitedPublicUse",
+        "surveyHealthFactorsToMortality"
+      ],
+      "predictorSupport": [
+        "age",
+        "baselineHealthState",
+        "biomarkers",
+        "diseaseHistory",
+        "nutritionMetabolicHealth",
+        "environmentalExposure",
+        "resourceAccess"
+      ],
+      "strengths": [
+        "Direct mortality follow-up through NDI linkage.",
+        "NHANES adds examination, laboratory and biomarker measurements.",
+        "Useful for testing mortality associations and biomarker proxy boundaries."
+      ],
+      "limitations": [
+        "Public-use mortality variables are limited and may be privacy-perturbed.",
+        "Not designed as a repeated individual life-course panel in the same way as aging panel studies.",
+        "Restricted variables require formal application."
+      ],
+      "prohibitedClaims": [
+        "Does not provide individual predictions.",
+        "Does not prove Human Infra model calibration.",
+        "Does not convert biomarker associations into causal intervention effects."
+      ]
+    },
+    {
+      "id": "uk-biobank",
+      "name": "UK Biobank",
+      "sourceAuthority": "official-study-site",
+      "officialUrl": "https://www.ukbiobank.ac.uk/",
+      "geography": "United Kingdom",
+      "cohortType": "prospective-cohort",
+      "populationFrame": "500,000 participants recruited between 2006 and 2010.",
+      "ageFrame": "Ages 40 to 69 at recruitment.",
+      "accessStatus": "approved-researcher-access",
+      "governanceStatus": "Researchers must go through UK Biobank approval and use the restricted cloud-based platform.",
+      "modelRoles": [
+        "biomarker-and-genetic-predictor-candidate",
+        "external-validation-candidate",
+        "high-dimensional-predictor-stress-test"
+      ],
+      "coverageTags": [
+        "mortality",
+        "biomarkers",
+        "genomics",
+        "imaging",
+        "healthcareUse",
+        "externalValidation"
+      ],
+      "outcomeSupport": [
+        "healthRecordFollowup",
+        "diseaseIncidence",
+        "mortalityLinkage",
+        "biomarkerAndGeneticRisk"
+      ],
+      "predictorSupport": [
+        "age",
+        "baselineHealthState",
+        "biomarkers",
+        "genomics",
+        "imaging",
+        "diseaseHistory",
+        "environmentalExposure",
+        "measurementReliability"
+      ],
+      "strengths": [
+        "Large prospective dataset with rich genetic, phenotypic and health record dimensions.",
+        "Useful for high-dimensional predictor and biomarker validation stress tests.",
+        "Strong external validation candidate for UK middle-aged-to-older population."
+      ],
+      "limitations": [
+        "Access is restricted and governance-heavy.",
+        "Participant selection and UK-specific transportability must be assessed.",
+        "Privacy and data security risks must be handled as first-class constraints."
+      ],
+      "prohibitedClaims": [
+        "Does not authorize local data use without approval.",
+        "Does not make the Human Infra model calibrated.",
+        "Does not justify individual longevity or health decisions."
+      ]
+    },
+    {
+      "id": "all-of-us",
+      "name": "NIH All of Us Research Program",
+      "sourceAuthority": "official-program-site",
+      "officialUrl": "https://allofus.nih.gov/",
+      "geography": "United States",
+      "cohortType": "longitudinal-biomedical-research-program",
+      "populationFrame": "NIH precision-medicine cohort intended to include a diverse U.S. participant base.",
+      "ageFrame": "Broad adult and participant program frame; exact analysis cohort must be defined per study.",
+      "accessStatus": "researcher-workbench-governed-access",
+      "governanceStatus": "Requires approved researcher access and program data-use rules.",
+      "modelRoles": [
+        "diversity-and-transportability-candidate",
+        "ehr-and-genomics-predictor-candidate",
+        "future-external-validation-candidate"
+      ],
+      "coverageTags": [
+        "biomarkers",
+        "genomics",
+        "ehr",
+        "resourceSocial",
+        "healthcareUse",
+        "externalValidation"
+      ],
+      "outcomeSupport": [
+        "ehrLinkedHealthEvents",
+        "surveyOutcomes",
+        "genomicAndHealthRecordSignals"
+      ],
+      "predictorSupport": [
+        "age",
+        "baselineHealthState",
+        "diseaseHistory",
+        "biomarkers",
+        "genomics",
+        "resourceAccess",
+        "healthcareAccess",
+        "technologyAccess",
+        "socialSupport"
+      ],
+      "strengths": [
+        "Designed for broad precision-medicine research and underrepresented groups.",
+        "Potential bridge between EHR, surveys, genomics and participant-provided information.",
+        "Useful for transportability and equity checks."
+      ],
+      "limitations": [
+        "Outcome definitions depend on available EHR and survey coverage.",
+        "Mortality and long-horizon effective-time outcomes require careful endpoint review.",
+        "Cannot be treated as accessed or usable without governed workspace approval."
+      ],
+      "prohibitedClaims": [
+        "Does not prove model fairness or representativeness by itself.",
+        "Does not permit local data extraction here.",
+        "Does not prove Human Infra model calibration.",
+        "Does not support individual prediction claims."
+      ]
+    },
+    {
+      "id": "nhats",
+      "name": "National Health and Aging Trends Study",
+      "sourceAuthority": "official-study-site",
+      "officialUrl": "https://www.nhats.org/nhats",
+      "geography": "United States",
+      "cohortType": "annual-aging-function-panel",
+      "populationFrame": "Nationally representative sample of Medicare beneficiaries ages 65 and older.",
+      "ageFrame": "65+",
+      "accessStatus": "research-data-access",
+      "governanceStatus": "Use requires following NHATS data access and citation rules.",
+      "modelRoles": [
+        "effective-time-outcome-candidate",
+        "function-and-disablement-validation-candidate",
+        "older-adult-subgroup-candidate"
+      ],
+      "coverageTags": [
+        "function",
+        "cognition",
+        "caregiving",
+        "resourceSocial",
+        "externalValidation"
+      ],
+      "outcomeSupport": [
+        "functionalStatus",
+        "disabilityTrajectory",
+        "dailyActivitySupport",
+        "lateLifeFunction"
+      ],
+      "predictorSupport": [
+        "age",
+        "functionalStatus",
+        "cognitionAndAttention",
+        "socialSupport",
+        "caregiving",
+        "healthcareAccess",
+        "resourceAccess"
+      ],
+      "strengths": [
+        "Directly targets functioning in later life.",
+        "Annual interviews support effective-time and disability-trajectory thinking.",
+        "Good candidate for function-weighted survival model validation."
+      ],
+      "limitations": [
+        "Focused on older Medicare beneficiaries, not full adult life course.",
+        "Biomarker depth is not the main strength.",
+        "Transportability outside U.S. older adults requires external comparison."
+      ],
+      "prohibitedClaims": [
+        "Does not represent younger adult trajectories.",
+        "Does not prove Human Infra model calibration.",
+        "Does not prove biomedical intervention effects.",
+        "Does not support individual-level decisions."
+      ]
+    },
+    {
+      "id": "elsa",
+      "name": "English Longitudinal Study of Ageing",
+      "sourceAuthority": "official-study-site",
+      "officialUrl": "https://www.elsa-project.ac.uk/",
+      "geography": "England",
+      "cohortType": "longitudinal-aging-panel",
+      "populationFrame": "Representative English population aged 50 and older.",
+      "ageFrame": "50+",
+      "accessStatus": "data-access-via-study-and-ukds-routes",
+      "governanceStatus": "Use governed by ELSA / UK Data Service access conditions and study documentation.",
+      "modelRoles": [
+        "external-validation-candidate",
+        "social-economic-wellbeing-predictor-candidate",
+        "cross-national-aging-panel-comparison"
+      ],
+      "coverageTags": [
+        "mortality",
+        "function",
+        "cognition",
+        "resourceSocial",
+        "wellbeing",
+        "externalValidation"
+      ],
+      "outcomeSupport": [
+        "healthDynamics",
+        "wellbeing",
+        "socialAndEconomicCircumstances",
+        "agingProcessVariables"
+      ],
+      "predictorSupport": [
+        "age",
+        "baselineHealthState",
+        "functionalStatus",
+        "cognitionAndAttention",
+        "resourceAccess",
+        "socialSupport",
+        "wellbeing"
+      ],
+      "strengths": [
+        "Aging panel with health, social, wellbeing and economic circumstances.",
+        "Useful for validating resource and social-support variables outside the U.S.",
+        "Sister-study relationship helps compare aging panel designs."
+      ],
+      "limitations": [
+        "Country-specific system and policy context.",
+        "Data access and linkage fields must be checked per release.",
+        "Not a standalone biomedical deep phenotyping platform."
+      ],
+      "prohibitedClaims": [
+        "Does not prove global transportability.",
+        "Does not prove Human Infra model calibration.",
+        "Does not validate individual predictions.",
+        "Does not replace source-specific governance review."
+      ]
+    },
+    {
+      "id": "share",
+      "name": "Survey of Health, Ageing and Retirement in Europe",
+      "sourceAuthority": "official-research-infrastructure",
+      "officialUrl": "https://share-eric.eu/",
+      "geography": "Europe",
+      "cohortType": "cross-national-longitudinal-panel",
+      "populationFrame": "Longitudinal data from Europeans aged 50+ across many countries.",
+      "ageFrame": "50+",
+      "accessStatus": "free-access-for-non-commercial-researchers",
+      "governanceStatus": "Use governed by SHARE ERIC access and non-commercial research terms.",
+      "modelRoles": [
+        "cross-national-external-validation-candidate",
+        "policy-context-transportability-candidate",
+        "social-network-and-economics-predictor-candidate"
+      ],
+      "coverageTags": [
+        "function",
+        "cognition",
+        "biomarkers",
+        "resourceSocial",
+        "employment",
+        "externalValidation"
+      ],
+      "outcomeSupport": [
+        "health",
+        "employment",
+        "cognition",
+        "socialNetworks",
+        "economics"
+      ],
+      "predictorSupport": [
+        "age",
+        "baselineHealthState",
+        "functionalStatus",
+        "cognitionAndAttention",
+        "resourceAccess",
+        "socialSupport",
+        "workAndRetirement"
+      ],
+      "strengths": [
+        "Cross-national design supports transportability checks.",
+        "Combines health, biomarkers, cognition, employment, social networks and economics.",
+        "Useful for separating biological signals from policy and social-support contexts."
+      ],
+      "limitations": [
+        "Cross-country harmonization and missingness must be handled explicitly.",
+        "Endpoint availability and follow-up depth vary by wave and country.",
+        "Non-commercial access terms constrain use."
+      ],
+      "prohibitedClaims": [
+        "Does not prove one model transports across all countries.",
+        "Does not prove Human Infra model calibration.",
+        "Does not allow commercial or coercive scoring.",
+        "Does not support individual longevity prediction."
+      ]
+    },
+    {
+      "id": "framingham-heart-study",
+      "name": "Framingham Heart Study",
+      "sourceAuthority": "official-study-site",
+      "officialUrl": "https://www.framinghamheartstudy.org/",
+      "geography": "United States",
+      "cohortType": "multi-generation-longitudinal-cohort",
+      "populationFrame": "Long-running multigenerational cardiovascular cohort.",
+      "ageFrame": "Multiple cohorts; original cohort began with adult participants.",
+      "accessStatus": "research-data-access-via-study-and-dbGaP-routes",
+      "governanceStatus": "Access depends on study, data repository and consent restrictions.",
+      "modelRoles": [
+        "cardiovascular-risk-calibration-candidate",
+        "biomarker-and-risk-factor-history-candidate",
+        "methodological-reference-cohort"
+      ],
+      "coverageTags": [
+        "mortality",
+        "biomarkers",
+        "cardiovascular",
+        "genomics",
+        "externalValidation"
+      ],
+      "outcomeSupport": [
+        "cardiovascularEvents",
+        "riskFactorTrajectory",
+        "mortalityAndDiseaseFollowup"
+      ],
+      "predictorSupport": [
+        "age",
+        "baselineHealthState",
+        "biomarkers",
+        "cardiovascularRiskFactors",
+        "genomics",
+        "diseaseHistory"
+      ],
+      "strengths": [
+        "Longitudinal risk-factor tradition with deep cardiovascular history.",
+        "Useful for checking classical risk modeling and biomarker-to-outcome logic.",
+        "Multigenerational structure can inform long-run cohort design."
+      ],
+      "limitations": [
+        "Original population is geographically and demographically specific.",
+        "Cardiovascular strength does not cover all Human Infra outcomes.",
+        "Modern effective-time, AI and resource variables may require other sources."
+      ],
+      "prohibitedClaims": [
+        "Does not validate broad effective-immortality claims.",
+        "Does not cover all aging mechanisms.",
+        "Does not prove Human Infra model calibration.",
+        "Does not support individual death-date prediction."
+      ]
+    }
+  ],
+  "coverageSummary": {
+    "mortality": [
+      "hrs",
+      "nchs-linked-mortality-nhanes-nhis",
+      "uk-biobank",
+      "elsa",
+      "framingham-heart-study"
+    ],
+    "function": [
+      "hrs",
+      "nhats",
+      "elsa",
+      "share"
+    ],
+    "biomarkers": [
+      "nchs-linked-mortality-nhanes-nhis",
+      "uk-biobank",
+      "all-of-us",
+      "share",
+      "framingham-heart-study"
+    ],
+    "cognition": [
+      "hrs",
+      "nhats",
+      "elsa",
+      "share"
+    ],
+    "resourceSocial": [
+      "hrs",
+      "all-of-us",
+      "nhats",
+      "elsa",
+      "share"
+    ],
+    "externalValidation": [
+      "nchs-linked-mortality-nhanes-nhis",
+      "uk-biobank",
+      "all-of-us",
+      "nhats",
+      "elsa",
+      "share",
+      "framingham-heart-study"
+    ]
+  },
+  "nextWork": [
+    "Convert each candidate into a Source Card with access rules, variable dictionaries and endpoint definitions.",
+    "Select one development-candidate and two external-validation candidates before any calibration attempt.",
+    "Write a data-card template covering missingness, representativeness, linkage, measurement error and governance.",
+    "Keep this registry candidate-only until a governed data acquisition plan exists."
+  ]
+}

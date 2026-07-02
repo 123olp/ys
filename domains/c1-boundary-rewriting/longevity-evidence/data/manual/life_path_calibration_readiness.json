@@ -162,6 +162,7 @@
       "dataGovernanceApproval"
     ],
     "missingDataStatement": "No real cohort, endpoint follow-up, calibration dataset, or external validation dataset is currently present.",
+    "candidateSourceRegistry": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_data_source_candidates.json",
     "minimumBeforeCalibration": "At least one governed longitudinal cohort with mortality and functional outcomes plus a held-out validation plan."
   },
   "censoringAndCompetingRisks": {

@@ -24,6 +24,15 @@ DEFAULT_READINESS = (
     / "manual"
     / "life_path_calibration_readiness.json"
 )
+DEFAULT_DATA_SOURCES = (
+    REPO_ROOT
+    / "domains"
+    / "c1-boundary-rewriting"
+    / "longevity-evidence"
+    / "data"
+    / "manual"
+    / "life_path_data_source_candidates.json"
+)
 REQUIRED_MODEL_CARD_FIELDS = {
     "modelName",
     "modelClass",
@@ -76,6 +85,33 @@ REQUIRED_READINESS_SECTIONS = {
     "upgradeGate",
 }
 REQUIRED_STANDARD_TOKENS = ("TRIPOD", "PROBAST", "ISPOR", "MRC", "OHDSI")
+REQUIRED_DATA_SOURCE_FIELDS = {
+    "id",
+    "name",
+    "sourceAuthority",
+    "officialUrl",
+    "geography",
+    "cohortType",
+    "populationFrame",
+    "ageFrame",
+    "accessStatus",
+    "governanceStatus",
+    "modelRoles",
+    "coverageTags",
+    "outcomeSupport",
+    "predictorSupport",
+    "strengths",
+    "limitations",
+    "prohibitedClaims",
+}
+REQUIRED_COVERAGE_TAGS = {
+    "mortality",
+    "function",
+    "biomarkers",
+    "cognition",
+    "resourceSocial",
+    "externalValidation",
+}
 
 
 def load_json(path: Path) -> dict[str, Any]:
@@ -330,7 +366,154 @@ def audit_readiness(readiness: dict[str, Any], readiness_path: Path) -> dict[str
     }
 
 
-def audit_model(data: dict[str, Any], model_path: Path, readiness_path: Path) -> dict[str, Any]:
+def audit_data_sources(data_sources: dict[str, Any], data_sources_path: Path) -> dict[str, Any]:
+    checks: list[dict[str, Any]] = []
+    schema_version = data_sources.get("schemaVersion")
+    add_check(
+        checks,
+        "data-sources-schema-version",
+        status_from_bool(schema_version == "human-infra.life-path-data-source-candidates.v1"),
+        f"schemaVersion={schema_version!r}",
+    )
+
+    boundary = data_sources.get("currentBoundary")
+    boundary_ok = (
+        isinstance(boundary, dict)
+        and boundary.get("noDataDownloaded") is True
+        and boundary.get("noDataAccessGranted") is True
+        and boundary.get("noIndividualDataPresent") is True
+        and boundary.get("noCalibrationClaim") is True
+        and boundary.get("noCausalClaim") is True
+    )
+    add_check(
+        checks,
+        "data-sources-candidate-only-boundary",
+        status_from_bool(boundary_ok),
+        "registry must state no data download, access grant, individual data, calibration claim, or causal claim",
+    )
+
+    candidates = data_sources.get("candidates")
+    candidates_ok = isinstance(candidates, list) and len(candidates) >= 8
+    add_check(
+        checks,
+        "data-sources-candidate-count",
+        status_from_bool(candidates_ok),
+        f"candidate_count={len(candidates) if isinstance(candidates, list) else 'invalid'}",
+    )
+
+    candidate_ids: list[str] = []
+    all_fields_ok = True
+    official_urls_ok = True
+    governance_ok = True
+    prohibited_ok = True
+    observed_tags: set[str] = set()
+    if isinstance(candidates, list):
+        for candidate in candidates:
+            if not isinstance(candidate, dict):
+                all_fields_ok = False
+                continue
+            candidate_id = candidate.get("id")
+            if isinstance(candidate_id, str):
+                candidate_ids.append(candidate_id)
+            if not REQUIRED_DATA_SOURCE_FIELDS.issubset(candidate):
+                all_fields_ok = False
+            url = candidate.get("officialUrl")
+            if not isinstance(url, str) or not url.startswith("https://"):
+                official_urls_ok = False
+            if not str(candidate.get("governanceStatus", "")).strip() or not str(
+                candidate.get("accessStatus", "")
+            ).strip():
+                governance_ok = False
+            if not (
+                has_text(candidate.get("prohibitedClaims", []), "individual")
+                and (
+                    has_text(candidate.get("prohibitedClaims", []), "calibration")
+                    or has_text(candidate.get("prohibitedClaims", []), "calibrated")
+                    or has_text(candidate.get("prohibitedClaims", []), "causal")
+                )
+            ):
+                prohibited_ok = False
+            tags = candidate.get("coverageTags")
+            if isinstance(tags, list):
+                observed_tags.update(str(tag) for tag in tags)
+
+    unique_ids = len(candidate_ids) == len(set(candidate_ids)) and len(candidate_ids) > 0
+    add_check(
+        checks,
+        "data-sources-candidate-id-unique",
+        status_from_bool(unique_ids),
+        f"ids={candidate_ids}",
+    )
+    add_check(
+        checks,
+        "data-sources-required-fields",
+        status_from_bool(all_fields_ok),
+        f"required={sorted(REQUIRED_DATA_SOURCE_FIELDS)}",
+    )
+    add_check(
+        checks,
+        "data-sources-official-https-urls",
+        status_from_bool(official_urls_ok),
+        "each candidate must use an official HTTPS URL",
+    )
+    add_check(
+        checks,
+        "data-sources-access-governance",
+        status_from_bool(governance_ok),
+        "each candidate must state access and governance status",
+    )
+
+    missing_tags = sorted(REQUIRED_COVERAGE_TAGS - observed_tags)
+    add_check(
+        checks,
+        "data-sources-coverage-tags",
+        status_from_bool(not missing_tags),
+        f"missing_tags={missing_tags}",
+    )
+
+    summary = data_sources.get("coverageSummary")
+    summary_ok = isinstance(summary, dict) and all(
+        isinstance(summary.get(tag), list) and summary[tag] for tag in REQUIRED_COVERAGE_TAGS
+    )
+    add_check(
+        checks,
+        "data-sources-coverage-summary",
+        status_from_bool(summary_ok),
+        "coverage summary must map required model needs to candidate IDs",
+    )
+    add_check(
+        checks,
+        "data-sources-prohibited-claims",
+        status_from_bool(prohibited_ok),
+        "each candidate must block individual prediction and calibration/causal overclaim",
+    )
+
+    next_work = data_sources.get("nextWork")
+    next_work_ok = isinstance(next_work, list) and len(next_work) >= 3 and has_text(
+        next_work, "Source Card"
+    )
+    add_check(
+        checks,
+        "data-sources-next-work",
+        status_from_bool(next_work_ok),
+        "registry must point toward Source Cards, variable dictionaries, data cards, and governed acquisition",
+    )
+
+    return {
+        "path": str(data_sources_path.relative_to(REPO_ROOT)),
+        "sha256": sha256_file(data_sources_path),
+        "status": "PASS" if summarize_checks(checks)["fail"] == 0 else "FAIL",
+        "checks": checks,
+        "summary": summarize_checks(checks),
+    }
+
+
+def audit_model(
+    data: dict[str, Any],
+    model_path: Path,
+    readiness_path: Path,
+    data_sources_path: Path,
+) -> dict[str, Any]:
     checks: list[dict[str, Any]] = []
     schema_version = data.get("schemaVersion")
     add_check(
@@ -490,7 +673,9 @@ def audit_model(data: dict[str, Any], model_path: Path, readiness_path: Path) ->
         },
     ]
     readiness_audit = audit_readiness(load_json(readiness_path), readiness_path)
+    data_sources_audit = audit_data_sources(load_json(data_sources_path), data_sources_path)
     checks.extend(readiness_audit["checks"])
+    checks.extend(data_sources_audit["checks"])
     failed = [check for check in checks if check["status"] == "FAIL"]
     overall = "PASS" if not failed else "FAIL"
     return {
@@ -503,6 +688,7 @@ def audit_model(data: dict[str, Any], model_path: Path, readiness_path: Path) ->
         "summary": summarize_checks(checks),
         "standardAlignment": standard_alignment,
         "calibrationReadiness": readiness_audit,
+        "dataSourceCandidates": data_sources_audit,
     }
 
 
@@ -533,6 +719,13 @@ def render_markdown(audit: dict[str, Any]) -> str:
             f"- Readiness status: `{audit['calibrationReadiness']['status']}`",
             "- Boundary: readiness fields are present, but no real cohort, calibration, external validation, or individual use is available.",
             "",
+            "## Data Source Candidates",
+            "",
+            f"- Registry path: `{audit['dataSourceCandidates']['path']}`",
+            f"- Registry SHA-256: `{audit['dataSourceCandidates']['sha256']}`",
+            f"- Registry status: `{audit['dataSourceCandidates']['status']}`",
+            "- Boundary: candidate sources are mapped, but no data has been downloaded, accessed, fitted, calibrated, or validated.",
+            "",
             "## Standard Alignment",
             "",
             "| Standard | Local gate | Status | Boundary |",
@@ -559,6 +752,7 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--model", type=Path, default=DEFAULT_MODEL)
     parser.add_argument("--readiness", type=Path, default=DEFAULT_READINESS)
+    parser.add_argument("--data-sources", type=Path, default=DEFAULT_DATA_SOURCES)
     parser.add_argument("--json-out", type=Path, default=DEFAULT_JSON_OUT)
     parser.add_argument("--md-out", type=Path, default=DEFAULT_MD_OUT)
     return parser.parse_args()
@@ -568,7 +762,8 @@ def main() -> int:
     args = parse_args()
     model_path = args.model.resolve()
     readiness_path = args.readiness.resolve()
-    audit = audit_model(load_json(model_path), model_path, readiness_path)
+    data_sources_path = args.data_sources.resolve()
+    audit = audit_model(load_json(model_path), model_path, readiness_path, data_sources_path)
     args.json_out.parent.mkdir(parents=True, exist_ok=True)
     with args.json_out.open("w", encoding="utf-8") as handle:
         json.dump(audit, handle, ensure_ascii=False, indent=2)
