@@ -280,6 +280,22 @@ DEFAULT_NHATS_L2_VARIABLE_FAMILY_ADMISSION_VALIDATION = (
     / "data"
     / "life-path-nhats-l2-variable-family-admission-validation.json"
 )
+DEFAULT_NHATS_PREOUTCOME_AGGREGATION_PROTOCOL = (
+    REPO_ROOT
+    / "domains"
+    / "c1-boundary-rewriting"
+    / "longevity-evidence"
+    / "data"
+    / "manual"
+    / "life_path_nhats_preoutcome_aggregation_protocol.json"
+)
+DEFAULT_NHATS_PREOUTCOME_AGGREGATION_VALIDATION = (
+    REPO_ROOT
+    / "web"
+    / "src"
+    / "data"
+    / "life-path-nhats-preoutcome-aggregation-validation.json"
+)
 DEFAULT_MODEL_ADMISSION_CONTRACT = (
     REPO_ROOT / "docs" / "reference" / "human-infra-model-admission-contract.json"
 )
@@ -5045,6 +5061,167 @@ def audit_nhats_l2_variable_family_admission(
     }
 
 
+def audit_nhats_preoutcome_aggregation_protocol(
+    protocol_path: Path,
+    validation_path: Path,
+    first_estimand_path: Path,
+    l2_variable_family_admission_register_path: Path,
+    variable_confirmation_matrix_path: Path,
+    cohort_flow_endpoint_protocol_path: Path,
+    survey_design_protocol_path: Path,
+    disclosure_control_policy_path: Path,
+) -> dict[str, Any]:
+    checks: list[dict[str, Any]] = []
+    protocol_exists = protocol_path.exists()
+    validation_exists = validation_path.exists()
+    add_check(
+        checks,
+        "nhats-preoutcome-aggregation-protocol-exists",
+        status_from_bool(protocol_exists),
+        str(protocol_path.relative_to(REPO_ROOT)),
+    )
+    add_check(
+        checks,
+        "nhats-preoutcome-aggregation-validation-exists",
+        status_from_bool(validation_exists),
+        str(validation_path.relative_to(REPO_ROOT)),
+    )
+
+    protocol = load_json(protocol_path) if protocol_exists else {}
+    validation = load_json(validation_path) if validation_exists else {}
+
+    schema_ok = (
+        protocol.get("schemaVersion")
+        == "human-infra.life-path-nhats-preoutcome-aggregation-protocol.v1"
+    )
+    add_check(
+        checks,
+        "nhats-preoutcome-aggregation-schema",
+        status_from_bool(protocol_exists and schema_ok),
+        f"schemaVersion={protocol.get('schemaVersion')!r}",
+    )
+
+    decision = protocol.get("currentDecision")
+    boundary_ok = (
+        isinstance(decision, dict)
+        and decision.get("preOutcomeAggregationRulesFrozen") is True
+        and decision.get("syntheticRuleValidationAllowed") is True
+        and decision.get("containsRealNhatsData") is False
+        and decision.get("exactVariablesConfirmed") is False
+        and decision.get("realAggregationAllowed") is False
+        and decision.get("weightedAggregationAllowed") is False
+        and decision.get("publicExportAllowed") is False
+        and decision.get("l4AdmissionAllowed") is False
+        and decision.get("calibrationAllowed") is False
+        and decision.get("individualPredictionAllowed") is False
+    )
+    add_check(
+        checks,
+        "nhats-preoutcome-aggregation-boundary",
+        status_from_bool(protocol_exists and boundary_ok),
+        "pre-outcome rules may be frozen, but real aggregation, weighted estimates, public export, L4, calibration and individual prediction must remain blocked",
+    )
+
+    summary = protocol.get("summary")
+    summary_ok = (
+        isinstance(summary, dict)
+        and summary.get("aggregationRuleCount") == 8
+        and summary.get("syntheticTestCaseCount") == 7
+        and summary.get("preOutcomeRulesFrozen") is True
+        and summary.get("realAggregationAllowed") is False
+        and summary.get("weightedAggregationAllowed") is False
+        and summary.get("l4Admissions") == 0
+        and summary.get("calibrationAllowed") is False
+        and summary.get("individualUseAllowed") is False
+    )
+    add_check(
+        checks,
+        "nhats-preoutcome-aggregation-summary",
+        status_from_bool(protocol_exists and summary_ok),
+        "summary must freeze eight rules and keep real, weighted, L4, calibration and individual uses blocked",
+    )
+
+    validation_schema_ok = (
+        validation.get("schemaVersion")
+        == "human-infra.life-path-nhats-preoutcome-aggregation-validation.v1"
+    )
+    add_check(
+        checks,
+        "nhats-preoutcome-aggregation-validation-schema",
+        status_from_bool(validation_exists and validation_schema_ok),
+        f"schemaVersion={validation.get('schemaVersion')!r}",
+    )
+
+    validation_source_ok = (
+        validation.get("protocolPath") == str(protocol_path.relative_to(REPO_ROOT))
+        and validation.get("protocolSha256") == sha256_file(protocol_path)
+        and validation.get("firstEstimandProtocolPath")
+        == str(first_estimand_path.relative_to(REPO_ROOT))
+        and validation.get("firstEstimandProtocolSha256") == sha256_file(first_estimand_path)
+        and validation.get("l2VariableFamilyAdmissionRegisterPath")
+        == str(l2_variable_family_admission_register_path.relative_to(REPO_ROOT))
+        and validation.get("l2VariableFamilyAdmissionRegisterSha256")
+        == sha256_file(l2_variable_family_admission_register_path)
+        and validation.get("variableConfirmationMatrixPath")
+        == str(variable_confirmation_matrix_path.relative_to(REPO_ROOT))
+        and validation.get("variableConfirmationMatrixSha256")
+        == sha256_file(variable_confirmation_matrix_path)
+        and validation.get("cohortFlowEndpointProtocolPath")
+        == str(cohort_flow_endpoint_protocol_path.relative_to(REPO_ROOT))
+        and validation.get("cohortFlowEndpointProtocolSha256")
+        == sha256_file(cohort_flow_endpoint_protocol_path)
+        and validation.get("surveyDesignProtocolPath")
+        == str(survey_design_protocol_path.relative_to(REPO_ROOT))
+        and validation.get("surveyDesignProtocolSha256")
+        == sha256_file(survey_design_protocol_path)
+        and validation.get("disclosureControlPolicyPath")
+        == str(disclosure_control_policy_path.relative_to(REPO_ROOT))
+        and validation.get("disclosureControlPolicySha256")
+        == sha256_file(disclosure_control_policy_path)
+    )
+    add_check(
+        checks,
+        "nhats-preoutcome-aggregation-validation-source-hash",
+        status_from_bool(validation_exists and validation_source_ok),
+        "pre-outcome aggregation validation must point back to current upstream protocol hashes",
+    )
+
+    validation_boundary = validation.get("boundary")
+    validation_boundary_ok = (
+        validation.get("overallStatus") == "PASS"
+        and isinstance(validation.get("summary"), dict)
+        and validation["summary"].get("fail") == 0
+        and validation.get("aggregationRuleCount") == 8
+        and isinstance(validation.get("syntheticCaseRows"), list)
+        and len(validation["syntheticCaseRows"]) == 7
+        and all(row.get("status") == "PASS" for row in validation["syntheticCaseRows"])
+        and isinstance(validation_boundary, dict)
+        and validation_boundary.get("preOutcomeAggregationRulesFrozen") is True
+        and validation_boundary.get("syntheticRuleValidationAllowed") is True
+        and validation_boundary.get("realAggregationAllowed") is False
+        and validation_boundary.get("weightedAggregationAllowed") is False
+        and validation_boundary.get("l4AdmissionAllowed") is False
+        and validation_boundary.get("calibrationAllowed") is False
+        and validation_boundary.get("individualPredictionAllowed") is False
+    )
+    add_check(
+        checks,
+        "nhats-preoutcome-aggregation-validation-boundary",
+        status_from_bool(validation_exists and validation_boundary_ok),
+        "validation must prove only pre-outcome L2 rule freezing while keeping real aggregation, L4, calibration and individual prediction blocked",
+    )
+
+    return {
+        "protocolPath": str(protocol_path.relative_to(REPO_ROOT)),
+        "protocolSha256": sha256_file(protocol_path) if protocol_exists else None,
+        "validationPath": str(validation_path.relative_to(REPO_ROOT)),
+        "validationSha256": sha256_file(validation_path) if validation_exists else None,
+        "status": "PASS" if summarize_checks(checks)["fail"] == 0 else "FAIL",
+        "checks": checks,
+        "summary": summarize_checks(checks),
+    }
+
+
 def audit_sensitivity_analysis(
     sensitivity_path: Path,
     model_data: dict[str, Any],
@@ -5309,6 +5486,8 @@ def audit_model(
     nhats_colectica_authenticated_capture_template_validation_path: Path,
     nhats_l2_variable_family_admission_register_path: Path,
     nhats_l2_variable_family_admission_validation_path: Path,
+    nhats_preoutcome_aggregation_protocol_path: Path,
+    nhats_preoutcome_aggregation_validation_path: Path,
 ) -> dict[str, Any]:
     checks: list[dict[str, Any]] = []
     schema_version = data.get("schemaVersion")
@@ -5555,6 +5734,16 @@ def audit_model(
         DEFAULT_MODEL_ADMISSION_CANDIDATE_REGISTRY,
         nhats_colectica_authenticated_capture_template_path,
     )
+    nhats_preoutcome_aggregation_audit = audit_nhats_preoutcome_aggregation_protocol(
+        nhats_preoutcome_aggregation_protocol_path,
+        nhats_preoutcome_aggregation_validation_path,
+        nhats_first_estimand_protocol_path,
+        nhats_l2_variable_family_admission_register_path,
+        nhats_variable_confirmation_matrix_path,
+        nhats_cohort_flow_endpoint_protocol_path,
+        nhats_survey_design_protocol_path,
+        nhats_disclosure_policy_path,
+    )
     sensitivity_audit = audit_sensitivity_analysis(sensitivity_path, data, model_path)
     checks.extend(readiness_audit["checks"])
     checks.extend(data_sources_audit["checks"])
@@ -5575,6 +5764,7 @@ def audit_model(
     checks.extend(nhats_colectica_access_route_probe_audit["checks"])
     checks.extend(nhats_colectica_authenticated_capture_template_audit["checks"])
     checks.extend(nhats_l2_variable_family_admission_audit["checks"])
+    checks.extend(nhats_preoutcome_aggregation_audit["checks"])
     checks.extend(sensitivity_audit["checks"])
     failed = [check for check in checks if check["status"] == "FAIL"]
     overall = "PASS" if not failed else "FAIL"
@@ -5606,6 +5796,7 @@ def audit_model(
         "nhatsColecticaAccessRouteProbe": nhats_colectica_access_route_probe_audit,
         "nhatsColecticaAuthenticatedCaptureTemplate": nhats_colectica_authenticated_capture_template_audit,
         "nhatsL2VariableFamilyAdmission": nhats_l2_variable_family_admission_audit,
+        "nhatsPreoutcomeAggregation": nhats_preoutcome_aggregation_audit,
         "sensitivityAnalysis": sensitivity_audit,
     }
 
@@ -5791,6 +5982,15 @@ def render_markdown(audit: dict[str, Any]) -> str:
             f"- L2 variable-family admission validation status: `{audit['nhatsL2VariableFamilyAdmission']['status']}`",
             "- Boundary: L2 variable-family admission validation proves only that the narrow estimand is mapped to six candidate families; it still blocks exact variables, governed data access, extraction, L4 admission, calibration and individual prediction.",
             "",
+            "## NHATS Pre-Outcome Aggregation",
+            "",
+            f"- Pre-outcome aggregation protocol path: `{audit['nhatsPreoutcomeAggregation']['protocolPath']}`",
+            f"- Pre-outcome aggregation protocol SHA-256: `{audit['nhatsPreoutcomeAggregation']['protocolSha256']}`",
+            f"- Pre-outcome aggregation validation path: `{audit['nhatsPreoutcomeAggregation']['validationPath']}`",
+            f"- Pre-outcome aggregation validation SHA-256: `{audit['nhatsPreoutcomeAggregation']['validationSha256']}`",
+            f"- Pre-outcome aggregation validation status: `{audit['nhatsPreoutcomeAggregation']['status']}`",
+            "- Boundary: pre-outcome aggregation validation proves only that L2 aggregation rules are frozen before outcome inspection; it still blocks real aggregation, weighted estimates, public export, L4 admission, calibration and individual prediction.",
+            "",
             "## Sensitivity Analysis",
             "",
             f"- Sensitivity path: `{audit['sensitivityAnalysis']['path']}`",
@@ -5969,6 +6169,16 @@ def parse_args() -> argparse.Namespace:
         type=Path,
         default=DEFAULT_NHATS_L2_VARIABLE_FAMILY_ADMISSION_VALIDATION,
     )
+    parser.add_argument(
+        "--nhats-preoutcome-aggregation-protocol",
+        type=Path,
+        default=DEFAULT_NHATS_PREOUTCOME_AGGREGATION_PROTOCOL,
+    )
+    parser.add_argument(
+        "--nhats-preoutcome-aggregation-validation",
+        type=Path,
+        default=DEFAULT_NHATS_PREOUTCOME_AGGREGATION_VALIDATION,
+    )
     parser.add_argument("--json-out", type=Path, default=DEFAULT_JSON_OUT)
     parser.add_argument("--md-out", type=Path, default=DEFAULT_MD_OUT)
     return parser.parse_args()
@@ -6045,6 +6255,12 @@ def main() -> int:
     nhats_l2_variable_family_admission_validation_path = (
         args.nhats_l2_variable_family_admission_validation.resolve()
     )
+    nhats_preoutcome_aggregation_protocol_path = (
+        args.nhats_preoutcome_aggregation_protocol.resolve()
+    )
+    nhats_preoutcome_aggregation_validation_path = (
+        args.nhats_preoutcome_aggregation_validation.resolve()
+    )
     audit = audit_model(
         load_json(model_path),
         model_path,
@@ -6082,6 +6298,8 @@ def main() -> int:
         nhats_colectica_authenticated_capture_template_validation_path,
         nhats_l2_variable_family_admission_register_path,
         nhats_l2_variable_family_admission_validation_path,
+        nhats_preoutcome_aggregation_protocol_path,
+        nhats_preoutcome_aggregation_validation_path,
     )
     args.json_out.parent.mkdir(parents=True, exist_ok=True)
     with args.json_out.open("w", encoding="utf-8") as handle:

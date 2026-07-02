@@ -1,0 +1,161 @@
+{
+  "schemaVersion": "human-infra.life-path-nhats-preoutcome-aggregation-validation.v1",
+  "generatedAt": "2026-07-02T23:47:12.057507+00:00",
+  "protocolPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_preoutcome_aggregation_protocol.json",
+  "protocolSha256": "a2917d4bbb1682f5de6251fe919afae5da5bad681168475845a3a9c0a9a0747d",
+  "firstEstimandProtocolPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_first_estimand_protocol.json",
+  "firstEstimandProtocolSha256": "d939ef97e4a094036136d945e9739713e469b7b435c88857945e46a8f913e571",
+  "l2VariableFamilyAdmissionRegisterPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_l2_variable_family_admission_register.json",
+  "l2VariableFamilyAdmissionRegisterSha256": "da1d444f452482f37aa7d7d12cd97c9deb0b2d6006540f76c5d2588389dffce3",
+  "variableConfirmationMatrixPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_variable_confirmation_matrix.json",
+  "variableConfirmationMatrixSha256": "e6a459ac8560a5a40d29a0704ae3a0c9c3fa3a789663936b2f58cdcc899d33d6",
+  "cohortFlowEndpointProtocolPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_cohort_flow_endpoint_protocol.json",
+  "cohortFlowEndpointProtocolSha256": "e92a91ffda407cb8fab2e4c3991abadf0ab83c08642e3767802594ba4b037c00",
+  "surveyDesignProtocolPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_survey_design_protocol.json",
+  "surveyDesignProtocolSha256": "fc36be4f7b5521f938a74063a7ba57f50a791b99008fe35bc1fd08b5a233d0ef",
+  "disclosureControlPolicyPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_disclosure_control_policy.json",
+  "disclosureControlPolicySha256": "f41f63332d409a234d6b9f49b08274ee8b472faa7cb14ea81c98c85494fc7573",
+  "overallStatus": "PASS",
+  "checks": [
+    {
+      "id": "schema-version",
+      "status": "PASS",
+      "detail": "schemaVersion='human-infra.life-path-nhats-preoutcome-aggregation-protocol.v1'"
+    },
+    {
+      "id": "protocol-identity",
+      "status": "PASS",
+      "detail": "protocol must bind NHATS first estimand and stay L2-only"
+    },
+    {
+      "id": "upstream-bindings-present",
+      "status": "PASS",
+      "detail": "missing=[]"
+    },
+    {
+      "id": "current-decision-boundary",
+      "status": "PASS",
+      "detail": "pre-outcome rules may be frozen, while real data, weighted aggregation, L4, calibration and individual prediction remain false"
+    },
+    {
+      "id": "upstream-boundaries-inherited",
+      "status": "PASS",
+      "detail": "protocol must inherit L2-only variable mapping, unconfirmed variables, blocked endpoint routing, blocked weighted counts and blocked public export"
+    },
+    {
+      "id": "aggregation-rules-complete",
+      "status": "PASS",
+      "detail": "missing=[] extra=[]"
+    },
+    {
+      "id": "aggregation-rules-have-blockers",
+      "status": "PASS",
+      "detail": "every aggregation rule must include explicit blocking conditions"
+    },
+    {
+      "id": "required-before-real-aggregation",
+      "status": "PASS",
+      "detail": "protocol must enumerate gated evidence required before real aggregation"
+    },
+    {
+      "id": "synthetic-test-cases-complete",
+      "status": "PASS",
+      "detail": "missing=[] extra=[]"
+    },
+    {
+      "id": "synthetic-case-decisions",
+      "status": "PASS",
+      "detail": "synthetic cases must allow only L2 rule-freeze and block unsafe aggregation attempts"
+    },
+    {
+      "id": "summary-boundary",
+      "status": "PASS",
+      "detail": "summary must freeze L2 rules while preserving zero real, weighted, L4, calibration and individual use"
+    },
+    {
+      "id": "prohibited-keys-absent",
+      "status": "PASS",
+      "detail": "prohibitedKeysPresent=[]"
+    }
+  ],
+  "summary": {
+    "pass": 12,
+    "fail": 0
+  },
+  "aggregationRuleCount": 8,
+  "syntheticCaseRows": [
+    {
+      "caseId": "SYN-AGG-ALLOW-001-rule-freeze-only",
+      "expectedDecision": "allow-l2-rule-freeze",
+      "observedDecision": "allow-l2-rule-freeze",
+      "reasons": [],
+      "status": "PASS"
+    },
+    {
+      "caseId": "SYN-AGG-BLOCK-002-post-outcome-selection",
+      "expectedDecision": "block-real-aggregation",
+      "observedDecision": "block-real-aggregation",
+      "reasons": [
+        "preOutcomeOnly must be true",
+        "postOutcomeVariableSelectionRequested must be false"
+      ],
+      "status": "PASS"
+    },
+    {
+      "caseId": "SYN-AGG-BLOCK-003-row-level-output",
+      "expectedDecision": "block-real-aggregation",
+      "observedDecision": "block-real-aggregation",
+      "reasons": [
+        "containsRowLevelData must be false"
+      ],
+      "status": "PASS"
+    },
+    {
+      "caseId": "SYN-AGG-BLOCK-004-small-cell-unsuppressed",
+      "expectedDecision": "block-real-aggregation",
+      "observedDecision": "block-real-aggregation",
+      "reasons": [
+        "disclosureCells[0] count below 5 is not suppressed"
+      ],
+      "status": "PASS"
+    },
+    {
+      "caseId": "SYN-AGG-BLOCK-005-weighted-before-design",
+      "expectedDecision": "block-real-aggregation",
+      "observedDecision": "block-real-aggregation",
+      "reasons": [
+        "weightedEstimateRequested must be false until survey-design gates pass"
+      ],
+      "status": "PASS"
+    },
+    {
+      "caseId": "SYN-AGG-BLOCK-006-calibration-or-individual-use",
+      "expectedDecision": "block-real-aggregation",
+      "observedDecision": "block-real-aggregation",
+      "reasons": [
+        "calibrationRequested must be false",
+        "individualPredictionRequested must be false"
+      ],
+      "status": "PASS"
+    },
+    {
+      "caseId": "SYN-AGG-BLOCK-007-real-aggregation-before-gates",
+      "expectedDecision": "block-real-aggregation",
+      "observedDecision": "block-real-aggregation",
+      "reasons": [
+        "realAggregationRequested must be false until G3-G7 pass"
+      ],
+      "status": "PASS"
+    }
+  ],
+  "boundary": {
+    "preOutcomeAggregationRulesFrozen": true,
+    "syntheticRuleValidationAllowed": true,
+    "realAggregationAllowed": false,
+    "weightedAggregationAllowed": false,
+    "l4AdmissionAllowed": false,
+    "calibrationAllowed": false,
+    "individualPredictionAllowed": false
+  },
+  "note": "This validation proves only that pre-outcome L2 aggregation rules are frozen and unsafe synthetic envelopes are blocked. It does not validate real NHATS extraction, route classification, weighted estimates, calibration, public export or individual prediction."
+}

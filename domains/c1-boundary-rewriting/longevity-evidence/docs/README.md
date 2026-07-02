@@ -25,6 +25,7 @@ This directory stores the Longevity Evidence domain model, data source plans, co
 - `../data/manual/life_path_nhats_cohort_flow_endpoint_protocol.json`: machine-readable NHATS cohort-flow and endpoint-routing protocol that records R13/R14 route rows, endpoint route classes, aggregate-only output contracts, disclosure control and blocked readiness gates before extraction.
 - `../data/manual/life_path_nhats_disclosure_control_policy.json`: machine-readable NHATS disclosure-control policy for aggregate-only export, n < 5 suppression, row-level blocking, public-AI blocking, allowed output types and forbidden output types.
 - `../data/manual/life_path_nhats_disclosure_control_test_cases.json`: synthetic-only NHATS disclosure-control test cases for proving allow/block behavior without any real NHATS data.
+- `../data/manual/life_path_nhats_preoutcome_aggregation_protocol.json`: machine-readable NHATS pre-outcome aggregation protocol that freezes L2-only aggregation rules, synthetic allow/block cases, required evidence gates and L4/calibration/individual-use blockers before real aggregation.
 - `mvp-roadmap.md`: first 0-6 week product path.
 - `collection-run-2026-05-29.md`: first MVP collection run.
 - `collection-run-2026-05-29-expanded.md`: expanded core data collection run.

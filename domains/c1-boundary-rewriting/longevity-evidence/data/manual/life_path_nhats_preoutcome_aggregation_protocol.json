@@ -1,0 +1,263 @@
+{
+  "schemaVersion": "human-infra.life-path-nhats-preoutcome-aggregation-protocol.v1",
+  "protocolId": "nhats-r13-r14-preoutcome-aggregation-protocol-draft",
+  "sourceId": "nhats",
+  "status": "protocol-only-preoutcome-rules-frozen-l4-blocked",
+  "createdAt": "2026-07-03",
+  "purpose": "Freeze the pre-outcome aggregate analysis rules for the first NHATS R13/R14 functional-survival estimand before any real extraction, route classification, weighted estimate, validation or calibration is allowed.",
+  "upstreamBindings": {
+    "firstEstimandProtocolPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_first_estimand_protocol.json",
+    "l2VariableFamilyAdmissionRegisterPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_l2_variable_family_admission_register.json",
+    "variableConfirmationMatrixPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_variable_confirmation_matrix.json",
+    "cohortFlowEndpointProtocolPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_cohort_flow_endpoint_protocol.json",
+    "surveyDesignProtocolPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_survey_design_protocol.json",
+    "disclosureControlPolicyPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_disclosure_control_policy.json"
+  },
+  "currentDecision": {
+    "preOutcomeAggregationRulesFrozen": true,
+    "syntheticRuleValidationAllowed": true,
+    "containsRealNhatsData": false,
+    "exactVariablesConfirmed": false,
+    "colecticaValueLabelsConfirmed": false,
+    "governedDataAccessReady": false,
+    "realAggregationAllowed": false,
+    "routeClassificationAllowed": false,
+    "weightedAggregationAllowed": false,
+    "publicExportAllowed": false,
+    "l4AdmissionAllowed": false,
+    "calibrationAllowed": false,
+    "individualPredictionAllowed": false,
+    "reason": "Pre-outcome aggregation rules are frozen to prevent post-outcome rule drift, but all real-data, weighted, public, calibrated and individual uses remain blocked until G3-G7 pass."
+  },
+  "targetEstimand": {
+    "id": "E-NHATS-R13R14-FS-01",
+    "timeZero": "R13 baseline state after official field confirmation",
+    "followupWindow": "R14 adjacent-round functional-survival classification",
+    "unitOfAnalysis": "sample-person aggregate cell, never public row-level output",
+    "admissionLevel": "L2-preoutcome-aggregation-rules-only"
+  },
+  "aggregationRules": [
+    {
+      "ruleId": "AGG-01-freeze-time-zero",
+      "ruleType": "temporal-boundary",
+      "rule": "All predictor families must be defined from R13 baseline information before R14 endpoint route classification is inspected.",
+      "blocksIfViolated": [
+        "post-outcome-variable-selection",
+        "outcome-informed-recoding",
+        "R14 predictor leakage"
+      ]
+    },
+    {
+      "ruleId": "AGG-02-freeze-denominator",
+      "ruleType": "cohort-boundary",
+      "rule": "The denominator is the R13 eligible public-use analysis cohort after governed access, exact identity fields, inclusion criteria and disclosure rules are confirmed.",
+      "blocksIfViolated": [
+        "unconfirmed identity route",
+        "sensitive file leakage",
+        "unregistered file tier"
+      ]
+    },
+    {
+      "ruleId": "AGG-03-separate-route-classes",
+      "ruleType": "endpoint-routing",
+      "rule": "Alive self, alive proxy, facility/residential, known alive noninterview, death boundary, missing/nonresponse and not-classifiable states must remain separate until route-value labels are confirmed.",
+      "blocksIfViolated": [
+        "missingness-as-outcome",
+        "alive-death-collapse",
+        "unreviewed route classifier"
+      ]
+    },
+    {
+      "ruleId": "AGG-04-separate-negative-codes",
+      "ruleType": "missingness",
+      "rule": "Refused, don't know, not ascertained and inapplicable negative-code families must remain explicit and cannot be coerced into functional scores before value-label review.",
+      "blocksIfViolated": [
+        "negative-code-imputation-without-review",
+        "functional-score-contamination"
+      ]
+    },
+    {
+      "ruleId": "AGG-05-l2-family-only",
+      "ruleType": "variable-family",
+      "rule": "The six L2 variable families may define model roles, but exact variables cannot be promoted until Colectica value labels, question text, universe and skip logic are captured and second-reviewed.",
+      "blocksIfViolated": [
+        "candidate-pattern-as-variable",
+        "L2-to-L4-shortcut"
+      ]
+    },
+    {
+      "ruleId": "AGG-06-unweighted-diagnostics-only",
+      "ruleType": "survey-design",
+      "rule": "Before exact weights, strata, PSU/variance unit and variance method are confirmed, only synthetic rule checks and non-real-data diagnostics are allowed.",
+      "blocksIfViolated": [
+        "premature-weighted-estimate",
+        "population-inference-without-design"
+      ]
+    },
+    {
+      "ruleId": "AGG-07-disclosure-first",
+      "ruleType": "disclosure",
+      "rule": "Any aggregate output must pass aggregate-only, no row-level output, no public AI upload and n < 5 suppression rules before leaving the governed workspace.",
+      "blocksIfViolated": [
+        "small-cell-leak",
+        "row-level-export",
+        "public-ai-upload"
+      ]
+    },
+    {
+      "ruleId": "AGG-08-no-calibration-or-individual-use",
+      "ruleType": "model-admission",
+      "rule": "The aggregation protocol is L2-only and cannot be used for calibration, individual life prediction, individual death-date output, individual advice, intervention ranking or medical advice.",
+      "blocksIfViolated": [
+        "calibration-claim",
+        "individual-prediction",
+        "clinical-or-intervention-use"
+      ]
+    }
+  ],
+  "requiredBeforeRealAggregation": [
+    "governed NHATS data access and controlled storage record",
+    "Colectica authenticated variable page capture hashes",
+    "exact variable names, files, rounds, value labels, question text, universe and skip logic",
+    "variable-specific negative missing-code map",
+    "route-value crosswalk with second reviewer signoff",
+    "cohort-flow and endpoint route table reviewed before modeling",
+    "survey design variables and variance method confirmed",
+    "disclosure-control report and small-cell suppression review",
+    "model-admission registry update proving L4 gates passed"
+  ],
+  "syntheticTestCases": [
+    {
+      "caseId": "SYN-AGG-ALLOW-001-rule-freeze-only",
+      "expectedDecision": "allow-l2-rule-freeze",
+      "containsRealNhatsData": false,
+      "containsRowLevelData": false,
+      "preOutcomeOnly": true,
+      "postOutcomeVariableSelectionRequested": false,
+      "realAggregationRequested": false,
+      "weightedEstimateRequested": false,
+      "publicExportRequested": false,
+      "calibrationRequested": false,
+      "individualPredictionRequested": false,
+      "allAggregationRulesReferenced": true,
+      "disclosureCells": []
+    },
+    {
+      "caseId": "SYN-AGG-BLOCK-002-post-outcome-selection",
+      "expectedDecision": "block-real-aggregation",
+      "containsRealNhatsData": false,
+      "containsRowLevelData": false,
+      "preOutcomeOnly": false,
+      "postOutcomeVariableSelectionRequested": true,
+      "realAggregationRequested": false,
+      "weightedEstimateRequested": false,
+      "publicExportRequested": false,
+      "calibrationRequested": false,
+      "individualPredictionRequested": false,
+      "allAggregationRulesReferenced": true,
+      "disclosureCells": []
+    },
+    {
+      "caseId": "SYN-AGG-BLOCK-003-row-level-output",
+      "expectedDecision": "block-real-aggregation",
+      "containsRealNhatsData": false,
+      "containsRowLevelData": true,
+      "preOutcomeOnly": true,
+      "postOutcomeVariableSelectionRequested": false,
+      "realAggregationRequested": false,
+      "weightedEstimateRequested": false,
+      "publicExportRequested": false,
+      "calibrationRequested": false,
+      "individualPredictionRequested": false,
+      "allAggregationRulesReferenced": true,
+      "disclosureCells": []
+    },
+    {
+      "caseId": "SYN-AGG-BLOCK-004-small-cell-unsuppressed",
+      "expectedDecision": "block-real-aggregation",
+      "containsRealNhatsData": false,
+      "containsRowLevelData": false,
+      "preOutcomeOnly": true,
+      "postOutcomeVariableSelectionRequested": false,
+      "realAggregationRequested": false,
+      "weightedEstimateRequested": false,
+      "publicExportRequested": true,
+      "calibrationRequested": false,
+      "individualPredictionRequested": false,
+      "allAggregationRulesReferenced": true,
+      "disclosureCells": [
+        {
+          "cellId": "synthetic-small-cell",
+          "count": 4,
+          "suppressed": false
+        }
+      ]
+    },
+    {
+      "caseId": "SYN-AGG-BLOCK-005-weighted-before-design",
+      "expectedDecision": "block-real-aggregation",
+      "containsRealNhatsData": false,
+      "containsRowLevelData": false,
+      "preOutcomeOnly": true,
+      "postOutcomeVariableSelectionRequested": false,
+      "realAggregationRequested": false,
+      "weightedEstimateRequested": true,
+      "publicExportRequested": false,
+      "calibrationRequested": false,
+      "individualPredictionRequested": false,
+      "allAggregationRulesReferenced": true,
+      "disclosureCells": []
+    },
+    {
+      "caseId": "SYN-AGG-BLOCK-006-calibration-or-individual-use",
+      "expectedDecision": "block-real-aggregation",
+      "containsRealNhatsData": false,
+      "containsRowLevelData": false,
+      "preOutcomeOnly": true,
+      "postOutcomeVariableSelectionRequested": false,
+      "realAggregationRequested": false,
+      "weightedEstimateRequested": false,
+      "publicExportRequested": false,
+      "calibrationRequested": true,
+      "individualPredictionRequested": true,
+      "allAggregationRulesReferenced": true,
+      "disclosureCells": []
+    },
+    {
+      "caseId": "SYN-AGG-BLOCK-007-real-aggregation-before-gates",
+      "expectedDecision": "block-real-aggregation",
+      "containsRealNhatsData": false,
+      "containsRowLevelData": false,
+      "preOutcomeOnly": true,
+      "postOutcomeVariableSelectionRequested": false,
+      "realAggregationRequested": true,
+      "weightedEstimateRequested": false,
+      "publicExportRequested": false,
+      "calibrationRequested": false,
+      "individualPredictionRequested": false,
+      "allAggregationRulesReferenced": true,
+      "disclosureCells": []
+    }
+  ],
+  "summary": {
+    "aggregationRuleCount": 8,
+    "syntheticTestCaseCount": 7,
+    "preOutcomeRulesFrozen": true,
+    "realAggregationAllowed": false,
+    "weightedAggregationAllowed": false,
+    "l4Admissions": 0,
+    "calibrationAllowed": false,
+    "individualUseAllowed": false
+  },
+  "prohibitedActions": [
+    "download NHATS files",
+    "extract row-level data",
+    "derive exact variables from candidate patterns",
+    "perform endpoint route classification",
+    "publish unsuppressed small cells",
+    "upload raw NHATS data to public AI systems",
+    "fit or calibrate a model",
+    "produce individual death-date or life-expectancy output",
+    "rank interventions or provide medical advice"
+  ]
+}

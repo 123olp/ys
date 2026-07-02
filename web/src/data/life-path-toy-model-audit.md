@@ -3,7 +3,7 @@
 - Overall status: `PASS`
 - Model path: `web/src/data/life-path-toy-model.json`
 - Model SHA-256: `a4c92209d79d20579bf1f575d5ebf07ffe5be9ccaf6bf3f3eef08efa287b5377`
-- Generated at: `2026-07-02T23:28:23.437019+00:00`
+- Generated at: `2026-07-02T23:47:29.831729+00:00`
 
 ## Checks
 
@@ -274,6 +274,14 @@
 | `nhats-l2-variable-family-admission-validation-schema` | `PASS` | schemaVersion='human-infra.life-path-nhats-l2-variable-family-admission-validation.v1' |
 | `nhats-l2-variable-family-admission-validation-source-hash` | `PASS` | L2 family validation must point back to current estimand, variable matrix, model-admission contract, candidate registry and capture template hashes |
 | `nhats-l2-variable-family-admission-validation-boundary` | `PASS` | validation must prove only L2 family mapping while keeping L4, calibration and individual prediction blocked |
+| `nhats-preoutcome-aggregation-protocol-exists` | `PASS` | domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_preoutcome_aggregation_protocol.json |
+| `nhats-preoutcome-aggregation-validation-exists` | `PASS` | web/src/data/life-path-nhats-preoutcome-aggregation-validation.json |
+| `nhats-preoutcome-aggregation-schema` | `PASS` | schemaVersion='human-infra.life-path-nhats-preoutcome-aggregation-protocol.v1' |
+| `nhats-preoutcome-aggregation-boundary` | `PASS` | pre-outcome rules may be frozen, but real aggregation, weighted estimates, public export, L4, calibration and individual prediction must remain blocked |
+| `nhats-preoutcome-aggregation-summary` | `PASS` | summary must freeze eight rules and keep real, weighted, L4, calibration and individual uses blocked |
+| `nhats-preoutcome-aggregation-validation-schema` | `PASS` | schemaVersion='human-infra.life-path-nhats-preoutcome-aggregation-validation.v1' |
+| `nhats-preoutcome-aggregation-validation-source-hash` | `PASS` | pre-outcome aggregation validation must point back to current upstream protocol hashes |
+| `nhats-preoutcome-aggregation-validation-boundary` | `PASS` | validation must prove only pre-outcome L2 rule freezing while keeping real aggregation, L4, calibration and individual prediction blocked |
 | `sensitivity-analysis-exists` | `PASS` | web/src/data/life-path-sensitivity-analysis.json |
 | `sensitivity-schema-version` | `PASS` | schemaVersion='human-infra.life-path-sensitivity.v1' |
 | `sensitivity-source-model-hash` | `PASS` | sensitivity output must point back to the generated model path and sha256 |
@@ -416,7 +424,7 @@
 - Colectica execution register path: `domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_value_label_review_execution_register.json`
 - Colectica execution register SHA-256: `de6d17f9470a563346f92884cead1eec35cf5a954245751b0135efc60672b042`
 - Colectica execution validation path: `web/src/data/life-path-nhats-colectica-value-label-review-execution-validation.json`
-- Colectica execution validation SHA-256: `b4d7570b06a50ad4fb1ba669c35f04214ddcc97ea1b912b204d5fe9fbc40b0e8`
+- Colectica execution validation SHA-256: `8a2ce59486bdbd2de20b348b25ad14cff88a441f911850b4acbed729ad4234c4`
 - Colectica execution validation status: `PASS`
 - Boundary: Colectica execution now records official source trace, field-level source-trace skeleton and standard negative-code family only; it still blocks login-derived value labels, question text, universe/skip logic, route-value maps, classifier promotion, weighted route counts, public export, calibration, validation and individual prediction.
 
@@ -425,7 +433,7 @@
 - Colectica access-route probe register path: `domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_access_route_probe_register.json`
 - Colectica access-route probe register SHA-256: `58941fde2c6a1c5488437a1ad447cb3dae2032739ef1ed579e29da98b96aaa89`
 - Colectica access-route probe validation path: `web/src/data/life-path-nhats-colectica-access-route-probe-validation.json`
-- Colectica access-route probe validation SHA-256: `46e61d14e1b9def42e942bcfb4d5c6da8af9dbc9e2338a34e373c670f75d2e2f`
+- Colectica access-route probe validation SHA-256: `5a96d4f535855663c01163b99c88b2ffd63e3072ae9151803c0e9cd377c27d73`
 - Colectica access-route probe validation status: `PASS`
 - Boundary: access-route probing verifies the public entry point, anonymous login boundary and technical-guide workflow only; it still blocks account status, authenticated variable page capture, value labels, question text, exports, calibration and individual prediction.
 
@@ -434,7 +442,7 @@
 - Colectica authenticated capture template path: `domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_authenticated_capture_template.json`
 - Colectica authenticated capture template SHA-256: `dc097acfcb44007b42a25ce500c6cb1d23b1154f6620a7797445293817313eeb`
 - Colectica authenticated capture template validation path: `web/src/data/life-path-nhats-colectica-authenticated-capture-template-validation.json`
-- Colectica authenticated capture template validation SHA-256: `74000d4a0175184f7e50681be721f224b5d0ba6f8edca556587a39661244742a`
+- Colectica authenticated capture template validation SHA-256: `09b49b7df6fa6d1caa9b4c75e326f1c2ecd0884e4f59532146eea1f1d149c951`
 - Colectica authenticated capture template validation status: `PASS`
 - Boundary: authenticated capture template validation proves only that the next capture evidence slots are complete; it still blocks account status, login, authenticated variable pages, value labels, question text, universe/skip logic, route classifiers, public export, calibration and individual prediction.
 
@@ -443,9 +451,18 @@
 - L2 variable-family admission register path: `domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_l2_variable_family_admission_register.json`
 - L2 variable-family admission register SHA-256: `da1d444f452482f37aa7d7d12cd97c9deb0b2d6006540f76c5d2588389dffce3`
 - L2 variable-family admission validation path: `web/src/data/life-path-nhats-l2-variable-family-admission-validation.json`
-- L2 variable-family admission validation SHA-256: `79c106706658c10519e03df034c6a91299b94e232e0e94d3359184748a176c71`
+- L2 variable-family admission validation SHA-256: `cb24d19002439c7854e73e0db7b25e34234a4ac0630a0d0952d63539f3ee5566`
 - L2 variable-family admission validation status: `PASS`
 - Boundary: L2 variable-family admission validation proves only that the narrow estimand is mapped to six candidate families; it still blocks exact variables, governed data access, extraction, L4 admission, calibration and individual prediction.
+
+## NHATS Pre-Outcome Aggregation
+
+- Pre-outcome aggregation protocol path: `domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_preoutcome_aggregation_protocol.json`
+- Pre-outcome aggregation protocol SHA-256: `a2917d4bbb1682f5de6251fe919afae5da5bad681168475845a3a9c0a9a0747d`
+- Pre-outcome aggregation validation path: `web/src/data/life-path-nhats-preoutcome-aggregation-validation.json`
+- Pre-outcome aggregation validation SHA-256: `b3779d295b0b77f49675b2a733c2072cbafb890a9cebd3841bb57e294c2039ff`
+- Pre-outcome aggregation validation status: `PASS`
+- Boundary: pre-outcome aggregation validation proves only that L2 aggregation rules are frozen before outcome inspection; it still blocks real aggregation, weighted estimates, public export, L4 admission, calibration and individual prediction.
 
 ## Sensitivity Analysis
 

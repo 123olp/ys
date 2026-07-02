@@ -24,7 +24,8 @@
     "publicMortalityAnchor": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_public_mortality_anchor.json",
     "firstEstimandProtocol": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_first_estimand_protocol.json",
     "variableConfirmationMatrix": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_variable_confirmation_matrix.json",
-    "nhatsL2VariableFamilyAdmissionRegister": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_l2_variable_family_admission_register.json"
+    "nhatsL2VariableFamilyAdmissionRegister": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_l2_variable_family_admission_register.json",
+    "nhatsPreoutcomeAggregationProtocol": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_preoutcome_aggregation_protocol.json"
   },
   "aggregateDecision": {
     "reviewedArtifactRegisters": 7,
@@ -437,6 +438,17 @@
         "MAC-G7-validation-calibration"
       ],
       "reason": "The narrow NHATS estimand is mapped to six L2 candidate families, but exact variables, governed data access, real extraction, survey design, disclosure review, validation and calibration remain absent."
+    },
+    {
+      "candidateId": "MACR-L4-BLOCK-004-nhats-preoutcome-aggregation",
+      "sourcePath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_preoutcome_aggregation_protocol.json",
+      "blockedAt": [
+        "MAC-G4-data-access",
+        "MAC-G5-variable-confirmation",
+        "MAC-G6-extraction-and-cohort-flow",
+        "MAC-G7-validation-calibration"
+      ],
+      "reason": "Pre-outcome aggregation rules are frozen as L2-only protocol and synthetic validation, but exact variables, governed data access, real extraction, survey design, disclosure-reviewed outputs, validation and calibration remain absent."
     }
   ],
   "hardAbortInheritance": [
@@ -450,7 +462,7 @@
   "nextWorkOrders": [
     {
       "priority": 1,
-      "item": "Use the NHATS L2 variable-family admission register as the pre-admission map, then fill exact Colectica value labels, question text, universe/skip logic and missing-code evidence before any L4 candidate is reconsidered.",
+      "item": "Use the NHATS L2 variable-family admission register and pre-outcome aggregation protocol as pre-admission maps, then fill exact Colectica value labels, question text, universe/skip logic and missing-code evidence before any L4 candidate is reconsidered.",
       "unblocks": [
         "MODEL-G4-field-and-value-confirmation",
         "MODEL-G7-external-validation-and-calibration"
@@ -458,9 +470,10 @@
     },
     {
       "priority": 2,
-      "item": "Execute the NHATS Colectica value-label review protocol before creating any L4 extraction or calibration candidate.",
+      "item": "Execute the NHATS Colectica value-label review protocol and keep pre-outcome aggregation protocol-only until MODEL-G3 through MODEL-G6 pass.",
       "unblocks": [
-        "MODEL-G4-field-and-value-confirmation"
+        "MODEL-G4-field-and-value-confirmation",
+        "MODEL-G5-real-extraction-and-cohort-flow"
       ]
     },
     {

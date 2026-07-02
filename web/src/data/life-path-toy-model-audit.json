@@ -1,6 +1,6 @@
 {
   "schemaVersion": "human-infra.life-path-toy-audit.v1",
-  "generatedAt": "2026-07-02T23:28:23.437019+00:00",
+  "generatedAt": "2026-07-02T23:47:29.831729+00:00",
   "modelPath": "web/src/data/life-path-toy-model.json",
   "modelSha256": "a4c92209d79d20579bf1f575d5ebf07ffe5be9ccaf6bf3f3eef08efa287b5377",
   "overallStatus": "PASS",
@@ -1331,6 +1331,46 @@
       "detail": "validation must prove only L2 family mapping while keeping L4, calibration and individual prediction blocked"
     },
     {
+      "id": "nhats-preoutcome-aggregation-protocol-exists",
+      "status": "PASS",
+      "detail": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_preoutcome_aggregation_protocol.json"
+    },
+    {
+      "id": "nhats-preoutcome-aggregation-validation-exists",
+      "status": "PASS",
+      "detail": "web/src/data/life-path-nhats-preoutcome-aggregation-validation.json"
+    },
+    {
+      "id": "nhats-preoutcome-aggregation-schema",
+      "status": "PASS",
+      "detail": "schemaVersion='human-infra.life-path-nhats-preoutcome-aggregation-protocol.v1'"
+    },
+    {
+      "id": "nhats-preoutcome-aggregation-boundary",
+      "status": "PASS",
+      "detail": "pre-outcome rules may be frozen, but real aggregation, weighted estimates, public export, L4, calibration and individual prediction must remain blocked"
+    },
+    {
+      "id": "nhats-preoutcome-aggregation-summary",
+      "status": "PASS",
+      "detail": "summary must freeze eight rules and keep real, weighted, L4, calibration and individual uses blocked"
+    },
+    {
+      "id": "nhats-preoutcome-aggregation-validation-schema",
+      "status": "PASS",
+      "detail": "schemaVersion='human-infra.life-path-nhats-preoutcome-aggregation-validation.v1'"
+    },
+    {
+      "id": "nhats-preoutcome-aggregation-validation-source-hash",
+      "status": "PASS",
+      "detail": "pre-outcome aggregation validation must point back to current upstream protocol hashes"
+    },
+    {
+      "id": "nhats-preoutcome-aggregation-validation-boundary",
+      "status": "PASS",
+      "detail": "validation must prove only pre-outcome L2 rule freezing while keeping real aggregation, L4, calibration and individual prediction blocked"
+    },
+    {
       "id": "sensitivity-analysis-exists",
       "status": "PASS",
       "detail": "web/src/data/life-path-sensitivity-analysis.json"
@@ -1387,7 +1427,7 @@
     }
   ],
   "summary": {
-    "pass": 276,
+    "pass": 284,
     "warn": 0,
     "fail": 0
   },
@@ -2722,7 +2762,7 @@
     "registerPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_value_label_review_execution_register.json",
     "registerSha256": "de6d17f9470a563346f92884cead1eec35cf5a954245751b0135efc60672b042",
     "validationPath": "web/src/data/life-path-nhats-colectica-value-label-review-execution-validation.json",
-    "validationSha256": "b4d7570b06a50ad4fb1ba669c35f04214ddcc97ea1b912b204d5fe9fbc40b0e8",
+    "validationSha256": "8a2ce59486bdbd2de20b348b25ad14cff88a441f911850b4acbed729ad4234c4",
     "status": "PASS",
     "checks": [
       {
@@ -2786,7 +2826,7 @@
     "registerPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_access_route_probe_register.json",
     "registerSha256": "58941fde2c6a1c5488437a1ad447cb3dae2032739ef1ed579e29da98b96aaa89",
     "validationPath": "web/src/data/life-path-nhats-colectica-access-route-probe-validation.json",
-    "validationSha256": "46e61d14e1b9def42e942bcfb4d5c6da8af9dbc9e2338a34e373c670f75d2e2f",
+    "validationSha256": "5a96d4f535855663c01163b99c88b2ffd63e3072ae9151803c0e9cd377c27d73",
     "status": "PASS",
     "checks": [
       {
@@ -2835,7 +2875,7 @@
     "templatePath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_authenticated_capture_template.json",
     "templateSha256": "dc097acfcb44007b42a25ce500c6cb1d23b1154f6620a7797445293817313eeb",
     "validationPath": "web/src/data/life-path-nhats-colectica-authenticated-capture-template-validation.json",
-    "validationSha256": "74000d4a0175184f7e50681be721f224b5d0ba6f8edca556587a39661244742a",
+    "validationSha256": "09b49b7df6fa6d1caa9b4c75e326f1c2ecd0884e4f59532146eea1f1d149c951",
     "status": "PASS",
     "checks": [
       {
@@ -2884,7 +2924,7 @@
     "registerPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_l2_variable_family_admission_register.json",
     "registerSha256": "da1d444f452482f37aa7d7d12cd97c9deb0b2d6006540f76c5d2588389dffce3",
     "validationPath": "web/src/data/life-path-nhats-l2-variable-family-admission-validation.json",
-    "validationSha256": "79c106706658c10519e03df034c6a91299b94e232e0e94d3359184748a176c71",
+    "validationSha256": "cb24d19002439c7854e73e0db7b25e34234a4ac0630a0d0952d63539f3ee5566",
     "status": "PASS",
     "checks": [
       {
@@ -2926,6 +2966,60 @@
         "id": "nhats-l2-variable-family-admission-validation-boundary",
         "status": "PASS",
         "detail": "validation must prove only L2 family mapping while keeping L4, calibration and individual prediction blocked"
+      }
+    ],
+    "summary": {
+      "pass": 8,
+      "warn": 0,
+      "fail": 0
+    }
+  },
+  "nhatsPreoutcomeAggregation": {
+    "protocolPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_preoutcome_aggregation_protocol.json",
+    "protocolSha256": "a2917d4bbb1682f5de6251fe919afae5da5bad681168475845a3a9c0a9a0747d",
+    "validationPath": "web/src/data/life-path-nhats-preoutcome-aggregation-validation.json",
+    "validationSha256": "b3779d295b0b77f49675b2a733c2072cbafb890a9cebd3841bb57e294c2039ff",
+    "status": "PASS",
+    "checks": [
+      {
+        "id": "nhats-preoutcome-aggregation-protocol-exists",
+        "status": "PASS",
+        "detail": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_preoutcome_aggregation_protocol.json"
+      },
+      {
+        "id": "nhats-preoutcome-aggregation-validation-exists",
+        "status": "PASS",
+        "detail": "web/src/data/life-path-nhats-preoutcome-aggregation-validation.json"
+      },
+      {
+        "id": "nhats-preoutcome-aggregation-schema",
+        "status": "PASS",
+        "detail": "schemaVersion='human-infra.life-path-nhats-preoutcome-aggregation-protocol.v1'"
+      },
+      {
+        "id": "nhats-preoutcome-aggregation-boundary",
+        "status": "PASS",
+        "detail": "pre-outcome rules may be frozen, but real aggregation, weighted estimates, public export, L4, calibration and individual prediction must remain blocked"
+      },
+      {
+        "id": "nhats-preoutcome-aggregation-summary",
+        "status": "PASS",
+        "detail": "summary must freeze eight rules and keep real, weighted, L4, calibration and individual uses blocked"
+      },
+      {
+        "id": "nhats-preoutcome-aggregation-validation-schema",
+        "status": "PASS",
+        "detail": "schemaVersion='human-infra.life-path-nhats-preoutcome-aggregation-validation.v1'"
+      },
+      {
+        "id": "nhats-preoutcome-aggregation-validation-source-hash",
+        "status": "PASS",
+        "detail": "pre-outcome aggregation validation must point back to current upstream protocol hashes"
+      },
+      {
+        "id": "nhats-preoutcome-aggregation-validation-boundary",
+        "status": "PASS",
+        "detail": "validation must prove only pre-outcome L2 rule freezing while keeping real aggregation, L4, calibration and individual prediction blocked"
       }
     ],
     "summary": {
