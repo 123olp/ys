@@ -204,6 +204,8 @@ docs/
 │   ├── human-infra-c2-longtail-third-batch-independent-fresh-review-protocol.json
 │   ├── human-infra-c2-longtail-third-batch-independent-fresh-review-verdict-register.json
 │   ├── human-infra-c2-longtail-third-batch-corrected-source-reextraction-queue.json
+│   ├── human-infra-c2-longtail-fourth-batch-promotion-queue.json
+│   ├── human-infra-c2-longtail-fourth-batch-source-extraction-queue.json
 │   ├── human-infra-c2-longtail-third-batch-corrected-source-reextraction-register.json
 │   ├── human-infra-c2-longtail-third-batch-corrected-source-fresh-review-verdict-register.json
 │   ├── human-infra-c2-longtail-third-batch-reviewed-card-artifact-register.json
@@ -425,6 +427,7 @@ docs/
 - `reference/human-infra-c2-longtail-third-batch-promotion-queue.json`：从剩余 C2 长尾域中选择 12 个神经-感知-认知连续性域，并绑定 24 个 web-checked 候选来源；它只是 source-specific 深读入口，不等于 Source Card、fresh review、reviewed artifact 或模型准入。
 - `reference/human-infra-c2-longtail-fourth-batch-promotion-queue.json`：从剩余 C2 长尾域中选择 12 个代谢、内分泌、肾肝、电解质和携氧稳态连续性域，并绑定 24 个 web-checked 候选来源；它只是 source-specific 深读入口，不等于 Source Card、fresh review、reviewed artifact 或模型准入。
 - `reference/human-infra-c2-longtail-third-batch-source-extraction-queue.json`：把第三批 12 个神经-感知-认知 C2 长尾域的 24 个候选来源派生成 source-specific 深读任务，要求抽取 exact claim、endpoint、population/setting、mechanism/effect、uncertainty、transfer boundary、downgrade 和 model position；它仍不等于来源已读完、fresh review 或 artifact 晋升完成。
+- `reference/human-infra-c2-longtail-fourth-batch-source-extraction-queue.json`：把第四批 12 个代谢、内分泌、肾肝、电解质和携氧稳态 C2 长尾域的 24 个候选来源派生成 source-specific 深读任务，要求抽取 exact claim、endpoint、population/setting、mechanism/effect、uncertainty、transfer boundary、downgrade 和 model position；它仍不等于来源已读完、fresh review 或 artifact 晋升完成。
 - `reference/human-infra-c2-longtail-third-batch-source-extraction-register.json`：记录 C2-LT-B3 24/24 个来源的本地字段级抽取，显式保留错源、标题/分卷错配、访问受限和降级触发边界；它仍不等于本地复核、fresh review、reviewed artifacts 或模型准入。
 - `reference/human-infra-c2-longtail-third-batch-local-review-register.json`：记录 C2-LT-B3 24/24 个来源抽取行的本地来源语境复核，确认其只可进入 independent fresh review 或 source-resolution，并保留 5 个错源/错配/访问受限问题行；它仍不等于 reviewed artifacts、Source Card 晋升完成或模型准入。
 - `reference/human-infra-c2-longtail-third-batch-source-resolution-register.json`：记录 C2-LT-B3 5 个本地复核问题行的来源纠偏候选，把错源、分卷错配和 publisher route 问题拆成 7 个 corrected/split/route-normalized 候选；它仍不等于 fresh review、corrected re-extraction、reviewed artifacts 或模型准入。
