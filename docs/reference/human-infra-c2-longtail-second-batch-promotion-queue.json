@@ -1,0 +1,1022 @@
+{
+  "schemaVersion": "human-infra.c2-longtail-second-batch-promotion-queue.v1",
+  "queueId": "human-infra-c2-longtail-second-batch-promotion-queue-2026-07-02",
+  "status": "active-second-batch-queue-model-blocked",
+  "purpose": "Select a second bounded set of high-impact remaining C2 long-tail domains whose acute failure, organ support, infection, bleeding, airway or recovery pathways should enter governed Claim-Evidence, source extraction and fresh-review workflow before any model admission.",
+  "sourceOfTruth": {
+    "c2LongtailCoverageRegister": "docs/reference/human-infra-c2-longtail-coverage-register.json",
+    "firstBatchPromotionQueue": "docs/reference/human-infra-c2-longtail-first-batch-promotion-queue.json",
+    "domainClassification": "domains/_possibility-space-control/classification.tsv",
+    "sourceCardSystem": "docs/reference/source-card-system.md",
+    "maturityGapRegister": "docs/reference/human-infra-maturity-gap-register.json",
+    "maturityRoadmap": "docs/reference/human-infra-maturity-roadmap.md"
+  },
+  "scope": {
+    "batchId": "C2-LT-B2",
+    "batchDomainCount": 12,
+    "selectionRule": "Prioritize still-uncovered C2 domains with high root impact on survival risk, acute reversibility, organ support, infection escalation, bleeding, airway protection, mobility loss, effective time loss or post-acute recovery. This is importance/long-horizon/fundamentality oriented, not feasibility or hype oriented.",
+    "requiredArtifactClasses": [
+      "domain-claim-evidence-row",
+      "domain-source-card-field-extraction",
+      "domain-source-specific-deep-read",
+      "source-context-local-review",
+      "independent-fresh-review-verdict",
+      "reviewed-source-card",
+      "variable-card",
+      "endpoint-card",
+      "uncertainty-card",
+      "transfer-boundary-card",
+      "downgrade-check"
+    ],
+    "nonClaims": [
+      "This queue does not complete Source Cards.",
+      "This queue does not complete independent fresh review.",
+      "This queue does not upgrade any domain claim.",
+      "This queue does not admit any domain into calibrated prediction.",
+      "This queue does not provide medical, clinical, individual, or intervention-ranking advice.",
+      "This queue does not mark C2-LT-B1 corrected blocked rows as resolved."
+    ]
+  },
+  "blockedUses": [
+    "calibrated-prediction",
+    "individual-advice",
+    "individual-death-date-output",
+    "intervention-ranking",
+    "clinical-validity-claim",
+    "domain-claim-upgrade"
+  ],
+  "batchRows": [
+    {
+      "batchId": "C2-LT-B2",
+      "priorityRank": 1,
+      "domainId": "acute-gastrointestinal-bleeding-endoscopy-continuity",
+      "triageBucket": "acute-life-risk-and-recovery",
+      "localDomainPath": "domains/c2-source-maintenance/acute-gastrointestinal-bleeding-endoscopy-continuity",
+      "selectionReason": "急性消化道出血会在短时间内改变循环稳定性、输血需求、内镜可及性、住院死亡风险和恢复窗口，是急性生命风险路径中的关键失血节点。",
+      "claimSeed": "急性消化道出血的风险分层、复苏、内镜时机、止血策略和再出血预防会影响主体短期生存、失能风险和后续资源消耗。",
+      "variableSeed": [
+        "hemodynamic-instability",
+        "time-to-endoscopy",
+        "transfusion-need",
+        "rebleeding-risk",
+        "mortality-risk"
+      ],
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB2-SRC-01-1",
+          "title": "ACG Clinical Guideline: Upper Gastrointestinal and Ulcer Bleeding",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33929377/",
+          "evidenceRole": "clinical-guideline-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-02"
+        },
+        {
+          "sourceRefId": "C2LTB2-SRC-01-2",
+          "title": "ACG Clinical Guidelines directory",
+          "url": "https://gi.org/guidelines/",
+          "evidenceRole": "guideline-route-context-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-02"
+        }
+      ],
+      "requiredArtifactClasses": [
+        "domain-claim-evidence-row",
+        "domain-source-card-field-extraction",
+        "domain-source-specific-deep-read",
+        "source-context-local-review",
+        "independent-fresh-review-verdict",
+        "reviewed-source-card",
+        "variable-card",
+        "endpoint-card",
+        "uncertainty-card",
+        "transfer-boundary-card",
+        "downgrade-check"
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-c2-longtail-second-batch-source-card-promotion",
+      "nextAction": "Create the domain Claim-Evidence row, then perform Source Card field extraction, source-specific deep read, local source-context review and independent fresh review before any artifact promotion or model admission."
+    },
+    {
+      "batchId": "C2-LT-B2",
+      "priorityRank": 2,
+      "domainId": "acute-heart-failure-decompensation-continuity",
+      "triageBucket": "acute-life-risk-and-recovery",
+      "localDomainPath": "domains/c2-source-maintenance/acute-heart-failure-decompensation-continuity",
+      "selectionReason": "急性心衰失代偿连接容量负荷、氧合、肾功能、再入院和死亡风险，是心血管持续性从慢病进入急性失效的关键转移点。",
+      "claimSeed": "急性心衰识别、利尿/血管活性治疗、住院管理、出院转接和长期优化治疗会改变死亡风险、再入院风险和功能恢复。",
+      "variableSeed": [
+        "congestion-severity",
+        "oxygenation-status",
+        "renal-function-change",
+        "readmission-risk",
+        "guideline-directed-therapy-transition"
+      ],
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB2-SRC-02-1",
+          "title": "2022 AHA/ACC/HFSA Guideline for the Management of Heart Failure",
+          "url": "https://professional.heart.org/en/guidelines-statements/2022-ahaacchfsa-guideline-for-the-management-of-heart-failure-a-report-of-thecir0000000000001063",
+          "evidenceRole": "clinical-guideline-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-02"
+        },
+        {
+          "sourceRefId": "C2LTB2-SRC-02-2",
+          "title": "NICE Acute heart failure: diagnosis and management CG187",
+          "url": "https://www.nice.org.uk/guidance/cg187",
+          "evidenceRole": "clinical-guideline-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-02"
+        }
+      ],
+      "requiredArtifactClasses": [
+        "domain-claim-evidence-row",
+        "domain-source-card-field-extraction",
+        "domain-source-specific-deep-read",
+        "source-context-local-review",
+        "independent-fresh-review-verdict",
+        "reviewed-source-card",
+        "variable-card",
+        "endpoint-card",
+        "uncertainty-card",
+        "transfer-boundary-card",
+        "downgrade-check"
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-c2-longtail-second-batch-source-card-promotion",
+      "nextAction": "Create the domain Claim-Evidence row, then perform Source Card field extraction, source-specific deep read, local source-context review and independent fresh review before any artifact promotion or model admission."
+    },
+    {
+      "batchId": "C2-LT-B2",
+      "priorityRank": 3,
+      "domainId": "asthma-copd-exacerbation-airway-continuity",
+      "triageBucket": "acute-life-risk-and-recovery",
+      "localDomainPath": "domains/c2-source-maintenance/asthma-copd-exacerbation-airway-continuity",
+      "selectionReason": "哮喘/COPD 急性加重直接改变气道通畅、低氧/高碳酸风险、急诊住院、机械通气和长期肺功能衰退，是呼吸持续性的高频急性入口。",
+      "claimSeed": "气道疾病急性加重的预防、早期识别、吸入治疗、氧疗、通气升级和出院管理会影响死亡风险、住院风险和活动能力。",
+      "variableSeed": [
+        "exacerbation-frequency",
+        "airflow-obstruction-severity",
+        "oxygenation-status",
+        "hospitalization-risk",
+        "ventilation-escalation-risk"
+      ],
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB2-SRC-03-1",
+          "title": "Global Initiative for Asthma reports",
+          "url": "https://ginasthma.org/reports/",
+          "evidenceRole": "clinical-strategy-report-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-02"
+        },
+        {
+          "sourceRefId": "C2LTB2-SRC-03-2",
+          "title": "Global Initiative for Chronic Obstructive Lung Disease 2026 Report and Pocket Guide",
+          "url": "https://goldcopd.org/2026-gold-report-and-pocket-guide/",
+          "evidenceRole": "clinical-strategy-report-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-02"
+        }
+      ],
+      "requiredArtifactClasses": [
+        "domain-claim-evidence-row",
+        "domain-source-card-field-extraction",
+        "domain-source-specific-deep-read",
+        "source-context-local-review",
+        "independent-fresh-review-verdict",
+        "reviewed-source-card",
+        "variable-card",
+        "endpoint-card",
+        "uncertainty-card",
+        "transfer-boundary-card",
+        "downgrade-check"
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-c2-longtail-second-batch-source-card-promotion",
+      "nextAction": "Create the domain Claim-Evidence row, then perform Source Card field extraction, source-specific deep read, local source-context review and independent fresh review before any artifact promotion or model admission."
+    },
+    {
+      "batchId": "C2-LT-B2",
+      "priorityRank": 4,
+      "domainId": "burn-injury-critical-care-rehabilitation-continuity",
+      "triageBucket": "acute-life-risk-and-recovery",
+      "localDomainPath": "domains/c2-source-maintenance/burn-injury-critical-care-rehabilitation-continuity",
+      "selectionReason": "烧伤把皮肤屏障、感染、液体复苏、疼痛、瘢痕、功能恢复和专科转运连成同一条连续性路径，失效后影响生命边界与长期行动能力。",
+      "claimSeed": "烧伤严重度识别、烧伤中心转诊、复苏、感染控制、创面修复和康复会影响急性死亡风险、功能恢复和长期生活质量。",
+      "variableSeed": [
+        "burn-size-depth",
+        "burn-center-referral",
+        "fluid-resuscitation-need",
+        "infection-risk",
+        "rehabilitation-function"
+      ],
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB2-SRC-04-1",
+          "title": "American Burn Association Guidelines for Burn Patient Referral",
+          "url": "https://www.ameriburn.org/burn-care-team/resources/guidelines-for-burn-patient-referral",
+          "evidenceRole": "clinical-referral-guideline-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-02"
+        },
+        {
+          "sourceRefId": "C2LTB2-SRC-04-2",
+          "title": "WHO Burns fact sheet",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/burns",
+          "evidenceRole": "burden-and-prevention-context-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-02"
+        }
+      ],
+      "requiredArtifactClasses": [
+        "domain-claim-evidence-row",
+        "domain-source-card-field-extraction",
+        "domain-source-specific-deep-read",
+        "source-context-local-review",
+        "independent-fresh-review-verdict",
+        "reviewed-source-card",
+        "variable-card",
+        "endpoint-card",
+        "uncertainty-card",
+        "transfer-boundary-card",
+        "downgrade-check"
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-c2-longtail-second-batch-source-card-promotion",
+      "nextAction": "Create the domain Claim-Evidence row, then perform Source Card field extraction, source-specific deep read, local source-context review and independent fresh review before any artifact promotion or model admission."
+    },
+    {
+      "batchId": "C2-LT-B2",
+      "priorityRank": 5,
+      "domainId": "mechanical-ventilation-respiratory-failure-continuity",
+      "triageBucket": "acute-life-risk-and-recovery",
+      "localDomainPath": "domains/c2-source-maintenance/mechanical-ventilation-respiratory-failure-continuity",
+      "selectionReason": "机械通气是呼吸衰竭、ARDS、ICU 谵妄、肌无力、感染和长期功能损害的集中节点，直接影响主体能否穿过急性失效区。",
+      "claimSeed": "呼吸衰竭中的通气策略、氧合目标、ARDS 管理、镇静/撤机和 ICU 后恢复会影响急性生存、神经认知和长期功能。",
+      "variableSeed": [
+        "ards-severity",
+        "ventilation-strategy",
+        "oxygenation-target",
+        "weaning-readiness",
+        "icu-acquired-weakness-risk"
+      ],
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB2-SRC-05-1",
+          "title": "ATS Clinical Practice Guideline update for ARDS management",
+          "url": "https://academic.oup.com/ajrccm/article/209/1/24/8427573",
+          "evidenceRole": "clinical-guideline-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-02"
+        },
+        {
+          "sourceRefId": "C2LTB2-SRC-05-2",
+          "title": "SCCM Mechanical Ventilation in Adult Patients with Acute Respiratory Distress Syndrome",
+          "url": "https://www.sccm.org/clinical-resources/guidelines/guidelines/mechanical-ventilation-in-adult-patients-with-ac",
+          "evidenceRole": "clinical-guideline-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-02"
+        }
+      ],
+      "requiredArtifactClasses": [
+        "domain-claim-evidence-row",
+        "domain-source-card-field-extraction",
+        "domain-source-specific-deep-read",
+        "source-context-local-review",
+        "independent-fresh-review-verdict",
+        "reviewed-source-card",
+        "variable-card",
+        "endpoint-card",
+        "uncertainty-card",
+        "transfer-boundary-card",
+        "downgrade-check"
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-c2-longtail-second-batch-source-card-promotion",
+      "nextAction": "Create the domain Claim-Evidence row, then perform Source Card field extraction, source-specific deep read, local source-context review and independent fresh review before any artifact promotion or model admission."
+    },
+    {
+      "batchId": "C2-LT-B2",
+      "priorityRank": 6,
+      "domainId": "trauma-system-hemorrhage-control-continuity",
+      "triageBucket": "acute-life-risk-and-recovery",
+      "localDomainPath": "domains/c2-source-maintenance/trauma-system-hemorrhage-control-continuity",
+      "selectionReason": "创伤失血是可逆性死亡的重要入口，取决于现场止血、转运、创伤中心能力、输血和手术控制，是主体持续性的急性系统工程问题。",
+      "claimSeed": "创伤体系、出血控制、创伤中心标准、转运和救治链路会改变可预防死亡、失血性休克和恢复后功能。",
+      "variableSeed": [
+        "hemorrhage-control-time",
+        "trauma-center-access",
+        "massive-transfusion-route",
+        "preventable-death-risk",
+        "rehabilitation-transition"
+      ],
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB2-SRC-06-1",
+          "title": "ACS Resources for Optimal Care of the Injured Patient standards",
+          "url": "https://www.facs.org/quality-programs/trauma/quality/verification-review-and-consultation-program/standards/",
+          "evidenceRole": "trauma-system-standard-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-02"
+        },
+        {
+          "sourceRefId": "C2LTB2-SRC-06-2",
+          "title": "STOP THE BLEED official program",
+          "url": "https://www.stopthebleed.org/",
+          "evidenceRole": "public-health-hemorrhage-control-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-02"
+        }
+      ],
+      "requiredArtifactClasses": [
+        "domain-claim-evidence-row",
+        "domain-source-card-field-extraction",
+        "domain-source-specific-deep-read",
+        "source-context-local-review",
+        "independent-fresh-review-verdict",
+        "reviewed-source-card",
+        "variable-card",
+        "endpoint-card",
+        "uncertainty-card",
+        "transfer-boundary-card",
+        "downgrade-check"
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-c2-longtail-second-batch-source-card-promotion",
+      "nextAction": "Create the domain Claim-Evidence row, then perform Source Card field extraction, source-specific deep read, local source-context review and independent fresh review before any artifact promotion or model admission."
+    },
+    {
+      "batchId": "C2-LT-B2",
+      "priorityRank": 7,
+      "domainId": "urinary-tract-infection-pyelonephritis-urosepsis-continuity",
+      "triageBucket": "acute-life-risk-and-recovery",
+      "localDomainPath": "domains/c2-source-maintenance/urinary-tract-infection-pyelonephritis-urosepsis-continuity",
+      "selectionReason": "尿路感染可从局部感染转入肾盂肾炎、梗阻、菌血症和尿源性脓毒症，连接排泄出口、肾功能和急性生命风险。",
+      "claimSeed": "尿路感染的风险分层、梗阻识别、抗菌治疗、引流和尿源性脓毒症管理会影响肾功能、急性死亡风险和复发负担。",
+      "variableSeed": [
+        "upper-uti-risk",
+        "obstruction-presence",
+        "urosepsis-risk",
+        "antibiotic-route",
+        "recurrence-risk"
+      ],
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB2-SRC-07-1",
+          "title": "EAU Guidelines on Urological Infections",
+          "url": "https://uroweb.org/guidelines/urological-infections/chapter/the-guideline",
+          "evidenceRole": "clinical-guideline-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-02"
+        },
+        {
+          "sourceRefId": "C2LTB2-SRC-07-2",
+          "title": "IDSA Complicated Urinary Tract Infections guideline",
+          "url": "https://academic.oup.com/cid/advance-article/doi/10.1093/cid/ciaf462/8384478",
+          "evidenceRole": "clinical-guideline-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-02"
+        }
+      ],
+      "requiredArtifactClasses": [
+        "domain-claim-evidence-row",
+        "domain-source-card-field-extraction",
+        "domain-source-specific-deep-read",
+        "source-context-local-review",
+        "independent-fresh-review-verdict",
+        "reviewed-source-card",
+        "variable-card",
+        "endpoint-card",
+        "uncertainty-card",
+        "transfer-boundary-card",
+        "downgrade-check"
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-c2-longtail-second-batch-source-card-promotion",
+      "nextAction": "Create the domain Claim-Evidence row, then perform Source Card field extraction, source-specific deep read, local source-context review and independent fresh review before any artifact promotion or model admission."
+    },
+    {
+      "batchId": "C2-LT-B2",
+      "priorityRank": 8,
+      "domainId": "diabetic-foot-ulcer-amputation-prevention-continuity",
+      "triageBucket": "acute-life-risk-and-recovery",
+      "localDomainPath": "domains/c2-source-maintenance/diabetic-foot-ulcer-amputation-prevention-continuity",
+      "selectionReason": "糖尿病足把神经病变、血管病、感染、减压、伤口护理和截肢风险连接起来，会长期压缩行动能力和主体可持续窗口。",
+      "claimSeed": "糖尿病足溃疡的筛查、减压、感染控制、血管评估、伤口护理和多学科管理会影响截肢风险、感染风险和长期移动能力。",
+      "variableSeed": [
+        "ulcer-risk-stratification",
+        "offloading-access",
+        "infection-severity",
+        "vascular-status",
+        "amputation-risk"
+      ],
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB2-SRC-08-1",
+          "title": "IWGDF Guidelines 2023",
+          "url": "https://iwgdfguidelines.org/guidelines-2023/",
+          "evidenceRole": "clinical-guideline-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-02"
+        },
+        {
+          "sourceRefId": "C2LTB2-SRC-08-2",
+          "title": "IDSA Diabetic Foot Infections guideline",
+          "url": "https://www.idsociety.org/practice-guideline/diabetic-foot-infections/",
+          "evidenceRole": "clinical-guideline-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-02"
+        }
+      ],
+      "requiredArtifactClasses": [
+        "domain-claim-evidence-row",
+        "domain-source-card-field-extraction",
+        "domain-source-specific-deep-read",
+        "source-context-local-review",
+        "independent-fresh-review-verdict",
+        "reviewed-source-card",
+        "variable-card",
+        "endpoint-card",
+        "uncertainty-card",
+        "transfer-boundary-card",
+        "downgrade-check"
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-c2-longtail-second-batch-source-card-promotion",
+      "nextAction": "Create the domain Claim-Evidence row, then perform Source Card field extraction, source-specific deep read, local source-context review and independent fresh review before any artifact promotion or model admission."
+    },
+    {
+      "batchId": "C2-LT-B2",
+      "priorityRank": 9,
+      "domainId": "long-covid-post-acute-infection-continuity",
+      "triageBucket": "acute-life-risk-and-recovery",
+      "localDomainPath": "domains/c2-source-maintenance/long-covid-post-acute-infection-continuity",
+      "selectionReason": "Long COVID 是感染后长期功能、认知、疲劳、劳动能力和医疗利用的持续性冲击，代表急性感染后多系统慢性后果路径。",
+      "claimSeed": "Long COVID 的识别、症状管理、功能评估、康复支持和照护连续性会影响有效时间、认知负荷、工作能力和未来选择权。",
+      "variableSeed": [
+        "post-acute-symptom-burden",
+        "fatigue-severity",
+        "cognitive-function-burden",
+        "work-function-impact",
+        "rehabilitation-access"
+      ],
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB2-SRC-09-1",
+          "title": "CDC Long COVID clinical guidance",
+          "url": "https://www.cdc.gov/long-covid/hcp/clinical-guidance/index.html",
+          "evidenceRole": "public-health-clinical-guidance-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-02"
+        },
+        {
+          "sourceRefId": "C2LTB2-SRC-09-2",
+          "title": "NICE COVID-19 rapid guideline: managing the long-term effects of COVID-19",
+          "url": "https://www.nice.org.uk/guidance/ng188",
+          "evidenceRole": "clinical-guideline-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-02"
+        }
+      ],
+      "requiredArtifactClasses": [
+        "domain-claim-evidence-row",
+        "domain-source-card-field-extraction",
+        "domain-source-specific-deep-read",
+        "source-context-local-review",
+        "independent-fresh-review-verdict",
+        "reviewed-source-card",
+        "variable-card",
+        "endpoint-card",
+        "uncertainty-card",
+        "transfer-boundary-card",
+        "downgrade-check"
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-c2-longtail-second-batch-source-card-promotion",
+      "nextAction": "Create the domain Claim-Evidence row, then perform Source Card field extraction, source-specific deep read, local source-context review and independent fresh review before any artifact promotion or model admission."
+    },
+    {
+      "batchId": "C2-LT-B2",
+      "priorityRank": 10,
+      "domainId": "wound-infection-cellulitis-sepsis-continuity",
+      "triageBucket": "acute-life-risk-and-recovery",
+      "localDomainPath": "domains/c2-source-maintenance/wound-infection-cellulitis-sepsis-continuity",
+      "selectionReason": "伤口感染和蜂窝织炎可从局部屏障破口升级为全身感染、脓毒症和失能，是皮肤边界、免疫和急性风险之间的转移路径。",
+      "claimSeed": "皮肤软组织感染的早期识别、抗菌治疗、引流/清创、升级判断和复发预防会影响脓毒症风险、组织损伤和恢复时间。",
+      "variableSeed": [
+        "infection-severity",
+        "systemic-signs",
+        "source-control-need",
+        "antibiotic-route",
+        "recurrence-risk"
+      ],
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB2-SRC-10-1",
+          "title": "IDSA Skin and Soft Tissue Infections guideline",
+          "url": "https://www.idsociety.org/practice-guideline/skin-and-soft-tissue-infections/",
+          "evidenceRole": "clinical-guideline-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-02"
+        },
+        {
+          "sourceRefId": "C2LTB2-SRC-10-2",
+          "title": "NICE Cellulitis and erysipelas antimicrobial prescribing NG141",
+          "url": "https://www.nice.org.uk/guidance/ng141",
+          "evidenceRole": "clinical-guideline-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-02"
+        }
+      ],
+      "requiredArtifactClasses": [
+        "domain-claim-evidence-row",
+        "domain-source-card-field-extraction",
+        "domain-source-specific-deep-read",
+        "source-context-local-review",
+        "independent-fresh-review-verdict",
+        "reviewed-source-card",
+        "variable-card",
+        "endpoint-card",
+        "uncertainty-card",
+        "transfer-boundary-card",
+        "downgrade-check"
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-c2-longtail-second-batch-source-card-promotion",
+      "nextAction": "Create the domain Claim-Evidence row, then perform Source Card field extraction, source-specific deep read, local source-context review and independent fresh review before any artifact promotion or model admission."
+    },
+    {
+      "batchId": "C2-LT-B2",
+      "priorityRank": 11,
+      "domainId": "aspiration-pneumonia-airway-protection-continuity",
+      "triageBucket": "acute-life-risk-and-recovery",
+      "localDomainPath": "domains/c2-source-maintenance/aspiration-pneumonia-airway-protection-continuity",
+      "selectionReason": "误吸性肺炎连接吞咽、气道保护、营养、感染和呼吸衰竭，常见于神经退行、卒中、老年和长期照护场景。",
+      "claimSeed": "误吸风险识别、吞咽评估、气道保护、营养路径和感染治疗会影响肺炎、低氧、住院和长期功能退化风险。",
+      "variableSeed": [
+        "aspiration-risk",
+        "swallow-screening-status",
+        "airway-protection-capacity",
+        "pneumonia-risk",
+        "nutrition-route"
+      ],
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB2-SRC-11-1",
+          "title": "British Thoracic Society Clinical Statement on aspiration pneumonia",
+          "url": "https://www.brit-thoracic.org.uk/clinical-resources/clinical-statements/aspiration-pneumonia/",
+          "evidenceRole": "clinical-statement-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-02"
+        },
+        {
+          "sourceRefId": "C2LTB2-SRC-11-2",
+          "title": "Thorax BTS Clinical Statement on aspiration pneumonia publication",
+          "url": "https://thorax.bmj.com/content/78/Suppl_1/s3",
+          "evidenceRole": "clinical-statement-publication-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-02"
+        }
+      ],
+      "requiredArtifactClasses": [
+        "domain-claim-evidence-row",
+        "domain-source-card-field-extraction",
+        "domain-source-specific-deep-read",
+        "source-context-local-review",
+        "independent-fresh-review-verdict",
+        "reviewed-source-card",
+        "variable-card",
+        "endpoint-card",
+        "uncertainty-card",
+        "transfer-boundary-card",
+        "downgrade-check"
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-c2-longtail-second-batch-source-card-promotion",
+      "nextAction": "Create the domain Claim-Evidence row, then perform Source Card field extraction, source-specific deep read, local source-context review and independent fresh review before any artifact promotion or model admission."
+    },
+    {
+      "batchId": "C2-LT-B2",
+      "priorityRank": 12,
+      "domainId": "transfusion-blood-management-hemorrhage-continuity",
+      "triageBucket": "acute-life-risk-and-recovery",
+      "localDomainPath": "domains/c2-source-maintenance/transfusion-blood-management-hemorrhage-continuity",
+      "selectionReason": "输血和失血管理位于贫血、出血、手术、创伤和重症之间，直接影响氧输送、休克、并发症和资源可及性。",
+      "claimSeed": "红细胞输注阈值、患者血液管理、关键出血路径和大量输血协议会影响氧输送、死亡风险、并发症和恢复速度。",
+      "variableSeed": [
+        "hemoglobin-threshold",
+        "critical-bleeding-status",
+        "massive-transfusion-route",
+        "transfusion-adverse-event-risk",
+        "oxygen-delivery-capacity"
+      ],
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB2-SRC-12-1",
+          "title": "AABB International Guidelines for Red Blood Cell Transfusion",
+          "url": "https://jamanetwork.com/journals/jama/fullarticle/2810754",
+          "evidenceRole": "clinical-guideline-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-02"
+        },
+        {
+          "sourceRefId": "C2LTB2-SRC-12-2",
+          "title": "National Blood Authority Patient Blood Management Guideline for Adults with Critical Bleeding",
+          "url": "https://www.blood.gov.au/sites/default/files/documents/2024-05/Guideline%20Patient%20blood%20management%20guideline%20for%20adults%20with%20critical%20bleeding.pdf",
+          "evidenceRole": "clinical-guideline-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-02"
+        }
+      ],
+      "requiredArtifactClasses": [
+        "domain-claim-evidence-row",
+        "domain-source-card-field-extraction",
+        "domain-source-specific-deep-read",
+        "source-context-local-review",
+        "independent-fresh-review-verdict",
+        "reviewed-source-card",
+        "variable-card",
+        "endpoint-card",
+        "uncertainty-card",
+        "transfer-boundary-card",
+        "downgrade-check"
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-c2-longtail-second-batch-source-card-promotion",
+      "nextAction": "Create the domain Claim-Evidence row, then perform Source Card field extraction, source-specific deep read, local source-context review and independent fresh review before any artifact promotion or model admission."
+    }
+  ],
+  "summary": {
+    "batchId": "C2-LT-B2",
+    "batchDomainCount": 12,
+    "candidateSourceCount": 24,
+    "triageBucketCounts": {
+      "acute-life-risk-and-recovery": 12
+    },
+    "selectedDomainIds": [
+      "acute-gastrointestinal-bleeding-endoscopy-continuity",
+      "acute-heart-failure-decompensation-continuity",
+      "asthma-copd-exacerbation-airway-continuity",
+      "burn-injury-critical-care-rehabilitation-continuity",
+      "mechanical-ventilation-respiratory-failure-continuity",
+      "trauma-system-hemorrhage-control-continuity",
+      "urinary-tract-infection-pyelonephritis-urosepsis-continuity",
+      "diabetic-foot-ulcer-amputation-prevention-continuity",
+      "long-covid-post-acute-infection-continuity",
+      "wound-infection-cellulitis-sepsis-continuity",
+      "aspiration-pneumonia-airway-protection-continuity",
+      "transfusion-blood-management-hemorrhage-continuity"
+    ],
+    "modelAdmissionDecision": "blocked-pending-c2-longtail-second-batch-source-card-promotion",
+    "nextWorkOrder": "Turn C2-LT-B2 queued domains into source-extraction tasks, then local review, independent fresh review and reviewed artifacts while keeping model admission blocked."
+  }
+}

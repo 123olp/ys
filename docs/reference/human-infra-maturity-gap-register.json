@@ -244,12 +244,14 @@
             "docs/reference/human-infra-c2-longtail-first-batch-corrected-source-fresh-review-verdict-register.json",
             "tools/audit_human_infra_c2_longtail_first_batch_corrected_source_fresh_review_verdict_register.py",
             "docs/reference/human-infra-c2-longtail-first-batch-corrected-source-reviewed-card-artifact-register.json",
-            "tools/audit_human_infra_c2_longtail_first_batch_corrected_source_reviewed_card_artifact_register.py"
+            "tools/audit_human_infra_c2_longtail_first_batch_corrected_source_reviewed_card_artifact_register.py",
+            "docs/reference/human-infra-c2-longtail-second-batch-promotion-queue.json",
+            "tools/audit_human_infra_c2_longtail_second_batch_promotion_queue.py"
           ],
           "missingEvidence": [
-            "C2-LT-B1 now has 282 reviewed artifacts: 252 original reviewed artifacts for 42 eligible source rows plus 30 corrected-source reviewed artifacts for 5 eligible corrected rows. The 5 corrected rows marked lineage/route/index/fulltext blocked remain preserved outside artifact promotion. Full domain-level Source Card coverage for the remaining 184 C2 long-tail domains and model admission artifacts remain incomplete."
+            "C2-LT-B1 now has 282 reviewed artifacts: 252 original reviewed artifacts for 42 eligible source rows plus 30 corrected-source reviewed artifacts for 5 eligible corrected rows. C2-LT-B2 now queues 12 additional remaining C2 long-tail domains with 24 web-checked candidate sources, but those B2 domains still lack source extraction, local review, independent fresh review and reviewed artifacts. The 5 corrected rows marked lineage/route/index/fulltext blocked remain preserved outside artifact promotion. Full reviewed Source Card coverage for remaining C2 long-tail domains and model admission artifacts remain incomplete."
           ],
-          "nextAction": "Expand governed reviewed Source/variable/endpoint/downgrade artifact coverage across the remaining C2 long-tail domains while preserving the 5 corrected lineage/route/index/fulltext blocked rows and keeping model admission blocked.",
+          "nextAction": "Derive C2-LT-B2 queued domains into source-specific extraction tasks, then local review, independent fresh review and reviewed artifacts while preserving the 5 corrected lineage/route/index/fulltext blocked rows and keeping model admission blocked.",
           "blocks100Percent": true
         },
         {
@@ -304,12 +306,14 @@
             "docs/reference/human-infra-c2-longtail-first-batch-corrected-source-fresh-review-verdict-register.json",
             "tools/audit_human_infra_c2_longtail_first_batch_corrected_source_fresh_review_verdict_register.py",
             "docs/reference/human-infra-c2-longtail-first-batch-corrected-source-reviewed-card-artifact-register.json",
-            "tools/audit_human_infra_c2_longtail_first_batch_corrected_source_reviewed_card_artifact_register.py"
+            "tools/audit_human_infra_c2_longtail_first_batch_corrected_source_reviewed_card_artifact_register.py",
+            "docs/reference/human-infra-c2-longtail-second-batch-promotion-queue.json",
+            "tools/audit_human_infra_c2_longtail_second_batch_promotion_queue.py"
           ],
           "missingEvidence": [
-            "C2-LT-B1 now has reviewed variable and endpoint artifacts for 42 original eligible source rows plus corrected variable/endpoint artifacts for the 5 eligible corrected rows. The 5 corrected lineage/route/index/fulltext rows remain blocked, and remaining C2 long-tail domains, calibrated variable contracts and endpoint validation are not complete."
+            "C2-LT-B1 now has reviewed variable and endpoint artifacts for 42 original eligible source rows plus corrected variable/endpoint artifacts for the 5 eligible corrected rows. C2-LT-B2 adds variable seeds for 12 additional remaining C2 domains, but those seeds are not yet extracted, reviewed or promoted into governed variable/endpoint artifacts. The 5 corrected lineage/route/index/fulltext rows remain blocked, and calibrated variable contracts and endpoint validation are not complete."
           ],
-          "nextAction": "Expand governed variable and endpoint artifacts across the remaining C2 long-tail domains; keep the 5 blocked corrected rows and calibrated variable contracts blocked until artifact and model gates pass.",
+          "nextAction": "Run C2-LT-B2 source extraction to turn queued variable seeds into governed endpoint and variable candidates; keep blocked corrected rows and calibrated variable contracts blocked until artifact and model gates pass.",
           "blocks100Percent": true
         },
         {
@@ -389,12 +393,14 @@
             "docs/reference/human-infra-c2-longtail-first-batch-corrected-source-fresh-review-verdict-register.json",
             "tools/audit_human_infra_c2_longtail_first_batch_corrected_source_fresh_review_verdict_register.py",
             "docs/reference/human-infra-c2-longtail-first-batch-corrected-source-reviewed-card-artifact-register.json",
-            "tools/audit_human_infra_c2_longtail_first_batch_corrected_source_reviewed_card_artifact_register.py"
+            "tools/audit_human_infra_c2_longtail_first_batch_corrected_source_reviewed_card_artifact_register.py",
+            "docs/reference/human-infra-c2-longtail-second-batch-promotion-queue.json",
+            "tools/audit_human_infra_c2_longtail_second_batch_promotion_queue.py"
           ],
           "missingEvidence": [
-            "C2-LT-B1 now has downgrade-check artifacts for 42 original eligible source rows and promotion-time downgrade artifacts for the 5 eligible corrected rows. The 5 corrected lineage/route/index/fulltext blocked rows remain blocked, and remaining C2 long-tail domains still lack complete downgrade coverage and calibrated model gates."
+            "C2-LT-B1 now has downgrade-check artifacts for 42 original eligible source rows and promotion-time downgrade artifacts for the 5 eligible corrected rows. C2-LT-B2 has promotion queue boundaries and required downgrade-check artifact classes, but not yet extracted downgrade triggers, fresh-review verdicts or reviewed downgrade artifacts. The 5 corrected lineage/route/index/fulltext blocked rows remain blocked."
           ],
-          "nextAction": "Extend downgrade-check and falsifier artifact coverage across remaining C2 long-tail domains while preserving corrected blocked rows and model-admission boundaries.",
+          "nextAction": "Extract C2-LT-B2 downgrade triggers and transfer boundaries before any fresh review or reviewed artifact promotion; keep corrected blocked rows and model-admission boundaries intact.",
           "blocks100Percent": true
         }
       ]
@@ -541,7 +547,7 @@
   "nextWorkOrder": [
     {
       "priority": 1,
-      "item": "Expand governed reviewed Source/variable/endpoint/downgrade artifact coverage across remaining C2 long-tail domains while preserving the 5 corrected lineage/route/index/fulltext blocked rows and keeping model admission blocked.",
+      "item": "Derive C2-LT-B2 queued domains into source-specific extraction tasks, then local review, independent fresh review and reviewed artifacts while preserving the 5 corrected lineage/route/index/fulltext blocked rows and keeping model admission blocked.",
       "unblocks": [
         "RESEARCH-G3-c1-c2-source-cards",
         "RESEARCH-G4-variable-mechanism-contracts",

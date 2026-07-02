@@ -23,6 +23,8 @@ Human Infra 是一个研究“能够继续做事的主体”如何被维护、�
 
 C2 长尾第一批 corrected source reviewed artifacts 见 [C2 Longtail First Batch Corrected Source Reviewed Card Artifact Register](docs/reference/human-infra-c2-longtail-first-batch-corrected-source-reviewed-card-artifact-register.json)，它只把 5 个 eligible corrected rows 晋升为 30 个 bounded reviewed artifacts，并保留 5 个 lineage/route/index/fulltext blocked rows 与模型准入阻塞边界。
 
+C2 长尾第二批晋升队列见 [C2 Longtail Second Batch Promotion Queue](docs/reference/human-infra-c2-longtail-second-batch-promotion-queue.json)，它把剩余未覆盖 C2 域中的 12 个急性风险、器官支持、感染、出血、气道和恢复路径派入下一轮 source-specific 深读，但不完成 Source Card、fresh review 或模型准入。
+
 边界：Human Infra 不是医疗建议，不输出个体死亡日期，不证明具体技术已经实现有效永生；当前只把主体持续性、生命路径和未来选择权组织成可审查的研究框架。
 
 | 问题类型 | 典型问题 | Human Infra 判断 |
@@ -166,6 +168,7 @@ flowchart LR
 | 查看 C2 长尾第一批 corrected source re-extraction 完成寄存器 | [docs/reference/human-infra-c2-longtail-first-batch-corrected-source-reextraction-register.json](docs/reference/human-infra-c2-longtail-first-batch-corrected-source-reextraction-register.json) | 10/10 个 corrected candidates 已完成 bounded re-extraction；6 行可进入 independent fresh review 候选，4 行保持 route/index/fulltext 阻塞；仍不创建 reviewed artifact、不打开模型准入 |
 | 查看 C2 长尾第一批 corrected source fresh review 判定 | [docs/reference/human-infra-c2-longtail-first-batch-corrected-source-fresh-review-verdict-register.json](docs/reference/human-infra-c2-longtail-first-batch-corrected-source-fresh-review-verdict-register.json) | 10/10 个 corrected extraction outputs 已完成 independent fresh review；5 行可进入 bounded reviewed artifact prep，5 行保持 lineage/route/index/fulltext 阻塞；仍不创建 reviewed artifact、不打开模型准入 |
 | 查看 C2 长尾第一批 corrected source reviewed artifacts | [docs/reference/human-infra-c2-longtail-first-batch-corrected-source-reviewed-card-artifact-register.json](docs/reference/human-infra-c2-longtail-first-batch-corrected-source-reviewed-card-artifact-register.json) | 5 个 eligible corrected rows 已晋升为 30 个 bounded reviewed artifacts；5 个 blocked rows 继续保留 lineage/route/index/fulltext 边界；仍不打开模型准入 |
+| 查看 C2 长尾第二批晋升队列 | [docs/reference/human-infra-c2-longtail-second-batch-promotion-queue.json](docs/reference/human-infra-c2-longtail-second-batch-promotion-queue.json) | 12 个剩余 C2 长尾域已进入第二批 source-specific 深读候选，绑定 24 个 web-checked 权威候选来源；仍不完成 Source Card、fresh review 或模型准入 |
 | 查看域-来源深读队列 | [docs/reference/human-infra-domain-source-specific-extraction-queue.json](docs/reference/human-infra-domain-source-specific-extraction-queue.json) | 把 26 个域字段行派生为 81 个 domain-source 深读任务；队列不等于证据完成，只定义下一步精读阻塞项 |
 | 查看域-来源精读完成寄存器 | [docs/reference/human-infra-domain-source-specific-extraction-register.json](docs/reference/human-infra-domain-source-specific-extraction-register.json) | 当前完成 81/81 个 domain-source 精读字段行，覆盖方法锚点、生物机制、价值框架、认知扩展、脑保存、数字孪生、未来等待、AI 治理和筛查偏倚边界；仍禁止校准预测和个体建议 |
 | 查看域-来源卡片晋升队列 | [docs/reference/human-infra-domain-source-card-promotion-queue.json](docs/reference/human-infra-domain-source-card-promotion-queue.json) | 把 81 个完成字段行派生为 fresh review、Source Card、变量卡、endpoint 卡、uncertainty 卡、transfer-boundary 卡和 downgrade check 晋升任务；仍禁止模型准入 |
