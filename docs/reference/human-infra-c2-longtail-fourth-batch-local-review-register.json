@@ -1,0 +1,210 @@
+{
+  "schemaVersion": "human-infra.c2-longtail-fourth-batch-local-review-register.v1",
+  "registerId": "human-infra-c2-longtail-fourth-batch-local-review-register-2026-07-03",
+  "status": "complete-local-source-context-review-independent-fresh-review-required",
+  "purpose": "Record local source-context review for all 24 C2-LT-B4 source extraction rows. This register verifies structural readiness for independent fresh review while preserving duplicate consensus lineage, no-abstract fulltext needs, blocked uses, reviewed-artifact blocks and model-admission blocks.",
+  "sourceOfTruth": {
+    "sourceExtractionQueue": "docs/reference/human-infra-c2-longtail-fourth-batch-source-extraction-queue.json",
+    "sourceExtractionRegister": "docs/reference/human-infra-c2-longtail-fourth-batch-source-extraction-register.json",
+    "sourceCardSystem": "docs/reference/source-card-system.md",
+    "maturityGapRegister": "docs/reference/human-infra-maturity-gap-register.json"
+  },
+  "scope": {
+    "batchId": "C2-LT-B4",
+    "reviewLevel": "source-extraction-row-local-context-review",
+    "sourceExtractionTaskCount": 24,
+    "localReviewedExtractionTaskCount": 24,
+    "coveredDomainCount": 12,
+    "reviewBatchCount": 2,
+    "sourceResolutionIssueCount": 4,
+    "selectionRule": "Review all C2-LT-B4 source extraction rows after field-level extraction, without promoting any row to reviewed artifact fill or calibrated model admission.",
+    "reviewedExtractionTaskIds": [
+      "C2LTB4-EXT-001",
+      "C2LTB4-EXT-002",
+      "C2LTB4-EXT-003",
+      "C2LTB4-EXT-004",
+      "C2LTB4-EXT-005",
+      "C2LTB4-EXT-006",
+      "C2LTB4-EXT-007",
+      "C2LTB4-EXT-008",
+      "C2LTB4-EXT-009",
+      "C2LTB4-EXT-010",
+      "C2LTB4-EXT-011",
+      "C2LTB4-EXT-012",
+      "C2LTB4-EXT-013",
+      "C2LTB4-EXT-014",
+      "C2LTB4-EXT-015",
+      "C2LTB4-EXT-016",
+      "C2LTB4-EXT-017",
+      "C2LTB4-EXT-018",
+      "C2LTB4-EXT-019",
+      "C2LTB4-EXT-020",
+      "C2LTB4-EXT-021",
+      "C2LTB4-EXT-022",
+      "C2LTB4-EXT-023",
+      "C2LTB4-EXT-024"
+    ],
+    "currentLimitations": [
+      "This is local structural review only and is not independent fresh review.",
+      "Rows with no abstract require manual fulltext/source-resolution review before bounded fresh-review evidence use.",
+      "The duplicate consensus lineage row must be resolved before evidence counting and cannot be treated as independent support.",
+      "No row admits calibrated prediction, intervention ranking, individual advice, individual death-date output or domain-claim upgrade.",
+      "Reviewed artifacts remain blocked until independent fresh review and source-resolution gates complete."
+    ]
+  },
+  "requiredExtractionFieldsReviewed": [
+    "taskId",
+    "domainId",
+    "localDomainPath",
+    "sourceRefId",
+    "sourceTitle",
+    "sourceUrl",
+    "sourceRole",
+    "exactClaimUse",
+    "endpointDefinition",
+    "populationOrSetting",
+    "effectOrMechanismSignal",
+    "uncertaintyOrBias",
+    "transferBoundary",
+    "downgradeTriggers",
+    "modelPosition",
+    "modelAdmissionDecision",
+    "blockedUses",
+    "nextAction"
+  ],
+  "localReviewVerdict": "local-review-pass-for-independent-fresh-review-only-with-four-source-resolution-flags-preserved",
+  "promotionDecision": "eligible-non-issue-rows-for-independent-fresh-review-only-not-reviewed-artifact-fill; issue-rows-require-source-resolution-before-fresh-review-evidence-use",
+  "sourceResolutionDecision": "four-rows-require-source-resolution-manual-fulltext-or-duplicate-lineage-handling-before-domain-claim-support",
+  "modelAdmissionDecision": "blocked-pending-independent-fresh-review-reviewed-artifacts-source-resolution-and-model-gates",
+  "blockedUses": [
+    "calibrated-prediction",
+    "individual-advice",
+    "individual-death-date-output",
+    "intervention-ranking",
+    "clinical-validity-claim",
+    "domain-claim-upgrade"
+  ],
+  "requiredNextArtifacts": [
+    "c2ltb4-independent-fresh-review-protocol",
+    "c2ltb4-independent-fresh-review-verdict-register",
+    "c2ltb4-source-resolution-register-for-issue-rows",
+    "reviewed-source-card",
+    "variable-card",
+    "endpoint-card",
+    "uncertainty-card",
+    "transfer-boundary-card",
+    "downgrade-check-row"
+  ],
+  "localReviewChecks": [
+    "Every reviewed task is present in the C2-LT-B4 source extraction queue.",
+    "Every reviewed task has a completed extraction row in the C2-LT-B4 source extraction register.",
+    "Every extraction row preserves exact claim use, endpoint, population or setting, mechanism or effect, uncertainty, transfer boundary, downgrade triggers and model position.",
+    "Every extraction row keeps model admission blocked and prohibited uses complete.",
+    "Every local domain path exists and exposes README.md and AGENTS.md.",
+    "Rows with no-abstract/fulltext needs or duplicate consensus lineage are explicitly preserved in sourceResolutionFindings.",
+    "The register routes non-issue rows to independent fresh review and issue rows to source-resolution/manual-fulltext review before Source Card promotion."
+  ],
+  "sourceResolutionFindings": [
+    {
+      "taskId": "C2LTB4-EXT-002",
+      "issueType": "duplicate-consensus-lineage",
+      "reviewDisposition": "source-resolution-required-duplicate-lineage-before-evidence-counting",
+      "correctionCandidate": "Decide whether C2LTB4-EXT-001 and C2LTB4-EXT-002 are duplicate publication routes for one consensus source or separate lineage anchors; do not count both as independent evidence.",
+      "reason": "Both rows describe the adult hyperglycemic-crisis consensus report lineage, and EXT-002 sourceRole explicitly marks duplicate-consensus-anchor."
+    },
+    {
+      "taskId": "C2LTB4-EXT-005",
+      "issueType": "no-abstract-fulltext-needed",
+      "reviewDisposition": "manual-fulltext-required-before-bounded-fresh-review",
+      "correctionCandidate": "Extract exact ESC guideline text, endpoint definitions and hypertension/acute-care boundary from the full guideline before artifact fill.",
+      "reason": "PubMed guideline record has no abstract; field-level extraction cannot independently verify detailed guideline claims without manual fulltext review."
+    },
+    {
+      "taskId": "C2LTB4-EXT-011",
+      "issueType": "no-abstract-fulltext-needed",
+      "reviewDisposition": "manual-fulltext-required-before-bounded-fresh-review",
+      "correctionCandidate": "Extract exact AASLD guidance definitions and MASLD/MASH endpoint boundaries from the full guidance before artifact fill.",
+      "reason": "PubMed guidance record has no abstract; field-level extraction cannot independently verify detailed liver-disease guidance claims without manual fulltext review."
+    },
+    {
+      "taskId": "C2LTB4-EXT-020",
+      "issueType": "no-abstract-fulltext-needed",
+      "reviewDisposition": "manual-fulltext-required-before-bounded-fresh-review",
+      "correctionCandidate": "Extract exact AGA gastrointestinal-evaluation recommendations and population boundaries before artifact fill.",
+      "reason": "PubMed practice guideline record has no abstract; field-level extraction cannot independently verify detailed iron-deficiency anemia evaluation claims without manual fulltext review."
+    }
+  ],
+  "reviewBatches": [
+    {
+      "reviewBatchId": "C2LTB4-LR-01-diabetes-hypertension-renal-hepatic",
+      "reviewLabel": "糖尿病危象、胰岛素/监测、血压危象、透析通路、肾移植与 MASLD/MASH 连续性域",
+      "taskIds": [
+        "C2LTB4-EXT-001",
+        "C2LTB4-EXT-002",
+        "C2LTB4-EXT-003",
+        "C2LTB4-EXT-004",
+        "C2LTB4-EXT-005",
+        "C2LTB4-EXT-006",
+        "C2LTB4-EXT-007",
+        "C2LTB4-EXT-008",
+        "C2LTB4-EXT-009",
+        "C2LTB4-EXT-010",
+        "C2LTB4-EXT-011",
+        "C2LTB4-EXT-012"
+      ],
+      "nextReviewMode": "independent fresh review must verify diabetes crisis duplicate consensus lineage, diabetes technology scope, hypertension no-abstract fulltext boundary, dialysis access guideline scope, kidney transplant monitoring scope, MASLD/MASH guidance fulltext boundary and no individual clinical recommendation overclaim before artifact promotion",
+      "taskCount": 12,
+      "domainIds": [
+        "chronic-liver-disease-masld-mash-continuity",
+        "diabetes-insulin-glucose-monitoring-supplies-continuity",
+        "diabetic-hyperglycemic-hypoglycemic-crisis-continuity",
+        "dialysis-access-vascular-peritoneal-continuity",
+        "hypertensive-crisis-end-organ-risk-continuity",
+        "kidney-transplant-immunosuppression-graft-continuity"
+      ],
+      "reviewDecision": "local-review-pass-for-independent-fresh-review-only"
+    },
+    {
+      "reviewBatchId": "C2LTB4-LR-02-endocrine-electrolyte-oxygen-axis",
+      "reviewLabel": "甲状腺、肾上腺、电解质酸碱、铁缺乏携氧、库欣与垂体轴连续性域",
+      "taskIds": [
+        "C2LTB4-EXT-013",
+        "C2LTB4-EXT-014",
+        "C2LTB4-EXT-015",
+        "C2LTB4-EXT-016",
+        "C2LTB4-EXT-017",
+        "C2LTB4-EXT-018",
+        "C2LTB4-EXT-019",
+        "C2LTB4-EXT-020",
+        "C2LTB4-EXT-021",
+        "C2LTB4-EXT-022",
+        "C2LTB4-EXT-023",
+        "C2LTB4-EXT-024"
+      ],
+      "nextReviewMode": "independent fresh review must verify thyroid guideline scope, adrenal insufficiency stress-response boundary, electrolyte emergency context, iron-deficiency no-abstract fulltext boundary, Cushing syndrome treatment scope, pituitary disorder monitoring scope and no individual prognosis overclaim before artifact promotion",
+      "taskCount": 12,
+      "domainIds": [
+        "adrenal-insufficiency-cortisol-stress-response-continuity",
+        "cushing-syndrome-hypercortisolism-metabolic-bone-continuity",
+        "fluid-electrolyte-acid-base-homeostasis",
+        "iron-deficiency-anemia-oxygen-carrying-continuity",
+        "pituitary-disorders-hormone-axis-continuity",
+        "thyroid-disease-endocrine-function-continuity"
+      ],
+      "reviewDecision": "local-review-pass-for-independent-fresh-review-only"
+    }
+  ],
+  "nonClaims": [
+    "This register is not an independent fresh review verdict register.",
+    "This register does not complete any reviewed Source Card, variable card, endpoint card, uncertainty card, transfer-boundary card or downgrade-check artifact.",
+    "This register does not repair no-abstract/fulltext gaps or duplicate consensus lineage; it records them for source-resolution review.",
+    "This register does not validate external source truth, clinical recommendations, intervention effects, calibrated risks or individual prognosis.",
+    "This register does not authorize model admission, domain-claim upgrade, intervention ranking, individual advice or individual death-date output."
+  ],
+  "indexRequirements": [
+    "README.md",
+    "docs/reference/README.md",
+    "docs/reference/human-infra-maturity-roadmap.md",
+    "tools/README.md"
+  ]
+}

@@ -39,6 +39,7 @@ tools/
 ├── audit_human_infra_c2_longtail_third_batch_source_extraction_queue.py # C2-LT-B3 来源深读队列审计器
 ├── audit_human_infra_c2_longtail_fourth_batch_source_extraction_queue.py # C2-LT-B4 来源深读队列审计器
 ├── audit_human_infra_c2_longtail_fourth_batch_source_extraction_register.py # C2-LT-B4 来源抽取寄存器审计器
+├── audit_human_infra_c2_longtail_fourth_batch_local_review_register.py # C2-LT-B4 本地来源语境复核审计器
 ├── audit_human_infra_c2_longtail_third_batch_source_extraction_register.py # C2-LT-B3 来源抽取寄存器审计器
 ├── audit_human_infra_c2_longtail_third_batch_local_review_register.py # C2-LT-B3 本地来源语境复核审计器
 ├── audit_human_infra_c2_longtail_third_batch_source_resolution_register.py # C2-LT-B3 source-resolution 审计器
@@ -111,6 +112,7 @@ tools/
 - `audit_human_infra_c2_longtail_third_batch_source_extraction_queue.py` 只检查 `docs/reference/human-infra-c2-longtail-third-batch-source-extraction-queue.json` 是否把 C2-LT-B3 24 个候选来源派生成 source-specific 深读任务，保持 required slots、问题、阻塞用途和索引；它不证明来源已读完、fresh review 通过或模型准入完成。
 - `audit_human_infra_c2_longtail_fourth_batch_source_extraction_queue.py` 只检查 `docs/reference/human-infra-c2-longtail-fourth-batch-source-extraction-queue.json` 是否把 C2-LT-B4 24 个候选来源派生成 source-specific 深读任务，保持 required slots、问题、阻塞用途和索引；它不证明来源已读完、fresh review 通过或模型准入完成。
 - `audit_human_infra_c2_longtail_fourth_batch_source_extraction_register.py` 只检查 `docs/reference/human-infra-c2-longtail-fourth-batch-source-extraction-register.json` 是否完成 C2-LT-B4 24/24 个来源语境字段抽取、保留无摘要全文复核、重复共识路线、降级触发、阻塞用途和索引；它不证明本地复核、fresh review、reviewed artifact 或模型准入完成。
+- `audit_human_infra_c2_longtail_fourth_batch_local_review_register.py` 只检查 `docs/reference/human-infra-c2-longtail-fourth-batch-local-review-register.json` 是否完成 C2-LT-B4 24/24 个来源抽取行本地结构复核、反查队列与抽取账本、保留 1 个重复共识路线行和 3 个无摘要需全文行、保持阻塞用途并只路由到 independent fresh review 或 source resolution；它不证明 reviewed artifacts、Source Card 晋升或模型准入已经完成。
 - `audit_human_infra_c2_longtail_third_batch_source_extraction_register.py` 只检查 `docs/reference/human-infra-c2-longtail-third-batch-source-extraction-register.json` 是否完成 C2-LT-B3 24/24 个来源语境字段抽取、保留 source-resolution 标记、降级触发、阻塞用途和索引；它不证明本地复核、fresh review、reviewed artifact 或模型准入完成。
 - `audit_human_infra_c2_longtail_third_batch_local_review_register.py` 只检查 `docs/reference/human-infra-c2-longtail-third-batch-local-review-register.json` 是否完成 C2-LT-B3 24/24 个来源抽取行本地结构复核、反查队列与抽取账本、保留 5 个 source-resolution/manual-access 问题行、保持阻塞用途并只路由到 independent fresh review 或 source resolution；它不证明 reviewed artifacts、Source Card 晋升或模型准入已经完成。
 - `audit_human_infra_c2_longtail_third_batch_source_resolution_register.py` 只检查 `docs/reference/human-infra-c2-longtail-third-batch-source-resolution-register.json` 是否覆盖 C2-LT-B3 5 个本地复核问题行、准备 7 个 corrected/split/route-normalized 候选、保留 fresh-review 和 corrected-reextraction 后续门槛，并继续阻塞 reviewed artifacts、Source Card 晋升和模型准入。
