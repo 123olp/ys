@@ -1,0 +1,377 @@
+{
+  "schemaVersion": "human-infra.maturity-gap-register.v1",
+  "registerId": "human-infra-100-percent-maturity-gap-register-2026-07-02",
+  "status": "active-gap-register-not-complete",
+  "purpose": "Track the concrete evidence still required to move Human Infra from value narrative, research framework and toy quantitative model toward a 100% research system.",
+  "sourceRoadmap": "docs/reference/human-infra-maturity-roadmap.md",
+  "currentAssessmentDate": "2026-07-02",
+  "completionRule": "The project is not 100% until every axis reaches 100 and every gate has status pass with direct evidence.",
+  "globalBoundaries": [
+    "Do not mark value clarity complete only because the README is persuasive.",
+    "Do not mark research framework complete until strong claims across core domains have Source Cards, Claim-Evidence Matrix rows, variables, falsifiers and model positions.",
+    "Do not mark quantitative model complete until real governed data, field confirmation, extraction, survey design, external validation and calibration evidence exist.",
+    "Do not output individual death dates, individual life expectancy claims, individual medical advice, or unvalidated calibration claims."
+  ],
+  "axes": [
+    {
+      "axisId": "value_clarity",
+      "axisName": "项目价值",
+      "currentPercent": 82,
+      "targetPercent": 100,
+      "definitionOfDone": "Different audiences can understand Human Infra through one stable first-principles thesis, with audience-specific entry points that all preserve scope, evidence and prohibited-use boundaries.",
+      "primaryEvidence": [
+        "README.md",
+        "docs/explanations/value-lenses.md",
+        "docs/reference/human-infra-core-claim-evidence-matrix.md",
+        "docs/reference/human-infra-maturity-roadmap.md",
+        "web/src/pages/index.astro",
+        "web/src/pages/paper.astro"
+      ],
+      "gates": [
+        {
+          "gateId": "VALUE-G1-core-thesis-stable",
+          "status": "pass",
+          "requirement": "A stable first-principles thesis exists and is visible from the README.",
+          "evidence": [
+            "README.md",
+            "docs/reference/human-infra-core-claim-evidence-matrix.md"
+          ],
+          "missingEvidence": [],
+          "nextAction": "Keep future pages aligned to HI-CL1 through HI-CL3 instead of inventing new top-level slogans.",
+          "blocks100Percent": false
+        },
+        {
+          "gateId": "VALUE-G2-multi-lens-value-language",
+          "status": "pass",
+          "requirement": "The value story supports multiple lenses: subject continuity, universal resource budget and anti-scarcity engineering.",
+          "evidence": [
+            "README.md",
+            "docs/explanations/value-lenses.md"
+          ],
+          "missingEvidence": [],
+          "nextAction": "Use the lenses as projections of the same thesis, not separate competing missions.",
+          "blocks100Percent": false
+        },
+        {
+          "gateId": "VALUE-G3-audience-entrypoints",
+          "status": "partial",
+          "requirement": "Different audiences have dedicated entry paths without changing the core thesis.",
+          "evidence": [
+            "README.md",
+            "web/src/pages/index.astro",
+            "web/src/pages/research-standards.astro"
+          ],
+          "missingEvidence": [
+            "Audience matrix for researchers, builders, longevity readers, infrastructure readers and governance reviewers.",
+            "Explicit links from each major Web page back to the same Claim IDs."
+          ],
+          "nextAction": "Create an audience-to-claim map and add page-level source notes for major narrative pages.",
+          "blocks100Percent": true
+        },
+        {
+          "gateId": "VALUE-G4-boundary-against-neighbor-projects",
+          "status": "partial",
+          "requirement": "The project is clearly distinguished from health management, longevity knowledge bases, AI tools, policy encyclopedias and medical advice systems.",
+          "evidence": [
+            "README.md",
+            "docs/reference/project-boundary-v0.1.md",
+            "docs/reference/ethics-and-safety-boundaries.md"
+          ],
+          "missingEvidence": [
+            "A compact comparison table linked from README and Web index."
+          ],
+          "nextAction": "Add a boundary comparison table that states what Human Infra is, what it is adjacent to, and what it refuses to be.",
+          "blocks100Percent": true
+        },
+        {
+          "gateId": "VALUE-G5-method-anchor-translation",
+          "status": "pass",
+          "requirement": "The value language is constrained by external method anchors and prohibited-use boundaries.",
+          "evidence": [
+            "docs/reference/human-infra-core-claim-evidence-matrix.md",
+            "docs/reference/human-infra-maturity-roadmap.md"
+          ],
+          "missingEvidence": [],
+          "nextAction": "Keep method anchors as constraints, not as proof of any specific intervention.",
+          "blocks100Percent": false
+        },
+        {
+          "gateId": "VALUE-G6-page-consistency-audit",
+          "status": "blocked",
+          "requirement": "README, Web homepage, paper pages and major reference documents use one consistent value grammar and claim boundary.",
+          "evidence": [
+            "README.md",
+            "docs/reference/human-infra-core-claim-evidence-matrix.md"
+          ],
+          "missingEvidence": [
+            "Machine audit that scans major pages for required Claim IDs and prohibited-use language."
+          ],
+          "nextAction": "Add a page-consistency audit after page-level Claim IDs are inserted.",
+          "blocks100Percent": true
+        }
+      ]
+    },
+    {
+      "axisId": "research_framework",
+      "axisName": "研究框架",
+      "currentPercent": 55,
+      "targetPercent": 100,
+      "definitionOfDone": "Every strong project claim can be traced to source cards, claim-evidence rows, variables, mechanism links, falsifiers, model position and governance boundary.",
+      "primaryEvidence": [
+        "docs/reference/human-infra-core-claim-evidence-matrix.md",
+        "docs/reference/evidence-policy.md",
+        "docs/reference/source-card-system.md",
+        "domains/README.md",
+        "domains/_possibility-space-control/classification.tsv"
+      ],
+      "gates": [
+        {
+          "gateId": "RESEARCH-G1-domain-map-physicalized",
+          "status": "pass",
+          "requirement": "Research domains are physically organized under C1-C6 with README and AGENTS boundaries.",
+          "evidence": [
+            "domains/README.md",
+            "domains/AGENTS.md",
+            "domains/_possibility-space-control/classification.tsv"
+          ],
+          "missingEvidence": [],
+          "nextAction": "Continue using classification.tsv as the path truth source.",
+          "blocks100Percent": false
+        },
+        {
+          "gateId": "RESEARCH-G2-core-claims-registered",
+          "status": "pass",
+          "requirement": "Core Human Infra claims are registered with source anchors, evidence roles and prohibited-use boundaries.",
+          "evidence": [
+            "docs/reference/human-infra-core-claim-evidence-matrix.md",
+            "tools/audit_core_claim_evidence_matrix.py"
+          ],
+          "missingEvidence": [],
+          "nextAction": "Use HI-CL IDs as the project-level claim spine.",
+          "blocks100Percent": false
+        },
+        {
+          "gateId": "RESEARCH-G3-c1-c2-source-cards",
+          "status": "partial",
+          "requirement": "C1 and C2 core research domains have Source Cards, mechanism variables, evidence grade and falsifier rows.",
+          "evidence": [
+            "domains/c1-boundary-rewriting/longevity-evidence/docs/lev-source-cards.md",
+            "domains/c1-boundary-rewriting/longevity-evidence/docs/life-path-data-source-cards.md"
+          ],
+          "missingEvidence": [
+            "Equivalent Source Cards for all priority C1/C2 domains.",
+            "Domain-level Claim-Evidence Matrices for cellular reprogramming, future waiting, neuro-continuity and core biological maintenance domains."
+          ],
+          "nextAction": "Prioritize C1/C2 domains that most affect subject-continuity boundary rewriting and source maintenance.",
+          "blocks100Percent": true
+        },
+        {
+          "gateId": "RESEARCH-G4-variable-mechanism-contracts",
+          "status": "partial",
+          "requirement": "Claims that affect quantitative reasoning define input variables, mediators, state variables, risk variables and outputs.",
+          "evidence": [
+            "docs/reference/life-path-prediction-model-contract.md",
+            "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_calibration_readiness.json"
+          ],
+          "missingEvidence": [
+            "Reusable variable template applied across major domains.",
+            "Domain-specific variable tables for all major C1/C2 claims."
+          ],
+          "nextAction": "Promote the life-path variable pattern into a reusable research-domain variable contract.",
+          "blocks100Percent": true
+        },
+        {
+          "gateId": "RESEARCH-G5-route-probability-gates",
+          "status": "partial",
+          "requirement": "Major routes expose technical window, access, adoption, duration, composability, tail risk and opportunity cost gates.",
+          "evidence": [
+            "domains/c1-boundary-rewriting/longevity-evidence/data/manual/lev_route_cards.tsv",
+            "domains/c1-boundary-rewriting/longevity-evidence/docs/lev-route-card-template.md"
+          ],
+          "missingEvidence": [
+            "Route-card coverage for every high-priority future-boundary route, not just mainstream LEV routes."
+          ],
+          "nextAction": "Extend route-card governance to future waiting, biological stasis, neuro-continuity and AI-enabled acceleration domains.",
+          "blocks100Percent": true
+        },
+        {
+          "gateId": "RESEARCH-G6-falsifier-and-downgrade-coverage",
+          "status": "blocked",
+          "requirement": "Every strong claim has at least one falsifier or downgrade condition.",
+          "evidence": [
+            "docs/reference/human-infra-core-claim-evidence-matrix.md"
+          ],
+          "missingEvidence": [
+            "Machine audit for domain-level falsifier coverage.",
+            "Falsifier rows for major Web page claims and arXiv-style paper claims."
+          ],
+          "nextAction": "Add a claim coverage audit after page-level claims are indexed.",
+          "blocks100Percent": true
+        }
+      ]
+    },
+    {
+      "axisId": "quantitative_model",
+      "axisName": "定量模型",
+      "currentPercent": 63,
+      "targetPercent": 100,
+      "definitionOfDone": "A governed, reproducible, scenario-level model uses real approved data with confirmed variables, explicit estimands, survey design, disclosure control, validation, calibration diagnostics and Web visualization while preserving no-individual-prediction boundaries.",
+      "primaryEvidence": [
+        "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_toy_model_scenarios.json",
+        "domains/c1-boundary-rewriting/longevity-evidence/scripts/audit_life_path_toy_model.py",
+        "web/src/data/life-path-toy-model-audit.json",
+        "docs/reference/life-path-prediction-model-contract.md",
+        "docs/reference/life-path-prediction-model-governance.md"
+      ],
+      "gates": [
+        {
+          "gateId": "MODEL-G1-toy-model-executable",
+          "status": "pass",
+          "requirement": "Versioned synthetic inputs generate Web model data and a local audit report.",
+          "evidence": [
+            "domains/c1-boundary-rewriting/longevity-evidence/scripts/run_life_path_toy_model.py",
+            "web/src/data/life-path-toy-model.json",
+            "web/src/data/life-path-toy-model-audit.json"
+          ],
+          "missingEvidence": [],
+          "nextAction": "Keep the toy model as a reporting contract, not as real prediction evidence.",
+          "blocks100Percent": false
+        },
+        {
+          "gateId": "MODEL-G2-synthetic-sensitivity",
+          "status": "pass",
+          "requirement": "Synthetic one-factor sensitivity analysis exists and is audited.",
+          "evidence": [
+            "domains/c1-boundary-rewriting/longevity-evidence/scripts/run_life_path_sensitivity_analysis.py",
+            "web/src/data/life-path-sensitivity-analysis.json"
+          ],
+          "missingEvidence": [],
+          "nextAction": "Treat this as stress testing only until real calibrated parameter uncertainty exists.",
+          "blocks100Percent": false
+        },
+        {
+          "gateId": "MODEL-G3-real-data-access",
+          "status": "blocked",
+          "requirement": "Real governed cohort data access is approved and documented before extraction.",
+          "evidence": [
+            "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_acquisition_readiness.json"
+          ],
+          "missingEvidence": [
+            "NHATS registration evidence.",
+            "Allowed file tier confirmation.",
+            "Controlled storage and destruction record."
+          ],
+          "nextAction": "Complete governed data access records before any extractor is written.",
+          "blocks100Percent": true
+        },
+        {
+          "gateId": "MODEL-G4-field-and-value-confirmation",
+          "status": "blocked",
+          "requirement": "Exact fields, value labels, question text, skip logic, missing codes and route-value crosswalks are confirmed from official sources.",
+          "evidence": [
+            "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_route_field_discovery_register.json",
+            "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_value_label_review_protocol.json"
+          ],
+          "missingEvidence": [
+            "Colectica login/access log.",
+            "Field-level source trace with hashes.",
+            "Route-value crosswalk.",
+            "Negative missing-code map.",
+            "Second reviewer signoff."
+          ],
+          "nextAction": "Execute the Colectica value-label review protocol and keep route classifier blocked until signoff.",
+          "blocks100Percent": true
+        },
+        {
+          "gateId": "MODEL-G5-real-extraction-and-cohort-flow",
+          "status": "blocked",
+          "requirement": "A reproducible extractor creates governed aggregate cohort-flow inputs without leaking raw rows or sensitive fields.",
+          "evidence": [
+            "domains/c1-boundary-rewriting/longevity-evidence/docs/life-path-extraction-manifest-nhats-draft.md",
+            "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_cohort_flow_endpoint_protocol.json"
+          ],
+          "missingEvidence": [
+            "Real extraction script.",
+            "Governed run log.",
+            "Aggregate cohort-flow table.",
+            "Disclosure-reviewed output envelope."
+          ],
+          "nextAction": "Write extraction only after data access and field confirmation gates pass.",
+          "blocks100Percent": true
+        },
+        {
+          "gateId": "MODEL-G6-survey-design-and-weighted-estimates",
+          "status": "blocked",
+          "requirement": "Analysis weights, strata, PSU/variance unit, variance method, domain rule and disclosure control are confirmed before weighted estimates.",
+          "evidence": [
+            "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_survey_design_protocol.json",
+            "web/src/data/life-path-nhats-survey-design-validation.json"
+          ],
+          "missingEvidence": [
+            "Exact NHATS design variables.",
+            "Weighted estimator implementation.",
+            "Variance method validation.",
+            "Public-output suppression review."
+          ],
+          "nextAction": "Promote survey design from synthetic validator to real design-plan validation after field confirmation.",
+          "blocks100Percent": true
+        },
+        {
+          "gateId": "MODEL-G7-external-validation-and-calibration",
+          "status": "blocked",
+          "requirement": "Model outputs are externally validated and calibrated against real outcomes within a pre-registered scope.",
+          "evidence": [
+            "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_calibration_readiness.json",
+            "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_data_source_candidates.json"
+          ],
+          "missingEvidence": [
+            "Real training/validation split or external cohort.",
+            "Calibration diagnostics.",
+            "Sensitivity analysis based on real parameter uncertainty.",
+            "TRIPOD+AI / PROBAST-style reporting packet."
+          ],
+          "nextAction": "Do not claim prediction validity until real-data calibration and external validation exist.",
+          "blocks100Percent": true
+        },
+        {
+          "gateId": "MODEL-G8-no-individual-prediction-boundary",
+          "status": "pass",
+          "requirement": "The current pipeline blocks individual death dates, individual life predictions and personal medical advice.",
+          "evidence": [
+            "web/src/data/life-path-toy-model-audit.json",
+            "docs/reference/life-path-prediction-model-governance.md",
+            "docs/reference/ethics-and-safety-boundaries.md"
+          ],
+          "missingEvidence": [],
+          "nextAction": "Keep this boundary even after real aggregate data enters the system.",
+          "blocks100Percent": false
+        }
+      ]
+    }
+  ],
+  "nextWorkOrder": [
+    {
+      "priority": 1,
+      "item": "Add page-level Claim ID consistency audit for README, Web homepage, paper pages and major reference pages.",
+      "unblocks": [
+        "VALUE-G6-page-consistency-audit",
+        "RESEARCH-G6-falsifier-and-downgrade-coverage"
+      ]
+    },
+    {
+      "priority": 2,
+      "item": "Execute NHATS Colectica value-label review protocol and fill field-level source trace, route-value crosswalk and missing-code map.",
+      "unblocks": [
+        "MODEL-G4-field-and-value-confirmation"
+      ]
+    },
+    {
+      "priority": 3,
+      "item": "Create C1/C2 domain-level Claim-Evidence Matrix and variable contract templates.",
+      "unblocks": [
+        "RESEARCH-G3-c1-c2-source-cards",
+        "RESEARCH-G4-variable-mechanism-contracts"
+      ]
+    }
+  ]
+}

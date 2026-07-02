@@ -141,7 +141,7 @@ flowchart LR
 | 查看伦理与安全红线 | [docs/reference/ethics-and-safety-boundaries.md](docs/reference/ethics-and-safety-boundaries.md) | 医疗、神经、生命支持和组织使用边界 |
 | 查看证据规则 | [docs/reference/evidence-policy.md](docs/reference/evidence-policy.md) | 如何区分原始资料、证据和稳定结论 |
 | 查看核心主张证据矩阵 | [docs/reference/human-infra-core-claim-evidence-matrix.md](docs/reference/human-infra-core-claim-evidence-matrix.md) | Human Infra 第一性主张、外部方法锚点、证据角色和禁止外推边界 |
-| 查看成熟度路线 | [docs/reference/human-infra-maturity-roadmap.md](docs/reference/human-infra-maturity-roadmap.md) | 从价值讲清、研究框架到可运行定量模型的 100% 状态和当前差距 |
+| 查看成熟度路线 | [成熟度路线](docs/reference/human-infra-maturity-roadmap.md) / [缺口账本](docs/reference/human-infra-maturity-gap-register.json) | 从价值讲清、研究框架到可运行定量模型的 100% 状态、当前差距和机器可审计 gate |
 | 查看定量预测模型 | [模型说明](docs/explanations/life-path-prediction-model.md) / [模型契约](docs/reference/life-path-prediction-model-contract.md) / [模型治理](docs/reference/life-path-prediction-model-governance.md) / [科研工具包](docs/reference/research-model-visualization-toolkit.md) | 如何量化判断技术、因素和干预对寿命、有效时间、主观时间、相对时间和未来选择权的影响 |
 | 整理论文、书籍、工具和案例 | [资料卡片制度](docs/reference/source-card-system.md) / [资料卡片模板](docs/templates/research-card.md) | 把外部资料转成可复用语料、模型变量和 Web 展示材料 |
 | 打开正式 Web 应用 | [web/README.md](web/README.md) / [首页源文件](web/src/pages/index.astro) | Astro + D3 多页应用，承载书籍转译、科研叙事、预测模型和交互图表 |

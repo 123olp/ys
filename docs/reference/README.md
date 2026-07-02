@@ -60,6 +60,7 @@ Current documents:
 - `ethics-and-safety-boundaries.md`: also covers personal operations and task-coordination continuity boundaries for calendar/scheduling/appointments, notifications/alerts, reminders/alarms/routines, meetings/video conferencing, document capture/OCR/PDF record workflows, search/index/discovery/retrieval, personal automation/integration workflows, and collaborative document permissions/versions.
 - `glossary.md`: canonical terms.
 - `human-infra-maturity-roadmap.md`: maturity contract for value clarity, serious research framework, and runnable quantitative model stages.
+- `human-infra-maturity-gap-register.json`: machine-readable 100% maturity gap register for value clarity, research-framework, and quantitative-model gates.
 - `life-path-prediction-model-contract.md`: quantitative contract for modeling interventions, state transitions, hazards, survival, effective time, subjective time, relative time, and option value.
 - `life-path-prediction-model-governance.md`: governance gates for evidence admission, uncertainty, validation, reporting, and prohibited uses of life-path predictions.
 - `project-boundary-v0.1.md`: first public boundary for what Human Infra is, what it is not, and what v0.1 work includes.

@@ -2,6 +2,8 @@
 
 本文档定义 Human Infra 从“讲清楚价值”走向“严肃研究框架”和“可运行定量模型”的 100% 状态。它不是宣传稿，而是验收契约：任何阶段都必须能说明目标、对象、边界、证据、模型和不能外推的部分。
 
+机器可读缺口账本见 [`human-infra-maturity-gap-register.json`](human-infra-maturity-gap-register.json)。路线图负责解释 100% 状态，缺口账本负责把当前未完成项拆成 gate、证据路径、缺失证据和下一步动作，并由 `make maturity-gap-audit` 检查。
+
 ## 总判断
 
 截至 2026-07-02，项目已经完成了价值追问、域地图、主流 LEV 路线和 Web 叙事的主体搭建，但尚未达到完整研究工程系统。

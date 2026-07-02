@@ -35,6 +35,7 @@ REQUIRED_FILES = [
     ".github/ISSUE_TEMPLATE/data-pipeline.yml",
     "tools/README.md",
     "tools/audit_core_claim_evidence_matrix.py",
+    "tools/audit_human_infra_maturity_gap_register.py",
     "tools/arxiv_html_paper_tool.py",
     "tools/update_domain_doc_contracts.py",
     "tools/arxiv-html-paper/AGENTS.md",
