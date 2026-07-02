@@ -14,6 +14,8 @@
 
 反证 Source Card 字段级抽取账本见 [`human-infra-falsifier-source-card-extraction.json`](human-infra-falsifier-source-card-extraction.json)，由 `make falsifier-source-extraction-audit` 检查当前全部来源锚点是否进入来源身份、域、论文 claim、模型位置、反证用途、迁移边界和人工可读包。
 
+域级 Claim-Evidence Matrix 见 [`human-infra-domain-claim-evidence-matrix.json`](human-infra-domain-claim-evidence-matrix.json)，由 `make domain-claim-matrix-audit` 检查当前 26 个优先研究域是否 join 到域强主张来源、变量契约来源、反证来源、字段级 Source Card ID、禁止用途和下一步抽取动作。
+
 ## Claim Spine
 
 本路线图对齐 `HI-CL1`、`HI-CL2`、`HI-CL3`、`HI-CL4`、`HI-CL6` 和 `HI-CL7`：主体持续性是价值成立条件，Human Infra 的对象是主体持续性的基础条件集合，定量模型必须区分寿命、健康寿命、有效时间和未来选择权，并把技术放入变量、状态、风险函数和证据链中审查。边界：不是医疗建议；不输出个体死亡日期；不证明具体技术已经实现有效永生。
@@ -25,7 +27,7 @@
 | 轴线 | 当前成熟度 | 100% 状态 | 当前最大缺口 |
 | --- | ---: | --- | --- |
 | 项目价值 | 88% | 不同受众能用同一核心命题理解 Human Infra 的必要性 | 已有页面级 Claim ID 一致性门禁；还需要补 audience-to-claim map 和邻近项目边界对照 |
-| 研究框架 | 78% | 每条主张都进入 Source Card、Claim-Evidence Matrix、变量表和反证条件 | 已有核心主张矩阵、页面级 Claim ID 门禁、arXiv-style 论文页强主张门禁、C1/20 个优先 C2 反证覆盖门禁、v0.1 反证 Source Card 锚点回填、当前 21 个来源锚点字段级 Source Card 抽取、方法锚点和本地审计门禁，但 20 域之外的 C2 长尾域、域级 Claim-Evidence Matrix 和逐篇深度精读仍未完成 |
+| 研究框架 | 81% | 每条主张都进入 Source Card、Claim-Evidence Matrix、变量表和反证条件 | 已有核心主张矩阵、页面级 Claim ID 门禁、arXiv-style 论文页强主张门禁、C1/20 个优先 C2 反证覆盖门禁、v0.1 反证 Source Card 锚点回填、当前 21 个来源锚点字段级 Source Card 抽取、26 个优先域的域级 Claim-Evidence Matrix seed、方法锚点和本地审计门禁，但 20 域之外的 C2 长尾域、endpoint / population / uncertainty 级 Source Card 和逐篇深度精读仍未完成 |
 | 定量模型 | 63% | 有可运行、可复现、可审查的场景级模型管线 | 已有 toy model、合成敏感性分析、审计器、校准预备契约、真实队列候选注册表、数据源 Source Cards、Data Card 模板、NHATS 数据准入草案、变量字典草案、extraction manifest 草案、机器可读 acquisition-readiness gates、R13/R14 file-tier table、第一版 NHATS estimand protocol、NHATS variable confirmation matrix、NHATS cohort-flow endpoint-routing protocol、synthetic disclosure-control validator、synthetic survey-design validator、synthetic missingness-route validator、NHATS route-field discovery validator 和 NHATS Colectica value-label review protocol validator，但还没有数据访问、Colectica value labels 精确确认、真实提取、真实 NHATS route classification、真实 NHATS 输出披露审查、真实 survey-design 加权估计、外部验证和校准后的敏感性分析 |
 
 ## 价值层 100%
@@ -207,7 +209,7 @@ life_path_toy_model_scenarios.json
 这一步已经把项目从“有定量想法的研究叙事”推进到“有最小可执行、可审计模型管线的研究系统”，并且开始把合成敏感性分析、真实队列候选、治理边界、第一份 NHATS 数据准入草案、NHATS 机器可读 acquisition-readiness gates、R13/R14 file-tier table、第一版 NHATS estimand protocol、NHATS variable confirmation matrix、NHATS cohort-flow endpoint-routing protocol、synthetic disclosure-control validator、synthetic survey-design validator、synthetic missingness-route validator、NHATS route-field discovery validator、NHATS Colectica value-label review protocol validator 和核心主张证据矩阵纳入机器审计。下一步不是继续膨胀新域，而是补三件硬东西：
 
 - 继续用 `human-infra-core-claim-evidence-matrix.md` 作为核心主张入口，把 README、论文页和 Web 页的强叙事都回连到同一组 Claim ID、来源角色和禁止外推边界。
-- 把 `human-infra-falsifier-source-card-extraction.json` 的字段级 Source Card 抽取扩展到剩余来源锚点，并把 C1/C2 核心主张做成 Claim-Evidence Matrix。
+- 把 `human-infra-domain-claim-evidence-matrix.json` 的 26 条种子行拆成 endpoint / population / uncertainty 级 Source Cards，并继续把 C1/C2 长尾域接入同一矩阵。
 - 把 NHATS manifest、route-field discovery register、Colectica value-label review protocol 和 first estimand protocol 从 draft 推进到 governed acquisition-ready，补 Colectica 登录复核、value labels、question text、universe/skip logic、精确字段名、轮次、缺失码、公开/敏感/受限状态、权重、endpoint 定义、cohort flow、survey design、代码本来源和输出抑制规则。
 - 把 sensitivity analysis 从合成一因素扰动推进到基于真实队列、预注册范围和校准诊断的敏感性分析。
 

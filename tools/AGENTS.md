@@ -13,6 +13,7 @@ tools/
 ├── audit_human_infra_page_claim_consistency.py # 页面级 Claim ID 一致性审计器
 ├── audit_human_infra_paper_claim_register.py # arXiv-style 论文页强主张注册表审计器
 ├── audit_human_infra_domain_falsifier_coverage.py # C1/C2 优先域反证覆盖审计器
+├── audit_human_infra_domain_claim_evidence_matrix.py # 域级主张-证据矩阵审计器
 ├── audit_human_infra_falsifier_source_card_backfill.py # 反证 Source Card 锚点回填审计器
 ├── audit_human_infra_falsifier_source_card_extraction.py # 反证 Source Card 字段级抽取审计器
 ├── arxiv_html_paper_tool.py          # arXiv HTML papers 复用 CLI
@@ -42,6 +43,7 @@ tools/
 - `audit_human_infra_page_claim_consistency.py` 只检查主要 README、Web、论文和 reference 页面是否包含账本要求的 Claim ID、Claim spine 标签和禁止用途边界，不验证外部文献真实性或域级证据闭环。
 - `audit_human_infra_paper_claim_register.py` 只检查 arXiv-style 论文页是否全部进入论文强主张注册表，并具备强主张、核心 Claim ID、反证条件、降级动作、source data path 和禁止用途边界；它不证明论文主张为真，也不验证外部文献真实性。
 - `audit_human_infra_domain_falsifier_coverage.py` 只检查 C1 和当前 20 个优先 C2 研究域是否具备强主张、变量接口、反证条件、降级动作和禁止用途脚手架，不证明所有 C2 域、论文页或外部文献已经完成证据闭环。
+- `audit_human_infra_domain_claim_evidence_matrix.py` 只检查当前 26 个优先研究域是否通过域级矩阵连接到强主张、变量契约来源、反证来源和已抽取 Source Card ID；它不证明外部文献正确，也不等于完成逐条 endpoint / population / uncertainty Source Card 精读。
 - `audit_human_infra_falsifier_source_card_backfill.py` 只检查当前论文强主张和 C1/C2 优先域反证是否具备 Source Card 锚点、证据角色、可用范围和外推边界；它不证明外部文献正确，也不等于完成逐篇 Source Card 精读。
 - `audit_human_infra_falsifier_source_card_extraction.py` 只检查当前 21 个来源锚点是否全部完成字段级 Source Card 抽取，并绑定来源身份、域、论文 claim、模型位置、边界和人工可读包；它不证明外部文献正确，也不等于完成域级 Claim-Evidence Matrix。
 - `update_domain_doc_contracts.py` 只根据 `domains/_possibility-space-control/classification.tsv` 为正式研究域 README/AGENTS 生成标准元信息、研究推进骨架、维护契约和代理执行流程块。

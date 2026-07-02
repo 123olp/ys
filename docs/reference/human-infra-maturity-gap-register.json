@@ -114,7 +114,7 @@
     {
       "axisId": "research_framework",
       "axisName": "研究框架",
-      "currentPercent": 78,
+      "currentPercent": 81,
       "targetPercent": 100,
       "definitionOfDone": "Every strong project claim can be traced to source cards, claim-evidence rows, variables, mechanism links, falsifiers, model position and governance boundary.",
       "primaryEvidence": [
@@ -122,6 +122,7 @@
         "docs/reference/evidence-policy.md",
         "docs/reference/source-card-system.md",
         "docs/reference/human-infra-paper-claim-register.json",
+        "docs/reference/human-infra-domain-claim-evidence-matrix.json",
         "docs/reference/human-infra-falsifier-source-card-backfill.json",
         "docs/reference/human-infra-falsifier-source-card-extraction.json",
         "domains/README.md",
@@ -159,13 +160,15 @@
           "requirement": "C1 and C2 core research domains have Source Cards, mechanism variables, evidence grade and falsifier rows.",
           "evidence": [
             "domains/c1-boundary-rewriting/longevity-evidence/docs/lev-source-cards.md",
-            "domains/c1-boundary-rewriting/longevity-evidence/docs/life-path-data-source-cards.md"
+            "domains/c1-boundary-rewriting/longevity-evidence/docs/life-path-data-source-cards.md",
+            "docs/reference/human-infra-domain-claim-evidence-matrix.json",
+            "tools/audit_human_infra_domain_claim_evidence_matrix.py"
           ],
           "missingEvidence": [
-            "Equivalent Source Cards for all priority C1/C2 domains.",
-            "Domain-level Claim-Evidence Matrices for cellular reprogramming, future waiting, neuro-continuity and core biological maintenance domains."
+            "Endpoint-, population-, uncertainty- and transfer-boundary-level Source Cards for each domain matrix seed row.",
+            "Domain-level Claim-Evidence Matrix coverage beyond the current priority C1/C2 set."
           ],
-          "nextAction": "Prioritize C1/C2 domains that most affect subject-continuity boundary rewriting and source maintenance.",
+          "nextAction": "Split the 26 seed domain rows into exact Source Cards for claims, endpoints, populations, uncertainty and transfer boundaries.",
           "blocks100Percent": true
         },
         {
@@ -174,13 +177,15 @@
           "requirement": "Claims that affect quantitative reasoning define input variables, mediators, state variables, risk variables and outputs.",
           "evidence": [
             "docs/reference/life-path-prediction-model-contract.md",
-            "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_calibration_readiness.json"
+            "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_calibration_readiness.json",
+            "docs/reference/human-infra-domain-falsifier-coverage.json",
+            "docs/reference/human-infra-domain-claim-evidence-matrix.json"
           ],
           "missingEvidence": [
-            "Reusable variable template applied across major domains.",
-            "Domain-specific variable tables for all major C1/C2 claims."
+            "Reusable variable template promoted from the current domain falsifier register into field-level domain Source Cards.",
+            "Domain-specific variable tables for C2 long-tail claims beyond the current priority set."
           ],
-          "nextAction": "Promote the life-path variable pattern into a reusable research-domain variable contract.",
+          "nextAction": "Use the domain matrix as the join point, then expand each row into claim-specific variable cards and endpoint contracts.",
           "blocks100Percent": true
         },
         {
@@ -206,9 +211,11 @@
             "docs/reference/human-infra-page-claim-consistency.json",
             "docs/reference/human-infra-paper-claim-register.json",
             "docs/reference/human-infra-domain-falsifier-coverage.json",
+            "docs/reference/human-infra-domain-claim-evidence-matrix.json",
             "docs/reference/human-infra-falsifier-source-card-backfill.json",
             "docs/reference/human-infra-falsifier-source-card-extraction.json",
             "tools/audit_human_infra_domain_falsifier_coverage.py",
+            "tools/audit_human_infra_domain_claim_evidence_matrix.py",
             "tools/audit_human_infra_falsifier_source_card_backfill.py",
             "tools/audit_human_infra_falsifier_source_card_extraction.py",
             "tools/audit_human_infra_page_claim_consistency.py",
@@ -379,7 +386,7 @@
     },
     {
       "priority": 3,
-      "item": "Create C1/C2 domain-level Claim-Evidence Matrix and variable contract templates.",
+      "item": "Extend the domain Claim-Evidence Matrix beyond the current priority domains and promote seed rows into reusable variable contract templates.",
       "unblocks": [
         "RESEARCH-G3-c1-c2-source-cards",
         "RESEARCH-G4-variable-mechanism-contracts"

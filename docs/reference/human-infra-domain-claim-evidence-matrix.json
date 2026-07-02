@@ -1,0 +1,306 @@
+{
+  "schemaVersion": "human-infra.domain-claim-evidence-matrix.v1",
+  "matrixId": "human-infra-domain-claim-evidence-matrix-2026-07-02",
+  "status": "active-domain-claim-evidence-matrix-gate",
+  "purpose": "Bind the current C1 and priority C2 research-domain claims to Source Card IDs, variable-contract sources, falsifier sources, model-use boundaries and next extraction actions.",
+  "sourceOfTruth": {
+    "domainFalsifierRegister": "docs/reference/human-infra-domain-falsifier-coverage.json",
+    "sourceCardBackfillRegister": "docs/reference/human-infra-falsifier-source-card-backfill.json",
+    "sourceCardExtractionRegister": "docs/reference/human-infra-falsifier-source-card-extraction.json",
+    "sourceCardSystem": "docs/reference/source-card-system.md",
+    "maturityGapRegister": "docs/reference/human-infra-maturity-gap-register.json"
+  },
+  "scope": {
+    "coverageLevel": "domain-claim-evidence-matrix-seed-v0.1",
+    "coveredDomainCount": 26,
+    "selectionRule": "Cover all domains currently present in the domain falsifier register and source-card backfill domainCoverage map.",
+    "currentLimitations": [
+      "This is a seed join matrix, not a full per-paper extraction table.",
+      "Domain strong claims, model positions, variables and falsifiers remain sourced from the domain falsifier register to avoid duplicate truth.",
+      "Source Card IDs identify available source anchors; they do not prove domain claims, calibrated prediction, individual advice or intervention ranking.",
+      "The next maturity step is field-level domain Source Cards for exact claim, endpoint, population, uncertainty and transfer-boundary rows."
+    ]
+  },
+  "rowDefaults": {
+    "claimSource": "docs/reference/human-infra-domain-falsifier-coverage.json#entries[].strongClaim",
+    "variableContractSource": "docs/reference/human-infra-domain-falsifier-coverage.json#entries[].variables",
+    "modelPositionSource": "docs/reference/human-infra-domain-falsifier-coverage.json#entries[].modelPosition",
+    "falsifierSource": "docs/reference/human-infra-domain-falsifier-coverage.json#entries[].falsifiers",
+    "evidenceBoundary": "Source cards support domain framing, downgrade discipline and variable discovery; they do not prove intervention efficacy, individual advice, calibrated prediction or effective immortality.",
+    "modelUseAllowed": [
+      "qualitative-domain-mapping",
+      "variable-candidate-mapping",
+      "falsifier-and-downgrade-routing"
+    ],
+    "modelUseBlocked": [
+      "calibrated-prediction",
+      "individual-recommendation",
+      "intervention-ranking",
+      "individual-death-date-output"
+    ],
+    "nextExtractionStep": "Split this seed row into field-level domain Source Cards covering exact claim, variable, endpoint, population, uncertainty and transfer-boundary rows."
+  },
+  "domainClaimRows": [
+    {
+      "domainClaimId": "HIDOM-CL001",
+      "domainId": "future-waiting",
+      "sourceCardIds": [
+        "SA-GPS-RELATIVITY-2003",
+        "SA-NASA-BLACK-HOLES",
+        "SA-KAPLAN-MEIER-1958"
+      ]
+    },
+    {
+      "domainClaimId": "HIDOM-CL002",
+      "domainId": "longevity-evidence",
+      "sourceCardIds": [
+        "SA-HALLMARKS-AGING-2023",
+        "SA-TARGET-TRIAL-2022",
+        "SA-TRIPOD-AI-2024",
+        "SA-KAPLAN-MEIER-1958",
+        "SA-COX-1972"
+      ]
+    },
+    {
+      "domainClaimId": "HIDOM-CL003",
+      "domainId": "biostasis-cryopreservation",
+      "sourceCardIds": [
+        "SA-BRAIN-PRESERVATION-2024",
+        "SA-EXTENDED-MIND-1998",
+        "SA-CAPABILITY-APPROACH"
+      ]
+    },
+    {
+      "domainClaimId": "HIDOM-CL004",
+      "domainId": "brain-preservation-connectomics-emulation",
+      "sourceCardIds": [
+        "SA-BRAIN-PRESERVATION-2024",
+        "SA-EXTENDED-MIND-1998",
+        "SA-DYNAMIC-DIGITAL-TWIN-2022"
+      ]
+    },
+    {
+      "domainClaimId": "HIDOM-CL005",
+      "domainId": "disembodied-cns",
+      "sourceCardIds": [
+        "SA-DYNAMIC-DIGITAL-TWIN-2022",
+        "SA-BRAIN-PRESERVATION-2024",
+        "SA-WHO-CONSTITUTION"
+      ]
+    },
+    {
+      "domainClaimId": "HIDOM-CL006",
+      "domainId": "memory-editing",
+      "sourceCardIds": [
+        "SA-EXTENDED-MIND-1998",
+        "SA-NIST-AI-RMF-2023",
+        "SA-CAPABILITY-APPROACH"
+      ]
+    },
+    {
+      "domainClaimId": "HIDOM-CL007",
+      "domainId": "cellular-reprogramming",
+      "sourceCardIds": [
+        "SA-YAMANAKA-IPS-2006",
+        "SA-PARTIAL-REPROGRAMMING-2016",
+        "SA-HALLMARKS-CANCER-2022"
+      ]
+    },
+    {
+      "domainClaimId": "HIDOM-CL008",
+      "domainId": "regenerative-medicine",
+      "sourceCardIds": [
+        "SA-HALLMARKS-AGING-2023",
+        "SA-PARTIAL-REPROGRAMMING-2016",
+        "SA-TARGET-TRIAL-2022"
+      ]
+    },
+    {
+      "domainClaimId": "HIDOM-CL009",
+      "domainId": "cancer-screening-early-detection-continuity",
+      "sourceCardIds": [
+        "SA-HALLMARKS-CANCER-2022",
+        "SA-NCI-SCREENING-BIAS",
+        "SA-TARGET-TRIAL-2022"
+      ]
+    },
+    {
+      "domainClaimId": "HIDOM-CL010",
+      "domainId": "immune-maintenance",
+      "sourceCardIds": [
+        "SA-IMMUNOSENESCENCE-2024",
+        "SA-HALLMARKS-AGING-2023",
+        "SA-TARGET-TRIAL-2022"
+      ]
+    },
+    {
+      "domainClaimId": "HIDOM-CL011",
+      "domainId": "neuro-continuity",
+      "sourceCardIds": [
+        "SA-DYNAMIC-DIGITAL-TWIN-2022",
+        "SA-EXTENDED-MIND-1998",
+        "SA-WHO-CONSTITUTION"
+      ]
+    },
+    {
+      "domainClaimId": "HIDOM-CL012",
+      "domainId": "mitochondrial-bioenergetics",
+      "sourceCardIds": [
+        "SA-HALLMARKS-AGING-2023",
+        "SA-HALLMARKS-AGING-2013",
+        "SA-WHO-CONSTITUTION"
+      ]
+    },
+    {
+      "domainClaimId": "HIDOM-CL013",
+      "domainId": "genomic-stability-dna-repair",
+      "sourceCardIds": [
+        "SA-HALLMARKS-AGING-2023",
+        "SA-HALLMARKS-AGING-2013",
+        "SA-HALLMARKS-CANCER-2022"
+      ]
+    },
+    {
+      "domainClaimId": "HIDOM-CL014",
+      "domainId": "biological-age-clocks-biomarker-validation",
+      "sourceCardIds": [
+        "SA-GRIMAGE-2019",
+        "SA-TRIPOD-AI-2024",
+        "SA-TARGET-TRIAL-2022"
+      ]
+    },
+    {
+      "domainClaimId": "HIDOM-CL015",
+      "domainId": "proteostasis-autophagy",
+      "sourceCardIds": [
+        "SA-HALLMARKS-AGING-2023",
+        "SA-HALLMARKS-AGING-2013",
+        "SA-TARGET-TRIAL-2022"
+      ]
+    },
+    {
+      "domainClaimId": "HIDOM-CL016",
+      "domainId": "cellular-senescence-clearance",
+      "sourceCardIds": [
+        "SA-HALLMARKS-AGING-2023",
+        "SA-HALLMARKS-AGING-2013",
+        "SA-HALLMARKS-CANCER-2022"
+      ]
+    },
+    {
+      "domainClaimId": "HIDOM-CL017",
+      "domainId": "extracellular-matrix-glycation",
+      "sourceCardIds": [
+        "SA-HALLMARKS-AGING-2023",
+        "SA-WHO-CONSTITUTION",
+        "SA-TARGET-TRIAL-2022"
+      ]
+    },
+    {
+      "domainClaimId": "HIDOM-CL018",
+      "domainId": "stem-cell-reserve-renewal",
+      "sourceCardIds": [
+        "SA-HALLMARKS-AGING-2023",
+        "SA-HALLMARKS-AGING-2013",
+        "SA-HALLMARKS-CANCER-2022"
+      ]
+    },
+    {
+      "domainClaimId": "HIDOM-CL019",
+      "domainId": "microbiome-ecology",
+      "sourceCardIds": [
+        "SA-HALLMARKS-AGING-2023",
+        "SA-TARGET-TRIAL-2022",
+        "SA-WHO-CONSTITUTION"
+      ]
+    },
+    {
+      "domainClaimId": "HIDOM-CL020",
+      "domainId": "cardiovascular-resilience",
+      "sourceCardIds": [
+        "SA-COX-1972",
+        "SA-KAPLAN-MEIER-1958",
+        "SA-TARGET-TRIAL-2022",
+        "SA-HALLMARKS-AGING-2023"
+      ]
+    },
+    {
+      "domainClaimId": "HIDOM-CL021",
+      "domainId": "musculoskeletal-integrity",
+      "sourceCardIds": [
+        "SA-HALLMARKS-AGING-2023",
+        "SA-WHO-CONSTITUTION",
+        "SA-TARGET-TRIAL-2022"
+      ]
+    },
+    {
+      "domainClaimId": "HIDOM-CL022",
+      "domainId": "nutrition-metabolic-health",
+      "sourceCardIds": [
+        "SA-HALLMARKS-AGING-2023",
+        "SA-TARGET-TRIAL-2022",
+        "SA-WHO-CONSTITUTION"
+      ]
+    },
+    {
+      "domainClaimId": "HIDOM-CL023",
+      "domainId": "renal-hepatic-clearance",
+      "sourceCardIds": [
+        "SA-HALLMARKS-AGING-2023",
+        "SA-COX-1972",
+        "SA-TARGET-TRIAL-2022"
+      ]
+    },
+    {
+      "domainClaimId": "HIDOM-CL024",
+      "domainId": "respiratory-oxygenation",
+      "sourceCardIds": [
+        "SA-WHO-CONSTITUTION",
+        "SA-COX-1972",
+        "SA-TARGET-TRIAL-2022"
+      ]
+    },
+    {
+      "domainClaimId": "HIDOM-CL025",
+      "domainId": "blood-oxygen-hemostasis",
+      "sourceCardIds": [
+        "SA-COX-1972",
+        "SA-TARGET-TRIAL-2022",
+        "SA-WHO-CONSTITUTION"
+      ]
+    },
+    {
+      "domainClaimId": "HIDOM-CL026",
+      "domainId": "endocrine-hormonal-regulation",
+      "sourceCardIds": [
+        "SA-HALLMARKS-AGING-2023",
+        "SA-TARGET-TRIAL-2022",
+        "SA-WHO-CONSTITUTION"
+      ]
+    }
+  ],
+  "coverageSummary": {
+    "coveredDomainCount": 26,
+    "coveredSourceAnchorCount": 20,
+    "domainRegisterStatus": "active-priority-domain-gate",
+    "sourceCardExtractionStatus": "active-field-source-card-extraction-gate",
+    "matrixCompletionState": "seed-join-matrix-not-field-complete",
+    "remainingWork": [
+      "Create exact field-level Source Cards for each domain claim and endpoint.",
+      "Split population, uncertainty, effect-size and transfer-boundary rows by source.",
+      "Extend beyond the current priority domain set after C1/C2 seed rows are field-extracted."
+    ]
+  },
+  "nonClaims": [
+    "This matrix does not prove that any intervention extends lifespan, healthspan, effective time or subject continuity.",
+    "This matrix does not authorize individual prediction, medical advice, intervention selection or intervention ranking.",
+    "This matrix does not validate external literature accuracy; it only checks local source-anchor routing and downgrade discipline.",
+    "This matrix does not complete the 100% research framework; it creates the current domain-level join gate."
+  ],
+  "indexRequirements": [
+    "README.md",
+    "docs/reference/README.md",
+    "docs/reference/human-infra-maturity-roadmap.md",
+    "tools/README.md"
+  ]
+}

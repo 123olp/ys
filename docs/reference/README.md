@@ -18,6 +18,7 @@ Current documents:
 - `human-infra-page-claim-consistency.json`: machine-readable page-level Claim ID and prohibited-use consistency gate for README, Web homepage, paper pages, model docs, and the maturity roadmap.
 - `human-infra-paper-claim-register.json`: machine-readable arXiv-style paper claim register for paper-specific strong claims, core Claim IDs, falsifiers, downgrade actions, source data paths, and prohibited-use boundaries.
 - `human-infra-domain-falsifier-coverage.json`: machine-readable C1 and priority C2 domain-level falsifier, downgrade-condition, variable-interface and prohibited-use coverage gate.
+- `human-infra-domain-claim-evidence-matrix.json`: machine-readable domain-level Claim-Evidence Matrix seed that joins the current 26 priority research domains to claim sources, variable-contract sources, falsifier sources, extracted Source Card IDs and next extraction steps.
 - `human-infra-falsifier-source-card-backfill.json`: machine-readable v0.1 Source Card anchor backfill for current paper strong-claim falsifiers and C1/C2 priority-domain falsifier rows.
 - `human-infra-falsifier-source-card-extraction.json`: machine-readable field-level Source Card extraction register for all current falsifier source anchors.
 - `human-infra-maturity-gap-register.json`: machine-readable 100% maturity gap register for value clarity, research-framework and quantitative-model gates.

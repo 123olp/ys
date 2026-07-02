@@ -172,6 +172,7 @@ docs/
 │   ├── ethics-and-safety-boundaries.md
 │   ├── glossary.md
 │   ├── human-infra-core-claim-evidence-matrix.md
+│   ├── human-infra-domain-claim-evidence-matrix.json
 │   ├── human-infra-falsifier-source-card-backfill.json
 │   ├── human-infra-falsifier-source-card-extraction.json
 │   ├── human-infra-maturity-roadmap.md
@@ -352,6 +353,7 @@ docs/
 - `reference/research-model-visualization-toolkit.md`：沉淀科研论文阅读、文献脊梁、模型工具、可视化标准和 Human Infra 定量页面实现路线。
 - `reference/source-card-system.md`：定义论文、书籍、工具、案例、标准和数据集进入项目之前的资料卡片制度。
 - `reference/human-infra-falsifier-source-card-backfill.json`：把当前论文强主张和 C1/C2 优先域反证回填到 Source Card 来源锚点、证据角色、可用范围和外推边界。
+- `reference/human-infra-domain-claim-evidence-matrix.json`：把当前 26 个优先研究域 join 到域强主张来源、变量契约来源、反证来源、字段级 Source Card ID 和下一步抽取动作。
 - `reference/human-infra-falsifier-source-card-extraction.json`：把第一批高杠杆来源锚点抽取为字段级 Source Cards，绑定来源身份、域、论文 claim、模型位置、反证用途和迁移边界。
 - `reference/domain-map.md`：定义根项目与子域的边界、迁移切片、主动不做和验证点。
 - `reference/ethics-and-safety-boundaries.md`：定义医疗、组织、去具身中枢、记忆编辑和数据证据边界。
