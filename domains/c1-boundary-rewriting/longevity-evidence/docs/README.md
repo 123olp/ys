@@ -21,6 +21,7 @@ This directory stores the Longevity Evidence domain model, data source plans, co
 - `../data/manual/life_path_nhats_acquisition_readiness.json`: machine-readable NHATS acquisition-readiness contract that keeps official-source refresh, registration, file-tier, Colectica, survey-design, endpoint, disclosure-control, AI-boundary and storage gates auditable before any extraction work.
 - `../data/manual/life_path_nhats_file_tier_table.json`: machine-readable NHATS R13/R14 file-tier table for public annual files, clock images, sensitive SP/OP files, seasonality weights, method-document dependencies and blocked extraction boundaries.
 - `../data/manual/life_path_nhats_first_estimand_protocol.json`: machine-readable first NHATS estimand protocol that pre-registers the R13/R14 aggregate functional-survival question, target population, time zero, outcome, predictor families, censoring, survey design and aggregate-only output boundary.
+- `../data/manual/life_path_nhats_variable_confirmation_matrix.json`: machine-readable NHATS variable-confirmation matrix that records official source facts, candidate field patterns, variable groups, cohort-flow template, readiness gates and blocked extraction boundaries.
 - `mvp-roadmap.md`: first 0-6 week product path.
 - `collection-run-2026-05-29.md`: first MVP collection run.
 - `collection-run-2026-05-29-expanded.md`: expanded core data collection run.

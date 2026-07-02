@@ -1,0 +1,338 @@
+{
+  "schemaVersion": "human-infra.life-path-nhats-variable-confirmation-matrix.v1",
+  "sourceId": "nhats",
+  "sourceName": "National Health and Aging Trends Study",
+  "matrixId": "nhats-r13-r14-variable-confirmation-matrix-draft",
+  "protocolId": "nhats-r13-r14-functional-survival-estimand-protocol-draft",
+  "manifestId": "nhats-r1-r14-effective-time-manifest-draft",
+  "variableDictionaryId": "nhats-life-path-variable-dictionary-draft",
+  "reviewDate": "2026-07-02",
+  "reviewer": "tradecatlabs",
+  "status": "candidate-variable-confirmation-only-cannot-extract",
+  "purpose": "Record the exact evidence still required before NHATS R13/R14 variables can be used for the first aggregate functional-survival estimand.",
+  "currentDecision": {
+    "exactVariablesReady": false,
+    "cohortFlowReady": false,
+    "endpointRoutingReady": false,
+    "surveyDesignReady": false,
+    "missingCodesReady": false,
+    "extractionScriptAllowed": false,
+    "downloadAllowed": false,
+    "calibrationAllowed": false,
+    "individualPredictionAllowed": false,
+    "reason": "Official documentation provides variable naming conventions, candidate examples, survey-design concepts and source locations, but exact round-specific variable names, value labels, missing codes, file tiers and cohort-flow routing still require Colectica/codebook confirmation."
+  },
+  "officialSourceFacts": [
+    {
+      "id": "colectica-metadata-truth-source",
+      "sourceUrl": "https://www.nhats.org/data-access/cross-year-search",
+      "fact": "Cross-year metadata search is provided through Colectica and includes item numbers, variable names, labels, values, value labels and question text after separate registration.",
+      "modelConsequence": "Exact field selection must come from Colectica, codebooks or official crosswalks; prose examples do not authorize extraction."
+    },
+    {
+      "id": "variable-naming-convention",
+      "sourceUrl": "https://nhats.org/sites/default/files/public-documentation/NHATSUserGuideR14_02102026.pdf",
+      "fact": "NHATS public-use variables follow lower-case naming, use content-section prefixes, and use the third character to indicate round for round-specific variables; derived variables include a d marker and flag variables include an fl prefix.",
+      "modelConsequence": "Pattern-resolved names such as w13anfinwgt0 or cg13dwrdimmrc remain candidate names until confirmed against the selected file release."
+    },
+    {
+      "id": "standard-missing-codes",
+      "sourceUrl": "https://nhats.org/sites/default/files/public-documentation/NHATSUserGuideR14_02102026.pdf",
+      "fact": "The User Guide documents standard negative-value missingness codes such as refusal, don't know, inapplicable and missing.",
+      "modelConsequence": "No outcome, predictor, censoring or missingness table may be computed until these codes are mapped for every selected variable."
+    },
+    {
+      "id": "sample-design-weights",
+      "sourceUrl": "https://nhats.org/sites/default/files/public-documentation/NHATSTechnicalPaper55_09042025.pdf",
+      "fact": "NHATS provides analytic weights and design variables, and the methods documentation discusses Taylor series and replicate-weight approaches.",
+      "modelConsequence": "Weighted or design-aware metrics require a preselected analysis weight, strata, cluster/PSU and variance method."
+    },
+    {
+      "id": "conditions-of-use-ai-boundary",
+      "sourceUrl": "https://www.nhats.org/conditions-of-use",
+      "fact": "The NHATS/NSOC Conditions of Use prohibit data sharing with unregistered users and prohibit upload of NHATS/NSOC data to public LLM or AI platforms.",
+      "modelConsequence": "Only public documentation, synthetic examples or aggregate non-disclosive outputs may be used with AI assistance."
+    }
+  ],
+  "roundInstantiationRules": {
+    "baselineRound": 13,
+    "followupRound": 14,
+    "roundPlaceholder": "#",
+    "rule": "Candidate names using # must be materialized separately for R13 and R14, then confirmed against official metadata before use.",
+    "examples": [
+      {
+        "pattern": "w#anfinwgt0",
+        "candidateR13": "w13anfinwgt0",
+        "candidateR14": "w14anfinwgt0",
+        "role": "annual final analysis weight candidate",
+        "confirmationStatus": "candidate-pattern-only"
+      },
+      {
+        "pattern": "w#varunit",
+        "candidateR13": "w13varunit",
+        "candidateR14": "w14varunit",
+        "role": "Taylor series cluster/PSU candidate",
+        "confirmationStatus": "candidate-pattern-only"
+      },
+      {
+        "pattern": "w#varstrat",
+        "candidateR13": "w13varstrat",
+        "candidateR14": "w14varstrat",
+        "role": "Taylor series strata candidate",
+        "confirmationStatus": "candidate-pattern-only"
+      },
+      {
+        "pattern": "fl#spdied",
+        "candidateR13": "fl13spdied",
+        "candidateR14": "fl14spdied",
+        "role": "sample-person deceased/death-boundary flag candidate",
+        "confirmationStatus": "candidate-pattern-only"
+      },
+      {
+        "pattern": "cg#dwrdimmrc",
+        "candidateR13": "cg13dwrdimmrc",
+        "candidateR14": "cg14dwrdimmrc",
+        "role": "immediate word recall derived score candidate",
+        "confirmationStatus": "candidate-pattern-only"
+      },
+      {
+        "pattern": "cg#dwrddlyrc",
+        "candidateR13": "cg13dwrddlyrc",
+        "candidateR14": "cg14dwrddlyrc",
+        "role": "delayed word recall derived score candidate",
+        "confirmationStatus": "candidate-pattern-only"
+      }
+    ]
+  },
+  "candidateVariableGroups": [
+    {
+      "id": "identity_join_route",
+      "modelRole": "unit, join, round and interview-route control",
+      "candidateFields": [
+        "spid",
+        "round identifier",
+        "cohort flag",
+        "interview status",
+        "sample-person interview route",
+        "proxy route indicator"
+      ],
+      "requiredEvidenceBeforeUse": [
+        "exact selected file family",
+        "exact field name",
+        "value labels",
+        "round coverage",
+        "join-key uniqueness check"
+      ],
+      "currentStatus": "candidate-only"
+    },
+    {
+      "id": "survey_design",
+      "modelRole": "weighted descriptive and model-development diagnostics",
+      "candidateFields": [
+        "w13anfinwgt0",
+        "w13varunit",
+        "w13varstrat",
+        "w14anfinwgt0",
+        "w14varunit",
+        "w14varstrat",
+        "replicate weights if selected"
+      ],
+      "requiredEvidenceBeforeUse": [
+        "analysis weight selected for R13 baseline cohort",
+        "Taylor or replicate-weight variance method selected",
+        "strata and cluster variables confirmed",
+        "population inference boundary documented"
+      ],
+      "currentStatus": "candidate-pattern-only"
+    },
+    {
+      "id": "endpoint_censoring",
+      "modelRole": "R14 functional-survival state and censoring route",
+      "candidateFields": [
+        "fl14spdied",
+        "R14 interview status",
+        "known alive but not interviewed route",
+        "proxy interview route",
+        "residential-care route",
+        "Last Month of Life route if approved"
+      ],
+      "requiredEvidenceBeforeUse": [
+        "death indicator confirmed",
+        "nonresponse categories confirmed",
+        "proxy route categories confirmed",
+        "residential-care categories confirmed",
+        "decedent/LML access tier confirmed"
+      ],
+      "currentStatus": "candidate-only"
+    },
+    {
+      "id": "baseline_function",
+      "modelRole": "R13 action-capacity predictor family and outcome component candidate",
+      "candidateFields": [
+        "self-care activities",
+        "mobility activities",
+        "household activities",
+        "medical-care activities",
+        "participation in valued activities",
+        "help, difficulty, unmet-need and accommodation indicators"
+      ],
+      "requiredEvidenceBeforeUse": [
+        "exact variables by activity",
+        "directionality",
+        "skip logic",
+        "missing codes",
+        "aggregation rule frozen before outcome inspection"
+      ],
+      "currentStatus": "family-only"
+    },
+    {
+      "id": "baseline_cognition_attention",
+      "modelRole": "R13 cognition, memory and measurement-route predictor family",
+      "candidateFields": [
+        "cg13dwrdimmrc",
+        "cg13dwrddlyrc",
+        "orientation items",
+        "clock drawing route",
+        "proxy cognition route"
+      ],
+      "requiredEvidenceBeforeUse": [
+        "exact direct-test fields",
+        "proxy-test substitution rule",
+        "clock image/public-file boundary",
+        "score directionality",
+        "missing and non-administered codes"
+      ],
+      "currentStatus": "candidate-pattern-only"
+    },
+    {
+      "id": "baseline_support_environment",
+      "modelRole": "R13 resources, support, home environment and access predictor families",
+      "candidateFields": [
+        "household members",
+        "helper and caregiving context",
+        "insurance and economic context",
+        "home environment",
+        "transportation and technology access"
+      ],
+      "requiredEvidenceBeforeUse": [
+        "public versus sensitive field tier",
+        "exact variables",
+        "round availability",
+        "small-cell disclosure risk",
+        "pre-outcome inclusion rule"
+      ],
+      "currentStatus": "family-only"
+    }
+  ],
+  "cohortFlowTemplate": [
+    {
+      "step": "source-and-registration",
+      "requiredEvidence": "NHATS registration and public-use conditions confirmed outside the public repository.",
+      "output": "source_refresh_record",
+      "currentStatus": "missing"
+    },
+    {
+      "step": "canonical-files",
+      "requiredEvidence": "One canonical R13 public annual file family and one canonical R14 follow-up file family selected.",
+      "output": "file_selection_table",
+      "currentStatus": "missing"
+    },
+    {
+      "step": "baseline-eligible-sample",
+      "requiredEvidence": "R13 sample-person eligibility, interview route, residence route and design variables confirmed.",
+      "output": "r13_eligible_count",
+      "currentStatus": "missing"
+    },
+    {
+      "step": "followup-linkage",
+      "requiredEvidence": "R13-to-R14 join key and follow-up status categories confirmed.",
+      "output": "r13_to_r14_linkage_count",
+      "currentStatus": "missing"
+    },
+    {
+      "step": "endpoint-routing",
+      "requiredEvidence": "R14 death, alive/interviewed, known-alive-not-interviewed, proxy, residential-care, refusal/nonresponse and not-classifiable routes mapped.",
+      "output": "functional_survival_state_counts",
+      "currentStatus": "missing"
+    },
+    {
+      "step": "survey-design-check",
+      "requiredEvidence": "Weight, strata, cluster/PSU and variance method fixed before any weighted metric.",
+      "output": "survey_design_ready_flag",
+      "currentStatus": "missing"
+    },
+    {
+      "step": "disclosure-control",
+      "requiredEvidence": "Small-cell suppression and aggregate-only export check implemented.",
+      "output": "safe_aggregate_export",
+      "currentStatus": "missing"
+    }
+  ],
+  "readinessGates": [
+    {
+      "id": "colectica-confirmation",
+      "requiredEvidence": "Exact variable names, labels, value labels, missing codes and question text confirmed from Colectica/codebook.",
+      "status": "missing",
+      "blocksExtraction": true
+    },
+    {
+      "id": "round-specific-materialization",
+      "requiredEvidence": "Every # placeholder candidate materialized and checked for R13 and R14.",
+      "status": "missing",
+      "blocksExtraction": true
+    },
+    {
+      "id": "cohort-flow-ready",
+      "requiredEvidence": "Cohort-flow table with baseline, follow-up, endpoint, censoring and disclosure rows complete.",
+      "status": "missing",
+      "blocksExtraction": true
+    },
+    {
+      "id": "survey-design-ready",
+      "requiredEvidence": "Analysis weight, strata, cluster/PSU and variance method selected.",
+      "status": "missing",
+      "blocksExtraction": true
+    },
+    {
+      "id": "missingness-map-ready",
+      "requiredEvidence": "Negative codes, skip logic, proxy route and not-classifiable categories mapped for all selected fields.",
+      "status": "missing",
+      "blocksExtraction": true
+    },
+    {
+      "id": "ai-and-disclosure-safe",
+      "requiredEvidence": "No public AI upload boundary and small-cell suppression validator are operationalized.",
+      "status": "missing",
+      "blocksExtraction": true
+    }
+  ],
+  "gateSummary": {
+    "requiredGateCount": 6,
+    "readyGateCount": 0,
+    "missingGateCount": 6,
+    "blockingGateCount": 6
+  },
+  "prohibitedActions": [
+    "download NHATS files from this matrix",
+    "write extraction script from candidate names",
+    "treat pattern-resolved names as confirmed variables",
+    "select predictors after seeing R14 outcomes",
+    "compute weighted metrics before survey design is fixed",
+    "upload raw or row-level NHATS data to public AI systems",
+    "emit row-level records, individual death dates, medical advice or personal longevity rankings"
+  ],
+  "nextWork": [
+    "Confirm R13/R14 exact variable names and value labels through Colectica or official codebooks.",
+    "Fill a cohort-flow table with official route categories before any extraction script.",
+    "Select the survey-design variance method and analysis weight for the estimand.",
+    "Implement aggregate-only disclosure-control checks before derived outputs leave the workspace."
+  ],
+  "sourceTrace": [
+    "https://www.nhats.org/data-access/cross-year-search",
+    "https://nhats.org/sites/default/files/public-documentation/NHATSUserGuideR14_02102026.pdf",
+    "https://nhats.org/sites/default/files/public-documentation/NHATSTechnicalPaper55_09042025.pdf",
+    "https://www.nhats.org/conditions-of-use",
+    "https://nhats.org/data-access/nhats/13",
+    "https://nhats.org/data-access/nhats/14"
+  ]
+}

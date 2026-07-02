@@ -4,6 +4,7 @@ All notable repository structure changes are recorded here.
 
 ## 2026-07-02
 
+- Added a machine-readable NHATS variable-confirmation matrix and audit coverage, recording official source facts, R13/R14 candidate field patterns, variable groups, cohort-flow template, readiness gates and blocked extraction boundaries before Colectica/codebook confirmation.
 - Added a machine-readable NHATS first-estimand protocol and audit coverage, pre-registering the R13/R14 aggregate functional-survival question, target population, time zero, outcome, predictor families, censoring, survey-design gates and aggregate-only output boundary before any download, extraction, calibration or individual prediction.
 - Added a machine-readable NHATS R13/R14 file-tier table and audit coverage, mapping public annual files, clock drawing images, sensitive SP/OP files, seasonality weights, method-document dependencies and blocked extraction boundaries before any real download or script work.
 - Added a machine-readable NHATS acquisition-readiness contract and audit coverage, separating official-source refresh, registration, file-tier, Colectica, survey-design, endpoint, disclosure-control, AI-boundary and storage gates from the prose extraction manifest.

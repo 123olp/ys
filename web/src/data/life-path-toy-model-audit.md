@@ -3,7 +3,7 @@
 - Overall status: `PASS`
 - Model path: `web/src/data/life-path-toy-model.json`
 - Model SHA-256: `a4c92209d79d20579bf1f575d5ebf07ffe5be9ccaf6bf3f3eef08efa287b5377`
-- Generated at: `2026-07-02T02:34:10.811615+00:00`
+- Generated at: `2026-07-02T02:44:01.742074+00:00`
 
 ## Checks
 
@@ -120,6 +120,19 @@
 | `nhats-first-estimand-protocol-gate-summary` | `PASS` | gate summary must keep every estimand gate blocking until ready evidence exists |
 | `nhats-first-estimand-protocol-source-trace` | `PASS` | source trace must include R13/R14 files, Cross-Year Search, methods documentation and Conditions of Use |
 | `nhats-first-estimand-protocol-next-work` | `PASS` | next work must point to canonical files, Colectica/codebooks, cohort flow and disclosure control |
+| `nhats-variable-confirmation-matrix-exists` | `PASS` | domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_variable_confirmation_matrix.json |
+| `nhats-variable-confirmation-matrix-schema` | `PASS` | schemaVersion='human-infra.life-path-nhats-variable-confirmation-matrix.v1' |
+| `nhats-variable-confirmation-matrix-identity` | `PASS` | matrix must bind NHATS source, first estimand protocol, manifest and variable dictionary |
+| `nhats-variable-confirmation-matrix-current-decision` | `PASS` | matrix must block exact-variable readiness, cohort flow, endpoint routing, survey design, download, extraction, calibration and individual prediction |
+| `nhats-variable-confirmation-matrix-source-facts` | `PASS` | missing_fact_ids=[] |
+| `nhats-variable-confirmation-matrix-round-rules` | `PASS` | round instantiation must bind R13/R14, # placeholder, candidate R13/R14 examples and candidate-pattern-only status |
+| `nhats-variable-confirmation-matrix-variable-groups` | `PASS` | missing_group_ids=[] |
+| `nhats-variable-confirmation-matrix-cohort-flow` | `PASS` | missing_steps=[] |
+| `nhats-variable-confirmation-matrix-readiness-gates` | `PASS` | missing_gate_ids=[] |
+| `nhats-variable-confirmation-matrix-gate-summary` | `PASS` | gate summary must keep every variable-confirmation gate missing and blocking |
+| `nhats-variable-confirmation-matrix-prohibited-actions` | `PASS` | matrix must prohibit download, extraction scripts, unconfirmed pattern names, outcome-peeking, public AI upload and individual outputs |
+| `nhats-variable-confirmation-matrix-next-work` | `PASS` | next work must point to Colectica, cohort flow, survey design and disclosure control |
+| `nhats-variable-confirmation-matrix-source-trace` | `PASS` | source trace must include Cross-Year Search, User Guide, Technical Paper 55, Conditions of Use and R13/R14 file pages |
 | `sensitivity-analysis-exists` | `PASS` | web/src/data/life-path-sensitivity-analysis.json |
 | `sensitivity-schema-version` | `PASS` | schemaVersion='human-infra.life-path-sensitivity.v1' |
 | `sensitivity-source-model-hash` | `PASS` | sensitivity output must point back to the generated model path and sha256 |
@@ -192,10 +205,17 @@
 - First estimand protocol status: `PASS`
 - Boundary: the first estimand protocol pre-registers the R13/R14 aggregate functional-survival question, time-zero, outcome, censoring, survey-design and output boundaries, but it still blocks data download, extraction, calibration, validation and individual prediction.
 
+## NHATS Variable Confirmation Matrix
+
+- Variable confirmation matrix path: `domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_variable_confirmation_matrix.json`
+- Variable confirmation matrix SHA-256: `e6a459ac8560a5a40d29a0704ae3a0c9c3fa3a789663936b2f58cdcc899d33d6`
+- Variable confirmation matrix status: `PASS`
+- Boundary: the variable confirmation matrix records official source facts, candidate field patterns, variable groups and cohort-flow gates, but it still blocks data download, extraction scripts, unconfirmed pattern-derived variables, calibration and individual prediction.
+
 ## Sensitivity Analysis
 
 - Sensitivity path: `web/src/data/life-path-sensitivity-analysis.json`
-- Sensitivity SHA-256: `a9fbcb12c1b1690106bae5215ececab16f3d49c9c47c7a0a64637b6cd75e6b7e`
+- Sensitivity SHA-256: `23db0de266e11164bb1df1a13cff8f8ed874b6e99847d6e83e3e976be723a29e`
 - Sensitivity status: `PASS`
 - Boundary: sensitivity analysis is synthetic one-factor-at-a-time stress testing; it does not prove empirical parameter values, causal effects, calibrated prediction, or individual usefulness.
 

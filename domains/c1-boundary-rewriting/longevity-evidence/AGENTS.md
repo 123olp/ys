@@ -73,6 +73,7 @@ longevity-evidence/
 │   │   ├── life_path_nhats_file_tier_table.json
 │   │   ├── life_path_nhats_acquisition_readiness.json
 │   │   ├── life_path_nhats_first_estimand_protocol.json
+│   │   ├── life_path_nhats_variable_confirmation_matrix.json
 │   │   └── life_path_toy_model_scenarios.json
 │   ├── processed/
 │   └── raw/
@@ -132,13 +133,14 @@ longevity-evidence/
 - `data/manual/life_path_nhats_acquisition_readiness.json`：NHATS acquisition readiness 机器契约，记录官方来源刷新、注册状态、文件层级、Colectica 变量确认、round window、survey design、endpoint、披露控制、AI 边界、存储销毁和禁止动作；它只证明提取前准入条件被机器化审计，当前仍是 `cannot-extract-yet`。
 - `data/manual/life_path_nhats_file_tier_table.json`：NHATS R13/R14 文件层级表，记录 annual public files、clock drawing images、sensitive SP/OP、R13 seasonality weights、官方文件路径、访问层级、候选用途、阻塞门、方法文档依赖和禁止动作；它只证明文件层级已登记，不授权下载或抽取。
 - `data/manual/life_path_nhats_first_estimand_protocol.json`：NHATS 第一版 estimand 协议，预注册 R13/R14 cohort-level functional-survival 研究问题、target population、time zero、outcome、predictor family、censoring/missingness、survey design 和 aggregate-only 输出边界；它只证明研究设计门已固定，不授权下载、抽取、校准、验证或个体预测。
+- `data/manual/life_path_nhats_variable_confirmation_matrix.json`：NHATS 变量确认矩阵，记录官方来源事实、R13/R14 候选字段模式、变量组、cohort-flow 模板、readiness gates 和禁止动作；它只证明字段确认搜索空间已固定，不授权把候选字段当作已确认变量。
 - `data/raw/`：采集脚本保存的原始 API 响应和下载快照。
 - `data/processed/`：采集脚本生成的 JSONL 索引和汇总。
 - `scripts/collect_mvp_data.py`：采集 PubMed、OpenAlex、ClinicalTrials.gov 和 openFDA 标签数据。
 - `scripts/collect_core_data.py`：采集 HAGR、PubChem、openFDA event 和 Drugs@FDA 数据。
 - `scripts/run_life_path_toy_model.py`：读取合成场景并导出 `web/src/data/life-path-toy-model.json`，用于 `/model/` 的最小可运行定量展示。
 - `scripts/run_life_path_sensitivity_analysis.py`：读取合成场景和已导出的 toy model，生成 `web/src/data/life-path-sensitivity-analysis.json`，用于一因素扰动检查场景排序、开放边界和最敏感参数。
-- `scripts/audit_life_path_toy_model.py`：审计生成后的生命路径 toy model、合成敏感性分析、校准预备契约、候选数据源注册表、数据源 Source Cards、Data Card 模板、NHATS Data Card、NHATS 变量字典、NHATS extraction manifest、NHATS acquisition readiness 机器契约、NHATS file-tier table 和 NHATS first estimand protocol，输出机器可读 JSON 和人可读 Markdown，检查模型卡、来源 hash、生存曲线、概率范围、LEV 开放边界、敏感性参数覆盖、校准预备字段、候选数据源治理边界、数据卡准入文档、提取前治理门禁、准入门机器化状态、文件层级覆盖、第一版 estimand 研究设计门和禁止个体死亡日期字段。
+- `scripts/audit_life_path_toy_model.py`：审计生成后的生命路径 toy model、合成敏感性分析、校准预备契约、候选数据源注册表、数据源 Source Cards、Data Card 模板、NHATS Data Card、NHATS 变量字典、NHATS extraction manifest、NHATS acquisition readiness 机器契约、NHATS file-tier table、NHATS first estimand protocol 和 NHATS variable confirmation matrix，输出机器可读 JSON 和人可读 Markdown，检查模型卡、来源 hash、生存曲线、概率范围、LEV 开放边界、敏感性参数覆盖、校准预备字段、候选数据源治理边界、数据卡准入文档、提取前治理门禁、准入门机器化状态、文件层级覆盖、第一版 estimand 研究设计门、变量确认/cohort-flow 门和禁止个体死亡日期字段。
 
 ## 依赖关系
 

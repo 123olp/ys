@@ -1,6 +1,6 @@
 {
   "schemaVersion": "human-infra.life-path-toy-audit.v1",
-  "generatedAt": "2026-07-02T02:34:10.811615+00:00",
+  "generatedAt": "2026-07-02T02:44:01.742074+00:00",
   "modelPath": "web/src/data/life-path-toy-model.json",
   "modelSha256": "a4c92209d79d20579bf1f575d5ebf07ffe5be9ccaf6bf3f3eef08efa287b5377",
   "overallStatus": "PASS",
@@ -561,6 +561,71 @@
       "detail": "next work must point to canonical files, Colectica/codebooks, cohort flow and disclosure control"
     },
     {
+      "id": "nhats-variable-confirmation-matrix-exists",
+      "status": "PASS",
+      "detail": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_variable_confirmation_matrix.json"
+    },
+    {
+      "id": "nhats-variable-confirmation-matrix-schema",
+      "status": "PASS",
+      "detail": "schemaVersion='human-infra.life-path-nhats-variable-confirmation-matrix.v1'"
+    },
+    {
+      "id": "nhats-variable-confirmation-matrix-identity",
+      "status": "PASS",
+      "detail": "matrix must bind NHATS source, first estimand protocol, manifest and variable dictionary"
+    },
+    {
+      "id": "nhats-variable-confirmation-matrix-current-decision",
+      "status": "PASS",
+      "detail": "matrix must block exact-variable readiness, cohort flow, endpoint routing, survey design, download, extraction, calibration and individual prediction"
+    },
+    {
+      "id": "nhats-variable-confirmation-matrix-source-facts",
+      "status": "PASS",
+      "detail": "missing_fact_ids=[]"
+    },
+    {
+      "id": "nhats-variable-confirmation-matrix-round-rules",
+      "status": "PASS",
+      "detail": "round instantiation must bind R13/R14, # placeholder, candidate R13/R14 examples and candidate-pattern-only status"
+    },
+    {
+      "id": "nhats-variable-confirmation-matrix-variable-groups",
+      "status": "PASS",
+      "detail": "missing_group_ids=[]"
+    },
+    {
+      "id": "nhats-variable-confirmation-matrix-cohort-flow",
+      "status": "PASS",
+      "detail": "missing_steps=[]"
+    },
+    {
+      "id": "nhats-variable-confirmation-matrix-readiness-gates",
+      "status": "PASS",
+      "detail": "missing_gate_ids=[]"
+    },
+    {
+      "id": "nhats-variable-confirmation-matrix-gate-summary",
+      "status": "PASS",
+      "detail": "gate summary must keep every variable-confirmation gate missing and blocking"
+    },
+    {
+      "id": "nhats-variable-confirmation-matrix-prohibited-actions",
+      "status": "PASS",
+      "detail": "matrix must prohibit download, extraction scripts, unconfirmed pattern names, outcome-peeking, public AI upload and individual outputs"
+    },
+    {
+      "id": "nhats-variable-confirmation-matrix-next-work",
+      "status": "PASS",
+      "detail": "next work must point to Colectica, cohort flow, survey design and disclosure control"
+    },
+    {
+      "id": "nhats-variable-confirmation-matrix-source-trace",
+      "status": "PASS",
+      "detail": "source trace must include Cross-Year Search, User Guide, Technical Paper 55, Conditions of Use and R13/R14 file pages"
+    },
+    {
       "id": "sensitivity-analysis-exists",
       "status": "PASS",
       "detail": "web/src/data/life-path-sensitivity-analysis.json"
@@ -617,7 +682,7 @@
     }
   ],
   "summary": {
-    "pass": 122,
+    "pass": 135,
     "warn": 0,
     "fail": 0
   },
@@ -1238,9 +1303,86 @@
       "fail": 0
     }
   },
+  "nhatsVariableConfirmationMatrix": {
+    "path": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_variable_confirmation_matrix.json",
+    "sha256": "e6a459ac8560a5a40d29a0704ae3a0c9c3fa3a789663936b2f58cdcc899d33d6",
+    "status": "PASS",
+    "checks": [
+      {
+        "id": "nhats-variable-confirmation-matrix-exists",
+        "status": "PASS",
+        "detail": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_variable_confirmation_matrix.json"
+      },
+      {
+        "id": "nhats-variable-confirmation-matrix-schema",
+        "status": "PASS",
+        "detail": "schemaVersion='human-infra.life-path-nhats-variable-confirmation-matrix.v1'"
+      },
+      {
+        "id": "nhats-variable-confirmation-matrix-identity",
+        "status": "PASS",
+        "detail": "matrix must bind NHATS source, first estimand protocol, manifest and variable dictionary"
+      },
+      {
+        "id": "nhats-variable-confirmation-matrix-current-decision",
+        "status": "PASS",
+        "detail": "matrix must block exact-variable readiness, cohort flow, endpoint routing, survey design, download, extraction, calibration and individual prediction"
+      },
+      {
+        "id": "nhats-variable-confirmation-matrix-source-facts",
+        "status": "PASS",
+        "detail": "missing_fact_ids=[]"
+      },
+      {
+        "id": "nhats-variable-confirmation-matrix-round-rules",
+        "status": "PASS",
+        "detail": "round instantiation must bind R13/R14, # placeholder, candidate R13/R14 examples and candidate-pattern-only status"
+      },
+      {
+        "id": "nhats-variable-confirmation-matrix-variable-groups",
+        "status": "PASS",
+        "detail": "missing_group_ids=[]"
+      },
+      {
+        "id": "nhats-variable-confirmation-matrix-cohort-flow",
+        "status": "PASS",
+        "detail": "missing_steps=[]"
+      },
+      {
+        "id": "nhats-variable-confirmation-matrix-readiness-gates",
+        "status": "PASS",
+        "detail": "missing_gate_ids=[]"
+      },
+      {
+        "id": "nhats-variable-confirmation-matrix-gate-summary",
+        "status": "PASS",
+        "detail": "gate summary must keep every variable-confirmation gate missing and blocking"
+      },
+      {
+        "id": "nhats-variable-confirmation-matrix-prohibited-actions",
+        "status": "PASS",
+        "detail": "matrix must prohibit download, extraction scripts, unconfirmed pattern names, outcome-peeking, public AI upload and individual outputs"
+      },
+      {
+        "id": "nhats-variable-confirmation-matrix-next-work",
+        "status": "PASS",
+        "detail": "next work must point to Colectica, cohort flow, survey design and disclosure control"
+      },
+      {
+        "id": "nhats-variable-confirmation-matrix-source-trace",
+        "status": "PASS",
+        "detail": "source trace must include Cross-Year Search, User Guide, Technical Paper 55, Conditions of Use and R13/R14 file pages"
+      }
+    ],
+    "summary": {
+      "pass": 13,
+      "warn": 0,
+      "fail": 0
+    }
+  },
   "sensitivityAnalysis": {
     "path": "web/src/data/life-path-sensitivity-analysis.json",
-    "sha256": "a9fbcb12c1b1690106bae5215ececab16f3d49c9c47c7a0a64637b6cd75e6b7e",
+    "sha256": "23db0de266e11164bb1df1a13cff8f8ed874b6e99847d6e83e3e976be723a29e",
     "status": "PASS",
     "checks": [
       {

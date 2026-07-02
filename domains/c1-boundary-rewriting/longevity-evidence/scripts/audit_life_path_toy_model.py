@@ -103,6 +103,15 @@ DEFAULT_NHATS_FIRST_ESTIMAND_PROTOCOL = (
     / "manual"
     / "life_path_nhats_first_estimand_protocol.json"
 )
+DEFAULT_NHATS_VARIABLE_CONFIRMATION_MATRIX = (
+    REPO_ROOT
+    / "domains"
+    / "c1-boundary-rewriting"
+    / "longevity-evidence"
+    / "data"
+    / "manual"
+    / "life_path_nhats_variable_confirmation_matrix.json"
+)
 REQUIRED_MODEL_CARD_FIELDS = {
     "modelName",
     "modelClass",
@@ -262,6 +271,38 @@ REQUIRED_NHATS_FIRST_ESTIMAND_GATE_IDS = {
     "survey-design-ready",
     "disclosure-control-ready",
     "governed-storage-ready",
+}
+REQUIRED_NHATS_VARIABLE_SOURCE_FACT_IDS = {
+    "colectica-metadata-truth-source",
+    "variable-naming-convention",
+    "standard-missing-codes",
+    "sample-design-weights",
+    "conditions-of-use-ai-boundary",
+}
+REQUIRED_NHATS_VARIABLE_GROUP_IDS = {
+    "identity_join_route",
+    "survey_design",
+    "endpoint_censoring",
+    "baseline_function",
+    "baseline_cognition_attention",
+    "baseline_support_environment",
+}
+REQUIRED_NHATS_COHORT_FLOW_STEPS = {
+    "source-and-registration",
+    "canonical-files",
+    "baseline-eligible-sample",
+    "followup-linkage",
+    "endpoint-routing",
+    "survey-design-check",
+    "disclosure-control",
+}
+REQUIRED_NHATS_VARIABLE_MATRIX_GATE_IDS = {
+    "colectica-confirmation",
+    "round-specific-materialization",
+    "cohort-flow-ready",
+    "survey-design-ready",
+    "missingness-map-ready",
+    "ai-and-disclosure-safe",
 }
 
 
@@ -1867,6 +1908,265 @@ def audit_nhats_first_estimand_protocol(protocol_path: Path) -> dict[str, Any]:
     }
 
 
+def audit_nhats_variable_confirmation_matrix(matrix_path: Path) -> dict[str, Any]:
+    checks: list[dict[str, Any]] = []
+    exists = matrix_path.exists()
+    add_check(
+        checks,
+        "nhats-variable-confirmation-matrix-exists",
+        status_from_bool(exists),
+        str(matrix_path.relative_to(REPO_ROOT)),
+    )
+    matrix = load_json(matrix_path) if exists else {}
+
+    schema_ok = (
+        matrix.get("schemaVersion")
+        == "human-infra.life-path-nhats-variable-confirmation-matrix.v1"
+    )
+    add_check(
+        checks,
+        "nhats-variable-confirmation-matrix-schema",
+        status_from_bool(exists and schema_ok),
+        f"schemaVersion={matrix.get('schemaVersion')!r}",
+    )
+
+    identity_ok = (
+        matrix.get("sourceId") == "nhats"
+        and matrix.get("matrixId") == "nhats-r13-r14-variable-confirmation-matrix-draft"
+        and matrix.get("protocolId") == "nhats-r13-r14-functional-survival-estimand-protocol-draft"
+        and matrix.get("manifestId") == "nhats-r1-r14-effective-time-manifest-draft"
+        and matrix.get("variableDictionaryId") == "nhats-life-path-variable-dictionary-draft"
+        and matrix.get("status") == "candidate-variable-confirmation-only-cannot-extract"
+    )
+    add_check(
+        checks,
+        "nhats-variable-confirmation-matrix-identity",
+        status_from_bool(exists and identity_ok),
+        "matrix must bind NHATS source, first estimand protocol, manifest and variable dictionary",
+    )
+
+    decision = matrix.get("currentDecision")
+    decision_ok = (
+        isinstance(decision, dict)
+        and decision.get("exactVariablesReady") is False
+        and decision.get("cohortFlowReady") is False
+        and decision.get("endpointRoutingReady") is False
+        and decision.get("surveyDesignReady") is False
+        and decision.get("missingCodesReady") is False
+        and decision.get("extractionScriptAllowed") is False
+        and decision.get("downloadAllowed") is False
+        and decision.get("calibrationAllowed") is False
+        and decision.get("individualPredictionAllowed") is False
+    )
+    add_check(
+        checks,
+        "nhats-variable-confirmation-matrix-current-decision",
+        status_from_bool(exists and decision_ok),
+        "matrix must block exact-variable readiness, cohort flow, endpoint routing, survey design, download, extraction, calibration and individual prediction",
+    )
+
+    facts = matrix.get("officialSourceFacts")
+    observed_fact_ids: set[str] = set()
+    facts_ok = isinstance(facts, list) and len(facts) >= len(REQUIRED_NHATS_VARIABLE_SOURCE_FACT_IDS)
+    if isinstance(facts, list):
+        for fact in facts:
+            if not isinstance(fact, dict):
+                facts_ok = False
+                continue
+            fact_id = fact.get("id")
+            if isinstance(fact_id, str):
+                observed_fact_ids.add(fact_id)
+            if not str(fact.get("fact", "")).strip() or not str(
+                fact.get("modelConsequence", "")
+            ).strip():
+                facts_ok = False
+            url = fact.get("sourceUrl")
+            if not isinstance(url, str) or not url.startswith("https://"):
+                facts_ok = False
+    missing_fact_ids = sorted(REQUIRED_NHATS_VARIABLE_SOURCE_FACT_IDS - observed_fact_ids)
+    add_check(
+        checks,
+        "nhats-variable-confirmation-matrix-source-facts",
+        status_from_bool(exists and facts_ok and not missing_fact_ids),
+        f"missing_fact_ids={missing_fact_ids}",
+    )
+
+    round_rules = matrix.get("roundInstantiationRules")
+    examples = round_rules.get("examples") if isinstance(round_rules, dict) else None
+    round_rules_ok = (
+        isinstance(round_rules, dict)
+        and round_rules.get("baselineRound") == 13
+        and round_rules.get("followupRound") == 14
+        and round_rules.get("roundPlaceholder") == "#"
+        and isinstance(examples, list)
+        and len(examples) >= 6
+        and has_text(examples, "w13anfinwgt0")
+        and has_text(examples, "w14anfinwgt0")
+        and has_text(examples, "fl14spdied")
+        and has_text(examples, "cg13dwrdimmrc")
+        and has_text(examples, "candidate-pattern-only")
+    )
+    add_check(
+        checks,
+        "nhats-variable-confirmation-matrix-round-rules",
+        status_from_bool(exists and round_rules_ok),
+        "round instantiation must bind R13/R14, # placeholder, candidate R13/R14 examples and candidate-pattern-only status",
+    )
+
+    groups = matrix.get("candidateVariableGroups")
+    observed_group_ids: set[str] = set()
+    groups_ok = isinstance(groups, list) and len(groups) >= len(REQUIRED_NHATS_VARIABLE_GROUP_IDS)
+    if isinstance(groups, list):
+        for group in groups:
+            if not isinstance(group, dict):
+                groups_ok = False
+                continue
+            group_id = group.get("id")
+            if isinstance(group_id, str):
+                observed_group_ids.add(group_id)
+            if not str(group.get("modelRole", "")).strip():
+                groups_ok = False
+            if not isinstance(group.get("candidateFields"), list) or not isinstance(
+                group.get("requiredEvidenceBeforeUse"), list
+            ):
+                groups_ok = False
+            if group.get("currentStatus") not in {
+                "candidate-only",
+                "candidate-pattern-only",
+                "family-only",
+            }:
+                groups_ok = False
+    missing_group_ids = sorted(REQUIRED_NHATS_VARIABLE_GROUP_IDS - observed_group_ids)
+    add_check(
+        checks,
+        "nhats-variable-confirmation-matrix-variable-groups",
+        status_from_bool(exists and groups_ok and not missing_group_ids),
+        f"missing_group_ids={missing_group_ids}",
+    )
+
+    cohort_flow = matrix.get("cohortFlowTemplate")
+    observed_steps: set[str] = set()
+    cohort_flow_ok = isinstance(cohort_flow, list) and len(cohort_flow) >= len(
+        REQUIRED_NHATS_COHORT_FLOW_STEPS
+    )
+    if isinstance(cohort_flow, list):
+        for step in cohort_flow:
+            if not isinstance(step, dict):
+                cohort_flow_ok = False
+                continue
+            step_id = step.get("step")
+            if isinstance(step_id, str):
+                observed_steps.add(step_id)
+            if step.get("currentStatus") != "missing":
+                cohort_flow_ok = False
+            if not str(step.get("requiredEvidence", "")).strip() or not str(
+                step.get("output", "")
+            ).strip():
+                cohort_flow_ok = False
+    missing_steps = sorted(REQUIRED_NHATS_COHORT_FLOW_STEPS - observed_steps)
+    add_check(
+        checks,
+        "nhats-variable-confirmation-matrix-cohort-flow",
+        status_from_bool(exists and cohort_flow_ok and not missing_steps),
+        f"missing_steps={missing_steps}",
+    )
+
+    gates = matrix.get("readinessGates")
+    observed_gate_ids: set[str] = set()
+    gates_ok = isinstance(gates, list) and len(gates) >= len(REQUIRED_NHATS_VARIABLE_MATRIX_GATE_IDS)
+    if isinstance(gates, list):
+        for gate in gates:
+            if not isinstance(gate, dict):
+                gates_ok = False
+                continue
+            gate_id = gate.get("id")
+            if isinstance(gate_id, str):
+                observed_gate_ids.add(gate_id)
+            if gate.get("status") != "missing" or gate.get("blocksExtraction") is not True:
+                gates_ok = False
+            if not str(gate.get("requiredEvidence", "")).strip():
+                gates_ok = False
+    missing_gate_ids = sorted(REQUIRED_NHATS_VARIABLE_MATRIX_GATE_IDS - observed_gate_ids)
+    add_check(
+        checks,
+        "nhats-variable-confirmation-matrix-readiness-gates",
+        status_from_bool(exists and gates_ok and not missing_gate_ids),
+        f"missing_gate_ids={missing_gate_ids}",
+    )
+
+    summary = matrix.get("gateSummary")
+    summary_ok = (
+        isinstance(summary, dict)
+        and summary.get("requiredGateCount") == len(REQUIRED_NHATS_VARIABLE_MATRIX_GATE_IDS)
+        and summary.get("readyGateCount") == 0
+        and summary.get("missingGateCount") == len(REQUIRED_NHATS_VARIABLE_MATRIX_GATE_IDS)
+        and summary.get("blockingGateCount") == len(REQUIRED_NHATS_VARIABLE_MATRIX_GATE_IDS)
+    )
+    add_check(
+        checks,
+        "nhats-variable-confirmation-matrix-gate-summary",
+        status_from_bool(exists and summary_ok),
+        "gate summary must keep every variable-confirmation gate missing and blocking",
+    )
+
+    prohibited = matrix.get("prohibitedActions")
+    prohibited_ok = (
+        isinstance(prohibited, list)
+        and has_text(prohibited, "download")
+        and has_text(prohibited, "extraction script")
+        and has_text(prohibited, "pattern-resolved names")
+        and has_text(prohibited, "after seeing R14 outcomes")
+        and has_text(prohibited, "public AI")
+        and has_text(prohibited, "individual death")
+    )
+    add_check(
+        checks,
+        "nhats-variable-confirmation-matrix-prohibited-actions",
+        status_from_bool(exists and prohibited_ok),
+        "matrix must prohibit download, extraction scripts, unconfirmed pattern names, outcome-peeking, public AI upload and individual outputs",
+    )
+
+    next_work_ok = (
+        isinstance(matrix.get("nextWork"), list)
+        and has_text(matrix["nextWork"], "Colectica")
+        and has_text(matrix["nextWork"], "cohort-flow")
+        and has_text(matrix["nextWork"], "survey-design")
+        and has_text(matrix["nextWork"], "disclosure-control")
+    )
+    add_check(
+        checks,
+        "nhats-variable-confirmation-matrix-next-work",
+        status_from_bool(exists and next_work_ok),
+        "next work must point to Colectica, cohort flow, survey design and disclosure control",
+    )
+
+    source_trace = matrix.get("sourceTrace")
+    source_trace_ok = (
+        isinstance(source_trace, list)
+        and all(isinstance(url, str) and url.startswith("https://") for url in source_trace)
+        and has_text(source_trace, "cross-year-search")
+        and has_text(source_trace, "NHATSUserGuideR14")
+        and has_text(source_trace, "NHATSTechnicalPaper55")
+        and has_text(source_trace, "conditions-of-use")
+        and has_text(source_trace, "nhats/13")
+        and has_text(source_trace, "nhats/14")
+    )
+    add_check(
+        checks,
+        "nhats-variable-confirmation-matrix-source-trace",
+        status_from_bool(exists and source_trace_ok),
+        "source trace must include Cross-Year Search, User Guide, Technical Paper 55, Conditions of Use and R13/R14 file pages",
+    )
+
+    return {
+        "path": str(matrix_path.relative_to(REPO_ROOT)),
+        "sha256": sha256_file(matrix_path) if exists else None,
+        "status": "PASS" if summarize_checks(checks)["fail"] == 0 else "FAIL",
+        "checks": checks,
+        "summary": summarize_checks(checks),
+    }
+
+
 def audit_sensitivity_analysis(
     sensitivity_path: Path,
     model_data: dict[str, Any],
@@ -2108,6 +2408,7 @@ def audit_model(
     nhats_acquisition_readiness_path: Path,
     nhats_file_tier_table_path: Path,
     nhats_first_estimand_protocol_path: Path,
+    nhats_variable_confirmation_matrix_path: Path,
 ) -> dict[str, Any]:
     checks: list[dict[str, Any]] = []
     schema_version = data.get("schemaVersion")
@@ -2291,6 +2592,9 @@ def audit_model(
     nhats_first_estimand_protocol_audit = audit_nhats_first_estimand_protocol(
         nhats_first_estimand_protocol_path,
     )
+    nhats_variable_confirmation_matrix_audit = audit_nhats_variable_confirmation_matrix(
+        nhats_variable_confirmation_matrix_path,
+    )
     sensitivity_audit = audit_sensitivity_analysis(sensitivity_path, data, model_path)
     checks.extend(readiness_audit["checks"])
     checks.extend(data_sources_audit["checks"])
@@ -2300,6 +2604,7 @@ def audit_model(
     checks.extend(nhats_acquisition_readiness_audit["checks"])
     checks.extend(nhats_file_tier_table_audit["checks"])
     checks.extend(nhats_first_estimand_protocol_audit["checks"])
+    checks.extend(nhats_variable_confirmation_matrix_audit["checks"])
     checks.extend(sensitivity_audit["checks"])
     failed = [check for check in checks if check["status"] == "FAIL"]
     overall = "PASS" if not failed else "FAIL"
@@ -2320,6 +2625,7 @@ def audit_model(
         "nhatsAcquisitionReadiness": nhats_acquisition_readiness_audit,
         "nhatsFileTierTable": nhats_file_tier_table_audit,
         "nhatsFirstEstimandProtocol": nhats_first_estimand_protocol_audit,
+        "nhatsVariableConfirmationMatrix": nhats_variable_confirmation_matrix_audit,
         "sensitivityAnalysis": sensitivity_audit,
     }
 
@@ -2404,6 +2710,13 @@ def render_markdown(audit: dict[str, Any]) -> str:
             f"- First estimand protocol status: `{audit['nhatsFirstEstimandProtocol']['status']}`",
             "- Boundary: the first estimand protocol pre-registers the R13/R14 aggregate functional-survival question, time-zero, outcome, censoring, survey-design and output boundaries, but it still blocks data download, extraction, calibration, validation and individual prediction.",
             "",
+            "## NHATS Variable Confirmation Matrix",
+            "",
+            f"- Variable confirmation matrix path: `{audit['nhatsVariableConfirmationMatrix']['path']}`",
+            f"- Variable confirmation matrix SHA-256: `{audit['nhatsVariableConfirmationMatrix']['sha256']}`",
+            f"- Variable confirmation matrix status: `{audit['nhatsVariableConfirmationMatrix']['status']}`",
+            "- Boundary: the variable confirmation matrix records official source facts, candidate field patterns, variable groups and cohort-flow gates, but it still blocks data download, extraction scripts, unconfirmed pattern-derived variables, calibration and individual prediction.",
+            "",
             "## Sensitivity Analysis",
             "",
             f"- Sensitivity path: `{audit['sensitivityAnalysis']['path']}`",
@@ -2467,6 +2780,11 @@ def parse_args() -> argparse.Namespace:
         type=Path,
         default=DEFAULT_NHATS_FIRST_ESTIMAND_PROTOCOL,
     )
+    parser.add_argument(
+        "--nhats-variable-confirmation-matrix",
+        type=Path,
+        default=DEFAULT_NHATS_VARIABLE_CONFIRMATION_MATRIX,
+    )
     parser.add_argument("--json-out", type=Path, default=DEFAULT_JSON_OUT)
     parser.add_argument("--md-out", type=Path, default=DEFAULT_MD_OUT)
     return parser.parse_args()
@@ -2486,6 +2804,9 @@ def main() -> int:
     nhats_acquisition_readiness_path = args.nhats_acquisition_readiness.resolve()
     nhats_file_tier_table_path = args.nhats_file_tier_table.resolve()
     nhats_first_estimand_protocol_path = args.nhats_first_estimand_protocol.resolve()
+    nhats_variable_confirmation_matrix_path = (
+        args.nhats_variable_confirmation_matrix.resolve()
+    )
     audit = audit_model(
         load_json(model_path),
         model_path,
@@ -2500,6 +2821,7 @@ def main() -> int:
         nhats_acquisition_readiness_path,
         nhats_file_tier_table_path,
         nhats_first_estimand_protocol_path,
+        nhats_variable_confirmation_matrix_path,
     )
     args.json_out.parent.mkdir(parents=True, exist_ok=True)
     with args.json_out.open("w", encoding="utf-8") as handle:
