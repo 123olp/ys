@@ -176,7 +176,9 @@ docs/
 │   ├── human-infra-domain-source-card-field-extraction.json
 │   ├── human-infra-domain-source-specific-extraction-queue.json
 │   ├── human-infra-domain-source-specific-extraction-register.json
+│   ├── human-infra-domain-source-card-promotion-queue.json
 │   ├── human-infra-source-context-local-review-register.json
+│   ├── human-infra-card-promotion-prep-register.json
 │   ├── human-infra-falsifier-source-card-backfill.json
 │   ├── human-infra-falsifier-source-card-extraction.json
 │   ├── human-infra-maturity-roadmap.md
@@ -363,6 +365,7 @@ docs/
 - `reference/human-infra-domain-source-specific-extraction-register.json`：记录当前 81/81 个 domain-source 精读完成行，绑定 exact claim、endpoint、population、uncertainty、transfer-boundary 和禁止用途边界；它仍不等于外部文献 fresh review 或校准预测准入。
 - `reference/human-infra-domain-source-card-promotion-queue.json`：把 81 个 completed field rows 派生为 fresh review、Source Card、变量卡、endpoint 卡、uncertainty 卡、transfer-boundary 卡和 downgrade check 晋升任务；它仍不等于晋升完成或模型准入。
 - `reference/human-infra-source-context-local-review-register.json`：记录当前 20 个来源锚点的本地来源语境复核，覆盖 81 个晋升任务和 26 个域；它仍不等于独立 fresh review、Source Card 晋升完成或模型准入。
+- `reference/human-infra-card-promotion-prep-register.json`：为 81 个已本地复核的晋升任务预注册 486 个 Source/变量/endpoint/uncertainty/transfer/downgrade 待产物 ID、评审问题和阻塞用途；它仍不等于独立 fresh review 或卡片完成。
 - `reference/human-infra-falsifier-source-card-extraction.json`：把第一批高杠杆来源锚点抽取为字段级 Source Cards，绑定来源身份、域、论文 claim、模型位置、反证用途和迁移边界。
 - `reference/domain-map.md`：定义根项目与子域的边界、迁移切片、主动不做和验证点。
 - `reference/ethics-and-safety-boundaries.md`：定义医疗、组织、去具身中枢、记忆编辑和数据证据边界。
