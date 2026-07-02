@@ -1,0 +1,727 @@
+{
+  "schemaVersion": "human-infra.domain-falsifier-coverage.v1",
+  "registerId": "human-infra-priority-domain-falsifier-coverage-2026-07-02",
+  "status": "active-priority-domain-gate",
+  "purpose": "Record falsifier and downgrade-condition coverage for C1 boundary-rewriting domains and selected C2 source-maintenance domains that most affect Human Infra subject-continuity claims.",
+  "coreMatrix": "docs/reference/human-infra-core-claim-evidence-matrix.md",
+  "pageConsistencyRegister": "docs/reference/human-infra-page-claim-consistency.json",
+  "maturityGapRegister": "docs/reference/human-infra-maturity-gap-register.json",
+  "scope": {
+    "c1Coverage": "all one-hop C1 boundary-rewriting research domains with README and AGENTS files",
+    "priorityC2Minimum": 8,
+    "priorityC2Domains": [
+      "cellular-reprogramming",
+      "regenerative-medicine",
+      "cancer-screening-early-detection-continuity",
+      "immune-maintenance",
+      "neuro-continuity",
+      "mitochondrial-bioenergetics",
+      "genomic-stability-dna-repair",
+      "biological-age-clocks-biomarker-validation"
+    ],
+    "currentLimitations": [
+      "This is priority-domain coverage, not full coverage of every C2 domain.",
+      "This register records falsifier and downgrade scaffolding; it does not complete Source Cards for every domain.",
+      "This register does not validate external evidence or prove any intervention works."
+    ]
+  },
+  "entries": [
+    {
+      "domainId": "future-waiting",
+      "tier": "C1",
+      "path": "domains/c1-boundary-rewriting/future-waiting",
+      "requiredClaims": [
+        "HI-CL2",
+        "HI-CL3",
+        "HI-CL4",
+        "HI-CL6",
+        "HI-CL7"
+      ],
+      "strongClaim": "Future waiting routes may reduce the subject's experienced waiting cost only when time differential, life support, exit, continuity and adoption conditions all hold.",
+      "modelPosition": "boundary-screening",
+      "variables": {
+        "inputs": [
+          "waiting-mechanism",
+          "external-reference-time",
+          "subject-proper-time"
+        ],
+        "mediators": [
+          "exit-probability",
+          "continuity-preservation",
+          "technology-window-probability"
+        ],
+        "outputs": [
+          "effective-waiting-cost",
+          "future-option-access",
+          "net-continuity-gain"
+        ]
+      },
+      "falsifiers": [
+        {
+          "condition": "No plausible exit, communication or recovery path is specified for the waiting route.",
+          "downgradeAction": "downgrade to speculative narrative and block model entry",
+          "evidenceNeeded": "scenario card with exit, communication, recovery and abort gates"
+        },
+        {
+          "condition": "The route preserves external time difference but destroys subject continuity or agency.",
+          "downgradeAction": "classify as negative-under-continuity-gate",
+          "evidenceNeeded": "continuity card covering memory, cognition, embodiment and governance"
+        }
+      ],
+      "prohibitedUses": [
+        "不提供个体行动方案",
+        "不证明现实工程可行性",
+        "不输出个体死亡日期"
+      ],
+      "nextEvidenceAction": "Create route cards for future waiting, biostasis, and metric-redshift variants with exit and continuity gates."
+    },
+    {
+      "domainId": "longevity-evidence",
+      "tier": "C1",
+      "path": "domains/c1-boundary-rewriting/longevity-evidence",
+      "requiredClaims": [
+        "HI-CL2",
+        "HI-CL3",
+        "HI-CL4",
+        "HI-CL5",
+        "HI-CL6",
+        "HI-CL7"
+      ],
+      "strongClaim": "Longevity evidence can enter Human Infra only after the route exposes intervention, comparator, endpoint, evidence level, access, adoption and risk gates.",
+      "modelPosition": "screening-to-toy-model",
+      "variables": {
+        "inputs": [
+          "intervention-family",
+          "target-population",
+          "comparison-strategy"
+        ],
+        "mediators": [
+          "hazard-change",
+          "healthspan-change",
+          "adoption-and-access"
+        ],
+        "outputs": [
+          "survival-curve-shift",
+          "effective-time-change",
+          "LEV-threshold-status"
+        ]
+      },
+      "falsifiers": [
+        {
+          "condition": "The route has only mechanism plausibility or animal data without human endpoint, safety or applicability boundary.",
+          "downgradeAction": "keep as candidate route and prohibit lifespan conclusion",
+          "evidenceNeeded": "source card distinguishing mechanism, animal, biomarker, clinical endpoint and long-term safety"
+        },
+        {
+          "condition": "The route improves a biomarker while worsening function, safety, access, or opportunity cost.",
+          "downgradeAction": "downgrade from longevity claim to mixed-effect or negative route",
+          "evidenceNeeded": "route card with positive and negative chains plus prohibited-use boundary"
+        }
+      ],
+      "prohibitedUses": [
+        "不提供个体医疗建议",
+        "不提供药物或补剂建议",
+        "不输出个体死亡日期"
+      ],
+      "nextEvidenceAction": "Extend LEV route cards to non-mainstream boundary routes and connect each route to a falsifier row."
+    },
+    {
+      "domainId": "biostasis-cryopreservation",
+      "tier": "C1",
+      "path": "domains/c1-boundary-rewriting/biostasis-cryopreservation",
+      "requiredClaims": [
+        "HI-CL2",
+        "HI-CL3",
+        "HI-CL4",
+        "HI-CL6",
+        "HI-CL7"
+      ],
+      "strongClaim": "Biostasis can only be treated as a future-waiting preservation hypothesis if structure, damage, revival, identity and governance uncertainties are explicitly gated.",
+      "modelPosition": "conditional-preservation-screening",
+      "variables": {
+        "inputs": [
+          "preservation-method",
+          "ischemia-window",
+          "storage-condition"
+        ],
+        "mediators": [
+          "structural-fidelity",
+          "repair-technology-window",
+          "identity-continuity"
+        ],
+        "outputs": [
+          "preservation-claim-status",
+          "revival-condition-readiness",
+          "continuity-risk"
+        ]
+      },
+      "falsifiers": [
+        {
+          "condition": "The preservation process causes unrecoverable information loss in structures required for identity or agency.",
+          "downgradeAction": "classify as non-continuity-preserving storage",
+          "evidenceNeeded": "structure-preservation evidence and identity-critical information boundary"
+        },
+        {
+          "condition": "Future revival is assumed without specifying required repair, validation and governance conditions.",
+          "downgradeAction": "downgrade to open-ended speculation",
+          "evidenceNeeded": "revival-condition card and non-claim boundary"
+        }
+      ],
+      "prohibitedUses": [
+        "不提供个体医疗建议",
+        "不提供服务选择建议",
+        "不证明复活可行"
+      ],
+      "nextEvidenceAction": "Build Source Cards separating structure preservation evidence from revival and continuity claims."
+    },
+    {
+      "domainId": "brain-preservation-connectomics-emulation",
+      "tier": "C1",
+      "path": "domains/c1-boundary-rewriting/brain-preservation-connectomics-emulation",
+      "requiredClaims": [
+        "HI-CL2",
+        "HI-CL3",
+        "HI-CL4",
+        "HI-CL6",
+        "HI-CL7"
+      ],
+      "strongClaim": "Brain preservation and emulation claims must prove enough information preservation, readout, interpretation and identity continuity before they can represent subject continuity.",
+      "modelPosition": "identity-continuity-screening",
+      "variables": {
+        "inputs": [
+          "neural-structure-preservation",
+          "connectome-readout-resolution",
+          "emulation-assumption"
+        ],
+        "mediators": [
+          "memory-trace-fidelity",
+          "functional-model-validity",
+          "copy-versus-continuity-theory"
+        ],
+        "outputs": [
+          "identity-continuity-status",
+          "information-loss-risk",
+          "emulation-claim-maturity"
+        ]
+      },
+      "falsifiers": [
+        {
+          "condition": "The preserved data cannot support memory, personality, agency or functional reconstruction claims.",
+          "downgradeAction": "downgrade to anatomical archive, not subject-continuity route",
+          "evidenceNeeded": "information sufficiency card covering structure, dynamics and functional validation"
+        },
+        {
+          "condition": "The route produces a copy claim but cannot defend continuity of the original subject.",
+          "downgradeAction": "classify as copy-continuity unresolved",
+          "evidenceNeeded": "identity theory boundary and governance note"
+        }
+      ],
+      "prohibitedUses": [
+        "不证明上传可行",
+        "不提供个体行动方案",
+        "不替代伦理审查"
+      ],
+      "nextEvidenceAction": "Create a brain-information sufficiency matrix covering structure, dynamics, memory trace, validation and identity theory."
+    },
+    {
+      "domainId": "disembodied-cns",
+      "tier": "C1",
+      "path": "domains/c1-boundary-rewriting/disembodied-cns",
+      "requiredClaims": [
+        "HI-CL2",
+        "HI-CL3",
+        "HI-CL4",
+        "HI-CL6",
+        "HI-CL7"
+      ],
+      "strongClaim": "A disembodied CNS route can only count as subject-continuity research if it maintains living neural function, agency-relevant cognition, sensory-motor interface and rights/governance conditions.",
+      "modelPosition": "far-future-life-support-screening",
+      "variables": {
+        "inputs": [
+          "CNS-viability-support",
+          "interface-design",
+          "embodiment-substitution"
+        ],
+        "mediators": [
+          "neural-homeostasis",
+          "agency-expression",
+          "welfare-and-rights-governance"
+        ],
+        "outputs": [
+          "continuity-maintenance-status",
+          "agency-loss-risk",
+          "governance-abort-status"
+        ]
+      },
+      "falsifiers": [
+        {
+          "condition": "The system maintains tissue viability but cannot preserve conscious agency, communication or welfare.",
+          "downgradeAction": "classify as organ-support artifact, not subject-continuity route",
+          "evidenceNeeded": "agency and welfare criteria with abort conditions"
+        },
+        {
+          "condition": "Interface, sensory input, or motor output failure prevents the subject from acting or choosing.",
+          "downgradeAction": "downgrade to non-actionable continuity hypothesis",
+          "evidenceNeeded": "interface redundancy and agency-output card"
+        }
+      ],
+      "prohibitedUses": [
+        "不提供人体实验方案",
+        "不提供生命支持操作",
+        "不替代伦理审查"
+      ],
+      "nextEvidenceAction": "Separate viability, consciousness, agency and governance requirements into independent abort gates."
+    },
+    {
+      "domainId": "memory-editing",
+      "tier": "C1",
+      "path": "domains/c1-boundary-rewriting/memory-editing",
+      "requiredClaims": [
+        "HI-CL2",
+        "HI-CL3",
+        "HI-CL4",
+        "HI-CL6",
+        "HI-CL7"
+      ],
+      "strongClaim": "Memory editing can affect subject continuity only when benefits to trauma, learning or identity stability are separated from risks of identity disruption, coercion and evidence loss.",
+      "modelPosition": "identity-and-agency-screening",
+      "variables": {
+        "inputs": [
+          "memory-target",
+          "editing-modality",
+          "consent-and-context"
+        ],
+        "mediators": [
+          "memory-integrity",
+          "distress-reduction",
+          "identity-coherence"
+        ],
+        "outputs": [
+          "agency-quality",
+          "identity-continuity-risk",
+          "coercion-risk"
+        ]
+      },
+      "falsifiers": [
+        {
+          "condition": "The intervention improves distress metrics but damages identity coherence, agency, testimony, or consent integrity.",
+          "downgradeAction": "classify as continuity-risking intervention",
+          "evidenceNeeded": "benefit-risk card covering memory function, identity, consent and social misuse"
+        },
+        {
+          "condition": "The claim lacks a clear target memory, mechanism, reversibility and governance boundary.",
+          "downgradeAction": "downgrade to non-actionable concept",
+          "evidenceNeeded": "target-mechanism-reversibility-governance table"
+        }
+      ],
+      "prohibitedUses": [
+        "不提供记忆操控方案",
+        "不提供个体医疗建议",
+        "不支持强制干预"
+      ],
+      "nextEvidenceAction": "Build a memory intervention boundary table separating therapeutic, enhancement, coercive and evidentiary contexts."
+    },
+    {
+      "domainId": "cellular-reprogramming",
+      "tier": "C2",
+      "path": "domains/c2-source-maintenance/cellular-reprogramming",
+      "requiredClaims": [
+        "HI-CL2",
+        "HI-CL4",
+        "HI-CL5",
+        "HI-CL6",
+        "HI-CL7"
+      ],
+      "strongClaim": "Cellular reprogramming may reset aspects of cell age only if rejuvenation can be separated from identity loss, tumor risk and system-level disruption.",
+      "modelPosition": "mechanism-to-clinical-screening",
+      "variables": {
+        "inputs": [
+          "reprogramming-factor",
+          "dose-duration-window",
+          "target-cell-type"
+        ],
+        "mediators": [
+          "epigenetic-age-change",
+          "cell-identity-retention",
+          "tumorigenic-risk"
+        ],
+        "outputs": [
+          "tissue-function-change",
+          "healthspan-proxy",
+          "safety-gate-status"
+        ]
+      },
+      "falsifiers": [
+        {
+          "condition": "Age markers improve while cell identity, tissue function, or cancer safety worsens.",
+          "downgradeAction": "downgrade to biomarker-only or unsafe mechanism claim",
+          "evidenceNeeded": "paired age, identity, function and safety endpoints"
+        },
+        {
+          "condition": "Evidence remains in vitro or animal-only but is written as human healthspan extension.",
+          "downgradeAction": "block clinical or longevity claim",
+          "evidenceNeeded": "species, tissue, delivery, endpoint and follow-up boundary"
+        }
+      ],
+      "prohibitedUses": [
+        "不提供个体医疗建议",
+        "不提供实验操作",
+        "不证明人体逆龄"
+      ],
+      "nextEvidenceAction": "Convert the Yamanaka-factor literature spine into Source Cards with identity-loss and tumor-risk gates."
+    },
+    {
+      "domainId": "regenerative-medicine",
+      "tier": "C2",
+      "path": "domains/c2-source-maintenance/regenerative-medicine",
+      "requiredClaims": [
+        "HI-CL2",
+        "HI-CL4",
+        "HI-CL5",
+        "HI-CL6",
+        "HI-CL7"
+      ],
+      "strongClaim": "Regenerative medicine contributes to subject continuity only when replacement or repair improves durable function without unacceptable immune, tumor, integration or access risks.",
+      "modelPosition": "repair-function-screening",
+      "variables": {
+        "inputs": [
+          "repair-modality",
+          "target-tissue",
+          "delivery-context"
+        ],
+        "mediators": [
+          "engraftment-or-integration",
+          "functional-restoration",
+          "immune-and-tumor-risk"
+        ],
+        "outputs": [
+          "durable-function",
+          "recovery-time",
+          "future-option-access"
+        ]
+      },
+      "falsifiers": [
+        {
+          "condition": "Anatomical repair does not translate into durable function, independence or effective time.",
+          "downgradeAction": "downgrade from continuity gain to structural surrogate",
+          "evidenceNeeded": "functional endpoint and follow-up evidence"
+        },
+        {
+          "condition": "Integration, immune, manufacturing or cost constraints prevent realistic access.",
+          "downgradeAction": "classify as limited-access mechanism candidate",
+          "evidenceNeeded": "implementation and access card"
+        }
+      ],
+      "prohibitedUses": [
+        "不提供手术建议",
+        "不提供细胞制备方案",
+        "不提供个体医疗建议"
+      ],
+      "nextEvidenceAction": "Build route cards separating cell therapy, tissue engineering, organ replacement and local repair."
+    },
+    {
+      "domainId": "cancer-screening-early-detection-continuity",
+      "tier": "C2",
+      "path": "domains/c2-source-maintenance/cancer-screening-early-detection-continuity",
+      "requiredClaims": [
+        "HI-CL2",
+        "HI-CL4",
+        "HI-CL5",
+        "HI-CL6",
+        "HI-CL7"
+      ],
+      "strongClaim": "Cancer control protects subject continuity only when early detection, treatment access, overdiagnosis, mortality benefit and functional burden are jointly assessed.",
+      "modelPosition": "risk-and-service-screening",
+      "variables": {
+        "inputs": [
+          "screening-modality",
+          "risk-group",
+          "follow-up-capacity"
+        ],
+        "mediators": [
+          "stage-shift",
+          "overdiagnosis-risk",
+          "treatment-access"
+        ],
+        "outputs": [
+          "cancer-mortality-risk",
+          "treatment-burden",
+          "effective-time-preservation"
+        ]
+      },
+      "falsifiers": [
+        {
+          "condition": "Screening increases detection without reducing mortality or preserving function.",
+          "downgradeAction": "downgrade to detection-only claim",
+          "evidenceNeeded": "mortality, stage, false-positive, overdiagnosis and function endpoints"
+        },
+        {
+          "condition": "Follow-up or treatment access is missing after detection.",
+          "downgradeAction": "classify as broken conversion route",
+          "evidenceNeeded": "screening-to-treatment pathway evidence"
+        }
+      ],
+      "prohibitedUses": [
+        "不提供筛查建议",
+        "不提供诊断解释",
+        "不提供个体医疗建议"
+      ],
+      "nextEvidenceAction": "Create screening route cards that include mortality, overdiagnosis, follow-up and access gates."
+    },
+    {
+      "domainId": "immune-maintenance",
+      "tier": "C2",
+      "path": "domains/c2-source-maintenance/immune-maintenance",
+      "requiredClaims": [
+        "HI-CL2",
+        "HI-CL4",
+        "HI-CL5",
+        "HI-CL6",
+        "HI-CL7"
+      ],
+      "strongClaim": "Immune maintenance supports subject continuity only when protection, inflammation control, immune surveillance and autoimmunity risks are balanced.",
+      "modelPosition": "system-maintenance-screening",
+      "variables": {
+        "inputs": [
+          "immune-intervention",
+          "infection-exposure-context",
+          "immune-age-state"
+        ],
+        "mediators": [
+          "pathogen-defense",
+          "inflammaging",
+          "autoimmune-or-suppression-risk"
+        ],
+        "outputs": [
+          "infection-risk",
+          "cancer-surveillance-risk",
+          "recovery-capacity"
+        ]
+      },
+      "falsifiers": [
+        {
+          "condition": "Immune activation improves one marker while increasing chronic inflammation, autoimmunity, or tissue damage.",
+          "downgradeAction": "classify as tradeoff-heavy immune perturbation",
+          "evidenceNeeded": "benefit-harm profile across infection, inflammation, autoimmunity and cancer surveillance"
+        },
+        {
+          "condition": "Evidence ignores age, frailty, exposure context or immune heterogeneity.",
+          "downgradeAction": "downgrade from general maintenance claim to context-limited claim",
+          "evidenceNeeded": "population and immune-state stratification"
+        }
+      ],
+      "prohibitedUses": [
+        "不提供疫苗建议",
+        "不提供免疫疗法建议",
+        "不提供个体医疗建议"
+      ],
+      "nextEvidenceAction": "Map immune-aging source cards into infection, inflammation, surveillance and autoimmunity channels."
+    },
+    {
+      "domainId": "neuro-continuity",
+      "tier": "C2",
+      "path": "domains/c2-source-maintenance/neuro-continuity",
+      "requiredClaims": [
+        "HI-CL2",
+        "HI-CL3",
+        "HI-CL4",
+        "HI-CL6",
+        "HI-CL7"
+      ],
+      "strongClaim": "Neuro-continuity is a source-maintenance condition because subject continuity fails if memory, cognition, agency, self-model or communication irreversibly collapse.",
+      "modelPosition": "identity-and-function-maintenance",
+      "variables": {
+        "inputs": [
+          "neural-health-state",
+          "cognitive-function",
+          "communication-capacity"
+        ],
+        "mediators": [
+          "memory-integrity",
+          "executive-control",
+          "self-model-stability"
+        ],
+        "outputs": [
+          "agency-preservation",
+          "identity-continuity",
+          "effective-time-quality"
+        ]
+      },
+      "falsifiers": [
+        {
+          "condition": "A route preserves biological survival but not memory, agency, communication or self-continuity.",
+          "downgradeAction": "classify as biological survival without subject continuity",
+          "evidenceNeeded": "neurocognitive and identity-continuity endpoints"
+        },
+        {
+          "condition": "Enhancement or intervention improves a narrow task while degrading judgment, autonomy or long-term safety.",
+          "downgradeAction": "downgrade to local task gain with continuity risk",
+          "evidenceNeeded": "task, autonomy, side-effect and long-term safety evidence"
+        }
+      ],
+      "prohibitedUses": [
+        "不提供神经刺激建议",
+        "不提供药物建议",
+        "不提供个体医疗建议"
+      ],
+      "nextEvidenceAction": "Create variables for memory, executive function, agency, communication and identity-continuity risk."
+    },
+    {
+      "domainId": "mitochondrial-bioenergetics",
+      "tier": "C2",
+      "path": "domains/c2-source-maintenance/mitochondrial-bioenergetics",
+      "requiredClaims": [
+        "HI-CL2",
+        "HI-CL3",
+        "HI-CL4",
+        "HI-CL6",
+        "HI-CL7"
+      ],
+      "strongClaim": "Mitochondrial bioenergetics matters for subject continuity only when cellular energy signals connect to organism-level function, fatigue, recovery and disease risk.",
+      "modelPosition": "mechanism-to-function-screening",
+      "variables": {
+        "inputs": [
+          "mitochondrial-function-marker",
+          "energy-demand-context",
+          "intervention-or-exposure"
+        ],
+        "mediators": [
+          "ATP-production",
+          "oxidative-stress",
+          "fatigue-and-recovery"
+        ],
+        "outputs": [
+          "action-capacity",
+          "recovery-quality",
+          "disease-risk-channel"
+        ]
+      },
+      "falsifiers": [
+        {
+          "condition": "Cellular or biomarker improvement does not translate into fatigue, function, recovery or disease endpoint improvement.",
+          "downgradeAction": "downgrade to mechanism-only claim",
+          "evidenceNeeded": "linked biomarker-to-function evidence"
+        },
+        {
+          "condition": "Intervention increases oxidative stress, toxicity, or maladaptive energy demand.",
+          "downgradeAction": "classify as unsafe or mixed-effect energy perturbation",
+          "evidenceNeeded": "dose, safety, function and adverse-effect evidence"
+        }
+      ],
+      "prohibitedUses": [
+        "不提供补剂建议",
+        "不提供检测解释",
+        "不提供个体医疗建议"
+      ],
+      "nextEvidenceAction": "Build a biomarker-to-function map for mitochondrial claims."
+    },
+    {
+      "domainId": "genomic-stability-dna-repair",
+      "tier": "C2",
+      "path": "domains/c2-source-maintenance/genomic-stability-dna-repair",
+      "requiredClaims": [
+        "HI-CL2",
+        "HI-CL4",
+        "HI-CL5",
+        "HI-CL6",
+        "HI-CL7"
+      ],
+      "strongClaim": "Genomic stability and DNA repair contribute to subject continuity only when reduced damage or improved repair lowers cancer, cell failure or tissue dysfunction without increasing malignant escape.",
+      "modelPosition": "damage-maintenance-screening",
+      "variables": {
+        "inputs": [
+          "DNA-damage-load",
+          "repair-pathway-state",
+          "exposure-or-intervention"
+        ],
+        "mediators": [
+          "mutation-accumulation",
+          "cell-cycle-control",
+          "cancer-risk"
+        ],
+        "outputs": [
+          "tissue-maintenance",
+          "malignancy-risk",
+          "healthspan-risk-channel"
+        ]
+      },
+      "falsifiers": [
+        {
+          "condition": "Repair-pathway manipulation improves damage markers but increases cancer, clonal expansion or genomic instability.",
+          "downgradeAction": "classify as high-tail-risk maintenance route",
+          "evidenceNeeded": "cancer, clonal, repair-fidelity and long-term safety evidence"
+        },
+        {
+          "condition": "The claim treats DNA repair as universally beneficial without tissue, age, dose or pathway context.",
+          "downgradeAction": "downgrade to context-limited mechanism claim",
+          "evidenceNeeded": "pathway-specific and tissue-specific evidence"
+        }
+      ],
+      "prohibitedUses": [
+        "不提供基因治疗建议",
+        "不提供检测解释",
+        "不提供个体医疗建议"
+      ],
+      "nextEvidenceAction": "Separate damage reduction, repair fidelity, senescence, apoptosis and cancer escape into distinct variables."
+    },
+    {
+      "domainId": "biological-age-clocks-biomarker-validation",
+      "tier": "C2",
+      "path": "domains/c2-source-maintenance/biological-age-clocks-biomarker-validation",
+      "requiredClaims": [
+        "HI-CL3",
+        "HI-CL4",
+        "HI-CL6",
+        "HI-CL7"
+      ],
+      "strongClaim": "Biological age clocks are observation tools for model feedback only if they predict function, risk, intervention response or endpoints without being mistaken for lifespan itself.",
+      "modelPosition": "observation-and-validation-screening",
+      "variables": {
+        "inputs": [
+          "biomarker-panel",
+          "reference-population",
+          "measurement-protocol"
+        ],
+        "mediators": [
+          "risk-prediction-validity",
+          "intervention-response-validity",
+          "population-bias"
+        ],
+        "outputs": [
+          "state-estimation-quality",
+          "feedback-loop-validity",
+          "misoptimization-risk"
+        ]
+      },
+      "falsifiers": [
+        {
+          "condition": "Biomarker age changes do not align with function, disease, mortality or recovery endpoints.",
+          "downgradeAction": "downgrade to surrogate-only marker",
+          "evidenceNeeded": "endpoint-alignment and intervention-response validation"
+        },
+        {
+          "condition": "The clock is used for individual death dates, medical decisions, ranking or discrimination.",
+          "downgradeAction": "block use under prohibited-use gate",
+          "evidenceNeeded": "use-case boundary and no-individual-prediction audit"
+        }
+      ],
+      "prohibitedUses": [
+        "不输出个体死亡日期",
+        "不提供检测解释",
+        "不提供个体医疗建议"
+      ],
+      "nextEvidenceAction": "Create a biomarker validation matrix separating correlation, prediction, intervention response, endpoint alignment and misuse."
+    }
+  ],
+  "indexRequirements": [
+    "README.md",
+    "docs/reference/README.md",
+    "docs/reference/human-infra-maturity-roadmap.md",
+    "tools/README.md"
+  ],
+  "nonClaims": [
+    "This register does not complete all C2 domain-level Claim-Evidence Matrices.",
+    "This register does not prove the scientific correctness of any domain claim.",
+    "This register is a local gate that prevents priority-domain claims from existing without falsifier and downgrade scaffolding."
+  ]
+}

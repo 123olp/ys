@@ -19,7 +19,7 @@ Human Infra 是一个研究“能够继续做事的主体”如何被维护、�
 
 ### 主张脊柱
 
-本页对齐核心主张 `HI-CL1`、`HI-CL2`、`HI-CL3` 和 `HI-CL6`，完整矩阵见 [Human Infra Core Claim-Evidence Matrix](docs/reference/human-infra-core-claim-evidence-matrix.md)，页面一致性门禁见 [Page Claim Consistency Register](docs/reference/human-infra-page-claim-consistency.json)。
+本页对齐核心主张 `HI-CL1`、`HI-CL2`、`HI-CL3` 和 `HI-CL6`，完整矩阵见 [Human Infra Core Claim-Evidence Matrix](docs/reference/human-infra-core-claim-evidence-matrix.md)，页面一致性门禁见 [Page Claim Consistency Register](docs/reference/human-infra-page-claim-consistency.json)，优先域反证门禁见 [Domain Falsifier Coverage Register](docs/reference/human-infra-domain-falsifier-coverage.json)。
 
 边界：Human Infra 不是医疗建议，不输出个体死亡日期，不证明具体技术已经实现有效永生；当前只把主体持续性、生命路径和未来选择权组织成可审查的研究框架。
 

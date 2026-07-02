@@ -114,7 +114,7 @@
     {
       "axisId": "research_framework",
       "axisName": "研究框架",
-      "currentPercent": 58,
+      "currentPercent": 62,
       "targetPercent": 100,
       "definitionOfDone": "Every strong project claim can be traced to source cards, claim-evidence rows, variables, mechanism links, falsifiers, model position and governance boundary.",
       "primaryEvidence": [
@@ -201,14 +201,16 @@
           "evidence": [
             "docs/reference/human-infra-core-claim-evidence-matrix.md",
             "docs/reference/human-infra-page-claim-consistency.json",
+            "docs/reference/human-infra-domain-falsifier-coverage.json",
+            "tools/audit_human_infra_domain_falsifier_coverage.py",
             "tools/audit_human_infra_page_claim_consistency.py"
           ],
           "missingEvidence": [
-            "Machine audit for domain-level falsifier coverage.",
-            "Falsifier rows for major domain-level claims and all arXiv-style paper claims.",
-            "Claim-to-falsifier coverage for C1/C2 priority research domains."
+            "Falsifier rows for C2 long-tail domain claims beyond the priority subset.",
+            "Falsifier rows for all arXiv-style paper-specific claim registers.",
+            "Source Card backfill that validates each priority-domain falsifier against external or internal evidence."
           ],
-          "nextAction": "Extend page-level Claim ID coverage into a domain-level falsifier and downgrade-condition audit.",
+          "nextAction": "Extend priority-domain falsifier coverage into C2 long-tail domains and arXiv-style paper claim registers, then backfill Source Cards.",
           "blocks100Percent": true
         }
       ]
@@ -355,7 +357,7 @@
   "nextWorkOrder": [
     {
       "priority": 1,
-      "item": "Extend page-level Claim ID consistency into domain-level falsifier and downgrade-condition coverage for C1/C2 priority domains.",
+      "item": "Extend priority-domain falsifier coverage into C2 long-tail domains and arXiv-style paper claim registers.",
       "unblocks": [
         "RESEARCH-G6-falsifier-and-downgrade-coverage"
       ]
