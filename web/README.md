@@ -142,10 +142,12 @@ web/
     │   │   ├── proper-time-differential-waiting-hypothesis.astro
     │   │   └── controllable-metric-waiting-room-hypothesis.astro
     │   ├── book.astro
+    │   ├── lev.astro
     │   ├── model.astro
     │   └── research-standards.astro
     ├── scripts/
     │   ├── evidence-graph.js
+    │   ├── lev-effects-graph.js
     │   └── model-charts.js
     └── styles/
         └── global.css
@@ -160,12 +162,15 @@ web/
 - `src/pages/papers/proper-time-differential-waiting-hypothesis.astro`：独立 arXiv-style working paper 页面，提出“度规红移固有时差分路径”，把黑洞等待室收敛为可审查的未来等待假设。
 - `src/pages/papers/controllable-metric-waiting-room-hypothesis.astro`：独立 arXiv-style working paper 页面，提出“可控度规等待室假设”，承载“等待室 -> 技术升级 -> 退出采用 -> 再等待”的递归未来等待模型。
 - `src/pages/book.astro`：书籍介绍与 Human Infra 转译，承载章节主线、技术链路和边界说明。
+- `src/pages/lev.astro`：长寿逃逸速度路线页，展示 R1-R9 主流路线、概率门、多阶效应、正向飞轮和负向反噬链路。
 - `src/pages/model.astro`：交互预测模型页，展示寿命、有效时间、主观时间、相对时间和未来选择权的模型位置。
 - `src/pages/research-standards.astro`：科研标准页，记录论文阅读、预测模型报告、因果推断、可视化和工具链标准。
 - `src/scripts/evidence-graph.js`：D3 证据链图脚本，从页面嵌入的 Evidence Matrix JSON 生成主链、反哺路径、风险通道和因果门禁 SVG。
+- `src/scripts/lev-effects-graph.js`：D3 LEV 图表脚本，消费 `src/data/lev-model.json` 生成概率门、路线矩阵和多阶飞轮图。
 - `src/scripts/model-charts.js`：D3 图表和模型计算脚本，只表达演示模型，不输出个体死亡日期。
 - `public/static/browse/0.3.4/`、`public/use.typekit.net/`：从 arXiv HTML papers 页面下载并复用的 CSS、JS、图标、webmanifest 和归一化 Typekit 字体资源。
 - `src/data/book-signals.json`：书籍观点到 Human Infra 变量的结构化映射。
+- `src/data/lev-model.json`：由 `npm run export:lev-model` 从 `domains/c1-boundary-rewriting/longevity-evidence/data/manual/*.tsv` 导出的 LEV 路线与多阶效应 Web 数据。
 - `src/data/effective-immortality-evidence.json`：有效永生飞轮论文页的结构化数据源，承载 Research Question Brief、Methodology Blueprint、Research Execution Roadmap、Search Strategy Seeds、Systematic Search Protocol、Literature Screening Rubric、Literature Gap Map、Search Execution Register、Candidate Source Verification Register、Candidate Source Extraction Register、Claim Register、Claim Evidence Map、AI Research Failure Mode Audit、AI Task Evidence Register、Reference Registry、变量字典、模型契约、推导图、链路边、技术族和证据等级。
 - `src/data/metric-redshift-recursive-waiting.json`：度规红移递归等待假设论文页的结构化研究数据源，承载 Problem Anchor、Paper Plan、贡献注册表、Claim Register、Claim-Evidence Matrix、Claim Maturity Register、Falsifier Register、Source Cards、Source Card Ledger、Scenario Card Template、Scenario Evaluation Registry、Toy NCG Evaluation Protocol、Toy NCG Evaluation Registry、NCG Formula Decomposition、Pre-Submission Review Register、变量契约、模型假设、命题注册表、生命周期状态机、图表计划、引用语境预审、研究协议、失败条件和页面审查契约。
 - `src/data/proper-time-differential-waiting-hypothesis.json`：度规红移固有时差分路径专项论文页的结构化研究数据源，承载概念表、核心假设、贡献注册表、生命周期状态机、NCG 变量、可达性阶梯、反证条件、Source Cards、Claim-Evidence Matrix、Scenario Cards、Scenario Evaluation Registry、Qualitative NCG Scale、Scenario Variable Matrix、Toy NCG Evaluation Protocol、NCG Formula Decomposition、数据驱动 SVG 场景比较图、图表计划、引用边界、Citation Context Review Packet、Reference Registry 和页面审计契约。
@@ -202,6 +207,7 @@ web/
 - `scripts/assemble-fresh-reviewer-citation-results.mjs`：外部 fresh reviewer 结果汇总器，读取 `fresh-reviewer-context-packets/results/CTX*.json`，先用 Ajv / `RESULT_SCHEMA.json` 做 JSON Schema 校验，再执行本地语义门禁；只有全部 12 个 context 齐全且结构校验通过后，才生成正式 `FRESH_REVIEWER_CITATION_AUDIT_RESULTS.json`，并写入每个输入文件的 SHA-256；它不会替代 reviewer verdict。
 - `scripts/audit-fresh-reviewer-citation-results.mjs`：外部 fresh reviewer 结果账本审计器，生成 reviewer results 模板，若存在真实 `FRESH_REVIEWER_CITATION_AUDIT_RESULTS.json` 则验证它是否由 assembler 生成、是否能回到 `results/CTX*.json` 输入文件、hash 是否匹配、每个 context 是否含 reviewer verdict、source URL、resolution status 和 blocking conditions。
 - `scripts/export-reference-registry.mjs`：本地引用产物生成器，读取 Reference Registry 并生成 BibTeX 与 citation-audit 账本。
+- `scripts/export-lev-model-data.mjs`：本地 LEV 模型数据导出器，读取 longevity-evidence 的人工 TSV，输出 `src/data/lev-model.json`。
 - `scripts/verify-reference-registry.mjs`：本地联网参考文献核验器，使用 DOI/Crossref、arXiv API、官方 URL 和本地 artifact 生成 primary-source verification 账本。
 
 arXiv-style 论文页的可复用工具链已经沉淀在 [`../tools/arxiv-html-paper/`](../tools/arxiv-html-paper/README.md)。校验当前资源：
@@ -240,6 +246,7 @@ python3 tools/arxiv_html_paper_tool.py verify-assets --public-dir web/public
 | `papers/metric-redshift-recursive-waiting.astro` | 承载度规红移递归等待假设、等待倍率、递归升级和反证边界 | 黑洞接近、轨道控制、太空任务或人体实验步骤 |
 | `papers/proper-time-differential-waiting-hypothesis.astro` | 承载度规红移固有时差分路径、物理接口、状态机、净收益模型和反证条件 | 人工黑洞可行性承诺、工程操作方案或个体永生方案 |
 | `book.astro` | 承载书籍、作者观点和 Human Infra 转译 | 模型参数实现 |
+| `lev.astro` | 承载长寿逃逸速度主流路线、概率门、多阶效应和飞轮图 | 个体医疗建议、购买建议或长寿承诺 |
 | `model.astro` | 承载生命路径、有效时间、主观时间、相对时间和未来选择权的模型可视化 | 医疗建议或个人结论 |
 | `research-standards.astro` | 承载论文、工具、模型报告和可视化规范 | 宣传文案 |
 

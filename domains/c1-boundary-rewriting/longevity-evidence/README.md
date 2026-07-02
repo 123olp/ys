@@ -105,6 +105,8 @@ longevity-evidence/
 │   ├── evidence-model.md
 │   ├── lev-enabling-resources.md
 │   ├── lev-higher-order-effects-discovery.md
+│   ├── lev-route-card-template.md
+│   ├── lev-source-cards.md
 │   ├── lev-mainstream-routes.md
 │   ├── mvp-roadmap.md
 │   └── product-brief.md
@@ -132,6 +134,10 @@ longevity-evidence/
 `docs/lev-enabling-resources.md` 记录间接提升长寿逃逸速度概率的资源层：时间、注意力、认知、能力、记忆、AI、资金、社会支持和环境，并区分一阶、二阶和多阶效应。
 
 `docs/lev-higher-order-effects-discovery.md` 记录二阶和多阶效应调研发现，把系统思维、fundamental cause theory、intervention-generated inequalities、diffusion of innovations、社会关系死亡风险、认知储备、睡眠恢复和数字鸿沟等理论迁移到 LEV 概率门。
+
+`docs/lev-route-card-template.md` 规定任何新 LEV 路线进入模型前必须填写的路线卡字段、概率门、正负链路和禁止外推边界。
+
+`docs/lev-source-cards.md` 保存第一批 Source Cards，限定二阶 / 多阶效应理论来源能支持什么、不能支持什么。
 
 ## 运行示例
 

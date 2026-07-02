@@ -1,0 +1,140 @@
+---
+import ResearchLayout from "../layouts/ResearchLayout.astro";
+import SectionHeader from "../components/SectionHeader.astro";
+import MetricGrid from "../components/MetricGrid.astro";
+import levModel from "../data/lev-model.json";
+
+const metrics = [
+  {label: "主流路线", value: String(levModel.summaries.routeCount), note: "R1-R9 已转成路线卡"},
+  {label: "多阶发现", value: String(levModel.summaries.effectCount), note: "二阶 / 多阶效应卡"},
+  {label: "概率门", value: String(levModel.summaries.gateCounts.length), note: "采用、扩散、校准、恢复等门槛"},
+  {label: "数据源", value: "TSV -> JSON", note: "研究域数据驱动 Web 展示"}
+];
+
+const topGates = levModel.summaries.gateCounts.slice(0, 6);
+const routeRows = levModel.routeCards;
+const effectRows = levModel.higherOrderEffects;
+---
+<ResearchLayout
+  title="长寿逃逸速度路线与多阶效应"
+  description="Human Infra LEV mainstream routes, enabling resources, higher-order effects and probability gates"
+  section="LEV Route Model"
+>
+  <div class="page">
+    <section class="section" style="margin-top: 0">
+      <SectionHeader
+        kicker="Longevity Escape Velocity"
+        title="把长寿逃逸速度从路线清单升级为模型数据"
+        lead="本页不是证明任何路线已经实现长寿逃逸速度，而是把主流路线、间接资源、二阶/多阶效应、概率门和负向飞轮放进同一个审查模型。"
+      />
+      <MetricGrid items={metrics} />
+    </section>
+
+    <section class="section">
+      <div class="model-lab">
+        <div>
+          <SectionHeader
+            kicker="Route Model"
+            title="主流路线不是并列新闻，而是不同模型位置"
+            lead="每条路线都必须说明直接改变什么、二阶改变什么概率门、多阶是否进入技术窗口或资源飞轮，以及不能推出什么。"
+          />
+          <div class="paper-panel">
+            <div class="equation-box">路线 R
+  -> 直接效应 direct_effect
+  -> 一阶状态 / 观测变化
+  -> 二阶采用、扩散、校准或恢复概率
+  -> 多阶技术窗口、资源复利或负向反噬
+  -> 对主体持续性和未来选择权产生条件性影响</div>
+          </div>
+        </div>
+        <aside class="control-panel">
+          <strong>高频概率门</strong>
+          {topGates.map((gate) => (
+            <label>
+              {gate.id}
+              <progress value={gate.count} max={topGates[0]?.count ?? 1}></progress>
+              <small>{gate.count} 条记录</small>
+            </label>
+          ))}
+        </aside>
+      </div>
+    </section>
+
+    <section class="section">
+      <SectionHeader
+        kicker="Visualization"
+        title="概率门断点、路线矩阵和多阶飞轮"
+        lead="这些图表消费 `web/src/data/lev-model.json`，该 JSON 由 `data/manual/*.tsv` 导出。"
+      />
+      <div class="figure-panel">
+        <div class="chart-frame" data-lev-chart="gates"></div>
+      </div>
+      <div class="figure-panel" style="margin-top: 1rem">
+        <div class="chart-frame" data-lev-chart="matrix"></div>
+      </div>
+      <div class="figure-panel" style="margin-top: 1rem">
+        <div class="chart-frame" data-lev-chart="flywheel"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <SectionHeader
+        kicker="Route Cards"
+        title="R1-R9 主流路线卡"
+        lead="路线卡用于把路线叙事变成可审查变量。边界字段保留禁止外推项。"
+      />
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>路线</th>
+            <th>类型</th>
+            <th>直接效应</th>
+            <th>概率门</th>
+            <th>边界</th>
+          </tr>
+        </thead>
+        <tbody>
+          {routeRows.map((route) => (
+            <tr>
+              <td><strong>{route.route_id}</strong><br />{route.route_name}</td>
+              <td>{route.direct_route_type}</td>
+              <td>{route.direct_effect}</td>
+              <td>{route.gates.join(", ")}</td>
+              <td>{route.boundary}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </section>
+
+    <section class="section">
+      <SectionHeader
+        kicker="Higher-Order Effects"
+        title="二阶 / 多阶效应发现"
+        lead="这些发现用于审查资源、工具和制度如何间接改变直接长寿技术的可用收益。"
+      />
+      <div class="dense-grid">
+        {effectRows.map((effect) => (
+          <article class="paper-panel">
+            <h3>{effect.finding_id}</h3>
+            <p><strong>{effect.finding}</strong></p>
+            <p>资源：{effect.resources.join(" / ")}</p>
+            <p>概率门：{effect.gates.join(", ")}</p>
+            <p>正向：{effect.positive_chain}</p>
+            <p>负向：{effect.negative_chain}</p>
+          </article>
+        ))}
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="boundary">
+        本页是研究展示与模型组织，不提供个体医疗建议、投资建议、购买建议、用药建议或寿命承诺。所有路线都必须经过来源、证据等级、适用范围、概率门和禁止外推审查。
+      </div>
+    </section>
+  </div>
+  <script id="lev-model-data" type="application/json" set:html={JSON.stringify(levModel)}></script>
+  <script>
+    import "../scripts/lev-effects-graph.js";
+  </script>
+</ResearchLayout>

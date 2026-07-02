@@ -77,6 +77,8 @@ longevity-evidence/
 │   ├── evidence-model.md
 │   ├── lev-enabling-resources.md
 │   ├── lev-higher-order-effects-discovery.md
+│   ├── lev-route-card-template.md
+│   ├── lev-source-cards.md
 │   ├── lev-mainstream-routes.md
 │   ├── mvp-roadmap.md
 │   └── product-brief.md
@@ -96,6 +98,8 @@ longevity-evidence/
 - `docs/data-inventory.md`：数据域、字段、持续维护源和更新节奏。
 - `docs/lev-enabling-resources.md`：LEV 间接资源层，维护时间、注意力、认知、能力、记忆、AI、资金、社会支持、环境及多阶效应链路。
 - `docs/lev-higher-order-effects-discovery.md`：二阶 / 多阶效应调研发现，维护新增概率门、正负链路、研究传统和可迁移标签。
+- `docs/lev-route-card-template.md`：LEV 路线卡契约，规定新路线必须填写的变量、概率门、证据和禁止外推边界。
+- `docs/lev-source-cards.md`：LEV Source Cards，保存来源能支持和不能支持的主张边界。
 - `docs/lev-mainstream-routes.md`：长寿逃逸速度主流路线、官方/论文来源信号、现有研究域映射和证据边界。
 - `docs/collection-run-*.md`：历史采集记录和质量风险。
 - `data/manual/interventions.json`：首批 20 个干预对象、类别、别名和检索词。

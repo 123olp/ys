@@ -143,6 +143,7 @@ flowchart LR
 | 查看定量预测模型 | [模型说明](docs/explanations/life-path-prediction-model.md) / [模型契约](docs/reference/life-path-prediction-model-contract.md) / [模型治理](docs/reference/life-path-prediction-model-governance.md) / [科研工具包](docs/reference/research-model-visualization-toolkit.md) | 如何量化判断技术、因素和干预对寿命、有效时间、主观时间、相对时间和未来选择权的影响 |
 | 整理论文、书籍、工具和案例 | [资料卡片制度](docs/reference/source-card-system.md) / [资料卡片模板](docs/templates/research-card.md) | 把外部资料转成可复用语料、模型变量和 Web 展示材料 |
 | 打开正式 Web 应用 | [web/README.md](web/README.md) / [首页源文件](web/src/pages/index.astro) | Astro + D3 多页应用，承载书籍转译、科研叙事、预测模型和交互图表 |
+| 查看长寿逃逸速度路线页 | [页面源文件](web/src/pages/lev.astro) / [模型数据](web/src/data/lev-model.json) / [路线卡 TSV](domains/c1-boundary-rewriting/longevity-evidence/data/manual/lev_route_cards.tsv) | 展示 R1-R9 主流路线、概率门、二阶/多阶效应、正向飞轮和负向反噬链路 |
 | 复用 arXiv 论文页框架 | [工具说明](tools/arxiv-html-paper/README.md) / [消费契约](tools/arxiv-html-paper/CONTRACT.md) / [消费指南](tools/arxiv-html-paper/CONSUMER_GUIDE.md) / [工具链分析](docs/reference/arxiv-html-papers-toolchain.md) | 把 arXiv HTML papers 的 CSS、JS、字体、控件和 Astro 模板沉淀成可复制、可治理、可迁移的工具链 |
 | 查看有效永生飞轮论文页 | [页面源文件](web/src/pages/papers/effective-immortality-flywheel.astro) / [论文草案](docs/explanations/effective-immortality-acceleration-flywheel.md) | 独立 arXiv-style 页面，不覆盖旧 `/paper/`，用于展示有效永生飞轮的变量、假设、证据脊梁和研究路线 |
 | 查看度规红移递归等待论文页 | [页面源文件](web/src/pages/papers/metric-redshift-recursive-waiting.astro) | 独立 arXiv-style 页面，提出可控强红移等待区、固有时差分和等待-升级递归循环假设 |
@@ -2179,6 +2180,7 @@ flowchart LR
 - 2026-07-02：新增 C1-C6 物理分级目录，并把 990 个正式研究域移动到对应 tier；`classification.tsv` 新增 `physical_path` 作为真实路径索引。
 - 2026-07-02：新增 `tools/update_domain_doc_contracts.py`，并为 990 个正式研究域的 README/AGENTS 补齐标准域信息与维护契约块。
 - 2026-07-02：扩展研究域文档生成器，为 990 个正式研究域补齐分层研究推进骨架与代理执行流程块。
+- 2026-07-02：新增长寿逃逸速度路线模型页 `/lev/`，把主流路线、概率门、二阶/多阶效应和正反飞轮接入结构化 TSV、导出 JSON 与 D3 可视化。
 - 2026-06-20：从 Biocat 单项目重组为 Human Infra 总项目；Biocat 迁入 `domains/c1-boundary-rewriting/longevity-evidence/`；新增去具身中枢生命系统与记忆编辑两个研究域；补齐 Docs-as-Code 知识仓库根文件、文档分层、协作模板和结构检查脚本。
 - 2026-06-22：新增 `future-waiting` 子域和“度规红移固有时差分路径（黑洞等待室）”未来等待路径。
 - 2026-06-23：新增 GitHub Actions 远程质量门禁，统一运行本地 `make check`。
