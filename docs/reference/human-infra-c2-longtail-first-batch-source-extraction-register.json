@@ -12,10 +12,10 @@
   "scope": {
     "batchId": "C2-LT-B1",
     "queueTaskCount": 48,
-    "extractedTaskCount": 24,
-    "remainingTaskCount": 24,
-    "coveredDomainCount": 12,
-    "extractionDepth": "first-24-high-impact-acute-chronic-metabolic-fitness-neuro-and-motor-continuity-sources",
+    "extractedTaskCount": 48,
+    "remainingTaskCount": 0,
+    "coveredDomainCount": 24,
+    "extractionDepth": "complete-48-source-context-extractions-for-first-24-high-impact-c2-longtail-domains",
     "selectedTaskIds": [
       "C2LTB1-EXT-001",
       "C2LTB1-EXT-002",
@@ -40,7 +40,31 @@
       "C2LTB1-EXT-021",
       "C2LTB1-EXT-022",
       "C2LTB1-EXT-023",
-      "C2LTB1-EXT-024"
+      "C2LTB1-EXT-024",
+      "C2LTB1-EXT-025",
+      "C2LTB1-EXT-026",
+      "C2LTB1-EXT-027",
+      "C2LTB1-EXT-028",
+      "C2LTB1-EXT-029",
+      "C2LTB1-EXT-030",
+      "C2LTB1-EXT-031",
+      "C2LTB1-EXT-032",
+      "C2LTB1-EXT-033",
+      "C2LTB1-EXT-034",
+      "C2LTB1-EXT-035",
+      "C2LTB1-EXT-036",
+      "C2LTB1-EXT-037",
+      "C2LTB1-EXT-038",
+      "C2LTB1-EXT-039",
+      "C2LTB1-EXT-040",
+      "C2LTB1-EXT-041",
+      "C2LTB1-EXT-042",
+      "C2LTB1-EXT-043",
+      "C2LTB1-EXT-044",
+      "C2LTB1-EXT-045",
+      "C2LTB1-EXT-046",
+      "C2LTB1-EXT-047",
+      "C2LTB1-EXT-048"
     ],
     "currentLimitations": [
       "This is a pilot extraction register, not a complete first-batch Source Card set.",
@@ -1078,17 +1102,1049 @@
         "domain-claim-upgrade"
       ],
       "nextAction": "Fresh-review the AAN ALS parameter for recommendation wording, evidence class, date/currentness, respiratory, nutrition and communication-support endpoints."
+    },
+    {
+      "taskId": "C2LTB1-EXT-025",
+      "domainId": "cancer-control",
+      "localDomainPath": "domains/c2-source-maintenance/cancer-control",
+      "sourceRefId": "C2LTB1-SRC-13-1",
+      "sourceTitle": "WHO Cancer fact sheet",
+      "sourceUrl": "https://www.who.int/news-room/fact-sheets/detail/cancer",
+      "extractionStatus": "completed-c2ltb1-pilot-source-context-extraction",
+      "sourceAccessStatus": "official-global-public-health-fact-sheet-source-identified",
+      "sourceRole": "global-cancer-burden-prevention-screening-and-treatment-context-anchor",
+      "exactClaimUse": "Supports cancer control as a global burden and continuity domain spanning prevention, early detection, diagnosis, treatment, palliative care and survivorship burden.",
+      "endpointDefinition": "Candidate endpoints include cancer incidence, cancer mortality, stage at diagnosis, access to diagnosis or treatment, survivorship burden and palliative-care need.",
+      "populationOrSetting": "Global public-health context across cancer types and health systems. It is not a tumor-specific guideline, treatment protocol or individual prognosis model.",
+      "effectOrMechanismSignal": "Burden-context signal: cancer affects subject continuity through mortality risk, treatment burden, functional loss, late effects and care-access constraints.",
+      "uncertaintyOrBias": "Cancer is heterogeneous by site, stage, biology, screening pathway, treatment access and registry quality; global summaries can hide local and tumor-specific differences.",
+      "transferBoundary": "Transfer only to global cancer-control framing, endpoint vocabulary and burden context until tumor-specific and setting-specific evidence is extracted.",
+      "downgradeTriggers": [
+        "If all cancers are merged into one calibrated risk channel, block quantitative use.",
+        "If global burden statements are used for tumor-specific treatment claims, downgrade to burden context.",
+        "If stage, site and access variables are omitted, block model promotion."
+      ],
+      "modelPosition": {
+        "primaryLocation": "global-burden-and-cancer-control-route-context",
+        "variables": [
+          "incidence",
+          "stage-at-diagnosis",
+          "mortality-risk",
+          "treatment-access",
+          "survivorship-burden"
+        ],
+        "admissibleUse": "global burden and cancer-control endpoint vocabulary only"
+      },
+      "modelAdmissionDecision": "burden-context-support-only-blocked-for-calibrated-modeling",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Split cancer-control Source Cards by cancer site, stage, screening route, treatment access, survivorship burden and palliative-care endpoint."
+    },
+    {
+      "taskId": "C2LTB1-EXT-026",
+      "domainId": "cancer-control",
+      "localDomainPath": "domains/c2-source-maintenance/cancer-control",
+      "sourceRefId": "C2LTB1-SRC-13-2",
+      "sourceTitle": "NCI Cancer Control and Population Sciences",
+      "sourceUrl": "https://cancercontrol.cancer.gov/",
+      "extractionStatus": "completed-c2ltb1-pilot-source-context-extraction",
+      "sourceAccessStatus": "official-research-program-source-identified",
+      "sourceRole": "cancer-control-research-program-and-population-science-context-anchor",
+      "exactClaimUse": "Supports cancer control as a research-program domain that connects prevention, behavioral science, surveillance, implementation, survivorship and population health.",
+      "endpointDefinition": "Candidate endpoints include prevention exposure, screening uptake, surveillance measures, implementation outcomes, survivorship outcomes and population disparities.",
+      "populationOrSetting": "Cancer control research and population-science setting, not a single guideline, intervention effect estimate or clinical care pathway.",
+      "effectOrMechanismSignal": "Research-infrastructure signal: cancer outcomes depend on prevention, behavior, screening, treatment diffusion, implementation capacity and population-level disparities.",
+      "uncertaintyOrBias": "Program pages map research areas rather than report a specific effect size; individual studies vary by design, population, endpoint and implementation context.",
+      "transferBoundary": "Transfer only to taxonomy, research-area routing and variable family selection. Use study-specific sources for effects, endpoints or calibration.",
+      "downgradeTriggers": [
+        "If a program taxonomy is treated as evidence of intervention efficacy, downgrade to routing context.",
+        "If surveillance, survivorship and implementation endpoints are collapsed, require separate cards.",
+        "If no study-level source is attached, block claim upgrade."
+      ],
+      "modelPosition": {
+        "primaryLocation": "research-taxonomy-and-variable-family-routing-context",
+        "variables": [
+          "incidence",
+          "stage-at-diagnosis",
+          "mortality-risk",
+          "treatment-access",
+          "survivorship-burden"
+        ],
+        "admissibleUse": "research-domain taxonomy and source-discovery routing only"
+      },
+      "modelAdmissionDecision": "research-program-context-only-blocked-for-calibrated-modeling",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Use this source to route tumor-specific cancer-control cards to surveillance, implementation, survivorship and behavior evidence."
+    },
+    {
+      "taskId": "C2LTB1-EXT-027",
+      "domainId": "colorectal-cancer-screening-treatment-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/colorectal-cancer-screening-treatment-continuity",
+      "sourceRefId": "C2LTB1-SRC-14-1",
+      "sourceTitle": "USPSTF Colorectal Cancer Screening Recommendation",
+      "sourceUrl": "https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/colorectal-cancer-screening",
+      "extractionStatus": "completed-c2ltb1-pilot-source-context-extraction",
+      "sourceAccessStatus": "official-preventive-screening-guideline-source-identified",
+      "sourceRole": "colorectal-cancer-screening-age-test-and-followup-guideline-anchor",
+      "exactClaimUse": "Supports colorectal cancer screening as a prevention and early-detection route whose model variables must separate eligible population, screening modality, abnormal-test follow-up and outcome endpoints.",
+      "endpointDefinition": "Candidate endpoints include screening uptake, test modality, positive-test follow-up, stage at diagnosis, colorectal cancer incidence and colorectal cancer mortality.",
+      "populationOrSetting": "Preventive screening recommendation context for asymptomatic adults within specified age and risk boundaries. It is not individual screening advice.",
+      "effectOrMechanismSignal": "Screening-route signal: detecting precancerous lesions or earlier cancers can shift stage distribution and mortality risk, but only within recommendation-defined populations and tests.",
+      "uncertaintyOrBias": "Benefit-harm balance depends on age, risk, modality, adherence, colonoscopy access, false positives, overdiagnosis, complications and follow-up completion.",
+      "transferBoundary": "Transfer only to screening-route endpoint vocabulary until recommendation grade, eligible age range, modality and follow-up requirements are fully extracted.",
+      "downgradeTriggers": [
+        "If screening modality and follow-up are not separated, block endpoint promotion.",
+        "If recommendation age and risk boundaries are omitted, block model use.",
+        "If guideline benefit is converted into personal mortality change, block personal prediction."
+      ],
+      "modelPosition": {
+        "primaryLocation": "screening-route-and-followup-endpoint-context",
+        "variables": [
+          "screening-uptake",
+          "positive-test-followup",
+          "stage-at-diagnosis",
+          "mortality-risk",
+          "treatment-continuity"
+        ],
+        "admissibleUse": "screening endpoint and guideline-route vocabulary pending full recommendation extraction"
+      },
+      "modelAdmissionDecision": "screening-guideline-context-only-blocked-for-calibrated-modeling",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Extract USPSTF grade, eligible age range, screening modalities, follow-up requirements, benefit-harm boundaries and outcome endpoints."
+    },
+    {
+      "taskId": "C2LTB1-EXT-028",
+      "domainId": "colorectal-cancer-screening-treatment-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/colorectal-cancer-screening-treatment-continuity",
+      "sourceRefId": "C2LTB1-SRC-14-2",
+      "sourceTitle": "CDC Colorectal Cancer Screening",
+      "sourceUrl": "https://www.cdc.gov/colorectal-cancer/screening/index.html",
+      "extractionStatus": "completed-c2ltb1-pilot-source-context-extraction",
+      "sourceAccessStatus": "official-public-health-screening-implementation-source-identified",
+      "sourceRole": "colorectal-cancer-public-health-screening-access-and-awareness-context-anchor",
+      "exactClaimUse": "Supports colorectal cancer screening as a public-health implementation domain with attention to screening awareness, test types and follow-up access.",
+      "endpointDefinition": "Candidate endpoints include screening status, screening test type, timely follow-up after abnormal result, stage at diagnosis and access barriers.",
+      "populationOrSetting": "Public-health education and screening implementation context, not a clinical eligibility assessment or individual testing recommendation.",
+      "effectOrMechanismSignal": "Implementation-context signal: screening completion and follow-up continuity are conversion channels between preventive recommendation and stage/mortality outcomes.",
+      "uncertaintyOrBias": "Public education pages may not preserve full guideline evidence grades, risk stratification, test sensitivity, adherence patterns or local access constraints.",
+      "transferBoundary": "Transfer only to implementation and patient-facing screening-route vocabulary; use USPSTF or trial/modeling evidence for recommendation strength and effect estimates.",
+      "downgradeTriggers": [
+        "If public education content is used as calibrated screening effect evidence, downgrade to implementation context.",
+        "If abnormal-test follow-up is omitted, block continuity claims.",
+        "If test types are collapsed without modality flags, require endpoint-specific cards."
+      ],
+      "modelPosition": {
+        "primaryLocation": "screening-implementation-and-followup-continuity-context",
+        "variables": [
+          "screening-uptake",
+          "positive-test-followup",
+          "stage-at-diagnosis",
+          "mortality-risk",
+          "treatment-continuity"
+        ],
+        "admissibleUse": "implementation vocabulary and follow-up-continuity context only"
+      },
+      "modelAdmissionDecision": "implementation-context-support-only-blocked-for-calibrated-modeling",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Pair CDC implementation fields with USPSTF recommendation fields and add positive-test follow-up and access-barrier variables."
+    },
+    {
+      "taskId": "C2LTB1-EXT-029",
+      "domainId": "breast-cancer-screening-treatment-survivorship-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/breast-cancer-screening-treatment-survivorship-continuity",
+      "sourceRefId": "C2LTB1-SRC-15-1",
+      "sourceTitle": "USPSTF Breast Cancer Screening Recommendation",
+      "sourceUrl": "https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/breast-cancer-screening",
+      "extractionStatus": "completed-c2ltb1-pilot-source-context-extraction",
+      "sourceAccessStatus": "official-preventive-screening-guideline-source-identified",
+      "sourceRole": "breast-cancer-screening-age-modality-and-harm-benefit-guideline-anchor",
+      "exactClaimUse": "Supports breast cancer screening as a guideline route where age, risk, imaging modality, benefit-harm balance and follow-up must be separated before model use.",
+      "endpointDefinition": "Candidate endpoints include screening uptake, mammography interval, stage at diagnosis, breast cancer mortality, false-positive burden, overdiagnosis context and follow-up completion.",
+      "populationOrSetting": "Preventive screening recommendation context for defined populations. It is not personal screening advice, diagnostic workup or treatment selection.",
+      "effectOrMechanismSignal": "Screening-route signal: earlier detection can affect stage distribution and mortality risk, while false positives, overdiagnosis and downstream procedures are competing burden channels.",
+      "uncertaintyOrBias": "Transfer depends on age, baseline risk, breast density, screening interval, access, false-positive rates, overdiagnosis assumptions and evidence-modeling choices.",
+      "transferBoundary": "Transfer only to guideline-route and endpoint vocabulary until recommendation grade, population boundaries and harm-benefit evidence are extracted.",
+      "downgradeTriggers": [
+        "If age, risk and modality boundaries are missing, block model use.",
+        "If harms are omitted from benefit framing, downgrade to incomplete screening context.",
+        "If guideline recommendation is used for personal diagnosis or treatment, block prohibited use."
+      ],
+      "modelPosition": {
+        "primaryLocation": "screening-guideline-benefit-harm-route-context",
+        "variables": [
+          "screening-uptake",
+          "stage-at-diagnosis",
+          "recurrence-risk",
+          "late-effects",
+          "survivorship-function"
+        ],
+        "admissibleUse": "screening route and benefit-harm endpoint vocabulary pending full recommendation extraction"
+      },
+      "modelAdmissionDecision": "screening-guideline-context-only-blocked-for-calibrated-modeling",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Extract USPSTF breast screening grade, population, modality, interval, harms, benefits and downstream follow-up endpoints."
+    },
+    {
+      "taskId": "C2LTB1-EXT-030",
+      "domainId": "breast-cancer-screening-treatment-survivorship-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/breast-cancer-screening-treatment-survivorship-continuity",
+      "sourceRefId": "C2LTB1-SRC-15-2",
+      "sourceTitle": "NCI Breast Cancer Treatment",
+      "sourceUrl": "https://www.cancer.gov/types/breast/patient/breast-treatment-pdq",
+      "extractionStatus": "completed-c2ltb1-pilot-source-context-extraction",
+      "sourceAccessStatus": "official-cancer-treatment-information-source-identified",
+      "sourceRole": "breast-cancer-treatment-stage-subtype-and-survivorship-context-anchor",
+      "exactClaimUse": "Supports breast cancer treatment as a stage, subtype and modality-dependent continuity domain where treatment route, recurrence risk, late effects and function need separate extraction.",
+      "endpointDefinition": "Candidate endpoints include stage, receptor or subtype context, treatment modality, recurrence, adverse or late effects, survival context and survivorship function.",
+      "populationOrSetting": "Patient-oriented NCI treatment information for breast cancer. It is not a personalized treatment recommendation or oncologic decision tool.",
+      "effectOrMechanismSignal": "Treatment-context signal: surgery, radiation, systemic therapy and follow-up can alter mortality, recurrence, adverse-effect burden and long-term function.",
+      "uncertaintyOrBias": "Treatment choices depend on tumor biology, stage, prior treatment, comorbidity, patient preference, access and evolving standards of care.",
+      "transferBoundary": "Transfer only to treatment-route vocabulary, endpoint families and survivorship burden context. Use trial and guideline evidence for effect sizes or recommendations.",
+      "downgradeTriggers": [
+        "If subtype, stage and treatment modality are collapsed, block treatment-route modeling.",
+        "If patient information is used as a clinical recommendation, block prohibited use.",
+        "If recurrence and late-effect endpoints are not separated, require endpoint-specific cards."
+      ],
+      "modelPosition": {
+        "primaryLocation": "treatment-route-survivorship-and-late-effect-context",
+        "variables": [
+          "screening-uptake",
+          "stage-at-diagnosis",
+          "recurrence-risk",
+          "late-effects",
+          "survivorship-function"
+        ],
+        "admissibleUse": "treatment route and survivorship endpoint vocabulary only"
+      },
+      "modelAdmissionDecision": "treatment-context-support-only-blocked-for-calibrated-modeling",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Create treatment-route cards by stage/subtype, modality, recurrence endpoint, late-effect burden and survivorship function."
+    },
+    {
+      "taskId": "C2LTB1-EXT-031",
+      "domainId": "cervical-cancer-hpv-prevention-screening-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/cervical-cancer-hpv-prevention-screening-continuity",
+      "sourceRefId": "C2LTB1-SRC-16-1",
+      "sourceTitle": "USPSTF Cervical Cancer Screening Recommendation",
+      "sourceUrl": "https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/cervical-cancer-screening",
+      "extractionStatus": "completed-c2ltb1-pilot-source-context-extraction",
+      "sourceAccessStatus": "official-preventive-screening-guideline-source-identified",
+      "sourceRole": "cervical-cancer-screening-age-test-and-followup-guideline-anchor",
+      "exactClaimUse": "Supports cervical cancer screening as a guideline route where age group, test strategy, interval, abnormal-result follow-up and exclusions define the usable variables.",
+      "endpointDefinition": "Candidate endpoints include screening uptake, HPV testing status, cytology status, abnormal-result follow-up, precancer treatment and cervical cancer incidence.",
+      "populationOrSetting": "Preventive screening recommendation context for defined populations. It is not personal screening advice, vaccination advice or abnormal-result management guidance.",
+      "effectOrMechanismSignal": "Screening-route signal: detecting high-risk HPV infection or precancer can change progression pathway and cancer incidence when follow-up and treatment occur.",
+      "uncertaintyOrBias": "Applicability depends on age, cervix status, prior screening, immune status, test strategy, adherence, vaccination background and follow-up completion.",
+      "transferBoundary": "Transfer only to screening test and guideline-route vocabulary until exact recommendation wording, population exclusions and evidence grade are extracted.",
+      "downgradeTriggers": [
+        "If age, test strategy or exclusion criteria are missing, block endpoint promotion.",
+        "If screening is treated as equivalent to HPV vaccination, require separate prevention cards.",
+        "If abnormal follow-up is omitted, block continuity claims."
+      ],
+      "modelPosition": {
+        "primaryLocation": "screening-guideline-and-abnormal-followup-route-context",
+        "variables": [
+          "hpv-vaccination",
+          "screening-uptake",
+          "abnormal-result-followup",
+          "precancer-treatment",
+          "cancer-incidence"
+        ],
+        "admissibleUse": "screening route and endpoint vocabulary pending full recommendation extraction"
+      },
+      "modelAdmissionDecision": "screening-guideline-context-only-blocked-for-calibrated-modeling",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Extract USPSTF cervical screening grade, age groups, test strategies, exclusions, interval and abnormal-result follow-up boundary."
+    },
+    {
+      "taskId": "C2LTB1-EXT-032",
+      "domainId": "cervical-cancer-hpv-prevention-screening-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/cervical-cancer-hpv-prevention-screening-continuity",
+      "sourceRefId": "C2LTB1-SRC-16-2",
+      "sourceTitle": "WHO Cervical Cancer fact sheet",
+      "sourceUrl": "https://www.who.int/news-room/fact-sheets/detail/cervical-cancer",
+      "extractionStatus": "completed-c2ltb1-pilot-source-context-extraction",
+      "sourceAccessStatus": "official-global-public-health-fact-sheet-source-identified",
+      "sourceRole": "cervical-cancer-hpv-burden-prevention-and-screening-context-anchor",
+      "exactClaimUse": "Supports cervical cancer as an HPV-linked preventable cancer-control domain involving vaccination, screening, treatment of precancer and access to care.",
+      "endpointDefinition": "Candidate endpoints include HPV vaccination coverage, screening coverage, precancer detection or treatment, cervical cancer incidence, cervical cancer mortality and access gaps.",
+      "populationOrSetting": "Global public-health context for cervical cancer prevention and control. It is not a personal screening or vaccination recommendation.",
+      "effectOrMechanismSignal": "Prevention-context signal: HPV vaccination and screening/follow-up pathways can affect progression from infection to precancer and cancer at population scale.",
+      "uncertaintyOrBias": "Global context varies by vaccination access, screening infrastructure, HIV prevalence, follow-up capacity, registry quality and treatment availability.",
+      "transferBoundary": "Transfer only to global burden, HPV prevention framing and endpoint vocabulary; use guideline and trial sources for specific recommendations or effect sizes.",
+      "downgradeTriggers": [
+        "If global elimination framing is treated as local program effectiveness, downgrade to burden context.",
+        "If vaccination, screening and treatment variables are merged, require route-specific cards.",
+        "If access and follow-up constraints are omitted, block continuity claims."
+      ],
+      "modelPosition": {
+        "primaryLocation": "global-prevention-burden-and-screening-route-context",
+        "variables": [
+          "hpv-vaccination",
+          "screening-uptake",
+          "abnormal-result-followup",
+          "precancer-treatment",
+          "cancer-incidence"
+        ],
+        "admissibleUse": "global burden and prevention-route vocabulary only"
+      },
+      "modelAdmissionDecision": "burden-and-prevention-context-support-only-blocked-for-calibrated-modeling",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Build cervical cancer cards separating HPV vaccination, screening, abnormal follow-up, precancer treatment, cancer incidence and mortality."
+    },
+    {
+      "taskId": "C2LTB1-EXT-033",
+      "domainId": "antimicrobial-resilience",
+      "localDomainPath": "domains/c2-source-maintenance/antimicrobial-resilience",
+      "sourceRefId": "C2LTB1-SRC-17-1",
+      "sourceTitle": "WHO Antimicrobial resistance",
+      "sourceUrl": "https://www.who.int/health-topics/antimicrobial-resistance",
+      "extractionStatus": "completed-c2ltb1-pilot-source-context-extraction",
+      "sourceAccessStatus": "official-global-health-topic-source-identified",
+      "sourceRole": "global-amr-risk-mechanism-and-surveillance-context-anchor",
+      "exactClaimUse": "Supports antimicrobial resistance as a system-level continuity risk where pathogen resistance, antibiotic pressure, infection prevention and surveillance affect treatment reliability.",
+      "endpointDefinition": "Candidate endpoints include resistance rate, antimicrobial use pressure, treatment failure risk, infection-control capacity, surveillance coverage and resistant-infection burden.",
+      "populationOrSetting": "Global One Health and public-health context spanning humans, animals, food systems and environments. It is not an individual antibiotic prescribing guide.",
+      "effectOrMechanismSignal": "Mechanism-context signal: antimicrobial pressure and pathogen evolution can reduce treatment effectiveness, increase severe infection risk and stress healthcare systems.",
+      "uncertaintyOrBias": "AMR estimates depend on surveillance coverage, pathogen/drug pair, specimen mix, laboratory standards, healthcare access and reporting completeness.",
+      "transferBoundary": "Transfer only to AMR mechanism, burden and surveillance-variable vocabulary until pathogen-specific data and setting-specific surveillance are extracted.",
+      "downgradeTriggers": [
+        "If pathogen-drug pairs are not specified, block quantitative resistance modeling.",
+        "If global AMR framing is used for individual antibiotic decisions, block personal advice.",
+        "If surveillance coverage is unknown, downgrade burden estimates to context only."
+      ],
+      "modelPosition": {
+        "primaryLocation": "system-level-treatment-reliability-and-surveillance-context",
+        "variables": [
+          "resistance-rate",
+          "antibiotic-use-pressure",
+          "infection-control-capacity",
+          "treatment-failure-risk",
+          "surveillance-coverage"
+        ],
+        "admissibleUse": "AMR mechanism, surveillance and burden vocabulary only"
+      },
+      "modelAdmissionDecision": "global-amr-context-support-only-blocked-for-calibrated-modeling",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Create pathogen-drug-pair Source Cards with surveillance denominator, geography, healthcare setting and resistance definition."
+    },
+    {
+      "taskId": "C2LTB1-EXT-034",
+      "domainId": "antimicrobial-resilience",
+      "localDomainPath": "domains/c2-source-maintenance/antimicrobial-resilience",
+      "sourceRefId": "C2LTB1-SRC-17-2",
+      "sourceTitle": "CDC Antimicrobial Resistance Threats Report",
+      "sourceUrl": "https://www.cdc.gov/antimicrobial-resistance/data-research/threats/index.html",
+      "extractionStatus": "completed-c2ltb1-pilot-source-context-extraction",
+      "sourceAccessStatus": "official-us-amr-surveillance-and-threat-report-source-identified",
+      "sourceRole": "us-amr-threat-burden-prioritization-and-surveillance-context-anchor",
+      "exactClaimUse": "Supports AMR as a US threat-ranking and burden domain where organism-specific threat categories, infections, deaths and prevention capacity require separate extraction.",
+      "endpointDefinition": "Candidate endpoints include pathogen threat category, resistant infections, deaths, healthcare setting, prevention capacity and surveillance coverage.",
+      "populationOrSetting": "US antimicrobial-resistance surveillance and public-health threat context; not a clinical prescribing or individual infection-risk source.",
+      "effectOrMechanismSignal": "Threat-context signal: resistant organisms can increase treatment failure, severe infection, healthcare burden and outbreak risk depending on setting and pathogen.",
+      "uncertaintyOrBias": "Burden estimates depend on surveillance systems, modeling assumptions, pathogen definitions, healthcare-associated versus community settings and reporting year.",
+      "transferBoundary": "Transfer only to US AMR threat taxonomy, surveillance variables and burden context; do not generalize globally or to individual treatment.",
+      "downgradeTriggers": [
+        "If threat categories are used as calibrated personal risk, block prediction use.",
+        "If organism-specific estimates are pooled without pathogen labels, block quantitative use.",
+        "If report year and method are omitted, downgrade to qualitative threat context."
+      ],
+      "modelPosition": {
+        "primaryLocation": "us-amr-threat-taxonomy-and-burden-context",
+        "variables": [
+          "resistance-rate",
+          "antibiotic-use-pressure",
+          "infection-control-capacity",
+          "treatment-failure-risk",
+          "surveillance-coverage"
+        ],
+        "admissibleUse": "US threat taxonomy and organism-specific burden routing only"
+      },
+      "modelAdmissionDecision": "amr-threat-report-context-only-blocked-for-calibrated-modeling",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Extract CDC AMR organism list, threat category, estimate year, burden method, infection setting and surveillance caveats."
+    },
+    {
+      "taskId": "C2LTB1-EXT-035",
+      "domainId": "immunization-public-health-surveillance",
+      "localDomainPath": "domains/c2-source-maintenance/immunization-public-health-surveillance",
+      "sourceRefId": "C2LTB1-SRC-18-1",
+      "sourceTitle": "WHO Immunization Agenda 2030",
+      "sourceUrl": "https://www.who.int/teams/immunization-vaccines-and-biologicals/strategies/ia2030",
+      "extractionStatus": "completed-c2ltb1-pilot-source-context-extraction",
+      "sourceAccessStatus": "official-global-immunization-strategy-source-identified",
+      "sourceRole": "global-immunization-strategy-coverage-equity-and-surveillance-context-anchor",
+      "exactClaimUse": "Supports immunization as a population-level continuity infrastructure involving vaccination coverage, equity, life-course vaccination and outbreak prevention.",
+      "endpointDefinition": "Candidate endpoints include vaccination coverage, zero-dose or missed communities, vaccine-preventable disease incidence, surveillance completeness and equity gap.",
+      "populationOrSetting": "Global immunization strategy and public-health infrastructure context. It is not an individual vaccine schedule or clinical contraindication source.",
+      "effectOrMechanismSignal": "Infrastructure signal: vaccination systems reduce vaccine-preventable disease risk when coverage, equity, supply, trust and surveillance operate together.",
+      "uncertaintyOrBias": "Strategy documents define direction and indicators but do not by themselves provide local effect sizes; coverage data quality and equity measurement vary.",
+      "transferBoundary": "Transfer only to global strategy, system-variable taxonomy and endpoint families; use schedule, surveillance and disease-specific sources for operational claims.",
+      "downgradeTriggers": [
+        "If strategy goals are treated as achieved outcomes, downgrade to target context.",
+        "If coverage is used without denominator and data-quality flags, block quantitative use.",
+        "If equity and surveillance variables are omitted, block infrastructure claims."
+      ],
+      "modelPosition": {
+        "primaryLocation": "immunization-system-strategy-and-equity-context",
+        "variables": [
+          "vaccination-coverage",
+          "outbreak-detection-lag",
+          "vaccine-preventable-disease-incidence",
+          "surveillance-completeness",
+          "equity-gap"
+        ],
+        "admissibleUse": "immunization strategy and system-variable taxonomy only"
+      },
+      "modelAdmissionDecision": "strategy-context-support-only-blocked-for-calibrated-modeling",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Map IA2030 indicators to vaccination coverage, equity, surveillance and outbreak-prevention Source Cards."
+    },
+    {
+      "taskId": "C2LTB1-EXT-036",
+      "domainId": "immunization-public-health-surveillance",
+      "localDomainPath": "domains/c2-source-maintenance/immunization-public-health-surveillance",
+      "sourceRefId": "C2LTB1-SRC-18-2",
+      "sourceTitle": "CDC Immunization Schedules",
+      "sourceUrl": "https://www.cdc.gov/vaccines/hcp/imz-schedules/index.html",
+      "extractionStatus": "completed-c2ltb1-pilot-source-context-extraction",
+      "sourceAccessStatus": "official-us-immunization-schedule-source-identified",
+      "sourceRole": "us-vaccine-schedule-age-risk-and-clinical-route-anchor",
+      "exactClaimUse": "Supports immunization schedule variables as age, risk-group, timing and vaccine-specific route metadata for later vaccine-preventable disease modeling.",
+      "endpointDefinition": "Candidate endpoints include schedule eligibility, dose timing, completion status, contraindication or precaution context, catch-up status and coverage linkage.",
+      "populationOrSetting": "US clinical and public-health schedule context for healthcare professionals. This register does not provide personal vaccination advice.",
+      "effectOrMechanismSignal": "Schedule-route signal: vaccine timing and completion create a structured exposure history relevant to vaccine-preventable disease risk and outbreak resilience.",
+      "uncertaintyOrBias": "Schedules change over time and vary by age, risk condition, prior doses, product, contraindication and local availability.",
+      "transferBoundary": "Transfer only to schedule metadata and endpoint vocabulary until vaccine-specific effectiveness, safety and coverage evidence are extracted separately.",
+      "downgradeTriggers": [
+        "If schedule year is omitted, block schedule-based modeling.",
+        "If schedule metadata is treated as vaccine effectiveness evidence, downgrade to route context.",
+        "If contraindications or special populations are ignored, block personal-advice use."
+      ],
+      "modelPosition": {
+        "primaryLocation": "immunization-schedule-route-and-eligibility-context",
+        "variables": [
+          "vaccination-coverage",
+          "outbreak-detection-lag",
+          "vaccine-preventable-disease-incidence",
+          "surveillance-completeness",
+          "equity-gap"
+        ],
+        "admissibleUse": "US schedule metadata and vaccine exposure-route vocabulary only"
+      },
+      "modelAdmissionDecision": "schedule-context-support-only-blocked-for-calibrated-modeling",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Extract schedule year, age bands, risk-group flags, dose timing, catch-up logic and contraindication boundaries into vaccine-specific cards."
+    },
+    {
+      "taskId": "C2LTB1-EXT-037",
+      "domainId": "chronic-viral-hepatitis-screening-liver-protection-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/chronic-viral-hepatitis-screening-liver-protection-continuity",
+      "sourceRefId": "C2LTB1-SRC-19-1",
+      "sourceTitle": "CDC Viral Hepatitis",
+      "sourceUrl": "https://www.cdc.gov/hepatitis/index.html",
+      "extractionStatus": "completed-c2ltb1-pilot-source-context-extraction",
+      "sourceAccessStatus": "official-us-viral-hepatitis-public-health-source-identified",
+      "sourceRole": "viral-hepatitis-screening-prevention-and-liver-risk-context-anchor",
+      "exactClaimUse": "Supports chronic viral hepatitis as a screening, linkage-to-care and liver-protection continuity domain involving HBV, HCV, cirrhosis and hepatocellular carcinoma risk channels.",
+      "endpointDefinition": "Candidate endpoints include hepatitis screening status, infection status, viral suppression or cure, fibrosis stage, HCC surveillance and liver-related mortality risk.",
+      "populationOrSetting": "US public-health viral hepatitis context. It is not personal testing advice, antiviral treatment guidance or individual liver-risk prediction.",
+      "effectOrMechanismSignal": "Screening and linkage signal: identifying HBV or HCV and linking to prevention or treatment can affect chronic liver disease progression and cancer surveillance pathways.",
+      "uncertaintyOrBias": "Transfer depends on virus type, age cohort, risk group, vaccination status, access to testing, linkage to care, treatment eligibility and surveillance completeness.",
+      "transferBoundary": "Transfer only to screening and liver-risk endpoint vocabulary; guideline-specific testing, treatment and surveillance recommendations require separate sources.",
+      "downgradeTriggers": [
+        "If HBV and HCV are merged without virus-specific flags, block endpoint promotion.",
+        "If screening status is converted into treatment effect, downgrade to route context.",
+        "If fibrosis stage or HCC surveillance boundary is omitted, block liver-outcome claims."
+      ],
+      "modelPosition": {
+        "primaryLocation": "screening-linkage-and-liver-protection-route-context",
+        "variables": [
+          "screening-status",
+          "viral-suppression-or-cure",
+          "fibrosis-stage",
+          "hcc-surveillance",
+          "liver-related-mortality-risk"
+        ],
+        "admissibleUse": "viral hepatitis screening and liver-risk endpoint vocabulary only"
+      },
+      "modelAdmissionDecision": "public-health-context-support-only-blocked-for-calibrated-modeling",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Split HBV and HCV cards by screening, vaccination/prevention, treatment response, fibrosis, HCC surveillance and liver-related outcomes."
+    },
+    {
+      "taskId": "C2LTB1-EXT-038",
+      "domainId": "chronic-viral-hepatitis-screening-liver-protection-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/chronic-viral-hepatitis-screening-liver-protection-continuity",
+      "sourceRefId": "C2LTB1-SRC-19-2",
+      "sourceTitle": "WHO Global hepatitis programme",
+      "sourceUrl": "https://www.who.int/teams/global-hiv-hepatitis-and-stis-programmes/hepatitis",
+      "extractionStatus": "completed-c2ltb1-pilot-source-context-extraction",
+      "sourceAccessStatus": "official-global-hepatitis-programme-source-identified",
+      "sourceRole": "global-hepatitis-elimination-testing-treatment-and-surveillance-context-anchor",
+      "exactClaimUse": "Supports viral hepatitis as a global elimination and health-system domain involving testing, treatment, prevention, surveillance and liver-disease burden.",
+      "endpointDefinition": "Candidate endpoints include testing coverage, treatment coverage, viral suppression or cure, new infections, hepatitis mortality and programme surveillance indicators.",
+      "populationOrSetting": "Global hepatitis programme and public-health strategy context, not an individual treatment or prognosis source.",
+      "effectOrMechanismSignal": "Programme-context signal: scaling prevention, testing and treatment can change chronic infection burden and liver-related outcomes at population scale.",
+      "uncertaintyOrBias": "Global programme indicators depend on country reporting, diagnostic access, treatment availability, stigma, financing and surveillance capacity.",
+      "transferBoundary": "Transfer only to programme indicator vocabulary and global strategy context; use clinical guidelines and cohort studies for individual-level disease progression or treatment effects.",
+      "downgradeTriggers": [
+        "If programme targets are treated as achieved effects, downgrade to strategy context.",
+        "If HBV and HCV programme indicators are pooled without type flags, block quantitative use.",
+        "If reporting completeness is unknown, keep as qualitative surveillance context."
+      ],
+      "modelPosition": {
+        "primaryLocation": "global-programme-surveillance-and-elimination-context",
+        "variables": [
+          "screening-status",
+          "viral-suppression-or-cure",
+          "fibrosis-stage",
+          "hcc-surveillance",
+          "liver-related-mortality-risk"
+        ],
+        "admissibleUse": "global programme indicator and surveillance vocabulary only"
+      },
+      "modelAdmissionDecision": "programme-context-support-only-blocked-for-calibrated-modeling",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Map WHO hepatitis programme indicators to testing, treatment, surveillance, liver morbidity and mortality endpoint cards."
+    },
+    {
+      "taskId": "C2LTB1-EXT-039",
+      "domainId": "newborn-screening-result-followup-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/newborn-screening-result-followup-continuity",
+      "sourceRefId": "C2LTB1-SRC-20-1",
+      "sourceTitle": "HRSA Newborn Screening",
+      "sourceUrl": "https://newbornscreening.hrsa.gov/",
+      "extractionStatus": "completed-c2ltb1-pilot-source-context-extraction",
+      "sourceAccessStatus": "official-us-newborn-screening-information-source-identified",
+      "sourceRole": "newborn-screening-condition-panel-result-and-followup-context-anchor",
+      "exactClaimUse": "Supports newborn screening as an early-life continuity system where timely screening, result reporting, confirmatory testing and treatment linkage affect developmental outcomes.",
+      "endpointDefinition": "Candidate endpoints include screening coverage, time to result, positive follow-up completion, time to treatment and developmental outcome.",
+      "populationOrSetting": "US newborn screening information and programme context for families, clinicians and state systems. It is not individual diagnosis or treatment advice.",
+      "effectOrMechanismSignal": "Early-detection signal: identifying screened conditions early can preserve future function when follow-up and treatment are timely.",
+      "uncertaintyOrBias": "Conditions, panels, timelines and follow-up processes vary by state; false positives, confirmatory testing, treatment access and tracking completeness affect transferability.",
+      "transferBoundary": "Transfer only to screening-system endpoint vocabulary and follow-up route context. Disease-specific effects require condition-specific evidence.",
+      "downgradeTriggers": [
+        "If state panel differences are omitted, block programme comparison.",
+        "If positive screen is treated as confirmed diagnosis, block clinical-validity claims.",
+        "If time-to-follow-up is missing, block continuity outcome claims."
+      ],
+      "modelPosition": {
+        "primaryLocation": "early-life-screening-followup-and-treatment-linkage-context",
+        "variables": [
+          "screening-coverage",
+          "time-to-result",
+          "positive-followup-completion",
+          "time-to-treatment",
+          "developmental-outcome"
+        ],
+        "admissibleUse": "newborn screening system and follow-up endpoint vocabulary only"
+      },
+      "modelAdmissionDecision": "screening-system-context-support-only-blocked-for-calibrated-modeling",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Extract condition-panel, state variability, result timing, confirmatory testing and treatment linkage fields into Source Cards."
+    },
+    {
+      "taskId": "C2LTB1-EXT-040",
+      "domainId": "newborn-screening-result-followup-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/newborn-screening-result-followup-continuity",
+      "sourceRefId": "C2LTB1-SRC-20-2",
+      "sourceTitle": "CDC Newborn Screening",
+      "sourceUrl": "https://www.cdc.gov/newborn-screening/index.html",
+      "extractionStatus": "completed-c2ltb1-pilot-source-context-extraction",
+      "sourceAccessStatus": "official-public-health-newborn-screening-source-identified",
+      "sourceRole": "newborn-screening-public-health-lab-and-followup-context-anchor",
+      "exactClaimUse": "Supports newborn screening as a public-health laboratory and follow-up infrastructure where testing quality, result communication and early intervention affect continuity.",
+      "endpointDefinition": "Candidate endpoints include screening coverage, specimen quality, time to result, positive follow-up completion, early intervention and developmental outcome.",
+      "populationOrSetting": "Public-health newborn screening context. It is not a diagnostic rule, individual treatment pathway or condition-specific prognosis model.",
+      "effectOrMechanismSignal": "Implementation-context signal: lab quality, timely reporting and follow-up convert early detection into potential functional preservation.",
+      "uncertaintyOrBias": "State systems, lab methods, specimen timing, false positives, confirmatory testing and follow-up tracking affect applicability.",
+      "transferBoundary": "Transfer only to public-health screening-process variables. Use condition-specific evidence for outcome magnitude and clinical pathways.",
+      "downgradeTriggers": [
+        "If specimen quality and timing are omitted, downgrade process claims.",
+        "If screen-positive status is treated as final disease status, block endpoint promotion.",
+        "If state-level differences are ignored, keep model admission blocked."
+      ],
+      "modelPosition": {
+        "primaryLocation": "public-health-screening-lab-and-followup-process-context",
+        "variables": [
+          "screening-coverage",
+          "time-to-result",
+          "positive-followup-completion",
+          "time-to-treatment",
+          "developmental-outcome"
+        ],
+        "admissibleUse": "newborn screening process and follow-up vocabulary only"
+      },
+      "modelAdmissionDecision": "public-health-screening-context-only-blocked-for-calibrated-modeling",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Pair CDC process variables with HRSA condition-panel data and build condition-specific follow-up cards."
+    },
+    {
+      "taskId": "C2LTB1-EXT-041",
+      "domainId": "fertility-preservation-gamete-embryo-cryostorage-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/fertility-preservation-gamete-embryo-cryostorage-continuity",
+      "sourceRefId": "C2LTB1-SRC-21-1",
+      "sourceTitle": "ASCO Fertility Preservation Guideline Update",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/29620997/",
+      "extractionStatus": "completed-c2ltb1-pilot-source-context-extraction",
+      "sourceAccessStatus": "pubmed-indexed-oncology-fertility-preservation-guideline-source-identified",
+      "sourceRole": "cancer-treatment-fertility-preservation-counseling-and-option-value-anchor",
+      "exactClaimUse": "Supports fertility preservation as a future-option preservation route for people facing gonadotoxic cancer treatment, requiring counseling, timing, method and consent extraction.",
+      "endpointDefinition": "Candidate endpoints include preservation access, counseling before treatment, cryostorage status, future use, reproductive option value and consent/disposition status.",
+      "populationOrSetting": "Oncology and fertility preservation guideline context for patients before potentially fertility-impairing treatment. It is not personal reproductive or cancer-treatment advice.",
+      "effectOrMechanismSignal": "Option-preservation signal: timely fertility preservation can maintain future reproductive choices when treatment may impair gamete or gonadal function.",
+      "uncertaintyOrBias": "Applicability depends on cancer urgency, treatment plan, age, ovarian/testicular reserve, method availability, cost, consent, storage duration and future health status.",
+      "transferBoundary": "Transfer only to counseling and option-preservation endpoint vocabulary until recommendation details and method-specific success evidence are extracted.",
+      "downgradeTriggers": [
+        "If preservation access is treated as guaranteed future live birth, block claim upgrade.",
+        "If cancer-treatment timing and safety constraints are omitted, block model use.",
+        "If consent and disposition status are missing, block option-value claims."
+      ],
+      "modelPosition": {
+        "primaryLocation": "future-option-preservation-and-treatment-timing-context",
+        "variables": [
+          "preservation-access",
+          "storage-duration",
+          "survival-or-use-rate",
+          "consent-and-disposition-status",
+          "future-reproductive-option-value"
+        ],
+        "admissibleUse": "guideline route and option-preservation vocabulary pending method-specific extraction"
+      },
+      "modelAdmissionDecision": "fertility-preservation-guideline-context-only-blocked-for-calibrated-modeling",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Extract ASCO counseling recommendations, eligible populations, preservation methods, timing constraints, consent and evidence grade."
+    },
+    {
+      "taskId": "C2LTB1-EXT-042",
+      "domainId": "fertility-preservation-gamete-embryo-cryostorage-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/fertility-preservation-gamete-embryo-cryostorage-continuity",
+      "sourceRefId": "C2LTB1-SRC-21-2",
+      "sourceTitle": "ASRM Fertility preservation resources",
+      "sourceUrl": "https://www.asrm.org/practice-guidance/practice-committee-documents/",
+      "extractionStatus": "completed-c2ltb1-pilot-source-context-extraction",
+      "sourceAccessStatus": "professional-guidance-resource-index-source-identified",
+      "sourceRole": "fertility-preservation-professional-guidance-discovery-and-governance-context-anchor",
+      "exactClaimUse": "Supports professional-guidance discovery for fertility preservation, cryostorage, consent, disposition and reproductive-tissue governance questions.",
+      "endpointDefinition": "Candidate endpoints include preservation method, storage duration, cryostorage status, consent/disposition status, future use and reproductive option value.",
+      "populationOrSetting": "Professional practice-guidance index context. The page routes to documents and does not itself provide a single unified recommendation.",
+      "effectOrMechanismSignal": "Governance-context signal: cryostorage and preservation value depend on technical survival, consent continuity, storage management and future access.",
+      "uncertaintyOrBias": "Resource indexes can mix documents with different dates, populations and evidence standards; specific document selection and currentness review are required.",
+      "transferBoundary": "Transfer only as professional-guidance route metadata until a specific ASRM committee document is selected and extracted.",
+      "downgradeTriggers": [
+        "If the resource index is cited as a specific recommendation, block Source Card promotion.",
+        "If storage governance and consent/disposition are omitted, downgrade option-value claims.",
+        "If document date and scope are missing, keep model admission blocked."
+      ],
+      "modelPosition": {
+        "primaryLocation": "professional-guidance-discovery-and-cryostorage-governance-context",
+        "variables": [
+          "preservation-access",
+          "storage-duration",
+          "survival-or-use-rate",
+          "consent-and-disposition-status",
+          "future-reproductive-option-value"
+        ],
+        "admissibleUse": "guidance discovery and governance-variable routing only"
+      },
+      "modelAdmissionDecision": "guidance-index-context-only-blocked-for-calibrated-modeling",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Select ASRM documents for fertility preservation, cryostorage, consent and disposition, then extract method-specific endpoint cards."
+    },
+    {
+      "taskId": "C2LTB1-EXT-043",
+      "domainId": "chronic-pain-functional-restoration-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/chronic-pain-functional-restoration-continuity",
+      "sourceRefId": "C2LTB1-SRC-22-1",
+      "sourceTitle": "CDC Clinical Practice Guideline for Prescribing Opioids for Pain",
+      "sourceUrl": "https://www.cdc.gov/mmwr/volumes/71/rr/rr7103a1.htm",
+      "extractionStatus": "completed-c2ltb1-pilot-source-context-extraction",
+      "sourceAccessStatus": "official-clinical-practice-guideline-source-identified",
+      "sourceRole": "pain-opioid-risk-benefit-functional-outcome-guideline-context-anchor",
+      "exactClaimUse": "Supports chronic pain as a function, risk and medication-exposure domain where pain interference, functional status, opioid exposure and safety monitoring must be separated.",
+      "endpointDefinition": "Candidate endpoints include pain interference, functional status, sleep disruption, opioid exposure, overdose or misuse risk and work or activity participation.",
+      "populationOrSetting": "Clinical guideline context for opioid prescribing for pain. It is not personal prescribing advice, dosing instruction or acute emergency guidance.",
+      "effectOrMechanismSignal": "Risk-benefit signal: pain management can affect function and quality of life, while opioid exposure introduces safety, dependence and overdose-risk channels.",
+      "uncertaintyOrBias": "Transfer depends on pain condition, duration, comorbidity, prior opioid exposure, mental health, concurrent sedatives, access to nonopioid options and monitoring.",
+      "transferBoundary": "Transfer only to pain-function and opioid-risk endpoint vocabulary until recommendation category, population and evidence certainty are extracted.",
+      "downgradeTriggers": [
+        "If guideline text is converted into personal prescribing advice, block prohibited use.",
+        "If pain intensity is used without functional outcome, downgrade to incomplete endpoint context.",
+        "If opioid risk channels are omitted, block intervention-ranking use."
+      ],
+      "modelPosition": {
+        "primaryLocation": "pain-function-medication-risk-and-monitoring-context",
+        "variables": [
+          "pain-interference",
+          "functional-status",
+          "sleep-disruption",
+          "opioid-exposure-risk",
+          "work-or-activity-participation"
+        ],
+        "admissibleUse": "risk-benefit endpoint vocabulary pending full guideline extraction"
+      },
+      "modelAdmissionDecision": "pain-guideline-context-only-blocked-for-calibrated-modeling",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Extract CDC pain guideline recommendation categories, functional outcome framing, opioid risk variables and monitoring boundaries."
+    },
+    {
+      "taskId": "C2LTB1-EXT-044",
+      "domainId": "chronic-pain-functional-restoration-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/chronic-pain-functional-restoration-continuity",
+      "sourceRefId": "C2LTB1-SRC-22-2",
+      "sourceTitle": "NICE Chronic pain guideline",
+      "sourceUrl": "https://www.nice.org.uk/guidance/ng193",
+      "extractionStatus": "completed-c2ltb1-pilot-source-context-extraction",
+      "sourceAccessStatus": "official-clinical-guideline-source-identified",
+      "sourceRole": "chronic-primary-pain-assessment-management-and-function-context-anchor",
+      "exactClaimUse": "Supports chronic pain management as a functional restoration and quality-of-life pathway requiring assessment, nonpharmacologic/pharmacologic boundaries and outcome separation.",
+      "endpointDefinition": "Candidate endpoints include pain interference, function, sleep, distress, participation, medication exposure and adverse-effect burden.",
+      "populationOrSetting": "Clinical guideline context for chronic pain, including chronic primary pain scope. It is not an individual treatment plan.",
+      "effectOrMechanismSignal": "Management-pathway signal: chronic pain affects effective time through interference with sleep, work, mobility, attention and participation; management goals must track function and harm.",
+      "uncertaintyOrBias": "Applicability depends on pain subtype, comorbidity, mental health, prior therapies, care access, outcome measure and guideline scope exclusions.",
+      "transferBoundary": "Transfer only to chronic pain assessment and management endpoint vocabulary; intervention effects require recommendation-specific and trial-level extraction.",
+      "downgradeTriggers": [
+        "If chronic primary pain guidance is generalized to all pain states, downgrade to scoped context.",
+        "If treatment categories are ranked without evidence extraction, block intervention ranking.",
+        "If function and participation outcomes are omitted, block effective-time claims."
+      ],
+      "modelPosition": {
+        "primaryLocation": "functional-restoration-and-pain-interference-context",
+        "variables": [
+          "pain-interference",
+          "functional-status",
+          "sleep-disruption",
+          "opioid-exposure-risk",
+          "work-or-activity-participation"
+        ],
+        "admissibleUse": "chronic pain function and management-route vocabulary pending recommendation extraction"
+      },
+      "modelAdmissionDecision": "clinical-guideline-context-only-blocked-for-calibrated-modeling",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Extract NICE scope, recommendation wording, outcome domains, treatment boundaries and evidence caveats into pain Source Cards."
+    },
+    {
+      "taskId": "C2LTB1-EXT-045",
+      "domainId": "skin-barrier-wound-healing",
+      "localDomainPath": "domains/c2-source-maintenance/skin-barrier-wound-healing",
+      "sourceRefId": "C2LTB1-SRC-23-1",
+      "sourceTitle": "Wound Healing Society Guidelines",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/26850744/",
+      "extractionStatus": "completed-c2ltb1-pilot-source-context-extraction",
+      "sourceAccessStatus": "pubmed-indexed-wound-guideline-source-identified",
+      "sourceRole": "wound-healing-clinical-guideline-and-infection-risk-context-anchor",
+      "exactClaimUse": "Supports wound healing as a skin-barrier continuity domain where wound type, healing time, infection, pain, exudate and care supplies must be extracted separately.",
+      "endpointDefinition": "Candidate endpoints include wound healing time, wound closure, infection risk, skin integrity, pain or exudate burden and care-supply continuity.",
+      "populationOrSetting": "Clinical wound-care guideline context. It is not a personal wound diagnosis or treatment instruction.",
+      "effectOrMechanismSignal": "Barrier-repair signal: impaired wound healing can increase infection risk, pain burden, mobility restriction and care dependency.",
+      "uncertaintyOrBias": "Applicability depends on wound etiology, vascular status, diabetes, pressure, infection, nutrition, care setting, dressing access and guideline currentness.",
+      "transferBoundary": "Transfer only to wound endpoint and clinical-route vocabulary until exact guideline recommendations, wound types and evidence quality are extracted.",
+      "downgradeTriggers": [
+        "If wound types are merged without etiology flags, block endpoint promotion.",
+        "If guideline route is used as personal wound-care advice, block prohibited use.",
+        "If infection and supply continuity are omitted, downgrade continuity claims."
+      ],
+      "modelPosition": {
+        "primaryLocation": "skin-barrier-wound-endpoint-and-care-route-context",
+        "variables": [
+          "wound-healing-time",
+          "infection-risk",
+          "skin-integrity",
+          "pain-or-exudate-burden",
+          "care-supply-continuity"
+        ],
+        "admissibleUse": "wound endpoint and barrier-repair route vocabulary pending guideline extraction"
+      },
+      "modelAdmissionDecision": "wound-guideline-context-only-blocked-for-calibrated-modeling",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Extract wound type, recommendation wording, infection endpoints, healing metrics, dressing/supply boundaries and evidence grade."
+    },
+    {
+      "taskId": "C2LTB1-EXT-046",
+      "domainId": "skin-barrier-wound-healing",
+      "localDomainPath": "domains/c2-source-maintenance/skin-barrier-wound-healing",
+      "sourceRefId": "C2LTB1-SRC-23-2",
+      "sourceTitle": "AHRQ Preventing Pressure Ulcers in Hospitals toolkit",
+      "sourceUrl": "https://www.ahrq.gov/patient-safety/settings/hospital/resource/pressureulcer/tool/index.html",
+      "extractionStatus": "completed-c2ltb1-pilot-source-context-extraction",
+      "sourceAccessStatus": "official-implementation-toolkit-source-identified",
+      "sourceRole": "pressure-injury-prevention-hospital-implementation-and-care-process-anchor",
+      "exactClaimUse": "Supports pressure-injury prevention as a hospital implementation and patient-safety continuity route involving risk assessment, repositioning, support surfaces, skin checks and team processes.",
+      "endpointDefinition": "Candidate endpoints include pressure injury incidence, skin integrity, repositioning reliability, support-surface access, wound burden and care-process completion.",
+      "populationOrSetting": "Hospital implementation toolkit context. It is not a clinical wound treatment guideline or individual risk score.",
+      "effectOrMechanismSignal": "Implementation signal: reliable prevention processes can protect skin barrier continuity and reduce avoidable wounds in high-risk care settings.",
+      "uncertaintyOrBias": "Toolkit transfer depends on staffing, workflow, baseline risk, documentation, supply availability, leadership support and measurement reliability.",
+      "transferBoundary": "Transfer only to implementation process variables and pressure-injury prevention route context; outcome effect estimates require study-specific evidence.",
+      "downgradeTriggers": [
+        "If toolkit process steps are treated as guaranteed outcome reductions, downgrade to implementation context.",
+        "If risk assessment and supply access are omitted, block prevention claims.",
+        "If hospital setting is generalized to home care without adaptation, require separate context card."
+      ],
+      "modelPosition": {
+        "primaryLocation": "pressure-injury-prevention-implementation-and-safety-process-context",
+        "variables": [
+          "wound-healing-time",
+          "infection-risk",
+          "skin-integrity",
+          "pain-or-exudate-burden",
+          "care-supply-continuity"
+        ],
+        "admissibleUse": "hospital prevention-process and skin-integrity endpoint vocabulary only"
+      },
+      "modelAdmissionDecision": "implementation-toolkit-context-only-blocked-for-calibrated-modeling",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Extract toolkit process measures, pressure-injury endpoints, risk-assessment steps, staffing and supply prerequisites into implementation cards."
+    },
+    {
+      "taskId": "C2LTB1-EXT-047",
+      "domainId": "patient-safety-organizational-learning",
+      "localDomainPath": "domains/c2-source-maintenance/patient-safety-organizational-learning",
+      "sourceRefId": "C2LTB1-SRC-24-1",
+      "sourceTitle": "AHRQ Patient Safety Network",
+      "sourceUrl": "https://psnet.ahrq.gov/",
+      "extractionStatus": "completed-c2ltb1-pilot-source-context-extraction",
+      "sourceAccessStatus": "official-patient-safety-knowledge-base-source-identified",
+      "sourceRole": "patient-safety-knowledge-base-event-learning-and-safety-culture-context-anchor",
+      "exactClaimUse": "Supports patient safety as an organizational-learning domain involving adverse events, near misses, safety culture, communication, reporting and learning loops.",
+      "endpointDefinition": "Candidate endpoints include adverse event rate, near-miss reporting, safety culture, team communication, learning-loop closure and preventable harm context.",
+      "populationOrSetting": "Healthcare system and patient-safety knowledge-base context. It is not a single intervention trial or local safety-performance measure.",
+      "effectOrMechanismSignal": "Organizational-learning signal: event reporting, analysis, communication and feedback can affect reliability, preventable harm and trust in healthcare systems.",
+      "uncertaintyOrBias": "Reporting systems are sensitive to culture, incentives, definitions, underreporting, measurement method, case mix and local implementation maturity.",
+      "transferBoundary": "Transfer only to safety taxonomy, learning-loop variables and evidence-discovery routing; use intervention-specific studies for effect estimates.",
+      "downgradeTriggers": [
+        "If knowledge-base summaries are used as calibrated local safety rates, block quantitative use.",
+        "If reporting volume is treated as harm rate without culture adjustment, downgrade endpoint claims.",
+        "If feedback-loop closure is omitted, block organizational-learning claims."
+      ],
+      "modelPosition": {
+        "primaryLocation": "patient-safety-taxonomy-and-organizational-learning-context",
+        "variables": [
+          "adverse-event-rate",
+          "near-miss-reporting",
+          "safety-culture",
+          "team-communication",
+          "learning-loop-closure"
+        ],
+        "admissibleUse": "patient-safety taxonomy and learning-loop variable vocabulary only"
+      },
+      "modelAdmissionDecision": "patient-safety-knowledge-context-only-blocked-for-calibrated-modeling",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Extract patient-safety event taxonomy, measurement caveats, culture indicators and learning-loop closure variables into reviewed cards."
+    },
+    {
+      "taskId": "C2LTB1-EXT-048",
+      "domainId": "patient-safety-organizational-learning",
+      "localDomainPath": "domains/c2-source-maintenance/patient-safety-organizational-learning",
+      "sourceRefId": "C2LTB1-SRC-24-2",
+      "sourceTitle": "AHRQ CUSP Toolkit",
+      "sourceUrl": "https://www.ahrq.gov/hai/cusp/index.html",
+      "extractionStatus": "completed-c2ltb1-pilot-source-context-extraction",
+      "sourceAccessStatus": "official-organizational-safety-toolkit-source-identified",
+      "sourceRole": "cusp-teamwork-culture-learning-and-harm-reduction-implementation-anchor",
+      "exactClaimUse": "Supports CUSP as an organizational safety and learning toolkit context where team communication, culture, harm identification and feedback cycles become implementation variables.",
+      "endpointDefinition": "Candidate endpoints include team communication, safety culture, identified defects, learning-loop closure, adverse event reduction context and implementation fidelity.",
+      "populationOrSetting": "Healthcare organizational-improvement toolkit context, especially safety and healthcare-associated infection improvement settings. It is not proof of local effect without implementation data.",
+      "effectOrMechanismSignal": "Implementation signal: structured safety culture and teamwork processes can create feedback loops that reduce preventable harm when embedded in local operations.",
+      "uncertaintyOrBias": "Transfer depends on leadership, frontline engagement, baseline culture, measurement fidelity, local hazards, staffing and sustained implementation.",
+      "transferBoundary": "Transfer only to organizational-learning process variables and toolkit-route context; local outcome effect requires implementation evaluation evidence.",
+      "downgradeTriggers": [
+        "If toolkit adoption is treated as outcome improvement without fidelity data, downgrade to process context.",
+        "If safety culture and communication variables are not measured, block learning-loop claims.",
+        "If setting and target harm are unspecified, keep model admission blocked."
+      ],
+      "modelPosition": {
+        "primaryLocation": "organizational-learning-toolkit-and-feedback-loop-context",
+        "variables": [
+          "adverse-event-rate",
+          "near-miss-reporting",
+          "safety-culture",
+          "team-communication",
+          "learning-loop-closure"
+        ],
+        "admissibleUse": "organizational safety process and feedback-loop vocabulary only"
+      },
+      "modelAdmissionDecision": "organizational-toolkit-context-only-blocked-for-calibrated-modeling",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Extract CUSP implementation steps, team roles, measurement fields, safety-culture variables and local fidelity requirements into reviewed cards."
     }
   ],
   "nonClaims": [
-    "This register does not complete all 48 first-batch source extraction tasks.",
+    "This register completes the 48 C2-LT-B1 pilot source-context extraction rows, but does not complete full Source Cards, fresh review or reviewed artifacts.",
     "This register does not replace full Source Cards or independent fresh review.",
     "This register does not admit any source into calibrated prediction, clinical validity, intervention ranking or personal recommendation use.",
     "This register does not output individual death dates, individual life expectancy, diagnosis, treatment, dosing or emergency advice."
   ],
   "indexRequirements": [
     "README.md must link this register in the claim spine.",
-    "docs/reference/README.md must describe this register as the 24/48 pilot extraction register.",
+    "docs/reference/README.md must describe this register as the 48/48 pilot extraction register.",
     "docs/reference/human-infra-maturity-roadmap.md must name this register as progress toward the research-framework gate while keeping model admission blocked.",
     "tools/README.md must list the audit command for this register."
   ]
