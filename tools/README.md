@@ -51,6 +51,7 @@
 - `audit_human_infra_c2_longtail_fifth_batch_source_resolution_register.py`: verifies that `docs/reference/human-infra-c2-longtail-fifth-batch-source-resolution-register.json` covers the eight C2-LT-B5 local-review issue rows, prepares fourteen no-open-fulltext/manual-fulltext or duplicate cross-domain route candidates, preserves blocked uses and keeps model admission blocked.
 - `audit_human_infra_c2_longtail_fifth_batch_manual_fulltext_extraction_register.py`: verifies that `docs/reference/human-infra-c2-longtail-fifth-batch-manual-fulltext-extraction-register.json` covers all fourteen C2-LT-B5 source-resolution candidates, permits only two bounded fresh-review candidates, blocks twelve route-only/manual-access/duplicate rows, and keeps model admission blocked.
 - `audit_human_infra_c2_longtail_fifth_batch_independent_fresh_review_verdict_register.py`: verifies that `docs/reference/human-infra-c2-longtail-fifth-batch-independent-fresh-review-verdict-register.json` independently reviews the sixteen non-issue C2-LT-B5 source-extraction rows and fourteen manual/fulltext rows, permits seventeen bounded artifact-prep rows, preserves thirteen manual route-only/manual-access/duplicate/context-only blocked rows, and keeps model admission blocked.
+- `audit_human_infra_c2_longtail_fifth_batch_reviewed_card_artifact_register.py`: verifies that `docs/reference/human-infra-c2-longtail-fifth-batch-reviewed-card-artifact-register.json` promotes only the seventeen eligible C2-LT-B5 fresh-review rows into 102 bounded reviewed artifacts, preserves thirteen blocked manual rows and keeps model admission blocked.
 - `audit_human_infra_c2_longtail_third_batch_source_extraction_register.py`: verifies that `docs/reference/human-infra-c2-longtail-third-batch-source-extraction-register.json` completes all 24/24 C2-LT-B3 source-context extraction rows with required fields, downgrade triggers, blocked uses, source-resolution flags and index links.
 - `audit_human_infra_c2_longtail_third_batch_local_review_register.py`: verifies that `docs/reference/human-infra-c2-longtail-third-batch-local-review-register.json` locally reviews all 24/24 C2-LT-B3 extraction rows, preserves five source-resolution/manual-access issue rows, keeps blocked uses complete, and routes only to independent fresh review or source resolution.
 - `audit_human_infra_c2_longtail_third_batch_source_resolution_register.py`: verifies that `docs/reference/human-infra-c2-longtail-third-batch-source-resolution-register.json` covers the five C2-LT-B3 local-review issue rows, prepares seven corrected/split/route-normalized candidates, preserves blocked uses and keeps model admission blocked.
@@ -173,6 +174,7 @@ make c2-longtail-fifth-batch-local-review-audit
 make c2-longtail-fifth-batch-source-resolution-audit
 make c2-longtail-fifth-batch-manual-fulltext-extraction-audit
 make c2-longtail-fifth-batch-independent-fresh-review-verdict-audit
+make c2-longtail-fifth-batch-reviewed-card-artifact-audit
 make domain-source-queue-audit
 make domain-source-extraction-audit
 make domain-source-promotion-audit

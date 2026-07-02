@@ -211,7 +211,9 @@
         "docs/reference/human-infra-c2-longtail-fifth-batch-manual-fulltext-extraction-register.json",
         "tools/audit_human_infra_c2_longtail_fifth_batch_source_resolution_register.py",
         "docs/reference/human-infra-c2-longtail-fifth-batch-independent-fresh-review-verdict-register.json",
-        "tools/audit_human_infra_c2_longtail_fifth_batch_independent_fresh_review_verdict_register.py"
+        "tools/audit_human_infra_c2_longtail_fifth_batch_independent_fresh_review_verdict_register.py",
+        "docs/reference/human-infra-c2-longtail-fifth-batch-reviewed-card-artifact-register.json",
+        "tools/audit_human_infra_c2_longtail_fifth_batch_reviewed_card_artifact_register.py"
       ],
       "gates": [
         {
@@ -356,15 +358,17 @@
             "docs/reference/human-infra-c2-longtail-fifth-batch-manual-fulltext-extraction-register.json",
             "tools/audit_human_infra_c2_longtail_fifth_batch_source_resolution_register.py",
             "docs/reference/human-infra-c2-longtail-fifth-batch-independent-fresh-review-verdict-register.json",
-            "tools/audit_human_infra_c2_longtail_fifth_batch_independent_fresh_review_verdict_register.py"
+            "tools/audit_human_infra_c2_longtail_fifth_batch_independent_fresh_review_verdict_register.py",
+            "docs/reference/human-infra-c2-longtail-fifth-batch-reviewed-card-artifact-register.json",
+            "tools/audit_human_infra_c2_longtail_fifth_batch_reviewed_card_artifact_register.py"
           ],
           "missingEvidence": [
-            "C2-LT-B5 independent fresh review now covers 16 non-issue source-extraction rows and 14 manual/fulltext rows; 17 rows may enter bounded reviewed artifact prep, while 13 manual route-only/manual-access/duplicate/context-only rows remain blocked.",
-            "C2-LT-B5 bounded reviewed artifacts are still missing and must be created only for the 17 eligible fresh-review rows.",
+            "C2-LT-B5 reviewed artifacts now cover 17 eligible fresh-review rows with 102 bounded Source/variable/endpoint/uncertainty/transfer/downgrade artifacts; 13 manual route-only/manual-access/duplicate/context-only rows remain blocked.",
             "Remaining C2 long-tail domains outside B1/B2/B3/B4/B5 still need batch selection, source extraction, local review, source-resolution as needed, fresh review and reviewed artifacts.",
-            "Reviewed artifacts remain bounded research artifacts and do not open calibrated model admission."
+            "Reviewed artifacts remain bounded research artifacts and do not open calibrated model admission.",
+            "Calibrated model admission still needs a separate model contract, quantitative estimands, validation data and gates."
           ],
-          "nextAction": "Prepare C2-LT-B5 bounded reviewed artifacts for 16 source-extraction rows and one retained manual/fulltext PMC row, preserve 13 blocked/context rows, and keep model admission blocked.",
+          "nextAction": "Start the next C2 long-tail batch outside B1/B2/B3/B4/B5, or create a separate calibrated model contract only after reviewed artifacts and validation gates are defined.",
           "blocks100Percent": true
         },
         {
@@ -484,15 +488,17 @@
             "docs/reference/human-infra-c2-longtail-fifth-batch-manual-fulltext-extraction-register.json",
             "tools/audit_human_infra_c2_longtail_fifth_batch_source_resolution_register.py",
             "docs/reference/human-infra-c2-longtail-fifth-batch-independent-fresh-review-verdict-register.json",
-            "tools/audit_human_infra_c2_longtail_fifth_batch_independent_fresh_review_verdict_register.py"
+            "tools/audit_human_infra_c2_longtail_fifth_batch_independent_fresh_review_verdict_register.py",
+            "docs/reference/human-infra-c2-longtail-fifth-batch-reviewed-card-artifact-register.json",
+            "tools/audit_human_infra_c2_longtail_fifth_batch_reviewed_card_artifact_register.py"
           ],
           "missingEvidence": [
-            "B5 selected domains now have 24/24 source-context extraction rows, 24/24 local-review rows, 14 source-resolution candidates, 14 manual/fulltext extraction rows and independent fresh-review verdicts, but still need bounded reviewed variable, endpoint, uncertainty, transfer-boundary and downgrade artifacts.",
-            "Only 17 B5 rows can enter bounded reviewed artifact prep after fresh review; 13 manual route-only/manual-access/duplicate/context-only rows remain blocked.",
-            "B1/B2/B3/B4 reviewed artifacts are not connected to any calibrated model-admission gate.",
+            "B5 selected domains now have bounded reviewed variable, endpoint, uncertainty, transfer-boundary and downgrade artifacts for 17 eligible rows, but no B5 row is admitted as a calibrated model variable.",
+            "Thirteen B5 manual route-only/manual-access/duplicate/context-only rows remain blocked and must not be used as variables.",
+            "B1/B2/B3/B4/B5 reviewed artifacts are not connected to any calibrated model-admission gate.",
             "Remaining C2 long-tail domains outside B1/B2/B3/B4/B5 still need reviewed variable, endpoint, uncertainty, transfer-boundary and downgrade artifacts."
           ],
-          "nextAction": "Prepare B5 bounded variable-contract artifacts only for the 17 eligible fresh-review rows; do not use blocked manual/fulltext rows as model variables.",
+          "nextAction": "Continue variable-contract artifact generation for remaining C2 long-tail batches; keep calibrated model variables blocked until a separate model-admission gate exists.",
           "blocks100Percent": true
         },
         {
@@ -637,15 +643,17 @@
             "docs/reference/human-infra-c2-longtail-fifth-batch-manual-fulltext-extraction-register.json",
             "tools/audit_human_infra_c2_longtail_fifth_batch_source_resolution_register.py",
             "docs/reference/human-infra-c2-longtail-fifth-batch-independent-fresh-review-verdict-register.json",
-            "tools/audit_human_infra_c2_longtail_fifth_batch_independent_fresh_review_verdict_register.py"
+            "tools/audit_human_infra_c2_longtail_fifth_batch_independent_fresh_review_verdict_register.py",
+            "docs/reference/human-infra-c2-longtail-fifth-batch-reviewed-card-artifact-register.json",
+            "tools/audit_human_infra_c2_longtail_fifth_batch_reviewed_card_artifact_register.py"
           ],
           "missingEvidence": [
-            "C2-LT-B5 independent fresh review identifies 17 eligible bounded artifact-prep rows, but reviewed downgrade rows are still not created.",
-            "Thirteen B5 manual route-only/manual-access/duplicate/context-only rows must stay blocked unless future manual access or fresh review changes their status.",
+            "C2-LT-B5 reviewed downgrade artifacts now exist for 17 eligible rows, but 13 manual route-only/manual-access/duplicate/context-only rows remain blocked.",
             "Remaining C2 long-tail domains outside B1/B2/B3/B4/B5 still require source-specific downgrade and falsifier coverage.",
-            "All B5 rows remain source-context or fresh-review evidence only until reviewed artifacts are created; no row opens model-admitted evidence."
+            "All B5 artifacts remain bounded evidence artifacts only; no row opens model-admitted evidence.",
+            "Calibrated model downgrade gates still require a separate quantitative model contract and validation plan."
           ],
-          "nextAction": "Convert only the 17 B5 eligible fresh-review rows into bounded downgrade/falsifier reviewed artifacts; keep 13 manual blocked/context rows out of artifact and model use.",
+          "nextAction": "Carry the same downgrade/falsifier artifact loop into the next C2 long-tail batch and keep B5 blocked manual rows out of artifact and model use.",
           "blocks100Percent": true
         }
       ]
@@ -807,7 +815,7 @@
   "nextWorkOrder": [
     {
       "priority": 1,
-      "item": "Prepare C2-LT-B5 bounded reviewed artifacts for 16 source-extraction rows and one retained manual/fulltext PMC row; preserve 13 manual route-only/manual-access/duplicate/context rows and keep model admission blocked.",
+      "item": "Start the next C2 long-tail batch outside B1/B2/B3/B4/B5, or define a separate calibrated model-admission contract; B5 reviewed artifacts are complete but model admission remains blocked.",
       "unblocks": [
         "RESEARCH-G3-c1-c2-source-cards",
         "RESEARCH-G4-variable-mechanism-contracts",
