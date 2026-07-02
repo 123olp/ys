@@ -1,0 +1,238 @@
+{
+  "schemaVersion": "human-infra.c2-longtail-fifth-batch-local-review-register.v1",
+  "registerId": "human-infra-c2-longtail-fifth-batch-local-review-register-2026-07-03",
+  "status": "complete-local-source-context-review-independent-fresh-review-required",
+  "purpose": "Record local source-context review for all 24 C2-LT-B5 source extraction rows. This register verifies structural readiness for independent fresh review while preserving no-open-fulltext/manual-review needs, duplicate cross-domain source reuse, model-organism/review-only boundaries, blocked uses, reviewed-artifact blocks and model-admission blocks.",
+  "sourceOfTruth": {
+    "sourceExtractionQueue": "docs/reference/human-infra-c2-longtail-fifth-batch-source-extraction-queue.json",
+    "sourceExtractionRegister": "docs/reference/human-infra-c2-longtail-fifth-batch-source-extraction-register.json",
+    "sourceCardSystem": "docs/reference/source-card-system.md",
+    "maturityGapRegister": "docs/reference/human-infra-maturity-gap-register.json"
+  },
+  "scope": {
+    "batchId": "C2-LT-B5",
+    "reviewLevel": "source-extraction-row-local-context-review",
+    "sourceExtractionTaskCount": 24,
+    "localReviewedExtractionTaskCount": 24,
+    "coveredDomainCount": 12,
+    "reviewBatchCount": 2,
+    "sourceResolutionIssueCount": 8,
+    "selectionRule": "Review all C2-LT-B5 source extraction rows after field-level extraction, without promoting any row to reviewed artifact fill or calibrated model admission.",
+    "reviewedExtractionTaskIds": [
+      "C2LTB5-EXT-001",
+      "C2LTB5-EXT-002",
+      "C2LTB5-EXT-003",
+      "C2LTB5-EXT-004",
+      "C2LTB5-EXT-005",
+      "C2LTB5-EXT-006",
+      "C2LTB5-EXT-007",
+      "C2LTB5-EXT-008",
+      "C2LTB5-EXT-009",
+      "C2LTB5-EXT-010",
+      "C2LTB5-EXT-011",
+      "C2LTB5-EXT-012",
+      "C2LTB5-EXT-013",
+      "C2LTB5-EXT-014",
+      "C2LTB5-EXT-015",
+      "C2LTB5-EXT-016",
+      "C2LTB5-EXT-017",
+      "C2LTB5-EXT-018",
+      "C2LTB5-EXT-019",
+      "C2LTB5-EXT-020",
+      "C2LTB5-EXT-021",
+      "C2LTB5-EXT-022",
+      "C2LTB5-EXT-023",
+      "C2LTB5-EXT-024"
+    ],
+    "currentLimitations": [
+      "This is local structural review only and is not independent fresh review.",
+      "Rows with no open fulltext require manual fulltext/source-resolution review before bounded fresh-review evidence use.",
+      "Duplicate cross-domain source reuse must be resolved before evidence counting and cannot be treated as independent support.",
+      "Model-organism, reproductive-context and review-only rows remain bounded mechanism/context rows until independent fresh review.",
+      "No row admits calibrated prediction, intervention ranking, individual advice, individual death-date output or domain-claim upgrade."
+    ]
+  },
+  "requiredExtractionFieldsReviewed": [
+    "taskId",
+    "domainId",
+    "localDomainPath",
+    "sourceRefId",
+    "sourceTitle",
+    "sourceUrl",
+    "sourceRole",
+    "exactClaimUse",
+    "endpointDefinition",
+    "populationOrSetting",
+    "effectOrMechanismSignal",
+    "uncertaintyOrBias",
+    "transferBoundary",
+    "downgradeTriggers",
+    "modelPosition",
+    "modelAdmissionDecision",
+    "blockedUses",
+    "nextAction"
+  ],
+  "localReviewVerdict": "local-review-pass-for-independent-fresh-review-only-with-eight-source-resolution-flags-preserved",
+  "promotionDecision": "eligible-non-issue-rows-for-independent-fresh-review-only-not-reviewed-artifact-fill; issue-rows-require-source-resolution-or-manual-fulltext-before-fresh-review-evidence-use",
+  "sourceResolutionDecision": "eight-rows-require-source-resolution-manual-fulltext-or-duplicate-cross-domain-source-handling-before-domain-claim-support",
+  "modelAdmissionDecision": "blocked-pending-independent-fresh-review-reviewed-artifacts-source-resolution-and-model-gates",
+  "blockedUses": [
+    "calibrated-prediction",
+    "individual-advice",
+    "individual-death-date-output",
+    "intervention-ranking",
+    "clinical-validity-claim",
+    "domain-claim-upgrade"
+  ],
+  "requiredNextArtifacts": [
+    "c2ltb5-independent-fresh-review-protocol",
+    "c2ltb5-independent-fresh-review-verdict-register",
+    "c2ltb5-source-resolution-register-for-issue-rows",
+    "reviewed-source-card",
+    "variable-card",
+    "endpoint-card",
+    "uncertainty-card",
+    "transfer-boundary-card",
+    "downgrade-check-row"
+  ],
+  "localReviewChecks": [
+    "Every reviewed task is present in the C2-LT-B5 source extraction queue.",
+    "Every reviewed task has a completed extraction row in the C2-LT-B5 source extraction register.",
+    "Every extraction row preserves exact claim use, endpoint, population or setting, mechanism or effect, uncertainty, transfer boundary, downgrade triggers and model position.",
+    "Every extraction row keeps model admission blocked and prohibited uses complete.",
+    "Every local domain path exists and exposes README.md and AGENTS.md.",
+    "Rows with no-open-fulltext/manual-review needs or duplicate cross-domain source reuse are explicitly preserved in sourceResolutionFindings.",
+    "The register routes non-issue rows to independent fresh review and issue rows to source-resolution/manual-fulltext review before Source Card promotion."
+  ],
+  "sourceResolutionFindings": [
+    {
+      "taskId": "C2LTB5-EXT-001",
+      "issueType": "no-open-fulltext-manual-review-needed",
+      "reviewDisposition": "manual-fulltext-required-before-bounded-fresh-review",
+      "correctionCandidate": "Extract exact NEJM Evidence review text for telomere-length disorder phenotypes, long/short telomere boundaries and neoplasia/degeneration framing before artifact fill.",
+      "reason": "Europe PMC supplied abstract context but no open fulltext route in the automated pass; clinical review claims require manual verification before bounded evidence use."
+    },
+    {
+      "taskId": "C2LTB5-EXT-008",
+      "issueType": "no-open-fulltext-shared-source-primary-route",
+      "reviewDisposition": "source-resolution-manual-fulltext-required-before-bounded-fresh-review",
+      "correctionCandidate": "Resolve the ER-Golgi trafficking review as the primary shared source route and extract exact fulltext context before artifact fill.",
+      "reason": "The same ER-Golgi trafficking review is reused by EXT-009; automated access has abstract metadata but no open fulltext."
+    },
+    {
+      "taskId": "C2LTB5-EXT-009",
+      "issueType": "duplicate-cross-domain-source-and-no-open-fulltext",
+      "reviewDisposition": "source-resolution-required-duplicate-source-before-evidence-counting",
+      "correctionCandidate": "Link EXT-009 to EXT-008 as the same ER-Golgi trafficking source reused for the Golgi domain; do not count both as independent evidence.",
+      "reason": "The extraction row marks duplicate-with-c2ltb5-src-04-2 and no-open-fulltext; the source can support cross-domain vocabulary but not two independent evidence counts."
+    },
+    {
+      "taskId": "C2LTB5-EXT-010",
+      "issueType": "duplicate-cross-domain-source-primary-route",
+      "reviewDisposition": "source-resolution-required-duplicate-source-before-evidence-counting",
+      "correctionCandidate": "Register EXT-010 as the primary route for the Intercompartmental communication in senescence source and link EXT-013 to it before evidence counting.",
+      "reason": "The same open source is reused across Golgi and organelle-contact domains; local review must preserve the pair-level route before independent fresh review."
+    },
+    {
+      "taskId": "C2LTB5-EXT-013",
+      "issueType": "duplicate-cross-domain-source-secondary-route",
+      "reviewDisposition": "source-resolution-required-duplicate-source-before-evidence-counting",
+      "correctionCandidate": "Link EXT-013 to EXT-010 as the same senescence intercompartmental-communication source reused for the organelle-contact domain; do not count both as independent evidence.",
+      "reason": "The extraction row marks duplicate-with-c2ltb5-src-05-2; it can support a second domain vocabulary route but not a second independent source count."
+    },
+    {
+      "taskId": "C2LTB5-EXT-018",
+      "issueType": "no-open-fulltext-manual-review-needed",
+      "reviewDisposition": "manual-fulltext-required-before-bounded-fresh-review",
+      "correctionCandidate": "Extract exact ferro-aging review statements on iron overload, lipid peroxidation, senescence and ferroptosis from fulltext before artifact fill.",
+      "reason": "Automated access found abstract metadata but no open fulltext; the source uses paradigm language that needs fulltext-level downgrade review."
+    },
+    {
+      "taskId": "C2LTB5-EXT-019",
+      "issueType": "no-open-fulltext-manual-review-needed",
+      "reviewDisposition": "manual-fulltext-required-before-bounded-fresh-review",
+      "correctionCandidate": "Extract exact karyopherin/proteostasis review claims, nuclear transport endpoints and disease transfer limits from fulltext before artifact fill.",
+      "reason": "Automated access found abstract metadata but no open fulltext; nuclear gateway claims must be checked before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB5-EXT-021",
+      "issueType": "no-open-fulltext-manual-review-needed",
+      "reviewDisposition": "manual-fulltext-required-before-bounded-fresh-review",
+      "correctionCandidate": "Extract exact glymphatic aging/neurodegeneration review claims, AQP4/CSF-ISF endpoints and neuroimaging transfer limits from fulltext before artifact fill.",
+      "reason": "Automated access found abstract metadata but no open fulltext; mechanistic aging-clearance claims need fulltext-level verification."
+    }
+  ],
+  "reviewBatches": [
+    {
+      "reviewBatchId": "C2LTB5-LR-01-cellular-quality-control-organelle-traffic",
+      "reviewLabel": "端粒、翻译保真、溶酶体、ER/UPR、Golgi 和过氧化物酶体连续性域",
+      "taskIds": [
+        "C2LTB5-EXT-001",
+        "C2LTB5-EXT-002",
+        "C2LTB5-EXT-003",
+        "C2LTB5-EXT-004",
+        "C2LTB5-EXT-005",
+        "C2LTB5-EXT-006",
+        "C2LTB5-EXT-007",
+        "C2LTB5-EXT-008",
+        "C2LTB5-EXT-009",
+        "C2LTB5-EXT-010",
+        "C2LTB5-EXT-011",
+        "C2LTB5-EXT-012"
+      ],
+      "nextReviewMode": "independent fresh review must verify telomere length clinical-review boundaries, yeast/reproductive translation-fidelity transfer limits, lysosomal/lipofuscin review status, ER-Golgi shared-source fulltext needs, Golgi duplicate source reuse and peroxisome review-only scope before artifact promotion",
+      "taskCount": 12,
+      "domainIds": [
+        "endoplasmic-reticulum-stress-upr-proteostasis-continuity",
+        "golgi-secretory-trafficking-organelle-homeostasis-continuity",
+        "lysosomal-flux-lipofuscin-clearance-continuity",
+        "peroxisome-redox-lipid-metabolism-homeostasis-continuity",
+        "ribosome-translation-fidelity-proteome-integrity-continuity",
+        "telomere-maintenance"
+      ],
+      "reviewDecision": "local-review-pass-for-independent-fresh-review-only"
+    },
+    {
+      "reviewBatchId": "C2LTB5-LR-02-contact-mechanics-membrane-nuclear-clearance-barrier",
+      "reviewLabel": "细胞器接触位点、细胞骨架、铁死亡、核质运输、glymphatic 清除和肠屏障连续性域",
+      "taskIds": [
+        "C2LTB5-EXT-013",
+        "C2LTB5-EXT-014",
+        "C2LTB5-EXT-015",
+        "C2LTB5-EXT-016",
+        "C2LTB5-EXT-017",
+        "C2LTB5-EXT-018",
+        "C2LTB5-EXT-019",
+        "C2LTB5-EXT-020",
+        "C2LTB5-EXT-021",
+        "C2LTB5-EXT-022",
+        "C2LTB5-EXT-023",
+        "C2LTB5-EXT-024"
+      ],
+      "nextReviewMode": "independent fresh review must verify organelle-contact duplicate source reuse, MAM mechanism scope, mechanobiology review boundaries, ferro-aging fulltext needs, nuclear gateway fulltext/inherited-disease boundaries, glymphatic fulltext needs and intestinal barrier cross-species transfer limits before artifact promotion",
+      "taskCount": 12,
+      "domainIds": [
+        "cytoskeleton-mechanotransduction-cellular-mechanics-continuity",
+        "ferroptosis-lipid-peroxidation-membrane-resilience-continuity",
+        "gastrointestinal-barrier-absorption",
+        "lymphatic-glymphatic-clearance",
+        "nuclear-gateway-nucleocytoplasmic-transport-continuity",
+        "organelle-contact-sites-intercompartmental-communication-continuity"
+      ],
+      "reviewDecision": "local-review-pass-for-independent-fresh-review-only"
+    }
+  ],
+  "nonClaims": [
+    "This register is not an independent fresh review verdict register.",
+    "This register does not complete any reviewed Source Card, variable card, endpoint card, uncertainty card, transfer-boundary card or downgrade-check artifact.",
+    "This register does not repair no-open-fulltext/manual-review needs or duplicate cross-domain source reuse; it records them for source-resolution review.",
+    "This register does not validate external source truth, clinical recommendations, intervention effects, calibrated risks or individual prognosis.",
+    "This register does not authorize model admission, domain-claim upgrade, intervention ranking, individual advice or individual death-date output."
+  ],
+  "indexRequirements": [
+    "README.md",
+    "docs/reference/README.md",
+    "docs/reference/human-infra-maturity-roadmap.md",
+    "tools/README.md"
+  ]
+}
