@@ -22,6 +22,7 @@ tools/
 ├── audit_human_infra_c2_longtail_first_batch_independent_fresh_review_verdict_register.py # C2-LT-B1 独立 fresh review 判定审计器
 ├── audit_human_infra_c2_longtail_first_batch_reviewed_card_artifact_register.py # C2-LT-B1 reviewed artifact 审计器
 ├── audit_human_infra_c2_longtail_first_batch_blocked_source_resolution_register.py # C2-LT-B1 blocked source resolution 审计器
+├── audit_human_infra_c2_longtail_first_batch_source_resolution_fresh_review_verdict_register.py # C2-LT-B1 source-resolution fresh review 判定审计器
 ├── audit_human_infra_domain_source_specific_extraction_queue.py # 域-来源深读队列审计器
 ├── audit_human_infra_domain_source_specific_extraction_register.py # 域-来源精读完成寄存器审计器
 ├── audit_human_infra_domain_source_card_promotion_queue.py # 域-来源卡片晋升队列审计器
@@ -68,6 +69,7 @@ tools/
 - `audit_human_infra_c2_longtail_first_batch_independent_fresh_review_verdict_register.py` 只检查 C2-LT-B1 fresh-review 判定账本的 48/48 覆盖、外部核验证据字段、降级判定和模型阻塞边界；它不证明 reviewed artifacts 或模型准入完成。
 - `audit_human_infra_c2_longtail_first_batch_reviewed_card_artifact_register.py` 只检查 `docs/reference/human-infra-c2-longtail-first-batch-reviewed-card-artifact-register.json` 是否把 42 个 eligible verdict 行落成 252 个 Source/变量/endpoint/uncertainty/transfer/downgrade artifact，并保留 6 个 blocked 行；它不证明剩余 C2 长尾域闭合或模型准入完成。
 - `audit_human_infra_c2_longtail_first_batch_blocked_source_resolution_register.py` 只检查 `docs/reference/human-infra-c2-longtail-first-batch-blocked-source-resolution-register.json` 是否覆盖 6 个非 eligible C2-LT-B1 来源行、准备来源校正候选并保持 artifact 晋升和模型准入阻塞；它不证明这些 blocked rows 已通过 fresh review。
+- `audit_human_infra_c2_longtail_first_batch_source_resolution_fresh_review_verdict_register.py` 只检查 `docs/reference/human-infra-c2-longtail-first-batch-source-resolution-fresh-review-verdict-register.json` 是否覆盖 6 个来源纠偏行、16 个候选判定和 corrected source re-extraction 边界；它不证明 blocked rows 已经能直接晋升 artifact 或进入模型。
 - `audit_human_infra_domain_source_specific_extraction_queue.py` 只检查当前 26 个域字段行是否派生为 81 个 domain-source 深读任务，并确认模型准入仍被 exact claim、endpoint、population、uncertainty 和 transfer-boundary 精读阻塞；它不证明任何来源已经支持对应域主张。
 - `audit_human_infra_domain_source_specific_extraction_register.py` 只检查当前 81/81 个 domain-source 精读完成行是否来自队列、字段匹配、阻塞用途完整、索引到位；它不证明外部文献已完成 fresh review，也不打开校准预测、个体建议或干预排序。
 - `audit_human_infra_domain_source_card_promotion_queue.py` 只检查当前 81 个 completed field rows 是否一一派生为 fresh review、Source Card、变量卡、endpoint 卡、uncertainty 卡、transfer-boundary 卡和 downgrade check 晋升任务；它不证明任何晋升任务已经完成，也不打开模型准入。

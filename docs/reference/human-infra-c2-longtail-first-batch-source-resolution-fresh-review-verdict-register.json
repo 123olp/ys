@@ -1,0 +1,428 @@
+{
+  "schemaVersion": "human-infra.c2ltb1-source-resolution-fresh-review-verdict-register.v1",
+  "registerId": "human-infra-c2-longtail-first-batch-source-resolution-fresh-review-verdict-register-2026-07-02",
+  "status": "active-c2ltb1-source-resolution-fresh-review-verdict-register-model-blocked",
+  "purpose": "Fresh-review the source-resolution candidates prepared for the six non-eligible C2-LT-B1 rows, determine whether corrected re-extraction can start, and keep artifact promotion plus model admission blocked until corrected rows complete re-extraction and independent review.",
+  "sourceOfTruth": {
+    "blockedSourceResolutionRegister": "docs/reference/human-infra-c2-longtail-first-batch-blocked-source-resolution-register.json",
+    "originalFreshReviewVerdictRegister": "docs/reference/human-infra-c2-longtail-first-batch-independent-fresh-review-verdict-register.json",
+    "sourceExtractionRegister": "docs/reference/human-infra-c2-longtail-first-batch-source-extraction-register.json",
+    "reviewedCardArtifactRegister": "docs/reference/human-infra-c2-longtail-first-batch-reviewed-card-artifact-register.json",
+    "evidencePolicy": "docs/reference/evidence-policy.md",
+    "maturityGapRegister": "docs/reference/human-infra-maturity-gap-register.json"
+  },
+  "scope": {
+    "batchId": "C2-LT-B1",
+    "reviewLevel": "c2ltb1-source-resolution-fresh-review-v0.1",
+    "blockedResolutionRowCount": 6,
+    "reviewedResolutionRowCount": 6,
+    "resolutionCandidateCount": 16,
+    "readyForCorrectedReextractionRowCount": 6,
+    "directArtifactFillRowCount": 0,
+    "modelAdmissionOpenedRowCount": 0,
+    "nonClaims": [
+      "This register does not change the original C2-LT-B1 independent fresh-review verdicts.",
+      "This register does not create reviewed artifacts for previously blocked rows.",
+      "This register does not mark any corrected source row eligible for artifact fill without corrected re-extraction and independent review.",
+      "This register does not authorize calibrated prediction, individual advice, individual death-date output, intervention ranking, clinical validity claims or domain-claim upgrades."
+    ]
+  },
+  "blockedUses": [
+    "calibrated-prediction",
+    "individual-advice",
+    "individual-death-date-output",
+    "intervention-ranking",
+    "clinical-validity-claim",
+    "domain-claim-upgrade"
+  ],
+  "sourceResolutionFreshReviews": [
+    {
+      "reviewId": "C2LTB1-SRFR-001",
+      "taskId": "C2LTB1-EXT-003",
+      "domainId": "sepsis-shock-early-recognition-resuscitation-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/sepsis-shock-early-recognition-resuscitation-continuity",
+      "priorReviewerVerdict": "downgrade-required",
+      "priorArtifactPromotionDecision": "downgrade-before-fill",
+      "sourceResolutionDecision": "replace-registered-url-with-current-adult-guideline-and-retain-2021-as-prior-version-lineage",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "source-resolution-fresh-review-primary-or-authoritative-source-check",
+      "candidateVerdicts": [
+        {
+          "candidateId": "C2LTB1-BRR-003-CAND-01",
+          "candidateRole": "current-adult-guideline-replacement",
+          "url": "https://www.sccm.org/survivingsepsiscampaign/guidelines-and-resources/surviving-sepsis-campaign-adult-guidelines",
+          "sourceIdentityVerdict": "source-identity-supported-for-resolution-candidate",
+          "sourceContextVerdict": "direct-url-or-official-search-verified",
+          "resolutionUseRole": "selected-resolution-source",
+          "resolutionUseVerdict": "usable-for-corrected-reextraction-not-direct-artifact-fill",
+          "freshReviewFinding": "SCCM now exposes the adult Surviving Sepsis Campaign 2026 guideline page with adult scope, updated recommendations and recommendation filters.",
+          "useBoundary": "Official SCCM adult guideline route candidate; use as current adult sepsis guideline source candidate only."
+        },
+        {
+          "candidateId": "C2LTB1-BRR-003-CAND-02",
+          "candidateRole": "historical-baseline-guideline-index",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34599691/",
+          "sourceIdentityVerdict": "source-identity-supported-for-resolution-candidate",
+          "sourceContextVerdict": "bibliographic-index-verified",
+          "resolutionUseRole": "selected-resolution-source",
+          "resolutionUseVerdict": "usable-for-corrected-reextraction-not-direct-artifact-fill",
+          "freshReviewFinding": "The 2021 adult SSC guideline remains the bibliographic baseline behind the registered title, but should be marked as superseded or previous-version when the 2026 source is used.",
+          "useBoundary": "PubMed lineage candidate for the 2021 adult SSC guideline; use as prior-version lineage only."
+        }
+      ],
+      "selectedResolutionCandidates": [
+        "C2LTB1-BRR-003-CAND-01",
+        "C2LTB1-BRR-003-CAND-02"
+      ],
+      "routeOnlyOrContextCandidates": [],
+      "sourceResolutionReviewerVerdict": "resolution-supported-reextract-required",
+      "sourceResolutionFinding": "Current adult SCCM guidance and the 2021 PubMed guideline lineage are sufficient to resolve source identity/currentness for a corrected adult sepsis row, but exact claims and endpoints must be re-extracted from the corrected source set before any artifact fill.",
+      "nextAction": "create-corrected-source-specific-reextraction-row",
+      "artifactPromotionDecision": "blocked-pending-corrected-source-reextraction-and-fresh-review",
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ]
+    },
+    {
+      "reviewId": "C2LTB1-SRFR-002",
+      "taskId": "C2LTB1-EXT-008",
+      "domainId": "anaphylaxis-allergic-emergency-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/anaphylaxis-allergic-emergency-continuity",
+      "priorReviewerVerdict": "cannot-evaluate-insufficient-context",
+      "priorArtifactPromotionDecision": "blocked-cannot-evaluate",
+      "sourceResolutionDecision": "replace-unresolved-niaid-public-explainer-with-guideline-grade-anaphylaxis-sources-and-keep-niaid-as-adjacent-context-only",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "source-resolution-fresh-review-primary-or-authoritative-source-check",
+      "candidateVerdicts": [
+        {
+          "candidateId": "C2LTB1-BRR-008-CAND-01",
+          "candidateRole": "clinical-practice-parameter-replacement",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38108678/",
+          "sourceIdentityVerdict": "source-identity-supported-for-resolution-candidate",
+          "sourceContextVerdict": "bibliographic-index-verified",
+          "resolutionUseRole": "selected-resolution-source",
+          "resolutionUseVerdict": "usable-for-corrected-reextraction-not-direct-artifact-fill",
+          "freshReviewFinding": "A 2023 practice parameter update is a stronger anaphylaxis source candidate than the unresolved NIAID public explainer URL.",
+          "useBoundary": "Guideline-grade practice parameter candidate; use after exact recommendation/context re-extraction."
+        },
+        {
+          "candidateId": "C2LTB1-BRR-008-CAND-02",
+          "candidateRole": "international-guidance-support",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7607509/",
+          "sourceIdentityVerdict": "source-identity-supported-for-resolution-candidate",
+          "sourceContextVerdict": "open-access-guidance-verified",
+          "resolutionUseRole": "selected-resolution-source",
+          "resolutionUseVerdict": "usable-for-corrected-reextraction-not-direct-artifact-fill",
+          "freshReviewFinding": "WAO guidance can provide an open-access authoritative context for definition, recognition, acute management route and follow-up vocabulary.",
+          "useBoundary": "Open WAO guidance candidate; use as guidance context, not personal emergency instruction."
+        },
+        {
+          "candidateId": "C2LTB1-BRR-008-CAND-03",
+          "candidateRole": "adjacent-niaid-context-only",
+          "url": "https://www.niaid.nih.gov/diseases-conditions/food-allergy",
+          "sourceIdentityVerdict": "source-identity-supported-for-resolution-candidate",
+          "sourceContextVerdict": "adjacent-context-only",
+          "resolutionUseRole": "route-only-or-context-source",
+          "resolutionUseVerdict": "route-only-or-context-do-not-fill-artifact",
+          "freshReviewFinding": "NIAID food allergy material may remain adjacent public context for severe allergic reactions, but it should not replace an anaphylaxis-specific source card by itself.",
+          "useBoundary": "NIAID food-allergy context is not an anaphylaxis-specific replacement source."
+        }
+      ],
+      "selectedResolutionCandidates": [
+        "C2LTB1-BRR-008-CAND-01",
+        "C2LTB1-BRR-008-CAND-02"
+      ],
+      "routeOnlyOrContextCandidates": [
+        "C2LTB1-BRR-008-CAND-03"
+      ],
+      "sourceResolutionReviewerVerdict": "resolution-supported-reextract-required",
+      "sourceResolutionFinding": "The unresolved NIAID anaphylaxis page should remain blocked; the 2023 practice parameter and open WAO 2020 guidance can support a corrected anaphylaxis source row after fresh re-extraction.",
+      "nextAction": "create-corrected-source-specific-reextraction-row",
+      "artifactPromotionDecision": "blocked-pending-corrected-source-reextraction-and-fresh-review",
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ]
+    },
+    {
+      "reviewId": "C2LTB1-SRFR-003",
+      "taskId": "C2LTB1-EXT-017",
+      "domainId": "cerebrovascular-stroke-brain-perfusion-resilience",
+      "localDomainPath": "domains/c2-source-maintenance/cerebrovascular-stroke-brain-perfusion-resilience",
+      "priorReviewerVerdict": "downgrade-required",
+      "priorArtifactPromotionDecision": "downgrade-before-fill",
+      "sourceResolutionDecision": "normalize-ninds-path-and-fresh-review-current-nih-stroke-page-before-artifact-fill",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "source-resolution-fresh-review-primary-or-authoritative-source-check",
+      "candidateVerdicts": [
+        {
+          "candidateId": "C2LTB1-BRR-017-CAND-01",
+          "candidateRole": "path-normalized-nih-stroke-page",
+          "url": "https://www.ninds.nih.gov/health-information/stroke",
+          "sourceIdentityVerdict": "source-identity-supported-for-resolution-candidate",
+          "sourceContextVerdict": "nih-path-normalization-verified",
+          "resolutionUseRole": "selected-resolution-source",
+          "resolutionUseVerdict": "usable-for-corrected-reextraction-not-direct-artifact-fill",
+          "freshReviewFinding": "The NINDS stroke page should be normalized away from the older /disorders/stroke path into the current NINDS stroke information path before artifact fill.",
+          "useBoundary": "Use as normalized NINDS stroke source candidate after fresh extraction."
+        },
+        {
+          "candidateId": "C2LTB1-BRR-017-CAND-02",
+          "candidateRole": "nih-prevention-context-candidate",
+          "url": "https://www.ninds.nih.gov/health-information/public-education/brain-basics/brain-basics-preventing-stroke",
+          "sourceIdentityVerdict": "source-identity-supported-for-resolution-candidate",
+          "sourceContextVerdict": "nih-prevention-context-only",
+          "resolutionUseRole": "route-only-or-context-source",
+          "resolutionUseVerdict": "route-only-or-context-do-not-fill-artifact",
+          "freshReviewFinding": "NINDS prevention material can supplement risk-factor and prevention vocabulary if stroke mechanism and acute/recovery content are separated.",
+          "useBoundary": "Use only if prevention/risk-factor endpoints are separated from acute and recovery endpoints."
+        }
+      ],
+      "selectedResolutionCandidates": [
+        "C2LTB1-BRR-017-CAND-01"
+      ],
+      "routeOnlyOrContextCandidates": [
+        "C2LTB1-BRR-017-CAND-02"
+      ],
+      "sourceResolutionReviewerVerdict": "resolution-supported-reextract-required",
+      "sourceResolutionFinding": "The current NINDS stroke path resolves the stale /disorders/stroke path enough to re-extract public stroke mechanism and emergency/recovery vocabulary; prevention content must remain a separate context row if used.",
+      "nextAction": "path-normalize-and-reextract-current-nih-stroke-page",
+      "artifactPromotionDecision": "blocked-pending-corrected-source-reextraction-and-fresh-review",
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ]
+    },
+    {
+      "reviewId": "C2LTB1-SRFR-004",
+      "taskId": "C2LTB1-EXT-018",
+      "domainId": "cerebrovascular-stroke-brain-perfusion-resilience",
+      "localDomainPath": "domains/c2-source-maintenance/cerebrovascular-stroke-brain-perfusion-resilience",
+      "priorReviewerVerdict": "downgrade-required",
+      "priorArtifactPromotionDecision": "downgrade-before-fill",
+      "sourceResolutionDecision": "split-aha-asa-guideline-hub-into-specific-guideline-document-candidates-before-artifact-fill",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "source-resolution-fresh-review-primary-or-authoritative-source-check",
+      "candidateVerdicts": [
+        {
+          "candidateId": "C2LTB1-BRR-018-CAND-01",
+          "candidateRole": "specific-acute-ischemic-stroke-guideline-candidate",
+          "url": "https://professional.heart.org/en/science-news/2026-guideline-for-the-early-management-of-patients-with-acute-ischemic-stroke",
+          "sourceIdentityVerdict": "source-identity-supported-for-resolution-candidate",
+          "sourceContextVerdict": "professional-guideline-page-verified",
+          "resolutionUseRole": "selected-resolution-source",
+          "resolutionUseVerdict": "usable-for-corrected-reextraction-not-direct-artifact-fill",
+          "freshReviewFinding": "AHA Professional Heart Daily exposes a specific 2026 acute ischemic stroke guideline page, which is more source-specific than the broad guideline hub.",
+          "useBoundary": "Use only for acute ischemic stroke early-management extraction; do not generalize to all stroke endpoints."
+        },
+        {
+          "candidateId": "C2LTB1-BRR-018-CAND-02",
+          "candidateRole": "guideline-hub-retained-for-routing",
+          "url": "https://professional.heart.org/en/guidelines-and-statements/stroke-guidelines",
+          "sourceIdentityVerdict": "source-identity-supported-for-resolution-candidate",
+          "sourceContextVerdict": "guideline-hub-route-only",
+          "resolutionUseRole": "route-only-or-context-source",
+          "resolutionUseVerdict": "route-only-or-context-do-not-fill-artifact",
+          "freshReviewFinding": "AHA/ASA guideline hubs should be retained only as route-to-source indexes until individual guideline documents are extracted.",
+          "useBoundary": "Use only to discover exact guideline documents."
+        },
+        {
+          "candidateId": "C2LTB1-BRR-018-CAND-03",
+          "candidateRole": "stroke-resource-library-routing-context",
+          "url": "https://www.stroke.org/en/professionals/stroke-resource-library/prevention-and-treatment-guidelines",
+          "sourceIdentityVerdict": "source-identity-supported-for-resolution-candidate",
+          "sourceContextVerdict": "resource-library-route-only",
+          "resolutionUseRole": "route-only-or-context-source",
+          "resolutionUseVerdict": "route-only-or-context-do-not-fill-artifact",
+          "freshReviewFinding": "The original Stroke.org hub remains useful as routing metadata, but the blocked row needs exact guideline-document extraction before artifact fill.",
+          "useBoundary": "Use only as original routing context and split by guideline type."
+        }
+      ],
+      "selectedResolutionCandidates": [
+        "C2LTB1-BRR-018-CAND-01"
+      ],
+      "routeOnlyOrContextCandidates": [
+        "C2LTB1-BRR-018-CAND-02",
+        "C2LTB1-BRR-018-CAND-03"
+      ],
+      "sourceResolutionReviewerVerdict": "route-only-split-required",
+      "sourceResolutionFinding": "A specific AHA Professional Heart Daily 2026 acute ischemic stroke guideline page resolves one source-specific branch, but the original AHA/ASA hubs must remain routing indexes and cannot fill a merged stroke artifact.",
+      "nextAction": "split-hub-into-specific-guideline-source-rows",
+      "artifactPromotionDecision": "blocked-pending-corrected-source-reextraction-and-fresh-review",
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ]
+    },
+    {
+      "reviewId": "C2LTB1-SRFR-005",
+      "taskId": "C2LTB1-EXT-041",
+      "domainId": "fertility-preservation-gamete-embryo-cryostorage-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/fertility-preservation-gamete-embryo-cryostorage-continuity",
+      "priorReviewerVerdict": "downgrade-required",
+      "priorArtifactPromotionDecision": "downgrade-before-fill",
+      "sourceResolutionDecision": "resolve-asco-currentness-against-2025-guideline-update-before-artifact-fill",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "source-resolution-fresh-review-primary-or-authoritative-source-check",
+      "candidateVerdicts": [
+        {
+          "candidateId": "C2LTB1-BRR-041-CAND-01",
+          "candidateRole": "current-guideline-replacement",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40106739/",
+          "sourceIdentityVerdict": "source-identity-supported-for-resolution-candidate",
+          "sourceContextVerdict": "bibliographic-index-verified",
+          "resolutionUseRole": "selected-resolution-source",
+          "resolutionUseVerdict": "usable-for-corrected-reextraction-not-direct-artifact-fill",
+          "freshReviewFinding": "PubMed indexes a newer ASCO fertility preservation guideline update that should be checked against and likely supersede the registered 2018 update for currentness-sensitive artifacts.",
+          "useBoundary": "Use as current ASCO guideline update candidate after fresh extraction."
+        },
+        {
+          "candidateId": "C2LTB1-BRR-041-CAND-02",
+          "candidateRole": "registered-prior-version-lineage",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29620997/",
+          "sourceIdentityVerdict": "source-identity-supported-for-resolution-candidate",
+          "sourceContextVerdict": "prior-version-lineage-only",
+          "resolutionUseRole": "route-only-or-context-source",
+          "resolutionUseVerdict": "route-only-or-context-do-not-fill-artifact",
+          "freshReviewFinding": "The registered 2018 ASCO update can remain a prior-version lineage source once the 2025 update currentness boundary is resolved.",
+          "useBoundary": "Keep as historical guideline lineage, not current source for new artifact fill."
+        },
+        {
+          "candidateId": "C2LTB1-BRR-041-CAND-03",
+          "candidateRole": "current-guideline-full-text-candidate",
+          "url": "https://ascopubs.org/doi/10.1200/JCO-24-02782",
+          "sourceIdentityVerdict": "source-identity-supported-for-resolution-candidate",
+          "sourceContextVerdict": "publisher-doi-candidate",
+          "resolutionUseRole": "selected-resolution-source",
+          "resolutionUseVerdict": "usable-for-corrected-reextraction-not-direct-artifact-fill",
+          "freshReviewFinding": "The publisher DOI should be checked for final guideline wording, recommendations, methods and errata before artifact fill.",
+          "useBoundary": "Use for final wording if accessible and matched to the PubMed record."
+        }
+      ],
+      "selectedResolutionCandidates": [
+        "C2LTB1-BRR-041-CAND-01",
+        "C2LTB1-BRR-041-CAND-03"
+      ],
+      "routeOnlyOrContextCandidates": [
+        "C2LTB1-BRR-041-CAND-02"
+      ],
+      "sourceResolutionReviewerVerdict": "resolution-supported-reextract-required",
+      "sourceResolutionFinding": "The newer ASCO fertility-preservation guideline update resolves the currentness problem against the registered 2018 source, but the 2025 source must be re-extracted and the 2018 row retained only as prior-version lineage.",
+      "nextAction": "create-current-asco-guideline-reextraction-row",
+      "artifactPromotionDecision": "blocked-pending-corrected-source-reextraction-and-fresh-review",
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ]
+    },
+    {
+      "reviewId": "C2LTB1-SRFR-006",
+      "taskId": "C2LTB1-EXT-045",
+      "domainId": "skin-barrier-wound-healing",
+      "localDomainPath": "domains/c2-source-maintenance/skin-barrier-wound-healing",
+      "priorReviewerVerdict": "downgrade-required",
+      "priorArtifactPromotionDecision": "downgrade-before-fill",
+      "sourceResolutionDecision": "replace-ambiguous-whs-pubmed-row-with-whs-directory-plus-wound-type-specific-guideline-candidates-before-artifact-fill",
+      "freshReviewDate": "2026-07-02",
+      "freshReviewMode": "source-resolution-fresh-review-primary-or-authoritative-source-check",
+      "candidateVerdicts": [
+        {
+          "candidateId": "C2LTB1-BRR-045-CAND-01",
+          "candidateRole": "professional-guideline-directory-correction",
+          "url": "https://woundheal.org/clinical-tools/",
+          "sourceIdentityVerdict": "source-identity-supported-for-resolution-candidate",
+          "sourceContextVerdict": "professional-directory-verified",
+          "resolutionUseRole": "selected-resolution-source",
+          "resolutionUseVerdict": "usable-for-corrected-reextraction-not-direct-artifact-fill",
+          "freshReviewFinding": "The WHS clinical tools page lists core guideline categories and topic-specific guideline links, allowing the ambiguous registered PubMed row to be corrected by wound type.",
+          "useBoundary": "Use as source-discovery directory only."
+        },
+        {
+          "candidateId": "C2LTB1-BRR-045-CAND-02",
+          "candidateRole": "specific-diabetic-foot-ulcer-guideline-candidate",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38032324/",
+          "sourceIdentityVerdict": "source-identity-supported-for-resolution-candidate",
+          "sourceContextVerdict": "bibliographic-guideline-index-verified",
+          "resolutionUseRole": "selected-resolution-source",
+          "resolutionUseVerdict": "usable-for-corrected-reextraction-not-direct-artifact-fill",
+          "freshReviewFinding": "PubMed indexes the WHS 2024 diabetic foot ulcer treatment guideline update, providing a specific wound-type source candidate.",
+          "useBoundary": "Use only for diabetic foot ulcer endpoint extraction after fresh review."
+        },
+        {
+          "candidateId": "C2LTB1-BRR-045-CAND-03",
+          "candidateRole": "topic-specific-wound-guideline-splitting-candidate",
+          "url": "https://woundheal.org/clinical-tools/#guidelines-by-topic",
+          "sourceIdentityVerdict": "source-identity-supported-for-resolution-candidate",
+          "sourceContextVerdict": "directory-anchor-route-only",
+          "resolutionUseRole": "route-only-or-context-source",
+          "resolutionUseVerdict": "route-only-or-context-do-not-fill-artifact",
+          "freshReviewFinding": "The WHS directory separates diabetic foot ulcers, pressure ulcers, arterial ulcers, venous ulcers and chronic wounds, so artifact fill must split wound endpoints by etiology.",
+          "useBoundary": "Use only to split future source cards by wound type."
+        }
+      ],
+      "selectedResolutionCandidates": [
+        "C2LTB1-BRR-045-CAND-01",
+        "C2LTB1-BRR-045-CAND-02"
+      ],
+      "routeOnlyOrContextCandidates": [
+        "C2LTB1-BRR-045-CAND-03"
+      ],
+      "sourceResolutionReviewerVerdict": "route-only-split-required",
+      "sourceResolutionFinding": "The WHS directory plus a specific diabetic-foot-ulcer guideline candidate resolve the ambiguous WHS row into split wound-type routes; a merged all-wound artifact remains blocked.",
+      "nextAction": "split-wound-guidelines-by-wound-type-before-reextraction",
+      "artifactPromotionDecision": "blocked-pending-corrected-source-reextraction-and-fresh-review",
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ]
+    }
+  ],
+  "indexRequirements": [
+    "README.md",
+    "AGENTS.md",
+    "docs/AGENTS.md",
+    "docs/reference/README.md",
+    "docs/reference/human-infra-maturity-roadmap.md",
+    "tools/README.md",
+    "tools/AGENTS.md"
+  ],
+  "summary": {
+    "reviewedResolutionRows": 6,
+    "sourceResolutionCandidateCount": 16,
+    "readyForCorrectedReextractionRows": 6,
+    "directArtifactFillRows": 0,
+    "modelAdmissionDecision": "blocked-for-all-source-resolution-fresh-review-rows",
+    "nextWorkOrder": "Create a corrected source re-extraction queue/register for the 6 source-resolution-reviewed rows; split hub/directory rows before any corrected artifact promotion."
+  }
+}
