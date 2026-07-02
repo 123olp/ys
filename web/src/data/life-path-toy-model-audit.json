@@ -1,8 +1,8 @@
 {
   "schemaVersion": "human-infra.life-path-toy-audit.v1",
-  "generatedAt": "2026-07-02T01:26:16.690331+00:00",
+  "generatedAt": "2026-07-02T01:38:26.279879+00:00",
   "modelPath": "web/src/data/life-path-toy-model.json",
-  "modelSha256": "b219a23eb9b87d807a579b65b69e1ff3a52926df08cfb9a3f256f0aebfa9e2eb",
+  "modelSha256": "a4c92209d79d20579bf1f575d5ebf07ffe5be9ccaf6bf3f3eef08efa287b5377",
   "overallStatus": "PASS",
   "checks": [
     {
@@ -334,10 +334,65 @@
       "id": "nhats-extraction-manifest-source-trace",
       "status": "PASS",
       "detail": "manifest must cite official NHATS overview, access, terms, cross-year search, files, user guide, and sample design sources"
+    },
+    {
+      "id": "sensitivity-analysis-exists",
+      "status": "PASS",
+      "detail": "web/src/data/life-path-sensitivity-analysis.json"
+    },
+    {
+      "id": "sensitivity-schema-version",
+      "status": "PASS",
+      "detail": "schemaVersion='human-infra.life-path-sensitivity.v1'"
+    },
+    {
+      "id": "sensitivity-source-model-hash",
+      "status": "PASS",
+      "detail": "sensitivity output must point back to the generated model path and sha256"
+    },
+    {
+      "id": "sensitivity-boundary-language",
+      "status": "PASS",
+      "detail": "sensitivity analysis must preserve synthetic/no-real-cohort/no-calibration/no-individual-use boundaries"
+    },
+    {
+      "id": "sensitivity-parameter-coverage",
+      "status": "PASS",
+      "detail": "missing_parameters=[]"
+    },
+    {
+      "id": "sensitivity-result-count",
+      "status": "PASS",
+      "detail": "expected=48, actual=48"
+    },
+    {
+      "id": "sensitivity-result-shape",
+      "status": "PASS",
+      "detail": "directions=['high', 'low'], scenarios=['assisted', 'baseline', 'convergence', 'escape']"
+    },
+    {
+      "id": "sensitivity-result-ranges",
+      "status": "PASS",
+      "detail": "sensitivity result metrics must keep survival/option probabilities in [0, 1] and numeric summary fields present"
+    },
+    {
+      "id": "sensitivity-stability-summary",
+      "status": "PASS",
+      "detail": "stability summary must cover every scenario, boundary stability, ranges, and most-sensitive parameter"
+    },
+    {
+      "id": "sensitivity-sanity-checks",
+      "status": "PASS",
+      "detail": "sensitivity sanity checks must bind expected result count and suppress death-date / individual prediction"
+    },
+    {
+      "id": "sensitivity-no-individual-death-date-fields",
+      "status": "PASS",
+      "detail": "prohibited_keys=[]"
     }
   ],
   "summary": {
-    "pass": 66,
+    "pass": 77,
     "warn": 0,
     "fail": 0
   },
@@ -693,6 +748,73 @@
     ],
     "summary": {
       "pass": 9,
+      "warn": 0,
+      "fail": 0
+    }
+  },
+  "sensitivityAnalysis": {
+    "path": "web/src/data/life-path-sensitivity-analysis.json",
+    "sha256": "b0d4947cc2e99c983b96bf424b5b6e9b0443209f3f5f23d5750444cf926473ad",
+    "status": "PASS",
+    "checks": [
+      {
+        "id": "sensitivity-analysis-exists",
+        "status": "PASS",
+        "detail": "web/src/data/life-path-sensitivity-analysis.json"
+      },
+      {
+        "id": "sensitivity-schema-version",
+        "status": "PASS",
+        "detail": "schemaVersion='human-infra.life-path-sensitivity.v1'"
+      },
+      {
+        "id": "sensitivity-source-model-hash",
+        "status": "PASS",
+        "detail": "sensitivity output must point back to the generated model path and sha256"
+      },
+      {
+        "id": "sensitivity-boundary-language",
+        "status": "PASS",
+        "detail": "sensitivity analysis must preserve synthetic/no-real-cohort/no-calibration/no-individual-use boundaries"
+      },
+      {
+        "id": "sensitivity-parameter-coverage",
+        "status": "PASS",
+        "detail": "missing_parameters=[]"
+      },
+      {
+        "id": "sensitivity-result-count",
+        "status": "PASS",
+        "detail": "expected=48, actual=48"
+      },
+      {
+        "id": "sensitivity-result-shape",
+        "status": "PASS",
+        "detail": "directions=['high', 'low'], scenarios=['assisted', 'baseline', 'convergence', 'escape']"
+      },
+      {
+        "id": "sensitivity-result-ranges",
+        "status": "PASS",
+        "detail": "sensitivity result metrics must keep survival/option probabilities in [0, 1] and numeric summary fields present"
+      },
+      {
+        "id": "sensitivity-stability-summary",
+        "status": "PASS",
+        "detail": "stability summary must cover every scenario, boundary stability, ranges, and most-sensitive parameter"
+      },
+      {
+        "id": "sensitivity-sanity-checks",
+        "status": "PASS",
+        "detail": "sensitivity sanity checks must bind expected result count and suppress death-date / individual prediction"
+      },
+      {
+        "id": "sensitivity-no-individual-death-date-fields",
+        "status": "PASS",
+        "detail": "prohibited_keys=[]"
+      }
+    ],
+    "summary": {
+      "pass": 11,
       "warn": 0,
       "fail": 0
     }

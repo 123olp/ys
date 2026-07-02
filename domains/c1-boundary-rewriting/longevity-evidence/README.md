@@ -152,7 +152,7 @@ longevity-evidence/
 
 `docs/lev-source-cards.md` 保存第一批 Source Cards，限定二阶 / 多阶效应理论来源能支持什么、不能支持什么。
 
-`data/manual/life_path_toy_model_scenarios.json`、`data/manual/life_path_calibration_readiness.json`、`data/manual/life_path_data_source_candidates.json`、`docs/life-path-data-source-cards.md`、`docs/life-path-data-card-template.md`、`docs/life-path-data-card-nhats.md`、`docs/life-path-variable-dictionary-nhats.md`、`docs/life-path-extraction-manifest-nhats-draft.md`、`scripts/run_life_path_toy_model.py` 和 `scripts/audit_life_path_toy_model.py` 是最小定量管线：输入保存合成场景，校准预备契约记录 target population、time zero、outcome、estimand、validation、calibration、sensitivity 和 prohibited use 等下一阶段字段，候选数据源注册表记录 HRS、NCHS linked mortality、UK Biobank、All of Us、NHATS、ELSA、SHARE 和 Framingham 等可能用于后续校准或外部验证的官方入口与治理边界，Source Cards 把每个候选源的支持范围和禁止外推边界落成可审查文本，Data Card 模板规定真实数据进入模型前必须补齐的治理、设计、变量、质量、验证和禁止输出字段，NHATS Data Card、变量字典草案和 extraction manifest 草案提供第一份晚年功能/有效时间模型准入样板，并明确未补齐文件名、变量名、权重、缺失码、访问层级、endpoint 和输出规则前不能写抽取脚本或下载数据，导出器生成 `web/src/data/life-path-toy-model.json`，审计器生成 `web/src/data/life-path-toy-model-audit.json` / `.md`。该模型只验证生命路径建模契约、校准预备边界、候选数据源边界、数据卡准入脚手架和提取前治理门禁，不作为真实医学预测。
+`data/manual/life_path_toy_model_scenarios.json`、`data/manual/life_path_calibration_readiness.json`、`data/manual/life_path_data_source_candidates.json`、`docs/life-path-data-source-cards.md`、`docs/life-path-data-card-template.md`、`docs/life-path-data-card-nhats.md`、`docs/life-path-variable-dictionary-nhats.md`、`docs/life-path-extraction-manifest-nhats-draft.md`、`scripts/run_life_path_toy_model.py`、`scripts/run_life_path_sensitivity_analysis.py` 和 `scripts/audit_life_path_toy_model.py` 是最小定量管线：输入保存合成场景，校准预备契约记录 target population、time zero、outcome、estimand、validation、calibration、sensitivity 和 prohibited use 等下一阶段字段，候选数据源注册表记录 HRS、NCHS linked mortality、UK Biobank、All of Us、NHATS、ELSA、SHARE 和 Framingham 等可能用于后续校准或外部验证的官方入口与治理边界，Source Cards 把每个候选源的支持范围和禁止外推边界落成可审查文本，Data Card 模板规定真实数据进入模型前必须补齐的治理、设计、变量、质量、验证和禁止输出字段，NHATS Data Card、变量字典草案和 extraction manifest 草案提供第一份晚年功能/有效时间模型准入样板，并明确未补齐文件名、变量名、权重、缺失码、访问层级、endpoint 和输出规则前不能写抽取脚本或下载数据，导出器生成 `web/src/data/life-path-toy-model.json`，敏感性导出器生成 `web/src/data/life-path-sensitivity-analysis.json`，审计器生成 `web/src/data/life-path-toy-model-audit.json` / `.md`。该模型只验证生命路径建模契约、校准预备边界、候选数据源边界、数据卡准入脚手架、提取前治理门禁和合成敏感性分析，不作为真实医学预测。
 
 ## 运行示例
 
@@ -162,5 +162,6 @@ longevity-evidence/
 python3 domains/c1-boundary-rewriting/longevity-evidence/scripts/collect_mvp_data.py --limit 10
 python3 domains/c1-boundary-rewriting/longevity-evidence/scripts/collect_core_data.py
 python3 domains/c1-boundary-rewriting/longevity-evidence/scripts/run_life_path_toy_model.py
+python3 domains/c1-boundary-rewriting/longevity-evidence/scripts/run_life_path_sensitivity_analysis.py
 python3 domains/c1-boundary-rewriting/longevity-evidence/scripts/audit_life_path_toy_model.py
 ```

@@ -163,7 +163,7 @@ web/
 - `src/pages/papers/controllable-metric-waiting-room-hypothesis.astro`：独立 arXiv-style working paper 页面，提出“可控度规等待室假设”，承载“等待室 -> 技术升级 -> 退出采用 -> 再等待”的递归未来等待模型。
 - `src/pages/book.astro`：书籍介绍与 Human Infra 转译，承载章节主线、技术链路和边界说明。
 - `src/pages/lev.astro`：长寿逃逸速度路线页，展示 R1-R9 主流路线、概率门、多阶效应、正向飞轮和负向反噬链路。
-- `src/pages/model.astro`：交互预测模型页，展示寿命、有效时间、主观时间、相对时间和未来选择权的模型位置。
+- `src/pages/model.astro`：交互预测模型页，展示寿命、有效时间、主观时间、相对时间、未来选择权和合成敏感性分析的模型位置。
 - `src/pages/research-standards.astro`：科研标准页，记录论文阅读、预测模型报告、因果推断、可视化和工具链标准。
 - `src/scripts/evidence-graph.js`：D3 证据链图脚本，从页面嵌入的 Evidence Matrix JSON 生成主链、反哺路径、风险通道和因果门禁 SVG。
 - `src/scripts/lev-effects-graph.js`：D3 LEV 图表脚本，消费 `src/data/lev-model.json` 生成概率门、路线矩阵和多阶飞轮图。
@@ -172,7 +172,8 @@ web/
 - `src/data/book-signals.json`：书籍观点到 Human Infra 变量的结构化映射。
 - `src/data/lev-model.json`：由 `npm run export:lev-model` 从 `domains/c1-boundary-rewriting/longevity-evidence/data/manual/*.tsv` 导出的 LEV 路线与多阶效应 Web 数据。
 - `src/data/life-path-toy-model.json`：由 `npm run export:life-path-toy` 从 `domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_toy_model_scenarios.json` 导出的生命路径 toy model 数据，供 `/model/` 优先消费。
-- `src/data/life-path-toy-model-audit.json` / `src/data/life-path-toy-model-audit.md`：由 `npm run audit:life-path-toy` 生成的模型审计产物，记录 schema、source hash、model card、曲线、概率范围、LEV 开放边界、校准预备契约、候选数据源注册表、数据源 Source Cards、Data Card 模板、NHATS Data Card、NHATS 变量字典、NHATS extraction manifest 和禁止个体死亡日期字段的检查结果。
+- `src/data/life-path-sensitivity-analysis.json`：由 `npm run export:life-path-sensitivity` 从同一组合成场景和已导出的 toy model 生成，记录 48 个一因素扰动结果、稳定性摘要、开放边界状态和最敏感参数；它只服务场景级 toy model 审计，不证明真实预测稳定性。
+- `src/data/life-path-toy-model-audit.json` / `src/data/life-path-toy-model-audit.md`：由 `npm run audit:life-path-toy` 生成的模型审计产物，记录 schema、source hash、model card、曲线、概率范围、LEV 开放边界、合成敏感性分析、校准预备契约、候选数据源注册表、数据源 Source Cards、Data Card 模板、NHATS Data Card、NHATS 变量字典、NHATS extraction manifest 和禁止个体死亡日期字段的检查结果。
 - `src/data/effective-immortality-evidence.json`：有效永生飞轮论文页的结构化数据源，承载 Research Question Brief、Methodology Blueprint、Research Execution Roadmap、Search Strategy Seeds、Systematic Search Protocol、Literature Screening Rubric、Literature Gap Map、Search Execution Register、Candidate Source Verification Register、Candidate Source Extraction Register、Claim Register、Claim Evidence Map、AI Research Failure Mode Audit、AI Task Evidence Register、Reference Registry、变量字典、模型契约、推导图、链路边、技术族和证据等级。
 - `src/data/metric-redshift-recursive-waiting.json`：度规红移递归等待假设论文页的结构化研究数据源，承载 Problem Anchor、Paper Plan、贡献注册表、Claim Register、Claim-Evidence Matrix、Claim Maturity Register、Falsifier Register、Source Cards、Source Card Ledger、Scenario Card Template、Scenario Evaluation Registry、Toy NCG Evaluation Protocol、Toy NCG Evaluation Registry、NCG Formula Decomposition、Pre-Submission Review Register、变量契约、模型假设、命题注册表、生命周期状态机、图表计划、引用语境预审、研究协议、失败条件和页面审查契约。
 - `src/data/proper-time-differential-waiting-hypothesis.json`：度规红移固有时差分路径专项论文页的结构化研究数据源，承载概念表、核心假设、贡献注册表、生命周期状态机、NCG 变量、可达性阶梯、反证条件、Source Cards、Claim-Evidence Matrix、Scenario Cards、Scenario Evaluation Registry、Qualitative NCG Scale、Scenario Variable Matrix、Toy NCG Evaluation Protocol、NCG Formula Decomposition、数据驱动 SVG 场景比较图、图表计划、引用边界、Citation Context Review Packet、Reference Registry 和页面审计契约。
@@ -249,7 +250,7 @@ python3 tools/arxiv_html_paper_tool.py verify-assets --public-dir web/public
 | `papers/proper-time-differential-waiting-hypothesis.astro` | 承载度规红移固有时差分路径、物理接口、状态机、净收益模型和反证条件 | 人工黑洞可行性承诺、工程操作方案或个体永生方案 |
 | `book.astro` | 承载书籍、作者观点和 Human Infra 转译 | 模型参数实现 |
 | `lev.astro` | 承载长寿逃逸速度主流路线、概率门、多阶效应和飞轮图 | 个体医疗建议、购买建议或长寿承诺 |
-| `model.astro` | 承载生命路径、有效时间、主观时间、相对时间和未来选择权的模型可视化 | 医疗建议或个人结论 |
+| `model.astro` | 承载生命路径、有效时间、主观时间、相对时间、未来选择权和合成敏感性分析的模型可视化 | 医疗建议、真实校准敏感性分析或个人结论 |
 | `research-standards.astro` | 承载论文、工具、模型报告和可视化规范 | 宣传文案 |
 
 实现优先级：

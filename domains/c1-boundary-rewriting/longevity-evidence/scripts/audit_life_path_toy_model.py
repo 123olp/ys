@@ -15,6 +15,9 @@ REPO_ROOT = Path(__file__).resolve().parents[4]
 DEFAULT_MODEL = REPO_ROOT / "web" / "src" / "data" / "life-path-toy-model.json"
 DEFAULT_JSON_OUT = REPO_ROOT / "web" / "src" / "data" / "life-path-toy-model-audit.json"
 DEFAULT_MD_OUT = REPO_ROOT / "web" / "src" / "data" / "life-path-toy-model-audit.md"
+DEFAULT_SENSITIVITY = (
+    REPO_ROOT / "web" / "src" / "data" / "life-path-sensitivity-analysis.json"
+)
 DEFAULT_READINESS = (
     REPO_ROOT
     / "domains"
@@ -162,6 +165,14 @@ REQUIRED_DATA_CARD_TEMPLATE_SECTIONS = {
     "Model Use",
     "Decision",
     "Source Trace",
+}
+REQUIRED_SENSITIVITY_PARAMETERS = {
+    "hazardMultiplier",
+    "healthQualityShiftYears",
+    "capabilityMultiplier",
+    "subjectiveTimeExpansion",
+    "levProgressRate",
+    "riskTailPenalty",
 }
 
 
@@ -1015,9 +1026,237 @@ def audit_nhats_extraction_manifest(manifest_path: Path) -> dict[str, Any]:
     }
 
 
+def audit_sensitivity_analysis(
+    sensitivity_path: Path,
+    model_data: dict[str, Any],
+    model_path: Path,
+) -> dict[str, Any]:
+    checks: list[dict[str, Any]] = []
+    sensitivity_exists = sensitivity_path.exists()
+    add_check(
+        checks,
+        "sensitivity-analysis-exists",
+        status_from_bool(sensitivity_exists),
+        str(sensitivity_path.relative_to(REPO_ROOT)),
+    )
+
+    sensitivity = load_json(sensitivity_path) if sensitivity_exists else {}
+    schema_version = sensitivity.get("schemaVersion")
+    add_check(
+        checks,
+        "sensitivity-schema-version",
+        status_from_bool(schema_version == "human-infra.life-path-sensitivity.v1"),
+        f"schemaVersion={schema_version!r}",
+    )
+
+    source_model = sensitivity.get("sourceModel")
+    source_model_ok = (
+        isinstance(source_model, dict)
+        and source_model.get("path") == str(model_path.relative_to(REPO_ROOT))
+        and source_model.get("sha256") == sha256_file(model_path)
+    )
+    add_check(
+        checks,
+        "sensitivity-source-model-hash",
+        status_from_bool(sensitivity_exists and source_model_ok),
+        "sensitivity output must point back to the generated model path and sha256",
+    )
+
+    boundary = sensitivity.get("analysisBoundary")
+    boundary_ok = (
+        isinstance(boundary, dict)
+        and has_text(boundary, "Synthetic toy model")
+        and has_text(boundary, "no real cohort")
+        and has_text(boundary, "no real cohort, calibration, validation")
+        and has_text(boundary, "individual death-date prediction")
+        and has_text(boundary, "medical advice")
+        and has_text(boundary, "empirically estimated")
+    )
+    add_check(
+        checks,
+        "sensitivity-boundary-language",
+        status_from_bool(sensitivity_exists and boundary_ok),
+        "sensitivity analysis must preserve synthetic/no-real-cohort/no-calibration/no-individual-use boundaries",
+    )
+
+    plan = sensitivity.get("perturbationPlan")
+    observed_parameters: set[str] = set()
+    plan_bounds_ok = True
+    if isinstance(plan, list):
+        for row in plan:
+            if not isinstance(row, dict):
+                plan_bounds_ok = False
+                continue
+            parameter = row.get("parameter")
+            if isinstance(parameter, str):
+                observed_parameters.add(parameter)
+            if row.get("mode") not in {"relative", "absolute"}:
+                plan_bounds_ok = False
+            if not all(isinstance(row.get(key), (int, float)) for key in ("low", "high")):
+                plan_bounds_ok = False
+    missing_parameters = sorted(REQUIRED_SENSITIVITY_PARAMETERS - observed_parameters)
+    add_check(
+        checks,
+        "sensitivity-parameter-coverage",
+        status_from_bool(isinstance(plan, list) and not missing_parameters and plan_bounds_ok),
+        f"missing_parameters={missing_parameters}",
+    )
+
+    scenarios = model_data.get("scenarios")
+    scenario_ids: list[str] = []
+    if isinstance(scenarios, list):
+        scenario_ids = [
+            scenario["id"]
+            for scenario in scenarios
+            if isinstance(scenario, dict) and isinstance(scenario.get("id"), str)
+        ]
+    expected_count = len(scenario_ids) * len(REQUIRED_SENSITIVITY_PARAMETERS) * 2
+    results = sensitivity.get("results")
+    result_count_ok = isinstance(results, list) and len(results) == expected_count
+    add_check(
+        checks,
+        "sensitivity-result-count",
+        status_from_bool(result_count_ok),
+        f"expected={expected_count}, actual={len(results) if isinstance(results, list) else 'invalid'}",
+    )
+
+    result_shape_ok = True
+    result_ranges_ok = True
+    observed_directions: set[str] = set()
+    observed_result_parameters: set[str] = set()
+    observed_result_scenarios: set[str] = set()
+    if isinstance(results, list):
+        for row in results:
+            if not isinstance(row, dict):
+                result_shape_ok = False
+                continue
+            observed_directions.add(str(row.get("direction")))
+            parameter = row.get("parameter")
+            scenario_id = row.get("scenarioId")
+            if isinstance(parameter, str):
+                observed_result_parameters.add(parameter)
+            if isinstance(scenario_id, str):
+                observed_result_scenarios.add(scenario_id)
+            if not {
+                "scenarioId",
+                "variantId",
+                "parameter",
+                "direction",
+                "nominalValue",
+                "variantValue",
+                "metrics",
+                "delta",
+            }.issubset(row):
+                result_shape_ok = False
+            metrics = row.get("metrics")
+            if not isinstance(metrics, dict):
+                result_ranges_ok = False
+                continue
+            for key in ("survivalAt80", "survivalAt100", "optionValue"):
+                value = metrics.get(key)
+                if not isinstance(value, (int, float)) or not 0 <= float(value) <= 1:
+                    result_ranges_ok = False
+            for key in (
+                "expectedLifeAgeProxy",
+                "expectedEffectiveTimeYears",
+                "expectedEffectiveTimeGainYears",
+                "healthspanAgeProxy",
+                "levRatio",
+                "riskTailPenalty",
+            ):
+                value = metrics.get(key)
+                if not isinstance(value, (int, float)):
+                    result_ranges_ok = False
+
+    expected_scenario_set = set(str(item) for item in scenario_ids)
+    result_coverage_ok = (
+        observed_directions == {"low", "high"}
+        and observed_result_parameters == REQUIRED_SENSITIVITY_PARAMETERS
+        and observed_result_scenarios == expected_scenario_set
+    )
+    add_check(
+        checks,
+        "sensitivity-result-shape",
+        status_from_bool(result_shape_ok and result_coverage_ok),
+        f"directions={sorted(observed_directions)}, scenarios={sorted(observed_result_scenarios)}",
+    )
+    add_check(
+        checks,
+        "sensitivity-result-ranges",
+        status_from_bool(result_ranges_ok),
+        "sensitivity result metrics must keep survival/option probabilities in [0, 1] and numeric summary fields present",
+    )
+
+    stability = sensitivity.get("stabilitySummary")
+    stability_ok = isinstance(stability, list) and len(stability) == len(expected_scenario_set)
+    if isinstance(stability, list):
+        for row in stability:
+            if not isinstance(row, dict):
+                stability_ok = False
+                continue
+            if not {
+                "scenarioId",
+                "nominalOpenBoundary",
+                "openBoundaryStable",
+                "effectiveTimeRange",
+                "lifeAgeRange",
+                "mostSensitiveParameter",
+            }.issubset(row):
+                stability_ok = False
+            if row.get("mostSensitiveParameter") not in REQUIRED_SENSITIVITY_PARAMETERS:
+                stability_ok = False
+            for range_key in ("effectiveTimeRange", "lifeAgeRange"):
+                range_value = row.get(range_key)
+                if not isinstance(range_value, dict) or not all(
+                    isinstance(range_value.get(key), (int, float))
+                    for key in ("min", "max", "width")
+                ):
+                    stability_ok = False
+    add_check(
+        checks,
+        "sensitivity-stability-summary",
+        status_from_bool(stability_ok),
+        "stability summary must cover every scenario, boundary stability, ranges, and most-sensitive parameter",
+    )
+
+    sanity = sensitivity.get("sanityChecks")
+    sanity_ok = (
+        isinstance(sanity, dict)
+        and sanity.get("resultCount") == expected_count
+        and sanity.get("scenarioCount") == len(expected_scenario_set)
+        and sanity.get("parameterCount") == len(REQUIRED_SENSITIVITY_PARAMETERS)
+        and sanity.get("deathDateSuppressed") is True
+        and sanity.get("individualPredictionSuppressed") is True
+    )
+    add_check(
+        checks,
+        "sensitivity-sanity-checks",
+        status_from_bool(sanity_ok),
+        "sensitivity sanity checks must bind expected result count and suppress death-date / individual prediction",
+    )
+
+    key_set = collect_keys(sensitivity)
+    prohibited_keys = sorted(key_set & PROHIBITED_FIELD_NAMES)
+    add_check(
+        checks,
+        "sensitivity-no-individual-death-date-fields",
+        status_from_bool(not prohibited_keys),
+        f"prohibited_keys={prohibited_keys}",
+    )
+
+    return {
+        "path": str(sensitivity_path.relative_to(REPO_ROOT)),
+        "sha256": sha256_file(sensitivity_path) if sensitivity_exists else None,
+        "status": "PASS" if summarize_checks(checks)["fail"] == 0 else "FAIL",
+        "checks": checks,
+        "summary": summarize_checks(checks),
+    }
+
+
 def audit_model(
     data: dict[str, Any],
     model_path: Path,
+    sensitivity_path: Path,
     readiness_path: Path,
     data_sources_path: Path,
     source_cards_path: Path,
@@ -1199,11 +1438,13 @@ def audit_model(
     nhats_extraction_manifest_audit = audit_nhats_extraction_manifest(
         nhats_extraction_manifest_path,
     )
+    sensitivity_audit = audit_sensitivity_analysis(sensitivity_path, data, model_path)
     checks.extend(readiness_audit["checks"])
     checks.extend(data_sources_audit["checks"])
     checks.extend(source_card_docs_audit["checks"])
     checks.extend(nhats_docs_audit["checks"])
     checks.extend(nhats_extraction_manifest_audit["checks"])
+    checks.extend(sensitivity_audit["checks"])
     failed = [check for check in checks if check["status"] == "FAIL"]
     overall = "PASS" if not failed else "FAIL"
     return {
@@ -1220,6 +1461,7 @@ def audit_model(
         "sourceCardDocs": source_card_docs_audit,
         "nhatsDataAdmission": nhats_docs_audit,
         "nhatsExtractionManifest": nhats_extraction_manifest_audit,
+        "sensitivityAnalysis": sensitivity_audit,
     }
 
 
@@ -1282,6 +1524,13 @@ def render_markdown(audit: dict[str, Any]) -> str:
             f"- Manifest status: `{audit['nhatsExtractionManifest']['status']}`",
             "- Boundary: the manifest is a pre-extraction gate; it blocks scripts, downloads, field inference, calibration, validation, raw-data exposure and unsafe individual outputs until official file-level requirements are complete.",
             "",
+            "## Sensitivity Analysis",
+            "",
+            f"- Sensitivity path: `{audit['sensitivityAnalysis']['path']}`",
+            f"- Sensitivity SHA-256: `{audit['sensitivityAnalysis']['sha256']}`",
+            f"- Sensitivity status: `{audit['sensitivityAnalysis']['status']}`",
+            "- Boundary: sensitivity analysis is synthetic one-factor-at-a-time stress testing; it does not prove empirical parameter values, causal effects, calibrated prediction, or individual usefulness.",
+            "",
             "## Standard Alignment",
             "",
             "| Standard | Local gate | Status | Boundary |",
@@ -1307,6 +1556,7 @@ def render_markdown(audit: dict[str, Any]) -> str:
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--model", type=Path, default=DEFAULT_MODEL)
+    parser.add_argument("--sensitivity", type=Path, default=DEFAULT_SENSITIVITY)
     parser.add_argument("--readiness", type=Path, default=DEFAULT_READINESS)
     parser.add_argument("--data-sources", type=Path, default=DEFAULT_DATA_SOURCES)
     parser.add_argument("--source-cards", type=Path, default=DEFAULT_SOURCE_CARDS)
@@ -1330,6 +1580,7 @@ def parse_args() -> argparse.Namespace:
 def main() -> int:
     args = parse_args()
     model_path = args.model.resolve()
+    sensitivity_path = args.sensitivity.resolve()
     readiness_path = args.readiness.resolve()
     data_sources_path = args.data_sources.resolve()
     source_cards_path = args.source_cards.resolve()
@@ -1340,6 +1591,7 @@ def main() -> int:
     audit = audit_model(
         load_json(model_path),
         model_path,
+        sensitivity_path,
         readiness_path,
         data_sources_path,
         source_cards_path,

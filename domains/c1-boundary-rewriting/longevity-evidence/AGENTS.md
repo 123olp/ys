@@ -97,6 +97,7 @@ longevity-evidence/
     ├── audit_life_path_toy_model.py
     ├── collect_core_data.py
     ├── collect_mvp_data.py
+    ├── run_life_path_sensitivity_analysis.py
     └── run_life_path_toy_model.py
 ```
 
@@ -130,7 +131,8 @@ longevity-evidence/
 - `scripts/collect_mvp_data.py`：采集 PubMed、OpenAlex、ClinicalTrials.gov 和 openFDA 标签数据。
 - `scripts/collect_core_data.py`：采集 HAGR、PubChem、openFDA event 和 Drugs@FDA 数据。
 - `scripts/run_life_path_toy_model.py`：读取合成场景并导出 `web/src/data/life-path-toy-model.json`，用于 `/model/` 的最小可运行定量展示。
-- `scripts/audit_life_path_toy_model.py`：审计生成后的生命路径 toy model、校准预备契约、候选数据源注册表、数据源 Source Cards、Data Card 模板、NHATS Data Card、NHATS 变量字典和 NHATS extraction manifest，输出机器可读 JSON 和人可读 Markdown，检查模型卡、来源 hash、生存曲线、概率范围、LEV 开放边界、校准预备字段、候选数据源治理边界、数据卡准入文档、提取前治理门禁和禁止个体死亡日期字段。
+- `scripts/run_life_path_sensitivity_analysis.py`：读取合成场景和已导出的 toy model，生成 `web/src/data/life-path-sensitivity-analysis.json`，用于一因素扰动检查场景排序、开放边界和最敏感参数。
+- `scripts/audit_life_path_toy_model.py`：审计生成后的生命路径 toy model、合成敏感性分析、校准预备契约、候选数据源注册表、数据源 Source Cards、Data Card 模板、NHATS Data Card、NHATS 变量字典和 NHATS extraction manifest，输出机器可读 JSON 和人可读 Markdown，检查模型卡、来源 hash、生存曲线、概率范围、LEV 开放边界、敏感性参数覆盖、校准预备字段、候选数据源治理边界、数据卡准入文档、提取前治理门禁和禁止个体死亡日期字段。
 
 ## 依赖关系
 

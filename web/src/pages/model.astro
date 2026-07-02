@@ -2,9 +2,16 @@
 import ResearchLayout from "../layouts/ResearchLayout.astro";
 import SectionHeader from "../components/SectionHeader.astro";
 import lifePathToyModel from "../data/life-path-toy-model.json";
+import lifePathSensitivity from "../data/life-path-sensitivity-analysis.json";
 
 const defaultScenario = lifePathToyModel.scenarios.find((scenario) => scenario.id === "convergence") ?? lifePathToyModel.scenarios[0];
 const defaultControls = defaultScenario.controlValues;
+const sensitivitySummaries = lifePathSensitivity.stabilitySummary;
+const unstableBoundarySummaries = sensitivitySummaries.filter((summary) => !summary.openBoundaryStable);
+const topSensitivitySummaries = [...sensitivitySummaries]
+  .sort((left, right) => right.maxEffectiveTimeDelta - left.maxEffectiveTimeDelta)
+  .slice(0, 3);
+const sensitivityResultCount = lifePathSensitivity.sanityChecks.resultCount;
 ---
 <ResearchLayout title="预测模型" description="Human Infra life-path prediction model visualization" section="Life-Path Model">
   <div class="page" data-model-lab>
@@ -130,6 +137,39 @@ const defaultControls = defaultScenario.controlValues;
           <h3>未来选择权</h3>
           <p>表示主体未来仍能进入新技术窗口、改变策略和保持行动余地的能力。</p>
           <p><strong data-output="option">62%</strong></p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <SectionHeader
+        kicker="Sensitivity Layer"
+        title="先看模型结论对假设有多脆"
+        lead="这里不是实证敏感性分析，而是合成 toy model 的一因素扰动检查：风险倍率、健康质量位移、能力倍率、主观时间、LEV 进度和尾部风险上下波动后，观察有效时间和开放边界是否稳定。"
+      />
+      <div class="dense-grid">
+        <article class="paper-panel">
+          <h3>扰动覆盖</h3>
+          <p>{sensitivityResultCount} 个合成扰动结果，覆盖 {sensitivitySummaries.length} 个场景和 {lifePathSensitivity.sanityChecks.parameterCount} 个核心参数。</p>
+          <p><strong>{lifePathSensitivity.analysisBoundary.modelClass}</strong></p>
+        </article>
+        <article class="paper-panel">
+          <h3>开放边界稳定性</h3>
+          {unstableBoundarySummaries.length === 0 ? (
+            <p>当前所有场景在本轮扰动中保持同一阈值状态。</p>
+          ) : (
+            <p>{unstableBoundarySummaries.map((summary) => summary.scenarioLabel).join("、")} 的开放边界状态会随扰动变化。</p>
+          )}
+          <p><strong>不稳定不等于失败，表示该结论需要更强证据和校准。</strong></p>
+        </article>
+        <article class="paper-panel">
+          <h3>最敏感参数</h3>
+          {topSensitivitySummaries.map((summary) => (
+            <p>
+              <strong>{summary.scenarioLabel}</strong>：{summary.mostSensitiveParameter}
+              ，有效时间最大扰动 {summary.maxEffectiveTimeDelta.toFixed(3)} 年
+            </p>
+          ))}
         </article>
       </div>
     </section>

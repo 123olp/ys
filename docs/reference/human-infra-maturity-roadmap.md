@@ -10,7 +10,7 @@
 | --- | ---: | --- | --- |
 | 项目价值 | 82% | 不同受众能用同一核心命题理解 Human Infra 的必要性 | 还需要把同一价值语言压入所有论文页和传播页 |
 | 研究框架 | 52% | 每条主张都进入 Source Card、Claim-Evidence Matrix、变量表和反证条件 | 研究域多，但主张级证据闭环还不均匀 |
-| 定量模型 | 50% | 有可运行、可复现、可审查的场景级模型管线 | 已有 toy model、审计器、校准预备契约、真实队列候选注册表、数据源 Source Cards、Data Card 模板、NHATS 数据准入草案、变量字典草案和 extraction manifest 草案，但还没有数据访问、精确字段字典、真实提取、外部验证和已执行敏感性分析 |
+| 定量模型 | 52% | 有可运行、可复现、可审查的场景级模型管线 | 已有 toy model、合成敏感性分析、审计器、校准预备契约、真实队列候选注册表、数据源 Source Cards、Data Card 模板、NHATS 数据准入草案、变量字典草案和 extraction manifest 草案，但还没有数据访问、精确字段字典、真实提取、外部验证和校准后的敏感性分析 |
 
 ## 价值层 100%
 
@@ -150,6 +150,8 @@ versioned inputs
 life_path_toy_model_scenarios.json
   -> run_life_path_toy_model.py
   -> life-path-toy-model.json
+  -> run_life_path_sensitivity_analysis.py
+  -> life-path-sensitivity-analysis.json
   -> audit_life_path_toy_model.py
   -> life-path-toy-model-audit.json / .md
   -> life_path_calibration_readiness.json
@@ -160,14 +162,14 @@ life_path_toy_model_scenarios.json
   -> life-path-variable-dictionary-nhats.md
   -> life-path-extraction-manifest-nhats-draft.md
   -> /model/ Web 图表
-  -> model card + sanity checks + calibration-readiness audit checks + data-source candidate audit checks + source-card/data-card readiness checks + NHATS data-admission checks + pre-extraction manifest checks
+  -> model card + sanity checks + synthetic sensitivity checks + calibration-readiness audit checks + data-source candidate audit checks + source-card/data-card readiness checks + NHATS data-admission checks + pre-extraction manifest checks
 ```
 
-这一步已经把项目从“有定量想法的研究叙事”推进到“有最小可执行、可审计模型管线的研究系统”，并且开始把真实队列候选、治理边界和第一份 NHATS 数据准入草案纳入机器审计。下一步不是继续膨胀新域，而是补三件硬东西：
+这一步已经把项目从“有定量想法的研究叙事”推进到“有最小可执行、可审计模型管线的研究系统”，并且开始把合成敏感性分析、真实队列候选、治理边界和第一份 NHATS 数据准入草案纳入机器审计。下一步不是继续膨胀新域，而是补三件硬东西：
 
 - 把 C1/C2 核心主张做成 Source Cards 和 Claim-Evidence Matrix。
 - 把 NHATS manifest 从 draft 推进到 governed acquisition-ready，补精确字段名、轮次、缺失码、公开/敏感/受限状态、权重、endpoint 定义、代码本来源和输出抑制规则。
-- 执行 sensitivity analysis，并把结果接入审计产物和 `/model/` 可视化。
+- 把 sensitivity analysis 从合成一因素扰动推进到基于真实队列、预注册范围和校准诊断的敏感性分析。
 
 ## 当前已具备的定量门禁
 
@@ -187,6 +189,10 @@ life_path_toy_model_scenarios.json
 - resource budget 是否处于 `[0, 100]`；
 - `LEV >= 1` 是否显示开放边界；
 - 是否不存在个体死亡日期字段。
+- 合成敏感性分析是否存在；
+- 合成敏感性分析是否回到当前 toy model 的 source hash；
+- 合成敏感性分析是否覆盖风险倍率、健康质量位移、能力倍率、主观时间、LEV 进度和尾部风险；
+- 合成敏感性分析是否生成 48 个一因素扰动结果、场景稳定性摘要和禁止个体死亡日期字段检查；
 - 校准预备契约是否存在；
 - 是否明确当前没有真实队列、校准、外部验证和个体用途；
 - 是否包含 TRIPOD+AI、PROBAST/PROBAST+AI、ISPOR、MRC 和 OHDSI PLP 方法锚点；

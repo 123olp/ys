@@ -2,8 +2,8 @@
 
 - Overall status: `PASS`
 - Model path: `web/src/data/life-path-toy-model.json`
-- Model SHA-256: `b219a23eb9b87d807a579b65b69e1ff3a52926df08cfb9a3f256f0aebfa9e2eb`
-- Generated at: `2026-07-02T01:26:16.690331+00:00`
+- Model SHA-256: `a4c92209d79d20579bf1f575d5ebf07ffe5be9ccaf6bf3f3eef08efa287b5377`
+- Generated at: `2026-07-02T01:38:26.279879+00:00`
 
 ## Checks
 
@@ -75,6 +75,17 @@
 | `nhats-extraction-manifest-required-slots` | `PASS` | manifest must expose the blank slots required before governed extraction |
 | `nhats-extraction-manifest-abort-conditions` | `PASS` | manifest must define abort gates for access, Colectica, weights/design, endpoint ambiguity, disclosure suppression, raw-data leakage, and unsafe outputs |
 | `nhats-extraction-manifest-source-trace` | `PASS` | manifest must cite official NHATS overview, access, terms, cross-year search, files, user guide, and sample design sources |
+| `sensitivity-analysis-exists` | `PASS` | web/src/data/life-path-sensitivity-analysis.json |
+| `sensitivity-schema-version` | `PASS` | schemaVersion='human-infra.life-path-sensitivity.v1' |
+| `sensitivity-source-model-hash` | `PASS` | sensitivity output must point back to the generated model path and sha256 |
+| `sensitivity-boundary-language` | `PASS` | sensitivity analysis must preserve synthetic/no-real-cohort/no-calibration/no-individual-use boundaries |
+| `sensitivity-parameter-coverage` | `PASS` | missing_parameters=[] |
+| `sensitivity-result-count` | `PASS` | expected=48, actual=48 |
+| `sensitivity-result-shape` | `PASS` | directions=['high', 'low'], scenarios=['assisted', 'baseline', 'convergence', 'escape'] |
+| `sensitivity-result-ranges` | `PASS` | sensitivity result metrics must keep survival/option probabilities in [0, 1] and numeric summary fields present |
+| `sensitivity-stability-summary` | `PASS` | stability summary must cover every scenario, boundary stability, ranges, and most-sensitive parameter |
+| `sensitivity-sanity-checks` | `PASS` | sensitivity sanity checks must bind expected result count and suppress death-date / individual prediction |
+| `sensitivity-no-individual-death-date-fields` | `PASS` | prohibited_keys=[] |
 
 ## Calibration Readiness
 
@@ -114,6 +125,13 @@
 - Manifest SHA-256: `2a3f3472cfa5a22f06af864145fd883ef919b45cfa5e8302e0644c9e059ea1ce`
 - Manifest status: `PASS`
 - Boundary: the manifest is a pre-extraction gate; it blocks scripts, downloads, field inference, calibration, validation, raw-data exposure and unsafe individual outputs until official file-level requirements are complete.
+
+## Sensitivity Analysis
+
+- Sensitivity path: `web/src/data/life-path-sensitivity-analysis.json`
+- Sensitivity SHA-256: `b0d4947cc2e99c983b96bf424b5b6e9b0443209f3f5f23d5750444cf926473ad`
+- Sensitivity status: `PASS`
+- Boundary: sensitivity analysis is synthetic one-factor-at-a-time stress testing; it does not prove empirical parameter values, causal effects, calibrated prediction, or individual usefulness.
 
 ## Standard Alignment
 
