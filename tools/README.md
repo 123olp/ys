@@ -35,6 +35,7 @@
 - `audit_human_infra_c2_longtail_second_batch_independent_fresh_review_verdict_register.py`: verifies that `docs/reference/human-infra-c2-longtail-second-batch-independent-fresh-review-verdict-register.json` fresh-reviews all 24 C2-LT-B2 rows, allows only 23 bounded artifact-fill rows, preserves 1 downgrade-before-fill row and keeps model admission blocked.
 - `audit_human_infra_c2_longtail_second_batch_reviewed_card_artifact_register.py`: verifies that `docs/reference/human-infra-c2-longtail-second-batch-reviewed-card-artifact-register.json` promotes exactly the 23 eligible C2-LT-B2 rows into 138 bounded reviewed artifacts, preserves 1 downgrade-before-fill row, and keeps model admission blocked.
 - `audit_human_infra_c2_longtail_third_batch_promotion_queue.py`: verifies that `docs/reference/human-infra-c2-longtail-third-batch-promotion-queue.json` selects 12 non-B1/B2 neuro-sensory-cognitive C2 long-tail domains, binds 24 web-checked candidate sources, preserves required promotion steps and keeps model admission blocked.
+- `audit_human_infra_c2_longtail_fourth_batch_promotion_queue.py`: verifies that `docs/reference/human-infra-c2-longtail-fourth-batch-promotion-queue.json` selects 12 non-B1/B2/B3 metabolic-endocrine-renal-hepatic homeostasis C2 long-tail domains, binds 24 web-checked candidate sources, preserves required promotion steps and keeps model admission blocked.
 - `audit_human_infra_c2_longtail_third_batch_source_extraction_queue.py`: verifies that `docs/reference/human-infra-c2-longtail-third-batch-source-extraction-queue.json` derives the third-batch promotion queue into 24 domain-source extraction tasks with required slots, questions, blocked uses, index links and model-admission boundaries.
 - `audit_human_infra_c2_longtail_third_batch_source_extraction_register.py`: verifies that `docs/reference/human-infra-c2-longtail-third-batch-source-extraction-register.json` completes all 24/24 C2-LT-B3 source-context extraction rows with required fields, downgrade triggers, blocked uses, source-resolution flags and index links.
 - `audit_human_infra_c2_longtail_third_batch_local_review_register.py`: verifies that `docs/reference/human-infra-c2-longtail-third-batch-local-review-register.json` locally reviews all 24/24 C2-LT-B3 extraction rows, preserves five source-resolution/manual-access issue rows, keeps blocked uses complete, and routes only to independent fresh review or source resolution.
@@ -143,6 +144,7 @@ make c2-longtail-third-batch-corrected-source-reextraction-queue-audit
 make c2-longtail-third-batch-corrected-source-reextraction-register-audit
 make c2-longtail-third-batch-corrected-source-fresh-review-verdict-audit
 make c2-longtail-third-batch-reviewed-card-artifact-audit
+make c2-longtail-fourth-batch-promotion-audit
 make domain-source-queue-audit
 make domain-source-extraction-audit
 make domain-source-promotion-audit

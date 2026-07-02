@@ -1,0 +1,1023 @@
+{
+  "schemaVersion": "human-infra.c2-longtail-fourth-batch-promotion-queue.v1",
+  "queueId": "human-infra-c2-longtail-fourth-batch-promotion-queue",
+  "status": "active-fourth-batch-queue-model-blocked",
+  "purpose": "Select the fourth C2 long-tail batch for source-specific review, prioritizing metabolic, endocrine, renal, hepatic, electrolyte and oxygen-carrying homeostasis domains that alter subject continuity through basal state variables rather than feasibility or novelty.",
+  "sourceOfTruth": {
+    "c2LongtailCoverageRegister": "docs/reference/human-infra-c2-longtail-coverage-register.json",
+    "firstBatchPromotionQueue": "docs/reference/human-infra-c2-longtail-first-batch-promotion-queue.json",
+    "secondBatchPromotionQueue": "docs/reference/human-infra-c2-longtail-second-batch-promotion-queue.json",
+    "thirdBatchPromotionQueue": "docs/reference/human-infra-c2-longtail-third-batch-promotion-queue.json",
+    "domainClassification": "domains/_possibility-space-control/classification.tsv",
+    "sourceCardSystem": "docs/reference/source-card-system.md",
+    "maturityGapRegister": "docs/reference/human-infra-maturity-gap-register.json",
+    "maturityRoadmap": "docs/reference/human-infra-maturity-roadmap.md"
+  },
+  "scope": {
+    "batchId": "C2-LT-B4",
+    "batchDomainCount": 12,
+    "selectionRule": "Prioritize still-uncovered C2 domains where metabolic, endocrine, renal, hepatic, electrolyte and oxygen-carrying homeostasis control the baseline feasibility of continued existence, action, cognition, recovery and future choice. This is importance/long-horizon/fundamentality oriented, not feasibility, novelty or clinical hype oriented.",
+    "requiredArtifactClasses": [
+      "domain-claim-evidence-row",
+      "domain-source-card-field-extraction",
+      "domain-source-specific-deep-read",
+      "source-context-local-review",
+      "independent-fresh-review-verdict",
+      "reviewed-source-card",
+      "variable-card",
+      "endpoint-card",
+      "uncertainty-card",
+      "transfer-boundary-card",
+      "downgrade-check"
+    ],
+    "nonClaims": [
+      "This queue does not complete Source Cards.",
+      "This queue does not complete independent fresh review.",
+      "This queue does not upgrade any domain claim.",
+      "This queue does not admit any domain into calibrated prediction.",
+      "This queue does not provide medical, clinical, individual, or intervention-ranking advice.",
+      "This queue does not mark C2-LT-B1 corrected blocked rows as resolved.",
+      "This queue does not mark the C2-LT-B2 downgrade-before-fill row as resolved.",
+      "This queue does not mark C2-LT-B3 issue, corrected, duplicate, downgrade or model-blocked rows as resolved."
+    ]
+  },
+  "blockedUses": [
+    "calibrated-prediction",
+    "individual-advice",
+    "individual-death-date-output",
+    "intervention-ranking",
+    "clinical-validity-claim",
+    "domain-claim-upgrade"
+  ],
+  "batchRows": [
+    {
+      "batchId": "C2-LT-B4",
+      "priorityRank": 1,
+      "domainId": "diabetic-hyperglycemic-hypoglycemic-crisis-continuity",
+      "triageBucket": "other-c2-source-maintenance",
+      "localDomainPath": "domains/c2-source-maintenance/diabetic-hyperglycemic-hypoglycemic-crisis-continuity",
+      "selectionReason": "糖尿病高血糖/低血糖危象会在小时级改变意识、酸碱状态、渗透压、循环稳定性和死亡风险，是代谢系统从慢性负担跃迁为急性主体中断的核心路径。",
+      "claimSeed": "DKA、HHS 和严重低血糖的识别、液体/胰岛素/电解质处理、诱因管理和复发预防会改变短期死亡风险、神经功能、住院结局和长期自我管理连续性。",
+      "variableSeed": [
+        "ketone-acidosis-status",
+        "serum-osmolality",
+        "glucose-trajectory",
+        "potassium-shift-risk",
+        "recurrence-prevention-continuity"
+      ],
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB4-SRC-01-1",
+          "title": "Hyperglycaemic crises in adults with diabetes: a consensus report",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38907161/",
+          "evidenceRole": "multisociety-consensus-report-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03"
+        },
+        {
+          "sourceRefId": "C2LTB4-SRC-01-2",
+          "title": "Hyperglycemic Crises in Adults With Diabetes: A Consensus Report",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39052901/",
+          "evidenceRole": "clinical-consensus-report-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03"
+        }
+      ],
+      "requiredArtifactClasses": [
+        "domain-claim-evidence-row",
+        "domain-source-card-field-extraction",
+        "domain-source-specific-deep-read",
+        "source-context-local-review",
+        "independent-fresh-review-verdict",
+        "reviewed-source-card",
+        "variable-card",
+        "endpoint-card",
+        "uncertainty-card",
+        "transfer-boundary-card",
+        "downgrade-check"
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-c2-longtail-fourth-batch-source-card-promotion",
+      "nextAction": "Create the domain Claim-Evidence row, then perform Source Card field extraction, source-specific deep read, local source-context review and independent fresh review before any artifact promotion or model admission."
+    },
+    {
+      "batchId": "C2-LT-B4",
+      "priorityRank": 2,
+      "domainId": "diabetes-insulin-glucose-monitoring-supplies-continuity",
+      "triageBucket": "organ-system-homeostasis",
+      "localDomainPath": "domains/c2-source-maintenance/diabetes-insulin-glucose-monitoring-supplies-continuity",
+      "selectionReason": "胰岛素、血糖监测、CGM、泵和耗材把慢性糖代谢风险转化为每日可执行控制能力，断供会直接增加急性危象、并发症和有效时间损失。",
+      "claimSeed": "糖尿病药物、胰岛素治疗、血糖监测和技术供应连续性会改变低/高血糖暴露、并发症风险、就医负担和长期行动能力。",
+      "variableSeed": [
+        "insulin-access-continuity",
+        "glucose-monitoring-frequency",
+        "cgM-or-pump-availability",
+        "hypoglycemia-burden",
+        "supply-interruption-risk"
+      ],
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB4-SRC-02-1",
+          "title": "Pharmacologic Approaches to Glycemic Treatment: Standards of Care in Diabetes-2026",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41358900/",
+          "evidenceRole": "clinical-standard-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03"
+        },
+        {
+          "sourceRefId": "C2LTB4-SRC-02-2",
+          "title": "7. Diabetes Technology: Standards of Care in Diabetes-2025",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39651978/",
+          "evidenceRole": "technology-standard-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03"
+        }
+      ],
+      "requiredArtifactClasses": [
+        "domain-claim-evidence-row",
+        "domain-source-card-field-extraction",
+        "domain-source-specific-deep-read",
+        "source-context-local-review",
+        "independent-fresh-review-verdict",
+        "reviewed-source-card",
+        "variable-card",
+        "endpoint-card",
+        "uncertainty-card",
+        "transfer-boundary-card",
+        "downgrade-check"
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-c2-longtail-fourth-batch-source-card-promotion",
+      "nextAction": "Create the domain Claim-Evidence row, then perform Source Card field extraction, source-specific deep read, local source-context review and independent fresh review before any artifact promotion or model admission."
+    },
+    {
+      "batchId": "C2-LT-B4",
+      "priorityRank": 3,
+      "domainId": "hypertensive-crisis-end-organ-risk-continuity",
+      "triageBucket": "other-c2-source-maintenance",
+      "localDomainPath": "domains/c2-source-maintenance/hypertensive-crisis-end-organ-risk-continuity",
+      "selectionReason": "高血压危象把血压控制失败直接连接到脑、心、肾、视网膜和血管急性终末器官损害，是慢性血管风险进入灾难性失效的关键门槛。",
+      "claimSeed": "严重血压升高的急性照护分层、终末器官损害识别、降压速度和后续随访会改变卒中、心衰、肾损伤和死亡风险。",
+      "variableSeed": [
+        "blood-pressure-severity",
+        "acute-end-organ-damage",
+        "treatment-setting",
+        "blood-pressure-reduction-tempo",
+        "follow-up-continuity"
+      ],
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB4-SRC-03-1",
+          "title": "2024 ESC Guidelines for the management of elevated blood pressure and hypertension",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39210715/",
+          "evidenceRole": "clinical-guideline-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03"
+        },
+        {
+          "sourceRefId": "C2LTB4-SRC-03-2",
+          "title": "The Management of Elevated Blood Pressure in the Acute Care Setting: A Scientific Statement From the American Heart Association",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38804130/",
+          "evidenceRole": "scientific-statement-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03"
+        }
+      ],
+      "requiredArtifactClasses": [
+        "domain-claim-evidence-row",
+        "domain-source-card-field-extraction",
+        "domain-source-specific-deep-read",
+        "source-context-local-review",
+        "independent-fresh-review-verdict",
+        "reviewed-source-card",
+        "variable-card",
+        "endpoint-card",
+        "uncertainty-card",
+        "transfer-boundary-card",
+        "downgrade-check"
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-c2-longtail-fourth-batch-source-card-promotion",
+      "nextAction": "Create the domain Claim-Evidence row, then perform Source Card field extraction, source-specific deep read, local source-context review and independent fresh review before any artifact promotion or model admission."
+    },
+    {
+      "batchId": "C2-LT-B4",
+      "priorityRank": 4,
+      "domainId": "dialysis-access-vascular-peritoneal-continuity",
+      "triageBucket": "organ-system-homeostasis",
+      "localDomainPath": "domains/c2-source-maintenance/dialysis-access-vascular-peritoneal-continuity",
+      "selectionReason": "透析通路是肾衰竭后主体持续性的物理接口；通路失败会让毒素清除、液体控制、电解质稳定和生命支持连续性迅速失效。",
+      "claimSeed": "血液透析/腹膜透析通路的选择、维护、感染控制、并发症处理和患者 Life-Plan 会影响透析充分性、住院、感染、血栓和死亡风险。",
+      "variableSeed": [
+        "access-type",
+        "access-patency",
+        "access-infection-risk",
+        "dialysis-adequacy",
+        "access-intervention-burden"
+      ],
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB4-SRC-04-1",
+          "title": "KDOQI Clinical Practice Guideline for Vascular Access: 2019 Update",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/32778223/",
+          "evidenceRole": "clinical-guideline-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03"
+        },
+        {
+          "sourceRefId": "C2LTB4-SRC-04-2",
+          "title": "UK Kidney Association Clinical Practice Guideline on vascular access for haemodialysis",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40813633/",
+          "evidenceRole": "clinical-guideline-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03"
+        }
+      ],
+      "requiredArtifactClasses": [
+        "domain-claim-evidence-row",
+        "domain-source-card-field-extraction",
+        "domain-source-specific-deep-read",
+        "source-context-local-review",
+        "independent-fresh-review-verdict",
+        "reviewed-source-card",
+        "variable-card",
+        "endpoint-card",
+        "uncertainty-card",
+        "transfer-boundary-card",
+        "downgrade-check"
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-c2-longtail-fourth-batch-source-card-promotion",
+      "nextAction": "Create the domain Claim-Evidence row, then perform Source Card field extraction, source-specific deep read, local source-context review and independent fresh review before any artifact promotion or model admission."
+    },
+    {
+      "batchId": "C2-LT-B4",
+      "priorityRank": 5,
+      "domainId": "kidney-transplant-immunosuppression-graft-continuity",
+      "triageBucket": "organ-system-homeostasis",
+      "localDomainPath": "domains/c2-source-maintenance/kidney-transplant-immunosuppression-graft-continuity",
+      "selectionReason": "肾移植把器官替代、免疫抑制、感染、恶性肿瘤、排斥和长期药物连续性绑定为一个主体维护系统，是肾衰竭后的高阶源体维护路径。",
+      "claimSeed": "移植后免疫抑制、移植物监测、感染/肿瘤/心血管并发症预防和病毒监测会改变 graft survival、患者生存和长期功能连续性。",
+      "variableSeed": [
+        "immunosuppression-continuity",
+        "graft-function",
+        "rejection-risk",
+        "infection-surveillance",
+        "malignancy-cardiovascular-risk"
+      ],
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB4-SRC-05-1",
+          "title": "KDIGO clinical practice guideline for the care of kidney transplant recipients",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/19845597/",
+          "evidenceRole": "clinical-guideline-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03"
+        },
+        {
+          "sourceRefId": "C2LTB4-SRC-05-2",
+          "title": "The Second International Consensus Guidelines on the Management of BK Polyomavirus in Kidney Transplantation",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38605438/",
+          "evidenceRole": "transplant-infection-consensus-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03"
+        }
+      ],
+      "requiredArtifactClasses": [
+        "domain-claim-evidence-row",
+        "domain-source-card-field-extraction",
+        "domain-source-specific-deep-read",
+        "source-context-local-review",
+        "independent-fresh-review-verdict",
+        "reviewed-source-card",
+        "variable-card",
+        "endpoint-card",
+        "uncertainty-card",
+        "transfer-boundary-card",
+        "downgrade-check"
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-c2-longtail-fourth-batch-source-card-promotion",
+      "nextAction": "Create the domain Claim-Evidence row, then perform Source Card field extraction, source-specific deep read, local source-context review and independent fresh review before any artifact promotion or model admission."
+    },
+    {
+      "batchId": "C2-LT-B4",
+      "priorityRank": 6,
+      "domainId": "chronic-liver-disease-masld-mash-continuity",
+      "triageBucket": "organ-system-homeostasis",
+      "localDomainPath": "domains/c2-source-maintenance/chronic-liver-disease-masld-mash-continuity",
+      "selectionReason": "肝脏连接代谢、解毒、凝血、炎症和药物处理；MASLD/MASH 是人口级代谢风险进入纤维化、肝癌和系统性失能的重要长期路径。",
+      "claimSeed": "MASLD/MASH 的风险分层、纤维化评估、代谢共病管理、肝癌监测和治疗转化会影响肝功能、心代谢风险、癌症风险和死亡风险。",
+      "variableSeed": [
+        "fibrosis-stage",
+        "metabolic-risk-burden",
+        "liver-enzyme-pattern",
+        "cirrhosis-transition-risk",
+        "hepatocellular-carcinoma-surveillance"
+      ],
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB4-SRC-06-1",
+          "title": "AASLD Practice Guidance on the clinical assessment and management of nonalcoholic fatty liver disease",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/36727674/",
+          "evidenceRole": "practice-guidance-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03"
+        },
+        {
+          "sourceRefId": "C2LTB4-SRC-06-2",
+          "title": "EASL-EASD-EASO Clinical Practice Guidelines on the management of metabolic dysfunction-associated steatotic liver disease",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38851997/",
+          "evidenceRole": "clinical-guideline-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03"
+        }
+      ],
+      "requiredArtifactClasses": [
+        "domain-claim-evidence-row",
+        "domain-source-card-field-extraction",
+        "domain-source-specific-deep-read",
+        "source-context-local-review",
+        "independent-fresh-review-verdict",
+        "reviewed-source-card",
+        "variable-card",
+        "endpoint-card",
+        "uncertainty-card",
+        "transfer-boundary-card",
+        "downgrade-check"
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-c2-longtail-fourth-batch-source-card-promotion",
+      "nextAction": "Create the domain Claim-Evidence row, then perform Source Card field extraction, source-specific deep read, local source-context review and independent fresh review before any artifact promotion or model admission."
+    },
+    {
+      "batchId": "C2-LT-B4",
+      "priorityRank": 7,
+      "domainId": "thyroid-disease-endocrine-function-continuity",
+      "triageBucket": "organ-system-homeostasis",
+      "localDomainPath": "domains/c2-source-maintenance/thyroid-disease-endocrine-function-continuity",
+      "selectionReason": "甲状腺轴控制能量代谢、心率、体温、认知速度、情绪和妊娠/发育风险；失衡会广泛改变有效时间和器官负荷。",
+      "claimSeed": "甲减/甲亢的诊断、替代治疗、抗甲状腺治疗、特殊人群管理和过度/不足治疗避免会影响心血管、骨骼、认知、妊娠和生活质量结果。",
+      "variableSeed": [
+        "tsh-free-t4-status",
+        "thyrotoxicosis-severity",
+        "replacement-adequacy",
+        "cardiovascular-bone-risk",
+        "symptom-functional-burden"
+      ],
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB4-SRC-07-1",
+          "title": "Guidelines for the treatment of hypothyroidism: prepared by the American Thyroid Association task force on thyroid hormone replacement",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/25266247/",
+          "evidenceRole": "clinical-guideline-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03"
+        },
+        {
+          "sourceRefId": "C2LTB4-SRC-07-2",
+          "title": "2016 American Thyroid Association Guidelines for Diagnosis and Management of Hyperthyroidism and Other Causes of Thyrotoxicosis",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/27521067/",
+          "evidenceRole": "clinical-guideline-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03"
+        }
+      ],
+      "requiredArtifactClasses": [
+        "domain-claim-evidence-row",
+        "domain-source-card-field-extraction",
+        "domain-source-specific-deep-read",
+        "source-context-local-review",
+        "independent-fresh-review-verdict",
+        "reviewed-source-card",
+        "variable-card",
+        "endpoint-card",
+        "uncertainty-card",
+        "transfer-boundary-card",
+        "downgrade-check"
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-c2-longtail-fourth-batch-source-card-promotion",
+      "nextAction": "Create the domain Claim-Evidence row, then perform Source Card field extraction, source-specific deep read, local source-context review and independent fresh review before any artifact promotion or model admission."
+    },
+    {
+      "batchId": "C2-LT-B4",
+      "priorityRank": 8,
+      "domainId": "adrenal-insufficiency-cortisol-stress-response-continuity",
+      "triageBucket": "organ-system-homeostasis",
+      "localDomainPath": "domains/c2-source-maintenance/adrenal-insufficiency-cortisol-stress-response-continuity",
+      "selectionReason": "皮质醇压力响应是主体在感染、手术、创伤和急病下维持循环、血糖、电解质和意识的底层条件；失败可导致危象。",
+      "claimSeed": "肾上腺不足的诊断、糖皮质激素/盐皮质激素替代、应激剂量教育和围手术期管理会改变肾上腺危象、低血压、低钠、死亡和生活质量风险。",
+      "variableSeed": [
+        "cortisol-replacement-adequacy",
+        "stress-dose-readiness",
+        "adrenal-crisis-risk",
+        "sodium-potassium-status",
+        "patient-education-continuity"
+      ],
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB4-SRC-08-1",
+          "title": "Diagnosis and Treatment of Primary Adrenal Insufficiency: An Endocrine Society Clinical Practice Guideline",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26760044/",
+          "evidenceRole": "clinical-guideline-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03"
+        },
+        {
+          "sourceRefId": "C2LTB4-SRC-08-2",
+          "title": "Guidelines for the management of glucocorticoids during the peri-operative period for patients with adrenal insufficiency",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/32017012/",
+          "evidenceRole": "perioperative-guideline-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03"
+        }
+      ],
+      "requiredArtifactClasses": [
+        "domain-claim-evidence-row",
+        "domain-source-card-field-extraction",
+        "domain-source-specific-deep-read",
+        "source-context-local-review",
+        "independent-fresh-review-verdict",
+        "reviewed-source-card",
+        "variable-card",
+        "endpoint-card",
+        "uncertainty-card",
+        "transfer-boundary-card",
+        "downgrade-check"
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-c2-longtail-fourth-batch-source-card-promotion",
+      "nextAction": "Create the domain Claim-Evidence row, then perform Source Card field extraction, source-specific deep read, local source-context review and independent fresh review before any artifact promotion or model admission."
+    },
+    {
+      "batchId": "C2-LT-B4",
+      "priorityRank": 9,
+      "domainId": "fluid-electrolyte-acid-base-homeostasis",
+      "triageBucket": "organ-system-homeostasis",
+      "localDomainPath": "domains/c2-source-maintenance/fluid-electrolyte-acid-base-homeostasis",
+      "selectionReason": "水、电解质和酸碱平衡是细胞兴奋性、心律、脑功能、肾功能和循环稳定的基础变量；偏离可快速破坏主体行动和意识。",
+      "claimSeed": "钠、钾、容量和酸碱异常的诊断、纠正速度、基础病识别和监测会影响神经损伤、心律失常、肾损伤和急性死亡风险。",
+      "variableSeed": [
+        "serum-sodium",
+        "serum-potassium",
+        "volume-status",
+        "acid-base-status",
+        "correction-rate-risk"
+      ],
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB4-SRC-09-1",
+          "title": "Clinical practice guideline on diagnosis and treatment of hyponatraemia",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/24569125/",
+          "evidenceRole": "clinical-guideline-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03"
+        },
+        {
+          "sourceRefId": "C2LTB4-SRC-09-2",
+          "title": "Emergency management of severe hyperkalemia: Guideline for best practice and opportunities for the future",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/27693804/",
+          "evidenceRole": "emergency-guideline-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03"
+        }
+      ],
+      "requiredArtifactClasses": [
+        "domain-claim-evidence-row",
+        "domain-source-card-field-extraction",
+        "domain-source-specific-deep-read",
+        "source-context-local-review",
+        "independent-fresh-review-verdict",
+        "reviewed-source-card",
+        "variable-card",
+        "endpoint-card",
+        "uncertainty-card",
+        "transfer-boundary-card",
+        "downgrade-check"
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-c2-longtail-fourth-batch-source-card-promotion",
+      "nextAction": "Create the domain Claim-Evidence row, then perform Source Card field extraction, source-specific deep read, local source-context review and independent fresh review before any artifact promotion or model admission."
+    },
+    {
+      "batchId": "C2-LT-B4",
+      "priorityRank": 10,
+      "domainId": "iron-deficiency-anemia-oxygen-carrying-continuity",
+      "triageBucket": "organ-system-homeostasis",
+      "localDomainPath": "domains/c2-source-maintenance/iron-deficiency-anemia-oxygen-carrying-continuity",
+      "selectionReason": "铁缺乏和贫血把携氧能力、疲劳、认知负荷、心血管代偿、出血/吸收问题和工作能力连接起来，是有效时间和身体行动密度的底层限制。",
+      "claimSeed": "铁缺乏性贫血的诊断、病因评估、口服/静脉补铁、胃肠道评估和复发监测会影响携氧能力、疲劳、功能恢复和潜在出血/恶性病因识别。",
+      "variableSeed": [
+        "hemoglobin-level",
+        "ferritin-transferrin-saturation",
+        "bleeding-or-malabsorption-source",
+        "iron-repletion-route",
+        "functional-fatigue-burden"
+      ],
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB4-SRC-10-1",
+          "title": "British Society of Gastroenterology guidelines for the management of iron deficiency anaemia in adults",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34497146/",
+          "evidenceRole": "clinical-guideline-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03"
+        },
+        {
+          "sourceRefId": "C2LTB4-SRC-10-2",
+          "title": "AGA Clinical Practice Guidelines on the Gastrointestinal Evaluation of Iron Deficiency Anemia",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/32810434/",
+          "evidenceRole": "clinical-guideline-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03"
+        }
+      ],
+      "requiredArtifactClasses": [
+        "domain-claim-evidence-row",
+        "domain-source-card-field-extraction",
+        "domain-source-specific-deep-read",
+        "source-context-local-review",
+        "independent-fresh-review-verdict",
+        "reviewed-source-card",
+        "variable-card",
+        "endpoint-card",
+        "uncertainty-card",
+        "transfer-boundary-card",
+        "downgrade-check"
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-c2-longtail-fourth-batch-source-card-promotion",
+      "nextAction": "Create the domain Claim-Evidence row, then perform Source Card field extraction, source-specific deep read, local source-context review and independent fresh review before any artifact promotion or model admission."
+    },
+    {
+      "batchId": "C2-LT-B4",
+      "priorityRank": 11,
+      "domainId": "cushing-syndrome-hypercortisolism-metabolic-bone-continuity",
+      "triageBucket": "organ-system-homeostasis",
+      "localDomainPath": "domains/c2-source-maintenance/cushing-syndrome-hypercortisolism-metabolic-bone-continuity",
+      "selectionReason": "高皮质醇状态会系统性破坏代谢、肌骨、免疫、精神、血压和感染风险，是激素过量导致多系统持续性下降的代表路径。",
+      "claimSeed": "库欣综合征的筛查、病因定位、手术/药物治疗、皮质醇正常化和长期并发症管理会影响死亡风险、心代谢负担、骨折、感染和精神功能。",
+      "variableSeed": [
+        "cortisol-excess-status",
+        "etiology-localization",
+        "metabolic-hypertension-burden",
+        "bone-fracture-risk",
+        "post-treatment-recurrence-monitoring"
+      ],
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB4-SRC-11-1",
+          "title": "Treatment of Cushing's Syndrome: An Endocrine Society Clinical Practice Guideline",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26222757/",
+          "evidenceRole": "clinical-guideline-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03"
+        },
+        {
+          "sourceRefId": "C2LTB4-SRC-11-2",
+          "title": "Consensus on diagnosis and management of Cushing's disease: a guideline update",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34687601/",
+          "evidenceRole": "consensus-guideline-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03"
+        }
+      ],
+      "requiredArtifactClasses": [
+        "domain-claim-evidence-row",
+        "domain-source-card-field-extraction",
+        "domain-source-specific-deep-read",
+        "source-context-local-review",
+        "independent-fresh-review-verdict",
+        "reviewed-source-card",
+        "variable-card",
+        "endpoint-card",
+        "uncertainty-card",
+        "transfer-boundary-card",
+        "downgrade-check"
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-c2-longtail-fourth-batch-source-card-promotion",
+      "nextAction": "Create the domain Claim-Evidence row, then perform Source Card field extraction, source-specific deep read, local source-context review and independent fresh review before any artifact promotion or model admission."
+    },
+    {
+      "batchId": "C2-LT-B4",
+      "priorityRank": 12,
+      "domainId": "pituitary-disorders-hormone-axis-continuity",
+      "triageBucket": "organ-system-homeostasis",
+      "localDomainPath": "domains/c2-source-maintenance/pituitary-disorders-hormone-axis-continuity",
+      "selectionReason": "垂体是多条激素轴的调度中枢；占位、分泌异常或垂体功能低下会同时影响视觉、性腺、甲状腺、肾上腺、生长和水盐稳态。",
+      "claimSeed": "垂体病变的激素筛查、视野/影像随访、手术转诊、泌乳素瘤治疗和垂体功能监测会影响视觉保护、激素替代、危象预防和长期行动能力。",
+      "variableSeed": [
+        "pituitary-hormone-axis-status",
+        "mass-effect-visual-field-risk",
+        "hypersecretion-pattern",
+        "hypopituitarism-risk",
+        "follow-up-imaging-continuity"
+      ],
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB4-SRC-12-1",
+          "title": "Pituitary incidentaloma: an Endocrine Society clinical practice guideline",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/21474686/",
+          "evidenceRole": "clinical-guideline-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03"
+        },
+        {
+          "sourceRefId": "C2LTB4-SRC-12-2",
+          "title": "Diagnosis and treatment of hyperprolactinemia: an Endocrine Society clinical practice guideline",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/21296991/",
+          "evidenceRole": "clinical-guideline-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03"
+        }
+      ],
+      "requiredArtifactClasses": [
+        "domain-claim-evidence-row",
+        "domain-source-card-field-extraction",
+        "domain-source-specific-deep-read",
+        "source-context-local-review",
+        "independent-fresh-review-verdict",
+        "reviewed-source-card",
+        "variable-card",
+        "endpoint-card",
+        "uncertainty-card",
+        "transfer-boundary-card",
+        "downgrade-check"
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-c2-longtail-fourth-batch-source-card-promotion",
+      "nextAction": "Create the domain Claim-Evidence row, then perform Source Card field extraction, source-specific deep read, local source-context review and independent fresh review before any artifact promotion or model admission."
+    }
+  ],
+  "summary": {
+    "batchId": "C2-LT-B4",
+    "batchDomainCount": 12,
+    "candidateSourceCount": 24,
+    "selectedDomainIds": [
+      "diabetic-hyperglycemic-hypoglycemic-crisis-continuity",
+      "diabetes-insulin-glucose-monitoring-supplies-continuity",
+      "hypertensive-crisis-end-organ-risk-continuity",
+      "dialysis-access-vascular-peritoneal-continuity",
+      "kidney-transplant-immunosuppression-graft-continuity",
+      "chronic-liver-disease-masld-mash-continuity",
+      "thyroid-disease-endocrine-function-continuity",
+      "adrenal-insufficiency-cortisol-stress-response-continuity",
+      "fluid-electrolyte-acid-base-homeostasis",
+      "iron-deficiency-anemia-oxygen-carrying-continuity",
+      "cushing-syndrome-hypercortisolism-metabolic-bone-continuity",
+      "pituitary-disorders-hormone-axis-continuity"
+    ],
+    "modelAdmissionDecision": "blocked-pending-c2-longtail-fourth-batch-source-card-promotion",
+    "nextWorkOrder": "Create C2-LT-B4 source extraction queue, then run source-specific field extraction, local source-context review, independent fresh review, and bounded reviewed-artifact promotion while preserving all downgrade/source-resolution rows from earlier batches."
+  }
+}
