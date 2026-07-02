@@ -1,6 +1,6 @@
 import * as d3 from "d3";
 
-const scenarios = {
+const fallbackScenarios = {
   baseline: {
     label: "基线",
     ai: 0.2,
@@ -35,6 +35,43 @@ const scenarios = {
   }
 };
 
+let embeddedModelData = null;
+
+function readEmbeddedModelData() {
+  if (embeddedModelData) return embeddedModelData;
+  const node = document.getElementById("life-path-toy-model-data");
+  if (!node?.textContent) {
+    embeddedModelData = {scenarios: []};
+    return embeddedModelData;
+  }
+  try {
+    embeddedModelData = JSON.parse(node.textContent);
+  } catch {
+    embeddedModelData = {scenarios: []};
+  }
+  return embeddedModelData;
+}
+
+function getScenarioProfile(id) {
+  const dataset = readEmbeddedModelData();
+  const generated = dataset.scenarios?.find((scenario) => scenario.id === id);
+  if (generated) {
+    return {
+      label: generated.label,
+      ...generated.controlValues,
+      generated
+    };
+  }
+  return fallbackScenarios[id] ?? fallbackScenarios.convergence;
+}
+
+function controlsMatch(values, profile) {
+  if (!profile?.generated?.controlValues) return false;
+  return Object.entries(profile.generated.controlValues).every(([key, value]) => {
+    return Math.abs(Number(values[key]) - Number(value)) < 0.0001;
+  });
+}
+
 const palette = {
   ink: "#15171a",
   muted: "#5f6673",
@@ -59,7 +96,8 @@ function numeric(value, fallback) {
 }
 
 function computeModel(values = {}) {
-  const scenario = scenarios[values.scenario] ?? scenarios.convergence;
+  const scenarioId = values.scenario ?? "convergence";
+  const scenario = getScenarioProfile(scenarioId);
   const v = {
     ai: numeric(values.ai, scenario.ai),
     biomedical: numeric(values.biomedical, scenario.biomedical),
@@ -67,6 +105,24 @@ function computeModel(values = {}) {
     waiting: numeric(values.waiting, scenario.waiting),
     governance: numeric(values.governance, scenario.governance)
   };
+  if (scenario.generated && controlsMatch(v, scenario)) {
+    const metrics = scenario.generated.metrics;
+    return {
+      ...v,
+      label: scenario.label,
+      riskReduction: metrics.riskReduction,
+      capabilityGain: metrics.capabilityGain,
+      subjectiveCompression: metrics.subjectiveCompression,
+      levRatio: metrics.levRatio,
+      distributionShift: metrics.distributionShiftYears,
+      effectiveLife: metrics.expectedLifeAgeProxy,
+      healthspan: metrics.healthspanAgeProxy,
+      optionValue: metrics.optionValue,
+      threshold: metrics.thresholdStatus,
+      curve: scenario.generated.curve,
+      budget: metrics.resourceBudget
+    };
+  }
   const riskReduction = clamp(
     v.biomedical * 0.34 +
       v.ai * 0.16 +
@@ -287,6 +343,13 @@ function drawMechanism(target, model) {
 }
 
 function survivalPoints(model) {
+  if (Array.isArray(model.curve) && model.curve.length > 0) {
+    return model.curve.map((point) => ({
+      age: point.age,
+      baseline: point.baselineSurvival,
+      intervention: point.scenarioSurvival
+    }));
+  }
   const ages = d3.range(40, 141, 2);
   const base = ages.map((age) => ({
     age,
@@ -308,7 +371,9 @@ function drawSurvival(target, model) {
   const height = 470;
   const margin = {top: 42, right: 34, bottom: 62, left: 68};
   const data = survivalPoints(model);
-  const x = d3.scaleLinear().domain([40, 140]).range([margin.left, width - margin.right]);
+  const minAge = d3.min(data, (d) => d.age) ?? 40;
+  const maxAge = d3.max(data, (d) => d.age) ?? 140;
+  const x = d3.scaleLinear().domain([minAge, maxAge]).range([margin.left, width - margin.right]);
   const y = d3.scaleLinear().domain([0, 1]).range([height - margin.bottom, margin.top]);
   const line = (key) => d3.line()
     .x((d) => x(d.age))
@@ -380,7 +445,7 @@ function drawSurvival(target, model) {
     .attr("stroke", model.levRatio >= 1 ? palette.green : palette.accent)
     .attr("stroke-width", 3);
 
-  const effectiveX = x(Math.min(model.effectiveLife, 140));
+  const effectiveX = x(Math.min(model.effectiveLife, maxAge));
   svg.append("circle")
     .attr("cx", effectiveX)
     .attr("cy", y(model.levRatio >= 1 ? 0.5 : 0.45))
@@ -457,9 +522,9 @@ function initModelLab(root) {
   const scenarioInput = root.querySelector("[name='scenario']");
   if (scenarioInput) {
     scenarioInput.addEventListener("change", () => {
-      const profile = scenarios[scenarioInput.value] ?? scenarios.convergence;
+      const profile = getScenarioProfile(scenarioInput.value);
       for (const [key, value] of Object.entries(profile)) {
-        if (key === "label") continue;
+        if (key === "label" || key === "generated") continue;
         const input = root.querySelector(`[name="${key}"]`);
         if (input) input.value = value;
       }

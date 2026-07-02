@@ -1,0 +1,2468 @@
+{
+  "schemaVersion": "human-infra.life-path-toy-results.v1",
+  "generatedAt": "2026-07-02T00:31:16.778115+00:00",
+  "source": {
+    "path": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_toy_model_scenarios.json",
+    "sha256": "385daa4079452ed6ccfc3ad4bdfd2cea99d83b2660cb1e7198b0da27068634f4"
+  },
+  "modelCard": {
+    "modelName": "Human Infra Synthetic Life-Path Toy Model",
+    "modelClass": "synthetic cohort toy model",
+    "purpose": "Demonstrate the quantitative contract from intervention variables to hazard, survival, effective time, and option value.",
+    "nonUses": [
+      "individual death-date prediction",
+      "medical advice",
+      "treatment selection",
+      "insurance or eligibility decisions",
+      "claims that any intervention already achieves longevity escape velocity"
+    ],
+    "evidenceBoundary": "All scenarios are synthetic. Values are illustrative until calibrated with real cohorts, target-trial emulation, external validation, and bias assessment.",
+    "upgradeGate": "A calibrated version requires target population, time zero, outcomes, censoring, covariates, data quality audit, validation plan, and model reporting aligned with TRIPOD+AI / PROBAST-style review."
+  },
+  "population": {
+    "kind": "synthetic cohort",
+    "startAge": 40,
+    "endAge": 120,
+    "stepYears": 1,
+    "healthQualityThreshold": 0.7
+  },
+  "baselineHazard": {
+    "baseHazard": 0.0018,
+    "gompertzSlope": 0.085,
+    "referenceAge": 40
+  },
+  "healthQuality": {
+    "declineStartAge": 62,
+    "declineRatePerYear": 0.011,
+    "minimumQuality": 0.28
+  },
+  "scenarios": [
+    {
+      "id": "baseline",
+      "label": "基线",
+      "description": "不假设额外突破，只保留普通健康系统和已存在工具的合成对照场景。",
+      "evidenceGrade": "synthetic-toy",
+      "controlValues": {
+        "ai": 0.2,
+        "biomedical": 0.2,
+        "interfaceLevel": 0.05,
+        "waiting": 0.05,
+        "governance": 0.45
+      },
+      "metrics": {
+        "riskReduction": 0.0,
+        "capabilityGain": 0.0,
+        "subjectiveCompression": 0.0,
+        "levRatio": 0.25,
+        "distributionShiftYears": 0.0,
+        "expectedLifeAgeProxy": 80.607,
+        "expectedEffectiveTimeYears": 37.897,
+        "expectedEffectiveTimeGainYears": 0.0,
+        "healthspanAgeProxy": 79.133,
+        "survivalAt80": 0.555627,
+        "survivalAt100": 0.036604,
+        "optionValue": 0.345,
+        "riskTailPenalty": 0.02,
+        "thresholdStatus": "低于阈值 / 有限边界",
+        "openBoundary": false,
+        "resourceBudget": {
+          "attention": 16,
+          "time": 1,
+          "recovery": 19,
+          "option": 34
+        }
+      },
+      "curve": [
+        {
+          "age": 40.0,
+          "baselineSurvival": 1.0,
+          "scenarioSurvival": 1.0,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.0
+        },
+        {
+          "age": 41.0,
+          "baselineSurvival": 0.998202,
+          "scenarioSurvival": 0.998202,
+          "healthQuality": 1.0,
+          "effectiveDensity": 0.998202
+        },
+        {
+          "age": 42.0,
+          "baselineSurvival": 0.996247,
+          "scenarioSurvival": 0.996247,
+          "healthQuality": 1.0,
+          "effectiveDensity": 0.996247
+        },
+        {
+          "age": 43.0,
+          "baselineSurvival": 0.994124,
+          "scenarioSurvival": 0.994124,
+          "healthQuality": 1.0,
+          "effectiveDensity": 0.994124
+        },
+        {
+          "age": 44.0,
+          "baselineSurvival": 0.991818,
+          "scenarioSurvival": 0.991818,
+          "healthQuality": 1.0,
+          "effectiveDensity": 0.991818
+        },
+        {
+          "age": 45.0,
+          "baselineSurvival": 0.989313,
+          "scenarioSurvival": 0.989313,
+          "healthQuality": 1.0,
+          "effectiveDensity": 0.989313
+        },
+        {
+          "age": 46.0,
+          "baselineSurvival": 0.986592,
+          "scenarioSurvival": 0.986592,
+          "healthQuality": 1.0,
+          "effectiveDensity": 0.986592
+        },
+        {
+          "age": 47.0,
+          "baselineSurvival": 0.98364,
+          "scenarioSurvival": 0.98364,
+          "healthQuality": 1.0,
+          "effectiveDensity": 0.98364
+        },
+        {
+          "age": 48.0,
+          "baselineSurvival": 0.980435,
+          "scenarioSurvival": 0.980435,
+          "healthQuality": 1.0,
+          "effectiveDensity": 0.980435
+        },
+        {
+          "age": 49.0,
+          "baselineSurvival": 0.976957,
+          "scenarioSurvival": 0.976957,
+          "healthQuality": 1.0,
+          "effectiveDensity": 0.976957
+        },
+        {
+          "age": 50.0,
+          "baselineSurvival": 0.973186,
+          "scenarioSurvival": 0.973186,
+          "healthQuality": 1.0,
+          "effectiveDensity": 0.973186
+        },
+        {
+          "age": 51.0,
+          "baselineSurvival": 0.969096,
+          "scenarioSurvival": 0.969096,
+          "healthQuality": 1.0,
+          "effectiveDensity": 0.969096
+        },
+        {
+          "age": 52.0,
+          "baselineSurvival": 0.964663,
+          "scenarioSurvival": 0.964663,
+          "healthQuality": 1.0,
+          "effectiveDensity": 0.964663
+        },
+        {
+          "age": 53.0,
+          "baselineSurvival": 0.959859,
+          "scenarioSurvival": 0.959859,
+          "healthQuality": 1.0,
+          "effectiveDensity": 0.959859
+        },
+        {
+          "age": 54.0,
+          "baselineSurvival": 0.954657,
+          "scenarioSurvival": 0.954657,
+          "healthQuality": 1.0,
+          "effectiveDensity": 0.954657
+        },
+        {
+          "age": 55.0,
+          "baselineSurvival": 0.949025,
+          "scenarioSurvival": 0.949025,
+          "healthQuality": 1.0,
+          "effectiveDensity": 0.949025
+        },
+        {
+          "age": 56.0,
+          "baselineSurvival": 0.942932,
+          "scenarioSurvival": 0.942932,
+          "healthQuality": 1.0,
+          "effectiveDensity": 0.942932
+        },
+        {
+          "age": 57.0,
+          "baselineSurvival": 0.936342,
+          "scenarioSurvival": 0.936342,
+          "healthQuality": 1.0,
+          "effectiveDensity": 0.936342
+        },
+        {
+          "age": 58.0,
+          "baselineSurvival": 0.92922,
+          "scenarioSurvival": 0.92922,
+          "healthQuality": 1.0,
+          "effectiveDensity": 0.92922
+        },
+        {
+          "age": 59.0,
+          "baselineSurvival": 0.921527,
+          "scenarioSurvival": 0.921527,
+          "healthQuality": 1.0,
+          "effectiveDensity": 0.921527
+        },
+        {
+          "age": 60.0,
+          "baselineSurvival": 0.913225,
+          "scenarioSurvival": 0.913225,
+          "healthQuality": 1.0,
+          "effectiveDensity": 0.913225
+        },
+        {
+          "age": 61.0,
+          "baselineSurvival": 0.904271,
+          "scenarioSurvival": 0.904271,
+          "healthQuality": 1.0,
+          "effectiveDensity": 0.904271
+        },
+        {
+          "age": 62.0,
+          "baselineSurvival": 0.894623,
+          "scenarioSurvival": 0.894623,
+          "healthQuality": 1.0,
+          "effectiveDensity": 0.894623
+        },
+        {
+          "age": 63.0,
+          "baselineSurvival": 0.884235,
+          "scenarioSurvival": 0.884235,
+          "healthQuality": 0.989,
+          "effectiveDensity": 0.874509
+        },
+        {
+          "age": 64.0,
+          "baselineSurvival": 0.873063,
+          "scenarioSurvival": 0.873063,
+          "healthQuality": 0.978,
+          "effectiveDensity": 0.853856
+        },
+        {
+          "age": 65.0,
+          "baselineSurvival": 0.861061,
+          "scenarioSurvival": 0.861061,
+          "healthQuality": 0.967,
+          "effectiveDensity": 0.832646
+        },
+        {
+          "age": 66.0,
+          "baselineSurvival": 0.848181,
+          "scenarioSurvival": 0.848181,
+          "healthQuality": 0.956,
+          "effectiveDensity": 0.810861
+        },
+        {
+          "age": 67.0,
+          "baselineSurvival": 0.834377,
+          "scenarioSurvival": 0.834377,
+          "healthQuality": 0.945,
+          "effectiveDensity": 0.788486
+        },
+        {
+          "age": 68.0,
+          "baselineSurvival": 0.819604,
+          "scenarioSurvival": 0.819604,
+          "healthQuality": 0.934,
+          "effectiveDensity": 0.76551
+        },
+        {
+          "age": 69.0,
+          "baselineSurvival": 0.803818,
+          "scenarioSurvival": 0.803818,
+          "healthQuality": 0.923,
+          "effectiveDensity": 0.741924
+        },
+        {
+          "age": 70.0,
+          "baselineSurvival": 0.786976,
+          "scenarioSurvival": 0.786976,
+          "healthQuality": 0.912,
+          "effectiveDensity": 0.717723
+        },
+        {
+          "age": 71.0,
+          "baselineSurvival": 0.769042,
+          "scenarioSurvival": 0.769042,
+          "healthQuality": 0.901,
+          "effectiveDensity": 0.692907
+        },
+        {
+          "age": 72.0,
+          "baselineSurvival": 0.749981,
+          "scenarioSurvival": 0.749981,
+          "healthQuality": 0.89,
+          "effectiveDensity": 0.667483
+        },
+        {
+          "age": 73.0,
+          "baselineSurvival": 0.729765,
+          "scenarioSurvival": 0.729765,
+          "healthQuality": 0.879,
+          "effectiveDensity": 0.641464
+        },
+        {
+          "age": 74.0,
+          "baselineSurvival": 0.708375,
+          "scenarioSurvival": 0.708375,
+          "healthQuality": 0.868,
+          "effectiveDensity": 0.61487
+        },
+        {
+          "age": 75.0,
+          "baselineSurvival": 0.6858,
+          "scenarioSurvival": 0.6858,
+          "healthQuality": 0.857,
+          "effectiveDensity": 0.587731
+        },
+        {
+          "age": 76.0,
+          "baselineSurvival": 0.662039,
+          "scenarioSurvival": 0.662039,
+          "healthQuality": 0.846,
+          "effectiveDensity": 0.560085
+        },
+        {
+          "age": 77.0,
+          "baselineSurvival": 0.637106,
+          "scenarioSurvival": 0.637106,
+          "healthQuality": 0.835,
+          "effectiveDensity": 0.531983
+        },
+        {
+          "age": 78.0,
+          "baselineSurvival": 0.611026,
+          "scenarioSurvival": 0.611026,
+          "healthQuality": 0.824,
+          "effectiveDensity": 0.503486
+        },
+        {
+          "age": 79.0,
+          "baselineSurvival": 0.583846,
+          "scenarioSurvival": 0.583846,
+          "healthQuality": 0.813,
+          "effectiveDensity": 0.474666
+        },
+        {
+          "age": 80.0,
+          "baselineSurvival": 0.555627,
+          "scenarioSurvival": 0.555627,
+          "healthQuality": 0.802,
+          "effectiveDensity": 0.445612
+        },
+        {
+          "age": 81.0,
+          "baselineSurvival": 0.526452,
+          "scenarioSurvival": 0.526452,
+          "healthQuality": 0.791,
+          "effectiveDensity": 0.416424
+        },
+        {
+          "age": 82.0,
+          "baselineSurvival": 0.496429,
+          "scenarioSurvival": 0.496429,
+          "healthQuality": 0.78,
+          "effectiveDensity": 0.387215
+        },
+        {
+          "age": 83.0,
+          "baselineSurvival": 0.465686,
+          "scenarioSurvival": 0.465686,
+          "healthQuality": 0.769,
+          "effectiveDensity": 0.358112
+        },
+        {
+          "age": 84.0,
+          "baselineSurvival": 0.434375,
+          "scenarioSurvival": 0.434375,
+          "healthQuality": 0.758,
+          "effectiveDensity": 0.329257
+        },
+        {
+          "age": 85.0,
+          "baselineSurvival": 0.402676,
+          "scenarioSurvival": 0.402676,
+          "healthQuality": 0.747,
+          "effectiveDensity": 0.300799
+        },
+        {
+          "age": 86.0,
+          "baselineSurvival": 0.370789,
+          "scenarioSurvival": 0.370789,
+          "healthQuality": 0.736,
+          "effectiveDensity": 0.272901
+        },
+        {
+          "age": 87.0,
+          "baselineSurvival": 0.338937,
+          "scenarioSurvival": 0.338937,
+          "healthQuality": 0.725,
+          "effectiveDensity": 0.24573
+        },
+        {
+          "age": 88.0,
+          "baselineSurvival": 0.307363,
+          "scenarioSurvival": 0.307363,
+          "healthQuality": 0.714,
+          "effectiveDensity": 0.219457
+        },
+        {
+          "age": 89.0,
+          "baselineSurvival": 0.276322,
+          "scenarioSurvival": 0.276322,
+          "healthQuality": 0.703,
+          "effectiveDensity": 0.194254
+        },
+        {
+          "age": 90.0,
+          "baselineSurvival": 0.246081,
+          "scenarioSurvival": 0.246081,
+          "healthQuality": 0.692,
+          "effectiveDensity": 0.170288
+        },
+        {
+          "age": 91.0,
+          "baselineSurvival": 0.216907,
+          "scenarioSurvival": 0.216907,
+          "healthQuality": 0.681,
+          "effectiveDensity": 0.147714
+        },
+        {
+          "age": 92.0,
+          "baselineSurvival": 0.189064,
+          "scenarioSurvival": 0.189064,
+          "healthQuality": 0.67,
+          "effectiveDensity": 0.126673
+        },
+        {
+          "age": 93.0,
+          "baselineSurvival": 0.162798,
+          "scenarioSurvival": 0.162798,
+          "healthQuality": 0.659,
+          "effectiveDensity": 0.107284
+        },
+        {
+          "age": 94.0,
+          "baselineSurvival": 0.138334,
+          "scenarioSurvival": 0.138334,
+          "healthQuality": 0.648,
+          "effectiveDensity": 0.08964
+        },
+        {
+          "age": 95.0,
+          "baselineSurvival": 0.11586,
+          "scenarioSurvival": 0.11586,
+          "healthQuality": 0.637,
+          "effectiveDensity": 0.073803
+        },
+        {
+          "age": 96.0,
+          "baselineSurvival": 0.095522,
+          "scenarioSurvival": 0.095522,
+          "healthQuality": 0.626,
+          "effectiveDensity": 0.059797
+        },
+        {
+          "age": 97.0,
+          "baselineSurvival": 0.077418,
+          "scenarioSurvival": 0.077418,
+          "healthQuality": 0.615,
+          "effectiveDensity": 0.047612
+        },
+        {
+          "age": 98.0,
+          "baselineSurvival": 0.061586,
+          "scenarioSurvival": 0.061586,
+          "healthQuality": 0.604,
+          "effectiveDensity": 0.037198
+        },
+        {
+          "age": 99.0,
+          "baselineSurvival": 0.048007,
+          "scenarioSurvival": 0.048007,
+          "healthQuality": 0.593,
+          "effectiveDensity": 0.028468
+        },
+        {
+          "age": 100.0,
+          "baselineSurvival": 0.036604,
+          "scenarioSurvival": 0.036604,
+          "healthQuality": 0.582,
+          "effectiveDensity": 0.021304
+        },
+        {
+          "age": 101.0,
+          "baselineSurvival": 0.027247,
+          "scenarioSurvival": 0.027247,
+          "healthQuality": 0.571,
+          "effectiveDensity": 0.015558
+        },
+        {
+          "age": 102.0,
+          "baselineSurvival": 0.019757,
+          "scenarioSurvival": 0.019757,
+          "healthQuality": 0.56,
+          "effectiveDensity": 0.011064
+        },
+        {
+          "age": 103.0,
+          "baselineSurvival": 0.013923,
+          "scenarioSurvival": 0.013923,
+          "healthQuality": 0.549,
+          "effectiveDensity": 0.007644
+        },
+        {
+          "age": 104.0,
+          "baselineSurvival": 0.009512,
+          "scenarioSurvival": 0.009512,
+          "healthQuality": 0.538,
+          "effectiveDensity": 0.005117
+        },
+        {
+          "age": 105.0,
+          "baselineSurvival": 0.006282,
+          "scenarioSurvival": 0.006282,
+          "healthQuality": 0.527,
+          "effectiveDensity": 0.003311
+        },
+        {
+          "age": 106.0,
+          "baselineSurvival": 0.003999,
+          "scenarioSurvival": 0.003999,
+          "healthQuality": 0.516,
+          "effectiveDensity": 0.002064
+        },
+        {
+          "age": 107.0,
+          "baselineSurvival": 0.002446,
+          "scenarioSurvival": 0.002446,
+          "healthQuality": 0.505,
+          "effectiveDensity": 0.001235
+        },
+        {
+          "age": 108.0,
+          "baselineSurvival": 0.001432,
+          "scenarioSurvival": 0.001432,
+          "healthQuality": 0.494,
+          "effectiveDensity": 0.000708
+        },
+        {
+          "age": 109.0,
+          "baselineSurvival": 0.0008,
+          "scenarioSurvival": 0.0008,
+          "healthQuality": 0.483,
+          "effectiveDensity": 0.000386
+        },
+        {
+          "age": 110.0,
+          "baselineSurvival": 0.000424,
+          "scenarioSurvival": 0.000424,
+          "healthQuality": 0.472,
+          "effectiveDensity": 0.0002
+        },
+        {
+          "age": 111.0,
+          "baselineSurvival": 0.000213,
+          "scenarioSurvival": 0.000213,
+          "healthQuality": 0.461,
+          "effectiveDensity": 9.8e-05
+        },
+        {
+          "age": 112.0,
+          "baselineSurvival": 0.0001,
+          "scenarioSurvival": 0.0001,
+          "healthQuality": 0.45,
+          "effectiveDensity": 4.5e-05
+        },
+        {
+          "age": 113.0,
+          "baselineSurvival": 4.4e-05,
+          "scenarioSurvival": 4.4e-05,
+          "healthQuality": 0.439,
+          "effectiveDensity": 1.9e-05
+        },
+        {
+          "age": 114.0,
+          "baselineSurvival": 1.8e-05,
+          "scenarioSurvival": 1.8e-05,
+          "healthQuality": 0.428,
+          "effectiveDensity": 8e-06
+        },
+        {
+          "age": 115.0,
+          "baselineSurvival": 7e-06,
+          "scenarioSurvival": 7e-06,
+          "healthQuality": 0.417,
+          "effectiveDensity": 3e-06
+        },
+        {
+          "age": 116.0,
+          "baselineSurvival": 2e-06,
+          "scenarioSurvival": 2e-06,
+          "healthQuality": 0.406,
+          "effectiveDensity": 1e-06
+        },
+        {
+          "age": 117.0,
+          "baselineSurvival": 1e-06,
+          "scenarioSurvival": 1e-06,
+          "healthQuality": 0.395,
+          "effectiveDensity": 0.0
+        },
+        {
+          "age": 118.0,
+          "baselineSurvival": 0.0,
+          "scenarioSurvival": 0.0,
+          "healthQuality": 0.384,
+          "effectiveDensity": 0.0
+        },
+        {
+          "age": 119.0,
+          "baselineSurvival": 0.0,
+          "scenarioSurvival": 0.0,
+          "healthQuality": 0.373,
+          "effectiveDensity": 0.0
+        },
+        {
+          "age": 120.0,
+          "baselineSurvival": 0.0,
+          "scenarioSurvival": 0.0,
+          "healthQuality": 0.362,
+          "effectiveDensity": 0.0
+        }
+      ]
+    },
+    {
+      "id": "assisted",
+      "label": "AI 辅助",
+      "description": "AI 工具、数据化健康管理和较弱医学进步共同降低任务摩擦与部分风险。",
+      "evidenceGrade": "synthetic-toy",
+      "controlValues": {
+        "ai": 0.55,
+        "biomedical": 0.35,
+        "interfaceLevel": 0.16,
+        "waiting": 0.08,
+        "governance": 0.52
+      },
+      "metrics": {
+        "riskReduction": 0.18,
+        "capabilityGain": 0.12,
+        "subjectiveCompression": 0.08,
+        "levRatio": 0.45,
+        "distributionShiftYears": 2.185,
+        "expectedLifeAgeProxy": 82.792,
+        "expectedEffectiveTimeYears": 48.896,
+        "expectedEffectiveTimeGainYears": 10.999,
+        "healthspanAgeProxy": 81.715,
+        "survivalAt80": 0.617621,
+        "survivalAt100": 0.066389,
+        "optionValue": 0.4802,
+        "riskTailPenalty": 0.04,
+        "thresholdStatus": "低于阈值 / 有限边界",
+        "openBoundary": false,
+        "resourceBudget": {
+          "attention": 32,
+          "time": 26,
+          "recovery": 28,
+          "option": 48
+        }
+      },
+      "curve": [
+        {
+          "age": 40.0,
+          "baselineSurvival": 1.0,
+          "scenarioSurvival": 1.0,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.2096
+        },
+        {
+          "age": 41.0,
+          "baselineSurvival": 0.998202,
+          "scenarioSurvival": 0.998525,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.207816
+        },
+        {
+          "age": 42.0,
+          "baselineSurvival": 0.996247,
+          "scenarioSurvival": 0.996922,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.205877
+        },
+        {
+          "age": 43.0,
+          "baselineSurvival": 0.994124,
+          "scenarioSurvival": 0.995179,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.203769
+        },
+        {
+          "age": 44.0,
+          "baselineSurvival": 0.991818,
+          "scenarioSurvival": 0.993285,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.201478
+        },
+        {
+          "age": 45.0,
+          "baselineSurvival": 0.989313,
+          "scenarioSurvival": 0.991228,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.198989
+        },
+        {
+          "age": 46.0,
+          "baselineSurvival": 0.986592,
+          "scenarioSurvival": 0.988992,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.196285
+        },
+        {
+          "age": 47.0,
+          "baselineSurvival": 0.98364,
+          "scenarioSurvival": 0.986565,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.193348
+        },
+        {
+          "age": 48.0,
+          "baselineSurvival": 0.980435,
+          "scenarioSurvival": 0.983928,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.190159
+        },
+        {
+          "age": 49.0,
+          "baselineSurvival": 0.976957,
+          "scenarioSurvival": 0.981066,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.186697
+        },
+        {
+          "age": 50.0,
+          "baselineSurvival": 0.973186,
+          "scenarioSurvival": 0.977959,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.182939
+        },
+        {
+          "age": 51.0,
+          "baselineSurvival": 0.969096,
+          "scenarioSurvival": 0.974587,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.178861
+        },
+        {
+          "age": 52.0,
+          "baselineSurvival": 0.964663,
+          "scenarioSurvival": 0.97093,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.174437
+        },
+        {
+          "age": 53.0,
+          "baselineSurvival": 0.959859,
+          "scenarioSurvival": 0.966964,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.169639
+        },
+        {
+          "age": 54.0,
+          "baselineSurvival": 0.954657,
+          "scenarioSurvival": 0.962664,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.164439
+        },
+        {
+          "age": 55.0,
+          "baselineSurvival": 0.949025,
+          "scenarioSurvival": 0.958005,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.158803
+        },
+        {
+          "age": 56.0,
+          "baselineSurvival": 0.942932,
+          "scenarioSurvival": 0.952958,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.152698
+        },
+        {
+          "age": 57.0,
+          "baselineSurvival": 0.936342,
+          "scenarioSurvival": 0.947493,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.146088
+        },
+        {
+          "age": 58.0,
+          "baselineSurvival": 0.92922,
+          "scenarioSurvival": 0.94158,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.138935
+        },
+        {
+          "age": 59.0,
+          "baselineSurvival": 0.921527,
+          "scenarioSurvival": 0.935183,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.131198
+        },
+        {
+          "age": 60.0,
+          "baselineSurvival": 0.913225,
+          "scenarioSurvival": 0.928269,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.122834
+        },
+        {
+          "age": 61.0,
+          "baselineSurvival": 0.904271,
+          "scenarioSurvival": 0.920799,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.113799
+        },
+        {
+          "age": 62.0,
+          "baselineSurvival": 0.894623,
+          "scenarioSurvival": 0.912735,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.104044
+        },
+        {
+          "age": 63.0,
+          "baselineSurvival": 0.884235,
+          "scenarioSurvival": 0.904036,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.093522
+        },
+        {
+          "age": 64.0,
+          "baselineSurvival": 0.873063,
+          "scenarioSurvival": 0.894659,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.082179
+        },
+        {
+          "age": 65.0,
+          "baselineSurvival": 0.861061,
+          "scenarioSurvival": 0.884561,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.069965
+        },
+        {
+          "age": 66.0,
+          "baselineSurvival": 0.848181,
+          "scenarioSurvival": 0.873696,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.056823
+        },
+        {
+          "age": 67.0,
+          "baselineSurvival": 0.834377,
+          "scenarioSurvival": 0.86202,
+          "healthQuality": 0.989,
+          "effectiveDensity": 1.031229
+        },
+        {
+          "age": 68.0,
+          "baselineSurvival": 0.819604,
+          "scenarioSurvival": 0.849484,
+          "healthQuality": 0.978,
+          "effectiveDensity": 1.00493
+        },
+        {
+          "age": 69.0,
+          "baselineSurvival": 0.803818,
+          "scenarioSurvival": 0.836044,
+          "healthQuality": 0.967,
+          "effectiveDensity": 0.977907
+        },
+        {
+          "age": 70.0,
+          "baselineSurvival": 0.786976,
+          "scenarioSurvival": 0.821653,
+          "healthQuality": 0.956,
+          "effectiveDensity": 0.950142
+        },
+        {
+          "age": 71.0,
+          "baselineSurvival": 0.769042,
+          "scenarioSurvival": 0.806267,
+          "healthQuality": 0.945,
+          "effectiveDensity": 0.921622
+        },
+        {
+          "age": 72.0,
+          "baselineSurvival": 0.749981,
+          "scenarioSurvival": 0.789844,
+          "healthQuality": 0.934,
+          "effectiveDensity": 0.892339
+        },
+        {
+          "age": 73.0,
+          "baselineSurvival": 0.729765,
+          "scenarioSurvival": 0.772343,
+          "healthQuality": 0.923,
+          "effectiveDensity": 0.862291
+        },
+        {
+          "age": 74.0,
+          "baselineSurvival": 0.708375,
+          "scenarioSurvival": 0.75373,
+          "healthQuality": 0.912,
+          "effectiveDensity": 0.831482
+        },
+        {
+          "age": 75.0,
+          "baselineSurvival": 0.6858,
+          "scenarioSurvival": 0.733976,
+          "healthQuality": 0.901,
+          "effectiveDensity": 0.799924
+        },
+        {
+          "age": 76.0,
+          "baselineSurvival": 0.662039,
+          "scenarioSurvival": 0.713058,
+          "healthQuality": 0.89,
+          "effectiveDensity": 0.767638
+        },
+        {
+          "age": 77.0,
+          "baselineSurvival": 0.637106,
+          "scenarioSurvival": 0.690961,
+          "healthQuality": 0.879,
+          "effectiveDensity": 0.734656
+        },
+        {
+          "age": 78.0,
+          "baselineSurvival": 0.611026,
+          "scenarioSurvival": 0.667681,
+          "healthQuality": 0.868,
+          "effectiveDensity": 0.70102
+        },
+        {
+          "age": 79.0,
+          "baselineSurvival": 0.583846,
+          "scenarioSurvival": 0.643227,
+          "healthQuality": 0.857,
+          "effectiveDensity": 0.666787
+        },
+        {
+          "age": 80.0,
+          "baselineSurvival": 0.555627,
+          "scenarioSurvival": 0.617621,
+          "healthQuality": 0.846,
+          "effectiveDensity": 0.632025
+        },
+        {
+          "age": 81.0,
+          "baselineSurvival": 0.526452,
+          "scenarioSurvival": 0.590901,
+          "healthQuality": 0.835,
+          "effectiveDensity": 0.596819
+        },
+        {
+          "age": 82.0,
+          "baselineSurvival": 0.496429,
+          "scenarioSurvival": 0.563123,
+          "healthQuality": 0.824,
+          "effectiveDensity": 0.56127
+        },
+        {
+          "age": 83.0,
+          "baselineSurvival": 0.465686,
+          "scenarioSurvival": 0.534363,
+          "healthQuality": 0.813,
+          "effectiveDensity": 0.525495
+        },
+        {
+          "age": 84.0,
+          "baselineSurvival": 0.434375,
+          "scenarioSurvival": 0.504719,
+          "healthQuality": 0.802,
+          "effectiveDensity": 0.489627
+        },
+        {
+          "age": 85.0,
+          "baselineSurvival": 0.402676,
+          "scenarioSurvival": 0.474312,
+          "healthQuality": 0.791,
+          "effectiveDensity": 0.453818
+        },
+        {
+          "age": 86.0,
+          "baselineSurvival": 0.370789,
+          "scenarioSurvival": 0.443286,
+          "healthQuality": 0.78,
+          "effectiveDensity": 0.418235
+        },
+        {
+          "age": 87.0,
+          "baselineSurvival": 0.338937,
+          "scenarioSurvival": 0.411811,
+          "healthQuality": 0.769,
+          "effectiveDensity": 0.383059
+        },
+        {
+          "age": 88.0,
+          "baselineSurvival": 0.307363,
+          "scenarioSurvival": 0.380079,
+          "healthQuality": 0.758,
+          "effectiveDensity": 0.348486
+        },
+        {
+          "age": 89.0,
+          "baselineSurvival": 0.276322,
+          "scenarioSurvival": 0.348306,
+          "healthQuality": 0.747,
+          "effectiveDensity": 0.314719
+        },
+        {
+          "age": 90.0,
+          "baselineSurvival": 0.246081,
+          "scenarioSurvival": 0.316726,
+          "healthQuality": 0.736,
+          "effectiveDensity": 0.28197
+        },
+        {
+          "age": 91.0,
+          "baselineSurvival": 0.216907,
+          "scenarioSurvival": 0.285591,
+          "healthQuality": 0.725,
+          "effectiveDensity": 0.250452
+        },
+        {
+          "age": 92.0,
+          "baselineSurvival": 0.189064,
+          "scenarioSurvival": 0.255164,
+          "healthQuality": 0.714,
+          "effectiveDensity": 0.220373
+        },
+        {
+          "age": 93.0,
+          "baselineSurvival": 0.162798,
+          "scenarioSurvival": 0.225711,
+          "healthQuality": 0.703,
+          "effectiveDensity": 0.191933
+        },
+        {
+          "age": 94.0,
+          "baselineSurvival": 0.138334,
+          "scenarioSurvival": 0.197497,
+          "healthQuality": 0.692,
+          "effectiveDensity": 0.165314
+        },
+        {
+          "age": 95.0,
+          "baselineSurvival": 0.11586,
+          "scenarioSurvival": 0.170775,
+          "healthQuality": 0.681,
+          "effectiveDensity": 0.140674
+        },
+        {
+          "age": 96.0,
+          "baselineSurvival": 0.095522,
+          "scenarioSurvival": 0.145776,
+          "healthQuality": 0.67,
+          "effectiveDensity": 0.118142
+        },
+        {
+          "age": 97.0,
+          "baselineSurvival": 0.077418,
+          "scenarioSurvival": 0.122702,
+          "healthQuality": 0.659,
+          "effectiveDensity": 0.097809
+        },
+        {
+          "age": 98.0,
+          "baselineSurvival": 0.061586,
+          "scenarioSurvival": 0.101713,
+          "healthQuality": 0.648,
+          "effectiveDensity": 0.079724
+        },
+        {
+          "age": 99.0,
+          "baselineSurvival": 0.048007,
+          "scenarioSurvival": 0.082922,
+          "healthQuality": 0.637,
+          "effectiveDensity": 0.063893
+        },
+        {
+          "age": 100.0,
+          "baselineSurvival": 0.036604,
+          "scenarioSurvival": 0.066389,
+          "healthQuality": 0.626,
+          "effectiveDensity": 0.050271
+        },
+        {
+          "age": 101.0,
+          "baselineSurvival": 0.027247,
+          "scenarioSurvival": 0.052114,
+          "healthQuality": 0.615,
+          "effectiveDensity": 0.038768
+        },
+        {
+          "age": 102.0,
+          "baselineSurvival": 0.019757,
+          "scenarioSurvival": 0.040039,
+          "healthQuality": 0.604,
+          "effectiveDensity": 0.029253
+        },
+        {
+          "age": 103.0,
+          "baselineSurvival": 0.013923,
+          "scenarioSurvival": 0.030051,
+          "healthQuality": 0.593,
+          "effectiveDensity": 0.021556
+        },
+        {
+          "age": 104.0,
+          "baselineSurvival": 0.009512,
+          "scenarioSurvival": 0.021988,
+          "healthQuality": 0.582,
+          "effectiveDensity": 0.015479
+        },
+        {
+          "age": 105.0,
+          "baselineSurvival": 0.006282,
+          "scenarioSurvival": 0.015648,
+          "healthQuality": 0.571,
+          "effectiveDensity": 0.010808
+        },
+        {
+          "age": 106.0,
+          "baselineSurvival": 0.003999,
+          "scenarioSurvival": 0.010805,
+          "healthQuality": 0.56,
+          "effectiveDensity": 0.007319
+        },
+        {
+          "age": 107.0,
+          "baselineSurvival": 0.002446,
+          "scenarioSurvival": 0.00722,
+          "healthQuality": 0.549,
+          "effectiveDensity": 0.004795
+        },
+        {
+          "age": 108.0,
+          "baselineSurvival": 0.001432,
+          "scenarioSurvival": 0.004655,
+          "healthQuality": 0.538,
+          "effectiveDensity": 0.003029
+        },
+        {
+          "age": 109.0,
+          "baselineSurvival": 0.0008,
+          "scenarioSurvival": 0.002887,
+          "healthQuality": 0.527,
+          "effectiveDensity": 0.00184
+        },
+        {
+          "age": 110.0,
+          "baselineSurvival": 0.000424,
+          "scenarioSurvival": 0.001716,
+          "healthQuality": 0.516,
+          "effectiveDensity": 0.001071
+        },
+        {
+          "age": 111.0,
+          "baselineSurvival": 0.000213,
+          "scenarioSurvival": 0.000974,
+          "healthQuality": 0.505,
+          "effectiveDensity": 0.000595
+        },
+        {
+          "age": 112.0,
+          "baselineSurvival": 0.0001,
+          "scenarioSurvival": 0.000526,
+          "healthQuality": 0.494,
+          "effectiveDensity": 0.000314
+        },
+        {
+          "age": 113.0,
+          "baselineSurvival": 4.4e-05,
+          "scenarioSurvival": 0.000269,
+          "healthQuality": 0.483,
+          "effectiveDensity": 0.000157
+        },
+        {
+          "age": 114.0,
+          "baselineSurvival": 1.8e-05,
+          "scenarioSurvival": 0.000129,
+          "healthQuality": 0.472,
+          "effectiveDensity": 7.4e-05
+        },
+        {
+          "age": 115.0,
+          "baselineSurvival": 7e-06,
+          "scenarioSurvival": 5.8e-05,
+          "healthQuality": 0.461,
+          "effectiveDensity": 3.3e-05
+        },
+        {
+          "age": 116.0,
+          "baselineSurvival": 2e-06,
+          "scenarioSurvival": 2.5e-05,
+          "healthQuality": 0.45,
+          "effectiveDensity": 1.3e-05
+        },
+        {
+          "age": 117.0,
+          "baselineSurvival": 1e-06,
+          "scenarioSurvival": 1e-05,
+          "healthQuality": 0.439,
+          "effectiveDensity": 5e-06
+        },
+        {
+          "age": 118.0,
+          "baselineSurvival": 0.0,
+          "scenarioSurvival": 3e-06,
+          "healthQuality": 0.428,
+          "effectiveDensity": 2e-06
+        },
+        {
+          "age": 119.0,
+          "baselineSurvival": 0.0,
+          "scenarioSurvival": 1e-06,
+          "healthQuality": 0.417,
+          "effectiveDensity": 1e-06
+        },
+        {
+          "age": 120.0,
+          "baselineSurvival": 0.0,
+          "scenarioSurvival": 0.0,
+          "healthQuality": 0.406,
+          "effectiveDensity": 0.0
+        }
+      ]
+    },
+    {
+      "id": "convergence",
+      "label": "指数技术汇聚",
+      "description": "AI 生物设计、健康寿命转化、监测、恢复和治理形成组合效应。",
+      "evidenceGrade": "synthetic-toy",
+      "controlValues": {
+        "ai": 0.78,
+        "biomedical": 0.7,
+        "interfaceLevel": 0.42,
+        "waiting": 0.2,
+        "governance": 0.58
+      },
+      "metrics": {
+        "riskReduction": 0.38,
+        "capabilityGain": 0.28,
+        "subjectiveCompression": 0.18,
+        "levRatio": 0.78,
+        "distributionShiftYears": 5.296,
+        "expectedLifeAgeProxy": 85.903,
+        "expectedEffectiveTimeYears": 67.185,
+        "expectedEffectiveTimeGainYears": 29.288,
+        "healthspanAgeProxy": 85.627,
+        "survivalAt80": 0.694649,
+        "survivalAt100": 0.128644,
+        "optionValue": 0.618,
+        "riskTailPenalty": 0.08,
+        "thresholdStatus": "低于阈值 / 有限边界",
+        "openBoundary": false,
+        "resourceBudget": {
+          "attention": 43,
+          "time": 70,
+          "recovery": 47,
+          "option": 62
+        }
+      },
+      "curve": [
+        {
+          "age": 40.0,
+          "baselineSurvival": 1.0,
+          "scenarioSurvival": 1.0,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.5104
+        },
+        {
+          "age": 41.0,
+          "baselineSurvival": 0.998202,
+          "scenarioSurvival": 0.998885,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.508715
+        },
+        {
+          "age": 42.0,
+          "baselineSurvival": 0.996247,
+          "scenarioSurvival": 0.997672,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.506883
+        },
+        {
+          "age": 43.0,
+          "baselineSurvival": 0.994124,
+          "scenarioSurvival": 0.996353,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.504891
+        },
+        {
+          "age": 44.0,
+          "baselineSurvival": 0.991818,
+          "scenarioSurvival": 0.994919,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.502726
+        },
+        {
+          "age": 45.0,
+          "baselineSurvival": 0.989313,
+          "scenarioSurvival": 0.99336,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.500371
+        },
+        {
+          "age": 46.0,
+          "baselineSurvival": 0.986592,
+          "scenarioSurvival": 0.991666,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.497812
+        },
+        {
+          "age": 47.0,
+          "baselineSurvival": 0.98364,
+          "scenarioSurvival": 0.989825,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.495031
+        },
+        {
+          "age": 48.0,
+          "baselineSurvival": 0.980435,
+          "scenarioSurvival": 0.987824,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.492009
+        },
+        {
+          "age": 49.0,
+          "baselineSurvival": 0.976957,
+          "scenarioSurvival": 0.98565,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.488726
+        },
+        {
+          "age": 50.0,
+          "baselineSurvival": 0.973186,
+          "scenarioSurvival": 0.983289,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.48516
+        },
+        {
+          "age": 51.0,
+          "baselineSurvival": 0.969096,
+          "scenarioSurvival": 0.980725,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.481287
+        },
+        {
+          "age": 52.0,
+          "baselineSurvival": 0.964663,
+          "scenarioSurvival": 0.977941,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.477083
+        },
+        {
+          "age": 53.0,
+          "baselineSurvival": 0.959859,
+          "scenarioSurvival": 0.974919,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.472518
+        },
+        {
+          "age": 54.0,
+          "baselineSurvival": 0.954657,
+          "scenarioSurvival": 0.97164,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.467565
+        },
+        {
+          "age": 55.0,
+          "baselineSurvival": 0.949025,
+          "scenarioSurvival": 0.968082,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.462191
+        },
+        {
+          "age": 56.0,
+          "baselineSurvival": 0.942932,
+          "scenarioSurvival": 0.964224,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.456363
+        },
+        {
+          "age": 57.0,
+          "baselineSurvival": 0.936342,
+          "scenarioSurvival": 0.96004,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.450044
+        },
+        {
+          "age": 58.0,
+          "baselineSurvival": 0.92922,
+          "scenarioSurvival": 0.955506,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.443196
+        },
+        {
+          "age": 59.0,
+          "baselineSurvival": 0.921527,
+          "scenarioSurvival": 0.950594,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.435777
+        },
+        {
+          "age": 60.0,
+          "baselineSurvival": 0.913225,
+          "scenarioSurvival": 0.945275,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.427744
+        },
+        {
+          "age": 61.0,
+          "baselineSurvival": 0.904271,
+          "scenarioSurvival": 0.939518,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.419048
+        },
+        {
+          "age": 62.0,
+          "baselineSurvival": 0.894623,
+          "scenarioSurvival": 0.93329,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.409642
+        },
+        {
+          "age": 63.0,
+          "baselineSurvival": 0.884235,
+          "scenarioSurvival": 0.926557,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.399471
+        },
+        {
+          "age": 64.0,
+          "baselineSurvival": 0.873063,
+          "scenarioSurvival": 0.919281,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.388482
+        },
+        {
+          "age": 65.0,
+          "baselineSurvival": 0.861061,
+          "scenarioSurvival": 0.911425,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.376616
+        },
+        {
+          "age": 66.0,
+          "baselineSurvival": 0.848181,
+          "scenarioSurvival": 0.902948,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.363813
+        },
+        {
+          "age": 67.0,
+          "baselineSurvival": 0.834377,
+          "scenarioSurvival": 0.893809,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.350009
+        },
+        {
+          "age": 68.0,
+          "baselineSurvival": 0.819604,
+          "scenarioSurvival": 0.883964,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.335139
+        },
+        {
+          "age": 69.0,
+          "baselineSurvival": 0.803818,
+          "scenarioSurvival": 0.873369,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.319136
+        },
+        {
+          "age": 70.0,
+          "baselineSurvival": 0.786976,
+          "scenarioSurvival": 0.861978,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.301932
+        },
+        {
+          "age": 71.0,
+          "baselineSurvival": 0.769042,
+          "scenarioSurvival": 0.849746,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.283456
+        },
+        {
+          "age": 72.0,
+          "baselineSurvival": 0.749981,
+          "scenarioSurvival": 0.836625,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.263639
+        },
+        {
+          "age": 73.0,
+          "baselineSurvival": 0.729765,
+          "scenarioSurvival": 0.822571,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.242412
+        },
+        {
+          "age": 74.0,
+          "baselineSurvival": 0.708375,
+          "scenarioSurvival": 0.807539,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.219707
+        },
+        {
+          "age": 75.0,
+          "baselineSurvival": 0.6858,
+          "scenarioSurvival": 0.791485,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.195458
+        },
+        {
+          "age": 76.0,
+          "baselineSurvival": 0.662039,
+          "scenarioSurvival": 0.774369,
+          "healthQuality": 0.989,
+          "effectiveDensity": 1.156741
+        },
+        {
+          "age": 77.0,
+          "baselineSurvival": 0.637106,
+          "scenarioSurvival": 0.756155,
+          "healthQuality": 0.978,
+          "effectiveDensity": 1.116971
+        },
+        {
+          "age": 78.0,
+          "baselineSurvival": 0.611026,
+          "scenarioSurvival": 0.736813,
+          "healthQuality": 0.967,
+          "effectiveDensity": 1.076157
+        },
+        {
+          "age": 79.0,
+          "baselineSurvival": 0.583846,
+          "scenarioSurvival": 0.716316,
+          "healthQuality": 0.956,
+          "effectiveDensity": 1.034319
+        },
+        {
+          "age": 80.0,
+          "baselineSurvival": 0.555627,
+          "scenarioSurvival": 0.694649,
+          "healthQuality": 0.945,
+          "effectiveDensity": 0.991492
+        },
+        {
+          "age": 81.0,
+          "baselineSurvival": 0.526452,
+          "scenarioSurvival": 0.671804,
+          "healthQuality": 0.934,
+          "effectiveDensity": 0.947723
+        },
+        {
+          "age": 82.0,
+          "baselineSurvival": 0.496429,
+          "scenarioSurvival": 0.647786,
+          "healthQuality": 0.923,
+          "effectiveDensity": 0.903078
+        },
+        {
+          "age": 83.0,
+          "baselineSurvival": 0.465686,
+          "scenarioSurvival": 0.622612,
+          "healthQuality": 0.912,
+          "effectiveDensity": 0.857639
+        },
+        {
+          "age": 84.0,
+          "baselineSurvival": 0.434375,
+          "scenarioSurvival": 0.596316,
+          "healthQuality": 0.901,
+          "effectiveDensity": 0.811509
+        },
+        {
+          "age": 85.0,
+          "baselineSurvival": 0.402676,
+          "scenarioSurvival": 0.568948,
+          "healthQuality": 0.89,
+          "effectiveDensity": 0.764812
+        },
+        {
+          "age": 86.0,
+          "baselineSurvival": 0.370789,
+          "scenarioSurvival": 0.540579,
+          "healthQuality": 0.879,
+          "effectiveDensity": 0.717695
+        },
+        {
+          "age": 87.0,
+          "baselineSurvival": 0.338937,
+          "scenarioSurvival": 0.511298,
+          "healthQuality": 0.868,
+          "effectiveDensity": 0.670326
+        },
+        {
+          "age": 88.0,
+          "baselineSurvival": 0.307363,
+          "scenarioSurvival": 0.48122,
+          "healthQuality": 0.857,
+          "effectiveDensity": 0.622898
+        },
+        {
+          "age": 89.0,
+          "baselineSurvival": 0.276322,
+          "scenarioSurvival": 0.450482,
+          "healthQuality": 0.846,
+          "effectiveDensity": 0.575626
+        },
+        {
+          "age": 90.0,
+          "baselineSurvival": 0.246081,
+          "scenarioSurvival": 0.419245,
+          "healthQuality": 0.835,
+          "effectiveDensity": 0.528746
+        },
+        {
+          "age": 91.0,
+          "baselineSurvival": 0.216907,
+          "scenarioSurvival": 0.387695,
+          "healthQuality": 0.824,
+          "effectiveDensity": 0.482513
+        },
+        {
+          "age": 92.0,
+          "baselineSurvival": 0.189064,
+          "scenarioSurvival": 0.356039,
+          "healthQuality": 0.813,
+          "effectiveDensity": 0.4372
+        },
+        {
+          "age": 93.0,
+          "baselineSurvival": 0.162798,
+          "scenarioSurvival": 0.324506,
+          "healthQuality": 0.802,
+          "effectiveDensity": 0.393088
+        },
+        {
+          "age": 94.0,
+          "baselineSurvival": 0.138334,
+          "scenarioSurvival": 0.293343,
+          "healthQuality": 0.791,
+          "effectiveDensity": 0.350464
+        },
+        {
+          "age": 95.0,
+          "baselineSurvival": 0.11586,
+          "scenarioSurvival": 0.262808,
+          "healthQuality": 0.78,
+          "effectiveDensity": 0.309617
+        },
+        {
+          "age": 96.0,
+          "baselineSurvival": 0.095522,
+          "scenarioSurvival": 0.233166,
+          "healthQuality": 0.769,
+          "effectiveDensity": 0.270822
+        },
+        {
+          "age": 97.0,
+          "baselineSurvival": 0.077418,
+          "scenarioSurvival": 0.204683,
+          "healthQuality": 0.758,
+          "effectiveDensity": 0.234338
+        },
+        {
+          "age": 98.0,
+          "baselineSurvival": 0.061586,
+          "scenarioSurvival": 0.177614,
+          "healthQuality": 0.747,
+          "effectiveDensity": 0.200397
+        },
+        {
+          "age": 99.0,
+          "baselineSurvival": 0.048007,
+          "scenarioSurvival": 0.152198,
+          "healthQuality": 0.736,
+          "effectiveDensity": 0.169192
+        },
+        {
+          "age": 100.0,
+          "baselineSurvival": 0.036604,
+          "scenarioSurvival": 0.128644,
+          "healthQuality": 0.725,
+          "effectiveDensity": 0.140871
+        },
+        {
+          "age": 101.0,
+          "baselineSurvival": 0.027247,
+          "scenarioSurvival": 0.107126,
+          "healthQuality": 0.714,
+          "effectiveDensity": 0.115527
+        },
+        {
+          "age": 102.0,
+          "baselineSurvival": 0.019757,
+          "scenarioSurvival": 0.08777,
+          "healthQuality": 0.703,
+          "effectiveDensity": 0.093195
+        },
+        {
+          "age": 103.0,
+          "baselineSurvival": 0.013923,
+          "scenarioSurvival": 0.070651,
+          "healthQuality": 0.692,
+          "effectiveDensity": 0.073844
+        },
+        {
+          "age": 104.0,
+          "baselineSurvival": 0.009512,
+          "scenarioSurvival": 0.055786,
+          "healthQuality": 0.681,
+          "effectiveDensity": 0.057381
+        },
+        {
+          "age": 105.0,
+          "baselineSurvival": 0.006282,
+          "scenarioSurvival": 0.043136,
+          "healthQuality": 0.67,
+          "effectiveDensity": 0.043652
+        },
+        {
+          "age": 106.0,
+          "baselineSurvival": 0.003999,
+          "scenarioSurvival": 0.032602,
+          "healthQuality": 0.659,
+          "effectiveDensity": 0.03245
+        },
+        {
+          "age": 107.0,
+          "baselineSurvival": 0.002446,
+          "scenarioSurvival": 0.024036,
+          "healthQuality": 0.648,
+          "effectiveDensity": 0.023525
+        },
+        {
+          "age": 108.0,
+          "baselineSurvival": 0.001432,
+          "scenarioSurvival": 0.017247,
+          "healthQuality": 0.637,
+          "effectiveDensity": 0.016594
+        },
+        {
+          "age": 109.0,
+          "baselineSurvival": 0.0008,
+          "scenarioSurvival": 0.012017,
+          "healthQuality": 0.626,
+          "effectiveDensity": 0.011363
+        },
+        {
+          "age": 110.0,
+          "baselineSurvival": 0.000424,
+          "scenarioSurvival": 0.008109,
+          "healthQuality": 0.615,
+          "effectiveDensity": 0.007532
+        },
+        {
+          "age": 111.0,
+          "baselineSurvival": 0.000213,
+          "scenarioSurvival": 0.005284,
+          "healthQuality": 0.604,
+          "effectiveDensity": 0.004821
+        },
+        {
+          "age": 112.0,
+          "baselineSurvival": 0.0001,
+          "scenarioSurvival": 0.003315,
+          "healthQuality": 0.593,
+          "effectiveDensity": 0.002969
+        },
+        {
+          "age": 113.0,
+          "baselineSurvival": 4.4e-05,
+          "scenarioSurvival": 0.001995,
+          "healthQuality": 0.582,
+          "effectiveDensity": 0.001754
+        },
+        {
+          "age": 114.0,
+          "baselineSurvival": 1.8e-05,
+          "scenarioSurvival": 0.001148,
+          "healthQuality": 0.571,
+          "effectiveDensity": 0.00099
+        },
+        {
+          "age": 115.0,
+          "baselineSurvival": 7e-06,
+          "scenarioSurvival": 0.000629,
+          "healthQuality": 0.56,
+          "effectiveDensity": 0.000532
+        },
+        {
+          "age": 116.0,
+          "baselineSurvival": 2e-06,
+          "scenarioSurvival": 0.000327,
+          "healthQuality": 0.549,
+          "effectiveDensity": 0.000271
+        },
+        {
+          "age": 117.0,
+          "baselineSurvival": 1e-06,
+          "scenarioSurvival": 0.00016,
+          "healthQuality": 0.538,
+          "effectiveDensity": 0.00013
+        },
+        {
+          "age": 118.0,
+          "baselineSurvival": 0.0,
+          "scenarioSurvival": 7.4e-05,
+          "healthQuality": 0.527,
+          "effectiveDensity": 5.9e-05
+        },
+        {
+          "age": 119.0,
+          "baselineSurvival": 0.0,
+          "scenarioSurvival": 3.2e-05,
+          "healthQuality": 0.516,
+          "effectiveDensity": 2.5e-05
+        },
+        {
+          "age": 120.0,
+          "baselineSurvival": 0.0,
+          "scenarioSurvival": 1.3e-05,
+          "healthQuality": 0.505,
+          "effectiveDensity": 1e-05
+        }
+      ]
+    },
+    {
+      "id": "escape",
+      "label": "LEV 临界探索",
+      "description": "长寿逃逸速度的合成压力测试：当年度寿命增益接近或超过时间流逝，输出开放边界而非死亡日期。",
+      "evidenceGrade": "synthetic-toy",
+      "controlValues": {
+        "ai": 0.86,
+        "biomedical": 0.92,
+        "interfaceLevel": 0.5,
+        "waiting": 0.38,
+        "governance": 0.64
+      },
+      "metrics": {
+        "riskReduction": 0.56,
+        "capabilityGain": 0.48,
+        "subjectiveCompression": 0.32,
+        "levRatio": 1.05,
+        "distributionShiftYears": 9.24,
+        "expectedLifeAgeProxy": 89.847,
+        "expectedEffectiveTimeYears": 96.078,
+        "expectedEffectiveTimeGainYears": 58.181,
+        "healthspanAgeProxy": 89.824,
+        "survivalAt80": 0.772524,
+        "survivalAt100": 0.237183,
+        "optionValue": 0.6928,
+        "riskTailPenalty": 0.12,
+        "thresholdStatus": "越过阈值 / 开放边界",
+        "openBoundary": true,
+        "resourceBudget": {
+          "attention": 48,
+          "time": 100,
+          "recovery": 59,
+          "option": 69
+        }
+      },
+      "curve": [
+        {
+          "age": 40.0,
+          "baselineSurvival": 1.0,
+          "scenarioSurvival": 1.0,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.9536
+        },
+        {
+          "age": 41.0,
+          "baselineSurvival": 0.998202,
+          "scenarioSurvival": 0.999208,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.952053
+        },
+        {
+          "age": 42.0,
+          "baselineSurvival": 0.996247,
+          "scenarioSurvival": 0.998347,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.950371
+        },
+        {
+          "age": 43.0,
+          "baselineSurvival": 0.994124,
+          "scenarioSurvival": 0.99741,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.948541
+        },
+        {
+          "age": 44.0,
+          "baselineSurvival": 0.991818,
+          "scenarioSurvival": 0.996391,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.94655
+        },
+        {
+          "age": 45.0,
+          "baselineSurvival": 0.989313,
+          "scenarioSurvival": 0.995283,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.944386
+        },
+        {
+          "age": 46.0,
+          "baselineSurvival": 0.986592,
+          "scenarioSurvival": 0.994078,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.942032
+        },
+        {
+          "age": 47.0,
+          "baselineSurvival": 0.98364,
+          "scenarioSurvival": 0.992768,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.939472
+        },
+        {
+          "age": 48.0,
+          "baselineSurvival": 0.980435,
+          "scenarioSurvival": 0.991344,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.936689
+        },
+        {
+          "age": 49.0,
+          "baselineSurvival": 0.976957,
+          "scenarioSurvival": 0.989795,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.933664
+        },
+        {
+          "age": 50.0,
+          "baselineSurvival": 0.973186,
+          "scenarioSurvival": 0.988112,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.930375
+        },
+        {
+          "age": 51.0,
+          "baselineSurvival": 0.969096,
+          "scenarioSurvival": 0.986283,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.926802
+        },
+        {
+          "age": 52.0,
+          "baselineSurvival": 0.964663,
+          "scenarioSurvival": 0.984295,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.922918
+        },
+        {
+          "age": 53.0,
+          "baselineSurvival": 0.959859,
+          "scenarioSurvival": 0.982135,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.9187
+        },
+        {
+          "age": 54.0,
+          "baselineSurvival": 0.954657,
+          "scenarioSurvival": 0.97979,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.914117
+        },
+        {
+          "age": 55.0,
+          "baselineSurvival": 0.949025,
+          "scenarioSurvival": 0.977242,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.90914
+        },
+        {
+          "age": 56.0,
+          "baselineSurvival": 0.942932,
+          "scenarioSurvival": 0.974476,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.903737
+        },
+        {
+          "age": 57.0,
+          "baselineSurvival": 0.936342,
+          "scenarioSurvival": 0.971474,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.897871
+        },
+        {
+          "age": 58.0,
+          "baselineSurvival": 0.92922,
+          "scenarioSurvival": 0.968216,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.891506
+        },
+        {
+          "age": 59.0,
+          "baselineSurvival": 0.921527,
+          "scenarioSurvival": 0.964681,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.8846
+        },
+        {
+          "age": 60.0,
+          "baselineSurvival": 0.913225,
+          "scenarioSurvival": 0.960847,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.877111
+        },
+        {
+          "age": 61.0,
+          "baselineSurvival": 0.904271,
+          "scenarioSurvival": 0.95669,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.86899
+        },
+        {
+          "age": 62.0,
+          "baselineSurvival": 0.894623,
+          "scenarioSurvival": 0.952185,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.86019
+        },
+        {
+          "age": 63.0,
+          "baselineSurvival": 0.884235,
+          "scenarioSurvival": 0.947305,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.850655
+        },
+        {
+          "age": 64.0,
+          "baselineSurvival": 0.873063,
+          "scenarioSurvival": 0.94202,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.84033
+        },
+        {
+          "age": 65.0,
+          "baselineSurvival": 0.861061,
+          "scenarioSurvival": 0.9363,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.829155
+        },
+        {
+          "age": 66.0,
+          "baselineSurvival": 0.848181,
+          "scenarioSurvival": 0.930111,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.817065
+        },
+        {
+          "age": 67.0,
+          "baselineSurvival": 0.834377,
+          "scenarioSurvival": 0.92342,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.803994
+        },
+        {
+          "age": 68.0,
+          "baselineSurvival": 0.819604,
+          "scenarioSurvival": 0.916191,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.78987
+        },
+        {
+          "age": 69.0,
+          "baselineSurvival": 0.803818,
+          "scenarioSurvival": 0.908384,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.774618
+        },
+        {
+          "age": 70.0,
+          "baselineSurvival": 0.786976,
+          "scenarioSurvival": 0.89996,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.758162
+        },
+        {
+          "age": 71.0,
+          "baselineSurvival": 0.769042,
+          "scenarioSurvival": 0.890878,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.740418
+        },
+        {
+          "age": 72.0,
+          "baselineSurvival": 0.749981,
+          "scenarioSurvival": 0.881099,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.721316
+        },
+        {
+          "age": 73.0,
+          "baselineSurvival": 0.729765,
+          "scenarioSurvival": 0.870582,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.700769
+        },
+        {
+          "age": 74.0,
+          "baselineSurvival": 0.708375,
+          "scenarioSurvival": 0.859281,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.678692
+        },
+        {
+          "age": 75.0,
+          "baselineSurvival": 0.6858,
+          "scenarioSurvival": 0.847152,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.654996
+        },
+        {
+          "age": 76.0,
+          "baselineSurvival": 0.662039,
+          "scenarioSurvival": 0.834148,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.629592
+        },
+        {
+          "age": 77.0,
+          "baselineSurvival": 0.637106,
+          "scenarioSurvival": 0.820227,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.602395
+        },
+        {
+          "age": 78.0,
+          "baselineSurvival": 0.611026,
+          "scenarioSurvival": 0.805343,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.573318
+        },
+        {
+          "age": 79.0,
+          "baselineSurvival": 0.583846,
+          "scenarioSurvival": 0.789455,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.542279
+        },
+        {
+          "age": 80.0,
+          "baselineSurvival": 0.555627,
+          "scenarioSurvival": 0.772524,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.509202
+        },
+        {
+          "age": 81.0,
+          "baselineSurvival": 0.526452,
+          "scenarioSurvival": 0.754514,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.474018
+        },
+        {
+          "age": 82.0,
+          "baselineSurvival": 0.496429,
+          "scenarioSurvival": 0.735394,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.436666
+        },
+        {
+          "age": 83.0,
+          "baselineSurvival": 0.465686,
+          "scenarioSurvival": 0.715141,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.3971
+        },
+        {
+          "age": 84.0,
+          "baselineSurvival": 0.434375,
+          "scenarioSurvival": 0.693738,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.355287
+        },
+        {
+          "age": 85.0,
+          "baselineSurvival": 0.402676,
+          "scenarioSurvival": 0.671177,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.311212
+        },
+        {
+          "age": 86.0,
+          "baselineSurvival": 0.370789,
+          "scenarioSurvival": 0.647462,
+          "healthQuality": 1.0,
+          "effectiveDensity": 1.264882
+        },
+        {
+          "age": 87.0,
+          "baselineSurvival": 0.338937,
+          "scenarioSurvival": 0.62261,
+          "healthQuality": 0.989,
+          "effectiveDensity": 1.20295
+        },
+        {
+          "age": 88.0,
+          "baselineSurvival": 0.307363,
+          "scenarioSurvival": 0.596651,
+          "healthQuality": 0.978,
+          "effectiveDensity": 1.139974
+        },
+        {
+          "age": 89.0,
+          "baselineSurvival": 0.276322,
+          "scenarioSurvival": 0.569635,
+          "healthQuality": 0.967,
+          "effectiveDensity": 1.076114
+        },
+        {
+          "age": 90.0,
+          "baselineSurvival": 0.246081,
+          "scenarioSurvival": 0.541627,
+          "healthQuality": 0.956,
+          "effectiveDensity": 1.011565
+        },
+        {
+          "age": 91.0,
+          "baselineSurvival": 0.216907,
+          "scenarioSurvival": 0.512715,
+          "healthQuality": 0.945,
+          "effectiveDensity": 0.94655
+        },
+        {
+          "age": 92.0,
+          "baselineSurvival": 0.189064,
+          "scenarioSurvival": 0.483008,
+          "healthQuality": 0.934,
+          "effectiveDensity": 0.881326
+        },
+        {
+          "age": 93.0,
+          "baselineSurvival": 0.162798,
+          "scenarioSurvival": 0.452636,
+          "healthQuality": 0.923,
+          "effectiveDensity": 0.816181
+        },
+        {
+          "age": 94.0,
+          "baselineSurvival": 0.138334,
+          "scenarioSurvival": 0.421756,
+          "healthQuality": 0.912,
+          "effectiveDensity": 0.751435
+        },
+        {
+          "age": 95.0,
+          "baselineSurvival": 0.11586,
+          "scenarioSurvival": 0.390545,
+          "healthQuality": 0.901,
+          "effectiveDensity": 0.687434
+        },
+        {
+          "age": 96.0,
+          "baselineSurvival": 0.095522,
+          "scenarioSurvival": 0.359203,
+          "healthQuality": 0.89,
+          "effectiveDensity": 0.624548
+        },
+        {
+          "age": 97.0,
+          "baselineSurvival": 0.077418,
+          "scenarioSurvival": 0.327952,
+          "healthQuality": 0.879,
+          "effectiveDensity": 0.563164
+        },
+        {
+          "age": 98.0,
+          "baselineSurvival": 0.061586,
+          "scenarioSurvival": 0.29703,
+          "healthQuality": 0.868,
+          "effectiveDensity": 0.503681
+        },
+        {
+          "age": 99.0,
+          "baselineSurvival": 0.048007,
+          "scenarioSurvival": 0.266687,
+          "healthQuality": 0.857,
+          "effectiveDensity": 0.446498
+        },
+        {
+          "age": 100.0,
+          "baselineSurvival": 0.036604,
+          "scenarioSurvival": 0.237183,
+          "healthQuality": 0.846,
+          "effectiveDensity": 0.392004
+        },
+        {
+          "age": 101.0,
+          "baselineSurvival": 0.027247,
+          "scenarioSurvival": 0.208777,
+          "healthQuality": 0.835,
+          "effectiveDensity": 0.340569
+        },
+        {
+          "age": 102.0,
+          "baselineSurvival": 0.019757,
+          "scenarioSurvival": 0.18172,
+          "healthQuality": 0.824,
+          "effectiveDensity": 0.292527
+        },
+        {
+          "age": 103.0,
+          "baselineSurvival": 0.013923,
+          "scenarioSurvival": 0.156248,
+          "healthQuality": 0.813,
+          "effectiveDensity": 0.248166
+        },
+        {
+          "age": 104.0,
+          "baselineSurvival": 0.009512,
+          "scenarioSurvival": 0.132572,
+          "healthQuality": 0.802,
+          "effectiveDensity": 0.207712
+        },
+        {
+          "age": 105.0,
+          "baselineSurvival": 0.006282,
+          "scenarioSurvival": 0.110868,
+          "healthQuality": 0.791,
+          "effectiveDensity": 0.171324
+        },
+        {
+          "age": 106.0,
+          "baselineSurvival": 0.003999,
+          "scenarioSurvival": 0.091269,
+          "healthQuality": 0.78,
+          "effectiveDensity": 0.139076
+        },
+        {
+          "age": 107.0,
+          "baselineSurvival": 0.002446,
+          "scenarioSurvival": 0.073859,
+          "healthQuality": 0.769,
+          "effectiveDensity": 0.110959
+        },
+        {
+          "age": 108.0,
+          "baselineSurvival": 0.001432,
+          "scenarioSurvival": 0.058666,
+          "healthQuality": 0.758,
+          "effectiveDensity": 0.086874
+        },
+        {
+          "age": 109.0,
+          "baselineSurvival": 0.0008,
+          "scenarioSurvival": 0.045663,
+          "healthQuality": 0.747,
+          "effectiveDensity": 0.066638
+        },
+        {
+          "age": 110.0,
+          "baselineSurvival": 0.000424,
+          "scenarioSurvival": 0.034767,
+          "healthQuality": 0.736,
+          "effectiveDensity": 0.049989
+        },
+        {
+          "age": 111.0,
+          "baselineSurvival": 0.000213,
+          "scenarioSurvival": 0.025842,
+          "healthQuality": 0.725,
+          "effectiveDensity": 0.036602
+        },
+        {
+          "age": 112.0,
+          "baselineSurvival": 0.0001,
+          "scenarioSurvival": 0.018714,
+          "healthQuality": 0.714,
+          "effectiveDensity": 0.026103
+        },
+        {
+          "age": 113.0,
+          "baselineSurvival": 4.4e-05,
+          "scenarioSurvival": 0.013172,
+          "healthQuality": 0.703,
+          "effectiveDensity": 0.01809
+        },
+        {
+          "age": 114.0,
+          "baselineSurvival": 1.8e-05,
+          "scenarioSurvival": 0.008989,
+          "healthQuality": 0.692,
+          "effectiveDensity": 0.012152
+        },
+        {
+          "age": 115.0,
+          "baselineSurvival": 7e-06,
+          "scenarioSurvival": 0.005931,
+          "healthQuality": 0.681,
+          "effectiveDensity": 0.007891
+        },
+        {
+          "age": 116.0,
+          "baselineSurvival": 2e-06,
+          "scenarioSurvival": 0.003773,
+          "healthQuality": 0.67,
+          "effectiveDensity": 0.004939
+        },
+        {
+          "age": 117.0,
+          "baselineSurvival": 1e-06,
+          "scenarioSurvival": 0.002307,
+          "healthQuality": 0.659,
+          "effectiveDensity": 0.002969
+        },
+        {
+          "age": 118.0,
+          "baselineSurvival": 0.0,
+          "scenarioSurvival": 0.00135,
+          "healthQuality": 0.648,
+          "effectiveDensity": 0.001709
+        },
+        {
+          "age": 119.0,
+          "baselineSurvival": 0.0,
+          "scenarioSurvival": 0.000754,
+          "healthQuality": 0.637,
+          "effectiveDensity": 0.000938
+        },
+        {
+          "age": 120.0,
+          "baselineSurvival": 0.0,
+          "scenarioSurvival": 0.0004,
+          "healthQuality": 0.626,
+          "effectiveDensity": 0.000489
+        }
+      ]
+    }
+  ],
+  "sanityChecks": {
+    "uniqueScenarioIds": true,
+    "monotonicScenarioSurvival": true,
+    "probabilitiesWithinUnitInterval": true,
+    "deathDateSuppressed": true,
+    "individualPredictionSuppressed": true
+  }
+}

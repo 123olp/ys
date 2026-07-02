@@ -1,0 +1,99 @@
+{
+  "schemaVersion": "human-infra.life-path-toy-scenarios.v1",
+  "description": "Synthetic cohort scenarios for Human Infra life-path toy modeling. This file is not medical evidence and must not be used for individual prediction.",
+  "population": {
+    "kind": "synthetic cohort",
+    "startAge": 40,
+    "endAge": 120,
+    "stepYears": 1,
+    "healthQualityThreshold": 0.7
+  },
+  "baselineHazard": {
+    "baseHazard": 0.0018,
+    "gompertzSlope": 0.085,
+    "referenceAge": 40
+  },
+  "healthQuality": {
+    "declineStartAge": 62,
+    "declineRatePerYear": 0.011,
+    "minimumQuality": 0.28
+  },
+  "scenarios": [
+    {
+      "id": "baseline",
+      "label": "基线",
+      "description": "不假设额外突破，只保留普通健康系统和已存在工具的合成对照场景。",
+      "evidenceGrade": "synthetic-toy",
+      "controlValues": {
+        "ai": 0.2,
+        "biomedical": 0.2,
+        "interfaceLevel": 0.05,
+        "waiting": 0.05,
+        "governance": 0.45
+      },
+      "hazardMultiplier": 1.0,
+      "healthQualityShiftYears": 0,
+      "capabilityMultiplier": 1.0,
+      "subjectiveTimeExpansion": 0.0,
+      "levProgressRate": 0.25,
+      "riskTailPenalty": 0.02
+    },
+    {
+      "id": "assisted",
+      "label": "AI 辅助",
+      "description": "AI 工具、数据化健康管理和较弱医学进步共同降低任务摩擦与部分风险。",
+      "evidenceGrade": "synthetic-toy",
+      "controlValues": {
+        "ai": 0.55,
+        "biomedical": 0.35,
+        "interfaceLevel": 0.16,
+        "waiting": 0.08,
+        "governance": 0.52
+      },
+      "hazardMultiplier": 0.82,
+      "healthQualityShiftYears": 4,
+      "capabilityMultiplier": 1.12,
+      "subjectiveTimeExpansion": 0.08,
+      "levProgressRate": 0.45,
+      "riskTailPenalty": 0.04
+    },
+    {
+      "id": "convergence",
+      "label": "指数技术汇聚",
+      "description": "AI 生物设计、健康寿命转化、监测、恢复和治理形成组合效应。",
+      "evidenceGrade": "synthetic-toy",
+      "controlValues": {
+        "ai": 0.78,
+        "biomedical": 0.7,
+        "interfaceLevel": 0.42,
+        "waiting": 0.2,
+        "governance": 0.58
+      },
+      "hazardMultiplier": 0.62,
+      "healthQualityShiftYears": 13,
+      "capabilityMultiplier": 1.28,
+      "subjectiveTimeExpansion": 0.18,
+      "levProgressRate": 0.78,
+      "riskTailPenalty": 0.08
+    },
+    {
+      "id": "escape",
+      "label": "LEV 临界探索",
+      "description": "长寿逃逸速度的合成压力测试：当年度寿命增益接近或超过时间流逝，输出开放边界而非死亡日期。",
+      "evidenceGrade": "synthetic-toy",
+      "controlValues": {
+        "ai": 0.86,
+        "biomedical": 0.92,
+        "interfaceLevel": 0.5,
+        "waiting": 0.38,
+        "governance": 0.64
+      },
+      "hazardMultiplier": 0.44,
+      "healthQualityShiftYears": 24,
+      "capabilityMultiplier": 1.48,
+      "subjectiveTimeExpansion": 0.32,
+      "levProgressRate": 1.05,
+      "riskTailPenalty": 0.12
+    }
+  ]
+}

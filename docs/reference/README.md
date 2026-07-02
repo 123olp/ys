@@ -58,6 +58,7 @@ Current documents:
 - `ethics-and-safety-boundaries.md`: also covers software, device, and trust continuity boundaries for personal computing device lifecycle repair, home network/router/IoT security, software supply-chain dependency provenance, software update/vulnerability patching, open-source maintainer sustainability, PKI/certificate cryptographic trust, cloud service exit interoperability, and API/platform runtime dependencies.
 - `ethics-and-safety-boundaries.md`: also covers personal operations and task-coordination continuity boundaries for calendar/scheduling/appointments, notifications/alerts, reminders/alarms/routines, meetings/video conferencing, document capture/OCR/PDF record workflows, search/index/discovery/retrieval, personal automation/integration workflows, and collaborative document permissions/versions.
 - `glossary.md`: canonical terms.
+- `human-infra-maturity-roadmap.md`: maturity contract for value clarity, serious research framework, and runnable quantitative model stages.
 - `life-path-prediction-model-contract.md`: quantitative contract for modeling interventions, state transitions, hazards, survival, effective time, subjective time, relative time, and option value.
 - `life-path-prediction-model-governance.md`: governance gates for evidence admission, uncertainty, validation, reporting, and prohibited uses of life-path predictions.
 - `project-boundary-v0.1.md`: first public boundary for what Human Infra is, what it is not, and what v0.1 work includes.

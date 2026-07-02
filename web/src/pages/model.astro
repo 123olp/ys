@@ -1,6 +1,10 @@
 ---
 import ResearchLayout from "../layouts/ResearchLayout.astro";
 import SectionHeader from "../components/SectionHeader.astro";
+import lifePathToyModel from "../data/life-path-toy-model.json";
+
+const defaultScenario = lifePathToyModel.scenarios.find((scenario) => scenario.id === "convergence") ?? lifePathToyModel.scenarios[0];
+const defaultControls = defaultScenario.controlValues;
 ---
 <ResearchLayout title="预测模型" description="Human Infra life-path prediction model visualization" section="Life-Path Model">
   <div class="page" data-model-lab>
@@ -40,31 +44,30 @@ import SectionHeader from "../components/SectionHeader.astro";
           <label>
             模型场景
             <select name="scenario" data-model-input>
-              <option value="baseline">基线</option>
-              <option value="assisted">AI 辅助</option>
-              <option value="convergence" selected>指数技术汇聚</option>
-              <option value="escape">LEV 临界探索</option>
+              {lifePathToyModel.scenarios.map((scenario) => (
+                <option value={scenario.id} selected={scenario.id === defaultScenario.id}>{scenario.label}</option>
+              ))}
             </select>
           </label>
           <label>
-            AI 工具强度 <output data-for="ai">0.78</output>
-            <input type="range" min="0" max="1" step="0.01" name="ai" value="0.78" data-model-input />
+            AI 工具强度 <output data-for="ai">{defaultControls.ai.toFixed(2)}</output>
+            <input type="range" min="0" max="1" step="0.01" name="ai" value={defaultControls.ai} data-model-input />
           </label>
           <label>
-            医学信息化 <output data-for="biomedical">0.70</output>
-            <input type="range" min="0" max="1" step="0.01" name="biomedical" value="0.70" data-model-input />
+            医学信息化 <output data-for="biomedical">{defaultControls.biomedical.toFixed(2)}</output>
+            <input type="range" min="0" max="1" step="0.01" name="biomedical" value={defaultControls.biomedical} data-model-input />
           </label>
           <label>
-            人机接口水平 <output data-for="interfaceLevel">0.42</output>
-            <input type="range" min="0" max="1" step="0.01" name="interfaceLevel" value="0.42" data-model-input />
+            人机接口水平 <output data-for="interfaceLevel">{defaultControls.interfaceLevel.toFixed(2)}</output>
+            <input type="range" min="0" max="1" step="0.01" name="interfaceLevel" value={defaultControls.interfaceLevel} data-model-input />
           </label>
           <label>
-            等待压缩能力 <output data-for="waiting">0.20</output>
-            <input type="range" min="0" max="1" step="0.01" name="waiting" value="0.20" data-model-input />
+            等待压缩能力 <output data-for="waiting">{defaultControls.waiting.toFixed(2)}</output>
+            <input type="range" min="0" max="1" step="0.01" name="waiting" value={defaultControls.waiting} data-model-input />
           </label>
           <label>
-            治理能力 <output data-for="governance">0.58</output>
-            <input type="range" min="0" max="1" step="0.01" name="governance" value="0.58" data-model-input />
+            治理能力 <output data-for="governance">{defaultControls.governance.toFixed(2)}</output>
+            <input type="range" min="0" max="1" step="0.01" name="governance" value={defaultControls.governance} data-model-input />
           </label>
         </aside>
 
@@ -137,6 +140,7 @@ import SectionHeader from "../components/SectionHeader.astro";
       </div>
     </section>
   </div>
+  <script id="life-path-toy-model-data" type="application/json" set:html={JSON.stringify(lifePathToyModel)}></script>
   <script>
     import "../scripts/model-charts.js";
   </script>

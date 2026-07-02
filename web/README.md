@@ -167,10 +167,11 @@ web/
 - `src/pages/research-standards.astro`：科研标准页，记录论文阅读、预测模型报告、因果推断、可视化和工具链标准。
 - `src/scripts/evidence-graph.js`：D3 证据链图脚本，从页面嵌入的 Evidence Matrix JSON 生成主链、反哺路径、风险通道和因果门禁 SVG。
 - `src/scripts/lev-effects-graph.js`：D3 LEV 图表脚本，消费 `src/data/lev-model.json` 生成概率门、路线矩阵和多阶飞轮图。
-- `src/scripts/model-charts.js`：D3 图表和模型计算脚本，只表达演示模型，不输出个体死亡日期。
+- `src/scripts/model-charts.js`：D3 图表和模型计算脚本，优先消费 `src/data/life-path-toy-model.json` 的生成场景，滑块改变后退回前端示意计算。
 - `public/static/browse/0.3.4/`、`public/use.typekit.net/`：从 arXiv HTML papers 页面下载并复用的 CSS、JS、图标、webmanifest 和归一化 Typekit 字体资源。
 - `src/data/book-signals.json`：书籍观点到 Human Infra 变量的结构化映射。
 - `src/data/lev-model.json`：由 `npm run export:lev-model` 从 `domains/c1-boundary-rewriting/longevity-evidence/data/manual/*.tsv` 导出的 LEV 路线与多阶效应 Web 数据。
+- `src/data/life-path-toy-model.json`：由 `npm run export:life-path-toy` 从 `domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_toy_model_scenarios.json` 导出的生命路径 toy model 数据，供 `/model/` 优先消费。
 - `src/data/effective-immortality-evidence.json`：有效永生飞轮论文页的结构化数据源，承载 Research Question Brief、Methodology Blueprint、Research Execution Roadmap、Search Strategy Seeds、Systematic Search Protocol、Literature Screening Rubric、Literature Gap Map、Search Execution Register、Candidate Source Verification Register、Candidate Source Extraction Register、Claim Register、Claim Evidence Map、AI Research Failure Mode Audit、AI Task Evidence Register、Reference Registry、变量字典、模型契约、推导图、链路边、技术族和证据等级。
 - `src/data/metric-redshift-recursive-waiting.json`：度规红移递归等待假设论文页的结构化研究数据源，承载 Problem Anchor、Paper Plan、贡献注册表、Claim Register、Claim-Evidence Matrix、Claim Maturity Register、Falsifier Register、Source Cards、Source Card Ledger、Scenario Card Template、Scenario Evaluation Registry、Toy NCG Evaluation Protocol、Toy NCG Evaluation Registry、NCG Formula Decomposition、Pre-Submission Review Register、变量契约、模型假设、命题注册表、生命周期状态机、图表计划、引用语境预审、研究协议、失败条件和页面审查契约。
 - `src/data/proper-time-differential-waiting-hypothesis.json`：度规红移固有时差分路径专项论文页的结构化研究数据源，承载概念表、核心假设、贡献注册表、生命周期状态机、NCG 变量、可达性阶梯、反证条件、Source Cards、Claim-Evidence Matrix、Scenario Cards、Scenario Evaluation Registry、Qualitative NCG Scale、Scenario Variable Matrix、Toy NCG Evaluation Protocol、NCG Formula Decomposition、数据驱动 SVG 场景比较图、图表计划、引用边界、Citation Context Review Packet、Reference Registry 和页面审计契约。

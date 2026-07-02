@@ -171,6 +171,7 @@ docs/
 │   ├── evidence-policy.md
 │   ├── ethics-and-safety-boundaries.md
 │   ├── glossary.md
+│   ├── human-infra-maturity-roadmap.md
 │   ├── life-path-prediction-model-contract.md
 │   ├── life-path-prediction-model-governance.md
 │   ├── project-boundary-v0.1.md

@@ -178,6 +178,7 @@ docs/
 │   ├── evidence-policy.md
 │   ├── ethics-and-safety-boundaries.md
 │   ├── glossary.md
+│   ├── human-infra-maturity-roadmap.md
 │   ├── life-path-prediction-model-contract.md
 │   ├── life-path-prediction-model-governance.md
 │   ├── project-boundary-v0.1.md
@@ -215,9 +216,10 @@ docs/
 3. Read `reference/evidence-policy.md`.
 4. Read `reference/project-boundary-v0.1.md`.
 5. Read `explanations/life-path-prediction-model.md`.
-6. Read `reference/life-path-prediction-model-contract.md`.
-7. Read `reference/life-path-prediction-model-governance.md`.
-8. Read `reference/source-card-system.md`.
+6. Read `reference/human-infra-maturity-roadmap.md`.
+7. Read `reference/life-path-prediction-model-contract.md`.
+8. Read `reference/life-path-prediction-model-governance.md`.
+9. Read `reference/source-card-system.md`.
 9. Read `explanations/noah-ark-genealogy.md`.
 10. Read `explanations/value-lenses.md`.
 11. Read `explanations/effective-immortality-acceleration-flywheel.md`.
