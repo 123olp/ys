@@ -19,7 +19,7 @@ Human Infra 是一个研究“能够继续做事的主体”如何被维护、�
 
 ### 主张脊柱
 
-本页对齐核心主张 `HI-CL1`、`HI-CL2`、`HI-CL3` 和 `HI-CL6`，完整矩阵见 [Human Infra Core Claim-Evidence Matrix](docs/reference/human-infra-core-claim-evidence-matrix.md)，页面一致性门禁见 [Page Claim Consistency Register](docs/reference/human-infra-page-claim-consistency.json)，论文强主张门禁见 [Paper Claim Register](docs/reference/human-infra-paper-claim-register.json)，优先域反证门禁见 [Domain Falsifier Coverage Register](docs/reference/human-infra-domain-falsifier-coverage.json)。
+本页对齐核心主张 `HI-CL1`、`HI-CL2`、`HI-CL3` 和 `HI-CL6`，完整矩阵见 [Human Infra Core Claim-Evidence Matrix](docs/reference/human-infra-core-claim-evidence-matrix.md)，页面一致性门禁见 [Page Claim Consistency Register](docs/reference/human-infra-page-claim-consistency.json)，论文强主张门禁见 [Paper Claim Register](docs/reference/human-infra-paper-claim-register.json)，优先域反证门禁见 [Domain Falsifier Coverage Register](docs/reference/human-infra-domain-falsifier-coverage.json)，反证 Source Card 锚点回填见 [Falsifier Source Card Backfill](docs/reference/human-infra-falsifier-source-card-backfill.json)。
 
 边界：Human Infra 不是医疗建议，不输出个体死亡日期，不证明具体技术已经实现有效永生；当前只把主体持续性、生命路径和未来选择权组织成可审查的研究框架。
 
@@ -148,6 +148,7 @@ flowchart LR
 | 查看证据规则 | [docs/reference/evidence-policy.md](docs/reference/evidence-policy.md) | 如何区分原始资料、证据和稳定结论 |
 | 查看核心主张证据矩阵 | [docs/reference/human-infra-core-claim-evidence-matrix.md](docs/reference/human-infra-core-claim-evidence-matrix.md) | Human Infra 第一性主张、外部方法锚点、证据角色和禁止外推边界 |
 | 查看论文页强主张门禁 | [docs/reference/human-infra-paper-claim-register.json](docs/reference/human-infra-paper-claim-register.json) | arXiv-style 论文页的强主张、核心 Claim ID、反证条件、降级动作和禁止用途边界 |
+| 查看反证来源锚点回填 | [docs/reference/human-infra-falsifier-source-card-backfill.json](docs/reference/human-infra-falsifier-source-card-backfill.json) | 当前论文强主张和 C1/C2 优先域反证对应的 Source Card 锚点、证据角色、可用范围和外推边界 |
 | 查看成熟度路线 | [成熟度路线](docs/reference/human-infra-maturity-roadmap.md) / [缺口账本](docs/reference/human-infra-maturity-gap-register.json) | 从价值讲清、研究框架到可运行定量模型的 100% 状态、当前差距和机器可审计 gate |
 | 查看定量预测模型 | [模型说明](docs/explanations/life-path-prediction-model.md) / [模型契约](docs/reference/life-path-prediction-model-contract.md) / [模型治理](docs/reference/life-path-prediction-model-governance.md) / [科研工具包](docs/reference/research-model-visualization-toolkit.md) | 如何量化判断技术、因素和干预对寿命、有效时间、主观时间、相对时间和未来选择权的影响 |
 | 整理论文、书籍、工具和案例 | [资料卡片制度](docs/reference/source-card-system.md) / [资料卡片模板](docs/templates/research-card.md) | 把外部资料转成可复用语料、模型变量和 Web 展示材料 |

@@ -4,6 +4,7 @@ All notable repository structure changes are recorded here.
 
 ## 2026-07-02
 
+- Added a machine-readable falsifier Source Card anchor backfill register and audit gate, covering all current arXiv-style paper strong claims and C1/C2 priority-domain falsifier rows with source anchors, evidence roles, supported-use boundaries, transfer boundaries and next Source Card actions.
 - Expanded the domain falsifier coverage gate from 8 to 20 priority C2 source-maintenance domains, adding second-wave falsifier scaffolding for proteostasis, senescence, ECM/glycation, stem-cell reserve, microbiome, cardiovascular, musculoskeletal, nutrition/metabolic, renal/hepatic, respiratory, blood oxygen/hemostasis and endocrine regulation domains.
 - Added a machine-readable arXiv-style paper claim register and audit gate, requiring every PaperReaderLayout page to register paper-specific strong claims, core Claim IDs, falsifiers, downgrade actions, source data paths and prohibited-use boundaries.
 - Added a machine-readable C1 and priority C2 domain falsifier coverage register and audit gate, requiring strong claims, model positions, variable interfaces, falsifier rows, downgrade actions and prohibited-use boundaries before priority domain claims can be treated as research-framework covered.

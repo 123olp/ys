@@ -1,0 +1,741 @@
+{
+  "schemaVersion": "human-infra.falsifier-source-card-backfill.v1",
+  "registerId": "human-infra-falsifier-source-card-backfill-2026-07-02",
+  "status": "active-source-anchor-backfill-gate",
+  "purpose": "Backfill first-pass Source Card anchors for current paper strong-claim falsifiers and C1/C2 priority-domain falsifier rows, so every current falsifier family has a traceable evidence role, allowed use, transfer boundary and next review action.",
+  "domainFalsifierRegister": "docs/reference/human-infra-domain-falsifier-coverage.json",
+  "paperClaimRegister": "docs/reference/human-infra-paper-claim-register.json",
+  "sourceCardSystem": "docs/reference/source-card-system.md",
+  "maturityGapRegister": "docs/reference/human-infra-maturity-gap-register.json",
+  "scope": {
+    "coverageLevel": "source-anchor-backfilled-v0.1",
+    "coversAllCurrentDomainFalsifierEntries": true,
+    "coversAllCurrentPaperStrongClaims": true,
+    "currentLimitations": [
+      "This is source-anchor backfill, not full field-level Source Card extraction.",
+      "This register binds evidence roles and transfer boundaries; it does not validate every scientific claim.",
+      "One source anchor may cover a family of falsifiers, but later full Source Cards must split exact claim, variable, endpoint, population and uncertainty fields.",
+      "External URLs are provenance anchors; local audits check structure and coverage, not live web availability."
+    ]
+  },
+  "sourceAnchors": [
+    {
+      "sourceId": "SA-HALLMARKS-AGING-2023",
+      "sourceType": "review-paper",
+      "title": "Hallmarks of aging: An expanding universe",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36599349/",
+      "evidenceRole": "mechanism scaffold for aging-domain variables",
+      "supports": [
+        "aging hallmark families",
+        "C2 biological source-maintenance domain grouping",
+        "mechanism-level falsifier vocabulary"
+      ],
+      "transferBoundary": "Supports mechanism taxonomy only; it does not prove any individual intervention extends lifespan or healthspan.",
+      "localUse": "Map molecular, cellular and systemic aging domains to variable families and downgrade conditions."
+    },
+    {
+      "sourceId": "SA-HALLMARKS-AGING-2013",
+      "sourceType": "review-paper",
+      "title": "The Hallmarks of Aging",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3836174/",
+      "evidenceRole": "baseline aging-mechanism taxonomy",
+      "supports": [
+        "genomic instability",
+        "telomere attrition",
+        "proteostasis",
+        "mitochondrial dysfunction",
+        "cellular senescence",
+        "stem cell exhaustion"
+      ],
+      "transferBoundary": "Historical taxonomy support only; later evidence and domain-specific Source Cards are required before intervention claims.",
+      "localUse": "Provide baseline source-anchor continuity for core aging mechanism domains."
+    },
+    {
+      "sourceId": "SA-GRIMAGE-2019",
+      "sourceType": "biomarker-paper",
+      "title": "DNA methylation GrimAge strongly predicts lifespan and healthspan",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6366976/",
+      "evidenceRole": "biological-age observation and mortality-risk association",
+      "supports": [
+        "biological-age clock observation",
+        "mortality-risk estimator boundary",
+        "biomarker-versus-endpoint distinction"
+      ],
+      "transferBoundary": "Supports observational biomarker and risk-estimator framing; it does not prove that changing the biomarker changes mortality.",
+      "localUse": "Anchor biological-age clock falsifiers and the rule that biomarker improvement is not sufficient for longevity claims."
+    },
+    {
+      "sourceId": "SA-YAMANAKA-IPS-2006",
+      "sourceType": "primary-paper",
+      "title": "Induction of pluripotent stem cells from mouse embryonic and adult fibroblast cultures by defined factors",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/16904174/",
+      "evidenceRole": "cell-identity reprogramming mechanism",
+      "supports": [
+        "cellular identity reversibility",
+        "OSKM reprogramming origin",
+        "identity-loss risk boundary"
+      ],
+      "transferBoundary": "Supports induction of pluripotency in cells; it does not support whole-body rejuvenation or clinical anti-aging use.",
+      "localUse": "Anchor cellular-reprogramming domain claims and the need to distinguish age reset from identity loss."
+    },
+    {
+      "sourceId": "SA-PARTIAL-REPROGRAMMING-2016",
+      "sourceType": "preclinical-paper",
+      "title": "In Vivo Amelioration of Age-Associated Hallmarks by Partial Reprogramming",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5679279/",
+      "evidenceRole": "preclinical partial-reprogramming mechanism and safety-boundary signal",
+      "supports": [
+        "partial reprogramming hypothesis",
+        "preclinical rejuvenation markers",
+        "dose-duration-safety boundary"
+      ],
+      "transferBoundary": "Supports animal and preclinical mechanism discussion; it does not prove human longevity benefit.",
+      "localUse": "Anchor reprogramming falsifiers requiring identity, cancer and functional safety gates."
+    },
+    {
+      "sourceId": "SA-HALLMARKS-CANCER-2022",
+      "sourceType": "review-paper",
+      "title": "Hallmarks of Cancer: New Dimensions",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35022204/",
+      "evidenceRole": "cancer mechanism taxonomy and tradeoff boundary",
+      "supports": [
+        "cancer capability framework",
+        "screening-versus-control distinction",
+        "tumor-risk tradeoff language"
+      ],
+      "transferBoundary": "Supports cancer-mechanism taxonomy only; it does not prove any screening, prevention or treatment route produces net survival benefit.",
+      "localUse": "Anchor cancer-control and reprogramming safety falsifiers."
+    },
+    {
+      "sourceId": "SA-NCI-SCREENING-BIAS",
+      "sourceType": "official-explainer",
+      "title": "What Cancer Screening Statistics Really Tell Us",
+      "url": "https://www.cancer.gov/about-cancer/screening/research/what-screening-statistics-mean",
+      "evidenceRole": "screening benefit-harm and overdiagnosis boundary",
+      "supports": [
+        "early-detection endpoint boundary",
+        "overdiagnosis and lead-time bias",
+        "screening-harm falsifiers"
+      ],
+      "transferBoundary": "Supports screening interpretation boundaries; it is not a domain-wide endorsement or rejection of screening.",
+      "localUse": "Anchor cancer-screening downgrade rules when earlier detection is mistaken for survival benefit."
+    },
+    {
+      "sourceId": "SA-IMMUNOSENESCENCE-2024",
+      "sourceType": "review-paper",
+      "title": "Immunosenescence: Aging and Immune System Decline",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39771976/",
+      "evidenceRole": "immune-aging mechanism scaffold",
+      "supports": [
+        "immunosenescence",
+        "inflammaging",
+        "thymic and hematopoietic aging",
+        "immune function tradeoffs"
+      ],
+      "transferBoundary": "Supports immune-aging mechanism vocabulary; it does not prove a given immune intervention improves lifespan.",
+      "localUse": "Anchor immune-maintenance and infection-cancer-inflammation tradeoff falsifiers."
+    },
+    {
+      "sourceId": "SA-KAPLAN-MEIER-1958",
+      "sourceType": "method-paper",
+      "title": "Nonparametric Estimation from Incomplete Observations",
+      "url": "https://web.stanford.edu/~lutian/coursepdf/KMpaper.pdf",
+      "evidenceRole": "survival-function estimation method anchor",
+      "supports": [
+        "survival curve S(t)",
+        "censoring-aware endpoint reasoning",
+        "aggregate survival visualization boundary"
+      ],
+      "transferBoundary": "Supports survival analysis method language; it does not validate any Human Infra scenario parameters.",
+      "localUse": "Anchor survival-curve and aggregate-only visualization claims."
+    },
+    {
+      "sourceId": "SA-COX-1972",
+      "sourceType": "method-paper",
+      "title": "Regression Models and Life-Tables",
+      "url": "https://www.jstor.org/stable/2985181",
+      "evidenceRole": "hazard-model method anchor",
+      "supports": [
+        "hazard function language",
+        "risk function lambda(t)",
+        "covariate-to-risk modeling boundary"
+      ],
+      "transferBoundary": "Supports hazard-model vocabulary; it does not establish causal intervention effects by itself.",
+      "localUse": "Anchor risk-function and hazard-position model claims."
+    },
+    {
+      "sourceId": "SA-TARGET-TRIAL-2022",
+      "sourceType": "method-paper",
+      "title": "A Framework for Causal Inference From Observational Data",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36508210/",
+      "evidenceRole": "causal-inference and intervention-evaluation method anchor",
+      "supports": [
+        "target trial emulation",
+        "intervention-versus-association distinction",
+        "eligibility, time zero, comparator and outcome fields"
+      ],
+      "transferBoundary": "Supports design discipline for observational causal questions; it does not remove data limitations or confounding risk.",
+      "localUse": "Anchor intervention-route falsifiers and the requirement to distinguish correlation from actionable effect."
+    },
+    {
+      "sourceId": "SA-TRIPOD-AI-2024",
+      "sourceType": "reporting-guideline",
+      "title": "TRIPOD+AI statement: updated guidance for reporting clinical prediction models",
+      "url": "https://www.bmj.com/content/385/bmj-2023-078378",
+      "evidenceRole": "prediction-model reporting and validation boundary",
+      "supports": [
+        "prediction reporting",
+        "model-development boundary",
+        "validation and update transparency"
+      ],
+      "transferBoundary": "Supports reporting requirements; it does not certify the current toy model as clinically valid.",
+      "localUse": "Anchor model-card, no-individual-prediction and reporting-boundary falsifiers."
+    },
+    {
+      "sourceId": "SA-PERSONAL-INFORMATICS-2010",
+      "sourceType": "human-computer-interaction-paper",
+      "title": "A Stage-Based Model of Personal Informatics Systems",
+      "url": "https://dl.acm.org/doi/10.1145/1753326.1753409",
+      "evidenceRole": "observation-to-action workflow model",
+      "supports": [
+        "self-tracking workflow",
+        "preparation, collection, integration, reflection and action stages",
+        "barrier cascade language"
+      ],
+      "transferBoundary": "Supports personal-data workflow design; it does not prove health, productivity or longevity outcomes.",
+      "localUse": "Anchor observation, feedback and action-loop falsifiers."
+    },
+    {
+      "sourceId": "SA-DYNAMIC-DIGITAL-TWIN-2022",
+      "sourceType": "digital-health-review",
+      "title": "Dynamic Digital Twin: Diagnosis, Treatment, Prediction, and Prevention of Disease During the Life Course",
+      "url": "https://www.jmir.org/2022/9/e35675",
+      "evidenceRole": "subject-state modeling and simulation architecture anchor",
+      "supports": [
+        "digital twin as multimodal modeling approach",
+        "diagnosis, prediction, prevention and treatment framing",
+        "implementation barriers"
+      ],
+      "transferBoundary": "Supports modeling architecture vocabulary; it does not prove a complete human digital twin exists or is clinically deployable.",
+      "localUse": "Anchor state-model, observation-process and simulation-boundary claims."
+    },
+    {
+      "sourceId": "SA-EXTENDED-MIND-1998",
+      "sourceType": "philosophy-paper",
+      "title": "The Extended Mind",
+      "url": "https://onlinelibrary.wiley.com/doi/abs/10.1111/1467-8284.00096",
+      "evidenceRole": "cognitive extension and tool-integration genealogy anchor",
+      "supports": [
+        "external cognitive support",
+        "memory and tool integration language",
+        "mind-body-environment boundary debate"
+      ],
+      "transferBoundary": "Supports conceptual framing; it does not prove a tool improves long-term subject continuity.",
+      "localUse": "Anchor AI, memory-tool and cognitive-offloading claims as bounded conceptual support."
+    },
+    {
+      "sourceId": "SA-BRAIN-PRESERVATION-2024",
+      "sourceType": "review-paper",
+      "title": "Structural brain preservation: a potential bridge to future medical technologies",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11416988/",
+      "evidenceRole": "brain-preservation hypothesis and uncertainty boundary",
+      "supports": [
+        "structural preservation hypothesis",
+        "future medical technology bridge framing",
+        "ethical and legal uncertainty"
+      ],
+      "transferBoundary": "Supports hypothesis mapping only; it does not prove revival, identity continuity or emulation feasibility.",
+      "localUse": "Anchor brain preservation, connectomics and biostasis boundary falsifiers."
+    },
+    {
+      "sourceId": "SA-GPS-RELATIVITY-2003",
+      "sourceType": "physics-review",
+      "title": "Relativity in the Global Positioning System",
+      "url": "https://link.springer.com/article/10.12942/lrr-2003-1",
+      "evidenceRole": "relativistic clock-correction engineering anchor",
+      "supports": [
+        "relativistic time and frequency shifts",
+        "reference-frame discipline",
+        "engineering correction boundary"
+      ],
+      "transferBoundary": "Supports real-world relativity correction; it does not imply strong-redshift waiting rooms are feasible.",
+      "localUse": "Anchor K/reference-observer boundaries in future-waiting papers."
+    },
+    {
+      "sourceId": "SA-NASA-BLACK-HOLES",
+      "sourceType": "official-explainer",
+      "title": "Black Holes - NASA Science",
+      "url": "https://science.nasa.gov/universe/black-holes/",
+      "evidenceRole": "black-hole public-science boundary and hazard anchor",
+      "supports": [
+        "event horizon definition",
+        "black-hole hazard language",
+        "non-wormhole and non-vacuum-cleaner boundary"
+      ],
+      "transferBoundary": "Supports public-science framing and hazard boundary only; it does not support engineering a waiting room.",
+      "localUse": "Anchor non-claim language for black-hole waiting metaphors."
+    },
+    {
+      "sourceId": "SA-NIST-AI-RMF-2023",
+      "sourceType": "risk-management-standard",
+      "title": "Artificial Intelligence Risk Management Framework (AI RMF 1.0)",
+      "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+      "evidenceRole": "AI risk governance anchor",
+      "supports": [
+        "AI risk framing",
+        "govern-map-measure-manage discipline",
+        "trustworthy AI boundary"
+      ],
+      "transferBoundary": "Supports AI governance structure; it does not prove any AI tool improves subject continuity.",
+      "localUse": "Anchor AI-enhancement, tool-risk and governance falsifiers."
+    },
+    {
+      "sourceId": "SA-WHO-CONSTITUTION",
+      "sourceType": "constitutional-definition",
+      "title": "Constitution of the World Health Organization",
+      "url": "https://www.who.int/about/governance/constitution",
+      "evidenceRole": "health-as-functioning-and-wellbeing boundary",
+      "supports": [
+        "health beyond absence of disease",
+        "physical, mental and social wellbeing",
+        "function-centered value language"
+      ],
+      "transferBoundary": "Supports broad health framing; it does not supply intervention evidence.",
+      "localUse": "Anchor value and effective-time boundary against narrow biomarker claims."
+    },
+    {
+      "sourceId": "SA-CAPABILITY-APPROACH",
+      "sourceType": "philosophy-reference",
+      "title": "Capability Approach",
+      "url": "https://plato.stanford.edu/entries/capability-approach/",
+      "evidenceRole": "option-value and real-freedom value anchor",
+      "supports": [
+        "capability and functioning language",
+        "future option value",
+        "resource-versus-real-ability distinction"
+      ],
+      "transferBoundary": "Supports value-theory framing; it does not prove the ethics of any specific longevity route.",
+      "localUse": "Anchor future-choice and possibility-space value claims."
+    }
+  ],
+  "domainCoverage": [
+    {
+      "domainId": "future-waiting",
+      "sourceAnchors": [
+        "SA-GPS-RELATIVITY-2003",
+        "SA-NASA-BLACK-HOLES",
+        "SA-KAPLAN-MEIER-1958"
+      ],
+      "supportedUse": "Treat future waiting as a scenario-screening problem with reference-time, subject-time, exit and continuity gates.",
+      "transferBoundary": "No source proves controlled redshift waiting, black-hole waiting rooms or real engineering feasibility.",
+      "remainingGap": "Needs route-specific metric, worldline, exit, continuity and opportunity-cost Source Cards.",
+      "nextAction": "Create route cards for future waiting mechanisms and classify each as calibration-only, blocked, negative or cannot-evaluate."
+    },
+    {
+      "domainId": "longevity-evidence",
+      "sourceAnchors": [
+        "SA-HALLMARKS-AGING-2023",
+        "SA-TARGET-TRIAL-2022",
+        "SA-TRIPOD-AI-2024",
+        "SA-KAPLAN-MEIER-1958",
+        "SA-COX-1972"
+      ],
+      "supportedUse": "Separate mechanism, association, causal intervention, prediction and endpoint evidence before a route enters modeling.",
+      "transferBoundary": "Does not validate any longevity intervention or individual prediction.",
+      "remainingGap": "Needs route-level Source Cards with comparator, population, endpoint, safety and access fields.",
+      "nextAction": "Promote mainstream and non-mainstream LEV routes into uniform route cards."
+    },
+    {
+      "domainId": "biostasis-cryopreservation",
+      "sourceAnchors": [
+        "SA-BRAIN-PRESERVATION-2024",
+        "SA-EXTENDED-MIND-1998",
+        "SA-CAPABILITY-APPROACH"
+      ],
+      "supportedUse": "Frame preservation as a conditional continuity hypothesis requiring structure, identity and future-repair gates.",
+      "transferBoundary": "Does not prove cryonics revival, continuity or service quality.",
+      "remainingGap": "Needs preservation-method, ischemia, storage, repair and identity Source Cards.",
+      "nextAction": "Separate structural preservation evidence from revival and continuity claims."
+    },
+    {
+      "domainId": "brain-preservation-connectomics-emulation",
+      "sourceAnchors": [
+        "SA-BRAIN-PRESERVATION-2024",
+        "SA-EXTENDED-MIND-1998",
+        "SA-DYNAMIC-DIGITAL-TWIN-2022"
+      ],
+      "supportedUse": "Gate emulation claims through information preservation, readout, interpretation and identity continuity.",
+      "transferBoundary": "Does not prove mind uploading, whole-brain emulation or personal identity continuity.",
+      "remainingGap": "Needs memory-trace, connectome-resolution and copy-versus-continuity Source Cards.",
+      "nextAction": "Build identity-critical information-loss cards before any positive continuity claim."
+    },
+    {
+      "domainId": "disembodied-cns",
+      "sourceAnchors": [
+        "SA-DYNAMIC-DIGITAL-TWIN-2022",
+        "SA-BRAIN-PRESERVATION-2024",
+        "SA-WHO-CONSTITUTION"
+      ],
+      "supportedUse": "Treat CNS substrate separation as a coupled viability, sensory, action, continuity and governance problem.",
+      "transferBoundary": "Does not prove ex vivo brain viability or disembodied personhood.",
+      "remainingGap": "Needs perfusion, interface, embodiment, agency and ethics Source Cards.",
+      "nextAction": "Split viability from agency and person-continuity claims."
+    },
+    {
+      "domainId": "memory-editing",
+      "sourceAnchors": [
+        "SA-EXTENDED-MIND-1998",
+        "SA-NIST-AI-RMF-2023",
+        "SA-CAPABILITY-APPROACH"
+      ],
+      "supportedUse": "Frame memory intervention and memory tooling through continuity, consent, agency and adverse-change gates.",
+      "transferBoundary": "Does not prove any memory edit is safe, reversible or identity-preserving.",
+      "remainingGap": "Needs neuroscience, consent, reversibility and mental-health outcome Source Cards.",
+      "nextAction": "Create harm channels for autonomy loss, false memory, dependence and identity discontinuity."
+    },
+    {
+      "domainId": "cellular-reprogramming",
+      "sourceAnchors": [
+        "SA-YAMANAKA-IPS-2006",
+        "SA-PARTIAL-REPROGRAMMING-2016",
+        "SA-HALLMARKS-CANCER-2022"
+      ],
+      "supportedUse": "Distinguish age-state rewriting from identity loss, pluripotency, tumor risk and clinical translation.",
+      "transferBoundary": "Does not prove human rejuvenation, whole-body safety or lifespan extension.",
+      "remainingGap": "Needs organ-specific, dose-duration, delivery, identity and cancer-risk Source Cards.",
+      "nextAction": "Create reprogramming cards for identity preservation, safety windows and human endpoint status."
+    },
+    {
+      "domainId": "regenerative-medicine",
+      "sourceAnchors": [
+        "SA-HALLMARKS-AGING-2023",
+        "SA-PARTIAL-REPROGRAMMING-2016",
+        "SA-TARGET-TRIAL-2022"
+      ],
+      "supportedUse": "Map regenerative claims to tissue function, integration, durability, safety and endpoint gates.",
+      "transferBoundary": "Mechanism and preclinical regeneration do not equal organism-level subject continuity.",
+      "remainingGap": "Needs tissue-specific endpoint, durability, integration and adverse-event Source Cards.",
+      "nextAction": "Separate tissue repair, organ function, system risk and future-option value."
+    },
+    {
+      "domainId": "cancer-screening-early-detection-continuity",
+      "sourceAnchors": [
+        "SA-HALLMARKS-CANCER-2022",
+        "SA-NCI-SCREENING-BIAS",
+        "SA-TARGET-TRIAL-2022"
+      ],
+      "supportedUse": "Gate early detection through mortality, overdiagnosis, false positives, treatment burden and net benefit.",
+      "transferBoundary": "Earlier detection is not automatically survival gain.",
+      "remainingGap": "Needs modality-specific screening Source Cards with benefit-harm balance.",
+      "nextAction": "Create route cards for screening claims that include overdiagnosis and downstream treatment harms."
+    },
+    {
+      "domainId": "immune-maintenance",
+      "sourceAnchors": [
+        "SA-IMMUNOSENESCENCE-2024",
+        "SA-HALLMARKS-AGING-2023",
+        "SA-TARGET-TRIAL-2022"
+      ],
+      "supportedUse": "Map immune maintenance to infection response, vaccine response, cancer surveillance, inflammation and autoimmunity tradeoffs.",
+      "transferBoundary": "Immune activation or biomarker improvement is not sufficient for net continuity benefit.",
+      "remainingGap": "Needs immune-function endpoints, safety and population-specific Source Cards.",
+      "nextAction": "Separate immune competence, chronic inflammation and autoimmune risk in claim rows."
+    },
+    {
+      "domainId": "neuro-continuity",
+      "sourceAnchors": [
+        "SA-DYNAMIC-DIGITAL-TWIN-2022",
+        "SA-EXTENDED-MIND-1998",
+        "SA-WHO-CONSTITUTION"
+      ],
+      "supportedUse": "Frame neuro-continuity as cognition, memory, function, agency and quality-of-life preservation.",
+      "transferBoundary": "Does not validate any neuroprotective intervention or mind-preservation route.",
+      "remainingGap": "Needs disease-specific neuro endpoints, cognitive-function and adverse-channel Source Cards.",
+      "nextAction": "Create neuro-continuity variable cards for cognition, memory, agency and functional independence."
+    },
+    {
+      "domainId": "mitochondrial-bioenergetics",
+      "sourceAnchors": [
+        "SA-HALLMARKS-AGING-2023",
+        "SA-HALLMARKS-AGING-2013",
+        "SA-WHO-CONSTITUTION"
+      ],
+      "supportedUse": "Treat mitochondrial function as an energy, fatigue, recovery and tissue-risk variable family.",
+      "transferBoundary": "Mitochondrial biomarkers do not automatically establish effective-time or survival gains.",
+      "remainingGap": "Needs tissue-specific function, fatigue and endpoint Source Cards.",
+      "nextAction": "Connect mitochondrial measures to function and recovery rather than marker-only claims."
+    },
+    {
+      "domainId": "genomic-stability-dna-repair",
+      "sourceAnchors": [
+        "SA-HALLMARKS-AGING-2023",
+        "SA-HALLMARKS-AGING-2013",
+        "SA-HALLMARKS-CANCER-2022"
+      ],
+      "supportedUse": "Map DNA damage and repair to aging, mutation, cancer-risk and intervention-safety gates.",
+      "transferBoundary": "Repair-pathway modulation is not automatically beneficial; cancer and off-target risks remain central.",
+      "remainingGap": "Needs repair-pathway, mutation-load, cancer-risk and endpoint Source Cards.",
+      "nextAction": "Build source cards separating damage markers from functional, cancer and survival endpoints."
+    },
+    {
+      "domainId": "biological-age-clocks-biomarker-validation",
+      "sourceAnchors": [
+        "SA-GRIMAGE-2019",
+        "SA-TRIPOD-AI-2024",
+        "SA-TARGET-TRIAL-2022"
+      ],
+      "supportedUse": "Gate biological-age clocks as observation and risk-estimator tools, not intervention proof.",
+      "transferBoundary": "Clock reversal does not prove risk reduction unless tied to validated endpoints and causal designs.",
+      "remainingGap": "Needs clock-specific validation, calibration, population and intervention-response Source Cards.",
+      "nextAction": "Build clock cards that distinguish predictive validity, intervention sensitivity and clinical utility."
+    },
+    {
+      "domainId": "proteostasis-autophagy",
+      "sourceAnchors": [
+        "SA-HALLMARKS-AGING-2023",
+        "SA-HALLMARKS-AGING-2013",
+        "SA-TARGET-TRIAL-2022"
+      ],
+      "supportedUse": "Frame proteostasis and autophagy as quality-control mechanisms requiring function and safety endpoints.",
+      "transferBoundary": "Autophagy marker changes do not prove organism-level benefit.",
+      "remainingGap": "Needs protein-aggregate, autophagy-flux, tissue-function and adverse-channel Source Cards.",
+      "nextAction": "Separate flux, clearance, stress response and functional outcome claims."
+    },
+    {
+      "domainId": "cellular-senescence-clearance",
+      "sourceAnchors": [
+        "SA-HALLMARKS-AGING-2023",
+        "SA-HALLMARKS-AGING-2013",
+        "SA-HALLMARKS-CANCER-2022"
+      ],
+      "supportedUse": "Map senescence clearance to SASP, tissue inflammation, repair, cancer suppression and adverse tradeoffs.",
+      "transferBoundary": "Removing senescent cells is not automatically net beneficial across tissues and contexts.",
+      "remainingGap": "Needs senolytic/senomorphic route cards with tissue, dose, function and safety endpoints.",
+      "nextAction": "Create positive and negative senescence-chain Source Cards."
+    },
+    {
+      "domainId": "extracellular-matrix-glycation",
+      "sourceAnchors": [
+        "SA-HALLMARKS-AGING-2023",
+        "SA-WHO-CONSTITUTION",
+        "SA-TARGET-TRIAL-2022"
+      ],
+      "supportedUse": "Treat ECM/glycation as tissue mechanics, fibrosis, vascular stiffness and mobility/function risk.",
+      "transferBoundary": "Marker reduction or material plausibility does not prove restored tissue function.",
+      "remainingGap": "Needs tissue-mechanics, fibrosis, functional endpoint and intervention Source Cards.",
+      "nextAction": "Connect ECM claims to mobility, cardiovascular and organ-function endpoints."
+    },
+    {
+      "domainId": "stem-cell-reserve-renewal",
+      "sourceAnchors": [
+        "SA-HALLMARKS-AGING-2023",
+        "SA-HALLMARKS-AGING-2013",
+        "SA-HALLMARKS-CANCER-2022"
+      ],
+      "supportedUse": "Frame stem-cell maintenance through renewal, niche, exhaustion, repair and cancer-risk gates.",
+      "transferBoundary": "Increasing proliferation or stemness can raise malignancy or dysplasia risks.",
+      "remainingGap": "Needs niche, lineage, durable repair and cancer-safety Source Cards.",
+      "nextAction": "Build stem-cell cards with repair-versus-cancer tradeoff fields."
+    },
+    {
+      "domainId": "microbiome-ecology",
+      "sourceAnchors": [
+        "SA-HALLMARKS-AGING-2023",
+        "SA-TARGET-TRIAL-2022",
+        "SA-WHO-CONSTITUTION"
+      ],
+      "supportedUse": "Treat dysbiosis and microbiome ecology as system-state variables requiring causal and endpoint discipline.",
+      "transferBoundary": "Association or community shift does not prove causal lifespan or functional benefit.",
+      "remainingGap": "Needs taxa/function, intervention, diet/drug context and endpoint Source Cards.",
+      "nextAction": "Separate association, mechanism, intervention and adverse infection/metabolic channels."
+    },
+    {
+      "domainId": "cardiovascular-resilience",
+      "sourceAnchors": [
+        "SA-COX-1972",
+        "SA-KAPLAN-MEIER-1958",
+        "SA-TARGET-TRIAL-2022",
+        "SA-HALLMARKS-AGING-2023"
+      ],
+      "supportedUse": "Map cardiovascular resilience to hazard, event timing, function, prevention and competing-risk gates.",
+      "transferBoundary": "Risk-factor change is not automatically event reduction without appropriate evidence.",
+      "remainingGap": "Needs risk-factor, event-endpoint, function and safety Source Cards.",
+      "nextAction": "Connect blood pressure, lipids, vascular aging and functional capacity to endpoint evidence."
+    },
+    {
+      "domainId": "musculoskeletal-integrity",
+      "sourceAnchors": [
+        "SA-HALLMARKS-AGING-2023",
+        "SA-WHO-CONSTITUTION",
+        "SA-TARGET-TRIAL-2022"
+      ],
+      "supportedUse": "Frame muscle, bone and joint integrity as action capacity, fall risk, effective time and recovery substrate.",
+      "transferBoundary": "Strength or biomarker improvement is not enough without function, injury and sustainability evidence.",
+      "remainingGap": "Needs function, falls, fracture, mobility and training/intervention Source Cards.",
+      "nextAction": "Build functional endpoint cards for mobility, strength, balance and injury risk."
+    },
+    {
+      "domainId": "nutrition-metabolic-health",
+      "sourceAnchors": [
+        "SA-HALLMARKS-AGING-2023",
+        "SA-TARGET-TRIAL-2022",
+        "SA-WHO-CONSTITUTION"
+      ],
+      "supportedUse": "Treat nutrition and metabolic health through energy balance, disease risk, function, adherence and access gates.",
+      "transferBoundary": "Dietary mechanism or short-term marker changes do not prove lifespan effects or individual diet advice.",
+      "remainingGap": "Needs population, comparator, adherence, endpoint and adverse-channel Source Cards.",
+      "nextAction": "Separate metabolic-marker claims from function, safety and access claims."
+    },
+    {
+      "domainId": "renal-hepatic-clearance",
+      "sourceAnchors": [
+        "SA-HALLMARKS-AGING-2023",
+        "SA-COX-1972",
+        "SA-TARGET-TRIAL-2022"
+      ],
+      "supportedUse": "Map clearance systems to homeostasis, drug safety, toxin burden, organ failure and multi-system risk.",
+      "transferBoundary": "Single lab-value changes do not establish systemic continuity benefit.",
+      "remainingGap": "Needs kidney/liver endpoint, medication-safety and comorbidity Source Cards.",
+      "nextAction": "Build clearance cards separating function, reserve, toxicity and treatment interaction."
+    },
+    {
+      "domainId": "respiratory-oxygenation",
+      "sourceAnchors": [
+        "SA-WHO-CONSTITUTION",
+        "SA-COX-1972",
+        "SA-TARGET-TRIAL-2022"
+      ],
+      "supportedUse": "Frame oxygenation as function, sleep, fatigue, acute decompensation and survival-risk substrate.",
+      "transferBoundary": "Oxygenation markers do not automatically prove effective-time improvement or survival benefit.",
+      "remainingGap": "Needs function, sleep, exacerbation, exposure and endpoint Source Cards.",
+      "nextAction": "Connect respiratory measures to activity, cognition, sleep and acute-risk outcomes."
+    },
+    {
+      "domainId": "blood-oxygen-hemostasis",
+      "sourceAnchors": [
+        "SA-COX-1972",
+        "SA-TARGET-TRIAL-2022",
+        "SA-WHO-CONSTITUTION"
+      ],
+      "supportedUse": "Model blood and hemostasis as oxygen delivery, bleeding, thrombosis, fatigue and acute-event tradeoffs.",
+      "transferBoundary": "Improving one blood marker may worsen opposing bleeding or clotting risk.",
+      "remainingGap": "Needs anemia, thrombosis, bleeding, transfusion and functional endpoint Source Cards.",
+      "nextAction": "Create hemostasis tradeoff cards with competing harm channels."
+    },
+    {
+      "domainId": "endocrine-hormonal-regulation",
+      "sourceAnchors": [
+        "SA-HALLMARKS-AGING-2023",
+        "SA-TARGET-TRIAL-2022",
+        "SA-WHO-CONSTITUTION"
+      ],
+      "supportedUse": "Treat endocrine routes as coupled feedback systems affecting metabolism, stress response, mood, bone, reproduction and cardiovascular risk.",
+      "transferBoundary": "Single hormone-marker optimization is not a net subject-continuity claim.",
+      "remainingGap": "Needs axis-specific deficiency/excess, replacement/suppression, monitoring and adverse-outcome Source Cards.",
+      "nextAction": "Create endocrine axis cards separating context, feedback and adverse tradeoffs."
+    }
+  ],
+  "paperClaimCoverage": [
+    {
+      "paperId": "human-infra-main-paper",
+      "paperClaimIds": [
+        "HIPAPER-CL1",
+        "HIPAPER-CL2"
+      ],
+      "sourceAnchors": [
+        "SA-HALLMARKS-AGING-2023",
+        "SA-KAPLAN-MEIER-1958",
+        "SA-COX-1972",
+        "SA-TRIPOD-AI-2024",
+        "SA-CAPABILITY-APPROACH",
+        "SA-WHO-CONSTITUTION"
+      ],
+      "supportedUse": "Support conversion from future-technology narratives into variables, mechanisms, survival/hazard language, model-reporting boundaries and value framing.",
+      "transferBoundary": "Does not prove any specific technology has changed lifespan, effective time or future option value.",
+      "remainingGap": "Needs page-level source note for each major narrative block.",
+      "nextAction": "Split main paper claims into source-card rows for book narrative, model method and value theory."
+    },
+    {
+      "paperId": "effective-immortality-flywheel-paper",
+      "paperClaimIds": [
+        "HIPAPER-CL3",
+        "HIPAPER-CL4"
+      ],
+      "sourceAnchors": [
+        "SA-CAPABILITY-APPROACH",
+        "SA-EXTENDED-MIND-1998",
+        "SA-PERSONAL-INFORMATICS-2010",
+        "SA-NIST-AI-RMF-2023",
+        "SA-WHO-CONSTITUTION"
+      ],
+      "supportedUse": "Support the flywheel as a conditional chain about time, learning, tool integration, risk governance, function and option value.",
+      "transferBoundary": "Does not prove that longer survival automatically creates capability accumulation or that AI tools produce durable continuity gains.",
+      "remainingGap": "Needs task-level evidence cards for AI, memory tools, social support and resource accumulation.",
+      "nextAction": "Create task-evidence rows for short-term productivity, sustained capability and adverse dependency channels."
+    },
+    {
+      "paperId": "metric-redshift-recursive-waiting-paper",
+      "paperClaimIds": [
+        "HIPAPER-CL5",
+        "HIPAPER-CL6"
+      ],
+      "sourceAnchors": [
+        "SA-GPS-RELATIVITY-2003",
+        "SA-NASA-BLACK-HOLES",
+        "SA-KAPLAN-MEIER-1958",
+        "SA-TRIPOD-AI-2024"
+      ],
+      "supportedUse": "Support K/reference-observer discipline, public black-hole hazard boundaries and screening-before-evaluation reporting discipline.",
+      "transferBoundary": "Does not support artificial black holes, controlled metric engineering, recursive waiting feasibility or human-use protocols.",
+      "remainingGap": "Needs metric card, orbit/worldline card, abort gate and synthetic high-K negative scenario source card.",
+      "nextAction": "Separate physical time-differential anchors from future-waiting NCG screening claims."
+    },
+    {
+      "paperId": "proper-time-differential-waiting-paper",
+      "paperClaimIds": [
+        "HIPAPER-CL7",
+        "HIPAPER-CL8"
+      ],
+      "sourceAnchors": [
+        "SA-GPS-RELATIVITY-2003",
+        "SA-NASA-BLACK-HOLES",
+        "SA-KAPLAN-MEIER-1958",
+        "SA-TRIPOD-AI-2024"
+      ],
+      "supportedUse": "Support terminology and scope control for proper-time differential waiting and the rule that screening precedes evaluation.",
+      "transferBoundary": "Does not prove any scenario is safe, reachable, reversible or continuity-preserving.",
+      "remainingGap": "Needs terminology Source Card and scenario admissibility table.",
+      "nextAction": "Create source-card rows distinguishing physics mechanism, route hypothesis and governance protocol."
+    },
+    {
+      "paperId": "controllable-metric-waiting-room-paper",
+      "paperClaimIds": [
+        "HIPAPER-CL9",
+        "HIPAPER-CL10"
+      ],
+      "sourceAnchors": [
+        "SA-GPS-RELATIVITY-2003",
+        "SA-NASA-BLACK-HOLES",
+        "SA-KAPLAN-MEIER-1958",
+        "SA-TRIPOD-AI-2024",
+        "SA-NIST-AI-RMF-2023"
+      ],
+      "supportedUse": "Support the page as a conditional scenario protocol with toy screening, risk management and prohibited-use boundaries.",
+      "transferBoundary": "Does not validate controllable metric technology, NCG calibration, exit probability or subject-continuity preservation.",
+      "remainingGap": "Needs synthetic scenario Source Cards and formal gate taxonomy for abort, probability and residual-risk costs.",
+      "nextAction": "Add synthetic high-K negative and complete-but-low-confidence toy cases before any numeric interpretation."
+    }
+  ],
+  "indexRequirements": [
+    "README.md",
+    "docs/reference/README.md",
+    "docs/reference/human-infra-maturity-roadmap.md",
+    "tools/README.md"
+  ],
+  "nonClaims": [
+    "This register does not complete full Source Cards for every paper, domain or falsifier.",
+    "This register does not prove any scientific, medical, engineering, AI or physics claim true.",
+    "This register does not permit individual death-date prediction, individual medical advice or individual intervention ranking.",
+    "This register is a local traceability gate that prevents current strong claims and priority falsifiers from lacking source-anchor provenance and transfer boundaries."
+  ]
+}

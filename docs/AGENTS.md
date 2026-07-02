@@ -172,6 +172,7 @@ docs/
 │   ├── ethics-and-safety-boundaries.md
 │   ├── glossary.md
 │   ├── human-infra-core-claim-evidence-matrix.md
+│   ├── human-infra-falsifier-source-card-backfill.json
 │   ├── human-infra-maturity-roadmap.md
 │   ├── life-path-prediction-model-contract.md
 │   ├── life-path-prediction-model-governance.md
@@ -349,6 +350,7 @@ docs/
 - `domains/c6-local-unlocking/child-care-availability-affordability-continuity/`、`domains/c6-local-unlocking/child-care-licensing-health-safety-continuity/`、`domains/c5-ecological-substrate/child-care-subsidy-ccdf-payment-continuity/`、`domains/c6-local-unlocking/head-start-early-head-start-family-support-continuity/`、`domains/c6-local-unlocking/early-intervention-idea-part-c-developmental-services-continuity/` 和 `domains/c3-generation-engine/out-of-school-time-afterschool-summer-learning-continuity/`：第一百一十四波正式研究域，分别承载托育供给费用、许可健康安全、CCDF 补贴支付、Head Start / Early Head Start、IDEA Part C 早期干预和课外/暑期学习照护这些早期儿童照护执行连续性。
 - `reference/research-model-visualization-toolkit.md`：沉淀科研论文阅读、文献脊梁、模型工具、可视化标准和 Human Infra 定量页面实现路线。
 - `reference/source-card-system.md`：定义论文、书籍、工具、案例、标准和数据集进入项目之前的资料卡片制度。
+- `reference/human-infra-falsifier-source-card-backfill.json`：把当前论文强主张和 C1/C2 优先域反证回填到 Source Card 来源锚点、证据角色、可用范围和外推边界。
 - `reference/domain-map.md`：定义根项目与子域的边界、迁移切片、主动不做和验证点。
 - `reference/ethics-and-safety-boundaries.md`：定义医疗、组织、去具身中枢、记忆编辑和数据证据边界。
 - `reference/evidence-policy.md`：定义证据、解释、主张、推测和决策的分层规则。

@@ -114,7 +114,7 @@
     {
       "axisId": "research_framework",
       "axisName": "研究框架",
-      "currentPercent": 70,
+      "currentPercent": 73,
       "targetPercent": 100,
       "definitionOfDone": "Every strong project claim can be traced to source cards, claim-evidence rows, variables, mechanism links, falsifiers, model position and governance boundary.",
       "primaryEvidence": [
@@ -122,6 +122,7 @@
         "docs/reference/evidence-policy.md",
         "docs/reference/source-card-system.md",
         "docs/reference/human-infra-paper-claim-register.json",
+        "docs/reference/human-infra-falsifier-source-card-backfill.json",
         "domains/README.md",
         "domains/_possibility-space-control/classification.tsv"
       ],
@@ -204,15 +205,17 @@
             "docs/reference/human-infra-page-claim-consistency.json",
             "docs/reference/human-infra-paper-claim-register.json",
             "docs/reference/human-infra-domain-falsifier-coverage.json",
+            "docs/reference/human-infra-falsifier-source-card-backfill.json",
             "tools/audit_human_infra_domain_falsifier_coverage.py",
+            "tools/audit_human_infra_falsifier_source_card_backfill.py",
             "tools/audit_human_infra_page_claim_consistency.py",
             "tools/audit_human_infra_paper_claim_register.py"
           ],
           "missingEvidence": [
             "Falsifier rows for C2 domain claims beyond the current 20-domain priority set.",
-            "Source Card backfill that validates each priority-domain and paper-specific falsifier against external or internal evidence."
+            "Full field-level Source Cards that split each source anchor into exact claim, variable, endpoint, population, uncertainty and transfer-boundary rows."
           ],
-          "nextAction": "Backfill Source Cards for paper and 20 priority C2 domain falsifiers, then extend falsifier coverage beyond the current priority set.",
+          "nextAction": "Convert the v0.1 source-anchor backfill into full field-level Source Cards, then extend falsifier coverage beyond the current priority set.",
           "blocks100Percent": true
         }
       ]
@@ -359,7 +362,7 @@
   "nextWorkOrder": [
     {
       "priority": 1,
-      "item": "Backfill Source Cards for paper and 20 priority C2 domain falsifiers, then extend falsifier coverage beyond the current priority set.",
+      "item": "Convert the v0.1 falsifier source-anchor backfill into full field-level Source Cards, then extend falsifier coverage beyond the current priority set.",
       "unblocks": [
         "RESEARCH-G6-falsifier-and-downgrade-coverage"
       ]

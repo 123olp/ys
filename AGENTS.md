@@ -31,8 +31,8 @@ human_infra/
 - `human-infra-dashboard.html` 是根目录静态展示入口，只承载可直接打开的模型看板，不承载数据采集、个人预测或生产服务逻辑。
 - `singularity-human-infra.html` 是根目录专项展示入口，用于把《奇点更近》学习资料转译为 Human Infra 的价值展示、预测模型和 D3 可视化，不作为事实核验或医学建议。
 - `web/` 是 Observable Framework 正式 Web 应用目录，用于多页科研叙事、书籍转译、预测模型和交互可视化；它不承载采集脚本、个人预测服务或医学决策逻辑。
-- `tools/` 保存仓库维护脚本和可迁移工程工具；其中 arXiv HTML papers 复用工具只负责资源安装、资产校验和 Astro 模板生成，不承载 Human Infra 正文理论。
-- `docs/` 只放 Human Infra 的上位理论、域边界、伦理原则和原始资料归档，不放具体采集脚本。
+- `tools/` 保存仓库维护脚本和可迁移工程工具；其中 arXiv HTML papers 复用工具只负责资源安装、资产校验和 Astro 模板生成，不承载 Human Infra 正文理论；Human Infra 审计器只检查本地研究契约和索引覆盖，不证明外部文献真实性。
+- `docs/` 只放 Human Infra 的上位理论、域边界、伦理原则和原始资料归档，不放具体采集脚本；`docs/reference/human-infra-falsifier-source-card-backfill.json` 只保存论文强主张和优先域反证的 Source Card 来源锚点回填，不替代逐篇 Source Card 精读。
 - `domains/` 的正式研究域必须进入 C1-C6 物理层级目录；每个研究域必须有独立 README 和 AGENTS，明确自身对象、非目标、证据要求和上下游关系。
 - `domains/_possibility-space-control/` 是研究域分级控制面，按可能性空间控制力维护 C1-C6 根本性层级、全域分类表和统计摘要；它不是普通研究域。
 - `domains/_possibility-space-control/classification.tsv` 的 `physical_path` 字段是研究域真实目录的索引真相源；历史短名只能作为语义称呼，不能作为物理路径。
@@ -519,3 +519,4 @@ human_infra/
 - 2026-07-02：新增 C1-C6 物理分级目录，并把 990 个正式研究域移动到对应 tier；`classification.tsv` 新增 `physical_path` 作为真实路径索引。
 - 2026-07-02：新增 `tools/update_domain_doc_contracts.py`，为 990 个正式研究域的 README/AGENTS 生成标准域信息、Human Infra 追问和维护契约块。
 - 2026-07-02：扩展 `tools/update_domain_doc_contracts.py`，为 990 个正式研究域补齐研究推进骨架、变量接口、证据入口、最小产出和代理执行流程。
+- 2026-07-02：新增 `docs/reference/human-infra-falsifier-source-card-backfill.json` 和 `tools/audit_human_infra_falsifier_source_card_backfill.py`，把当前论文强主张和 C1/C2 优先域反证回填到来源锚点、证据角色和外推边界。
