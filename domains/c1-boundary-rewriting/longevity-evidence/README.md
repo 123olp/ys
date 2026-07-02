@@ -99,6 +99,7 @@ longevity-evidence/
 │   │   ├── higher_order_effects.tsv
 │   │   ├── interventions.json
 │   │   ├── lev_route_cards.tsv
+│   │   ├── life_path_calibration_readiness.json
 │   │   └── life_path_toy_model_scenarios.json
 │   └── processed/
 ├── docs/
@@ -145,7 +146,7 @@ longevity-evidence/
 
 `docs/lev-source-cards.md` 保存第一批 Source Cards，限定二阶 / 多阶效应理论来源能支持什么、不能支持什么。
 
-`data/manual/life_path_toy_model_scenarios.json`、`scripts/run_life_path_toy_model.py` 和 `scripts/audit_life_path_toy_model.py` 是最小定量管线：输入保存合成场景，导出器生成 `web/src/data/life-path-toy-model.json`，审计器生成 `web/src/data/life-path-toy-model-audit.json` / `.md`。该模型只验证生命路径建模契约，不作为真实医学预测。
+`data/manual/life_path_toy_model_scenarios.json`、`data/manual/life_path_calibration_readiness.json`、`scripts/run_life_path_toy_model.py` 和 `scripts/audit_life_path_toy_model.py` 是最小定量管线：输入保存合成场景，校准预备契约记录 target population、time zero、outcome、estimand、validation、calibration、sensitivity 和 prohibited use 等下一阶段字段，导出器生成 `web/src/data/life-path-toy-model.json`，审计器生成 `web/src/data/life-path-toy-model-audit.json` / `.md`。该模型只验证生命路径建模契约和校准预备边界，不作为真实医学预测。
 
 ## 运行示例
 

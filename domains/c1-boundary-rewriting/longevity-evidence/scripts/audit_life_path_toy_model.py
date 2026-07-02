@@ -15,6 +15,15 @@ REPO_ROOT = Path(__file__).resolve().parents[4]
 DEFAULT_MODEL = REPO_ROOT / "web" / "src" / "data" / "life-path-toy-model.json"
 DEFAULT_JSON_OUT = REPO_ROOT / "web" / "src" / "data" / "life-path-toy-model-audit.json"
 DEFAULT_MD_OUT = REPO_ROOT / "web" / "src" / "data" / "life-path-toy-model-audit.md"
+DEFAULT_READINESS = (
+    REPO_ROOT
+    / "domains"
+    / "c1-boundary-rewriting"
+    / "longevity-evidence"
+    / "data"
+    / "manual"
+    / "life_path_calibration_readiness.json"
+)
 REQUIRED_MODEL_CARD_FIELDS = {
     "modelName",
     "modelClass",
@@ -49,6 +58,24 @@ PROHIBITED_FIELD_NAMES = {
     "predictedDeathDate",
     "predicted_death_date",
 }
+REQUIRED_READINESS_SECTIONS = {
+    "targetPopulation",
+    "timeZero",
+    "predictionHorizons",
+    "outcomes",
+    "estimands",
+    "candidatePredictors",
+    "dataRequirements",
+    "censoringAndCompetingRisks",
+    "validationPlan",
+    "calibrationPlan",
+    "sensitivityAnalysisPlan",
+    "biasAndApplicabilityPlan",
+    "reportingPlan",
+    "prohibitedUses",
+    "upgradeGate",
+}
+REQUIRED_STANDARD_TOKENS = ("TRIPOD", "PROBAST", "ISPOR", "MRC", "OHDSI")
 
 
 def load_json(path: Path) -> dict[str, Any]:
@@ -87,7 +114,223 @@ def collect_keys(value: Any) -> set[str]:
     return keys
 
 
-def audit_model(data: dict[str, Any], model_path: Path) -> dict[str, Any]:
+def summarize_checks(checks: list[dict[str, Any]]) -> dict[str, int]:
+    return {
+        "pass": sum(1 for check in checks if check["status"] == "PASS"),
+        "warn": sum(1 for check in checks if check["status"] == "WARN"),
+        "fail": sum(1 for check in checks if check["status"] == "FAIL"),
+    }
+
+
+def has_text(value: Any, needle: str) -> bool:
+    return needle.lower() in json.dumps(value, ensure_ascii=False).lower()
+
+
+def audit_readiness(readiness: dict[str, Any], readiness_path: Path) -> dict[str, Any]:
+    checks: list[dict[str, Any]] = []
+    schema_version = readiness.get("schemaVersion")
+    add_check(
+        checks,
+        "readiness-schema-version",
+        status_from_bool(schema_version == "human-infra.life-path-calibration-readiness.v1"),
+        f"schemaVersion={schema_version!r}",
+    )
+
+    current_boundary = readiness.get("currentBoundary")
+    boundary_ok = (
+        isinstance(current_boundary, dict)
+        and current_boundary.get("realCohortAvailable") is False
+        and current_boundary.get("calibratedPredictionAvailable") is False
+        and current_boundary.get("externalValidationAvailable") is False
+        and current_boundary.get("individualUseAllowed") is False
+    )
+    add_check(
+        checks,
+        "readiness-honest-current-boundary",
+        status_from_bool(boundary_ok),
+        "readiness contract must explicitly say real cohort, calibration, external validation, and individual use are unavailable",
+    )
+
+    standards = readiness.get("standards")
+    standards_text = json.dumps(standards, ensure_ascii=False) if isinstance(standards, list) else ""
+    missing_standards = [
+        token for token in REQUIRED_STANDARD_TOKENS if token.lower() not in standards_text.lower()
+    ]
+    add_check(
+        checks,
+        "readiness-method-anchors",
+        status_from_bool(isinstance(standards, list) and not missing_standards),
+        f"missing_standards={missing_standards}",
+    )
+
+    missing_sections = sorted(REQUIRED_READINESS_SECTIONS - set(readiness))
+    add_check(
+        checks,
+        "readiness-required-sections",
+        status_from_bool(not missing_sections),
+        f"missing_sections={missing_sections}",
+    )
+
+    population = readiness.get("targetPopulation")
+    population_ok = isinstance(population, dict) and {
+        "definition",
+        "minimumFields",
+        "currentPlaceholder",
+    }.issubset(population)
+    add_check(
+        checks,
+        "readiness-target-population",
+        status_from_bool(population_ok),
+        "target population must define minimum real-cohort fields and current placeholder",
+    )
+
+    time_zero = readiness.get("timeZero")
+    time_zero_ok = isinstance(time_zero, dict) and {
+        "definition",
+        "minimumFields",
+        "currentPlaceholder",
+    }.issubset(time_zero)
+    add_check(
+        checks,
+        "readiness-time-zero",
+        status_from_bool(time_zero_ok),
+        "time zero must define index-date rule fields before calibration",
+    )
+
+    outcomes = readiness.get("outcomes")
+    outcomes_ok = (
+        isinstance(outcomes, dict)
+        and isinstance(outcomes.get("primary"), list)
+        and len(outcomes["primary"]) >= 3
+        and "death" in str(outcomes.get("forbiddenOutcome", "")).lower()
+    )
+    add_check(
+        checks,
+        "readiness-outcome-boundary",
+        status_from_bool(outcomes_ok),
+        "outcomes must include primary cohort outcomes and forbid individual death-date output",
+    )
+
+    estimands = readiness.get("estimands")
+    estimands_ok = (
+        isinstance(estimands, dict)
+        and isinstance(estimands.get("minimumEstimands"), list)
+        and len(estimands["minimumEstimands"]) >= 3
+    )
+    add_check(
+        checks,
+        "readiness-estimands",
+        status_from_bool(estimands_ok),
+        "estimands must define scenario-level questions before calibration",
+    )
+
+    data_requirements = readiness.get("dataRequirements")
+    data_ok = (
+        isinstance(data_requirements, dict)
+        and data_requirements.get("status") == "missing-real-cohort"
+        and has_text(data_requirements, "No real cohort")
+    )
+    add_check(
+        checks,
+        "readiness-data-missing-boundary",
+        status_from_bool(data_ok),
+        "data requirements must state that real cohort and endpoint follow-up are missing",
+    )
+
+    validation_plan = readiness.get("validationPlan")
+    validation_ok = (
+        isinstance(validation_plan, dict)
+        and isinstance(validation_plan.get("internalValidation"), list)
+        and isinstance(validation_plan.get("externalValidation"), list)
+        and validation_plan.get("status") == "not-started"
+    )
+    add_check(
+        checks,
+        "readiness-validation-plan",
+        status_from_bool(validation_ok),
+        "validation plan must include internal/external validation fields and not-started status",
+    )
+
+    calibration_plan = readiness.get("calibrationPlan")
+    calibration_ok = (
+        isinstance(calibration_plan, dict)
+        and isinstance(calibration_plan.get("calibrationDiagnostics"), list)
+        and calibration_plan.get("status") == "not-started"
+    )
+    add_check(
+        checks,
+        "readiness-calibration-plan",
+        status_from_bool(calibration_ok),
+        "calibration plan must include diagnostics and not-started status",
+    )
+
+    sensitivity_ok = isinstance(readiness.get("sensitivityAnalysisPlan"), dict) and isinstance(
+        readiness["sensitivityAnalysisPlan"].get("requiredAnalyses"), list
+    )
+    add_check(
+        checks,
+        "readiness-sensitivity-plan",
+        status_from_bool(sensitivity_ok),
+        "sensitivity analysis plan must define required analyses",
+    )
+
+    bias_ok = isinstance(readiness.get("biasAndApplicabilityPlan"), dict) and isinstance(
+        readiness["biasAndApplicabilityPlan"].get("riskDomains"), list
+    )
+    add_check(
+        checks,
+        "readiness-bias-applicability-plan",
+        status_from_bool(bias_ok),
+        "bias and applicability plan must define risk domains",
+    )
+
+    reporting_ok = isinstance(readiness.get("reportingPlan"), dict) and isinstance(
+        readiness["reportingPlan"].get("requiredArtifacts"), list
+    )
+    add_check(
+        checks,
+        "readiness-reporting-plan",
+        status_from_bool(reporting_ok),
+        "reporting plan must define required artifacts beyond Web visualization",
+    )
+
+    prohibited_uses = readiness.get("prohibitedUses")
+    prohibited_ok = (
+        isinstance(prohibited_uses, list)
+        and has_text(prohibited_uses, "individual")
+        and has_text(prohibited_uses, "death-date")
+        and has_text(prohibited_uses, "medical advice")
+    )
+    add_check(
+        checks,
+        "readiness-prohibited-uses",
+        status_from_bool(prohibited_ok),
+        "prohibited uses must block individual death-date prediction and medical advice",
+    )
+
+    upgrade_gate = readiness.get("upgradeGate")
+    gate_ok = (
+        isinstance(upgrade_gate, dict)
+        and upgrade_gate.get("currentDecision") == "cannot-calibrate-yet"
+        and isinstance(upgrade_gate.get("minimumRequirements"), list)
+    )
+    add_check(
+        checks,
+        "readiness-upgrade-gate",
+        status_from_bool(gate_ok),
+        "upgrade gate must keep the current decision at cannot-calibrate-yet",
+    )
+
+    return {
+        "path": str(readiness_path.relative_to(REPO_ROOT)),
+        "sha256": sha256_file(readiness_path),
+        "status": "PASS" if summarize_checks(checks)["fail"] == 0 else "FAIL",
+        "checks": checks,
+        "summary": summarize_checks(checks),
+    }
+
+
+def audit_model(data: dict[str, Any], model_path: Path, readiness_path: Path) -> dict[str, Any]:
     checks: list[dict[str, Any]] = []
     schema_version = data.get("schemaVersion")
     add_check(
@@ -217,21 +460,21 @@ def audit_model(data: dict[str, Any], model_path: Path) -> dict[str, Any]:
     standard_alignment = [
         {
             "standard": "TRIPOD+AI",
-            "localGate": "model card + schema + transparent scenario output",
+            "localGate": "model card + schema + transparent scenario output + calibration readiness fields",
             "status": "PARTIAL",
-            "boundary": "toy model only; no development/validation cohort",
+            "boundary": "toy model only; no development, calibration, or validation cohort",
         },
         {
             "standard": "PROBAST / PROBAST+AI",
-            "localGate": "bias/applicability placeholders and prohibited-use boundary",
+            "localGate": "bias/applicability plan and prohibited-use boundary",
             "status": "PARTIAL",
             "boundary": "formal risk-of-bias assessment requires real study design and data",
         },
         {
             "standard": "ISPOR modeling good practices",
-            "localGate": "versioned inputs, executable model, generated outputs, audit artifact",
+            "localGate": "versioned inputs, executable model, generated outputs, audit artifact, planned sensitivity fields",
             "status": "PARTIAL",
-            "boundary": "no decision model, calibration, cost model, or sensitivity analysis yet",
+            "boundary": "no decision model, calibration, cost model, or executed sensitivity analysis yet",
         },
         {
             "standard": "MRC complex interventions framework",
@@ -239,9 +482,16 @@ def audit_model(data: dict[str, Any], model_path: Path) -> dict[str, Any]:
             "status": "PARTIAL",
             "boundary": "stakeholder process and implementation evaluation are not started",
         },
+        {
+            "standard": "OHDSI Patient-Level Prediction",
+            "localGate": "target population, time zero, outcome, predictor, time-at-risk and validation placeholders",
+            "status": "PARTIAL",
+            "boundary": "no OHDSI dataset, package execution, or patient-level prediction study is claimed",
+        },
     ]
+    readiness_audit = audit_readiness(load_json(readiness_path), readiness_path)
+    checks.extend(readiness_audit["checks"])
     failed = [check for check in checks if check["status"] == "FAIL"]
-    warn = [check for check in checks if check["status"] == "WARN"]
     overall = "PASS" if not failed else "FAIL"
     return {
         "schemaVersion": "human-infra.life-path-toy-audit.v1",
@@ -250,12 +500,9 @@ def audit_model(data: dict[str, Any], model_path: Path) -> dict[str, Any]:
         "modelSha256": sha256_file(model_path),
         "overallStatus": overall,
         "checks": checks,
-        "summary": {
-            "pass": sum(1 for check in checks if check["status"] == "PASS"),
-            "warn": len(warn),
-            "fail": len(failed),
-        },
+        "summary": summarize_checks(checks),
         "standardAlignment": standard_alignment,
+        "calibrationReadiness": readiness_audit,
     }
 
 
@@ -278,6 +525,13 @@ def render_markdown(audit: dict[str, Any]) -> str:
         lines.append(f"| `{check['id']}` | `{check['status']}` | {detail} |")
     lines.extend(
         [
+            "",
+            "## Calibration Readiness",
+            "",
+            f"- Readiness path: `{audit['calibrationReadiness']['path']}`",
+            f"- Readiness SHA-256: `{audit['calibrationReadiness']['sha256']}`",
+            f"- Readiness status: `{audit['calibrationReadiness']['status']}`",
+            "- Boundary: readiness fields are present, but no real cohort, calibration, external validation, or individual use is available.",
             "",
             "## Standard Alignment",
             "",
@@ -304,6 +558,7 @@ def render_markdown(audit: dict[str, Any]) -> str:
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--model", type=Path, default=DEFAULT_MODEL)
+    parser.add_argument("--readiness", type=Path, default=DEFAULT_READINESS)
     parser.add_argument("--json-out", type=Path, default=DEFAULT_JSON_OUT)
     parser.add_argument("--md-out", type=Path, default=DEFAULT_MD_OUT)
     return parser.parse_args()
@@ -312,7 +567,8 @@ def parse_args() -> argparse.Namespace:
 def main() -> int:
     args = parse_args()
     model_path = args.model.resolve()
-    audit = audit_model(load_json(model_path), model_path)
+    readiness_path = args.readiness.resolve()
+    audit = audit_model(load_json(model_path), model_path, readiness_path)
     args.json_out.parent.mkdir(parents=True, exist_ok=True)
     with args.json_out.open("w", encoding="utf-8") as handle:
         json.dump(audit, handle, ensure_ascii=False, indent=2)

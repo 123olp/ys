@@ -14,7 +14,7 @@
 - `collect_mvp_data.py`：采集首批干预的 PubMed、OpenAlex、ClinicalTrials.gov 和 openFDA 数据。
 - `collect_core_data.py`：采集 HAGR、PubChem、openFDA 不良事件聚合和 Drugs@FDA 数据。
 - `run_life_path_toy_model.py`：读取 `data/manual/life_path_toy_model_scenarios.json`，导出 `web/src/data/life-path-toy-model.json` 供 `/model/` 展示。
-- `audit_life_path_toy_model.py`：审计 `web/src/data/life-path-toy-model.json` 并导出 `web/src/data/life-path-toy-model-audit.json` / `.md`。
+- `audit_life_path_toy_model.py`：审计 `web/src/data/life-path-toy-model.json` 和 `data/manual/life_path_calibration_readiness.json`，并导出 `web/src/data/life-path-toy-model-audit.json` / `.md`。
 
 运行示例：
 

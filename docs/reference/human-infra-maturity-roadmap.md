@@ -9,8 +9,8 @@
 | 轴线 | 当前成熟度 | 100% 状态 | 当前最大缺口 |
 | --- | ---: | --- | --- |
 | 项目价值 | 82% | 不同受众能用同一核心命题理解 Human Infra 的必要性 | 还需要把同一价值语言压入所有论文页和传播页 |
-| 研究框架 | 50% | 每条主张都进入 Source Card、Claim-Evidence Matrix、变量表和反证条件 | 研究域多，但主张级证据闭环还不均匀 |
-| 定量模型 | 30% | 有可运行、可复现、可审查的场景级模型管线 | 已有 toy model 与审计器，但还没有校准数据、外部验证和敏感性分析 |
+| 研究框架 | 52% | 每条主张都进入 Source Card、Claim-Evidence Matrix、变量表和反证条件 | 研究域多，但主张级证据闭环还不均匀 |
+| 定量模型 | 38% | 有可运行、可复现、可审查的场景级模型管线 | 已有 toy model、审计器和校准预备契约，但还没有真实队列、外部验证和已执行敏感性分析 |
 
 ## 价值层 100%
 
@@ -83,6 +83,7 @@ versioned inputs
 - 包含模型卡：用途、非用途、输入来源、证据等级、主要假设、已知限制和升级条件。
 - 包含 sanity checks：生存曲线单调、概率范围合法、无个人预测字段、场景 ID 唯一。
 - 包含审计产物：机器可读 JSON 和人可读 Markdown，证明模型输出满足本地报告契约。
+- 包含校准预备契约：target population、time zero、outcome、estimand、predictor、censoring、validation、calibration、sensitivity、bias/applicability 和 prohibited use 的最低字段。
 
 ## 外部方法锚点
 
@@ -131,6 +132,7 @@ versioned inputs
 - 明确 target population、estimand、time zero、outcome、predictors、censoring 和 validation plan。
 - 明确可用数据源、数据质量、缺失、代表性和伦理边界。
 - 引入 TRIPOD+AI、PROBAST+AI、MRC 和 ISPOR 的最低报告字段。
+- 机器审计必须证明当前仍然不能校准：没有真实队列、没有外部验证、没有个人用途许可。
 
 ### Stage 5: 严肃研究系统
 
@@ -142,7 +144,7 @@ versioned inputs
 
 ## 当前下一步
 
-最小正确下一步不是继续扩域，而是补定量管线：
+当前已经完成最小 toy model 管线和校准预备契约：
 
 ```text
 life_path_toy_model_scenarios.json
@@ -150,11 +152,16 @@ life_path_toy_model_scenarios.json
   -> life-path-toy-model.json
   -> audit_life_path_toy_model.py
   -> life-path-toy-model-audit.json / .md
+  -> life_path_calibration_readiness.json
   -> /model/ Web 图表
-  -> model card + sanity checks + audit checks
+  -> model card + sanity checks + calibration-readiness audit checks
 ```
 
-这一步完成后，项目会从“有定量想法的研究叙事”进入“有最小可执行、可审计模型管线的研究系统”。
+这一步已经把项目从“有定量想法的研究叙事”推进到“有最小可执行、可审计模型管线的研究系统”。下一步不是继续膨胀新域，而是补三件硬东西：
+
+- 把 C1/C2 核心主张做成 Source Cards 和 Claim-Evidence Matrix。
+- 给 life-path 模型补真实队列候选、变量可得性、缺失机制和伦理边界。
+- 执行 sensitivity analysis，并把结果接入审计产物和 `/model/` 可视化。
 
 ## 当前已具备的定量门禁
 
@@ -174,6 +181,10 @@ life_path_toy_model_scenarios.json
 - resource budget 是否处于 `[0, 100]`；
 - `LEV >= 1` 是否显示开放边界；
 - 是否不存在个体死亡日期字段。
+- 校准预备契约是否存在；
+- 是否明确当前没有真实队列、校准、外部验证和个体用途；
+- 是否包含 TRIPOD+AI、PROBAST/PROBAST+AI、ISPOR、MRC 和 OHDSI PLP 方法锚点；
+- 是否包含 target population、time zero、outcome、estimand、predictor、data requirement、censoring、validation、calibration、sensitivity、bias/applicability、reporting 和 prohibited use 字段。
 
 ## 参考入口
 

@@ -1,0 +1,276 @@
+{
+  "schemaVersion": "human-infra.life-path-calibration-readiness.v1",
+  "purpose": "Define the minimum pre-calibration contract required before the Human Infra life-path toy model can be upgraded into a calibrated predictive model. This file is a readiness checklist, not a validated model specification.",
+  "status": "calibration-prep-only",
+  "currentBoundary": {
+    "modelStage": "toy-model-with-calibration-readiness-contract",
+    "realCohortAvailable": false,
+    "calibratedPredictionAvailable": false,
+    "externalValidationAvailable": false,
+    "individualUseAllowed": false,
+    "summary": "The current model is executable and audited, but it is not fitted, calibrated, validated, or usable for individual decision making."
+  },
+  "standards": [
+    {
+      "id": "TRIPOD+AI",
+      "url": "https://www.tripod-statement.org/",
+      "role": "Transparent reporting fields for clinical prediction models, including model purpose, data source, predictors, outcome definition, validation and limitations.",
+      "localUseBoundary": "Used only as a reporting checklist anchor; does not imply the toy model satisfies TRIPOD+AI."
+    },
+    {
+      "id": "PROBAST/PROBAST+AI",
+      "url": "https://www.probast.org/",
+      "role": "Risk-of-bias and applicability review for prediction model studies.",
+      "localUseBoundary": "Used only to define future bias/applicability checks; no PROBAST assessment is possible without a real study design and data."
+    },
+    {
+      "id": "ISPOR Modeling Good Research Practices",
+      "url": "https://www.ispor.org/heor-resources/good-practices",
+      "role": "Model structure, parameter, validation, uncertainty and reporting practice anchor.",
+      "localUseBoundary": "Used only to shape audit fields; does not make the model a decision model or cost-effectiveness model."
+    },
+    {
+      "id": "MRC Complex Interventions Framework",
+      "url": "https://www.bmj.com/content/374/bmj.n2061",
+      "role": "Complex intervention development, evaluation, implementation and context anchor.",
+      "localUseBoundary": "Used only to keep Human Infra interventions context-aware; does not evaluate any specific intervention."
+    },
+    {
+      "id": "OHDSI Patient-Level Prediction",
+      "url": "https://www.ohdsi.org/web/wiki/doku.php?id=projects:workgroups:patient-level_prediction",
+      "role": "Engineering language for target cohort, outcome cohort, time-at-risk, covariates and validation.",
+      "localUseBoundary": "Used only as an implementation pattern; no OHDSI dataset or package run is claimed."
+    }
+  ],
+  "targetPopulation": {
+    "status": "specified-for-future-study",
+    "definition": "A cohort-level Human Infra study population must be explicitly defined before calibration, including age range, geography, observation window, inclusion criteria, exclusion criteria and data provenance.",
+    "minimumFields": [
+      "ageRange",
+      "geography",
+      "observationWindow",
+      "inclusionCriteria",
+      "exclusionCriteria",
+      "dataSource",
+      "consentOrGovernanceBasis"
+    ],
+    "currentPlaceholder": "Synthetic cohort age 40-120 only; no real population."
+  },
+  "timeZero": {
+    "status": "required-before-calibration",
+    "definition": "The index date at which predictors are frozen and follow-up begins.",
+    "minimumFields": [
+      "indexDateRule",
+      "washoutPeriod",
+      "predictorLookbackWindow",
+      "followupStart",
+      "followupEnd"
+    ],
+    "currentPlaceholder": "Toy model starts at synthetic age 40; no index date in real calendar time."
+  },
+  "predictionHorizons": {
+    "status": "specified-for-future-study",
+    "horizons": [
+      "5-year",
+      "10-year",
+      "20-year",
+      "lifetime-scenario"
+    ],
+    "boundary": "Lifetime-scenario outputs must remain cohort-level and must not be converted into individual death dates."
+  },
+  "outcomes": {
+    "status": "defined-for-calibration-prep",
+    "primary": [
+      {
+        "name": "survivalProbability",
+        "definition": "Cohort-level probability of remaining alive beyond a horizon."
+      },
+      {
+        "name": "healthQualityIntegral",
+        "definition": "Area under survival weighted by health-quality proxy."
+      },
+      {
+        "name": "effectiveTime",
+        "definition": "Synthetic proxy for usable action time, combining survival, health quality and capability multiplier."
+      }
+    ],
+    "secondary": [
+      {
+        "name": "futureOptionValue",
+        "definition": "Scenario-level proxy for future choice space, not a welfare claim."
+      },
+      {
+        "name": "levThresholdStatus",
+        "definition": "Whether annual life-extension progress crosses the open-boundary threshold in the toy model."
+      }
+    ],
+    "forbiddenOutcome": "Individual predicted date of death."
+  },
+  "estimands": {
+    "status": "draft",
+    "minimumEstimands": [
+      {
+        "id": "E1",
+        "label": "Cohort survival distribution shift",
+        "question": "How does a scenario-level intervention bundle shift the cohort survival curve relative to baseline?"
+      },
+      {
+        "id": "E2",
+        "label": "Effective time gain",
+        "question": "How does a scenario-level intervention bundle change health-quality-weighted usable action time?"
+      },
+      {
+        "id": "E3",
+        "label": "Future option value proxy",
+        "question": "How does a scenario-level intervention bundle change modeled future choice-space proxy values?"
+      }
+    ],
+    "boundary": "These are scenario-level estimands; they are not individual treatment effects."
+  },
+  "candidatePredictors": {
+    "status": "taxonomy-only",
+    "groups": [
+      "age",
+      "sexOrGenderIfGoverned",
+      "baselineHealthState",
+      "diseaseHistory",
+      "biomarkers",
+      "functionalStatus",
+      "cognitionAndAttention",
+      "sleepRecovery",
+      "resourceAccess",
+      "healthcareAccess",
+      "technologyAccess",
+      "socialSupport",
+      "environmentalExposure",
+      "interventionAdoption",
+      "measurementReliability"
+    ],
+    "boundary": "No predictor is active until its measurement source, missingness, governance basis and calibration status are recorded."
+  },
+  "dataRequirements": {
+    "status": "missing-real-cohort",
+    "requiredDataAssets": [
+      "longitudinalCohort",
+      "mortalityFollowup",
+      "functionalOutcomeFollowup",
+      "healthQualityMeasure",
+      "interventionExposureHistory",
+      "resourceAndAccessMeasures",
+      "measurementErrorMetadata",
+      "missingnessMechanismNotes",
+      "dataGovernanceApproval"
+    ],
+    "missingDataStatement": "No real cohort, endpoint follow-up, calibration dataset, or external validation dataset is currently present.",
+    "minimumBeforeCalibration": "At least one governed longitudinal cohort with mortality and functional outcomes plus a held-out validation plan."
+  },
+  "censoringAndCompetingRisks": {
+    "status": "required-before-calibration",
+    "requiredFields": [
+      "lossToFollowup",
+      "administrativeCensoring",
+      "competingRiskDefinitions",
+      "causeSpecificVsAllCauseBoundary",
+      "informativeCensoringAssessment"
+    ],
+    "boundary": "The toy model does not model censoring or competing risks."
+  },
+  "validationPlan": {
+    "status": "not-started",
+    "internalValidation": [
+      "trainValidationSplitOrResampling",
+      "optimismAssessment",
+      "calibrationWithinDevelopmentData",
+      "discriminationIfApplicable"
+    ],
+    "externalValidation": [
+      "geographicValidation",
+      "temporalValidation",
+      "datasetValidation",
+      "subgroupTransportability"
+    ],
+    "boundary": "No validation result may be claimed until a real development cohort and validation cohort exist."
+  },
+  "calibrationPlan": {
+    "status": "not-started",
+    "calibrationTargets": [
+      "survivalAtHorizon",
+      "healthQualityIntegral",
+      "effectiveTimeProxy",
+      "riskTailPenalty"
+    ],
+    "calibrationDiagnostics": [
+      "calibrationPlot",
+      "calibrationIntercept",
+      "calibrationSlope",
+      "observedExpectedRatio",
+      "decisionCurveOnlyIfDecisionModelExists"
+    ],
+    "boundary": "Calibration diagnostics are planned fields only; the toy model cannot produce real calibration metrics."
+  },
+  "sensitivityAnalysisPlan": {
+    "status": "planned",
+    "requiredAnalyses": [
+      "hazardParameterVariation",
+      "healthQualityDeclineVariation",
+      "interventionEffectSizeVariation",
+      "adoptionProbabilityVariation",
+      "tailRiskPenaltyVariation",
+      "missingDataScenarioVariation",
+      "levThresholdStressTest"
+    ],
+    "boundary": "Sensitivity analysis is mandatory before any claim that a scenario ordering is stable."
+  },
+  "biasAndApplicabilityPlan": {
+    "status": "planned",
+    "riskDomains": [
+      "participantSelection",
+      "predictorMeasurement",
+      "outcomeMeasurement",
+      "sampleSizeAndEvents",
+      "missingness",
+      "modelOverfitting",
+      "transportability",
+      "automationBias",
+      "healthEquityAndAccess"
+    ],
+    "boundary": "Any real model must report where it does not apply and which groups are likely underrepresented."
+  },
+  "reportingPlan": {
+    "status": "planned",
+    "requiredArtifacts": [
+      "modelCard",
+      "dataCard",
+      "sourceCardBundle",
+      "claimEvidenceMatrix",
+      "validationReport",
+      "calibrationReport",
+      "sensitivityReport",
+      "prohibitedUseNotice",
+      "versionedInputsAndOutputs"
+    ],
+    "boundary": "A Web visualization is not sufficient evidence without these report artifacts."
+  },
+  "prohibitedUses": [
+    "No individual death-date prediction.",
+    "No individual medical advice.",
+    "No insurance, employment, credit, eligibility, or coercive scoring.",
+    "No claim of clinical validity, causal validity, or personal usefulness from toy outputs.",
+    "No conversion of LEV open-boundary states into infinite personal lifespan claims."
+  ],
+  "upgradeGate": {
+    "nextStage": "calibration-ready-design",
+    "minimumRequirements": [
+      "real target population",
+      "time zero rule",
+      "governed longitudinal cohort",
+      "outcome definitions",
+      "censoring plan",
+      "validation split or external validation source",
+      "calibration diagnostics",
+      "sensitivity analysis plan",
+      "bias and applicability assessment"
+    ],
+    "currentDecision": "cannot-calibrate-yet"
+  }
+}

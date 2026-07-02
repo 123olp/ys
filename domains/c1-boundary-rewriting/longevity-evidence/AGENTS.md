@@ -68,6 +68,7 @@ longevity-evidence/
 │   │   ├── higher_order_effects.tsv
 │   │   ├── interventions.json
 │   │   ├── lev_route_cards.tsv
+│   │   ├── life_path_calibration_readiness.json
 │   │   └── life_path_toy_model_scenarios.json
 │   ├── processed/
 │   └── raw/
@@ -111,12 +112,13 @@ longevity-evidence/
 - `data/manual/higher_order_effects.tsv`：LEV 二阶 / 多阶效应模型输入，供 Web 导出脚本生成多阶飞轮图。
 - `data/manual/lev_route_cards.tsv`：R1-R9 主流路线卡模型输入，供 Web 导出脚本生成路线矩阵和概率门图。
 - `data/manual/life_path_toy_model_scenarios.json`：生命路径 toy model 的合成场景输入，定义基线风险、健康质量、场景控制值和 LEV 阈值压力测试。
+- `data/manual/life_path_calibration_readiness.json`：生命路径模型的校准预备契约，记录 target population、time zero、outcome、estimand、data requirement、validation、calibration、sensitivity、bias/applicability、reporting 和 prohibited use 字段；它证明下一阶段要补什么，不证明当前模型已校准。
 - `data/raw/`：采集脚本保存的原始 API 响应和下载快照。
 - `data/processed/`：采集脚本生成的 JSONL 索引和汇总。
 - `scripts/collect_mvp_data.py`：采集 PubMed、OpenAlex、ClinicalTrials.gov 和 openFDA 标签数据。
 - `scripts/collect_core_data.py`：采集 HAGR、PubChem、openFDA event 和 Drugs@FDA 数据。
 - `scripts/run_life_path_toy_model.py`：读取合成场景并导出 `web/src/data/life-path-toy-model.json`，用于 `/model/` 的最小可运行定量展示。
-- `scripts/audit_life_path_toy_model.py`：审计生成后的生命路径 toy model，输出机器可读 JSON 和人可读 Markdown，检查模型卡、来源 hash、生存曲线、概率范围、LEV 开放边界和禁止个体死亡日期字段。
+- `scripts/audit_life_path_toy_model.py`：审计生成后的生命路径 toy model 和校准预备契约，输出机器可读 JSON 和人可读 Markdown，检查模型卡、来源 hash、生存曲线、概率范围、LEV 开放边界、校准预备字段和禁止个体死亡日期字段。
 
 ## 依赖关系
 

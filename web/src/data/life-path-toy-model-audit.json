@@ -1,8 +1,8 @@
 {
   "schemaVersion": "human-infra.life-path-toy-audit.v1",
-  "generatedAt": "2026-07-02T00:37:24.662528+00:00",
+  "generatedAt": "2026-07-02T00:46:22.749565+00:00",
   "modelPath": "web/src/data/life-path-toy-model.json",
-  "modelSha256": "d8e159031625099446ab769439d6e0296516cdc8e33e983373fdf05a2a110253",
+  "modelSha256": "05c981d4526bcbd23c83ad535e40e6545d0c191a8b3a44ff12c6f018b208c6cc",
   "overallStatus": "PASS",
   "checks": [
     {
@@ -74,37 +74,215 @@
       "id": "no-individual-death-date-fields",
       "status": "PASS",
       "detail": "prohibited_keys=[]"
+    },
+    {
+      "id": "readiness-schema-version",
+      "status": "PASS",
+      "detail": "schemaVersion='human-infra.life-path-calibration-readiness.v1'"
+    },
+    {
+      "id": "readiness-honest-current-boundary",
+      "status": "PASS",
+      "detail": "readiness contract must explicitly say real cohort, calibration, external validation, and individual use are unavailable"
+    },
+    {
+      "id": "readiness-method-anchors",
+      "status": "PASS",
+      "detail": "missing_standards=[]"
+    },
+    {
+      "id": "readiness-required-sections",
+      "status": "PASS",
+      "detail": "missing_sections=[]"
+    },
+    {
+      "id": "readiness-target-population",
+      "status": "PASS",
+      "detail": "target population must define minimum real-cohort fields and current placeholder"
+    },
+    {
+      "id": "readiness-time-zero",
+      "status": "PASS",
+      "detail": "time zero must define index-date rule fields before calibration"
+    },
+    {
+      "id": "readiness-outcome-boundary",
+      "status": "PASS",
+      "detail": "outcomes must include primary cohort outcomes and forbid individual death-date output"
+    },
+    {
+      "id": "readiness-estimands",
+      "status": "PASS",
+      "detail": "estimands must define scenario-level questions before calibration"
+    },
+    {
+      "id": "readiness-data-missing-boundary",
+      "status": "PASS",
+      "detail": "data requirements must state that real cohort and endpoint follow-up are missing"
+    },
+    {
+      "id": "readiness-validation-plan",
+      "status": "PASS",
+      "detail": "validation plan must include internal/external validation fields and not-started status"
+    },
+    {
+      "id": "readiness-calibration-plan",
+      "status": "PASS",
+      "detail": "calibration plan must include diagnostics and not-started status"
+    },
+    {
+      "id": "readiness-sensitivity-plan",
+      "status": "PASS",
+      "detail": "sensitivity analysis plan must define required analyses"
+    },
+    {
+      "id": "readiness-bias-applicability-plan",
+      "status": "PASS",
+      "detail": "bias and applicability plan must define risk domains"
+    },
+    {
+      "id": "readiness-reporting-plan",
+      "status": "PASS",
+      "detail": "reporting plan must define required artifacts beyond Web visualization"
+    },
+    {
+      "id": "readiness-prohibited-uses",
+      "status": "PASS",
+      "detail": "prohibited uses must block individual death-date prediction and medical advice"
+    },
+    {
+      "id": "readiness-upgrade-gate",
+      "status": "PASS",
+      "detail": "upgrade gate must keep the current decision at cannot-calibrate-yet"
     }
   ],
   "summary": {
-    "pass": 14,
+    "pass": 30,
     "warn": 0,
     "fail": 0
   },
   "standardAlignment": [
     {
       "standard": "TRIPOD+AI",
-      "localGate": "model card + schema + transparent scenario output",
+      "localGate": "model card + schema + transparent scenario output + calibration readiness fields",
       "status": "PARTIAL",
-      "boundary": "toy model only; no development/validation cohort"
+      "boundary": "toy model only; no development, calibration, or validation cohort"
     },
     {
       "standard": "PROBAST / PROBAST+AI",
-      "localGate": "bias/applicability placeholders and prohibited-use boundary",
+      "localGate": "bias/applicability plan and prohibited-use boundary",
       "status": "PARTIAL",
       "boundary": "formal risk-of-bias assessment requires real study design and data"
     },
     {
       "standard": "ISPOR modeling good practices",
-      "localGate": "versioned inputs, executable model, generated outputs, audit artifact",
+      "localGate": "versioned inputs, executable model, generated outputs, audit artifact, planned sensitivity fields",
       "status": "PARTIAL",
-      "boundary": "no decision model, calibration, cost model, or sensitivity analysis yet"
+      "boundary": "no decision model, calibration, cost model, or executed sensitivity analysis yet"
     },
     {
       "standard": "MRC complex interventions framework",
       "localGate": "mechanism chain and context boundary in maturity roadmap",
       "status": "PARTIAL",
       "boundary": "stakeholder process and implementation evaluation are not started"
+    },
+    {
+      "standard": "OHDSI Patient-Level Prediction",
+      "localGate": "target population, time zero, outcome, predictor, time-at-risk and validation placeholders",
+      "status": "PARTIAL",
+      "boundary": "no OHDSI dataset, package execution, or patient-level prediction study is claimed"
     }
-  ]
+  ],
+  "calibrationReadiness": {
+    "path": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_calibration_readiness.json",
+    "sha256": "5640fa8b3c5466de351e3ba5763da7477a1b40657d102cdaee7486a174d63166",
+    "status": "PASS",
+    "checks": [
+      {
+        "id": "readiness-schema-version",
+        "status": "PASS",
+        "detail": "schemaVersion='human-infra.life-path-calibration-readiness.v1'"
+      },
+      {
+        "id": "readiness-honest-current-boundary",
+        "status": "PASS",
+        "detail": "readiness contract must explicitly say real cohort, calibration, external validation, and individual use are unavailable"
+      },
+      {
+        "id": "readiness-method-anchors",
+        "status": "PASS",
+        "detail": "missing_standards=[]"
+      },
+      {
+        "id": "readiness-required-sections",
+        "status": "PASS",
+        "detail": "missing_sections=[]"
+      },
+      {
+        "id": "readiness-target-population",
+        "status": "PASS",
+        "detail": "target population must define minimum real-cohort fields and current placeholder"
+      },
+      {
+        "id": "readiness-time-zero",
+        "status": "PASS",
+        "detail": "time zero must define index-date rule fields before calibration"
+      },
+      {
+        "id": "readiness-outcome-boundary",
+        "status": "PASS",
+        "detail": "outcomes must include primary cohort outcomes and forbid individual death-date output"
+      },
+      {
+        "id": "readiness-estimands",
+        "status": "PASS",
+        "detail": "estimands must define scenario-level questions before calibration"
+      },
+      {
+        "id": "readiness-data-missing-boundary",
+        "status": "PASS",
+        "detail": "data requirements must state that real cohort and endpoint follow-up are missing"
+      },
+      {
+        "id": "readiness-validation-plan",
+        "status": "PASS",
+        "detail": "validation plan must include internal/external validation fields and not-started status"
+      },
+      {
+        "id": "readiness-calibration-plan",
+        "status": "PASS",
+        "detail": "calibration plan must include diagnostics and not-started status"
+      },
+      {
+        "id": "readiness-sensitivity-plan",
+        "status": "PASS",
+        "detail": "sensitivity analysis plan must define required analyses"
+      },
+      {
+        "id": "readiness-bias-applicability-plan",
+        "status": "PASS",
+        "detail": "bias and applicability plan must define risk domains"
+      },
+      {
+        "id": "readiness-reporting-plan",
+        "status": "PASS",
+        "detail": "reporting plan must define required artifacts beyond Web visualization"
+      },
+      {
+        "id": "readiness-prohibited-uses",
+        "status": "PASS",
+        "detail": "prohibited uses must block individual death-date prediction and medical advice"
+      },
+      {
+        "id": "readiness-upgrade-gate",
+        "status": "PASS",
+        "detail": "upgrade gate must keep the current decision at cannot-calibrate-yet"
+      }
+    ],
+    "summary": {
+      "pass": 16,
+      "warn": 0,
+      "fail": 0
+    }
+  }
 }
