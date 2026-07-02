@@ -2170,7 +2170,7 @@ flowchart TD
 
 | 角色 | 推荐路径 |
 | --- | --- |
-| 第一次进入项目 | [核心命题](#核心命题) -> [理论链路](#理论链路) -> [研究范围](#研究范围) -> [项目地图](#项目地图) |
+| 第一次进入项目 | [实现持续性主线](#实现持续性主线) -> [核心命题](#核心命题) -> [理论链路](#理论链路) -> [研究范围](#研究范围) -> [项目地图](#项目地图) |
 | 研究贡献者 | [真实应用与文献](docs/reference/applications-and-literature.md) -> [证据政策](docs/reference/evidence-policy.md) -> [资料管理](docs/reference/source-management.md) |
 | 文档维护者 | [仓库标准](docs/reference/repository-standards.md) -> [文档生命周期](docs/reference/document-lifecycle.md) -> [写作风格](docs/reference/writing-style-guide.md) |
 | 数据脚本维护者 | [Longevity Evidence](domains/c1-boundary-rewriting/longevity-evidence/README.md) -> [数据说明](domains/c1-boundary-rewriting/longevity-evidence/data/README.md) -> [脚本说明](domains/c1-boundary-rewriting/longevity-evidence/scripts/README.md) |
