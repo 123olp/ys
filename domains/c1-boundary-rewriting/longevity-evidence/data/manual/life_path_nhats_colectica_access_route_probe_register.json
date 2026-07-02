@@ -1,0 +1,211 @@
+{
+  "schemaVersion": "human-infra.life-path-nhats-colectica-access-route-probe-register.v1",
+  "sourceId": "nhats",
+  "sourceName": "National Health and Aging Trends Study",
+  "probeRegisterId": "nhats-r13-r14-colectica-access-route-probe-2026-07-03",
+  "executionRegisterId": "nhats-r13-r14-colectica-value-label-review-execution-register-2026-07-03",
+  "protocolId": "nhats-r13-r14-colectica-value-label-review-protocol-draft",
+  "routeFieldDiscoveryRegisterId": "nhats-r13-r14-route-field-discovery-register-draft",
+  "reviewDate": "2026-07-03",
+  "reviewer": "tradecatlabs",
+  "status": "public-entry-and-technical-guide-probed-login-required",
+  "probePurpose": "Record public, non-credentialed access-route evidence for the NHATS Colectica value-label capture workflow without storing credentials, account identity, raw Colectica metadata, row-level NHATS data or restricted materials.",
+  "currentDecision": {
+    "officialAccessRouteProbed": true,
+    "technicalGuideCaptured": true,
+    "anonymousPortalProbeCompleted": true,
+    "colecticaAccountCreated": false,
+    "colecticaLoginCompleted": false,
+    "colecticaVariablePagesCaptured": false,
+    "valueLabelsConfirmed": false,
+    "questionTextConfirmed": false,
+    "universeSkipLogicConfirmed": false,
+    "routeValueCrosswalkReady": false,
+    "publicExportAllowed": false,
+    "calibrationAllowed": false,
+    "individualPredictionAllowed": false,
+    "reason": "The official public entry point, portal login boundary and technical guide route are verified, but no Colectica account, authenticated variable pages, values/value labels, question text, universe/skip logic or export artifacts have been captured."
+  },
+  "sourceEvidence": [
+    {
+      "id": "nhats-cross-year-search-official-entry",
+      "sourceType": "official-web-page",
+      "url": "https://www.nhats.org/data-access/cross-year-search",
+      "evidenceUse": "Official NHATS entry point identifying Colectica as the cross-year metadata route.",
+      "supports": [
+        "colectica-official-route",
+        "value-label-capture-required"
+      ],
+      "doesNotSupport": [
+        "value-labels-confirmed",
+        "question-text-confirmed",
+        "route-classifier-ready"
+      ]
+    },
+    {
+      "id": "nhats-colectica-root-anonymous-probe",
+      "sourceType": "public-http-probe",
+      "url": "https://nhats.colectica.org/",
+      "observedAt": "2026-07-03",
+      "evidenceUse": "Anonymous root access redirects to the login page and proves public unauthenticated browsing is insufficient for variable capture.",
+      "supports": [
+        "login-gate-required",
+        "no-anonymous-variable-capture"
+      ],
+      "doesNotSupport": [
+        "authenticated-access-complete",
+        "variable-page-captured"
+      ]
+    },
+    {
+      "id": "nhats-colectica-search-anonymous-probe",
+      "sourceType": "public-http-probe",
+      "url": "https://nhats.colectica.org/search?query=r14status",
+      "observedAt": "2026-07-03",
+      "evidenceUse": "Anonymous search request resolves to the login page, so route field value labels cannot be collected by unauthenticated public scraping.",
+      "supports": [
+        "search-login-gate-required",
+        "variable-search-authentication-required"
+      ],
+      "doesNotSupport": [
+        "r14status-value-labels-confirmed",
+        "search-result-captured"
+      ]
+    },
+    {
+      "id": "nhats-colectica-technical-guide",
+      "sourceType": "official-pdf",
+      "url": "https://nhats.org/sites/default/files/2025-09/NHATS%20Online%20Cross-Year%20Searchable%20Database%20Technical%20Guide.pdf",
+      "sha256": "ae0c0d1ade858725b1c098a05845ab146432fa2d008cec54f646ce827f485ee4",
+      "contentLengthBytes": 577295,
+      "evidenceUse": "Official NHATS guide describing Colectica account creation, Explore, Search, Details and Basket export workflow.",
+      "supports": [
+        "registered-capture-workflow",
+        "details-page-required",
+        "basket-export-available-after-login"
+      ],
+      "doesNotSupport": [
+        "account-created",
+        "export-downloaded",
+        "value-labels-confirmed"
+      ]
+    }
+  ],
+  "anonymousAccessProbe": {
+    "methodBoundary": "Public non-credentialed HTTP probes only. No account credentials, no session cookies, no authenticated metadata capture and no raw NHATS data are stored.",
+    "rootHeadNoFollow": {
+      "url": "https://nhats.colectica.org/",
+      "observedStatus": "HTTP/2 302",
+      "location": "/Account/Login?returnUrl=%2F",
+      "interpretation": "Root portal access requires login before authenticated metadata browsing."
+    },
+    "rootGetFollow": {
+      "url": "https://nhats.colectica.org/",
+      "finalStatus": 200,
+      "finalUrl": "https://nhats.colectica.org/Account/Login?returnUrl=%2F",
+      "htmlTitle": "Log in - NHATS",
+      "bytesDownloaded": 13308,
+      "interpretation": "Unauthenticated browser-equivalent access lands on login page."
+    },
+    "searchGetFollow": {
+      "url": "https://nhats.colectica.org/search?query=r14status",
+      "finalStatus": 200,
+      "finalUrl": "https://nhats.colectica.org/Account/Login?returnUrl=%2Fsearch",
+      "htmlTitle": "Log in - NHATS",
+      "bytesDownloaded": 13314,
+      "interpretation": "Unauthenticated variable search does not expose route-field metadata."
+    },
+    "loginPagePublicLinksObserved": [
+      "/Account/Login",
+      "/Account/Register"
+    ]
+  },
+  "technicalGuideRoute": {
+    "portalUrl": "https://nhats.colectica.org",
+    "requiresAccount": true,
+    "publicGuideFacts": [
+      "Create an account before using Colectica.",
+      "Explore page allows section-level variable review across rounds.",
+      "Search page can find variables, questions and data files.",
+      "Variable details pages contain question name, label, data file, possible values, value labels, question text and concordance information.",
+      "Basket contents can be downloaded after login in PDF, CSV, Excel or DDI 3.2 XML format."
+    ],
+    "captureImplication": "The next real evidence must be authenticated page captures or authenticated basket exports with source hashes stored outside public raw-data exposure."
+  },
+  "captureSequence": [
+    {
+      "stepId": "CXP-01",
+      "action": "Create or use a controlled NHATS Colectica account outside the public repository.",
+      "requiredEvidence": [
+        "account status recorded without credentials",
+        "reviewer identity boundary recorded outside public repo"
+      ],
+      "repoAllowed": "Only status, date and non-sensitive review notes.",
+      "repoForbidden": "Credentials, session cookies, account profile details."
+    },
+    {
+      "stepId": "CXP-02",
+      "action": "Use Colectica Search or Explore for each required route field candidate.",
+      "requiredEvidence": [
+        "variable page URL or stable item identifier",
+        "source capture hash",
+        "round and file name",
+        "variable label"
+      ],
+      "repoAllowed": "Bounded metadata summaries and hashes.",
+      "repoForbidden": "Bulk raw metadata dumps or any row-level NHATS data."
+    },
+    {
+      "stepId": "CXP-03",
+      "action": "Open each variable Details page or authenticated basket export.",
+      "requiredEvidence": [
+        "possible values",
+        "value labels",
+        "question text",
+        "universe or skip logic",
+        "concordance relationship"
+      ],
+      "repoAllowed": "Minimal reviewed field/value crosswalk needed for route classifier design, subject to NHATS conditions and disclosure constraints.",
+      "repoForbidden": "Unreviewed public AI upload, unrestricted raw exports, sensitive death dates."
+    },
+    {
+      "stepId": "CXP-04",
+      "action": "Perform second reviewer signoff before route classifier promotion.",
+      "requiredEvidence": [
+        "conflict resolution notes",
+        "promotion decision",
+        "blocked variables and exclusions"
+      ],
+      "repoAllowed": "Reviewed decision register.",
+      "repoForbidden": "Classifier promotion before value labels and question text are verified."
+    }
+  ],
+  "routeFieldCaptureQueue": [
+    "identity_join_key",
+    "round13_baseline_eligibility",
+    "round14_interview_status",
+    "proxy_status",
+    "facility_residential_status",
+    "death_decedent_indicator",
+    "nonresponse_missing_code",
+    "design_weight_linkage",
+    "disclosure_cell_count"
+  ],
+  "blockedUntil": [
+    "controlled Colectica account status recorded outside public repository",
+    "authenticated variable page or basket-export source hashes captured",
+    "value labels and question text reviewed",
+    "universe and skip logic reviewed",
+    "route-value crosswalk drafted",
+    "variable-specific missing-code map drafted",
+    "sensitive death-date exclusions reconfirmed",
+    "second reviewer signoff completed"
+  ],
+  "prohibitedUses": [
+    "Do not infer value labels from crosswalk variable names.",
+    "Do not treat anonymous login-page probes as variable metadata.",
+    "Do not upload NHATS or NSOC raw data to public AI systems.",
+    "Do not publish individual death dates, row-level routes or small-cell route counts.",
+    "Do not enable calibration, individual prediction or public export from this probe register."
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "schemaVersion": "human-infra.life-path-nhats-colectica-access-route-probe-validation.v1",
+  "generatedAt": "2026-07-02T22:51:30.183657+00:00",
+  "probeRegisterPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_access_route_probe_register.json",
+  "probeRegisterSha256": "58941fde2c6a1c5488437a1ad447cb3dae2032739ef1ed579e29da98b96aaa89",
+  "executionRegisterPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_value_label_review_execution_register.json",
+  "executionRegisterSha256": "de6d17f9470a563346f92884cead1eec35cf5a954245751b0135efc60672b042",
+  "probeRegisterId": "nhats-r13-r14-colectica-access-route-probe-2026-07-03",
+  "executionRegisterId": "nhats-r13-r14-colectica-value-label-review-execution-register-2026-07-03",
+  "overallStatus": "PASS",
+  "summary": {
+    "pass": 11,
+    "fail": 0
+  },
+  "checks": [
+    {
+      "id": "schema-version",
+      "status": "PASS",
+      "detail": "schemaVersion='human-infra.life-path-nhats-colectica-access-route-probe-register.v1'"
+    },
+    {
+      "id": "probe-register-identity",
+      "status": "PASS",
+      "detail": "probe must bind NHATS, current execution register and login-required probe status"
+    },
+    {
+      "id": "decision-boundary",
+      "status": "PASS",
+      "detail": "access route may be probed, but account, login, variable pages, labels, export, calibration and individual prediction must remain blocked"
+    },
+    {
+      "id": "source-evidence",
+      "status": "PASS",
+      "detail": "missing=[]"
+    },
+    {
+      "id": "anonymous-access-probe",
+      "status": "PASS",
+      "detail": "anonymous root and search probes must resolve to login boundary without metadata capture"
+    },
+    {
+      "id": "technical-guide-route",
+      "status": "PASS",
+      "detail": "technical guide route must require account and describe Details/Basket capture path"
+    },
+    {
+      "id": "capture-sequence",
+      "status": "PASS",
+      "detail": "missing=[]"
+    },
+    {
+      "id": "route-field-capture-queue",
+      "status": "PASS",
+      "detail": "missing=[]"
+    },
+    {
+      "id": "blocked-until",
+      "status": "PASS",
+      "detail": "register must keep account, source hashes, value labels, question text and second review as blockers"
+    },
+    {
+      "id": "prohibited-uses",
+      "status": "PASS",
+      "detail": "probe must block inferred labels, anonymous metadata substitution, public AI upload, death dates and calibration"
+    },
+    {
+      "id": "no-credential-or-raw-data-keys",
+      "status": "PASS",
+      "detail": "prohibited_keys=[]"
+    }
+  ],
+  "boundary": {
+    "officialAccessRouteProbed": true,
+    "technicalGuideCaptured": true,
+    "anonymousPortalProbeCompleted": true,
+    "colecticaAccountCreated": false,
+    "colecticaLoginCompleted": false,
+    "colecticaVariablePagesCaptured": false,
+    "valueLabelsConfirmed": false,
+    "publicExportAllowed": false,
+    "calibrationAllowed": false,
+    "individualPredictionAllowed": false
+  },
+  "note": "This validation proves only the public access route and login boundary. It does not prove authenticated Colectica access, variable details, value labels, question text, route classifiers, exports, calibration or individual prediction."
+}

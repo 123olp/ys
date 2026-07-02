@@ -232,6 +232,22 @@ DEFAULT_NHATS_COLECTICA_VALUE_LABEL_EXECUTION_VALIDATION = (
     / "data"
     / "life-path-nhats-colectica-value-label-review-execution-validation.json"
 )
+DEFAULT_NHATS_COLECTICA_ACCESS_ROUTE_PROBE_REGISTER = (
+    REPO_ROOT
+    / "domains"
+    / "c1-boundary-rewriting"
+    / "longevity-evidence"
+    / "data"
+    / "manual"
+    / "life_path_nhats_colectica_access_route_probe_register.json"
+)
+DEFAULT_NHATS_COLECTICA_ACCESS_ROUTE_PROBE_VALIDATION = (
+    REPO_ROOT
+    / "web"
+    / "src"
+    / "data"
+    / "life-path-nhats-colectica-access-route-probe-validation.json"
+)
 REQUIRED_MODEL_CARD_FIELDS = {
     "modelName",
     "modelClass",
@@ -4585,6 +4601,124 @@ def audit_nhats_colectica_value_label_review_execution(
     }
 
 
+def audit_nhats_colectica_access_route_probe(
+    probe_register_path: Path,
+    probe_validation_path: Path,
+    execution_register_path: Path,
+) -> dict[str, Any]:
+    checks: list[dict[str, Any]] = []
+    register_exists = probe_register_path.exists()
+    validation_exists = probe_validation_path.exists()
+    add_check(
+        checks,
+        "nhats-colectica-access-route-probe-register-exists",
+        status_from_bool(register_exists),
+        str(probe_register_path.relative_to(REPO_ROOT)),
+    )
+    add_check(
+        checks,
+        "nhats-colectica-access-route-probe-validation-exists",
+        status_from_bool(validation_exists),
+        str(probe_validation_path.relative_to(REPO_ROOT)),
+    )
+
+    register = load_json(probe_register_path) if register_exists else {}
+    validation = load_json(probe_validation_path) if validation_exists else {}
+
+    schema_ok = (
+        register.get("schemaVersion")
+        == "human-infra.life-path-nhats-colectica-access-route-probe-register.v1"
+    )
+    add_check(
+        checks,
+        "nhats-colectica-access-route-probe-schema",
+        status_from_bool(register_exists and schema_ok),
+        f"schemaVersion={register.get('schemaVersion')!r}",
+    )
+
+    decision = register.get("currentDecision")
+    decision_ok = (
+        isinstance(decision, dict)
+        and decision.get("officialAccessRouteProbed") is True
+        and decision.get("technicalGuideCaptured") is True
+        and decision.get("anonymousPortalProbeCompleted") is True
+        and decision.get("colecticaAccountCreated") is False
+        and decision.get("colecticaLoginCompleted") is False
+        and decision.get("colecticaVariablePagesCaptured") is False
+        and decision.get("valueLabelsConfirmed") is False
+        and decision.get("questionTextConfirmed") is False
+        and decision.get("universeSkipLogicConfirmed") is False
+        and decision.get("publicExportAllowed") is False
+        and decision.get("calibrationAllowed") is False
+        and decision.get("individualPredictionAllowed") is False
+    )
+    add_check(
+        checks,
+        "nhats-colectica-access-route-probe-boundary",
+        status_from_bool(register_exists and decision_ok),
+        "access route may be probed, but account, login, variable pages, labels, export, calibration and individual prediction must remain blocked",
+    )
+
+    validation_schema_ok = (
+        validation.get("schemaVersion")
+        == "human-infra.life-path-nhats-colectica-access-route-probe-validation.v1"
+    )
+    add_check(
+        checks,
+        "nhats-colectica-access-route-probe-validation-schema",
+        status_from_bool(validation_exists and validation_schema_ok),
+        f"schemaVersion={validation.get('schemaVersion')!r}",
+    )
+
+    validation_source_ok = (
+        validation.get("probeRegisterPath") == str(probe_register_path.relative_to(REPO_ROOT))
+        and validation.get("probeRegisterSha256") == sha256_file(probe_register_path)
+        and validation.get("executionRegisterPath")
+        == str(execution_register_path.relative_to(REPO_ROOT))
+        and validation.get("executionRegisterSha256") == sha256_file(execution_register_path)
+    )
+    add_check(
+        checks,
+        "nhats-colectica-access-route-probe-validation-source-hash",
+        status_from_bool(validation_exists and validation_source_ok),
+        "access-route validation must point back to current probe register and execution register hashes",
+    )
+
+    boundary = validation.get("boundary")
+    boundary_ok = (
+        validation.get("overallStatus") == "PASS"
+        and isinstance(validation.get("summary"), dict)
+        and validation["summary"].get("fail") == 0
+        and isinstance(boundary, dict)
+        and boundary.get("officialAccessRouteProbed") is True
+        and boundary.get("technicalGuideCaptured") is True
+        and boundary.get("anonymousPortalProbeCompleted") is True
+        and boundary.get("colecticaAccountCreated") is False
+        and boundary.get("colecticaLoginCompleted") is False
+        and boundary.get("colecticaVariablePagesCaptured") is False
+        and boundary.get("valueLabelsConfirmed") is False
+        and boundary.get("publicExportAllowed") is False
+        and boundary.get("calibrationAllowed") is False
+        and boundary.get("individualPredictionAllowed") is False
+    )
+    add_check(
+        checks,
+        "nhats-colectica-access-route-probe-validation-boundary",
+        status_from_bool(validation_exists and boundary_ok),
+        "validation must prove only public access-route probing while keeping authenticated capture and model admission blocked",
+    )
+
+    return {
+        "registerPath": str(probe_register_path.relative_to(REPO_ROOT)),
+        "registerSha256": sha256_file(probe_register_path) if register_exists else None,
+        "validationPath": str(probe_validation_path.relative_to(REPO_ROOT)),
+        "validationSha256": sha256_file(probe_validation_path) if validation_exists else None,
+        "status": "PASS" if summarize_checks(checks)["fail"] == 0 else "FAIL",
+        "checks": checks,
+        "summary": summarize_checks(checks),
+    }
+
+
 def audit_sensitivity_analysis(
     sensitivity_path: Path,
     model_data: dict[str, Any],
@@ -4843,6 +4977,8 @@ def audit_model(
     nhats_colectica_value_label_validation_path: Path,
     nhats_colectica_value_label_execution_register_path: Path,
     nhats_colectica_value_label_execution_validation_path: Path,
+    nhats_colectica_access_route_probe_register_path: Path,
+    nhats_colectica_access_route_probe_validation_path: Path,
 ) -> dict[str, Any]:
     checks: list[dict[str, Any]] = []
     schema_version = data.get("schemaVersion")
@@ -5065,6 +5201,11 @@ def audit_model(
             nhats_route_field_discovery_register_path,
         )
     )
+    nhats_colectica_access_route_probe_audit = audit_nhats_colectica_access_route_probe(
+        nhats_colectica_access_route_probe_register_path,
+        nhats_colectica_access_route_probe_validation_path,
+        nhats_colectica_value_label_execution_register_path,
+    )
     sensitivity_audit = audit_sensitivity_analysis(sensitivity_path, data, model_path)
     checks.extend(readiness_audit["checks"])
     checks.extend(data_sources_audit["checks"])
@@ -5082,6 +5223,7 @@ def audit_model(
     checks.extend(nhats_route_field_discovery_audit["checks"])
     checks.extend(nhats_colectica_value_label_audit["checks"])
     checks.extend(nhats_colectica_value_label_execution_audit["checks"])
+    checks.extend(nhats_colectica_access_route_probe_audit["checks"])
     checks.extend(sensitivity_audit["checks"])
     failed = [check for check in checks if check["status"] == "FAIL"]
     overall = "PASS" if not failed else "FAIL"
@@ -5110,6 +5252,7 @@ def audit_model(
         "nhatsRouteFieldDiscovery": nhats_route_field_discovery_audit,
         "nhatsColecticaValueLabelReview": nhats_colectica_value_label_audit,
         "nhatsColecticaValueLabelReviewExecution": nhats_colectica_value_label_execution_audit,
+        "nhatsColecticaAccessRouteProbe": nhats_colectica_access_route_probe_audit,
         "sensitivityAnalysis": sensitivity_audit,
     }
 
@@ -5268,6 +5411,15 @@ def render_markdown(audit: dict[str, Any]) -> str:
             f"- Colectica execution validation status: `{audit['nhatsColecticaValueLabelReviewExecution']['status']}`",
             "- Boundary: Colectica execution now records official source trace, field-level source-trace skeleton and standard negative-code family only; it still blocks login-derived value labels, question text, universe/skip logic, route-value maps, classifier promotion, weighted route counts, public export, calibration, validation and individual prediction.",
             "",
+            "## NHATS Colectica Access-Route Probe",
+            "",
+            f"- Colectica access-route probe register path: `{audit['nhatsColecticaAccessRouteProbe']['registerPath']}`",
+            f"- Colectica access-route probe register SHA-256: `{audit['nhatsColecticaAccessRouteProbe']['registerSha256']}`",
+            f"- Colectica access-route probe validation path: `{audit['nhatsColecticaAccessRouteProbe']['validationPath']}`",
+            f"- Colectica access-route probe validation SHA-256: `{audit['nhatsColecticaAccessRouteProbe']['validationSha256']}`",
+            f"- Colectica access-route probe validation status: `{audit['nhatsColecticaAccessRouteProbe']['status']}`",
+            "- Boundary: access-route probing verifies the public entry point, anonymous login boundary and technical-guide workflow only; it still blocks account status, authenticated variable page capture, value labels, question text, exports, calibration and individual prediction.",
+            "",
             "## Sensitivity Analysis",
             "",
             f"- Sensitivity path: `{audit['sensitivityAnalysis']['path']}`",
@@ -5416,6 +5568,16 @@ def parse_args() -> argparse.Namespace:
         type=Path,
         default=DEFAULT_NHATS_COLECTICA_VALUE_LABEL_EXECUTION_VALIDATION,
     )
+    parser.add_argument(
+        "--nhats-colectica-access-route-probe-register",
+        type=Path,
+        default=DEFAULT_NHATS_COLECTICA_ACCESS_ROUTE_PROBE_REGISTER,
+    )
+    parser.add_argument(
+        "--nhats-colectica-access-route-probe-validation",
+        type=Path,
+        default=DEFAULT_NHATS_COLECTICA_ACCESS_ROUTE_PROBE_VALIDATION,
+    )
     parser.add_argument("--json-out", type=Path, default=DEFAULT_JSON_OUT)
     parser.add_argument("--md-out", type=Path, default=DEFAULT_MD_OUT)
     return parser.parse_args()
@@ -5474,6 +5636,12 @@ def main() -> int:
     nhats_colectica_value_label_execution_validation_path = (
         args.nhats_colectica_value_label_execution_validation.resolve()
     )
+    nhats_colectica_access_route_probe_register_path = (
+        args.nhats_colectica_access_route_probe_register.resolve()
+    )
+    nhats_colectica_access_route_probe_validation_path = (
+        args.nhats_colectica_access_route_probe_validation.resolve()
+    )
     audit = audit_model(
         load_json(model_path),
         model_path,
@@ -5505,6 +5673,8 @@ def main() -> int:
         nhats_colectica_value_label_validation_path,
         nhats_colectica_value_label_execution_register_path,
         nhats_colectica_value_label_execution_validation_path,
+        nhats_colectica_access_route_probe_register_path,
+        nhats_colectica_access_route_probe_validation_path,
     )
     args.json_out.parent.mkdir(parents=True, exist_ok=True)
     with args.json_out.open("w", encoding="utf-8") as handle:
