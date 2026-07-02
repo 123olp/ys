@@ -521,3 +521,4 @@ human_infra/
 - 2026-07-02：扩展 `tools/update_domain_doc_contracts.py`，为 990 个正式研究域补齐研究推进骨架、变量接口、证据入口、最小产出和代理执行流程。
 - 2026-07-02：新增 `docs/reference/human-infra-falsifier-source-card-backfill.json` 和 `tools/audit_human_infra_falsifier_source_card_backfill.py`，把当前论文强主张和 C1/C2 优先域反证回填到来源锚点、证据角色和外推边界。
 - 2026-07-02：新增 `docs/reference/human-infra-c2-longtail-first-batch-reviewed-card-artifact-register.json` 和 `tools/audit_human_infra_c2_longtail_first_batch_reviewed_card_artifact_register.py`，把 C2-LT-B1 中 42 个 eligible fresh-review rows 晋升为 252 个 reviewed artifacts，并保留 6 个 blocked rows 与模型准入阻塞边界。
+- 2026-07-02：新增 `docs/reference/human-infra-c2-longtail-first-batch-blocked-source-resolution-register.json` 和 `tools/audit_human_infra_c2_longtail_first_batch_blocked_source_resolution_register.py`，为 C2-LT-B1 中 6 个非 eligible 来源行准备来源校正、时效核验和替代候选，等待下一轮 independent fresh review。
