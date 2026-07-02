@@ -211,6 +211,7 @@ docs/
 │   ├── human-infra-c2-longtail-fourth-batch-source-resolution-register.json
 │   ├── human-infra-c2-longtail-fourth-batch-manual-fulltext-extraction-register.json
 │   ├── human-infra-c2-longtail-fourth-batch-manual-fulltext-fresh-review-verdict-register.json
+│   ├── human-infra-c2-longtail-fourth-batch-manual-fulltext-reviewed-card-artifact-register.json
 │   ├── human-infra-c2-longtail-third-batch-corrected-source-reextraction-register.json
 │   ├── human-infra-c2-longtail-third-batch-corrected-source-fresh-review-verdict-register.json
 │   ├── human-infra-c2-longtail-third-batch-reviewed-card-artifact-register.json
@@ -438,6 +439,7 @@ docs/
 - `reference/human-infra-c2-longtail-fourth-batch-source-resolution-register.json`：记录 C2-LT-B4 4 个本地复核问题行的来源路线候选，把重复共识路线、ESC 指南、AASLD fulltext 路径和 AGA 指南路径拆成 8 个可审查候选；它仍不等于 fresh review、manual fulltext extraction、reviewed artifacts 或模型准入。
 - `reference/human-infra-c2-longtail-fourth-batch-manual-fulltext-extraction-register.json`：记录 C2-LT-B4 8 个 source-resolution 候选的有界全文/官方页路线抽取，区分 3 个 bounded fresh-review 候选和 5 个 duplicate、route-only 或 manual-access 阻塞行；它仍不等于 independent fresh-review verdict、reviewed artifacts 或模型准入。
 - `reference/human-infra-c2-longtail-fourth-batch-manual-fulltext-fresh-review-verdict-register.json`：记录 C2-LT-B4 8 个 manual/fulltext extraction 行的 independent fresh-review 判定，3 行只允许进入 bounded reviewed artifact prep，5 行继续 duplicate、route-only、manual-access 或 context-only 阻塞；它仍不创建 reviewed artifacts，也不打开模型准入。
+- `reference/human-infra-c2-longtail-fourth-batch-manual-fulltext-reviewed-card-artifact-register.json`：记录 C2-LT-B4 中 3 个 eligible manual/fulltext fresh-review rows 的 18 个有界 Source/变量/endpoint/uncertainty/transfer/downgrade artifacts，并保留 5 个 blockedRows；它仍不打开校准模型、个体建议、干预排序、临床有效性主张或死亡日期输出。
 - `reference/human-infra-c2-longtail-third-batch-source-extraction-register.json`：记录 C2-LT-B3 24/24 个来源的本地字段级抽取，显式保留错源、标题/分卷错配、访问受限和降级触发边界；它仍不等于本地复核、fresh review、reviewed artifacts 或模型准入。
 - `reference/human-infra-c2-longtail-third-batch-local-review-register.json`：记录 C2-LT-B3 24/24 个来源抽取行的本地来源语境复核，确认其只可进入 independent fresh review 或 source-resolution，并保留 5 个错源/错配/访问受限问题行；它仍不等于 reviewed artifacts、Source Card 晋升完成或模型准入。
 - `reference/human-infra-c2-longtail-third-batch-source-resolution-register.json`：记录 C2-LT-B3 5 个本地复核问题行的来源纠偏候选，把错源、分卷错配和 publisher route 问题拆成 7 个 corrected/split/route-normalized 候选；它仍不等于 fresh review、corrected re-extraction、reviewed artifacts 或模型准入。

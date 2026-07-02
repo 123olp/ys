@@ -1,0 +1,1157 @@
+{
+  "schemaVersion": "human-infra.c2ltb4-manual-fulltext-reviewed-card-artifact-register.v1",
+  "registerId": "human-infra-c2-longtail-fourth-batch-manual-fulltext-reviewed-card-artifact-register-2026-07-03",
+  "status": "active-c2ltb4-manual-fulltext-reviewed-card-artifact-register-model-blocked",
+  "purpose": "Promote only the three eligible C2-LT-B4 manual/fulltext fresh-review rows into bounded reviewed artifacts while preserving five duplicate, route-only, manual-access or context-only blocked rows and keeping model admission blocked.",
+  "sourceOfTruth": {
+    "manualFulltextFreshReviewVerdictRegister": "docs/reference/human-infra-c2-longtail-fourth-batch-manual-fulltext-fresh-review-verdict-register.json",
+    "manualFulltextExtractionRegister": "docs/reference/human-infra-c2-longtail-fourth-batch-manual-fulltext-extraction-register.json",
+    "sourceResolutionRegister": "docs/reference/human-infra-c2-longtail-fourth-batch-source-resolution-register.json",
+    "evidencePolicy": "docs/reference/evidence-policy.md",
+    "maturityGapRegister": "docs/reference/human-infra-maturity-gap-register.json"
+  },
+  "scope": {
+    "batchId": "C2-LT-B4",
+    "artifactLevel": "c2ltb4-manual-fulltext-fresh-review-verdict-to-reviewed-card-artifact",
+    "manualFulltextFreshReviewRowCount": 8,
+    "eligibleManualFulltextFreshReviewRowCount": 3,
+    "blockedManualFulltextFreshReviewRowCount": 5,
+    "artifactTypeCount": 6,
+    "reviewedArtifactCount": 18,
+    "blockedRowCount": 5,
+    "artifactTypes": [
+      "reviewed-source-card",
+      "reviewed-variable-card",
+      "reviewed-endpoint-card",
+      "reviewed-uncertainty-card",
+      "reviewed-transfer-boundary-card",
+      "reviewed-downgrade-check"
+    ],
+    "selectionRule": "Create one artifact of each required type only for manual/fulltext fresh-review rows whose artifactPromotionDecision is eligible-for-bounded-reviewed-artifact-prep.",
+    "blockedRowRule": "Rows marked duplicate-lineage, route-only, manual-access or context-only are preserved in blockedRows and cannot create direct reviewed content artifacts.",
+    "artifactStatusRule": "All artifacts are bounded reviewed artifacts and remain model-blocked.",
+    "modelAdmissionRule": "No C2-LT-B4 artifact opens calibrated prediction, individual advice, intervention ranking, clinical-validity claim, death-date output or domain-claim upgrade.",
+    "nonClaims": [
+      "This register is not model-ready evidence and does not authorize calibrated prediction.",
+      "This register does not authorize individual advice, clinical recommendations, individual prognosis, individual death-date output or intervention ranking.",
+      "This register does not fill rows that remained duplicate-lineage, route-only, manual-access or context-only blocked.",
+      "This register does not mark remaining C2 long-tail domains complete."
+    ]
+  },
+  "blockedUses": [
+    "calibrated-prediction",
+    "individual-advice",
+    "individual-death-date-output",
+    "intervention-ranking",
+    "clinical-validity-claim",
+    "domain-claim-upgrade"
+  ],
+  "reviewedArtifacts": [
+    {
+      "artifactId": "C2LTB4-MFART-001-SOURCE-CARD",
+      "artifactType": "reviewed-source-card",
+      "artifactStatus": "filled-reviewed-c2ltb4-manual-fulltext-artifact-model-blocked",
+      "sourceRowKind": "manual-fulltext-fresh-review-row",
+      "reviewId": "C2LTB4-MFFRV-002",
+      "manualExtractionId": "C2LTB4-MFEXT-002",
+      "originTaskId": "C2LTB4-EXT-002",
+      "sourceResolutionId": "C2LTB4-SRR-001",
+      "candidateId": "C2LTB4-SRR-001-CAND-02",
+      "candidateRole": "duplicate-companion-consensus-route-diabetes-care",
+      "domainId": "diabetic-hyperglycemic-hypoglycemic-crisis-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/diabetic-hyperglycemic-hypoglycemic-crisis-continuity",
+      "sourceTitle": "Hyperglycemic Crises in Adults With Diabetes: A Consensus Report",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/39052901/",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "filled-from-eligible-manual-fulltext-fresh-review",
+      "sourceVerdictDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "modelAdmissionDecision": "blocked-pending-c2ltb4-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://pubmed.ncbi.nlm.nih.gov/39052901/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11272983/"
+      ],
+      "registeredExactClaimUse": "Use for bounded extraction of consensus scope around adult DKA/HHS epidemiology, pathophysiology, presentation, diagnosis, treatment and prevention after duplicate handling.",
+      "registeredTransferBoundary": "Transfers to domain vocabulary and source-card context only after fresh review; not to individual diagnosis, medication choice, triage or survival prediction.",
+      "freshReviewFinding": "Fresh review supports this Diabetes Care route as the retained bounded anchor for adult DKA/HHS consensus vocabulary and acute metabolic-crisis continuity framing; it does not support independent effect sizes, individual crisis management advice or calibrated mortality prediction.",
+      "content": {
+        "sourceIdentity": {
+          "title": "Hyperglycemic Crises in Adults With Diabetes: A Consensus Report",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39052901/",
+          "candidateId": "C2LTB4-SRR-001-CAND-02",
+          "manualExtractionId": "C2LTB4-MFEXT-002",
+          "sourceAccessStatus": "pubmed-and-pmc-route-available-with-abstract-context",
+          "sourceIdentityFinding": "Diabetes Care route is a valid adult hyperglycemic crises consensus report route but remains tied to the Diabetologia duplicate/companion lineage."
+        },
+        "sourceRole": "duplicate-companion-consensus-route-diabetes-care",
+        "exactClaimUse": "Use for bounded extraction of consensus scope around adult DKA/HHS epidemiology, pathophysiology, presentation, diagnosis, treatment and prevention after duplicate handling.",
+        "transferBoundary": "Transfers to domain vocabulary and source-card context only after fresh review; not to individual diagnosis, medication choice, triage or survival prediction.",
+        "freshReviewEvidence": [
+          {
+            "url": "https://pubmed.ncbi.nlm.nih.gov/39052901/",
+            "evidenceType": "pubmed-consensus-route",
+            "finding": "PubMed metadata identifies the Diabetes Care route for the adult hyperglycemic crises consensus report."
+          },
+          {
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11272983/",
+            "evidenceType": "pmc-fulltext-route",
+            "finding": "PMC route is available for source-context inspection once duplicate-lineage handling is explicit."
+          }
+        ],
+        "reviewerNote": "Fresh review supports this Diabetes Care route as the retained bounded anchor for adult DKA/HHS consensus vocabulary and acute metabolic-crisis continuity framing; it does not support independent effect sizes, individual crisis management advice or calibrated mortality prediction."
+      }
+    },
+    {
+      "artifactId": "C2LTB4-MFART-001-VARIABLE-CARD",
+      "artifactType": "reviewed-variable-card",
+      "artifactStatus": "filled-reviewed-c2ltb4-manual-fulltext-artifact-model-blocked",
+      "sourceRowKind": "manual-fulltext-fresh-review-row",
+      "reviewId": "C2LTB4-MFFRV-002",
+      "manualExtractionId": "C2LTB4-MFEXT-002",
+      "originTaskId": "C2LTB4-EXT-002",
+      "sourceResolutionId": "C2LTB4-SRR-001",
+      "candidateId": "C2LTB4-SRR-001-CAND-02",
+      "candidateRole": "duplicate-companion-consensus-route-diabetes-care",
+      "domainId": "diabetic-hyperglycemic-hypoglycemic-crisis-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/diabetic-hyperglycemic-hypoglycemic-crisis-continuity",
+      "sourceTitle": "Hyperglycemic Crises in Adults With Diabetes: A Consensus Report",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/39052901/",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "filled-from-eligible-manual-fulltext-fresh-review",
+      "sourceVerdictDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "modelAdmissionDecision": "blocked-pending-c2ltb4-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://pubmed.ncbi.nlm.nih.gov/39052901/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11272983/"
+      ],
+      "registeredExactClaimUse": "Use for bounded extraction of consensus scope around adult DKA/HHS epidemiology, pathophysiology, presentation, diagnosis, treatment and prevention after duplicate handling.",
+      "registeredTransferBoundary": "Transfers to domain vocabulary and source-card context only after fresh review; not to individual diagnosis, medication choice, triage or survival prediction.",
+      "freshReviewFinding": "Fresh review supports this Diabetes Care route as the retained bounded anchor for adult DKA/HHS consensus vocabulary and acute metabolic-crisis continuity framing; it does not support independent effect sizes, individual crisis management advice or calibrated mortality prediction.",
+      "content": {
+        "variableQuestion": "Which bounded variables may this reviewed manual/fulltext source name for Human Infra continuity modeling language?",
+        "variableSeed": [
+          "adult-DKA-HHS-consensus-scope",
+          "acute-metabolic-crisis-continuity",
+          "source-lineage-normalization"
+        ],
+        "sourceExtractedVariables": [
+          "adult-DKA-HHS-consensus-scope",
+          "acute-metabolic-crisis-continuity",
+          "source-lineage-normalization"
+        ],
+        "modelPosition": "C2 source-maintenance evidence layer before reviewed artifact promotion",
+        "admissibleUse": "May inform bounded source/variable/endpoint/uncertainty/transfer/downgrade artifact preparation only after independent fresh review; cannot directly enter calibrated prediction.",
+        "promotionBoundary": "bounded reviewed artifact vocabulary only; calibrated prediction, intervention ranking, individual advice and clinical-validity claims remain blocked"
+      }
+    },
+    {
+      "artifactId": "C2LTB4-MFART-001-ENDPOINT-CARD",
+      "artifactType": "reviewed-endpoint-card",
+      "artifactStatus": "filled-reviewed-c2ltb4-manual-fulltext-artifact-model-blocked",
+      "sourceRowKind": "manual-fulltext-fresh-review-row",
+      "reviewId": "C2LTB4-MFFRV-002",
+      "manualExtractionId": "C2LTB4-MFEXT-002",
+      "originTaskId": "C2LTB4-EXT-002",
+      "sourceResolutionId": "C2LTB4-SRR-001",
+      "candidateId": "C2LTB4-SRR-001-CAND-02",
+      "candidateRole": "duplicate-companion-consensus-route-diabetes-care",
+      "domainId": "diabetic-hyperglycemic-hypoglycemic-crisis-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/diabetic-hyperglycemic-hypoglycemic-crisis-continuity",
+      "sourceTitle": "Hyperglycemic Crises in Adults With Diabetes: A Consensus Report",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/39052901/",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "filled-from-eligible-manual-fulltext-fresh-review",
+      "sourceVerdictDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "modelAdmissionDecision": "blocked-pending-c2ltb4-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://pubmed.ncbi.nlm.nih.gov/39052901/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11272983/"
+      ],
+      "registeredExactClaimUse": "Use for bounded extraction of consensus scope around adult DKA/HHS epidemiology, pathophysiology, presentation, diagnosis, treatment and prevention after duplicate handling.",
+      "registeredTransferBoundary": "Transfers to domain vocabulary and source-card context only after fresh review; not to individual diagnosis, medication choice, triage or survival prediction.",
+      "freshReviewFinding": "Fresh review supports this Diabetes Care route as the retained bounded anchor for adult DKA/HHS consensus vocabulary and acute metabolic-crisis continuity framing; it does not support independent effect sizes, individual crisis management advice or calibrated mortality prediction.",
+      "content": {
+        "endpointQuestion": "Which endpoint vocabulary is supported by this manual/fulltext fresh-review row without calibrated effect-size claims?",
+        "endpointDefinition": "Endpoint vocabulary can include adult DKA/HHS crisis state, diagnostic/treatment/prevention context and consensus route; it does not define a calibrated survival endpoint.",
+        "populationOrSetting": "Adults with diabetes, healthcare-professional consensus setting, crisis management context.",
+        "endpointBoundary": "supports source, endpoint and route vocabulary only; no calibrated survival endpoint, individual recommendation or clinical effect size is admitted",
+        "modelPosition": "C2 source-maintenance evidence layer before reviewed artifact promotion",
+        "blockedEndpointUses": [
+          "calibrated-prediction",
+          "individual-advice",
+          "individual-death-date-output",
+          "intervention-ranking",
+          "clinical-validity-claim",
+          "domain-claim-upgrade"
+        ]
+      }
+    },
+    {
+      "artifactId": "C2LTB4-MFART-001-UNCERTAINTY-CARD",
+      "artifactType": "reviewed-uncertainty-card",
+      "artifactStatus": "filled-reviewed-c2ltb4-manual-fulltext-artifact-model-blocked",
+      "sourceRowKind": "manual-fulltext-fresh-review-row",
+      "reviewId": "C2LTB4-MFFRV-002",
+      "manualExtractionId": "C2LTB4-MFEXT-002",
+      "originTaskId": "C2LTB4-EXT-002",
+      "sourceResolutionId": "C2LTB4-SRR-001",
+      "candidateId": "C2LTB4-SRR-001-CAND-02",
+      "candidateRole": "duplicate-companion-consensus-route-diabetes-care",
+      "domainId": "diabetic-hyperglycemic-hypoglycemic-crisis-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/diabetic-hyperglycemic-hypoglycemic-crisis-continuity",
+      "sourceTitle": "Hyperglycemic Crises in Adults With Diabetes: A Consensus Report",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/39052901/",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "filled-from-eligible-manual-fulltext-fresh-review",
+      "sourceVerdictDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "modelAdmissionDecision": "blocked-pending-c2ltb4-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://pubmed.ncbi.nlm.nih.gov/39052901/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11272983/"
+      ],
+      "registeredExactClaimUse": "Use for bounded extraction of consensus scope around adult DKA/HHS epidemiology, pathophysiology, presentation, diagnosis, treatment and prevention after duplicate handling.",
+      "registeredTransferBoundary": "Transfers to domain vocabulary and source-card context only after fresh review; not to individual diagnosis, medication choice, triage or survival prediction.",
+      "freshReviewFinding": "Fresh review supports this Diabetes Care route as the retained bounded anchor for adult DKA/HHS consensus vocabulary and acute metabolic-crisis continuity framing; it does not support independent effect sizes, individual crisis management advice or calibrated mortality prediction.",
+      "content": {
+        "uncertaintyQuestion": "Which uncertainty or bias must travel with this source before any model-facing use?",
+        "uncertaintyOrBias": "Consensus text is not an effect-size study; duplicate route must not be treated as independent replication; individual treatment translation is prohibited.",
+        "uncertaintyBoundaryVerdict": "sufficient-for-bounded-artifact-prep-after-lineage-collapse",
+        "evidenceLimit": "Supports bounded source-context, variable, endpoint, transfer-boundary and downgrade vocabulary only; no model coefficient is admitted.",
+        "downgradeTriggers": [
+          "Block if fresh review cannot collapse duplicate lineage with EXT-001.",
+          "Block if reviewer cannot separate consensus scope from individual management advice.",
+          "Block model admission until reviewed artifacts and model validation gates exist."
+        ]
+      }
+    },
+    {
+      "artifactId": "C2LTB4-MFART-001-TRANSFER-BOUNDARY-CARD",
+      "artifactType": "reviewed-transfer-boundary-card",
+      "artifactStatus": "filled-reviewed-c2ltb4-manual-fulltext-artifact-model-blocked",
+      "sourceRowKind": "manual-fulltext-fresh-review-row",
+      "reviewId": "C2LTB4-MFFRV-002",
+      "manualExtractionId": "C2LTB4-MFEXT-002",
+      "originTaskId": "C2LTB4-EXT-002",
+      "sourceResolutionId": "C2LTB4-SRR-001",
+      "candidateId": "C2LTB4-SRR-001-CAND-02",
+      "candidateRole": "duplicate-companion-consensus-route-diabetes-care",
+      "domainId": "diabetic-hyperglycemic-hypoglycemic-crisis-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/diabetic-hyperglycemic-hypoglycemic-crisis-continuity",
+      "sourceTitle": "Hyperglycemic Crises in Adults With Diabetes: A Consensus Report",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/39052901/",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "filled-from-eligible-manual-fulltext-fresh-review",
+      "sourceVerdictDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "modelAdmissionDecision": "blocked-pending-c2ltb4-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://pubmed.ncbi.nlm.nih.gov/39052901/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11272983/"
+      ],
+      "registeredExactClaimUse": "Use for bounded extraction of consensus scope around adult DKA/HHS epidemiology, pathophysiology, presentation, diagnosis, treatment and prevention after duplicate handling.",
+      "registeredTransferBoundary": "Transfers to domain vocabulary and source-card context only after fresh review; not to individual diagnosis, medication choice, triage or survival prediction.",
+      "freshReviewFinding": "Fresh review supports this Diabetes Care route as the retained bounded anchor for adult DKA/HHS consensus vocabulary and acute metabolic-crisis continuity framing; it does not support independent effect sizes, individual crisis management advice or calibrated mortality prediction.",
+      "content": {
+        "transferBoundaryQuestion": "Where must this source stop when translated into Human Infra domain language?",
+        "domainTransferVerdict": "transfer-boundary-present-and-required",
+        "registeredTransferBoundary": "Transfers to domain vocabulary and source-card context only after fresh review; not to individual diagnosis, medication choice, triage or survival prediction.",
+        "sourceExtractionTransferBoundary": "Transfers to domain vocabulary and source-card context only after fresh review; not to individual diagnosis, medication choice, triage or survival prediction.",
+        "blockedTransferUses": [
+          "calibrated-prediction",
+          "individual-advice",
+          "individual-death-date-output",
+          "intervention-ranking",
+          "clinical-validity-claim",
+          "domain-claim-upgrade"
+        ]
+      }
+    },
+    {
+      "artifactId": "C2LTB4-MFART-001-DOWNGRADE-CHECK",
+      "artifactType": "reviewed-downgrade-check",
+      "artifactStatus": "filled-reviewed-c2ltb4-manual-fulltext-artifact-model-blocked",
+      "sourceRowKind": "manual-fulltext-fresh-review-row",
+      "reviewId": "C2LTB4-MFFRV-002",
+      "manualExtractionId": "C2LTB4-MFEXT-002",
+      "originTaskId": "C2LTB4-EXT-002",
+      "sourceResolutionId": "C2LTB4-SRR-001",
+      "candidateId": "C2LTB4-SRR-001-CAND-02",
+      "candidateRole": "duplicate-companion-consensus-route-diabetes-care",
+      "domainId": "diabetic-hyperglycemic-hypoglycemic-crisis-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/diabetic-hyperglycemic-hypoglycemic-crisis-continuity",
+      "sourceTitle": "Hyperglycemic Crises in Adults With Diabetes: A Consensus Report",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/39052901/",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "filled-from-eligible-manual-fulltext-fresh-review",
+      "sourceVerdictDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "modelAdmissionDecision": "blocked-pending-c2ltb4-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://pubmed.ncbi.nlm.nih.gov/39052901/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11272983/"
+      ],
+      "registeredExactClaimUse": "Use for bounded extraction of consensus scope around adult DKA/HHS epidemiology, pathophysiology, presentation, diagnosis, treatment and prevention after duplicate handling.",
+      "registeredTransferBoundary": "Transfers to domain vocabulary and source-card context only after fresh review; not to individual diagnosis, medication choice, triage or survival prediction.",
+      "freshReviewFinding": "Fresh review supports this Diabetes Care route as the retained bounded anchor for adult DKA/HHS consensus vocabulary and acute metabolic-crisis continuity framing; it does not support independent effect sizes, individual crisis management advice or calibrated mortality prediction.",
+      "content": {
+        "downgradeQuestion": "When should this artifact be downgraded or blocked before model admission?",
+        "downgradeVerdict": "Eligible only after duplicate-lineage collapse; full clinical recommendations, triage decisions and treatment advice remain outside allowed use.",
+        "reviewerVerdict": "support-with-boundary",
+        "downgradeRequiredWhen": [
+          "Block if fresh review cannot collapse duplicate lineage with EXT-001.",
+          "Block if reviewer cannot separate consensus scope from individual management advice.",
+          "Block model admission until reviewed artifacts and model validation gates exist."
+        ],
+        "blockedSiblingPolicy": "Rows with duplicate-lineage, route-only, manual-access or context-only decisions stay in blockedRows and cannot create direct reviewed content artifacts."
+      }
+    },
+    {
+      "artifactId": "C2LTB4-MFART-002-SOURCE-CARD",
+      "artifactType": "reviewed-source-card",
+      "artifactStatus": "filled-reviewed-c2ltb4-manual-fulltext-artifact-model-blocked",
+      "sourceRowKind": "manual-fulltext-fresh-review-row",
+      "reviewId": "C2LTB4-MFFRV-005",
+      "manualExtractionId": "C2LTB4-MFEXT-005",
+      "originTaskId": "C2LTB4-EXT-011",
+      "sourceResolutionId": "C2LTB4-SRR-003",
+      "candidateId": "C2LTB4-SRR-003-CAND-01",
+      "candidateRole": "pmc-fulltext-route",
+      "domainId": "chronic-liver-disease-masld-mash-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/chronic-liver-disease-masld-mash-continuity",
+      "sourceTitle": "AASLD Practice Guidance on the clinical assessment and management of nonalcoholic fatty liver disease",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10735173/",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "filled-from-eligible-manual-fulltext-fresh-review",
+      "sourceVerdictDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "modelAdmissionDecision": "blocked-pending-c2ltb4-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC10735173/",
+        "https://pubmed.ncbi.nlm.nih.gov/36727674/"
+      ],
+      "registeredExactClaimUse": "Use for bounded extraction that NAFLD/MASLD assessment includes identifying patients unlikely to have advanced fibrosis and routing higher-risk metabolic groups toward more frequent assessment or specialty evaluation.",
+      "registeredTransferBoundary": "Transfers to Source Card, endpoint vocabulary and downgrade-boundary cards after fresh review; not to individual diagnosis, drug selection or prognosis.",
+      "freshReviewFinding": "Fresh review supports the AASLD PMC fulltext route for bounded artifact prep around primary risk assessment, advanced fibrosis risk stratification, FIB-4/noninvasive assessment vocabulary and liver-disease continuity framing; it does not support individual diagnosis or prognosis.",
+      "content": {
+        "sourceIdentity": {
+          "title": "AASLD Practice Guidance on the clinical assessment and management of nonalcoholic fatty liver disease",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10735173/",
+          "candidateId": "C2LTB4-SRR-003-CAND-01",
+          "manualExtractionId": "C2LTB4-MFEXT-005",
+          "sourceAccessStatus": "pmc-fulltext-route-accessible",
+          "sourceIdentityFinding": "PMC route identifies the AASLD NAFLD practice guidance and provides open fulltext context for risk assessment and fibrosis triage language."
+        },
+        "sourceRole": "pmc-fulltext-route",
+        "exactClaimUse": "Use for bounded extraction that NAFLD/MASLD assessment includes identifying patients unlikely to have advanced fibrosis and routing higher-risk metabolic groups toward more frequent assessment or specialty evaluation.",
+        "transferBoundary": "Transfers to Source Card, endpoint vocabulary and downgrade-boundary cards after fresh review; not to individual diagnosis, drug selection or prognosis.",
+        "freshReviewEvidence": [
+          {
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10735173/",
+            "evidenceType": "pmc-fulltext-practice-guidance",
+            "finding": "Open PMC route provides AASLD practice-guidance fulltext context for clinical assessment and risk stratification."
+          },
+          {
+            "url": "https://pubmed.ncbi.nlm.nih.gov/36727674/",
+            "evidenceType": "pubmed-no-abstract-index",
+            "finding": "PubMed has no abstract but identifies DOI/PMCID route for the AASLD practice guidance."
+          }
+        ],
+        "reviewerNote": "Fresh review supports the AASLD PMC fulltext route for bounded artifact prep around primary risk assessment, advanced fibrosis risk stratification, FIB-4/noninvasive assessment vocabulary and liver-disease continuity framing; it does not support individual diagnosis or prognosis."
+      }
+    },
+    {
+      "artifactId": "C2LTB4-MFART-002-VARIABLE-CARD",
+      "artifactType": "reviewed-variable-card",
+      "artifactStatus": "filled-reviewed-c2ltb4-manual-fulltext-artifact-model-blocked",
+      "sourceRowKind": "manual-fulltext-fresh-review-row",
+      "reviewId": "C2LTB4-MFFRV-005",
+      "manualExtractionId": "C2LTB4-MFEXT-005",
+      "originTaskId": "C2LTB4-EXT-011",
+      "sourceResolutionId": "C2LTB4-SRR-003",
+      "candidateId": "C2LTB4-SRR-003-CAND-01",
+      "candidateRole": "pmc-fulltext-route",
+      "domainId": "chronic-liver-disease-masld-mash-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/chronic-liver-disease-masld-mash-continuity",
+      "sourceTitle": "AASLD Practice Guidance on the clinical assessment and management of nonalcoholic fatty liver disease",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10735173/",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "filled-from-eligible-manual-fulltext-fresh-review",
+      "sourceVerdictDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "modelAdmissionDecision": "blocked-pending-c2ltb4-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC10735173/",
+        "https://pubmed.ncbi.nlm.nih.gov/36727674/"
+      ],
+      "registeredExactClaimUse": "Use for bounded extraction that NAFLD/MASLD assessment includes identifying patients unlikely to have advanced fibrosis and routing higher-risk metabolic groups toward more frequent assessment or specialty evaluation.",
+      "registeredTransferBoundary": "Transfers to Source Card, endpoint vocabulary and downgrade-boundary cards after fresh review; not to individual diagnosis, drug selection or prognosis.",
+      "freshReviewFinding": "Fresh review supports the AASLD PMC fulltext route for bounded artifact prep around primary risk assessment, advanced fibrosis risk stratification, FIB-4/noninvasive assessment vocabulary and liver-disease continuity framing; it does not support individual diagnosis or prognosis.",
+      "content": {
+        "variableQuestion": "Which bounded variables may this reviewed manual/fulltext source name for Human Infra continuity modeling language?",
+        "variableSeed": [
+          "advanced-fibrosis-risk-stratification",
+          "masld-mash-continuity",
+          "noninvasive-liver-risk-assessment"
+        ],
+        "sourceExtractedVariables": [
+          "advanced-fibrosis-risk-stratification",
+          "masld-mash-continuity",
+          "noninvasive-liver-risk-assessment"
+        ],
+        "modelPosition": "C2 source-maintenance evidence layer before reviewed artifact promotion",
+        "admissibleUse": "May inform bounded source/variable/endpoint/uncertainty/transfer/downgrade artifact preparation only after independent fresh review; cannot directly enter calibrated prediction.",
+        "promotionBoundary": "bounded reviewed artifact vocabulary only; calibrated prediction, intervention ranking, individual advice and clinical-validity claims remain blocked"
+      }
+    },
+    {
+      "artifactId": "C2LTB4-MFART-002-ENDPOINT-CARD",
+      "artifactType": "reviewed-endpoint-card",
+      "artifactStatus": "filled-reviewed-c2ltb4-manual-fulltext-artifact-model-blocked",
+      "sourceRowKind": "manual-fulltext-fresh-review-row",
+      "reviewId": "C2LTB4-MFFRV-005",
+      "manualExtractionId": "C2LTB4-MFEXT-005",
+      "originTaskId": "C2LTB4-EXT-011",
+      "sourceResolutionId": "C2LTB4-SRR-003",
+      "candidateId": "C2LTB4-SRR-003-CAND-01",
+      "candidateRole": "pmc-fulltext-route",
+      "domainId": "chronic-liver-disease-masld-mash-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/chronic-liver-disease-masld-mash-continuity",
+      "sourceTitle": "AASLD Practice Guidance on the clinical assessment and management of nonalcoholic fatty liver disease",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10735173/",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "filled-from-eligible-manual-fulltext-fresh-review",
+      "sourceVerdictDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "modelAdmissionDecision": "blocked-pending-c2ltb4-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC10735173/",
+        "https://pubmed.ncbi.nlm.nih.gov/36727674/"
+      ],
+      "registeredExactClaimUse": "Use for bounded extraction that NAFLD/MASLD assessment includes identifying patients unlikely to have advanced fibrosis and routing higher-risk metabolic groups toward more frequent assessment or specialty evaluation.",
+      "registeredTransferBoundary": "Transfers to Source Card, endpoint vocabulary and downgrade-boundary cards after fresh review; not to individual diagnosis, drug selection or prognosis.",
+      "freshReviewFinding": "Fresh review supports the AASLD PMC fulltext route for bounded artifact prep around primary risk assessment, advanced fibrosis risk stratification, FIB-4/noninvasive assessment vocabulary and liver-disease continuity framing; it does not support individual diagnosis or prognosis.",
+      "content": {
+        "endpointQuestion": "Which endpoint vocabulary is supported by this manual/fulltext fresh-review row without calibrated effect-size claims?",
+        "endpointDefinition": "Endpoint vocabulary can include advanced fibrosis risk stratification, noninvasive testing, FIB-4 style triage, liver-related morbidity context and longitudinal reassessment need.",
+        "populationOrSetting": "Patients with NAFLD/MASLD or suspected steatotic liver disease in clinical assessment pathways; not individualized liver diagnosis or treatment advice.",
+        "endpointBoundary": "supports source, endpoint and route vocabulary only; no calibrated survival endpoint, individual recommendation or clinical effect size is admitted",
+        "modelPosition": "C2 source-maintenance evidence layer before reviewed artifact promotion",
+        "blockedEndpointUses": [
+          "calibrated-prediction",
+          "individual-advice",
+          "individual-death-date-output",
+          "intervention-ranking",
+          "clinical-validity-claim",
+          "domain-claim-upgrade"
+        ]
+      }
+    },
+    {
+      "artifactId": "C2LTB4-MFART-002-UNCERTAINTY-CARD",
+      "artifactType": "reviewed-uncertainty-card",
+      "artifactStatus": "filled-reviewed-c2ltb4-manual-fulltext-artifact-model-blocked",
+      "sourceRowKind": "manual-fulltext-fresh-review-row",
+      "reviewId": "C2LTB4-MFFRV-005",
+      "manualExtractionId": "C2LTB4-MFEXT-005",
+      "originTaskId": "C2LTB4-EXT-011",
+      "sourceResolutionId": "C2LTB4-SRR-003",
+      "candidateId": "C2LTB4-SRR-003-CAND-01",
+      "candidateRole": "pmc-fulltext-route",
+      "domainId": "chronic-liver-disease-masld-mash-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/chronic-liver-disease-masld-mash-continuity",
+      "sourceTitle": "AASLD Practice Guidance on the clinical assessment and management of nonalcoholic fatty liver disease",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10735173/",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "filled-from-eligible-manual-fulltext-fresh-review",
+      "sourceVerdictDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "modelAdmissionDecision": "blocked-pending-c2ltb4-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC10735173/",
+        "https://pubmed.ncbi.nlm.nih.gov/36727674/"
+      ],
+      "registeredExactClaimUse": "Use for bounded extraction that NAFLD/MASLD assessment includes identifying patients unlikely to have advanced fibrosis and routing higher-risk metabolic groups toward more frequent assessment or specialty evaluation.",
+      "registeredTransferBoundary": "Transfers to Source Card, endpoint vocabulary and downgrade-boundary cards after fresh review; not to individual diagnosis, drug selection or prognosis.",
+      "freshReviewFinding": "Fresh review supports the AASLD PMC fulltext route for bounded artifact prep around primary risk assessment, advanced fibrosis risk stratification, FIB-4/noninvasive assessment vocabulary and liver-disease continuity framing; it does not support individual diagnosis or prognosis.",
+      "content": {
+        "uncertaintyQuestion": "Which uncertainty or bias must travel with this source before any model-facing use?",
+        "uncertaintyOrBias": "Practice guidance is not a calibrated lifespan model; terminology has evolved from NAFLD to MASLD; recommendations require version and terminology boundary review.",
+        "uncertaintyBoundaryVerdict": "sufficient-for-bounded-artifact-prep",
+        "evidenceLimit": "Supports bounded source-context, variable, endpoint, transfer-boundary and downgrade vocabulary only; no model coefficient is admitted.",
+        "downgradeTriggers": [
+          "Block if terminology migration from NAFLD to MASLD is not explicitly bounded.",
+          "Block if exact fibrosis-risk or referral thresholds are used without fresh review.",
+          "Block model admission and individual clinical advice."
+        ]
+      }
+    },
+    {
+      "artifactId": "C2LTB4-MFART-002-TRANSFER-BOUNDARY-CARD",
+      "artifactType": "reviewed-transfer-boundary-card",
+      "artifactStatus": "filled-reviewed-c2ltb4-manual-fulltext-artifact-model-blocked",
+      "sourceRowKind": "manual-fulltext-fresh-review-row",
+      "reviewId": "C2LTB4-MFFRV-005",
+      "manualExtractionId": "C2LTB4-MFEXT-005",
+      "originTaskId": "C2LTB4-EXT-011",
+      "sourceResolutionId": "C2LTB4-SRR-003",
+      "candidateId": "C2LTB4-SRR-003-CAND-01",
+      "candidateRole": "pmc-fulltext-route",
+      "domainId": "chronic-liver-disease-masld-mash-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/chronic-liver-disease-masld-mash-continuity",
+      "sourceTitle": "AASLD Practice Guidance on the clinical assessment and management of nonalcoholic fatty liver disease",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10735173/",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "filled-from-eligible-manual-fulltext-fresh-review",
+      "sourceVerdictDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "modelAdmissionDecision": "blocked-pending-c2ltb4-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC10735173/",
+        "https://pubmed.ncbi.nlm.nih.gov/36727674/"
+      ],
+      "registeredExactClaimUse": "Use for bounded extraction that NAFLD/MASLD assessment includes identifying patients unlikely to have advanced fibrosis and routing higher-risk metabolic groups toward more frequent assessment or specialty evaluation.",
+      "registeredTransferBoundary": "Transfers to Source Card, endpoint vocabulary and downgrade-boundary cards after fresh review; not to individual diagnosis, drug selection or prognosis.",
+      "freshReviewFinding": "Fresh review supports the AASLD PMC fulltext route for bounded artifact prep around primary risk assessment, advanced fibrosis risk stratification, FIB-4/noninvasive assessment vocabulary and liver-disease continuity framing; it does not support individual diagnosis or prognosis.",
+      "content": {
+        "transferBoundaryQuestion": "Where must this source stop when translated into Human Infra domain language?",
+        "domainTransferVerdict": "transfer-boundary-present-and-required",
+        "registeredTransferBoundary": "Transfers to Source Card, endpoint vocabulary and downgrade-boundary cards after fresh review; not to individual diagnosis, drug selection or prognosis.",
+        "sourceExtractionTransferBoundary": "Transfers to Source Card, endpoint vocabulary and downgrade-boundary cards after fresh review; not to individual diagnosis, drug selection or prognosis.",
+        "blockedTransferUses": [
+          "calibrated-prediction",
+          "individual-advice",
+          "individual-death-date-output",
+          "intervention-ranking",
+          "clinical-validity-claim",
+          "domain-claim-upgrade"
+        ]
+      }
+    },
+    {
+      "artifactId": "C2LTB4-MFART-002-DOWNGRADE-CHECK",
+      "artifactType": "reviewed-downgrade-check",
+      "artifactStatus": "filled-reviewed-c2ltb4-manual-fulltext-artifact-model-blocked",
+      "sourceRowKind": "manual-fulltext-fresh-review-row",
+      "reviewId": "C2LTB4-MFFRV-005",
+      "manualExtractionId": "C2LTB4-MFEXT-005",
+      "originTaskId": "C2LTB4-EXT-011",
+      "sourceResolutionId": "C2LTB4-SRR-003",
+      "candidateId": "C2LTB4-SRR-003-CAND-01",
+      "candidateRole": "pmc-fulltext-route",
+      "domainId": "chronic-liver-disease-masld-mash-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/chronic-liver-disease-masld-mash-continuity",
+      "sourceTitle": "AASLD Practice Guidance on the clinical assessment and management of nonalcoholic fatty liver disease",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10735173/",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "filled-from-eligible-manual-fulltext-fresh-review",
+      "sourceVerdictDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "modelAdmissionDecision": "blocked-pending-c2ltb4-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC10735173/",
+        "https://pubmed.ncbi.nlm.nih.gov/36727674/"
+      ],
+      "registeredExactClaimUse": "Use for bounded extraction that NAFLD/MASLD assessment includes identifying patients unlikely to have advanced fibrosis and routing higher-risk metabolic groups toward more frequent assessment or specialty evaluation.",
+      "registeredTransferBoundary": "Transfers to Source Card, endpoint vocabulary and downgrade-boundary cards after fresh review; not to individual diagnosis, drug selection or prognosis.",
+      "freshReviewFinding": "Fresh review supports the AASLD PMC fulltext route for bounded artifact prep around primary risk assessment, advanced fibrosis risk stratification, FIB-4/noninvasive assessment vocabulary and liver-disease continuity framing; it does not support individual diagnosis or prognosis.",
+      "content": {
+        "downgradeQuestion": "When should this artifact be downgraded or blocked before model admission?",
+        "downgradeVerdict": "Terminology migration from NAFLD to MASLD, threshold use and referral logic must remain bounded and cannot become individual clinical guidance.",
+        "reviewerVerdict": "support-with-boundary",
+        "downgradeRequiredWhen": [
+          "Block if terminology migration from NAFLD to MASLD is not explicitly bounded.",
+          "Block if exact fibrosis-risk or referral thresholds are used without fresh review.",
+          "Block model admission and individual clinical advice."
+        ],
+        "blockedSiblingPolicy": "Rows with duplicate-lineage, route-only, manual-access or context-only decisions stay in blockedRows and cannot create direct reviewed content artifacts."
+      }
+    },
+    {
+      "artifactId": "C2LTB4-MFART-003-SOURCE-CARD",
+      "artifactType": "reviewed-source-card",
+      "artifactStatus": "filled-reviewed-c2ltb4-manual-fulltext-artifact-model-blocked",
+      "sourceRowKind": "manual-fulltext-fresh-review-row",
+      "reviewId": "C2LTB4-MFFRV-007",
+      "manualExtractionId": "C2LTB4-MFEXT-007",
+      "originTaskId": "C2LTB4-EXT-020",
+      "sourceResolutionId": "C2LTB4-SRR-004",
+      "candidateId": "C2LTB4-SRR-004-CAND-01",
+      "candidateRole": "official-society-guidance-page-route",
+      "domainId": "iron-deficiency-anemia-oxygen-carrying-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/iron-deficiency-anemia-oxygen-carrying-continuity",
+      "sourceTitle": "Gastrointestinal evaluation of iron deficiency anemia",
+      "sourceUrl": "https://gastro.org/clinical-guidance/gastrointestinal-evaluation-of-iron-deficiency-anemia/",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "filled-from-eligible-manual-fulltext-fresh-review",
+      "sourceVerdictDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "modelAdmissionDecision": "blocked-pending-c2ltb4-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://gastro.org/clinical-guidance/gastrointestinal-evaluation-of-iron-deficiency-anemia/",
+        "https://doi.org/10.1053/j.gastro.2020.06.046"
+      ],
+      "registeredExactClaimUse": "Use for bounded extraction that IDA evaluation guidance includes ferritin threshold framing, bidirectional endoscopy routing for defined adult groups, H. pylori testing after negative endoscopy, celiac serology-first logic and initial iron supplementation after uncomplicated negative bidirectional endoscopy.",
+      "registeredTransferBoundary": "Transfers to source-card and endpoint-card prep after fresh review; not to individual endoscopy decisions or anemia treatment advice.",
+      "freshReviewFinding": "Fresh review supports bounded artifact prep from the AGA guideline page for IDA diagnostic cutoff and GI evaluation pathway vocabulary, including bidirectional endoscopy, H. pylori/celiac testing and post-negative-endoscopy supplementation route. It does not support individual endoscopy decisions or anemia treatment advice.",
+      "content": {
+        "sourceIdentity": {
+          "title": "Gastrointestinal evaluation of iron deficiency anemia",
+          "url": "https://gastro.org/clinical-guidance/gastrointestinal-evaluation-of-iron-deficiency-anemia/",
+          "candidateId": "C2LTB4-SRR-004-CAND-01",
+          "manualExtractionId": "C2LTB4-MFEXT-007",
+          "sourceAccessStatus": "official-aga-page-web-accessible-terminal-guarded",
+          "sourceIdentityFinding": "AGA official guidance page identifies the 2020 IDA guideline, publication date, DOI and recommendation list for initial diagnosis and GI evaluation of iron deficiency anemia."
+        },
+        "sourceRole": "official-society-guidance-page-route",
+        "exactClaimUse": "Use for bounded extraction that IDA evaluation guidance includes ferritin threshold framing, bidirectional endoscopy routing for defined adult groups, H. pylori testing after negative endoscopy, celiac serology-first logic and initial iron supplementation after uncomplicated negative bidirectional endoscopy.",
+        "transferBoundary": "Transfers to source-card and endpoint-card prep after fresh review; not to individual endoscopy decisions or anemia treatment advice.",
+        "freshReviewEvidence": [
+          {
+            "url": "https://gastro.org/clinical-guidance/gastrointestinal-evaluation-of-iron-deficiency-anemia/",
+            "evidenceType": "official-society-guideline-page",
+            "finding": "AGA page provides publication date, DOI route and recommendation list for GI evaluation of IDA."
+          },
+          {
+            "url": "https://doi.org/10.1053/j.gastro.2020.06.046",
+            "evidenceType": "doi-guideline-route",
+            "finding": "DOI route identifies the Gastroenterology guideline fulltext candidate for verification."
+          }
+        ],
+        "reviewerNote": "Fresh review supports bounded artifact prep from the AGA guideline page for IDA diagnostic cutoff and GI evaluation pathway vocabulary, including bidirectional endoscopy, H. pylori/celiac testing and post-negative-endoscopy supplementation route. It does not support individual endoscopy decisions or anemia treatment advice."
+      }
+    },
+    {
+      "artifactId": "C2LTB4-MFART-003-VARIABLE-CARD",
+      "artifactType": "reviewed-variable-card",
+      "artifactStatus": "filled-reviewed-c2ltb4-manual-fulltext-artifact-model-blocked",
+      "sourceRowKind": "manual-fulltext-fresh-review-row",
+      "reviewId": "C2LTB4-MFFRV-007",
+      "manualExtractionId": "C2LTB4-MFEXT-007",
+      "originTaskId": "C2LTB4-EXT-020",
+      "sourceResolutionId": "C2LTB4-SRR-004",
+      "candidateId": "C2LTB4-SRR-004-CAND-01",
+      "candidateRole": "official-society-guidance-page-route",
+      "domainId": "iron-deficiency-anemia-oxygen-carrying-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/iron-deficiency-anemia-oxygen-carrying-continuity",
+      "sourceTitle": "Gastrointestinal evaluation of iron deficiency anemia",
+      "sourceUrl": "https://gastro.org/clinical-guidance/gastrointestinal-evaluation-of-iron-deficiency-anemia/",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "filled-from-eligible-manual-fulltext-fresh-review",
+      "sourceVerdictDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "modelAdmissionDecision": "blocked-pending-c2ltb4-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://gastro.org/clinical-guidance/gastrointestinal-evaluation-of-iron-deficiency-anemia/",
+        "https://doi.org/10.1053/j.gastro.2020.06.046"
+      ],
+      "registeredExactClaimUse": "Use for bounded extraction that IDA evaluation guidance includes ferritin threshold framing, bidirectional endoscopy routing for defined adult groups, H. pylori testing after negative endoscopy, celiac serology-first logic and initial iron supplementation after uncomplicated negative bidirectional endoscopy.",
+      "registeredTransferBoundary": "Transfers to source-card and endpoint-card prep after fresh review; not to individual endoscopy decisions or anemia treatment advice.",
+      "freshReviewFinding": "Fresh review supports bounded artifact prep from the AGA guideline page for IDA diagnostic cutoff and GI evaluation pathway vocabulary, including bidirectional endoscopy, H. pylori/celiac testing and post-negative-endoscopy supplementation route. It does not support individual endoscopy decisions or anemia treatment advice.",
+      "content": {
+        "variableQuestion": "Which bounded variables may this reviewed manual/fulltext source name for Human Infra continuity modeling language?",
+        "variableSeed": [
+          "iron-deficiency-anemia-evaluation-pathway",
+          "bidirectional-endoscopy-route",
+          "oxygen-carrying-capacity-continuity"
+        ],
+        "sourceExtractedVariables": [
+          "iron-deficiency-anemia-evaluation-pathway",
+          "bidirectional-endoscopy-route",
+          "oxygen-carrying-capacity-continuity"
+        ],
+        "modelPosition": "C2 source-maintenance evidence layer before reviewed artifact promotion",
+        "admissibleUse": "May inform bounded source/variable/endpoint/uncertainty/transfer/downgrade artifact preparation only after independent fresh review; cannot directly enter calibrated prediction.",
+        "promotionBoundary": "bounded reviewed artifact vocabulary only; calibrated prediction, intervention ranking, individual advice and clinical-validity claims remain blocked"
+      }
+    },
+    {
+      "artifactId": "C2LTB4-MFART-003-ENDPOINT-CARD",
+      "artifactType": "reviewed-endpoint-card",
+      "artifactStatus": "filled-reviewed-c2ltb4-manual-fulltext-artifact-model-blocked",
+      "sourceRowKind": "manual-fulltext-fresh-review-row",
+      "reviewId": "C2LTB4-MFFRV-007",
+      "manualExtractionId": "C2LTB4-MFEXT-007",
+      "originTaskId": "C2LTB4-EXT-020",
+      "sourceResolutionId": "C2LTB4-SRR-004",
+      "candidateId": "C2LTB4-SRR-004-CAND-01",
+      "candidateRole": "official-society-guidance-page-route",
+      "domainId": "iron-deficiency-anemia-oxygen-carrying-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/iron-deficiency-anemia-oxygen-carrying-continuity",
+      "sourceTitle": "Gastrointestinal evaluation of iron deficiency anemia",
+      "sourceUrl": "https://gastro.org/clinical-guidance/gastrointestinal-evaluation-of-iron-deficiency-anemia/",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "filled-from-eligible-manual-fulltext-fresh-review",
+      "sourceVerdictDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "modelAdmissionDecision": "blocked-pending-c2ltb4-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://gastro.org/clinical-guidance/gastrointestinal-evaluation-of-iron-deficiency-anemia/",
+        "https://doi.org/10.1053/j.gastro.2020.06.046"
+      ],
+      "registeredExactClaimUse": "Use for bounded extraction that IDA evaluation guidance includes ferritin threshold framing, bidirectional endoscopy routing for defined adult groups, H. pylori testing after negative endoscopy, celiac serology-first logic and initial iron supplementation after uncomplicated negative bidirectional endoscopy.",
+      "registeredTransferBoundary": "Transfers to source-card and endpoint-card prep after fresh review; not to individual endoscopy decisions or anemia treatment advice.",
+      "freshReviewFinding": "Fresh review supports bounded artifact prep from the AGA guideline page for IDA diagnostic cutoff and GI evaluation pathway vocabulary, including bidirectional endoscopy, H. pylori/celiac testing and post-negative-endoscopy supplementation route. It does not support individual endoscopy decisions or anemia treatment advice.",
+      "content": {
+        "endpointQuestion": "Which endpoint vocabulary is supported by this manual/fulltext fresh-review row without calibrated effect-size claims?",
+        "endpointDefinition": "Endpoint vocabulary can include IDA diagnostic cutoff context, GI evaluation pathway, bidirectional endoscopy route, H. pylori/celiac testing route and post-endoscopy supplementation pathway.",
+        "populationOrSetting": "Adults with iron deficiency anemia in GI evaluation guidance context; subgroup distinctions include postmenopausal women/men, premenopausal women and uncomplicated asymptomatic patients after negative bidirectional endoscopy.",
+        "endpointBoundary": "supports source, endpoint and route vocabulary only; no calibrated survival endpoint, individual recommendation or clinical effect size is admitted",
+        "modelPosition": "C2 source-maintenance evidence layer before reviewed artifact promotion",
+        "blockedEndpointUses": [
+          "calibrated-prediction",
+          "individual-advice",
+          "individual-death-date-output",
+          "intervention-ranking",
+          "clinical-validity-claim",
+          "domain-claim-upgrade"
+        ]
+      }
+    },
+    {
+      "artifactId": "C2LTB4-MFART-003-UNCERTAINTY-CARD",
+      "artifactType": "reviewed-uncertainty-card",
+      "artifactStatus": "filled-reviewed-c2ltb4-manual-fulltext-artifact-model-blocked",
+      "sourceRowKind": "manual-fulltext-fresh-review-row",
+      "reviewId": "C2LTB4-MFFRV-007",
+      "manualExtractionId": "C2LTB4-MFEXT-007",
+      "originTaskId": "C2LTB4-EXT-020",
+      "sourceResolutionId": "C2LTB4-SRR-004",
+      "candidateId": "C2LTB4-SRR-004-CAND-01",
+      "candidateRole": "official-society-guidance-page-route",
+      "domainId": "iron-deficiency-anemia-oxygen-carrying-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/iron-deficiency-anemia-oxygen-carrying-continuity",
+      "sourceTitle": "Gastrointestinal evaluation of iron deficiency anemia",
+      "sourceUrl": "https://gastro.org/clinical-guidance/gastrointestinal-evaluation-of-iron-deficiency-anemia/",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "filled-from-eligible-manual-fulltext-fresh-review",
+      "sourceVerdictDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "modelAdmissionDecision": "blocked-pending-c2ltb4-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://gastro.org/clinical-guidance/gastrointestinal-evaluation-of-iron-deficiency-anemia/",
+        "https://doi.org/10.1053/j.gastro.2020.06.046"
+      ],
+      "registeredExactClaimUse": "Use for bounded extraction that IDA evaluation guidance includes ferritin threshold framing, bidirectional endoscopy routing for defined adult groups, H. pylori testing after negative endoscopy, celiac serology-first logic and initial iron supplementation after uncomplicated negative bidirectional endoscopy.",
+      "registeredTransferBoundary": "Transfers to source-card and endpoint-card prep after fresh review; not to individual endoscopy decisions or anemia treatment advice.",
+      "freshReviewFinding": "Fresh review supports bounded artifact prep from the AGA guideline page for IDA diagnostic cutoff and GI evaluation pathway vocabulary, including bidirectional endoscopy, H. pylori/celiac testing and post-negative-endoscopy supplementation route. It does not support individual endoscopy decisions or anemia treatment advice.",
+      "content": {
+        "uncertaintyQuestion": "Which uncertainty or bias must travel with this source before any model-facing use?",
+        "uncertaintyOrBias": "Guideline recommendations are clinical-care statements; they cannot be used for individual advice, intervention ranking or model effects without downstream evidence synthesis and safety review.",
+        "uncertaintyBoundaryVerdict": "sufficient-for-bounded-artifact-prep-with-guideline-boundary",
+        "evidenceLimit": "Supports bounded source-context, variable, endpoint, transfer-boundary and downgrade vocabulary only; no model coefficient is admitted.",
+        "downgradeTriggers": [
+          "Block if recommendation details cannot be verified against the full guideline or DOI route.",
+          "Block individual procedure recommendations and patient-specific ferritin interpretation.",
+          "Block model admission and calibrated prognosis."
+        ]
+      }
+    },
+    {
+      "artifactId": "C2LTB4-MFART-003-TRANSFER-BOUNDARY-CARD",
+      "artifactType": "reviewed-transfer-boundary-card",
+      "artifactStatus": "filled-reviewed-c2ltb4-manual-fulltext-artifact-model-blocked",
+      "sourceRowKind": "manual-fulltext-fresh-review-row",
+      "reviewId": "C2LTB4-MFFRV-007",
+      "manualExtractionId": "C2LTB4-MFEXT-007",
+      "originTaskId": "C2LTB4-EXT-020",
+      "sourceResolutionId": "C2LTB4-SRR-004",
+      "candidateId": "C2LTB4-SRR-004-CAND-01",
+      "candidateRole": "official-society-guidance-page-route",
+      "domainId": "iron-deficiency-anemia-oxygen-carrying-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/iron-deficiency-anemia-oxygen-carrying-continuity",
+      "sourceTitle": "Gastrointestinal evaluation of iron deficiency anemia",
+      "sourceUrl": "https://gastro.org/clinical-guidance/gastrointestinal-evaluation-of-iron-deficiency-anemia/",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "filled-from-eligible-manual-fulltext-fresh-review",
+      "sourceVerdictDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "modelAdmissionDecision": "blocked-pending-c2ltb4-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://gastro.org/clinical-guidance/gastrointestinal-evaluation-of-iron-deficiency-anemia/",
+        "https://doi.org/10.1053/j.gastro.2020.06.046"
+      ],
+      "registeredExactClaimUse": "Use for bounded extraction that IDA evaluation guidance includes ferritin threshold framing, bidirectional endoscopy routing for defined adult groups, H. pylori testing after negative endoscopy, celiac serology-first logic and initial iron supplementation after uncomplicated negative bidirectional endoscopy.",
+      "registeredTransferBoundary": "Transfers to source-card and endpoint-card prep after fresh review; not to individual endoscopy decisions or anemia treatment advice.",
+      "freshReviewFinding": "Fresh review supports bounded artifact prep from the AGA guideline page for IDA diagnostic cutoff and GI evaluation pathway vocabulary, including bidirectional endoscopy, H. pylori/celiac testing and post-negative-endoscopy supplementation route. It does not support individual endoscopy decisions or anemia treatment advice.",
+      "content": {
+        "transferBoundaryQuestion": "Where must this source stop when translated into Human Infra domain language?",
+        "domainTransferVerdict": "transfer-boundary-present-and-required",
+        "registeredTransferBoundary": "Transfers to source-card and endpoint-card prep after fresh review; not to individual endoscopy decisions or anemia treatment advice.",
+        "sourceExtractionTransferBoundary": "Transfers to source-card and endpoint-card prep after fresh review; not to individual endoscopy decisions or anemia treatment advice.",
+        "blockedTransferUses": [
+          "calibrated-prediction",
+          "individual-advice",
+          "individual-death-date-output",
+          "intervention-ranking",
+          "clinical-validity-claim",
+          "domain-claim-upgrade"
+        ]
+      }
+    },
+    {
+      "artifactId": "C2LTB4-MFART-003-DOWNGRADE-CHECK",
+      "artifactType": "reviewed-downgrade-check",
+      "artifactStatus": "filled-reviewed-c2ltb4-manual-fulltext-artifact-model-blocked",
+      "sourceRowKind": "manual-fulltext-fresh-review-row",
+      "reviewId": "C2LTB4-MFFRV-007",
+      "manualExtractionId": "C2LTB4-MFEXT-007",
+      "originTaskId": "C2LTB4-EXT-020",
+      "sourceResolutionId": "C2LTB4-SRR-004",
+      "candidateId": "C2LTB4-SRR-004-CAND-01",
+      "candidateRole": "official-society-guidance-page-route",
+      "domainId": "iron-deficiency-anemia-oxygen-carrying-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/iron-deficiency-anemia-oxygen-carrying-continuity",
+      "sourceTitle": "Gastrointestinal evaluation of iron deficiency anemia",
+      "sourceUrl": "https://gastro.org/clinical-guidance/gastrointestinal-evaluation-of-iron-deficiency-anemia/",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "filled-from-eligible-manual-fulltext-fresh-review",
+      "sourceVerdictDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "modelAdmissionDecision": "blocked-pending-c2ltb4-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://gastro.org/clinical-guidance/gastrointestinal-evaluation-of-iron-deficiency-anemia/",
+        "https://doi.org/10.1053/j.gastro.2020.06.046"
+      ],
+      "registeredExactClaimUse": "Use for bounded extraction that IDA evaluation guidance includes ferritin threshold framing, bidirectional endoscopy routing for defined adult groups, H. pylori testing after negative endoscopy, celiac serology-first logic and initial iron supplementation after uncomplicated negative bidirectional endoscopy.",
+      "registeredTransferBoundary": "Transfers to source-card and endpoint-card prep after fresh review; not to individual endoscopy decisions or anemia treatment advice.",
+      "freshReviewFinding": "Fresh review supports bounded artifact prep from the AGA guideline page for IDA diagnostic cutoff and GI evaluation pathway vocabulary, including bidirectional endoscopy, H. pylori/celiac testing and post-negative-endoscopy supplementation route. It does not support individual endoscopy decisions or anemia treatment advice.",
+      "content": {
+        "downgradeQuestion": "When should this artifact be downgraded or blocked before model admission?",
+        "downgradeVerdict": "Clinical recommendations must stay as guideline-source context and cannot become individual procedure advice, intervention ranking or calibrated oxygen-carrying-capacity effect.",
+        "reviewerVerdict": "support-with-boundary",
+        "downgradeRequiredWhen": [
+          "Block if recommendation details cannot be verified against the full guideline or DOI route.",
+          "Block individual procedure recommendations and patient-specific ferritin interpretation.",
+          "Block model admission and calibrated prognosis."
+        ],
+        "blockedSiblingPolicy": "Rows with duplicate-lineage, route-only, manual-access or context-only decisions stay in blockedRows and cannot create direct reviewed content artifacts."
+      }
+    }
+  ],
+  "blockedRows": [
+    {
+      "blockedRowKind": "manual-fulltext-duplicate-lineage",
+      "reviewId": "C2LTB4-MFFRV-001",
+      "manualExtractionId": "C2LTB4-MFEXT-001",
+      "originTaskId": "C2LTB4-EXT-002",
+      "sourceResolutionId": "C2LTB4-SRR-001",
+      "candidateId": "C2LTB4-SRR-001-CAND-01",
+      "domainId": "diabetic-hyperglycemic-hypoglycemic-crisis-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/diabetic-hyperglycemic-hypoglycemic-crisis-continuity",
+      "sourceTitle": "Hyperglycaemic crises in adults with diabetes: a consensus report",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/38907161/",
+      "reviewerVerdict": "blocked-or-context-only",
+      "artifactPromotionDecision": "blocked-duplicate-lineage-no-direct-artifact-fill",
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "blockReason": "Duplicate/companion consensus lineage creates evidence-counting risk; preserve as source-lineage context only.",
+      "requiredBeforeArtifactFill": "Collapse duplicate consensus lineage before any artifact fill; do not count this route as an independent evidence line.",
+      "freshReviewEvidenceUrls": [
+        "https://pubmed.ncbi.nlm.nih.gov/38907161/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11343900/"
+      ],
+      "nextAction": "Preserve as duplicate-route context and use only to verify that the selected consensus anchor is not double counted."
+    },
+    {
+      "blockedRowKind": "manual-fulltext-route-or-manual-access-required",
+      "reviewId": "C2LTB4-MFFRV-003",
+      "manualExtractionId": "C2LTB4-MFEXT-003",
+      "originTaskId": "C2LTB4-EXT-005",
+      "sourceResolutionId": "C2LTB4-SRR-002",
+      "candidateId": "C2LTB4-SRR-002-CAND-01",
+      "domainId": "hypertensive-crisis-end-organ-risk-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/hypertensive-crisis-end-organ-risk-continuity",
+      "sourceTitle": "2024 ESC Guidelines for the Management of Elevated Blood Pressure and Hypertension",
+      "sourceUrl": "https://www.escardio.org/guidelines/clinical-practice-guidelines/all-esc-practice-guidelines/elevated-blood-pressure-and-hypertension/",
+      "reviewerVerdict": "blocked-or-context-only",
+      "artifactPromotionDecision": "blocked-route-or-manual-access-required-no-direct-artifact-fill",
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "blockReason": "Official page lacks enough exact guideline text for bounded artifacts; full guideline or journal route must be reviewed first.",
+      "requiredBeforeArtifactFill": "Acquire and fresh-review the full guideline/source text before any direct artifact fill.",
+      "freshReviewEvidenceUrls": [
+        "https://www.escardio.org/guidelines/clinical-practice-guidelines/all-esc-practice-guidelines/elevated-blood-pressure-and-hypertension/",
+        "https://doi.org/10.1093/eurheartj/ehae178"
+      ],
+      "nextAction": "Acquire and review full ESC guideline text before any hypertension endpoint or variable artifact is prepared."
+    },
+    {
+      "blockedRowKind": "manual-fulltext-route-or-manual-access-required",
+      "reviewId": "C2LTB4-MFFRV-004",
+      "manualExtractionId": "C2LTB4-MFEXT-004",
+      "originTaskId": "C2LTB4-EXT-005",
+      "sourceResolutionId": "C2LTB4-SRR-002",
+      "candidateId": "C2LTB4-SRR-002-CAND-02",
+      "domainId": "hypertensive-crisis-end-organ-risk-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/hypertensive-crisis-end-organ-risk-continuity",
+      "sourceTitle": "2024 ESC Guidelines for the management of elevated blood pressure and hypertension",
+      "sourceUrl": "https://doi.org/10.1093/eurheartj/ehae178",
+      "reviewerVerdict": "blocked-or-context-only",
+      "artifactPromotionDecision": "blocked-route-or-manual-access-required-no-direct-artifact-fill",
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "blockReason": "No exact source text was available for review through this route.",
+      "requiredBeforeArtifactFill": "Acquire and fresh-review the full guideline/source text before any direct artifact fill.",
+      "freshReviewEvidenceUrls": [
+        "https://doi.org/10.1093/eurheartj/ehae178",
+        "https://pubmed.ncbi.nlm.nih.gov/39210715/"
+      ],
+      "nextAction": "Use this DOI only as a fulltext acquisition route; do not create artifacts from it."
+    },
+    {
+      "blockedRowKind": "manual-fulltext-route-context-only",
+      "reviewId": "C2LTB4-MFFRV-006",
+      "manualExtractionId": "C2LTB4-MFEXT-006",
+      "originTaskId": "C2LTB4-EXT-011",
+      "sourceResolutionId": "C2LTB4-SRR-003",
+      "candidateId": "C2LTB4-SRR-003-CAND-02",
+      "domainId": "chronic-liver-disease-masld-mash-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/chronic-liver-disease-masld-mash-continuity",
+      "sourceTitle": "AASLD Practice Guidance on the Clinical Assessment and Management of Nonalcoholic Fatty Liver Disease [updated 2023]",
+      "sourceUrl": "https://www.aasld.org/practice-guidelines/clinical-assessment-and-management-metabolic-dysfunction-associated-steatotic",
+      "reviewerVerdict": "blocked-or-context-only",
+      "artifactPromotionDecision": "blocked-route-context-no-direct-artifact-fill",
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "blockReason": "Landing-page context can duplicate or drift from full guidance text; preserve as provenance only.",
+      "requiredBeforeArtifactFill": "Use only as provenance/context route; rely on the retained fulltext route before artifact fill.",
+      "freshReviewEvidenceUrls": [
+        "https://www.aasld.org/practice-guidelines/clinical-assessment-and-management-metabolic-dysfunction-associated-steatotic",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC10735173/"
+      ],
+      "nextAction": "Use as companion provenance while preparing artifacts from the PMC fulltext row."
+    },
+    {
+      "blockedRowKind": "manual-fulltext-route-or-manual-access-required",
+      "reviewId": "C2LTB4-MFFRV-008",
+      "manualExtractionId": "C2LTB4-MFEXT-008",
+      "originTaskId": "C2LTB4-EXT-020",
+      "sourceResolutionId": "C2LTB4-SRR-004",
+      "candidateId": "C2LTB4-SRR-004-CAND-02",
+      "domainId": "iron-deficiency-anemia-oxygen-carrying-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/iron-deficiency-anemia-oxygen-carrying-continuity",
+      "sourceTitle": "AGA Clinical Practice Guidelines on the Gastrointestinal Evaluation of Iron Deficiency Anemia",
+      "sourceUrl": "https://doi.org/10.1053/j.gastro.2020.06.046",
+      "reviewerVerdict": "blocked-or-context-only",
+      "artifactPromotionDecision": "blocked-route-or-manual-access-required-no-direct-artifact-fill",
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "blockReason": "Route-only DOI evidence lacks independently reviewed claim text and may duplicate the official AGA guideline page.",
+      "requiredBeforeArtifactFill": "Acquire and fresh-review the full guideline/source text before any direct artifact fill.",
+      "freshReviewEvidenceUrls": [
+        "https://doi.org/10.1053/j.gastro.2020.06.046",
+        "https://pubmed.ncbi.nlm.nih.gov/32810434/"
+      ],
+      "nextAction": "Retain DOI as verification route only; do not create direct reviewed artifacts from it."
+    }
+  ],
+  "summary": {
+    "reviewerVerdictCounts": {
+      "blocked-or-context-only": 5,
+      "support-with-boundary": 3
+    },
+    "artifactPromotionDecisionCounts": {
+      "blocked-duplicate-lineage-no-direct-artifact-fill": 1,
+      "eligible-for-bounded-reviewed-artifact-prep": 3,
+      "blocked-route-or-manual-access-required-no-direct-artifact-fill": 3,
+      "blocked-route-context-no-direct-artifact-fill": 1
+    },
+    "eligibleManualExtractionRows": [
+      "C2LTB4-MFEXT-002",
+      "C2LTB4-MFEXT-005",
+      "C2LTB4-MFEXT-007"
+    ],
+    "blockedManualExtractionRows": [
+      "C2LTB4-MFEXT-001",
+      "C2LTB4-MFEXT-003",
+      "C2LTB4-MFEXT-004",
+      "C2LTB4-MFEXT-006",
+      "C2LTB4-MFEXT-008"
+    ],
+    "artifactTypeCounts": {
+      "reviewed-source-card": 3,
+      "reviewed-variable-card": 3,
+      "reviewed-endpoint-card": 3,
+      "reviewed-uncertainty-card": 3,
+      "reviewed-transfer-boundary-card": 3,
+      "reviewed-downgrade-check": 3
+    },
+    "reviewedArtifactsCreated": 18,
+    "blockedRowsPreserved": 5,
+    "modelAdmissionDecision": "blocked-pending-c2ltb4-reviewed-artifact-gates-and-calibrated-model-validation",
+    "nextWorkOrder": "Continue C2 long-tail coverage outside B1/B2/B3/B4 and keep calibrated modeling blocked until artifact gates and calibrated model validation exist."
+  },
+  "indexRequirements": [
+    "README.md",
+    "AGENTS.md",
+    "docs/AGENTS.md",
+    "docs/reference/README.md",
+    "docs/reference/human-infra-maturity-roadmap.md",
+    "tools/README.md",
+    "tools/AGENTS.md"
+  ]
+}
