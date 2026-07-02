@@ -16,6 +16,7 @@ Current documents:
 - `evidence-policy.md`: evidence, interpretation, claim, speculation, and decision boundaries.
 - `human-infra-core-claim-evidence-matrix.md`: core Human Infra claim register, source anchor cards, claim-evidence matrix, method translation contract, and project-level evidence gates.
 - `human-infra-page-claim-consistency.json`: machine-readable page-level Claim ID and prohibited-use consistency gate for README, Web homepage, paper pages, model docs, and the maturity roadmap.
+- `human-infra-audience-claim-map.json`: machine-readable audience-to-claim and adjacent-project boundary map for value clarity across researchers, builders, longevity readers, infrastructure readers, governance reviewers and modelers.
 - `human-infra-paper-claim-register.json`: machine-readable arXiv-style paper claim register for paper-specific strong claims, core Claim IDs, falsifiers, downgrade actions, source data paths, and prohibited-use boundaries.
 - `human-infra-domain-falsifier-coverage.json`: machine-readable C1 and priority C2 domain-level falsifier, downgrade-condition, variable-interface and prohibited-use coverage gate.
 - `human-infra-domain-claim-evidence-matrix.json`: machine-readable domain-level Claim-Evidence Matrix seed that joins the current 26 priority research domains to claim sources, variable-contract sources, falsifier sources, extracted Source Card IDs and next extraction steps.

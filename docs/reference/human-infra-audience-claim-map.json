@@ -1,0 +1,276 @@
+{
+  "schemaVersion": "human-infra.audience-claim-map.v1",
+  "registerId": "human-infra-audience-claim-map-2026-07-02",
+  "status": "active-value-clarity-gate",
+  "purpose": "Map Human Infra value language to concrete audiences and adjacent-project boundaries so the project can be understood through one stable claim spine without becoming a medical, productivity, policy, AI-toolbox or generic longevity project.",
+  "sourceOfTruth": {
+    "coreClaimEvidenceMatrix": "docs/reference/human-infra-core-claim-evidence-matrix.md",
+    "valueLenses": "docs/explanations/value-lenses.md",
+    "projectBoundary": "docs/reference/project-boundary-v0.1.md",
+    "pageClaimConsistency": "docs/reference/human-infra-page-claim-consistency.json",
+    "maturityGapRegister": "docs/reference/human-infra-maturity-gap-register.json"
+  },
+  "scope": {
+    "audienceCount": 6,
+    "adjacentBoundaryCount": 6,
+    "requiredAudienceIds": [
+      "researchers",
+      "builders",
+      "longevity-readers",
+      "infrastructure-readers",
+      "governance-reviewers",
+      "modelers"
+    ],
+    "requiredAdjacentTypeIds": [
+      "health-management-app",
+      "longevity-knowledge-base",
+      "ai-toolbox",
+      "policy-encyclopedia",
+      "clinical-decision-support",
+      "productivity-time-management"
+    ],
+    "requiredClaimIds": [
+      "HI-CL1",
+      "HI-CL2",
+      "HI-CL3",
+      "HI-CL4",
+      "HI-CL5",
+      "HI-CL6",
+      "HI-CL7"
+    ],
+    "requiredValueLensIds": [
+      "subject-continuity",
+      "resource-budget-expansion",
+      "anti-scarcity-engineering"
+    ],
+    "globalBoundaryPhrases": [
+      "不是医疗建议",
+      "不输出个体死亡日期",
+      "不证明具体技术已经实现有效永生"
+    ],
+    "selectionRule": "Every public-facing value explanation must map its audience to Claim IDs, value lenses, entry points, non-inferences and adjacent-project boundaries."
+  },
+  "audiences": [
+    {
+      "audienceId": "researchers",
+      "audienceLabel": "研究者 / 文献审查者",
+      "primaryQuestion": "这个项目如何把宏大主张变成可审查研究问题？",
+      "claimIds": [
+        "HI-CL1",
+        "HI-CL2",
+        "HI-CL4",
+        "HI-CL7"
+      ],
+      "valueLensIds": [
+        "subject-continuity",
+        "anti-scarcity-engineering"
+      ],
+      "entryPointFiles": [
+        "docs/reference/human-infra-core-claim-evidence-matrix.md",
+        "docs/reference/evidence-policy.md",
+        "docs/reference/source-card-system.md"
+      ],
+      "valueTranslation": "Human Infra 对研究者的价值是把主体持续性拆成来源、主张、变量、反证和模型位置，而不是停留在技术乐观叙事。",
+      "mustNotInfer": [
+        "不能把方法锚点当成实证疗效证据。",
+        "不能把 Source Card 队列当成独立 fresh review 完成。"
+      ],
+      "nextReaderAction": "从 Claim ID 进入 Source Cards、domain matrix、falsifier 和 downgrade gates。"
+    },
+    {
+      "audienceId": "builders",
+      "audienceLabel": "工程构建者 / 产品系统设计者",
+      "primaryQuestion": "我应该构建什么系统，才算是在服务 Human Infra？",
+      "claimIds": [
+        "HI-CL2",
+        "HI-CL3",
+        "HI-CL5",
+        "HI-CL6"
+      ],
+      "valueLensIds": [
+        "subject-continuity",
+        "resource-budget-expansion"
+      ],
+      "entryPointFiles": [
+        "README.md",
+        "docs/explanations/value-lenses.md",
+        "docs/reference/project-boundary-v0.1.md"
+      ],
+      "valueTranslation": "Human Infra 对构建者的价值是给系统设计一个上位判断：系统是否扩大主体存在、行动、恢复、学习和未来选择权。",
+      "mustNotInfer": [
+        "不能把效率优化写成对人的监控或压榨。",
+        "不能把工具可用性直接等同于主体持续性收益。"
+      ],
+      "nextReaderAction": "把产品能力映射到寿命、健康寿命、有效时间、认知、恢复、资源或协作变量。"
+    },
+    {
+      "audienceId": "longevity-readers",
+      "audienceLabel": "长寿 / 抗衰读者",
+      "primaryQuestion": "这是不是一个长寿知识库或者永生方案？",
+      "claimIds": [
+        "HI-CL2",
+        "HI-CL3",
+        "HI-CL4",
+        "HI-CL6"
+      ],
+      "valueLensIds": [
+        "subject-continuity",
+        "anti-scarcity-engineering"
+      ],
+      "entryPointFiles": [
+        "domains/c1-boundary-rewriting/longevity-evidence/README.md",
+        "docs/explanations/life-path-prediction-model.md",
+        "docs/reference/life-path-prediction-model-contract.md"
+      ],
+      "valueTranslation": "Human Infra 对长寿读者的价值是把延寿、健康寿命、有效时间和未来选择权放入同一条证据链，而不是把技术当成神奇加寿命变量。",
+      "mustNotInfer": [
+        "不是医疗建议。",
+        "不证明具体技术已经实现有效永生。",
+        "不输出个体死亡日期。"
+      ],
+      "nextReaderAction": "检查某个技术影响哪些变量、通过什么机制进入风险函数、证据等级和禁止用途是什么。"
+    },
+    {
+      "audienceId": "infrastructure-readers",
+      "audienceLabel": "基础设施 / 社会系统读者",
+      "primaryQuestion": "为什么住房、医疗、法律身份、能源、数据和公共服务也属于 Human Infra？",
+      "claimIds": [
+        "HI-CL1",
+        "HI-CL2",
+        "HI-CL3",
+        "HI-CL5"
+      ],
+      "valueLensIds": [
+        "anti-scarcity-engineering",
+        "resource-budget-expansion"
+      ],
+      "entryPointFiles": [
+        "domains/README.md",
+        "domains/_possibility-space-control/classification.tsv",
+        "docs/reference/domain-map.md"
+      ],
+      "valueTranslation": "Human Infra 对基础设施读者的价值是说明许多社会系统不是外围福利，而是主体持续存在、行动和恢复的外部条件。",
+      "mustNotInfer": [
+        "不能把所有社会议题无边界并入项目核心。",
+        "不能用宏观基础设施语言替代具体证据和治理边界。"
+      ],
+      "nextReaderAction": "按 C1-C6 可能性空间控制力分级，判断某个社会条件对主体持续性的作用层级。"
+    },
+    {
+      "audienceId": "governance-reviewers",
+      "audienceLabel": "治理 / 伦理 / 安全审查者",
+      "primaryQuestion": "这个项目如何避免变成危险预测、医疗建议或控制系统？",
+      "claimIds": [
+        "HI-CL5",
+        "HI-CL6",
+        "HI-CL7"
+      ],
+      "valueLensIds": [
+        "subject-continuity",
+        "anti-scarcity-engineering"
+      ],
+      "entryPointFiles": [
+        "docs/reference/ethics-and-safety-boundaries.md",
+        "docs/reference/human-infra-page-claim-consistency.json",
+        "docs/reference/human-infra-maturity-gap-register.json"
+      ],
+      "valueTranslation": "Human Infra 对治理审查者的价值是把禁止用途、反证条件、降级动作和模型准入门槛前置成项目结构。",
+      "mustNotInfer": [
+        "不输出个体死亡日期。",
+        "不能提供个体医疗、法律、投资或工程操作建议。",
+        "不能把未校准模型用于真实决策。"
+      ],
+      "nextReaderAction": "检查页面、模型、域和卡片是否都保留 prohibited-use 和 downgrade gates。"
+    },
+    {
+      "audienceId": "modelers",
+      "audienceLabel": "定量模型 / 数据开发者",
+      "primaryQuestion": "如何从理论和资料进入可运行、可复现、可审查的模型？",
+      "claimIds": [
+        "HI-CL3",
+        "HI-CL4",
+        "HI-CL6",
+        "HI-CL7"
+      ],
+      "valueLensIds": [
+        "resource-budget-expansion",
+        "subject-continuity"
+      ],
+      "entryPointFiles": [
+        "docs/reference/life-path-prediction-model-contract.md",
+        "docs/reference/human-infra-maturity-roadmap.md",
+        "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_calibration_readiness.json"
+      ],
+      "valueTranslation": "Human Infra 对模型开发者的价值是提供从变量、状态、风险函数、生存曲线、有效时间到模型门禁的转换契约。",
+      "mustNotInfer": [
+        "toy model 不是 calibrated predictive model。",
+        "合成敏感性分析不是外部验证。",
+        "不输出个体死亡日期。",
+        "字段草案不是真实数据准入。"
+      ],
+      "nextReaderAction": "从 model contract、NHATS readiness gates 和 card promotion artifacts 进入可审计模型管线。"
+    }
+  ],
+  "adjacentProjectBoundaries": [
+    {
+      "adjacentTypeId": "health-management-app",
+      "adjacentLabel": "健康管理应用",
+      "overlap": "都关注健康、行为、恢复和风险。",
+      "humanInfraDistinction": "Human Infra 研究健康如何作为主体持续性条件进入寿命、有效时间、行动能力和未来选择权链路。",
+      "acceptedBorrowing": "可借用健康数据、行为反馈和恢复系统作为变量候选。",
+      "prohibitedMisread": "不能把项目降格为个人健康建议、打卡系统或生活方式处方。"
+    },
+    {
+      "adjacentTypeId": "longevity-knowledge-base",
+      "adjacentLabel": "长寿知识库",
+      "overlap": "都整理抗衰、健康寿命、干预证据和生物机制。",
+      "humanInfraDistinction": "Human Infra 把长寿作为主体持续性的一类边界改写路径，并要求进入变量、风险函数、证据等级和反证门禁。",
+      "acceptedBorrowing": "可借用长寿路线、机制、试验、Source Card 和数据源。",
+      "prohibitedMisread": "不能把任何干预写成加寿命变量、永生按钮或个体建议。"
+    },
+    {
+      "adjacentTypeId": "ai-toolbox",
+      "adjacentLabel": "AI 工具箱",
+      "overlap": "都关心 AI 对认知、记忆、自动化、科研和问题求解能力的增强。",
+      "humanInfraDistinction": "Human Infra 只把 AI 当作主体持续性基础设施的一类工具变量和治理对象，而不是项目本体。",
+      "acceptedBorrowing": "可借用 AI 工作流、模型卡、审计、知识管理和自动化能力。",
+      "prohibitedMisread": "不能把 AI 能力扩张直接等同于主体能力提升，也不能绕过风险、依赖、偏差和治理门禁。"
+    },
+    {
+      "adjacentTypeId": "policy-encyclopedia",
+      "adjacentLabel": "政策 / 公共服务百科",
+      "overlap": "都覆盖医疗、住房、社会保护、法律身份、公共安全和基础设施。",
+      "humanInfraDistinction": "Human Infra 只纳入与主体持续性条件、通用资源预算或可能性空间控制力相关的政策和服务对象。",
+      "acceptedBorrowing": "可借用制度定义、公共数据、服务连续性和行政负担框架。",
+      "prohibitedMisread": "不能变成无边界政策百科、政策主张平台或法律建议系统。"
+    },
+    {
+      "adjacentTypeId": "clinical-decision-support",
+      "adjacentLabel": "临床决策支持 / 医疗建议系统",
+      "overlap": "都可能使用医学证据、风险模型、筛查和治疗连续性材料。",
+      "humanInfraDistinction": "Human Infra 当前只做研究框架、场景模型和证据治理，不做个体诊断、治疗、筛查或用药建议。",
+      "acceptedBorrowing": "可借用临床试验报告规范、风险偏倚评估、结局定义和安全边界。",
+      "prohibitedMisread": "不能输出个体医疗建议、个人寿命预测、个体死亡日期或临床有效性声明。"
+    },
+    {
+      "adjacentTypeId": "productivity-time-management",
+      "adjacentLabel": "效率管理 / 时间管理系统",
+      "overlap": "都关心时间、注意力、任务摩擦和行动密度。",
+      "humanInfraDistinction": "Human Infra 关注寿命、健康寿命、有效时间和未来等待带来的终身资源预算变化，而不是短期效率压榨。",
+      "acceptedBorrowing": "可借用任务成本、切换成本、认知负担和反馈机制语言。",
+      "prohibitedMisread": "不能把人当作可压榨资源，不能把降本增效变成监控、排名或惩罚。"
+    }
+  ],
+  "nonClaims": [
+    "This register does not prove every reader will understand the project without narrative work.",
+    "This register does not validate external scientific claims, clinical claims or quantitative model calibration.",
+    "This register does not authorize medical advice, individual death-date output, intervention ranking, policy prescription or productivity surveillance.",
+    "This register only gates value-language alignment to project-level Claim IDs and boundary distinctions."
+  ],
+  "indexRequirements": [
+    "README.md",
+    "docs/reference/README.md",
+    "docs/reference/human-infra-maturity-roadmap.md",
+    "tools/README.md"
+  ]
+}

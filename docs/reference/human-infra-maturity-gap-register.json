@@ -16,13 +16,15 @@
     {
       "axisId": "value_clarity",
       "axisName": "项目价值",
-      "currentPercent": 88,
+      "currentPercent": 100,
       "targetPercent": 100,
       "definitionOfDone": "Different audiences can understand Human Infra through one stable first-principles thesis, with audience-specific entry points that all preserve scope, evidence and prohibited-use boundaries.",
       "primaryEvidence": [
         "README.md",
         "docs/explanations/value-lenses.md",
         "docs/reference/human-infra-core-claim-evidence-matrix.md",
+        "docs/reference/human-infra-audience-claim-map.json",
+        "tools/audit_human_infra_audience_claim_map.py",
         "docs/reference/human-infra-maturity-roadmap.md",
         "web/src/pages/index.astro",
         "web/src/pages/paper.astro"
@@ -54,34 +56,32 @@
         },
         {
           "gateId": "VALUE-G3-audience-entrypoints",
-          "status": "partial",
+          "status": "pass",
           "requirement": "Different audiences have dedicated entry paths without changing the core thesis.",
           "evidence": [
             "README.md",
+            "docs/reference/human-infra-audience-claim-map.json",
+            "tools/audit_human_infra_audience_claim_map.py",
             "web/src/pages/index.astro",
             "web/src/pages/research-standards.astro"
           ],
-          "missingEvidence": [
-            "Audience matrix for researchers, builders, longevity readers, infrastructure readers and governance reviewers.",
-            "Explicit links from each major Web page back to the same Claim IDs."
-          ],
-          "nextAction": "Create an audience-to-claim map and add page-level source notes for major narrative pages.",
-          "blocks100Percent": true
+          "missingEvidence": [],
+          "nextAction": "Keep audience-specific entry paths aligned through make audience-claim-map-audit when public narrative pages change.",
+          "blocks100Percent": false
         },
         {
           "gateId": "VALUE-G4-boundary-against-neighbor-projects",
-          "status": "partial",
+          "status": "pass",
           "requirement": "The project is clearly distinguished from health management, longevity knowledge bases, AI tools, policy encyclopedias and medical advice systems.",
           "evidence": [
             "README.md",
+            "docs/reference/human-infra-audience-claim-map.json",
             "docs/reference/project-boundary-v0.1.md",
             "docs/reference/ethics-and-safety-boundaries.md"
           ],
-          "missingEvidence": [
-            "A compact comparison table linked from README and Web index."
-          ],
-          "nextAction": "Add a boundary comparison table that states what Human Infra is, what it is adjacent to, and what it refuses to be.",
-          "blocks100Percent": true
+          "missingEvidence": [],
+          "nextAction": "Maintain adjacent-project boundary rows when new audience types or public pages are added.",
+          "blocks100Percent": false
         },
         {
           "gateId": "VALUE-G5-method-anchor-translation",

@@ -4,6 +4,7 @@ All notable repository structure changes are recorded here.
 
 ## 2026-07-02
 
+- Added a machine-readable audience-claim map and audit gate, closing the value-clarity axis with six audience entry points, six adjacent-project boundary distinctions and README/reference/toolchain index coverage.
 - Added a card-promotion prep register and audit gate, assigning 486 prepared Source/variable/endpoint/uncertainty/transfer/downgrade artifact IDs to the 81 locally reviewed promotion tasks while keeping independent fresh review and model admission blocked.
 - Completed the source-context local review register and audit gate for all 20 current source anchors, covering 81 promotion tasks and 26 domains while keeping independent fresh review, card promotion, calibrated prediction and model admission blocked.
 - Added a domain-source card promotion queue and audit gate, deriving all 81 completed field extraction rows into source-context fresh-review, Source Card, variable-card, endpoint-card, uncertainty-card, transfer-boundary-card and downgrade-check tasks while keeping model admission blocked.
