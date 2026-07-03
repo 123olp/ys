@@ -1,0 +1,225 @@
+{
+  "schemaVersion": "human-infra.c2-longtail-seventh-batch-local-review-register.v1",
+  "registerId": "human-infra-c2-longtail-seventh-batch-local-review-register-2026-07-03",
+  "status": "complete-local-source-context-review-independent-fresh-review-required",
+  "purpose": "Record local source-context review for all 24 C2-LT-B7 source extraction rows. This register verifies structural readiness for independent fresh review while preserving FDA route failures, dynamic donor-registration route context, duplicate CDC source lineage, screening-boundary downgrade constraints, reviewed-artifact blocks and model-admission blocks.",
+  "sourceOfTruth": {
+    "sourceExtractionQueue": "docs/reference/human-infra-c2-longtail-seventh-batch-source-extraction-queue.json",
+    "sourceExtractionRegister": "docs/reference/human-infra-c2-longtail-seventh-batch-source-extraction-register.json",
+    "sourceCardSystem": "docs/reference/source-card-system.md",
+    "maturityGapRegister": "docs/reference/human-infra-maturity-gap-register.json"
+  },
+  "scope": {
+    "batchId": "C2-LT-B7",
+    "reviewLevel": "source-extraction-row-local-context-review",
+    "sourceExtractionTaskCount": 24,
+    "localReviewedExtractionTaskCount": 24,
+    "coveredDomainCount": 12,
+    "reviewBatchCount": 2,
+    "sourceResolutionIssueCount": 6,
+    "selectionRule": "Review all C2-LT-B7 source extraction rows after field-level extraction, without promoting any row to reviewed artifact fill or calibrated model admission.",
+    "reviewedExtractionTaskIds": [
+      "C2LTB7-EXT-001",
+      "C2LTB7-EXT-002",
+      "C2LTB7-EXT-003",
+      "C2LTB7-EXT-004",
+      "C2LTB7-EXT-005",
+      "C2LTB7-EXT-006",
+      "C2LTB7-EXT-007",
+      "C2LTB7-EXT-008",
+      "C2LTB7-EXT-009",
+      "C2LTB7-EXT-010",
+      "C2LTB7-EXT-011",
+      "C2LTB7-EXT-012",
+      "C2LTB7-EXT-013",
+      "C2LTB7-EXT-014",
+      "C2LTB7-EXT-015",
+      "C2LTB7-EXT-016",
+      "C2LTB7-EXT-017",
+      "C2LTB7-EXT-018",
+      "C2LTB7-EXT-019",
+      "C2LTB7-EXT-020",
+      "C2LTB7-EXT-021",
+      "C2LTB7-EXT-022",
+      "C2LTB7-EXT-023",
+      "C2LTB7-EXT-024"
+    ],
+    "currentLimitations": [
+      "This is local structural review only and is not independent fresh review.",
+      "Rows with FDA 404 routes, dynamic registration route context or duplicate CDC source lineage require source-resolution/manual route handling before bounded artifact use.",
+      "USPSTF ovarian and prostate screening rows preserve screening nonbenefit and shared-decision boundaries as downgrade constraints, not as individual screening advice.",
+      "Oncology, transplant, organ-donation and xenotransplantation rows remain bounded source-context rows until independent fresh review.",
+      "No row admits calibrated prediction, intervention ranking, individual advice, clinical-validity claim, individual death-date output or domain-claim upgrade."
+    ]
+  },
+  "requiredExtractionFieldsReviewed": [
+    "taskId",
+    "domainId",
+    "localDomainPath",
+    "sourceRefId",
+    "sourceTitle",
+    "sourceUrl",
+    "sourceRole",
+    "exactClaimUse",
+    "endpointDefinition",
+    "populationOrSetting",
+    "effectOrMechanismSignal",
+    "uncertaintyOrBias",
+    "transferBoundary",
+    "downgradeTriggers",
+    "modelPosition",
+    "modelAdmissionDecision",
+    "blockedUses",
+    "nextAction"
+  ],
+  "localReviewVerdict": "local-review-pass-for-independent-fresh-review-only-with-six-source-resolution-flags-preserved",
+  "promotionDecision": "eligible-non-issue-rows-for-independent-fresh-review-only-not-reviewed-artifact-fill; issue-rows-require-source-resolution-or-manual-route-review-before-fresh-review-evidence-use",
+  "sourceResolutionDecision": "six-rows-require-source-resolution-manual-route-or-source-lineage-handling-before-domain-claim-support",
+  "modelAdmissionDecision": "blocked-pending-independent-fresh-review-reviewed-artifacts-source-resolution-and-model-gates",
+  "blockedUses": [
+    "calibrated-prediction",
+    "individual-advice",
+    "individual-death-date-output",
+    "intervention-ranking",
+    "clinical-validity-claim",
+    "domain-claim-upgrade"
+  ],
+  "requiredNextArtifacts": [
+    "c2ltb7-independent-fresh-review-protocol",
+    "c2ltb7-independent-fresh-review-verdict-register",
+    "c2ltb7-source-resolution-register-for-issue-rows",
+    "reviewed-source-card",
+    "variable-card",
+    "endpoint-card",
+    "uncertainty-card",
+    "transfer-boundary-card",
+    "downgrade-check-row"
+  ],
+  "localReviewChecks": [
+    "Every reviewed task is present in the C2-LT-B7 source extraction queue.",
+    "Every reviewed task has a completed extraction row in the C2-LT-B7 source extraction register.",
+    "Every extraction row preserves exact claim use, endpoint, population or setting, mechanism or effect, uncertainty, transfer boundary, downgrade triggers and model position.",
+    "Every extraction row keeps model admission blocked and prohibited uses complete.",
+    "Every local domain path exists and exposes README.md and AGENTS.md.",
+    "Rows with FDA route failures, dynamic donor-registration route context or duplicate CDC source lineage are explicitly preserved in sourceResolutionFindings.",
+    "Screening nonbenefit and shared-decision rows keep downgrade boundaries but are not converted into individual screening advice.",
+    "The register routes non-issue rows to independent fresh review and issue rows to source-resolution/manual-route review before Source Card promotion."
+  ],
+  "sourceResolutionFindings": [
+    {
+      "taskId": "C2LTB7-EXT-019",
+      "issueType": "duplicate-cdc-transplant-safety-route-source-lineage-needed",
+      "reviewDisposition": "source-resolution-required-duplicate-source-lineage-before-evidence-counting",
+      "correctionCandidate": "Treat EXT-019 as the transplant-safety primary CDC guidance route and link EXT-022 as duplicate/role-specific provenance instead of independent evidence.",
+      "reason": "The same CDC transplant-safety guidance route is reused across transplant safety and organ-donation governance rows; local review must block double counting."
+    },
+    {
+      "taskId": "C2LTB7-EXT-020",
+      "issueType": "fda-hctp-guidance-route-404-source-resolution-needed",
+      "reviewDisposition": "source-resolution-or-manual-route-required-before-bounded-fresh-review",
+      "correctionCandidate": "Resolve the FDA HCT/P donor-eligibility guidance URL to the active guidance document, archived route or replacement FDA page before artifact fill.",
+      "reason": "The extraction row records a local HTTP 404; it can only remain route metadata until a valid FDA source is verified."
+    },
+    {
+      "taskId": "C2LTB7-EXT-021",
+      "issueType": "dynamic-donor-registration-route-context-limited",
+      "reviewDisposition": "source-resolution-required-dynamic-route-before-evidence-counting",
+      "correctionCandidate": "Capture stable donor-registration route metadata, page scope and jurisdiction/registration limits before using the row beyond civil-route context.",
+      "reason": "The Donate Life registration route returned dynamic HTTP 202 context and does not quantify organ availability, allocation, eligibility or outcomes."
+    },
+    {
+      "taskId": "C2LTB7-EXT-022",
+      "issueType": "duplicate-cdc-transplant-safety-route-source-lineage-needed",
+      "reviewDisposition": "source-resolution-required-duplicate-source-lineage-before-evidence-counting",
+      "correctionCandidate": "Link EXT-022 to EXT-019 and preserve it as organ-donation governance context, not as a second independent transplant-safety evidence count.",
+      "reason": "The extraction row explicitly marks duplicate CDC source lineage; fresh review must prevent duplicate support inflation."
+    },
+    {
+      "taskId": "C2LTB7-EXT-023",
+      "issueType": "fda-xenotransplantation-guidance-route-404-source-resolution-needed",
+      "reviewDisposition": "source-resolution-or-manual-route-required-before-bounded-fresh-review",
+      "correctionCandidate": "Resolve the FDA xenotransplantation source-animal/preclinical/clinical issues guidance route to an active FDA guidance, PDF or archive before artifact fill.",
+      "reason": "The extraction row records a local HTTP 404; it cannot support xenotransplantation safety, feasibility or clinical claims until the active document route is verified."
+    },
+    {
+      "taskId": "C2LTB7-EXT-024",
+      "issueType": "fda-xenotransplantation-guidance-index-route-404-source-resolution-needed",
+      "reviewDisposition": "source-resolution-or-manual-route-required-before-bounded-fresh-review",
+      "correctionCandidate": "Resolve the FDA xenotransplantation guidance index route to a current FDA index or authoritative archive and link it to any specific guidance documents before artifact fill.",
+      "reason": "The extraction row is route metadata with local HTTP 404; it cannot support a substantive xenotransplantation claim until route resolution succeeds."
+    }
+  ],
+  "reviewBatches": [
+    {
+      "reviewBatchId": "C2LTB7-LR-01-survivorship-skin-lung-liver-pancreatic",
+      "reviewLabel": "癌症幸存者、儿童癌症迟发效应、皮肤癌防护、肺癌筛查、肝癌监测与胰腺癌高风险检测连续性域",
+      "taskIds": [
+        "C2LTB7-EXT-001",
+        "C2LTB7-EXT-002",
+        "C2LTB7-EXT-003",
+        "C2LTB7-EXT-004",
+        "C2LTB7-EXT-005",
+        "C2LTB7-EXT-006",
+        "C2LTB7-EXT-007",
+        "C2LTB7-EXT-008",
+        "C2LTB7-EXT-009",
+        "C2LTB7-EXT-010",
+        "C2LTB7-EXT-011",
+        "C2LTB7-EXT-012"
+      ],
+      "nextReviewMode": "independent fresh review must verify survivorship standards scope, CDC public-health context, COG guideline lineage, USPSTF/CDC screening boundaries, AASLD/HCC guideline route context and high-risk pancreatic screening limits before artifact promotion",
+      "taskCount": 12,
+      "domainIds": [
+        "cancer-survivorship-late-effects-continuity",
+        "childhood-cancer-treatment-survivorship-continuity",
+        "liver-cancer-cirrhosis-surveillance-treatment-continuity",
+        "lung-cancer-screening-treatment-continuity",
+        "pancreatic-cancer-high-risk-detection-treatment-continuity",
+        "skin-cancer-uv-protection-early-detection-continuity"
+      ],
+      "reviewDecision": "local-review-pass-for-independent-fresh-review-only"
+    },
+    {
+      "reviewBatchId": "C2LTB7-LR-02-ovarian-prostate-oral-transplant-donation-xeno",
+      "reviewLabel": "卵巢癌、前列腺癌、口腔癌、移植安全、器官捐献与异种移植/工程器官替换连续性域",
+      "taskIds": [
+        "C2LTB7-EXT-013",
+        "C2LTB7-EXT-014",
+        "C2LTB7-EXT-015",
+        "C2LTB7-EXT-016",
+        "C2LTB7-EXT-017",
+        "C2LTB7-EXT-018",
+        "C2LTB7-EXT-019",
+        "C2LTB7-EXT-020",
+        "C2LTB7-EXT-021",
+        "C2LTB7-EXT-022",
+        "C2LTB7-EXT-023",
+        "C2LTB7-EXT-024"
+      ],
+      "nextReviewMode": "independent fresh review must verify USPSTF ovarian nonbenefit and prostate shared-decision boundaries, NCI oral-cavity screening evidence limits, CDC transplant-safety duplicate lineage, Donate Life dynamic route context, FDA HCT/P route failure and FDA xenotransplantation guidance route failures before artifact promotion",
+      "taskCount": 12,
+      "domainIds": [
+        "blood-organ-tissue-biovigilance-transplantation",
+        "oral-cancer-mucosal-lesion-early-detection-continuity",
+        "organ-donor-registry-anatomical-gift-continuity",
+        "ovarian-cancer-symptom-detection-treatment-continuity",
+        "prostate-cancer-screening-treatment-continuity",
+        "xenotransplantation-bioengineered-organ-replacement"
+      ],
+      "reviewDecision": "local-review-pass-for-independent-fresh-review-only"
+    }
+  ],
+  "nonClaims": [
+    "This register is not an independent fresh review verdict register.",
+    "This register does not complete any reviewed Source Card, variable card, endpoint card, uncertainty card, transfer-boundary card or downgrade-check artifact.",
+    "This register does not repair FDA 404 routes, dynamic donor-registration route context or duplicate CDC source lineage; it records them for source-resolution review.",
+    "This register does not validate external source truth, clinical recommendations, screening decisions, intervention effects, calibrated risks or individual prognosis.",
+    "This register does not authorize model admission, domain-claim upgrade, intervention ranking, individual advice or individual death-date output."
+  ],
+  "indexRequirements": [
+    "README.md",
+    "docs/reference/README.md",
+    "docs/reference/human-infra-maturity-roadmap.md",
+    "tools/README.md"
+  ]
+}
