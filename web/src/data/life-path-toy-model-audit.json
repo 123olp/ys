@@ -1,6 +1,6 @@
 {
   "schemaVersion": "human-infra.life-path-toy-audit.v1",
-  "generatedAt": "2026-07-03T02:12:53.733606+00:00",
+  "generatedAt": "2026-07-03T02:27:50.427712+00:00",
   "modelPath": "web/src/data/life-path-toy-model.json",
   "modelSha256": "a4c92209d79d20579bf1f575d5ebf07ffe5be9ccaf6bf3f3eef08efa287b5377",
   "overallStatus": "PASS",
@@ -433,7 +433,7 @@
     {
       "id": "nhats-acquisition-readiness-validation-pass",
       "status": "PASS",
-      "detail": "overallStatus='PASS' summary={'pass': 12, 'fail': 0}"
+      "detail": "overallStatus='PASS' summary={'pass': 13, 'fail': 0}"
     },
     {
       "id": "nhats-acquisition-readiness-validation-blocking-gates",
@@ -449,6 +449,41 @@
       "id": "nhats-acquisition-readiness-validation-non-proof-note",
       "status": "PASS",
       "detail": "validation must state that it does not prove registration, storage, downloads, extraction, calibration or prediction"
+    },
+    {
+      "id": "nhats-controlled-storage-validation-exists",
+      "status": "PASS",
+      "detail": "web/src/data/life-path-nhats-controlled-storage-destruction-validation.json"
+    },
+    {
+      "id": "nhats-controlled-storage-validation-schema",
+      "status": "PASS",
+      "detail": "schemaVersion='human-infra.life-path-nhats-controlled-storage-destruction-plan-validation.v1'"
+    },
+    {
+      "id": "nhats-controlled-storage-validation-source-hash",
+      "status": "PASS",
+      "detail": "validation must point back to current storage/destruction plan and acquisition-readiness hashes"
+    },
+    {
+      "id": "nhats-controlled-storage-validation-pass",
+      "status": "PASS",
+      "detail": "overallStatus='PASS' summary={'pass': 15, 'fail': 0}"
+    },
+    {
+      "id": "nhats-controlled-storage-validation-impact",
+      "status": "PASS",
+      "detail": "validation may only move storage/destruction to partial while keeping download, extraction and calibration blocked"
+    },
+    {
+      "id": "nhats-controlled-storage-validation-boundary",
+      "status": "PASS",
+      "detail": "validation must keep execution, download, extraction, raw repository data, public AI, calibration and individual prediction blocked"
+    },
+    {
+      "id": "nhats-controlled-storage-validation-non-proof-note",
+      "status": "PASS",
+      "detail": "validation must state that it does not prove registration, workspace provisioning, download, extraction, calibration or prediction"
     },
     {
       "id": "nhats-file-tier-table-exists",
@@ -1462,7 +1497,7 @@
     }
   ],
   "summary": {
-    "pass": 291,
+    "pass": 298,
     "warn": 0,
     "fail": 0
   },
@@ -1839,7 +1874,7 @@
   },
   "nhatsAcquisitionReadiness": {
     "path": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_acquisition_readiness.json",
-    "sha256": "d6338729fac294557236ccebf26c049dab941e8ca1e74669b767c7c427805b19",
+    "sha256": "96ed11141edd22699e235e08d5ce1e2e5677ac8361010811b2a83bf4c9fecbf8",
     "status": "PASS",
     "checks": [
       {
@@ -1916,7 +1951,7 @@
   },
   "nhatsAcquisitionReadinessValidation": {
     "path": "web/src/data/life-path-nhats-acquisition-readiness-validation.json",
-    "sha256": "208859ab442f6ab8becceb3c767ad8b2362309a08af1afd1f97e9e67e5c0613c",
+    "sha256": "ccc9e622c8beb0aaca38418a2a0e29aa86d3323499a72e225ed6ac9f989b36a3",
     "status": "PASS",
     "checks": [
       {
@@ -1937,7 +1972,7 @@
       {
         "id": "nhats-acquisition-readiness-validation-pass",
         "status": "PASS",
-        "detail": "overallStatus='PASS' summary={'pass': 12, 'fail': 0}"
+        "detail": "overallStatus='PASS' summary={'pass': 13, 'fail': 0}"
       },
       {
         "id": "nhats-acquisition-readiness-validation-blocking-gates",
@@ -1953,6 +1988,53 @@
         "id": "nhats-acquisition-readiness-validation-non-proof-note",
         "status": "PASS",
         "detail": "validation must state that it does not prove registration, storage, downloads, extraction, calibration or prediction"
+      }
+    ],
+    "summary": {
+      "pass": 7,
+      "warn": 0,
+      "fail": 0
+    }
+  },
+  "nhatsControlledStorageDestruction": {
+    "path": "web/src/data/life-path-nhats-controlled-storage-destruction-validation.json",
+    "sha256": "e4e2bc132db26def53c6b7d069aed9592396b9b4b7f04b054b9014460a9655df",
+    "status": "PASS",
+    "checks": [
+      {
+        "id": "nhats-controlled-storage-validation-exists",
+        "status": "PASS",
+        "detail": "web/src/data/life-path-nhats-controlled-storage-destruction-validation.json"
+      },
+      {
+        "id": "nhats-controlled-storage-validation-schema",
+        "status": "PASS",
+        "detail": "schemaVersion='human-infra.life-path-nhats-controlled-storage-destruction-plan-validation.v1'"
+      },
+      {
+        "id": "nhats-controlled-storage-validation-source-hash",
+        "status": "PASS",
+        "detail": "validation must point back to current storage/destruction plan and acquisition-readiness hashes"
+      },
+      {
+        "id": "nhats-controlled-storage-validation-pass",
+        "status": "PASS",
+        "detail": "overallStatus='PASS' summary={'pass': 15, 'fail': 0}"
+      },
+      {
+        "id": "nhats-controlled-storage-validation-impact",
+        "status": "PASS",
+        "detail": "validation may only move storage/destruction to partial while keeping download, extraction and calibration blocked"
+      },
+      {
+        "id": "nhats-controlled-storage-validation-boundary",
+        "status": "PASS",
+        "detail": "validation must keep execution, download, extraction, raw repository data, public AI, calibration and individual prediction blocked"
+      },
+      {
+        "id": "nhats-controlled-storage-validation-non-proof-note",
+        "status": "PASS",
+        "detail": "validation must state that it does not prove registration, workspace provisioning, download, extraction, calibration or prediction"
       }
     ],
     "summary": {

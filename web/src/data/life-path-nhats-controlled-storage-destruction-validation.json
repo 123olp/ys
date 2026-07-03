@@ -1,0 +1,111 @@
+{
+  "schemaVersion": "human-infra.life-path-nhats-controlled-storage-destruction-plan-validation.v1",
+  "generatedAt": "2026-07-03T02:30:58.695000+00:00",
+  "sourceId": "nhats",
+  "planId": "nhats-controlled-storage-destruction-plan-2026-07-03",
+  "planPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_controlled_storage_destruction_plan.json",
+  "planSha256": "b4c7767ea04008f2766cfe8c700375438cbf1d3dd2c1bd956441a51131aea9ce",
+  "acquisitionReadinessId": "nhats-acquisition-readiness-2026-07-02",
+  "acquisitionReadinessPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_acquisition_readiness.json",
+  "acquisitionReadinessSha256": "96ed11141edd22699e235e08d5ce1e2e5677ac8361010811b2a83bf4c9fecbf8",
+  "overallStatus": "PASS",
+  "summary": {
+    "pass": 15,
+    "fail": 0
+  },
+  "checks": [
+    {
+      "id": "schema-version",
+      "status": "PASS",
+      "detail": "schemaVersion='human-infra.life-path-nhats-controlled-storage-destruction-plan.v1'"
+    },
+    {
+      "id": "plan-identity",
+      "status": "PASS",
+      "detail": "plan must bind NHATS acquisition readiness while staying plan-only and no-data-acquired"
+    },
+    {
+      "id": "current-decision-boundary",
+      "status": "PASS",
+      "detail": "only planDefined may be true; execution, download, extraction, repository raw data, public AI, calibration and individual prediction must remain false"
+    },
+    {
+      "id": "controlled-workspace-outside-repo",
+      "status": "PASS",
+      "detail": "controlled workspace root must be a non-repository placeholder, not a repository path"
+    },
+    {
+      "id": "repository-forbidden-locations",
+      "status": "PASS",
+      "detail": "plan must explicitly forbid raw, row-level, credential or public AI locations including docs/domains/web/tools"
+    },
+    {
+      "id": "outside-repository-zones",
+      "status": "PASS",
+      "detail": "raw, working extract and aggregate output zones must be required outside the repository and not yet created"
+    },
+    {
+      "id": "access-control-boundary",
+      "status": "PASS",
+      "detail": "access control must require least privilege while keeping registration, credentials, cookies and public AI blocked"
+    },
+    {
+      "id": "inventory-slots-empty",
+      "status": "PASS",
+      "detail": "inventory must define required slots and keep every slot empty before data acquisition"
+    },
+    {
+      "id": "destruction-protocol-defined-only",
+      "status": "PASS",
+      "detail": "destruction protocol must define trigger events and required steps but remain untested"
+    },
+    {
+      "id": "audit-log-template",
+      "status": "PASS",
+      "detail": "audit log template must contain required fields, prohibited fields and no created log"
+    },
+    {
+      "id": "readiness-impact-partial-blocking",
+      "status": "PASS",
+      "detail": "plan may only move storage/destruction to partial while keeping extraction, download and calibration blocked"
+    },
+    {
+      "id": "allowed-ai-input-boundary",
+      "status": "PASS",
+      "detail": "allowed AI inputs must stay limited to public docs, plan metadata, synthetic examples and aggregate non-disclosive outputs"
+    },
+    {
+      "id": "prohibited-actions",
+      "status": "PASS",
+      "detail": "missing=[]"
+    },
+    {
+      "id": "no-secret-raw-row-level-keys",
+      "status": "PASS",
+      "detail": "prohibited_keys=[]"
+    },
+    {
+      "id": "source-trace",
+      "status": "PASS",
+      "detail": "plan must cite official NHATS access/conditions and acquisition-readiness register"
+    }
+  ],
+  "readinessImpact": {
+    "storageDestructionGateStatus": "partial",
+    "whyPartial": "A plan exists and is machine-audited, but it has not been executed, no controlled workspace is provisioned, no access log exists and no destruction run has been tested.",
+    "extractionStillBlocked": true,
+    "downloadStillBlocked": true,
+    "calibrationStillBlocked": true
+  },
+  "boundary": {
+    "planDefined": true,
+    "planExecuted": false,
+    "downloadAllowed": false,
+    "extractionScriptAllowed": false,
+    "rawDataAllowedInRepository": false,
+    "publicAiUploadAllowed": false,
+    "calibrationAllowed": false,
+    "individualPredictionAllowed": false
+  },
+  "note": "This validation proves only that a controlled storage/destruction plan exists and still blocks acquisition. It does not prove registration, governed workspace provisioning, NHATS download, extraction, calibration, validation or individual prediction."
+}

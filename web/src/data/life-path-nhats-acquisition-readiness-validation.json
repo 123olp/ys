@@ -1,19 +1,19 @@
 {
   "schemaVersion": "human-infra.life-path-nhats-acquisition-readiness-validation.v1",
-  "generatedAt": "2026-07-03T02:12:31.275906+00:00",
+  "generatedAt": "2026-07-03T02:30:58.660954+00:00",
   "registerPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_acquisition_readiness.json",
-  "registerSha256": "d6338729fac294557236ccebf26c049dab941e8ca1e74669b767c7c427805b19",
+  "registerSha256": "96ed11141edd22699e235e08d5ce1e2e5677ac8361010811b2a83bf4c9fecbf8",
   "acquisitionReadinessId": "nhats-acquisition-readiness-2026-07-02",
   "overallStatus": "PASS",
   "summary": {
-    "pass": 12,
+    "pass": 13,
     "fail": 0
   },
   "gateSummary": {
     "requiredGateCount": 10,
     "readyGateCount": 0,
-    "partialGateCount": 3,
-    "missingGateCount": 7,
+    "partialGateCount": 4,
+    "missingGateCount": 6,
     "blockingGateCount": 10
   },
   "boundary": {
@@ -38,6 +38,11 @@
       "detail": "register must bind NHATS acquisition readiness and keep cannot-extract-yet status"
     },
     {
+      "id": "storage-destruction-plan-binding",
+      "status": "PASS",
+      "detail": "register must point to the controlled storage/destruction plan while keeping extraction blocked"
+    },
+    {
       "id": "current-decision-boundary",
       "status": "PASS",
       "detail": "acquisition, extraction, raw repository data, calibration and individual prediction must remain false"
@@ -55,7 +60,7 @@
     {
       "id": "gate-statuses",
       "status": "PASS",
-      "detail": "ready=0 partial=3 missing=7"
+      "detail": "ready=0 partial=4 missing=6"
     },
     {
       "id": "all-gates-block-extraction",

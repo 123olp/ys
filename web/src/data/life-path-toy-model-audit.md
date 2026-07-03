@@ -3,7 +3,7 @@
 - Overall status: `PASS`
 - Model path: `web/src/data/life-path-toy-model.json`
 - Model SHA-256: `a4c92209d79d20579bf1f575d5ebf07ffe5be9ccaf6bf3f3eef08efa287b5377`
-- Generated at: `2026-07-03T02:12:53.733606+00:00`
+- Generated at: `2026-07-03T02:27:50.427712+00:00`
 
 ## Checks
 
@@ -94,10 +94,17 @@
 | `nhats-acquisition-readiness-validation-exists` | `PASS` | web/src/data/life-path-nhats-acquisition-readiness-validation.json |
 | `nhats-acquisition-readiness-validation-schema` | `PASS` | schemaVersion='human-infra.life-path-nhats-acquisition-readiness-validation.v1' |
 | `nhats-acquisition-readiness-validation-source-hash` | `PASS` | validation must point back to the current acquisition-readiness register path and sha256 |
-| `nhats-acquisition-readiness-validation-pass` | `PASS` | overallStatus='PASS' summary={'pass': 12, 'fail': 0} |
+| `nhats-acquisition-readiness-validation-pass` | `PASS` | overallStatus='PASS' summary={'pass': 13, 'fail': 0} |
 | `nhats-acquisition-readiness-validation-blocking-gates` | `PASS` | validation must keep 10 acquisition-readiness gates blocking and 0 ready |
 | `nhats-acquisition-readiness-validation-boundary` | `PASS` | validation must keep acquisition, extraction, raw repository data, calibration and individual prediction blocked |
 | `nhats-acquisition-readiness-validation-non-proof-note` | `PASS` | validation must state that it does not prove registration, storage, downloads, extraction, calibration or prediction |
+| `nhats-controlled-storage-validation-exists` | `PASS` | web/src/data/life-path-nhats-controlled-storage-destruction-validation.json |
+| `nhats-controlled-storage-validation-schema` | `PASS` | schemaVersion='human-infra.life-path-nhats-controlled-storage-destruction-plan-validation.v1' |
+| `nhats-controlled-storage-validation-source-hash` | `PASS` | validation must point back to current storage/destruction plan and acquisition-readiness hashes |
+| `nhats-controlled-storage-validation-pass` | `PASS` | overallStatus='PASS' summary={'pass': 15, 'fail': 0} |
+| `nhats-controlled-storage-validation-impact` | `PASS` | validation may only move storage/destruction to partial while keeping download, extraction and calibration blocked |
+| `nhats-controlled-storage-validation-boundary` | `PASS` | validation must keep execution, download, extraction, raw repository data, public AI, calibration and individual prediction blocked |
+| `nhats-controlled-storage-validation-non-proof-note` | `PASS` | validation must state that it does not prove registration, workspace provisioning, download, extraction, calibration or prediction |
 | `nhats-file-tier-table-exists` | `PASS` | domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_file_tier_table.json |
 | `nhats-file-tier-table-schema` | `PASS` | schemaVersion='human-infra.life-path-nhats-file-tier-table.v1' |
 | `nhats-file-tier-table-identity` | `PASS` | file-tier table must bind NHATS source, Data Card, manifest, acquisition readiness and candidate-only status |
@@ -343,7 +350,7 @@
 ## NHATS Acquisition Readiness
 
 - Acquisition readiness path: `domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_acquisition_readiness.json`
-- Acquisition readiness SHA-256: `d6338729fac294557236ccebf26c049dab941e8ca1e74669b767c7c427805b19`
+- Acquisition readiness SHA-256: `96ed11141edd22699e235e08d5ce1e2e5677ac8361010811b2a83bf4c9fecbf8`
 - Acquisition readiness status: `PASS`
 - Boundary: the structured readiness contract keeps NHATS at cannot-extract-yet until registration, file-tier, Colectica variables, endpoint, survey design, disclosure control, AI boundary and storage/destruction gates are ready.
 

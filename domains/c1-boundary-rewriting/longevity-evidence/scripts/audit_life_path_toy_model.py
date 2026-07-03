@@ -88,6 +88,22 @@ DEFAULT_NHATS_ACQUISITION_READINESS = (
 DEFAULT_NHATS_ACQUISITION_READINESS_VALIDATION = (
     REPO_ROOT / "web" / "src" / "data" / "life-path-nhats-acquisition-readiness-validation.json"
 )
+DEFAULT_NHATS_CONTROLLED_STORAGE_DESTRUCTION_PLAN = (
+    REPO_ROOT
+    / "domains"
+    / "c1-boundary-rewriting"
+    / "longevity-evidence"
+    / "data"
+    / "manual"
+    / "life_path_nhats_controlled_storage_destruction_plan.json"
+)
+DEFAULT_NHATS_CONTROLLED_STORAGE_DESTRUCTION_VALIDATION = (
+    REPO_ROOT
+    / "web"
+    / "src"
+    / "data"
+    / "life-path-nhats-controlled-storage-destruction-validation.json"
+)
 DEFAULT_NHATS_FILE_TIER_TABLE = (
     REPO_ROOT
     / "domains"
@@ -1869,6 +1885,116 @@ def audit_nhats_acquisition_readiness_validation(
         "nhats-acquisition-readiness-validation-non-proof-note",
         status_from_bool(exists and note_ok),
         "validation must state that it does not prove registration, storage, downloads, extraction, calibration or prediction",
+    )
+
+    return {
+        "path": str(validation_path.relative_to(REPO_ROOT)),
+        "sha256": sha256_file(validation_path) if exists else None,
+        "status": "PASS" if summarize_checks(checks)["fail"] == 0 else "FAIL",
+        "checks": checks,
+        "summary": summarize_checks(checks),
+    }
+
+
+def audit_nhats_controlled_storage_destruction_validation(
+    validation_path: Path,
+    plan_path: Path,
+    readiness_path: Path,
+) -> dict[str, Any]:
+    checks: list[dict[str, Any]] = []
+    exists = validation_path.exists()
+    add_check(
+        checks,
+        "nhats-controlled-storage-validation-exists",
+        status_from_bool(exists),
+        str(validation_path.relative_to(REPO_ROOT)),
+    )
+    validation = load_json(validation_path) if exists else {}
+
+    schema_ok = (
+        validation.get("schemaVersion")
+        == "human-infra.life-path-nhats-controlled-storage-destruction-plan-validation.v1"
+    )
+    add_check(
+        checks,
+        "nhats-controlled-storage-validation-schema",
+        status_from_bool(exists and schema_ok),
+        f"schemaVersion={validation.get('schemaVersion')!r}",
+    )
+
+    source_ok = (
+        validation.get("planPath") == str(plan_path.relative_to(REPO_ROOT))
+        and validation.get("planSha256") == sha256_file(plan_path)
+        and validation.get("acquisitionReadinessPath") == str(readiness_path.relative_to(REPO_ROOT))
+        and validation.get("acquisitionReadinessSha256") == sha256_file(readiness_path)
+        and validation.get("planId") == "nhats-controlled-storage-destruction-plan-2026-07-03"
+    )
+    add_check(
+        checks,
+        "nhats-controlled-storage-validation-source-hash",
+        status_from_bool(exists and plan_path.exists() and readiness_path.exists() and source_ok),
+        "validation must point back to current storage/destruction plan and acquisition-readiness hashes",
+    )
+
+    summary = validation.get("summary")
+    status_ok = (
+        validation.get("overallStatus") == "PASS"
+        and isinstance(summary, dict)
+        and summary.get("fail") == 0
+        and isinstance(validation.get("checks"), list)
+    )
+    add_check(
+        checks,
+        "nhats-controlled-storage-validation-pass",
+        status_from_bool(exists and status_ok),
+        f"overallStatus={validation.get('overallStatus')!r} summary={summary!r}",
+    )
+
+    impact = validation.get("readinessImpact")
+    impact_ok = (
+        isinstance(impact, dict)
+        and impact.get("storageDestructionGateStatus") == "partial"
+        and impact.get("extractionStillBlocked") is True
+        and impact.get("downloadStillBlocked") is True
+        and impact.get("calibrationStillBlocked") is True
+    )
+    add_check(
+        checks,
+        "nhats-controlled-storage-validation-impact",
+        status_from_bool(exists and impact_ok),
+        "validation may only move storage/destruction to partial while keeping download, extraction and calibration blocked",
+    )
+
+    boundary = validation.get("boundary")
+    boundary_ok = (
+        isinstance(boundary, dict)
+        and boundary.get("planDefined") is True
+        and boundary.get("planExecuted") is False
+        and boundary.get("downloadAllowed") is False
+        and boundary.get("extractionScriptAllowed") is False
+        and boundary.get("rawDataAllowedInRepository") is False
+        and boundary.get("publicAiUploadAllowed") is False
+        and boundary.get("calibrationAllowed") is False
+        and boundary.get("individualPredictionAllowed") is False
+    )
+    add_check(
+        checks,
+        "nhats-controlled-storage-validation-boundary",
+        status_from_bool(exists and boundary_ok),
+        "validation must keep execution, download, extraction, raw repository data, public AI, calibration and individual prediction blocked",
+    )
+
+    note = str(validation.get("note", "")).lower()
+    note_ok = (
+        "does not prove registration" in note
+        and "governed workspace provisioning" in note
+        and "nhats download" in note
+    )
+    add_check(
+        checks,
+        "nhats-controlled-storage-validation-non-proof-note",
+        status_from_bool(exists and note_ok),
+        "validation must state that it does not prove registration, workspace provisioning, download, extraction, calibration or prediction",
     )
 
     return {
@@ -5563,6 +5689,8 @@ def audit_model(
     nhats_extraction_manifest_path: Path,
     nhats_acquisition_readiness_path: Path,
     nhats_acquisition_readiness_validation_path: Path,
+    nhats_controlled_storage_destruction_plan_path: Path,
+    nhats_controlled_storage_destruction_validation_path: Path,
     nhats_file_tier_table_path: Path,
     nhats_first_estimand_protocol_path: Path,
     nhats_variable_confirmation_matrix_path: Path,
@@ -5773,6 +5901,13 @@ def audit_model(
             nhats_acquisition_readiness_path,
         )
     )
+    nhats_controlled_storage_destruction_audit = (
+        audit_nhats_controlled_storage_destruction_validation(
+            nhats_controlled_storage_destruction_validation_path,
+            nhats_controlled_storage_destruction_plan_path,
+            nhats_acquisition_readiness_path,
+        )
+    )
     nhats_file_tier_table_audit = audit_nhats_file_tier_table(
         nhats_file_tier_table_path,
     )
@@ -5860,6 +5995,7 @@ def audit_model(
     checks.extend(nhats_extraction_manifest_audit["checks"])
     checks.extend(nhats_acquisition_readiness_audit["checks"])
     checks.extend(nhats_acquisition_readiness_validation_audit["checks"])
+    checks.extend(nhats_controlled_storage_destruction_audit["checks"])
     checks.extend(nhats_file_tier_table_audit["checks"])
     checks.extend(nhats_first_estimand_protocol_audit["checks"])
     checks.extend(nhats_variable_confirmation_matrix_audit["checks"])
@@ -5893,6 +6029,7 @@ def audit_model(
         "nhatsExtractionManifest": nhats_extraction_manifest_audit,
         "nhatsAcquisitionReadiness": nhats_acquisition_readiness_audit,
         "nhatsAcquisitionReadinessValidation": nhats_acquisition_readiness_validation_audit,
+        "nhatsControlledStorageDestruction": nhats_controlled_storage_destruction_audit,
         "nhatsFileTierTable": nhats_file_tier_table_audit,
         "nhatsFirstEstimandProtocol": nhats_first_estimand_protocol_audit,
         "nhatsVariableConfirmationMatrix": nhats_variable_confirmation_matrix_audit,
@@ -6160,6 +6297,16 @@ def parse_args() -> argparse.Namespace:
         default=DEFAULT_NHATS_ACQUISITION_READINESS_VALIDATION,
     )
     parser.add_argument(
+        "--nhats-controlled-storage-destruction-plan",
+        type=Path,
+        default=DEFAULT_NHATS_CONTROLLED_STORAGE_DESTRUCTION_PLAN,
+    )
+    parser.add_argument(
+        "--nhats-controlled-storage-destruction-validation",
+        type=Path,
+        default=DEFAULT_NHATS_CONTROLLED_STORAGE_DESTRUCTION_VALIDATION,
+    )
+    parser.add_argument(
         "--nhats-file-tier-table",
         type=Path,
         default=DEFAULT_NHATS_FILE_TIER_TABLE,
@@ -6314,6 +6461,12 @@ def main() -> int:
     nhats_acquisition_readiness_validation_path = (
         args.nhats_acquisition_readiness_validation.resolve()
     )
+    nhats_controlled_storage_destruction_plan_path = (
+        args.nhats_controlled_storage_destruction_plan.resolve()
+    )
+    nhats_controlled_storage_destruction_validation_path = (
+        args.nhats_controlled_storage_destruction_validation.resolve()
+    )
     nhats_file_tier_table_path = args.nhats_file_tier_table.resolve()
     nhats_first_estimand_protocol_path = args.nhats_first_estimand_protocol.resolve()
     nhats_variable_confirmation_matrix_path = (
@@ -6392,6 +6545,8 @@ def main() -> int:
         nhats_extraction_manifest_path,
         nhats_acquisition_readiness_path,
         nhats_acquisition_readiness_validation_path,
+        nhats_controlled_storage_destruction_plan_path,
+        nhats_controlled_storage_destruction_validation_path,
         nhats_file_tier_table_path,
         nhats_first_estimand_protocol_path,
         nhats_variable_confirmation_matrix_path,

@@ -21,6 +21,9 @@ MANUAL_DIR = (
     / "manual"
 )
 DEFAULT_REGISTER = MANUAL_DIR / "life_path_nhats_acquisition_readiness.json"
+DEFAULT_STORAGE_DESTRUCTION_PLAN = (
+    MANUAL_DIR / "life_path_nhats_controlled_storage_destruction_plan.json"
+)
 DEFAULT_OUT = (
     REPO_ROOT
     / "web"
@@ -158,6 +161,20 @@ def validate_register(register: dict[str, Any]) -> list[dict[str, Any]]:
         "register must bind NHATS acquisition readiness and keep cannot-extract-yet status",
     )
 
+    storage_plan_ok = (
+        register.get("storageDestructionPlanId")
+        == "nhats-controlled-storage-destruction-plan-2026-07-03"
+        and register.get("storageDestructionPlanPath")
+        == repo_rel(DEFAULT_STORAGE_DESTRUCTION_PLAN)
+        and DEFAULT_STORAGE_DESTRUCTION_PLAN.exists()
+    )
+    add_check(
+        checks,
+        "storage-destruction-plan-binding",
+        storage_plan_ok,
+        "register must point to the controlled storage/destruction plan while keeping extraction blocked",
+    )
+
     decision = register.get("currentDecision")
     decision_ok = isinstance(decision, dict)
     if isinstance(decision, dict):
@@ -231,7 +248,7 @@ def validate_register(register: dict[str, Any]) -> list[dict[str, Any]]:
     add_check(
         checks,
         "gate-statuses",
-        gate_status_ok and ready_count == 0 and partial_count == 3 and missing_count == 7,
+        gate_status_ok and ready_count == 0 and partial_count == 4 and missing_count == 6,
         f"ready={ready_count} partial={partial_count} missing={missing_count}",
     )
     add_check(
@@ -246,8 +263,8 @@ def validate_register(register: dict[str, Any]) -> list[dict[str, Any]]:
         isinstance(summary, dict)
         and summary.get("requiredGateCount") == 10
         and summary.get("readyGateCount") == 0
-        and summary.get("partialGateCount") == 3
-        and summary.get("missingGateCount") == 7
+        and summary.get("partialGateCount") == 4
+        and summary.get("missingGateCount") == 6
         and summary.get("blockingGateCount") == 10
     )
     add_check(

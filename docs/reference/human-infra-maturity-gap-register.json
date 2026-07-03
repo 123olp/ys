@@ -737,6 +737,9 @@
         "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_acquisition_readiness.json",
         "domains/c1-boundary-rewriting/longevity-evidence/scripts/validate_nhats_acquisition_readiness.py",
         "web/src/data/life-path-nhats-acquisition-readiness-validation.json",
+        "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_controlled_storage_destruction_plan.json",
+        "domains/c1-boundary-rewriting/longevity-evidence/scripts/validate_nhats_controlled_storage_destruction_plan.py",
+        "web/src/data/life-path-nhats-controlled-storage-destruction-validation.json",
         "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_value_label_review_execution_register.json",
         "web/src/data/life-path-nhats-colectica-value-label-review-execution-validation.json",
         "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_access_route_probe_register.json",
@@ -816,15 +819,19 @@
           "evidence": [
             "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_acquisition_readiness.json",
             "domains/c1-boundary-rewriting/longevity-evidence/scripts/validate_nhats_acquisition_readiness.py",
-            "web/src/data/life-path-nhats-acquisition-readiness-validation.json"
+            "web/src/data/life-path-nhats-acquisition-readiness-validation.json",
+            "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_controlled_storage_destruction_plan.json",
+            "domains/c1-boundary-rewriting/longevity-evidence/scripts/validate_nhats_controlled_storage_destruction_plan.py",
+            "web/src/data/life-path-nhats-controlled-storage-destruction-validation.json"
           ],
           "missingEvidence": [
-            "Acquisition-readiness validator now proves all 10 readiness gates still block extraction.",
+            "Acquisition-readiness validator now proves all 10 readiness gates still block extraction, with storage-destruction-plan upgraded only to partial.",
+            "Controlled storage/destruction plan now exists and is machine-validated, but it has not been executed.",
             "NHATS registration evidence.",
             "Allowed file tier confirmation.",
-            "Controlled storage and destruction record."
+            "Controlled workspace provisioning, access log, inventory log and synthetic destruction drill record."
           ],
-          "nextAction": "Complete governed data access records before any extractor is written.",
+          "nextAction": "Complete governed data access records and execute the controlled storage/destruction plan outside the public repository before any extractor is written.",
           "blocks100Percent": true
         },
         {

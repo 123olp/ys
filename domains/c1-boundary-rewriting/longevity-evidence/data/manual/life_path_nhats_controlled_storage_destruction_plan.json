@@ -1,0 +1,253 @@
+{
+  "schemaVersion": "human-infra.life-path-nhats-controlled-storage-destruction-plan.v1",
+  "sourceId": "nhats",
+  "sourceName": "National Health and Aging Trends Study",
+  "planId": "nhats-controlled-storage-destruction-plan-2026-07-03",
+  "acquisitionReadinessId": "nhats-acquisition-readiness-2026-07-02",
+  "acquisitionReadinessPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_acquisition_readiness.json",
+  "reviewDate": "2026-07-03",
+  "reviewer": "tradecatlabs",
+  "status": "plan-only-not-executed-no-data-acquired",
+  "currentDecision": {
+    "planDefined": true,
+    "planExecuted": false,
+    "registrationRecorded": false,
+    "controlledWorkspaceProvisioned": false,
+    "accessLogInitialized": false,
+    "dataInventoryInitialized": false,
+    "downloadAllowed": false,
+    "extractionScriptAllowed": false,
+    "rawDataAllowedInRepository": false,
+    "publicAiUploadAllowed": false,
+    "publicExportAllowed": false,
+    "calibrationAllowed": false,
+    "individualPredictionAllowed": false,
+    "reason": "The storage and destruction plan is defined as a pre-acquisition control. It has not been executed, no NHATS files are present, no access log exists and no download or extraction is authorized."
+  },
+  "storageBoundary": {
+    "controlledWorkspaceRoot": "<controlled-non-repository-workspace>/nhats",
+    "repositoryPolicy": "No raw NHATS, raw NSOC, sensitive NHATS, restricted NHATS, row-level derived data, credentials, cookies, tokens or death-date fields may be stored in this repository.",
+    "allowedRepositoryArtifacts": [
+      "public documentation URLs",
+      "non-sensitive plan metadata",
+      "synthetic test cases",
+      "aggregate non-disclosive validation outputs",
+      "hashes of local non-public evidence where sharing is allowed"
+    ],
+    "requiredOutsideRepositoryZones": [
+      {
+        "id": "raw-download-zone",
+        "purpose": "Original NHATS or NSOC files after access approval",
+        "status": "not-created",
+        "allowedContent": [
+          "registered-user downloads",
+          "official checksums or local file hashes",
+          "access-tier labels"
+        ]
+      },
+      {
+        "id": "working-extract-zone",
+        "purpose": "Temporary row-level extracts inside governed workspace",
+        "status": "not-created",
+        "allowedContent": [
+          "minimum rows and variables required by the pre-registered estimand",
+          "intermediate route classifications",
+          "survey-design working objects"
+        ]
+      },
+      {
+        "id": "aggregate-output-zone",
+        "purpose": "Disclosure-reviewed aggregate outputs before repository export",
+        "status": "not-created",
+        "allowedContent": [
+          "suppressed cohort-flow counts",
+          "suppressed endpoint-route counts",
+          "aggregate diagnostics",
+          "disclosure-control reports"
+        ]
+      }
+    ],
+    "explicitlyForbiddenLocations": [
+      "README.md",
+      "docs/",
+      "domains/",
+      "web/",
+      "tools/",
+      "public LLM prompts",
+      "public AI file uploads",
+      "issue trackers",
+      "chat transcripts",
+      "uncontrolled cloud sync folders"
+    ]
+  },
+  "accessControl": {
+    "authorizedUserBoundaryRecordedOutsideRepo": false,
+    "leastPrivilegeRequired": true,
+    "credentialStorageInRepositoryAllowed": false,
+    "sessionCookieStorageAllowed": false,
+    "publicAiAccessAllowed": false,
+    "requiredPreDownloadEvidence": [
+      "registration status recorded outside public repository",
+      "file tier and approval state confirmed for every planned file",
+      "controlled workspace root created outside repository",
+      "access log initialized outside repository",
+      "data inventory initialized outside repository",
+      "destruction contact and request workflow recorded outside repository"
+    ]
+  },
+  "inventorySlots": [
+    {
+      "id": "file-family",
+      "required": true,
+      "status": "empty",
+      "description": "NHATS file family such as annual public-use, sensitive sample-person, other-person or seasonality weights."
+    },
+    {
+      "id": "round",
+      "required": true,
+      "status": "empty",
+      "description": "Round number and release date."
+    },
+    {
+      "id": "access-tier",
+      "required": true,
+      "status": "empty",
+      "description": "Public-use, sensitive or restricted tier with approval state."
+    },
+    {
+      "id": "local-controlled-path",
+      "required": true,
+      "status": "empty",
+      "description": "Non-repository controlled workspace path."
+    },
+    {
+      "id": "sha256",
+      "required": true,
+      "status": "empty",
+      "description": "Local hash of the governed file where allowed by conditions."
+    },
+    {
+      "id": "retention-class",
+      "required": true,
+      "status": "empty",
+      "description": "Raw, working extract, aggregate review or export artifact."
+    },
+    {
+      "id": "destruction-status",
+      "required": true,
+      "status": "empty",
+      "description": "Not acquired, retained under conditions, pending destruction, destroyed or externally verified."
+    }
+  ],
+  "destructionProtocol": {
+    "status": "defined-only-not-tested",
+    "triggerEvents": [
+      "NHATS or NSOC conditions require destruction",
+      "access approval expires or is revoked",
+      "project no longer needs the governed file",
+      "workspace compromise or suspected uncontrolled disclosure",
+      "review discovers raw or row-level data in a prohibited location"
+    ],
+    "requiredSteps": [
+      {
+        "id": "freeze-workspace",
+        "status": "defined",
+        "description": "Stop extraction, export and model runs until the inventory is reconciled."
+      },
+      {
+        "id": "inventory-match",
+        "status": "defined",
+        "description": "Match every file, working extract and derived row-level artifact to the local inventory."
+      },
+      {
+        "id": "delete-controlled-copies",
+        "status": "defined",
+        "description": "Delete or securely wipe governed copies according to local platform capability and source conditions."
+      },
+      {
+        "id": "review-derived-outputs",
+        "status": "defined",
+        "description": "Retain only aggregate, non-disclosive outputs that pass disclosure and source-condition review."
+      },
+      {
+        "id": "record-destruction-log",
+        "status": "defined",
+        "description": "Record timestamp, file family, hash where allowed, action, reviewer and remaining aggregate artifacts outside the public repository."
+      },
+      {
+        "id": "second-reviewer-signoff",
+        "status": "defined",
+        "description": "Require second reviewer confirmation before any public aggregate artifact remains."
+      }
+    ]
+  },
+  "auditLogTemplate": {
+    "status": "template-only-no-log-created",
+    "requiredFields": [
+      "eventId",
+      "timestamp",
+      "actorBoundary",
+      "action",
+      "fileFamily",
+      "round",
+      "accessTier",
+      "controlledPathAlias",
+      "containsRawOrRowLevelData",
+      "repositoryExportRequested",
+      "publicAiUploadRequested",
+      "disclosureReviewStatus",
+      "destructionStatus",
+      "reviewerNotes",
+      "secondReviewerSignoff"
+    ],
+    "prohibitedFields": [
+      "password",
+      "sessionCookie",
+      "sessionCookies",
+      "authToken",
+      "individualIdentifier",
+      "rowLevelData",
+      "rawNhatsData",
+      "rawNsocData",
+      "deathDate",
+      "individualDeathDate",
+      "predictedDeathDate"
+    ]
+  },
+  "allowedAiInputs": [
+    "public NHATS documentation URLs",
+    "this plan metadata",
+    "synthetic examples created without row-level NHATS or NSOC data",
+    "aggregate non-disclosive outputs that pass disclosure review"
+  ],
+  "prohibitedActions": [
+    "download NHATS or NSOC files before every acquisition-readiness gate is ready",
+    "place raw NHATS or NSOC files in this repository",
+    "place row-level derived NHATS or NSOC extracts in this repository",
+    "store NHATS credentials, cookies or tokens in this repository",
+    "upload raw or row-level NHATS or NSOC data to public LLMs or AI platforms",
+    "export small cells or unsuppressed sensitive tabulations",
+    "write extraction scripts before exact fields, file tiers, survey design and disclosure gates pass",
+    "claim calibration, validation, intervention effect or individual prediction before governed cohort diagnostics exist"
+  ],
+  "readinessImpact": {
+    "storageDestructionGateStatus": "partial",
+    "whyPartial": "A plan exists and is machine-audited, but it has not been executed, no controlled workspace is provisioned, no access log exists and no destruction run has been tested.",
+    "extractionStillBlocked": true,
+    "downloadStillBlocked": true,
+    "calibrationStillBlocked": true
+  },
+  "sourceTrace": [
+    "https://www.nhats.org/data-access",
+    "https://www.nhats.org/conditions-of-use",
+    "https://www.nhats.org/",
+    "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_acquisition_readiness.json"
+  ],
+  "nextWork": [
+    "Record NHATS registration status metadata outside the public repository.",
+    "Create the controlled workspace outside the repository and record only non-sensitive aliases here.",
+    "Initialize an access and inventory log outside the repository before any download.",
+    "Run a dry destruction drill on synthetic files before governed NHATS files are acquired.",
+    "Keep acquisition status at cannot-extract-yet until registration, file tier, Colectica, survey design, endpoint and disclosure gates are ready."
+  ]
+}
