@@ -1,0 +1,49 @@
+{
+  "schemaVersion": "human-infra.nhanes-public-lmf-r-survey-runtime-smoke-validation.v1",
+  "generatedAt": "2026-07-03T09:40:39.587202+00:00",
+  "status": "pass",
+  "readinessPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_r_survey_runtime_smoke_readiness.json",
+  "readinessSha256": "117e03dfd6cfec882f1b3c0587323478d9b8cae1e277a6cbe119b166fb22b0d5",
+  "summary": {
+    "runtimeExecutable": "Rscript",
+    "requiredPackage": "survey",
+    "runtimeProbeExecuted": true,
+    "rscriptAvailable": false,
+    "surveyPackageAvailable": false,
+    "syntheticSmokeExecuted": false,
+    "syntheticSmokePassed": false,
+    "smokeStatus": "blocked-no-rscript",
+    "weightedDomainOutputAllowed": false,
+    "individualPredictionAllowed": false
+  },
+  "runtimeProbe": {
+    "rscriptPath": null,
+    "rscriptVersion": null,
+    "rscriptAvailable": false,
+    "surveyPackageAvailable": false,
+    "syntheticSmokeExecuted": false,
+    "syntheticSmokePassed": false,
+    "smokeStatus": "blocked-no-rscript",
+    "stdoutPreview": "",
+    "stderrPreview": "",
+    "returnCode": null
+  },
+  "nonProofBoundary": {
+    "confirms": [
+      "runtime probe contract validity",
+      "current environment Rscript/survey smoke status",
+      "no public NHANES rows touched by smoke test",
+      "weighted output remains blocked"
+    ],
+    "doesNotConfirm": [
+      "public NHANES weighted domain output",
+      "design-based confidence intervals",
+      "domain degrees-of-freedom or sparse-domain policy",
+      "disclosure-reviewed public output",
+      "calibration",
+      "individual prediction",
+      "medical advice"
+    ]
+  },
+  "nextAction": "Install/provide Rscript with the R survey package in a controlled runtime, then rerun this smoke gate."
+}

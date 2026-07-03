@@ -107,6 +107,22 @@ DEFAULT_NHANES_PUBLIC_LMF_WEIGHTED_ESTIMATOR_READINESS_VALIDATION = (
     / "data"
     / "life-path-nhanes-public-lmf-weighted-estimator-readiness-validation.json"
 )
+DEFAULT_NHANES_PUBLIC_LMF_R_SURVEY_RUNTIME_SMOKE_READINESS = (
+    REPO_ROOT
+    / "domains"
+    / "c1-boundary-rewriting"
+    / "longevity-evidence"
+    / "data"
+    / "manual"
+    / "life_path_nhanes_public_lmf_r_survey_runtime_smoke_readiness.json"
+)
+DEFAULT_NHANES_PUBLIC_LMF_R_SURVEY_RUNTIME_SMOKE_VALIDATION = (
+    REPO_ROOT
+    / "web"
+    / "src"
+    / "data"
+    / "life-path-nhanes-public-lmf-r-survey-runtime-smoke-validation.json"
+)
 DEFAULT_DATA_SOURCES = (
     REPO_ROOT
     / "domains"
@@ -1892,6 +1908,134 @@ def audit_nhanes_public_lmf_weighted_estimator_readiness(
         "validationPath": str(validation_path.relative_to(REPO_ROOT)),
         "validationSha256": sha256_file(validation_path) if validation_exists else None,
         "status": "PASS" if summarize_checks(checks)["fail"] == 0 else "FAIL",
+        "checks": checks,
+        "summary": summarize_checks(checks),
+    }
+
+
+def audit_nhanes_public_lmf_r_survey_runtime_smoke(
+    readiness_path: Path,
+    validation_path: Path,
+) -> dict[str, Any]:
+    checks: list[dict[str, Any]] = []
+    readiness_exists = readiness_path.exists()
+    validation_exists = validation_path.exists()
+    add_check(
+        checks,
+        "nhanes-public-lmf-r-survey-runtime-smoke-readiness-exists",
+        status_from_bool(readiness_exists),
+        str(readiness_path.relative_to(REPO_ROOT)),
+    )
+    add_check(
+        checks,
+        "nhanes-public-lmf-r-survey-runtime-smoke-validation-exists",
+        status_from_bool(validation_exists),
+        str(validation_path.relative_to(REPO_ROOT)),
+    )
+
+    readiness = load_json(readiness_path) if readiness_exists else {}
+    validation = load_json(validation_path) if validation_exists else {}
+    readiness_schema_ok = (
+        readiness.get("schemaVersion")
+        == "human-infra.nhanes-public-lmf-r-survey-runtime-smoke-readiness.v1"
+        and readiness.get("status") == "runtime-smoke-gate-defined-no-weighted-domain-output"
+    )
+    add_check(
+        checks,
+        "nhanes-public-lmf-r-survey-runtime-smoke-readiness-schema",
+        status_from_bool(readiness_exists and readiness_schema_ok),
+        f"schemaVersion={readiness.get('schemaVersion')!r}",
+    )
+
+    contract = readiness.get("runtimeSmokeContract")
+    contract_ok = (
+        isinstance(contract, dict)
+        and contract.get("runtimeExecutable") == "Rscript"
+        and contract.get("requiredPackage") == "survey"
+        and contract.get("primaryDesignFunction") == "svydesign"
+        and contract.get("domainMechanism") == "subset.survey.design"
+        and contract.get("syntheticDataOnly") is True
+        and contract.get("publicNhanesRowsAllowed") is False
+        and contract.get("rowPersistenceAllowed") is False
+        and contract.get("packageInstallAllowed") is False
+        and contract.get("networkAccessAllowed") is False
+        and contract.get("weightedDomainOutputAllowed") is False
+        and contract.get("individualPredictionAllowed") is False
+    )
+    add_check(
+        checks,
+        "nhanes-public-lmf-r-survey-runtime-smoke-contract-boundary",
+        status_from_bool(readiness_exists and contract_ok),
+        "runtime smoke must use synthetic data only and must not install packages, download data, persist rows or allow weighted output",
+    )
+
+    validation_schema_ok = (
+        validation.get("schemaVersion")
+        == "human-infra.nhanes-public-lmf-r-survey-runtime-smoke-validation.v1"
+        and validation.get("status") == "pass"
+    )
+    source_ok = (
+        validation.get("readinessPath") == str(readiness_path.relative_to(REPO_ROOT))
+        and validation.get("readinessSha256") == sha256_file(readiness_path)
+        if readiness_exists
+        else False
+    )
+    add_check(
+        checks,
+        "nhanes-public-lmf-r-survey-runtime-smoke-validation-source-hash",
+        status_from_bool(validation_exists and validation_schema_ok and source_ok),
+        "validation must point back to current runtime-smoke readiness path and sha256",
+    )
+
+    summary = validation.get("summary")
+    valid_smoke_statuses = {
+        "blocked-no-rscript",
+        "blocked-rscript-version-probe-failed",
+        "blocked-survey-package-missing",
+        "blocked-survey-package-load-failed",
+        "blocked-synthetic-smoke-timeout",
+        "blocked-synthetic-smoke-oserror",
+        "blocked-synthetic-smoke-failed",
+        "ready-synthetic-r-survey-smoke-passed",
+    }
+    summary_ok = (
+        isinstance(summary, dict)
+        and summary.get("runtimeExecutable") == "Rscript"
+        and summary.get("requiredPackage") == "survey"
+        and summary.get("runtimeProbeExecuted") is True
+        and summary.get("smokeStatus") in valid_smoke_statuses
+        and summary.get("weightedDomainOutputAllowed") is False
+        and summary.get("individualPredictionAllowed") is False
+    )
+    add_check(
+        checks,
+        "nhanes-public-lmf-r-survey-runtime-smoke-validation-summary",
+        status_from_bool(validation_exists and summary_ok),
+        "runtime smoke validation must record current Rscript/survey status while keeping weighted output and individual prediction blocked",
+    )
+
+    non_proof = validation.get("nonProofBoundary")
+    non_proof_ok = (
+        isinstance(non_proof, dict)
+        and "public NHANES weighted domain output" in non_proof.get("doesNotConfirm", [])
+        and "design-based confidence intervals" in non_proof.get("doesNotConfirm", [])
+        and "calibration" in non_proof.get("doesNotConfirm", [])
+        and "individual prediction" in non_proof.get("doesNotConfirm", [])
+    )
+    add_check(
+        checks,
+        "nhanes-public-lmf-r-survey-runtime-smoke-non-proof-boundary",
+        status_from_bool(validation_exists and non_proof_ok),
+        "runtime smoke must not be interpreted as public weighted output, intervals, calibration or individual prediction",
+    )
+
+    return {
+        "readinessPath": str(readiness_path.relative_to(REPO_ROOT)),
+        "readinessSha256": sha256_file(readiness_path) if readiness_exists else None,
+        "validationPath": str(validation_path.relative_to(REPO_ROOT)),
+        "validationSha256": sha256_file(validation_path) if validation_exists else None,
+        "status": "PASS" if summarize_checks(checks)["fail"] == 0 else "FAIL",
+        "runtimeSmokeStatus": summary.get("smokeStatus") if isinstance(summary, dict) else None,
         "checks": checks,
         "summary": summarize_checks(checks),
     }
@@ -7414,6 +7558,8 @@ def audit_model(
     nhanes_public_lmf_eligible_base_readiness_validation_path: Path,
     nhanes_public_lmf_weighted_estimator_readiness_path: Path,
     nhanes_public_lmf_weighted_estimator_readiness_validation_path: Path,
+    nhanes_public_lmf_r_survey_runtime_smoke_readiness_path: Path,
+    nhanes_public_lmf_r_survey_runtime_smoke_validation_path: Path,
     data_sources_path: Path,
     source_cards_path: Path,
     data_card_template_path: Path,
@@ -7648,6 +7794,12 @@ def audit_model(
             nhanes_public_lmf_weighted_estimator_readiness_validation_path,
         )
     )
+    nhanes_public_lmf_r_survey_runtime_smoke_audit = (
+        audit_nhanes_public_lmf_r_survey_runtime_smoke(
+            nhanes_public_lmf_r_survey_runtime_smoke_readiness_path,
+            nhanes_public_lmf_r_survey_runtime_smoke_validation_path,
+        )
+    )
     data_sources = load_json(data_sources_path)
     data_sources_audit = audit_data_sources(data_sources, data_sources_path)
     source_card_docs_audit = audit_source_card_docs(
@@ -7806,6 +7958,7 @@ def audit_model(
     checks.extend(nhanes_public_lmf_domain_subpopulation_rule_readiness_audit["checks"])
     checks.extend(nhanes_public_lmf_eligible_base_readiness_audit["checks"])
     checks.extend(nhanes_public_lmf_weighted_estimator_readiness_audit["checks"])
+    checks.extend(nhanes_public_lmf_r_survey_runtime_smoke_audit["checks"])
     checks.extend(data_sources_audit["checks"])
     checks.extend(source_card_docs_audit["checks"])
     checks.extend(nhats_docs_audit["checks"])
@@ -7851,6 +8004,7 @@ def audit_model(
         "nhanesPublicLmfDomainSubpopulationRuleReadiness": nhanes_public_lmf_domain_subpopulation_rule_readiness_audit,
         "nhanesPublicLmfEligibleBaseReadiness": nhanes_public_lmf_eligible_base_readiness_audit,
         "nhanesPublicLmfWeightedEstimatorReadiness": nhanes_public_lmf_weighted_estimator_readiness_audit,
+        "nhanesPublicLmfRSurveyRuntimeSmoke": nhanes_public_lmf_r_survey_runtime_smoke_audit,
         "dataSourceCandidates": data_sources_audit,
         "sourceCardDocs": source_card_docs_audit,
         "nhatsDataAdmission": nhats_docs_audit,
@@ -7953,6 +8107,16 @@ def render_markdown(audit: dict[str, Any]) -> str:
             f"- Validation SHA-256: `{audit['nhanesPublicLmfWeightedEstimatorReadiness']['validationSha256']}`",
             f"- Readiness status: `{audit['nhanesPublicLmfWeightedEstimatorReadiness']['status']}`",
             "- Boundary: R survey/svydesign is selected as the mature complex-survey backend and the design-object contract is bound, but runtime smoke, domain indicator tests, DOF/sparse-domain review, public disclosure review, weighted outputs, calibration and individual prediction remain blocked.",
+            "",
+            "## NHANES Public LMF R Survey Runtime Smoke",
+            "",
+            f"- Readiness path: `{audit['nhanesPublicLmfRSurveyRuntimeSmoke']['readinessPath']}`",
+            f"- Readiness SHA-256: `{audit['nhanesPublicLmfRSurveyRuntimeSmoke']['readinessSha256']}`",
+            f"- Validation path: `{audit['nhanesPublicLmfRSurveyRuntimeSmoke']['validationPath']}`",
+            f"- Validation SHA-256: `{audit['nhanesPublicLmfRSurveyRuntimeSmoke']['validationSha256']}`",
+            f"- Runtime smoke status: `{audit['nhanesPublicLmfRSurveyRuntimeSmoke']['runtimeSmokeStatus']}`",
+            f"- Audit status: `{audit['nhanesPublicLmfRSurveyRuntimeSmoke']['status']}`",
+            "- Boundary: this gate probes whether the current environment can run R survey/svydesign on synthetic data only; it still does not authorize NHANES weighted domain output, confidence intervals, calibration, causal claims, medical advice or individual prediction.",
             "",
             "## Data Source Candidates",
             "",
@@ -8234,6 +8398,16 @@ def parse_args() -> argparse.Namespace:
         type=Path,
         default=DEFAULT_NHANES_PUBLIC_LMF_WEIGHTED_ESTIMATOR_READINESS_VALIDATION,
     )
+    parser.add_argument(
+        "--nhanes-public-lmf-r-survey-runtime-smoke-readiness",
+        type=Path,
+        default=DEFAULT_NHANES_PUBLIC_LMF_R_SURVEY_RUNTIME_SMOKE_READINESS,
+    )
+    parser.add_argument(
+        "--nhanes-public-lmf-r-survey-runtime-smoke-validation",
+        type=Path,
+        default=DEFAULT_NHANES_PUBLIC_LMF_R_SURVEY_RUNTIME_SMOKE_VALIDATION,
+    )
     parser.add_argument("--data-sources", type=Path, default=DEFAULT_DATA_SOURCES)
     parser.add_argument("--source-cards", type=Path, default=DEFAULT_SOURCE_CARDS)
     parser.add_argument("--data-card-template", type=Path, default=DEFAULT_DATA_CARD_TEMPLATE)
@@ -8488,6 +8662,12 @@ def main() -> int:
     nhanes_public_lmf_weighted_estimator_readiness_validation_path = (
         args.nhanes_public_lmf_weighted_estimator_readiness_validation.resolve()
     )
+    nhanes_public_lmf_r_survey_runtime_smoke_readiness_path = (
+        args.nhanes_public_lmf_r_survey_runtime_smoke_readiness.resolve()
+    )
+    nhanes_public_lmf_r_survey_runtime_smoke_validation_path = (
+        args.nhanes_public_lmf_r_survey_runtime_smoke_validation.resolve()
+    )
     data_sources_path = args.data_sources.resolve()
     source_cards_path = args.source_cards.resolve()
     data_card_template_path = args.data_card_template.resolve()
@@ -8611,6 +8791,8 @@ def main() -> int:
         nhanes_public_lmf_eligible_base_readiness_validation_path,
         nhanes_public_lmf_weighted_estimator_readiness_path,
         nhanes_public_lmf_weighted_estimator_readiness_validation_path,
+        nhanes_public_lmf_r_survey_runtime_smoke_readiness_path,
+        nhanes_public_lmf_r_survey_runtime_smoke_validation_path,
         data_sources_path,
         source_cards_path,
         data_card_template_path,

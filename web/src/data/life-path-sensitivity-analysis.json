@@ -1,6 +1,6 @@
 {
   "schemaVersion": "human-infra.life-path-sensitivity.v1",
-  "generatedAt": "2026-07-03T09:15:35.866292+00:00",
+  "generatedAt": "2026-07-03T09:40:23.651297+00:00",
   "source": {
     "path": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_toy_model_scenarios.json",
     "sha256": "385daa4079452ed6ccfc3ad4bdfd2cea99d83b2660cb1e7198b0da27068634f4"

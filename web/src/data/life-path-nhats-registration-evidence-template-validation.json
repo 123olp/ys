@@ -1,6 +1,6 @@
 {
   "schemaVersion": "human-infra.life-path-nhats-registration-evidence-template-validation.v1",
-  "generatedAt": "2026-07-03T09:15:42.382735+00:00",
+  "generatedAt": "2026-07-03T09:40:39.650841+00:00",
   "templatePath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_registration_evidence_template.json",
   "templateSha256": "403925b01f1fef53518448c27d14504d69532dc06f53ede474fb64f0033fff16",
   "acquisitionReadinessPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_acquisition_readiness.json",

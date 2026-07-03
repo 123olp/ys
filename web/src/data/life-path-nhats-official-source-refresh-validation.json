@@ -1,6 +1,6 @@
 {
   "schemaVersion": "human-infra.life-path-nhats-official-source-refresh-validation.v1",
-  "generatedAt": "2026-07-03T09:15:42.347162+00:00",
+  "generatedAt": "2026-07-03T09:40:39.617843+00:00",
   "registerPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_official_source_refresh_register.json",
   "registerSha256": "757d22aa444298d074215955cf04e0ea69b47950824d1bfd55554d466cd89cbf",
   "refreshRegisterId": "nhats-official-source-refresh-2026-07-03",

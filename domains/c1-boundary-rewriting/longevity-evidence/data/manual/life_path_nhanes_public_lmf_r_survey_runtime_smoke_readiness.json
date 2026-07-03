@@ -1,0 +1,114 @@
+{
+  "schemaVersion": "human-infra.nhanes-public-lmf-r-survey-runtime-smoke-readiness.v1",
+  "readinessId": "nhanes-public-lmf-2017-2018-r-survey-runtime-smoke-readiness",
+  "status": "runtime-smoke-gate-defined-no-weighted-domain-output",
+  "sourceId": "nhanes-public-lmf-2017-2018",
+  "sourceAuthority": "Local runtime probe for the R survey backend selected by the NHANES public-use LMF weighted-estimator readiness contract.",
+  "lastReviewedDate": "2026-07-03",
+  "upstreamWeightedEstimatorReadiness": {
+    "path": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_weighted_estimator_readiness.json",
+    "sha256": "469d6cdcdc846bfed97a449f9a8a3bd2e197bfe214b996cb121c800979f5ef4a",
+    "validationPath": "web/src/data/life-path-nhanes-public-lmf-weighted-estimator-readiness-validation.json"
+  },
+  "runtimeSmokeContract": {
+    "runtimeExecutable": "Rscript",
+    "requiredPackage": "survey",
+    "primaryDesignFunction": "svydesign",
+    "domainMechanism": "subset.survey.design",
+    "syntheticDataOnly": true,
+    "publicNhanesRowsAllowed": false,
+    "rowPersistenceAllowed": false,
+    "packageInstallAllowed": false,
+    "networkAccessAllowed": false,
+    "weightedDomainOutputAllowed": false,
+    "designBasedIntervalOutputAllowed": false,
+    "calibrationAllowed": false,
+    "individualPredictionAllowed": false,
+    "timeoutSeconds": 20
+  },
+  "syntheticSmokeCases": [
+    {
+      "id": "rscript-runtime-discovery",
+      "required": true,
+      "purpose": "Detect whether Rscript is present in the current execution environment without installing packages or changing system state."
+    },
+    {
+      "id": "survey-package-load",
+      "required": true,
+      "purpose": "Load the mature R survey package selected by the upstream weighted-estimator readiness contract."
+    },
+    {
+      "id": "synthetic-svydesign-domain-subset",
+      "required": true,
+      "purpose": "Build a small synthetic svydesign object with psu, strata, weight and nest = TRUE, then evaluate a domain subset without touching public NHANES rows."
+    }
+  ],
+  "readinessGates": [
+    {
+      "id": "upstream-weighted-estimator-readiness-validated",
+      "status": "ready",
+      "blocksWeightedDomainOutput": false,
+      "evidence": "The upstream weighted-estimator readiness path, sha256 and validation output must match before runtime smoke probing is accepted."
+    },
+    {
+      "id": "runtime-smoke-validator-defined",
+      "status": "ready",
+      "blocksWeightedDomainOutput": false,
+      "evidence": "A repository validator probes Rscript and the survey package without installing dependencies, downloading data or persisting rows."
+    },
+    {
+      "id": "rscript-runtime-probed-by-validator",
+      "status": "evaluated-by-validation-output",
+      "blocksWeightedDomainOutput": true,
+      "evidence": "The validation output records whether Rscript is present in the current environment."
+    },
+    {
+      "id": "survey-package-load-probed-by-validator",
+      "status": "evaluated-by-validation-output",
+      "blocksWeightedDomainOutput": true,
+      "evidence": "The validation output records whether the R survey package can be loaded."
+    },
+    {
+      "id": "synthetic-svydesign-domain-subset-probed-by-validator",
+      "status": "evaluated-by-validation-output",
+      "blocksWeightedDomainOutput": true,
+      "evidence": "The validation output records whether a synthetic svydesign object and domain subset smoke test passes."
+    },
+    {
+      "id": "public-weighted-output-still-blocked",
+      "status": "blocked",
+      "blocksWeightedDomainOutput": true,
+      "evidence": "Even a passing synthetic runtime smoke test does not authorize NHANES weighted domain output, confidence intervals, calibration, causal claims or individual prediction."
+    }
+  ],
+  "gateSummary": {
+    "requiredGateCount": 6,
+    "readyGateCount": 2,
+    "validationEvaluatedGateCount": 3,
+    "blockedGateCount": 1,
+    "runtimeProbeDefined": true,
+    "runtimeSmokeExecutedByReadinessFile": false,
+    "weightedDomainOutputAllowed": false
+  },
+  "allowedUses": [
+    "runtime dependency probe",
+    "R survey package smoke-test gate",
+    "pre-output blocker localization"
+  ],
+  "blockedUses": [
+    "survey-population inference",
+    "weighted domain mortality rate publication",
+    "design-based confidence interval output",
+    "calibrated Human Infra prediction",
+    "intervention effect estimation",
+    "causal claim",
+    "individual prediction",
+    "individual death-date output",
+    "medical advice"
+  ],
+  "nextWork": [
+    "Run this validator in an environment with Rscript and the R survey package installed.",
+    "If the synthetic smoke passes, keep public NHANES weighted output blocked until domain indicator, degrees-of-freedom, sparse-domain and disclosure gates pass.",
+    "Add domain degrees-of-freedom and sparse-domain test cases before any public weighted domain rates or design-based intervals are generated."
+  ]
+}

@@ -958,6 +958,23 @@
           "blocks100Percent": false
         },
         {
+          "gateId": "MODEL-G2I-nhanes-public-r-survey-runtime-smoke-gate",
+          "status": "partial",
+          "requirement": "The public NHANES-LMF aggregate pilot records the selected R survey runtime smoke gate and blocks weighted domain output when the runtime dependency is unavailable.",
+          "evidence": [
+            "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_r_survey_runtime_smoke_readiness.json",
+            "domains/c1-boundary-rewriting/longevity-evidence/scripts/validate_nhanes_public_lmf_r_survey_runtime_smoke.py",
+            "web/src/data/life-path-nhanes-public-lmf-r-survey-runtime-smoke-validation.json"
+          ],
+          "missingEvidence": [
+            "Current environment reports blocked-no-rscript; no Rscript runtime smoke has passed.",
+            "R survey package load and synthetic svydesign domain subset smoke have not executed successfully.",
+            "Weighted domain output, design-based interval, calibration and individual prediction remain blocked."
+          ],
+          "nextAction": "Provision a controlled Rscript plus survey runtime and rerun the synthetic-only smoke before any domain indicator, DOF, sparse-domain or disclosure-reviewed output work.",
+          "blocks100Percent": true
+        },
+        {
           "gateId": "MODEL-G3-real-data-access",
           "status": "partial",
           "requirement": "Real governed cohort data access is approved and documented before extraction.",
@@ -989,7 +1006,16 @@
             "web/src/data/life-path-nhanes-public-lmf-survey-design-readiness-validation.json",
             "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_domain_subpopulation_rule_readiness.json",
             "domains/c1-boundary-rewriting/longevity-evidence/scripts/validate_nhanes_public_lmf_domain_subpopulation_rule_readiness.py",
-            "web/src/data/life-path-nhanes-public-lmf-domain-subpopulation-rule-readiness-validation.json"
+            "web/src/data/life-path-nhanes-public-lmf-domain-subpopulation-rule-readiness-validation.json",
+            "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_eligible_base_readiness.json",
+            "domains/c1-boundary-rewriting/longevity-evidence/scripts/validate_nhanes_public_lmf_eligible_base_readiness.py",
+            "web/src/data/life-path-nhanes-public-lmf-eligible-base-readiness-validation.json",
+            "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_weighted_estimator_readiness.json",
+            "domains/c1-boundary-rewriting/longevity-evidence/scripts/validate_nhanes_public_lmf_weighted_estimator_readiness.py",
+            "web/src/data/life-path-nhanes-public-lmf-weighted-estimator-readiness-validation.json",
+            "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_r_survey_runtime_smoke_readiness.json",
+            "domains/c1-boundary-rewriting/longevity-evidence/scripts/validate_nhanes_public_lmf_r_survey_runtime_smoke.py",
+            "web/src/data/life-path-nhanes-public-lmf-r-survey-runtime-smoke-validation.json"
           ],
           "missingEvidence": [
             "NHANES public-use LMF aggregate pilot now proves one public, aggregate-only linked mortality parsing/join path with no raw row persistence, but it is not NHATS governed access and it is not calibrated model admission.",
@@ -998,7 +1024,7 @@
             "Filled NHATS registration evidence template with redacted account status, permitted-user boundary, conditions-of-use attestation, file-tier confirmation, controlled workspace linkage and second-reviewer signoff.",
             "Allowed NHATS file tier confirmation with registration state, canonical format choice, approval status and governed storage path.",
             "Controlled NHATS workspace provisioning, access log, inventory log and governed workspace destruction evidence.",
-            "NHANES public-use LMF survey-design readiness now records WTMEC2YR, SDMVPSU and SDMVSTRA from official DEMO_J documentation; domain/subpopulation rule readiness records official NHANES domain mechanisms and the no-row-drop boundary; positive-weight eligible-base readiness records WTMEC2YR > 0 diagnostics without row persistence; weighted-estimator readiness selects R survey/svydesign and binds the design-object/domain indicator contract. Runtime smoke, domain indicator evaluation, DOF/sparse-domain review, disclosure-reviewed public output, external validation and calibration evidence remain absent for both NHATS and the NHANES public aggregate pilot."
+            "NHANES public-use LMF survey-design readiness now records WTMEC2YR, SDMVPSU and SDMVSTRA from official DEMO_J documentation; domain/subpopulation rule readiness records official NHANES domain mechanisms and the no-row-drop boundary; positive-weight eligible-base readiness records WTMEC2YR > 0 diagnostics without row persistence; weighted-estimator readiness selects R survey/svydesign and binds the design-object/domain indicator contract; R survey runtime smoke readiness records the current blocked-no-rscript runtime state. Passing runtime smoke, domain indicator evaluation, DOF/sparse-domain review, disclosure-reviewed public output, external validation and calibration evidence remain absent for both NHATS and the NHANES public aggregate pilot."
           ],
           "nextAction": "Use the NHANES public LMF aggregate pilot only as a public real-data smoke test for parser/join/disclosure boundaries; separately fill NHATS registration evidence with redacted proof, complete governed access records, provision a controlled workspace and execute the real storage/destruction plan before any NHATS extractor is written.",
           "blocks100Percent": true
@@ -1075,12 +1101,15 @@
             "web/src/data/life-path-nhanes-public-lmf-eligible-base-readiness-validation.json",
             "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_weighted_estimator_readiness.json",
             "domains/c1-boundary-rewriting/longevity-evidence/scripts/validate_nhanes_public_lmf_weighted_estimator_readiness.py",
-            "web/src/data/life-path-nhanes-public-lmf-weighted-estimator-readiness-validation.json"
+            "web/src/data/life-path-nhanes-public-lmf-weighted-estimator-readiness-validation.json",
+            "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_r_survey_runtime_smoke_readiness.json",
+            "domains/c1-boundary-rewriting/longevity-evidence/scripts/validate_nhanes_public_lmf_r_survey_runtime_smoke.py",
+            "web/src/data/life-path-nhanes-public-lmf-r-survey-runtime-smoke-validation.json"
           ],
           "missingEvidence": [
             "Exact NHATS design variables.",
-            "NHANES public-use design fields, domain/subpopulation rules, positive-weight eligible-base diagnostics and weighted-estimator backend/design-object contract are ready only for diagnostic boundary testing; they do not satisfy NHATS design readiness or authorize NHANES weighted domain output.",
-            "R survey runtime smoke and weighted estimator execution implementation.",
+            "NHANES public-use design fields, domain/subpopulation rules, positive-weight eligible-base diagnostics, weighted-estimator backend/design-object contract and runtime-smoke gate are ready only for diagnostic boundary testing; current runtime smoke is blocked-no-rscript, and these gates do not satisfy NHATS design readiness or authorize NHANES weighted domain output.",
+            "Passing R survey runtime smoke with survey package and synthetic svydesign domain subset.",
             "Design-object domain indicator evaluation, domain degrees-of-freedom and sparse-domain review implementation.",
             "Variance method validation.",
             "Public-output suppression review."
