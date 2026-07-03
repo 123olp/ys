@@ -48,6 +48,7 @@
 - `audit_human_infra_c2_longtail_fourth_batch_manual_fulltext_reviewed_card_artifact_register.py`: verifies that `docs/reference/human-infra-c2-longtail-fourth-batch-manual-fulltext-reviewed-card-artifact-register.json` promotes only the three eligible C2-LT-B4 manual/fulltext fresh-review rows into 18 bounded reviewed artifacts, preserves five blocked rows and keeps model admission blocked.
 - `audit_human_infra_c2_longtail_fifth_batch_promotion_queue.py`: verifies that `docs/reference/human-infra-c2-longtail-fifth-batch-promotion-queue.json` selects 12 non-B1/B2/B3/B4 cellular-maintenance, organelle-communication, molecular-transport, clearance and barrier C2 long-tail domains, binds 24 web/API-checked candidate sources, preserves required promotion steps and keeps model admission blocked.
 - `audit_human_infra_c2_longtail_sixth_batch_promotion_queue.py`: verifies that `docs/reference/human-infra-c2-longtail-sixth-batch-promotion-queue.json` selects 12 non-B1/B2/B3/B4/B5 intergenerational, reproductive, maternal-newborn-child and pediatric source-maintenance C2 long-tail domains, binds 24 web-checked candidate sources, preserves required promotion steps and keeps model admission blocked.
+- `audit_human_infra_c2_longtail_seventh_batch_promotion_queue.py`: verifies that `docs/reference/human-infra-c2-longtail-seventh-batch-promotion-queue.json` selects 12 non-B1/B2/B3/B4/B5/B6 cancer-control, survivorship, transplant-safety, organ-donation and bioengineered organ-replacement C2 long-tail domains, binds 24 web-checked candidate sources, preserves required promotion steps and keeps model admission blocked.
 - `audit_human_infra_c2_longtail_sixth_batch_source_extraction_queue.py`: verifies that `docs/reference/human-infra-c2-longtail-sixth-batch-source-extraction-queue.json` derives the sixth-batch promotion queue into 24 domain-source extraction tasks with required slots, questions, blocked uses, index links and model-admission boundaries.
 - `audit_human_infra_c2_longtail_sixth_batch_source_extraction_register.py`: verifies that `docs/reference/human-infra-c2-longtail-sixth-batch-source-extraction-register.json` completes all 24/24 C2-LT-B6 source-context extraction rows with required fields, guideline-route/manual-review/source-lineage boundaries, downgrade triggers, blocked uses and index links.
 - `audit_human_infra_c2_longtail_sixth_batch_local_review_register.py`: verifies that `docs/reference/human-infra-c2-longtail-sixth-batch-local-review-register.json` locally reviews all 24/24 C2-LT-B6 extraction rows, preserves seven source-resolution/manual/fulltext/source-lineage issue rows, and keeps artifact/model admission blocked.
@@ -183,6 +184,7 @@ make c2-longtail-fourth-batch-manual-fulltext-fresh-review-verdict-audit
 make c2-longtail-fourth-batch-manual-fulltext-reviewed-card-artifact-audit
 make c2-longtail-fifth-batch-promotion-audit
 make c2-longtail-sixth-batch-promotion-audit
+make c2-longtail-seventh-batch-promotion-audit
 make c2-longtail-sixth-batch-source-extraction-audit
 make c2-longtail-sixth-batch-source-extraction-register-audit
 make c2-longtail-sixth-batch-local-review-audit

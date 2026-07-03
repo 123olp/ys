@@ -1,0 +1,1011 @@
+{
+  "schemaVersion": "human-infra.c2-longtail-seventh-batch-promotion-queue.v1",
+  "queueId": "human-infra-c2-longtail-seventh-batch-promotion-queue",
+  "status": "active-seventh-batch-queue-model-blocked",
+  "purpose": "Select the seventh C2 long-tail batch for source-specific review, prioritizing cancer-control, cancer-survivorship, transplant-safety, organ-donation and bioengineered organ-replacement domains that determine whether the biological source body can avoid malignant collapse, recover after treatment, or regain organ function after irreversible failure.",
+  "sourceOfTruth": {
+    "c2LongtailCoverageRegister": "docs/reference/human-infra-c2-longtail-coverage-register.json",
+    "firstBatchPromotionQueue": "docs/reference/human-infra-c2-longtail-first-batch-promotion-queue.json",
+    "secondBatchPromotionQueue": "docs/reference/human-infra-c2-longtail-second-batch-promotion-queue.json",
+    "thirdBatchPromotionQueue": "docs/reference/human-infra-c2-longtail-third-batch-promotion-queue.json",
+    "fourthBatchPromotionQueue": "docs/reference/human-infra-c2-longtail-fourth-batch-promotion-queue.json",
+    "fifthBatchPromotionQueue": "docs/reference/human-infra-c2-longtail-fifth-batch-promotion-queue.json",
+    "sixthBatchPromotionQueue": "docs/reference/human-infra-c2-longtail-sixth-batch-promotion-queue.json",
+    "domainClassification": "domains/_possibility-space-control/classification.tsv",
+    "sourceCardSystem": "docs/reference/source-card-system.md",
+    "maturityGapRegister": "docs/reference/human-infra-maturity-gap-register.json",
+    "maturityRoadmap": "docs/reference/human-infra-maturity-roadmap.md"
+  },
+  "scope": {
+    "batchId": "C2-LT-B7",
+    "batchDomainCount": 12,
+    "selectionRule": "Prioritize still-uncovered C2 domains where malignant transformation, survivorship late effects, screening/early-detection boundaries, transplant safety, organ donation and engineered organ replacement determine whether the biological source body can avoid catastrophic cancer failure or recover organ-level function. This is importance/long-horizon/fundamentality oriented, not feasibility, market maturity or intervention hype oriented.",
+    "requiredArtifactClasses": [
+      "domain-claim-evidence-row",
+      "domain-source-card-field-extraction",
+      "domain-source-specific-deep-read",
+      "source-context-local-review",
+      "independent-fresh-review-verdict",
+      "reviewed-source-card",
+      "variable-card",
+      "endpoint-card",
+      "uncertainty-card",
+      "transfer-boundary-card",
+      "downgrade-check"
+    ],
+    "nonClaims": [
+      "This queue does not complete Source Cards.",
+      "This queue does not complete independent fresh review.",
+      "This queue does not upgrade any domain claim.",
+      "This queue does not admit any domain into calibrated prediction.",
+      "This queue does not provide medical, clinical, cancer-screening, transplant, fertility, pediatric, individual, or intervention-ranking advice.",
+      "This queue does not mark any C2-LT-B1/B2/B3/B4/B5/B6 blocked, downgrade, source-resolution, manual-access or model-blocked row as resolved."
+    ]
+  },
+  "blockedUses": [
+    "calibrated-prediction",
+    "individual-advice",
+    "individual-death-date-output",
+    "intervention-ranking",
+    "clinical-validity-claim",
+    "domain-claim-upgrade"
+  ],
+  "batchRows": [
+    {
+      "batchId": "C2-LT-B7",
+      "priorityRank": 1,
+      "domainId": "cancer-survivorship-late-effects-continuity",
+      "triageBucket": "oncology-cancer-control",
+      "localDomainPath": "domains/c2-source-maintenance/cancer-survivorship-late-effects-continuity",
+      "selectionReason": "癌症幸存者不只是“活过治疗”，还要长期管理迟发效应、复发/二癌风险、心理负担、功能恢复和照护转接，是有效寿命从死亡风险转向功能连续性的典型域。",
+      "claimSeed": "癌症治疗后的长期随访、照护计划、迟发效应管理和心理社会支持会影响幸存者功能寿命、复发监测、二癌风险、治疗后恢复和未来行动能力。",
+      "variableSeed": [
+        "survivorship-care-plan",
+        "late-effects-monitoring",
+        "recurrence-secondary-cancer-surveillance",
+        "psychosocial-function",
+        "post-treatment-follow-up-continuity"
+      ],
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB7-SRC-01-1",
+          "title": "National Standards for Cancer Survivorship Care",
+          "url": "https://cancercontrol.cancer.gov/ocs/special-focus-areas/national-standards-cancer-survivorship-care",
+          "evidenceRole": "survivorship-standards-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03"
+        },
+        {
+          "sourceRefId": "C2LTB7-SRC-01-2",
+          "title": "Cancer Survivorship Care Plans",
+          "url": "https://www.cdc.gov/cancer-survivors/life-after-cancer/survivorship-care-plans.html",
+          "evidenceRole": "survivorship-plan-public-health-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03"
+        }
+      ],
+      "requiredArtifactClasses": [
+        "domain-claim-evidence-row",
+        "domain-source-card-field-extraction",
+        "domain-source-specific-deep-read",
+        "source-context-local-review",
+        "independent-fresh-review-verdict",
+        "reviewed-source-card",
+        "variable-card",
+        "endpoint-card",
+        "uncertainty-card",
+        "transfer-boundary-card",
+        "downgrade-check"
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-c2-longtail-seventh-batch-source-card-promotion",
+      "nextAction": "Create the domain Claim-Evidence row, then perform Source Card field extraction, source-specific deep read, local source-context review and independent fresh review before any artifact promotion or model admission."
+    },
+    {
+      "batchId": "C2-LT-B7",
+      "priorityRank": 2,
+      "domainId": "childhood-cancer-treatment-survivorship-continuity",
+      "triageBucket": "oncology-cancer-control",
+      "localDomainPath": "domains/c2-source-maintenance/childhood-cancer-treatment-survivorship-continuity",
+      "selectionReason": "儿童和 AYA 癌症幸存者可能携带心脏、内分泌、生育、神经认知、二癌和心理社会迟发风险几十年，直接影响生命路径早期储备和长期主体持续性。",
+      "claimSeed": "儿童、青少年和青年癌症治疗后的风险分层随访、迟发效应筛查和从儿科到成人系统的转接会影响长期健康寿命、认知/内分泌功能、二癌风险和照护连续性。",
+      "variableSeed": [
+        "therapy-exposure-risk-stratification",
+        "late-effect-screening",
+        "pediatric-to-adult-transition",
+        "neurocognitive-endocrine-followup",
+        "secondary-malignancy-risk"
+      ],
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB7-SRC-02-1",
+          "title": "Survivorship - Children's Oncology Group",
+          "url": "https://childrensoncologygroup.org/survivorship/",
+          "evidenceRole": "childhood-survivorship-guideline-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03"
+        },
+        {
+          "sourceRefId": "C2LTB7-SRC-02-2",
+          "title": "The Children's Oncology Group Long-Term Follow-Up Guidelines for Survivors of Childhood, Adolescent, and Young Adult Cancers: A Review",
+          "url": "https://childrensoncologygroup.org/publications/the-childrens-oncology-group-long-term-follow-up-guidelines-for-survivors-of-childhood-adolescent-and-young-adult-cancers-a-review/",
+          "evidenceRole": "childhood-ltfu-review-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03"
+        }
+      ],
+      "requiredArtifactClasses": [
+        "domain-claim-evidence-row",
+        "domain-source-card-field-extraction",
+        "domain-source-specific-deep-read",
+        "source-context-local-review",
+        "independent-fresh-review-verdict",
+        "reviewed-source-card",
+        "variable-card",
+        "endpoint-card",
+        "uncertainty-card",
+        "transfer-boundary-card",
+        "downgrade-check"
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-c2-longtail-seventh-batch-source-card-promotion",
+      "nextAction": "Create the domain Claim-Evidence row, then perform Source Card field extraction, source-specific deep read, local source-context review and independent fresh review before any artifact promotion or model admission."
+    },
+    {
+      "batchId": "C2-LT-B7",
+      "priorityRank": 3,
+      "domainId": "skin-cancer-uv-protection-early-detection-continuity",
+      "triageBucket": "oncology-cancer-control",
+      "localDomainPath": "domains/c2-source-maintenance/skin-cancer-uv-protection-early-detection-continuity",
+      "selectionReason": "皮肤癌把环境暴露、行为防护、早期识别和长期户外活动自由连接起来；UV 风险控制影响身体边界、工作/活动能力和癌症负担。",
+      "claimSeed": "UV 暴露控制、行为咨询、防晒习惯、皮肤症状识别和高风险监测会影响皮肤癌风险、治疗负担、户外活动连续性和组织边界维护。",
+      "variableSeed": [
+        "uv-exposure-dose",
+        "sun-protection-behavior",
+        "tanning-bed-avoidance",
+        "skin-lesion-awareness",
+        "high-risk-surveillance-boundary"
+      ],
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB7-SRC-03-1",
+          "title": "Skin Cancer Prevention: Behavioral Counseling",
+          "url": "https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/skin-cancer-counseling",
+          "evidenceRole": "uv-counseling-evidence-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03"
+        },
+        {
+          "sourceRefId": "C2LTB7-SRC-03-2",
+          "title": "Sun Safety Facts",
+          "url": "https://www.cdc.gov/skin-cancer/sun-safety/index.html",
+          "evidenceRole": "sun-safety-public-health-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03"
+        }
+      ],
+      "requiredArtifactClasses": [
+        "domain-claim-evidence-row",
+        "domain-source-card-field-extraction",
+        "domain-source-specific-deep-read",
+        "source-context-local-review",
+        "independent-fresh-review-verdict",
+        "reviewed-source-card",
+        "variable-card",
+        "endpoint-card",
+        "uncertainty-card",
+        "transfer-boundary-card",
+        "downgrade-check"
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-c2-longtail-seventh-batch-source-card-promotion",
+      "nextAction": "Create the domain Claim-Evidence row, then perform Source Card field extraction, source-specific deep read, local source-context review and independent fresh review before any artifact promotion or model admission."
+    },
+    {
+      "batchId": "C2-LT-B7",
+      "priorityRank": 4,
+      "domainId": "lung-cancer-screening-treatment-continuity",
+      "triageBucket": "oncology-cancer-control",
+      "localDomainPath": "domains/c2-source-maintenance/lung-cancer-screening-treatment-continuity",
+      "selectionReason": "肺癌是高死亡负担且存在明确高危筛查窗口的癌症域，连接吸烟暴露、影像筛查、手术适应性、治疗可及性和呼吸持续性。",
+      "claimSeed": "高危人群 LDCT 筛查、戒烟状态、影像异常处理和治疗可及性会影响肺癌早期发现、死亡风险、呼吸功能和后续行动能力。",
+      "variableSeed": [
+        "ldct-screening-eligibility",
+        "pack-year-history",
+        "current-former-smoking-status",
+        "screening-interval-stop-rule",
+        "lung-surgery-fitness"
+      ],
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB7-SRC-04-1",
+          "title": "Lung Cancer: Screening",
+          "url": "https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/lung-cancer-screening",
+          "evidenceRole": "screening-recommendation-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03"
+        },
+        {
+          "sourceRefId": "C2LTB7-SRC-04-2",
+          "title": "Lung Cancer: Screening - Healthy People 2030",
+          "url": "https://odphp.health.gov/healthypeople/tools-action/browse-evidence-based-resources/lung-cancer-screening",
+          "evidenceRole": "screening-translation-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03"
+        }
+      ],
+      "requiredArtifactClasses": [
+        "domain-claim-evidence-row",
+        "domain-source-card-field-extraction",
+        "domain-source-specific-deep-read",
+        "source-context-local-review",
+        "independent-fresh-review-verdict",
+        "reviewed-source-card",
+        "variable-card",
+        "endpoint-card",
+        "uncertainty-card",
+        "transfer-boundary-card",
+        "downgrade-check"
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-c2-longtail-seventh-batch-source-card-promotion",
+      "nextAction": "Create the domain Claim-Evidence row, then perform Source Card field extraction, source-specific deep read, local source-context review and independent fresh review before any artifact promotion or model admission."
+    },
+    {
+      "batchId": "C2-LT-B7",
+      "priorityRank": 5,
+      "domainId": "liver-cancer-cirrhosis-surveillance-treatment-continuity",
+      "triageBucket": "oncology-cancer-control",
+      "localDomainPath": "domains/c2-source-maintenance/liver-cancer-cirrhosis-surveillance-treatment-continuity",
+      "selectionReason": "肝癌常建立在肝硬化、HBV/HCV、代谢疾病和肝功能储备之上，是器官衰竭、癌症风险和长期监测之间的交汇域。",
+      "claimSeed": "肝硬化或慢性 HBV 等高危状态下的 HCC 监测、诊断分层、治疗选择和肝功能储备会影响死亡风险、移植/治疗窗口和主体持续性。",
+      "variableSeed": [
+        "cirrhosis-hcc-risk",
+        "hbv-hcc-risk",
+        "surveillance-interval",
+        "liver-function-reserve",
+        "treatment-window-eligibility"
+      ],
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB7-SRC-05-1",
+          "title": "AASLD Practice Guidance on prevention, diagnosis, and treatment of hepatocellular carcinoma",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10663390/",
+          "evidenceRole": "hcc-practice-guidance-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03"
+        },
+        {
+          "sourceRefId": "C2LTB7-SRC-05-2",
+          "title": "Management of Hepatocellular Carcinoma",
+          "url": "https://www.aasld.org/practice-guidelines/management-hepatocellular-carcinoma",
+          "evidenceRole": "hcc-guideline-route-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03"
+        }
+      ],
+      "requiredArtifactClasses": [
+        "domain-claim-evidence-row",
+        "domain-source-card-field-extraction",
+        "domain-source-specific-deep-read",
+        "source-context-local-review",
+        "independent-fresh-review-verdict",
+        "reviewed-source-card",
+        "variable-card",
+        "endpoint-card",
+        "uncertainty-card",
+        "transfer-boundary-card",
+        "downgrade-check"
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-c2-longtail-seventh-batch-source-card-promotion",
+      "nextAction": "Create the domain Claim-Evidence row, then perform Source Card field extraction, source-specific deep read, local source-context review and independent fresh review before any artifact promotion or model admission."
+    },
+    {
+      "batchId": "C2-LT-B7",
+      "priorityRank": 6,
+      "domainId": "pancreatic-cancer-high-risk-detection-treatment-continuity",
+      "triageBucket": "oncology-cancer-control",
+      "localDomainPath": "domains/c2-source-maintenance/pancreatic-cancer-high-risk-detection-treatment-continuity",
+      "selectionReason": "胰腺癌高死亡率和晚发现特征使其成为“早期信号稀缺”问题；高危监测连接遗传风险、影像、内镜和可切除窗口。",
+      "claimSeed": "遗传/家族高危人群识别、MRI/MRCP/EUS 监测、前癌病变发现和早期治疗窗口会影响胰腺癌死亡风险和未来治疗选择权。",
+      "variableSeed": [
+        "hereditary-risk-status",
+        "family-history-risk",
+        "mri-mrcp-eus-surveillance",
+        "precancerous-lesion-detection",
+        "resectability-window"
+      ],
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB7-SRC-06-1",
+          "title": "Surveillance for People at High Risk of Pancreatic Cancer",
+          "url": "https://www.cancer.gov/news-events/cancer-currents-blog/2024/pancreatic-cancer-surveillance",
+          "evidenceRole": "high-risk-surveillance-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03"
+        },
+        {
+          "sourceRefId": "C2LTB7-SRC-06-2",
+          "title": "ASGE guideline on screening for pancreatic cancer in individuals with genetic susceptibility",
+          "url": "https://www.asge.org/docs/default-source/about-asge/piis001651072101871x.pdf",
+          "evidenceRole": "genetic-susceptibility-screening-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03"
+        }
+      ],
+      "requiredArtifactClasses": [
+        "domain-claim-evidence-row",
+        "domain-source-card-field-extraction",
+        "domain-source-specific-deep-read",
+        "source-context-local-review",
+        "independent-fresh-review-verdict",
+        "reviewed-source-card",
+        "variable-card",
+        "endpoint-card",
+        "uncertainty-card",
+        "transfer-boundary-card",
+        "downgrade-check"
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-c2-longtail-seventh-batch-source-card-promotion",
+      "nextAction": "Create the domain Claim-Evidence row, then perform Source Card field extraction, source-specific deep read, local source-context review and independent fresh review before any artifact promotion or model admission."
+    },
+    {
+      "batchId": "C2-LT-B7",
+      "priorityRank": 7,
+      "domainId": "ovarian-cancer-symptom-detection-treatment-continuity",
+      "triageBucket": "oncology-cancer-control",
+      "localDomainPath": "domains/c2-source-maintenance/ovarian-cancer-symptom-detection-treatment-continuity",
+      "selectionReason": "卵巢癌体现“无可靠普通人群筛查”边界，重点转向风险识别、症状响应、遗传高危和治疗通道，避免把筛查叙事误作可行性。",
+      "claimSeed": "普通风险无症状筛查边界、症状识别、遗传风险、预防因素和治疗转接会影响卵巢癌发现时机、治疗机会和死亡风险。",
+      "variableSeed": [
+        "average-risk-screening-boundary",
+        "symptom-triggered-evaluation",
+        "brca-lynch-risk",
+        "risk-reduction-context",
+        "treatment-referral-timing"
+      ],
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB7-SRC-07-1",
+          "title": "Ovarian Cancer: Screening",
+          "url": "https://www.uspreventiveservicestaskforce.org/uspstf/document/RecommendationStatementFinal/ovarian-cancer-screening",
+          "evidenceRole": "screening-nonbenefit-boundary-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03"
+        },
+        {
+          "sourceRefId": "C2LTB7-SRC-07-2",
+          "title": "Ovarian Cancer",
+          "url": "https://www.cdc.gov/ovarian-cancer/index.html",
+          "evidenceRole": "symptom-risk-public-health-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03"
+        }
+      ],
+      "requiredArtifactClasses": [
+        "domain-claim-evidence-row",
+        "domain-source-card-field-extraction",
+        "domain-source-specific-deep-read",
+        "source-context-local-review",
+        "independent-fresh-review-verdict",
+        "reviewed-source-card",
+        "variable-card",
+        "endpoint-card",
+        "uncertainty-card",
+        "transfer-boundary-card",
+        "downgrade-check"
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-c2-longtail-seventh-batch-source-card-promotion",
+      "nextAction": "Create the domain Claim-Evidence row, then perform Source Card field extraction, source-specific deep read, local source-context review and independent fresh review before any artifact promotion or model admission."
+    },
+    {
+      "batchId": "C2-LT-B7",
+      "priorityRank": 8,
+      "domainId": "prostate-cancer-screening-treatment-continuity",
+      "triageBucket": "oncology-cancer-control",
+      "localDomainPath": "domains/c2-source-maintenance/prostate-cancer-screening-treatment-continuity",
+      "selectionReason": "前列腺癌筛查和治疗体现收益/伤害权衡、过度诊断、年龄边界和主体偏好，是把寿命目标转为决策质量的问题。",
+      "claimSeed": "PSA 筛查、年龄边界、共享决策、过度诊断/治疗伤害和风险分层会影响前列腺癌死亡风险、功能副作用和主体选择权。",
+      "variableSeed": [
+        "psa-screening-decision",
+        "age-55-69-shared-decision",
+        "overdiagnosis-risk",
+        "treatment-harm-burden",
+        "risk-stratified-followup"
+      ],
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB7-SRC-08-1",
+          "title": "Prostate Cancer: Screening",
+          "url": "https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/prostate-cancer-screening",
+          "evidenceRole": "shared-decision-screening-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03"
+        },
+        {
+          "sourceRefId": "C2LTB7-SRC-08-2",
+          "title": "Should I Get Screened for Prostate Cancer?",
+          "url": "https://www.cdc.gov/prostate-cancer/screening/get-screened.html",
+          "evidenceRole": "public-screening-boundary-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03"
+        }
+      ],
+      "requiredArtifactClasses": [
+        "domain-claim-evidence-row",
+        "domain-source-card-field-extraction",
+        "domain-source-specific-deep-read",
+        "source-context-local-review",
+        "independent-fresh-review-verdict",
+        "reviewed-source-card",
+        "variable-card",
+        "endpoint-card",
+        "uncertainty-card",
+        "transfer-boundary-card",
+        "downgrade-check"
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-c2-longtail-seventh-batch-source-card-promotion",
+      "nextAction": "Create the domain Claim-Evidence row, then perform Source Card field extraction, source-specific deep read, local source-context review and independent fresh review before any artifact promotion or model admission."
+    },
+    {
+      "batchId": "C2-LT-B7",
+      "priorityRank": 9,
+      "domainId": "oral-cancer-mucosal-lesion-early-detection-continuity",
+      "triageBucket": "oncology-cancer-control",
+      "localDomainPath": "domains/c2-source-maintenance/oral-cancer-mucosal-lesion-early-detection-continuity",
+      "selectionReason": "口腔/口咽癌连接烟酒、HPV、牙科接触、黏膜病变和吞咽/说话/营养功能，是感知、交流和摄食连续性的癌症入口。",
+      "claimSeed": "烟酒暴露、HPV 相关风险、口腔黏膜病变识别、常规牙科接触和疑似症状转诊会影响口腔癌发现时机、治疗负担、言语吞咽功能和营养连续性。",
+      "variableSeed": [
+        "tobacco-alcohol-exposure",
+        "hpv-oropharyngeal-risk",
+        "mucosal-lesion-detection",
+        "dental-visit-observation",
+        "speech-swallow-nutrition-impact"
+      ],
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB7-SRC-09-1",
+          "title": "Oral Cavity and Nasopharyngeal Cancers Screening (PDQ) - Health Professional Version",
+          "url": "https://www.cancer.gov/types/head-and-neck/hp/oral-screening-pdq",
+          "evidenceRole": "screening-evidence-boundary-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03"
+        },
+        {
+          "sourceRefId": "C2LTB7-SRC-09-2",
+          "title": "About Oral Cancer",
+          "url": "https://www.cdc.gov/oral-health/about/about-oral-cancer.html",
+          "evidenceRole": "oral-cancer-prevention-risk-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03"
+        }
+      ],
+      "requiredArtifactClasses": [
+        "domain-claim-evidence-row",
+        "domain-source-card-field-extraction",
+        "domain-source-specific-deep-read",
+        "source-context-local-review",
+        "independent-fresh-review-verdict",
+        "reviewed-source-card",
+        "variable-card",
+        "endpoint-card",
+        "uncertainty-card",
+        "transfer-boundary-card",
+        "downgrade-check"
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-c2-longtail-seventh-batch-source-card-promotion",
+      "nextAction": "Create the domain Claim-Evidence row, then perform Source Card field extraction, source-specific deep read, local source-context review and independent fresh review before any artifact promotion or model admission."
+    },
+    {
+      "batchId": "C2-LT-B7",
+      "priorityRank": 10,
+      "domainId": "blood-organ-tissue-biovigilance-transplantation",
+      "triageBucket": "organ-system-homeostasis",
+      "localDomainPath": "domains/c2-source-maintenance/blood-organ-tissue-biovigilance-transplantation",
+      "selectionReason": "器官、组织和细胞移植把死亡边界推迟依赖于供体筛查、感染监测、质量链路和系统信任；这是源体替换的安全基础设施。",
+      "claimSeed": "供体筛查、传染病检测、移植后监测、患者安全事件报告和组织/细胞产品合规会影响移植收益、感染风险、移植物失败和生命支持连续性。",
+      "variableSeed": [
+        "donor-screening-testing",
+        "transplant-transmitted-infection-risk",
+        "recipient-posttransplant-monitoring",
+        "hctp-donor-eligibility",
+        "biovigilance-event-reporting"
+      ],
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB7-SRC-10-1",
+          "title": "Clinical Guidance for Transplant Safety",
+          "url": "https://www.cdc.gov/transplant-safety/hcp/clinical-guidance/index.html",
+          "evidenceRole": "transplant-safety-clinical-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03"
+        },
+        {
+          "sourceRefId": "C2LTB7-SRC-10-2",
+          "title": "Recommendations for Determining Eligibility of Donors of Human Cells, Tissues, and Cellular and Tissue-Based Products",
+          "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/recommendations-determining-eligibility-donors-human-cells-tissues-and-cellular-and-tissue-based",
+          "evidenceRole": "hctp-donor-eligibility-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03"
+        }
+      ],
+      "requiredArtifactClasses": [
+        "domain-claim-evidence-row",
+        "domain-source-card-field-extraction",
+        "domain-source-specific-deep-read",
+        "source-context-local-review",
+        "independent-fresh-review-verdict",
+        "reviewed-source-card",
+        "variable-card",
+        "endpoint-card",
+        "uncertainty-card",
+        "transfer-boundary-card",
+        "downgrade-check"
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-c2-longtail-seventh-batch-source-card-promotion",
+      "nextAction": "Create the domain Claim-Evidence row, then perform Source Card field extraction, source-specific deep read, local source-context review and independent fresh review before any artifact promotion or model admission."
+    },
+    {
+      "batchId": "C2-LT-B7",
+      "priorityRank": 11,
+      "domainId": "organ-donor-registry-anatomical-gift-continuity",
+      "triageBucket": "other-c2-source-maintenance",
+      "localDomainPath": "domains/c2-source-maintenance/organ-donor-registry-anatomical-gift-continuity",
+      "selectionReason": "器官捐献登记把个体死亡后的组织资源转成他人生命连续性资源，也牵涉同意、家庭沟通、等待名单和制度信任。",
+      "claimSeed": "器官捐献登记、解剖赠与意愿、OPTN 等分配治理和患者安全机制会影响供体可用性、等待名单转换、移植机会和公共信任。",
+      "variableSeed": [
+        "donor-registration-status",
+        "anatomical-gift-consent",
+        "family-communication",
+        "optn-waitlist-allocation",
+        "procurement-safety-trust"
+      ],
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB7-SRC-11-1",
+          "title": "Register as an Organ, Eye, and Tissue Donor",
+          "url": "https://www.donatelife.net/register/",
+          "evidenceRole": "donor-registration-public-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03"
+        },
+        {
+          "sourceRefId": "C2LTB7-SRC-11-2",
+          "title": "Clinical Guidance for Transplant Safety",
+          "url": "https://www.cdc.gov/transplant-safety/hcp/clinical-guidance/index.html",
+          "evidenceRole": "transplant-safety-governance-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03"
+        }
+      ],
+      "requiredArtifactClasses": [
+        "domain-claim-evidence-row",
+        "domain-source-card-field-extraction",
+        "domain-source-specific-deep-read",
+        "source-context-local-review",
+        "independent-fresh-review-verdict",
+        "reviewed-source-card",
+        "variable-card",
+        "endpoint-card",
+        "uncertainty-card",
+        "transfer-boundary-card",
+        "downgrade-check"
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-c2-longtail-seventh-batch-source-card-promotion",
+      "nextAction": "Create the domain Claim-Evidence row, then perform Source Card field extraction, source-specific deep read, local source-context review and independent fresh review before any artifact promotion or model admission."
+    },
+    {
+      "batchId": "C2-LT-B7",
+      "priorityRank": 12,
+      "domainId": "xenotransplantation-bioengineered-organ-replacement",
+      "triageBucket": "organ-system-homeostasis",
+      "localDomainPath": "domains/c2-source-maintenance/xenotransplantation-bioengineered-organ-replacement",
+      "selectionReason": "异种移植和工程器官替换是器官短缺和不可逆器官衰竭的远期边界改写路径，同时受感染、动物源、监管和伦理风险约束。",
+      "claimSeed": "源动物控制、微生物检测、产品表征、临床协议、长期监测和感染治理会影响异种移植作为器官替代路径的安全性、可接受性和主体持续性收益。",
+      "variableSeed": [
+        "source-animal-control",
+        "xenotransplant-product-testing",
+        "microbiological-surveillance",
+        "recipient-long-term-monitoring",
+        "organ-shortage-substitution-path"
+      ],
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB7-SRC-12-1",
+          "title": "Animal, Preclinical, Clinical Issues - Xenotransplantation in Humans",
+          "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/source-animal-product-preclinical-and-clinical-issues-concerning-use-xenotransplantation-products",
+          "evidenceRole": "xenotransplantation-guidance-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03"
+        },
+        {
+          "sourceRefId": "C2LTB7-SRC-12-2",
+          "title": "Xenotransplantation Guidances",
+          "url": "https://www.fda.gov/vaccines-blood-biologics/biologics-guidances/xenotransplantation-guidances",
+          "evidenceRole": "xenotransplantation-guidance-index-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03"
+        }
+      ],
+      "requiredArtifactClasses": [
+        "domain-claim-evidence-row",
+        "domain-source-card-field-extraction",
+        "domain-source-specific-deep-read",
+        "source-context-local-review",
+        "independent-fresh-review-verdict",
+        "reviewed-source-card",
+        "variable-card",
+        "endpoint-card",
+        "uncertainty-card",
+        "transfer-boundary-card",
+        "downgrade-check"
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-c2-longtail-seventh-batch-source-card-promotion",
+      "nextAction": "Create the domain Claim-Evidence row, then perform Source Card field extraction, source-specific deep read, local source-context review and independent fresh review before any artifact promotion or model admission."
+    }
+  ],
+  "aggregateDecision": {
+    "queuedDomainCount": 12,
+    "candidateSourceCount": 24,
+    "reviewedArtifactCount": 0,
+    "modelAdmissionsOpened": 0,
+    "highestAllowedUse": "candidate-source-routing-only",
+    "nextRequiredGate": "c2-longtail-seventh-batch-source-extraction-queue"
+  }
+}
