@@ -50,7 +50,7 @@ NHANES_2017_2018_DEMO_URL = (
     "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT"
 )
 NHANES_2017_2018_DEMO_DOC_URL = (
-    "https://wwwn.cdc.gov/Nchs/Nhanes/2017-2018/DEMO_J.htm"
+    "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm"
 )
 
 MIN_CELL_COUNT = 20

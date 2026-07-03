@@ -201,6 +201,8 @@ longevity-evidence/
 
 `data/manual/life_path_nhats_l4_readiness_runway.json` 与 `scripts/validate_nhats_l4_readiness_runway.py` 维护 NHATS 从 L2 设计资产进入 L4 aggregate-calibrated research model 前的 readiness runway；它只把 12 个 pass / partial / blocked gates 和上游 source hash 接入审计，导出 `web/src/data/life-path-nhats-l4-readiness-runway-validation.json`，不授权真实提取、校准预测、干预排序、个体死亡日期或个体决策支持。
 
+`data/manual/life_path_nhanes_public_lmf_survey_design_readiness.json` 与 `scripts/validate_nhanes_public_lmf_survey_design_readiness.py` 维护 NHANES public-use LMF 试运行的 survey-design readiness；它把 WTMEC2YR、SDMVPSU、SDMVSTRA 官方字段、Taylor linearization 文档线索和 estimator/domain/disclosure/calibration 阻塞门接入审计，导出 `web/src/data/life-path-nhanes-public-lmf-survey-design-readiness-validation.json`，不授权 survey-weighted inference、design-based confidence interval、校准预测或个体预测。
+
 `data/manual/life_path_nhanes_public_lmf_aggregate_pilot.json`、`web/src/data/life-path-nhanes-public-lmf-aggregate-pilot-validation.json`、`scripts/build_nhanes_public_lmf_aggregate_pilot.py` 与 `scripts/validate_nhanes_public_lmf_aggregate_pilot.py` 维护第一条公开真实死亡结局聚合试运行路径：从 CDC/NCHS public-use NHANES 2017-2018 LMF 和 DEMO XPT 下载到临时目录、按 SEQN 内存连接、按 sex × age band 导出 8 个粗聚合单元，并由验证器确认 source hash、聚合计数、禁止行级字段和禁止用途边界。该切片只证明公开数据管线 smoke test，不证明 survey-weighted population inference、校准预测、因果效应、医学建议或个体死亡日期输出。
 
 `data/manual/life_path_nhats_colectica_capture_task_register.json` 与 `scripts/validate_nhats_colectica_capture_task_register.py` 维护 NHATS Colectica 变量页捕获任务清单；它把 authenticated capture template 展开为 9 个 route-field 组和 39 个 pending 变量 / 输出任务，导出 `web/src/data/life-path-nhats-colectica-capture-task-register-validation.json`，只证明任务清单已准备，不表示 Colectica 登录、变量页捕获、值标签确认、route classifier、真实提取、校准或个体预测已允许。

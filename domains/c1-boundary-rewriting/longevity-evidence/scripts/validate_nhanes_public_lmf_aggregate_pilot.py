@@ -38,7 +38,7 @@ REQUIRED_SOURCE_URLS = {
     "rReadInProgram": "https://ftp.cdc.gov/pub/Health_Statistics/NCHS/datalinkage/linked_mortality/R_ReadInProgramAllSurveys.R",
     "nhanes2017_2018PublicLmf": "https://ftp.cdc.gov/pub/Health_Statistics/NCHS/datalinkage/linked_mortality/NHANES_2017_2018_MORT_2019_PUBLIC.dat",
     "nhanes2017_2018DemoXpt": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
-    "nhanes2017_2018DemoDocumentation": "https://wwwn.cdc.gov/Nchs/Nhanes/2017-2018/DEMO_J.htm",
+    "nhanes2017_2018DemoDocumentation": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
 }
 REQUIRED_BLOCKED_USES = {
     "individual prediction",

@@ -766,7 +766,7 @@
     {
       "axisId": "quantitative_model",
       "axisName": "定量模型",
-      "currentPercent": 82,
+      "currentPercent": 83,
       "targetPercent": 100,
       "definitionOfDone": "A governed, reproducible, scenario-level model uses real approved data with confirmed variables, explicit estimands, survey design, disclosure control, validation, calibration diagnostics and Web visualization while preserving no-individual-prediction boundaries.",
       "primaryEvidence": [
@@ -774,6 +774,9 @@
         "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_public_mortality_anchor.json",
         "domains/c1-boundary-rewriting/longevity-evidence/scripts/validate_public_mortality_anchor.py",
         "web/src/data/life-path-nhanes-public-lmf-aggregate-pilot-validation.json",
+        "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_survey_design_readiness.json",
+        "domains/c1-boundary-rewriting/longevity-evidence/scripts/validate_nhanes_public_lmf_survey_design_readiness.py",
+        "web/src/data/life-path-nhanes-public-lmf-survey-design-readiness-validation.json",
         "domains/c1-boundary-rewriting/longevity-evidence/scripts/validate_nhanes_public_lmf_aggregate_pilot.py",
         "domains/c1-boundary-rewriting/longevity-evidence/scripts/build_nhanes_public_lmf_aggregate_pilot.py",
         "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_aggregate_pilot.json",
@@ -891,6 +894,19 @@
           "blocks100Percent": false
         },
         {
+          "gateId": "MODEL-G2E-nhanes-public-survey-design-readiness",
+          "status": "pass",
+          "requirement": "The public NHANES-LMF aggregate pilot records official NHANES design fields as diagnostic readiness while keeping weighted inference blocked.",
+          "evidence": [
+            "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_survey_design_readiness.json",
+            "domains/c1-boundary-rewriting/longevity-evidence/scripts/validate_nhanes_public_lmf_survey_design_readiness.py",
+            "web/src/data/life-path-nhanes-public-lmf-survey-design-readiness-validation.json"
+          ],
+          "missingEvidence": [],
+          "nextAction": "Use this readiness contract only to explain why WTMEC2YR, SDMVPSU and SDMVSTRA exist but do not yet authorize weighted population inference, design-based intervals, calibration or individual prediction.",
+          "blocks100Percent": false
+        },
+        {
           "gateId": "MODEL-G3-real-data-access",
           "status": "partial",
           "requirement": "Real governed cohort data access is approved and documented before extraction.",
@@ -916,7 +932,10 @@
             "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_aggregate_pilot.json",
             "domains/c1-boundary-rewriting/longevity-evidence/scripts/build_nhanes_public_lmf_aggregate_pilot.py",
             "domains/c1-boundary-rewriting/longevity-evidence/scripts/validate_nhanes_public_lmf_aggregate_pilot.py",
-            "web/src/data/life-path-nhanes-public-lmf-aggregate-pilot-validation.json"
+            "web/src/data/life-path-nhanes-public-lmf-aggregate-pilot-validation.json",
+            "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_survey_design_readiness.json",
+            "domains/c1-boundary-rewriting/longevity-evidence/scripts/validate_nhanes_public_lmf_survey_design_readiness.py",
+            "web/src/data/life-path-nhanes-public-lmf-survey-design-readiness-validation.json"
           ],
           "missingEvidence": [
             "NHANES public-use LMF aggregate pilot now proves one public, aggregate-only linked mortality parsing/join path with no raw row persistence, but it is not NHATS governed access and it is not calibrated model admission.",
@@ -925,7 +944,7 @@
             "Filled NHATS registration evidence template with redacted account status, permitted-user boundary, conditions-of-use attestation, file-tier confirmation, controlled workspace linkage and second-reviewer signoff.",
             "Allowed NHATS file tier confirmation with registration state, canonical format choice, approval status and governed storage path.",
             "Controlled NHATS workspace provisioning, access log, inventory log and governed workspace destruction evidence.",
-            "Survey-design weighting, disclosure-reviewed public output, external validation and calibration evidence remain absent for both NHATS and the NHANES public aggregate pilot."
+            "NHANES public-use LMF survey-design readiness now records WTMEC2YR, SDMVPSU and SDMVSTRA from official DEMO_J documentation, but weighted estimator, domain rule, disclosure-reviewed public output, external validation and calibration evidence remain absent for both NHATS and the NHANES public aggregate pilot."
           ],
           "nextAction": "Use the NHANES public LMF aggregate pilot only as a public real-data smoke test for parser/join/disclosure boundaries; separately fill NHATS registration evidence with redacted proof, complete governed access records, provision a controlled workspace and execute the real storage/destruction plan before any NHATS extractor is written.",
           "blocks100Percent": true
@@ -993,10 +1012,13 @@
           "requirement": "Analysis weights, strata, PSU/variance unit, variance method, domain rule and disclosure control are confirmed before weighted estimates.",
           "evidence": [
             "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_survey_design_protocol.json",
-            "web/src/data/life-path-nhats-survey-design-validation.json"
+            "web/src/data/life-path-nhats-survey-design-validation.json",
+            "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_survey_design_readiness.json",
+            "web/src/data/life-path-nhanes-public-lmf-survey-design-readiness-validation.json"
           ],
           "missingEvidence": [
             "Exact NHATS design variables.",
+            "NHANES public-use design fields are ready only for diagnostic boundary testing; they do not satisfy NHATS design readiness.",
             "Weighted estimator implementation.",
             "Variance method validation.",
             "Public-output suppression review."

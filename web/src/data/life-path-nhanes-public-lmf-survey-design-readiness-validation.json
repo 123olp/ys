@@ -1,0 +1,32 @@
+{
+  "schemaVersion": "human-infra.nhanes-public-lmf-survey-design-readiness-validation.v1",
+  "status": "pass",
+  "generatedAt": "2026-07-03T07:56:45.130626+00:00",
+  "readinessPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_survey_design_readiness.json",
+  "readinessSha256": "6ca8f805a13cb7364fac5ea4706aef072ea105e2530f5e78b10d2da3c5d77b16",
+  "validationPath": "web/src/data/life-path-nhanes-public-lmf-survey-design-readiness-validation.json",
+  "summary": {
+    "sourceId": "nhanes-public-lmf-2017-2018",
+    "designFields": [
+      "WTMEC2YR",
+      "SDMVPSU",
+      "SDMVSTRA"
+    ],
+    "readyGateCount": 3,
+    "partialGateCount": 1,
+    "blockedGateCount": 4,
+    "weightedInferenceAllowed": false
+  },
+  "nonProofBoundary": {
+    "confirms": "official design fields and diagnostic-only survey-design readiness boundary",
+    "doesNotConfirm": [
+      "survey-weighted population inference",
+      "design-based confidence intervals",
+      "calibrated prediction",
+      "intervention or causal effect",
+      "individual prediction",
+      "medical advice"
+    ]
+  },
+  "errors": []
+}

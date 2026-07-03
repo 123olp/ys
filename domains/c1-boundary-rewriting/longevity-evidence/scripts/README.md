@@ -17,6 +17,7 @@
 - `validate_public_mortality_anchor.py`：离线审计 `data/manual/life_path_public_mortality_anchor.json` 的 schema、官方来源、年龄范围、sex-specific 表、qx/lx/ex 合理性和禁止个体预测边界。
 - `build_nhanes_public_lmf_aggregate_pilot.py`：从 CDC/NCHS 官方 public-use NHANES 2017-2018 LMF 和 DEMO XPT 下载到临时目录，内存连接 SEQN，并只导出 sex × age band 粗聚合 JSON；它不持久化行级数据，不证明 survey inference、校准预测或个体预测。
 - `validate_nhanes_public_lmf_aggregate_pilot.py`：离线审计 `data/manual/life_path_nhanes_public_lmf_aggregate_pilot.json` 的 schema、官方来源 hash、8 个聚合单元、禁止行级字段和禁止用途边界，并导出 `web/src/data/life-path-nhanes-public-lmf-aggregate-pilot-validation.json`。
+- `validate_nhanes_public_lmf_survey_design_readiness.py`：离线审计 `data/manual/life_path_nhanes_public_lmf_survey_design_readiness.json` 的 schema、上游聚合 hash、WTMEC2YR / SDMVPSU / SDMVSTRA 官方字段、readiness gates 和禁止加权推断边界，并导出 `web/src/data/life-path-nhanes-public-lmf-survey-design-readiness-validation.json`。
 - `validate_nhats_official_source_refresh.py`：读取 `data/manual/life_path_nhats_official_source_refresh_register.json`，导出 `web/src/data/life-path-nhats-official-source-refresh-validation.json`，验证 8 个 NHATS 官方公开来源的 HTTP 状态、内容长度、SHA-256、gate impact 和 no-download / no-extraction / no-calibration / no-individual-prediction 边界。
 - `validate_nhats_registration_evidence_template.py`：读取 `data/manual/life_path_nhats_registration_evidence_template.json`，导出 `web/src/data/life-path-nhats-registration-evidence-template-validation.json`，验证注册/访问证据模板只处于 template-only，继续阻塞真实注册证明、download、extraction、raw data 入库、public AI 上传、calibration 和 individual prediction。
 - `validate_nhats_file_tier_table.py`：读取 `data/manual/life_path_nhats_file_tier_table.json`，导出 `web/src/data/life-path-nhats-file-tier-table-validation.json`，验证 R13/R14 文件层级表、上游 acquisition/official-source/registration 绑定、16 个文件行、方法文档依赖和 no-download / no-extraction / no-repo-storage / no-public-AI / no-calibration / no-individual-prediction 边界。
@@ -50,6 +51,7 @@ python3 domains/c1-boundary-rewriting/longevity-evidence/scripts/build_public_mo
 python3 domains/c1-boundary-rewriting/longevity-evidence/scripts/validate_public_mortality_anchor.py
 python3 domains/c1-boundary-rewriting/longevity-evidence/scripts/build_nhanes_public_lmf_aggregate_pilot.py
 python3 domains/c1-boundary-rewriting/longevity-evidence/scripts/validate_nhanes_public_lmf_aggregate_pilot.py
+python3 domains/c1-boundary-rewriting/longevity-evidence/scripts/validate_nhanes_public_lmf_survey_design_readiness.py
 python3 domains/c1-boundary-rewriting/longevity-evidence/scripts/validate_nhats_official_source_refresh.py
 python3 domains/c1-boundary-rewriting/longevity-evidence/scripts/validate_nhats_registration_evidence_template.py
 python3 domains/c1-boundary-rewriting/longevity-evidence/scripts/validate_nhats_file_tier_table.py

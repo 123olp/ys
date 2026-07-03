@@ -43,6 +43,22 @@ DEFAULT_NHANES_PUBLIC_LMF_AGGREGATE_PILOT_VALIDATION = (
     / "data"
     / "life-path-nhanes-public-lmf-aggregate-pilot-validation.json"
 )
+DEFAULT_NHANES_PUBLIC_LMF_SURVEY_DESIGN_READINESS = (
+    REPO_ROOT
+    / "domains"
+    / "c1-boundary-rewriting"
+    / "longevity-evidence"
+    / "data"
+    / "manual"
+    / "life_path_nhanes_public_lmf_survey_design_readiness.json"
+)
+DEFAULT_NHANES_PUBLIC_LMF_SURVEY_DESIGN_READINESS_VALIDATION = (
+    REPO_ROOT
+    / "web"
+    / "src"
+    / "data"
+    / "life-path-nhanes-public-lmf-survey-design-readiness-validation.json"
+)
 DEFAULT_DATA_SOURCES = (
     REPO_ROOT
     / "domains"
@@ -1224,6 +1240,133 @@ def audit_nhanes_public_lmf_aggregate_pilot(
     return {
         "aggregatePath": str(aggregate_path.relative_to(REPO_ROOT)),
         "aggregateSha256": sha256_file(aggregate_path) if aggregate_exists else None,
+        "validationPath": str(validation_path.relative_to(REPO_ROOT)),
+        "validationSha256": sha256_file(validation_path) if validation_exists else None,
+        "status": "PASS" if summarize_checks(checks)["fail"] == 0 else "FAIL",
+        "checks": checks,
+        "summary": summarize_checks(checks),
+    }
+
+
+def audit_nhanes_public_lmf_survey_design_readiness(
+    readiness_path: Path,
+    validation_path: Path,
+) -> dict[str, Any]:
+    checks: list[dict[str, Any]] = []
+    readiness_exists = readiness_path.exists()
+    validation_exists = validation_path.exists()
+    add_check(
+        checks,
+        "nhanes-public-lmf-survey-design-readiness-exists",
+        status_from_bool(readiness_exists),
+        str(readiness_path.relative_to(REPO_ROOT)),
+    )
+    add_check(
+        checks,
+        "nhanes-public-lmf-survey-design-readiness-validation-exists",
+        status_from_bool(validation_exists),
+        str(validation_path.relative_to(REPO_ROOT)),
+    )
+
+    readiness = load_json(readiness_path) if readiness_exists else {}
+    validation = load_json(validation_path) if validation_exists else {}
+    schema_ok = (
+        readiness.get("schemaVersion")
+        == "human-infra.nhanes-public-lmf-survey-design-readiness.v1"
+        and readiness.get("status")
+        == "public-real-data-survey-design-diagnostic-not-weighted-inference"
+    )
+    add_check(
+        checks,
+        "nhanes-public-lmf-survey-design-readiness-schema",
+        status_from_bool(readiness_exists and schema_ok),
+        f"schemaVersion={readiness.get('schemaVersion')!r}",
+    )
+
+    fields = readiness.get("designFields")
+    fields_ok = (
+        isinstance(fields, dict)
+        and fields.get("analysisWeight", {}).get("field") == "WTMEC2YR"
+        and fields.get("pseudoPsu", {}).get("field") == "SDMVPSU"
+        and fields.get("pseudoStratum", {}).get("field") == "SDMVSTRA"
+    )
+    add_check(
+        checks,
+        "nhanes-public-lmf-survey-design-fields",
+        status_from_bool(readiness_exists and fields_ok),
+        "readiness must bind WTMEC2YR, SDMVPSU and SDMVSTRA",
+    )
+
+    boundary = readiness.get("estimatorBoundary")
+    boundary_ok = (
+        isinstance(boundary, dict)
+        and boundary.get("diagnosticWeightedSumsPresentInAggregatePilot") is True
+        and boundary.get("surveyVarianceEstimated") is False
+        and boundary.get("weightedPopulationEstimateClaimed") is False
+        and boundary.get("designBasedConfidenceIntervalsAllowed") is False
+        and boundary.get("publicInferenceAllowed") is False
+        and boundary.get("calibrationAllowed") is False
+        and boundary.get("individualPredictionAllowed") is False
+        and boundary.get("medicalAdviceAllowed") is False
+    )
+    add_check(
+        checks,
+        "nhanes-public-lmf-survey-design-boundary",
+        status_from_bool(readiness_exists and boundary_ok),
+        "readiness must block weighted inference, calibration, individual prediction and medical advice",
+    )
+
+    gate_summary = readiness.get("gateSummary")
+    gate_summary_ok = (
+        isinstance(gate_summary, dict)
+        and gate_summary.get("requiredGateCount") == 8
+        and gate_summary.get("readyGateCount") == 3
+        and gate_summary.get("partialGateCount") == 1
+        and gate_summary.get("blockedGateCount") == 4
+        and gate_summary.get("weightedInferenceAllowed") is False
+    )
+    add_check(
+        checks,
+        "nhanes-public-lmf-survey-design-gate-summary",
+        status_from_bool(readiness_exists and gate_summary_ok),
+        "gate summary must keep weighted inference blocked despite official design-field readiness",
+    )
+
+    validation_schema_ok = (
+        validation.get("schemaVersion")
+        == "human-infra.nhanes-public-lmf-survey-design-readiness-validation.v1"
+        and validation.get("status") == "pass"
+    )
+    source_ok = (
+        validation.get("readinessPath") == str(readiness_path.relative_to(REPO_ROOT))
+        and validation.get("readinessSha256") == sha256_file(readiness_path)
+        if readiness_exists
+        else False
+    )
+    add_check(
+        checks,
+        "nhanes-public-lmf-survey-design-validation-source-hash",
+        status_from_bool(validation_exists and validation_schema_ok and source_ok),
+        "validation must point back to current readiness path and sha256",
+    )
+
+    non_proof = validation.get("nonProofBoundary")
+    non_proof_ok = (
+        isinstance(non_proof, dict)
+        and "survey-weighted population inference" in non_proof.get("doesNotConfirm", [])
+        and "calibrated prediction" in non_proof.get("doesNotConfirm", [])
+        and "individual prediction" in non_proof.get("doesNotConfirm", [])
+    )
+    add_check(
+        checks,
+        "nhanes-public-lmf-survey-design-non-proof-boundary",
+        status_from_bool(validation_exists and non_proof_ok),
+        "validation must state that readiness does not prove weighted inference, calibration or individual prediction",
+    )
+
+    return {
+        "readinessPath": str(readiness_path.relative_to(REPO_ROOT)),
+        "readinessSha256": sha256_file(readiness_path) if readiness_exists else None,
         "validationPath": str(validation_path.relative_to(REPO_ROOT)),
         "validationSha256": sha256_file(validation_path) if validation_exists else None,
         "status": "PASS" if summarize_checks(checks)["fail"] == 0 else "FAIL",
@@ -6741,6 +6884,8 @@ def audit_model(
     readiness_path: Path,
     nhanes_public_lmf_aggregate_pilot_path: Path,
     nhanes_public_lmf_aggregate_pilot_validation_path: Path,
+    nhanes_public_lmf_survey_design_readiness_path: Path,
+    nhanes_public_lmf_survey_design_readiness_validation_path: Path,
     data_sources_path: Path,
     source_cards_path: Path,
     data_card_template_path: Path,
@@ -6951,6 +7096,12 @@ def audit_model(
         nhanes_public_lmf_aggregate_pilot_path,
         nhanes_public_lmf_aggregate_pilot_validation_path,
     )
+    nhanes_public_lmf_survey_design_readiness_audit = (
+        audit_nhanes_public_lmf_survey_design_readiness(
+            nhanes_public_lmf_survey_design_readiness_path,
+            nhanes_public_lmf_survey_design_readiness_validation_path,
+        )
+    )
     data_sources = load_json(data_sources_path)
     data_sources_audit = audit_data_sources(data_sources, data_sources_path)
     source_card_docs_audit = audit_source_card_docs(
@@ -7105,6 +7256,7 @@ def audit_model(
     sensitivity_audit = audit_sensitivity_analysis(sensitivity_path, data, model_path)
     checks.extend(readiness_audit["checks"])
     checks.extend(nhanes_public_lmf_aggregate_pilot_audit["checks"])
+    checks.extend(nhanes_public_lmf_survey_design_readiness_audit["checks"])
     checks.extend(data_sources_audit["checks"])
     checks.extend(source_card_docs_audit["checks"])
     checks.extend(nhats_docs_audit["checks"])
@@ -7146,6 +7298,7 @@ def audit_model(
         "standardAlignment": standard_alignment,
         "calibrationReadiness": readiness_audit,
         "nhanesPublicLmfAggregatePilot": nhanes_public_lmf_aggregate_pilot_audit,
+        "nhanesPublicLmfSurveyDesignReadiness": nhanes_public_lmf_survey_design_readiness_audit,
         "dataSourceCandidates": data_sources_audit,
         "sourceCardDocs": source_card_docs_audit,
         "nhatsDataAdmission": nhats_docs_audit,
@@ -7212,6 +7365,15 @@ def render_markdown(audit: dict[str, Any]) -> str:
             f"- Validation SHA-256: `{audit['nhanesPublicLmfAggregatePilot']['validationSha256']}`",
             f"- Aggregate pilot status: `{audit['nhanesPublicLmfAggregatePilot']['status']}`",
             "- Boundary: this proves only a public real-data aggregate join and endpoint smoke test; it does not prove calibrated prediction, survey-weighted inference, causal effects, medical advice or individual usefulness.",
+            "",
+            "## NHANES Public LMF Survey-Design Readiness",
+            "",
+            f"- Readiness path: `{audit['nhanesPublicLmfSurveyDesignReadiness']['readinessPath']}`",
+            f"- Readiness SHA-256: `{audit['nhanesPublicLmfSurveyDesignReadiness']['readinessSha256']}`",
+            f"- Validation path: `{audit['nhanesPublicLmfSurveyDesignReadiness']['validationPath']}`",
+            f"- Validation SHA-256: `{audit['nhanesPublicLmfSurveyDesignReadiness']['validationSha256']}`",
+            f"- Readiness status: `{audit['nhanesPublicLmfSurveyDesignReadiness']['status']}`",
+            "- Boundary: official WTMEC2YR, SDMVPSU and SDMVSTRA readiness is documented, but weighted population inference, design-based intervals, calibration and individual prediction remain blocked.",
             "",
             "## Data Source Candidates",
             "",
@@ -7453,6 +7615,16 @@ def parse_args() -> argparse.Namespace:
         type=Path,
         default=DEFAULT_NHANES_PUBLIC_LMF_AGGREGATE_PILOT_VALIDATION,
     )
+    parser.add_argument(
+        "--nhanes-public-lmf-survey-design-readiness",
+        type=Path,
+        default=DEFAULT_NHANES_PUBLIC_LMF_SURVEY_DESIGN_READINESS,
+    )
+    parser.add_argument(
+        "--nhanes-public-lmf-survey-design-readiness-validation",
+        type=Path,
+        default=DEFAULT_NHANES_PUBLIC_LMF_SURVEY_DESIGN_READINESS_VALIDATION,
+    )
     parser.add_argument("--data-sources", type=Path, default=DEFAULT_DATA_SOURCES)
     parser.add_argument("--source-cards", type=Path, default=DEFAULT_SOURCE_CARDS)
     parser.add_argument("--data-card-template", type=Path, default=DEFAULT_DATA_CARD_TEMPLATE)
@@ -7683,6 +7855,12 @@ def main() -> int:
     nhanes_public_lmf_aggregate_pilot_validation_path = (
         args.nhanes_public_lmf_aggregate_pilot_validation.resolve()
     )
+    nhanes_public_lmf_survey_design_readiness_path = (
+        args.nhanes_public_lmf_survey_design_readiness.resolve()
+    )
+    nhanes_public_lmf_survey_design_readiness_validation_path = (
+        args.nhanes_public_lmf_survey_design_readiness_validation.resolve()
+    )
     data_sources_path = args.data_sources.resolve()
     source_cards_path = args.source_cards.resolve()
     data_card_template_path = args.data_card_template.resolve()
@@ -7798,6 +7976,8 @@ def main() -> int:
         readiness_path,
         nhanes_public_lmf_aggregate_pilot_path,
         nhanes_public_lmf_aggregate_pilot_validation_path,
+        nhanes_public_lmf_survey_design_readiness_path,
+        nhanes_public_lmf_survey_design_readiness_validation_path,
         data_sources_path,
         source_cards_path,
         data_card_template_path,

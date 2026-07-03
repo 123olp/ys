@@ -1,0 +1,155 @@
+{
+  "schemaVersion": "human-infra.nhanes-public-lmf-survey-design-readiness.v1",
+  "readinessId": "nhanes-public-lmf-2017-2018-survey-design-readiness",
+  "status": "public-real-data-survey-design-diagnostic-not-weighted-inference",
+  "sourceId": "nhanes-public-lmf-2017-2018",
+  "sourceAuthority": "CDC/NCHS NHANES public-use DEMO_J plus public-use Linked Mortality File",
+  "lastReviewedDate": "2026-07-03",
+  "upstreamAggregate": {
+    "path": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_aggregate_pilot.json",
+    "sha256": "6b472e577480173fbd348171ae8bc6bc9716438316b460fa5c024db3a7e2af8d",
+    "validationPath": "web/src/data/life-path-nhanes-public-lmf-aggregate-pilot-validation.json"
+  },
+  "officialSourceTrace": {
+    "demoDocumentation": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+    "weightingTutorial": "https://wwwn.cdc.gov/nchs/nhanes/tutorials/weighting.aspx",
+    "varianceEstimationTutorial": "https://wwwn.cdc.gov/nchs/nhanes/tutorials/varianceestimation.aspx",
+    "linkedMortalityPage": "https://www.cdc.gov/nchs/linked-data/mortality-files/index.html",
+    "publicLmfDataDictionary": "https://www.cdc.gov/nchs/data/datalinkage/public-use-linked-mortality-files-data-dictionary.pdf"
+  },
+  "sourceFindings": [
+    {
+      "id": "DEMO-J-WTMEC2YR",
+      "sourceUrl": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+      "observedFact": "DEMO_J documents WTMEC2YR as the full sample 2 year MEC exam weight.",
+      "modelConsequence": "The public aggregate pilot can keep MEC-weight diagnostic sums, but cannot claim population inference without a reviewed survey estimator."
+    },
+    {
+      "id": "DEMO-J-SDMVPSU",
+      "sourceUrl": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+      "observedFact": "DEMO_J documents SDMVPSU as the masked variance pseudo-PSU.",
+      "modelConsequence": "A variance-unit field exists in the public DEMO file, but the current model still lacks a reviewed variance implementation."
+    },
+    {
+      "id": "DEMO-J-SDMVSTRA",
+      "sourceUrl": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+      "observedFact": "DEMO_J documents SDMVSTRA as the masked variance pseudo-stratum.",
+      "modelConsequence": "A stratum field exists in the public DEMO file, but weighted estimates remain blocked until estimator, domain and disclosure gates pass."
+    },
+    {
+      "id": "NHANES-VARIANCE-TUTORIAL",
+      "sourceUrl": "https://wwwn.cdc.gov/nchs/nhanes/tutorials/varianceestimation.aspx",
+      "observedFact": "CDC/NCHS NHANES variance guidance names SDMVPSU, SDMVSTRA and Taylor linearization for complex survey variance estimation.",
+      "modelConsequence": "Taylor linearization is a documented candidate variance method, not an implemented Human Infra estimator."
+    }
+  ],
+  "designFields": {
+    "analysisWeight": {
+      "field": "WTMEC2YR",
+      "label": "Full sample 2 year MEC exam weight",
+      "status": "present-in-public-demo-documentation",
+      "allowedUse": "diagnostic design-field readiness only"
+    },
+    "pseudoPsu": {
+      "field": "SDMVPSU",
+      "label": "Masked variance pseudo-PSU",
+      "status": "present-in-public-demo-documentation",
+      "allowedUse": "variance-design readiness only"
+    },
+    "pseudoStratum": {
+      "field": "SDMVSTRA",
+      "label": "Masked variance pseudo-stratum",
+      "status": "present-in-public-demo-documentation",
+      "allowedUse": "variance-design readiness only"
+    }
+  },
+  "estimatorBoundary": {
+    "diagnosticWeightedSumsPresentInAggregatePilot": true,
+    "surveyVarianceEstimated": false,
+    "weightedPopulationEstimateClaimed": false,
+    "designBasedConfidenceIntervalsAllowed": false,
+    "publicInferenceAllowed": false,
+    "calibrationAllowed": false,
+    "individualPredictionAllowed": false,
+    "medicalAdviceAllowed": false
+  },
+  "readinessGates": [
+    {
+      "id": "weight-field-present",
+      "status": "ready",
+      "blocksWeightedInference": false,
+      "evidence": "WTMEC2YR appears in official DEMO_J documentation."
+    },
+    {
+      "id": "pseudo-psu-field-present",
+      "status": "ready",
+      "blocksWeightedInference": false,
+      "evidence": "SDMVPSU appears in official DEMO_J documentation."
+    },
+    {
+      "id": "pseudo-stratum-field-present",
+      "status": "ready",
+      "blocksWeightedInference": false,
+      "evidence": "SDMVSTRA appears in official DEMO_J documentation."
+    },
+    {
+      "id": "variance-method-documented-not-implemented",
+      "status": "partial",
+      "blocksWeightedInference": true,
+      "evidence": "CDC/NCHS tutorial names Taylor linearization with SDMVPSU and SDMVSTRA, but no Human Infra estimator implementation or test exists."
+    },
+    {
+      "id": "domain-subpopulation-rule-not-implemented",
+      "status": "blocked",
+      "blocksWeightedInference": true,
+      "evidence": "The current aggregate pilot groups cells after join; it does not implement a reviewed NHANES domain/subpopulation estimator."
+    },
+    {
+      "id": "weighted-estimator-script-not-reviewed",
+      "status": "blocked",
+      "blocksWeightedInference": true,
+      "evidence": "No script currently emits design-based weighted estimates or standard errors."
+    },
+    {
+      "id": "public-output-disclosure-not-reviewed",
+      "status": "blocked",
+      "blocksWeightedInference": true,
+      "evidence": "No public-output disclosure review exists for design-weighted estimates, intervals or domain cells."
+    },
+    {
+      "id": "calibration-validation-not-started",
+      "status": "blocked",
+      "blocksWeightedInference": true,
+      "evidence": "No calibration, external validation, censoring or competing-risk model has been fitted."
+    }
+  ],
+  "gateSummary": {
+    "requiredGateCount": 8,
+    "readyGateCount": 3,
+    "partialGateCount": 1,
+    "blockedGateCount": 4,
+    "weightedInferenceAllowed": false
+  },
+  "allowedUses": [
+    "survey-design field readiness audit",
+    "NHANES public-use LMF model-admission boundary test",
+    "documentation of why diagnostic weighted sums are not population inference"
+  ],
+  "blockedUses": [
+    "survey-population inference",
+    "weighted mortality rate publication",
+    "design-based confidence interval output",
+    "calibrated Human Infra prediction",
+    "intervention effect estimation",
+    "causal claim",
+    "individual prediction",
+    "individual death-date output",
+    "medical advice"
+  ],
+  "nextWork": [
+    "Implement a separate design-based estimator in a non-row-persisting temporary workspace.",
+    "Add synthetic and public aggregate tests for Taylor-linearized variance output before any public estimate.",
+    "Define NHANES domain/subpopulation rules before subgroup outputs.",
+    "Run disclosure review for any weighted public cell, interval or route summary."
+  ]
+}

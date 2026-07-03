@@ -1,7 +1,7 @@
 {
   "schemaVersion": "human-infra.nhanes-public-lmf-aggregate-pilot.v1",
   "status": "public-real-data-aggregate-pilot-not-weighted-not-calibrated",
-  "generatedAt": "2026-07-03T07:17:53.175386+00:00",
+  "generatedAt": "2026-07-03T07:38:36.986696+00:00",
   "sourceAuthority": "CDC/NCHS public-use NHANES Linked Mortality File",
   "sourceUrls": {
     "linkedMortalityPage": "https://www.cdc.gov/nchs/linked-data/mortality-files/index.html",
@@ -10,7 +10,7 @@
     "rReadInProgram": "https://ftp.cdc.gov/pub/Health_Statistics/NCHS/datalinkage/linked_mortality/R_ReadInProgramAllSurveys.R",
     "nhanes2017_2018PublicLmf": "https://ftp.cdc.gov/pub/Health_Statistics/NCHS/datalinkage/linked_mortality/NHANES_2017_2018_MORT_2019_PUBLIC.dat",
     "nhanes2017_2018DemoXpt": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
-    "nhanes2017_2018DemoDocumentation": "https://wwwn.cdc.gov/Nchs/Nhanes/2017-2018/DEMO_J.htm"
+    "nhanes2017_2018DemoDocumentation": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm"
   },
   "sourceHashes": {
     "nhanesPublicLmf2017_2018Sha256": "42989d4fe35754d696b770f26553b0a309c110a9e26ab0ee504be3eae5987523",

@@ -1,6 +1,6 @@
 {
   "schemaVersion": "human-infra.life-path-nhats-file-tier-table-validation.v1",
-  "generatedAt": "2026-07-03T07:29:06.764820+00:00",
+  "generatedAt": "2026-07-03T07:56:45.270104+00:00",
   "tablePath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_file_tier_table.json",
   "tableSha256": "18c151512ffb6e075a134765e13d5b4b07252be10b9e55a211f7d890cefdc6f1",
   "acquisitionReadinessPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_acquisition_readiness.json",

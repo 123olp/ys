@@ -210,6 +210,30 @@
     ],
     "boundary": "This public linked-mortality aggregate pilot proves only that one official public NHANES-LMF path can be downloaded, joined in a temporary workspace and exported as coarse aggregate cells. It does not satisfy NHATS access, field/value confirmation, survey-design variance, external validation, calibration, intervention effects or individual-use gates."
   },
+  "publicLinkedMortalitySurveyDesignReadiness": {
+    "status": "available-for-public-design-field-diagnostic-only",
+    "source": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_survey_design_readiness.json",
+    "validation": "web/src/data/life-path-nhanes-public-lmf-survey-design-readiness-validation.json",
+    "sourceAuthority": "CDC/NCHS NHANES public-use DEMO_J plus public-use Linked Mortality File",
+    "scope": "NHANES 2017-2018 DEMO_J documents WTMEC2YR, SDMVPSU and SDMVSTRA for the public-use aggregate pilot context.",
+    "allowedUses": [
+      "survey-design field readiness audit",
+      "diagnostic weighted-sum boundary explanation",
+      "model admission boundary testing"
+    ],
+    "blockedUses": [
+      "survey-population inference",
+      "weighted mortality rate publication",
+      "design-based confidence interval output",
+      "calibrated Human Infra prediction",
+      "intervention effect estimation",
+      "causal claim",
+      "individual prediction",
+      "individual death-date output",
+      "medical advice"
+    ],
+    "boundary": "This readiness contract records official NHANES public-use design fields and keeps WTMEC2YR/SDMVPSU/SDMVSTRA as diagnostic readiness evidence only. It does not implement a weighted estimator, survey variance, domain rule, disclosure-reviewed public output, external validation, calibration or individual-use model."
+  },
   "censoringAndCompetingRisks": {
     "status": "required-before-calibration",
     "requiredFields": [
