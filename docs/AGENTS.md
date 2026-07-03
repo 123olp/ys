@@ -227,6 +227,7 @@ docs/
 │   ├── human-infra-c2-longtail-seventh-batch-local-review-register.json
 │   ├── human-infra-c2-longtail-seventh-batch-source-resolution-register.json
 │   ├── human-infra-c2-longtail-seventh-batch-manual-fulltext-extraction-register.json
+│   ├── human-infra-c2-longtail-seventh-batch-manual-fulltext-fresh-review-verdict-register.json
 │   ├── human-infra-c2-longtail-sixth-batch-source-extraction-queue.json
 │   ├── human-infra-c2-longtail-sixth-batch-source-extraction-register.json
 │   ├── human-infra-c2-longtail-sixth-batch-local-review-register.json
@@ -474,6 +475,7 @@ docs/
 - `reference/human-infra-c2-longtail-seventh-batch-local-review-register.json`：记录 C2-LT-B7 24/24 个来源抽取行的本地来源语境复核，确认非问题行只可进入 independent fresh review，6 个 FDA route、动态注册或重复来源问题行必须先 source-resolution/manual route；它仍不等于 reviewed artifacts、Source Card 晋升完成或模型准入。
 - `reference/human-infra-c2-longtail-seventh-batch-source-resolution-register.json`：记录 C2-LT-B7 6 个本地复核问题行的来源路线解析，整理 7 个官方 FDA、CDC、Donate Life 和 RegisterMe 路线候选；它只准备 manual/fulltext extraction 与 independent fresh review，不等于 reviewed artifacts、Source Card 晋升完成或模型准入。
 - `reference/human-infra-c2-longtail-seventh-batch-manual-fulltext-extraction-register.json`：记录 C2-LT-B7 7 个 source-resolution 候选的有界路线/全文上下文抽取，区分 3 个 bounded fresh-review 候选和 4 个动态注册、访问受限、重复或 index/provenance 阻塞行；它仍不创建 reviewed artifacts 或打开模型准入。
+- `reference/human-infra-c2-longtail-seventh-batch-manual-fulltext-fresh-review-verdict-register.json`：记录 C2-LT-B7 7/7 个 manual/fulltext 行的 independent fresh-review 判定，3 行只允许进入 bounded reviewed artifact prep，4 行继续动态注册、访问受限、重复或 index/provenance 阻塞；它仍不创建 reviewed artifacts 或打开模型准入。
 - `reference/human-infra-c2-longtail-sixth-batch-source-extraction-queue.json`：把 C2-LT-B6 的 24 个候选来源派生成 source-specific 深读任务，定义 exact claim、endpoint、population、uncertainty、transfer-boundary、downgrade 和 model-position 抽取槽位；它仍不等于本地复核、fresh review、reviewed artifacts 或模型准入。
 - `reference/human-infra-c2-longtail-sixth-batch-source-extraction-register.json`：记录 C2-LT-B6 24/24 个来源的本地字段级抽取，显式保留 guideline route、publisher/manual review、source-lineage、降级触发和模型阻塞边界；它仍不等于本地复核、fresh review、reviewed artifacts 或模型准入。
 - `reference/human-infra-c2-longtail-sixth-batch-local-review-register.json`：记录 C2-LT-B6 24/24 个来源抽取行的本地来源语境复核，确认非问题行只可进入 independent fresh review，7 个 guideline route、publisher/manual review 或 source-lineage 问题行必须先 source-resolution/manual fulltext；它仍不等于 reviewed artifacts、Source Card 晋升完成或模型准入。
