@@ -75,6 +75,22 @@ DEFAULT_NHANES_PUBLIC_LMF_DOMAIN_SUBPOPULATION_RULE_READINESS_VALIDATION = (
     / "data"
     / "life-path-nhanes-public-lmf-domain-subpopulation-rule-readiness-validation.json"
 )
+DEFAULT_NHANES_PUBLIC_LMF_ELIGIBLE_BASE_READINESS = (
+    REPO_ROOT
+    / "domains"
+    / "c1-boundary-rewriting"
+    / "longevity-evidence"
+    / "data"
+    / "manual"
+    / "life_path_nhanes_public_lmf_eligible_base_readiness.json"
+)
+DEFAULT_NHANES_PUBLIC_LMF_ELIGIBLE_BASE_READINESS_VALIDATION = (
+    REPO_ROOT
+    / "web"
+    / "src"
+    / "data"
+    / "life-path-nhanes-public-lmf-eligible-base-readiness-validation.json"
+)
 DEFAULT_DATA_SOURCES = (
     REPO_ROOT
     / "domains"
@@ -1509,6 +1525,170 @@ def audit_nhanes_public_lmf_domain_subpopulation_rule_readiness(
         "nhanes-public-lmf-domain-rule-non-proof-boundary",
         status_from_bool(validation_exists and non_proof_ok),
         "validation must state that domain-rule readiness does not prove weighted inference or individual prediction",
+    )
+
+    return {
+        "readinessPath": str(readiness_path.relative_to(REPO_ROOT)),
+        "readinessSha256": sha256_file(readiness_path) if readiness_exists else None,
+        "validationPath": str(validation_path.relative_to(REPO_ROOT)),
+        "validationSha256": sha256_file(validation_path) if validation_exists else None,
+        "status": "PASS" if summarize_checks(checks)["fail"] == 0 else "FAIL",
+        "checks": checks,
+        "summary": summarize_checks(checks),
+    }
+
+
+def audit_nhanes_public_lmf_eligible_base_readiness(
+    readiness_path: Path,
+    validation_path: Path,
+) -> dict[str, Any]:
+    checks: list[dict[str, Any]] = []
+    readiness_exists = readiness_path.exists()
+    validation_exists = validation_path.exists()
+    add_check(
+        checks,
+        "nhanes-public-lmf-eligible-base-readiness-exists",
+        status_from_bool(readiness_exists),
+        str(readiness_path.relative_to(REPO_ROOT)),
+    )
+    add_check(
+        checks,
+        "nhanes-public-lmf-eligible-base-readiness-validation-exists",
+        status_from_bool(validation_exists),
+        str(validation_path.relative_to(REPO_ROOT)),
+    )
+
+    readiness = load_json(readiness_path) if readiness_exists else {}
+    validation = load_json(validation_path) if validation_exists else {}
+    schema_ok = (
+        readiness.get("schemaVersion")
+        == "human-infra.nhanes-public-lmf-eligible-base-readiness.v1"
+        and readiness.get("status")
+        == "public-real-data-eligible-base-diagnostic-not-weighted-domain-inference"
+    )
+    add_check(
+        checks,
+        "nhanes-public-lmf-eligible-base-readiness-schema",
+        status_from_bool(readiness_exists and schema_ok),
+        f"schemaVersion={readiness.get('schemaVersion')!r}",
+    )
+
+    rule = readiness.get("eligibleBaseRule")
+    rule_ok = (
+        isinstance(rule, dict)
+        and rule.get("analysisWeight") == "WTMEC2YR"
+        and rule.get("positiveWeightCondition") == "WTMEC2YR > 0"
+        and rule.get("fullDesignInputBeforeDomainRequired") is True
+        and rule.get("subpopulationIndicatorRequiredAfterEligibleBase") is True
+        and rule.get("rowDropBeforeDesignAllowed") is False
+        and rule.get("eligibleBaseRowsPersisted") is False
+        and rule.get("weightedEstimatorImplemented") is False
+        and rule.get("weightedDomainInferenceAllowed") is False
+        and rule.get("designBasedIntervalAllowed") is False
+        and rule.get("calibrationAllowed") is False
+        and rule.get("individualPredictionAllowed") is False
+        and rule.get("medicalAdviceAllowed") is False
+    )
+    add_check(
+        checks,
+        "nhanes-public-lmf-eligible-base-rule-boundary",
+        status_from_bool(readiness_exists and rule_ok),
+        "eligible-base rule must require WTMEC2YR > 0, full design input, no row drop and no weighted inference",
+    )
+
+    diagnostics = readiness.get("aggregateDiagnostics")
+    diagnostics_ok = (
+        isinstance(diagnostics, dict)
+        and diagnostics.get("eligibleAdultRecordsInTemp") == 5809
+        and diagnostics.get("eligibleAdultDeaths") == 145
+        and diagnostics.get("positiveMecWeightEligibleAdultRecordsInTemp") == 5809
+        and diagnostics.get("zeroMecWeightEligibleAdultRecordsInTemp") == 0
+        and diagnostics.get("missingMecWeightEligibleAdultRecordsInTemp") == 0
+        and diagnostics.get("positiveMecWeightEligibleAdultDeaths") == 145
+        and diagnostics.get("positiveWeightStrataInTemp") == 15
+        and diagnostics.get("minimumPsuPerPositiveWeightStratumInTemp") == 2
+        and diagnostics.get("lonelyPositiveWeightStrataInTemp") == 0
+    )
+    add_check(
+        checks,
+        "nhanes-public-lmf-eligible-base-diagnostics",
+        status_from_bool(readiness_exists and diagnostics_ok),
+        "positive-weight diagnostics must preserve 5809 eligible adults, 145 deaths, 15 strata and no lonely strata",
+    )
+
+    gate_summary = readiness.get("gateSummary")
+    gate_summary_ok = (
+        isinstance(gate_summary, dict)
+        and gate_summary.get("requiredGateCount") == 8
+        and gate_summary.get("readyGateCount") == 4
+        and gate_summary.get("partialGateCount") == 0
+        and gate_summary.get("blockedGateCount") == 4
+        and gate_summary.get("weightedDomainInferenceAllowed") is False
+    )
+    add_check(
+        checks,
+        "nhanes-public-lmf-eligible-base-gate-summary",
+        status_from_bool(readiness_exists and gate_summary_ok),
+        "gate summary must keep weighted domain inference blocked despite positive-weight eligible-base diagnostics",
+    )
+
+    findings_text = json.dumps(readiness.get("sourceFindings"), ensure_ascii=False)
+    findings_ok = all(
+        token in findings_text
+        for token in ("WTMEC2YR", "8704", "550", "non-zero", "never", "5809")
+    )
+    add_check(
+        checks,
+        "nhanes-public-lmf-eligible-base-source-findings",
+        status_from_bool(readiness_exists and findings_ok),
+        "source findings must include DEMO_J WTMEC2YR distribution, non-zero design input and no row-drop guidance",
+    )
+
+    validation_schema_ok = (
+        validation.get("schemaVersion")
+        == "human-infra.nhanes-public-lmf-eligible-base-readiness-validation.v1"
+        and validation.get("status") == "pass"
+    )
+    source_ok = (
+        validation.get("readinessPath") == str(readiness_path.relative_to(REPO_ROOT))
+        and validation.get("readinessSha256") == sha256_file(readiness_path)
+        if readiness_exists
+        else False
+    )
+    add_check(
+        checks,
+        "nhanes-public-lmf-eligible-base-validation-source-hash",
+        status_from_bool(validation_exists and validation_schema_ok and source_ok),
+        "validation must point back to current eligible-base readiness path and sha256",
+    )
+
+    summary = validation.get("summary")
+    validation_summary_ok = (
+        isinstance(summary, dict)
+        and summary.get("positiveMecWeightEligibleAdultRecords") == 5809
+        and summary.get("zeroMecWeightEligibleAdultRecords") == 0
+        and summary.get("weightedDomainInferenceAllowed") is False
+    )
+    add_check(
+        checks,
+        "nhanes-public-lmf-eligible-base-validation-summary",
+        status_from_bool(validation_exists and validation_summary_ok),
+        "validation summary must expose positive-weight eligible count while keeping weighted inference blocked",
+    )
+
+    non_proof = validation.get("nonProofBoundary")
+    non_proof_ok = (
+        isinstance(non_proof, dict)
+        and "survey-weighted population inference" in non_proof.get("doesNotConfirm", [])
+        and "weighted domain mortality rates" in non_proof.get("doesNotConfirm", [])
+        and "design-based confidence intervals" in non_proof.get("doesNotConfirm", [])
+        and "individual prediction" in non_proof.get("doesNotConfirm", [])
+    )
+    add_check(
+        checks,
+        "nhanes-public-lmf-eligible-base-non-proof-boundary",
+        status_from_bool(validation_exists and non_proof_ok),
+        "validation must state that eligible-base readiness does not prove weighted inference or individual prediction",
     )
 
     return {
@@ -7035,6 +7215,8 @@ def audit_model(
     nhanes_public_lmf_survey_design_readiness_validation_path: Path,
     nhanes_public_lmf_domain_subpopulation_rule_readiness_path: Path,
     nhanes_public_lmf_domain_subpopulation_rule_readiness_validation_path: Path,
+    nhanes_public_lmf_eligible_base_readiness_path: Path,
+    nhanes_public_lmf_eligible_base_readiness_validation_path: Path,
     data_sources_path: Path,
     source_cards_path: Path,
     data_card_template_path: Path,
@@ -7257,6 +7439,12 @@ def audit_model(
             nhanes_public_lmf_domain_subpopulation_rule_readiness_validation_path,
         )
     )
+    nhanes_public_lmf_eligible_base_readiness_audit = (
+        audit_nhanes_public_lmf_eligible_base_readiness(
+            nhanes_public_lmf_eligible_base_readiness_path,
+            nhanes_public_lmf_eligible_base_readiness_validation_path,
+        )
+    )
     data_sources = load_json(data_sources_path)
     data_sources_audit = audit_data_sources(data_sources, data_sources_path)
     source_card_docs_audit = audit_source_card_docs(
@@ -7413,6 +7601,7 @@ def audit_model(
     checks.extend(nhanes_public_lmf_aggregate_pilot_audit["checks"])
     checks.extend(nhanes_public_lmf_survey_design_readiness_audit["checks"])
     checks.extend(nhanes_public_lmf_domain_subpopulation_rule_readiness_audit["checks"])
+    checks.extend(nhanes_public_lmf_eligible_base_readiness_audit["checks"])
     checks.extend(data_sources_audit["checks"])
     checks.extend(source_card_docs_audit["checks"])
     checks.extend(nhats_docs_audit["checks"])
@@ -7456,6 +7645,7 @@ def audit_model(
         "nhanesPublicLmfAggregatePilot": nhanes_public_lmf_aggregate_pilot_audit,
         "nhanesPublicLmfSurveyDesignReadiness": nhanes_public_lmf_survey_design_readiness_audit,
         "nhanesPublicLmfDomainSubpopulationRuleReadiness": nhanes_public_lmf_domain_subpopulation_rule_readiness_audit,
+        "nhanesPublicLmfEligibleBaseReadiness": nhanes_public_lmf_eligible_base_readiness_audit,
         "dataSourceCandidates": data_sources_audit,
         "sourceCardDocs": source_card_docs_audit,
         "nhatsDataAdmission": nhats_docs_audit,
@@ -7540,6 +7730,15 @@ def render_markdown(audit: dict[str, Any]) -> str:
             f"- Validation SHA-256: `{audit['nhanesPublicLmfDomainSubpopulationRuleReadiness']['validationSha256']}`",
             f"- Readiness status: `{audit['nhanesPublicLmfDomainSubpopulationRuleReadiness']['status']}`",
             "- Boundary: official domain/subpopulation analysis mechanisms are documented, but row-drop subgroup filtering is not an estimator and weighted domain inference remains blocked until a reviewed estimator, eligible-base rule, DOF review and disclosure gate exist.",
+            "",
+            "## NHANES Public LMF Eligible-Base Readiness",
+            "",
+            f"- Readiness path: `{audit['nhanesPublicLmfEligibleBaseReadiness']['readinessPath']}`",
+            f"- Readiness SHA-256: `{audit['nhanesPublicLmfEligibleBaseReadiness']['readinessSha256']}`",
+            f"- Validation path: `{audit['nhanesPublicLmfEligibleBaseReadiness']['validationPath']}`",
+            f"- Validation SHA-256: `{audit['nhanesPublicLmfEligibleBaseReadiness']['validationSha256']}`",
+            f"- Readiness status: `{audit['nhanesPublicLmfEligibleBaseReadiness']['status']}`",
+            "- Boundary: positive WTMEC2YR eligible-base diagnostics are recorded without persisting rows, but weighted domain inference, design-based intervals, calibration and individual prediction remain blocked.",
             "",
             "## Data Source Candidates",
             "",
@@ -7801,6 +8000,16 @@ def parse_args() -> argparse.Namespace:
         type=Path,
         default=DEFAULT_NHANES_PUBLIC_LMF_DOMAIN_SUBPOPULATION_RULE_READINESS_VALIDATION,
     )
+    parser.add_argument(
+        "--nhanes-public-lmf-eligible-base-readiness",
+        type=Path,
+        default=DEFAULT_NHANES_PUBLIC_LMF_ELIGIBLE_BASE_READINESS,
+    )
+    parser.add_argument(
+        "--nhanes-public-lmf-eligible-base-readiness-validation",
+        type=Path,
+        default=DEFAULT_NHANES_PUBLIC_LMF_ELIGIBLE_BASE_READINESS_VALIDATION,
+    )
     parser.add_argument("--data-sources", type=Path, default=DEFAULT_DATA_SOURCES)
     parser.add_argument("--source-cards", type=Path, default=DEFAULT_SOURCE_CARDS)
     parser.add_argument("--data-card-template", type=Path, default=DEFAULT_DATA_CARD_TEMPLATE)
@@ -8043,6 +8252,12 @@ def main() -> int:
     nhanes_public_lmf_domain_subpopulation_rule_readiness_validation_path = (
         args.nhanes_public_lmf_domain_subpopulation_rule_readiness_validation.resolve()
     )
+    nhanes_public_lmf_eligible_base_readiness_path = (
+        args.nhanes_public_lmf_eligible_base_readiness.resolve()
+    )
+    nhanes_public_lmf_eligible_base_readiness_validation_path = (
+        args.nhanes_public_lmf_eligible_base_readiness_validation.resolve()
+    )
     data_sources_path = args.data_sources.resolve()
     source_cards_path = args.source_cards.resolve()
     data_card_template_path = args.data_card_template.resolve()
@@ -8162,6 +8377,8 @@ def main() -> int:
         nhanes_public_lmf_survey_design_readiness_validation_path,
         nhanes_public_lmf_domain_subpopulation_rule_readiness_path,
         nhanes_public_lmf_domain_subpopulation_rule_readiness_validation_path,
+        nhanes_public_lmf_eligible_base_readiness_path,
+        nhanes_public_lmf_eligible_base_readiness_validation_path,
         data_sources_path,
         source_cards_path,
         data_card_template_path,

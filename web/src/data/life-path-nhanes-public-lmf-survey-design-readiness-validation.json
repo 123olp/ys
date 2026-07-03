@@ -1,9 +1,9 @@
 {
   "schemaVersion": "human-infra.nhanes-public-lmf-survey-design-readiness-validation.v1",
   "status": "pass",
-  "generatedAt": "2026-07-03T08:17:33.006894+00:00",
+  "generatedAt": "2026-07-03T08:46:16.131800+00:00",
   "readinessPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_survey_design_readiness.json",
-  "readinessSha256": "6ca8f805a13cb7364fac5ea4706aef072ea105e2530f5e78b10d2da3c5d77b16",
+  "readinessSha256": "0c914cdecd72587bf62ea0b59c4445ac5bfa72c587cc845264f79c5363935170",
   "validationPath": "web/src/data/life-path-nhanes-public-lmf-survey-design-readiness-validation.json",
   "summary": {
     "sourceId": "nhanes-public-lmf-2017-2018",

@@ -1,0 +1,174 @@
+{
+  "schemaVersion": "human-infra.nhanes-public-lmf-eligible-base-readiness.v1",
+  "readinessId": "nhanes-public-lmf-2017-2018-positive-weight-eligible-base-readiness",
+  "status": "public-real-data-eligible-base-diagnostic-not-weighted-domain-inference",
+  "sourceId": "nhanes-public-lmf-2017-2018",
+  "sourceAuthority": "CDC/NCHS NHANES public-use DEMO_J plus public-use Linked Mortality File",
+  "lastReviewedDate": "2026-07-03",
+  "upstreamAggregate": {
+    "path": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_aggregate_pilot.json",
+    "sha256": "d817c2907d71a820baac846f5a41c28db6eeee5cb8e57ed20a47d87aa9efce0f",
+    "validationPath": "web/src/data/life-path-nhanes-public-lmf-aggregate-pilot-validation.json"
+  },
+  "upstreamSurveyDesignReadiness": {
+    "path": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_survey_design_readiness.json",
+    "sha256": "0c914cdecd72587bf62ea0b59c4445ac5bfa72c587cc845264f79c5363935170",
+    "validationPath": "web/src/data/life-path-nhanes-public-lmf-survey-design-readiness-validation.json"
+  },
+  "upstreamDomainRuleReadiness": {
+    "path": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_domain_subpopulation_rule_readiness.json",
+    "sha256": "4a7cb6d07dd55b12253c06640e124cc9948c8403b2107b6148e85b504a43e8d5",
+    "validationPath": "web/src/data/life-path-nhanes-public-lmf-domain-subpopulation-rule-readiness-validation.json"
+  },
+  "officialSourceTrace": {
+    "demoDocumentation": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+    "varianceEstimationTutorial": "https://wwwn.cdc.gov/nchs/nhanes/tutorials/varianceestimation.aspx",
+    "weightingTutorial": "https://wwwn.cdc.gov/nchs/nhanes/tutorials/weighting.aspx",
+    "linkedMortalityPage": "https://www.cdc.gov/nchs/linked-data/mortality-files/index.html"
+  },
+  "sourceFindings": [
+    {
+      "id": "DEMO-J-WTMEC2YR-POSITIVE-ZERO-DISTRIBUTION",
+      "sourceUrl": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+      "observedFact": "DEMO_J documents WTMEC2YR as the full sample 2 year MEC exam weight with 8704 positive range values, 550 zero values marked Not MEC Examined and 0 missing values.",
+      "modelConsequence": "A positive-weight eligible-base check must exclude zero-weight non-MEC records before any future design-based domain estimator."
+    },
+    {
+      "id": "NHANES-NONZERO-WEIGHT-DESIGN-INPUT",
+      "sourceUrl": "https://wwwn.cdc.gov/nchs/nhanes/tutorials/varianceestimation.aspx",
+      "observedFact": "CDC/NCHS NHANES variance guidance says Taylor-linearized subpopulation variance requires all observations with a non-zero value for the weight variable and a subpopulation indicator.",
+      "modelConsequence": "Human Infra must build the non-zero-weight design input before evaluating any domain indicator."
+    },
+    {
+      "id": "NHANES-NO-PRE-DESIGN-ROW-DROP",
+      "sourceUrl": "https://wwwn.cdc.gov/nchs/nhanes/tutorials/varianceestimation.aspx",
+      "observedFact": "CDC/NCHS warns analysts never to drop records from the analysis dataset before executing complex survey procedures for subgroup analysis.",
+      "modelConsequence": "A post-join subgroup table or row-filtered dataframe is not an eligible-base substitute for design-based domain analysis."
+    },
+    {
+      "id": "HUMAN-INFRA-AGGREGATE-POSITIVE-WEIGHT-DIAGNOSTIC",
+      "sourceUrl": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_aggregate_pilot.json",
+      "observedFact": "The current aggregate pilot records 5809 eligible adults, 5809 positive WTMEC2YR eligible adults, 0 zero-weight eligible adults, 0 missing-weight eligible adults, 15 positive-weight strata and 0 lonely positive-weight strata, without persisting eligible-base rows.",
+      "modelConsequence": "The positive-weight eligible base is now diagnosable as aggregate metadata, but no weighted estimator, domain rate, standard error, interval or calibration output is authorized."
+    }
+  ],
+  "eligibleBaseRule": {
+    "joinKey": "SEQN",
+    "eligibilityFields": [
+      "eligstat",
+      "RIDAGEYR",
+      "WTMEC2YR",
+      "SDMVSTRA",
+      "SDMVPSU"
+    ],
+    "analysisWeight": "WTMEC2YR",
+    "positiveWeightCondition": "WTMEC2YR > 0",
+    "ageEligibilityCondition": "RIDAGEYR >= 18",
+    "lmfEligibilityCondition": "eligstat == 1",
+    "fullDesignInputBeforeDomainRequired": true,
+    "subpopulationIndicatorRequiredAfterEligibleBase": true,
+    "rowDropBeforeDesignAllowed": false,
+    "eligibleBaseRowsPersisted": false,
+    "rawRowsPersisted": false,
+    "aggregateCellsAreEstimator": false,
+    "weightedEstimatorImplemented": false,
+    "weightedDomainInferenceAllowed": false,
+    "designBasedIntervalAllowed": false,
+    "calibrationAllowed": false,
+    "individualPredictionAllowed": false,
+    "medicalAdviceAllowed": false
+  },
+  "aggregateDiagnostics": {
+    "eligibleAdultRecordsInTemp": 5809,
+    "eligibleAdultDeaths": 145,
+    "positiveMecWeightEligibleAdultRecordsInTemp": 5809,
+    "zeroMecWeightEligibleAdultRecordsInTemp": 0,
+    "missingMecWeightEligibleAdultRecordsInTemp": 0,
+    "positiveMecWeightEligibleAdultDeaths": 145,
+    "zeroMecWeightEligibleAdultDeaths": 0,
+    "missingPseudoPsuAmongPositiveWeightEligibleAdultsInTemp": 0,
+    "missingPseudoStratumAmongPositiveWeightEligibleAdultsInTemp": 0,
+    "positiveWeightStrataInTemp": 15,
+    "minimumPsuPerPositiveWeightStratumInTemp": 2,
+    "lonelyPositiveWeightStrataInTemp": 0
+  },
+  "readinessGates": [
+    {
+      "id": "official-positive-weight-distribution-documented",
+      "status": "ready",
+      "blocksWeightedDomainInference": false,
+      "evidence": "DEMO_J documents WTMEC2YR positive, zero and missing counts."
+    },
+    {
+      "id": "nonzero-weight-design-input-rule-documented",
+      "status": "ready",
+      "blocksWeightedDomainInference": false,
+      "evidence": "NHANES variance guidance documents non-zero weight design input plus subpopulation indicator."
+    },
+    {
+      "id": "aggregate-positive-weight-diagnostic-built",
+      "status": "ready",
+      "blocksWeightedDomainInference": false,
+      "evidence": "Aggregate pilot now records positive/zero/missing WTMEC2YR eligible-adult counts and design-field completeness diagnostics without persisting rows."
+    },
+    {
+      "id": "no-row-persistence-boundary-validated",
+      "status": "ready",
+      "blocksWeightedDomainInference": false,
+      "evidence": "Aggregate pilot modelUseBoundary and eligibleBaseDiagnostics keep rawRowsPersisted, individualRowsInOutput and eligibleBaseRowsPersisted false."
+    },
+    {
+      "id": "software-estimator-not-selected",
+      "status": "blocked",
+      "blocksWeightedDomainInference": true,
+      "evidence": "No R survey, Stata, SAS, SUDAAN or equivalent backend has been selected and tested for NHANES weighted domain outputs."
+    },
+    {
+      "id": "domain-indicator-not-evaluated-on-design-object",
+      "status": "blocked",
+      "blocksWeightedDomainInference": true,
+      "evidence": "The eligible-base diagnostic does not yet evaluate a domain indicator inside a complex-survey design object."
+    },
+    {
+      "id": "domain-dof-sparse-review-not-implemented",
+      "status": "blocked",
+      "blocksWeightedDomainInference": true,
+      "evidence": "No review exists for domain degrees-of-freedom, lonely PSU, empty domain or sparse-cell estimator behavior."
+    },
+    {
+      "id": "public-output-disclosure-not-reviewed",
+      "status": "blocked",
+      "blocksWeightedDomainInference": true,
+      "evidence": "No disclosure review exists for future weighted domain cells, rates, intervals or subgroup summaries."
+    }
+  ],
+  "gateSummary": {
+    "requiredGateCount": 8,
+    "readyGateCount": 4,
+    "partialGateCount": 0,
+    "blockedGateCount": 4,
+    "weightedDomainInferenceAllowed": false
+  },
+  "allowedUses": [
+    "positive-weight eligible-base readiness audit",
+    "documentation of non-zero WTMEC2YR design-input boundary",
+    "model-admission boundary test before estimator backend selection"
+  ],
+  "blockedUses": [
+    "survey-population inference",
+    "weighted domain mortality rate publication",
+    "design-based confidence interval output",
+    "calibrated Human Infra prediction",
+    "intervention effect estimation",
+    "causal claim",
+    "individual prediction",
+    "individual death-date output",
+    "medical advice"
+  ],
+  "nextWork": [
+    "Select a reviewed estimator backend and implement a synthetic domain/subpopulation test.",
+    "Evaluate domain indicators on a design object built from the non-zero-weight eligible base.",
+    "Add degrees-of-freedom, lonely-PSU, sparse-cell and empty-domain synthetic cases.",
+    "Run disclosure review before any design-weighted public domain output."
+  ]
+}

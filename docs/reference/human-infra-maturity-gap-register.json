@@ -766,7 +766,7 @@
     {
       "axisId": "quantitative_model",
       "axisName": "定量模型",
-      "currentPercent": 84,
+      "currentPercent": 85,
       "targetPercent": 100,
       "definitionOfDone": "A governed, reproducible, scenario-level model uses real approved data with confirmed variables, explicit estimands, survey design, disclosure control, validation, calibration diagnostics and Web visualization while preserving no-individual-prediction boundaries.",
       "primaryEvidence": [
@@ -780,6 +780,9 @@
         "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_domain_subpopulation_rule_readiness.json",
         "domains/c1-boundary-rewriting/longevity-evidence/scripts/validate_nhanes_public_lmf_domain_subpopulation_rule_readiness.py",
         "web/src/data/life-path-nhanes-public-lmf-domain-subpopulation-rule-readiness-validation.json",
+        "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_eligible_base_readiness.json",
+        "domains/c1-boundary-rewriting/longevity-evidence/scripts/validate_nhanes_public_lmf_eligible_base_readiness.py",
+        "web/src/data/life-path-nhanes-public-lmf-eligible-base-readiness-validation.json",
         "domains/c1-boundary-rewriting/longevity-evidence/scripts/validate_nhanes_public_lmf_aggregate_pilot.py",
         "domains/c1-boundary-rewriting/longevity-evidence/scripts/build_nhanes_public_lmf_aggregate_pilot.py",
         "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_aggregate_pilot.json",
@@ -916,10 +919,26 @@
           "evidence": [
             "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_domain_subpopulation_rule_readiness.json",
             "domains/c1-boundary-rewriting/longevity-evidence/scripts/validate_nhanes_public_lmf_domain_subpopulation_rule_readiness.py",
-            "web/src/data/life-path-nhanes-public-lmf-domain-subpopulation-rule-readiness-validation.json"
+            "web/src/data/life-path-nhanes-public-lmf-domain-subpopulation-rule-readiness-validation.json",
+            "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_eligible_base_readiness.json",
+            "domains/c1-boundary-rewriting/longevity-evidence/scripts/validate_nhanes_public_lmf_eligible_base_readiness.py",
+            "web/src/data/life-path-nhanes-public-lmf-eligible-base-readiness-validation.json"
           ],
           "missingEvidence": [],
           "nextAction": "Use this gate only to prevent row-drop subgroup filtering from being mistaken for design-based domain analysis; implement a reviewed estimator, eligible-base step, DOF/sparse-domain review and disclosure gate before any weighted domain output.",
+          "blocks100Percent": false
+        },
+        {
+          "gateId": "MODEL-G2G-nhanes-public-positive-weight-eligible-base-readiness",
+          "status": "pass",
+          "requirement": "The public NHANES-LMF aggregate pilot records a non-row-persisting positive WTMEC2YR eligible-base diagnostic while keeping weighted domain inference blocked.",
+          "evidence": [
+            "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_eligible_base_readiness.json",
+            "domains/c1-boundary-rewriting/longevity-evidence/scripts/validate_nhanes_public_lmf_eligible_base_readiness.py",
+            "web/src/data/life-path-nhanes-public-lmf-eligible-base-readiness-validation.json"
+          ],
+          "missingEvidence": [],
+          "nextAction": "Use this gate only to prove positive-weight eligible-base diagnostic and no-row-persistence readiness; select a reviewed estimator backend, design object, DOF/sparse-domain review and disclosure gate before weighted domain output.",
           "blocks100Percent": false
         },
         {
@@ -963,7 +982,7 @@
             "Filled NHATS registration evidence template with redacted account status, permitted-user boundary, conditions-of-use attestation, file-tier confirmation, controlled workspace linkage and second-reviewer signoff.",
             "Allowed NHATS file tier confirmation with registration state, canonical format choice, approval status and governed storage path.",
             "Controlled NHATS workspace provisioning, access log, inventory log and governed workspace destruction evidence.",
-            "NHANES public-use LMF survey-design readiness now records WTMEC2YR, SDMVPSU and SDMVSTRA from official DEMO_J documentation, and domain/subpopulation rule readiness now records official NHANES domain mechanisms and the no-row-drop boundary; but weighted estimator, eligible-base implementation, DOF/sparse-domain review, disclosure-reviewed public output, external validation and calibration evidence remain absent for both NHATS and the NHANES public aggregate pilot."
+            "NHANES public-use LMF survey-design readiness now records WTMEC2YR, SDMVPSU and SDMVSTRA from official DEMO_J documentation; domain/subpopulation rule readiness records official NHANES domain mechanisms and the no-row-drop boundary; positive-weight eligible-base readiness records WTMEC2YR > 0 diagnostics without row persistence. Reviewed estimator, design-object domain evaluation, DOF/sparse-domain review, disclosure-reviewed public output, external validation and calibration evidence remain absent for both NHATS and the NHANES public aggregate pilot."
           ],
           "nextAction": "Use the NHANES public LMF aggregate pilot only as a public real-data smoke test for parser/join/disclosure boundaries; separately fill NHATS registration evidence with redacted proof, complete governed access records, provision a controlled workspace and execute the real storage/destruction plan before any NHATS extractor is written.",
           "blocks100Percent": true
@@ -1035,13 +1054,15 @@
             "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_survey_design_readiness.json",
             "web/src/data/life-path-nhanes-public-lmf-survey-design-readiness-validation.json",
             "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_domain_subpopulation_rule_readiness.json",
-            "web/src/data/life-path-nhanes-public-lmf-domain-subpopulation-rule-readiness-validation.json"
+            "web/src/data/life-path-nhanes-public-lmf-domain-subpopulation-rule-readiness-validation.json",
+            "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_eligible_base_readiness.json",
+            "web/src/data/life-path-nhanes-public-lmf-eligible-base-readiness-validation.json"
           ],
           "missingEvidence": [
             "Exact NHATS design variables.",
-            "NHANES public-use design fields and domain/subpopulation rules are ready only for diagnostic boundary testing; they do not satisfy NHATS design readiness or authorize NHANES weighted domain inference.",
+            "NHANES public-use design fields, domain/subpopulation rules and positive-weight eligible-base diagnostics are ready only for diagnostic boundary testing; they do not satisfy NHATS design readiness or authorize NHANES weighted domain inference.",
             "Weighted estimator implementation.",
-            "Eligible-base, domain degrees-of-freedom and sparse-domain review implementation.",
+            "Design-object domain evaluation, domain degrees-of-freedom and sparse-domain review implementation.",
             "Variance method validation.",
             "Public-output suppression review."
           ],

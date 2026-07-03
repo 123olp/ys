@@ -14,6 +14,7 @@
 - `manual/life_path_nhanes_public_lmf_aggregate_pilot.json` 用于维护 CDC/NCHS NHANES 2017-2018 public-use LMF 的 sex × age band 粗聚合试运行输出；该文件只证明公开真实死亡结局数据能被临时下载、内存连接和聚合导出，不包含行级数据，不授权 survey-population inference、校准预测、因果结论或个体死亡日期输出。
 - `manual/life_path_nhanes_public_lmf_survey_design_readiness.json` 用于维护 NHANES public-use LMF 试运行的 survey-design readiness 契约，记录 WTMEC2YR、SDMVPSU、SDMVSTRA 官方字段、Taylor linearization 文档线索和继续阻塞的 estimator/domain/disclosure/calibration gates；它不授权加权人口推断或 design-based confidence interval 输出。
 - `manual/life_path_nhanes_public_lmf_domain_subpopulation_rule_readiness.json` 用于维护 NHANES public-use LMF 试运行的 domain/subpopulation rule readiness 契约，记录 CDC/NCHS domain/subpopulation 机制、完整设计输入要求、禁止 row-drop subgroup filtering、eligible base、DOF、disclosure 和 calibration 阻塞门；它不授权 weighted domain inference、design-based confidence interval、校准或个体预测。
+- `manual/life_path_nhanes_public_lmf_eligible_base_readiness.json` 用于维护 NHANES public-use LMF 试运行的 positive-weight eligible-base readiness 契约，记录 `WTMEC2YR > 0`、完整设计输入、不预先丢行、5809 名 positive-weight eligible adults、15 个 strata 和 no lonely positive-weight strata；它不授权 weighted domain inference、design-based confidence interval、校准或个体预测。
 - `manual/life_path_calibration_readiness.json` 用于维护生命路径模型从 toy model 进入校准模型前必须满足的研究设计、报告、验证和禁止用途字段。
 - `manual/life_path_data_source_candidates.json` 用于维护生命路径模型后续可能使用的官方队列、死亡链接、老龄化面板和外部验证候选源；该文件只登记候选和治理边界，不表示已经下载、访问或校准。
 - `manual/life_path_nhats_acquisition_readiness.json` 用于维护 NHATS 从候选数据源进入真实提取前的机器可读准入门；该文件只记录官方来源刷新、注册、文件层级、Colectica 变量确认、survey design、endpoint、披露控制、AI 边界和存储销毁要求，不表示已经 acquisition-ready。
@@ -43,6 +44,7 @@
 - `web/src/data/life-path-nhanes-public-lmf-aggregate-pilot-validation.json` 是从 NHANES public-use LMF 聚合试运行输出派生的验证报告；它不放在本目录内，但由本域脚本生成并由本域审计器检查，只证明官方来源 hash、8 个聚合单元和禁止用途边界。
 - `web/src/data/life-path-nhanes-public-lmf-survey-design-readiness-validation.json` 是从 NHANES public-use LMF survey-design readiness 契约派生的验证报告；它不放在本目录内，但由本域脚本生成并由本域审计器检查，只证明官方设计字段和诊断边界，不证明加权估计、置信区间、校准或个体预测。
 - `web/src/data/life-path-nhanes-public-lmf-domain-subpopulation-rule-readiness-validation.json` 是从 NHANES public-use LMF domain/subpopulation rule readiness 契约派生的验证报告；它不放在本目录内，但由本域脚本生成并由本域审计器检查，只证明 domain/subpopulation 规则边界和 no-weighted-domain-inference 状态。
+- `web/src/data/life-path-nhanes-public-lmf-eligible-base-readiness-validation.json` 是从 NHANES public-use LMF positive-weight eligible-base readiness 契约派生的验证报告；它不放在本目录内，但由本域脚本生成并由本域审计器检查，只证明 `WTMEC2YR > 0` eligible-base 诊断、no-row-persistence 和 no-weighted-domain-inference 边界。
 - `web/src/data/life-path-nhats-controlled-storage-destruction-validation.json` 是从受控存储/销毁计划派生的验证报告；它不放在本目录内，但由本域脚本生成并由本域审计器检查，只证明 storage-destruction gate 为 partial 且仍阻塞下载、抽取、raw data 入库、public AI 上传、校准和个体预测。
 - `web/src/data/life-path-nhats-synthetic-storage-destruction-drill-validation.json` 是从合成存储/销毁演练派生的验证报告；它不放在本目录内，但由本域脚本生成并由本域审计器检查，只证明 synthetic drill 完成且所有真实 NHATS 数据与模型动作仍阻塞。
 - `web/src/data/life-path-nhats-disclosure-control-validation.json` 是从披露控制 policy 和 synthetic test cases 派生的验证报告；它不放在本目录内，但由本域脚本生成并由本域审计器检查。
@@ -71,6 +73,7 @@
 - `manual/life_path_nhanes_public_lmf_aggregate_pilot.json`：CDC/NCHS NHANES 2017-2018 DEMO 与 2019 public-use Linked Mortality File 的粗聚合试运行输出，记录 5809 名 public-use eligible adults 的 8 个 sex × age-band 聚合单元和 145 个死亡结局；它不是 survey-weighted population estimate、不是校准数据集、不是个体预测数据。
 - `manual/life_path_nhanes_public_lmf_survey_design_readiness.json`：NHANES public-use LMF survey-design readiness 契约，记录 WTMEC2YR、SDMVPSU、SDMVSTRA 的官方字段就绪状态、4 个来源事实、8 个 readiness gates 和 no weighted inference 边界。
 - `manual/life_path_nhanes_public_lmf_domain_subpopulation_rule_readiness.json`：NHANES public-use LMF domain/subpopulation rule readiness 契约，记录官方 domain/subpopulation 机制、8 个 readiness gates 和 no weighted domain inference 边界。
+- `manual/life_path_nhanes_public_lmf_eligible_base_readiness.json`：NHANES public-use LMF positive-weight eligible-base readiness 契约，记录 WTMEC2YR 正权重 eligible-base、5809 名 positive-weight eligible adults、145 个 eligible adult deaths、15 个 strata、minimum PSU per stratum = 2 和继续阻塞的 weighted domain inference 边界。
 - `manual/life_path_calibration_readiness.json`：校准预备契约，记录 target population、time zero、outcome、estimand、predictor、censoring、validation、calibration、sensitivity、bias/applicability、reporting、prohibited use 和当前 cannot-calibrate-yet 边界。
 - `manual/life_path_data_source_candidates.json`：候选数据源注册表，记录 HRS、NCHS linked mortality、UK Biobank、All of Us、NHATS、ELSA、SHARE 和 Framingham 等官方入口、覆盖标签、访问治理状态、限制和禁止外推边界。
 - `manual/life_path_nhats_acquisition_readiness.json`：NHATS acquisition readiness 机器契约，记录官方入口、来源事实、提取前阻塞门、禁止动作和下一步证据，当前状态为 `cannot-extract-yet`。

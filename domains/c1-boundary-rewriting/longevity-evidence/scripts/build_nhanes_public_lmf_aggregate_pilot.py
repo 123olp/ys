@@ -147,6 +147,38 @@ def build_aggregate(lmf_path: Path, demo_path: Path) -> dict[str, Any]:
     eligible["mortstat"] = eligible["mortstat"].fillna(0).astype(int)
     eligible["permthExm"] = eligible["permthExm"].fillna(0).astype(float)
 
+    positive_weight = eligible["WTMEC2YR"] > 0
+    positive_weight_eligible = eligible[positive_weight]
+    psu_per_stratum = positive_weight_eligible.groupby("SDMVSTRA")["SDMVPSU"].nunique()
+    eligible_base_diagnostics = {
+        "weightField": "WTMEC2YR",
+        "eligibleBaseRule": "eligstat == 1 and RIDAGEYR >= 18 and WTMEC2YR > 0",
+        "nonZeroWeightRequired": True,
+        "fullDesignInputBeforeDomainRequired": True,
+        "rowDropBeforeDesignAllowed": False,
+        "eligibleBaseRowsPersisted": False,
+        "domainIndicatorsPersisted": False,
+        "weightedInferenceAllowed": False,
+        "positiveMecWeightEligibleAdultRecordsInTemp": int(positive_weight.sum()),
+        "zeroMecWeightEligibleAdultRecordsInTemp": int((eligible["WTMEC2YR"] == 0).sum()),
+        "missingMecWeightEligibleAdultRecordsInTemp": int(eligible["WTMEC2YR"].isna().sum()),
+        "positiveMecWeightEligibleAdultDeaths": int(
+            positive_weight_eligible["mortstat"].sum()
+        ),
+        "zeroMecWeightEligibleAdultDeaths": int(
+            eligible.loc[eligible["WTMEC2YR"] == 0, "mortstat"].sum()
+        ),
+        "missingPseudoPsuAmongPositiveWeightEligibleAdultsInTemp": int(
+            positive_weight_eligible["SDMVPSU"].isna().sum()
+        ),
+        "missingPseudoStratumAmongPositiveWeightEligibleAdultsInTemp": int(
+            positive_weight_eligible["SDMVSTRA"].isna().sum()
+        ),
+        "positiveWeightStrataInTemp": int(psu_per_stratum.size),
+        "minimumPsuPerPositiveWeightStratumInTemp": int(psu_per_stratum.min()),
+        "lonelyPositiveWeightStrataInTemp": int((psu_per_stratum < 2).sum()),
+    }
+
     cells: list[dict[str, Any]] = []
     for (sex, band), group in eligible.groupby(["sex", "ageBand"], sort=True):
         records = int(len(group))
@@ -182,6 +214,7 @@ def build_aggregate(lmf_path: Path, demo_path: Path) -> dict[str, Any]:
         "joinedRecordsInTemp": int(len(merged)),
         "eligibleAdultRecordsInTemp": int(len(eligible)),
         "eligibleAdultDeaths": int(eligible["mortstat"].sum()),
+        "eligibleBaseDiagnostics": eligible_base_diagnostics,
         "aggregateCells": cells,
     }
 

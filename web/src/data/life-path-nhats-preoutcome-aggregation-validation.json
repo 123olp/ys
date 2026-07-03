@@ -1,6 +1,6 @@
 {
   "schemaVersion": "human-infra.life-path-nhats-preoutcome-aggregation-validation.v1",
-  "generatedAt": "2026-07-03T08:17:33.565814+00:00",
+  "generatedAt": "2026-07-03T08:46:16.727294+00:00",
   "protocolPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_preoutcome_aggregation_protocol.json",
   "protocolSha256": "a2917d4bbb1682f5de6251fe919afae5da5bad681168475845a3a9c0a9a0747d",
   "firstEstimandProtocolPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_first_estimand_protocol.json",

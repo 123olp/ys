@@ -64,6 +64,26 @@ EXPECTED_COUNTS = {
     "eligibleAdultRecordsInTemp": 5809,
     "eligibleAdultDeaths": 145,
 }
+EXPECTED_ELIGIBLE_BASE_DIAGNOSTICS = {
+    "weightField": "WTMEC2YR",
+    "eligibleBaseRule": "eligstat == 1 and RIDAGEYR >= 18 and WTMEC2YR > 0",
+    "nonZeroWeightRequired": True,
+    "fullDesignInputBeforeDomainRequired": True,
+    "rowDropBeforeDesignAllowed": False,
+    "eligibleBaseRowsPersisted": False,
+    "domainIndicatorsPersisted": False,
+    "weightedInferenceAllowed": False,
+    "positiveMecWeightEligibleAdultRecordsInTemp": 5809,
+    "zeroMecWeightEligibleAdultRecordsInTemp": 0,
+    "missingMecWeightEligibleAdultRecordsInTemp": 0,
+    "positiveMecWeightEligibleAdultDeaths": 145,
+    "zeroMecWeightEligibleAdultDeaths": 0,
+    "missingPseudoPsuAmongPositiveWeightEligibleAdultsInTemp": 0,
+    "missingPseudoStratumAmongPositiveWeightEligibleAdultsInTemp": 0,
+    "positiveWeightStrataInTemp": 15,
+    "minimumPsuPerPositiveWeightStratumInTemp": 2,
+    "lonelyPositiveWeightStrataInTemp": 0,
+}
 EXPECTED_CELL_KEYS = {
     "sex",
     "ageBand",
@@ -201,6 +221,10 @@ def validate_payload(data: dict[str, Any]) -> list[str]:
         if aggregate.get(key) != expected:
             fail(errors, f"{key} expected {expected}, found {aggregate.get(key)!r}")
 
+    diagnostics = aggregate.get("eligibleBaseDiagnostics")
+    if diagnostics != EXPECTED_ELIGIBLE_BASE_DIAGNOSTICS:
+        fail(errors, "eligibleBaseDiagnostics must match positive-weight aggregate diagnostics")
+
     cells = aggregate.get("aggregateCells")
     if not isinstance(cells, list) or len(cells) != 8:
         fail(errors, "aggregateCells must contain 8 sex × age-band cells")
@@ -257,6 +281,11 @@ def build_validation(data_path: Path, output_path: Path, errors: list[str], data
             if isinstance(aggregate, dict)
             else None,
             "eligibleAdultDeaths": aggregate.get("eligibleAdultDeaths")
+            if isinstance(aggregate, dict)
+            else None,
+            "positiveMecWeightEligibleAdultRecords": aggregate.get(
+                "eligibleBaseDiagnostics", {}
+            ).get("positiveMecWeightEligibleAdultRecordsInTemp")
             if isinstance(aggregate, dict)
             else None,
             "errors": errors,

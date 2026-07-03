@@ -1,7 +1,7 @@
 {
   "schemaVersion": "human-infra.nhanes-public-lmf-aggregate-pilot.v1",
   "status": "public-real-data-aggregate-pilot-not-weighted-not-calibrated",
-  "generatedAt": "2026-07-03T07:38:36.986696+00:00",
+  "generatedAt": "2026-07-03T08:23:35.232938+00:00",
   "sourceAuthority": "CDC/NCHS public-use NHANES Linked Mortality File",
   "sourceUrls": {
     "linkedMortalityPage": "https://www.cdc.gov/nchs/linked-data/mortality-files/index.html",
@@ -70,6 +70,26 @@
     "joinedRecordsInTemp": 9254,
     "eligibleAdultRecordsInTemp": 5809,
     "eligibleAdultDeaths": 145,
+    "eligibleBaseDiagnostics": {
+      "weightField": "WTMEC2YR",
+      "eligibleBaseRule": "eligstat == 1 and RIDAGEYR >= 18 and WTMEC2YR > 0",
+      "nonZeroWeightRequired": true,
+      "fullDesignInputBeforeDomainRequired": true,
+      "rowDropBeforeDesignAllowed": false,
+      "eligibleBaseRowsPersisted": false,
+      "domainIndicatorsPersisted": false,
+      "weightedInferenceAllowed": false,
+      "positiveMecWeightEligibleAdultRecordsInTemp": 5809,
+      "zeroMecWeightEligibleAdultRecordsInTemp": 0,
+      "missingMecWeightEligibleAdultRecordsInTemp": 0,
+      "positiveMecWeightEligibleAdultDeaths": 145,
+      "zeroMecWeightEligibleAdultDeaths": 0,
+      "missingPseudoPsuAmongPositiveWeightEligibleAdultsInTemp": 0,
+      "missingPseudoStratumAmongPositiveWeightEligibleAdultsInTemp": 0,
+      "positiveWeightStrataInTemp": 15,
+      "minimumPsuPerPositiveWeightStratumInTemp": 2,
+      "lonelyPositiveWeightStrataInTemp": 0
+    },
     "aggregateCells": [
       {
         "sex": "female",

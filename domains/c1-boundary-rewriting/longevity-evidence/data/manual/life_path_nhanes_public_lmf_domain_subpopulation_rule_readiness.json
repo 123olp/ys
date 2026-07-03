@@ -7,7 +7,7 @@
   "lastReviewedDate": "2026-07-03",
   "upstreamSurveyDesignReadiness": {
     "path": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_survey_design_readiness.json",
-    "sha256": "6ca8f805a13cb7364fac5ea4706aef072ea105e2530f5e78b10d2da3c5d77b16",
+    "sha256": "0c914cdecd72587bf62ea0b59c4445ac5bfa72c587cc845264f79c5363935170",
     "validationPath": "web/src/data/life-path-nhanes-public-lmf-survey-design-readiness-validation.json"
   },
   "officialSourceTrace": {

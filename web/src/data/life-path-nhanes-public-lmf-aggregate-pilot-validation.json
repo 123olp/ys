@@ -1,14 +1,15 @@
 {
   "schemaVersion": "human-infra.nhanes-public-lmf-aggregate-pilot-validation.v1",
   "status": "pass",
-  "generatedAt": "2026-07-03T08:17:32.969946+00:00",
+  "generatedAt": "2026-07-03T08:46:16.092354+00:00",
   "aggregatePath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_aggregate_pilot.json",
-  "aggregateSha256": "6b472e577480173fbd348171ae8bc6bc9716438316b460fa5c024db3a7e2af8d",
+  "aggregateSha256": "d817c2907d71a820baac846f5a41c28db6eeee5cb8e57ed20a47d87aa9efce0f",
   "validationPath": "web/src/data/life-path-nhanes-public-lmf-aggregate-pilot-validation.json",
   "summary": {
     "aggregateCells": 8,
     "eligibleAdultRecords": 5809,
     "eligibleAdultDeaths": 145,
+    "positiveMecWeightEligibleAdultRecords": 5809,
     "errors": []
   },
   "boundary": {
