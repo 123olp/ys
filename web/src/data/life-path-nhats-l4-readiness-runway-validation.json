@@ -1,0 +1,191 @@
+{
+  "schemaVersion": "human-infra.life-path-nhats-l4-readiness-runway-validation.v1",
+  "generatedAt": "2026-07-03T05:01:43.646919+00:00",
+  "runwayPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_l4_readiness_runway.json",
+  "runwaySha256": "a86680a77ac894efb69791a09ba06dbeddc6bff6ebcd0266b6bd154df93760ce",
+  "runwayId": "nhats-r13-r14-l4-readiness-runway-2026-07-03",
+  "status": "PASS",
+  "checks": [
+    {
+      "id": "schema-version",
+      "status": "PASS",
+      "detail": "schemaVersion='human-infra.life-path-nhats-l4-readiness-runway.v1'"
+    },
+    {
+      "id": "identity-and-status",
+      "status": "PASS",
+      "detail": "runway must be NHATS-specific and keep L4 admission blocked"
+    },
+    {
+      "id": "current-decision-boundary",
+      "status": "PASS",
+      "detail": "runway may be auditable, but governed access, field confirmation, real extraction, calibration, L4 and individual prediction must remain false"
+    },
+    {
+      "id": "source-bindings-present",
+      "status": "PASS",
+      "detail": "missing=[]"
+    },
+    {
+      "id": "source-modelAdmissionContractPath",
+      "status": "PASS",
+      "detail": "docs/reference/human-infra-model-admission-contract.json"
+    },
+    {
+      "id": "source-modelAdmissionCandidateRegistryPath",
+      "status": "PASS",
+      "detail": "docs/reference/human-infra-model-admission-candidate-registry.json"
+    },
+    {
+      "id": "source-calibrationReadinessPath",
+      "status": "PASS",
+      "detail": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_calibration_readiness.json"
+    },
+    {
+      "id": "source-acquisitionReadinessPath",
+      "status": "PASS",
+      "detail": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_acquisition_readiness.json"
+    },
+    {
+      "id": "source-controlledStorageDestructionPlanPath",
+      "status": "PASS",
+      "detail": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_controlled_storage_destruction_plan.json"
+    },
+    {
+      "id": "source-syntheticStorageDestructionDrillPath",
+      "status": "PASS",
+      "detail": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_synthetic_storage_destruction_drill.json"
+    },
+    {
+      "id": "source-fileTierTablePath",
+      "status": "PASS",
+      "detail": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_file_tier_table.json"
+    },
+    {
+      "id": "source-firstEstimandProtocolPath",
+      "status": "PASS",
+      "detail": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_first_estimand_protocol.json"
+    },
+    {
+      "id": "source-variableConfirmationMatrixPath",
+      "status": "PASS",
+      "detail": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_variable_confirmation_matrix.json"
+    },
+    {
+      "id": "source-cohortFlowEndpointProtocolPath",
+      "status": "PASS",
+      "detail": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_cohort_flow_endpoint_protocol.json"
+    },
+    {
+      "id": "source-disclosureControlPolicyPath",
+      "status": "PASS",
+      "detail": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_disclosure_control_policy.json"
+    },
+    {
+      "id": "source-surveyDesignProtocolPath",
+      "status": "PASS",
+      "detail": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_survey_design_protocol.json"
+    },
+    {
+      "id": "source-missingnessRouteProtocolPath",
+      "status": "PASS",
+      "detail": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_missingness_route_protocol.json"
+    },
+    {
+      "id": "source-routeFieldDiscoveryRegisterPath",
+      "status": "PASS",
+      "detail": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_route_field_discovery_register.json"
+    },
+    {
+      "id": "source-colecticaValueLabelReviewProtocolPath",
+      "status": "PASS",
+      "detail": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_value_label_review_protocol.json"
+    },
+    {
+      "id": "source-colecticaValueLabelReviewExecutionRegisterPath",
+      "status": "PASS",
+      "detail": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_value_label_review_execution_register.json"
+    },
+    {
+      "id": "source-colecticaAccessRouteProbeRegisterPath",
+      "status": "PASS",
+      "detail": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_access_route_probe_register.json"
+    },
+    {
+      "id": "source-colecticaAuthenticatedCaptureTemplatePath",
+      "status": "PASS",
+      "detail": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_authenticated_capture_template.json"
+    },
+    {
+      "id": "source-l2VariableFamilyAdmissionRegisterPath",
+      "status": "PASS",
+      "detail": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_l2_variable_family_admission_register.json"
+    },
+    {
+      "id": "source-preOutcomeAggregationProtocolPath",
+      "status": "PASS",
+      "detail": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_preoutcome_aggregation_protocol.json"
+    },
+    {
+      "id": "readiness-gates-complete",
+      "status": "PASS",
+      "detail": "observed=12 status_counts={'pass': 3, 'partial': 2, 'blocked': 7}"
+    },
+    {
+      "id": "l4-remains-blocked",
+      "status": "PASS",
+      "detail": "status_counts={'pass': 3, 'partial': 2, 'blocked': 7}"
+    },
+    {
+      "id": "next-runnable-sequence",
+      "status": "PASS",
+      "detail": "runway must expose the next concrete L4 unlock sequence"
+    },
+    {
+      "id": "hard-boundaries",
+      "status": "PASS",
+      "detail": "hard boundaries must block raw data, credentials, row-level output, individual output and calibration claims"
+    },
+    {
+      "id": "no-prohibited-output-keys",
+      "status": "PASS",
+      "detail": "forbidden_present=[]"
+    }
+  ],
+  "summary": {
+    "pass": 29,
+    "fail": 0
+  },
+  "gateStatusCounts": {
+    "readinessGates": 12,
+    "pass": 3,
+    "partial": 2,
+    "blocked": 7,
+    "l4AdmissionAllowed": false,
+    "calibratedPredictionAvailable": false,
+    "individualUseAllowed": false
+  },
+  "sourceHashes": {
+    "docs/reference/human-infra-model-admission-contract.json": "7fda13c3bb19bdb6bff3af1450e455f4f0d82bace7c4272bd3f5d13f1e679262",
+    "docs/reference/human-infra-model-admission-candidate-registry.json": "4f5486688b123a436b0ca75521284bf7dd054e41fd1c0cd6ac392237c22fca19",
+    "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_calibration_readiness.json": "0f51dc87ed255704be46e6ede9553ed7dcfcb1b2d81beb92144f18990b3fb1af",
+    "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_acquisition_readiness.json": "f0ebd157e99df536c7b30bc8106b364b35a2bc74f7808be0c34e41931266e1c4",
+    "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_controlled_storage_destruction_plan.json": "ff6c99b22efdb20197df15d014f312af83c96e836139690f10fc9d5d011d7729",
+    "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_synthetic_storage_destruction_drill.json": "83178bbaab0efaf71c65539c08ecb845fd778d1f0400537717558d13eac6e4d3",
+    "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_file_tier_table.json": "18c151512ffb6e075a134765e13d5b4b07252be10b9e55a211f7d890cefdc6f1",
+    "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_first_estimand_protocol.json": "d939ef97e4a094036136d945e9739713e469b7b435c88857945e46a8f913e571",
+    "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_variable_confirmation_matrix.json": "e6a459ac8560a5a40d29a0704ae3a0c9c3fa3a789663936b2f58cdcc899d33d6",
+    "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_cohort_flow_endpoint_protocol.json": "e92a91ffda407cb8fab2e4c3991abadf0ab83c08642e3767802594ba4b037c00",
+    "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_disclosure_control_policy.json": "f41f63332d409a234d6b9f49b08274ee8b472faa7cb14ea81c98c85494fc7573",
+    "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_survey_design_protocol.json": "fc36be4f7b5521f938a74063a7ba57f50a791b99008fe35bc1fd08b5a233d0ef",
+    "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_missingness_route_protocol.json": "e5f68ca68fd44aff81e2146eb2fa75534aab10440129b42f218f5473386e12fd",
+    "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_route_field_discovery_register.json": "32d86995a0438e2104e6850334eefa63b30176b0767dd2229bc73a517ef5ade4",
+    "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_value_label_review_protocol.json": "bd5130152b3c57d5a6d8cdc767df85bc8a10e19e1225738f13940bd3734ff416",
+    "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_value_label_review_execution_register.json": "de6d17f9470a563346f92884cead1eec35cf5a954245751b0135efc60672b042",
+    "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_access_route_probe_register.json": "58941fde2c6a1c5488437a1ad447cb3dae2032739ef1ed579e29da98b96aaa89",
+    "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_authenticated_capture_template.json": "dc097acfcb44007b42a25ce500c6cb1d23b1154f6620a7797445293817313eeb",
+    "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_l2_variable_family_admission_register.json": "da1d444f452482f37aa7d7d12cd97c9deb0b2d6006540f76c5d2588389dffce3",
+    "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_preoutcome_aggregation_protocol.json": "a2917d4bbb1682f5de6251fe919afae5da5bad681168475845a3a9c0a9a0747d"
+  },
+  "boundary": "This validation proves only that the L4 readiness runway is auditable and still blocks calibrated, public, row-level and individual use."
+}

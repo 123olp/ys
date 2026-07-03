@@ -1,0 +1,292 @@
+{
+  "schemaVersion": "human-infra.life-path-nhats-l4-readiness-runway.v1",
+  "sourceId": "nhats",
+  "sourceName": "National Health and Aging Trends Study",
+  "runwayId": "nhats-r13-r14-l4-readiness-runway-2026-07-03",
+  "status": "runway-only-l4-blocked",
+  "createdAt": "2026-07-03",
+  "owner": "tradecatlabs",
+  "purpose": "Collapse the current NHATS R13/R14 path from L2 design artifacts to the first possible L4 aggregate-calibrated research model into one auditable readiness runway. This file does not authorize download, extraction, calibration, public export or individual prediction.",
+  "currentDecision": {
+    "narrowEstimandSelected": true,
+    "l2VariableFamiliesMapped": true,
+    "preOutcomeAggregationRulesFrozen": true,
+    "l4RunwayAuditable": true,
+    "governedDataAccessExecuted": false,
+    "controlledWorkspaceExecuted": false,
+    "colecticaAuthenticatedCapturesComplete": false,
+    "exactVariablesConfirmed": false,
+    "valueLabelsConfirmed": false,
+    "questionTextUniverseSkipLogicConfirmed": false,
+    "routeClassifierReady": false,
+    "realExtractionAllowed": false,
+    "cohortFlowReady": false,
+    "surveyDesignReady": false,
+    "weightedEstimatesAllowed": false,
+    "disclosureReviewComplete": false,
+    "externalValidationReady": false,
+    "calibrationAllowed": false,
+    "l4AdmissionAllowed": false,
+    "individualPredictionAllowed": false,
+    "reason": "The repository now has a machine-readable L4 runway, but every calibrated-model gate remains blocked until governed access, exact field confirmation, real aggregate extraction, survey design, disclosure review, validation and calibration diagnostics are completed."
+  },
+  "sourceBindings": {
+    "modelAdmissionContractPath": "docs/reference/human-infra-model-admission-contract.json",
+    "modelAdmissionCandidateRegistryPath": "docs/reference/human-infra-model-admission-candidate-registry.json",
+    "calibrationReadinessPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_calibration_readiness.json",
+    "acquisitionReadinessPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_acquisition_readiness.json",
+    "controlledStorageDestructionPlanPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_controlled_storage_destruction_plan.json",
+    "syntheticStorageDestructionDrillPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_synthetic_storage_destruction_drill.json",
+    "fileTierTablePath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_file_tier_table.json",
+    "firstEstimandProtocolPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_first_estimand_protocol.json",
+    "variableConfirmationMatrixPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_variable_confirmation_matrix.json",
+    "cohortFlowEndpointProtocolPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_cohort_flow_endpoint_protocol.json",
+    "disclosureControlPolicyPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_disclosure_control_policy.json",
+    "surveyDesignProtocolPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_survey_design_protocol.json",
+    "missingnessRouteProtocolPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_missingness_route_protocol.json",
+    "routeFieldDiscoveryRegisterPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_route_field_discovery_register.json",
+    "colecticaValueLabelReviewProtocolPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_value_label_review_protocol.json",
+    "colecticaValueLabelReviewExecutionRegisterPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_value_label_review_execution_register.json",
+    "colecticaAccessRouteProbeRegisterPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_access_route_probe_register.json",
+    "colecticaAuthenticatedCaptureTemplatePath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_authenticated_capture_template.json",
+    "l2VariableFamilyAdmissionRegisterPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_l2_variable_family_admission_register.json",
+    "preOutcomeAggregationProtocolPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_preoutcome_aggregation_protocol.json"
+  },
+  "readinessGates": [
+    {
+      "gateId": "RW-G01-estimand-and-model-boundary",
+      "admissionGateRefs": ["MODEL-G2B-model-admission-contract", "MAC-G3-estimand"],
+      "status": "pass",
+      "l4Effect": "Establishes the narrow aggregate estimand and blocks individual-use interpretation.",
+      "evidencePaths": [
+        "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_first_estimand_protocol.json",
+        "docs/reference/human-infra-model-admission-contract.json"
+      ],
+      "missingEvidence": [],
+      "nextAction": "Keep this estimand frozen while downstream field confirmation and extraction evidence are gathered.",
+      "blocksL4": false
+    },
+    {
+      "gateId": "RW-G02-controlled-access-and-storage",
+      "admissionGateRefs": ["MODEL-G3-real-data-access", "MAC-G4-data-access"],
+      "status": "blocked",
+      "l4Effect": "Real NHATS data cannot enter extraction or calibration until governed access and controlled workspace execution exist.",
+      "evidencePaths": [
+        "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_acquisition_readiness.json",
+        "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_controlled_storage_destruction_plan.json",
+        "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_synthetic_storage_destruction_drill.json"
+      ],
+      "missingEvidence": [
+        "executed NHATS registration/access record",
+        "controlled workspace path outside repository",
+        "access log and manifest log",
+        "real-data destruction test in governed workspace"
+      ],
+      "nextAction": "Execute governed access outside the repository and record only aggregate-safe evidence hashes here.",
+      "blocksL4": true
+    },
+    {
+      "gateId": "RW-G03-colectica-authenticated-capture",
+      "admissionGateRefs": ["MODEL-G4-field-and-value-confirmation", "MAC-G5-variable-confirmation"],
+      "status": "blocked",
+      "l4Effect": "Candidate variables remain patterns until authenticated Colectica pages are captured with source hashes.",
+      "evidencePaths": [
+        "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_access_route_probe_register.json",
+        "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_authenticated_capture_template.json"
+      ],
+      "missingEvidence": [
+        "authenticated variable page captures",
+        "capture timestamp and source hash per route field",
+        "second reviewer signoff"
+      ],
+      "nextAction": "Fill the authenticated capture template for the first route fields before exact variable promotion.",
+      "blocksL4": true
+    },
+    {
+      "gateId": "RW-G04-exact-variable-and-value-label-confirmation",
+      "admissionGateRefs": ["MODEL-G4-field-and-value-confirmation", "MAC-G5-variable-confirmation"],
+      "status": "blocked",
+      "l4Effect": "L2 variable families cannot become model variables until exact fields, value labels, question text, universe and skip logic are confirmed.",
+      "evidencePaths": [
+        "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_variable_confirmation_matrix.json",
+        "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_value_label_review_protocol.json",
+        "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_value_label_review_execution_register.json",
+        "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_l2_variable_family_admission_register.json"
+      ],
+      "missingEvidence": [
+        "exact public-use field names",
+        "value-label table",
+        "negative-code map",
+        "question text",
+        "universe and skip logic",
+        "round-specific file confirmation"
+      ],
+      "nextAction": "Confirm exact variables for identity, endpoint route, baseline function, cognition and support/environment families.",
+      "blocksL4": true
+    },
+    {
+      "gateId": "RW-G05-endpoint-route-and-missingness-classifier",
+      "admissionGateRefs": ["MODEL-G5-real-extraction-and-cohort-flow", "MAC-G6-extraction-and-cohort-flow"],
+      "status": "blocked",
+      "l4Effect": "Endpoint and missingness routing cannot be computed until route fields and labels are confirmed.",
+      "evidencePaths": [
+        "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_route_field_discovery_register.json",
+        "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_missingness_route_protocol.json",
+        "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_cohort_flow_endpoint_protocol.json"
+      ],
+      "missingEvidence": [
+        "route-value crosswalk",
+        "death boundary excluding sensitive death-date fields",
+        "known-alive noninterview route labels",
+        "proxy and facility route labels",
+        "classifier second review"
+      ],
+      "nextAction": "Build a reviewed aggregate-only route classifier specification after Colectica labels are confirmed.",
+      "blocksL4": true
+    },
+    {
+      "gateId": "RW-G06-preoutcome-aggregation-rules",
+      "admissionGateRefs": ["MODEL-G5-real-extraction-and-cohort-flow", "MAC-G6-extraction-and-cohort-flow"],
+      "status": "pass",
+      "l4Effect": "Freezes pre-outcome aggregation rules so future extraction cannot choose predictors after seeing outcomes.",
+      "evidencePaths": [
+        "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_preoutcome_aggregation_protocol.json"
+      ],
+      "missingEvidence": [],
+      "nextAction": "Use these rules as a guard when exact variables and real extraction become possible.",
+      "blocksL4": false
+    },
+    {
+      "gateId": "RW-G07-survey-design-and-weighting",
+      "admissionGateRefs": ["MODEL-G6-survey-design-and-weighted-estimates"],
+      "status": "blocked",
+      "l4Effect": "Aggregate estimates cannot claim population inference until weights, strata, PSU/variance unit and variance method are confirmed.",
+      "evidencePaths": [
+        "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_survey_design_protocol.json",
+        "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_file_tier_table.json"
+      ],
+      "missingEvidence": [
+        "exact analysis weight selected",
+        "strata field confirmed",
+        "PSU or variance unit field confirmed",
+        "variance method selected",
+        "domain/subpopulation rule reviewed"
+      ],
+      "nextAction": "Confirm survey design variables from official metadata before any weighted estimates.",
+      "blocksL4": true
+    },
+    {
+      "gateId": "RW-G08-disclosure-control-and-public-output",
+      "admissionGateRefs": ["MODEL-G5-real-extraction-and-cohort-flow", "MAC-G8-reporting-and-prohibited-use"],
+      "status": "partial",
+      "l4Effect": "Synthetic disclosure envelope exists, but real NHATS aggregate release still needs governed review.",
+      "evidencePaths": [
+        "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_disclosure_control_policy.json"
+      ],
+      "missingEvidence": [
+        "real aggregate output review",
+        "small-cell suppression report",
+        "public export approval",
+        "no row-level output evidence"
+      ],
+      "nextAction": "Run disclosure review inside the governed workspace after real aggregate outputs are generated.",
+      "blocksL4": true
+    },
+    {
+      "gateId": "RW-G09-real-extraction-and-cohort-flow",
+      "admissionGateRefs": ["MODEL-G5-real-extraction-and-cohort-flow", "MAC-G6-extraction-and-cohort-flow"],
+      "status": "blocked",
+      "l4Effect": "No real extraction, cohort flow, endpoint route counts or aggregate functional-survival distribution can be produced yet.",
+      "evidencePaths": [
+        "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_cohort_flow_endpoint_protocol.json",
+        "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_preoutcome_aggregation_protocol.json"
+      ],
+      "missingEvidence": [
+        "governed extractor",
+        "aggregate cohort-flow output",
+        "endpoint route count output",
+        "missingness table",
+        "suppression report",
+        "source hash of executed input files"
+      ],
+      "nextAction": "Write no real extractor until RW-G02 through RW-G07 have direct evidence.",
+      "blocksL4": true
+    },
+    {
+      "gateId": "RW-G10-validation-and-calibration",
+      "admissionGateRefs": ["MODEL-G7-external-validation-and-calibration", "MAC-G7-validation-calibration"],
+      "status": "blocked",
+      "l4Effect": "No calibrated prediction, validation metric, effect estimate or intervention ranking can be claimed.",
+      "evidencePaths": [
+        "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_calibration_readiness.json",
+        "docs/reference/human-infra-model-admission-candidate-registry.json"
+      ],
+      "missingEvidence": [
+        "development cohort",
+        "validation cohort or resampling plan",
+        "calibration diagnostics",
+        "sensitivity analysis on real aggregate model",
+        "bias/applicability review"
+      ],
+      "nextAction": "Keep calibration blocked until real aggregate extraction and validation evidence exist.",
+      "blocksL4": true
+    },
+    {
+      "gateId": "RW-G11-model-admission-registry-update",
+      "admissionGateRefs": ["MODEL-G2C-model-admission-candidate-registry", "MAC-G8-reporting-and-prohibited-use"],
+      "status": "partial",
+      "l4Effect": "The registry records why current artifacts are L1/L2/L3 only, but no L4 admission row exists.",
+      "evidencePaths": [
+        "docs/reference/human-infra-model-admission-candidate-registry.json"
+      ],
+      "missingEvidence": [
+        "L4 candidate row with passed MAC-G4 through MAC-G8 evidence",
+        "validation/calibration report path",
+        "disclosure-control approval path"
+      ],
+      "nextAction": "Add an L4 candidate only after all upstream runway gates pass.",
+      "blocksL4": true
+    },
+    {
+      "gateId": "RW-G12-individual-use-hard-abort",
+      "admissionGateRefs": ["ABORT-5-individual-output", "L5-individual-decision-support"],
+      "status": "pass",
+      "l4Effect": "Preserves the boundary that even future L4 aggregate models cannot output individual death dates or individual advice.",
+      "evidencePaths": [
+        "docs/reference/human-infra-model-admission-contract.json",
+        "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_calibration_readiness.json"
+      ],
+      "missingEvidence": [],
+      "nextAction": "Keep L5 blocked by default unless external clinical and ethical governance exists outside this repository.",
+      "blocksL4": false
+    }
+  ],
+  "nextRunnableSequence": [
+    "Complete governed NHATS access and controlled workspace execution outside the repository.",
+    "Capture authenticated Colectica variable pages into the existing template with hashes and second review.",
+    "Confirm exact variables, value labels, question text, universe and skip logic.",
+    "Freeze endpoint route classifier and missingness route crosswalk.",
+    "Confirm survey design variables and variance method.",
+    "Only then implement governed aggregate extraction and disclosure review.",
+    "Only after aggregate extraction exists, consider validation and calibration diagnostics for L4 admission."
+  ],
+  "hardBoundaries": [
+    "no raw NHATS data in repository",
+    "no credentials in repository",
+    "no public AI upload of controlled data",
+    "no row-level output",
+    "no individual death-date output",
+    "no individual advice",
+    "no calibration claim before L4 gates pass",
+    "no extraction script from candidate-only fields"
+  ],
+  "summary": {
+    "readinessGates": 12,
+    "pass": 3,
+    "partial": 2,
+    "blocked": 7,
+    "l4AdmissionAllowed": false,
+    "calibratedPredictionAvailable": false,
+    "individualUseAllowed": false
+  }
+}

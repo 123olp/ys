@@ -79,6 +79,7 @@
 - `manual/life_path_nhats_colectica_authenticated_capture_template.json`：NHATS Colectica authenticated capture 模板，记录 9 个 route-field 进入真实变量页复核前必须补齐的证据槽，当前状态为 `template-only-authenticated-capture-not-started`。
 - `manual/life_path_nhats_l2_variable_family_admission_register.json`：NHATS L2 variable-family admission 登记，记录 1 个窄 aggregate estimand 与 6 个 L2 候选变量族，当前状态为 `l2-variable-family-mapping-only-l4-blocked`。
 - `manual/life_path_nhats_preoutcome_aggregation_protocol.json`：NHATS pre-outcome aggregation 协议，记录 8 条 L2-only 聚合规则、7 个合成用例、9 个真实聚合前置证据要求和禁止动作，当前状态为 `protocol-only-preoutcome-rules-frozen-l4-blocked`。
+- `manual/life_path_nhats_l4_readiness_runway.json`：NHATS L4 readiness runway，记录从 L2 设计资产到 L4 aggregate-calibrated research model 之前必须通过的 12 个 readiness gates，当前状态为 `runway-only-l4-blocked`。
 - `../../../../web/src/data/life-path-sensitivity-analysis.json`：由 `run_life_path_sensitivity_analysis.py` 生成的合成敏感性分析输出，记录 48 个一因素扰动结果、场景稳定性摘要、最敏感参数和禁止个体用途边界。
 - `../../../../web/src/data/life-path-nhats-controlled-storage-destruction-validation.json`：由 `validate_nhats_controlled_storage_destruction_plan.py` 生成的 storage/destruction validation 输出，记录计划 hash、acquisition-readiness hash、15 个计划边界检查、partial readiness impact 和 no-download/no-extraction/no-calibration/no-individual-prediction 边界。
 - `../../../../web/src/data/life-path-nhats-synthetic-storage-destruction-drill-validation.json`：由 `validate_nhats_synthetic_storage_destruction_drill.py` 生成的 synthetic drill validation 输出，记录 drill/plan/acquisition-readiness hash、13 个演练边界检查、synthetic-only impact 和 no-download/no-extraction/no-calibration/no-individual-prediction 边界。
@@ -92,6 +93,7 @@
 - `../../../../web/src/data/life-path-nhats-colectica-authenticated-capture-template-validation.json`：由 `validate_nhats_colectica_authenticated_capture_template.py` 生成的 Colectica authenticated capture template validation 输出，记录 template hash、probe / execution / protocol / route-field register hash、9 个 route-field 捕获槽、敏感死亡字段排除和禁止 route classifier / public export / calibration / individual prediction 边界。
 - `../../../../web/src/data/life-path-nhats-l2-variable-family-admission-validation.json`：由 `validate_nhats_l2_variable_family_admission.py` 生成的 L2 variable-family admission validation 输出，记录 first estimand、变量确认矩阵、模型准入契约、候选注册表和 capture template 的 source hash，并确认 6 个变量族仍只允许 L2 映射。
 - `../../../../web/src/data/life-path-nhats-preoutcome-aggregation-validation.json`：由 `validate_nhats_preoutcome_aggregation_protocol.py` 生成的 pre-outcome aggregation validation 输出，记录协议和上游 source hash、8 条聚合规则、7 个合成用例、真实聚合前置证据和禁止真实聚合 / 加权估计 / L4 准入 / 校准 / 个体预测边界。
+- `../../../../web/src/data/life-path-nhats-l4-readiness-runway-validation.json`：由 `validate_nhats_l4_readiness_runway.py` 生成的 L4 readiness runway validation 输出，记录 runway hash、上游 source hash、12 个 readiness gate 计数和 L4/individual-use 继续阻塞边界。
 - `raw/`：采集脚本保存的原始响应。
 - `processed/`：采集脚本生成的 JSONL 索引和汇总。
 - `processed/hagr/`：HAGR 官方 zip 快照解压后的 CSV 文件。

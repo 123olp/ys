@@ -797,7 +797,10 @@
         "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_l2_variable_family_admission_register.json",
         "web/src/data/life-path-nhats-l2-variable-family-admission-validation.json",
         "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_preoutcome_aggregation_protocol.json",
-        "web/src/data/life-path-nhats-preoutcome-aggregation-validation.json"
+        "web/src/data/life-path-nhats-preoutcome-aggregation-validation.json",
+        "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_l4_readiness_runway.json",
+        "domains/c1-boundary-rewriting/longevity-evidence/scripts/validate_nhats_l4_readiness_runway.py",
+        "web/src/data/life-path-nhats-l4-readiness-runway-validation.json"
       ],
       "gates": [
         {
@@ -858,6 +861,19 @@
           ],
           "missingEvidence": [],
           "nextAction": "Use the registry as a blocking control surface; do not promote any L1/L2 reviewed artifact into L4 until governed data access, exact fields, extraction, weighting, validation and calibration gates pass.",
+          "blocks100Percent": false
+        },
+        {
+          "gateId": "MODEL-G2D-l4-readiness-runway",
+          "status": "pass",
+          "requirement": "The NHATS path from L2 design artifacts to L4 aggregate calibrated admission is represented as an auditable gate runway.",
+          "evidence": [
+            "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_l4_readiness_runway.json",
+            "domains/c1-boundary-rewriting/longevity-evidence/scripts/validate_nhats_l4_readiness_runway.py",
+            "web/src/data/life-path-nhats-l4-readiness-runway-validation.json"
+          ],
+          "missingEvidence": [],
+          "nextAction": "Use the runway to sequence governed access, Colectica capture, exact variable confirmation, real aggregate extraction, survey design, disclosure review, validation and calibration without opening L4 early.",
           "blocks100Percent": false
         },
         {
