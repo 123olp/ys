@@ -51,6 +51,7 @@
 - `audit_human_infra_c2_longtail_sixth_batch_source_extraction_queue.py`: verifies that `docs/reference/human-infra-c2-longtail-sixth-batch-source-extraction-queue.json` derives the sixth-batch promotion queue into 24 domain-source extraction tasks with required slots, questions, blocked uses, index links and model-admission boundaries.
 - `audit_human_infra_c2_longtail_sixth_batch_source_extraction_register.py`: verifies that `docs/reference/human-infra-c2-longtail-sixth-batch-source-extraction-register.json` completes all 24/24 C2-LT-B6 source-context extraction rows with required fields, guideline-route/manual-review/source-lineage boundaries, downgrade triggers, blocked uses and index links.
 - `audit_human_infra_c2_longtail_sixth_batch_local_review_register.py`: verifies that `docs/reference/human-infra-c2-longtail-sixth-batch-local-review-register.json` locally reviews all 24/24 C2-LT-B6 extraction rows, preserves seven source-resolution/manual/fulltext/source-lineage issue rows, and keeps artifact/model admission blocked.
+- `audit_human_infra_c2_longtail_sixth_batch_source_resolution_register.py`: verifies that `docs/reference/human-infra-c2-longtail-sixth-batch-source-resolution-register.json` resolves the seven C2-LT-B6 issue rows into 19 official-page, PubMed/PMC, OUP/LWW/AAP or CDC route candidates while keeping manual/fulltext extraction, fresh review, artifacts and model admission blocked.
 - `audit_human_infra_c2_longtail_fifth_batch_source_extraction_queue.py`: verifies that `docs/reference/human-infra-c2-longtail-fifth-batch-source-extraction-queue.json` derives the fifth-batch promotion queue into 24 domain-source extraction tasks with required slots, questions, blocked uses, index links and model-admission boundaries.
 - `audit_human_infra_c2_longtail_fifth_batch_source_extraction_register.py`: verifies that `docs/reference/human-infra-c2-longtail-fifth-batch-source-extraction-register.json` completes all 24/24 C2-LT-B5 source-context extraction rows with required fields, duplicate/no-open-fulltext boundaries, downgrade triggers, blocked uses and index links.
 - `audit_human_infra_c2_longtail_fifth_batch_local_review_register.py`: verifies that `docs/reference/human-infra-c2-longtail-fifth-batch-local-review-register.json` locally reviews all 24/24 C2-LT-B5 extraction rows, preserves eight no-open-fulltext/manual-review or duplicate cross-domain source issue rows, keeps blocked uses complete, and routes only to independent fresh review or source resolution.
@@ -182,6 +183,7 @@ make c2-longtail-sixth-batch-promotion-audit
 make c2-longtail-sixth-batch-source-extraction-audit
 make c2-longtail-sixth-batch-source-extraction-register-audit
 make c2-longtail-sixth-batch-local-review-audit
+make c2-longtail-sixth-batch-source-resolution-audit
 make c2-longtail-fifth-batch-source-extraction-audit
 make c2-longtail-fifth-batch-source-extraction-register-audit
 make c2-longtail-fifth-batch-local-review-audit

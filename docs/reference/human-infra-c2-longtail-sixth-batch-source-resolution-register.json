@@ -1,0 +1,569 @@
+{
+  "schemaVersion": "human-infra.c2-longtail-sixth-batch-source-resolution-register.v1",
+  "registerId": "human-infra-c2-longtail-sixth-batch-source-resolution-register-2026-07-03",
+  "status": "active-c2ltb6-source-resolution-register-independent-fresh-review-required",
+  "purpose": "Resolve the seven C2-LT-B6 local-review issue rows into guideline-route, publisher/manual-review and source-lineage candidates without changing reviewed artifact or model admission status.",
+  "sourceOfTruth": {
+    "sourceExtractionQueue": "docs/reference/human-infra-c2-longtail-sixth-batch-source-extraction-queue.json",
+    "sourceExtractionRegister": "docs/reference/human-infra-c2-longtail-sixth-batch-source-extraction-register.json",
+    "localReviewRegister": "docs/reference/human-infra-c2-longtail-sixth-batch-local-review-register.json",
+    "evidencePolicy": "docs/reference/evidence-policy.md",
+    "maturityGapRegister": "docs/reference/human-infra-maturity-gap-register.json"
+  },
+  "scope": {
+    "batchId": "C2-LT-B6",
+    "resolutionLevel": "c2ltb6-local-review-issue-row-source-resolution-v0.1",
+    "totalLocalReviewRowCount": 24,
+    "issueRowCount": 7,
+    "guidelineRouteIssueCount": 3,
+    "publisherManualReviewIssueCount": 4,
+    "sourceLineageIssueCount": 2,
+    "resolutionCandidateCount": 19,
+    "nonClaims": [
+      "This register does not change any source into reviewed evidence.",
+      "This register does not create reviewed artifacts, Source Cards, variable cards, endpoint cards, uncertainty cards, transfer-boundary cards or downgrade rows.",
+      "This register does not authorize model admission, individual advice, individual death-date output, clinical validity claims or intervention ranking.",
+      "This register only prepares guideline-route, publisher/manual-review and source-lineage candidates that must pass manual/fulltext extraction and independent fresh review before bounded artifact use."
+    ]
+  },
+  "verificationSources": [
+    {
+      "verificationId": "C2LTB6-SR-VERIFY-ESHRE-POI-20260703",
+      "title": "ESHRE official 2024 premature ovarian insufficiency guideline route and open guideline article route",
+      "url": "https://www.eshre.eu/guidelines-and-legal/guidelines/management-of-premature-ovarian-insufficiency.aspx",
+      "sourceType": "professional-society-guideline-page-and-fulltext-route-check",
+      "useBoundary": "Use only for POI guideline identity, document-version route and fulltext/manual review planning; not for individual diagnosis, hormone therapy advice, fertility prognosis or model admission."
+    },
+    {
+      "verificationId": "C2LTB6-SR-VERIFY-ACOG-POI-20260703",
+      "title": "ACOG Committee Opinion No. 605 route for primary ovarian insufficiency in adolescents and young women",
+      "url": "https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2014/07/primary-ovarian-insufficiency-in-adolescents-and-young-women",
+      "sourceType": "professional-society-committee-opinion-page-and-pubmed-route-check",
+      "useBoundary": "Use only for ACOG source identity, committee-opinion route and manual fulltext planning; not for individual POI care advice or calibrated risk claims."
+    },
+    {
+      "verificationId": "C2LTB6-SR-VERIFY-PCOS-GUIDELINE-LINEAGE-20260703",
+      "title": "Monash PCOS/PMOS guideline platform and 2023 international guideline article lineage route",
+      "url": "https://www.monash.edu/medicine/mchri/pcos/guideline",
+      "sourceType": "guideline-implementation-platform-and-open-article-lineage-check",
+      "useBoundary": "Use only to distinguish implementation-platform provenance from the underlying 2023 international guideline article; do not double count independent evidence."
+    },
+    {
+      "verificationId": "C2LTB6-SR-VERIFY-ENDOMETRIOSIS-GUIDELINE-LINEAGE-20260703",
+      "title": "ESHRE endometriosis guideline page, OUP Human Reproduction Open article and PubMed route lineage check",
+      "url": "https://academic.oup.com/hropen/article/2022/2/hoac009/6537540",
+      "sourceType": "guideline-page-open-article-pubmed-lineage-check",
+      "useBoundary": "Use only to preserve ESHRE endometriosis guideline route/provenance and prevent duplicate counting with the OUP article."
+    },
+    {
+      "verificationId": "C2LTB6-SR-VERIFY-ACOG-EPL-20260703",
+      "title": "ACOG Practice Bulletin No. 200 Early Pregnancy Loss official page, PubMed and summary route check",
+      "url": "https://www.acog.org/clinical/clinical-guidance/practice-bulletin/articles/2018/11/early-pregnancy-loss",
+      "sourceType": "professional-society-practice-bulletin-page-pubmed-summary-route-check",
+      "useBoundary": "Use only for early-pregnancy-loss practice-bulletin source identity and manual fulltext planning; not for individual diagnosis or management advice."
+    },
+    {
+      "verificationId": "C2LTB6-SR-VERIFY-AAP-BREASTFEEDING-20260703",
+      "title": "AAP Pediatrics policy statement route for Breastfeeding and the Use of Human Milk",
+      "url": "https://publications.aap.org/pediatrics/article/150/1/e2022057988/188347/Policy-Statement-Breastfeeding-and-the-Use-of",
+      "sourceType": "publisher-policy-article-and-pubmed-route-check",
+      "useBoundary": "Use only for AAP policy source identity and manual review planning; not for individual feeding advice or intervention ranking."
+    },
+    {
+      "verificationId": "C2LTB6-SR-VERIFY-AAP-LEAD-20260703",
+      "title": "AAP Pediatrics policy statement route for Prevention of Childhood Lead Toxicity plus PubMed/CDC policy-resource route",
+      "url": "https://publications.aap.org/pediatrics/article/138/1/e20161493/52600/Prevention-of-Childhood-Lead-Toxicity",
+      "sourceType": "publisher-policy-article-pubmed-public-health-route-check",
+      "useBoundary": "Use only for source identity, policy route and manual review planning; not for interpreting individual blood lead results or clinical advice."
+    }
+  ],
+  "blockedUses": [
+    "calibrated-prediction",
+    "individual-advice",
+    "individual-death-date-output",
+    "intervention-ranking",
+    "clinical-validity-claim",
+    "domain-claim-upgrade"
+  ],
+  "resolutionRows": [
+    {
+      "resolutionId": "C2LTB6-SRR-001",
+      "taskId": "C2LTB6-EXT-007",
+      "domainId": "primary-ovarian-insufficiency-hormone-fertility-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/primary-ovarian-insufficiency-hormone-fertility-continuity",
+      "sourceRefId": "C2LTB6-SRC-04-1",
+      "originalRegisteredTitle": "Evidence-based guideline: Premature Ovarian Insufficiency.",
+      "originalRegisteredUrl": "https://www.eshre.eu/Guidelines-and-Legal/Guidelines/POI",
+      "localReviewIssueType": "guideline-landing-page-full-guideline-route-needed",
+      "currentSourceCheck": {
+        "observedTitle": "ESHRE page identifies the updated POI guideline route and should replace the older generic landing URL for source-route anchoring.",
+        "verificationEvidence": "C2LTB6-SR-VERIFY-ESHRE-POI-20260703",
+        "result": "source-route-candidate-prepared-not-fresh-reviewed"
+      },
+      "sourceResolutionDecision": "Resolve the ESHRE premature ovarian insufficiency guideline landing page to the exact guideline document/version and extract recommendation scope before artifact fill.",
+      "sourceResolutionStatus": "candidate-resolution-prepared-not-fresh-reviewed",
+      "sourceResolutionCandidates": [
+        {
+          "candidateId": "C2LTB6-SRR-001-CAND-01",
+          "candidateRole": "official-eshre-guideline-page-route",
+          "title": "Guideline on premature ovarian insufficiency",
+          "url": "https://www.eshre.eu/guidelines-and-legal/guidelines/management-of-premature-ovarian-insufficiency.aspx",
+          "sourceType": "professional-society-guideline-page-route",
+          "sourceIdentityStatus": "official-eshre-2024-poi-guideline-page-identified-not-fresh-reviewed",
+          "verificationEvidence": "C2LTB6-SR-VERIFY-ESHRE-POI-20260703",
+          "resolutionFinding": "ESHRE page identifies the updated POI guideline route and should replace the older generic landing URL for source-route anchoring.",
+          "useBoundary": "Use only for source-route resolution, manual/fulltext extraction planning and independent fresh review; no artifact fill, individual advice, calibrated risk, intervention ranking or model admission."
+        },
+        {
+          "candidateId": "C2LTB6-SRR-001-CAND-02",
+          "candidateRole": "open-fulltext-guideline-article-route",
+          "title": "Evidence-based guideline: premature ovarian insufficiency",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11631070/",
+          "sourceType": "open-fulltext-guideline-article-route",
+          "sourceIdentityStatus": "pmc-open-fulltext-route-identified-not-fresh-reviewed",
+          "verificationEvidence": "C2LTB6-SR-VERIFY-ESHRE-POI-20260703",
+          "resolutionFinding": "PMC route identifies the open guideline article for later exact extraction of POI recommendation scope.",
+          "useBoundary": "Use only for source-route resolution, manual/fulltext extraction planning and independent fresh review; no artifact fill, individual advice, calibrated risk, intervention ranking or model admission."
+        },
+        {
+          "candidateId": "C2LTB6-SRR-001-CAND-03",
+          "candidateRole": "asrm-official-guideline-page-route",
+          "title": "Evidence-based guideline: Premature Ovarian Insufficiency (2024)",
+          "url": "https://www.asrm.org/practice-guidance/practice-committee-documents/evidence-based-guideline-premature-ovarian-insufficiency--2024/",
+          "sourceType": "collaborating-society-guideline-page-route",
+          "sourceIdentityStatus": "asrm-official-2024-poi-guideline-route-identified-not-fresh-reviewed",
+          "verificationEvidence": "C2LTB6-SR-VERIFY-ESHRE-POI-20260703",
+          "resolutionFinding": "ASRM page is a companion official route for the same POI guideline family and must be lineage-normalized before evidence counting.",
+          "useBoundary": "Use only for source-route resolution, manual/fulltext extraction planning and independent fresh review; no artifact fill, individual advice, calibrated risk, intervention ranking or model admission."
+        }
+      ],
+      "requiredFreshReviewActions": [
+        "Manually review the 2024 ESHRE/ASRM/PMC guideline source route and record exact POI recommendation-scope, version and document family.",
+        "Normalize the older generic ESHRE POI landing URL to the updated guideline route before evidence counting.",
+        "Separate POI endocrine/fertility/bone/cardiometabolic framing from individual diagnosis, fertility prognosis or hormone therapy advice.",
+        "Run independent fresh review before bounded artifact creation.",
+        "Keep model admission and prohibited individual uses blocked."
+      ],
+      "artifactPromotionDecision": "blocked-pending-source-resolution-manual-fulltext-or-independent-fresh-review",
+      "modelAdmissionDecision": "blocked-pending-source-resolution-independent-fresh-review-reviewed-artifact-and-model-admission-gates",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ]
+    },
+    {
+      "resolutionId": "C2LTB6-SRR-002",
+      "taskId": "C2LTB6-EXT-008",
+      "domainId": "primary-ovarian-insufficiency-hormone-fertility-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/primary-ovarian-insufficiency-hormone-fertility-continuity",
+      "sourceRefId": "C2LTB6-SRC-04-2",
+      "originalRegisteredTitle": "Primary Ovarian Insufficiency in Adolescents and Young Women.",
+      "originalRegisteredUrl": "https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2014/07/primary-ovarian-insufficiency-in-adolescents-and-young-women",
+      "localReviewIssueType": "publisher-route-manual-fulltext-needed",
+      "currentSourceCheck": {
+        "observedTitle": "ACOG page is the official Committee Opinion route but still needs manual exact-text/source-status review.",
+        "verificationEvidence": "C2LTB6-SR-VERIFY-ACOG-POI-20260703",
+        "result": "source-route-candidate-prepared-not-fresh-reviewed"
+      },
+      "sourceResolutionDecision": "Extract exact ACOG committee-opinion context for adolescents and young women with POI, including age-specific boundaries and current-status/version checks.",
+      "sourceResolutionStatus": "candidate-resolution-prepared-not-fresh-reviewed",
+      "sourceResolutionCandidates": [
+        {
+          "candidateId": "C2LTB6-SRR-002-CAND-01",
+          "candidateRole": "acog-official-committee-opinion-page-route",
+          "title": "Primary Ovarian Insufficiency in Adolescents and Young Women",
+          "url": "https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2014/07/primary-ovarian-insufficiency-in-adolescents-and-young-women",
+          "sourceType": "professional-society-committee-opinion-page-route",
+          "sourceIdentityStatus": "acog-official-route-manual-fulltext-needed-not-fresh-reviewed",
+          "verificationEvidence": "C2LTB6-SR-VERIFY-ACOG-POI-20260703",
+          "resolutionFinding": "ACOG page is the official Committee Opinion route but still needs manual exact-text/source-status review.",
+          "useBoundary": "Use only for source-route resolution, manual/fulltext extraction planning and independent fresh review; no artifact fill, individual advice, calibrated risk, intervention ranking or model admission."
+        },
+        {
+          "candidateId": "C2LTB6-SRR-002-CAND-02",
+          "candidateRole": "pubmed-bibliographic-route",
+          "title": "Committee opinion no. 605: primary ovarian insufficiency in adolescents and young women",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/24945456/",
+          "sourceType": "bibliographic-pubmed-route",
+          "sourceIdentityStatus": "pubmed-route-identified-not-fulltext-not-fresh-reviewed",
+          "verificationEvidence": "C2LTB6-SR-VERIFY-ACOG-POI-20260703",
+          "resolutionFinding": "PubMed route preserves PMID 24945456 bibliographic identity for the ACOG committee opinion before manual fulltext review.",
+          "useBoundary": "Use only for source-route resolution, manual/fulltext extraction planning and independent fresh review; no artifact fill, individual advice, calibrated risk, intervention ranking or model admission."
+        }
+      ],
+      "requiredFreshReviewActions": [
+        "Manually review the ACOG Committee Opinion route and PubMed identity for exact adolescent/young-woman POI context.",
+        "Verify current status/reaffirmation or replacement before any artifact fill.",
+        "Re-extract endpoint, population, uncertainty, transfer boundary, downgrade triggers and model position from exact source context.",
+        "Run independent fresh review before bounded artifact creation.",
+        "Keep model admission and prohibited individual uses blocked."
+      ],
+      "artifactPromotionDecision": "blocked-pending-source-resolution-manual-fulltext-or-independent-fresh-review",
+      "modelAdmissionDecision": "blocked-pending-source-resolution-independent-fresh-review-reviewed-artifact-and-model-admission-gates",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ]
+    },
+    {
+      "resolutionId": "C2LTB6-SRR-003",
+      "taskId": "C2LTB6-EXT-010",
+      "domainId": "polycystic-ovary-syndrome-metabolic-reproductive-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/polycystic-ovary-syndrome-metabolic-reproductive-continuity",
+      "sourceRefId": "C2LTB6-SRC-05-2",
+      "originalRegisteredTitle": "International evidence-based guideline for the assessment and management of polycystic ovary syndrome.",
+      "originalRegisteredUrl": "https://www.monash.edu/medicine/mchri/pcos/guideline",
+      "localReviewIssueType": "guideline-implementation-route-source-lineage-needed",
+      "currentSourceCheck": {
+        "observedTitle": "Monash page is an implementation/provenance platform and should not be counted independently from the underlying guideline article.",
+        "verificationEvidence": "C2LTB6-SR-VERIFY-PCOS-GUIDELINE-LINEAGE-20260703",
+        "result": "source-route-candidate-prepared-not-fresh-reviewed"
+      },
+      "sourceResolutionDecision": "Link the Monash PCOS guideline implementation route to the underlying 2023 international guideline record and prevent double counting with EXT-009.",
+      "sourceResolutionStatus": "candidate-resolution-prepared-not-fresh-reviewed",
+      "sourceResolutionCandidates": [
+        {
+          "candidateId": "C2LTB6-SRR-003-CAND-01",
+          "candidateRole": "monash-guideline-implementation-platform-route",
+          "title": "PCOS Guideline/ PMOS Guideline",
+          "url": "https://www.monash.edu/medicine/mchri/pcos/guideline",
+          "sourceType": "guideline-implementation-platform-route",
+          "sourceIdentityStatus": "monash-platform-route-identified-not-independent-evidence",
+          "verificationEvidence": "C2LTB6-SR-VERIFY-PCOS-GUIDELINE-LINEAGE-20260703",
+          "resolutionFinding": "Monash page is an implementation/provenance platform and should not be counted independently from the underlying guideline article.",
+          "useBoundary": "Use only for source-route resolution, manual/fulltext extraction planning and independent fresh review; no artifact fill, individual advice, calibrated risk, intervention ranking or model admission."
+        },
+        {
+          "candidateId": "C2LTB6-SRR-003-CAND-02",
+          "candidateRole": "open-fulltext-guideline-article-route",
+          "title": "Recommendations From the 2023 International Evidence-based Guideline for the Assessment and Management of Polycystic Ovary Syndrome",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10505534/",
+          "sourceType": "open-fulltext-guideline-article-route",
+          "sourceIdentityStatus": "pmc-open-guideline-article-route-identified-not-fresh-reviewed",
+          "verificationEvidence": "C2LTB6-SR-VERIFY-PCOS-GUIDELINE-LINEAGE-20260703",
+          "resolutionFinding": "PMC route identifies the underlying 2023 PCOS guideline article; EXT-010 should be lineage-linked to EXT-009 before evidence counting.",
+          "useBoundary": "Use only for source-route resolution, manual/fulltext extraction planning and independent fresh review; no artifact fill, individual advice, calibrated risk, intervention ranking or model admission."
+        },
+        {
+          "candidateId": "C2LTB6-SRR-003-CAND-03",
+          "candidateRole": "pubmed-bibliographic-route",
+          "title": "Recommendations from the 2023 International Evidence-based Guideline for the Assessment and Management of Polycystic Ovary Syndrome",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37580314/",
+          "sourceType": "bibliographic-pubmed-route",
+          "sourceIdentityStatus": "pubmed-route-identified-not-fresh-reviewed",
+          "verificationEvidence": "C2LTB6-SR-VERIFY-PCOS-GUIDELINE-LINEAGE-20260703",
+          "resolutionFinding": "PubMed route preserves bibliographic identity for the underlying 2023 guideline article.",
+          "useBoundary": "Use only for source-route resolution, manual/fulltext extraction planning and independent fresh review; no artifact fill, individual advice, calibrated risk, intervention ranking or model admission."
+        }
+      ],
+      "requiredFreshReviewActions": [
+        "Link the Monash implementation platform to the underlying 2023 international guideline article and EXT-009 lineage.",
+        "Decide whether EXT-010 is retained as implementation/provenance only or collapsed under the underlying guideline source for evidence counting.",
+        "If retained, re-extract only guideline infrastructure and implementation-channel transfer boundaries.",
+        "Run independent fresh review before bounded artifact creation.",
+        "Keep model admission and prohibited individual uses blocked."
+      ],
+      "artifactPromotionDecision": "blocked-pending-source-resolution-manual-fulltext-or-independent-fresh-review",
+      "modelAdmissionDecision": "blocked-pending-source-resolution-independent-fresh-review-reviewed-artifact-and-model-admission-gates",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ]
+    },
+    {
+      "resolutionId": "C2LTB6-SRR-004",
+      "taskId": "C2LTB6-EXT-012",
+      "domainId": "endometriosis-pelvic-pain-fertility-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/endometriosis-pelvic-pain-fertility-continuity",
+      "sourceRefId": "C2LTB6-SRC-06-2",
+      "originalRegisteredTitle": "Endometriosis guideline.",
+      "originalRegisteredUrl": "https://www.eshre.eu/Guidelines-and-Legal/Guidelines/Endometriosis-guideline",
+      "localReviewIssueType": "guideline-landing-page-source-lineage-needed",
+      "currentSourceCheck": {
+        "observedTitle": "ESHRE page is a route/provenance anchor for the same guideline family as the OUP article and must not be double counted.",
+        "verificationEvidence": "C2LTB6-SR-VERIFY-ENDOMETRIOSIS-GUIDELINE-LINEAGE-20260703",
+        "result": "source-route-candidate-prepared-not-fresh-reviewed"
+      },
+      "sourceResolutionDecision": "Link the ESHRE endometriosis guideline landing page to the OUP guideline article route and preserve it as provenance/implementation support rather than independent evidence.",
+      "sourceResolutionStatus": "candidate-resolution-prepared-not-fresh-reviewed",
+      "sourceResolutionCandidates": [
+        {
+          "candidateId": "C2LTB6-SRR-004-CAND-01",
+          "candidateRole": "eshre-official-guideline-page-route",
+          "title": "Endometriosis guideline",
+          "url": "https://www.eshre.eu/Guidelines-and-Legal/Guidelines/Endometriosis-guideline",
+          "sourceType": "professional-society-guideline-page-route",
+          "sourceIdentityStatus": "official-eshre-page-identified-not-independent-evidence",
+          "verificationEvidence": "C2LTB6-SR-VERIFY-ENDOMETRIOSIS-GUIDELINE-LINEAGE-20260703",
+          "resolutionFinding": "ESHRE page is a route/provenance anchor for the same guideline family as the OUP article and must not be double counted.",
+          "useBoundary": "Use only for source-route resolution, manual/fulltext extraction planning and independent fresh review; no artifact fill, individual advice, calibrated risk, intervention ranking or model admission."
+        },
+        {
+          "candidateId": "C2LTB6-SRR-004-CAND-02",
+          "candidateRole": "oup-open-guideline-article-route",
+          "title": "ESHRE guideline: endometriosis",
+          "url": "https://academic.oup.com/hropen/article/2022/2/hoac009/6537540",
+          "sourceType": "open-guideline-article-route",
+          "sourceIdentityStatus": "oup-human-reproduction-open-route-identified-not-fresh-reviewed",
+          "verificationEvidence": "C2LTB6-SR-VERIFY-ENDOMETRIOSIS-GUIDELINE-LINEAGE-20260703",
+          "resolutionFinding": "OUP Human Reproduction Open article route is the source-text candidate for later exact guideline extraction.",
+          "useBoundary": "Use only for source-route resolution, manual/fulltext extraction planning and independent fresh review; no artifact fill, individual advice, calibrated risk, intervention ranking or model admission."
+        },
+        {
+          "candidateId": "C2LTB6-SRR-004-CAND-03",
+          "candidateRole": "pubmed-bibliographic-route",
+          "title": "ESHRE guideline: endometriosis",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35350465/",
+          "sourceType": "bibliographic-pubmed-route",
+          "sourceIdentityStatus": "pubmed-route-identified-not-fresh-reviewed",
+          "verificationEvidence": "C2LTB6-SR-VERIFY-ENDOMETRIOSIS-GUIDELINE-LINEAGE-20260703",
+          "resolutionFinding": "PubMed route preserves bibliographic identity and recommendation count context before fresh review.",
+          "useBoundary": "Use only for source-route resolution, manual/fulltext extraction planning and independent fresh review; no artifact fill, individual advice, calibrated risk, intervention ranking or model admission."
+        }
+      ],
+      "requiredFreshReviewActions": [
+        "Link the ESHRE endometriosis landing page to the OUP Human Reproduction Open guideline article and PubMed route.",
+        "Mark the ESHRE page as route/provenance support rather than a second independent evidence source unless fresh review proves distinct content.",
+        "Re-extract only route/provenance and implementation-channel boundaries from the page.",
+        "Run independent fresh review before bounded artifact creation.",
+        "Keep model admission and prohibited individual uses blocked."
+      ],
+      "artifactPromotionDecision": "blocked-pending-source-resolution-manual-fulltext-or-independent-fresh-review",
+      "modelAdmissionDecision": "blocked-pending-source-resolution-independent-fresh-review-reviewed-artifact-and-model-admission-gates",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ]
+    },
+    {
+      "resolutionId": "C2LTB6-SRR-005",
+      "taskId": "C2LTB6-EXT-013",
+      "domainId": "pregnancy-loss-stillbirth-bereavement-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/pregnancy-loss-stillbirth-bereavement-continuity",
+      "sourceRefId": "C2LTB6-SRC-07-1",
+      "originalRegisteredTitle": "Early Pregnancy Loss.",
+      "originalRegisteredUrl": "https://www.acog.org/clinical/clinical-guidance/practice-bulletin/articles/2018/11/early-pregnancy-loss",
+      "localReviewIssueType": "publisher-route-manual-fulltext-needed",
+      "currentSourceCheck": {
+        "observedTitle": "ACOG page is the official Practice Bulletin route but requires exact text/status review before artifact use.",
+        "verificationEvidence": "C2LTB6-SR-VERIFY-ACOG-EPL-20260703",
+        "result": "source-route-candidate-prepared-not-fresh-reviewed"
+      },
+      "sourceResolutionDecision": "Extract exact ACOG early pregnancy loss bulletin context, including diagnostic/management scope and version status, before artifact fill.",
+      "sourceResolutionStatus": "candidate-resolution-prepared-not-fresh-reviewed",
+      "sourceResolutionCandidates": [
+        {
+          "candidateId": "C2LTB6-SRR-005-CAND-01",
+          "candidateRole": "acog-official-practice-bulletin-page-route",
+          "title": "Early Pregnancy Loss",
+          "url": "https://www.acog.org/clinical/clinical-guidance/practice-bulletin/articles/2018/11/early-pregnancy-loss",
+          "sourceType": "professional-society-practice-bulletin-page-route",
+          "sourceIdentityStatus": "acog-official-route-manual-fulltext-needed-not-fresh-reviewed",
+          "verificationEvidence": "C2LTB6-SR-VERIFY-ACOG-EPL-20260703",
+          "resolutionFinding": "ACOG page is the official Practice Bulletin route but requires exact text/status review before artifact use.",
+          "useBoundary": "Use only for source-route resolution, manual/fulltext extraction planning and independent fresh review; no artifact fill, individual advice, calibrated risk, intervention ranking or model admission."
+        },
+        {
+          "candidateId": "C2LTB6-SRR-005-CAND-02",
+          "candidateRole": "pubmed-bibliographic-route",
+          "title": "ACOG Practice Bulletin No. 200: Early Pregnancy Loss",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30157093/",
+          "sourceType": "bibliographic-pubmed-route",
+          "sourceIdentityStatus": "pubmed-route-identified-not-fulltext-not-fresh-reviewed",
+          "verificationEvidence": "C2LTB6-SR-VERIFY-ACOG-EPL-20260703",
+          "resolutionFinding": "PubMed route preserves PMID 30157093 bibliographic identity for Practice Bulletin No. 200.",
+          "useBoundary": "Use only for source-route resolution, manual/fulltext extraction planning and independent fresh review; no artifact fill, individual advice, calibrated risk, intervention ranking or model admission."
+        },
+        {
+          "candidateId": "C2LTB6-SRR-005-CAND-03",
+          "candidateRole": "journal-summary-route",
+          "title": "ACOG Practice Bulletin No. 200 Summary: Early Pregnancy Loss",
+          "url": "https://journals.lww.com/greenjournal/fulltext/2018/11000/acog_practice_bulletin_no__200_summary__early.36.aspx",
+          "sourceType": "journal-summary-route",
+          "sourceIdentityStatus": "lww-summary-route-identified-not-full-practice-bulletin",
+          "verificationEvidence": "C2LTB6-SR-VERIFY-ACOG-EPL-20260703",
+          "resolutionFinding": "LWW summary route can help identify the bulletin family but does not replace full Practice Bulletin manual review.",
+          "useBoundary": "Use only for source-route resolution, manual/fulltext extraction planning and independent fresh review; no artifact fill, individual advice, calibrated risk, intervention ranking or model admission."
+        }
+      ],
+      "requiredFreshReviewActions": [
+        "Manually review the ACOG Practice Bulletin route and PubMed identity for exact early pregnancy loss scope.",
+        "Treat the LWW summary as source-family/summary route only unless exact full bulletin context is available.",
+        "Separate diagnosis/management vocabulary from individual clinical advice.",
+        "Run independent fresh review before bounded artifact creation.",
+        "Keep model admission and prohibited individual uses blocked."
+      ],
+      "artifactPromotionDecision": "blocked-pending-source-resolution-manual-fulltext-or-independent-fresh-review",
+      "modelAdmissionDecision": "blocked-pending-source-resolution-independent-fresh-review-reviewed-artifact-and-model-admission-gates",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ]
+    },
+    {
+      "resolutionId": "C2LTB6-SRR-006",
+      "taskId": "C2LTB6-EXT-015",
+      "domainId": "lactation-breastfeeding-support-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/lactation-breastfeeding-support-continuity",
+      "sourceRefId": "C2LTB6-SRC-08-1",
+      "originalRegisteredTitle": "Policy Statement: Breastfeeding and the Use of Human Milk.",
+      "originalRegisteredUrl": "https://publications.aap.org/pediatrics/article/150/1/e2022057988/188347/Policy-Statement-Breastfeeding-and-the-Use-of",
+      "localReviewIssueType": "publisher-policy-route-manual-review-needed",
+      "currentSourceCheck": {
+        "observedTitle": "AAP Pediatrics article route is the publisher route for policy-statement review before artifact fill.",
+        "verificationEvidence": "C2LTB6-SR-VERIFY-AAP-BREASTFEEDING-20260703",
+        "result": "source-route-candidate-prepared-not-fresh-reviewed"
+      },
+      "sourceResolutionDecision": "Extract exact AAP breastfeeding policy statement context for human milk, lactation support and implementation boundaries before artifact fill.",
+      "sourceResolutionStatus": "candidate-resolution-prepared-not-fresh-reviewed",
+      "sourceResolutionCandidates": [
+        {
+          "candidateId": "C2LTB6-SRR-006-CAND-01",
+          "candidateRole": "aap-publisher-policy-article-route",
+          "title": "Policy Statement: Breastfeeding and the Use of Human Milk",
+          "url": "https://publications.aap.org/pediatrics/article/150/1/e2022057988/188347/Policy-Statement-Breastfeeding-and-the-Use-of",
+          "sourceType": "publisher-policy-article-route",
+          "sourceIdentityStatus": "aap-pediatrics-policy-route-identified-not-fresh-reviewed",
+          "verificationEvidence": "C2LTB6-SR-VERIFY-AAP-BREASTFEEDING-20260703",
+          "resolutionFinding": "AAP Pediatrics article route is the publisher route for policy-statement review before artifact fill.",
+          "useBoundary": "Use only for source-route resolution, manual/fulltext extraction planning and independent fresh review; no artifact fill, individual advice, calibrated risk, intervention ranking or model admission."
+        },
+        {
+          "candidateId": "C2LTB6-SRR-006-CAND-02",
+          "candidateRole": "pubmed-bibliographic-route",
+          "title": "Policy Statement: Breastfeeding and the Use of Human Milk",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35921640/",
+          "sourceType": "bibliographic-pubmed-route",
+          "sourceIdentityStatus": "pubmed-route-identified-not-fulltext-not-fresh-reviewed",
+          "verificationEvidence": "C2LTB6-SR-VERIFY-AAP-BREASTFEEDING-20260703",
+          "resolutionFinding": "PubMed route preserves PMID 35921640 bibliographic identity for the AAP policy statement.",
+          "useBoundary": "Use only for source-route resolution, manual/fulltext extraction planning and independent fresh review; no artifact fill, individual advice, calibrated risk, intervention ranking or model admission."
+        }
+      ],
+      "requiredFreshReviewActions": [
+        "Manually review the AAP Pediatrics policy statement route and PubMed identity for exact breastfeeding/human-milk policy context.",
+        "Separate policy-level infant nutrition and lactation-support framing from individual feeding judgment or advice.",
+        "Re-extract endpoint, population, uncertainty, transfer boundary, downgrade triggers and model position from exact article context.",
+        "Run independent fresh review before bounded artifact creation.",
+        "Keep model admission and prohibited individual uses blocked."
+      ],
+      "artifactPromotionDecision": "blocked-pending-source-resolution-manual-fulltext-or-independent-fresh-review",
+      "modelAdmissionDecision": "blocked-pending-source-resolution-independent-fresh-review-reviewed-artifact-and-model-admission-gates",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ]
+    },
+    {
+      "resolutionId": "C2LTB6-SRR-007",
+      "taskId": "C2LTB6-EXT-020",
+      "domainId": "pediatric-lead-screening-environmental-followup-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/pediatric-lead-screening-environmental-followup-continuity",
+      "sourceRefId": "C2LTB6-SRC-10-2",
+      "originalRegisteredTitle": "Prevention of Childhood Lead Toxicity.",
+      "originalRegisteredUrl": "https://publications.aap.org/pediatrics/article/138/1/e20161493/52617/Prevention-of-Childhood-Lead-Toxicity",
+      "localReviewIssueType": "publisher-policy-route-manual-review-needed",
+      "currentSourceCheck": {
+        "observedTitle": "AAP Pediatrics article route identifies the policy statement; original URL should normalize to the canonical publisher route before manual review.",
+        "verificationEvidence": "C2LTB6-SR-VERIFY-AAP-LEAD-20260703",
+        "result": "source-route-candidate-prepared-not-fresh-reviewed"
+      },
+      "sourceResolutionDecision": "Extract exact AAP childhood lead toxicity prevention policy context, including environmental prevention and pediatric neurodevelopment boundaries before artifact fill.",
+      "sourceResolutionStatus": "candidate-resolution-prepared-not-fresh-reviewed",
+      "sourceResolutionCandidates": [
+        {
+          "candidateId": "C2LTB6-SRR-007-CAND-01",
+          "candidateRole": "aap-publisher-policy-article-route",
+          "title": "Prevention of Childhood Lead Toxicity",
+          "url": "https://publications.aap.org/pediatrics/article/138/1/e20161493/52600/Prevention-of-Childhood-Lead-Toxicity",
+          "sourceType": "publisher-policy-article-route",
+          "sourceIdentityStatus": "aap-pediatrics-policy-route-identified-not-fresh-reviewed",
+          "verificationEvidence": "C2LTB6-SR-VERIFY-AAP-LEAD-20260703",
+          "resolutionFinding": "AAP Pediatrics article route identifies the policy statement; original URL should normalize to the canonical publisher route before manual review.",
+          "useBoundary": "Use only for source-route resolution, manual/fulltext extraction planning and independent fresh review; no artifact fill, individual advice, calibrated risk, intervention ranking or model admission."
+        },
+        {
+          "candidateId": "C2LTB6-SRR-007-CAND-02",
+          "candidateRole": "pubmed-bibliographic-route",
+          "title": "Prevention of Childhood Lead Toxicity",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/27325637/",
+          "sourceType": "bibliographic-pubmed-route",
+          "sourceIdentityStatus": "pubmed-route-identified-not-fulltext-not-fresh-reviewed",
+          "verificationEvidence": "C2LTB6-SR-VERIFY-AAP-LEAD-20260703",
+          "resolutionFinding": "PubMed route preserves PMID 27325637 bibliographic identity for the AAP policy statement.",
+          "useBoundary": "Use only for source-route resolution, manual/fulltext extraction planning and independent fresh review; no artifact fill, individual advice, calibrated risk, intervention ranking or model admission."
+        },
+        {
+          "candidateId": "C2LTB6-SRR-007-CAND-03",
+          "candidateRole": "cdc-policy-resource-route",
+          "title": "Policy Resources | Childhood Lead Poisoning Prevention",
+          "url": "https://www.cdc.gov/lead-prevention/php/policy-resources/index.html",
+          "sourceType": "public-health-policy-resource-route",
+          "sourceIdentityStatus": "cdc-policy-resource-route-references-aap-policy-not-independent-source",
+          "verificationEvidence": "C2LTB6-SR-VERIFY-AAP-LEAD-20260703",
+          "resolutionFinding": "CDC policy-resource route references the AAP policy statement and can support source-route verification only, not independent evidence counting.",
+          "useBoundary": "Use only for source-route resolution, manual/fulltext extraction planning and independent fresh review; no artifact fill, individual advice, calibrated risk, intervention ranking or model admission."
+        }
+      ],
+      "requiredFreshReviewActions": [
+        "Normalize the AAP Pediatrics childhood lead toxicity URL to the canonical publisher article route and preserve the PubMed identity.",
+        "Treat CDC policy resources as route/reference support, not independent evidence for the AAP policy statement.",
+        "Separate environmental prevention and pediatric neurodevelopment boundary framing from individual blood lead interpretation.",
+        "Run independent fresh review before bounded artifact creation.",
+        "Keep model admission and prohibited individual uses blocked."
+      ],
+      "artifactPromotionDecision": "blocked-pending-source-resolution-manual-fulltext-or-independent-fresh-review",
+      "modelAdmissionDecision": "blocked-pending-source-resolution-independent-fresh-review-reviewed-artifact-and-model-admission-gates",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ]
+    }
+  ],
+  "requiredNextArtifacts": [
+    "c2ltb6-manual-fulltext-extraction-register-for-publisher-and-guideline-route-rows",
+    "c2ltb6-independent-fresh-review-protocol-for-eligible-non-issue-and-resolved-issue-rows",
+    "c2ltb6-independent-fresh-review-verdict-register",
+    "c2ltb6-reviewed-card-artifact-register-only-after-fresh-review",
+    "updated-model-admission-candidate-registry-only-if-reviewed-artifact-gates-pass",
+    "no-calibrated-model-admission-until-real-data-estimand-validation-and-calibration-gates-pass"
+  ],
+  "modelAdmissionDecision": "blocked-source-resolution-prepared-but-manual-fulltext-independent-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+  "indexRequirements": [
+    "README.md must link this source-resolution register.",
+    "AGENTS.md must describe this register boundary if root architecture text changes.",
+    "docs/AGENTS.md must list this register under docs/reference.",
+    "docs/reference/README.md must list this register.",
+    "docs/reference/human-infra-maturity-roadmap.md must mention this register and its audit target.",
+    "tools/README.md must list the audit command.",
+    "tools/AGENTS.md must describe the audit script boundary."
+  ]
+}
