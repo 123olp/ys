@@ -228,6 +228,7 @@ docs/
 │   ├── human-infra-c2-longtail-seventh-batch-source-resolution-register.json
 │   ├── human-infra-c2-longtail-seventh-batch-manual-fulltext-extraction-register.json
 │   ├── human-infra-c2-longtail-seventh-batch-manual-fulltext-fresh-review-verdict-register.json
+│   ├── human-infra-c2-longtail-seventh-batch-manual-fulltext-reviewed-card-artifact-register.json
 │   ├── human-infra-c2-longtail-sixth-batch-source-extraction-queue.json
 │   ├── human-infra-c2-longtail-sixth-batch-source-extraction-register.json
 │   ├── human-infra-c2-longtail-sixth-batch-local-review-register.json
@@ -303,8 +304,8 @@ docs/
 - `reference/human-infra-independent-fresh-review-verdict-register.json`：登记 FRB-01 到 FRB-04 全部批次 20 个来源锚点和 81 个晋升包的独立 fresh review verdict；它只允许 bounded artifact filling，不代表卡片填充、模型准入或个体预测。
 - `reference/human-infra-reviewed-card-artifact-register.json`：登记 486 个 reviewed card artifact 实体，把 fresh review verdict 晋升为 Source/变量/endpoint/uncertainty/transfer/downgrade 可审计卡片层；它仍不代表模型准入或个体用途许可。
 - `reference/human-infra-future-boundary-route-card-register.json`：登记未来等待、生物停滞、神经身份连续性和 AI 加速四条 future-boundary route card，统一概率门、中止门、正负链路和禁止外推边界。
-- `reference/human-infra-model-admission-contract.json`：定义 L0-L5 证据到模型准入层级、MAC gates、hard abort gates 和 B1-B6 reviewed artifacts 的 L1/L2-only 边界，防止 reviewed artifact 被误升格为校准预测参数、干预效果或个体用途。
-- `reference/human-infra-model-admission-candidate-registry.json`：登记 reviewed artifacts、synthetic toy model、public aggregate mortality anchor 和 NHATS draft candidates 的当前准入层级，确认 1314 个 reviewed artifacts 只允许 L1/L2，44 个 blocked rows 和 L4/L5 继续阻塞。
+- `reference/human-infra-model-admission-contract.json`：定义 L0-L5 证据到模型准入层级、MAC gates、hard abort gates 和 B1-B7 reviewed artifacts 的 L1/L2-only 边界，防止 reviewed artifact 被误升格为校准预测参数、干预效果或个体用途。
+- `reference/human-infra-model-admission-candidate-registry.json`：登记 reviewed artifacts、synthetic toy model、public aggregate mortality anchor 和 NHATS draft candidates 的当前准入层级，确认 1332 个 reviewed artifacts 只允许 L1/L2，48 个 blocked rows 和 L4/L5 继续阻塞。
 - `reference/life-path-prediction-model-contract.md`：定义干预、状态转移、风险函数、生存曲线、有效时间、主观时间、相对时间和未来选择权的预测模型契约。
 - `reference/life-path-prediction-model-governance.md`：定义定量预测模型的证据准入、偏差审查、验证、报告和禁止用途门禁。
 - `reference/project-boundary-v0.1.md`：定义当前公开版本边界、纳入范围、排除范围、材料落点和后续版本方向。
@@ -476,6 +477,7 @@ docs/
 - `reference/human-infra-c2-longtail-seventh-batch-source-resolution-register.json`：记录 C2-LT-B7 6 个本地复核问题行的来源路线解析，整理 7 个官方 FDA、CDC、Donate Life 和 RegisterMe 路线候选；它只准备 manual/fulltext extraction 与 independent fresh review，不等于 reviewed artifacts、Source Card 晋升完成或模型准入。
 - `reference/human-infra-c2-longtail-seventh-batch-manual-fulltext-extraction-register.json`：记录 C2-LT-B7 7 个 source-resolution 候选的有界路线/全文上下文抽取，区分 3 个 bounded fresh-review 候选和 4 个动态注册、访问受限、重复或 index/provenance 阻塞行；它仍不创建 reviewed artifacts 或打开模型准入。
 - `reference/human-infra-c2-longtail-seventh-batch-manual-fulltext-fresh-review-verdict-register.json`：记录 C2-LT-B7 7/7 个 manual/fulltext 行的 independent fresh-review 判定，3 行只允许进入 bounded reviewed artifact prep，4 行继续动态注册、访问受限、重复或 index/provenance 阻塞；它仍不创建 reviewed artifacts 或打开模型准入。
+- `reference/human-infra-c2-longtail-seventh-batch-manual-fulltext-reviewed-card-artifact-register.json`：记录 C2-LT-B7 3 个 eligible manual/fulltext fresh-review rows 晋升出的 18 个有界 Source/变量/endpoint/uncertainty/transfer/downgrade artifacts，并保留 4 个 blocked rows；它只进入 L1/L2-only 候选层，不打开校准模型或个体用途。
 - `reference/human-infra-c2-longtail-sixth-batch-source-extraction-queue.json`：把 C2-LT-B6 的 24 个候选来源派生成 source-specific 深读任务，定义 exact claim、endpoint、population、uncertainty、transfer-boundary、downgrade 和 model-position 抽取槽位；它仍不等于本地复核、fresh review、reviewed artifacts 或模型准入。
 - `reference/human-infra-c2-longtail-sixth-batch-source-extraction-register.json`：记录 C2-LT-B6 24/24 个来源的本地字段级抽取，显式保留 guideline route、publisher/manual review、source-lineage、降级触发和模型阻塞边界；它仍不等于本地复核、fresh review、reviewed artifacts 或模型准入。
 - `reference/human-infra-c2-longtail-sixth-batch-local-review-register.json`：记录 C2-LT-B6 24/24 个来源抽取行的本地来源语境复核，确认非问题行只可进入 independent fresh review，7 个 guideline route、publisher/manual review 或 source-lineage 问题行必须先 source-resolution/manual fulltext；它仍不等于 reviewed artifacts、Source Card 晋升完成或模型准入。

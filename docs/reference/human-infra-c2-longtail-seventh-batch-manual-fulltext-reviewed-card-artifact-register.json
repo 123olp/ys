@@ -1,0 +1,1112 @@
+{
+  "schemaVersion": "human-infra.c2ltb7-manual-fulltext-reviewed-card-artifact-register.v1",
+  "registerId": "human-infra-c2-longtail-seventh-batch-manual-fulltext-reviewed-card-artifact-register-2026-07-03",
+  "status": "active-c2ltb7-manual-fulltext-reviewed-card-artifact-register-model-blocked",
+  "purpose": "Promote only the three eligible C2-LT-B7 manual/fulltext fresh-review rows into bounded reviewed artifacts while preserving four dynamic-registration, access-restricted, duplicate-lineage or index/provenance blocked rows and keeping model admission blocked.",
+  "sourceOfTruth": {
+    "manualFulltextFreshReviewVerdictRegister": "docs/reference/human-infra-c2-longtail-seventh-batch-manual-fulltext-fresh-review-verdict-register.json",
+    "manualFulltextExtractionRegister": "docs/reference/human-infra-c2-longtail-seventh-batch-manual-fulltext-extraction-register.json",
+    "sourceResolutionRegister": "docs/reference/human-infra-c2-longtail-seventh-batch-source-resolution-register.json",
+    "evidencePolicy": "docs/reference/evidence-policy.md",
+    "maturityGapRegister": "docs/reference/human-infra-maturity-gap-register.json"
+  },
+  "scope": {
+    "batchId": "C2-LT-B7",
+    "artifactLevel": "c2ltb7-manual-fulltext-fresh-review-verdict-to-reviewed-card-artifact",
+    "manualFulltextFreshReviewRowCount": 7,
+    "eligibleManualFulltextFreshReviewRowCount": 3,
+    "blockedManualFulltextFreshReviewRowCount": 4,
+    "artifactTypeCount": 6,
+    "reviewedArtifactCount": 18,
+    "blockedRowCount": 4,
+    "artifactTypes": [
+      "reviewed-source-card",
+      "reviewed-variable-card",
+      "reviewed-endpoint-card",
+      "reviewed-uncertainty-card",
+      "reviewed-transfer-boundary-card",
+      "reviewed-downgrade-check"
+    ],
+    "selectionRule": "Create one artifact of each required type only for manual/fulltext fresh-review rows whose artifactPromotionDecision is eligible-for-bounded-reviewed-artifact-prep.",
+    "blockedRowRule": "Rows marked dynamic-registration, access-restricted, duplicate-lineage or index/provenance are preserved in blockedRows and cannot create direct reviewed content artifacts.",
+    "artifactStatusRule": "All artifacts are bounded reviewed artifacts and remain model-blocked.",
+    "modelAdmissionRule": "No C2-LT-B7 artifact opens calibrated prediction, individual advice, intervention ranking, clinical-validity claim, death-date output or domain-claim upgrade.",
+    "nonClaims": [
+      "This register is not model-ready evidence and does not authorize calibrated prediction.",
+      "This register does not authorize individual advice, clinical recommendations, individual prognosis, individual death-date output or intervention ranking.",
+      "This register does not fill rows that remained dynamic-registration, access-restricted, duplicate-lineage or index/provenance blocked.",
+      "This register does not mark remaining C2 long-tail domains complete."
+    ]
+  },
+  "blockedUses": [
+    "calibrated-prediction",
+    "individual-advice",
+    "individual-death-date-output",
+    "intervention-ranking",
+    "clinical-validity-claim",
+    "domain-claim-upgrade"
+  ],
+  "reviewedArtifacts": [
+    {
+      "artifactId": "C2LTB7-MFART-001-SOURCE-CARD",
+      "artifactType": "reviewed-source-card",
+      "artifactStatus": "filled-reviewed-c2ltb7-manual-fulltext-artifact-model-blocked",
+      "sourceRowKind": "manual-fulltext-fresh-review-row",
+      "reviewId": "C2LTB7-MFFRV-001",
+      "manualExtractionId": "C2LTB7-MFEXT-001",
+      "originTaskId": "C2LTB7-EXT-019",
+      "sourceResolutionId": "C2LTB7-SRR-001",
+      "candidateId": "C2LTB7-SRR-001-CAND-01",
+      "candidateRole": "cdc-primary-transplant-safety-guidance-route",
+      "domainId": "blood-organ-tissue-biovigilance-transplantation",
+      "localDomainPath": "domains/c2-source-maintenance/blood-organ-tissue-biovigilance-transplantation",
+      "sourceTitle": "Clinical Guidance for Transplant Safety",
+      "sourceUrl": "https://www.cdc.gov/transplant-safety/hcp/clinical-guidance/index.html",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "filled-from-eligible-manual-fulltext-fresh-review",
+      "sourceVerdictDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "modelAdmissionDecision": "blocked-pending-c2ltb7-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://www.cdc.gov/transplant-safety/hcp/clinical-guidance/index.html",
+        "docs/reference/human-infra-c2-longtail-seventh-batch-manual-fulltext-extraction-register.json"
+      ],
+      "registeredExactClaimUse": "Use only for bounded source-context extraction before independent fresh review; exact source claims may be converted into artifacts only after fresh-review verdict and reviewed-artifact gate.",
+      "registeredTransferBoundary": "Transfers only to independent fresh review and possible bounded reviewed-artifact prep after duplicate-lineage control; no model variable, clinical recommendation or individual advice may be filled directly from this row.",
+      "freshReviewFinding": "Fresh review supports the CDC Clinical Guidance for Transplant Safety route as a bounded source-context anchor for transplant safety and donor-derived infection governance; it does not support transplant allocation, individual eligibility, intervention effect sizes or calibrated survival estimates.",
+      "content": {
+        "sourceIdentity": {
+          "title": "Clinical Guidance for Transplant Safety",
+          "url": "https://www.cdc.gov/transplant-safety/hcp/clinical-guidance/index.html",
+          "candidateId": "C2LTB7-SRR-001-CAND-01",
+          "manualExtractionId": "C2LTB7-MFEXT-001",
+          "sourceAccessStatus": "official-cdc-guidance-page-accessible",
+          "sourceIdentityFinding": "supported-official-cdc-transplant-safety-guidance-route"
+        },
+        "sourceRole": "cdc-primary-transplant-safety-guidance-route",
+        "exactClaimUse": "Use only for bounded source-context extraction before independent fresh review; exact source claims may be converted into artifacts only after fresh-review verdict and reviewed-artifact gate.",
+        "transferBoundary": "Transfers only to independent fresh review and possible bounded reviewed-artifact prep after duplicate-lineage control; no model variable, clinical recommendation or individual advice may be filled directly from this row.",
+        "freshReviewEvidence": [
+          {
+            "url": "https://www.cdc.gov/transplant-safety/hcp/clinical-guidance/index.html",
+            "evidenceType": "official-cdc-guidance-route",
+            "finding": "CDC route identifies Clinical Guidance for Transplant Safety as a healthcare-worker clinical guidance context."
+          },
+          {
+            "url": "docs/reference/human-infra-c2-longtail-seventh-batch-manual-fulltext-extraction-register.json",
+            "evidenceType": "local-manual-fulltext-extraction-register",
+            "finding": "Manual/fulltext extraction row records duplicate-lineage, endpoint, uncertainty, transfer and model-position boundaries."
+          }
+        ],
+        "reviewerNote": "Fresh review supports the CDC Clinical Guidance for Transplant Safety route as a bounded source-context anchor for transplant safety and donor-derived infection governance; it does not support transplant allocation, individual eligibility, intervention effect sizes or calibrated survival estimates."
+      }
+    },
+    {
+      "artifactId": "C2LTB7-MFART-001-VARIABLE-CARD",
+      "artifactType": "reviewed-variable-card",
+      "artifactStatus": "filled-reviewed-c2ltb7-manual-fulltext-artifact-model-blocked",
+      "sourceRowKind": "manual-fulltext-fresh-review-row",
+      "reviewId": "C2LTB7-MFFRV-001",
+      "manualExtractionId": "C2LTB7-MFEXT-001",
+      "originTaskId": "C2LTB7-EXT-019",
+      "sourceResolutionId": "C2LTB7-SRR-001",
+      "candidateId": "C2LTB7-SRR-001-CAND-01",
+      "candidateRole": "cdc-primary-transplant-safety-guidance-route",
+      "domainId": "blood-organ-tissue-biovigilance-transplantation",
+      "localDomainPath": "domains/c2-source-maintenance/blood-organ-tissue-biovigilance-transplantation",
+      "sourceTitle": "Clinical Guidance for Transplant Safety",
+      "sourceUrl": "https://www.cdc.gov/transplant-safety/hcp/clinical-guidance/index.html",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "filled-from-eligible-manual-fulltext-fresh-review",
+      "sourceVerdictDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "modelAdmissionDecision": "blocked-pending-c2ltb7-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://www.cdc.gov/transplant-safety/hcp/clinical-guidance/index.html",
+        "docs/reference/human-infra-c2-longtail-seventh-batch-manual-fulltext-extraction-register.json"
+      ],
+      "registeredExactClaimUse": "Use only for bounded source-context extraction before independent fresh review; exact source claims may be converted into artifacts only after fresh-review verdict and reviewed-artifact gate.",
+      "registeredTransferBoundary": "Transfers only to independent fresh review and possible bounded reviewed-artifact prep after duplicate-lineage control; no model variable, clinical recommendation or individual advice may be filled directly from this row.",
+      "freshReviewFinding": "Fresh review supports the CDC Clinical Guidance for Transplant Safety route as a bounded source-context anchor for transplant safety and donor-derived infection governance; it does not support transplant allocation, individual eligibility, intervention effect sizes or calibrated survival estimates.",
+      "content": {
+        "variableQuestion": "Which bounded variables may this reviewed manual/fulltext source name for Human Infra continuity modeling language?",
+        "variableSeed": [
+          "transplant-safety-guidance-scope",
+          "donor-derived-infection-governance-context",
+          "biovigilance-route-lineage",
+          "clinical-guidance-transfer-boundary"
+        ],
+        "sourceExtractedVariables": [
+          "transplant-safety-guidance-scope",
+          "donor-derived-infection-governance-context",
+          "biovigilance-route-lineage",
+          "clinical-guidance-transfer-boundary"
+        ],
+        "modelPosition": "C2 source-maintenance gate for blood-organ-tissue-biovigilance-transplantation",
+        "admissibleUse": "Only after independent fresh review and reviewed-artifact gates; currently limited to source-context routing and bounded research extraction.",
+        "promotionBoundary": "bounded reviewed artifact vocabulary only; calibrated prediction, intervention ranking, individual advice and clinical-validity claims remain blocked"
+      }
+    },
+    {
+      "artifactId": "C2LTB7-MFART-001-ENDPOINT-CARD",
+      "artifactType": "reviewed-endpoint-card",
+      "artifactStatus": "filled-reviewed-c2ltb7-manual-fulltext-artifact-model-blocked",
+      "sourceRowKind": "manual-fulltext-fresh-review-row",
+      "reviewId": "C2LTB7-MFFRV-001",
+      "manualExtractionId": "C2LTB7-MFEXT-001",
+      "originTaskId": "C2LTB7-EXT-019",
+      "sourceResolutionId": "C2LTB7-SRR-001",
+      "candidateId": "C2LTB7-SRR-001-CAND-01",
+      "candidateRole": "cdc-primary-transplant-safety-guidance-route",
+      "domainId": "blood-organ-tissue-biovigilance-transplantation",
+      "localDomainPath": "domains/c2-source-maintenance/blood-organ-tissue-biovigilance-transplantation",
+      "sourceTitle": "Clinical Guidance for Transplant Safety",
+      "sourceUrl": "https://www.cdc.gov/transplant-safety/hcp/clinical-guidance/index.html",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "filled-from-eligible-manual-fulltext-fresh-review",
+      "sourceVerdictDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "modelAdmissionDecision": "blocked-pending-c2ltb7-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://www.cdc.gov/transplant-safety/hcp/clinical-guidance/index.html",
+        "docs/reference/human-infra-c2-longtail-seventh-batch-manual-fulltext-extraction-register.json"
+      ],
+      "registeredExactClaimUse": "Use only for bounded source-context extraction before independent fresh review; exact source claims may be converted into artifacts only after fresh-review verdict and reviewed-artifact gate.",
+      "registeredTransferBoundary": "Transfers only to independent fresh review and possible bounded reviewed-artifact prep after duplicate-lineage control; no model variable, clinical recommendation or individual advice may be filled directly from this row.",
+      "freshReviewFinding": "Fresh review supports the CDC Clinical Guidance for Transplant Safety route as a bounded source-context anchor for transplant safety and donor-derived infection governance; it does not support transplant allocation, individual eligibility, intervention effect sizes or calibrated survival estimates.",
+      "content": {
+        "endpointQuestion": "Which endpoint vocabulary is supported by this manual/fulltext fresh-review row without calibrated effect-size claims?",
+        "endpointDefinition": "transplant-safety-guidance, donor-derived infection awareness and biovigilance-route vocabulary supported with transfer boundary",
+        "populationOrSetting": "Regulatory, clinical-guidance or transplant-safety source context; no individual patient population inference is admitted.",
+        "endpointBoundary": "supports source, endpoint and route vocabulary only; no calibrated survival endpoint, individual recommendation or clinical effect size is admitted",
+        "modelPosition": "C2 source-maintenance gate for blood-organ-tissue-biovigilance-transplantation",
+        "blockedEndpointUses": [
+          "calibrated-prediction",
+          "individual-advice",
+          "individual-death-date-output",
+          "intervention-ranking",
+          "clinical-validity-claim",
+          "domain-claim-upgrade"
+        ]
+      }
+    },
+    {
+      "artifactId": "C2LTB7-MFART-001-UNCERTAINTY-CARD",
+      "artifactType": "reviewed-uncertainty-card",
+      "artifactStatus": "filled-reviewed-c2ltb7-manual-fulltext-artifact-model-blocked",
+      "sourceRowKind": "manual-fulltext-fresh-review-row",
+      "reviewId": "C2LTB7-MFFRV-001",
+      "manualExtractionId": "C2LTB7-MFEXT-001",
+      "originTaskId": "C2LTB7-EXT-019",
+      "sourceResolutionId": "C2LTB7-SRR-001",
+      "candidateId": "C2LTB7-SRR-001-CAND-01",
+      "candidateRole": "cdc-primary-transplant-safety-guidance-route",
+      "domainId": "blood-organ-tissue-biovigilance-transplantation",
+      "localDomainPath": "domains/c2-source-maintenance/blood-organ-tissue-biovigilance-transplantation",
+      "sourceTitle": "Clinical Guidance for Transplant Safety",
+      "sourceUrl": "https://www.cdc.gov/transplant-safety/hcp/clinical-guidance/index.html",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "filled-from-eligible-manual-fulltext-fresh-review",
+      "sourceVerdictDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "modelAdmissionDecision": "blocked-pending-c2ltb7-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://www.cdc.gov/transplant-safety/hcp/clinical-guidance/index.html",
+        "docs/reference/human-infra-c2-longtail-seventh-batch-manual-fulltext-extraction-register.json"
+      ],
+      "registeredExactClaimUse": "Use only for bounded source-context extraction before independent fresh review; exact source claims may be converted into artifacts only after fresh-review verdict and reviewed-artifact gate.",
+      "registeredTransferBoundary": "Transfers only to independent fresh review and possible bounded reviewed-artifact prep after duplicate-lineage control; no model variable, clinical recommendation or individual advice may be filled directly from this row.",
+      "freshReviewFinding": "Fresh review supports the CDC Clinical Guidance for Transplant Safety route as a bounded source-context anchor for transplant safety and donor-derived infection governance; it does not support transplant allocation, individual eligibility, intervention effect sizes or calibrated survival estimates.",
+      "content": {
+        "uncertaintyQuestion": "What uncertainty remains after manual/fulltext fresh review?",
+        "uncertaintyOrBias": "Currentness is bounded to the CDC page version and route recorded in the manual/fulltext extraction register; later CDC updates, local transplant-program rules and clinical application are not inferred.",
+        "uncertaintyBoundaryVerdict": "sufficient-for-bounded-artifact-prep-after-duplicate-lineage-control",
+        "evidenceLimit": "bounded-guidance-context-supported-only-after-reviewed-artifact-gate",
+        "downgradeTriggers": [
+          "Eligible only after duplicate-lineage control against C2LTB7-MFEXT-005; downgrade if the same CDC route is counted twice or if later review attempts to infer individual transplant decisions.",
+          "Any attempt to infer calibrated effects, individual eligibility, clinical recommendations, intervention ranking or survival estimates from this artifact triggers downgrade."
+        ]
+      }
+    },
+    {
+      "artifactId": "C2LTB7-MFART-001-TRANSFER-BOUNDARY-CARD",
+      "artifactType": "reviewed-transfer-boundary-card",
+      "artifactStatus": "filled-reviewed-c2ltb7-manual-fulltext-artifact-model-blocked",
+      "sourceRowKind": "manual-fulltext-fresh-review-row",
+      "reviewId": "C2LTB7-MFFRV-001",
+      "manualExtractionId": "C2LTB7-MFEXT-001",
+      "originTaskId": "C2LTB7-EXT-019",
+      "sourceResolutionId": "C2LTB7-SRR-001",
+      "candidateId": "C2LTB7-SRR-001-CAND-01",
+      "candidateRole": "cdc-primary-transplant-safety-guidance-route",
+      "domainId": "blood-organ-tissue-biovigilance-transplantation",
+      "localDomainPath": "domains/c2-source-maintenance/blood-organ-tissue-biovigilance-transplantation",
+      "sourceTitle": "Clinical Guidance for Transplant Safety",
+      "sourceUrl": "https://www.cdc.gov/transplant-safety/hcp/clinical-guidance/index.html",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "filled-from-eligible-manual-fulltext-fresh-review",
+      "sourceVerdictDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "modelAdmissionDecision": "blocked-pending-c2ltb7-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://www.cdc.gov/transplant-safety/hcp/clinical-guidance/index.html",
+        "docs/reference/human-infra-c2-longtail-seventh-batch-manual-fulltext-extraction-register.json"
+      ],
+      "registeredExactClaimUse": "Use only for bounded source-context extraction before independent fresh review; exact source claims may be converted into artifacts only after fresh-review verdict and reviewed-artifact gate.",
+      "registeredTransferBoundary": "Transfers only to independent fresh review and possible bounded reviewed-artifact prep after duplicate-lineage control; no model variable, clinical recommendation or individual advice may be filled directly from this row.",
+      "freshReviewFinding": "Fresh review supports the CDC Clinical Guidance for Transplant Safety route as a bounded source-context anchor for transplant safety and donor-derived infection governance; it does not support transplant allocation, individual eligibility, intervention effect sizes or calibrated survival estimates.",
+      "content": {
+        "transferBoundaryQuestion": "How may this reviewed source transfer into Human Infra without overclaiming?",
+        "domainTransferVerdict": "transfer-boundary-present-and-required",
+        "registeredTransferBoundary": "Transfers only to independent fresh review and possible bounded reviewed-artifact prep after duplicate-lineage control; no model variable, clinical recommendation or individual advice may be filled directly from this row.",
+        "sourceExtractionTransferBoundary": "Fresh review supports the CDC Clinical Guidance for Transplant Safety route as a bounded source-context anchor for transplant safety and donor-derived infection governance; it does not support transplant allocation, individual eligibility, intervention effect sizes or calibrated survival estimates.",
+        "blockedTransferUses": [
+          "calibrated-prediction",
+          "individual-advice",
+          "individual-death-date-output",
+          "intervention-ranking",
+          "clinical-validity-claim",
+          "domain-claim-upgrade"
+        ]
+      }
+    },
+    {
+      "artifactId": "C2LTB7-MFART-001-DOWNGRADE-CHECK",
+      "artifactType": "reviewed-downgrade-check",
+      "artifactStatus": "filled-reviewed-c2ltb7-manual-fulltext-artifact-model-blocked",
+      "sourceRowKind": "manual-fulltext-fresh-review-row",
+      "reviewId": "C2LTB7-MFFRV-001",
+      "manualExtractionId": "C2LTB7-MFEXT-001",
+      "originTaskId": "C2LTB7-EXT-019",
+      "sourceResolutionId": "C2LTB7-SRR-001",
+      "candidateId": "C2LTB7-SRR-001-CAND-01",
+      "candidateRole": "cdc-primary-transplant-safety-guidance-route",
+      "domainId": "blood-organ-tissue-biovigilance-transplantation",
+      "localDomainPath": "domains/c2-source-maintenance/blood-organ-tissue-biovigilance-transplantation",
+      "sourceTitle": "Clinical Guidance for Transplant Safety",
+      "sourceUrl": "https://www.cdc.gov/transplant-safety/hcp/clinical-guidance/index.html",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "filled-from-eligible-manual-fulltext-fresh-review",
+      "sourceVerdictDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "modelAdmissionDecision": "blocked-pending-c2ltb7-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://www.cdc.gov/transplant-safety/hcp/clinical-guidance/index.html",
+        "docs/reference/human-infra-c2-longtail-seventh-batch-manual-fulltext-extraction-register.json"
+      ],
+      "registeredExactClaimUse": "Use only for bounded source-context extraction before independent fresh review; exact source claims may be converted into artifacts only after fresh-review verdict and reviewed-artifact gate.",
+      "registeredTransferBoundary": "Transfers only to independent fresh review and possible bounded reviewed-artifact prep after duplicate-lineage control; no model variable, clinical recommendation or individual advice may be filled directly from this row.",
+      "freshReviewFinding": "Fresh review supports the CDC Clinical Guidance for Transplant Safety route as a bounded source-context anchor for transplant safety and donor-derived infection governance; it does not support transplant allocation, individual eligibility, intervention effect sizes or calibrated survival estimates.",
+      "content": {
+        "downgradeQuestion": "When must this artifact be downgraded or blocked?",
+        "downgradeVerdict": "Eligible only after duplicate-lineage control against C2LTB7-MFEXT-005; downgrade if the same CDC route is counted twice or if later review attempts to infer individual transplant decisions.",
+        "reviewerVerdict": "support-with-boundary",
+        "downgradeRequiredWhen": [
+          "Eligible only after duplicate-lineage control against C2LTB7-MFEXT-005; downgrade if the same CDC route is counted twice or if later review attempts to infer individual transplant decisions.",
+          "The source is used outside bounded source/variable/endpoint/uncertainty/transfer/downgrade artifact preparation.",
+          "The source is used for calibrated prediction, clinical validity, individual advice, intervention ranking or death-date output."
+        ],
+        "blockedSiblingPolicy": "Sibling manual/fulltext rows that stayed dynamic-registration, access-restricted, duplicate-lineage or index/provenance blocked cannot create direct reviewed content artifacts in this register."
+      }
+    },
+    {
+      "artifactId": "C2LTB7-MFART-002-SOURCE-CARD",
+      "artifactType": "reviewed-source-card",
+      "artifactStatus": "filled-reviewed-c2ltb7-manual-fulltext-artifact-model-blocked",
+      "sourceRowKind": "manual-fulltext-fresh-review-row",
+      "reviewId": "C2LTB7-MFFRV-002",
+      "manualExtractionId": "C2LTB7-MFEXT-002",
+      "originTaskId": "C2LTB7-EXT-020",
+      "sourceResolutionId": "C2LTB7-SRR-002",
+      "candidateId": "C2LTB7-SRR-002-CAND-01",
+      "candidateRole": "fda-current-hctp-donor-eligibility-guidance-route",
+      "domainId": "blood-organ-tissue-biovigilance-transplantation",
+      "localDomainPath": "domains/c2-source-maintenance/blood-organ-tissue-biovigilance-transplantation",
+      "sourceTitle": "Eligibility Determination for Donors of Human Cells, Tissues, and Cellular and Tissue-Based Products",
+      "sourceUrl": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/eligibility-determination-donors-human-cells-tissues-and-cellular-and-tissue-based-products",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "filled-from-eligible-manual-fulltext-fresh-review",
+      "sourceVerdictDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "modelAdmissionDecision": "blocked-pending-c2ltb7-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/eligibility-determination-donors-human-cells-tissues-and-cellular-and-tissue-based-products",
+        "docs/reference/human-infra-c2-longtail-seventh-batch-manual-fulltext-extraction-register.json"
+      ],
+      "registeredExactClaimUse": "Use only for bounded source-context extraction before independent fresh review; exact source claims may be converted into artifacts only after fresh-review verdict and reviewed-artifact gate.",
+      "registeredTransferBoundary": "Transfers only to independent fresh review and possible bounded reviewed-artifact prep; no model variable, donor eligibility decision, clinical recommendation or individual advice may be filled directly from this row.",
+      "freshReviewFinding": "Fresh review supports the FDA HCT/P donor eligibility guidance route as a bounded source-context anchor for donor screening/testing and tissue-product safety governance; it does not support individual donor eligibility decisions, clinical recommendations or calibrated transplant outcome estimates.",
+      "content": {
+        "sourceIdentity": {
+          "title": "Eligibility Determination for Donors of Human Cells, Tissues, and Cellular and Tissue-Based Products",
+          "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/eligibility-determination-donors-human-cells-tissues-and-cellular-and-tissue-based-products",
+          "candidateId": "C2LTB7-SRR-002-CAND-01",
+          "manualExtractionId": "C2LTB7-MFEXT-002",
+          "sourceAccessStatus": "official-fda-guidance-page-accessible",
+          "sourceIdentityFinding": "supported-official-fda-hctp-donor-eligibility-guidance-route"
+        },
+        "sourceRole": "fda-current-hctp-donor-eligibility-guidance-route",
+        "exactClaimUse": "Use only for bounded source-context extraction before independent fresh review; exact source claims may be converted into artifacts only after fresh-review verdict and reviewed-artifact gate.",
+        "transferBoundary": "Transfers only to independent fresh review and possible bounded reviewed-artifact prep; no model variable, donor eligibility decision, clinical recommendation or individual advice may be filled directly from this row.",
+        "freshReviewEvidence": [
+          {
+            "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/eligibility-determination-donors-human-cells-tissues-and-cellular-and-tissue-based-products",
+            "evidenceType": "official-fda-guidance-route",
+            "finding": "FDA route identifies the HCT/P donor eligibility guidance context under FDA/CBER."
+          },
+          {
+            "url": "docs/reference/human-infra-c2-longtail-seventh-batch-manual-fulltext-extraction-register.json",
+            "evidenceType": "local-manual-fulltext-extraction-register",
+            "finding": "Manual/fulltext extraction row records donor screening/testing, endpoint, uncertainty, transfer and model-position boundaries."
+          }
+        ],
+        "reviewerNote": "Fresh review supports the FDA HCT/P donor eligibility guidance route as a bounded source-context anchor for donor screening/testing and tissue-product safety governance; it does not support individual donor eligibility decisions, clinical recommendations or calibrated transplant outcome estimates."
+      }
+    },
+    {
+      "artifactId": "C2LTB7-MFART-002-VARIABLE-CARD",
+      "artifactType": "reviewed-variable-card",
+      "artifactStatus": "filled-reviewed-c2ltb7-manual-fulltext-artifact-model-blocked",
+      "sourceRowKind": "manual-fulltext-fresh-review-row",
+      "reviewId": "C2LTB7-MFFRV-002",
+      "manualExtractionId": "C2LTB7-MFEXT-002",
+      "originTaskId": "C2LTB7-EXT-020",
+      "sourceResolutionId": "C2LTB7-SRR-002",
+      "candidateId": "C2LTB7-SRR-002-CAND-01",
+      "candidateRole": "fda-current-hctp-donor-eligibility-guidance-route",
+      "domainId": "blood-organ-tissue-biovigilance-transplantation",
+      "localDomainPath": "domains/c2-source-maintenance/blood-organ-tissue-biovigilance-transplantation",
+      "sourceTitle": "Eligibility Determination for Donors of Human Cells, Tissues, and Cellular and Tissue-Based Products",
+      "sourceUrl": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/eligibility-determination-donors-human-cells-tissues-and-cellular-and-tissue-based-products",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "filled-from-eligible-manual-fulltext-fresh-review",
+      "sourceVerdictDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "modelAdmissionDecision": "blocked-pending-c2ltb7-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/eligibility-determination-donors-human-cells-tissues-and-cellular-and-tissue-based-products",
+        "docs/reference/human-infra-c2-longtail-seventh-batch-manual-fulltext-extraction-register.json"
+      ],
+      "registeredExactClaimUse": "Use only for bounded source-context extraction before independent fresh review; exact source claims may be converted into artifacts only after fresh-review verdict and reviewed-artifact gate.",
+      "registeredTransferBoundary": "Transfers only to independent fresh review and possible bounded reviewed-artifact prep; no model variable, donor eligibility decision, clinical recommendation or individual advice may be filled directly from this row.",
+      "freshReviewFinding": "Fresh review supports the FDA HCT/P donor eligibility guidance route as a bounded source-context anchor for donor screening/testing and tissue-product safety governance; it does not support individual donor eligibility decisions, clinical recommendations or calibrated transplant outcome estimates.",
+      "content": {
+        "variableQuestion": "Which bounded variables may this reviewed manual/fulltext source name for Human Infra continuity modeling language?",
+        "variableSeed": [
+          "hctp-donor-eligibility-guidance-scope",
+          "donor-screening-testing-boundary",
+          "tissue-product-safety-governance-context",
+          "regulatory-transfer-boundary"
+        ],
+        "sourceExtractedVariables": [
+          "hctp-donor-eligibility-guidance-scope",
+          "donor-screening-testing-boundary",
+          "tissue-product-safety-governance-context",
+          "regulatory-transfer-boundary"
+        ],
+        "modelPosition": "C2 source-maintenance gate for blood-organ-tissue-biovigilance-transplantation",
+        "admissibleUse": "Only after independent fresh review and reviewed-artifact gates; currently limited to source-context routing and bounded research extraction.",
+        "promotionBoundary": "bounded reviewed artifact vocabulary only; calibrated prediction, intervention ranking, individual advice and clinical-validity claims remain blocked"
+      }
+    },
+    {
+      "artifactId": "C2LTB7-MFART-002-ENDPOINT-CARD",
+      "artifactType": "reviewed-endpoint-card",
+      "artifactStatus": "filled-reviewed-c2ltb7-manual-fulltext-artifact-model-blocked",
+      "sourceRowKind": "manual-fulltext-fresh-review-row",
+      "reviewId": "C2LTB7-MFFRV-002",
+      "manualExtractionId": "C2LTB7-MFEXT-002",
+      "originTaskId": "C2LTB7-EXT-020",
+      "sourceResolutionId": "C2LTB7-SRR-002",
+      "candidateId": "C2LTB7-SRR-002-CAND-01",
+      "candidateRole": "fda-current-hctp-donor-eligibility-guidance-route",
+      "domainId": "blood-organ-tissue-biovigilance-transplantation",
+      "localDomainPath": "domains/c2-source-maintenance/blood-organ-tissue-biovigilance-transplantation",
+      "sourceTitle": "Eligibility Determination for Donors of Human Cells, Tissues, and Cellular and Tissue-Based Products",
+      "sourceUrl": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/eligibility-determination-donors-human-cells-tissues-and-cellular-and-tissue-based-products",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "filled-from-eligible-manual-fulltext-fresh-review",
+      "sourceVerdictDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "modelAdmissionDecision": "blocked-pending-c2ltb7-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/eligibility-determination-donors-human-cells-tissues-and-cellular-and-tissue-based-products",
+        "docs/reference/human-infra-c2-longtail-seventh-batch-manual-fulltext-extraction-register.json"
+      ],
+      "registeredExactClaimUse": "Use only for bounded source-context extraction before independent fresh review; exact source claims may be converted into artifacts only after fresh-review verdict and reviewed-artifact gate.",
+      "registeredTransferBoundary": "Transfers only to independent fresh review and possible bounded reviewed-artifact prep; no model variable, donor eligibility decision, clinical recommendation or individual advice may be filled directly from this row.",
+      "freshReviewFinding": "Fresh review supports the FDA HCT/P donor eligibility guidance route as a bounded source-context anchor for donor screening/testing and tissue-product safety governance; it does not support individual donor eligibility decisions, clinical recommendations or calibrated transplant outcome estimates.",
+      "content": {
+        "endpointQuestion": "Which endpoint vocabulary is supported by this manual/fulltext fresh-review row without calibrated effect-size claims?",
+        "endpointDefinition": "HCT/P donor eligibility, donor screening/testing boundary and tissue-product safety governance vocabulary supported with transfer boundary",
+        "populationOrSetting": "Regulatory, clinical-guidance or transplant-safety source context; no individual patient population inference is admitted.",
+        "endpointBoundary": "supports source, endpoint and route vocabulary only; no calibrated survival endpoint, individual recommendation or clinical effect size is admitted",
+        "modelPosition": "C2 source-maintenance gate for blood-organ-tissue-biovigilance-transplantation",
+        "blockedEndpointUses": [
+          "calibrated-prediction",
+          "individual-advice",
+          "individual-death-date-output",
+          "intervention-ranking",
+          "clinical-validity-claim",
+          "domain-claim-upgrade"
+        ]
+      }
+    },
+    {
+      "artifactId": "C2LTB7-MFART-002-UNCERTAINTY-CARD",
+      "artifactType": "reviewed-uncertainty-card",
+      "artifactStatus": "filled-reviewed-c2ltb7-manual-fulltext-artifact-model-blocked",
+      "sourceRowKind": "manual-fulltext-fresh-review-row",
+      "reviewId": "C2LTB7-MFFRV-002",
+      "manualExtractionId": "C2LTB7-MFEXT-002",
+      "originTaskId": "C2LTB7-EXT-020",
+      "sourceResolutionId": "C2LTB7-SRR-002",
+      "candidateId": "C2LTB7-SRR-002-CAND-01",
+      "candidateRole": "fda-current-hctp-donor-eligibility-guidance-route",
+      "domainId": "blood-organ-tissue-biovigilance-transplantation",
+      "localDomainPath": "domains/c2-source-maintenance/blood-organ-tissue-biovigilance-transplantation",
+      "sourceTitle": "Eligibility Determination for Donors of Human Cells, Tissues, and Cellular and Tissue-Based Products",
+      "sourceUrl": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/eligibility-determination-donors-human-cells-tissues-and-cellular-and-tissue-based-products",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "filled-from-eligible-manual-fulltext-fresh-review",
+      "sourceVerdictDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "modelAdmissionDecision": "blocked-pending-c2ltb7-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/eligibility-determination-donors-human-cells-tissues-and-cellular-and-tissue-based-products",
+        "docs/reference/human-infra-c2-longtail-seventh-batch-manual-fulltext-extraction-register.json"
+      ],
+      "registeredExactClaimUse": "Use only for bounded source-context extraction before independent fresh review; exact source claims may be converted into artifacts only after fresh-review verdict and reviewed-artifact gate.",
+      "registeredTransferBoundary": "Transfers only to independent fresh review and possible bounded reviewed-artifact prep; no model variable, donor eligibility decision, clinical recommendation or individual advice may be filled directly from this row.",
+      "freshReviewFinding": "Fresh review supports the FDA HCT/P donor eligibility guidance route as a bounded source-context anchor for donor screening/testing and tissue-product safety governance; it does not support individual donor eligibility decisions, clinical recommendations or calibrated transplant outcome estimates.",
+      "content": {
+        "uncertaintyQuestion": "What uncertainty remains after manual/fulltext fresh review?",
+        "uncertaintyOrBias": "Currentness is bounded to the FDA page route recorded in the manual/fulltext extraction register; later FDA revisions, legal applicability and product-specific donor determinations are not inferred.",
+        "uncertaintyBoundaryVerdict": "sufficient-for-bounded-artifact-prep-with-regulatory-transfer-boundary",
+        "evidenceLimit": "bounded-guidance-context-supported-only-after-reviewed-artifact-gate",
+        "downgradeTriggers": [
+          "Eligible only for bounded artifact preparation; downgrade if used as individualized donor eligibility advice, legal interpretation, treatment recommendation or calibrated effect source.",
+          "Any attempt to infer calibrated effects, individual eligibility, clinical recommendations, intervention ranking or survival estimates from this artifact triggers downgrade."
+        ]
+      }
+    },
+    {
+      "artifactId": "C2LTB7-MFART-002-TRANSFER-BOUNDARY-CARD",
+      "artifactType": "reviewed-transfer-boundary-card",
+      "artifactStatus": "filled-reviewed-c2ltb7-manual-fulltext-artifact-model-blocked",
+      "sourceRowKind": "manual-fulltext-fresh-review-row",
+      "reviewId": "C2LTB7-MFFRV-002",
+      "manualExtractionId": "C2LTB7-MFEXT-002",
+      "originTaskId": "C2LTB7-EXT-020",
+      "sourceResolutionId": "C2LTB7-SRR-002",
+      "candidateId": "C2LTB7-SRR-002-CAND-01",
+      "candidateRole": "fda-current-hctp-donor-eligibility-guidance-route",
+      "domainId": "blood-organ-tissue-biovigilance-transplantation",
+      "localDomainPath": "domains/c2-source-maintenance/blood-organ-tissue-biovigilance-transplantation",
+      "sourceTitle": "Eligibility Determination for Donors of Human Cells, Tissues, and Cellular and Tissue-Based Products",
+      "sourceUrl": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/eligibility-determination-donors-human-cells-tissues-and-cellular-and-tissue-based-products",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "filled-from-eligible-manual-fulltext-fresh-review",
+      "sourceVerdictDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "modelAdmissionDecision": "blocked-pending-c2ltb7-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/eligibility-determination-donors-human-cells-tissues-and-cellular-and-tissue-based-products",
+        "docs/reference/human-infra-c2-longtail-seventh-batch-manual-fulltext-extraction-register.json"
+      ],
+      "registeredExactClaimUse": "Use only for bounded source-context extraction before independent fresh review; exact source claims may be converted into artifacts only after fresh-review verdict and reviewed-artifact gate.",
+      "registeredTransferBoundary": "Transfers only to independent fresh review and possible bounded reviewed-artifact prep; no model variable, donor eligibility decision, clinical recommendation or individual advice may be filled directly from this row.",
+      "freshReviewFinding": "Fresh review supports the FDA HCT/P donor eligibility guidance route as a bounded source-context anchor for donor screening/testing and tissue-product safety governance; it does not support individual donor eligibility decisions, clinical recommendations or calibrated transplant outcome estimates.",
+      "content": {
+        "transferBoundaryQuestion": "How may this reviewed source transfer into Human Infra without overclaiming?",
+        "domainTransferVerdict": "transfer-boundary-present-and-required",
+        "registeredTransferBoundary": "Transfers only to independent fresh review and possible bounded reviewed-artifact prep; no model variable, donor eligibility decision, clinical recommendation or individual advice may be filled directly from this row.",
+        "sourceExtractionTransferBoundary": "Fresh review supports the FDA HCT/P donor eligibility guidance route as a bounded source-context anchor for donor screening/testing and tissue-product safety governance; it does not support individual donor eligibility decisions, clinical recommendations or calibrated transplant outcome estimates.",
+        "blockedTransferUses": [
+          "calibrated-prediction",
+          "individual-advice",
+          "individual-death-date-output",
+          "intervention-ranking",
+          "clinical-validity-claim",
+          "domain-claim-upgrade"
+        ]
+      }
+    },
+    {
+      "artifactId": "C2LTB7-MFART-002-DOWNGRADE-CHECK",
+      "artifactType": "reviewed-downgrade-check",
+      "artifactStatus": "filled-reviewed-c2ltb7-manual-fulltext-artifact-model-blocked",
+      "sourceRowKind": "manual-fulltext-fresh-review-row",
+      "reviewId": "C2LTB7-MFFRV-002",
+      "manualExtractionId": "C2LTB7-MFEXT-002",
+      "originTaskId": "C2LTB7-EXT-020",
+      "sourceResolutionId": "C2LTB7-SRR-002",
+      "candidateId": "C2LTB7-SRR-002-CAND-01",
+      "candidateRole": "fda-current-hctp-donor-eligibility-guidance-route",
+      "domainId": "blood-organ-tissue-biovigilance-transplantation",
+      "localDomainPath": "domains/c2-source-maintenance/blood-organ-tissue-biovigilance-transplantation",
+      "sourceTitle": "Eligibility Determination for Donors of Human Cells, Tissues, and Cellular and Tissue-Based Products",
+      "sourceUrl": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/eligibility-determination-donors-human-cells-tissues-and-cellular-and-tissue-based-products",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "filled-from-eligible-manual-fulltext-fresh-review",
+      "sourceVerdictDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "modelAdmissionDecision": "blocked-pending-c2ltb7-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/eligibility-determination-donors-human-cells-tissues-and-cellular-and-tissue-based-products",
+        "docs/reference/human-infra-c2-longtail-seventh-batch-manual-fulltext-extraction-register.json"
+      ],
+      "registeredExactClaimUse": "Use only for bounded source-context extraction before independent fresh review; exact source claims may be converted into artifacts only after fresh-review verdict and reviewed-artifact gate.",
+      "registeredTransferBoundary": "Transfers only to independent fresh review and possible bounded reviewed-artifact prep; no model variable, donor eligibility decision, clinical recommendation or individual advice may be filled directly from this row.",
+      "freshReviewFinding": "Fresh review supports the FDA HCT/P donor eligibility guidance route as a bounded source-context anchor for donor screening/testing and tissue-product safety governance; it does not support individual donor eligibility decisions, clinical recommendations or calibrated transplant outcome estimates.",
+      "content": {
+        "downgradeQuestion": "When must this artifact be downgraded or blocked?",
+        "downgradeVerdict": "Eligible only for bounded artifact preparation; downgrade if used as individualized donor eligibility advice, legal interpretation, treatment recommendation or calibrated effect source.",
+        "reviewerVerdict": "support-with-boundary",
+        "downgradeRequiredWhen": [
+          "Eligible only for bounded artifact preparation; downgrade if used as individualized donor eligibility advice, legal interpretation, treatment recommendation or calibrated effect source.",
+          "The source is used outside bounded source/variable/endpoint/uncertainty/transfer/downgrade artifact preparation.",
+          "The source is used for calibrated prediction, clinical validity, individual advice, intervention ranking or death-date output."
+        ],
+        "blockedSiblingPolicy": "Sibling manual/fulltext rows that stayed dynamic-registration, access-restricted, duplicate-lineage or index/provenance blocked cannot create direct reviewed content artifacts in this register."
+      }
+    },
+    {
+      "artifactId": "C2LTB7-MFART-003-SOURCE-CARD",
+      "artifactType": "reviewed-source-card",
+      "artifactStatus": "filled-reviewed-c2ltb7-manual-fulltext-artifact-model-blocked",
+      "sourceRowKind": "manual-fulltext-fresh-review-row",
+      "reviewId": "C2LTB7-MFFRV-006",
+      "manualExtractionId": "C2LTB7-MFEXT-006",
+      "originTaskId": "C2LTB7-EXT-023",
+      "sourceResolutionId": "C2LTB7-SRR-005",
+      "candidateId": "C2LTB7-SRR-005-CAND-01",
+      "candidateRole": "fda-xenotransplantation-specific-guidance-route",
+      "domainId": "xenotransplantation-bioengineered-organ-replacement",
+      "localDomainPath": "domains/c2-source-maintenance/xenotransplantation-bioengineered-organ-replacement",
+      "sourceTitle": "Source Animal, Product, Preclinical, and Clinical Issues Concerning the Use of Xenotransplantation Products in Humans",
+      "sourceUrl": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/source-animal-product-preclinical-and-clinical-issues-concerning-use-xenotransplantation-products",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "filled-from-eligible-manual-fulltext-fresh-review",
+      "sourceVerdictDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "modelAdmissionDecision": "blocked-pending-c2ltb7-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/source-animal-product-preclinical-and-clinical-issues-concerning-use-xenotransplantation-products",
+        "docs/reference/human-infra-c2-longtail-seventh-batch-manual-fulltext-extraction-register.json"
+      ],
+      "registeredExactClaimUse": "Use only for bounded source-context extraction before independent fresh review; exact source claims may be converted into artifacts only after fresh-review verdict and reviewed-artifact gate.",
+      "registeredTransferBoundary": "Transfers only to independent fresh review and possible bounded reviewed-artifact prep; no model variable, feasibility conclusion, clinical recommendation or individual advice may be filled directly from this row.",
+      "freshReviewFinding": "Fresh review supports the FDA xenotransplantation specific guidance route as a bounded source-context anchor for source-animal, product, preclinical and clinical issue vocabulary; it does not establish clinical effectiveness, availability, replacement-organ feasibility or individual treatment advice.",
+      "content": {
+        "sourceIdentity": {
+          "title": "Source Animal, Product, Preclinical, and Clinical Issues Concerning the Use of Xenotransplantation Products in Humans",
+          "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/source-animal-product-preclinical-and-clinical-issues-concerning-use-xenotransplantation-products",
+          "candidateId": "C2LTB7-SRR-005-CAND-01",
+          "manualExtractionId": "C2LTB7-MFEXT-006",
+          "sourceAccessStatus": "official-fda-guidance-page-accessible",
+          "sourceIdentityFinding": "supported-official-fda-xenotransplantation-specific-guidance-route"
+        },
+        "sourceRole": "fda-xenotransplantation-specific-guidance-route",
+        "exactClaimUse": "Use only for bounded source-context extraction before independent fresh review; exact source claims may be converted into artifacts only after fresh-review verdict and reviewed-artifact gate.",
+        "transferBoundary": "Transfers only to independent fresh review and possible bounded reviewed-artifact prep; no model variable, feasibility conclusion, clinical recommendation or individual advice may be filled directly from this row.",
+        "freshReviewEvidence": [
+          {
+            "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/source-animal-product-preclinical-and-clinical-issues-concerning-use-xenotransplantation-products",
+            "evidenceType": "official-fda-specific-guidance-route",
+            "finding": "FDA route identifies a specific xenotransplantation guidance covering source animal, product, preclinical and clinical issues."
+          },
+          {
+            "url": "docs/reference/human-infra-c2-longtail-seventh-batch-manual-fulltext-extraction-register.json",
+            "evidenceType": "local-manual-fulltext-extraction-register",
+            "finding": "Manual/fulltext extraction row records source-animal, product, preclinical, clinical, uncertainty and transfer-boundary constraints."
+          }
+        ],
+        "reviewerNote": "Fresh review supports the FDA xenotransplantation specific guidance route as a bounded source-context anchor for source-animal, product, preclinical and clinical issue vocabulary; it does not establish clinical effectiveness, availability, replacement-organ feasibility or individual treatment advice."
+      }
+    },
+    {
+      "artifactId": "C2LTB7-MFART-003-VARIABLE-CARD",
+      "artifactType": "reviewed-variable-card",
+      "artifactStatus": "filled-reviewed-c2ltb7-manual-fulltext-artifact-model-blocked",
+      "sourceRowKind": "manual-fulltext-fresh-review-row",
+      "reviewId": "C2LTB7-MFFRV-006",
+      "manualExtractionId": "C2LTB7-MFEXT-006",
+      "originTaskId": "C2LTB7-EXT-023",
+      "sourceResolutionId": "C2LTB7-SRR-005",
+      "candidateId": "C2LTB7-SRR-005-CAND-01",
+      "candidateRole": "fda-xenotransplantation-specific-guidance-route",
+      "domainId": "xenotransplantation-bioengineered-organ-replacement",
+      "localDomainPath": "domains/c2-source-maintenance/xenotransplantation-bioengineered-organ-replacement",
+      "sourceTitle": "Source Animal, Product, Preclinical, and Clinical Issues Concerning the Use of Xenotransplantation Products in Humans",
+      "sourceUrl": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/source-animal-product-preclinical-and-clinical-issues-concerning-use-xenotransplantation-products",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "filled-from-eligible-manual-fulltext-fresh-review",
+      "sourceVerdictDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "modelAdmissionDecision": "blocked-pending-c2ltb7-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/source-animal-product-preclinical-and-clinical-issues-concerning-use-xenotransplantation-products",
+        "docs/reference/human-infra-c2-longtail-seventh-batch-manual-fulltext-extraction-register.json"
+      ],
+      "registeredExactClaimUse": "Use only for bounded source-context extraction before independent fresh review; exact source claims may be converted into artifacts only after fresh-review verdict and reviewed-artifact gate.",
+      "registeredTransferBoundary": "Transfers only to independent fresh review and possible bounded reviewed-artifact prep; no model variable, feasibility conclusion, clinical recommendation or individual advice may be filled directly from this row.",
+      "freshReviewFinding": "Fresh review supports the FDA xenotransplantation specific guidance route as a bounded source-context anchor for source-animal, product, preclinical and clinical issue vocabulary; it does not establish clinical effectiveness, availability, replacement-organ feasibility or individual treatment advice.",
+      "content": {
+        "variableQuestion": "Which bounded variables may this reviewed manual/fulltext source name for Human Infra continuity modeling language?",
+        "variableSeed": [
+          "xenotransplantation-guidance-scope",
+          "source-animal-product-issue-boundary",
+          "preclinical-clinical-transfer-boundary",
+          "regulatory-readiness-uncertainty"
+        ],
+        "sourceExtractedVariables": [
+          "xenotransplantation-guidance-scope",
+          "source-animal-product-issue-boundary",
+          "preclinical-clinical-transfer-boundary",
+          "regulatory-readiness-uncertainty"
+        ],
+        "modelPosition": "C2 source-maintenance gate for xenotransplantation-bioengineered-organ-replacement",
+        "admissibleUse": "Only after independent fresh review and reviewed-artifact gates; currently limited to source-context routing and bounded research extraction.",
+        "promotionBoundary": "bounded reviewed artifact vocabulary only; calibrated prediction, intervention ranking, individual advice and clinical-validity claims remain blocked"
+      }
+    },
+    {
+      "artifactId": "C2LTB7-MFART-003-ENDPOINT-CARD",
+      "artifactType": "reviewed-endpoint-card",
+      "artifactStatus": "filled-reviewed-c2ltb7-manual-fulltext-artifact-model-blocked",
+      "sourceRowKind": "manual-fulltext-fresh-review-row",
+      "reviewId": "C2LTB7-MFFRV-006",
+      "manualExtractionId": "C2LTB7-MFEXT-006",
+      "originTaskId": "C2LTB7-EXT-023",
+      "sourceResolutionId": "C2LTB7-SRR-005",
+      "candidateId": "C2LTB7-SRR-005-CAND-01",
+      "candidateRole": "fda-xenotransplantation-specific-guidance-route",
+      "domainId": "xenotransplantation-bioengineered-organ-replacement",
+      "localDomainPath": "domains/c2-source-maintenance/xenotransplantation-bioengineered-organ-replacement",
+      "sourceTitle": "Source Animal, Product, Preclinical, and Clinical Issues Concerning the Use of Xenotransplantation Products in Humans",
+      "sourceUrl": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/source-animal-product-preclinical-and-clinical-issues-concerning-use-xenotransplantation-products",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "filled-from-eligible-manual-fulltext-fresh-review",
+      "sourceVerdictDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "modelAdmissionDecision": "blocked-pending-c2ltb7-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/source-animal-product-preclinical-and-clinical-issues-concerning-use-xenotransplantation-products",
+        "docs/reference/human-infra-c2-longtail-seventh-batch-manual-fulltext-extraction-register.json"
+      ],
+      "registeredExactClaimUse": "Use only for bounded source-context extraction before independent fresh review; exact source claims may be converted into artifacts only after fresh-review verdict and reviewed-artifact gate.",
+      "registeredTransferBoundary": "Transfers only to independent fresh review and possible bounded reviewed-artifact prep; no model variable, feasibility conclusion, clinical recommendation or individual advice may be filled directly from this row.",
+      "freshReviewFinding": "Fresh review supports the FDA xenotransplantation specific guidance route as a bounded source-context anchor for source-animal, product, preclinical and clinical issue vocabulary; it does not establish clinical effectiveness, availability, replacement-organ feasibility or individual treatment advice.",
+      "content": {
+        "endpointQuestion": "Which endpoint vocabulary is supported by this manual/fulltext fresh-review row without calibrated effect-size claims?",
+        "endpointDefinition": "source animal, xenotransplantation product, preclinical issue and clinical issue vocabulary supported with transfer boundary",
+        "populationOrSetting": "Regulatory, clinical-guidance or transplant-safety source context; no individual patient population inference is admitted.",
+        "endpointBoundary": "supports source, endpoint and route vocabulary only; no calibrated survival endpoint, individual recommendation or clinical effect size is admitted",
+        "modelPosition": "C2 source-maintenance gate for xenotransplantation-bioengineered-organ-replacement",
+        "blockedEndpointUses": [
+          "calibrated-prediction",
+          "individual-advice",
+          "individual-death-date-output",
+          "intervention-ranking",
+          "clinical-validity-claim",
+          "domain-claim-upgrade"
+        ]
+      }
+    },
+    {
+      "artifactId": "C2LTB7-MFART-003-UNCERTAINTY-CARD",
+      "artifactType": "reviewed-uncertainty-card",
+      "artifactStatus": "filled-reviewed-c2ltb7-manual-fulltext-artifact-model-blocked",
+      "sourceRowKind": "manual-fulltext-fresh-review-row",
+      "reviewId": "C2LTB7-MFFRV-006",
+      "manualExtractionId": "C2LTB7-MFEXT-006",
+      "originTaskId": "C2LTB7-EXT-023",
+      "sourceResolutionId": "C2LTB7-SRR-005",
+      "candidateId": "C2LTB7-SRR-005-CAND-01",
+      "candidateRole": "fda-xenotransplantation-specific-guidance-route",
+      "domainId": "xenotransplantation-bioengineered-organ-replacement",
+      "localDomainPath": "domains/c2-source-maintenance/xenotransplantation-bioengineered-organ-replacement",
+      "sourceTitle": "Source Animal, Product, Preclinical, and Clinical Issues Concerning the Use of Xenotransplantation Products in Humans",
+      "sourceUrl": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/source-animal-product-preclinical-and-clinical-issues-concerning-use-xenotransplantation-products",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "filled-from-eligible-manual-fulltext-fresh-review",
+      "sourceVerdictDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "modelAdmissionDecision": "blocked-pending-c2ltb7-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/source-animal-product-preclinical-and-clinical-issues-concerning-use-xenotransplantation-products",
+        "docs/reference/human-infra-c2-longtail-seventh-batch-manual-fulltext-extraction-register.json"
+      ],
+      "registeredExactClaimUse": "Use only for bounded source-context extraction before independent fresh review; exact source claims may be converted into artifacts only after fresh-review verdict and reviewed-artifact gate.",
+      "registeredTransferBoundary": "Transfers only to independent fresh review and possible bounded reviewed-artifact prep; no model variable, feasibility conclusion, clinical recommendation or individual advice may be filled directly from this row.",
+      "freshReviewFinding": "Fresh review supports the FDA xenotransplantation specific guidance route as a bounded source-context anchor for source-animal, product, preclinical and clinical issue vocabulary; it does not establish clinical effectiveness, availability, replacement-organ feasibility or individual treatment advice.",
+      "content": {
+        "uncertaintyQuestion": "What uncertainty remains after manual/fulltext fresh review?",
+        "uncertaintyOrBias": "Currentness is bounded to the FDA specific guidance route recorded in the manual/fulltext extraction register; later FDA updates, product-specific IND decisions and clinical applicability are not inferred.",
+        "uncertaintyBoundaryVerdict": "sufficient-for-bounded-artifact-prep-with-engineering-and-clinical-transfer-boundaries",
+        "evidenceLimit": "bounded-guidance-context-supported-only-after-reviewed-artifact-gate",
+        "downgradeTriggers": [
+          "Eligible only for bounded artifact preparation; downgrade if used to infer feasibility, efficacy, safety, patient selection or calibrated survival effects.",
+          "Any attempt to infer calibrated effects, individual eligibility, clinical recommendations, intervention ranking or survival estimates from this artifact triggers downgrade."
+        ]
+      }
+    },
+    {
+      "artifactId": "C2LTB7-MFART-003-TRANSFER-BOUNDARY-CARD",
+      "artifactType": "reviewed-transfer-boundary-card",
+      "artifactStatus": "filled-reviewed-c2ltb7-manual-fulltext-artifact-model-blocked",
+      "sourceRowKind": "manual-fulltext-fresh-review-row",
+      "reviewId": "C2LTB7-MFFRV-006",
+      "manualExtractionId": "C2LTB7-MFEXT-006",
+      "originTaskId": "C2LTB7-EXT-023",
+      "sourceResolutionId": "C2LTB7-SRR-005",
+      "candidateId": "C2LTB7-SRR-005-CAND-01",
+      "candidateRole": "fda-xenotransplantation-specific-guidance-route",
+      "domainId": "xenotransplantation-bioengineered-organ-replacement",
+      "localDomainPath": "domains/c2-source-maintenance/xenotransplantation-bioengineered-organ-replacement",
+      "sourceTitle": "Source Animal, Product, Preclinical, and Clinical Issues Concerning the Use of Xenotransplantation Products in Humans",
+      "sourceUrl": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/source-animal-product-preclinical-and-clinical-issues-concerning-use-xenotransplantation-products",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "filled-from-eligible-manual-fulltext-fresh-review",
+      "sourceVerdictDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "modelAdmissionDecision": "blocked-pending-c2ltb7-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/source-animal-product-preclinical-and-clinical-issues-concerning-use-xenotransplantation-products",
+        "docs/reference/human-infra-c2-longtail-seventh-batch-manual-fulltext-extraction-register.json"
+      ],
+      "registeredExactClaimUse": "Use only for bounded source-context extraction before independent fresh review; exact source claims may be converted into artifacts only after fresh-review verdict and reviewed-artifact gate.",
+      "registeredTransferBoundary": "Transfers only to independent fresh review and possible bounded reviewed-artifact prep; no model variable, feasibility conclusion, clinical recommendation or individual advice may be filled directly from this row.",
+      "freshReviewFinding": "Fresh review supports the FDA xenotransplantation specific guidance route as a bounded source-context anchor for source-animal, product, preclinical and clinical issue vocabulary; it does not establish clinical effectiveness, availability, replacement-organ feasibility or individual treatment advice.",
+      "content": {
+        "transferBoundaryQuestion": "How may this reviewed source transfer into Human Infra without overclaiming?",
+        "domainTransferVerdict": "transfer-boundary-present-and-required",
+        "registeredTransferBoundary": "Transfers only to independent fresh review and possible bounded reviewed-artifact prep; no model variable, feasibility conclusion, clinical recommendation or individual advice may be filled directly from this row.",
+        "sourceExtractionTransferBoundary": "Fresh review supports the FDA xenotransplantation specific guidance route as a bounded source-context anchor for source-animal, product, preclinical and clinical issue vocabulary; it does not establish clinical effectiveness, availability, replacement-organ feasibility or individual treatment advice.",
+        "blockedTransferUses": [
+          "calibrated-prediction",
+          "individual-advice",
+          "individual-death-date-output",
+          "intervention-ranking",
+          "clinical-validity-claim",
+          "domain-claim-upgrade"
+        ]
+      }
+    },
+    {
+      "artifactId": "C2LTB7-MFART-003-DOWNGRADE-CHECK",
+      "artifactType": "reviewed-downgrade-check",
+      "artifactStatus": "filled-reviewed-c2ltb7-manual-fulltext-artifact-model-blocked",
+      "sourceRowKind": "manual-fulltext-fresh-review-row",
+      "reviewId": "C2LTB7-MFFRV-006",
+      "manualExtractionId": "C2LTB7-MFEXT-006",
+      "originTaskId": "C2LTB7-EXT-023",
+      "sourceResolutionId": "C2LTB7-SRR-005",
+      "candidateId": "C2LTB7-SRR-005-CAND-01",
+      "candidateRole": "fda-xenotransplantation-specific-guidance-route",
+      "domainId": "xenotransplantation-bioengineered-organ-replacement",
+      "localDomainPath": "domains/c2-source-maintenance/xenotransplantation-bioengineered-organ-replacement",
+      "sourceTitle": "Source Animal, Product, Preclinical, and Clinical Issues Concerning the Use of Xenotransplantation Products in Humans",
+      "sourceUrl": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/source-animal-product-preclinical-and-clinical-issues-concerning-use-xenotransplantation-products",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "filled-from-eligible-manual-fulltext-fresh-review",
+      "sourceVerdictDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "modelAdmissionDecision": "blocked-pending-c2ltb7-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/source-animal-product-preclinical-and-clinical-issues-concerning-use-xenotransplantation-products",
+        "docs/reference/human-infra-c2-longtail-seventh-batch-manual-fulltext-extraction-register.json"
+      ],
+      "registeredExactClaimUse": "Use only for bounded source-context extraction before independent fresh review; exact source claims may be converted into artifacts only after fresh-review verdict and reviewed-artifact gate.",
+      "registeredTransferBoundary": "Transfers only to independent fresh review and possible bounded reviewed-artifact prep; no model variable, feasibility conclusion, clinical recommendation or individual advice may be filled directly from this row.",
+      "freshReviewFinding": "Fresh review supports the FDA xenotransplantation specific guidance route as a bounded source-context anchor for source-animal, product, preclinical and clinical issue vocabulary; it does not establish clinical effectiveness, availability, replacement-organ feasibility or individual treatment advice.",
+      "content": {
+        "downgradeQuestion": "When must this artifact be downgraded or blocked?",
+        "downgradeVerdict": "Eligible only for bounded artifact preparation; downgrade if used to infer feasibility, efficacy, safety, patient selection or calibrated survival effects.",
+        "reviewerVerdict": "support-with-boundary",
+        "downgradeRequiredWhen": [
+          "Eligible only for bounded artifact preparation; downgrade if used to infer feasibility, efficacy, safety, patient selection or calibrated survival effects.",
+          "The source is used outside bounded source/variable/endpoint/uncertainty/transfer/downgrade artifact preparation.",
+          "The source is used for calibrated prediction, clinical validity, individual advice, intervention ranking or death-date output."
+        ],
+        "blockedSiblingPolicy": "Sibling manual/fulltext rows that stayed dynamic-registration, access-restricted, duplicate-lineage or index/provenance blocked cannot create direct reviewed content artifacts in this register."
+      }
+    }
+  ],
+  "blockedRows": [
+    {
+      "blockedRowKind": "manual-fulltext-dynamic-registration-route",
+      "reviewId": "C2LTB7-MFFRV-003",
+      "manualExtractionId": "C2LTB7-MFEXT-003",
+      "originTaskId": "C2LTB7-EXT-021",
+      "sourceResolutionId": "C2LTB7-SRR-003",
+      "candidateId": "C2LTB7-SRR-003-CAND-01",
+      "domainId": "organ-donor-registry-anatomical-gift-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/organ-donor-registry-anatomical-gift-continuity",
+      "sourceTitle": "Register as an Organ, Eye, and Tissue Donor",
+      "sourceUrl": "https://www.donatelife.net/register/",
+      "reviewerVerdict": "blocked-or-context-only",
+      "artifactPromotionDecision": "blocked-dynamic-registration-no-direct-artifact-fill",
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://www.donatelife.net/register/",
+        "docs/reference/human-infra-c2-longtail-seventh-batch-manual-fulltext-extraction-register.json"
+      ],
+      "blockReason": "Dynamic registration route and challenge-gated local access create source-content uncertainty; preserve route metadata only.",
+      "requiredBeforeArtifactFill": "Browser/manual capture of stable registration-flow content and independent review before any artifact fill.",
+      "nextAction": "Keep as route/context-only until browser/manual capture and independent review verify stable registration-flow content."
+    },
+    {
+      "blockedRowKind": "manual-fulltext-access-restricted-route",
+      "reviewId": "C2LTB7-MFFRV-004",
+      "manualExtractionId": "C2LTB7-MFEXT-004",
+      "originTaskId": "C2LTB7-EXT-021",
+      "sourceResolutionId": "C2LTB7-SRR-003",
+      "candidateId": "C2LTB7-SRR-003-CAND-02",
+      "domainId": "organ-donor-registry-anatomical-gift-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/organ-donor-registry-anatomical-gift-continuity",
+      "sourceTitle": "RegisterMe donor registration route",
+      "sourceUrl": "https://registerme.org/",
+      "reviewerVerdict": "blocked-or-context-only",
+      "artifactPromotionDecision": "blocked-access-restricted-no-direct-artifact-fill",
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://registerme.org/",
+        "docs/reference/human-infra-c2-longtail-seventh-batch-manual-fulltext-extraction-register.json"
+      ],
+      "blockReason": "Access-restricted route cannot support reviewed artifacts without manually captured source content and independent review.",
+      "requiredBeforeArtifactFill": "Accessible source capture and independent review before any artifact fill.",
+      "nextAction": "Keep as route/context-only until source content can be captured and fresh reviewed under jurisdiction and flow boundaries."
+    },
+    {
+      "blockedRowKind": "manual-fulltext-duplicate-lineage-route",
+      "reviewId": "C2LTB7-MFFRV-005",
+      "manualExtractionId": "C2LTB7-MFEXT-005",
+      "originTaskId": "C2LTB7-EXT-022",
+      "sourceResolutionId": "C2LTB7-SRR-004",
+      "candidateId": "C2LTB7-SRR-004-CAND-01",
+      "domainId": "organ-donor-registry-anatomical-gift-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/organ-donor-registry-anatomical-gift-continuity",
+      "sourceTitle": "Clinical Guidance for Transplant Safety",
+      "sourceUrl": "https://www.cdc.gov/transplant-safety/hcp/clinical-guidance/index.html",
+      "reviewerVerdict": "blocked-or-context-only",
+      "artifactPromotionDecision": "blocked-duplicate-lineage-no-direct-artifact-fill",
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://www.cdc.gov/transplant-safety/hcp/clinical-guidance/index.html",
+        "docs/reference/human-infra-c2-longtail-seventh-batch-manual-fulltext-extraction-register.json"
+      ],
+      "blockReason": "Duplicate CDC lineage creates evidence-counting risk and domain mismatch risk for donor-registry claims.",
+      "requiredBeforeArtifactFill": "Retain only one canonical source route; duplicate route cannot create direct artifacts.",
+      "nextAction": "Preserve as duplicate lineage context only; do not prepare reviewed artifacts from this row."
+    },
+    {
+      "blockedRowKind": "manual-fulltext-index-provenance-route",
+      "reviewId": "C2LTB7-MFFRV-007",
+      "manualExtractionId": "C2LTB7-MFEXT-007",
+      "originTaskId": "C2LTB7-EXT-024",
+      "sourceResolutionId": "C2LTB7-SRR-006",
+      "candidateId": "C2LTB7-SRR-006-CAND-01",
+      "domainId": "xenotransplantation-bioengineered-organ-replacement",
+      "localDomainPath": "domains/c2-source-maintenance/xenotransplantation-bioengineered-organ-replacement",
+      "sourceTitle": "Xenotransplantation Guidances",
+      "sourceUrl": "https://www.fda.gov/vaccines-blood-biologics/biologics-guidances/xenotransplantation-guidances",
+      "reviewerVerdict": "blocked-or-context-only",
+      "artifactPromotionDecision": "blocked-index-route-no-direct-artifact-fill",
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://www.fda.gov/vaccines-blood-biologics/biologics-guidances/xenotransplantation-guidances",
+        "docs/reference/human-infra-c2-longtail-seventh-batch-manual-fulltext-extraction-register.json"
+      ],
+      "blockReason": "Index/provenance route lacks a single extractable guidance scope for artifact fill; preserve only as route-selection context.",
+      "requiredBeforeArtifactFill": "Use the specific guidance route rather than index/provenance page before any artifact fill.",
+      "nextAction": "Keep as index/provenance context; select specific FDA xenotransplantation guidance documents for any future artifact fill."
+    }
+  ],
+  "summary": {
+    "reviewerVerdictCounts": {
+      "support-with-boundary": 3,
+      "blocked-or-context-only": 4
+    },
+    "reviewedArtifactsCreated": 18,
+    "blockedRowsPreserved": 4,
+    "artifactTypeCounts": {
+      "reviewed-source-card": 3,
+      "reviewed-variable-card": 3,
+      "reviewed-endpoint-card": 3,
+      "reviewed-uncertainty-card": 3,
+      "reviewed-transfer-boundary-card": 3,
+      "reviewed-downgrade-check": 3
+    },
+    "modelAdmissionDecision": "blocked-pending-c2ltb7-reviewed-artifact-gates-and-calibrated-model-validation",
+    "nextWorkOrder": "Update model-admission candidate registry only as L1/L2-only bounded research artifacts; keep L4/L5 calibrated model admission, individual advice and clinical validity claims blocked."
+  },
+  "indexRequirements": [
+    "README.md",
+    "AGENTS.md",
+    "docs/AGENTS.md",
+    "docs/reference/README.md",
+    "docs/reference/human-infra-maturity-roadmap.md",
+    "tools/README.md",
+    "tools/AGENTS.md"
+  ]
+}

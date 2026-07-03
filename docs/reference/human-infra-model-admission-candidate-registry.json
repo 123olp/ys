@@ -18,7 +18,8 @@
       "docs/reference/human-infra-c2-longtail-third-batch-reviewed-card-artifact-register.json",
       "docs/reference/human-infra-c2-longtail-fourth-batch-manual-fulltext-reviewed-card-artifact-register.json",
       "docs/reference/human-infra-c2-longtail-fifth-batch-reviewed-card-artifact-register.json",
-      "docs/reference/human-infra-c2-longtail-sixth-batch-reviewed-card-artifact-register.json"
+      "docs/reference/human-infra-c2-longtail-sixth-batch-reviewed-card-artifact-register.json",
+      "docs/reference/human-infra-c2-longtail-seventh-batch-manual-fulltext-reviewed-card-artifact-register.json"
     ],
     "toyModelOutput": "web/src/data/life-path-toy-model.json",
     "toyModelAudit": "web/src/data/life-path-toy-model-audit.json",
@@ -29,16 +30,16 @@
     "nhatsPreoutcomeAggregationProtocol": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_preoutcome_aggregation_protocol.json"
   },
   "aggregateDecision": {
-    "reviewedArtifactRegisters": 8,
-    "reviewedArtifactsCovered": 1314,
-    "blockedRowsPreserved": 44,
+    "reviewedArtifactRegisters": 9,
+    "reviewedArtifactsCovered": 1332,
+    "blockedRowsPreserved": 48,
     "highestReviewedArtifactLevel": "L2",
     "highestCurrentModelLevel": "L3",
     "l4AggregateCalibratedAdmissions": 0,
     "l5IndividualAdmissions": 0,
     "calibratedPredictionAvailable": false,
     "individualUseAllowed": false,
-    "decision": "reviewed-artifacts-are-L1/L2-only; B1-B6 reviewed artifacts remain non-calibrated; synthetic toy and public aggregate baseline may remain L3; L4 and L5 stay blocked"
+    "decision": "reviewed-artifacts-are-L1/L2-only; B1-B7 reviewed artifacts remain non-calibrated; synthetic toy and public aggregate baseline may remain L3; L4 and L5 stay blocked"
   },
   "reviewedArtifactAdmissionDecisions": [
     {
@@ -383,6 +384,54 @@
       "sourceRegisterStatusMustContain": "model-blocked",
       "reviewedArtifactCount": 144,
       "blockedRowCount": 12,
+      "currentAdmissionLevel": "L1/L2-only",
+      "maxLevelWithoutAdditionalGates": "L2",
+      "allowedUses": [
+        "bounded source-card evidence",
+        "candidate variable language",
+        "candidate endpoint language",
+        "uncertainty channel framing",
+        "transfer-boundary framing",
+        "downgrade-trigger framing"
+      ],
+      "blockedLevels": [
+        "L3-synthetic-input-without-explicit-scenario-selection",
+        "L4-aggregate-calibrated-research-model",
+        "L5-individual-decision-support"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim"
+      ],
+      "requiredBeforeL3": [
+        "explicit synthetic scenario file",
+        "model card",
+        "sanity checks",
+        "synthetic-only output boundary"
+      ],
+      "requiredBeforeL4": [
+        "narrow estimand",
+        "governed data access",
+        "confirmed variables and value labels",
+        "cohort flow",
+        "survey design or sampling design",
+        "validation and calibration diagnostics"
+      ],
+      "requiredBeforeL5": [
+        "external clinical and ethical governance",
+        "individual consent and appeal process",
+        "external validation for intended use"
+      ]
+    },
+    {
+      "decisionId": "MACR-009-c2ltb7-manual-fulltext-reviewed-artifacts",
+      "sourceRegisterPath": "docs/reference/human-infra-c2-longtail-seventh-batch-manual-fulltext-reviewed-card-artifact-register.json",
+      "sourceRegisterStatusMustContain": "model-blocked",
+      "reviewedArtifactCount": 18,
+      "blockedRowCount": 4,
       "currentAdmissionLevel": "L1/L2-only",
       "maxLevelWithoutAdditionalGates": "L2",
       "allowedUses": [
