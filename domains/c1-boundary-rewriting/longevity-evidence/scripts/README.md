@@ -23,6 +23,7 @@
 - `validate_nhanes_public_lmf_weighted_estimator_readiness.py`：离线审计 `data/manual/life_path_nhanes_public_lmf_weighted_estimator_readiness.json` 的 schema、上游 eligible-base readiness hash、R `survey` / `svydesign` 后端选择、design-object 合约、domain indicator 合约、readiness gates 和禁止 weighted domain output 边界，并导出 `web/src/data/life-path-nhanes-public-lmf-weighted-estimator-readiness-validation.json`。
 - `validate_nhanes_public_lmf_r_survey_runtime_smoke.py`：离线审计 `data/manual/life_path_nhanes_public_lmf_r_survey_runtime_smoke_readiness.json`，探测当前环境是否有 `Rscript`、`survey` 包和 synthetic `svydesign` / domain `subset` smoke 能力，并导出 `web/src/data/life-path-nhanes-public-lmf-r-survey-runtime-smoke-validation.json`；它不安装包、不联网、不处理 public NHANES rows、不输出 weighted domain result。
 - `run_nhanes_public_lmf_r_survey_controlled_runtime_smoke.sh`：使用 `runtime/nhanes-public-lmf-r-survey-conda.yml` 创建或修复本地 `.runtime/nhanes-r-survey/` conda prefix，再调用 runtime smoke validator 并导出 `web/src/data/life-path-nhanes-public-lmf-r-survey-controlled-runtime-smoke-validation.json`；它只证明 controlled R `survey` synthetic smoke 可复现，不处理 NHANES 行级数据，不打开 weighted domain output。
+- `validate_nhanes_public_lmf_weighted_domain_output_readiness.py`：离线审计 `data/manual/life_path_nhanes_public_lmf_weighted_domain_output_readiness.json` 的上游 weighted-estimator / runtime smoke hash、controlled R `survey` smoke、domain indicator、DOF/sparse-domain、disclosure gates 和禁止 public weighted-domain output 边界，并导出 `web/src/data/life-path-nhanes-public-lmf-weighted-domain-output-readiness-validation.json`。
 - `validate_nhats_official_source_refresh.py`：读取 `data/manual/life_path_nhats_official_source_refresh_register.json`，导出 `web/src/data/life-path-nhats-official-source-refresh-validation.json`，验证 8 个 NHATS 官方公开来源的 HTTP 状态、内容长度、SHA-256、gate impact 和 no-download / no-extraction / no-calibration / no-individual-prediction 边界。
 - `validate_nhats_registration_evidence_template.py`：读取 `data/manual/life_path_nhats_registration_evidence_template.json`，导出 `web/src/data/life-path-nhats-registration-evidence-template-validation.json`，验证注册/访问证据模板只处于 template-only，继续阻塞真实注册证明、download、extraction、raw data 入库、public AI 上传、calibration 和 individual prediction。
 - `validate_nhats_file_tier_table.py`：读取 `data/manual/life_path_nhats_file_tier_table.json`，导出 `web/src/data/life-path-nhats-file-tier-table-validation.json`，验证 R13/R14 文件层级表、上游 acquisition/official-source/registration 绑定、16 个文件行、方法文档依赖和 no-download / no-extraction / no-repo-storage / no-public-AI / no-calibration / no-individual-prediction 边界。
@@ -49,6 +50,7 @@
 - `audit_life_path_toy_model.py` 同时审计 NHANES public-use LMF domain/subpopulation rule readiness，保证官方 domain 规则不会绕过 estimator、eligible base、DOF、disclosure、calibration 和 individual prediction 阻塞门。
 - `audit_life_path_toy_model.py` 同时审计 NHANES public-use LMF positive-weight eligible-base readiness，保证 `WTMEC2YR > 0` eligible-base 诊断不会绕过 no-row-persistence、full-design-input、weighted domain inference、校准或 individual prediction 阻塞门。
 - `audit_life_path_toy_model.py` 同时审计 NHANES public-use LMF weighted-estimator readiness 和 R `survey` runtime smoke readiness，保证 R `survey` / `svydesign` 后端选择与运行时探测不会绕过 domain indicator test、DOF/sparse-domain review、disclosure gate、weighted output、校准或 individual prediction 阻塞门。
+- NHANES public-use LMF weighted-domain output readiness 由独立 `validate_nhanes_public_lmf_weighted_domain_output_readiness.py` / `make nhanes-public-lmf-weighted-domain-output-readiness-audit` 审计；它不进入默认 toy output 链，避免 controlled runtime smoke 被误读为真实 public weighted-domain output permission。
 
 运行示例：
 
@@ -65,6 +67,7 @@ python3 domains/c1-boundary-rewriting/longevity-evidence/scripts/validate_nhanes
 python3 domains/c1-boundary-rewriting/longevity-evidence/scripts/validate_nhanes_public_lmf_weighted_estimator_readiness.py
 python3 domains/c1-boundary-rewriting/longevity-evidence/scripts/validate_nhanes_public_lmf_r_survey_runtime_smoke.py
 domains/c1-boundary-rewriting/longevity-evidence/scripts/run_nhanes_public_lmf_r_survey_controlled_runtime_smoke.sh
+python3 domains/c1-boundary-rewriting/longevity-evidence/scripts/validate_nhanes_public_lmf_weighted_domain_output_readiness.py
 python3 domains/c1-boundary-rewriting/longevity-evidence/scripts/validate_nhats_official_source_refresh.py
 python3 domains/c1-boundary-rewriting/longevity-evidence/scripts/validate_nhats_registration_evidence_template.py
 python3 domains/c1-boundary-rewriting/longevity-evidence/scripts/validate_nhats_file_tier_table.py

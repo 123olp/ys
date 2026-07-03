@@ -1,0 +1,169 @@
+{
+  "schemaVersion": "human-infra.nhanes-public-lmf-weighted-domain-output-readiness.v1",
+  "readinessId": "nhanes-public-lmf-2017-2018-weighted-domain-output-readiness",
+  "status": "public-real-data-weighted-domain-output-blocked-safety-gates-registered",
+  "sourceId": "nhanes-public-lmf-2017-2018",
+  "sourceAuthority": "CDC/NCHS NHANES public-use DEMO_J plus public-use Linked Mortality File; R survey domain mechanism; Human Infra disclosure and model-admission boundaries.",
+  "lastReviewedDate": "2026-07-03",
+  "upstreamWeightedEstimatorReadiness": {
+    "path": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_weighted_estimator_readiness.json",
+    "sha256": "469d6cdcdc846bfed97a449f9a8a3bd2e197bfe214b996cb121c800979f5ef4a",
+    "validationPath": "web/src/data/life-path-nhanes-public-lmf-weighted-estimator-readiness-validation.json"
+  },
+  "upstreamRuntimeSmokeReadiness": {
+    "path": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_r_survey_runtime_smoke_readiness.json",
+    "sha256": "117e03dfd6cfec882f1b3c0587323478d9b8cae1e277a6cbe119b166fb22b0d5",
+    "defaultValidationPath": "web/src/data/life-path-nhanes-public-lmf-r-survey-runtime-smoke-validation.json",
+    "controlledValidationPath": "web/src/data/life-path-nhanes-public-lmf-r-survey-controlled-runtime-smoke-validation.json"
+  },
+  "officialSourceTrace": {
+    "varianceEstimationTutorial": "https://wwwn.cdc.gov/nchs/nhanes/tutorials/varianceestimation.aspx",
+    "weightingTutorial": "https://wwwn.cdc.gov/nchs/nhanes/tutorials/weighting.aspx",
+    "surveySubsetDocumentation": "https://r-survey.r-forge.r-project.org/survey/html/subset.survey.design.html",
+    "linkedMortalityPage": "https://www.cdc.gov/nchs/linked-data/mortality-files/index.html"
+  },
+  "sourceFindings": [
+    {
+      "id": "NHANES-DOMAIN-KEEP-FULL-DESIGN",
+      "sourceUrl": "https://wwwn.cdc.gov/nchs/nhanes/tutorials/varianceestimation.aspx",
+      "observedFact": "CDC/NCHS NHANES variance guidance requires domain/subpopulation analysis to retain the full eligible design information rather than dropping records before variance estimation.",
+      "modelConsequence": "Weighted domain output must be blocked unless the estimator uses a post-design domain indicator or equivalent survey-domain mechanism."
+    },
+    {
+      "id": "R-SURVEY-SUBSET-DOMAIN-MECHANISM",
+      "sourceUrl": "https://r-survey.r-forge.r-project.org/survey/html/subset.survey.design.html",
+      "observedFact": "R survey subset.survey.design restricts a survey design to a subpopulation while retaining original design information about clusters and strata.",
+      "modelConsequence": "The controlled runtime smoke can prove only synthetic domain-subset mechanics; public NHANES output still requires public-data domain diagnostics and disclosure review."
+    },
+    {
+      "id": "NHANES-DOMAIN-DOF-WARNING",
+      "sourceUrl": "https://wwwn.cdc.gov/nchs/nhanes/tutorials/varianceestimation.aspx",
+      "observedFact": "CDC/NCHS warns that subgroup degrees of freedom can differ when not all PSUs and strata are represented in a subgroup.",
+      "modelConsequence": "Public weighted domain output must remain blocked until domain degrees-of-freedom, lonely PSU, empty domain and sparse-domain behavior are reviewed."
+    }
+  ],
+  "outputSafetyContract": {
+    "domainIndicatorContract": {
+      "domainIndicatorRequired": true,
+      "domainIndicatorTiming": "after design object creation",
+      "rowDropBeforeDesignAllowed": false,
+      "requiresFullDesignInputBeforeDomain": true,
+      "syntheticDomainSubsetSmokeProvenByControlledRuntime": true,
+      "publicDataDomainIndicatorEvaluated": false
+    },
+    "dofSparseDomainContract": {
+      "domainDegreesOfFreedomDiagnosticRequired": true,
+      "minimumPsuPerReportedStratumDiagnosticRequired": true,
+      "lonelyPsuPolicyRequired": true,
+      "emptyDomainPolicyRequired": true,
+      "sparseDomainSuppressionPolicyRequired": true,
+      "publicDataDofSparseReviewComplete": false
+    },
+    "disclosureContract": {
+      "publicOutputDisclosureReviewRequired": true,
+      "cellCountDisclosureDiagnosticRequired": true,
+      "dominanceOrIdentifiabilityReviewRequired": true,
+      "publicOutputSuppressionPolicyRequired": true,
+      "publicDisclosureReviewComplete": false
+    },
+    "outputState": {
+      "weightedDomainOutputImplemented": false,
+      "publicWeightedDomainCellsAllowed": false,
+      "publicWeightedDomainRatesAllowed": false,
+      "publicDesignBasedIntervalsAllowed": false,
+      "calibrationAllowed": false,
+      "individualPredictionAllowed": false,
+      "medicalAdviceAllowed": false
+    }
+  },
+  "readinessGates": [
+    {
+      "id": "upstream-weighted-estimator-readiness-validated",
+      "status": "ready",
+      "blocksWeightedDomainOutput": false,
+      "evidence": "Upstream weighted-estimator readiness validation passes and still blocks weighted domain output."
+    },
+    {
+      "id": "controlled-r-survey-runtime-smoke-passed",
+      "status": "ready",
+      "blocksWeightedDomainOutput": false,
+      "evidence": "Controlled conda runtime validation proves R 4.3.3 + survey can run a synthetic svydesign/domain subset smoke."
+    },
+    {
+      "id": "domain-indicator-contract-registered",
+      "status": "ready",
+      "blocksWeightedDomainOutput": false,
+      "evidence": "The contract requires post-design domain indicators and rejects row drop before design creation."
+    },
+    {
+      "id": "dof-sparse-domain-contract-registered",
+      "status": "ready",
+      "blocksWeightedDomainOutput": false,
+      "evidence": "The contract requires domain DOF, PSU/strata, lonely PSU, empty domain and sparse-domain review before output."
+    },
+    {
+      "id": "disclosure-contract-registered",
+      "status": "ready",
+      "blocksWeightedDomainOutput": false,
+      "evidence": "The contract requires public disclosure review, suppression policy and identifiability review before output."
+    },
+    {
+      "id": "public-data-domain-indicator-not-evaluated",
+      "status": "blocked",
+      "blocksWeightedDomainOutput": true,
+      "evidence": "No public NHANES row-level domain indicator diagnostic output has been produced or disclosure-reviewed."
+    },
+    {
+      "id": "public-data-dof-sparse-review-not-complete",
+      "status": "blocked",
+      "blocksWeightedDomainOutput": true,
+      "evidence": "No public NHANES domain DOF, lonely PSU, empty domain or sparse-domain diagnostic has been reviewed for release."
+    },
+    {
+      "id": "public-output-disclosure-not-reviewed",
+      "status": "blocked",
+      "blocksWeightedDomainOutput": true,
+      "evidence": "No public weighted domain cells, rates, intervals or subgroup summaries have passed disclosure review."
+    },
+    {
+      "id": "weighted-domain-output-not-implemented",
+      "status": "blocked",
+      "blocksWeightedDomainOutput": true,
+      "evidence": "No repository artifact currently computes or stores public NHANES weighted domain rates or design-based intervals."
+    }
+  ],
+  "gateSummary": {
+    "requiredGateCount": 9,
+    "readyGateCount": 5,
+    "partialGateCount": 0,
+    "blockedGateCount": 4,
+    "controlledRuntimeSmokePassed": true,
+    "syntheticDomainSubsetSmokePassed": true,
+    "publicDataDomainIndicatorEvaluated": false,
+    "publicDataDofSparseReviewComplete": false,
+    "publicDisclosureReviewComplete": false,
+    "weightedDomainOutputAllowed": false
+  },
+  "allowedUses": [
+    "weighted-domain output safety gate audit",
+    "proof that controlled synthetic R survey smoke is separated from public-data output permission",
+    "pre-output checklist for future NHANES weighted domain work"
+  ],
+  "blockedUses": [
+    "survey-population inference",
+    "weighted domain mortality rate publication",
+    "design-based confidence interval output",
+    "calibrated Human Infra prediction",
+    "intervention effect estimation",
+    "causal claim",
+    "individual prediction",
+    "individual death-date output",
+    "medical advice"
+  ],
+  "nextWork": [
+    "Implement a no-row-persistence public NHANES domain indicator diagnostic that reports only disclosure-safe gate metadata.",
+    "Add domain DOF, lonely PSU, empty-domain and sparse-domain diagnostics before any weighted output.",
+    "Add a disclosure-reviewed output envelope that blocks small or identifiable domain cells.",
+    "Only after these gates pass, consider a separate weighted domain output implementation gate."
+  ]
+}

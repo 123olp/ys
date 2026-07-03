@@ -1,0 +1,35 @@
+{
+  "schemaVersion": "human-infra.nhanes-public-lmf-weighted-domain-output-readiness-validation.v1",
+  "status": "pass",
+  "generatedAt": "2026-07-03T10:21:11.108490+00:00",
+  "readinessPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_weighted_domain_output_readiness.json",
+  "readinessSha256": "df23e4c4cacee4279ccd2bea108c7440dd352ec906bea3fd708df93f84c59931",
+  "validationPath": "web/src/data/life-path-nhanes-public-lmf-weighted-domain-output-readiness-validation.json",
+  "summary": {
+    "sourceId": "nhanes-public-lmf-2017-2018",
+    "readyGateCount": 5,
+    "blockedGateCount": 4,
+    "controlledRuntimeSmokePassed": true,
+    "syntheticDomainSubsetSmokePassed": true,
+    "publicDataDomainIndicatorEvaluated": false,
+    "publicDataDofSparseReviewComplete": false,
+    "publicDisclosureReviewComplete": false,
+    "weightedDomainOutputAllowed": false
+  },
+  "nonProofBoundary": {
+    "confirms": [
+      "controlled synthetic R survey domain subset smoke is available",
+      "domain indicator, DOF/sparse-domain and disclosure gates are registered",
+      "public weighted-domain output remains blocked"
+    ],
+    "doesNotConfirm": [
+      "public NHANES weighted domain output",
+      "design-based confidence intervals",
+      "disclosure-reviewed public output",
+      "calibration",
+      "individual prediction",
+      "medical advice"
+    ]
+  },
+  "errors": []
+}
