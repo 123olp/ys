@@ -145,6 +145,13 @@ DEFAULT_NHATS_FILE_TIER_TABLE = (
     / "manual"
     / "life_path_nhats_file_tier_table.json"
 )
+DEFAULT_NHATS_FILE_TIER_TABLE_VALIDATION = (
+    REPO_ROOT
+    / "web"
+    / "src"
+    / "data"
+    / "life-path-nhats-file-tier-table-validation.json"
+)
 DEFAULT_NHATS_FIRST_ESTIMAND_PROTOCOL = (
     REPO_ROOT
     / "domains"
@@ -2611,6 +2618,124 @@ def audit_nhats_file_tier_table(table_path: Path) -> dict[str, Any]:
     return {
         "path": str(table_path.relative_to(REPO_ROOT)),
         "sha256": sha256_file(table_path) if exists else None,
+        "status": "PASS" if summarize_checks(checks)["fail"] == 0 else "FAIL",
+        "checks": checks,
+        "summary": summarize_checks(checks),
+    }
+
+
+def audit_nhats_file_tier_table_validation(
+    validation_path: Path,
+    table_path: Path,
+    acquisition_readiness_path: Path,
+) -> dict[str, Any]:
+    checks: list[dict[str, Any]] = []
+    exists = validation_path.exists()
+    add_check(
+        checks,
+        "nhats-file-tier-table-validation-exists",
+        status_from_bool(exists),
+        str(validation_path.relative_to(REPO_ROOT)),
+    )
+    validation = load_json(validation_path) if exists else {}
+
+    schema_ok = (
+        validation.get("schemaVersion")
+        == "human-infra.life-path-nhats-file-tier-table-validation.v1"
+    )
+    add_check(
+        checks,
+        "nhats-file-tier-table-validation-schema",
+        status_from_bool(exists and schema_ok),
+        f"schemaVersion={validation.get('schemaVersion')!r}",
+    )
+
+    table_exists = table_path.exists()
+    acquisition_readiness_exists = acquisition_readiness_path.exists()
+    source_ok = (
+        table_exists
+        and acquisition_readiness_exists
+        and validation.get("tablePath") == str(table_path.relative_to(REPO_ROOT))
+        and validation.get("tableSha256") == sha256_file(table_path)
+        and validation.get("acquisitionReadinessPath")
+        == str(acquisition_readiness_path.relative_to(REPO_ROOT))
+        and validation.get("acquisitionReadinessSha256")
+        == sha256_file(acquisition_readiness_path)
+        and validation.get("tableId") == "nhats-r13-r14-file-tier-table-draft"
+        and validation.get("acquisitionReadinessId") == "nhats-acquisition-readiness-2026-07-02"
+    )
+    add_check(
+        checks,
+        "nhats-file-tier-table-validation-source-hash",
+        status_from_bool(exists and source_ok),
+        "validation must point back to current file-tier table and acquisition-readiness paths and sha256 hashes",
+    )
+
+    summary = validation.get("summary")
+    status_ok = (
+        validation.get("overallStatus") == "PASS"
+        and isinstance(summary, dict)
+        and summary.get("fail") == 0
+        and isinstance(validation.get("checks"), list)
+    )
+    add_check(
+        checks,
+        "nhats-file-tier-table-validation-pass",
+        status_from_bool(exists and status_ok),
+        f"overallStatus={validation.get('overallStatus')!r} summary={summary!r}",
+    )
+
+    row_summary = validation.get("rowSummary")
+    tier_summary = row_summary.get("tierSummary") if isinstance(row_summary, dict) else {}
+    row_summary_ok = (
+        isinstance(row_summary, dict)
+        and isinstance(tier_summary, dict)
+        and tier_summary.get("fileRowCount") == 16
+        and tier_summary.get("candidateCoreRows") == 4
+        and tier_summary.get("publicUseRegistrationRequiredRows") == 6
+        and tier_summary.get("sensitiveApplicationRequiredRows") == 10
+        and tier_summary.get("downloadAllowedRows") == 0
+        and tier_summary.get("extractionAllowedRows") == 0
+        and tier_summary.get("repoStorageAllowedRows") == 0
+        and tier_summary.get("publicAiUploadAllowedRows") == 0
+    )
+    add_check(
+        checks,
+        "nhats-file-tier-table-validation-row-summary",
+        status_from_bool(exists and row_summary_ok),
+        "validation must summarize 16 file rows while keeping all download/extraction/storage/public-AI counts at 0",
+    )
+
+    boundary = validation.get("boundary")
+    boundary_ok = (
+        isinstance(boundary, dict)
+        and boundary.get("fileTierTableReady") is False
+        and boundary.get("downloadAllowed") is False
+        and boundary.get("extractionScriptAllowed") is False
+        and boundary.get("rawDataAllowedInRepository") is False
+        and boundary.get("publicAiUploadAllowed") is False
+        and boundary.get("calibrationAllowed") is False
+        and boundary.get("individualPredictionAllowed") is False
+    )
+    add_check(
+        checks,
+        "nhats-file-tier-table-validation-boundary",
+        status_from_bool(exists and boundary_ok),
+        "validation must keep file-tier readiness, download, extraction, raw repository data, public AI upload, calibration and individual prediction blocked",
+    )
+
+    note = str(validation.get("note", "")).lower()
+    note_ok = "does not prove nhats registration" in note and "model readiness" in note
+    add_check(
+        checks,
+        "nhats-file-tier-table-validation-non-proof-note",
+        status_from_bool(exists and note_ok),
+        "validation must state that it does not prove registration, data access approval, governed storage, Colectica confirmation or model readiness",
+    )
+
+    return {
+        "path": str(validation_path.relative_to(REPO_ROOT)),
+        "sha256": sha256_file(validation_path) if exists else None,
         "status": "PASS" if summarize_checks(checks)["fail"] == 0 else "FAIL",
         "checks": checks,
         "summary": summarize_checks(checks),
@@ -6061,6 +6186,7 @@ def audit_model(
     nhats_synthetic_storage_destruction_drill_path: Path,
     nhats_synthetic_storage_destruction_drill_validation_path: Path,
     nhats_file_tier_table_path: Path,
+    nhats_file_tier_table_validation_path: Path,
     nhats_first_estimand_protocol_path: Path,
     nhats_variable_confirmation_matrix_path: Path,
     nhats_cohort_flow_endpoint_protocol_path: Path,
@@ -6299,6 +6425,11 @@ def audit_model(
     nhats_file_tier_table_audit = audit_nhats_file_tier_table(
         nhats_file_tier_table_path,
     )
+    nhats_file_tier_table_validation_audit = audit_nhats_file_tier_table_validation(
+        nhats_file_tier_table_validation_path,
+        nhats_file_tier_table_path,
+        nhats_acquisition_readiness_path,
+    )
     nhats_first_estimand_protocol_audit = audit_nhats_first_estimand_protocol(
         nhats_first_estimand_protocol_path,
     )
@@ -6388,6 +6519,7 @@ def audit_model(
     checks.extend(nhats_controlled_storage_destruction_audit["checks"])
     checks.extend(nhats_synthetic_storage_destruction_drill_audit["checks"])
     checks.extend(nhats_file_tier_table_audit["checks"])
+    checks.extend(nhats_file_tier_table_validation_audit["checks"])
     checks.extend(nhats_first_estimand_protocol_audit["checks"])
     checks.extend(nhats_variable_confirmation_matrix_audit["checks"])
     checks.extend(nhats_cohort_flow_endpoint_protocol_audit["checks"])
@@ -6425,6 +6557,7 @@ def audit_model(
         "nhatsControlledStorageDestruction": nhats_controlled_storage_destruction_audit,
         "nhatsSyntheticStorageDestructionDrill": nhats_synthetic_storage_destruction_drill_audit,
         "nhatsFileTierTable": nhats_file_tier_table_audit,
+        "nhatsFileTierTableValidation": nhats_file_tier_table_validation_audit,
         "nhatsFirstEstimandProtocol": nhats_first_estimand_protocol_audit,
         "nhatsVariableConfirmationMatrix": nhats_variable_confirmation_matrix_audit,
         "nhatsCohortFlowEndpointProtocol": nhats_cohort_flow_endpoint_protocol_audit,
@@ -6534,7 +6667,10 @@ def render_markdown(audit: dict[str, Any]) -> str:
             f"- File-tier table path: `{audit['nhatsFileTierTable']['path']}`",
             f"- File-tier table SHA-256: `{audit['nhatsFileTierTable']['sha256']}`",
             f"- File-tier table status: `{audit['nhatsFileTierTable']['status']}`",
-            "- Boundary: the file-tier table maps official R13/R14 public and sensitive file families, but it still blocks download, extraction, repository storage, public AI upload, calibration and individual prediction.",
+            f"- File-tier validation path: `{audit['nhatsFileTierTableValidation']['path']}`",
+            f"- File-tier validation SHA-256: `{audit['nhatsFileTierTableValidation']['sha256']}`",
+            f"- File-tier validation status: `{audit['nhatsFileTierTableValidation']['status']}`",
+            "- Boundary: the file-tier table maps official R13/R14 public and sensitive file families, and the validator binds it to current upstream access records while still blocking download, extraction, repository storage, public AI upload, calibration and individual prediction.",
             "",
             "## NHATS First Estimand Protocol",
             "",
@@ -6747,6 +6883,11 @@ def parse_args() -> argparse.Namespace:
         default=DEFAULT_NHATS_FILE_TIER_TABLE,
     )
     parser.add_argument(
+        "--nhats-file-tier-table-validation",
+        type=Path,
+        default=DEFAULT_NHATS_FILE_TIER_TABLE_VALIDATION,
+    )
+    parser.add_argument(
         "--nhats-first-estimand-protocol",
         type=Path,
         default=DEFAULT_NHATS_FIRST_ESTIMAND_PROTOCOL,
@@ -6915,6 +7056,9 @@ def main() -> int:
         args.nhats_synthetic_storage_destruction_drill_validation.resolve()
     )
     nhats_file_tier_table_path = args.nhats_file_tier_table.resolve()
+    nhats_file_tier_table_validation_path = (
+        args.nhats_file_tier_table_validation.resolve()
+    )
     nhats_first_estimand_protocol_path = args.nhats_first_estimand_protocol.resolve()
     nhats_variable_confirmation_matrix_path = (
         args.nhats_variable_confirmation_matrix.resolve()
@@ -6999,6 +7143,7 @@ def main() -> int:
         nhats_synthetic_storage_destruction_drill_path,
         nhats_synthetic_storage_destruction_drill_validation_path,
         nhats_file_tier_table_path,
+        nhats_file_tier_table_validation_path,
         nhats_first_estimand_protocol_path,
         nhats_variable_confirmation_matrix_path,
         nhats_cohort_flow_endpoint_protocol_path,

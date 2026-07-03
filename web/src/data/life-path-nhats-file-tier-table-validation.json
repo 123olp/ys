@@ -1,0 +1,156 @@
+{
+  "schemaVersion": "human-infra.life-path-nhats-file-tier-table-validation.v1",
+  "generatedAt": "2026-07-03T06:11:02.401959+00:00",
+  "tablePath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_file_tier_table.json",
+  "tableSha256": "18c151512ffb6e075a134765e13d5b4b07252be10b9e55a211f7d890cefdc6f1",
+  "acquisitionReadinessPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_acquisition_readiness.json",
+  "acquisitionReadinessSha256": "15d8f2ce1144fe40d3a7132bb38d49fa496368f2a339dc0f769a87624225dd94",
+  "officialSourceRefreshRegisterPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_official_source_refresh_register.json",
+  "officialSourceRefreshRegisterSha256": "757d22aa444298d074215955cf04e0ea69b47950824d1bfd55554d466cd89cbf",
+  "registrationEvidenceTemplatePath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_registration_evidence_template.json",
+  "registrationEvidenceTemplateSha256": "403925b01f1fef53518448c27d14504d69532dc06f53ede474fb64f0033fff16",
+  "tableId": "nhats-r13-r14-file-tier-table-draft",
+  "acquisitionReadinessId": "nhats-acquisition-readiness-2026-07-02",
+  "overallStatus": "PASS",
+  "summary": {
+    "pass": 17,
+    "warn": 0,
+    "fail": 0
+  },
+  "roundWindowCandidate": {
+    "id": "nhats-r13-r14-adjacent-round-functional-survival-candidate",
+    "baselineRound": 13,
+    "followupRound": 14,
+    "reason": "Adjacent recent public annual file families can support the first governed late-life functional-survival design review after registration and exact variable confirmation.",
+    "decision": "candidate-only",
+    "extractionAllowed": false
+  },
+  "rowSummary": {
+    "byRound": {
+      "13": 9,
+      "14": 7
+    },
+    "byAccessTier": {
+      "public-use-registration-required": 6,
+      "sensitive-application-required": 10
+    },
+    "byCandidateUse": {
+      "blocked-design-extension": 2,
+      "candidate-core": 4,
+      "excluded-media-first-pass": 2,
+      "excluded-sensitive": 8
+    },
+    "byFormat": {
+      "SAS": 7,
+      "STATA": 7,
+      "TIFF": 2
+    },
+    "tierSummary": {
+      "fileRowCount": 16,
+      "candidateCoreRows": 4,
+      "publicUseRegistrationRequiredRows": 6,
+      "sensitiveApplicationRequiredRows": 10,
+      "downloadAllowedRows": 0,
+      "extractionAllowedRows": 0,
+      "repoStorageAllowedRows": 0,
+      "publicAiUploadAllowedRows": 0
+    }
+  },
+  "boundary": {
+    "fileTierTableReady": false,
+    "downloadAllowed": false,
+    "extractionScriptAllowed": false,
+    "rawDataAllowedInRepository": false,
+    "publicAiUploadAllowed": false,
+    "calibrationAllowed": false,
+    "individualPredictionAllowed": false
+  },
+  "checks": [
+    {
+      "id": "nhats-file-tier-table-exists",
+      "status": "PASS",
+      "detail": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_file_tier_table.json"
+    },
+    {
+      "id": "nhats-file-tier-table-schema",
+      "status": "PASS",
+      "detail": "schemaVersion='human-infra.life-path-nhats-file-tier-table.v1'"
+    },
+    {
+      "id": "nhats-file-tier-table-identity",
+      "status": "PASS",
+      "detail": "file-tier table must bind NHATS source, Data Card, manifest, acquisition readiness and candidate-only status"
+    },
+    {
+      "id": "nhats-file-tier-table-current-decision",
+      "status": "PASS",
+      "detail": "file-tier table must still block download, scripts, repository storage, public AI upload, calibration and individual prediction"
+    },
+    {
+      "id": "nhats-file-tier-table-round-window",
+      "status": "PASS",
+      "detail": "round-window candidate must remain R13/R14 candidate-only and extraction-blocked"
+    },
+    {
+      "id": "nhats-file-tier-table-row-coverage",
+      "status": "PASS",
+      "detail": "missing_row_ids=[]"
+    },
+    {
+      "id": "nhats-file-tier-table-row-shape",
+      "status": "PASS",
+      "detail": "each file row must expose file family, format, access tier, official path, planned use and blocking fields"
+    },
+    {
+      "id": "nhats-file-tier-table-source-paths",
+      "status": "PASS",
+      "detail": "file rows must point to official HTTPS pages and official /system/files paths"
+    },
+    {
+      "id": "nhats-file-tier-table-row-boundaries",
+      "status": "PASS",
+      "detail": "every row must keep download, extraction, repository storage and public AI upload blocked"
+    },
+    {
+      "id": "nhats-file-tier-table-tier-summary",
+      "status": "PASS",
+      "detail": "tier summary must match row counts and keep all download/extraction/storage/AI rows blocked"
+    },
+    {
+      "id": "nhats-file-tier-table-method-docs",
+      "status": "PASS",
+      "detail": "missing_method_doc_ids=[]"
+    },
+    {
+      "id": "nhats-file-tier-table-prohibited-actions",
+      "status": "PASS",
+      "detail": "file-tier table must prohibit premature download, prose-only variables, sensitive-file use, raw storage, public AI upload and individual prediction"
+    },
+    {
+      "id": "nhats-file-tier-table-next-work",
+      "status": "PASS",
+      "detail": "next work must point to canonical format, Colectica variables, weights, endpoint and disclosure-control work"
+    },
+    {
+      "id": "nhats-file-tier-table-source-trace",
+      "status": "PASS",
+      "detail": "source trace must include R13/R14 files, Cross-Year Search, methods documentation and Conditions of Use"
+    },
+    {
+      "id": "upstream-register-bindings",
+      "status": "PASS",
+      "detail": "file-tier table must be bound from acquisition readiness and its official-source / registration upstreams must exist"
+    },
+    {
+      "id": "acquisition-file-access-tier-gate",
+      "status": "PASS",
+      "detail": "acquisition readiness must keep file-access-tier partial and extraction-blocking until registration, approval, canonical format and governed storage are complete"
+    },
+    {
+      "id": "hard-boundary-consistency",
+      "status": "PASS",
+      "detail": "file-tier validation may not move NHATS beyond cannot-extract-yet or open download, extraction, repository storage, public AI upload, calibration or individual prediction"
+    }
+  ],
+  "note": "This validation proves only that the NHATS R13/R14 file-tier candidate table is internally consistent, bound to current upstream access records, and keeps all real download, extraction, raw repository storage, public AI upload, calibration and individual-use actions blocked. It does not prove NHATS registration, data access approval, governed storage execution, Colectica variable confirmation or model readiness."
+}

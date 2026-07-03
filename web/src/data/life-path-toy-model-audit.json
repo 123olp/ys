@@ -1,6 +1,6 @@
 {
   "schemaVersion": "human-infra.life-path-toy-audit.v1",
-  "generatedAt": "2026-07-03T05:48:39.771943+00:00",
+  "generatedAt": "2026-07-03T06:11:00.934333+00:00",
   "modelPath": "web/src/data/life-path-toy-model.json",
   "modelSha256": "a4c92209d79d20579bf1f575d5ebf07ffe5be9ccaf6bf3f3eef08efa287b5377",
   "overallStatus": "PASS",
@@ -654,6 +654,41 @@
       "id": "nhats-file-tier-table-source-trace",
       "status": "PASS",
       "detail": "source trace must include R13/R14 files, Cross-Year Search, methods documentation and Conditions of Use"
+    },
+    {
+      "id": "nhats-file-tier-table-validation-exists",
+      "status": "PASS",
+      "detail": "web/src/data/life-path-nhats-file-tier-table-validation.json"
+    },
+    {
+      "id": "nhats-file-tier-table-validation-schema",
+      "status": "PASS",
+      "detail": "schemaVersion='human-infra.life-path-nhats-file-tier-table-validation.v1'"
+    },
+    {
+      "id": "nhats-file-tier-table-validation-source-hash",
+      "status": "PASS",
+      "detail": "validation must point back to current file-tier table and acquisition-readiness paths and sha256 hashes"
+    },
+    {
+      "id": "nhats-file-tier-table-validation-pass",
+      "status": "PASS",
+      "detail": "overallStatus='PASS' summary={'pass': 17, 'warn': 0, 'fail': 0}"
+    },
+    {
+      "id": "nhats-file-tier-table-validation-row-summary",
+      "status": "PASS",
+      "detail": "validation must summarize 16 file rows while keeping all download/extraction/storage/public-AI counts at 0"
+    },
+    {
+      "id": "nhats-file-tier-table-validation-boundary",
+      "status": "PASS",
+      "detail": "validation must keep file-tier readiness, download, extraction, raw repository data, public AI upload, calibration and individual prediction blocked"
+    },
+    {
+      "id": "nhats-file-tier-table-validation-non-proof-note",
+      "status": "PASS",
+      "detail": "validation must state that it does not prove registration, data access approval, governed storage, Colectica confirmation or model readiness"
     },
     {
       "id": "nhats-first-estimand-protocol-exists",
@@ -1597,7 +1632,7 @@
     }
   ],
   "summary": {
-    "pass": 318,
+    "pass": 325,
     "warn": 0,
     "fail": 0
   },
@@ -2051,7 +2086,7 @@
   },
   "nhatsAcquisitionReadinessValidation": {
     "path": "web/src/data/life-path-nhats-acquisition-readiness-validation.json",
-    "sha256": "a013518660c88229b82ace801800b00f778e4966ae1a3a25df5e557d718b3b24",
+    "sha256": "d0d0950202fe2bdf0e1d5558426a01c7472a2f544536e16915f1fc49de6f5caa",
     "status": "PASS",
     "checks": [
       {
@@ -2145,7 +2180,7 @@
   },
   "nhatsRegistrationEvidenceTemplateValidation": {
     "path": "web/src/data/life-path-nhats-registration-evidence-template-validation.json",
-    "sha256": "c1639c7a5b168381232cc95225c2ec142a54eea57f7986bd207701ef10f39433",
+    "sha256": "f37c48ef78cb03f017726a947a97f0896ba746d91aca808b6a68d8becedb0610",
     "status": "PASS",
     "checks": [
       {
@@ -2187,7 +2222,7 @@
   },
   "nhatsControlledStorageDestruction": {
     "path": "web/src/data/life-path-nhats-controlled-storage-destruction-validation.json",
-    "sha256": "8db00c433a76153eca4d58f13997bf1e36967f4982e31eba59651e036a651b54",
+    "sha256": "0fdca39035ff07d393ce88da49ce118084211323aec45a5ef5764989acebe0a0",
     "status": "PASS",
     "checks": [
       {
@@ -2234,7 +2269,7 @@
   },
   "nhatsSyntheticStorageDestructionDrill": {
     "path": "web/src/data/life-path-nhats-synthetic-storage-destruction-drill-validation.json",
-    "sha256": "a5b9c8b8c446b3ac9ae434ccd2adecf8d19d074a9b7b353ccb3a41674c74e366",
+    "sha256": "2e1645230185d9ede99f43206c56855749f1113c91d4dbd0d9d623cfe2a634ce",
     "status": "PASS",
     "checks": [
       {
@@ -2357,6 +2392,53 @@
     ],
     "summary": {
       "pass": 14,
+      "warn": 0,
+      "fail": 0
+    }
+  },
+  "nhatsFileTierTableValidation": {
+    "path": "web/src/data/life-path-nhats-file-tier-table-validation.json",
+    "sha256": "43be48fd8fb50f1c9194e629289c111748428955be7d93a88b735116ad7ad83c",
+    "status": "PASS",
+    "checks": [
+      {
+        "id": "nhats-file-tier-table-validation-exists",
+        "status": "PASS",
+        "detail": "web/src/data/life-path-nhats-file-tier-table-validation.json"
+      },
+      {
+        "id": "nhats-file-tier-table-validation-schema",
+        "status": "PASS",
+        "detail": "schemaVersion='human-infra.life-path-nhats-file-tier-table-validation.v1'"
+      },
+      {
+        "id": "nhats-file-tier-table-validation-source-hash",
+        "status": "PASS",
+        "detail": "validation must point back to current file-tier table and acquisition-readiness paths and sha256 hashes"
+      },
+      {
+        "id": "nhats-file-tier-table-validation-pass",
+        "status": "PASS",
+        "detail": "overallStatus='PASS' summary={'pass': 17, 'warn': 0, 'fail': 0}"
+      },
+      {
+        "id": "nhats-file-tier-table-validation-row-summary",
+        "status": "PASS",
+        "detail": "validation must summarize 16 file rows while keeping all download/extraction/storage/public-AI counts at 0"
+      },
+      {
+        "id": "nhats-file-tier-table-validation-boundary",
+        "status": "PASS",
+        "detail": "validation must keep file-tier readiness, download, extraction, raw repository data, public AI upload, calibration and individual prediction blocked"
+      },
+      {
+        "id": "nhats-file-tier-table-validation-non-proof-note",
+        "status": "PASS",
+        "detail": "validation must state that it does not prove registration, data access approval, governed storage, Colectica confirmation or model readiness"
+      }
+    ],
+    "summary": {
+      "pass": 7,
       "warn": 0,
       "fail": 0
     }
@@ -3162,7 +3244,7 @@
     "registerPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_value_label_review_execution_register.json",
     "registerSha256": "de6d17f9470a563346f92884cead1eec35cf5a954245751b0135efc60672b042",
     "validationPath": "web/src/data/life-path-nhats-colectica-value-label-review-execution-validation.json",
-    "validationSha256": "6b500bc611020bbf8500db8c878f0ee77c491e87579ccfb68306fff3585e95aa",
+    "validationSha256": "083fd51d51c5688239b549344a4b04881e21edd626cc92773b4dbfdf147e3dcb",
     "status": "PASS",
     "checks": [
       {
@@ -3226,7 +3308,7 @@
     "registerPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_access_route_probe_register.json",
     "registerSha256": "58941fde2c6a1c5488437a1ad447cb3dae2032739ef1ed579e29da98b96aaa89",
     "validationPath": "web/src/data/life-path-nhats-colectica-access-route-probe-validation.json",
-    "validationSha256": "1e1364dc798b3f40517bb5b2bbbb61b7f828b5faa0a8b236d054bd6283e42d55",
+    "validationSha256": "e2433ca81115d04f2a6030be3224964bee5a1a769e60f916f48cc285fc00bbd1",
     "status": "PASS",
     "checks": [
       {
@@ -3275,7 +3357,7 @@
     "templatePath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_authenticated_capture_template.json",
     "templateSha256": "dc097acfcb44007b42a25ce500c6cb1d23b1154f6620a7797445293817313eeb",
     "validationPath": "web/src/data/life-path-nhats-colectica-authenticated-capture-template-validation.json",
-    "validationSha256": "50dfd3bf19165b9e3b5c26e259106e28605c4acad8ff18320ab651050d02470a",
+    "validationSha256": "6d52f6ff317872989255ec67fab79866d96b7dbea232f058ac543616a44d3aa4",
     "status": "PASS",
     "checks": [
       {
@@ -3324,7 +3406,7 @@
     "registerPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_l2_variable_family_admission_register.json",
     "registerSha256": "da1d444f452482f37aa7d7d12cd97c9deb0b2d6006540f76c5d2588389dffce3",
     "validationPath": "web/src/data/life-path-nhats-l2-variable-family-admission-validation.json",
-    "validationSha256": "2e43b8c7040db5f72d9ee991e27d73f967699c5ddf61850355747a2d325773e2",
+    "validationSha256": "f0655f7be6ae3ea83a65fb56bbdb9dc241b6d133f664230650b0ce7697039456",
     "status": "PASS",
     "checks": [
       {
@@ -3378,7 +3460,7 @@
     "protocolPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_preoutcome_aggregation_protocol.json",
     "protocolSha256": "a2917d4bbb1682f5de6251fe919afae5da5bad681168475845a3a9c0a9a0747d",
     "validationPath": "web/src/data/life-path-nhats-preoutcome-aggregation-validation.json",
-    "validationSha256": "8f6796410db8d6114a83379f610f997884d138900b8d80b0cae943effb8eab79",
+    "validationSha256": "fa7b2ae3370b1093d376205c7de4db20ef3f122298eb02f18c125f16e9a7ddf6",
     "status": "PASS",
     "checks": [
       {

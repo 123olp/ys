@@ -893,6 +893,9 @@
             "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_registration_evidence_template.json",
             "domains/c1-boundary-rewriting/longevity-evidence/scripts/validate_nhats_registration_evidence_template.py",
             "web/src/data/life-path-nhats-registration-evidence-template-validation.json",
+            "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_file_tier_table.json",
+            "domains/c1-boundary-rewriting/longevity-evidence/scripts/validate_nhats_file_tier_table.py",
+            "web/src/data/life-path-nhats-file-tier-table-validation.json",
             "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_acquisition_readiness.json",
             "domains/c1-boundary-rewriting/longevity-evidence/scripts/validate_nhats_acquisition_readiness.py",
             "web/src/data/life-path-nhats-acquisition-readiness-validation.json",
@@ -904,10 +907,10 @@
             "web/src/data/life-path-nhats-synthetic-storage-destruction-drill-validation.json"
           ],
           "missingEvidence": [
-            "Official-source-refresh is now hash-validated and ready, and registration evidence template is machine-validated as partial-template-only, but acquisition-readiness still proves 8 remaining readiness gates block extraction.",
+            "Official-source-refresh is now hash-validated and ready, registration evidence template is machine-validated as partial-template-only, and the R13/R14 file-tier candidate table is machine-validated, but acquisition-readiness still keeps 9 gates extraction-blocking.",
             "Controlled storage/destruction plan now exists, is machine-validated and has a synthetic create-hash-delete drill, but the real governed plan has not been executed.",
             "Filled NHATS registration evidence template with redacted account status, permitted-user boundary, conditions-of-use attestation, file-tier confirmation, controlled workspace linkage and second-reviewer signoff.",
-            "Allowed file tier confirmation.",
+            "Allowed file tier confirmation with registration state, canonical format choice, approval status and governed storage path.",
             "Controlled workspace provisioning, access log, inventory log and governed workspace destruction evidence."
           ],
           "nextAction": "Fill the NHATS registration evidence template with redacted proof outside public AI/raw data channels, complete governed data access records, provision a controlled workspace and execute the real storage/destruction plan outside the public repository before any extractor is written.",
