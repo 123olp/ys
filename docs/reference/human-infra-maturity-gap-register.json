@@ -800,6 +800,8 @@
         "web/src/data/life-path-nhats-colectica-access-route-probe-validation.json",
         "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_authenticated_capture_template.json",
         "web/src/data/life-path-nhats-colectica-authenticated-capture-template-validation.json",
+        "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_route_classifier_readiness.json",
+        "web/src/data/life-path-nhats-route-classifier-readiness-validation.json",
         "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_l2_variable_family_admission_register.json",
         "web/src/data/life-path-nhats-l2-variable-family-admission-validation.json",
         "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_preoutcome_aggregation_protocol.json",
@@ -929,6 +931,8 @@
             "web/src/data/life-path-nhats-colectica-access-route-probe-validation.json",
             "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_authenticated_capture_template.json",
             "web/src/data/life-path-nhats-colectica-authenticated-capture-template-validation.json",
+            "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_route_classifier_readiness.json",
+            "web/src/data/life-path-nhats-route-classifier-readiness-validation.json",
             "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_l2_variable_family_admission_register.json",
             "web/src/data/life-path-nhats-l2-variable-family-admission-validation.json"
           ],
@@ -939,9 +943,10 @@
             "Confirmed value labels, question text, universe and skip logic.",
             "Confirmed route-value crosswalk with raw values and labels.",
             "Variable-specific negative missing-code map.",
+            "Route-classifier readiness gate now exists, but all classifier promotion gates remain blocked until Colectica capture, value labels, route-value crosswalk, variable-specific missing-code map and second-reviewer signoff pass.",
             "Second reviewer signoff."
           ],
-          "nextAction": "Use the verified access-route workflow and authenticated capture template to complete controlled Colectica login, capture variable pages with hashes, confirm labels/question text/skip logic and keep route classifier blocked until second-reviewer signoff.",
+          "nextAction": "Use the verified access-route workflow, authenticated capture template and route-classifier readiness gate to complete controlled Colectica login, capture variable pages with hashes, confirm labels/question text/skip logic and keep route classifier blocked until second-reviewer signoff.",
           "blocks100Percent": true
         },
         {
@@ -951,11 +956,14 @@
           "evidence": [
             "domains/c1-boundary-rewriting/longevity-evidence/docs/life-path-extraction-manifest-nhats-draft.md",
             "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_cohort_flow_endpoint_protocol.json",
+            "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_route_classifier_readiness.json",
+            "web/src/data/life-path-nhats-route-classifier-readiness-validation.json",
             "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_preoutcome_aggregation_protocol.json",
             "web/src/data/life-path-nhats-preoutcome-aggregation-validation.json"
           ],
           "missingEvidence": [
             "Pre-outcome aggregation rules exist, but real extraction/cohort-flow table is absent.",
+            "Route-classifier readiness gate exists, but it explicitly blocks real route classification, extraction, weighted counts and aggregation until upstream evidence gates pass.",
             "Real extraction script.",
             "Governed run log.",
             "Aggregate cohort-flow table.",
@@ -988,12 +996,15 @@
           "evidence": [
             "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_calibration_readiness.json",
             "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_data_source_candidates.json",
+            "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_route_classifier_readiness.json",
+            "web/src/data/life-path-nhats-route-classifier-readiness-validation.json",
             "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_l2_variable_family_admission_register.json",
             "web/src/data/life-path-nhats-l2-variable-family-admission-validation.json",
             "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_preoutcome_aggregation_protocol.json",
             "web/src/data/life-path-nhats-preoutcome-aggregation-validation.json"
           ],
           "missingEvidence": [
+            "Route-classifier readiness now blocks any classifier-derived model input until exact Colectica evidence and second-reviewer gates pass.",
             "L2 variable-family mapping now exists, but exact fields, value labels and real extracts are still absent.",
             "Pre-outcome aggregation rules now exist, but they are protocol-only and cannot feed calibration.",
             "Real training/validation split or external cohort.",
@@ -1023,7 +1034,7 @@
   "nextWorkOrder": [
     {
       "priority": 1,
-      "item": "Use the verified NHATS Colectica access-route workflow and authenticated capture template to complete controlled login, fill capture slots with page hashes, confirm value labels/question text/universe/skip logic and fill route-value crosswalk plus variable-specific missing-code map.",
+      "item": "Use the verified NHATS Colectica access-route workflow, authenticated capture template and route-classifier readiness gate to complete controlled login, fill capture slots with page hashes, confirm value labels/question text/universe/skip logic and fill route-value crosswalk plus variable-specific missing-code map.",
       "unblocks": [
         "MODEL-G4-field-and-value-confirmation"
       ]

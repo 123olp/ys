@@ -322,6 +322,22 @@ DEFAULT_NHATS_COLECTICA_AUTHENTICATED_CAPTURE_TEMPLATE_VALIDATION = (
     / "data"
     / "life-path-nhats-colectica-authenticated-capture-template-validation.json"
 )
+DEFAULT_NHATS_ROUTE_CLASSIFIER_READINESS = (
+    REPO_ROOT
+    / "domains"
+    / "c1-boundary-rewriting"
+    / "longevity-evidence"
+    / "data"
+    / "manual"
+    / "life_path_nhats_route_classifier_readiness.json"
+)
+DEFAULT_NHATS_ROUTE_CLASSIFIER_READINESS_VALIDATION = (
+    REPO_ROOT
+    / "web"
+    / "src"
+    / "data"
+    / "life-path-nhats-route-classifier-readiness-validation.json"
+)
 DEFAULT_NHATS_L2_VARIABLE_FAMILY_ADMISSION_REGISTER = (
     REPO_ROOT
     / "domains"
@@ -5626,6 +5642,188 @@ def audit_nhats_colectica_authenticated_capture_template(
     }
 
 
+def audit_nhats_route_classifier_readiness(
+    readiness_path: Path,
+    validation_path: Path,
+    route_field_register_path: Path,
+    value_label_execution_path: Path,
+    authenticated_capture_template_path: Path,
+    missingness_route_protocol_path: Path,
+    preoutcome_aggregation_protocol_path: Path,
+) -> dict[str, Any]:
+    checks: list[dict[str, Any]] = []
+    readiness_exists = readiness_path.exists()
+    validation_exists = validation_path.exists()
+    add_check(
+        checks,
+        "nhats-route-classifier-readiness-exists",
+        status_from_bool(readiness_exists),
+        str(readiness_path.relative_to(REPO_ROOT)),
+    )
+    add_check(
+        checks,
+        "nhats-route-classifier-readiness-validation-exists",
+        status_from_bool(validation_exists),
+        str(validation_path.relative_to(REPO_ROOT)),
+    )
+
+    readiness = load_json(readiness_path) if readiness_exists else {}
+    validation = load_json(validation_path) if validation_exists else {}
+
+    schema_ok = (
+        readiness.get("schemaVersion")
+        == "human-infra.life-path-nhats-route-classifier-readiness.v1"
+    )
+    add_check(
+        checks,
+        "nhats-route-classifier-readiness-schema",
+        status_from_bool(readiness_exists and schema_ok),
+        f"schemaVersion={readiness.get('schemaVersion')!r}",
+    )
+
+    identity_ok = (
+        readiness.get("sourceId") == "nhats"
+        and readiness.get("readinessId")
+        == "nhats-r13-r14-route-classifier-readiness-2026-07-03"
+        and readiness.get("status") == "blocked-colectica-and-real-data-required"
+    )
+    add_check(
+        checks,
+        "nhats-route-classifier-readiness-identity",
+        status_from_bool(readiness_exists and identity_ok),
+        "readiness gate must be the blocked NHATS R13/R14 route-classifier readiness contract",
+    )
+
+    decision = readiness.get("currentDecision")
+    decision_ok = (
+        isinstance(decision, dict)
+        and decision.get("routeFieldCandidatesKnown") is True
+        and decision.get("standardNegativeCodeFamilyKnown") is True
+        and decision.get("colecticaValueLabelsConfirmed") is False
+        and decision.get("questionTextConfirmed") is False
+        and decision.get("universeSkipLogicConfirmed") is False
+        and decision.get("routeValueCrosswalkConfirmed") is False
+        and decision.get("variableSpecificMissingCodeMapConfirmed") is False
+        and decision.get("secondReviewerSignoff") is False
+        and decision.get("controlledColecticaCaptureComplete") is False
+        and decision.get("realDataAccessApproved") is False
+        and decision.get("routeClassifierReady") is False
+        and decision.get("classifierCodeAllowed") is False
+        and decision.get("realExtractionAllowed") is False
+        and decision.get("aggregateCohortFlowAllowed") is False
+        and decision.get("weightedRouteCountsAllowed") is False
+        and decision.get("publicExportAllowed") is False
+        and decision.get("calibrationAllowed") is False
+        and decision.get("individualPredictionAllowed") is False
+    )
+    add_check(
+        checks,
+        "nhats-route-classifier-readiness-boundary",
+        status_from_bool(readiness_exists and decision_ok),
+        "route-field candidates may be known, but labels, crosswalk, classifier code, real extraction, aggregation, export, calibration and individual prediction must remain blocked",
+    )
+
+    families = readiness.get("classifierInputFamilies")
+    gates = readiness.get("promotionGates")
+    families_ok = isinstance(families, list) and len(families) == 9 and all(
+        isinstance(row, dict) and row.get("promotionAllowed") is False for row in families
+    )
+    gates_ok = isinstance(gates, list) and len(gates) == 12 and all(
+        isinstance(row, dict) and row.get("blocksRouteClassifier") is True for row in gates
+    )
+    add_check(
+        checks,
+        "nhats-route-classifier-readiness-gates",
+        status_from_bool(readiness_exists and families_ok and gates_ok),
+        "readiness contract must hold 9 input families and 12 route-classifier blocking gates",
+    )
+
+    validation_schema_ok = (
+        validation.get("schemaVersion")
+        == "human-infra.life-path-nhats-route-classifier-readiness-validation.v1"
+    )
+    add_check(
+        checks,
+        "nhats-route-classifier-readiness-validation-schema",
+        status_from_bool(validation_exists and validation_schema_ok),
+        f"schemaVersion={validation.get('schemaVersion')!r}",
+    )
+
+    validation_source_ok = (
+        validation.get("registerPath") == str(readiness_path.relative_to(REPO_ROOT))
+        and validation.get("registerSha256") == sha256_file(readiness_path)
+        and validation.get("routeFieldDiscoveryRegisterPath")
+        == str(route_field_register_path.relative_to(REPO_ROOT))
+        and validation.get("routeFieldDiscoveryRegisterSha256")
+        == sha256_file(route_field_register_path)
+        and validation.get("valueLabelExecutionRegisterPath")
+        == str(value_label_execution_path.relative_to(REPO_ROOT))
+        and validation.get("valueLabelExecutionRegisterSha256")
+        == sha256_file(value_label_execution_path)
+        and validation.get("authenticatedCaptureTemplatePath")
+        == str(authenticated_capture_template_path.relative_to(REPO_ROOT))
+        and validation.get("authenticatedCaptureTemplateSha256")
+        == sha256_file(authenticated_capture_template_path)
+        and validation.get("missingnessRouteProtocolPath")
+        == str(missingness_route_protocol_path.relative_to(REPO_ROOT))
+        and validation.get("missingnessRouteProtocolSha256")
+        == sha256_file(missingness_route_protocol_path)
+        and validation.get("preOutcomeAggregationProtocolPath")
+        == str(preoutcome_aggregation_protocol_path.relative_to(REPO_ROOT))
+        and validation.get("preOutcomeAggregationProtocolSha256")
+        == sha256_file(preoutcome_aggregation_protocol_path)
+    )
+    add_check(
+        checks,
+        "nhats-route-classifier-readiness-validation-source-hash",
+        status_from_bool(validation_exists and validation_source_ok),
+        "readiness validation must point back to current readiness and upstream source hashes",
+    )
+
+    validation_summary_ok = (
+        validation.get("status") == "PASS"
+        and isinstance(validation.get("summary"), dict)
+        and validation["summary"].get("fail") == 0
+        and validation.get("classifierInputFamilyCount") == 9
+        and validation.get("promotionGateCount") == 12
+    )
+    add_check(
+        checks,
+        "nhats-route-classifier-readiness-validation-summary",
+        status_from_bool(validation_exists and validation_summary_ok),
+        "readiness validation must pass with zero failures and preserve input-family/gate counts",
+    )
+
+    boundary = validation.get("boundary")
+    boundary_ok = (
+        isinstance(boundary, dict)
+        and boundary.get("routeClassifierReady") is False
+        and boundary.get("classifierCodeAllowed") is False
+        and boundary.get("realExtractionAllowed") is False
+        and boundary.get("aggregateCohortFlowAllowed") is False
+        and boundary.get("weightedRouteCountsAllowed") is False
+        and boundary.get("publicExportAllowed") is False
+        and boundary.get("calibrationAllowed") is False
+        and boundary.get("individualPredictionAllowed") is False
+    )
+    add_check(
+        checks,
+        "nhats-route-classifier-readiness-validation-boundary",
+        status_from_bool(validation_exists and boundary_ok),
+        "validation boundary must keep classifier, extraction, aggregation, weighted counts, export, calibration and individual prediction blocked",
+    )
+
+    return {
+        "readinessPath": str(readiness_path.relative_to(REPO_ROOT)),
+        "readinessSha256": sha256_file(readiness_path) if readiness_exists else None,
+        "validationPath": str(validation_path.relative_to(REPO_ROOT)),
+        "validationSha256": sha256_file(validation_path) if validation_exists else None,
+        "status": "PASS" if summarize_checks(checks)["fail"] == 0 else "FAIL",
+        "checks": checks,
+        "summary": summarize_checks(checks),
+    }
+
+
 def audit_nhats_l2_variable_family_admission(
     register_path: Path,
     validation_path: Path,
@@ -6209,6 +6407,8 @@ def audit_model(
     nhats_colectica_access_route_probe_validation_path: Path,
     nhats_colectica_authenticated_capture_template_path: Path,
     nhats_colectica_authenticated_capture_template_validation_path: Path,
+    nhats_route_classifier_readiness_path: Path,
+    nhats_route_classifier_readiness_validation_path: Path,
     nhats_l2_variable_family_admission_register_path: Path,
     nhats_l2_variable_family_admission_validation_path: Path,
     nhats_preoutcome_aggregation_protocol_path: Path,
@@ -6487,6 +6687,15 @@ def audit_model(
             nhats_route_field_discovery_register_path,
         )
     )
+    nhats_route_classifier_readiness_audit = audit_nhats_route_classifier_readiness(
+        nhats_route_classifier_readiness_path,
+        nhats_route_classifier_readiness_validation_path,
+        nhats_route_field_discovery_register_path,
+        nhats_colectica_value_label_execution_register_path,
+        nhats_colectica_authenticated_capture_template_path,
+        nhats_missingness_route_protocol_path,
+        nhats_preoutcome_aggregation_protocol_path,
+    )
     nhats_l2_variable_family_admission_audit = audit_nhats_l2_variable_family_admission(
         nhats_l2_variable_family_admission_register_path,
         nhats_l2_variable_family_admission_validation_path,
@@ -6531,6 +6740,7 @@ def audit_model(
     checks.extend(nhats_colectica_value_label_execution_audit["checks"])
     checks.extend(nhats_colectica_access_route_probe_audit["checks"])
     checks.extend(nhats_colectica_authenticated_capture_template_audit["checks"])
+    checks.extend(nhats_route_classifier_readiness_audit["checks"])
     checks.extend(nhats_l2_variable_family_admission_audit["checks"])
     checks.extend(nhats_preoutcome_aggregation_audit["checks"])
     checks.extend(sensitivity_audit["checks"])
@@ -6569,6 +6779,7 @@ def audit_model(
         "nhatsColecticaValueLabelReviewExecution": nhats_colectica_value_label_execution_audit,
         "nhatsColecticaAccessRouteProbe": nhats_colectica_access_route_probe_audit,
         "nhatsColecticaAuthenticatedCaptureTemplate": nhats_colectica_authenticated_capture_template_audit,
+        "nhatsRouteClassifierReadiness": nhats_route_classifier_readiness_audit,
         "nhatsL2VariableFamilyAdmission": nhats_l2_variable_family_admission_audit,
         "nhatsPreoutcomeAggregation": nhats_preoutcome_aggregation_audit,
         "sensitivityAnalysis": sensitivity_audit,
@@ -6770,6 +6981,15 @@ def render_markdown(audit: dict[str, Any]) -> str:
             f"- Colectica authenticated capture template validation SHA-256: `{audit['nhatsColecticaAuthenticatedCaptureTemplate']['validationSha256']}`",
             f"- Colectica authenticated capture template validation status: `{audit['nhatsColecticaAuthenticatedCaptureTemplate']['status']}`",
             "- Boundary: authenticated capture template validation proves only that the next capture evidence slots are complete; it still blocks account status, login, authenticated variable pages, value labels, question text, universe/skip logic, route classifiers, public export, calibration and individual prediction.",
+            "",
+            "## NHATS Route Classifier Readiness",
+            "",
+            f"- Route-classifier readiness path: `{audit['nhatsRouteClassifierReadiness']['readinessPath']}`",
+            f"- Route-classifier readiness SHA-256: `{audit['nhatsRouteClassifierReadiness']['readinessSha256']}`",
+            f"- Route-classifier readiness validation path: `{audit['nhatsRouteClassifierReadiness']['validationPath']}`",
+            f"- Route-classifier readiness validation SHA-256: `{audit['nhatsRouteClassifierReadiness']['validationSha256']}`",
+            f"- Route-classifier readiness validation status: `{audit['nhatsRouteClassifierReadiness']['status']}`",
+            "- Boundary: route-classifier readiness validation proves only that a blocked gate exists between route-field candidates and any real classifier; it still blocks Colectica value labels, route-value crosswalks, variable-specific missing maps, real extraction, aggregation, weighted counts, public export, calibration and individual prediction.",
             "",
             "## NHATS L2 Variable Family Admission",
             "",
@@ -6998,6 +7218,16 @@ def parse_args() -> argparse.Namespace:
         default=DEFAULT_NHATS_COLECTICA_AUTHENTICATED_CAPTURE_TEMPLATE_VALIDATION,
     )
     parser.add_argument(
+        "--nhats-route-classifier-readiness",
+        type=Path,
+        default=DEFAULT_NHATS_ROUTE_CLASSIFIER_READINESS,
+    )
+    parser.add_argument(
+        "--nhats-route-classifier-readiness-validation",
+        type=Path,
+        default=DEFAULT_NHATS_ROUTE_CLASSIFIER_READINESS_VALIDATION,
+    )
+    parser.add_argument(
         "--nhats-l2-variable-family-admission-register",
         type=Path,
         default=DEFAULT_NHATS_L2_VARIABLE_FAMILY_ADMISSION_REGISTER,
@@ -7111,6 +7341,12 @@ def main() -> int:
     nhats_colectica_authenticated_capture_template_validation_path = (
         args.nhats_colectica_authenticated_capture_template_validation.resolve()
     )
+    nhats_route_classifier_readiness_path = (
+        args.nhats_route_classifier_readiness.resolve()
+    )
+    nhats_route_classifier_readiness_validation_path = (
+        args.nhats_route_classifier_readiness_validation.resolve()
+    )
     nhats_l2_variable_family_admission_register_path = (
         args.nhats_l2_variable_family_admission_register.resolve()
     )
@@ -7166,6 +7402,8 @@ def main() -> int:
         nhats_colectica_access_route_probe_validation_path,
         nhats_colectica_authenticated_capture_template_path,
         nhats_colectica_authenticated_capture_template_validation_path,
+        nhats_route_classifier_readiness_path,
+        nhats_route_classifier_readiness_validation_path,
         nhats_l2_variable_family_admission_register_path,
         nhats_l2_variable_family_admission_validation_path,
         nhats_preoutcome_aggregation_protocol_path,

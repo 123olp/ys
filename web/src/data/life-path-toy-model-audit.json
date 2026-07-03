@@ -1,6 +1,6 @@
 {
   "schemaVersion": "human-infra.life-path-toy-audit.v1",
-  "generatedAt": "2026-07-03T06:11:00.934333+00:00",
+  "generatedAt": "2026-07-03T06:37:06.803031+00:00",
   "modelPath": "web/src/data/life-path-toy-model.json",
   "modelSha256": "a4c92209d79d20579bf1f575d5ebf07ffe5be9ccaf6bf3f3eef08efa287b5377",
   "overallStatus": "PASS",
@@ -1496,6 +1496,56 @@
       "detail": "validation must prove only template readiness while keeping authenticated capture and model admission blocked"
     },
     {
+      "id": "nhats-route-classifier-readiness-exists",
+      "status": "PASS",
+      "detail": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_route_classifier_readiness.json"
+    },
+    {
+      "id": "nhats-route-classifier-readiness-validation-exists",
+      "status": "PASS",
+      "detail": "web/src/data/life-path-nhats-route-classifier-readiness-validation.json"
+    },
+    {
+      "id": "nhats-route-classifier-readiness-schema",
+      "status": "PASS",
+      "detail": "schemaVersion='human-infra.life-path-nhats-route-classifier-readiness.v1'"
+    },
+    {
+      "id": "nhats-route-classifier-readiness-identity",
+      "status": "PASS",
+      "detail": "readiness gate must be the blocked NHATS R13/R14 route-classifier readiness contract"
+    },
+    {
+      "id": "nhats-route-classifier-readiness-boundary",
+      "status": "PASS",
+      "detail": "route-field candidates may be known, but labels, crosswalk, classifier code, real extraction, aggregation, export, calibration and individual prediction must remain blocked"
+    },
+    {
+      "id": "nhats-route-classifier-readiness-gates",
+      "status": "PASS",
+      "detail": "readiness contract must hold 9 input families and 12 route-classifier blocking gates"
+    },
+    {
+      "id": "nhats-route-classifier-readiness-validation-schema",
+      "status": "PASS",
+      "detail": "schemaVersion='human-infra.life-path-nhats-route-classifier-readiness-validation.v1'"
+    },
+    {
+      "id": "nhats-route-classifier-readiness-validation-source-hash",
+      "status": "PASS",
+      "detail": "readiness validation must point back to current readiness and upstream source hashes"
+    },
+    {
+      "id": "nhats-route-classifier-readiness-validation-summary",
+      "status": "PASS",
+      "detail": "readiness validation must pass with zero failures and preserve input-family/gate counts"
+    },
+    {
+      "id": "nhats-route-classifier-readiness-validation-boundary",
+      "status": "PASS",
+      "detail": "validation boundary must keep classifier, extraction, aggregation, weighted counts, export, calibration and individual prediction blocked"
+    },
+    {
       "id": "nhats-l2-variable-family-admission-register-exists",
       "status": "PASS",
       "detail": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_l2_variable_family_admission_register.json"
@@ -1632,7 +1682,7 @@
     }
   ],
   "summary": {
-    "pass": 325,
+    "pass": 335,
     "warn": 0,
     "fail": 0
   },
@@ -2086,7 +2136,7 @@
   },
   "nhatsAcquisitionReadinessValidation": {
     "path": "web/src/data/life-path-nhats-acquisition-readiness-validation.json",
-    "sha256": "d0d0950202fe2bdf0e1d5558426a01c7472a2f544536e16915f1fc49de6f5caa",
+    "sha256": "4912a6e37d5e8429098834263ca75a425afcd2f15b6907023cf922ed061e6f17",
     "status": "PASS",
     "checks": [
       {
@@ -2180,7 +2230,7 @@
   },
   "nhatsRegistrationEvidenceTemplateValidation": {
     "path": "web/src/data/life-path-nhats-registration-evidence-template-validation.json",
-    "sha256": "f37c48ef78cb03f017726a947a97f0896ba746d91aca808b6a68d8becedb0610",
+    "sha256": "cbf71182b5e14c3776943c99b0c0e4f1b242f53b65bc8d3fa6c026f69a645d94",
     "status": "PASS",
     "checks": [
       {
@@ -2222,7 +2272,7 @@
   },
   "nhatsControlledStorageDestruction": {
     "path": "web/src/data/life-path-nhats-controlled-storage-destruction-validation.json",
-    "sha256": "0fdca39035ff07d393ce88da49ce118084211323aec45a5ef5764989acebe0a0",
+    "sha256": "8c4a6bcfe17a5a0735455cf310d6f7841b5ad7c96933667ea00a3d82957f7959",
     "status": "PASS",
     "checks": [
       {
@@ -2269,7 +2319,7 @@
   },
   "nhatsSyntheticStorageDestructionDrill": {
     "path": "web/src/data/life-path-nhats-synthetic-storage-destruction-drill-validation.json",
-    "sha256": "2e1645230185d9ede99f43206c56855749f1113c91d4dbd0d9d623cfe2a634ce",
+    "sha256": "870127ba21bd284c59f2e89dc6bcfbc90cd65a94dccb6bcc920e6d322d18a0dd",
     "status": "PASS",
     "checks": [
       {
@@ -2398,7 +2448,7 @@
   },
   "nhatsFileTierTableValidation": {
     "path": "web/src/data/life-path-nhats-file-tier-table-validation.json",
-    "sha256": "43be48fd8fb50f1c9194e629289c111748428955be7d93a88b735116ad7ad83c",
+    "sha256": "5445163683d36276bbf525eb8446376c89d2f5dc324044ce3db4ccc2014d1c40",
     "status": "PASS",
     "checks": [
       {
@@ -3244,7 +3294,7 @@
     "registerPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_value_label_review_execution_register.json",
     "registerSha256": "de6d17f9470a563346f92884cead1eec35cf5a954245751b0135efc60672b042",
     "validationPath": "web/src/data/life-path-nhats-colectica-value-label-review-execution-validation.json",
-    "validationSha256": "083fd51d51c5688239b549344a4b04881e21edd626cc92773b4dbfdf147e3dcb",
+    "validationSha256": "12df1593974e125abdf321e28ffa67c39a7bdece5fa2218cb9ea55915161f72b",
     "status": "PASS",
     "checks": [
       {
@@ -3308,7 +3358,7 @@
     "registerPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_access_route_probe_register.json",
     "registerSha256": "58941fde2c6a1c5488437a1ad447cb3dae2032739ef1ed579e29da98b96aaa89",
     "validationPath": "web/src/data/life-path-nhats-colectica-access-route-probe-validation.json",
-    "validationSha256": "e2433ca81115d04f2a6030be3224964bee5a1a769e60f916f48cc285fc00bbd1",
+    "validationSha256": "6bda5c1983e47aadb8afaec8a60bbf85bebb553c9e6eb222603e9c35ac5fb1f3",
     "status": "PASS",
     "checks": [
       {
@@ -3357,7 +3407,7 @@
     "templatePath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_authenticated_capture_template.json",
     "templateSha256": "dc097acfcb44007b42a25ce500c6cb1d23b1154f6620a7797445293817313eeb",
     "validationPath": "web/src/data/life-path-nhats-colectica-authenticated-capture-template-validation.json",
-    "validationSha256": "6d52f6ff317872989255ec67fab79866d96b7dbea232f058ac543616a44d3aa4",
+    "validationSha256": "819c1c109ed69bf5a645c07c700ad0a7ce9625b3c6fdfabcb3297bd424d35eb0",
     "status": "PASS",
     "checks": [
       {
@@ -3402,11 +3452,75 @@
       "fail": 0
     }
   },
+  "nhatsRouteClassifierReadiness": {
+    "readinessPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_route_classifier_readiness.json",
+    "readinessSha256": "f0c0224317c9ee20e8de56dcddeadba85ae24d67b736782ba22de90e83109296",
+    "validationPath": "web/src/data/life-path-nhats-route-classifier-readiness-validation.json",
+    "validationSha256": "17b3503e2ca4b91b637a550c04de281ea8a5d20bfba76cacca439c5fd78730f6",
+    "status": "PASS",
+    "checks": [
+      {
+        "id": "nhats-route-classifier-readiness-exists",
+        "status": "PASS",
+        "detail": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_route_classifier_readiness.json"
+      },
+      {
+        "id": "nhats-route-classifier-readiness-validation-exists",
+        "status": "PASS",
+        "detail": "web/src/data/life-path-nhats-route-classifier-readiness-validation.json"
+      },
+      {
+        "id": "nhats-route-classifier-readiness-schema",
+        "status": "PASS",
+        "detail": "schemaVersion='human-infra.life-path-nhats-route-classifier-readiness.v1'"
+      },
+      {
+        "id": "nhats-route-classifier-readiness-identity",
+        "status": "PASS",
+        "detail": "readiness gate must be the blocked NHATS R13/R14 route-classifier readiness contract"
+      },
+      {
+        "id": "nhats-route-classifier-readiness-boundary",
+        "status": "PASS",
+        "detail": "route-field candidates may be known, but labels, crosswalk, classifier code, real extraction, aggregation, export, calibration and individual prediction must remain blocked"
+      },
+      {
+        "id": "nhats-route-classifier-readiness-gates",
+        "status": "PASS",
+        "detail": "readiness contract must hold 9 input families and 12 route-classifier blocking gates"
+      },
+      {
+        "id": "nhats-route-classifier-readiness-validation-schema",
+        "status": "PASS",
+        "detail": "schemaVersion='human-infra.life-path-nhats-route-classifier-readiness-validation.v1'"
+      },
+      {
+        "id": "nhats-route-classifier-readiness-validation-source-hash",
+        "status": "PASS",
+        "detail": "readiness validation must point back to current readiness and upstream source hashes"
+      },
+      {
+        "id": "nhats-route-classifier-readiness-validation-summary",
+        "status": "PASS",
+        "detail": "readiness validation must pass with zero failures and preserve input-family/gate counts"
+      },
+      {
+        "id": "nhats-route-classifier-readiness-validation-boundary",
+        "status": "PASS",
+        "detail": "validation boundary must keep classifier, extraction, aggregation, weighted counts, export, calibration and individual prediction blocked"
+      }
+    ],
+    "summary": {
+      "pass": 10,
+      "warn": 0,
+      "fail": 0
+    }
+  },
   "nhatsL2VariableFamilyAdmission": {
     "registerPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_l2_variable_family_admission_register.json",
     "registerSha256": "da1d444f452482f37aa7d7d12cd97c9deb0b2d6006540f76c5d2588389dffce3",
     "validationPath": "web/src/data/life-path-nhats-l2-variable-family-admission-validation.json",
-    "validationSha256": "f0655f7be6ae3ea83a65fb56bbdb9dc241b6d133f664230650b0ce7697039456",
+    "validationSha256": "23d32d14a1d06633e00fb65eef94d3d1e4d43f58cd61c37bbab75c346521030f",
     "status": "PASS",
     "checks": [
       {
@@ -3460,7 +3574,7 @@
     "protocolPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_preoutcome_aggregation_protocol.json",
     "protocolSha256": "a2917d4bbb1682f5de6251fe919afae5da5bad681168475845a3a9c0a9a0747d",
     "validationPath": "web/src/data/life-path-nhats-preoutcome-aggregation-validation.json",
-    "validationSha256": "fa7b2ae3370b1093d376205c7de4db20ef3f122298eb02f18c125f16e9a7ddf6",
+    "validationSha256": "aec8cc48b16d76a47f4559a7f9a39f376055e0ae9365ef5d8cff5385910d9f1c",
     "status": "PASS",
     "checks": [
       {

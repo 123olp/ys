@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "human-infra.life-path-nhats-route-classifier-readiness.v1",
+  "sourceId": "nhats",
+  "readinessId": "nhats-r13-r14-route-classifier-readiness-2026-07-03",
+  "routeFieldDiscoveryRegisterId": "nhats-r13-r14-route-field-discovery-register-draft",
+  "valueLabelExecutionRegisterId": "nhats-r13-r14-colectica-value-label-review-execution-register-2026-07-03",
+  "authenticatedCaptureTemplateId": "nhats-r13-r14-colectica-authenticated-capture-template-2026-07-03",
+  "missingnessRouteProtocolId": "nhats-r13-r14-missingness-route-protocol-draft",
+  "preOutcomeAggregationProtocolId": "nhats-r13-r14-preoutcome-aggregation-protocol-draft",
+  "status": "blocked-colectica-and-real-data-required",
+  "purpose": "Define the minimum machine-audited gate between NHATS route-field candidates and any real route classifier, endpoint classifier, cohort-flow aggregate, weighted route count, public export, calibration or model-admission decision.",
+  "currentDecision": {
+    "routeFieldCandidatesKnown": true,
+    "standardNegativeCodeFamilyKnown": true,
+    "colecticaValueLabelsConfirmed": false,
+    "questionTextConfirmed": false,
+    "universeSkipLogicConfirmed": false,
+    "routeValueCrosswalkConfirmed": false,
+    "variableSpecificMissingCodeMapConfirmed": false,
+    "secondReviewerSignoff": false,
+    "controlledColecticaCaptureComplete": false,
+    "realDataAccessApproved": false,
+    "routeClassifierReady": false,
+    "classifierCodeAllowed": false,
+    "realExtractionAllowed": false,
+    "aggregateCohortFlowAllowed": false,
+    "weightedRouteCountsAllowed": false,
+    "publicExportAllowed": false,
+    "calibrationAllowed": false,
+    "individualPredictionAllowed": false
+  },
+  "classifierInputFamilies": [
+    {
+      "id": "identity_join_key",
+      "candidateStatus": "crosswalk-candidate-only",
+      "requires": [
+        "canonical public-use join key",
+        "longitudinal linkage rule",
+        "no restricted identifier dependency"
+      ],
+      "promotionAllowed": false
+    },
+    {
+      "id": "round13_baseline_eligibility",
+      "candidateStatus": "crosswalk-candidate-only",
+      "requires": [
+        "R13 denominator inclusion values",
+        "round-entry and carried-forward rules",
+        "baseline facility handling"
+      ],
+      "promotionAllowed": false
+    },
+    {
+      "id": "round14_interview_status",
+      "candidateStatus": "crosswalk-candidate-only",
+      "requires": [
+        "R14 interview completion values",
+        "status-category value labels",
+        "breakoff and partial-missing handling"
+      ],
+      "promotionAllowed": false
+    },
+    {
+      "id": "proxy_status",
+      "candidateStatus": "crosswalk-candidate-only",
+      "requires": [
+        "self/proxy value labels",
+        "proxy interview routing",
+        "proxy-specific functional item handling"
+      ],
+      "promotionAllowed": false
+    },
+    {
+      "id": "facility_residential_status",
+      "candidateStatus": "crosswalk-candidate-only",
+      "requires": [
+        "facility status value labels",
+        "residential-care route values",
+        "facility route separation from proxy route"
+      ],
+      "promotionAllowed": false
+    },
+    {
+      "id": "death_decedent_indicator",
+      "candidateStatus": "boundary-only-sensitive-fields-excluded",
+      "requires": [
+        "death/decedent public indicator values",
+        "Last Month of Life route boundary",
+        "death month/year exclusion"
+      ],
+      "promotionAllowed": false
+    },
+    {
+      "id": "nonresponse_missing_code",
+      "candidateStatus": "standard-family-only-variable-specific-map-blocked",
+      "requires": [
+        "variable-specific negative missing-code map",
+        "skip pattern distinction",
+        "refused/don't know/missing separation"
+      ],
+      "promotionAllowed": false
+    },
+    {
+      "id": "design_weight_linkage",
+      "candidateStatus": "crosswalk-candidate-only",
+      "requires": [
+        "analysis weight field",
+        "strata field",
+        "PSU or variance-unit field",
+        "variance method"
+      ],
+      "promotionAllowed": false
+    },
+    {
+      "id": "disclosure_cell_count",
+      "candidateStatus": "computed-output-only",
+      "requires": [
+        "aggregate-only output envelope",
+        "small-cell suppression rule",
+        "public output disclosure review"
+      ],
+      "promotionAllowed": false
+    }
+  ],
+  "promotionGates": [
+    {
+      "id": "real-data-access-approved",
+      "status": "blocked",
+      "blocksRouteClassifier": true
+    },
+    {
+      "id": "controlled-colectica-login-recorded",
+      "status": "blocked",
+      "blocksRouteClassifier": true
+    },
+    {
+      "id": "authenticated-variable-pages-captured",
+      "status": "blocked",
+      "blocksRouteClassifier": true
+    },
+    {
+      "id": "value-labels-confirmed",
+      "status": "blocked",
+      "blocksRouteClassifier": true
+    },
+    {
+      "id": "question-text-universe-skip-logic-confirmed",
+      "status": "blocked",
+      "blocksRouteClassifier": true
+    },
+    {
+      "id": "route-value-crosswalk-confirmed",
+      "status": "blocked",
+      "blocksRouteClassifier": true
+    },
+    {
+      "id": "variable-specific-missing-code-map-confirmed",
+      "status": "blocked",
+      "blocksRouteClassifier": true
+    },
+    {
+      "id": "sensitive-death-boundary-exclusion-reviewed",
+      "status": "prepared-but-not-sufficient",
+      "blocksRouteClassifier": true
+    },
+    {
+      "id": "second-reviewer-signoff",
+      "status": "blocked",
+      "blocksRouteClassifier": true
+    },
+    {
+      "id": "survey-design-ready",
+      "status": "blocked",
+      "blocksRouteClassifier": true
+    },
+    {
+      "id": "disclosure-review-before-public-output",
+      "status": "blocked",
+      "blocksRouteClassifier": true
+    },
+    {
+      "id": "route-classifier-code-review",
+      "status": "blocked",
+      "blocksRouteClassifier": true
+    }
+  ],
+  "sourceTrace": [
+    {
+      "id": "route-field-discovery-register",
+      "path": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_route_field_discovery_register.json",
+      "evidenceUse": "Provides route-field families and candidate variables, but not value labels or classifier readiness."
+    },
+    {
+      "id": "value-label-execution-register",
+      "path": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_value_label_review_execution_register.json",
+      "evidenceUse": "Provides official source trace and a blocked route-value crosswalk skeleton, but not confirmed Colectica labels."
+    },
+    {
+      "id": "authenticated-capture-template",
+      "path": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_authenticated_capture_template.json",
+      "evidenceUse": "Defines capture evidence slots that must be filled outside public raw-data channels."
+    },
+    {
+      "id": "missingness-route-protocol",
+      "path": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_missingness_route_protocol.json",
+      "evidenceUse": "Defines route classes and missingness dominance rules without authorizing real routing."
+    },
+    {
+      "id": "preoutcome-aggregation-protocol",
+      "path": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_preoutcome_aggregation_protocol.json",
+      "evidenceUse": "Defines pre-outcome aggregate boundaries after data access and route classifier gates pass."
+    }
+  ],
+  "prohibitedActions": [
+    "Do not write a real NHATS route classifier from candidate variable names alone.",
+    "Do not infer route values from crosswalk field names, standard negative-code families or prose descriptions.",
+    "Do not aggregate real NHATS rows until real data access, exact fields, route-value crosswalk, survey design and disclosure gates pass.",
+    "Do not export row-level routes, sensitive death dates, small cells, raw NHATS data or authenticated Colectica captures to public systems.",
+    "Do not use this readiness contract for calibration, survival-curve fitting, weighted counts or individual prediction."
+  ],
+  "nextEvidenceRequired": [
+    "Governed NHATS data access approval and controlled workspace evidence.",
+    "Controlled Colectica login/access record and authenticated variable page capture hashes.",
+    "Confirmed value labels, question text, universe and skip logic for every selected route field.",
+    "Route-value crosswalk with raw value codes, labels, route class and dominance rule for every selected field.",
+    "Variable-specific negative missing-code map.",
+    "Survey design variables and variance method.",
+    "Disclosure-reviewed aggregate output envelope.",
+    "Second reviewer signoff before classifier code is allowed."
+  ]
+}

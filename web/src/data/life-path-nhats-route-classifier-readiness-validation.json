@@ -1,0 +1,82 @@
+{
+  "schemaVersion": "human-infra.life-path-nhats-route-classifier-readiness-validation.v1",
+  "generatedAt": "2026-07-03T06:37:26.699011+00:00",
+  "registerPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_route_classifier_readiness.json",
+  "registerSha256": "f0c0224317c9ee20e8de56dcddeadba85ae24d67b736782ba22de90e83109296",
+  "routeFieldDiscoveryRegisterPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_route_field_discovery_register.json",
+  "routeFieldDiscoveryRegisterSha256": "32d86995a0438e2104e6850334eefa63b30176b0767dd2229bc73a517ef5ade4",
+  "valueLabelExecutionRegisterPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_value_label_review_execution_register.json",
+  "valueLabelExecutionRegisterSha256": "de6d17f9470a563346f92884cead1eec35cf5a954245751b0135efc60672b042",
+  "authenticatedCaptureTemplatePath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_authenticated_capture_template.json",
+  "authenticatedCaptureTemplateSha256": "dc097acfcb44007b42a25ce500c6cb1d23b1154f6620a7797445293817313eeb",
+  "missingnessRouteProtocolPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_missingness_route_protocol.json",
+  "missingnessRouteProtocolSha256": "e5f68ca68fd44aff81e2146eb2fa75534aab10440129b42f218f5473386e12fd",
+  "preOutcomeAggregationProtocolPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_preoutcome_aggregation_protocol.json",
+  "preOutcomeAggregationProtocolSha256": "a2917d4bbb1682f5de6251fe919afae5da5bad681168475845a3a9c0a9a0747d",
+  "readinessId": "nhats-r13-r14-route-classifier-readiness-2026-07-03",
+  "status": "PASS",
+  "summary": {
+    "pass": 9,
+    "fail": 0
+  },
+  "classifierInputFamilyCount": 9,
+  "promotionGateCount": 12,
+  "boundary": {
+    "routeClassifierReady": false,
+    "classifierCodeAllowed": false,
+    "realExtractionAllowed": false,
+    "aggregateCohortFlowAllowed": false,
+    "weightedRouteCountsAllowed": false,
+    "publicExportAllowed": false,
+    "calibrationAllowed": false,
+    "individualPredictionAllowed": false
+  },
+  "checks": [
+    {
+      "id": "schema-version",
+      "status": "PASS",
+      "detail": "schemaVersion='human-infra.life-path-nhats-route-classifier-readiness.v1'"
+    },
+    {
+      "id": "readiness-identity-and-upstream-bindings",
+      "status": "PASS",
+      "detail": "readiness gate must bind route-field, value-label execution, authenticated capture, missingness-route and pre-outcome aggregation upstreams"
+    },
+    {
+      "id": "decision-boundary",
+      "status": "PASS",
+      "detail": "only route-field candidates and standard negative-code family may be known; every classifier, extraction, export, calibration and individual-prediction decision must remain false"
+    },
+    {
+      "id": "classifier-input-families",
+      "status": "PASS",
+      "detail": "missing=[]"
+    },
+    {
+      "id": "promotion-gates-block-classifier",
+      "status": "PASS",
+      "detail": "missing=[]"
+    },
+    {
+      "id": "source-trace-paths",
+      "status": "PASS",
+      "detail": "source trace must point to the five upstream NHATS route/classifier readiness records"
+    },
+    {
+      "id": "prohibited-actions",
+      "status": "PASS",
+      "detail": "readiness gate must prohibit candidate-name routing, real aggregation, public export, calibration and individual prediction"
+    },
+    {
+      "id": "next-evidence-required",
+      "status": "PASS",
+      "detail": "next evidence must require governed data access, Colectica capture, labels, missing-code map, survey design and second review"
+    },
+    {
+      "id": "upstream-blockers-inherited",
+      "status": "PASS",
+      "detail": "readiness gate must inherit route-field, Colectica, missingness-route and pre-outcome aggregation blockers"
+    }
+  ],
+  "note": "This validation proves only that a blocked NHATS route-classifier readiness gate exists and inherits upstream blockers. It does not prove real data access, Colectica capture, value-label confirmation, route-value crosswalk readiness, survey-design readiness, extraction readiness, calibration or individual prediction readiness."
+}

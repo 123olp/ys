@@ -32,6 +32,7 @@
 - `manual/life_path_nhats_colectica_value_label_review_execution_register.json` 用于维护 NHATS Colectica value-label 复核的第一轮执行登记；该文件只记录官方来源追踪、字段级 source-trace 骨架和标准 negative missing-code family，仍不表示 Colectica 登录完成、value labels 确认、question text 确认、route-value crosswalk 可用或 classifier 可晋升。
 - `manual/life_path_nhats_colectica_access_route_probe_register.json` 用于维护 NHATS Colectica 公开入口、匿名登录边界和技术指南捕获路线的 probe 登记；该文件只证明官方访问路径和下一步 capture workflow，不表示账号、登录、变量页、value labels、question text、导出、校准或个体预测已完成。
 - `manual/life_path_nhats_colectica_authenticated_capture_template.json` 用于维护 NHATS Colectica 受控登录后变量页捕获模板；该文件只定义每个 route field 必须补齐的 item id、变量名、轮次、文件名、Details URL、source hash、value labels、question text、universe/skip logic 和二次复核证据槽，不表示登录、捕获、标签确认、route classifier、导出、校准或个体预测已完成。
+- `manual/life_path_nhats_route_classifier_readiness.json` 用于维护 NHATS route-classifier readiness 契约；该文件只记录 9 个分类器输入族、12 个晋升门、上游证据绑定和禁止动作，不表示真实分类器、抽取、聚合、加权估计、校准或个体预测已允许。
 - `manual/life_path_nhats_l2_variable_family_admission_register.json` 用于维护 NHATS 第一版窄 estimand 的 L2 变量族准入前映射；该文件只把 6 个候选变量族绑定到模型位置和晋升阻塞门，不表示精确字段、Colectica value labels、真实提取、校准或个体预测已完成。
 - `manual/life_path_nhats_preoutcome_aggregation_protocol.json` 用于维护 NHATS 预结果聚合规则；该文件只冻结 L2-only 聚合边界、合成测试用例和真实聚合前置证据，不表示真实 NHATS 数据、route classification、加权估计、公开导出、L4 准入、校准或个体预测已完成。
 - `web/src/data/life-path-sensitivity-analysis.json` 是从 `manual/life_path_toy_model_scenarios.json` 派生的合成 sensitivity 输出；它不放在本目录内，但由本域脚本生成并由本域审计器检查。
@@ -45,6 +46,7 @@
 - `web/src/data/life-path-nhats-colectica-value-label-review-execution-validation.json` 是从 Colectica value-label review execution register 派生的验证报告；它不放在本目录内，但由本域脚本生成并由本域审计器检查。
 - `web/src/data/life-path-nhats-colectica-access-route-probe-validation.json` 是从 Colectica access-route probe register 派生的验证报告；它不放在本目录内，但由本域脚本生成并由本域审计器检查。
 - `web/src/data/life-path-nhats-colectica-authenticated-capture-template-validation.json` 是从 Colectica authenticated capture template 派生的验证报告；它不放在本目录内，但由本域脚本生成并由本域审计器检查。
+- `web/src/data/life-path-nhats-route-classifier-readiness-validation.json` 是从 route-classifier readiness 契约派生的验证报告；它不放在本目录内，但由本域脚本生成并由本域审计器检查。
 - `web/src/data/life-path-nhats-l2-variable-family-admission-validation.json` 是从 L2 variable-family admission register 派生的验证报告；它不放在本目录内，但由本域脚本生成并由本域审计器检查。
 - `web/src/data/life-path-nhats-preoutcome-aggregation-validation.json` 是从 pre-outcome aggregation protocol 派生的验证报告；它不放在本目录内，但由本域脚本生成并由本域审计器检查。
 - 每份数据必须记录来源、抓取时间和处理脚本。
@@ -80,6 +82,7 @@
 - `manual/life_path_nhats_colectica_value_label_review_execution_register.json`：NHATS Colectica value-label review 第一轮执行登记，记录官方来源追踪已准备、9 个 route-field source-trace 骨架、标准 `-1/-7/-8/-9` negative missing code family 和 10 个仍阻塞的晋升门，当前状态为 `partial-executed-official-source-trace-ready-colectica-login-required`。
 - `manual/life_path_nhats_colectica_access_route_probe_register.json`：NHATS Colectica access-route probe 登记，记录官方 Cross-Year Search 入口、匿名访问登录边界、技术指南 SHA-256、Details/Basket capture workflow 和后续受控登录捕获步骤，当前状态为 `public-entry-and-technical-guide-probed-login-required`。
 - `manual/life_path_nhats_colectica_authenticated_capture_template.json`：NHATS Colectica authenticated capture 模板，记录 9 个 route-field 进入真实变量页复核前必须补齐的证据槽，当前状态为 `template-only-authenticated-capture-not-started`。
+- `manual/life_path_nhats_route_classifier_readiness.json`：NHATS route-classifier readiness 契约，记录 9 个分类器输入族、12 个晋升门、上游 route-field / Colectica / missingness / pre-outcome 绑定、禁止动作和下一步证据要求，当前状态为 `blocked-colectica-and-real-data-required`。
 - `manual/life_path_nhats_l2_variable_family_admission_register.json`：NHATS L2 variable-family admission 登记，记录 1 个窄 aggregate estimand 与 6 个 L2 候选变量族，当前状态为 `l2-variable-family-mapping-only-l4-blocked`。
 - `manual/life_path_nhats_preoutcome_aggregation_protocol.json`：NHATS pre-outcome aggregation 协议，记录 8 条 L2-only 聚合规则、7 个合成用例、9 个真实聚合前置证据要求和禁止动作，当前状态为 `protocol-only-preoutcome-rules-frozen-l4-blocked`。
 - `manual/life_path_nhats_l4_readiness_runway.json`：NHATS L4 readiness runway，记录从 L2 设计资产到 L4 aggregate-calibrated research model 之前必须通过的 12 个 readiness gates，当前状态为 `runway-only-l4-blocked`。
@@ -97,6 +100,7 @@
 - `../../../../web/src/data/life-path-nhats-colectica-value-label-review-execution-validation.json`：由 `validate_nhats_colectica_value_label_review_execution.py` 生成的 Colectica value-label execution validation 输出，记录 execution register hash、protocol hash、route-field discovery hash、source-trace-only 边界、standard negative-code family-only 边界和禁止 route classifier / public export / calibration / individual prediction 边界。
 - `../../../../web/src/data/life-path-nhats-colectica-access-route-probe-validation.json`：由 `validate_nhats_colectica_access_route_probe.py` 生成的 Colectica access-route probe validation 输出，记录 probe register hash、execution register hash、匿名访问登录页边界、技术指南 workflow 和禁止 authenticated capture / export / calibration / individual prediction 边界。
 - `../../../../web/src/data/life-path-nhats-colectica-authenticated-capture-template-validation.json`：由 `validate_nhats_colectica_authenticated_capture_template.py` 生成的 Colectica authenticated capture template validation 输出，记录 template hash、probe / execution / protocol / route-field register hash、9 个 route-field 捕获槽、敏感死亡字段排除和禁止 route classifier / public export / calibration / individual prediction 边界。
+- `../../../../web/src/data/life-path-nhats-route-classifier-readiness-validation.json`：由 `validate_nhats_route_classifier_readiness.py` 生成的 route-classifier readiness validation 输出，记录 readiness hash、上游 source hash、9 个输入族、12 个阻塞门和禁止真实分类器 / 提取 / 聚合 / 加权估计 / 校准 / 个体预测边界。
 - `../../../../web/src/data/life-path-nhats-l2-variable-family-admission-validation.json`：由 `validate_nhats_l2_variable_family_admission.py` 生成的 L2 variable-family admission validation 输出，记录 first estimand、变量确认矩阵、模型准入契约、候选注册表和 capture template 的 source hash，并确认 6 个变量族仍只允许 L2 映射。
 - `../../../../web/src/data/life-path-nhats-preoutcome-aggregation-validation.json`：由 `validate_nhats_preoutcome_aggregation_protocol.py` 生成的 pre-outcome aggregation validation 输出，记录协议和上游 source hash、8 条聚合规则、7 个合成用例、真实聚合前置证据和禁止真实聚合 / 加权估计 / L4 准入 / 校准 / 个体预测边界。
 - `../../../../web/src/data/life-path-nhats-l4-readiness-runway-validation.json`：由 `validate_nhats_l4_readiness_runway.py` 生成的 L4 readiness runway validation 输出，记录 runway hash、上游 source hash、12 个 readiness gate 计数和 L4/individual-use 继续阻塞边界。
