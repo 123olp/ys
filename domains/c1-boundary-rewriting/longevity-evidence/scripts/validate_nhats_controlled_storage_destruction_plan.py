@@ -22,6 +22,9 @@ MANUAL_DIR = (
 )
 DEFAULT_PLAN = MANUAL_DIR / "life_path_nhats_controlled_storage_destruction_plan.json"
 DEFAULT_ACQUISITION_READINESS = MANUAL_DIR / "life_path_nhats_acquisition_readiness.json"
+DEFAULT_SYNTHETIC_DRILL = (
+    MANUAL_DIR / "life_path_nhats_synthetic_storage_destruction_drill.json"
+)
 DEFAULT_OUT = (
     REPO_ROOT
     / "web"
@@ -201,6 +204,10 @@ def validate_plan(
         == acquisition_readiness.get("acquisitionReadinessId")
         and plan.get("acquisitionReadinessPath") == repo_rel(acquisition_readiness_path)
         and plan.get("status") == "plan-only-not-executed-no-data-acquired"
+        and plan.get("syntheticDrillId")
+        == "nhats-synthetic-storage-destruction-drill-2026-07-03"
+        and plan.get("syntheticDrillPath") == repo_rel(DEFAULT_SYNTHETIC_DRILL)
+        and DEFAULT_SYNTHETIC_DRILL.exists()
     )
     add_check(
         checks,
@@ -210,7 +217,11 @@ def validate_plan(
     )
 
     decision = plan.get("currentDecision")
-    decision_ok = isinstance(decision, dict) and decision.get("planDefined") is True
+    decision_ok = (
+        isinstance(decision, dict)
+        and decision.get("planDefined") is True
+        and decision.get("syntheticDrillExecuted") is True
+    )
     if isinstance(decision, dict):
         for field in REQUIRED_FALSE_DECISIONS:
             decision_ok = decision_ok and decision.get(field) is False
@@ -218,7 +229,7 @@ def validate_plan(
         checks,
         "current-decision-boundary",
         decision_ok,
-        "only planDefined may be true; execution, download, extraction, repository raw data, public AI, calibration and individual prediction must remain false",
+        "planDefined and syntheticDrillExecuted may be true; real execution, download, extraction, repository raw data, public AI, calibration and individual prediction must remain false",
     )
 
     boundary = plan.get("storageBoundary")
@@ -303,7 +314,7 @@ def validate_plan(
     destruction = plan.get("destructionProtocol")
     destruction_ok = (
         isinstance(destruction, dict)
-        and destruction.get("status") == "defined-only-not-tested"
+        and destruction.get("status") == "defined-and-synthetic-tested-real-data-not-tested"
         and isinstance(destruction.get("triggerEvents"), list)
         and len(destruction["triggerEvents"]) >= 5
         and REQUIRED_DESTRUCTION_STEPS.issubset(row_ids(destruction.get("requiredSteps")))
@@ -319,7 +330,7 @@ def validate_plan(
         checks,
         "destruction-protocol-defined-only",
         destruction_ok,
-        "destruction protocol must define trigger events and required steps but remain untested",
+        "destruction protocol must define trigger events and required steps, with only synthetic testing completed",
     )
 
     audit_log = plan.get("auditLogTemplate")
@@ -340,6 +351,7 @@ def validate_plan(
     impact_ok = (
         isinstance(readiness_impact, dict)
         and readiness_impact.get("storageDestructionGateStatus") == "partial"
+        and readiness_impact.get("syntheticDrillStatus") == "complete"
         and readiness_impact.get("extractionStillBlocked") is True
         and readiness_impact.get("downloadStillBlocked") is True
         and readiness_impact.get("calibrationStillBlocked") is True
@@ -410,6 +422,9 @@ def build_report(
         "planId": plan.get("planId"),
         "planPath": repo_rel(plan_path),
         "planSha256": sha256_file(plan_path),
+        "syntheticDrillId": plan.get("syntheticDrillId"),
+        "syntheticDrillPath": plan.get("syntheticDrillPath"),
+        "syntheticDrillSha256": sha256_file(DEFAULT_SYNTHETIC_DRILL),
         "acquisitionReadinessId": acquisition_readiness.get("acquisitionReadinessId"),
         "acquisitionReadinessPath": repo_rel(acquisition_readiness_path),
         "acquisitionReadinessSha256": sha256_file(acquisition_readiness_path),

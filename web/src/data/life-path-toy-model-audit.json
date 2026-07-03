@@ -1,6 +1,6 @@
 {
   "schemaVersion": "human-infra.life-path-toy-audit.v1",
-  "generatedAt": "2026-07-03T02:27:50.427712+00:00",
+  "generatedAt": "2026-07-03T02:44:04.321315+00:00",
   "modelPath": "web/src/data/life-path-toy-model.json",
   "modelSha256": "a4c92209d79d20579bf1f575d5ebf07ffe5be9ccaf6bf3f3eef08efa287b5377",
   "overallStatus": "PASS",
@@ -484,6 +484,41 @@
       "id": "nhats-controlled-storage-validation-non-proof-note",
       "status": "PASS",
       "detail": "validation must state that it does not prove registration, workspace provisioning, download, extraction, calibration or prediction"
+    },
+    {
+      "id": "nhats-synthetic-storage-drill-validation-exists",
+      "status": "PASS",
+      "detail": "web/src/data/life-path-nhats-synthetic-storage-destruction-drill-validation.json"
+    },
+    {
+      "id": "nhats-synthetic-storage-drill-validation-schema",
+      "status": "PASS",
+      "detail": "schemaVersion='human-infra.life-path-nhats-synthetic-storage-destruction-drill-validation.v1'"
+    },
+    {
+      "id": "nhats-synthetic-storage-drill-validation-source-hash",
+      "status": "PASS",
+      "detail": "validation must point back to current drill, storage/destruction plan and acquisition-readiness hashes"
+    },
+    {
+      "id": "nhats-synthetic-storage-drill-validation-pass",
+      "status": "PASS",
+      "detail": "overallStatus='PASS' summary={'pass': 13, 'fail': 0}"
+    },
+    {
+      "id": "nhats-synthetic-storage-drill-validation-impact",
+      "status": "PASS",
+      "detail": "synthetic drill may only complete the dry-run while storage/destruction remains partial and data/model actions stay blocked"
+    },
+    {
+      "id": "nhats-synthetic-storage-drill-validation-boundary",
+      "status": "PASS",
+      "detail": "validation must keep official files, raw data, row-level data, public AI, calibration and individual prediction blocked"
+    },
+    {
+      "id": "nhats-synthetic-storage-drill-validation-non-proof-note",
+      "status": "PASS",
+      "detail": "validation must state that it proves only synthetic drill consistency, not registration, download, extraction, calibration or prediction"
     },
     {
       "id": "nhats-file-tier-table-exists",
@@ -1497,7 +1532,7 @@
     }
   ],
   "summary": {
-    "pass": 298,
+    "pass": 305,
     "warn": 0,
     "fail": 0
   },
@@ -1874,7 +1909,7 @@
   },
   "nhatsAcquisitionReadiness": {
     "path": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_acquisition_readiness.json",
-    "sha256": "96ed11141edd22699e235e08d5ce1e2e5677ac8361010811b2a83bf4c9fecbf8",
+    "sha256": "f0ebd157e99df536c7b30bc8106b364b35a2bc74f7808be0c34e41931266e1c4",
     "status": "PASS",
     "checks": [
       {
@@ -1951,7 +1986,7 @@
   },
   "nhatsAcquisitionReadinessValidation": {
     "path": "web/src/data/life-path-nhats-acquisition-readiness-validation.json",
-    "sha256": "ccc9e622c8beb0aaca38418a2a0e29aa86d3323499a72e225ed6ac9f989b36a3",
+    "sha256": "800f999d81752f8fa776764583af042bef0dc3f16459a7a04e0cf7ef08c425ea",
     "status": "PASS",
     "checks": [
       {
@@ -1998,7 +2033,7 @@
   },
   "nhatsControlledStorageDestruction": {
     "path": "web/src/data/life-path-nhats-controlled-storage-destruction-validation.json",
-    "sha256": "e4e2bc132db26def53c6b7d069aed9592396b9b4b7f04b054b9014460a9655df",
+    "sha256": "81e731b0bc03250e859829b4e85344f33c59b7374cfa5dcbbe388f53351b00ac",
     "status": "PASS",
     "checks": [
       {
@@ -2035,6 +2070,53 @@
         "id": "nhats-controlled-storage-validation-non-proof-note",
         "status": "PASS",
         "detail": "validation must state that it does not prove registration, workspace provisioning, download, extraction, calibration or prediction"
+      }
+    ],
+    "summary": {
+      "pass": 7,
+      "warn": 0,
+      "fail": 0
+    }
+  },
+  "nhatsSyntheticStorageDestructionDrill": {
+    "path": "web/src/data/life-path-nhats-synthetic-storage-destruction-drill-validation.json",
+    "sha256": "18b4e7994acf18069445e61b630f0e2fe90d09640d55bf50524f220b4c15fc5b",
+    "status": "PASS",
+    "checks": [
+      {
+        "id": "nhats-synthetic-storage-drill-validation-exists",
+        "status": "PASS",
+        "detail": "web/src/data/life-path-nhats-synthetic-storage-destruction-drill-validation.json"
+      },
+      {
+        "id": "nhats-synthetic-storage-drill-validation-schema",
+        "status": "PASS",
+        "detail": "schemaVersion='human-infra.life-path-nhats-synthetic-storage-destruction-drill-validation.v1'"
+      },
+      {
+        "id": "nhats-synthetic-storage-drill-validation-source-hash",
+        "status": "PASS",
+        "detail": "validation must point back to current drill, storage/destruction plan and acquisition-readiness hashes"
+      },
+      {
+        "id": "nhats-synthetic-storage-drill-validation-pass",
+        "status": "PASS",
+        "detail": "overallStatus='PASS' summary={'pass': 13, 'fail': 0}"
+      },
+      {
+        "id": "nhats-synthetic-storage-drill-validation-impact",
+        "status": "PASS",
+        "detail": "synthetic drill may only complete the dry-run while storage/destruction remains partial and data/model actions stay blocked"
+      },
+      {
+        "id": "nhats-synthetic-storage-drill-validation-boundary",
+        "status": "PASS",
+        "detail": "validation must keep official files, raw data, row-level data, public AI, calibration and individual prediction blocked"
+      },
+      {
+        "id": "nhats-synthetic-storage-drill-validation-non-proof-note",
+        "status": "PASS",
+        "detail": "validation must state that it proves only synthetic drill consistency, not registration, download, extraction, calibration or prediction"
       }
     ],
     "summary": {

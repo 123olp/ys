@@ -1,8 +1,8 @@
 {
   "schemaVersion": "human-infra.life-path-nhats-acquisition-readiness-validation.v1",
-  "generatedAt": "2026-07-03T02:30:58.660954+00:00",
+  "generatedAt": "2026-07-03T02:47:22.857189+00:00",
   "registerPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_acquisition_readiness.json",
-  "registerSha256": "96ed11141edd22699e235e08d5ce1e2e5677ac8361010811b2a83bf4c9fecbf8",
+  "registerSha256": "f0ebd157e99df536c7b30bc8106b364b35a2bc74f7808be0c34e41931266e1c4",
   "acquisitionReadinessId": "nhats-acquisition-readiness-2026-07-02",
   "overallStatus": "PASS",
   "summary": {
@@ -40,7 +40,7 @@
     {
       "id": "storage-destruction-plan-binding",
       "status": "PASS",
-      "detail": "register must point to the controlled storage/destruction plan while keeping extraction blocked"
+      "detail": "register must point to the controlled storage/destruction plan and synthetic drill while keeping extraction blocked"
     },
     {
       "id": "current-decision-boundary",

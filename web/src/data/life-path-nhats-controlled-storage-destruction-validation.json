@@ -1,13 +1,16 @@
 {
   "schemaVersion": "human-infra.life-path-nhats-controlled-storage-destruction-plan-validation.v1",
-  "generatedAt": "2026-07-03T02:30:58.695000+00:00",
+  "generatedAt": "2026-07-03T02:47:22.822448+00:00",
   "sourceId": "nhats",
   "planId": "nhats-controlled-storage-destruction-plan-2026-07-03",
   "planPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_controlled_storage_destruction_plan.json",
-  "planSha256": "b4c7767ea04008f2766cfe8c700375438cbf1d3dd2c1bd956441a51131aea9ce",
+  "planSha256": "ff6c99b22efdb20197df15d014f312af83c96e836139690f10fc9d5d011d7729",
+  "syntheticDrillId": "nhats-synthetic-storage-destruction-drill-2026-07-03",
+  "syntheticDrillPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_synthetic_storage_destruction_drill.json",
+  "syntheticDrillSha256": "83178bbaab0efaf71c65539c08ecb845fd778d1f0400537717558d13eac6e4d3",
   "acquisitionReadinessId": "nhats-acquisition-readiness-2026-07-02",
   "acquisitionReadinessPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_acquisition_readiness.json",
-  "acquisitionReadinessSha256": "96ed11141edd22699e235e08d5ce1e2e5677ac8361010811b2a83bf4c9fecbf8",
+  "acquisitionReadinessSha256": "f0ebd157e99df536c7b30bc8106b364b35a2bc74f7808be0c34e41931266e1c4",
   "overallStatus": "PASS",
   "summary": {
     "pass": 15,
@@ -27,7 +30,7 @@
     {
       "id": "current-decision-boundary",
       "status": "PASS",
-      "detail": "only planDefined may be true; execution, download, extraction, repository raw data, public AI, calibration and individual prediction must remain false"
+      "detail": "planDefined and syntheticDrillExecuted may be true; real execution, download, extraction, repository raw data, public AI, calibration and individual prediction must remain false"
     },
     {
       "id": "controlled-workspace-outside-repo",
@@ -57,7 +60,7 @@
     {
       "id": "destruction-protocol-defined-only",
       "status": "PASS",
-      "detail": "destruction protocol must define trigger events and required steps but remain untested"
+      "detail": "destruction protocol must define trigger events and required steps, with only synthetic testing completed"
     },
     {
       "id": "audit-log-template",
@@ -92,7 +95,8 @@
   ],
   "readinessImpact": {
     "storageDestructionGateStatus": "partial",
-    "whyPartial": "A plan exists and is machine-audited, but it has not been executed, no controlled workspace is provisioned, no access log exists and no destruction run has been tested.",
+    "syntheticDrillStatus": "complete",
+    "whyPartial": "A plan exists and is machine-audited, and a synthetic create-hash-delete drill has completed. The real governed plan has not been executed, no controlled workspace is provisioned, no access log exists and no governed NHATS destruction evidence exists.",
     "extractionStillBlocked": true,
     "downloadStillBlocked": true,
     "calibrationStillBlocked": true

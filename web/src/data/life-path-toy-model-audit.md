@@ -3,7 +3,7 @@
 - Overall status: `PASS`
 - Model path: `web/src/data/life-path-toy-model.json`
 - Model SHA-256: `a4c92209d79d20579bf1f575d5ebf07ffe5be9ccaf6bf3f3eef08efa287b5377`
-- Generated at: `2026-07-03T02:27:50.427712+00:00`
+- Generated at: `2026-07-03T02:44:04.321315+00:00`
 
 ## Checks
 
@@ -105,6 +105,13 @@
 | `nhats-controlled-storage-validation-impact` | `PASS` | validation may only move storage/destruction to partial while keeping download, extraction and calibration blocked |
 | `nhats-controlled-storage-validation-boundary` | `PASS` | validation must keep execution, download, extraction, raw repository data, public AI, calibration and individual prediction blocked |
 | `nhats-controlled-storage-validation-non-proof-note` | `PASS` | validation must state that it does not prove registration, workspace provisioning, download, extraction, calibration or prediction |
+| `nhats-synthetic-storage-drill-validation-exists` | `PASS` | web/src/data/life-path-nhats-synthetic-storage-destruction-drill-validation.json |
+| `nhats-synthetic-storage-drill-validation-schema` | `PASS` | schemaVersion='human-infra.life-path-nhats-synthetic-storage-destruction-drill-validation.v1' |
+| `nhats-synthetic-storage-drill-validation-source-hash` | `PASS` | validation must point back to current drill, storage/destruction plan and acquisition-readiness hashes |
+| `nhats-synthetic-storage-drill-validation-pass` | `PASS` | overallStatus='PASS' summary={'pass': 13, 'fail': 0} |
+| `nhats-synthetic-storage-drill-validation-impact` | `PASS` | synthetic drill may only complete the dry-run while storage/destruction remains partial and data/model actions stay blocked |
+| `nhats-synthetic-storage-drill-validation-boundary` | `PASS` | validation must keep official files, raw data, row-level data, public AI, calibration and individual prediction blocked |
+| `nhats-synthetic-storage-drill-validation-non-proof-note` | `PASS` | validation must state that it proves only synthetic drill consistency, not registration, download, extraction, calibration or prediction |
 | `nhats-file-tier-table-exists` | `PASS` | domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_file_tier_table.json |
 | `nhats-file-tier-table-schema` | `PASS` | schemaVersion='human-infra.life-path-nhats-file-tier-table.v1' |
 | `nhats-file-tier-table-identity` | `PASS` | file-tier table must bind NHATS source, Data Card, manifest, acquisition readiness and candidate-only status |
@@ -350,9 +357,23 @@
 ## NHATS Acquisition Readiness
 
 - Acquisition readiness path: `domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_acquisition_readiness.json`
-- Acquisition readiness SHA-256: `96ed11141edd22699e235e08d5ce1e2e5677ac8361010811b2a83bf4c9fecbf8`
+- Acquisition readiness SHA-256: `f0ebd157e99df536c7b30bc8106b364b35a2bc74f7808be0c34e41931266e1c4`
 - Acquisition readiness status: `PASS`
 - Boundary: the structured readiness contract keeps NHATS at cannot-extract-yet until registration, file-tier, Colectica variables, endpoint, survey design, disclosure control, AI boundary and storage/destruction gates are ready.
+
+## NHATS Controlled Storage / Destruction
+
+- Storage/destruction validation path: `web/src/data/life-path-nhats-controlled-storage-destruction-validation.json`
+- Storage/destruction validation SHA-256: `81e731b0bc03250e859829b4e85344f33c59b7374cfa5dcbbe388f53351b00ac`
+- Storage/destruction validation status: `PASS`
+- Boundary: the controlled storage/destruction plan is machine-validated but real governed workspace execution, download, extraction, calibration and individual prediction remain blocked.
+
+## NHATS Synthetic Storage / Destruction Drill
+
+- Synthetic drill validation path: `web/src/data/life-path-nhats-synthetic-storage-destruction-drill-validation.json`
+- Synthetic drill validation SHA-256: `18b4e7994acf18069445e61b630f0e2fe90d09640d55bf50524f220b4c15fc5b`
+- Synthetic drill validation status: `PASS`
+- Boundary: the synthetic create-hash-delete drill proves only dry-run mechanics; it does not prove NHATS registration, governed workspace provisioning, data access, extraction, calibration or individual prediction.
 
 ## NHATS File Tier Table
 

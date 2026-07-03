@@ -1,0 +1,105 @@
+{
+  "schemaVersion": "human-infra.life-path-nhats-synthetic-storage-destruction-drill-validation.v1",
+  "generatedAt": "2026-07-03T02:47:22.784921+00:00",
+  "sourceId": "nhats",
+  "drillId": "nhats-synthetic-storage-destruction-drill-2026-07-03",
+  "drillPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_synthetic_storage_destruction_drill.json",
+  "drillSha256": "83178bbaab0efaf71c65539c08ecb845fd778d1f0400537717558d13eac6e4d3",
+  "planId": "nhats-controlled-storage-destruction-plan-2026-07-03",
+  "planPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_controlled_storage_destruction_plan.json",
+  "planSha256": "ff6c99b22efdb20197df15d014f312af83c96e836139690f10fc9d5d011d7729",
+  "acquisitionReadinessId": "nhats-acquisition-readiness-2026-07-02",
+  "acquisitionReadinessPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_acquisition_readiness.json",
+  "acquisitionReadinessSha256": "f0ebd157e99df536c7b30bc8106b364b35a2bc74f7808be0c34e41931266e1c4",
+  "overallStatus": "PASS",
+  "summary": {
+    "pass": 13,
+    "fail": 0
+  },
+  "checks": [
+    {
+      "id": "schema-version",
+      "status": "PASS",
+      "detail": "schemaVersion='human-infra.life-path-nhats-synthetic-storage-destruction-drill.v1'"
+    },
+    {
+      "id": "drill-identity",
+      "status": "PASS",
+      "detail": "drill must bind the current NHATS plan and acquisition-readiness register"
+    },
+    {
+      "id": "plan-backlink",
+      "status": "PASS",
+      "detail": "controlled storage/destruction plan must link back to this synthetic drill"
+    },
+    {
+      "id": "synthetic-only-boundary",
+      "status": "PASS",
+      "detail": "drill must be synthetic-only and keep raw data, credentials, public AI, calibration and individual prediction false"
+    },
+    {
+      "id": "temporary-workspace-destroyed",
+      "status": "PASS",
+      "detail": "temporary /tmp synthetic root must be recorded as absent after deletion and not treated as governed NHATS evidence"
+    },
+    {
+      "id": "drill-step-coverage",
+      "status": "PASS",
+      "detail": "missing=[]"
+    },
+    {
+      "id": "synthetic-artifact-destruction",
+      "status": "PASS",
+      "detail": "artifact_ids=['synthetic-aggregate-output', 'synthetic-public-round-file', 'synthetic-working-extract'] zones=['aggregate-output-zone', 'raw-download-zone', 'working-extract-zone']"
+    },
+    {
+      "id": "synthetic-artifact-hashes",
+      "status": "PASS",
+      "detail": "synthetic artifact hashes must match the recorded create-hash-delete drill output"
+    },
+    {
+      "id": "command-evidence-boundary",
+      "status": "PASS",
+      "detail": "command evidence must record only synthetic hashes and absence confirmation"
+    },
+    {
+      "id": "readiness-impact-still-blocking",
+      "status": "PASS",
+      "detail": "synthetic drill may only prove drill mechanics while keeping storage gate partial and all model/data actions blocked"
+    },
+    {
+      "id": "prohibited-interpretations",
+      "status": "PASS",
+      "detail": "drill must explicitly forbid registration, access, download, extraction, calibration and prediction interpretations"
+    },
+    {
+      "id": "no-secret-raw-row-level-keys",
+      "status": "PASS",
+      "detail": "prohibited_keys=[]"
+    },
+    {
+      "id": "source-trace",
+      "status": "PASS",
+      "detail": "drill must cite the storage/destruction plan and acquisition-readiness register"
+    }
+  ],
+  "readinessImpact": {
+    "syntheticDrillStatus": "complete",
+    "storageDestructionGateStatus": "partial",
+    "whyPartial": "Synthetic create-hash-delete behavior is demonstrated, but NHATS registration, governed workspace provisioning, access log, inventory log and real governed-file destruction evidence are still missing.",
+    "downloadStillBlocked": true,
+    "extractionStillBlocked": true,
+    "calibrationStillBlocked": true,
+    "individualPredictionStillBlocked": true
+  },
+  "boundary": {
+    "syntheticOnly": true,
+    "officialFilesDownloaded": false,
+    "rawDataInRepository": false,
+    "rowLevelDataInRepository": false,
+    "publicAiUploadUsed": false,
+    "calibrationAllowed": false,
+    "individualPredictionAllowed": false
+  },
+  "note": "This validation proves only that a synthetic create-hash-delete drill record is internally consistent. It does not prove NHATS registration, governed workspace provisioning, NHATS download, extraction, calibration, validation or individual prediction."
+}

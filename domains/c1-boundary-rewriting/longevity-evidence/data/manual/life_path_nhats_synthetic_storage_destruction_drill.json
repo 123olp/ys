@@ -1,0 +1,129 @@
+{
+  "schemaVersion": "human-infra.life-path-nhats-synthetic-storage-destruction-drill.v1",
+  "sourceId": "nhats",
+  "sourceName": "National Health and Aging Trends Study",
+  "drillId": "nhats-synthetic-storage-destruction-drill-2026-07-03",
+  "planId": "nhats-controlled-storage-destruction-plan-2026-07-03",
+  "planPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_controlled_storage_destruction_plan.json",
+  "acquisitionReadinessId": "nhats-acquisition-readiness-2026-07-02",
+  "acquisitionReadinessPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_acquisition_readiness.json",
+  "executedAt": "2026-07-03T02:34:22+00:00",
+  "reviewer": "tradecatlabs",
+  "status": "synthetic-drill-completed-no-nhats-data",
+  "executionBoundary": {
+    "syntheticOnly": true,
+    "containsRawNhatsData": false,
+    "containsRawNsocData": false,
+    "containsRowLevelNhatsData": false,
+    "containsIdentifiers": false,
+    "downloadedOfficialFiles": false,
+    "usedNhatsCredentials": false,
+    "usedSessionCookies": false,
+    "publicAiUploadUsed": false,
+    "repositoryRawDataWritten": false,
+    "repositoryRowLevelDataWritten": false,
+    "temporarySyntheticFilesRetained": false,
+    "calibrationAllowed": false,
+    "individualPredictionAllowed": false
+  },
+  "temporaryWorkspace": {
+    "temporaryRoot": "/tmp/human-infra-nhats-synthetic-drill-20260703",
+    "purpose": "Filesystem-only synthetic dry drill for create-hash-delete confirmation.",
+    "rootExistsAfterDeletion": false,
+    "notAControlledNhatsWorkspace": true,
+    "notARegistrationEvidence": true,
+    "notADataAccessEvidence": true
+  },
+  "steps": [
+    {
+      "id": "create-synthetic-zones",
+      "status": "pass",
+      "description": "Created synthetic raw-download, working-extract and aggregate-output zones under a temporary /tmp root."
+    },
+    {
+      "id": "write-synthetic-files",
+      "status": "pass",
+      "description": "Wrote three small synthetic text fixtures with no NHATS, NSOC, identifier, row-level or credential content."
+    },
+    {
+      "id": "hash-synthetic-files",
+      "status": "pass",
+      "description": "Computed SHA-256 hashes before deletion."
+    },
+    {
+      "id": "delete-temporary-root",
+      "status": "pass",
+      "description": "Removed the temporary synthetic drill root."
+    },
+    {
+      "id": "confirm-absence",
+      "status": "pass",
+      "description": "Confirmed the temporary root no longer exists after deletion."
+    }
+  ],
+  "syntheticArtifacts": [
+    {
+      "id": "synthetic-aggregate-output",
+      "zone": "aggregate-output-zone",
+      "temporaryRelativePath": "aggregate-output-zone/synthetic_aggregate_output.txt",
+      "retentionClass": "synthetic-aggregate-output",
+      "sha256": "46a2d465b1997c4e67d8ed4fff4fe1ea2a37bce3d49c928d8094b36942a90c93",
+      "destructionStatus": "destroyed",
+      "containsRawOrRowLevelData": false
+    },
+    {
+      "id": "synthetic-public-round-file",
+      "zone": "raw-download-zone",
+      "temporaryRelativePath": "raw-download-zone/synthetic_public_round_file.txt",
+      "retentionClass": "synthetic-raw-placeholder",
+      "sha256": "7b342c1e6b523c59f15f29d2dad29f66d04e3fa4fb145a76abd2238a4080e9ee",
+      "destructionStatus": "destroyed",
+      "containsRawOrRowLevelData": false
+    },
+    {
+      "id": "synthetic-working-extract",
+      "zone": "working-extract-zone",
+      "temporaryRelativePath": "working-extract-zone/synthetic_working_extract.csv",
+      "retentionClass": "synthetic-working-extract",
+      "sha256": "f836cb5583337365d8207ecf6b0684f76e7eb4323269e1663257469604da374f",
+      "destructionStatus": "destroyed",
+      "containsRawOrRowLevelData": false
+    }
+  ],
+  "commandEvidence": {
+    "commandClass": "local-shell-synthetic-filesystem-drill",
+    "createdZones": [
+      "raw-download-zone",
+      "working-extract-zone",
+      "aggregate-output-zone"
+    ],
+    "finalObservation": "DRILL_ROOT_EXISTS_AFTER_DELETE=0",
+    "storedEvidencePolicy": "Only synthetic artifact hashes and absence confirmation are retained in the repository."
+  },
+  "readinessImpact": {
+    "syntheticDrillStatus": "complete",
+    "storageDestructionGateStatus": "partial",
+    "whyPartial": "Synthetic create-hash-delete behavior is demonstrated, but NHATS registration, governed workspace provisioning, access log, inventory log and real governed-file destruction evidence are still missing.",
+    "downloadStillBlocked": true,
+    "extractionStillBlocked": true,
+    "calibrationStillBlocked": true,
+    "individualPredictionStillBlocked": true
+  },
+  "prohibitedInterpretations": [
+    "This drill does not prove NHATS registration.",
+    "This drill does not prove official file access or approval.",
+    "This drill does not prove a governed NHATS workspace has been provisioned.",
+    "This drill does not authorize download or extraction.",
+    "This drill does not validate calibration, intervention effects or individual prediction."
+  ],
+  "sourceTrace": [
+    "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_controlled_storage_destruction_plan.json",
+    "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_acquisition_readiness.json"
+  ],
+  "nextWork": [
+    "Provision a real governed workspace outside the repository after registration is complete.",
+    "Initialize a real access log and inventory outside the public repository.",
+    "Repeat destruction evidence against governed synthetic fixtures inside the real controlled workspace.",
+    "Keep real NHATS download, extraction, calibration and individual prediction blocked until every acquisition-readiness gate is ready."
+  ]
+}

@@ -24,6 +24,9 @@ DEFAULT_REGISTER = MANUAL_DIR / "life_path_nhats_acquisition_readiness.json"
 DEFAULT_STORAGE_DESTRUCTION_PLAN = (
     MANUAL_DIR / "life_path_nhats_controlled_storage_destruction_plan.json"
 )
+DEFAULT_STORAGE_DESTRUCTION_SYNTHETIC_DRILL = (
+    MANUAL_DIR / "life_path_nhats_synthetic_storage_destruction_drill.json"
+)
 DEFAULT_OUT = (
     REPO_ROOT
     / "web"
@@ -167,12 +170,17 @@ def validate_register(register: dict[str, Any]) -> list[dict[str, Any]]:
         and register.get("storageDestructionPlanPath")
         == repo_rel(DEFAULT_STORAGE_DESTRUCTION_PLAN)
         and DEFAULT_STORAGE_DESTRUCTION_PLAN.exists()
+        and register.get("storageDestructionSyntheticDrillId")
+        == "nhats-synthetic-storage-destruction-drill-2026-07-03"
+        and register.get("storageDestructionSyntheticDrillPath")
+        == repo_rel(DEFAULT_STORAGE_DESTRUCTION_SYNTHETIC_DRILL)
+        and DEFAULT_STORAGE_DESTRUCTION_SYNTHETIC_DRILL.exists()
     )
     add_check(
         checks,
         "storage-destruction-plan-binding",
         storage_plan_ok,
-        "register must point to the controlled storage/destruction plan while keeping extraction blocked",
+        "register must point to the controlled storage/destruction plan and synthetic drill while keeping extraction blocked",
     )
 
     decision = register.get("currentDecision")

@@ -104,6 +104,22 @@ DEFAULT_NHATS_CONTROLLED_STORAGE_DESTRUCTION_VALIDATION = (
     / "data"
     / "life-path-nhats-controlled-storage-destruction-validation.json"
 )
+DEFAULT_NHATS_SYNTHETIC_STORAGE_DESTRUCTION_DRILL = (
+    REPO_ROOT
+    / "domains"
+    / "c1-boundary-rewriting"
+    / "longevity-evidence"
+    / "data"
+    / "manual"
+    / "life_path_nhats_synthetic_storage_destruction_drill.json"
+)
+DEFAULT_NHATS_SYNTHETIC_STORAGE_DESTRUCTION_DRILL_VALIDATION = (
+    REPO_ROOT
+    / "web"
+    / "src"
+    / "data"
+    / "life-path-nhats-synthetic-storage-destruction-drill-validation.json"
+)
 DEFAULT_NHATS_FILE_TIER_TABLE = (
     REPO_ROOT
     / "domains"
@@ -1995,6 +2011,126 @@ def audit_nhats_controlled_storage_destruction_validation(
         "nhats-controlled-storage-validation-non-proof-note",
         status_from_bool(exists and note_ok),
         "validation must state that it does not prove registration, workspace provisioning, download, extraction, calibration or prediction",
+    )
+
+    return {
+        "path": str(validation_path.relative_to(REPO_ROOT)),
+        "sha256": sha256_file(validation_path) if exists else None,
+        "status": "PASS" if summarize_checks(checks)["fail"] == 0 else "FAIL",
+        "checks": checks,
+        "summary": summarize_checks(checks),
+    }
+
+
+def audit_nhats_synthetic_storage_destruction_drill_validation(
+    validation_path: Path,
+    drill_path: Path,
+    plan_path: Path,
+    readiness_path: Path,
+) -> dict[str, Any]:
+    checks: list[dict[str, Any]] = []
+    exists = validation_path.exists()
+    add_check(
+        checks,
+        "nhats-synthetic-storage-drill-validation-exists",
+        status_from_bool(exists),
+        str(validation_path.relative_to(REPO_ROOT)),
+    )
+    validation = load_json(validation_path) if exists else {}
+
+    schema_ok = (
+        validation.get("schemaVersion")
+        == "human-infra.life-path-nhats-synthetic-storage-destruction-drill-validation.v1"
+    )
+    add_check(
+        checks,
+        "nhats-synthetic-storage-drill-validation-schema",
+        status_from_bool(exists and schema_ok),
+        f"schemaVersion={validation.get('schemaVersion')!r}",
+    )
+
+    source_ok = (
+        validation.get("drillPath") == str(drill_path.relative_to(REPO_ROOT))
+        and validation.get("drillSha256") == sha256_file(drill_path)
+        and validation.get("planPath") == str(plan_path.relative_to(REPO_ROOT))
+        and validation.get("planSha256") == sha256_file(plan_path)
+        and validation.get("acquisitionReadinessPath") == str(readiness_path.relative_to(REPO_ROOT))
+        and validation.get("acquisitionReadinessSha256") == sha256_file(readiness_path)
+        and validation.get("drillId") == "nhats-synthetic-storage-destruction-drill-2026-07-03"
+    )
+    add_check(
+        checks,
+        "nhats-synthetic-storage-drill-validation-source-hash",
+        status_from_bool(
+            exists
+            and drill_path.exists()
+            and plan_path.exists()
+            and readiness_path.exists()
+            and source_ok
+        ),
+        "validation must point back to current drill, storage/destruction plan and acquisition-readiness hashes",
+    )
+
+    summary = validation.get("summary")
+    status_ok = (
+        validation.get("overallStatus") == "PASS"
+        and isinstance(summary, dict)
+        and summary.get("fail") == 0
+        and isinstance(validation.get("checks"), list)
+    )
+    add_check(
+        checks,
+        "nhats-synthetic-storage-drill-validation-pass",
+        status_from_bool(exists and status_ok),
+        f"overallStatus={validation.get('overallStatus')!r} summary={summary!r}",
+    )
+
+    impact = validation.get("readinessImpact")
+    impact_ok = (
+        isinstance(impact, dict)
+        and impact.get("syntheticDrillStatus") == "complete"
+        and impact.get("storageDestructionGateStatus") == "partial"
+        and impact.get("downloadStillBlocked") is True
+        and impact.get("extractionStillBlocked") is True
+        and impact.get("calibrationStillBlocked") is True
+        and impact.get("individualPredictionStillBlocked") is True
+    )
+    add_check(
+        checks,
+        "nhats-synthetic-storage-drill-validation-impact",
+        status_from_bool(exists and impact_ok),
+        "synthetic drill may only complete the dry-run while storage/destruction remains partial and data/model actions stay blocked",
+    )
+
+    boundary = validation.get("boundary")
+    boundary_ok = (
+        isinstance(boundary, dict)
+        and boundary.get("syntheticOnly") is True
+        and boundary.get("officialFilesDownloaded") is False
+        and boundary.get("rawDataInRepository") is False
+        and boundary.get("rowLevelDataInRepository") is False
+        and boundary.get("publicAiUploadUsed") is False
+        and boundary.get("calibrationAllowed") is False
+        and boundary.get("individualPredictionAllowed") is False
+    )
+    add_check(
+        checks,
+        "nhats-synthetic-storage-drill-validation-boundary",
+        status_from_bool(exists and boundary_ok),
+        "validation must keep official files, raw data, row-level data, public AI, calibration and individual prediction blocked",
+    )
+
+    note = str(validation.get("note", "")).lower()
+    note_ok = (
+        "synthetic create-hash-delete drill" in note
+        and "does not prove nhats registration" in note
+        and "nhats download" in note
+    )
+    add_check(
+        checks,
+        "nhats-synthetic-storage-drill-validation-non-proof-note",
+        status_from_bool(exists and note_ok),
+        "validation must state that it proves only synthetic drill consistency, not registration, download, extraction, calibration or prediction",
     )
 
     return {
@@ -5691,6 +5827,8 @@ def audit_model(
     nhats_acquisition_readiness_validation_path: Path,
     nhats_controlled_storage_destruction_plan_path: Path,
     nhats_controlled_storage_destruction_validation_path: Path,
+    nhats_synthetic_storage_destruction_drill_path: Path,
+    nhats_synthetic_storage_destruction_drill_validation_path: Path,
     nhats_file_tier_table_path: Path,
     nhats_first_estimand_protocol_path: Path,
     nhats_variable_confirmation_matrix_path: Path,
@@ -5908,6 +6046,14 @@ def audit_model(
             nhats_acquisition_readiness_path,
         )
     )
+    nhats_synthetic_storage_destruction_drill_audit = (
+        audit_nhats_synthetic_storage_destruction_drill_validation(
+            nhats_synthetic_storage_destruction_drill_validation_path,
+            nhats_synthetic_storage_destruction_drill_path,
+            nhats_controlled_storage_destruction_plan_path,
+            nhats_acquisition_readiness_path,
+        )
+    )
     nhats_file_tier_table_audit = audit_nhats_file_tier_table(
         nhats_file_tier_table_path,
     )
@@ -5996,6 +6142,7 @@ def audit_model(
     checks.extend(nhats_acquisition_readiness_audit["checks"])
     checks.extend(nhats_acquisition_readiness_validation_audit["checks"])
     checks.extend(nhats_controlled_storage_destruction_audit["checks"])
+    checks.extend(nhats_synthetic_storage_destruction_drill_audit["checks"])
     checks.extend(nhats_file_tier_table_audit["checks"])
     checks.extend(nhats_first_estimand_protocol_audit["checks"])
     checks.extend(nhats_variable_confirmation_matrix_audit["checks"])
@@ -6030,6 +6177,7 @@ def audit_model(
         "nhatsAcquisitionReadiness": nhats_acquisition_readiness_audit,
         "nhatsAcquisitionReadinessValidation": nhats_acquisition_readiness_validation_audit,
         "nhatsControlledStorageDestruction": nhats_controlled_storage_destruction_audit,
+        "nhatsSyntheticStorageDestructionDrill": nhats_synthetic_storage_destruction_drill_audit,
         "nhatsFileTierTable": nhats_file_tier_table_audit,
         "nhatsFirstEstimandProtocol": nhats_first_estimand_protocol_audit,
         "nhatsVariableConfirmationMatrix": nhats_variable_confirmation_matrix_audit,
@@ -6113,6 +6261,20 @@ def render_markdown(audit: dict[str, Any]) -> str:
             f"- Acquisition readiness SHA-256: `{audit['nhatsAcquisitionReadiness']['sha256']}`",
             f"- Acquisition readiness status: `{audit['nhatsAcquisitionReadiness']['status']}`",
             "- Boundary: the structured readiness contract keeps NHATS at cannot-extract-yet until registration, file-tier, Colectica variables, endpoint, survey design, disclosure control, AI boundary and storage/destruction gates are ready.",
+            "",
+            "## NHATS Controlled Storage / Destruction",
+            "",
+            f"- Storage/destruction validation path: `{audit['nhatsControlledStorageDestruction']['path']}`",
+            f"- Storage/destruction validation SHA-256: `{audit['nhatsControlledStorageDestruction']['sha256']}`",
+            f"- Storage/destruction validation status: `{audit['nhatsControlledStorageDestruction']['status']}`",
+            "- Boundary: the controlled storage/destruction plan is machine-validated but real governed workspace execution, download, extraction, calibration and individual prediction remain blocked.",
+            "",
+            "## NHATS Synthetic Storage / Destruction Drill",
+            "",
+            f"- Synthetic drill validation path: `{audit['nhatsSyntheticStorageDestructionDrill']['path']}`",
+            f"- Synthetic drill validation SHA-256: `{audit['nhatsSyntheticStorageDestructionDrill']['sha256']}`",
+            f"- Synthetic drill validation status: `{audit['nhatsSyntheticStorageDestructionDrill']['status']}`",
+            "- Boundary: the synthetic create-hash-delete drill proves only dry-run mechanics; it does not prove NHATS registration, governed workspace provisioning, data access, extraction, calibration or individual prediction.",
             "",
             "## NHATS File Tier Table",
             "",
@@ -6307,6 +6469,16 @@ def parse_args() -> argparse.Namespace:
         default=DEFAULT_NHATS_CONTROLLED_STORAGE_DESTRUCTION_VALIDATION,
     )
     parser.add_argument(
+        "--nhats-synthetic-storage-destruction-drill",
+        type=Path,
+        default=DEFAULT_NHATS_SYNTHETIC_STORAGE_DESTRUCTION_DRILL,
+    )
+    parser.add_argument(
+        "--nhats-synthetic-storage-destruction-drill-validation",
+        type=Path,
+        default=DEFAULT_NHATS_SYNTHETIC_STORAGE_DESTRUCTION_DRILL_VALIDATION,
+    )
+    parser.add_argument(
         "--nhats-file-tier-table",
         type=Path,
         default=DEFAULT_NHATS_FILE_TIER_TABLE,
@@ -6467,6 +6639,12 @@ def main() -> int:
     nhats_controlled_storage_destruction_validation_path = (
         args.nhats_controlled_storage_destruction_validation.resolve()
     )
+    nhats_synthetic_storage_destruction_drill_path = (
+        args.nhats_synthetic_storage_destruction_drill.resolve()
+    )
+    nhats_synthetic_storage_destruction_drill_validation_path = (
+        args.nhats_synthetic_storage_destruction_drill_validation.resolve()
+    )
     nhats_file_tier_table_path = args.nhats_file_tier_table.resolve()
     nhats_first_estimand_protocol_path = args.nhats_first_estimand_protocol.resolve()
     nhats_variable_confirmation_matrix_path = (
@@ -6547,6 +6725,8 @@ def main() -> int:
         nhats_acquisition_readiness_validation_path,
         nhats_controlled_storage_destruction_plan_path,
         nhats_controlled_storage_destruction_validation_path,
+        nhats_synthetic_storage_destruction_drill_path,
+        nhats_synthetic_storage_destruction_drill_validation_path,
         nhats_file_tier_table_path,
         nhats_first_estimand_protocol_path,
         nhats_variable_confirmation_matrix_path,

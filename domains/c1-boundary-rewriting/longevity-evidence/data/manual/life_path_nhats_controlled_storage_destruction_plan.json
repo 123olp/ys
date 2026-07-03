@@ -5,12 +5,15 @@
   "planId": "nhats-controlled-storage-destruction-plan-2026-07-03",
   "acquisitionReadinessId": "nhats-acquisition-readiness-2026-07-02",
   "acquisitionReadinessPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_acquisition_readiness.json",
+  "syntheticDrillId": "nhats-synthetic-storage-destruction-drill-2026-07-03",
+  "syntheticDrillPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_synthetic_storage_destruction_drill.json",
   "reviewDate": "2026-07-03",
   "reviewer": "tradecatlabs",
   "status": "plan-only-not-executed-no-data-acquired",
   "currentDecision": {
     "planDefined": true,
     "planExecuted": false,
+    "syntheticDrillExecuted": true,
     "registrationRecorded": false,
     "controlledWorkspaceProvisioned": false,
     "accessLogInitialized": false,
@@ -22,7 +25,7 @@
     "publicExportAllowed": false,
     "calibrationAllowed": false,
     "individualPredictionAllowed": false,
-    "reason": "The storage and destruction plan is defined as a pre-acquisition control. It has not been executed, no NHATS files are present, no access log exists and no download or extraction is authorized."
+    "reason": "The storage and destruction plan is defined as a pre-acquisition control, and one filesystem-only synthetic create-hash-delete drill has completed. The real governed plan has not been executed, no NHATS files are present, no access log exists and no download or extraction is authorized."
   },
   "storageBoundary": {
     "controlledWorkspaceRoot": "<controlled-non-repository-workspace>/nhats",
@@ -140,7 +143,7 @@
     }
   ],
   "destructionProtocol": {
-    "status": "defined-only-not-tested",
+    "status": "defined-and-synthetic-tested-real-data-not-tested",
     "triggerEvents": [
       "NHATS or NSOC conditions require destruction",
       "access approval expires or is revoked",
@@ -232,7 +235,8 @@
   ],
   "readinessImpact": {
     "storageDestructionGateStatus": "partial",
-    "whyPartial": "A plan exists and is machine-audited, but it has not been executed, no controlled workspace is provisioned, no access log exists and no destruction run has been tested.",
+    "syntheticDrillStatus": "complete",
+    "whyPartial": "A plan exists and is machine-audited, and a synthetic create-hash-delete drill has completed. The real governed plan has not been executed, no controlled workspace is provisioned, no access log exists and no governed NHATS destruction evidence exists.",
     "extractionStillBlocked": true,
     "downloadStillBlocked": true,
     "calibrationStillBlocked": true
@@ -247,7 +251,7 @@
     "Record NHATS registration status metadata outside the public repository.",
     "Create the controlled workspace outside the repository and record only non-sensitive aliases here.",
     "Initialize an access and inventory log outside the repository before any download.",
-    "Run a dry destruction drill on synthetic files before governed NHATS files are acquired.",
+    "Repeat the dry destruction drill inside a real governed workspace after registration and before governed NHATS files are acquired.",
     "Keep acquisition status at cannot-extract-yet until registration, file tier, Colectica, survey design, endpoint and disclosure gates are ready."
   ]
 }

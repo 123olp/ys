@@ -9,6 +9,8 @@
   "fileTierTablePath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_file_tier_table.json",
   "storageDestructionPlanId": "nhats-controlled-storage-destruction-plan-2026-07-03",
   "storageDestructionPlanPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_controlled_storage_destruction_plan.json",
+  "storageDestructionSyntheticDrillId": "nhats-synthetic-storage-destruction-drill-2026-07-03",
+  "storageDestructionSyntheticDrillPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_synthetic_storage_destruction_drill.json",
   "reviewDate": "2026-07-02",
   "reviewer": "tradecatlabs",
   "status": "cannot-extract-yet",
@@ -18,7 +20,7 @@
     "rawDataAllowedInRepository": false,
     "calibrationAllowed": false,
     "individualPredictionAllowed": false,
-    "reason": "Official access, a first R13/R14 file-tier table and a controlled storage/destruction plan are documented, but registration, Colectica variable confirmation, survey-design plan, endpoint definition, disclosure control and governed storage execution are not complete."
+    "reason": "Official access, a first R13/R14 file-tier table, a controlled storage/destruction plan and a synthetic storage/destruction drill are documented, but registration, Colectica variable confirmation, survey-design plan, endpoint definition, disclosure control and governed storage execution are not complete."
   },
   "officialSourceRefresh": [
     {
@@ -133,7 +135,7 @@
       "requiredEvidence": "Governed local storage, access log, derived-data boundary and destruction-on-request process defined.",
       "status": "partial",
       "blocksExtraction": true,
-      "nextEvidence": "Execute the plan by provisioning a non-repository controlled workspace, initializing access/inventory logs outside the public repo and testing destruction on synthetic files before download."
+      "nextEvidence": "Execute the plan by provisioning a non-repository controlled workspace, initializing access/inventory logs outside the public repo and repeating destruction evidence inside the governed workspace before download."
     }
   ],
   "gateSummary": {
@@ -159,7 +161,7 @@
   ],
   "nextWork": [
     "Complete the first file-tier table with registration state, canonical format choice, approval status and governed storage path.",
-    "Execute the controlled storage/destruction plan outside the public repository before any download.",
+    "Execute the controlled storage/destruction plan in a governed workspace outside the public repository before any download.",
     "Use Cross-Year Search or official codebooks to confirm exact variables for one functional-survival endpoint.",
     "Define survey-design and disclosure-control plans before any extraction script exists.",
     "Keep current decision at cannot-extract-yet until every gate is ready."
