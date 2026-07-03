@@ -45,6 +45,7 @@ tools/
 ├── audit_human_infra_c2_longtail_fourth_batch_source_resolution_register.py # C2-LT-B4 source-resolution 审计器
 ├── audit_human_infra_c2_longtail_fourth_batch_manual_fulltext_extraction_register.py # C2-LT-B4 manual/fulltext extraction 审计器
 ├── audit_human_infra_c2_longtail_fourth_batch_manual_fulltext_fresh_review_verdict_register.py # C2-LT-B4 manual/fulltext fresh-review 判定审计器
+├── audit_human_infra_c2_longtail_seventh_batch_source_extraction_queue.py # C2-LT-B7 来源深读队列审计器
 ├── audit_human_infra_c2_longtail_sixth_batch_independent_fresh_review_verdict_register.py # C2-LT-B6 independent fresh review 判定审计器
 ├── audit_human_infra_c2_longtail_sixth_batch_reviewed_card_artifact_register.py # C2-LT-B6 reviewed artifact 审计器
 ├── audit_human_infra_c2_longtail_third_batch_source_extraction_register.py # C2-LT-B3 来源抽取寄存器审计器
@@ -129,6 +130,7 @@ tools/
 - `audit_human_infra_c2_longtail_fifth_batch_promotion_queue.py` 只检查 `docs/reference/human-infra-c2-longtail-fifth-batch-promotion-queue.json` 是否选择 12 个非 B1/B2/B3/B4 的细胞质量控制、细胞器通信、分子运输、膜脂韧性、清除和屏障底座 C2 长尾域、绑定 24 个 web/API-checked 候选来源、保留晋升步骤和模型准入阻塞；它不证明 source extraction、fresh review 或 reviewed artifacts 已完成。
 - `audit_human_infra_c2_longtail_sixth_batch_promotion_queue.py` 只检查 `docs/reference/human-infra-c2-longtail-sixth-batch-promotion-queue.json` 是否选择 12 个非 B1/B2/B3/B4/B5 的跨代连续性、生殖、孕产新生儿和儿童源体维护 C2 长尾域、绑定 24 个 web-checked 候选来源、保留晋升步骤和模型准入阻塞；它不证明 source extraction、fresh review 或 reviewed artifacts 已完成。
 - `audit_human_infra_c2_longtail_seventh_batch_promotion_queue.py` 只检查 `docs/reference/human-infra-c2-longtail-seventh-batch-promotion-queue.json` 是否选择 12 个非 B1/B2/B3/B4/B5/B6 的癌症控制、幸存者连续性、移植安全、器官捐献和工程器官替换 C2 长尾域、绑定 24 个 web-checked 候选来源、保留晋升步骤和模型准入阻塞；它不证明 source extraction、fresh review 或 reviewed artifacts 已完成。
+- `audit_human_infra_c2_longtail_seventh_batch_source_extraction_queue.py` 只检查 `docs/reference/human-infra-c2-longtail-seventh-batch-source-extraction-queue.json` 是否把 C2-LT-B7 晋升队列派生成 24 个 source-specific 深读任务、保留必填抽取槽位、问题、索引和阻塞用途；它不证明来源已复核、fresh review 或 reviewed artifacts 已完成。
 - `audit_human_infra_c2_longtail_sixth_batch_source_extraction_queue.py` 只检查 `docs/reference/human-infra-c2-longtail-sixth-batch-source-extraction-queue.json` 是否把 C2-LT-B6 晋升队列派生成 24 个 source-specific 深读任务、保留必填抽取槽位、问题、索引和阻塞用途；它不证明来源已复核、fresh review 或 reviewed artifacts 已完成。
 - `audit_human_infra_c2_longtail_sixth_batch_source_extraction_register.py` 只检查 `docs/reference/human-infra-c2-longtail-sixth-batch-source-extraction-register.json` 是否完成 C2-LT-B6 24/24 个来源语境字段抽取、保留 guideline route、publisher/manual review、source-lineage、降级触发、阻塞用途和索引；它不证明本地复核、fresh review、reviewed artifact 或模型准入完成。
 - `audit_human_infra_c2_longtail_sixth_batch_local_review_register.py` 只检查 `docs/reference/human-infra-c2-longtail-sixth-batch-local-review-register.json` 是否完成 C2-LT-B6 24/24 个来源抽取行的本地结构复核、保留 7 个 source-resolution/manual/fulltext/source-lineage 问题行、阻塞用途和索引；它不证明 fresh review、reviewed artifact 或模型准入完成。
