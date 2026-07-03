@@ -1,0 +1,1130 @@
+{
+  "schemaVersion": "human-infra.c2-longtail-seventh-batch-source-extraction-register.v1",
+  "registerId": "C2-LT-B7-SOURCE-EXTRACTION-REGISTER",
+  "status": "active-c2ltb7-source-extractions-pending-fresh-review",
+  "purpose": "Record completed local source-context field extraction for the seventh C2 long-tail source-extraction queue, covering cancer-control, survivorship, transplant-safety, organ-donation and bioengineered organ-replacement continuity domains while preserving 404 route, duplicate-source, registry-route, guideline-lineage and model-admission blocks.",
+  "sourceOfTruth": {
+    "sourceExtractionQueue": "docs/reference/human-infra-c2-longtail-seventh-batch-source-extraction-queue.json",
+    "sourceCardSystem": "docs/reference/source-card-system.md",
+    "maturityGapRegister": "docs/reference/human-infra-maturity-gap-register.json",
+    "maturityRoadmap": "docs/reference/human-infra-maturity-roadmap.md"
+  },
+  "scope": {
+    "batchId": "C2-LT-B7",
+    "queueTaskCount": 24,
+    "extractedTaskCount": 24,
+    "remainingTaskCount": 0,
+    "coveredDomainCount": 12,
+    "selectedTaskIds": [
+      "C2LTB7-EXT-001",
+      "C2LTB7-EXT-002",
+      "C2LTB7-EXT-003",
+      "C2LTB7-EXT-004",
+      "C2LTB7-EXT-005",
+      "C2LTB7-EXT-006",
+      "C2LTB7-EXT-007",
+      "C2LTB7-EXT-008",
+      "C2LTB7-EXT-009",
+      "C2LTB7-EXT-010",
+      "C2LTB7-EXT-011",
+      "C2LTB7-EXT-012",
+      "C2LTB7-EXT-013",
+      "C2LTB7-EXT-014",
+      "C2LTB7-EXT-015",
+      "C2LTB7-EXT-016",
+      "C2LTB7-EXT-017",
+      "C2LTB7-EXT-018",
+      "C2LTB7-EXT-019",
+      "C2LTB7-EXT-020",
+      "C2LTB7-EXT-021",
+      "C2LTB7-EXT-022",
+      "C2LTB7-EXT-023",
+      "C2LTB7-EXT-024"
+    ],
+    "extractionDepth": "bounded-source-context-field-extraction-before-local-review",
+    "currentLimitations": [
+      "This register records local field extraction only; it does not complete local source-context review or independent fresh review.",
+      "FDA HCT/P and xenotransplantation routes with local HTTP 404 probe results are retained as source-resolution/manual-route issues, not reviewed evidence.",
+      "Duplicate CDC transplant-safety rows must be handled as duplicate source lineage during local review and cannot be counted as independent evidence twice.",
+      "Public pages, news posts, guideline routes, recommendation pages and PDFs are kept in their source-context roles and do not authorize individual clinical advice or calibrated model parameters."
+    ]
+  },
+  "sourceAccessNotes": [
+    "All 24 C2-LT-B7 candidate source rows were locally checked on 2026-07-03 against NCI, CDC, COG, USPSTF, ODPHP, AASLD, PMC, ASGE, Donate Life or FDA routes before field extraction.",
+    "Local probe returned normal HTML/PDF access for 20 rows, a dynamic 202 registration route for Donate Life, and HTTP 404 for three FDA guidance/index URLs; the three FDA rows are explicitly marked source-resolution required.",
+    "CDC transplant-safety guidance appears twice with different domain roles; the register marks the second occurrence as duplicate-source-route context to prevent evidence double counting.",
+    "USPSTF negative or shared-decision recommendations are preserved as boundary/falsifier evidence, not converted into broad screening claims.",
+    "All rows are source-context support only; page availability or PDF access does not admit calibrated model parameters, individual predictions, clinical advice or intervention rankings."
+  ],
+  "extractedRows": [
+    {
+      "taskId": "C2LTB7-EXT-001",
+      "domainId": "cancer-survivorship-late-effects-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/cancer-survivorship-late-effects-continuity",
+      "sourceRefId": "C2LTB7-SRC-01-1",
+      "sourceTitle": "National Standards for Cancer Survivorship Care",
+      "sourceUrl": "https://cancercontrol.cancer.gov/ocs/special-focus-areas/national-standards-cancer-survivorship-care",
+      "extractionStatus": "completed-c2ltb7-source-context-extraction",
+      "sourceAccessStatus": "official-nci-standards-page-accessible-2026-07-03",
+      "sourceRole": "national-cancer-survivorship-standards-context-anchor",
+      "exactClaimUse": "Can support source-context framing that survivorship care requires standards for comprehensive, person-centered post-treatment care, including surveillance, late-effects management, psychosocial support, health promotion and care coordination.",
+      "endpointDefinition": "Candidate endpoints include survivorship-care-plan presence, late-effects monitoring, recurrence or second-cancer surveillance, psychosocial function, transition coordination and post-treatment follow-up continuity.",
+      "populationOrSetting": "Cancer survivors after diagnosis or treatment across oncology and primary-care transition settings; standards-level framing rather than a trial effect estimate.",
+      "effectOrMechanismSignal": "Mechanism signal is care-continuity and risk-management: structured survivorship care can reduce missed follow-up, unmonitored late effects, psychosocial deterioration and care handoff failure.",
+      "uncertaintyOrBias": "Standards context does not quantify survival gain, recurrence reduction or individual functional-life extension; implementation quality and cancer type remain heterogeneous.",
+      "transferBoundary": "Transfer only to survivorship infrastructure, care-coordination and endpoint-definition work; do not use as evidence that a specific survivorship intervention extends lifespan.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis or individual death-date output",
+        "source is used beyond its guideline, recommendation, fact-sheet, public-health, registry, policy-route, review or clinical-context role without local review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population boundary and transfer boundary needed for bounded artifact fill",
+        "source is used to claim human longevity escape velocity, effective immortality, cancer cure, transplant eligibility, organ replacement feasibility or calibrated Human Infra model admission"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 seventh-batch oncology, transplant and organ-replacement source extraction register",
+        "variables": [
+          "survivorship-care-plan",
+          "late-effects-monitoring",
+          "recurrence-secondary-cancer-surveillance",
+          "psychosocial-function",
+          "post-treatment-follow-up-continuity"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, source-resolution where flagged, then independent fresh review before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, route 404/duplicate/manual guidance rows to source-resolution as needed, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB7-EXT-002",
+      "domainId": "cancer-survivorship-late-effects-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/cancer-survivorship-late-effects-continuity",
+      "sourceRefId": "C2LTB7-SRC-01-2",
+      "sourceTitle": "Cancer Survivorship Care Plans",
+      "sourceUrl": "https://www.cdc.gov/cancer-survivors/life-after-cancer/survivorship-care-plans.html",
+      "extractionStatus": "completed-c2ltb7-source-context-extraction",
+      "sourceAccessStatus": "official-cdc-public-health-page-accessible-2026-07-03",
+      "sourceRole": "survivorship-care-plan-public-health-context-anchor",
+      "exactClaimUse": "Can support source-context framing that survivorship care plans summarize treatment history and organize follow-up care, late-effects awareness, recurrence monitoring and communication among patients and clinicians.",
+      "endpointDefinition": "Candidate endpoints include written care-plan availability, treatment-summary completeness, follow-up schedule clarity, symptom and late-effect tracking, and provider handoff continuity.",
+      "populationOrSetting": "Cancer survivors transitioning from active treatment into life after cancer, with public-health and patient-education boundaries.",
+      "effectOrMechanismSignal": "Mechanism signal is information continuity: treatment summaries and planned follow-up reduce ambiguity about what to monitor, who is responsible and when care should escalate.",
+      "uncertaintyOrBias": "Public-facing guidance does not prove that care plans alone improve mortality or long-term function; benefits depend on use, access and follow-through.",
+      "transferBoundary": "Transfer only to data-continuity, follow-up and survivorship navigation variables; do not use as calibrated effect-size evidence.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis or individual death-date output",
+        "source is used beyond its guideline, recommendation, fact-sheet, public-health, registry, policy-route, review or clinical-context role without local review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population boundary and transfer boundary needed for bounded artifact fill",
+        "source is used to claim human longevity escape velocity, effective immortality, cancer cure, transplant eligibility, organ replacement feasibility or calibrated Human Infra model admission"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 seventh-batch oncology, transplant and organ-replacement source extraction register",
+        "variables": [
+          "survivorship-care-plan",
+          "late-effects-monitoring",
+          "recurrence-secondary-cancer-surveillance",
+          "psychosocial-function",
+          "post-treatment-follow-up-continuity"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, source-resolution where flagged, then independent fresh review before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, route 404/duplicate/manual guidance rows to source-resolution as needed, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB7-EXT-003",
+      "domainId": "childhood-cancer-treatment-survivorship-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/childhood-cancer-treatment-survivorship-continuity",
+      "sourceRefId": "C2LTB7-SRC-02-1",
+      "sourceTitle": "Survivorship - Children's Oncology Group",
+      "sourceUrl": "https://childrensoncologygroup.org/survivorship/",
+      "extractionStatus": "completed-c2ltb7-source-context-extraction",
+      "sourceAccessStatus": "official-cog-survivorship-page-accessible-2026-07-03",
+      "sourceRole": "childhood-cancer-survivorship-guideline-route-anchor",
+      "exactClaimUse": "Can support source-context framing that childhood, adolescent and young adult cancer survivors need long-term follow-up because prior therapy exposures can create late effects requiring risk-based screening and education.",
+      "endpointDefinition": "Candidate endpoints include therapy-exposure risk stratification, late-effect screening adherence, endocrine or neurocognitive follow-up, secondary malignancy surveillance and transition to adult care.",
+      "populationOrSetting": "Survivors of childhood, adolescent and young adult cancer and survivorship programs using COG-style long-term follow-up resources.",
+      "effectOrMechanismSignal": "Mechanism signal is exposure-based risk management: chemotherapy, radiation, surgery and transplant exposures can create delayed organ, endocrine, neurocognitive or malignancy risks.",
+      "uncertaintyOrBias": "Guideline route is not an individual prognosis model; risk estimates differ by diagnosis, treatment exposure, age, sex and comorbidities.",
+      "transferBoundary": "Transfer only to childhood-cancer survivorship follow-up and late-effect variables; do not generalize to all adult cancer survivors or individual life expectancy.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis or individual death-date output",
+        "source is used beyond its guideline, recommendation, fact-sheet, public-health, registry, policy-route, review or clinical-context role without local review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population boundary and transfer boundary needed for bounded artifact fill",
+        "source is used to claim human longevity escape velocity, effective immortality, cancer cure, transplant eligibility, organ replacement feasibility or calibrated Human Infra model admission"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 seventh-batch oncology, transplant and organ-replacement source extraction register",
+        "variables": [
+          "therapy-exposure-risk-stratification",
+          "late-effect-screening",
+          "pediatric-to-adult-transition",
+          "neurocognitive-endocrine-followup",
+          "secondary-malignancy-risk"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, source-resolution where flagged, then independent fresh review before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, route 404/duplicate/manual guidance rows to source-resolution as needed, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB7-EXT-004",
+      "domainId": "childhood-cancer-treatment-survivorship-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/childhood-cancer-treatment-survivorship-continuity",
+      "sourceRefId": "C2LTB7-SRC-02-2",
+      "sourceTitle": "The Children's Oncology Group Long-Term Follow-Up Guidelines for Survivors of Childhood, Adolescent, and Young Adult Cancers: A Review",
+      "sourceUrl": "https://childrensoncologygroup.org/publications/the-childrens-oncology-group-long-term-follow-up-guidelines-for-survivors-of-childhood-adolescent-and-young-adult-cancers-a-review/",
+      "extractionStatus": "completed-c2ltb7-source-context-extraction",
+      "sourceAccessStatus": "official-cog-publication-page-accessible-2026-07-03",
+      "sourceRole": "childhood-cancer-ltfu-guideline-review-context-anchor",
+      "exactClaimUse": "Can support source-context framing that COG long-term follow-up guidelines are organized around therapeutic exposures and clinically significant late effects in survivors of childhood, adolescent and young adult cancers.",
+      "endpointDefinition": "Candidate endpoints include exposure-specific screening recommendations, late-effect category, surveillance interval, survivorship education, and risk-based clinical follow-up.",
+      "populationOrSetting": "Childhood, adolescent and young adult cancer survivors; review and guideline-summary context rather than primary randomized evidence.",
+      "effectOrMechanismSignal": "Mechanism signal is risk-stratified surveillance: treatment exposure history is used to decide which organ systems or late complications require monitoring.",
+      "uncertaintyOrBias": "Review/guideline summary may depend on expert consensus and evolving evidence; exact recommendations require full guideline/source-lineage review.",
+      "transferBoundary": "Transfer only to COG LTFU source-route and exposure-risk variables; do not use as proof that a particular screening schedule improves individual survival.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis or individual death-date output",
+        "source is used beyond its guideline, recommendation, fact-sheet, public-health, registry, policy-route, review or clinical-context role without local review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population boundary and transfer boundary needed for bounded artifact fill",
+        "source is used to claim human longevity escape velocity, effective immortality, cancer cure, transplant eligibility, organ replacement feasibility or calibrated Human Infra model admission"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 seventh-batch oncology, transplant and organ-replacement source extraction register",
+        "variables": [
+          "therapy-exposure-risk-stratification",
+          "late-effect-screening",
+          "pediatric-to-adult-transition",
+          "neurocognitive-endocrine-followup",
+          "secondary-malignancy-risk"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, source-resolution where flagged, then independent fresh review before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, route 404/duplicate/manual guidance rows to source-resolution as needed, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB7-EXT-005",
+      "domainId": "skin-cancer-uv-protection-early-detection-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/skin-cancer-uv-protection-early-detection-continuity",
+      "sourceRefId": "C2LTB7-SRC-03-1",
+      "sourceTitle": "Skin Cancer Prevention: Behavioral Counseling",
+      "sourceUrl": "https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/skin-cancer-counseling",
+      "extractionStatus": "completed-c2ltb7-source-context-extraction",
+      "sourceAccessStatus": "official-uspstf-recommendation-page-accessible-2026-07-03",
+      "sourceRole": "uv-behavioral-counseling-recommendation-anchor",
+      "exactClaimUse": "Can support source-context framing that USPSTF behavioral counseling for skin cancer prevention is targeted to selected age and risk groups and focuses on reducing ultraviolet exposure.",
+      "endpointDefinition": "Candidate endpoints include UV-exposure behavior, sun-protection behavior, indoor tanning avoidance, counseling eligibility and skin cancer prevention behavior adoption.",
+      "populationOrSetting": "USPSTF preventive-care context for children, adolescents, young adults and selected adults depending on risk group and recommendation grade.",
+      "effectOrMechanismSignal": "Mechanism signal is behavioral risk reduction: counseling can shift UV exposure, tanning and protection behaviors that affect skin cancer risk.",
+      "uncertaintyOrBias": "Recommendation-grade evidence is age/risk bounded and does not equal individual melanoma risk prediction or proof of mortality reduction from counseling alone.",
+      "transferBoundary": "Transfer only to UV counseling and prevention-behavior variables; do not use as broad screening or treatment evidence.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis or individual death-date output",
+        "source is used beyond its guideline, recommendation, fact-sheet, public-health, registry, policy-route, review or clinical-context role without local review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population boundary and transfer boundary needed for bounded artifact fill",
+        "source is used to claim human longevity escape velocity, effective immortality, cancer cure, transplant eligibility, organ replacement feasibility or calibrated Human Infra model admission"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 seventh-batch oncology, transplant and organ-replacement source extraction register",
+        "variables": [
+          "uv-exposure-dose",
+          "sun-protection-behavior",
+          "tanning-bed-avoidance",
+          "skin-lesion-awareness",
+          "high-risk-surveillance-boundary"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, source-resolution where flagged, then independent fresh review before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, route 404/duplicate/manual guidance rows to source-resolution as needed, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB7-EXT-006",
+      "domainId": "skin-cancer-uv-protection-early-detection-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/skin-cancer-uv-protection-early-detection-continuity",
+      "sourceRefId": "C2LTB7-SRC-03-2",
+      "sourceTitle": "Sun Safety Facts",
+      "sourceUrl": "https://www.cdc.gov/skin-cancer/sun-safety/index.html",
+      "extractionStatus": "completed-c2ltb7-source-context-extraction",
+      "sourceAccessStatus": "official-cdc-sun-safety-page-accessible-2026-07-03",
+      "sourceRole": "sun-safety-public-health-risk-reduction-context-anchor",
+      "exactClaimUse": "Can support source-context framing that sun safety behaviors such as shade, protective clothing, sunscreen and avoiding tanning reduce harmful UV exposure linked to skin cancer risk.",
+      "endpointDefinition": "Candidate endpoints include sun-protection practice, UV exposure, sunscreen use, protective clothing, shade use, tanning avoidance and sunburn history.",
+      "populationOrSetting": "General public-health sun safety context; not restricted to a clinical trial population.",
+      "effectOrMechanismSignal": "Mechanism signal is exposure reduction: less harmful UV exposure lowers upstream skin damage and skin cancer risk conditions.",
+      "uncertaintyOrBias": "Fact-sheet context does not quantify causal effect size for each behavior or individual skin cancer risk trajectory.",
+      "transferBoundary": "Transfer only to public-health UV exposure and behavioral prevention variables; do not use for individualized dermatologic advice or screening intervals.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis or individual death-date output",
+        "source is used beyond its guideline, recommendation, fact-sheet, public-health, registry, policy-route, review or clinical-context role without local review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population boundary and transfer boundary needed for bounded artifact fill",
+        "source is used to claim human longevity escape velocity, effective immortality, cancer cure, transplant eligibility, organ replacement feasibility or calibrated Human Infra model admission"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 seventh-batch oncology, transplant and organ-replacement source extraction register",
+        "variables": [
+          "uv-exposure-dose",
+          "sun-protection-behavior",
+          "tanning-bed-avoidance",
+          "skin-lesion-awareness",
+          "high-risk-surveillance-boundary"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, source-resolution where flagged, then independent fresh review before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, route 404/duplicate/manual guidance rows to source-resolution as needed, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB7-EXT-007",
+      "domainId": "lung-cancer-screening-treatment-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/lung-cancer-screening-treatment-continuity",
+      "sourceRefId": "C2LTB7-SRC-04-1",
+      "sourceTitle": "Lung Cancer: Screening",
+      "sourceUrl": "https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/lung-cancer-screening",
+      "extractionStatus": "completed-c2ltb7-source-context-extraction",
+      "sourceAccessStatus": "official-uspstf-recommendation-page-accessible-2026-07-03",
+      "sourceRole": "lung-cancer-ldct-screening-recommendation-anchor",
+      "exactClaimUse": "Can support source-context framing that annual low-dose CT screening is recommended for a specified high-risk adult population defined by age, smoking history, current/former smoking status and stop rules.",
+      "endpointDefinition": "Candidate endpoints include LDCT screening eligibility, pack-year history, current or former smoking status, quit-year boundary, screening interval and discontinuation criteria.",
+      "populationOrSetting": "Adults in USPSTF-defined high-risk lung cancer screening population; preventive-care screening context.",
+      "effectOrMechanismSignal": "Mechanism signal is earlier cancer detection in high-risk persons where screening benefit can outweigh harms under defined eligibility and stop criteria.",
+      "uncertaintyOrBias": "Eligibility is bounded; false positives, overdiagnosis, radiation exposure, incidental findings and fitness for curative treatment remain key limitations.",
+      "transferBoundary": "Transfer only to high-risk LDCT screening eligibility and endpoint definitions; do not use for general-population screening or individual survival prediction.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis or individual death-date output",
+        "source is used beyond its guideline, recommendation, fact-sheet, public-health, registry, policy-route, review or clinical-context role without local review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population boundary and transfer boundary needed for bounded artifact fill",
+        "source is used to claim human longevity escape velocity, effective immortality, cancer cure, transplant eligibility, organ replacement feasibility or calibrated Human Infra model admission"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 seventh-batch oncology, transplant and organ-replacement source extraction register",
+        "variables": [
+          "ldct-screening-eligibility",
+          "pack-year-history",
+          "current-former-smoking-status",
+          "screening-interval-stop-rule",
+          "lung-surgery-fitness"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, source-resolution where flagged, then independent fresh review before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, route 404/duplicate/manual guidance rows to source-resolution as needed, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB7-EXT-008",
+      "domainId": "lung-cancer-screening-treatment-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/lung-cancer-screening-treatment-continuity",
+      "sourceRefId": "C2LTB7-SRC-04-2",
+      "sourceTitle": "Lung Cancer: Screening - Healthy People 2030",
+      "sourceUrl": "https://odphp.health.gov/healthypeople/tools-action/browse-evidence-based-resources/lung-cancer-screening",
+      "extractionStatus": "completed-c2ltb7-source-context-extraction",
+      "sourceAccessStatus": "official-odphp-healthy-people-page-accessible-2026-07-03",
+      "sourceRole": "lung-screening-translation-and-evidence-resource-context-anchor",
+      "exactClaimUse": "Can support source-context framing that lung cancer screening is an evidence-based resource for increasing appropriate screening among high-risk adults within public-health implementation efforts.",
+      "endpointDefinition": "Candidate endpoints include screening uptake, evidence-based resource use, high-risk eligibility identification and implementation of LDCT screening recommendations.",
+      "populationOrSetting": "Healthy People 2030 evidence-based resource and public-health translation context for high-risk adults.",
+      "effectOrMechanismSignal": "Mechanism signal is implementation translation: screening recommendations must be converted into access, eligibility recognition and completed LDCT screening.",
+      "uncertaintyOrBias": "Resource listing does not establish new clinical efficacy beyond underlying recommendation evidence and does not solve access, equity or follow-up gaps.",
+      "transferBoundary": "Transfer only to conversion-channel and screening-implementation variables; do not use as independent clinical-effect evidence.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis or individual death-date output",
+        "source is used beyond its guideline, recommendation, fact-sheet, public-health, registry, policy-route, review or clinical-context role without local review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population boundary and transfer boundary needed for bounded artifact fill",
+        "source is used to claim human longevity escape velocity, effective immortality, cancer cure, transplant eligibility, organ replacement feasibility or calibrated Human Infra model admission"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 seventh-batch oncology, transplant and organ-replacement source extraction register",
+        "variables": [
+          "ldct-screening-eligibility",
+          "pack-year-history",
+          "current-former-smoking-status",
+          "screening-interval-stop-rule",
+          "lung-surgery-fitness"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, source-resolution where flagged, then independent fresh review before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, route 404/duplicate/manual guidance rows to source-resolution as needed, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB7-EXT-009",
+      "domainId": "liver-cancer-cirrhosis-surveillance-treatment-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/liver-cancer-cirrhosis-surveillance-treatment-continuity",
+      "sourceRefId": "C2LTB7-SRC-05-1",
+      "sourceTitle": "AASLD Practice Guidance on prevention, diagnosis, and treatment of hepatocellular carcinoma",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10663390/",
+      "extractionStatus": "completed-c2ltb7-source-context-extraction",
+      "sourceAccessStatus": "pmc-open-fulltext-route-accessible-2026-07-03",
+      "sourceRole": "hcc-prevention-diagnosis-treatment-practice-guidance-anchor",
+      "exactClaimUse": "Can support source-context framing that HCC management requires risk-based surveillance, diagnosis and treatment selection in at-risk liver disease populations.",
+      "endpointDefinition": "Candidate endpoints include cirrhosis or HBV-related HCC risk, surveillance interval, imaging/AFP route, liver function reserve, diagnosis stage and treatment-window eligibility.",
+      "populationOrSetting": "Patients at risk for or diagnosed with hepatocellular carcinoma, especially chronic liver disease/cirrhosis or HBV contexts covered by AASLD guidance.",
+      "effectOrMechanismSignal": "Mechanism signal is liver-disease risk stratification and surveillance/treatment timing: earlier detection and staging can preserve treatment options.",
+      "uncertaintyOrBias": "Guidance context is clinical and heterogeneous; effectiveness depends on surveillance adherence, imaging quality, liver function, tumor biology and treatment access.",
+      "transferBoundary": "Transfer only to HCC surveillance/treatment-continuity variables; do not infer individual survival or use outside covered risk groups.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis or individual death-date output",
+        "source is used beyond its guideline, recommendation, fact-sheet, public-health, registry, policy-route, review or clinical-context role without local review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population boundary and transfer boundary needed for bounded artifact fill",
+        "source is used to claim human longevity escape velocity, effective immortality, cancer cure, transplant eligibility, organ replacement feasibility or calibrated Human Infra model admission"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 seventh-batch oncology, transplant and organ-replacement source extraction register",
+        "variables": [
+          "cirrhosis-hcc-risk",
+          "hbv-hcc-risk",
+          "surveillance-interval",
+          "liver-function-reserve",
+          "treatment-window-eligibility"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, source-resolution where flagged, then independent fresh review before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, route 404/duplicate/manual guidance rows to source-resolution as needed, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB7-EXT-010",
+      "domainId": "liver-cancer-cirrhosis-surveillance-treatment-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/liver-cancer-cirrhosis-surveillance-treatment-continuity",
+      "sourceRefId": "C2LTB7-SRC-05-2",
+      "sourceTitle": "Management of Hepatocellular Carcinoma",
+      "sourceUrl": "https://www.aasld.org/practice-guidelines/management-hepatocellular-carcinoma",
+      "extractionStatus": "completed-c2ltb7-source-context-extraction",
+      "sourceAccessStatus": "official-aasld-guideline-route-page-accessible-2026-07-03",
+      "sourceRole": "hcc-guideline-route-and-source-lineage-context-anchor",
+      "exactClaimUse": "Can support source-route framing that AASLD maintains a management guidance route for hepatocellular carcinoma, but exact recommendation extraction should use the linked guidance/fulltext lineage.",
+      "endpointDefinition": "Candidate endpoints include guideline availability, HCC management topic, source-lineage route, clinical recommendation extraction readiness and guideline update status.",
+      "populationOrSetting": "AASLD guideline index/route context for HCC management; not itself a standalone extracted recommendation unless local review verifies specific text.",
+      "effectOrMechanismSignal": "Mechanism signal is governance and guideline access: current clinical management depends on locating the correct authoritative guidance and version.",
+      "uncertaintyOrBias": "Route page may redirect to older/newer guidance and can create citation-lineage ambiguity; local review must bind exact document and date.",
+      "transferBoundary": "Transfer only as HCC guideline-route metadata until source-resolution verifies exact recommendation text.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis or individual death-date output",
+        "source is used beyond its guideline, recommendation, fact-sheet, public-health, registry, policy-route, review or clinical-context role without local review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population boundary and transfer boundary needed for bounded artifact fill",
+        "source is used to claim human longevity escape velocity, effective immortality, cancer cure, transplant eligibility, organ replacement feasibility or calibrated Human Infra model admission"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 seventh-batch oncology, transplant and organ-replacement source extraction register",
+        "variables": [
+          "cirrhosis-hcc-risk",
+          "hbv-hcc-risk",
+          "surveillance-interval",
+          "liver-function-reserve",
+          "treatment-window-eligibility"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, source-resolution where flagged, then independent fresh review before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, route 404/duplicate/manual guidance rows to source-resolution as needed, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB7-EXT-011",
+      "domainId": "pancreatic-cancer-high-risk-detection-treatment-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/pancreatic-cancer-high-risk-detection-treatment-continuity",
+      "sourceRefId": "C2LTB7-SRC-06-1",
+      "sourceTitle": "Surveillance for People at High Risk of Pancreatic Cancer",
+      "sourceUrl": "https://www.cancer.gov/news-events/cancer-currents-blog/2024/pancreatic-cancer-surveillance",
+      "extractionStatus": "completed-c2ltb7-source-context-extraction",
+      "sourceAccessStatus": "official-nci-news-context-page-accessible-2026-07-03",
+      "sourceRole": "pancreatic-high-risk-surveillance-context-anchor",
+      "exactClaimUse": "Can support source-context framing that pancreatic cancer surveillance is discussed for people at high inherited or familial risk, using specialized monitoring rather than general-population screening.",
+      "endpointDefinition": "Candidate endpoints include hereditary-risk status, family-history risk, MRI/MRCP/EUS surveillance exposure, precancerous lesion detection and resectability window.",
+      "populationOrSetting": "People considered high risk for pancreatic cancer because of inherited mutations, family history or specialized high-risk clinic criteria; not general population.",
+      "effectOrMechanismSignal": "Mechanism signal is high-risk surveillance: repeated imaging/endoscopic monitoring may detect precursor lesions or earlier-stage disease when treatment is more feasible.",
+      "uncertaintyOrBias": "NCI news context summarizes evidence and programs; it is not a calibrated individual risk model and may depend on specialized center selection.",
+      "transferBoundary": "Transfer only to high-risk pancreatic surveillance framing; do not use for general screening recommendations or individual treatment timing.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis or individual death-date output",
+        "source is used beyond its guideline, recommendation, fact-sheet, public-health, registry, policy-route, review or clinical-context role without local review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population boundary and transfer boundary needed for bounded artifact fill",
+        "source is used to claim human longevity escape velocity, effective immortality, cancer cure, transplant eligibility, organ replacement feasibility or calibrated Human Infra model admission"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 seventh-batch oncology, transplant and organ-replacement source extraction register",
+        "variables": [
+          "hereditary-risk-status",
+          "family-history-risk",
+          "mri-mrcp-eus-surveillance",
+          "precancerous-lesion-detection",
+          "resectability-window"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, source-resolution where flagged, then independent fresh review before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, route 404/duplicate/manual guidance rows to source-resolution as needed, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB7-EXT-012",
+      "domainId": "pancreatic-cancer-high-risk-detection-treatment-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/pancreatic-cancer-high-risk-detection-treatment-continuity",
+      "sourceRefId": "C2LTB7-SRC-06-2",
+      "sourceTitle": "ASGE guideline on screening for pancreatic cancer in individuals with genetic susceptibility",
+      "sourceUrl": "https://www.asge.org/docs/default-source/about-asge/piis001651072101871x.pdf",
+      "extractionStatus": "completed-c2ltb7-source-context-extraction",
+      "sourceAccessStatus": "official-asge-pdf-route-accessible-2026-07-03",
+      "sourceRole": "pancreatic-genetic-susceptibility-screening-guideline-anchor",
+      "exactClaimUse": "Can support source-context framing that pancreatic cancer screening guidance is restricted to individuals with genetic susceptibility or high-risk features, with modalities such as EUS and MRI/MRCP considered in guideline context.",
+      "endpointDefinition": "Candidate endpoints include genetic susceptibility category, family-history criteria, EUS/MRI/MRCP surveillance route, screening start boundary and lesion detection.",
+      "populationOrSetting": "Individuals with genetic susceptibility or high-risk pancreatic cancer criteria in gastroenterology guideline context.",
+      "effectOrMechanismSignal": "Mechanism signal is risk-enriched surveillance: screening is concentrated in populations where baseline risk may justify harms and resource use.",
+      "uncertaintyOrBias": "PDF guideline requires manual fulltext/source-lineage review for exact recommendation grades and dates; evidence quality differs across syndromes.",
+      "transferBoundary": "Transfer only to high-risk genetic susceptibility screening variables; do not use as evidence for population-wide pancreatic cancer screening.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis or individual death-date output",
+        "source is used beyond its guideline, recommendation, fact-sheet, public-health, registry, policy-route, review or clinical-context role without local review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population boundary and transfer boundary needed for bounded artifact fill",
+        "source is used to claim human longevity escape velocity, effective immortality, cancer cure, transplant eligibility, organ replacement feasibility or calibrated Human Infra model admission"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 seventh-batch oncology, transplant and organ-replacement source extraction register",
+        "variables": [
+          "hereditary-risk-status",
+          "family-history-risk",
+          "mri-mrcp-eus-surveillance",
+          "precancerous-lesion-detection",
+          "resectability-window"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, source-resolution where flagged, then independent fresh review before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, route 404/duplicate/manual guidance rows to source-resolution as needed, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB7-EXT-013",
+      "domainId": "ovarian-cancer-symptom-detection-treatment-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/ovarian-cancer-symptom-detection-treatment-continuity",
+      "sourceRefId": "C2LTB7-SRC-07-1",
+      "sourceTitle": "Ovarian Cancer: Screening",
+      "sourceUrl": "https://www.uspreventiveservicestaskforce.org/uspstf/document/RecommendationStatementFinal/ovarian-cancer-screening",
+      "extractionStatus": "completed-c2ltb7-source-context-extraction",
+      "sourceAccessStatus": "official-uspstf-final-recommendation-page-accessible-2026-07-03",
+      "sourceRole": "ovarian-average-risk-screening-nonbenefit-boundary-anchor",
+      "exactClaimUse": "Can support source-context framing that USPSTF recommends against ovarian cancer screening in asymptomatic women who are not known to be at high risk, because benefits do not outweigh harms.",
+      "endpointDefinition": "Candidate endpoints include average-risk screening boundary, asymptomatic status, CA-125 or ultrasound screening exposure, false-positive cascade and surgery harm burden.",
+      "populationOrSetting": "Asymptomatic women without known high-risk hereditary cancer syndrome in preventive-care screening context.",
+      "effectOrMechanismSignal": "Mechanism signal is negative evidence and harm avoidance: screening can cause false positives and unnecessary diagnostic/surgical harms without mortality benefit in average-risk populations.",
+      "uncertaintyOrBias": "Does not address diagnostic evaluation of symptoms or high-risk genetic populations; recommendation boundary must be preserved.",
+      "transferBoundary": "Transfer primarily as a downgrade/falsifier boundary for ovarian cancer screening claims; do not use to block symptom-triggered evaluation or high-risk management.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis or individual death-date output",
+        "source is used beyond its guideline, recommendation, fact-sheet, public-health, registry, policy-route, review or clinical-context role without local review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population boundary and transfer boundary needed for bounded artifact fill",
+        "source is used to claim human longevity escape velocity, effective immortality, cancer cure, transplant eligibility, organ replacement feasibility or calibrated Human Infra model admission"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 seventh-batch oncology, transplant and organ-replacement source extraction register",
+        "variables": [
+          "average-risk-screening-boundary",
+          "symptom-triggered-evaluation",
+          "brca-lynch-risk",
+          "risk-reduction-context",
+          "treatment-referral-timing"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, source-resolution where flagged, then independent fresh review before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, route 404/duplicate/manual guidance rows to source-resolution as needed, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB7-EXT-014",
+      "domainId": "ovarian-cancer-symptom-detection-treatment-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/ovarian-cancer-symptom-detection-treatment-continuity",
+      "sourceRefId": "C2LTB7-SRC-07-2",
+      "sourceTitle": "Ovarian Cancer",
+      "sourceUrl": "https://www.cdc.gov/ovarian-cancer/index.html",
+      "extractionStatus": "completed-c2ltb7-source-context-extraction",
+      "sourceAccessStatus": "official-cdc-public-health-page-accessible-2026-07-03",
+      "sourceRole": "ovarian-symptom-risk-public-health-context-anchor",
+      "exactClaimUse": "Can support source-context framing that ovarian cancer is difficult to detect early, symptoms can be vague, and risk/symptom awareness supports timely medical evaluation rather than population screening claims.",
+      "endpointDefinition": "Candidate endpoints include symptom-triggered evaluation, risk-factor awareness, family-history or hereditary-risk awareness and care-seeking timing.",
+      "populationOrSetting": "General public-health information for women and clinicians considering ovarian cancer symptoms and risk factors.",
+      "effectOrMechanismSignal": "Mechanism signal is awareness and escalation: recognizing persistent symptoms or risk factors can affect diagnostic timing and referral continuity.",
+      "uncertaintyOrBias": "Public-health page does not provide a validated screening algorithm or individual risk estimate.",
+      "transferBoundary": "Transfer only to symptom-awareness and risk-context variables; do not use as evidence for asymptomatic population screening.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis or individual death-date output",
+        "source is used beyond its guideline, recommendation, fact-sheet, public-health, registry, policy-route, review or clinical-context role without local review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population boundary and transfer boundary needed for bounded artifact fill",
+        "source is used to claim human longevity escape velocity, effective immortality, cancer cure, transplant eligibility, organ replacement feasibility or calibrated Human Infra model admission"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 seventh-batch oncology, transplant and organ-replacement source extraction register",
+        "variables": [
+          "average-risk-screening-boundary",
+          "symptom-triggered-evaluation",
+          "brca-lynch-risk",
+          "risk-reduction-context",
+          "treatment-referral-timing"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, source-resolution where flagged, then independent fresh review before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, route 404/duplicate/manual guidance rows to source-resolution as needed, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB7-EXT-015",
+      "domainId": "prostate-cancer-screening-treatment-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/prostate-cancer-screening-treatment-continuity",
+      "sourceRefId": "C2LTB7-SRC-08-1",
+      "sourceTitle": "Prostate Cancer: Screening",
+      "sourceUrl": "https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/prostate-cancer-screening",
+      "extractionStatus": "completed-c2ltb7-source-context-extraction",
+      "sourceAccessStatus": "official-uspstf-recommendation-page-accessible-2026-07-03",
+      "sourceRole": "prostate-psa-shared-decision-screening-boundary-anchor",
+      "exactClaimUse": "Can support source-context framing that PSA-based prostate cancer screening is an individualized/shared decision for men in a defined age band and is not recommended for older men beyond the boundary.",
+      "endpointDefinition": "Candidate endpoints include PSA screening decision, age 55-69 shared decision status, age 70+ non-screening boundary, overdiagnosis risk and treatment-harm burden.",
+      "populationOrSetting": "Men in preventive-care screening context, especially USPSTF age-bounded prostate cancer screening recommendations.",
+      "effectOrMechanismSignal": "Mechanism signal is benefit-harm tradeoff: screening can detect cancer earlier but also causes overdiagnosis and downstream treatment harms.",
+      "uncertaintyOrBias": "Age, values, risk factors and life expectancy shape decision boundaries; not an individualized mortality forecast.",
+      "transferBoundary": "Transfer only to PSA screening decision and harm-boundary variables; do not use as a universal pro-screening or anti-screening rule.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis or individual death-date output",
+        "source is used beyond its guideline, recommendation, fact-sheet, public-health, registry, policy-route, review or clinical-context role without local review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population boundary and transfer boundary needed for bounded artifact fill",
+        "source is used to claim human longevity escape velocity, effective immortality, cancer cure, transplant eligibility, organ replacement feasibility or calibrated Human Infra model admission"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 seventh-batch oncology, transplant and organ-replacement source extraction register",
+        "variables": [
+          "psa-screening-decision",
+          "age-55-69-shared-decision",
+          "overdiagnosis-risk",
+          "treatment-harm-burden",
+          "risk-stratified-followup"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, source-resolution where flagged, then independent fresh review before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, route 404/duplicate/manual guidance rows to source-resolution as needed, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB7-EXT-016",
+      "domainId": "prostate-cancer-screening-treatment-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/prostate-cancer-screening-treatment-continuity",
+      "sourceRefId": "C2LTB7-SRC-08-2",
+      "sourceTitle": "Should I Get Screened for Prostate Cancer?",
+      "sourceUrl": "https://www.cdc.gov/prostate-cancer/screening/get-screened.html",
+      "extractionStatus": "completed-c2ltb7-source-context-extraction",
+      "sourceAccessStatus": "official-cdc-public-screening-page-accessible-2026-07-03",
+      "sourceRole": "prostate-screening-public-decision-support-context-anchor",
+      "exactClaimUse": "Can support source-context framing that prostate cancer screening decisions should consider potential benefits and harms and involve discussion with a clinician.",
+      "endpointDefinition": "Candidate endpoints include screening discussion occurrence, PSA test consideration, benefit-harm understanding, risk-factor consideration and follow-up decision quality.",
+      "populationOrSetting": "Public-health patient information context for men considering prostate cancer screening.",
+      "effectOrMechanismSignal": "Mechanism signal is informed decision-making: understanding screening tradeoffs changes whether and how a person enters downstream diagnostic and treatment pathways.",
+      "uncertaintyOrBias": "Public page does not quantify individual benefit/harm and must be interpreted alongside formal recommendations and personal risk factors.",
+      "transferBoundary": "Transfer only to public decision-support and screening-boundary variables; do not use for individual screening advice.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis or individual death-date output",
+        "source is used beyond its guideline, recommendation, fact-sheet, public-health, registry, policy-route, review or clinical-context role without local review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population boundary and transfer boundary needed for bounded artifact fill",
+        "source is used to claim human longevity escape velocity, effective immortality, cancer cure, transplant eligibility, organ replacement feasibility or calibrated Human Infra model admission"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 seventh-batch oncology, transplant and organ-replacement source extraction register",
+        "variables": [
+          "psa-screening-decision",
+          "age-55-69-shared-decision",
+          "overdiagnosis-risk",
+          "treatment-harm-burden",
+          "risk-stratified-followup"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, source-resolution where flagged, then independent fresh review before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, route 404/duplicate/manual guidance rows to source-resolution as needed, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB7-EXT-017",
+      "domainId": "oral-cancer-mucosal-lesion-early-detection-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/oral-cancer-mucosal-lesion-early-detection-continuity",
+      "sourceRefId": "C2LTB7-SRC-09-1",
+      "sourceTitle": "Oral Cavity and Nasopharyngeal Cancers Screening (PDQ) - Health Professional Version",
+      "sourceUrl": "https://www.cancer.gov/types/head-and-neck/hp/oral-screening-pdq",
+      "extractionStatus": "completed-c2ltb7-source-context-extraction",
+      "sourceAccessStatus": "official-nci-pdq-health-professional-page-accessible-2026-07-03",
+      "sourceRole": "oral-cavity-screening-evidence-boundary-anchor",
+      "exactClaimUse": "Can support source-context framing that oral cavity/nasopharyngeal cancer screening evidence is bounded and must distinguish visual examination, risk-factor assessment and lack of proven population-screening outcome claims.",
+      "endpointDefinition": "Candidate endpoints include oral visual examination, mucosal lesion detection, suspicious lesion referral, tobacco/alcohol/HPV risk context and screening outcome uncertainty.",
+      "populationOrSetting": "Health-professional cancer screening evidence summary context; oral cavity and nasopharyngeal cancer screening rather than treatment.",
+      "effectOrMechanismSignal": "Mechanism signal is early lesion observation and referral, but population-level screening benefit is uncertain or not established in the same way as established screening programs.",
+      "uncertaintyOrBias": "PDQ summary is evidence-boundary context; exact screening efficacy, harms and target groups require careful local review.",
+      "transferBoundary": "Transfer mainly to evidence-boundary and lesion-detection variables; do not use as proof that routine population screening reduces mortality.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis or individual death-date output",
+        "source is used beyond its guideline, recommendation, fact-sheet, public-health, registry, policy-route, review or clinical-context role without local review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population boundary and transfer boundary needed for bounded artifact fill",
+        "source is used to claim human longevity escape velocity, effective immortality, cancer cure, transplant eligibility, organ replacement feasibility or calibrated Human Infra model admission"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 seventh-batch oncology, transplant and organ-replacement source extraction register",
+        "variables": [
+          "tobacco-alcohol-exposure",
+          "hpv-oropharyngeal-risk",
+          "mucosal-lesion-detection",
+          "dental-visit-observation",
+          "speech-swallow-nutrition-impact"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, source-resolution where flagged, then independent fresh review before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, route 404/duplicate/manual guidance rows to source-resolution as needed, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB7-EXT-018",
+      "domainId": "oral-cancer-mucosal-lesion-early-detection-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/oral-cancer-mucosal-lesion-early-detection-continuity",
+      "sourceRefId": "C2LTB7-SRC-09-2",
+      "sourceTitle": "About Oral Cancer",
+      "sourceUrl": "https://www.cdc.gov/oral-health/about/about-oral-cancer.html",
+      "extractionStatus": "completed-c2ltb7-source-context-extraction",
+      "sourceAccessStatus": "official-cdc-oral-health-page-accessible-2026-07-03",
+      "sourceRole": "oral-cancer-risk-prevention-public-health-context-anchor",
+      "exactClaimUse": "Can support source-context framing that oral cancer risk relates to exposures such as tobacco, alcohol and HPV, and that prevention/risk awareness affects oral health and cancer-control continuity.",
+      "endpointDefinition": "Candidate endpoints include tobacco exposure, alcohol exposure, HPV-related risk context, oral lesion awareness and dental/medical evaluation pathway.",
+      "populationOrSetting": "General public-health oral cancer information context.",
+      "effectOrMechanismSignal": "Mechanism signal is exposure and awareness: upstream risk factors and observation of oral changes can influence prevention and timely evaluation.",
+      "uncertaintyOrBias": "Public-health context does not define a validated screening interval or individual cancer probability.",
+      "transferBoundary": "Transfer only to oral cancer risk-factor and awareness variables; do not use as population screening efficacy evidence.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis or individual death-date output",
+        "source is used beyond its guideline, recommendation, fact-sheet, public-health, registry, policy-route, review or clinical-context role without local review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population boundary and transfer boundary needed for bounded artifact fill",
+        "source is used to claim human longevity escape velocity, effective immortality, cancer cure, transplant eligibility, organ replacement feasibility or calibrated Human Infra model admission"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 seventh-batch oncology, transplant and organ-replacement source extraction register",
+        "variables": [
+          "tobacco-alcohol-exposure",
+          "hpv-oropharyngeal-risk",
+          "mucosal-lesion-detection",
+          "dental-visit-observation",
+          "speech-swallow-nutrition-impact"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, source-resolution where flagged, then independent fresh review before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, route 404/duplicate/manual guidance rows to source-resolution as needed, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB7-EXT-019",
+      "domainId": "blood-organ-tissue-biovigilance-transplantation",
+      "localDomainPath": "domains/c2-source-maintenance/blood-organ-tissue-biovigilance-transplantation",
+      "sourceRefId": "C2LTB7-SRC-10-1",
+      "sourceTitle": "Clinical Guidance for Transplant Safety",
+      "sourceUrl": "https://www.cdc.gov/transplant-safety/hcp/clinical-guidance/index.html",
+      "extractionStatus": "completed-c2ltb7-source-context-extraction",
+      "sourceAccessStatus": "official-cdc-transplant-safety-guidance-page-accessible-2026-07-03",
+      "sourceRole": "transplant-safety-clinical-guidance-context-anchor",
+      "exactClaimUse": "Can support source-context framing that transplant safety requires donor/recipient evaluation, infection-risk consideration, communication and clinical guidance to reduce donor-derived disease transmission.",
+      "endpointDefinition": "Candidate endpoints include donor screening/testing, transplant-transmitted infection risk, recipient post-transplant monitoring, biovigilance event recognition and clinical communication.",
+      "populationOrSetting": "Clinicians and transplant programs involved in organ or tissue transplantation safety.",
+      "effectOrMechanismSignal": "Mechanism signal is risk-control infrastructure: identifying donor-derived infection risk and monitoring recipients can prevent or mitigate transplant-related harm.",
+      "uncertaintyOrBias": "Clinical guidance page is not a complete transplant eligibility model; pathogen risks, organ type and recipient status differ.",
+      "transferBoundary": "Transfer only to transplant safety, screening/testing and post-transplant monitoring variables; do not use for individual organ allocation or eligibility decisions.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis or individual death-date output",
+        "source is used beyond its guideline, recommendation, fact-sheet, public-health, registry, policy-route, review or clinical-context role without local review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population boundary and transfer boundary needed for bounded artifact fill",
+        "source is used to claim human longevity escape velocity, effective immortality, cancer cure, transplant eligibility, organ replacement feasibility or calibrated Human Infra model admission"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 seventh-batch oncology, transplant and organ-replacement source extraction register",
+        "variables": [
+          "donor-screening-testing",
+          "transplant-transmitted-infection-risk",
+          "recipient-posttransplant-monitoring",
+          "hctp-donor-eligibility",
+          "biovigilance-event-reporting"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, source-resolution where flagged, then independent fresh review before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, route 404/duplicate/manual guidance rows to source-resolution as needed, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB7-EXT-020",
+      "domainId": "blood-organ-tissue-biovigilance-transplantation",
+      "localDomainPath": "domains/c2-source-maintenance/blood-organ-tissue-biovigilance-transplantation",
+      "sourceRefId": "C2LTB7-SRC-10-2",
+      "sourceTitle": "Recommendations for Determining Eligibility of Donors of Human Cells, Tissues, and Cellular and Tissue-Based Products",
+      "sourceUrl": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/recommendations-determining-eligibility-donors-human-cells-tissues-and-cellular-and-tissue-based",
+      "extractionStatus": "completed-c2ltb7-source-context-extraction",
+      "sourceAccessStatus": "fda-guidance-url-local-probe-404-source-resolution-required-2026-07-03",
+      "sourceRole": "hctp-donor-eligibility-guidance-route-needs-resolution",
+      "exactClaimUse": "Can support only provisional source-route framing that FDA has donor-eligibility guidance for human cells, tissues, and cellular and tissue-based products; exact recommendation use is blocked until the current guidance route is resolved and reviewed.",
+      "endpointDefinition": "Candidate endpoints after resolution may include donor screening, donor testing, relevant communicable disease risk factors, HCT/P eligibility determination and documentation requirements.",
+      "populationOrSetting": "Human cells, tissues, and cellular and tissue-based products donor-eligibility regulatory context; current URL must be source-resolved before artifact promotion.",
+      "effectOrMechanismSignal": "Mechanism signal is regulatory risk control: donor eligibility rules are intended to reduce communicable disease transmission through HCT/P products.",
+      "uncertaintyOrBias": "Local probe returned HTTP 404; do not treat this row as reviewed evidence until a valid FDA guidance document, archive or replacement route is verified.",
+      "transferBoundary": "Transfer only to source-resolution queue and HCT/P donor-eligibility route metadata until manual/local review confirms the active document.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis or individual death-date output",
+        "source is used beyond its guideline, recommendation, fact-sheet, public-health, registry, policy-route, review or clinical-context role without local review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population boundary and transfer boundary needed for bounded artifact fill",
+        "source is used to claim human longevity escape velocity, effective immortality, cancer cure, transplant eligibility, organ replacement feasibility or calibrated Human Infra model admission"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 seventh-batch oncology, transplant and organ-replacement source extraction register",
+        "variables": [
+          "donor-screening-testing",
+          "transplant-transmitted-infection-risk",
+          "recipient-posttransplant-monitoring",
+          "hctp-donor-eligibility",
+          "biovigilance-event-reporting"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, source-resolution where flagged, then independent fresh review before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, route 404/duplicate/manual guidance rows to source-resolution as needed, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB7-EXT-021",
+      "domainId": "organ-donor-registry-anatomical-gift-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/organ-donor-registry-anatomical-gift-continuity",
+      "sourceRefId": "C2LTB7-SRC-11-1",
+      "sourceTitle": "Register as an Organ, Eye, and Tissue Donor",
+      "sourceUrl": "https://www.donatelife.net/register/",
+      "extractionStatus": "completed-c2ltb7-source-context-extraction",
+      "sourceAccessStatus": "public-donor-registration-page-returned-202-route-context-limited-2026-07-03",
+      "sourceRole": "organ-eye-tissue-donor-registration-public-route-anchor",
+      "exactClaimUse": "Can support source-context framing that donor registration is a concrete civil/health infrastructure route for recording willingness to donate organs, eyes and tissue.",
+      "endpointDefinition": "Candidate endpoints include donor registration status, anatomical-gift consent route, family communication, registry completion and public trust in donation systems.",
+      "populationOrSetting": "General public donor-registration context in the United States; public route rather than transplant outcome evidence.",
+      "effectOrMechanismSignal": "Mechanism signal is registry and consent infrastructure: recorded donor intent can support procurement pathways when donation circumstances arise.",
+      "uncertaintyOrBias": "HTTP 202/registration route context may be dynamic; it does not quantify transplant availability, allocation outcomes or individual donor eligibility.",
+      "transferBoundary": "Transfer only to donor-registry and consent-route variables; do not use for organ allocation, transplant eligibility or outcome prediction.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis or individual death-date output",
+        "source is used beyond its guideline, recommendation, fact-sheet, public-health, registry, policy-route, review or clinical-context role without local review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population boundary and transfer boundary needed for bounded artifact fill",
+        "source is used to claim human longevity escape velocity, effective immortality, cancer cure, transplant eligibility, organ replacement feasibility or calibrated Human Infra model admission"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 seventh-batch oncology, transplant and organ-replacement source extraction register",
+        "variables": [
+          "donor-registration-status",
+          "anatomical-gift-consent",
+          "family-communication",
+          "optn-waitlist-allocation",
+          "procurement-safety-trust"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, source-resolution where flagged, then independent fresh review before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, route 404/duplicate/manual guidance rows to source-resolution as needed, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB7-EXT-022",
+      "domainId": "organ-donor-registry-anatomical-gift-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/organ-donor-registry-anatomical-gift-continuity",
+      "sourceRefId": "C2LTB7-SRC-11-2",
+      "sourceTitle": "Clinical Guidance for Transplant Safety",
+      "sourceUrl": "https://www.cdc.gov/transplant-safety/hcp/clinical-guidance/index.html",
+      "extractionStatus": "completed-c2ltb7-source-context-extraction",
+      "sourceAccessStatus": "official-cdc-transplant-safety-guidance-page-accessible-duplicate-source-route-2026-07-03",
+      "sourceRole": "organ-donation-transplant-safety-governance-context-anchor",
+      "exactClaimUse": "Can support source-context framing that organ donation and transplant pathways require transplant-safety governance, including donor-derived infection awareness and post-transplant monitoring.",
+      "endpointDefinition": "Candidate endpoints include procurement safety trust, donor-derived infection risk communication, recipient monitoring, clinical reporting and transplant safety guidance use.",
+      "populationOrSetting": "Transplant programs and clinicians; duplicate CDC route also used in C2LTB7-EXT-019 and must be counted carefully.",
+      "effectOrMechanismSignal": "Mechanism signal is safety governance: donation systems depend on screening, clinical vigilance and communication to maintain trust and reduce harm.",
+      "uncertaintyOrBias": "Duplicate source route can cause double-counting if treated as independent evidence; local review must preserve lineage and domain-specific role.",
+      "transferBoundary": "Transfer only to organ-donor registry safety-governance variables with duplicate-source warning; do not use as separate independent effect evidence from EXT-019.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis or individual death-date output",
+        "source is used beyond its guideline, recommendation, fact-sheet, public-health, registry, policy-route, review or clinical-context role without local review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population boundary and transfer boundary needed for bounded artifact fill",
+        "source is used to claim human longevity escape velocity, effective immortality, cancer cure, transplant eligibility, organ replacement feasibility or calibrated Human Infra model admission"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 seventh-batch oncology, transplant and organ-replacement source extraction register",
+        "variables": [
+          "donor-registration-status",
+          "anatomical-gift-consent",
+          "family-communication",
+          "optn-waitlist-allocation",
+          "procurement-safety-trust"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, source-resolution where flagged, then independent fresh review before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, route 404/duplicate/manual guidance rows to source-resolution as needed, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB7-EXT-023",
+      "domainId": "xenotransplantation-bioengineered-organ-replacement",
+      "localDomainPath": "domains/c2-source-maintenance/xenotransplantation-bioengineered-organ-replacement",
+      "sourceRefId": "C2LTB7-SRC-12-1",
+      "sourceTitle": "Animal, Preclinical, Clinical Issues - Xenotransplantation in Humans",
+      "sourceUrl": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/source-animal-product-preclinical-and-clinical-issues-concerning-use-xenotransplantation-products",
+      "extractionStatus": "completed-c2ltb7-source-context-extraction",
+      "sourceAccessStatus": "fda-xenotransplantation-guidance-url-local-probe-404-source-resolution-required-2026-07-03",
+      "sourceRole": "xenotransplantation-source-animal-preclinical-clinical-guidance-route-needs-resolution",
+      "exactClaimUse": "Can support only provisional source-route framing that FDA has guidance addressing source animal, product, preclinical and clinical issues for xenotransplantation products; exact guidance use is blocked until the active route is resolved.",
+      "endpointDefinition": "Candidate endpoints after resolution may include source animal control, xenotransplant product characterization, preclinical testing, clinical protocol boundary, microbiological surveillance and recipient monitoring.",
+      "populationOrSetting": "Xenotransplantation product development and clinical/regulatory oversight context; current URL must be resolved before artifact promotion.",
+      "effectOrMechanismSignal": "Mechanism signal is risk governance for cross-species biological products, including infectious disease, product quality and long-term monitoring concerns.",
+      "uncertaintyOrBias": "Local probe returned HTTP 404; row is not usable as reviewed evidence until a valid FDA guidance route, PDF or archive is verified.",
+      "transferBoundary": "Transfer only to source-resolution and xenotransplantation governance route metadata until local review confirms active guidance.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis or individual death-date output",
+        "source is used beyond its guideline, recommendation, fact-sheet, public-health, registry, policy-route, review or clinical-context role without local review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population boundary and transfer boundary needed for bounded artifact fill",
+        "source is used to claim human longevity escape velocity, effective immortality, cancer cure, transplant eligibility, organ replacement feasibility or calibrated Human Infra model admission"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 seventh-batch oncology, transplant and organ-replacement source extraction register",
+        "variables": [
+          "source-animal-control",
+          "xenotransplant-product-testing",
+          "microbiological-surveillance",
+          "recipient-long-term-monitoring",
+          "organ-shortage-substitution-path"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, source-resolution where flagged, then independent fresh review before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, route 404/duplicate/manual guidance rows to source-resolution as needed, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB7-EXT-024",
+      "domainId": "xenotransplantation-bioengineered-organ-replacement",
+      "localDomainPath": "domains/c2-source-maintenance/xenotransplantation-bioengineered-organ-replacement",
+      "sourceRefId": "C2LTB7-SRC-12-2",
+      "sourceTitle": "Xenotransplantation Guidances",
+      "sourceUrl": "https://www.fda.gov/vaccines-blood-biologics/biologics-guidances/xenotransplantation-guidances",
+      "extractionStatus": "completed-c2ltb7-source-context-extraction",
+      "sourceAccessStatus": "fda-xenotransplantation-guidance-index-url-local-probe-404-source-resolution-required-2026-07-03",
+      "sourceRole": "xenotransplantation-guidance-index-route-needs-resolution",
+      "exactClaimUse": "Can support only provisional source-route framing that FDA maintains xenotransplantation guidance/index material; exact index use is blocked until the active guidance index is reachable or replaced.",
+      "endpointDefinition": "Candidate endpoints after resolution include guidance-index availability, linked xenotransplantation guidance documents, infectious disease guidance route and regulatory source-lineage status.",
+      "populationOrSetting": "FDA biologics guidance index/regulatory context for xenotransplantation; current URL must be source-resolved.",
+      "effectOrMechanismSignal": "Mechanism signal is governance infrastructure: xenotransplantation requires maintained guidance routes for source animals, product testing, recipient monitoring and infectious-risk controls.",
+      "uncertaintyOrBias": "Local probe returned HTTP 404; this is route metadata only and cannot support a substantive claim until source-resolution succeeds.",
+      "transferBoundary": "Transfer only to xenotransplantation guidance-index source-resolution work; do not use for feasibility, safety or clinical benefit claims.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis or individual death-date output",
+        "source is used beyond its guideline, recommendation, fact-sheet, public-health, registry, policy-route, review or clinical-context role without local review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population boundary and transfer boundary needed for bounded artifact fill",
+        "source is used to claim human longevity escape velocity, effective immortality, cancer cure, transplant eligibility, organ replacement feasibility or calibrated Human Infra model admission"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 seventh-batch oncology, transplant and organ-replacement source extraction register",
+        "variables": [
+          "source-animal-control",
+          "xenotransplant-product-testing",
+          "microbiological-surveillance",
+          "recipient-long-term-monitoring",
+          "organ-shortage-substitution-path"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, source-resolution where flagged, then independent fresh review before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, route 404/duplicate/manual guidance rows to source-resolution as needed, then send eligible rows to independent fresh review before bounded artifact promotion."
+    }
+  ],
+  "nonClaims": [
+    "This register does not complete local source-context review or independent fresh review.",
+    "This register does not create reviewed Source Cards, variable cards, endpoint cards, uncertainty cards, transfer-boundary cards or downgrade-check artifacts.",
+    "This register does not resolve FDA 404 guidance routes, duplicate CDC source lineage, dynamic registration routes, publisher access limits or guideline lineage questions.",
+    "This register does not authorize clinical advice, cancer screening advice, transplant eligibility decisions, individual prediction, intervention ranking, calibrated model admission or individual death-date output.",
+    "This register does not claim that any B7 source proves cancer cure, transplant safety for an individual, xenotransplantation feasibility, human longevity escape velocity, effective immortality or lifespan extension."
+  ],
+  "indexRequirements": [
+    "README.md",
+    "docs/reference/README.md",
+    "docs/reference/human-infra-maturity-roadmap.md",
+    "tools/README.md"
+  ]
+}

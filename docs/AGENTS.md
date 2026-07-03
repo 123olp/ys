@@ -223,6 +223,7 @@ docs/
 │   ├── human-infra-c2-longtail-sixth-batch-promotion-queue.json
 │   ├── human-infra-c2-longtail-seventh-batch-promotion-queue.json
 │   ├── human-infra-c2-longtail-seventh-batch-source-extraction-queue.json
+│   ├── human-infra-c2-longtail-seventh-batch-source-extraction-register.json
 │   ├── human-infra-c2-longtail-sixth-batch-source-extraction-queue.json
 │   ├── human-infra-c2-longtail-sixth-batch-source-extraction-register.json
 │   ├── human-infra-c2-longtail-sixth-batch-local-review-register.json
@@ -466,6 +467,7 @@ docs/
 - `reference/human-infra-c2-longtail-sixth-batch-promotion-queue.json`：从剩余 C2 长尾域中选择 12 个跨代连续性、生殖力、孕产新生儿、儿童免疫、儿童铅暴露、儿童喂养吞咽、哺乳和儿童口腔健康域，并绑定 24 个 web-checked 候选来源；它只是 source-specific 深读入口，不等于 Source Card、fresh review、reviewed artifact 或模型准入。
 - `reference/human-infra-c2-longtail-seventh-batch-promotion-queue.json`：从剩余 C2 长尾域中选择 12 个癌症控制、幸存者连续性、移植安全、器官捐献和工程器官替换域，并绑定 24 个 web-checked 候选来源；它只是 source-specific 深读入口，不等于 Source Card、fresh review、reviewed artifact 或模型准入。
 - `reference/human-infra-c2-longtail-seventh-batch-source-extraction-queue.json`：把 C2-LT-B7 的 24 个候选来源派生成 source-specific 深读任务，定义 exact claim、endpoint、population、uncertainty、transfer-boundary、downgrade 和 model-position 抽取槽位；它仍不等于本地复核、fresh review、reviewed artifacts 或模型准入。
+- `reference/human-infra-c2-longtail-seventh-batch-source-extraction-register.json`：记录 C2-LT-B7 24/24 个来源的本地字段级抽取，显式保留 FDA 404 路线、动态注册页、重复 CDC 来源、筛查边界、降级触发和模型阻塞边界；它仍不等于本地复核、fresh review、reviewed artifacts 或模型准入。
 - `reference/human-infra-c2-longtail-sixth-batch-source-extraction-queue.json`：把 C2-LT-B6 的 24 个候选来源派生成 source-specific 深读任务，定义 exact claim、endpoint、population、uncertainty、transfer-boundary、downgrade 和 model-position 抽取槽位；它仍不等于本地复核、fresh review、reviewed artifacts 或模型准入。
 - `reference/human-infra-c2-longtail-sixth-batch-source-extraction-register.json`：记录 C2-LT-B6 24/24 个来源的本地字段级抽取，显式保留 guideline route、publisher/manual review、source-lineage、降级触发和模型阻塞边界；它仍不等于本地复核、fresh review、reviewed artifacts 或模型准入。
 - `reference/human-infra-c2-longtail-sixth-batch-local-review-register.json`：记录 C2-LT-B6 24/24 个来源抽取行的本地来源语境复核，确认非问题行只可进入 independent fresh review，7 个 guideline route、publisher/manual review 或 source-lineage 问题行必须先 source-resolution/manual fulltext；它仍不等于 reviewed artifacts、Source Card 晋升完成或模型准入。

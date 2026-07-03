@@ -207,6 +207,8 @@
         "tools/audit_human_infra_c2_longtail_seventh_batch_promotion_queue.py",
         "docs/reference/human-infra-c2-longtail-seventh-batch-source-extraction-queue.json",
         "tools/audit_human_infra_c2_longtail_seventh_batch_source_extraction_queue.py",
+        "docs/reference/human-infra-c2-longtail-seventh-batch-source-extraction-register.json",
+        "tools/audit_human_infra_c2_longtail_seventh_batch_source_extraction_register.py",
         "docs/reference/human-infra-c2-longtail-sixth-batch-source-extraction-queue.json",
         "tools/audit_human_infra_c2_longtail_sixth_batch_source_extraction_queue.py",
         "docs/reference/human-infra-c2-longtail-sixth-batch-source-extraction-register.json",
@@ -374,6 +376,8 @@
             "tools/audit_human_infra_c2_longtail_seventh_batch_promotion_queue.py",
             "docs/reference/human-infra-c2-longtail-seventh-batch-source-extraction-queue.json",
             "tools/audit_human_infra_c2_longtail_seventh_batch_source_extraction_queue.py",
+            "docs/reference/human-infra-c2-longtail-seventh-batch-source-extraction-register.json",
+            "tools/audit_human_infra_c2_longtail_seventh_batch_source_extraction_register.py",
             "docs/reference/human-infra-c2-longtail-sixth-batch-source-extraction-queue.json",
             "tools/audit_human_infra_c2_longtail_sixth_batch_source_extraction_queue.py",
             "docs/reference/human-infra-c2-longtail-sixth-batch-source-extraction-register.json",
@@ -403,13 +407,14 @@
             "tools/audit_human_infra_c2_longtail_sixth_batch_reviewed_card_artifact_register.py"
           ],
           "missingEvidence": [
-            "C2-LT-B7 source-extraction queue now derives 24 cancer-control, survivorship, transplant-safety, organ-donation and bioengineered organ-replacement candidate sources into source-specific deep-read tasks, but it does not contain completed source-context extraction, local review or independent fresh review.",
+            "C2-LT-B7 source-extraction register now completes 24/24 local field-extraction rows for cancer-control, survivorship, transplant-safety, organ-donation and bioengineered organ-replacement candidate sources, but it does not complete local source-context review or independent fresh review.",
+            "B7 extraction explicitly preserves FDA 404 route issues, Donate Life dynamic registration route context, duplicate CDC transplant-safety lineage and screening-boundary downgrade constraints before reviewed artifact promotion.",
             "C2-LT-B6 reviewed artifacts promote 24 eligible fresh-review rows into 144 bounded Source/variable/endpoint/uncertainty/transfer/downgrade artifacts while preserving 12 manual blocked/context-only rows.",
             "Remaining C2 long-tail domains outside B1/B2/B3/B4/B5/B6/B7 still need batch selection, source extraction, local review, source-resolution as needed, fresh review and reviewed artifacts.",
             "Reviewed artifacts remain bounded research artifacts and do not open calibrated model admission.",
             "Calibrated model admission still needs narrow quantitative estimands, validation data and L4 gates."
           ],
-          "nextAction": "Fill C2-LT-B7 source-specific extraction fields, then run local source-context review and independent fresh review while keeping all reviewed artifacts bounded and model admission blocked.",
+          "nextAction": "Run C2-LT-B7 local source-context review, route FDA 404 and duplicate-source rows to source-resolution/manual handling, then send eligible rows to independent fresh review while keeping model admission blocked.",
           "blocks100Percent": true
         },
         {
@@ -525,6 +530,8 @@
             "tools/audit_human_infra_c2_longtail_seventh_batch_promotion_queue.py",
             "docs/reference/human-infra-c2-longtail-seventh-batch-source-extraction-queue.json",
             "tools/audit_human_infra_c2_longtail_seventh_batch_source_extraction_queue.py",
+            "docs/reference/human-infra-c2-longtail-seventh-batch-source-extraction-register.json",
+            "tools/audit_human_infra_c2_longtail_seventh_batch_source_extraction_register.py",
             "docs/reference/human-infra-c2-longtail-sixth-batch-source-extraction-queue.json",
             "tools/audit_human_infra_c2_longtail_sixth_batch_source_extraction_queue.py",
             "docs/reference/human-infra-c2-longtail-sixth-batch-source-extraction-register.json",
@@ -554,12 +561,13 @@
             "tools/audit_human_infra_c2_longtail_sixth_batch_reviewed_card_artifact_register.py"
           ],
           "missingEvidence": [
-            "C2-LT-B7 source-extraction queue defines task-level variable seeds and model-position slots for 24 oncology/transplant/organ-replacement candidate sources, but no B7 row is admitted as a calibrated model variable.",
+            "C2-LT-B7 source-extraction register defines source-context variable seeds, endpoints, uncertainty, transfer boundaries and model-position slots for 24 oncology/transplant/organ-replacement candidate sources, but no B7 row is admitted as a calibrated model variable.",
+            "B7 rows with FDA 404 routes, Donate Life dynamic registration route context or duplicate CDC source lineage require local review/source-resolution before any bounded artifact fill.",
             "B6 reviewed artifacts define bounded variable, endpoint, uncertainty, transfer-boundary and downgrade artifacts for 24 eligible rows, but no B6 row is admitted as a calibrated model variable.",
             "B1/B2/B3/B4/B5/B6 reviewed artifacts are governed by the model-admission contract and candidate registry boundaries, but no row is admitted above L1/L2.",
             "Remaining C2 long-tail domains outside B1/B2/B3/B4/B5/B6/B7 still need reviewed variable, endpoint, uncertainty, transfer-boundary and downgrade artifacts."
           ],
-          "nextAction": "Complete C2-LT-B7 source extraction rows and preserve all B7 variable seeds as non-calibrated until local review, fresh review, reviewed artifacts and model-admission gates pass.",
+          "nextAction": "Locally review B7 extracted variables/endpoints and preserve all B7 rows as non-calibrated until fresh review, reviewed artifacts and model-admission gates pass.",
           "blocks100Percent": true
         },
         {
@@ -722,16 +730,19 @@
             "docs/reference/human-infra-c2-longtail-seventh-batch-promotion-queue.json",
             "tools/audit_human_infra_c2_longtail_seventh_batch_promotion_queue.py",
             "docs/reference/human-infra-c2-longtail-seventh-batch-source-extraction-queue.json",
-            "tools/audit_human_infra_c2_longtail_seventh_batch_source_extraction_queue.py"
+            "tools/audit_human_infra_c2_longtail_seventh_batch_source_extraction_queue.py",
+            "docs/reference/human-infra-c2-longtail-seventh-batch-source-extraction-register.json",
+            "tools/audit_human_infra_c2_longtail_seventh_batch_source_extraction_register.py"
           ],
           "missingEvidence": [
-            "C2-LT-B7 source-extraction queue includes downgradeTriggers slots for each oncology/transplant source path, but no source-specific downgrade extraction, local review or fresh review has been completed yet.",
+            "C2-LT-B7 source-extraction register now fills downgradeTriggers slots for all 24 oncology/transplant source paths, but local source-context review and independent fresh review have not been completed yet.",
+            "B7 downgrade coverage includes screening nonbenefit, shared-decision boundaries, source-route 404 blocks, duplicate-source warnings and model-admission prohibition, but these are not reviewed artifacts yet.",
             "C2-LT-B6 reviewed artifacts include bounded downgrade/falsifier-related artifacts for 24 eligible rows and preserve 12 manual blocked/context-only rows.",
             "Remaining C2 long-tail domains outside B1/B2/B3/B4/B5/B6/B7 still require source-specific downgrade and falsifier coverage.",
-            "All B7 rows remain source-extraction tasks only; no row opens model-admitted evidence.",
+            "All B7 rows remain source-context extraction outputs only; no row opens model-admitted evidence.",
             "Calibrated model downgrade gates still require a separate quantitative model contract and validation plan."
           ],
-          "nextAction": "Fill B7 downgradeTrigger extraction slots and keep model admission blocked until reviewed artifacts and quantitative gates exist.",
+          "nextAction": "Run B7 local review and independent fresh review before creating bounded downgrade artifacts; keep model admission blocked until quantitative gates exist.",
           "blocks100Percent": true
         }
       ]
