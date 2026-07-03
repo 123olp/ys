@@ -35,6 +35,7 @@
     "modelAdmissionCandidateRegistryPath": "docs/reference/human-infra-model-admission-candidate-registry.json",
     "calibrationReadinessPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_calibration_readiness.json",
     "acquisitionReadinessPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_acquisition_readiness.json",
+    "registrationEvidenceTemplatePath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_registration_evidence_template.json",
     "controlledStorageDestructionPlanPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_controlled_storage_destruction_plan.json",
     "syntheticStorageDestructionDrillPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_synthetic_storage_destruction_drill.json",
     "fileTierTablePath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_file_tier_table.json",
@@ -73,11 +74,12 @@
       "l4Effect": "Real NHATS data cannot enter extraction or calibration until governed access and controlled workspace execution exist.",
       "evidencePaths": [
         "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_acquisition_readiness.json",
+        "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_registration_evidence_template.json",
         "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_controlled_storage_destruction_plan.json",
         "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_synthetic_storage_destruction_drill.json"
       ],
       "missingEvidence": [
-        "executed NHATS registration/access record",
+        "filled NHATS registration evidence template with redacted account status and permitted-user boundary",
         "controlled workspace path outside repository",
         "access log and manifest log",
         "real-data destruction test in governed workspace"

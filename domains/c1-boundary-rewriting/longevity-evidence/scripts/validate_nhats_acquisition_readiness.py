@@ -24,6 +24,9 @@ DEFAULT_REGISTER = MANUAL_DIR / "life_path_nhats_acquisition_readiness.json"
 DEFAULT_OFFICIAL_SOURCE_REFRESH_REGISTER = (
     MANUAL_DIR / "life_path_nhats_official_source_refresh_register.json"
 )
+DEFAULT_REGISTRATION_EVIDENCE_TEMPLATE = (
+    MANUAL_DIR / "life_path_nhats_registration_evidence_template.json"
+)
 DEFAULT_STORAGE_DESTRUCTION_PLAN = (
     MANUAL_DIR / "life_path_nhats_controlled_storage_destruction_plan.json"
 )
@@ -167,12 +170,17 @@ def validate_register(register: dict[str, Any]) -> list[dict[str, Any]]:
         "register must bind NHATS acquisition readiness and keep cannot-extract-yet status",
     )
 
-    storage_plan_ok = (
+    support_registers_ok = (
         register.get("officialSourceRefreshRegisterId")
         == "nhats-official-source-refresh-2026-07-03"
         and register.get("officialSourceRefreshRegisterPath")
         == repo_rel(DEFAULT_OFFICIAL_SOURCE_REFRESH_REGISTER)
         and DEFAULT_OFFICIAL_SOURCE_REFRESH_REGISTER.exists()
+        and register.get("registrationEvidenceTemplateId")
+        == "nhats-registration-evidence-template-2026-07-03"
+        and register.get("registrationEvidenceTemplatePath")
+        == repo_rel(DEFAULT_REGISTRATION_EVIDENCE_TEMPLATE)
+        and DEFAULT_REGISTRATION_EVIDENCE_TEMPLATE.exists()
         and register.get("storageDestructionPlanId")
         == "nhats-controlled-storage-destruction-plan-2026-07-03"
         and register.get("storageDestructionPlanPath")
@@ -186,9 +194,9 @@ def validate_register(register: dict[str, Any]) -> list[dict[str, Any]]:
     )
     add_check(
         checks,
-        "storage-destruction-plan-binding",
-        storage_plan_ok,
-        "register must point to official source refresh, controlled storage/destruction plan and synthetic drill while keeping extraction blocked",
+        "support-register-bindings",
+        support_registers_ok,
+        "register must point to official source refresh, registration evidence template, controlled storage/destruction plan and synthetic drill while keeping extraction blocked",
     )
 
     decision = register.get("currentDecision")
@@ -266,7 +274,7 @@ def validate_register(register: dict[str, Any]) -> list[dict[str, Any]]:
     add_check(
         checks,
         "gate-statuses",
-        gate_status_ok and ready_count == 1 and partial_count == 3 and missing_count == 6,
+        gate_status_ok and ready_count == 1 and partial_count == 4 and missing_count == 5,
         f"ready={ready_count} partial={partial_count} missing={missing_count}",
     )
     add_check(
@@ -281,15 +289,15 @@ def validate_register(register: dict[str, Any]) -> list[dict[str, Any]]:
         isinstance(summary, dict)
         and summary.get("requiredGateCount") == 10
         and summary.get("readyGateCount") == 1
-        and summary.get("partialGateCount") == 3
-        and summary.get("missingGateCount") == 6
+        and summary.get("partialGateCount") == 4
+        and summary.get("missingGateCount") == 5
         and summary.get("blockingGateCount") == 9
     )
     add_check(
         checks,
         "gate-summary",
         summary_ok,
-        "gate summary must report 10 gates, 1 ready official-source-refresh gate, 3 partial gates, 6 missing gates and 9 extraction-blocking gates",
+        "gate summary must report 10 gates, 1 ready official-source-refresh gate, 4 partial gates, 5 missing gates and 9 extraction-blocking gates",
     )
 
     allowed_ai_inputs = as_set(register.get("allowedAiInputs"))
@@ -317,7 +325,10 @@ def validate_register(register: dict[str, Any]) -> list[dict[str, Any]]:
     add_check(
         checks,
         "source-trace",
-        bool(source_urls) and source_urls.issubset(source_trace),
+        bool(source_urls)
+        and source_urls.issubset(source_trace)
+        and repo_rel(DEFAULT_OFFICIAL_SOURCE_REFRESH_REGISTER) in source_trace
+        and repo_rel(DEFAULT_REGISTRATION_EVIDENCE_TEMPLATE) in source_trace,
         f"missing={sorted(source_urls - source_trace)}",
     )
 
@@ -343,6 +354,8 @@ def build_report(register_path: Path, register: dict[str, Any]) -> dict[str, Any
         "registerSha256": sha256_file(register_path),
         "officialSourceRefreshRegisterPath": repo_rel(DEFAULT_OFFICIAL_SOURCE_REFRESH_REGISTER),
         "officialSourceRefreshRegisterSha256": sha256_file(DEFAULT_OFFICIAL_SOURCE_REFRESH_REGISTER),
+        "registrationEvidenceTemplatePath": repo_rel(DEFAULT_REGISTRATION_EVIDENCE_TEMPLATE),
+        "registrationEvidenceTemplateSha256": sha256_file(DEFAULT_REGISTRATION_EVIDENCE_TEMPLATE),
         "acquisitionReadinessId": register.get("acquisitionReadinessId"),
         "overallStatus": "PASS" if summarize(checks)["fail"] == 0 else "FAIL",
         "summary": summarize(checks),

@@ -104,6 +104,7 @@ longevity-evidence/
 │   │   ├── life_path_public_mortality_anchor.json
 │   │   ├── life_path_nhats_acquisition_readiness.json
 │   │   ├── life_path_nhats_official_source_refresh_register.json
+│   │   ├── life_path_nhats_registration_evidence_template.json
 │   │   ├── life_path_nhats_controlled_storage_destruction_plan.json
 │   │   ├── life_path_nhats_synthetic_storage_destruction_drill.json
 │   │   ├── life_path_nhats_colectica_access_route_probe_register.json

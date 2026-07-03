@@ -1,6 +1,6 @@
 {
   "schemaVersion": "human-infra.life-path-toy-audit.v1",
-  "generatedAt": "2026-07-03T02:44:04.321315+00:00",
+  "generatedAt": "2026-07-03T05:48:39.771943+00:00",
   "modelPath": "web/src/data/life-path-toy-model.json",
   "modelSha256": "a4c92209d79d20579bf1f575d5ebf07ffe5be9ccaf6bf3f3eef08efa287b5377",
   "overallStatus": "PASS",
@@ -403,7 +403,7 @@
     {
       "id": "nhats-acquisition-readiness-gate-summary",
       "status": "PASS",
-      "detail": "gate summary must keep all acquisition gates blocking until ready evidence exists"
+      "detail": "gate summary must keep only official-source-refresh ready, registration template partial, and 9 gates extraction-blocking"
     },
     {
       "id": "nhats-acquisition-readiness-prohibited-actions",
@@ -438,7 +438,7 @@
     {
       "id": "nhats-acquisition-readiness-validation-blocking-gates",
       "status": "PASS",
-      "detail": "validation must keep 10 acquisition-readiness gates blocking and 0 ready"
+      "detail": "validation must keep official-source-refresh ready while 9 acquisition-readiness gates remain blocking"
     },
     {
       "id": "nhats-acquisition-readiness-validation-boundary",
@@ -449,6 +449,71 @@
       "id": "nhats-acquisition-readiness-validation-non-proof-note",
       "status": "PASS",
       "detail": "validation must state that it does not prove registration, storage, downloads, extraction, calibration or prediction"
+    },
+    {
+      "id": "nhats-registration-evidence-template-exists",
+      "status": "PASS",
+      "detail": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_registration_evidence_template.json"
+    },
+    {
+      "id": "nhats-registration-evidence-template-schema",
+      "status": "PASS",
+      "detail": "schemaVersion='human-infra.life-path-nhats-registration-evidence-template.v1'"
+    },
+    {
+      "id": "nhats-registration-evidence-template-identity",
+      "status": "PASS",
+      "detail": "template must bind NHATS acquisition readiness while remaining template-only"
+    },
+    {
+      "id": "nhats-registration-evidence-template-boundary",
+      "status": "PASS",
+      "detail": "template may be ready, but registration, download, extraction, raw data, public AI upload, calibration and individual prediction must remain false"
+    },
+    {
+      "id": "nhats-registration-evidence-template-slots",
+      "status": "PASS",
+      "detail": "missing=[]"
+    },
+    {
+      "id": "nhats-registration-evidence-template-gate-impact",
+      "status": "PASS",
+      "detail": "template may only create a partial registration gate and must keep extraction, calibration and individual prediction blocked"
+    },
+    {
+      "id": "nhats-registration-evidence-template-prohibited-actions",
+      "status": "PASS",
+      "detail": "template must prohibit credentials, raw data, public AI upload, calibration and individual prediction"
+    },
+    {
+      "id": "nhats-registration-evidence-template-validation-exists",
+      "status": "PASS",
+      "detail": "web/src/data/life-path-nhats-registration-evidence-template-validation.json"
+    },
+    {
+      "id": "nhats-registration-evidence-template-validation-schema",
+      "status": "PASS",
+      "detail": "schemaVersion='human-infra.life-path-nhats-registration-evidence-template-validation.v1'"
+    },
+    {
+      "id": "nhats-registration-evidence-template-validation-source-hash",
+      "status": "PASS",
+      "detail": "validation must point back to the current registration evidence template path and sha256"
+    },
+    {
+      "id": "nhats-registration-evidence-template-validation-pass",
+      "status": "PASS",
+      "detail": "overallStatus='PASS' summary={'pass': 11, 'fail': 0}"
+    },
+    {
+      "id": "nhats-registration-evidence-template-validation-boundary",
+      "status": "PASS",
+      "detail": "validation must keep registration, download, extraction, raw data, public AI upload, calibration and individual prediction blocked"
+    },
+    {
+      "id": "nhats-registration-evidence-template-validation-non-proof-note",
+      "status": "PASS",
+      "detail": "validation must state that it does not prove NHATS registration, data access, workspace execution or model readiness"
     },
     {
       "id": "nhats-controlled-storage-validation-exists",
@@ -1532,7 +1597,7 @@
     }
   ],
   "summary": {
-    "pass": 305,
+    "pass": 318,
     "warn": 0,
     "fail": 0
   },
@@ -1842,7 +1907,7 @@
   },
   "nhatsExtractionManifest": {
     "path": "domains/c1-boundary-rewriting/longevity-evidence/docs/life-path-extraction-manifest-nhats-draft.md",
-    "sha256": "a667200dc19d1c1e22f221bd68ef9560cb8bd33e683e771bdaa8bd525c6388ac",
+    "sha256": "330287572ddfedad7a62f9cf4dfc3d81eb13d49fdd9f7895bcadaedcb817ae88",
     "status": "PASS",
     "checks": [
       {
@@ -1909,7 +1974,7 @@
   },
   "nhatsAcquisitionReadiness": {
     "path": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_acquisition_readiness.json",
-    "sha256": "f0ebd157e99df536c7b30bc8106b364b35a2bc74f7808be0c34e41931266e1c4",
+    "sha256": "15d8f2ce1144fe40d3a7132bb38d49fa496368f2a339dc0f769a87624225dd94",
     "status": "PASS",
     "checks": [
       {
@@ -1965,7 +2030,7 @@
       {
         "id": "nhats-acquisition-readiness-gate-summary",
         "status": "PASS",
-        "detail": "gate summary must keep all acquisition gates blocking until ready evidence exists"
+        "detail": "gate summary must keep only official-source-refresh ready, registration template partial, and 9 gates extraction-blocking"
       },
       {
         "id": "nhats-acquisition-readiness-prohibited-actions",
@@ -1986,7 +2051,7 @@
   },
   "nhatsAcquisitionReadinessValidation": {
     "path": "web/src/data/life-path-nhats-acquisition-readiness-validation.json",
-    "sha256": "800f999d81752f8fa776764583af042bef0dc3f16459a7a04e0cf7ef08c425ea",
+    "sha256": "a013518660c88229b82ace801800b00f778e4966ae1a3a25df5e557d718b3b24",
     "status": "PASS",
     "checks": [
       {
@@ -2012,7 +2077,7 @@
       {
         "id": "nhats-acquisition-readiness-validation-blocking-gates",
         "status": "PASS",
-        "detail": "validation must keep 10 acquisition-readiness gates blocking and 0 ready"
+        "detail": "validation must keep official-source-refresh ready while 9 acquisition-readiness gates remain blocking"
       },
       {
         "id": "nhats-acquisition-readiness-validation-boundary",
@@ -2031,9 +2096,98 @@
       "fail": 0
     }
   },
+  "nhatsRegistrationEvidenceTemplate": {
+    "path": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_registration_evidence_template.json",
+    "sha256": "403925b01f1fef53518448c27d14504d69532dc06f53ede474fb64f0033fff16",
+    "status": "PASS",
+    "checks": [
+      {
+        "id": "nhats-registration-evidence-template-exists",
+        "status": "PASS",
+        "detail": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_registration_evidence_template.json"
+      },
+      {
+        "id": "nhats-registration-evidence-template-schema",
+        "status": "PASS",
+        "detail": "schemaVersion='human-infra.life-path-nhats-registration-evidence-template.v1'"
+      },
+      {
+        "id": "nhats-registration-evidence-template-identity",
+        "status": "PASS",
+        "detail": "template must bind NHATS acquisition readiness while remaining template-only"
+      },
+      {
+        "id": "nhats-registration-evidence-template-boundary",
+        "status": "PASS",
+        "detail": "template may be ready, but registration, download, extraction, raw data, public AI upload, calibration and individual prediction must remain false"
+      },
+      {
+        "id": "nhats-registration-evidence-template-slots",
+        "status": "PASS",
+        "detail": "missing=[]"
+      },
+      {
+        "id": "nhats-registration-evidence-template-gate-impact",
+        "status": "PASS",
+        "detail": "template may only create a partial registration gate and must keep extraction, calibration and individual prediction blocked"
+      },
+      {
+        "id": "nhats-registration-evidence-template-prohibited-actions",
+        "status": "PASS",
+        "detail": "template must prohibit credentials, raw data, public AI upload, calibration and individual prediction"
+      }
+    ],
+    "summary": {
+      "pass": 7,
+      "warn": 0,
+      "fail": 0
+    }
+  },
+  "nhatsRegistrationEvidenceTemplateValidation": {
+    "path": "web/src/data/life-path-nhats-registration-evidence-template-validation.json",
+    "sha256": "c1639c7a5b168381232cc95225c2ec142a54eea57f7986bd207701ef10f39433",
+    "status": "PASS",
+    "checks": [
+      {
+        "id": "nhats-registration-evidence-template-validation-exists",
+        "status": "PASS",
+        "detail": "web/src/data/life-path-nhats-registration-evidence-template-validation.json"
+      },
+      {
+        "id": "nhats-registration-evidence-template-validation-schema",
+        "status": "PASS",
+        "detail": "schemaVersion='human-infra.life-path-nhats-registration-evidence-template-validation.v1'"
+      },
+      {
+        "id": "nhats-registration-evidence-template-validation-source-hash",
+        "status": "PASS",
+        "detail": "validation must point back to the current registration evidence template path and sha256"
+      },
+      {
+        "id": "nhats-registration-evidence-template-validation-pass",
+        "status": "PASS",
+        "detail": "overallStatus='PASS' summary={'pass': 11, 'fail': 0}"
+      },
+      {
+        "id": "nhats-registration-evidence-template-validation-boundary",
+        "status": "PASS",
+        "detail": "validation must keep registration, download, extraction, raw data, public AI upload, calibration and individual prediction blocked"
+      },
+      {
+        "id": "nhats-registration-evidence-template-validation-non-proof-note",
+        "status": "PASS",
+        "detail": "validation must state that it does not prove NHATS registration, data access, workspace execution or model readiness"
+      }
+    ],
+    "summary": {
+      "pass": 6,
+      "warn": 0,
+      "fail": 0
+    }
+  },
   "nhatsControlledStorageDestruction": {
     "path": "web/src/data/life-path-nhats-controlled-storage-destruction-validation.json",
-    "sha256": "81e731b0bc03250e859829b4e85344f33c59b7374cfa5dcbbe388f53351b00ac",
+    "sha256": "8db00c433a76153eca4d58f13997bf1e36967f4982e31eba59651e036a651b54",
     "status": "PASS",
     "checks": [
       {
@@ -2080,7 +2234,7 @@
   },
   "nhatsSyntheticStorageDestructionDrill": {
     "path": "web/src/data/life-path-nhats-synthetic-storage-destruction-drill-validation.json",
-    "sha256": "18b4e7994acf18069445e61b630f0e2fe90d09640d55bf50524f220b4c15fc5b",
+    "sha256": "a5b9c8b8c446b3ac9ae434ccd2adecf8d19d074a9b7b353ccb3a41674c74e366",
     "status": "PASS",
     "checks": [
       {
@@ -3170,7 +3324,7 @@
     "registerPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_l2_variable_family_admission_register.json",
     "registerSha256": "da1d444f452482f37aa7d7d12cd97c9deb0b2d6006540f76c5d2588389dffce3",
     "validationPath": "web/src/data/life-path-nhats-l2-variable-family-admission-validation.json",
-    "validationSha256": "acd8af75f2b389d775186aeeff3771f557104a2b86d7774ce1c27f00569bedd9",
+    "validationSha256": "2e43b8c7040db5f72d9ee991e27d73f967699c5ddf61850355747a2d325773e2",
     "status": "PASS",
     "checks": [
       {

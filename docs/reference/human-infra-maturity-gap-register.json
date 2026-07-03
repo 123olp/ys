@@ -782,6 +782,9 @@
         "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_official_source_refresh_register.json",
         "domains/c1-boundary-rewriting/longevity-evidence/scripts/validate_nhats_official_source_refresh.py",
         "web/src/data/life-path-nhats-official-source-refresh-validation.json",
+        "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_registration_evidence_template.json",
+        "domains/c1-boundary-rewriting/longevity-evidence/scripts/validate_nhats_registration_evidence_template.py",
+        "web/src/data/life-path-nhats-registration-evidence-template-validation.json",
         "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_acquisition_readiness.json",
         "domains/c1-boundary-rewriting/longevity-evidence/scripts/validate_nhats_acquisition_readiness.py",
         "web/src/data/life-path-nhats-acquisition-readiness-validation.json",
@@ -887,6 +890,9 @@
             "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_official_source_refresh_register.json",
             "domains/c1-boundary-rewriting/longevity-evidence/scripts/validate_nhats_official_source_refresh.py",
             "web/src/data/life-path-nhats-official-source-refresh-validation.json",
+            "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_registration_evidence_template.json",
+            "domains/c1-boundary-rewriting/longevity-evidence/scripts/validate_nhats_registration_evidence_template.py",
+            "web/src/data/life-path-nhats-registration-evidence-template-validation.json",
             "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_acquisition_readiness.json",
             "domains/c1-boundary-rewriting/longevity-evidence/scripts/validate_nhats_acquisition_readiness.py",
             "web/src/data/life-path-nhats-acquisition-readiness-validation.json",
@@ -898,13 +904,13 @@
             "web/src/data/life-path-nhats-synthetic-storage-destruction-drill-validation.json"
           ],
           "missingEvidence": [
-            "Official-source-refresh is now hash-validated and ready, but acquisition-readiness still proves 9 remaining readiness gates block extraction.",
+            "Official-source-refresh is now hash-validated and ready, and registration evidence template is machine-validated as partial-template-only, but acquisition-readiness still proves 8 remaining readiness gates block extraction.",
             "Controlled storage/destruction plan now exists, is machine-validated and has a synthetic create-hash-delete drill, but the real governed plan has not been executed.",
-            "NHATS registration evidence.",
+            "Filled NHATS registration evidence template with redacted account status, permitted-user boundary, conditions-of-use attestation, file-tier confirmation, controlled workspace linkage and second-reviewer signoff.",
             "Allowed file tier confirmation.",
             "Controlled workspace provisioning, access log, inventory log and governed workspace destruction evidence."
           ],
-          "nextAction": "Complete governed data access records, provision a controlled workspace and execute the real storage/destruction plan outside the public repository before any extractor is written.",
+          "nextAction": "Fill the NHATS registration evidence template with redacted proof outside public AI/raw data channels, complete governed data access records, provision a controlled workspace and execute the real storage/destruction plan outside the public repository before any extractor is written.",
           "blocks100Percent": true
         },
         {

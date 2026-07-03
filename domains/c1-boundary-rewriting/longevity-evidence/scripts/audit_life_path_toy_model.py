@@ -88,6 +88,22 @@ DEFAULT_NHATS_ACQUISITION_READINESS = (
 DEFAULT_NHATS_ACQUISITION_READINESS_VALIDATION = (
     REPO_ROOT / "web" / "src" / "data" / "life-path-nhats-acquisition-readiness-validation.json"
 )
+DEFAULT_NHATS_REGISTRATION_EVIDENCE_TEMPLATE = (
+    REPO_ROOT
+    / "domains"
+    / "c1-boundary-rewriting"
+    / "longevity-evidence"
+    / "data"
+    / "manual"
+    / "life_path_nhats_registration_evidence_template.json"
+)
+DEFAULT_NHATS_REGISTRATION_EVIDENCE_TEMPLATE_VALIDATION = (
+    REPO_ROOT
+    / "web"
+    / "src"
+    / "data"
+    / "life-path-nhats-registration-evidence-template-validation.json"
+)
 DEFAULT_NHATS_CONTROLLED_STORAGE_DESTRUCTION_PLAN = (
     REPO_ROOT
     / "domains"
@@ -1765,16 +1781,16 @@ def audit_nhats_acquisition_readiness(readiness_path: Path) -> dict[str, Any]:
     summary_ok = (
         isinstance(summary, dict)
         and summary.get("requiredGateCount") == len(REQUIRED_NHATS_ACQUISITION_GATE_IDS)
-        and summary.get("readyGateCount") == 0
-        and summary.get("blockingGateCount") == len(REQUIRED_NHATS_ACQUISITION_GATE_IDS)
-        and summary.get("partialGateCount", 0) + summary.get("missingGateCount", 0)
-        == len(REQUIRED_NHATS_ACQUISITION_GATE_IDS)
+        and summary.get("readyGateCount") == 1
+        and summary.get("partialGateCount") == 4
+        and summary.get("missingGateCount") == 5
+        and summary.get("blockingGateCount") == 9
     )
     add_check(
         checks,
         "nhats-acquisition-readiness-gate-summary",
         status_from_bool(exists and summary_ok),
-        "gate summary must keep all acquisition gates blocking until ready evidence exists",
+        "gate summary must keep only official-source-refresh ready, registration template partial, and 9 gates extraction-blocking",
     )
 
     prohibited_ok = (
@@ -1794,6 +1810,7 @@ def audit_nhats_acquisition_readiness(readiness_path: Path) -> dict[str, Any]:
 
     next_work_ok = (
         isinstance(readiness.get("nextWork"), list)
+        and has_text(readiness["nextWork"], "registration evidence template")
         and has_text(readiness["nextWork"], "file-tier table")
         and has_text(readiness["nextWork"], "Cross-Year Search")
         and has_text(readiness["nextWork"], "disclosure-control")
@@ -1869,14 +1886,16 @@ def audit_nhats_acquisition_readiness_validation(
     gate_summary_ok = (
         isinstance(gate_summary, dict)
         and gate_summary.get("requiredGateCount") == 10
-        and gate_summary.get("readyGateCount") == 0
-        and gate_summary.get("blockingGateCount") == 10
+        and gate_summary.get("readyGateCount") == 1
+        and gate_summary.get("partialGateCount") == 4
+        and gate_summary.get("missingGateCount") == 5
+        and gate_summary.get("blockingGateCount") == 9
     )
     add_check(
         checks,
         "nhats-acquisition-readiness-validation-blocking-gates",
         status_from_bool(exists and gate_summary_ok),
-        "validation must keep 10 acquisition-readiness gates blocking and 0 ready",
+        "validation must keep official-source-refresh ready while 9 acquisition-readiness gates remain blocking",
     )
 
     boundary = validation.get("boundary")
@@ -1901,6 +1920,216 @@ def audit_nhats_acquisition_readiness_validation(
         "nhats-acquisition-readiness-validation-non-proof-note",
         status_from_bool(exists and note_ok),
         "validation must state that it does not prove registration, storage, downloads, extraction, calibration or prediction",
+    )
+
+    return {
+        "path": str(validation_path.relative_to(REPO_ROOT)),
+        "sha256": sha256_file(validation_path) if exists else None,
+        "status": "PASS" if summarize_checks(checks)["fail"] == 0 else "FAIL",
+        "checks": checks,
+        "summary": summarize_checks(checks),
+    }
+
+
+def audit_nhats_registration_evidence_template(template_path: Path) -> dict[str, Any]:
+    checks: list[dict[str, Any]] = []
+    exists = template_path.exists()
+    add_check(
+        checks,
+        "nhats-registration-evidence-template-exists",
+        status_from_bool(exists),
+        str(template_path.relative_to(REPO_ROOT)),
+    )
+    template = load_json(template_path) if exists else {}
+
+    schema_ok = (
+        template.get("schemaVersion")
+        == "human-infra.life-path-nhats-registration-evidence-template.v1"
+    )
+    add_check(
+        checks,
+        "nhats-registration-evidence-template-schema",
+        status_from_bool(exists and schema_ok),
+        f"schemaVersion={template.get('schemaVersion')!r}",
+    )
+
+    identity_ok = (
+        template.get("sourceId") == "nhats"
+        and template.get("status") == "template-only-registration-not-complete"
+        and template.get("acquisitionReadinessId") == "nhats-acquisition-readiness-2026-07-02"
+    )
+    add_check(
+        checks,
+        "nhats-registration-evidence-template-identity",
+        status_from_bool(exists and identity_ok),
+        "template must bind NHATS acquisition readiness while remaining template-only",
+    )
+
+    decision = template.get("currentDecision")
+    decision_ok = (
+        isinstance(decision, dict)
+        and decision.get("templateReady") is True
+        and decision.get("registeredAccountConfirmed") is False
+        and decision.get("downloadAllowed") is False
+        and decision.get("extractionScriptAllowed") is False
+        and decision.get("rawDataAllowedInRepository") is False
+        and decision.get("publicAiUploadAllowed") is False
+        and decision.get("calibrationAllowed") is False
+        and decision.get("individualPredictionAllowed") is False
+    )
+    add_check(
+        checks,
+        "nhats-registration-evidence-template-boundary",
+        status_from_bool(exists and decision_ok),
+        "template may be ready, but registration, download, extraction, raw data, public AI upload, calibration and individual prediction must remain false",
+    )
+
+    expected_slots = {
+        "registered-account-status",
+        "permitted-user-boundary",
+        "conditions-of-use-attestation",
+        "public-use-file-access-tier",
+        "sensitive-restricted-approval-boundary",
+        "controlled-workspace-linkage",
+        "no-public-secret-storage",
+        "second-reviewer-signoff",
+    }
+    slots = template.get("evidenceSlots")
+    slot_ids = {
+        str(slot.get("id"))
+        for slot in slots or []
+        if isinstance(slot, dict) and isinstance(slot.get("id"), str)
+    }
+    slots_ok = isinstance(slots, list) and expected_slots.issubset(slot_ids) and all(
+        isinstance(slot, dict)
+        and slot.get("currentStatus") == "missing"
+        and slot.get("blocksExtraction") is True
+        for slot in slots
+    )
+    add_check(
+        checks,
+        "nhats-registration-evidence-template-slots",
+        status_from_bool(exists and slots_ok),
+        f"missing={sorted(expected_slots - slot_ids)}",
+    )
+
+    gate_impact = template.get("gateImpact")
+    gate_impact_ok = (
+        isinstance(gate_impact, dict)
+        and gate_impact.get("acquisitionGateId") == "registration-status"
+        and gate_impact.get("acquisitionGateStatus") == "partial-template-only"
+        and gate_impact.get("registrationEvidenceComplete") is False
+        and gate_impact.get("extractionStillBlocked") is True
+        and gate_impact.get("calibrationStillBlocked") is True
+        and gate_impact.get("individualPredictionStillBlocked") is True
+    )
+    add_check(
+        checks,
+        "nhats-registration-evidence-template-gate-impact",
+        status_from_bool(exists and gate_impact_ok),
+        "template may only create a partial registration gate and must keep extraction, calibration and individual prediction blocked",
+    )
+
+    prohibited_ok = (
+        has_text(template.get("prohibitedActions", []), "credentials")
+        and has_text(template.get("prohibitedActions", []), "raw NHATS")
+        and has_text(template.get("prohibitedActions", []), "public AI systems")
+        and has_text(template.get("prohibitedActions", []), "calibration")
+        and has_text(template.get("prohibitedActions", []), "individual prediction")
+    )
+    add_check(
+        checks,
+        "nhats-registration-evidence-template-prohibited-actions",
+        status_from_bool(exists and prohibited_ok),
+        "template must prohibit credentials, raw data, public AI upload, calibration and individual prediction",
+    )
+
+    return {
+        "path": str(template_path.relative_to(REPO_ROOT)),
+        "sha256": sha256_file(template_path) if exists else None,
+        "status": "PASS" if summarize_checks(checks)["fail"] == 0 else "FAIL",
+        "checks": checks,
+        "summary": summarize_checks(checks),
+    }
+
+
+def audit_nhats_registration_evidence_template_validation(
+    validation_path: Path,
+    template_path: Path,
+) -> dict[str, Any]:
+    checks: list[dict[str, Any]] = []
+    exists = validation_path.exists()
+    add_check(
+        checks,
+        "nhats-registration-evidence-template-validation-exists",
+        status_from_bool(exists),
+        str(validation_path.relative_to(REPO_ROOT)),
+    )
+    validation = load_json(validation_path) if exists else {}
+
+    schema_ok = (
+        validation.get("schemaVersion")
+        == "human-infra.life-path-nhats-registration-evidence-template-validation.v1"
+    )
+    add_check(
+        checks,
+        "nhats-registration-evidence-template-validation-schema",
+        status_from_bool(exists and schema_ok),
+        f"schemaVersion={validation.get('schemaVersion')!r}",
+    )
+
+    source_ok = (
+        validation.get("templatePath") == str(template_path.relative_to(REPO_ROOT))
+        and validation.get("templateSha256") == sha256_file(template_path)
+        and validation.get("templateId") == "nhats-registration-evidence-template-2026-07-03"
+    )
+    add_check(
+        checks,
+        "nhats-registration-evidence-template-validation-source-hash",
+        status_from_bool(exists and template_path.exists() and source_ok),
+        "validation must point back to the current registration evidence template path and sha256",
+    )
+
+    summary = validation.get("summary")
+    status_ok = (
+        validation.get("overallStatus") == "PASS"
+        and isinstance(summary, dict)
+        and summary.get("fail") == 0
+        and isinstance(validation.get("checks"), list)
+    )
+    add_check(
+        checks,
+        "nhats-registration-evidence-template-validation-pass",
+        status_from_bool(exists and status_ok),
+        f"overallStatus={validation.get('overallStatus')!r} summary={summary!r}",
+    )
+
+    boundary = validation.get("boundary")
+    boundary_ok = (
+        isinstance(boundary, dict)
+        and boundary.get("templateReady") is True
+        and boundary.get("registeredAccountConfirmed") is False
+        and boundary.get("downloadAllowed") is False
+        and boundary.get("extractionScriptAllowed") is False
+        and boundary.get("rawDataAllowedInRepository") is False
+        and boundary.get("publicAiUploadAllowed") is False
+        and boundary.get("calibrationAllowed") is False
+        and boundary.get("individualPredictionAllowed") is False
+    )
+    add_check(
+        checks,
+        "nhats-registration-evidence-template-validation-boundary",
+        status_from_bool(exists and boundary_ok),
+        "validation must keep registration, download, extraction, raw data, public AI upload, calibration and individual prediction blocked",
+    )
+
+    note = str(validation.get("note", "")).lower()
+    note_ok = "does not prove nhats registration" in note and "model readiness" in note
+    add_check(
+        checks,
+        "nhats-registration-evidence-template-validation-non-proof-note",
+        status_from_bool(exists and note_ok),
+        "validation must state that it does not prove NHATS registration, data access, workspace execution or model readiness",
     )
 
     return {
@@ -5825,6 +6054,8 @@ def audit_model(
     nhats_extraction_manifest_path: Path,
     nhats_acquisition_readiness_path: Path,
     nhats_acquisition_readiness_validation_path: Path,
+    nhats_registration_evidence_template_path: Path,
+    nhats_registration_evidence_template_validation_path: Path,
     nhats_controlled_storage_destruction_plan_path: Path,
     nhats_controlled_storage_destruction_validation_path: Path,
     nhats_synthetic_storage_destruction_drill_path: Path,
@@ -6039,6 +6270,17 @@ def audit_model(
             nhats_acquisition_readiness_path,
         )
     )
+    nhats_registration_evidence_template_audit = (
+        audit_nhats_registration_evidence_template(
+            nhats_registration_evidence_template_path,
+        )
+    )
+    nhats_registration_evidence_template_validation_audit = (
+        audit_nhats_registration_evidence_template_validation(
+            nhats_registration_evidence_template_validation_path,
+            nhats_registration_evidence_template_path,
+        )
+    )
     nhats_controlled_storage_destruction_audit = (
         audit_nhats_controlled_storage_destruction_validation(
             nhats_controlled_storage_destruction_validation_path,
@@ -6141,6 +6383,8 @@ def audit_model(
     checks.extend(nhats_extraction_manifest_audit["checks"])
     checks.extend(nhats_acquisition_readiness_audit["checks"])
     checks.extend(nhats_acquisition_readiness_validation_audit["checks"])
+    checks.extend(nhats_registration_evidence_template_audit["checks"])
+    checks.extend(nhats_registration_evidence_template_validation_audit["checks"])
     checks.extend(nhats_controlled_storage_destruction_audit["checks"])
     checks.extend(nhats_synthetic_storage_destruction_drill_audit["checks"])
     checks.extend(nhats_file_tier_table_audit["checks"])
@@ -6176,6 +6420,8 @@ def audit_model(
         "nhatsExtractionManifest": nhats_extraction_manifest_audit,
         "nhatsAcquisitionReadiness": nhats_acquisition_readiness_audit,
         "nhatsAcquisitionReadinessValidation": nhats_acquisition_readiness_validation_audit,
+        "nhatsRegistrationEvidenceTemplate": nhats_registration_evidence_template_audit,
+        "nhatsRegistrationEvidenceTemplateValidation": nhats_registration_evidence_template_validation_audit,
         "nhatsControlledStorageDestruction": nhats_controlled_storage_destruction_audit,
         "nhatsSyntheticStorageDestructionDrill": nhats_synthetic_storage_destruction_drill_audit,
         "nhatsFileTierTable": nhats_file_tier_table_audit,
@@ -6261,6 +6507,13 @@ def render_markdown(audit: dict[str, Any]) -> str:
             f"- Acquisition readiness SHA-256: `{audit['nhatsAcquisitionReadiness']['sha256']}`",
             f"- Acquisition readiness status: `{audit['nhatsAcquisitionReadiness']['status']}`",
             "- Boundary: the structured readiness contract keeps NHATS at cannot-extract-yet until registration, file-tier, Colectica variables, endpoint, survey design, disclosure control, AI boundary and storage/destruction gates are ready.",
+            "",
+            "## NHATS Registration Evidence Template",
+            "",
+            f"- Registration evidence template path: `{audit['nhatsRegistrationEvidenceTemplate']['path']}`",
+            f"- Registration evidence template SHA-256: `{audit['nhatsRegistrationEvidenceTemplate']['sha256']}`",
+            f"- Registration evidence template status: `{audit['nhatsRegistrationEvidenceTemplate']['status']}`",
+            "- Boundary: the template defines redacted evidence slots for registration and access governance; it does not prove registration, authorize download, authorize extraction, or open calibration.",
             "",
             "## NHATS Controlled Storage / Destruction",
             "",
@@ -6459,6 +6712,16 @@ def parse_args() -> argparse.Namespace:
         default=DEFAULT_NHATS_ACQUISITION_READINESS_VALIDATION,
     )
     parser.add_argument(
+        "--nhats-registration-evidence-template",
+        type=Path,
+        default=DEFAULT_NHATS_REGISTRATION_EVIDENCE_TEMPLATE,
+    )
+    parser.add_argument(
+        "--nhats-registration-evidence-template-validation",
+        type=Path,
+        default=DEFAULT_NHATS_REGISTRATION_EVIDENCE_TEMPLATE_VALIDATION,
+    )
+    parser.add_argument(
         "--nhats-controlled-storage-destruction-plan",
         type=Path,
         default=DEFAULT_NHATS_CONTROLLED_STORAGE_DESTRUCTION_PLAN,
@@ -6633,6 +6896,12 @@ def main() -> int:
     nhats_acquisition_readiness_validation_path = (
         args.nhats_acquisition_readiness_validation.resolve()
     )
+    nhats_registration_evidence_template_path = (
+        args.nhats_registration_evidence_template.resolve()
+    )
+    nhats_registration_evidence_template_validation_path = (
+        args.nhats_registration_evidence_template_validation.resolve()
+    )
     nhats_controlled_storage_destruction_plan_path = (
         args.nhats_controlled_storage_destruction_plan.resolve()
     )
@@ -6723,6 +6992,8 @@ def main() -> int:
         nhats_extraction_manifest_path,
         nhats_acquisition_readiness_path,
         nhats_acquisition_readiness_validation_path,
+        nhats_registration_evidence_template_path,
+        nhats_registration_evidence_template_validation_path,
         nhats_controlled_storage_destruction_plan_path,
         nhats_controlled_storage_destruction_validation_path,
         nhats_synthetic_storage_destruction_drill_path,

@@ -9,6 +9,8 @@
   "fileTierTablePath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_file_tier_table.json",
   "officialSourceRefreshRegisterId": "nhats-official-source-refresh-2026-07-03",
   "officialSourceRefreshRegisterPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_official_source_refresh_register.json",
+  "registrationEvidenceTemplateId": "nhats-registration-evidence-template-2026-07-03",
+  "registrationEvidenceTemplatePath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_registration_evidence_template.json",
   "storageDestructionPlanId": "nhats-controlled-storage-destruction-plan-2026-07-03",
   "storageDestructionPlanPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_controlled_storage_destruction_plan.json",
   "storageDestructionSyntheticDrillId": "nhats-synthetic-storage-destruction-drill-2026-07-03",
@@ -22,7 +24,7 @@
     "rawDataAllowedInRepository": false,
     "calibrationAllowed": false,
     "individualPredictionAllowed": false,
-    "reason": "Official access, a first R13/R14 file-tier table, a controlled storage/destruction plan and a synthetic storage/destruction drill are documented, but registration, Colectica variable confirmation, survey-design plan, endpoint definition, disclosure control and governed storage execution are not complete."
+    "reason": "Official access, a first R13/R14 file-tier table, a registration evidence template, a controlled storage/destruction plan and a synthetic storage/destruction drill are documented, but actual registration evidence, Colectica variable confirmation, survey-design plan, endpoint definition, disclosure control and governed storage execution are not complete."
   },
   "officialSourceRefresh": [
     {
@@ -79,9 +81,9 @@
     {
       "id": "registration-status",
       "requiredEvidence": "Registered NHATS account identity, permitted user boundary and no-sharing obligations recorded outside the public repository.",
-      "status": "missing",
+      "status": "partial",
       "blocksExtraction": true,
-      "nextEvidence": "Complete NHATS registration and record only non-sensitive registration status metadata."
+      "nextEvidence": "Use the registration evidence template to record only redacted, non-sensitive registration status metadata after completing NHATS registration outside this repository."
     },
     {
       "id": "file-access-tier",
@@ -143,8 +145,8 @@
   "gateSummary": {
     "requiredGateCount": 10,
     "readyGateCount": 1,
-    "partialGateCount": 3,
-    "missingGateCount": 6,
+    "partialGateCount": 4,
+    "missingGateCount": 5,
     "blockingGateCount": 9
   },
   "allowedAiInputs": [
@@ -162,6 +164,7 @@
     "claim calibration or validation before governed cohort diagnostics exist"
   ],
   "nextWork": [
+    "Fill the registration evidence template with redacted registration status, permitted user boundary, current Conditions of Use attestation and second-review metadata after NHATS registration is complete outside this repository.",
     "Complete the first file-tier table with registration state, canonical format choice, approval status and governed storage path.",
     "Use the official source refresh register as current public-source evidence, and refresh it again immediately before registration or acquisition.",
     "Execute the controlled storage/destruction plan in a governed workspace outside the public repository before any download.",
@@ -177,6 +180,7 @@
     "https://www.nhats.org/data-access/nhats",
     "https://nhats.org/researcher/nhats/download-public-use-files?id=22",
     "https://nhats.org/researcher/nhats/download-public-use-files?id=21",
-    "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_official_source_refresh_register.json"
+    "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_official_source_refresh_register.json",
+    "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_registration_evidence_template.json"
   ]
 }

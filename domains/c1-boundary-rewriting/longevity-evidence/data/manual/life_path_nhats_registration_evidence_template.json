@@ -1,0 +1,155 @@
+{
+  "schemaVersion": "human-infra.life-path-nhats-registration-evidence-template.v1",
+  "sourceId": "nhats",
+  "sourceName": "National Health and Aging Trends Study",
+  "templateId": "nhats-registration-evidence-template-2026-07-03",
+  "acquisitionReadinessId": "nhats-acquisition-readiness-2026-07-02",
+  "officialSourceRefreshRegisterId": "nhats-official-source-refresh-2026-07-03",
+  "reviewDate": "2026-07-03",
+  "reviewer": "tradecatlabs",
+  "status": "template-only-registration-not-complete",
+  "templatePurpose": "Define the minimum redacted evidence slots required before NHATS registration, permitted user boundary, file access tier and controlled workspace evidence may unlock any data download, extraction script, calibration or model-admission step.",
+  "currentDecision": {
+    "templateReady": true,
+    "registeredAccountConfirmed": false,
+    "permittedUserBoundaryConfirmed": false,
+    "conditionsOfUseAttested": false,
+    "fileTierApprovalRecorded": false,
+    "controlledWorkspaceProvisioned": false,
+    "nonRepositoryEvidenceRecorded": false,
+    "secondReviewerSignoff": false,
+    "downloadAllowed": false,
+    "extractionScriptAllowed": false,
+    "rawDataAllowedInRepository": false,
+    "publicAiUploadAllowed": false,
+    "calibrationAllowed": false,
+    "individualPredictionAllowed": false,
+    "reason": "The registration evidence template is ready, but no NHATS account status, permitted user boundary, conditions attestation, file-tier approval, controlled workspace evidence, second review, data download, extraction, calibration or individual prediction is available."
+  },
+  "sourceBindings": {
+    "acquisitionReadinessPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_acquisition_readiness.json",
+    "officialSourceRefreshRegisterPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_official_source_refresh_register.json"
+  },
+  "evidenceSlots": [
+    {
+      "id": "registered-account-status",
+      "requiredEvidence": "NHATS registration completed by an eligible user, with account identity and any private proof stored outside the public repository.",
+      "repositoryRepresentation": "redacted-status-only",
+      "publicRepositoryAllowed": false,
+      "currentStatus": "missing",
+      "blocksExtraction": true
+    },
+    {
+      "id": "permitted-user-boundary",
+      "requiredEvidence": "Permitted user, organization, sharing boundary and role limitations reviewed against NHATS conditions.",
+      "repositoryRepresentation": "redacted-summary-and-hash-only",
+      "publicRepositoryAllowed": false,
+      "currentStatus": "missing",
+      "blocksExtraction": true
+    },
+    {
+      "id": "conditions-of-use-attestation",
+      "requiredEvidence": "Reviewer attests current NHATS/NSOC Conditions of Use, including no public AI upload and no unauthorized sharing.",
+      "repositoryRepresentation": "date-stamped-attestation-without-private-account-data",
+      "publicRepositoryAllowed": true,
+      "currentStatus": "missing",
+      "blocksExtraction": true
+    },
+    {
+      "id": "public-use-file-access-tier",
+      "requiredEvidence": "For every planned public-use file, record registration-required status, DOI/page source, canonical format and allowed controlled local path.",
+      "repositoryRepresentation": "file-tier-summary-only",
+      "publicRepositoryAllowed": true,
+      "currentStatus": "missing",
+      "blocksExtraction": true
+    },
+    {
+      "id": "sensitive-restricted-approval-boundary",
+      "requiredEvidence": "Sensitive and restricted files are either excluded or have file-specific approval evidence recorded outside the public repository.",
+      "repositoryRepresentation": "excluded-or-redacted-approval-status-only",
+      "publicRepositoryAllowed": false,
+      "currentStatus": "missing",
+      "blocksExtraction": true
+    },
+    {
+      "id": "controlled-workspace-linkage",
+      "requiredEvidence": "Non-repository controlled workspace, access log path, inventory log path and destruction process are provisioned before download.",
+      "repositoryRepresentation": "non-sensitive-path-policy-and-evidence-hash-only",
+      "publicRepositoryAllowed": false,
+      "currentStatus": "missing",
+      "blocksExtraction": true
+    },
+    {
+      "id": "no-public-secret-storage",
+      "requiredEvidence": "Explicit check that credentials, cookies, tokens, private account data, row-level records and raw files are absent from repository, issues, web output and public AI tools.",
+      "repositoryRepresentation": "check-result-only",
+      "publicRepositoryAllowed": true,
+      "currentStatus": "missing",
+      "blocksExtraction": true
+    },
+    {
+      "id": "second-reviewer-signoff",
+      "requiredEvidence": "Second reviewer confirms registration evidence, storage boundary, file-tier status and prohibited-use boundary before any extraction script exists.",
+      "repositoryRepresentation": "redacted-signoff-summary-only",
+      "publicRepositoryAllowed": true,
+      "currentStatus": "missing",
+      "blocksExtraction": true
+    }
+  ],
+  "allowedRepositoryFields": [
+    "templateId",
+    "reviewDate",
+    "reviewer",
+    "redactedRegistrationStatus",
+    "fileTierDecision",
+    "sourcePageHashes",
+    "nonSensitiveEvidenceHash",
+    "secondReviewStatus"
+  ],
+  "forbiddenRepositoryFields": [
+    "password",
+    "sessionCookie",
+    "authToken",
+    "downloadToken",
+    "privateAccountProfile",
+    "rawNhatsData",
+    "rawNsocData",
+    "rowLevelData",
+    "individualIdentifier",
+    "deathDate",
+    "individualDeathDate"
+  ],
+  "blockedUntil": [
+    "registered account status is confirmed outside the public repository",
+    "permitted user and sharing boundary are reviewed",
+    "current Conditions of Use are attested",
+    "public-use, sensitive and restricted file tiers are recorded",
+    "controlled workspace, inventory log and access log are provisioned outside the repository",
+    "repository and public AI no-secret/no-raw-data check passes",
+    "second reviewer signoff is complete"
+  ],
+  "prohibitedActions": [
+    "Do not download NHATS or NSOC files from this template.",
+    "Do not create real extraction scripts until registration, file tiers, variables, survey design, disclosure control and storage gates pass.",
+    "Do not store account identity details, credentials, cookies, tokens or private registration proof in this repository.",
+    "Do not store raw NHATS, raw NSOC, row-level derivatives or small-cell sensitive outputs in this repository.",
+    "Do not upload NHATS, NSOC, registration artifacts, authenticated pages, row-level data or raw files to public AI systems.",
+    "Do not enable calibration, L4 model admission, individual prediction or personal advice from registration-template evidence."
+  ],
+  "gateImpact": {
+    "acquisitionGateId": "registration-status",
+    "acquisitionGateStatus": "partial-template-only",
+    "registrationEvidenceComplete": false,
+    "downloadStillBlocked": true,
+    "extractionStillBlocked": true,
+    "calibrationStillBlocked": true,
+    "individualPredictionStillBlocked": true
+  },
+  "sourceTrace": [
+    "https://www.nhats.org/data-access",
+    "https://www.nhats.org/conditions-of-use",
+    "https://www.nhats.org/data-access/nhats",
+    "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_acquisition_readiness.json",
+    "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_official_source_refresh_register.json"
+  ]
+}

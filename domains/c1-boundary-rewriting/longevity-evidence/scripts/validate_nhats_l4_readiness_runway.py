@@ -53,6 +53,7 @@ REQUIRED_SOURCE_BINDINGS = {
     "modelAdmissionCandidateRegistryPath",
     "calibrationReadinessPath",
     "acquisitionReadinessPath",
+    "registrationEvidenceTemplatePath",
     "controlledStorageDestructionPlanPath",
     "syntheticStorageDestructionDrillPath",
     "fileTierTablePath",

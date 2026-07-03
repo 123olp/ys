@@ -14,6 +14,7 @@
 - `manual/life_path_calibration_readiness.json` 用于维护生命路径模型从 toy model 进入校准模型前必须满足的研究设计、报告、验证和禁止用途字段。
 - `manual/life_path_data_source_candidates.json` 用于维护生命路径模型后续可能使用的官方队列、死亡链接、老龄化面板和外部验证候选源；该文件只登记候选和治理边界，不表示已经下载、访问或校准。
 - `manual/life_path_nhats_acquisition_readiness.json` 用于维护 NHATS 从候选数据源进入真实提取前的机器可读准入门；该文件只记录官方来源刷新、注册、文件层级、Colectica 变量确认、survey design、endpoint、披露控制、AI 边界和存储销毁要求，不表示已经 acquisition-ready。
+- `manual/life_path_nhats_registration_evidence_template.json` 用于维护 NHATS 注册/访问证据模板；该文件只定义 redacted registration status、permitted user boundary、Conditions of Use attestation、file-tier approval、controlled workspace linkage 和 second-review 槽位，不表示注册完成、下载获准、抽取获准、校准获准或个体预测获准。
 - `manual/life_path_nhats_controlled_storage_destruction_plan.json` 用于维护 NHATS 受控存储和销毁计划；该文件只定义非仓库受控工作区、访问日志、清单槽位、销毁触发和禁止位置，不表示已经 provisioned workspace、下载数据、执行抽取或完成销毁演练。
 - `manual/life_path_nhats_synthetic_storage_destruction_drill.json` 用于记录一次仅含合成文件的 create-hash-delete 销毁演练；它只证明 dry-run 机制，不证明 NHATS 注册、正式受控工作区、数据下载、抽取、校准或个体预测。
 - `manual/life_path_nhats_file_tier_table.json` 用于维护 NHATS R13/R14 官方文件层级、访问层级、候选用途、阻塞门和禁止动作；该文件只证明文件层级已登记，不授权下载、抽取、校准或公共 AI 上传。
@@ -61,6 +62,7 @@
 - `manual/life_path_data_source_candidates.json`：候选数据源注册表，记录 HRS、NCHS linked mortality、UK Biobank、All of Us、NHATS、ELSA、SHARE 和 Framingham 等官方入口、覆盖标签、访问治理状态、限制和禁止外推边界。
 - `manual/life_path_nhats_acquisition_readiness.json`：NHATS acquisition readiness 机器契约，记录官方入口、来源事实、提取前阻塞门、禁止动作和下一步证据，当前状态为 `cannot-extract-yet`。
 - `manual/life_path_nhats_official_source_refresh_register.json`：NHATS official source refresh 寄存器，记录 8 个官方公开来源的访问状态、内容长度、SHA-256 和用途边界，当前只把 official-source-refresh 门升为 ready。
+- `manual/life_path_nhats_registration_evidence_template.json`：NHATS registration evidence 模板，记录注册/访问治理前必须补齐的 8 个 evidence slots，当前状态为 `template-only-registration-not-complete`。
 - `manual/life_path_nhats_controlled_storage_destruction_plan.json`：NHATS controlled storage / destruction 计划，记录非仓库受控工作区、访问日志、清单槽位、销毁步骤、禁止位置和 readiness impact；当前状态为 `plan-only-not-executed-no-data-acquired`。
 - `manual/life_path_nhats_synthetic_storage_destruction_drill.json`：NHATS synthetic storage / destruction 演练记录，记录 `/tmp` 合成文件 dry-run 的哈希、销毁状态、最终不存在观察和 prohibited interpretation。
 - `manual/life_path_nhats_file_tier_table.json`：NHATS R13/R14 文件层级表，记录 public-use registration-required 和 sensitive application-required 文件家族、官方路径、候选用途、阻塞项、方法文档依赖和禁止动作。
@@ -83,6 +85,7 @@
 - `manual/life_path_nhats_l4_readiness_runway.json`：NHATS L4 readiness runway，记录从 L2 设计资产到 L4 aggregate-calibrated research model 之前必须通过的 12 个 readiness gates，当前状态为 `runway-only-l4-blocked`。
 - `../../../../web/src/data/life-path-sensitivity-analysis.json`：由 `run_life_path_sensitivity_analysis.py` 生成的合成敏感性分析输出，记录 48 个一因素扰动结果、场景稳定性摘要、最敏感参数和禁止个体用途边界。
 - `../../../../web/src/data/life-path-nhats-official-source-refresh-validation.json`：由 `validate_nhats_official_source_refresh.py` 生成的 official-source-refresh validation 输出，记录 8 个官方公开来源、hash、gate impact 和 no-download/no-extraction/no-calibration/no-individual-prediction 边界。
+- `../../../../web/src/data/life-path-nhats-registration-evidence-template-validation.json`：由 `validate_nhats_registration_evidence_template.py` 生成的 registration evidence template validation 输出，记录模板 hash、上游 source hash、8 个注册/访问证据槽和 no-registration-proof/no-download/no-extraction/no-calibration/no-individual-prediction 边界。
 - `../../../../web/src/data/life-path-nhats-controlled-storage-destruction-validation.json`：由 `validate_nhats_controlled_storage_destruction_plan.py` 生成的 storage/destruction validation 输出，记录计划 hash、acquisition-readiness hash、15 个计划边界检查、partial readiness impact 和 no-download/no-extraction/no-calibration/no-individual-prediction 边界。
 - `../../../../web/src/data/life-path-nhats-synthetic-storage-destruction-drill-validation.json`：由 `validate_nhats_synthetic_storage_destruction_drill.py` 生成的 synthetic drill validation 输出，记录 drill/plan/acquisition-readiness hash、13 个演练边界检查、synthetic-only impact 和 no-download/no-extraction/no-calibration/no-individual-prediction 边界。
 - `../../../../web/src/data/life-path-nhats-disclosure-control-validation.json`：由 `validate_nhats_disclosure_outputs.py` 生成的 disclosure-control validation 输出，记录 6 个合成用例、policy/test-case hash、allow/block 决策和 synthetic-only 边界。

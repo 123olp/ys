@@ -1,10 +1,12 @@
 {
   "schemaVersion": "human-infra.life-path-nhats-acquisition-readiness-validation.v1",
-  "generatedAt": "2026-07-03T05:26:32.378286+00:00",
+  "generatedAt": "2026-07-03T05:49:15.889514+00:00",
   "registerPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_acquisition_readiness.json",
-  "registerSha256": "a20ae2f4cb389526297078815c8be7c778e37b76929405286f89ef28cf8786db",
+  "registerSha256": "15d8f2ce1144fe40d3a7132bb38d49fa496368f2a339dc0f769a87624225dd94",
   "officialSourceRefreshRegisterPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_official_source_refresh_register.json",
   "officialSourceRefreshRegisterSha256": "757d22aa444298d074215955cf04e0ea69b47950824d1bfd55554d466cd89cbf",
+  "registrationEvidenceTemplatePath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_registration_evidence_template.json",
+  "registrationEvidenceTemplateSha256": "403925b01f1fef53518448c27d14504d69532dc06f53ede474fb64f0033fff16",
   "acquisitionReadinessId": "nhats-acquisition-readiness-2026-07-02",
   "overallStatus": "PASS",
   "summary": {
@@ -14,8 +16,8 @@
   "gateSummary": {
     "requiredGateCount": 10,
     "readyGateCount": 1,
-    "partialGateCount": 3,
-    "missingGateCount": 6,
+    "partialGateCount": 4,
+    "missingGateCount": 5,
     "blockingGateCount": 9
   },
   "boundary": {
@@ -40,9 +42,9 @@
       "detail": "register must bind NHATS acquisition readiness and keep cannot-extract-yet status"
     },
     {
-      "id": "storage-destruction-plan-binding",
+      "id": "support-register-bindings",
       "status": "PASS",
-      "detail": "register must point to official source refresh, controlled storage/destruction plan and synthetic drill while keeping extraction blocked"
+      "detail": "register must point to official source refresh, registration evidence template, controlled storage/destruction plan and synthetic drill while keeping extraction blocked"
     },
     {
       "id": "current-decision-boundary",
@@ -62,7 +64,7 @@
     {
       "id": "gate-statuses",
       "status": "PASS",
-      "detail": "ready=1 partial=3 missing=6"
+      "detail": "ready=1 partial=4 missing=5"
     },
     {
       "id": "all-gates-block-extraction",
@@ -72,7 +74,7 @@
     {
       "id": "gate-summary",
       "status": "PASS",
-      "detail": "gate summary must report 10 gates, 1 ready official-source-refresh gate, 3 partial gates, 6 missing gates and 9 extraction-blocking gates"
+      "detail": "gate summary must report 10 gates, 1 ready official-source-refresh gate, 4 partial gates, 5 missing gates and 9 extraction-blocking gates"
     },
     {
       "id": "allowed-ai-input-boundary",

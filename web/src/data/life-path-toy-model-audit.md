@@ -3,7 +3,7 @@
 - Overall status: `PASS`
 - Model path: `web/src/data/life-path-toy-model.json`
 - Model SHA-256: `a4c92209d79d20579bf1f575d5ebf07ffe5be9ccaf6bf3f3eef08efa287b5377`
-- Generated at: `2026-07-03T02:44:04.321315+00:00`
+- Generated at: `2026-07-03T05:48:39.771943+00:00`
 
 ## Checks
 
@@ -88,16 +88,29 @@
 | `nhats-acquisition-readiness-gate-coverage` | `PASS` | missing_gate_ids=[] |
 | `nhats-acquisition-readiness-gate-status` | `PASS` | each gate must have a valid status, required evidence and next evidence |
 | `nhats-acquisition-readiness-blocking-gates` | `PASS` | missing or partial gates must block extraction |
-| `nhats-acquisition-readiness-gate-summary` | `PASS` | gate summary must keep all acquisition gates blocking until ready evidence exists |
+| `nhats-acquisition-readiness-gate-summary` | `PASS` | gate summary must keep only official-source-refresh ready, registration template partial, and 9 gates extraction-blocking |
 | `nhats-acquisition-readiness-prohibited-actions` | `PASS` | readiness contract must prohibit premature download, scripts, raw data, public AI upload, individual death-date prediction and calibration claims |
 | `nhats-acquisition-readiness-next-work` | `PASS` | next work must point to file-tier, Cross-Year Search variable confirmation and disclosure control |
 | `nhats-acquisition-readiness-validation-exists` | `PASS` | web/src/data/life-path-nhats-acquisition-readiness-validation.json |
 | `nhats-acquisition-readiness-validation-schema` | `PASS` | schemaVersion='human-infra.life-path-nhats-acquisition-readiness-validation.v1' |
 | `nhats-acquisition-readiness-validation-source-hash` | `PASS` | validation must point back to the current acquisition-readiness register path and sha256 |
 | `nhats-acquisition-readiness-validation-pass` | `PASS` | overallStatus='PASS' summary={'pass': 13, 'fail': 0} |
-| `nhats-acquisition-readiness-validation-blocking-gates` | `PASS` | validation must keep 10 acquisition-readiness gates blocking and 0 ready |
+| `nhats-acquisition-readiness-validation-blocking-gates` | `PASS` | validation must keep official-source-refresh ready while 9 acquisition-readiness gates remain blocking |
 | `nhats-acquisition-readiness-validation-boundary` | `PASS` | validation must keep acquisition, extraction, raw repository data, calibration and individual prediction blocked |
 | `nhats-acquisition-readiness-validation-non-proof-note` | `PASS` | validation must state that it does not prove registration, storage, downloads, extraction, calibration or prediction |
+| `nhats-registration-evidence-template-exists` | `PASS` | domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_registration_evidence_template.json |
+| `nhats-registration-evidence-template-schema` | `PASS` | schemaVersion='human-infra.life-path-nhats-registration-evidence-template.v1' |
+| `nhats-registration-evidence-template-identity` | `PASS` | template must bind NHATS acquisition readiness while remaining template-only |
+| `nhats-registration-evidence-template-boundary` | `PASS` | template may be ready, but registration, download, extraction, raw data, public AI upload, calibration and individual prediction must remain false |
+| `nhats-registration-evidence-template-slots` | `PASS` | missing=[] |
+| `nhats-registration-evidence-template-gate-impact` | `PASS` | template may only create a partial registration gate and must keep extraction, calibration and individual prediction blocked |
+| `nhats-registration-evidence-template-prohibited-actions` | `PASS` | template must prohibit credentials, raw data, public AI upload, calibration and individual prediction |
+| `nhats-registration-evidence-template-validation-exists` | `PASS` | web/src/data/life-path-nhats-registration-evidence-template-validation.json |
+| `nhats-registration-evidence-template-validation-schema` | `PASS` | schemaVersion='human-infra.life-path-nhats-registration-evidence-template-validation.v1' |
+| `nhats-registration-evidence-template-validation-source-hash` | `PASS` | validation must point back to the current registration evidence template path and sha256 |
+| `nhats-registration-evidence-template-validation-pass` | `PASS` | overallStatus='PASS' summary={'pass': 11, 'fail': 0} |
+| `nhats-registration-evidence-template-validation-boundary` | `PASS` | validation must keep registration, download, extraction, raw data, public AI upload, calibration and individual prediction blocked |
+| `nhats-registration-evidence-template-validation-non-proof-note` | `PASS` | validation must state that it does not prove NHATS registration, data access, workspace execution or model readiness |
 | `nhats-controlled-storage-validation-exists` | `PASS` | web/src/data/life-path-nhats-controlled-storage-destruction-validation.json |
 | `nhats-controlled-storage-validation-schema` | `PASS` | schemaVersion='human-infra.life-path-nhats-controlled-storage-destruction-plan-validation.v1' |
 | `nhats-controlled-storage-validation-source-hash` | `PASS` | validation must point back to current storage/destruction plan and acquisition-readiness hashes |
@@ -350,28 +363,35 @@
 ## NHATS Extraction Manifest
 
 - Manifest path: `domains/c1-boundary-rewriting/longevity-evidence/docs/life-path-extraction-manifest-nhats-draft.md`
-- Manifest SHA-256: `a667200dc19d1c1e22f221bd68ef9560cb8bd33e683e771bdaa8bd525c6388ac`
+- Manifest SHA-256: `330287572ddfedad7a62f9cf4dfc3d81eb13d49fdd9f7895bcadaedcb817ae88`
 - Manifest status: `PASS`
 - Boundary: the manifest is a pre-extraction gate; it blocks scripts, downloads, field inference, calibration, validation, raw-data exposure and unsafe individual outputs until official file-level requirements are complete.
 
 ## NHATS Acquisition Readiness
 
 - Acquisition readiness path: `domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_acquisition_readiness.json`
-- Acquisition readiness SHA-256: `f0ebd157e99df536c7b30bc8106b364b35a2bc74f7808be0c34e41931266e1c4`
+- Acquisition readiness SHA-256: `15d8f2ce1144fe40d3a7132bb38d49fa496368f2a339dc0f769a87624225dd94`
 - Acquisition readiness status: `PASS`
 - Boundary: the structured readiness contract keeps NHATS at cannot-extract-yet until registration, file-tier, Colectica variables, endpoint, survey design, disclosure control, AI boundary and storage/destruction gates are ready.
+
+## NHATS Registration Evidence Template
+
+- Registration evidence template path: `domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_registration_evidence_template.json`
+- Registration evidence template SHA-256: `403925b01f1fef53518448c27d14504d69532dc06f53ede474fb64f0033fff16`
+- Registration evidence template status: `PASS`
+- Boundary: the template defines redacted evidence slots for registration and access governance; it does not prove registration, authorize download, authorize extraction, or open calibration.
 
 ## NHATS Controlled Storage / Destruction
 
 - Storage/destruction validation path: `web/src/data/life-path-nhats-controlled-storage-destruction-validation.json`
-- Storage/destruction validation SHA-256: `81e731b0bc03250e859829b4e85344f33c59b7374cfa5dcbbe388f53351b00ac`
+- Storage/destruction validation SHA-256: `8db00c433a76153eca4d58f13997bf1e36967f4982e31eba59651e036a651b54`
 - Storage/destruction validation status: `PASS`
 - Boundary: the controlled storage/destruction plan is machine-validated but real governed workspace execution, download, extraction, calibration and individual prediction remain blocked.
 
 ## NHATS Synthetic Storage / Destruction Drill
 
 - Synthetic drill validation path: `web/src/data/life-path-nhats-synthetic-storage-destruction-drill-validation.json`
-- Synthetic drill validation SHA-256: `18b4e7994acf18069445e61b630f0e2fe90d09640d55bf50524f220b4c15fc5b`
+- Synthetic drill validation SHA-256: `a5b9c8b8c446b3ac9ae434ccd2adecf8d19d074a9b7b353ccb3a41674c74e366`
 - Synthetic drill validation status: `PASS`
 - Boundary: the synthetic create-hash-delete drill proves only dry-run mechanics; it does not prove NHATS registration, governed workspace provisioning, data access, extraction, calibration or individual prediction.
 
@@ -486,7 +506,7 @@
 - L2 variable-family admission register path: `domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_l2_variable_family_admission_register.json`
 - L2 variable-family admission register SHA-256: `da1d444f452482f37aa7d7d12cd97c9deb0b2d6006540f76c5d2588389dffce3`
 - L2 variable-family admission validation path: `web/src/data/life-path-nhats-l2-variable-family-admission-validation.json`
-- L2 variable-family admission validation SHA-256: `acd8af75f2b389d775186aeeff3771f557104a2b86d7774ce1c27f00569bedd9`
+- L2 variable-family admission validation SHA-256: `2e43b8c7040db5f72d9ee991e27d73f967699c5ddf61850355747a2d325773e2`
 - L2 variable-family admission validation status: `PASS`
 - Boundary: L2 variable-family admission validation proves only that the narrow estimand is mapped to six candidate families; it still blocks exact variables, governed data access, extraction, L4 admission, calibration and individual prediction.
 

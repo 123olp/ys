@@ -72,6 +72,7 @@ longevity-evidence/
 │   │   ├── life_path_data_source_candidates.json
 │   │   ├── life_path_nhats_acquisition_readiness.json
 │   │   ├── life_path_nhats_official_source_refresh_register.json
+│   │   ├── life_path_nhats_registration_evidence_template.json
 │   │   ├── life_path_nhats_controlled_storage_destruction_plan.json
 │   │   ├── life_path_nhats_synthetic_storage_destruction_drill.json
 │   │   ├── life_path_nhats_colectica_access_route_probe_register.json
@@ -126,6 +127,7 @@ longevity-evidence/
     ├── validate_public_mortality_anchor.py
     ├── validate_nhats_acquisition_readiness.py
     ├── validate_nhats_official_source_refresh.py
+    ├── validate_nhats_registration_evidence_template.py
     ├── validate_nhats_controlled_storage_destruction_plan.py
     ├── validate_nhats_synthetic_storage_destruction_drill.py
     ├── validate_nhats_colectica_access_route_probe.py
@@ -172,7 +174,9 @@ longevity-evidence/
 - `data/manual/life_path_data_source_candidates.json`：生命路径模型的候选数据源注册表，记录官方队列入口、可能模型角色、覆盖标签、访问治理状态和禁止外推边界；它只证明后续数据源搜索空间已被登记，不证明数据已访问、模型已校准或因果效应成立。
 - `data/manual/life_path_nhats_acquisition_readiness.json`：NHATS acquisition readiness 机器契约，记录官方来源刷新、注册状态、文件层级、Colectica 变量确认、round window、survey design、endpoint、披露控制、AI 边界、存储销毁和禁止动作；它只证明提取前准入条件被机器化审计，当前仍是 `cannot-extract-yet`。
 - `data/manual/life_path_nhats_official_source_refresh_register.json`：NHATS official source refresh 寄存器，记录官方 Data Access、Cross-Year Search、Conditions of Use、R13/R14 文件页和 Colectica 技术指南的 HTTP 状态、内容长度和 SHA-256；它只把 official-source-refresh 门升为 ready，不授权下载、抽取、校准或个体预测。
-- `scripts/validate_nhats_acquisition_readiness.py`：读取 NHATS acquisition readiness 机器契约，生成 `web/src/data/life-path-nhats-acquisition-readiness-validation.json`，验证 acquisition-readiness gates 中 1 个 official-source-refresh 门 ready、9 个门仍阻塞 extraction，并确认仓库内没有 raw NHATS、凭据或个体死亡日期字段。
+- `data/manual/life_path_nhats_registration_evidence_template.json`：NHATS registration evidence 模板，固定 redacted 账号状态、允许用户边界、使用条款确认、public-use file access tier、restricted approval boundary、controlled workspace linkage、no-public-secret-storage 和二次复核槽；它只把 registration-status 推进为 template-only partial，不证明注册完成。
+- `scripts/validate_nhats_registration_evidence_template.py`：读取 NHATS registration evidence 模板，生成 `web/src/data/life-path-nhats-registration-evidence-template-validation.json`，验证 8 个证据槽和 no-registration-proof / no-download / no-extraction / no-calibration / no-individual-prediction 边界。
+- `scripts/validate_nhats_acquisition_readiness.py`：读取 NHATS acquisition readiness 机器契约，生成 `web/src/data/life-path-nhats-acquisition-readiness-validation.json`，验证 acquisition-readiness gates 中 1 个 official-source-refresh 门 ready、1 个 registration template 门 partial、8 个其他门仍阻塞 extraction，并确认仓库内没有 raw NHATS、凭据或个体死亡日期字段。
 - `data/manual/life_path_nhats_controlled_storage_destruction_plan.json`：NHATS 受控存储/销毁计划，定义非仓库受控工作区、访问日志、清单槽位、销毁触发和禁止位置；它只把 storage-destruction gate 升到 partial，不授权下载、抽取、校准或个体预测。
 - `scripts/validate_nhats_controlled_storage_destruction_plan.py`：读取 NHATS 受控存储/销毁计划，生成 `web/src/data/life-path-nhats-controlled-storage-destruction-validation.json`，验证计划存在但仍未执行，并继续阻塞 download、extraction、raw data 入库、public AI 上传、calibration 和 individual prediction。
 - `data/manual/life_path_nhats_synthetic_storage_destruction_drill.json`：NHATS 合成存储/销毁演练记录，保存 `/tmp` create-hash-delete dry-run 的哈希和删除确认；它只证明 synthetic drill mechanics，不证明注册、正式受控工作区、下载、抽取、校准或个体预测。
@@ -197,7 +201,8 @@ longevity-evidence/
 - `scripts/collect_core_data.py`：采集 HAGR、PubChem、openFDA event 和 Drugs@FDA 数据。
 - `scripts/build_public_mortality_anchor.py`：从 NCHS 官方 xlsx 生命表生成公开聚合死亡率锚点。
 - `scripts/validate_public_mortality_anchor.py`：离线审计公开聚合死亡率锚点的 schema、来源、年龄范围、列值和禁止用途边界。
-- `scripts/validate_nhats_acquisition_readiness.py`：读取 NHATS acquisition readiness 机器契约，生成 `web/src/data/life-path-nhats-acquisition-readiness-validation.json`，把注册、文件层级、Colectica、survey design、endpoint、披露控制、AI 边界和存储销毁缺口纳入默认审计。
+- `scripts/validate_nhats_registration_evidence_template.py`：读取 NHATS registration evidence 模板，生成 `web/src/data/life-path-nhats-registration-evidence-template-validation.json`，把注册/访问证据槽、redacted-only 仓库边界和禁止真实下载/抽取/校准/个体预测边界纳入默认审计。
+- `scripts/validate_nhats_acquisition_readiness.py`：读取 NHATS acquisition readiness 机器契约，生成 `web/src/data/life-path-nhats-acquisition-readiness-validation.json`，把注册模板、文件层级、Colectica、survey design、endpoint、披露控制、AI 边界和存储销毁缺口纳入默认审计。
 - `scripts/validate_nhats_official_source_refresh.py`：读取 NHATS official source refresh 寄存器，生成 `web/src/data/life-path-nhats-official-source-refresh-validation.json`，验证 8 个官方公开来源的状态、hash、支持范围和禁止用途边界。
 - `scripts/run_life_path_toy_model.py`：读取合成场景并导出 `web/src/data/life-path-toy-model.json`，用于 `/model/` 的最小可运行定量展示。
 - `scripts/run_life_path_sensitivity_analysis.py`：读取合成场景和已导出的 toy model，生成 `web/src/data/life-path-sensitivity-analysis.json`，用于一因素扰动检查场景排序、开放边界和最敏感参数。
@@ -210,7 +215,7 @@ longevity-evidence/
 - `scripts/validate_nhats_l2_variable_family_admission.py`：读取 NHATS L2 变量族准入前映射，生成 `web/src/data/life-path-nhats-l2-variable-family-admission-validation.json`，验证窄 estimand、6 个 L2 候选变量族、来源 hash、L4/L5 阻塞门和禁止抽取 / 校准 / 个体预测边界。
 - `scripts/validate_nhats_preoutcome_aggregation_protocol.py`：读取 NHATS 预结果聚合协议，生成 `web/src/data/life-path-nhats-preoutcome-aggregation-validation.json`，验证 8 条 L2-only 聚合规则、7 个合成用例、上游 source hash 和真实聚合 / 加权估计 / L4 准入 / 校准 / 个体预测阻塞边界。
 - `scripts/validate_nhats_l4_readiness_runway.py`：读取 NHATS L4 readiness runway，生成 `web/src/data/life-path-nhats-l4-readiness-runway-validation.json`，验证 12 个 runway gates、上游 source hash、L4 阻塞状态和禁止真实提取 / 校准 / 个体预测边界。
-- `scripts/audit_life_path_toy_model.py`：审计生成后的生命路径 toy model、合成敏感性分析、校准预备契约、候选数据源注册表、数据源 Source Cards、Data Card 模板、NHATS Data Card、NHATS 变量字典、NHATS extraction manifest、NHATS acquisition readiness 机器契约、NHATS acquisition-readiness validation、NHATS controlled storage/destruction validation、NHATS synthetic storage/destruction drill validation、NHATS file-tier table、NHATS first estimand protocol、NHATS variable confirmation matrix、NHATS cohort-flow endpoint protocol、NHATS disclosure-control validation、NHATS survey-design validation、NHATS missingness-route validation、NHATS route-field discovery validation、NHATS Colectica value-label validation、NHATS Colectica value-label execution validation、NHATS Colectica access-route probe validation、NHATS Colectica authenticated capture template validation、NHATS L2 variable-family admission validation 和 NHATS pre-outcome aggregation validation，输出机器可读 JSON 和人可读 Markdown，检查模型卡、来源 hash、生存曲线、概率范围、LEV 开放边界、敏感性参数覆盖、校准预备字段、候选数据源治理边界、数据卡准入文档、提取前治理门禁、准入门机器化状态、acquisition-readiness validator、受控存储/销毁 validator、合成销毁演练 validator、文件层级覆盖、第一版 estimand 研究设计门、变量确认门、队列流转/终点路由/披露控制门、合成 disclosure/survey/missingness validator 结果、官方字段发现边界、Colectica 复核协议门、Colectica 第一轮执行登记边界、Colectica 访问路线边界、Colectica authenticated capture 模板边界、L2 变量族准入前映射边界、预结果聚合规则边界和禁止个体死亡日期字段。
+- `scripts/audit_life_path_toy_model.py`：审计生成后的生命路径 toy model、合成敏感性分析、校准预备契约、候选数据源注册表、数据源 Source Cards、Data Card 模板、NHATS Data Card、NHATS 变量字典、NHATS extraction manifest、NHATS registration evidence 模板与 validation、NHATS acquisition readiness 机器契约、NHATS acquisition-readiness validation、NHATS controlled storage/destruction validation、NHATS synthetic storage/destruction drill validation、NHATS file-tier table、NHATS first estimand protocol、NHATS variable confirmation matrix、NHATS cohort-flow endpoint protocol、NHATS disclosure-control validation、NHATS survey-design validation、NHATS missingness-route validation、NHATS route-field discovery validation、NHATS Colectica value-label validation、NHATS Colectica value-label execution validation、NHATS Colectica access-route probe validation、NHATS Colectica authenticated capture template validation、NHATS L2 variable-family admission validation 和 NHATS pre-outcome aggregation validation，输出机器可读 JSON 和人可读 Markdown，检查模型卡、来源 hash、生存曲线、概率范围、LEV 开放边界、敏感性参数覆盖、校准预备字段、候选数据源治理边界、数据卡准入文档、提取前治理门禁、注册证据模板边界、准入门机器化状态、acquisition-readiness validator、受控存储/销毁 validator、合成销毁演练 validator、文件层级覆盖、第一版 estimand 研究设计门、变量确认门、队列流转/终点路由/披露控制门、合成 disclosure/survey/missingness validator 结果、官方字段发现边界、Colectica 复核协议门、Colectica 第一轮执行登记边界、Colectica 访问路线边界、Colectica authenticated capture 模板边界、L2 变量族准入前映射边界、预结果聚合规则边界和禁止个体死亡日期字段。
 
 ## 依赖关系
 
@@ -230,7 +235,8 @@ longevity-evidence/
 ## 变更日志
 
 - 2026-06-20：从根目录迁入 `domains/c1-boundary-rewriting/longevity-evidence/`，成为 Human Infra 的长寿证据子域；脚本和数据路径保持在子域内部。
-- 2026-07-03：新增 `validate_nhats_acquisition_readiness.py` 与 `life-path-nhats-acquisition-readiness-validation.json`，把 NHATS acquisition readiness 的 1 个 ready 门和 9 个阻塞门接入默认审计。
+- 2026-07-03：更新 `validate_nhats_acquisition_readiness.py` 与 `life-path-nhats-acquisition-readiness-validation.json`，把 NHATS acquisition readiness 的 1 个 ready 门、1 个 registration template partial 门和 8 个其他阻塞门接入默认审计。
+- 2026-07-03：新增 `life_path_nhats_registration_evidence_template.json`、`validate_nhats_registration_evidence_template.py` 和 `life-path-nhats-registration-evidence-template-validation.json`，把 NHATS 注册/访问证据槽纳入默认审计；该门只把 `registration-status` 推进为 template-only partial，仍阻塞真实注册证明、下载、抽取、校准和个体预测。
 - 2026-07-03：新增 `life_path_nhats_controlled_storage_destruction_plan.json`、`validate_nhats_controlled_storage_destruction_plan.py` 和 `life-path-nhats-controlled-storage-destruction-validation.json`，把 NHATS 受控存储/销毁计划接入默认审计；该 gate 仍只允许 partial，继续阻塞真实下载和抽取。
 - 2026-07-03：新增 `life_path_nhats_synthetic_storage_destruction_drill.json`、`validate_nhats_synthetic_storage_destruction_drill.py` 和 `life-path-nhats-synthetic-storage-destruction-drill-validation.json`，把 NHATS 合成存储/销毁演练接入默认审计；它只证明 dry-run 机制，仍不打开真实下载、抽取或校准。
 - 2026-07-03：新增 `life_path_nhats_l4_readiness_runway.json`、`validate_nhats_l4_readiness_runway.py` 和 `life-path-nhats-l4-readiness-runway-validation.json`，把 NHATS L4 readiness runway 接入默认审计；它只证明 12 个阻塞门可审计，不打开真实提取、校准或个体预测。
