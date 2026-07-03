@@ -1,0 +1,2066 @@
+{
+  "schemaVersion": "human-infra.c2ltb6-independent-fresh-review-verdict-register.v1",
+  "registerId": "human-infra-c2-longtail-sixth-batch-independent-fresh-review-verdict-register-2026-07-03",
+  "status": "active-c2ltb6-independent-fresh-review-verdict-register-model-blocked",
+  "purpose": "Record independent fresh-review verdicts for C2-LT-B6 non-issue source extraction rows and manual/fulltext route rows, allowing bounded artifact-prep only for supported rows while preserving route-only, bibliographic, summary, companion-lineage, policy-resource and model-admission blocks.",
+  "sourceOfTruth": {
+    "sourceExtractionRegister": "docs/reference/human-infra-c2-longtail-sixth-batch-source-extraction-register.json",
+    "localReviewRegister": "docs/reference/human-infra-c2-longtail-sixth-batch-local-review-register.json",
+    "sourceResolutionRegister": "docs/reference/human-infra-c2-longtail-sixth-batch-source-resolution-register.json",
+    "manualFulltextExtractionRegister": "docs/reference/human-infra-c2-longtail-sixth-batch-manual-fulltext-extraction-register.json",
+    "evidencePolicy": "docs/reference/evidence-policy.md",
+    "maturityGapRegister": "docs/reference/human-infra-maturity-gap-register.json"
+  },
+  "scope": {
+    "batchId": "C2-LT-B6",
+    "reviewLevel": "c2ltb6-independent-fresh-review-v0.1",
+    "sourceExtractionFreshReviewRowCount": 17,
+    "manualFulltextFreshReviewRowCount": 19,
+    "reviewedFreshReviewRowCount": 36,
+    "eligibleForArtifactPrepRowCount": 24,
+    "blockedOrContextOnlyRowCount": 12,
+    "directReviewedArtifactRowCount": 0,
+    "modelAdmissionOpenedRowCount": 0,
+    "nonClaims": [
+      "This verdict register does not create reviewed artifacts.",
+      "This verdict register does not open model admission.",
+      "This verdict register does not authorize calibrated prediction, individual advice, intervention ranking, clinical validity claims or individual death-date output.",
+      "Fresh-review verdicts only affect bounded artifact-prep eligibility and do not override downstream artifact, model-validation or prohibited-use gates.",
+      "Route-only, bibliographic, summary, companion-lineage and policy-resource rows remain blocked even when source identity is verified."
+    ]
+  },
+  "summary": {
+    "reviewedSourceExtractionRows": 17,
+    "reviewedManualFulltextRows": 19,
+    "eligibleSourceExtractionRows": [
+      "C2LTB6-EXT-001",
+      "C2LTB6-EXT-002",
+      "C2LTB6-EXT-003",
+      "C2LTB6-EXT-004",
+      "C2LTB6-EXT-005",
+      "C2LTB6-EXT-006",
+      "C2LTB6-EXT-009",
+      "C2LTB6-EXT-011",
+      "C2LTB6-EXT-014",
+      "C2LTB6-EXT-016",
+      "C2LTB6-EXT-017",
+      "C2LTB6-EXT-018",
+      "C2LTB6-EXT-019",
+      "C2LTB6-EXT-021",
+      "C2LTB6-EXT-022",
+      "C2LTB6-EXT-023",
+      "C2LTB6-EXT-024"
+    ],
+    "eligibleManualFulltextRows": [
+      "C2LTB6-MFEXT-002",
+      "C2LTB6-MFEXT-004",
+      "C2LTB6-MFEXT-007",
+      "C2LTB6-MFEXT-010",
+      "C2LTB6-MFEXT-012",
+      "C2LTB6-MFEXT-015",
+      "C2LTB6-MFEXT-017"
+    ],
+    "blockedOrContextOnlyManualFulltextRows": [
+      "C2LTB6-MFEXT-001",
+      "C2LTB6-MFEXT-003",
+      "C2LTB6-MFEXT-005",
+      "C2LTB6-MFEXT-006",
+      "C2LTB6-MFEXT-008",
+      "C2LTB6-MFEXT-009",
+      "C2LTB6-MFEXT-011",
+      "C2LTB6-MFEXT-013",
+      "C2LTB6-MFEXT-014",
+      "C2LTB6-MFEXT-016",
+      "C2LTB6-MFEXT-018",
+      "C2LTB6-MFEXT-019"
+    ],
+    "directReviewedArtifactsCreated": 0,
+    "modelAdmissionDecision": "blocked",
+    "newFreshReviewFacts": [
+      "Seventeen non-issue B6 source-extraction rows can enter bounded artifact preparation with source-specific transfer and downgrade boundaries.",
+      "Seven manual/fulltext rows can enter bounded artifact preparation after source-route, currentness and scope review.",
+      "Twelve route-only, bibliographic, summary, companion-lineage or policy-resource manual rows remain blocked/context-only and must not be counted as independent evidence.",
+      "C2-LT-B6 now separates official guideline pages, publisher policy articles, PubMed/PMC/OUP/LWW/AAP routes and CDC policy resources before any reviewed artifact fill.",
+      "All rows keep calibrated prediction, clinical validity claims, intervention ranking, individual advice and individual death-date output blocked."
+    ],
+    "nextWorkOrder": "Prepare bounded reviewed artifacts for the seventeen eligible source-extraction rows and seven eligible manual/fulltext rows; preserve twelve manual route-only, bibliographic, summary, companion-lineage or policy-resource rows as blocked/context-only and keep calibrated model admission blocked."
+  },
+  "blockedUses": [
+    "calibrated-prediction",
+    "individual-advice",
+    "individual-death-date-output",
+    "intervention-ranking",
+    "clinical-validity-claim",
+    "domain-claim-upgrade"
+  ],
+  "sourceExtractionFreshReviews": [
+    {
+      "reviewId": "C2LTB6-FRV-001",
+      "batchId": "C2-LT-B6",
+      "originTaskId": "C2LTB6-EXT-001",
+      "domainId": "maternal-newborn-child-development",
+      "localDomainPath": "domains/c2-source-maintenance/maternal-newborn-child-development",
+      "sourceTitle": "Nurturing care for early childhood development: a framework for helping children survive and thrive to transform health and human potential.",
+      "sourceUrl": "https://nurturing-care.org/resources/nurturing-care-framework/",
+      "freshReviewDate": "2026-07-03",
+      "freshReviewMode": "source-extraction-independent-fresh-review",
+      "sourceIdentityVerdict": "supported-by-official-route-or-open-source-extraction-row",
+      "sourceAccessVerdict": "official-framework-page-pdf-route-available",
+      "sourceContextVerdict": "sufficient-for-bounded-artifact-prep-with-row-specific-boundaries",
+      "currentnessVerdict": "currentness is bounded to the version captured by the source extraction register and external route metadata; no later guideline, policy or clinical update is inferred.",
+      "exactClaimUseVerdict": "bounded-claim-supported-only-at-source-extraction-scope",
+      "endpointVariableVerdict": "endpoint-and-variable-vocabulary-supported-with-transfer-boundary",
+      "transferBoundaryVerdict": "transfer-boundary-present-and-required",
+      "uncertaintyBoundaryVerdict": "uncertainty boundary remains required because these are not calibrated effect estimates, clinical prediction rows or individual guidance rows.",
+      "reviewerVerdict": "support-with-boundary",
+      "freshReviewFinding": "Fresh review supports Nurturing care for early childhood development: a framework for helping children survive and thrive to transform health and human potential. as a bounded source-context anchor for maternal-newborn-child-development; it supports source identity, endpoint/variable vocabulary, transfer boundaries and downgrade checks, not intervention effects, clinical recommendations or calibrated prediction.",
+      "downgradeOrBlockReason": "Downgrade if later review finds source mismatch, outdated guidance, route-only context, recommendation overreach, duplicate evidence counting, missing exact endpoint support or transfer beyond the registered population/setting boundary.",
+      "artifactPromotionDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "allowedArtifactTypes": [
+        "reviewed-source-card",
+        "reviewed-variable-card",
+        "reviewed-endpoint-card",
+        "reviewed-uncertainty-card",
+        "reviewed-transfer-boundary-card",
+        "reviewed-downgrade-check"
+      ],
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://nurturing-care.org/resources/nurturing-care-framework/",
+          "evidenceType": "source-route-or-fulltext-route",
+          "finding": "Route was used to verify source identity and bounded fresh-review eligibility only."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-sixth-batch-source-extraction-register.json",
+          "evidenceType": "local-source-extraction-register",
+          "finding": "Local extraction row provides exact claim, endpoint, uncertainty, transfer and model-position boundaries."
+        }
+      ],
+      "nextAction": "Prepare bounded reviewed source, variable, endpoint, uncertainty, transfer-boundary and downgrade artifacts; keep model admission blocked."
+    },
+    {
+      "reviewId": "C2LTB6-FRV-002",
+      "batchId": "C2-LT-B6",
+      "originTaskId": "C2LTB6-EXT-002",
+      "domainId": "maternal-newborn-child-development",
+      "localDomainPath": "domains/c2-source-maintenance/maternal-newborn-child-development",
+      "sourceTitle": "WHO recommendations on maternal and newborn care for a positive postnatal experience.",
+      "sourceUrl": "https://www.who.int/publications/i/item/9789240045989",
+      "freshReviewDate": "2026-07-03",
+      "freshReviewMode": "source-extraction-independent-fresh-review",
+      "sourceIdentityVerdict": "supported-by-official-route-or-open-source-extraction-row",
+      "sourceAccessVerdict": "who-publication-page-guideline-route-available",
+      "sourceContextVerdict": "sufficient-for-bounded-artifact-prep-with-row-specific-boundaries",
+      "currentnessVerdict": "currentness is bounded to the version captured by the source extraction register and external route metadata; no later guideline, policy or clinical update is inferred.",
+      "exactClaimUseVerdict": "bounded-claim-supported-only-at-source-extraction-scope",
+      "endpointVariableVerdict": "endpoint-and-variable-vocabulary-supported-with-transfer-boundary",
+      "transferBoundaryVerdict": "transfer-boundary-present-and-required",
+      "uncertaintyBoundaryVerdict": "uncertainty boundary remains required because these are not calibrated effect estimates, clinical prediction rows or individual guidance rows.",
+      "reviewerVerdict": "support-with-boundary",
+      "freshReviewFinding": "Fresh review supports WHO recommendations on maternal and newborn care for a positive postnatal experience. as a bounded source-context anchor for maternal-newborn-child-development; it supports source identity, endpoint/variable vocabulary, transfer boundaries and downgrade checks, not intervention effects, clinical recommendations or calibrated prediction.",
+      "downgradeOrBlockReason": "Downgrade if later review finds source mismatch, outdated guidance, route-only context, recommendation overreach, duplicate evidence counting, missing exact endpoint support or transfer beyond the registered population/setting boundary.",
+      "artifactPromotionDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "allowedArtifactTypes": [
+        "reviewed-source-card",
+        "reviewed-variable-card",
+        "reviewed-endpoint-card",
+        "reviewed-uncertainty-card",
+        "reviewed-transfer-boundary-card",
+        "reviewed-downgrade-check"
+      ],
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://www.who.int/publications/i/item/9789240045989",
+          "evidenceType": "source-route-or-fulltext-route",
+          "finding": "Route was used to verify source identity and bounded fresh-review eligibility only."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-sixth-batch-source-extraction-register.json",
+          "evidenceType": "local-source-extraction-register",
+          "finding": "Local extraction row provides exact claim, endpoint, uncertainty, transfer and model-position boundaries."
+        }
+      ],
+      "nextAction": "Prepare bounded reviewed source, variable, endpoint, uncertainty, transfer-boundary and downgrade artifacts; keep model admission blocked."
+    },
+    {
+      "reviewId": "C2LTB6-FRV-003",
+      "batchId": "C2-LT-B6",
+      "originTaskId": "C2LTB6-EXT-003",
+      "domainId": "reproductive-fertility-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/reproductive-fertility-continuity",
+      "sourceTitle": "Infertility.",
+      "sourceUrl": "https://www.who.int/news-room/fact-sheets/detail/infertility",
+      "freshReviewDate": "2026-07-03",
+      "freshReviewMode": "source-extraction-independent-fresh-review",
+      "sourceIdentityVerdict": "supported-by-official-route-or-open-source-extraction-row",
+      "sourceAccessVerdict": "who-fact-sheet-page-accessible",
+      "sourceContextVerdict": "sufficient-for-bounded-artifact-prep-with-row-specific-boundaries",
+      "currentnessVerdict": "currentness is bounded to the version captured by the source extraction register and external route metadata; no later guideline, policy or clinical update is inferred.",
+      "exactClaimUseVerdict": "bounded-claim-supported-only-at-source-extraction-scope",
+      "endpointVariableVerdict": "endpoint-and-variable-vocabulary-supported-with-transfer-boundary",
+      "transferBoundaryVerdict": "transfer-boundary-present-and-required",
+      "uncertaintyBoundaryVerdict": "uncertainty boundary remains required because these are not calibrated effect estimates, clinical prediction rows or individual guidance rows.",
+      "reviewerVerdict": "support-with-boundary",
+      "freshReviewFinding": "Fresh review supports Infertility. as a bounded source-context anchor for reproductive-fertility-continuity; it supports source identity, endpoint/variable vocabulary, transfer boundaries and downgrade checks, not intervention effects, clinical recommendations or calibrated prediction.",
+      "downgradeOrBlockReason": "Downgrade if later review finds source mismatch, outdated guidance, route-only context, recommendation overreach, duplicate evidence counting, missing exact endpoint support or transfer beyond the registered population/setting boundary.",
+      "artifactPromotionDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "allowedArtifactTypes": [
+        "reviewed-source-card",
+        "reviewed-variable-card",
+        "reviewed-endpoint-card",
+        "reviewed-uncertainty-card",
+        "reviewed-transfer-boundary-card",
+        "reviewed-downgrade-check"
+      ],
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://www.who.int/news-room/fact-sheets/detail/infertility",
+          "evidenceType": "source-route-or-fulltext-route",
+          "finding": "Route was used to verify source identity and bounded fresh-review eligibility only."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-sixth-batch-source-extraction-register.json",
+          "evidenceType": "local-source-extraction-register",
+          "finding": "Local extraction row provides exact claim, endpoint, uncertainty, transfer and model-position boundaries."
+        }
+      ],
+      "nextAction": "Prepare bounded reviewed source, variable, endpoint, uncertainty, transfer-boundary and downgrade artifacts; keep model admission blocked."
+    },
+    {
+      "reviewId": "C2LTB6-FRV-004",
+      "batchId": "C2-LT-B6",
+      "originTaskId": "C2LTB6-EXT-004",
+      "domainId": "reproductive-fertility-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/reproductive-fertility-continuity",
+      "sourceTitle": "Fertility evaluation of infertile women: a committee opinion (2021).",
+      "sourceUrl": "https://www.asrm.org/practice-guidance/practice-committee-documents/fertility-evaluation-of-infertile-women-a-committee-opinion-2021/",
+      "freshReviewDate": "2026-07-03",
+      "freshReviewMode": "source-extraction-independent-fresh-review",
+      "sourceIdentityVerdict": "supported-by-official-route-or-open-source-extraction-row",
+      "sourceAccessVerdict": "asrm-committee-opinion-page-accessible",
+      "sourceContextVerdict": "sufficient-for-bounded-artifact-prep-with-row-specific-boundaries",
+      "currentnessVerdict": "currentness is bounded to the version captured by the source extraction register and external route metadata; no later guideline, policy or clinical update is inferred.",
+      "exactClaimUseVerdict": "bounded-claim-supported-only-at-source-extraction-scope",
+      "endpointVariableVerdict": "endpoint-and-variable-vocabulary-supported-with-transfer-boundary",
+      "transferBoundaryVerdict": "transfer-boundary-present-and-required",
+      "uncertaintyBoundaryVerdict": "uncertainty boundary remains required because these are not calibrated effect estimates, clinical prediction rows or individual guidance rows.",
+      "reviewerVerdict": "support-with-boundary",
+      "freshReviewFinding": "Fresh review supports Fertility evaluation of infertile women: a committee opinion (2021). as a bounded source-context anchor for reproductive-fertility-continuity; it supports source identity, endpoint/variable vocabulary, transfer boundaries and downgrade checks, not intervention effects, clinical recommendations or calibrated prediction.",
+      "downgradeOrBlockReason": "Downgrade if later review finds source mismatch, outdated guidance, route-only context, recommendation overreach, duplicate evidence counting, missing exact endpoint support or transfer beyond the registered population/setting boundary.",
+      "artifactPromotionDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "allowedArtifactTypes": [
+        "reviewed-source-card",
+        "reviewed-variable-card",
+        "reviewed-endpoint-card",
+        "reviewed-uncertainty-card",
+        "reviewed-transfer-boundary-card",
+        "reviewed-downgrade-check"
+      ],
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://www.asrm.org/practice-guidance/practice-committee-documents/fertility-evaluation-of-infertile-women-a-committee-opinion-2021/",
+          "evidenceType": "source-route-or-fulltext-route",
+          "finding": "Route was used to verify source identity and bounded fresh-review eligibility only."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-sixth-batch-source-extraction-register.json",
+          "evidenceType": "local-source-extraction-register",
+          "finding": "Local extraction row provides exact claim, endpoint, uncertainty, transfer and model-position boundaries."
+        }
+      ],
+      "nextAction": "Prepare bounded reviewed source, variable, endpoint, uncertainty, transfer-boundary and downgrade artifacts; keep model admission blocked."
+    },
+    {
+      "reviewId": "C2LTB6-FRV-005",
+      "batchId": "C2-LT-B6",
+      "originTaskId": "C2LTB6-EXT-005",
+      "domainId": "assisted-reproductive-technology-ivf-cycle-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/assisted-reproductive-technology-ivf-cycle-continuity",
+      "sourceTitle": "ART Success Rates.",
+      "sourceUrl": "https://www.cdc.gov/art/artdata/index.html",
+      "freshReviewDate": "2026-07-03",
+      "freshReviewMode": "source-extraction-independent-fresh-review",
+      "sourceIdentityVerdict": "supported-by-official-route-or-open-source-extraction-row",
+      "sourceAccessVerdict": "cdc-art-data-portal-accessible",
+      "sourceContextVerdict": "sufficient-for-bounded-artifact-prep-with-row-specific-boundaries",
+      "currentnessVerdict": "currentness is bounded to the version captured by the source extraction register and external route metadata; no later guideline, policy or clinical update is inferred.",
+      "exactClaimUseVerdict": "bounded-claim-supported-only-at-source-extraction-scope",
+      "endpointVariableVerdict": "endpoint-and-variable-vocabulary-supported-with-transfer-boundary",
+      "transferBoundaryVerdict": "transfer-boundary-present-and-required",
+      "uncertaintyBoundaryVerdict": "uncertainty boundary remains required because these are not calibrated effect estimates, clinical prediction rows or individual guidance rows.",
+      "reviewerVerdict": "support-with-boundary",
+      "freshReviewFinding": "Fresh review supports ART Success Rates. as a bounded source-context anchor for assisted-reproductive-technology-ivf-cycle-continuity; it supports source identity, endpoint/variable vocabulary, transfer boundaries and downgrade checks, not intervention effects, clinical recommendations or calibrated prediction.",
+      "downgradeOrBlockReason": "Downgrade if later review finds source mismatch, outdated guidance, route-only context, recommendation overreach, duplicate evidence counting, missing exact endpoint support or transfer beyond the registered population/setting boundary.",
+      "artifactPromotionDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "allowedArtifactTypes": [
+        "reviewed-source-card",
+        "reviewed-variable-card",
+        "reviewed-endpoint-card",
+        "reviewed-uncertainty-card",
+        "reviewed-transfer-boundary-card",
+        "reviewed-downgrade-check"
+      ],
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://www.cdc.gov/art/artdata/index.html",
+          "evidenceType": "source-route-or-fulltext-route",
+          "finding": "Route was used to verify source identity and bounded fresh-review eligibility only."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-sixth-batch-source-extraction-register.json",
+          "evidenceType": "local-source-extraction-register",
+          "finding": "Local extraction row provides exact claim, endpoint, uncertainty, transfer and model-position boundaries."
+        }
+      ],
+      "nextAction": "Prepare bounded reviewed source, variable, endpoint, uncertainty, transfer-boundary and downgrade artifacts; keep model admission blocked."
+    },
+    {
+      "reviewId": "C2LTB6-FRV-006",
+      "batchId": "C2-LT-B6",
+      "originTaskId": "C2LTB6-EXT-006",
+      "domainId": "assisted-reproductive-technology-ivf-cycle-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/assisted-reproductive-technology-ivf-cycle-continuity",
+      "sourceTitle": "Guidance on the limits to the number of embryos to transfer: a committee opinion (2021).",
+      "sourceUrl": "https://www.asrm.org/practice-guidance/practice-committee-documents/guidance-on-the-limits-to-the-number-of-embryos-to-transfer-a-committee-opinion-2021/",
+      "freshReviewDate": "2026-07-03",
+      "freshReviewMode": "source-extraction-independent-fresh-review",
+      "sourceIdentityVerdict": "supported-by-official-route-or-open-source-extraction-row",
+      "sourceAccessVerdict": "asrm-committee-opinion-page-accessible",
+      "sourceContextVerdict": "sufficient-for-bounded-artifact-prep-with-row-specific-boundaries",
+      "currentnessVerdict": "currentness is bounded to the version captured by the source extraction register and external route metadata; no later guideline, policy or clinical update is inferred.",
+      "exactClaimUseVerdict": "bounded-claim-supported-only-at-source-extraction-scope",
+      "endpointVariableVerdict": "endpoint-and-variable-vocabulary-supported-with-transfer-boundary",
+      "transferBoundaryVerdict": "transfer-boundary-present-and-required",
+      "uncertaintyBoundaryVerdict": "uncertainty boundary remains required because these are not calibrated effect estimates, clinical prediction rows or individual guidance rows.",
+      "reviewerVerdict": "support-with-boundary",
+      "freshReviewFinding": "Fresh review supports Guidance on the limits to the number of embryos to transfer: a committee opinion (2021). as a bounded source-context anchor for assisted-reproductive-technology-ivf-cycle-continuity; it supports source identity, endpoint/variable vocabulary, transfer boundaries and downgrade checks, not intervention effects, clinical recommendations or calibrated prediction.",
+      "downgradeOrBlockReason": "Downgrade if later review finds source mismatch, outdated guidance, route-only context, recommendation overreach, duplicate evidence counting, missing exact endpoint support or transfer beyond the registered population/setting boundary.",
+      "artifactPromotionDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "allowedArtifactTypes": [
+        "reviewed-source-card",
+        "reviewed-variable-card",
+        "reviewed-endpoint-card",
+        "reviewed-uncertainty-card",
+        "reviewed-transfer-boundary-card",
+        "reviewed-downgrade-check"
+      ],
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://www.asrm.org/practice-guidance/practice-committee-documents/guidance-on-the-limits-to-the-number-of-embryos-to-transfer-a-committee-opinion-2021/",
+          "evidenceType": "source-route-or-fulltext-route",
+          "finding": "Route was used to verify source identity and bounded fresh-review eligibility only."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-sixth-batch-source-extraction-register.json",
+          "evidenceType": "local-source-extraction-register",
+          "finding": "Local extraction row provides exact claim, endpoint, uncertainty, transfer and model-position boundaries."
+        }
+      ],
+      "nextAction": "Prepare bounded reviewed source, variable, endpoint, uncertainty, transfer-boundary and downgrade artifacts; keep model admission blocked."
+    },
+    {
+      "reviewId": "C2LTB6-FRV-007",
+      "batchId": "C2-LT-B6",
+      "originTaskId": "C2LTB6-EXT-009",
+      "domainId": "polycystic-ovary-syndrome-metabolic-reproductive-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/polycystic-ovary-syndrome-metabolic-reproductive-continuity",
+      "sourceTitle": "Recommendations from the 2023 International Evidence-based Guideline for the Assessment and Management of Polycystic Ovary Syndrome.",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10505534/",
+      "freshReviewDate": "2026-07-03",
+      "freshReviewMode": "source-extraction-independent-fresh-review",
+      "sourceIdentityVerdict": "supported-by-official-route-or-open-source-extraction-row",
+      "sourceAccessVerdict": "pmc-open-fulltext-article-accessible",
+      "sourceContextVerdict": "sufficient-for-bounded-artifact-prep-with-row-specific-boundaries",
+      "currentnessVerdict": "currentness is bounded to the version captured by the source extraction register and external route metadata; no later guideline, policy or clinical update is inferred.",
+      "exactClaimUseVerdict": "bounded-claim-supported-only-at-source-extraction-scope",
+      "endpointVariableVerdict": "endpoint-and-variable-vocabulary-supported-with-transfer-boundary",
+      "transferBoundaryVerdict": "transfer-boundary-present-and-required",
+      "uncertaintyBoundaryVerdict": "uncertainty boundary remains required because these are not calibrated effect estimates, clinical prediction rows or individual guidance rows.",
+      "reviewerVerdict": "support-with-boundary",
+      "freshReviewFinding": "Fresh review supports Recommendations from the 2023 International Evidence-based Guideline for the Assessment and Management of Polycystic Ovary Syndrome. as a bounded source-context anchor for polycystic-ovary-syndrome-metabolic-reproductive-continuity; it supports source identity, endpoint/variable vocabulary, transfer boundaries and downgrade checks, not intervention effects, clinical recommendations or calibrated prediction.",
+      "downgradeOrBlockReason": "Downgrade if later review finds source mismatch, outdated guidance, route-only context, recommendation overreach, duplicate evidence counting, missing exact endpoint support or transfer beyond the registered population/setting boundary.",
+      "artifactPromotionDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "allowedArtifactTypes": [
+        "reviewed-source-card",
+        "reviewed-variable-card",
+        "reviewed-endpoint-card",
+        "reviewed-uncertainty-card",
+        "reviewed-transfer-boundary-card",
+        "reviewed-downgrade-check"
+      ],
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10505534/",
+          "evidenceType": "source-route-or-fulltext-route",
+          "finding": "Route was used to verify source identity and bounded fresh-review eligibility only."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-sixth-batch-source-extraction-register.json",
+          "evidenceType": "local-source-extraction-register",
+          "finding": "Local extraction row provides exact claim, endpoint, uncertainty, transfer and model-position boundaries."
+        }
+      ],
+      "nextAction": "Prepare bounded reviewed source, variable, endpoint, uncertainty, transfer-boundary and downgrade artifacts; keep model admission blocked."
+    },
+    {
+      "reviewId": "C2LTB6-FRV-008",
+      "batchId": "C2-LT-B6",
+      "originTaskId": "C2LTB6-EXT-011",
+      "domainId": "endometriosis-pelvic-pain-fertility-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/endometriosis-pelvic-pain-fertility-continuity",
+      "sourceTitle": "ESHRE guideline: endometriosis.",
+      "sourceUrl": "https://academic.oup.com/hropen/article/2022/2/hoac009/6537540",
+      "freshReviewDate": "2026-07-03",
+      "freshReviewMode": "source-extraction-independent-fresh-review",
+      "sourceIdentityVerdict": "supported-by-official-route-or-open-source-extraction-row",
+      "sourceAccessVerdict": "open-access-guideline-article-accessible",
+      "sourceContextVerdict": "sufficient-for-bounded-artifact-prep-with-row-specific-boundaries",
+      "currentnessVerdict": "currentness is bounded to the version captured by the source extraction register and external route metadata; no later guideline, policy or clinical update is inferred.",
+      "exactClaimUseVerdict": "bounded-claim-supported-only-at-source-extraction-scope",
+      "endpointVariableVerdict": "endpoint-and-variable-vocabulary-supported-with-transfer-boundary",
+      "transferBoundaryVerdict": "transfer-boundary-present-and-required",
+      "uncertaintyBoundaryVerdict": "uncertainty boundary remains required because these are not calibrated effect estimates, clinical prediction rows or individual guidance rows.",
+      "reviewerVerdict": "support-with-boundary",
+      "freshReviewFinding": "Fresh review supports ESHRE guideline: endometriosis. as a bounded source-context anchor for endometriosis-pelvic-pain-fertility-continuity; it supports source identity, endpoint/variable vocabulary, transfer boundaries and downgrade checks, not intervention effects, clinical recommendations or calibrated prediction.",
+      "downgradeOrBlockReason": "Downgrade if later review finds source mismatch, outdated guidance, route-only context, recommendation overreach, duplicate evidence counting, missing exact endpoint support or transfer beyond the registered population/setting boundary.",
+      "artifactPromotionDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "allowedArtifactTypes": [
+        "reviewed-source-card",
+        "reviewed-variable-card",
+        "reviewed-endpoint-card",
+        "reviewed-uncertainty-card",
+        "reviewed-transfer-boundary-card",
+        "reviewed-downgrade-check"
+      ],
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://academic.oup.com/hropen/article/2022/2/hoac009/6537540",
+          "evidenceType": "source-route-or-fulltext-route",
+          "finding": "Route was used to verify source identity and bounded fresh-review eligibility only."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-sixth-batch-source-extraction-register.json",
+          "evidenceType": "local-source-extraction-register",
+          "finding": "Local extraction row provides exact claim, endpoint, uncertainty, transfer and model-position boundaries."
+        }
+      ],
+      "nextAction": "Prepare bounded reviewed source, variable, endpoint, uncertainty, transfer-boundary and downgrade artifacts; keep model admission blocked."
+    },
+    {
+      "reviewId": "C2LTB6-FRV-009",
+      "batchId": "C2-LT-B6",
+      "originTaskId": "C2LTB6-EXT-014",
+      "domainId": "pregnancy-loss-stillbirth-bereavement-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/pregnancy-loss-stillbirth-bereavement-continuity",
+      "sourceTitle": "Stillbirth.",
+      "sourceUrl": "https://www.who.int/news-room/fact-sheets/detail/stillbirth",
+      "freshReviewDate": "2026-07-03",
+      "freshReviewMode": "source-extraction-independent-fresh-review",
+      "sourceIdentityVerdict": "supported-by-official-route-or-open-source-extraction-row",
+      "sourceAccessVerdict": "who-fact-sheet-page-accessible",
+      "sourceContextVerdict": "sufficient-for-bounded-artifact-prep-with-row-specific-boundaries",
+      "currentnessVerdict": "currentness is bounded to the version captured by the source extraction register and external route metadata; no later guideline, policy or clinical update is inferred.",
+      "exactClaimUseVerdict": "bounded-claim-supported-only-at-source-extraction-scope",
+      "endpointVariableVerdict": "endpoint-and-variable-vocabulary-supported-with-transfer-boundary",
+      "transferBoundaryVerdict": "transfer-boundary-present-and-required",
+      "uncertaintyBoundaryVerdict": "uncertainty boundary remains required because these are not calibrated effect estimates, clinical prediction rows or individual guidance rows.",
+      "reviewerVerdict": "support-with-boundary",
+      "freshReviewFinding": "Fresh review supports Stillbirth. as a bounded source-context anchor for pregnancy-loss-stillbirth-bereavement-continuity; it supports source identity, endpoint/variable vocabulary, transfer boundaries and downgrade checks, not intervention effects, clinical recommendations or calibrated prediction.",
+      "downgradeOrBlockReason": "Downgrade if later review finds source mismatch, outdated guidance, route-only context, recommendation overreach, duplicate evidence counting, missing exact endpoint support or transfer beyond the registered population/setting boundary.",
+      "artifactPromotionDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "allowedArtifactTypes": [
+        "reviewed-source-card",
+        "reviewed-variable-card",
+        "reviewed-endpoint-card",
+        "reviewed-uncertainty-card",
+        "reviewed-transfer-boundary-card",
+        "reviewed-downgrade-check"
+      ],
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://www.who.int/news-room/fact-sheets/detail/stillbirth",
+          "evidenceType": "source-route-or-fulltext-route",
+          "finding": "Route was used to verify source identity and bounded fresh-review eligibility only."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-sixth-batch-source-extraction-register.json",
+          "evidenceType": "local-source-extraction-register",
+          "finding": "Local extraction row provides exact claim, endpoint, uncertainty, transfer and model-position boundaries."
+        }
+      ],
+      "nextAction": "Prepare bounded reviewed source, variable, endpoint, uncertainty, transfer-boundary and downgrade artifacts; keep model admission blocked."
+    },
+    {
+      "reviewId": "C2LTB6-FRV-010",
+      "batchId": "C2-LT-B6",
+      "originTaskId": "C2LTB6-EXT-016",
+      "domainId": "lactation-breastfeeding-support-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/lactation-breastfeeding-support-continuity",
+      "sourceTitle": "Breastfeeding.",
+      "sourceUrl": "https://www.who.int/health-topics/breastfeeding",
+      "freshReviewDate": "2026-07-03",
+      "freshReviewMode": "source-extraction-independent-fresh-review",
+      "sourceIdentityVerdict": "supported-by-official-route-or-open-source-extraction-row",
+      "sourceAccessVerdict": "who-health-topic-page-accessible",
+      "sourceContextVerdict": "sufficient-for-bounded-artifact-prep-with-row-specific-boundaries",
+      "currentnessVerdict": "currentness is bounded to the version captured by the source extraction register and external route metadata; no later guideline, policy or clinical update is inferred.",
+      "exactClaimUseVerdict": "bounded-claim-supported-only-at-source-extraction-scope",
+      "endpointVariableVerdict": "endpoint-and-variable-vocabulary-supported-with-transfer-boundary",
+      "transferBoundaryVerdict": "transfer-boundary-present-and-required",
+      "uncertaintyBoundaryVerdict": "uncertainty boundary remains required because these are not calibrated effect estimates, clinical prediction rows or individual guidance rows.",
+      "reviewerVerdict": "support-with-boundary",
+      "freshReviewFinding": "Fresh review supports Breastfeeding. as a bounded source-context anchor for lactation-breastfeeding-support-continuity; it supports source identity, endpoint/variable vocabulary, transfer boundaries and downgrade checks, not intervention effects, clinical recommendations or calibrated prediction.",
+      "downgradeOrBlockReason": "Downgrade if later review finds source mismatch, outdated guidance, route-only context, recommendation overreach, duplicate evidence counting, missing exact endpoint support or transfer beyond the registered population/setting boundary.",
+      "artifactPromotionDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "allowedArtifactTypes": [
+        "reviewed-source-card",
+        "reviewed-variable-card",
+        "reviewed-endpoint-card",
+        "reviewed-uncertainty-card",
+        "reviewed-transfer-boundary-card",
+        "reviewed-downgrade-check"
+      ],
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://www.who.int/health-topics/breastfeeding",
+          "evidenceType": "source-route-or-fulltext-route",
+          "finding": "Route was used to verify source identity and bounded fresh-review eligibility only."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-sixth-batch-source-extraction-register.json",
+          "evidenceType": "local-source-extraction-register",
+          "finding": "Local extraction row provides exact claim, endpoint, uncertainty, transfer and model-position boundaries."
+        }
+      ],
+      "nextAction": "Prepare bounded reviewed source, variable, endpoint, uncertainty, transfer-boundary and downgrade artifacts; keep model admission blocked."
+    },
+    {
+      "reviewId": "C2LTB6-FRV-011",
+      "batchId": "C2-LT-B6",
+      "originTaskId": "C2LTB6-EXT-017",
+      "domainId": "childhood-immunization-schedule-record-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/childhood-immunization-schedule-record-continuity",
+      "sourceTitle": "Child and Adolescent Immunization Schedule by Age.",
+      "sourceUrl": "https://www.cdc.gov/vaccines/hcp/imz-schedules/child-adolescent-age.html",
+      "freshReviewDate": "2026-07-03",
+      "freshReviewMode": "source-extraction-independent-fresh-review",
+      "sourceIdentityVerdict": "supported-by-official-route-or-open-source-extraction-row",
+      "sourceAccessVerdict": "cdc-current-immunization-schedule-page-accessible",
+      "sourceContextVerdict": "sufficient-for-bounded-artifact-prep-with-row-specific-boundaries",
+      "currentnessVerdict": "currentness is bounded to the version captured by the source extraction register and external route metadata; no later guideline, policy or clinical update is inferred.",
+      "exactClaimUseVerdict": "bounded-claim-supported-only-at-source-extraction-scope",
+      "endpointVariableVerdict": "endpoint-and-variable-vocabulary-supported-with-transfer-boundary",
+      "transferBoundaryVerdict": "transfer-boundary-present-and-required",
+      "uncertaintyBoundaryVerdict": "uncertainty boundary remains required because these are not calibrated effect estimates, clinical prediction rows or individual guidance rows.",
+      "reviewerVerdict": "support-with-boundary",
+      "freshReviewFinding": "Fresh review supports Child and Adolescent Immunization Schedule by Age. as a bounded source-context anchor for childhood-immunization-schedule-record-continuity; it supports source identity, endpoint/variable vocabulary, transfer boundaries and downgrade checks, not intervention effects, clinical recommendations or calibrated prediction.",
+      "downgradeOrBlockReason": "Downgrade if later review finds source mismatch, outdated guidance, route-only context, recommendation overreach, duplicate evidence counting, missing exact endpoint support or transfer beyond the registered population/setting boundary.",
+      "artifactPromotionDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "allowedArtifactTypes": [
+        "reviewed-source-card",
+        "reviewed-variable-card",
+        "reviewed-endpoint-card",
+        "reviewed-uncertainty-card",
+        "reviewed-transfer-boundary-card",
+        "reviewed-downgrade-check"
+      ],
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://www.cdc.gov/vaccines/hcp/imz-schedules/child-adolescent-age.html",
+          "evidenceType": "source-route-or-fulltext-route",
+          "finding": "Route was used to verify source identity and bounded fresh-review eligibility only."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-sixth-batch-source-extraction-register.json",
+          "evidenceType": "local-source-extraction-register",
+          "finding": "Local extraction row provides exact claim, endpoint, uncertainty, transfer and model-position boundaries."
+        }
+      ],
+      "nextAction": "Prepare bounded reviewed source, variable, endpoint, uncertainty, transfer-boundary and downgrade artifacts; keep model admission blocked."
+    },
+    {
+      "reviewId": "C2LTB6-FRV-012",
+      "batchId": "C2-LT-B6",
+      "originTaskId": "C2LTB6-EXT-018",
+      "domainId": "childhood-immunization-schedule-record-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/childhood-immunization-schedule-record-continuity",
+      "sourceTitle": "ACIP General Best Practice Guidelines for Immunization.",
+      "sourceUrl": "https://www.cdc.gov/vaccines/hcp/acip-recs/general-recs/index.html",
+      "freshReviewDate": "2026-07-03",
+      "freshReviewMode": "source-extraction-independent-fresh-review",
+      "sourceIdentityVerdict": "supported-by-official-route-or-open-source-extraction-row",
+      "sourceAccessVerdict": "cdc-acip-best-practice-guidelines-page-accessible",
+      "sourceContextVerdict": "sufficient-for-bounded-artifact-prep-with-row-specific-boundaries",
+      "currentnessVerdict": "currentness is bounded to the version captured by the source extraction register and external route metadata; no later guideline, policy or clinical update is inferred.",
+      "exactClaimUseVerdict": "bounded-claim-supported-only-at-source-extraction-scope",
+      "endpointVariableVerdict": "endpoint-and-variable-vocabulary-supported-with-transfer-boundary",
+      "transferBoundaryVerdict": "transfer-boundary-present-and-required",
+      "uncertaintyBoundaryVerdict": "uncertainty boundary remains required because these are not calibrated effect estimates, clinical prediction rows or individual guidance rows.",
+      "reviewerVerdict": "support-with-boundary",
+      "freshReviewFinding": "Fresh review supports ACIP General Best Practice Guidelines for Immunization. as a bounded source-context anchor for childhood-immunization-schedule-record-continuity; it supports source identity, endpoint/variable vocabulary, transfer boundaries and downgrade checks, not intervention effects, clinical recommendations or calibrated prediction.",
+      "downgradeOrBlockReason": "Downgrade if later review finds source mismatch, outdated guidance, route-only context, recommendation overreach, duplicate evidence counting, missing exact endpoint support or transfer beyond the registered population/setting boundary.",
+      "artifactPromotionDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "allowedArtifactTypes": [
+        "reviewed-source-card",
+        "reviewed-variable-card",
+        "reviewed-endpoint-card",
+        "reviewed-uncertainty-card",
+        "reviewed-transfer-boundary-card",
+        "reviewed-downgrade-check"
+      ],
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://www.cdc.gov/vaccines/hcp/acip-recs/general-recs/index.html",
+          "evidenceType": "source-route-or-fulltext-route",
+          "finding": "Route was used to verify source identity and bounded fresh-review eligibility only."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-sixth-batch-source-extraction-register.json",
+          "evidenceType": "local-source-extraction-register",
+          "finding": "Local extraction row provides exact claim, endpoint, uncertainty, transfer and model-position boundaries."
+        }
+      ],
+      "nextAction": "Prepare bounded reviewed source, variable, endpoint, uncertainty, transfer-boundary and downgrade artifacts; keep model admission blocked."
+    },
+    {
+      "reviewId": "C2LTB6-FRV-013",
+      "batchId": "C2-LT-B6",
+      "originTaskId": "C2LTB6-EXT-019",
+      "domainId": "pediatric-lead-screening-environmental-followup-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/pediatric-lead-screening-environmental-followup-continuity",
+      "sourceTitle": "Recommended Actions Based on Blood Lead Level.",
+      "sourceUrl": "https://www.cdc.gov/lead-prevention/hcp/clinical-guidance/index.html",
+      "freshReviewDate": "2026-07-03",
+      "freshReviewMode": "source-extraction-independent-fresh-review",
+      "sourceIdentityVerdict": "supported-by-official-route-or-open-source-extraction-row",
+      "sourceAccessVerdict": "cdc-lead-clinical-guidance-page-accessible",
+      "sourceContextVerdict": "sufficient-for-bounded-artifact-prep-with-row-specific-boundaries",
+      "currentnessVerdict": "currentness is bounded to the version captured by the source extraction register and external route metadata; no later guideline, policy or clinical update is inferred.",
+      "exactClaimUseVerdict": "bounded-claim-supported-only-at-source-extraction-scope",
+      "endpointVariableVerdict": "endpoint-and-variable-vocabulary-supported-with-transfer-boundary",
+      "transferBoundaryVerdict": "transfer-boundary-present-and-required",
+      "uncertaintyBoundaryVerdict": "uncertainty boundary remains required because these are not calibrated effect estimates, clinical prediction rows or individual guidance rows.",
+      "reviewerVerdict": "support-with-boundary",
+      "freshReviewFinding": "Fresh review supports Recommended Actions Based on Blood Lead Level. as a bounded source-context anchor for pediatric-lead-screening-environmental-followup-continuity; it supports source identity, endpoint/variable vocabulary, transfer boundaries and downgrade checks, not intervention effects, clinical recommendations or calibrated prediction.",
+      "downgradeOrBlockReason": "Downgrade if later review finds source mismatch, outdated guidance, route-only context, recommendation overreach, duplicate evidence counting, missing exact endpoint support or transfer beyond the registered population/setting boundary.",
+      "artifactPromotionDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "allowedArtifactTypes": [
+        "reviewed-source-card",
+        "reviewed-variable-card",
+        "reviewed-endpoint-card",
+        "reviewed-uncertainty-card",
+        "reviewed-transfer-boundary-card",
+        "reviewed-downgrade-check"
+      ],
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://www.cdc.gov/lead-prevention/hcp/clinical-guidance/index.html",
+          "evidenceType": "source-route-or-fulltext-route",
+          "finding": "Route was used to verify source identity and bounded fresh-review eligibility only."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-sixth-batch-source-extraction-register.json",
+          "evidenceType": "local-source-extraction-register",
+          "finding": "Local extraction row provides exact claim, endpoint, uncertainty, transfer and model-position boundaries."
+        }
+      ],
+      "nextAction": "Prepare bounded reviewed source, variable, endpoint, uncertainty, transfer-boundary and downgrade artifacts; keep model admission blocked."
+    },
+    {
+      "reviewId": "C2LTB6-FRV-014",
+      "batchId": "C2-LT-B6",
+      "originTaskId": "C2LTB6-EXT-021",
+      "domainId": "pediatric-feeding-swallowing-development-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/pediatric-feeding-swallowing-development-continuity",
+      "sourceTitle": "Pediatric Feeding and Swallowing.",
+      "sourceUrl": "https://www.asha.org/practice-portal/clinical-topics/pediatric-feeding-and-swallowing/",
+      "freshReviewDate": "2026-07-03",
+      "freshReviewMode": "source-extraction-independent-fresh-review",
+      "sourceIdentityVerdict": "supported-by-official-route-or-open-source-extraction-row",
+      "sourceAccessVerdict": "asha-practice-portal-page-accessible",
+      "sourceContextVerdict": "sufficient-for-bounded-artifact-prep-with-row-specific-boundaries",
+      "currentnessVerdict": "currentness is bounded to the version captured by the source extraction register and external route metadata; no later guideline, policy or clinical update is inferred.",
+      "exactClaimUseVerdict": "bounded-claim-supported-only-at-source-extraction-scope",
+      "endpointVariableVerdict": "endpoint-and-variable-vocabulary-supported-with-transfer-boundary",
+      "transferBoundaryVerdict": "transfer-boundary-present-and-required",
+      "uncertaintyBoundaryVerdict": "uncertainty boundary remains required because these are not calibrated effect estimates, clinical prediction rows or individual guidance rows.",
+      "reviewerVerdict": "support-with-boundary",
+      "freshReviewFinding": "Fresh review supports Pediatric Feeding and Swallowing. as a bounded source-context anchor for pediatric-feeding-swallowing-development-continuity; it supports source identity, endpoint/variable vocabulary, transfer boundaries and downgrade checks, not intervention effects, clinical recommendations or calibrated prediction.",
+      "downgradeOrBlockReason": "Downgrade if later review finds source mismatch, outdated guidance, route-only context, recommendation overreach, duplicate evidence counting, missing exact endpoint support or transfer beyond the registered population/setting boundary.",
+      "artifactPromotionDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "allowedArtifactTypes": [
+        "reviewed-source-card",
+        "reviewed-variable-card",
+        "reviewed-endpoint-card",
+        "reviewed-uncertainty-card",
+        "reviewed-transfer-boundary-card",
+        "reviewed-downgrade-check"
+      ],
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://www.asha.org/practice-portal/clinical-topics/pediatric-feeding-and-swallowing/",
+          "evidenceType": "source-route-or-fulltext-route",
+          "finding": "Route was used to verify source identity and bounded fresh-review eligibility only."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-sixth-batch-source-extraction-register.json",
+          "evidenceType": "local-source-extraction-register",
+          "finding": "Local extraction row provides exact claim, endpoint, uncertainty, transfer and model-position boundaries."
+        }
+      ],
+      "nextAction": "Prepare bounded reviewed source, variable, endpoint, uncertainty, transfer-boundary and downgrade artifacts; keep model admission blocked."
+    },
+    {
+      "reviewId": "C2LTB6-FRV-015",
+      "batchId": "C2-LT-B6",
+      "originTaskId": "C2LTB6-EXT-022",
+      "domainId": "pediatric-feeding-swallowing-development-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/pediatric-feeding-swallowing-development-continuity",
+      "sourceTitle": "Pediatric Feeding Disorder: Consensus Definition and Conceptual Framework.",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6314510/",
+      "freshReviewDate": "2026-07-03",
+      "freshReviewMode": "source-extraction-independent-fresh-review",
+      "sourceIdentityVerdict": "supported-by-official-route-or-open-source-extraction-row",
+      "sourceAccessVerdict": "pmc-open-fulltext-consensus-article-accessible",
+      "sourceContextVerdict": "sufficient-for-bounded-artifact-prep-with-row-specific-boundaries",
+      "currentnessVerdict": "currentness is bounded to the version captured by the source extraction register and external route metadata; no later guideline, policy or clinical update is inferred.",
+      "exactClaimUseVerdict": "bounded-claim-supported-only-at-source-extraction-scope",
+      "endpointVariableVerdict": "endpoint-and-variable-vocabulary-supported-with-transfer-boundary",
+      "transferBoundaryVerdict": "transfer-boundary-present-and-required",
+      "uncertaintyBoundaryVerdict": "uncertainty boundary remains required because these are not calibrated effect estimates, clinical prediction rows or individual guidance rows.",
+      "reviewerVerdict": "support-with-boundary",
+      "freshReviewFinding": "Fresh review supports Pediatric Feeding Disorder: Consensus Definition and Conceptual Framework. as a bounded source-context anchor for pediatric-feeding-swallowing-development-continuity; it supports source identity, endpoint/variable vocabulary, transfer boundaries and downgrade checks, not intervention effects, clinical recommendations or calibrated prediction.",
+      "downgradeOrBlockReason": "Downgrade if later review finds source mismatch, outdated guidance, route-only context, recommendation overreach, duplicate evidence counting, missing exact endpoint support or transfer beyond the registered population/setting boundary.",
+      "artifactPromotionDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "allowedArtifactTypes": [
+        "reviewed-source-card",
+        "reviewed-variable-card",
+        "reviewed-endpoint-card",
+        "reviewed-uncertainty-card",
+        "reviewed-transfer-boundary-card",
+        "reviewed-downgrade-check"
+      ],
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6314510/",
+          "evidenceType": "source-route-or-fulltext-route",
+          "finding": "Route was used to verify source identity and bounded fresh-review eligibility only."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-sixth-batch-source-extraction-register.json",
+          "evidenceType": "local-source-extraction-register",
+          "finding": "Local extraction row provides exact claim, endpoint, uncertainty, transfer and model-position boundaries."
+        }
+      ],
+      "nextAction": "Prepare bounded reviewed source, variable, endpoint, uncertainty, transfer-boundary and downgrade artifacts; keep model admission blocked."
+    },
+    {
+      "reviewId": "C2LTB6-FRV-016",
+      "batchId": "C2-LT-B6",
+      "originTaskId": "C2LTB6-EXT-023",
+      "domainId": "pediatric-oral-health-development-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/pediatric-oral-health-development-continuity",
+      "sourceTitle": "Prevention of Dental Caries in Children Younger Than 5 Years: Screening and Interventions.",
+      "sourceUrl": "https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/prevention-of-dental-caries-in-children-younger-than-age-5-years-screening-and-interventions",
+      "freshReviewDate": "2026-07-03",
+      "freshReviewMode": "source-extraction-independent-fresh-review",
+      "sourceIdentityVerdict": "supported-by-official-route-or-open-source-extraction-row",
+      "sourceAccessVerdict": "uspstf-recommendation-page-accessible",
+      "sourceContextVerdict": "sufficient-for-bounded-artifact-prep-with-row-specific-boundaries",
+      "currentnessVerdict": "currentness is bounded to the version captured by the source extraction register and external route metadata; no later guideline, policy or clinical update is inferred.",
+      "exactClaimUseVerdict": "bounded-claim-supported-only-at-source-extraction-scope",
+      "endpointVariableVerdict": "endpoint-and-variable-vocabulary-supported-with-transfer-boundary",
+      "transferBoundaryVerdict": "transfer-boundary-present-and-required",
+      "uncertaintyBoundaryVerdict": "uncertainty boundary remains required because these are not calibrated effect estimates, clinical prediction rows or individual guidance rows.",
+      "reviewerVerdict": "support-with-boundary",
+      "freshReviewFinding": "Fresh review supports Prevention of Dental Caries in Children Younger Than 5 Years: Screening and Interventions. as a bounded source-context anchor for pediatric-oral-health-development-continuity; it supports source identity, endpoint/variable vocabulary, transfer boundaries and downgrade checks, not intervention effects, clinical recommendations or calibrated prediction.",
+      "downgradeOrBlockReason": "Downgrade if later review finds source mismatch, outdated guidance, route-only context, recommendation overreach, duplicate evidence counting, missing exact endpoint support or transfer beyond the registered population/setting boundary.",
+      "artifactPromotionDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "allowedArtifactTypes": [
+        "reviewed-source-card",
+        "reviewed-variable-card",
+        "reviewed-endpoint-card",
+        "reviewed-uncertainty-card",
+        "reviewed-transfer-boundary-card",
+        "reviewed-downgrade-check"
+      ],
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/prevention-of-dental-caries-in-children-younger-than-age-5-years-screening-and-interventions",
+          "evidenceType": "source-route-or-fulltext-route",
+          "finding": "Route was used to verify source identity and bounded fresh-review eligibility only."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-sixth-batch-source-extraction-register.json",
+          "evidenceType": "local-source-extraction-register",
+          "finding": "Local extraction row provides exact claim, endpoint, uncertainty, transfer and model-position boundaries."
+        }
+      ],
+      "nextAction": "Prepare bounded reviewed source, variable, endpoint, uncertainty, transfer-boundary and downgrade artifacts; keep model admission blocked."
+    },
+    {
+      "reviewId": "C2LTB6-FRV-017",
+      "batchId": "C2-LT-B6",
+      "originTaskId": "C2LTB6-EXT-024",
+      "domainId": "pediatric-oral-health-development-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/pediatric-oral-health-development-continuity",
+      "sourceTitle": "Caries-risk Assessment and Management for Infants, Children, and Adolescents.",
+      "sourceUrl": "https://www.aapd.org/research/oral-health-policies--recommendations/caries-risk-assessment-and-management-for-infants-children-and-adolescents/",
+      "freshReviewDate": "2026-07-03",
+      "freshReviewMode": "source-extraction-independent-fresh-review",
+      "sourceIdentityVerdict": "supported-by-official-route-or-open-source-extraction-row",
+      "sourceAccessVerdict": "aapd-recommendation-page-accessible",
+      "sourceContextVerdict": "sufficient-for-bounded-artifact-prep-with-row-specific-boundaries",
+      "currentnessVerdict": "currentness is bounded to the version captured by the source extraction register and external route metadata; no later guideline, policy or clinical update is inferred.",
+      "exactClaimUseVerdict": "bounded-claim-supported-only-at-source-extraction-scope",
+      "endpointVariableVerdict": "endpoint-and-variable-vocabulary-supported-with-transfer-boundary",
+      "transferBoundaryVerdict": "transfer-boundary-present-and-required",
+      "uncertaintyBoundaryVerdict": "uncertainty boundary remains required because these are not calibrated effect estimates, clinical prediction rows or individual guidance rows.",
+      "reviewerVerdict": "support-with-boundary",
+      "freshReviewFinding": "Fresh review supports Caries-risk Assessment and Management for Infants, Children, and Adolescents. as a bounded source-context anchor for pediatric-oral-health-development-continuity; it supports source identity, endpoint/variable vocabulary, transfer boundaries and downgrade checks, not intervention effects, clinical recommendations or calibrated prediction.",
+      "downgradeOrBlockReason": "Downgrade if later review finds source mismatch, outdated guidance, route-only context, recommendation overreach, duplicate evidence counting, missing exact endpoint support or transfer beyond the registered population/setting boundary.",
+      "artifactPromotionDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "allowedArtifactTypes": [
+        "reviewed-source-card",
+        "reviewed-variable-card",
+        "reviewed-endpoint-card",
+        "reviewed-uncertainty-card",
+        "reviewed-transfer-boundary-card",
+        "reviewed-downgrade-check"
+      ],
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://www.aapd.org/research/oral-health-policies--recommendations/caries-risk-assessment-and-management-for-infants-children-and-adolescents/",
+          "evidenceType": "source-route-or-fulltext-route",
+          "finding": "Route was used to verify source identity and bounded fresh-review eligibility only."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-sixth-batch-source-extraction-register.json",
+          "evidenceType": "local-source-extraction-register",
+          "finding": "Local extraction row provides exact claim, endpoint, uncertainty, transfer and model-position boundaries."
+        }
+      ],
+      "nextAction": "Prepare bounded reviewed source, variable, endpoint, uncertainty, transfer-boundary and downgrade artifacts; keep model admission blocked."
+    }
+  ],
+  "manualFulltextFreshReviews": [
+    {
+      "reviewId": "C2LTB6-MFFRV-001",
+      "batchId": "C2-LT-B6",
+      "manualExtractionId": "C2LTB6-MFEXT-001",
+      "originTaskId": "C2LTB6-EXT-007",
+      "sourceResolutionId": "C2LTB6-SRR-001",
+      "domainId": "primary-ovarian-insufficiency-hormone-fertility-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/primary-ovarian-insufficiency-hormone-fertility-continuity",
+      "candidateId": "C2LTB6-SRR-001-CAND-01",
+      "sourceTitle": "Guideline on premature ovarian insufficiency",
+      "sourceUrl": "https://www.eshre.eu/guidelines-and-legal/guidelines/management-of-premature-ovarian-insufficiency.aspx",
+      "freshReviewDate": "2026-07-03",
+      "freshReviewMode": "manual-fulltext-extraction-independent-fresh-review",
+      "sourceIdentityVerdict": "supported-route-identity",
+      "sourceAccessVerdict": "official-guideline-landing-route-accessible",
+      "sourceContextVerdict": "route-or-companion-context-only-no-direct-artifact-fill",
+      "currentnessVerdict": "currentness is bounded to the route and version captured by source-resolution/manual extraction; no later guideline, policy, clinical or legal update is inferred.",
+      "exactClaimVerdict": "route-scope-supported-exact-claim-not-admitted",
+      "endpointVariableVerdict": "endpoint-vocabulary-context-only",
+      "transferBoundaryVerdict": "transfer-boundary-present-and-required",
+      "reviewerVerdict": "blocked-or-context-only",
+      "freshReviewFinding": "Fresh review preserves Guideline on premature ovarian insufficiency as official-eshre-guideline-page-route context only; current route, summary, bibliographic, companion-lineage or policy-resource status is insufficient for direct artifact fill.",
+      "downgradeOrBlockReason": "Route-only, summary, bibliographic, companion-lineage, implementation-platform or policy-resource limitation remains unresolved; no direct reviewed artifact may be created from this row.",
+      "artifactPromotionDecision": "route-only-or-companion-context-no-direct-artifact-promotion",
+      "allowedArtifactTypes": [],
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://www.eshre.eu/guidelines-and-legal/guidelines/management-of-premature-ovarian-insufficiency.aspx",
+          "evidenceType": "route-or-companion-context",
+          "finding": "ESHRE page identifies the updated POI guideline route and should replace the older generic landing URL for source-route anchoring."
+        },
+        {
+          "url": "https://www.eshre.eu/Guidelines-and-Legal/Guidelines/POI",
+          "evidenceType": "original-local-review-issue-route",
+          "finding": "Original registered source for C2LTB6-EXT-007 required source-resolution before artifact fill."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-sixth-batch-manual-fulltext-extraction-register.json",
+          "evidenceType": "manual-fulltext-extraction-register",
+          "finding": "Local manual/fulltext extraction row provides access, route, lineage and transfer-boundary context."
+        }
+      ],
+      "nextAction": "Keep as route/context evidence or obtain authorized/full source text before repeating manual extraction and fresh review."
+    },
+    {
+      "reviewId": "C2LTB6-MFFRV-002",
+      "batchId": "C2-LT-B6",
+      "manualExtractionId": "C2LTB6-MFEXT-002",
+      "originTaskId": "C2LTB6-EXT-007",
+      "sourceResolutionId": "C2LTB6-SRR-001",
+      "domainId": "primary-ovarian-insufficiency-hormone-fertility-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/primary-ovarian-insufficiency-hormone-fertility-continuity",
+      "candidateId": "C2LTB6-SRR-001-CAND-02",
+      "sourceTitle": "Evidence-based guideline: premature ovarian insufficiency",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11631070/",
+      "freshReviewDate": "2026-07-03",
+      "freshReviewMode": "manual-fulltext-extraction-independent-fresh-review",
+      "sourceIdentityVerdict": "supported-route-identity",
+      "sourceAccessVerdict": "open-fulltext-route-available",
+      "sourceContextVerdict": "sufficient-for-bounded-artifact-prep-after-route-and-currentness-review",
+      "currentnessVerdict": "currentness is bounded to the route and version captured by source-resolution/manual extraction; no later guideline, policy, clinical or legal update is inferred.",
+      "exactClaimVerdict": "bounded-claim-supported",
+      "endpointVariableVerdict": "endpoint-vocabulary-supported-with-review-boundary",
+      "transferBoundaryVerdict": "transfer-boundary-present-and-required",
+      "reviewerVerdict": "support-with-boundary",
+      "freshReviewFinding": "Fresh review supports Evidence-based guideline: premature ovarian insufficiency as a bounded manual/fulltext or official guidance context for primary-ovarian-insufficiency-hormone-fertility-continuity; it can enter bounded artifact preparation with exact source-scope and transfer-boundary constraints.",
+      "downgradeOrBlockReason": "Eligible only inside the captured source route/version and after preserving guideline, policy, population, endpoint, uncertainty and prohibited-use boundaries.",
+      "artifactPromotionDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "allowedArtifactTypes": [
+        "reviewed-source-card",
+        "reviewed-variable-card",
+        "reviewed-endpoint-card",
+        "reviewed-uncertainty-card",
+        "reviewed-transfer-boundary-card",
+        "reviewed-downgrade-check"
+      ],
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11631070/",
+          "evidenceType": "open-fulltext-or-official-guidance-context",
+          "finding": "PMC route identifies the open guideline article for later exact extraction of POI recommendation scope."
+        },
+        {
+          "url": "https://www.eshre.eu/Guidelines-and-Legal/Guidelines/POI",
+          "evidenceType": "original-local-review-issue-route",
+          "finding": "Original registered source for C2LTB6-EXT-007 required source-resolution before artifact fill."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-sixth-batch-manual-fulltext-extraction-register.json",
+          "evidenceType": "manual-fulltext-extraction-register",
+          "finding": "Local manual/fulltext extraction row provides access, route, lineage and transfer-boundary context."
+        }
+      ],
+      "nextAction": "Prepare bounded artifacts for this retained source route and keep paired route-only or companion rows as context only."
+    },
+    {
+      "reviewId": "C2LTB6-MFFRV-003",
+      "batchId": "C2-LT-B6",
+      "manualExtractionId": "C2LTB6-MFEXT-003",
+      "originTaskId": "C2LTB6-EXT-007",
+      "sourceResolutionId": "C2LTB6-SRR-001",
+      "domainId": "primary-ovarian-insufficiency-hormone-fertility-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/primary-ovarian-insufficiency-hormone-fertility-continuity",
+      "candidateId": "C2LTB6-SRR-001-CAND-03",
+      "sourceTitle": "Evidence-based guideline: Premature Ovarian Insufficiency (2024)",
+      "sourceUrl": "https://www.asrm.org/practice-guidance/practice-committee-documents/evidence-based-guideline-premature-ovarian-insufficiency--2024/",
+      "freshReviewDate": "2026-07-03",
+      "freshReviewMode": "manual-fulltext-extraction-independent-fresh-review",
+      "sourceIdentityVerdict": "supported-route-identity",
+      "sourceAccessVerdict": "official-companion-guideline-route-accessible",
+      "sourceContextVerdict": "route-or-companion-context-only-no-direct-artifact-fill",
+      "currentnessVerdict": "currentness is bounded to the route and version captured by source-resolution/manual extraction; no later guideline, policy, clinical or legal update is inferred.",
+      "exactClaimVerdict": "route-scope-supported-exact-claim-not-admitted",
+      "endpointVariableVerdict": "endpoint-vocabulary-context-only",
+      "transferBoundaryVerdict": "transfer-boundary-present-and-required",
+      "reviewerVerdict": "blocked-or-context-only",
+      "freshReviewFinding": "Fresh review preserves Evidence-based guideline: Premature Ovarian Insufficiency (2024) as asrm-official-guideline-page-route context only; current route, summary, bibliographic, companion-lineage or policy-resource status is insufficient for direct artifact fill.",
+      "downgradeOrBlockReason": "Route-only, summary, bibliographic, companion-lineage, implementation-platform or policy-resource limitation remains unresolved; no direct reviewed artifact may be created from this row.",
+      "artifactPromotionDecision": "route-only-or-companion-context-no-direct-artifact-promotion",
+      "allowedArtifactTypes": [],
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://www.asrm.org/practice-guidance/practice-committee-documents/evidence-based-guideline-premature-ovarian-insufficiency--2024/",
+          "evidenceType": "route-or-companion-context",
+          "finding": "ASRM page is a companion official route for the same POI guideline family and must be lineage-normalized before evidence counting."
+        },
+        {
+          "url": "https://www.eshre.eu/Guidelines-and-Legal/Guidelines/POI",
+          "evidenceType": "original-local-review-issue-route",
+          "finding": "Original registered source for C2LTB6-EXT-007 required source-resolution before artifact fill."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-sixth-batch-manual-fulltext-extraction-register.json",
+          "evidenceType": "manual-fulltext-extraction-register",
+          "finding": "Local manual/fulltext extraction row provides access, route, lineage and transfer-boundary context."
+        }
+      ],
+      "nextAction": "Keep as route/context evidence or obtain authorized/full source text before repeating manual extraction and fresh review."
+    },
+    {
+      "reviewId": "C2LTB6-MFFRV-004",
+      "batchId": "C2-LT-B6",
+      "manualExtractionId": "C2LTB6-MFEXT-004",
+      "originTaskId": "C2LTB6-EXT-008",
+      "sourceResolutionId": "C2LTB6-SRR-002",
+      "domainId": "primary-ovarian-insufficiency-hormone-fertility-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/primary-ovarian-insufficiency-hormone-fertility-continuity",
+      "candidateId": "C2LTB6-SRR-002-CAND-01",
+      "sourceTitle": "Primary Ovarian Insufficiency in Adolescents and Young Women",
+      "sourceUrl": "https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2014/07/primary-ovarian-insufficiency-in-adolescents-and-young-women",
+      "freshReviewDate": "2026-07-03",
+      "freshReviewMode": "manual-fulltext-extraction-independent-fresh-review",
+      "sourceIdentityVerdict": "supported-route-identity",
+      "sourceAccessVerdict": "official-guidance-page-route-accessible",
+      "sourceContextVerdict": "sufficient-for-bounded-artifact-prep-after-route-and-currentness-review",
+      "currentnessVerdict": "currentness is bounded to the route and version captured by source-resolution/manual extraction; no later guideline, policy, clinical or legal update is inferred.",
+      "exactClaimVerdict": "bounded-claim-supported",
+      "endpointVariableVerdict": "endpoint-vocabulary-supported-with-review-boundary",
+      "transferBoundaryVerdict": "transfer-boundary-present-and-required",
+      "reviewerVerdict": "support-with-boundary",
+      "freshReviewFinding": "Fresh review supports Primary Ovarian Insufficiency in Adolescents and Young Women as a bounded manual/fulltext or official guidance context for primary-ovarian-insufficiency-hormone-fertility-continuity; it can enter bounded artifact preparation with exact source-scope and transfer-boundary constraints.",
+      "downgradeOrBlockReason": "Eligible only inside the captured source route/version and after preserving guideline, policy, population, endpoint, uncertainty and prohibited-use boundaries.",
+      "artifactPromotionDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "allowedArtifactTypes": [
+        "reviewed-source-card",
+        "reviewed-variable-card",
+        "reviewed-endpoint-card",
+        "reviewed-uncertainty-card",
+        "reviewed-transfer-boundary-card",
+        "reviewed-downgrade-check"
+      ],
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2014/07/primary-ovarian-insufficiency-in-adolescents-and-young-women",
+          "evidenceType": "open-fulltext-or-official-guidance-context",
+          "finding": "ACOG page is the official Committee Opinion route but still needs manual exact-text/source-status review."
+        },
+        {
+          "url": "https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2014/07/primary-ovarian-insufficiency-in-adolescents-and-young-women",
+          "evidenceType": "original-local-review-issue-route",
+          "finding": "Original registered source for C2LTB6-EXT-008 required source-resolution before artifact fill."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-sixth-batch-manual-fulltext-extraction-register.json",
+          "evidenceType": "manual-fulltext-extraction-register",
+          "finding": "Local manual/fulltext extraction row provides access, route, lineage and transfer-boundary context."
+        }
+      ],
+      "nextAction": "Prepare bounded artifacts for this retained source route and keep paired route-only or companion rows as context only."
+    },
+    {
+      "reviewId": "C2LTB6-MFFRV-005",
+      "batchId": "C2-LT-B6",
+      "manualExtractionId": "C2LTB6-MFEXT-005",
+      "originTaskId": "C2LTB6-EXT-008",
+      "sourceResolutionId": "C2LTB6-SRR-002",
+      "domainId": "primary-ovarian-insufficiency-hormone-fertility-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/primary-ovarian-insufficiency-hormone-fertility-continuity",
+      "candidateId": "C2LTB6-SRR-002-CAND-02",
+      "sourceTitle": "Committee opinion no. 605: primary ovarian insufficiency in adolescents and young women",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/24945456/",
+      "freshReviewDate": "2026-07-03",
+      "freshReviewMode": "manual-fulltext-extraction-independent-fresh-review",
+      "sourceIdentityVerdict": "supported-route-identity",
+      "sourceAccessVerdict": "pubmed-bibliographic-route-only",
+      "sourceContextVerdict": "route-or-companion-context-only-no-direct-artifact-fill",
+      "currentnessVerdict": "currentness is bounded to the route and version captured by source-resolution/manual extraction; no later guideline, policy, clinical or legal update is inferred.",
+      "exactClaimVerdict": "route-scope-supported-exact-claim-not-admitted",
+      "endpointVariableVerdict": "endpoint-vocabulary-context-only",
+      "transferBoundaryVerdict": "transfer-boundary-present-and-required",
+      "reviewerVerdict": "blocked-or-context-only",
+      "freshReviewFinding": "Fresh review preserves Committee opinion no. 605: primary ovarian insufficiency in adolescents and young women as pubmed-bibliographic-route context only; current route, summary, bibliographic, companion-lineage or policy-resource status is insufficient for direct artifact fill.",
+      "downgradeOrBlockReason": "Route-only, summary, bibliographic, companion-lineage, implementation-platform or policy-resource limitation remains unresolved; no direct reviewed artifact may be created from this row.",
+      "artifactPromotionDecision": "route-only-or-companion-context-no-direct-artifact-promotion",
+      "allowedArtifactTypes": [],
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/24945456/",
+          "evidenceType": "route-or-companion-context",
+          "finding": "PubMed route preserves PMID 24945456 bibliographic identity for the ACOG committee opinion before manual fulltext review."
+        },
+        {
+          "url": "https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2014/07/primary-ovarian-insufficiency-in-adolescents-and-young-women",
+          "evidenceType": "original-local-review-issue-route",
+          "finding": "Original registered source for C2LTB6-EXT-008 required source-resolution before artifact fill."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-sixth-batch-manual-fulltext-extraction-register.json",
+          "evidenceType": "manual-fulltext-extraction-register",
+          "finding": "Local manual/fulltext extraction row provides access, route, lineage and transfer-boundary context."
+        }
+      ],
+      "nextAction": "Keep as route/context evidence or obtain authorized/full source text before repeating manual extraction and fresh review."
+    },
+    {
+      "reviewId": "C2LTB6-MFFRV-006",
+      "batchId": "C2-LT-B6",
+      "manualExtractionId": "C2LTB6-MFEXT-006",
+      "originTaskId": "C2LTB6-EXT-010",
+      "sourceResolutionId": "C2LTB6-SRR-003",
+      "domainId": "polycystic-ovary-syndrome-metabolic-reproductive-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/polycystic-ovary-syndrome-metabolic-reproductive-continuity",
+      "candidateId": "C2LTB6-SRR-003-CAND-01",
+      "sourceTitle": "PCOS Guideline/ PMOS Guideline",
+      "sourceUrl": "https://www.monash.edu/medicine/mchri/pcos/guideline",
+      "freshReviewDate": "2026-07-03",
+      "freshReviewMode": "manual-fulltext-extraction-independent-fresh-review",
+      "sourceIdentityVerdict": "supported-route-identity",
+      "sourceAccessVerdict": "official-implementation-platform-route-accessible",
+      "sourceContextVerdict": "route-or-companion-context-only-no-direct-artifact-fill",
+      "currentnessVerdict": "currentness is bounded to the route and version captured by source-resolution/manual extraction; no later guideline, policy, clinical or legal update is inferred.",
+      "exactClaimVerdict": "route-scope-supported-exact-claim-not-admitted",
+      "endpointVariableVerdict": "endpoint-vocabulary-context-only",
+      "transferBoundaryVerdict": "transfer-boundary-present-and-required",
+      "reviewerVerdict": "blocked-or-context-only",
+      "freshReviewFinding": "Fresh review preserves PCOS Guideline/ PMOS Guideline as monash-guideline-implementation-platform-route context only; current route, summary, bibliographic, companion-lineage or policy-resource status is insufficient for direct artifact fill.",
+      "downgradeOrBlockReason": "Route-only, summary, bibliographic, companion-lineage, implementation-platform or policy-resource limitation remains unresolved; no direct reviewed artifact may be created from this row.",
+      "artifactPromotionDecision": "route-only-or-companion-context-no-direct-artifact-promotion",
+      "allowedArtifactTypes": [],
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://www.monash.edu/medicine/mchri/pcos/guideline",
+          "evidenceType": "route-or-companion-context",
+          "finding": "Monash page is an implementation/provenance platform and should not be counted independently from the underlying guideline article."
+        },
+        {
+          "url": "https://www.monash.edu/medicine/mchri/pcos/guideline",
+          "evidenceType": "original-local-review-issue-route",
+          "finding": "Original registered source for C2LTB6-EXT-010 required source-resolution before artifact fill."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-sixth-batch-manual-fulltext-extraction-register.json",
+          "evidenceType": "manual-fulltext-extraction-register",
+          "finding": "Local manual/fulltext extraction row provides access, route, lineage and transfer-boundary context."
+        }
+      ],
+      "nextAction": "Keep as route/context evidence or obtain authorized/full source text before repeating manual extraction and fresh review."
+    },
+    {
+      "reviewId": "C2LTB6-MFFRV-007",
+      "batchId": "C2-LT-B6",
+      "manualExtractionId": "C2LTB6-MFEXT-007",
+      "originTaskId": "C2LTB6-EXT-010",
+      "sourceResolutionId": "C2LTB6-SRR-003",
+      "domainId": "polycystic-ovary-syndrome-metabolic-reproductive-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/polycystic-ovary-syndrome-metabolic-reproductive-continuity",
+      "candidateId": "C2LTB6-SRR-003-CAND-02",
+      "sourceTitle": "Recommendations From the 2023 International Evidence-based Guideline for the Assessment and Management of Polycystic Ovary Syndrome",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10505534/",
+      "freshReviewDate": "2026-07-03",
+      "freshReviewMode": "manual-fulltext-extraction-independent-fresh-review",
+      "sourceIdentityVerdict": "supported-route-identity",
+      "sourceAccessVerdict": "open-fulltext-route-available",
+      "sourceContextVerdict": "sufficient-for-bounded-artifact-prep-after-route-and-currentness-review",
+      "currentnessVerdict": "currentness is bounded to the route and version captured by source-resolution/manual extraction; no later guideline, policy, clinical or legal update is inferred.",
+      "exactClaimVerdict": "bounded-claim-supported",
+      "endpointVariableVerdict": "endpoint-vocabulary-supported-with-review-boundary",
+      "transferBoundaryVerdict": "transfer-boundary-present-and-required",
+      "reviewerVerdict": "support-with-boundary",
+      "freshReviewFinding": "Fresh review supports Recommendations From the 2023 International Evidence-based Guideline for the Assessment and Management of Polycystic Ovary Syndrome as a bounded manual/fulltext or official guidance context for polycystic-ovary-syndrome-metabolic-reproductive-continuity; it can enter bounded artifact preparation with exact source-scope and transfer-boundary constraints.",
+      "downgradeOrBlockReason": "Eligible only inside the captured source route/version and after preserving guideline, policy, population, endpoint, uncertainty and prohibited-use boundaries.",
+      "artifactPromotionDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "allowedArtifactTypes": [
+        "reviewed-source-card",
+        "reviewed-variable-card",
+        "reviewed-endpoint-card",
+        "reviewed-uncertainty-card",
+        "reviewed-transfer-boundary-card",
+        "reviewed-downgrade-check"
+      ],
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10505534/",
+          "evidenceType": "open-fulltext-or-official-guidance-context",
+          "finding": "PMC route identifies the underlying 2023 PCOS guideline article; EXT-010 should be lineage-linked to EXT-009 before evidence counting."
+        },
+        {
+          "url": "https://www.monash.edu/medicine/mchri/pcos/guideline",
+          "evidenceType": "original-local-review-issue-route",
+          "finding": "Original registered source for C2LTB6-EXT-010 required source-resolution before artifact fill."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-sixth-batch-manual-fulltext-extraction-register.json",
+          "evidenceType": "manual-fulltext-extraction-register",
+          "finding": "Local manual/fulltext extraction row provides access, route, lineage and transfer-boundary context."
+        }
+      ],
+      "nextAction": "Prepare bounded artifacts for this retained source route and keep paired route-only or companion rows as context only."
+    },
+    {
+      "reviewId": "C2LTB6-MFFRV-008",
+      "batchId": "C2-LT-B6",
+      "manualExtractionId": "C2LTB6-MFEXT-008",
+      "originTaskId": "C2LTB6-EXT-010",
+      "sourceResolutionId": "C2LTB6-SRR-003",
+      "domainId": "polycystic-ovary-syndrome-metabolic-reproductive-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/polycystic-ovary-syndrome-metabolic-reproductive-continuity",
+      "candidateId": "C2LTB6-SRR-003-CAND-03",
+      "sourceTitle": "Recommendations from the 2023 International Evidence-based Guideline for the Assessment and Management of Polycystic Ovary Syndrome",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/37580314/",
+      "freshReviewDate": "2026-07-03",
+      "freshReviewMode": "manual-fulltext-extraction-independent-fresh-review",
+      "sourceIdentityVerdict": "supported-route-identity",
+      "sourceAccessVerdict": "pubmed-bibliographic-route-only",
+      "sourceContextVerdict": "route-or-companion-context-only-no-direct-artifact-fill",
+      "currentnessVerdict": "currentness is bounded to the route and version captured by source-resolution/manual extraction; no later guideline, policy, clinical or legal update is inferred.",
+      "exactClaimVerdict": "route-scope-supported-exact-claim-not-admitted",
+      "endpointVariableVerdict": "endpoint-vocabulary-context-only",
+      "transferBoundaryVerdict": "transfer-boundary-present-and-required",
+      "reviewerVerdict": "blocked-or-context-only",
+      "freshReviewFinding": "Fresh review preserves Recommendations from the 2023 International Evidence-based Guideline for the Assessment and Management of Polycystic Ovary Syndrome as pubmed-bibliographic-route context only; current route, summary, bibliographic, companion-lineage or policy-resource status is insufficient for direct artifact fill.",
+      "downgradeOrBlockReason": "Route-only, summary, bibliographic, companion-lineage, implementation-platform or policy-resource limitation remains unresolved; no direct reviewed artifact may be created from this row.",
+      "artifactPromotionDecision": "route-only-or-companion-context-no-direct-artifact-promotion",
+      "allowedArtifactTypes": [],
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37580314/",
+          "evidenceType": "route-or-companion-context",
+          "finding": "PubMed route preserves bibliographic identity for the underlying 2023 guideline article."
+        },
+        {
+          "url": "https://www.monash.edu/medicine/mchri/pcos/guideline",
+          "evidenceType": "original-local-review-issue-route",
+          "finding": "Original registered source for C2LTB6-EXT-010 required source-resolution before artifact fill."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-sixth-batch-manual-fulltext-extraction-register.json",
+          "evidenceType": "manual-fulltext-extraction-register",
+          "finding": "Local manual/fulltext extraction row provides access, route, lineage and transfer-boundary context."
+        }
+      ],
+      "nextAction": "Keep as route/context evidence or obtain authorized/full source text before repeating manual extraction and fresh review."
+    },
+    {
+      "reviewId": "C2LTB6-MFFRV-009",
+      "batchId": "C2-LT-B6",
+      "manualExtractionId": "C2LTB6-MFEXT-009",
+      "originTaskId": "C2LTB6-EXT-012",
+      "sourceResolutionId": "C2LTB6-SRR-004",
+      "domainId": "endometriosis-pelvic-pain-fertility-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/endometriosis-pelvic-pain-fertility-continuity",
+      "candidateId": "C2LTB6-SRR-004-CAND-01",
+      "sourceTitle": "Endometriosis guideline",
+      "sourceUrl": "https://www.eshre.eu/Guidelines-and-Legal/Guidelines/Endometriosis-guideline",
+      "freshReviewDate": "2026-07-03",
+      "freshReviewMode": "manual-fulltext-extraction-independent-fresh-review",
+      "sourceIdentityVerdict": "supported-route-identity",
+      "sourceAccessVerdict": "official-guideline-landing-route-accessible",
+      "sourceContextVerdict": "route-or-companion-context-only-no-direct-artifact-fill",
+      "currentnessVerdict": "currentness is bounded to the route and version captured by source-resolution/manual extraction; no later guideline, policy, clinical or legal update is inferred.",
+      "exactClaimVerdict": "route-scope-supported-exact-claim-not-admitted",
+      "endpointVariableVerdict": "endpoint-vocabulary-context-only",
+      "transferBoundaryVerdict": "transfer-boundary-present-and-required",
+      "reviewerVerdict": "blocked-or-context-only",
+      "freshReviewFinding": "Fresh review preserves Endometriosis guideline as eshre-official-guideline-page-route context only; current route, summary, bibliographic, companion-lineage or policy-resource status is insufficient for direct artifact fill.",
+      "downgradeOrBlockReason": "Route-only, summary, bibliographic, companion-lineage, implementation-platform or policy-resource limitation remains unresolved; no direct reviewed artifact may be created from this row.",
+      "artifactPromotionDecision": "route-only-or-companion-context-no-direct-artifact-promotion",
+      "allowedArtifactTypes": [],
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://www.eshre.eu/Guidelines-and-Legal/Guidelines/Endometriosis-guideline",
+          "evidenceType": "route-or-companion-context",
+          "finding": "ESHRE page is a route/provenance anchor for the same guideline family as the OUP article and must not be double counted."
+        },
+        {
+          "url": "https://www.eshre.eu/Guidelines-and-Legal/Guidelines/Endometriosis-guideline",
+          "evidenceType": "original-local-review-issue-route",
+          "finding": "Original registered source for C2LTB6-EXT-012 required source-resolution before artifact fill."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-sixth-batch-manual-fulltext-extraction-register.json",
+          "evidenceType": "manual-fulltext-extraction-register",
+          "finding": "Local manual/fulltext extraction row provides access, route, lineage and transfer-boundary context."
+        }
+      ],
+      "nextAction": "Keep as route/context evidence or obtain authorized/full source text before repeating manual extraction and fresh review."
+    },
+    {
+      "reviewId": "C2LTB6-MFFRV-010",
+      "batchId": "C2-LT-B6",
+      "manualExtractionId": "C2LTB6-MFEXT-010",
+      "originTaskId": "C2LTB6-EXT-012",
+      "sourceResolutionId": "C2LTB6-SRR-004",
+      "domainId": "endometriosis-pelvic-pain-fertility-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/endometriosis-pelvic-pain-fertility-continuity",
+      "candidateId": "C2LTB6-SRR-004-CAND-02",
+      "sourceTitle": "ESHRE guideline: endometriosis",
+      "sourceUrl": "https://academic.oup.com/hropen/article/2022/2/hoac009/6537540",
+      "freshReviewDate": "2026-07-03",
+      "freshReviewMode": "manual-fulltext-extraction-independent-fresh-review",
+      "sourceIdentityVerdict": "supported-route-identity",
+      "sourceAccessVerdict": "publisher-open-guideline-article-route-available",
+      "sourceContextVerdict": "sufficient-for-bounded-artifact-prep-after-route-and-currentness-review",
+      "currentnessVerdict": "currentness is bounded to the route and version captured by source-resolution/manual extraction; no later guideline, policy, clinical or legal update is inferred.",
+      "exactClaimVerdict": "bounded-claim-supported",
+      "endpointVariableVerdict": "endpoint-vocabulary-supported-with-review-boundary",
+      "transferBoundaryVerdict": "transfer-boundary-present-and-required",
+      "reviewerVerdict": "support-with-boundary",
+      "freshReviewFinding": "Fresh review supports ESHRE guideline: endometriosis as a bounded manual/fulltext or official guidance context for endometriosis-pelvic-pain-fertility-continuity; it can enter bounded artifact preparation with exact source-scope and transfer-boundary constraints.",
+      "downgradeOrBlockReason": "Eligible only inside the captured source route/version and after preserving guideline, policy, population, endpoint, uncertainty and prohibited-use boundaries.",
+      "artifactPromotionDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "allowedArtifactTypes": [
+        "reviewed-source-card",
+        "reviewed-variable-card",
+        "reviewed-endpoint-card",
+        "reviewed-uncertainty-card",
+        "reviewed-transfer-boundary-card",
+        "reviewed-downgrade-check"
+      ],
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://academic.oup.com/hropen/article/2022/2/hoac009/6537540",
+          "evidenceType": "open-fulltext-or-official-guidance-context",
+          "finding": "OUP Human Reproduction Open article route is the source-text candidate for later exact guideline extraction."
+        },
+        {
+          "url": "https://www.eshre.eu/Guidelines-and-Legal/Guidelines/Endometriosis-guideline",
+          "evidenceType": "original-local-review-issue-route",
+          "finding": "Original registered source for C2LTB6-EXT-012 required source-resolution before artifact fill."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-sixth-batch-manual-fulltext-extraction-register.json",
+          "evidenceType": "manual-fulltext-extraction-register",
+          "finding": "Local manual/fulltext extraction row provides access, route, lineage and transfer-boundary context."
+        }
+      ],
+      "nextAction": "Prepare bounded artifacts for this retained source route and keep paired route-only or companion rows as context only."
+    },
+    {
+      "reviewId": "C2LTB6-MFFRV-011",
+      "batchId": "C2-LT-B6",
+      "manualExtractionId": "C2LTB6-MFEXT-011",
+      "originTaskId": "C2LTB6-EXT-012",
+      "sourceResolutionId": "C2LTB6-SRR-004",
+      "domainId": "endometriosis-pelvic-pain-fertility-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/endometriosis-pelvic-pain-fertility-continuity",
+      "candidateId": "C2LTB6-SRR-004-CAND-03",
+      "sourceTitle": "ESHRE guideline: endometriosis",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/35350465/",
+      "freshReviewDate": "2026-07-03",
+      "freshReviewMode": "manual-fulltext-extraction-independent-fresh-review",
+      "sourceIdentityVerdict": "supported-route-identity",
+      "sourceAccessVerdict": "pubmed-bibliographic-route-only",
+      "sourceContextVerdict": "route-or-companion-context-only-no-direct-artifact-fill",
+      "currentnessVerdict": "currentness is bounded to the route and version captured by source-resolution/manual extraction; no later guideline, policy, clinical or legal update is inferred.",
+      "exactClaimVerdict": "route-scope-supported-exact-claim-not-admitted",
+      "endpointVariableVerdict": "endpoint-vocabulary-context-only",
+      "transferBoundaryVerdict": "transfer-boundary-present-and-required",
+      "reviewerVerdict": "blocked-or-context-only",
+      "freshReviewFinding": "Fresh review preserves ESHRE guideline: endometriosis as pubmed-bibliographic-route context only; current route, summary, bibliographic, companion-lineage or policy-resource status is insufficient for direct artifact fill.",
+      "downgradeOrBlockReason": "Route-only, summary, bibliographic, companion-lineage, implementation-platform or policy-resource limitation remains unresolved; no direct reviewed artifact may be created from this row.",
+      "artifactPromotionDecision": "route-only-or-companion-context-no-direct-artifact-promotion",
+      "allowedArtifactTypes": [],
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35350465/",
+          "evidenceType": "route-or-companion-context",
+          "finding": "PubMed route preserves bibliographic identity and recommendation count context before fresh review."
+        },
+        {
+          "url": "https://www.eshre.eu/Guidelines-and-Legal/Guidelines/Endometriosis-guideline",
+          "evidenceType": "original-local-review-issue-route",
+          "finding": "Original registered source for C2LTB6-EXT-012 required source-resolution before artifact fill."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-sixth-batch-manual-fulltext-extraction-register.json",
+          "evidenceType": "manual-fulltext-extraction-register",
+          "finding": "Local manual/fulltext extraction row provides access, route, lineage and transfer-boundary context."
+        }
+      ],
+      "nextAction": "Keep as route/context evidence or obtain authorized/full source text before repeating manual extraction and fresh review."
+    },
+    {
+      "reviewId": "C2LTB6-MFFRV-012",
+      "batchId": "C2-LT-B6",
+      "manualExtractionId": "C2LTB6-MFEXT-012",
+      "originTaskId": "C2LTB6-EXT-013",
+      "sourceResolutionId": "C2LTB6-SRR-005",
+      "domainId": "pregnancy-loss-stillbirth-bereavement-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/pregnancy-loss-stillbirth-bereavement-continuity",
+      "candidateId": "C2LTB6-SRR-005-CAND-01",
+      "sourceTitle": "Early Pregnancy Loss",
+      "sourceUrl": "https://www.acog.org/clinical/clinical-guidance/practice-bulletin/articles/2018/11/early-pregnancy-loss",
+      "freshReviewDate": "2026-07-03",
+      "freshReviewMode": "manual-fulltext-extraction-independent-fresh-review",
+      "sourceIdentityVerdict": "supported-route-identity",
+      "sourceAccessVerdict": "official-practice-bulletin-page-route-accessible",
+      "sourceContextVerdict": "sufficient-for-bounded-artifact-prep-after-route-and-currentness-review",
+      "currentnessVerdict": "currentness is bounded to the route and version captured by source-resolution/manual extraction; no later guideline, policy, clinical or legal update is inferred.",
+      "exactClaimVerdict": "bounded-claim-supported",
+      "endpointVariableVerdict": "endpoint-vocabulary-supported-with-review-boundary",
+      "transferBoundaryVerdict": "transfer-boundary-present-and-required",
+      "reviewerVerdict": "support-with-boundary",
+      "freshReviewFinding": "Fresh review supports Early Pregnancy Loss as a bounded manual/fulltext or official guidance context for pregnancy-loss-stillbirth-bereavement-continuity; it can enter bounded artifact preparation with exact source-scope and transfer-boundary constraints.",
+      "downgradeOrBlockReason": "Eligible only inside the captured source route/version and after preserving guideline, policy, population, endpoint, uncertainty and prohibited-use boundaries.",
+      "artifactPromotionDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "allowedArtifactTypes": [
+        "reviewed-source-card",
+        "reviewed-variable-card",
+        "reviewed-endpoint-card",
+        "reviewed-uncertainty-card",
+        "reviewed-transfer-boundary-card",
+        "reviewed-downgrade-check"
+      ],
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://www.acog.org/clinical/clinical-guidance/practice-bulletin/articles/2018/11/early-pregnancy-loss",
+          "evidenceType": "open-fulltext-or-official-guidance-context",
+          "finding": "ACOG page is the official Practice Bulletin route but requires exact text/status review before artifact use."
+        },
+        {
+          "url": "https://www.acog.org/clinical/clinical-guidance/practice-bulletin/articles/2018/11/early-pregnancy-loss",
+          "evidenceType": "original-local-review-issue-route",
+          "finding": "Original registered source for C2LTB6-EXT-013 required source-resolution before artifact fill."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-sixth-batch-manual-fulltext-extraction-register.json",
+          "evidenceType": "manual-fulltext-extraction-register",
+          "finding": "Local manual/fulltext extraction row provides access, route, lineage and transfer-boundary context."
+        }
+      ],
+      "nextAction": "Prepare bounded artifacts for this retained source route and keep paired route-only or companion rows as context only."
+    },
+    {
+      "reviewId": "C2LTB6-MFFRV-013",
+      "batchId": "C2-LT-B6",
+      "manualExtractionId": "C2LTB6-MFEXT-013",
+      "originTaskId": "C2LTB6-EXT-013",
+      "sourceResolutionId": "C2LTB6-SRR-005",
+      "domainId": "pregnancy-loss-stillbirth-bereavement-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/pregnancy-loss-stillbirth-bereavement-continuity",
+      "candidateId": "C2LTB6-SRR-005-CAND-02",
+      "sourceTitle": "ACOG Practice Bulletin No. 200: Early Pregnancy Loss",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/30157093/",
+      "freshReviewDate": "2026-07-03",
+      "freshReviewMode": "manual-fulltext-extraction-independent-fresh-review",
+      "sourceIdentityVerdict": "supported-route-identity",
+      "sourceAccessVerdict": "pubmed-bibliographic-route-only",
+      "sourceContextVerdict": "route-or-companion-context-only-no-direct-artifact-fill",
+      "currentnessVerdict": "currentness is bounded to the route and version captured by source-resolution/manual extraction; no later guideline, policy, clinical or legal update is inferred.",
+      "exactClaimVerdict": "route-scope-supported-exact-claim-not-admitted",
+      "endpointVariableVerdict": "endpoint-vocabulary-context-only",
+      "transferBoundaryVerdict": "transfer-boundary-present-and-required",
+      "reviewerVerdict": "blocked-or-context-only",
+      "freshReviewFinding": "Fresh review preserves ACOG Practice Bulletin No. 200: Early Pregnancy Loss as pubmed-bibliographic-route context only; current route, summary, bibliographic, companion-lineage or policy-resource status is insufficient for direct artifact fill.",
+      "downgradeOrBlockReason": "Route-only, summary, bibliographic, companion-lineage, implementation-platform or policy-resource limitation remains unresolved; no direct reviewed artifact may be created from this row.",
+      "artifactPromotionDecision": "route-only-or-companion-context-no-direct-artifact-promotion",
+      "allowedArtifactTypes": [],
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30157093/",
+          "evidenceType": "route-or-companion-context",
+          "finding": "PubMed route preserves PMID 30157093 bibliographic identity for Practice Bulletin No. 200."
+        },
+        {
+          "url": "https://www.acog.org/clinical/clinical-guidance/practice-bulletin/articles/2018/11/early-pregnancy-loss",
+          "evidenceType": "original-local-review-issue-route",
+          "finding": "Original registered source for C2LTB6-EXT-013 required source-resolution before artifact fill."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-sixth-batch-manual-fulltext-extraction-register.json",
+          "evidenceType": "manual-fulltext-extraction-register",
+          "finding": "Local manual/fulltext extraction row provides access, route, lineage and transfer-boundary context."
+        }
+      ],
+      "nextAction": "Keep as route/context evidence or obtain authorized/full source text before repeating manual extraction and fresh review."
+    },
+    {
+      "reviewId": "C2LTB6-MFFRV-014",
+      "batchId": "C2-LT-B6",
+      "manualExtractionId": "C2LTB6-MFEXT-014",
+      "originTaskId": "C2LTB6-EXT-013",
+      "sourceResolutionId": "C2LTB6-SRR-005",
+      "domainId": "pregnancy-loss-stillbirth-bereavement-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/pregnancy-loss-stillbirth-bereavement-continuity",
+      "candidateId": "C2LTB6-SRR-005-CAND-03",
+      "sourceTitle": "ACOG Practice Bulletin No. 200 Summary: Early Pregnancy Loss",
+      "sourceUrl": "https://journals.lww.com/greenjournal/fulltext/2018/11000/acog_practice_bulletin_no__200_summary__early.36.aspx",
+      "freshReviewDate": "2026-07-03",
+      "freshReviewMode": "manual-fulltext-extraction-independent-fresh-review",
+      "sourceIdentityVerdict": "supported-route-identity",
+      "sourceAccessVerdict": "publisher-summary-route-accessible",
+      "sourceContextVerdict": "route-or-companion-context-only-no-direct-artifact-fill",
+      "currentnessVerdict": "currentness is bounded to the route and version captured by source-resolution/manual extraction; no later guideline, policy, clinical or legal update is inferred.",
+      "exactClaimVerdict": "route-scope-supported-exact-claim-not-admitted",
+      "endpointVariableVerdict": "endpoint-vocabulary-context-only",
+      "transferBoundaryVerdict": "transfer-boundary-present-and-required",
+      "reviewerVerdict": "blocked-or-context-only",
+      "freshReviewFinding": "Fresh review preserves ACOG Practice Bulletin No. 200 Summary: Early Pregnancy Loss as journal-summary-route context only; current route, summary, bibliographic, companion-lineage or policy-resource status is insufficient for direct artifact fill.",
+      "downgradeOrBlockReason": "Route-only, summary, bibliographic, companion-lineage, implementation-platform or policy-resource limitation remains unresolved; no direct reviewed artifact may be created from this row.",
+      "artifactPromotionDecision": "route-only-or-companion-context-no-direct-artifact-promotion",
+      "allowedArtifactTypes": [],
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://journals.lww.com/greenjournal/fulltext/2018/11000/acog_practice_bulletin_no__200_summary__early.36.aspx",
+          "evidenceType": "route-or-companion-context",
+          "finding": "LWW summary route can help identify the bulletin family but does not replace full Practice Bulletin manual review."
+        },
+        {
+          "url": "https://www.acog.org/clinical/clinical-guidance/practice-bulletin/articles/2018/11/early-pregnancy-loss",
+          "evidenceType": "original-local-review-issue-route",
+          "finding": "Original registered source for C2LTB6-EXT-013 required source-resolution before artifact fill."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-sixth-batch-manual-fulltext-extraction-register.json",
+          "evidenceType": "manual-fulltext-extraction-register",
+          "finding": "Local manual/fulltext extraction row provides access, route, lineage and transfer-boundary context."
+        }
+      ],
+      "nextAction": "Keep as route/context evidence or obtain authorized/full source text before repeating manual extraction and fresh review."
+    },
+    {
+      "reviewId": "C2LTB6-MFFRV-015",
+      "batchId": "C2-LT-B6",
+      "manualExtractionId": "C2LTB6-MFEXT-015",
+      "originTaskId": "C2LTB6-EXT-015",
+      "sourceResolutionId": "C2LTB6-SRR-006",
+      "domainId": "lactation-breastfeeding-support-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/lactation-breastfeeding-support-continuity",
+      "candidateId": "C2LTB6-SRR-006-CAND-01",
+      "sourceTitle": "Policy Statement: Breastfeeding and the Use of Human Milk",
+      "sourceUrl": "https://publications.aap.org/pediatrics/article/150/1/e2022057988/188347/Policy-Statement-Breastfeeding-and-the-Use-of",
+      "freshReviewDate": "2026-07-03",
+      "freshReviewMode": "manual-fulltext-extraction-independent-fresh-review",
+      "sourceIdentityVerdict": "supported-route-identity",
+      "sourceAccessVerdict": "publisher-policy-article-route-accessible",
+      "sourceContextVerdict": "sufficient-for-bounded-artifact-prep-after-route-and-currentness-review",
+      "currentnessVerdict": "currentness is bounded to the route and version captured by source-resolution/manual extraction; no later guideline, policy, clinical or legal update is inferred.",
+      "exactClaimVerdict": "bounded-claim-supported",
+      "endpointVariableVerdict": "endpoint-vocabulary-supported-with-review-boundary",
+      "transferBoundaryVerdict": "transfer-boundary-present-and-required",
+      "reviewerVerdict": "support-with-boundary",
+      "freshReviewFinding": "Fresh review supports Policy Statement: Breastfeeding and the Use of Human Milk as a bounded manual/fulltext or official guidance context for lactation-breastfeeding-support-continuity; it can enter bounded artifact preparation with exact source-scope and transfer-boundary constraints.",
+      "downgradeOrBlockReason": "Eligible only inside the captured source route/version and after preserving guideline, policy, population, endpoint, uncertainty and prohibited-use boundaries.",
+      "artifactPromotionDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "allowedArtifactTypes": [
+        "reviewed-source-card",
+        "reviewed-variable-card",
+        "reviewed-endpoint-card",
+        "reviewed-uncertainty-card",
+        "reviewed-transfer-boundary-card",
+        "reviewed-downgrade-check"
+      ],
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://publications.aap.org/pediatrics/article/150/1/e2022057988/188347/Policy-Statement-Breastfeeding-and-the-Use-of",
+          "evidenceType": "open-fulltext-or-official-guidance-context",
+          "finding": "AAP Pediatrics article route is the publisher route for policy-statement review before artifact fill."
+        },
+        {
+          "url": "https://publications.aap.org/pediatrics/article/150/1/e2022057988/188347/Policy-Statement-Breastfeeding-and-the-Use-of",
+          "evidenceType": "original-local-review-issue-route",
+          "finding": "Original registered source for C2LTB6-EXT-015 required source-resolution before artifact fill."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-sixth-batch-manual-fulltext-extraction-register.json",
+          "evidenceType": "manual-fulltext-extraction-register",
+          "finding": "Local manual/fulltext extraction row provides access, route, lineage and transfer-boundary context."
+        }
+      ],
+      "nextAction": "Prepare bounded artifacts for this retained source route and keep paired route-only or companion rows as context only."
+    },
+    {
+      "reviewId": "C2LTB6-MFFRV-016",
+      "batchId": "C2-LT-B6",
+      "manualExtractionId": "C2LTB6-MFEXT-016",
+      "originTaskId": "C2LTB6-EXT-015",
+      "sourceResolutionId": "C2LTB6-SRR-006",
+      "domainId": "lactation-breastfeeding-support-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/lactation-breastfeeding-support-continuity",
+      "candidateId": "C2LTB6-SRR-006-CAND-02",
+      "sourceTitle": "Policy Statement: Breastfeeding and the Use of Human Milk",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/35921640/",
+      "freshReviewDate": "2026-07-03",
+      "freshReviewMode": "manual-fulltext-extraction-independent-fresh-review",
+      "sourceIdentityVerdict": "supported-route-identity",
+      "sourceAccessVerdict": "pubmed-bibliographic-route-only",
+      "sourceContextVerdict": "route-or-companion-context-only-no-direct-artifact-fill",
+      "currentnessVerdict": "currentness is bounded to the route and version captured by source-resolution/manual extraction; no later guideline, policy, clinical or legal update is inferred.",
+      "exactClaimVerdict": "route-scope-supported-exact-claim-not-admitted",
+      "endpointVariableVerdict": "endpoint-vocabulary-context-only",
+      "transferBoundaryVerdict": "transfer-boundary-present-and-required",
+      "reviewerVerdict": "blocked-or-context-only",
+      "freshReviewFinding": "Fresh review preserves Policy Statement: Breastfeeding and the Use of Human Milk as pubmed-bibliographic-route context only; current route, summary, bibliographic, companion-lineage or policy-resource status is insufficient for direct artifact fill.",
+      "downgradeOrBlockReason": "Route-only, summary, bibliographic, companion-lineage, implementation-platform or policy-resource limitation remains unresolved; no direct reviewed artifact may be created from this row.",
+      "artifactPromotionDecision": "route-only-or-companion-context-no-direct-artifact-promotion",
+      "allowedArtifactTypes": [],
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35921640/",
+          "evidenceType": "route-or-companion-context",
+          "finding": "PubMed route preserves PMID 35921640 bibliographic identity for the AAP policy statement."
+        },
+        {
+          "url": "https://publications.aap.org/pediatrics/article/150/1/e2022057988/188347/Policy-Statement-Breastfeeding-and-the-Use-of",
+          "evidenceType": "original-local-review-issue-route",
+          "finding": "Original registered source for C2LTB6-EXT-015 required source-resolution before artifact fill."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-sixth-batch-manual-fulltext-extraction-register.json",
+          "evidenceType": "manual-fulltext-extraction-register",
+          "finding": "Local manual/fulltext extraction row provides access, route, lineage and transfer-boundary context."
+        }
+      ],
+      "nextAction": "Keep as route/context evidence or obtain authorized/full source text before repeating manual extraction and fresh review."
+    },
+    {
+      "reviewId": "C2LTB6-MFFRV-017",
+      "batchId": "C2-LT-B6",
+      "manualExtractionId": "C2LTB6-MFEXT-017",
+      "originTaskId": "C2LTB6-EXT-020",
+      "sourceResolutionId": "C2LTB6-SRR-007",
+      "domainId": "pediatric-lead-screening-environmental-followup-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/pediatric-lead-screening-environmental-followup-continuity",
+      "candidateId": "C2LTB6-SRR-007-CAND-01",
+      "sourceTitle": "Prevention of Childhood Lead Toxicity",
+      "sourceUrl": "https://publications.aap.org/pediatrics/article/138/1/e20161493/52600/Prevention-of-Childhood-Lead-Toxicity",
+      "freshReviewDate": "2026-07-03",
+      "freshReviewMode": "manual-fulltext-extraction-independent-fresh-review",
+      "sourceIdentityVerdict": "supported-route-identity",
+      "sourceAccessVerdict": "publisher-policy-article-route-accessible",
+      "sourceContextVerdict": "sufficient-for-bounded-artifact-prep-after-route-and-currentness-review",
+      "currentnessVerdict": "currentness is bounded to the route and version captured by source-resolution/manual extraction; no later guideline, policy, clinical or legal update is inferred.",
+      "exactClaimVerdict": "bounded-claim-supported",
+      "endpointVariableVerdict": "endpoint-vocabulary-supported-with-review-boundary",
+      "transferBoundaryVerdict": "transfer-boundary-present-and-required",
+      "reviewerVerdict": "support-with-boundary",
+      "freshReviewFinding": "Fresh review supports Prevention of Childhood Lead Toxicity as a bounded manual/fulltext or official guidance context for pediatric-lead-screening-environmental-followup-continuity; it can enter bounded artifact preparation with exact source-scope and transfer-boundary constraints.",
+      "downgradeOrBlockReason": "Eligible only inside the captured source route/version and after preserving guideline, policy, population, endpoint, uncertainty and prohibited-use boundaries.",
+      "artifactPromotionDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "allowedArtifactTypes": [
+        "reviewed-source-card",
+        "reviewed-variable-card",
+        "reviewed-endpoint-card",
+        "reviewed-uncertainty-card",
+        "reviewed-transfer-boundary-card",
+        "reviewed-downgrade-check"
+      ],
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://publications.aap.org/pediatrics/article/138/1/e20161493/52600/Prevention-of-Childhood-Lead-Toxicity",
+          "evidenceType": "open-fulltext-or-official-guidance-context",
+          "finding": "AAP Pediatrics article route identifies the policy statement; original URL should normalize to the canonical publisher route before manual review."
+        },
+        {
+          "url": "https://publications.aap.org/pediatrics/article/138/1/e20161493/52617/Prevention-of-Childhood-Lead-Toxicity",
+          "evidenceType": "original-local-review-issue-route",
+          "finding": "Original registered source for C2LTB6-EXT-020 required source-resolution before artifact fill."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-sixth-batch-manual-fulltext-extraction-register.json",
+          "evidenceType": "manual-fulltext-extraction-register",
+          "finding": "Local manual/fulltext extraction row provides access, route, lineage and transfer-boundary context."
+        }
+      ],
+      "nextAction": "Prepare bounded artifacts for this retained source route and keep paired route-only or companion rows as context only."
+    },
+    {
+      "reviewId": "C2LTB6-MFFRV-018",
+      "batchId": "C2-LT-B6",
+      "manualExtractionId": "C2LTB6-MFEXT-018",
+      "originTaskId": "C2LTB6-EXT-020",
+      "sourceResolutionId": "C2LTB6-SRR-007",
+      "domainId": "pediatric-lead-screening-environmental-followup-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/pediatric-lead-screening-environmental-followup-continuity",
+      "candidateId": "C2LTB6-SRR-007-CAND-02",
+      "sourceTitle": "Prevention of Childhood Lead Toxicity",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/27325637/",
+      "freshReviewDate": "2026-07-03",
+      "freshReviewMode": "manual-fulltext-extraction-independent-fresh-review",
+      "sourceIdentityVerdict": "supported-route-identity",
+      "sourceAccessVerdict": "pubmed-bibliographic-route-only",
+      "sourceContextVerdict": "route-or-companion-context-only-no-direct-artifact-fill",
+      "currentnessVerdict": "currentness is bounded to the route and version captured by source-resolution/manual extraction; no later guideline, policy, clinical or legal update is inferred.",
+      "exactClaimVerdict": "route-scope-supported-exact-claim-not-admitted",
+      "endpointVariableVerdict": "endpoint-vocabulary-context-only",
+      "transferBoundaryVerdict": "transfer-boundary-present-and-required",
+      "reviewerVerdict": "blocked-or-context-only",
+      "freshReviewFinding": "Fresh review preserves Prevention of Childhood Lead Toxicity as pubmed-bibliographic-route context only; current route, summary, bibliographic, companion-lineage or policy-resource status is insufficient for direct artifact fill.",
+      "downgradeOrBlockReason": "Route-only, summary, bibliographic, companion-lineage, implementation-platform or policy-resource limitation remains unresolved; no direct reviewed artifact may be created from this row.",
+      "artifactPromotionDecision": "route-only-or-companion-context-no-direct-artifact-promotion",
+      "allowedArtifactTypes": [],
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/27325637/",
+          "evidenceType": "route-or-companion-context",
+          "finding": "PubMed route preserves PMID 27325637 bibliographic identity for the AAP policy statement."
+        },
+        {
+          "url": "https://publications.aap.org/pediatrics/article/138/1/e20161493/52617/Prevention-of-Childhood-Lead-Toxicity",
+          "evidenceType": "original-local-review-issue-route",
+          "finding": "Original registered source for C2LTB6-EXT-020 required source-resolution before artifact fill."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-sixth-batch-manual-fulltext-extraction-register.json",
+          "evidenceType": "manual-fulltext-extraction-register",
+          "finding": "Local manual/fulltext extraction row provides access, route, lineage and transfer-boundary context."
+        }
+      ],
+      "nextAction": "Keep as route/context evidence or obtain authorized/full source text before repeating manual extraction and fresh review."
+    },
+    {
+      "reviewId": "C2LTB6-MFFRV-019",
+      "batchId": "C2-LT-B6",
+      "manualExtractionId": "C2LTB6-MFEXT-019",
+      "originTaskId": "C2LTB6-EXT-020",
+      "sourceResolutionId": "C2LTB6-SRR-007",
+      "domainId": "pediatric-lead-screening-environmental-followup-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/pediatric-lead-screening-environmental-followup-continuity",
+      "candidateId": "C2LTB6-SRR-007-CAND-03",
+      "sourceTitle": "Policy Resources | Childhood Lead Poisoning Prevention",
+      "sourceUrl": "https://www.cdc.gov/lead-prevention/php/policy-resources/index.html",
+      "freshReviewDate": "2026-07-03",
+      "freshReviewMode": "manual-fulltext-extraction-independent-fresh-review",
+      "sourceIdentityVerdict": "supported-route-identity",
+      "sourceAccessVerdict": "official-policy-resource-route-accessible",
+      "sourceContextVerdict": "route-or-companion-context-only-no-direct-artifact-fill",
+      "currentnessVerdict": "currentness is bounded to the route and version captured by source-resolution/manual extraction; no later guideline, policy, clinical or legal update is inferred.",
+      "exactClaimVerdict": "route-scope-supported-exact-claim-not-admitted",
+      "endpointVariableVerdict": "endpoint-vocabulary-context-only",
+      "transferBoundaryVerdict": "transfer-boundary-present-and-required",
+      "reviewerVerdict": "blocked-or-context-only",
+      "freshReviewFinding": "Fresh review preserves Policy Resources | Childhood Lead Poisoning Prevention as cdc-policy-resource-route context only; current route, summary, bibliographic, companion-lineage or policy-resource status is insufficient for direct artifact fill.",
+      "downgradeOrBlockReason": "Route-only, summary, bibliographic, companion-lineage, implementation-platform or policy-resource limitation remains unresolved; no direct reviewed artifact may be created from this row.",
+      "artifactPromotionDecision": "route-only-or-companion-context-no-direct-artifact-promotion",
+      "allowedArtifactTypes": [],
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://www.cdc.gov/lead-prevention/php/policy-resources/index.html",
+          "evidenceType": "route-or-companion-context",
+          "finding": "CDC policy-resource route references the AAP policy statement and can support source-route verification only, not independent evidence counting."
+        },
+        {
+          "url": "https://publications.aap.org/pediatrics/article/138/1/e20161493/52617/Prevention-of-Childhood-Lead-Toxicity",
+          "evidenceType": "original-local-review-issue-route",
+          "finding": "Original registered source for C2LTB6-EXT-020 required source-resolution before artifact fill."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-sixth-batch-manual-fulltext-extraction-register.json",
+          "evidenceType": "manual-fulltext-extraction-register",
+          "finding": "Local manual/fulltext extraction row provides access, route, lineage and transfer-boundary context."
+        }
+      ],
+      "nextAction": "Keep as route/context evidence or obtain authorized/full source text before repeating manual extraction and fresh review."
+    }
+  ],
+  "indexRequirements": [
+    "README.md",
+    "AGENTS.md",
+    "docs/AGENTS.md",
+    "docs/reference/README.md",
+    "docs/reference/human-infra-maturity-roadmap.md",
+    "tools/README.md",
+    "tools/AGENTS.md"
+  ]
+}
