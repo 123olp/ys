@@ -1,0 +1,25 @@
+{
+  "schemaVersion": "human-infra.nhanes-public-lmf-aggregate-pilot-validation.v1",
+  "status": "pass",
+  "generatedAt": "2026-07-03T07:29:06.634551+00:00",
+  "aggregatePath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_aggregate_pilot.json",
+  "aggregateSha256": "9afbb767e1266d89ce3b84e6a2b9c23f453f4af605718f6fded0723ababc1897",
+  "validationPath": "web/src/data/life-path-nhanes-public-lmf-aggregate-pilot-validation.json",
+  "summary": {
+    "aggregateCells": 8,
+    "eligibleAdultRecords": 5809,
+    "eligibleAdultDeaths": 145,
+    "errors": []
+  },
+  "boundary": {
+    "rawRowsPersisted": false,
+    "individualRowsInOutput": false,
+    "individualPredictionAllowed": false,
+    "individualDeathDateAllowed": false,
+    "calibrationClaimed": false,
+    "surveyPopulationInferenceClaimed": false,
+    "causalClaimAllowed": false,
+    "medicalAdviceAllowed": false
+  },
+  "nonProofNote": "This validation proves only that the public NHANES-LMF aggregate pilot has official-source hashes, aggregate cells and prohibited-use boundaries. It does not prove calibrated prediction, survey-weighted inference, external validation, intervention effects or individual use."
+}

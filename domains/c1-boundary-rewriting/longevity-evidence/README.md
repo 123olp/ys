@@ -101,6 +101,7 @@ longevity-evidence/
 │   │   ├── lev_route_cards.tsv
 │   │   ├── life_path_calibration_readiness.json
 │   │   ├── life_path_data_source_candidates.json
+│   │   ├── life_path_nhanes_public_lmf_aggregate_pilot.json
 │   │   ├── life_path_public_mortality_anchor.json
 │   │   ├── life_path_nhats_acquisition_readiness.json
 │   │   ├── life_path_nhats_official_source_refresh_register.json
@@ -150,6 +151,7 @@ longevity-evidence/
 └── scripts/
     ├── README.md
     ├── audit_life_path_toy_model.py
+    ├── build_nhanes_public_lmf_aggregate_pilot.py
     ├── build_public_mortality_anchor.py
     ├── collect_core_data.py
     ├── collect_mvp_data.py
@@ -168,6 +170,7 @@ longevity-evidence/
     ├── validate_nhats_missingness_route_map.py
     ├── validate_nhats_route_field_discovery.py
     ├── validate_nhats_l4_readiness_runway.py
+    ├── validate_nhanes_public_lmf_aggregate_pilot.py
     └── validate_nhats_survey_design_plan.py
 ```
 
@@ -198,6 +201,8 @@ longevity-evidence/
 
 `data/manual/life_path_nhats_l4_readiness_runway.json` 与 `scripts/validate_nhats_l4_readiness_runway.py` 维护 NHATS 从 L2 设计资产进入 L4 aggregate-calibrated research model 前的 readiness runway；它只把 12 个 pass / partial / blocked gates 和上游 source hash 接入审计，导出 `web/src/data/life-path-nhats-l4-readiness-runway-validation.json`，不授权真实提取、校准预测、干预排序、个体死亡日期或个体决策支持。
 
+`data/manual/life_path_nhanes_public_lmf_aggregate_pilot.json`、`web/src/data/life-path-nhanes-public-lmf-aggregate-pilot-validation.json`、`scripts/build_nhanes_public_lmf_aggregate_pilot.py` 与 `scripts/validate_nhanes_public_lmf_aggregate_pilot.py` 维护第一条公开真实死亡结局聚合试运行路径：从 CDC/NCHS public-use NHANES 2017-2018 LMF 和 DEMO XPT 下载到临时目录、按 SEQN 内存连接、按 sex × age band 导出 8 个粗聚合单元，并由验证器确认 source hash、聚合计数、禁止行级字段和禁止用途边界。该切片只证明公开数据管线 smoke test，不证明 survey-weighted population inference、校准预测、因果效应、医学建议或个体死亡日期输出。
+
 `data/manual/life_path_nhats_colectica_capture_task_register.json` 与 `scripts/validate_nhats_colectica_capture_task_register.py` 维护 NHATS Colectica 变量页捕获任务清单；它把 authenticated capture template 展开为 9 个 route-field 组和 39 个 pending 变量 / 输出任务，导出 `web/src/data/life-path-nhats-colectica-capture-task-register-validation.json`，只证明任务清单已准备，不表示 Colectica 登录、变量页捕获、值标签确认、route classifier、真实提取、校准或个体预测已允许。
 
 `data/manual/life_path_nhats_official_source_refresh_register.json` 与 `scripts/validate_nhats_official_source_refresh.py` 维护 NHATS 官方公开来源刷新证据；它只记录 Data Access、Cross-Year Search、Conditions of Use、R13/R14 文件页和 Colectica 技术指南的 HTTP 状态、内容长度和 SHA-256，导出 `web/src/data/life-path-nhats-official-source-refresh-validation.json`，并把 acquisition readiness 中的 official-source-refresh 门升为 ready。该门不授权数据下载、抽取、校准、公开导出或个体预测。
@@ -211,6 +216,8 @@ python3 domains/c1-boundary-rewriting/longevity-evidence/scripts/collect_mvp_dat
 python3 domains/c1-boundary-rewriting/longevity-evidence/scripts/collect_core_data.py
 python3 domains/c1-boundary-rewriting/longevity-evidence/scripts/build_public_mortality_anchor.py
 python3 domains/c1-boundary-rewriting/longevity-evidence/scripts/validate_public_mortality_anchor.py
+python3 domains/c1-boundary-rewriting/longevity-evidence/scripts/build_nhanes_public_lmf_aggregate_pilot.py
+python3 domains/c1-boundary-rewriting/longevity-evidence/scripts/validate_nhanes_public_lmf_aggregate_pilot.py
 python3 domains/c1-boundary-rewriting/longevity-evidence/scripts/validate_nhats_official_source_refresh.py
 python3 domains/c1-boundary-rewriting/longevity-evidence/scripts/validate_nhats_acquisition_readiness.py
 python3 domains/c1-boundary-rewriting/longevity-evidence/scripts/validate_nhats_controlled_storage_destruction_plan.py

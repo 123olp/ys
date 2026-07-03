@@ -1,0 +1,180 @@
+{
+  "schemaVersion": "human-infra.nhanes-public-lmf-aggregate-pilot.v1",
+  "status": "public-real-data-aggregate-pilot-not-weighted-not-calibrated",
+  "generatedAt": "2026-07-03T07:17:53.175386+00:00",
+  "sourceAuthority": "CDC/NCHS public-use NHANES Linked Mortality File",
+  "sourceUrls": {
+    "linkedMortalityPage": "https://www.cdc.gov/nchs/linked-data/mortality-files/index.html",
+    "fileDescription": "https://www.cdc.gov/nchs/data/datalinkage/public-use-linked-mortality-file-description.pdf",
+    "dataDictionary": "https://www.cdc.gov/nchs/data/datalinkage/public-use-linked-mortality-files-data-dictionary.pdf",
+    "rReadInProgram": "https://ftp.cdc.gov/pub/Health_Statistics/NCHS/datalinkage/linked_mortality/R_ReadInProgramAllSurveys.R",
+    "nhanes2017_2018PublicLmf": "https://ftp.cdc.gov/pub/Health_Statistics/NCHS/datalinkage/linked_mortality/NHANES_2017_2018_MORT_2019_PUBLIC.dat",
+    "nhanes2017_2018DemoXpt": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+    "nhanes2017_2018DemoDocumentation": "https://wwwn.cdc.gov/Nchs/Nhanes/2017-2018/DEMO_J.htm"
+  },
+  "sourceHashes": {
+    "nhanesPublicLmf2017_2018Sha256": "42989d4fe35754d696b770f26553b0a309c110a9e26ab0ee504be3eae5987523",
+    "nhanesDemo2017_2018Sha256": "c0b46e0345ea19404928656277c8b0d10b0cca348a9b2fe4fc3c67e8b7ee73ec",
+    "cdcRReadInProgramSha256": "04c514fd6b798ceb7eeed1afea61f42c6cdd270734c1483e1803027ff9066ac3"
+  },
+  "scope": {
+    "survey": "NHANES",
+    "cycle": "2017-2018",
+    "mortalityFollowupRelease": "2019 public-use LMF",
+    "population": "public-use eligible adults with DEMO and LMF join",
+    "joinKey": "SEQN",
+    "outcome": "all-cause final mortality status from public-use LMF",
+    "timeAtRisk": "PERMTH_EXM public-use follow-up months from MEC exam",
+    "grouping": [
+      "sex",
+      "ageBand"
+    ],
+    "minimumCellCount": 20
+  },
+  "lmfFixedWidthContract": {
+    "seqn": "columns 1-6",
+    "eligstat": "column 15",
+    "mortstat": "column 16",
+    "ucodLeading": "columns 17-19",
+    "diabetes": "column 20",
+    "hyperten": "column 21",
+    "permthInt": "columns 43-45",
+    "permthExm": "columns 46-48"
+  },
+  "modelUseBoundary": {
+    "allowedUses": [
+      "aggregate-only public real-data pilot",
+      "pipeline join and aggregation smoke test",
+      "model admission boundary testing",
+      "baseline mortality endpoint feasibility check"
+    ],
+    "blockedUses": [
+      "individual prediction",
+      "individual death-date output",
+      "medical advice",
+      "calibrated Human Infra prediction",
+      "intervention effect estimation",
+      "causal claim",
+      "survey-population inference",
+      "small-cell public export"
+    ],
+    "rawRowsPersisted": false,
+    "individualRowsInOutput": false,
+    "surveyVarianceEstimated": false,
+    "weightedPopulationEstimateClaimed": false,
+    "calibrationClaimed": false
+  },
+  "aggregate": {
+    "rawLmfRecordsReadInTemp": 9254,
+    "rawDemoRecordsReadInTemp": 9254,
+    "joinedRecordsInTemp": 9254,
+    "eligibleAdultRecordsInTemp": 5809,
+    "eligibleAdultDeaths": 145,
+    "aggregateCells": [
+      {
+        "sex": "female",
+        "ageBand": "18-39",
+        "records": 1025,
+        "suppressed": false,
+        "deaths": 1,
+        "assumedAlive": 1024,
+        "personMonthsExamTotal": 23221.0,
+        "meanFollowupYearsExam": 1.887886,
+        "unweightedMortalityFraction": 0.000976,
+        "mecWeightSumDiagnostic": 47296901.662,
+        "mecWeightedDeathCountDiagnostic": 12435.007
+      },
+      {
+        "sex": "female",
+        "ageBand": "40-59",
+        "records": 910,
+        "suppressed": false,
+        "deaths": 6,
+        "assumedAlive": 904,
+        "personMonthsExamTotal": 20746.0,
+        "meanFollowupYearsExam": 1.899817,
+        "unweightedMortalityFraction": 0.006593,
+        "mecWeightSumDiagnostic": 42230082.596,
+        "mecWeightedDeathCountDiagnostic": 260943.678
+      },
+      {
+        "sex": "female",
+        "ageBand": "60-79",
+        "records": 835,
+        "suppressed": false,
+        "deaths": 21,
+        "assumedAlive": 814,
+        "personMonthsExamTotal": 18264.0,
+        "meanFollowupYearsExam": 1.822754,
+        "unweightedMortalityFraction": 0.02515,
+        "mecWeightSumDiagnostic": 31278017.442,
+        "mecWeightedDeathCountDiagnostic": 614262.376
+      },
+      {
+        "sex": "female",
+        "ageBand": "80+",
+        "records": 221,
+        "suppressed": false,
+        "deaths": 26,
+        "assumedAlive": 195,
+        "personMonthsExamTotal": 4420.0,
+        "meanFollowupYearsExam": 1.666667,
+        "unweightedMortalityFraction": 0.117647,
+        "mecWeightSumDiagnostic": 6588640.113,
+        "mecWeightedDeathCountDiagnostic": 821865.478
+      },
+      {
+        "sex": "male",
+        "ageBand": "18-39",
+        "records": 930,
+        "suppressed": false,
+        "deaths": 4,
+        "assumedAlive": 926,
+        "personMonthsExamTotal": 20699.0,
+        "meanFollowupYearsExam": 1.854749,
+        "unweightedMortalityFraction": 0.004301,
+        "mecWeightSumDiagnostic": 47058515.986,
+        "mecWeightedDeathCountDiagnostic": 288336.932
+      },
+      {
+        "sex": "male",
+        "ageBand": "40-59",
+        "records": 805,
+        "suppressed": false,
+        "deaths": 13,
+        "assumedAlive": 792,
+        "personMonthsExamTotal": 18531.0,
+        "meanFollowupYearsExam": 1.918323,
+        "unweightedMortalityFraction": 0.016149,
+        "mecWeightSumDiagnostic": 40202997.897,
+        "mecWeightedDeathCountDiagnostic": 587872.131
+      },
+      {
+        "sex": "male",
+        "ageBand": "60-79",
+        "records": 878,
+        "suppressed": false,
+        "deaths": 41,
+        "assumedAlive": 837,
+        "personMonthsExamTotal": 19220.0,
+        "meanFollowupYearsExam": 1.824222,
+        "unweightedMortalityFraction": 0.046697,
+        "mecWeightSumDiagnostic": 27137605.37,
+        "mecWeightedDeathCountDiagnostic": 673499.091
+      },
+      {
+        "sex": "male",
+        "ageBand": "80+",
+        "records": 205,
+        "suppressed": false,
+        "deaths": 33,
+        "assumedAlive": 172,
+        "personMonthsExamTotal": 4106.0,
+        "meanFollowupYearsExam": 1.669106,
+        "unweightedMortalityFraction": 0.160976,
+        "mecWeightSumDiagnostic": 4444008.887,
+        "mecWeightedDeathCountDiagnostic": 684024.023
+      }
+    ]
+  }
+}

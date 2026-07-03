@@ -1,6 +1,6 @@
 {
   "schemaVersion": "human-infra.life-path-toy-audit.v1",
-  "generatedAt": "2026-07-03T07:02:20.091419+00:00",
+  "generatedAt": "2026-07-03T07:28:32.688388+00:00",
   "modelPath": "web/src/data/life-path-toy-model.json",
   "modelSha256": "a4c92209d79d20579bf1f575d5ebf07ffe5be9ccaf6bf3f3eef08efa287b5377",
   "overallStatus": "PASS",
@@ -126,6 +126,11 @@
       "detail": "public mortality anchor must remain aggregate-only and calibration-blocked"
     },
     {
+      "id": "readiness-public-linked-mortality-aggregate-pilot",
+      "status": "PASS",
+      "detail": "public linked mortality pilot must remain aggregate-only, source-bound and calibration-blocked"
+    },
+    {
       "id": "readiness-validation-plan",
       "status": "PASS",
       "detail": "validation plan must include internal/external validation fields and not-started status"
@@ -159,6 +164,51 @@
       "id": "readiness-upgrade-gate",
       "status": "PASS",
       "detail": "upgrade gate must keep the current decision at cannot-calibrate-yet"
+    },
+    {
+      "id": "nhanes-public-lmf-aggregate-pilot-exists",
+      "status": "PASS",
+      "detail": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_aggregate_pilot.json"
+    },
+    {
+      "id": "nhanes-public-lmf-aggregate-pilot-validation-exists",
+      "status": "PASS",
+      "detail": "web/src/data/life-path-nhanes-public-lmf-aggregate-pilot-validation.json"
+    },
+    {
+      "id": "nhanes-public-lmf-aggregate-pilot-schema",
+      "status": "PASS",
+      "detail": "schemaVersion='human-infra.nhanes-public-lmf-aggregate-pilot.v1'"
+    },
+    {
+      "id": "nhanes-public-lmf-source-hashes",
+      "status": "PASS",
+      "detail": "public LMF, DEMO XPT and CDC R read-in program hashes must be recorded"
+    },
+    {
+      "id": "nhanes-public-lmf-boundary",
+      "status": "PASS",
+      "detail": "aggregate pilot must block rows, individual prediction, death dates, calibration, survey inference and causal claims"
+    },
+    {
+      "id": "nhanes-public-lmf-aggregate-cells",
+      "status": "PASS",
+      "detail": "aggregate output must contain 8 unsuppressed sex × age-band cells totaling 5809 adults and 145 deaths"
+    },
+    {
+      "id": "nhanes-public-lmf-validation-source-hash",
+      "status": "PASS",
+      "detail": "validation must point back to the current aggregate pilot path and sha256"
+    },
+    {
+      "id": "nhanes-public-lmf-validation-boundary",
+      "status": "PASS",
+      "detail": "validation must preserve aggregate-only, non-calibrated and non-individual-use boundaries"
+    },
+    {
+      "id": "nhanes-public-lmf-non-proof-note",
+      "status": "PASS",
+      "detail": "validation must state that it does not prove calibration, survey inference or individual use"
     },
     {
       "id": "data-sources-schema-version",
@@ -1727,7 +1777,7 @@
     }
   ],
   "summary": {
-    "pass": 344,
+    "pass": 354,
     "warn": 0,
     "fail": 0
   },
@@ -1765,7 +1815,7 @@
   ],
   "calibrationReadiness": {
     "path": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_calibration_readiness.json",
-    "sha256": "0f51dc87ed255704be46e6ede9553ed7dcfcb1b2d81beb92144f18990b3fb1af",
+    "sha256": "5967cc26559c9eb5be8935f3fd19e5bb38b91420d35a2ecbd04b615dd95017d8",
     "status": "PASS",
     "checks": [
       {
@@ -1819,6 +1869,11 @@
         "detail": "public mortality anchor must remain aggregate-only and calibration-blocked"
       },
       {
+        "id": "readiness-public-linked-mortality-aggregate-pilot",
+        "status": "PASS",
+        "detail": "public linked mortality pilot must remain aggregate-only, source-bound and calibration-blocked"
+      },
+      {
         "id": "readiness-validation-plan",
         "status": "PASS",
         "detail": "validation plan must include internal/external validation fields and not-started status"
@@ -1855,7 +1910,66 @@
       }
     ],
     "summary": {
-      "pass": 17,
+      "pass": 18,
+      "warn": 0,
+      "fail": 0
+    }
+  },
+  "nhanesPublicLmfAggregatePilot": {
+    "aggregatePath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_aggregate_pilot.json",
+    "aggregateSha256": "9afbb767e1266d89ce3b84e6a2b9c23f453f4af605718f6fded0723ababc1897",
+    "validationPath": "web/src/data/life-path-nhanes-public-lmf-aggregate-pilot-validation.json",
+    "validationSha256": "f7618ac121b851505f2ca44add43873294471202f019453728029204dc7487a2",
+    "status": "PASS",
+    "checks": [
+      {
+        "id": "nhanes-public-lmf-aggregate-pilot-exists",
+        "status": "PASS",
+        "detail": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_aggregate_pilot.json"
+      },
+      {
+        "id": "nhanes-public-lmf-aggregate-pilot-validation-exists",
+        "status": "PASS",
+        "detail": "web/src/data/life-path-nhanes-public-lmf-aggregate-pilot-validation.json"
+      },
+      {
+        "id": "nhanes-public-lmf-aggregate-pilot-schema",
+        "status": "PASS",
+        "detail": "schemaVersion='human-infra.nhanes-public-lmf-aggregate-pilot.v1'"
+      },
+      {
+        "id": "nhanes-public-lmf-source-hashes",
+        "status": "PASS",
+        "detail": "public LMF, DEMO XPT and CDC R read-in program hashes must be recorded"
+      },
+      {
+        "id": "nhanes-public-lmf-boundary",
+        "status": "PASS",
+        "detail": "aggregate pilot must block rows, individual prediction, death dates, calibration, survey inference and causal claims"
+      },
+      {
+        "id": "nhanes-public-lmf-aggregate-cells",
+        "status": "PASS",
+        "detail": "aggregate output must contain 8 unsuppressed sex × age-band cells totaling 5809 adults and 145 deaths"
+      },
+      {
+        "id": "nhanes-public-lmf-validation-source-hash",
+        "status": "PASS",
+        "detail": "validation must point back to the current aggregate pilot path and sha256"
+      },
+      {
+        "id": "nhanes-public-lmf-validation-boundary",
+        "status": "PASS",
+        "detail": "validation must preserve aggregate-only, non-calibrated and non-individual-use boundaries"
+      },
+      {
+        "id": "nhanes-public-lmf-non-proof-note",
+        "status": "PASS",
+        "detail": "validation must state that it does not prove calibration, survey inference or individual use"
+      }
+    ],
+    "summary": {
+      "pass": 9,
       "warn": 0,
       "fail": 0
     }
@@ -2181,7 +2295,7 @@
   },
   "nhatsAcquisitionReadinessValidation": {
     "path": "web/src/data/life-path-nhats-acquisition-readiness-validation.json",
-    "sha256": "2f76de53a420076b4e42389c24f1671d7602fc6acc73a802af61aeff151a3655",
+    "sha256": "2dbee3aedb10575e56cc8b676cc6810bf607e3ff6745cd1cbed51fe9b31b4198",
     "status": "PASS",
     "checks": [
       {
@@ -2275,7 +2389,7 @@
   },
   "nhatsRegistrationEvidenceTemplateValidation": {
     "path": "web/src/data/life-path-nhats-registration-evidence-template-validation.json",
-    "sha256": "e08f53b41f26ce6f40c625405ccde4cda40a3589a832291eb80929d1fe9abb1b",
+    "sha256": "6ab3198ddffefdb0d979e07022af1683e43b3916723e20b6f77c6fceb5298dfe",
     "status": "PASS",
     "checks": [
       {
@@ -2317,7 +2431,7 @@
   },
   "nhatsControlledStorageDestruction": {
     "path": "web/src/data/life-path-nhats-controlled-storage-destruction-validation.json",
-    "sha256": "c14af6047cf29cc3e8362ae7c519ad033134d34b1736384124af9ecbb4b14455",
+    "sha256": "4002cb1601546282c32d7b95083aa12857de12cb4eb36ca6276f68c7e01c61ec",
     "status": "PASS",
     "checks": [
       {
@@ -2364,7 +2478,7 @@
   },
   "nhatsSyntheticStorageDestructionDrill": {
     "path": "web/src/data/life-path-nhats-synthetic-storage-destruction-drill-validation.json",
-    "sha256": "badb45958989dc130f7dba91dcf117d2f4287f0d4300af19d2cd9a8cc600756a",
+    "sha256": "07b6c642f40a56fdc9dec24dd4fb11b803b6202875e94f818f223c3fe1cb6416",
     "status": "PASS",
     "checks": [
       {
@@ -2493,7 +2607,7 @@
   },
   "nhatsFileTierTableValidation": {
     "path": "web/src/data/life-path-nhats-file-tier-table-validation.json",
-    "sha256": "da921583a272dfeca3d58e213384a6654efa5f232684e84153078ad1367a2887",
+    "sha256": "5a9efab77dba801932f14e97584b71efb8a937632f396295a0ec78517df367fd",
     "status": "PASS",
     "checks": [
       {
@@ -3339,7 +3453,7 @@
     "registerPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_value_label_review_execution_register.json",
     "registerSha256": "de6d17f9470a563346f92884cead1eec35cf5a954245751b0135efc60672b042",
     "validationPath": "web/src/data/life-path-nhats-colectica-value-label-review-execution-validation.json",
-    "validationSha256": "d7263c76d569c292a0aff6332443c8b15caec7fbaf77f6c6489390ec1ca95ba2",
+    "validationSha256": "419d9a4e1766250c8b9fa653d76219b7702cbe61a7bc4c610665720ace7f1c62",
     "status": "PASS",
     "checks": [
       {
@@ -3403,7 +3517,7 @@
     "registerPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_access_route_probe_register.json",
     "registerSha256": "58941fde2c6a1c5488437a1ad447cb3dae2032739ef1ed579e29da98b96aaa89",
     "validationPath": "web/src/data/life-path-nhats-colectica-access-route-probe-validation.json",
-    "validationSha256": "51a2e59ee463ecf33eaca28f13d1b0df021bd8a82bdd4ce17ced5f3f0d109642",
+    "validationSha256": "67a33b0e28fa020ce3cfe333d4c1f0002585e5131bfd3fdc245740f7836aec2a",
     "status": "PASS",
     "checks": [
       {
@@ -3452,7 +3566,7 @@
     "templatePath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_authenticated_capture_template.json",
     "templateSha256": "dc097acfcb44007b42a25ce500c6cb1d23b1154f6620a7797445293817313eeb",
     "validationPath": "web/src/data/life-path-nhats-colectica-authenticated-capture-template-validation.json",
-    "validationSha256": "d2dd4e78d3707534285f99c3d7cb43ccfaf1230dede04eca5d2df27113f6743d",
+    "validationSha256": "7ba4525b46600c10f8f1908842a20c870cc430fc3577a04661adf2a302838979",
     "status": "PASS",
     "checks": [
       {
@@ -3501,7 +3615,7 @@
     "registerPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_capture_task_register.json",
     "registerSha256": "57764c73e38ecd6d3303d36a172d6b794671d34c3dcf1718e07fbe76c54720e0",
     "validationPath": "web/src/data/life-path-nhats-colectica-capture-task-register-validation.json",
-    "validationSha256": "cffd9f163ddd227d84603bd5dfd8b0a132bdc16b75410c05f7a809ff0f0cccb6",
+    "validationSha256": "716a7ff4e98e69441ea073acd73ced2adc6894eeeed19ee3f93c24270389cd2d",
     "status": "PASS",
     "checks": [
       {
@@ -3560,7 +3674,7 @@
     "readinessPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_route_classifier_readiness.json",
     "readinessSha256": "f0c0224317c9ee20e8de56dcddeadba85ae24d67b736782ba22de90e83109296",
     "validationPath": "web/src/data/life-path-nhats-route-classifier-readiness-validation.json",
-    "validationSha256": "b3dd6add20f471742fe12074ac7212fc683157efd1a01884b67845be6a0f9b7e",
+    "validationSha256": "a2d8afeaaaa0f2fd8624b7bc93a90567d96ecae5522567350fce5e7aaa506f46",
     "status": "PASS",
     "checks": [
       {
@@ -3624,7 +3738,7 @@
     "registerPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_l2_variable_family_admission_register.json",
     "registerSha256": "da1d444f452482f37aa7d7d12cd97c9deb0b2d6006540f76c5d2588389dffce3",
     "validationPath": "web/src/data/life-path-nhats-l2-variable-family-admission-validation.json",
-    "validationSha256": "87ea7b21c03cab8255ffe8d63ccd53cda8feb084c8346f9d2b732662a367cee6",
+    "validationSha256": "e0e46c3d19ea301498dad45f223dfee25da38ca8cfa8d4c7036d4798b483d6f0",
     "status": "PASS",
     "checks": [
       {
@@ -3678,7 +3792,7 @@
     "protocolPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_preoutcome_aggregation_protocol.json",
     "protocolSha256": "a2917d4bbb1682f5de6251fe919afae5da5bad681168475845a3a9c0a9a0747d",
     "validationPath": "web/src/data/life-path-nhats-preoutcome-aggregation-validation.json",
-    "validationSha256": "9914e5ce08cf6d69280120787998cc6d994b13ac22ce41aa079238991bdac971",
+    "validationSha256": "00cbeef26941257f747ac9150529ed78f47e74b9d6bbd0515df970c9e594c673",
     "status": "PASS",
     "checks": [
       {

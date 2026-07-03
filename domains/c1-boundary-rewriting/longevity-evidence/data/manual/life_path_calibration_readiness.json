@@ -186,6 +186,30 @@
     ],
     "boundary": "This public aggregate anchor improves the mortality baseline reference layer, but it does not satisfy real cohort access, field confirmation, censoring, survey design, calibration, external validation or individual-use gates."
   },
+  "publicLinkedMortalityAggregatePilot": {
+    "status": "available-for-public-real-data-aggregate-smoke-test",
+    "source": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_aggregate_pilot.json",
+    "validation": "web/src/data/life-path-nhanes-public-lmf-aggregate-pilot-validation.json",
+    "sourceAuthority": "CDC/NCHS public-use NHANES Linked Mortality File",
+    "scope": "NHANES 2017-2018 public-use eligible adults joined to the 2019 public-use Linked Mortality File and aggregated by sex and age band.",
+    "allowedUses": [
+      "public real-data aggregate pipeline smoke test",
+      "mortality endpoint feasibility check",
+      "SEQN join and fixed-width LMF parser contract test",
+      "model admission boundary testing"
+    ],
+    "blockedUses": [
+      "individual prediction",
+      "individual death-date output",
+      "medical advice",
+      "calibrated Human Infra prediction",
+      "intervention effect estimation",
+      "causal claim",
+      "survey-population inference",
+      "small-cell public export"
+    ],
+    "boundary": "This public linked-mortality aggregate pilot proves only that one official public NHANES-LMF path can be downloaded, joined in a temporary workspace and exported as coarse aggregate cells. It does not satisfy NHATS access, field/value confirmation, survey-design variance, external validation, calibration, intervention effects or individual-use gates."
+  },
   "censoringAndCompetingRisks": {
     "status": "required-before-calibration",
     "requiredFields": [

@@ -27,6 +27,22 @@ DEFAULT_READINESS = (
     / "manual"
     / "life_path_calibration_readiness.json"
 )
+DEFAULT_NHANES_PUBLIC_LMF_AGGREGATE_PILOT = (
+    REPO_ROOT
+    / "domains"
+    / "c1-boundary-rewriting"
+    / "longevity-evidence"
+    / "data"
+    / "manual"
+    / "life_path_nhanes_public_lmf_aggregate_pilot.json"
+)
+DEFAULT_NHANES_PUBLIC_LMF_AGGREGATE_PILOT_VALIDATION = (
+    REPO_ROOT
+    / "web"
+    / "src"
+    / "data"
+    / "life-path-nhanes-public-lmf-aggregate-pilot-validation.json"
+)
 DEFAULT_DATA_SOURCES = (
     REPO_ROOT
     / "domains"
@@ -438,6 +454,7 @@ REQUIRED_READINESS_SECTIONS = {
     "candidatePredictors",
     "dataRequirements",
     "publicAggregateMortalityAnchor",
+    "publicLinkedMortalityAggregatePilot",
     "censoringAndCompetingRisks",
     "validationPlan",
     "calibrationPlan",
@@ -952,6 +969,30 @@ def audit_readiness(readiness: dict[str, Any], readiness_path: Path) -> dict[str
         "public mortality anchor must remain aggregate-only and calibration-blocked",
     )
 
+    public_lmf_pilot = readiness.get("publicLinkedMortalityAggregatePilot")
+    public_lmf_pilot_ok = (
+        isinstance(public_lmf_pilot, dict)
+        and public_lmf_pilot.get("status")
+        == "available-for-public-real-data-aggregate-smoke-test"
+        and str(public_lmf_pilot.get("source", "")).endswith(
+            "life_path_nhanes_public_lmf_aggregate_pilot.json"
+        )
+        and str(public_lmf_pilot.get("validation", "")).endswith(
+            "life-path-nhanes-public-lmf-aggregate-pilot-validation.json"
+        )
+        and has_text(public_lmf_pilot.get("blockedUses", []), "individual")
+        and has_text(public_lmf_pilot.get("blockedUses", []), "death-date")
+        and has_text(public_lmf_pilot.get("blockedUses", []), "calibrated")
+        and has_text(public_lmf_pilot.get("blockedUses", []), "survey-population")
+        and has_text(public_lmf_pilot.get("blockedUses", []), "causal")
+    )
+    add_check(
+        checks,
+        "readiness-public-linked-mortality-aggregate-pilot",
+        status_from_bool(public_lmf_pilot_ok),
+        "public linked mortality pilot must remain aggregate-only, source-bound and calibration-blocked",
+    )
+
     validation_plan = readiness.get("validationPlan")
     validation_ok = (
         isinstance(validation_plan, dict)
@@ -1039,6 +1080,152 @@ def audit_readiness(readiness: dict[str, Any], readiness_path: Path) -> dict[str
     return {
         "path": str(readiness_path.relative_to(REPO_ROOT)),
         "sha256": sha256_file(readiness_path),
+        "status": "PASS" if summarize_checks(checks)["fail"] == 0 else "FAIL",
+        "checks": checks,
+        "summary": summarize_checks(checks),
+    }
+
+
+def audit_nhanes_public_lmf_aggregate_pilot(
+    aggregate_path: Path,
+    validation_path: Path,
+) -> dict[str, Any]:
+    checks: list[dict[str, Any]] = []
+    aggregate_exists = aggregate_path.exists()
+    validation_exists = validation_path.exists()
+    add_check(
+        checks,
+        "nhanes-public-lmf-aggregate-pilot-exists",
+        status_from_bool(aggregate_exists),
+        str(aggregate_path.relative_to(REPO_ROOT)),
+    )
+    add_check(
+        checks,
+        "nhanes-public-lmf-aggregate-pilot-validation-exists",
+        status_from_bool(validation_exists),
+        str(validation_path.relative_to(REPO_ROOT)),
+    )
+
+    aggregate = load_json(aggregate_path) if aggregate_exists else {}
+    validation = load_json(validation_path) if validation_exists else {}
+    schema_ok = (
+        aggregate.get("schemaVersion")
+        == "human-infra.nhanes-public-lmf-aggregate-pilot.v1"
+        and aggregate.get("status")
+        == "public-real-data-aggregate-pilot-not-weighted-not-calibrated"
+    )
+    add_check(
+        checks,
+        "nhanes-public-lmf-aggregate-pilot-schema",
+        status_from_bool(aggregate_exists and schema_ok),
+        f"schemaVersion={aggregate.get('schemaVersion')!r}",
+    )
+
+    source_hashes = aggregate.get("sourceHashes")
+    hash_ok = (
+        isinstance(source_hashes, dict)
+        and len(source_hashes) == 3
+        and all(isinstance(value, str) and len(value) == 64 for value in source_hashes.values())
+    )
+    add_check(
+        checks,
+        "nhanes-public-lmf-source-hashes",
+        status_from_bool(aggregate_exists and hash_ok),
+        "public LMF, DEMO XPT and CDC R read-in program hashes must be recorded",
+    )
+
+    boundary = aggregate.get("modelUseBoundary")
+    boundary_ok = (
+        isinstance(boundary, dict)
+        and boundary.get("rawRowsPersisted") is False
+        and boundary.get("individualRowsInOutput") is False
+        and boundary.get("surveyVarianceEstimated") is False
+        and boundary.get("weightedPopulationEstimateClaimed") is False
+        and boundary.get("calibrationClaimed") is False
+        and has_text(boundary.get("blockedUses", []), "individual")
+        and has_text(boundary.get("blockedUses", []), "death-date")
+        and has_text(boundary.get("blockedUses", []), "calibrated")
+        and has_text(boundary.get("blockedUses", []), "survey-population")
+        and has_text(boundary.get("blockedUses", []), "causal")
+    )
+    add_check(
+        checks,
+        "nhanes-public-lmf-boundary",
+        status_from_bool(aggregate_exists and boundary_ok),
+        "aggregate pilot must block rows, individual prediction, death dates, calibration, survey inference and causal claims",
+    )
+
+    aggregate_block = aggregate.get("aggregate")
+    cells = aggregate_block.get("aggregateCells") if isinstance(aggregate_block, dict) else None
+    cell_ok = (
+        isinstance(cells, list)
+        and len(cells) == 8
+        and sum(cell.get("records", 0) for cell in cells if isinstance(cell, dict)) == 5809
+        and sum(cell.get("deaths", 0) for cell in cells if isinstance(cell, dict)) == 145
+        and all(isinstance(cell, dict) and cell.get("suppressed") is False for cell in cells)
+    )
+    add_check(
+        checks,
+        "nhanes-public-lmf-aggregate-cells",
+        status_from_bool(aggregate_exists and cell_ok),
+        "aggregate output must contain 8 unsuppressed sex × age-band cells totaling 5809 adults and 145 deaths",
+    )
+
+    validation_schema_ok = (
+        validation.get("schemaVersion")
+        == "human-infra.nhanes-public-lmf-aggregate-pilot-validation.v1"
+        and validation.get("status") == "pass"
+    )
+    source_ok = (
+        validation.get("aggregatePath") == str(aggregate_path.relative_to(REPO_ROOT))
+        and validation.get("aggregateSha256") == sha256_file(aggregate_path)
+        if aggregate_exists
+        else False
+    )
+    add_check(
+        checks,
+        "nhanes-public-lmf-validation-source-hash",
+        status_from_bool(validation_exists and validation_schema_ok and source_ok),
+        "validation must point back to the current aggregate pilot path and sha256",
+    )
+
+    validation_boundary = validation.get("boundary")
+    validation_boundary_ok = (
+        isinstance(validation_boundary, dict)
+        and validation_boundary.get("rawRowsPersisted") is False
+        and validation_boundary.get("individualRowsInOutput") is False
+        and validation_boundary.get("individualPredictionAllowed") is False
+        and validation_boundary.get("individualDeathDateAllowed") is False
+        and validation_boundary.get("calibrationClaimed") is False
+        and validation_boundary.get("surveyPopulationInferenceClaimed") is False
+        and validation_boundary.get("causalClaimAllowed") is False
+        and validation_boundary.get("medicalAdviceAllowed") is False
+    )
+    add_check(
+        checks,
+        "nhanes-public-lmf-validation-boundary",
+        status_from_bool(validation_exists and validation_boundary_ok),
+        "validation must preserve aggregate-only, non-calibrated and non-individual-use boundaries",
+    )
+
+    note = str(validation.get("nonProofNote", "")).lower()
+    note_ok = (
+        "does not prove calibrated prediction" in note
+        and "survey-weighted inference" in note
+        and "individual use" in note
+    )
+    add_check(
+        checks,
+        "nhanes-public-lmf-non-proof-note",
+        status_from_bool(validation_exists and note_ok),
+        "validation must state that it does not prove calibration, survey inference or individual use",
+    )
+
+    return {
+        "aggregatePath": str(aggregate_path.relative_to(REPO_ROOT)),
+        "aggregateSha256": sha256_file(aggregate_path) if aggregate_exists else None,
+        "validationPath": str(validation_path.relative_to(REPO_ROOT)),
+        "validationSha256": sha256_file(validation_path) if validation_exists else None,
         "status": "PASS" if summarize_checks(checks)["fail"] == 0 else "FAIL",
         "checks": checks,
         "summary": summarize_checks(checks),
@@ -6552,6 +6739,8 @@ def audit_model(
     model_path: Path,
     sensitivity_path: Path,
     readiness_path: Path,
+    nhanes_public_lmf_aggregate_pilot_path: Path,
+    nhanes_public_lmf_aggregate_pilot_validation_path: Path,
     data_sources_path: Path,
     source_cards_path: Path,
     data_card_template_path: Path,
@@ -6758,6 +6947,10 @@ def audit_model(
         },
     ]
     readiness_audit = audit_readiness(load_json(readiness_path), readiness_path)
+    nhanes_public_lmf_aggregate_pilot_audit = audit_nhanes_public_lmf_aggregate_pilot(
+        nhanes_public_lmf_aggregate_pilot_path,
+        nhanes_public_lmf_aggregate_pilot_validation_path,
+    )
     data_sources = load_json(data_sources_path)
     data_sources_audit = audit_data_sources(data_sources, data_sources_path)
     source_card_docs_audit = audit_source_card_docs(
@@ -6911,6 +7104,7 @@ def audit_model(
     )
     sensitivity_audit = audit_sensitivity_analysis(sensitivity_path, data, model_path)
     checks.extend(readiness_audit["checks"])
+    checks.extend(nhanes_public_lmf_aggregate_pilot_audit["checks"])
     checks.extend(data_sources_audit["checks"])
     checks.extend(source_card_docs_audit["checks"])
     checks.extend(nhats_docs_audit["checks"])
@@ -6951,6 +7145,7 @@ def audit_model(
         "summary": summarize_checks(checks),
         "standardAlignment": standard_alignment,
         "calibrationReadiness": readiness_audit,
+        "nhanesPublicLmfAggregatePilot": nhanes_public_lmf_aggregate_pilot_audit,
         "dataSourceCandidates": data_sources_audit,
         "sourceCardDocs": source_card_docs_audit,
         "nhatsDataAdmission": nhats_docs_audit,
@@ -7008,6 +7203,15 @@ def render_markdown(audit: dict[str, Any]) -> str:
             f"- Readiness SHA-256: `{audit['calibrationReadiness']['sha256']}`",
             f"- Readiness status: `{audit['calibrationReadiness']['status']}`",
             "- Boundary: readiness fields are present, but no real cohort, calibration, external validation, or individual use is available.",
+            "",
+            "## NHANES Public LMF Aggregate Pilot",
+            "",
+            f"- Aggregate path: `{audit['nhanesPublicLmfAggregatePilot']['aggregatePath']}`",
+            f"- Aggregate SHA-256: `{audit['nhanesPublicLmfAggregatePilot']['aggregateSha256']}`",
+            f"- Validation path: `{audit['nhanesPublicLmfAggregatePilot']['validationPath']}`",
+            f"- Validation SHA-256: `{audit['nhanesPublicLmfAggregatePilot']['validationSha256']}`",
+            f"- Aggregate pilot status: `{audit['nhanesPublicLmfAggregatePilot']['status']}`",
+            "- Boundary: this proves only a public real-data aggregate join and endpoint smoke test; it does not prove calibrated prediction, survey-weighted inference, causal effects, medical advice or individual usefulness.",
             "",
             "## Data Source Candidates",
             "",
@@ -7239,6 +7443,16 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--model", type=Path, default=DEFAULT_MODEL)
     parser.add_argument("--sensitivity", type=Path, default=DEFAULT_SENSITIVITY)
     parser.add_argument("--readiness", type=Path, default=DEFAULT_READINESS)
+    parser.add_argument(
+        "--nhanes-public-lmf-aggregate-pilot",
+        type=Path,
+        default=DEFAULT_NHANES_PUBLIC_LMF_AGGREGATE_PILOT,
+    )
+    parser.add_argument(
+        "--nhanes-public-lmf-aggregate-pilot-validation",
+        type=Path,
+        default=DEFAULT_NHANES_PUBLIC_LMF_AGGREGATE_PILOT_VALIDATION,
+    )
     parser.add_argument("--data-sources", type=Path, default=DEFAULT_DATA_SOURCES)
     parser.add_argument("--source-cards", type=Path, default=DEFAULT_SOURCE_CARDS)
     parser.add_argument("--data-card-template", type=Path, default=DEFAULT_DATA_CARD_TEMPLATE)
@@ -7463,6 +7677,12 @@ def main() -> int:
     model_path = args.model.resolve()
     sensitivity_path = args.sensitivity.resolve()
     readiness_path = args.readiness.resolve()
+    nhanes_public_lmf_aggregate_pilot_path = (
+        args.nhanes_public_lmf_aggregate_pilot.resolve()
+    )
+    nhanes_public_lmf_aggregate_pilot_validation_path = (
+        args.nhanes_public_lmf_aggregate_pilot_validation.resolve()
+    )
     data_sources_path = args.data_sources.resolve()
     source_cards_path = args.source_cards.resolve()
     data_card_template_path = args.data_card_template.resolve()
@@ -7576,6 +7796,8 @@ def main() -> int:
         model_path,
         sensitivity_path,
         readiness_path,
+        nhanes_public_lmf_aggregate_pilot_path,
+        nhanes_public_lmf_aggregate_pilot_validation_path,
         data_sources_path,
         source_cards_path,
         data_card_template_path,
