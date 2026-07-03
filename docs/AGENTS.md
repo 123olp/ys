@@ -227,6 +227,7 @@ docs/
 │   ├── human-infra-c2-longtail-sixth-batch-source-resolution-register.json
 │   ├── human-infra-c2-longtail-sixth-batch-manual-fulltext-extraction-register.json
 │   ├── human-infra-c2-longtail-sixth-batch-independent-fresh-review-verdict-register.json
+│   ├── human-infra-c2-longtail-sixth-batch-reviewed-card-artifact-register.json
 │   ├── human-infra-c2-longtail-third-batch-corrected-source-reextraction-register.json
 │   ├── human-infra-c2-longtail-third-batch-corrected-source-fresh-review-verdict-register.json
 │   ├── human-infra-c2-longtail-third-batch-reviewed-card-artifact-register.json
@@ -467,6 +468,7 @@ docs/
 - `reference/human-infra-c2-longtail-sixth-batch-source-resolution-register.json`：记录 C2-LT-B6 7 个本地复核问题行的来源路线解析，整理 19 个官方页、PubMed/PMC、OUP/LWW/AAP 或 CDC 路线候选；它只准备 manual/fulltext extraction 与 independent fresh review，不等于 reviewed artifacts、Source Card 晋升完成或模型准入。
 - `reference/human-infra-c2-longtail-sixth-batch-manual-fulltext-extraction-register.json`：记录 C2-LT-B6 19 个 source-resolution 候选的有界路线/全文上下文抽取，区分 7 个 bounded fresh-review 候选和 12 个 route-only、bibliographic、summary、companion-lineage 或 policy-resource context 阻塞行；它仍不创建 reviewed artifacts 或打开模型准入。
 - `reference/human-infra-c2-longtail-sixth-batch-independent-fresh-review-verdict-register.json`：记录 C2-LT-B6 17 个非问题来源抽取行和 19 个 manual/fulltext 行的 independent fresh-review 判定，24 行只允许进入 bounded reviewed artifact prep，12 个 manual route-only、bibliographic、summary、companion-lineage 或 policy-resource context 行继续阻塞；它仍不创建 reviewed artifacts 或打开模型准入。
+- `reference/human-infra-c2-longtail-sixth-batch-reviewed-card-artifact-register.json`：记录 C2-LT-B6 24 个 eligible fresh-review rows 晋升出的 144 个 Source/变量/endpoint/uncertainty/transfer/downgrade artifacts，并保留 12 个 manual blocked/context rows；它仍不打开模型准入。
 - `reference/human-infra-c2-longtail-fifth-batch-source-extraction-queue.json`：把 C2-LT-B5 的 24 个候选来源派生成 source-specific 深读任务，定义 exact claim、endpoint、population、uncertainty、transfer-boundary、downgrade 和 model-position 抽取槽位；它仍不等于本地复核、fresh review、reviewed artifacts 或模型准入。
 - `reference/human-infra-c2-longtail-fifth-batch-source-extraction-register.json`：记录 C2-LT-B5 24/24 个来源的本地字段级抽取，显式保留无开放全文人工复核、跨域复用来源、模型生物/综述边界、降级触发和模型阻塞边界；它仍不等于本地复核、fresh review、reviewed artifacts 或模型准入。
 - `reference/human-infra-c2-longtail-fifth-batch-local-review-register.json`：记录 C2-LT-B5 24/24 个来源抽取行的本地来源语境复核，确认非问题行只可进入 independent fresh review，8 个无开放全文或跨域复用问题行必须先 source-resolution/manual fulltext；它仍不等于 reviewed artifacts、Source Card 晋升完成或模型准入。
