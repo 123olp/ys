@@ -77,6 +77,7 @@ longevity-evidence/
 │   │   ├── life_path_nhats_synthetic_storage_destruction_drill.json
 │   │   ├── life_path_nhats_colectica_access_route_probe_register.json
 │   │   ├── life_path_nhats_colectica_authenticated_capture_template.json
+│   │   ├── life_path_nhats_colectica_capture_task_register.json
 │   │   ├── life_path_nhats_colectica_value_label_review_execution_register.json
 │   │   ├── life_path_nhats_colectica_value_label_review_protocol.json
 │   │   ├── life_path_nhats_route_classifier_readiness.json
@@ -133,6 +134,7 @@ longevity-evidence/
     ├── validate_nhats_synthetic_storage_destruction_drill.py
     ├── validate_nhats_colectica_access_route_probe.py
     ├── validate_nhats_colectica_authenticated_capture_template.py
+    ├── validate_nhats_colectica_capture_task_register.py
     ├── validate_nhats_colectica_value_label_review_execution.py
     ├── validate_nhats_colectica_value_label_protocol.py
     ├── validate_nhats_disclosure_outputs.py
@@ -195,6 +197,7 @@ longevity-evidence/
 - `data/manual/life_path_nhats_colectica_value_label_review_execution_register.json`：NHATS Colectica value-label 复核第一轮执行登记，记录官方来源追踪、字段级 source-trace 骨架、standard negative-code family 和仍未通过的登录、值标签、问题文本、skip logic、route-value crosswalk、二次复核、公开输出和模型准入阻塞门。
 - `data/manual/life_path_nhats_colectica_access_route_probe_register.json`：NHATS Colectica access-route probe 登记，记录官方 Cross-Year Search 入口、匿名访问登录边界、技术指南 SHA-256、Details/Basket capture workflow 和后续受控登录捕获步骤；它只证明访问路线已探测，不证明账号、登录、变量页、value labels、question text、导出、校准或个体预测已完成。
 - `data/manual/life_path_nhats_colectica_authenticated_capture_template.json`：NHATS Colectica 受控登录后变量页捕获模板，记录 route field 进入 value-label 复核前必须补齐的 item id、变量名、文件名、Details URL、source hash、question text、universe/skip logic、变量级缺失码和二次复核槽位；它只证明捕获证据结构已固定，不证明登录、捕获、标签确认、route classifier、公开导出、校准或个体预测已完成。
+- `data/manual/life_path_nhats_colectica_capture_task_register.json`：NHATS Colectica capture task register，把 authenticated capture template 展开为 9 个 route-field 组和 39 个 pending 变量 / 输出任务，仍阻塞登录、变量页捕获、值标签确认、真实分类器、提取、校准和个体预测。
 - `data/manual/life_path_nhats_route_classifier_readiness.json`：NHATS route-classifier readiness 契约，记录 9 个分类器输入族、12 个晋升门、上游 route-field / Colectica / missingness / pre-outcome 绑定和禁止动作；它只证明真实 route classifier 前的阻塞门已机器化，不授权分类器代码、真实提取、聚合、加权估计、校准或个体预测。
 - `data/manual/life_path_nhats_l2_variable_family_admission_register.json`：NHATS L2 变量族准入前映射，绑定第一版窄 estimand、变量确认矩阵、模型准入契约和候选注册表，把 6 个候选变量族固定为 L2-only；它不确认精确字段、不授权真实提取、校准或个体预测。
 - `data/manual/life_path_nhats_preoutcome_aggregation_protocol.json`：NHATS 预结果聚合协议，冻结 8 条 L2-only 聚合规则、7 个合成用例和真实聚合前置证据要求；它不授权真实 NHATS 聚合、加权估计、公开导出、L4 准入、校准或个体预测。
@@ -216,6 +219,7 @@ longevity-evidence/
 - `scripts/validate_nhats_colectica_value_label_review_execution.py`：读取 NHATS Colectica value-label review execution register，生成 `web/src/data/life-path-nhats-colectica-value-label-review-execution-validation.json`，验证第一轮执行登记只打开 source trace / negative-code family 证据，不打开 value labels、route map、classifier、weighted counts、public export、calibration 或 individual prediction。
 - `scripts/validate_nhats_colectica_access_route_probe.py`：读取 NHATS Colectica access-route probe register，生成 `web/src/data/life-path-nhats-colectica-access-route-probe-validation.json`，验证公开入口、匿名登录边界、技术指南 workflow 和受控 capture sequence，同时继续阻塞 authenticated capture、value labels、exports、calibration 和 individual prediction。
 - `scripts/validate_nhats_colectica_authenticated_capture_template.py`：读取 NHATS Colectica authenticated capture template，生成 `web/src/data/life-path-nhats-colectica-authenticated-capture-template-validation.json`，验证受控登录后变量页捕获槽、敏感死亡字段排除、source hash 证据要求和二次复核门，同时继续阻塞账号状态、登录、变量页实捕获、value labels、route classifier、公开导出、校准和 individual prediction。
+- `scripts/validate_nhats_colectica_capture_task_register.py`：读取 NHATS Colectica capture task register，生成 `web/src/data/life-path-nhats-colectica-capture-task-register-validation.json`，验证 9 个 route-field 组和 39 个 pending 任务覆盖 capture template，同时继续阻塞登录、实捕获、真实分类器、提取、校准和 individual prediction。
 - `scripts/validate_nhats_route_classifier_readiness.py`：读取 NHATS route-classifier readiness 契约，生成 `web/src/data/life-path-nhats-route-classifier-readiness-validation.json`，验证真实 route classifier 仍被 Colectica value labels、route-value crosswalk、变量级 missing-code map、真实数据访问、survey design、披露审查和二次复核门阻塞。
 - `scripts/validate_nhats_l2_variable_family_admission.py`：读取 NHATS L2 变量族准入前映射，生成 `web/src/data/life-path-nhats-l2-variable-family-admission-validation.json`，验证窄 estimand、6 个 L2 候选变量族、来源 hash、L4/L5 阻塞门和禁止抽取 / 校准 / 个体预测边界。
 - `scripts/validate_nhats_preoutcome_aggregation_protocol.py`：读取 NHATS 预结果聚合协议，生成 `web/src/data/life-path-nhats-preoutcome-aggregation-validation.json`，验证 8 条 L2-only 聚合规则、7 个合成用例、上游 source hash 和真实聚合 / 加权估计 / L4 准入 / 校准 / 个体预测阻塞边界。
@@ -247,3 +251,4 @@ longevity-evidence/
 - 2026-07-03：新增 `life_path_nhats_l4_readiness_runway.json`、`validate_nhats_l4_readiness_runway.py` 和 `life-path-nhats-l4-readiness-runway-validation.json`，把 NHATS L4 readiness runway 接入默认审计；它只证明 12 个阻塞门可审计，不打开真实提取、校准或个体预测。
 - 2026-07-03：新增 `life_path_nhats_official_source_refresh_register.json`、`validate_nhats_official_source_refresh.py` 和 `life-path-nhats-official-source-refresh-validation.json`，把 NHATS 官方公开来源刷新接入默认审计；它只把 official-source-refresh 门升为 ready，其他 acquisition/L4 门继续阻塞。
 - 2026-07-03：新增 `life_path_nhats_route_classifier_readiness.json`、`validate_nhats_route_classifier_readiness.py` 和 `life-path-nhats-route-classifier-readiness-validation.json`，把 NHATS route-classifier readiness 阻塞门接入默认审计；它只证明分类器前置证据缺口可机器审查，不打开真实分类器、提取、聚合、校准或个体预测。
+- 2026-07-03：新增 `life_path_nhats_colectica_capture_task_register.json`、`validate_nhats_colectica_capture_task_register.py` 和 `life-path-nhats-colectica-capture-task-register-validation.json`，把 Colectica 变量页捕获任务清单接入默认审计；它只证明任务级捕获清单已准备，不打开登录、实捕获、分类器、提取、校准或个体预测。

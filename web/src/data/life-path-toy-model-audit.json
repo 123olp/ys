@@ -1,6 +1,6 @@
 {
   "schemaVersion": "human-infra.life-path-toy-audit.v1",
-  "generatedAt": "2026-07-03T06:37:06.803031+00:00",
+  "generatedAt": "2026-07-03T07:02:20.091419+00:00",
   "modelPath": "web/src/data/life-path-toy-model.json",
   "modelSha256": "a4c92209d79d20579bf1f575d5ebf07ffe5be9ccaf6bf3f3eef08efa287b5377",
   "overallStatus": "PASS",
@@ -1496,6 +1496,51 @@
       "detail": "validation must prove only template readiness while keeping authenticated capture and model admission blocked"
     },
     {
+      "id": "nhats-colectica-capture-task-register-exists",
+      "status": "PASS",
+      "detail": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_capture_task_register.json"
+    },
+    {
+      "id": "nhats-colectica-capture-task-register-validation-exists",
+      "status": "PASS",
+      "detail": "web/src/data/life-path-nhats-colectica-capture-task-register-validation.json"
+    },
+    {
+      "id": "nhats-colectica-capture-task-register-schema",
+      "status": "PASS",
+      "detail": "schemaVersion='human-infra.life-path-nhats-colectica-capture-task-register.v1'"
+    },
+    {
+      "id": "nhats-colectica-capture-task-register-identity",
+      "status": "PASS",
+      "detail": "capture task register must remain task-register-only and not claim authenticated capture completion"
+    },
+    {
+      "id": "nhats-colectica-capture-task-register-boundary",
+      "status": "PASS",
+      "detail": "task register may be ready, but capture, labels, classifier, extraction, aggregation, export, calibration and individual prediction must remain blocked"
+    },
+    {
+      "id": "nhats-colectica-capture-task-register-task-shape",
+      "status": "PASS",
+      "detail": "group_count=9; task_count=39"
+    },
+    {
+      "id": "nhats-colectica-capture-task-register-validation-schema",
+      "status": "PASS",
+      "detail": "schemaVersion='human-infra.life-path-nhats-colectica-capture-task-register-validation.v1'"
+    },
+    {
+      "id": "nhats-colectica-capture-task-register-validation-source-hash",
+      "status": "PASS",
+      "detail": "capture-task validation must point back to current register, route-field, capture-template and route-classifier readiness hashes"
+    },
+    {
+      "id": "nhats-colectica-capture-task-register-validation-boundary",
+      "status": "PASS",
+      "detail": "validation must prove task readiness while keeping authenticated capture and model admission blocked"
+    },
+    {
       "id": "nhats-route-classifier-readiness-exists",
       "status": "PASS",
       "detail": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_route_classifier_readiness.json"
@@ -1682,7 +1727,7 @@
     }
   ],
   "summary": {
-    "pass": 335,
+    "pass": 344,
     "warn": 0,
     "fail": 0
   },
@@ -2136,7 +2181,7 @@
   },
   "nhatsAcquisitionReadinessValidation": {
     "path": "web/src/data/life-path-nhats-acquisition-readiness-validation.json",
-    "sha256": "4912a6e37d5e8429098834263ca75a425afcd2f15b6907023cf922ed061e6f17",
+    "sha256": "2f76de53a420076b4e42389c24f1671d7602fc6acc73a802af61aeff151a3655",
     "status": "PASS",
     "checks": [
       {
@@ -2230,7 +2275,7 @@
   },
   "nhatsRegistrationEvidenceTemplateValidation": {
     "path": "web/src/data/life-path-nhats-registration-evidence-template-validation.json",
-    "sha256": "cbf71182b5e14c3776943c99b0c0e4f1b242f53b65bc8d3fa6c026f69a645d94",
+    "sha256": "e08f53b41f26ce6f40c625405ccde4cda40a3589a832291eb80929d1fe9abb1b",
     "status": "PASS",
     "checks": [
       {
@@ -2272,7 +2317,7 @@
   },
   "nhatsControlledStorageDestruction": {
     "path": "web/src/data/life-path-nhats-controlled-storage-destruction-validation.json",
-    "sha256": "8c4a6bcfe17a5a0735455cf310d6f7841b5ad7c96933667ea00a3d82957f7959",
+    "sha256": "c14af6047cf29cc3e8362ae7c519ad033134d34b1736384124af9ecbb4b14455",
     "status": "PASS",
     "checks": [
       {
@@ -2319,7 +2364,7 @@
   },
   "nhatsSyntheticStorageDestructionDrill": {
     "path": "web/src/data/life-path-nhats-synthetic-storage-destruction-drill-validation.json",
-    "sha256": "870127ba21bd284c59f2e89dc6bcfbc90cd65a94dccb6bcc920e6d322d18a0dd",
+    "sha256": "badb45958989dc130f7dba91dcf117d2f4287f0d4300af19d2cd9a8cc600756a",
     "status": "PASS",
     "checks": [
       {
@@ -2448,7 +2493,7 @@
   },
   "nhatsFileTierTableValidation": {
     "path": "web/src/data/life-path-nhats-file-tier-table-validation.json",
-    "sha256": "5445163683d36276bbf525eb8446376c89d2f5dc324044ce3db4ccc2014d1c40",
+    "sha256": "da921583a272dfeca3d58e213384a6654efa5f232684e84153078ad1367a2887",
     "status": "PASS",
     "checks": [
       {
@@ -3294,7 +3339,7 @@
     "registerPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_value_label_review_execution_register.json",
     "registerSha256": "de6d17f9470a563346f92884cead1eec35cf5a954245751b0135efc60672b042",
     "validationPath": "web/src/data/life-path-nhats-colectica-value-label-review-execution-validation.json",
-    "validationSha256": "12df1593974e125abdf321e28ffa67c39a7bdece5fa2218cb9ea55915161f72b",
+    "validationSha256": "d7263c76d569c292a0aff6332443c8b15caec7fbaf77f6c6489390ec1ca95ba2",
     "status": "PASS",
     "checks": [
       {
@@ -3358,7 +3403,7 @@
     "registerPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_access_route_probe_register.json",
     "registerSha256": "58941fde2c6a1c5488437a1ad447cb3dae2032739ef1ed579e29da98b96aaa89",
     "validationPath": "web/src/data/life-path-nhats-colectica-access-route-probe-validation.json",
-    "validationSha256": "6bda5c1983e47aadb8afaec8a60bbf85bebb553c9e6eb222603e9c35ac5fb1f3",
+    "validationSha256": "51a2e59ee463ecf33eaca28f13d1b0df021bd8a82bdd4ce17ced5f3f0d109642",
     "status": "PASS",
     "checks": [
       {
@@ -3407,7 +3452,7 @@
     "templatePath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_authenticated_capture_template.json",
     "templateSha256": "dc097acfcb44007b42a25ce500c6cb1d23b1154f6620a7797445293817313eeb",
     "validationPath": "web/src/data/life-path-nhats-colectica-authenticated-capture-template-validation.json",
-    "validationSha256": "819c1c109ed69bf5a645c07c700ad0a7ce9625b3c6fdfabcb3297bd424d35eb0",
+    "validationSha256": "d2dd4e78d3707534285f99c3d7cb43ccfaf1230dede04eca5d2df27113f6743d",
     "status": "PASS",
     "checks": [
       {
@@ -3452,11 +3497,70 @@
       "fail": 0
     }
   },
+  "nhatsColecticaCaptureTaskRegister": {
+    "registerPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_capture_task_register.json",
+    "registerSha256": "57764c73e38ecd6d3303d36a172d6b794671d34c3dcf1718e07fbe76c54720e0",
+    "validationPath": "web/src/data/life-path-nhats-colectica-capture-task-register-validation.json",
+    "validationSha256": "cffd9f163ddd227d84603bd5dfd8b0a132bdc16b75410c05f7a809ff0f0cccb6",
+    "status": "PASS",
+    "checks": [
+      {
+        "id": "nhats-colectica-capture-task-register-exists",
+        "status": "PASS",
+        "detail": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_capture_task_register.json"
+      },
+      {
+        "id": "nhats-colectica-capture-task-register-validation-exists",
+        "status": "PASS",
+        "detail": "web/src/data/life-path-nhats-colectica-capture-task-register-validation.json"
+      },
+      {
+        "id": "nhats-colectica-capture-task-register-schema",
+        "status": "PASS",
+        "detail": "schemaVersion='human-infra.life-path-nhats-colectica-capture-task-register.v1'"
+      },
+      {
+        "id": "nhats-colectica-capture-task-register-identity",
+        "status": "PASS",
+        "detail": "capture task register must remain task-register-only and not claim authenticated capture completion"
+      },
+      {
+        "id": "nhats-colectica-capture-task-register-boundary",
+        "status": "PASS",
+        "detail": "task register may be ready, but capture, labels, classifier, extraction, aggregation, export, calibration and individual prediction must remain blocked"
+      },
+      {
+        "id": "nhats-colectica-capture-task-register-task-shape",
+        "status": "PASS",
+        "detail": "group_count=9; task_count=39"
+      },
+      {
+        "id": "nhats-colectica-capture-task-register-validation-schema",
+        "status": "PASS",
+        "detail": "schemaVersion='human-infra.life-path-nhats-colectica-capture-task-register-validation.v1'"
+      },
+      {
+        "id": "nhats-colectica-capture-task-register-validation-source-hash",
+        "status": "PASS",
+        "detail": "capture-task validation must point back to current register, route-field, capture-template and route-classifier readiness hashes"
+      },
+      {
+        "id": "nhats-colectica-capture-task-register-validation-boundary",
+        "status": "PASS",
+        "detail": "validation must prove task readiness while keeping authenticated capture and model admission blocked"
+      }
+    ],
+    "summary": {
+      "pass": 9,
+      "warn": 0,
+      "fail": 0
+    }
+  },
   "nhatsRouteClassifierReadiness": {
     "readinessPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_route_classifier_readiness.json",
     "readinessSha256": "f0c0224317c9ee20e8de56dcddeadba85ae24d67b736782ba22de90e83109296",
     "validationPath": "web/src/data/life-path-nhats-route-classifier-readiness-validation.json",
-    "validationSha256": "17b3503e2ca4b91b637a550c04de281ea8a5d20bfba76cacca439c5fd78730f6",
+    "validationSha256": "b3dd6add20f471742fe12074ac7212fc683157efd1a01884b67845be6a0f9b7e",
     "status": "PASS",
     "checks": [
       {
@@ -3520,7 +3624,7 @@
     "registerPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_l2_variable_family_admission_register.json",
     "registerSha256": "da1d444f452482f37aa7d7d12cd97c9deb0b2d6006540f76c5d2588389dffce3",
     "validationPath": "web/src/data/life-path-nhats-l2-variable-family-admission-validation.json",
-    "validationSha256": "23d32d14a1d06633e00fb65eef94d3d1e4d43f58cd61c37bbab75c346521030f",
+    "validationSha256": "87ea7b21c03cab8255ffe8d63ccd53cda8feb084c8346f9d2b732662a367cee6",
     "status": "PASS",
     "checks": [
       {
@@ -3574,7 +3678,7 @@
     "protocolPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_preoutcome_aggregation_protocol.json",
     "protocolSha256": "a2917d4bbb1682f5de6251fe919afae5da5bad681168475845a3a9c0a9a0747d",
     "validationPath": "web/src/data/life-path-nhats-preoutcome-aggregation-validation.json",
-    "validationSha256": "aec8cc48b16d76a47f4559a7f9a39f376055e0ae9365ef5d8cff5385910d9f1c",
+    "validationSha256": "9914e5ce08cf6d69280120787998cc6d994b13ac22ce41aa079238991bdac971",
     "status": "PASS",
     "checks": [
       {

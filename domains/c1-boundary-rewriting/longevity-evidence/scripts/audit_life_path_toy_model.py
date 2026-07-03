@@ -322,6 +322,22 @@ DEFAULT_NHATS_COLECTICA_AUTHENTICATED_CAPTURE_TEMPLATE_VALIDATION = (
     / "data"
     / "life-path-nhats-colectica-authenticated-capture-template-validation.json"
 )
+DEFAULT_NHATS_COLECTICA_CAPTURE_TASK_REGISTER = (
+    REPO_ROOT
+    / "domains"
+    / "c1-boundary-rewriting"
+    / "longevity-evidence"
+    / "data"
+    / "manual"
+    / "life_path_nhats_colectica_capture_task_register.json"
+)
+DEFAULT_NHATS_COLECTICA_CAPTURE_TASK_REGISTER_VALIDATION = (
+    REPO_ROOT
+    / "web"
+    / "src"
+    / "data"
+    / "life-path-nhats-colectica-capture-task-register-validation.json"
+)
 DEFAULT_NHATS_ROUTE_CLASSIFIER_READINESS = (
     REPO_ROOT
     / "domains"
@@ -5642,6 +5658,173 @@ def audit_nhats_colectica_authenticated_capture_template(
     }
 
 
+def audit_nhats_colectica_capture_task_register(
+    register_path: Path,
+    validation_path: Path,
+    route_field_register_path: Path,
+    capture_template_path: Path,
+    route_classifier_readiness_path: Path,
+) -> dict[str, Any]:
+    checks: list[dict[str, Any]] = []
+    register_exists = register_path.exists()
+    validation_exists = validation_path.exists()
+    add_check(
+        checks,
+        "nhats-colectica-capture-task-register-exists",
+        status_from_bool(register_exists),
+        str(register_path.relative_to(REPO_ROOT)),
+    )
+    add_check(
+        checks,
+        "nhats-colectica-capture-task-register-validation-exists",
+        status_from_bool(validation_exists),
+        str(validation_path.relative_to(REPO_ROOT)),
+    )
+
+    register = load_json(register_path) if register_exists else {}
+    validation = load_json(validation_path) if validation_exists else {}
+
+    schema_ok = (
+        register.get("schemaVersion")
+        == "human-infra.life-path-nhats-colectica-capture-task-register.v1"
+    )
+    add_check(
+        checks,
+        "nhats-colectica-capture-task-register-schema",
+        status_from_bool(register_exists and schema_ok),
+        f"schemaVersion={register.get('schemaVersion')!r}",
+    )
+
+    identity_ok = (
+        register.get("sourceId") == "nhats"
+        and register.get("taskRegisterId")
+        == "nhats-r13-r14-colectica-capture-task-register-2026-07-03"
+        and register.get("status") == "task-register-only-controlled-capture-not-started"
+    )
+    add_check(
+        checks,
+        "nhats-colectica-capture-task-register-identity",
+        status_from_bool(register_exists and identity_ok),
+        "capture task register must remain task-register-only and not claim authenticated capture completion",
+    )
+
+    decision = register.get("currentDecision")
+    boundary_ok = (
+        isinstance(decision, dict)
+        and decision.get("captureTaskRegisterReady") is True
+        and decision.get("controlledColecticaAccountStatusRecorded") is False
+        and decision.get("colecticaLoginCompleted") is False
+        and decision.get("authenticatedVariablePagesCaptured") is False
+        and decision.get("sourceCaptureHashesRecorded") is False
+        and decision.get("valueLabelsConfirmed") is False
+        and decision.get("questionTextConfirmed") is False
+        and decision.get("universeSkipLogicConfirmed") is False
+        and decision.get("routeValueCrosswalkReady") is False
+        and decision.get("variableSpecificMissingCodeMapReady") is False
+        and decision.get("secondReviewerSignoff") is False
+        and decision.get("routeClassifierAllowed") is False
+        and decision.get("realExtractionAllowed") is False
+        and decision.get("aggregateCohortFlowAllowed") is False
+        and decision.get("weightedRouteCountsAllowed") is False
+        and decision.get("publicExportAllowed") is False
+        and decision.get("calibrationAllowed") is False
+        and decision.get("individualPredictionAllowed") is False
+    )
+    add_check(
+        checks,
+        "nhats-colectica-capture-task-register-boundary",
+        status_from_bool(register_exists and boundary_ok),
+        "task register may be ready, but capture, labels, classifier, extraction, aggregation, export, calibration and individual prediction must remain blocked",
+    )
+
+    groups = register.get("captureTaskGroups")
+    group_count = len(groups) if isinstance(groups, list) else 0
+    task_count = 0
+    if isinstance(groups, list):
+        for group in groups:
+            if isinstance(group, dict) and isinstance(group.get("tasks"), list):
+                task_count += len(group["tasks"])
+    add_check(
+        checks,
+        "nhats-colectica-capture-task-register-task-shape",
+        status_from_bool(register_exists and group_count == 9 and task_count >= 30),
+        f"group_count={group_count}; task_count={task_count}",
+    )
+
+    validation_schema_ok = (
+        validation.get("schemaVersion")
+        == "human-infra.life-path-nhats-colectica-capture-task-register-validation.v1"
+    )
+    add_check(
+        checks,
+        "nhats-colectica-capture-task-register-validation-schema",
+        status_from_bool(validation_exists and validation_schema_ok),
+        f"schemaVersion={validation.get('schemaVersion')!r}",
+    )
+
+    validation_source_ok = (
+        validation_exists
+        and register_exists
+        and route_field_register_path.exists()
+        and capture_template_path.exists()
+        and route_classifier_readiness_path.exists()
+        and validation.get("registerPath") == str(register_path.relative_to(REPO_ROOT))
+        and validation.get("registerSha256") == sha256_file(register_path)
+        and validation.get("routeFieldDiscoveryRegisterPath")
+        == str(route_field_register_path.relative_to(REPO_ROOT))
+        and validation.get("routeFieldDiscoveryRegisterSha256")
+        == sha256_file(route_field_register_path)
+        and validation.get("authenticatedCaptureTemplatePath")
+        == str(capture_template_path.relative_to(REPO_ROOT))
+        and validation.get("authenticatedCaptureTemplateSha256")
+        == sha256_file(capture_template_path)
+        and validation.get("routeClassifierReadinessPath")
+        == str(route_classifier_readiness_path.relative_to(REPO_ROOT))
+        and validation.get("routeClassifierReadinessSha256")
+        == sha256_file(route_classifier_readiness_path)
+    )
+    add_check(
+        checks,
+        "nhats-colectica-capture-task-register-validation-source-hash",
+        status_from_bool(validation_exists and validation_source_ok),
+        "capture-task validation must point back to current register, route-field, capture-template and route-classifier readiness hashes",
+    )
+
+    validation_boundary = validation.get("boundary")
+    validation_boundary_ok = (
+        validation.get("overallStatus") == "PASS"
+        and isinstance(validation.get("summary"), dict)
+        and validation["summary"].get("fail") == 0
+        and validation.get("captureTaskGroupCount") == 9
+        and validation.get("captureTaskCount", 0) >= 30
+        and isinstance(validation_boundary, dict)
+        and validation_boundary.get("captureTaskRegisterReady") is True
+        and validation_boundary.get("colecticaLoginCompleted") is False
+        and validation_boundary.get("authenticatedVariablePagesCaptured") is False
+        and validation_boundary.get("routeClassifierAllowed") is False
+        and validation_boundary.get("realExtractionAllowed") is False
+        and validation_boundary.get("publicExportAllowed") is False
+        and validation_boundary.get("calibrationAllowed") is False
+        and validation_boundary.get("individualPredictionAllowed") is False
+    )
+    add_check(
+        checks,
+        "nhats-colectica-capture-task-register-validation-boundary",
+        status_from_bool(validation_exists and validation_boundary_ok),
+        "validation must prove task readiness while keeping authenticated capture and model admission blocked",
+    )
+
+    return {
+        "registerPath": str(register_path.relative_to(REPO_ROOT)),
+        "registerSha256": sha256_file(register_path) if register_exists else None,
+        "validationPath": str(validation_path.relative_to(REPO_ROOT)),
+        "validationSha256": sha256_file(validation_path) if validation_exists else None,
+        "status": "PASS" if summarize_checks(checks)["fail"] == 0 else "FAIL",
+        "checks": checks,
+        "summary": summarize_checks(checks),
+    }
+
+
 def audit_nhats_route_classifier_readiness(
     readiness_path: Path,
     validation_path: Path,
@@ -6407,6 +6590,8 @@ def audit_model(
     nhats_colectica_access_route_probe_validation_path: Path,
     nhats_colectica_authenticated_capture_template_path: Path,
     nhats_colectica_authenticated_capture_template_validation_path: Path,
+    nhats_colectica_capture_task_register_path: Path,
+    nhats_colectica_capture_task_register_validation_path: Path,
     nhats_route_classifier_readiness_path: Path,
     nhats_route_classifier_readiness_validation_path: Path,
     nhats_l2_variable_family_admission_register_path: Path,
@@ -6687,6 +6872,15 @@ def audit_model(
             nhats_route_field_discovery_register_path,
         )
     )
+    nhats_colectica_capture_task_register_audit = (
+        audit_nhats_colectica_capture_task_register(
+            nhats_colectica_capture_task_register_path,
+            nhats_colectica_capture_task_register_validation_path,
+            nhats_route_field_discovery_register_path,
+            nhats_colectica_authenticated_capture_template_path,
+            nhats_route_classifier_readiness_path,
+        )
+    )
     nhats_route_classifier_readiness_audit = audit_nhats_route_classifier_readiness(
         nhats_route_classifier_readiness_path,
         nhats_route_classifier_readiness_validation_path,
@@ -6740,6 +6934,7 @@ def audit_model(
     checks.extend(nhats_colectica_value_label_execution_audit["checks"])
     checks.extend(nhats_colectica_access_route_probe_audit["checks"])
     checks.extend(nhats_colectica_authenticated_capture_template_audit["checks"])
+    checks.extend(nhats_colectica_capture_task_register_audit["checks"])
     checks.extend(nhats_route_classifier_readiness_audit["checks"])
     checks.extend(nhats_l2_variable_family_admission_audit["checks"])
     checks.extend(nhats_preoutcome_aggregation_audit["checks"])
@@ -6779,6 +6974,7 @@ def audit_model(
         "nhatsColecticaValueLabelReviewExecution": nhats_colectica_value_label_execution_audit,
         "nhatsColecticaAccessRouteProbe": nhats_colectica_access_route_probe_audit,
         "nhatsColecticaAuthenticatedCaptureTemplate": nhats_colectica_authenticated_capture_template_audit,
+        "nhatsColecticaCaptureTaskRegister": nhats_colectica_capture_task_register_audit,
         "nhatsRouteClassifierReadiness": nhats_route_classifier_readiness_audit,
         "nhatsL2VariableFamilyAdmission": nhats_l2_variable_family_admission_audit,
         "nhatsPreoutcomeAggregation": nhats_preoutcome_aggregation_audit,
@@ -7218,6 +7414,16 @@ def parse_args() -> argparse.Namespace:
         default=DEFAULT_NHATS_COLECTICA_AUTHENTICATED_CAPTURE_TEMPLATE_VALIDATION,
     )
     parser.add_argument(
+        "--nhats-colectica-capture-task-register",
+        type=Path,
+        default=DEFAULT_NHATS_COLECTICA_CAPTURE_TASK_REGISTER,
+    )
+    parser.add_argument(
+        "--nhats-colectica-capture-task-register-validation",
+        type=Path,
+        default=DEFAULT_NHATS_COLECTICA_CAPTURE_TASK_REGISTER_VALIDATION,
+    )
+    parser.add_argument(
         "--nhats-route-classifier-readiness",
         type=Path,
         default=DEFAULT_NHATS_ROUTE_CLASSIFIER_READINESS,
@@ -7341,6 +7547,12 @@ def main() -> int:
     nhats_colectica_authenticated_capture_template_validation_path = (
         args.nhats_colectica_authenticated_capture_template_validation.resolve()
     )
+    nhats_colectica_capture_task_register_path = (
+        args.nhats_colectica_capture_task_register.resolve()
+    )
+    nhats_colectica_capture_task_register_validation_path = (
+        args.nhats_colectica_capture_task_register_validation.resolve()
+    )
     nhats_route_classifier_readiness_path = (
         args.nhats_route_classifier_readiness.resolve()
     )
@@ -7402,6 +7614,8 @@ def main() -> int:
         nhats_colectica_access_route_probe_validation_path,
         nhats_colectica_authenticated_capture_template_path,
         nhats_colectica_authenticated_capture_template_validation_path,
+        nhats_colectica_capture_task_register_path,
+        nhats_colectica_capture_task_register_validation_path,
         nhats_route_classifier_readiness_path,
         nhats_route_classifier_readiness_validation_path,
         nhats_l2_variable_family_admission_register_path,

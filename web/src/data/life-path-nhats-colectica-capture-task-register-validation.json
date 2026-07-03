@@ -1,0 +1,106 @@
+{
+  "schemaVersion": "human-infra.life-path-nhats-colectica-capture-task-register-validation.v1",
+  "generatedAt": "2026-07-03T07:02:21.702464+00:00",
+  "registerPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_capture_task_register.json",
+  "registerSha256": "57764c73e38ecd6d3303d36a172d6b794671d34c3dcf1718e07fbe76c54720e0",
+  "routeFieldDiscoveryRegisterPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_route_field_discovery_register.json",
+  "routeFieldDiscoveryRegisterSha256": "32d86995a0438e2104e6850334eefa63b30176b0767dd2229bc73a517ef5ade4",
+  "authenticatedCaptureTemplatePath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_authenticated_capture_template.json",
+  "authenticatedCaptureTemplateSha256": "dc097acfcb44007b42a25ce500c6cb1d23b1154f6620a7797445293817313eeb",
+  "routeClassifierReadinessPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_route_classifier_readiness.json",
+  "routeClassifierReadinessSha256": "f0c0224317c9ee20e8de56dcddeadba85ae24d67b736782ba22de90e83109296",
+  "overallStatus": "PASS",
+  "summary": {
+    "pass": 13,
+    "fail": 0
+  },
+  "captureTaskGroupCount": 9,
+  "captureTaskCount": 39,
+  "boundary": {
+    "captureTaskRegisterReady": true,
+    "controlledColecticaAccountStatusRecorded": false,
+    "colecticaLoginCompleted": false,
+    "authenticatedVariablePagesCaptured": false,
+    "sourceCaptureHashesRecorded": false,
+    "valueLabelsConfirmed": false,
+    "questionTextConfirmed": false,
+    "universeSkipLogicConfirmed": false,
+    "routeValueCrosswalkReady": false,
+    "variableSpecificMissingCodeMapReady": false,
+    "secondReviewerSignoff": false,
+    "routeClassifierAllowed": false,
+    "realExtractionAllowed": false,
+    "aggregateCohortFlowAllowed": false,
+    "weightedRouteCountsAllowed": false,
+    "publicExportAllowed": false,
+    "calibrationAllowed": false,
+    "individualPredictionAllowed": false
+  },
+  "checks": [
+    {
+      "id": "schema-version",
+      "status": "PASS",
+      "detail": "schemaVersion='human-infra.life-path-nhats-colectica-capture-task-register.v1'"
+    },
+    {
+      "id": "identity-and-upstream-bindings",
+      "status": "PASS",
+      "detail": "task register must bind NHATS route-field discovery, authenticated capture template and route-classifier readiness"
+    },
+    {
+      "id": "source-bindings",
+      "status": "PASS",
+      "detail": "source bindings must point to current route-field, capture-template and readiness records"
+    },
+    {
+      "id": "decision-boundary",
+      "status": "PASS",
+      "detail": "only captureTaskRegisterReady may be true; capture, labels, classifier, extraction, export, calibration and individual prediction must remain false"
+    },
+    {
+      "id": "required-evidence-slots",
+      "status": "PASS",
+      "detail": "missing=[]"
+    },
+    {
+      "id": "capture-task-groups",
+      "status": "PASS",
+      "detail": "missing=[]"
+    },
+    {
+      "id": "template-variable-coverage",
+      "status": "PASS",
+      "detail": "missing_by_group={}"
+    },
+    {
+      "id": "task-shape-and-status",
+      "status": "PASS",
+      "detail": "task_count=39"
+    },
+    {
+      "id": "sensitive-death-field-exclusion",
+      "status": "PASS",
+      "detail": "sensitive_excluded=['dm13mthdied', 'dm13yrdied', 'dm14mthdied', 'dm14yrdied']"
+    },
+    {
+      "id": "blocking-gates",
+      "status": "PASS",
+      "detail": "task register must keep account, login, capture hash, route crosswalk, second review and route classifier code blocked"
+    },
+    {
+      "id": "prohibited-actions",
+      "status": "PASS",
+      "detail": "task register must prohibit credentials, inferred labels, sensitive death fields, classifier/extractor/export/calibration and individual prediction"
+    },
+    {
+      "id": "next-evidence-required",
+      "status": "PASS",
+      "detail": "next evidence must require controlled login, variable pages, hashes, labels, missing-code map and second review"
+    },
+    {
+      "id": "no-secret-or-individual-output-keys",
+      "status": "PASS",
+      "detail": "prohibited_keys=[]"
+    }
+  ]
+}

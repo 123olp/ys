@@ -3,7 +3,7 @@
 - Overall status: `PASS`
 - Model path: `web/src/data/life-path-toy-model.json`
 - Model SHA-256: `a4c92209d79d20579bf1f575d5ebf07ffe5be9ccaf6bf3f3eef08efa287b5377`
-- Generated at: `2026-07-03T06:37:06.803031+00:00`
+- Generated at: `2026-07-03T07:02:20.091419+00:00`
 
 ## Checks
 
@@ -307,6 +307,15 @@
 | `nhats-colectica-authenticated-capture-template-validation-schema` | `PASS` | schemaVersion='human-infra.life-path-nhats-colectica-authenticated-capture-template-validation.v1' |
 | `nhats-colectica-authenticated-capture-template-validation-source-hash` | `PASS` | capture-template validation must point back to current template, access-route probe, execution register, protocol and route-field register hashes |
 | `nhats-colectica-authenticated-capture-template-validation-boundary` | `PASS` | validation must prove only template readiness while keeping authenticated capture and model admission blocked |
+| `nhats-colectica-capture-task-register-exists` | `PASS` | domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_capture_task_register.json |
+| `nhats-colectica-capture-task-register-validation-exists` | `PASS` | web/src/data/life-path-nhats-colectica-capture-task-register-validation.json |
+| `nhats-colectica-capture-task-register-schema` | `PASS` | schemaVersion='human-infra.life-path-nhats-colectica-capture-task-register.v1' |
+| `nhats-colectica-capture-task-register-identity` | `PASS` | capture task register must remain task-register-only and not claim authenticated capture completion |
+| `nhats-colectica-capture-task-register-boundary` | `PASS` | task register may be ready, but capture, labels, classifier, extraction, aggregation, export, calibration and individual prediction must remain blocked |
+| `nhats-colectica-capture-task-register-task-shape` | `PASS` | group_count=9; task_count=39 |
+| `nhats-colectica-capture-task-register-validation-schema` | `PASS` | schemaVersion='human-infra.life-path-nhats-colectica-capture-task-register-validation.v1' |
+| `nhats-colectica-capture-task-register-validation-source-hash` | `PASS` | capture-task validation must point back to current register, route-field, capture-template and route-classifier readiness hashes |
+| `nhats-colectica-capture-task-register-validation-boundary` | `PASS` | validation must prove task readiness while keeping authenticated capture and model admission blocked |
 | `nhats-route-classifier-readiness-exists` | `PASS` | domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_route_classifier_readiness.json |
 | `nhats-route-classifier-readiness-validation-exists` | `PASS` | web/src/data/life-path-nhats-route-classifier-readiness-validation.json |
 | `nhats-route-classifier-readiness-schema` | `PASS` | schemaVersion='human-infra.life-path-nhats-route-classifier-readiness.v1' |
@@ -401,14 +410,14 @@
 ## NHATS Controlled Storage / Destruction
 
 - Storage/destruction validation path: `web/src/data/life-path-nhats-controlled-storage-destruction-validation.json`
-- Storage/destruction validation SHA-256: `8c4a6bcfe17a5a0735455cf310d6f7841b5ad7c96933667ea00a3d82957f7959`
+- Storage/destruction validation SHA-256: `c14af6047cf29cc3e8362ae7c519ad033134d34b1736384124af9ecbb4b14455`
 - Storage/destruction validation status: `PASS`
 - Boundary: the controlled storage/destruction plan is machine-validated but real governed workspace execution, download, extraction, calibration and individual prediction remain blocked.
 
 ## NHATS Synthetic Storage / Destruction Drill
 
 - Synthetic drill validation path: `web/src/data/life-path-nhats-synthetic-storage-destruction-drill-validation.json`
-- Synthetic drill validation SHA-256: `870127ba21bd284c59f2e89dc6bcfbc90cd65a94dccb6bcc920e6d322d18a0dd`
+- Synthetic drill validation SHA-256: `badb45958989dc130f7dba91dcf117d2f4287f0d4300af19d2cd9a8cc600756a`
 - Synthetic drill validation status: `PASS`
 - Boundary: the synthetic create-hash-delete drill proves only dry-run mechanics; it does not prove NHATS registration, governed workspace provisioning, data access, extraction, calibration or individual prediction.
 
@@ -418,7 +427,7 @@
 - File-tier table SHA-256: `18c151512ffb6e075a134765e13d5b4b07252be10b9e55a211f7d890cefdc6f1`
 - File-tier table status: `PASS`
 - File-tier validation path: `web/src/data/life-path-nhats-file-tier-table-validation.json`
-- File-tier validation SHA-256: `5445163683d36276bbf525eb8446376c89d2f5dc324044ce3db4ccc2014d1c40`
+- File-tier validation SHA-256: `da921583a272dfeca3d58e213384a6654efa5f232684e84153078ad1367a2887`
 - File-tier validation status: `PASS`
 - Boundary: the file-tier table maps official R13/R14 public and sensitive file families, and the validator binds it to current upstream access records while still blocking download, extraction, repository storage, public AI upload, calibration and individual prediction.
 
@@ -499,7 +508,7 @@
 - Colectica execution register path: `domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_value_label_review_execution_register.json`
 - Colectica execution register SHA-256: `de6d17f9470a563346f92884cead1eec35cf5a954245751b0135efc60672b042`
 - Colectica execution validation path: `web/src/data/life-path-nhats-colectica-value-label-review-execution-validation.json`
-- Colectica execution validation SHA-256: `12df1593974e125abdf321e28ffa67c39a7bdece5fa2218cb9ea55915161f72b`
+- Colectica execution validation SHA-256: `d7263c76d569c292a0aff6332443c8b15caec7fbaf77f6c6489390ec1ca95ba2`
 - Colectica execution validation status: `PASS`
 - Boundary: Colectica execution now records official source trace, field-level source-trace skeleton and standard negative-code family only; it still blocks login-derived value labels, question text, universe/skip logic, route-value maps, classifier promotion, weighted route counts, public export, calibration, validation and individual prediction.
 
@@ -508,7 +517,7 @@
 - Colectica access-route probe register path: `domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_access_route_probe_register.json`
 - Colectica access-route probe register SHA-256: `58941fde2c6a1c5488437a1ad447cb3dae2032739ef1ed579e29da98b96aaa89`
 - Colectica access-route probe validation path: `web/src/data/life-path-nhats-colectica-access-route-probe-validation.json`
-- Colectica access-route probe validation SHA-256: `6bda5c1983e47aadb8afaec8a60bbf85bebb553c9e6eb222603e9c35ac5fb1f3`
+- Colectica access-route probe validation SHA-256: `51a2e59ee463ecf33eaca28f13d1b0df021bd8a82bdd4ce17ced5f3f0d109642`
 - Colectica access-route probe validation status: `PASS`
 - Boundary: access-route probing verifies the public entry point, anonymous login boundary and technical-guide workflow only; it still blocks account status, authenticated variable page capture, value labels, question text, exports, calibration and individual prediction.
 
@@ -517,7 +526,7 @@
 - Colectica authenticated capture template path: `domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_authenticated_capture_template.json`
 - Colectica authenticated capture template SHA-256: `dc097acfcb44007b42a25ce500c6cb1d23b1154f6620a7797445293817313eeb`
 - Colectica authenticated capture template validation path: `web/src/data/life-path-nhats-colectica-authenticated-capture-template-validation.json`
-- Colectica authenticated capture template validation SHA-256: `819c1c109ed69bf5a645c07c700ad0a7ce9625b3c6fdfabcb3297bd424d35eb0`
+- Colectica authenticated capture template validation SHA-256: `d2dd4e78d3707534285f99c3d7cb43ccfaf1230dede04eca5d2df27113f6743d`
 - Colectica authenticated capture template validation status: `PASS`
 - Boundary: authenticated capture template validation proves only that the next capture evidence slots are complete; it still blocks account status, login, authenticated variable pages, value labels, question text, universe/skip logic, route classifiers, public export, calibration and individual prediction.
 
@@ -526,7 +535,7 @@
 - Route-classifier readiness path: `domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_route_classifier_readiness.json`
 - Route-classifier readiness SHA-256: `f0c0224317c9ee20e8de56dcddeadba85ae24d67b736782ba22de90e83109296`
 - Route-classifier readiness validation path: `web/src/data/life-path-nhats-route-classifier-readiness-validation.json`
-- Route-classifier readiness validation SHA-256: `17b3503e2ca4b91b637a550c04de281ea8a5d20bfba76cacca439c5fd78730f6`
+- Route-classifier readiness validation SHA-256: `b3dd6add20f471742fe12074ac7212fc683157efd1a01884b67845be6a0f9b7e`
 - Route-classifier readiness validation status: `PASS`
 - Boundary: route-classifier readiness validation proves only that a blocked gate exists between route-field candidates and any real classifier; it still blocks Colectica value labels, route-value crosswalks, variable-specific missing maps, real extraction, aggregation, weighted counts, public export, calibration and individual prediction.
 
@@ -535,7 +544,7 @@
 - L2 variable-family admission register path: `domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_l2_variable_family_admission_register.json`
 - L2 variable-family admission register SHA-256: `da1d444f452482f37aa7d7d12cd97c9deb0b2d6006540f76c5d2588389dffce3`
 - L2 variable-family admission validation path: `web/src/data/life-path-nhats-l2-variable-family-admission-validation.json`
-- L2 variable-family admission validation SHA-256: `23d32d14a1d06633e00fb65eef94d3d1e4d43f58cd61c37bbab75c346521030f`
+- L2 variable-family admission validation SHA-256: `87ea7b21c03cab8255ffe8d63ccd53cda8feb084c8346f9d2b732662a367cee6`
 - L2 variable-family admission validation status: `PASS`
 - Boundary: L2 variable-family admission validation proves only that the narrow estimand is mapped to six candidate families; it still blocks exact variables, governed data access, extraction, L4 admission, calibration and individual prediction.
 
@@ -544,7 +553,7 @@
 - Pre-outcome aggregation protocol path: `domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_preoutcome_aggregation_protocol.json`
 - Pre-outcome aggregation protocol SHA-256: `a2917d4bbb1682f5de6251fe919afae5da5bad681168475845a3a9c0a9a0747d`
 - Pre-outcome aggregation validation path: `web/src/data/life-path-nhats-preoutcome-aggregation-validation.json`
-- Pre-outcome aggregation validation SHA-256: `aec8cc48b16d76a47f4559a7f9a39f376055e0ae9365ef5d8cff5385910d9f1c`
+- Pre-outcome aggregation validation SHA-256: `9914e5ce08cf6d69280120787998cc6d994b13ac22ce41aa079238991bdac971`
 - Pre-outcome aggregation validation status: `PASS`
 - Boundary: pre-outcome aggregation validation proves only that L2 aggregation rules are frozen before outcome inspection; it still blocks real aggregation, weighted estimates, public export, L4 admission, calibration and individual prediction.
 

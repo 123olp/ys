@@ -800,6 +800,8 @@
         "web/src/data/life-path-nhats-colectica-access-route-probe-validation.json",
         "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_authenticated_capture_template.json",
         "web/src/data/life-path-nhats-colectica-authenticated-capture-template-validation.json",
+        "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_capture_task_register.json",
+        "web/src/data/life-path-nhats-colectica-capture-task-register-validation.json",
         "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_route_classifier_readiness.json",
         "web/src/data/life-path-nhats-route-classifier-readiness-validation.json",
         "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_l2_variable_family_admission_register.json",
@@ -931,12 +933,15 @@
             "web/src/data/life-path-nhats-colectica-access-route-probe-validation.json",
             "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_authenticated_capture_template.json",
             "web/src/data/life-path-nhats-colectica-authenticated-capture-template-validation.json",
+            "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_capture_task_register.json",
+            "web/src/data/life-path-nhats-colectica-capture-task-register-validation.json",
             "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_route_classifier_readiness.json",
             "web/src/data/life-path-nhats-route-classifier-readiness-validation.json",
             "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_l2_variable_family_admission_register.json",
             "web/src/data/life-path-nhats-l2-variable-family-admission-validation.json"
           ],
           "missingEvidence": [
+            "Colectica capture task register now enumerates 9 route-field groups and 39 pending variable/output tasks, but authenticated task slots remain unfilled.",
             "Controlled Colectica login/access record.",
             "Colectica variable page captures with source hashes.",
             "Authenticated capture template slots are still unfilled.",
@@ -946,7 +951,7 @@
             "Route-classifier readiness gate now exists, but all classifier promotion gates remain blocked until Colectica capture, value labels, route-value crosswalk, variable-specific missing-code map and second-reviewer signoff pass.",
             "Second reviewer signoff."
           ],
-          "nextAction": "Use the verified access-route workflow, authenticated capture template and route-classifier readiness gate to complete controlled Colectica login, capture variable pages with hashes, confirm labels/question text/skip logic and keep route classifier blocked until second-reviewer signoff.",
+          "nextAction": "Use the verified access-route workflow, authenticated capture template, capture task register and route-classifier readiness gate to complete controlled Colectica login, capture variable pages with hashes, confirm labels/question text/skip logic and keep route classifier blocked until second-reviewer signoff.",
           "blocks100Percent": true
         },
         {
@@ -1034,7 +1039,7 @@
   "nextWorkOrder": [
     {
       "priority": 1,
-      "item": "Use the verified NHATS Colectica access-route workflow, authenticated capture template and route-classifier readiness gate to complete controlled login, fill capture slots with page hashes, confirm value labels/question text/universe/skip logic and fill route-value crosswalk plus variable-specific missing-code map.",
+      "item": "Use the verified NHATS Colectica access-route workflow, authenticated capture template, capture task register and route-classifier readiness gate to complete controlled login, fill capture slots with page hashes, confirm value labels/question text/universe/skip logic and fill route-value crosswalk plus variable-specific missing-code map.",
       "unblocks": [
         "MODEL-G4-field-and-value-confirmation"
       ]

@@ -1,0 +1,241 @@
+{
+  "schemaVersion": "human-infra.life-path-nhats-colectica-capture-task-register.v1",
+  "taskRegisterId": "nhats-r13-r14-colectica-capture-task-register-2026-07-03",
+  "sourceId": "nhats",
+  "sourceName": "National Health and Aging Trends Study",
+  "status": "task-register-only-controlled-capture-not-started",
+  "reviewDate": "2026-07-03",
+  "reviewer": "tradecatlabs",
+  "purpose": "Expand the NHATS R13/R14 Colectica authenticated-capture template into variable-level capture tasks before any real route classifier, extraction, aggregation, calibration or public output is allowed.",
+  "routeFieldDiscoveryRegisterId": "nhats-r13-r14-route-field-discovery-register-draft",
+  "authenticatedCaptureTemplateId": "nhats-r13-r14-colectica-authenticated-capture-template-2026-07-03",
+  "routeClassifierReadinessId": "nhats-r13-r14-route-classifier-readiness-2026-07-03",
+  "sourceBindings": {
+    "routeFieldDiscoveryRegisterPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_route_field_discovery_register.json",
+    "authenticatedCaptureTemplatePath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_authenticated_capture_template.json",
+    "routeClassifierReadinessPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_route_classifier_readiness.json"
+  },
+  "requiredEvidenceSlots": [
+    "colecticaItemId",
+    "variableName",
+    "round",
+    "fileName",
+    "detailsPageUrl",
+    "sourceCaptureSha256",
+    "captureMethod",
+    "captureDate",
+    "valueLabelsReviewed",
+    "questionTextReviewed",
+    "universeSkipLogicReviewed",
+    "concordanceReviewed",
+    "publicUseTierReviewed",
+    "sensitiveRestrictedExclusionReviewed",
+    "variableSpecificMissingCodesReviewed",
+    "reviewerNotes",
+    "secondReviewerSignoff",
+    "promotionAllowed"
+  ],
+  "currentDecision": {
+    "captureTaskRegisterReady": true,
+    "controlledColecticaAccountStatusRecorded": false,
+    "colecticaLoginCompleted": false,
+    "authenticatedVariablePagesCaptured": false,
+    "sourceCaptureHashesRecorded": false,
+    "valueLabelsConfirmed": false,
+    "questionTextConfirmed": false,
+    "universeSkipLogicConfirmed": false,
+    "routeValueCrosswalkReady": false,
+    "variableSpecificMissingCodeMapReady": false,
+    "secondReviewerSignoff": false,
+    "routeClassifierAllowed": false,
+    "realExtractionAllowed": false,
+    "aggregateCohortFlowAllowed": false,
+    "weightedRouteCountsAllowed": false,
+    "publicExportAllowed": false,
+    "calibrationAllowed": false,
+    "individualPredictionAllowed": false
+  },
+  "captureTaskGroups": [
+    {
+      "requiredRouteFieldId": "identity_join_key",
+      "taskStatus": "missing-authenticated-source-capture",
+      "promotionAllowed": false,
+      "tasks": [
+        {"taskId": "identity_join_key-spid", "variableName": "spid", "round": "both", "captureMode": "authenticated-colectica-variable-page", "status": "pending"},
+        {"taskId": "identity_join_key-spidr12", "variableName": "spidr12", "round": "r13-r14-linkage", "captureMode": "authenticated-colectica-variable-page", "status": "pending"}
+      ],
+      "completionCriteria": [
+        "confirm canonical public-use join key",
+        "confirm longitudinal linkage rule",
+        "confirm no restricted identifier is required"
+      ]
+    },
+    {
+      "requiredRouteFieldId": "round13_baseline_eligibility",
+      "taskStatus": "missing-authenticated-source-capture",
+      "promotionAllowed": false,
+      "tasks": [
+        {"taskId": "round13_baseline_eligibility-r13status", "variableName": "r13status", "round": "r13", "captureMode": "authenticated-colectica-variable-page", "status": "pending"},
+        {"taskId": "round13_baseline_eligibility-r13statuscat", "variableName": "r13statuscat", "round": "r13", "captureMode": "authenticated-colectica-variable-page", "status": "pending"},
+        {"taskId": "round13_baseline_eligibility-r13dcontnew", "variableName": "r13dcontnew", "round": "r13", "captureMode": "authenticated-colectica-variable-page", "status": "pending"},
+        {"taskId": "round13_baseline_eligibility-fl13newsample", "variableName": "fl13newsample", "round": "r13", "captureMode": "authenticated-colectica-variable-page", "status": "pending"},
+        {"taskId": "round13_baseline_eligibility-fl13facility", "variableName": "fl13facility", "round": "r13", "captureMode": "authenticated-colectica-variable-page", "status": "pending"}
+      ],
+      "completionCriteria": [
+        "confirm R13 denominator inclusion values",
+        "confirm round-entry and carried-forward rules",
+        "confirm baseline facility handling"
+      ]
+    },
+    {
+      "requiredRouteFieldId": "round14_interview_status",
+      "taskStatus": "missing-authenticated-source-capture",
+      "promotionAllowed": false,
+      "tasks": [
+        {"taskId": "round14_interview_status-r14status", "variableName": "r14status", "round": "r14", "captureMode": "authenticated-colectica-variable-page", "status": "pending"},
+        {"taskId": "round14_interview_status-r14statuscat", "variableName": "r14statuscat", "round": "r14", "captureMode": "authenticated-colectica-variable-page", "status": "pending"},
+        {"taskId": "round14_interview_status-r14dcontnew", "variableName": "r14dcontnew", "round": "r14", "captureMode": "authenticated-colectica-variable-page", "status": "pending"},
+        {"taskId": "round14_interview_status-r14breakoffst", "variableName": "r14breakoffst", "round": "r14", "captureMode": "authenticated-colectica-variable-page", "status": "pending"},
+        {"taskId": "round14_interview_status-r14breakoffqt", "variableName": "r14breakoffqt", "round": "r14", "captureMode": "authenticated-colectica-variable-page", "status": "pending"},
+        {"taskId": "round14_interview_status-fl14pt2miss", "variableName": "fl14pt2miss", "round": "r14", "captureMode": "authenticated-colectica-variable-page", "status": "pending"},
+        {"taskId": "round14_interview_status-r14dlmlint", "variableName": "r14dlmlint", "round": "r14", "captureMode": "authenticated-colectica-variable-page", "status": "pending"}
+      ],
+      "completionCriteria": [
+        "confirm R14 interview completion values",
+        "confirm status-category value labels",
+        "confirm breakoff and partial-missing handling"
+      ]
+    },
+    {
+      "requiredRouteFieldId": "proxy_status",
+      "taskStatus": "missing-authenticated-source-capture",
+      "promotionAllowed": false,
+      "tasks": [
+        {"taskId": "proxy_status-is13resptype", "variableName": "is13resptype", "round": "r13", "captureMode": "authenticated-colectica-variable-page", "status": "pending"},
+        {"taskId": "proxy_status-op13proxy", "variableName": "op13proxy", "round": "r13", "captureMode": "authenticated-colectica-variable-page", "status": "pending"},
+        {"taskId": "proxy_status-op13whyproxy", "variableName": "op13whyproxy", "round": "r13", "captureMode": "authenticated-colectica-variable-page", "status": "pending"},
+        {"taskId": "proxy_status-is14resptype", "variableName": "is14resptype", "round": "r14", "captureMode": "authenticated-colectica-variable-page", "status": "pending"},
+        {"taskId": "proxy_status-op14proxy", "variableName": "op14proxy", "round": "r14", "captureMode": "authenticated-colectica-variable-page", "status": "pending"},
+        {"taskId": "proxy_status-op14whyproxy", "variableName": "op14whyproxy", "round": "r14", "captureMode": "authenticated-colectica-variable-page", "status": "pending"}
+      ],
+      "completionCriteria": [
+        "confirm self/proxy value labels",
+        "confirm proxy interview routing",
+        "confirm proxy-specific functional item handling"
+      ]
+    },
+    {
+      "requiredRouteFieldId": "facility_residential_status",
+      "taskStatus": "missing-authenticated-source-capture",
+      "promotionAllowed": false,
+      "tasks": [
+        {"taskId": "facility_residential_status-r13dresid", "variableName": "r13dresid", "round": "r13", "captureMode": "authenticated-colectica-variable-page", "status": "pending"},
+        {"taskId": "facility_residential_status-fl13facility", "variableName": "fl13facility", "round": "r13", "captureMode": "authenticated-colectica-variable-page", "status": "pending"},
+        {"taskId": "facility_residential_status-r14dresid", "variableName": "r14dresid", "round": "r14", "captureMode": "authenticated-colectica-variable-page", "status": "pending"},
+        {"taskId": "facility_residential_status-fl14facility", "variableName": "fl14facility", "round": "r14", "captureMode": "authenticated-colectica-variable-page", "status": "pending"}
+      ],
+      "completionCriteria": [
+        "confirm facility status value labels",
+        "confirm residential-care route values",
+        "confirm facility route separation from proxy route"
+      ]
+    },
+    {
+      "requiredRouteFieldId": "death_decedent_indicator",
+      "taskStatus": "missing-authenticated-source-capture-sensitive-exclusion-required",
+      "promotionAllowed": false,
+      "tasks": [
+        {"taskId": "death_decedent_indicator-fl13spdied", "variableName": "fl13spdied", "round": "r13", "captureMode": "authenticated-colectica-variable-page", "status": "pending"},
+        {"taskId": "death_decedent_indicator-fl14spdied", "variableName": "fl14spdied", "round": "r14", "captureMode": "authenticated-colectica-variable-page", "status": "pending"},
+        {"taskId": "death_decedent_indicator-r13dlmlint", "variableName": "r13dlmlint", "round": "r13", "captureMode": "authenticated-colectica-variable-page", "status": "pending"},
+        {"taskId": "death_decedent_indicator-r14dlmlint", "variableName": "r14dlmlint", "round": "r14", "captureMode": "authenticated-colectica-variable-page", "status": "pending"}
+      ],
+      "sensitiveExcludedVariables": [
+        "dm13mthdied",
+        "dm13yrdied",
+        "dm14mthdied",
+        "dm14yrdied"
+      ],
+      "completionCriteria": [
+        "confirm public-use death indicator values",
+        "confirm sensitive death date exclusion",
+        "confirm death-boundary dominance rule"
+      ]
+    },
+    {
+      "requiredRouteFieldId": "nonresponse_missing_code",
+      "taskStatus": "missing-authenticated-source-capture",
+      "promotionAllowed": false,
+      "tasks": [
+        {"taskId": "nonresponse_missing_code-r13breakoffst", "variableName": "r13breakoffst", "round": "r13", "captureMode": "authenticated-colectica-variable-page", "status": "pending"},
+        {"taskId": "nonresponse_missing_code-r13breakoffqt", "variableName": "r13breakoffqt", "round": "r13", "captureMode": "authenticated-colectica-variable-page", "status": "pending"},
+        {"taskId": "nonresponse_missing_code-fl13pt2miss", "variableName": "fl13pt2miss", "round": "r13", "captureMode": "authenticated-colectica-variable-page", "status": "pending"},
+        {"taskId": "nonresponse_missing_code-r14breakoffst", "variableName": "r14breakoffst", "round": "r14", "captureMode": "authenticated-colectica-variable-page", "status": "pending"},
+        {"taskId": "nonresponse_missing_code-r14breakoffqt", "variableName": "r14breakoffqt", "round": "r14", "captureMode": "authenticated-colectica-variable-page", "status": "pending"},
+        {"taskId": "nonresponse_missing_code-fl14pt2miss", "variableName": "fl14pt2miss", "round": "r14", "captureMode": "authenticated-colectica-variable-page", "status": "pending"}
+      ],
+      "completionCriteria": [
+        "confirm variable-specific negative missing-code map",
+        "confirm skip pattern distinction",
+        "confirm refused/don't know/missing separation"
+      ]
+    },
+    {
+      "requiredRouteFieldId": "design_weight_linkage",
+      "taskStatus": "missing-method-review-and-source-capture",
+      "promotionAllowed": false,
+      "tasks": [
+        {"taskId": "design_weight_linkage-w13varstrat", "variableName": "w13varstrat", "round": "r13", "captureMode": "authenticated-colectica-variable-page-plus-method-review", "status": "pending"},
+        {"taskId": "design_weight_linkage-w13varunit", "variableName": "w13varunit", "round": "r13", "captureMode": "authenticated-colectica-variable-page-plus-method-review", "status": "pending"},
+        {"taskId": "design_weight_linkage-w14varstrat", "variableName": "w14varstrat", "round": "r14", "captureMode": "authenticated-colectica-variable-page-plus-method-review", "status": "pending"},
+        {"taskId": "design_weight_linkage-w14varunit", "variableName": "w14varunit", "round": "r14", "captureMode": "authenticated-colectica-variable-page-plus-method-review", "status": "pending"}
+      ],
+      "completionCriteria": [
+        "confirm analysis weight field separately from this task register",
+        "confirm strata field",
+        "confirm PSU or variance-unit field",
+        "confirm variance method"
+      ]
+    },
+    {
+      "requiredRouteFieldId": "disclosure_cell_count",
+      "taskStatus": "computed-output-gate-pending-real-extraction",
+      "promotionAllowed": false,
+      "tasks": [
+        {"taskId": "disclosure_cell_count-computed_output_cell_n", "variableName": "computed_output_cell_n", "round": "computed", "captureMode": "computed-output-disclosure-gate", "status": "pending-real-extraction"}
+      ],
+      "completionCriteria": [
+        "compute aggregate cell counts only inside governed analysis environment",
+        "apply small-cell suppression before public output",
+        "block public export before disclosure review"
+      ]
+    }
+  ],
+  "blockingGates": [
+    "controlled Colectica account status absent",
+    "Colectica login not completed",
+    "authenticated variable page capture hashes absent",
+    "value labels, question text, universe and skip logic unconfirmed",
+    "route-value crosswalk absent",
+    "variable-specific missing-code map absent",
+    "second reviewer signoff absent",
+    "governed real data access absent",
+    "route classifier code not allowed"
+  ],
+  "prohibitedActions": [
+    "Do not store credentials, session cookies, authentication tokens, account profile details or reviewer personal data in this repository.",
+    "Do not treat task presence as authenticated Colectica capture completion.",
+    "Do not infer value labels, question text, universe, skip logic, route values or missing-code maps from task names or crosswalk field names.",
+    "Do not include sensitive month/year death fields in capture tasks, public route outputs or model inputs.",
+    "Do not write a route classifier, endpoint classifier, extractor, weighted route table, public export, calibration routine or individual prediction from this task register."
+  ],
+  "nextEvidenceRequired": [
+    "Controlled Colectica login/access record outside public repository.",
+    "Authenticated Details page URL or stable Colectica item identifier for every pending variable task.",
+    "Source capture SHA-256 for every reviewed variable page or basket export.",
+    "Value labels, question text, universe and skip logic reviewed from authenticated source.",
+    "Round/file membership, public/sensitive/restricted tier and concordance reviewed.",
+    "Variable-specific missing-code map and route-value crosswalk.",
+    "Second reviewer signoff before any route classifier promotion."
+  ]
+}

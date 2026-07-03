@@ -109,6 +109,7 @@ longevity-evidence/
 │   │   ├── life_path_nhats_synthetic_storage_destruction_drill.json
 │   │   ├── life_path_nhats_colectica_access_route_probe_register.json
 │   │   ├── life_path_nhats_colectica_authenticated_capture_template.json
+│   │   ├── life_path_nhats_colectica_capture_task_register.json
 │   │   ├── life_path_nhats_colectica_value_label_review_execution_register.json
 │   │   ├── life_path_nhats_colectica_value_label_review_protocol.json
 │   │   ├── life_path_nhats_route_classifier_readiness.json
@@ -161,6 +162,7 @@ longevity-evidence/
     ├── validate_nhats_synthetic_storage_destruction_drill.py
     ├── validate_nhats_colectica_value_label_review_execution.py
     ├── validate_nhats_colectica_value_label_protocol.py
+    ├── validate_nhats_colectica_capture_task_register.py
     ├── validate_nhats_disclosure_outputs.py
     ├── validate_nhats_route_classifier_readiness.py
     ├── validate_nhats_missingness_route_map.py
@@ -196,6 +198,8 @@ longevity-evidence/
 
 `data/manual/life_path_nhats_l4_readiness_runway.json` 与 `scripts/validate_nhats_l4_readiness_runway.py` 维护 NHATS 从 L2 设计资产进入 L4 aggregate-calibrated research model 前的 readiness runway；它只把 12 个 pass / partial / blocked gates 和上游 source hash 接入审计，导出 `web/src/data/life-path-nhats-l4-readiness-runway-validation.json`，不授权真实提取、校准预测、干预排序、个体死亡日期或个体决策支持。
 
+`data/manual/life_path_nhats_colectica_capture_task_register.json` 与 `scripts/validate_nhats_colectica_capture_task_register.py` 维护 NHATS Colectica 变量页捕获任务清单；它把 authenticated capture template 展开为 9 个 route-field 组和 39 个 pending 变量 / 输出任务，导出 `web/src/data/life-path-nhats-colectica-capture-task-register-validation.json`，只证明任务清单已准备，不表示 Colectica 登录、变量页捕获、值标签确认、route classifier、真实提取、校准或个体预测已允许。
+
 `data/manual/life_path_nhats_official_source_refresh_register.json` 与 `scripts/validate_nhats_official_source_refresh.py` 维护 NHATS 官方公开来源刷新证据；它只记录 Data Access、Cross-Year Search、Conditions of Use、R13/R14 文件页和 Colectica 技术指南的 HTTP 状态、内容长度和 SHA-256，导出 `web/src/data/life-path-nhats-official-source-refresh-validation.json`，并把 acquisition readiness 中的 official-source-refresh 门升为 ready。该门不授权数据下载、抽取、校准、公开导出或个体预测。
 
 ## 运行示例
@@ -218,6 +222,7 @@ python3 domains/c1-boundary-rewriting/longevity-evidence/scripts/validate_nhats_
 python3 domains/c1-boundary-rewriting/longevity-evidence/scripts/validate_nhats_colectica_value_label_review_execution.py
 python3 domains/c1-boundary-rewriting/longevity-evidence/scripts/validate_nhats_colectica_access_route_probe.py
 python3 domains/c1-boundary-rewriting/longevity-evidence/scripts/validate_nhats_colectica_authenticated_capture_template.py
+python3 domains/c1-boundary-rewriting/longevity-evidence/scripts/validate_nhats_colectica_capture_task_register.py
 python3 domains/c1-boundary-rewriting/longevity-evidence/scripts/validate_nhats_route_classifier_readiness.py
 python3 domains/c1-boundary-rewriting/longevity-evidence/scripts/validate_nhats_l2_variable_family_admission.py
 python3 domains/c1-boundary-rewriting/longevity-evidence/scripts/validate_nhats_preoutcome_aggregation_protocol.py
