@@ -85,6 +85,9 @@ DEFAULT_NHATS_ACQUISITION_READINESS = (
     / "manual"
     / "life_path_nhats_acquisition_readiness.json"
 )
+DEFAULT_NHATS_ACQUISITION_READINESS_VALIDATION = (
+    REPO_ROOT / "web" / "src" / "data" / "life-path-nhats-acquisition-readiness-validation.json"
+)
 DEFAULT_NHATS_FILE_TIER_TABLE = (
     REPO_ROOT
     / "domains"
@@ -1773,6 +1776,104 @@ def audit_nhats_acquisition_readiness(readiness_path: Path) -> dict[str, Any]:
     return {
         "path": str(readiness_path.relative_to(REPO_ROOT)),
         "sha256": sha256_file(readiness_path) if exists else None,
+        "status": "PASS" if summarize_checks(checks)["fail"] == 0 else "FAIL",
+        "checks": checks,
+        "summary": summarize_checks(checks),
+    }
+
+
+def audit_nhats_acquisition_readiness_validation(
+    validation_path: Path,
+    readiness_path: Path,
+) -> dict[str, Any]:
+    checks: list[dict[str, Any]] = []
+    exists = validation_path.exists()
+    add_check(
+        checks,
+        "nhats-acquisition-readiness-validation-exists",
+        status_from_bool(exists),
+        str(validation_path.relative_to(REPO_ROOT)),
+    )
+    validation = load_json(validation_path) if exists else {}
+
+    schema_ok = (
+        validation.get("schemaVersion")
+        == "human-infra.life-path-nhats-acquisition-readiness-validation.v1"
+    )
+    add_check(
+        checks,
+        "nhats-acquisition-readiness-validation-schema",
+        status_from_bool(exists and schema_ok),
+        f"schemaVersion={validation.get('schemaVersion')!r}",
+    )
+
+    source_ok = (
+        validation.get("registerPath") == str(readiness_path.relative_to(REPO_ROOT))
+        and validation.get("registerSha256") == sha256_file(readiness_path)
+        and validation.get("acquisitionReadinessId") == "nhats-acquisition-readiness-2026-07-02"
+    )
+    add_check(
+        checks,
+        "nhats-acquisition-readiness-validation-source-hash",
+        status_from_bool(exists and readiness_path.exists() and source_ok),
+        "validation must point back to the current acquisition-readiness register path and sha256",
+    )
+
+    summary = validation.get("summary")
+    status_ok = (
+        validation.get("overallStatus") == "PASS"
+        and isinstance(summary, dict)
+        and summary.get("fail") == 0
+        and isinstance(validation.get("checks"), list)
+    )
+    add_check(
+        checks,
+        "nhats-acquisition-readiness-validation-pass",
+        status_from_bool(exists and status_ok),
+        f"overallStatus={validation.get('overallStatus')!r} summary={summary!r}",
+    )
+
+    gate_summary = validation.get("gateSummary")
+    gate_summary_ok = (
+        isinstance(gate_summary, dict)
+        and gate_summary.get("requiredGateCount") == 10
+        and gate_summary.get("readyGateCount") == 0
+        and gate_summary.get("blockingGateCount") == 10
+    )
+    add_check(
+        checks,
+        "nhats-acquisition-readiness-validation-blocking-gates",
+        status_from_bool(exists and gate_summary_ok),
+        "validation must keep 10 acquisition-readiness gates blocking and 0 ready",
+    )
+
+    boundary = validation.get("boundary")
+    boundary_ok = (
+        isinstance(boundary, dict)
+        and boundary.get("acquisitionReady") is False
+        and boundary.get("extractionScriptAllowed") is False
+        and boundary.get("rawDataAllowedInRepository") is False
+        and boundary.get("calibrationAllowed") is False
+        and boundary.get("individualPredictionAllowed") is False
+    )
+    add_check(
+        checks,
+        "nhats-acquisition-readiness-validation-boundary",
+        status_from_bool(exists and boundary_ok),
+        "validation must keep acquisition, extraction, raw repository data, calibration and individual prediction blocked",
+    )
+
+    note_ok = "does not prove registration" in str(validation.get("note", "")).lower()
+    add_check(
+        checks,
+        "nhats-acquisition-readiness-validation-non-proof-note",
+        status_from_bool(exists and note_ok),
+        "validation must state that it does not prove registration, storage, downloads, extraction, calibration or prediction",
+    )
+
+    return {
+        "path": str(validation_path.relative_to(REPO_ROOT)),
+        "sha256": sha256_file(validation_path) if exists else None,
         "status": "PASS" if summarize_checks(checks)["fail"] == 0 else "FAIL",
         "checks": checks,
         "summary": summarize_checks(checks),
@@ -5461,6 +5562,7 @@ def audit_model(
     nhats_variable_dictionary_path: Path,
     nhats_extraction_manifest_path: Path,
     nhats_acquisition_readiness_path: Path,
+    nhats_acquisition_readiness_validation_path: Path,
     nhats_file_tier_table_path: Path,
     nhats_first_estimand_protocol_path: Path,
     nhats_variable_confirmation_matrix_path: Path,
@@ -5665,6 +5767,12 @@ def audit_model(
     nhats_acquisition_readiness_audit = audit_nhats_acquisition_readiness(
         nhats_acquisition_readiness_path,
     )
+    nhats_acquisition_readiness_validation_audit = (
+        audit_nhats_acquisition_readiness_validation(
+            nhats_acquisition_readiness_validation_path,
+            nhats_acquisition_readiness_path,
+        )
+    )
     nhats_file_tier_table_audit = audit_nhats_file_tier_table(
         nhats_file_tier_table_path,
     )
@@ -5751,6 +5859,7 @@ def audit_model(
     checks.extend(nhats_docs_audit["checks"])
     checks.extend(nhats_extraction_manifest_audit["checks"])
     checks.extend(nhats_acquisition_readiness_audit["checks"])
+    checks.extend(nhats_acquisition_readiness_validation_audit["checks"])
     checks.extend(nhats_file_tier_table_audit["checks"])
     checks.extend(nhats_first_estimand_protocol_audit["checks"])
     checks.extend(nhats_variable_confirmation_matrix_audit["checks"])
@@ -5783,6 +5892,7 @@ def audit_model(
         "nhatsDataAdmission": nhats_docs_audit,
         "nhatsExtractionManifest": nhats_extraction_manifest_audit,
         "nhatsAcquisitionReadiness": nhats_acquisition_readiness_audit,
+        "nhatsAcquisitionReadinessValidation": nhats_acquisition_readiness_validation_audit,
         "nhatsFileTierTable": nhats_file_tier_table_audit,
         "nhatsFirstEstimandProtocol": nhats_first_estimand_protocol_audit,
         "nhatsVariableConfirmationMatrix": nhats_variable_confirmation_matrix_audit,
@@ -6045,6 +6155,11 @@ def parse_args() -> argparse.Namespace:
         default=DEFAULT_NHATS_ACQUISITION_READINESS,
     )
     parser.add_argument(
+        "--nhats-acquisition-readiness-validation",
+        type=Path,
+        default=DEFAULT_NHATS_ACQUISITION_READINESS_VALIDATION,
+    )
+    parser.add_argument(
         "--nhats-file-tier-table",
         type=Path,
         default=DEFAULT_NHATS_FILE_TIER_TABLE,
@@ -6196,6 +6311,9 @@ def main() -> int:
     nhats_variable_dictionary_path = args.nhats_variable_dictionary.resolve()
     nhats_extraction_manifest_path = args.nhats_extraction_manifest.resolve()
     nhats_acquisition_readiness_path = args.nhats_acquisition_readiness.resolve()
+    nhats_acquisition_readiness_validation_path = (
+        args.nhats_acquisition_readiness_validation.resolve()
+    )
     nhats_file_tier_table_path = args.nhats_file_tier_table.resolve()
     nhats_first_estimand_protocol_path = args.nhats_first_estimand_protocol.resolve()
     nhats_variable_confirmation_matrix_path = (
@@ -6273,6 +6391,7 @@ def main() -> int:
         nhats_variable_dictionary_path,
         nhats_extraction_manifest_path,
         nhats_acquisition_readiness_path,
+        nhats_acquisition_readiness_validation_path,
         nhats_file_tier_table_path,
         nhats_first_estimand_protocol_path,
         nhats_variable_confirmation_matrix_path,

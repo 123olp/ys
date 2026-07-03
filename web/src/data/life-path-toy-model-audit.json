@@ -1,6 +1,6 @@
 {
   "schemaVersion": "human-infra.life-path-toy-audit.v1",
-  "generatedAt": "2026-07-02T23:47:29.831729+00:00",
+  "generatedAt": "2026-07-03T02:12:53.733606+00:00",
   "modelPath": "web/src/data/life-path-toy-model.json",
   "modelSha256": "a4c92209d79d20579bf1f575d5ebf07ffe5be9ccaf6bf3f3eef08efa287b5377",
   "overallStatus": "PASS",
@@ -414,6 +414,41 @@
       "id": "nhats-acquisition-readiness-next-work",
       "status": "PASS",
       "detail": "next work must point to file-tier, Cross-Year Search variable confirmation and disclosure control"
+    },
+    {
+      "id": "nhats-acquisition-readiness-validation-exists",
+      "status": "PASS",
+      "detail": "web/src/data/life-path-nhats-acquisition-readiness-validation.json"
+    },
+    {
+      "id": "nhats-acquisition-readiness-validation-schema",
+      "status": "PASS",
+      "detail": "schemaVersion='human-infra.life-path-nhats-acquisition-readiness-validation.v1'"
+    },
+    {
+      "id": "nhats-acquisition-readiness-validation-source-hash",
+      "status": "PASS",
+      "detail": "validation must point back to the current acquisition-readiness register path and sha256"
+    },
+    {
+      "id": "nhats-acquisition-readiness-validation-pass",
+      "status": "PASS",
+      "detail": "overallStatus='PASS' summary={'pass': 12, 'fail': 0}"
+    },
+    {
+      "id": "nhats-acquisition-readiness-validation-blocking-gates",
+      "status": "PASS",
+      "detail": "validation must keep 10 acquisition-readiness gates blocking and 0 ready"
+    },
+    {
+      "id": "nhats-acquisition-readiness-validation-boundary",
+      "status": "PASS",
+      "detail": "validation must keep acquisition, extraction, raw repository data, calibration and individual prediction blocked"
+    },
+    {
+      "id": "nhats-acquisition-readiness-validation-non-proof-note",
+      "status": "PASS",
+      "detail": "validation must state that it does not prove registration, storage, downloads, extraction, calibration or prediction"
     },
     {
       "id": "nhats-file-tier-table-exists",
@@ -1427,7 +1462,7 @@
     }
   ],
   "summary": {
-    "pass": 284,
+    "pass": 291,
     "warn": 0,
     "fail": 0
   },
@@ -1875,6 +1910,53 @@
     ],
     "summary": {
       "pass": 13,
+      "warn": 0,
+      "fail": 0
+    }
+  },
+  "nhatsAcquisitionReadinessValidation": {
+    "path": "web/src/data/life-path-nhats-acquisition-readiness-validation.json",
+    "sha256": "208859ab442f6ab8becceb3c767ad8b2362309a08af1afd1f97e9e67e5c0613c",
+    "status": "PASS",
+    "checks": [
+      {
+        "id": "nhats-acquisition-readiness-validation-exists",
+        "status": "PASS",
+        "detail": "web/src/data/life-path-nhats-acquisition-readiness-validation.json"
+      },
+      {
+        "id": "nhats-acquisition-readiness-validation-schema",
+        "status": "PASS",
+        "detail": "schemaVersion='human-infra.life-path-nhats-acquisition-readiness-validation.v1'"
+      },
+      {
+        "id": "nhats-acquisition-readiness-validation-source-hash",
+        "status": "PASS",
+        "detail": "validation must point back to the current acquisition-readiness register path and sha256"
+      },
+      {
+        "id": "nhats-acquisition-readiness-validation-pass",
+        "status": "PASS",
+        "detail": "overallStatus='PASS' summary={'pass': 12, 'fail': 0}"
+      },
+      {
+        "id": "nhats-acquisition-readiness-validation-blocking-gates",
+        "status": "PASS",
+        "detail": "validation must keep 10 acquisition-readiness gates blocking and 0 ready"
+      },
+      {
+        "id": "nhats-acquisition-readiness-validation-boundary",
+        "status": "PASS",
+        "detail": "validation must keep acquisition, extraction, raw repository data, calibration and individual prediction blocked"
+      },
+      {
+        "id": "nhats-acquisition-readiness-validation-non-proof-note",
+        "status": "PASS",
+        "detail": "validation must state that it does not prove registration, storage, downloads, extraction, calibration or prediction"
+      }
+    ],
+    "summary": {
+      "pass": 7,
       "warn": 0,
       "fail": 0
     }
@@ -2762,7 +2844,7 @@
     "registerPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_value_label_review_execution_register.json",
     "registerSha256": "de6d17f9470a563346f92884cead1eec35cf5a954245751b0135efc60672b042",
     "validationPath": "web/src/data/life-path-nhats-colectica-value-label-review-execution-validation.json",
-    "validationSha256": "8a2ce59486bdbd2de20b348b25ad14cff88a441f911850b4acbed729ad4234c4",
+    "validationSha256": "6b500bc611020bbf8500db8c878f0ee77c491e87579ccfb68306fff3585e95aa",
     "status": "PASS",
     "checks": [
       {
@@ -2826,7 +2908,7 @@
     "registerPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_access_route_probe_register.json",
     "registerSha256": "58941fde2c6a1c5488437a1ad447cb3dae2032739ef1ed579e29da98b96aaa89",
     "validationPath": "web/src/data/life-path-nhats-colectica-access-route-probe-validation.json",
-    "validationSha256": "5a96d4f535855663c01163b99c88b2ffd63e3072ae9151803c0e9cd377c27d73",
+    "validationSha256": "1e1364dc798b3f40517bb5b2bbbb61b7f828b5faa0a8b236d054bd6283e42d55",
     "status": "PASS",
     "checks": [
       {
@@ -2875,7 +2957,7 @@
     "templatePath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_authenticated_capture_template.json",
     "templateSha256": "dc097acfcb44007b42a25ce500c6cb1d23b1154f6620a7797445293817313eeb",
     "validationPath": "web/src/data/life-path-nhats-colectica-authenticated-capture-template-validation.json",
-    "validationSha256": "09b49b7df6fa6d1caa9b4c75e326f1c2ecd0884e4f59532146eea1f1d149c951",
+    "validationSha256": "50dfd3bf19165b9e3b5c26e259106e28605c4acad8ff18320ab651050d02470a",
     "status": "PASS",
     "checks": [
       {
@@ -2924,7 +3006,7 @@
     "registerPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_l2_variable_family_admission_register.json",
     "registerSha256": "da1d444f452482f37aa7d7d12cd97c9deb0b2d6006540f76c5d2588389dffce3",
     "validationPath": "web/src/data/life-path-nhats-l2-variable-family-admission-validation.json",
-    "validationSha256": "cb24d19002439c7854e73e0db7b25e34234a4ac0630a0d0952d63539f3ee5566",
+    "validationSha256": "acd8af75f2b389d775186aeeff3771f557104a2b86d7774ce1c27f00569bedd9",
     "status": "PASS",
     "checks": [
       {
@@ -2978,7 +3060,7 @@
     "protocolPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_preoutcome_aggregation_protocol.json",
     "protocolSha256": "a2917d4bbb1682f5de6251fe919afae5da5bad681168475845a3a9c0a9a0747d",
     "validationPath": "web/src/data/life-path-nhats-preoutcome-aggregation-validation.json",
-    "validationSha256": "b3779d295b0b77f49675b2a733c2072cbafb890a9cebd3841bb57e294c2039ff",
+    "validationSha256": "8f6796410db8d6114a83379f610f997884d138900b8d80b0cae943effb8eab79",
     "status": "PASS",
     "checks": [
       {

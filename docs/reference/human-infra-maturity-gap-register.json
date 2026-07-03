@@ -734,6 +734,9 @@
         "docs/reference/life-path-prediction-model-governance.md",
         "docs/reference/human-infra-model-admission-contract.json",
         "docs/reference/human-infra-model-admission-candidate-registry.json",
+        "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_acquisition_readiness.json",
+        "domains/c1-boundary-rewriting/longevity-evidence/scripts/validate_nhats_acquisition_readiness.py",
+        "web/src/data/life-path-nhats-acquisition-readiness-validation.json",
         "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_value_label_review_execution_register.json",
         "web/src/data/life-path-nhats-colectica-value-label-review-execution-validation.json",
         "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_access_route_probe_register.json",
@@ -811,9 +814,12 @@
           "status": "blocked",
           "requirement": "Real governed cohort data access is approved and documented before extraction.",
           "evidence": [
-            "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_acquisition_readiness.json"
+            "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_acquisition_readiness.json",
+            "domains/c1-boundary-rewriting/longevity-evidence/scripts/validate_nhats_acquisition_readiness.py",
+            "web/src/data/life-path-nhats-acquisition-readiness-validation.json"
           ],
           "missingEvidence": [
+            "Acquisition-readiness validator now proves all 10 readiness gates still block extraction.",
             "NHATS registration evidence.",
             "Allowed file tier confirmation.",
             "Controlled storage and destruction record."
