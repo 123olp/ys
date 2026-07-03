@@ -91,6 +91,22 @@ DEFAULT_NHANES_PUBLIC_LMF_ELIGIBLE_BASE_READINESS_VALIDATION = (
     / "data"
     / "life-path-nhanes-public-lmf-eligible-base-readiness-validation.json"
 )
+DEFAULT_NHANES_PUBLIC_LMF_WEIGHTED_ESTIMATOR_READINESS = (
+    REPO_ROOT
+    / "domains"
+    / "c1-boundary-rewriting"
+    / "longevity-evidence"
+    / "data"
+    / "manual"
+    / "life_path_nhanes_public_lmf_weighted_estimator_readiness.json"
+)
+DEFAULT_NHANES_PUBLIC_LMF_WEIGHTED_ESTIMATOR_READINESS_VALIDATION = (
+    REPO_ROOT
+    / "web"
+    / "src"
+    / "data"
+    / "life-path-nhanes-public-lmf-weighted-estimator-readiness-validation.json"
+)
 DEFAULT_DATA_SOURCES = (
     REPO_ROOT
     / "domains"
@@ -1689,6 +1705,185 @@ def audit_nhanes_public_lmf_eligible_base_readiness(
         "nhanes-public-lmf-eligible-base-non-proof-boundary",
         status_from_bool(validation_exists and non_proof_ok),
         "validation must state that eligible-base readiness does not prove weighted inference or individual prediction",
+    )
+
+    return {
+        "readinessPath": str(readiness_path.relative_to(REPO_ROOT)),
+        "readinessSha256": sha256_file(readiness_path) if readiness_exists else None,
+        "validationPath": str(validation_path.relative_to(REPO_ROOT)),
+        "validationSha256": sha256_file(validation_path) if validation_exists else None,
+        "status": "PASS" if summarize_checks(checks)["fail"] == 0 else "FAIL",
+        "checks": checks,
+        "summary": summarize_checks(checks),
+    }
+
+
+def audit_nhanes_public_lmf_weighted_estimator_readiness(
+    readiness_path: Path,
+    validation_path: Path,
+) -> dict[str, Any]:
+    checks: list[dict[str, Any]] = []
+    readiness_exists = readiness_path.exists()
+    validation_exists = validation_path.exists()
+    add_check(
+        checks,
+        "nhanes-public-lmf-weighted-estimator-readiness-exists",
+        status_from_bool(readiness_exists),
+        str(readiness_path.relative_to(REPO_ROOT)),
+    )
+    add_check(
+        checks,
+        "nhanes-public-lmf-weighted-estimator-readiness-validation-exists",
+        status_from_bool(validation_exists),
+        str(validation_path.relative_to(REPO_ROOT)),
+    )
+
+    readiness = load_json(readiness_path) if readiness_exists else {}
+    validation = load_json(validation_path) if validation_exists else {}
+    schema_ok = (
+        readiness.get("schemaVersion")
+        == "human-infra.nhanes-public-lmf-weighted-estimator-readiness.v1"
+        and readiness.get("status")
+        == "public-real-data-estimator-backend-selected-not-weighted-domain-output"
+    )
+    add_check(
+        checks,
+        "nhanes-public-lmf-weighted-estimator-readiness-schema",
+        status_from_bool(readiness_exists and schema_ok),
+        f"schemaVersion={readiness.get('schemaVersion')!r}",
+    )
+
+    backend = readiness.get("estimatorBackend")
+    backend_ok = (
+        isinstance(backend, dict)
+        and backend.get("selectedBackend") == "R survey package"
+        and backend.get("packageName") == "survey"
+        and backend.get("primaryDesignFunction") == "svydesign"
+        and "subset.survey.design" in backend.get("domainMechanisms", [])
+        and backend.get("backendSelectionStatus")
+        == "selected-from-primary-documentation-not-runtime-smoked"
+        and backend.get("customTaylorLinearizationAllowed") is False
+        and backend.get("pythonAdHocWeightedEstimatorAllowed") is False
+        and backend.get("weightedEstimatorImplemented") is False
+        and backend.get("weightedDomainInferenceAllowed") is False
+        and backend.get("individualPredictionAllowed") is False
+    )
+    add_check(
+        checks,
+        "nhanes-public-lmf-weighted-estimator-backend-boundary",
+        status_from_bool(readiness_exists and backend_ok),
+        "backend must select R survey/svydesign while blocking custom estimators and weighted output",
+    )
+
+    design = readiness.get("designObjectContract")
+    design_ok = (
+        isinstance(design, dict)
+        and design.get("analysisWeight") == "WTMEC2YR"
+        and design.get("primarySamplingUnit") == "SDMVPSU"
+        and design.get("strata") == "SDMVSTRA"
+        and design.get("positiveWeightCondition") == "WTMEC2YR > 0"
+        and design.get("nest") is True
+        and design.get("domainIndicatorTiming") == "after design object creation"
+        and design.get("rowDropBeforeDesignAllowed") is False
+        and design.get("requiresFullDesignInputBeforeDomain") is True
+        and design.get("requiresDomainIndicatorInsideDesignObject") is True
+        and design.get("requiresDomainDofSparseReviewBeforeOutput") is True
+        and design.get("requiresDisclosureReviewBeforePublicOutput") is True
+    )
+    add_check(
+        checks,
+        "nhanes-public-lmf-weighted-estimator-design-object-contract",
+        status_from_bool(readiness_exists and design_ok),
+        "design-object contract must bind WTMEC2YR, SDMVPSU, SDMVSTRA, nest=true and post-design domain evaluation",
+    )
+
+    gate_summary = readiness.get("gateSummary")
+    gate_summary_ok = (
+        isinstance(gate_summary, dict)
+        and gate_summary.get("requiredGateCount") == 9
+        and gate_summary.get("readyGateCount") == 5
+        and gate_summary.get("partialGateCount") == 0
+        and gate_summary.get("blockedGateCount") == 4
+        and gate_summary.get("estimatorBackendSelected") is True
+        and gate_summary.get("runtimeSmokeExecuted") is False
+        and gate_summary.get("weightedEstimatorImplemented") is False
+        and gate_summary.get("weightedDomainInferenceAllowed") is False
+    )
+    add_check(
+        checks,
+        "nhanes-public-lmf-weighted-estimator-gate-summary",
+        status_from_bool(readiness_exists and gate_summary_ok),
+        "gate summary must select backend while keeping runtime smoke, estimator implementation and domain inference blocked",
+    )
+
+    findings_text = json.dumps(readiness.get("sourceFindings"), ensure_ascii=False)
+    findings_ok = all(
+        token in findings_text
+        for token in (
+            "Taylor",
+            "R",
+            "svydesign",
+            "SDMVPSU",
+            "SDMVSTRA",
+            "WTMEC2YR",
+            "subset",
+            "degrees of freedom",
+        )
+    )
+    add_check(
+        checks,
+        "nhanes-public-lmf-weighted-estimator-source-findings",
+        status_from_bool(readiness_exists and findings_ok),
+        "source findings must include CDC/NCHS R svydesign guidance, CRAN survey backend and DOF warning",
+    )
+
+    validation_schema_ok = (
+        validation.get("schemaVersion")
+        == "human-infra.nhanes-public-lmf-weighted-estimator-readiness-validation.v1"
+        and validation.get("status") == "pass"
+    )
+    source_ok = (
+        validation.get("readinessPath") == str(readiness_path.relative_to(REPO_ROOT))
+        and validation.get("readinessSha256") == sha256_file(readiness_path)
+        if readiness_exists
+        else False
+    )
+    add_check(
+        checks,
+        "nhanes-public-lmf-weighted-estimator-validation-source-hash",
+        status_from_bool(validation_exists and validation_schema_ok and source_ok),
+        "validation must point back to current weighted-estimator readiness path and sha256",
+    )
+
+    summary = validation.get("summary")
+    validation_summary_ok = (
+        isinstance(summary, dict)
+        and summary.get("selectedBackend") == "R survey package"
+        and summary.get("primaryDesignFunction") == "svydesign"
+        and summary.get("runtimeSmokeExecuted") is False
+        and summary.get("weightedEstimatorImplemented") is False
+        and summary.get("weightedDomainInferenceAllowed") is False
+    )
+    add_check(
+        checks,
+        "nhanes-public-lmf-weighted-estimator-validation-summary",
+        status_from_bool(validation_exists and validation_summary_ok),
+        "validation summary must expose backend selection while keeping estimator execution and domain inference blocked",
+    )
+
+    non_proof = validation.get("nonProofBoundary")
+    non_proof_ok = (
+        isinstance(non_proof, dict)
+        and "R runtime availability" in non_proof.get("doesNotConfirm", [])
+        and "executed weighted estimator" in non_proof.get("doesNotConfirm", [])
+        and "weighted domain mortality rates" in non_proof.get("doesNotConfirm", [])
+        and "individual prediction" in non_proof.get("doesNotConfirm", [])
+    )
+    add_check(
+        checks,
+        "nhanes-public-lmf-weighted-estimator-non-proof-boundary",
+        status_from_bool(validation_exists and non_proof_ok),
+        "validation must state that backend selection does not prove runtime availability, weighted output or individual prediction",
     )
 
     return {
@@ -7217,6 +7412,8 @@ def audit_model(
     nhanes_public_lmf_domain_subpopulation_rule_readiness_validation_path: Path,
     nhanes_public_lmf_eligible_base_readiness_path: Path,
     nhanes_public_lmf_eligible_base_readiness_validation_path: Path,
+    nhanes_public_lmf_weighted_estimator_readiness_path: Path,
+    nhanes_public_lmf_weighted_estimator_readiness_validation_path: Path,
     data_sources_path: Path,
     source_cards_path: Path,
     data_card_template_path: Path,
@@ -7445,6 +7642,12 @@ def audit_model(
             nhanes_public_lmf_eligible_base_readiness_validation_path,
         )
     )
+    nhanes_public_lmf_weighted_estimator_readiness_audit = (
+        audit_nhanes_public_lmf_weighted_estimator_readiness(
+            nhanes_public_lmf_weighted_estimator_readiness_path,
+            nhanes_public_lmf_weighted_estimator_readiness_validation_path,
+        )
+    )
     data_sources = load_json(data_sources_path)
     data_sources_audit = audit_data_sources(data_sources, data_sources_path)
     source_card_docs_audit = audit_source_card_docs(
@@ -7602,6 +7805,7 @@ def audit_model(
     checks.extend(nhanes_public_lmf_survey_design_readiness_audit["checks"])
     checks.extend(nhanes_public_lmf_domain_subpopulation_rule_readiness_audit["checks"])
     checks.extend(nhanes_public_lmf_eligible_base_readiness_audit["checks"])
+    checks.extend(nhanes_public_lmf_weighted_estimator_readiness_audit["checks"])
     checks.extend(data_sources_audit["checks"])
     checks.extend(source_card_docs_audit["checks"])
     checks.extend(nhats_docs_audit["checks"])
@@ -7646,6 +7850,7 @@ def audit_model(
         "nhanesPublicLmfSurveyDesignReadiness": nhanes_public_lmf_survey_design_readiness_audit,
         "nhanesPublicLmfDomainSubpopulationRuleReadiness": nhanes_public_lmf_domain_subpopulation_rule_readiness_audit,
         "nhanesPublicLmfEligibleBaseReadiness": nhanes_public_lmf_eligible_base_readiness_audit,
+        "nhanesPublicLmfWeightedEstimatorReadiness": nhanes_public_lmf_weighted_estimator_readiness_audit,
         "dataSourceCandidates": data_sources_audit,
         "sourceCardDocs": source_card_docs_audit,
         "nhatsDataAdmission": nhats_docs_audit,
@@ -7739,6 +7944,15 @@ def render_markdown(audit: dict[str, Any]) -> str:
             f"- Validation SHA-256: `{audit['nhanesPublicLmfEligibleBaseReadiness']['validationSha256']}`",
             f"- Readiness status: `{audit['nhanesPublicLmfEligibleBaseReadiness']['status']}`",
             "- Boundary: positive WTMEC2YR eligible-base diagnostics are recorded without persisting rows, but weighted domain inference, design-based intervals, calibration and individual prediction remain blocked.",
+            "",
+            "## NHANES Public LMF Weighted-Estimator Readiness",
+            "",
+            f"- Readiness path: `{audit['nhanesPublicLmfWeightedEstimatorReadiness']['readinessPath']}`",
+            f"- Readiness SHA-256: `{audit['nhanesPublicLmfWeightedEstimatorReadiness']['readinessSha256']}`",
+            f"- Validation path: `{audit['nhanesPublicLmfWeightedEstimatorReadiness']['validationPath']}`",
+            f"- Validation SHA-256: `{audit['nhanesPublicLmfWeightedEstimatorReadiness']['validationSha256']}`",
+            f"- Readiness status: `{audit['nhanesPublicLmfWeightedEstimatorReadiness']['status']}`",
+            "- Boundary: R survey/svydesign is selected as the mature complex-survey backend and the design-object contract is bound, but runtime smoke, domain indicator tests, DOF/sparse-domain review, public disclosure review, weighted outputs, calibration and individual prediction remain blocked.",
             "",
             "## Data Source Candidates",
             "",
@@ -8010,6 +8224,16 @@ def parse_args() -> argparse.Namespace:
         type=Path,
         default=DEFAULT_NHANES_PUBLIC_LMF_ELIGIBLE_BASE_READINESS_VALIDATION,
     )
+    parser.add_argument(
+        "--nhanes-public-lmf-weighted-estimator-readiness",
+        type=Path,
+        default=DEFAULT_NHANES_PUBLIC_LMF_WEIGHTED_ESTIMATOR_READINESS,
+    )
+    parser.add_argument(
+        "--nhanes-public-lmf-weighted-estimator-readiness-validation",
+        type=Path,
+        default=DEFAULT_NHANES_PUBLIC_LMF_WEIGHTED_ESTIMATOR_READINESS_VALIDATION,
+    )
     parser.add_argument("--data-sources", type=Path, default=DEFAULT_DATA_SOURCES)
     parser.add_argument("--source-cards", type=Path, default=DEFAULT_SOURCE_CARDS)
     parser.add_argument("--data-card-template", type=Path, default=DEFAULT_DATA_CARD_TEMPLATE)
@@ -8258,6 +8482,12 @@ def main() -> int:
     nhanes_public_lmf_eligible_base_readiness_validation_path = (
         args.nhanes_public_lmf_eligible_base_readiness_validation.resolve()
     )
+    nhanes_public_lmf_weighted_estimator_readiness_path = (
+        args.nhanes_public_lmf_weighted_estimator_readiness.resolve()
+    )
+    nhanes_public_lmf_weighted_estimator_readiness_validation_path = (
+        args.nhanes_public_lmf_weighted_estimator_readiness_validation.resolve()
+    )
     data_sources_path = args.data_sources.resolve()
     source_cards_path = args.source_cards.resolve()
     data_card_template_path = args.data_card_template.resolve()
@@ -8379,6 +8609,8 @@ def main() -> int:
         nhanes_public_lmf_domain_subpopulation_rule_readiness_validation_path,
         nhanes_public_lmf_eligible_base_readiness_path,
         nhanes_public_lmf_eligible_base_readiness_validation_path,
+        nhanes_public_lmf_weighted_estimator_readiness_path,
+        nhanes_public_lmf_weighted_estimator_readiness_validation_path,
         data_sources_path,
         source_cards_path,
         data_card_template_path,

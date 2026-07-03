@@ -1,6 +1,6 @@
 {
   "schemaVersion": "human-infra.life-path-nhats-colectica-capture-task-register-validation.v1",
-  "generatedAt": "2026-07-03T08:46:16.616827+00:00",
+  "generatedAt": "2026-07-03T09:15:42.719945+00:00",
   "registerPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_capture_task_register.json",
   "registerSha256": "57764c73e38ecd6d3303d36a172d6b794671d34c3dcf1718e07fbe76c54720e0",
   "routeFieldDiscoveryRegisterPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_route_field_discovery_register.json",

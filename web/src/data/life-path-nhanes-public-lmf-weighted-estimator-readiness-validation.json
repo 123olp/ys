@@ -1,0 +1,33 @@
+{
+  "schemaVersion": "human-infra.nhanes-public-lmf-weighted-estimator-readiness-validation.v1",
+  "status": "pass",
+  "generatedAt": "2026-07-03T09:15:42.316387+00:00",
+  "readinessPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_weighted_estimator_readiness.json",
+  "readinessSha256": "469d6cdcdc846bfed97a449f9a8a3bd2e197bfe214b996cb121c800979f5ef4a",
+  "validationPath": "web/src/data/life-path-nhanes-public-lmf-weighted-estimator-readiness-validation.json",
+  "summary": {
+    "sourceId": "nhanes-public-lmf-2017-2018",
+    "selectedBackend": "R survey package",
+    "primaryDesignFunction": "svydesign",
+    "readyGateCount": 5,
+    "blockedGateCount": 4,
+    "runtimeSmokeExecuted": false,
+    "weightedEstimatorImplemented": false,
+    "weightedDomainInferenceAllowed": false
+  },
+  "nonProofBoundary": {
+    "confirms": "estimator backend selection and design-object contract readiness",
+    "doesNotConfirm": [
+      "R runtime availability",
+      "survey package installation",
+      "executed weighted estimator",
+      "weighted domain mortality rates",
+      "design-based confidence intervals",
+      "calibrated prediction",
+      "intervention or causal effect",
+      "individual prediction",
+      "medical advice"
+    ]
+  },
+  "errors": []
+}

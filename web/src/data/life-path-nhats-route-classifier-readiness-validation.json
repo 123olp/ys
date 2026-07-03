@@ -1,6 +1,6 @@
 {
   "schemaVersion": "human-infra.life-path-nhats-route-classifier-readiness-validation.v1",
-  "generatedAt": "2026-07-03T08:46:16.653291+00:00",
+  "generatedAt": "2026-07-03T09:15:42.760098+00:00",
   "registerPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_route_classifier_readiness.json",
   "registerSha256": "f0c0224317c9ee20e8de56dcddeadba85ae24d67b736782ba22de90e83109296",
   "routeFieldDiscoveryRegisterPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_route_field_discovery_register.json",

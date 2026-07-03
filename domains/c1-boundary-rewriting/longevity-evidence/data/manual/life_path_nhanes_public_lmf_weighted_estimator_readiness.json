@@ -1,0 +1,191 @@
+{
+  "schemaVersion": "human-infra.nhanes-public-lmf-weighted-estimator-readiness.v1",
+  "readinessId": "nhanes-public-lmf-2017-2018-weighted-estimator-readiness",
+  "status": "public-real-data-estimator-backend-selected-not-weighted-domain-output",
+  "sourceId": "nhanes-public-lmf-2017-2018",
+  "sourceAuthority": "CDC/NCHS NHANES public-use DEMO_J plus public-use Linked Mortality File; estimator backend selected from the CRAN survey package documentation.",
+  "lastReviewedDate": "2026-07-03",
+  "upstreamEligibleBaseReadiness": {
+    "path": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_eligible_base_readiness.json",
+    "sha256": "2abd4af214d1bbe6eb8c4c5109b33864fd9025e55ada972b8bcb51d13d97674b",
+    "validationPath": "web/src/data/life-path-nhanes-public-lmf-eligible-base-readiness-validation.json"
+  },
+  "officialSourceTrace": {
+    "varianceEstimationTutorial": "https://wwwn.cdc.gov/nchs/nhanes/tutorials/varianceestimation.aspx",
+    "weightingTutorial": "https://wwwn.cdc.gov/nchs/nhanes/tutorials/weighting.aspx",
+    "surveyPackageCran": "https://cran.r-project.org/package=survey",
+    "surveyPackageManual": "https://cran.r-project.org/web/packages/survey/survey.pdf",
+    "surveySubsetDocumentation": "https://r-survey.r-forge.r-project.org/survey/html/subset.survey.design.html"
+  },
+  "sourceFindings": [
+    {
+      "id": "NHANES-TAYLOR-R-SOFTWARE-ACCEPTED",
+      "sourceUrl": "https://wwwn.cdc.gov/nchs/nhanes/tutorials/varianceestimation.aspx",
+      "observedFact": "CDC/NCHS states that Taylor Series Linearization is currently recommended for NHANES variance estimation and lists R among software packages that can be used for this method when survey design variables identifying strata and PSU are supplied.",
+      "modelConsequence": "Human Infra may select an existing complex-survey backend instead of self-implementing Taylor linearization."
+    },
+    {
+      "id": "NHANES-R-SVYDESIGN-DESIGN-OBJECT",
+      "sourceUrl": "https://wwwn.cdc.gov/nchs/nhanes/tutorials/varianceestimation.aspx",
+      "observedFact": "CDC/NCHS describes the R survey package workflow as creating a svydesign object with data, id = SDMVPSU, strata = SDMVSTRA, weights = WTMEC4YR in the example, and nest = TRUE before passing that object to survey analysis functions.",
+      "modelConsequence": "The estimator contract must require a design object built from the non-zero-weight eligible base with id = SDMVPSU, strata = SDMVSTRA, weight = WTMEC2YR, and nest = TRUE before any domain evaluation."
+    },
+    {
+      "id": "R-SURVEY-CRAN-MATURE-BACKEND",
+      "sourceUrl": "https://cran.r-project.org/package=survey",
+      "observedFact": "CRAN describes the survey package as an analysis package for multistage stratified, cluster-sampled, unequally weighted survey samples with variances by Taylor series linearisation or replicate weights.",
+      "modelConsequence": "The selected backend is the mature R survey package rather than an ad hoc Python weighted mean or custom variance estimator."
+    },
+    {
+      "id": "R-SURVEY-SUBSET-KEEPS-DESIGN-INFORMATION",
+      "sourceUrl": "https://r-survey.r-forge.r-project.org/survey/html/subset.survey.design.html",
+      "observedFact": "The survey package subset.survey.design documentation says subset restricts a survey design to a subpopulation while keeping the original design information about clusters and strata.",
+      "modelConsequence": "Domain/subpopulation evaluation must happen through the survey design object, not by filtering the data frame before the design object exists."
+    },
+    {
+      "id": "NHANES-DOMAIN-DOF-WARNING",
+      "sourceUrl": "https://wwwn.cdc.gov/nchs/nhanes/tutorials/varianceestimation.aspx",
+      "observedFact": "CDC/NCHS notes that most two-year public Continuous NHANES releases have 15 degrees of freedom from 30 PSUs and 15 strata, and warns that software packages differ for subgroup degrees of freedom where not all PSUs and strata are represented.",
+      "modelConsequence": "The selected backend is not sufficient by itself; Human Infra still needs a domain degrees-of-freedom and sparse-domain review before public weighted domain output."
+    }
+  ],
+  "estimatorBackend": {
+    "selectedBackend": "R survey package",
+    "backendSelectionStatus": "selected-from-primary-documentation-not-runtime-smoked",
+    "packageName": "survey",
+    "primaryDesignFunction": "svydesign",
+    "domainMechanisms": [
+      "subset.survey.design",
+      "svyby"
+    ],
+    "varianceFamily": "Taylor series linearization for public-use NHANES design fields",
+    "runtimeProbeExecuted": false,
+    "runtimeAvailableInCurrentEnvironment": null,
+    "packageInstalledInCurrentEnvironment": null,
+    "customTaylorLinearizationAllowed": false,
+    "pythonAdHocWeightedEstimatorAllowed": false,
+    "postJoinGroupedCellsAsEstimatorAllowed": false,
+    "weightedEstimatorImplemented": false,
+    "weightedDomainInferenceAllowed": false,
+    "designBasedIntervalAllowed": false,
+    "calibrationAllowed": false,
+    "individualPredictionAllowed": false,
+    "medicalAdviceAllowed": false
+  },
+  "designObjectContract": {
+    "dataInput": "non-zero-weight eligible-base records, not persisted in repository outputs",
+    "joinKey": "SEQN",
+    "analysisWeight": "WTMEC2YR",
+    "positiveWeightCondition": "WTMEC2YR > 0",
+    "primarySamplingUnit": "SDMVPSU",
+    "strata": "SDMVSTRA",
+    "nest": true,
+    "domainIndicatorTiming": "after design object creation",
+    "rowDropBeforeDesignAllowed": false,
+    "eligibleBaseRowsPersisted": false,
+    "rawRowsPersisted": false,
+    "requiresFullDesignInputBeforeDomain": true,
+    "requiresDomainIndicatorInsideDesignObject": true,
+    "requiresDomainDofSparseReviewBeforeOutput": true,
+    "requiresDisclosureReviewBeforePublicOutput": true
+  },
+  "domainReviewContract": {
+    "domainDegreesOfFreedomReviewRequired": true,
+    "sparseDomainReviewRequired": true,
+    "lonelyPsuPolicyRequired": true,
+    "emptyDomainPolicyRequired": true,
+    "minimumPsuPerReportedStratumDiagnosticRequired": true,
+    "publicOutputDisclosureReviewRequired": true,
+    "publicWeightedDomainCellsAllowed": false,
+    "publicWeightedDomainRatesAllowed": false,
+    "publicDesignBasedIntervalsAllowed": false
+  },
+  "readinessGates": [
+    {
+      "id": "nhanes-r-software-path-documented",
+      "status": "ready",
+      "blocksWeightedDomainInference": false,
+      "evidence": "CDC/NCHS variance guidance documents R and Taylor linearization for NHANES when PSU, strata and weights are supplied."
+    },
+    {
+      "id": "r-survey-backend-selected",
+      "status": "ready",
+      "blocksWeightedDomainInference": false,
+      "evidence": "CRAN survey package is selected as the complex-survey backend for future NHANES weighted estimator work."
+    },
+    {
+      "id": "no-custom-estimator-boundary-documented",
+      "status": "ready",
+      "blocksWeightedDomainInference": false,
+      "evidence": "The contract explicitly blocks custom Taylor linearization, ad hoc Python weighted estimators and grouped-cell estimators."
+    },
+    {
+      "id": "design-object-contract-bound",
+      "status": "ready",
+      "blocksWeightedDomainInference": false,
+      "evidence": "The contract binds svydesign inputs to SDMVPSU, SDMVSTRA, WTMEC2YR, WTMEC2YR > 0, nest = TRUE and post-design domain evaluation."
+    },
+    {
+      "id": "eligible-base-upstream-validated",
+      "status": "ready",
+      "blocksWeightedDomainInference": false,
+      "evidence": "The upstream positive-weight eligible-base readiness validation is required to pass and hash-match before this gate can pass."
+    },
+    {
+      "id": "r-runtime-smoke-not-executed",
+      "status": "blocked",
+      "blocksWeightedDomainInference": true,
+      "evidence": "No repository gate currently installs R survey, builds a synthetic svydesign object or runs a backend smoke test."
+    },
+    {
+      "id": "domain-indicator-design-object-test-not-implemented",
+      "status": "blocked",
+      "blocksWeightedDomainInference": true,
+      "evidence": "No synthetic or public-data design-object domain indicator test has been implemented."
+    },
+    {
+      "id": "domain-dof-sparse-review-not-implemented",
+      "status": "blocked",
+      "blocksWeightedDomainInference": true,
+      "evidence": "No review exists for subgroup degrees-of-freedom, lonely PSU, sparse domain or empty domain behavior under the selected backend."
+    },
+    {
+      "id": "public-output-disclosure-not-reviewed",
+      "status": "blocked",
+      "blocksWeightedDomainInference": true,
+      "evidence": "No disclosure review exists for public weighted domain cells, rates, intervals or subgroup summaries."
+    }
+  ],
+  "gateSummary": {
+    "requiredGateCount": 9,
+    "readyGateCount": 5,
+    "partialGateCount": 0,
+    "blockedGateCount": 4,
+    "estimatorBackendSelected": true,
+    "runtimeSmokeExecuted": false,
+    "weightedEstimatorImplemented": false,
+    "weightedDomainInferenceAllowed": false
+  },
+  "allowedUses": [
+    "estimator backend selection audit",
+    "design-object contract review",
+    "pre-implementation gate before any NHANES weighted domain output"
+  ],
+  "blockedUses": [
+    "survey-population inference",
+    "weighted domain mortality rate publication",
+    "design-based confidence interval output",
+    "calibrated Human Infra prediction",
+    "intervention effect estimation",
+    "causal claim",
+    "individual prediction",
+    "individual death-date output",
+    "medical advice"
+  ],
+  "nextWork": [
+    "Add a synthetic R survey backend smoke test that builds svydesign with PSU, strata, weight and nest = TRUE.",
+    "Add a synthetic domain/subpopulation indicator test on the design object and prove row-drop input is rejected.",
+    "Add degrees-of-freedom, lonely-PSU, sparse-domain and empty-domain review cases before any public weighted output.",
+    "Add a disclosure-reviewed output gate before weighted domain rates or design-based intervals can appear in public artifacts."
+  ]
+}

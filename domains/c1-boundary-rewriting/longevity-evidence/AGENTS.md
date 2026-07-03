@@ -74,6 +74,7 @@ longevity-evidence/
 │   │   ├── life_path_nhanes_public_lmf_domain_subpopulation_rule_readiness.json
 │   │   ├── life_path_nhanes_public_lmf_eligible_base_readiness.json
 │   │   ├── life_path_nhanes_public_lmf_survey_design_readiness.json
+│   │   ├── life_path_nhanes_public_lmf_weighted_estimator_readiness.json
 │   │   ├── life_path_nhats_acquisition_readiness.json
 │   │   ├── life_path_nhats_official_source_refresh_register.json
 │   │   ├── life_path_nhats_registration_evidence_template.json
@@ -151,6 +152,7 @@ longevity-evidence/
     ├── validate_nhanes_public_lmf_domain_subpopulation_rule_readiness.py
     ├── validate_nhanes_public_lmf_eligible_base_readiness.py
     ├── validate_nhanes_public_lmf_survey_design_readiness.py
+    ├── validate_nhanes_public_lmf_weighted_estimator_readiness.py
     ├── validate_nhats_missingness_route_map.py
     ├── validate_nhats_route_field_discovery.py
     └── validate_nhats_survey_design_plan.py
@@ -187,6 +189,7 @@ longevity-evidence/
 - `data/manual/life_path_nhanes_public_lmf_survey_design_readiness.json`：NHANES public-use LMF survey-design readiness 契约；它只证明 WTMEC2YR、SDMVPSU、SDMVSTRA 官方字段和诊断边界已登记，不证明加权人口推断、design-based confidence interval、校准或个体预测。
 - `data/manual/life_path_nhanes_public_lmf_domain_subpopulation_rule_readiness.json`：NHANES public-use LMF domain/subpopulation rule readiness 契约；它只证明官方 domain/subpopulation 机制和禁止 row-drop subgroup filtering 的边界已登记，不证明 weighted domain inference、design-based confidence interval、校准或个体预测。
 - `data/manual/life_path_nhanes_public_lmf_eligible_base_readiness.json`：NHANES public-use LMF positive-weight eligible-base readiness 契约；它只证明 `WTMEC2YR > 0` eligible-base 诊断、no-row-persistence 和 no-row-drop 边界已登记，不证明 weighted domain inference、design-based confidence interval、校准或个体预测。
+- `data/manual/life_path_nhanes_public_lmf_weighted_estimator_readiness.json`：NHANES public-use LMF weighted-estimator readiness 契约；它只选择 R `survey` / `svydesign` 后端并绑定 design-object / domain indicator 合约，不证明 R runtime smoke、weighted domain output、design-based interval、校准或个体预测。
 - `data/manual/life_path_calibration_readiness.json`：生命路径模型的校准预备契约，记录 target population、time zero、outcome、estimand、data requirement、validation、calibration、sensitivity、bias/applicability、reporting 和 prohibited use 字段；它证明下一阶段要补什么，不证明当前模型已校准。
 - `data/manual/life_path_data_source_candidates.json`：生命路径模型的候选数据源注册表，记录官方队列入口、可能模型角色、覆盖标签、访问治理状态和禁止外推边界；它只证明后续数据源搜索空间已被登记，不证明数据已访问、模型已校准或因果效应成立。
 - `data/manual/life_path_nhats_acquisition_readiness.json`：NHATS acquisition readiness 机器契约，记录官方来源刷新、注册状态、文件层级、Colectica 变量确认、round window、survey design、endpoint、披露控制、AI 边界、存储销毁和禁止动作；它只证明提取前准入条件被机器化审计，当前仍是 `cannot-extract-yet`。
@@ -226,6 +229,7 @@ longevity-evidence/
 - `scripts/validate_nhanes_public_lmf_survey_design_readiness.py`：验证 NHANES public-use LMF survey-design readiness 契约和 Web 验证报告，保证 design-field readiness 不被误写成 survey-weighted inference。
 - `scripts/validate_nhanes_public_lmf_domain_subpopulation_rule_readiness.py`：验证 NHANES public-use LMF domain/subpopulation rule readiness 契约和 Web 验证报告，保证官方 domain 规则不会被误写成 weighted domain inference。
 - `scripts/validate_nhanes_public_lmf_eligible_base_readiness.py`：验证 NHANES public-use LMF positive-weight eligible-base readiness 契约和 Web 验证报告，保证 `WTMEC2YR > 0` eligible-base 诊断不会被误写成 weighted domain inference 或个体预测。
+- `scripts/validate_nhanes_public_lmf_weighted_estimator_readiness.py`：验证 NHANES public-use LMF weighted-estimator readiness 契约和 Web 验证报告，保证 R `survey` / `svydesign` 后端选择不会被误写成真实 weighted domain output 或模型校准。
 - `scripts/validate_nhats_registration_evidence_template.py`：读取 NHATS registration evidence 模板，生成 `web/src/data/life-path-nhats-registration-evidence-template-validation.json`，把注册/访问证据槽、redacted-only 仓库边界和禁止真实下载/抽取/校准/个体预测边界纳入默认审计。
 - `scripts/validate_nhats_acquisition_readiness.py`：读取 NHATS acquisition readiness 机器契约，生成 `web/src/data/life-path-nhats-acquisition-readiness-validation.json`，把注册模板、文件层级、Colectica、survey design、endpoint、披露控制、AI 边界和存储销毁缺口纳入默认审计。
 - `scripts/validate_nhats_official_source_refresh.py`：读取 NHATS official source refresh 寄存器，生成 `web/src/data/life-path-nhats-official-source-refresh-validation.json`，验证 8 个官方公开来源的状态、hash、支持范围和禁止用途边界。

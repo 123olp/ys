@@ -1,6 +1,6 @@
 {
   "schemaVersion": "human-infra.life-path-nhats-l2-variable-family-admission-validation.v1",
-  "generatedAt": "2026-07-03T08:46:16.689035+00:00",
+  "generatedAt": "2026-07-03T09:15:42.798774+00:00",
   "registerPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_l2_variable_family_admission_register.json",
   "registerSha256": "da1d444f452482f37aa7d7d12cd97c9deb0b2d6006540f76c5d2588389dffce3",
   "firstEstimandProtocolPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_first_estimand_protocol.json",
