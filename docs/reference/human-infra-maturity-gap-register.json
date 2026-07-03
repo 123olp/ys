@@ -223,7 +223,9 @@
         "docs/reference/human-infra-c2-longtail-fifth-batch-independent-fresh-review-verdict-register.json",
         "tools/audit_human_infra_c2_longtail_fifth_batch_independent_fresh_review_verdict_register.py",
         "docs/reference/human-infra-c2-longtail-fifth-batch-reviewed-card-artifact-register.json",
-        "tools/audit_human_infra_c2_longtail_fifth_batch_reviewed_card_artifact_register.py"
+        "tools/audit_human_infra_c2_longtail_fifth_batch_reviewed_card_artifact_register.py",
+        "docs/reference/human-infra-c2-longtail-sixth-batch-manual-fulltext-extraction-register.json",
+        "tools/audit_human_infra_c2_longtail_sixth_batch_manual_fulltext_extraction_register.py"
       ],
       "gates": [
         {
@@ -380,7 +382,9 @@
             "docs/reference/human-infra-c2-longtail-fifth-batch-independent-fresh-review-verdict-register.json",
             "tools/audit_human_infra_c2_longtail_fifth_batch_independent_fresh_review_verdict_register.py",
             "docs/reference/human-infra-c2-longtail-fifth-batch-reviewed-card-artifact-register.json",
-            "tools/audit_human_infra_c2_longtail_fifth_batch_reviewed_card_artifact_register.py"
+            "tools/audit_human_infra_c2_longtail_fifth_batch_reviewed_card_artifact_register.py",
+            "docs/reference/human-infra-c2-longtail-sixth-batch-manual-fulltext-extraction-register.json",
+            "tools/audit_human_infra_c2_longtail_sixth_batch_manual_fulltext_extraction_register.py"
           ],
           "missingEvidence": [
             "C2-LT-B5 reviewed artifacts now cover 17 eligible fresh-review rows with 102 bounded Source/variable/endpoint/uncertainty/transfer/downgrade artifacts; 13 manual route-only/manual-access/duplicate/context-only rows remain blocked.",
@@ -388,7 +392,7 @@
             "Reviewed artifacts remain bounded research artifacts and do not open calibrated model admission.",
             "Calibrated model admission now has a blocking model-admission contract and candidate registry, but still needs narrow quantitative estimands, validation data and L4 gates."
           ],
-          "nextAction": "Run C2-LT-B6 manual/fulltext extraction and independent fresh review for source-resolution candidates before any bounded artifact fill; keep model admission blocked.",
+          "nextAction": "Run C2-LT-B6 independent fresh review over the 19 manual/fulltext extraction rows before any bounded artifact fill; keep model admission blocked.",
           "blocks100Percent": true
         },
         {
@@ -520,7 +524,9 @@
             "docs/reference/human-infra-c2-longtail-fifth-batch-independent-fresh-review-verdict-register.json",
             "tools/audit_human_infra_c2_longtail_fifth_batch_independent_fresh_review_verdict_register.py",
             "docs/reference/human-infra-c2-longtail-fifth-batch-reviewed-card-artifact-register.json",
-            "tools/audit_human_infra_c2_longtail_fifth_batch_reviewed_card_artifact_register.py"
+            "tools/audit_human_infra_c2_longtail_fifth_batch_reviewed_card_artifact_register.py",
+            "docs/reference/human-infra-c2-longtail-sixth-batch-manual-fulltext-extraction-register.json",
+            "tools/audit_human_infra_c2_longtail_sixth_batch_manual_fulltext_extraction_register.py"
           ],
           "missingEvidence": [
             "B5 selected domains now have bounded reviewed variable, endpoint, uncertainty, transfer-boundary and downgrade artifacts for 17 eligible rows, but no B5 row is admitted as a calibrated model variable.",
@@ -528,7 +534,7 @@
             "B1/B2/B3/B4/B5 reviewed artifacts are governed by the model-admission contract and candidate registry, but no row is admitted above L1/L2.",
             "Remaining C2 long-tail domains outside B1/B2/B3/B4/B5 still need reviewed variable, endpoint, uncertainty, transfer-boundary and downgrade artifacts."
           ],
-          "nextAction": "Extract variables and mechanism boundaries from C2-LT-B6 source-resolution candidates only after manual/fulltext extraction and independent fresh review; keep all candidate routes out of model use.",
+          "nextAction": "Extract variable and mechanism boundaries from C2-LT-B6 manual/fulltext rows only after independent fresh review; keep all route-only rows out of model use.",
           "blocks100Percent": true
         },
         {
@@ -681,7 +687,9 @@
             "docs/reference/human-infra-c2-longtail-sixth-batch-local-review-register.json",
             "tools/audit_human_infra_c2_longtail_sixth_batch_local_review_register.py",
             "docs/reference/human-infra-c2-longtail-sixth-batch-source-resolution-register.json",
-            "tools/audit_human_infra_c2_longtail_sixth_batch_source_resolution_register.py"
+            "tools/audit_human_infra_c2_longtail_sixth_batch_source_resolution_register.py",
+            "docs/reference/human-infra-c2-longtail-sixth-batch-manual-fulltext-extraction-register.json",
+            "tools/audit_human_infra_c2_longtail_sixth_batch_manual_fulltext_extraction_register.py"
           ],
           "missingEvidence": [
             "C2-LT-B5 reviewed downgrade artifacts now exist for 17 eligible rows, but 13 manual route-only/manual-access/duplicate/context-only rows remain blocked.",
@@ -689,7 +697,7 @@
             "All B5 artifacts remain bounded evidence artifacts only; no row opens model-admitted evidence.",
             "Calibrated model downgrade gates still require a separate quantitative model contract and validation plan."
           ],
-          "nextAction": "Carry downgrade/falsifier coverage into C2-LT-B6 manual/fulltext extraction and fresh review, preserving route-only and duplicate-lineage candidates as blocked until exact source context is verified.",
+          "nextAction": "Carry downgrade/falsifier coverage into C2-LT-B6 independent fresh review, preserving route-only, summary, bibliographic and companion-lineage candidates as blocked until exact source context is verified.",
           "blocks100Percent": true
         }
       ]
@@ -918,7 +926,7 @@
     },
     {
       "priority": 3,
-      "item": "Run C2-LT-B6 manual/fulltext extraction and independent fresh review over the 19 source-resolution route candidates, separating official guideline pages, publisher/manual-review rows and source-lineage routes before any bounded artifact or model-admission step.",
+      "item": "Run C2-LT-B6 independent fresh review over the 19 manual/fulltext extraction rows, separating seven bounded fresh-review candidates from twelve route-only, bibliographic, summary, companion-lineage or policy-resource context rows before any bounded artifact or model-admission step.",
       "unblocks": [
         "RESEARCH-G3-c1-c2-source-cards",
         "RESEARCH-G4-variable-mechanism-contracts",
