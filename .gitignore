@@ -10,6 +10,7 @@ __pycache__/
 .pytest_cache/
 .venv/
 venv/
+.runtime/
 
 # Node
 node_modules/

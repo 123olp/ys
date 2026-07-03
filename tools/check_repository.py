@@ -3286,6 +3286,16 @@ IGNORED_LINK_PREFIXES = (
     "mailto:",
 )
 
+IGNORED_PATH_PREFIXES = (
+    ".history/",
+    ".runtime/",
+    "node_modules/",
+    "web/node_modules/",
+    "web/dist/",
+    "web/.observablehq/",
+    "web/src/.observablehq/",
+)
+
 
 def relative(path: Path) -> str:
     return str(path.relative_to(ROOT))
@@ -3306,7 +3316,7 @@ def iter_markdown_without_code(path: Path) -> list[tuple[int, str]]:
 def check_local_markdown_links(errors: list[str]) -> None:
     for path in ROOT.rglob("*.md"):
         rel = relative(path)
-        if rel.startswith((".history/", "node_modules/", "web/node_modules/", "web/dist/", "web/.observablehq/", "web/src/.observablehq/")):
+        if rel.startswith(IGNORED_PATH_PREFIXES):
             continue
         for lineno, line in iter_markdown_without_code(path):
             for match in MARKDOWN_LINK_RE.finditer(line):
@@ -3343,7 +3353,7 @@ def main() -> int:
 
     for path in ROOT.rglob("*"):
         rel = relative(path)
-        if rel.startswith(("node_modules/", "web/node_modules/", "web/dist/", "web/.observablehq/", "web/src/.observablehq/")):
+        if rel.startswith(IGNORED_PATH_PREFIXES):
             continue
         if any(part in rel for part in FORBIDDEN_NAME_PARTS):
             if ".history/" not in rel:

@@ -153,6 +153,9 @@ longevity-evidence/
 │   ├── life-path-variable-dictionary-nhats.md
 │   ├── mvp-roadmap.md
 │   └── product-brief.md
+├── runtime/
+│   ├── README.md
+│   └── nhanes-public-lmf-r-survey-conda.yml
 └── scripts/
     ├── README.md
     ├── audit_life_path_toy_model.py
@@ -181,6 +184,7 @@ longevity-evidence/
     ├── validate_nhanes_public_lmf_survey_design_readiness.py
     ├── validate_nhanes_public_lmf_weighted_estimator_readiness.py
     ├── validate_nhanes_public_lmf_r_survey_runtime_smoke.py
+    ├── run_nhanes_public_lmf_r_survey_controlled_runtime_smoke.sh
     └── validate_nhats_survey_design_plan.py
 ```
 
@@ -218,6 +222,8 @@ longevity-evidence/
 `data/manual/life_path_nhanes_public_lmf_eligible_base_readiness.json` 与 `scripts/validate_nhanes_public_lmf_eligible_base_readiness.py` 维护 NHANES public-use LMF 试运行的 positive-weight eligible-base readiness；它把 DEMO_J `WTMEC2YR > 0`、完整设计输入、禁止预先丢行、5809 名 positive-weight eligible adults、15 个 strata 和 no lonely positive-weight strata 接入审计，导出 `web/src/data/life-path-nhanes-public-lmf-eligible-base-readiness-validation.json`，不授权 weighted domain inference、design-based confidence interval、校准预测或个体预测。
 
 `data/manual/life_path_nhanes_public_lmf_weighted_estimator_readiness.json` 与 `scripts/validate_nhanes_public_lmf_weighted_estimator_readiness.py` 维护 NHANES public-use LMF 试运行的 weighted-estimator readiness；它选择 R `survey` / `svydesign` 作为成熟复杂抽样后端，绑定 `WTMEC2YR`、`SDMVPSU`、`SDMVSTRA`、`nest=true`、design-object 和 domain indicator 合约，导出 `web/src/data/life-path-nhanes-public-lmf-weighted-estimator-readiness-validation.json`，不授权 R runtime smoke、weighted domain output、design-based confidence interval、校准预测或个体预测。
+
+`data/manual/life_path_nhanes_public_lmf_r_survey_runtime_smoke_readiness.json`、`runtime/nhanes-public-lmf-r-survey-conda.yml`、`scripts/validate_nhanes_public_lmf_r_survey_runtime_smoke.py` 与 `scripts/run_nhanes_public_lmf_r_survey_controlled_runtime_smoke.sh` 维护 NHANES public-use LMF R `survey` runtime smoke；默认探测当前环境，controlled 脚本会在仓库根目录 `.runtime/nhanes-r-survey/` 创建可重建 conda prefix，并导出 `web/src/data/life-path-nhanes-public-lmf-r-survey-controlled-runtime-smoke-validation.json`。该门只证明 R `4.3.3`、R `survey` 和 synthetic `svydesign` / domain `subset` smoke 能跑通，不下载、不保存、不处理 NHANES 行级数据，不授权 weighted domain output、design-based confidence interval、校准预测或个体预测。
 
 `data/manual/life_path_nhanes_public_lmf_r_survey_runtime_smoke_readiness.json` 与 `scripts/validate_nhanes_public_lmf_r_survey_runtime_smoke.py` 维护 NHANES public-use LMF 试运行的 R `survey` runtime smoke readiness；它只探测当前环境是否具备 `Rscript`、`survey` 包和 synthetic `svydesign` / domain `subset` smoke 能力，当前可记录 `blocked-no-rscript` 这类运行时阻塞，不下载、不保存、不处理 NHANES 行级数据，也不授权 weighted domain output、design-based confidence interval、校准预测或个体预测。
 

@@ -1,0 +1,5 @@
+channels:
+  - conda-forge
+dependencies:
+  - r-base=4.3.3
+  - r-survey=4.4

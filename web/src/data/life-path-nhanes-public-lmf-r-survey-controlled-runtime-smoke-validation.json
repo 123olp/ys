@@ -1,6 +1,6 @@
 {
   "schemaVersion": "human-infra.nhanes-public-lmf-r-survey-runtime-smoke-validation.v1",
-  "generatedAt": "2026-07-03T10:00:36.916338+00:00",
+  "generatedAt": "2026-07-03T10:00:05.320939+00:00",
   "status": "pass",
   "readinessPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_r_survey_runtime_smoke_readiness.json",
   "readinessSha256": "117e03dfd6cfec882f1b3c0587323478d9b8cae1e277a6cbe119b166fb22b0d5",
@@ -8,25 +8,25 @@
     "runtimeExecutable": "Rscript",
     "requiredPackage": "survey",
     "runtimeProbeExecuted": true,
-    "rscriptAvailable": false,
-    "surveyPackageAvailable": false,
-    "syntheticSmokeExecuted": false,
-    "syntheticSmokePassed": false,
-    "smokeStatus": "blocked-no-rscript",
+    "rscriptAvailable": true,
+    "surveyPackageAvailable": true,
+    "syntheticSmokeExecuted": true,
+    "syntheticSmokePassed": true,
+    "smokeStatus": "ready-synthetic-r-survey-smoke-passed",
     "weightedDomainOutputAllowed": false,
     "individualPredictionAllowed": false
   },
   "runtimeProbe": {
-    "rscriptPath": null,
-    "rscriptVersion": null,
-    "rscriptAvailable": false,
-    "surveyPackageAvailable": false,
-    "syntheticSmokeExecuted": false,
-    "syntheticSmokePassed": false,
-    "smokeStatus": "blocked-no-rscript",
-    "stdoutPreview": "",
+    "rscriptPath": ".runtime/nhanes-r-survey/bin/Rscript",
+    "rscriptVersion": "Rscript (R) version 4.3.3 (2024-02-29)",
+    "rscriptAvailable": true,
+    "surveyPackageAvailable": true,
+    "syntheticSmokeExecuted": true,
+    "syntheticSmokePassed": true,
+    "smokeStatus": "ready-synthetic-r-survey-smoke-passed",
+    "stdoutPreview": "human-infra-r-survey-smoke-ok:0.575000",
     "stderrPreview": "",
-    "returnCode": null
+    "returnCode": 0
   },
   "nonProofBoundary": {
     "confirms": [
@@ -45,5 +45,5 @@
       "medical advice"
     ]
   },
-  "nextAction": "Install/provide Rscript with the R survey package in a controlled runtime, then rerun this smoke gate."
+  "nextAction": "Add domain indicator, DOF/sparse-domain and disclosure gates before public weighted output."
 }

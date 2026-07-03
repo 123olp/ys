@@ -85,6 +85,16 @@ def rel(path: Path) -> str:
     return str(path.relative_to(REPO_ROOT))
 
 
+def portable_runtime_path(path_text: str | None) -> str | None:
+    if not path_text:
+        return None
+    path = Path(path_text).resolve()
+    try:
+        return str(path.relative_to(REPO_ROOT))
+    except ValueError:
+        return str(path)
+
+
 def fail(errors: list[str], message: str) -> None:
     errors.append(message)
 
@@ -247,7 +257,7 @@ def validate_payload(data: dict[str, Any]) -> list[str]:
 def probe_runtime(timeout_seconds: int) -> dict[str, Any]:
     rscript_path = shutil.which("Rscript")
     probe: dict[str, Any] = {
-        "rscriptPath": rscript_path,
+        "rscriptPath": portable_runtime_path(rscript_path),
         "rscriptVersion": None,
         "rscriptAvailable": bool(rscript_path),
         "surveyPackageAvailable": False,
