@@ -60,6 +60,7 @@
 - `manual/life_path_calibration_readiness.json`：校准预备契约，记录 target population、time zero、outcome、estimand、predictor、censoring、validation、calibration、sensitivity、bias/applicability、reporting、prohibited use 和当前 cannot-calibrate-yet 边界。
 - `manual/life_path_data_source_candidates.json`：候选数据源注册表，记录 HRS、NCHS linked mortality、UK Biobank、All of Us、NHATS、ELSA、SHARE 和 Framingham 等官方入口、覆盖标签、访问治理状态、限制和禁止外推边界。
 - `manual/life_path_nhats_acquisition_readiness.json`：NHATS acquisition readiness 机器契约，记录官方入口、来源事实、提取前阻塞门、禁止动作和下一步证据，当前状态为 `cannot-extract-yet`。
+- `manual/life_path_nhats_official_source_refresh_register.json`：NHATS official source refresh 寄存器，记录 8 个官方公开来源的访问状态、内容长度、SHA-256 和用途边界，当前只把 official-source-refresh 门升为 ready。
 - `manual/life_path_nhats_controlled_storage_destruction_plan.json`：NHATS controlled storage / destruction 计划，记录非仓库受控工作区、访问日志、清单槽位、销毁步骤、禁止位置和 readiness impact；当前状态为 `plan-only-not-executed-no-data-acquired`。
 - `manual/life_path_nhats_synthetic_storage_destruction_drill.json`：NHATS synthetic storage / destruction 演练记录，记录 `/tmp` 合成文件 dry-run 的哈希、销毁状态、最终不存在观察和 prohibited interpretation。
 - `manual/life_path_nhats_file_tier_table.json`：NHATS R13/R14 文件层级表，记录 public-use registration-required 和 sensitive application-required 文件家族、官方路径、候选用途、阻塞项、方法文档依赖和禁止动作。
@@ -81,6 +82,7 @@
 - `manual/life_path_nhats_preoutcome_aggregation_protocol.json`：NHATS pre-outcome aggregation 协议，记录 8 条 L2-only 聚合规则、7 个合成用例、9 个真实聚合前置证据要求和禁止动作，当前状态为 `protocol-only-preoutcome-rules-frozen-l4-blocked`。
 - `manual/life_path_nhats_l4_readiness_runway.json`：NHATS L4 readiness runway，记录从 L2 设计资产到 L4 aggregate-calibrated research model 之前必须通过的 12 个 readiness gates，当前状态为 `runway-only-l4-blocked`。
 - `../../../../web/src/data/life-path-sensitivity-analysis.json`：由 `run_life_path_sensitivity_analysis.py` 生成的合成敏感性分析输出，记录 48 个一因素扰动结果、场景稳定性摘要、最敏感参数和禁止个体用途边界。
+- `../../../../web/src/data/life-path-nhats-official-source-refresh-validation.json`：由 `validate_nhats_official_source_refresh.py` 生成的 official-source-refresh validation 输出，记录 8 个官方公开来源、hash、gate impact 和 no-download/no-extraction/no-calibration/no-individual-prediction 边界。
 - `../../../../web/src/data/life-path-nhats-controlled-storage-destruction-validation.json`：由 `validate_nhats_controlled_storage_destruction_plan.py` 生成的 storage/destruction validation 输出，记录计划 hash、acquisition-readiness hash、15 个计划边界检查、partial readiness impact 和 no-download/no-extraction/no-calibration/no-individual-prediction 边界。
 - `../../../../web/src/data/life-path-nhats-synthetic-storage-destruction-drill-validation.json`：由 `validate_nhats_synthetic_storage_destruction_drill.py` 生成的 synthetic drill validation 输出，记录 drill/plan/acquisition-readiness hash、13 个演练边界检查、synthetic-only impact 和 no-download/no-extraction/no-calibration/no-individual-prediction 边界。
 - `../../../../web/src/data/life-path-nhats-disclosure-control-validation.json`：由 `validate_nhats_disclosure_outputs.py` 生成的 disclosure-control validation 输出，记录 6 个合成用例、policy/test-case hash、allow/block 决策和 synthetic-only 边界。

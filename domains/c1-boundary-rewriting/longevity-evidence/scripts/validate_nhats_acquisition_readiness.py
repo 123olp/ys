@@ -21,6 +21,9 @@ MANUAL_DIR = (
     / "manual"
 )
 DEFAULT_REGISTER = MANUAL_DIR / "life_path_nhats_acquisition_readiness.json"
+DEFAULT_OFFICIAL_SOURCE_REFRESH_REGISTER = (
+    MANUAL_DIR / "life_path_nhats_official_source_refresh_register.json"
+)
 DEFAULT_STORAGE_DESTRUCTION_PLAN = (
     MANUAL_DIR / "life_path_nhats_controlled_storage_destruction_plan.json"
 )
@@ -165,7 +168,12 @@ def validate_register(register: dict[str, Any]) -> list[dict[str, Any]]:
     )
 
     storage_plan_ok = (
-        register.get("storageDestructionPlanId")
+        register.get("officialSourceRefreshRegisterId")
+        == "nhats-official-source-refresh-2026-07-03"
+        and register.get("officialSourceRefreshRegisterPath")
+        == repo_rel(DEFAULT_OFFICIAL_SOURCE_REFRESH_REGISTER)
+        and DEFAULT_OFFICIAL_SOURCE_REFRESH_REGISTER.exists()
+        and register.get("storageDestructionPlanId")
         == "nhats-controlled-storage-destruction-plan-2026-07-03"
         and register.get("storageDestructionPlanPath")
         == repo_rel(DEFAULT_STORAGE_DESTRUCTION_PLAN)
@@ -180,7 +188,7 @@ def validate_register(register: dict[str, Any]) -> list[dict[str, Any]]:
         checks,
         "storage-destruction-plan-binding",
         storage_plan_ok,
-        "register must point to the controlled storage/destruction plan and synthetic drill while keeping extraction blocked",
+        "register must point to official source refresh, controlled storage/destruction plan and synthetic drill while keeping extraction blocked",
     )
 
     decision = register.get("currentDecision")
@@ -248,7 +256,9 @@ def validate_register(register: dict[str, Any]) -> list[dict[str, Any]]:
                 missing_count += 1
             else:
                 gate_status_ok = False
-            if gate.get("blocksExtraction") is not True:
+            if status == "ready" and gate.get("blocksExtraction") is not False:
+                blocking_ok = False
+            if status != "ready" and gate.get("blocksExtraction") is not True:
                 blocking_ok = False
     else:
         gate_status_ok = False
@@ -256,30 +266,30 @@ def validate_register(register: dict[str, Any]) -> list[dict[str, Any]]:
     add_check(
         checks,
         "gate-statuses",
-        gate_status_ok and ready_count == 0 and partial_count == 4 and missing_count == 6,
+        gate_status_ok and ready_count == 1 and partial_count == 3 and missing_count == 6,
         f"ready={ready_count} partial={partial_count} missing={missing_count}",
     )
     add_check(
         checks,
         "all-gates-block-extraction",
         blocking_ok,
-        "every acquisition-readiness gate must block extraction until ready evidence exists",
+        "ready gates may stop blocking extraction locally, but every non-ready gate must still block extraction",
     )
 
     summary = register.get("gateSummary")
     summary_ok = (
         isinstance(summary, dict)
         and summary.get("requiredGateCount") == 10
-        and summary.get("readyGateCount") == 0
-        and summary.get("partialGateCount") == 4
+        and summary.get("readyGateCount") == 1
+        and summary.get("partialGateCount") == 3
         and summary.get("missingGateCount") == 6
-        and summary.get("blockingGateCount") == 10
+        and summary.get("blockingGateCount") == 9
     )
     add_check(
         checks,
         "gate-summary",
         summary_ok,
-        "gate summary must report 10 blocking gates, 0 ready, 3 partial and 7 missing",
+        "gate summary must report 10 gates, 1 ready official-source-refresh gate, 3 partial gates, 6 missing gates and 9 extraction-blocking gates",
     )
 
     allowed_ai_inputs = as_set(register.get("allowedAiInputs"))
@@ -331,6 +341,8 @@ def build_report(register_path: Path, register: dict[str, Any]) -> dict[str, Any
         "generatedAt": datetime.now(timezone.utc).isoformat(),
         "registerPath": repo_rel(register_path),
         "registerSha256": sha256_file(register_path),
+        "officialSourceRefreshRegisterPath": repo_rel(DEFAULT_OFFICIAL_SOURCE_REFRESH_REGISTER),
+        "officialSourceRefreshRegisterSha256": sha256_file(DEFAULT_OFFICIAL_SOURCE_REFRESH_REGISTER),
         "acquisitionReadinessId": register.get("acquisitionReadinessId"),
         "overallStatus": "PASS" if summarize(checks)["fail"] == 0 else "FAIL",
         "summary": summarize(checks),

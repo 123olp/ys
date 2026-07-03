@@ -80,7 +80,7 @@ The manifest may move from `draft / cannot-extract-yet` to `acquisition-ready` o
 
 | Gate | Required evidence before acquisition | Current status |
 | --- | --- | --- |
-| `official-source-refresh` | Date-stamped review of Data Access, Conditions of Use, Cross-Year Search, Files and Sensitive/Restricted file pages. | Partial; current review recorded but not enough for download. |
+| `official-source-refresh` | Date-stamped review of Data Access, Conditions of Use, Cross-Year Search, Files and Sensitive/Restricted file pages. | Ready for public-source freshness only; still not enough for registration, download, extraction or calibration. |
 | `registration-status` | Registered NHATS account identity, permitted user boundary and no-sharing obligations recorded outside the public repository. | Missing. |
 | `file-access-tier` | For each planned file: public-use, sensitive or restricted tier; approval status; allowed local storage path. | Missing. |
 | `colectica-variable-confirmation` | Exact variable names, labels, value labels, missing codes and question text confirmed from Colectica or official codebooks. | Missing. |

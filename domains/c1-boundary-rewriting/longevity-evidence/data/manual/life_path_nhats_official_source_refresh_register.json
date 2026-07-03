@@ -1,0 +1,239 @@
+{
+  "schemaVersion": "human-infra.life-path-nhats-official-source-refresh.v1",
+  "sourceId": "nhats",
+  "sourceName": "National Health and Aging Trends Study",
+  "refreshRegisterId": "nhats-official-source-refresh-2026-07-03",
+  "acquisitionReadinessId": "nhats-acquisition-readiness-2026-07-02",
+  "fileTierTableId": "nhats-r13-r14-file-tier-table-draft",
+  "observedAt": "2026-07-03",
+  "reviewer": "tradecatlabs",
+  "status": "official-source-refresh-only-acquisition-still-blocked",
+  "purpose": "Record fresh public official-source reachability and content hashes for the NHATS acquisition runway without downloading NHATS data files, storing raw respondent data, using credentials, or enabling extraction.",
+  "methodBoundary": {
+    "allowed": [
+      "public NHATS documentation pages",
+      "public NHATS round file listing pages",
+      "public NHATS Colectica technical guide PDF",
+      "HTTP status, content type, content length and SHA-256 hash recording"
+    ],
+    "forbidden": [
+      "NHATS data file download",
+      "Colectica authenticated metadata capture",
+      "credential storage",
+      "raw row-level NHATS or NSOC data",
+      "variable value-label extraction",
+      "model calibration",
+      "individual prediction"
+    ]
+  },
+  "currentDecision": {
+    "officialSourceRefreshReady": true,
+    "registrationStatusReady": false,
+    "downloadAllowed": false,
+    "extractionAllowed": false,
+    "rawDataAllowedInRepository": false,
+    "calibrationAllowed": false,
+    "individualPredictionAllowed": false,
+    "reason": "The public official-source refresh is current and hash recorded, but registration, governed workspace execution, exact variables, real extraction, survey design, disclosure review, validation and calibration remain absent."
+  },
+  "sourceRows": [
+    {
+      "id": "data-access",
+      "url": "https://www.nhats.org/data-access",
+      "sourceType": "official-web-page",
+      "fetchMethod": "python urllib GET",
+      "httpStatus": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "contentLengthBytes": 74524,
+      "sha256": "593ef238cb690dadb5d924a7dd9ad075a6bf2ae3c22d1485de326db887a2ccf8",
+      "observedFact": "The official data access page remains reachable and is the entry point for NHATS file access policy.",
+      "modelConsequence": "Registration and access-tier obligations must remain explicit before acquisition or extraction.",
+      "supports": [
+        "official-access-entry-current",
+        "registration-boundary-current"
+      ],
+      "doesNotSupport": [
+        "registration-complete",
+        "download-approved",
+        "field-confirmed"
+      ]
+    },
+    {
+      "id": "cross-year-search",
+      "url": "https://www.nhats.org/data-access/cross-year-search",
+      "sourceType": "official-web-page",
+      "fetchMethod": "python urllib GET",
+      "httpStatus": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "contentLengthBytes": 66314,
+      "sha256": "66a1f8a840cea538e13877f13519a6e813602ac66998233131abecee48c59f9b",
+      "observedFact": "The official Cross-Year Search page remains reachable as the route to Colectica metadata.",
+      "modelConsequence": "Exact variables and labels still require Colectica or official metadata review, not inference from local field guesses.",
+      "supports": [
+        "colectica-route-current",
+        "metadata-confirmation-route-current"
+      ],
+      "doesNotSupport": [
+        "colectica-login-complete",
+        "value-labels-confirmed",
+        "route-classifier-ready"
+      ]
+    },
+    {
+      "id": "conditions-of-use",
+      "url": "https://www.nhats.org/conditions-of-use",
+      "sourceType": "official-web-page",
+      "fetchMethod": "python urllib GET",
+      "httpStatus": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "contentLengthBytes": 64675,
+      "sha256": "9a0d30f37d1f8aee043a8a6f364be715a97c9a037555b4468d4f93cceacb0d93",
+      "observedFact": "The official Conditions of Use page remains reachable.",
+      "modelConsequence": "The repository must continue to block raw data storage, public AI upload, identification attempts and row-level output.",
+      "supports": [
+        "conditions-current",
+        "ai-and-row-level-boundary-current"
+      ],
+      "doesNotSupport": [
+        "raw-data-export-approved",
+        "public-ai-upload-approved",
+        "individual-output-approved"
+      ]
+    },
+    {
+      "id": "welcome-ai-notice",
+      "url": "https://www.nhats.org/",
+      "sourceType": "official-web-page",
+      "fetchMethod": "python urllib GET",
+      "httpStatus": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "contentLengthBytes": 12129,
+      "sha256": "72608a60880ed0aed060f1e5ca157fa0f9e56a26111a7bf24684d9500e405a24",
+      "observedFact": "The official NHATS homepage remains reachable and is used as a current public notice surface.",
+      "modelConsequence": "Access-condition changes must be rechecked from official NHATS pages before acquisition work.",
+      "supports": [
+        "official-notice-surface-current"
+      ],
+      "doesNotSupport": [
+        "conditions-unchanged-forever",
+        "registration-complete"
+      ]
+    },
+    {
+      "id": "nhats-files-index",
+      "url": "https://www.nhats.org/data-access/nhats",
+      "sourceType": "official-web-page",
+      "fetchMethod": "curl GET retry after urllib timeout",
+      "httpStatus": 200,
+      "contentType": "text/html",
+      "contentLengthBytes": 92948,
+      "sha256": "8c8b3a222fd14cc3327d602755bd8a1caeedc1171104007dfa48c0daca67cf87",
+      "observedFact": "The official NHATS files index is reachable after retry.",
+      "modelConsequence": "Round-specific file-page links remain available, but file availability must still be rechecked immediately before any governed acquisition.",
+      "supports": [
+        "file-index-current"
+      ],
+      "doesNotSupport": [
+        "download-approved",
+        "file-content-verified",
+        "extractor-ready"
+      ],
+      "routeNote": "Initial urllib read timed out; curl retry succeeded. Keep this route under refresh monitoring before acquisition."
+    },
+    {
+      "id": "round-13-files",
+      "url": "https://www.nhats.org/data-access/nhats/13",
+      "sourceType": "official-web-page",
+      "fetchMethod": "curl GET retry after urllib SSL EOF on non-www route",
+      "httpStatus": 200,
+      "contentType": "text/html",
+      "contentLengthBytes": 147717,
+      "sha256": "30e328e01dd01d8cbcd84eb14661e1afefd436625c83931af7929a77d6314f87",
+      "observedFact": "The official Round 13 file listing page is reachable on the www route.",
+      "modelConsequence": "R13 file candidates can remain in the file-tier table, but registration, canonical format choice and field confirmation remain blocked.",
+      "supports": [
+        "round-13-file-page-current"
+      ],
+      "doesNotSupport": [
+        "registration-complete",
+        "download-approved",
+        "exact-fields-confirmed"
+      ],
+      "routeNote": "Non-www route returned an SSL EOF during urllib probing; www route with curl succeeded and is retained as canonical refresh evidence."
+    },
+    {
+      "id": "round-14-files",
+      "url": "https://www.nhats.org/data-access/nhats/14",
+      "sourceType": "official-web-page",
+      "fetchMethod": "curl GET",
+      "httpStatus": 200,
+      "contentType": "text/html",
+      "contentLengthBytes": 128277,
+      "sha256": "1d58513ab2bd2bc6b2c09a5670d5df9c376e9603263327dc554efc5728795cad",
+      "observedFact": "The official Round 14 file listing page is reachable on the www route.",
+      "modelConsequence": "R14 file candidates can remain in the file-tier table, but registration, canonical format choice and field confirmation remain blocked.",
+      "supports": [
+        "round-14-file-page-current"
+      ],
+      "doesNotSupport": [
+        "registration-complete",
+        "download-approved",
+        "exact-fields-confirmed"
+      ]
+    },
+    {
+      "id": "colectica-technical-guide",
+      "url": "https://nhats.org/sites/default/files/2025-09/NHATS%20Online%20Cross-Year%20Searchable%20Database%20Technical%20Guide.pdf",
+      "sourceType": "official-pdf",
+      "fetchMethod": "python urllib GET",
+      "httpStatus": 200,
+      "contentType": "application/pdf",
+      "contentLengthBytes": 577295,
+      "sha256": "ae0c0d1ade858725b1c098a05845ab146432fa2d008cec54f646ce827f485ee4",
+      "observedFact": "The official Cross-Year Search technical guide PDF remains reachable and hash matches the existing Colectica route evidence.",
+      "modelConsequence": "Colectica workflow evidence remains valid as a route description, but it still does not prove authenticated capture or confirmed value labels.",
+      "supports": [
+        "colectica-guide-current",
+        "colectica-route-evidence-hash-reconfirmed"
+      ],
+      "doesNotSupport": [
+        "account-created",
+        "authenticated-capture-complete",
+        "value-labels-confirmed"
+      ]
+    }
+  ],
+  "gateImpact": {
+    "acquisitionGateId": "official-source-refresh",
+    "newGateStatus": "ready",
+    "extractionStillBlockedBy": [
+      "registration-status",
+      "file-access-tier",
+      "colectica-variable-confirmation",
+      "round-window",
+      "survey-design-plan",
+      "endpoint-definition",
+      "disclosure-control",
+      "ai-boundary",
+      "storage-destruction-plan"
+    ]
+  },
+  "hardBoundaries": [
+    "no NHATS data file download",
+    "no credentials in repository",
+    "no raw NHATS or NSOC data in repository",
+    "no row-level output",
+    "no public AI upload of NHATS or NSOC data",
+    "no calibration claim",
+    "no individual prediction"
+  ],
+  "summary": {
+    "sourceRows": 8,
+    "httpStatus200Rows": 8,
+    "officialSourceRefreshReady": true,
+    "downloadAllowed": false,
+    "extractionAllowed": false,
+    "calibrationAllowed": false,
+    "individualPredictionAllowed": false
+  }
+}

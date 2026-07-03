@@ -1,6 +1,6 @@
 {
   "schemaVersion": "human-infra.life-path-nhats-l4-readiness-runway-validation.v1",
-  "generatedAt": "2026-07-03T05:01:43.646919+00:00",
+  "generatedAt": "2026-07-03T05:25:39.139498+00:00",
   "runwayPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_l4_readiness_runway.json",
   "runwaySha256": "a86680a77ac894efb69791a09ba06dbeddc6bff6ebcd0266b6bd154df93760ce",
   "runwayId": "nhats-r13-r14-l4-readiness-runway-2026-07-03",
@@ -169,7 +169,7 @@
     "docs/reference/human-infra-model-admission-contract.json": "7fda13c3bb19bdb6bff3af1450e455f4f0d82bace7c4272bd3f5d13f1e679262",
     "docs/reference/human-infra-model-admission-candidate-registry.json": "4f5486688b123a436b0ca75521284bf7dd054e41fd1c0cd6ac392237c22fca19",
     "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_calibration_readiness.json": "0f51dc87ed255704be46e6ede9553ed7dcfcb1b2d81beb92144f18990b3fb1af",
-    "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_acquisition_readiness.json": "f0ebd157e99df536c7b30bc8106b364b35a2bc74f7808be0c34e41931266e1c4",
+    "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_acquisition_readiness.json": "a20ae2f4cb389526297078815c8be7c778e37b76929405286f89ef28cf8786db",
     "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_controlled_storage_destruction_plan.json": "ff6c99b22efdb20197df15d014f312af83c96e836139690f10fc9d5d011d7729",
     "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_synthetic_storage_destruction_drill.json": "83178bbaab0efaf71c65539c08ecb845fd778d1f0400537717558d13eac6e4d3",
     "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_file_tier_table.json": "18c151512ffb6e075a134765e13d5b4b07252be10b9e55a211f7d890cefdc6f1",

@@ -103,6 +103,7 @@ longevity-evidence/
 │   │   ├── life_path_data_source_candidates.json
 │   │   ├── life_path_public_mortality_anchor.json
 │   │   ├── life_path_nhats_acquisition_readiness.json
+│   │   ├── life_path_nhats_official_source_refresh_register.json
 │   │   ├── life_path_nhats_controlled_storage_destruction_plan.json
 │   │   ├── life_path_nhats_synthetic_storage_destruction_drill.json
 │   │   ├── life_path_nhats_colectica_access_route_probe_register.json
@@ -153,6 +154,7 @@ longevity-evidence/
     ├── run_life_path_toy_model.py
     ├── validate_public_mortality_anchor.py
     ├── validate_nhats_acquisition_readiness.py
+    ├── validate_nhats_official_source_refresh.py
     ├── validate_nhats_controlled_storage_destruction_plan.py
     ├── validate_nhats_synthetic_storage_destruction_drill.py
     ├── validate_nhats_colectica_value_label_review_execution.py
@@ -191,6 +193,8 @@ longevity-evidence/
 
 `data/manual/life_path_nhats_l4_readiness_runway.json` 与 `scripts/validate_nhats_l4_readiness_runway.py` 维护 NHATS 从 L2 设计资产进入 L4 aggregate-calibrated research model 前的 readiness runway；它只把 12 个 pass / partial / blocked gates 和上游 source hash 接入审计，导出 `web/src/data/life-path-nhats-l4-readiness-runway-validation.json`，不授权真实提取、校准预测、干预排序、个体死亡日期或个体决策支持。
 
+`data/manual/life_path_nhats_official_source_refresh_register.json` 与 `scripts/validate_nhats_official_source_refresh.py` 维护 NHATS 官方公开来源刷新证据；它只记录 Data Access、Cross-Year Search、Conditions of Use、R13/R14 文件页和 Colectica 技术指南的 HTTP 状态、内容长度和 SHA-256，导出 `web/src/data/life-path-nhats-official-source-refresh-validation.json`，并把 acquisition readiness 中的 official-source-refresh 门升为 ready。该门不授权数据下载、抽取、校准、公开导出或个体预测。
+
 ## 运行示例
 
 从仓库根目录运行：
@@ -200,6 +204,7 @@ python3 domains/c1-boundary-rewriting/longevity-evidence/scripts/collect_mvp_dat
 python3 domains/c1-boundary-rewriting/longevity-evidence/scripts/collect_core_data.py
 python3 domains/c1-boundary-rewriting/longevity-evidence/scripts/build_public_mortality_anchor.py
 python3 domains/c1-boundary-rewriting/longevity-evidence/scripts/validate_public_mortality_anchor.py
+python3 domains/c1-boundary-rewriting/longevity-evidence/scripts/validate_nhats_official_source_refresh.py
 python3 domains/c1-boundary-rewriting/longevity-evidence/scripts/validate_nhats_acquisition_readiness.py
 python3 domains/c1-boundary-rewriting/longevity-evidence/scripts/validate_nhats_controlled_storage_destruction_plan.py
 python3 domains/c1-boundary-rewriting/longevity-evidence/scripts/run_life_path_toy_model.py

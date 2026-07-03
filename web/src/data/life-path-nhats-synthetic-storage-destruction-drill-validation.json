@@ -1,6 +1,6 @@
 {
   "schemaVersion": "human-infra.life-path-nhats-synthetic-storage-destruction-drill-validation.v1",
-  "generatedAt": "2026-07-03T02:47:22.784921+00:00",
+  "generatedAt": "2026-07-03T05:25:38.920863+00:00",
   "sourceId": "nhats",
   "drillId": "nhats-synthetic-storage-destruction-drill-2026-07-03",
   "drillPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_synthetic_storage_destruction_drill.json",
@@ -10,7 +10,7 @@
   "planSha256": "ff6c99b22efdb20197df15d014f312af83c96e836139690f10fc9d5d011d7729",
   "acquisitionReadinessId": "nhats-acquisition-readiness-2026-07-02",
   "acquisitionReadinessPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_acquisition_readiness.json",
-  "acquisitionReadinessSha256": "f0ebd157e99df536c7b30bc8106b364b35a2bc74f7808be0c34e41931266e1c4",
+  "acquisitionReadinessSha256": "a20ae2f4cb389526297078815c8be7c778e37b76929405286f89ef28cf8786db",
   "overallStatus": "PASS",
   "summary": {
     "pass": 13,

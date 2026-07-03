@@ -1,6 +1,6 @@
 {
   "schemaVersion": "human-infra.life-path-nhats-controlled-storage-destruction-plan-validation.v1",
-  "generatedAt": "2026-07-03T02:47:22.822448+00:00",
+  "generatedAt": "2026-07-03T05:25:38.885467+00:00",
   "sourceId": "nhats",
   "planId": "nhats-controlled-storage-destruction-plan-2026-07-03",
   "planPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_controlled_storage_destruction_plan.json",
@@ -10,7 +10,7 @@
   "syntheticDrillSha256": "83178bbaab0efaf71c65539c08ecb845fd778d1f0400537717558d13eac6e4d3",
   "acquisitionReadinessId": "nhats-acquisition-readiness-2026-07-02",
   "acquisitionReadinessPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_acquisition_readiness.json",
-  "acquisitionReadinessSha256": "f0ebd157e99df536c7b30bc8106b364b35a2bc74f7808be0c34e41931266e1c4",
+  "acquisitionReadinessSha256": "a20ae2f4cb389526297078815c8be7c778e37b76929405286f89ef28cf8786db",
   "overallStatus": "PASS",
   "summary": {
     "pass": 15,

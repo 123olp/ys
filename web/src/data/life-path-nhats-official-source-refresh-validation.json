@@ -1,0 +1,128 @@
+{
+  "schemaVersion": "human-infra.life-path-nhats-official-source-refresh-validation.v1",
+  "generatedAt": "2026-07-03T05:26:32.127329+00:00",
+  "registerPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_official_source_refresh_register.json",
+  "registerSha256": "757d22aa444298d074215955cf04e0ea69b47950824d1bfd55554d466cd89cbf",
+  "refreshRegisterId": "nhats-official-source-refresh-2026-07-03",
+  "status": "PASS",
+  "checks": [
+    {
+      "id": "schema-version",
+      "status": "PASS",
+      "detail": "schemaVersion='human-infra.life-path-nhats-official-source-refresh.v1'"
+    },
+    {
+      "id": "identity-and-status",
+      "status": "PASS",
+      "detail": "register must bind the NHATS 2026-07-03 official-source refresh and keep acquisition blocked"
+    },
+    {
+      "id": "current-decision-boundary",
+      "status": "PASS",
+      "detail": "official source refresh may be ready, but registration, download, extraction, raw storage, calibration and individual prediction must remain false"
+    },
+    {
+      "id": "source-row-coverage",
+      "status": "PASS",
+      "detail": "observed=8 missing=[]"
+    },
+    {
+      "id": "gate-impact",
+      "status": "PASS",
+      "detail": "official-source-refresh may become ready, but extraction must remain blocked by downstream gates"
+    },
+    {
+      "id": "hard-boundaries",
+      "status": "PASS",
+      "detail": "missing=[]"
+    },
+    {
+      "id": "summary-boundary",
+      "status": "PASS",
+      "detail": "summary must keep only official-source refresh ready and all model/data actions blocked"
+    },
+    {
+      "id": "no-prohibited-keys",
+      "status": "PASS",
+      "detail": "forbidden_present=[]"
+    }
+  ],
+  "summary": {
+    "pass": 8,
+    "fail": 0
+  },
+  "sourceRows": [
+    {
+      "id": "data-access",
+      "url": "https://www.nhats.org/data-access",
+      "httpStatus": 200,
+      "contentLengthBytes": 74524,
+      "sha256": "593ef238cb690dadb5d924a7dd9ad075a6bf2ae3c22d1485de326db887a2ccf8"
+    },
+    {
+      "id": "cross-year-search",
+      "url": "https://www.nhats.org/data-access/cross-year-search",
+      "httpStatus": 200,
+      "contentLengthBytes": 66314,
+      "sha256": "66a1f8a840cea538e13877f13519a6e813602ac66998233131abecee48c59f9b"
+    },
+    {
+      "id": "conditions-of-use",
+      "url": "https://www.nhats.org/conditions-of-use",
+      "httpStatus": 200,
+      "contentLengthBytes": 64675,
+      "sha256": "9a0d30f37d1f8aee043a8a6f364be715a97c9a037555b4468d4f93cceacb0d93"
+    },
+    {
+      "id": "welcome-ai-notice",
+      "url": "https://www.nhats.org/",
+      "httpStatus": 200,
+      "contentLengthBytes": 12129,
+      "sha256": "72608a60880ed0aed060f1e5ca157fa0f9e56a26111a7bf24684d9500e405a24"
+    },
+    {
+      "id": "nhats-files-index",
+      "url": "https://www.nhats.org/data-access/nhats",
+      "httpStatus": 200,
+      "contentLengthBytes": 92948,
+      "sha256": "8c8b3a222fd14cc3327d602755bd8a1caeedc1171104007dfa48c0daca67cf87"
+    },
+    {
+      "id": "round-13-files",
+      "url": "https://www.nhats.org/data-access/nhats/13",
+      "httpStatus": 200,
+      "contentLengthBytes": 147717,
+      "sha256": "30e328e01dd01d8cbcd84eb14661e1afefd436625c83931af7929a77d6314f87"
+    },
+    {
+      "id": "round-14-files",
+      "url": "https://www.nhats.org/data-access/nhats/14",
+      "httpStatus": 200,
+      "contentLengthBytes": 128277,
+      "sha256": "1d58513ab2bd2bc6b2c09a5670d5df9c376e9603263327dc554efc5728795cad"
+    },
+    {
+      "id": "colectica-technical-guide",
+      "url": "https://nhats.org/sites/default/files/2025-09/NHATS%20Online%20Cross-Year%20Searchable%20Database%20Technical%20Guide.pdf",
+      "httpStatus": 200,
+      "contentLengthBytes": 577295,
+      "sha256": "ae0c0d1ade858725b1c098a05845ab146432fa2d008cec54f646ce827f485ee4"
+    }
+  ],
+  "gateImpact": {
+    "acquisitionGateId": "official-source-refresh",
+    "newGateStatus": "ready",
+    "extractionStillBlockedBy": [
+      "registration-status",
+      "file-access-tier",
+      "colectica-variable-confirmation",
+      "round-window",
+      "survey-design-plan",
+      "endpoint-definition",
+      "disclosure-control",
+      "ai-boundary",
+      "storage-destruction-plan"
+    ]
+  },
+  "boundary": "This validation proves only that public official-source reachability was recorded; it does not authorize data download, extraction, calibration or individual use."
+}

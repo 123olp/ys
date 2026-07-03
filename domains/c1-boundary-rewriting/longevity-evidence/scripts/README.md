@@ -15,7 +15,8 @@
 - `collect_core_data.py`：采集 HAGR、PubChem、openFDA 不良事件聚合和 Drugs@FDA 数据。
 - `build_public_mortality_anchor.py`：从 NCHS 2021 U.S. Life Tables 官方 xlsx 表生成 `data/manual/life_path_public_mortality_anchor.json`，作为公开聚合死亡率基线锚点；它不接触个人数据，不证明校准预测。
 - `validate_public_mortality_anchor.py`：离线审计 `data/manual/life_path_public_mortality_anchor.json` 的 schema、官方来源、年龄范围、sex-specific 表、qx/lx/ex 合理性和禁止个体预测边界。
-- `validate_nhats_acquisition_readiness.py`：读取 `data/manual/life_path_nhats_acquisition_readiness.json`，导出 `web/src/data/life-path-nhats-acquisition-readiness-validation.json`，验证 10 个 acquisition-readiness gates 仍全部阻塞 extraction，并确认没有凭据、raw NHATS/NSOC 数据或个体死亡日期字段进入仓库。
+- `validate_nhats_official_source_refresh.py`：读取 `data/manual/life_path_nhats_official_source_refresh_register.json`，导出 `web/src/data/life-path-nhats-official-source-refresh-validation.json`，验证 8 个 NHATS 官方公开来源的 HTTP 状态、内容长度、SHA-256、gate impact 和 no-download / no-extraction / no-calibration / no-individual-prediction 边界。
+- `validate_nhats_acquisition_readiness.py`：读取 `data/manual/life_path_nhats_acquisition_readiness.json`，导出 `web/src/data/life-path-nhats-acquisition-readiness-validation.json`，验证 acquisition-readiness gates 中 1 个 official-source-refresh 门 ready、9 个门仍阻塞 extraction，并确认没有凭据、raw NHATS/NSOC 数据或个体死亡日期字段进入仓库。
 - `validate_nhats_controlled_storage_destruction_plan.py`：读取 `data/manual/life_path_nhats_controlled_storage_destruction_plan.json`，导出 `web/src/data/life-path-nhats-controlled-storage-destruction-validation.json`，验证受控存储/销毁计划只处于 plan-only，继续阻塞 download、extraction、raw data 入库、public AI 上传、calibration 和 individual prediction。
 - `validate_nhats_synthetic_storage_destruction_drill.py`：读取 `data/manual/life_path_nhats_synthetic_storage_destruction_drill.json`，导出 `web/src/data/life-path-nhats-synthetic-storage-destruction-drill-validation.json`，验证合成 create-hash-delete 演练已完成且仍不证明注册、受控工作区、下载、抽取、校准或个体预测。
 - `run_life_path_toy_model.py`：读取 `data/manual/life_path_toy_model_scenarios.json`，导出 `web/src/data/life-path-toy-model.json` 供 `/model/` 展示。
@@ -40,6 +41,7 @@ python3 domains/c1-boundary-rewriting/longevity-evidence/scripts/collect_mvp_dat
 python3 domains/c1-boundary-rewriting/longevity-evidence/scripts/collect_core_data.py
 python3 domains/c1-boundary-rewriting/longevity-evidence/scripts/build_public_mortality_anchor.py
 python3 domains/c1-boundary-rewriting/longevity-evidence/scripts/validate_public_mortality_anchor.py
+python3 domains/c1-boundary-rewriting/longevity-evidence/scripts/validate_nhats_official_source_refresh.py
 python3 domains/c1-boundary-rewriting/longevity-evidence/scripts/validate_nhats_acquisition_readiness.py
 python3 domains/c1-boundary-rewriting/longevity-evidence/scripts/validate_nhats_controlled_storage_destruction_plan.py
 python3 domains/c1-boundary-rewriting/longevity-evidence/scripts/validate_nhats_synthetic_storage_destruction_drill.py

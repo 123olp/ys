@@ -7,6 +7,8 @@
   "manifestId": "nhats-r1-r14-effective-time-manifest-draft",
   "fileTierTableId": "nhats-r13-r14-file-tier-table-draft",
   "fileTierTablePath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_file_tier_table.json",
+  "officialSourceRefreshRegisterId": "nhats-official-source-refresh-2026-07-03",
+  "officialSourceRefreshRegisterPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_official_source_refresh_register.json",
   "storageDestructionPlanId": "nhats-controlled-storage-destruction-plan-2026-07-03",
   "storageDestructionPlanPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_controlled_storage_destruction_plan.json",
   "storageDestructionSyntheticDrillId": "nhats-synthetic-storage-destruction-drill-2026-07-03",
@@ -70,9 +72,9 @@
     {
       "id": "official-source-refresh",
       "requiredEvidence": "Date-stamped review of Data Access, Conditions of Use, Cross-Year Search, Files and relevant round-file pages.",
-      "status": "partial",
-      "blocksExtraction": true,
-      "nextEvidence": "Repeat immediately before registration, download or script work."
+      "status": "ready",
+      "blocksExtraction": false,
+      "nextEvidence": "Refresh again immediately before registration, download or script work."
     },
     {
       "id": "registration-status",
@@ -140,10 +142,10 @@
   ],
   "gateSummary": {
     "requiredGateCount": 10,
-    "readyGateCount": 0,
-    "partialGateCount": 4,
+    "readyGateCount": 1,
+    "partialGateCount": 3,
     "missingGateCount": 6,
-    "blockingGateCount": 10
+    "blockingGateCount": 9
   },
   "allowedAiInputs": [
     "public NHATS documentation URLs",
@@ -161,6 +163,7 @@
   ],
   "nextWork": [
     "Complete the first file-tier table with registration state, canonical format choice, approval status and governed storage path.",
+    "Use the official source refresh register as current public-source evidence, and refresh it again immediately before registration or acquisition.",
     "Execute the controlled storage/destruction plan in a governed workspace outside the public repository before any download.",
     "Use Cross-Year Search or official codebooks to confirm exact variables for one functional-survival endpoint.",
     "Define survey-design and disclosure-control plans before any extraction script exists.",
@@ -173,6 +176,7 @@
     "https://www.nhats.org/",
     "https://www.nhats.org/data-access/nhats",
     "https://nhats.org/researcher/nhats/download-public-use-files?id=22",
-    "https://nhats.org/researcher/nhats/download-public-use-files?id=21"
+    "https://nhats.org/researcher/nhats/download-public-use-files?id=21",
+    "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_official_source_refresh_register.json"
   ]
 }
