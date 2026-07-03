@@ -4,9 +4,9 @@
 
 机器可读缺口账本见 [`human-infra-maturity-gap-register.json`](human-infra-maturity-gap-register.json)。路线图负责解释 100% 状态，缺口账本负责把当前未完成项拆成 gate、证据路径、缺失证据和下一步动作，并由 `make maturity-gap-audit` 检查。
 
-模型准入契约见 [`human-infra-model-admission-contract.json`](human-infra-model-admission-contract.json)，由 `make model-admission-contract-audit` 检查 L0-L5 准入层级、MAC gates、hard abort gates、方法锚点和当前 B1-B5 reviewed artifacts 的 L1/L2-only 边界。该契约只打开“如何拒绝错误准入”和“如何进入下一步候选注册表”，不打开校准预测、干预效果或个体用途。
+模型准入契约见 [`human-infra-model-admission-contract.json`](human-infra-model-admission-contract.json)，由 `make model-admission-contract-audit` 检查 L0-L5 准入层级、MAC gates、hard abort gates、方法锚点和当前 B1-B6 reviewed artifacts 的 L1/L2-only 边界。该契约只打开“如何拒绝错误准入”和“如何进入下一步候选注册表”，不打开校准预测、干预效果或个体用途。
 
-模型准入候选注册表见 [`human-infra-model-admission-candidate-registry.json`](human-infra-model-admission-candidate-registry.json)，由 `make model-admission-candidate-registry-audit` 检查 7 个 reviewed artifact registers、1170 个 reviewed artifacts、32 个 blocked rows、现有 L3 synthetic / public aggregate baseline 和 blocked L4 NHATS candidates 的准入边界。该注册表只证明“当前哪些材料被拒绝升格”，不证明任何 calibrated model 已成立。
+模型准入候选注册表见 [`human-infra-model-admission-candidate-registry.json`](human-infra-model-admission-candidate-registry.json)，由 `make model-admission-candidate-registry-audit` 检查 8 个 reviewed artifact registers、1314 个 reviewed artifacts、44 个 blocked rows、现有 L3 synthetic / public aggregate baseline 和 blocked L4 NHATS candidates 的准入边界。该注册表只证明“当前哪些材料被拒绝升格”，不证明任何 calibrated model 已成立。
 
 页面级主张一致性账本见 [`human-infra-page-claim-consistency.json`](human-infra-page-claim-consistency.json)，由 `make page-claim-audit` 检查 README、Web 首页、论文页和关键 reference 页面是否都保留同一组 Claim ID 与禁止用途边界。
 

@@ -543,7 +543,7 @@
           "missingEvidence": [
             "B6 reviewed artifacts now define bounded variable, endpoint, uncertainty, transfer-boundary and downgrade artifacts for 24 eligible rows, but no B6 row is admitted as a calibrated model variable.",
             "Twelve B6 manual route-only/bibliographic/summary/companion-lineage/policy-resource rows remain blocked and must not be used as variables.",
-            "B1/B2/B3/B4/B5 reviewed artifacts and B6 reviewed artifacts are governed by the model-admission contract and candidate registry boundaries, but no row is admitted above L1/L2.",
+            "B1/B2/B3/B4/B5/B6 reviewed artifacts are governed by the model-admission contract and candidate registry boundaries, but no row is admitted above L1/L2.",
             "Remaining C2 long-tail domains outside B1/B2/B3/B4/B5/B6 still need reviewed variable, endpoint, uncertainty, transfer-boundary and downgrade artifacts."
           ],
           "nextAction": "Continue later C2 batches and keep all B6 variable/mechanism artifacts out of calibrated model use until model-admission gates pass.",

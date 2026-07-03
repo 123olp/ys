@@ -245,13 +245,19 @@ def validate_decisions(registry: dict[str, Any], contract_paths: list[str], erro
     return total_artifacts, total_blocked
 
 
-def validate_aggregate(registry: dict[str, Any], total_artifacts: int, total_blocked: int, errors: list[str]) -> None:
+def validate_aggregate(
+    registry: dict[str, Any],
+    register_count: int,
+    total_artifacts: int,
+    total_blocked: int,
+    errors: list[str],
+) -> None:
     aggregate = registry.get("aggregateDecision")
     if not isinstance(aggregate, dict):
         fail(errors, "aggregateDecision must be an object")
         return
     expected = {
-        "reviewedArtifactRegisters": 7,
+        "reviewedArtifactRegisters": register_count,
         "reviewedArtifactsCovered": total_artifacts,
         "blockedRowsPreserved": total_blocked,
         "l4AggregateCalibratedAdmissions": 0,
@@ -351,7 +357,7 @@ def main() -> int:
         require_string(registry.get("purpose"), "purpose", errors)
         validate_source_of_truth(registry, contract_paths, errors)
         total_artifacts, total_blocked = validate_decisions(registry, contract_paths, errors)
-        validate_aggregate(registry, total_artifacts, total_blocked, errors)
+        validate_aggregate(registry, len(contract_paths), total_artifacts, total_blocked, errors)
         validate_l3_and_l4(registry, errors)
         validate_abort_and_work_orders(registry, errors)
     validate_index_links(errors)
@@ -361,7 +367,13 @@ def main() -> int:
         for error in errors:
             print(f"- {error}", file=sys.stderr)
         return 1
-    print("model admission candidate registry audit ok: registers=7 artifacts=1170 blocked_rows=32 l4=0 l5=0")
+    aggregate = registry.get("aggregateDecision", {})
+    print(
+        "model admission candidate registry audit ok: "
+        f"registers={aggregate.get('reviewedArtifactRegisters')} "
+        f"artifacts={aggregate.get('reviewedArtifactsCovered')} "
+        f"blocked_rows={aggregate.get('blockedRowsPreserved')} l4=0 l5=0"
+    )
     return 0
 
 

@@ -10,7 +10,7 @@
       "admission levels for narrative evidence, bounded reviewed artifacts, variable candidates, synthetic toy models, aggregate calibrated research models and individual decision support",
       "minimum gates for converting reviewed artifacts into model variables or scenario parameters",
       "hard abort gates that keep evidence out of any model regardless of narrative value",
-      "current repository decision for B1-B5 reviewed artifacts and the life-path model pipeline"
+      "current repository decision for B1-B6 reviewed artifacts and the life-path model pipeline"
     ],
     "excluded": [
       "new statistical estimator",
@@ -37,7 +37,8 @@
       "docs/reference/human-infra-c2-longtail-second-batch-reviewed-card-artifact-register.json",
       "docs/reference/human-infra-c2-longtail-third-batch-reviewed-card-artifact-register.json",
       "docs/reference/human-infra-c2-longtail-fourth-batch-manual-fulltext-reviewed-card-artifact-register.json",
-      "docs/reference/human-infra-c2-longtail-fifth-batch-reviewed-card-artifact-register.json"
+      "docs/reference/human-infra-c2-longtail-fifth-batch-reviewed-card-artifact-register.json",
+      "docs/reference/human-infra-c2-longtail-sixth-batch-reviewed-card-artifact-register.json"
     ]
   },
   "admissionLevels": [
@@ -271,10 +272,10 @@
     "calibratedPredictionAvailable": false,
     "individualUseAllowed": false,
     "currentC2ReviewedArtifactsAdmission": "L1/L2-only",
-    "currentC2ReviewedArtifactsBoundary": "B1-B5 reviewed artifacts can define candidate variables, endpoints, uncertainty channels, transfer boundaries and downgrade triggers, but none is admitted as a calibrated model parameter or intervention effect.",
+    "currentC2ReviewedArtifactsBoundary": "B1-B6 reviewed artifacts can define candidate variables, endpoints, uncertainty channels, transfer boundaries and downgrade triggers, but none is admitted as a calibrated model parameter or intervention effect.",
     "publicMortalityAnchorAdmission": "L3-baseline-plausibility-only",
     "nhatsAdmission": "pre-extraction-protocol-only",
-    "nextDecisionNeeded": "Create a model-admission candidate registry only after selecting a narrow estimand and confirming exact variables, value labels, cohort flow, survey design and disclosure control."
+    "nextDecisionNeeded": "Keep the model-admission candidate registry synchronized as reviewed artifacts expand, but require narrow estimands, governed data, exact variables, cohort flow, survey design and validation before any L4 admission."
   },
   "artifactBridge": {
     "reviewedArtifactDefaultLevel": "L1",
@@ -313,7 +314,7 @@
   "nextWorkOrders": [
     {
       "priority": 1,
-      "item": "Build a model-admission candidate registry that maps selected reviewed artifacts to L1/L2/L3/L4 decisions without opening calibrated admission.",
+      "item": "Keep the model-admission candidate registry synchronized with every reviewed artifact register while preserving L1/L2-only evidence boundaries and calibrated-admission blocks.",
       "unblocks": [
         "MODEL-G2B-model-admission-contract",
         "RESEARCH-G4-variable-mechanism-contracts"

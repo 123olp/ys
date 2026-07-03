@@ -140,8 +140,8 @@ def validate_source_of_truth(contract: dict[str, Any], errors: list[str]) -> Non
         fail(errors, "sourceOfTruth must contain exactly the required keys")
     for key, value in source.items():
         if key == "reviewedArtifactRegisters":
-            if not isinstance(value, list) or len(value) < 7:
-                fail(errors, "sourceOfTruth.reviewedArtifactRegisters must include cumulative and B1-B5 registers")
+            if not isinstance(value, list) or len(value) < 8:
+                fail(errors, "sourceOfTruth.reviewedArtifactRegisters must include cumulative and B1-B6 registers")
                 continue
             for index, item in enumerate(value):
                 repo_path(item, f"sourceOfTruth.reviewedArtifactRegisters[{index}]", errors)
