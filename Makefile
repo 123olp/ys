@@ -60,6 +60,7 @@ check:
 	$(MAKE) c2-longtail-fourth-batch-manual-fulltext-fresh-review-verdict-audit
 	$(MAKE) c2-longtail-fourth-batch-manual-fulltext-reviewed-card-artifact-audit
 	$(MAKE) c2-longtail-fifth-batch-promotion-audit
+	$(MAKE) c2-longtail-sixth-batch-promotion-audit
 	$(MAKE) c2-longtail-fifth-batch-source-extraction-audit
 	$(MAKE) c2-longtail-fifth-batch-source-extraction-register-audit
 	$(MAKE) c2-longtail-fifth-batch-local-review-audit
@@ -256,6 +257,9 @@ c2-longtail-fourth-batch-manual-fulltext-reviewed-card-artifact-audit:
 c2-longtail-fifth-batch-promotion-audit:
 	python3 tools/audit_human_infra_c2_longtail_fifth_batch_promotion_queue.py
 
+c2-longtail-sixth-batch-promotion-audit:
+	python3 tools/audit_human_infra_c2_longtail_sixth_batch_promotion_queue.py
+
 c2-longtail-fifth-batch-source-extraction-audit:
 	python3 tools/audit_human_infra_c2_longtail_fifth_batch_source_extraction_queue.py
 
@@ -370,6 +374,7 @@ tools/audit_human_infra_c2_longtail_fifth_batch_source_resolution_register.py \
 tools/audit_human_infra_c2_longtail_fifth_batch_manual_fulltext_extraction_register.py \
 tools/audit_human_infra_c2_longtail_fifth_batch_independent_fresh_review_verdict_register.py \
 tools/audit_human_infra_c2_longtail_fifth_batch_reviewed_card_artifact_register.py \
+tools/audit_human_infra_c2_longtail_sixth_batch_promotion_queue.py \
 tools/audit_human_infra_domain_source_specific_extraction_queue.py \
 		tools/audit_human_infra_domain_source_specific_extraction_register.py \
 		tools/audit_human_infra_domain_source_card_promotion_queue.py \

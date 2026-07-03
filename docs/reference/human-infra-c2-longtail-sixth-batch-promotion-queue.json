@@ -1,0 +1,1010 @@
+{
+  "schemaVersion": "human-infra.c2-longtail-sixth-batch-promotion-queue.v1",
+  "queueId": "human-infra-c2-longtail-sixth-batch-promotion-queue",
+  "status": "active-sixth-batch-queue-model-blocked",
+  "purpose": "Select the sixth C2 long-tail batch for source-specific review, prioritizing intergenerational continuity, reproductive capacity, early development, maternal-child support and pediatric source-maintenance domains that determine whether subject-continuity can be reproduced, protected and stabilized across life-course transitions.",
+  "sourceOfTruth": {
+    "c2LongtailCoverageRegister": "docs/reference/human-infra-c2-longtail-coverage-register.json",
+    "firstBatchPromotionQueue": "docs/reference/human-infra-c2-longtail-first-batch-promotion-queue.json",
+    "secondBatchPromotionQueue": "docs/reference/human-infra-c2-longtail-second-batch-promotion-queue.json",
+    "thirdBatchPromotionQueue": "docs/reference/human-infra-c2-longtail-third-batch-promotion-queue.json",
+    "fourthBatchPromotionQueue": "docs/reference/human-infra-c2-longtail-fourth-batch-promotion-queue.json",
+    "fifthBatchPromotionQueue": "docs/reference/human-infra-c2-longtail-fifth-batch-promotion-queue.json",
+    "domainClassification": "domains/_possibility-space-control/classification.tsv",
+    "sourceCardSystem": "docs/reference/source-card-system.md",
+    "maturityGapRegister": "docs/reference/human-infra-maturity-gap-register.json",
+    "maturityRoadmap": "docs/reference/human-infra-maturity-roadmap.md"
+  },
+  "scope": {
+    "batchId": "C2-LT-B6",
+    "batchDomainCount": 12,
+    "selectionRule": "Prioritize still-uncovered C2 domains where reproductive capacity, early development, maternal-newborn-child continuity, immunization, environmental toxicity, feeding, lactation and oral-health substrates determine whether the biological source body can be generated, protected and maintained across generations. This is importance/long-horizon/fundamentality oriented, not feasibility, market maturity or intervention hype oriented.",
+    "requiredArtifactClasses": [
+      "domain-claim-evidence-row",
+      "domain-source-card-field-extraction",
+      "domain-source-specific-deep-read",
+      "source-context-local-review",
+      "independent-fresh-review-verdict",
+      "reviewed-source-card",
+      "variable-card",
+      "endpoint-card",
+      "uncertainty-card",
+      "transfer-boundary-card",
+      "downgrade-check"
+    ],
+    "nonClaims": [
+      "This queue does not complete Source Cards.",
+      "This queue does not complete independent fresh review.",
+      "This queue does not upgrade any domain claim.",
+      "This queue does not admit any domain into calibrated prediction.",
+      "This queue does not provide medical, clinical, fertility, pediatric, individual, or intervention-ranking advice.",
+      "This queue does not mark any C2-LT-B1/B2/B3/B4/B5 blocked, downgrade, source-resolution, manual-access or model-blocked row as resolved."
+    ]
+  },
+  "blockedUses": [
+    "calibrated-prediction",
+    "individual-advice",
+    "individual-death-date-output",
+    "intervention-ranking",
+    "clinical-validity-claim",
+    "domain-claim-upgrade"
+  ],
+  "batchRows": [
+    {
+      "batchId": "C2-LT-B6",
+      "priorityRank": 1,
+      "domainId": "maternal-newborn-child-development",
+      "triageBucket": "cellular-molecular-maintenance",
+      "localDomainPath": "domains/c2-source-maintenance/maternal-newborn-child-development",
+      "selectionReason": "孕产、新生儿和儿童早期发展决定主体源体的生成、初始健康、神经发育和长期功能储备，是主体持续性的跨代起点。",
+      "claimSeed": "孕产照护、新生儿照护、早期养育、营养、保护性关系和发展支持会影响死亡风险、发育轨迹、认知能力、疾病负担和长期主体持续性。",
+      "variableSeed": [
+        "maternal-newborn-care-continuity",
+        "early-child-development-support",
+        "nurturing-care-exposure",
+        "developmental-risk-detection",
+        "life-course-reserve-formation"
+      ],
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB6-SRC-01-1",
+          "title": "Nurturing care for early childhood development: a framework for helping children survive and thrive to transform health and human potential.",
+          "url": "https://nurturing-care.org/resources/nurturing-care-framework/",
+          "evidenceRole": "life-course-framework-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03"
+        },
+        {
+          "sourceRefId": "C2LTB6-SRC-01-2",
+          "title": "WHO recommendations on maternal and newborn care for a positive postnatal experience.",
+          "url": "https://www.who.int/publications/i/item/9789240045989",
+          "evidenceRole": "maternal-newborn-guideline-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03"
+        }
+      ],
+      "requiredArtifactClasses": [
+        "domain-claim-evidence-row",
+        "domain-source-card-field-extraction",
+        "domain-source-specific-deep-read",
+        "source-context-local-review",
+        "independent-fresh-review-verdict",
+        "reviewed-source-card",
+        "variable-card",
+        "endpoint-card",
+        "uncertainty-card",
+        "transfer-boundary-card",
+        "downgrade-check"
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-c2-longtail-sixth-batch-source-card-promotion",
+      "nextAction": "Create the domain Claim-Evidence row, then perform Source Card field extraction, source-specific deep read, local source-context review and independent fresh review before any artifact promotion or model admission."
+    },
+    {
+      "batchId": "C2-LT-B6",
+      "priorityRank": 2,
+      "domainId": "reproductive-fertility-continuity",
+      "triageBucket": "developmental-reproductive-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/reproductive-fertility-continuity",
+      "selectionReason": "生育力决定主体持续性是否能跨代延续，也关系到激素、性腺、配子质量、生殖自主和未来选择权。",
+      "claimSeed": "生殖内分泌、配子质量、输卵管/精子因素、年龄相关生育力下降和不孕评估会影响家庭形成、跨代连续性、心理负担和未来选择权。",
+      "variableSeed": [
+        "age-related-fertility-decline",
+        "gamete-quality",
+        "infertility-diagnostic-pathway",
+        "reproductive-autonomy",
+        "time-to-pregnancy"
+      ],
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB6-SRC-02-1",
+          "title": "Infertility.",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/infertility",
+          "evidenceRole": "global-burden-context-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03"
+        },
+        {
+          "sourceRefId": "C2LTB6-SRC-02-2",
+          "title": "Fertility evaluation of infertile women: a committee opinion (2021).",
+          "url": "https://www.asrm.org/practice-guidance/practice-committee-documents/fertility-evaluation-of-infertile-women-a-committee-opinion-2021/",
+          "evidenceRole": "clinical-evaluation-guidance-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03"
+        }
+      ],
+      "requiredArtifactClasses": [
+        "domain-claim-evidence-row",
+        "domain-source-card-field-extraction",
+        "domain-source-specific-deep-read",
+        "source-context-local-review",
+        "independent-fresh-review-verdict",
+        "reviewed-source-card",
+        "variable-card",
+        "endpoint-card",
+        "uncertainty-card",
+        "transfer-boundary-card",
+        "downgrade-check"
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-c2-longtail-sixth-batch-source-card-promotion",
+      "nextAction": "Create the domain Claim-Evidence row, then perform Source Card field extraction, source-specific deep read, local source-context review and independent fresh review before any artifact promotion or model admission."
+    },
+    {
+      "batchId": "C2-LT-B6",
+      "priorityRank": 3,
+      "domainId": "assisted-reproductive-technology-ivf-cycle-continuity",
+      "triageBucket": "developmental-reproductive-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/assisted-reproductive-technology-ivf-cycle-continuity",
+      "selectionReason": "ART/IVF 把生殖限制转换为可执行医疗路径，是跨代持续性从潜在能力进入技术通道的关键节点。",
+      "claimSeed": "辅助生殖周期、胚胎移植策略、成功率报告、并发症和可及性会改变生育机会、时间成本、风险暴露和家庭形成路径。",
+      "variableSeed": [
+        "art-cycle-outcome",
+        "embryo-transfer-practice",
+        "clinic-success-rate-reporting",
+        "multiple-gestation-risk",
+        "reproductive-technology-access"
+      ],
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB6-SRC-03-1",
+          "title": "ART Success Rates.",
+          "url": "https://www.cdc.gov/art/artdata/index.html",
+          "evidenceRole": "surveillance-outcome-reporting-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03"
+        },
+        {
+          "sourceRefId": "C2LTB6-SRC-03-2",
+          "title": "Guidance on the limits to the number of embryos to transfer: a committee opinion (2021).",
+          "url": "https://www.asrm.org/practice-guidance/practice-committee-documents/guidance-on-the-limits-to-the-number-of-embryos-to-transfer-a-committee-opinion-2021/",
+          "evidenceRole": "clinical-risk-boundary-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03"
+        }
+      ],
+      "requiredArtifactClasses": [
+        "domain-claim-evidence-row",
+        "domain-source-card-field-extraction",
+        "domain-source-specific-deep-read",
+        "source-context-local-review",
+        "independent-fresh-review-verdict",
+        "reviewed-source-card",
+        "variable-card",
+        "endpoint-card",
+        "uncertainty-card",
+        "transfer-boundary-card",
+        "downgrade-check"
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-c2-longtail-sixth-batch-source-card-promotion",
+      "nextAction": "Create the domain Claim-Evidence row, then perform Source Card field extraction, source-specific deep read, local source-context review and independent fresh review before any artifact promotion or model admission."
+    },
+    {
+      "batchId": "C2-LT-B6",
+      "priorityRank": 4,
+      "domainId": "primary-ovarian-insufficiency-hormone-fertility-continuity",
+      "triageBucket": "developmental-reproductive-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/primary-ovarian-insufficiency-hormone-fertility-continuity",
+      "selectionReason": "卵巢储备和性激素轴连接生育窗口、骨骼、心代谢、情绪和长期健康，是女性主体持续性的重要源体维护变量。",
+      "claimSeed": "原发性卵巢功能不全会影响生育力、雌激素暴露、骨骼健康、心血管风险、心理负担和长期健康维护路径。",
+      "variableSeed": [
+        "ovarian-reserve",
+        "hypoestrogenism-duration",
+        "fertility-window-loss",
+        "bone-health-risk",
+        "cardiometabolic-risk-coupling"
+      ],
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB6-SRC-04-1",
+          "title": "Evidence-based guideline: Premature Ovarian Insufficiency.",
+          "url": "https://www.eshre.eu/Guidelines-and-Legal/Guidelines/POI",
+          "evidenceRole": "clinical-guideline-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03"
+        },
+        {
+          "sourceRefId": "C2LTB6-SRC-04-2",
+          "title": "Primary Ovarian Insufficiency in Adolescents and Young Women.",
+          "url": "https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2014/07/primary-ovarian-insufficiency-in-adolescents-and-young-women",
+          "evidenceRole": "clinical-guidance-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03"
+        }
+      ],
+      "requiredArtifactClasses": [
+        "domain-claim-evidence-row",
+        "domain-source-card-field-extraction",
+        "domain-source-specific-deep-read",
+        "source-context-local-review",
+        "independent-fresh-review-verdict",
+        "reviewed-source-card",
+        "variable-card",
+        "endpoint-card",
+        "uncertainty-card",
+        "transfer-boundary-card",
+        "downgrade-check"
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-c2-longtail-sixth-batch-source-card-promotion",
+      "nextAction": "Create the domain Claim-Evidence row, then perform Source Card field extraction, source-specific deep read, local source-context review and independent fresh review before any artifact promotion or model admission."
+    },
+    {
+      "batchId": "C2-LT-B6",
+      "priorityRank": 5,
+      "domainId": "polycystic-ovary-syndrome-metabolic-reproductive-continuity",
+      "triageBucket": "developmental-reproductive-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/polycystic-ovary-syndrome-metabolic-reproductive-continuity",
+      "selectionReason": "PCOS 把生殖、代谢、内分泌和心理负担耦合在同一长期系统中，是生育力和代谢健康交叉的高影响源体维护域。",
+      "claimSeed": "PCOS 会影响排卵、生育力、胰岛素抵抗、体重、心代谢风险、心理健康和长期照护需求。",
+      "variableSeed": [
+        "ovulatory-dysfunction",
+        "hyperandrogenism",
+        "insulin-resistance",
+        "metabolic-risk",
+        "fertility-and-mental-health-burden"
+      ],
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB6-SRC-05-1",
+          "title": "Recommendations from the 2023 International Evidence-based Guideline for the Assessment and Management of Polycystic Ovary Syndrome.",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10505534/",
+          "evidenceRole": "international-guideline-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03"
+        },
+        {
+          "sourceRefId": "C2LTB6-SRC-05-2",
+          "title": "International evidence-based guideline for the assessment and management of polycystic ovary syndrome.",
+          "url": "https://www.monash.edu/medicine/mchri/pcos/guideline",
+          "evidenceRole": "guideline-route-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03"
+        }
+      ],
+      "requiredArtifactClasses": [
+        "domain-claim-evidence-row",
+        "domain-source-card-field-extraction",
+        "domain-source-specific-deep-read",
+        "source-context-local-review",
+        "independent-fresh-review-verdict",
+        "reviewed-source-card",
+        "variable-card",
+        "endpoint-card",
+        "uncertainty-card",
+        "transfer-boundary-card",
+        "downgrade-check"
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-c2-longtail-sixth-batch-source-card-promotion",
+      "nextAction": "Create the domain Claim-Evidence row, then perform Source Card field extraction, source-specific deep read, local source-context review and independent fresh review before any artifact promotion or model admission."
+    },
+    {
+      "batchId": "C2-LT-B6",
+      "priorityRank": 6,
+      "domainId": "endometriosis-pelvic-pain-fertility-continuity",
+      "triageBucket": "developmental-reproductive-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/endometriosis-pelvic-pain-fertility-continuity",
+      "selectionReason": "内异症把慢性疼痛、生育力、炎症、手术风险和生活质量连接起来，是长期有效时间与生殖连续性的共同断裂点。",
+      "claimSeed": "子宫内膜异位症会影响盆腔痛、生育力、活动能力、工作学习、心理健康和长期治疗路径。",
+      "variableSeed": [
+        "pelvic-pain-burden",
+        "fertility-impact",
+        "inflammatory-disease-activity",
+        "surgical-treatment-history",
+        "quality-of-life-loss"
+      ],
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB6-SRC-06-1",
+          "title": "ESHRE guideline: endometriosis.",
+          "url": "https://academic.oup.com/hropen/article/2022/2/hoac009/6537540",
+          "evidenceRole": "clinical-guideline-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03"
+        },
+        {
+          "sourceRefId": "C2LTB6-SRC-06-2",
+          "title": "Endometriosis guideline.",
+          "url": "https://www.eshre.eu/Guidelines-and-Legal/Guidelines/Endometriosis-guideline",
+          "evidenceRole": "guideline-route-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03"
+        }
+      ],
+      "requiredArtifactClasses": [
+        "domain-claim-evidence-row",
+        "domain-source-card-field-extraction",
+        "domain-source-specific-deep-read",
+        "source-context-local-review",
+        "independent-fresh-review-verdict",
+        "reviewed-source-card",
+        "variable-card",
+        "endpoint-card",
+        "uncertainty-card",
+        "transfer-boundary-card",
+        "downgrade-check"
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-c2-longtail-sixth-batch-source-card-promotion",
+      "nextAction": "Create the domain Claim-Evidence row, then perform Source Card field extraction, source-specific deep read, local source-context review and independent fresh review before any artifact promotion or model admission."
+    },
+    {
+      "batchId": "C2-LT-B6",
+      "priorityRank": 7,
+      "domainId": "pregnancy-loss-stillbirth-bereavement-continuity",
+      "triageBucket": "developmental-reproductive-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/pregnancy-loss-stillbirth-bereavement-continuity",
+      "selectionReason": "妊娠丧失和死产同时影响生命生成、家庭连续性、心理恢复和未来生育路径，是跨代持续性中的高损失节点。",
+      "claimSeed": "早期妊娠丧失、死产、风险筛查、随访和悲伤支持会影响母体健康、心理恢复、未来生育选择和家庭系统连续性。",
+      "variableSeed": [
+        "pregnancy-loss-event",
+        "stillbirth-risk",
+        "bereavement-support",
+        "future-pregnancy-risk-stratification",
+        "maternal-mental-health-recovery"
+      ],
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB6-SRC-07-1",
+          "title": "Early Pregnancy Loss.",
+          "url": "https://www.acog.org/clinical/clinical-guidance/practice-bulletin/articles/2018/11/early-pregnancy-loss",
+          "evidenceRole": "clinical-guidance-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03"
+        },
+        {
+          "sourceRefId": "C2LTB6-SRC-07-2",
+          "title": "Stillbirth.",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/stillbirth",
+          "evidenceRole": "global-burden-context-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03"
+        }
+      ],
+      "requiredArtifactClasses": [
+        "domain-claim-evidence-row",
+        "domain-source-card-field-extraction",
+        "domain-source-specific-deep-read",
+        "source-context-local-review",
+        "independent-fresh-review-verdict",
+        "reviewed-source-card",
+        "variable-card",
+        "endpoint-card",
+        "uncertainty-card",
+        "transfer-boundary-card",
+        "downgrade-check"
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-c2-longtail-sixth-batch-source-card-promotion",
+      "nextAction": "Create the domain Claim-Evidence row, then perform Source Card field extraction, source-specific deep read, local source-context review and independent fresh review before any artifact promotion or model admission."
+    },
+    {
+      "batchId": "C2-LT-B6",
+      "priorityRank": 8,
+      "domainId": "lactation-breastfeeding-support-continuity",
+      "triageBucket": "oncology-cancer-control",
+      "localDomainPath": "domains/c2-source-maintenance/lactation-breastfeeding-support-continuity",
+      "selectionReason": "哺乳支持连接婴儿营养、免疫保护、母体恢复和家庭任务结构，是早期生命维持与照护连续性的执行接口。",
+      "claimSeed": "母乳喂养、泵奶支持、哺乳困难处理和婴儿营养支持会影响婴儿感染风险、成长发育、母体健康、照护负担和家庭连续性。",
+      "variableSeed": [
+        "exclusive-breastfeeding-duration",
+        "lactation-support-access",
+        "infant-nutrition-continuity",
+        "maternal-postpartum-recovery",
+        "caregiving-burden"
+      ],
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB6-SRC-08-1",
+          "title": "Policy Statement: Breastfeeding and the Use of Human Milk.",
+          "url": "https://publications.aap.org/pediatrics/article/150/1/e2022057988/188347/Policy-Statement-Breastfeeding-and-the-Use-of",
+          "evidenceRole": "clinical-policy-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03"
+        },
+        {
+          "sourceRefId": "C2LTB6-SRC-08-2",
+          "title": "Breastfeeding.",
+          "url": "https://www.who.int/health-topics/breastfeeding",
+          "evidenceRole": "global-public-health-context-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03"
+        }
+      ],
+      "requiredArtifactClasses": [
+        "domain-claim-evidence-row",
+        "domain-source-card-field-extraction",
+        "domain-source-specific-deep-read",
+        "source-context-local-review",
+        "independent-fresh-review-verdict",
+        "reviewed-source-card",
+        "variable-card",
+        "endpoint-card",
+        "uncertainty-card",
+        "transfer-boundary-card",
+        "downgrade-check"
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-c2-longtail-sixth-batch-source-card-promotion",
+      "nextAction": "Create the domain Claim-Evidence row, then perform Source Card field extraction, source-specific deep read, local source-context review and independent fresh review before any artifact promotion or model admission."
+    },
+    {
+      "batchId": "C2-LT-B6",
+      "priorityRank": 9,
+      "domainId": "childhood-immunization-schedule-record-continuity",
+      "triageBucket": "infection-immune-resilience",
+      "localDomainPath": "domains/c2-source-maintenance/childhood-immunization-schedule-record-continuity",
+      "selectionReason": "儿童免疫记录和排程把群体免疫、个体感染风险、学校/照护接入和长期公共卫生保护连接起来。",
+      "claimSeed": "儿童免疫排程、接种记录、补种规则和疫苗可及性会影响传染病风险、群体保护、照护连续性和公共服务接入。",
+      "variableSeed": [
+        "immunization-schedule-adherence",
+        "catch-up-vaccination-status",
+        "vaccine-record-continuity",
+        "preventable-infection-risk",
+        "school-care-access-dependency"
+      ],
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB6-SRC-09-1",
+          "title": "Child and Adolescent Immunization Schedule by Age.",
+          "url": "https://www.cdc.gov/vaccines/hcp/imz-schedules/child-adolescent-age.html",
+          "evidenceRole": "current-schedule-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03"
+        },
+        {
+          "sourceRefId": "C2LTB6-SRC-09-2",
+          "title": "ACIP General Best Practice Guidelines for Immunization.",
+          "url": "https://www.cdc.gov/vaccines/hcp/acip-recs/general-recs/index.html",
+          "evidenceRole": "best-practice-guidance-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03"
+        }
+      ],
+      "requiredArtifactClasses": [
+        "domain-claim-evidence-row",
+        "domain-source-card-field-extraction",
+        "domain-source-specific-deep-read",
+        "source-context-local-review",
+        "independent-fresh-review-verdict",
+        "reviewed-source-card",
+        "variable-card",
+        "endpoint-card",
+        "uncertainty-card",
+        "transfer-boundary-card",
+        "downgrade-check"
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-c2-longtail-sixth-batch-source-card-promotion",
+      "nextAction": "Create the domain Claim-Evidence row, then perform Source Card field extraction, source-specific deep read, local source-context review and independent fresh review before any artifact promotion or model admission."
+    },
+    {
+      "batchId": "C2-LT-B6",
+      "priorityRank": 10,
+      "domainId": "pediatric-lead-screening-environmental-followup-continuity",
+      "triageBucket": "developmental-reproductive-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/pediatric-lead-screening-environmental-followup-continuity",
+      "selectionReason": "儿童铅暴露会长期改变神经发育、学习能力、行为和健康储备，是环境毒性进入主体生成引擎前的源体风险。",
+      "claimSeed": "儿童血铅筛查、环境来源追踪、随访和暴露控制会影响神经发育、认知表现、行为风险和长期能力形成。",
+      "variableSeed": [
+        "blood-lead-level",
+        "environmental-exposure-source",
+        "screening-and-followup-continuity",
+        "neurodevelopmental-risk",
+        "remediation-access"
+      ],
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB6-SRC-10-1",
+          "title": "Recommended Actions Based on Blood Lead Level.",
+          "url": "https://www.cdc.gov/lead-prevention/hcp/clinical-guidance/index.html",
+          "evidenceRole": "clinical-public-health-guidance-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03"
+        },
+        {
+          "sourceRefId": "C2LTB6-SRC-10-2",
+          "title": "Prevention of Childhood Lead Toxicity.",
+          "url": "https://publications.aap.org/pediatrics/article/138/1/e20161493/52617/Prevention-of-Childhood-Lead-Toxicity",
+          "evidenceRole": "pediatric-policy-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03"
+        }
+      ],
+      "requiredArtifactClasses": [
+        "domain-claim-evidence-row",
+        "domain-source-card-field-extraction",
+        "domain-source-specific-deep-read",
+        "source-context-local-review",
+        "independent-fresh-review-verdict",
+        "reviewed-source-card",
+        "variable-card",
+        "endpoint-card",
+        "uncertainty-card",
+        "transfer-boundary-card",
+        "downgrade-check"
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-c2-longtail-sixth-batch-source-card-promotion",
+      "nextAction": "Create the domain Claim-Evidence row, then perform Source Card field extraction, source-specific deep read, local source-context review and independent fresh review before any artifact promotion or model admission."
+    },
+    {
+      "batchId": "C2-LT-B6",
+      "priorityRank": 11,
+      "domainId": "pediatric-feeding-swallowing-development-continuity",
+      "triageBucket": "developmental-reproductive-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/pediatric-feeding-swallowing-development-continuity",
+      "selectionReason": "儿童进食与吞咽把营养进入、气道安全、发育、照护负担和家庭连续性连接起来，是早期源体维护的执行层。",
+      "claimSeed": "儿童喂养困难、吞咽安全、营养摄入、误吸风险和多学科照护会影响生长、发育、感染风险、照护时间和家庭任务负担。",
+      "variableSeed": [
+        "feeding-skill-development",
+        "swallow-safety",
+        "nutrition-intake-continuity",
+        "aspiration-risk",
+        "caregiver-feeding-burden"
+      ],
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB6-SRC-11-1",
+          "title": "Pediatric Feeding and Swallowing.",
+          "url": "https://www.asha.org/practice-portal/clinical-topics/pediatric-feeding-and-swallowing/",
+          "evidenceRole": "clinical-practice-portal-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03"
+        },
+        {
+          "sourceRefId": "C2LTB6-SRC-11-2",
+          "title": "Pediatric Feeding Disorder: Consensus Definition and Conceptual Framework.",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6314510/",
+          "evidenceRole": "conceptual-framework-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03"
+        }
+      ],
+      "requiredArtifactClasses": [
+        "domain-claim-evidence-row",
+        "domain-source-card-field-extraction",
+        "domain-source-specific-deep-read",
+        "source-context-local-review",
+        "independent-fresh-review-verdict",
+        "reviewed-source-card",
+        "variable-card",
+        "endpoint-card",
+        "uncertainty-card",
+        "transfer-boundary-card",
+        "downgrade-check"
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-c2-longtail-sixth-batch-source-card-promotion",
+      "nextAction": "Create the domain Claim-Evidence row, then perform Source Card field extraction, source-specific deep read, local source-context review and independent fresh review before any artifact promotion or model admission."
+    },
+    {
+      "batchId": "C2-LT-B6",
+      "priorityRank": 12,
+      "domainId": "pediatric-oral-health-development-continuity",
+      "triageBucket": "developmental-reproductive-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/pediatric-oral-health-development-continuity",
+      "selectionReason": "儿童口腔健康影响营养、疼痛、睡眠、语言、学习和感染风险，是常被低估的早期发育与有效时间维护域。",
+      "claimSeed": "儿童龋齿、氟化物预防、口腔筛查、疼痛控制和牙科可及性会影响进食、睡眠、学习、感染风险和家庭照护负担。",
+      "variableSeed": [
+        "early-childhood-caries-risk",
+        "fluoride-prevention-access",
+        "oral-pain-burden",
+        "dental-care-continuity",
+        "nutrition-and-school-function-impact"
+      ],
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB6-SRC-12-1",
+          "title": "Prevention of Dental Caries in Children Younger Than 5 Years: Screening and Interventions.",
+          "url": "https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/prevention-of-dental-caries-in-children-younger-than-age-5-years-screening-and-interventions",
+          "evidenceRole": "preventive-service-recommendation-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03"
+        },
+        {
+          "sourceRefId": "C2LTB6-SRC-12-2",
+          "title": "Caries-risk Assessment and Management for Infants, Children, and Adolescents.",
+          "url": "https://www.aapd.org/research/oral-health-policies--recommendations/caries-risk-assessment-and-management-for-infants-children-and-adolescents/",
+          "evidenceRole": "pediatric-dentistry-best-practice-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03"
+        }
+      ],
+      "requiredArtifactClasses": [
+        "domain-claim-evidence-row",
+        "domain-source-card-field-extraction",
+        "domain-source-specific-deep-read",
+        "source-context-local-review",
+        "independent-fresh-review-verdict",
+        "reviewed-source-card",
+        "variable-card",
+        "endpoint-card",
+        "uncertainty-card",
+        "transfer-boundary-card",
+        "downgrade-check"
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-c2-longtail-sixth-batch-source-card-promotion",
+      "nextAction": "Create the domain Claim-Evidence row, then perform Source Card field extraction, source-specific deep read, local source-context review and independent fresh review before any artifact promotion or model admission."
+    }
+  ],
+  "aggregateDecision": {
+    "queuedDomainCount": 12,
+    "candidateSourceCount": 24,
+    "reviewedArtifactCount": 0,
+    "modelAdmissionsOpened": 0,
+    "highestAllowedUse": "candidate-source-routing-only",
+    "nextRequiredGate": "c2-longtail-sixth-batch-source-extraction-queue"
+  }
+}
