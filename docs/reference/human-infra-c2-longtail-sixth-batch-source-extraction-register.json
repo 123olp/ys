@@ -1,0 +1,1130 @@
+{
+  "schemaVersion": "human-infra.c2-longtail-sixth-batch-source-extraction-register.v1",
+  "registerId": "C2-LT-B6-SOURCE-EXTRACTION-REGISTER",
+  "status": "active-c2ltb6-source-extractions-pending-fresh-review",
+  "purpose": "Record completed local source-context field extraction for the sixth C2 long-tail source-extraction queue, covering intergenerational, reproductive, maternal-newborn-child, pediatric immunization, lead-exposure, feeding-swallowing, lactation and pediatric oral-health continuity domains while preserving route/manual-review, guideline lineage and model-admission blocks.",
+  "sourceOfTruth": {
+    "sourceExtractionQueue": "docs/reference/human-infra-c2-longtail-sixth-batch-source-extraction-queue.json",
+    "sourceCardSystem": "docs/reference/source-card-system.md",
+    "maturityGapRegister": "docs/reference/human-infra-maturity-gap-register.json",
+    "maturityRoadmap": "docs/reference/human-infra-maturity-roadmap.md"
+  },
+  "scope": {
+    "batchId": "C2-LT-B6",
+    "queueTaskCount": 24,
+    "extractedTaskCount": 24,
+    "remainingTaskCount": 0,
+    "coveredDomainCount": 12,
+    "selectedTaskIds": [
+      "C2LTB6-EXT-001",
+      "C2LTB6-EXT-002",
+      "C2LTB6-EXT-003",
+      "C2LTB6-EXT-004",
+      "C2LTB6-EXT-005",
+      "C2LTB6-EXT-006",
+      "C2LTB6-EXT-007",
+      "C2LTB6-EXT-008",
+      "C2LTB6-EXT-009",
+      "C2LTB6-EXT-010",
+      "C2LTB6-EXT-011",
+      "C2LTB6-EXT-012",
+      "C2LTB6-EXT-013",
+      "C2LTB6-EXT-014",
+      "C2LTB6-EXT-015",
+      "C2LTB6-EXT-016",
+      "C2LTB6-EXT-017",
+      "C2LTB6-EXT-018",
+      "C2LTB6-EXT-019",
+      "C2LTB6-EXT-020",
+      "C2LTB6-EXT-021",
+      "C2LTB6-EXT-022",
+      "C2LTB6-EXT-023",
+      "C2LTB6-EXT-024"
+    ],
+    "extractionDepth": "source-context-field-extraction-with-official-guideline-fact-sheet-publication-portal-route-manual-review-and-lineage-boundary-flags",
+    "currentLimitations": [
+      "This register completes local source-context field extraction only; it does not complete local review, independent fresh review or reviewed artifact promotion.",
+      "Publisher, guideline landing-page and policy-route records require local review or manual fulltext/source-lineage handling before artifact fill.",
+      "Guidelines, fact sheets, policy statements and practice portals support bounded framing and endpoint vocabulary; they do not calibrate individual prognosis or intervention effects.",
+      "No row authorizes clinical advice, fertility prognosis, pediatric care decisions, lifespan prediction, longevity escape velocity claims or model admission."
+    ]
+  },
+  "sourceAccessNotes": [
+    "All 24 C2-LT-B6 candidate source rows were checked against official WHO, CDC, ASRM, ESHRE, ACOG, AAP, ASHA, USPSTF, AAPD, OUP, Monash or PMC routes on 2026-07-03.",
+    "Publisher or guideline-route rows that may require manual fulltext/source-lineage handling are explicitly marked in sourceAccessStatus rather than treated as fully reviewed evidence.",
+    "PCOS, endometriosis, pediatric feeding disorder and several guideline pages are retained as guideline/consensus/source-route context; source-lineage and duplicate route handling remain future local-review tasks.",
+    "Fact-sheet and health-topic pages are retained for burden, definition and public-health framing only, not for individual effect-size calibration.",
+    "All rows are source-context support only; source existence, official-page availability or article route access does not admit calibrated model parameters."
+  ],
+  "extractedRows": [
+    {
+      "taskId": "C2LTB6-EXT-001",
+      "domainId": "maternal-newborn-child-development",
+      "localDomainPath": "domains/c2-source-maintenance/maternal-newborn-child-development",
+      "sourceRefId": "C2LTB6-SRC-01-1",
+      "sourceTitle": "Nurturing care for early childhood development: a framework for helping children survive and thrive to transform health and human potential.",
+      "sourceUrl": "https://nurturing-care.org/resources/nurturing-care-framework/",
+      "extractionStatus": "completed-c2ltb6-source-context-extraction",
+      "sourceAccessStatus": "official-framework-page-pdf-route-available",
+      "sourceRole": "nurturing-care-early-child-development-framework-anchor",
+      "exactClaimUse": "Can support source-context framing that nurturing care integrates health, nutrition, responsive caregiving, safety/security and early learning as life-course conditions for children to survive, thrive and develop human potential.",
+      "endpointDefinition": "Candidate endpoints include nurturing-care exposure, early-childhood development support, caregiver responsiveness, nutrition support, safety/security context, early learning exposure and survival/thrive framing.",
+      "populationOrSetting": "Children from preconception through early childhood, caregivers, families and systems that shape early development; global framework context rather than trial evidence.",
+      "effectOrMechanismSignal": "Mechanism signal is ecological and developmental: early life inputs shape survival, brain development, cognitive reserve, social-emotional capacity and later functioning.",
+      "uncertaintyOrBias": "Framework-level synthesis; it does not estimate causal effect sizes for a single intervention or individual child trajectory.",
+      "transferBoundary": "Transfer only to C2 life-course reserve and early development domain framing; do not use as proof of one intervention improving lifespan or cognition.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis or individual death-date output",
+        "source is used beyond its guideline, fact-sheet, review, recommendation, clinical-context, public-health or developmental-framework role without local review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population boundary and transfer boundary needed for bounded artifact fill",
+        "source is used to claim human longevity escape velocity, effective immortality, lifespan extension or calibrated Human Infra model admission"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 maternal-newborn-child development and life-course reserve extraction register",
+        "variables": [
+          "maternal-newborn-care-continuity",
+          "early-child-development-support",
+          "nurturing-care-exposure",
+          "developmental-risk-detection",
+          "life-course-reserve-formation"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, then independent fresh review, before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, preserve route/manual-review and source-lineage boundaries, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB6-EXT-002",
+      "domainId": "maternal-newborn-child-development",
+      "localDomainPath": "domains/c2-source-maintenance/maternal-newborn-child-development",
+      "sourceRefId": "C2LTB6-SRC-01-2",
+      "sourceTitle": "WHO recommendations on maternal and newborn care for a positive postnatal experience.",
+      "sourceUrl": "https://www.who.int/publications/i/item/9789240045989",
+      "extractionStatus": "completed-c2ltb6-source-context-extraction",
+      "sourceAccessStatus": "who-publication-page-guideline-route-available",
+      "sourceRole": "positive-postnatal-care-recommendation-anchor",
+      "exactClaimUse": "Can support source-context framing that postnatal care should address women, newborns and families through positive care experience, assessment, support, counselling and follow-up rather than only survival events.",
+      "endpointDefinition": "Candidate endpoints include maternal postnatal follow-up, newborn assessment, breastfeeding support, mental-health/referral support, danger-sign recognition and service-continuity touchpoints.",
+      "populationOrSetting": "Women and newborns after birth, families and postnatal service systems; global WHO recommendation context.",
+      "effectOrMechanismSignal": "Mechanism signal is service-continuity and early-risk detection: repeated assessment, support and referral reduce missed deterioration and support recovery and caregiving.",
+      "uncertaintyOrBias": "Guideline recommendations depend on local implementation capacity, evidence grading and health-system context; they do not calibrate individual mortality or developmental outcomes.",
+      "transferBoundary": "Transfer only to postnatal-care continuity and endpoint vocabulary; do not use as individualized postpartum or newborn care advice.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis or individual death-date output",
+        "source is used beyond its guideline, fact-sheet, review, recommendation, clinical-context, public-health or developmental-framework role without local review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population boundary and transfer boundary needed for bounded artifact fill",
+        "source is used to claim human longevity escape velocity, effective immortality, lifespan extension or calibrated Human Infra model admission"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 maternal-newborn-child development and postnatal continuity extraction register",
+        "variables": [
+          "maternal-newborn-care-continuity",
+          "early-child-development-support",
+          "nurturing-care-exposure",
+          "developmental-risk-detection",
+          "life-course-reserve-formation"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, then independent fresh review, before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, preserve route/manual-review and source-lineage boundaries, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB6-EXT-003",
+      "domainId": "reproductive-fertility-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/reproductive-fertility-continuity",
+      "sourceRefId": "C2LTB6-SRC-02-1",
+      "sourceTitle": "Infertility.",
+      "sourceUrl": "https://www.who.int/news-room/fact-sheets/detail/infertility",
+      "extractionStatus": "completed-c2ltb6-source-context-extraction",
+      "sourceAccessStatus": "who-fact-sheet-page-accessible",
+      "sourceRole": "infertility-burden-definition-anchor",
+      "exactClaimUse": "Can support source-context framing that infertility is a reproductive-system condition involving failure to achieve pregnancy after a defined period of regular unprotected intercourse and that it affects reproductive autonomy, social burden and access needs.",
+      "endpointDefinition": "Candidate endpoints include infertility status, time-to-pregnancy, access to fertility care, reproductive autonomy, psychosocial burden and service availability.",
+      "populationOrSetting": "People and couples of reproductive age experiencing infertility or fertility-care needs; global public-health fact-sheet context.",
+      "effectOrMechanismSignal": "Mechanism signal is pathway-level: infertility changes family-formation options, time cost, psychological burden, social consequences and demand for diagnostic or treatment services.",
+      "uncertaintyOrBias": "Fact-sheet synthesis does not identify an individual cause or treatment response and may aggregate heterogeneous male, female, combined and unexplained infertility pathways.",
+      "transferBoundary": "Transfer only to burden, definition and service-access framing; do not use for diagnosis, treatment selection or ART success prediction.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis or individual death-date output",
+        "source is used beyond its guideline, fact-sheet, review, recommendation, clinical-context, public-health or developmental-framework role without local review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population boundary and transfer boundary needed for bounded artifact fill",
+        "source is used to claim human longevity escape velocity, effective immortality, lifespan extension or calibrated Human Infra model admission"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 reproductive fertility continuity and reproductive autonomy extraction register",
+        "variables": [
+          "age-related-fertility-decline",
+          "gamete-quality",
+          "infertility-diagnostic-pathway",
+          "reproductive-autonomy",
+          "time-to-pregnancy"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, then independent fresh review, before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, preserve route/manual-review and source-lineage boundaries, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB6-EXT-004",
+      "domainId": "reproductive-fertility-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/reproductive-fertility-continuity",
+      "sourceRefId": "C2LTB6-SRC-02-2",
+      "sourceTitle": "Fertility evaluation of infertile women: a committee opinion (2021).",
+      "sourceUrl": "https://www.asrm.org/practice-guidance/practice-committee-documents/fertility-evaluation-of-infertile-women-a-committee-opinion-2021/",
+      "extractionStatus": "completed-c2ltb6-source-context-extraction",
+      "sourceAccessStatus": "asrm-committee-opinion-page-accessible",
+      "sourceRole": "female-infertility-evaluation-guideline-anchor",
+      "exactClaimUse": "Can support source-context framing that infertility evaluation should be structured around history, ovulatory function, ovarian reserve, uterine/tubal factors and partner/semen factors with timing shaped by age and clinical context.",
+      "endpointDefinition": "Candidate endpoints include infertility-evaluation completion, ovarian reserve markers, ovulatory dysfunction, tubal/uterine factor assessment, semen-analysis linkage and time-to-evaluation.",
+      "populationOrSetting": "Women or couples undergoing infertility evaluation in reproductive-medicine settings; committee-opinion context, not population screening.",
+      "effectOrMechanismSignal": "Mechanism signal is diagnostic-channel continuity: timely structured evaluation reduces wasted time and distinguishes actionable reproductive-pathway constraints.",
+      "uncertaintyOrBias": "Committee opinion requires clinical interpretation and does not by itself predict pregnancy, live birth or intervention benefit.",
+      "transferBoundary": "Transfer only to diagnostic-pathway and variable-card framing; do not use for personal testing or treatment recommendations.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis or individual death-date output",
+        "source is used beyond its guideline, fact-sheet, review, recommendation, clinical-context, public-health or developmental-framework role without local review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population boundary and transfer boundary needed for bounded artifact fill",
+        "source is used to claim human longevity escape velocity, effective immortality, lifespan extension or calibrated Human Infra model admission"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 reproductive fertility continuity diagnostic pathway extraction register",
+        "variables": [
+          "age-related-fertility-decline",
+          "gamete-quality",
+          "infertility-diagnostic-pathway",
+          "reproductive-autonomy",
+          "time-to-pregnancy"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, then independent fresh review, before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, preserve route/manual-review and source-lineage boundaries, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB6-EXT-005",
+      "domainId": "assisted-reproductive-technology-ivf-cycle-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/assisted-reproductive-technology-ivf-cycle-continuity",
+      "sourceRefId": "C2LTB6-SRC-03-1",
+      "sourceTitle": "ART Success Rates.",
+      "sourceUrl": "https://www.cdc.gov/art/artdata/index.html",
+      "extractionStatus": "completed-c2ltb6-source-context-extraction",
+      "sourceAccessStatus": "cdc-art-data-portal-accessible",
+      "sourceRole": "art-success-rate-reporting-data-system-anchor",
+      "exactClaimUse": "Can support source-context framing that ART outcomes are publicly reported through clinic/year/cycle-specific success-rate data, making ART a conversion-channel where reproductive technology access, reporting and outcome definitions matter.",
+      "endpointDefinition": "Candidate endpoints include ART cycles, transfers, pregnancies, live births, patient age groups, embryo use, clinic reporting and success-rate denominators.",
+      "populationOrSetting": "US ART clinics and patients represented in CDC ART reporting systems; registry/reporting context rather than randomized evidence.",
+      "effectOrMechanismSignal": "Mechanism signal is transparency and conversion: standardized reporting turns fertility treatment into comparable service outcomes but remains sensitive to case mix and reporting definitions.",
+      "uncertaintyOrBias": "Success rates are clinic-, year-, age- and patient-mix dependent; they are not transferable to individual prognosis without clinical context.",
+      "transferBoundary": "Transfer only to ART reporting, endpoint definition and access-channel modeling; do not use for clinic ranking or individual success prediction.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis or individual death-date output",
+        "source is used beyond its guideline, fact-sheet, review, recommendation, clinical-context, public-health or developmental-framework role without local review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population boundary and transfer boundary needed for bounded artifact fill",
+        "source is used to claim human longevity escape velocity, effective immortality, lifespan extension or calibrated Human Infra model admission"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 assisted reproductive technology outcome-reporting extraction register",
+        "variables": [
+          "art-cycle-outcome",
+          "embryo-transfer-practice",
+          "clinic-success-rate-reporting",
+          "multiple-gestation-risk",
+          "reproductive-technology-access"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, then independent fresh review, before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, preserve route/manual-review and source-lineage boundaries, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB6-EXT-006",
+      "domainId": "assisted-reproductive-technology-ivf-cycle-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/assisted-reproductive-technology-ivf-cycle-continuity",
+      "sourceRefId": "C2LTB6-SRC-03-2",
+      "sourceTitle": "Guidance on the limits to the number of embryos to transfer: a committee opinion (2021).",
+      "sourceUrl": "https://www.asrm.org/practice-guidance/practice-committee-documents/guidance-on-the-limits-to-the-number-of-embryos-to-transfer-a-committee-opinion-2021/",
+      "extractionStatus": "completed-c2ltb6-source-context-extraction",
+      "sourceAccessStatus": "asrm-committee-opinion-page-accessible",
+      "sourceRole": "embryo-transfer-limit-risk-governance-anchor",
+      "exactClaimUse": "Can support source-context framing that embryo transfer number limits are a risk-governance interface balancing pregnancy opportunity against multiple-gestation and maternal-fetal risks.",
+      "endpointDefinition": "Candidate endpoints include number of embryos transferred, blastocyst/cleavage-stage context, prognosis group, multiple gestation, live birth and maternal-fetal complication risk.",
+      "populationOrSetting": "Patients undergoing ART embryo transfer in reproductive-medicine settings; committee-opinion context.",
+      "effectOrMechanismSignal": "Mechanism signal is risk tradeoff: transfer strategy changes probability of pregnancy and risk of multiples, thereby affecting reproductive technology safety and family-continuity burden.",
+      "uncertaintyOrBias": "Recommendations depend on embryo quality, prognosis, age, prior outcomes and local standards; not a universal numeric rule for all patients.",
+      "transferBoundary": "Transfer only to ART risk-governance and endpoint framing; do not use for personal embryo-transfer decisions.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis or individual death-date output",
+        "source is used beyond its guideline, fact-sheet, review, recommendation, clinical-context, public-health or developmental-framework role without local review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population boundary and transfer boundary needed for bounded artifact fill",
+        "source is used to claim human longevity escape velocity, effective immortality, lifespan extension or calibrated Human Infra model admission"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 assisted reproductive technology risk-governance extraction register",
+        "variables": [
+          "art-cycle-outcome",
+          "embryo-transfer-practice",
+          "clinic-success-rate-reporting",
+          "multiple-gestation-risk",
+          "reproductive-technology-access"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, then independent fresh review, before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, preserve route/manual-review and source-lineage boundaries, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB6-EXT-007",
+      "domainId": "primary-ovarian-insufficiency-hormone-fertility-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/primary-ovarian-insufficiency-hormone-fertility-continuity",
+      "sourceRefId": "C2LTB6-SRC-04-1",
+      "sourceTitle": "Evidence-based guideline: Premature Ovarian Insufficiency.",
+      "sourceUrl": "https://www.eshre.eu/Guidelines-and-Legal/Guidelines/POI",
+      "extractionStatus": "completed-c2ltb6-source-context-extraction",
+      "sourceAccessStatus": "eshre-guideline-landing-page-pdf-route-available",
+      "sourceRole": "premature-ovarian-insufficiency-guideline-anchor",
+      "exactClaimUse": "Can support source-context framing that premature ovarian insufficiency is a multi-system reproductive-endocrine condition affecting fertility, hypoestrogenism exposure, bone health, cardiovascular/metabolic context, psychosocial burden and follow-up needs.",
+      "endpointDefinition": "Candidate endpoints include POI diagnosis, amenorrhea/oligomenorrhea, FSH/estradiol context, ovarian reserve, fertility impact, bone health and cardiometabolic risk monitoring.",
+      "populationOrSetting": "Women and adolescents with suspected or diagnosed POI; international guideline context.",
+      "effectOrMechanismSignal": "Mechanism signal is hormone-axis and reserve failure: loss of ovarian function affects reproductive options and non-reproductive source-maintenance systems through prolonged hypoestrogenism.",
+      "uncertaintyOrBias": "Guideline landing route requires local full guideline review for exact recommendation strength and does not predict individual fertility or disease risk.",
+      "transferBoundary": "Transfer only to POI variable and care-pathway framing; do not use for diagnosis, hormone therapy advice or fertility prognosis.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis or individual death-date output",
+        "source is used beyond its guideline, fact-sheet, review, recommendation, clinical-context, public-health or developmental-framework role without local review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population boundary and transfer boundary needed for bounded artifact fill",
+        "source is used to claim human longevity escape velocity, effective immortality, lifespan extension or calibrated Human Infra model admission"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 primary ovarian insufficiency hormone-fertility extraction register",
+        "variables": [
+          "ovarian-reserve",
+          "hypoestrogenism-duration",
+          "fertility-window-loss",
+          "bone-health-risk",
+          "cardiometabolic-risk-coupling"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, then independent fresh review, before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, preserve route/manual-review and source-lineage boundaries, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB6-EXT-008",
+      "domainId": "primary-ovarian-insufficiency-hormone-fertility-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/primary-ovarian-insufficiency-hormone-fertility-continuity",
+      "sourceRefId": "C2LTB6-SRC-04-2",
+      "sourceTitle": "Primary Ovarian Insufficiency in Adolescents and Young Women.",
+      "sourceUrl": "https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2014/07/primary-ovarian-insufficiency-in-adolescents-and-young-women",
+      "extractionStatus": "completed-c2ltb6-source-context-extraction",
+      "sourceAccessStatus": "acog-official-committee-opinion-page-route-manual-fulltext-needed",
+      "sourceRole": "adolescent-young-women-poi-clinical-context-anchor",
+      "exactClaimUse": "Can support source-context framing that primary ovarian insufficiency in adolescents and young women requires attention to puberty/reproductive development, estrogen deficiency consequences, fertility concerns and long-term health maintenance.",
+      "endpointDefinition": "Candidate endpoints include adolescent/young-woman POI status, menstrual disruption, estrogen deficiency, bone health, fertility counselling, psychological impact and longitudinal follow-up.",
+      "populationOrSetting": "Adolescents and young women with POI in obstetric-gynecologic clinical settings; ACOG committee-opinion route.",
+      "effectOrMechanismSignal": "Mechanism signal is developmental timing: early ovarian failure compresses fertility windows and creates prolonged hormone-deficiency exposure during critical life stages.",
+      "uncertaintyOrBias": "Publisher route may require manual full-text confirmation of exact wording and current status; do not treat as calibrated risk evidence.",
+      "transferBoundary": "Transfer only to age-specific POI boundary and follow-up framing until full-text/source review is complete.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis or individual death-date output",
+        "source is used beyond its guideline, fact-sheet, review, recommendation, clinical-context, public-health or developmental-framework role without local review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population boundary and transfer boundary needed for bounded artifact fill",
+        "source is used to claim human longevity escape velocity, effective immortality, lifespan extension or calibrated Human Infra model admission"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 primary ovarian insufficiency adolescent-continuity extraction register",
+        "variables": [
+          "ovarian-reserve",
+          "hypoestrogenism-duration",
+          "fertility-window-loss",
+          "bone-health-risk",
+          "cardiometabolic-risk-coupling"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, then independent fresh review, before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, preserve route/manual-review and source-lineage boundaries, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB6-EXT-009",
+      "domainId": "polycystic-ovary-syndrome-metabolic-reproductive-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/polycystic-ovary-syndrome-metabolic-reproductive-continuity",
+      "sourceRefId": "C2LTB6-SRC-05-1",
+      "sourceTitle": "Recommendations from the 2023 International Evidence-based Guideline for the Assessment and Management of Polycystic Ovary Syndrome.",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10505534/",
+      "extractionStatus": "completed-c2ltb6-source-context-extraction",
+      "sourceAccessStatus": "pmc-open-fulltext-article-accessible",
+      "sourceRole": "pcos-2023-evidence-based-guideline-recommendation-anchor",
+      "exactClaimUse": "Can support source-context framing that PCOS assessment and management spans reproductive, metabolic, dermatologic, psychological and lifelong health domains rather than only fertility.",
+      "endpointDefinition": "Candidate endpoints include ovulatory dysfunction, hyperandrogenism, metabolic risk, insulin resistance, weight context, fertility outcomes, psychological burden and quality-of-life impact.",
+      "populationOrSetting": "Adolescents and adults with PCOS or suspected PCOS; international evidence-based guideline recommendation context.",
+      "effectOrMechanismSignal": "Mechanism signal is multi-axis endocrine-metabolic disruption: reproductive dysfunction and metabolic/psychological burdens interact over the life course.",
+      "uncertaintyOrBias": "Guideline recommendations synthesize heterogeneous evidence and require phenotype-, age- and context-specific interpretation.",
+      "transferBoundary": "Transfer only to PCOS multi-domain variable/endpoint framing; do not use to rank treatments or predict individual fertility/metabolic outcomes.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis or individual death-date output",
+        "source is used beyond its guideline, fact-sheet, review, recommendation, clinical-context, public-health or developmental-framework role without local review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population boundary and transfer boundary needed for bounded artifact fill",
+        "source is used to claim human longevity escape velocity, effective immortality, lifespan extension or calibrated Human Infra model admission"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 PCOS metabolic-reproductive continuity extraction register",
+        "variables": [
+          "ovulatory-dysfunction",
+          "hyperandrogenism",
+          "insulin-resistance",
+          "metabolic-risk",
+          "fertility-and-mental-health-burden"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, then independent fresh review, before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, preserve route/manual-review and source-lineage boundaries, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB6-EXT-010",
+      "domainId": "polycystic-ovary-syndrome-metabolic-reproductive-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/polycystic-ovary-syndrome-metabolic-reproductive-continuity",
+      "sourceRefId": "C2LTB6-SRC-05-2",
+      "sourceTitle": "International evidence-based guideline for the assessment and management of polycystic ovary syndrome.",
+      "sourceUrl": "https://www.monash.edu/medicine/mchri/pcos/guideline",
+      "extractionStatus": "completed-c2ltb6-source-context-extraction",
+      "sourceAccessStatus": "monash-guideline-landing-page-accessible",
+      "sourceRole": "pcos-guideline-implementation-route-anchor",
+      "exactClaimUse": "Can support source-context framing that PCOS has an international guideline infrastructure, with assessment, management and implementation resources organized around reproductive, metabolic and psychological domains.",
+      "endpointDefinition": "Candidate endpoints include guideline implementation availability, diagnostic criteria route, metabolic screening, fertility management, lifestyle/psychological support and patient-centered care resources.",
+      "populationOrSetting": "Clinicians, patients and systems implementing the international PCOS guideline; guideline platform context.",
+      "effectOrMechanismSignal": "Mechanism signal is translation infrastructure: a guideline platform converts evidence into care pathways, decision support and patient-facing resources.",
+      "uncertaintyOrBias": "Landing page is a route/source-system anchor; exact recommendations require associated guideline document review.",
+      "transferBoundary": "Transfer only to guideline infrastructure and implementation-channel framing; do not count independently from the underlying guideline evidence without lineage handling.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis or individual death-date output",
+        "source is used beyond its guideline, fact-sheet, review, recommendation, clinical-context, public-health or developmental-framework role without local review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population boundary and transfer boundary needed for bounded artifact fill",
+        "source is used to claim human longevity escape velocity, effective immortality, lifespan extension or calibrated Human Infra model admission"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 PCOS guideline translation and implementation extraction register",
+        "variables": [
+          "ovulatory-dysfunction",
+          "hyperandrogenism",
+          "insulin-resistance",
+          "metabolic-risk",
+          "fertility-and-mental-health-burden"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, then independent fresh review, before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, preserve route/manual-review and source-lineage boundaries, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB6-EXT-011",
+      "domainId": "endometriosis-pelvic-pain-fertility-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/endometriosis-pelvic-pain-fertility-continuity",
+      "sourceRefId": "C2LTB6-SRC-06-1",
+      "sourceTitle": "ESHRE guideline: endometriosis.",
+      "sourceUrl": "https://academic.oup.com/hropen/article/2022/2/hoac009/6537540",
+      "extractionStatus": "completed-c2ltb6-source-context-extraction",
+      "sourceAccessStatus": "open-access-guideline-article-accessible",
+      "sourceRole": "eshre-endometriosis-guideline-article-anchor",
+      "exactClaimUse": "Can support source-context framing that endometriosis care spans diagnosis, pain, infertility, recurrence, surgery/medical therapy, adolescence and quality-of-life domains.",
+      "endpointDefinition": "Candidate endpoints include pelvic pain, infertility, diagnostic delay, lesion/disease context, surgery/medical treatment pathway, recurrence and quality-of-life burden.",
+      "populationOrSetting": "People with suspected or confirmed endometriosis across reproductive-age and special-population contexts; ESHRE guideline article.",
+      "effectOrMechanismSignal": "Mechanism signal is chronic inflammatory/pain and fertility-pathway burden that reduces effective time, mobility, work/learning participation and reproductive options.",
+      "uncertaintyOrBias": "Guideline-level evidence varies by recommendation and does not calibrate individual pain, fertility or recurrence trajectories.",
+      "transferBoundary": "Transfer only to endometriosis domain, endpoint and care-pathway framing; do not use for individual management choices.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis or individual death-date output",
+        "source is used beyond its guideline, fact-sheet, review, recommendation, clinical-context, public-health or developmental-framework role without local review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population boundary and transfer boundary needed for bounded artifact fill",
+        "source is used to claim human longevity escape velocity, effective immortality, lifespan extension or calibrated Human Infra model admission"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 endometriosis pain-fertility continuity extraction register",
+        "variables": [
+          "pelvic-pain-burden",
+          "fertility-impact",
+          "inflammatory-disease-activity",
+          "surgical-treatment-history",
+          "quality-of-life-loss"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, then independent fresh review, before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, preserve route/manual-review and source-lineage boundaries, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB6-EXT-012",
+      "domainId": "endometriosis-pelvic-pain-fertility-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/endometriosis-pelvic-pain-fertility-continuity",
+      "sourceRefId": "C2LTB6-SRC-06-2",
+      "sourceTitle": "Endometriosis guideline.",
+      "sourceUrl": "https://www.eshre.eu/Guidelines-and-Legal/Guidelines/Endometriosis-guideline",
+      "extractionStatus": "completed-c2ltb6-source-context-extraction",
+      "sourceAccessStatus": "eshre-guideline-landing-page-pdf-route-available",
+      "sourceRole": "endometriosis-guideline-route-anchor",
+      "exactClaimUse": "Can support source-context framing that ESHRE maintains a dedicated endometriosis guideline route for diagnosis and management evidence, indicating a formal evidence-to-practice channel for this chronic condition.",
+      "endpointDefinition": "Candidate endpoints include guideline availability, diagnostic pathway, pain management, infertility care, recurrence prevention and special-population considerations.",
+      "populationOrSetting": "Clinicians, patients and systems using ESHRE endometriosis guidance; guideline route rather than independent primary evidence.",
+      "effectOrMechanismSignal": "Mechanism signal is care-channel continuity: formal guideline route supports standardized decisions and reduces unmanaged chronic burden.",
+      "uncertaintyOrBias": "Landing page duplicates/points to the guideline article and should be handled as source-lineage, not independent evidence count.",
+      "transferBoundary": "Transfer only to route/provenance and implementation framing; do not double-count with the OUP guideline article.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis or individual death-date output",
+        "source is used beyond its guideline, fact-sheet, review, recommendation, clinical-context, public-health or developmental-framework role without local review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population boundary and transfer boundary needed for bounded artifact fill",
+        "source is used to claim human longevity escape velocity, effective immortality, lifespan extension or calibrated Human Infra model admission"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 endometriosis guideline provenance extraction register",
+        "variables": [
+          "pelvic-pain-burden",
+          "fertility-impact",
+          "inflammatory-disease-activity",
+          "surgical-treatment-history",
+          "quality-of-life-loss"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, then independent fresh review, before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, preserve route/manual-review and source-lineage boundaries, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB6-EXT-013",
+      "domainId": "pregnancy-loss-stillbirth-bereavement-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/pregnancy-loss-stillbirth-bereavement-continuity",
+      "sourceRefId": "C2LTB6-SRC-07-1",
+      "sourceTitle": "Early Pregnancy Loss.",
+      "sourceUrl": "https://www.acog.org/clinical/clinical-guidance/practice-bulletin/articles/2018/11/early-pregnancy-loss",
+      "extractionStatus": "completed-c2ltb6-source-context-extraction",
+      "sourceAccessStatus": "acog-practice-bulletin-page-route-manual-fulltext-needed",
+      "sourceRole": "early-pregnancy-loss-clinical-guidance-anchor",
+      "exactClaimUse": "Can support source-context framing that early pregnancy loss is a common reproductive event requiring diagnostic certainty, management options and follow-up that affect physical recovery, future fertility planning and psychological burden.",
+      "endpointDefinition": "Candidate endpoints include early pregnancy loss, ultrasound/diagnostic criteria, expectant/medical/surgical management route, follow-up completion, complications and emotional support needs.",
+      "populationOrSetting": "Pregnant patients experiencing suspected or confirmed early pregnancy loss; ACOG practice-bulletin route.",
+      "effectOrMechanismSignal": "Mechanism signal is acute reproductive-loss recovery: correct diagnosis and management preserve safety, reduce complications and support future reproductive choice.",
+      "uncertaintyOrBias": "ACOG route may require manual full-text confirmation and updates; cannot be used for individual diagnosis or management.",
+      "transferBoundary": "Transfer only to pregnancy-loss pathway framing and endpoint vocabulary until full-text review is complete.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis or individual death-date output",
+        "source is used beyond its guideline, fact-sheet, review, recommendation, clinical-context, public-health or developmental-framework role without local review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population boundary and transfer boundary needed for bounded artifact fill",
+        "source is used to claim human longevity escape velocity, effective immortality, lifespan extension or calibrated Human Infra model admission"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 pregnancy-loss recovery and future-choice extraction register",
+        "variables": [
+          "pregnancy-loss-event",
+          "stillbirth-risk",
+          "bereavement-support",
+          "future-pregnancy-risk-stratification",
+          "maternal-mental-health-recovery"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, then independent fresh review, before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, preserve route/manual-review and source-lineage boundaries, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB6-EXT-014",
+      "domainId": "pregnancy-loss-stillbirth-bereavement-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/pregnancy-loss-stillbirth-bereavement-continuity",
+      "sourceRefId": "C2LTB6-SRC-07-2",
+      "sourceTitle": "Stillbirth.",
+      "sourceUrl": "https://www.who.int/news-room/fact-sheets/detail/stillbirth",
+      "extractionStatus": "completed-c2ltb6-source-context-extraction",
+      "sourceAccessStatus": "who-fact-sheet-page-accessible",
+      "sourceRole": "stillbirth-burden-risk-factor-public-health-anchor",
+      "exactClaimUse": "Can support source-context framing that stillbirth is a major adverse pregnancy outcome with preventable components and large family, health-system and bereavement consequences.",
+      "endpointDefinition": "Candidate endpoints include stillbirth rate, gestational-age definition context, intrapartum/antepartum context, risk factors, care quality, prevention and bereavement burden.",
+      "populationOrSetting": "Pregnancies, families and health systems globally; WHO public-health fact-sheet context.",
+      "effectOrMechanismSignal": "Mechanism signal is maternal-fetal and system-continuity failure: antenatal/intrapartum care quality, risk recognition and timely intervention affect fetal death risk and family continuity.",
+      "uncertaintyOrBias": "Fact-sheet estimates and global framing do not predict individual pregnancy risk; definitions and surveillance quality vary by setting.",
+      "transferBoundary": "Transfer only to burden, prevention-system and bereavement framing; do not use for personal risk estimation.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis or individual death-date output",
+        "source is used beyond its guideline, fact-sheet, review, recommendation, clinical-context, public-health or developmental-framework role without local review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population boundary and transfer boundary needed for bounded artifact fill",
+        "source is used to claim human longevity escape velocity, effective immortality, lifespan extension or calibrated Human Infra model admission"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 stillbirth prevention and bereavement continuity extraction register",
+        "variables": [
+          "pregnancy-loss-event",
+          "stillbirth-risk",
+          "bereavement-support",
+          "future-pregnancy-risk-stratification",
+          "maternal-mental-health-recovery"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, then independent fresh review, before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, preserve route/manual-review and source-lineage boundaries, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB6-EXT-015",
+      "domainId": "lactation-breastfeeding-support-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/lactation-breastfeeding-support-continuity",
+      "sourceRefId": "C2LTB6-SRC-08-1",
+      "sourceTitle": "Policy Statement: Breastfeeding and the Use of Human Milk.",
+      "sourceUrl": "https://publications.aap.org/pediatrics/article/150/1/e2022057988/188347/Policy-Statement-Breastfeeding-and-the-Use-of",
+      "extractionStatus": "completed-c2ltb6-source-context-extraction",
+      "sourceAccessStatus": "aap-policy-article-publisher-route-accessible-manual-review-needed",
+      "sourceRole": "aap-breastfeeding-human-milk-policy-anchor",
+      "exactClaimUse": "Can support source-context framing that breastfeeding and human milk are pediatric health and development supports, and that systems should protect, promote and support lactation over time.",
+      "endpointDefinition": "Candidate endpoints include breastfeeding initiation, exclusivity/duration, human-milk exposure, infant infection/growth outcomes, maternal health context, lactation support access and barriers.",
+      "populationOrSetting": "Infants, lactating parents, families, pediatric clinicians and health systems; AAP policy statement context.",
+      "effectOrMechanismSignal": "Mechanism signal is nutrition-immunity-caregiving continuity: human milk and lactation support affect infant exposures, feeding security, caregiver burden and maternal-infant health context.",
+      "uncertaintyOrBias": "Policy-level synthesis; exact recommendation strength and local implementation require full article review and does not override individual feeding constraints.",
+      "transferBoundary": "Transfer only to lactation support, infant nutrition continuity and policy framing; do not use to judge individual feeding choices.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis or individual death-date output",
+        "source is used beyond its guideline, fact-sheet, review, recommendation, clinical-context, public-health or developmental-framework role without local review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population boundary and transfer boundary needed for bounded artifact fill",
+        "source is used to claim human longevity escape velocity, effective immortality, lifespan extension or calibrated Human Infra model admission"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 lactation and infant nutrition continuity extraction register",
+        "variables": [
+          "exclusive-breastfeeding-duration",
+          "lactation-support-access",
+          "infant-nutrition-continuity",
+          "maternal-postpartum-recovery",
+          "caregiving-burden"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, then independent fresh review, before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, preserve route/manual-review and source-lineage boundaries, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB6-EXT-016",
+      "domainId": "lactation-breastfeeding-support-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/lactation-breastfeeding-support-continuity",
+      "sourceRefId": "C2LTB6-SRC-08-2",
+      "sourceTitle": "Breastfeeding.",
+      "sourceUrl": "https://www.who.int/health-topics/breastfeeding",
+      "extractionStatus": "completed-c2ltb6-source-context-extraction",
+      "sourceAccessStatus": "who-health-topic-page-accessible",
+      "sourceRole": "who-breastfeeding-public-health-anchor",
+      "exactClaimUse": "Can support source-context framing that breastfeeding is a public-health nutrition and protection pathway for infants and mothers, requiring supportive environments and services.",
+      "endpointDefinition": "Candidate endpoints include breastfeeding prevalence, exclusive breastfeeding, continued breastfeeding, infant nutrition, infection risk context, maternal health context and support access.",
+      "populationOrSetting": "Infants, mothers/lactating parents and global public-health systems; WHO health-topic context.",
+      "effectOrMechanismSignal": "Mechanism signal is nutrition, immune protection and service-environment support affecting early-life reserve and family task burden.",
+      "uncertaintyOrBias": "Health-topic page provides overview framing; exact intervention recommendations require linked WHO guideline review.",
+      "transferBoundary": "Transfer only to public-health and support-system framing; do not use for individual feeding advice or outcome prediction.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis or individual death-date output",
+        "source is used beyond its guideline, fact-sheet, review, recommendation, clinical-context, public-health or developmental-framework role without local review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population boundary and transfer boundary needed for bounded artifact fill",
+        "source is used to claim human longevity escape velocity, effective immortality, lifespan extension or calibrated Human Infra model admission"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 lactation public-health support extraction register",
+        "variables": [
+          "exclusive-breastfeeding-duration",
+          "lactation-support-access",
+          "infant-nutrition-continuity",
+          "maternal-postpartum-recovery",
+          "caregiving-burden"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, then independent fresh review, before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, preserve route/manual-review and source-lineage boundaries, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB6-EXT-017",
+      "domainId": "childhood-immunization-schedule-record-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/childhood-immunization-schedule-record-continuity",
+      "sourceRefId": "C2LTB6-SRC-09-1",
+      "sourceTitle": "Child and Adolescent Immunization Schedule by Age.",
+      "sourceUrl": "https://www.cdc.gov/vaccines/hcp/imz-schedules/child-adolescent-age.html",
+      "extractionStatus": "completed-c2ltb6-source-context-extraction",
+      "sourceAccessStatus": "cdc-current-immunization-schedule-page-accessible",
+      "sourceRole": "child-adolescent-immunization-schedule-anchor",
+      "exactClaimUse": "Can support source-context framing that child and adolescent immunization is a time-indexed record and schedule system, with age-specific vaccination timing and catch-up dependencies.",
+      "endpointDefinition": "Candidate endpoints include vaccine schedule adherence, age-specific dose status, catch-up need, immunization record continuity, preventable disease risk and school/care access dependencies.",
+      "populationOrSetting": "Children and adolescents in US immunization schedule context; healthcare-provider schedule page.",
+      "effectOrMechanismSignal": "Mechanism signal is preventive-risk timing: missed or delayed doses change preventable infection exposure and create administrative/service continuity dependencies.",
+      "uncertaintyOrBias": "Schedule is jurisdiction- and date-specific; current CDC page must be versioned and should not be generalized globally or used for personal medical advice.",
+      "transferBoundary": "Transfer only to immunization schedule/record-continuity modeling; do not output individual vaccine recommendations.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis or individual death-date output",
+        "source is used beyond its guideline, fact-sheet, review, recommendation, clinical-context, public-health or developmental-framework role without local review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population boundary and transfer boundary needed for bounded artifact fill",
+        "source is used to claim human longevity escape velocity, effective immortality, lifespan extension or calibrated Human Infra model admission"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 childhood immunization schedule-record continuity extraction register",
+        "variables": [
+          "immunization-schedule-adherence",
+          "catch-up-vaccination-status",
+          "vaccine-record-continuity",
+          "preventable-infection-risk",
+          "school-care-access-dependency"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, then independent fresh review, before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, preserve route/manual-review and source-lineage boundaries, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB6-EXT-018",
+      "domainId": "childhood-immunization-schedule-record-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/childhood-immunization-schedule-record-continuity",
+      "sourceRefId": "C2LTB6-SRC-09-2",
+      "sourceTitle": "ACIP General Best Practice Guidelines for Immunization.",
+      "sourceUrl": "https://www.cdc.gov/vaccines/hcp/acip-recs/general-recs/index.html",
+      "extractionStatus": "completed-c2ltb6-source-context-extraction",
+      "sourceAccessStatus": "cdc-acip-best-practice-guidelines-page-accessible",
+      "sourceRole": "acip-general-immunization-best-practice-anchor",
+      "exactClaimUse": "Can support source-context framing that vaccine administration, contraindications/precautions, timing, spacing, records and error handling require best-practice rules beyond the schedule table itself.",
+      "endpointDefinition": "Candidate endpoints include contraindication/precaution documentation, dose spacing validity, administration route, vaccine records, adverse-event/reporting context and catch-up logic.",
+      "populationOrSetting": "Clinicians and immunization programs applying ACIP best practices; US provider guidance context.",
+      "effectOrMechanismSignal": "Mechanism signal is implementation quality: correct timing, spacing, recordkeeping and contraindication handling determine whether vaccine protection is safely converted into real coverage.",
+      "uncertaintyOrBias": "Best-practice guidance is implementation and program context; not evidence of vaccine effectiveness for each antigen or individualized advice.",
+      "transferBoundary": "Transfer only to immunization implementation-quality and record-continuity framing.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis or individual death-date output",
+        "source is used beyond its guideline, fact-sheet, review, recommendation, clinical-context, public-health or developmental-framework role without local review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population boundary and transfer boundary needed for bounded artifact fill",
+        "source is used to claim human longevity escape velocity, effective immortality, lifespan extension or calibrated Human Infra model admission"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 immunization implementation and record-quality extraction register",
+        "variables": [
+          "immunization-schedule-adherence",
+          "catch-up-vaccination-status",
+          "vaccine-record-continuity",
+          "preventable-infection-risk",
+          "school-care-access-dependency"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, then independent fresh review, before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, preserve route/manual-review and source-lineage boundaries, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB6-EXT-019",
+      "domainId": "pediatric-lead-screening-environmental-followup-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/pediatric-lead-screening-environmental-followup-continuity",
+      "sourceRefId": "C2LTB6-SRC-10-1",
+      "sourceTitle": "Recommended Actions Based on Blood Lead Level.",
+      "sourceUrl": "https://www.cdc.gov/lead-prevention/hcp/clinical-guidance/index.html",
+      "extractionStatus": "completed-c2ltb6-source-context-extraction",
+      "sourceAccessStatus": "cdc-lead-clinical-guidance-page-accessible",
+      "sourceRole": "blood-lead-level-action-guidance-anchor",
+      "exactClaimUse": "Can support source-context framing that blood lead level thresholds trigger follow-up, environmental history/investigation, nutrition/developmental assessment and public-health actions.",
+      "endpointDefinition": "Candidate endpoints include blood lead level, confirmatory testing timing, environmental exposure source, developmental surveillance, nutrition/iron context, case management and remediation referral.",
+      "populationOrSetting": "Children with measured blood lead levels and clinicians/public-health systems responding to exposure; CDC clinical guidance context.",
+      "effectOrMechanismSignal": "Mechanism signal is environmental neurotoxicity response: screening converts hidden exposure into follow-up actions that can reduce ongoing developmental risk.",
+      "uncertaintyOrBias": "Guidance is action-threshold and implementation context; it does not quantify individual cognitive loss or guarantee remediation success.",
+      "transferBoundary": "Transfer only to screening, follow-up and environmental exposure-control pathway framing; do not use for individual clinical decisions.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis or individual death-date output",
+        "source is used beyond its guideline, fact-sheet, review, recommendation, clinical-context, public-health or developmental-framework role without local review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population boundary and transfer boundary needed for bounded artifact fill",
+        "source is used to claim human longevity escape velocity, effective immortality, lifespan extension or calibrated Human Infra model admission"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 pediatric lead exposure screening-followup extraction register",
+        "variables": [
+          "blood-lead-level",
+          "environmental-exposure-source",
+          "screening-and-followup-continuity",
+          "neurodevelopmental-risk",
+          "remediation-access"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, then independent fresh review, before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, preserve route/manual-review and source-lineage boundaries, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB6-EXT-020",
+      "domainId": "pediatric-lead-screening-environmental-followup-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/pediatric-lead-screening-environmental-followup-continuity",
+      "sourceRefId": "C2LTB6-SRC-10-2",
+      "sourceTitle": "Prevention of Childhood Lead Toxicity.",
+      "sourceUrl": "https://publications.aap.org/pediatrics/article/138/1/e20161493/52617/Prevention-of-Childhood-Lead-Toxicity",
+      "extractionStatus": "completed-c2ltb6-source-context-extraction",
+      "sourceAccessStatus": "aap-policy-article-publisher-route-accessible-manual-review-needed",
+      "sourceRole": "childhood-lead-toxicity-prevention-policy-anchor",
+      "exactClaimUse": "Can support source-context framing that childhood lead toxicity prevention is a primary-prevention and environmental-health problem tied to housing, water, consumer products, screening and developmental harm.",
+      "endpointDefinition": "Candidate endpoints include lead exposure source, blood lead level, neurodevelopmental risk, housing/environmental remediation, screening policy and prevention systems.",
+      "populationOrSetting": "Children at risk for lead exposure and pediatric/public-health systems; AAP policy statement context.",
+      "effectOrMechanismSignal": "Mechanism signal is source-control prevention: preventing exposure is more protective than relying only on post-exposure detection because lead affects developing nervous systems.",
+      "uncertaintyOrBias": "Policy article requires exact recommendation review; exposure pathways and thresholds are setting-specific.",
+      "transferBoundary": "Transfer only to environmental prevention and pediatric neurodevelopment boundary framing; do not use to interpret individual blood lead results.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis or individual death-date output",
+        "source is used beyond its guideline, fact-sheet, review, recommendation, clinical-context, public-health or developmental-framework role without local review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population boundary and transfer boundary needed for bounded artifact fill",
+        "source is used to claim human longevity escape velocity, effective immortality, lifespan extension or calibrated Human Infra model admission"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 pediatric lead prevention and environmental follow-up extraction register",
+        "variables": [
+          "blood-lead-level",
+          "environmental-exposure-source",
+          "screening-and-followup-continuity",
+          "neurodevelopmental-risk",
+          "remediation-access"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, then independent fresh review, before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, preserve route/manual-review and source-lineage boundaries, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB6-EXT-021",
+      "domainId": "pediatric-feeding-swallowing-development-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/pediatric-feeding-swallowing-development-continuity",
+      "sourceRefId": "C2LTB6-SRC-11-1",
+      "sourceTitle": "Pediatric Feeding and Swallowing.",
+      "sourceUrl": "https://www.asha.org/practice-portal/clinical-topics/pediatric-feeding-and-swallowing/",
+      "extractionStatus": "completed-c2ltb6-source-context-extraction",
+      "sourceAccessStatus": "asha-practice-portal-page-accessible",
+      "sourceRole": "pediatric-feeding-swallowing-practice-portal-anchor",
+      "exactClaimUse": "Can support source-context framing that pediatric feeding and swallowing problems involve oral intake, swallowing safety, nutrition, growth, respiratory risk, development and caregiver burden, often requiring interprofessional assessment.",
+      "endpointDefinition": "Candidate endpoints include feeding skill, swallowing safety, aspiration/choking risk, nutrition/hydration intake, growth, respiratory complications, developmental status and caregiver feeding burden.",
+      "populationOrSetting": "Infants and children with feeding or swallowing concerns; speech-language pathology practice portal context.",
+      "effectOrMechanismSignal": "Mechanism signal is nutrition-airway-development coupling: unsafe or inefficient feeding can impair growth and increase respiratory or caregiver burden.",
+      "uncertaintyOrBias": "Practice portal is clinical-topic guidance; exact assessment/treatment decisions require clinician evaluation and source-context review.",
+      "transferBoundary": "Transfer only to feeding/swallowing endpoint and interprofessional-care framing; do not provide individual therapy advice.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis or individual death-date output",
+        "source is used beyond its guideline, fact-sheet, review, recommendation, clinical-context, public-health or developmental-framework role without local review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population boundary and transfer boundary needed for bounded artifact fill",
+        "source is used to claim human longevity escape velocity, effective immortality, lifespan extension or calibrated Human Infra model admission"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 pediatric feeding and swallowing continuity extraction register",
+        "variables": [
+          "feeding-skill-development",
+          "swallow-safety",
+          "nutrition-intake-continuity",
+          "aspiration-risk",
+          "caregiver-feeding-burden"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, then independent fresh review, before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, preserve route/manual-review and source-lineage boundaries, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB6-EXT-022",
+      "domainId": "pediatric-feeding-swallowing-development-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/pediatric-feeding-swallowing-development-continuity",
+      "sourceRefId": "C2LTB6-SRC-11-2",
+      "sourceTitle": "Pediatric Feeding Disorder: Consensus Definition and Conceptual Framework.",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6314510/",
+      "extractionStatus": "completed-c2ltb6-source-context-extraction",
+      "sourceAccessStatus": "pmc-open-fulltext-consensus-article-accessible",
+      "sourceRole": "pediatric-feeding-disorder-consensus-definition-anchor",
+      "exactClaimUse": "Can support source-context framing that pediatric feeding disorder can be defined through impaired oral intake not age-appropriate and associated with medical, nutritional, feeding-skill and/or psychosocial dysfunction.",
+      "endpointDefinition": "Candidate endpoints include oral intake adequacy, medical dysfunction, nutritional dysfunction, feeding-skill dysfunction, psychosocial dysfunction, duration and functional impairment.",
+      "populationOrSetting": "Infants and children with feeding disorders across medical, nutritional, skill and psychosocial contexts; consensus-definition article.",
+      "effectOrMechanismSignal": "Mechanism signal is multidomain impairment: feeding disorder emerges when biological, skill, nutritional and psychosocial systems fail to sustain safe age-appropriate intake.",
+      "uncertaintyOrBias": "Consensus definition provides taxonomy and conceptual framework; it does not estimate prevalence, treatment efficacy or individual prognosis.",
+      "transferBoundary": "Transfer only to definition, endpoint schema and multidomain model framing; do not use as treatment proof.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis or individual death-date output",
+        "source is used beyond its guideline, fact-sheet, review, recommendation, clinical-context, public-health or developmental-framework role without local review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population boundary and transfer boundary needed for bounded artifact fill",
+        "source is used to claim human longevity escape velocity, effective immortality, lifespan extension or calibrated Human Infra model admission"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 pediatric feeding disorder taxonomy extraction register",
+        "variables": [
+          "feeding-skill-development",
+          "swallow-safety",
+          "nutrition-intake-continuity",
+          "aspiration-risk",
+          "caregiver-feeding-burden"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, then independent fresh review, before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, preserve route/manual-review and source-lineage boundaries, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB6-EXT-023",
+      "domainId": "pediatric-oral-health-development-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/pediatric-oral-health-development-continuity",
+      "sourceRefId": "C2LTB6-SRC-12-1",
+      "sourceTitle": "Prevention of Dental Caries in Children Younger Than 5 Years: Screening and Interventions.",
+      "sourceUrl": "https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/prevention-of-dental-caries-in-children-younger-than-age-5-years-screening-and-interventions",
+      "extractionStatus": "completed-c2ltb6-source-context-extraction",
+      "sourceAccessStatus": "uspstf-recommendation-page-accessible",
+      "sourceRole": "early-childhood-caries-prevention-recommendation-anchor",
+      "exactClaimUse": "Can support source-context framing that dental caries prevention in children younger than five includes screening/risk context and preventive interventions such as fluoride varnish, linking oral health to primary care access and early function.",
+      "endpointDefinition": "Candidate endpoints include early-childhood caries, oral screening/risk assessment, fluoride varnish receipt, fluoride supplementation context, dental referral and pain/function outcomes.",
+      "populationOrSetting": "Children younger than 5 years in primary care/preventive-service settings; USPSTF recommendation context.",
+      "effectOrMechanismSignal": "Mechanism signal is preventive service conversion: early preventive actions can reduce caries burden that affects eating, sleep, infection risk and family care demands.",
+      "uncertaintyOrBias": "Recommendation scope is age- and setting-specific and does not replace dental diagnosis or individualized fluoride decisions.",
+      "transferBoundary": "Transfer only to pediatric oral-health prevention and service-access framing; do not use for personal dental advice.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis or individual death-date output",
+        "source is used beyond its guideline, fact-sheet, review, recommendation, clinical-context, public-health or developmental-framework role without local review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population boundary and transfer boundary needed for bounded artifact fill",
+        "source is used to claim human longevity escape velocity, effective immortality, lifespan extension or calibrated Human Infra model admission"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 pediatric oral health prevention extraction register",
+        "variables": [
+          "early-childhood-caries-risk",
+          "fluoride-prevention-access",
+          "oral-pain-burden",
+          "dental-care-continuity",
+          "nutrition-and-school-function-impact"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, then independent fresh review, before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, preserve route/manual-review and source-lineage boundaries, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB6-EXT-024",
+      "domainId": "pediatric-oral-health-development-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/pediatric-oral-health-development-continuity",
+      "sourceRefId": "C2LTB6-SRC-12-2",
+      "sourceTitle": "Caries-risk Assessment and Management for Infants, Children, and Adolescents.",
+      "sourceUrl": "https://www.aapd.org/research/oral-health-policies--recommendations/caries-risk-assessment-and-management-for-infants-children-and-adolescents/",
+      "extractionStatus": "completed-c2ltb6-source-context-extraction",
+      "sourceAccessStatus": "aapd-recommendation-page-accessible",
+      "sourceRole": "caries-risk-assessment-management-guideline-anchor",
+      "exactClaimUse": "Can support source-context framing that caries-risk assessment and management for infants, children and adolescents should classify risk and guide preventive/management intensity across diet, fluoride, oral hygiene, dental home and clinical findings.",
+      "endpointDefinition": "Candidate endpoints include caries-risk category, protective factors, disease indicators, preventive management, dental-home continuity, fluoride exposure and recall/monitoring need.",
+      "populationOrSetting": "Infants, children and adolescents in pediatric dental-care contexts; AAPD policy/recommendation context.",
+      "effectOrMechanismSignal": "Mechanism signal is stratified prevention: risk assessment maps exposures and protective factors into service intensity and follow-up continuity.",
+      "uncertaintyOrBias": "AAPD recommendation is professional guidance; exact risk categorization and management require dental examination and local context.",
+      "transferBoundary": "Transfer only to caries-risk endpoint schema and pediatric dental continuity framing; do not provide individual treatment or product recommendations.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis or individual death-date output",
+        "source is used beyond its guideline, fact-sheet, review, recommendation, clinical-context, public-health or developmental-framework role without local review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population boundary and transfer boundary needed for bounded artifact fill",
+        "source is used to claim human longevity escape velocity, effective immortality, lifespan extension or calibrated Human Infra model admission"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 pediatric oral health risk-management extraction register",
+        "variables": [
+          "early-childhood-caries-risk",
+          "fluoride-prevention-access",
+          "oral-pain-burden",
+          "dental-care-continuity",
+          "nutrition-and-school-function-impact"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local review, then independent fresh review, before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, preserve route/manual-review and source-lineage boundaries, then send eligible rows to independent fresh review before bounded artifact promotion."
+    }
+  ],
+  "nonClaims": [
+    "This register does not complete local source-context review or independent fresh review.",
+    "This register does not create reviewed Source Cards, variable cards, endpoint cards, uncertainty cards, transfer-boundary cards or downgrade-check artifacts.",
+    "This register does not resolve manual fulltext needs, publisher access limits, guideline lineage or duplicate route/source-counting questions.",
+    "This register does not authorize clinical advice, individual prediction, intervention ranking, calibrated model admission or individual death-date output.",
+    "This register does not claim that any B6 source proves human longevity escape velocity, effective immortality, fertility success, child development outcomes or pediatric disease prevention for an individual."
+  ],
+  "indexRequirements": [
+    "README.md",
+    "docs/reference/README.md",
+    "docs/reference/human-infra-maturity-roadmap.md",
+    "tools/README.md"
+  ]
+}

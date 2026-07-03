@@ -205,6 +205,8 @@
         "tools/audit_human_infra_c2_longtail_sixth_batch_promotion_queue.py",
         "docs/reference/human-infra-c2-longtail-sixth-batch-source-extraction-queue.json",
         "tools/audit_human_infra_c2_longtail_sixth_batch_source_extraction_queue.py",
+        "docs/reference/human-infra-c2-longtail-sixth-batch-source-extraction-register.json",
+        "tools/audit_human_infra_c2_longtail_sixth_batch_source_extraction_register.py",
         "docs/reference/human-infra-c2-longtail-fifth-batch-source-extraction-queue.json",
         "tools/audit_human_infra_c2_longtail_fifth_batch_source_extraction_queue.py",
         "docs/reference/human-infra-c2-longtail-fifth-batch-source-extraction-register.json",
@@ -356,6 +358,8 @@
             "tools/audit_human_infra_c2_longtail_sixth_batch_promotion_queue.py",
             "docs/reference/human-infra-c2-longtail-sixth-batch-source-extraction-queue.json",
             "tools/audit_human_infra_c2_longtail_sixth_batch_source_extraction_queue.py",
+            "docs/reference/human-infra-c2-longtail-sixth-batch-source-extraction-register.json",
+            "tools/audit_human_infra_c2_longtail_sixth_batch_source_extraction_register.py",
             "docs/reference/human-infra-c2-longtail-fifth-batch-source-extraction-queue.json",
             "tools/audit_human_infra_c2_longtail_fifth_batch_source_extraction_queue.py",
             "docs/reference/human-infra-c2-longtail-fifth-batch-source-extraction-register.json",
@@ -490,6 +494,8 @@
             "tools/audit_human_infra_c2_longtail_sixth_batch_promotion_queue.py",
             "docs/reference/human-infra-c2-longtail-sixth-batch-source-extraction-queue.json",
             "tools/audit_human_infra_c2_longtail_sixth_batch_source_extraction_queue.py",
+            "docs/reference/human-infra-c2-longtail-sixth-batch-source-extraction-register.json",
+            "tools/audit_human_infra_c2_longtail_sixth_batch_source_extraction_register.py",
             "docs/reference/human-infra-c2-longtail-fifth-batch-source-extraction-queue.json",
             "tools/audit_human_infra_c2_longtail_fifth_batch_source_extraction_queue.py",
             "docs/reference/human-infra-c2-longtail-fifth-batch-source-extraction-register.json",
@@ -657,7 +663,9 @@
             "docs/reference/human-infra-c2-longtail-fifth-batch-independent-fresh-review-verdict-register.json",
             "tools/audit_human_infra_c2_longtail_fifth_batch_independent_fresh_review_verdict_register.py",
             "docs/reference/human-infra-c2-longtail-fifth-batch-reviewed-card-artifact-register.json",
-            "tools/audit_human_infra_c2_longtail_fifth_batch_reviewed_card_artifact_register.py"
+            "tools/audit_human_infra_c2_longtail_fifth_batch_reviewed_card_artifact_register.py",
+            "docs/reference/human-infra-c2-longtail-sixth-batch-source-extraction-register.json",
+            "tools/audit_human_infra_c2_longtail_sixth_batch_source_extraction_register.py"
           ],
           "missingEvidence": [
             "C2-LT-B5 reviewed downgrade artifacts now exist for 17 eligible rows, but 13 manual route-only/manual-access/duplicate/context-only rows remain blocked.",
@@ -894,7 +902,7 @@
     },
     {
       "priority": 3,
-      "item": "Execute C2-LT-B6 source-specific extraction for 24 candidate source tasks, keeping all rows out of local review, independent fresh review, bounded artifacts and model admission until exact claim, endpoint, population, uncertainty, transfer-boundary, downgrade and model-position fields are filled.",
+      "item": "Run C2-LT-B6 local source-context review for the 24 extracted rows, preserving guideline-route, publisher/manual-review and source-lineage boundaries, then prepare independent fresh review before any bounded artifact or model-admission step.",
       "unblocks": [
         "RESEARCH-G3-c1-c2-source-cards",
         "RESEARCH-G4-variable-mechanism-contracts",
