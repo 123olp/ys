@@ -221,6 +221,7 @@ docs/
 │   ├── human-infra-c2-longtail-fifth-batch-independent-fresh-review-verdict-register.json
 │   ├── human-infra-c2-longtail-fifth-batch-reviewed-card-artifact-register.json
 │   ├── human-infra-c2-longtail-sixth-batch-promotion-queue.json
+│   ├── human-infra-c2-longtail-sixth-batch-source-extraction-queue.json
 │   ├── human-infra-c2-longtail-third-batch-corrected-source-reextraction-register.json
 │   ├── human-infra-c2-longtail-third-batch-corrected-source-fresh-review-verdict-register.json
 │   ├── human-infra-c2-longtail-third-batch-reviewed-card-artifact-register.json
@@ -455,6 +456,7 @@ docs/
 - `reference/human-infra-c2-longtail-fourth-batch-manual-fulltext-reviewed-card-artifact-register.json`：记录 C2-LT-B4 中 3 个 eligible manual/fulltext fresh-review rows 的 18 个有界 Source/变量/endpoint/uncertainty/transfer/downgrade artifacts，并保留 5 个 blockedRows；它仍不打开校准模型、个体建议、干预排序、临床有效性主张或死亡日期输出。
 - `reference/human-infra-c2-longtail-fifth-batch-promotion-queue.json`：从剩余 C2 长尾域中选择 12 个细胞质量控制、细胞器通信、分子运输、膜脂韧性、清除和屏障底座域，并绑定 24 个 web/API-checked 候选来源；它只是 source-specific 深读入口，不等于 Source Card、fresh review、reviewed artifact 或模型准入。
 - `reference/human-infra-c2-longtail-sixth-batch-promotion-queue.json`：从剩余 C2 长尾域中选择 12 个跨代连续性、生殖力、孕产新生儿、儿童免疫、儿童铅暴露、儿童喂养吞咽、哺乳和儿童口腔健康域，并绑定 24 个 web-checked 候选来源；它只是 source-specific 深读入口，不等于 Source Card、fresh review、reviewed artifact 或模型准入。
+- `reference/human-infra-c2-longtail-sixth-batch-source-extraction-queue.json`：把 C2-LT-B6 的 24 个候选来源派生成 source-specific 深读任务，定义 exact claim、endpoint、population、uncertainty、transfer-boundary、downgrade 和 model-position 抽取槽位；它仍不等于本地复核、fresh review、reviewed artifacts 或模型准入。
 - `reference/human-infra-c2-longtail-fifth-batch-source-extraction-queue.json`：把 C2-LT-B5 的 24 个候选来源派生成 source-specific 深读任务，定义 exact claim、endpoint、population、uncertainty、transfer-boundary、downgrade 和 model-position 抽取槽位；它仍不等于本地复核、fresh review、reviewed artifacts 或模型准入。
 - `reference/human-infra-c2-longtail-fifth-batch-source-extraction-register.json`：记录 C2-LT-B5 24/24 个来源的本地字段级抽取，显式保留无开放全文人工复核、跨域复用来源、模型生物/综述边界、降级触发和模型阻塞边界；它仍不等于本地复核、fresh review、reviewed artifacts 或模型准入。
 - `reference/human-infra-c2-longtail-fifth-batch-local-review-register.json`：记录 C2-LT-B5 24/24 个来源抽取行的本地来源语境复核，确认非问题行只可进入 independent fresh review，8 个无开放全文或跨域复用问题行必须先 source-resolution/manual fulltext；它仍不等于 reviewed artifacts、Source Card 晋升完成或模型准入。
