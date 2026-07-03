@@ -1,6 +1,6 @@
 {
   "schemaVersion": "human-infra.life-path-toy-audit.v1",
-  "generatedAt": "2026-07-03T07:48:50.739431+00:00",
+  "generatedAt": "2026-07-03T08:17:27.002065+00:00",
   "modelPath": "web/src/data/life-path-toy-model.json",
   "modelSha256": "a4c92209d79d20579bf1f575d5ebf07ffe5be9ccaf6bf3f3eef08efa287b5377",
   "overallStatus": "PASS",
@@ -249,6 +249,46 @@
       "id": "nhanes-public-lmf-survey-design-non-proof-boundary",
       "status": "PASS",
       "detail": "validation must state that readiness does not prove weighted inference, calibration or individual prediction"
+    },
+    {
+      "id": "nhanes-public-lmf-domain-rule-readiness-exists",
+      "status": "PASS",
+      "detail": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_domain_subpopulation_rule_readiness.json"
+    },
+    {
+      "id": "nhanes-public-lmf-domain-rule-readiness-validation-exists",
+      "status": "PASS",
+      "detail": "web/src/data/life-path-nhanes-public-lmf-domain-subpopulation-rule-readiness-validation.json"
+    },
+    {
+      "id": "nhanes-public-lmf-domain-rule-readiness-schema",
+      "status": "PASS",
+      "detail": "schemaVersion='human-infra.nhanes-public-lmf-domain-subpopulation-rule-readiness.v1'"
+    },
+    {
+      "id": "nhanes-public-lmf-domain-rule-boundary",
+      "status": "PASS",
+      "detail": "domain rule must require full design input and block row-drop subgroup filtering as estimator"
+    },
+    {
+      "id": "nhanes-public-lmf-domain-rule-gate-summary",
+      "status": "PASS",
+      "detail": "gate summary must keep weighted domain inference blocked despite official domain-rule documentation"
+    },
+    {
+      "id": "nhanes-public-lmf-domain-rule-source-findings",
+      "status": "PASS",
+      "detail": "source findings must include CDC/NCHS domain/subpopulation mechanisms and upstream NHANES design fields"
+    },
+    {
+      "id": "nhanes-public-lmf-domain-rule-validation-source-hash",
+      "status": "PASS",
+      "detail": "validation must point back to current domain-rule readiness path and sha256"
+    },
+    {
+      "id": "nhanes-public-lmf-domain-rule-non-proof-boundary",
+      "status": "PASS",
+      "detail": "validation must state that domain-rule readiness does not prove weighted inference or individual prediction"
     },
     {
       "id": "data-sources-schema-version",
@@ -1817,7 +1857,7 @@
     }
   ],
   "summary": {
-    "pass": 362,
+    "pass": 370,
     "warn": 0,
     "fail": 0
   },
@@ -1959,7 +1999,7 @@
     "aggregatePath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_aggregate_pilot.json",
     "aggregateSha256": "6b472e577480173fbd348171ae8bc6bc9716438316b460fa5c024db3a7e2af8d",
     "validationPath": "web/src/data/life-path-nhanes-public-lmf-aggregate-pilot-validation.json",
-    "validationSha256": "a197e1ef27040fbe2d432a36062b22b0844c29e3710f6948d6b3c0e5ce0d1de4",
+    "validationSha256": "129251d64d4bd8a9e7d37a19c56ba9c57f5e90c9c047eb554ab9756f11d5c6cc",
     "status": "PASS",
     "checks": [
       {
@@ -2016,9 +2056,9 @@
   },
   "nhanesPublicLmfSurveyDesignReadiness": {
     "readinessPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_survey_design_readiness.json",
-    "readinessSha256": "7bd849f77e2ff3b631dc8028d44501334fe7b4a49a998ed997848d30bf29d7e0",
+    "readinessSha256": "6ca8f805a13cb7364fac5ea4706aef072ea105e2530f5e78b10d2da3c5d77b16",
     "validationPath": "web/src/data/life-path-nhanes-public-lmf-survey-design-readiness-validation.json",
-    "validationSha256": "003ab9826964f6c1b84634e6a41e8bea6b74a9625f5ad28040f1bac7679e83ae",
+    "validationSha256": "b221fa3c1c1d7075bfefa8803a4356e14f1afdade63c9988354a7db7b403ebe0",
     "status": "PASS",
     "checks": [
       {
@@ -2060,6 +2100,60 @@
         "id": "nhanes-public-lmf-survey-design-non-proof-boundary",
         "status": "PASS",
         "detail": "validation must state that readiness does not prove weighted inference, calibration or individual prediction"
+      }
+    ],
+    "summary": {
+      "pass": 8,
+      "warn": 0,
+      "fail": 0
+    }
+  },
+  "nhanesPublicLmfDomainSubpopulationRuleReadiness": {
+    "readinessPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_domain_subpopulation_rule_readiness.json",
+    "readinessSha256": "c1be95343a40f2adfb902e749ae979984bc9b5978186bf705f6d4980998eade3",
+    "validationPath": "web/src/data/life-path-nhanes-public-lmf-domain-subpopulation-rule-readiness-validation.json",
+    "validationSha256": "0c1bb0067617d4ccc8efc7f19da2dd3f48d411ffad7fd3c4e9052aa47660c1b3",
+    "status": "PASS",
+    "checks": [
+      {
+        "id": "nhanes-public-lmf-domain-rule-readiness-exists",
+        "status": "PASS",
+        "detail": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_domain_subpopulation_rule_readiness.json"
+      },
+      {
+        "id": "nhanes-public-lmf-domain-rule-readiness-validation-exists",
+        "status": "PASS",
+        "detail": "web/src/data/life-path-nhanes-public-lmf-domain-subpopulation-rule-readiness-validation.json"
+      },
+      {
+        "id": "nhanes-public-lmf-domain-rule-readiness-schema",
+        "status": "PASS",
+        "detail": "schemaVersion='human-infra.nhanes-public-lmf-domain-subpopulation-rule-readiness.v1'"
+      },
+      {
+        "id": "nhanes-public-lmf-domain-rule-boundary",
+        "status": "PASS",
+        "detail": "domain rule must require full design input and block row-drop subgroup filtering as estimator"
+      },
+      {
+        "id": "nhanes-public-lmf-domain-rule-gate-summary",
+        "status": "PASS",
+        "detail": "gate summary must keep weighted domain inference blocked despite official domain-rule documentation"
+      },
+      {
+        "id": "nhanes-public-lmf-domain-rule-source-findings",
+        "status": "PASS",
+        "detail": "source findings must include CDC/NCHS domain/subpopulation mechanisms and upstream NHANES design fields"
+      },
+      {
+        "id": "nhanes-public-lmf-domain-rule-validation-source-hash",
+        "status": "PASS",
+        "detail": "validation must point back to current domain-rule readiness path and sha256"
+      },
+      {
+        "id": "nhanes-public-lmf-domain-rule-non-proof-boundary",
+        "status": "PASS",
+        "detail": "validation must state that domain-rule readiness does not prove weighted inference or individual prediction"
       }
     ],
     "summary": {
@@ -2389,7 +2483,7 @@
   },
   "nhatsAcquisitionReadinessValidation": {
     "path": "web/src/data/life-path-nhats-acquisition-readiness-validation.json",
-    "sha256": "281d27e8ff4c1ac3b3c162387b2c3c84e31cb24f1aea2e7e9f0e13df6dfebc2b",
+    "sha256": "f075a0472fc38112bb8d410ab2603a504cf2e8493550effa90a814747259ee70",
     "status": "PASS",
     "checks": [
       {
@@ -2483,7 +2577,7 @@
   },
   "nhatsRegistrationEvidenceTemplateValidation": {
     "path": "web/src/data/life-path-nhats-registration-evidence-template-validation.json",
-    "sha256": "2aa8babb8297bc7fede031c5e554f6bf9dfefd5c0369c1b2f32db6ed26e63984",
+    "sha256": "b0410df8753501bfa055b0d1bb5f4cdf32c8465f10b512db98f15f2363c18ace",
     "status": "PASS",
     "checks": [
       {
@@ -2525,7 +2619,7 @@
   },
   "nhatsControlledStorageDestruction": {
     "path": "web/src/data/life-path-nhats-controlled-storage-destruction-validation.json",
-    "sha256": "5c506409de85ffef348170fac2a3bb695e75814e0b16d5eab9427bef1c9c27d9",
+    "sha256": "7110760e02d0efb8a35ddf40aa437435ad31865506883f780aa8b9015b586739",
     "status": "PASS",
     "checks": [
       {
@@ -2572,7 +2666,7 @@
   },
   "nhatsSyntheticStorageDestructionDrill": {
     "path": "web/src/data/life-path-nhats-synthetic-storage-destruction-drill-validation.json",
-    "sha256": "415028b72dceab56685b24b9e9a8e5cf680c7500ce5f3131d6c9280acb8e2d20",
+    "sha256": "004b3c1f6a3069e90f5d2181516b0c1bce131028dd1f567dcff021f97f73c8f6",
     "status": "PASS",
     "checks": [
       {
@@ -2701,7 +2795,7 @@
   },
   "nhatsFileTierTableValidation": {
     "path": "web/src/data/life-path-nhats-file-tier-table-validation.json",
-    "sha256": "0151b8efc6b9104ec7954e589fea3595c9c9252db96503c2352a6cf7a7d12063",
+    "sha256": "715c542645a0d503ca68d24ddd838f39419a8c7584a3eb2f4b79c8604c4ec19a",
     "status": "PASS",
     "checks": [
       {
@@ -3003,7 +3097,7 @@
     "testCasesPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_disclosure_control_test_cases.json",
     "testCasesSha256": "0a9cccdbfbd951ba6d04eeb762b9387ba50a13336e4ee4ade43ed976acb4c9c5",
     "validationPath": "web/src/data/life-path-nhats-disclosure-control-validation.json",
-    "validationSha256": "0bbc073c600e5363c50504724000cf6a24f5eb88504563acc8a357e95c72fa00",
+    "validationSha256": "e54f4e9b27fd1227e9378566312eca07114bf1ae412f4d8de189a6eff958a4d4",
     "status": "PASS",
     "checks": [
       {
@@ -3104,7 +3198,7 @@
     "testCasesPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_survey_design_test_cases.json",
     "testCasesSha256": "a0d106ff0e70450ae96a4d8749037839cae27bfb7feb68bf2636681c46f500cc",
     "validationPath": "web/src/data/life-path-nhats-survey-design-validation.json",
-    "validationSha256": "d4ddff0c84a5aaae8452f14c975c0c6e593649915b5328d58e9adedab77a3969",
+    "validationSha256": "b8303e2171127d549ad72a448425d31cedb6e8bec97dd1e9b0af14977395e7b7",
     "status": "PASS",
     "checks": [
       {
@@ -3225,7 +3319,7 @@
     "testCasesPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_missingness_route_test_cases.json",
     "testCasesSha256": "38928543b47a1f950de5925c2bb329fc544df4516aa882015240e7047674b4be",
     "validationPath": "web/src/data/life-path-nhats-missingness-route-validation.json",
-    "validationSha256": "17d977e4c45ad63b5155a95359871f27ca96bb7adaf2f39b18f8e9484fb22d7d",
+    "validationSha256": "264cba3aa73fa576e700f72fd9a4dd95ad8ab35143860d6a5778a92e264357b8",
     "status": "PASS",
     "checks": [
       {
@@ -3359,7 +3453,7 @@
     "registerPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_route_field_discovery_register.json",
     "registerSha256": "32d86995a0438e2104e6850334eefa63b30176b0767dd2229bc73a517ef5ade4",
     "validationPath": "web/src/data/life-path-nhats-route-field-discovery-validation.json",
-    "validationSha256": "662cbd2068463c6a9823c223d0435a7a7427cf90d80e4c0393e6eaf84ea7b659",
+    "validationSha256": "f4542f82df84fadf83bf50e3f7a2ee76849d6af93e73412a401edee207195760",
     "status": "PASS",
     "checks": [
       {
@@ -3448,7 +3542,7 @@
     "protocolPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_value_label_review_protocol.json",
     "protocolSha256": "bd5130152b3c57d5a6d8cdc767df85bc8a10e19e1225738f13940bd3734ff416",
     "validationPath": "web/src/data/life-path-nhats-colectica-value-label-validation.json",
-    "validationSha256": "ba6a8e0c483b54d17b4cd48ce8dc7ac0b02eee7b25ed4dbec8f4acbd904329fa",
+    "validationSha256": "7b1ea9230c88c93441d4cb2de6728eef3a9708f722ec409a1a1751f1c14d98b1",
     "status": "PASS",
     "checks": [
       {
@@ -3547,7 +3641,7 @@
     "registerPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_value_label_review_execution_register.json",
     "registerSha256": "de6d17f9470a563346f92884cead1eec35cf5a954245751b0135efc60672b042",
     "validationPath": "web/src/data/life-path-nhats-colectica-value-label-review-execution-validation.json",
-    "validationSha256": "8574cc546eefcee391dddfac5dc72b6a12df08287bd9d8c078fd1c103872adf6",
+    "validationSha256": "ee563fc7765c3f340a54607863b81f05974bdbb4b81a5d85744baffe079d4fc1",
     "status": "PASS",
     "checks": [
       {
@@ -3611,7 +3705,7 @@
     "registerPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_access_route_probe_register.json",
     "registerSha256": "58941fde2c6a1c5488437a1ad447cb3dae2032739ef1ed579e29da98b96aaa89",
     "validationPath": "web/src/data/life-path-nhats-colectica-access-route-probe-validation.json",
-    "validationSha256": "f2df4b8d395c748b094483691644f6f345fc3a128eeb21aba3372a60c3e25c46",
+    "validationSha256": "c2064f9f1c17f6b6299cc262f8f6e387d24dc4eac84c9cf399da381383ae9ef7",
     "status": "PASS",
     "checks": [
       {
@@ -3660,7 +3754,7 @@
     "templatePath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_authenticated_capture_template.json",
     "templateSha256": "dc097acfcb44007b42a25ce500c6cb1d23b1154f6620a7797445293817313eeb",
     "validationPath": "web/src/data/life-path-nhats-colectica-authenticated-capture-template-validation.json",
-    "validationSha256": "eb17415260bfa8b554610653943e307a56e53f0647ad88fe49ac57cf54d8fc86",
+    "validationSha256": "d0e1a1cf57864ee4b515f23012529627079d59ba4cc76cbb14b4afb9328dd8b0",
     "status": "PASS",
     "checks": [
       {
@@ -3709,7 +3803,7 @@
     "registerPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_capture_task_register.json",
     "registerSha256": "57764c73e38ecd6d3303d36a172d6b794671d34c3dcf1718e07fbe76c54720e0",
     "validationPath": "web/src/data/life-path-nhats-colectica-capture-task-register-validation.json",
-    "validationSha256": "0377879c52ad6fab7292041760c4ea3a844b166838dbd5786061933894ff75c4",
+    "validationSha256": "9dacd9ac74f450297ff2f9995ba69fca42b528b8feb93447c94f1d4e4d2791cc",
     "status": "PASS",
     "checks": [
       {
@@ -3768,7 +3862,7 @@
     "readinessPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_route_classifier_readiness.json",
     "readinessSha256": "f0c0224317c9ee20e8de56dcddeadba85ae24d67b736782ba22de90e83109296",
     "validationPath": "web/src/data/life-path-nhats-route-classifier-readiness-validation.json",
-    "validationSha256": "2ecaa39045b76941c0f0d63d7882e24accd03d45db4ab9f636be75504833e26c",
+    "validationSha256": "ecf0ef645b73a338dcea951b0d5da9a10bbd2ab05d8d184e87de4887c28b4446",
     "status": "PASS",
     "checks": [
       {
@@ -3832,7 +3926,7 @@
     "registerPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_l2_variable_family_admission_register.json",
     "registerSha256": "da1d444f452482f37aa7d7d12cd97c9deb0b2d6006540f76c5d2588389dffce3",
     "validationPath": "web/src/data/life-path-nhats-l2-variable-family-admission-validation.json",
-    "validationSha256": "ef2f296cfd220481dae35c537bb55205cc99a602b3b1d21d78b2a9477365feee",
+    "validationSha256": "09a086ec7ac798db6d539e9394c7526a7d2a8e75320e68e1c04f6f8bb8709583",
     "status": "PASS",
     "checks": [
       {
@@ -3886,7 +3980,7 @@
     "protocolPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_preoutcome_aggregation_protocol.json",
     "protocolSha256": "a2917d4bbb1682f5de6251fe919afae5da5bad681168475845a3a9c0a9a0747d",
     "validationPath": "web/src/data/life-path-nhats-preoutcome-aggregation-validation.json",
-    "validationSha256": "8d32e8baea22a3f2c44c57f9266a18102e59182c4d0ae962dac2f31382a34bdd",
+    "validationSha256": "dc7b91faac4bbf24a7c4388e1f59dbced6c105e0bcc41c5f3693ab5074f47676",
     "status": "PASS",
     "checks": [
       {
@@ -3938,7 +4032,7 @@
   },
   "sensitivityAnalysis": {
     "path": "web/src/data/life-path-sensitivity-analysis.json",
-    "sha256": "cde838480dd27f481b4cbe1450b8ecde5fa501a1260ab3394b9c80a88c483c57",
+    "sha256": "8e4066034747412d1a8b0778a358951381d07b1f79f7c6c2afd6513df82be9f0",
     "status": "PASS",
     "checks": [
       {

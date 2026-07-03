@@ -1,0 +1,139 @@
+{
+  "schemaVersion": "human-infra.nhanes-public-lmf-domain-subpopulation-rule-readiness.v1",
+  "readinessId": "nhanes-public-lmf-2017-2018-domain-subpopulation-rule-readiness",
+  "status": "public-real-data-domain-rule-diagnostic-not-weighted-inference",
+  "sourceId": "nhanes-public-lmf-2017-2018",
+  "sourceAuthority": "CDC/NCHS NHANES public-use survey analysis tutorials plus public-use DEMO_J and Linked Mortality File",
+  "lastReviewedDate": "2026-07-03",
+  "upstreamSurveyDesignReadiness": {
+    "path": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_survey_design_readiness.json",
+    "sha256": "6ca8f805a13cb7364fac5ea4706aef072ea105e2530f5e78b10d2da3c5d77b16",
+    "validationPath": "web/src/data/life-path-nhanes-public-lmf-survey-design-readiness-validation.json"
+  },
+  "officialSourceTrace": {
+    "varianceEstimationTutorial": "https://wwwn.cdc.gov/nchs/nhanes/tutorials/varianceestimation.aspx",
+    "weightingTutorial": "https://wwwn.cdc.gov/nchs/nhanes/tutorials/weighting.aspx",
+    "demoDocumentation": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+    "linkedMortalityPage": "https://www.cdc.gov/nchs/linked-data/mortality-files/index.html"
+  },
+  "sourceFindings": [
+    {
+      "id": "NHANES-DOMAIN-FULL-DESIGN-REQUIRED",
+      "sourceUrl": "https://wwwn.cdc.gov/nchs/nhanes/tutorials/varianceestimation.aspx",
+      "observedFact": "CDC/NCHS NHANES variance guidance says domain analyses should keep the design information for the full set of eligible non-zero-weight observations and use a subpopulation indicator rather than dropping records before variance estimation.",
+      "modelConsequence": "Human Infra must not treat post-join subgroup filtering as a reviewed NHANES domain estimator."
+    },
+    {
+      "id": "NHANES-DOMAIN-SOFTWARE-MECHANISMS",
+      "sourceUrl": "https://wwwn.cdc.gov/nchs/nhanes/tutorials/varianceestimation.aspx",
+      "observedFact": "CDC/NCHS NHANES guidance names software mechanisms for domain or subpopulation analysis, including DOMAIN, SUBPOPX, Stata subpop(), and R survey-design subset() usage.",
+      "modelConsequence": "A future estimator must choose and test a concrete software implementation path before weighted domain outputs are allowed."
+    },
+    {
+      "id": "NHANES-WEIGHT-SCOPE-SELECTION",
+      "sourceUrl": "https://wwwn.cdc.gov/nchs/nhanes/tutorials/weighting.aspx",
+      "observedFact": "CDC/NCHS NHANES weighting guidance requires selecting weights that match the analytic scope and subpopulation represented by the analysis.",
+      "modelConsequence": "The public aggregate pilot cannot use a single grouped table as proof that every domain has a correct analysis weight and eligible base."
+    },
+    {
+      "id": "NHANES-DEMO-DESIGN-FIELDS-UPSTREAM",
+      "sourceUrl": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+      "observedFact": "DEMO_J documents WTMEC2YR, SDMVPSU and SDMVSTRA, which are already captured by the upstream survey-design readiness contract.",
+      "modelConsequence": "This contract starts after field presence: it only checks whether domain/subpopulation rules are ready for future estimator design."
+    }
+  ],
+  "domainRule": {
+    "domainIndicatorRequired": true,
+    "fullDesignInputRequired": true,
+    "positiveWeightEligibleBaseRequired": true,
+    "rowDropBeforeDesignAllowed": false,
+    "postJoinGroupedCellsAreEstimator": false,
+    "softwareSpecificEstimatorSelected": false,
+    "softwareSpecificEstimatorTested": false,
+    "domainDofReviewed": false,
+    "publicAggregateCellOutputAllowed": false,
+    "weightedDomainInferenceAllowed": false,
+    "calibrationAllowed": false,
+    "individualPredictionAllowed": false,
+    "medicalAdviceAllowed": false
+  },
+  "readinessGates": [
+    {
+      "id": "official-domain-mechanisms-documented",
+      "status": "ready",
+      "blocksWeightedDomainInference": false,
+      "evidence": "CDC/NCHS variance tutorial documents DOMAIN, SUBPOPX, Stata subpop(), and R survey subset() mechanisms for domain/subpopulation analysis."
+    },
+    {
+      "id": "full-design-before-domain-documented",
+      "status": "ready",
+      "blocksWeightedDomainInference": false,
+      "evidence": "CDC/NCHS variance tutorial requires full eligible non-zero-weight design information to be retained for subpopulation variance estimation."
+    },
+    {
+      "id": "domain-indicator-not-implemented",
+      "status": "blocked",
+      "blocksWeightedDomainInference": true,
+      "evidence": "No Human Infra NHANES estimator currently constructs and reviews a domain indicator before design-based estimation."
+    },
+    {
+      "id": "software-estimator-not-selected",
+      "status": "blocked",
+      "blocksWeightedDomainInference": true,
+      "evidence": "The project has not selected R survey, Stata, SAS, SUDAAN or another reviewed estimator backend for NHANES domain outputs."
+    },
+    {
+      "id": "positive-weight-eligible-base-not-implemented",
+      "status": "blocked",
+      "blocksWeightedDomainInference": true,
+      "evidence": "The public aggregate pilot does not yet materialize a non-persisted positive-weight eligible base before domain analysis."
+    },
+    {
+      "id": "domain-dof-review-not-implemented",
+      "status": "blocked",
+      "blocksWeightedDomainInference": true,
+      "evidence": "No review exists for domain degrees-of-freedom, lonely PSU, empty domain or sparse-cell behavior."
+    },
+    {
+      "id": "public-output-disclosure-not-reviewed",
+      "status": "blocked",
+      "blocksWeightedDomainInference": true,
+      "evidence": "No public-output disclosure review exists for design-weighted domain cells, rates, intervals or subgroup route summaries."
+    },
+    {
+      "id": "calibration-validation-not-started",
+      "status": "blocked",
+      "blocksWeightedDomainInference": true,
+      "evidence": "No calibrated prediction model, external validation, censoring model or competing-risk model uses NHANES domain estimates."
+    }
+  ],
+  "gateSummary": {
+    "requiredGateCount": 8,
+    "readyGateCount": 2,
+    "partialGateCount": 0,
+    "blockedGateCount": 6,
+    "weightedDomainInferenceAllowed": false
+  },
+  "allowedUses": [
+    "domain/subpopulation rule readiness audit",
+    "documentation of why subgroup row filtering is not a NHANES domain estimator",
+    "model-admission boundary test for future weighted estimator work"
+  ],
+  "blockedUses": [
+    "survey-population inference",
+    "weighted domain mortality rate publication",
+    "design-based confidence interval output",
+    "calibrated Human Infra prediction",
+    "intervention effect estimation",
+    "causal claim",
+    "individual prediction",
+    "individual death-date output",
+    "medical advice"
+  ],
+  "nextWork": [
+    "Select a single estimator backend and implement a synthetic domain/subpopulation test before public outputs.",
+    "Build a non-row-persisting positive-weight eligible-base step before domain indicator evaluation.",
+    "Add domain degrees-of-freedom, sparse-cell and empty-domain synthetic cases.",
+    "Run disclosure review before any design-weighted public domain cell, interval or route summary."
+  ]
+}

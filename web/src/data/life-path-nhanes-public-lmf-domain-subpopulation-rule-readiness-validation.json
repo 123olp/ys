@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "human-infra.nhanes-public-lmf-domain-subpopulation-rule-readiness-validation.v1",
+  "status": "pass",
+  "generatedAt": "2026-07-03T08:17:33.039392+00:00",
+  "readinessPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_domain_subpopulation_rule_readiness.json",
+  "readinessSha256": "c1be95343a40f2adfb902e749ae979984bc9b5978186bf705f6d4980998eade3",
+  "validationPath": "web/src/data/life-path-nhanes-public-lmf-domain-subpopulation-rule-readiness-validation.json",
+  "summary": {
+    "sourceId": "nhanes-public-lmf-2017-2018",
+    "readyGateCount": 2,
+    "partialGateCount": 0,
+    "blockedGateCount": 6,
+    "weightedDomainInferenceAllowed": false,
+    "rowDropBeforeDesignAllowed": false,
+    "softwareSpecificEstimatorSelected": false
+  },
+  "nonProofBoundary": {
+    "confirms": "official NHANES domain/subpopulation rule readiness boundary and blocked estimator status",
+    "doesNotConfirm": [
+      "survey-weighted population inference",
+      "weighted domain mortality rates",
+      "design-based confidence intervals",
+      "calibrated prediction",
+      "intervention or causal effect",
+      "individual prediction",
+      "medical advice"
+    ]
+  },
+  "errors": []
+}
