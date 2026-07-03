@@ -16,6 +16,11 @@
     "defaultValidationPath": "web/src/data/life-path-nhanes-public-lmf-r-survey-runtime-smoke-validation.json",
     "controlledValidationPath": "web/src/data/life-path-nhanes-public-lmf-r-survey-controlled-runtime-smoke-validation.json"
   },
+  "upstreamDomainIndicatorDiagnostic": {
+    "path": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_domain_indicator_diagnostic.json",
+    "sha256": "9242c75084073cb1e5d6329912362329ff99c804c97507892d41801ab251f74a",
+    "validationPath": "web/src/data/life-path-nhanes-public-lmf-domain-indicator-diagnostic-validation.json"
+  },
   "officialSourceTrace": {
     "varianceEstimationTutorial": "https://wwwn.cdc.gov/nchs/nhanes/tutorials/varianceestimation.aspx",
     "weightingTutorial": "https://wwwn.cdc.gov/nchs/nhanes/tutorials/weighting.aspx",
@@ -40,6 +45,12 @@
       "sourceUrl": "https://wwwn.cdc.gov/nchs/nhanes/tutorials/varianceestimation.aspx",
       "observedFact": "CDC/NCHS warns that subgroup degrees of freedom can differ when not all PSUs and strata are represented in a subgroup.",
       "modelConsequence": "Public weighted domain output must remain blocked until domain degrees-of-freedom, lonely PSU, empty domain and sparse-domain behavior are reviewed."
+    },
+    {
+      "id": "HUMAN-INFRA-DOMAIN-INDICATOR-METADATA-DIAGNOSTIC",
+      "sourceUrl": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_domain_indicator_diagnostic.json",
+      "observedFact": "The local domain indicator metadata diagnostic verifies all 8 sex × ageBand aggregate domain combinations without repeating public record counts, death counts, weighted sums, rates, intervals, raw rows or individual rows.",
+      "modelConsequence": "The public-data domain indicator gate can move to ready, while weighted domain output remains blocked by degrees of freedom, sparse-domain, disclosure and implementation gates."
     }
   ],
   "outputSafetyContract": {
@@ -49,7 +60,11 @@
       "rowDropBeforeDesignAllowed": false,
       "requiresFullDesignInputBeforeDomain": true,
       "syntheticDomainSubsetSmokeProvenByControlledRuntime": true,
-      "publicDataDomainIndicatorEvaluated": false
+      "publicDataDomainIndicatorEvaluated": true,
+      "domainIndicatorMetadataDiagnosticPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_domain_indicator_diagnostic.json",
+      "domainIndicatorMetadataDiagnosticComplete": true,
+      "publicRecordCountsRepeatedByDomainDiagnostic": false,
+      "publicWeightedSumsRepeatedByDomainDiagnostic": false
     },
     "dofSparseDomainContract": {
       "domainDegreesOfFreedomDiagnosticRequired": true,
@@ -108,10 +123,10 @@
       "evidence": "The contract requires public disclosure review, suppression policy and identifiability review before output."
     },
     {
-      "id": "public-data-domain-indicator-not-evaluated",
-      "status": "blocked",
-      "blocksWeightedDomainOutput": true,
-      "evidence": "No public NHANES row-level domain indicator diagnostic output has been produced or disclosure-reviewed."
+      "id": "public-domain-indicator-diagnostic-complete",
+      "status": "ready",
+      "blocksWeightedDomainOutput": false,
+      "evidence": "The public NHANES domain indicator metadata diagnostic verifies aggregate domain coverage without repeating row counts, death counts, weighted sums, rates, intervals or individual rows."
     },
     {
       "id": "public-data-dof-sparse-review-not-complete",
@@ -134,18 +149,19 @@
   ],
   "gateSummary": {
     "requiredGateCount": 9,
-    "readyGateCount": 5,
+    "readyGateCount": 6,
     "partialGateCount": 0,
-    "blockedGateCount": 4,
+    "blockedGateCount": 3,
     "controlledRuntimeSmokePassed": true,
     "syntheticDomainSubsetSmokePassed": true,
-    "publicDataDomainIndicatorEvaluated": false,
+    "publicDataDomainIndicatorEvaluated": true,
     "publicDataDofSparseReviewComplete": false,
     "publicDisclosureReviewComplete": false,
     "weightedDomainOutputAllowed": false
   },
   "allowedUses": [
     "weighted-domain output safety gate audit",
+    "public domain-indicator metadata diagnostic gate audit",
     "proof that controlled synthetic R survey smoke is separated from public-data output permission",
     "pre-output checklist for future NHANES weighted domain work"
   ],
@@ -161,7 +177,6 @@
     "medical advice"
   ],
   "nextWork": [
-    "Implement a no-row-persistence public NHANES domain indicator diagnostic that reports only disclosure-safe gate metadata.",
     "Add domain DOF, lonely PSU, empty-domain and sparse-domain diagnostics before any weighted output.",
     "Add a disclosure-reviewed output envelope that blocks small or identifiable domain cells.",
     "Only after these gates pass, consider a separate weighted domain output implementation gate."

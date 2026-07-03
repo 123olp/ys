@@ -1,0 +1,168 @@
+{
+  "schemaVersion": "human-infra.nhanes-public-lmf-domain-indicator-diagnostic.v1",
+  "diagnosticId": "nhanes-public-lmf-2017-2018-domain-indicator-diagnostic",
+  "status": "public-real-data-domain-indicator-metadata-diagnostic-no-weighted-output",
+  "sourceId": "nhanes-public-lmf-2017-2018",
+  "sourceAuthority": "CDC/NCHS NHANES public-use DEMO_J plus public-use Linked Mortality File; Human Infra aggregate-only domain metadata boundary.",
+  "lastReviewedDate": "2026-07-03",
+  "upstreamAggregate": {
+    "path": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_aggregate_pilot.json",
+    "sha256": "d817c2907d71a820baac846f5a41c28db6eeee5cb8e57ed20a47d87aa9efce0f",
+    "validationPath": "web/src/data/life-path-nhanes-public-lmf-aggregate-pilot-validation.json"
+  },
+  "upstreamWeightedEstimatorReadiness": {
+    "path": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_weighted_estimator_readiness.json",
+    "sha256": "469d6cdcdc846bfed97a449f9a8a3bd2e197bfe214b996cb121c800979f5ef4a",
+    "validationPath": "web/src/data/life-path-nhanes-public-lmf-weighted-estimator-readiness-validation.json"
+  },
+  "officialSourceTrace": {
+    "varianceEstimationTutorial": "https://wwwn.cdc.gov/nchs/nhanes/tutorials/varianceestimation.aspx",
+    "weightingTutorial": "https://wwwn.cdc.gov/nchs/nhanes/tutorials/weighting.aspx",
+    "surveySubsetDocumentation": "https://r-survey.r-forge.r-project.org/survey/html/subset.survey.design.html",
+    "linkedMortalityPage": "https://www.cdc.gov/nchs/linked-data/mortality-files/index.html"
+  },
+  "sourceFindings": [
+    {
+      "id": "NHANES-DOMAIN-FULL-DESIGN-INPUT",
+      "sourceUrl": "https://wwwn.cdc.gov/nchs/nhanes/tutorials/varianceestimation.aspx",
+      "observedFact": "CDC/NCHS NHANES variance guidance requires domain/subpopulation analysis to retain the full eligible design information and use a subpopulation indicator rather than dropping records before complex survey procedures.",
+      "modelConsequence": "A Human Infra domain diagnostic may register domain axes and coverage metadata, but public weighted output remains blocked until a design-object domain mechanism and disclosure review are complete."
+    },
+    {
+      "id": "R-SURVEY-SUBSET-REFERENCE",
+      "sourceUrl": "https://r-survey.r-forge.r-project.org/survey/html/subset.survey.design.html",
+      "observedFact": "R survey subset.survey.design restricts a survey design to a subpopulation while retaining original design information about clusters and strata.",
+      "modelConsequence": "The future estimator must use a post-design domain mechanism; this diagnostic does not run or publish a design-based estimator."
+    },
+    {
+      "id": "HUMAN-INFRA-AGGREGATE-DOMAIN-METADATA",
+      "sourceUrl": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_aggregate_pilot.json",
+      "observedFact": "The aggregate pilot already defines sex × ageBand grouping and covers 8 public aggregate domain combinations without persisting raw rows or individual rows.",
+      "modelConsequence": "The current diagnostic can verify domain metadata coverage and no-row-persistence boundaries while still avoiding public record counts, weighted rates, intervals or individual outputs."
+    }
+  ],
+  "domainIndicatorDiagnostic": {
+    "diagnosticMode": "aggregate-domain-metadata-only",
+    "domainAxes": [
+      "sex",
+      "ageBand"
+    ],
+    "expectedSexLevels": [
+      "female",
+      "male"
+    ],
+    "expectedAgeBandLevels": [
+      "18-39",
+      "40-59",
+      "60-79",
+      "80+"
+    ],
+    "expectedDomainCombinationCount": 8,
+    "allExpectedDomainCombinationsPresent": true,
+    "suppressedDomainCombinationCount": 0,
+    "minimumCellCountPolicy": 20,
+    "domainIndicatorRequiredForFutureEstimator": true,
+    "domainIndicatorTimingForFutureEstimator": "after design object creation",
+    "requiresFullDesignInputBeforeDomain": true,
+    "rowDropBeforeDesignAllowed": false,
+    "rawRowsPersisted": false,
+    "individualRowsInOutput": false,
+    "domainIndicatorRowsPersisted": false,
+    "publicRecordCountsRepeatedByThisDiagnostic": false,
+    "publicDeathCountsRepeatedByThisDiagnostic": false,
+    "publicWeightedSumsRepeatedByThisDiagnostic": false,
+    "weightedEstimatorExecuted": false,
+    "designBasedVarianceEstimated": false,
+    "publicWeightedDomainCellsAllowed": false,
+    "publicWeightedDomainRatesAllowed": false,
+    "publicDesignBasedIntervalsAllowed": false,
+    "calibrationAllowed": false,
+    "individualPredictionAllowed": false,
+    "medicalAdviceAllowed": false
+  },
+  "readinessGates": [
+    {
+      "id": "upstream-aggregate-validation-passed",
+      "status": "ready",
+      "blocksWeightedDomainOutput": false,
+      "evidence": "Aggregate pilot validation passes and preserves aggregate-only, no-row-persistence boundaries."
+    },
+    {
+      "id": "upstream-weighted-estimator-readiness-validated",
+      "status": "ready",
+      "blocksWeightedDomainOutput": false,
+      "evidence": "Weighted-estimator readiness validation passes and still blocks weighted domain output."
+    },
+    {
+      "id": "domain-axis-contract-registered",
+      "status": "ready",
+      "blocksWeightedDomainOutput": false,
+      "evidence": "The diagnostic binds sex and ageBand as the public aggregate domain axes."
+    },
+    {
+      "id": "expected-domain-combinations-present",
+      "status": "ready",
+      "blocksWeightedDomainOutput": false,
+      "evidence": "The upstream aggregate pilot covers all 2 × 4 expected sex × ageBand domain combinations."
+    },
+    {
+      "id": "no-row-persistence-boundary-validated",
+      "status": "ready",
+      "blocksWeightedDomainOutput": false,
+      "evidence": "The diagnostic repeats no raw rows, no individual rows and no domain indicator rows."
+    },
+    {
+      "id": "no-estimator-output-boundary-validated",
+      "status": "ready",
+      "blocksWeightedDomainOutput": false,
+      "evidence": "The diagnostic does not repeat public record counts, death counts, weighted sums, rates, intervals or estimator output."
+    },
+    {
+      "id": "domain-dof-sparse-review-not-complete",
+      "status": "blocked",
+      "blocksWeightedDomainOutput": true,
+      "evidence": "Domain degrees-of-freedom, lonely PSU, empty-domain and sparse-domain diagnostics remain absent."
+    },
+    {
+      "id": "public-output-disclosure-not-reviewed",
+      "status": "blocked",
+      "blocksWeightedDomainOutput": true,
+      "evidence": "No public weighted cells, rates, intervals or subgroup summaries have passed disclosure review."
+    },
+    {
+      "id": "weighted-domain-output-not-implemented",
+      "status": "blocked",
+      "blocksWeightedDomainOutput": true,
+      "evidence": "No repository artifact computes or stores public NHANES weighted domain rates or design-based intervals."
+    }
+  ],
+  "gateSummary": {
+    "requiredGateCount": 9,
+    "readyGateCount": 6,
+    "partialGateCount": 0,
+    "blockedGateCount": 3,
+    "domainIndicatorMetadataDiagnosticComplete": true,
+    "weightedDomainOutputAllowed": false
+  },
+  "allowedUses": [
+    "domain indicator metadata diagnostic gate audit",
+    "proof that public aggregate domain coverage can be checked without row persistence",
+    "pre-output checklist input for future NHANES weighted domain work"
+  ],
+  "blockedUses": [
+    "survey-population inference",
+    "weighted domain mortality rate publication",
+    "design-based confidence interval output",
+    "calibrated Human Infra prediction",
+    "intervention effect estimation",
+    "causal claim",
+    "individual prediction",
+    "individual death-date output",
+    "medical advice"
+  ],
+  "nextWork": [
+    "Add domain degrees-of-freedom, lonely PSU, empty-domain and sparse-domain diagnostics before any weighted output.",
+    "Add a disclosure-reviewed output envelope that blocks small or identifiable domain cells.",
+    "Only after DOF/sparse-domain and disclosure gates pass, consider a separate weighted domain output implementation gate."
+  ]
+}

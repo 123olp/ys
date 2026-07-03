@@ -1,0 +1,41 @@
+{
+  "schemaVersion": "human-infra.nhanes-public-lmf-domain-indicator-diagnostic-validation.v1",
+  "status": "pass",
+  "generatedAt": "2026-07-03T10:41:43.606645+00:00",
+  "diagnosticPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_domain_indicator_diagnostic.json",
+  "diagnosticSha256": "9242c75084073cb1e5d6329912362329ff99c804c97507892d41801ab251f74a",
+  "validationPath": "web/src/data/life-path-nhanes-public-lmf-domain-indicator-diagnostic-validation.json",
+  "summary": {
+    "sourceId": "nhanes-public-lmf-2017-2018",
+    "domainAxes": [
+      "sex",
+      "ageBand"
+    ],
+    "expectedDomainCombinationCount": 8,
+    "allExpectedDomainCombinationsPresent": true,
+    "readyGateCount": 6,
+    "blockedGateCount": 3,
+    "domainIndicatorMetadataDiagnosticComplete": true,
+    "weightedDomainOutputAllowed": false,
+    "recordCountsRepeatedByThisDiagnostic": false,
+    "deathCountsRepeatedByThisDiagnostic": false,
+    "weightedSumsRepeatedByThisDiagnostic": false
+  },
+  "nonProofBoundary": {
+    "confirms": [
+      "public aggregate domain metadata coverage is complete for sex × ageBand",
+      "the diagnostic repeats no public record counts, death counts, weighted sums, rates or intervals",
+      "public weighted-domain output remains blocked"
+    ],
+    "doesNotConfirm": [
+      "public NHANES weighted domain output",
+      "domain degrees-of-freedom or sparse-domain adequacy",
+      "design-based confidence intervals",
+      "disclosure-reviewed public weighted cells",
+      "calibration",
+      "individual prediction",
+      "medical advice"
+    ]
+  },
+  "errors": []
+}

@@ -107,6 +107,8 @@ longevity-evidence/
 │   │   ├── life_path_nhanes_public_lmf_survey_design_readiness.json
 │   │   ├── life_path_nhanes_public_lmf_weighted_estimator_readiness.json
 │   │   ├── life_path_nhanes_public_lmf_r_survey_runtime_smoke_readiness.json
+│   │   ├── life_path_nhanes_public_lmf_domain_indicator_diagnostic.json
+│   │   ├── life_path_nhanes_public_lmf_weighted_domain_output_readiness.json
 │   │   ├── life_path_public_mortality_anchor.json
 │   │   ├── life_path_nhats_acquisition_readiness.json
 │   │   ├── life_path_nhats_official_source_refresh_register.json
@@ -184,6 +186,7 @@ longevity-evidence/
     ├── validate_nhanes_public_lmf_survey_design_readiness.py
     ├── validate_nhanes_public_lmf_weighted_estimator_readiness.py
     ├── validate_nhanes_public_lmf_r_survey_runtime_smoke.py
+    ├── validate_nhanes_public_lmf_domain_indicator_diagnostic.py
     ├── validate_nhanes_public_lmf_weighted_domain_output_readiness.py
     ├── run_nhanes_public_lmf_r_survey_controlled_runtime_smoke.sh
     └── validate_nhats_survey_design_plan.py
@@ -226,6 +229,8 @@ longevity-evidence/
 
 `data/manual/life_path_nhanes_public_lmf_r_survey_runtime_smoke_readiness.json`、`runtime/nhanes-public-lmf-r-survey-conda.yml`、`scripts/validate_nhanes_public_lmf_r_survey_runtime_smoke.py` 与 `scripts/run_nhanes_public_lmf_r_survey_controlled_runtime_smoke.sh` 维护 NHANES public-use LMF R `survey` runtime smoke；默认探测当前环境，controlled 脚本会在仓库根目录 `.runtime/nhanes-r-survey/` 创建可重建 conda prefix，并导出 `web/src/data/life-path-nhanes-public-lmf-r-survey-controlled-runtime-smoke-validation.json`。该门只证明 R `4.3.3`、R `survey` 和 synthetic `svydesign` / domain `subset` smoke 能跑通，不下载、不保存、不处理 NHANES 行级数据，不授权 weighted domain output、design-based confidence interval、校准预测或个体预测。
 
+`data/manual/life_path_nhanes_public_lmf_domain_indicator_diagnostic.json` 与 `scripts/validate_nhanes_public_lmf_domain_indicator_diagnostic.py` 维护 NHANES public-use LMF domain indicator metadata diagnostic；它只验证上游聚合试运行覆盖 8 个 sex × ageBand 公开聚合域组合，并确认 diagnostic 自身不重复公开 record counts、death counts、weighted sums、rates、intervals、原始行或个体行，导出 `web/src/data/life-path-nhanes-public-lmf-domain-indicator-diagnostic-validation.json`。该门把 domain indicator metadata gate 推进到 ready，但仍不授权 weighted domain output、design-based confidence interval、校准预测或个体预测。
+
 `data/manual/life_path_nhanes_public_lmf_weighted_domain_output_readiness.json` 与 `scripts/validate_nhanes_public_lmf_weighted_domain_output_readiness.py` 维护 NHANES public-use LMF weighted-domain output safety gate；它把 controlled runtime smoke、post-design domain indicator、DOF / sparse-domain review 和 disclosure review 绑定成公开输出前置门，导出 `web/src/data/life-path-nhanes-public-lmf-weighted-domain-output-readiness-validation.json`。该门只证明输出安全门已登记并继续阻塞 public weighted domain output，不生成 weighted mortality rate、design-based interval、校准预测或个体预测。
 
 `data/manual/life_path_nhanes_public_lmf_r_survey_runtime_smoke_readiness.json` 与 `scripts/validate_nhanes_public_lmf_r_survey_runtime_smoke.py` 维护 NHANES public-use LMF 试运行的 R `survey` runtime smoke readiness；它只探测当前环境是否具备 `Rscript`、`survey` 包和 synthetic `svydesign` / domain `subset` smoke 能力，当前可记录 `blocked-no-rscript` 这类运行时阻塞，不下载、不保存、不处理 NHANES 行级数据，也不授权 weighted domain output、design-based confidence interval、校准预测或个体预测。
@@ -252,6 +257,8 @@ python3 domains/c1-boundary-rewriting/longevity-evidence/scripts/validate_nhanes
 python3 domains/c1-boundary-rewriting/longevity-evidence/scripts/validate_nhanes_public_lmf_eligible_base_readiness.py
 python3 domains/c1-boundary-rewriting/longevity-evidence/scripts/validate_nhanes_public_lmf_weighted_estimator_readiness.py
 python3 domains/c1-boundary-rewriting/longevity-evidence/scripts/validate_nhanes_public_lmf_r_survey_runtime_smoke.py
+python3 domains/c1-boundary-rewriting/longevity-evidence/scripts/validate_nhanes_public_lmf_domain_indicator_diagnostic.py
+python3 domains/c1-boundary-rewriting/longevity-evidence/scripts/validate_nhanes_public_lmf_weighted_domain_output_readiness.py
 python3 domains/c1-boundary-rewriting/longevity-evidence/scripts/validate_nhats_official_source_refresh.py
 python3 domains/c1-boundary-rewriting/longevity-evidence/scripts/validate_nhats_acquisition_readiness.py
 python3 domains/c1-boundary-rewriting/longevity-evidence/scripts/validate_nhats_controlled_storage_destruction_plan.py

@@ -76,6 +76,8 @@ longevity-evidence/
 │   │   ├── life_path_nhanes_public_lmf_survey_design_readiness.json
 │   │   ├── life_path_nhanes_public_lmf_weighted_estimator_readiness.json
 │   │   ├── life_path_nhanes_public_lmf_r_survey_runtime_smoke_readiness.json
+│   │   ├── life_path_nhanes_public_lmf_domain_indicator_diagnostic.json
+│   │   ├── life_path_nhanes_public_lmf_weighted_domain_output_readiness.json
 │   │   ├── life_path_nhats_acquisition_readiness.json
 │   │   ├── life_path_nhats_official_source_refresh_register.json
 │   │   ├── life_path_nhats_registration_evidence_template.json
@@ -158,6 +160,7 @@ longevity-evidence/
     ├── validate_nhanes_public_lmf_survey_design_readiness.py
     ├── validate_nhanes_public_lmf_weighted_estimator_readiness.py
     ├── validate_nhanes_public_lmf_r_survey_runtime_smoke.py
+    ├── validate_nhanes_public_lmf_domain_indicator_diagnostic.py
     ├── validate_nhanes_public_lmf_weighted_domain_output_readiness.py
     ├── run_nhanes_public_lmf_r_survey_controlled_runtime_smoke.sh
     ├── validate_nhats_missingness_route_map.py
@@ -198,6 +201,7 @@ longevity-evidence/
 - `data/manual/life_path_nhanes_public_lmf_eligible_base_readiness.json`：NHANES public-use LMF positive-weight eligible-base readiness 契约；它只证明 `WTMEC2YR > 0` eligible-base 诊断、no-row-persistence 和 no-row-drop 边界已登记，不证明 weighted domain inference、design-based confidence interval、校准或个体预测。
 - `data/manual/life_path_nhanes_public_lmf_weighted_estimator_readiness.json`：NHANES public-use LMF weighted-estimator readiness 契约；它只选择 R `survey` / `svydesign` 后端并绑定 design-object / domain indicator 合约，不证明 R runtime smoke、weighted domain output、design-based interval、校准或个体预测。
 - `data/manual/life_path_nhanes_public_lmf_r_survey_runtime_smoke_readiness.json`：NHANES public-use LMF R `survey` runtime smoke readiness 契约；它只允许探测当前环境是否具备 `Rscript`、`survey` 包和 synthetic `svydesign` / domain `subset` smoke 能力，不证明 weighted domain output、design-based interval、校准或个体预测。
+- `data/manual/life_path_nhanes_public_lmf_domain_indicator_diagnostic.json`：NHANES public-use LMF domain indicator metadata diagnostic 契约；它只验证 8 个 sex × ageBand 聚合域组合覆盖和 no-row / no-count / no-weighted-output 边界，不证明 DOF、披露、weighted domain output、校准或个体预测。
 - `data/manual/life_path_nhanes_public_lmf_weighted_domain_output_readiness.json`：NHANES public-use LMF weighted-domain output safety gate；它只登记 domain indicator、DOF / sparse-domain 和 disclosure review 前置门，并继续阻塞 public weighted domain output、design-based interval、校准和个体预测。
 - `runtime/README.md`：说明本域可复现 runtime 配置的职责、默认本地环境位置、禁止保存真实环境和禁止处理行级数据的边界。
 - `runtime/nhanes-public-lmf-r-survey-conda.yml`：NHANES public-use LMF R `survey` synthetic smoke 的 conda 环境契约，固定 R `4.3.3` 与 `r-survey` 依赖；实际环境创建在仓库根目录 `.runtime/nhanes-r-survey/`，不进入版本库。
@@ -243,6 +247,7 @@ longevity-evidence/
 - `scripts/validate_nhanes_public_lmf_weighted_estimator_readiness.py`：验证 NHANES public-use LMF weighted-estimator readiness 契约和 Web 验证报告，保证 R `survey` / `svydesign` 后端选择不会被误写成真实 weighted domain output 或模型校准。
 - `scripts/validate_nhanes_public_lmf_r_survey_runtime_smoke.py`：探测并验证 NHANES public-use LMF R `survey` runtime smoke readiness，当前只在 synthetic data 上检查 `Rscript` / `survey` / `svydesign` 可用性，并继续阻塞真实 NHANES weighted domain output、校准和个体预测。
 - `scripts/run_nhanes_public_lmf_r_survey_controlled_runtime_smoke.sh`：使用 `runtime/nhanes-public-lmf-r-survey-conda.yml` 创建或修复本地 controlled conda prefix，再运行 synthetic-only runtime smoke 并导出 controlled validation JSON；它不得加入默认 `make check`，避免默认审计下载或安装 R 依赖。
+- `scripts/validate_nhanes_public_lmf_domain_indicator_diagnostic.py`：验证 NHANES public-use LMF domain indicator metadata diagnostic 契约和 Web 验证报告，保证 domain 覆盖检查不重复公开计数、加权和、区间、原始行或个体行。
 - `scripts/validate_nhanes_public_lmf_weighted_domain_output_readiness.py`：验证 NHANES public-use LMF weighted-domain output readiness 契约和 Web 验证报告，保证 controlled runtime smoke 不会被误写成 public NHANES weighted domain output，且 domain indicator、DOF / sparse-domain 和 disclosure gate 仍阻塞输出。
 - `scripts/validate_nhats_registration_evidence_template.py`：读取 NHATS registration evidence 模板，生成 `web/src/data/life-path-nhats-registration-evidence-template-validation.json`，把注册/访问证据槽、redacted-only 仓库边界和禁止真实下载/抽取/校准/个体预测边界纳入默认审计。
 - `scripts/validate_nhats_acquisition_readiness.py`：读取 NHATS acquisition readiness 机器契约，生成 `web/src/data/life-path-nhats-acquisition-readiness-validation.json`，把注册模板、文件层级、Colectica、survey design、endpoint、披露控制、AI 边界和存储销毁缺口纳入默认审计。
@@ -288,3 +293,4 @@ longevity-evidence/
 - 2026-07-03：新增 `life_path_nhats_official_source_refresh_register.json`、`validate_nhats_official_source_refresh.py` 和 `life-path-nhats-official-source-refresh-validation.json`，把 NHATS 官方公开来源刷新接入默认审计；它只把 official-source-refresh 门升为 ready，其他 acquisition/L4 门继续阻塞。
 - 2026-07-03：新增 `life_path_nhats_route_classifier_readiness.json`、`validate_nhats_route_classifier_readiness.py` 和 `life-path-nhats-route-classifier-readiness-validation.json`，把 NHATS route-classifier readiness 阻塞门接入默认审计；它只证明分类器前置证据缺口可机器审查，不打开真实分类器、提取、聚合、校准或个体预测。
 - 2026-07-03：新增 `life_path_nhats_colectica_capture_task_register.json`、`validate_nhats_colectica_capture_task_register.py` 和 `life-path-nhats-colectica-capture-task-register-validation.json`，把 Colectica 变量页捕获任务清单接入默认审计；它只证明任务级捕获清单已准备，不打开登录、实捕获、分类器、提取、校准或个体预测。
+- 2026-07-03：新增 `life_path_nhanes_public_lmf_domain_indicator_diagnostic.json`、`validate_nhanes_public_lmf_domain_indicator_diagnostic.py` 和 `life-path-nhanes-public-lmf-domain-indicator-diagnostic-validation.json`，把 NHANES domain indicator metadata gate 推进为 ready；它只验证聚合域覆盖和 no-row/no-count/no-weighted-output 边界，DOF、披露和 weighted-domain output 继续阻塞。

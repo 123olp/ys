@@ -42,7 +42,7 @@ REQUIRED_GATE_IDS = {
     "domain-indicator-contract-registered",
     "dof-sparse-domain-contract-registered",
     "disclosure-contract-registered",
-    "public-data-domain-indicator-not-evaluated",
+    "public-domain-indicator-diagnostic-complete",
     "public-data-dof-sparse-review-not-complete",
     "public-output-disclosure-not-reviewed",
     "weighted-domain-output-not-implemented",
@@ -207,6 +207,71 @@ def validate_runtime_upstream(data: dict[str, Any], errors: list[str]) -> None:
                 fail(errors, "controlled runtime smoke validation must still block weighted output")
 
 
+def validate_domain_indicator_diagnostic_upstream(data: dict[str, Any], errors: list[str]) -> None:
+    upstream = data.get("upstreamDomainIndicatorDiagnostic")
+    if not isinstance(upstream, dict):
+        fail(errors, "upstreamDomainIndicatorDiagnostic must be an object")
+        return
+
+    diagnostic_path_text = upstream.get("path")
+    validation_path_text = upstream.get("validationPath")
+    diagnostic_sha256: str | None = None
+    if not isinstance(diagnostic_path_text, str):
+        fail(errors, "upstreamDomainIndicatorDiagnostic.path must be set")
+    else:
+        diagnostic_path = REPO_ROOT / diagnostic_path_text
+        if not diagnostic_path.exists():
+            fail(errors, "upstream domain indicator diagnostic path does not exist")
+        else:
+            diagnostic_sha256 = sha256_file(diagnostic_path)
+            if upstream.get("sha256") != diagnostic_sha256:
+                fail(errors, "upstream domain indicator diagnostic sha256 is stale")
+            diagnostic = load_json(diagnostic_path)
+            if diagnostic.get("schemaVersion") != (
+                "human-infra.nhanes-public-lmf-domain-indicator-diagnostic.v1"
+            ):
+                fail(errors, "upstream domain indicator diagnostic schemaVersion mismatch")
+            if diagnostic.get("status") != (
+                "public-real-data-domain-indicator-metadata-diagnostic-no-weighted-output"
+            ):
+                fail(errors, "upstream domain indicator diagnostic status mismatch")
+            summary = diagnostic.get("gateSummary", {})
+            if summary.get("domainIndicatorMetadataDiagnosticComplete") is not True:
+                fail(errors, "upstream domain indicator diagnostic must be complete")
+            if summary.get("weightedDomainOutputAllowed") is not False:
+                fail(errors, "upstream domain indicator diagnostic must still block weighted output")
+
+    if not isinstance(validation_path_text, str):
+        fail(errors, "upstreamDomainIndicatorDiagnostic.validationPath must be set")
+    else:
+        validation_path = REPO_ROOT / validation_path_text
+        if not validation_path.exists():
+            fail(errors, "upstream domain indicator diagnostic validation path does not exist")
+        else:
+            validation = load_json(validation_path)
+            if validation.get("schemaVersion") != (
+                "human-infra.nhanes-public-lmf-domain-indicator-diagnostic-validation.v1"
+            ):
+                fail(errors, "upstream domain indicator diagnostic validation schemaVersion mismatch")
+            if validation.get("status") != "pass":
+                fail(errors, "upstream domain indicator diagnostic validation must pass")
+            if validation.get("diagnosticPath") != diagnostic_path_text:
+                fail(errors, "upstream domain indicator diagnostic validation path mismatch")
+            if diagnostic_sha256 and validation.get("diagnosticSha256") != diagnostic_sha256:
+                fail(errors, "upstream domain indicator diagnostic validation diagnosticSha256 is stale")
+            summary = validation.get("summary", {})
+            if summary.get("domainIndicatorMetadataDiagnosticComplete") is not True:
+                fail(errors, "upstream domain indicator diagnostic validation must be complete")
+            if summary.get("weightedDomainOutputAllowed") is not False:
+                fail(errors, "upstream domain indicator diagnostic validation must block weighted output")
+            if summary.get("recordCountsRepeatedByThisDiagnostic") is not False:
+                fail(errors, "domain indicator diagnostic must not repeat record counts")
+            if summary.get("deathCountsRepeatedByThisDiagnostic") is not False:
+                fail(errors, "domain indicator diagnostic must not repeat death counts")
+            if summary.get("weightedSumsRepeatedByThisDiagnostic") is not False:
+                fail(errors, "domain indicator diagnostic must not repeat weighted sums")
+
+
 def validate_contract(data: dict[str, Any], errors: list[str]) -> None:
     contract = data.get("outputSafetyContract")
     if not isinstance(contract, dict):
@@ -224,7 +289,27 @@ def validate_contract(data: dict[str, Any], errors: list[str]) -> None:
     ):
         require_bool(domain, key, True, errors, "domainIndicatorContract")
     require_bool(domain, "rowDropBeforeDesignAllowed", False, errors, "domainIndicatorContract")
-    require_bool(domain, "publicDataDomainIndicatorEvaluated", False, errors, "domainIndicatorContract")
+    require_bool(domain, "publicDataDomainIndicatorEvaluated", True, errors, "domainIndicatorContract")
+    require_bool(domain, "domainIndicatorMetadataDiagnosticComplete", True, errors, "domainIndicatorContract")
+    require_bool(
+        domain,
+        "publicRecordCountsRepeatedByDomainDiagnostic",
+        False,
+        errors,
+        "domainIndicatorContract",
+    )
+    require_bool(
+        domain,
+        "publicWeightedSumsRepeatedByDomainDiagnostic",
+        False,
+        errors,
+        "domainIndicatorContract",
+    )
+    if domain.get("domainIndicatorMetadataDiagnosticPath") != (
+        "domains/c1-boundary-rewriting/longevity-evidence/data/manual/"
+        "life_path_nhanes_public_lmf_domain_indicator_diagnostic.json"
+    ):
+        fail(errors, "domainIndicatorContract.domainIndicatorMetadataDiagnosticPath mismatch")
     if domain.get("domainIndicatorTiming") != "after design object creation":
         fail(errors, "domainIndicatorContract.domainIndicatorTiming mismatch")
 
@@ -311,15 +396,15 @@ def validate_gates(data: dict[str, Any], errors: list[str]) -> None:
         "blockedGateCount": blocked,
         "controlledRuntimeSmokePassed": True,
         "syntheticDomainSubsetSmokePassed": True,
-        "publicDataDomainIndicatorEvaluated": False,
+        "publicDataDomainIndicatorEvaluated": True,
         "publicDataDofSparseReviewComplete": False,
         "publicDisclosureReviewComplete": False,
         "weightedDomainOutputAllowed": False,
     }
     if data.get("gateSummary") != expected_summary:
         fail(errors, f"gateSummary mismatch: expected {expected_summary}, found {data.get('gateSummary')}")
-    if ready != 5 or partial != 0 or blocked != 4:
-        fail(errors, "weighted-domain output readiness must remain 5 ready, 0 partial, 4 blocked")
+    if ready != 6 or partial != 0 or blocked != 3:
+        fail(errors, "weighted-domain output readiness must remain 6 ready, 0 partial, 3 blocked")
 
 
 def validate_payload(data: dict[str, Any]) -> list[str]:
@@ -339,6 +424,7 @@ def validate_payload(data: dict[str, Any]) -> list[str]:
 
     validate_weighted_estimator_upstream(data, errors)
     validate_runtime_upstream(data, errors)
+    validate_domain_indicator_diagnostic_upstream(data, errors)
 
     findings = data.get("sourceFindings")
     if not isinstance(findings, list) or len(findings) < 3:
@@ -352,8 +438,9 @@ def validate_payload(data: dict[str, Any]) -> list[str]:
             if not isinstance(finding, dict):
                 fail(errors, "sourceFindings entries must be objects")
                 continue
-            if not str(finding.get("sourceUrl", "")).startswith("https://"):
-                fail(errors, "sourceFindings sourceUrl must use HTTPS")
+            source_url = str(finding.get("sourceUrl", ""))
+            if not (source_url.startswith("https://") or source_url.startswith("domains/")):
+                fail(errors, "sourceFindings sourceUrl must use HTTPS or a local repository path")
             if not str(finding.get("observedFact", "")).strip():
                 fail(errors, "sourceFindings observedFact must be non-empty")
             if not str(finding.get("modelConsequence", "")).strip():
@@ -366,8 +453,8 @@ def validate_payload(data: dict[str, Any]) -> list[str]:
         fail(errors, "blockedUses must preserve all prohibited inference and individual-use actions")
     if not isinstance(data.get("allowedUses"), list) or len(data["allowedUses"]) < 3:
         fail(errors, "allowedUses must list gate-only uses")
-    if not isinstance(data.get("nextWork"), list) or len(data["nextWork"]) < 4:
-        fail(errors, "nextWork must list domain diagnostic, DOF/sparse-domain, disclosure and output implementation work")
+    if not isinstance(data.get("nextWork"), list) or len(data["nextWork"]) < 3:
+        fail(errors, "nextWork must list DOF/sparse-domain, disclosure and output implementation work")
     return errors
 
 
@@ -393,11 +480,13 @@ def build_validation(readiness_path: Path, output_path: Path, errors: list[str],
         "nonProofBoundary": {
             "confirms": [
                 "controlled synthetic R survey domain subset smoke is available",
+                "public aggregate domain indicator metadata diagnostic is complete without repeating counts or weighted sums",
                 "domain indicator, DOF/sparse-domain and disclosure gates are registered",
                 "public weighted-domain output remains blocked",
             ],
             "doesNotConfirm": [
                 "public NHANES weighted domain output",
+                "domain degrees-of-freedom or sparse-domain adequacy",
                 "design-based confidence intervals",
                 "disclosure-reviewed public output",
                 "calibration",
