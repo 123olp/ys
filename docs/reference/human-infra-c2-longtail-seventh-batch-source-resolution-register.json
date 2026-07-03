@@ -1,0 +1,370 @@
+{
+  "schemaVersion": "human-infra.c2-longtail-seventh-batch-source-resolution-register.v1",
+  "registerId": "human-infra-c2-longtail-seventh-batch-source-resolution-register-2026-07-03",
+  "status": "active-c2ltb7-source-resolution-register-independent-fresh-review-required",
+  "purpose": "Resolve the six C2-LT-B7 local-review issue rows into official FDA, CDC, Donate Life and RegisterMe route candidates without changing reviewed artifact or model admission status.",
+  "sourceOfTruth": {
+    "sourceExtractionQueue": "docs/reference/human-infra-c2-longtail-seventh-batch-source-extraction-queue.json",
+    "sourceExtractionRegister": "docs/reference/human-infra-c2-longtail-seventh-batch-source-extraction-register.json",
+    "localReviewRegister": "docs/reference/human-infra-c2-longtail-seventh-batch-local-review-register.json",
+    "evidencePolicy": "docs/reference/evidence-policy.md",
+    "maturityGapRegister": "docs/reference/human-infra-maturity-gap-register.json"
+  },
+  "scope": {
+    "batchId": "C2-LT-B7",
+    "resolutionLevel": "c2ltb7-local-review-issue-row-source-resolution-v0.1",
+    "totalLocalReviewRowCount": 24,
+    "issueRowCount": 6,
+    "fdaRouteIssueCount": 3,
+    "dynamicRegistrationRouteIssueCount": 1,
+    "duplicateSourceLineageIssueCount": 2,
+    "resolutionCandidateCount": 7,
+    "nonClaims": [
+      "This register does not change any source into reviewed evidence.",
+      "This register does not create reviewed artifacts, Source Cards, variable cards, endpoint cards, uncertainty cards, transfer-boundary cards or downgrade rows.",
+      "This register does not authorize model admission, individual advice, individual death-date output, clinical validity claims or intervention ranking.",
+      "This register only prepares source-route, duplicate-lineage and dynamic-registration candidates that must pass manual/fulltext extraction and independent fresh review before bounded artifact use."
+    ]
+  },
+  "verificationSources": [
+    {
+      "verificationId": "C2LTB7-SR-VERIFY-CDC-TRANSPLANT-SAFETY-20260703",
+      "title": "CDC Clinical Guidance for Transplant Safety route",
+      "url": "https://www.cdc.gov/transplant-safety/hcp/clinical-guidance/index.html",
+      "sourceType": "official-public-health-guidance-page-route-check",
+      "useBoundary": "Use only for CDC transplant-safety route identity and duplicate-lineage handling; not for individual transplant eligibility, organ allocation, infection-risk quantification or model admission."
+    },
+    {
+      "verificationId": "C2LTB7-SR-VERIFY-FDA-HCTP-DONOR-ELIGIBILITY-20260703",
+      "title": "FDA Eligibility Determination for Donors of HCT/Ps route",
+      "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/eligibility-determination-donors-human-cells-tissues-and-cellular-and-tissue-based-products",
+      "sourceType": "official-fda-guidance-page-route-check",
+      "useBoundary": "Use only for HCT/P donor-eligibility guidance route correction and manual review planning; not for individual donor eligibility decisions, clinical advice or model admission."
+    },
+    {
+      "verificationId": "C2LTB7-SR-VERIFY-DONATELIFE-REGISTER-ROUTE-20260703",
+      "title": "Donate Life and RegisterMe donor-registration routes",
+      "url": "https://www.donatelife.net/register/",
+      "sourceType": "dynamic-civic-registration-route-check",
+      "useBoundary": "Use only for donor-registration route metadata, dynamic-route limitations and civil infrastructure context; not for organ availability, allocation, eligibility, outcome or model-admitted claims."
+    },
+    {
+      "verificationId": "C2LTB7-SR-VERIFY-FDA-XENOTRANSPLANTATION-20260703",
+      "title": "FDA xenotransplantation guidance page and guidance index routes",
+      "url": "https://www.fda.gov/vaccines-blood-biologics/biologics-guidances/xenotransplantation-guidances",
+      "sourceType": "official-fda-guidance-page-and-index-route-check",
+      "useBoundary": "Use only for xenotransplantation guidance route correction and manual review planning; not for feasibility, safety, clinical readiness or model admission claims."
+    }
+  ],
+  "blockedUses": [
+    "calibrated-prediction",
+    "individual-advice",
+    "individual-death-date-output",
+    "intervention-ranking",
+    "clinical-validity-claim",
+    "domain-claim-upgrade"
+  ],
+  "resolutionRows": [
+    {
+      "resolutionId": "C2LTB7-SRR-001",
+      "taskId": "C2LTB7-EXT-019",
+      "domainId": "blood-organ-tissue-biovigilance-transplantation",
+      "localDomainPath": "domains/c2-source-maintenance/blood-organ-tissue-biovigilance-transplantation",
+      "sourceRefId": "C2LTB7-SRC-10-1",
+      "originalRegisteredTitle": "Clinical Guidance for Transplant Safety",
+      "originalRegisteredUrl": "https://www.cdc.gov/transplant-safety/hcp/clinical-guidance/index.html",
+      "localReviewIssueType": "duplicate-cdc-transplant-safety-route-source-lineage-needed",
+      "currentSourceCheck": {
+        "observedTitle": "CDC Clinical Guidance for Transplant Safety is the primary transplant-safety route for EXT-019 and must be lineage-linked with the duplicate EXT-022 row before evidence counting.",
+        "verificationEvidence": "C2LTB7-SR-VERIFY-CDC-TRANSPLANT-SAFETY-20260703",
+        "result": "source-lineage-candidate-prepared-not-fresh-reviewed"
+      },
+      "sourceResolutionDecision": "Preserve EXT-019 as the primary CDC transplant-safety guidance route and link EXT-022 as duplicate role-specific provenance instead of independent evidence.",
+      "sourceResolutionStatus": "candidate-resolution-prepared-not-fresh-reviewed",
+      "sourceResolutionCandidates": [
+        {
+          "candidateId": "C2LTB7-SRR-001-CAND-01",
+          "candidateRole": "cdc-primary-transplant-safety-guidance-route",
+          "title": "Clinical Guidance for Transplant Safety",
+          "url": "https://www.cdc.gov/transplant-safety/hcp/clinical-guidance/index.html",
+          "sourceType": "official-public-health-guidance-page-route",
+          "sourceIdentityStatus": "official-cdc-route-identified-duplicate-lineage-not-fresh-reviewed",
+          "verificationEvidence": "C2LTB7-SR-VERIFY-CDC-TRANSPLANT-SAFETY-20260703",
+          "resolutionFinding": "The CDC guidance route is current route metadata for transplant-safety context, but it is duplicated with EXT-022 and must not be double counted.",
+          "useBoundary": "Use only for source-route resolution, duplicate-lineage planning and independent fresh review; no artifact fill, no individual advice, no calibrated risk, no intervention ranking or model admission."
+        }
+      ],
+      "requiredFreshReviewActions": [
+        "Manually verify CDC transplant-safety page scope, route status and duplicate lineage with EXT-022.",
+        "Record whether EXT-019 is the primary source identity and EXT-022 is role-specific organ-donation context.",
+        "Prevent duplicate evidence counting before any bounded artifact fill.",
+        "Run independent fresh review before bounded artifact creation.",
+        "Keep model admission and prohibited individual uses blocked."
+      ],
+      "artifactPromotionDecision": "blocked-pending-source-resolution-manual-route-or-independent-fresh-review",
+      "modelAdmissionDecision": "blocked-pending-source-resolution-independent-fresh-review-reviewed-artifact-and-model-admission-gates",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ]
+    },
+    {
+      "resolutionId": "C2LTB7-SRR-002",
+      "taskId": "C2LTB7-EXT-020",
+      "domainId": "blood-organ-tissue-biovigilance-transplantation",
+      "localDomainPath": "domains/c2-source-maintenance/blood-organ-tissue-biovigilance-transplantation",
+      "sourceRefId": "C2LTB7-SRC-10-2",
+      "originalRegisteredTitle": "Recommendations for Determining Eligibility of Donors of Human Cells, Tissues, and Cellular and Tissue-Based Products",
+      "originalRegisteredUrl": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/recommendations-determining-eligibility-donors-human-cells-tissues-and-cellular-and-tissue-based",
+      "localReviewIssueType": "fda-hctp-guidance-route-404-source-resolution-needed",
+      "currentSourceCheck": {
+        "observedTitle": "FDA current route title is Eligibility Determination for Donors of Human Cells, Tissues, and Cellular and Tissue-Based Products; the registered recommendations URL is obsolete or route-mismatched.",
+        "verificationEvidence": "C2LTB7-SR-VERIFY-FDA-HCTP-DONOR-ELIGIBILITY-20260703",
+        "result": "source-route-candidate-prepared-not-fresh-reviewed"
+      },
+      "sourceResolutionDecision": "Replace the local 404 FDA HCT/P donor eligibility URL with the current FDA guidance page route before manual extraction and fresh review.",
+      "sourceResolutionStatus": "candidate-resolution-prepared-not-fresh-reviewed",
+      "sourceResolutionCandidates": [
+        {
+          "candidateId": "C2LTB7-SRR-002-CAND-01",
+          "candidateRole": "fda-current-hctp-donor-eligibility-guidance-route",
+          "title": "Eligibility Determination for Donors of Human Cells, Tissues, and Cellular and Tissue-Based Products",
+          "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/eligibility-determination-donors-human-cells-tissues-and-cellular-and-tissue-based-products",
+          "sourceType": "official-fda-guidance-page-route",
+          "sourceIdentityStatus": "official-fda-current-route-identified-not-fresh-reviewed",
+          "verificationEvidence": "C2LTB7-SR-VERIFY-FDA-HCTP-DONOR-ELIGIBILITY-20260703",
+          "resolutionFinding": "FDA route resolves the HCT/P donor-eligibility guidance identity for later exact scope extraction; it does not by itself provide reviewed evidence.",
+          "useBoundary": "Use only for source-route resolution, manual/fulltext extraction planning and independent fresh review; no artifact fill, no individual advice, no calibrated risk, no intervention ranking or model admission."
+        }
+      ],
+      "requiredFreshReviewActions": [
+        "Manually review FDA HCT/P donor-eligibility guidance route status, document version and page metadata.",
+        "Replace the obsolete registered URL in extraction lineage before evidence counting.",
+        "Extract only source identity, donor-screening scope, population boundary, uncertainty and downgrade triggers.",
+        "Run independent fresh review before bounded artifact creation.",
+        "Keep model admission and prohibited individual uses blocked."
+      ],
+      "artifactPromotionDecision": "blocked-pending-source-resolution-manual-route-or-independent-fresh-review",
+      "modelAdmissionDecision": "blocked-pending-source-resolution-independent-fresh-review-reviewed-artifact-and-model-admission-gates",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ]
+    },
+    {
+      "resolutionId": "C2LTB7-SRR-003",
+      "taskId": "C2LTB7-EXT-021",
+      "domainId": "organ-donor-registry-anatomical-gift-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/organ-donor-registry-anatomical-gift-continuity",
+      "sourceRefId": "C2LTB7-SRC-11-1",
+      "originalRegisteredTitle": "Register as an Organ, Eye, and Tissue Donor",
+      "originalRegisteredUrl": "https://www.donatelife.net/register/",
+      "localReviewIssueType": "dynamic-donor-registration-route-context-limited",
+      "currentSourceCheck": {
+        "observedTitle": "Donate Life registration route remains dynamic and challenge-gated in local fetch; RegisterMe is a companion registration route but also needs browser/manual context capture.",
+        "verificationEvidence": "C2LTB7-SR-VERIFY-DONATELIFE-REGISTER-ROUTE-20260703",
+        "result": "dynamic-registration-route-candidates-prepared-not-fresh-reviewed"
+      },
+      "sourceResolutionDecision": "Preserve Donate Life and RegisterMe as donor-registration route metadata only, and require manual context capture before any bounded civil-route artifact use.",
+      "sourceResolutionStatus": "candidate-resolution-prepared-not-fresh-reviewed",
+      "sourceResolutionCandidates": [
+        {
+          "candidateId": "C2LTB7-SRR-003-CAND-01",
+          "candidateRole": "donate-life-register-dynamic-route",
+          "title": "Register as an Organ, Eye, and Tissue Donor",
+          "url": "https://www.donatelife.net/register/",
+          "sourceType": "dynamic-donor-registration-route",
+          "sourceIdentityStatus": "dynamic-route-observed-http-202-challenge-context-not-fresh-reviewed",
+          "verificationEvidence": "C2LTB7-SR-VERIFY-DONATELIFE-REGISTER-ROUTE-20260703",
+          "resolutionFinding": "Donate Life route is useful as civil registration infrastructure context, but local access returns dynamic challenge context and must not support outcome claims.",
+          "useBoundary": "Use only for route metadata, manual context capture and independent fresh review; no artifact fill, no individual advice, no organ availability or allocation claims, no intervention ranking or model admission."
+        },
+        {
+          "candidateId": "C2LTB7-SRR-003-CAND-02",
+          "candidateRole": "registerme-registration-route",
+          "title": "RegisterMe donor registration route",
+          "url": "https://registerme.org/",
+          "sourceType": "dynamic-donor-registration-route",
+          "sourceIdentityStatus": "registration-route-access-restricted-in-local-fetch-not-fresh-reviewed",
+          "verificationEvidence": "C2LTB7-SR-VERIFY-DONATELIFE-REGISTER-ROUTE-20260703",
+          "resolutionFinding": "RegisterMe can be retained as a companion route candidate, but local fetch returned access restriction and requires browser/manual review.",
+          "useBoundary": "Use only for route metadata, manual context capture and independent fresh review; no artifact fill, no individual advice, no organ availability or allocation claims, no intervention ranking or model admission."
+        }
+      ],
+      "requiredFreshReviewActions": [
+        "Capture Donate Life and RegisterMe route metadata manually, including route purpose, jurisdiction limits and dynamic access status.",
+        "Do not infer organ supply, allocation, eligibility, donor-conversion or outcome effects from registration-route presence.",
+        "Separate civil registration infrastructure context from transplant safety evidence.",
+        "Run independent fresh review before bounded artifact creation.",
+        "Keep model admission and prohibited individual uses blocked."
+      ],
+      "artifactPromotionDecision": "blocked-pending-source-resolution-manual-route-or-independent-fresh-review",
+      "modelAdmissionDecision": "blocked-pending-source-resolution-independent-fresh-review-reviewed-artifact-and-model-admission-gates",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ]
+    },
+    {
+      "resolutionId": "C2LTB7-SRR-004",
+      "taskId": "C2LTB7-EXT-022",
+      "domainId": "organ-donor-registry-anatomical-gift-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/organ-donor-registry-anatomical-gift-continuity",
+      "sourceRefId": "C2LTB7-SRC-11-2",
+      "originalRegisteredTitle": "Clinical Guidance for Transplant Safety",
+      "originalRegisteredUrl": "https://www.cdc.gov/transplant-safety/hcp/clinical-guidance/index.html",
+      "localReviewIssueType": "duplicate-cdc-transplant-safety-route-source-lineage-needed",
+      "currentSourceCheck": {
+        "observedTitle": "CDC Clinical Guidance for Transplant Safety is duplicated from EXT-019 and should be retained as organ-donation governance context rather than independent evidence.",
+        "verificationEvidence": "C2LTB7-SR-VERIFY-CDC-TRANSPLANT-SAFETY-20260703",
+        "result": "source-lineage-candidate-prepared-not-fresh-reviewed"
+      },
+      "sourceResolutionDecision": "Link EXT-022 to EXT-019 and preserve it as organ-donation governance context, not as a second independent transplant-safety evidence count.",
+      "sourceResolutionStatus": "candidate-resolution-prepared-not-fresh-reviewed",
+      "sourceResolutionCandidates": [
+        {
+          "candidateId": "C2LTB7-SRR-004-CAND-01",
+          "candidateRole": "cdc-duplicate-transplant-safety-guidance-route",
+          "title": "Clinical Guidance for Transplant Safety",
+          "url": "https://www.cdc.gov/transplant-safety/hcp/clinical-guidance/index.html",
+          "sourceType": "official-public-health-guidance-page-route",
+          "sourceIdentityStatus": "duplicate-cdc-route-identified-lineage-normalization-required-not-fresh-reviewed",
+          "verificationEvidence": "C2LTB7-SR-VERIFY-CDC-TRANSPLANT-SAFETY-20260703",
+          "resolutionFinding": "The same CDC transplant-safety route is reused for organ-donation governance context and must be lineage-normalized with EXT-019 before evidence counting.",
+          "useBoundary": "Use only for source-route resolution, duplicate-lineage planning and independent fresh review; no artifact fill, no individual advice, no calibrated risk, no intervention ranking or model admission."
+        }
+      ],
+      "requiredFreshReviewActions": [
+        "Manually verify the duplicate relationship between EXT-022 and EXT-019.",
+        "Record EXT-022 as organ-donation governance context unless a distinct evidence claim is independently supported.",
+        "Prevent duplicate support inflation before any bounded artifact fill.",
+        "Run independent fresh review before bounded artifact creation.",
+        "Keep model admission and prohibited individual uses blocked."
+      ],
+      "artifactPromotionDecision": "blocked-pending-source-resolution-manual-route-or-independent-fresh-review",
+      "modelAdmissionDecision": "blocked-pending-source-resolution-independent-fresh-review-reviewed-artifact-and-model-admission-gates",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ]
+    },
+    {
+      "resolutionId": "C2LTB7-SRR-005",
+      "taskId": "C2LTB7-EXT-023",
+      "domainId": "xenotransplantation-bioengineered-organ-replacement",
+      "localDomainPath": "domains/c2-source-maintenance/xenotransplantation-bioengineered-organ-replacement",
+      "sourceRefId": "C2LTB7-SRC-12-1",
+      "originalRegisteredTitle": "Animal, Preclinical, Clinical Issues - Xenotransplantation in Humans",
+      "originalRegisteredUrl": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/source-animal-product-preclinical-and-clinical-issues-concerning-use-xenotransplantation-products",
+      "localReviewIssueType": "fda-xenotransplantation-guidance-route-404-source-resolution-needed",
+      "currentSourceCheck": {
+        "observedTitle": "FDA current route title is Source Animal, Product, Preclinical, and Clinical Issues Concerning the Use of Xenotransplantation Products in Humans.",
+        "verificationEvidence": "C2LTB7-SR-VERIFY-FDA-XENOTRANSPLANTATION-20260703",
+        "result": "source-route-candidate-prepared-not-fresh-reviewed"
+      },
+      "sourceResolutionDecision": "Resolve the locally reported 404 xenotransplantation guidance route to the current FDA guidance page before manual extraction and fresh review.",
+      "sourceResolutionStatus": "candidate-resolution-prepared-not-fresh-reviewed",
+      "sourceResolutionCandidates": [
+        {
+          "candidateId": "C2LTB7-SRR-005-CAND-01",
+          "candidateRole": "fda-xenotransplantation-specific-guidance-route",
+          "title": "Source Animal, Product, Preclinical, and Clinical Issues Concerning the Use of Xenotransplantation Products in Humans",
+          "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/source-animal-product-preclinical-and-clinical-issues-concerning-use-xenotransplantation-products",
+          "sourceType": "official-fda-guidance-page-route",
+          "sourceIdentityStatus": "official-fda-current-route-identified-not-fresh-reviewed",
+          "verificationEvidence": "C2LTB7-SR-VERIFY-FDA-XENOTRANSPLANTATION-20260703",
+          "resolutionFinding": "FDA route resolves the specific xenotransplantation guidance identity for later manual scope extraction; it does not by itself support clinical readiness claims.",
+          "useBoundary": "Use only for source-route resolution, manual/fulltext extraction planning and independent fresh review; no artifact fill, no individual advice, no feasibility or safety conclusion, no intervention ranking or model admission."
+        }
+      ],
+      "requiredFreshReviewActions": [
+        "Manually review FDA xenotransplantation guidance route status, document title and scope.",
+        "Extract only source identity, preclinical/clinical issue scope, uncertainty, transfer boundary and downgrade triggers.",
+        "Do not infer xenotransplantation feasibility, availability or safety from route existence.",
+        "Run independent fresh review before bounded artifact creation.",
+        "Keep model admission and prohibited individual uses blocked."
+      ],
+      "artifactPromotionDecision": "blocked-pending-source-resolution-manual-route-or-independent-fresh-review",
+      "modelAdmissionDecision": "blocked-pending-source-resolution-independent-fresh-review-reviewed-artifact-and-model-admission-gates",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ]
+    },
+    {
+      "resolutionId": "C2LTB7-SRR-006",
+      "taskId": "C2LTB7-EXT-024",
+      "domainId": "xenotransplantation-bioengineered-organ-replacement",
+      "localDomainPath": "domains/c2-source-maintenance/xenotransplantation-bioengineered-organ-replacement",
+      "sourceRefId": "C2LTB7-SRC-12-2",
+      "originalRegisteredTitle": "Xenotransplantation Guidances",
+      "originalRegisteredUrl": "https://www.fda.gov/vaccines-blood-biologics/biologics-guidances/xenotransplantation-guidances",
+      "localReviewIssueType": "fda-xenotransplantation-guidance-index-route-404-source-resolution-needed",
+      "currentSourceCheck": {
+        "observedTitle": "FDA Xenotransplantation Guidances index route is current route metadata but must be linked to specific guidance documents before evidence use.",
+        "verificationEvidence": "C2LTB7-SR-VERIFY-FDA-XENOTRANSPLANTATION-20260703",
+        "result": "source-route-candidate-prepared-not-fresh-reviewed"
+      },
+      "sourceResolutionDecision": "Resolve the xenotransplantation guidance index route as an index/provenance route and require linkage to specific FDA guidance documents before bounded artifact fill.",
+      "sourceResolutionStatus": "candidate-resolution-prepared-not-fresh-reviewed",
+      "sourceResolutionCandidates": [
+        {
+          "candidateId": "C2LTB7-SRR-006-CAND-01",
+          "candidateRole": "fda-xenotransplantation-guidance-index-route",
+          "title": "Xenotransplantation Guidances",
+          "url": "https://www.fda.gov/vaccines-blood-biologics/biologics-guidances/xenotransplantation-guidances",
+          "sourceType": "official-fda-guidance-index-route",
+          "sourceIdentityStatus": "official-fda-index-route-identified-specific-guidance-linkage-needed-not-fresh-reviewed",
+          "verificationEvidence": "C2LTB7-SR-VERIFY-FDA-XENOTRANSPLANTATION-20260703",
+          "resolutionFinding": "FDA index route can organize xenotransplantation guidance lineage, but it is index/provenance metadata until a specific document is manually extracted and reviewed.",
+          "useBoundary": "Use only for source-route resolution, guidance-index lineage planning and independent fresh review; no artifact fill, no individual advice, no feasibility or safety conclusion, no intervention ranking or model admission."
+        }
+      ],
+      "requiredFreshReviewActions": [
+        "Manually review the FDA xenotransplantation guidance index route and enumerate linked guidance documents before evidence counting.",
+        "Separate index/provenance metadata from specific guidance-document claims.",
+        "Do not infer xenotransplantation feasibility, availability or safety from index route existence.",
+        "Run independent fresh review before bounded artifact creation.",
+        "Keep model admission and prohibited individual uses blocked."
+      ],
+      "artifactPromotionDecision": "blocked-pending-source-resolution-manual-route-or-independent-fresh-review",
+      "modelAdmissionDecision": "blocked-pending-source-resolution-independent-fresh-review-reviewed-artifact-and-model-admission-gates",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ]
+    }
+  ],
+  "requiredNextArtifacts": [
+    "c2ltb7-manual-route-or-fulltext-extraction-register",
+    "c2ltb7-independent-fresh-review-protocol",
+    "c2ltb7-independent-fresh-review-verdict-register",
+    "c2ltb7-reviewed-card-artifact-register-only-after-eligible-verdicts",
+    "model-admission-remains-blocked-until-reviewed-artifacts-and-quantitative-gates-exist"
+  ],
+  "modelAdmissionDecision": "blocked-pending-source-resolution-independent-fresh-review-reviewed-artifact-and-model-admission-gates"
+}
